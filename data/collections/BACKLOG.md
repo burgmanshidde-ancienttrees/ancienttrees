@@ -1,5 +1,7 @@
 # Collections backlog
 
+STATUS: ON HOLD per Hidde, 2026-07-19. No new collection drafts until he reactivates this backlog; nightly runs skip this queue entirely. The two shipped collections stay live and awaiting his curation.
+
 Prioritized queue of collection pages to build, based on search demand and GEO (AI citation) potential, researched 2026-07-19. Contract D applies to every item: hand-curated, drafted for Hidde, never published without his approval. One draft at a time; a collection only ships when enough verified trees exist to fill it honestly.
 
 Selection criteria per idea: (1) a real search phrase people use, (2) quotable first paragraph for AI engines, (3) enough coverage in verified cities to ship without padding, (4) grows naturally as cities are added, (5) an angle competitors do not have. Our structural moat vs existing listicles (Touropia, NatGeo, blogs): every entry is publicly accessible, exactly located, and reachable by public transport. Competitor lists are wilderness trees with no directions.
