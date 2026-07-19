@@ -180,7 +180,7 @@ PAGE_SHELL = """<!DOCTYPE html>
   <a href="%%ROOTPATH%%" class="bar-logo">Ancient Trees</a>
   <nav class="bar-links">
     <a href="%%ROOTPATH%%#cities">Cities</a>
-    <a href="%%ROOTPATH%%collections/trees-older-than-400-years">Collections</a>
+    <a href="%%ROOTPATH%%collections">Collections</a>
   </nav>
 </header>
 %%BODY%%
@@ -193,7 +193,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 FOOTER = """
 <footer>
   <span class="footer-logo">Ancient Trees</span>
-  <span class="footer-links"><a href="%%ROOTPATH%%collections/trees-older-than-400-years">Collections</a></span>
+  <span class="footer-links"><a href="%%ROOTPATH%%collections">Collections</a></span>
   <span class="footer-note">&copy; %%YEAR%% Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors.</span>
 </footer>
 """
@@ -788,7 +788,7 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages):
     title = fit_title([coll["title"]], canonical)
     description = coll.get("meta_description", "")
 
-    crumb_items = [("Home", BASE_URL), ("Collections", None), (coll["title"], None)]
+    crumb_items = [("Home", BASE_URL), ("Collections", f"{BASE_URL}/collections"), (coll["title"], None)]
 
     grouped = {}
     for e in coll.get("entries", []):
@@ -842,6 +842,55 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages):
     page = render_page(title, description, canonical, body, head_extra, "", rootpath)
     pages.append((f"collections/{slug}.html", page, canonical))
     return canonical
+
+
+def build_collections_index(collections, published, pages):
+    """Overview of all collections at /collections."""
+    canonical = f"{BASE_URL}/collections"
+    rootpath = "./"
+    title = fit_title(["Collections: Remarkable Trees by Theme"], canonical)
+    description = ("Hand-curated lists that cut across cities: the oldest, the strangest, "
+                   "the ones worth a detour. Every entry links to a verified tree.")
+
+    crumb_items = [("Home", BASE_URL), ("Collections", None)]
+
+    entries = []
+    for c in collections:
+        first_sentence = c["intro"].split(". ")[0] + "."
+        entries.append(f"""
+      <div class="entry">
+        <h3><a href="collections/{c['slug']}">{esc(c['title'])}</a></h3>
+        <p>{esc(first_sentence)} {len(c.get('entries', []))} trees, across {len({e['city_slug'] for e in c.get('entries', [])})} cities.</p>
+      </div>""")
+
+    city_links = " &middot; ".join(
+        f'<a href="{p["slug"]}">Ancient trees in {esc(p["city"])}</a>' for p in published
+    )
+
+    body = f"""
+<main class="content-page">
+  {breadcrumb_html(crumb_items, rootpath)}
+  <h1>Collections</h1>
+  <div class="prose-block"><p>Cities organise these trees by place. Collections organise them by what makes them worth the trip: age, strangeness, the stories they carry. Each one is hand-curated, and every entry links to a verified tree with its own map and directions. More collections are added as the map grows.</p></div>
+  {''.join(entries)}
+  <p class="suggest">Explore by city instead: {city_links}</p>
+</main>
+"""
+    graph = site_graph() + [
+        {
+            "@type": "ItemList",
+            "name": "Collections",
+            "itemListElement": [
+                {"@type": "ListItem", "position": i, "name": c["title"],
+                 "url": f"{BASE_URL}/collections/{c['slug']}"}
+                for i, c in enumerate(collections, 1)
+            ],
+        },
+        breadcrumb_schema(crumb_items),
+    ]
+    head_extra = ld_script(graph)
+    page = render_page(title, description, canonical, body, head_extra, "", rootpath)
+    pages.append(("collections.html", page, canonical))
 
 
 # ----------------------------------------------------------------- homepage
@@ -925,6 +974,9 @@ def build_redirects(published, pages):
                       redirect_stub(f"../../{p['slug']}", p["canonical"], title), None))
         pages.append((f"{p['slug']}/index.html",
                       redirect_stub(f"../{p['slug']}", p["canonical"], title), None))
+    pages.append(("collections/index.html",
+                  redirect_stub("../collections", f"{BASE_URL}/collections",
+                                "Moved: Collections"), None))
 
 
 def validate_internal_links(pages):
@@ -1000,6 +1052,8 @@ def main():
 
     for coll in collections:
         build_collection_page(coll, cities_by_slug, tree_slugs, published, pages)
+    if collections:
+        build_collections_index(collections, published, pages)
 
     build_homepage(published, upcoming, collections, pages)
     build_redirects(published, pages)
