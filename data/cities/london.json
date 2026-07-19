@@ -1,6 +1,7 @@
 {
   "city": "London",
   "country": "United Kingdom",
+  "status": "needs_curation",
   "trees": [
     {
       "id": "lon_001",
@@ -16,12 +17,18 @@
         "neighbourhood": "Totteridge, North London"
       },
       "story": "The oldest living thing in London. This yew was already ancient when the Romans were building Londinium two thousand years ago. The church beside it was not built until the 13th century, meaning the tree is over a millennium older than the building that now stands next to it. Its trunk is hollow and propped, its girth nearly eight metres. The Hundred Court of the district once met in its shadow. It has been pollarded many times over the centuries, which is partly why it is still alive.",
-      "verified_monumentaltrees": true,
-      "monumentaltrees_url": "https://www.monumentaltrees.com/en/gbr/england/greaterlondon/19632_standrewschurch/",
+      "verified_sources": [
+        "https://www.monumentaltrees.com/en/gbr/england/greaterlondon/19632_standrewschurch/"
+      ],
       "access": "Free, open access, churchyard",
       "transport": "15 min walk from Totteridge & Whetstone station (Northern Line)",
-      "photo_sources": ["Wikimedia Commons", "Ancient Yew Group"],
-      "status": "verified"
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated"
     },
     {
       "id": "lon_002",
@@ -37,12 +44,18 @@
         "neighbourhood": "Richmond Park"
       },
       "story": "Richmond Park has more ancient trees than the whole of France and Germany combined. Among them is the Royal Oak, a massive hollow pollard that was already old when King Charles I enclosed the park in 1637. Its trunk is split and gnarled, wide enough to shelter a small football team. It survived the felling ordered to build Henry VIII's navy because the King himself passed a law sparing every tenth tree. Sir David Attenborough made it the symbol of a conservation campaign. The deer still graze around it as they have for centuries.",
-      "verified_monumentaltrees": true,
-      "monumentaltrees_url": "https://ati.woodlandtrust.org.uk/tree-search/tree/?treeId=40404",
+      "verified_sources": [
+        "https://ati.woodlandtrust.org.uk/tree-search/tree/?treeId=40404"
+      ],
       "access": "Free, open access, national park",
       "transport": "Bus or car to Richmond Park, then on foot near Pen Ponds",
-      "photo_sources": ["Wikimedia Commons (CC BY-SA 4.0, AndyScott)"],
-      "status": "verified"
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated"
     },
     {
       "id": "lon_003",
@@ -58,11 +71,17 @@
         "neighbourhood": "City of London"
       },
       "story": "The only Great Tree of London in the Square Mile. It grows in what was the churchyard of St Peter Cheap, a church destroyed in the Great Fire of 1666 and never rebuilt. No one knows exactly how old it is. By 1853, a cab company was advertising its location as 'Under the tree, Cheapside.' In 1901 it was called the most valuable tree in the world. It survived the Blitz. Buildings beside it are prohibited from rising above two storeys by the terms of their leases, preserving its canopy. Wordsworth likely had it in mind when he wrote Poor Susan in 1797.",
-      "verified_monumentaltrees": false,
+      "verified_sources": [],
       "access": "Free, public square, City of London",
       "transport": "2 min walk from St Paul's tube station",
-      "photo_sources": ["Atlas Obscura", "Wikimedia Commons"],
-      "status": "verified"
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Source URLs need backfilling (original research cited Atlas Obscura and Wikimedia Commons without links)."
     },
     {
       "id": "lon_004",
@@ -78,11 +97,17 @@
         "neighbourhood": "Mayfair"
       },
       "story": "Planted in 1789 by MP Edward Bouverie, who lived at number 13. Among the 30 or so plane trees in this Grade II listed garden, one known as the Victorian Plane was assessed in 2008 at a value of £750,000, making it briefly the most valuable tree in Britain. The nightingale that sang in Berkeley Square was almost certainly singing from one of these trees. They are among the oldest plane trees in London and were among the original 41 Great Trees of London.",
-      "verified_monumentaltrees": false,
+      "verified_sources": [],
       "access": "Free, public garden",
       "transport": "2 min walk from Green Park or Bond Street tube",
-      "photo_sources": ["Wikimedia Commons"],
-      "status": "verified"
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Source URLs need backfilling."
     },
     {
       "id": "lon_005",
@@ -98,12 +123,17 @@
         "neighbourhood": "Greenwich"
       },
       "story": "This tree fell during a storm in 1991 after standing since the 12th century. Its hollowed carcass still lies where it fell. Henry VIII was born in Greenwich Palace and is said to have danced around this oak with Anne Boleyn while courting. Their daughter Elizabeth I, also born here, reportedly picnicked under its canopy, giving the tree her name. The hollow trunk was allegedly used as a lock-up for troublemakers. It is no longer alive, but its remains are worth visiting.",
-      "verified_monumentaltrees": false,
+      "verified_sources": [],
       "access": "Free, open parkland, Greenwich Park",
       "transport": "Cutty Sark DLR station, 15 min walk",
-      "photo_sources": ["Wikimedia Commons"],
-      "status": "verified",
-      "notes": "Tree is dead and recumbent since 1991. Ruins only."
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Tree is dead and recumbent since 1991. Ruins only. Source URLs need backfilling."
     },
     {
       "id": "lon_006",
@@ -119,11 +149,17 @@
         "neighbourhood": "Charlton, South East London"
       },
       "story": "Planted around 1608 as part of King James I's ill-fated plan to establish a British silk industry. He ordered mulberry trees planted across England to feed silkworms. The plan failed because he accidentally ordered black mulberries, whose leaves silkworms refuse to eat. This tree, one of the survivors of that royal blunder, is now over 400 years old. It leans and sprawls dramatically, held up by wooden supports, and still produces fruit every summer.",
-      "verified_monumentaltrees": false,
+      "verified_sources": [],
       "access": "Free, open grounds of Charlton House community centre",
       "transport": "Charlton rail station, 5 min walk",
-      "photo_sources": ["Morus Londinium", "Wikimedia Commons"],
-      "status": "verified"
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Source URLs need backfilling (original research cited Morus Londinium)."
     },
     {
       "id": "lon_007",
@@ -139,11 +175,17 @@
         "neighbourhood": "Fulham"
       },
       "story": "One of the oldest trees in west London, growing in the grounds of the former home of the Bishop of London. Bishop Grindal, who lived here in the 16th century, is credited with introducing the tamarisk to England and growing grapes sent to Queen Elizabeth I. The oak was coppiced many years ago, which paradoxically extended its life. It was among the original 41 trees awarded Great Tree status in 1988.",
-      "verified_monumentaltrees": false,
+      "verified_sources": [],
       "access": "Free, Fulham Palace Gardens open daily",
       "transport": "Putney Bridge tube, 10 min walk",
-      "photo_sources": ["Wikimedia Commons"],
-      "status": "needs_photo_verification"
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Original research marked this tree as needing photo verification. Source URLs need backfilling."
     },
     {
       "id": "lon_008",
@@ -159,11 +201,17 @@
         "neighbourhood": "Barnes, South West London"
       },
       "story": "Nicknamed Barney, this is the biggest and potentially oldest London plane tree in the city. Over 300 years old and massive in every dimension. The London plane is the iconic tree of the capital, selected for its extraordinary resilience to pollution, its ability to survive severe pruning, and its stately presence. Barney is the patriarch of them all, growing in the quiet riverside suburb of Barnes, largely unknown to most Londoners.",
-      "verified_monumentaltrees": false,
+      "verified_sources": [],
       "access": "Public access, Barnes area",
       "transport": "Barnes station or bus",
-      "photo_sources": ["London Museum"],
-      "status": "needs_location_verification"
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Location needs verification: coordinates and exact spot within Barn Elms not confirmed by two sources."
     },
     {
       "id": "lon_009",
@@ -179,11 +227,17 @@
         "neighbourhood": "Kew, South West London"
       },
       "story": "Five of the oldest trees in Kew Gardens, nicknamed the Old Lions by the garden's first curator John Smith. Among them is a Japanese pagoda tree planted in 1762, making it one of the oldest in Europe outside its native range. Kew's collection includes trees that have been growing here since the garden opened under Princess Augusta in the 1750s. Entry to Kew required but worth it.",
-      "verified_monumentaltrees": false,
+      "verified_sources": [],
       "access": "Paid entry to Kew Gardens",
       "transport": "Kew Gardens tube station (District Line), 5 min walk",
-      "photo_sources": ["Wikimedia Commons", "Kew Gardens"],
-      "status": "verified"
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Source URLs need backfilling."
     },
     {
       "id": "lon_010",
@@ -199,11 +253,17 @@
         "neighbourhood": "Deptford, East London"
       },
       "story": "Sayes Court Garden was the celebrated 17th century garden of writer and diarist John Evelyn, one of the most famous gardens in England. The garden was destroyed when Tsar Peter the Great of Russia rented the house in 1698 and reportedly used a wheelbarrow to race through the hedges for amusement. This mulberry may have survived even that. A stone at its base commemorates the story. Most of the garden is gone, but this tree, fenced and propped, still stands in what is now an unremarkable public park.",
-      "verified_monumentaltrees": false,
+      "verified_sources": [],
       "access": "Free, public park",
       "transport": "Deptford or Deptford Bridge station, 5 min walk",
-      "photo_sources": ["Atlas Obscura"],
-      "status": "verified"
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Source URLs need backfilling (original research cited Atlas Obscura)."
     }
   ]
 }
