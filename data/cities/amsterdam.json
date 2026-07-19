@@ -1,0 +1,18 @@
+{
+  "city": "Amsterdam",
+  "country": "Netherlands",
+  "status": "pending",
+  "note": "Skeleton only. These 10 trees were identified in earlier chat research (see CLAUDE.md handover) but stories, coordinates, ages and sources were not carried over. A full research run must fill in every field and verify against two independent sources. Nothing here may be published as-is.",
+  "trees": [
+    { "id": "ams_001", "name": "De Olifantsiep", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
+    { "id": "ams_002", "name": "Leidsebosje platanen", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
+    { "id": "ams_003", "name": "Vondelpark Canadapopulier", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
+    { "id": "ams_004", "name": "Wertheimpark vleugelnoot", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
+    { "id": "ams_005", "name": "Hortus cycad", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
+    { "id": "ams_006", "name": "Artis oak", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
+    { "id": "ams_007", "name": "Lomanstraat X-trees", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
+    { "id": "ams_008", "name": "Amstelkade olijfwilg", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
+    { "id": "ams_009", "name": "Amstelveld vleugelnoten", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
+    { "id": "ams_010", "name": "Frederiksplein vleugelnoot", "curation_status": "flagged", "notes": "Name from handover, all data missing" }
+  ]
+}
