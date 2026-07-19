@@ -29,6 +29,7 @@ import shutil
 import sys
 from datetime import date
 from pathlib import Path
+from urllib.parse import urljoin, urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -628,7 +629,7 @@ def build_question_page(city_entry, collections, pages):
 
 # ---------------------------------------------------------------- city pages
 
-def build_city_page(entry, tree_slugs, collections, pages):
+def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
     city_data = entry["data"]
     city = city_data["city"]
     country = city_data["country"]
@@ -637,7 +638,7 @@ def build_city_page(entry, tree_slugs, collections, pages):
     if not trees:
         return None
     canonical = f"{BASE_URL}/{slug}"
-    rootpath = ""
+    rootpath = "./"
 
     title = fit_title([
         f"Ancient Trees in {city}: 10 Remarkable Trees Worth Visiting",
@@ -690,6 +691,13 @@ def build_city_page(entry, tree_slugs, collections, pages):
         f'<a href="collections/{coll["slug"]}">{esc(coll["title"])}</a>.</dd>'
         if coll else ""
     )
+    others_html = " &middot; ".join(
+        f'<a href="./{c["slug"]}">Ancient trees in {esc(c["city"])}</a>'
+        for c in other_cities
+    )
+    more_cities_html = (
+        f'<dt>More cities</dt><dd>{others_html}</dd>' if others_html else ""
+    )
 
     panel_foot = f"""
     <div class="panel-foot">
@@ -699,6 +707,7 @@ def build_city_page(entry, tree_slugs, collections, pages):
         <dt>More on the oldest tree</dt>
         <dd><a href="{slug}/oldest-tree">What is the oldest tree in {esc(city)}?</a> The full answer, with map and directions.</dd>
         {coll_link_html}
+        {more_cities_html}
       </dl>
       <p class="suggest">Know a tree that belongs on this list? Tell us: <a href="mailto:{CONTACT}">{CONTACT}</a>. Suggestions feed curation; the list itself stays editorial.</p>
     </div>"""
@@ -760,11 +769,11 @@ def build_city_page(entry, tree_slugs, collections, pages):
 """
     scripts = city_map_script(markers, (avg_lat, avg_lng))
 
-    link_count = len(trees) + 1 + (1 if coll else 0)
+    link_count = len(trees) + 1 + (1 if coll else 0) + len(other_cities)
     check_links(canonical, link_count, 12)
 
     page = render_page(title, description, canonical, body, head_extra, scripts,
-                       rootpath, footer=False)
+                       rootpath="./", footer=False)
     pages.append((f"{slug}.html", page, canonical))
     return {"slug": slug, "city": city, "country": country, "count": len(trees),
             "markers": markers, "canonical": canonical}
@@ -890,7 +899,7 @@ def build_homepage(published, upcoming, collections, pages):
     head_extra = map_head() + "\n" + ld_script(site_graph())
     scripts = home_map_script(city_markers)
     page = render_page(title, description, BASE_URL + "/", body, head_extra, scripts,
-                       rootpath="", og_type="website")
+                       rootpath="./", og_type="website")
     pages.append(("index.html", page, BASE_URL + "/"))
 
 
@@ -918,6 +927,36 @@ def build_redirects(published, pages):
                       redirect_stub(f"../{p['slug']}", p["canonical"], title), None))
 
 
+def validate_internal_links(pages):
+    """Every internal href must resolve to a page this build produces.
+
+    Catches wrong relative paths (P8: no dead ends) before deploy.
+    """
+    valid = {"/", "/assets/style.css"}
+    for relpath, _, _ in pages:
+        url = "/" + relpath
+        valid.add(url)
+        if url.endswith("/index.html"):
+            valid.add(url[: -len("index.html")])
+        elif url.endswith(".html"):
+            valid.add(url[:-5])
+
+    for relpath, content, _ in pages:
+        page_url = "/" + relpath
+        if page_url.endswith("/index.html"):
+            page_url = page_url[: -len("index.html")]
+        elif page_url.endswith(".html"):
+            page_url = page_url[:-5]
+        if page_url == "/index":
+            page_url = "/"
+        for href in re.findall(r'href="([^"]+)"', content):
+            if href.startswith(("http://", "https://", "mailto:", "#")):
+                continue
+            target = urlparse(urljoin(page_url, href)).path
+            if target not in valid:
+                ERRORS.append(f"{page_url}: broken internal link {href!r} resolves to {target}")
+
+
 def build_sitemap(pages):
     today = date.today().isoformat()
     urls = [canonical for _, _, canonical in pages if canonical]
@@ -939,20 +978,23 @@ def main():
     upcoming = []
     tree_slugs = {}
 
+    renderable = []
     for entry in cities:
-        if not entry["data"]:
-            if entry["tier"] == 1:
-                upcoming.append(entry)
-            continue
-        trees = [t for t in entry["data"].get("trees", []) if tree_is_renderable(t)]
-        if not trees:
-            if entry["tier"] == 1:
-                upcoming.append(entry)
-            continue
+        if entry["data"] and any(tree_is_renderable(t) for t in entry["data"].get("trees", [])):
+            renderable.append(entry)
+        elif entry["tier"] == 1:
+            upcoming.append(entry)
+
+    for entry in renderable:
+        trees = [t for t in entry["data"]["trees"] if tree_is_renderable(t)]
         for tree in trees:
             tree_slugs[tree["id"]] = build_tree_page(entry, tree, trees, collections, pages)
         build_question_page(entry, collections, pages)
-        result = build_city_page(entry, tree_slugs, collections, pages)
+        other_cities = [
+            {"slug": e["slug"], "city": e["data"]["city"]}
+            for e in renderable if e["slug"] != entry["slug"]
+        ]
+        result = build_city_page(entry, tree_slugs, collections, pages, other_cities)
         if result:
             published.append(result)
 
@@ -961,6 +1003,7 @@ def main():
 
     build_homepage(published, upcoming, collections, pages)
     build_redirects(published, pages)
+    validate_internal_links(pages)
 
     if ERRORS:
         print(f"BUILD FAILED: {len(ERRORS)} contract violation(s), nothing deployed\n")
