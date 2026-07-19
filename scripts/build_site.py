@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Static site generator for ancienttrees.app.
 
-Reads data/city-list.json and data/cities/*.json, writes a complete
-static site to site/dist/. No dependencies beyond the Python 3.9
-standard library, so it runs anywhere including GitHub Actions.
+Map-first layout inspired by travel apps: the map is the primary
+interface, with a scrollable story panel beside it. All tree content
+stays in plain HTML for SEO.
+
+Reads data/city-list.json and data/cities/*.json, writes site/dist/.
+No dependencies beyond the Python 3.9 standard library.
 
 Usage: python3 scripts/build_site.py
 """
@@ -21,19 +24,8 @@ BASE_URL = "https://ancienttrees.app"
 
 MAPLIBRE_JS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"
 MAPLIBRE_CSS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
-
-OSM_STYLE = {
-    "version": 8,
-    "sources": {
-        "osm": {
-            "type": "raster",
-            "tiles": ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
-            "tileSize": 256,
-            "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-        }
-    },
-    "layers": [{"id": "osm", "type": "raster", "source": "osm"}],
-}
+# OpenFreeMap: free vector tiles, no API key, commercial use permitted
+MAP_STYLE = "https://tiles.openfreemap.org/styles/positron"
 
 CSS = """
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -41,50 +33,75 @@ CSS = """
   --cream: #F7F4EE; --cream-dark: #EDE9DF; --ink: #1A1A14; --ink-mid: #4A4A3A;
   --ink-light: #8A8A7A; --moss: #3D5C1E; --moss-light: #EAF0E0;
   --serif: 'Playfair Display', Georgia, serif; --sans: 'Inter', system-ui, sans-serif;
+  --header-h: 3.5rem;
 }
 html { scroll-behavior: smooth; }
 body { background: var(--cream); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
 a { color: var(--moss); }
-nav { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2.5rem; background: var(--cream); border-bottom: 1px solid var(--cream-dark); }
-.nav-logo { font-family: var(--serif); font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); text-decoration: none; }
-.nav-links { display: flex; gap: 1.5rem; }
-.nav-links a { font-size: 13px; color: var(--ink-mid); text-decoration: none; }
-.nav-links a:hover { color: var(--moss); }
+
+header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: var(--header-h); display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem; background: rgba(247,244,238,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--cream-dark); }
+.bar-logo { font-family: var(--serif); font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); text-decoration: none; }
+.bar-links a { font-size: 13px; color: var(--ink-mid); text-decoration: none; margin-left: 1.25rem; }
+.bar-links a:hover { color: var(--moss); }
+
+/* ---- City page: split layout, map is the stage ---- */
+.split { display: flex; height: 100vh; padding-top: var(--header-h); }
+.panel { width: 30rem; max-width: 45vw; height: 100%; overflow-y: auto; background: var(--cream); border-right: 1px solid var(--cream-dark); flex-shrink: 0; }
+.panel-head { padding: 2rem 1.75rem 1.5rem; border-bottom: 1px solid var(--cream-dark); }
+.eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.75rem; }
+.panel-head h1 { font-family: var(--serif); font-size: 1.9rem; font-weight: 400; line-height: 1.2; margin-bottom: 0.75rem; }
+.panel-head h1 em { font-style: italic; color: var(--moss); }
+.lede { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
+.notice { background: var(--moss-light); border-left: 3px solid var(--moss); padding: 0.7rem 1rem; font-size: 12px; color: var(--ink-mid); margin-top: 1rem; }
+.stage { flex: 1; position: relative; }
+.stage .map { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.tree-card { padding: 1.75rem; border-bottom: 1px solid var(--cream-dark); cursor: pointer; border-left: 3px solid transparent; transition: border-color 0.2s, background 0.2s; }
+.tree-card:hover { background: #fbf9f5; }
+.tree-card.active { border-left-color: var(--moss); background: #fbf9f5; }
+.tree-card-top { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 0.4rem; }
+.tree-num { font-family: var(--serif); font-size: 1.1rem; color: var(--moss); flex-shrink: 0; width: 1.4rem; }
+.tree-name { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; line-height: 1.25; }
+.tree-meta { font-size: 12px; color: var(--ink-light); margin: 0 0 0.85rem 2.15rem; }
+.tree-story { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 0.85rem 2.15rem; }
+.tree-practical { font-size: 12px; color: var(--ink-light); margin-left: 2.15rem; }
+.tree-practical span { display: block; margin-bottom: 0.2rem; }
+
+/* ---- Homepage ---- */
+.home-hero { position: relative; height: 72vh; min-height: 420px; margin-top: var(--header-h); }
+.home-hero .map { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-overlay { position: absolute; top: 1.5rem; left: 1.5rem; z-index: 10; background: rgba(247,244,238,0.95); backdrop-filter: blur(8px); border: 1px solid var(--cream-dark); border-radius: 4px; padding: 1.75rem 2rem; max-width: 26rem; box-shadow: 0 4px 24px rgba(26,26,20,0.08); }
+.hero-overlay h1 { font-family: var(--serif); font-size: 1.75rem; font-weight: 400; line-height: 1.25; margin-bottom: 0.6rem; }
+.hero-overlay h1 em { font-style: italic; color: var(--moss); }
+.hero-overlay p { font-size: 13px; font-weight: 300; color: var(--ink-mid); line-height: 1.65; }
 .page { max-width: 1100px; margin: 0 auto; padding: 3rem 2.5rem; }
-.eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 1rem; }
-h1 { font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 3.5rem); font-weight: 400; line-height: 1.15; margin-bottom: 1.25rem; }
-h1 em { font-style: italic; color: var(--moss); }
-.lede { font-size: 17px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
-.map { width: 100%; height: 480px; border: 1px solid var(--cream-dark); border-radius: 3px; margin-bottom: 3rem; }
-.map:fullscreen { height: 100vh; }
-.notice { background: var(--moss-light); border: 1px solid var(--moss); border-radius: 3px; padding: 0.85rem 1.25rem; font-size: 13px; color: var(--ink-mid); margin-bottom: 2.5rem; }
-.tree-list { display: flex; flex-direction: column; gap: 2px; background: var(--cream-dark); border: 1px solid var(--cream-dark); }
-.tree-item { background: var(--cream); padding: 2.25rem 2rem; display: grid; grid-template-columns: 3rem 1fr; gap: 1.5rem; }
-.tree-num { font-family: var(--serif); font-size: 2rem; color: var(--ink-light); line-height: 1; }
-.tree-name { font-family: var(--serif); font-size: 1.5rem; font-weight: 400; line-height: 1.25; margin-bottom: 0.35rem; }
-.tree-meta { font-size: 13px; color: var(--ink-light); margin-bottom: 1rem; }
-.tree-story { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 1rem; }
-.tree-practical { font-size: 13px; color: var(--ink-light); }
-.tree-practical span { margin-right: 1.5rem; }
+.section-heading { font-family: var(--serif); font-size: 1.75rem; font-weight: 400; margin-bottom: 1.5rem; }
+.prose { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
 .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2px; background: var(--cream-dark); border: 1px solid var(--cream-dark); margin-bottom: 3rem; }
-.city-card { background: var(--cream); padding: 1.5rem; text-decoration: none; border-top: 2px solid transparent; transition: border-color 0.2s; }
+.city-card { background: var(--cream); padding: 1.5rem; text-decoration: none; border-top: 2px solid transparent; transition: border-top-color 0.2s; }
 .city-card:hover { border-top-color: var(--moss); }
 .city-card-name { font-family: var(--serif); font-size: 1.25rem; color: var(--ink); margin-bottom: 0.25rem; }
 .city-card-meta { font-size: 12px; color: var(--ink-light); }
 .city-card.soon { opacity: 0.55; }
-h2.section-heading { font-family: var(--serif); font-size: 1.75rem; font-weight: 400; margin: 3rem 0 1.5rem; }
-footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; margin-top: 4rem; }
+
+footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; }
 .footer-logo { font-family: var(--serif); font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
 .footer-note { font-size: 12px; color: var(--ink-light); }
-.marker-pin { width: 26px; height: 26px; border-radius: 50% 50% 50% 0; background: var(--moss); transform: rotate(-45deg); border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.3); cursor: pointer; }
-.marker-pin span { display: block; transform: rotate(45deg); color: #fff; font-size: 12px; font-weight: 600; text-align: center; line-height: 22px; font-family: var(--sans); }
-.maplibregl-popup-content { font-family: var(--sans); font-size: 13px; padding: 0.75rem 1rem; }
+
+/* ---- Markers ---- */
+.pin { width: 30px; height: 30px; border-radius: 50%; background: var(--moss); border: 2px solid #fff; box-shadow: 0 2px 8px rgba(26,26,20,0.35); cursor: pointer; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 12px; font-weight: 600; font-family: var(--sans); transition: transform 0.15s, background 0.15s; }
+.pin:hover { transform: scale(1.15); }
+.pin.active { background: var(--ink); transform: scale(1.25); z-index: 5; }
+.maplibregl-popup-content { font-family: var(--sans); font-size: 13px; padding: 0.75rem 1rem; border-radius: 4px; }
 .maplibregl-popup-content strong { font-family: var(--serif); font-size: 15px; font-weight: 400; }
-@media (max-width: 700px) {
-  nav { padding: 1rem 1.5rem; }
+
+@media (max-width: 800px) {
+  .split { flex-direction: column-reverse; height: auto; }
+  .panel { width: 100%; max-width: none; height: auto; overflow: visible; border-right: none; }
+  .stage { position: sticky; top: var(--header-h); height: 46vh; min-height: 300px; z-index: 5; }
+  .home-hero { height: 60vh; }
+  .hero-overlay { left: 1rem; right: 1rem; top: 1rem; max-width: none; padding: 1.25rem 1.5rem; }
   .page { padding: 2rem 1.5rem; }
-  .tree-item { grid-template-columns: 1fr; gap: 0.5rem; }
-  .map { height: 360px; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }
 }
 """
@@ -108,20 +125,24 @@ PAGE_SHELL = """<!DOCTYPE html>
 %%HEAD_EXTRA%%
 </head>
 <body>
-<nav>
-  <a href="%%ROOTPATH%%" class="nav-logo">Ancient Trees</a>
-  <div class="nav-links">
+<header class="bar">
+  <a href="%%ROOTPATH%%" class="bar-logo">Ancient Trees</a>
+  <nav class="bar-links">
     <a href="%%ROOTPATH%%#cities">Cities</a>
-  </div>
-</nav>
+  </nav>
+</header>
 %%BODY%%
-<footer>
-  <span class="footer-logo">Ancient Trees</span>
-  <span class="footer-note">&copy; %%YEAR%% Ancient Trees, ancienttrees.app. Map data &copy; OpenStreetMap contributors.</span>
-</footer>
+%%FOOTER%%
 %%SCRIPTS%%
 </body>
 </html>
+"""
+
+FOOTER = """
+<footer>
+  <span class="footer-logo">Ancient Trees</span>
+  <span class="footer-note">&copy; %%YEAR%% Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors.</span>
+</footer>
 """
 
 
@@ -129,7 +150,7 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
-def render_page(title, description, canonical, body, head_extra="", scripts="", rootpath="/"):
+def render_page(title, description, canonical, body, head_extra="", scripts="", rootpath="/", footer=True):
     return (
         PAGE_SHELL
         .replace("%%TITLE%%", esc(title))
@@ -138,6 +159,7 @@ def render_page(title, description, canonical, body, head_extra="", scripts="", 
         .replace("%%ROOTPATH%%", rootpath)
         .replace("%%HEAD_EXTRA%%", head_extra)
         .replace("%%BODY%%", body)
+        .replace("%%FOOTER%%", FOOTER if footer else "")
         .replace("%%SCRIPTS%%", scripts)
         .replace("%%YEAR%%", str(date.today().year))
     )
@@ -147,42 +169,90 @@ def map_head():
     return f'<link rel="stylesheet" href="{MAPLIBRE_CSS}">'
 
 
-def map_script(container_id, markers, center, zoom, fit_bounds):
-    """markers: list of dicts {lat, lng, label, title, subtitle, url}"""
+def city_map_script(markers, center):
+    """Interactive city map: numbered pins linked to story cards, fly-to on select."""
     data = json.dumps(markers)
-    style = json.dumps(OSM_STYLE)
-    fit = "true" if fit_bounds else "false"
     return f"""
 <script src="{MAPLIBRE_JS}"></script>
 <script>
 var markers = {data};
 var map = new maplibregl.Map({{
-  container: '{container_id}',
-  style: {style},
+  container: 'map',
+  style: '{MAP_STYLE}',
   center: [{center[1]}, {center[0]}],
-  zoom: {zoom},
-  scrollZoom: false
+  zoom: 10.5,
+  scrollZoom: true
 }});
 map.addControl(new maplibregl.NavigationControl());
 map.addControl(new maplibregl.FullscreenControl());
 map.on('load', function() {{ map.resize(); }});
-new ResizeObserver(function() {{ map.resize(); }}).observe(document.getElementById('{container_id}'));
+new ResizeObserver(function() {{ map.resize(); }}).observe(document.getElementById('map'));
+
+var pins = [];
+var activeIdx = -1;
+
+function setActive(idx, fly, scroll) {{
+  if (activeIdx >= 0) {{
+    pins[activeIdx].classList.remove('active');
+    document.getElementById('tree-' + (activeIdx + 1)).classList.remove('active');
+  }}
+  activeIdx = idx;
+  var m = markers[idx];
+  pins[idx].classList.add('active');
+  var card = document.getElementById('tree-' + (idx + 1));
+  card.classList.add('active');
+  if (scroll) {{ card.scrollIntoView({{ behavior: 'smooth', block: 'nearest' }}); }}
+  if (fly) {{ map.flyTo({{ center: [m.lng, m.lat], zoom: 14.5, duration: 1200 }}); }}
+}}
+
 var bounds = new maplibregl.LngLatBounds();
-markers.forEach(function(m) {{
+markers.forEach(function(m, idx) {{
   var el = document.createElement('div');
-  el.className = 'marker-pin';
-  el.innerHTML = '<span>' + m.label + '</span>';
-  var popupHtml = '<strong>' + m.title + '</strong><br>' + m.subtitle;
-  if (m.url) {{ popupHtml += '<br><a href="' + m.url + '">View trees</a>'; }}
-  new maplibregl.Marker({{ element: el, anchor: 'bottom' }})
-    .setLngLat([m.lng, m.lat])
-    .setPopup(new maplibregl.Popup({{ offset: 18 }}).setHTML(popupHtml))
-    .addTo(map);
+  el.className = 'pin';
+  el.textContent = m.label;
+  el.addEventListener('click', function(e) {{
+    e.stopPropagation();
+    setActive(idx, true, true);
+  }});
+  new maplibregl.Marker({{ element: el }}).setLngLat([m.lng, m.lat]).addTo(map);
+  pins.push(el);
   bounds.extend([m.lng, m.lat]);
 }});
-if ({fit} && markers.length > 1) {{
-  map.fitBounds(bounds, {{ padding: 60, maxZoom: 13 }});
-}}
+if (markers.length > 1) {{ map.fitBounds(bounds, {{ padding: 70, maxZoom: 13 }}); }}
+
+document.querySelectorAll('.tree-card').forEach(function(card, idx) {{
+  card.addEventListener('click', function() {{ setActive(idx, true, false); }});
+}});
+</script>
+"""
+
+
+def home_map_script(markers):
+    data = json.dumps(markers)
+    return f"""
+<script src="{MAPLIBRE_JS}"></script>
+<script>
+var markers = {data};
+var map = new maplibregl.Map({{
+  container: 'map',
+  style: '{MAP_STYLE}',
+  center: [10, 35],
+  zoom: 1.7,
+  scrollZoom: false
+}});
+map.addControl(new maplibregl.NavigationControl());
+map.on('load', function() {{ map.resize(); }});
+new ResizeObserver(function() {{ map.resize(); }}).observe(document.getElementById('map'));
+markers.forEach(function(m) {{
+  var el = document.createElement('div');
+  el.className = 'pin';
+  el.textContent = m.label;
+  el.addEventListener('click', function() {{
+    map.flyTo({{ center: [m.lng, m.lat], zoom: 9, duration: 1400 }});
+    setTimeout(function() {{ window.location.href = m.url; }}, 1500);
+  }});
+  new maplibregl.Marker({{ element: el }}).setLngLat([m.lng, m.lat]).addTo(map);
+}});
 </script>
 """
 
@@ -218,11 +288,11 @@ def build_city_page(entry):
 
     curated = city_data.get("status") in ("curated", "published")
     notice = "" if curated else (
-        '<div class="notice">This city is awaiting curation. '
-        "Facts have been researched and cross-referenced, but the final human review is still in progress.</div>"
+        '<div class="notice">This city is awaiting curation. Facts have been researched '
+        "and cross-referenced, but the final human review is still in progress.</div>"
     )
 
-    items = []
+    cards = []
     markers = []
     for i, t in enumerate(trees, 1):
         loc = t["location"]
@@ -231,21 +301,18 @@ def build_city_page(entry):
             practical.append(f"<span>Access: {esc(t['access'])}</span>")
         if t.get("transport"):
             practical.append(f"<span>Getting there: {esc(t['transport'])}</span>")
-        items.append(f"""
-    <div class="tree-item" id="tree-{i}">
-      <div class="tree-num">{i}</div>
-      <div>
+        cards.append(f"""
+    <article class="tree-card" id="tree-{i}">
+      <div class="tree-card-top">
+        <span class="tree-num">{i}</span>
         <h2 class="tree-name">{esc(t['name'])}</h2>
-        <p class="tree-meta">{esc(t.get('species', ''))} &middot; {esc(t.get('age_estimate', 'age unknown'))} &middot; {esc(loc.get('neighbourhood', ''))}</p>
-        <p class="tree-story">{esc(t['story'])}</p>
-        <p class="tree-practical">{''.join(practical)}</p>
       </div>
-    </div>""")
+      <p class="tree-meta">{esc(t.get('species', ''))} &middot; {esc(t.get('age_estimate', 'age unknown'))} &middot; {esc(loc.get('neighbourhood', ''))}</p>
+      <p class="tree-story">{esc(t['story'])}</p>
+      <p class="tree-practical">{''.join(practical)}</p>
+    </article>""")
         markers.append({
             "lat": loc["latitude"], "lng": loc["longitude"], "label": str(i),
-            "title": t["name"],
-            "subtitle": f"{t.get('age_estimate', '')}, {loc.get('neighbourhood', '')}",
-            "url": f"#tree-{i}",
         })
 
     ld = {
@@ -276,18 +343,24 @@ def build_city_page(entry):
     avg_lng = sum(m["lng"] for m in markers) / len(markers)
 
     body = f"""
-<main class="page">
-  <p class="eyebrow">{esc(country)}</p>
-  <h1>10 Most Beautiful <em>Ancient Trees</em> in {esc(city)}</h1>
-  <p class="lede">Every one of these trees has been verified against independent sources. Ages are estimates, locations are exact. Pick one and go look at it.</p>
-  {notice}
-  <div id="map" class="map"></div>
-  <div class="tree-list">{''.join(items)}
+<div class="split">
+  <aside class="panel">
+    <div class="panel-head">
+      <p class="eyebrow">{esc(country)}</p>
+      <h1>10 Most Beautiful <em>Ancient Trees</em> in {esc(city)}</h1>
+      <p class="lede">Every one of these trees has been verified against independent sources. Ages are estimates, locations are exact. Tap a tree to see where it stands.</p>
+      {notice}
+    </div>
+    {''.join(cards)}
+  </aside>
+  <div class="stage">
+    <div id="map" class="map"></div>
   </div>
-</main>
+</div>
 """
-    scripts = map_script("map", markers, (avg_lat, avg_lng), 11, True)
-    page = render_page(title, description, canonical, body, head_extra, scripts, rootpath="../../")
+    scripts = city_map_script(markers, (avg_lat, avg_lng))
+    page = render_page(title, description, canonical, body, head_extra, scripts,
+                       rootpath="../../", footer=False)
     out = DIST / "cities" / slug / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(page)
@@ -306,8 +379,7 @@ def build_homepage(published, upcoming):
         lng = sum(m["lng"] for m in p["markers"]) / len(p["markers"])
         city_markers.append({
             "lat": lat, "lng": lng, "label": str(p["count"]),
-            "title": p["city"], "subtitle": f"{p['count']} remarkable trees",
-            "url": f"/cities/{p['slug']}/",
+            "url": f"cities/{p['slug']}/",
         })
 
     live_cards = "".join(
@@ -326,17 +398,22 @@ def build_homepage(published, upcoming):
     )
 
     body = f"""
-<main class="page">
-  <p class="eyebrow">1,000 trees. 100 cities. The ones worth walking to.</p>
-  <h1>Every city has a tree that was <em>here before the city was</em>.</h1>
-  <p class="lede">Most travel guides send you to the same squares, the same views, the same lunch spots. Ancient Trees takes you somewhere quieter. The oldest and most remarkable trees in 100 cities, each verified, each with its story, each on the map.</p>
+<div class="home-hero">
   <div id="map" class="map"></div>
+  <div class="hero-overlay">
+    <h1>Every city has a tree that was <em>here before the city was</em>.</h1>
+    <p>The oldest and most remarkable trees in 100 cities, each verified, each with its story, each on the map. Tap a pin to start.</p>
+  </div>
+</div>
+<main class="page">
   <h2 class="section-heading" id="cities">Cities</h2>
   <div class="city-grid">{live_cards}{soon_cards}</div>
+  <h2 class="section-heading">Why trees</h2>
+  <p class="prose">A 400 year old tree has outlasted every empire, plague, and war its city has seen. It was here before the street was named. It will be here after you leave. Most travel guides send you to the same squares, the same views, the same lunch spots. Ancient Trees takes you somewhere quieter. These are the spots that do not make the top ten lists. They are better.</p>
 </main>
 """
     head_extra = map_head()
-    scripts = map_script("map", city_markers, (30, 10), 1.5, False)
+    scripts = home_map_script(city_markers)
     page = render_page(title, description, BASE_URL + "/", body, head_extra, scripts, rootpath="")
     (DIST / "index.html").write_text(page)
 
