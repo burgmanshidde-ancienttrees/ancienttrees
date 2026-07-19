@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.0 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.1 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -92,6 +92,22 @@ This document has two layers with different lifespans. Layer 1 (Principles) shou
 
 Named person, short bio, why this exists, one verifiable external link (LinkedIn or equivalent). Person schema with sameAs. This page exists for entity verification as much as for readers.
 
+### Contract F — Species page  `/species/[slug]`
+
+The one browse facet: "show me every [species] on the site". Semi-automated. The entry list is generated from tree data; the intro is hand-written, which is what keeps the page off the thin-content pile.
+
+| Element | Specification |
+|---|---|
+| Title (≤60 chars) | `[Common Name]: Ancient [Common Name]s You Can Visit` (shorten if over 60) |
+| Meta description (≤155) | What the species is + the strongest single specimen as teaser |
+| H1 | The common name |
+| First two sentences | What the species is and how many the site has mapped, quotable standalone |
+| Body | Hand-written intro (100-150 words, Paris-quality, unique per species) → the trees of that species, grouped by city, each with age/neighbourhood + link to its tree page → footer links to city pages |
+| Schema | ItemList + BreadcrumbList |
+| Internal links (min) | Every listed tree links to its tree page; the /species index; footer links to 2+ city pages |
+| Publish gate | A species page ships ONLY when it has 3+ renderable trees on the site AND a hand-written intro exists for it. Fewer trees or no intro: no page (P3). Never a bare templated list. |
+| Index | `/species` lists every published species page. One species is never split across two collections and a species page; a single-species collection is prohibited (use the species page). |
+
 ---
 
 ## MEASUREMENT CONTRACT (what proves this blueprint works)
@@ -101,4 +117,5 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 ---
 
 ## CHANGELOG
+- v1.1 — Added Contract F (species page `/species/[slug]` + `/species` index), approved by Hidde. Semi-automated browse facet: auto-generated entry list, hand-written intro, publish-gated at 3+ trees and an intro. Single-species collections are now folded into this contract to avoid duplicate content.
 - v1.0 — Initial blueprint. Consolidates: four-layer architecture, AllTrails-pattern page structure, metadata contracts, schema stacks, freshness rule, entity requirements, measurement hypothesis.

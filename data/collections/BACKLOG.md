@@ -27,8 +27,8 @@ Slug: `most-valuable-trees`. Target: "most expensive tree in the world", "most v
 
 ## Priority 2: draft when coverage arrives
 
-### 5. The Great Planes of Europe's Cities
-Slug: `great-planes-of-europe`. Target: "London plane tree history", "famous plane trees". Coverage today: 6 (Cheapside, Berkeley, Barney, Monceau, Montsouris, Buffon) but 3 flagged; draft after Barney and the Paris locations are verified.
+### 5. ~~The Great Planes of Europe's Cities~~ — SUPERSEDED by the species page
+Single-species. Now covered by /species/london-plane (Contract F, blueprint v1.1). Building a collection for it too would duplicate content (P1). Kept here struck through so the idea is not re-proposed. Any future single-species idea (churchyard yews, etc.) is a species page, not a collection, once it clears the 3-tree gate.
 
 ### 6. Churchyard Yews Older Than Their Churches
 Slug: `churchyard-yews`. Target: "why are yew trees in churchyards" (a genuinely common question, strong FAQ/GEO material), "oldest yew tree". Coverage today: only Totteridge. Trigger: 3+ UK or Northern European cities live.
