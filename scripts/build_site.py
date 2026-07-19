@@ -35,6 +35,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 DIST = ROOT / "site" / "dist"
 BASE_URL = "https://ancienttrees.app"
+CUSTOM_DOMAIN = "ancienttrees.app"
 CONTACT = "hello@ancienttrees.app"
 
 MAPLIBRE_JS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"
@@ -1086,6 +1087,8 @@ def main():
         shutil.rmtree(DIST)
     (DIST / "assets").mkdir(parents=True)
     (DIST / "assets" / "style.css").write_text(CSS)
+    # Custom domain for GitHub Pages; must survive every rebuild.
+    (DIST / "CNAME").write_text(CUSTOM_DOMAIN + "\n")
     for relpath, content, _ in pages:
         out = DIST / relpath
         out.parent.mkdir(parents=True, exist_ok=True)
