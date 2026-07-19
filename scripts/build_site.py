@@ -78,6 +78,10 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .tree-card { padding: 1.75rem; border-bottom: 1px solid var(--cream-dark); cursor: pointer; border-left: 3px solid transparent; transition: border-color 0.2s, background 0.2s; }
 .tree-card:hover { background: #fbf9f5; }
 .tree-card.active { border-left-color: var(--moss); background: #fbf9f5; }
+.tree-card-photo { margin: 0 0 1rem; border-radius: 8px; overflow: hidden; aspect-ratio: 3 / 2; background: var(--cream-dark); }
+.tree-card-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+.tree-card:hover .tree-card-photo img { transform: scale(1.04); }
+.tree-card-credit { font-size: 10px; color: var(--ink-light); margin: -0.6rem 0 0.85rem; }
 .tree-card-top { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 0.4rem; }
 .tree-num { font-family: var(--serif); font-size: 1.1rem; color: var(--moss); flex-shrink: 0; width: 1.4rem; }
 .tree-name { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; line-height: 1.25; }
@@ -437,6 +441,16 @@ def tree_is_renderable(tree):
     return bool(tree.get("story")) and loc.get("latitude") is not None and loc.get("longitude") is not None
 
 
+def usable_photo(tree):
+    """Return the photo dict if it has a URL, license and attribution and is
+    cleared for display; otherwise None. One gate for every page type."""
+    photo = tree.get("photo") or {}
+    if (photo.get("url") and photo.get("license") and photo.get("attribution")
+            and photo.get("status") in ("approved", "found_needs_check")):
+        return photo
+    return None
+
+
 def load_cities():
     city_list = json.loads((DATA / "city-list.json").read_text())["cities"]
     for entry in city_list:
@@ -499,12 +513,10 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages):
         (tree["name"], None),
     ]
 
-    photo = tree.get("photo") or {}
-    photo_ok = bool(photo.get("url") and photo.get("license") and photo.get("attribution")
-                    and photo.get("status") in ("approved", "found_needs_check"))
+    photo = usable_photo(tree)
     photo_html = ""
     og_image = ""
-    if photo_ok:
+    if photo:
         photo_html = f"""
   <figure class="tree-photo">
     <img src="{esc(photo['url'])}" alt="{esc(tree['name'])}" loading="lazy">
@@ -685,17 +697,25 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
         if t.get("transport"):
             practical.append(f"<span>Getting there: {esc(t['transport'])}</span>")
         label = f'<span class="tree-label">{esc(t["label"])}</span>' if t.get("label") else ""
+        cphoto = usable_photo(t)
+        photo_block = ""
+        if cphoto:
+            photo_block = f"""
+      <div class="tree-card-photo"><img src="{esc(cphoto['url'])}" alt="{esc(t['name'])}" loading="lazy"></div>
+      <p class="tree-card-credit">Photo: {esc(cphoto['attribution'])} ({esc(cphoto['license'])})</p>"""
         cards.append(f"""
     <article class="tree-card" id="tree-{i}">
+      {photo_block}
       <div class="tree-card-top">
         <span class="tree-num">{i}</span>
         <h2 class="tree-name">{esc(t['name'])}{label}</h2>
       </div>
-      <p class="tree-meta">{esc(t.get('species', ''))} &middot; {esc(t.get('age_estimate', 'age unknown'))} &middot; {esc(loc.get('neighbourhood', ''))}</p>
+      <p class="tree-meta">{esc(t.get('species', ''))} &middot; {esc(t.get('age_estimate', 'age unknown'))} &middot; {esc(loc.get('neighbourhood', ''))}</p>""")
+        cards[-1] += f"""
       <p class="tree-story">{esc(t['story'])}</p>
       <p class="tree-practical">{''.join(practical)}</p>
       <p class="tree-more"><a href="{slug}/{tslug}">Full story, map and directions for {esc(t['name'])}</a></p>
-    </article>""")
+    </article>"""
         markers.append({"lat": loc["latitude"], "lng": loc["longitude"], "label": str(i)})
 
     faq = city_data.get("faq", [])
