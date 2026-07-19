@@ -1,18 +1,318 @@
 {
   "city": "Amsterdam",
   "country": "Netherlands",
-  "status": "pending",
-  "note": "Skeleton only. These 10 trees were identified in earlier chat research (see CLAUDE.md handover) but stories, coordinates, ages and sources were not carried over. A full research run must fill in every field and verify against two independent sources. Nothing here may be published as-is.",
+  "status": "needs_curation",
+  "intro": "Amsterdam's oldest tree is 275 years old, modest against London's millennium-old yews, and that gap says something about the city: built on drained peat and remade repeatedly by fire and war, little here gets left alone for long. What survived did so on purpose, behind a zoo fence, botanical garden glass, or on a lawn the Rijksmuseum's own architect designed. Amsterdam also became one of Europe's great elm cities, and the results range from a scarred survivor on a canal-side street to a tunnel of interlocked plane trees. All but two of these ten are free to visit.",
+  "meta_description": "Amsterdam's oldest tree is a 275-year-old oak in Artis. Meet it and nine more remarkable trees, from a 300-year-old cycad to a scarred elm.",
+  "question_answer": "The oldest tree in Amsterdam is the Heimanseik, a pedunculate oak in Artis Park estimated at around 275 years old, rooted since roughly 1750, decades before the zoo itself was founded in 1838. It stands near the chimpanzee enclosure and can be visited with a ticket to Artis, a short walk from the Artis tram stop.",
+  "question_meta": "The Heimanseik, a 275-year-old oak in Artis, is Amsterdam's oldest tree. Its story, exact location and nine more remarkable trees in the city.",
+  "question_context": "Amsterdam's peat foundations and history of fires, floods and rebuilding mean the city holds nothing like London's thousand-year yews or Paris's four-century black locusts. Its oldest confirmed tree, the Heimanseik, dates to around 1750 and owes its survival to an accident of geography: the oak was already mature when Artis was founded around it in 1838, so the zoo grew up incorporating the tree rather than the other way round. It is named after Eli Heimans, a naturalist who wrote about the oak in 1903 and helped popularize the idea that ordinary urban nature deserved close attention. Two fungi now grow in its trunk, a common condition in oaks this age, and arborists inspect it annually to judge how much longer it can safely stand. Summer oaks can live seven centuries, which makes 275 modest for the species even if it is a record for the city. Amsterdam's runners up are largely elms and wingnuts in the 100 to 175 year range, survivors of Dutch elm disease and redevelopment rather than centuries of neglect. Getting there: Tram 14 to Artis, then a short walk to the oak near the chimpanzee enclosure.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Amsterdam?",
+      "a": "The Heimanseik, a pedunculate oak in Artis Park estimated at around 275 years old. It predates the zoo itself by decades and is named after the naturalist Eli Heimans, who wrote about it in 1903."
+    },
+    {
+      "q": "Are Amsterdam's remarkable trees free to visit?",
+      "a": "Eight of the ten on this list are free, standing in public parks, squares and streets. The exceptions are the Heimanseik and the Hortus cycad, both inside ticketed zoo or garden grounds."
+    },
+    {
+      "q": "Why doesn't Amsterdam have older trees like London or Paris?",
+      "a": "Amsterdam is built on drained peat and has been repeatedly rebuilt after fires, floods and disease outbreaks, especially Dutch elm disease. Few trees anywhere in the city get left undisturbed for more than two centuries."
+    },
+    {
+      "q": "Why does Amsterdam have so many Caucasian wingnuts?",
+      "a": "Three separate stands, in Wertheimpark, Amstelveld and the Rijksmuseum garden, all reached old age inside protected public gardens. The species is still uncommon as a mature specimen elsewhere in the Netherlands."
+    }
+  ],
   "trees": [
-    { "id": "ams_001", "name": "De Olifantsiep", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
-    { "id": "ams_002", "name": "Leidsebosje platanen", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
-    { "id": "ams_003", "name": "Vondelpark Canadapopulier", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
-    { "id": "ams_004", "name": "Wertheimpark vleugelnoot", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
-    { "id": "ams_005", "name": "Hortus cycad", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
-    { "id": "ams_006", "name": "Artis oak", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
-    { "id": "ams_007", "name": "Lomanstraat X-trees", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
-    { "id": "ams_008", "name": "Amstelkade olijfwilg", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
-    { "id": "ams_009", "name": "Amstelveld vleugelnoten", "curation_status": "flagged", "notes": "Name from handover, all data missing" },
-    { "id": "ams_010", "name": "Frederiksplein vleugelnoot", "curation_status": "flagged", "notes": "Name from handover, all data missing" }
+    {
+      "id": "ams_001",
+      "name": "The Heimanseik",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "275 years",
+      "age_min": 260,
+      "age_max": 285,
+      "location": {
+        "address": "Artis Park, Plantage Kerklaan 38-40, 1018 CZ Amsterdam",
+        "latitude": 52.3667,
+        "longitude": 4.9144,
+        "neighbourhood": "Plantage, Amsterdam-Centrum"
+      },
+      "story": "Amsterdam's oldest tree spent its first ninety years alone. This pedunculate oak took root around 1750, nearly a century before Artis existed at all, in a patch of land that later became a zoo built around it rather than the other way round. It is the one tree in the park older than the institution itself, a genuine relic wearing a visitor wristband it never applied for. Orangutans once used its lower limbs as a climbing frame during outdoor play, before keepers decided a 275-year-old oak deserved a rest from primates swinging off its branches. It is named after Eli Heimans, the schoolteacher-naturalist who wrote about it in 1903 and helped make unglamorous urban nature a subject worth admiring in its own right. His name stuck to the tree the way ivy sticks to a wall. Two fungi now grow in its trunk, common enough in oaks this age, and arborists check it every year to judge how much longer the trunk can be trusted to stand. Summer oaks can live seven centuries, so at 275 this one is, technically, still young. Amsterdam's ground rarely lets anything get that far.",
+      "verified_sources": [
+        "https://www.artis.nl/nl/artis-park/te-zien-in-artis-park/heimanseik",
+        "https://oost-online.nl/groen-erfgoed-van-artis-jan-de-jong-over-de-bomen-van-het-park/"
+      ],
+      "access": "Paid entry, part of Artis zoo and botanical garden",
+      "transport": "Tram 14, Artis stop, directly adjacent",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Exact position within Artis Park is approximate; sources describe it as standing near the chimpanzee outdoor enclosure but coordinates point to the park's general location."
+    },
+    {
+      "id": "ams_002",
+      "name": "The Leidsebosje Planes",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "165 years",
+      "age_min": 155,
+      "age_max": 175,
+      "location": {
+        "address": "Leidsebosje, near Leidseplein, 1017 PS Amsterdam",
+        "latitude": 52.3628,
+        "longitude": 4.8823,
+        "neighbourhood": "Leidseplein, Amsterdam-Centrum/West"
+      },
+      "story": "When the city needed to widen a bridge in 1925, Amsterdam moved two fully grown plane trees rather than fell them. Residents near Leidseplein had objected loudly enough that engineers floated the two trunks on rafts and winched them several meters sideways, roots and all, to clear space for a new roundabout. A century later both trees have more than doubled their girth: each now measures over seven meters around, the thickest trunks in the city. A small wooden woodcutter figure, carved by an anonymous sculptor in 1989, sits astride one tree appearing to saw off the very branch supporting it. When that branch actually needed removing around 2020, city gardeners moved the sculpture to the other tree rather than let the joke become true. Amsterdam has since proposed the pair for national monument status, an unusual honor for something that is, after all, still just two street trees that once got in the way of traffic planning. They stand a two minute walk from Leidseplein's trams and taxis, indifferent to both.",
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/De_dikke_platanen_van_het_Leidsebosje",
+        "https://www.amsterdam.nl/nieuws/achtergrond/tien-mooiste-bomen/"
+      ],
+      "access": "Free, public park",
+      "transport": "Tram 1/2/12, Leidseplein, 2 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/2025_Leidsebosje%2C_Asd%2C_dikke_plataan_noord_%28A%29.jpg",
+        "license": "CC0 1.0",
+        "attribution": "Ceescamel, Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "ams_003",
+      "name": "The Vondelpark Poplar",
+      "species": "Canadian Poplar (Populus x canadensis 'Serotina')",
+      "age_estimate": "145 years",
+      "age_min": 140,
+      "age_max": 156,
+      "location": {
+        "address": "Vondelpark, opposite Van Eeghenlaan 27, 1071 Amsterdam",
+        "latitude": 52.3585,
+        "longitude": 4.8763,
+        "neighbourhood": "Oud-Zuid, Amsterdam-Zuid"
+      },
+      "story": "The tallest tree in Amsterdam stands on the edge of a bicycle path, not in a forest. Sources disagree on exactly when this Canadian poplar went into the ground, sometime between the park's founding around 1870 and a specifically documented 1885, but either way it has reached roughly 38.5 meters, taller than most buildings in the surrounding Oud-Zuid neighborhood. Its trunk measures 617 centimeters around, the third thickest in the city behind only the two plane trees in Leidsebosje. Poplars grow fast and die relatively young for a tree, rarely making it past 150 years, so this one is closer to the end of its run than the beginning, and unlike an oak it will not get centuries more to look forward to. Vondelpark's own written guide to its old trees singles this poplar out specifically, distinguishing it from an ash of similar age elsewhere in the park that never got nearly as large. Cyclists and joggers pass beneath its crown on Van Eeghenlaan every day without necessarily registering that the tallest tree in a city of canals and gabled houses is a poplar nobody planted on purpose to be a landmark.",
+      "verified_sources": [
+        "http://www.bomeninfo.nl/amsterdam.htm",
+        "https://www.inhetvondelpark.nl/oudebomen.html"
+      ],
+      "access": "Free, public park, open 24 hours",
+      "transport": "Tram 2, Emmastraat, or Tram 3/12, Van Baerlestraat, then 5-10 min walk into the park",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Sources disagree on planting date (park-establishment era around 1870 vs a specific 1885 date); age range widened to cover both. Exact position along Van Eeghenlaan is street-level, not tree-specific."
+    },
+    {
+      "id": "ams_004",
+      "name": "The Wertheimpark Wingnut",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "125 years",
+      "age_min": 120,
+      "age_max": 130,
+      "location": {
+        "address": "Wertheimpark, Plantage Middenlaan, 1018 DD Amsterdam",
+        "latitude": 52.3667,
+        "longitude": 4.9086,
+        "neighbourhood": "Plantage, Amsterdam-Centrum"
+      },
+      "story": "This tree has outlasted the park's own name twice. Wertheimpark was laid out in 1812 and named for the Jewish philanthropist Abraham Carel Wertheim in 1898, a year after his death. In August 1942 Amsterdam's Nazi-appointed mayor renamed it Parktuin to erase the connection, and the wartime name lasted until liberation restored the original in May 1945. The wingnut, a Caucasian species with broad horizontal branches that thicken into plank-like ribs to support their own weight, was already forty years old by the time any of that happened. It now spreads a canopy 24 meters across in a park barely three-quarters of a hectare in size, one of roughly fifteen trees here over a century old. Since 1993 the park has also held Gebroken Spiegels, Amsterdam's memorial to Dutch victims of the Holocaust, and the annual remembrance ceremony takes place within sight of the tree's crown. The municipality classified the wingnut as a monumental tree in 2002, a smaller but no less deliberate act of naming than the ones the park itself went through.",
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Wertheimpark",
+        "https://bomenbieb.nl/regios/noord-holland/"
+      ],
+      "access": "Free, public park",
+      "transport": "Tram 14, Artis stop, 5 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/2022_Wertheimpark%2C_Asd-Gewone_vleugelnoot_%281%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ceescamel, Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "ams_005",
+      "name": "The Cycad of the Hortus",
+      "species": "Eastern Cape Giant Cycad (Encephalartos altensteinii)",
+      "age_estimate": "300 years",
+      "age_min": 280,
+      "age_max": 320,
+      "location": {
+        "address": "Palm House, Hortus Botanicus Amsterdam, Plantage Middenlaan 2A, 1018 DD Amsterdam",
+        "latitude": 52.366969,
+        "longitude": 4.908442,
+        "neighbourhood": "Plantage, Amsterdam-Centrum"
+      },
+      "story": "This plant was already growing in South Africa when Amsterdam's Hortus Botanicus bought it in 1850, and the two have been growing together ever since. It is an Eastern Cape giant cycad, estimated today at around 300 years old, kept potted under glass in the garden's Palm House for the 175 years it has lived here. Cycads as a group have barely changed in 300 million years and survived two mass extinctions that wiped out most of the plant kingdom around them, which makes one specimen's three centuries look almost brief by comparison. A younger female cycad, roughly 200 years old, grows opposite it, and Hortus staff hand-pollinate the two every year because the specific wasps and beetles that pollinate cycads in the wild do not live in an Amsterdam greenhouse. A few meters further into the same glasshouse stands a specimen of Encephalartos woodii, a cycad extinct in the wild since the early 1900s; every plant of that species alive anywhere today is a clone of a single specimen found in South Africa in 1895. The Hortus has been growing rare and difficult plants since 1638, and this cycad has now been part of that project for nearly half the garden's history.",
+      "verified_sources": [
+        "https://www.dehortus.nl/en/garden-and-greenhouses/cycads/",
+        "https://dehortus.gardenexplorer.org/taxon-1914.aspx"
+      ],
+      "access": "Paid entry, Hortus Botanicus ticket required",
+      "transport": "Tram 14, Artis stop, directly outside",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age estimate is sourced from the Hortus's own garden records and plant database; independent third-party confirmation was not found. Coordinates are a confirmed street geocode for the Hortus, not a pin on the specific plant within the Palm House."
+    },
+    {
+      "id": "ams_006",
+      "name": "The Olifantsiep",
+      "species": "Dutch Elm, 'Belgica' cultivar (Ulmus x hollandica 'Belgica')",
+      "age_estimate": "115 years",
+      "age_min": 110,
+      "age_max": 126,
+      "location": {
+        "address": "Zeeburgerdijk, opposite number 56, 1093 Amsterdam-Oost",
+        "latitude": 52.365,
+        "longitude": 4.932,
+        "neighbourhood": "Zeeburg, Amsterdam-Oost"
+      },
+      "story": "A truck tore off part of this elm's trunk in 2015, and it is still standing, propped now on a steel support like a boxer who refuses to sit down between rounds. Amsterdam planted this twin-stemmed elm on Zeeburgerdijk sometime between 1900 and 1915, according to conflicting municipal and conservation records, and its nickname comes from a heavy low branch that early residents thought looked like an elephant's trunk reaching toward the ground. The city has tens of thousands of elms, more per capita than almost anywhere else in Europe, a legacy of planting elms along canals for their tolerance of the polluted, waterlogged soil common near open sewers a century ago. Dutch elm disease, first identified and named in the Netherlands in the 1920s, wiped out huge numbers of European elms over the following decades, and Amsterdam's collection survived largely because of an aggressive, decades-long eradication and breeding program that continues today. The Olifantsiep, girth pushing five meters, has outlived a disease epidemic, a truck collision and the severe storm of January 2018, still leafing out every spring behind a low fence anyone can lean on.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/olifantsiep-amsterdam/",
+        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-noord-holland.html"
+      ],
+      "access": "Free, public street",
+      "transport": "Tram 14, Zeeburgerdijk area",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Sources give a planting date range of 1900-1915 rather than a single year. Exact GPS is a street-level estimate; monumentaltrees.com likely holds a precise pin but its page could not be fetched for independent verification per the project's sourcing rules."
+    },
+    {
+      "id": "ams_007",
+      "name": "The Lomanstraat Cathedral of Trees",
+      "species": "Likely London Plane (Platanus x hispanica)",
+      "age_estimate": "110 years",
+      "age_min": 100,
+      "age_max": 115,
+      "location": {
+        "address": "Lomanstraat, 1071 Amsterdam",
+        "latitude": 52.3516,
+        "longitude": 4.8616,
+        "neighbourhood": "Willemspark, Amsterdam-Zuid"
+      },
+      "story": "Nobody designed the tunnel of trees on Lomanstraat. When the street was planted in the early 1900s as part of Plan Zuid, architect Hendrik Petrus Berlage's expansion of the city southward, the trees on both sidewalks simply did what trees flanked by tall apartment blocks do: leaned toward the middle of the street, chasing the light above the buildings. A century of that lean has interlocked their crowns into a continuous green tunnel overhead, and the street is now one of the most photographed in Amsterdam-Zuid, nicknamed the cathedral of trees by people who have walked under it. A persistent local story claims the trees survived wartime firewood shortages because a German office once stood on the street, which is the kind of detail that sounds too tidy to verify and probably is. What is verifiable is simpler: given decades and a narrow gap of open sky, ordinary street trees will find a way to close it, and nobody in Amsterdam-Zuid had to plant a cathedral on purpose. It just grew there.",
+      "verified_sources": [
+        "https://jean-paulopperman.nl/kathedraal-van-bomen-in-de-lomanstraat-amsterdam/",
+        "https://www.amsterdamlocalgems.com/places/lomanstraat-x-trees/"
+      ],
+      "access": "Free, public street",
+      "transport": "Tram 2, Amstelveenseweg, 5-10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Species is the regionally typical London plane but not explicitly confirmed in sources found. Exact planting date is not documented; estimated from the Plan Zuid development timeline (council approval 1917). The wartime survival story is explicitly unverified local lore, not a sourced fact."
+    },
+    {
+      "id": "ams_008",
+      "name": "The Amstelkade Olive Willow",
+      "species": "Olive Willow, likely Russian Olive (Elaeagnus angustifolia)",
+      "age_estimate": "78 years",
+      "age_min": 75,
+      "age_max": 80,
+      "location": {
+        "address": "Amstelkade, opposite number 154, 1078 Amsterdam-Zuid",
+        "latitude": 52.3505,
+        "longitude": 4.8925,
+        "neighbourhood": "De Pijp / Amsterdam-Zuid"
+      },
+      "story": "Despite the name, this tree is not a willow and has nothing to do with olives. The olijfwilg on Amstelkade is an Elaeagnus, a shrub-turned-tree genus with silvery, willow-shaped leaves and small fragrant flowers that ripen into fruit resembling tiny olives, hence a common name that misleads on both counts. Planted in 1948, three years after the Netherlands emerged from wartime occupation, it has grown along the Amstelkanaal into what the city's own tree inventory calls a specimen unique in the Netherlands for its combination of size and age. Nobody has documented a comparable one anywhere else in the country. At under 80 years old it is the youngest tree on this list by decades, included not for age but because Elaeagnus rarely gets the decades of undisturbed growth it takes to reach tree scale, most specimens staying shrub-sized in gardens rather than lining a public street. Amsterdam's official register of notable trees lists it among the city's most distinctive, a quiet distinction for a tree most passersby would assume was an ordinary willow if they noticed it at all.",
+      "verified_sources": [
+        "https://www.boomzorg.nl/upload/artikelen/bz513top10.pdf",
+        "https://www.amsterdam.nl/nieuws/achtergrond/tien-mooiste-bomen/"
+      ],
+      "access": "Free, public street",
+      "transport": "Tram 3 or 4, Amsteldijk/De Pijp area",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Exact species within Elaeagnus is not confirmed (likely E. angustifolia based on a 'narrow-leaved' descriptor); the two sources both trace back largely to the same original trade-press profile, so treat as a single well-documented but not fully independent source pair. Exact GPS is a street-level estimate."
+    },
+    {
+      "id": "ams_009",
+      "name": "The Wingnuts of Amstelveld",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "100+ years",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Amstelveld, near Amstelkerk, 1017 Amsterdam",
+        "latitude": 52.3573,
+        "longitude": 4.8975,
+        "neighbourhood": "Amsterdam-Centrum, near the Amstel"
+      },
+      "story": "In 2006 the city government tried to cut down 14 of these trees, and lost. The district council issued a felling permit that summer for over a dozen of the square's 46 Caucasian wingnuts, part of a resurfacing plan under an outdated tree ordinance. Two residents filed objections, then a court challenge, then finally an appeal to the Raad van State, the country's highest administrative court, after a district court sided with the city. No tree was felled while the case ran, and by 2010 the dispute ended with the square fully replanted around the surviving wingnuts rather than in place of them. To protect the three oldest, most valuable specimens from a resurfacing project's foot and cart traffic, engineers installed an underground support system to stop the soil from compacting around their roots, an unusually expensive concession for a handful of street trees. The wingnuts' surface roots still push up paving stones around the square often enough that it is a known feature of walking across Amstelveld, not a defect. The market that runs here on Mondays sets up its stalls under the same canopy the city once planned to remove.",
+      "verified_sources": [
+        "https://rudolfmisset.wordpress.com/2006/06/14/vleugelnootbomen-amstelveld-de-onzorgvuldigheid-van-hans-kaljee/",
+        "https://www.boomzorg.nl/upload/artikelen/bz513top10.pdf"
+      ],
+      "access": "Free, public square",
+      "transport": "Tram 4, Prinsengracht or Frederiksplein, few min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Exact planting date and precise age were not found; 'monumental' designation implies 100+ years, so a wide range is used pending confirmation. Coordinates are square-level, not tree-specific."
+    },
+    {
+      "id": "ams_010",
+      "name": "The Rijksmuseum Wingnut",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "119 years",
+      "age_min": 110,
+      "age_max": 140,
+      "location": {
+        "address": "Rijksmuseum Gardens, near the Directeurswoning, Museumstraat 1, 1071 XX Amsterdam",
+        "latitude": 52.3596,
+        "longitude": 4.885,
+        "neighbourhood": "Museumkwartier, Amsterdam-Zuid"
+      },
+      "story": "The Rijksmuseum's own architect planted this tree in his own garden design, and it outlived every renovation the museum went through afterward. Pierre Cuypers, who designed the Rijksmuseum building itself, laid out its surrounding gardens between 1884 and 1916 in distinct historical styles, neo-Renaissance parterres beside a wild landscape garden, and planted a Caucasian wingnut near the director's villa in the southeast corner around 1907. By a 2014 survey the tree stood over 19 meters tall with a trunk more than four meters around. When the museum closed for a decade-long renovation completed in 2013, the landscape firm Copijn redesigned the gardens from scratch and could have cleared the site for something new. Instead the wingnut was kept and built around, one of the few mature trees preserved through the entire project. Wingnuts are still uncommon as full-grown specimens in the Netherlands, which puts this tree in the same small company as the ones in Wertheimpark and Amstelveld across town, three separate stands of the same species that all happened to reach old age inside Amsterdam's public gardens rather than getting cleared for something newer.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/vleugelnoot-rijksmuseum/",
+        "https://nl.wikipedia.org/wiki/Rijksmuseumtuinen"
+      ],
+      "access": "Free, Rijksmuseum garden, no museum ticket required",
+      "transport": "Tram 2, 5 or 12, Rijksmuseum/Museumplein stop, right outside",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "An earlier planting date of 1885 appears in one source; the 1907 date is favored here as it matches the documented 1884-1916 timeline of Cuypers' garden construction, but the discrepancy is not fully resolved. Coordinates are an estimate for the garden's southeast corner."
+    }
   ]
 }
