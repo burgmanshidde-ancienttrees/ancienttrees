@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ancient Trees — Discover the world's most remarkable trees</title>
+<meta name="description" content="Ancient Trees maps the most beautiful and oldest trees in cities worldwide. Discover living monuments around the corner and across the world.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #F7F4EE;
+    --cream-dark: #EDE9DF;
+    --ink: #1A1A14;
+    --ink-mid: #4A4A3A;
+    --ink-light: #8A8A7A;
+    --moss: #3D5C1E;
+    --moss-light: #EAF0E0;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 2.5rem;
+    background: var(--cream);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+  }
+  nav.scrolled { border-bottom-color: var(--cream-dark); }
+
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .nav-cta {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--cream);
+    background: var(--ink);
+    padding: 0.5rem 1.25rem;
+    border-radius: 2px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--moss); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 4rem 4rem 2.5rem;
+    border-right: 1px solid var(--cream-dark);
+  }
+
+  .hero-eyebrow {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-title {
+    font-family: var(--serif);
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--moss);
+  }
+
+  .hero-body {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--ink-mid);
+    line-height: 1.75;
+    max-width: 440px;
+    margin-bottom: 2.5rem;
+  }
+
+  .waitlist-form {
+    display: flex;
+    gap: 0;
+    max-width: 420px;
+  }
+
+  .waitlist-input {
+    flex: 1;
+    font-family: var(--sans);
+    font-size: 14px;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--cream-dark);
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+    background: white;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .waitlist-input:focus { border-color: var(--moss); }
+  .waitlist-input::placeholder { color: var(--ink-light); }
+
+  .waitlist-btn {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0.85rem 1.5rem;
+    background: var(--ink);
+    color: var(--cream);
+    border: none;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+    transition: background 0.2s;
+  }
+  .waitlist-btn:hover { background: var(--moss); }
+
+  .hero-note {
+    font-size: 12px;
+    color: var(--ink-light);
+    margin-top: 0.75rem;
+  }
+
+  .hero-right {
+    position: relative;
+    overflow: hidden;
+    background: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Tree illustration SVG */
+  .tree-illustration {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+  }
+
+  .hero-stats {
+    position: absolute;
+    bottom: 3rem;
+    left: 2.5rem;
+    right: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .stat {
+    padding: 1.25rem 1.5rem;
+    background: rgba(0,0,0,0.3);
+  }
+
+  .stat-number {
+    font-family: var(--serif);
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    line-height: 1;
+    margin-bottom: 0.35rem;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+  }
+
+  /* SECTION: HOW IT WORKS */
+  .section {
+    padding: 6rem 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    max-width: 600px;
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: var(--cream-dark);
+    border: 1px solid var(--cream-dark);
+  }
+
+  .step {
+    background: var(--cream);
+    padding: 2.5rem 2rem;
+  }
+
+  .step-marker {
+    font-family: var(--serif);
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--cream-dark);
+    line-height: 1;
+    margin-bottom: 1.25rem;
+  }
+
+  .step-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+  }
+
+  .step-body {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--ink-mid);
+    line-height: 1.7;
+  }
+
+  /* FEATURED TREES */
+  .trees-section {
+    background: var(--ink);
+    padding: 6rem 2.5rem;
+  }
+
+  .trees-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .trees-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+
+  .trees-section .section-eyebrow { color: rgba(255,255,255,0.4); }
+
+  .trees-section .section-title {
+    color: white;
+    margin-bottom: 0;
+  }
+
+  .trees-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.1);
+  }
+
+  .tree-card {
+    background: var(--ink);
+    padding: 2rem;
+    border-top: 2px solid transparent;
+    transition: border-color 0.2s;
+    cursor: default;
+  }
+  .tree-card:hover { border-top-color: var(--moss); }
+
+  .tree-city {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 0.75rem;
+  }
+
+  .tree-name {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+  }
+
+  .tree-age {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 1rem;
+  }
+
+  .tree-desc {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.7;
+  }
+
+  /* PRICING */
+  .pricing-section {
+    padding: 6rem 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .pricing-card {
+    border: 1px solid var(--cream-dark);
+    padding: 3rem;
+    margin-top: 3rem;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .pricing-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .pricing-title {
+    font-family: var(--serif);
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .pricing-features li {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--ink-mid);
+    padding-left: 1.25rem;
+    position: relative;
+  }
+
+  .pricing-features li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--moss);
+  }
+
+  .pricing-right { text-align: right; }
+
+  .pricing-amount {
+    font-family: var(--serif);
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--ink);
+  }
+
+  .pricing-period {
+    font-size: 13px;
+    color: var(--ink-light);
+    margin-bottom: 1.5rem;
+  }
+
+  .pricing-btn {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0.85rem 2rem;
+    background: var(--ink);
+    color: var(--cream);
+    text-decoration: none;
+    border-radius: 2px;
+    letter-spacing: 0.02em;
+    transition: background 0.2s;
+  }
+  .pricing-btn:hover { background: var(--moss); }
+
+  .free-note {
+    font-size: 13px;
+    color: var(--ink-light);
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--cream-dark);
+    padding: 2rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    font-family: var(--serif);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+
+  .footer-note {
+    font-size: 12px;
+    color: var(--ink-light);
+  }
+
+  /* SUCCESS STATE */
+  .success-msg {
+    display: none;
+    font-size: 14px;
+    color: var(--moss);
+    margin-top: 0.75rem;
+    font-weight: 500;
+  }
+
+  /* SCROLL DIVIDER */
+  .divider {
+    height: 1px;
+    background: var(--cream-dark);
+    margin: 0 2.5rem;
+  }
+
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-left { padding: 7rem 1.5rem 3rem; border-right: none; border-bottom: 1px solid var(--cream-dark); }
+    .hero-right { height: 360px; }
+    .steps { grid-template-columns: 1fr; }
+    .trees-grid { grid-template-columns: 1fr; }
+    .pricing-card { grid-template-columns: 1fr; }
+    .pricing-right { text-align: left; }
+    .trees-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    nav { padding: 1rem 1.5rem; }
+    .section { padding: 4rem 1.5rem; }
+    footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+    .hero-stats { grid-template-columns: 1fr 1fr 1fr; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#" class="nav-logo">Ancient Trees</a>
+  <a href="#waitlist" class="nav-cta">Join waitlist</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Coming soon to iOS</p>
+    <h1 class="hero-title">The world's most <em>remarkable</em> trees, mapped.</h1>
+    <p class="hero-body">Every city hides trees that have stood for centuries. Ancient Trees finds them for you — whether you're walking in Amsterdam or arriving in Lisbon.</p>
+    <form class="waitlist-form" id="waitlist" onsubmit="handleSubmit(event)">
+      <input type="email" class="waitlist-input" placeholder="Your email address" required />
+      <button type="submit" class="waitlist-btn">Notify me</button>
+    </form>
+    <p class="hero-note">Free to download. No spam. Unsubscribe any time.</p>
+    <p class="success-msg" id="success-msg">You're on the list. We'll be in touch.</p>
+  </div>
+
+  <div class="hero-right">
+    <svg class="tree-illustration" viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <!-- Background texture -->
+      <rect width="600" height="700" fill="#1A1A14"/>
+
+      <!-- Ambient glow -->
+      <ellipse cx="300" cy="280" rx="220" ry="200" fill="#3D5C1E" opacity="0.12"/>
+
+      <!-- Ground -->
+      <rect x="0" y="580" width="600" height="120" fill="#141410"/>
+
+      <!-- Main trunk -->
+      <path d="M 285 580 Q 280 500 270 420 Q 265 360 275 300" stroke="#5a4a2a" stroke-width="28" fill="none" stroke-linecap="round"/>
+      <path d="M 315 580 Q 320 500 330 420 Q 335 360 325 300" stroke="#5a4a2a" stroke-width="24" fill="none" stroke-linecap="round"/>
+      <path d="M 300 580 L 300 290" stroke="#6b5a35" stroke-width="18" fill="none" stroke-linecap="round"/>
+
+      <!-- Roots -->
+      <path d="M 285 578 Q 240 590 200 600" stroke="#5a4a2a" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path d="M 290 580 Q 260 600 230 620" stroke="#5a4a2a" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M 315 578 Q 360 590 400 600" stroke="#5a4a2a" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path d="M 310 580 Q 340 600 370 622" stroke="#5a4a2a" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+      <!-- Major branches -->
+      <path d="M 275 380 Q 220 340 170 290" stroke="#5a4a2a" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <path d="M 280 350 Q 240 300 210 250" stroke="#5a4a2a" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <path d="M 325 380 Q 380 340 430 290" stroke="#5a4a2a" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <path d="M 320 350 Q 360 300 390 250" stroke="#5a4a2a" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <path d="M 300 310 Q 290 260 280 210" stroke="#5a4a2a" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path d="M 300 310 Q 310 260 320 210" stroke="#5a4a2a" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+      <!-- Sub-branches -->
+      <path d="M 210 250 Q 180 220 150 200" stroke="#4a3a22" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M 210 250 Q 195 215 185 185" stroke="#4a3a22" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M 390 250 Q 420 220 450 200" stroke="#4a3a22" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M 390 250 Q 405 215 415 185" stroke="#4a3a22" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M 170 290 Q 140 270 110 255" stroke="#4a3a22" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M 430 290 Q 460 270 490 255" stroke="#4a3a22" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+      <!-- Foliage clusters - layered circles -->
+      <!-- Bottom layer (dark) -->
+      <circle cx="300" cy="240" r="130" fill="#1e3310" opacity="0.9"/>
+      <circle cx="200" cy="260" r="90" fill="#1e3310" opacity="0.9"/>
+      <circle cx="400" cy="260" r="90" fill="#1e3310" opacity="0.9"/>
+      <circle cx="155" cy="225" r="65" fill="#1e3310" opacity="0.9"/>
+      <circle cx="445" cy="225" r="65" fill="#1e3310" opacity="0.9"/>
+
+      <!-- Mid layer -->
+      <circle cx="300" cy="210" r="110" fill="#253d15" opacity="0.85"/>
+      <circle cx="205" cy="230" r="80" fill="#253d15" opacity="0.85"/>
+      <circle cx="395" cy="230" r="80" fill="#253d15" opacity="0.85"/>
+      <circle cx="160" cy="195" r="55" fill="#253d15" opacity="0.85"/>
+      <circle cx="440" cy="195" r="55" fill="#253d15" opacity="0.85"/>
+      <circle cx="280" cy="165" r="60" fill="#253d15" opacity="0.85"/>
+      <circle cx="320" cy="165" r="60" fill="#253d15" opacity="0.85"/>
+
+      <!-- Top layer (lighter) -->
+      <circle cx="300" cy="185" r="90" fill="#2e4d1a" opacity="0.9"/>
+      <circle cx="255" cy="170" r="65" fill="#2e4d1a" opacity="0.9"/>
+      <circle cx="345" cy="170" r="65" fill="#2e4d1a" opacity="0.9"/>
+      <circle cx="300" cy="145" r="70" fill="#354f1c" opacity="0.9"/>
+      <circle cx="265" cy="135" r="50" fill="#3d5c1e" opacity="0.85"/>
+      <circle cx="335" cy="135" r="50" fill="#3d5c1e" opacity="0.85"/>
+
+      <!-- Highlight cluster -->
+      <circle cx="300" cy="125" r="55" fill="#466a23" opacity="0.8"/>
+      <circle cx="285" cy="112" r="38" fill="#507826" opacity="0.7"/>
+      <circle cx="315" cy="112" r="38" fill="#507826" opacity="0.7"/>
+      <circle cx="300" cy="100" r="30" fill="#5a8429" opacity="0.6"/>
+
+      <!-- Subtle light dots -->
+      <circle cx="290" cy="108" r="6" fill="#8ab84a" opacity="0.3"/>
+      <circle cx="310" cy="115" r="5" fill="#8ab84a" opacity="0.25"/>
+      <circle cx="275" cy="130" r="4" fill="#8ab84a" opacity="0.2"/>
+      <circle cx="325" cy="128" r="4" fill="#8ab84a" opacity="0.2"/>
+
+      <!-- Location pin -->
+      <circle cx="300" cy="95" r="20" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="1.5"/>
+      <circle cx="300" cy="95" r="5" fill="rgba(255,255,255,0.9)"/>
+
+      <!-- Ground shadow -->
+      <ellipse cx="300" cy="582" rx="80" ry="8" fill="#0a0a08" opacity="0.6"/>
+    </svg>
+
+    <!-- Stats overlay -->
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number">100</div>
+        <div class="stat-label">Cities</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">1,000</div>
+        <div class="stat-label">Trees</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Years average age</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- HOW IT WORKS -->
+<div class="section">
+  <p class="section-eyebrow">How it works</p>
+  <h2 class="section-title">Open the app. Find a tree worth walking to.</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-marker">I</div>
+      <div class="step-title">Open anywhere</div>
+      <p class="step-body">Ancient Trees works in 100 cities worldwide. At home or traveling, the map shows what's nearby — no searching required.</p>
+    </div>
+    <div class="step">
+      <div class="step-marker">II</div>
+      <div class="step-title">Discover the story</div>
+      <p class="step-body">Each tree comes with its age, species, and the history behind it. Some have stood since the Renaissance. Others survived wars, floods, and cities being built around them.</p>
+    </div>
+    <div class="step">
+      <div class="step-marker">III</div>
+      <div class="step-title">Go find it</div>
+      <p class="step-body">Navigate directly to the tree. Two are free in every city. Unlock all 1,000 trees worldwide with a single yearly subscription.</p>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- FEATURED TREES -->
+<section class="trees-section">
+  <div class="trees-inner">
+    <div class="trees-header">
+      <div>
+        <p class="section-eyebrow">From the collection</p>
+        <h2 class="section-title">A few of the trees waiting for you</h2>
+      </div>
+    </div>
+    <div class="trees-grid">
+      <div class="tree-card">
+        <div class="tree-city">Amsterdam, Netherlands</div>
+        <div class="tree-name">The Westerkerk Elm</div>
+        <div class="tree-age">Approx. 280 years old</div>
+        <p class="tree-desc">Anne Frank wrote about this tree from her hiding place. It stood outside the Secret Annex until 2010, when a storm finally brought it down — but not before cuttings were distributed to eight countries.</p>
+      </div>
+      <div class="tree-card">
+        <div class="tree-city">Lisbon, Portugal</div>
+        <div class="tree-name">Jacaranda do Jardim da Estrela</div>
+        <div class="tree-age">Approx. 180 years old</div>
+        <p class="tree-desc">A jacaranda of unusual scale in one of Lisbon's oldest public gardens. In May, its violet canopy turns the surrounding paths into something closer to a painting than a park.</p>
+      </div>
+      <div class="tree-card">
+        <div class="tree-city">Palermo, Italy</div>
+        <div class="tree-name">Il Ficus Secolare</div>
+        <div class="tree-age">Approx. 150 years old</div>
+        <p class="tree-desc">A Moreton Bay fig with a canopy that covers over a thousand square metres. Its aerial roots have formed secondary trunks over the decades, making it feel less like a single tree and more like a forest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section">
+  <p class="section-eyebrow">Pricing</p>
+  <h2 class="section-title">Simple, honest pricing</h2>
+  <div class="pricing-card">
+    <div class="pricing-left">
+      <p class="pricing-label">Annual plan</p>
+      <h3 class="pricing-title">Full access, everywhere</h3>
+      <ul class="pricing-features">
+        <li>All 1,000 trees across 100 cities</li>
+        <li>New cities added every month</li>
+        <li>Offline access — no signal needed</li>
+        <li>Navigate directly to any tree</li>
+        <li>14-day free trial, no card required</li>
+      </ul>
+    </div>
+    <div class="pricing-right">
+      <div class="pricing-amount">€19</div>
+      <div class="pricing-period">per year</div>
+      <a href="#waitlist" class="pricing-btn">Join waitlist</a>
+    </div>
+  </div>
+  <p class="free-note">2 trees per city are always free. No account needed to start.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">Ancient Trees</span>
+  <span class="footer-note">© 2025 Ancient Trees — ancienttrees.app</span>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const msg = document.getElementById('success-msg');
+    form.style.display = 'none';
+    msg.style.display = 'block';
+  }
+
+  document.querySelectorAll('a[href="#waitlist"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.getElementById('waitlist').querySelector('input').focus();
+      document.getElementById('waitlist').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
+</script>
+</body>
+</html>
