@@ -3,6 +3,28 @@
   "country": "France",
   "status": "needs_curation",
   "intro": "Paris treats its trees as part of the civic record: the city logs every one of its 200,000 street and park trees in an open register and stamps a select few as officially remarkable. Its two oldest trees are father and son, black locusts raised four centuries ago from American seed by the royal herbalist Jean Robin and his son Vespasien, and both still flower every spring. These ten include the city's oldest tree, its thickest, its tallest, and an address that has held an elm since the Middle Ages. Every one is a metro ride away.",
+  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and nine more within a metro ride.",
+  "question_answer": "The oldest tree in Paris is the Robinier of Square Rene-Viviani, a black locust planted in 1601 by the royal herbalist Jean Robin, now around 425 years old. It stands in the Latin Quarter directly opposite Notre-Dame, three minutes on foot from Saint-Michel Notre-Dame station.",
+  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and nine more remarkable trees nearby.",
+  "question_context": "Paris is unusual among capitals in that its oldest tree has a name, a planting date and a planter. Jean Robin, herbalist to Henri IV, raised the black locust from American seed and set it in the ground in 1601, nineteen years before the Mayflower sailed. It still stands in Square Rene-Viviani opposite Notre-Dame, propped by concrete and partly hidden by ivy, and it still flowers every spring. The runner-up is its own son: in 1636 Robin's son Vespasien took a cutting and planted it in the new royal medicinal garden, now the Jardin des Plantes, where it also survives. That makes the two oldest trees in Paris a documented parent and child, four centuries old and two kilometres apart. Both are black locusts, an American species that reached Europe as a handful of seeds and was named Robinia after the family. For age with grandeur rather than paperwork, the Cedar of Jussieu from 1734 is the city's third elder. Getting there: Saint-Michel Notre-Dame station, then a three minute walk along the Seine.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Paris?",
+      "a": "A black locust planted in 1601 in what is now Square Rene-Viviani, opposite Notre-Dame. Jean Robin, the king's herbalist, raised it from American seed, and it still flowers every spring."
+    },
+    {
+      "q": "Where is the best place to see old trees in Paris?",
+      "a": "The Jardin des Plantes: three of the ten trees on this list grow there, including a 1636 black locust and the last plane tree Buffon is known to have planted."
+    },
+    {
+      "q": "Are the remarkable trees of Paris free to visit?",
+      "a": "All ten on this list are free. They stand in public parks, squares and along avenues, and every one is a short walk from a metro or RER station."
+    },
+    {
+      "q": "How does Paris protect its remarkable trees?",
+      "a": "The city keeps an open register of its 200,000 street and park trees and gives a select few an official remarkable tree classification, which brings protection and dedicated care."
+    }
+  ],
   "trees": [
     {
       "id": "par_001",

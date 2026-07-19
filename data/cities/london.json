@@ -3,6 +3,28 @@
   "country": "United Kingdom",
   "status": "needs_curation",
   "intro": "No European capital does ancient trees quite like London. Its oldest oaks survive largely thanks to royal appetite: kings walled off huge hunting parks for their deer, and the trees inside were left to grow old while the countryside around them was cleared. The city even gave its name to the London plane, the soot-proof hybrid that lines its streets. These ten range from a churchyard yew older than Londinium itself to a plane tree once valued at three quarters of a million pounds, and all but one are free to visit.",
+  "meta_description": "London's ancient trees hide in royal parks and churchyards. Start with the Totteridge Yew, alive since before the Romans built Londinium.",
+  "question_answer": "The oldest tree in London is the Totteridge Yew, a European yew in St Andrew's churchyard in Totteridge, North London, estimated at between 1,000 and 2,000 years old. It is the oldest living thing in the city, and it stands a 15 minute walk from Totteridge and Whetstone station on the Northern Line.",
+  "question_meta": "The Totteridge Yew, up to 2,000 years old, is London's oldest tree. Where it stands, how to reach it, and the full ten of the city's ancient trees.",
+  "question_context": "Ring counting does not work on ancient yews because their heartwood rots away, so estimates for the Totteridge Yew run from 1,000 to 2,000 years. Even the cautious low end makes it older than any building in London, and the high end means it was already a substantial tree when the Romans founded Londinium. It stands in the churchyard of St Andrew's in Totteridge, a village long since swallowed by North London, and the 13th century church beside it is the newcomer on the plot: the tree predates it by centuries at minimum. The district's Hundred Court once met in its shade, which tells you how long it has been the local landmark. London's runners-up are oaks rather than yews: Richmond Park and Greenwich Park hold hollow pollards in the 700 to 900 year range, survivors of the royal hunting grounds. But for sheer age, nothing in the capital touches the yew. Getting there is simple: Totteridge and Whetstone station on the Northern Line, then a 15 minute walk through the old village.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in London?",
+      "a": "The Totteridge Yew in St Andrew's churchyard, Totteridge, estimated at between 1,000 and 2,000 years old. Even the cautious low estimate makes it older than any building in the city."
+    },
+    {
+      "q": "Are London's ancient trees free to visit?",
+      "a": "Nine of the ten trees on this list are free: they stand in public parks, churchyards and squares. The exception is the Old Lions of Kew, which need a Kew Gardens ticket."
+    },
+    {
+      "q": "Why does London have so many ancient trees?",
+      "a": "Royal hunting parks. Kings walled off Richmond and Greenwich centuries ago, and the oaks inside were spared the clearing that transformed the surrounding countryside."
+    },
+    {
+      "q": "What is a London plane?",
+      "a": "A hybrid plane tree that thrives on soot and hard pruning. London planted it everywhere from the 1700s on, and the tree took the city's name with it."
+    }
+  ],
   "trees": [
     {
       "id": "lon_001",

@@ -1,0 +1,39 @@
+{
+  "slug": "trees-older-than-400-years",
+  "title": "Trees Older Than 400 Years You Can Actually Visit",
+  "status": "needs_curation",
+  "meta_description": "Six city trees that predate almost everything around them, from a 2,000 year old yew in London to the 1601 Robinier of Paris. All publicly accessible.",
+  "intro": "Four hundred years is a useful threshold. Older than that, and a tree predates nearly everything around it: the streets, the houses, usually the city's entire modern shape. These are not trees in a forest, where old age is unremarkable. They are survivors standing in churchyards, royal parks and public squares, still reachable by tube or metro, still free to stand under. Every tree in this collection clears the 400 year mark by a verified or conservatively estimated margin, and every one is publicly accessible. One is no longer alive, and says so honestly. Start with the yew that was old before London existed.",
+  "entries": [
+    {
+      "city_slug": "london",
+      "tree_id": "lon_001",
+      "note": "The oldest entry by a distance: estimates run from 1,000 to 2,000 years, and even the low end predates every building in London. The 13th century church beside it is the junior partner on the plot."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_002",
+      "note": "Already centuries old when Charles I walled Richmond Park around it in 1637. A hollow pollard wide enough to shelter a small football team, still surrounded by grazing deer."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_007",
+      "note": "Five centuries old partly because people kept cutting it back: coppicing paradoxically resets a tree's clock. It grows in the gardens of the Bishop of London's former palace."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_006",
+      "note": "A survivor of James I's failed silk industry: the king ordered the wrong mulberry species, silkworms refused the leaves, and the tree outlived the whole scheme by four centuries."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_005",
+      "note": "Fallen since 1991 and honestly labelled as such. The hollow oak Elizabeth I reportedly picnicked under now lies where it fell in Greenwich Park, still worth the walk."
+    },
+    {
+      "city_slug": "paris",
+      "tree_id": "par_001",
+      "note": "The oldest tree in Paris, planted in 1601 by the king's herbalist and still flowering opposite Notre-Dame. The entire Robinia genus is named after the man who planted it."
+    }
+  ]
+}
