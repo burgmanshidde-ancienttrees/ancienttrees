@@ -1,0 +1,59 @@
+{
+  "slug": "europes-most-remarkable-trees",
+  "title": "Europe's 10 Most Remarkable Ancient Trees",
+  "status": "needs_curation",
+  "meta_description": "An editorial top 10 from the cities mapped so far: a 2,000 year old yew, a 1601 black locust with a named planter, and the trees that outlived kings.",
+  "intro": "This is an opinionated list, and it says so up front. Europe holds tens of thousands of ancient trees; these ten are the most remarkable among the cities we have mapped and verified so far, and the list will shift as new cities join the map. What earns a place here is not age alone. A tree makes this list when it carries a story you can stand next to: a planting date from 1601 with the planter's name attached, a genus named after a family, a churchyard yew that predates the city around it. Every tree is publicly accessible, every location is verified, and every entry links to a full page with map and directions. Start in a London suburb, with the oldest living thing in the city.",
+  "entries": [
+    {
+      "city_slug": "london",
+      "tree_id": "lon_001",
+      "note": "The benchmark for old in a European city: a yew estimated at up to 2,000 years, standing in a churchyard in suburban North London. The 13th century church beside it arrived more than a millennium late."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_002",
+      "note": "A hollow oak that was already centuries old when Charles I walled Richmond Park around it in 1637. Attenborough made it the face of a conservation campaign; the deer never left."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_003",
+      "note": "The lone Great Tree of the Square Mile, growing where a church burned in 1666 and was never rebuilt. In 1901 it was called the most valuable tree in the world, and the leases next door still keep the buildings low to spare its canopy."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_006",
+      "note": "A living relic of James I's silk fiasco: the king planted the wrong mulberry species, the silkworms went hungry, and this survivor still fruits every summer four centuries on."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_004",
+      "note": "One of the Berkeley Square planes was valued at 750,000 pounds in 2008, briefly Britain's most expensive tree. Planted in 1789, they have outlasted every fortune made around that square since."
+    },
+    {
+      "city_slug": "paris",
+      "tree_id": "par_001",
+      "note": "The rarest thing in urban tree history: a precise birth certificate. Planted in 1601 by the royal herbalist Jean Robin, still flowering opposite Notre-Dame, with an entire genus named after its planter."
+    },
+    {
+      "city_slug": "paris",
+      "tree_id": "par_003",
+      "note": "The son of the tree above, planted from a cutting by Robin's son in 1636. Father and child still stand two kilometres apart, which may be unique among the old trees of Europe's cities."
+    },
+    {
+      "city_slug": "paris",
+      "tree_id": "par_002",
+      "note": "France's oldest cedar of Lebanon, carried from England in 1734, according to legend finishing the journey in the botanist's hat. The Museum's own historians doubt the hat; nobody doubts the tree."
+    },
+    {
+      "city_slug": "paris",
+      "tree_id": "par_005",
+      "note": "The thickest tree in Paris, seven metres around, planted in 1814 while allied armies camped in the city. It outgrew the aristocratic follies of Parc Monceau and shaded the young Proust."
+    },
+    {
+      "city_slug": "paris",
+      "tree_id": "par_007",
+      "note": "The youngest tree on this list and the oldest address: an elm has held this exact spot in front of Saint-Gervais since the Middle Ages, long enough to leave its mark on the French language."
+    }
+  ]
+}
