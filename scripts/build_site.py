@@ -205,7 +205,7 @@ def esc(s):
 
 
 def slugify(name):
-    s = name.lower()
+    s = name.lower().replace("'", "").replace("’", "")
     if s.startswith("the "):
         s = s[4:]
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
@@ -896,18 +896,26 @@ def build_homepage(published, upcoming, collections, pages):
 
 # ------------------------------------------------------------ redirect stubs
 
+def redirect_stub(target_rel, canonical, title):
+    return (
+        '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
+        f'<meta http-equiv="refresh" content="0; url={target_rel}">'
+        f'<link rel="canonical" href="{canonical}">'
+        f'<title>{esc(title)}</title>'
+        f'<script>window.location.replace("{target_rel}");</script></head>'
+        f'<body><p>This page moved to <a href="{target_rel}">{canonical}</a>.</p></body></html>'
+    )
+
+
 def build_redirects(published, pages):
-    """Old /cities/[slug]/ URLs redirect to the contract URLs."""
+    """Old /cities/[slug]/ URLs redirect to the contract URLs, and
+    /[slug]/ with a trailing slash redirects to the canonical /[slug]."""
     for p in published:
-        stub = (
-            '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
-            f'<meta http-equiv="refresh" content="0; url=../../{p["slug"]}">'
-            f'<link rel="canonical" href="{p["canonical"]}">'
-            f'<title>Moved: Ancient Trees in {esc(p["city"])}</title></head>'
-            f'<body><p>This page moved to <a href="../../{p["slug"]}">'
-            f'{p["canonical"]}</a>.</p></body></html>'
-        )
-        pages.append((f"cities/{p['slug']}/index.html", stub, None))
+        title = f"Moved: Ancient Trees in {p['city']}"
+        pages.append((f"cities/{p['slug']}/index.html",
+                      redirect_stub(f"../../{p['slug']}", p["canonical"], title), None))
+        pages.append((f"{p['slug']}/index.html",
+                      redirect_stub(f"../{p['slug']}", p["canonical"], title), None))
 
 
 def build_sitemap(pages):
