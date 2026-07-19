@@ -170,6 +170,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="uVA_hyHOJQWM3wH90g2QwP5qw2pk1WlPrtZ-lZKq2Hc">
 <title>%%TITLE%%</title>
 <meta name="description" content="%%DESCRIPTION%%">
 <link rel="canonical" href="%%CANONICAL%%">
