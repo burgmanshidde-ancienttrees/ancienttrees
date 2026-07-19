@@ -11,6 +11,7 @@ The end product: a website (ancienttrees.app) with an interactive map and one SE
 ```
 /data/cities/          — one JSON file per city (see schema below)
 /data/collections/     — one JSON file per collection page (hand-curated, Contract D)
+/data/species/         — one JSON file per species page intro (hand-written, gates Contract F)
 /data/city-list.json   — the prioritized list of 100 cities with status
 /site/                 — static site generator (Astro or similar)
 /scripts/              — automation scripts

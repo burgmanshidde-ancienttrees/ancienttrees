@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-19 — Species pages (new Contract F, blueprint v1.1)
+
+- Blueprint bumped to v1.1 with your approval: new Contract F for species pages, a semi-automated browse facet. Auto-generated tree list, hand-written intro, publish-gated at 3+ trees plus an intro so nothing thin ships.
+- Live now: /species index, /species/london-plane (5 trees, 3 cities), /species/caucasian-wingnut (3 trees, Amsterdam). Each tree page links to its species page; "Species" added to the top nav.
+- NEEDS YOUR APPROVAL: the two species intros (data/species/london-plane.json, caucasian-wingnut.json), freshly written in the Paris style.
+- Data-quality note for a future pass: London's oaks are split across two labels, "Pedunculate Oak" (2) and "English Oak" (2), which are the same species (Quercus robur). Normalising them to one label would unlock an oak species page (4 trees). Left as-is for now to avoid a risky auto-merge.
+- Backlog change: single-species collection ideas (e.g. "The Great Planes of Europe's Cities") are now folded into the species pages to avoid duplicate content. Collections stay for cross-species themes only.
+
 ## 2026-07-19 — Amsterdam (full research run, nightly workflow)
 
 - 10 trees researched from scratch and written to `data/cities/amsterdam.json`, replacing the name-only skeleton. All 10 pre-identified names from the chat handover checked out as real, verifiable trees, though several needed name corrections (see below).

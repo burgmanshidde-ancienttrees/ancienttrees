@@ -188,6 +188,7 @@ PAGE_SHELL = """<!DOCTYPE html>
   <a href="%%ROOTPATH%%" class="bar-logo">Ancient Trees</a>
   <nav class="bar-links">
     <a href="%%ROOTPATH%%#cities">Cities</a>
+    <a href="%%ROOTPATH%%species">Species</a>
     <a href="%%ROOTPATH%%collections">Collections</a>
   </nav>
 </header>
@@ -466,6 +467,32 @@ def load_collections():
     return [json.loads(f.read_text()) for f in sorted(coll_dir.glob("*.json"))]
 
 
+def load_species_intros():
+    """Hand-written intros keyed by common_name. A species page can't publish
+    without one (Contract F, P3)."""
+    sp_dir = DATA / "species"
+    if not sp_dir.exists():
+        return {}
+    out = {}
+    for f in sorted(sp_dir.glob("*.json")):
+        s = json.loads(f.read_text())
+        out[s["common_name"]] = s
+    return out
+
+
+def group_trees_by_species(renderable):
+    """common_name -> list of (city_entry, tree), preserving city order then age."""
+    groups = {}
+    for entry in renderable:
+        trees = [t for t in entry["data"]["trees"] if tree_is_renderable(t)]
+        for t in trees:
+            groups.setdefault(species_common(t), []).append((entry, t))
+    return groups
+
+
+SPECIES_MIN_TREES = 3
+
+
 def oldest_tree(trees):
     return max(trees, key=lambda t: t.get("age_max") or 0)
 
@@ -481,7 +508,8 @@ def curation_notice(status):
 
 # ---------------------------------------------------------------- tree pages
 
-def build_tree_page(city_entry, tree, all_trees, collections, pages):
+def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pages=None):
+    species_pages = species_pages or {}
     city_data = city_entry["data"]
     city = city_data["city"]
     country = city_data["country"]
@@ -540,6 +568,13 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages):
         for t in nearby
     )
 
+    sp_common = species_common(tree)
+    sp_slug = species_pages.get(sp_common)
+    species_line = (
+        f' It is a {esc(sp_common)}; see <a href="../species/{sp_slug}">every {esc(sp_common.lower())} on the site</a>.'
+        if sp_slug else ""
+    )
+
     body = f"""
 <main class="content-page">
   {breadcrumb_html(crumb_items, rootpath)}
@@ -551,7 +586,7 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages):
   <div class="map-embed"><div id="map" class="map"></div></div>
   <h2>Trees nearby</h2>
   <ul class="link-list">{nearby_html}</ul>
-  <div class="cta">Curious what else is standing in {esc(city)}? See <a href="../{cslug}">all 10 remarkable ancient trees in {esc(city)}</a> or find out <a href="oldest-tree">what the oldest tree in {esc(city)} is</a>.</div>
+  <div class="cta">Curious what else is standing in {esc(city)}? See <a href="../{cslug}">all 10 remarkable ancient trees in {esc(city)}</a> or find out <a href="oldest-tree">what the oldest tree in {esc(city)} is</a>.{species_line}</div>
   <p class="suggest">Something wrong on this page, or do you have an openly licensed photo of this tree? Write to <a href="mailto:{CONTACT}">{CONTACT}</a>. Corrections are checked and credited.</p>
 </main>
 """
@@ -882,6 +917,116 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages):
     return canonical
 
 
+def build_species_page(intro_data, members, tree_slugs, published, pages):
+    """members: list of (city_entry, tree) for this species, already gated to 3+."""
+    slug = intro_data["slug"]
+    common = intro_data["common_name"]
+    canonical = f"{BASE_URL}/species/{slug}"
+    rootpath = "../"
+    title = fit_title([
+        intro_data.get("title", ""),
+        f"{common}: Ancient {common}s You Can Visit",
+        f"Ancient {common} Trees",
+        common,
+    ], canonical)
+    description = intro_data.get("meta_description", "")
+
+    crumb_items = [("Home", BASE_URL), ("Species", f"{BASE_URL}/species"), (common, None)]
+
+    # group members by city, in published-city order
+    order = {p["slug"]: i for i, p in enumerate(published)}
+    by_city = {}
+    for entry, t in members:
+        by_city.setdefault(entry["slug"], (entry, []))[1].append(t)
+    sections = []
+    list_elements = []
+    n = 0
+    for cslug in sorted(by_city, key=lambda s: order.get(s, 99)):
+        entry, trees = by_city[cslug]
+        trees = sorted(trees, key=lambda t: -(t.get("age_max") or 0))
+        rows = []
+        for t in trees:
+            tslug = tree_slugs[t["id"]]
+            loc = t["location"]
+            n += 1
+            list_elements.append({
+                "@type": "ListItem", "position": n,
+                "name": t["name"], "url": f"{BASE_URL}/{cslug}/{tslug}",
+            })
+            rows.append(f"""
+      <div class="entry">
+        <h3><a href="../{cslug}/{tslug}">{esc(t['name'])}</a> <span class="tree-label">{esc(t.get('age_estimate',''))}</span></h3>
+        <p>{esc(loc.get('neighbourhood',''))}. {esc(t['story'].split('. ')[0])}.</p>
+      </div>""")
+        sections.append(f'<h2>{esc(entry["data"]["city"])}</h2>{"".join(rows)}')
+
+    city_links = " &middot; ".join(
+        f'<a href="../{p["slug"]}">Ancient trees in {esc(p["city"])}</a>' for p in published
+    )
+
+    body = f"""
+<main class="content-page">
+  {breadcrumb_html(crumb_items, rootpath)}
+  <h1>{esc(common)}</h1>
+  <p class="answer-first">{esc(intro_data['intro'].split('. ')[0])}. This page maps every {esc(common.lower())} on the site, {n} so far across {len(by_city)} cit{'y' if len(by_city)==1 else 'ies'}.</p>
+  <div class="prose-block"><p>{esc(intro_data['intro'])}</p></div>
+  {''.join(sections)}
+  <p class="suggest">Explore by city: {city_links} &middot; or browse <a href="../species">all species</a>.</p>
+</main>
+"""
+    graph = site_graph() + [
+        {"@type": "ItemList", "name": f"{common} trees", "itemListElement": list_elements},
+        breadcrumb_schema(crumb_items),
+    ]
+    head_extra = ld_script(graph)
+    check_links(canonical, n + len(published) + 1, n + min(2, len(published)) + 1)
+    page = render_page(title, description, canonical, body, head_extra, "", rootpath)
+    pages.append((f"species/{slug}.html", page, canonical))
+    return {"slug": slug, "common": common, "scientific": intro_data.get("scientific_name", ""),
+            "count": n, "cities": len(by_city)}
+
+
+def build_species_index(species_cards, published, pages):
+    canonical = f"{BASE_URL}/species"
+    rootpath = "./"
+    title = fit_title(["Ancient Trees by Species", "Browse Ancient Trees by Species"], canonical)
+    description = ("Browse the mapped trees by species: the London plane that lines half of "
+                  "Europe's streets, the wingnut Amsterdam went to court over, and more.")
+    crumb_items = [("Home", BASE_URL), ("Species", None)]
+
+    entries = "".join(
+        f"""
+      <div class="entry">
+        <h3><a href="species/{c['slug']}">{esc(c['common'])}</a> <span class="tree-label">{c['count']} trees</span></h3>
+        <p><em>{esc(c['scientific'])}</em>. Mapped across {c['cities']} cit{'y' if c['cities']==1 else 'ies'} so far.</p>
+      </div>"""
+        for c in species_cards
+    )
+    city_links = " &middot; ".join(
+        f'<a href="{p["slug"]}">Ancient trees in {esc(p["city"])}</a>' for p in published
+    )
+    body = f"""
+<main class="content-page">
+  {breadcrumb_html(crumb_items, rootpath)}
+  <h1>Ancient Trees by Species</h1>
+  <div class="prose-block"><p>Cities group these trees by place; collections group them by theme. This page groups them by what they actually are. A species earns a page once the site has mapped at least three of them, so every list here has real depth rather than a lone specimen. More species appear as new cities join the map.</p></div>
+  {entries}
+  <p class="suggest">Or explore by city: {city_links}</p>
+</main>
+"""
+    graph = site_graph() + [
+        {"@type": "ItemList", "name": "Tree species",
+         "itemListElement": [
+             {"@type": "ListItem", "position": i, "name": c["common"],
+              "url": f"{BASE_URL}/species/{c['slug']}"}
+             for i, c in enumerate(species_cards, 1)]},
+        breadcrumb_schema(crumb_items),
+    ]
+    head_extra = ld_script(graph)
+    page = render_page(title, description, canonical, body, head_extra, "", rootpath)
+    pages.append(("species.html", page, canonical))
+
+
 def build_collections_index(collections, published, pages):
     """Overview of all collections at /collections."""
     canonical = f"{BASE_URL}/collections"
@@ -1015,6 +1160,9 @@ def build_redirects(published, pages):
     pages.append(("collections/index.html",
                   redirect_stub("../collections", f"{BASE_URL}/collections",
                                 "Moved: Collections"), None))
+    pages.append(("species/index.html",
+                  redirect_stub("../species", f"{BASE_URL}/species",
+                                "Moved: Species"), None))
 
 
 def validate_internal_links(pages):
@@ -1061,6 +1209,7 @@ def build_sitemap(pages):
 def main():
     cities = load_cities()
     collections = load_collections()
+    species_intros = load_species_intros()
     cities_by_slug = {c["slug"]: c for c in cities}
     pages = []  # (relative path, html, canonical or None)
 
@@ -1075,10 +1224,18 @@ def main():
         elif entry["tier"] == 1:
             upcoming.append(entry)
 
+    # Which species qualify for a page: 3+ renderable trees AND a hand-written intro.
+    species_groups = group_trees_by_species(renderable)
+    qualifying = {
+        common: members for common, members in species_groups.items()
+        if len(members) >= SPECIES_MIN_TREES and common in species_intros
+    }
+    species_pages = {common: species_intros[common]["slug"] for common in qualifying}
+
     for entry in renderable:
         trees = [t for t in entry["data"]["trees"] if tree_is_renderable(t)]
         for tree in trees:
-            tree_slugs[tree["id"]] = build_tree_page(entry, tree, trees, collections, pages)
+            tree_slugs[tree["id"]] = build_tree_page(entry, tree, trees, collections, pages, species_pages)
         build_question_page(entry, collections, pages)
         other_cities = [
             {"slug": e["slug"], "city": e["data"]["city"]}
@@ -1092,6 +1249,14 @@ def main():
         build_collection_page(coll, cities_by_slug, tree_slugs, published, pages)
     if collections:
         build_collections_index(collections, published, pages)
+
+    species_cards = []
+    for common in sorted(qualifying, key=lambda c: -len(qualifying[c])):
+        card = build_species_page(species_intros[common], qualifying[common],
+                                  tree_slugs, published, pages)
+        species_cards.append(card)
+    if species_cards:
+        build_species_index(species_cards, published, pages)
 
     build_homepage(published, upcoming, collections, pages)
     build_redirects(published, pages)
