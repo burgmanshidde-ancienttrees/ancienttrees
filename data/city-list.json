@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-15",
+  "updated": "2026-07-19",
   "note": "Tier 1 from CLAUDE.md handover. Tiers 2-4 compiled from most-visited-city rankings, to be reprioritized by Hidde.",
   "cities": [
-    { "city": "Amsterdam", "country": "Netherlands", "tier": 1, "slug": "amsterdam", "status": "pending", "note": "10 tree names pre-identified in data/cities/amsterdam.json, needs full research run" },
+    { "city": "Amsterdam", "country": "Netherlands", "tier": 1, "slug": "amsterdam", "status": "needs_curation" },
     { "city": "Lisbon", "country": "Portugal", "tier": 1, "slug": "lisbon", "status": "pending" },
     { "city": "London", "country": "United Kingdom", "tier": 1, "slug": "london", "status": "needs_curation" },
     { "city": "Paris", "country": "France", "tier": 1, "slug": "paris", "status": "needs_curation" },

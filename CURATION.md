@@ -2,6 +2,25 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-19 — Amsterdam (full research run, nightly workflow)
+
+- 10 trees researched from scratch and written to `data/cities/amsterdam.json`, replacing the name-only skeleton. All 10 pre-identified names from the chat handover checked out as real, verifiable trees, though several needed name corrections (see below).
+- 8 flagged, all for source or precision reasons, never for doubt about the tree's existence:
+  - **Heimanseik** (Amsterdam's oldest tree, ~275 years, Artis Park): exact position within the park is approximate.
+  - **Vondelpark Poplar**: sources disagree on planting date (park-founding era ~1870 vs a specific 1885); age range widened.
+  - **Hortus cycad**: age (~300 years) is sourced from the Hortus's own garden records; no independent third party confirms it. Also: dropped the "Spinoza cycad" name from the original handover notes, no source connects this plant to Spinoza.
+  - **Olifantsiep**: two independent sources give slightly different planting decades (1900-1915).
+  - **Lomanstraat X-trees**: species is the regionally typical London plane but not explicitly confirmed; a local legend about the trees surviving WWII firewood shortages is flagged in the story itself as unverified.
+  - **Amstelkade olijfwilg**: exact species within Elaeagnus not pinned down; the two sources found both trace back substantially to the same original trade-press article.
+  - **Amstelveld wingnuts**: strong sourcing on the 2006-2010 felling-permit fight (went to the Raad van State), but no source gives a precise planting date.
+  - **Rijksmuseum wingnut**: one source says planted 1885, another implies 1907; went with 1907 as it matches Cuypers' documented 1884-1916 garden construction, but flagged as unresolved.
+- 2 photos found on Wikimedia Commons with valid open licenses, both marked found_needs_check for your approval: Leidsebosje Planes (CC0 1.0, Ceescamel) and Wertheimpark Wingnut (CC BY-SA 4.0, Ceescamel).
+- 8 photos missing, none found on Wikimedia Commons after searching.
+- **Swap from the original handover list**: "Frederiksplein vleugelnoot" was dropped. Research found no specific named tree there, just a generic mention that wingnuts grow "among other locations" including Frederiksplein, no age, no independent second source. Replaced with the **Rijksmuseum Wingnut**, planted by the museum's own architect Pierre Cuypers and preserved through the 2013 renovation, which has real sourcing (bomenbieb.nl, Dutch Wikipedia).
+- Also corrected: "Artis oak" is properly named the **Heimanseik**, after naturalist Eli Heimans who wrote about it in 1903.
+- No superlative claims beyond city-level ones already used elsewhere on the site ("tallest/thickest tree in Amsterdam", "Amsterdam's oldest tree") checked against other published city pages; none conflict.
+- Suggested follow-up: monumentaltrees.com almost certainly holds precise coordinates for several of these (Olifantsiep, Vondelpark poplar, Leidsebosje, Wertheimpark) but returned HTTP 403 on every direct fetch attempt this run. Worth a manual browse for exact pins in a future improvement-mode pass.
+
 ## 2026-07-19 — Second collection: Europe's 10 Most Remarkable Ancient Trees
 
 - NEEDS YOUR APPROVAL: data/collections/europes-most-remarkable-trees.json. Ten trees, five London and five Paris, freshly written notes per entry.
