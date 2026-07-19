@@ -2,6 +2,11 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-19 — Tone of voice document (draft v1.0)
+
+- NEEDS YOUR APPROVAL: TONE_OF_VOICE.md, distilled from the existing style rules, the Paris run and the quality round. Includes four draft word bans beyond the existing ones (majestic, stunning, iconic, a testament to).
+- NEEDS YOUR MATERIAL for v1.1: samples of your own writing (posts, mails, fragments, Dutch or English) to tune the voice to sound like you. No deadline; the Paris standard carries until then.
+
 ## 2026-07-19 — Site rebuilt to the four SEO_GEO_BLUEPRINT layers
 
 - The generator now builds all four content layers with build-time validation: 20 tree pages, 2 question pages, 2 city pages, 1 collection, about page. A page that violates a contract fails the whole build.
