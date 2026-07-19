@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-19 — Site rebuilt to the four SEO_GEO_BLUEPRINT layers
+
+- The generator now builds all four content layers with build-time validation: 20 tree pages, 2 question pages, 2 city pages, 1 collection, about page. A page that violates a contract fails the whole build.
+- URLs moved to the contract pattern (/london instead of /cities/london) before the domain goes live; old URLs redirect.
+- NEEDS YOUR APPROVAL: the first collection, "Trees Older Than 400 Years You Can Actually Visit" (data/collections/trees-older-than-400-years.json). Six entries, hand-drafted intro. Contract D says collections are editorial products, so this one ships with an awaiting-curation banner until you sign off.
+- NEEDS YOUR APPROVAL: city FAQ blocks, question page answers and the about page bio, all newly written.
+- NEEDS YOUR INPUT: a verifiable profile link (LinkedIn or similar) for the Person schema and the about page (Contract E requires it).
+- NEEDS YOUR INPUT: correction and suggestion links now point to hello@ancienttrees.app. That mailbox does not exist yet; your TransIP hosting package can host it.
+- Known gap vs blueprint: no og:image map-cards yet (Contract global rules); needs an image generation step later.
+
 ## 2026-07-19 — Quality round London and Paris (after external review)
 
 - Paris is now the quality bar for every future city.
