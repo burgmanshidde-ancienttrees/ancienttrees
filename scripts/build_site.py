@@ -105,6 +105,9 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .facts { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1.5rem; background: var(--cream-dark); padding: 1.25rem 1.5rem; border-radius: 4px; margin: 1.5rem 0; }
 .facts dt { font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-light); padding-top: 3px; }
 .facts dd { font-size: 13px; color: var(--ink); }
+.tree-photo { margin: 1.5rem 0; }
+.tree-photo img { width: 100%; display: block; border-radius: 4px; }
+.tree-photo figcaption { font-size: 11px; color: var(--ink-light); margin-top: 0.45rem; }
 .map-embed { position: relative; height: 340px; border-radius: 4px; overflow: hidden; margin: 1.75rem 0; border: 1px solid var(--cream-dark); }
 .map-embed .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 .faq dt { font-weight: 500; font-size: 15px; margin-top: 1.25rem; }
@@ -495,6 +498,19 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages):
         (tree["name"], None),
     ]
 
+    photo = tree.get("photo") or {}
+    photo_ok = bool(photo.get("url") and photo.get("license") and photo.get("attribution")
+                    and photo.get("status") in ("approved", "found_needs_check"))
+    photo_html = ""
+    og_image = ""
+    if photo_ok:
+        photo_html = f"""
+  <figure class="tree-photo">
+    <img src="{esc(photo['url'])}" alt="{esc(tree['name'])}" loading="lazy">
+    <figcaption>Photo: {esc(photo['attribution'])} ({esc(photo['license'])})</figcaption>
+  </figure>"""
+        og_image = f'\n<meta property="og:image" content="{esc(photo["url"])}">'
+
     label = f'<span class="tree-label">{esc(tree["label"])}</span>' if tree.get("label") else ""
     facts = f"""
 <dl class="facts">
@@ -516,6 +532,7 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages):
   {breadcrumb_html(crumb_items, rootpath)}
   <h1>{esc(tree['name'])}{label}</h1>
   {curation_notice(city_data.get('status'))}
+  {photo_html}
   {facts}
   <div class="prose-block"><p>{esc(tree['story'])}</p></div>
   <div class="map-embed"><div id="map" class="map"></div></div>
@@ -540,7 +557,7 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages):
         },
         breadcrumb_schema(crumb_items),
     ]
-    head_extra = map_head() + "\n" + ld_script(graph)
+    head_extra = map_head() + og_image + "\n" + ld_script(graph)
     scripts = single_pin_script(loc["latitude"], loc["longitude"])
 
     check_links(canonical, 2 + len(nearby), 4)
