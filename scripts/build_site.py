@@ -62,6 +62,7 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .tree-card-top { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 0.4rem; }
 .tree-num { font-family: var(--serif); font-size: 1.1rem; color: var(--moss); flex-shrink: 0; width: 1.4rem; }
 .tree-name { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; line-height: 1.25; }
+.tree-label { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mid); background: var(--cream-dark); border-radius: 2px; padding: 0.15rem 0.45rem; margin-left: 0.6rem; vertical-align: middle; white-space: nowrap; }
 .tree-meta { font-size: 12px; color: var(--ink-light); margin: 0 0 0.85rem 2.15rem; }
 .tree-story { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 0.85rem 2.15rem; }
 .tree-practical { font-size: 12px; color: var(--ink-light); margin-left: 2.15rem; }
@@ -301,11 +302,12 @@ def build_city_page(entry):
             practical.append(f"<span>Access: {esc(t['access'])}</span>")
         if t.get("transport"):
             practical.append(f"<span>Getting there: {esc(t['transport'])}</span>")
+        label = f'<span class="tree-label">{esc(t["label"])}</span>' if t.get("label") else ""
         cards.append(f"""
     <article class="tree-card" id="tree-{i}">
       <div class="tree-card-top">
         <span class="tree-num">{i}</span>
-        <h2 class="tree-name">{esc(t['name'])}</h2>
+        <h2 class="tree-name">{esc(t['name'])}{label}</h2>
       </div>
       <p class="tree-meta">{esc(t.get('species', ''))} &middot; {esc(t.get('age_estimate', 'age unknown'))} &middot; {esc(loc.get('neighbourhood', ''))}</p>
       <p class="tree-story">{esc(t['story'])}</p>
@@ -342,13 +344,19 @@ def build_city_page(entry):
     avg_lat = sum(m["lat"] for m in markers) / len(markers)
     avg_lng = sum(m["lng"] for m in markers) / len(markers)
 
+    intro = city_data.get("intro")
+    lede = esc(intro) if intro else (
+        "Every tree here is cross-referenced against independent sources before "
+        "it earns its pin. Ages are estimates. Tap a tree to see where it stands."
+    )
+
     body = f"""
 <div class="split">
   <aside class="panel">
     <div class="panel-head">
       <p class="eyebrow">{esc(country)}</p>
       <h1>10 Most Beautiful <em>Ancient Trees</em> in {esc(city)}</h1>
-      <p class="lede">Every tree here is cross-referenced against independent sources before it earns its pin. Ages are estimates. Tap a tree to see where it stands.</p>
+      <p class="lede">{lede}</p>
       {notice}
     </div>
     {''.join(cards)}

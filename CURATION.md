@@ -2,6 +2,17 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-19 — Quality round London and Paris (after external review)
+
+- Paris is now the quality bar for every future city.
+- Fact corrections Paris (Robinier of Square Rene-Viviani): Notre-Dame age phrasing softened to "had already stood for centuries"; the incorrect 1871 fire claim replaced, the story now names the Commune and the 2019 fire separately.
+- Fact corrections London: Richmond Park claim softened to "one of the largest collections of ancient oaks in Europe"; the historically dubious Henry VIII "every tenth tree" law removed from the Royal Oak story; Wordsworth reference corrected to "in his 1800 poem Poor Susan".
+- Opening lines of London trees 2, 4, 7 and 8 rewritten in the Paris style (curiosity-first).
+- Barney the Plane moved to position 10 and stays flagged: the next nightly run must verify the exact location within Barn Elms via two sources and find a tree-specific story. Until then the story itself names the caveat.
+- Queen Elizabeth's Oak (dead since 1991) now carries a "Fallen monument" label on the city page so visitors know what to expect.
+- Both cities now open with a 60-100 word intro paragraph; the intro field is a fixed part of the city template from now on.
+- Two new rules added to CLAUDE.md: superlative claims get cross-checked against other city pages before publication, and story length is now 150-250 words.
+
 ## 2026-07-15 — Paris (test run of the nightly workflow)
 
 - 10 trees researched and written, saved to `data/cities/paris.json`

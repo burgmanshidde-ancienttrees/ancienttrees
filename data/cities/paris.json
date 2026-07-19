@@ -2,6 +2,7 @@
   "city": "Paris",
   "country": "France",
   "status": "needs_curation",
+  "intro": "Paris treats its trees as part of the civic record: the city logs every one of its 200,000 street and park trees in an open register and stamps a select few as officially remarkable. Its two oldest trees are father and son, black locusts raised four centuries ago from American seed by the royal herbalist Jean Robin and his son Vespasien, and both still flower every spring. These ten include the city's oldest tree, its thickest, its tallest, and an address that has held an elm since the Middle Ages. Every one is a metro ride away.",
   "trees": [
     {
       "id": "par_001",
@@ -16,7 +17,7 @@
         "longitude": 2.34698,
         "neighbourhood": "Latin Quarter, 5th arrondissement"
       },
-      "story": "The oldest tree in Paris was planted in 1601, before the Mayflower sailed. Jean Robin, herbalist to King Henri IV, raised it from seed sent from the Appalachians by the English naturalist John Tradescant. The entire genus Robinia was later named after him. The tree stands in a small square facing Notre-Dame, which was already four centuries old when the sapling went into the ground. It has since watched the cathedral burn twice, in 1871 and 2019, and survived a German shell that took off its crown during the First World War. Concrete props now hold up its heaviest branches and ivy hides much of the trunk, but it still flowers every spring. Parisians walk past it daily without a glance. It is protected by a low fence and a plaque that undersells it considerably. In 2021 National Geographic profiled it as a lesson in urban resilience, four centuries of city life absorbed by one imported American tree.",
+      "story": "The oldest tree in Paris was planted in 1601, before the Mayflower sailed. Jean Robin, herbalist to King Henri IV, raised it from seed sent from the Appalachians by the English naturalist John Tradescant. The entire genus Robinia was later named after him. The tree stands in a small square facing Notre-Dame, which had already stood for centuries when the sapling went into the ground. It has since lived through the Commune, lost its crown to a German shell in the First World War, and watched the cathedral burn in 2019. Concrete props now hold up its heaviest branches and ivy hides much of the trunk, but it still flowers every spring. Parisians walk past it daily without a glance. It is protected by a low fence and a plaque that undersells it considerably. In 2021 National Geographic profiled it as a lesson in urban resilience, four centuries of city life absorbed by one imported American tree.",
       "verified_sources": [
         "https://fr.wikipedia.org/wiki/Robinier_du_square_Ren%C3%A9-Viviani",
         "https://www.atlasobscura.com/places/oldest-tree-paris",
