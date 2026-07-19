@@ -14,6 +14,7 @@ The end product: a website (ancienttrees.app) with an interactive map and one SE
 /site/                 — static site generator (Astro or similar)
 /scripts/              — automation scripts
 /CURATION.md           — running list of items awaiting Hidde's review
+/SEO_GEO_BLUEPRINT.md  — page contracts (titles, schema, internal links, content minima). No page ships without conforming to it.
 ```
 
 ## The tree data schema
@@ -39,7 +40,7 @@ Every city file follows this exact structure (see data/cities/london.json for th
         "longitude": -0.2002,
         "neighbourhood": "..."
       },
-      "story": "150-220 words. Specific, historical, vivid. No filler.",
+      "story": "150-250 words. Specific, historical, vivid. No filler.",
       "verified_sources": ["url1", "url2"],
       "access": "Free / paid entry / restricted",
       "transport": "Nearest station + walk time",
@@ -78,12 +79,14 @@ For each candidate tree, cross-reference at least 2 independent sources for:
 If sources conflict or only one source exists, include the tree but set `curation_status: "flagged"` with a note explaining the uncertainty.
 
 ### Step 3 — Write the stories
-150-220 words per tree. Style rules:
+150-250 words per tree (the Paris run of 2026-07-15 sets the standard; anything over 250 words gets shortened). Style rules:
 - Direct, specific, slightly vivid. Scott Galloway meets nature writing.
 - Lead with the most surprising fact.
 - Include what the tree has "witnessed" historically.
 - Never use: "hidden gem", "must-see", "breathtaking", "nestled".
 - Never use em dashes.
+
+Stories and any page copy must satisfy SEO_GEO_BLUEPRINT.md — in particular P2 (answer first, in the first two sentences where the page is a question/city page) and P3 (unique content, no fill-in-the-city-name templating).
 
 ### Step 4 — Find photos
 Search Wikimedia Commons and other openly-licensed sources (CC0, CC-BY, CC-BY-SA only). Record the exact license and attribution. If no good photo exists, set photo status to `missing`. NEVER use photos from monumentaltrees.com, Google Maps, or any source without a clear open license.
@@ -93,7 +96,7 @@ Search Wikimedia Commons and other openly-licensed sources (CC0, CC-BY, CC-BY-SA
 - Update city-list.json (status: pending → needs_curation)
 - Append to CURATION.md: city name, date, number of trees, number flagged, photos missing
 - Commit with message: "Add [city]: 10 trees, X flagged, Y photos missing"
-- Rebuild the site so the new city page goes live (marked "awaiting curation" until Hidde approves)
+- Rebuild the site so the new city page goes live (marked "awaiting curation" until Hidde approves). The generated pages (city, tree, question, collection) must conform to the Layer 2 contracts in SEO_GEO_BLUEPRINT.md — titles, meta descriptions, schema, and internal link minima. A page that fails that validation does not deploy.
 
 ### Improvement mode (when all 100 cities have data)
 Cycle through existing cities oldest-first and: hunt for missing photos, strengthen weak stories, re-verify flagged items, check for dead trees in the news.
@@ -115,6 +118,8 @@ When he approves a city, set status to `curated` and each tree to `hidde_approve
 4. Photos must have verified open licenses with attribution recorded.
 5. Costs matter: this project targets max €50/month total. Keep runs efficient. One city per night is enough.
 6. The goal is revenue, not a beautiful product nobody buys. If Hidde starts adding features before validation, remind him: "Have we validated that real people will pay for this?"
+7. NEVER ship a page (tree, question, city, or collection) that doesn't conform to SEO_GEO_BLUEPRINT.md. Changes to that document itself require Hidde's explicit approval and a version bump.
+8. Superlative claims ("oldest in Europe", "largest of its kind", "more than X and Y combined") must be checked against what other city pages already claim before publication. When in doubt, soften to "one of the oldest" or drop the claim.
 
 ## Current state (as of handover)
 
