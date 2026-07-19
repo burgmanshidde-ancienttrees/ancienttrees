@@ -2,6 +2,12 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-19 — Second collection: Europe's 10 Most Remarkable Ancient Trees
+
+- NEEDS YOUR APPROVAL: data/collections/europes-most-remarkable-trees.json. Ten trees, five London and five Paris, freshly written notes per entry.
+- The intro says explicitly that the list is editorial and will shift as new cities join the map; that honesty is deliberate (P7) and gives the page a natural freshness cycle (P6).
+- Live with the awaiting-curation banner until you sign off. The /collections index picked it up automatically.
+
 ## 2026-07-19 — Tone of voice document (draft v1.0)
 
 - NEEDS YOUR APPROVAL: TONE_OF_VOICE.md, distilled from the existing style rules, the Paris run and the quality round. Includes four draft word bans beyond the existing ones (majestic, stunning, iconic, a testament to).
