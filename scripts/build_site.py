@@ -348,7 +348,7 @@ def build_city_page(entry):
     <div class="panel-head">
       <p class="eyebrow">{esc(country)}</p>
       <h1>10 Most Beautiful <em>Ancient Trees</em> in {esc(city)}</h1>
-      <p class="lede">Every one of these trees has been verified against independent sources. Ages are estimates, locations are exact. Tap a tree to see where it stands.</p>
+      <p class="lede">Every tree here is cross-referenced against independent sources before it earns its pin. Ages are estimates. Tap a tree to see where it stands.</p>
       {notice}
     </div>
     {''.join(cards)}
