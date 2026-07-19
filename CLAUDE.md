@@ -103,6 +103,9 @@ Search Wikimedia Commons and other openly-licensed sources (CC0, CC-BY, CC-BY-SA
 ### Improvement mode (when all 100 cities have data)
 Cycle through existing cities oldest-first and: hunt for missing photos, strengthen weak stories, re-verify flagged items, check for dead trees in the news.
 
+### Collections (any time coverage allows)
+data/collections/BACKLOG.md holds the prioritized queue of collection pages, with per-item triggers for when coverage suffices. At most one new draft at a time, and per Contract D a draft never publishes without Hidde's approval: it ships with status needs_curation and gets logged in CURATION.md.
+
 ## Hidde's curation workflow
 
 When Hidde opens a session, FIRST show him the top of CURATION.md: what's new, what's flagged, what needs photos. Prioritize his time on:
