@@ -1,0 +1,39 @@
+name: Nightly city research
+
+on:
+  schedule:
+    # 00:30 UTC is 02:30 Amsterdam time in summer, 01:30 in winter
+    - cron: "30 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nightly-research
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run the nightly workflow from CLAUDE.md
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            You are running the autonomous nightly workflow for the Ancient Trees project.
+            Read CLAUDE.md in the repository root and execute "The nightly workflow
+            (autonomous run)" exactly as written: pick the next pending city from
+            data/city-list.json, research thoroughly, verify every tree against two
+            independent sources, write the stories in the required style, find
+            open-license photos, save the city JSON, update data/city-list.json and
+            CURATION.md, run python3 scripts/build_site.py to confirm the site still
+            builds, and commit with the prescribed message format. Push the commit.
+            Respect every hard rule in CLAUDE.md. One city per run, then stop.
+          claude_args: |
+            --allowedTools "Bash(git:*),Bash(python3:*),Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
