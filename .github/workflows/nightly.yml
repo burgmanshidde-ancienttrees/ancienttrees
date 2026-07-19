@@ -2,8 +2,9 @@ name: Nightly city research
 
 on:
   schedule:
-    # 00:30 UTC is 02:30 Amsterdam time in summer, 01:30 in winter
-    - cron: "30 0 * * *"
+    # 03:00 UTC is 05:00 Amsterdam time in summer, 04:00 in winter.
+    # Chosen so the run lands when Hidde's Claude Pro 5-hour usage window is fresh.
+    - cron: "0 3 * * *"
   workflow_dispatch: {}
 
 permissions:
