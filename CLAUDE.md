@@ -16,6 +16,7 @@ The end product: a website (ancienttrees.app) with an interactive map and one SE
 /scripts/              — automation scripts
 /CURATION.md           — running list of items awaiting Hidde's review
 /SEO_GEO_BLUEPRINT.md  — page contracts (titles, schema, internal links, content minima). No page ships without conforming to it.
+/TONE_OF_VOICE.md      — the voice for all stories and page copy. Paris is the calibration standard.
 ```
 
 ## The tree data schema
@@ -87,7 +88,7 @@ If sources conflict or only one source exists, include the tree but set `curatio
 - Never use: "hidden gem", "must-see", "breathtaking", "nestled".
 - Never use em dashes.
 
-Stories and any page copy must satisfy SEO_GEO_BLUEPRINT.md — in particular P2 (answer first, in the first two sentences where the page is a question/city page) and P3 (unique content, no fill-in-the-city-name templating).
+Stories and any page copy must satisfy SEO_GEO_BLUEPRINT.md — in particular P2 (answer first, in the first two sentences where the page is a question/city page) and P3 (unique content, no fill-in-the-city-name templating) — and follow TONE_OF_VOICE.md, including its calibration examples and hard bans.
 
 ### Step 4 — Find photos
 Search Wikimedia Commons and other openly-licensed sources (CC0, CC-BY, CC-BY-SA only). Record the exact license and attribution. If no good photo exists, set photo status to `missing`. NEVER use photos from monumentaltrees.com, Google Maps, or any source without a clear open license.
