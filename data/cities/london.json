@@ -2,6 +2,7 @@
   "city": "London",
   "country": "United Kingdom",
   "status": "needs_curation",
+  "intro": "No European capital does ancient trees quite like London. Its oldest oaks survive largely thanks to royal appetite: kings walled off huge hunting parks for their deer, and the trees inside were left to grow old while the countryside around them was cleared. The city even gave its name to the London plane, the soot-proof hybrid that lines its streets. These ten range from a churchyard yew older than Londinium itself to a plane tree once valued at three quarters of a million pounds, and all but one are free to visit.",
   "trees": [
     {
       "id": "lon_001",
@@ -43,7 +44,7 @@
         "longitude": -0.2826,
         "neighbourhood": "Richmond Park"
       },
-      "story": "Richmond Park has more ancient trees than the whole of France and Germany combined. Among them is the Royal Oak, a massive hollow pollard that was already old when King Charles I enclosed the park in 1637. Its trunk is split and gnarled, wide enough to shelter a small football team. It survived the felling ordered to build Henry VIII's navy because the King himself passed a law sparing every tenth tree. Sir David Attenborough made it the symbol of a conservation campaign. The deer still graze around it as they have for centuries.",
+      "story": "The wall came second: this oak was already centuries old when Charles I enclosed Richmond Park around it in 1637. It is a massive hollow pollard, its trunk split and gnarled, wide enough to shelter a small football team, and it has lived behind royal fences ever since the King claimed the land for his deer. Richmond Park holds one of the largest collections of ancient oaks in Europe, and the Royal Oak is its figurehead. Sir David Attenborough made it the symbol of a conservation campaign. The deer still graze around it as they have for centuries.",
       "verified_sources": [
         "https://ati.woodlandtrust.org.uk/tree-search/tree/?treeId=40404"
       ],
@@ -70,7 +71,7 @@
         "longitude": -0.0934,
         "neighbourhood": "City of London"
       },
-      "story": "The only Great Tree of London in the Square Mile. It grows in what was the churchyard of St Peter Cheap, a church destroyed in the Great Fire of 1666 and never rebuilt. No one knows exactly how old it is. By 1853, a cab company was advertising its location as 'Under the tree, Cheapside.' In 1901 it was called the most valuable tree in the world. It survived the Blitz. Buildings beside it are prohibited from rising above two storeys by the terms of their leases, preserving its canopy. Wordsworth likely had it in mind when he wrote Poor Susan in 1797.",
+      "story": "The only Great Tree of London in the Square Mile. It grows in what was the churchyard of St Peter Cheap, a church destroyed in the Great Fire of 1666 and never rebuilt. No one knows exactly how old it is. By 1853, a cab company was advertising its location as 'Under the tree, Cheapside.' In 1901 it was called the most valuable tree in the world. It survived the Blitz. Buildings beside it are prohibited from rising above two storeys by the terms of their leases, preserving its canopy. Wordsworth likely had it in mind in his 1800 poem Poor Susan.",
       "verified_sources": [],
       "access": "Free, public square, City of London",
       "transport": "2 min walk from St Paul's tube station",
@@ -96,7 +97,7 @@
         "longitude": -0.1449,
         "neighbourhood": "Mayfair"
       },
-      "story": "Planted in 1789 by MP Edward Bouverie, who lived at number 13. Among the 30 or so plane trees in this Grade II listed garden, one known as the Victorian Plane was assessed in 2008 at a value of £750,000, making it briefly the most valuable tree in Britain. The nightingale that sang in Berkeley Square was almost certainly singing from one of these trees. They are among the oldest plane trees in London and were among the original 41 Great Trees of London.",
+      "story": "In 2008 one of the plane trees in Berkeley Square was valued at 750,000 pounds, briefly making it the most valuable tree in Britain. The square's planes were planted in 1789 by MP Edward Bouverie, who lived at number 13, and are among the oldest in London. The nightingale that sang in Berkeley Square was almost certainly singing from one of these branches. They were among the original 41 Great Trees of London, and the Grade II listed garden they shade has kept its shape while everything around it changed.",
       "verified_sources": [],
       "access": "Free, public garden",
       "transport": "2 min walk from Green Park or Bond Street tube",
@@ -116,6 +117,7 @@
       "age_estimate": "800+ years",
       "age_min": 700,
       "age_max": 900,
+      "label": "Fallen monument",
       "location": {
         "address": "Near Maze Hill Gate, Lover's Walk, Greenwich Park, London SE10",
         "latitude": 51.4778,
@@ -133,7 +135,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Tree is dead and recumbent since 1991. Ruins only. Source URLs need backfilling."
+      "notes": "Tree is dead and recumbent since 1991. Ruins only. Labelled 'Fallen monument' on the city page so visitors know what to expect. Source URLs need backfilling."
     },
     {
       "id": "lon_006",
@@ -174,7 +176,7 @@
         "longitude": -0.2193,
         "neighbourhood": "Fulham"
       },
-      "story": "One of the oldest trees in west London, growing in the grounds of the former home of the Bishop of London. Bishop Grindal, who lived here in the 16th century, is credited with introducing the tamarisk to England and growing grapes sent to Queen Elizabeth I. The oak was coppiced many years ago, which paradoxically extended its life. It was among the original 41 trees awarded Great Tree status in 1988.",
+      "story": "This oak is five centuries old partly because people kept cutting it back. It was coppiced long ago, harvested down to its base, a practice that paradoxically resets a tree's clock and can extend its life by centuries. It grows in the grounds of Fulham Palace, the former home of the Bishop of London. Bishop Grindal, who lived here in the 16th century, is credited with introducing the tamarisk to England and growing grapes sent to Queen Elizabeth I. The oak was among the original 41 trees awarded Great Tree status in 1988.",
       "verified_sources": [],
       "access": "Free, Fulham Palace Gardens open daily",
       "transport": "Putney Bridge tube, 10 min walk",
@@ -186,32 +188,6 @@
       },
       "curation_status": "flagged",
       "notes": "Original research marked this tree as needing photo verification. Source URLs need backfilling."
-    },
-    {
-      "id": "lon_008",
-      "name": "Barney the Plane",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "300+ years",
-      "age_min": 300,
-      "age_max": 350,
-      "location": {
-        "address": "Barn Elms, Rocks Lane, Barnes, London SW13",
-        "latitude": 51.4707,
-        "longitude": -0.2378,
-        "neighbourhood": "Barnes, South West London"
-      },
-      "story": "Nicknamed Barney, this is the biggest and potentially oldest London plane tree in the city. Over 300 years old and massive in every dimension. The London plane is the iconic tree of the capital, selected for its extraordinary resilience to pollution, its ability to survive severe pruning, and its stately presence. Barney is the patriarch of them all, growing in the quiet riverside suburb of Barnes, largely unknown to most Londoners.",
-      "verified_sources": [],
-      "access": "Public access, Barnes area",
-      "transport": "Barnes station or bus",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "Location needs verification: coordinates and exact spot within Barn Elms not confirmed by two sources."
     },
     {
       "id": "lon_009",
@@ -264,6 +240,32 @@
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs need backfilling (original research cited Atlas Obscura)."
+    },
+    {
+      "id": "lon_008",
+      "name": "Barney the Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "300+ years",
+      "age_min": 300,
+      "age_max": 350,
+      "location": {
+        "address": "Barn Elms, Rocks Lane, Barnes, London SW13",
+        "latitude": 51.4707,
+        "longitude": -0.2378,
+        "neighbourhood": "Barnes, South West London"
+      },
+      "story": "The biggest London plane in London is a tree most Londoners have never heard of. Nicknamed Barney, it is over 300 years old, potentially the oldest of its kind in the city, and massive in every dimension. The London plane is the capital's signature tree, chosen for its resilience to soot and its tolerance of brutal pruning, and Barney is the patriarch of them all. It grows at Barn Elms in the riverside suburb of Barnes. One honest caveat: the exact spot is still being verified, which is why this tree sits at the bottom of the list until its pin can be trusted.",
+      "verified_sources": [],
+      "access": "Public access, Barnes area",
+      "transport": "Barnes station or bus",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Moved to position 10 pending verification (2026-07-19 quality round). Next nightly run: confirm exact coordinates within Barn Elms via two sources and research a tree-specific story to replace the generic London plane material."
     }
   ]
 }
