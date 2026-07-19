@@ -180,7 +180,6 @@ PAGE_SHELL = """<!DOCTYPE html>
   <nav class="bar-links">
     <a href="%%ROOTPATH%%#cities">Cities</a>
     <a href="%%ROOTPATH%%collections/trees-older-than-400-years">Collections</a>
-    <a href="%%ROOTPATH%%about">About</a>
   </nav>
 </header>
 %%BODY%%
@@ -193,7 +192,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 FOOTER = """
 <footer>
   <span class="footer-logo">Ancient Trees</span>
-  <span class="footer-links"><a href="%%ROOTPATH%%about">About</a><a href="%%ROOTPATH%%collections/trees-older-than-400-years">Collections</a></span>
+  <span class="footer-links"><a href="%%ROOTPATH%%collections/trees-older-than-400-years">Collections</a></span>
   <span class="footer-note">&copy; %%YEAR%% Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors.</span>
 </footer>
 """
@@ -251,10 +250,14 @@ def haversine(a, b):
 
 
 def site_graph():
-    """Site-level WebSite + Person schema, on every page."""
+    """Site-level WebSite + Person schema, on every page.
+
+    About page (Contract E) is deferred by Hidde's decision 2026-07-19;
+    when it ships, point the Person url at /about and add sameAs.
+    """
     return [
         {"@type": "WebSite", "name": "Ancient Trees", "url": BASE_URL},
-        {"@type": "Person", "name": "Hidde", "url": f"{BASE_URL}/about"},
+        {"@type": "Person", "name": "Hidde", "url": BASE_URL},
     ]
 
 
@@ -832,32 +835,6 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages):
     return canonical
 
 
-# ---------------------------------------------------------------- about page
-
-def build_about_page(pages):
-    canonical = f"{BASE_URL}/about"
-    rootpath = ""
-    title = "About Ancient Trees"
-    description = "Ancient Trees is made by Hidde, a designer from the Netherlands. Why this site exists and how every tree gets verified."
-
-    crumb_items = [("Home", BASE_URL), ("About", None)]
-    body = f"""
-<main class="content-page">
-  {breadcrumb_html(crumb_items, rootpath)}
-  <h1>About Ancient Trees</h1>
-  <div class="prose-block">
-    <p>Ancient Trees is made by Hidde, a designer from the Netherlands with a soft spot for trees that predate everything around them. He curates every list personally; the research runs on a system he built for the job.</p>
-    <p>Why this exists: most travel guides point everyone at the same squares and the same viewpoints. A 400 year old tree is a quieter kind of destination. It was there before the street had its name, and it rewards the ten minute detour like almost nothing else in a city.</p>
-    <p>Every tree on this site is checked against at least two independent sources before it gets a pin on the map. When sources disagree about an age, we print the range instead of picking the flattering number. When a tree is dead, fallen or hard to find, the page says so. If you spot an error, write to <a href="mailto:{CONTACT}">{CONTACT}</a>: corrections are checked and credited.</p>
-  </div>
-</main>
-"""
-    graph = site_graph() + [breadcrumb_schema(crumb_items)]
-    head_extra = ld_script(graph)
-    page = render_page(title, description, canonical, body, head_extra, "", rootpath)
-    pages.append(("about.html", page, canonical))
-
-
 # ----------------------------------------------------------------- homepage
 
 def build_homepage(published, upcoming, collections, pages):
@@ -974,7 +951,6 @@ def main():
     for coll in collections:
         build_collection_page(coll, cities_by_slug, tree_slugs, published, pages)
 
-    build_about_page(pages)
     build_homepage(published, upcoming, collections, pages)
     build_redirects(published, pages)
 
@@ -997,7 +973,7 @@ def main():
     n_trees = sum(p["count"] for p in published)
     print(f"Built {len(pages)} page(s) into {DIST}: "
           f"{len(published)} city, {n_trees} tree, {len(published)} question, "
-          f"{len(collections)} collection, about, homepage. All contracts validated.")
+          f"{len(collections)} collection, homepage. All contracts validated.")
     for p in published:
         print(f"  - {p['city']}: {p['count']} trees")
 
