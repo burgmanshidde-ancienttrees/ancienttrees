@@ -1,5 +1,5 @@
-# TONE_OF_VOICE.md — Ancient Trees
-Version 1.0 (draft, awaiting Hidde's approval) — Owner: Hidde.
+# TONE_OF_VOICE.md, Ancient Trees
+Version 1.0 (draft, awaiting Hidde's approval). Owner: Hidde.
 
 Every story, intro, FAQ answer and page text follows this document. Changes require Hidde's explicit approval and a version bump with changelog entry. The Paris run of 2026-07-15 is the calibration standard: when in doubt, sound like Paris.
 
@@ -57,4 +57,4 @@ Reserved. Hidde delivers samples of his own writing (posts, mails, fragments, Du
 ---
 
 ## CHANGELOG
-- v1.0 — Initial draft distilled from CLAUDE.md style rules, the Paris run, and the 2026-07-19 quality round. Awaiting Hidde's approval.
+- v1.0: Initial draft distilled from CLAUDE.md style rules, the Paris run, and the 2026-07-19 quality round. Awaiting Hidde's approval.
