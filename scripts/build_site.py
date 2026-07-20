@@ -186,6 +186,21 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
 .pin { width: 30px; height: 30px; border-radius: 50%; background: var(--moss); border: 2px solid #fff; box-shadow: 0 2px 8px rgba(26,26,20,0.35); cursor: pointer; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 12px; font-weight: 600; font-family: var(--sans); transition: transform 0.15s, background 0.15s; }
 .pin:hover { transform: scale(1.15); }
 .pin.active { background: var(--ink); transform: scale(1.25); z-index: 5; }
+
+/* Tree pins: a drawn silhouette instead of a number, so the map reads as a
+   place full of trees rather than a numbered list. */
+.pin-tree { position: relative; width: 44px; height: 44px; border-radius: 50%; background: var(--cream);
+  border: 2px solid var(--moss); box-shadow: 0 3px 10px rgba(26,26,20,0.28); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform 0.18s ease, box-shadow 0.18s ease; }
+.pin-tree svg { width: 28px; height: 28px; color: var(--moss); transition: color 0.18s ease; }
+.pin-tree:hover { transform: scale(1.12); box-shadow: 0 5px 16px rgba(26,26,20,0.34); }
+.pin-tree.active { background: var(--moss); transform: scale(1.2); z-index: 5; }
+.pin-tree.active svg { color: var(--cream); }
+.pin-rank { position: absolute; top: -3px; right: -3px; min-width: 17px; height: 17px; border-radius: 9px;
+  background: var(--ink); color: #fff; font-family: var(--sans); font-size: 10px; font-weight: 600;
+  line-height: 17px; text-align: center; border: 2px solid var(--cream); }
+.pin-tree.active .pin-rank { background: var(--cream); color: var(--ink); border-color: var(--moss); }
 .maplibregl-popup-content { font-family: var(--sans); font-size: 13px; padding: 0.75rem 1rem; border-radius: 4px; }
 .maplibregl-popup-content strong { font-family: var(--serif); font-size: 15px; font-weight: 400; }
 
@@ -412,8 +427,10 @@ function setActive(idx, fly, scroll) {{
 var bounds = new maplibregl.LngLatBounds();
 markers.forEach(function(m, idx) {{
   var el = document.createElement('div');
-  el.className = 'pin';
-  el.textContent = m.label;
+  el.className = 'pin-tree';
+  el.title = m.name;
+  el.innerHTML = '<svg viewBox="0 0 40 40" fill="currentColor" aria-hidden="true">' + m.icon + '</svg>'
+               + '<span class="pin-rank">' + m.label + '</span>';
   el.addEventListener('click', function(e) {{
     e.stopPropagation();
     setActive(idx, true, true);
@@ -494,6 +511,61 @@ def check_links(page, count, minimum):
 def tree_is_renderable(tree):
     loc = tree.get("location") or {}
     return bool(tree.get("story")) and loc.get("latitude") is not None and loc.get("longitude") is not None
+
+
+# Map pins are drawn, not numbered. Twenty-eight species would be twenty-eight
+# inconsistent drawings, so trees are grouped into a handful of silhouettes that
+# read at pin size. Because every tree already carries a species, this gives 100%
+# pin coverage without depending on photo sourcing.
+SPECIES_ICONS = {
+    "broadleaf": (
+        '<path d="M19 38h2V22h-2z"/>'
+        '<circle cx="20" cy="15" r="9"/><circle cx="11.5" cy="20" r="6.5"/>'
+        '<circle cx="28.5" cy="20" r="6.5"/>'
+    ),
+    "conifer": (
+        '<path d="M19 38h2v-7h-2z"/>'
+        '<path d="M20 3l6.5 10h-3.5l6 8.5h-4l5.5 9H9.5l5.5-9h-4l6-8.5H13.5z"/>'
+    ),
+    "columnar": (
+        '<path d="M19 38h2v-4h-2z"/><ellipse cx="20" cy="19" rx="6.5" ry="16"/>'
+    ),
+    "rosette": (
+        '<path d="M18.5 38h3l-1-15h-1z"/>'
+        '<g transform="translate(20,15)">'
+        '<ellipse rx="10" ry="3"/><ellipse rx="10" ry="3" transform="rotate(36)"/>'
+        '<ellipse rx="10" ry="3" transform="rotate(72)"/><ellipse rx="10" ry="3" transform="rotate(108)"/>'
+        '<ellipse rx="10" ry="3" transform="rotate(144)"/></g>'
+    ),
+    "olive": (
+        '<path d="M19.2 38h2.2c-.6-6-1.4-9-2.6-12l1.8-1.2z"/>'
+        '<circle cx="14" cy="16" r="6"/><circle cx="25" cy="14" r="6.5"/>'
+        '<circle cx="21" cy="22" r="5"/>'
+    ),
+    "ginkgo": (
+        '<path d="M19 38h2V26h-2z"/>'
+        '<path d="M20 5c-7 4-12 12-11 18 .3 1.6 1.4 3 3 3h16c1.6 0 2.7-1.4 3-3 1-6-4-14-11-18z"/>'
+        '<path d="M19.2 8v17h1.6V8z" fill="#F7F4EE"/>'
+    ),
+}
+
+SPECIES_ARCHETYPES = [
+    ("conifer", ("cedar", "sequoia", "yew", "pine", "fir", "spruce", "redwood")),
+    ("columnar", ("cypress",)),
+    ("rosette", ("dragon", "cycad", "palm")),
+    ("ginkgo", ("ginkgo",)),
+    ("olive", ("olive",)),
+]
+
+
+def species_icon(tree):
+    """Pick the silhouette for a tree. Falls back to a broadleaf crown, which is
+    what most of these city trees actually are."""
+    name = species_common(tree).lower()
+    for key, needles in SPECIES_ARCHETYPES:
+        if any(n in name for n in needles):
+            return SPECIES_ICONS[key]
+    return SPECIES_ICONS["broadleaf"]
 
 
 SUBMIT_TEMPLATES = {
@@ -842,7 +914,8 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
       <p class="tree-story">{esc(t['story'])}</p>
       <p class="tree-more"><a href="{slug}/{tslug}">Read more and get directions &rarr;</a></p>
     </article>"""
-        markers.append({"lat": loc["latitude"], "lng": loc["longitude"], "label": str(i)})
+        markers.append({"lat": loc["latitude"], "lng": loc["longitude"], "label": str(i),
+                        "icon": species_icon(t), "name": t["name"]})
 
     faq = city_data.get("faq", [])
     if not faq:
