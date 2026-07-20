@@ -2,6 +2,25 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-20 — Rome (full research run, nightly workflow)
+
+- 10 trees researched from scratch and written to `data/cities/rome.json`. Italy's national monumental tree law (10/2013) and the RAMI registry (ilregistrodeglialberi.it) made age and coordinate data unusually solid for several of these; Rome alone has 65 nationally registered monumental trees, more than any other Italian city.
+- 7 flagged, for source or precision reasons, never for doubt about a tree's existence:
+  - **The Quercia del Tasso** (Gianicolo): local legend claims 1000 years; no dendrologist has ever dated it and no source gives species below genus level. Story treats the 1000-year figure explicitly as folklore; age_min/age_max here (300-420) are a conservative documented-history floor, not a real estimate. Current physical condition after a 2011 arson attack needs an on-the-ground check.
+  - **Adonis** (Villa Borghese): planting is well documented as "early 1600s" but no source gives a specific year; exact coordinates are for the Valle dei Platani generally, not the specific trunk.
+  - **The Twin Planes of the Eleven Fountains** (Orto Botanico): two trees presented as one entry, matching how the garden itself presents them. Age is foresters' general estimate (300-400 years), no per-tree planting date found.
+  - **The Cedar of the Belvedere** (Villa Doria Pamphilj): age genuinely disputed between two sources by up to 170 years, 150 years per the national registry vs. 300+ years per a detailed planting history. Presented as a range. Coordinates are an approximation within a very large park.
+  - **The Leccio of the Lake** (Villa Borghese): same pattern, registry measurement (176 years) vs. traditional account (up to 300 years) tied to an 1784 garden redesign. Presented as a range.
+  - **The Cedar of Celimontana** and **The Aleppo Pine of Celimontana** (Villa Celimontana): both are nationally registered as monumental, but no source gives either a planting date or age figure, only the registry's qualitative designation. Ages here are conservative undocumented placeholders (100+ years), not sourced estimates. Coordinates for both are approximate.
+- 4 photos found on Wikimedia Commons with valid open licenses, all marked found_needs_check for your approval: Adonis / Valle dei Platani plane trees (CC BY-SA 3.0, Patafisik), the Leccio of the Lake (CC BY-SA 4.0, Albarubescens), the Fitolacca of the Capitoline (CC BY-SA 4.0, Albarubescens), the Cedar of Celimontana (CC BY-SA 4.0, Beatrice).
+- 6 photos missing, none found on Wikimedia Commons after searching.
+- One candidate dropped after research: **Quercia del Lupo**, a ~350-500 year old oak in Villa Borghese documented since a 1650s garden memoir, collapsed in a storm in 2018. Multiple outlets (RomaToday, Il Messaggero, Fanpage) confirm the collapse, but none confirm whether any remains are still visible on site, unlike London's Queen Elizabeth's Oak. Rather than direct visitors to a spot that may now be empty, it is referenced only in Adonis's story as context. Worth a follow-up if on-the-ground status can be confirmed.
+- One candidate dropped for being outside city scope: the ~2,600-year-old Ulivone di Canneto Sabino, popularly called Europe's oldest olive tree, is in Fara in Sabina, province of Rieti, roughly 50 km from Rome and well outside the "100 cities" scope, same pattern as Lisbon's Santa Iria de Azóia olive.
+- One candidate dropped for insufficient sourcing: an ippocastano (horse chestnut) on Via delle Tre Pile, listed on Rome's official monumental tree PDF, but the PDF could not be parsed for text and no secondary source gave an age or precise position. Worth a retry if the municipal PDF becomes accessible.
+- Villa Torlonia's cedar of Lebanon (Via Nomentana) was investigated and dropped: the only registry entries found for a "Villa Torlonia" cedar turned out to be a different Villa Torlonia in Frascati, a separate town, not the Via Nomentana villa in Rome itself.
+- No superlative claims beyond city-level ones ("oldest tree in Rome") checked against other published city pages; none conflict. The intro's "65 monumental trees, more than any other Italian city" claim is sourced to a 2025 RomaToday article comparing Rome to Naples and Caserta.
+- Suggested follow-up: the official comune.roma.it monumental trees PDF (`Elenco_degli_alberi.pdf`) returned as unparseable binary data on this run; a future run with better PDF extraction could resolve several of the flagged coordinates and ages above, plus surface the ippocastano candidate.
+
 ## 2026-07-20 — Lisbon (full research run, nightly workflow)
 
 - 10 trees researched from scratch and written to `data/cities/lisbon.json`. Portugal has a national legal registry for "árvores de interesse público" (trees of public interest, Law 53/2012, run by ICNF), which made sourcing unusually solid for several of these compared to earlier cities.
