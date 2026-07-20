@@ -166,6 +166,8 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .hero-overlay h1 { font-family: var(--serif); font-size: 1.75rem; font-weight: 400; line-height: 1.25; margin-bottom: 0.6rem; }
 .hero-overlay h1 em { font-style: italic; color: var(--moss); }
 .hero-overlay p { font-size: 13px; font-weight: 300; color: var(--ink-mid); line-height: 1.65; }
+.hero-overlay .go-btn { border: none; font-family: var(--sans); cursor: pointer; margin-top: 0.9rem; }
+.near-me-result { font-size: 12px; margin-top: 0.6rem; min-height: 1em; }
 .page { max-width: 1100px; margin: 0 auto; padding: 3rem 2.5rem; }
 .section-heading { font-family: var(--serif); font-size: 1.75rem; font-weight: 400; margin-bottom: 1.5rem; }
 .prose { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
@@ -457,6 +459,36 @@ def home_map_script(markers):
 <script src="{MAPLIBRE_JS}"></script>
 <script>
 var markers = {data};
+// "Around you" has to actually mean something, so the button asks the browser
+// where you are and flies the globe to the nearest city that is on the map.
+function initNearMe() {{
+  var btn = document.getElementById('near-me');
+  var out = document.getElementById('near-me-result');
+  if (!btn) return;
+  if (!navigator.geolocation) {{ btn.style.display = 'none'; return; }}
+  btn.addEventListener('click', function() {{
+    out.textContent = 'Looking...';
+    navigator.geolocation.getCurrentPosition(function(pos) {{
+      var la = pos.coords.latitude, lo = pos.coords.longitude, best = null, bestD = Infinity;
+      markers.forEach(function(m) {{
+        var dLa = (m.lat - la) * Math.PI / 180, dLo = (m.lng - lo) * Math.PI / 180;
+        var a = Math.sin(dLa/2) * Math.sin(dLa/2) + Math.cos(la*Math.PI/180) *
+                Math.cos(m.lat*Math.PI/180) * Math.sin(dLo/2) * Math.sin(dLo/2);
+        var d = 6371 * 2 * Math.asin(Math.sqrt(a));
+        if (d < bestD) {{ bestD = d; best = m; }}
+      }});
+      if (!best) {{ out.textContent = 'No cities on the map yet.'; return; }}
+      map.flyTo({{ center: [best.lng, best.lat], zoom: 9, duration: 2200 }});
+      var km = Math.round(bestD);
+      out.innerHTML = km < 60
+        ? 'You are in reach of <a href="' + best.url + '">' + best.city + '</a>. ' + best.label + ' trees to walk to.'
+        : 'Nearest mapped city is <a href="' + best.url + '">' + best.city + '</a>, about ' + km +
+          ' km away. <a href="contribute">Map your own city</a>.';
+    }}, function() {{
+      out.textContent = 'Could not get your location. Pick a city below instead.';
+    }}, {{ timeout: 8000 }});
+  }});
+}}
 var map = new maplibregl.Map({{
   container: 'map',
   style: '{MAP_STYLE}',
@@ -477,6 +509,7 @@ markers.forEach(function(m) {{
   }});
   new maplibregl.Marker({{ element: el }}).setLngLat([m.lng, m.lat]).addTo(map);
 }});
+initNearMe();
 </script>
 """
 
@@ -1345,9 +1378,9 @@ def build_contribute_page(published, pages):
 # ----------------------------------------------------------------- homepage
 
 def build_homepage(published, upcoming, collections, pages):
-    title = "Ancient Trees: the world's most remarkable trees, mapped"
-    description = ("Ancient Trees maps the oldest and most beautiful trees in 100 cities worldwide. "
-                   "Free to explore. Find them before everyone else does.")
+    title = "Ancient Trees: remarkable old trees near you, mapped"
+    description = ("Find the remarkable old trees around you. Ten per city, each verified, "
+                   "each with its story, its exact spot and directions from where you stand.")
 
     city_markers = []
     for p in published:
@@ -1355,7 +1388,7 @@ def build_homepage(published, upcoming, collections, pages):
         lng = sum(m["lng"] for m in p["markers"]) / len(p["markers"])
         city_markers.append({
             "lat": lat, "lng": lng, "label": str(p["count"]),
-            "url": p["slug"],
+            "url": p["slug"], "city": p["city"],
         })
 
     live_cards = "".join(
@@ -1383,16 +1416,19 @@ def build_homepage(published, upcoming, collections, pages):
 <div class="home-hero">
   <div id="map" class="map"></div>
   <div class="hero-overlay">
-    <h1>Every city has a tree that was <em>here before the city was</em>.</h1>
-    <p>The oldest and most remarkable trees in 100 cities, each verified, each with its story, each on the map. Tap a pin to start.</p>
+    <h1>The remarkable trees <em>around you</em>.</h1>
+    <p>Every city has trees that were standing before the city was. These are the ten worth walking to in each one, with the story, the exact spot, and directions from wherever you happen to be.</p>
+    <button type="button" id="near-me" class="go-btn">Find trees near me</button>
+    <p id="near-me-result" class="near-me-result"></p>
   </div>
 </div>
 <main class="page">
   <h2 class="section-heading" id="cities">Cities</h2>
   <div class="city-grid">{live_cards}{soon_cards}</div>
   {coll_html}
-  <h2 class="section-heading">Why trees</h2>
-  <p class="prose">A 400 year old tree has outlasted every empire, plague, and war its city has seen. It was here before the street was named. It will be here after you leave. Most travel guides send you to the same squares, the same views, the same lunch spots. Ancient Trees takes you somewhere quieter. These are the spots that do not make the top ten lists. They are better.</p>
+  <h2 class="section-heading">How it works</h2>
+  <p class="prose">Pick the city you are in. You get ten trees, ranked, each with the story of what it has lived through, the exact spot it stands on, and a button that hands the directions to your phone. Take the whole city with you as a map file if you are going out for the day. Everything is free and stays free.</p>
+  <p class="prose">Why bother: a 400 year old tree has outlasted every empire, plague and war its city has seen. It was here before the street was named and will be here after you leave. Most guides send you to the same squares and the same viewpoints. This sends you somewhere quieter, ten minutes off the route, and it is almost always worth the detour.</p>
 </main>
 """
     head_extra = map_head() + "\n" + ld_script(site_graph())
@@ -1447,6 +1483,9 @@ def validate_internal_links(pages):
             valid.add(url[:-5])
 
     for relpath, content, _ in pages:
+        # Only markup is checked. Links a script builds at runtime are not
+        # statically resolvable, and scanning them yields false positives.
+        content = re.sub(r"<script\b.*?</script>", "", content, flags=re.S)
         page_url = "/" + relpath
         if page_url.endswith("/index.html"):
             page_url = page_url[: -len("index.html")]
