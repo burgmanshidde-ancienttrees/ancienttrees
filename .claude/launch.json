@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/b858f767-7a7f-485e-b314-f6e0ccdf38f9/scratchpad/serve.py", "8322"],
+      "port": 8322
+    }
+  ]
+}
