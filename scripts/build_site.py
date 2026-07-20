@@ -39,10 +39,16 @@ BASE_URL = "https://ancienttrees.app"
 CUSTOM_DOMAIN = "ancienttrees.app"
 CONTACT = "hello@ancienttrees.app"
 
-# Paste the public submission form URL here (Tally, Google Forms, anything) and
-# every contribution button on the site switches from a prefilled mailto to the
-# form. Left empty, the site falls back to mailto so nothing is ever a dead end.
+# Paste the public submission form URL here and every contribution button on the
+# site switches from a prefilled mailto to the form. Left empty, the site falls
+# back to mailto so nothing is ever a dead end.
 SUBMISSION_FORM_URL = ""
+
+# The same form's responses, published as a public CSV. The research runs read
+# this to pick up submissions without Hidde in the loop; see CLAUDE.md Step 0b.
+# Do not collect email addresses in the form: this sheet is world-readable, and
+# the submitter's name is published as a credit anyway.
+SUBMISSIONS_CSV_URL = ""
 
 MAPLIBRE_JS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"
 MAPLIBRE_CSS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
