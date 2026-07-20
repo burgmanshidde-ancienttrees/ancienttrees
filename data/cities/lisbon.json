@@ -1,0 +1,324 @@
+{
+  "city": "Lisbon",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "Lisbon officially records almost every notable tree in the city. Since a 2012 law, the state can formally classify select specimens as trees of public interest, and Lisbon holds more of them than any other Portuguese municipality. Its oldest are four hollow olive trees outside a hilltop chapel in Alcântara, older than the Braganza dynasty. Its strangest is a rubber fig that escaped a cracked flowerpot in Mouraria and swallowed a street. Between them sit a bleeding dragon tree, a cypress mistaken for a cedar, and the Portuguese parliament's private tipu. All but one are free to visit.",
+  "meta_description": "Lisbon's oldest trees are classified by law. Meet the 457-year-old olives of Santo Amaro and nine more, from a dragon tree to a rogue rubber fig.",
+  "question_answer": "The oldest tree in Lisbon is one of four olive trees outside the Capela de Santo Amaro in Alcântara, estimated at around 457 years old, the only trees in the city with documented ages predating the 18th century. They stand in a small hilltop garden with a well known river view, an eleven minute walk from Alcântara-Terra train station.",
+  "question_meta": "The 457-year-old olive trees of Santo Amaro are Lisbon's oldest. Their exact location, how to reach them, and nine more remarkable trees nearby.",
+  "question_context": "Lisbon keeps its oldest trees close to its water. The four olive trees at the Capela de Santo Amaro have grown against the wall of a small circular hilltop chapel in Alcântara since sometime in the 1500s, making them roughly 457 years old by the city's own classification records, decades older than anything else on this list. The chapel itself, built in 1549, is a national monument, but the trees have outlasted several rounds of restoration to the building beside them. Their runner up in age is Lisbon's dragon tree in the Jardim Botânico da Ajuda, which was already a mature adult when transplanted into the city's first botanical garden in 1768, making it at least 258 years old and, by some estimates, considerably more. Between them, the two trees frame two very different kinds of longevity: quiet olives outside a functioning chapel, and a dramatic, half collapsed dragon tree behind paid admission and a steel prop. Getting to the olive trees is straightforward: Alcântara-Terra train station on the Cascais line, then an eleven minute walk uphill past the Miradouro de Santo Amaro, one of the better river views in the city and usually far quieter than the famous ones downtown.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Lisbon?",
+      "a": "One of four olive trees outside the Capela de Santo Amaro in Alcântara, estimated at around 457 years old, decades older than anything else on this list."
+    },
+    {
+      "q": "Are Lisbon's ancient trees free to visit?",
+      "a": "Nine of the ten are free, standing in public gardens, squares and street corners. The exception is the dragon tree at the Jardim Botânico da Ajuda, which requires a botanical garden ticket, about 1 euro, free on Sunday mornings."
+    },
+    {
+      "q": "Why does Lisbon have so many classified 'trees of public interest'?",
+      "a": "Since a 2012 law, Portugal lets the state formally protect individual trees for their age, rarity or history. Lisbon has more classified trees than any other Portuguese municipality, concentrated mostly in its older central parishes."
+    },
+    {
+      "q": "What is a dragon tree?",
+      "a": "Dracaena draco is a slow growing, long lived species from Macaronesia whose red sap, once called dragon's blood, was traded across medieval Europe as dye and varnish. Lisbon's specimen, in the Jardim Botânico da Ajuda, is the oldest of its kind in mainland Portugal."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lis_001",
+      "name": "The Olive Trees of Santo Amaro",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "457 years",
+      "age_min": 450,
+      "age_max": 465,
+      "location": {
+        "address": "Capela de Santo Amaro, Rua de Santo Amaro, Alcântara, 1300 Lisboa",
+        "latitude": 38.702111,
+        "longitude": -9.182306,
+        "neighbourhood": "Alcântara"
+      },
+      "story": "Four olive trees outside a small round chapel in Alcântara have outlived every Portuguese king since before the Braganza dynasty existed. By the city's own classification records they are about 457 years old, the oldest documented trees in Lisbon, planted well before the Capela de Santo Amaro beside them took its current circular form in 1549. The chapel has been rebuilt and restored more than once since; the olives outside it have simply kept growing. None of the four is tall, barely six metres at most, but their trunks have hollowed and twisted with age into shapes closer to driftwood than farmland olive stock. City foresters classified them for their cultural, pedagogical and landscape interest, bureaucratic language for what amounts to old age handled well. Olive trees usually mark farmland, not clifftop chapels with river views, and these four have quietly ignored the fact that a working port and, eventually, a 25 de Abril Bridge grew up around them. The hilltop they share is one of the better free viewpoints over the Tagus, and on a typical afternoon the view gets most of the attention, while four of the oldest living things in the city stand a few steps away, propped, gnarled, and largely unbothered.",
+      "verified_sources": [
+        "https://florestas.pt/descobrir/a-beleza-imperfeita-das-oliveiras-da-capela-de-santo-amaro/",
+        "https://www.dn.pt/arquivo/diario-de-noticias/500-mil-arvores-quem-cuida-e-como-e-cuidada-a-lisboa-verde-11234166.html",
+        "https://pt.wikipedia.org/wiki/Capela_de_Santo_Amaro_(Alc%C3%A2ntara)"
+      ],
+      "access": "Free, open access, public garden around the chapel",
+      "transport": "11 min walk from Alcântara-Terra station (Linha de Cascais), or tram 15E to Calvário then 9 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "lis_002",
+      "name": "The Ajuda Dragon Tree",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "250-400 years",
+      "age_min": 250,
+      "age_max": 400,
+      "location": {
+        "address": "Jardim Botânico da Ajuda, Calçada da Ajuda, 1300-011 Lisboa",
+        "latitude": 38.706111,
+        "longitude": -9.200833,
+        "neighbourhood": "Ajuda"
+      },
+      "story": "Cut into its bark and this tree bleeds red. The resin of Dracaena draco oxidizes into a dark crimson sap once prized across Europe as dragon's blood, used in medieval varnish, dye and folk medicine. This specimen was already a mature adult when the Italian botanist Domingos Vandelli transplanted it into Lisbon's first botanical garden in 1768, which makes it at least 258 years old and possibly closer to 400, since dragon trees carry no annual rings and nobody recorded its birth. Its crown once spread nearly 23 metres across, among the largest of its kind in the country, until a rot infection took hold around 2006 and cost it roughly half its size. A steel frame now holds up what remains. The garden, built on the grounds of the royal Ajuda Palace for King José I, treats the tree as its emblem, and cuttings from its offshoots have been propagated into a small nursery of younger dragon trees nearby. Dragon trees grow slowly and can live for centuries once established, so this one, missing half its canopy and still standing, may yet be young for its kind.",
+      "verified_sources": [
+        "https://florestas.pt/descobrir/dragoeiro-a-especie-e-o-mais-antigo-sangue-de-dragao-em-lisboa/",
+        "https://pt.wikipedia.org/wiki/Jardim_Bot%C3%A2nico_da_Ajuda",
+        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/"
+      ],
+      "access": "Paid entry to Jardim Botânico da Ajuda (about 1 euro; free Sunday mornings 10:00-13:00)",
+      "transport": "12 min walk from Belém station (Linha de Cascais); tram 18E stops nearby",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Lisbon%2C_Jardim_Bot%C3%A2nico_da_Ajuda%2C_Dracaena_draco.JPG",
+        "license": "CC BY 4.0",
+        "attribution": "Dguendel, Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is genuinely uncertain: the tree was already an adult specimen when transplanted in 1768 (258 years by that count alone), but several popular sources round up to 400 years assuming an earlier, undocumented origin. Presented here as a range rather than a single figure."
+    },
+    {
+      "id": "lis_003",
+      "name": "The Cypress of Príncipe Real",
+      "species": "Mexican Cypress (Cupressus lusitanica)",
+      "age_estimate": "150+ years",
+      "age_min": 145,
+      "age_max": 155,
+      "location": {
+        "address": "Jardim do Príncipe Real, Praça do Príncipe Real, 1250-184 Lisboa",
+        "latitude": 38.71629,
+        "longitude": -9.14865,
+        "neighbourhood": "Príncipe Real, Misericórdia"
+      },
+      "story": "Lisbon's first legally protected tree is not a cedar at all. Everyone calls it the cedro-do-Buçaco, but the tree presiding over Príncipe Real garden is Cupressus lusitanica, a cypress from the mountains of Mexico and Guatemala with a Portuguese name it never earned. In 1940 it became the first tree in the country classified as being of public interest, decades before Portugal had a formal national registry for such things. Its canopy, once a vast gazebo-like dome some 30 metres across, has thinned with age and storms down to about seven metres of visible height, though the trunk still measures four metres around at the base. Portuguese heritage records put it at roughly 150 years old, predating most of the surrounding 19th century garden. One international tree registry claims it instead dates to around 1740, nearly twice that age, a gap nobody has resolved. Locals shelter under its remaining canopy on Saturday organic market mornings, largely unaware they are standing under a tree whose paperwork outranks almost every building in view, and whose exact age is still an open question among the people paid to know it.",
+      "verified_sources": [
+        "https://florestas.pt/descobrir/cedro-do-bucaco-do-principe-real-a-primeira-arvore-classificada-em-lisboa/",
+        "https://www.publico.pt/2012/05/28/local/noticia/umacipreste-do-principe-real-luta-pela-vida-aos-140-anos-de-idade-1547913",
+        "https://www.visitlisboa.com/en/articles/the-century-old-tree-of-principe-real",
+        "https://www.monumentaltrees.com/en/prt/lisboa/lisbon/15021_jardimdoprincipereal/"
+      ],
+      "access": "Free, public garden",
+      "transport": "Short walk from Rato station (Metro Yellow Line)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Cipres_Portugues_%28Jard%C3%ADn_Principe_Real%2C_Lisboa%29.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Alatryste, Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Portuguese press and heritage sources converge on approximately 150 years, tied to its 1940 classification. monumentaltrees.com states it was planted around 1740, implying roughly 285 years. The discrepancy is unresolved; the more heavily corroborated 150 year figure is used as the primary estimate, per monumentaltrees being used for verification only."
+    },
+    {
+      "id": "lis_004",
+      "name": "The Ombú of Largo do Limoeiro",
+      "species": "Ombú (Phytolacca dioica)",
+      "age_estimate": "100+ years",
+      "age_min": 100,
+      "age_max": 120,
+      "location": {
+        "address": "Largo do Limoeiro, 1100-566 Lisboa",
+        "latitude": 38.710961,
+        "longitude": -9.130639,
+        "neighbourhood": "Alfama"
+      },
+      "story": "The square is named after a lemon tree that is long gone. What replaced it as the local landmark is an ombú, a South American species with a swollen, fluted trunk that can measure some seventeen metres around at the base, wider than most house facades on the street. It grows against the outer wall of the old Limoeiro prison, a building that held political prisoners for much of the 20th century and now trains judges. Municipal archive photographs show it already a substantial adult tree by 1910, which would put its real age closer to 115 years than the 100 usually quoted. Ombú wood is famously soft and fire resistant, of no real use to carpenters, which may be exactly why this one survived when more useful trees nearby did not. It stands a few steps from the Portas do Sol viewpoint, one of the finest views over the Alfama rooftops to the river, though most visitors walk straight past its swollen trunk toward the railing. True to its local nickname, bela-sombra, beautiful shade, it still throws excellent cover over an otherwise unremarkable stretch of pavement.",
+      "verified_sources": [
+        "https://getlisbon.com/discovering/limoeiro-square/",
+        "http://cidadanialx.blogspot.com/2016/10/a-bela-sombra-da-r-do-limoeiro-foi.html",
+        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/"
+      ],
+      "access": "Free, public square",
+      "transport": "4 min walk from Portas do Sol tram stop (12E/28E)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/BelaSombra%40R.Limoeiro%282015%29.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "kenward, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Most sources cite 100 years; a local history blog notes the tree already appears as a mature adult in Lisbon Municipal Archive photographs from 1910, which would put its real age closer to 115 years."
+    },
+    {
+      "id": "lis_005",
+      "name": "The Tipu of Jardim de São Bento",
+      "species": "Tipu Tree (Tipuana tipu)",
+      "age_estimate": "90 years",
+      "age_min": 85,
+      "age_max": 100,
+      "location": {
+        "address": "Jardim de São Bento (Praça da Constituição de 1976), Rua de São Bento, 1250-093 Lisboa",
+        "latitude": 38.7116509,
+        "longitude": -9.1547827,
+        "neighbourhood": "São Bento, Estrela"
+      },
+      "story": "Portugal's parliament keeps a South American tree on its doorstep. This tipu, planted around ninety years ago in the small triangular garden beside the Palácio de São Bento, blooms with orange flowers marked by a brownish red spot at the base of each petal, a native of Bolivia and Argentina with no historical connection to the 16th century Benedictine monastery the palace used to be. The monastery became the seat of the Portuguese parliament in 1834 after the religious orders were dissolved, and the garden beside it has since watched ministers, protesters and the occasional political crisis unfold a few dozen metres from its canopy. The tree is one of Lisbon's officially classified trees of public interest, a status shared by barely two dozen specimens across the entire city. Its timber, tipa, is prized in South America for furniture, though nobody here has any plans to cut this one down for a table. Late winter and spring bring its flowering season, when the garden's modest third of a hectare turns a startling shade of orange directly across the street from where the country's laws get written.",
+      "verified_sources": [
+        "https://pt.wikipedia.org/wiki/Jardim_de_S%C3%A3o_Bento",
+        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/"
+      ],
+      "access": "Free, public garden beside the Assembleia da República",
+      "transport": "2 min walk from São Bento train station (Linha de Sintra)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "lis_006",
+      "name": "The Coral Trees of Jardim da Luz",
+      "species": "Cockspur Coral Tree (Erythrina crista-galli)",
+      "age_estimate": "100 years",
+      "age_min": 95,
+      "age_max": 105,
+      "location": {
+        "address": "Jardim Teixeira Rebelo (Jardim da Luz), Largo da Luz, 1600 Lisboa",
+        "latitude": 38.761039,
+        "longitude": -9.183212,
+        "neighbourhood": "Carnide"
+      },
+      "story": "Despite the name, this tree has never been near India. Portuguese sailors called the genus Erythrina a coral tree of the Indies after landing in Brazil convinced they had reached Asia, a five century old geography mistake baked permanently into the common name. Two specimens grow on the south side of Jardim da Luz in Carnide, both classified as trees of public interest since 1996 and both about a century old, standing twelve and fifteen metres tall. Each June they erupt in bright red flowers shaped unmistakably like a rooster's crest, the detail behind the species name crista-galli. The garden's formal name, Jardim Teixeira Rebelo, honours the founding director of the nearby Military College, though most locals still call it simply Jardim da Luz after the Baroque church across the square. A metro station sits so close to the garden gate that riders on the Blue Line surface almost directly beneath the coral trees' canopy without noticing. For two South American transplants misnamed after the wrong continent, they have settled into suburban Lisbon without complaint, flowering every summer regardless of what anyone calls them.",
+      "verified_sources": [
+        "https://pt.wikipedia.org/wiki/Jardim_da_Luz_(Lisboa)",
+        "https://www.allaboutportugal.pt/en/lisboa/gardens/jardim-da-luz-ou-jardim-teixeira-rebelo",
+        "http://www.monumentos.gov.pt/Site/APP_PagesUser/SIPA.aspx?id=27032"
+      ],
+      "access": "Free, public garden",
+      "transport": "1 min walk from Colégio Militar/Luz station (Metro Blue Line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "lis_007",
+      "name": "The Nettle Tree of Avenida de Berlim",
+      "species": "European Nettle Tree (Celtis australis)",
+      "age_estimate": "100 years",
+      "age_min": 95,
+      "age_max": 105,
+      "location": {
+        "address": "Avenida de Berlim, at the junction with Avenida Francisco Luís Gomes, 1800 Lisboa",
+        "latitude": 38.769665,
+        "longitude": -9.125884,
+        "neighbourhood": "Olivais"
+      },
+      "story": "One tree remembers the farms that used to be here. Before Lisbon's eastward expansion in the 1940s and 1950s paved over the quintas of Olivais with apartment blocks, this stretch of land was countryside, and a single European nettle tree from that era survived the building work, still standing at what is now the junction of Avenida de Berlim and Avenida Francisco Luís Gomes. It is roughly a century old, sixteen metres tall, with a broad symmetrical canopy that looks deliberately planted rather than accidentally spared, though it was almost certainly the latter. The species produces small sweet fruit that gives it a folk nickname referencing the birds that come to eat it, and its wood was historically valued for tool handles and whip stocks for its flexibility. Officially classified as a tree of public interest, it now stands beside a bronze sculpture called Homem Sucata, Scrap Man, welded from actual car parts in 1993, an odd pairing of the area's rural past and its industrial present sharing the same traffic island. Commuters on the surrounding avenues have a much older neighbour than the surrounding tower blocks suggest.",
+      "verified_sources": [
+        "https://www.theleafboutiquehotel.com/en/portfolio/lodao-bastardo-celtis-australis/",
+        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/"
+      ],
+      "access": "Free, public street/traffic island",
+      "transport": "Roughly 15 min walk from Bela Vista station (Metro Red Line), or bus to Avenida de Berlim",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Exact position at the Avenida de Berlim / Avenida Francisco Luís Gomes junction and the nearest metro walking time are approximate; needs on-the-ground confirmation in a future improvement pass."
+    },
+    {
+      "id": "lis_008",
+      "name": "The Ginkgo of Praça Paiva Couceiro",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "100+ years",
+      "age_min": 100,
+      "age_max": 130,
+      "location": {
+        "address": "Praça Paiva Couceiro, 1170-284 Lisboa",
+        "latitude": 38.730937,
+        "longitude": -9.127004,
+        "neighbourhood": "Penha de França"
+      },
+      "story": "Ginkgo biloba is often called a living fossil, a species virtually unchanged for over 200 million years and one of the very few plants known to have resprouted near ground zero at Hiroshima, a resilience the species carries in its reputation rather than this particular tree's own biography. Lisbon's specimen in Praça Paiva Couceiro, in the working class Penha de França neighbourhood, is a comparatively young member of an ancient lineage: over a century old and classified as a tree of public interest, though nobody has pinned down its exact planting date. Its fan shaped leaves turn a uniform bright yellow every November before dropping almost simultaneously, a spectacle unrelated to anything else on this list and one that draws a small annual crowd of photographers to an otherwise unremarkable square. Ginkgos are dioecious, male or female, and only female trees produce the notoriously foul smelling fruit; whether this one has simply spared the neighbourhood that autumn hazard, or its sex was never recorded, nobody seems to know. Either way, it is Penha de França's one living link to a genus older than most of the world's mountain ranges.",
+      "verified_sources": [
+        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/",
+        "https://amensagem.pt/2022/12/12/ginkgo-arvore-folhas-amarelas-lisboa-fossil-vivo/"
+      ],
+      "access": "Free, public square",
+      "transport": "Roughly 10 min walk from Arroios station (Metro Red Line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No source gives a precise planting date; 'over a century old' is the most specific figure available from the two independent write-ups found so far."
+    },
+    {
+      "id": "lis_009",
+      "name": "The Paineira of Jardim Alfredo Keil",
+      "species": "Silk Floss Tree (Ceiba speciosa)",
+      "age_estimate": "100+ years (ensemble classified 2017)",
+      "age_min": 100,
+      "age_max": 140,
+      "location": {
+        "address": "Jardim Alfredo Keil, Praça da Alegria, 1250-004 Lisboa",
+        "latitude": 38.7178708,
+        "longitude": -9.1452052,
+        "neighbourhood": "Praça da Alegria, Avenida da Liberdade"
+      },
+      "story": "Every October this tree turns a small garden pink. The silk floss tree in Jardim Alfredo Keil is one of six individually classified specimens within a nine tree ensemble that the city declared collectively of public interest in 2017, a South American species whose thorny green trunk and cotton candy coloured blooms have become an unofficial marker of autumn across Lisbon in recent years. The garden itself, laid out in 1882 on the former site of the Feira da Ladra flea market before that market moved to Alfama, is barely large enough to contain the tree's crown, and a bust of the composer Alfredo Keil, who wrote the melody that became Portugal's national anthem, watches from one corner. No source isolates exactly how old this particular paineira is, since the 2017 classification covers the whole collection of trees rather than dating each specimen individually. The fruit that follows the flowers splits open to release seeds wrapped in a silky white floss, once used to stuff pillows and life jackets, a soft, practical footnote to a tree that spends every autumn putting on the loudest show in the neighbourhood.",
+      "verified_sources": [
+        "https://pt.wikipedia.org/wiki/Jardim_Alfredo_Keil",
+        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/"
+      ],
+      "access": "Free, public garden",
+      "transport": "6 min walk from Restauradores station (Metro Blue Line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "This paineira is one of six individually classified trees within a nine-tree ensemble at Jardim Alfredo Keil, classified collectively in 2017. No source isolates this specimen's individual age."
+    },
+    {
+      "id": "lis_010",
+      "name": "The Giant Rubber Tree of Mouraria",
+      "species": "Rubber Fig (Ficus elastica)",
+      "age_estimate": "20-40 years, exact age unknown",
+      "age_min": 20,
+      "age_max": 40,
+      "label": "Urban curiosity",
+      "location": {
+        "address": "Rua de São Cristóvão 22-24, Mouraria, 1100-177 Lisboa",
+        "latitude": 38.713026,
+        "longitude": -9.135383,
+        "neighbourhood": "Mouraria"
+      },
+      "story": "Nobody knows how this tree got here, and that is most of its appeal. A rubber fig now towers some six metres over a narrow street in Mouraria, its roots having escaped a cracked pot years ago and driven straight into the ground below, its trunk and branches now filling the gap between two building facades on Rua de São Cristóvão as though it had been planted there on purpose. It was not. Plant researchers who have examined it, including the botanist André Mota, can confirm the species and describe its improvised growth, but not its origin story. Unlike the classified trees of public interest elsewhere on this list, this one carries no official age, no protected status and no municipal plaque, just several hundred enthusiastic online reviews and a café that opened next door in 2022 partly because of the foot traffic the tree now draws. It is the youngest and least official entry here, almost certainly under 40 years old, included not for its age but for the fact that a potted houseplant broke loose and quietly became one of the most photographed trees in the neighbourhood.",
+      "verified_sources": [
+        "https://www.nit.pt/fora-de-casa/na-cidade/misteriosa-planta-gigante-mouraria",
+        "https://wanderlog.com/place/details/4317956/historic-giant-plant-of-lisbon"
+      ],
+      "access": "Free, public street",
+      "transport": "Short walk from Martim Moniz station (Metro Green Line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Not an ancient tree: origin and exact age are unknown, and researchers who have examined it consider it a modern escapee from a broken pot, likely under 40 years old. Included for its visual spectacle and local renown rather than its age, per the qualifying criteria in CLAUDE.md. No official classification or protected status; access and public visibility are well documented, unlike its history."
+    }
+  ]
+}
