@@ -1,16 +1,19 @@
-name: Nightly city research
+name: City research
 
 on:
   schedule:
-    # Hourly through the night: 20:00-03:00 UTC is 22:00-05:00 Amsterdam in
-    # summer (an hour earlier in winter). These runs share Hidde's Claude Pro
-    # subscription, which has a rolling 5-hour usage window, so most of these
-    # attempts will hit the limit and stop after one turn. That is the design:
-    # a failed attempt costs almost nothing, so knocking hourly lets the work
-    # through whenever the window has room, and covers for GitHub's habit of
-    # delaying or skipping scheduled triggers. Concurrency below stops overlap.
-    - cron: "0 20-23 * * *"
-    - cron: "0 0-3 * * *"
+    # Every hour, around the clock. These runs share Hidde's Claude Pro
+    # subscription, which has a rolling 5-hour usage window, so most attempts
+    # hit the limit and stop after one turn. That is the design: a failed
+    # attempt costs almost nothing, so knocking hourly lets the work through
+    # whenever the window has room, and covers for GitHub's habit of delaying
+    # or skipping scheduled triggers. Concurrency below stops overlap.
+    #
+    # Trade-off Hidde accepted: with no protected hours, a run can claim the
+    # allowance shortly before he sits down to work. To carve out a working
+    # block, replace this with ranges, e.g. "0 18-23 * * *" + "0 0-9 * * *"
+    # to leave 10:00-18:00 UTC free.
+    - cron: "0 * * * *"
   workflow_dispatch: {}
 
 permissions:
