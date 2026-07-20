@@ -1,0 +1,332 @@
+{
+  "city": "Rome",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Rome holds more officially classified monumental trees than any other city in Italy, and its oldest stand far from the ruins tourists queue for. A hollow oak on the Gianicolo carries a Renaissance poet's name. A cardinal's gardener planted the only certified oriental planes in the capital four centuries ago. A South American giant leans over Michelangelo's staircase, and an orange tree a saint is said to have planted in 1220 is still visible through a hole cut in a church wall. All but one on this list are free to visit.",
+  "meta_description": "Rome's oldest trees hide beyond the ruins: a poet's hollow oak on the Gianicolo, a cardinal's 400-year-old planes, and an orange a saint planted in 1220.",
+  "question_answer": "Rome's oldest tree is, by tradition, the Quercia del Tasso on the Gianicolo hill, the hollow remnant of an oak linked to the poet Torquato Tasso, who died beside it in 1595 and was said to rest in its shade when it was already old. It survives today only as a propped, fire-damaged trunk protected as a natural monument. For a living giant instead, the best-documented ancient trees in the city are the roughly 400-year-old oriental planes planted in Villa Borghese in the early 1600s.",
+  "question_meta": "Rome's oldest tree is the Quercia del Tasso on the Gianicolo, a hollow oak tied to a poet who died in 1595. Where it stands, and the trees that rival it.",
+  "question_context": "Naming the single oldest tree in Rome is harder than it sounds, because the city's most storied tree is also its most ruined. The Quercia del Tasso stands on the Gianicolo a few steps from the church of Sant'Onofrio, where Torquato Tasso spent his last months and died in 1595. Tradition holds that he rested in the oak's shade, and that Filippo Neri did the same before him, which would make the tree well over four centuries old and probably a good deal more, since it was already mature in Tasso's day. Lightning in 1843 and an arson fire in 2011 reduced it to a split trunk held up by an iron frame, and Rome now protects it as a natural monument rather than counting on it as a living tree. For a tree you can still walk under, the oriental planes of Villa Borghese are the better answer: planted in the early 1600s by Cardinal Scipione Borghese's gardener, they are around 400 years old and the only certified specimens of their species in the capital. The orange tree of Santa Sabina claims a date of 1220 through Saint Dominic, but the tree standing in that cloister today is a descendant of the original rather than the eight-hundred-year-old planting itself.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Rome?",
+      "a": "By tradition the Quercia del Tasso on the Gianicolo, a hollow oak linked to the poet Torquato Tasso, who died beside it in 1595. It survives as a propped, fire-damaged trunk protected as a natural monument rather than a living specimen."
+    },
+    {
+      "q": "Are Rome's ancient trees free to visit?",
+      "a": "Most are. The Quercia del Tasso, the trees of Villa Borghese, Villa Doria Pamphili, Villa Sciarra and Villa Celimontana, the pines of the Pincio and the ombú on the Campidoglio all stand in free public spaces. The exception is the Orto Botanico, which charges about five euros."
+    },
+    {
+      "q": "Why does Rome have so many monumental trees?",
+      "a": "Rome holds more officially classified monumental trees than any other Italian city, a legacy of its large aristocratic villas and papal gardens, many of which became public parks in the 20th century with their old plantings left intact."
+    },
+    {
+      "q": "What are the umbrella pines of Rome?",
+      "a": "They are stone pines, Pinus pinea, the flat-canopied trees that give the city its skyline. They inspired Respighi's 1924 orchestral work Pini di Roma, and the older specimens on the Pincio are around two centuries old."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rom_001",
+      "name": "The Quercia del Tasso",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "over 400 years",
+      "age_min": 400,
+      "age_max": 600,
+      "label": "Natural monument",
+      "location": {
+        "address": "Passeggiata del Gianicolo, near the church of Sant'Onofrio, 00165 Roma",
+        "latitude": 41.9013,
+        "longitude": 12.4617,
+        "neighbourhood": "Gianicolo, Trastevere"
+      },
+      "story": "A dying oak on the Gianicolo carries a poet's name and stands upright only because of an iron skeleton. A few steps from the church of Sant'Onofrio, where Torquato Tasso died in 1595, this is the hollow remnant of the tree that tradition says sheltered him in his final months, and Filippo Neri, founder of the Oratory, a few decades before that. The oak was already old then. Lightning tore into it in 1843, and an arson fire in 2011 finished most of what was left, so a visitor today finds little more than a split trunk and a couple of surviving branches propped over a low wall by a rusting metal frame. Rome protects it as a natural monument rather than a living specimen, which is the honest category for it. Nearby the Oratorians once built a small open-air theatre, the Anfiteatro della Quercia del Tasso, that still stages summer performances. Most people climbing to the Gianicolo terrace for the view over the rooftops pass the tree without a glance, unaware that the gnarled stump behind the railing is one of the few living things in Rome with a documented tie to a Renaissance poet.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Quercia_del_Tasso",
+        "https://www.turismoroma.it/en/events/poets-tree-tasso-oak-janiculum",
+        "https://www.museodiromaintrastevere.it/it/mostra-evento/la-quercia-del-tasso-la-storia-i-personaggi"
+      ],
+      "access": "Free, public. The tree stands behind a low wall along the Gianicolo walk",
+      "transport": "Bus 115 to the Gianicolo, or a steep 15 min walk up from Piazza Trilussa in Trastevere",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is legendary rather than measured: the documented link is to Tasso's era (he died 1595), when the tree was already mature, so it is at least four centuries old and possibly much more, but the 'about 1000 years' figure that circulates is tradition, not evidence. Species follows the common description of the tree as a leccio (holm oak); the sources consulted do not firmly confirm the species. The tree today is a fire-damaged, propped remnant, not a full standing tree. Exact position along the Gianicolo walk needs on-the-ground confirmation."
+    },
+    {
+      "id": "rom_002",
+      "name": "The Oriental Planes of the Valle dei Platani",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "about 400 years",
+      "age_min": 390,
+      "age_max": 420,
+      "location": {
+        "address": "Valle dei Platani, Villa Borghese, 00197 Roma",
+        "latitude": 41.9147,
+        "longitude": 12.4825,
+        "neighbourhood": "Villa Borghese, Pinciano"
+      },
+      "story": "Rome has exactly one certified stand of oriental plane, and a cardinal is to thank for it. In the early 1600s Domenico Savini da Montepulciano, head gardener to Cardinal Scipione Caffarelli Borghese, planted a row of Platanus orientalis brought from the eastern Mediterranean in what is still called the Valle dei Platani, the valley of the planes, inside Villa Borghese. Four centuries later they remain the only specimens in the capital confirmed as the true oriental species rather than the London hybrid that lines half the city's avenues. Nine of them survive in a line, trunks now broad and pale and flaking in the way old planes do, shading a quiet stretch of the park away from the crowds at the gallery. In 2021 the villa planted Adonis, a cloned sapling grown from the genetic material of the oldest tree in the row, a hedge against the day the parent finally goes. Cardinal Scipione built the villa to display power and taste, filling it with Bernini marbles and Caravaggio canvases. The paintings hang behind glass and timed tickets now. His gardener's trees still stand outside in the open air, free to anyone who walks in.",
+      "verified_sources": [
+        "https://turismoroma.it/en/news/villa-borghese-welcomes-first-clone-ancient-oriental-plane-tree",
+        "https://phys.org/news/2021-01-rome-villa-borghese-clone-17th-century.html",
+        "https://en.wikipedia.org/wiki/Villa_Borghese_gardens"
+      ],
+      "access": "Free, public park",
+      "transport": "Metro A to Flaminio or Spagna, then into Villa Borghese on foot",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age and provenance are well documented (early 17th century planting for Cardinal Scipione Borghese; only certified Platanus orientalis in Rome; Adonis clone planted 2021). Flagged only because the exact coordinates of the row within the large park are approximate and need on-the-ground confirmation."
+    },
+    {
+      "id": "rom_003",
+      "name": "The Cedar of Lebanon at Villa Doria Pamphili",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "150+ years",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Belvedere del Lago del Giglio, Villa Doria Pamphili, 00152 Roma",
+        "latitude": 41.884,
+        "longitude": 12.4485,
+        "neighbourhood": "Monteverde, Gianicolense"
+      },
+      "story": "A papal family planted cedars to outlive their own dynasty, and the cedars won. When the Pamphilj built their villa on the hill west of Trastevere, shortly after Giovanni Battista Pamphilj became Pope Innocent X in 1644, they planted cedars of Lebanon, and the choice was deliberate. A cedar outlives any human line, and a family that had just reached the papacy wanted a symbol of permanence rooted in the ground. The specimen that shades the belvedere above the Lago del Giglio is the one the city registers as a monument, roughly 30 metres tall with a trunk over four and a half metres around, and by the official reckoning about 150 years old, though the villa keeps other cedars whose lineage is traced to plantings in the 1600s. Villa Doria Pamphili is now the largest landscaped park in Rome, some 180 hectares of pine, meadow and umbrella-shaped canopy that most visitors never reach because it sits beyond the usual routes. The cedar stands above an ornamental lake with a small garden pavilion, in a corner of the park that rewards the walk out. The Pamphilj faded from power centuries ago. The tree they planted to represent it is still adding rings.",
+      "verified_sources": [
+        "https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF77018",
+        "https://ilgiardinodialisia.it/i-cedri-del-libano-a-villa-pamphilj-quanto-sono-cresciuti",
+        "https://www.associazionepervillapamphilj.it/piante/"
+      ],
+      "access": "Free, public park",
+      "transport": "Bus 870 to Villa Doria Pamphili, or a walk uphill from Trastevere and the Gianicolo",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The single officially registered monumental cedar is given as about 150 years old (roughly 30 m tall, circumference about 4.60 m); other sources describe Pamphili cedars with a lineage going back to 17th-century plantings, hence the range. Exact position of the registered specimen at the Lago del Giglio belvedere within the 180 ha park is approximate and needs confirmation."
+    },
+    {
+      "id": "rom_004",
+      "name": "The Orange Tree of Santa Sabina",
+      "species": "Bitter Orange (Citrus aurantium)",
+      "age_estimate": "descendant of a 1220 planting",
+      "age_min": 100,
+      "age_max": 300,
+      "location": {
+        "address": "Cloister of the Basilica di Santa Sabina, Piazza Pietro d'Illiria 1, 00153 Roma",
+        "latitude": 41.8843,
+        "longitude": 12.4793,
+        "neighbourhood": "Aventino"
+      },
+      "story": "You see Rome's most famous orange tree through a hole punched in a church wall. In the portico of the basilica of Santa Sabina, on the Aventine, someone long ago cut a small round opening so passers-by could look into the private cloister beyond, and what they see is an orange tree. Dominican tradition says Saint Dominic planted the first orange tree in Italy on this spot in 1220, that he prayed at its foot, and that the tree standing there now grew from the original root and still fruits. The botanical reality is that the current bitter orange is a descendant rather than the eight-hundred-year-old planting itself, but the lineage and the spot are continuous, which is rare enough. The peephole view is a genuine Roman ritual, quieter and older than the famous keyhole a few hundred metres away at the Priory of the Knights of Malta. Next door, the public Giardino degli Aranci, the garden of oranges, was laid out in 1932 and named for the same association, its terrace one of the better free views over the bend of the Tiber toward the dome of Saint Peter's. The saint's own tree stays behind the wall, visible to anyone willing to find the hole and look.",
+      "verified_sources": [
+        "https://www.roma.com/il-giardino-degli-aranci-e-lalbero-miracoloso-di-s-domenico/",
+        "https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF75539",
+        "https://www.italia.it/en/lazio/rome/giardini-degli-aranci"
+      ],
+      "access": "Free. The tree is in the private cloister, viewed through an opening in the basilica portico wall; the adjoining Giardino degli Aranci is a free public park",
+      "transport": "About 10 min walk from Circo Massimo station (Metro Line B)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The 1220 date and the Saint Dominic planting are religious tradition, and the tree now growing in the cloister is understood to be a descendant of the original rather than the 800-year-old planting. Age of the current specimen is not documented; the range is an estimate. Included for the strong historical association and the well-known peephole viewing, with the legend clearly labelled as such."
+    },
+    {
+      "id": "rom_005",
+      "name": "The Ginkgos of Villa Sciarra",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "120+ years",
+      "age_min": 110,
+      "age_max": 150,
+      "location": {
+        "address": "Viale Adolfo Leducq, Villa Sciarra, 00152 Roma",
+        "latitude": 41.8852,
+        "longitude": 12.4608,
+        "neighbourhood": "Monteverde Vecchio, Trastevere"
+      },
+      "story": "An American diplomat who bred white peacocks left Rome a pair of living fossils. Villa Sciarra, on the slope between Trastevere and Monteverde, was once known as the villa of the white peacocks, after the aviary George Wurts built to breed them. Wurts was an American diplomat and collector who, with his wife Henrietta Tower, bought the estate in the 1890s and filled it with statues, fountains and, being a keen botanist, trees from around the world. Among them, along Viale Adolfo Leducq, he planted ginkgos. Ginkgo biloba is the last survivor of a lineage that predates the dinosaurs, effectively unchanged for over 200 million years, which makes the pair here young representatives of something extraordinarily old. Each November their fan-shaped leaves turn butter yellow and drop, more or less at once, carpeting the avenue for a week. When Wurts died, Henrietta gave the villa to the Italian state in 1930 on the single condition that it be opened to the public, which it was. The peacocks are gone and the aviary stands empty, but the trees the couple planted for their own pleasure now belong to anyone who climbs the hill, and once a year they put on the loudest autumn display in this part of Rome.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Villa_Sciarra_(Rome)",
+        "https://www.alberimonumentali.info/regioni/lazio/roma/ginkgo-di-villa-sciarra",
+        "https://rivistanatura.com/villa-sciarra-e-il-fossile-vivente-di-250-milioni-di-anni-fa/"
+      ],
+      "access": "Free, public park",
+      "transport": "Bus 44 or 75 toward Monteverde, or a walk uphill from Trastevere",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The ginkgos are catalogued as monumental and tied to the Wurts ownership (estate acquired in the 1890s, donated to the state in 1930), which brackets their likely planting to roughly 120-140 years ago; no source gives an exact planting date, so the age is an estimate. Exact coordinates within the park are approximate."
+    },
+    {
+      "id": "rom_006",
+      "name": "The Stone Pines of the Pincio",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "about 200 years",
+      "age_min": 150,
+      "age_max": 200,
+      "label": "Rome's signature tree",
+      "location": {
+        "address": "Pineta near the Casino dell'Orologio, Villa Borghese / Pincio, 00187 Roma",
+        "latitude": 41.9115,
+        "longitude": 12.4835,
+        "neighbourhood": "Pincio, Villa Borghese"
+      },
+      "story": "A composer turned these pines into an orchestra. The umbrella pines that crown the Pincio terrace above Piazza del Popolo are the trees a Roman means when he simply says pine. Pinus pinea, bare trunk and flat spreading canopy, has grown in the city since antiquity and gives the skyline of Rome its particular silhouette, a species so tied to the place that it edges out any single specimen. In 1924 the composer Ottorino Respighi wrote Pini di Roma, the Pines of Rome, a four-movement tone poem that opens with children playing under the pines of the Villa Borghese and closes with a Roman legion marching up the Appian Way beneath them. The pineta thickens around the Casino dell'Orologio and the monument to Umberto I, where the older specimens are reckoned to be around two centuries old. Rome's relationship with these trees is not entirely easy. Many were planted in the same era and are ageing together, some are diseased, and the city has felled enough of them in recent years to draw public anger. For now they still line the terrace where the view opens over the domes and the sunset draws a crowd every evening, most of it facing the wrong way, cameras on the skyline, backs to the trees that frame it.",
+      "verified_sources": [
+        "https://italoamericano.org/ottorino-respighi/",
+        "https://en.wikipedia.org/wiki/Villa_Borghese_gardens",
+        "https://roma-pass.com/trees-rome/"
+      ],
+      "access": "Free, public terrace and park",
+      "transport": "Metro A to Flaminio, then up to the Pincio, or Spagna and through Villa Borghese",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "This entry is about the pineta of the Pincio as an ensemble rather than one measured specimen; individual ages are not documented tree by tree, and 'around two centuries' reflects the oldest plantings. The Respighi and skyline associations are cultural, not tied to a single tree. Coordinates point at the pine grove near the Casino dell'Orologio and are approximate."
+    },
+    {
+      "id": "rom_007",
+      "name": "The Oriental Planes of the Orto Botanico",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "350-400 years",
+      "age_min": 350,
+      "age_max": 400,
+      "location": {
+        "address": "Fountain of the Eleven Spouts, Orto Botanico, Largo Cristina di Svezia 23A, 00165 Roma",
+        "latitude": 41.8915,
+        "longitude": 12.4623,
+        "neighbourhood": "Trastevere, Gianicolo"
+      },
+      "story": "Two planes older than the garden around them guard a baroque fountain. Rome's botanical garden occupies the old grounds of Palazzo Corsini on the lower slope of the Gianicolo, a space that served as the private garden of Queen Christina of Sweden after she abdicated her throne and settled in Rome in 1659. Two oriental planes stand on either side of the Fountain of the Eleven Spouts, the baroque cascade designed by Ferdinando Fuga in 1742, and both trees are older than the fountain they frame, credited with somewhere between 350 and 400 years. They predate the garden's scientific use entirely, survivors from the aristocratic pleasure grounds that came before. The Orto Botanico became a teaching collection in 1883 and now holds more than 300 ultracentenarian trees across twelve hectares, including cork oaks, Turkey oaks and Himalayan cedars, but the pair of planes by the staircase are the ones people stop at, trunks now so wide that two adults cannot reach around them. Unlike most of Rome's monumental trees, scattered across parks a bus ride apart, these grow in a garden with a ticket desk and a map, which means their age and species are documented rather than guessed. Five euros gets you in, and the planes are a short walk uphill from the gate.",
+      "verified_sources": [
+        "https://ortobotanico.web.uniroma1.it/en/monumental-trees",
+        "https://www.ortobotanicoitalia.it/lazio/romalasapienza/",
+        "https://www.turismoroma.it/en/places/botanical-garden-rome"
+      ],
+      "access": "Paid entry to the Orto Botanico (about 5 euros; reduced about 4 euros)",
+      "transport": "Bus 23 or 280 along Lungotevere, then a short walk into Trastevere; nearest gate at Largo Cristina di Svezia",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "rom_008",
+      "name": "The Ombú of the Campidoglio",
+      "species": "Ombú (Phytolacca dioica)",
+      "age_estimate": "about 115 years",
+      "age_min": 110,
+      "age_max": 118,
+      "label": "Living memorial",
+      "location": {
+        "address": "Cordonata Capitolina, near the statue of Cola di Rienzo, Piazza d'Aracoeli, 00186 Roma",
+        "latitude": 41.8933,
+        "longitude": 12.4824,
+        "neighbourhood": "Campitelli, Capitoline Hill"
+      },
+      "story": "A South American giant grows halfway up Michelangelo's staircase. On the Cordonata, the wide ramped stairway Michelangelo designed to climb the Capitoline Hill, an unlikely tree leans out over the balustrade near the statue of Cola di Rienzo. It is a Phytolacca dioica, the ombú, a South American species that is not really a tree at all but a giant herb with a swollen, soft, water-storing trunk that can spread enormously wide while staying light enough to topple in a storm. Prince Baldassarre Ladislao Odescalchi planted it around 1911, the year Italy marked fifty years of unification, as a nod to the many Italians who had emigrated across the Atlantic to Argentina, where the ombú is an emblem of the pampas. It has become one of the most photographed trees in central Rome by pure position, framing the ascent to Piazza del Campidoglio with the white bulk of the Vittoriano behind it. The ombú's wood is so soft and spongy that it has no value as timber, which is part of why the species grows fast and lives as an ornament rather than a resource. Tens of thousands of people climb past it every day on their way to the Capitoline Museums, most assuming it is simply an old Roman tree, unaware it is a deliberate memorial to a wave of Italians who left.",
+      "verified_sources": [
+        "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1110626",
+        "https://www.vistanet.it/roma/2023/11/21/roma-una-passeggiata-tra-gli-alberi-secolari-della-citta/",
+        "https://www.museodiroma.it/it/opera/cordonata-del-campidoglio"
+      ],
+      "access": "Free, public. On the Capitoline approach stairway",
+      "transport": "Short walk from Piazza Venezia; many bus lines stop there",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Sources agree the specimen was planted by Baldassarre Ladislao Odescalchi in the early 1900s, most citing 1911 for the 50th anniversary of Italian unification, in memory of Italian emigrants to Argentina. Some accounts mention more than one Odescalchi ombú in the area; this entry describes the one on the Cordonata near the Cola di Rienzo statue. Age is derived from the planting date."
+    },
+    {
+      "id": "rom_009",
+      "name": "The Holm Oak of Viale del Lago",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "200-300 years",
+      "age_min": 200,
+      "age_max": 300,
+      "location": {
+        "address": "Viale del Lago (Giardino del Lago), Villa Borghese, 00197 Roma",
+        "latitude": 41.915,
+        "longitude": 12.4833,
+        "neighbourhood": "Villa Borghese, Pinciano"
+      },
+      "story": "One oak in Villa Borghese was old before the park became a park. Most of Villa Borghese as visitors see it, the lake, the temple, the winding paths, is a landscaped English-style garden laid out in the late 1700s. One holm oak on the viale del Lago is older than all of it, a survivor from the earlier formal grounds, and it is counted among the oldest living things in the park, catalogued by the city as a natural monument alongside the nearby cedar of Lebanon and the valley of oriental planes. Quercus ilex, the evergreen oak, holds its dark leaves all year and grows slowly into dense, heavy-limbed forms, which is why the old ones read as solid and permanent in a way deciduous trees do not. Villa Borghese is a reminder that permanence is relative. In 2020 the Quercia del Lupo, another of the park's monumental oaks and reckoned to be around 500 years old, simply collapsed one day, its trunk hollowed out by decay and by beetles that have been working through the villa's holm oaks for years. The survivor on the viale del Lago stands in that context now, an old tree in a park that has learned its old trees are not guaranteed. It shades a bench most people walk straight past.",
+      "verified_sources": [
+        "https://www.romatoday.it/attualita/villa-borghese-crollata-quercia-del-lupo-albero-monumentale.html",
+        "https://en.wikipedia.org/wiki/Villa_Borghese_gardens",
+        "https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF75656"
+      ],
+      "access": "Free, public park",
+      "transport": "Metro A to Spagna or Flaminio, then into Villa Borghese toward the Giardino del Lago",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Documented as one of the oldest trees in Villa Borghese and catalogued with the cedar and the plane valley as a natural monument, but no source gives a precise age for this specific leccio; the 200-300 year range is an estimate framed by the late-18th-century redesign it predates. The collapse of the roughly 500-year-old Quercia del Lupo in 2020 is well reported. Exact coordinates within the park are approximate."
+    },
+    {
+      "id": "rom_010",
+      "name": "The Aleppo Pine of Villa Celimontana",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "150-200 years",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Viale Cardinale Francesco Spellman, Villa Celimontana, near Piazza SS. Giovanni e Paolo, 00184 Roma",
+        "latitude": 41.8853,
+        "longitude": 12.4923,
+        "neighbourhood": "Celio"
+      },
+      "story": "A pine and a cedar guard the entrance to a garden built around an Egyptian obelisk. On the Celian Hill, a few minutes from the Colosseum, Villa Celimontana holds two of Rome's registered monumental trees a short walk apart on Viale Cardinale Spellman, near the entrance from Piazza Santi Giovanni e Paolo. One is a cedar of Lebanon. The other, the rarer sight, is an Aleppo pine, Pinus halepensis, a Mediterranean species that tolerates poor dry soil and grows into a leaning, irregular crown quite unlike the tidy umbrella of Rome's stone pines. The garden around them began in 1572, when the nobleman and collector Ciriaco Mattei turned a vineyard on the hill into a park of statues, fountains and rare plants, and had an ancient Egyptian obelisk of Ramesses the Second installed as its centrepiece, a genuine pharaonic monument that had already spent centuries elsewhere in the city. The Mattei kept the villa into the nineteenth century, and the park opened to the public in 1928. Today it is a favourite of people who live nearby and a summer jazz venue, still full of exotic species its owners collected, including a metasequoia of a kind thought extinct until living trees were found in China in the 1940s. The Aleppo pine near the gate has watched the whole four-century experiment from one spot.",
+      "verified_sources": [
+        "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1434367",
+        "https://www.turismoroma.it/en/places/villa-celimontana",
+        "https://it.wikipedia.org/wiki/Obelisco_di_Villa_Celimontana"
+      ],
+      "access": "Free, public park",
+      "transport": "Metro B to Colosseo or Circo Massimo, then a short walk up the Celio",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Confirmed as one of two registered monumental trees in Villa Celimontana (with a cedar of Lebanon) on Viale Cardinale Spellman near the Piazza SS. Giovanni e Paolo entrance. No source consulted gives a precise age for the Aleppo pine, so the 150-200 year range is an estimate. Exact coordinates within the park are approximate."
+    }
+  ]
+}
