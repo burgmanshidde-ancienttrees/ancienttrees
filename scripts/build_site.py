@@ -63,6 +63,13 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .bar-logo { font-family: var(--serif); font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); text-decoration: none; }
 .bar-links a { font-size: 13px; color: var(--ink-mid); text-decoration: none; margin-left: 1.25rem; }
 .bar-links a:hover { color: var(--moss); }
+.bar-links a.bar-cta { color: var(--moss); font-weight: 500; border: 1px solid var(--moss); border-radius: 3px; padding: 0.35rem 0.7rem; }
+.bar-links a.bar-cta:hover { background: var(--moss); color: #fff; }
+.city-card.soon:hover { opacity: 1; border-top-color: var(--moss); }
+.city-card-cta { font-size: 12px; color: var(--moss); font-weight: 500; margin-top: 0.35rem; }
+.path { border: 1px solid var(--cream-dark); border-radius: 6px; padding: 1.4rem 1.6rem; margin: 1.25rem 0; }
+.path h2 { margin-top: 0; }
+.path .go-btn { margin-top: 0.75rem; }
 
 /* ---- City page: split layout, map is the stage ---- */
 .split { display: flex; height: 100vh; padding-top: var(--header-h); }
@@ -197,7 +204,7 @@ PAGE_SHELL = """<!DOCTYPE html>
     <a href="%%ROOTPATH%%#cities">Cities</a>
     <a href="%%ROOTPATH%%species">Species</a>
     <a href="%%ROOTPATH%%collections">Collections</a>
-    <a href="%%ROOTPATH%%contribute">Add a tree</a>
+    <a href="%%ROOTPATH%%contribute" class="bar-cta">Map your city</a>
   </nav>
 </header>
 %%BODY%%
@@ -1124,21 +1131,30 @@ def build_contribute_page(published, pages):
     submission verifiable, because unverifiable ones cannot be published."""
     canonical = f"{BASE_URL}/contribute"
     rootpath = "./"
-    title = fit_title(["Add a Tree: Put Your City on the Map",
-                       "Add a Tree to Ancient Trees"], canonical)
-    description = ("Know a remarkable old tree we are missing? Send it in. Every "
-                   "submission is checked against independent sources before it goes live.")
-    crumb_items = [("Home", BASE_URL), ("Add a tree", None)]
+    title = fit_title(["Become Your City's Tree Guide",
+                       "Map Your City's Ancient Trees"], canonical)
+    description = ("Know the remarkable old trees of your city? Put them on the map. "
+                   "Every submission is verified against independent sources before it goes live.")
+    crumb_items = [("Home", BASE_URL), ("Map your city", None)]
 
-    subject = "Tree submission"
-    template = (
+    city_subject = "I want to map my city"
+    city_template = (
+        "Which city?%0D%0A%0D%0A"
+        "The trees you would put on its list (as many as you know, a name and rough location each is plenty):%0D%0A"
+        "1.%0D%0A2.%0D%0A3.%0D%0A%0D%0A"
+        "Anything that makes this city's trees particular? (a species that thrives here, a park, a local habit)%0D%0A%0D%0A"
+        "How do you know the city? (you live there, you grew up there, you walk it often)%0D%0A%0D%0A"
+        "Your name, for the credit:%0D%0A"
+    )
+    tree_subject = "A tree you are missing"
+    tree_template = (
         "Tree name or description:%0D%0A%0D%0A"
         "City:%0D%0A%0D%0A"
         "Where exactly is it? (street, park, or a Google Maps link, the more precise the better)%0D%0A%0D%0A"
         "Why is it remarkable? (age, size, story, anything you know)%0D%0A%0D%0A"
         "How do you know about it? (link, book, local knowledge)%0D%0A%0D%0A"
-        "Photo: attach it if you have one you took yourself%0D%0A%0D%0A"
-        "Your name (so we can credit you):%0D%0A"
+        "Photo: attach it if you took it yourself%0D%0A%0D%0A"
+        "Your name, for the credit:%0D%0A"
     )
 
     city_links = " &middot; ".join(
@@ -1148,20 +1164,33 @@ def build_contribute_page(published, pages):
     body = f"""
 <main class="content-page">
   {breadcrumb_html(crumb_items, rootpath)}
-  <h1>Add a tree</h1>
-  <p class="answer-first">If you know a remarkable old tree that is not on this map, send it in and it will be researched, verified and written up. You do not need to write anything polished. A name and a location is enough to start.</p>
+  <h1>Become your city's tree guide</h1>
+  <p class="answer-first">This map is missing far more cities than it has, and the trees that matter most are the ones locals already know about. If you know your city's remarkable old trees, you can put them on the map and be credited for it.</p>
   <div class="prose-block">
-    <p>This map is built city by city, and the gaps are real: a tree that everyone in a neighbourhood knows about can be invisible to research from a distance. Locals find what desk research misses. That is where you come in.</p>
-    <p>Every submission is checked against independent sources before anything is published, and the location is verified, because a wrong pin is worse than a missing tree. If we can confirm it, your tree gets its own page and you get credited. If we cannot confirm it yet, it waits rather than going live half-true.</p>
+    <p>Research from a distance finds the famous trees. It misses the one on the corner that everyone in the neighbourhood walks past, the one with the story attached, the one that is only obvious if you live there. That gap is why this page exists.</p>
+    <p>Everything sent in gets checked against independent sources, and the location gets verified, because a wrong pin is worse than a missing tree. Confirmed trees get their own page with your credit on the city. What cannot be confirmed waits instead of going live half-true. To be straight with you about what you get: your name on the city you mapped, not a login or a profile. Those may come later.</p>
   </div>
+
+  <div class="path">
+    <h2>Map your whole city</h2>
+    <p class="prose-block">The big one. Tell us which city and which trees belong on its list. You do not need ten, and you do not need to write anything polished. Names and rough locations are enough; the research, the checking and the writing happen here.</p>
+    <a class="go-btn" href="mailto:{CONTACT}?subject={city_subject}&amp;body={city_template}">Map my city</a>
+  </div>
+
+  <div class="path">
+    <h2>Or just one tree</h2>
+    <p class="prose-block">Saw something remarkable and know roughly where it stands? That is enough. One tree in a city we have never touched is often the thing that starts it.</p>
+    <a class="go-btn" href="mailto:{CONTACT}?subject={tree_subject}&amp;body={tree_template}">Send one tree</a>
+  </div>
+
   <h2>What helps most</h2>
   <ul class="link-list">
-    <li><strong>Where exactly it stands.</strong> A street corner, a park entrance, or a dropped pin from Google Maps. This is the single most useful thing you can give us.</li>
-    <li><strong>Why it is remarkable.</strong> Old, enormous, strange, or tied to a local story. Anything you know.</li>
+    <li><strong>Where exactly it stands.</strong> A street corner, a park entrance, or a dropped pin from Google Maps. The single most useful thing you can give us.</li>
+    <li><strong>Why it is remarkable.</strong> Old, enormous, strange, or tied to a local story.</li>
     <li><strong>How you know.</strong> A link, a book, a plaque, or just that you grew up next to it.</li>
     <li><strong>A photo you took yourself,</strong> if you have one. We can only publish photos that are yours to share or openly licensed.</li>
   </ul>
-  <div class="cta"><a class="go-btn" href="mailto:{CONTACT}?subject={subject}&amp;body={template}">Send us a tree</a><br>This opens your mail app with the questions already filled in. Answer what you can and leave the rest.</div>
+
   <h2>Or fix something</h2>
   <div class="prose-block">
     <p>Spotted a wrong location, an age that looks off, or a tree that has fallen since we wrote about it? Those corrections are just as valuable. Mail <a href="mailto:{CONTACT}">{CONTACT}</a> and say what is wrong.</p>
@@ -1199,10 +1228,11 @@ def build_homepage(published, upcoming, collections, pages):
         for p in published
     )
     soon_cards = "".join(
-        f"""<div class="city-card soon">
+        f"""<a class="city-card soon" href="contribute">
       <div class="city-card-name">{esc(c['city'])}</div>
-      <div class="city-card-meta">{esc(c['country'])} &middot; coming soon</div>
-    </div>"""
+      <div class="city-card-meta">{esc(c['country'])} &middot; not mapped yet</div>
+      <div class="city-card-cta">Be the first to map it</div>
+    </a>"""
         for c in upcoming
     )
 
