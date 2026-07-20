@@ -2,14 +2,15 @@ name: Nightly city research
 
 on:
   schedule:
-    # Three runs a day, spaced exactly 5 hours apart so each one starts as the
-    # previous Claude Pro 5-hour usage window rolls off. Times are UTC; in
-    # Amsterdam summer time that is 22:00, 03:00 and 08:00 (an hour earlier in winter).
-    # Runs share Hidde's subscription, so a run may fail if he has been working
-    # heavily. That is fine: the city simply moves to the next slot.
-    - cron: "0 20 * * *"
-    - cron: "0 1 * * *"
-    - cron: "0 6 * * *"
+    # Hourly through the night: 20:00-03:00 UTC is 22:00-05:00 Amsterdam in
+    # summer (an hour earlier in winter). These runs share Hidde's Claude Pro
+    # subscription, which has a rolling 5-hour usage window, so most of these
+    # attempts will hit the limit and stop after one turn. That is the design:
+    # a failed attempt costs almost nothing, so knocking hourly lets the work
+    # through whenever the window has room, and covers for GitHub's habit of
+    # delaying or skipping scheduled triggers. Concurrency below stops overlap.
+    - cron: "0 20-23 * * *"
+    - cron: "0 0-3 * * *"
   workflow_dispatch: {}
 
 permissions:

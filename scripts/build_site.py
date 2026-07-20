@@ -114,6 +114,11 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .tree-photo { margin: 1.5rem 0; }
 .tree-photo img { width: 100%; display: block; border-radius: 4px; }
 .tree-photo figcaption { font-size: 11px; color: var(--ink-light); margin-top: 0.45rem; }
+.go-btn { display: inline-block; background: var(--moss); color: #fff; text-decoration: none; font-size: 14px; font-weight: 500; padding: 0.7rem 1.25rem; border-radius: 4px; margin: 0.25rem 0 0.5rem; }
+.go-btn:hover { background: #2f4717; }
+.go-note { font-size: 12px; color: var(--ink-light); margin-bottom: 1.5rem; }
+.take-with-you { background: var(--cream-dark); border-radius: 4px; padding: 1.1rem 1.4rem; margin: 1.5rem 0; font-size: 13px; }
+.take-with-you a { font-weight: 500; }
 .map-embed { position: relative; height: 340px; border-radius: 4px; overflow: hidden; margin: 1.75rem 0; border: 1px solid var(--cream-dark); }
 .map-embed .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 .faq dt { font-weight: 500; font-size: 15px; margin-top: 1.25rem; }
@@ -192,6 +197,7 @@ PAGE_SHELL = """<!DOCTYPE html>
     <a href="%%ROOTPATH%%#cities">Cities</a>
     <a href="%%ROOTPATH%%species">Species</a>
     <a href="%%ROOTPATH%%collections">Collections</a>
+    <a href="%%ROOTPATH%%contribute">Add a tree</a>
   </nav>
 </header>
 %%BODY%%
@@ -587,6 +593,8 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pag
   {facts}
   <div class="prose-block"><p>{esc(tree['story'])}</p></div>
   <div class="map-embed"><div id="map" class="map"></div></div>
+  <a class="go-btn" href="https://www.google.com/maps/dir/?api=1&amp;destination={loc['latitude']},{loc['longitude']}" target="_blank" rel="noopener">Take me there</a>
+  <p class="go-note">Opens directions in your maps app. {esc(tree.get('transport', ''))}</p>
   <h2>Trees nearby</h2>
   <ul class="link-list">{nearby_html}</ul>
   <div class="cta">Curious what else is standing in {esc(city)}? See <a href="../{cslug}">all 10 remarkable ancient trees in {esc(city)}</a> or find out <a href="oldest-tree">what the oldest tree in {esc(city)} is</a>.{species_line}</div>
@@ -777,6 +785,9 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
 
     panel_foot = f"""
     <div class="panel-foot">
+      <div class="take-with-you">
+        <strong>Going there?</strong> <a href="{slug}.gpx" download>Download all {len(trees)} trees</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
+      </div>
       <h2>Frequently asked</h2>
       <dl class="faq">
         {faq_html}
@@ -918,6 +929,34 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages):
     page = render_page(title, description, canonical, body, head_extra, "", rootpath)
     pages.append((f"collections/{slug}.html", page, canonical))
     return canonical
+
+
+def build_city_gpx(entry, trees, pages):
+    """One waypoint per tree, loadable in any maps or hiking app.
+
+    This is what turns the page into something you can carry: the whole city's
+    trees on your phone, working offline, no app install.
+    """
+    city = entry["data"]["city"]
+    slug = entry["slug"]
+    pts = []
+    for t in trees:
+        loc = t["location"]
+        desc = f"{t.get('species', '')}. {t.get('age_estimate', '')}. {t.get('access', '')}"
+        pts.append(
+            f'  <wpt lat="{loc["latitude"]}" lon="{loc["longitude"]}">\n'
+            f'    <name>{esc(t["name"])}</name>\n'
+            f'    <desc>{esc(desc.strip())}</desc>\n'
+            f'  </wpt>'
+        )
+    gpx = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<gpx version="1.1" creator="Ancient Trees" xmlns="http://www.topografix.com/GPX/1/1">\n'
+        f'  <metadata><name>Ancient Trees in {esc(city)}</name>'
+        f'<link href="{BASE_URL}/{slug}"><text>ancienttrees.app</text></link></metadata>\n'
+        + "\n".join(pts) + "\n</gpx>\n"
+    )
+    pages.append((f"{slug}.gpx", gpx, None))
 
 
 def build_species_page(intro_data, members, tree_slugs, published, pages):
@@ -1077,6 +1116,63 @@ def build_collections_index(collections, published, pages):
     head_extra = ld_script(graph)
     page = render_page(title, description, canonical, body, head_extra, "", rootpath)
     pages.append(("collections.html", page, canonical))
+
+
+def build_contribute_page(published, pages):
+    """The flywheel's front door: readers send trees, the nightly run verifies
+    and writes them up. Deliberately asks for the few things that make a
+    submission verifiable, because unverifiable ones cannot be published."""
+    canonical = f"{BASE_URL}/contribute"
+    rootpath = "./"
+    title = fit_title(["Add a Tree: Put Your City on the Map",
+                       "Add a Tree to Ancient Trees"], canonical)
+    description = ("Know a remarkable old tree we are missing? Send it in. Every "
+                   "submission is checked against independent sources before it goes live.")
+    crumb_items = [("Home", BASE_URL), ("Add a tree", None)]
+
+    subject = "Tree submission"
+    template = (
+        "Tree name or description:%0D%0A%0D%0A"
+        "City:%0D%0A%0D%0A"
+        "Where exactly is it? (street, park, or a Google Maps link, the more precise the better)%0D%0A%0D%0A"
+        "Why is it remarkable? (age, size, story, anything you know)%0D%0A%0D%0A"
+        "How do you know about it? (link, book, local knowledge)%0D%0A%0D%0A"
+        "Photo: attach it if you have one you took yourself%0D%0A%0D%0A"
+        "Your name (so we can credit you):%0D%0A"
+    )
+
+    city_links = " &middot; ".join(
+        f'<a href="{p["slug"]}">{esc(p["city"])}</a>' for p in published
+    )
+
+    body = f"""
+<main class="content-page">
+  {breadcrumb_html(crumb_items, rootpath)}
+  <h1>Add a tree</h1>
+  <p class="answer-first">If you know a remarkable old tree that is not on this map, send it in and it will be researched, verified and written up. You do not need to write anything polished. A name and a location is enough to start.</p>
+  <div class="prose-block">
+    <p>This map is built city by city, and the gaps are real: a tree that everyone in a neighbourhood knows about can be invisible to research from a distance. Locals find what desk research misses. That is where you come in.</p>
+    <p>Every submission is checked against independent sources before anything is published, and the location is verified, because a wrong pin is worse than a missing tree. If we can confirm it, your tree gets its own page and you get credited. If we cannot confirm it yet, it waits rather than going live half-true.</p>
+  </div>
+  <h2>What helps most</h2>
+  <ul class="link-list">
+    <li><strong>Where exactly it stands.</strong> A street corner, a park entrance, or a dropped pin from Google Maps. This is the single most useful thing you can give us.</li>
+    <li><strong>Why it is remarkable.</strong> Old, enormous, strange, or tied to a local story. Anything you know.</li>
+    <li><strong>How you know.</strong> A link, a book, a plaque, or just that you grew up next to it.</li>
+    <li><strong>A photo you took yourself,</strong> if you have one. We can only publish photos that are yours to share or openly licensed.</li>
+  </ul>
+  <div class="cta"><a class="go-btn" href="mailto:{CONTACT}?subject={subject}&amp;body={template}">Send us a tree</a><br>This opens your mail app with the questions already filled in. Answer what you can and leave the rest.</div>
+  <h2>Or fix something</h2>
+  <div class="prose-block">
+    <p>Spotted a wrong location, an age that looks off, or a tree that has fallen since we wrote about it? Those corrections are just as valuable. Mail <a href="mailto:{CONTACT}">{CONTACT}</a> and say what is wrong.</p>
+  </div>
+  <p class="suggest">Cities on the map so far: {city_links}</p>
+</main>
+"""
+    graph = site_graph() + [breadcrumb_schema(crumb_items)]
+    head_extra = ld_script(graph)
+    page = render_page(title, description, canonical, body, head_extra, "", rootpath)
+    pages.append(("contribute.html", page, canonical))
 
 
 # ----------------------------------------------------------------- homepage
@@ -1244,6 +1340,7 @@ def main():
             {"slug": e["slug"], "city": e["data"]["city"]}
             for e in renderable if e["slug"] != entry["slug"]
         ]
+        build_city_gpx(entry, trees, pages)
         result = build_city_page(entry, tree_slugs, collections, pages, other_cities)
         if result:
             published.append(result)
@@ -1261,6 +1358,7 @@ def main():
     if species_cards:
         build_species_index(species_cards, published, pages)
 
+    build_contribute_page(published, pages)
     build_homepage(published, upcoming, collections, pages)
     build_redirects(published, pages)
     validate_internal_links(pages)
