@@ -27,6 +27,7 @@ import math
 import re
 import shutil
 import sys
+import unicodedata
 from datetime import date
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -219,6 +220,7 @@ def slugify(name):
     s = name.lower().replace("'", "").replace("’", "")
     if s.startswith("the "):
         s = s[4:]
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
     return s
 

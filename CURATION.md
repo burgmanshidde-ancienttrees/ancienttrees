@@ -2,6 +2,24 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-20 — Lisbon (full research run, nightly workflow)
+
+- 10 trees researched from scratch and written to `data/cities/lisbon.json`. Portugal has a national legal registry for "árvores de interesse público" (trees of public interest, Law 53/2012, run by ICNF), which made sourcing unusually solid for several of these compared to earlier cities.
+- 6 flagged, for source or precision reasons, never for doubt about a tree's existence:
+  - **Ajuda Dragon Tree**: age genuinely disputed, 258 years (documented transplant date, 1768) vs 400 years (popular rounding assuming an earlier undocumented origin). Presented as a range.
+  - **Cypress of Príncipe Real**: Portuguese press/heritage consensus says ~150 years; monumentaltrees.com (checked for verification only, per the hard rule) states it was planted around 1740, implying ~285 years. Unresolved; went with the more corroborated figure.
+  - **Ombú of Largo do Limoeiro**: most sources say 100 years, but a local history blog shows the tree already mature in 1910 municipal archive photos, implying closer to 115.
+  - **Nettle Tree of Avenida de Berlim**: exact position at the avenue junction and the nearest metro walk time are approximate, need on-the-ground confirmation.
+  - **Ginkgo of Praça Paiva Couceiro**: no source gives a precise planting date, only "over a century."
+  - **Paineira of Jardim Alfredo Keil**: this specimen is one of six trees individually classified within a nine-tree ensemble registered together in 2017; no source dates this one tree specifically.
+- 1 tree, **The Giant Rubber Tree of Mouraria**, is included despite being young (est. under 40 years) and having no official classification: a rubber fig that escaped a broken pot and grew between two building facades, a genuine local landmark by the "visually spectacular" qualifying criterion in CLAUDE.md rather than age. Labelled "Urban curiosity" on the city page so visitors know what to expect, same pattern as London's "Fallen monument" label.
+- 3 photos found on Wikimedia Commons with valid open licenses, all marked found_needs_check for your approval: Ajuda Dragon Tree (CC BY 4.0, Dguendel), Cypress of Príncipe Real (CC BY-SA 3.0, Alatryste), Ombú of Largo do Limoeiro (CC BY 2.0, kenward).
+- 7 photos missing, none found on Wikimedia Commons after searching.
+- Two candidate trees were dropped for being outside Lisbon municipality: the ~2,850-year-old olive tree of Santa Iria de Azóia is in Loures, and the "Whistler Tree" cork oak is in Palmela (Alentejo), both roughly 30+ minutes outside city limits and not part of the "100 cities" scope.
+- Two more candidates were dropped for access uncertainty rather than fact quality: a 364-year-old plane tree at Hospital Pulido Valente (would be Lisbon's second oldest tree, but public access to the hospital garden could not be confirmed) and two dragon trees in Carnide/Olivais on plots that may now be private residential land. Worth a follow-up in a future improvement round if public access can be verified on the ground.
+- No superlative claims beyond city-level ones ("oldest tree in Lisbon") checked against other published city pages; none conflict.
+- Suggested follow-up: the ICNF's national registry of trees of public interest (dados.gov.pt, "Arvoredo de Interesse Público") likely has exact coordinates and possibly precise ages for every classified tree in Lisbon; direct fetches of the dataset and of monumentaltrees.com's Lisbon pages were blocked (403) this run. A future pass with direct access to either could resolve most of the flagged age uncertainties above.
+
 ## 2026-07-19 — Species pages (new Contract F, blueprint v1.1)
 
 - Blueprint bumped to v1.1 with your approval: new Contract F for species pages, a semi-automated browse facet. Auto-generated tree list, hand-written intro, publish-gated at 3+ trees plus an intro so nothing thin ships.
