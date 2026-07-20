@@ -9,11 +9,11 @@ on:
     # whenever the window has room, and covers for GitHub's habit of delaying
     # or skipping scheduled triggers. Concurrency below stops overlap.
     #
-    # Trade-off Hidde accepted: with no protected hours, a run can claim the
-    # allowance shortly before he sits down to work. To carve out a working
-    # block, replace this with ranges, e.g. "0 18-23 * * *" + "0 0-9 * * *"
-    # to leave 10:00-18:00 UTC free.
-    - cron: "0 * * * *"
+    # Hidde's working block (10:00-21:00 Amsterdam) is deliberately left free so
+    # the machine never claims the allowance right before he sits down to work.
+    # 19:00-07:00 UTC is 21:00-09:00 Amsterdam in summer, an hour earlier in winter.
+    - cron: "0 19-23 * * *"
+    - cron: "0 0-7 * * *"
   workflow_dispatch: {}
 
 permissions:
