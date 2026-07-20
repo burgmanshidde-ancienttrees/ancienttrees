@@ -39,6 +39,11 @@ BASE_URL = "https://ancienttrees.app"
 CUSTOM_DOMAIN = "ancienttrees.app"
 CONTACT = "hello@ancienttrees.app"
 
+# Paste the public submission form URL here (Tally, Google Forms, anything) and
+# every contribution button on the site switches from a prefilled mailto to the
+# form. Left empty, the site falls back to mailto so nothing is ever a dead end.
+SUBMISSION_FORM_URL = ""
+
 MAPLIBRE_JS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"
 MAPLIBRE_CSS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
 # OpenFreeMap: free vector tiles, no API key, commercial use permitted
@@ -94,11 +99,14 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .tree-num { font-family: var(--serif); font-size: 1.1rem; color: var(--moss); flex-shrink: 0; width: 1.4rem; }
 .tree-name { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; line-height: 1.25; }
 .tree-label { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mid); background: var(--cream-dark); border-radius: 2px; padding: 0.15rem 0.45rem; margin-left: 0.6rem; vertical-align: middle; white-space: nowrap; }
-.tree-meta { font-size: 12px; color: var(--ink-light); margin: 0 0 0.85rem 2.15rem; }
-.tree-story { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 0.85rem 2.15rem; }
-.tree-practical { font-size: 12px; color: var(--ink-light); margin-left: 2.15rem; }
-.tree-practical span { display: block; margin-bottom: 0.2rem; }
-.tree-more { font-size: 13px; margin: 0.6rem 0 0 2.15rem; }
+.tree-meta { font-size: 12px; color: var(--ink-light); margin: 0 0 0.6rem 2.15rem; }
+/* Overview shows a teaser; the full story lives on the tree page. The whole
+   text stays in the HTML so crawlers and AI engines still read it. */
+.tree-story { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 0.7rem 2.15rem;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.tree-more { font-size: 13px; font-weight: 500; margin: 0 0 0 2.15rem; }
+.tree-more a { text-decoration: none; }
+.tree-more a:hover { text-decoration: underline; }
 .panel-foot { padding: 1.75rem; font-size: 13px; color: var(--ink-mid); }
 .panel-foot h2 { font-family: var(--serif); font-size: 1.25rem; font-weight: 400; margin-bottom: 0.75rem; }
 .panel-foot dt { font-weight: 500; margin-top: 1rem; }
@@ -133,6 +141,14 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .cta { background: var(--moss-light); border-left: 3px solid var(--moss); padding: 1.1rem 1.4rem; border-radius: 0 4px 4px 0; margin: 2rem 0; font-size: 14px; }
 .entry { margin-bottom: 1.6rem; }
 .entry p { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin-top: 0.25rem; }
+/* Image first, text second: a thumbnail leads the row where a photo exists. */
+.entry.has-thumb { display: grid; grid-template-columns: 96px 1fr; gap: 1rem; align-items: start; }
+.entry-thumb { border-radius: 6px; overflow: hidden; aspect-ratio: 1 / 1; background: var(--cream-dark); }
+.entry-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.entry-body h3 { margin-top: 0; }
+@media (max-width: 800px) {
+  .entry.has-thumb { grid-template-columns: 72px 1fr; gap: 0.8rem; }
+}
 .suggest { font-size: 13px; color: var(--ink-light); border-top: 1px solid var(--cream-dark); padding-top: 1.25rem; margin-top: 2.5rem; }
 ul.link-list { list-style: none; }
 ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
@@ -170,7 +186,23 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
 @media (max-width: 800px) {
   .split { flex-direction: column-reverse; height: auto; }
   .panel { width: 100%; max-width: none; height: auto; overflow: visible; border-right: none; }
-  .stage { position: sticky; top: var(--header-h); height: 46vh; min-height: 300px; z-index: 5; }
+  /* Smaller map on phones: the list is what people scan, the map is context. */
+  .stage { position: sticky; top: var(--header-h); height: 32vh; min-height: 200px; z-index: 5; }
+  .tree-card { padding: 1.25rem 1.1rem; }
+  .tree-meta, .tree-story, .tree-more { margin-left: 0; }
+  .tree-card-photo { aspect-ratio: 16 / 10; }
+  .bar-links a { margin-left: 0.7rem; font-size: 12px; }
+  .bar-links a.bar-cta { padding: 0.3rem 0.5rem; }
+  /* Keep the bar on one line on phones: secondary links stay reachable from
+     the homepage and from the pages themselves. */
+  header.bar { flex-wrap: nowrap; padding: 0 1rem; }
+  .bar-logo { font-size: 12px; white-space: nowrap; }
+  .bar-links { display: flex; align-items: center; white-space: nowrap; }
+  .bar-links a.bar-secondary { display: none; }
+  /* Get to the trees faster: the intro is still fully in the HTML. */
+  .panel-head .lede { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .panel-head { padding: 1.25rem 1.1rem 1rem; }
+  .panel-head h1 { font-size: 1.6rem; }
   .home-hero { height: 60vh; }
   .hero-overlay { left: 1rem; right: 1rem; top: 1rem; max-width: none; padding: 1.25rem 1.5rem; }
   .page { padding: 2rem 1.5rem; }
@@ -202,8 +234,8 @@ PAGE_SHELL = """<!DOCTYPE html>
   <a href="%%ROOTPATH%%" class="bar-logo">Ancient Trees</a>
   <nav class="bar-links">
     <a href="%%ROOTPATH%%#cities">Cities</a>
-    <a href="%%ROOTPATH%%species">Species</a>
-    <a href="%%ROOTPATH%%collections">Collections</a>
+    <a href="%%ROOTPATH%%species" class="bar-secondary">Species</a>
+    <a href="%%ROOTPATH%%collections" class="bar-secondary">Collections</a>
     <a href="%%ROOTPATH%%contribute" class="bar-cta">Map your city</a>
   </nav>
 </header>
@@ -458,6 +490,47 @@ def tree_is_renderable(tree):
     return bool(tree.get("story")) and loc.get("latitude") is not None and loc.get("longitude") is not None
 
 
+SUBMIT_TEMPLATES = {
+    "city": (
+        "I want to map my city",
+        "Which city?%0D%0A%0D%0A"
+        "The trees you would put on its list (as many as you know, a name and rough location each is plenty):%0D%0A"
+        "1.%0D%0A2.%0D%0A3.%0D%0A%0D%0A"
+        "Anything that makes this city's trees particular? (a species that thrives here, a park, a local habit)%0D%0A%0D%0A"
+        "How do you know the city? (you live there, you grew up there, you walk it often)%0D%0A%0D%0A"
+        "Your name, for the credit:%0D%0A",
+    ),
+    "tree": (
+        "A tree you are missing",
+        "Tree name or description:%0D%0A%0D%0A"
+        "City:%0D%0A%0D%0A"
+        "Where exactly is it? (street, park, or a Google Maps link, the more precise the better)%0D%0A%0D%0A"
+        "Why is it remarkable? (age, size, story, anything you know)%0D%0A%0D%0A"
+        "How do you know about it? (link, book, local knowledge)%0D%0A%0D%0A"
+        "Photo: attach it if you took it yourself%0D%0A%0D%0A"
+        "Your name, for the credit:%0D%0A",
+    ),
+    "correction": (
+        "A correction",
+        "Which page or tree?%0D%0A%0D%0A"
+        "What is wrong?%0D%0A%0D%0A"
+        "How do you know? (a link or local knowledge both count)%0D%0A",
+    ),
+}
+
+
+def submit_link(kind):
+    """Where a contribution button points.
+
+    One constant at the top of this file flips every button on the site from a
+    prefilled mailto to the hosted form, so switching over is a one-line change.
+    """
+    if SUBMISSION_FORM_URL:
+        return SUBMISSION_FORM_URL
+    subject, body = SUBMIT_TEMPLATES[kind]
+    return f"mailto:{CONTACT}?subject={subject}&amp;body={body}"
+
+
 def usable_photo(tree):
     """Return the photo dict if it has a URL, license and attribution and is
     cleared for display; otherwise None. One gate for every page type."""
@@ -605,7 +678,7 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pag
   <h2>Trees nearby</h2>
   <ul class="link-list">{nearby_html}</ul>
   <div class="cta">Curious what else is standing in {esc(city)}? See <a href="../{cslug}">all 10 remarkable ancient trees in {esc(city)}</a> or find out <a href="oldest-tree">what the oldest tree in {esc(city)} is</a>.{species_line}</div>
-  <p class="suggest">Something wrong on this page, or do you have an openly licensed photo of this tree? Write to <a href="mailto:{CONTACT}">{CONTACT}</a>. Corrections are checked and credited.</p>
+  <p class="suggest">Something wrong on this page, or do you have an openly licensed photo of this tree? <a href="{submit_link('correction')}">Tell us</a>. Corrections are checked and credited.</p>
 </main>
 """
 
@@ -744,11 +817,6 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
     for i, t in enumerate(trees, 1):
         loc = t["location"]
         tslug = tree_slugs[t["id"]]
-        practical = []
-        if t.get("access"):
-            practical.append(f"<span>Access: {esc(t['access'])}</span>")
-        if t.get("transport"):
-            practical.append(f"<span>Getting there: {esc(t['transport'])}</span>")
         label = f'<span class="tree-label">{esc(t["label"])}</span>' if t.get("label") else ""
         cphoto = usable_photo(t)
         photo_block = ""
@@ -766,8 +834,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
       <p class="tree-meta">{esc(t.get('species', ''))} &middot; {esc(t.get('age_estimate', 'age unknown'))} &middot; {esc(loc.get('neighbourhood', ''))}</p>""")
         cards[-1] += f"""
       <p class="tree-story">{esc(t['story'])}</p>
-      <p class="tree-practical">{''.join(practical)}</p>
-      <p class="tree-more"><a href="{slug}/{tslug}">Full story, map and directions for {esc(t['name'])}</a></p>
+      <p class="tree-more"><a href="{slug}/{tslug}">Read more and get directions &rarr;</a></p>
     </article>"""
         markers.append({"lat": loc["latitude"], "lng": loc["longitude"], "label": str(i)})
 
@@ -803,7 +870,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
         {coll_link_html}
         {more_cities_html}
       </dl>
-      <p class="suggest">Know a tree that belongs on this list? Tell us: <a href="mailto:{CONTACT}">{CONTACT}</a>. Suggestions feed curation; the list itself stays editorial.</p>
+      <p class="suggest">Know a tree that belongs on this list? <a href="{submit_link('tree')}">Send it in</a>. Suggestions feed curation; the list itself stays editorial.</p>
     </div>"""
 
     graph = site_graph() + [
@@ -903,10 +970,16 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages):
                 "@type": "ListItem", "position": entry_count,
                 "name": t["name"], "url": f"{BASE_URL}/{cslug}/{tslug}",
             })
+            ph = usable_photo(t)
+            thumb = (f'<div class="entry-thumb"><img src="{esc(ph["url"])}" alt="{esc(t["name"])}" loading="lazy"></div>'
+                     if ph else "")
             rows.append(f"""
-      <div class="entry">
-        <h3><a href="../{cslug}/{tslug}">{esc(t['name'])}</a> <span class="tree-label">{esc(t.get('age_estimate', ''))}</span></h3>
-        <p>{esc(e['note'])}</p>
+      <div class="entry{' has-thumb' if ph else ''}">
+        {thumb}
+        <div class="entry-body">
+          <h3><a href="../{cslug}/{tslug}">{esc(t['name'])}</a> <span class="tree-label">{esc(t.get('age_estimate', ''))}</span></h3>
+          <p>{esc(e['note'])}</p>
+        </div>
       </div>""")
         sections.append(f"<h2>{esc(city_data['city'])}</h2>{''.join(rows)}")
 
@@ -1002,10 +1075,16 @@ def build_species_page(intro_data, members, tree_slugs, published, pages):
                 "@type": "ListItem", "position": n,
                 "name": t["name"], "url": f"{BASE_URL}/{cslug}/{tslug}",
             })
+            ph = usable_photo(t)
+            thumb = (f'<div class="entry-thumb"><img src="{esc(ph["url"])}" alt="{esc(t["name"])}" loading="lazy"></div>'
+                     if ph else "")
             rows.append(f"""
-      <div class="entry">
-        <h3><a href="../{cslug}/{tslug}">{esc(t['name'])}</a> <span class="tree-label">{esc(t.get('age_estimate',''))}</span></h3>
-        <p>{esc(loc.get('neighbourhood',''))}. {esc(t['story'].split('. ')[0])}.</p>
+      <div class="entry{' has-thumb' if ph else ''}">
+        {thumb}
+        <div class="entry-body">
+          <h3><a href="../{cslug}/{tslug}">{esc(t['name'])}</a> <span class="tree-label">{esc(t.get('age_estimate',''))}</span></h3>
+          <p>{esc(loc.get('neighbourhood',''))}. {esc(t['story'].split('. ')[0])}.</p>
+        </div>
       </div>""")
         sections.append(f'<h2>{esc(entry["data"]["city"])}</h2>{"".join(rows)}')
 
@@ -1137,26 +1216,6 @@ def build_contribute_page(published, pages):
                    "Every submission is verified against independent sources before it goes live.")
     crumb_items = [("Home", BASE_URL), ("Map your city", None)]
 
-    city_subject = "I want to map my city"
-    city_template = (
-        "Which city?%0D%0A%0D%0A"
-        "The trees you would put on its list (as many as you know, a name and rough location each is plenty):%0D%0A"
-        "1.%0D%0A2.%0D%0A3.%0D%0A%0D%0A"
-        "Anything that makes this city's trees particular? (a species that thrives here, a park, a local habit)%0D%0A%0D%0A"
-        "How do you know the city? (you live there, you grew up there, you walk it often)%0D%0A%0D%0A"
-        "Your name, for the credit:%0D%0A"
-    )
-    tree_subject = "A tree you are missing"
-    tree_template = (
-        "Tree name or description:%0D%0A%0D%0A"
-        "City:%0D%0A%0D%0A"
-        "Where exactly is it? (street, park, or a Google Maps link, the more precise the better)%0D%0A%0D%0A"
-        "Why is it remarkable? (age, size, story, anything you know)%0D%0A%0D%0A"
-        "How do you know about it? (link, book, local knowledge)%0D%0A%0D%0A"
-        "Photo: attach it if you took it yourself%0D%0A%0D%0A"
-        "Your name, for the credit:%0D%0A"
-    )
-
     city_links = " &middot; ".join(
         f'<a href="{p["slug"]}">{esc(p["city"])}</a>' for p in published
     )
@@ -1174,13 +1233,13 @@ def build_contribute_page(published, pages):
   <div class="path">
     <h2>Map your whole city</h2>
     <p class="prose-block">The big one. Tell us which city and which trees belong on its list. You do not need ten, and you do not need to write anything polished. Names and rough locations are enough; the research, the checking and the writing happen here.</p>
-    <a class="go-btn" href="mailto:{CONTACT}?subject={city_subject}&amp;body={city_template}">Map my city</a>
+    <a class="go-btn" href="{submit_link('city')}">Map my city</a>
   </div>
 
   <div class="path">
     <h2>Or just one tree</h2>
     <p class="prose-block">Saw something remarkable and know roughly where it stands? That is enough. One tree in a city we have never touched is often the thing that starts it.</p>
-    <a class="go-btn" href="mailto:{CONTACT}?subject={tree_subject}&amp;body={tree_template}">Send one tree</a>
+    <a class="go-btn" href="{submit_link('tree')}">Send one tree</a>
   </div>
 
   <h2>What helps most</h2>
@@ -1193,7 +1252,7 @@ def build_contribute_page(published, pages):
 
   <h2>Or fix something</h2>
   <div class="prose-block">
-    <p>Spotted a wrong location, an age that looks off, or a tree that has fallen since we wrote about it? Those corrections are just as valuable. Mail <a href="mailto:{CONTACT}">{CONTACT}</a> and say what is wrong.</p>
+    <p>Spotted a wrong location, an age that looks off, or a tree that has fallen since we wrote about it? Those corrections are just as valuable. <a href="{submit_link('correction')}">Send a correction</a> and say what is wrong.</p>
   </div>
   <p class="suggest">Cities on the map so far: {city_links}</p>
 </main>
