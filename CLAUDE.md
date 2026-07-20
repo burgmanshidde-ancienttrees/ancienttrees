@@ -59,7 +59,9 @@ Every city file follows this exact structure (see data/cities/london.json for th
 }
 ```
 
-## The nightly workflow (autonomous run)
+## The research workflow (autonomous run)
+
+Runs hourly around the clock via GitHub Actions. Most attempts hit the Claude usage limit and stop immediately, which is expected and costs almost nothing; the work goes through whenever the window has room.
 
 Each run, do exactly this, in order:
 
