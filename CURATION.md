@@ -2,6 +2,22 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-21 — New York (full research run, nightly workflow)
+
+- 10 trees researched from scratch and written to `data/cities/new-york.json`. Tier 1, eleventh city to go live. No reader submissions pending (CSV checked: header row only). Nothing published was wrong, so this was the next rung: the next pending city.
+- The unifying thread: New York City runs an actual government registry for this, the Parks Department's Great Trees of New York City list (started 1985, expanded 2024 after 270+ public nominations). Every tree here carries that designation. Deliberately picked two trees per borough for even coverage: Manhattan (Hangman's Elm, Central Park's Black Tupelo), Brooklyn (Camperdown Elm, Green-Wood's Sassafras), Queens (the Queens Giant, Kissena Park's Manchurian Linden), Staten Island (Clove Lakes Colossus, Hero Park's WWI memorial yew), Bronx (NYBG's Red Oak, Van Cortlandt House's horse chestnut). Used the registry itself as the city intro.
+- One dropped candidate worth recording: Flushing's famous Weeping Beech, planted 1847 by nursery owner Samuel Parsons, was NYC's first living landmark (1966) and a strong story, but it died in 1998 and was given a public funeral. Not used, per the same rule that kept London's dead Queen Elizabeth's Oak off any city's list as a living tree. Replaced with Kissena Park's Manchurian Linden, from the same Parsons nursery grounds but still alive.
+- 4 flagged:
+  - **The Hangman's Elm** (Washington Square Park): age estimates genuinely range 300-346 years across sources; presented as a range. Its hanging-tree legend is very likely folklore (no court or newspaper record of hangings there; earliest references appear decades after the fact), and the story says so directly.
+  - **The Sassafras of Green-Wood**: the cemetery's own write-up is explicit that there's no way to confirm the tree's age without coring it, and cautions that favorable cemetery growing conditions likely inflate its apparent size relative to age. Story keeps that honesty intact rather than picking a confident number.
+  - **The Manchurian Linden of Kissena Park**: confirmed Great Tree, confirmed to stand on Samuel Parsons' old nursery grounds, but no source gives a specific planting date, only the nursery's active period (1870s-1900s). Age estimated from that window.
+  - **The Red Horse Chestnut of Van Cortlandt House**: NYC Parks' own listing only says the tree is "believed" planted by a Van Cortlandt family member, not confirmed; age range left wide (100-180 years) to reflect that.
+  - Also worth a note though not formally flagged: **The Clove Lakes Colossus** (Staten Island) had thinner sourcing than the other nine, a secondary comparison mention rather than a dedicated registry entry found in this search. Included since two independent details corroborate (height and circumference), but marked for a stronger primary source in a future pass.
+- 2 photos found: the Camperdown Elm (CC BY-SA 2.0/3.0, Wikimedia Commons, confirmed by file description) and the Queens Giant (CC BY-SA 4.0, confirmed both by file description and by embedded GPS metadata matching the tree's known location, which also gave a rare precisely-surveyed coordinate for the tree itself rather than an estimate).
+- 8 of 10 photos missing after searching Wikimedia Commons for each named tree.
+- 8 of 10 pins approximate: almost every source gave building, park or neighborhood-level coordinates rather than a surveyed point for the specific tree. 2 confirmed: the Queens Giant, via the photo's own GPS metadata, and the Van Cortlandt horse chestnut, since the tree's location ("east lawn of the house") is unambiguous even without a separate survey point.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-21 — Madrid (full research run, nightly workflow)
 
 - 10 trees researched from scratch and written to `data/cities/madrid.json`. Tier 1, tenth city to go live, and the round number is coincidence rather than a milestone anyone planned around. No reader submissions pending (CSV checked: header row only). Nothing published was wrong, so this was the next rung: the next pending city.

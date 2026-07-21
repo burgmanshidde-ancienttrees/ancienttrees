@@ -1,0 +1,333 @@
+{
+  "city": "New York",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "New York City runs an actual government registry for this: the Parks Department's Great Trees of New York City list, started in 1985 and expanded for the first time in nearly forty years in 2024 after a public nomination drive drew more than 270 submissions. Every tree here carries that designation. The city's five boroughs each hold at least one of the ten, and the split is deliberate: a courthouse-adjacent elm and a botanical garden's tallest oak get the same one paragraph of protection as a tulip tree nobody planted, growing wild in a park where the Dutch once made land deals with the people who were already living there. Some are colonial-era survivors. One was planted specifically so a park would have something to be famous for.",
+  "meta_description": "NYC runs an official Great Trees registry. Meet a 300-year-old Greenwich Village elm, a wild tulip tree older than the city itself, and eight more.",
+  "question_answer": "New York City's oldest tree is very likely the Queens Giant, a tulip tree in Alley Pond Park estimated between 350 and 450 years old by different measures, old enough to predate the Dutch colony of New Amsterdam entirely. It stands in a wooded section of the park in eastern Queens, reachable on foot from the Douglaston Long Island Rail Road station.",
+  "question_meta": "NYC's oldest tree is likely the Queens Giant, a 350-450 year old tulip tree in Alley Pond Park. Its story, exact location, and nine more Great Trees.",
+  "question_context": "The Queens Giant's claim to being New York City's oldest living thing rests on measurement rather than legend. At 133.8 feet, it is the tallest carefully measured tree in the five boroughs, and tulip trees of that height in undisturbed forest are reliably centuries old; the New York City Parks Department states it is at least 368 years old, while some arborists place the range as wide as 350 to 450. Either figure puts its germination before the 1664 English takeover of New Amsterdam, and some local accounts connect trees in this stretch of Alley Pond Park to 17th century land dealings between the Dutch West India Company and the Matinecock people who lived here first, though no source ties this specific trunk to a documented transaction. What is not in question is that it has spent its entire life essentially unmanaged, growing in what is now protected forest rather than a planted garden, which is rare enough in New York that the Parks Department calls it possibly the oldest living organism in the metropolitan area. Getting there: Douglaston station on the LIRR Port Washington line, then a short walk into Alley Pond Park's wooded trails.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in New York City?",
+      "a": "Likely the Queens Giant, a wild tulip tree in Alley Pond Park estimated at 350 to 450 years old, old enough to predate the English takeover of New Amsterdam in 1664."
+    },
+    {
+      "q": "Where is the best place to see old trees in New York City?",
+      "a": "No single spot has a monopoly. The Thain Family Forest at the New York Botanical Garden in the Bronx is the largest surviving patch of the city's original woodland, but Central Park, Prospect Park and several borough parks each hold at least one Great Tree of their own."
+    },
+    {
+      "q": "Are New York City's Great Trees free to see?",
+      "a": "Yes, all ten stand in free public parks or cemeteries. The New York Botanical Garden charges general admission to its grounds, but the Thain Family Forest tree is within that same free-to-walk woodland once inside."
+    },
+    {
+      "q": "How does a tree become an official Great Tree of New York City?",
+      "a": "Through public nomination to the Parks Department. The original 1985 list came from citizen submissions for unusual size, rare species, striking form or historical significance, and a 2023-2024 nomination drive that drew over 270 submissions added 61 more trees to the roughly 65 that had survived from the original round."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nyc_001",
+      "name": "The Hangman's Elm",
+      "species": "English Elm (Ulmus procera)",
+      "age_estimate": "300-346 years (age estimates vary)",
+      "age_min": 300,
+      "age_max": 346,
+      "location": {
+        "address": "Northwest corner, Washington Square Park, New York, NY 10012",
+        "latitude": 40.7319,
+        "longitude": -73.9986,
+        "neighbourhood": "Greenwich Village, Manhattan"
+      },
+      "story": "This elm is one of the oldest living things on Manhattan Island, and almost everything colorful ever said about it is unproven. Its nickname comes from a folk legend that traitors and criminals were hanged from its branches during and after the American Revolution, a story with no supporting court or newspaper record; the earliest known references to it as a hanging tree only appear in print in the late 19th century, generations after the events they describe. What is documented is its age: the New York City Parks Department measured it at 310 years old in 1989, later revising that to a more cautious more than 300 years, with some accounts pushing the figure to 346. It stands at the northwest corner of Washington Square, a plot of land that served as a potter's field and public execution ground in the early 1800s, close enough to the tree that a real 1820 hanging nearby, of Rose Butler for arson, may be the seed of fact the legend grew from. The tree survived a 2012 park renovation that construction crews came close to damaging.",
+      "verified_sources": [
+        "https://www.nycgovparks.org/parks/washington-square-park/facilities/great-trees",
+        "https://en.wikipedia.org/wiki/Hangman's_Elm",
+        "https://www.washingtonsquareparkblog.com/2025/05/16/washington-square-park-346-year-old-elm-designated-great-tree/"
+      ],
+      "access": "Free, public park",
+      "transport": "West 4th Street (Metro A/B/C/D/E/F/M), 3 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age given as a range (300-346 years) because sources genuinely disagree, from NYC Parks' cautious 'more than 300 years' to a commonly cited 346. Coordinates are an estimate for the park's northwest corner; no independently surveyed lat/long was found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nyc_002",
+      "name": "The Black Tupelo of the Ramble",
+      "species": "Black Tupelo (Nyssa sylvatica)",
+      "age_estimate": "about 168 years",
+      "age_min": 165,
+      "age_max": 170,
+      "location": {
+        "address": "The Ramble, near West 78th Street, Central Park, New York, NY 10024",
+        "latitude": 40.7788,
+        "longitude": -73.9694,
+        "neighbourhood": "Upper West Side, Manhattan"
+      },
+      "story": "Central Park has two competing claimants for its oldest tree, and this one has the better paperwork. A London plane near the Reservoir might date to 1862, when the Reservoir itself was excavated, but this black tupelo in the Ramble, the deliberately wild, maze-like woodland Frederick Law Olmsted and Calvert Vaux designed into the park's plan, has documentation placing its planting at 1858, four years earlier, during the park's original construction. Black tupelos are native to eastern North American wetlands and swamps, not the schist bedrock Central Park sits on, which makes this a planted specimen rather than a survivor of the farmland and settlements the park displaced. The species is prized by ecologists for its brilliant, early scarlet fall color and by foresters for its resistance to rot, qualities that have let this tree outlast most of the park's original 1850s plantings. It stands in one of the Ramble's quieter, less trafficked paths, a 19th century engineering project that has spent a century and a half looking convincingly unplanned.",
+      "verified_sources": [
+        "https://ephemeralnewyork.wordpress.com/tag/what-is-the-oldest-tree-in-central-park/",
+        "https://www.untappedcities.com/guide-central-park-great-trees/"
+      ],
+      "access": "Free, public park",
+      "transport": "81st Street-Museum of Natural History (Metro B/C), 8 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Coordinates are an estimate for the Ramble near West 78th Street; no surveyed point for the specific tree was found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nyc_003",
+      "name": "The Camperdown Elm",
+      "species": "Camperdown Elm (Ulmus glabra 'Camperdownii')",
+      "age_estimate": "about 154 years",
+      "age_min": 150,
+      "age_max": 156,
+      "location": {
+        "address": "Near the Boathouse, Prospect Park, Brooklyn, NY 11225",
+        "latitude": 40.6608,
+        "longitude": -73.9653,
+        "neighbourhood": "Prospect Park, Brooklyn"
+      },
+      "story": "Every Camperdown elm on Earth is a clone, and this one is among the oldest. The cultivar began in the 1830s when a gardener for the Earl of Camperdown found a single mutant elm branch, contorted and weeping instead of growing upright, on the Camperdown House estate near Dundee, Scotland. Because the mutation cannot be grown from seed, every specimen since has been propagated by grafting a cutting onto a straight-trunked host, which makes each Camperdown elm in the world a genetic twin of that one Scottish branch. This graft was planted near Prospect Park's Boathouse in 1872, a gift to the young park, and by the 1960s had declined badly enough that Brooklyn nearly lost it, until the poet Marianne Moore, a devoted Prospect Park visitor, wrote publicly in its defense and helped rally the conservation campaign that saved it. She later called it Brooklyn's crowning curio. Its low, twisted canopy, propped and cabled for support, still spreads wide enough that visitors duck to walk beneath it, a shape no other tree in the park shares by nature.",
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=8",
+        "https://www.centralparknyc.org/plants/camperdown-elm",
+        "https://brooklynbased.com/2021/08/05/brooklyn-history-the-singularly-curious-weeping-elm/"
+      ],
+      "access": "Free, public park",
+      "transport": "Prospect Park (Metro B/Q/S), 10 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Camperdown_Elm_Prospect_Park_Brooklyn.jpg/1024px-Camperdown_Elm_Prospect_Park_Brooklyn.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Garry R. Osgood, Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Coordinates are an estimate near the Boathouse and Lullwater, where sources place the tree; no independently surveyed point was found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nyc_004",
+      "name": "The Sassafras of Green-Wood",
+      "species": "Sassafras (Sassafras albidum)",
+      "age_estimate": "possibly pre-1838, precise age unconfirmed",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Green-Wood Cemetery, 500 25th Street, Brooklyn, NY 11232",
+        "latitude": 40.659017,
+        "longitude": -73.995692,
+        "neighbourhood": "Greenwood Heights, Brooklyn"
+      },
+      "story": "Green-Wood Cemetery has counted this as its oldest tree, possibly older than the cemetery itself, which was founded in 1838 on rolling glacial hills chosen specifically because the terrain already supported mature, established woodland. Sassafras trees rarely reach the size or age this specimen has, since the species usually grows as a smaller understory tree that spreads through root suckers rather than living to great individual age; this one, or rather these two, since it appears as a pair of trunks a few feet apart, may be the last survivors of a larger colonial root system that once covered more ground. Nobody has cored the tree to confirm an exact age, and Green-Wood's own arborists are candid that the favorable growing conditions inside a manicured 478 acre cemetery likely inflate its size relative to a wild sassafras of the same age, making size an unreliable proxy for years here. What is certain is that it predates most of the 600,000 people buried around it, a rare case of a cemetery's oldest resident having no grave at all.",
+      "verified_sources": [
+        "https://www.green-wood.com/2012/green-woods-great-trees/",
+        "https://arbnet.org/morton-register/green-wood/"
+      ],
+      "access": "Free, cemetery open daily (check seasonal hours)",
+      "transport": "25th Street (Metro R), at the cemetery gate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is explicitly uncertain in the source material itself (Green-Wood's own write-up says there is no way to confirm age without coring the tree, and cautions that cemetery growing conditions likely make the tree larger than its age alone would suggest). Coordinates are for the cemetery's main entrance, not a surveyed point for the tree's specific location inside the grounds.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nyc_005",
+      "name": "The Queens Giant",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "350-450 years",
+      "age_min": 350,
+      "age_max": 450,
+      "location": {
+        "address": "Alley Pond Park, near Alley Creek, Douglaston, Queens, NY 11364",
+        "latitude": 40.75300,
+        "longitude": -73.74700,
+        "neighbourhood": "Douglaston, Queens"
+      },
+      "story": "This tree was already centuries old when New Amsterdam was still a Dutch trading post, and unlike almost everything else on this list, nobody planted it. At 133.8 feet the Queens Giant is the tallest carefully measured tree in New York City, a tulip poplar growing wild in a stretch of Alley Pond Park's forest that has never been cleared, and the New York City Parks Department dates it to at least 368 years old, with other estimates ranging as wide as 350 to 450. Tulip trees can live 600 years and reach over 150 feet under ideal conditions, and this specimen's height alone marks it as one of the oldest living things in the entire New York metropolitan region, likely older than any building, monument or institution in the five boroughs. Some local histories connect the surrounding land to 17th century transactions between the Dutch West India Company and the Matinecock people who lived here before European settlement, though no source confirms this specific tree witnessed any documented exchange. It has simply kept growing, in a park most of the city drives past on the Long Island Expressway without knowing it is there.",
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees/120",
+        "https://www.untappedcities.com/this-is-the-oldest-and-tallest-tree-in-nyc-the-queens-giant-in-alley-pond-park/",
+        "https://www.atlasobscura.com/places/the-alley-pond-giant-queens-new-york"
+      ],
+      "access": "Free, public park",
+      "transport": "Douglaston (LIRR Port Washington line), 10 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Queens_Giant_%28Tree%29_04072024.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Bruce Schaff, Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Coordinates taken directly from the confirmed photo's embedded GPS metadata (40°45'10.8\"N, 73°44'49.2\"W), a rare case of a precisely surveyed point for the tree itself rather than an estimate.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nyc_006",
+      "name": "The Manchurian Linden of Kissena Park",
+      "species": "Manchurian Linden (Tilia mandshurica)",
+      "age_estimate": "approximately 120-150 years (exact planting date unconfirmed)",
+      "age_min": 120,
+      "age_max": 150,
+      "location": {
+        "address": "Kissena Park, near the tennis courts, Flushing, Queens, NY 11355",
+        "latitude": 40.7508,
+        "longitude": -73.8103,
+        "neighbourhood": "Flushing, Queens"
+      },
+      "story": "This linden is a leftover from a 19th century nursery business rather than a park planting, standing 75 feet north of a restroom next to Kissena Park's tennis courts on land that was once part of Samuel Bowne Parsons's commercial tree nursery. Parsons, whose family also planted Manhattan's Hangman's Elm-era Washington Square trees and much of Central Park's original stock, ran one of the era's most important import operations from this site starting in the 1870s, bringing Japanese maples to America for the first time and propagating rhododendrons at commercial scale. After Parsons died in 1906, the city absorbed part of his former grove into what became Kissena Park, and this Manchurian linden, a species native to forests spanning China, Korea and Russia's far east, is one of more than 100 imported tree varieties that trace back to the original nursery grounds still growing in the park today. It carries Great Tree status as a living fragment of Flushing's forgotten reputation as America's premier 19th century horticultural center, a history most visitors to the tennis courts beside it have no reason to suspect.",
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees/50",
+        "https://itsinqueens.com/intheloop-queens-is-home-to-18-new-members-of-the-great-trees-of-new-york-city-list/"
+      ],
+      "access": "Free, public park",
+      "transport": "Kissena Park, Queens Q17/Q25/Q34 bus, 5 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No source gives a specific planting date for this individual tree; age is estimated from the nursery's known 1870s-1900s active period. Coordinates are an estimate near the tennis courts based on the park's official location description ('75 feet north of the public restroom'), not a surveyed point.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nyc_007",
+      "name": "The Clove Lakes Colossus",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 350,
+      "location": {
+        "address": "Clove Lakes Park, north end near the paved path, Staten Island, NY 10301",
+        "latitude": 40.6183,
+        "longitude": -74.1083,
+        "neighbourhood": "Sunnyside, Staten Island"
+      },
+      "story": "Staten Island's tallest tree stands 119 feet, more than 14 feet shorter than Queens' record-holding tulip tree, but old enough on its own terms to anchor the north end of Clove Lakes Park, easily found along a paved path where its trunk, 21.4 feet around, dwarfs everything nearby. Tulip trees like this one are among the tallest native hardwoods in eastern North America, capable of shooting straight up through a forest canopy in search of light rather than spreading wide the way an open-grown oak would, which is part of why the species so often produces the height records claimed on lists like this one. Clove Lakes Park itself preserves one of Staten Island's last stretches of the mixed hardwood forest that once covered most of the borough before 20th century development, and the Colossus, reported at well over 300 years old, would have been an established mature tree when the surrounding land was still farmland rather than parkland. It remains one of Staten Island's contributions to New York City's official Great Trees registry, one of ten entries from the least visited of the five boroughs.",
+      "verified_sources": [
+        "https://www.untappedcities.com/this-is-the-oldest-and-tallest-tree-in-nyc-the-queens-giant-in-alley-pond-park/",
+        "https://www.nycgovparks.org/facilities/great-trees"
+      ],
+      "access": "Free, public park",
+      "transport": "Staten Island Railway to Clove Road area, or S61/S62 bus, 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Sourcing for this specific tree is thinner than the others on this list: the height and circumference figures come from secondary coverage rather than a dedicated NYC Parks Great Trees entry found in this search. Age presented as a wide range and the tree flagged for a stronger primary source in a future pass. Coordinates are for the park generally, not a surveyed point.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nyc_008",
+      "name": "The Yew of Hero Park",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "about 106 years",
+      "age_min": 104,
+      "age_max": 108,
+      "location": {
+        "address": "Hero Park, Victory Boulevard and Louis Street, Staten Island, NY 10301",
+        "latitude": 40.6198,
+        "longitude": -74.0972,
+        "neighbourhood": "Grymes Hill, Staten Island"
+      },
+      "story": "This yew is one of 144 evergreens planted in 1920 around a glacial boulder called Sugar Loaf Rock, each tree standing as a living memorial to a Staten Island resident killed in the First World War. A plaque at the boulder names every soldier the grove commemorates, making Hero Park one of the more literal war memorials in New York City: not statues or a wall of names alone, but a planted forest where each individual tree corresponds to an individual death, a practice with a documented precedent in similar WWI memorial tree plantings elsewhere in the country around the same period. European yews are exceptionally long lived and slow growing, a species choice that all but guaranteed this planting would still be standing a century later, evergreen through every winter since 1920 the way the soldiers it honors never got to see. At just over a century old it is younger than most other trees on this list, but its age is not really the point; the grove was planted to hold a specific memory in place, and a century on, it still does.",
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees/121",
+        "https://www.nycgovparks.org/parks/hero-park/history"
+      ],
+      "access": "Free, public park",
+      "transport": "S61/S62 bus to Victory Boulevard, at the park",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Coordinates are a street-level estimate for the Victory Boulevard/Louis Street intersection; no surveyed lat/long was found for the park or the specific tree.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nyc_009",
+      "name": "The Red Oak of the Thain Family Forest",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "150-200 years",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "New York Botanical Garden, 2900 Southern Boulevard, Bronx, NY 10458",
+        "latitude": 40.861706,
+        "longitude": -73.880341,
+        "neighbourhood": "Bronx Park"
+      },
+      "story": "This oak grows in the middle of the Spicebush Trail inside the Thain Family Forest, a 50 acre stretch of the New York Botanical Garden that has never been logged and represents the largest surviving remnant of the woodland that once covered most of New York City before European colonization. The Botanical Garden was deliberately sited here in 1895 specifically because this forest already existed, a decision that preserved a functioning fragment of pre-colonial Lenapehoking rather than planting a garden from scratch. At a trunk diameter over five feet, this red oak, designated a Great Tree in 2024, ranks among the largest and most accessible specimens in a forest that also holds tulip trees, sweetgums, hemlocks and beeches estimated at up to 300 years old in less visited sections. Red oaks support more moth and butterfly species as larval hosts than almost any other tree genus in the northeastern United States, more than 400 by some counts, making this single oak a small ecosystem of its own even before accounting for its age or size.",
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees/79",
+        "https://en.wikipedia.org/wiki/Thain_Family_Forest"
+      ],
+      "access": "Paid entry to the New York Botanical Garden",
+      "transport": "Metro-North Harlem Line to Botanical Garden station, at the Mosholu entrance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Coordinates are for the Botanical Garden's main entrance; the tree's specific position on the Spicebush Trail within the 50-acre forest is not separately surveyed.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nyc_010",
+      "name": "The Red Horse Chestnut of Van Cortlandt House",
+      "species": "Red Horse Chestnut (Aesculus x carnea)",
+      "age_estimate": "over 100 years (precise planting date unconfirmed)",
+      "age_min": 100,
+      "age_max": 180,
+      "location": {
+        "address": "Van Cortlandt House Museum, Broadway and West 246th Street, Bronx, NY 10471",
+        "latitude": 40.891139,
+        "longitude": -73.894833,
+        "neighbourhood": "Van Cortlandt Park, Bronx"
+      },
+      "story": "This tree grows on the east lawn of the Van Cortlandt House, built in 1748 and the oldest building still standing in the Bronx, and local tradition holds that a member of the Van Cortlandt family planted it themselves, though no source confirms exactly when. Red horse chestnuts are themselves a hybrid, a cross between the European horse chestnut and a red-flowered American buckeye species, bred for ornamental gardens rather than found in the wild, which means whoever planted this one chose it deliberately for its spring flowers rather than letting it seed in naturally. At nearly 88 feet tall with a trunk over three feet across, it has grown large enough to be one of three horse chestnuts at the house included in the NYC Parks Great Trees registry, all three now part of a Great Tree Clone Program in which cuttings are propagated and planted at new sites around the city, extending the genetic line of trees like this one even as the originals eventually age out. Van Cortlandt House operated as a Revolutionary War-era headquarters at times for both American and British forces, meaning this tree, whatever its precise age, grows on ground that has seen the city's founding conflict up close.",
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=22",
+        "https://en.wikipedia.org/wiki/Van_Cortlandt_House"
+      ],
+      "access": "Free to view from the park; paid entry to enter the Van Cortlandt House Museum itself",
+      "transport": "Van Cortlandt Park-242nd Street (Metro 1), 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No source gives a specific planting date; NYC Parks itself only states the tree is 'believed' to have been planted by a Van Cortlandt family member, making it 'over a century old.' Age range left wide to reflect that genuine uncertainty.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
