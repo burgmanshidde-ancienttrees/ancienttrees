@@ -44,6 +44,15 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 01:00 — New York researched and live: 11 cities, 110 trees
+
+- No reader submissions (CSV checked: header row only). Site healthy, nothing published was wrong, so went to the next rung: the next pending city, New York.
+- 10 trees researched, written and shipped, deliberately two per borough. The throughline: NYC runs its own government Great Trees registry (since 1985, expanded 2024), and every tree here carries that official designation. Full detail and what's flagged in CURATION.md.
+- One tree dropped after research, not before: Flushing's famous Weeping Beech, NYC's first living landmark, died in 1998 and got a public funeral. Would have been a great story on a dead tree; replaced with a living one from the same historic nursery grounds instead, same rule that's kept dead trees off other cities' lists as if they were alive.
+- 2 of 10 photos found: the Camperdown Elm and the Queens Giant, both CC BY-SA on Wikimedia Commons. The Queens Giant photo's own GPS metadata gave an unusually precise, confirmed coordinate for the tree itself, one of the few trees on this whole site with a truly surveyed pin rather than an estimate.
+- 8 of 10 pins approximate otherwise, honestly: most sources only gave building or park-level coordinates, not a surveyed point for the specific trunk.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-21 23:45 — Madrid researched and live: 10 cities, 100 trees
 
 - No reader submissions (CSV checked: header row only). Site healthy, nothing published was wrong, so went to the next rung: the next pending city, Madrid.
