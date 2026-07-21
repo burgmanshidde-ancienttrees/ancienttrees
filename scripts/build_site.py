@@ -673,7 +673,7 @@ function paintPassport() {{
   document.querySelectorAll('.seen-btn').forEach(function(btn) {{
     var got = seen.indexOf(btn.dataset.tree) !== -1;
     btn.setAttribute('aria-pressed', got ? 'true' : 'false');
-    btn.querySelector('.seen-text').textContent = got ? 'Visited' : 'I stood here';
+    btn.querySelector('.seen-text').textContent = got ? 'Visited' : 'Check in at this tree';
   }});
   var box = document.getElementById('passport');
   if (box) {{
@@ -691,15 +691,62 @@ function paintPassport() {{
   }}
 }}
 
+// You have to actually be there. A tick box anyone can click from the sofa
+// collects nothing and, worse, does nothing for the one thing this site is for,
+// which is getting a person to stand in front of a tree. So a check in asks the
+// browser where you are and refuses politely if you are not close.
+// The radius is generous on purpose: GPS in a street canyon is good to tens of
+// metres, and a pin we have marked approximate gets 200m rather than 75m,
+// because refusing someone who is genuinely standing at the tree would be our
+// mistake charged to them.
+function metresBetween(lat1, lng1, lat2, lng2) {{
+  var R = 6371000, p = Math.PI / 180;
+  var a = Math.sin((lat2 - lat1) * p / 2) * Math.sin((lat2 - lat1) * p / 2)
+        + Math.cos(lat1 * p) * Math.cos(lat2 * p)
+        * Math.sin((lng2 - lng1) * p / 2) * Math.sin((lng2 - lng1) * p / 2);
+  return 2 * R * Math.asin(Math.sqrt(a));
+}}
+
+function flash(btn, msg, ms) {{
+  var t = btn.querySelector('.seen-text'), was = t.textContent;
+  t.textContent = msg;
+  setTimeout(function() {{ if (t.textContent === msg) {{ t.textContent = was; }} }}, ms || 4000);
+}}
+
 document.querySelectorAll('.seen-btn').forEach(function(btn) {{
   btn.addEventListener('click', function(e) {{
     e.stopPropagation();
     var id = btn.dataset.tree;
     var seen = readSeen();
-    var at = seen.indexOf(id);
-    if (at === -1) {{ seen.push(id); }} else {{ seen.splice(at, 1); }}
-    writeSeen(seen);
-    paintPassport();
+
+    // Undoing never needs proof: if you ticked it by mistake, that is yours to fix.
+    if (seen.indexOf(id) !== -1) {{
+      seen.splice(seen.indexOf(id), 1);
+      writeSeen(seen);
+      paintPassport();
+      return;
+    }}
+
+    if (!navigator.geolocation) {{
+      flash(btn, 'This browser cannot check where you are');
+      return;
+    }}
+    flash(btn, 'Checking where you are...', 20000);
+    navigator.geolocation.getCurrentPosition(function(pos) {{
+      var away = metresBetween(pos.coords.latitude, pos.coords.longitude,
+                               parseFloat(btn.dataset.lat), parseFloat(btn.dataset.lng));
+      if (away <= parseFloat(btn.dataset.radius)) {{
+        var list = readSeen();
+        if (list.indexOf(id) === -1) {{ list.push(id); }}
+        writeSeen(list);
+        paintPassport();
+      }} else {{
+        var far = away > 2000 ? Math.round(away / 1000) + ' km' : Math.round(away) + ' m';
+        flash(btn, 'Still ' + far + ' away. Check in at the tree.', 6000);
+      }}
+    }}, function(err) {{
+      flash(btn, err.code === 1 ? 'Location needed to check in' : 'Could not find you. Try again.', 6000);
+    }}, {{ enableHighAccuracy: true, maximumAge: 30000, timeout: 15000 }});
   }});
 }});
 
@@ -1285,8 +1332,10 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
         cards[-1] += f"""
       <p class="tree-story">{esc(t['story'])}</p>
       <p class="tree-more"><a href="{slug}/{tslug}">Read more and get directions &rarr;</a>
-        <button type="button" class="seen-btn" data-tree="{esc(t['id'])}" aria-pressed="false">
-          <span class="seen-mark" aria-hidden="true"></span><span class="seen-text">I stood here</span>
+        <button type="button" class="seen-btn" data-tree="{esc(t['id'])}"
+                data-lat="{loc['latitude']}" data-lng="{loc['longitude']}"
+                data-radius="{200 if location_is_approximate(t) else 75}" aria-pressed="false">
+          <span class="seen-mark" aria-hidden="true"></span><span class="seen-text">Check in at this tree</span>
         </button></p>
     </article>"""
         markers.append({"lat": loc["latitude"], "lng": loc["longitude"], "label": str(i),
