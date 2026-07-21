@@ -15,7 +15,7 @@ on:
     #   - cron: "0 19-23 * * *"
     #   - cron: "0 0-7 * * *"
     # which leaves 10:00-21:00 Amsterdam free.
-    - cron: "0 * * * *"
+    - cron: "*/20 * * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -56,9 +56,19 @@ jobs:
             python3 scripts/build_site.py to confirm the site still builds and every
             contract validates, then commit, append to LOG.md, and push.
 
-            Respect every hard rule in CLAUDE.md, including the decision boundary
-            under "What runs decide alone": act freely in the first column, act and
-            log in the second, and never touch the third. One piece of work per run,
-            done properly, then stop.
+            Respect every hard rule in CLAUDE.md, including the mandate: the two
+            ranked goals, the three question test for anything nobody wrote a rule
+            for, and the hard list of five things that stay closed.
+
+            Getting through the usage limit at all is the rare event here, so do not
+            stop after one item. When a piece of work is finished, committed and
+            pushed, go back to Step 0, pick the next rung, and keep going until the
+            usage limit stops you or the clock runs out.
+
+            Two rules on that, and they matter more than the throughput:
+            - Finish and commit each item completely before starting the next. A
+              half-researched city is worse than none. Never leave one part done.
+            - Start no new item more than 60 minutes in. The job is killed at 90,
+              and work killed mid-flight is work lost.
           claude_args: |
             --allowedTools "Bash(git:*),Bash(python3:*),Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
