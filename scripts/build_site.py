@@ -48,7 +48,7 @@ SUBMISSION_FORM_URL = ""
 # this to pick up submissions without Hidde in the loop; see CLAUDE.md Step 0b.
 # Do not collect email addresses in the form: this sheet is world-readable, and
 # the submitter's name is published as a credit anyway.
-SUBMISSIONS_CSV_URL = ""
+SUBMISSIONS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRND_8GK5Pa2Y14STlWuVHwtgyn4quT3E0EcplJ6qqIgHWWzglH_7ZXerP9O3V7xhh-ZqUL9fhlypNx/pub?gid=1337691418&single=true&output=csv"
 
 MAPLIBRE_JS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"
 MAPLIBRE_CSS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
