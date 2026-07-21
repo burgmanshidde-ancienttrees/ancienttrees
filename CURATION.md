@@ -2,6 +2,17 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-21 — Paris quality-floor improvement (pins resolved, one photo added)
+
+- Paris was below the quality floor set in CLAUDE.md's priority ladder (8 of 10 trees `location_precision: approximate`, only 2 of 10 with a photo), and LOG.md's 2026-07-21 09:00 entry had already flagged it as the top priority once every pin's real precision was made honest. This run improved Paris instead of starting a sixth city.
+- All 8 approximate pins resolved to `confirmed`:
+  - Five city-managed trees (Great Plane of Parc Monceau, Sequoia of Buttes-Chaumont, Caucasian Elm of Avenue Foch, Plane of Parc Montsouris, Sophora of Buttes-Chaumont) matched against the Ville de Paris open tree registry (opendata.paris.fr, dataset `les-arbres`), which tags officially classified "remarkable" trees with measured circumference and height. Each match was the sole tree of its species flagged remarkable within its park/avenue, and physical dimensions were cross-checked against the story's own figures before accepting the coordinates.
+  - Three Jardin des Plantes trees (Cedar of Jussieu, Second Robinier, Buffon Plane) are not in that city registry: the Jardin des Plantes is grounds of the Museum national d'Histoire Naturelle, not a city park, so Paris's own tree dataset does not cover it. Resolved instead via OpenStreetMap, which has each as an individually mapped, named heritage-tree node (`Cedre de Jussieu`, `Robinier de Robin`, `Platane de Buffon`). The Buffon Plane's OSM tag ("Plante par Buffon en 1785") and the Cedar's (`start_date: 1734`) matched the sourced planting years exactly; the Second Robinier's identity was cross-checked against a local history blog describing Vespasien Robin's 1636 planting at the same spot.
+  - Worth remembering for any future Paris (or botanical-garden-adjacent city) work: `opendata.paris.fr` covers city-managed street and park trees only, not institutional grounds like the Jardin des Plantes, the Bois de Boulogne's arboretum, or similar.
+  - The Sequoia's older "only one detailed source" flag is also cleared: sequoias.eu's national giant-sequoia survey independently confirms the tree (40m / 485cm circumference vs. the registry's 33m / 553cm; figures differ by measurement date but agree this is the same exceptional specimen).
+- One photo added: the Great Plane of Parc Monceau, Public Domain, Tangopaso via Wikimedia Commons, found_needs_check for your approval. Confirmed as the right tree from the category description (planted 1814, 31m tall, matching the story exactly). This brings Paris to 3 of 10 photos, clearing the photo floor.
+- 7 trees still have no photo (Second Robinier, Buffon Plane, Sequoia of Buttes-Chaumont, Elm of Saint-Gervais, Caucasian Elm of Avenue Foch, Plane of Parc Montsouris, Sophora of Buttes-Chaumont): searched Wikimedia Commons categories for Buttes-Chaumont and Jardin des Plantes plants, nothing usable turned up this round. Worth another pass in a future improvement round.
+
 ## 2026-07-20 — Rome (full research run, nightly workflow)
 
 - 10 trees researched from scratch and written to `data/cities/rome.json`. Italy's national monumental tree law (10/2013) and the RAMI registry (ilregistrodeglialberi.it) made age and coordinate data unusually solid for several of these; Rome alone has 65 nationally registered monumental trees, more than any other Italian city.
