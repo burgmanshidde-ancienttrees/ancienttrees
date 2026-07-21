@@ -212,7 +212,27 @@ Five things stay closed no matter how well they score above, each for a reason t
 
 Also unchanged: **SEO_GEO_BLUEPRINT.md and TONE_OF_VOICE.md need Hidde's yes to edit** (hard rule 7), and so does **the brand**: name, domain, logo, core positioning.
 
-### The paywall line is deliberately undecided
+### Where this is going: a paywall, and therefore accounts
+
+Recorded 2026-07-21 at Hidde's request, so no future run has to rediscover it or argue him out of it.
+
+**He intends to charge for this eventually.** Not donations alone, an actual paid tier. Nothing below is a reason to talk him out of that; it is the destination.
+
+**And he is right that the passport cannot stay in LocalStorage forever.** Someone who has ticked off forty trees across three countries will not accept losing them, and they will lose them: browser storage goes when someone clears their data, does not exist in private browsing, never syncs between a phone and a laptop, and Safari on iOS deletes it outright after seven days without a visit. That last one breaks the exact case this feature exists for, a trip where you collect over weeks.
+
+Those two facts are one fact. **A paywall requires accounts**, because an entitlement someone paid for cannot live in storage the browser is free to delete. So the hard list item on accounts is not permanent, and pretending otherwise would be dishonest about where this is heading.
+
+What it does mean is that accounts are a project, not an afternoon. When it happens it brings a server, a database, someone's email address, a privacy policy, a data breach you can now have, subject access requests, and a bill. It also cannot be built without Hidde: it is his liability, his provider account and his name on the privacy policy.
+
+So the sequence, and the reasoning behind it:
+
+1. **Now: keep the passport local, and make losing it hard.** Let people export or back up what they have collected without an account. Cheap, no personal data, and it removes the worst failure before anyone has been burned by it.
+2. **When there is evidence anyone wants this:** real visitors, submissions arriving, people actually ticking trees off. Then accounts and payment become the obvious next build rather than a bet.
+3. **Never before then**, because an account system built for nobody is the most expensive way to learn there was nobody.
+
+A run may not open this on its own. Building toward it is fine and welcome: keeping the passport data portable, keeping tree ids stable, avoiding anything that would make a later migration painful. Building the accounts themselves needs Hidde.
+
+### The interim paywall line is still undecided
 
 Hidde's instinct is that web and app should draw the line in roughly the same place: a lot free, with the genuinely good features behind a subscription. That points at content free everywhere (every tree, story and location, on both platforms, which is also what keeps the site indexable and serves goal 1) and payment attached to the features that get people out and bring them back: routes past several trees, a log of which ones you have visited, offline maps, a nudge when a tree near you is at its best.
 
