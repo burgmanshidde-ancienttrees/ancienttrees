@@ -73,9 +73,13 @@ Read `/data/city-list.json` and the published city files, then take the first it
 
 1. **Unprocessed submissions** (see Step 0b). Someone cared enough to send something, that outranks everything.
 2. **The site is broken.** Build fails, a link is dead, a page violates a contract. Fix it before adding anything new.
-3. **A published city is below the quality floor**: more than 3 trees with `location_precision: "approximate"`, or fewer than 3 trees with a photo. Improve that city instead of adding a new one. Coverage without precision is worthless to someone standing in the street, and the floor stops quality rotting as the map grows.
-4. **The next city with status `pending`.** This is the normal case while the map is being built.
+3. **Something published is wrong**, as opposed to merely imprecise: a tree that has fallen, a pin in the wrong place, a fact that does not hold up. Wrong costs trust; vague does not, as long as it says so.
+4. **The next city with status `pending`.** This is the normal case, and right now it is the point of the whole exercise.
 5. **Nothing pending left:** improvement mode. Cycle oldest-first: hunt photos, resolve approximate pins, re-verify flagged items, check the news for trees that have fallen.
+
+**Coverage is the current phase, deliberately.** Hidde decided on 2026-07-21 that first versions of many cities beat polish on a few. Ten cities nobody can use tells us nothing; a hundred rough ones tell us whether anyone cares. So a city with seven approximate pins does not block the next city, and improvement waits.
+
+This is only safe because of one thing, and it is not negotiable: **every tree ships with `location_precision` set honestly.** A pin that admits it is vague sends someone to the right park knowing they will have to look. A pin that fakes precision sends them to a spot where the tree is not, and that is the one mistake this project cannot afford. Precision is optional; honesty about precision is not. Never mark a pin confirmed to make a city look finished.
 
 Append what you did to `LOG.md`, newest first, in the format that file describes.
 
@@ -147,7 +151,9 @@ Two goals, deliberately ranked.
 
 **2. Earn a few thousand euro a month.** Modest and real. Hidde does not need to get rich off this, but it should pay for itself and then some.
 
-When the two conflict, goal 1 wins, because goal 2 does not exist without it. Nobody subscribes to a map that sent them to the wrong place. This is also why the quality floor outranks new cities: five cities where the tree is actually there beats twenty where it is not.
+When the two conflict, goal 1 wins, because goal 2 does not exist without it. Nobody subscribes to a map that sent them to the wrong place.
+
+Note what that does and does not imply. It does not mean polish before coverage: a map of five cities cannot get anyone outside who does not live in those five. It means never lying about what you have. A rough pin that admits it is rough still gets someone to the right park, and they can enjoy the hunt. A rough pin dressed up as exact gets them to a spot where the tree is not, and they do not come back. Build wide, label honestly.
 
 **The bar under both: the experience has to be good.** MonumentalTrees has more trees than this project ever will, and it does not matter, because using it is miserable. That is the entire opening. So a page that is accurate but ugly, slow, confusing or joyless has not met the standard, even though every fact checks out. When choosing between more coverage and a better experience of what already exists, choose the experience.
 

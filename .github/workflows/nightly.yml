@@ -44,11 +44,15 @@ jobs:
             project. Read CLAUDE.md in the repository root and execute "The research
             workflow (autonomous run)" exactly as written.
 
-            Do not assume the job is to add a new city. Step 0 holds a priority
-            ladder; work out which rung actually applies today and do that. A city
-            below the quality floor outranks a new city, and reader submissions
-            outrank everything. Adding a sixth city while the first five have
-            unresolved pins is the wrong call, and the ladder is what says so.
+            Step 0 holds a priority ladder; work out which rung applies and do that.
+            Reader submissions outrank everything. Something published being wrong
+            outranks adding more. Otherwise the job is coverage: the next pending
+            city, and then the one after that.
+
+            Coverage is the current phase by Hidde's explicit decision. Approximate
+            pins and missing photos do not block the next city. What does block it:
+            shipping a tree without location_precision set honestly. Vague is fine
+            when it says it is vague; fake precision is not.
 
             Whatever the work turns out to be: verify against two independent
             sources, follow TONE_OF_VOICE.md and SEO_GEO_BLUEPRINT.md, set
