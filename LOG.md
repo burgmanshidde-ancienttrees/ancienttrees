@@ -44,6 +44,15 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-21 21:15 — Barcelona researched and live: 8 cities, 80 trees
+
+- No reader submissions (CSV checked: header row only). Site was healthy, nothing published was wrong, so went to the next rung: the next pending city, Barcelona.
+- 10 trees researched, written and shipped. The throughline: Barcelona keeps two tree registries, a broad municipal catalogue and a much stricter Catalan government "monumental" list held by only four trees citywide, all four sharing one ravine in the historic botanical garden, declared together in April 2025. Used that as the city intro.
+- Two of the ten grew up inside Park Guell before Gaudi built it: one still roots beneath the viaduct's stone columns, the other is a 1907 regrowth shoot from a much bigger carob that died back, ringed by its own dead wood. Full detail and what's flagged in CURATION.md.
+- 1 of 10 photos found: a public-domain 1904 photo of the viaduct carob, confirmed as the right tree. Caught a near-miss on tree #1's photo, a similarly named Wikimedia file turned out to be a different holm oak entirely on checking the file page directly; not used.
+- 5 of 10 pins approximate, honestly: two botanical-garden trees and one Laberint d'Horta tree have only the park's entrance coordinates, not a surveyed point inside the fenced ravine; the Encarnacio oak has no surveyed lat/long in any source; the Rambla plane trees are pinned as the ensemble they are, not one tree standing in for 256.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-21 20:00 — Istanbul researched and live: 7 cities, 70 trees
 
 - No reader submissions yet (checked the CSV, header row only). Site was healthy (build clean, contracts passing), nothing published was wrong, so went straight to the next pending city per the ladder: Istanbul.

@@ -2,6 +2,21 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-21 — Barcelona (full research run, nightly workflow)
+
+- 10 trees researched from scratch and written to `data/cities/barcelona.json`. Tier 1, eighth city to go live. No reader submissions pending (CSV checked: header row only). Nothing published was found to be wrong, so this was the next rung of the ladder: the next pending city.
+- The unifying thread: Barcelona runs two separate registries for its trees, a large municipal Catalogue of Trees of Local Interest (200+) and a much rarer Catalan government "monumental tree" designation held by only four specimens citywide, all four declared together in April 2025 and all four growing in the same ravine, the Sot de l'Estany, inside the historic botanical garden on Montjuic. Used that as the city intro.
+- 4 flagged:
+  - **The Regrown Carob of Placa de la Natura** (Park Guell): the current trunk is a ~1907 regrowth shoot from a much larger carob (4m+ trunk circumference) that died back or was cut; no source records the original tree's age, so the story states plainly that only the current stem's age is known.
+  - **The Carob of the Viaduct** (Park Guell): access description (whether the viaducts sit in Park Guell's free wooded perimeter versus the ticketed Monumental Zone) comes from secondary sources rather than a confirmed current park map; flagged for an on-the-ground check.
+  - **The Magnolia of the Maternity Gardens**: both sources describing it call it "centenaria" (100+ years) without a specific planting date, so the age range is left deliberately wide (100-135) rather than implying false precision.
+  - **The Plane Trees of La Rambla**: the municipal catalogue itself lists this as a collection (256 trees, height 7-25m, trunk 0.45-2.5m), not one surveyed specimen, so it is presented and pinned as an ensemble rather than a single tree pretending to be one.
+- 1 photo found: the 1893-planted Carob of the Viaduct, via a public-domain 1904 photograph by Josep Maria Armengol i Bas on Wikimedia Commons, showing the same tree rooted among Park Guell's viaduct columns barely a year after construction finished. Noted in the tree's data that it is historical rather than a current photo, since that seemed more honest than presenting a 120-year-old image as what a visitor would see today.
+- A near-miss worth recording: a Wikimedia Commons file titled "Alzina del passeig de Gracia" looked at first like a plausible photo of tree #1, the Encarnacio holm oak, since both are old holm oaks in Gracia. Checking the file page directly showed it depicts a different, unrelated tree (L'alzina de Mossen Cinto, elsewhere on Passeig de Gracia). Not used. Worth flagging because the near-identical framing (old oak, same neighbourhood, similar name) is exactly the kind of mistake that would have shipped a wrong photo under a confident caption.
+- 9 of 10 photos missing after a real search across Wikimedia Commons, iNaturalist and general web image search; none held back the city.
+- 5 of 10 pins approximate: the two botanical-garden trees (their coordinates are the garden's single public entrance, not a surveyed point inside the fenced Sot de l'Estany), the Laberint d'Horta cedar (park-level coordinates, not the tree itself), the Encarnacio oak (no surveyed lat/long found in any source, so the address was geocoded at street level rather than trusted to a point), and the Rambla plane trees (deliberately, since they are an ensemble, not one tree). 5 confirmed: both Park Guell carobs, the Maternitat magnolia, the Placa Prim ombu, and the Casa de la Misericordia palms, all of which have exact addresses and coordinates from the city's own tree catalogue.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-21 — Istanbul (full research run, nightly workflow)
 
 - 10 trees researched from scratch and written to `data/cities/istanbul.json`. City is Tier 1, seventh to go live. No reader submissions were pending (checked the CSV: header row only).

@@ -1,0 +1,334 @@
+{
+  "city": "Barcelona",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Barcelona keeps its trees on two lists, and the gap between them tells you something. The municipal Catalogue of Trees of Local Interest holds more than 200 specimens, but the Catalan government's rarer monumental designation belongs to only four trees in the whole city, and all four grow in the same shaded ravine of the old botanical garden on Montjuic, declared together in April 2025. Barcelona's oldest tree predates the city's own street grid: a 250-year-old holm oak that outlived the farmhouse around it and now stands in a garden its neighbours spent three years fighting to save. Two more grew up inside Gaudi's Park Guell before he built around them rather than through them. None of these ten need a ticket.",
+  "meta_description": "Barcelona ranks trees twice: 200-plus of local interest, four monumental. Meet the 250-year-old oak that predates the city grid, and nine more.",
+  "question_answer": "The oldest tree in Barcelona is a holm oak on Carrer de l'Encarnacio in the Vila de Gracia neighbourhood, dated by dendrochronology to around 250 years old. It already appears on city maps from 1845, when Gracia was still farmland, and stands in a small garden opened to the public in 2021 after a three-year campaign to stop the site being demolished.",
+  "question_meta": "Barcelona's oldest tree is a 250-year-old holm oak in Gracia, saved from demolition in 2021. Its story, exact location, and nine more remarkable trees.",
+  "question_context": "The holm oak on Carrer de l'Encarnacio predates the neighbourhood that grew up around it. Gracia was a scatter of farmhouses when the tree was young, and it appears on the city's 1845 maps standing on rural land known as the Pla del Bonpa, tied to a farmhouse called Can Vidalet. Dendrochronologists, tree-ring specialists, later dated it to roughly 250 years old, making it the oldest tree in Barcelona and the plain it sits on. The tree nearly did not survive to be dated: a development plan for the historic Casetes de l'Encarnacio around it triggered a three-year local campaign, and the oak was formally catalogued as a Tree of Local Interest in 2019 specifically to stop the bulldozers. The garden around it opened to the public in April 2021, though only the facades of the original houses could be saved. For grandeur over paperwork, Barcelona's biggest tree by volume is a different story entirely: a Rehder's wingnut in the botanical garden's Sot de l'Estany ravine, reaching roughly 40 metres in a hole in the ground nobody visits. Getting to the oak: Fontana station on the L3, then an eight minute walk into Vila de Gracia.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Barcelona?",
+      "a": "A holm oak on Carrer de l'Encarnacio in Gracia, dated to about 250 years old by dendrochronology. It appears on the city's 1845 maps and survived a demolition fight as recently as 2019."
+    },
+    {
+      "q": "Where is the best place to see old trees in Barcelona?",
+      "a": "The Jardi Botanic Historic on Montjuic, where all four of the city's officially monumental trees grow together in a single ravine, the Sot de l'Estany."
+    },
+    {
+      "q": "Are Barcelona's remarkable trees free to visit?",
+      "a": "Most are, standing in public parks, squares and streets. Two exceptions charge general admission rather than a tree-specific fee: the Jardi Botanic Historic and the Parc del Laberint d'Horta, both free on set days each week."
+    },
+    {
+      "q": "Did any of Barcelona's remarkable trees predate Gaudi's Park Guell?",
+      "a": "Yes. Two carob trees on the site are older than Gaudi's park itself, and his design worked around them rather than through them: one still roots beneath a viaduct's stone columns."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bcn_001",
+      "name": "The Holm Oak of Carrer de l'Encarnacio",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "about 250 years",
+      "age_min": 245,
+      "age_max": 260,
+      "location": {
+        "address": "Carrer de l'Encarnacio 12, 08024 Barcelona",
+        "latitude": 41.4058,
+        "longitude": 2.1592,
+        "neighbourhood": "Vila de Gracia"
+      },
+      "story": "Barcelona's oldest tree nearly lost to a housing development. This holm oak already stood on the rural Pla del Bonpa, tied to a farmhouse called Can Vidalet, when Gracia was still open countryside rather than a neighbourhood. It shows up on the city's own maps from 1845, and dendrochronologists, who read a tree's age in its rings, later put its age at around 250 years. By the 2010s the oak stood in the courtyard of the Casetes de l'Encarnacio, a cluster of small 19th century houses slated for demolition to build new flats. Neighbours spent three years fighting the plan under the banner Salvem l'Alzina, Save the Oak, and in 2019 the city catalogued the tree as a Tree of Local Interest specifically to stop the diggers. It worked, partly: the houses could not be fully restored, only their facades survived, but the garden around the oak opened to the public in April 2021. The tree is now 22 metres tall with a canopy the same width, wider than any other oak measured in the city.",
+      "verified_sources": [
+        "https://beteve.cat/va-passar-aqui/arbre-mes-antic-barcelona-alzina-cases-encarnacio/",
+        "https://ajuntament.barcelona.cat/premsa/2019/03/29/lalzina-bicentenaria-del-carrer-encarnacio-catalogada-com-a-arbre-dinteres-local/",
+        "https://www.independent.cat/noticia/98379/lalzina-mes-antiga-de-barcelona-de-lindult-de-la-tala-al-projecte-de-jardi-obert",
+        "https://www.totbarcelona.cat/politica/catalogada-alzina-centenaria-gracia-salvar-casetes-encarnacio-68723/"
+      ],
+      "access": "Free, public garden",
+      "transport": "Fontana (Metro L3), 8 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "A Wikimedia Commons file named similarly (\"Alzina del passeig de Gracia\") turned out on inspection to be a different holm oak, L'alzina de Mossen Cinto, elsewhere on Passeig de Gracia. Not used, to avoid misattributing a photo to the wrong tree. Coordinates are a street-level estimate for Carrer de l'Encarnacio 12; no surveyed lat/long was found in official sources.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bcn_002",
+      "name": "The Carob of the Viaduct",
+      "species": "Carob (Ceratonia siliqua)",
+      "age_estimate": "about 130 years",
+      "age_min": 128,
+      "age_max": 135,
+      "location": {
+        "address": "Carretera del Carmel 23, Park Guell, 08024 Barcelona",
+        "latitude": 41.414833,
+        "longitude": 2.153369,
+        "neighbourhood": "Park Guell, Gracia"
+      },
+      "story": "Gaudi built stone columns shaped like tree trunks all through Park Guell, and left this real one standing in the middle of them. The carob was already rooted on the hillside, born around 1893, when Eusebi Guell hired Gaudi to turn the estate into a garden city in 1900. Rather than clear it for the viaduct he was designing, Gaudi ran the structure's sloped stone columns around the living trunk, so a real tree grows inside a colonnade built to look like a forest of them. A 1904 photograph by the Barcelona photographer Josep Maria Armengol shows the arrangement barely a year after construction finished, the young carob still slender among the new stonework. Carob trees are Mediterranean natives that shrug off drought and poor soil, exactly the terrain Guell's estate offered before Gaudi arrived. More than a century later the tree has thickened into the columns around it, an unplanned collaboration between a 19th century Catalan Modernist and a species that was growing on that slope long before he was born.",
+      "verified_sources": [
+        "https://www.bcnsostenible.cat/es/web/punt/ceratonia-siliqua-2",
+        "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest/arbre-d-interes-local-garrofer-parc-guell-viaductes-99400455077",
+        "https://commons.wikimedia.org/wiki/File:Tronc_d%27arbre_al_mig_de_columnes_del_Parc_G%C3%BCell.jpeg"
+      ],
+      "access": "Free, Park Guell's monumental zone charges general admission; the viaducts are within the free-access wooded area",
+      "transport": "Lesseps (Metro L3), 15 min walk uphill",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Tronc_d%27arbre_al_mig_de_columnes_del_Parc_G%C3%BCell.jpeg/1024px-Tronc_d%27arbre_al_mig_de_columnes_del_Parc_G%C3%BCell.jpeg",
+        "license": "Public domain",
+        "attribution": "Josep Maria Armengol i Bas (1865-1941), Wikimedia Commons, photographed September 1904",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Access note needs on-the-ground confirmation: sources describe the viaducts as being in Park Guell's freely accessible wooded perimeter rather than the ticketed Monumental Zone, but this should be double-checked against current park signage before publishing with full confidence. Photo is historical (1904), not a modern photograph. Included because it is confirmed to be this specific tree and clearly dated, not because it shows the tree's current appearance.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bcn_003",
+      "name": "The Regrown Carob of Placa de la Natura",
+      "species": "Carob (Ceratonia siliqua)",
+      "age_estimate": "about 120 years (current stem); the original tree it grew from is undated",
+      "age_min": 115,
+      "age_max": 122,
+      "location": {
+        "address": "Carrer d'Olot 15, Park Guell, 08024 Barcelona",
+        "latitude": 41.414177,
+        "longitude": 2.152849,
+        "neighbourhood": "Park Guell, Gracia"
+      },
+      "story": "This tree is technically a stump's second act. A carob once stood on this spot in Park Guell with a trunk more than four metres around, large enough to rank among the biggest of its species anywhere in the park. At some point it died back or was cut, and rather than disappear, it sent up a new shoot from the base, the way carobs and many Mediterranean trees regenerate after fire or damage. That shoot, catalogued as having sprouted around 1907, is the tree standing today: a modest 90 centimetres around, ringed by the twisted, weathered remains of the giant it replaced. The effect looks almost deliberately designed, a young trunk framed by the sculptural wreckage of its parent, in a park where Gaudi's actual stonework does the same thing on purpose elsewhere. Nobody plans a regrowth like this. The old carob's dead wood simply happened to curve the way Gaudi's stone columns do a few hundred metres away, which is either coincidence or proof that this particular hillside only knows how to grow one way.",
+      "verified_sources": [
+        "https://ajuntament.barcelona.cat/santmarti/es/guia-del-distrito/equipamientos-por-temas/listado/garrofer-de-la-placa-de-la-natura-del-park-guell-99400455078",
+        "https://guia.barcelona.cat/es/detall/garrofer-de-la-placa-de-la-natura-del-park-guell_99400455078.html"
+      ],
+      "access": "Free, within Park Guell's freely accessible wooded area (to be confirmed against current zoning, see notes on bcn_002)",
+      "transport": "Lesseps (Metro L3), 15 min walk uphill",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age given is for the current regrown stem only; the original tree's age before it died back or was cut is not recorded in any source found. Story states this honestly rather than implying continuity of age.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bcn_004",
+      "name": "The Himalayan Cedar of the Labyrinth",
+      "species": "Deodar Cedar (Cedrus deodara)",
+      "age_estimate": "about 115 years",
+      "age_min": 112,
+      "age_max": 118,
+      "location": {
+        "address": "Passeig dels Castanyers 1, Parc del Laberint d'Horta, 08035 Barcelona",
+        "latitude": 41.4362,
+        "longitude": 2.1481,
+        "neighbourhood": "Horta-Guinardo"
+      },
+      "story": "This cedar grows in the oldest surviving garden of its kind in Barcelona, a neoclassical estate commissioned in 1791 that later grew a romantic wing around it, cypress maze included. The Himalayan cedar itself is a relative latecomer to that story, planted around 1910 in what the estate calls its domestic garden, alongside a silver lime it still shares the plot with today. Himalayan cedars come from the mountains between Afghanistan and Nepal, where the wood was prized for shipbuilding and temple construction; this one has spent over a century adapting to Mediterranean summers instead. A storm at some point in its life snapped its main growth leader, the topmost shoot that normally directs a conifer's upward climb, and the tree has grown on with a slightly altered silhouette ever since, its crown now 22 metres across. The park charges admission most days, one of only two remarkable trees on this list that do, but waives it on Wednesdays and Sundays, the arrangement most of Barcelona's public gardens outside the Ciutadella still keep.",
+      "verified_sources": [
+        "https://bcnsostenible.cat/web/punt/cedrus-deodara-2",
+        "https://www.barcelona.cat/en/que-hacer-en-bcn/parques-y-jardines/arboles-de-interes-local/arbre-d-interes-local-cedre-de-l-himalaia-parc-del-laberint-99400455028",
+        "https://www.arbolesconhistoria.com/2020/08/14/ruta-arboles-laberinto-horta-barcelona/"
+      ],
+      "access": "Paid entry, free Wednesdays and Sundays",
+      "transport": "Mundet (Metro L3), 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Coordinates are the park's general location, not a surveyed pin for the tree itself, which stands in the park's 'jardi domestic' section.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bcn_005",
+      "name": "The Wingnut of the Sot de l'Estany",
+      "species": "Rehder's Wingnut (Pterocarya x rehderiana)",
+      "age_estimate": "about 100 years",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Jardi Botanic Historic, Av. dels Muntanyans, 08038 Barcelona",
+        "latitude": 41.3618,
+        "longitude": 2.1587,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "story": "Barcelona's biggest tree grows in a hole nobody visits. The Sot de l'Estany is a former quarry pit inside the city's historic botanical garden, deep enough and damp enough to work like a greenhouse, and this wingnut has used that shelter to reach roughly 40 metres, a height the city's own catalogue admits it struggled to measure with standard equipment because the surrounding walls block a laser sightline. The tree is a Rehder's wingnut, a deliberate hybrid between a Caucasian and a Chinese species first crossed in 1908 by Alfred Rehder, a horticulturist at Boston's Arnold Arboretum, which makes this specimen barely a decade or two younger than the hybrid itself. It is the only tree of its kind recorded in Barcelona, and likely for a considerable distance beyond it. In April 2025 the Catalan government named it one of only four monumental trees in the entire city, all four sharing this same ravine. Visitors to the botanical garden rarely find their way down into the Sot; the tree that beats every other in Barcelona for size stands in the one corner of the garden most people walk straight past.",
+      "verified_sources": [
+        "https://museuciencies.cat/es/quatre-exemplars-del-jardi-botanic-historic-declarats-arbres-monumentals/",
+        "https://www.arbolesconhistoria.com/2015/06/13/el-mayor-arbol-de-barcelona-huye-de-la-fama/"
+      ],
+      "access": "Paid entry to the Jardi Botanic Historic",
+      "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Height (~40m) is the municipal catalogue's own estimate, flagged there as uncertain due to measurement difficulty in the confined ravine; reported here as an estimate rather than a precise figure. Coordinates are the garden's single entrance, not a surveyed pin for the tree inside the Sot de l'Estany.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bcn_006",
+      "name": "The Green Ash of the Sot de l'Estany",
+      "species": "Green Ash (Fraxinus pennsylvanica)",
+      "age_estimate": "about 100 years",
+      "age_min": 98,
+      "age_max": 104,
+      "location": {
+        "address": "Jardi Botanic Historic, Av. dels Muntanyans 27, 08038 Barcelona",
+        "latitude": 41.3618,
+        "longitude": 2.1587,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "story": "This ash comes from the flooded river bottoms of eastern North America, a species built to have its roots underwater for weeks at a time, and it is rare enough in Barcelona that the city's own tree catalogue calls it out by name. Planted in 1924 in the same sheltered ravine, the Sot de l'Estany, that shelters the botanical garden's giant wingnut, it has grown past 24 metres tall on the humidity the old quarry pit traps at the bottom of Montjuic. Green ash rarely gets planted as an ornamental tree in Mediterranean Europe, where its native swampy habitat has no local equivalent, which is part of why the Catalan government granted it monumental status alongside three neighbours in April 2025: not the biggest tree in the garden, but among the least expected. Botanists visiting the garden's deepest corner can, in a few square metres, find a Chinese-Caucasian hybrid, an American swamp tree, a native Iberian ash and a European maple relative growing side by side, an unplanned arboretum inside an arboretum.",
+      "verified_sources": [
+        "https://museuciencies.cat/es/quatre-exemplars-del-jardi-botanic-historic-declarats-arbres-monumentals/",
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-freixe-de-pennsilvania-antic-jardi-botanic-av-dels-montanyans-sn-99400455008"
+      ],
+      "access": "Paid entry to the Jardi Botanic Historic",
+      "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Coordinates are the garden's single entrance, not a surveyed pin for the tree inside the Sot de l'Estany.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bcn_007",
+      "name": "The Magnolia of the Maternity Gardens",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "100+ years",
+      "age_min": 100,
+      "age_max": 135,
+      "location": {
+        "address": "Jardins de la Maternitat, Travessera de les Corts 159, 08028 Barcelona",
+        "latitude": 41.3812749,
+        "longitude": 2.1260995,
+        "neighbourhood": "Les Corts"
+      },
+      "story": "This magnolia is probably the biggest of its kind in Barcelona, and it grows in a garden built for a maternity hospital that no longer delivers babies. The Jardins de la Maternitat sit on the old Can Cavaller estate, developed from 1889 into a Modernista hospital complex by the architect Camil Oliveres, and the grounds kept their original planting long after the wards changed use. The magnolia itself has no recorded planting date, only a description in the city's own tree records as centenaria, over a hundred years old, which places its origin somewhere in the hospital's early decades. It has since spread past 12 metres tall and over 15 metres wide, a canopy wide enough to shade a small plaza on its own, among roughly forty tree species catalogued across the gardens. Southern magnolias flower in early summer with blooms that can reach 30 centimetres across, a single-species argument for why a hospital garden was worth keeping intact once the hospital itself moved on.",
+      "verified_sources": [
+        "https://ajuntament.barcelona.cat/santmarti/es/detall/magnolia-dels-jardins-de-la-maternitat_99400680094",
+        "https://www.barcelonatravelhacks.com/barcelona/sants-les-corts-and-pedralbes/maternitat-gardens"
+      ],
+      "access": "Free, public garden",
+      "transport": "Les Corts (Metro L3), 6 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No precise planting date found in either source; both describe the tree only as 'centenaria' (100+ years). Age range left wide to reflect that honestly rather than implying precision that doesn't exist.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bcn_008",
+      "name": "The Plane Trees of La Rambla",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "130-155 years",
+      "age_min": 130,
+      "age_max": 155,
+      "location": {
+        "address": "La Rambla, 08001 Barcelona",
+        "latitude": 41.380654,
+        "longitude": 2.173848,
+        "neighbourhood": "Ciutat Vella"
+      },
+      "story": "Barcelona's most photographed street is really a 1.2 kilometre plane tree avenue with shops underneath it. Trees have grown on La Rambla since at least 1548, according to the city's own municipal archives, and the promenade has been replanted eleven times since, the surviving plane trees arriving in a systematic push starting in 1859 that brought Parisian-style boulevard planting to Barcelona, with early stock reportedly sourced from the Devesa park in Girona. Most of today's trees date to a wave planted between 1870 and 1894, which makes the oldest survivors well over a century old, though the exact figure varies tree to tree rather than holding to one planting date, and sixteen were replaced as recently as winter 2009. There are 256 plane trees along La Rambla today, spaced roughly eight metres apart the way 19th century planners specified for every new Barcelona street. Millions of people walk beneath them every year on their way to the Boqueria market or the port, most without registering that the canopy overhead predates the Sagrada Familia.",
+      "verified_sources": [
+        "https://www.bcnsostenible.cat/es/web/punt/platanus-x-hispanica",
+        "https://www.arbolesconhistoria.com/2025/09/29/historia-platanos-rambla-barcelona/",
+        "https://josepgordiarbresipaisatge.cat/2020/08/17/els-arbres-de-les-rambles-de-barcelona/"
+      ],
+      "access": "Free, public street",
+      "transport": "Liceu (Metro L3), on La Rambla",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "This entry represents the plane tree ensemble of La Rambla as a whole rather than one surveyed specimen; the municipal catalogue itself describes the entry as a collection, with height ranging 7-25m and trunk circumference 0.45-2.5m across individual trees. Coordinates and location_precision are marked approximate for that reason, honestly, rather than pinning one tree as if it stood for all 256.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bcn_009",
+      "name": "The Ombu of Placa Prim",
+      "species": "Ombú (Phytolacca dioica)",
+      "age_estimate": "about 100 years",
+      "age_min": 96,
+      "age_max": 105,
+      "location": {
+        "address": "Placa de Prim, 08005 Barcelona",
+        "latitude": 41.3992734,
+        "longitude": 2.206778,
+        "neighbourhood": "Poblenou, Sant Marti"
+      },
+      "story": "This tree looks like it is made of muscle rather than wood, which is close to the truth. The ombu is native to the Pampas grasslands of Argentina, Uruguay and southern Brazil, and its trunk grows soft and fibrous rather than hard, swelling into rippled, root-like folds that store water through dry seasons its South American homeland is prone to. Planted in Placa Prim around 1924, one of three ombus that give this small Poblenou square its character, it has reached 9.5 metres tall with a trunk two and a half metres around at chest height and a crown spreading seven and a half metres wide, all without producing wood dense enough to be useful as timber, which is why ombus rarely get planted for anything but shade and spectacle. The species arrived in Spain as an ornamental import in the early 20th century, popular for exactly this reason: nothing else in a European city square looks quite like it. Poblenou was still an industrial district of textile mills when this one went into the ground; the mills are mostly lofts and tech offices now, and the ombu has outlasted the neighbourhood's whole first identity.",
+      "verified_sources": [
+        "https://bcnsostenible.cat/es/web/punt/phytolacca-dioica-2",
+        "https://www.barcelona.cat/es/que-hacer-en-bcn/parques-y-jardines/arboles-de-interes-local/arbre-d-interes-local-bellaombra-pl-prim-99400455038"
+      ],
+      "access": "Free, public square",
+      "transport": "Poblenou (Metro L4), 5 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bcn_010",
+      "name": "The Palms of Casa de la Misericordia",
+      "species": "California Fan Palm (Washingtonia filifera)",
+      "age_estimate": "about 120 years",
+      "age_min": 115,
+      "age_max": 125,
+      "location": {
+        "address": "Carrer d'Elisabets 24, 08001 Barcelona",
+        "latitude": 41.3830253,
+        "longitude": 2.1679675,
+        "neighbourhood": "El Raval, Ciutat Vella"
+      },
+      "story": "Four palm trees have stood in the courtyard of a former orphanage for over a century, planted around 1904 when the building still ran as the Casa de la Misericordia, a charitable institution founded in 1583 that raised abandoned girls into the 20th century. California fan palms are native to desert oases in the American Southwest and northern Mexico, an odd match on paper for a Gothic Revival courtyard in the Raval, but the species tolerates poor soil and long dry spells well enough to have become a fixture of Mediterranean city planting. For decades the courtyard itself was closed to the public, part of an institutional building tucked behind Carrer Elisabets that most of the Raval walked past without ever seeing inside. That changed recently when a cafe opened in the garden, putting four palms that had grown for a century behind closed doors back in view of anyone who orders a coffee. The building continues to house a school; the palms, remarkably, have outlasted several changes of institutional purpose above their heads.",
+      "verified_sources": [
+        "https://www.bcnsostenible.cat/es/web/punt/washingtonia-filifera",
+        "https://www.timeout.es/barcelona/es/noticias/la-mejor-terraza-del-raval-abre-en-la-casa-de-la-misericordia-041519"
+      ],
+      "access": "Free to enter the courtyard from Carrer Elisabets or via La Central bookshop; the cafe itself is paid",
+      "transport": "Catalunya (Metro L1/L3), 6 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Access described as best understood from available sources; opening hours for the courtyard itself (as distinct from the cafe) were not confirmed and should be checked before a visitor relies on this.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
