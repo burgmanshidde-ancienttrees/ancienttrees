@@ -2,6 +2,20 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-21 — Tokyo (full research run, nightly workflow)
+
+- 10 trees researched from scratch and written to `data/cities/tokyo.json`. City is Tier 1, sixth to go live.
+- The unifying thread turned out to be fire, not age: Tokyo has burned down repeatedly (1657, 1868, 1923, 1945), and five of the ten trees are ginkgos, a species whose moisture-rich wood resists igniting. That fact anchors the city intro and two FAQ entries, and it is a genuinely site-specific claim, not a template filler.
+- 3 flagged:
+  - **The Sensoji War Ginkgo**: the commonly cited 800-year age rests on the Minamoto no Yoritomo legend, not a tree-ring count. Existence, species, and the WWII fire damage (which caused the tree's National Natural Monument status to be revoked) are independently sourced; the precise age is not. Softened the "oldest in Tokyo" question-page answer to name Zenpukuji as the more formally verified claimant and Sensoji as a close, legend-based second, per the truth-outranks-polish principle.
+  - **The Kameido Tenjin Wisteria**: the shrine has cultivated wisteria continuously since its 1663 founding, but the current vines have almost certainly been renewed over that span the way a trained garden feature is, not preserved as single 360-year-old plants. Age range left wide (150-360) to reflect that honestly rather than picking a number.
+  - **The Meoto Kusu** (Meiji Jingu's camphor couple): only blog-level sources found, no official registry or newspaper. Also the youngest tree on the list by roughly six centuries (planted 1920), included for cultural significance (Japan's most-visited shrine) rather than age, and the story says so directly.
+- Location precision: 6 of 10 confirmed, 4 approximate. The four approximate pins are all cases where the tree sits inside a large garden or spans an avenue (Hamarikyu, Koishikawa Botanical Garden, the Meiji Jingu Gaien ginkgo avenue, and Meiji Jingu's inner shrine forest) rather than at a single small, well-defined address. Coordinates for the confirmed six were checked against OpenStreetMap/Nominatim geocoding, not just estimated from memory.
+- Photos: 7 of 10 found on Wikimedia Commons with valid open licenses (CC0 or CC BY-SA), all marked `found_needs_check` for your approval. 3 missing: Ueno Toshogu's camphor and the Sensoji ginkgo have no Commons photo at all; Koishikawa's ginkgo only had photos of the adjacent commemorative stone, not the tree itself, so none was used rather than guessing.
+- Superlative claims checked against other published cities: none conflict. The one internal tension (Zenpukuji vs. Sensoji, both plausibly "Tokyo's oldest") is handled inside Tokyo's own question-page context rather than left implicit.
+- Species note: 5 of the 10 trees are Ginkgo (Ginkgo biloba), using the same canonical species string already in use elsewhere on the site. That's real signal, not padding, once /species/ginkgo has enough trees across cities to justify a hand-written intro (Contract F gate is 3+ trees plus an intro), worth picking up in a future run.
+- Suggested follow-up: a stronger primary source for the Ueno Toshogu camphor (currently shrine-site-plus-travel-blog) and for the Meoto Kusu (currently blog-only) would be worth finding in improvement mode.
+
 ## 2026-07-21 — Paris quality-floor improvement (pins resolved, one photo added)
 
 - Paris was below the quality floor set in CLAUDE.md's priority ladder (8 of 10 trees `location_precision: approximate`, only 2 of 10 with a photo), and LOG.md's 2026-07-21 09:00 entry had already flagged it as the top priority once every pin's real precision was made honest. This run improved Paris instead of starting a sixth city.
