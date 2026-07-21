@@ -44,6 +44,31 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-21 17:00 — The funnel, thought through properly
+
+Hidde asked for this while away. Written to be read cold.
+
+**The funnel today, honestly:**
+
+1. Someone finds the site. Nobody does. No distribution has happened, and the domain is new, so organic search will take months, not weeks.
+2. They land on a city or tree page. These are good: story, map, directions, nearby trees.
+3. They read.
+4. They walk to a tree. Nothing bridges this, and it is where the product lives or dies.
+5. They return, or pay. No mechanism, no evidence anyone would.
+
+**The leak nobody is looking at is step 3 to 4.** Everyone is worried about step 1, and step 1 is real, but it is not the part we control. Someone reads about the Heimanseik at 22:00 on a Tuesday, thinks "nice", and never goes. The whole product is a destination read indoors, while the value only happens outdoors, on another day. Nothing currently carries the intent across that gap.
+
+Three things close it, in order of how much they help:
+- **A reason to go now.** Seasonality is the strongest and we have none of it: catkins, blossom, autumn colour, the month a given tree is worth the trip. That is knowledge nobody else has, it is cheap to research alongside the trees themselves, and it converts "nice" into "this weekend".
+- **A way to keep it.** Saving a tree or a route for later, in LocalStorage, no account. Cheap, and it is the only thing that survives closing the tab.
+- **The walk.** Built 2026-07-21. Turns ten scattered facts into one afternoon.
+
+**On measurement, which is what makes the rest answerable.** Cloudflare analytics went live today, so within days we will know whether anyone arrives at all and which pages they land on. That is the first real signal this project has ever had. Note what it cannot see: whether anyone actually walked. Nothing on a website can see that, and pretending otherwise would be the wrong thing to build.
+
+**The uncomfortable conclusion.** Every funnel improvement below step 1 multiplies a number that is currently zero. Distribution is the only step that changes the zero, and it cannot be automated: it needs Hidde to tell actual people this exists, once. Until that happens, more cities is the right work (it builds the SEO base that pays off in months) but it produces no learning at all. Runs should keep going wide, and nobody should mistake that for progress on the question of whether anyone cares.
+
+FOR HIDDE: one post, one link, to any group of people who like trees or like Amsterdam. That is the whole ask, and it is worth more than the next twenty cities.
+
 ## 2026-07-21 10:15 — Paris pulled above the quality floor instead of starting city six
 
 - Priority ladder in CLAUDE.md (rung 3, quality floor) beat rung 4 (next pending city, Tokyo): with the honest `location_precision` count from the previous run, Paris and Amsterdam were both below floor, and Paris was worse (8 of 10 approximate, 2 of 10 photos).
