@@ -74,8 +74,9 @@ Read `/data/city-list.json` and the published city files, then take the first it
 1. **Unprocessed submissions** (see Step 0b). Someone cared enough to send something, that outranks everything.
 2. **The site is broken.** Build fails, a link is dead, a page violates a contract. Fix it before adding anything new.
 3. **Something published is wrong**, as opposed to merely imprecise: a tree that has fallen, a pin in the wrong place, a fact that does not hold up. Wrong costs trust; vague does not, as long as it says so.
-4. **The next city with status `pending`.** This is the normal case, and right now it is the point of the whole exercise.
-5. **Nothing pending left:** improvement mode. Cycle oldest-first: hunt photos, resolve approximate pins, re-verify flagged items, check the news for trees that have fallen.
+4. **A published city with no photograph at all.** Not "few photos", which is polish and waits. Zero, which is different in kind: a city page made entirely of text cannot do the one job this site has, which is making someone want to walk there. One pass, get whatever can be found, then move on. Do not stay for a fifth photo.
+5. **The next city with status `pending`.** This is the normal case, and right now it is the point of the whole exercise.
+6. **Nothing pending left:** improvement mode. Cycle oldest-first: hunt photos, resolve approximate pins, re-verify flagged items, check the news for trees that have fallen.
 
 **Coverage is the current phase, deliberately.** Hidde decided on 2026-07-21 that first versions of many cities beat polish on a few. Ten cities nobody can use tells us nothing; a hundred rough ones tell us whether anyone cares. So a city with seven approximate pins does not block the next city, and improvement waits.
 
