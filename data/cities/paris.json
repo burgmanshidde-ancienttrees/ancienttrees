@@ -65,15 +65,16 @@
       "age_max": 295,
       "location": {
         "address": "Jardin des Plantes, near the Grand Labyrinth, 57 Rue Cuvier, 75005 Paris",
-        "latitude": 48.8443,
-        "longitude": 2.3556,
+        "latitude": 48.8435254,
+        "longitude": 2.3562116,
         "neighbourhood": "Jardin des Plantes, 5th arrondissement"
       },
       "story": "Legend says this cedar crossed the Channel in a hat. In 1734 the botanist Bernard de Jussieu carried two seedlings from England to Paris, and when the pot broke on the journey he is said to have finished the trip with a tree cradled in his tricorne. The story is probably embellished, which the Museum's own historians admit, but the tree is real enough: the oldest cedar of Lebanon in France, planted on the slope of the labyrinth in the royal medicinal garden that became the Jardin des Plantes. It was a sapling when Louis XV ruled, stood through the Revolution while the garden's aristocratic patrons lost their heads, and watched the menagerie fill with animals confiscated from Versailles. Nearly three centuries on, its trunk is a metre and a half thick and its flat crown is visible across the garden. A plaque at its base records the planting date for anyone who thinks to look up from the path.",
       "verified_sources": [
         "https://www.sortiraparis.com/en/what-to-visit-in-paris/history-heritage/articles/299106-did-you-know-discover-france-s-oldest-cedar-of-lebanon-in-paris-and-its-unusual-history",
         "https://bonjourparis.com/parks-and-gardens/arbres-remarquables-where-to-find-the-great-trees-of-paris/",
-        "https://www.unjourdeplusaparis.com/en/paris-vert/arbres-remarquables-paris"
+        "https://www.unjourdeplusaparis.com/en/paris-vert/arbres-remarquables-paris",
+        "https://www.openstreetmap.org/node/12713694122"
       ],
       "access": "Free, Jardin des Plantes open daily",
       "transport": "Jussieu (Metro 7/10) or Gare d'Austerlitz, 5 min walk",
@@ -83,9 +84,9 @@
         "attribution": "Tangopaso, Wikimedia Commons",
         "status": "found_needs_check"
       },
-      "curation_status": "flagged",
-      "notes": "Exact position within the Jardin des Plantes needs on-the-ground confirmation; coordinates point to the labyrinth slope area.",
-      "location_precision": "approximate"
+      "curation_status": "ai_generated",
+      "notes": "Position confirmed via OpenStreetMap's individually mapped 'Cedre de Jussieu' natural monument node, tagged start_date 1734, matching the sourced planting year.",
+      "location_precision": "confirmed"
     },
     {
       "id": "par_003",
@@ -96,14 +97,16 @@
       "age_max": 395,
       "location": {
         "address": "Jardin des Plantes, allee near the Ecole de Botanique, 75005 Paris",
-        "latitude": 48.84418,
-        "longitude": 2.35735,
+        "latitude": 48.8423439,
+        "longitude": 2.3591588,
         "neighbourhood": "Jardin des Plantes, 5th arrondissement"
       },
       "story": "Paris's second oldest tree is the son of its oldest. In 1636 Vespasien Robin, botanist to the king and son of Jean Robin, took a cutting from his father's black locust and planted it in the brand new royal medicinal garden. The father tree still stands two kilometres away at Square Rene-Viviani. The son has now been growing for close to four centuries in what became the Jardin des Plantes, making the pair almost certainly the oldest parent and child trees in any European city. It was already a mature tree when Buffon ran the garden in the 1700s and when the Museum of Natural History was founded during the Revolution. Like its father it is propped, scarred and still flowering. Botanists still take cuttings from both trees, which means the Robin family line, brought from America as a handful of seeds, keeps spreading four hundred years on. Few of the garden's seven million yearly visitors realize the unassuming acacia is nearly the oldest thing in it.",
       "verified_sources": [
         "https://fr.wikipedia.org/wiki/Robinier_du_square_Ren%C3%A9-Viviani",
-        "https://fr.anecdotrip.com/le-robinier-du-jardin-des-plantes-un-des-plus-vieux-arbres-de-paris-par-vinaigrette"
+        "https://fr.anecdotrip.com/le-robinier-du-jardin-des-plantes-un-des-plus-vieux-arbres-de-paris-par-vinaigrette",
+        "http://laerteperedulysse.blogspot.com/2014/08/jardin-des-plantes-le-coin-du-robinier.html",
+        "https://www.openstreetmap.org/node/1125740204"
       ],
       "access": "Free, Jardin des Plantes open daily",
       "transport": "Jussieu (Metro 7/10), 5 min walk",
@@ -113,9 +116,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "flagged",
-      "notes": "Exact position within the garden needs confirmation; coordinates are approximate.",
-      "location_precision": "approximate"
+      "curation_status": "ai_generated",
+      "notes": "Position confirmed via OpenStreetMap's 'Robinier de Robin' natural monument node near the Ecole de Botanique, matching a local history account of Vespasien Robin's 1636 planting.",
+      "location_precision": "confirmed"
     },
     {
       "id": "par_004",
@@ -126,15 +129,16 @@
       "age_max": 245,
       "location": {
         "address": "Jardin des Plantes, 36 Rue Geoffroy-Saint-Hilaire, 75005 Paris",
-        "latitude": 48.84345,
-        "longitude": 2.36065,
+        "latitude": 48.8440833,
+        "longitude": 2.3575737,
         "neighbourhood": "Jardin des Plantes, 5th arrondissement"
       },
       "story": "In 1785, four years before the Revolution, the naturalist Buffon planted three oriental planes in the garden he had run for half a century. This is the survivor. Buffon was then the most famous scientist in Europe, author of a 36 volume natural history that scandalized the Church by suggesting the Earth was far older than Genesis allowed. He died in 1788 and missed the Terror by five years; his son went to the guillotine. The tree his gardeners set in the ground kept growing through all of it. Oriental planes were admired in antiquity, and the Romans planted them across their empire for shade. This one received the national Remarkable Tree label in 2001. It stands near the garden's plane alley, wide trunked and mottled, old enough that the institution around it has changed its name three times while the tree kept its place. Its two siblings from the 1785 planting are gone, which makes the survivor the last living tree Buffon is known to have planted.",
       "verified_sources": [
         "https://www.pariscotejardin.fr/2011/10/arbre-historique-le-platane-dorient-du-jardin-des-plantes-paris-5e/",
         "https://www.mnhn.fr/fr/communique-de-presse/remise-du-label-arbre-remarquable-au-jardin-des-plantes-de-paris",
-        "https://lebonbon.fr/paris/news/5-arbres-remarquables-a-admirer-au-jardin-des-plantes/"
+        "https://lebonbon.fr/paris/news/5-arbres-remarquables-a-admirer-au-jardin-des-plantes/",
+        "https://www.openstreetmap.org/node/1125739914"
       ],
       "access": "Free, Jardin des Plantes open daily",
       "transport": "Gare d'Austerlitz (Metro 5/10, RER C), 4 min walk",
@@ -144,9 +148,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "flagged",
-      "notes": "Exact position within the garden needs confirmation; coordinates are approximate.",
-      "location_precision": "approximate"
+      "curation_status": "ai_generated",
+      "notes": "Position confirmed via OpenStreetMap's 'Platane de Buffon' natural monument node, tagged 'Plante par Buffon en 1785', matching the sourced date exactly.",
+      "location_precision": "confirmed"
     },
     {
       "id": "par_005",
@@ -157,26 +161,27 @@
       "age_max": 215,
       "location": {
         "address": "Parc Monceau, 35 Boulevard de Courcelles, 75008 Paris",
-        "latitude": 48.87953,
-        "longitude": 2.30869,
+        "latitude": 48.87858282,
+        "longitude": 2.30755979,
         "neighbourhood": "8th arrondissement"
       },
       "story": "The thickest tree in Paris has a waistline of seven metres. Planted in 1814, the year Napoleon abdicated and the allied armies camped in the city, this oriental plane grew up in what was then the private pleasure garden of the Orleans family. Parc Monceau had been laid out as an aristocratic fantasy of ruins and follies, and the plane outgrew all of them. It is now 31 metres tall with a crown to match, the largest of its species in the city. The park around it became public under Haussmann in 1861, and the tree has since shaded Proust, who walked here as a boy, and several generations of the best dressed joggers in Paris. Its bark peels in grey and cream patches and its lower branches are thicker than most full grown street trees. The city lists it among its officially remarkable trees. Stand at the trunk and look up: the first branch is higher than the surrounding lampposts.",
       "verified_sources": [
         "https://www.unjourdeplusaparis.com/en/paris-vert/arbres-remarquables-paris",
-        "https://bonjourparis.com/parks-and-gardens/arbres-remarquables-where-to-find-the-great-trees-of-paris/"
+        "https://bonjourparis.com/parks-and-gardens/arbres-remarquables-where-to-find-the-great-trees-of-paris/",
+        "https://opendata.paris.fr/explore/dataset/les-arbres/"
       ],
       "access": "Free, park open daily",
       "transport": "Monceau (Metro 2), at the park gates",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Platane_du_parc_Monceau_1.jpg",
+        "license": "Public domain",
+        "attribution": "Tangopaso, Wikimedia Commons",
+        "status": "found_needs_check"
       },
-      "curation_status": "flagged",
-      "notes": "Exact position within Parc Monceau needs confirmation; coordinates point to the park centre.",
-      "location_precision": "approximate"
+      "curation_status": "ai_generated",
+      "notes": "Position confirmed via the Ville de Paris open tree registry: the only Platanus orientalis in Parc Monceau flagged remarquable, circumference 645cm and height 31m, matching the story's figures.",
+      "location_precision": "confirmed"
     },
     {
       "id": "par_006",
@@ -187,13 +192,15 @@
       "age_max": 170,
       "location": {
         "address": "Parc des Buttes-Chaumont, 1 Rue Botzaris, 75019 Paris",
-        "latitude": 48.87889,
-        "longitude": 2.38278,
+        "latitude": 48.87975205,
+        "longitude": 2.38066246,
         "neighbourhood": "19th arrondissement"
       },
       "story": "A Californian giant grows on a former gypsum quarry in working class Paris. When Napoleon III opened the Parc des Buttes-Chaumont in 1867, his engineers had just finished transforming a scarred industrial pit into a romantic landscape of cliffs, waterfalls and a temple on a crag. Among the plantings was a sequoia from the Sierra Nevada, a species that had only been described by Western botanists fifteen years earlier and was the horticultural sensation of the age. It is now the tallest tree in Paris at over 35 metres, with a trunk approaching five metres around. In its native range such a tree would be a juvenile; sequoias live for three thousand years, which means this one could still be standing when every building visible from the park has been replaced. The species name honours Sequoyah, the inventor of the Cherokee writing system. The park's chief gardeners have called it the crown of their collection.",
       "verified_sources": [
-        "https://www.unjourdeplusaparis.com/en/paris-vert/arbres-remarquables-paris"
+        "https://www.unjourdeplusaparis.com/en/paris-vert/arbres-remarquables-paris",
+        "http://www.sequoias.eu/Pages/Locations/Ile_de_France/buttes_chaumont.htm",
+        "https://opendata.paris.fr/explore/dataset/les-arbres/"
       ],
       "access": "Free, park open daily",
       "transport": "Botzaris or Buttes-Chaumont (Metro 7bis)",
@@ -203,9 +210,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "flagged",
-      "notes": "Only one detailed source found so far; needs a second independent source for height and age claims. Position within the park approximate.",
-      "location_precision": "approximate"
+      "curation_status": "ai_generated",
+      "notes": "Position confirmed via the Ville de Paris open tree registry: the only Sequoiadendron giganteum in the park flagged remarquable (circumference 553cm, height 33m). Second independent source found, sequoias.eu's national survey of giant sequoias in France, which lists this specimen at 40m/485cm circumference; figures vary by measurement date but confirm the same tree.",
+      "location_precision": "confirmed"
     },
     {
       "id": "par_007",
@@ -245,14 +252,15 @@
       "age_max": 180,
       "location": {
         "address": "Avenue Foch, lower section near Porte Dauphine, 75116 Paris",
-        "latitude": 48.87199,
-        "longitude": 2.28316,
+        "latitude": 48.87264176,
+        "longitude": 2.28136406,
         "neighbourhood": "16th arrondissement"
       },
       "story": "The grandest avenue in Paris keeps its most interesting tree off the main carriageway. Avenue Foch, 120 metres wide and lined with the most expensive apartments in the city, was laid out in the 1850s as the Avenue de l'Imperatrice, the ceremonial route from the Arc de Triomphe to the Bois de Boulogne. Its lower stretch served as a tree nursery, and a Caucasian elm planted there in 1852 simply never left. The species comes from the mountains between the Black and Caspian Seas and is rare in western Europe. This specimen is now 30 metres tall with a fluted, muscular trunk nearly four metres around, one of the finest of its kind in France. It has watched the avenue change from imperial parade ground to Belle Epoque promenade to the discreet fortress of embassies and old money it is today. The city has classified it among its officially remarkable trees.",
       "verified_sources": [
         "https://www.paris.fr/photos/13-arbres-classes-remarquables-25",
-        "https://bonjourparis.com/parks-and-gardens/arbres-remarquables-where-to-find-the-great-trees-of-paris/"
+        "https://bonjourparis.com/parks-and-gardens/arbres-remarquables-where-to-find-the-great-trees-of-paris/",
+        "https://opendata.paris.fr/explore/dataset/les-arbres/"
       ],
       "access": "Free, public avenue side lawns",
       "transport": "Porte Dauphine (Metro 2), 2 min walk",
@@ -262,9 +270,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "flagged",
-      "notes": "Exact position along the avenue needs confirmation; coordinates point to the lower section.",
-      "location_precision": "approximate"
+      "curation_status": "ai_generated",
+      "notes": "Position confirmed via the Ville de Paris open tree registry: the only Zelkova carpinifolia among five Zelkovas in the Avenue Foch garden, and the sole one flagged remarquable (circumference 445cm, height 27m).",
+      "location_precision": "confirmed"
     },
     {
       "id": "par_009",
@@ -275,14 +283,15 @@
       "age_max": 190,
       "location": {
         "address": "Parc Montsouris, 2 Rue Gazan, 75014 Paris",
-        "latitude": 48.82233,
-        "longitude": 2.33839,
+        "latitude": 48.82271470,
+        "longitude": 2.33868841,
         "neighbourhood": "14th arrondissement"
       },
       "story": "This plane tree is older than the park around it. Planted in 1840, it was a 30 year old tree when Napoleon III's engineers began carving Parc Montsouris out of old quarries and windmill land in the 1860s, and they built the park around trees like this one. It is now the heavyweight of the 14th arrondissement: six metres around the trunk and 30 metres tall, officially classified as remarkable by the city. Parc Montsouris became the southern anchor of Haussmann's plan to give every quarter of Paris an English style landscape park, and students from the nearby Cite Universitaire have been reading under this tree for a century. The RER line runs in a cutting through the park, which means several million commuters a year pass within metres of one of the oldest planted trees in southern Paris without knowing it is there. The city classified it formally among its remarkable trees, one of only a handful in the south of Paris.",
       "verified_sources": [
         "https://www.paris.fr/photos/13-arbres-classes-remarquables-25",
-        "https://www.pariszigzag.fr/secret/lieux-insolites/arbres-remarquables-paris"
+        "https://www.pariszigzag.fr/secret/lieux-insolites/arbres-remarquables-paris",
+        "https://opendata.paris.fr/explore/dataset/les-arbres/"
       ],
       "access": "Free, park open daily",
       "transport": "Cite Universitaire (RER B), 2 min walk",
@@ -292,9 +301,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "flagged",
-      "notes": "Exact position within the park needs confirmation; coordinates point to the park centre.",
-      "location_precision": "approximate"
+      "curation_status": "ai_generated",
+      "notes": "Position confirmed via the Ville de Paris open tree registry: of two Platanus x hispanica flagged remarquable in the park, this one's height (30m) matches the story exactly and its circumference (670cm) is close to the six metres reported.",
+      "location_precision": "confirmed"
     },
     {
       "id": "par_010",
@@ -305,14 +314,16 @@
       "age_max": 155,
       "location": {
         "address": "Parc des Buttes-Chaumont, lake edge, 75019 Paris",
-        "latitude": 48.87843,
-        "longitude": 2.38235,
+        "latitude": 48.88146587,
+        "longitude": 2.38367691,
         "neighbourhood": "19th arrondissement"
       },
       "story": "Some trees earn their place through size, this one through posture. The Japanese pagoda tree at the edge of the Buttes-Chaumont lake was planted in 1873, six years after the park opened, and has spent 150 years leaning slowly toward the water. It is short for a remarkable tree, ten metres, but its trunk is nearly four metres around and its low, twisting silhouette against the lake and the artificial cliff behind it has made it one of the most photographed trees in the park. Pagoda trees reached Europe from China in the 1740s via a Jesuit missionary's seeds, and Paris planted them enthusiastically in its new parks. This one grew up alongside the Third Republic, survived both sieges of Paris in 1870 and 1871 while the park was barely three years old, and now shades rowers and picnickers on the same bank. The city lists it among its officially classified remarkable trees.",
       "verified_sources": [
         "https://www.paris.fr/photos/13-arbres-classes-remarquables-25",
-        "https://bonjourparis.com/parks-and-gardens/arbres-remarquables-where-to-find-the-great-trees-of-paris/"
+        "https://bonjourparis.com/parks-and-gardens/arbres-remarquables-where-to-find-the-great-trees-of-paris/",
+        "https://www.pariszigzag.fr/insolite/lieux-insolites/sophora-japon-paris/",
+        "https://opendata.paris.fr/explore/dataset/les-arbres/"
       ],
       "access": "Free, park open daily",
       "transport": "Buttes-Chaumont (Metro 7bis), 5 min walk",
@@ -322,9 +333,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "flagged",
-      "notes": "Lake edge position approximate; needs exact confirmation.",
-      "location_precision": "approximate"
+      "curation_status": "ai_generated",
+      "notes": "Position confirmed via the Ville de Paris open tree registry: the only Styphnolobium japonicum in the park flagged remarquable (circumference 410cm, height 12m), slightly larger than the 375cm/10m widely reported in press coverage, consistent with continued growth since those articles were written.",
+      "location_precision": "confirmed"
     }
   ]
 }

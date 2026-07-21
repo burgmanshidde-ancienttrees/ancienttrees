@@ -65,6 +65,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-21 10:15 — Paris pulled above the quality floor instead of starting city six
+
+- Priority ladder in CLAUDE.md (rung 3, quality floor) beat rung 4 (next pending city, Tokyo): with the honest `location_precision` count from the previous run, Paris and Amsterdam were both below floor, and Paris was worse (8 of 10 approximate, 2 of 10 photos).
+- Resolved all 8 approximate Paris pins to confirmed. Five city park/avenue trees matched against the Ville de Paris open tree registry (opendata.paris.fr); the three Jardin des Plantes trees aren't in that dataset at all (the garden belongs to the Museum national d'Histoire Naturelle, not the city) so those came from OpenStreetMap's individually named heritage-tree nodes instead, cross-checked against sourced planting dates.
+- Added one photo (Great Plane of Parc Monceau, Public Domain), clearing Paris's photo floor too.
+- Paris now has 0 approximate pins and 3 of 10 photos. Full detail in CURATION.md.
+- Amsterdam is still below floor (7 of 10 approximate, 2 of 10 photos) and is next in line for the same treatment, ahead of Tokyo.
+
 ## 2026-07-21 09:00 — Every pin now says honestly how precise it is
 
 - Set `location_precision` explicitly on all 50 trees. It was set on none of them, despite CLAUDE.md requiring it on every tree.
