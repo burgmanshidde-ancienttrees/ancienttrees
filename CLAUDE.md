@@ -135,32 +135,55 @@ For each new submission:
 
 A submitted tree that verifies is worth more than a new city researched from scratch, because it proves someone cares about that city. Process submissions first, then continue with the next pending city if the usage window still allows.
 
-## What runs decide alone
+## The mandate
 
-Hidde has limited time and checks in sporadically. Work on the assumption that nobody is watching, and that anything you do can be read back later in `LOG.md`.
+This section exists so a run can decide for itself. Hidde is not watching, does not want to be the thing that starts the work, and will read `LOG.md` when he feels like it. Everything below is what he would say if you could ask him.
 
-**Decide alone, no permission needed:**
-- Researching, verifying, writing and publishing cities and trees
-- Finding photos with valid open licences, resolving approximate locations
-- Rewriting weak copy so it meets TONE_OF_VOICE.md
-- Fixing bugs, dead links, contract violations, slow pages
-- Improving layout and styling *within* the existing visual language
-- Processing reader submissions and corrections
+### What this is for
 
-**Propose in `LOG.md` and go ahead, unless Hidde objects afterwards:**
-- New collection drafts (Contract D still applies: they ship as drafts)
-- Design refinements a visitor would notice, like changing an icon set or a page's structure
-- New species pages once a species clears the gate
+Two goals, deliberately ranked.
 
-**Never without Hidde saying yes first:**
-- Changing SEO_GEO_BLUEPRINT.md or TONE_OF_VOICE.md (hard rule 7)
-- Anything that costs money, or changes pricing, plans or the paywall
-- The brand: name, domain, logo, core positioning
-- Publishing anything that speaks *as* Hidde, or contacting anyone on his behalf
-- Anything irreversible: deleting data, force-pushing, retiring a URL
-- Adding a dependency, a third-party service, or a tracker
+**1. Get someone to walk to a specific tree and enjoy standing in front of it.** Not "raise awareness of trees", not traffic. A named person, on a named street, looking up at a named tree that turned out to be worth the walk. Every feature, page and sentence is judged on whether it makes that more likely.
 
-When something falls between columns, put it in the middle one and write down why. Being wrong in `LOG.md` is cheap; being wrong in the last column is not.
+**2. Earn a few thousand euro a month.** Modest and real. Hidde does not need to get rich off this, but it should pay for itself and then some.
+
+When the two conflict, goal 1 wins, because goal 2 does not exist without it. Nobody subscribes to a map that sent them to the wrong place. This is also why the quality floor outranks new cities: five cities where the tree is actually there beats twenty where it is not.
+
+**The bar under both: the experience has to be good.** MonumentalTrees has more trees than this project ever will, and it does not matter, because using it is miserable. That is the entire opening. So a page that is accurate but ugly, slow, confusing or joyless has not met the standard, even though every fact checks out. When choosing between more coverage and a better experience of what already exists, choose the experience.
+
+### Deciding on something nobody wrote a rule for
+
+Most of what comes up is not in any list. Ask three questions, in order:
+
+1. **Does it serve goal 1 or goal 2?** If neither, do not do it, however satisfying it looks. Activity is not progress.
+2. **Can Hidde undo it?** Anything reversible is yours to decide. Ship it, write it in `LOG.md`, let him object afterwards. Being wrong in `LOG.md` is cheap.
+3. **Can it hurt anyone other than Hidde?** Readers, submitters, people whose photos or data are involved. If yes, stop, whatever question 1 and 2 said. This is the only one that overrides the rest.
+
+Then act. **When questions 1 and 2 pass and 3 is clear, do it, and do not ask.** Waiting for permission is the failure mode this project is built to avoid. Write down what you did and why, especially when the call was close.
+
+Design, layout, features, page structure, copy, iconography and content all pass this test routinely. Hidde has said explicitly that until the product is proven he would rather you moved than checked. Take him at his word.
+
+### The hard list
+
+Five things stay closed no matter how well they score above, each for a reason that does not expire. If something is genuinely adjacent to one of these but not actually it, that is question 2 territory: go ahead and log it.
+
+1. **No accounts, logins, or storage of personal data.** The moment real people's email addresses or profiles are involved, a mistake stops being Hidde's problem and becomes theirs, plus a GDPR liability in his name. Note this is the one item Hidde waved off and it stayed closed anyway: the loose phase is exactly when the foundation that data later flows into gets built, so it is the most expensive time to get wrong. A waitlist form that posts to Hidde is fine. A user table is not.
+2. **No taking payments or setting prices.** Payment processors, subscriptions, plan tiers and the paywall line are Hidde's, because they involve his money, his tax position and a contract with a customer. Build features that could later be paid, price none of them.
+3. **Nothing irreversible in public.** Retiring a URL Google has indexed, deleting data, force-pushing, giving up a domain. Reversible mistakes are how this project learns; unreversible ones are how it loses work permanently.
+4. **Never speak as Hidde, never contact anyone as him.** No emails, no replies to submitters in his voice, no posts under his name. Write the draft, leave it for him.
+5. **No new dependencies, third-party services, or trackers.** Each one is a cost, a privacy question and something that can break the site while nobody is looking. The stack is deliberately boring: Python, static HTML, MapLibre, OpenFreeMap.
+
+Also unchanged: **SEO_GEO_BLUEPRINT.md and TONE_OF_VOICE.md need Hidde's yes to edit** (hard rule 7), and so does **the brand**: name, domain, logo, core positioning.
+
+### The paywall line is deliberately undecided
+
+Hidde's instinct is that web and app should draw the line in roughly the same place: a lot free, with the genuinely good features behind a subscription. That points at content free everywhere (every tree, story and location, on both platforms, which is also what keeps the site indexable and serves goal 1) and payment attached to the features that get people out and bring them back: routes past several trees, a log of which ones you have visited, offline maps, a nudge when a tree near you is at its best.
+
+It is not settled, and the `2 trees free per city` model written elsewhere in this file contradicts it. Do not resolve this alone and do not build anything that forces the choice. Per hard rule 6, the question is not which model is nicer but whether anyone will pay at all, and there is no evidence yet either way. Work that pays off under every model, better trees, precise pins, photos, faster pages, is always the safer bet.
+
+### What Hidde reads when he has been away
+
+`LOG.md` is the only channel. Assume he has not looked in a week and opens it cold. Lead with what changed about the product, keep what broke separate and obvious, and only use `FOR HIDDE` when something genuinely cannot move without him. A run that quietly did nothing useful should say so plainly rather than dress up the attempt.
 
 ## Quality gate: the research standard, not Hidde
 
