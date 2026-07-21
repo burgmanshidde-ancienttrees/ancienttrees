@@ -24,11 +24,25 @@ Somewhere for people who like the project to chip in. Ko-fi is the fastest to se
 
 **Needs Hidde:** yes, unavoidably. Server, database, personal data, privacy policy, his liability.
 
-## The two-tier data model
+## The two-tier data model: rejected 2026-07-21, and why
 
-Split the map into a cheap data tier (every tree we can place from open data, hundreds per city) and a story tier (the ten or so per city that get research, verification, a written story and a photo). This is what lets the ten-per-city limit rise without the story workload rising with it, and it is the only route to world coverage that arithmetic supports.
+A run proposed splitting the map into a cheap data tier (hundreds of trees per city from open data) and a story tier (the curated ten). Hidde rejected it the same day, and he was right, so this is recorded rather than deleted: the reasoning will come back around and should not have to be re-argued.
 
-**Trigger:** finish `OPEN_DATA_SURVEY.md` first. Five cities were measured and five timed out, and the national registers have not been checked at all. Then decide the schema, because schema changes get expensive once fifty cities are in.
+**Ten per city is not a limitation, it is the mechanism.** The passport only works against a finite set. Ten of ten in Tokyo is an achievement; four of two hundred and forty-seven is a rounding error, and nobody collects a rounding error. Adding a data tier would have quietly destroyed the feature that makes people come back, in exchange for a coverage number nobody was asking for.
+
+It also protects the quality Hidde likes: at ten per city every tree gets two sources, a story and a photo. At two hundred, none of them do. MonumentalTrees already has everything and it is miserable to use. **The curation is the product**, and scarcity is what makes it one.
+
+Do not reopen this on coverage arithmetic alone. Reopen it only if there is evidence that people want breadth more than a completable set.
+
+## Open data as a research accelerator, not as content
+
+The useful half of the rejected idea. OSM and the national registers become an input to research rather than something published: a pre-sorted candidate list with coordinates already placed by mappers who stood there. Cuts the two dullest steps of a city run (finding candidates, fixing coordinates) and improves pin precision at the same time. Nothing changes about what ships: still ten, still fully researched.
+
+Second accelerator on the same theme: work a country's register out once and let every city in that country benefit, instead of rediscovering it per city.
+
+Neither speeds up the part that actually takes the time, which is writing ten researched stories, and that part should not be sped up: it is what the site is for.
+
+**Trigger:** finish `OPEN_DATA_SURVEY.md` first. Five cities measured, five timed out, national registers unchecked.
 
 ## Seasonality: when is this tree at its best
 
