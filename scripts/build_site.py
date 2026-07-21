@@ -205,6 +205,28 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
   background: var(--ink); color: #fff; font-family: var(--sans); font-size: 10px; font-weight: 600;
   line-height: 17px; text-align: center; border: 2px solid var(--cream); }
 .pin-tree.active .pin-rank { background: var(--cream); color: var(--ink); border-color: var(--moss); }
+/* The walk. On a phone this sits fixed at the bottom, because that is where a
+   thumb is when someone is standing in the street holding a coffee. */
+.route-bar { position: absolute; left: 1rem; right: 1rem; bottom: 1rem; z-index: 5;
+  display: flex; gap: 0.5rem; align-items: stretch; }
+.route-go { flex: 1; display: flex; flex-direction: column; justify-content: center;
+  background: var(--moss); color: #fff; text-decoration: none; padding: 0.7rem 1rem;
+  border-radius: 6px; font-size: 15px; font-weight: 500; line-height: 1.25;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18); }
+.route-go:hover { background: #2f4717; }
+.route-meta { display: block; font-weight: 400; font-size: 12.5px; opacity: 0.85; margin-top: 2px; }
+.route-gps { background: #fff; color: var(--ink); border: 1px solid var(--cream-dark);
+  border-radius: 6px; padding: 0.7rem 0.9rem; font-family: var(--sans); font-size: 14px;
+  cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.18); white-space: nowrap; }
+.route-gps[aria-pressed="true"] { background: var(--moss-light); border-color: var(--moss); }
+.pin-me { width: 16px; height: 16px; border-radius: 50%; background: #1E6FD9;
+  border: 3px solid #fff; box-shadow: 0 0 0 4px rgba(30,111,217,0.25); }
+@media (max-width: 800px) {
+  .route-bar { position: fixed; left: 0.75rem; right: 0.75rem;
+    bottom: calc(0.75rem + env(safe-area-inset-bottom)); }
+  /* The fixed bar would otherwise sit on top of the last tree in the list. */
+  .panel { padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
+}
 .maplibregl-popup-content { font-family: var(--sans); font-size: 13px; padding: 0.75rem 1rem; border-radius: 4px; }
 .maplibregl-popup-content strong { font-family: var(--serif); font-size: 15px; font-weight: 400; }
 
@@ -405,8 +427,110 @@ new maplibregl.Marker({{ element: el }}).setLngLat([{lng}, {lat}]).addTo(map);
 """
 
 
-def city_map_script(markers, center):
+def haversine_km(a, b):
+    """Straight line distance between two (lat, lng) points, in kilometres."""
+    lat1, lng1 = math.radians(a[0]), math.radians(a[1])
+    lat2, lng2 = math.radians(b[0]), math.radians(b[1])
+    h = (math.sin((lat2 - lat1) / 2) ** 2
+         + math.cos(lat1) * math.cos(lat2) * math.sin((lng2 - lng1) / 2) ** 2)
+    return 2 * 6371.0 * math.asin(math.sqrt(h))
+
+
+# Streets do not run in straight lines, so the crow-flies total always
+# understates a real walk. 1.35 is the usual rule of thumb for dense European
+# city centres. The number shown to a visitor is deliberately rounded and
+# labelled "about", because promising 3.8 km and delivering 4.6 is the kind of
+# small lie that loses trust on a hot afternoon.
+DETOUR_FACTOR = 1.35
+WALKING_KMH = 4.5
+
+
+# A real afternoon on foot. Beyond this it stops being a walk and starts being
+# a day out, and the honest move is to offer fewer trees rather than a number
+# nobody will act on.
+WALK_BUDGET_KM = 6.0
+WALK_MIN_TREES = 3
+
+
+def plan_walking_route(points, budget_km=WALK_BUDGET_KM):
+    """Find the best walk through a cluster of trees, not through all of them.
+
+    Routing through every tree only works in a compact city. London's ten are
+    scattered from Totteridge to Kew: a single path is 69 km, which is not a
+    walk and would make the site look like it cannot read its own data. So this
+    grows a nearest neighbour path from each possible start and stops when the
+    next tree would blow the budget, then keeps whichever attempt gathered the
+    most trees (shortest wins a tie).
+
+    Returns None when no honest walk exists, and the page then simply has no
+    route bar. Fewer trees is a fine answer; a fake one is not.
+    """
+    n = len(points)
+    if n < WALK_MIN_TREES:
+        return None
+
+    best = None
+    for start in range(n):
+        unvisited = set(range(n))
+        unvisited.remove(start)
+        order, total, current = [start], 0.0, start
+        while unvisited:
+            nxt = min(unvisited, key=lambda i: haversine_km(points[current], points[i]))
+            step = haversine_km(points[current], points[nxt])
+            if (total + step) * DETOUR_FACTOR > budget_km:
+                break
+            total += step
+            order.append(nxt)
+            unvisited.remove(nxt)
+            current = nxt
+        if len(order) < WALK_MIN_TREES:
+            continue
+        # More trees beats a shorter walk; between equals, take the shorter.
+        if best is None or (len(order), -total) > (len(best[0]), -best[1]):
+            best = (order, total)
+
+    if best is None:
+        return None
+
+    order, total = best
+    km = total * DETOUR_FACTOR
+    return {
+        "order": order,
+        "count": len(order),
+        "of": n,
+        "km": round(km, 1),
+        "minutes": int(round(km / WALKING_KMH * 60)),
+    }
+
+
+def maps_route_url(ordered_points):
+    """Hand the actual turn by turn navigation to the visitor's own maps app.
+
+    Deliberately not a routing API: that would be a new third party dependency
+    (hard rule 5) and a running cost, to reproduce something every phone
+    already does well. Google's URL scheme takes at most 9 waypoints, so the
+    middle is trimmed if a city ever carries more than eleven trees.
+    """
+    if len(ordered_points) < 2:
+        return ""
+    pts = ["{:.6f},{:.6f}".format(lat, lng) for lat, lng in ordered_points]
+    origin, destination, middle = pts[0], pts[-1], pts[1:-1]
+    if len(middle) > 9:
+        step = len(middle) / 9.0
+        middle = [middle[int(i * step)] for i in range(9)]
+    url = ("https://www.google.com/maps/dir/?api=1&travelmode=walking"
+           f"&origin={origin}&destination={destination}")
+    if middle:
+        url += "&waypoints=" + "|".join(middle)
+    return url
+
+
+def city_map_script(markers, center, route=None):
     data = json.dumps(markers)
+    route_coords = json.dumps(
+        [[markers[i]["lng"], markers[i]["lat"]] for i in route["order"]]
+        if route and len(markers) > 1 else []
+    )
     return f"""
 <script src="{MAPLIBRE_JS}"></script>
 <script>
@@ -463,6 +587,64 @@ document.querySelectorAll('.tree-card').forEach(function(card, idx) {{
     setActive(idx, true, false);
   }});
 }});
+
+// The walking line. Deliberately drawn as a dashed hint, not a solid path:
+// it is the order to walk them in, not the streets to take. Real turn by turn
+// is handed to the visitor's own maps app by the button underneath.
+// Hung on the style rather than on 'load', which waits for every tile. On a
+// slow connection in a park, 'load' can be a long time coming or never arrive,
+// and the walking line is exactly what that visitor needs first.
+var routeCoords = {route_coords};
+function addWalkLayer() {{
+  if (routeCoords.length < 2 || map.getSource('walk')) {{ return; }}
+  map.addSource('walk', {{
+    type: 'geojson',
+    data: {{ type: 'Feature', geometry: {{ type: 'LineString', coordinates: routeCoords }} }}
+  }});
+  map.addLayer({{
+    id: 'walk', type: 'line', source: 'walk',
+    layout: {{ 'line-cap': 'round', 'line-join': 'round' }},
+    paint: {{ 'line-color': '#3D5C1E', 'line-width': 2.5, 'line-opacity': 0.5, 'line-dasharray': [1.5, 2] }}
+  }});
+}}
+if (map.isStyleLoaded()) {{ addWalkLayer(); }} else {{ map.on('styledata', addWalkLayer); }}
+
+// "Where am I": browser geolocation only, nothing stored and nothing sent
+// anywhere. The dot lives in the page and dies with it.
+var gpsBtn = document.getElementById('gps-btn');
+var meMarker = null, watchId = null;
+if (gpsBtn && navigator.geolocation) {{
+  gpsBtn.addEventListener('click', function() {{
+    if (watchId !== null) {{
+      navigator.geolocation.clearWatch(watchId);
+      watchId = null;
+      if (meMarker) {{ meMarker.remove(); meMarker = null; }}
+      gpsBtn.setAttribute('aria-pressed', 'false');
+      gpsBtn.textContent = 'Where am I';
+      return;
+    }}
+    gpsBtn.textContent = 'Finding you...';
+    watchId = navigator.geolocation.watchPosition(function(pos) {{
+      var here = [pos.coords.longitude, pos.coords.latitude];
+      if (!meMarker) {{
+        var dot = document.createElement('div');
+        dot.className = 'pin-me';
+        meMarker = new maplibregl.Marker({{ element: dot }}).setLngLat(here).addTo(map);
+        map.flyTo({{ center: here, zoom: 15, duration: 1000 }});
+      }} else {{
+        meMarker.setLngLat(here);
+      }}
+      gpsBtn.setAttribute('aria-pressed', 'true');
+      gpsBtn.textContent = 'Hide me';
+    }}, function(err) {{
+      gpsBtn.textContent = err.code === 1 ? 'Location blocked' : 'Location unavailable';
+      watchId = null;
+      setTimeout(function() {{ gpsBtn.textContent = 'Where am I'; }}, 3000);
+    }}, {{ enableHighAccuracy: true, maximumAge: 10000, timeout: 10000 }});
+  }});
+}} else if (gpsBtn) {{
+  gpsBtn.hidden = true;
+}}
 </script>
 """
 
@@ -1047,6 +1229,32 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
     avg_lat = sum(m["lat"] for m in markers) / len(markers)
     avg_lng = sum(m["lng"] for m in markers) / len(markers)
 
+    # The walk, worked out at build time so a phone never has to compute it.
+    route = plan_walking_route([(m["lat"], m["lng"]) for m in markers])
+    route_bar = ""
+    if route:
+        route_url = maps_route_url([(markers[i]["lat"], markers[i]["lng"])
+                                    for i in route["order"]])
+        hours, mins = divmod(route["minutes"], 60)
+        if hours and mins:
+            duration = f"{hours}h {mins}m"
+        elif hours:
+            duration = "1 hour" if hours == 1 else f"{hours} hours"
+        else:
+            duration = f"{mins} min"
+        # Says which trees and how far, because someone who discovers halfway
+        # that this was never the full ten is someone we lost.
+        label = (f"Walk {route['count']} of these trees"
+                 if route["count"] < route["of"] else f"Walk all {route['count']} trees")
+        route_bar = f"""
+    <div class="route-bar">
+      <a class="route-go" href="{esc(route_url)}" target="_blank" rel="noopener">
+        {label}
+        <span class="route-meta">about {route['km']} km, {duration} on foot</span>
+      </a>
+      <button type="button" class="route-gps" id="gps-btn" aria-pressed="false">Where am I</button>
+    </div>"""
+
     body = f"""
 <div class="split">
   <aside class="panel">
@@ -1061,10 +1269,11 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
   </aside>
   <div class="stage">
     <div id="map" class="map"></div>
+    {route_bar}
   </div>
 </div>
 """
-    scripts = city_map_script(markers, (avg_lat, avg_lng))
+    scripts = city_map_script(markers, (avg_lat, avg_lng), route)
 
     link_count = len(trees) + 1 + (1 if coll else 0) + len(other_cities)
     check_links(canonical, link_count, 12)
