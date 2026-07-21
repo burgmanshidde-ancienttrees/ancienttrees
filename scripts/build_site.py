@@ -42,7 +42,7 @@ CONTACT = "hello@ancienttrees.app"
 # Paste the public submission form URL here and every contribution button on the
 # site switches from a prefilled mailto to the form. Left empty, the site falls
 # back to mailto so nothing is ever a dead end.
-SUBMISSION_FORM_URL = ""
+SUBMISSION_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSd2zQdm6YxndPLk9Ms8Z3YAfA-vymDZs4SDkFQZtJWzj4sb3g/viewform"
 
 # The same form's responses, published as a public CSV. The research runs read
 # this to pick up submissions without Hidde in the loop; see CLAUDE.md Step 0b.
@@ -267,9 +267,21 @@ PAGE_SHELL = """<!DOCTYPE html>
 %%BODY%%
 %%FOOTER%%
 %%SCRIPTS%%
+%%ANALYTICS%%
 </body>
 </html>
 """
+
+# Cloudflare Web Analytics: cookieless and aggregate only, so no consent banner
+# and no personal data. Chosen over Google Analytics on 2026-07-21 for exactly
+# that reason: a consent popup is friction on the street, which is where this
+# site has to work. Empty string switches it off everywhere.
+ANALYTICS_TOKEN = "fcbbfb8b426c4f6aa2066b00be6454f6"
+
+ANALYTICS_SNIPPET = (
+    "<script defer src='https://static.cloudflareinsights.com/beacon.min.js' "
+    "data-cf-beacon='{{\"token\": \"{token}\"}}'></script>"
+)
 
 FOOTER = """
 <footer>
@@ -534,6 +546,8 @@ def render_page(title, description, canonical, body, head_extra="", scripts="",
         .replace("%%BODY%%", body)
         .replace("%%FOOTER%%", footer_html)
         .replace("%%SCRIPTS%%", scripts)
+        .replace("%%ANALYTICS%%",
+                 ANALYTICS_SNIPPET.format(token=ANALYTICS_TOKEN) if ANALYTICS_TOKEN else "")
         .replace("%%YEAR%%", str(date.today().year))
     )
 
