@@ -111,6 +111,14 @@ Stories and any page copy must satisfy SEO_GEO_BLUEPRINT.md — in particular P2
 ### Step 4 — Find photos
 Search Wikimedia Commons and other openly-licensed sources (CC0, CC-BY, CC-BY-SA only). Record the exact license and attribution. If no good photo exists, set photo status to `missing`. NEVER use photos from monumentaltrees.com, Google Maps, or any source without a clear open license.
 
+**Do not stop at Wikimedia.** Coverage there varies by country rather than by tree, which is why Tokyo came in at 7 photos out of 10 and London at 0. Same trees, different places to look. When Wikimedia comes up empty, try in this order:
+- **iNaturalist**, which often has CC-licensed photographs with coordinates attached, useful for confirming a pin as well as illustrating it. Check the individual observation's licence, it varies per photo.
+- **Flickr**, filtered to CC licences. Old and well photographed trees are often there under CC-BY.
+- **Openverse**, which searches many open repositories at once.
+- **The city or park authority's own site**, where the licence is sometimes explicitly open.
+
+A photo does more for goal 1 than any paragraph, because it is what makes someone decide the walk is worth it. Hunt hard, but per the MVP mindset, never hold a city back for one.
+
 ### Step 5 — Commit and update state
 - Save the city JSON file
 - Update city-list.json (status: pending → needs_curation)
