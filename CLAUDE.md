@@ -188,6 +188,7 @@ Two lists, and the difference between them is the whole idea.
 - Never fake precision. Vague is fine when it says it is vague. See the honesty rule in Step 0.
 - Never publish a photo without a verified open licence and attribution.
 - Never promise the visitor something that is not there.
+- Never publish a tree whose location its source deliberately withholds, or one on private land that is not open to visitors (hard rule 10). Speed is never bought from a tree's safety or someone's front garden.
 
 Speed is bought from the first list only. Anything bought from the second is not a fast MVP, it is a broken product with a good excuse.
 
@@ -295,6 +296,11 @@ When he approves a city, set status to `curated` and each tree to `hidde_approve
 7. NEVER ship a page (tree, question, city, or collection) that doesn't conform to SEO_GEO_BLUEPRINT.md. Changes to that document itself require Hidde's explicit approval and a version bump.
 8. Superlative claims ("oldest in Europe", "largest of its kind", "more than X and Y combined") must be checked against what other city pages already claim before publication. When in doubt, soften to "one of the oldest" or drop the claim.
 9. Use one canonical common name per species so the species pages (Contract F) group correctly. When a species has multiple valid common names, pick the nationality-neutral one and match what other cities already use (e.g. Quercus robur is "Pedunculate Oak", never "English Oak"; Platanus x acerifolia is "London Plane"). The scientific name in parentheses is the tiebreaker for whether two trees are the same species.
+10. **Publish public trees only, and never a location its source deliberately withholds.** Decided by Hidde on 2026-07-21. Some registers hide or blur the position of particular trees, and the Woodland Trust does this openly, because visitors damage ancient trees: soil compaction over the root plate, climbing, carving, and simple footfall. Others stand on private land whose owner never invited anyone. This site publishes exact coordinates and actively sends people to the trunk, which makes it capable of causing that harm rather than merely reporting it.
+
+    So: if a source obscures a tree's location, treat that as a decision by people who know the tree and do not undo it, even where the position can be worked out from somewhere else. Do not publish a tree on private land unless it is genuinely open to visitors, and say what the access actually is. Prefer trees a city already signposts, because that is a public authority saying visitors are welcome. When in doubt, leave it out: there are far more qualifying public trees than this project will ever use, so this rule costs coverage that does not matter and prevents harm that cannot be undone.
+
+    This is a question 3 rule in the sense of the mandate: it outranks goal 1, goal 2 and every argument about speed.
 
 ## Current state (as of handover)
 
