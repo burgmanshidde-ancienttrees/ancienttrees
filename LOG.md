@@ -44,6 +44,17 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-21 20:00 — Istanbul researched and live: 7 cities, 70 trees
+
+- No reader submissions yet (checked the CSV, header row only). Site was healthy (build clean, contracts passing), nothing published was wrong, so went straight to the next pending city per the ladder: Istanbul.
+- 10 trees researched, written and shipped. Istanbul's oldest tree, a 1,300-1,400 year old plane, turned up in an unlikely place: a university forestry research forest in Bahçeköy, not a palace or a mosque. Two more protected monumental trees share that same forest.
+- The throughline that fell out of the research: Istanbul's grandest, most photographed old trees mostly did not make it. The plane said to have witnessed the 1453 conquest inside Topkapı Palace died by 1928; Dolmabahçe's palace planes were felled for canker disease in 2022. What survived instead is unglamorous: a working forest, a bazaar entrance where a poet has sat under the same tree since 1964, a cemetery, a storm-toppled plane in Çengelköy that city crews nursed back to life after 2017. Used that as the city intro.
+- One judgement call worth flagging: several sources described a Çengelköy plane as "780 years old" with a 1993 death under a falling branch. I could not confirm that claim and this storm-survivor tree are the same specimen, so I dropped the unverifiable parts and told the story I could actually source: uprooted by a 2017 storm, replanted and still recovering. Better story, and true.
+- 4 of 10 flagged for disputed ages or thin sourcing (two of the Bahçeköy forest trees, the Karacaahmet cemetery cypresses, the Florya mastic tree). Full detail in CURATION.md.
+- 0 of 10 photos found this round. Searched Wikimedia Commons for every tree; nothing came back as a confident match to the specific named tree, so all ten are `missing` rather than guessed. Worth another pass, especially Küçük Çamlıca, Büyükada and Beyazıt, which are touristy enough that photos likely exist somewhere.
+- 8 of 10 pins approximate (forest, park, cemetery or meadow locations with no street-level source for the exact tree), 2 confirmed. No pin claims more precision than it has.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-21 18:30 — Tokyo researched and live: 6 cities, 60 trees
 
 - No reader submissions yet (checked the CSV, header row only). Site was healthy (build clean, contracts passing), nothing published was wrong, so went straight to the next pending city per the ladder.
