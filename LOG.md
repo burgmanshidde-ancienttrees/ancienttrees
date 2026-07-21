@@ -19,37 +19,16 @@ If an entry has no `FOR HIDDE` line, nothing is waiting on you. That is the norm
 
 Standing list. Everything else in this file is history; this block is what is actually waiting.
 
-### 1. Make the submission form (7 minutes, only Hidde can, unlocks the flywheel)
+### 1. ~~Make the submission form~~ — DONE 2026-07-21
 
-At forms.google.com, blank template. Title `Add trees to Ancient Trees`. Seven questions in this order, email **last** (the filter below depends on it):
+Form is live and wired in. Every contribution button on the site points at it, and
+runs read the published CSV (email column excluded, so no address ever reaches a
+run or the public sheet). Form: `SUBMISSION_FORM_URL`, responses:
+`SUBMISSIONS_CSV_URL`, both in `scripts/build_site.py`.
 
-| # | Question | Type | Required |
-|---|---|---|---|
-| 1 | Which city? | Short | yes |
-| 2 | The tree, or trees | Paragraph | yes |
-| 3 | Where does it stand? | Paragraph | yes |
-| 4 | Why is it remarkable? | Paragraph | no |
-| 5 | How do you know it? | Short | no |
-| 6 | Your name, for the credit | Short | no |
-| 7 | Your email | Short | no |
-
-Help text on 3, and this one earns its length, because it is the difference between a tree we can place and one we cannot:
-
-> *Best of all: open Google Maps, press and hold the exact spot until a pin drops, then Share and copy the link here. On a computer, right-click the spot and click the coordinates to copy them. No pin? A street corner, a park entrance, or "the third big tree along the north path" all work fine. We do the rest.*
-
-Google Forms has no map field, so this is a plain text question. That is fine: the run verifies and places every location anyway, so it needs enough to find the tree, not coordinates. Help text on 7: *Only if you would like to hear when your tree goes live.*
-
-Settings: **"Collect email addresses" off**, **"Limit to 1 response" off**, or people are forced to sign in. Confirmation message: *Thank you. Your tree goes into the next research round. If it checks out, it will be on the map within days, with your name on it if you left one.*
-
-Then: Responses tab → green sheet icon → new spreadsheet. Add a second tab, cell A1:
-
-```
-=QUERY('Form Responses 1'!A:H, "SELECT A,B,C,D,E,F,G", 1)
-```
-
-(adjust the tab name if it differs). This copies everything except the email column. Then File → Share → **Publish to web** → pick **that second tab**, format **CSV**, Publish.
-
-Hand over two links: the form link and the CSV link. They go into `SUBMISSION_FORM_URL` and `SUBMISSIONS_CSV_URL` in `scripts/build_site.py`; every button on the site switches over and runs start reading submissions. The email column stays private.
+Only thing left on Hidde: nothing, until submissions arrive. Then he may want to
+mail the people who left an address to say their tree went live. That list lives
+in the private column of his own spreadsheet.
 
 ### 2. Illustrated icons (needs Hidde's eye, do it together)
 
