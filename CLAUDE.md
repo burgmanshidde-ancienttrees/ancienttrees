@@ -18,6 +18,7 @@ The end product: a website (ancienttrees.app) with an interactive map and one SE
 /CURATION.md           — log of what could not be verified, and notes worth keeping. Not a to-do list for Hidde.
 /SEO_GEO_BLUEPRINT.md  — page contracts (titles, schema, internal links, content minima). No page ships without conforming to it.
 /TONE_OF_VOICE.md      — the voice for all stories and page copy. Paris is the calibration standard.
+/LOG.md                — what each autonomous run did. Hidde's catch-up file.
 ```
 
 ## The tree data schema
@@ -66,8 +67,17 @@ Runs hourly around the clock via GitHub Actions. Most attempts hit the Claude us
 
 Each run, do exactly this, in order:
 
-### Step 0 — Read state
-Read `/data/city-list.json`. Find the next city with status `pending`. If all cities are done, switch to improvement mode (see below).
+### Step 0 — Read state and pick the work
+
+Read `/data/city-list.json` and the published city files, then take the first item on this ladder that applies. Do one thing per run and do it properly; a half-researched city is worse than none.
+
+1. **Unprocessed submissions** (see Step 0b). Someone cared enough to send something, that outranks everything.
+2. **The site is broken.** Build fails, a link is dead, a page violates a contract. Fix it before adding anything new.
+3. **A published city is below the quality floor**: more than 3 trees with `location_precision: "approximate"`, or fewer than 3 trees with a photo. Improve that city instead of adding a new one. Coverage without precision is worthless to someone standing in the street, and the floor stops quality rotting as the map grows.
+4. **The next city with status `pending`.** This is the normal case while the map is being built.
+5. **Nothing pending left:** improvement mode. Cycle oldest-first: hunt photos, resolve approximate pins, re-verify flagged items, check the news for trees that have fallen.
+
+Append what you did to `LOG.md`, newest first, in the format that file describes.
 
 ### Step 1 — Research the city's trees (BE THOROUGH)
 Search the web extensively for the city's most remarkable trees. Minimum research per city:
@@ -124,6 +134,33 @@ For each new submission:
 5. Either way, append the row id to `data/submissions-processed.json` so it is never handled twice, and note the outcome in CURATION.md.
 
 A submitted tree that verifies is worth more than a new city researched from scratch, because it proves someone cares about that city. Process submissions first, then continue with the next pending city if the usage window still allows.
+
+## What runs decide alone
+
+Hidde has limited time and checks in sporadically. Work on the assumption that nobody is watching, and that anything you do can be read back later in `LOG.md`.
+
+**Decide alone, no permission needed:**
+- Researching, verifying, writing and publishing cities and trees
+- Finding photos with valid open licences, resolving approximate locations
+- Rewriting weak copy so it meets TONE_OF_VOICE.md
+- Fixing bugs, dead links, contract violations, slow pages
+- Improving layout and styling *within* the existing visual language
+- Processing reader submissions and corrections
+
+**Propose in `LOG.md` and go ahead, unless Hidde objects afterwards:**
+- New collection drafts (Contract D still applies: they ship as drafts)
+- Design refinements a visitor would notice, like changing an icon set or a page's structure
+- New species pages once a species clears the gate
+
+**Never without Hidde saying yes first:**
+- Changing SEO_GEO_BLUEPRINT.md or TONE_OF_VOICE.md (hard rule 7)
+- Anything that costs money, or changes pricing, plans or the paywall
+- The brand: name, domain, logo, core positioning
+- Publishing anything that speaks *as* Hidde, or contacting anyone on his behalf
+- Anything irreversible: deleting data, force-pushing, retiring a URL
+- Adding a dependency, a third-party service, or a tracker
+
+When something falls between columns, put it in the middle one and write down why. Being wrong in `LOG.md` is cheap; being wrong in the last column is not.
 
 ## Quality gate: the research standard, not Hidde
 
