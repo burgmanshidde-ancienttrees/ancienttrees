@@ -35,19 +35,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run the nightly workflow from CLAUDE.md
+      - name: Run the research workflow from CLAUDE.md
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
-            You are running the autonomous nightly workflow for the Ancient Trees project.
-            Read CLAUDE.md in the repository root and execute "The nightly workflow
-            (autonomous run)" exactly as written: pick the next pending city from
-            data/city-list.json, research thoroughly, verify every tree against two
-            independent sources, write the stories in the required style, find
-            open-license photos, save the city JSON, update data/city-list.json and
-            CURATION.md, run python3 scripts/build_site.py to confirm the site still
-            builds, and commit with the prescribed message format. Push the commit.
-            Respect every hard rule in CLAUDE.md. One city per run, then stop.
+            You are running the autonomous research workflow for the Ancient Trees
+            project. Read CLAUDE.md in the repository root and execute "The research
+            workflow (autonomous run)" exactly as written.
+
+            Do not assume the job is to add a new city. Step 0 holds a priority
+            ladder; work out which rung actually applies today and do that. A city
+            below the quality floor outranks a new city, and reader submissions
+            outrank everything. Adding a sixth city while the first five have
+            unresolved pins is the wrong call, and the ladder is what says so.
+
+            Whatever the work turns out to be: verify against two independent
+            sources, follow TONE_OF_VOICE.md and SEO_GEO_BLUEPRINT.md, set
+            location_precision on every tree you touch, run
+            python3 scripts/build_site.py to confirm the site still builds and every
+            contract validates, then commit, append to LOG.md, and push.
+
+            Respect every hard rule in CLAUDE.md, including the decision boundary
+            under "What runs decide alone": act freely in the first column, act and
+            log in the second, and never touch the third. One piece of work per run,
+            done properly, then stop.
           claude_args: |
             --allowedTools "Bash(git:*),Bash(python3:*),Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
