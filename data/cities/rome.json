@@ -54,7 +54,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact botanical species never identified in any source found. Age is popular legend (up to 1000 years) with no scientific dating behind it; age_min/age_max here reflect a conservative documented-history floor, not the legend. Current physical condition after the 2011 arson (how much of the original tree survives) needs an on-the-ground check."
+      "notes": "Exact botanical species never identified in any source found. Age is popular legend (up to 1000 years) with no scientific dating behind it; age_min/age_max here reflect a conservative documented-history floor, not the legend. Current physical condition after the 2011 arson (how much of the original tree survives) needs an on-the-ground check.",
+      "location_precision": "confirmed"
     },
     {
       "id": "rom_002",
@@ -84,7 +85,8 @@
         "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Exact coordinates are for the Valle dei Platani generally, not Adonis's specific trunk; needs on-the-ground pin confirmation. Planting year is given as 'early 1600s' by every source, none more precise."
+      "notes": "Exact coordinates are for the Valle dei Platani generally, not Adonis's specific trunk; needs on-the-ground pin confirmation. Planting year is given as 'early 1600s' by every source, none more precise.",
+      "location_precision": "approximate"
     },
     {
       "id": "rom_003",
@@ -113,7 +115,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Two trees described as one entry, matching how the garden itself presents them (a pair flanking the staircase). Age range is a general foresters' estimate; no source gives an exact planting year for either specimen."
+      "notes": "Two trees described as one entry, matching how the garden itself presents them (a pair flanking the staircase). Age range is a general foresters' estimate; no source gives an exact planting year for either specimen.",
+      "location_precision": "confirmed"
     },
     {
       "id": "rom_004",
@@ -141,7 +144,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     },
     {
       "id": "rom_005",
@@ -170,7 +174,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Age disputed between two sources by up to 170 years (17th-century planting theory vs. a 150-year registry estimate). Coordinates are an approximation of the Belvedere/Lago del Giglio area within a very large park and need on-the-ground confirmation; the expropriation year (1965) is given by secondary sources and should be checked against a primary record."
+      "notes": "Age disputed between two sources by up to 170 years (17th-century planting theory vs. a 150-year registry estimate). Coordinates are an approximation of the Belvedere/Lago del Giglio area within a very large park and need on-the-ground confirmation; the expropriation year (1965) is given by secondary sources and should be checked against a primary record.",
+      "location_precision": "approximate"
     },
     {
       "id": "rom_006",
@@ -200,7 +205,8 @@
         "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Age genuinely disputed: the national registry's measured estimate (176 years) contradicts the traditional account (up to 300 years, tied to the 1784 garden redesign). Presented as a range rather than resolved."
+      "notes": "Age genuinely disputed: the national registry's measured estimate (176 years) contradicts the traditional account (up to 300 years, tied to the 1784 garden redesign). Presented as a range rather than resolved.",
+      "location_precision": "confirmed"
     },
     {
       "id": "rom_007",
@@ -228,7 +234,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     },
     {
       "id": "rom_008",
@@ -257,7 +264,8 @@
         "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "No source gives a planting date or age figure; the municipal registry designates it monumental without a number. Age range here is a conservative placeholder, not a sourced estimate. Coordinates are approximate, positioned along Viale Cardinale Spellman near the entrance; exact spot needs on-the-ground confirmation."
+      "notes": "No source gives a planting date or age figure; the municipal registry designates it monumental without a number. Age range here is a conservative placeholder, not a sourced estimate. Coordinates are approximate, positioned along Viale Cardinale Spellman near the entrance; exact spot needs on-the-ground confirmation.",
+      "location_precision": "approximate"
     },
     {
       "id": "rom_009",
@@ -286,7 +294,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source gives a planting date or age figure; the municipal registry designates it monumental without a number. Age range here is a conservative placeholder, not a sourced estimate. Coordinates are approximate and need on-the-ground confirmation."
+      "notes": "No source gives a planting date or age figure; the municipal registry designates it monumental without a number. Age range here is a conservative placeholder, not a sourced estimate. Coordinates are approximate and need on-the-ground confirmation.",
+      "location_precision": "approximate"
     },
     {
       "id": "rom_010",
@@ -314,7 +323,8 @@
         "attribution": "Albarubescens, Wikimedia Commons",
         "status": "found_needs_check"
       },
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     }
   ]
 }

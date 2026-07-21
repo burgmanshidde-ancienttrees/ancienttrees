@@ -51,7 +51,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     },
     {
       "id": "lon_002",
@@ -78,7 +79,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
     },
     {
       "id": "lon_003",
@@ -104,7 +106,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Source URLs need backfilling (original research cited Atlas Obscura and Wikimedia Commons without links)."
+      "notes": "Source URLs need backfilling (original research cited Atlas Obscura and Wikimedia Commons without links).",
+      "location_precision": "confirmed"
     },
     {
       "id": "lon_004",
@@ -130,7 +133,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Source URLs need backfilling."
+      "notes": "Source URLs need backfilling.",
+      "location_precision": "approximate"
     },
     {
       "id": "lon_005",
@@ -157,7 +161,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Tree is dead and recumbent since 1991. Ruins only. Labelled 'Fallen monument' on the city page so visitors know what to expect. Source URLs need backfilling."
+      "notes": "Tree is dead and recumbent since 1991. Ruins only. Labelled 'Fallen monument' on the city page so visitors know what to expect. Source URLs need backfilling.",
+      "location_precision": "confirmed"
     },
     {
       "id": "lon_006",
@@ -183,7 +188,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Source URLs need backfilling (original research cited Morus Londinium)."
+      "notes": "Source URLs need backfilling (original research cited Morus Londinium).",
+      "location_precision": "confirmed"
     },
     {
       "id": "lon_007",
@@ -209,7 +215,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Original research marked this tree as needing photo verification. Source URLs need backfilling."
+      "notes": "Original research marked this tree as needing photo verification. Source URLs need backfilling.",
+      "location_precision": "confirmed"
     },
     {
       "id": "lon_009",
@@ -235,7 +242,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Source URLs need backfilling."
+      "notes": "Source URLs need backfilling.",
+      "location_precision": "approximate"
     },
     {
       "id": "lon_010",
@@ -261,7 +269,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Source URLs need backfilling (original research cited Atlas Obscura)."
+      "notes": "Source URLs need backfilling (original research cited Atlas Obscura).",
+      "location_precision": "confirmed"
     },
     {
       "id": "lon_008",
@@ -287,7 +296,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Moved to position 10 pending verification (2026-07-19 quality round). Next nightly run: confirm exact coordinates within Barn Elms via two sources and research a tree-specific story to replace the generic London plane material."
+      "notes": "Moved to position 10 pending verification (2026-07-19 quality round). Next nightly run: confirm exact coordinates within Barn Elms via two sources and research a tree-specific story to replace the generic London plane material.",
+      "location_precision": "approximate"
     }
   ]
 }

@@ -702,19 +702,11 @@ def oldest_tree(trees):
 def location_is_approximate(tree):
     """Does the pin point at a rough spot rather than the tree itself?
 
-    Runs should set location_precision explicitly. Older entries only recorded
-    it in free-text notes, so fall back to reading those.
+    location_precision is the only source of truth. A tree that never got the
+    field counts as approximate: the warning next to the directions button
+    costs a visitor nothing, a missing warning costs them a wasted walk.
     """
-    if tree.get("location_precision"):
-        return tree["location_precision"] == "approximate"
-    note = (tree.get("notes") or "").lower()
-    if tree.get("curation_status") != "flagged":
-        return False
-    return any(k in note for k in (
-        "exact position", "exact gps", "exact spot", "precise position",
-        "position within", "coordinates are approximate", "street-level estimate",
-        "position at the", "approximate; needs", "lake edge position",
-    ))
+    return tree.get("location_precision", "approximate") != "confirmed"
 
 
 # ---------------------------------------------------------------- tree pages
