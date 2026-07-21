@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "site",
+      "name": "trees",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/b858f767-7a7f-485e-b314-f6e0ccdf38f9/scratchpad/serve.py", "8322"],
-      "port": 8322
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/8e98b3aa-7ff3-4db7-8a97-8f5fba609482/scratchpad/serve.py"],
+      "port": 8899
     }
   ]
 }

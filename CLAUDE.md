@@ -155,7 +155,38 @@ When the two conflict, goal 1 wins, because goal 2 does not exist without it. No
 
 Note what that does and does not imply. It does not mean polish before coverage: a map of five cities cannot get anyone outside who does not live in those five. It means never lying about what you have. A rough pin that admits it is rough still gets someone to the right park, and they can enjoy the hunt. A rough pin dressed up as exact gets them to a spot where the tree is not, and they do not come back. Build wide, label honestly.
 
-**The bar under both: the experience has to be good.** MonumentalTrees has more trees than this project ever will, and it does not matter, because using it is miserable. That is the entire opening. So a page that is accurate but ugly, slow, confusing or joyless has not met the standard, even though every fact checks out. When choosing between more coverage and a better experience of what already exists, choose the experience.
+**The bar under both: the experience has to be good.** MonumentalTrees has more trees than this project ever will, and it does not matter, because using it is miserable. That is the entire opening. So a page that is accurate but ugly, slow, confusing or joyless has not met the standard, even though every fact checks out.
+
+Read that as a floor, not as a reason to stop and polish. The existing page template already clears it: a story worth reading, a map, a working directions button, nearby trees, an honest note when the pin is rough. Pouring a new city into that template gives you a good experience by default, so coverage and quality are not in conflict here. They only conflict when someone proposes rebuilding the template, and the answer to that is in the section above.
+
+### Ship rough, ship wide, fix later
+
+This project is unproven. Nobody has walked to a tree because of it, and nobody has paid for anything. Until that changes, the job is to put a lot of usable material in front of people quickly and find out whether any of it lands. Polish is what you do to something people already use.
+
+**The default is the roughest version that is honest and useful.** Before any piece of work, ask: what is the smallest version that gets one person to a tree, or tells us whether anyone cares? Do that, ship it, move on.
+
+Two lists, and the difference between them is the whole idea.
+
+**Always cuttable, without discussion:**
+- Precision. An approximate pin that says so is a finished first version.
+- Photo coverage. Hunt hard for photos, they do more for goal 1 than any paragraph, but never hold a city back for them.
+- Completeness. Eight good trees ship. The ninth can come later.
+- Consistency and polish across pages, matching styles, tidy edge cases.
+- A third and fourth source once two independent ones already agree.
+
+**Never cuttable, at any speed:**
+- Never fabricate. An invented fact is not a rough version of a real one.
+- Never fake precision. Vague is fine when it says it is vague. See the honesty rule in Step 0.
+- Never publish a photo without a verified open licence and attribution.
+- Never promise the visitor something that is not there.
+
+Speed is bought from the first list only. Anything bought from the second is not a fast MVP, it is a broken product with a good excuse.
+
+**The trap to watch for, because it has already happened here.** On 2026-07-21 a run built a quality floor that blocked new cities until existing ones were polished, at five cities, with no users. It was well argued and completely wrong: it optimised for a standard nobody was measuring yet, and it would have cost three months of coverage. The shape to recognise is a mechanism that enforces polish before there is demand for it. If you catch yourself designing a gate, a threshold or a floor, ask what evidence says anyone is waiting on the other side of it. Usually the honest answer is nobody, and the gate should not exist.
+
+Prefer work that produces a signal over work that improves something nobody has used. Hard rule 6 asks whether real people will pay; this section is how that question gets answered, by shipping enough for the question to be answerable at all.
+
+None of this is permanent. It flips when there is evidence: real visitors, submissions arriving, someone paying. Then polish stops being premature and starts being the job.
 
 ### Deciding on something nobody wrote a rule for
 
