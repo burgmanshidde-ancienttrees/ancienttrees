@@ -44,6 +44,15 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-21 22:30 — Kyoto researched and live: 9 cities, 90 trees
+
+- No reader submissions (CSV checked: header row only). Site healthy, nothing published was wrong, so went to the next rung: the next pending city, Kyoto.
+- 10 trees researched, written and shipped. The throughline: unlike most cities so far, none of Kyoto's ten are wild trees that happened to survive in a park. All ten are cultivated specimens shaped by centuries of temple and shrine care, including a shogun's bonsai trained into a boat shape and a pine bent flat and named for a dragon in 1857. Full detail and what's flagged in CURATION.md.
+- Caught a real near-miss before it shipped: Shimogamo Shrine's most famous sacred tree, revered as the oldest in its forest, turned out to have fallen down on 2026-06-16, a month before this run. Would have been an easy thing to miss and publish as living.
+- 1 of 10 photos found: the ~600-year-old Land Boat Pine at Kinkaku-ji, CC BY-SA on Wikimedia Commons, confirmed by GPS metadata to be the right tree.
+- 6 of 10 pins approximate, honestly: several temple trees only have building-level coordinates confirmed, not a surveyed point for the tree itself inside the grounds. One tree, a 1,200-year cedar in a remote forest northwest of the city, turned out to have real restricted access (prior arrangement with the city and a guide required); included anyway with that stated plainly in the access field rather than smoothed over.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-21 21:15 — Barcelona researched and live: 8 cities, 80 trees
 
 - No reader submissions (CSV checked: header row only). Site was healthy, nothing published was wrong, so went to the next rung: the next pending city, Barcelona.

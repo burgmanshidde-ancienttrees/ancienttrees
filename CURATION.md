@@ -2,6 +2,22 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-21 — Kyoto (full research run, nightly workflow)
+
+- 10 trees researched from scratch and written to `data/cities/kyoto.json`. Tier 1, ninth city to go live. No reader submissions pending (CSV checked: header row only). Nothing published was wrong, so this was the next rung: the next pending city.
+- The unifying thread: unlike most cities on this site, none of Kyoto's ten trees are wild survivors in a public park. All ten are cultivated specimens inside working temples and shrines, several shaped deliberately over centuries (a shogun's bonsai trained into a boat, a pine bent flat and named for a dragon). Used that as the city intro instead of a generic "ancient trees of Kyoto" opener.
+- 5 flagged:
+  - **The Weeping Cherry of Gion** (Maruyama Park): the famous tree is confirmed to be a second-generation replacement planted in 1949 from seed collected off the dying original in 1928, after the first tree (200+ years old) died in 1947. Sources disagree on whether to count its age from 1949 (~77 years) or 1928 (~90+ years); presented as a range rather than picking one.
+  - **The Taiko Weeping Cherry of Daigo-ji**: carries Toyotomi Hideyoshi's name and his famous 1598 flower-viewing party, but at 150-170 years old it demonstrably is not the tree he saw. Story states this plainly rather than trading on the misleading association the name invites.
+  - **The Camphor of Munakata Shrine** (Kyoto Gyoen): widely called the oldest and largest tree in the park, but sources disagree on its age by as much as two centuries (600-800 years). Presented as a range.
+  - **The Heian Cedar of Katanami**: the 1,200-year age claim comes from prefectural and tourism-board sources describing the grove generally rather than a single-tree registry entry, and the site itself turned out to have a real access constraint I almost missed: Kyoto City restricts entry to the grove, requiring prior arrangement and an accompanying nature guide. Included anyway, with the restriction stated honestly in the access field rather than presented as freely walkable like the other nine.
+  - **The Five-Needle Pine of Hosen-in**: a 2021 source describes the tree "recovering vigor," implying an unspecified period of decline; no source gives a clear cause or timeline, so the story doesn't speculate on one.
+- 1 photo found: the ~600-year-old Land Boat Pine at Kinkaku-ji, via a CC BY-SA 4.0 photo on Wikimedia Commons, confirmed by its file metadata (GPS coordinates matching the temple, Japanese caption naming the tree) to be the correct specimen.
+- 9 of 10 photos missing after searching Wikimedia Commons for each named tree specifically; several searches for famous single trees (the Gion weeping cherry, the Nishi Honganji ginkgo, the Yoshimine-dera pine) turned up abundant photos on Flickr, stock sites and blogs but nothing with a clear open license on Commons, so none were used.
+- 6 of 10 pins approximate: four temple/shrine trees where only the building-level coordinates are confirmed, not a surveyed point for the specific tree inside the grounds; the Kyoto Gyoen camphor and the remote Heian Cedar, both estimated from general location rather than a surveyed point. 4 confirmed: the Nishi Honganji ginkgo, the Maruyama Park cherry, the Imakumano Shrine camphor and the Kamigamo Shrine cherry, all with coordinates traceable to a specific source.
+- One near-miss worth recording, same pattern as Barcelona's holm oak: while checking whether Shimogamo Shrine's sacred forest (Tadasu no Mori) had a strong standalone-tree candidate, found that its most famous individual sacred tree, a 450-year-old chinquapin revered as the forest's oldest, fell down at the base on 2026-06-16, weeks before this run. Not included, obviously; flagging because it's exactly the kind of very recent event a less careful pass could have missed and shipped as a living tree.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-21 — Barcelona (full research run, nightly workflow)
 
 - 10 trees researched from scratch and written to `data/cities/barcelona.json`. Tier 1, eighth city to go live. No reader submissions pending (CSV checked: header row only). Nothing published was found to be wrong, so this was the next rung of the ladder: the next pending city.
