@@ -188,6 +188,20 @@ Prefer work that produces a signal over work that improves something nobody has 
 
 None of this is permanent. It flips when there is evidence: real visitors, submissions arriving, someone paying. Then polish stops being premature and starts being the job.
 
+### Walk the user's timeline before you build
+
+Cheap, and it is not a gate: it costs a minute of thinking and blocks nothing. Before building anything a person keeps, returns to, or accumulates, say out loud what happens at each of these, and fix whatever the answer embarrasses you with:
+
+- **The first minute.** This is the only part that gets tested by default, and it is almost never where the problem is.
+- **Day seven, and day thirty.** Is it still there? Does it still make sense? Has it quietly grown wrong?
+- **The second device.** They read on a laptop and walk with a phone. Does the thing follow them?
+- **The gap.** They come back after three weeks away. What do they find, and is it what they left?
+- **The moment it fails.** Not whether it can fail, but what the person loses when it does, and whether they saw it coming.
+
+**The worked example, so the shape is recognisable.** On 2026-07-21 a run shipped the tree passport, verified it thoroughly, and shipped a feature that would have silently deleted people's collections: browser storage on iOS Safari is wiped after seven days without a visit, which is exactly the three week trip the feature exists for. Everything tested passed. The tests were about whether it worked, over thirty seconds, when the entire value of collecting is measured in months. Hidde spotted it immediately, and he was right that it was obvious.
+
+The lesson is not "know more about Safari". It is that knowing something does not help if nothing prompts you to ask. A feature whose value accrues over time has to be reasoned about over time, or the one property that matters is the one property never checked.
+
 ### Deciding on something nobody wrote a rule for
 
 Most of what comes up is not in any list. Ask three questions, in order:
