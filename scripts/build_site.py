@@ -140,6 +140,8 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .go-note { font-size: 12px; color: var(--ink-light); margin-bottom: 1.5rem; }
 .take-with-you { background: var(--cream-dark); border-radius: 4px; padding: 1.1rem 1.4rem; margin: 1.5rem 0; font-size: 13px; }
 .take-with-you a { font-weight: 500; }
+.approx-note { font-size: 12px; color: var(--ink-mid); background: var(--cream-dark); border-radius: 4px; padding: 0.7rem 0.9rem; margin: -0.6rem 0 1.5rem; }
+.report { background: var(--moss-light); border-left: 3px solid var(--moss); border-radius: 0 4px 4px 0; padding: 1rem 1.3rem; margin: 2.5rem 0 0; font-size: 13px; }
 .map-embed { position: relative; height: 340px; border-radius: 4px; overflow: hidden; margin: 1.75rem 0; border: 1px solid var(--cream-dark); }
 .map-embed .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 .faq dt { font-weight: 500; font-size: 15px; margin-top: 1.25rem; }
@@ -697,13 +699,22 @@ def oldest_tree(trees):
     return max(trees, key=lambda t: t.get("age_max") or 0)
 
 
-def curation_notice(status):
-    if status in ("curated", "published"):
-        return ""
-    return (
-        '<div class="notice">This page is awaiting curation. Facts have been researched '
-        "and cross-referenced, but the final human review is still in progress.</div>"
-    )
+def location_is_approximate(tree):
+    """Does the pin point at a rough spot rather than the tree itself?
+
+    Runs should set location_precision explicitly. Older entries only recorded
+    it in free-text notes, so fall back to reading those.
+    """
+    if tree.get("location_precision"):
+        return tree["location_precision"] == "approximate"
+    note = (tree.get("notes") or "").lower()
+    if tree.get("curation_status") != "flagged":
+        return False
+    return any(k in note for k in (
+        "exact position", "exact gps", "exact spot", "precise position",
+        "position within", "coordinates are approximate", "street-level estimate",
+        "position at the", "approximate; needs", "lake edge position",
+    ))
 
 
 # ---------------------------------------------------------------- tree pages
@@ -752,6 +763,15 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pag
   </figure>"""
         og_image = f'\n<meta property="og:image" content="{esc(photo["url"])}">'
 
+    # Honest where it costs the visitor something: an approximate pin means
+    # standing in the right park without finding the tree.
+    approx_note = (
+        '<p class="approx-note">The pin marks the right spot roughly, not the tree itself. '
+        'It stands here, but we have not confirmed the precise position on the ground yet. '
+        f'<a href="{submit_link("correction")}">Know exactly where it is?</a></p>'
+        if location_is_approximate(tree) else ""
+    )
+
     label = f'<span class="tree-label">{esc(tree["label"])}</span>' if tree.get("label") else ""
     facts = f"""
 <dl class="facts">
@@ -779,17 +799,17 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pag
 <main class="content-page">
   {breadcrumb_html(crumb_items, rootpath)}
   <h1>{esc(tree['name'])}{label}</h1>
-  {curation_notice(city_data.get('status'))}
   {photo_html}
   {facts}
   <div class="prose-block"><p>{esc(tree['story'])}</p></div>
   <div class="map-embed"><div id="map" class="map"></div></div>
   <a class="go-btn" href="https://www.google.com/maps/dir/?api=1&amp;destination={loc['latitude']},{loc['longitude']}" target="_blank" rel="noopener">Take me there</a>
   <p class="go-note">Opens directions in your maps app. {esc(tree.get('transport', ''))}</p>
+  {approx_note}
   <h2>Trees nearby</h2>
   <ul class="link-list">{nearby_html}</ul>
   <div class="cta">Curious what else is standing in {esc(city)}? See <a href="../{cslug}">all 10 remarkable ancient trees in {esc(city)}</a> or find out <a href="oldest-tree">what the oldest tree in {esc(city)} is</a>.{species_line}</div>
-  <p class="suggest">Something wrong on this page, or do you have an openly licensed photo of this tree? <a href="{submit_link('correction')}">Tell us</a>. Corrections are checked and credited.</p>
+  <div class="report"><strong>Is something here not right?</strong> Wrong spot, wrong age, or the tree is gone? <a href="{submit_link('correction')}">Tell us and we will check it</a>. Every page on this site is corrected by the people who actually walk past these trees.</div>
 </main>
 """
 
@@ -872,7 +892,6 @@ def build_question_page(city_entry, collections, pages):
   {breadcrumb_html(crumb_items, rootpath)}
   <h1>{esc(question)}</h1>
   <p class="answer-first">{esc(answer)}</p>
-  {curation_notice(city_data.get('status'))}
   <div class="map-embed"><div id="map" class="map"></div></div>
   <div class="prose-block"><p>{esc(context)}</p></div>
   <div class="cta">Read <a href="{oslug}">the full story of {esc(old['name'])}</a>, or see <a href="../{cslug}">all 10 remarkable ancient trees in {esc(city)}</a>.</div>
@@ -1030,7 +1049,6 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
       <p class="eyebrow">{esc(country)}</p>
       <h1>Ancient Trees in <em>{esc(city)}</em></h1>
       <p class="lede">{esc(intro)}</p>
-      {curation_notice(city_data.get('status'))}
     </div>
     {''.join(cards)}
     {panel_foot}
@@ -1103,7 +1121,6 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages):
 <main class="content-page">
   {breadcrumb_html(crumb_items, rootpath)}
   <h1>{esc(coll['title'])}</h1>
-  {curation_notice(coll.get('status'))}
   <div class="prose-block"><p>{esc(coll['intro'])}</p></div>
   {''.join(sections)}
   <p class="suggest">Explore by city: {city_links}</p>
