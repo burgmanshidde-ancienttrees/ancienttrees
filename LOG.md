@@ -33,7 +33,11 @@ At forms.google.com, blank template. Title `Add trees to Ancient Trees`. Seven q
 | 6 | Your name, for the credit | Short | no |
 | 7 | Your email | Short | no |
 
-Help text on 3: *A street, a park, or a link from Google Maps. This is the single most useful thing you can give us.* On 7: *Only if you would like to hear when your tree goes live.*
+Help text on 3, and this one earns its length, because it is the difference between a tree we can place and one we cannot:
+
+> *Best of all: open Google Maps, press and hold the exact spot until a pin drops, then Share and copy the link here. On a computer, right-click the spot and click the coordinates to copy them. No pin? A street corner, a park entrance, or "the third big tree along the north path" all work fine. We do the rest.*
+
+Google Forms has no map field, so this is a plain text question. That is fine: the run verifies and places every location anyway, so it needs enough to find the tree, not coordinates. Help text on 7: *Only if you would like to hear when your tree goes live.*
 
 Settings: **"Collect email addresses" off**, **"Limit to 1 response" off**, or people are forced to sign in. Confirmation message: *Thank you. Your tree goes into the next research round. If it checks out, it will be on the map within days, with your name on it if you left one.*
 
