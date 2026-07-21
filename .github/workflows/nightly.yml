@@ -37,7 +37,12 @@ concurrency:
 jobs:
   research:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    # GitHub allows six hours per job. We used 90 minutes, which made sense when
+    # runs fired hourly, and stopped making sense once it turned out GitHub only
+    # honours a handful of schedules a day. If a trigger is rare, it should be
+    # worth as much as possible: work, and when the usage window closes, wait for
+    # it to reopen inside the same run rather than hoping GitHub fires again.
+    timeout-minutes: 345
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -79,7 +84,10 @@ jobs:
             Two rules on that, and they matter more than the throughput:
             - Finish and commit each item completely before starting the next. A
               half-researched city is worse than none. Never leave one part done.
-            - Start no new item more than 60 minutes in. The job is killed at 90,
+            - Start no new item after 5 hours. The job is killed at 345 minutes,
               and work killed mid-flight is work lost.
+            - If you hit the usage limit, do not exit. Wait and try again: the
+              window is rolling, so it reopens while this job is still alive, and
+              a scheduled trigger may not come again for hours.
           claude_args: |
             --allowedTools "Bash(git:*),Bash(python3:*),Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
