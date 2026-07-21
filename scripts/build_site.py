@@ -219,6 +219,27 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
   border-radius: 6px; padding: 0.7rem 0.9rem; font-family: var(--sans); font-size: 14px;
   cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.18); white-space: nowrap; }
 .route-gps[aria-pressed="true"] { background: var(--moss-light); border-color: var(--moss); }
+/* The passport. A visited tree goes green on the map and on its card. */
+.seen-btn { float: right; display: inline-flex; align-items: center; gap: 0.4rem;
+  background: none; border: 1px solid var(--cream-dark); border-radius: 999px;
+  padding: 0.3rem 0.75rem; font-family: var(--sans); font-size: 12.5px;
+  color: var(--ink-mid); cursor: pointer; transition: all 0.15s; }
+.seen-btn:hover { border-color: var(--moss); color: var(--moss); }
+.seen-mark { width: 13px; height: 13px; border-radius: 50%; border: 1.5px solid currentColor;
+  display: inline-block; position: relative; }
+.seen-btn[aria-pressed="true"] { background: var(--moss); border-color: var(--moss); color: #fff; }
+.seen-btn[aria-pressed="true"] .seen-mark { background: #fff; border-color: #fff; }
+.seen-btn[aria-pressed="true"] .seen-mark::after { content: ''; position: absolute;
+  left: 4px; top: 1px; width: 3px; height: 7px; border: solid var(--moss);
+  border-width: 0 1.5px 1.5px 0; transform: rotate(45deg); }
+.pin-tree.seen { color: var(--moss); }
+.pin-tree.seen .pin-rank { background: var(--moss); color: #fff; }
+.passport { margin-top: 0.9rem; font-size: 13px; color: var(--ink-mid);
+  background: var(--moss-light); border-radius: 6px; padding: 0.6rem 0.85rem; }
+.passport strong { color: var(--moss); font-weight: 600; }
+.passport.complete { background: var(--moss); color: #fff; }
+.passport.complete strong { color: #fff; }
+.passport-total { display: block; font-size: 12px; opacity: 0.8; margin-top: 2px; }
 .pin-me { width: 16px; height: 16px; border-radius: 50%; background: #1E6FD9;
   border: 3px solid #fff; box-shadow: 0 0 0 4px rgba(30,111,217,0.25); }
 @media (max-width: 800px) {
@@ -608,6 +629,63 @@ function addWalkLayer() {{
   }});
 }}
 if (map.isStyleLoaded()) {{ addWalkLayer(); }} else {{ map.on('styledata', addWalkLayer); }}
+
+// The passport. Which trees you have stood in front of, kept in LocalStorage on
+// your own phone. No account, no server, nothing leaves the device: that is not
+// a limitation to work around later, it is why this can exist at all without
+// holding anyone's personal data. Collected across every city, so a trip to
+// Tokyo adds to the same tally as a walk in Amsterdam.
+var SEEN_KEY = 'ancienttrees_seen';
+
+function readSeen() {{
+  try {{ return JSON.parse(localStorage.getItem(SEEN_KEY)) || []; }}
+  catch (e) {{ return []; }}
+}}
+function writeSeen(list) {{
+  try {{ localStorage.setItem(SEEN_KEY, JSON.stringify(list)); }} catch (e) {{}}
+}}
+
+function paintPassport() {{
+  var seen = readSeen();
+  var here = 0;
+  markers.forEach(function(m, idx) {{
+    var got = seen.indexOf(m.id) !== -1;
+    if (got) {{ here++; }}
+    pins[idx].classList.toggle('seen', got);
+  }});
+  document.querySelectorAll('.seen-btn').forEach(function(btn) {{
+    var got = seen.indexOf(btn.dataset.tree) !== -1;
+    btn.setAttribute('aria-pressed', got ? 'true' : 'false');
+    btn.querySelector('.seen-text').textContent = got ? 'Visited' : 'I stood here';
+  }});
+  var box = document.getElementById('passport');
+  if (box) {{
+    document.getElementById('passport-count').textContent = here;
+    box.hidden = here === 0;
+    box.classList.toggle('complete', here === markers.length);
+    var total = document.getElementById('passport-total');
+    if (seen.length > here) {{
+      total.textContent = seen.length + ' trees in total, across every city.';
+    }} else if (here === markers.length) {{
+      total.textContent = 'Every tree here. Go find another city.';
+    }} else {{
+      total.textContent = '';
+    }}
+  }}
+}}
+
+document.querySelectorAll('.seen-btn').forEach(function(btn) {{
+  btn.addEventListener('click', function(e) {{
+    e.stopPropagation();
+    var id = btn.dataset.tree;
+    var seen = readSeen();
+    var at = seen.indexOf(id);
+    if (at === -1) {{ seen.push(id); }} else {{ seen.splice(at, 1); }}
+    writeSeen(seen);
+    paintPassport();
+  }});
+}});
+paintPassport();
 
 // "Where am I": browser geolocation only, nothing stored and nothing sent
 // anywhere. The dot lives in the page and dies with it.
@@ -1152,10 +1230,13 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
       <p class="tree-meta">{esc(t.get('species', ''))} &middot; {esc(t.get('age_estimate', 'age unknown'))} &middot; {esc(loc.get('neighbourhood', ''))}</p>""")
         cards[-1] += f"""
       <p class="tree-story">{esc(t['story'])}</p>
-      <p class="tree-more"><a href="{slug}/{tslug}">Read more and get directions &rarr;</a></p>
+      <p class="tree-more"><a href="{slug}/{tslug}">Read more and get directions &rarr;</a>
+        <button type="button" class="seen-btn" data-tree="{esc(t['id'])}" aria-pressed="false">
+          <span class="seen-mark" aria-hidden="true"></span><span class="seen-text">I stood here</span>
+        </button></p>
     </article>"""
         markers.append({"lat": loc["latitude"], "lng": loc["longitude"], "label": str(i),
-                        "icon": species_icon(t), "name": t["name"]})
+                        "icon": species_icon(t), "name": t["name"], "id": t["id"]})
 
     faq = city_data.get("faq", [])
     if not faq:
@@ -1263,6 +1344,10 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
       <p class="eyebrow">{esc(country)}</p>
       <h1>Ancient Trees in <em>{esc(city)}</em></h1>
       <p class="lede">{esc(intro)}</p>
+      <p class="passport" id="passport" hidden>
+        <strong><span id="passport-count">0</span> of {len(trees)}</strong> visited in {esc(city)}
+        <span class="passport-total" id="passport-total"></span>
+      </p>
     </div>
     {''.join(cards)}
     {panel_foot}
