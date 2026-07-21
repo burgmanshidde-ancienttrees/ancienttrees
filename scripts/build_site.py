@@ -50,6 +50,13 @@ SUBMISSION_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSd2zQdm6YxndPLk9
 # the submitter's name is published as a credit anyway.
 SUBMISSIONS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRND_8GK5Pa2Y14STlWuVHwtgyn4quT3E0EcplJ6qqIgHWWzglH_7ZXerP9O3V7xhh-ZqUL9fhlypNx/pub?gid=1337691418&single=true&output=csv"
 
+# Where people can chip in: Patreon, Ko-fi, Buy Me a Coffee, whatever Hidde
+# picks. Paste the public page URL here and the button appears on the homepage.
+# Deliberately a donation link rather than a paywall, so the content stays free
+# and indexable and nobody has to hold a card number or a subscriber list.
+# Only Hidde can create this: it is his money and his account (hard list 2).
+SUPPORT_URL = ""
+
 MAPLIBRE_JS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"
 MAPLIBRE_CSS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
 # OpenFreeMap: free vector tiles, no API key, commercial use permitted
@@ -219,6 +226,12 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
   border-radius: 6px; padding: 0.7rem 0.9rem; font-family: var(--sans); font-size: 14px;
   cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.18); white-space: nowrap; }
 .route-gps[aria-pressed="true"] { background: var(--moss-light); border-color: var(--moss); }
+.hero-note { margin-top: 0.75rem; font-size: 13px; color: var(--ink-light); }
+.home-cta { display: inline-block; background: var(--moss); color: #fff; text-decoration: none;
+  padding: 0.6rem 1.1rem; border-radius: 6px; font-size: 14px; font-weight: 500; margin-right: 0.5rem; }
+.home-cta:hover { background: #2f4717; }
+.home-cta.secondary { background: none; color: var(--moss); border: 1px solid var(--moss); }
+.home-cta.secondary:hover { background: var(--moss-light); }
 /* The passport. A visited tree goes green on the map and on its card. */
 .seen-btn { float: right; display: inline-flex; align-items: center; gap: 0.4rem;
   background: none; border: 1px solid var(--cream-dark); border-radius: 999px;
@@ -1729,12 +1742,21 @@ def build_homepage(published, upcoming, collections, pages):
         for c in collections
     )
 
+    contribute_cta = f'<a class="home-cta" href="{submit_link("home")}">Add a tree or a city</a>'
+    # Empty until Hidde sets up somewhere to receive it. Donations rather than a
+    # paywall: the content stays free and indexable, and there is no account, no
+    # card data and no subscription to administer.
+    support_cta = (f'<a class="home-cta secondary" href="{esc(SUPPORT_URL)}" '
+                   f'target="_blank" rel="noopener">Support the project</a>'
+                   if SUPPORT_URL else "")
+
     body = f"""
 <div class="home-hero">
   <div id="map" class="map"></div>
   <div class="hero-overlay">
     <h1>The remarkable trees <em>around you</em>.</h1>
-    <p>Every city has trees that were standing before the city was. These are the ten worth walking to in each one, with the story, the exact spot, and directions from wherever you happen to be.</p>
+    <p>Every city has trees that were standing before the city was. These are the ones worth walking to, with the story, the spot, and directions from wherever you happen to be.</p>
+    <p class="hero-note">Made by tree lovers, for tree lovers. {len(published)} cities mapped, {100 - len(published)} to go.</p>
     <button type="button" id="near-me" class="go-btn">Find trees near me</button>
     <p id="near-me-result" class="near-me-result"></p>
   </div>
@@ -1746,6 +1768,11 @@ def build_homepage(published, upcoming, collections, pages):
   <h2 class="section-heading">How it works</h2>
   <p class="prose">Pick the city you are in. You get ten trees, ranked, each with the story of what it has lived through, the exact spot it stands on, and a button that hands the directions to your phone. Take the whole city with you as a map file if you are going out for the day. Everything is free and stays free.</p>
   <p class="prose">Why bother: a 400 year old tree has outlasted every empire, plague and war its city has seen. It was here before the street was named and will be here after you leave. Most guides send you to the same squares and the same viewpoints. This sends you somewhere quieter, ten minutes off the route, and it is almost always worth the detour.</p>
+
+  <h2 class="section-heading">Built in the open, and not finished</h2>
+  <p class="prose">This is a project rather than a product. {len(published)} cities of a hundred are mapped, some trees still have no photograph, and a few pins mark the right park rather than the right trunk. Every one of those says so on its own page, because a vague pin that admits it is vague still gets you to the right place, and a confident wrong one wastes your afternoon.</p>
+  <p class="prose">Three ways to help, none of them much work. Add a tree we have missed. Map a city nobody has done yet. Or tell us when something here is wrong, which happens, and is the fastest way this gets better. There are no accounts and nothing to sign up for: the trees you tick off as visited are stored on your own device and go nowhere near us.</p>
+  <p class="prose">{contribute_cta}{support_cta}</p>
 </main>
 """
     head_extra = map_head() + "\n" + ld_script(site_graph())
