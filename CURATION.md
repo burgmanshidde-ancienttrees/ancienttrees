@@ -21,6 +21,13 @@ Newest entries on top. When you approve a city, its status moves to `curated` an
 - No superlative claims beyond city-level ones ("oldest tree in Rome") checked against other published city pages; none conflict. The intro's "65 monumental trees, more than any other Italian city" claim is sourced to a 2025 RomaToday article comparing Rome to Naples and Caserta.
 - Suggested follow-up: the official comune.roma.it monumental trees PDF (`Elenco_degli_alberi.pdf`) returned as unparseable binary data on this run; a future run with better PDF extraction could resolve several of the flagged coordinates and ages above, plus surface the ippocastano candidate.
 
+## 2026-07-20 — Open design decision: illustrated tree art
+
+- Hidde wants the map pins in a **painterly illustrated style** (reference: mobile-game key art, "look at the tree behind the lettering, not the font"): layered foliage in several greens, gnarled branches, depth. Not the current flat single-colour silhouettes.
+- The current set is also under-differentiated: six of Lisbon's ten trees fall back to the same broadleaf shape (ombú, tipu, coral tree, nettle tree, silk floss, rubber fig). Only olive, dragon tree, cypress and ginkgo get their own.
+- Hidde's own suggestion, and the right fix: key the icons off **leaf shape** rather than crown shape. Leaves differ far more at pin size, and every tree already carries a species.
+- Not started; queued for the next working session so he can react to a first pass.
+
 ## 2026-07-20 — Lisbon (full research run, nightly workflow)
 
 - 10 trees researched from scratch and written to `data/cities/lisbon.json`. Portugal has a national legal registry for "árvores de interesse público" (trees of public interest, Law 53/2012, run by ICNF), which made sourcing unusually solid for several of these compared to earlier cities.
