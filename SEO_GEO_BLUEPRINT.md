@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.1 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.2 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -72,7 +72,7 @@ This document has two layers with different lifespans. Layer 1 (Principles) shou
 | Meta description (≤155) | City hook + the strongest single tree as teaser |
 | H1 | Ancient Trees in [City] |
 | Intro | 60-100 words, unique per city: why THIS city's trees matter |
-| Body | Curation-status banner (until curated) → the 10 trees, each: rank, name, species/age/neighbourhood line, story, access + transport, link to tree page → FAQ block (3-4 real questions incl. "What is the oldest tree in [City]?") → "Know a tree that belongs on this list?" + suggestion link |
+| Body | The 10 trees, each: rank, name, species/age/neighbourhood line, story, access + transport, link to tree page → FAQ block (3-4 real questions incl. "What is the oldest tree in [City]?") → "Know a tree that belongs on this list?" + suggestion link |
 | Schema | ItemList (the 10 trees) + FAQPage + BreadcrumbList |
 | Internal links (min) | 12: all 10 tree pages, question page, 1+ collection page |
 | Ordering rule | List order is editorial. Votes are curation signal, never ranking. |
@@ -117,5 +117,6 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 ---
 
 ## CHANGELOG
+- v1.2 — Removed the curation-status banner from every page type, approved by Hidde. He is not the quality gate and never will be at 1,000 trees, so promising "final human review is still in progress" was a promise nobody was going to keep. The bar is now the research standard already applied (two independent sources) plus readers as the correction layer. Two replacements: every tree page carries a visible "is something here not right?" invitation, and a tree whose pin is only approximate says so next to the directions button, because that costs the visitor a wasted walk. Uncertainty about age stays where it already was, inside the story text as a stated range (P7).
 - v1.1 — Added Contract F (species page `/species/[slug]` + `/species` index), approved by Hidde. Semi-automated browse facet: auto-generated entry list, hand-written intro, publish-gated at 3+ trees and an intro. Single-species collections are now folded into this contract to avoid duplicate content.
 - v1.0 — Initial blueprint. Consolidates: four-layer architecture, AllTrails-pattern page structure, metadata contracts, schema stacks, freshness rule, entity requirements, measurement hypothesis.

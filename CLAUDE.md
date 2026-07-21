@@ -2,7 +2,7 @@
 
 ## What this project is
 
-Ancient Trees is a discovery platform that maps the 10 most remarkable ancient trees in the 100 most-visited cities worldwide. The owner is Hidde, a designer and tree enthusiast based in the Netherlands. He curates; the system builds.
+Ancient Trees is a discovery platform that maps the 10 most remarkable ancient trees in the 100 most-visited cities worldwide. The owner is Hidde, a designer and tree enthusiast based in the Netherlands. The system researches, verifies and publishes; readers correct. Hidde sets direction, he is not the quality gate.
 
 The end product: a website (ancienttrees.app) with an interactive map and one SEO page per city ("10 Most Beautiful Ancient Trees in [City]"), later followed by an iOS app with a freemium model (2 trees free per city, €19,99/year for full access).
 
@@ -15,7 +15,7 @@ The end product: a website (ancienttrees.app) with an interactive map and one SE
 /data/city-list.json   — the prioritized list of 100 cities with status
 /site/                 — static site generator (Astro or similar)
 /scripts/              — automation scripts
-/CURATION.md           — running list of items awaiting Hidde's review
+/CURATION.md           — log of what could not be verified, and notes worth keeping. Not a to-do list for Hidde.
 /SEO_GEO_BLUEPRINT.md  — page contracts (titles, schema, internal links, content minima). No page ships without conforming to it.
 /TONE_OF_VOICE.md      — the voice for all stories and page copy. Paris is the calibration standard.
 ```
@@ -53,7 +53,8 @@ Every city file follows this exact structure (see data/cities/london.json for th
         "attribution": null,
         "status": "missing | found_needs_check | approved"
       },
-      "curation_status": "ai_generated | hidde_approved | flagged"
+      "curation_status": "ai_generated | hidde_approved | flagged",
+      "location_precision": "confirmed | approximate"
     }
   ]
 }
@@ -101,7 +102,7 @@ Search Wikimedia Commons and other openly-licensed sources (CC0, CC-BY, CC-BY-SA
 - Update city-list.json (status: pending → needs_curation)
 - Append to CURATION.md: city name, date, number of trees, number flagged, photos missing
 - Commit with message: "Add [city]: 10 trees, X flagged, Y photos missing"
-- Rebuild the site so the new city page goes live (marked "awaiting curation" until Hidde approves). The generated pages (city, tree, question, collection) must conform to the Layer 2 contracts in SEO_GEO_BLUEPRINT.md — titles, meta descriptions, schema, and internal link minima. A page that fails that validation does not deploy.
+- Rebuild the site so the new city page goes live. The generated pages (city, tree, question, collection) must conform to the Layer 2 contracts in SEO_GEO_BLUEPRINT.md — titles, meta descriptions, schema, and internal link minima. A page that fails that validation does not deploy.
 
 ### Improvement mode (when all 100 cities have data)
 Cycle through existing cities oldest-first and: hunt for missing photos, strengthen weak stories, re-verify flagged items, check for dead trees in the news.
@@ -124,7 +125,17 @@ For each new submission:
 
 A submitted tree that verifies is worth more than a new city researched from scratch, because it proves someone cares about that city. Process submissions first, then continue with the next pending city if the usage window still allows.
 
-## Hidde's curation workflow
+## Quality gate: the research standard, not Hidde
+
+Hidde is not the quality gate and will not be at 1,000 trees. Do not write anything that promises human review. The bar is the standard you already apply: two independent sources for existence, species and age, and a location you can place. Readers are the correction layer.
+
+That puts the weight on you, so two rules tighten:
+- **Publish what verifies, flag what does not.** A tree you cannot confirm does not go live with confident phrasing. State the range, name the disagreement (P7).
+- **Set `location_precision` on every tree**, `"confirmed"` or `"approximate"`. Approximate means you know the park or street but not the spot. The site shows a visible warning next to the directions button for approximate pins, because sending someone to wander a park is a broken promise. Never mark a pin confirmed to make a page look tidier.
+
+`curation_status` and the `status` field on a city stay in the data as internal signal, but they no longer gate publication and no longer show on the site.
+
+## Hidde's curation workflow (optional, when he feels like it)
 
 When Hidde opens a session, FIRST show him the top of CURATION.md: what's new, what's flagged, what needs photos. Prioritize his time on:
 1. Cities he knows personally (Amsterdam, Lisbon, London, European cities)
