@@ -53,7 +53,8 @@
         "attribution": "Ordifana75, Wikimedia Commons",
         "status": "found_needs_check"
       },
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     },
     {
       "id": "par_002",
@@ -83,7 +84,8 @@
         "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Exact position within the Jardin des Plantes needs on-the-ground confirmation; coordinates point to the labyrinth slope area."
+      "notes": "Exact position within the Jardin des Plantes needs on-the-ground confirmation; coordinates point to the labyrinth slope area.",
+      "location_precision": "approximate"
     },
     {
       "id": "par_003",
@@ -112,7 +114,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact position within the garden needs confirmation; coordinates are approximate."
+      "notes": "Exact position within the garden needs confirmation; coordinates are approximate.",
+      "location_precision": "approximate"
     },
     {
       "id": "par_004",
@@ -142,7 +145,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact position within the garden needs confirmation; coordinates are approximate."
+      "notes": "Exact position within the garden needs confirmation; coordinates are approximate.",
+      "location_precision": "approximate"
     },
     {
       "id": "par_005",
@@ -171,7 +175,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact position within Parc Monceau needs confirmation; coordinates point to the park centre."
+      "notes": "Exact position within Parc Monceau needs confirmation; coordinates point to the park centre.",
+      "location_precision": "approximate"
     },
     {
       "id": "par_006",
@@ -199,7 +204,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Only one detailed source found so far; needs a second independent source for height and age claims. Position within the park approximate."
+      "notes": "Only one detailed source found so far; needs a second independent source for height and age claims. Position within the park approximate.",
+      "location_precision": "approximate"
     },
     {
       "id": "par_007",
@@ -227,7 +233,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     },
     {
       "id": "par_008",
@@ -256,7 +263,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact position along the avenue needs confirmation; coordinates point to the lower section."
+      "notes": "Exact position along the avenue needs confirmation; coordinates point to the lower section.",
+      "location_precision": "approximate"
     },
     {
       "id": "par_009",
@@ -285,7 +293,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact position within the park needs confirmation; coordinates point to the park centre."
+      "notes": "Exact position within the park needs confirmation; coordinates point to the park centre.",
+      "location_precision": "approximate"
     },
     {
       "id": "par_010",
@@ -314,7 +323,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Lake edge position approximate; needs exact confirmation."
+      "notes": "Lake edge position approximate; needs exact confirmation.",
+      "location_precision": "approximate"
     }
   ]
 }

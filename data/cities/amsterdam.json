@@ -53,7 +53,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact position within Artis Park is approximate; sources describe it as standing near the chimpanzee outdoor enclosure but coordinates point to the park's general location."
+      "notes": "Exact position within Artis Park is approximate; sources describe it as standing near the chimpanzee outdoor enclosure but coordinates point to the park's general location.",
+      "location_precision": "approximate"
     },
     {
       "id": "ams_002",
@@ -81,7 +82,8 @@
         "attribution": "Ceescamel, Wikimedia Commons",
         "status": "found_needs_check"
       },
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     },
     {
       "id": "ams_003",
@@ -110,7 +112,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Sources disagree on planting date (park-establishment era around 1870 vs a specific 1885 date); age range widened to cover both. Exact position along Van Eeghenlaan is street-level, not tree-specific."
+      "notes": "Sources disagree on planting date (park-establishment era around 1870 vs a specific 1885 date); age range widened to cover both. Exact position along Van Eeghenlaan is street-level, not tree-specific.",
+      "location_precision": "approximate"
     },
     {
       "id": "ams_004",
@@ -138,7 +141,8 @@
         "attribution": "Ceescamel, Wikimedia Commons",
         "status": "found_needs_check"
       },
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     },
     {
       "id": "ams_005",
@@ -167,7 +171,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Age estimate is sourced from the Hortus's own garden records and plant database; independent third-party confirmation was not found. Coordinates are a confirmed street geocode for the Hortus, not a pin on the specific plant within the Palm House."
+      "notes": "Age estimate is sourced from the Hortus's own garden records and plant database; independent third-party confirmation was not found. Coordinates are a confirmed street geocode for the Hortus, not a pin on the specific plant within the Palm House.",
+      "location_precision": "approximate"
     },
     {
       "id": "ams_006",
@@ -196,7 +201,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Sources give a planting date range of 1900-1915 rather than a single year. Exact GPS is a street-level estimate; monumentaltrees.com likely holds a precise pin but its page could not be fetched for independent verification per the project's sourcing rules."
+      "notes": "Sources give a planting date range of 1900-1915 rather than a single year. Exact GPS is a street-level estimate; monumentaltrees.com likely holds a precise pin but its page could not be fetched for independent verification per the project's sourcing rules.",
+      "location_precision": "approximate"
     },
     {
       "id": "ams_007",
@@ -225,7 +231,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Species is the regionally typical London plane but not explicitly confirmed in sources found. Exact planting date is not documented; estimated from the Plan Zuid development timeline (council approval 1917). The wartime survival story is explicitly unverified local lore, not a sourced fact."
+      "notes": "Species is the regionally typical London plane but not explicitly confirmed in sources found. Exact planting date is not documented; estimated from the Plan Zuid development timeline (council approval 1917). The wartime survival story is explicitly unverified local lore, not a sourced fact.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ams_008",
@@ -254,7 +261,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact species within Elaeagnus is not confirmed (likely E. angustifolia based on a 'narrow-leaved' descriptor); the two sources both trace back largely to the same original trade-press profile, so treat as a single well-documented but not fully independent source pair. Exact GPS is a street-level estimate."
+      "notes": "Exact species within Elaeagnus is not confirmed (likely E. angustifolia based on a 'narrow-leaved' descriptor); the two sources both trace back largely to the same original trade-press profile, so treat as a single well-documented but not fully independent source pair. Exact GPS is a street-level estimate.",
+      "location_precision": "approximate"
     },
     {
       "id": "ams_009",
@@ -283,7 +291,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact planting date and precise age were not found; 'monumental' designation implies 100+ years, so a wide range is used pending confirmation. Coordinates are square-level, not tree-specific."
+      "notes": "Exact planting date and precise age were not found; 'monumental' designation implies 100+ years, so a wide range is used pending confirmation. Coordinates are square-level, not tree-specific.",
+      "location_precision": "approximate"
     },
     {
       "id": "ams_010",
@@ -312,7 +321,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "An earlier planting date of 1885 appears in one source; the 1907 date is favored here as it matches the documented 1884-1916 timeline of Cuypers' garden construction, but the discrepancy is not fully resolved. Coordinates are an estimate for the garden's southeast corner."
+      "notes": "An earlier planting date of 1885 appears in one source; the 1907 date is favored here as it matches the documented 1884-1916 timeline of Cuypers' garden construction, but the discrepancy is not fully resolved. Coordinates are an estimate for the garden's southeast corner.",
+      "location_precision": "approximate"
     }
   ]
 }

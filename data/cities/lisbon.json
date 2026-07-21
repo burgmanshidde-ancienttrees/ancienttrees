@@ -53,7 +53,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     },
     {
       "id": "lis_002",
@@ -83,7 +84,8 @@
         "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Age is genuinely uncertain: the tree was already an adult specimen when transplanted in 1768 (258 years by that count alone), but several popular sources round up to 400 years assuming an earlier, undocumented origin. Presented here as a range rather than a single figure."
+      "notes": "Age is genuinely uncertain: the tree was already an adult specimen when transplanted in 1768 (258 years by that count alone), but several popular sources round up to 400 years assuming an earlier, undocumented origin. Presented here as a range rather than a single figure.",
+      "location_precision": "confirmed"
     },
     {
       "id": "lis_003",
@@ -114,7 +116,8 @@
         "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Portuguese press and heritage sources converge on approximately 150 years, tied to its 1940 classification. monumentaltrees.com states it was planted around 1740, implying roughly 285 years. The discrepancy is unresolved; the more heavily corroborated 150 year figure is used as the primary estimate, per monumentaltrees being used for verification only."
+      "notes": "Portuguese press and heritage sources converge on approximately 150 years, tied to its 1940 classification. monumentaltrees.com states it was planted around 1740, implying roughly 285 years. The discrepancy is unresolved; the more heavily corroborated 150 year figure is used as the primary estimate, per monumentaltrees being used for verification only.",
+      "location_precision": "confirmed"
     },
     {
       "id": "lis_004",
@@ -144,7 +147,8 @@
         "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Most sources cite 100 years; a local history blog notes the tree already appears as a mature adult in Lisbon Municipal Archive photographs from 1910, which would put its real age closer to 115 years."
+      "notes": "Most sources cite 100 years; a local history blog notes the tree already appears as a mature adult in Lisbon Municipal Archive photographs from 1910, which would put its real age closer to 115 years.",
+      "location_precision": "confirmed"
     },
     {
       "id": "lis_005",
@@ -172,7 +176,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     },
     {
       "id": "lis_006",
@@ -201,7 +206,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "ai_generated"
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
     },
     {
       "id": "lis_007",
@@ -230,7 +236,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact position at the Avenida de Berlim / Avenida Francisco Luís Gomes junction and the nearest metro walking time are approximate; needs on-the-ground confirmation in a future improvement pass."
+      "notes": "Exact position at the Avenida de Berlim / Avenida Francisco Luís Gomes junction and the nearest metro walking time are approximate; needs on-the-ground confirmation in a future improvement pass.",
+      "location_precision": "approximate"
     },
     {
       "id": "lis_008",
@@ -259,7 +266,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source gives a precise planting date; 'over a century old' is the most specific figure available from the two independent write-ups found so far."
+      "notes": "No source gives a precise planting date; 'over a century old' is the most specific figure available from the two independent write-ups found so far.",
+      "location_precision": "confirmed"
     },
     {
       "id": "lis_009",
@@ -288,7 +296,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "This paineira is one of six individually classified trees within a nine-tree ensemble at Jardim Alfredo Keil, classified collectively in 2017. No source isolates this specimen's individual age."
+      "notes": "This paineira is one of six individually classified trees within a nine-tree ensemble at Jardim Alfredo Keil, classified collectively in 2017. No source isolates this specimen's individual age.",
+      "location_precision": "approximate"
     },
     {
       "id": "lis_010",
@@ -318,7 +327,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Not an ancient tree: origin and exact age are unknown, and researchers who have examined it consider it a modern escapee from a broken pot, likely under 40 years old. Included for its visual spectacle and local renown rather than its age, per the qualifying criteria in CLAUDE.md. No official classification or protected status; access and public visibility are well documented, unlike its history."
+      "notes": "Not an ancient tree: origin and exact age are unknown, and researchers who have examined it consider it a modern escapee from a broken pot, likely under 40 years old. Included for its visual spectacle and local renown rather than its age, per the qualifying criteria in CLAUDE.md. No official classification or protected status; access and public visibility are well documented, unlike its history.",
+      "location_precision": "confirmed"
     }
   ]
 }
