@@ -15,7 +15,14 @@ on:
     #   - cron: "0 19-23 * * *"
     #   - cron: "0 0-7 * * *"
     # which leaves 10:00-21:00 Amsterdam free.
-    - cron: "*/20 * * * *"
+    # Back to hourly on 2026-07-21. Every 20 minutes was tried for half a day on
+    # the reasoning that a rejected attempt costs nothing on a public repo, so
+    # more knocking could only help. It did the opposite: GitHub gives very
+    # frequent schedules lower priority and drops them, and the count fell to
+    # three scheduled runs in 24 hours. Hourly is the cadence GitHub actually
+    # honours, and even that gets skipped often, which is why workflow_dispatch
+    # stays available for a manual push when the usage window is known to be open.
+    - cron: "0 * * * *"
   workflow_dispatch: {}
 
 permissions:
