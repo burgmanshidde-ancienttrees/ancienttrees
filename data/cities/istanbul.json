@@ -1,0 +1,332 @@
+{
+  "city": "Istanbul",
+  "country": "Turkey",
+  "status": "needs_curation",
+  "intro": "Istanbul's most storied trees were not supposed to be the ones that survived. The plane that watched Mehmed the Conqueror ride into the fallen city in 1453 stood in Topkapı Palace's first courtyard until 1928, when it finally gave out. Dolmabahçe's palace planes were felled for canker disease in 2022. What lived through centuries instead turns out to be humbler: trees inside a university's working forest, a bazaar entrance with a poet living under it since 1964, a plane a 2017 storm knocked flat that gardeners nursed back upright. Istanbul's oldest tree, at roughly 1,300 years, predates the Ottoman conquest by seven centuries.",
+  "meta_description": "Istanbul's oldest tree is a 1,300 year old plane hidden inside a university forest. Nine more, from a poet's bazaar tree to a storm survivor, still stand.",
+  "question_answer": "The oldest tree in Istanbul is an Oriental plane growing inside Istanbul University-Cerrahpaşa's forestry research forest in Bahçeköy, Sarıyer, estimated at 1,300 to 1,400 years old. Its trunk measures 4.5 metres across, hollowed out enough that only the outer layer of wood is still doing the work of keeping it alive.",
+  "question_meta": "Istanbul's oldest tree is a 1,300-1,400 year old plane in a Bahçeköy forest. Its story, exact location, and nine more remarkable trees across the city.",
+  "question_context": "Istanbul's claim to its oldest tree comes from an unlikely source: a survey of a university's own working forest rather than a palace garden or a mosque courtyard, the places most of the city's other famous old trees grow. Istanbul University-Cerrahpaşa's Faculty of Forestry maintains an education and research forest in Bahçeköy, on the edge of Belgrad Forest, and when its own foresters dated the Oriental planes growing inside it, they found the oldest at somewhere between 1,300 and 1,400 years, predating the 1453 Ottoman conquest by seven centuries and the university itself by well over a millennium. Sources differ on the exact figure: Hürriyet Daily News quotes forestry academic Süleyman Çoban's estimate of 1,300 years, while Turkish wire coverage of the same survey rounds up to 1,400, with a trunk roughly 4.5 metres across either way. Two more officially protected monumental trees share the same forest: an octopus-shaped plane and a double-trunked specimen roughly half the age. None of the three has a plaque you would notice from the forest road. Getting there: no direct metro; bus from Sarıyer or a taxi from Hacıosman station (M2 line).",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Istanbul?",
+      "a": "An Oriental plane inside Istanbul University-Cerrahpaşa's forestry research forest in Bahçeköy, Sarıyer, estimated at 1,300 to 1,400 years old depending on the source. A double-trunked plane roughly 800 years old and the octopus-shaped Ahtapot Çınar grow in the same protected forest."
+    },
+    {
+      "q": "Why do so many of Istanbul's oldest trees grow in unglamorous places rather than palaces?",
+      "a": "Because the palace trees mostly did not survive. The plane reportedly present at the 1453 conquest inside Topkapı Palace died in 1928, and Dolmabahçe's historic planes were felled for canker disease in 2022. A working forest, a cemetery and a bazaar entrance turned out to protect their trees better than ornamental palace gardens did."
+    },
+    {
+      "q": "Are Istanbul's ancient trees free to visit?",
+      "a": "Yes, all ten are free. Most stand on open streets, in public parks, or on cemetery and forest land with no entry fee, though the Büyükada cypress requires a ferry ride to reach since the Princes' Islands have no bridge or airport."
+    },
+    {
+      "q": "Where do Istanbul's ancient trees cluster?",
+      "a": "Plane trees dominate, a legacy of the Ottoman belief that the empire's founder Osman I dreamed of a plane tree growing from his chest before founding the dynasty. Three of the ten trees on this list grow inside a single protected forest in Bahçeköy."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ist_001",
+      "name": "The Oldest Plane of Bahçeköy",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "1,300-1,400 years",
+      "age_min": 1300,
+      "age_max": 1400,
+      "location": {
+        "address": "İstanbul Üniversitesi-Cerrahpaşa Orman Fakültesi, Bahçeköy Yerleşkesi, Sarıyer",
+        "latitude": 41.1875,
+        "longitude": 28.996,
+        "neighbourhood": "Bahçeköy, Sarıyer"
+      },
+      "story": "Istanbul's oldest living thing predates the city's Ottoman name by seven centuries. Inside a university forestry research station in Bahçeköy stands an Oriental plane that foresters estimate at somewhere between 1,300 and 1,400 years old, a trunk 4.5 metres across and hollowed out enough that, as Istanbul University academic Süleyman Çoban has put it, the wood actually feeding the tree is the thin outer cambium layer, not the vast dead core inside it. The tree has effectively been growing on a shell for longer than most European cities have existed. It stood here through the final two centuries of Byzantine rule, the 1453 conquest, and every Ottoman sultan who followed, unnoticed by any of them because it happened to sit in a patch of forest nobody built on. It only became a public fact recently, when Istanbul University foresters surveying their own research grounds realised they were standing next to the oldest tree in the city. Two more officially protected monumental trees share the same forest: an octopus-shaped plane a short walk away, and a double-trunked plane roughly half its age. None of them have a plaque you would notice from the forest road.",
+      "verified_sources": [
+        "https://www.hurriyetdailynews.com/oldest-tree-in-istanbul-1-300-years-old-expert-169579",
+        "https://www.haber7.com/kultur/haber/3596719-turkiyenin-en-yasli-cinari-istanbulda-1400-yildir-ayakta",
+        "https://www.trthaber.com/haber/turkiye/istanbulun-anit-agaclari-yuzyillarin-hafizasini-ayakta-tutuyor-931860.html"
+      ],
+      "access": "Free; the tree stands inside a university forestry research station reachable via public Belgrad Forest walking trails from Bahçeköy",
+      "transport": "No direct metro; bus from Sarıyer, or a taxi from Hacıosman station (M2 line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is disputed between sources: 1,300 years per Hürriyet Daily News quoting Istanbul University's Süleyman Çoban, versus 1,400 years and a roughly 5m diameter in Turkish wire coverage of the same forest survey. Presented as a range. Exact GPS within the forest is not independently confirmed; the pin marks the general campus area. Worth an on-the-ground check of public access conditions in a future pass.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ist_002",
+      "name": "The Ahtapot Çınar",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "up to 580 years",
+      "age_min": 400,
+      "age_max": 580,
+      "location": {
+        "address": "Near Bilezikçi Çiftliği, Çayırbaşı-Bahçeköy road, Sarıyer",
+        "latitude": 41.183,
+        "longitude": 29.001,
+        "neighbourhood": "Bahçeköy, Sarıyer"
+      },
+      "story": "Seven trunks that are actually one tree share a single root system at this bend in the Bahçeköy forest. Its lowest branches touched the ground centuries ago and thickened into limbs that now radiate outward like separate trunks, which is how a plane tree ends up nicknamed the Octopus. Turkish foresters put its age at up to 580 years, old enough that a local claim ties its early growth to the reign of Suleiman the Magnificent in the 1500s, though a more conservative reading of the trunk puts it closer to 400. Either figure makes it one of the oldest individually named trees in the city, and unlike most ancient planes, which grow as a single vertical column, this one spread sideways instead, its lowest limbs thick enough to sit on. At over 40 metres tall and more than 3 metres across at the base, it dominates a bend on the old road between Çayırbaşı and Bahçeköy, a stop on the hiking routes that cross Belgrad Forest today. Locals photograph it for the shape. Foresters study it for what centuries of horizontal growth actually does to a trunk that size.",
+      "verified_sources": [
+        "https://dogadakiler.com/Anit-Agaclar/istanbul-Anit-Agaclar/Yatik-Cinar-Anit-Agac/",
+        "https://www.hurriyetdailynews.com/istanbuls-monumental-trees-stand-through-centuries-217957"
+      ],
+      "access": "Free; reachable via public Belgrad Forest walking trails from Bahçeköy",
+      "transport": "No direct metro; bus from Sarıyer, or a taxi from Hacıosman station (M2 line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is disputed: some sources give roughly 580 years (tying early growth to Suleiman the Magnificent's reign), others a more conservative 400. Presented as a range. Exact GPS not independently confirmed; the pin marks the general Bilezikçi Çiftliği bend on the Çayırbaşı-Bahçeköy road where multiple sources place it.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ist_003",
+      "name": "The Hüseyin Avni Dede Plane",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "375 years",
+      "age_min": 370,
+      "age_max": 380,
+      "location": {
+        "address": "Sahaflar Çarşısı entrance, Beyazıt Meydanı, Fatih",
+        "latitude": 41.0102,
+        "longitude": 28.9661,
+        "neighbourhood": "Beyazıt, Fatih"
+      },
+      "story": "A tree in Istanbul has had the same downstairs neighbour for 58 years. Hüseyin Avni Dede came to sell books and antiques under this 375-year-old plane at the entrance to the Sahaflar Çarşısı, Istanbul's old book bazaar, in 1964, when he was ten years old and working alongside his poet father. He never really left, aside from a three-month gap in 1968. In 2022 Istanbul's Metropolitan Municipality made it official and renamed the tree after him, the Hüseyin Avni Dede Çınarı. The tree's own history runs darker. For generations Istanbulites remembered it as the Cellat Çınarı, the Executioner's Plane, because condemned prisoners were hanged from its branches into the 1960s and 70s, a detail that sits oddly beside a poet who has spent a lifetime selling verse under the same wood. Planted sometime in the mid-1600s, the tree has outlived the executions, the sultans, and most of the original Sahaflar booksellers who once worked around it. Dede is still there most days, technically a tenant of a plane tree older than the country it now stands in.",
+      "verified_sources": [
+        "https://www.hurriyet.com.tr/gundem/58-yildir-altindan-ayrilmadigi-cinar-agacina-huseyin-avni-dede-adi-verildi-42157868",
+        "https://www.hurriyet.com.tr/seyahat/istanbulun-tarihine-taniklik-eden-asirlik-cinarlar-43088174",
+        "https://www.milliyet.com.tr/arkeoloji/tarihin-sessiz-taniklari-6979774"
+      ],
+      "access": "Free, open bazaar entrance",
+      "transport": "2 min walk from Beyazıt-Kapalıçarşı tram stop (T1 line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ist_004",
+      "name": "The Taşlı Çınar",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "446 years",
+      "age_min": 420,
+      "age_max": 446,
+      "location": {
+        "address": "Alemdar Caddesi, Cankurtaran, Fatih (outside Gülhane Park's Alemdar gate)",
+        "latitude": 41.0135,
+        "longitude": 28.9808,
+        "neighbourhood": "Alemdar, Fatih"
+      },
+      "story": "A stone was lodged inside this tree's bark for roughly three centuries, and until about ten years ago you could still see it. According to the story attached to the tree, Sultan Ahmed I rode past on his white horse sometime between 1590 and 1617 while the Alemdar gate and fountain to what is now Gülhane Park were being built, and a stone kicked loose from a horseshoe struck the sapling and stayed there as it grew, sealed a few metres up the trunk like a fossil. Whether or not the horse is real, the tree is: Istanbul's own monumental tree registry lists it at roughly 446 years old, 26 metres tall, with a trunk 328 centimetres around, the thickest Oriental plane in the district. The embedded stone was removed during conservation work about a decade ago, leaving a visible cavity where it used to sit. What remains is a tree that has watched the road outside Gülhane Park go from Ottoman thoroughfare to tram line, still standing exactly where a legend says a sultan's horse put it there.",
+      "verified_sources": [
+        "https://anitagac.istanbul/agac/AVR-20AA0027",
+        "https://yedikita.com.tr/bir-agac-ile-tasin-300-yillik-hikayesi/"
+      ],
+      "access": "Free, public street corner",
+      "transport": "1 min walk from Gülhane tram stop (T1 line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Coordinates are an estimate for the Alemdar Caddesi gate area outside Gülhane Park; the official registry gives the street address but not exact GPS.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ist_005",
+      "name": "The Çengelköy Plane",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "roughly 180 years",
+      "age_min": 176,
+      "age_max": 190,
+      "location": {
+        "address": "Çengelköy İskele Meydanı, Üsküdar",
+        "latitude": 41.049353,
+        "longitude": 29.057589,
+        "neighbourhood": "Çengelköy, Üsküdar"
+      },
+      "story": "This tree spent a night on the ground and got back up. For around 180 years the plane tree at Çengelköy's ferry pier square was the neighbourhood's defining landmark, a canopy wide enough to shade the waterfront tea garden now named Çınaraltı after it. In July 2017 a storm that felled more than 2,000 trees across Istanbul tore this one out of the ground, root ball and all. City crews arrived the next morning and, rather than clear it away, tried something rarer: they propped the trunk back into position, wrapped the exposed roots in felt to stop them drying out, pruned back the crown to reduce the load, and waited. Nothing visible happened for a year. Then new shoots appeared, then small leaves, then, over successive seasons, branches thick enough to look like a tree again rather than a patient. It has not fully recovered the shape it had before the storm, but locals who watched it get carried out for dead now watch it get greener every spring, sitting exactly where it always did at the edge of the Bosphorus.",
+      "verified_sources": [
+        "https://www.hurriyetdailynews.com/monumental-plane-tree-in-istanbul-brought-back-to-life-164970",
+        "https://www.evrensel.net/haber/327720/cengelkoyde-devrilen-176-yasindaki-cinara-yasam-destegi",
+        "https://www.diken.com.tr/181-yillik-kent-hafizasi-cengelkoyde-selde-devrilen-tarihi-cinar-topraga-tutunup-yeserdi/"
+      ],
+      "access": "Free, public square",
+      "transport": "Steps from Çengelköy ferry pier (Şehir Hatları)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Age reported between roughly 176 and 190 years depending on the source (176 per Evrensel, 181 per Diken, 184 in other coverage of the same 2017 storm and rescue). Presented as a range rather than one figure.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ist_006",
+      "name": "The Cypresses of Karacaahmet",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "440+ years (planting tradition; individual trees unconfirmed)",
+      "age_min": 150,
+      "age_max": 440,
+      "location": {
+        "address": "Karacaahmet Mezarlığı, Üsküdar",
+        "latitude": 41.010436,
+        "longitude": 29.026301,
+        "neighbourhood": "Üsküdar"
+      },
+      "story": "Nine cypresses inside Turkey's largest cemetery carry official Monument Tree status, and the tradition that put them there is older than any single trunk still standing. In 1582 Nurbanu Sultan, mother of the reigning sultan Murad III, donated 124 dönüms of her own land to expand Karacaahmet into a proper cemetery and had cypresses planted across it deliberately, assigning guards specifically to protect the trees. Cypresses became the default marker of an Ottoman grave from then on, dark green columns meant to stand for centuries the way a headstone stands for one lifetime. Whether any of the nine protected specimens here today are the actual seventeenth century plantings or later replacements grown from the same rootstock and tradition is not something any source pins down, which is honest: a cemetery replaces its cypresses the way it replaces its headstones, continuously, without announcing it. What is certain is that the practice has not stopped in over 440 years, and that walking Karacaahmet today, through roughly 750,000 square metres of graves under a cypress canopy older than most of the empire's other surviving buildings, is the closest thing Istanbul has to walking through an Ottoman forest.",
+      "verified_sources": [
+        "https://www.gazetekadikoy.com.tr/cevre/istanbulun-taniklari-anit-agalar",
+        "https://tr.wikipedia.org/wiki/Karacaahmet_Mezarl%C4%B1%C4%9F%C4%B1"
+      ],
+      "access": "Free, cemetery open daily during daylight hours",
+      "transport": "10-15 min walk from Üsküdar main square, or a short bus ride toward Selimiye",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Nine cypresses at Karacaahmet officially carry Monument Tree status from Istanbul's Parks and Gardens Department, but no source specifies which one this entry refers to individually or gives an age for any single trunk. The cemetery's cypress-planting tradition dates to 1582, but like Kameido Tenjin's wisteria in Tokyo this is a continuous practice rather than proof any one tree is that old, so the age range is left wide. The pin marks the general cemetery, not one of the nine specific trees.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ist_007",
+      "name": "The Ata Fıstık Çamı",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "397 years",
+      "age_min": 390,
+      "age_max": 400,
+      "location": {
+        "address": "Küçük Çamlıca Korusu, Üsküdar",
+        "latitude": 41.0198,
+        "longitude": 29.0662,
+        "neighbourhood": "Küçük Çamlıca, Üsküdar"
+      },
+      "story": "The tree that gave a hill its name is not originally from this hill. Küçük Çamlıca, Istanbul's best known viewpoint on the Asian side, takes its name from the stone pines (çam) covering it, but foresters say the grove's own symbol tree, the Ata Fıstık Çamı, was brought here from the Aegean region generations ago and adapted to Bosphorus soil rather than growing here naturally. At roughly 397 years old, with a trunk 145 centimetres across and a crown reaching 25 metres, it predates the name Çamlıca itself, which only stuck once Sultan Abdülaziz began favouring the grove in the nineteenth century. Stone pines are usually grown for their edible pine nuts, and this one has produced them for longer than Istanbul has had streetlights, trams, or bridges across the Bosphorus. Istanbul's official monument tree registry lists it, and half a dozen younger pines around it, as individually protected, each with its own name and measured age, a small forest of transplants that outlived the reason anyone brought them here in the first place. The view from the hill gets the visitors. The tree that named the hill mostly gets ignored.",
+      "verified_sources": [
+        "https://www.hurriyet.com.tr/seyahat/kucuk-camlica-korusu-nerede-ve-nasil-gidilir-kucuk-camlica-korusu-tarihi-giris-ve-kahvalti-ucreti-hakkinda-bilgi-41747699",
+        "https://anitagac.istanbul/yazi/kucuk-camlica-korusu-anit-agac-rotasi"
+      ],
+      "access": "Free, park open 24 hours; food stalls open 09:00-23:00",
+      "transport": "10 min walk from Kısıklı station (M5 metro line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Exact position within the grove is not independently pinned; the pin marks Küçük Çamlıca Korusu generally.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ist_008",
+      "name": "The Florya Mastic Tree",
+      "species": "Mastic Tree (Pistacia lentiscus)",
+      "age_estimate": "roughly 500 years",
+      "age_min": 450,
+      "age_max": 550,
+      "location": {
+        "address": "Florya Atatürk Ormanı, Bakırköy",
+        "latitude": 40.9784,
+        "longitude": 28.7869,
+        "neighbourhood": "Florya, Bakırköy"
+      },
+      "story": "Most mastic trees stay shrub sized, a couple of metres of scrubby Mediterranean green grown for their resin, not their timber. The mastic tree inside Florya's Atatürk Forest did not get that memo. Estimated at around 500 years old, its trunk has thickened to roughly 2 metres across, the thickest mastic tree recorded anywhere in Istanbul by a wide margin, a shrub species behaving like an oak. Nobody taps it for resin the way Chios islanders have farmed the same species for a thousand years; this one grows purely as a curiosity inside a public forest planted from 1936 on reclaimed coastal land that used to be marsh. Walk the forest paths near the shore and you pass pines and cedars planted deliberately as part of a young republic's afforestation project, all of them younger than the mastic tree they grew up around, a five-century holdout that was already old when the rest of Florya was still open water.",
+      "verified_sources": [
+        "https://www.hurriyetdailynews.com/istanbuls-monumental-trees-stand-through-centuries-217957",
+        "https://eksisozluk.com/florya-ataturk-ormani--647072"
+      ],
+      "access": "Free, public forest, open daily",
+      "transport": "10 min walk from Florya Marmaray station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age (roughly 500 years) and trunk diameter (about 2 metres) come from general coverage of Florya Atatürk Forest's notable trees rather than an individual tree registry entry. Exact in-forest position not confirmed; a stronger primary source would be worth finding in a future pass.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ist_009",
+      "name": "The Ehrami Servi of Büyükada",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "244 years",
+      "age_min": 240,
+      "age_max": 248,
+      "location": {
+        "address": "Şehit Murat Yüksel Sokak, Nizam, Büyükada, Adalar",
+        "latitude": 40.873,
+        "longitude": 29.1195,
+        "neighbourhood": "Nizam, Büyükada"
+      },
+      "story": "The only tree on this list that requires a ferry to reach stands on a residential street on Büyükada, the largest of Istanbul's car-free Princes' Islands. Istanbul's official monument tree registry lists this Mediterranean cypress, grown into the tall narrow pyramidal form the species is known for, at approximately 244 years old, 18 metres tall, with a trunk 75 centimetres across. It predates the island's Belle Epoque mansions, the Greek Orthodox monastery on the hill above it, and the horse-drawn carriages that until recently were the island's only form of wheeled transport. The registry protects it under three separate criteria at once, historical importance, age, and trunk diameter, a bureaucratic way of saying there was no single reason to save it, there were three. Büyükada's own history runs through Byzantine exile, this is where empresses and princes were once banished, and through White Russian refugees fleeing the 1917 revolution, none of which this cypress witnessed directly from its residential street, but which shaped an island growing quietly taller around it for two and a half centuries.",
+      "verified_sources": [
+        "https://anitagac.istanbul/agac/AND-01KDA0036",
+        "https://www.anitagaclar.gov.tr/detail/ehrami-servi-cuppressus-sempervirens-var--pyramidalis/90"
+      ],
+      "access": "Free, public street; reachable only by ferry (no bridges to the Princes' Islands)",
+      "transport": "Ferry to Büyükada from Kabataş or Bostancı, then a short walk or bicycle ride into Nizam",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Coordinates estimated for the Nizam neighbourhood, Şehit Murat Yüksel Sokak; not independently geocoded to the exact trunk.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ist_010",
+      "name": "The Plane Trees of Beykoz Çayırı",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "400-500 years (average, multiple trees)",
+      "age_min": 400,
+      "age_max": 500,
+      "location": {
+        "address": "Beykoz Çayırı, Ortaçeşme, Beykoz",
+        "latitude": 41.135,
+        "longitude": 29.093,
+        "neighbourhood": "Beykoz"
+      },
+      "story": "Ottoman sultans hunted on this exact meadow, which is why locals still sometimes call it Hünkar Çayırı, the Sultan's Meadow, instead of its official name. A handful of plane trees standing on Beykoz Çayırı today, three or four individually protected as monumental, date to the era when Mehmed II built a hunting lodge near what is now Tokatköy after the 1453 conquest, and Istanbul University foresters estimate their average age at somewhere between 400 and 500 years, old enough that at least some may already have been standing before the lodge itself went up. Unlike a single named specimen with one clean story, these trees are witnesses in the plural: hunting parties under the Conqueror and his successors, then the meadow's slower afterlife as Beykoz shifted from imperial hunting ground to Bosphorus village. What they lack in individual fame they make up for in setting. This is one of the few spots on this list where you can stand under a centuries-old plane tree and see the Bosphorus doing exactly what it was doing when the tree was a sapling.",
+      "verified_sources": [
+        "https://www.aa.com.tr/tr/yasam/istanbulun-anit-agaclari-yuzyillarin-hafizasini-ayakta-tutuyor/3802012",
+        "https://www.hurriyet.com.tr/seyahat/istanbulun-tarihine-taniklik-eden-asirlik-cinarlar-43088174"
+      ],
+      "access": "Free, open meadow",
+      "transport": "Bus or dolmuş from Beykoz pier; no metro access",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "These are 3-4 individual plane trees on Beykoz Çayırı rather than one tree; the 400-500 year figure is an average forestry estimate, not a per-tree age. Exact positions of the individual trees within the meadow are not independently pinned.",
+      "location_precision": "approximate"
+    }
+  ]
+}
