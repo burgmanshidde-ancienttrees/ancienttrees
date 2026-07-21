@@ -253,6 +253,10 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
 .passport.complete { background: var(--moss); color: #fff; }
 .passport.complete strong { color: #fff; }
 .passport-total { display: block; font-size: 12px; opacity: 0.8; margin-top: 2px; }
+.passport-save { display: block; margin-top: 6px; background: none; border: none; padding: 0;
+  font-family: var(--sans); font-size: 12px; color: var(--moss); text-decoration: underline;
+  cursor: pointer; text-align: left; }
+.passport.complete .passport-save { color: #fff; }
 .pin-me { width: 16px; height: 16px; border-radius: 50%; background: #1E6FD9;
   border: 3px solid #fff; box-shadow: 0 0 0 4px rgba(30,111,217,0.25); }
 @media (max-width: 800px) {
@@ -698,6 +702,43 @@ document.querySelectorAll('.seen-btn').forEach(function(btn) {{
     paintPassport();
   }});
 }});
+
+// Browser storage is not a safe place to keep something someone cares about.
+// It goes when they clear their data, it does not exist in private browsing, it
+// never reaches their laptop, and Safari on iOS deletes it after seven days
+// without a visit, which is exactly a three week trip. So the passport can be
+// turned into a plain link: bookmark it, mail it to yourself, open it on
+// another phone. No account, nothing stored anywhere but in the link itself.
+if (location.hash.indexOf('#trees=') === 0) {{
+  var incoming = decodeURIComponent(location.hash.slice(7)).split(',').filter(Boolean);
+  if (incoming.length) {{
+    var merged = readSeen();
+    incoming.forEach(function(id) {{ if (merged.indexOf(id) === -1) {{ merged.push(id); }} }});
+    writeSeen(merged);
+    history.replaceState(null, '', location.pathname + location.search);
+  }}
+}}
+
+var saveBtn = document.getElementById('passport-save');
+if (saveBtn) {{
+  saveBtn.addEventListener('click', function() {{
+    var link = location.origin + location.pathname + '#trees=' + encodeURIComponent(readSeen().join(','));
+    function done(msg) {{
+      saveBtn.textContent = msg;
+      setTimeout(function() {{ saveBtn.textContent = 'Save or move to another device'; }}, 4000);
+    }}
+    if (navigator.share) {{
+      navigator.share({{ title: 'My trees', url: link }}).then(function() {{ done('Saved'); }},
+                                                              function() {{}});
+    }} else if (navigator.clipboard) {{
+      navigator.clipboard.writeText(link).then(function() {{ done('Link copied. Bookmark it or mail it to yourself.'); }},
+                                               function() {{ window.prompt('Copy this link:', link); }});
+    }} else {{
+      window.prompt('Copy this link:', link);
+    }}
+  }});
+}}
+
 paintPassport();
 
 // "Where am I": browser geolocation only, nothing stored and nothing sent
@@ -1360,6 +1401,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
       <p class="passport" id="passport" hidden>
         <strong><span id="passport-count">0</span> of {len(trees)}</strong> visited in {esc(city)}
         <span class="passport-total" id="passport-total"></span>
+        <button type="button" class="passport-save" id="passport-save">Save or move to another device</button>
       </p>
     </div>
     {''.join(cards)}
