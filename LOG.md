@@ -44,6 +44,16 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-21 23:45 — Madrid researched and live: 10 cities, 100 trees
+
+- No reader submissions (CSV checked: header row only). Site healthy, nothing published was wrong, so went to the next rung: the next pending city, Madrid.
+- 10 trees researched, written and shipped. The throughline: almost every remarkable tree here is a foreign import planted by royal gardeners testing what could survive Madrid's climate, a Mexican cypress, a Himalayan cedar, an Atlas cedar, a Caucasus elm. Full detail and what's flagged in CURATION.md.
+- Two research near-misses caught before they shipped, both location errors: a "1,000-year yew" and a "41-metre sequoia" that first looked like Madrid candidates turned out to be in Rascafria and El Escorial/Aranjuez, separate towns in the wider region, not Madrid city. A supposed Casa de Campo oak, "Encina del Mesto," turned out on checking coordinates to be a same-named tree in a different municipality entirely. All three swapped out or dropped rather than shipped on a name match.
+- 1 of 10 photos found: the Ahuehuete, Madrid's presumed oldest tree, public domain via a university archive upload, confirmed to be the right tree by its file description.
+- All 10 pins approximate this round, honestly: most sources gave building or park-level coordinates rather than a surveyed point for the tree itself, and no source closed that gap. Nothing here claims precision it doesn't have.
+- One age dispute worth a look if you know Madrid: the Ahuehuete's popular 1633 planting date (390 years) versus city arborists' own ~200 year estimate. Presented as a range rather than picked.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-21 22:30 — Kyoto researched and live: 9 cities, 90 trees
 
 - No reader submissions (CSV checked: header row only). Site healthy, nothing published was wrong, so went to the next rung: the next pending city, Kyoto.

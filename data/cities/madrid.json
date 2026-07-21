@@ -1,0 +1,333 @@
+{
+  "city": "Madrid",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Madrid's most remarkable trees are almost all immigrants, brought in by royal gardeners who spent three centuries testing whether foreign species could survive a climate of freezing winters and scorching, dry summers. A Mexican swamp cypress from a tropical wetland has outlasted every native tree in the city's most famous park. A Himalayan cedar, an Atlas Mountains cedar, and a Caucasus mountain elm all found the same Madrid plateau survivable enough to grow for centuries. Even the city's oldest documented holm oak, one of the few genuinely native species here, grows wild in what was once a royal hunting ground rather than a planted garden. Spain's Regional Catalogue of Singular Trees protects all ten, one line each in a public register of 280 specimens across the Madrid region.",
+  "meta_description": "Madrid's remarkable trees are mostly foreign transplants: a Mexican cypress, a Himalayan cedar, a Caucasus elm. Meet ten, all catalogued and protected.",
+  "question_answer": "Madrid's oldest tree, by most accounts, is the Ahuehuete, a Montezuma cypress in the Parterre garden of Retiro Park, though its exact age is genuinely disputed: legend and old guidebooks claim it was planted in 1633, which would make it almost 400 years old, while recent studies by city arborists suggest it may be a much younger 200 years or less. Either way it stands in the Parterre, a five minute walk from Puerta de Alcala.",
+  "question_meta": "Madrid's oldest tree is a disputed-age Mexican cypress in Retiro Park, claimed at 400 years but possibly 200. Its story and nine more remarkable trees.",
+  "question_context": "The Ahuehuete of the Parterre carries two irreconcilable stories about its own age. Guidebooks and the sign at its base repeat a long-standing claim that it was planted in 1633, during the creation of the Retiro as a royal hunting estate under the Count-Duke of Olivares, which would make it close to 400 years old and the oldest tree in Madrid by a wide margin. Specialists, including technicians from Madrid's own city council, are skeptical: the Parterre garden itself was laid out in 1714, replacing whatever vegetation existed before, and some estimates place the tree's planting after 1814, closer to two centuries old rather than four. Montezuma cypresses are native to Mexican wetlands and can live for millennia in the right conditions, so age alone cannot settle the question from the tree's condition. What is not disputed is the species: a swamp cypress from a country most Madrid residents have never associated with their own most famous park, thriving on the plateau for at least two centuries. Getting there: Puerta de Alcala, then a five minute walk into the Parterre garden.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Madrid?",
+      "a": "Probably the Ahuehuete, a Montezuma cypress in Retiro Park's Parterre garden, though its age is disputed between a legendary 1633 planting date and a more conservative recent estimate of around 200 years."
+    },
+    {
+      "q": "Where is the best place to see old trees in Madrid?",
+      "a": "Retiro Park, which holds four of the ten trees on this list, more than any other single site, including the Ahuehuete, a Himalayan cedar, a three-trunked yew and a grove of bald cypresses."
+    },
+    {
+      "q": "Are Madrid's remarkable trees free to see?",
+      "a": "Most are. Retiro Park, Casa de Campo, Campo del Moro and Parque del Oeste are all free public parks. The Royal Botanic Garden charges general admission."
+    },
+    {
+      "q": "Why are so many of Madrid's remarkable trees foreign species?",
+      "a": "Spanish royal gardeners spent three centuries importing trees from across the world to test what could survive Madrid's climate. Several of the survivors, a Mexican cypress, a Himalayan cedar, a Caucasus elm, are now among the city's oldest and most protected specimens."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mad_001",
+      "name": "The Ahuehuete of the Parterre",
+      "species": "Montezuma Cypress (Taxodium mucronatum)",
+      "age_estimate": "200-390 years (age genuinely disputed between sources)",
+      "age_min": 200,
+      "age_max": 390,
+      "location": {
+        "address": "Jardin del Parterre, Parque del Retiro, 28009 Madrid",
+        "latitude": 40.4132,
+        "longitude": -3.6825,
+        "neighbourhood": "Retiro"
+      },
+      "story": "This tree carries two stories about its own birth that cannot both be true. The popular version, repeated in guidebooks and on the sign at its base, says it was planted in 1633 when the Count-Duke of Olivares opened the grounds that became Retiro Park, which would make it nearly 400 years old and Madrid's unrivalled oldest tree. Madrid's own municipal arborists are skeptical: the Parterre garden around it was completely replanted in 1714, and some specialists place the tree's actual origin after 1814, closer to two centuries old rather than four. Called Ahuehuete, from the Nahuatl for old man of the water, or simply El Abuelo, the grandfather, it is a Montezuma cypress, a species native to Mexican wetlands where individual specimens are known to live for millennia and reach trunk diameters wider than a house. In arid, landlocked Madrid it has thrived regardless of which age is correct, its buttressed trunk and feathery foliage looking more at home beside a Mexican river than beside a formal Spanish parterre.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Ahuehuete_del_Buen_Retiro",
+        "https://www.felipeserrano.com/el-misterioso-ahuehuete-del-retiro/",
+        "https://www.arbolesconhistoria.com/2019/01/22/ahuehuete-del-retiro-patriarca-madrid/"
+      ],
+      "access": "Free, public park",
+      "transport": "Retiro (Metro L2) or Puerta de Alcala, 5 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Ahuehuete_porte.JPG/1024px-Ahuehuete_porte.JPG",
+        "license": "Public domain",
+        "attribution": "UAM Biblioteca y Archivo, Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is presented as a range because sources genuinely and substantially disagree (1633 legend vs. post-1814 estimates from city technicians), per the site's honesty standard rather than picking one figure. Coordinates are an estimate for the Parterre garden within Retiro; no surveyed point for the tree itself was found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mad_002",
+      "name": "The Himalayan Cedar of the Crystal Palace",
+      "species": "Deodar Cedar (Cedrus deodara)",
+      "age_estimate": "about 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "location": {
+        "address": "Estanque del Palacio de Cristal, Parque del Retiro, 28009 Madrid",
+        "latitude": 40.4133,
+        "longitude": -3.6839,
+        "neighbourhood": "Retiro"
+      },
+      "story": "This cedar stands directly in front of the pond at the Palacio de Cristal, a 19th century glass and iron pavilion built in 1887 to exhibit plants and animals brought back from the Philippines, and it has spent most of the pavilion's history as part of the same postcard view: the glass palace reflected in the water, framed by the cedar's dark, tiered branches. Deodar cedars come from the western Himalayas, where the name deodar derives from a Sanskrit phrase meaning timber of the gods, and the species reached European ornamental gardens in the early 19th century as one of many exotic conifers collectors raced to introduce. Madrid's climate, hot and dry in summer rather than the Himalayan cedar's native monsoon-fed mountains, has suited this specimen well enough that it now ranks among Retiro's six officially singular trees, protected under the same regional catalogue as its more famous neighbour, the disputed-age Ahuehuete a short walk away.",
+      "verified_sources": [
+        "https://miradasdemadrid.blogspot.com/2013/12/arboles-singulares-del-parque-del-retiro.html",
+        "https://arbolessingularesdelacomunidad.jimdofree.com/rutas/madrid/el-retiro/"
+      ],
+      "access": "Free, public park",
+      "transport": "Ibiza (Metro L9) or Retiro (Metro L2), 8 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is an estimate based on the Palacio de Cristal's 1887 construction date and typical planting-alongside-building practice; no source gives a precise planting date for this specific tree. Coordinates are for the Palacio de Cristal pond area generally, not a surveyed point for the tree.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mad_003",
+      "name": "The Three-Trunked Yew of the Velazquez Palace",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "over 150 years",
+      "age_min": 150,
+      "age_max": 175,
+      "location": {
+        "address": "Palacio de Velazquez, Parque del Retiro, 28009 Madrid",
+        "latitude": 40.4147,
+        "longitude": -3.6825,
+        "neighbourhood": "Retiro"
+      },
+      "story": "Rather than one trunk, this yew splits into three, each thick enough to measure separately: 142, 120 and 140 centimetres around, fused into a single crown 18 metres wide standing beside the eastern wall of the Palacio de Velazquez, a red-brick exhibition hall built in 1883. European yews are famously slow growing and long lived, capable of reaching ages in the thousands of years in the right conditions, and famously toxic in almost every part except the flesh around the seed, a combination that has made the species a fixture of European churchyards for centuries, planted as much for its poison as its evergreen symbolism. At only 12 metres tall despite its age, this specimen shows the yew's characteristic patience: slow vertical growth traded for density and longevity. A wooden fence now rings the tree for its protection, a modest concession for one of only six trees in the whole of Retiro Park to hold official singular tree status from the Community of Madrid.",
+      "verified_sources": [
+        "http://elgatoporlasramas.blogspot.com/2014/11/tejo-del-palacio-de-velazquez-del-retiro.html?m=1",
+        "https://es.wikipedia.org/wiki/Tejo_del_Palacio_de_Vel%C3%A1zquez_del_Retiro"
+      ],
+      "access": "Free, public park",
+      "transport": "Ibiza (Metro L9), 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Coordinates are an estimate for the Palacio de Velazquez location within Retiro Park; the tree stands specifically on the building's east side per sources, but no surveyed lat/long was found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mad_004",
+      "name": "The Bald Cypresses of the Crystal Palace Pond",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "about 108 years",
+      "age_min": 100,
+      "age_max": 115,
+      "location": {
+        "address": "Estanque del Palacio de Cristal, Parque del Retiro, 28009 Madrid",
+        "latitude": 40.4133,
+        "longitude": -3.6839,
+        "neighbourhood": "Retiro"
+      },
+      "story": "Several bald cypresses grow directly out of the pond in front of the Palacio de Cristal, their trunks and lower roots permanently submerged, a planting scheme that only works because this particular conifer, unlike almost every other cone-bearing tree, tolerates and even prefers standing water. Bald cypresses develop distinctive above-water root growths called pneumatophores, sometimes called cypress knees, that let the roots breathe oxygen the flooded soil cannot supply, an adaptation evolved in the swamps of the southeastern United States rather than anywhere near Madrid. Planted around 1918, roughly three decades after the glass pavilion itself went up in 1887, the grove has grown into one of the more unusual sights in a park otherwise dominated by conventional planting: full-grown conifers standing calf-deep in a reflecting pool, doubling their own image in the water they grow from. One specimen among the group carries the Community of Madrid's singular tree designation, protecting a planting choice that was, by the standards of 1918 Spanish gardening, a genuine experiment.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Cipr%C3%A9s_Calvo_del_Estanque_del_Palacio_de_Cristal",
+        "http://elgatoporlasramas.blogspot.com/2015/11/cipres-calvo-7-cipres-de-los-pantanos.html"
+      ],
+      "access": "Free, public park",
+      "transport": "Ibiza (Metro L9) or Retiro (Metro L2), 8 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "This entry represents the grove of bald cypresses in the pond as a group, of which one specific specimen holds official singular tree status; sources do not distinguish which exact tree in the group carries the designation, so the pin marks the pond area rather than one surveyed trunk.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mad_005",
+      "name": "The Cypress of the Royal Botanic Garden",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "about 250 years",
+      "age_min": 245,
+      "age_max": 255,
+      "location": {
+        "address": "Real Jardin Botanico, Plaza de Murillo 2, 28014 Madrid",
+        "latitude": 40.4107807,
+        "longitude": -3.6907429,
+        "neighbourhood": "Retiro, near the Prado"
+      },
+      "story": "This cypress has stood on the Plano de la Flor terrace since before the Royal Botanic Garden moved to its current site. King Carlos III relocated the garden here in 1781, transplanting an existing scientific collection to sit beside his new Prado promenade, and this cypress, already growing or planted around that time, has outlasted every institutional change since: French occupation during the Peninsular War, a 19th century closure and near-abandonment, and a 20th century restoration that returned the garden to something close to its original Enlightenment-era design. At 32 metres it is both the oldest and the tallest tree in a garden that exists specifically to hold record specimens, and its trunk, a metre and a half across, has grown thick enough that the tree is now folded into the Paisaje de la Luz, Landscape of Light, the cultural corridor linking the Prado, the botanic garden and the Retiro that UNESCO named a World Heritage Site in 2021.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Cipr%C3%A9s_del_Real_Jard%C3%ADn_Bot%C3%A1nico",
+        "https://www.madridiario.es/un-paseo-por-el-real-jardin-botanico-a-traves-de-sus-arboles-singulares",
+        "https://rjb.csic.es/conoce-los-arboles-mas-singulares-del-real-jardin-botanico/"
+      ],
+      "access": "Paid entry to the Royal Botanic Garden",
+      "transport": "Atocha (Metro L1) or Banco de Espana (Metro L2), 8 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Garden entrance coordinates are confirmed; the tree's specific position on the Plano de la Flor terrace within the garden is not separately surveyed.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mad_006",
+      "name": "The Caucasian Elm of the Botanic Garden",
+      "species": "Caucasian Elm (Zelkova carpinifolia)",
+      "age_estimate": "about 200 years",
+      "age_min": 195,
+      "age_max": 210,
+      "location": {
+        "address": "Real Jardin Botanico, Paseo de Mutis (north zone), Plaza de Murillo 2, 28014 Madrid",
+        "latitude": 40.4116,
+        "longitude": -3.6903,
+        "neighbourhood": "Retiro, near the Prado"
+      },
+      "story": "Measured against every other tree in the Royal Botanic Garden, this one wins on height, reaching by some counts over 30 metres in the garden's north zone along the Paseo de Mutis, tall enough that garden staff and visiting botanists disagree on the exact figure by several metres depending on measurement method. The species itself, Zelkova carpinifolia, comes from mountain forests spanning Georgia, Armenia, Azerbaijan, Turkey and Iran, and only reached European gardens in the 18th century as part of the same wave of scientific plant collecting that filled Madrid's garden with foreign specimens under royal sponsorship. This particular tree is roughly two centuries old, meaning it has spent essentially its entire life as the garden's tallest resident, a distinction the fast-growing species tends to earn early and keep. It carries singular tree designation number 260 in the Community of Madrid's regional catalogue, one number among 280 protected specimens across the wider region.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Olmo_del_C%C3%A1ucaso_en_el_Real_Jard%C3%ADn_Bot%C3%A1nico",
+        "https://rjb.csic.es/conoce-los-arboles-mas-singulares-del-real-jardin-botanico/",
+        "https://www.madridiario.es/un-paseo-por-el-real-jardin-botanico-a-traves-de-sus-arboles-singulares"
+      ],
+      "access": "Paid entry to the Royal Botanic Garden",
+      "transport": "Atocha (Metro L1) or Banco de Espana (Metro L2), 8 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Garden entrance coordinates are confirmed; this tree's specific position in the garden's north zone along Paseo de Mutis is approximated, not surveyed.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mad_007",
+      "name": "The Holm Oak of the Trillo Roundabout",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "about 300 years",
+      "age_min": 290,
+      "age_max": 310,
+      "location": {
+        "address": "Glorieta del Trillo, Casa de Campo, 28011 Madrid",
+        "latitude": 40.41617,
+        "longitude": -3.74619,
+        "neighbourhood": "Casa de Campo"
+      },
+      "story": "Roads converge on this tree rather than around it. The Glorieta del Trillo, where the Carretera de Somosaguas, the Paseo de los Castanos and the Camino de Rodajos all meet inside Casa de Campo, is named for the holm oak growing at its centre, a roughly 300 year old specimen with a crown 18.5 metres across and a trunk 4.6 metres around. Casa de Campo itself was a royal hunting estate from the 16th century until 1931, when the Second Republic opened it to the public, which means this oak spent roughly two centuries of its life on private land reserved for the Spanish crown's deer and boar hunts rather than growing in anything resembling a public park. Holm oaks are Iberia's signature evergreen, slow growing and built to survive exactly the hot, dry summers and cold winters Madrid delivers, and this one has outlasted the hunting estate, the monarchy that owned it, and the Republic that opened the gates, still marking the same road junction today.",
+      "verified_sources": [
+        "https://arbolesdemadrid.wordpress.com/2006/11/09/encinas-la-casa-campo/",
+        "https://arbolessingularesdelacomunidad.jimdofree.com/rutas/madrid/casa-de-campo/"
+      ],
+      "access": "Free, public park",
+      "transport": "Casa de Campo (Metro L5/L10), 20 min walk or park shuttle",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Coordinates converted from a sourced DMS reading (40°24'58.2\"N 3°44'46.3\"W) for the Glorieta del Trillo road junction; reasonably precise for the junction but not independently surveyed for the tree's exact trunk position.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mad_008",
+      "name": "The Aleppo Pine of Campo del Moro",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "about 150 years",
+      "age_min": 145,
+      "age_max": 155,
+      "location": {
+        "address": "Jardines del Campo del Moro, north zone, 28005 Madrid",
+        "latitude": 40.4180,
+        "longitude": -3.7168,
+        "neighbourhood": "Campo del Moro"
+      },
+      "story": "This pine grows in the gardens spread beneath the Royal Palace's western facade, a formal landscape that took its current shape only in the 1890s even though the land had belonged to the crown for centuries before that, used variously as a hunting ground, a military exercise field and, briefly, a source of building stone. At 30 metres tall with a trunk 2.55 metres around, the pine ranks among six officially singular trees inside Campo del Moro's twenty hectares, sharing that status with a stone pine, an oak, a coast redwood and a pair of yews scattered through the same grounds. Aleppo pines are a Mediterranean basin native, drought tolerant and comfortable in Madrid's dry summers in a way many of the garden's more exotic imports are not, which may explain why this specimen has reached such size in only a century and a half, a fraction of the multi-century ages claimed for some of the city's other singular trees.",
+      "verified_sources": [
+        "https://arbolessingularesdelacomunidad.jimdofree.com/por-municipios/madrid/campo-del-moro/",
+        "https://jardinessinfronteras.com/2022/03/15/jardines-del-campo-del-moro-madrid/"
+      ],
+      "access": "Free, public garden (closed Mondays)",
+      "transport": "Principe Pio (Metro L6/L10/R), 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Coordinates are an estimate for the garden's north zone, where sources place the tree; no surveyed point was found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mad_009",
+      "name": "The Grandfather Cedar of Parque del Oeste",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "age_estimate": "over 150 years (precise age not confirmed)",
+      "age_min": 150,
+      "age_max": 185,
+      "location": {
+        "address": "Parque del Oeste, near Avenida de Ruperto Chapi, 28008 Madrid",
+        "latitude": 40.4327,
+        "longitude": -3.7213,
+        "neighbourhood": "Moncloa-Aravaca"
+      },
+      "story": "Known locally as El Abuelo, the grandfather, this Atlas cedar grows near the Fuente de la Salud and the artificial stream that cuts through the northern part of Parque del Oeste, a park built on former rubbish dumps and quarry land at the turn of the 20th century and rebuilt again after Civil War fighting damaged it in the 1930s. Atlas cedars are native to the Atlas Mountains of Morocco and Algeria and reached European gardens as an ornamental import around 1840, which sets an outer limit on how old any specimen in Madrid could plausibly be; the species itself is capable of living centuries, some specialists say close to a thousand years under ideal conditions, though this individual tree's precise age has not been established by any source found. What is established is its status: one of the Community of Madrid's officially catalogued singular trees, numbered and registered like the 279 other specimens across the region, marking it as protected regardless of whether its exact birth year is ever pinned down.",
+      "verified_sources": [
+        "https://arbolesdemadrid.wordpress.com/2010/06/13/cedro-del-atlas-parque-del-oeste/",
+        "https://mindtrip.ai/attraction/madrid-community/cedro-del-atlas-del-parque-del-oeste-arbol-singular-no035-de/at-1ONa7oUZ"
+      ],
+      "access": "Free, public park",
+      "transport": "Moncloa (Metro L3/L6), 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No source found gives a specific planting date or precise current age for this tree; the age range given is bounded only by the species' 1840 introduction to Europe and general knowledge of Atlas cedar growth rates, stated honestly as an estimate rather than a researched figure. Coordinates are approximate, based on the tree's description as standing near Avenida de Ruperto Chapi and the Fuente de la Salud.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mad_010",
+      "name": "The Stone Pine of the Priest's House",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "about 230 years",
+      "age_min": 220,
+      "age_max": 240,
+      "location": {
+        "address": "El Capricho, Paseo de la Alameda de Osuna, 28042 Madrid",
+        "latitude": 40.4590,
+        "longitude": -3.5820,
+        "neighbourhood": "Barajas"
+      },
+      "story": "This stone pine grows half hidden among shrubs near a small hermitage called the Casa del Cura, the priest's house, in a park built for a duchess rather than a king. Maria Josefa Pimentel, Duchess of Osuna, commissioned El Capricho in 1784, hiring French landscape designers Jean-Baptiste Mulot and Pierre Provost to lay out French, English and Italian style gardens across fourteen hectares in what was then open countryside east of Madrid, now the Barajas district near the airport that shares its name. The pine likely dates from that same late 18th century construction period, making it a contemporary of the duchess's original vision rather than a later addition. Unlike Madrid's grander royal gardens, El Capricho suffered decades of neglect and, during the Spanish Civil War, served as a military command post, before the city restored it and reopened it to visitors in the 1990s. The pine survived all of it, one of the park's few catalogued singular trees and among the oldest living witnesses to the duchess's original 18th century design.",
+      "verified_sources": [
+        "https://arbolesdemadrid.wordpress.com/2010/07/04/pinos-pi-oneros-del-parque-del-capricho/",
+        "https://lugaresconhistoria.com/el-capricho-madrid"
+      ],
+      "access": "Free, but visitor numbers are limited and advance booking is recommended; closed Mondays and Tuesdays",
+      "transport": "Canillejas (Metro L5), 15 min walk, or El Capricho (Metro L5), 5 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is estimated from the park's known 1784-1839 construction period rather than a specific planting-date source. Coordinates are an estimate for El Capricho's general location near the Casa del Cura hermitage; no surveyed point was found.",
+      "location_precision": "approximate"
+    }
+  ]
+}

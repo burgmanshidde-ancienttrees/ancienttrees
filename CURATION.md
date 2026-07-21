@@ -2,6 +2,21 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-21 — Madrid (full research run, nightly workflow)
+
+- 10 trees researched from scratch and written to `data/cities/madrid.json`. Tier 1, tenth city to go live, and the round number is coincidence rather than a milestone anyone planned around. No reader submissions pending (CSV checked: header row only). Nothing published was wrong, so this was the next rung: the next pending city.
+- The unifying thread: almost every remarkable tree in Madrid is a foreign import, brought in by royal gardeners testing which species could survive the city's harsh climate (freezing winters, dry hot summers). A Mexican swamp cypress, a Himalayan cedar, an Atlas Mountains cedar and a Caucasus mountain elm all made the cut; even the one genuinely native holm oak grows in what was royal hunting land rather than a planted garden. Used that as the city intro.
+- One important catch worth flagging on its own: an early broad search surfaced a "tejo milenario" (1,000+ year yew) and a "secuoya de 41 metros" as Madrid's most spectacular singular trees. Checking their actual locations showed both are in Rascafria and El Escorial/Aranjuez, separate towns in the Community of Madrid, not the city of Madrid itself. Neither was used. A second near-miss: an "Encina del Mesto" reported as Casa de Campo's oldest oak turned out, on checking coordinates, to be a same-named tree in Aldea del Fresno, a different municipality entirely. Replaced with the Encina del Trillo, which is confirmed on Casa de Campo's own singular-tree route.
+- 4 flagged:
+  - **The Ahuehuete of the Parterre** (Retiro): Madrid's presumed oldest tree, but its age is a real, unresolved dispute between a popular 1633 planting legend (~390 years) and city arborists' estimate of roughly 200 years or less. Presented as a wide range with both positions named, rather than picking the more dramatic figure.
+  - **The Himalayan Cedar of the Crystal Palace** and **The Bald Cypresses of the Crystal Palace Pond** (Retiro): ages are estimated from the 1887 Palacio de Cristal construction date and a sourced ~1918 planting note respectively, since no source gives an exact planting date for either.
+  - **The Grandfather Cedar of Parque del Oeste** ("El Abuelo"): confirmed as a catalogued Atlas cedar, but no source found gives a specific age or planting date, only the species' general 1840 introduction to Europe and its capacity to live centuries. Age range stated as a bounded estimate, not a researched figure.
+  - **The Stone Pine of the Priest's House** (El Capricho): age estimated from the park's 1784-1839 construction period rather than a specific source for this tree.
+- 1 photo found: the Ahuehuete, public domain, uploaded by a university library archive, confirmed by its file description as depicting this specific tree.
+- 9 of 10 photos missing after searching Wikimedia Commons for each named tree.
+- All 10 pins are approximate. Retiro's four trees, the two Real Jardin Botanico trees and Campo del Moro's pine only have building or garden-level coordinates confirmed, not a surveyed point for the specific tree; Casa de Campo's oak has a sourced road-junction coordinate but not a tree-specific survey; Parque del Oeste and El Capricho are estimated from descriptive location text. None claim precision they don't have.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-21 — Kyoto (full research run, nightly workflow)
 
 - 10 trees researched from scratch and written to `data/cities/kyoto.json`. Tier 1, ninth city to go live. No reader submissions pending (CSV checked: header row only). Nothing published was wrong, so this was the next rung: the next pending city.
