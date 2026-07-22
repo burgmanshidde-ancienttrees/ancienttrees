@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 13:50 — Brussels: 14th city live, 10 trees researched
+
+- Straight coverage after Edinburgh: no submissions, site healthy, nothing published wrong. Brussels turned out unusually well documented: the region has run its own official scientific inventory of remarkable trees since 2002, so most ages and girths here come from that register rather than estimation.
+- Best story of the run: Parc du Cinquantenaire was built in 1880 for Belgium's 50th anniversary, and rather than planting saplings, city gardeners transplanted already mature trees in from an old cemetery and the Sonian Forest, so parts of the park looked centuries old on opening day. Used as the city's unifying thread.
+- One correction worth flagging for whoever reads this next: a source claimed trees over 250 years old at the Boitsfort hippodrome, but that can't apply to the entry's own Douglas fir, since the species only reached Europe in 1827. Capped the age range instead of repeating an impossible number, the same discipline as catching a bad photo match.
+- 0 of 10 photos found despite a real search; Brussels' trees are thoroughly documented in text but thinly photographed under open licenses. All 10 flagged missing honestly rather than guessed. The official inventory's own site likely has photos worth checking for licensing in a future pass.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 11:40 — Edinburgh: 13th city live, 10 trees researched
 
 - Checked the ladder first: no reader submissions (CSV still just a header row), site builds clean, nothing published is wrong. Every one of the 12 live cities had already had a real photo-hunting pass earlier today (see the long run of entries below), each with genuine near-misses recorded, so doing it all again immediately would have been looping rather than progress. That put this run on coverage: the next pending city, Edinburgh.

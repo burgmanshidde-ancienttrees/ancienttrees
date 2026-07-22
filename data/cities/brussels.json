@@ -1,0 +1,336 @@
+{
+  "city": "Brussels",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Brussels is the rare city that has kept a formal, scientific register of its own remarkable trees since 2002, cataloguing more than a thousand specimens by age, rarity and historical weight. That bureaucratic thoroughness is why ages and girths on this list are unusually exact. It also explains an odd trick the city played on itself: when Brussels built the Cinquantenaire park in 1880 for Belgium's fiftieth anniversary, it did not plant saplings. It transplanted fully grown trees from an old cemetery and the edge of the Sonian Forest, so the new park looked centuries old on its opening day.",
+  "meta_description": "Brussels has run an official register of its remarkable trees since 2002. Ten verified locations, real stories, and how to reach each one.",
+  "question_answer": "Brussels' oldest documented tree is the Chene Josephine, a pedunculate oak in Parc Jacques Brel in Forest, estimated at close to 400 years old from a trunk just over six metres around. Brussels' own heritage inventory calls it probably the oldest oak in the entire Brussels-Capital Region. It stands in a public park that only opened in 1980, though the tree itself long predates it.",
+  "question_meta": "The Chene Josephine, a roughly 400 year old oak in Parc Jacques Brel, Forest, is Brussels' oldest documented tree. Where it stands, and the full ten.",
+  "question_context": "Chene Josephine's age comes from its girth rather than any planting record: at 6.05 metres in circumference, measured at chest height, foresters use growth-rate tables for pedunculate oak to arrive at a figure close to four centuries, old enough that Brussels' own heritage inventory calls it probably the oldest oak anywhere in the region. No document names a planting date, since the ground it grows on was still part of the Kersbeekbosch, a wood already recorded under that name in 1648, long before anyone thought to write down individual trees within it. The clearest challenger for oldest is the Kasterlinde, a lime tree marking the exact point where three communes meet, documented on maps since 1777 and therefore provably at least two and a half centuries old, though its estimated true age, worked out from girth, comes out younger than the oak's. Parc Jacques Brel itself is a recent public space, only opened by the commune of Forest in 1980 after decades as a private estate, but the oak inside it is the oldest living thing within reach of a Brussels metro station. It costs nothing to visit.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Brussels?",
+      "a": "Most likely the Chene Josephine, a pedunculate oak in Parc Jacques Brel, Forest, estimated at close to 400 years from its girth. Brussels' own heritage inventory calls it probably the oldest oak in the region."
+    },
+    {
+      "q": "Are Brussels' remarkable trees free to visit?",
+      "a": "Yes, all ten stand in public parks, gardens and streets with no admission charge, unusual compared to cities where the oldest trees sit behind a castle or palace gate."
+    },
+    {
+      "q": "Why does Brussels know so much about the age of its own trees?",
+      "a": "Since 2002, the region's heritage department has run a formal scientific inventory of remarkable trees, measuring circumference, checking rarity and recording historical association. That is why girths and ages here are unusually precise compared to most cities."
+    },
+    {
+      "q": "Why are some of Brussels' most impressive trees not its oldest?",
+      "a": "Brussels has transplanted mature trees before rather than waiting for saplings to grow. When Parc du Cinquantenaire was built in 1880, city gardeners moved in fully grown trees from an old cemetery and the Sonian Forest, so several of its most striking trees are older than the park but younger than genuine centuries-old specimens elsewhere on this list."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bru_001",
+      "name": "The Chene Josephine",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "close to 400 years",
+      "age_min": 350,
+      "age_max": 420,
+      "location": {
+        "address": "Parc Jacques Brel, Avenue Besme, 1190 Forest, Brussels",
+        "latitude": 50.8168,
+        "longitude": 4.3283,
+        "neighbourhood": "Forest"
+      },
+      "story": "Brussels' own heritage inventory calls this oak probably the oldest tree of any kind in the entire region, and its evidence is a single number: 6.05 metres around the trunk, measured at chest height. That circumference translates, through standard oak growth tables, to an age close to four hundred years, since no planting record exists for a tree this old growing in what was once simply called the Kersbeekbosch, a wood already named in a document from 1648, a full century before anyone thought to record individual trees within it. A 20th century industrialist built a chateau and pleasure pavilion on the land and renamed it Parc des Eperons d'Or, but the commune of Forest only acquired the grounds in 1979 and opened them to the public in 1980, as Parc Jacques Brel. The oak, already three and a half centuries old by then, barely noticed the paperwork. At roughly 20 metres tall with a canopy shaped by centuries of unhurried growth, it now shares its park with joggers, a playground and Brussels' newer housing developments, a working class commune's public oak older than most of the buildings standing around it put together.",
+      "verified_sources": [
+        "https://www.woodwideweb.be/fr/atlas/12.html",
+        "https://sites.heritage.brussels/fr/sites/169"
+      ],
+      "access": "Free, public park",
+      "transport": "Tram or bus to Forest Centre, short walk into the park",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is a girth-based estimate, not a documented planting date; the Kersbeekbosch reference (1648) establishes the wood existed, not this specific tree's age. Called 'probably the oldest oak' in the region by the Wood Wide Web heritage source, softened from an absolute claim per hard rule 8. No open licensed photo found this run.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bru_002",
+      "name": "The Kasterlinde",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "200+ years",
+      "age_min": 200,
+      "age_max": 260,
+      "best_time": { "months": [6, 7], "label": "late June, when its flowers scent the whole street corner" },
+      "location": {
+        "address": "Boundary of Molenbeek-Saint-Jean, Berchem-Sainte-Agathe and Dilbeek, near Kasterlindenstraat, Brussels",
+        "latitude": 50.8672,
+        "longitude": 4.2965,
+        "neighbourhood": "Berchem-Sainte-Agathe / Molenbeek-Saint-Jean border"
+      },
+      "story": "A single lime tree marks the exact spot where three Brussels communes meet, and it has been doing the job since at least 1777, when the Ferraris map, the first detailed survey of the Austrian Netherlands, recorded it at the boundary point of Molenbeek-Saint-Jean, Berchem-Sainte-Agathe and Dilbeek. Later maps track it by name: an 1821 survey shows it beside a chapel demolished that same decade, and an 1858 map of Brussels and its surroundings labels the spot simply Kaster Linde. Its trunk has thickened from 2.75 metres around in the early 1900s, when the Belgian botanist Chalon first measured it for his book on the country's trees, to 3.15 metres today, growth that puts its real age comfortably past two centuries even before the documentary trail is counted. A street and a nearby cafe, In de Linde, both take their name from it. Unlike a garden specimen chosen for its looks, this tree exists because generations of surveyors needed a fixed point that would not move, and a slow growing lime, marking a boundary since before Belgium existed as a country, turned out to be exactly that.",
+      "verified_sources": [
+        "https://sites.heritage.brussels/fr/trees/400",
+        "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles"
+      ],
+      "access": "Free, public street corner",
+      "transport": "Bus to the Berchem-Sainte-Agathe / Dilbeek border",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Documentary trail (1777 Ferraris map, 1821 and 1858 surveys, Chalon's early 20th century measurement) is unusually solid for a single tree, corroborated across the official heritage inventory and an independent citizen blog.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bru_003",
+      "name": "The Oriental Plane of Parc Leopold",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "200 years",
+      "age_min": 190,
+      "age_max": 210,
+      "location": {
+        "address": "Parc Leopold, Rue Belliard, 1000 Brussels",
+        "latitude": 50.8377,
+        "longitude": 4.3778,
+        "neighbourhood": "European Quarter"
+      },
+      "story": "The thickest tree of its kind anywhere in Brussels stands in a park built over a vanished stream. This oriental plane, measured at 6.48 metres around in 2023, only joined the region's legal heritage inventory in August 2024, a formal recognition that arrived roughly two centuries after the tree itself. Plane trees have marked water since antiquity, when Greeks planted them by springs and wells to shade travellers, and this one keeps the tradition without anyone intending it to: the Maelbeek stream still runs underground nearby, beneath the Chaussee d'Etterbeek, and a small tower at the foot of the park's hill once operated as a 17th century fishery pond house long before the plane tree existed. At around 33 metres tall with a crown spreading 38 metres wide, the tree now shades a park built in the 1850s around a private estate, later absorbed into the district that today surrounds the European Parliament. It is, by circumference, the largest specimen of its species in the entire Brussels-Capital Region, a two hundred year old tree standing quietly behind institutions considerably younger than it is.",
+      "verified_sources": [
+        "https://sites.heritage.brussels/fr/trees/794",
+        "https://www.monumentaltrees.com/fr/bel/bruxelles/bruxelles/1074_parcleopold/4033/"
+      ],
+      "access": "Free, public park",
+      "transport": "Metro to Maelbeek or Schuman, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Circumference and 2024 legal inventory listing corroborated by the official heritage inventory; monumentaltrees.com used for cross-check only, per hard rule 1, not copied.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bru_004",
+      "name": "The Pond Oaks and Beeches of the Bois de la Cambre",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "old growth, undated",
+      "age_min": 100,
+      "age_max": 220,
+      "best_time": { "months": [10, 11], "label": "late October, when the beech turn copper over the ponds" },
+      "location": {
+        "address": "Bois de la Cambre, near the ponds and Chalet Robinson, 1000 Brussels",
+        "latitude": 50.8058,
+        "longitude": 4.3775,
+        "neighbourhood": "Ixelles / Uccle border"
+      },
+      "story": "Brussels' most fashionable park is also a fragment of a forest older than the city walls that once surrounded it. When Leopold II's landscapers carved the Bois de la Cambre out of the northern edge of the Sonian Forest in 1861 and 1862, connecting it to the city centre by the new Avenue Louise, they left much of the existing tree cover standing rather than replanting from scratch. Around its ponds today grow pedunculate oaks, beeches, wild cherries and Austrian black pines old enough that more than eighty of them made Brussels' own official inventory of remarkable trees, out of roughly seventy such specimens spread across the whole 124 hectare park. None of these individual pond side trees carries a documented planting date of its own, so no single age is claimed here, only that they are old growth remnants of a much larger woodland: the Sonian Forest continues south from this same tree line, and a separate, strictly protected 270 hectare section of it further out was inscribed on the UNESCO World Heritage List in 2017 for its ancient beech stands, a reminder of what this park was cut from rather than a claim about this particular corner of it.",
+      "verified_sources": [
+        "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
+        "https://en.wikipedia.org/wiki/Forest_of_Soignes"
+      ],
+      "access": "Free, public park",
+      "transport": "Tram to the Bois de la Cambre terminus",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented deliberately as an ensemble, not one dated specimen: no individual tree here has a documented planting date. The UNESCO designation applies to a separate, protected 270 hectare section of the wider Sonian Forest, not to Bois de la Cambre itself; the story is careful to say so rather than implying this park is inside the listed zone.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bru_005",
+      "name": "The Giant Sequoia of Parc de Woluwe",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "125-135 years",
+      "age_min": 125,
+      "age_max": 135,
+      "location": {
+        "address": "Parc de Woluwe, near Avenue de Tervueren, 1150 Woluwe-Saint-Pierre, Brussels",
+        "latitude": 50.8362,
+        "longitude": 4.4304,
+        "neighbourhood": "Woluwe-Saint-Pierre"
+      },
+      "story": "The single largest tree in Brussels by trunk girth is not native to Europe at all. This giant sequoia, measured at 8.66 metres around in 2017, thicker than any other tree recorded in the region, grows in a park that did not exist until the 1890s, when the landscape architect Emile Laine laid it out for Leopold II as a green corridor linking the 1897 World's Fair site at the Cinquantenaire to a second exhibition site at Tervuren. That makes the sequoia, at most, only a little over a century old, remarkable for how much girth a genuinely young tree can put on: giant sequoias can live two thousand years and more in their native California, and reach 50 to 60 metres even in Belgium's cooler, wetter climate. Planted as an ornamental statement piece for an international exposition rather than surviving from an older forest, it has spent barely a tenth of its natural lifespan reaching a size that would take most Belgian native species several centuries to match. The park around it now holds some 180 different tree species, and this one is, by a wide margin, the thickest of all of them.",
+      "verified_sources": [
+        "https://sites.heritage.brussels/fr/trees/2851",
+        "https://www.woluwe1150.be/culture-et-loisirs/histoire-patrimoine/bespaces-verts/parc-parmentier/"
+      ],
+      "access": "Free, public park",
+      "transport": "Tram to Parc de Woluwe, or bus from Montgomery metro station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Girth (866cm, measured 2017) and 'largest tree in Brussels' claim corroborated by the official heritage inventory and the park's own design history (Laine, 1890s, for Leopold II). Exact planting year not found, so age is inferred from the park's founding decade.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bru_006",
+      "name": "The Purple Beech of Parc Tournay-Solvay",
+      "species": "Purple Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "150-200 years",
+      "age_min": 150,
+      "age_max": 200,
+      "best_time": { "months": [4, 5], "label": "April and May, when the new leaves are brightest red-purple" },
+      "location": {
+        "address": "Parc Tournay-Solvay, Chaussee de La Hulpe, 1170 Watermael-Boitsfort, Brussels",
+        "latitude": 50.7975,
+        "longitude": 4.4066,
+        "neighbourhood": "Watermael-Boitsfort"
+      },
+      "story": "Alfred Solvay, brother of the industrial chemist Ernest Solvay, built a country manor at the edge of the Sonian Forest in 1878, and the park around it still carries his family's name today. His daughter Therese Tournay-Solvay later expanded the grounds, and in the early 20th century the landscape architect Jules Buyssens redesigned them into the layout that survives now, mixing exotic plantings with remnants of the original forest vegetation. Among the survivors is a purple beech, its almost black red foliage a deliberate contrast against the ordinary green beeches nearby, part of a group of large trees in the park old enough that several, this one included, appear in the official inventory of the Brussels region's natural heritage. No source gives this specific tree an individual age, only that trees of its kind in the park run from roughly a century and a half to two centuries old, a range wide enough to be honest rather than precise. The park sits directly against the edge of the Sonian Forest in Watermael-Boitsfort, free to enter, and considerably quieter than Brussels' larger, better known green spaces.",
+      "verified_sources": [
+        "https://bruxelles.natagora.be/idees-de-balades-et-observations/le-parc-tournay-solvay-a-watermael-boitsfort",
+        "https://fr.wikipedia.org/wiki/Parc_Tournay-Solvay"
+      ],
+      "access": "Free, public park",
+      "transport": "Bus to Chaussee de La Hulpe, Watermael-Boitsfort",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age range (150-200 years) is sourced to the park's trees generally, not confirmed for this individual purple beech specifically; flagged as an estimate rather than a measurement.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bru_007",
+      "name": "The Douglas Fir of the Hippodrome",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "up to 150 years",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Hippodrome de Boitsfort, Chaussee de La Hulpe, 1170 Watermael-Boitsfort, Brussels",
+        "latitude": 50.8009,
+        "longitude": 4.4106,
+        "neighbourhood": "Watermael-Boitsfort"
+      },
+      "story": "The tallest tree in Brussels grows on what used to be a racecourse. This Douglas fir, standing 33 metres, took root sometime after 1875, the year the City of Brussels leased roughly 25 hectares of forest edge to the Royal Society for the Improvement of Horse Breeds, which built a hippodrome with two grandstands here by 1878. The species itself could not have grown here any earlier: Douglas fir only reached Europe from the American Pacific coast in 1827, brought back by the Scottish botanist after whom it is named, so even the oldest possible specimen anywhere in Belgium falls short of two centuries. This one, rising above a racecourse that operated for well over a century before closing to horses, has had roughly a century and a half at most to outclimb every native species around it, and its height, not its age, is the record it holds. The hippodrome grounds are now being redeveloped as a mixed public park and university site, and the tree, along with much of the surrounding tree cover, is intended to stay exactly where it is through that transition.",
+      "verified_sources": [
+        "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
+        "https://usquare.brussels/en/sites/hippodrome"
+      ],
+      "access": "Free, public park (former racecourse, under redevelopment)",
+      "transport": "Tram or bus to Boitsfort, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "A source describing the hippodrome mentions some trees on the wider grounds are over 250 years old; that figure cannot apply to the Douglas fir itself, since the species was only introduced to Europe in 1827, so this entry's age range is capped accordingly and the 250 year figure is not repeated here to avoid a biologically impossible claim.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bru_008",
+      "name": "The Sophora of the Abbaye de la Cambre",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "unknown, mature",
+      "age_min": 100,
+      "age_max": 180,
+      "best_time": { "months": [8], "label": "August, when it is one of the last trees in the city to flower" },
+      "location": {
+        "address": "Jardins de l'Abbaye de la Cambre, Avenue Emile Duray, 1050 Ixelles, Brussels",
+        "latitude": 50.8235,
+        "longitude": 4.3717,
+        "neighbourhood": "Ixelles"
+      },
+      "story": "A Japanese pagoda tree grows in the garden of a monastery that housed Cistercian nuns for nearly six hundred years. The Abbaye de la Cambre was founded in 1201 and suppressed in 1796 during the French occupation, and while its oldest surviving stonework, the abbey church and parts of the cloister, dates to the 13th and 14th centuries, most of the garden layout around this tree is 18th century. The sophora itself is considerably younger than any of that, a species that only reached European gardens in the mid 1700s and was slower still to become a common ornamental choice, but its trunk, measured at 3.08 metres around in 2012, makes it the sixth largest of its kind recorded anywhere in the Brussels region. Light, almost feathery foliage sets it apart from the abbey's heavier, older trees, and in late summer it produces long fleshy seed pods rather than the flowers most people expect from an ornamental tree. The abbey buildings now house a school and municipal offices, but the gardens remain open to the public, free, in the middle of Ixelles.",
+      "verified_sources": [
+        "https://sites.heritage.brussels/fr/trees/1233",
+        "https://fr.wikipedia.org/wiki/Abbaye_de_la_Cambre"
+      ],
+      "access": "Free, public garden",
+      "transport": "Tram to Abbaye or Bois de la Cambre stop",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Girth and regional size ranking (6th largest of its species) sourced to the official heritage inventory; no planting date found for this specific tree, so age range is a broad estimate.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bru_009",
+      "name": "The Black Mulberry of the Botanical Garden",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "possibly 200 years",
+      "age_min": 120,
+      "age_max": 200,
+      "best_time": { "months": [8], "label": "August, when the fruit drops and stains the path" },
+      "location": {
+        "address": "Jardin Botanique (Le Botanique), Rue Royale, 1210 Saint-Josse-ten-Noode, Brussels",
+        "latitude": 50.8548,
+        "longitude": 4.3653,
+        "neighbourhood": "Saint-Josse-ten-Noode"
+      },
+      "story": "A mulberry tree possibly older than Belgium itself grows in a garden that predates the country by four years. The State Botanical Garden of Brussels opened on this site in 1826, on a 6.4 hectare terraced plot at the corner of what is now Rue Royale and the Boulevard du Jardin Botanique, and this black mulberry, its trunk over two metres around, is old enough that it plausibly dates to those original 1820s plantings, though no surviving record names its exact planting year. Black mulberry is a Mediterranean species, slow to fruit and famous for staining anything beneath it a deep purple black when its berries drop in late summer, a domestic habit that made it a fixture of European monastery and manor gardens for centuries before this one arrived in a public botanical collection. The garden itself stopped functioning as a working scientific collection decades ago and is now a public park known simply as Le Botanique, its 19th century glasshouse repurposed as a concert venue, but the trees planted for research have stayed exactly where the botanists left them.",
+      "verified_sources": [
+        "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
+        "https://en.wikipedia.org/wiki/Botanical_Garden_of_Brussels"
+      ],
+      "access": "Free, public park",
+      "transport": "Metro to Botanique, 2 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No source gives this tree a confirmed planting date; the 1826 garden founding date is used as a plausible upper bound, not a documented fact about this specific mulberry, and the story states that caveat directly.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bru_010",
+      "name": "The Chestnut Avenue of the Cinquantenaire",
+      "species": "Common Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "possibly close to 200 years",
+      "age_min": 140,
+      "age_max": 190,
+      "best_time": { "months": [5], "label": "May, when its candle-shaped flowers bloom along the avenue" },
+      "location": {
+        "address": "Parc du Cinquantenaire, 1000 Brussels / 1040 Etterbeek",
+        "latitude": 50.841,
+        "longitude": 4.3975,
+        "neighbourhood": "European Quarter / Etterbeek"
+      },
+      "story": "When Brussels built Parc du Cinquantenaire in 1880 to mark Belgium's fiftieth year as a country, it cheated on the trees. Rather than planting saplings and waiting decades for a new park to look established, city gardeners transplanted trees that were already fully grown, moved in from the old Leopold Quarter cemetery, the Bois de la Cambre and the edge of the Sonian Forest itself. The common horse chestnuts that line one of the park's principal avenues are among the clearest survivors of that trick: mature when they arrived, they are older than the park itself by however many decades they had already grown before the move, plausibly close to two centuries old today, though no individual planting record confirms a precise figure for any single tree in the row. Around fifteen trees across the wider Cinquantenaire park made it onto Brussels' official register of remarkable trees, chestnuts among them alongside false acacias, a silver maple and a rare Italian alder, but the chestnut avenue is the one most visitors walk beneath without knowing they are standing under trees older than the triumphal arch at the park's centre.",
+      "verified_sources": [
+        "https://environnement.brussels/blog-citoyen/dossiers/arbres-remarquables-la-rencontre-des-geants-verts-de-bruxelles",
+        "https://sites.heritage.brussels/files/pages/77/documents/BXL-Arbres-catRecto.pdf"
+      ],
+      "access": "Free, public park",
+      "transport": "Metro to Schuman or Merode, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The transplanting story (mature trees moved from the old Leopold Quarter cemetery, Bois de la Cambre and the Sonian Forest when the park was built in 1880) is well corroborated, but no individual chestnut in the avenue has a confirmed age; the range given assumes a plausible age at transplanting plus the 146 years since 1880.",
+      "location_precision": "approximate"
+    }
+  ]
+}

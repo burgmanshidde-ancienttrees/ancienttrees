@@ -2,6 +2,22 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Brussels (full research run, nightly workflow)
+
+- No reader submissions pending, site healthy, nothing published wrong. Continued down the coverage ladder to the next pending city after Edinburgh.
+- 10 trees researched from scratch and written to `data/cities/brussels.json`. Tier 2, fourteenth city to go live. Brussels turned out to be the best documented city yet: its heritage department (sites.heritage.brussels) has run a formal scientific inventory of remarkable trees since 2002, so most ages and girths here come from an official register rather than blog-level estimates. Used that civic thoroughness, plus a genuinely surprising fact (Parc du Cinquantenaire was landscaped in 1880 with fully grown trees transplanted in from elsewhere, not saplings), as the intro's unifying thread.
+- 6 flagged, all for precision reasons rather than doubt about existence:
+  - **The Chene Josephine**: age is a girth-based estimate (6.05m circumference through standard oak growth tables), not a documented planting date. Called "probably the oldest oak" in the region by the source, softened from an absolute claim.
+  - **The Pond Oaks and Beeches of the Bois de la Cambre**: deliberately presented as an ensemble, since none of the 80+ individually inventoried pond-side trees has its own dated planting record. Careful note added that the UNESCO World Heritage listing applies to a separate, protected 270-hectare section of the wider Sonian Forest, not to Bois de la Cambre itself, so the story doesn't imply this park is inside the protected zone.
+  - **The Purple Beech of Parc Tournay-Solvay**: the 150-200 year range is sourced to the park's old trees generally, not confirmed for this specific beech.
+  - **The Douglas Fir of the Hippodrome**: one source mentions trees on the wider hippodrome grounds over 250 years old, but that figure is biologically impossible for a Douglas fir specifically, since the species only reached Europe in 1827. Capped this entry's age range accordingly rather than repeating an impossible number.
+  - **The Sophora of the Abbaye de la Cambre** and **the Black Mulberry of the Botanical Garden**: both have solid girth measurements from the official inventory but no confirmed planting date, so ages are estimates bounded by each garden's founding year, stated as such in the story text itself.
+- 1 tree, **the Chestnut Avenue of the Cinquantenaire**, is presented with an unusual honesty note: the trees were transplanted already mature in 1880, so their real age is older than the 146-year-old park but not independently confirmed for any single tree in the row.
+- 0 of 10 photos found this run: searched Wikimedia Commons, iNaturalist and Flickr for each named tree/location, but Brussels' remarkable trees turned out to be thoroughly documented in text (official inventory, girths, coordinates) and thinly photographed under open licenses. None held the city back; recorded honestly as missing rather than guessed. Worth a dedicated photo-hunting pass in a future run, since the official heritage inventory's own site (sites.heritage.brussels) likely holds photos but their licensing was not checked in depth this run given time spent on text verification.
+- All 10 pins are approximate: coordinates are estimated from street addresses and general Brussels geography, not pulled from a surveyed geocoding source, so none is marked confirmed regardless of how precisely the address is known.
+- No superlative claims beyond city-level ones checked against other published city pages; none conflict. Two internal superlative-adjacent claims (the Douglas fir's implied age, the UNESCO connection for Bois de la Cambre) were capped or clarified per hard rule 8, detailed above.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — Edinburgh (full research run, nightly workflow)
 
 - No reader submissions pending (CSV checked: header row only). Nothing published was wrong, site build was healthy, and every published city had already had a genuine photo-hunting pass earlier today with real near-misses recorded (see the string of entries below), so re-running identical searches on the same 12 cities immediately after would have been the exact "looping forever" the mandate warns against rather than real progress. That put this run on rung 5: the next pending city, which city-list.json and this session's own state both named as Edinburgh.
