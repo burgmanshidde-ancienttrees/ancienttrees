@@ -1,106 +1,706 @@
 {
   "updated": "2026-07-20",
-  "note": "Tier 1 from CLAUDE.md handover. Tiers 2-4 compiled from most-visited-city rankings, to be reprioritized by Hidde.",
+  "note": "Priority reordered 2026-07-21 for the lead-group focus: UK, Netherlands, Ireland, Belgium first, then marquee European traveller cities, then the rest of Europe, then the world. See OPEN_DATA_SURVEY.md and GO_TO_MARKET.md. Runs pick the next pending city from the top, so this steers coverage at the countries whose data and verifiability are strongest without touching the blueprint's positioning.",
   "cities": [
-    { "city": "Amsterdam", "country": "Netherlands", "tier": 1, "slug": "amsterdam", "status": "needs_curation" },
-    { "city": "Lisbon", "country": "Portugal", "tier": 1, "slug": "lisbon", "status": "needs_curation" },
-    { "city": "London", "country": "United Kingdom", "tier": 1, "slug": "london", "status": "needs_curation" },
-    { "city": "Paris", "country": "France", "tier": 1, "slug": "paris", "status": "needs_curation" },
-    { "city": "Rome", "country": "Italy", "tier": 1, "slug": "rome", "status": "needs_curation" },
-    { "city": "Tokyo", "country": "Japan", "tier": 1, "slug": "tokyo", "status": "needs_curation" },
-    { "city": "Istanbul", "country": "Turkey", "tier": 1, "slug": "istanbul", "status": "needs_curation" },
-    { "city": "Barcelona", "country": "Spain", "tier": 1, "slug": "barcelona", "status": "needs_curation" },
-    { "city": "Kyoto", "country": "Japan", "tier": 1, "slug": "kyoto", "status": "needs_curation" },
-    { "city": "Madrid", "country": "Spain", "tier": 1, "slug": "madrid", "status": "needs_curation" },
-    { "city": "New York", "country": "United States", "tier": 1, "slug": "new-york", "status": "needs_curation" },
-    { "city": "Singapore", "country": "Singapore", "tier": 1, "slug": "singapore", "status": "pending" },
-    { "city": "Vienna", "country": "Austria", "tier": 1, "slug": "vienna", "status": "pending" },
-    { "city": "Prague", "country": "Czech Republic", "tier": 1, "slug": "prague", "status": "pending" },
-    { "city": "Bangkok", "country": "Thailand", "tier": 1, "slug": "bangkok", "status": "pending" },
-    { "city": "Berlin", "country": "Germany", "tier": 1, "slug": "berlin", "status": "pending" },
-    { "city": "Seville", "country": "Spain", "tier": 1, "slug": "seville", "status": "pending" },
-    { "city": "Porto", "country": "Portugal", "tier": 1, "slug": "porto", "status": "pending" },
-    { "city": "Athens", "country": "Greece", "tier": 1, "slug": "athens", "status": "pending" },
-    { "city": "Florence", "country": "Italy", "tier": 1, "slug": "florence", "status": "pending" },
-    { "city": "Dubai", "country": "United Arab Emirates", "tier": 2, "slug": "dubai", "status": "pending" },
-    { "city": "Hong Kong", "country": "China", "tier": 2, "slug": "hong-kong", "status": "pending" },
-    { "city": "Seoul", "country": "South Korea", "tier": 2, "slug": "seoul", "status": "pending" },
-    { "city": "Osaka", "country": "Japan", "tier": 2, "slug": "osaka", "status": "pending" },
-    { "city": "Milan", "country": "Italy", "tier": 2, "slug": "milan", "status": "pending" },
-    { "city": "Venice", "country": "Italy", "tier": 2, "slug": "venice", "status": "pending" },
-    { "city": "Munich", "country": "Germany", "tier": 2, "slug": "munich", "status": "pending" },
-    { "city": "Dublin", "country": "Ireland", "tier": 2, "slug": "dublin", "status": "pending" },
-    { "city": "Edinburgh", "country": "United Kingdom", "tier": 2, "slug": "edinburgh", "status": "pending" },
-    { "city": "Brussels", "country": "Belgium", "tier": 2, "slug": "brussels", "status": "pending" },
-    { "city": "Copenhagen", "country": "Denmark", "tier": 2, "slug": "copenhagen", "status": "pending" },
-    { "city": "Stockholm", "country": "Sweden", "tier": 2, "slug": "stockholm", "status": "pending" },
-    { "city": "Budapest", "country": "Hungary", "tier": 2, "slug": "budapest", "status": "pending" },
-    { "city": "Krakow", "country": "Poland", "tier": 2, "slug": "krakow", "status": "pending" },
-    { "city": "Zurich", "country": "Switzerland", "tier": 2, "slug": "zurich", "status": "pending" },
-    { "city": "Geneva", "country": "Switzerland", "tier": 2, "slug": "geneva", "status": "pending" },
-    { "city": "Nice", "country": "France", "tier": 2, "slug": "nice", "status": "pending" },
-    { "city": "Lyon", "country": "France", "tier": 2, "slug": "lyon", "status": "pending" },
-    { "city": "Valencia", "country": "Spain", "tier": 2, "slug": "valencia", "status": "pending" },
-    { "city": "Malaga", "country": "Spain", "tier": 2, "slug": "malaga", "status": "pending" },
-    { "city": "Granada", "country": "Spain", "tier": 2, "slug": "granada", "status": "pending" },
-    { "city": "Naples", "country": "Italy", "tier": 2, "slug": "naples", "status": "pending" },
-    { "city": "Bologna", "country": "Italy", "tier": 2, "slug": "bologna", "status": "pending" },
-    { "city": "Verona", "country": "Italy", "tier": 2, "slug": "verona", "status": "pending" },
-    { "city": "Palermo", "country": "Italy", "tier": 2, "slug": "palermo", "status": "pending" },
-    { "city": "Kuala Lumpur", "country": "Malaysia", "tier": 3, "slug": "kuala-lumpur", "status": "pending" },
-    { "city": "Taipei", "country": "Taiwan", "tier": 3, "slug": "taipei", "status": "pending" },
-    { "city": "Shanghai", "country": "China", "tier": 3, "slug": "shanghai", "status": "pending" },
-    { "city": "Beijing", "country": "China", "tier": 3, "slug": "beijing", "status": "pending" },
-    { "city": "Delhi", "country": "India", "tier": 3, "slug": "delhi", "status": "pending" },
-    { "city": "Mumbai", "country": "India", "tier": 3, "slug": "mumbai", "status": "pending" },
-    { "city": "Agra", "country": "India", "tier": 3, "slug": "agra", "status": "pending" },
-    { "city": "Jaipur", "country": "India", "tier": 3, "slug": "jaipur", "status": "pending" },
-    { "city": "Cairo", "country": "Egypt", "tier": 3, "slug": "cairo", "status": "pending" },
-    { "city": "Marrakech", "country": "Morocco", "tier": 3, "slug": "marrakech", "status": "pending" },
-    { "city": "Cape Town", "country": "South Africa", "tier": 3, "slug": "cape-town", "status": "pending" },
-    { "city": "Mexico City", "country": "Mexico", "tier": 3, "slug": "mexico-city", "status": "pending" },
-    { "city": "Buenos Aires", "country": "Argentina", "tier": 3, "slug": "buenos-aires", "status": "pending" },
-    { "city": "Rio de Janeiro", "country": "Brazil", "tier": 3, "slug": "rio-de-janeiro", "status": "pending" },
-    { "city": "Sao Paulo", "country": "Brazil", "tier": 3, "slug": "sao-paulo", "status": "pending" },
-    { "city": "Lima", "country": "Peru", "tier": 3, "slug": "lima", "status": "pending" },
-    { "city": "Bogota", "country": "Colombia", "tier": 3, "slug": "bogota", "status": "pending" },
-    { "city": "Santiago", "country": "Chile", "tier": 3, "slug": "santiago", "status": "pending" },
-    { "city": "Toronto", "country": "Canada", "tier": 3, "slug": "toronto", "status": "pending" },
-    { "city": "Vancouver", "country": "Canada", "tier": 3, "slug": "vancouver", "status": "pending" },
-    { "city": "Montreal", "country": "Canada", "tier": 3, "slug": "montreal", "status": "pending" },
-    { "city": "Los Angeles", "country": "United States", "tier": 3, "slug": "los-angeles", "status": "pending" },
-    { "city": "San Francisco", "country": "United States", "tier": 3, "slug": "san-francisco", "status": "pending" },
-    { "city": "Chicago", "country": "United States", "tier": 3, "slug": "chicago", "status": "pending" },
-    { "city": "Miami", "country": "United States", "tier": 3, "slug": "miami", "status": "pending" },
-    { "city": "Washington DC", "country": "United States", "tier": 4, "slug": "washington-dc", "status": "pending" },
-    { "city": "Boston", "country": "United States", "tier": 4, "slug": "boston", "status": "pending" },
-    { "city": "New Orleans", "country": "United States", "tier": 4, "slug": "new-orleans", "status": "pending" },
-    { "city": "Philadelphia", "country": "United States", "tier": 4, "slug": "philadelphia", "status": "pending" },
-    { "city": "Seattle", "country": "United States", "tier": 4, "slug": "seattle", "status": "pending" },
-    { "city": "Sydney", "country": "Australia", "tier": 4, "slug": "sydney", "status": "pending" },
-    { "city": "Melbourne", "country": "Australia", "tier": 4, "slug": "melbourne", "status": "pending" },
-    { "city": "Auckland", "country": "New Zealand", "tier": 4, "slug": "auckland", "status": "pending" },
-    { "city": "Denpasar", "country": "Indonesia", "tier": 4, "slug": "denpasar", "status": "pending" },
-    { "city": "Jakarta", "country": "Indonesia", "tier": 4, "slug": "jakarta", "status": "pending" },
-    { "city": "Ho Chi Minh City", "country": "Vietnam", "tier": 4, "slug": "ho-chi-minh-city", "status": "pending" },
-    { "city": "Hanoi", "country": "Vietnam", "tier": 4, "slug": "hanoi", "status": "pending" },
-    { "city": "Phuket", "country": "Thailand", "tier": 4, "slug": "phuket", "status": "pending" },
-    { "city": "Chiang Mai", "country": "Thailand", "tier": 4, "slug": "chiang-mai", "status": "pending" },
-    { "city": "Manila", "country": "Philippines", "tier": 4, "slug": "manila", "status": "pending" },
-    { "city": "Warsaw", "country": "Poland", "tier": 4, "slug": "warsaw", "status": "pending" },
-    { "city": "Gdansk", "country": "Poland", "tier": 4, "slug": "gdansk", "status": "pending" },
-    { "city": "Ljubljana", "country": "Slovenia", "tier": 4, "slug": "ljubljana", "status": "pending" },
-    { "city": "Zagreb", "country": "Croatia", "tier": 4, "slug": "zagreb", "status": "pending" },
-    { "city": "Dubrovnik", "country": "Croatia", "tier": 4, "slug": "dubrovnik", "status": "pending" },
-    { "city": "Split", "country": "Croatia", "tier": 4, "slug": "split", "status": "pending" },
-    { "city": "Belgrade", "country": "Serbia", "tier": 4, "slug": "belgrade", "status": "pending" },
-    { "city": "Bucharest", "country": "Romania", "tier": 4, "slug": "bucharest", "status": "pending" },
-    { "city": "Sofia", "country": "Bulgaria", "tier": 4, "slug": "sofia", "status": "pending" },
-    { "city": "Thessaloniki", "country": "Greece", "tier": 4, "slug": "thessaloniki", "status": "pending" },
-    { "city": "Helsinki", "country": "Finland", "tier": 4, "slug": "helsinki", "status": "pending" },
-    { "city": "Oslo", "country": "Norway", "tier": 4, "slug": "oslo", "status": "pending" },
-    { "city": "Reykjavik", "country": "Iceland", "tier": 4, "slug": "reykjavik", "status": "pending" },
-    { "city": "Tel Aviv", "country": "Israel", "tier": 4, "slug": "tel-aviv", "status": "pending" },
-    { "city": "Antwerp", "country": "Belgium", "tier": 4, "slug": "antwerp", "status": "pending" }
+    {
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "tier": 1,
+      "slug": "amsterdam",
+      "status": "needs_curation"
+    },
+    {
+      "city": "Lisbon",
+      "country": "Portugal",
+      "tier": 1,
+      "slug": "lisbon",
+      "status": "needs_curation"
+    },
+    {
+      "city": "London",
+      "country": "United Kingdom",
+      "tier": 1,
+      "slug": "london",
+      "status": "needs_curation"
+    },
+    {
+      "city": "Paris",
+      "country": "France",
+      "tier": 1,
+      "slug": "paris",
+      "status": "needs_curation"
+    },
+    {
+      "city": "Rome",
+      "country": "Italy",
+      "tier": 1,
+      "slug": "rome",
+      "status": "needs_curation"
+    },
+    {
+      "city": "Tokyo",
+      "country": "Japan",
+      "tier": 1,
+      "slug": "tokyo",
+      "status": "needs_curation"
+    },
+    {
+      "city": "Istanbul",
+      "country": "Turkey",
+      "tier": 1,
+      "slug": "istanbul",
+      "status": "needs_curation"
+    },
+    {
+      "city": "Barcelona",
+      "country": "Spain",
+      "tier": 1,
+      "slug": "barcelona",
+      "status": "needs_curation"
+    },
+    {
+      "city": "Kyoto",
+      "country": "Japan",
+      "tier": 1,
+      "slug": "kyoto",
+      "status": "needs_curation"
+    },
+    {
+      "city": "Madrid",
+      "country": "Spain",
+      "tier": 1,
+      "slug": "madrid",
+      "status": "needs_curation"
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "tier": 1,
+      "slug": "new-york",
+      "status": "needs_curation"
+    },
+    {
+      "city": "Dublin",
+      "country": "Ireland",
+      "tier": 2,
+      "slug": "dublin",
+      "status": "pending"
+    },
+    {
+      "city": "Edinburgh",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "edinburgh",
+      "status": "pending"
+    },
+    {
+      "city": "Brussels",
+      "country": "Belgium",
+      "tier": 2,
+      "slug": "brussels",
+      "status": "pending"
+    },
+    {
+      "city": "Antwerp",
+      "country": "Belgium",
+      "tier": 4,
+      "slug": "antwerp",
+      "status": "pending"
+    },
+    {
+      "city": "Vienna",
+      "country": "Austria",
+      "tier": 1,
+      "slug": "vienna",
+      "status": "pending"
+    },
+    {
+      "city": "Prague",
+      "country": "Czech Republic",
+      "tier": 1,
+      "slug": "prague",
+      "status": "pending"
+    },
+    {
+      "city": "Berlin",
+      "country": "Germany",
+      "tier": 1,
+      "slug": "berlin",
+      "status": "pending"
+    },
+    {
+      "city": "Seville",
+      "country": "Spain",
+      "tier": 1,
+      "slug": "seville",
+      "status": "pending"
+    },
+    {
+      "city": "Porto",
+      "country": "Portugal",
+      "tier": 1,
+      "slug": "porto",
+      "status": "pending"
+    },
+    {
+      "city": "Athens",
+      "country": "Greece",
+      "tier": 1,
+      "slug": "athens",
+      "status": "pending"
+    },
+    {
+      "city": "Florence",
+      "country": "Italy",
+      "tier": 1,
+      "slug": "florence",
+      "status": "pending"
+    },
+    {
+      "city": "Milan",
+      "country": "Italy",
+      "tier": 2,
+      "slug": "milan",
+      "status": "pending"
+    },
+    {
+      "city": "Venice",
+      "country": "Italy",
+      "tier": 2,
+      "slug": "venice",
+      "status": "pending"
+    },
+    {
+      "city": "Munich",
+      "country": "Germany",
+      "tier": 2,
+      "slug": "munich",
+      "status": "pending"
+    },
+    {
+      "city": "Nice",
+      "country": "France",
+      "tier": 2,
+      "slug": "nice",
+      "status": "pending"
+    },
+    {
+      "city": "Lyon",
+      "country": "France",
+      "tier": 2,
+      "slug": "lyon",
+      "status": "pending"
+    },
+    {
+      "city": "Valencia",
+      "country": "Spain",
+      "tier": 2,
+      "slug": "valencia",
+      "status": "pending"
+    },
+    {
+      "city": "Malaga",
+      "country": "Spain",
+      "tier": 2,
+      "slug": "malaga",
+      "status": "pending"
+    },
+    {
+      "city": "Granada",
+      "country": "Spain",
+      "tier": 2,
+      "slug": "granada",
+      "status": "pending"
+    },
+    {
+      "city": "Naples",
+      "country": "Italy",
+      "tier": 2,
+      "slug": "naples",
+      "status": "pending"
+    },
+    {
+      "city": "Bologna",
+      "country": "Italy",
+      "tier": 2,
+      "slug": "bologna",
+      "status": "pending"
+    },
+    {
+      "city": "Verona",
+      "country": "Italy",
+      "tier": 2,
+      "slug": "verona",
+      "status": "pending"
+    },
+    {
+      "city": "Palermo",
+      "country": "Italy",
+      "tier": 2,
+      "slug": "palermo",
+      "status": "pending"
+    },
+    {
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "tier": 4,
+      "slug": "thessaloniki",
+      "status": "pending"
+    },
+    {
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "tier": 2,
+      "slug": "copenhagen",
+      "status": "pending"
+    },
+    {
+      "city": "Stockholm",
+      "country": "Sweden",
+      "tier": 2,
+      "slug": "stockholm",
+      "status": "pending"
+    },
+    {
+      "city": "Budapest",
+      "country": "Hungary",
+      "tier": 2,
+      "slug": "budapest",
+      "status": "pending"
+    },
+    {
+      "city": "Krakow",
+      "country": "Poland",
+      "tier": 2,
+      "slug": "krakow",
+      "status": "pending"
+    },
+    {
+      "city": "Zurich",
+      "country": "Switzerland",
+      "tier": 2,
+      "slug": "zurich",
+      "status": "pending"
+    },
+    {
+      "city": "Geneva",
+      "country": "Switzerland",
+      "tier": 2,
+      "slug": "geneva",
+      "status": "pending"
+    },
+    {
+      "city": "Warsaw",
+      "country": "Poland",
+      "tier": 4,
+      "slug": "warsaw",
+      "status": "pending"
+    },
+    {
+      "city": "Gdansk",
+      "country": "Poland",
+      "tier": 4,
+      "slug": "gdansk",
+      "status": "pending"
+    },
+    {
+      "city": "Ljubljana",
+      "country": "Slovenia",
+      "tier": 4,
+      "slug": "ljubljana",
+      "status": "pending"
+    },
+    {
+      "city": "Zagreb",
+      "country": "Croatia",
+      "tier": 4,
+      "slug": "zagreb",
+      "status": "pending"
+    },
+    {
+      "city": "Dubrovnik",
+      "country": "Croatia",
+      "tier": 4,
+      "slug": "dubrovnik",
+      "status": "pending"
+    },
+    {
+      "city": "Split",
+      "country": "Croatia",
+      "tier": 4,
+      "slug": "split",
+      "status": "pending"
+    },
+    {
+      "city": "Belgrade",
+      "country": "Serbia",
+      "tier": 4,
+      "slug": "belgrade",
+      "status": "pending"
+    },
+    {
+      "city": "Bucharest",
+      "country": "Romania",
+      "tier": 4,
+      "slug": "bucharest",
+      "status": "pending"
+    },
+    {
+      "city": "Sofia",
+      "country": "Bulgaria",
+      "tier": 4,
+      "slug": "sofia",
+      "status": "pending"
+    },
+    {
+      "city": "Helsinki",
+      "country": "Finland",
+      "tier": 4,
+      "slug": "helsinki",
+      "status": "pending"
+    },
+    {
+      "city": "Oslo",
+      "country": "Norway",
+      "tier": 4,
+      "slug": "oslo",
+      "status": "pending"
+    },
+    {
+      "city": "Reykjavik",
+      "country": "Iceland",
+      "tier": 4,
+      "slug": "reykjavik",
+      "status": "pending"
+    },
+    {
+      "city": "Singapore",
+      "country": "Singapore",
+      "tier": 1,
+      "slug": "singapore",
+      "status": "pending"
+    },
+    {
+      "city": "Bangkok",
+      "country": "Thailand",
+      "tier": 1,
+      "slug": "bangkok",
+      "status": "pending"
+    },
+    {
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "tier": 2,
+      "slug": "dubai",
+      "status": "pending"
+    },
+    {
+      "city": "Hong Kong",
+      "country": "China",
+      "tier": 2,
+      "slug": "hong-kong",
+      "status": "pending"
+    },
+    {
+      "city": "Seoul",
+      "country": "South Korea",
+      "tier": 2,
+      "slug": "seoul",
+      "status": "pending"
+    },
+    {
+      "city": "Osaka",
+      "country": "Japan",
+      "tier": 2,
+      "slug": "osaka",
+      "status": "pending"
+    },
+    {
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "tier": 3,
+      "slug": "kuala-lumpur",
+      "status": "pending"
+    },
+    {
+      "city": "Taipei",
+      "country": "Taiwan",
+      "tier": 3,
+      "slug": "taipei",
+      "status": "pending"
+    },
+    {
+      "city": "Shanghai",
+      "country": "China",
+      "tier": 3,
+      "slug": "shanghai",
+      "status": "pending"
+    },
+    {
+      "city": "Beijing",
+      "country": "China",
+      "tier": 3,
+      "slug": "beijing",
+      "status": "pending"
+    },
+    {
+      "city": "Delhi",
+      "country": "India",
+      "tier": 3,
+      "slug": "delhi",
+      "status": "pending"
+    },
+    {
+      "city": "Mumbai",
+      "country": "India",
+      "tier": 3,
+      "slug": "mumbai",
+      "status": "pending"
+    },
+    {
+      "city": "Agra",
+      "country": "India",
+      "tier": 3,
+      "slug": "agra",
+      "status": "pending"
+    },
+    {
+      "city": "Jaipur",
+      "country": "India",
+      "tier": 3,
+      "slug": "jaipur",
+      "status": "pending"
+    },
+    {
+      "city": "Cairo",
+      "country": "Egypt",
+      "tier": 3,
+      "slug": "cairo",
+      "status": "pending"
+    },
+    {
+      "city": "Marrakech",
+      "country": "Morocco",
+      "tier": 3,
+      "slug": "marrakech",
+      "status": "pending"
+    },
+    {
+      "city": "Cape Town",
+      "country": "South Africa",
+      "tier": 3,
+      "slug": "cape-town",
+      "status": "pending"
+    },
+    {
+      "city": "Mexico City",
+      "country": "Mexico",
+      "tier": 3,
+      "slug": "mexico-city",
+      "status": "pending"
+    },
+    {
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "tier": 3,
+      "slug": "buenos-aires",
+      "status": "pending"
+    },
+    {
+      "city": "Rio de Janeiro",
+      "country": "Brazil",
+      "tier": 3,
+      "slug": "rio-de-janeiro",
+      "status": "pending"
+    },
+    {
+      "city": "Sao Paulo",
+      "country": "Brazil",
+      "tier": 3,
+      "slug": "sao-paulo",
+      "status": "pending"
+    },
+    {
+      "city": "Lima",
+      "country": "Peru",
+      "tier": 3,
+      "slug": "lima",
+      "status": "pending"
+    },
+    {
+      "city": "Bogota",
+      "country": "Colombia",
+      "tier": 3,
+      "slug": "bogota",
+      "status": "pending"
+    },
+    {
+      "city": "Santiago",
+      "country": "Chile",
+      "tier": 3,
+      "slug": "santiago",
+      "status": "pending"
+    },
+    {
+      "city": "Toronto",
+      "country": "Canada",
+      "tier": 3,
+      "slug": "toronto",
+      "status": "pending"
+    },
+    {
+      "city": "Vancouver",
+      "country": "Canada",
+      "tier": 3,
+      "slug": "vancouver",
+      "status": "pending"
+    },
+    {
+      "city": "Montreal",
+      "country": "Canada",
+      "tier": 3,
+      "slug": "montreal",
+      "status": "pending"
+    },
+    {
+      "city": "Los Angeles",
+      "country": "United States",
+      "tier": 3,
+      "slug": "los-angeles",
+      "status": "pending"
+    },
+    {
+      "city": "San Francisco",
+      "country": "United States",
+      "tier": 3,
+      "slug": "san-francisco",
+      "status": "pending"
+    },
+    {
+      "city": "Chicago",
+      "country": "United States",
+      "tier": 3,
+      "slug": "chicago",
+      "status": "pending"
+    },
+    {
+      "city": "Miami",
+      "country": "United States",
+      "tier": 3,
+      "slug": "miami",
+      "status": "pending"
+    },
+    {
+      "city": "Washington DC",
+      "country": "United States",
+      "tier": 4,
+      "slug": "washington-dc",
+      "status": "pending"
+    },
+    {
+      "city": "Boston",
+      "country": "United States",
+      "tier": 4,
+      "slug": "boston",
+      "status": "pending"
+    },
+    {
+      "city": "New Orleans",
+      "country": "United States",
+      "tier": 4,
+      "slug": "new-orleans",
+      "status": "pending"
+    },
+    {
+      "city": "Philadelphia",
+      "country": "United States",
+      "tier": 4,
+      "slug": "philadelphia",
+      "status": "pending"
+    },
+    {
+      "city": "Seattle",
+      "country": "United States",
+      "tier": 4,
+      "slug": "seattle",
+      "status": "pending"
+    },
+    {
+      "city": "Sydney",
+      "country": "Australia",
+      "tier": 4,
+      "slug": "sydney",
+      "status": "pending"
+    },
+    {
+      "city": "Melbourne",
+      "country": "Australia",
+      "tier": 4,
+      "slug": "melbourne",
+      "status": "pending"
+    },
+    {
+      "city": "Auckland",
+      "country": "New Zealand",
+      "tier": 4,
+      "slug": "auckland",
+      "status": "pending"
+    },
+    {
+      "city": "Denpasar",
+      "country": "Indonesia",
+      "tier": 4,
+      "slug": "denpasar",
+      "status": "pending"
+    },
+    {
+      "city": "Jakarta",
+      "country": "Indonesia",
+      "tier": 4,
+      "slug": "jakarta",
+      "status": "pending"
+    },
+    {
+      "city": "Ho Chi Minh City",
+      "country": "Vietnam",
+      "tier": 4,
+      "slug": "ho-chi-minh-city",
+      "status": "pending"
+    },
+    {
+      "city": "Hanoi",
+      "country": "Vietnam",
+      "tier": 4,
+      "slug": "hanoi",
+      "status": "pending"
+    },
+    {
+      "city": "Phuket",
+      "country": "Thailand",
+      "tier": 4,
+      "slug": "phuket",
+      "status": "pending"
+    },
+    {
+      "city": "Chiang Mai",
+      "country": "Thailand",
+      "tier": 4,
+      "slug": "chiang-mai",
+      "status": "pending"
+    },
+    {
+      "city": "Manila",
+      "country": "Philippines",
+      "tier": 4,
+      "slug": "manila",
+      "status": "pending"
+    },
+    {
+      "city": "Tel Aviv",
+      "country": "Israel",
+      "tier": 4,
+      "slug": "tel-aviv",
+      "status": "pending"
+    }
   ]
 }
