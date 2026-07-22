@@ -1,0 +1,333 @@
+{
+  "city": "Edinburgh",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "intro": "Edinburgh keeps its oldest trees behind something: a castle wall, a botanic garden fence, the gates of a private estate turned nature reserve, a royal palace's summer-only garden. The city's volcanic crags and exposed hilltops rarely let a tree grow undisturbed for centuries, so almost everything on this list survived because an institution, deliberately or by accident, built a boundary around it first. The ten range from a pair of yews that watched a queen's advisors plot against her husband to a churchyard tree that is not, genetically, the historic tree its own legend is about.",
+  "meta_description": "Edinburgh's ancient trees hide behind castle walls, botanic garden fences and estate gates. Ten verified locations, real stories, how to reach each one.",
+  "question_answer": "Edinburgh's oldest documented trees are the twin yews flanking the courtyard entrance to Craigmillar Castle, dated to at least 300 years old by Historic Environment Scotland, with local tradition placing them past 450 in connection with Mary, Queen of Scots' stay at the castle in 1566. They stand in the castle's inner courtyard, a short bus ride from the city centre, included in the price of admission.",
+  "question_meta": "Craigmillar Castle's twin yews, at least 300 years old, tied to Mary, Queen of Scots by legend, are Edinburgh's oldest documented trees.",
+  "question_context": "Yews resist dating more stubbornly than almost any other tree: their heartwood rots away as they age, so ring counts are useless and even careful girth-based estimates carry wide error bars. Historic Environment Scotland's cautious figure for the Craigmillar pair is at least 300 years, old enough on its own. The more dramatic local tradition, that they were planted to mark Mary, Queen of Scots' recuperation at the castle in 1566, would require them to be past 450, a gap of a century and a half that no one can close without harming the trees to find out. What is documented without dispute is the setting: a five-hundred-year-old ruined castle where Mary's own advisors met in 1566 to discuss removing her husband, Lord Darnley, a plot historians call the Craigmillar Bond. The nearest challenger for oldest is a good deal less certain still, an ash at Cammo Estate whose age rests entirely on the estate's 1710 founding rather than any measurement of the tree itself. Reaching Craigmillar Castle means a short bus journey from the city centre and a Historic Environment Scotland admission ticket; the yews are inside the entrance, free to see once you are through the gate.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Edinburgh?",
+      "a": "Most likely the twin yews at the entrance to Craigmillar Castle, documented at a minimum of 300 years and possibly past 450 if the tradition linking them to Mary, Queen of Scots holds up."
+    },
+    {
+      "q": "Are Edinburgh's ancient trees free to visit?",
+      "a": "Eight of the ten are free, standing in public churchyards, council-run parks and nature reserves. The exceptions are the Craigmillar Castle yews and the Holyroodhouse elms, both included in a paid admission ticket."
+    },
+    {
+      "q": "Why does Corstorphine's famous sycamore look so young?",
+      "a": "Because it is. The original tree, standing since around 1600, died in 2005 after storm damage. The tree in the churchyard today is a cutting grown from it after its death, genetically identical but only a couple of decades old."
+    },
+    {
+      "q": "Why do so many of Edinburgh's oldest trees stand behind walls?",
+      "a": "Edinburgh's hilltops and crags are exposed to wind that rarely lets a tree grow undisturbed for centuries. Almost everything on this list survived inside a boundary someone built for other reasons: a castle courtyard, a botanic garden fence, a private estate, a churchyard wall."
+    }
+  ],
+  "trees": [
+    {
+      "id": "edi_001",
+      "name": "The Craigmillar Castle Yews",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "300-450 years",
+      "age_min": 300,
+      "age_max": 450,
+      "location": {
+        "address": "Craigmillar Castle, Craigmillar Castle Road, Edinburgh EH16 4SY",
+        "latitude": 55.9339,
+        "longitude": -3.1092,
+        "neighbourhood": "Craigmillar"
+      },
+      "story": "Two yew trees have guarded the courtyard entrance to Craigmillar Castle since before anyone thought to write down when they were planted. Historic Environment Scotland dates them to at least 300 years, but the popular story pushes them back further: local tradition holds they were planted to honour Mary, Queen of Scots during her stay here in 1566, recovering after the birth of her son James VI. That would make them over 450 years old, a gap of a century and a half between the cautious estimate and the romantic one that no ring count can settle, since living yews rot from the inside and take their birth certificate with them. What is certain is the castle itself: a five-hundred-year-old ruin of vaulted halls and spiral stairs, seat of the Preston family and, for three weeks in 1566, the site of the Craigmillar Bond, the meeting where Mary's advisors first discussed getting rid of her troublesome husband Lord Darnley. The yews watched that plotting happen, whichever decade they were planted in. They still stand exactly where the castle's builders put them, framing the entrance the same way they have for centuries, evergreen through every season Craigmillar has seen since.",
+      "verified_sources": [
+        "https://www.scotsman.com/whats-on/arts-and-entertainment/craigmillar-castle-and-the-yew-trees-of-mary-queen-of-scots-596445",
+        "https://www.historicenvironment.scot/visit-a-place/places/craigmillar-castle/"
+      ],
+      "access": "Paid entry, Historic Environment Scotland site",
+      "transport": "Bus from city centre to Craigmillar Castle Road, short walk to entrance",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Craigmillar_inner_court.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Jonathan Oldenbuck, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Age genuinely disputed: Historic Environment Scotland's own cautious figure is 300+ years; the Mary Queen of Scots planting legend requires 450+. Presented as a range, legend labelled as tradition rather than fact. Photo verified directly against its Commons file page: CC BY-SA 3.0 / GFDL, captioned as showing large yew trees in the inner courtyard, categorised under Taxus baccata in Scotland.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "edi_002",
+      "name": "The Sweet Chestnut of the Botanics",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "200+ years",
+      "age_min": 200,
+      "age_max": 280,
+      "best_time": { "months": [10], "label": "October, when the chestnuts drop and its leaves turn gold" },
+      "location": {
+        "address": "Royal Botanic Garden Edinburgh, Rock Garden, 20A Inverleith Row, Edinburgh EH3 5LR",
+        "latitude": 55.967,
+        "longitude": -3.213,
+        "neighbourhood": "Inverleith"
+      },
+      "story": "The oldest tree in Edinburgh's Royal Botanic Garden was already growing here before the garden was. When the Botanics relocated to Inverleith in 1820, this sweet chestnut, now in the Rock Garden, was already a mature tree, meaning it predates the 200 year old institution that grew up around it. No one recorded its planting date, so the garden's own arborists can only say it is over two centuries old, likely closer to three. Sweet chestnut was introduced to Britain by the Romans and spread through monastery gardens before becoming a favourite of 18th and 19th century landscapers, prized for timber that could be coppiced and split for fencing. This one was never harvested that way. It has spent recent years in decline, and RBGE's arboretum team has carried out remedial work simply to keep it alive for another generation, an unusually candid admission from an institution that measures its collection in centuries rather than seasons. Entry to the garden itself costs nothing. Find it in the Rock Garden, one of the quieter corners of a collection that includes some of the best documented trees in Scotland, and one very old one nobody bothered to document at all.",
+      "verified_sources": [
+        "https://stories.rbge.org.uk/archives/15890",
+        "https://treecare.org.uk/Arboretums/royal-botanic-garden-edinburgh/"
+      ],
+      "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
+      "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No source gives a specific planting date, only that it predates the garden's 1820 move to Inverleith. Age range is an estimate, not a measurement. A Flickr photo exists (treeblog, 2008) but is marked All Rights Reserved, not usable.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "edi_003",
+      "name": "The Cammo Ash",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "250-320 years",
+      "age_min": 250,
+      "age_max": 320,
+      "location": {
+        "address": "Cammo Estate, Cammo Walk, Edinburgh EH4 8AN",
+        "latitude": 55.9655,
+        "longitude": -3.3175,
+        "neighbourhood": "Cammo, north-west Edinburgh"
+      },
+      "story": "One of the oldest ash trees in Edinburgh grows in a park with no house left standing in it. Cammo Estate was laid out from 1710 by Sir John Clerk of Penicuik, a lawyer, composer and self-taught landscape designer who spent the following years building what may have been Scotland's first true landscape garden around Cammo House. The house is a shell now, roofless and fenced off after decades of fire and vandalism following its abandonment in the 1970s, but the plantings Clerk commissioned outlived the family that made them: beech, horse chestnut, sycamore, and this ash, its trunk over a metre and a half across, which the Woodland Trust names among the oldest ash trees in the city. Edinburgh Council now manages the grounds as a wilderness nature reserve, deliberately left less manicured than a typical park, and the ash stands among yews, rhododendron and pine planted through the 18th and 19th centuries. No one has given this specific tree a documented planting date, so its age here is an estimate built from the estate's own timeline rather than a ring count, honestly short of certainty but long on plausibility. It costs nothing to visit, and the walk in passes the ruined tower and a Pictish standing stone on the way.",
+      "verified_sources": [
+        "https://www.woodlandtrust.org.uk/visiting-woods/woods/cammo/",
+        "https://www.lothianlife.co.uk/2007/12/cammos-hidden-history/"
+      ],
+      "access": "Free, Edinburgh Council nature reserve",
+      "transport": "Bus to Cammo Road or Cammo Walk, Edinburgh",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Superlative softened per hard rule 8: some tourism sources call this outright 'the oldest and largest ash in Edinburgh', but the Woodland Trust's own page, the more authoritative source, hedges to 'one of the oldest'. No specific age or planting date exists for this individual tree; the range here is inferred from the estate's 1710 founding.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "edi_004",
+      "name": "The Cedar of Lebanon at the Botanics",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "200 years",
+      "age_min": 195,
+      "age_max": 200,
+      "location": {
+        "address": "Royal Botanic Garden Edinburgh, near the Glasshouses, 20A Inverleith Row, Edinburgh EH3 5LR",
+        "latitude": 55.9665,
+        "longitude": -3.2095,
+        "neighbourhood": "Inverleith"
+      },
+      "story": "This cedar has a birth certificate few trees in Scotland can match: 1826, recorded by the Royal Botanic Garden Edinburgh's own staff as one of the first trees they planted after the garden moved to its current Inverleith site. That makes it two hundred years old this year, a tidy figure for a species that in the wild can live past a thousand. Cedar of Lebanon was a fashionable statement tree for early 19th century institutions wanting to signal permanence, and RBGE's planting near the Glasshouses did exactly that: broad, flat tiered branches spreading further every decade since Waterloo was recent history. The species appears throughout the Bible as a byword for strength, cut for Solomon's Temple in the older stories, though this particular specimen's only scripture is a planting record in a Scottish institution's own archive. It has outlasted the Palm House built in 1834, watched the garden expand from its original grounds into the wider collection it is today, and will likely outlast whoever is reading this. Entry to the garden grounds is free year round. The Glasshouses nearby are shut for restoration until 2027, but the cedar needs no roof.",
+      "verified_sources": [
+        "https://www.rbge.org.uk/collections/living-collection/living-collection-at-the-royal-botanic-garden-edinburgh/",
+        "https://treecare.org.uk/Arboretums/royal-botanic-garden-edinburgh/"
+      ],
+      "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
+      "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Planting date (1826) independently corroborated by RBGE's own Living Collection page and treecare.org.uk, an independent arboretum-tracking site. The single best documented age of any Edinburgh entry.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "edi_005",
+      "name": "The Monkey Puzzles of Lauriston Castle",
+      "species": "Monkey Puzzle (Araucaria araucana)",
+      "age_estimate": "170-185 years",
+      "age_min": 170,
+      "age_max": 185,
+      "location": {
+        "address": "Lauriston Castle, 2A Cramond Road South, Edinburgh EH4 6AD",
+        "latitude": 55.9645,
+        "longitude": -3.287,
+        "neighbourhood": "Davidson's Mains"
+      },
+      "story": "Five monkey puzzle trees stand near the rose garden at Lauriston Castle, planted close to the exact year the species became fashionable enough for anyone outside a botanic garden to own one. Araucaria araucana arrived in Britain in 1795, brought back by the naturalist Archibald Menzies, but stayed a rare curiosity until 1843, when the nurseryman James Veitch sent the plant collector William Lobb to Chile specifically to gather seed for commercial sale. That single expedition is why Victorian Britain filled its gardens with monkey puzzles almost overnight, and Lauriston's five, planted around that same pivotal year, are plausibly among the first large scale plantings of the species anywhere in the country, though no dated planting record for this specific garden survives to confirm it outright. Chilean by origin and built for volcanic slopes and heavy snow, they are unmistakable even from a distance: rigid, spiralling branches armoured in sharp scale like leaves, a shape nothing else in a Scottish garden shares. The castle itself, an Edwardian time capsule left almost untouched since its last owners donated it to the city in 1926, sits behind them. The grounds are free to walk. Only the castle's furnished rooms require a ticket, and the trees do not care either way.",
+      "verified_sources": [
+        "https://www.tree-time.com/donate/monkey-puzzles-of-lauriston-castle/",
+        "https://www.edinburghoutdoors.org.uk/trees-story/trees-edinburgh"
+      ],
+      "access": "Free grounds; castle interior tours paid",
+      "transport": "Bus to Cramond Road South, Davidson's Mains",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The 1843 link is a plausible historical inference (the species' commercial introduction year matches Lauriston's Victorian planting era) rather than a dated planting record for these specific five trees. No Wikimedia Commons photo found of this specific tree group despite a real search.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "edi_006",
+      "name": "The Wentworth Elms of Holyroodhouse",
+      "species": "Wentworth Elm (Ulmus x hollandica 'Wentworthii')",
+      "age_estimate": "120-125 years",
+      "age_min": 120,
+      "age_max": 125,
+      "location": {
+        "address": "Palace of Holyroodhouse Garden, Canongate, Edinburgh EH8 8DX",
+        "latitude": 55.9529,
+        "longitude": -3.1719,
+        "neighbourhood": "Canongate"
+      },
+      "story": "Two trees growing in the King's garden in Edinburgh were thought extinct in Britain for twenty years before anyone noticed they were still alive. The Wentworth elm is a weeping cultivar that never caught on widely, and when the Royal Botanic Garden Edinburgh's own specimen died of Dutch elm disease in 1996, and the German nursery that first supplied the variety confirmed it had none left either, botanists assumed the tree was gone from the country entirely. It was not. A 2016 survey of the gardens at the Palace of Holyroodhouse, prompted by nothing more than routine record keeping, turned up two mature Wentworth elms that had been standing in plain sight the whole time, tall enough and photographed often enough that no one had thought to ask what species they actually were. Records show three arrived from a Berlin nursery in 1902, and ring counts from a third tree felled in 2008 dated it to around 1905, which makes the surviving two roughly 120 years old. Their identity gave itself away through a distinctive weeping habit and glossy, oversized leaves, first flagged by Dr Max Coleman of RBGE. The garden is included with a standard Palace of Holyroodhouse ticket, open April to September.",
+      "verified_sources": [
+        "https://stories.rbge.org.uk/archives/22327",
+        "https://www.sciencealert.com/2-trees-presumed-extinct-for-half-a-century-have-just-been-discovered-in-the-queen-s-garden",
+        "https://feeds.bbci.co.uk/news/uk-scotland-edinburgh-east-fife-37543803"
+      ],
+      "access": "Paid entry, Palace of Holyroodhouse (garden included with palace ticket, April to September)",
+      "transport": "15 min walk from Edinburgh Waverley station, at the foot of the Royal Mile",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Planting date and age corroborated across RBGE's own account, ScienceAlert and BBC News. Exact position within the 10 acre garden not specified in any source found, so pin is garden level rather than the specific trees. No open licensed photo found; Royal Collection Trust material is restricted.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "edi_007",
+      "name": "The Camperdown Elm of St Cuthbert's",
+      "species": "Camperdown Elm (Ulmus glabra 'Camperdownii')",
+      "age_estimate": "80-150 years",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "St Cuthbert's Church, 5 Lothian Road, Edinburgh EH1 2EP",
+        "latitude": 55.9491,
+        "longitude": -3.2075,
+        "neighbourhood": "West End"
+      },
+      "story": "A tree with no straight branches grows by the main door of St Cuthbert's Church, one of the oldest parish sites in Edinburgh even though the current building only dates to 1894. The Camperdown elm is a weeping cultivar discovered by accident around 1835 in the forest at Camperdown House near Dundee, when the Earl's head forester found a young elm growing contorted and low to the ground rather than upright. Every Camperdown elm alive today, including this one, is a graft from that single original tree, since the variety cannot grow from seed and only survives by cutting, making each specimen a genetic clone traceable to one 19th century Scottish forest. This one has been measured at 63cm in diameter at breast height, a girth some local sources call a contender for the largest of its kind in Scotland, though no national tree register confirms that specific claim and it is offered here with that caveat attached. What is not in doubt is the shape: branches that arch downward and knot into themselves instead of reaching up, giving the tree a low, tangled canopy unlike anything else in the churchyard around it. It stands free to view, steps from Princes Street Gardens.",
+      "verified_sources": [
+        "https://www.edinburghoutdoors.org.uk/trees-story/trees-edinburgh"
+      ],
+      "access": "Free, open churchyard",
+      "transport": "2 min walk from Princes Street, at the west end of Princes Street Gardens",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Single source found for this tree's existence and girth claim (edinburghoutdoors.org). The 'Scottish champion' framing in that source conflicts with the Tree Register of Britain and Ireland's own published champion Camperdown elms, which it lists at Baxters Park, Dundee and Ayr Cemetery, not here, so the superlative is softened to an unconfirmed local claim per hard rule 8. No age data found anywhere; the range given is a rough estimate for a Victorian-introduced cultivar at a church rebuilt in 1894, not a sourced figure.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "edi_008",
+      "name": "The Rockface Sycamore of Cramond",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "unknown, mature",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "River Almond Walkway, Cramond Foreshore, Edinburgh EH4 6NU",
+        "latitude": 55.977,
+        "longitude": -3.3,
+        "neighbourhood": "Cramond"
+      },
+      "story": "At the start of the River Almond Walkway in Cramond, a sycamore grows sideways out of solid rock instead of up from soil, its roots gripping a ledge on the riverbank and its trunk reaching out over the water before turning back skyward. No record gives this tree's age or planting date. What draws people to it is simply the improbability of the thing: a substantial, clearly mature tree that appears to be growing from bare stone, a trick of root systems finding cracks and pockets of soil invisible to a passerby rather than any actual defiance of biology. Cramond itself is one of the oldest inhabited spots in Scotland, settled since Mesolithic times and later the site of a Roman fort at the mouth of the River Almond, and the walkway leading past this tree follows the river past the ruins of iron and paper mills from the Industrial Revolution before reaching the Firth of Forth. The sycamore is a footnote to that longer history rather than a documented part of it, honestly flagged here as a single source, undated curiosity rather than a verified ancient specimen. It costs nothing to see and sits directly on a public path used daily by dog walkers and cyclists.",
+      "verified_sources": [
+        "https://www.edinburghoutdoors.org.uk/trees-story/trees-edinburgh"
+      ],
+      "access": "Free, public walkway",
+      "transport": "Bus to Cramond village, then short walk along the River Almond Walkway",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Single source only, no age or planting date available anywhere. Included on visual/curiosity merit per CLAUDE.md's qualifying criteria (visually spectacular), not on age, and flagged as such throughout rather than implying verified antiquity.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "edi_009",
+      "name": "The Tall Trees of the Hermitage of Braid",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "180-210 years",
+      "age_min": 180,
+      "age_max": 210,
+      "best_time": { "months": [10, 11], "label": "late October, when the beech turn copper" },
+      "location": {
+        "address": "Hermitage of Braid, Braid Road, Edinburgh EH10 6JF",
+        "latitude": 55.9218,
+        "longitude": -3.203,
+        "neighbourhood": "Morningside"
+      },
+      "story": "The valley floor of the Hermitage of Braid holds some of the tallest trees in Edinburgh, beech and sycamore that clear 130 feet in a steep sided gorge between the Braid Hills and Blackford Hill. Some date to the early 19th century, though no formal survey has dated any single specimen precisely, and the claim rests on the reserve's own management history rather than a ring count. What makes the height plausible is the terrain itself: a sheltered river valley along the Braid Burn, protected from wind on both sides, exactly the kind of site where trees reliably outgrow their exposed neighbours on Edinburgh's open hills. The walk beneath them passes an 18th century doocot with nearly two thousand nest holes and the remains of old mills that once used the burn's power, and enough tree cover that the Hermitage feels closed in and green in a way most of Edinburgh, built on volcanic rock and open to the wind, does not. It is free to walk, all year, and the entrance off Braid Road is a short bus ride from the city centre.",
+      "verified_sources": [
+        "https://www.edinburgh.gov.uk/downloads/file/22587/hermitage-of-braid-local-nature-reserve-management-plan",
+        "https://www.woodlandtrust.org.uk/visiting-woods/woods/hermitage-of-braid/"
+      ],
+      "access": "Free, public nature reserve",
+      "transport": "Bus to Braid Road or Comiston Road, Morningside",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Footpath_through_beech_trees_-_geograph.org.uk_-_1065352.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Callum Black, via Geograph Britain and Ireland / Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "This is an ensemble claim about the reserve's tree cover generally, not one dated individual specimen; presented and pinned as such. Photo shows a generic footpath through beech trees in the Hermitage, license verified, but does not itself confirm the '130 feet, among the tallest in the city' claim, so left as found_needs_check rather than approved.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "edi_010",
+      "name": "The Corstorphine Sycamore",
+      "species": "Sycamore (Acer pseudoplatanus f. corstorphinense)",
+      "age_estimate": "under 25 years",
+      "age_min": 15,
+      "age_max": 25,
+      "label": "Young replacement",
+      "best_time": { "months": [4, 5], "label": "April and May, when the new leaves emerge bright gold" },
+      "location": {
+        "address": "Corstorphine Old Parish Church, Kirk Loan, Edinburgh EH12 7ST",
+        "latitude": 55.9423,
+        "longitude": -3.284,
+        "neighbourhood": "Corstorphine"
+      },
+      "story": "The tree standing in Corstorphine Kirk's churchyard today is not the tree its story is about. The original Corstorphine sycamore, reputedly planted around 1600, grew a distinctive golden foliage found nowhere else and became famous locally after 1679, when Christian Nimmo murdered her lover James, Lord Forrester, beneath its branches with his own sword. Her ghost, known as the White Lady of Corstorphine, is said to haunt the spot still. The original tree does not, since it was badly damaged in a storm in 1998 and died in 2005, ending a run of roughly four centuries. Because the variety cannot grow from seed, only from cuttings, the tree in the churchyard now is a direct clone of the original, propagated after its death and planted to keep the golden leaved variety alive at the place that gave it its name. It carries the same genetics and, given time, the same striking spring colour, but it is a young tree standing in for a very old one, honestly labelled here as such rather than passed off as the historic original. The churchyard is open and free. What you are visiting is a memory of a murder and a continuity of genetics rather than four centuries of standing wood.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Acer_pseudoplatanus",
+        "https://www.rbge.org.uk/support-us/celebrate-life/adopt-a-tree/tree-sponsorship-gallery/corstorphine-sycamore/"
+      ],
+      "access": "Free, open churchyard",
+      "transport": "Bus to Corstorphine High Street, 2 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "A candidate photo exists (Geograph, M J Richardson, CC BY-SA 2.0) but its own caption places it 'in the Royal Botanic Garden', a different corstorphinense specimen RBGE grows for conservation, not the churchyard replacement tree itself. Not used, to avoid the same misidentification error flagged in other cities' runs (e.g. Rome's Villa Torlonia, Amsterdam's Kirstenbosch photo). Exact replanting year of the current cutting not found in any source; age range is an estimate based on the 2005 death date.",
+      "location_precision": "approximate"
+    }
+  ]
+}
