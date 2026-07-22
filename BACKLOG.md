@@ -6,6 +6,16 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## Let runs read the visitor numbers
+
+A run cannot currently see Cloudflare analytics: the numbers need Hidde's login, and reading them would mean putting a Cloudflare API token in the repo or the GitHub environment. That is a new secret that can leak and a new third-party dependency (hard rule 5), and it puts a first crack in the deliberate separation that keeps visitor and personal data on Hidde's side rather than a run's. Worth it later, not now: today the number is almost certainly zero, so a run would add a key and a dependency to read a nought.
+
+Value when it fires: a run sees traffic starting for itself and can flag in LOG.md "real visitors now, time for the next step" instead of Hidde checking the dashboard by hand. That is the missing signal the whole project is waiting on.
+
+**Trigger:** measurable traffic in Cloudflare, and Hidde not wanting to watch it by hand. Recorded 2026-07-21 at his request.
+
+**Needs Hidde:** yes. It is his Cloudflare account and his call whether a run should hold a key to it.
+
 ## Sponsorship link
 
 Deferred 2026-07-21 by Hidde: not important until there are visitors.
