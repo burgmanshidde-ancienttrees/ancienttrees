@@ -2,6 +2,13 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Tokyo photo pass (rung 4: below the new 80% floor, no new finds)
+
+- With the marquee-European sweep closed out, checked the next tier: Tokyo was closest to the 8/10 floor of any remaining city at 7/10, needing only one more find. Searched for its 3 missing trees (the Sensoji War Ginkgo, the Ueno Toshogu Camphor, the Koishikawa Ginkgo of the sperm discovery).
+- One near-miss checked and rejected: a Commons photo of the 1956 memorial stone commemorating Hirase Sakugoro's 1894 discovery of ginkgo spermatozoa at Koishikawa Botanical Garden. The stone marks the tree's location but the image itself is described as showing the marker, not confirmed to clearly show the ginkgo, so not used.
+- No new photo found this pass. Tokyo stays at 7/10, one short of target. Recorded so a future run knows this was tried rather than skipped.
+- This closes this run's photo-floor work for now: the lead group and marquee-European cities all got a genuine pass this session (Amsterdam, Dublin, Lisbon, Paris, Rome, Barcelona, Madrid), plus Tokyo's quick check. A future run can pick up the next tier (Istanbul, Kyoto, New York) or keep pushing the cities already started toward 8/10.
+
 ## 2026-07-22 — Madrid photo pass (rung 4: below the new 80% floor)
 
 - Last marquee-European city below floor in this queue after Barcelona. Madrid was at 1/10.
