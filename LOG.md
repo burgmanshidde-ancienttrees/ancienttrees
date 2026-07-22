@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 07:55 — Rome: photo floor pass, 4/10 to 6/10
+
+- Next oldest marquee-European city below floor after Paris. Found 2: the Quercia del Tasso (CC BY 2.0, also independently confirms the tree is a propped remnant, matching the existing honest framing) and the Cedar of the Garibaldi Mausoleum (CC BY-SA 4.0, GPS within 30m of the existing pin).
+- One near-miss rejected: a Villa Doria Pamphilj cedar photo that looked right for the Cedar of the Belvedere but sits about 1.2km from that tree's pin in a large park with multiple documented cedars, likely a different specimen.
+- Rome now at 6/10. 4 stay missing after genuine attempts, left open rather than looped on.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 07:20 — Paris: photo floor pass, 3/10 to 6/10
 
 - Next oldest marquee-European city below the floor after Lisbon. Best hit rate of any photo pass this run: 3 of 7 missing trees found (the Buffon Plane, the Elm of Saint-Gervais, the Caucasian Elm of Avenue Foch), all clean matches with independently confirming detail in the file descriptions themselves.
