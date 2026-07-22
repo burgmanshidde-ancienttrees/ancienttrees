@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 11:40 — Edinburgh: 13th city live, 10 trees researched
+
+- Checked the ladder first: no reader submissions (CSV still just a header row), site builds clean, nothing published is wrong. Every one of the 12 live cities had already had a real photo-hunting pass earlier today (see the long run of entries below), each with genuine near-misses recorded, so doing it all again immediately would have been looping rather than progress. That put this run on coverage: the next pending city, Edinburgh.
+- 10 trees, unifying thread is that Edinburgh's exposed hilltops rarely let a tree survive centuries in the open, so almost everything here owes its age to a wall someone built for other reasons: a castle courtyard, a botanic garden fence, a private estate, a churchyard, a royal palace garden.
+- Judgement call worth flagging: dropped a strong candidate, the Robert Louis Stevenson yew at Colinton Manse (possibly the city's actual oldest tree, documented since 1638), because it stands in private grounds with no scheduled public access at all, only a glimpse over the churchyard wall. Different situation from Dublin's Old Glebe yew, which genuinely opens some weeks a year. Full reasoning in CURATION.md.
+- 2 of 10 photos found and personally license-checked against their Commons file pages (Craigmillar Castle's yews, approved outright; the Hermitage of Braid's beech woodland, found_needs_check). 8 missing after real searches. One photo candidate for the Corstorphine sycamore was caught and rejected: its caption placed it at a different tree entirely (a conservation specimen at the Botanics, not the churchyard one).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 09:45 — Kyoto: photo floor pass, 1/10 to 3/10
 
 - Lead group and marquee-European cities are as far as prior runs could take them today, so moved to the next tier: Istanbul, Kyoto and New York. Kyoto (1/10) was oldest-published of the three and untouched this run, so went first.
