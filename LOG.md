@@ -44,6 +44,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 08:55 — Madrid: photo floor pass, 1/10 to 2/10
+
+- Last marquee-European city below floor after Barcelona. Found 1: the Bald Cypresses of the Crystal Palace Pond, CC BY-SA 4.0, the same photo already used on that tree's own Spanish Wikipedia article.
+- Madrid now at 2/10. This closes the marquee-Europe sweep for this run: Lisbon, Paris, Rome, Barcelona and Madrid all got a genuine photo pass this session. None hit 8/10 outright, all moved forward, all gaps recorded honestly rather than papered over.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 08:25 — Barcelona: photo floor pass, 1/10 to 2/10
 
 - Next oldest marquee-European city below floor after Rome, and the thinnest coverage in the queue at 1/10. Found 1: an aerial public-domain view of La Rambla's plane tree canopy, a good fit since that entry is already pinned as a 256-tree ensemble rather than a single specimen.

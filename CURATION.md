@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Madrid photo pass (rung 4: below the new 80% floor)
+
+- Last marquee-European city below floor in this queue after Barcelona. Madrid was at 1/10.
+- Found 1 of 9 missing: **the Bald Cypresses of the Crystal Palace Pond**, CC BY-SA 4.0, the same photo used to illustrate this exact tree's own dedicated Spanish Wikipedia article, a strong independent confirmation of identity beyond the caption alone.
+- 8 remain missing after real searches across the Royal Botanic Garden, Casa de Campo and El Capricho categories, none holding the city back. Madrid moves from 1/10 to 2/10.
+- This closes out the marquee-European sweep of this run: Lisbon, Paris, Rome, Barcelona and Madrid all got a genuine pass. None reached the 8/10 floor outright; all moved forward honestly. A future run should either keep pushing these five toward the floor or, per the rule's own escape valve, treat the remaining gaps as recorded and move to the next region.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — Barcelona photo pass (rung 4: below the new 80% floor)
 
 - Next oldest marquee-European city below floor after Rome. Barcelona was at 1/10, the thinnest coverage of any city in this run's queue.
