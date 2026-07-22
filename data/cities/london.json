@@ -46,10 +46,10 @@
       "access": "Free, open access, churchyard",
       "transport": "15 min walk from Totteridge & Whetstone station (Northern Line)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Totteridge_Yew%2C_St_Andrew%27s_church%2C_Totteridge.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Philafrenzy, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
@@ -74,10 +74,10 @@
       "access": "Free, open access, national park",
       "transport": "Bus or car to Richmond Park, then on foot near Pen Ponds",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Richmond_Park%2C_The_Royal_Oak_%281%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "AndyScott, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate"
@@ -100,10 +100,10 @@
       "access": "Free, public square, City of London",
       "transport": "2 min walk from St Paul's tube station",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/The_Cheapside_Plane_%281%29.jpg",
+        "license": "CC0 1.0",
+        "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs need backfilling (original research cited Atlas Obscura and Wikimedia Commons without links).",
@@ -127,10 +127,10 @@
       "access": "Free, public garden",
       "transport": "2 min walk from Green Park or Bond Street tube",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Berkeley_Plane_%281%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs need backfilling.",
@@ -155,10 +155,10 @@
       "access": "Free, open parkland, Greenwich Park",
       "transport": "Cutty Sark DLR station, 15 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Queen_Elizabeth%27s_Oak_Greenwich_Park_6386.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Clem Rutter, Rochester, Kent, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
       "notes": "Tree is dead and recumbent since 1991. Ruins only. Labelled 'Fallen monument' on the city page so visitors know what to expect. Source URLs need backfilling.",
@@ -182,10 +182,10 @@
       "access": "Free, open grounds of Charlton House community centre",
       "transport": "Charlton rail station, 5 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Charlton_House_Mulberry_Tree_%2801%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ethan Doyle White, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs need backfilling (original research cited Morus Londinium).",
@@ -194,28 +194,31 @@
     {
       "id": "lon_007",
       "name": "The Fulham Palace Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
+      "species": "Holm Oak (Quercus ilex)",
       "age_estimate": "500+ years",
-      "age_min": 500,
-      "age_max": 600,
+      "age_min": 450,
+      "age_max": 550,
       "location": {
         "address": "Fulham Palace Gardens, Bishop's Avenue, London SW6 6EA",
         "latitude": 51.4795,
         "longitude": -0.2193,
         "neighbourhood": "Fulham"
       },
-      "story": "This oak is five centuries old partly because people kept cutting it back. It was coppiced long ago, harvested down to its base, a practice that paradoxically resets a tree's clock and can extend its life by centuries. It grows in the grounds of Fulham Palace, the former home of the Bishop of London. Bishop Grindal, who lived here in the 16th century, is credited with introducing the tamarisk to England and growing grapes sent to Queen Elizabeth I. The oak was among the original 41 trees awarded Great Tree status in 1988.",
-      "verified_sources": [],
+      "story": "This oak is five centuries old partly because people kept cutting it back. It was coppiced long ago, harvested down to its base, a practice that paradoxically resets a tree's clock and can extend its life by centuries. It is a Holm Oak, an evergreen Mediterranean species rare this far north, and quite possibly the oldest of its kind in Britain. It grows in the grounds of Fulham Palace, the former home of the Bishop of London. Bishop Grindal or Bishop Aylmer, who both lived here in the 16th century, are the likeliest candidates for planting it, among the earliest introductions of the species to England. The oak was among the original 41 trees awarded Great Tree status in 1988.",
+      "verified_sources": [
+        "https://www.fulhampalace.org/news/the-fulham-palace-ancient-holm-oak/",
+        "https://www.alamy.com/stock-photo-the-holm-oak-quercus-ilex-is-over-450-years-old-at-fulham-palace-gardens-86541999.html"
+      ],
       "access": "Free, Fulham Palace Gardens open daily",
       "transport": "Putney Bridge tube, 10 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Fulham_Palace_Oak_%282%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
-      "curation_status": "flagged",
-      "notes": "Original research marked this tree as needing photo verification. Source URLs need backfilling.",
+      "curation_status": "ai_generated",
+      "notes": "Species corrected 2026-07-22: original data said Pedunculate Oak (Quercus robur), but Fulham Palace's own site and independent photo captions identify it as Holm Oak (Quercus ilex), possibly the oldest in Britain. Photo now found.",
       "location_precision": "confirmed"
     },
     {
@@ -236,10 +239,10 @@
       "access": "Paid entry to Kew Gardens",
       "transport": "Kew Gardens tube station (District Line), 5 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Kew_Gardens_Pagoda_Tree_P1170594.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Deror avi, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs need backfilling.",
@@ -263,10 +266,10 @@
       "access": "Free, public park",
       "transport": "Deptford or Deptford Bridge station, 5 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Mulberry_tree%2C_Sayes_Court_Park_-_geograph.org.uk_-_6124238.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Robin Webster, via Geograph Britain and Ireland / Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs need backfilling (original research cited Atlas Obscura).",
@@ -281,22 +284,24 @@
       "age_max": 350,
       "location": {
         "address": "Barn Elms, Rocks Lane, Barnes, London SW13",
-        "latitude": 51.4707,
-        "longitude": -0.2378,
+        "latitude": 51.474345,
+        "longitude": -0.230953,
         "neighbourhood": "Barnes, South West London"
       },
       "story": "The biggest London plane in London is a tree most Londoners have never heard of. Nicknamed Barney, it is over 300 years old, potentially the oldest of its kind in the city, and massive in every dimension. The London plane is the capital's signature tree, chosen for its resilience to soot and its tolerance of brutal pruning, and Barney is the patriarch of them all. It grows at Barn Elms in the riverside suburb of Barnes. One honest caveat: the exact spot is still being verified, which is why this tree sits at the bottom of the list until its pin can be trusted.",
-      "verified_sources": [],
+      "verified_sources": [
+        "https://commons.wikimedia.org/wiki/File:Barney_of_Barn_Elms_plane_tree_2026-05-06.jpg"
+      ],
       "access": "Public access, Barnes area",
       "transport": "Barnes station or bus",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Barney_of_Barn_Elms_plane_tree_2026-05-06.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Matt Brown, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Moved to position 10 pending verification (2026-07-19 quality round). Next nightly run: confirm exact coordinates within Barn Elms via two sources and research a tree-specific story to replace the generic London plane material.",
+      "notes": "Coordinates updated 2026-07-22 from the EXIF geotag on a CC BY 4.0 photo captioned 'Barney of Barn Elms' (Matt Brown, May 2026), more precise than the earlier Barn Elms-wide estimate. Still only one source naming this specific tree, so location_precision stays approximate until a second independent source confirms it is the same tree. A tree-specific story replacing the generic London plane material also still needed.",
       "location_precision": "approximate"
     }
   ]

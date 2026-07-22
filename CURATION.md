@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — London photo pass (rung 4: zero-photo city)
+
+- London was one of two published cities with zero photos at all (the other is Istanbul), which outranks starting a new city on the ladder in CLAUDE.md. No reader submissions pending (CSV checked: header row only, no data rows). Site build was healthy.
+- All 10 London trees now have a photo: Totteridge Yew, Royal Oak, Cheapside Plane, Berkeley Square Plane, Queen Elizabeth's Oak (its recumbent remains), Charlton House Mulberry, Fulham Palace Oak, Old Lions of Kew (pagoda tree), Evelyn Mulberry, Barney the Plane. All from Wikimedia Commons, all CC0/CC BY/CC BY-SA, all `found_needs_check` pending your eye. Every file page and licence tag independently checked, not just taken on an agent's word.
+- One fact correction found along the way: the Fulham Palace Oak was recorded as Pedunculate Oak (Quercus robur). It is a Holm Oak (Quercus ilex), per Fulham Palace's own site and an independent photo caption, and is possibly the oldest holm oak in Britain, made more interesting rather than less. Species, age range and story updated, two sources added.
+- Barney the Plane's pin moved from a generic Barn Elms estimate to the exact EXIF coordinates of a geotagged CC BY 4.0 photo captioned "Barney of Barn Elms." Still only one source naming this specific tree, so `location_precision` stays `approximate`, honestly, until a second source confirms it. Still needs a tree-specific story to replace the generic London-plane material.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-21 — New York (full research run, nightly workflow)
 
 - 10 trees researched from scratch and written to `data/cities/new-york.json`. Tier 1, eleventh city to go live. No reader submissions pending (CSV checked: header row only). Nothing published was wrong, so this was the next rung: the next pending city.

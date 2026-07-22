@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 02:15 — London: 0 photos to 10
+
+- No reader submissions (CSV checked: header row only, no data rows). Site build was healthy. That put rung 4 on top of the ladder: a published city with zero photographs, which outranks starting the next pending city (Singapore). London and Istanbul were both at zero; London went first as the older of the two.
+- All 10 London trees now have a Wikimedia Commons photo with a checked licence (CC0, CC BY or CC BY-SA) and attribution, status `found_needs_check` pending your eye. Every file page and licence tag was independently verified, not taken on trust.
+- Found a real fact error while at it: the Fulham Palace Oak was recorded as a Pedunculate Oak. It is a Holm Oak, per the Palace's own site plus an independent source, and quite possibly the oldest holm oak in the country. Fixed the species, age range and story, added two sources.
+- Barney the Plane's pin got more precise (exact EXIF coordinates from a geotagged photo captioned with its name) but stays `location_precision: approximate` on purpose, since only one source names this specific tree so far.
+- Site rebuilt, all contracts validated, pushed. Istanbul is next for the same zero-photo pass, then Singapore.
+
 ## 2026-07-22 01:00 — New York researched and live: 11 cities, 110 trees
 
 - No reader submissions (CSV checked: header row only). Site healthy, nothing published was wrong, so went to the next rung: the next pending city, New York.
