@@ -44,6 +44,11 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 09:15 — Tokyo photo pass: no new finds, honestly recorded
+
+- Marquee-European sweep is closed out for this run, so checked the city closest to the floor overall: Tokyo at 7/10, needing just one more. Nothing cleared the bar this pass; one near-miss (a memorial-stone photo at Koishikawa Botanical Garden) checked and rejected since it documents the marker, not confirmed to show the tree itself.
+- Recorded in CURATION.md so a future run knows this was tried. This closes a long run of photo-floor work: Amsterdam, Dublin, Lisbon, Paris, Rome, Barcelona and Madrid all got a genuine pass this session, plus this Tokyo check.
+
 ## 2026-07-22 08:55 — Madrid: photo floor pass, 1/10 to 2/10
 
 - Last marquee-European city below floor after Barcelona. Found 1: the Bald Cypresses of the Crystal Palace Pond, CC BY-SA 4.0, the same photo already used on that tree's own Spanish Wikipedia article.
