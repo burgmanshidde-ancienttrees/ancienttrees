@@ -113,11 +113,25 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .tree-name { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; line-height: 1.25; }
 .tree-label { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mid); background: var(--cream-dark); border-radius: 2px; padding: 0.15rem 0.45rem; margin-left: 0.6rem; vertical-align: middle; white-space: nowrap; }
 .tree-meta { font-size: 12px; color: var(--ink-light); margin: 0 0 0.6rem 2.15rem; }
-.best-time { color: var(--moss); }
 .best-now, .best-now-inline { display: inline-block; background: var(--moss); color: #fff;
   font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 999px;
   margin-left: 6px; letter-spacing: 0.02em; text-transform: uppercase; }
 .best-now-inline { margin-left: 0; }
+/* Seasonal peak chart, in the spirit of PictureThis but in our own skin. */
+.season { margin: 2rem 0; background: #fff; border: 1px solid var(--cream-dark);
+  border-radius: 10px; padding: 1.1rem 1.25rem 0.9rem; }
+.season-head { display: flex; align-items: center; gap: 0.5rem; font-family: var(--serif);
+  font-size: 1.05rem; color: var(--ink); margin-bottom: 0.5rem; }
+.sc-chip { font-family: var(--sans); font-size: 11px; font-weight: 600; color: var(--moss);
+  border: 1px solid var(--moss); border-radius: 999px; padding: 1px 8px; text-transform: capitalize; }
+.season-svg { width: 100%; height: auto; display: block; overflow: visible; }
+.sc-area { fill: var(--moss-light); }
+.sc-line { fill: none; stroke: var(--moss); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.sc-peak { fill: var(--moss); stroke: #fff; stroke-width: 2; }
+.sc-now { stroke: var(--ink-light); stroke-width: 1; stroke-dasharray: 2 3; }
+.sc-nowlabel { fill: var(--ink-light); font-family: var(--sans); font-size: 9px; text-anchor: middle; text-transform: uppercase; letter-spacing: 0.05em; }
+.sc-m { fill: var(--ink-light); font-family: var(--sans); font-size: 9px; text-anchor: middle; }
+.season-label { margin: 0.4rem 0 0; font-size: 13.5px; color: var(--ink-mid); }
 /* Overview shows a teaser; the full story lives on the tree page. The whole
    text stays in the HTML so crawlers and AI engines still read it. */
 .tree-story { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 0.7rem 2.15rem;
@@ -421,25 +435,101 @@ def site_graph():
     ]
 
 
-def best_time_row(tree):
-    """The 'when to go' line, the strongest reason a page gives to leave the house.
+MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+              "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-    Only shown when a tree has a real seasonal peak. A 2000 year old yew looks
-    much the same in March and August, so it carries no best_time and no row
-    appears: forcing one on every tree would be filler, and honesty about which
-    trees actually have a moment is the point.
 
-    Schema: tree["best_time"] = {"months": [11], "label": "late November, when
-    the ginkgo turns gold"}. months drives the "right now" highlight and a
-    future "what is at its best near me"; label is the sentence a reader sees.
+def season_intensities(peak_months):
+    """A 0..1 value for each of the 12 months, humped over the peak.
+
+    Derived from the peak months rather than asked of a run, because nobody can
+    honestly hand-score twelve numbers per tree. A gaussian falloff, and
+    deliberately non-wrapping: a ginkgo is gold in November and bare in June, it
+    is not faintly gold in June, so December does not bleed back into summer.
+    """
+    sigma = 1.4
+    out = []
+    for m in range(1, 13):
+        dist = min(abs(m - p) for p in peak_months)
+        out.append(math.exp(-(dist * dist) / (2 * sigma * sigma)))
+    return out
+
+
+def smooth_path(points):
+    """A rounded SVG path through the points, Catmull-Rom turned into cubics."""
+    if len(points) < 2:
+        return ""
+    d = f"M {points[0][0]:.1f},{points[0][1]:.1f}"
+    for i in range(len(points) - 1):
+        p0 = points[i - 1] if i > 0 else points[i]
+        p1, p2 = points[i], points[i + 1]
+        p3 = points[i + 2] if i + 2 < len(points) else p2
+        c1x = p1[0] + (p2[0] - p0[0]) / 6
+        c1y = p1[1] + (p2[1] - p0[1]) / 6
+        c2x = p2[0] - (p3[0] - p1[0]) / 6
+        c2y = p2[1] - (p3[1] - p1[1]) / 6
+        d += f" C {c1x:.1f},{c1y:.1f} {c2x:.1f},{c2y:.1f} {p2[0]:.1f},{p2[1]:.1f}"
+    return d
+
+
+def season_curve(tree):
+    """A seasonal peak chart, in the spirit of PictureThis but in our own skin.
+
+    The strongest reason a page gives someone to leave the house, turned from a
+    line of text into a curve across the year with the peak marked and a 'you
+    are here' dot for the current month. Only trees with a real season get one;
+    evergreens and ancient yews carry no best_time and no chart appears.
     """
     bt = tree.get("best_time")
-    if not bt or not bt.get("label"):
-        return "", ""
+    if not bt or not bt.get("label") or not bt.get("months"):
+        return ""
+
+    peaks = bt["months"]
+    vals = season_intensities(peaks)
     now = date.today().month
-    is_now = now in (bt.get("months") or [])
-    flag = ' <span class="best-now">at its best right now</span>' if is_now else ""
-    return "\n  <dt>Best time to go</dt>", f'<dd class="best-time">{esc(bt["label"])}{flag}</dd>'
+    in_season = now in peaks
+
+    W, H, pad_t, pad_b, pad_x = 320.0, 120.0, 22.0, 24.0, 10.0
+    plot_h = H - pad_t - pad_b
+    step = (W - 2 * pad_x) / 11.0
+    pts = [(pad_x + i * step, pad_t + (1 - v) * plot_h) for i, v in enumerate(vals)]
+
+    line = smooth_path(pts)
+    area = line + f" L {pts[-1][0]:.1f},{pad_t + plot_h:.1f} L {pts[0][0]:.1f},{pad_t + plot_h:.1f} Z"
+
+    peak_i = max(range(12), key=lambda i: vals[i])
+    peak_x, peak_y = pts[peak_i]
+    now_x = pts[now - 1][0]
+
+    # Month labels, every other one to keep it clean at this width.
+    ticks = "".join(
+        f'<text x="{pts[i][0]:.1f}" y="{H - 6:.0f}" class="sc-m">{MONTH_ABBR[i]}</text>'
+        for i in range(0, 12, 2)
+    )
+
+    now_marker = (
+        f'<line x1="{now_x:.1f}" y1="{pad_t - 6:.1f}" x2="{now_x:.1f}" y2="{pad_t + plot_h:.1f}" class="sc-now"/>'
+        f'<text x="{now_x:.1f}" y="{pad_t - 10:.1f}" class="sc-nowlabel">now</text>'
+    )
+
+    kind = esc(bt.get("kind", "").strip())
+    chip = f'<span class="sc-chip">{kind}</span>' if kind else ""
+    now_badge = '<span class="best-now">at its best right now</span>' if in_season else ""
+
+    return f"""
+<figure class="season">
+  <figcaption class="season-head">
+    <span>Best time to visit</span>{chip}{now_badge}
+  </figcaption>
+  <svg viewBox="0 0 {W:.0f} {H:.0f}" class="season-svg" role="img" aria-label="Seasonal peak: {esc(bt['label'])}">
+    <path d="{area}" class="sc-area"/>
+    <path d="{line}" class="sc-line"/>
+    {now_marker}
+    <circle cx="{peak_x:.1f}" cy="{peak_y:.1f}" r="4.5" class="sc-peak"/>
+    {ticks}
+  </svg>
+  <p class="season-label">{esc(bt['label'])}</p>
+</figure>"""
 
 
 def best_time_short(tree):
@@ -1184,15 +1274,15 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pag
     )
 
     label = f'<span class="tree-label">{esc(tree["label"])}</span>' if tree.get("label") else ""
-    best_dt, best_dd = best_time_row(tree)
     facts = f"""
 <dl class="facts">
   <dt>Species</dt><dd>{esc(tree.get('species', ''))}</dd>
-  <dt>Age estimate</dt><dd>{esc(tree.get('age_estimate', 'unknown'))}</dd>{best_dt}{best_dd}
+  <dt>Age estimate</dt><dd>{esc(tree.get('age_estimate', 'unknown'))}</dd>
   <dt>Location</dt><dd>{esc(loc.get('address', ''))} ({esc(loc.get('neighbourhood', ''))})</dd>
   <dt>Access</dt><dd>{esc(tree.get('access', ''))}</dd>
   <dt>Getting there</dt><dd>{esc(tree.get('transport', ''))}</dd>
 </dl>"""
+    season_html = season_curve(tree)
 
     nearby_html = "".join(
         f'<li><a href="{slugify(t["name"])}">{esc(t["name"])}, '
@@ -1214,6 +1304,7 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pag
   {photo_html}
   {facts}
   <div class="prose-block"><p>{esc(tree['story'])}</p></div>
+  {season_html}
   <div class="map-embed"><div id="map" class="map"></div></div>
   <a class="go-btn" href="https://www.google.com/maps/dir/?api=1&amp;destination={loc['latitude']},{loc['longitude']}" target="_blank" rel="noopener">Take me there</a>
   <p class="go-note">Opens directions in your maps app. {esc(tree.get('transport', ''))}</p>
