@@ -65,9 +65,14 @@ jobs:
             city, and then the one after that.
 
             Coverage is the current phase by Hidde's explicit decision. Approximate
-            pins and missing photos do not block the next city. What does block it:
-            shipping a tree without location_precision set honestly. Vague is fine
-            when it says it is vague; fake precision is not.
+            pins and few photos do not block the next city. Two things do, and both
+            are ladder rungs above coverage: a published city with zero photographs
+            at all (rung 4, get it any photo before adding a new city), and shipping
+            a tree without location_precision set honestly. A page made only of text
+            cannot make anyone want to walk anywhere. Vague pins are fine when they
+            say they are vague; fake precision is not. Do not read this list as
+            replacing Step 0; the full ladder in CLAUDE.md governs, and hard rule 10
+            (public trees only, never a location its source hides) is absolute.
 
             Whatever the work turns out to be: verify against two independent
             sources, follow TONE_OF_VOICE.md and SEO_GEO_BLUEPRINT.md, set
