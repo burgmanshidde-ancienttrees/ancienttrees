@@ -44,6 +44,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 07:20 — Paris: photo floor pass, 3/10 to 6/10
+
+- Next oldest marquee-European city below the floor after Lisbon. Best hit rate of any photo pass this run: 3 of 7 missing trees found (the Buffon Plane, the Elm of Saint-Gervais, the Caucasian Elm of Avenue Foch), all clean matches with independently confirming detail in the file descriptions themselves.
+- Paris now at 6/10, closest yet to the 8/10 floor. 4 stay missing after real attempts (the Second Robinier, the Sequoia of Buttes-Chaumont, the Parc Montsouris plane, the Sophora by the lake), left open rather than looped on.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 06:45 — Lisbon: photo floor pass, 3/10 to 5/10
 
 - Lead group (London, Amsterdam, Dublin) is as far along as this run could get it; moved to marquee European cities next, oldest-first. Lisbon (3/10) was next.

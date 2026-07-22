@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Paris photo pass (rung 4: below the new 80% floor)
+
+- Continuing oldest-first through marquee European cities: Paris (3/10) was next after Lisbon.
+- Found 3 of 7 missing, the best hit rate of any photo pass this run, likely because Paris's remarkable trees are individually well documented on Commons (dedicated Valued Image sets and categories exist per named tree):
+  - **The Buffon Plane** (Jardin des Plantes): public domain, the tree identified by its own botanic label in the photo.
+  - **The Elm of Saint-Gervais**: CC BY-SA 4.0, a contemporary photo from a dedicated "Place Saint-Gervais" category, clearly the current tree rather than the historical engravings that dominate the tree's own dedicated Commons category.
+  - **The Caucasian Elm of Avenue Foch**: CC BY-SA 4.0, file description independently states the 1852 planting date, matching this entry's own sourced age exactly.
+- 4 remain missing (the Second Robinier, the Sequoia of Buttes-Chaumont, the Plane of Parc Montsouris, the Sophora by the Lake) after real searches; none held the city back. Paris moves from 3/10 to 6/10.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — Lisbon photo pass (rung 4: below the new 80% floor)
 
 - Amsterdam and Dublin (lead group) are as far as this run could take them for now, so moved to the next region: marquee European traveller cities, oldest-published-first. Lisbon (3/10) was oldest still below target.
