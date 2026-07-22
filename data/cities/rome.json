@@ -51,7 +51,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Oak_Tree_of_Torquato_Tasso_on_the_Rampa_della_Quercia%2C_Gianicolo_%E2%80%A2_Janiculum_Hill_%2846853511991%29.jpg",
         "license": "CC BY 2.0",
         "attribution": "Sonse, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Exact botanical species never identified in any source found. Age is popular legend (up to 1000 years) with no scientific dating behind it; age_min/age_max here reflect a conservative documented-history floor, not the legend. Current physical condition after the 2011 arson (how much of the original tree survives) needs an on-the-ground check. Photo dated 2018, post-arson.",
@@ -79,13 +79,13 @@
       "access": "Free, open access, Villa Borghese",
       "transport": "10 min walk from Metro A Spagna, entering via Via Pinciana",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Platano_secolare_Villa_Borghese_Roma.JPG",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Patafisik, Wikimedia Commons",
-        "status": "found_needs_check"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact coordinates are for the Valle dei Platani generally, not Adonis's specific trunk; needs on-the-ground pin confirmation. Planting year is given as 'early 1600s' by every source, none more precise.",
+      "notes": "Exact coordinates are for the Valle dei Platani generally, not Adonis's specific trunk; needs on-the-ground pin confirmation. Planting year is given as 'early 1600s' by every source, none more precise. A candidate photo (a 2009 generic Platanus orientalis shot in Villa Borghese) was checked and rejected: its description does not name Adonis specifically and, given this entry own admitted imprecise pin, could easily show a different plane tree in the same grove.",
       "location_precision": "approximate"
     },
     {
@@ -202,7 +202,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Leccio_secolare%2C_laghetto_di_Villa_Borghese.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Albarubescens, Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Age genuinely disputed: the national registry's measured estimate (176 years) contradicts the traditional account (up to 300 years, tied to the 1784 garden redesign). Presented as a range rather than resolved.",
@@ -232,7 +232,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Cedro_al_Parco_del_Mausoleo_di_Garibaldi.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Albarubescens, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
@@ -261,7 +261,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Cedro_del_Libano_-_Villa_Celimontana.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Beatrice, Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "No source gives a planting date or age figure; the municipal registry designates it monumental without a number. Age range here is a conservative placeholder, not a sourced estimate. Coordinates are approximate, positioned along Viale Cardinale Spellman near the entrance; exact spot needs on-the-ground confirmation.",
@@ -321,7 +321,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Fitolacca_arborea_%28Phytolacca_dioica%29%2C_scalinata_del_Campidoglio%2C_Roma_%281%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Albarubescens, Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"

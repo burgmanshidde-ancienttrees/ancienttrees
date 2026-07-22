@@ -51,7 +51,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Paris_-_Square_Ren%C3%A9_Viviani_-_robinier_-_1601.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Ordifana75, Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
@@ -82,7 +82,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Cedrus_libani_%28Jardin_des_Plantes_de_Paris%29_1.jpg",
         "license": "Public domain",
         "attribution": "Tangopaso, Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via OpenStreetMap's individually mapped 'Cedre de Jussieu' natural monument node, tagged start_date 1734, matching the sourced planting year.",
@@ -146,7 +146,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Platane_de_Buffon_%28Jardin_des_Plantes_de_Paris%29.jpg",
         "license": "Public domain",
         "attribution": "Tangopaso, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via OpenStreetMap's 'Platane de Buffon' natural monument node, tagged 'Plante par Buffon en 1785', matching the sourced date exactly.",
@@ -177,7 +177,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Platane_du_parc_Monceau_1.jpg",
         "license": "Public domain",
         "attribution": "Tangopaso, Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via the Ville de Paris open tree registry: the only Platanus orientalis in Parc Monceau flagged remarquable, circumference 645cm and height 31m, matching the story's figures.",
@@ -238,7 +238,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/P1380770_Paris_IV_orme_St-Gervais_rwk.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Mbzt, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
@@ -268,7 +268,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Jardins_de_l%27avenue_Foch%2C_Paris_16e_28.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Polymagou, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "notes": "Position confirmed via the Ville de Paris open tree registry: the only Zelkova carpinifolia among five Zelkovas in the Avenue Foch garden, and the sole one flagged remarquable (circumference 445cm, height 27m).",
@@ -283,7 +283,7 @@
       "age_max": 190,
       "location": {
         "address": "Parc Montsouris, 2 Rue Gazan, 75014 Paris",
-        "latitude": 48.82271470,
+        "latitude": 48.8227147,
         "longitude": 2.33868841,
         "neighbourhood": "14th arrondissement"
       },
