@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 03:10 — Istanbul: 0 photos to 2
+
+- Same rung as the London pass just before it: a published city with zero photographs. Istanbul was the other one at zero. No reader submissions, site healthy.
+- Only found 2 of 10 this time, and that is a coverage fact about Istanbul rather than a shortcut taken: Wikimedia Commons simply has far less documentation of Istanbul's monument trees than of London's. Searched Commons in English and Turkish, plus iNaturalist, Flickr and Openverse, before accepting that.
+- Got: the Hüseyin Avni Dede Plane (its photo's own GPS lands about 50m from the existing pin, a nice bonus confirmation) and the Karacaahmet cypresses (a general shot of the cemetery's cypress canopy, honestly not tied to one of the nine specific protected trunks, matching that entry's existing caveat).
+- The other 8 stay `missing`, per the mandate: photo coverage is always cuttable, so this moves on rather than digging further for a fifth or sixth find. Good candidates for a future improvement-mode pass.
+- Site rebuilt, all contracts validated, pushed. Both zero-photo cities are cleared; Singapore is next.
+
 ## 2026-07-22 02:15 — London: 0 photos to 10
 
 - No reader submissions (CSV checked: header row only, no data rows). Site build was healthy. That put rung 4 on top of the ladder: a published city with zero photographs, which outranks starting the next pending city (Singapore). London and Istanbul were both at zero; London went first as the older of the two.
