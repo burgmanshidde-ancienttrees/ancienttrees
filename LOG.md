@@ -44,6 +44,15 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 04:20 — Dublin: 10 trees researched, twelfth city live
+
+- Next pending city on the ladder, no reader submissions waiting and no city sitting at zero photos, so straight to coverage. Dublin joins the site with 10 trees in `data/cities/dublin.json`.
+- The thread connecting all ten: Dublin's remarkable trees are civic and institutional rather than royal-forest survivors. A plane tree slowly eating a park bench at King's Inns, a giant sequoia Queen Victoria planted at the President's residence in 1861, two Georgian squares at Trinity, a dead cypress carved into a wildlife sculpture instead of felled, and three former private estates (Farmleigh, St Anne's, the Botanic Gardens) now open to everyone.
+- 4 flagged, all for genuine reasons stated in the data: a disputed 500-700 year age range and unverified Swift legend for the oldest tree (a yew that only opens to the public a few weeks a year under a heritage tax scheme, disclosed honestly rather than glossed over); a chronology that doesn't add up for the Botanic Gardens' yew avenue; two Trinity College sources that disagree with each other on one plane tree's age; and a "220 years" claim for Farmleigh's oldest sycamore that traces to one repeated source rather than two independent ones.
+- One near-miss worth recording: nearly used a walnut tree at a Tallaght priory (St Maelruain's Tree) as the oldest-tree candidate, but dropped it after research showed the site has no established public access, only a blogger's account of being personally let in by a groundskeeper. Not "genuinely open to visitors" under hard rule 10, so left out entirely rather than flagged.
+- 1 photo found (the Hungry Tree, CC BY-SA 2.0 via Geograph), 9 missing after a real search across Commons, iNaturalist and Flickr for each named tree; nothing held the city back. The Hungry Tree is also the one pin marked `confirmed`, from a precise Wikipedia coordinate; the other nine are honestly `approximate`.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 03:10 — Istanbul: 0 photos to 2
 
 - Same rung as the London pass just before it: a published city with zero photographs. Istanbul was the other one at zero. No reader submissions, site healthy.

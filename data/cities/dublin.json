@@ -1,0 +1,326 @@
+{
+  "city": "Dublin",
+  "country": "Ireland",
+  "status": "needs_curation",
+  "intro": "Dublin's remarkable trees rarely come from grand planned woodland the way London's or Madrid's do. They arrive by accident and by institution instead: a bench a plane tree slowly ate, a sequoia a visiting queen planted as a courtesy, two Georgian college squares, a dead tree carved into wildlife rather than felled, and a scattering of Guinness family estates now open to everyone. Nine of these ten cost nothing to visit, though one keeps its gate locked for all but ten weeks a year.",
+  "meta_description": "Dublin's ancient trees range from a plane eating a park bench to a queen's own sequoia. Ten verified locations, real stories, how to reach each one.",
+  "question_answer": "Dublin's oldest tree is very likely a yew in the private garden of the Old Glebe in Newcastle, on the city's western edge, estimated at between 500 and 700 years old depending on which measure you trust. It only opens to the public for a few weeks each year, in May, June and mid-August, under Ireland's Section 482 scheme for historic properties.",
+  "question_meta": "A 500-700 year old yew in a private garden, linked by legend to Jonathan Swift, is Dublin's oldest tree. When it opens to visitors, and the full ten.",
+  "question_context": "Ring counts are not possible without felling the tree, so estimates for the Old Glebe yew swing widely: a girth-based rule of thumb puts it past 500 years, while local tradition claims over 700. Either number makes it older than the house whose garden it now shares, built in 1710, and considerably older than the more famous ancient trees elsewhere in the city. Jonathan Swift, Dean of St Patrick's Cathedral, is said to have sat beneath it while composing verse, though the link between a supposedly ancient Dublin tree and a supposedly ancient Dublin writer is exactly the kind of story that attaches itself to old trees whether or not it happened, so treat it as folklore rather than settled fact. The nearest challenger for oldest is a good deal younger: a pair of yews in the National Botanic Gardens, possibly planted in the 1730s to commemorate the essayist Joseph Addison, though the garden's own historians cannot fully reconcile that story with the garden's 1795 founding date. Getting to the Old Glebe requires checking the calendar first. It is a private property that opens to the public for free under Ireland's Section 482 tax relief scheme, specifically in May, all of June, and nine days in mid-August, 10am to 2pm. Turn up outside those windows and the gate stays shut.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Dublin?",
+      "a": "Very likely a yew in the private garden of the Old Glebe in Newcastle, estimated at 500 to 700 years old. It only opens to the public in May, June and mid-August."
+    },
+    {
+      "q": "Are Dublin's ancient trees free to visit?",
+      "a": "Eight of the ten are free at any time. Áras an Uachtaráin's sequoia requires a free guided tour booked on the day, and the Old Glebe's yew only opens for a few weeks a year."
+    },
+    {
+      "q": "Why is there a tree eating a bench in Dublin?",
+      "a": "A London plane at King's Inns grew directly against a cast iron bench roughly a century ago and never stopped. Its bark has since swallowed the seat's arms and back, earning it the name the Hungry Tree."
+    },
+    {
+      "q": "Why do so many of Dublin's oldest trees grow on former private estates?",
+      "a": "Farmleigh, St Anne's Park and the National Botanic Gardens were all once private demesnes, several of them Guinness family property, bought by the state or Dublin Corporation over the 20th century and opened to everyone. Their original planting schemes survived the handover."
+    }
+  ],
+  "trees": [
+    {
+      "id": "dub_001",
+      "name": "The Hungry Tree",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "100 years",
+      "age_min": 80,
+      "age_max": 120,
+      "location": {
+        "address": "King's Inns, near the south gate, Constitution Hill, Dublin 7",
+        "latitude": 53.35222,
+        "longitude": -6.27306,
+        "neighbourhood": "Constitution Hill, Dublin 7"
+      },
+      "story": "A cast iron bench has been disappearing into this tree for decades, and the tree is winning. Planted a little over a century ago inside the south gate of King's Inns, Ireland's school of law since 1541, the plane grew directly against a Victorian bench and simply kept going. Bark now spills over the seat's arms and back like dough left to rise. Nobody planned it as art: an early photographer noticed the effect and gave it a name that stuck. It has since appeared on guidebook covers and in Robert Ballagh's 1981 book Dublin, turning what the Tree Council of Ireland itself calls an otherwise unremarkable specimen into one of the city's most photographed trees. The tree is younger than almost everything around it. King's Inns has trained Irish barristers since the reign of Henry VIII, while the plane itself was likely seeded sometime between 1900 and 1940. The grounds are free and open during daylight hours, reached through an archway from Henrietta Street. Resist the urge to sit on what remains of the bench.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Hungry_Tree",
+        "https://www.atlasobscura.com/places/the-hungry-tree-dublin-ireland",
+        "https://www.irishtimes.com/news/ireland/irish-news/hungry-tree-is-slowly-eating-a-cast-iron-bench-in-dublin-1.3162431"
+      ],
+      "access": "Free, open grounds, daylight hours",
+      "transport": "15 min walk from O'Connell Street, or bus routes along Church Street / North King Street",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/The_Hungry_Tree_at_Kings_Inns_%28geograph_4572088%29.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Declan Maher, via Geograph Britain and Ireland / Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "dub_002",
+      "name": "Queen Victoria's Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "165 years",
+      "age_min": 160,
+      "age_max": 170,
+      "location": {
+        "address": "Áras an Uachtaráin, Phoenix Park, Dublin",
+        "latitude": 53.359676,
+        "longitude": -6.31745,
+        "neighbourhood": "Phoenix Park"
+      },
+      "story": "A California redwood has been growing on Irish presidential land since a queen put it there. During her 1861 visit to Dublin, Queen Victoria planted a young giant sequoia in the grounds of what was then the Viceregal Lodge, now Áras an Uachtaráin, home to the President of Ireland. The tree is still alive. Seed of the species had only reached Britain from California in 1853, which makes this one of the earliest giant sequoias planted anywhere in Europe. It started a habit rather than a one-off gesture: visiting heads of state since, including Charles de Gaulle, John F Kennedy, Pope John Paul II, Queen Elizabeth II and Barack Obama, have each planted their own tree in the grounds, so Victoria's sequoia now stands among a small forest of political arrivals rather than alone. In its native Sierra Nevada the species can live three thousand years. At around a hundred and sixty five, hers has barely started. The gardens run free guided tours from June to October, and the house itself on Saturdays year round, tickets issued on the day from the Phoenix Park Visitor Centre.",
+      "verified_sources": [
+        "https://www.irishtimes.com/life-and-style/homes-and-property/gardens/park-yourself-in-dublin-s-finest-garden-1.3025382",
+        "https://en.wikipedia.org/wiki/%C3%81ras_an_Uachtar%C3%A1in"
+      ],
+      "access": "Free, but by guided tour only: house tours Saturdays year round, garden tours June to October, tickets on the day from Phoenix Park Visitor Centre",
+      "transport": "5 min walk from Ashtown rail station, then a walk through the park; also bus routes 37, 38, 39",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "dub_003",
+      "name": "Dean's Tree",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "600 years",
+      "age_min": 500,
+      "age_max": 700,
+      "location": {
+        "address": "The Old Glebe, Newcastle, Co. Dublin",
+        "latitude": 53.300,
+        "longitude": -6.500,
+        "neighbourhood": "Newcastle-Lyons, West Dublin"
+      },
+      "story": "Local tradition puts this yew at over seven hundred years old. A more cautious estimate, based on girth alone, still lands at over five hundred. Either figure makes it older than the house whose garden it now shares, built in 1710, and very likely the oldest living thing in County Dublin. Jonathan Swift, Dean of St Patrick's Cathedral, is said to have sat beneath it while writing and while courting Esther Vanhomrigh, the Vanessa of his poems, who lived nearby in Celbridge. Nobody can confirm the story, and old trees near famous writers tend to collect this kind of legend whether or not it happened, so take the Swift connection as folklore worth repeating rather than a documented fact. What is certain is the tree itself: a girth of five metres, split with age, still green, standing in a corner of a garden ringed with benches for visitors to sit exactly where Swift supposedly did. The Old Glebe is a private home and only opens to the public on set dates each year, under Ireland's Section 482 scheme for historic houses: all of May, all of June, and nine days in mid-August, 10am to 2pm. Check the dates before making the trip.",
+      "verified_sources": [
+        "https://irishhistorichouses.com/2019/12/31/the-old-glebe-newcastle-lyons-county-dublin/",
+        "https://www.buildingsofireland.ie/buildings-search/building/11212007/the-old-glebe-glebe-ne-by-newcastle-ed-newcastle-dublin"
+      ],
+      "access": "Free, but open to the public only on Section 482 open days: May (all month), June (all month), and mid-August (15th-23rd), 10am-2pm",
+      "transport": "Car recommended; Dublin Bus route 68 serves Newcastle village",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is a wide, disputed range (500-700 years) and the Swift association is unverified legend, stated as such in the story. Access is genuinely limited to Section 482 open days; this is disclosed honestly per hard rule 10 rather than presented as freely open.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "dub_004",
+      "name": "Addison's Walk",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "280 years",
+      "age_min": 230,
+      "age_max": 290,
+      "location": {
+        "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+        "latitude": 53.3717,
+        "longitude": -6.2696,
+        "neighbourhood": "Glasnevin"
+      },
+      "story": "A double row of yews in Ireland's national botanic garden may predate the garden itself by roughly sixty years. Thomas Tickell, a minor poet and friend of the essayist Joseph Addison, lived on this land from 1736 until his death in 1740, and is said to have planted this avenue in Addison's memory. The Dublin Society did not acquire the site to found the gardens until 1795, more than fifty years after Tickell died, a gap none of the surviving accounts explain, so treat the 1730s planting date as informed tradition rather than settled fact. What survives is real regardless of who is right: a dark, formal walk of clipped yew running through a garden otherwise built for scientific display rather than sentiment, doing exactly what a memorial avenue is supposed to do, nearly three centuries on. Whether Joseph Addison ever actually visited Glasnevin is a question the garden's own historians admit they cannot answer, but his name has outlasted the argument regardless. The National Botanic Gardens are free to enter and open every day of the year except Christmas Day.",
+      "verified_sources": [
+        "https://www.historyhit.com/locations/national-botanic-gardens/",
+        "https://en.wikipedia.org/wiki/National_Botanic_Gardens_(Ireland)"
+      ],
+      "access": "Free, open daily except 25 December",
+      "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Sources disagree on the chronology: Tickell is said to have planted the walk before his death in 1740, but the garden itself was not founded until 1795, and no source reconciles the two dates. Presented as tradition rather than fact.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "dub_005",
+      "name": "The Provost's Plane",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "220 years",
+      "age_min": 200,
+      "age_max": 266,
+      "location": {
+        "address": "Provost's Courtyard, No. 1 Grafton Street, Trinity College Dublin, Dublin 2",
+        "latitude": 53.3413,
+        "longitude": -6.2578,
+        "neighbourhood": "Trinity College, Dublin 2"
+      },
+      "story": "Trinity College's own estates team cannot quite agree on how old their most impressive tree is. One internal account points to an image of it from 1760; another puts its planting in the early 1800s, documented on the college's 1892 tree map, and its age at around two hundred years. Either way, it has been rooted at the corner of Grafton and Nassau Street since before Dublin had trams, and that turned out to matter. When the city's first tram line opened along Nassau Street in 1872, and again a century later when the Luas arrived, the plane needed pruning on a schedule built around a transport timetable, including nighttime work between midnight and half past three so services would not be disrupted. It now stands 31 metres tall with a canopy spreading nearly 30 metres, and a girth of 4.64 metres that took two centuries to grow. It shades a corner of the Provost's private garden behind a high wall, and most of the shoppers on Grafton Street a few metres away have no idea it is there.",
+      "verified_sources": [
+        "https://www.tcd.ie/estatesandfacilities/services/facilities-and-services/campus-services/landscape-maintenance/trees-of-trinity/",
+        "https://www.tcd.ie/news_events/articles/trinitys-trees---featuring-the-london-plane/"
+      ],
+      "access": "Free, campus grounds generally open to visitors during daylight hours",
+      "transport": "Luas Green Line to Trinity, or Pearse Street DART station, both a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Trinity's own two published sources disagree on planting date (a 1760 image versus an early-1800s planting recorded on an 1892 tree map), so age is presented as a range rather than a single figure.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "dub_006",
+      "name": "The Champion Planes of New Square",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "190 years",
+      "age_min": 185,
+      "age_max": 195,
+      "location": {
+        "address": "New Square, Trinity College Dublin, Dublin 2",
+        "latitude": 53.3444,
+        "longitude": -6.2544,
+        "neighbourhood": "Trinity College, Dublin 2"
+      },
+      "story": "Two plane trees in New Square have outgrown almost everything else on Trinity's campus, and both went in around 1834, when the college was rebuilding this quadrangle. The larger of the pair has a girth over five metres, the widest trunk of any tree on college grounds by Trinity's own count. Students eating lunch on the grass beneath them are sitting under trees planted when Daniel O'Connell was a sitting MP at Westminster, decades before the Easter Rising and a full century before the Irish Free State existed. Trinity's own tree survey lists this pair among the oldest specimens left on the main campus, most of the older generation having since died or been felled, including a celebrated pair of Oregon maples in Library Square that came down between 2008 and shortly after, one suddenly and one to fungal disease. New Square sits behind the Museum Building, a short walk from the queue for the Book of Kells, and unlike that queue, it costs nothing and never has one.",
+      "verified_sources": [
+        "https://www.tcd.ie/estatesandfacilities/services/facilities-and-services/campus-services/landscape-maintenance/trees-of-trinity/",
+        "https://trinitycollegetrees.wordpress.com/tag/trees-of-trinity-college-dublin-4th-edition/"
+      ],
+      "access": "Free, campus grounds generally open to visitors during daylight hours",
+      "transport": "Luas Green Line to Trinity, or Pearse Street DART station, both a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "dub_007",
+      "name": "The Sculpted Cypress",
+      "species": "Monterey Cypress (Cupressus macrocarpa)",
+      "age_estimate": "200 years",
+      "age_min": 190,
+      "age_max": 210,
+      "label": "Sculpted deadwood",
+      "location": {
+        "address": "St Anne's Park, near the Watermill Road / Clontarf Road corner, Raheny, Dublin 5",
+        "latitude": 53.3775,
+        "longitude": -6.1735,
+        "neighbourhood": "Raheny / Clontarf"
+      },
+      "story": "When this two hundred year old Monterey cypress finally died, St Anne's Park did not remove it. Instead, over three years starting in 2015, UK chainsaw artist Tommy Craggs carved its dead trunk into a vertical menagerie: an octopus wrapped around the base, birds and small mammals climbing toward a swan perched at the very top, all modelled on animals found in the park itself and on the sandbars of nearby Bull Island. The final three metres were finished in June 2018. It stands at the park's northeast corner, near where Watermill Road meets Clontarf Road, a part of the grounds most visitors miss on their way to the rose garden. The tree was already ornamental once, planted as one of the wind-breaking evergreens Lord Ardilaun favoured when he developed the St Anne's estate in the late 19th century. Dead wood usually gets cleared. This piece got a second life as public art instead, oiled and left to weather outdoors like anything else in the park. Entry to St Anne's Park is free, at any hour.",
+      "verified_sources": [
+        "https://www.thejournal.ie/tree-sculpture-raheny-4387926-Dec2018/",
+        "https://en.wikipedia.org/wiki/Saint_Anne%27s_Park"
+      ],
+      "access": "Free, public park, open at all hours",
+      "transport": "DART to Raheny or Harmonstown station, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "dub_008",
+      "name": "The Holm Oak Avenue",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "155 years",
+      "age_min": 145,
+      "age_max": 158,
+      "location": {
+        "address": "St Anne's Park, main avenue near All Saints Road, Raheny, Dublin 5",
+        "latitude": 53.3714,
+        "longitude": -6.1870,
+        "neighbourhood": "Raheny / Clontarf"
+      },
+      "story": "Lord Ardilaun planted a windbreak in the 1870s that is still doing its job a century and a half later. Sixty seven holm oaks, evergreen and Mediterranean, line the main avenue and old estate boundaries of St Anne's Park, chosen because Dublin Bay's cold easterly winds off Bull Island would otherwise strip anything deciduous bare for half the year. Arthur Guinness, first Baron Ardilaun, inherited the estate in 1868 and spent much of his fortune turning it into a private demesne with formal gardens and grand tree-lined approaches, only for Dublin Corporation to buy the whole estate from his family in 1939 and open it to everyone. The oaks never got the memo that they were meant to shelter a private house: they shelter dog walkers, parkrunners and a Saturday market instead. Unlike most street trees, a holm oak keeps its dark, leathery leaves through the Irish winter, so the avenue looks essentially the same in January as it does in July, a rare piece of consistency in a park that changes with every season around it.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Saint_Anne%27s_Park",
+        "https://www.clontarfonline.com/st.annes.htm"
+      ],
+      "access": "Free, public park, open at all hours",
+      "transport": "DART to Raheny or Harmonstown station, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "dub_009",
+      "name": "The Great Sycamore of Farmleigh",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "220 years",
+      "age_min": 210,
+      "age_max": 230,
+      "location": {
+        "address": "Farmleigh, Phoenix Park, Dublin 15",
+        "latitude": 53.365,
+        "longitude": -6.36,
+        "neighbourhood": "Castleknock, Phoenix Park"
+      },
+      "story": "The oldest tree on the Farmleigh estate predates the Guinness family who made the place famous by about a century. This sycamore, standing at the edge of what is still called the donkey field, is estimated at over 220 years old, meaning it was already mature when Edward Cecil Guinness bought Farmleigh in 1873 and began rebuilding the house around it. Everything else here, the cedars, the sequoias, the Thuja avenue Guinness planted along the main approach, arrived later as part of his deliberate planting scheme. The sycamore did not: it was simply already there, a survivor of whatever farmland stood on this ground before Farmleigh existed as a name. Today the house serves as the Irish state's official guesthouse for visiting dignitaries, but the 78 acres of grounds around it are free to the public every day, a rare arrangement for a working state property. Farmleigh's own visitor material points to this tree specifically as the oldest thing growing on the estate. No independent survey has verified that figure beyond the estate's own long-standing estimate, so it is presented here as tradition rather than a laboratory result.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Farmleigh",
+        "https://heritageireland.ie/places-to-visit/farmleigh-house-and-gardens/"
+      ],
+      "access": "Free, grounds open daily 10am-6pm, last entry 5pm",
+      "transport": "Dublin Bus route 37 to Castleknock Gate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The '220 years' age and 'donkey field' location both trace back to a single repeated estate description rather than two independently verifiable sources; included per the single-source rule with the gap stated in the story itself.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "dub_010",
+      "name": "The Oak Avenue of Corkagh",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "210 years",
+      "age_min": 200,
+      "age_max": 220,
+      "location": {
+        "address": "Corkagh Park, Naas Road entrance, Clondalkin, Dublin 22",
+        "latitude": 53.30972,
+        "longitude": -6.41472,
+        "neighbourhood": "Clondalkin"
+      },
+      "story": "An avenue of oaks in Corkagh Park once led somewhere: to a country house that no longer exists. Oak Avenue was the main approach to Corkagh House, seat of the Finlay and Colley families from the 18th century until the last of the estate's two big houses burned down in the late 1970s. Some of the oaks that lined that approach are still standing, over two hundred years old, planted long before the fire and long before Dublin City Council opened the wider 300 acre demesne to the public in 1986. New oaks have been planted alongside the survivors since, close enough in age that telling the two generations apart takes a trained eye rather than a glance. Archaeologists working on the park's masterplan turned up the foundations of a medieval castle and a moated site here in 2023, a reminder that people have been building and rebuilding on this ground since at least 1326, when Corkagh first appears in the records as part of the Archbishop of Dublin's manor. The oaks are the one part of that long history still doing the job they always did: marking a way in.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Corkagh_Park",
+        "https://localstudies.wordpress.com/2013/01/15/corkagh-house-and-demesne/"
+      ],
+      "access": "Free, public park, open at all hours",
+      "transport": "Dublin Bus routes 13, 68, 69 or 151, or a longer walk from the Red Cow Luas stop",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    }
+  ]
+}
