@@ -416,12 +416,19 @@ def site_graph():
     ]
 
 
-def breadcrumb_schema(items):
+def breadcrumb_schema(items, page_url=None):
+    # Google requires every ListItem to carry an "item". Crumbs without a page of
+    # their own (a country, and the current page itself) fall back to the page's
+    # own canonical URL, which is what Google's own docs prescribe for the last
+    # crumb. Passing page_url is what makes those crumbs valid; without it they
+    # are dropped, which is the "Missing field item" error Search Console flagged.
     elements = []
     for i, (name, url) in enumerate(items, 1):
-        el = {"@type": "ListItem", "position": i, "name": name}
-        if url:
-            el["item"] = url
+        item = url or page_url
+        if not item:
+            # Catch it at build time rather than weeks later in Search Console.
+            ERRORS.append(f"breadcrumb crumb {name!r} has no item URL and no page_url fallback")
+        el = {"@type": "ListItem", "position": i, "name": name, "item": item}
         elements.append(el)
     return {"@type": "BreadcrumbList", "itemListElement": elements}
 
@@ -1192,7 +1199,7 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pag
                 "longitude": loc["longitude"],
             },
         },
-        breadcrumb_schema(crumb_items),
+        breadcrumb_schema(crumb_items, canonical),
     ]
     head_extra = map_head() + og_image + "\n" + ld_script(graph)
     scripts = single_pin_script(loc["latitude"], loc["longitude"])
@@ -1268,7 +1275,7 @@ def build_question_page(city_entry, collections, pages):
 
     graph = site_graph() + [
         {"@type": "FAQPage", "mainEntity": faq_entities},
-        breadcrumb_schema(crumb_items),
+        breadcrumb_schema(crumb_items, canonical),
     ]
     head_extra = map_head() + "\n" + ld_script(graph)
     scripts = single_pin_script(loc["latitude"], loc["longitude"])
@@ -1406,7 +1413,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
                 "acceptedAnswer": {"@type": "Answer", "text": f["a"]},
             } for f in faq],
         },
-        breadcrumb_schema(crumb_items),
+        breadcrumb_schema(crumb_items, canonical),
     ]
     head_extra = map_head() + "\n" + ld_script(graph)
 
@@ -1533,7 +1540,7 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages):
 
     graph = site_graph() + [
         {"@type": "ItemList", "name": coll["title"], "itemListElement": list_elements},
-        breadcrumb_schema(crumb_items),
+        breadcrumb_schema(crumb_items, canonical),
     ]
     head_extra = ld_script(graph)
 
@@ -1637,7 +1644,7 @@ def build_species_page(intro_data, members, tree_slugs, published, pages):
 """
     graph = site_graph() + [
         {"@type": "ItemList", "name": f"{common} trees", "itemListElement": list_elements},
-        breadcrumb_schema(crumb_items),
+        breadcrumb_schema(crumb_items, canonical),
     ]
     head_extra = ld_script(graph)
     check_links(canonical, n + len(published) + 1, n + min(2, len(published)) + 1)
@@ -1681,7 +1688,7 @@ def build_species_index(species_cards, published, pages):
              {"@type": "ListItem", "position": i, "name": c["common"],
               "url": f"{BASE_URL}/species/{c['slug']}"}
              for i, c in enumerate(species_cards, 1)]},
-        breadcrumb_schema(crumb_items),
+        breadcrumb_schema(crumb_items, canonical),
     ]
     head_extra = ld_script(graph)
     page = render_page(title, description, canonical, body, head_extra, "", rootpath)
@@ -1730,7 +1737,7 @@ def build_collections_index(collections, published, pages):
                 for i, c in enumerate(collections, 1)
             ],
         },
-        breadcrumb_schema(crumb_items),
+        breadcrumb_schema(crumb_items, canonical),
     ]
     head_extra = ld_script(graph)
     page = render_page(title, description, canonical, body, head_extra, "", rootpath)
@@ -1790,7 +1797,7 @@ def build_contribute_page(published, pages):
   <p class="suggest">Cities on the map so far: {city_links}</p>
 </main>
 """
-    graph = site_graph() + [breadcrumb_schema(crumb_items)]
+    graph = site_graph() + [breadcrumb_schema(crumb_items, canonical)]
     head_extra = ld_script(graph)
     page = render_page(title, description, canonical, body, head_extra, "", rootpath)
     pages.append(("contribute.html", page, canonical))
