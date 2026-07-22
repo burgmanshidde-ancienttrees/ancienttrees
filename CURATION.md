@@ -2,6 +2,22 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Istanbul photo pass (rung 4: below the new 80% floor, next tier)
+
+- Next in the tier flagged by the Tokyo entry (Istanbul, Kyoto, New York), oldest-published of the two remaining now that Kyoto is done. Istanbul was at 2/10, both already-found but unverified (`found_needs_check`).
+- Verified and approved the 2 existing candidates: **the Hüseyin Avni Dede Plane** (CC BY-SA 4.0, embedded photo coordinates land about 60m from this entry's pin, and the file title independently names the same historical bookseller) and **the Cypresses of Karacaahmet** (CC BY-SA 4.0, description explicitly places it in Karacaahmet cemetery among cypresses, matching this ensemble entry).
+- Searched the 8 missing trees hard across Wikimedia, iNaturalist, Flickr, Openverse and Turkish sources (anitagac.istanbul, the İBB's own monument-tree registry, and Turkish-language search terms). Found zero photos clearing the license bar. The pattern worth recording: anitagac.istanbul has real photos of at least 4 of these exact trees (Taşlı Çınar, Ata Fıstık Çamı, Ehrami Servi of Büyükada, likely others) but the site states no license or terms of use anywhere, so none of it qualifies under the "verified open licence" rule. One near-miss on the Beykoz Çayırı planes: 7 CC BY-SA Commons photos exist of the İshak Ağa Fountain standing in the same meadow, but neither this run nor the researching agent could get a working image fetch to confirm the plane trees are actually in frame rather than just the fountain, so left as `missing` rather than guessed.
+- Istanbul stays at 2/10, both now genuinely verified rather than just found. 8 remain missing after real effort. If Hidde ever wants to close this gap, contacting İBB for explicit reuse permission on anitagac.istanbul's existing photos is the fastest path, faster than more open-web searching.
+- Site rebuilt, all contracts validated, pushed.
+
+## 2026-07-22 — Amsterdam photo pass, continued (rung 4: below the new 80% floor)
+
+- Picked up Amsterdam again after an earlier pass today moved it from 2/10 to 3/10. Verified the 3 existing `found_needs_check` candidates against their Commons file pages (Leidsebosje planes, Wertheimpark wingnut, Amstelveld wingnuts) and approved all three; details and dates checked out, including the Wertheimpark file's description independently naming the same species and park.
+- Found 1 new photo: **the Rijksmuseum Wingnut**, an iNaturalist observation (CC BY, Noland Martin) whose coordinates land within 4 metres of this entry's pin, the only wingnut recorded at that location. Flagged in the tree's own notes that the species ID is the observer's own call rather than community-verified, for a future curator to weigh.
+- Searched the remaining 6 missing trees hard (Heimanseik, Vondelpark Poplar, Hortus Cycad, Olifantsiep, Lomanstraat, Amstelkade Olive Willow) across Wikimedia, iNaturalist, Flickr, Openverse and Dutch sources. One candidate for the Hortus Cycad was found and rejected: an iNaturalist CC-BY photo of the right species, but its location is deliberately obscured (iNaturalist's geoprivacy for CITES-listed cycads), so it cannot be verified as this specific specimen rather than any other in the province.
+- Amsterdam moves from 3/10 to 4/10. 6 remain missing after genuine effort across two passes today; recording this rather than looping further, per the rule's own escape valve.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — Kyoto photo pass (rung 4: below the new 80% floor, next tier)
 
 - With the lead group and marquee-European cities all having had a genuine pass, moved to the next tier flagged in the prior Tokyo entry: Istanbul (already at 2/10 from an earlier pass), Kyoto (1/10) and New York (2/10). Kyoto was oldest-published of the three still untouched this run, so went first.

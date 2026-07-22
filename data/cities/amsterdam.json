@@ -80,7 +80,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/2025_Leidsebosje%2C_Asd%2C_dikke_plataan_noord_%28A%29.jpg",
         "license": "CC0 1.0",
         "attribution": "Ceescamel, Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
@@ -139,7 +139,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/2022_Wertheimpark%2C_Asd-Gewone_vleugelnoot_%281%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Ceescamel, Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
@@ -296,10 +296,10 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bomen_en_oude_lantaarns_op_het_Amstelveld%2C_Bestanddeelnr_926-8912.jpg",
         "license": "CC0 1.0",
         "attribution": "Hans Peters / Anefo, via Nationaal Archief and Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Exact planting date and precise age were not found; 'monumental' designation implies 100+ years, so a wide range is used pending confirmation. Coordinates are square-level, not tree-specific. Photo is a 1973 historical Nationaal Archief image of trees and lanterns on the Amstelveld rather than a current photo; the square has had a continuous wingnut planting throughout, but this specific image predates today's trees by decades, so it is flagged for a current-day replacement in a future photo pass.",
+      "notes": "Exact planting date and precise age were not found; 'monumental' designation implies 100+ years, so a wide range is used pending confirmation. Coordinates are square-level, not tree-specific. Photo is a 1973 historical Nationaal Archief image of trees and lanterns on the Amstelveld; verified as genuinely showing this square, and the wingnuts' 100+ year age range makes it plausible these are the same trees, but it is not a current photo and could be swapped for one in a future pass if a modern CC image turns up.",
       "location_precision": "approximate",
       "best_time": {
         "months": [
@@ -331,13 +331,13 @@
       "access": "Free, Rijksmuseum garden, no museum ticket required",
       "transport": "Tram 2, 5 or 12, Rijksmuseum/Museumplein stop, right outside",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/207920802/large.jpeg",
+        "license": "CC BY",
+        "attribution": "Noland Martin, iNaturalist",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "An earlier planting date of 1885 appears in one source; the 1907 date is favored here as it matches the documented 1884-1916 timeline of Cuypers' garden construction, but the discrepancy is not fully resolved. Coordinates are an estimate for the garden's southeast corner.",
+      "notes": "An earlier planting date of 1885 appears in one source; the 1907 date is favored here as it matches the documented 1884-1916 timeline of Cuypers' garden construction, but the discrepancy is not fully resolved. Coordinates are an estimate for the garden's southeast corner. Photo is iNaturalist observation 122778135 (2022-06-21), 4m positional accuracy at coordinates matching this tree almost exactly and the only wingnut recorded at this location; the species ID is the observer's own call (casual grade, no independent confirmations) rather than community-verified, noted here for a future curator.",
       "location_precision": "approximate",
       "best_time": {
         "months": [
