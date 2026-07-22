@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 08:25 — Barcelona: photo floor pass, 1/10 to 2/10
+
+- Next oldest marquee-European city below floor after Rome, and the thinnest coverage in the queue at 1/10. Found 1: an aerial public-domain view of La Rambla's plane tree canopy, a good fit since that entry is already pinned as a 256-tree ensemble rather than a single specimen.
+- Two near-misses rejected: a Carrer de la Encarnació street photo at the wrong building number with no tree visible, and Plaça de Prim's Commons files, none confirmed to show the ombú itself.
+- Barcelona now at 2/10, smallest gain of the run so far. 8 stay missing after genuine attempts.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 07:55 — Rome: photo floor pass, 4/10 to 6/10
 
 - Next oldest marquee-European city below floor after Paris. Found 2: the Quercia del Tasso (CC BY 2.0, also independently confirms the tree is a propped remnant, matching the existing honest framing) and the Cedar of the Garibaldi Mausoleum (CC BY-SA 4.0, GPS within 30m of the existing pin).
