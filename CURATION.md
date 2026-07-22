@@ -2,6 +2,24 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Antwerp (full research run, nightly workflow)
+
+- No reader submissions pending, site healthy, nothing published wrong. Continued down the coverage ladder after Brussels.
+- 10 trees researched from scratch and written to `data/cities/antwerp.json`. Tier 4, fifteenth city to go live. Unlike Brussels, Antwerp has no single dedicated tree register, only Flanders' general heritage inventory (onroerenderfgoed.be), so ages here are honestly thinner: mostly champion girths and protection dates rather than planting records. Used that difference itself as the intro's thread rather than papering over it.
+- 7 flagged, all for age-precision reasons:
+  - **The Copper Beech of Sint-Willibrorduskerk**: protected as a monument since 1949 on the strength of probably being a liberty tree from either 1789 or 1830; neither date confirmed, so both are given as a range. This is the closest thing Antwerp has to a confidently "oldest" tree, and it is used as this city's question-page answer on that basis.
+  - **The Summer Linden of Rivierenhof** and **the Cut-Leaved Horse Chestnut of Middelheim**: solid individual protection/circumference records, no planting dates.
+  - **The Black Locust** and **Black Mulberry of Hertoghepark**: both hold Belgium's national champion girth for their species (410cm and 128cm respectively), but champion status is about size, not confirmed age; ranges reflect typical species longevity, not measurement.
+  - **The Canadian Poplar of Eric Sasselaan**: single source, no planting date, included on height and visual grounds (35m, among the tallest in the city) rather than age.
+  - Two entries, **Den Brandt's park trees** and **Zoo Antwerpen's historic grounds**, are presented deliberately as ensembles since no individual tree in either location has a published age or circumference in the sources checked; both parks' own documented estate/institutional history (1396 for Den Brandt, 1843 for the zoo) is used as context only, not as a tree's age.
+- 1 tree, **the Peace Tree of the Grote Markt**, is the youngest and best-documented entry on the list by far: planted 3 September 1994 to mark the 50th anniversary of Antwerp's liberation, exact date and purpose on a plaque at its base. Included and labelled "Youngest tree" for the same honesty reason as other cities' young-but-significant entries (Edinburgh's Corstorphine sycamore, Tokyo's Meoto Kusu), not for antiquity.
+- One correction made mid-research: an early search surfaced a "Canadian poplar, 540cm" result that turned out to be in Geraardsbergen, roughly 40km away, not Antwerp; a second, genuinely Antwerp-located poplar (also 540cm, coincidentally, at Eric Sasselaan) replaced it after the location was double-checked, the same discipline as catching a bad photo match.
+- One candidate dropped after research: the fig tree in the Rubenshuis museum garden, initially promising given the direct 1638 documentary link to Rubens's own letters about his garden. Investigation showed the current garden is an explicit modern reconstruction (2023 renovation, potted specimens in reproduction 17th century containers), not a surviving planting, so including it would have implied a false continuity with Rubens's own tree. Left out entirely rather than flagged, per "never fabricate."
+- 0 of 10 photos found this run: searched Wikimedia Commons and Flickr for each named tree/location; Antwerp's remarkable trees are documented in text (Flanders' heritage inventory has good written records) but essentially unphotographed under open licenses in the sources checked. Recorded honestly as missing. Worth a dedicated pass later, since the heritage inventory's own site may have its own photography worth a licensing check.
+- All 10 pins are approximate, estimated from street/park addresses rather than a surveyed source.
+- No superlative claims beyond what Belgium's own dendrological inventory already states (national champion girths for the locust and mulberry); these are taken from an official register, not softened, since they are the register's own conclusion rather than an unverified boast.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — Brussels (full research run, nightly workflow)
 
 - No reader submissions pending, site healthy, nothing published wrong. Continued down the coverage ladder to the next pending city after Edinburgh.
