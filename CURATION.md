@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — New York photo pass (rung 4: below the new 80% floor, tier complete)
+
+- Last of the tier flagged by the Tokyo entry (Istanbul, Kyoto, New York). New York was at 2/10, both already-found but unverified.
+- Verified and approved the 2 existing candidates: **the Camperdown Elm** (multi-licensed including CC BY-SA, Commons file explicitly captioned as this tree in Prospect Park) and **the Queens Giant** (CC BY-SA 4.0, Commons file explicitly captioned as the tallest tree/oldest living organism in the NYC area, matching this entry).
+- Found 1 new photo: **the Hangman's Elm** (CC BY-SA 4.0, Wikimedia Commons, explicitly captioned "Hangman's Elm, Washington Square Park"), a well-photographed landmark tree so this was the easiest find of the pass.
+- Searched the remaining 7 hard across Wikimedia, iNaturalist, Flickr, Openverse and NYC Parks. Two near-misses checked and rejected on location grounds, not just license: a Green-Wood Cemetery sassafras pair on iNaturalist (CC BY-SA) sits roughly 1.1km from this entry's pin, too far to call it the same tree in a 478-acre cemetery; a New York Botanical Garden red oak (CC-BY) sits about 400m from the entry's pin, which is itself only an estimate for the garden entrance rather than the tree's actual trail location, so neither is confirmed as the specific designated tree. One clean photo exists for the Clove Lakes Colossus (Flickr, "The Clove Lakes Colossus" by Matt Green) but is CC BY-NC-SA, rejected on the non-commercial clause; worth a note in case Hidde ever wants to ask the photographer directly. Nothing at all found for the Black Tupelo of the Ramble, the Manchurian Linden of Kissena Park, the Yew of Hero Park, or the Red Horse Chestnut of Van Cortlandt House.
+- New York moves from 2/10 to 3/10. This closes out this run's work on the tier (Istanbul, Kyoto, New York) that followed the lead-group and marquee-European sweep; none of the three reached the 8/10 floor outright, all moved forward honestly, and none were looped on past a genuine search.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — Istanbul photo pass (rung 4: below the new 80% floor, next tier)
 
 - Next in the tier flagged by the Tokyo entry (Istanbul, Kyoto, New York), oldest-published of the two remaining now that Kyoto is done. Istanbul was at 2/10, both already-found but unverified (`found_needs_check`).

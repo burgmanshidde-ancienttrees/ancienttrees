@@ -48,10 +48,10 @@
       "access": "Free, public park",
       "transport": "West 4th Street (Metro A/B/C/D/E/F/M), 3 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hangman%27s_Elm%2C_Washington_Square_Park%2C_NYC_%28October_2023%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Marty Aligata (Msact), Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Age given as a range (300-346 years) because sources genuinely disagree, from NYC Parks' cautious 'more than 300 years' to a commonly cited 346. Coordinates are an estimate for the park's northwest corner; no independently surveyed lat/long was found.",
@@ -112,7 +112,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Camperdown_Elm_Prospect_Park_Brooklyn.jpg/1024px-Camperdown_Elm_Prospect_Park_Brooklyn.jpg",
         "license": "CC BY-SA 2.0",
         "attribution": "Garry R. Osgood, Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates are an estimate near the Boathouse and Lullwater, where sources place the tree; no independently surveyed point was found.",
@@ -173,7 +173,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Queens_Giant_%28Tree%29_04072024.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Bruce Schaff, Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates taken directly from the confirmed photo's embedded GPS metadata (40°45'10.8\"N, 73°44'49.2\"W), a rare case of a precisely surveyed point for the tree itself rather than an estimate.",
