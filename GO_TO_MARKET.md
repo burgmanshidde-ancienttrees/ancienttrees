@@ -8,7 +8,7 @@ There are zero confirmed visitors. The sitemap went to Google today, so search i
 
 The most likely outcome for the next weeks is that almost nobody comes. This plan is built to make that finding cheap and fast rather than to prevent it, because a wrong bet detected in a month beats a right bet assumed for a year.
 
-## Phase 0 — Now. Make it findable and make it count, without the owner posting
+## Phase 0: now. Make it findable and make it count, without the owner posting
 
 Trigger: none. This is the standing work while there is no traffic.
 
@@ -21,7 +21,7 @@ The goal is not visitors yet. It is to remove every reason the product would fai
 
 Owner's part in Phase 0: nothing that requires posting. Optionally verify Amsterdam on foot, which is worth more than any tactic.
 
-## Phase 1 — First pulse. A few hundred real visitors
+## Phase 1: first pulse. A few hundred real visitors
 
 Trigger: measurable arrivals in Cloudflare, or the first search impressions in Search Console. Roughly the first 100 to a few hundred people.
 
@@ -32,7 +32,7 @@ Now there is something to learn from. The questions, in order of importance:
 
 Work in this phase follows the data, not a plan: deepen the cities people actually land on, chase the queries that rank, fix what the first users trip over. The point of the phase is to answer "is there demand" with evidence, not to grow.
 
-## Phase 2 — Signal confirmed. People return and contribute
+## Phase 2: signal confirmed. People return and contribute
 
 Trigger: repeat visitors, submissions arriving on their own, someone visibly ticking trees off across sessions.
 
@@ -40,7 +40,7 @@ Only now does building for retention and money stop being a bet.
 - **Revenue path, chosen for the constraints.** Not a subscription the owner must set up and administer. The competitive analysis surfaced the better fit: tourism-board and destination-marketing sponsorship, the model that made Atlas Obscura profitable. A city or region paying to have its trees featured breaks no hard rule, needs no accounts and no card data. Donations (Ko-fi, already wired) sit alongside it. The route/offline paywall that AllTrails validated at 2.1M paying users stays on the roadmap but waits for accounts, which wait for evidence.
 - **Accounts, only if the passport is being used.** The recorded destination in CLAUDE.md. Built when there are collections worth not losing, not before.
 
-## Phase 3 — It works. Now grow deliberately
+## Phase 3: it works. Now grow deliberately
 
 Trigger: a revenue path is producing something, and retention is real.
 
