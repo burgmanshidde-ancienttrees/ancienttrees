@@ -293,13 +293,13 @@
       "access": "Free, public square",
       "transport": "Tram 4, Prinsengracht or Frederiksplein, few min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bomen_en_oude_lantaarns_op_het_Amstelveld%2C_Bestanddeelnr_926-8912.jpg",
+        "license": "CC0 1.0",
+        "attribution": "Hans Peters / Anefo, via Nationaal Archief and Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Exact planting date and precise age were not found; 'monumental' designation implies 100+ years, so a wide range is used pending confirmation. Coordinates are square-level, not tree-specific.",
+      "notes": "Exact planting date and precise age were not found; 'monumental' designation implies 100+ years, so a wide range is used pending confirmation. Coordinates are square-level, not tree-specific. Photo is a 1973 historical Nationaal Archief image of trees and lanterns on the Amstelveld rather than a current photo; the square has had a continuous wingnut planting throughout, but this specific image predates today's trees by decades, so it is flagged for a current-day replacement in a future photo pass.",
       "location_precision": "approximate",
       "best_time": {
         "months": [
