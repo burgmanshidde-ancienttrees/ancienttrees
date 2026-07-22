@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 15:35 — Antwerp: 15th city live, 10 trees researched
+
+- Straight coverage after Brussels: no submissions, site healthy, nothing published wrong. Antwerp is a thinner data city than Brussels: no dedicated tree register, just Flanders' general heritage inventory, so most ages here are honest ranges (champion girths, protection dates) rather than planting records. Said so directly in the intro rather than dressing it up.
+- Dropped one promising-looking candidate after checking it properly: the fig tree in the Rubenshuis garden has a genuine 1638 letter linking Rubens to fig trees in his own garden, but the tree standing there today is part of an explicit 2023 museum reconstruction, potted rather than planted, not a survivor. Including it would have implied a continuity that isn't real, so it's out.
+- Also caught and fixed a location mixup mid-search: an early "540cm Canadian poplar" result was actually in Geraardsbergen, 40km away, not Antwerp. Found a genuinely Antwerp-located poplar of similar size at Eric Sasselaan instead.
+- One young tree included on purpose: a Grote Markt linden planted in 1994 for the 50th anniversary of Antwerp's liberation, labelled "Youngest tree" so nobody mistakes precise 1994 dating for an old specimen.
+- 0 of 10 photos found despite real searches; recorded honestly. Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 13:50 — Brussels: 14th city live, 10 trees researched
 
 - Straight coverage after Edinburgh: no submissions, site healthy, nothing published wrong. Brussels turned out unusually well documented: the region has run its own official scientific inventory of remarkable trees since 2002, so most ages and girths here come from that register rather than estimation.

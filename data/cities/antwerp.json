@@ -1,0 +1,334 @@
+{
+  "city": "Antwerp",
+  "country": "Belgium",
+  "status": "needs_curation",
+  "intro": "Antwerp's remarkable trees rarely claim extreme age the way a churchyard yew or a castle oak might elsewhere. What the city has instead is precision about smaller things: national champion girths for unglamorous species, a liberty tree nobody can date to a single revolution, a zoo whose landscaping survived two world wars fought in the same city block, and a park quietly losing the very trees that once defined it. Merchant families built garden districts outside the old city walls from the 1500s onward, and several of today's ten still grow inside what were once their private pleasure grounds.",
+  "meta_description": "Antwerp's remarkable trees range from national champion girths to a liberty tree nobody can date. Ten verified locations, real stories, how to reach each.",
+  "question_answer": "Antwerp's oldest likely tree is a copper beech standing before the Sint-Willibrorduskerk in Berchem, protected as a monument since 1949 because it was probably planted as a liberty tree marking either the 1789 Brabant Revolution or Belgian independence in 1830. Either date makes it at least two centuries old, with a trunk just under five metres around. Nobody has ever settled which revolution it actually marks.",
+  "question_meta": "A copper beech in Berchem, planted to mark either 1789 or 1830, is likely Antwerp's oldest tree. Where it stands, and the full ten.",
+  "question_context": "Two possible birthdates bracket this tree, and heritage assessors who protected it as a monument in 1949 never picked between them: 1789, the year the short lived Brabant Revolution threw off Austrian rule, or 1830, the year Belgium became a country in its own right. Both were the kind of moment 18th and 19th century Europeans marked by planting a tree rather than raising a monument, a vrijheidsboom, and this copper beech's size, a trunk just under five metres around and a canopy 32 metres wide, fits either timeline. It most likely spent its early decades inside the walled garden of the neighbouring rectory before that wall came down and left it standing in the open square people see today. Compared with cities that can point to a planting record or a girth-based estimate accurate to a few decades, Antwerp's oldest tree carries a two century wide margin of error and no way to close it further without written evidence that has never surfaced. The nearest rival for oldest, the protected summer linden at Rivierenhof, has a documented park history stretching back further but no individual dating of its own. The beech stands in a public square in Berchem, free to see, no ticket required.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Antwerp?",
+      "a": "Most likely a copper beech before the Sint-Willibrorduskerk in Berchem, planted as a liberty tree marking either 1789 or Belgian independence in 1830. Either date makes it at least two centuries old."
+    },
+    {
+      "q": "Are Antwerp's remarkable trees free to visit?",
+      "a": "Nine of the ten are free, standing in public parks, a churchyard square and a city street. The exception is the historic tree cover at Zoo Antwerpen, which requires a paid zoo ticket."
+    },
+    {
+      "q": "Why does this list include a tree planted in 1994?",
+      "a": "The linden on the Grote Markt was planted to mark the 50th anniversary of Antwerp's liberation from German occupation. It is included for what it commemorates, a single dated act of remembrance in the city's most visited square, not for its age."
+    },
+    {
+      "q": "Why are so few of Antwerp's remarkable trees given a precise age?",
+      "a": "Compared with cities that run a dedicated historic tree register, Antwerp's protections come from a general heritage inventory that records circumference, species rarity and champion status more often than planting dates, so most ages here are honest estimates rather than documented figures."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ant_001",
+      "name": "The Copper Beech of Sint-Willibrorduskerk",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "196-237 years",
+      "age_min": 196,
+      "age_max": 237,
+      "best_time": { "months": [4, 5], "label": "April and May, when its new leaves are brightest copper-red" },
+      "location": {
+        "address": "Sint-Willibrorduskerk, Heilig Hartstraat, Berchem, Antwerp",
+        "latitude": 51.197,
+        "longitude": 4.427,
+        "neighbourhood": "Berchem"
+      },
+      "story": "Nobody can say for certain which revolution this tree commemorates, only that it commemorates one. Standing 21 metres tall with a trunk 4.95 metres around, this copper beech dominates the small square between a rectory and the Sint-Willibrorduskerk in Berchem, and its size and position both point to it having been planted as a vrijheidsboom, a liberty tree, the European tradition of marking a political upheaval by putting a tree in the ground rather than raising a statue. The candidates are 1789, the year the Brabant Revolution briefly threw off Austrian rule, or 1830, the year Belgium itself declared independence, and heritage assessors who protected the tree as a monument in 1949 could not settle on which. It most likely began life inside the rectory's enclosed garden, sheltered there long enough to build the girth and canopy spread, some 32 metres across, that it shows today, before the garden wall came down and left it standing in the open square people see now. Whichever revolution it marks, it has now outlived both the political order it may have celebrated and the one that replaced it.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/aanduidingsobjecten/4884",
+        "https://www.monumentaltrees.com/nl/bel/antwerpen/antwerpen/9571_sintwillibrorduskerk/"
+      ],
+      "access": "Free, public square",
+      "transport": "Tram to Berchem, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is a documented range, not a single figure: protected since 1949 on the strength of it likely being a liberty tree from either 1789 or 1830, per Flanders' own heritage inventory. Neither date is confirmed. monumentaltrees.com used for cross-check only, per hard rule 1, not copied.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ant_002",
+      "name": "The Summer Linden of Rivierenhof",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "unknown, protected since 2010",
+      "age_min": 100,
+      "age_max": 250,
+      "best_time": { "months": [6, 7], "label": "late June and July, when its flowers scent the whole meadow" },
+      "location": {
+        "address": "Rivierenhof, near Sterckshof, Hooftvunderlei / Sterckshoflei, Deurne, Antwerp",
+        "latitude": 51.2131,
+        "longitude": 4.4694,
+        "neighbourhood": "Deurne"
+      },
+      "story": "A single linden tree earned government protection in 2010 not for its species, which is common, but for exactly where it stands: in front of Sterckshof castle, at the heart of a park whose ownership reads like a highlight reel of Antwerp history. Hof Ter Rivieren began as a modest farm in the 15th century, became the country retreat of a wealthy Antwerp merchant in the 16th, and was bought by the Jesuits in 1618 as a rural escape from the city. The linden, a summer lime rather than the more common small-leaved variety, now anchors a 30 metre protected zone around its own base, a rare individual tree designation from Flanders' heritage agency rather than a blanket park listing. Its size alone does the talking: a broad, high crown visible across the meadow it stands in, opposite the entrance to the Sterckshof manor house, forming what heritage assessors call a visual unity with the protected building beside it. The Rivierenhof became a public park a century ago, one of the largest green spaces in the Antwerp region today, and this tree predates that public opening by centuries, a private estate's ornament turned into a landmark anyone can walk up to for free.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/aanduidingsobjecten/5497",
+        "https://www.provincieantwerpen.be/nl/locaties/rivierenhof/geschiedenis"
+      ],
+      "access": "Free, public park",
+      "transport": "Tram or bus to Rivierenhof, Deurne",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No specific age, circumference or planting date found for this individual tree despite its 2010 monument protection; the estate's own documented history (15th-17th century) is used only as context, not as evidence of this specific tree's age.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ant_003",
+      "name": "The Black Locust of Hertoghepark",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "unknown, national champion",
+      "age_min": 80,
+      "age_max": 150,
+      "best_time": { "months": [5, 6], "label": "late May, when its white flower clusters hang from every branch" },
+      "location": {
+        "address": "Hertoghepark, Desguinlei / Karel Oomsstraat / Markgravelei, Antwerp",
+        "latitude": 51.2039,
+        "longitude": 4.409,
+        "neighbourhood": "Zuid"
+      },
+      "story": "The thickest black locust tree recorded anywhere in Belgium grows in a small city park hemmed in by three Antwerp streets. At 4.10 metres around, measured in 2009, this robinia holds the species' national girth record in the country's own dendrological inventory, an unglamorous but real distinction for a tree species better known for lining railway embankments than for record breaking size. Hertoghepark is a fragment of the Leikwartier, a garden district laid out from 1547 by the property speculator Gilbert Van Schoonbeke on land he bought from the Van de Werve family, meant as leafy weekend retreats for Antwerp's wealthy merchant class outside the city walls. The Hertoghe and Belpaire family gardens and the old Mertens farm were later folded together into the single park that survives today, protected since 1974 as a historic cultural landscape. Black locust is not a long lived species by tree standards, rarely making it past a century and a half in good health, so this specimen's champion status says less about extreme age and more about how much room and light it found in a private garden turned public park, growing largely undisturbed while the city grew dense around it.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/302881",
+        "https://www.leikwartier.be/wie-zijn-wij"
+      ],
+      "access": "Free, public park",
+      "transport": "Tram to Desguinlei or Markgravelei, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "National champion girth (410cm, 2009) confirmed by Belgium's own dendrological inventory as referenced in the heritage listing; no specific planting date found, so age range reflects typical robinia longevity rather than a documented figure.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ant_004",
+      "name": "The Black Mulberry of Hertoghepark",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "unknown, national champion",
+      "age_min": 80,
+      "age_max": 200,
+      "best_time": { "months": [8], "label": "August, when the fruit drops and stains the ground" },
+      "location": {
+        "address": "Hertoghepark, Desguinlei / Karel Oomsstraat / Markgravelei, Antwerp",
+        "latitude": 51.2039,
+        "longitude": 4.409,
+        "neighbourhood": "Zuid"
+      },
+      "story": "Sharing Hertoghepark with Belgium's thickest black locust is a much smaller record holder: a black mulberry measured at 1.28 metres around in 1989, listed as the national champion of its species regardless of that modest girth. Mulberries simply do not grow thick trunks the way oaks or planes do, so a champion mulberry looks unremarkable standing next to almost anything else in the same park, its record coming from being the best example available rather than from raw size. The species has a long history in gardens like this one: black mulberry was planted across Europe for centuries wherever someone hoped, usually in vain in this climate, to raise silkworms, and even where the silk trade never took off the trees stayed for their fruit, staining hands and pavement a deep purple black every late summer. This one has stood through the same garden district history as its more imposing neighbour, part of the Leikwartier laid out from 1547 and consolidated into today's protected city park in 1974. Its precise planting date is not recorded, only that it has held its national champion title since at least the 1989 measurement that put it on record.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/302881"
+      ],
+      "access": "Free, public park",
+      "transport": "Tram to Desguinlei or Markgravelei, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Single source for the champion measurement. Modest girth (128cm) is normal for the species, not a data error; flagged clearly in the story so it doesn't read as a lesser version of the robinia entry.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ant_005",
+      "name": "The Cut-Leaved Horse Chestnut of Middelheim",
+      "species": "Cut-Leaved Horse Chestnut (Aesculus hippocastanum 'Laciniata')",
+      "age_estimate": "unknown, mature",
+      "age_min": 80,
+      "age_max": 140,
+      "location": {
+        "address": "Park Middelheim, Middelheimlaan, Antwerp",
+        "latitude": 51.1875,
+        "longitude": 4.413,
+        "neighbourhood": "Middelheim"
+      },
+      "story": "Most of Middelheim's fame comes from the sculptures scattered across its lawns, but one of its most unusual residents is a tree: a cut leaved white horse chestnut, a genetic curiosity in which every leaflet emerges narrow and deeply serrated instead of the broad fan shape that makes ordinary horse chestnuts so recognisable. Measured at 1.35 metres around in 2016, it is a rare enough variant that Middelheim's own dendrological collection, built up alongside the open air sculpture museum that gives the park its international reputation, treats it as one of the grounds' notable specimens in its own right. The wider Middelheim estate combines with neighbouring Den Brandt and Vogelenzang to form the Nachtegalenpark, merged into one public green space in 1911 after the city bought up what had been a string of private pleasure estates dating back to the 13th and 14th centuries. Sculptures by artists from Rodin to contemporary names now stand under a tree canopy considerably older than the museum around them, and this misshapen horse chestnut, planted for its oddity rather than its beauty, has outlasted several generations of visitors who came only for the art.",
+      "verified_sources": [
+        "https://www.monumentaltrees.com/nl/bel/antwerpen/antwerpen/4283_parkmiddelheim/25109/",
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/200552"
+      ],
+      "access": "Free, public sculpture park",
+      "transport": "Tram or bus to Middelheim",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Circumference (135cm, 2016) is the only hard data point found; no planting date. monumentaltrees.com used for cross-check only, per hard rule 1, not copied.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ant_006",
+      "name": "The Canadian Poplar of Eric Sasselaan",
+      "species": "Canadian Poplar (Populus x canadensis)",
+      "age_estimate": "unknown, fast-grown",
+      "age_min": 40,
+      "age_max": 80,
+      "location": {
+        "address": "Near the bridge on Eric Sasselaan, Antwerp",
+        "latitude": 51.201,
+        "longitude": 4.395,
+        "neighbourhood": "Kiel / Nieuw Zuid"
+      },
+      "story": "At 35 metres, this Canadian poplar is among the tallest trees recorded anywhere in Antwerp, its trunk clear of branches for a full 6 metres before the crown even begins, a shape that comes from growing hard and fast for light rather than from any deliberate pruning. Measured at 5.40 metres around in 2011, it stands beside a bridge on Eric Sasselaan, an ordinary stretch of the city with nothing else to recommend it as a destination, which is exactly the point: this is not a castle park or a botanic garden specimen but a street tree that simply grew bigger and faster than anyone expected a hybrid poplar to. Canadian poplar is a fast growing hybrid, not a long lived species by any measure, typically reaching its full size within decades rather than centuries, which makes its scale here more a demonstration of what the species can do under good conditions than a claim to great age. It is a reminder that not every remarkable tree in a city has a noble family or a monastery behind it. Some are simply the biggest thing of their kind that a stretch of unremarkable pavement happened to grow.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten?typologie=opgaande+bomen&pagina=12"
+      ],
+      "access": "Free, public street",
+      "transport": "Tram or bus to Kiel / Nieuw Zuid",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Single source (Flanders heritage inventory listing). Age range reflects typical Canadian poplar growth rates rather than a documented planting date; included on size and visual grounds, not claimed antiquity.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ant_007",
+      "name": "The Peace Tree of the Grote Markt",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "under 35 years",
+      "age_min": 30,
+      "age_max": 35,
+      "label": "Youngest tree",
+      "location": {
+        "address": "Grote Markt, Antwerp",
+        "latitude": 51.2213,
+        "longitude": 4.3997,
+        "neighbourhood": "Historic Centre"
+      },
+      "story": "The youngest tree on this list stands in the middle of the oldest square. On 3 September 1994, the city planted a small linden on the Grote Markt, ringed by the Renaissance guildhalls and the Gothic town hall that make this square one of the most photographed in Belgium, to mark exactly fifty years since Antwerp's liberation from German occupation in 1944. A bronze plaque set into four chained posts around its base spells out the anniversary in plain terms: Vrijheidsboom, 50th anniversary of the liberation of Antwerp. Unlike everything else on this list, there is nothing uncertain about this tree's age or its meaning, no disputed circumference, no folklore standing in for a missing record. It is barely three decades old, a sapling by the standard of a churchyard beech or a castle park oak, and it will not be the oldest or the largest tree in Antwerp for a very long time yet. What it offers instead is the opposite of ambiguity: a single, dated, deliberately public act of remembrance, growing in the one square in the city that every visitor already walks through.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/133110",
+        "https://www.tracesofwar.nl/sights/4817/Bevrijdingsboom-Antwerpen.htm"
+      ],
+      "access": "Free, public square",
+      "transport": "Short walk from Antwerpen-Centraal station or any tram to Groenplaats",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Age and planting date are exactly documented (3 September 1994), unusually precise for this list. Included for historical significance rather than age, labelled 'Youngest tree' for honesty, same pattern as other cities' young-but-significant entries.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ant_008",
+      "name": "The Park Trees of Den Brandt",
+      "species": "Mixed species (English landscape park)",
+      "age_estimate": "undated, old growth",
+      "age_min": 80,
+      "age_max": 200,
+      "location": {
+        "address": "Kasteel Den Brandt, Beukenlaan / Middelheimlaan, Antwerp",
+        "latitude": 51.19,
+        "longitude": 4.403,
+        "neighbourhood": "Middelheim"
+      },
+      "story": "Behind a castle built in 1790 that itself replaced a medieval structure destroyed centuries earlier, Den Brandt's park holds a valuable, largely uncatalogued collection of solitary trees and tree groups around an artificial pond and open lawn, laid out in the English landscape style once fashionable among Antwerp's merchant elite. The estate is first documented in 1396, when it was likely a farmstead rather than the country residence it later became, and it stayed in private hands for centuries, passing to the della Faille de Waerloos family in 1804 and then to the Kreglinger family in 1910, who bought both the castle and 16 hectares of grounds around it. The public only gained access in 1911, and today Den Brandt forms one third of the combined Nachtegalenpark alongside Middelheim and Vogelenzang. No single tree here carries a published age or circumference record in the sources checked for this entry, so none is claimed. What survives is a planting scheme old enough that Flanders' heritage inventory rates the tree population itself as valuable, an English style landscape garden whose individual specimens have simply never been measured for public record the way the specimens at nearby Hertoghepark or Rivierenhof have.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/6523",
+        "https://www.antwerpen.be/info/52d5052239d8a6ec798b4960/den-brandt"
+      ],
+      "access": "Free, public park",
+      "transport": "Tram or bus to Middelheim / Den Brandt",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented deliberately as an ensemble: no individual tree in Den Brandt has a documented age or circumference in the sources checked. The estate's own ownership history (1396, 1790, 1804, 1910, 1911) is documented and used as context only.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ant_009",
+      "name": "The Historic Grounds of Zoo Antwerpen",
+      "species": "Mixed species (historic zoo landscape)",
+      "age_estimate": "undated, planted from 1843",
+      "age_min": 40,
+      "age_max": 90,
+      "location": {
+        "address": "Zoo Antwerpen, Koningin Astridplein, Antwerp",
+        "latitude": 51.2172,
+        "longitude": 4.4213,
+        "neighbourhood": "Antwerpen-Centraal"
+      },
+      "story": "Belgium's oldest zoo has spent more of its history rebuilding than expanding. Zoo Antwerpen opened on 21 July 1843, right beside what would become the city's Centraal Station, and its site and tree cover were repeatedly caught in the crossfire of a location that made strategic sense for a railway hub and none at all for a garden: German bombardment damaged the zoo badly in August 1914, and the Second World War hit it even harder, destroying the aquarium, reptile house, bird house, hippo house and winter garden in a single conflict. That the zoo's landscaped grounds, laid out and steadily replanted under head gardener Florent Blockx from around 1935 onward, survived both wars intact enough to be protected as a landscape in 1975 and recognised as a full historical monument in 1984, says as much about the tree cover's resilience as about the animals it shelters. A dedicated irrigation system installed in 1982 keeps the older plantings alive through Belgian summers. No single tree here is singled out in the historical record, so this entry stands for the grounds as a whole, a rare case of a European zoo's landscaping surviving through two world wars fought in the same city block.",
+      "verified_sources": [
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/127085",
+        "https://etwie.be/nl/kennisbank/nieuws/175-jaar-zoo-antwerpen"
+      ],
+      "access": "Paid zoo admission",
+      "transport": "Adjacent to Antwerpen-Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as an ensemble since no single tree is individually dated; the 1935 replanting under Florent Blockx is the earliest documented date for the current tree cover, so age range is capped there rather than assuming any tree survives from 1843.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ant_010",
+      "name": "The Millennium Ginkgo of the Stadspark",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 26 years",
+      "age_min": 25,
+      "age_max": 27,
+      "best_time": { "months": [11], "label": "November, when its fan shaped leaves turn gold and drop within days of each other" },
+      "location": {
+        "address": "Stadspark, between Quinten Matsyslei, Rubenslei and Van Eycklei, Antwerp",
+        "latitude": 51.214,
+        "longitude": 4.413,
+        "neighbourhood": "Zuid / Centrum"
+      },
+      "story": "Antwerp's first public park has spent the last forty years quietly losing the very trees that made it worth designating in the first place. When the German landscape architect Eduard Keilig laid out the Stadspark in 1869 on the site of the city's demilitarised Spanish fortifications, he built it around mature tree cover that came with the land, a striking contrast of an irregular pond, an island reached by a suspension bridge and a steep grassy slope. Surveys by Belgium's own dendrological association in 1986 and 2005 both flagged the same problem: a historically significant tree population under real pressure from disease, storm damage and basic safety concerns, with large sections already removed by the time of the second survey. Rather than pretend nothing had changed, the city marked the turn of the millennium in the winter of 1999 to 2000 by planting a ginkgo, a species famous for outliving almost everything around it, as a deliberate long view gesture in a park whose 19th century originals were already disappearing. What remains is a park honest about its own losses, old fortification earthworks reshaped into a pond and hillside nearly forty years before Belgium's dendrologists started counting what the storms had taken.",
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Stadspark_(Antwerpen)",
+        "https://slachthuiswijk2060.wordpress.com/2020/12/23/millenniumbomen-in-elke-wijk/"
+      ],
+      "access": "Free, public park",
+      "transport": "Short walk from Antwerpen-Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Planting winter (1999-2000) is documented; age given as of 2026. Story is honest that this is a young tree included for what it represents (the park's own historic tree loss and a deliberate long-lived replacement), not for antiquity.",
+      "location_precision": "approximate"
+    }
+  ]
+}
