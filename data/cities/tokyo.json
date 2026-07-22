@@ -54,7 +54,13 @@
         "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "late November, when the ginkgo turns deep gold"
+      }
     },
     {
       "id": "tok_002",
@@ -85,7 +91,13 @@
       },
       "curation_status": "flagged",
       "notes": "The 800-year figure rests on oral legend (the Minamoto no Yoritomo story), not a tree-ring count. Existence, species, WWII fire damage and the revoked monument status are all independently sourced; the precise age is not.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "late November, when the leaves turn gold"
+      }
     },
     {
       "id": "tok_003",
@@ -145,7 +157,13 @@
         "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "late November, at the peak of its golden colour"
+      }
     },
     {
       "id": "tok_005",
@@ -175,7 +193,13 @@
         "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "late November, when the ginkgo turns gold"
+      }
     },
     {
       "id": "tok_006",
@@ -236,7 +260,13 @@
       },
       "curation_status": "ai_generated",
       "notes": "Garden spans roughly 16 hectares; the pin marks the garden entrance rather than a confirmed exact position for the tree. Only photos of the adjacent commemorative stone were found on Wikimedia Commons, not the tree itself, so no photo is used.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "late November, when the leaves turn gold"
+      }
     },
     {
       "id": "tok_008",
@@ -267,7 +297,14 @@
       },
       "curation_status": "flagged",
       "notes": "The shrine's wisteria tradition is continuous since 1663, but the current vines have almost certainly been renewed and replanted over that span like a trained garden feature rather than surviving as single 360-year-old plants. Age range left wide to reflect that uncertainty honestly.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "label": "late April into May, when the wisteria hangs in flower"
+      }
     },
     {
       "id": "tok_009",
@@ -297,7 +334,13 @@
       },
       "curation_status": "ai_generated",
       "notes": "This is an avenue of 146 individually planted ginkgos rather than a single tree, so the pin marks the Aoyama-dori entrance rather than one exact trunk.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "late November, when the whole avenue turns gold"
+      }
     },
     {
       "id": "tok_010",

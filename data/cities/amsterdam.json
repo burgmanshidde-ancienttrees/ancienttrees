@@ -142,7 +142,14 @@
         "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "midsummer, when the long green catkins hang down"
+      }
     },
     {
       "id": "ams_005",
@@ -292,7 +299,14 @@
       },
       "curation_status": "flagged",
       "notes": "Exact planting date and precise age were not found; 'monumental' designation implies 100+ years, so a wide range is used pending confirmation. Coordinates are square-level, not tree-specific.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "midsummer, when the wingnuts trail their catkins"
+      }
     },
     {
       "id": "ams_010",
@@ -322,7 +336,14 @@
       },
       "curation_status": "flagged",
       "notes": "An earlier planting date of 1885 appears in one source; the 1907 date is favored here as it matches the documented 1884-1916 timeline of Cuypers' garden construction, but the discrepancy is not fully resolved. Coordinates are an estimate for the garden's southeast corner.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "midsummer, for the hanging catkins"
+      }
     }
   ]
 }
