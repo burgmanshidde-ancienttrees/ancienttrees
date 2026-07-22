@@ -2,6 +2,13 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Kyoto photo pass (rung 4: below the new 80% floor, next tier)
+
+- With the lead group and marquee-European cities all having had a genuine pass, moved to the next tier flagged in the prior Tokyo entry: Istanbul (already at 2/10 from an earlier pass), Kyoto (1/10) and New York (2/10). Kyoto was oldest-published of the three still untouched this run, so went first.
+- Found 2 of 9 missing: **the Weeping Cherry of Gion** (Maruyama Park, CC BY 2.0, a Flickr-sourced Commons file titled "Giant Gion weeping sakura" with embedded coordinates about 50m from this entry's pin) and **the Emperor's Camphor of Imakumano** (CC BY-SA 4.0, a Commons file titled "Shoryu Benzaiten," an alternate name Japanese sources confirm belongs to this exact tree, its large limbs said to resemble a dragon; embedded coordinates about 50m from the pin). Both flagged `found_needs_check`: this is a text-search workflow without image vision, so a strong textual/coordinate match is not the same as seeing the tree fill the frame, the same caution recorded on Amsterdam's and Lisbon's finds.
+- Seven remain missing after real searches, including several with dedicated Wikimedia Commons categories that turned up no tree-specific shot: Munakata Shrine's camphor (14 generic shrine photos in its Commons category, none nameable as the tree itself), Nishi Honganji's inverted ginkgo (a famous, heavily photographed tree, but no Commons or Flickr file surfaced despite several searches), Sanbo-in's Taiko cherry (a "Sakura at Sanbō-in" Commons subcategory exists but its 4 files show the subtemple building, not confirmed to include the tree), Yoshimine-dera's Reclining Dragon Pine, Hosen-in's five-needle pine, Kamigamo Shrine's Gosho-zakura, and the remote, access-restricted Katanami cedar.
+- Kyoto moves from 1/10 to 3/10. Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — Tokyo photo pass (rung 4: below the new 80% floor, no new finds)
 
 - With the marquee-European sweep closed out, checked the next tier: Tokyo was closest to the 8/10 floor of any remaining city at 7/10, needing only one more find. Searched for its 3 missing trees (the Sensoji War Ginkgo, the Ueno Toshogu Camphor, the Koishikawa Ginkgo of the sperm discovery).

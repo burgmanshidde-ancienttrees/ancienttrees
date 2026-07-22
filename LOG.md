@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 09:45 — Kyoto: photo floor pass, 1/10 to 3/10
+
+- Lead group and marquee-European cities are as far as prior runs could take them today, so moved to the next tier: Istanbul, Kyoto and New York. Kyoto (1/10) was oldest-published of the three and untouched this run, so went first.
+- Found 2: the Weeping Cherry of Gion in Maruyama Park (CC BY 2.0, a Flickr-sourced Commons file with coordinates about 50m from the pin) and the Emperor's Camphor of Imakumano (CC BY-SA 4.0, a Commons file titled with the tree's own alternate name, "Shoryu Benzaiten," coordinates also about 50m from the pin). Both flagged `found_needs_check` since this is a text workflow without image vision.
+- Kyoto now at 3/10. 7 remain missing after real searches, several with dedicated Commons categories that still turned up nothing tree-specific (Munakata Shrine's camphor, Nishi Honganji's famous inverted ginkgo, Sanbo-in's Taiko cherry). Left open rather than looped on.
+- Site rebuilt, all contracts validated, pushed. Next: Istanbul or New York.
+
 ## 2026-07-22 09:15 — Tokyo photo pass: no new finds, honestly recorded
 
 - Marquee-European sweep is closed out for this run, so checked the city closest to the floor overall: Tokyo at 7/10, needing just one more. Nothing cleared the bar this pass; one near-miss (a memorial-stone photo at Koishikawa Botanical Garden) checked and rejected since it documents the marker, not confirmed to show the tree itself.

@@ -170,13 +170,13 @@
       "access": "Free, public park",
       "transport": "Gion-Shijo (Keihan) or Higashiyama (Tozai Line), 10 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Giant_Gion_weeping_sakura_%2851472103367%29.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "Raita Futo, Wikimedia Commons (via Flickr)",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Age range reflects a genuine discrepancy between sources counting from the 1949 planting (about 77 years) versus the 1928 seed collection (about 90+ years). Presented as a range rather than picking one figure, per the site's honesty standard.",
+      "notes": "Age range reflects a genuine discrepancy between sources counting from the 1949 planting (about 77 years) versus the 1928 seed collection (about 90+ years). Presented as a range rather than picking one figure, per the site's honesty standard. Photo is captioned as the Gion weeping sakura in Maruyama Park with embedded coordinates (35.0035, 135.7805) within about 50m of this entry's pin; a text-search workflow cannot visually confirm the frame, so flagged found_needs_check per house practice.",
       "location_precision": "confirmed"
     },
     {
@@ -231,12 +231,13 @@
       "access": "Free, shrine grounds open daily",
       "transport": "Keihan Bus to Sennyuji-michi, 2 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E6%96%B0%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_-_%E6%A8%9F%E9%BE%8D%E5%BC%81%E8%B2%A1%E5%A4%A9.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Cakoko23, Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
+      "notes": "Photo is titled \"Shoryu Benzaiten\" (樟龍弁財天), an alternate name Japanese-language sources confirm is used for this exact great camphor at Imakumano Shrine, since its large limbs are said to resemble a dragon and the tree is worshipped as the seat of a dragon-riding Benzaiten. Embedded coordinates (34.9843, 135.7742) sit within about 50m of this entry's pin. A text-search workflow cannot visually confirm the tree fills the frame, so flagged found_needs_check per house practice.",
       "location_precision": "confirmed"
     },
     {
