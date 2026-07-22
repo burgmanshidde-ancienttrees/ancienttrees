@@ -64,14 +64,21 @@ jobs:
             outranks adding more. Otherwise the job is coverage: the next pending
             city, and then the one after that.
 
-            Coverage is the current phase by Hidde's explicit decision. Approximate
-            pins and few photos do not block the next city. Two things do, and both
-            are ladder rungs above coverage: a published city with zero photographs
-            at all (rung 4, get it any photo before adding a new city), and shipping
-            a tree without location_precision set honestly. A page made only of text
-            cannot make anyone want to walk anywhere. Vague pins are fine when they
-            say they are vague; fake precision is not. Do not read this list as
-            replacing Step 0; the full ladder in CLAUDE.md governs, and hard rule 10
+            Photos are the current priority by Hidde's decision of 2026-07-22, with
+            80 percent (8 of 10 trees) as the floor. Rung 4 of the ladder now reads:
+            a published city below that photo target outranks adding a new city.
+            Work the focus region first, UK and Netherlands then the rest of the
+            lead group and the marquee European cities, oldest-first. Hunt widely:
+            Wikimedia, iNaturalist, Flickr under CC, Openverse, park authorities,
+            submissions. Never publish a photo without a verified open licence and
+            attribution, and where 80 percent genuinely cannot be reached because no
+            open photo exists, note it in CURATION.md and move on rather than looping.
+
+            When every focus city is at target, resume coverage: the next pending
+            city, which the reordered list now leads with the lead group. Approximate
+            pins do not block anything, but never ship a tree without
+            location_precision set honestly: vague is fine when it says so, fake
+            precision is not. The full ladder in CLAUDE.md governs, and hard rule 10
             (public trees only, never a location its source hides) is absolute.
 
             Whatever the work turns out to be: verify against two independent
