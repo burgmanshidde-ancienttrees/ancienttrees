@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Istanbul photo pass (rung 4: zero-photo city)
+
+- Istanbul was the second published city with zero photos (after London, done earlier the same run). No reader submissions pending, site build healthy.
+- Only 2 of 10 found this time, honestly, not for lack of trying: Wikimedia Commons has thin coverage of Istanbul's named monument trees compared to London's well-documented "Great Trees" series. Searched Commons in English and Turkish (çınar, anıt ağaç, servi), plus iNaturalist, Flickr CC, and Openverse.
+  - **The Hüseyin Avni Dede Plane**: CC BY-SA 4.0, found via Wikimedia Commons. Its GPS metadata (41.0107, 28.9657) lands within about 50m of the tree's existing pin, a nice independent corroboration of the location on top of the photo itself.
+  - **The Cypresses of Karacaahmet**: CC BY-SA 4.0, shows the cemetery's cypress canopy generally rather than one of the nine specifically protected trunks, consistent with this entry's own honesty caveat that no source ties any single trunk to an individual age.
+- 8 of 10 still missing after a genuine four-source search: the Oldest Plane of Bahçeköy, the Ahtapot Çınar, the Taşlı Çınar, the Çengelköy Plane, the Ata Fıstık Çamı, the Florya Mastic Tree, the Ehrami Servi of Büyükada, and the Beykoz Çayırı planes. Per the mandate, photo coverage is always cuttable; these move on rather than blocking anything, and stay open for a future improvement-mode pass.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — London photo pass (rung 4: zero-photo city)
 
 - London was one of two published cities with zero photos at all (the other is Istanbul), which outranks starting a new city on the ladder in CLAUDE.md. No reader submissions pending (CSV checked: header row only, no data rows). Site build was healthy.
