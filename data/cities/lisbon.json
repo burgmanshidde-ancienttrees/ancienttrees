@@ -81,7 +81,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Lisbon%2C_Jardim_Bot%C3%A2nico_da_Ajuda%2C_Dracaena_draco.JPG",
         "license": "CC BY 4.0",
         "attribution": "Dguendel, Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Age is genuinely uncertain: the tree was already an adult specimen when transplanted in 1768 (258 years by that count alone), but several popular sources round up to 400 years assuming an earlier, undocumented origin. Presented here as a range rather than a single figure.",
@@ -113,7 +113,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Cipres_Portugues_%28Jard%C3%ADn_Principe_Real%2C_Lisboa%29.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Alatryste, Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Portuguese press and heritage sources converge on approximately 150 years, tied to its 1940 classification. monumentaltrees.com states it was planted around 1740, implying roughly 285 years. The discrepancy is unresolved; the more heavily corroborated 150 year figure is used as the primary estimate, per monumentaltrees being used for verification only.",
@@ -144,7 +144,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/BelaSombra%40R.Limoeiro%282015%29.jpg",
         "license": "CC BY 2.0",
         "attribution": "kenward, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Most sources cite 100 years; a local history blog notes the tree already appears as a mature adult in Lisbon Municipal Archive photographs from 1910, which would put its real age closer to 115 years.",
@@ -201,13 +201,14 @@
       "access": "Free, public garden",
       "transport": "1 min walk from Colégio Militar/Luz station (Metro Blue Line)",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Jardim_da_Luz_%28Lisboa%29.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Hipersyl, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "notes": "A candidate photo was checked and rejected: it is a general photo of the garden/square with no confirmation the named tree itself is in frame."
     },
     {
       "id": "lis_007",
@@ -260,13 +261,13 @@
       "access": "Free, public square",
       "transport": "Roughly 10 min walk from Arroios station (Metro Red Line)",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Jardim_da_Pra%C3%A7a_Paiva_Couceiro%2C_2024.jpg",
-        "license": "CC0 1.0",
-        "attribution": "JnpoJuwan, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source gives a precise planting date; 'over a century old' is the most specific figure available from the two independent write-ups found so far. Photo (2024) is a general shot of the small square where this ginkgo is the notable planted specimen; not independently confirmed to show the tree itself in frame, so flagged found_needs_check for a human visual check before it goes live.",
+      "notes": "No source gives a precise planting date; 'over a century old' is the most specific figure available from the two independent write-ups found so far. Photo (2024) is a general shot of the small square where this ginkgo is the notable planted specimen; not independently confirmed to show the tree itself in frame, so flagged found_needs_check for a human visual check before it goes live. A candidate photo was checked and rejected: it is a general photo of the garden/square with no confirmation the named tree itself is in frame.",
       "location_precision": "confirmed"
     },
     {
