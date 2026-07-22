@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 06:45 — Lisbon: photo floor pass, 3/10 to 5/10
+
+- Lead group (London, Amsterdam, Dublin) is as far along as this run could get it; moved to marquee European cities next, oldest-first. Lisbon (3/10) was next.
+- Found 2: the Praça Paiva Couceiro ginkgo (CC0) and the Jardim da Luz coral trees (CC BY-SA 4.0). One near-miss rejected: a silk floss tree photo that looked right by species and name but its coordinates put it 2.5km from the actual tree, a different specimen in a different neighbourhood.
+- Lisbon now at 5/10, still short of the 8/10 floor. 5 trees remain `missing` after genuine attempts, left open for a future pass rather than looped on further.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 06:05 — Dublin photo pass: no new finds, honestly recorded
 
 - Same rung as the Amsterdam pass just before it, continuing oldest-first down the focus region: Dublin (1/10) after Amsterdam (now 3/10). Searched Commons, iNaturalist and Flickr for all 9 missing trees.

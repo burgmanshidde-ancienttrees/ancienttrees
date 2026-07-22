@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Lisbon photo pass (rung 4: below the new 80% floor)
+
+- Amsterdam and Dublin (lead group) are as far as this run could take them for now, so moved to the next region: marquee European traveller cities, oldest-published-first. Lisbon (3/10) was oldest still below target.
+- Found 2 of 7 missing: **the Ginkgo of Praça Paiva Couceiro** (CC0, a 2024 general photo of the small garden square, not independently confirmed to have the tree itself in frame since this is a text-search workflow without image vision, flagged `found_needs_check` precisely for that reason) and **the Coral Trees of Jardim da Luz** (CC BY-SA 4.0, a clear match for the named garden).
+- One near-miss caught and rejected: a Commons photo captioned "silk floss tree, João do Rio Square, Lisbon" looked like an exact species match for the Paineira of Jardim Alfredo Keil, but its stated coordinates place it roughly 2.5km away in a different neighbourhood, a different specimen entirely. Not used, same discipline as Barcelona's alzina near-miss from an earlier run.
+- Also checked and declined: a chapel forecourt photo for the Olive Trees of Santo Amaro, whose own description discusses the building's architecture without confirming the olive trees are in frame, so left as `missing` rather than assumed.
+- Lisbon moves from 3/10 to 5/10. The remaining 5 (the olives of Santo Amaro, the São Bento tipuana, the São Cristóvão giant rubber fig, the Avenida de Berlim nettle tree, the Mouraria specimen) stay open for a future pass.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — Dublin photo pass (rung 4: below the new 80% floor, no new finds)
 
 - Continuing down the focus region after Amsterdam: Dublin (Ireland, 1/10, just published this same run) was next. Searched Wikimedia Commons, iNaturalist and Flickr for all 9 missing trees: Queen Victoria's Sequoia, Dean's Tree, Addison's Walk, the Provost's Plane, the Champion Planes of New Square, the Sculpted Cypress, the Holm Oak Avenue, the Great Sycamore of Farmleigh, and the Oak Avenue of Corkagh.
