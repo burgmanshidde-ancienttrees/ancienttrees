@@ -57,3 +57,39 @@ Nothing here is currently checked for it. Before importing any register, and arg
 1. Retry Prague and New York.
 2. Read the UK licence terms properly, and find out what the Dutch register offers and under what conditions.
 3. Decide the tree-protection rule above. That one does not need to wait for anything.
+
+## Which countries to invest in, weighed 2026-07-21
+
+Researched at Hidde's request: national tree databases plus photo availability and other factors, ranked for the strategy (English site, travelers plus enthusiasts as the audience).
+
+National register quality, on evidence:
+
+| Country | National register | Size and access |
+|---|---|---|
+| UK | Woodland Trust Ancient Tree Inventory | 233,000, downloadable, one source. Best in the world. |
+| Netherlands | Landelijk Register Monumentale Bomen (Bomenstichting) | ~15,000, open data in CSV/GeoJSON with coordinates. Best accessibility after the UK. |
+| Ireland | Tree Register of Ireland + Heritage Trees of Ireland | 11,000+, GPS-recorded. |
+| Italy | MASAF official registry | 4,944, shapefile and Excel, by region. |
+| Belgium | Flanders heritage inventory + Brussels remarkable trees | Regional, with coordinates. |
+| France | none national; Paris and Ile-de-France open data | Fragmented, rich where it matters. |
+| Germany | none national; per Bundesland, some cities | Fragmented. |
+| Spain | none national; regional (Castilla y Leon, Aragon) via datos.gob.es | Fragmented. |
+
+Correction to the earlier OSM-based read: the Netherlands is data-rich, not thin. The OSM count of 4 was mapping culture, not the register, which holds ~15,000.
+
+Photos: not a national property, closer to a per-tree lottery driven by how touristed and Wikimedia-active a place is. Weighted low, because the fix is wider sources (iNaturalist, Flickr, Openverse) and submissions, not country choice.
+
+Other factors that matter: whether a register gives exact coordinates or blurs them (hard rule 10, and it now breaks check-in if vague); seasonality strength (northern and temperate beat Mediterranean for the season chart); existing competition (the UK already has the Woodland Trust map, so we compete on curation); and licence, which is unchecked per country and must be before any import.
+
+Ranked top 10 to invest in:
+
+1. UK, 2. Netherlands, 3. Ireland, 4. Belgium, 5. France, 6. Italy, 7. Germany, 8. Austria, 9. Spain, 10. Japan.
+
+The shape matters more than the order. Three groups:
+- Lead group (1-4, UK/Netherlands/Ireland/Belgium): where data, verifiability and reachability meet. All near Hidde, real registers, reachable in person. Invest here.
+- Traveler group (5,6,9, France/Italy/Spain): weaker or fragmented data, but they pull the English-speaking traveler who converts. Take the marquee cities, not the whole country.
+- Quality group (7,8,10, Germany/Austria/Japan): where the season feature shines and tree culture is richest. Japan is 10th on strategy but would be top three on quality alone, and that tension is a real choice, not something to explain away.
+
+The USA stays out: English is a plus, but its cities are young so "ancient" is thin, and there is no national register.
+
+Not yet done, and gating any import: per-country licence checks, starting with the two leaders, the UK and the Netherlands.
