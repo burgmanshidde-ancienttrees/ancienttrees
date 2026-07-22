@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Rome photo pass (rung 4: below the new 80% floor)
+
+- Next oldest marquee-European city below floor after Paris. Rome was at 4/10.
+- Found 2 of 6 missing: **the Quercia del Tasso** (CC BY 2.0, a 2018 photo from a dedicated Commons category that also confirms, independently of this entry's own sources, that only a propped remnant of the original tree survives, matching the story's own honest framing) and **the Cedar of the Garibaldi Mausoleum** (CC BY-SA 4.0, from Wiki Loves Monuments 2021, its embedded coordinates landing within about 30 metres of this entry's existing pin, a clean match).
+- One near-miss caught and rejected: a Cedar of Lebanon photo from Villa Doria Pamphilj's Commons category looked like a plausible match for the Cedar of the Belvedere, but its coordinates place it roughly 1.2km from that entry's pin, inside a park large enough, and with enough documented cedar specimens, that this is very likely a different tree entirely. Not used.
+- Rome moves from 4/10 to 6/10. 4 remain missing (the Twin Planes and Cork Oak of the Orto Botanico, the Cedar of the Belvedere, the Aleppo Pine of Celimontana) after real attempts, left open for a future pass.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — Paris photo pass (rung 4: below the new 80% floor)
 
 - Continuing oldest-first through marquee European cities: Paris (3/10) was next after Lisbon.

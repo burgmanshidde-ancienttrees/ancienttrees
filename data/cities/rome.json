@@ -48,13 +48,13 @@
       "access": "Free, open access, Gianicolo park",
       "transport": "20 min walk up from Trastevere (Piazza Trilussa), or bus 115 to Gianicolo",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Oak_Tree_of_Torquato_Tasso_on_the_Rampa_della_Quercia%2C_Gianicolo_%E2%80%A2_Janiculum_Hill_%2846853511991%29.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "Sonse, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Exact botanical species never identified in any source found. Age is popular legend (up to 1000 years) with no scientific dating behind it; age_min/age_max here reflect a conservative documented-history floor, not the legend. Current physical condition after the 2011 arson (how much of the original tree survives) needs an on-the-ground check.",
+      "notes": "Exact botanical species never identified in any source found. Age is popular legend (up to 1000 years) with no scientific dating behind it; age_min/age_max here reflect a conservative documented-history floor, not the legend. Current physical condition after the 2011 arson (how much of the original tree survives) needs an on-the-ground check. Photo dated 2018, post-arson.",
       "location_precision": "confirmed"
     },
     {
@@ -229,10 +229,10 @@
       "access": "Free, open access, Gianicolo",
       "transport": "Bus 115 or 870 to Gianicolo, short walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Cedro_al_Parco_del_Mausoleo_di_Garibaldi.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Albarubescens, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
