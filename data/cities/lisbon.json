@@ -201,10 +201,10 @@
       "access": "Free, public garden",
       "transport": "1 min walk from Colégio Militar/Luz station (Metro Blue Line)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Jardim_da_Luz_%28Lisboa%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Hipersyl, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
@@ -260,13 +260,13 @@
       "access": "Free, public square",
       "transport": "Roughly 10 min walk from Arroios station (Metro Red Line)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Jardim_da_Pra%C3%A7a_Paiva_Couceiro%2C_2024.jpg",
+        "license": "CC0 1.0",
+        "attribution": "JnpoJuwan, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "No source gives a precise planting date; 'over a century old' is the most specific figure available from the two independent write-ups found so far.",
+      "notes": "No source gives a precise planting date; 'over a century old' is the most specific figure available from the two independent write-ups found so far. Photo (2024) is a general shot of the small square where this ginkgo is the notable planted specimen; not independently confirmed to show the tree itself in frame, so flagged found_needs_check for a human visual check before it goes live.",
       "location_precision": "confirmed"
     },
     {
