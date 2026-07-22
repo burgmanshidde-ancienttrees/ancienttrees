@@ -113,6 +113,11 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .tree-name { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; line-height: 1.25; }
 .tree-label { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mid); background: var(--cream-dark); border-radius: 2px; padding: 0.15rem 0.45rem; margin-left: 0.6rem; vertical-align: middle; white-space: nowrap; }
 .tree-meta { font-size: 12px; color: var(--ink-light); margin: 0 0 0.6rem 2.15rem; }
+.best-time { color: var(--moss); }
+.best-now, .best-now-inline { display: inline-block; background: var(--moss); color: #fff;
+  font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 999px;
+  margin-left: 6px; letter-spacing: 0.02em; text-transform: uppercase; }
+.best-now-inline { margin-left: 0; }
 /* Overview shows a teaser; the full story lives on the tree page. The whole
    text stays in the HTML so crawlers and AI engines still read it. */
 .tree-story { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin: 0 0 0.7rem 2.15rem;
@@ -414,6 +419,38 @@ def site_graph():
         {"@type": "WebSite", "name": "Ancient Trees", "url": BASE_URL},
         {"@type": "Person", "name": "Hidde", "url": BASE_URL},
     ]
+
+
+def best_time_row(tree):
+    """The 'when to go' line, the strongest reason a page gives to leave the house.
+
+    Only shown when a tree has a real seasonal peak. A 2000 year old yew looks
+    much the same in March and August, so it carries no best_time and no row
+    appears: forcing one on every tree would be filler, and honesty about which
+    trees actually have a moment is the point.
+
+    Schema: tree["best_time"] = {"months": [11], "label": "late November, when
+    the ginkgo turns gold"}. months drives the "right now" highlight and a
+    future "what is at its best near me"; label is the sentence a reader sees.
+    """
+    bt = tree.get("best_time")
+    if not bt or not bt.get("label"):
+        return "", ""
+    now = date.today().month
+    is_now = now in (bt.get("months") or [])
+    flag = ' <span class="best-now">at its best right now</span>' if is_now else ""
+    return "\n  <dt>Best time to go</dt>", f'<dd class="best-time">{esc(bt["label"])}{flag}</dd>'
+
+
+def best_time_short(tree):
+    """One short phrase for the city-page card, without the full sentence."""
+    bt = tree.get("best_time")
+    if not bt or not bt.get("label"):
+        return ""
+    now = date.today().month
+    if now in (bt.get("months") or []):
+        return ' &middot; <span class="best-now-inline">at its best now</span>'
+    return ""
 
 
 def breadcrumb_schema(items, page_url=None):
@@ -1147,10 +1184,11 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pag
     )
 
     label = f'<span class="tree-label">{esc(tree["label"])}</span>' if tree.get("label") else ""
+    best_dt, best_dd = best_time_row(tree)
     facts = f"""
 <dl class="facts">
   <dt>Species</dt><dd>{esc(tree.get('species', ''))}</dd>
-  <dt>Age estimate</dt><dd>{esc(tree.get('age_estimate', 'unknown'))}</dd>
+  <dt>Age estimate</dt><dd>{esc(tree.get('age_estimate', 'unknown'))}</dd>{best_dt}{best_dd}
   <dt>Location</dt><dd>{esc(loc.get('address', ''))} ({esc(loc.get('neighbourhood', ''))})</dd>
   <dt>Access</dt><dd>{esc(tree.get('access', ''))}</dd>
   <dt>Getting there</dt><dd>{esc(tree.get('transport', ''))}</dd>
@@ -1335,7 +1373,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
         <span class="tree-num">{i}</span>
         <h2 class="tree-name">{esc(t['name'])}{label}</h2>
       </div>
-      <p class="tree-meta">{esc(t.get('species', ''))} &middot; {esc(t.get('age_estimate', 'age unknown'))} &middot; {esc(loc.get('neighbourhood', ''))}</p>""")
+      <p class="tree-meta">{esc(t.get('species', ''))} &middot; {esc(t.get('age_estimate', 'age unknown'))} &middot; {esc(loc.get('neighbourhood', ''))}{best_time_short(t)}</p>""")
         cards[-1] += f"""
       <p class="tree-story">{esc(t['story'])}</p>
       <p class="tree-more"><a href="{slug}/{tslug}">Read more and get directions &rarr;</a>

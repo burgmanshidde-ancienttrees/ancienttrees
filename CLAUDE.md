@@ -109,6 +109,17 @@ If sources conflict or only one source exists, include the tree but set `curatio
 
 Stories and any page copy must satisfy SEO_GEO_BLUEPRINT.md — in particular P2 (answer first, in the first two sentences where the page is a question/city page) and P3 (unique content, no fill-in-the-city-name templating) — and follow TONE_OF_VOICE.md, including its calibration examples and hard bans.
 
+**Set `best_time` when, and only when, a tree has a real seasonal peak.** This is the single strongest reason a page gives someone to actually go, because it turns "nice" into "this weekend". A tree with a pronounced moment gets:
+
+```json
+"best_time": { "months": [11], "label": "late November, when the ginkgo turns gold" }
+```
+
+`months` is the list of month numbers when it is at its best and drives the "at its best right now" badge; `label` is the short phrase a reader sees, in the tone of voice. Rules:
+- Only add it when the moment is real and specific: blossom, autumn colour, a wingnut's summer catkins, a magnolia's ten days. An evergreen or an ancient yew that looks much the same all year gets no `best_time` at all. Forcing one on every tree is filler and defeats the point.
+- Base it on the species and the local climate, and say what actually happens in the label, not just a month. "May, when it flowers" beats "May".
+- Keep it honest: if a peak spans a range, use the real months. Guessing a precise week you cannot support is the same mistake as a fake pin.
+
 ### Step 4 — Find photos
 Search Wikimedia Commons and other openly-licensed sources (CC0, CC-BY, CC-BY-SA only). Record the exact license and attribution. If no good photo exists, set photo status to `missing`. NEVER use photos from monumentaltrees.com, Google Maps, or any source without a clear open license.
 
