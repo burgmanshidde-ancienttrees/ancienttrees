@@ -44,6 +44,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 06:05 — Dublin photo pass: no new finds, honestly recorded
+
+- Same rung as the Amsterdam pass just before it, continuing oldest-first down the focus region: Dublin (1/10) after Amsterdam (now 3/10). Searched Commons, iNaturalist and Flickr for all 9 missing trees.
+- Nothing cleared the bar. Two near-misses checked and rejected: a general New Square photo that doesn't clearly show the champion plane trees themselves, and Aras an Uachtarain's well-documented Obama tree-planting photos, which are a different, newer tree from the one this city page needs.
+- No file changes from the tree data itself; recorded in CURATION.md so a future run does not re-spend the same searches without knowing they were tried. Moving to the next focus-region city.
+
 ## 2026-07-22 05:40 — Amsterdam: photo floor pass, 2/10 to 3/10
 
 - Hidde's new rung 4 (CLAUDE.md, decided 2026-07-22 while this run was already going): published cities below an 8-of-10 photo floor now outrank starting a new city, focus region first, oldest-first. Within the lead group, London is already at 10/10 and Dublin (just published this run, see below) was still ahead of me in the queue, so Amsterdam went first as the oldest lead-group city still below target.
