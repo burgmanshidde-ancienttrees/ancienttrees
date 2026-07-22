@@ -2,6 +2,12 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Dublin photo pass (rung 4: below the new 80% floor, no new finds)
+
+- Continuing down the focus region after Amsterdam: Dublin (Ireland, 1/10, just published this same run) was next. Searched Wikimedia Commons, iNaturalist and Flickr for all 9 missing trees: Queen Victoria's Sequoia, Dean's Tree, Addison's Walk, the Provost's Plane, the Champion Planes of New Square, the Sculpted Cypress, the Holm Oak Avenue, the Great Sycamore of Farmleigh, and the Oak Avenue of Corkagh.
+- No new photo cleared the bar this pass. Two candidates were checked and rejected rather than used: a general "Trinity College, New Square" photo (could not confirm the college's champion plane trees are actually visible or identifiable in frame, rather than guessing from the caption alone) and the Obama tree-planting photo category at Áras an Uachtaráin (documents a different, newer ceremonial tree, not Queen Victoria's 1861 sequoia specifically).
+- Dublin stays at 1/10. This is the other side of the same honesty rule Amsterdam's pass recorded: real effort, no result to show for several of these, and no invented photo to paper over the gap. Left open for a future pass; not looped on further this run.
+
 ## 2026-07-22 — Amsterdam photo pass (rung 4: below the new 80% floor)
 
 - Picked up under Hidde's 2026-07-22 photo-priority decision (CLAUDE.md rung 4, 8/10 floor), which landed mid-session while this run was already in progress. Focus region, oldest-first: London is already at 10/10, so Amsterdam (Netherlands, 2/10) was next ahead of Dublin (Ireland, 1/10, just published this same run).
