@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Barcelona photo pass (rung 4: below the new 80% floor)
+
+- Next oldest marquee-European city below floor after Rome. Barcelona was at 1/10, the thinnest coverage of any city in this run's queue.
+- Found 1 of 9 missing: **the Plane Trees of La Rambla** (public domain, an aerial view from the Columbus Monument showing the boulevard's tree canopy). Since this entry is already presented and pinned as an ensemble of 256 trees rather than a single specimen (an existing, deliberate choice recorded in an earlier run's notes), a wide view of the avenue's canopy is the correct kind of photo for it, not a compromise.
+- Two near-misses checked and rejected: a "Carrer de la Encarnació" street photo that turned out to show a different building number and no visible tree, and Plaça de Prim's Commons category, whose file descriptions don't confirm any of the six images actually shows the ombú.
+- Barcelona moves from 1/10 to 2/10, the smallest gain of any pass this run and a genuine reflection of how thin Barcelona's specific-tree photo coverage is outside La Rambla. 8 remain missing, left open for a future pass.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — Rome photo pass (rung 4: below the new 80% floor)
 
 - Next oldest marquee-European city below floor after Paris. Rome was at 4/10.
