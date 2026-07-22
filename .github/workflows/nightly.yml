@@ -106,3 +106,31 @@ jobs:
               a scheduled trigger may not come again for hours.
           claude_args: |
             --allowedTools "Bash(git:*),Bash(python3:*),Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+
+      # Continuous mode. GitHub fires the schedule only a handful of times a day
+      # for this repo, so most open usage windows go unused. When a token is
+      # present this step re-dispatches the workflow at the end of every run, so
+      # the chain keeps itself alive independently of GitHub's flaky cron.
+      #
+      # Inert without the secret: no SELF_DISPATCH_TOKEN means this exits quietly
+      # and the */20 cron remains the only trigger, so adding the step breaks
+      # nothing. To turn continuous mode off later, delete the secret.
+      #
+      # The 10 minute throttle stops a closed usage window from becoming a tight
+      # failure loop: a run that hits the limit dies in seconds, waits here, then
+      # dispatches, so retries land about every 10 minutes rather than every few
+      # seconds. Public repo, so the runner minutes this consumes are free.
+      - name: Keep the chain alive (continuous mode)
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.SELF_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "No SELF_DISPATCH_TOKEN set. Continuous mode off; relying on the cron."
+            exit 0
+          fi
+          echo "Continuous mode on. Throttling before the next dispatch."
+          sleep 600
+          gh workflow run nightly.yml --repo "${{ github.repository }}" \
+            && echo "Next run dispatched." \
+            || echo "Dispatch failed; the cron will cover it."
