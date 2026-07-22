@@ -2,6 +2,13 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Found something bigger than the photo floor itself: nothing site-wide had actually been verified
+
+- While working the tier queue, noticed London showed 10/10 by raw photo-URL count but every single one still carried `found_needs_check`, meaning none had ever actually been confirmed against its license and its subject. Checking the whole site: only 9 of the ~49 "found" photos site-wide had ever been moved to `approved` (Amsterdam's 4, Istanbul's 2, New York's 3). Everything else, including all of London, was sitting in the same unverified limbo. That is a bigger honesty gap than the missing-photo count itself: an unverified photo is a claim, not a fact, and hard rule 4 requires a verified licence, not just a found one.
+- Fetched and checked all 10 of London's Commons file pages directly (license text, file description/caption, author). All 10 check out cleanly: correct CC licence in every case, and every file's own caption names the specific tree (e.g. "The Cheapside Plane, one of the Great Trees of London," "Queen Elizabeth's Oak" with a caption independently confirming the same 1991 death date already in this entry's story). London moves from 10/10 found to genuinely **10/10 verified**, the first city on the site to actually clear the floor rather than just look like it did.
+- This reframes the remaining photo-floor work: verifying the existing found candidates in Tokyo (7), Paris (6), Rome (6), Lisbon (5), Kyoto (3), Madrid (2), Barcelona (2) and Dublin (1) is now higher-value than hunting brand new photos, since the hard part, finding a plausible candidate, is already done for those 32 trees; what's missing is exactly the check just done for London. Continuing down that list this run.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — New York photo pass (rung 4: below the new 80% floor, tier complete)
 
 - Last of the tier flagged by the Tokyo entry (Istanbul, Kyoto, New York). New York was at 2/10, both already-found but unverified.
