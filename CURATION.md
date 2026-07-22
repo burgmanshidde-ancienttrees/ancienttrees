@@ -2,6 +2,13 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-22 — Amsterdam photo pass (rung 4: below the new 80% floor)
+
+- Picked up under Hidde's 2026-07-22 photo-priority decision (CLAUDE.md rung 4, 8/10 floor), which landed mid-session while this run was already in progress. Focus region, oldest-first: London is already at 10/10, so Amsterdam (Netherlands, 2/10) was next ahead of Dublin (Ireland, 1/10, just published this same run).
+- Found 1 new photo after a genuine search across Wikimedia Commons, iNaturalist and Flickr for each of the 8 missing trees (the Heimanseik, the Vondelpark poplar, the Hortus cycad, the Olifantsiep, the Lomanstraat planes, the Amstelkade olive willow, the Amstelveld wingnuts, the Rijksmuseum wingnut): a 1973 Nationaal Archief / Anefo photograph of "trees and old lanterns on the Amstelveld," CC0, clearly the right square (46 wingnuts have grown there since long before 1973) though not a current-day image of today's trees, flagged as such.
+- Amsterdam moves from 2/10 to 3/10, still short of the 8/10 floor. The other 7 stay `missing` after real attempts, not a default: several near-misses were checked and rejected rather than used, including a generic "Cycad @ Hortus Botanicus" Commons photo that does not identify which of the garden's several cycads it shows (the Hortus has at least two, including an Encephalartos woodii a few metres from the target tree), and a Kirstenbosch, South Africa photo of the same species that would have misrepresented a different continent's specimen as Amsterdam's.
+- This is the shape the new floor will take on most existing cities: real effort, real but partial progress, and an honest gap recorded rather than papered over or looped on indefinitely. Continuing down the focus region to Dublin next.
+
 ## 2026-07-22 — Dublin (full research run, nightly workflow)
 
 - 10 trees researched from scratch and written to `data/cities/dublin.json`. Tier 2, twelfth city to go live. No reader submissions pending (CSV checked: header row only). Nothing published was wrong and no city sat at zero photos, so this was the next rung: the next pending city.

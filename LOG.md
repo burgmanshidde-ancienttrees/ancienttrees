@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-22 05:40 — Amsterdam: photo floor pass, 2/10 to 3/10
+
+- Hidde's new rung 4 (CLAUDE.md, decided 2026-07-22 while this run was already going): published cities below an 8-of-10 photo floor now outrank starting a new city, focus region first, oldest-first. Within the lead group, London is already at 10/10 and Dublin (just published this run, see below) was still ahead of me in the queue, so Amsterdam went first as the oldest lead-group city still below target.
+- Found 1 of the 7 missing: a 1973 Nationaal Archief photo of the Amstelveld, CC0, correctly showing that square's trees but not a current-day image, so flagged rather than presented as-is. Amsterdam now at 3/10.
+- The other 6 stayed `missing` after genuine searches, including two near-misses caught and rejected: a Hortus Botanicus cycad photo that doesn't identify which of the garden's several cycads it shows, and a same-species photo from Kirstenbosch, South Africa, that would have misrepresented a different continent's plant as the Amsterdam specimen.
+- Did not reach the 8/10 floor this pass. Recorded in CURATION.md per the rule's own escape valve (record and move on rather than loop forever) and left open for a future pass. Continuing down the focus region: Dublin is next, since it also now sits below the same floor.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 04:20 — Dublin: 10 trees researched, twelfth city live
 
 - Next pending city on the ladder, no reader submissions waiting and no city sitting at zero photos, so straight to coverage. Dublin joins the site with 10 trees in `data/cities/dublin.json`.
