@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Dublin photo pass: 1/10 to 3/10
+
+- First "rest of the lead group" city (Ireland) after UK and Netherlands. Found solid CC BY-SA matches for the St Anne's Park cypress sculpture and the Holm Oak Avenue, both pinned precisely by their Commons captions and categories.
+- Found a third candidate, a plane tree at Trinity College, but couldn't confirm it's the New Square pair specifically rather than the separate Provost's Plane elsewhere on campus, so left it as found_needs_check instead of guessing.
+- No photo anywhere open for the sequoia at the President's residence, the private-garden yew (expected, it's barely open to the public), Addison's Walk, the Provost's Plane itself, the Farmleigh sycamore, or the Corkagh oak avenue.
+- Dublin at 3/10, below the floor, honestly. Moving to Brussels next, then Antwerp, to finish the lead group.
+
 ## 2026-07-23 — Amsterdam photo pass: 4/10 to 5/10 (plus one needing a visual check)
 
 - Second focus-region city (Netherlands, after Edinburgh). Found a strong CC0 match for the Olifantsiep, whose Commons caption names its exact street corner. Found a public-domain candidate for the Lomanstraat tree tunnel too, but couldn't confirm from its description that the canopy effect is actually in frame, so left it as `found_needs_check` instead of approving it blind.

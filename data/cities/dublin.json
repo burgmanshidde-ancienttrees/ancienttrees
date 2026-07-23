@@ -196,12 +196,13 @@
       "access": "Free, campus grounds generally open to visitors during daylight hours",
       "transport": "Luas Green Line to Trinity, or Pearse Street DART station, both a short walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Platanus_orientalis-Trinity_College_Dublin.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Yair Haklai, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
+      "notes": "Photo shows a burred-trunk plane tree captioned only 'on the Trinity College campus', with no category or coordinate tying it to New Square specifically rather than elsewhere on campus (Trinity has at least one other notable plane, the Provost's Plane, dub_005). Left as found_needs_check rather than approved pending confirmation of which tree this is.",
       "location_precision": "approximate"
     },
     {
@@ -226,12 +227,13 @@
       "access": "Free, public park, open at all hours",
       "transport": "DART to Raheny or Harmonstown station, then a short walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Tree_of_Life_Sculpture_St_Annes_Park.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "UtDicitur, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "ai_generated",
+      "notes": "Photo verified on Commons: caption places it exactly at 'the junction of Watermill Road and James Larkin Road' in St Anne's Park, carved from a dead Monterey cypress by Tommy Craggs, matching this entry precisely (source's 2015 vs this entry's 2015-2018 carving timeline is consistent, the piece was finished in stages).",
       "location_precision": "approximate"
     },
     {
@@ -255,12 +257,13 @@
       "access": "Free, public park, open at all hours",
       "transport": "DART to Raheny or Harmonstown station, then a short walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/St_Anne%27s_Park_is_the_second_largest_municipal_park_in_Dublin_-_panoramio_%2830%29.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "William Murphy, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "ai_generated",
+      "notes": "Photo verified on Commons: filed under both Category:Saint Anne's Park, Dublin and Category:Quercus ilex (cultivated), showing a straight avenue of dense dark evergreen trees consistent with the holm oak avenue described.",
       "location_precision": "approximate"
     },
     {
