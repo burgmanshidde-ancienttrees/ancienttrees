@@ -203,13 +203,13 @@
       "access": "Free, public street",
       "transport": "Tram 14, Zeeburgerdijk area",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Huge_city_tree_in_Amsterdam-East%2C_on_the_Zeeburgerdijk.jpg",
+        "license": "CC0 1.0",
+        "attribution": "Fons Heijnsbroek (FotoDutch), via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Sources give a planting date range of 1900-1915 rather than a single year. Exact GPS is a street-level estimate; monumentaltrees.com likely holds a precise pin but its page could not be fetched for independent verification per the project's sourcing rules.",
+      "notes": "Sources give a planting date range of 1900-1915 rather than a single year. Exact GPS is a street-level estimate; monumentaltrees.com likely holds a precise pin but its page could not be fetched for independent verification per the project's sourcing rules. Photo verified on Commons: caption places 'a huge tree with heavy branches which need solid support' at the corner of Zeeburgerdijk and Panamalaan, matching bomenbieb.nl's own description of this tree's position. Dated 2013, before the 2015 truck-damage repair, so shows an earlier state of the same tree.",
       "location_precision": "approximate"
     },
     {
@@ -233,13 +233,13 @@
       "access": "Free, public street",
       "transport": "Tram 2, Amstelveenseweg, 5-10 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Lomanstraat_foto_1.JPG",
+        "license": "Public domain",
+        "attribution": "Alf van Beem, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Species is the regionally typical London plane but not explicitly confirmed in sources found. Exact planting date is not documented; estimated from the Plan Zuid development timeline (council approval 1917). The wartime survival story is explicitly unverified local lore, not a sourced fact.",
+      "notes": "Species is the regionally typical London plane but not explicitly confirmed in sources found. Exact planting date is not documented; estimated from the Plan Zuid development timeline (council approval 1917). The wartime survival story is explicitly unverified local lore, not a sourced fact. Photo is categorised on Commons as 'Lomanstraat, Amsterdam' and public domain, but its description gives no detail confirming the overhead canopy/tunnel effect specifically, so left as found_needs_check rather than approved pending a visual check.",
       "location_precision": "confirmed"
     },
     {

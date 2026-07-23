@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Amsterdam photo pass: 4/10 to 5/10 (plus one needing a visual check)
+
+- Second focus-region city (Netherlands, after Edinburgh). Found a strong CC0 match for the Olifantsiep, whose Commons caption names its exact street corner. Found a public-domain candidate for the Lomanstraat tree tunnel too, but couldn't confirm from its description that the canopy effect is actually in frame, so left it as `found_needs_check` instead of approving it blind.
+- No photo exists anywhere open for the Heimanseik (Artis keeps its own photography copyrighted), the Vondelpark poplar, the Hortus cycad, or the Amstelkade olive willow. For the cycad specifically, deliberately did not reach for a generic photo of the species from elsewhere, since this project already had to correct exactly that mistake once (a Kirstenbosch photo used for what should have been the Amsterdam specimen). Recorded all 4 as missing rather than stretched.
+- Amsterdam at 5/10, below the floor, honestly.
+- Moving to the rest of the lead group next (Dublin, Brussels, Antwerp), then the marquee European cities.
+
 ## 2026-07-23 — Edinburgh photo pass: 1/10 to 4/10, plus a live location fix
 
 - Started the photo floor work from Hidde's 2026-07-22 decision (80% target, focus region UK/Netherlands first). Edinburgh was the weakest UK city, only London's already at 10/10.
