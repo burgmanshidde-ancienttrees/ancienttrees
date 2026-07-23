@@ -44,6 +44,16 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Prague: 17th city live, 10 trees researched
+
+- New city, the next `pending` in the tier-1 list after Vienna. Researched from Prague's official pamatny strom register (protecting individual trees since 1992, roughly 200 citywide), Czech Wikipedia's per-tree pages, and the city's own memorial-tree site (prazskestromy.cz).
+- **9/10 photos found**, all Wikimedia Commons, all CC BY-SA 3.0 or 4.0, every URL checked and confirmed live before use. Only Neruda's Pear Tree came up empty after a real search.
+- 4 trees flagged honestly: two disputed age ranges (the Beethoven Plane, Prague's likely-oldest visitable tree at 200-300 years depending on source, and the Karlovo namesti plane), one 80-year age disagreement (the Stromovka ginkgo), and one thinly-sourced entry (the Seminary Garden field maple, whose only sources trace to one underlying record). Details in CURATION.md.
+- Two judgement calls on hard rule 10: dropped Prague's actual oldest tree, the 550-year Dub Karel oak at a private castle park in Kolodeje, and named it instead in the question-page context as the tree nobody can visit. Also researched then dropped a "400-year-old Prague Castle yew" lead that turned out, on closer checking, to be a different tree entirely: a yew in the Franciscan monastery's enclosed cloister courtyard, explicitly not open to the public. A second candidate (the Turbova estate yews in Kosire) was dropped on the same rule.
+- One correction mid-research: a repeated "oldest white oak of its species in Czech Republic" claim for a Stromovka tree had no age, girth or precise location behind it anywhere, just the bare superlative. Dropped per hard rule 8, replaced with the better-documented Seminary Garden field maple.
+- Kept one tree with a stated access caveat rather than dropping it: Neruda's Pear Tree is only in Prague's lower-tier "significant trees" list, not a legally protected memorial tree like the other nine, and the story says so plainly.
+- Site rebuilt, all contracts validated on the first pass. Everything committed and pushed.
+
 ## 2026-07-23 — Vienna: 16th city live, 10 trees researched
 
 - New city, the next `pending` in the tier-1 list. Researched from Vienna's official Naturdenkmal register (protecting individual trees since 1936, with an exact protection date for almost everything), Wikipedia's district-level Naturdenkmäler lists, and dedicated pages per tree.
