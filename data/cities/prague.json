@@ -1,0 +1,334 @@
+{
+  "city": "Prague",
+  "country": "Czech Republic",
+  "status": "needs_curation",
+  "intro": "Prague protects its old trees the same way it protects buildings: since 1992, national law lets the city legally register individual specimens as pamatne stromy, memorial trees, each with its own protection order and a fineable offence for damaging one. Roughly 200 trees currently hold that status across the city. Most of what follows are London planes planted in aristocratic gardens two centuries ago, alongside a monastery ash, an island oak tamed by imperial flood engineers, and a beech that split into two trunks on a 17th century battlefield. All ten are free to visit.",
+  "meta_description": "Prague protects its old trees by law. Ten remarkable specimens, from a disputed-age plane by the Lennon Wall to a 45-metre beech on a 1620 battlefield.",
+  "question_answer": "The oldest tree in Prague that anyone can actually go and see is the Beethoven Plane, a London plane growing in the garden of the Grand Priory Palace on Velkoprevorske namesti in Mala Strana, estimated at somewhere between 200 and 300 years old. Its exact planting date is disputed, but its trunk, seven and a half metres around, is the thickest of any protected tree in the city, and it towers over the wall where tourists photograph the Lennon Wall without ever looking up.",
+  "question_meta": "Prague's oldest visitable tree is a 200-300 year old plane by the Lennon Wall. Where it stands, and the city's ten most remarkable trees.",
+  "question_context": "Prague has an older tree than this one, but nobody can visit it. Dub Karel, a 550 year old oak in a private castle park at Kolodeje, is Prague's oldest tree by a wide margin, and its own official record calls it the most massive tree in the city. The land is privately owned and closed to visitors, so per this site's rule on withheld locations it is left off the list rather than published as a destination nobody can reach. That leaves the Beethoven Plane as the oldest tree anyone can actually walk up to. It grows in the garden of the Grand Priory Palace, once the Prague seat of the Order of Malta, on Velkoprevorske namesti in Mala Strana, its trunk towering above the same wall famous today as the Lennon Wall. The romantic story, that a young Beethoven sat dreaming beneath it during his 1796 visit, does not survive contact with the calendar: he was in Prague in February, an unlikely month for garden reveries. Its real age is disputed among Czech sources, ranging from around 200 to nearly 300 years, but no other protected tree in the city comes close to its girth.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Prague?",
+      "a": "The oldest tree anyone can visit is the Beethoven Plane in the Grand Priory Garden, Mala Strana, estimated at 200 to 300 years old depending on the source. An older oak exists at a private castle park in Kolodeje but sits on land closed to the public, so it is not published here."
+    },
+    {
+      "q": "Are Prague's ancient trees free to visit?",
+      "a": "All ten trees on this list are free to see. They stand in public parks, city gardens and one nature reserve, and none require an admission ticket."
+    },
+    {
+      "q": "What is a pamatny strom?",
+      "a": "A legally protected memorial tree, a status Czech law has allowed since 1992 for specimens of exceptional age, size or value. Prague currently has roughly 200 of them, each individually registered with its own protection order."
+    },
+    {
+      "q": "Why does Prague have so many old plane trees?",
+      "a": "London planes were a fashionable, hardy choice for aristocratic and monastery gardens across Central Europe from the late 1700s on, and several of the trees planted then in Prague's palace and island gardens are still standing. Four of them made this list."
+    }
+  ],
+  "trees": [
+    {
+      "id": "prg_001",
+      "name": "The Beethoven Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "estimated 200-300 years",
+      "age_min": 200,
+      "age_max": 300,
+      "location": {
+        "address": "Grand Priory Garden, Velkoprevorske namesti, 118 00 Praha 1",
+        "latitude": 50.0863,
+        "longitude": 14.4069,
+        "neighbourhood": "Mala Strana"
+      },
+      "story": "The thickest protected tree in Prague has a trunk seven and a half metres around, and its most famous story is almost certainly false. Local guides say Ludwig van Beethoven rested beneath this plane during his 1796 visit to Prague, dreaming of a 19 year old countess while lodging at the nearby Golden Unicorn inn. He was in the city in February. Prague historians point out that picturing a composer dreamily sitting under a bare tree in midwinter is more charming than credible. What is verified is the trunk itself: 752 centimetres around as of 2013, up from 670 in 1996. It grows in the garden of the Grand Priory Palace on Velkoprevorske namesti, towering over the wall that has carried John Lennon graffiti since the 1980s, tall enough that most people photographing the Lennon Wall never look up to notice the tree that shades it. Its exact age is disputed: the Order of Malta's own legend claims the 12th century, which is botanically impossible since this hybrid plane did not exist before 1700, while official records put the planting between 1725 and around 1810. Either way it is very likely the oldest plane tree, and the most massive protected tree of any species, in Prague.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Beethoven%C5%AFv_platan",
+        "https://botany.cz/cs/platan-u-velkoprevorskeho-palace/"
+      ],
+      "access": "Free; the tree towers above the public Grand Priory Garden wall on Velkoprevorske namesti and is visible from the square by the Lennon Wall at all times. The garden itself, used by the Artiseme design gallery, may keep separate hours to enter directly.",
+      "transport": "5 min walk from Malostranska tram and metro stop, via the Lennon Wall on Velkoprevorske namesti",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Velkoprevorsky_palac_Beethovenuv_platan.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Balaban, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Registered as Naturdenkmal-equivalent pamatny strom (registry 104326), protected since 30 July 1998. Age is genuinely disputed across sources: Czech Wikipedia cites a circa-1810 estimate from the national protected-tree register (USOP) alongside a documented 1725-1727 Baroque garden renovation as the more likely planting window; one secondary tourism source claims 290 years, which would push planting closer to 1735. Stated here as a wide, honest range (200-300) rather than a single false-precision number. The Beethoven anecdote is explicitly debunked by both primary sources as implausible given the February timing of his 1796 Prague visit.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "prg_002",
+      "name": "The Plane of Karlovo namesti",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "estimated 160-190 years",
+      "age_min": 160,
+      "age_max": 190,
+      "location": {
+        "address": "Park na Karlove namesti, 128 00 Praha 2",
+        "latitude": 50.0763,
+        "longitude": 14.4202,
+        "neighbourhood": "Nove Mesto"
+      },
+      "story": "Prague's most photographed memorial tree earned an unprintable nickname for the shape of one branch. The plane at Karlovo namesti sends a limb down toward the ground before it curls back upward, a silhouette locals have joked about for decades. Planted before the square was landscaped into a public park in 1876, the tree is Prague's most recognisable protected tree, with a trunk measured at nearly eight metres around in 2004 and a crown that spreads across the western half of the park. It has not had an easy two centuries. Restorers opened and cleaned a large cavity in its trunk in 1985, propped up the low branch responsible for its nickname, and in 2013 ringed the whole tree in a fence after years of visitors climbing on the very limb they came to look at. Prague declared it a protected memorial tree on 7 October 1998 for its growth, age and value as a specimen. Estimates for its exact age disagree, ranging from about 160 to 190 years depending on the source, which would put its planting somewhere between the early 1800s and the 1860s. Nobody has found a planting record to settle it.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Platan_javorolist%C3%BD_na_Karlov%C4%9B_n%C3%A1m%C4%9Bst%C3%AD",
+        "https://www.prazskestromy.cz/stromy/pamatne-stromy/15-platan-javorolisty-na-karlove-namesti/"
+      ],
+      "access": "Free, public park (Park na Karlove namesti), open at all times",
+      "transport": "3 min walk from Karlovo namesti metro station (Line B)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Platanus_hispanica%2C_Charles_Square%2C_Prague_01.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Yekaterina Borisova, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Registered pamatny strom, protected since 7 October 1998. Girth (795 cm, 2004) and height (17 m, 2009) are confirmed by two independent sources. Age is flagged because sources disagree meaningfully: one gives a maximum estimate of 160-170 years, Czech Wikipedia gives approximately 190 years; stated here as the full 160-190 range rather than picking one.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "prg_003",
+      "name": "The Plane of Kinsky Garden",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "estimated 180-200 years",
+      "age_min": 180,
+      "age_max": 200,
+      "location": {
+        "address": "Kinskeho zahrada, near the entrance from Kinskeho namesti, 150 00 Praha 5",
+        "latitude": 50.0789,
+        "longitude": 14.4031,
+        "neighbourhood": "Smichov, Petrin"
+      },
+      "story": "The largest tree on all of Petrin hill also lost its own sculpture to theft. In 1928 the sculptor Karel Dvorak placed a statue called The Fourteen Year Old at the foot of this plane in Kinsky Garden, and at some point in the following decades it disappeared. It now sits in a Prague City Museum storeroom, with a replacement reportedly still planned. The tree itself needed no help to become a landmark: at 28 metres tall with a trunk 546 centimetres around, it is visibly larger than anything else growing across the whole of Petrin, a hill covered in parks. It was planted during the first phase of the garden's construction, which ran until 1836, under a design by the Viennese architect Heinrich Koch for the Kinsky family, and Prague declared it a protected memorial tree on 30 July 1998 for its growth, age and dendrological value. In 2004 it was one of thirteen Prague trees chosen for a genetic preservation programme that collects material from the city's oldest specimens before disease or storms can take them. For now it still shades the lower, flatter part of the garden nearest the entrance from Kinskeho namesti, exactly where it has stood for close to two centuries.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Platan_javorolist%C3%BD_v_zahrad%C4%9B_Kinsk%C3%BDch",
+        "https://itras.cz/platan-v-zahrade-kinskych/"
+      ],
+      "access": "Free, public garden (Kinskeho zahrada), open daily",
+      "transport": "5 min walk from the Svandovo divadlo tram stop, entrance from Kinskeho namesti",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Praha%2C_Platan_javorolist%C3%BD_v_zahrad%C4%9B_Kinsk%C3%BDch.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Palickap, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Registered pamatny strom, protected since 30 July 1998. Girth (546 cm) and height (28 m) confirmed by two independent sources. Age given as an estimated 180-200 year range: one source states an estimated 180 years, while the documented planting window (1825-1836) implies closer to 190-200 by 2026; both are plausible and not a real contradiction, so the wider range is used rather than a single figure.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "prg_004",
+      "name": "The Plane of Kampa",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "213 years",
+      "age_min": 200,
+      "age_max": 220,
+      "location": {
+        "address": "Kampa Park, northern edge near the Liechtenstein Palace entrance, 118 00 Praha 1",
+        "latitude": 50.0850,
+        "longitude": 14.4083,
+        "neighbourhood": "Mala Strana, Kampa"
+      },
+      "story": "A countess planted this tree in 1813 to dress up her family's riverside garden with something exotic, and it has outgrown every other reason anyone remembers her. Barbora Kolowratova Krakovska had the grounds beside the Vltava planted with foreign flowers and trees that year, and this plane is the clearest survivor of her garden, now absorbed into Kampa Park. It reaches 35 metres, taller than most buildings on the island, with a trunk 504 centimetres around, and it anchors the northern end of the park right where visitors enter from beside the Liechtenstein Palace. Prague declared it a protected memorial tree on 8 October 1998. Its exact planting date is one of the more solid facts on this list. Most of Prague's old plane trees carry an estimated age with a decade or two of margin either side; this one has a year, because someone wrote it down at the time. Kampa itself was still gardens and orchards when the tree went in, well over a century before the 1947 to 1948 landscaping that turned the island into the public park it is today, which means the tree predates the park built around it by more than a hundred years.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Platan_javorolist%C3%BD_na_Kamp%C4%9B",
+        "https://botany.cz/cs/platan-na-kampe/"
+      ],
+      "access": "Free, public park (Kampa Park), open at all times",
+      "transport": "3 min walk from Malostranska tram and metro stop, via the steps down to Kampa near Charles Bridge",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Park_Kampa%2C_pam%C3%A1tn%C3%BD_platan_javorolist%C3%BD_a_Lichten%C5%A1tejnsk%C3%BD_pal%C3%A1c.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "SJu, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Registered pamatny strom (registry 104322/11122), protected since 8 October 1998. Planting year (1813) and planter (Barbora Kolowratova-Krakovska) are documented and consistent across both sources, unusually precise for a Prague memorial tree.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "prg_005",
+      "name": "The Twin Beech of Hvezda",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "estimated 230 years",
+      "age_min": 210,
+      "age_max": 250,
+      "location": {
+        "address": "Obora Hvezda nature reserve, near Brevnovska brana, 162 00 Praha 6-Liboc",
+        "latitude": 50.0804,
+        "longitude": 14.3385,
+        "neighbourhood": "Liboc, Praha 6"
+      },
+      "story": "The tallest tree on this list stands on a 17th century battlefield and splits into two trunks a few feet off the ground, which is why it is simply named Twin Beech. At 45 metres it beats every other tree here for height by a wide margin, in the Star Game Reserve on Prague's western edge, where the armies of the Bohemian Revolt collided with the Habsburgs in 1620. The beech itself came generations later, planted sometime after 1763, when the reserve was restored and replanted with beeches, oaks and hornbeams following decades of neglect. Its trunk, 508 centimetres around where it forks, now carries a binding to keep the two main stems from splitting apart under their own weight, and a wooden fence around its base, installed after years of visitors carving initials and hearts into the bark. Prague declared it a protected natural monument on 22 August 2001. It stands about 170 metres from the reserve's Brevnov Gate, in sight of the star shaped Renaissance hunting lodge the whole park is named for, a building that has watched over this beech's entire two and a half centuries of growth without ageing anywhere near as gracefully itself.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Buk_dvoj%C3%A1k_v_obo%C5%99e_Hv%C4%9Bzda",
+        "https://www.praha-priroda.cz/lesy/obora-hvezda/"
+      ],
+      "access": "Free, public nature reserve (Obora Hvezda)",
+      "transport": "10 min walk from the Obora Hvezda or Vypich tram and bus stops",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Praha%2C_obora_Hv%C4%9Bzda%2C_pam%C3%A1tn%C3%BD_buk_v_jihov%C3%BDchodn%C3%AD_%C4%8D%C3%A1sti.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Sefjo, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Registered natural monument (registry 104290), protected since 22 August 2001. Girth (507-508 cm) and height (45 m) confirmed by two independent sources. Age estimates range from 210 to 250 years across two assessments (2016 and 2019); midpoint of roughly 230 used as the headline estimate with the full range preserved in age_min/age_max.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "prg_006",
+      "name": "The Ginkgo of Stromovka",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "estimated 140-220 years",
+      "age_min": 140,
+      "age_max": 220,
+      "location": {
+        "address": "Kralovska obora (Stromovka), near the Mistodrzitelsky letohradek, 170 00 Praha 7-Bubenec",
+        "latitude": 50.1045,
+        "longitude": 14.4128,
+        "neighbourhood": "Bubenec"
+      },
+      "story": "Two very different ages have been written down for this tree, 80 years apart, and nobody has reconciled them. One record dates its planting to around 1804, from the earliest landscaping of the royal nursery here under the gardener Fuchs. A separate 2016 assessment put its age at only around 130 years. Both figures come from people who study this specific tree, and the gap between them is wide enough that this page states the honest range rather than pick a side: somewhere between 140 and 220 years old. What is not in dispute is the tree itself, a male ginkgo with a trunk 362 centimetres around and a crown 16 metres wide, growing near the old Mistodrzitelsky letohradek, the former Governor's Summer House, in a corner of Stromovka that used to be a nursery bed. Ginkgos are sometimes called living fossils because the species has barely changed in over 200 million years, and this one is among the oldest specimens in the Czech Republic regardless of which age estimate is correct. Prague declared it a protected memorial tree in 2004. Every November its fan shaped leaves turn a single uniform gold and drop within days, the trick every ginkgo performs.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Jinan_v_Buben%C4%8Di",
+        "https://www.nasepraha.cz/za-pamatnymi-stromy-prahy-7-jinan-dvoulalocny-v-kralovske-obore/"
+      ],
+      "access": "Free, public park (Stromovka / Kralovska obora)",
+      "transport": "10 min walk from the Vystaviste tram stop, within Stromovka park near the Governor's Summer House",
+      "best_time": {
+        "months": [11],
+        "label": "November, when its fan-shaped leaves turn gold and drop within days"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Praha-Bubene%C4%8D_-_pam%C3%A1tn%C3%BD_jinan_dvoulalo%C4%8Dn%C3%BD_v_zahradnictv%C3%AD_u_Kr%C3%A1lovsk%C3%A9_obory_%281%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "MartinVeselka, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Registered pamatny strom, formally declared 16 July 2004. Age is flagged because two sources genuinely disagree by roughly 80 years: a circa-1804 planting estimate tied to the original nursery landscaping versus a 2016 assessment of approximately 130 years. Stated as a wide honest range (140-220) rather than a false-precision single figure. Girth (362 cm) and crown width (16 m) are consistent across sources.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "prg_007",
+      "name": "The Oak of Cisarsky ostrov",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "estimated 190-200 years",
+      "age_min": 190,
+      "age_max": 200,
+      "location": {
+        "address": "Cisarsky (Trojsky) ostrov, embankment road, 170 00 Praha 7-Bubenec",
+        "latitude": 50.1113,
+        "longitude": 14.4138,
+        "neighbourhood": "Bubenec, Trojsky ostrov"
+      },
+      "story": "Prague's very first legally protected oak grows on an island that used to flood every spring until imperial engineers tamed it. Cisarsky ostrov, Emperor's Island, took its name from Habsburg era work to control the Vltava, and this pedunculate oak has stood on its embankment road since sometime in the early 1800s, watching barges pass on the navigation canal beside it rather than the river itself. Prague declared it a protected memorial tree on 26 October 1994, the first oak in the city to receive that status, ahead of every other oak now on this list. Its trunk splits into branches unusually low, at just a metre and a half up, and the crown that results spreads wider than the tree is tall, a shape typical of an oak that grew alone in open ground rather than crowded by a forest. A 2013 measurement put the girth at 457 centimetres, and the tree is estimated at around 190 to 200 years old, above average for its age and size according to the city's own survey. It stands about 200 metres from the footbridge that connects the island to Stromovka, on a quiet embankment road most visitors to the park next door never think to cross.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Velk%C3%BD_dub_na_C%C3%ADsa%C5%99sk%C3%A9m_ostrov%C4%9B",
+        "https://www.prazskestromy.cz/stromy/pamatne-stromy/45-velky-dub-letni-na-cisarskem-ostrove/"
+      ],
+      "access": "Free, public riverside path on Cisarsky ostrov",
+      "transport": "Bus 112 to the Kovarna stop, then a short walk along the island embankment; or cross the footbridge from Stromovka",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Praha%2C_Velk%C3%BD_dub_na_C%C3%ADsa%C5%99sk%C3%A9m_ostrov%C4%9B.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Sefjo, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Registered as Prague's first pamatny dub (memorial oak), protected since 26 October 1994 (registry 104336/11136). Girth (457 cm, 2013 measurement) and the 190-200 year age estimate are consistent across both sources.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "prg_008",
+      "name": "The Ash of Strahov Garden",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "estimated 210-230 years",
+      "age_min": 210,
+      "age_max": 230,
+      "location": {
+        "address": "Velka strahovska zahrada, south of Uvoz street, 118 00 Praha 1-Hradcany",
+        "latitude": 50.0863,
+        "longitude": 14.3915,
+        "neighbourhood": "Hradcany, Strahov"
+      },
+      "story": "The tallest tree on this list by trunk alone grows in the one corner of Strahov Monastery the monks decided to share. This ash reaches 37 metres in the Great Strahov Garden, the only part of the monastery complex left open to the public; the rest remains cloistered grounds. It began as an orchard tree in a working fruit garden, planted around the turn of the 19th century, long before anyone thought to protect it. Its trunk splits into three thick limbs about two metres above the ground and keeps climbing, measuring 513 centimetres around at the split as of a 2013 survey, a girth that puts it among the most massive ash trees recorded anywhere in the Czech Republic. Prague declared it a protected memorial tree on 13 October 2007. From the garden beneath it, visitors get one of the better free views in the city, Prague Castle and the rooftops of Mala Strana laid out below the hill, a vista the tree has been growing tall enough to share in for two centuries. At an estimated 210 to 230 years old, it was already well established when the garden's monastic orchard still supplied the friars with fruit rather than a footpath for tourists.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Jasan_ve_Strahovsk%C3%A9_zahrad%C4%9B",
+        "https://itras.cz/strahovsky-jasan/"
+      ],
+      "access": "Free, public garden (Velka strahovska zahrada), the only part of the Strahov Monastery grounds open to visitors",
+      "transport": "10 min walk from the Pohorelec tram stop (lines 22, 23)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Praha%2C_Hrad%C4%8Dany%2C_Velk%C3%A1_strahovsk%C3%A1_zahrada%2C_pam%C3%A1tn%C3%BD_jasan.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Sefjo, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Registered pamatny strom (registry 105072/12762), protected since 13 October 2007. Girth (510-513 cm across 2007 and 2013 measurements) and height (37 m) are consistent across both sources.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "prg_009",
+      "name": "The Field Maple of the Seminary Garden",
+      "species": "Field Maple (Acer campestre)",
+      "age_estimate": "estimated 160-170 years",
+      "age_min": 160,
+      "age_max": 170,
+      "location": {
+        "address": "Seminarska zahrada, above the pond below Petrinske terasy, 118 00 Praha 1",
+        "latitude": 50.0839,
+        "longitude": 14.3990,
+        "neighbourhood": "Mala Strana, Petrin"
+      },
+      "story": "Field maples are usually shrubs. Left alone, most stay a scrubby hedge tree, rarely climbing past a few metres. This one, in the Seminary Garden on Petrin's eastern slope, ignored the script and grew into a proper 24 metre tree, the only field maple in Prague to earn individual legal protection because of it. Its trunk measured 285 centimetres around in a 2013 survey, thick for a species whose Czech name, babyka, is usually attached to something closer to a bush. Prague declared it a protected memorial tree on 19 June 2009, and it stands above a small pond just below the Petrinske Terasy restaurant, roughly 250 metres north of the Nebozizek cable car stop, a stretch of the garden slightly off the paths most visitors to Petrin actually walk. At an estimated 160 to 170 years old, it has had more than enough time to prove it is the exception rather than the rule for its species. People who study field maples cite examples like this one as evidence the plant's usual shrub form is a matter of circumstance, not biology. Give it room, apparently, and a field maple will eventually decide to become a tree instead.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Babyka_v_Semin%C3%A1%C5%99sk%C3%A9_zahrad%C4%9B",
+        "https://www.wikidata.org/wiki/Q26790033"
+      ],
+      "access": "Free, public garden (Seminarska zahrada)",
+      "transport": "3 min walk from the Nebozizek funicular stop",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Babyka_v_Seminarske_zahrade.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Limojoe, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Registered pamatny strom (registry 105426/13166), protected since 19 June 2009. Girth (278-285 cm across 2008 and 2013 measurements), height (24 m) and the 2009 registration date are confirmed on the Czech Wikipedia article; the Wikidata entry corroborates the same registry numbers and species identification, but no independent narrative source was found beyond these two closely linked records, so this is flagged as thinner sourcing than the rest of the list despite the consistent data.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "prg_010",
+      "name": "Neruda's Pear Tree",
+      "species": "Wild Pear (Pyrus communis)",
+      "age_estimate": "estimated 190 years",
+      "age_min": 170,
+      "age_max": 200,
+      "location": {
+        "address": "Seminarska zahrada, path crossing between Petrinske terasy and Hellichova street, 118 00 Praha 1",
+        "latitude": 50.0842,
+        "longitude": 14.4005,
+        "neighbourhood": "Mala Strana, Petrin"
+      },
+      "story": "This pear tree remembers a poet's birthplace that no longer exists. Jan Neruda, the 19th century writer whose name now marks Prague's most photographed street on the other side of the hill, was born in an army barracks that once stood near this spot on the eastern slope of Petrin; the barracks are long demolished, but the pear tree that stood nearby when he was a boy is still bearing fruit. Prague's tree survey estimates its age at around 190 years, measured a trunk 292 centimetres around in 2015, and calls it exceptionally old for its species, since wild pears rarely reach anywhere close to two centuries. Unlike most trees on this list, it carries no formal legal protection; the city added it to its inventory of significant trees only in 2013, one tier below the memorial tree status that comes with fines for damaging a tree. It grows at a quiet path crossing in the Seminary Garden, in the lower orchard section between the Petrinske Terasy restaurant and Hellichova street, a former monastery garden open to the public since 1930. Most visitors climbing Petrin for the views pass within a few metres of it without knowing an old pear tree, let alone one tied to Neruda, is there at all.",
+      "verified_sources": [
+        "https://www.prazskestromy.cz/stromy/vyznamne-stromy/22-nerudova-hrusen-na-petrine/",
+        "https://cs.wikipedia.org/wiki/Semin%C3%A1%C5%99sk%C3%A1_zahrada"
+      ],
+      "access": "Free, public garden (Seminarska zahrada), open since 1930",
+      "transport": "5 min walk from the Hellichova tram stop (lines 12, 20, 22), via the Seminary Garden entrance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Not a legally protected pamatny strom, only an entry in Prague's separate, lower-tier 'significant trees' inventory since 2013, unlike every other tree on this list. No exact coordinates were published in either source; location given here is approximate, triangulated from the described path crossing between Petrinske Terasy restaurant and Hellichova street within the Seminary Garden. No open-licensed photo found despite a real search across Commons, iNaturalist and Flickr.",
+      "location_precision": "approximate"
+    }
+  ]
+}
