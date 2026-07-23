@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-23 — Istanbul photo hunt (next tier, no new finds)
+
+- Next city in the tier after Tokyo (Istanbul, Kyoto, New York). Istanbul was at 2/10 approved, with 8 missing: the Oldest Plane of Bahçeköy, the Ahtapot Çınar, the Taşlı Çınar, the Çengelköy Plane, the Ata Fıstık Çamı, the Florya Mastic Tree, the Ehrami Servi of Büyükada, and the Plane Trees of Beykoz Çayırı.
+- Hunted Wikimedia Commons, iNaturalist, Flickr and Openverse for all 8, in English and Turkish. Nothing cleared the licence bar. This matches the pattern a prior run already recorded for this city: real photos of several of these exact trees exist on anitagac.istanbul (the İBB's own monument-tree registry) but that site states no reuse licence anywhere, so none of it qualifies under the "verified open licence" rule.
+- One near-miss checked and rejected on licence, not identity: a Flickr photo plausibly titled for Çengelköy is marked "All rights reserved."
+- Istanbul stays at 2/10. As recorded previously, if Hidde ever wants to close this gap, asking İBB directly for reuse permission on anitagac.istanbul's own photography is the faster path, not more open-web searching.
+- Site build unaffected (no data changes this pass).
+
 ## 2026-07-23 — Tokyo photo hunt: 7/10 to 8/10, second city to clear the floor
 
 - Moved to the next tier per the ladder (Istanbul, Kyoto, New York, Tokyo) after closing out the marquee-European sweep. Tokyo was closest to the 8/10 floor at 7/10, needing just one more.
