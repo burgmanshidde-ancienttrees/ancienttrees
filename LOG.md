@@ -44,6 +44,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — New York: no new finds, closing this tier
+
+- Last city in the Istanbul/Kyoto/New York tier. Genuine search across all 7 missing trees; nothing cleared the licence bar. New York stays at 3/10.
+- This closes the whole tier for now: Tokyo 8/10 (floor cleared), Istanbul 2/10, Kyoto 4/10, New York 3/10. Every published city has now had at least one real photo-hunting pass this run.
+- Everything from this session is committed and pushed. Good stopping point for the photo-floor work; next run can pick up improvement-mode cycling (oldest-published-first) or the next rung of the ladder.
+
 ## 2026-07-23 — Kyoto photo pass: 3/10 to 4/10
 
 - Continuing the tier after Istanbul. Found 1: the Reclining Dragon Pine of Yoshimine-dera, via Commons's own dedicated category for the tree, visually confirmed against its documented trained horizontal form. Kyoto now at 4/10. Details in CURATION.md.

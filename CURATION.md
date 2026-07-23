@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-23 — New York photo hunt (last in this tier, no new finds)
+
+- Last city in the tier started after the marquee-European sweep (Istanbul, Kyoto, New York), following Tokyo which already cleared the floor. New York was at 3/10 approved, with 7 missing: the Black Tupelo of the Ramble, the Sassafras of Green-Wood, the Manchurian Linden of Kissena Park, the Clove Lakes Colossus, the Yew of Hero Park, the Red Oak of the Thain Family Forest, and the Red Horse Chestnut of Van Cortlandt House.
+- Hunted Wikimedia Commons, iNaturalist and Flickr for all 7. Commons has a dedicated "Thain Family Forest" category at the New York Botanical Garden, but its 6 files identify only a hemlock grove by species, nothing tied to the specific red oak. Nothing else turned up a species-and-location match tight enough to approve.
+- No change from the prior run's finding on the Clove Lakes Colossus specifically: its one clean photo (Flickr, "The Clove Lakes Colossus" by Matt Green) is still CC BY-NC-SA, still not usable for a commercial product.
+- New York stays at 3/10. This closes the tier: Tokyo 8/10 (cleared the floor), Istanbul 2/10, Kyoto 4/10, New York 3/10.
+- Site build unaffected (no data changes this pass).
+
 ## 2026-07-23 — Kyoto photo hunt (next tier: 3/10 to 4/10)
 
 - Continuing the tier after Istanbul. Kyoto was at 3/10 approved, with 7 missing.
