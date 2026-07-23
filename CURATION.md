@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-23 — Tokyo photo hunt: 7/10 to 8/10, second city to clear the floor
+
+- Moved to the next tier per the ladder (Istanbul, Kyoto, New York, Tokyo) after closing out the marquee-European sweep. Tokyo was closest to the 8/10 floor at 7/10, needing just one more.
+- Found and approved **tok_007** (the Ginkgo of the Sperm Discovery, Koishikawa Botanical Garden): a CC BY-SA 4.0 Commons photo, in the dedicated Commons category "The Ginkgo Where Sperm Was Discovered," whose own caption reads "a stele commemorating the 60th anniversary of the discovery of spermatozoids of Ginkgo biloba (1896-1956), next to the old specimen, more than 300 years old." Visually confirmed: the frame shows the memorial stone with a large tree trunk directly behind and beside it. A prior run rejected a different candidate for this exact tree because it showed only the marker with no tree visible; this one clears that bar since the trunk is genuinely in frame next to its own dedicated memorial.
+- Checked the other 2 missing trees again (the Sensoji War Ginkgo, the Ueno Toshogu Camphor) with the same visual-verification approach. One candidate for the Sensoji ginkgo, a CC BY-SA 4.0 photo captioned only "Sensoji Temple grounds" with coordinates about 150m from this entry's pin, was checked and rejected: the caption doesn't name which of the temple's several trees is shown, and Sensoji's grounds are large enough that proximity alone doesn't confirm identity. Nothing found for the Ueno Toshogu camphor.
+- **Tokyo now at 8/10, the second city on the site to clear the photo floor after London.** Worth flagging plainly since it's the first real proof the floor is reachable outside the one city that started there.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-23 — Madrid photo hunt (marquee European cities, closing this sweep: 2/10 to 4/10)
 
 - Last marquee European city this run, after Lisbon, Paris, Rome and Barcelona. Madrid was at 2/10 approved, with 8 missing.
