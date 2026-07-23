@@ -44,6 +44,16 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Antwerp photo pass: 0/10 to 5/10, and a real workflow upgrade
+
+- Last lead-group city (Belgium), finishing the UK/Netherlands/Ireland/Belgium sweep the 2026-07-22 photo-floor decision started. Antwerp was the only lead-group city still fully unphotographed.
+- Found and approved 5, all from the Flanders heritage agency's own image bank, CC BY 4.0: the Copper Beech of Sint-Willibrorduskerk, the Summer Linden of Rivierenhof, the Canadian Poplar of Eric Sasselaan, the Peace Tree of the Grote Markt, and a representative shot for the Park Trees of Den Brandt ensemble. Details and the one licence rejection (three Den Brandt Flickr photos, CC BY-NC-SA, not usable) in CURATION.md.
+- Worth flagging clearly: this run actually looked at the photos rather than trusting captions and coordinates alone, fetching each candidate as a raw file and viewing it directly. Every prior photo pass in this project's history has noted "text workflow without image vision" as a real limitation and left ambiguous matches as `found_needs_check` rather than `approved`. That limitation turned out not to be true this run. Worth using on the whole site's backlog of unverified candidates and near-misses, not just new cities, since some rejected-for-caption-uncertainty photos might actually check out on sight.
+- While correcting Rivierenhof's photo, caught its pin was about 480m off from the same heritage register's own coordinates for that tree; updated it, left as `approximate` since it's still not survey-grade.
+- Also chased down a possible second, much older ginkgo that looked like it might belong in Antwerp's Stadspark instead of (or alongside) the current Millennium Ginkgo entry. Turned out to be a different park entirely (Tienen, not Antwerp) with the same common name. No change needed, recorded so nobody re-chases it.
+- Antwerp at 5/10, below the floor, honestly. This closes the lead group: London 10/10, Edinburgh 4/10, Amsterdam 5/10, Dublin 3/10, Brussels 4/10, Antwerp 5/10. Moving to the marquee European cities next (Lisbon, Paris, Rome, Barcelona, Madrid), oldest-published first, and worth a second look with actual image verification rather than assuming prior passes already found everything findable.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-23 — Brussels photo pass: 0/10 to 4/10
 
 - Second "rest of the lead group" city (Belgium), after Dublin. Found solid matches for the Kasterlinde (a Flanders heritage agency photo) and the Oriental Plane of Parc Leopold (captioned as this exact bicentennial tree), plus two good representative shots for the two ensemble entries (Bois de la Cambre, the Cinquantenaire chestnut avenue).

@@ -33,7 +33,13 @@
       "age_estimate": "196-237 years",
       "age_min": 196,
       "age_max": 237,
-      "best_time": { "months": [4, 5], "label": "April and May, when its new leaves are brightest copper-red" },
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "label": "April and May, when its new leaves are brightest copper-red"
+      },
       "location": {
         "address": "Sint-Willibrorduskerk, Heilig Hartstraat, Berchem, Antwerp",
         "latitude": 51.197,
@@ -48,10 +54,10 @@
       "access": "Free, public square",
       "transport": "Tram to Berchem, short walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://beeldbank.onroerenderfgoed.be/images/187946/content/full",
+        "license": "CC BY 4.0",
+        "attribution": "Geert Van der Linden / Flanders Immovable Heritage Agency",
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Age is a documented range, not a single figure: protected since 1949 on the strength of it likely being a liberty tree from either 1789 or 1830, per Flanders' own heritage inventory. Neither date is confirmed. monumentaltrees.com used for cross-check only, per hard rule 1, not copied.",
@@ -64,11 +70,17 @@
       "age_estimate": "unknown, protected since 2010",
       "age_min": 100,
       "age_max": 250,
-      "best_time": { "months": [6, 7], "label": "late June and July, when its flowers scent the whole meadow" },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "late June and July, when its flowers scent the whole meadow"
+      },
       "location": {
         "address": "Rivierenhof, near Sterckshof, Hooftvunderlei / Sterckshoflei, Deurne, Antwerp",
-        "latitude": 51.2131,
-        "longitude": 4.4694,
+        "latitude": 51.215238,
+        "longitude": 4.463411,
         "neighbourhood": "Deurne"
       },
       "story": "A single linden tree earned government protection in 2010 not for its species, which is common, but for exactly where it stands: in front of Sterckshof castle, at the heart of a park whose ownership reads like a highlight reel of Antwerp history. Hof Ter Rivieren began as a modest farm in the 15th century, became the country retreat of a wealthy Antwerp merchant in the 16th, and was bought by the Jesuits in 1618 as a rural escape from the city. The linden, a summer lime rather than the more common small-leaved variety, now anchors a 30 metre protected zone around its own base, a rare individual tree designation from Flanders' heritage agency rather than a blanket park listing. Its size alone does the talking: a broad, high crown visible across the meadow it stands in, opposite the entrance to the Sterckshof manor house, forming what heritage assessors call a visual unity with the protected building beside it. The Rivierenhof became a public park a century ago, one of the largest green spaces in the Antwerp region today, and this tree predates that public opening by centuries, a private estate's ornament turned into a landmark anyone can walk up to for free.",
@@ -79,10 +91,10 @@
       "access": "Free, public park",
       "transport": "Tram or bus to Rivierenhof, Deurne",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Zomerlinde_in_Rivierenhof_-_190761_-_onroerenderfgoed.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Geert Van der Linden / Flanders Immovable Heritage Agency, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "No specific age, circumference or planting date found for this individual tree despite its 2010 monument protection; the estate's own documented history (15th-17th century) is used only as context, not as evidence of this specific tree's age.",
@@ -95,7 +107,13 @@
       "age_estimate": "unknown, national champion",
       "age_min": 80,
       "age_max": 150,
-      "best_time": { "months": [5, 6], "label": "late May, when its white flower clusters hang from every branch" },
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "label": "late May, when its white flower clusters hang from every branch"
+      },
       "location": {
         "address": "Hertoghepark, Desguinlei / Karel Oomsstraat / Markgravelei, Antwerp",
         "latitude": 51.2039,
@@ -126,7 +144,12 @@
       "age_estimate": "unknown, national champion",
       "age_min": 80,
       "age_max": 200,
-      "best_time": { "months": [8], "label": "August, when the fruit drops and stains the ground" },
+      "best_time": {
+        "months": [
+          8
+        ],
+        "label": "August, when the fruit drops and stains the ground"
+      },
       "location": {
         "address": "Hertoghepark, Desguinlei / Karel Oomsstraat / Markgravelei, Antwerp",
         "latitude": 51.2039,
@@ -199,10 +222,10 @@
       "access": "Free, public street",
       "transport": "Tram or bus to Kiel / Nieuw Zuid",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://beeldbank.onroerenderfgoed.be/images/192759/content/full",
+        "license": "CC BY 4.0",
+        "attribution": "Geert Van der Linden / Flanders Immovable Heritage Agency",
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Single source (Flanders heritage inventory listing). Age range reflects typical Canadian poplar growth rates rather than a documented planting date; included on size and visual grounds, not claimed antiquity.",
@@ -230,10 +253,10 @@
       "access": "Free, public square",
       "transport": "Short walk from Antwerpen-Centraal station or any tram to Groenplaats",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://beeldbank.onroerenderfgoed.be/images/186197/content/full",
+        "license": "CC BY 4.0",
+        "attribution": "Geert Van der Linden / Flanders Immovable Heritage Agency",
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "notes": "Age and planting date are exactly documented (3 September 1994), unusually precise for this list. Included for historical significance rather than age, labelled 'Youngest tree' for honesty, same pattern as other cities' young-but-significant entries.",
@@ -260,10 +283,10 @@
       "access": "Free, public park",
       "transport": "Tram or bus to Middelheim / Den Brandt",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://beeldbank.onroerenderfgoed.be/images/385816/content/full",
+        "license": "CC BY 4.0",
+        "attribution": "Kris Vandevorst / Flanders Immovable Heritage Agency",
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Presented deliberately as an ensemble: no individual tree in Den Brandt has a documented age or circumference in the sources checked. The estate's own ownership history (1396, 1790, 1804, 1910, 1911) is documented and used as context only.",
@@ -306,7 +329,12 @@
       "age_estimate": "about 26 years",
       "age_min": 25,
       "age_max": 27,
-      "best_time": { "months": [11], "label": "November, when its fan shaped leaves turn gold and drop within days of each other" },
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when its fan shaped leaves turn gold and drop within days of each other"
+      },
       "location": {
         "address": "Stadspark, between Quinten Matsyslei, Rubenslei and Van Eycklei, Antwerp",
         "latitude": 51.214,
