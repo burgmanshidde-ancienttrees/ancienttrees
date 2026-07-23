@@ -44,6 +44,11 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Kyoto photo pass: 3/10 to 4/10
+
+- Continuing the tier after Istanbul. Found 1: the Reclining Dragon Pine of Yoshimine-dera, via Commons's own dedicated category for the tree, visually confirmed against its documented trained horizontal form. Kyoto now at 4/10. Details in CURATION.md.
+- Moving to New York next (3/10), the last city in this tier.
+
 ## 2026-07-23 — Istanbul: no new finds
 
 - Next in the tier after Tokyo. Genuine search across all 8 missing trees; nothing cleared the licence bar, consistent with the same gap a prior run already hit here (anıtagac.istanbul has real photos of several of these but no stated reuse licence anywhere on the site). Recorded in CURATION.md; Istanbul stays at 2/10.
