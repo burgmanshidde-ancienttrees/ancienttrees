@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-23 — Dublin photo hunt (rest of lead group: Ireland)
+
+- Photo floor pass, third focus-region city, first of the "rest of the lead group" (Ireland, Belgium) after UK and Netherlands. Dublin was at 1/10 approved.
+- Hunted Commons, Geograph Ireland, iNaturalist (including bounding-box API queries), Flickr CC and Openverse for the 9 trees without a photo, plus institutional sites (Trinity's own Trees of Trinity pages, Heritage Ireland, Dublin City Council) for context.
+- Found and approved 2: **dub_007** (the Tommy Craggs cypress sculpture in St Anne's Park, caption pins the exact road junction) and **dub_008** (the Holm Oak Avenue, categorised on Commons under both St Anne's Park and Quercus ilex).
+- Found 1 more, a burred-trunk plane tree photographed on the Trinity College campus, CC BY-SA 4.0 and license-verified, but its caption and categories don't tie it to New Square specifically rather than elsewhere on campus (Trinity has two notable planes on this list, New Square's pair and the separate Provost's Plane). Recorded against **dub_006** as `found_needs_check` rather than approved, since guessing which tree it is would risk the same kind of misattribution this project has caught before.
+- No usable photo found for dub_002 (Queen Victoria's Sequoia, Áras an Uachtaráin), dub_003 (Dean's Tree, a private garden open only a few weeks a year, no photo expected), dub_004 (Addison's Walk), dub_005 (the Provost's Plane specifically), dub_009 (Great Sycamore of Farmleigh) or dub_010 (Oak Avenue of Corkagh).
+- Dublin now at 3/10 approved (4/10 counting the needs-check one). Below the 8/10 floor; recorded honestly.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-23 — Amsterdam photo hunt (focus region: Netherlands)
 
 - Photo floor pass, second focus-region city after Edinburgh. Amsterdam was at 4/10 approved.
