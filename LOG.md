@@ -44,6 +44,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Madrid photo pass: 2/10 to 4/10, closing the marquee-European sweep
+
+- Last city in this run's marquee-European pass. Found 2 CC BY-SA 4.0 photos via the Spanish Wikipedia's own singular-tree articles for the Real Jardín Botánico (the cypress and the Caucasian elm), both visually confirmed and GPS-close to this project's existing pins. Madrid now at 4/10.
+- This closes the marquee-European-cities sweep started after Antwerp finished the lead group: Lisbon 3/10, Paris 6/10, Rome 5/10, Barcelona 4/10, Madrid 4/10. All below the 8/10 floor, all recorded honestly with what was tried and what wasn't found.
+- Per the ladder, next photo-floor work would move to the next tier (Istanbul, Kyoto, New York, Tokyo), oldest-published first, once picked up again. Everything committed and pushed this run; a good stopping point.
+
 ## 2026-07-23 — Rome: no new finds; Barcelona photo pass: 2/10 to 4/10
 
 - Continuing the marquee-European sweep. Rome (5/10) got a genuine search across its 5 missing trees; nothing cleared the licence bar, including a pond photo in Villa Doria Pamphilj checked and rejected for the same reason a prior run already flagged there (uncoordinated, can't confirm it's the same water feature as the Cedar of the Belvedere's own pin, in a park that's already had one cedar mixup).
