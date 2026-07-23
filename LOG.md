@@ -44,6 +44,16 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Vienna: 16th city live, 10 trees researched
+
+- New city, the next `pending` in the tier-1 list. Researched from Vienna's official Naturdenkmal register (protecting individual trees since 1936, with an exact protection date for almost everything), Wikipedia's district-level Naturdenkmäler lists, and dedicated pages per tree.
+- **10/10 photos found on the first pass**, tying London as the only other city to clear the 8/10 floor, thanks to two Viennese heritage photographers (GuentherZ, Michael Kranewitter) who have systematically documented the city's protected trees on Wikimedia Commons. All CC BY or CC BY-SA, licence and attribution recorded.
+- 4 trees flagged honestly (an age or measurement that only one source gives, never a fabricated one). Details in CURATION.md.
+- Two judgement calls worth flagging: dropped Vienna's actual oldest Naturdenkmal, a Roman-era yew grove remnant, because it sits on European Patent Office grounds and sources confirm it is "not publicly accessible" (hard rule 10); also dropped a 400-500 year old oak stand in the Lainzer Tiergarten because the fenced reserve containing it is guided-tour-only, specifically to protect the trees from visitor damage, which reads as the same spirit as rule 10 even on public land.
+- One correction mid-research: an initially promising "thickest tree in Vienna" black poplar turned out to be a delisted, storm-felled tree (toppled 2015). Swapped for a well-documented pedunculate oak in the Prater instead rather than publish an uncertain or dead record-holder.
+- Included one dead relic (Stock im Eisen, a nail-studded trunk not alive since roughly 1440) labelled clearly as a historic relic and excluded from the "oldest tree" answer, which goes to the oldest confirmed living tree instead.
+- Site rebuilt, all contracts validated after a `question_meta` length fix. Everything committed and pushed.
+
 ## 2026-07-23 — New York: no new finds, closing this tier
 
 - Last city in the Istanbul/Kyoto/New York tier. Genuine search across all 7 missing trees; nothing cleared the licence bar. New York stays at 3/10.
