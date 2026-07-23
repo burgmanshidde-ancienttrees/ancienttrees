@@ -2,6 +2,25 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-23 — Barcelona photo hunt (marquee European cities: 2/10 to 4/10)
+
+- Fourth marquee European city this run, after Lisbon, Paris and Rome. Barcelona was at 2/10 approved, with 8 missing.
+- Found and approved 2, both CC BY-SA 3.0 from Wikimedia Commons's "Historic botanical garden of Barcelona" category (Jardí Botànic Vell, Montjuïc), both visually confirmed:
+  - **bcn_005** (Wingnut of the Sot de l'Estany): a Commons file explicitly titled "Pterocarya redheriana al jardí botànic vell," species and garden both named directly in the filename.
+  - **bcn_006** (Green Ash of the Sot de l'Estany): a full-tree shot from a 10-file Commons subcategory documenting this exact specimen, tagged as a legally protected tree in Catalonia (registry ID MA-13.931.07) via its own identification plaque, also photographed separately in the same set.
+- One candidate checked and rejected: an interior-courtyard photo of Casa de la Misericòrdia (CC BY-SA 4.0, clean licence) shows small citrus trees and only one small palm at the frame's edge, not the tall Washingtonia filifera row the entry describes; not a confirmed match, left as `missing` rather than stretched.
+- No usable photo found after real searches for the remaining 6: the Holm Oak of Carrer de l'Encarnacio, the Regrown Carob of Placa de la Natura (Park Güell), the Himalayan Cedar of the Labyrinth, the Magnolia of the Maternity Gardens, the Ombu of Placa Prim, and the Palms of Casa de la Misericordia.
+- Barcelona now at 4/10. Below the 8/10 floor; recorded honestly. Moving to Madrid next (2/10), the last marquee European city in line.
+- Site rebuilt, all contracts validated, pushed.
+
+## 2026-07-23 — Rome photo hunt (marquee European cities, no new finds)
+
+- Third marquee European city this run, after Lisbon and Paris. Rome was at 5/10 approved, with 5 missing: Adonis (Villa Borghese), the Twin Planes of the Eleven Fountains and the Cork Oak of the Orangery (both Orto Botanico di Roma), the Cedar of the Belvedere (Villa Doria Pamphilj), and the Aleppo Pine of Celimontana.
+- Hunted Wikimedia Commons categories for all four locations (including the Orto Botanico's own fountains and Orangery subcategories), plus iNaturalist and Flickr. No photo tied specifically to any of the five named trees turned up.
+- One candidate checked carefully and rejected on the same grounds a prior run already flagged for this exact park: a CC BY-SA 4.0 photo of "il laghetto" in Villa Doria Pamphilj shows a pond, but its caption doesn't name it as Lago del Giglio specifically (the Cedar of the Belvedere's own location), and this park already has one documented cedar mismatch on record (a Villa Doria Pamphilj cedar rejected earlier for sitting 1.2km from this entry's pin). A generic, uncoordinated pond photo in a 180-hectare park with multiple water features isn't enough to call it the same spot; left unused rather than guessed.
+- Rome stays at 5/10. Moving to Barcelona next (2/10), the next marquee European city in line.
+- Site build unaffected (no data changes this pass).
+
 ## 2026-07-23 — Paris photo hunt (marquee European cities, a lead worth flagging for Hidde)
 
 - Second marquee European city this run, after Lisbon. Paris was at 6/10 approved, with 4 missing: the Second Robinier (Jardin des Plantes), the Sequoia of Buttes-Chaumont, the Plane of Parc Montsouris, and the Sophora by the Lake (Buttes-Chaumont).
