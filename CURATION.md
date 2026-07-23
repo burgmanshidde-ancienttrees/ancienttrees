@@ -2,6 +2,23 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-23 — Paris photo hunt (marquee European cities, a lead worth flagging for Hidde)
+
+- Second marquee European city this run, after Lisbon. Paris was at 6/10 approved, with 4 missing: the Second Robinier (Jardin des Plantes), the Sequoia of Buttes-Chaumont, the Plane of Parc Montsouris, and the Sophora by the Lake (Buttes-Chaumont).
+- Hunted Wikimedia Commons categories for all four locations directly (Category:Parc des Buttes-Chaumont and its "Plants" subcategory, Category:Parc Montsouris, the École de Botanique category) plus iNaturalist and Flickr. No open-licensed photo of any of the four specific trees turned up in any of them.
+- Found something worth a note rather than a quiet miss: the City of Paris's own open data portal (opendata.paris.fr, dataset `arbresremarquablesparis`) carries a direct photo for both the Sequoia (ID 102837) and a Sophora du Japon (ID 101752), both explicitly at Parc des Buttes-Chaumont, both plausible matches by species and location. But each photo record carries its own explicit `Copyright` field (e.g. "Sonia Yassa / Ville de Paris"), separate from the dataset's own ODbL licence, which covers the geographic/tabular data, not necessarily the embedded photography. A general web search for the city's photo reuse terms turned up nothing clear enough to call this a verified open licence, so, per "never publish a photo without a verified open licence," not used.
+- **FOR HIDDE**: if you want these two, contacting Ville de Paris (or their open data team) directly to ask whether `arbresremarquablesparis` photos are reusable would likely be faster than more web searching. Same situation as Istanbul's anıtagac.istanbul photos flagged earlier: real photos of the exact trees exist, licensing just isn't confirmed open from the outside.
+- Paris stays at 6/10. Moving to Rome next, the next marquee European city in line (5/10).
+- Site build unaffected (no data changes this pass).
+
+## 2026-07-23 — Lisbon photo hunt (marquee European cities, no new finds)
+
+- First marquee European city after the lead group closed out with Antwerp. Lisbon was at 3/10 approved, with 7 missing: the Olive Trees of Santo Amaro, the Tipu of Jardim de São Bento, the Coral Trees of Jardim da Luz, the Nettle Tree of Avenida de Berlim, the Ginkgo of Praça Paiva Couceiro, the Paineira of Jardim Alfredo Keil, and the Giant Rubber Tree of Mouraria.
+- Hunted Wikimedia Commons, iNaturalist, Flickr and Openverse for all 7, including species-specific and address-specific queries in Portuguese. One near-miss checked and rejected: a 2024 CC0 photo of Praça Paiva Couceiro's garden shows ordinary plane-tree-like canopy at a street junction, not confirmable as the ginkgo specifically (fan-shaped leaves aren't visible and nothing ties the frame to that specific tree). Two Jardim de São Bento photos exist on Commons (CC BY-SA 4.0) but show a sculpture and the garden's entrance staircase, not the Tipu tree itself.
+- Nothing cleared the bar. This mirrors the same gap earlier passes hit for these exact trees; recording again so a future run doesn't re-spend the same searches without knowing they were tried, per the "genuinely cannot be reached" rule rather than looping further right now.
+- Lisbon stays at 3/10. Moving to Paris next, the next marquee European city in line (6/10).
+- Site build unaffected (no data changes this pass).
+
 ## 2026-07-23 — Antwerp photo hunt (rest of lead group: Belgium, finishing the group)
 
 - Photo floor pass, last of the lead group cities. Antwerp started at 0/10, the only fully unphotographed city left in the lead group.
