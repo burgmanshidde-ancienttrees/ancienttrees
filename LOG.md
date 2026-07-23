@@ -44,6 +44,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Rome: no new finds; Barcelona photo pass: 2/10 to 4/10
+
+- Continuing the marquee-European sweep. Rome (5/10) got a genuine search across its 5 missing trees; nothing cleared the licence bar, including a pond photo in Villa Doria Pamphilj checked and rejected for the same reason a prior run already flagged there (uncoordinated, can't confirm it's the same water feature as the Cedar of the Belvedere's own pin, in a park that's already had one cedar mixup).
+- Barcelona (2/10) went better: found and approved 2, both from Wikimedia Commons's Jardí Botànic Vell (historic botanical garden) collection on Montjuïc, both visually confirmed as the actual named specimens rather than generic garden shots. Barcelona now at 4/10. Details in CURATION.md.
+- Moving to Madrid next (2/10), the last marquee European city below floor.
+
 ## 2026-07-23 — Lisbon and Paris photo passes: no new finds, one lead flagged for Hidde
 
 - Continuing the marquee-European-cities sweep after Antwerp closed the lead group. Lisbon (3/10) and Paris (6/10) each got a genuine search pass across Commons, iNaturalist, Flickr and Openverse for their remaining missing trees. Neither turned up anything that cleared the licence bar.
