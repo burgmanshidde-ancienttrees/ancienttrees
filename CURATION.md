@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-23 — Kyoto photo hunt (next tier: 3/10 to 4/10)
+
+- Continuing the tier after Istanbul. Kyoto was at 3/10 approved, with 7 missing.
+- Found and approved 1: **kyo_001** (the Reclining Dragon Pine of Yoshimine-dera), via Commons's own dedicated category for this tree ("Yūryū-no-matsu"), CC BY-SA 3.0 / GFDL. Visually confirmed: the photo shows a pine trained flat and horizontal across wooden support posts, exactly matching the tree's documented 37-metre trained form, with a stone marker visible alongside it.
+- Checked the other 6 again (the Five-Needle Pine of Hosen-in, the Inverted Ginkgo of Nishi Honganji, the Camphor of Munakata Shrine, the Taiko Weeping Cherry of Daigo-ji, the Heian Cedar of Katanami, the Emperor's Gift Cherry of Kamigamo) across Commons categories (including Kamigamo Shrine's own extensive Commons documentation, 9 subcategories, none tree-specific) and iNaturalist/Flickr. Nothing else cleared the bar; the Daigo-ji cherry's own "Sakura at Sanbō-in" subcategory was already checked and rejected in an earlier pass (shows the sub-temple building, not confirmed to include the tree), not re-litigated here.
+- Kyoto now at 4/10. Below the 8/10 floor; recorded honestly. Moving to New York next (3/10), the last city in this tier.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-23 — Istanbul photo hunt (next tier, no new finds)
 
 - Next city in the tier after Tokyo (Istanbul, Kyoto, New York). Istanbul was at 2/10 approved, with 8 missing: the Oldest Plane of Bahçeköy, the Ahtapot Çınar, the Taşlı Çınar, the Çengelköy Plane, the Ata Fıstık Çamı, the Florya Mastic Tree, the Ehrami Servi of Büyükada, and the Plane Trees of Beykoz Çayırı.
