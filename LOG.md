@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Brussels photo pass: 0/10 to 4/10
+
+- Second "rest of the lead group" city (Belgium), after Dublin. Found solid matches for the Kasterlinde (a Flanders heritage agency photo) and the Oriental Plane of Parc Leopold (captioned as this exact bicentennial tree), plus two good representative shots for the two ensemble entries (Bois de la Cambre, the Cinquantenaire chestnut avenue).
+- Worth noting for a future run: Brussels' own official heritage inventory site (sites.heritage.brussels) returned a 403 to every fetch attempt this run, so its own tree photography, which likely exists given how thorough that register is, couldn't be checked. Worth another look with a different fetch approach.
+- No open photo found for the remaining 6, including one near-miss caught properly: a purple beech candidate turned out to show ordinary gold autumn foliage, not the tree's actual purple leaves, so it wasn't used.
+- Brussels at 4/10, below the floor, honestly. Antwerp next to finish the lead group, then the marquee European cities.
+
 ## 2026-07-23 — Dublin photo pass: 1/10 to 3/10
 
 - First "rest of the lead group" city (Ireland) after UK and Netherlands. Found solid CC BY-SA matches for the St Anne's Park cypress sculpture and the Holm Oak Avenue, both pinned precisely by their Commons captions and categories.
