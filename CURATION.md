@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-23 — Amsterdam photo hunt (focus region: Netherlands)
+
+- Photo floor pass, second focus-region city after Edinburgh. Amsterdam was at 4/10 approved.
+- Hunted Commons (including checking contributor Ceescamel, who supplied several of Amsterdam's existing photos, for more uploads), iNaturalist, Flickr CC, Openverse, bomenbieb.nl/boomzorg.nl and the Hortus/Artis's own sites for the 6 trees without a photo.
+- Found and approved 1: **ams_006** (the Olifantsiep), a CC0 Wikimedia Commons photo whose caption ("a huge tree with heavy branches which need solid support... corner of Zeeburgerdijk and Panamalaan") matches the tree's documented location exactly. Photo predates the 2015 truck-damage repair, so it shows an earlier state of the same tree, noted honestly.
+- Found 1 more, **ams_007** (Lomanstraat Cathedral of Trees): public domain, categorised on Commons as this exact street, but its description doesn't confirm the overhead canopy/tunnel effect specifically and no way to visually inspect it this run, so recorded as `found_needs_check` rather than approved, for a future pass to confirm.
+- No usable photo found for ams_001 (Heimanseik, Artis: only copyrighted zoo photography), ams_003 (Vondelpark Poplar), ams_005 (Hortus cycad, deliberately not substituting a generic Encephalartos altensteinii photo from elsewhere after the earlier Kirstenbosch mixup that this project already corrected once), or ams_008 (Amstelkade Olive Willow, a 1949 candidate considered and rejected as too soon after the tree's 1948 planting to plausibly be the same specimen).
+- Amsterdam now at 5/10 approved (6/10 counting the needs-check one). Below the 8/10 floor; recorded honestly rather than forced further.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-23 — Edinburgh photo hunt (focus region: UK)
 
 - Photo floor pass per the 2026-07-22 decision (80% target, focus region first). Edinburgh was UK's weakest at 1/10 approved.
