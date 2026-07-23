@@ -44,6 +44,11 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Istanbul: no new finds
+
+- Next in the tier after Tokyo. Genuine search across all 8 missing trees; nothing cleared the licence bar, consistent with the same gap a prior run already hit here (anıtagac.istanbul has real photos of several of these but no stated reuse licence anywhere on the site). Recorded in CURATION.md; Istanbul stays at 2/10.
+- Moving to Kyoto or New York next for the same tier's photo work.
+
 ## 2026-07-23 — Tokyo photo pass: 7/10 to 8/10 — second city to clear the floor
 
 - With the marquee-European sweep closed, moved to the next tier (Istanbul, Kyoto, New York, Tokyo). Tokyo was closest to the 8/10 floor at 7/10.
