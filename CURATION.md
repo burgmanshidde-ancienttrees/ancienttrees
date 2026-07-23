@@ -2,6 +2,18 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-23 — Madrid photo hunt (marquee European cities, closing this sweep: 2/10 to 4/10)
+
+- Last marquee European city this run, after Lisbon, Paris, Rome and Barcelona. Madrid was at 2/10 approved, with 8 missing.
+- Found and approved 2, both CC BY-SA 4.0, both from the same source: the Spanish Wikipedia maintains individual articles for several of the Real Jardín Botánico's own "árbol singular" specimens, each illustrated with a photographer's (EnriqueSN) own Commons upload, GPS-tagged within meters of this project's existing pins:
+  - **mad_005** (Cypress of the Royal Botanic Garden): matches the Spanish Wikipedia article "Ciprés del Real Jardín Botánico" almost exactly by name; visually confirmed as a single tall, distinctively conical cypress towering over the garden path.
+  - **mad_006** (Caucasian Elm of the Botanic Garden): matches "Olmo del Cáucaso en el Real Jardín Botánico"; visually confirmed as a tall, columnar tree rising well above its neighbours, consistent with its "tallest tree in the garden" reputation.
+  - Coordinates on both source photos land within about 15-100m of this project's own pins, tightening confidence further.
+  - Also checked the Community of Madrid's official Commons category for legally designated "árboles singulares" (Category:Outstanding trees of the Community of Madrid) directly for the other missing trees (the Parque del Oeste and Palacio de Cristal cedars, the El Capricho pine, the Casa de Campo oak, the Campo del Moro pine, the Velázquez Palace yew); none of them are catalogued there, so no photo found via that route either.
+- No usable photo found for the remaining 6 after real searches: the Himalayan Cedar of the Crystal Palace, the Three-Trunked Yew of the Velázquez Palace, the Holm Oak of the Trillo Roundabout, the Aleppo Pine of Campo del Moro, the Grandfather Cedar of Parque del Oeste, and the Stone Pine of the Priest's House (El Capricho).
+- Madrid now at 4/10. Below the 8/10 floor; recorded honestly. This closes the marquee-European-cities sweep for this run: Lisbon (3/10, no change), Paris (6/10, no change), Rome (5/10, no change), Barcelona (2 to 4/10), Madrid (2 to 4/10).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-23 — Barcelona photo hunt (marquee European cities: 2/10 to 4/10)
 
 - Fourth marquee European city this run, after Lisbon, Paris and Rome. Barcelona was at 2/10 approved, with 8 missing.
