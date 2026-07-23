@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-23 — Brussels photo hunt (rest of lead group: Belgium)
+
+- Photo floor pass, second of the "rest of the lead group" cities (Belgium), after Dublin. Brussels started at 0/10.
+- Hunted Commons (French and Dutch tree names, given Brussels' bilingual naming), iNaturalist, Flickr, Openverse and the region's own heritage/environment sites for all 10 trees. Brussels' official heritage inventory site (sites.heritage.brussels) returned a 403 to every fetch attempt, so its own photography, if any, could not be checked this run. environnement.brussels' photos are explicitly copyrighted, not open, so not usable regardless.
+- Found and approved 4: **bru_002** (the Kasterlinde, a Flanders Immovable Heritage Agency inventory photo, CC BY 4.0), **bru_003** (the Oriental Plane of Parc Leopold, captioned in French as this exact "bicentennial" tree), and two ensemble entries, **bru_004** (Bois de la Cambre pond/Chalet Robinson area) and **bru_010** (the Cinquantenaire/Jubelpark avenue), both representative shots of the described area rather than one dated specimen, which is the right bar for an ensemble entry.
+- No usable photo found for bru_001 (Chene Josephine), bru_005 (the giant sequoia, only non-commercial iNaturalist photos exist), bru_006 (the purple beech, the one candidate visually showed ordinary gold beech foliage, not the tree's distinctive purple leaves), bru_007 (the Douglas fir), bru_008 (the sophora, a general abbey garden photo exists but doesn't confirm which tree is in frame), or bru_009 (the black mulberry, the one CC candidate is a different tree in a different commune).
+- Brussels now at 4/10 approved. Below the 8/10 floor; recorded honestly.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-23 — Dublin photo hunt (rest of lead group: Ireland)
 
 - Photo floor pass, third focus-region city, first of the "rest of the lead group" (Ireland, Belgium) after UK and Netherlands. Dublin was at 1/10 approved.
