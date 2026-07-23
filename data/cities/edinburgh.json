@@ -65,12 +65,12 @@
       "age_max": 280,
       "best_time": { "months": [10], "label": "October, when the chestnuts drop and its leaves turn gold" },
       "location": {
-        "address": "Royal Botanic Garden Edinburgh, Rock Garden, 20A Inverleith Row, Edinburgh EH3 5LR",
+        "address": "Royal Botanic Garden Edinburgh, Pond Lawn, 20A Inverleith Row, Edinburgh EH3 5LR",
         "latitude": 55.967,
         "longitude": -3.213,
         "neighbourhood": "Inverleith"
       },
-      "story": "The oldest tree in Edinburgh's Royal Botanic Garden was already growing here before the garden was. When the Botanics relocated to Inverleith in 1820, this sweet chestnut, now in the Rock Garden, was already a mature tree, meaning it predates the 200 year old institution that grew up around it. No one recorded its planting date, so the garden's own arborists can only say it is over two centuries old, likely closer to three. Sweet chestnut was introduced to Britain by the Romans and spread through monastery gardens before becoming a favourite of 18th and 19th century landscapers, prized for timber that could be coppiced and split for fencing. This one was never harvested that way. It has spent recent years in decline, and RBGE's arboretum team has carried out remedial work simply to keep it alive for another generation, an unusually candid admission from an institution that measures its collection in centuries rather than seasons. Entry to the garden itself costs nothing. Find it in the Rock Garden, one of the quieter corners of a collection that includes some of the best documented trees in Scotland, and one very old one nobody bothered to document at all.",
+      "story": "The oldest tree in Edinburgh's Royal Botanic Garden was already growing here before the garden was. When the Botanics relocated to Inverleith in 1820, this sweet chestnut, now on the Pond Lawn, was already a mature tree, meaning it predates the 200 year old institution that grew up around it. No one recorded its planting date, so the garden's own arborists can only say it is over two centuries old, likely closer to three. Sweet chestnut was introduced to Britain by the Romans and spread through monastery gardens before becoming a favourite of 18th and 19th century landscapers, prized for timber that could be coppiced and split for fencing. This one was never harvested that way. It has spent recent years in decline, and RBGE's arboretum team has reduced its crown and cut back the larger failing branches to keep it alive for another generation, an unusually candid admission from an institution that measures its collection in centuries rather than seasons. Entry to the garden itself costs nothing. Find it on the Pond Lawn, one of the quieter corners of a collection that includes some of the best documented trees in Scotland, and one very old one nobody bothered to document at all.",
       "verified_sources": [
         "https://stories.rbge.org.uk/archives/15890",
         "https://treecare.org.uk/Arboretums/royal-botanic-garden-edinburgh/"
@@ -78,13 +78,13 @@
       "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
       "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Sweet_Chestnut_at_the_Royal_Botanic_Garden_Edinburgh_-_geograph.org.uk_-_7080129.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "M J Richardson, via Geograph Britain and Ireland / Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "No source gives a specific planting date, only that it predates the garden's 1820 move to Inverleith. Age range is an estimate, not a measurement. A Flickr photo exists (treeblog, 2008) but is marked All Rights Reserved, not usable.",
+      "notes": "No source gives a specific planting date, only that it predates the garden's 1820 move to Inverleith. Age range is an estimate, not a measurement. Location corrected 2026-07-23: RBGE's own story page (stories.rbge.org.uk/archives/15890) places this tree on the Pond Lawn, not the Rock Garden as previously written here; fixed in address and story. Photo verified directly on Commons: CC BY-SA 2.0, captioned simply 'Sweet Chestnut at the Royal Botanic Garden Edinburgh', matched to this specific tree via RBGE's own description of a 200+ year old sweet chestnut in decline that received crown reduction, which lines up with the Geograph photo's own description.",
       "location_precision": "approximate"
     },
     {
@@ -199,13 +199,13 @@
       "access": "Paid entry, Palace of Holyroodhouse (garden included with palace ticket, April to September)",
       "transport": "15 min walk from Edinburgh Waverley station, at the foot of the Royal Mile",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Ulmus_%27Wentworthii%27%2C_Holyrood.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Max Coleman, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Planting date and age corroborated across RBGE's own account, ScienceAlert and BBC News. Exact position within the 10 acre garden not specified in any source found, so pin is garden level rather than the specific trees. No open licensed photo found; Royal Collection Trust material is restricted.",
+      "notes": "Planting date and age corroborated across RBGE's own account, ScienceAlert and BBC News. Exact position within the 10 acre garden not specified in any source found, so pin is garden level rather than the specific trees. Photo verified directly on Commons, filed under Category:Ulmus in Edinburgh with 'Holyrood' in the title, taken by Max Coleman (the RBGE botanist credited in the rediscovery story), distinct from a different Wentworth elm photo in the same category taken at RBGE itself.",
       "location_precision": "approximate"
     },
     {
@@ -291,10 +291,10 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Footpath_through_beech_trees_-_geograph.org.uk_-_1065352.jpg",
         "license": "CC BY-SA 2.0",
         "attribution": "Callum Black, via Geograph Britain and Ireland / Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "This is an ensemble claim about the reserve's tree cover generally, not one dated individual specimen; presented and pinned as such. Photo shows a generic footpath through beech trees in the Hermitage, license verified, but does not itself confirm the '130 feet, among the tallest in the city' claim, so left as found_needs_check rather than approved.",
+      "notes": "This is an ensemble claim about the reserve's tree cover generally, not one dated individual specimen; presented and pinned as such. Photo re-verified 2026-07-23: filed on Commons under Category:Hermitage of Braid, captioned 'Footpath through beech trees, one of many footpaths in the Hermitage of Braid', coordinates match the reserve. It illustrates the ensemble tree cover the entry describes rather than proving the specific '130 feet' height claim, which is an acceptable match for a claim about the reserve's beech generally, so approved.",
       "location_precision": "approximate"
     },
     {

@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Edinburgh photo pass: 1/10 to 4/10, plus a live location fix
+
+- Started the photo floor work from Hidde's 2026-07-22 decision (80% target, focus region UK/Netherlands first). Edinburgh was the weakest UK city, only London's already at 10/10.
+- Hunted Commons/Geograph, iNaturalist, Flickr CC, Openverse and RBGE's own site for all 8 photo-less trees. Found and verified 3: the Sweet Chestnut, the Wentworth Elms of Holyroodhouse, and the Hermitage of Braid beech path (upgraded from a prior found_needs_check once re-verified against its Commons category and description).
+- While verifying the Sweet Chestnut's photo, found the published entry had the wrong location: RBGE's own page for this tree says Pond Lawn, the data said Rock Garden. Fixed, since a wrong location is exactly the mistake this project can't afford.
+- The other 6 (Cammo Ash, Cedar of Lebanon, Lauriston Castle monkey puzzles, St Cuthbert's Camperdown elm, the Cramond rockface sycamore, Corstorphine sycamore) have no open-licensed photo anywhere after a real search. Recorded in CURATION.md and left as missing rather than forced. Edinburgh sits at 4/10, below the floor, honestly.
+- Moving to Amsterdam next for the same pass (Netherlands, focus region), then the rest of the lead group.
+
 ## 2026-07-22 15:35 — Antwerp: 15th city live, 10 trees researched
 
 - Straight coverage after Brussels: no submissions, site healthy, nothing published wrong. Antwerp is a thinner data city than Brussels: no dedicated tree register, just Flanders' general heritage inventory, so most ages here are honest ranges (champion girths, protection dates) rather than planting records. Said so directly in the intro rather than dressing it up.

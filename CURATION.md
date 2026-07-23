@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-23 — Edinburgh photo hunt (focus region: UK)
+
+- Photo floor pass per the 2026-07-22 decision (80% target, focus region first). Edinburgh was UK's weakest at 1/10 approved.
+- Hunted Wikimedia Commons/Geograph, iNaturalist, Flickr CC, Openverse and RBGE's own site for the 8 trees without a photo, plus re-verified the one existing `found_needs_check` candidate.
+- Found and verified 3 usable photos, all CC BY-SA, license and attribution confirmed directly on the Commons file page: **edi_002** (Sweet Chestnut of the Botanics), **edi_006** (Wentworth Elms of Holyroodhouse), **edi_009** (Hermitage of Braid, upgraded from found_needs_check to approved after confirming it genuinely illustrates the ensemble claim). Edinburgh now at 4/10.
+- Caught and fixed a real location error while verifying edi_002's photo: the tree's own RBGE source page (stories.rbge.org.uk/archives/15890) places it on the **Pond Lawn**, not the Rock Garden as the published entry said. Address and story text corrected; this had been live and wrong.
+- No usable open-licensed photo found for edi_003 (Cammo Ash), edi_004 (Cedar of Lebanon), edi_005 (Monkey Puzzles of Lauriston Castle), edi_007 (Camperdown Elm of St Cuthbert's), edi_008 (Rockface Sycamore of Cramond), or edi_010 (Corstorphine Sycamore), despite a genuine search across all required sources. Re-confirmed the previously flagged Corstorphine mismatch (a Geograph photo exists but its own caption places it at RBGE, a different specimen of the same cultivar, not the churchyard tree) and left it unused. Recording honestly per the "genuinely cannot be reached" rule rather than looping on it: 80% is not reached here, and that is left as is.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-22 — Antwerp (full research run, nightly workflow)
 
 - No reader submissions pending, site healthy, nothing published wrong. Continued down the coverage ladder after Brussels.
