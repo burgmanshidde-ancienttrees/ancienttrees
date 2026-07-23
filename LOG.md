@@ -44,6 +44,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Lisbon and Paris photo passes: no new finds, one lead flagged for Hidde
+
+- Continuing the marquee-European-cities sweep after Antwerp closed the lead group. Lisbon (3/10) and Paris (6/10) each got a genuine search pass across Commons, iNaturalist, Flickr and Openverse for their remaining missing trees. Neither turned up anything that cleared the licence bar.
+- Paris did turn up something worth a decision rather than a quiet skip: the City of Paris's own open-data photo set for remarkable trees has direct photos of the Buttes-Chaumont sequoia and sophora, both plausible matches, but each carries its own named copyright separate from the dataset's ODbL licence, so not verified open. Flagged for Hidde in CURATION.md in case he'd rather ask the city directly than have future runs keep circling it.
+- Neither city's data changed this pass. Moving to Rome next (5/10), continuing oldest-published-first through the marquee European cities.
+
 ## 2026-07-23 — Antwerp photo pass: 0/10 to 5/10, and a real workflow upgrade
 
 - Last lead-group city (Belgium), finishing the UK/Netherlands/Ireland/Belgium sweep the 2026-07-22 photo-floor decision started. Antwerp was the only lead-group city still fully unphotographed.
