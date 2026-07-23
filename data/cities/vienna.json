@@ -1,0 +1,339 @@
+{
+  "city": "Vienna",
+  "country": "Austria",
+  "status": "needs_curation",
+  "intro": "Vienna keeps its oldest trees on an official register: since 1936, remarkable specimens have qualified as Naturdenkmäler, natural monuments protected the same way a listed building is. That bureaucratic habit is why this city can name an exact protection date for almost every tree on this list, down to the day. The ten below range from a plane tree Mozart is said to have walked past on his way to piano lessons to a dead tree trunk, hammered with nails for luck, that has stood behind glass at Stephansplatz since long before Vienna had trams. All ten are free to see.",
+  "meta_description": "Vienna's ancient trees range from a Mozart-era plane to a nail-studded relic behind glass at Stephansplatz. Ten remarkable trees, nearly all free to visit.",
+  "question_answer": "The oldest tree in Vienna is a plane tree tucked into the Fähnrichhof courtyard off Singerstraße in the old town, estimated at more than 280 years old. A 1987 survey already measured its age at over 250 years, and in the centuries since it has grown around part of the iron fence from St Stephen's old cathedral graveyard, closed in the 1730s. It stands a short walk from Stephansplatz, reached through a public passage from Blutgasse.",
+  "question_meta": "Vienna's oldest tree is a 280-year-old plane hidden in a Singerstraße courtyard. Where it stands, and the city's ten most remarkable trees.",
+  "question_context": "Vienna's natural monument register, running since 1936, gives an exact protection date for almost every historic tree in the city, but planting dates are rarer, so ages here are mostly expert estimates rather than documented facts. The Singerstraße plane is the exception: a formal 1987 survey put its age at more than 250 years even then, which is about as close to a hard number as Vienna's tree records get. It grows in the Fähnrichhof, a courtyard reached through a passage (a Durchhaus, in local terms) connecting Blutgasse and Singerstraße in the first district, a few minutes on foot from Stephansplatz. The tree's most remarkable feature is not visible: part of the iron fence that once enclosed St Stephen's Cathedral's own graveyard, closed to burials in the 1730s, is sealed inside its trunk, absorbed by decades of growth. A separate, much older object exists nearby and often gets mistaken for the record holder: the Stock im Eisen, a dead spruce trunk studded with nails since the 15th century, displayed behind glass a few streets away at Stephansplatz. It began growing centuries before the Singerstraße plane did, but it has not been alive since around 1440, so it is listed here as a historic relic rather than Vienna's oldest tree.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Vienna?",
+      "a": "A plane tree in a Fähnrichhof courtyard off Singerstraße, estimated at more than 280 years old by a 1987 survey. It has grown around part of an 18th century cemetery fence in the centuries since."
+    },
+    {
+      "q": "Are Vienna's ancient trees free to visit?",
+      "a": "All ten trees on this list are free to see. Most stand in public parks, along streets, or in courtyards open to pedestrians during the day, and none require a paid ticket."
+    },
+    {
+      "q": "What is a Wiener Naturdenkmal?",
+      "a": "A legally protected natural monument, a designation Vienna has used since 1936 for trees, tree groups, and other natural features worth preserving. The city has registered more than 400 of them, each with its own protection date and identification number."
+    },
+    {
+      "q": "Why are so many of Vienna's protected trees in ordinary courtyards and street corners rather than parks?",
+      "a": "Vienna's natural monument register protects individual trees wherever they stand, not only specimens inside parks. A plane tree on a public sidewalk or in a residential courtyard qualifies the same way a tree in Schönbrunn's gardens does, which is why several trees on this list turn up in unexpected places."
+    }
+  ],
+  "trees": [
+    {
+      "id": "vie_001",
+      "name": "The Cemetery Plane of Singerstraße",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "290 years",
+      "age_min": 270,
+      "age_max": 310,
+      "location": {
+        "address": "Fähnrichhof courtyard, off Singerstraße 11 / Blutgasse 3, 1010 Wien",
+        "latitude": 48.2081,
+        "longitude": 16.3737,
+        "neighbourhood": "Innere Stadt, 1st district"
+      },
+      "story": "This tree has been quietly absorbing a piece of iron fence for two and a half centuries. The plane in the Fähnrichhof, a courtyard just off Singerstraße in Vienna's old town, grew directly through part of the railing that once enclosed St Stephen's Cathedral's own graveyard, closed to burials in the 1730s. The fence is no longer visible today. Vienna's own natural monument record notes it as sealed inside the trunk by decades of callus growth, the tree's version of scar tissue closing over a wound. A 1987 expert assessment measured the trunk at two and a half metres around, the crown at ten metres across, and put the tree's age at more than 250 years even then, which makes it well past 280 today. It stands in a courtyard once attached to the Domherrenhof, the residence of St Stephen's cathedral canons, reachable on foot through a passage from Blutgasse that locals call a Durchhaus, one of the old town's many semi-hidden pedestrian shortcuts between streets. The glass door at the Blutgasse end is usually left open during the day. Almost nobody outside the neighbourhood knows this tree exists, let alone that it is quietly digesting a piece of ecclesiastical ironwork nobody has seen in living memory.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Innere_Stadt",
+        "https://www.geschichtewiki.wien.gv.at/Naturdenkmal_726"
+      ],
+      "access": "Free, via the public Blutgasse-Fähnrichhof passage; the glass door is usually open during the day but can occasionally be locked",
+      "transport": "3 min walk from Stephansplatz U-Bahn station (U1/U3), via the Blutgasse passage",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Naturdenkmal_726_GuentherZ_2011-08-29_3165_Wien01_Singerstrasse11_Platane.JPG",
+        "license": "CC BY 3.0",
+        "attribution": "GuentherZ, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Naturdenkmal Nr. 726, protected since 20 October 1987. Age figure is the 1987 survey's '>250 years' projected forward to 2026; no more recent measurement has surfaced.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "vie_002",
+      "name": "Stock im Eisen",
+      "species": "Norway Spruce (Picea abies)",
+      "age_estimate": "600+ years",
+      "age_min": 600,
+      "age_max": 650,
+      "label": "Historic relic, dead wood",
+      "location": {
+        "address": "Stock-im-Eisen-Platz, corner of Graben and Kärntner Straße, 1010 Wien",
+        "latitude": 48.2082,
+        "longitude": 16.3712,
+        "neighbourhood": "Innere Stadt, 1st district"
+      },
+      "story": "This is not really a tree anymore. It is the 2.19 metre midsection of a spruce that started growing around 1400 and was felled only forty years later, and it has spent the roughly 500 years since being hammered full of nails. Traveling locksmiths and other craftsmen, passing through Vienna on their journeyman years, drove a nail into the trunk for luck before moving on, a tradition already old by 1533, the year it first appears in writing. Five iron bands now hold the wood together, one stamped 1575 with the initials of Hans Buettinger, the house owner who had it repaired. Dendrochronologists finally dated the wood itself in 1975, confirming the tree grew for barely four decades before it was cut down and put to this second, much longer life as a good luck charm. It stands today behind glass on the corner of Graben and Kärntner Straße, built into the wall of the Palais Equitable, a few steps from St Stephen's Cathedral. Every visitor to Stephansplatz walks past it, and most have no idea that the metal-studded stump on the corner used to be a living tree, felled while Vienna was still a walled medieval town.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Stock_im_Eisen",
+        "https://www.amusingplanet.com/2017/07/stock-im-eisen-viennas-nail-tree.html"
+      ],
+      "access": "Free, public square, viewable behind glass at street level",
+      "transport": "2 min walk from Stephansplatz U-Bahn station (U1/U3)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Wien_Stock_im_Eisen.JPG",
+        "license": "CC BY-SA 3.0 AT",
+        "attribution": "Thomas Ledl, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Not a living tree: dendrochronology (1975) dates growth to roughly 1400-1440. Included as a historic relic, labelled accordingly, and excluded from the 'oldest tree in Vienna' answer since it has not been alive for around 585 years.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_003",
+      "name": "The Chestnut Avenue of the Hauptallee",
+      "species": "Common Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "up to 266 years",
+      "age_min": 236,
+      "age_max": 266,
+      "location": {
+        "address": "Prater Hauptallee, Praterstern to Lusthaus, 1020 Wien",
+        "latitude": 48.2115,
+        "longitude": 16.4100,
+        "neighbourhood": "Leopoldstadt, 2nd district"
+      },
+      "story": "Vienna's grandest avenue is older than the trees that define it by two centuries. The Hauptallee was cut through the Prater's floodplain forest in 1538, on the order of Emperor Ferdinand I, to connect the Augarten with the imperial hunting grounds, but the horse chestnuts that now line it in four to six dense rows came generations later. The oldest survivors are 236 and 266 years old, meaning they went into the ground around the time Mozart was still alive. Roughly 2,600 avenue trees run along the full 4.5 kilometre length, from Praterstern at one end to the Lusthaus, a former imperial hunting lodge, at the other, making this one of the longest tree-lined avenues in Europe. For a few weeks each spring the chestnuts turn the entire route white with candle-shaped blossom, an event Viennese joggers and cyclists plan routes around rather than merely notice. The avenue has hosted horse races, carriage parades, and, for decades, the finish straight of the Vienna City Marathon. Not every tree on the Hauptallee is old. Storms, disease, and simple traffic have taken their share over five centuries, and new chestnuts are replanted as older ones fail. The two oldest survivors are the exception, not the rule, which is exactly what makes them worth seeking out.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Hauptallee_(Wien)",
+        "https://traveltips.at/die-prater-hauptallee-wiens-gruene-lunge-und-sportliche-seele/"
+      ],
+      "access": "Free, public avenue, open at all times",
+      "transport": "Starts at Praterstern U-Bahn station (U1/U2), runs the length of the Prater to the Lusthaus",
+      "best_time": {
+        "months": [4],
+        "label": "late April, when the avenue turns white with chestnut blossom"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Horse_chestnut_tree_at_Prater_Hauptallee.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Herzi Pinki, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Ensemble entry: the Hauptallee's chestnut planting as a whole, represented by its two oldest documented specimens (236 and 266 years). Pin marks the avenue's approximate midpoint, not a single tree.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "vie_004",
+      "name": "The Ginkgo of Schönbrunn",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "245 years",
+      "age_min": 240,
+      "age_max": 250,
+      "location": {
+        "address": "Schönbrunn Schlosspark, near the Wagenburg, Hietzinger Allee, 1130 Wien",
+        "latitude": 48.18214,
+        "longitude": 16.30056,
+        "neighbourhood": "Hietzing, 13th district"
+      },
+      "story": "This is one tree with two sexes. Ginkgos are either male or female, never both, except this one: a female branch was grafted onto it at some point in its life, so a single male tree now also drops the messy, strong-smelling seeds normally produced only by female ginkgos. It arrived in Vienna in 1781, imported through an English nursery only a few decades after the species reached Europe at all, and it is very likely the oldest ginkgo now growing in Austria. It stands near the Wagenburg, the former imperial carriage house at Schönbrunn, on the Hietzinger Allee side of the park, its trunk grown to roughly five metres around and its crown to about twenty metres tall. Vienna listed it as a protected natural monument in 1939, one of the earliest ginkgos anywhere to receive that kind of formal status. It has outlived the empire that planted it and survived two world wars a few hundred metres from a palace that changed hands more than once, and each autumn it still does what ginkgos are famous for: every leaf on the tree turns gold and drops within days, all at once, rather than drifting down gradually like almost everything else in the park.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Hietzing",
+        "https://pflanzenraritaeten.com/ginkgo-biloba-schoenbrunn"
+      ],
+      "access": "Free, Schönbrunn park and gardens (separate attractions inside the grounds, such as the Gloriette or maze, charge admission)",
+      "transport": "10 min walk from Schönbrunn U-Bahn station (U4), inside the palace park near the Wagenburg",
+      "best_time": {
+        "months": [10, 11],
+        "label": "late October into November, when every leaf turns gold and falls within days"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Ginkgo_biloba_%28Sch%C3%B6nbrunn%29_natural_monument_%28male_tree_with_female_branch%2C_imported_in_1781%29_2008.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Wolfgang H. Wögerer, Wien, Austria, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Naturdenkmal Nr. 110, protected since 4 February 1939. Coordinates taken from a GPS-tagged verification source (monumentaltrees.com, used for location cross-check only, not as a content source); not independently surveyed, hence approximate.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "vie_005",
+      "name": "The Mozart-Platane",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "245 years",
+      "age_min": 230,
+      "age_max": 260,
+      "location": {
+        "address": "Rennweg 14, 1030 Wien",
+        "latitude": 48.19540,
+        "longitude": 16.38390,
+        "neighbourhood": "Landstraße, 3rd district"
+      },
+      "story": "A memorial stone at its base calls this tree the Jacquin-Platane, but almost nobody in Vienna uses that name. Nikolaus Joseph von Jacquin planted it around 1780 as director of the university's Botanical Garden, and Wolfgang Amadeus Mozart walked past it often enough, on his way to piano lessons at Jacquin's house nearby, that the tree took his name instead. It has stood on Rennweg since before the French Revolution, and it has been protected as one of Vienna's first natural monuments since 1936, registered simply as Naturdenkmal Nr. 9. A property boundary shifted at some point in its life, and the tree now grows on the public sidewalk, just outside the fence of the Botanical Institute it once stood inside. Its trunk, roughly six metres around, has gone partially hollow with age, and Vienna's parks department now lists it as endangered. In 2009 the city closed Rennweg overnight and tested the tree's stability with rope winches, treating a quarter-millennium-old plane tree with the same seriousness as a structural inspection. It is around 245 years old now, close enough to Mozart's own lifetime that the story holds up better than most tree legends do.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Mozart-Platane",
+        "https://austria-forum.org/af/AustriaWiki/Mozart-Platane"
+      ],
+      "access": "Free, public sidewalk",
+      "transport": "5 min walk from the Rennweg tram stop (Tram O)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/GuentherZ_Naturdenkmal_009_2010-02-26_0095_Wien03_Rennweg14_Mozartplatane.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "GuentherZ, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Naturdenkmal Nr. 9, protected since 22 December 1936. Coordinates from the Wikimedia Commons category page for this natural monument.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_006",
+      "name": "The Founding Plane of Rathauspark",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "243 years",
+      "age_min": 235,
+      "age_max": 250,
+      "location": {
+        "address": "Rathauspark, Rathausplatz, 1010 Wien",
+        "latitude": 48.2108,
+        "longitude": 16.3573,
+        "neighbourhood": "Innere Stadt, 1st district"
+      },
+      "story": "The oldest tree in front of Vienna's City Hall is older than the building itself by exactly one century. This plane went into the ground in 1783, when the site was still open land on the edge of the city, decades before anyone had drawn up plans for a Rathaus or the park now named after it. Construction of the neo-Gothic town hall did not start until 1872, and the park was landscaped around the new building only after that, which means this tree had already been growing for close to ninety years by the time the space around it became a park at all. It has since grown into a trunk six metres around and a crown thirty metres tall, big enough that Vienna's own tree registry lists it, under catalogue number 252, as Rathauspark's oldest specimen without qualification. It is one of three plane trees in the park with individual legal protection as natural monuments, granted in 1973. Office workers on lunch break, tourists cutting through on their way to the Burgtheater, and the occasional wedding photographer all pass beneath a canopy that was already mature when Mozart was writing his last symphonies, in a park that did not exist yet to contain it.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Rathauspark_(Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Innere_Stadt"
+      ],
+      "access": "Free, public park",
+      "transport": "2 min walk from the Rathaus tram stop (Tram 1/2/71) or Rathausplatz/Burgtheater U-Bahn (U2)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Naturdenkmal_564_GuentherZ_2010-08-25_0128_Wien01_Rathauspark_Platane.JPG",
+        "license": "CC BY 3.0",
+        "attribution": "GuentherZ, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "One of three plane trees in Rathauspark individually registered as natural monuments (Nr. 564, 566, 567), protected since 3 July 1973; this entry covers the specific tree identified by the park's own registry as the oldest, tree catalogue number 252.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "vie_007",
+      "name": "The Sisi-Platane of Volksgarten",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "200+ years",
+      "age_min": 180,
+      "age_max": 220,
+      "location": {
+        "address": "Volksgarten, near the Volksgarten fountain, 1010 Wien",
+        "latitude": 48.2071,
+        "longitude": 16.3634,
+        "neighbourhood": "Innere Stadt, 1st district"
+      },
+      "story": "Vienna named this plane tree after an empress who famously disliked Vienna. The Sisi-Platane stands near the fountain at the heart of the Volksgarten, close to the Theseus Temple, and at an estimated 200 years old it is the oldest tree in a garden that Empress Elisabeth, who gave the tree her nickname, mostly used as a shortcut on her way to somewhere else. She preferred riding and travelling to sitting still in Viennese gardens, but the name stuck anyway. The trunk now measures roughly three and a half metres around, and the crown spans a full twenty metres in every direction, wide enough to shade a large share of the garden's central lawn on a summer afternoon. Vienna placed it under legal protection in 1951 as Naturdenkmal Nr. 376, one of a small number of individually registered trees in the first district. Its exact age has not turned up in any planting record, only an estimate based on its size, so it should be read as approximate rather than precise. What nobody disputes is its rank: nothing else growing in the Volksgarten today is older, and few Viennese park benches offer a better patch of shade.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Volksgarten_(Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Innere_Stadt"
+      ],
+      "access": "Free, public garden",
+      "transport": "5 min walk from Volkstheater U-Bahn station (U2/U3)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wiener_Naturdenkmal_376_-_Morgenl%C3%A4ndische_Platane_%28Innere_Stadt%29_o.JPG",
+        "license": "CC BY-SA 3.0 AT",
+        "attribution": "Michael Kranewitter, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Naturdenkmal Nr. 376 (girth 3.6 m, height and crown 20 m each) is confirmed by two independent sources. The '200 years old' figure and the Empress Elisabeth nickname story appear only in secondary tourism sources, not in either primary source, so age is flagged as a single-source estimate.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "vie_008",
+      "name": "The Oak of the Sulzwiese",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "estimated 150-250 years",
+      "age_min": 150,
+      "age_max": 250,
+      "location": {
+        "address": "Sulzwiese meadow, Grüner Prater, 1020 Wien",
+        "latitude": 48.19601,
+        "longitude": 16.42188,
+        "neighbourhood": "Leopoldstadt, 2nd district"
+      },
+      "story": "Its crown alone covers more ground than most Viennese apartment buildings. The pedunculate oak of the Sulzwiese, a meadow in the Grüner Prater away from the funfair and the Ferris wheel, has a canopy that spreads roughly 45 metres across, wide enough that someone standing under one edge of it cannot see a person standing under the other through the branches. The trunk itself is a comparatively modest 4.28 metres around, which tells you this tree grew in the open, in full sun, with nothing crowding its sides, rather than competing for light in a forest the way most old oaks do. That kind of open-grown oak puts its energy into width rather than height, and the Sulzwiese oak is a textbook result: a low, spreading giant rather than a tall one. No planting record has surfaced to say exactly how old it is, so any figure here is an estimate rather than a fact, but a crown this size on an open-grown oak typically points to somewhere between 150 and 250 years, a wide range stated honestly rather than rounded to something tidier. Vienna registered it as Naturdenkmal Nr. 846, one of eighteen protected natural monuments in the Prater's home district of Leopoldstadt, and it remains one of the most photographed trees in the park precisely because its shape is so unusual.",
+      "verified_sources": [
+        "https://www.w24.at/News/2026/6/Naturdenkmaeler-846-Stieleiche-im-Prater",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Leopoldstadt"
+      ],
+      "access": "Free, open meadow in the Grüner Prater",
+      "transport": "15 min walk from Stadion U-Bahn station (U2), across the Sulzwiese meadow",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Stieleiche846.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Clemens Mosch, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Naturdenkmal Nr. 846. Girth (4.28 m) and crown diameter (approx. 45 m) are confirmed by two independent sources; age is not documented anywhere found and is estimated from size only, so it is flagged. Coordinates taken from the EXIF geotag on the CC BY-SA 4.0 photo of this specific tree.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_009",
+      "name": "The Giant Sequoias of Pötzleinsdorfer Schlosspark",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "estimated 80-150 years",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Pötzleinsdorfer Schlosspark, near the main entrance, 1180 Wien",
+        "latitude": 48.24197,
+        "longitude": 16.30660,
+        "neighbourhood": "Währing, 18th district"
+      },
+      "story": "Every giant sequoia growing in Europe today is, at most, about 170 years old, because the species was not seen by Europeans until 1852 and not exported until 1853. That upper limit makes the two giant sequoias flanking the main entrance to Pötzleinsdorfer Schlosspark impressive for what they are not: they cannot be nearly as old as the palace park around them, which the Geymüller banking family began landscaping in 1801, decades before anyone in Europe had seen a sequoia seed. They were planted later, sometime after 1853, as one of the many exotic imports that Vienna's wealthy families competed to add to their English-style gardens once the species became available, a horticultural fashion sometimes called Wellingtonia mania. Two smaller sequoias grow between the pair near the entrance, part of the same planting. The park itself, one of Vienna's largest and least manicured, is known for long open meadows dotted with individual specimen trees rather than dense woodland, and the sequoias are its most conspicuous residents: nothing else in the park comes close to their bulk or their soft, reddish, fibrous bark. No precise planting date or trunk measurement has surfaced for this specific pair, so their age here is bounded by what is known about the species rather than stated as documented fact.",
+      "verified_sources": [
+        "https://kultkraftplatz.com/poetzleinsdorfer-schlosspark/",
+        "https://commons.wikimedia.org/wiki/File:Sequoiadendron_Poetzleinsdorf_Vienna_Austria_1680x1125.jpg"
+      ],
+      "access": "Free, public park",
+      "transport": "5 min walk from the Pötzleinsdorf tram terminus (Tram 41)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Sequoiadendron_Poetzleinsdorf_Vienna_Austria_1680x1125.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "ZavosBrachides, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Part of Naturdenkmal Nr. 62 (Pötzleinsdorfer Schlosspark's protected trees and tree groups). No individual girth or planting-year record found for this pair; age range is bounded only by the species' known arrival in Europe (1853), not by a measurement or record specific to these trees. Coordinates from the geotag on the source photo, which names Naturdenkmal 62 directly.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_010",
+      "name": "The Twin Giants of Sternwartepark",
+      "species": "Mixed species (Ginkgo and Giant Sequoia)",
+      "age_estimate": "100+ years",
+      "age_min": 90,
+      "age_max": 130,
+      "location": {
+        "address": "Türkenschanzstraße 46, Sternwartepark, 1180 Wien",
+        "latitude": 48.2344,
+        "longitude": 16.3372,
+        "neighbourhood": "Währing, 18th district"
+      },
+      "story": "Two trees, planted side by side, share a single protection order. In the Sternwartepark, in the shadow of Vienna's university observatory, a ginkgo and a giant sequoia grow close enough together that Vienna registered them as one natural monument in 2010, Naturdenkmal Nr. 817, rather than two. They make an odd pair. The ginkgo, a living fossil native to China, was already around a century old when it was surveyed, with a trunk 2.35 metres around and a height of 24 metres. Next to it stands a Californian giant sequoia that has grown taller, 27 metres, but leans noticeably as it climbs, its 3.75 metre trunk curving rather than running straight up the way most conifers do. Neither species is native within a continent of Vienna, and the two would never have met each other in the wild, yet here they have spent a century as neighbours a few streets from Türkenschanzpark, itself planted with exotic species through Vienna university's old botanical connections. The observatory nearby, the largest structurally closed telescope building in the world when it opened in 1879, gives the whole park its name. Astronomers looking skyward have had these two very different giants growing at ground level the entire time.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/W%C3%A4hring",
+        "https://commons.wikimedia.org/wiki/File:Wiener_Naturdenkmal_817_-_Ginko,_Mammutbaum_(W%C3%A4hring)_b.JPG"
+      ],
+      "access": "Free, public park (Sternwartepark)",
+      "transport": "10 min walk from Nussdorfer Straße U-Bahn station (U6), or tram 40/41 toward Sternwarte",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Wiener_Naturdenkmal_817_-_Ginko%2C_Mammutbaum_%28W%C3%A4hring%29_b.JPG",
+        "license": "CC BY-SA 3.0 AT",
+        "attribution": "Michael Kranewitter, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Naturdenkmal Nr. 817, protected since 25 January 2010, covering both the ginkgo and the giant sequoia at this address as a single designation. Ginkgo age ('around 100 years') is as stated at the time of the 2010 survey; no updated measurement has surfaced, so current age is an estimate projected forward.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
