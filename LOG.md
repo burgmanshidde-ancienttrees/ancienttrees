@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-23 — Tokyo photo pass: 7/10 to 8/10 — second city to clear the floor
+
+- With the marquee-European sweep closed, moved to the next tier (Istanbul, Kyoto, New York, Tokyo). Tokyo was closest to the 8/10 floor at 7/10.
+- Found the one photo it needed: the Koishikawa Botanical Garden ginkgo tied to Hirase Sakugoro's 1896 sperm discovery, via a Commons category dedicated to that exact tree, and this time the tree itself is genuinely visible next to its own memorial stone (a near-identical-looking candidate was rejected in an earlier pass for showing only the marker). Checked the other 2 missing trees again with the same care; nothing else cleared the bar this pass.
+- **Tokyo is now at 8/10, the second city on the site to clear the photo floor, after London.** Real evidence the target is reachable, not just a standard set for one city.
+- Moving to Istanbul, Kyoto or New York next for the same tier's photo work when this run continues.
+
 ## 2026-07-23 — Madrid photo pass: 2/10 to 4/10, closing the marquee-European sweep
 
 - Last city in this run's marquee-European pass. Found 2 CC BY-SA 4.0 photos via the Spanish Wikipedia's own singular-tree articles for the Real Jardín Botánico (the cypress and the Caucasian elm), both visually confirmed and GPS-close to this project's existing pins. Madrid now at 4/10.
