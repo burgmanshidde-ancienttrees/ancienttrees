@@ -1,0 +1,339 @@
+{
+  "city": "Athens",
+  "country": "Greece",
+  "status": "needs_curation",
+  "intro": "Athens burned, was besieged, and was rebuilt too many times over three millennia for medieval trees to survive here. What the city kept instead is continuity: an olive replanted where Athena is said to have grown the first one, another regrown from the roots of Plato's own Academy, and a 1950s grove now ranked among the century's landscape masterpieces. Only one true old-growth contender made the list, a disputed 2,500-year-old olive, so far never independently dated by science.",
+  "meta_description": "Athens' most remarkable trees are mythological olives and a 1950s masterpiece grove, not medieval survivors. Real stories, exact locations.",
+  "question_answer": "Most likely the Olive Tree of Pisistratus, a protected olive in a small park in Agioi Anargyroi, a western Athens suburb, traditionally dated to more than 2,500 years by a 1919 Hellenic Archaeological Society survey. Modern dendrochronology of comparably old Mediterranean olives has repeatedly found real ages closer to three or four centuries once tested with radiocarbon methods, a test this specific tree has never had, so its true age is unverified rather than settled.",
+  "question_meta": "Athens' likeliest oldest tree is a 2,500-year-old olive claim nobody has scientifically tested. What that means, where it stands, and the city's full ten.",
+  "question_context": "Olive trunks complicate every claim like this: the wood rots hollow from the centre as the tree ages, taking the earliest growth rings with it, so there is no ring count to check the Pisistratus olive's 2,500-year figure against, only the archaeological society's own 1919 measurement methods. Recent radiocarbon studies of other Mediterranean olives with similarly dramatic folk ages have generally found true ages in the low hundreds rather than the thousands, which is why this page states the claim without adopting it. What isn't disputed is the tree's resilience: part of its trunk was cut for firewood during the wartime occupation of the 1940s, and it grew back anyway, a protected natural monument since. Athens' more famous old tree, the mythologised olive beside the Acropolis's Erechtheion, loses on raw age despite the bigger story: the physical wood standing there today was replanted sometime in the early to mid 20th century after wartime damage, younger than the suburb's contender by a wide margin whichever date is used. The Pisistratus olive is free to visit, in a small park behind the church of Agioi Anargyroi, a short walk from Agioi Anargyroi railway station.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Athens?",
+      "a": "Most likely the Olive Tree of Pisistratus in the suburb of Agioi Anargyroi, traditionally dated past 2,500 years by a 1919 survey, though no modern radiocarbon study has ever tested that figure directly."
+    },
+    {
+      "q": "Are Athens' ancient trees free to visit?",
+      "a": "Eight of the ten are free. The exceptions are the Acropolis's sacred olive, included in the standard Acropolis ticket, and Kaisariani Monastery, which charges a small entry fee."
+    },
+    {
+      "q": "Why does Athens have so few truly ancient trees compared to other European capitals?",
+      "a": "Repeated destruction and rebuilding over three thousand years left little room for old-growth wood to survive undisturbed. Most of what stands today is either a symbolic replanting on a mythologically continuous spot or a deliberate 19th or 20th century planting, not an inherited medieval survivor."
+    },
+    {
+      "q": "What is the Filopappou Hill olive woodland?",
+      "a": "A deliberately planted olive landscape from 1954-1957, designed by architect Dimitris Pikionis as part of a hillside redesign now considered one of the twentieth century's most significant works of landscape architecture. The trees are roughly 70 years old, not ancient."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ath_001",
+      "name": "The Sacred Olive Tree of the Acropolis",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "70-110 years (current wood); mythologised lineage to 480 BC",
+      "age_min": 70,
+      "age_max": 110,
+      "label": "Continuously renewed",
+      "location": {
+        "address": "Acropolis of Athens, north side near the Erechtheion, Athens 10555",
+        "latitude": 37.9715,
+        "longitude": 23.7255,
+        "neighbourhood": "Acropolis"
+      },
+      "story": "The olive tree beside the Erechtheion has died and returned at least twice, and both times the same legend gets the credit. Herodotus wrote that when Xerxes' Persian army burned the Acropolis in 480 BC, the sacred olive Athena was said to have grown in her contest with Poseidon went up with it, only to sprout a new shoot a cubit high the very next day. The tree standing here now is a second resurrection: German occupying forces damaged the earlier specimen during the Second World War, and sources disagree on exactly when its replacement went in, some say 1917, before that war even started, others say 1952, after it. What both agree on is the point of the story rather than the paperwork: someone has kept an olive growing on this exact spot for as long as Athens has kept records, using cuttings from the previous tree rather than starting over with something unrelated. The Erechtheion behind it, an asymmetrical marble temple finished around 406 BC to house the Acropolis's holiest relics, has needed far more restoration than the tree ever has. Entry is included in the standard Acropolis ticket, and the olive stands on the north side, in plain view from the temple's own porch.",
+      "verified_sources": [
+        "https://greekcitytimes.com/2021/06/27/olive-tree-acropolis/",
+        "https://www.oliveoil.com/the-sacred-olive-tree-at-the-acropolis-of-athens-a-living-memorial/"
+      ],
+      "access": "Paid entry, standard Acropolis of Athens ticket",
+      "transport": "Acropoli metro station (Line 2), 5 min walk, or Acropolis entrance on Dionysiou Areopagitou",
+      "curation_status": "flagged",
+      "notes": "Replanting date genuinely disputed between sources (1917 vs. 1952); presented as a range rather than a single confident figure. Age fields describe the physical wood standing today, not the mythologised 2,500-year lineage, which is stated as legend in the story text rather than as the tree's verified age. Photo fetched and viewed directly: the olive tree growing hard against the Erechtheion's wall, matching the story exactly.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/The_olive_tree_on_the_Acropolis_of_Athens%2C_28_April_2021.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "George E. Koronaios, via Wikimedia Commons",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "ath_002",
+      "name": "The Olive Tree of Pisistratus",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "300-2,500 years (disputed)",
+      "age_min": 300,
+      "age_max": 2500,
+      "location": {
+        "address": "Small park behind the Church of Agioi Anargyroi, Leoforos Dimokratias 50, Agioi Anargyroi 13561",
+        "latitude": 38.0267,
+        "longitude": 23.7183,
+        "neighbourhood": "Agioi Anargyroi, western Athens"
+      },
+      "story": "A tree in a pocket park behind a suburban church carries a claim that would make it older than the Parthenon: officially attested by the Hellenic Archaeological Society in 1919 at more than 2,500 years, and popularly billed since as the oldest living olive tree on Earth. Modern olive dating complicates that considerably. Olive trunks rot hollow from the inside as they age, taking the innermost, oldest rings with them, and radiocarbon studies of other headline-grabbing old Mediterranean olives have repeatedly found real ages closer to three or four hundred years once properly tested. No such study has been published for this specimen, so its 1919 figure rests on early 20th century measurement methods rather than anything a lab would confirm today. What isn't in dispute is the name behind it: Pisistratus, the 6th century BC tyrant of Athens, is credited with the wave of olive planting that turned Attica into the region's defining olive economy, and this suburb sits on what was once part of that grove. Part of the trunk was cut for firewood during the wartime occupation of the 1940s, and it grew back regardless. It is now a protected natural monument, free to visit, standing in a small park behind the church that gives the area its name.",
+      "verified_sources": [
+        "https://www.athensvoice.gr/life/perivallon/706303/elia-peisistratoy-dentro-ton-2500-eton-stoys-ag-anargyroys/",
+        "https://www.lifo.gr/now/greece/i-elia-toy-peisistratoy-stoys-agioys-anargyroys-ena-dentro-ilikias-2500-eton-eikones"
+      ],
+      "access": "Free, public park",
+      "transport": "Agioi Anargyroi railway station (Piraeus-Platy suburban line), short walk",
+      "curation_status": "flagged",
+      "notes": "The '2,500 years, oldest olive on Earth' claim traces to a 1919 Hellenic Archaeological Society attestation, not a modern radiocarbon or dendrochronological study; softened per hard rule 8 given that scientific dating of comparable ancient olives generally yields far lower ages. Age range given as 300-2,500 years to honestly span the traditional figure and the scientifically plausible low end, rather than asserting either.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ath_003",
+      "name": "The Regrown Olive of Plato's Academy",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "under 50 years (regrowth)",
+      "age_min": 45,
+      "age_max": 50,
+      "label": "Young regrowth",
+      "location": {
+        "address": "Akadimia Platonos Archaeological Park, Kratylou & Tripoleos, Athens 10442",
+        "latitude": 37.9933,
+        "longitude": 23.7117,
+        "neighbourhood": "Akadimia Platonos, Kolonos"
+      },
+      "story": "A city bus ended nearly 2,400 years of continuous shade in 1976, when it struck and split the trunk of the olive tree beneath which Plato is said to have taught. The tree stood in the grove of Akademos, the suburb that gave Plato's school, and eventually the English word academy, its name, and tradition held that the sacred grove here had grown from cuttings of Athena's own tree on the Acropolis centuries before Plato ever arrived to teach beneath it. The collision didn't kill the root system, and what grows in the archaeological park today is a genuine regrowth from that same base rather than a replacement sapling brought in from a nursery, a distinction the site treats as worth preserving. It is a young tree by any measure, decades old rather than millennia, and it looks like one: slim and upright, nothing like the gnarled giants elsewhere on this list. What makes it worth the detour is what it stands on rather than what it currently looks like, the excavated foundations of the gymnasium and residence buildings where Plato, and later Aristotle as a student, actually walked. The park is free, open daily except Monday from 9am to 4pm, and considerably quieter than the Acropolis eight kilometres away.",
+      "verified_sources": [
+        "https://www.oliveoiltimes.com/world/platos-sacred-olive-tree-vanished/32262",
+        "https://platosacademy.org/a-short-history-of-platos-academy/"
+      ],
+      "access": "Free, open daily except Monday, 9am-4pm",
+      "transport": "Bus to Akadimia Platonos or Kolonos, or 20 min walk from Metaxourgeio metro station (Line 2)",
+      "curation_status": "flagged",
+      "notes": "The 1976 bus accident and regrowth are corroborated across two independent sources. The deeper claim, that the grove descended from cuttings of the Acropolis's Athena olive, is stated in the story as tradition rather than verified fact.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ath_004",
+      "name": "The Transplanted Olive of Megali tou Genous Scholis",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "up to 1,500 years (Agricultural University of Athens assessment)",
+      "age_min": 700,
+      "age_max": 1500,
+      "location": {
+        "address": "Plateia Megalis tou Genous Scholis, Leoforos Vasilissis Sofias, Athens 11521",
+        "latitude": 37.9764,
+        "longitude": 23.7513,
+        "neighbourhood": "Opposite Evangelismos Hospital, near the Hilton"
+      },
+      "story": "In December 2015, a construction crew dug up an entire mature olive tree in the village of Elaionas, in the hills above Aigio, and drove it more than 200 kilometres to a traffic island in central Athens. The tree wasn't being rescued from age or disease. It stood inside the corridor cleared for a new railway line, and Greece's rail construction authority, ERGOSE, had committed to relocating rather than felling the older olives caught in its path, part of a program that has since moved more than 500 trees out of expropriation zones since 2013. The Agricultural University of Athens assessed this particular specimen at up to fifteen centuries old before the move, old enough to have already been ancient when the Byzantine Empire ruled from Constantinople. It survived the truck journey and a complete change of soil, climate and neighbours, and now stands on a traffic island opposite Evangelismos Hospital, a few steps from the Hilton, doing exactly what it always did: producing shade and, most years, olives. Nothing about its current setting hints at the story behind it. It is easy to walk past a well-kept municipal olive tree without a second look, which is roughly what most passersby here do. The square is unstaffed and open at all hours, a two minute walk from Evangelismos metro station.",
+      "verified_sources": [
+        "https://greekreporter.com/2021/12/19/operation-olive-tree-greece-saves-centuries-old-trees-from-destruction/",
+        "https://www.ypaithros.gr/elia-300-eton-apo-aigialeia-rizonei-eksoteriko-xoro-dimarxeiou-xolargou/"
+      ],
+      "access": "Free, public square",
+      "transport": "Evangelismos metro station (Line 3), 2 min walk",
+      "curation_status": "flagged",
+      "notes": "Age (up to 1,500 years) traces to an Agricultural University of Athens assessment cited across multiple Greek press sources covering ERGOSE's olive-rescue program, but the program moved trees ranging 700-1500 years to several different Athens sites, and no single published source gives this specific square's tree its own individually confirmed figure separate from the program's general range. Range given honestly rather than asserting the higher figure alone. Photo fetched and viewed directly: a heavily gnarled olive trunk with a small explanatory plaque at its base, on a grass median beside a lit avenue at night, matching the described setting exactly.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/A_fifteen_centuries_old%2C_olive_tree_in_Athens.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "George E. Koronaios, via Wikimedia Commons",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "ath_005",
+      "name": "The Holm Oak of the National Garden",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "150+ years",
+      "age_min": 150,
+      "age_max": 187,
+      "location": {
+        "address": "National Garden of Athens, Vasilissis Amalias 1, Athens 10557",
+        "latitude": 37.9744,
+        "longitude": 23.7367,
+        "neighbourhood": "Syntagma"
+      },
+      "story": "The largest holm oak in the National Garden of Athens is old enough to have been planted by Queen Amalia's own gardeners, and big enough that it is rarely matched by wild specimens anywhere else in Greece. Amalia, the Bavarian-born wife of Greece's first king, Otto, commissioned the garden in 1839 as the country's first Western-style landscaped park, bringing in the French landscape architect François-Louis Bareaud to lay it out and filling it with species from across the Mediterranean and beyond. The holm oak is one of the survivors of that original planting scheme, now well past 150 years old, its evergreen canopy dense enough to blacken the ground beneath it even at midday. Unlike the garden's more famous palms and the eucalyptus that arrived later from Australia, Quercus ilex is native to Greece, so this particular tree represents restraint rather than imperial botanical trophy hunting, a local species given room to reach a size it rarely gets in the wild once grazing and firewood collecting are factored in. The tree stands among the garden's quieter paths, away from the pond and the small zoo that draw most visitors. Entry to the National Garden is free, every day, year round.",
+      "verified_sources": [
+        "https://zogaris.blogspot.com/2012/03/sites-national-gardens-of-athens.html",
+        "https://www.eghn.org/en/national-garden-athens/"
+      ],
+      "access": "Free, National Garden of Athens",
+      "transport": "Syntagma metro station (Lines 2 and 3), 5 min walk",
+      "curation_status": "flagged",
+      "notes": "Individual tree identification and age rest primarily on one detailed naturalist source (Athens Nature Journal); the garden's 1839 founding date and general presence of centenarian holm oaks is independently confirmed by the European Garden Heritage Network. Kept because the underlying facts check out even though this specific tree isn't cross-confirmed by a second dedicated source. Photo fetched and viewed directly: a genuinely massive spreading holm oak over a garden path, matching the description.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Holm_Oak_in_the_National_Garden%2C_Athens_-_panoramio.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "macrolepis, via Wikimedia Commons",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "ath_006",
+      "name": "The Cypresses of the First Cemetery of Athens",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "165-190 years",
+      "age_min": 165,
+      "age_max": 189,
+      "location": {
+        "address": "First Cemetery of Athens, Anapafseos 11, Athens 11636",
+        "latitude": 37.9631,
+        "longitude": 23.7351,
+        "neighbourhood": "Mets"
+      },
+      "story": "Athens's grandest 19th century cemetery reads like an open-air sculpture museum, and the cypresses planted around its edges were a public health measure before they were ever a landscaping choice. When the First Cemetery was established in 1837, four years after Otto arrived as Greece's first king, municipal rules required burial grounds to sit at least 100 metres outside the city and to be screened with trees, ideally on a hillside for ventilation, a sanitary theory of the era that happened to also produce a genuinely beautiful result. Cypress, pine and olive went in from the start, and the layout was formalised in 1861 into the maze of paths visitors walk today. Cypress carries its own symbolism here beyond the practical planting brief: in Greek tradition it is the tree of mourning and the underworld, planted in cemeteries for exactly the reason it now shades this one. Some of the original trees from that 1837 to 1861 planting window are still standing, making them among the oldest deliberately planted cypresses in modern Athens, though no individual specimen here has its own published age or measurement. The cemetery holds the graves of Heinrich Schliemann and Melina Mercouri among thousands of others, is free to enter, and stays open daily.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/First_Cemetery_of_Athens",
+        "https://www.thisisathens.org/attractions/first-cemetery"
+      ],
+      "access": "Free, open daily",
+      "transport": "Syngrou-Fix metro station (Line 2), 10 min walk",
+      "curation_status": "flagged",
+      "notes": "Ensemble entry: the cemetery's 1837 founding and 1861 formal layout are well documented, but no source dates any individual cypress by name. Age range spans the planting window (1837-1861) to today. Photo fetched and viewed directly: the cemetery's entrance pavilion with cypresses visible framing the view beyond, its geotagged coordinates (37.9647, 23.7355) matching this entry's own pin closely. A representative ensemble shot rather than a close-up of a single tree, the same bar used for other ensemble entries on this list.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Athens_Cemetery_entrance_-_panoramio.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "Nagaremono, via Wikimedia Commons",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "ath_007",
+      "name": "The Plane Trees of Zappeion",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "60-165 years, mixed generations",
+      "age_min": 60,
+      "age_max": 169,
+      "location": {
+        "address": "Zappeion Gardens, Athens 10557",
+        "latitude": 37.9698,
+        "longitude": 23.7364,
+        "neighbourhood": "Syntagma"
+      },
+      "story": "Almost two hundred plane trees went into the ground around the Zappeion in 1857, two decades before the neoclassical hall they now surround had even been designed. The gardens predate their own centrepiece building, laid out first in a formal French geometric style and later softened into looser English-style plantings, with eucalyptus imported from Australia joining the original planes early on. The Zappeion itself, completed in 1888, went on to host fencing at the first modern Olympics in 1896 and, decades later, the signing of Greece's accession treaty to the European Communities in 1979, so its plane-lined approach has watched two very different kinds of history. Oriental plane is the tree most associated with Greek public space generally, prized for a canopy dense enough to cool a whole square and bark that flakes away in patches, shedding pollution and disease along with it. Most of the original 1857 trees have since been replaced or supplemented after a century and a half of storms and old age, so what stands today is a mixed-generation avenue rather than a single dateable planting, honestly closer to 60 to 165 years old tree by tree. The gardens are free and open daily, a short walk from Syntagma Square through the adjoining National Garden.",
+      "verified_sources": [
+        "https://www.zappeion.gr/en/zappeion-tour/gardens.html",
+        "https://theglovetrotters.com/destinations/athens-national-garden/"
+      ],
+      "access": "Free, open daily",
+      "transport": "Syntagma metro station (Lines 2 and 3), 10 min walk",
+      "curation_status": "flagged",
+      "notes": "Ensemble entry, mixed-generation avenue rather than one dateable planting. The 1857 original planting date is confirmed by the Zappeion's own site; individual tree ages are an honest estimate rather than a register.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ath_008",
+      "name": "The Olive Woodland of Filopappou Hill",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "roughly 70 years",
+      "age_min": 65,
+      "age_max": 72,
+      "label": "Deliberately planted, not inherited",
+      "location": {
+        "address": "Filopappou Hill, main entrance at Dionysiou Areopagitou & Apostolou Pavlou, Athens 11742",
+        "latitude": 37.9701,
+        "longitude": 23.7196,
+        "neighbourhood": "Filopappou, Koukaki"
+      },
+      "story": "Before 1954, Filopappou Hill was mostly bare, grazed down to scrub with the occasional stray olive holding on. What covers it today, a deliberately hypnotic woodland of hundreds of olive trees planted in staggered density, is not survival but design: the architect Dimitris Pikionis spent three years reshaping the hill by hand, with his students and local stonemasons paving footpaths from salvaged marble fragments and demolished building rubble rather than working from finished drawings. He replaced the site's non-native planting with species indigenous to Attica, olive chief among them, and the result is now considered one of the twentieth century's most significant works of landscape architecture, studied by architecture schools well beyond Greece. None of this makes the trees themselves ancient. Most of what visitors walk through is roughly seventy years old, deliberately planted rather than inherited, a different kind of remarkable than this list's older entries but a genuine one: a hillside redesigned as a single artwork, with the Acropolis framed through the branches from angles Pikionis chose on purpose. The paths pass the so-called Prison of Socrates and the Monument of Philopappos at the summit. Entry to the hill is free and unrestricted, at any hour.",
+      "verified_sources": [
+        "https://www.documenta14.de/en/venues/15282/filopappou-hill-pikionis-paths-and-pavilion",
+        "https://www.tarn.studio/words/pikionis"
+      ],
+      "access": "Free, unrestricted, open at any hour",
+      "transport": "Acropoli or Thissio metro station (Line 1 or 2), 10 min walk",
+      "curation_status": "flagged",
+      "notes": "Corrected mid-research: initial leads described these as centuries-old gnarled olives, but two independent architecture-history sources date the olive woodland itself to Pikionis's 1954-1957 project, replacing a mostly bare, grazed hillside. Presented honestly as a deliberately young planting rather than an ancient grove, per 'never fabricate'.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ath_009",
+      "name": "The Plane Trees of Kefalari, Kifisia",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "century-old, roughly 100-130 years",
+      "age_min": 90,
+      "age_max": 130,
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when the planes turn gold before Kifisia's autumn crowds arrive"
+      },
+      "location": {
+        "address": "Kefalari Square, Kifisia, Athens 14562",
+        "latitude": 38.0745,
+        "longitude": 23.8191,
+        "neighbourhood": "Kefalari, Kifisia"
+      },
+      "story": "Kifisia was ancient Athens' summer retreat long before it became modern Athens' wealthiest suburb, and the plane trees shading Kefalari Square are the clearest living link between the two. The name Kefalari refers to the spring, the head of the water source that made this specific spot on the southern slopes of Mount Penteli desirable enough to draw the city's elite out of the Attic basin for centuries, first as an escape from summer heat and later, from the 1920s on, as a fashionable dining and promenade district it remains today. The plane trees shading the square and its surrounding streets are commonly described as century-old, tall enough now to close over the road in places, though no single tree here carries its own individual measurement or planting record the way a protected monument tree would. Platanus orientalis needs exactly the steady water Kefalari's spring provides, which is why the species clusters this thickly here and thins out elsewhere in a city built mostly on dry limestone. The trees turn a deep gold in late autumn before dropping, a genuine seasonal marker rather than a subtle one. The square is free, public, and a short walk from Kifisia metro station, the Athens metro's northern terminus.",
+      "verified_sources": [
+        "https://athensattica.com/highlight/kifisia-a-heaven-on-earth-in-the-north-of-attica/",
+        "https://www.travel.gr/en/explore-en/kifisia-guide-athens-chicest-suburb/"
+      ],
+      "access": "Free, public square",
+      "transport": "Kifisia metro station (Line 1), 10 min walk",
+      "curation_status": "flagged",
+      "notes": "Ensemble entry: 'century-old' plane trees are described consistently across multiple tourism and local-history sources, but no individual specimen carries a dated planting record. Age range is an honest estimate for a described 'century-old' avenue.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ath_010",
+      "name": "The Trees of Kaisariani Monastery",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "decades to roughly 200 years, undated individually",
+      "age_min": 50,
+      "age_max": 200,
+      "location": {
+        "address": "Kaisariani Monastery, Ymittos, Athens 16121",
+        "latitude": 37.9683,
+        "longitude": 23.7583,
+        "neighbourhood": "Kaisariani, Mount Hymettus"
+      },
+      "story": "A monastery on Mount Hymettus has drawn people to the same spring for over two thousand years, long before the Byzantine monks who gave Kaisariani its name and its 11th or 12th century church ever arrived. Ancient Athenians already regarded this water, cold and constant even in summer, as sacred and medicinal, and later residents believed it cured infertility, a reputation strong enough that the site is said to have kept the goodwill of both Christian and Muslim neighbours specifically because everyone valued the spring it protected. The monastery itself sits inside a walled courtyard shaded by tall cypress and plane trees, planted and replaced across the site's long working life as a religious community, so no single tree here can be dated against the monastery's own documented history, only estimated by size at anywhere from decades to a couple of centuries old. What the trees frame is the more reliably dated part: a church built over the remains of a Roman-era temple, Byzantine frescoes added in 1682, and stonework that hosted the Byzantine philosopher Gemistus Plethon among its scholars. The walk in passes gnarled olives on the lower slopes and the monastery's own ruined watermill. Entry costs a small fee, a rare paid stop on an otherwise free hillside walk.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Kaisariani_Monastery",
+        "https://greekcitytimes.com/2026/07/01/kaisariani-monastery-mount-hymettus-athens/"
+      ],
+      "access": "Paid entry, small fee",
+      "transport": "Bus from Kaisariani or Ethniki Amyna metro station (Line 3), then uphill walk",
+      "curation_status": "flagged",
+      "notes": "Ensemble entry: the monastery's own history (11th-12th century church, sacred spring since antiquity) is well documented, but no individual tree in its courtyard has a published age. Age range is a wide, honest estimate rather than a measurement.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
