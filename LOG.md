@@ -44,6 +44,15 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-24 — Porto: 20th city live, 10 trees researched
+
+- No reader submissions (CSV checked: header row only). Site was healthy, nothing published was wrong, so went straight to the next rung: the next `pending` city, Porto.
+- 10 trees researched, written and shipped. The throughline: almost everything remarkable here traces to 19th-century British port wine families who filled their Porto quintas with American, Asian and southern-hemisphere imports, plus the University of Porto's later absorption of one such estate into today's free Botanical Garden. Full detail in CURATION.md.
+- One access-driven correction worth flagging: a municipal press release tied several classified trees, including a Himalayan cedar, to "Palacete Burmester Garden", a University of Porto building whose current public-access policy couldn't be confirmed. Dropped those rather than guess, and filled the Himalayan cedar slot instead with a specimen independently confirmed by photograph to grow in the fully public Palácio de Cristal gardens.
+- 5 trees flagged honestly (missing ages, softened superlative claims, one single-sourced specimen kept because its underlying facts check out), none fabricated.
+- Only 2 of 10 photos found and visually confirmed this round; several generic species stock photos were found and rejected for not being confirmed as the actual Porto specimen.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-24 — Seville: 19th city live, 10 trees researched
 
 - No reader submissions (CSV checked: header row only). Site was healthy, nothing published was wrong, so went straight to the next rung: the next `pending` city, Seville.

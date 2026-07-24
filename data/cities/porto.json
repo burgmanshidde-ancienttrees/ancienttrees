@@ -1,0 +1,339 @@
+{
+  "city": "Porto",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "Porto's grandest trees mostly arrived with 19th-century British port wine families, who filled their quintas with tulip trees, magnolias and southern hemisphere exotics their money could import but Porto's own climate had to accept. Two gardens hold almost everything worth seeing: the Jardins do Palácio de Cristal, laid out around a British merchant's mansion in the 1860s, and the Jardim Botânico do Porto, a former private estate now run by the university. Porto also calls itself the City of Camellias, and means it literally. All ten trees below are free to see.",
+  "meta_description": "Porto's remarkable trees range from a 250-year tulip tree to three of Portugal's oldest Bischofia trees. Ten trees, all free, mostly in two gardens.",
+  "question_answer": "Porto's oldest documented tree is a Virginia tulip tree (Liriodendron tulipifera) beside Casa Tait in the Jardins do Palácio de Cristal, more than 250 years old and one of the first individual trees Portugal placed under legal protection, in 1950. It stands inside the free public gardens off Rua de D. Manuel II, a short walk from the Palácio de Cristal pavilion.",
+  "question_meta": "Porto's oldest tree is a 250-year tulip tree at Casa Tait, protected since 1950. Where it stands, and the city's ten most remarkable trees.",
+  "question_context": "The tulip tree beside Casa Tait has the strongest documented age claim in Porto: it was already mature enough to warrant individual legal protection when Portugal formalised its tree of public interest classification in 1950, and both the city council's own parks department and independent garden historians place its age at over 250 years. That makes it older than the Palácio de Cristal gardens built around it, which German landscape architect Émile David laid out in the 1860s, and older than the original glass-and-iron exhibition palace itself, demolished in 1951 and replaced with the domed arena that stands there now. Casa Tait, the mansion beside the tree, took its name from a family of British port wine merchants whose 19th-century wealth shaped much of what grows in this corner of the garden, tulip trees, magnolias and camellias among them. A second, taller tulip tree grows nearby without the same formal protection status, and should not be confused with the older, classified specimen the question above refers to.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Porto?",
+      "a": "A Virginia tulip tree beside Casa Tait in the Jardins do Palácio de Cristal, over 250 years old and individually protected since 1950, one of Portugal's earliest such classifications."
+    },
+    {
+      "q": "Are Porto's remarkable trees free to visit?",
+      "a": "Yes. All ten trees on this list stand in two free public gardens, the Jardins do Palácio de Cristal and the Jardim Botânico do Porto, both open daily with no admission charge."
+    },
+    {
+      "q": "Why is Porto called the City of Camellias?",
+      "a": "Camellias, introduced from China and Japan in the 18th and 19th centuries, thrived so well in Porto's mild, humid climate that Portuguese growers began exporting specimens back to camellia breeders elsewhere in Europe. Casa Tait's own century-old camellia hedges, inside the Palácio de Cristal gardens, are among the oldest surviving examples in the city."
+    },
+    {
+      "q": "Why do so many of Porto's remarkable trees grow in just two gardens?",
+      "a": "Both the Jardins do Palácio de Cristal and the Jardim Botânico do Porto began as private 19th-century estates belonging to wealthy families, several with ties to the port wine trade, who competed to plant the most impressive imported specimens. Both later passed into public or university ownership, keeping their tree collections intact and freely accessible."
+    }
+  ],
+  "trees": [
+    {
+      "id": "por_001",
+      "name": "The Tulip Tree of Casa Tait",
+      "species": "American Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "250+ years",
+      "age_min": 250,
+      "age_max": 280,
+      "location": {
+        "address": "Casa Tait, Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
+        "latitude": 41.1472,
+        "longitude": -8.6267,
+        "neighbourhood": "Massarelos"
+      },
+      "story": "This American tulip tree became one of Portugal's first individually protected trees in 1950, a legal status most of the country's current laws postdate. It grows beside Casa Tait, a 19th-century mansion inside the Jardins do Palácio de Cristal that once belonged to a British port wine family, and at more than 250 years old it predates both the mansion and the palace gardens built around it by a century or more. Liriodendron tulipifera is native to the eastern United States, named for the yellow-green, cup-shaped flowers it produces each late spring, blooms that only appear once a tree reaches real maturity and can go unnoticed entirely on a younger specimen. A second tulip tree grows nearby in the same grounds, over 40 metres tall, though it lacks this one's formal protection status and shouldn't be confused with it. Porto's oldest tulip tree survived the transformation of its surrounding grounds more than once: the Palácio de Cristal itself, the glass-and-iron exhibition hall that gave the gardens their name, was demolished in 1951 and replaced by the domed sports arena still standing today, a change that came one year after this tree's own protection was made permanent. Whatever else has come and gone around it, the tulip tree has stayed exactly where it was planted.",
+      "verified_sources": [
+        "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal_3",
+        "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Protection since 1950 and 250+ year age confirmed by both the Porto city council's own parks page and an independent garden-history source. Coordinates are the Jardins do Palácio de Cristal's general location from the Portuguese Wikipedia infobox; Casa Tait's exact position within the larger park is not independently surveyed, hence approximate.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "por_002",
+      "name": "The Magnolia of Casa Tait",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "100+ years",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Casa Tait, Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
+        "latitude": 41.1472,
+        "longitude": -8.6267,
+        "neighbourhood": "Massarelos"
+      },
+      "story": "The base of this southern magnolia measures more than six metres around, thick enough that it would take several adults linking arms to circle it. It grows in the same grounds as Casa Tait's protected tulip tree, inside the Jardins do Palácio de Cristal, and like its neighbour it is currently working through Portugal's formal classification process for trees of public interest, a status that turns deliberate damage to it into a legal offence rather than simply bad manners. Magnolia grandiflora is native to the southeastern United States, prized in European gardens since the 18th century for its glossy, leathery leaves and dinner-plate-sized white flowers, which release a lemon-and-vanilla scent strong enough to notice from several metres away. Late summer is when this specimen puts on its best show, its last flush of blooms opening just as most of the garden's spring flowering has finished elsewhere. Casa Tait's grounds, now folded into the wider Palácio de Cristal park, once belonged to the Tait family, British port wine merchants whose 19th-century money planted much of what still grows here. The magnolia, like the tulip tree beside it, has outlasted the family's ownership by generations.",
+      "verified_sources": [
+        "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal_3",
+        "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
+      "best_time": {
+        "months": [8],
+        "label": "August, for the season's last flush of lemon-scented white blooms"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Girth (over 6 m) and 'under classification' status confirmed by both the city council's parks page and an independent garden-history source. No documented planting date; age is an estimate from the tree's size and classification status. Coordinates as per the Casa Tait entry above, approximate.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "por_003",
+      "name": "The Metrosidero of the Library",
+      "species": "Pōhutukawa (Metrosideros excelsa)",
+      "age_estimate": "unknown",
+      "age_min": 50,
+      "age_max": 100,
+      "location": {
+        "address": "Near Biblioteca Almeida Garrett, Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
+        "latitude": 41.1472,
+        "longitude": -8.6267,
+        "neighbourhood": "Massarelos"
+      },
+      "story": "New Zealand's Christmas tree has adapted well to a country that celebrates the holiday in December for entirely unrelated reasons. This metrosideros, a species Māori communities call pōhutukawa and prize for the blaze of red flowers it produces each southern summer, stands near the Biblioteca Almeida Garrett inside the Jardins do Palácio de Cristal, and it is currently under review for formal protection as a tree of public interest. In its native New Zealand the species flowers in December, coinciding with the Southern Hemisphere summer, which is how it earned its English common name; transplanted to Porto's Northern Hemisphere climate, its flowering calendar shifts to match local seasons instead. It shares this corner of the garden with a Washingtonia palm and a scattering of camellias, part of the eclectic plant collection assembled here since the gardens were laid out in the 1860s by German landscape architect Émile David. The library beside it, built decades after the original planting, inherited the metrosideros as an established feature of the grounds rather than the other way around. Most visitors walking to the library's entrance pass directly under its canopy without knowing they're standing beneath one of the southern hemisphere's most photographed flowering trees.",
+      "verified_sources": [
+        "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal_3",
+        "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Location and 'under classification' status confirmed by two independent sources. No age or planting date found in either source, so age is left as unknown rather than guessed; flagged for that gap.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "por_004",
+      "name": "The Plane of Quinta da Macieirinha",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "100+ years",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Quinta da Macieirinha, Jardins do Palácio de Cristal, Rua de Entre Quintas, 4050 Porto",
+        "latitude": 41.1472,
+        "longitude": -8.6267,
+        "neighbourhood": "Massarelos"
+      },
+      "story": "A house dedicated to a dead king's exile keeps its own protected tree in the garden outside. The London plane at Quinta da Macieirinha, a manor house inside the Palácio de Cristal park grounds now serving as Porto's Museu Romântico, is under formal review for protection as a tree of public interest alongside the palace's more famous specimens across the park. The museum inside commemorates Charles Albert of Sardinia, the abdicated King of Sardinia-Piedmont who spent the final months of his life at this house in 1849, having lost his throne after a failed war against Austria. The plane tree predates that story by decades, part of the working quinta's original planting before its owners ever imagined a deposed Italian monarch would die inside. London planes were a standard choice for 19th-century Portuguese gardens, valued for fast growth, tolerance of hard pruning, and mottled, flaking bark that sheds pollution along with old skin, part of why the species still lines so many European boulevards today. This one has grown alongside the house through its transformation from private residence to royal deathbed to public museum, three very different identities for the same modest patch of ground.",
+      "verified_sources": [
+        "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal_3",
+        "https://pt.wikipedia.org/wiki/Jardins_do_Pal%C3%A1cio_de_Cristal"
+      ],
+      "access": "Free, public park, open daily (Museu Romântico interior charges separate admission)",
+      "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Location (Quinta da Macieirinha) and classification status confirmed by the city council's parks page; the Museu Romântico/Charles Albert history confirmed independently via the Portuguese Wikipedia article on the gardens. No individual age or measurement found; estimated as a mature 19th-century planting.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "por_005",
+      "name": "The Camellias of Casa Tait",
+      "species": "Common Camellia (Camellia japonica)",
+      "age_estimate": "100+ years",
+      "age_min": 100,
+      "age_max": 150,
+      "label": "Ensemble",
+      "location": {
+        "address": "Casa Tait, Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
+        "latitude": 41.1472,
+        "longitude": -8.6267,
+        "neighbourhood": "Massarelos"
+      },
+      "story": "Porto calls itself the City of Camellias, and the oldest proof of that claim is a set of hedges, not a single tree. More than sixty camellia specimens grow around Casa Tait inside the Jardins do Palácio de Cristal, several over a century old, planted as living, blooming partitions that section off parts of the garden the way a wall or fence would elsewhere. Camellias arrived in Portugal from China and Japan in the 18th and 19th centuries, and the country's mild, humid north proved so well suited to the plant that Portuguese growers eventually exported specimens back to camellia breeders across the rest of Europe, an unusual reversal of the typical colonial plant trade. Porto in particular leaned into the association hard enough that camellia season, roughly November through March depending on variety, now anchors a genuine tourism calendar, with garden openings and flower shows timed around peak bloom. Casa Tait's own hedges do the quieter version of that job every year: structuring the garden's paths, screening one glorieta from the next, doing exactly what a well-placed camellia has done in Portuguese gardens for two centuries. Nobody photographs a hedge the way they photograph a single dramatic tree, which may be exactly why this one has survived so many changes of garden fashion intact.",
+      "verified_sources": [
+        "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html",
+        "https://ambiente.cm-porto.pt/cidade-das-camelias/parque-de-serralves"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
+      "best_time": {
+        "months": [1, 2],
+        "label": "January into February, near peak camellia bloom"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Camellia_japonica_rose.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Júlio Reis, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Ensemble entry: over 60 camellia specimens at Casa Tait, several centenarian, confirmed by a dedicated garden-history source; Porto's 'City of Camellias' civic branding confirmed independently via the city's own environment department. No single representative specimen is named in either source, hence a group entry rather than one tree.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "por_006",
+      "name": "The Bischofia Trio of the Botanical Garden",
+      "species": "Java Cedar (Bischofia javanica)",
+      "age_estimate": "120-150 years",
+      "age_min": 120,
+      "age_max": 150,
+      "label": "Ensemble",
+      "location": {
+        "address": "Jardim Botânico do Porto, Rua do Campo Alegre 1191, 4150 Porto",
+        "latitude": 41.1536,
+        "longitude": -8.6426,
+        "neighbourhood": "Lordelo do Ouro"
+      },
+      "story": "Three of the oldest members of a common tropical street tree species anywhere in Portugal grow together in one Porto garden. These Bischofia javanica, a fast-growing evergreen more often planted along Asian avenues than kept in botanical collections, are estimated at 120 to 150 years old, among the oldest specimens of the species documented in the country, and Porto's city council has classified all three jointly as trees of public interest. They stand in the Jardim Botânico do Porto, the former grounds of the Campo Alegre estate before the University of Porto absorbed the property and turned its greenhouses and formal beds into a research and teaching collection now run by the university's Natural History and Science Museum. Bischofia javanica, native to South and Southeast Asia, produces small dark fruit that stains heavily when crushed, a trait that makes it common as a shade tree along tropical roads and rare as a deliberate botanical specimen in European gardens, part of why this trio's protected status matters: there are very few comparably documented examples anywhere in the country to measure them against. The garden around them holds more than 1,100 plant species across roughly four hectares, but these three, ordinary elsewhere and unusual here, are the ones with their own legal protection order.",
+      "verified_sources": [
+        "https://ambiente.cm-porto.pt/destaque/porto-tem-mais-21-arvores-de-interesse-publico",
+        "https://en.wikipedia.org/wiki/Jardim_Bot%C3%A2nico_do_Porto"
+      ],
+      "access": "Free, public garden, open daily",
+      "transport": "10 min walk from Casa da Música metro station (Line D)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Age range, joint classification and 'oldest of species in Portugal' status confirmed by the city council's own classification announcement; garden history and species count confirmed independently via Wikipedia. Coordinates are the Botanical Garden's general address from its Wikipedia infobox; the trio's exact spot within the grounds is not independently surveyed.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "por_007",
+      "name": "The Texas Madrone of the Botanical Garden",
+      "species": "Texas Madrone (Arbutus xalapensis)",
+      "age_estimate": "unknown",
+      "age_min": 50,
+      "age_max": 100,
+      "location": {
+        "address": "Jardim Botânico do Porto, Rua do Campo Alegre 1191, 4150 Porto",
+        "latitude": 41.1536,
+        "longitude": -8.6426,
+        "neighbourhood": "Lordelo do Ouro"
+      },
+      "story": "A tree named for Texas and Mexico has found an unlikely second home in a university garden in northern Portugal. This Arbutus xalapensis, commonly called the Texas madrone across its native range in the Trans-Pecos region and northeastern Mexico, is currently under formal review for protection as a tree of public interest at the Jardim Botânico do Porto. The species is a close relative of the strawberry tree that grows wild across Portugal's own hillsides, sharing the same reddish, peeling bark and small urn-shaped flowers, which may be exactly why it settled into this collection more easily than most of the garden's other exotic imports. Specimens of this size are rare outside their native range, since the species is notoriously difficult to cultivate away from the dry, well-drained limestone soils it evolved for, and few botanical gardens outside Texas and northern Mexico maintain a documented example at all. The Jardim Botânico do Porto occupies the former Campo Alegre estate, absorbed by the University of Porto in the 20th century and now run as a teaching and research collection alongside its role as a free public garden. This madrone is one of the collection's quieter successes: no dramatic size record, no royal history, just a temperamental species that, against the odds, has been thriving in the wrong hemisphere for years.",
+      "verified_sources": [
+        "https://ambiente.cm-porto.pt/destaque/porto-tem-mais-21-arvores-de-interesse-publico",
+        "https://en.wikipedia.org/wiki/Jardim_Bot%C3%A2nico_do_Porto"
+      ],
+      "access": "Free, public garden, open daily",
+      "transport": "10 min walk from Casa da Música metro station (Line D)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Classification status confirmed by the city council's announcement; general garden context via Wikipedia. No age, planting date or measurement found in either source, so age is left as unknown rather than guessed.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "por_008",
+      "name": "The Himalayan Cedar of the Palácio de Cristal",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "unknown",
+      "age_min": 60,
+      "age_max": 120,
+      "location": {
+        "address": "Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
+        "latitude": 41.1472,
+        "longitude": -8.6267,
+        "neighbourhood": "Massarelos"
+      },
+      "story": "At around 24 metres tall, this Himalayan cedar is one of the largest of its species growing anywhere in Porto, a claim made cautiously since more than one Porto garden has a candidate for the title and no citywide survey has settled the question. It grows in the Jardins do Palácio de Cristal, high enough on the hillside that its crown clears the rooftops below and looks out over the Douro valley, and its size alone marks it out in a garden better known for camellias and formal beds than for conifers this large. Cedrus deodara is native to the western Himalayas, where it is the national tree of Pakistan and grows at altitudes most other cedars can't tolerate, and it reached European gardens in the 19th century as one of several Himalayan conifers collectors raced to introduce once British expansion into the region made seed collection possible. Its drooping, slightly weeping branch tips distinguish it at a glance from the stiffer, more horizontal cedars of Lebanon and Atlas that grow in other Porto gardens. No precise planting date has surfaced for this specimen, only its approximate current height, so its age here is an estimate rather than a documented fact. What isn't in question is the view: few other trees in the garden let you see this much of the city at once.",
+      "verified_sources": [
+        "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html",
+        "https://commons.wikimedia.org/wiki/File:%C3%81rvore_dos_Jardins_do_Pal%C3%A1cio_de_Cristal.jpg"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/%C3%81rvore_dos_Jardins_do_Pal%C3%A1cio_de_Cristal.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Nikolau, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Height (~24 m) and 'possibly largest in the city' claim come from one detailed garden-history source describing a Porto cedar of this size and species; softened to 'one of the largest' per hard rule 8, since a comparable claim exists for other Porto cedars and no single citywide record-holder has been confirmed. The photo's own Commons categorisation and species identification (Cedrus deodara, Jardins do Palácio de Cristal) place it specifically in this garden, which fixed the location for this entry. No age or planting date found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "por_009",
+      "name": "The Coast Redwood of the Botanical Garden",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "unknown",
+      "age_min": 60,
+      "age_max": 120,
+      "location": {
+        "address": "Jardim Botânico do Porto, Rua do Campo Alegre 1191, 4150 Porto",
+        "latitude": 41.1536,
+        "longitude": -8.6426,
+        "neighbourhood": "Lordelo do Ouro"
+      },
+      "story": "The tallest tree species on Earth has a foothold in a four-hectare university garden in Porto, and it's already one of the biggest specimens the city has. This coast redwood, native to a narrow fog belt along the California and southern Oregon coastline where mature wild trees exceed 100 metres, is nowhere near that scale here, but the Jardim Botânico do Porto's own description lists it among the largest sequoias documented in the city. Coast redwoods reached European botanical collections in the mid-19th century, decades after their first scientific description, and gardens across Britain, France and the Iberian Peninsula planted them as living proof of the New World's most extreme trees, with no clear sense yet of how they'd perform in a climate so different from California's summer fog. This one has thrived well enough that its crown is now a genuine landmark within the garden's skyline, visible above the surrounding conifer collection from most approaches. The species can reproduce from stump sprouts as well as seed, meaning a felled coast redwood can regrow from its own base, a trait almost no other conifer shares. Porto's specimen has needed no such resilience yet. It has simply grown, steadily, since whichever year in the garden's history someone planted a California seedling in Portuguese soil and hoped for the best.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Jardim_Bot%C3%A2nico_do_Porto",
+        "https://www.100milarvores.pt/2017/12/arvores-do-campo-alegre-as-que-nos-fazem-sorrir.html"
+      ],
+      "access": "Free, public garden, open daily",
+      "transport": "10 min walk from Casa da Música metro station (Line D)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "'Among the largest in the city' status confirmed by two independent sources describing the garden's conifer collection. No age, planting date or precise height measurement found for this individual tree, so age is left as unknown rather than guessed.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "por_010",
+      "name": "The Atlas Cedar of the Botanical Garden",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "age_estimate": "unknown",
+      "age_min": 60,
+      "age_max": 120,
+      "location": {
+        "address": "Jardim Botânico do Porto, Rua do Campo Alegre 1191, 4150 Porto",
+        "latitude": 41.1536,
+        "longitude": -8.6426,
+        "neighbourhood": "Lordelo do Ouro"
+      },
+      "story": "Of the three cedar species growing in this collection, the Atlas cedar is the one a local garden writer singled out as the most beautiful, an unusually direct piece of praise to volunteer about one specimen rather than a whole species. This particular Cedrus atlantica grows in the Jardim Botânico do Porto's conifer collection, native to the Atlas Mountains of Morocco and Algeria, a range it shares with no natural competition from either of its more famous cedar relatives, the cedar of Lebanon and the Himalayan cedar, both planted nearby in the same garden. All three species look similar enough at a distance, distinguished mainly by branch angle and needle colour, that telling them apart requires standing close enough to compare bark and cone shape directly, a small identification puzzle the garden's layout seems to invite by planting the three so near each other. Atlas cedars were introduced to European gardens in the 1840s, later than Lebanon cedars but earlier than the Himalayan species, part of a decades-long sequence of cedar introductions that let 19th-century botanists compare three ecologically similar trees from three unconnected mountain ranges within a single afternoon's walk. No individual age or measurement has surfaced for this tree beyond its standing as a mature, well-formed specimen. Its reputation here rests entirely on how it looks, which, by every account gathered, is exactly the point.",
+      "verified_sources": [
+        "https://www.100milarvores.pt/2017/12/arvores-do-campo-alegre-as-que-nos-fazem-sorrir.html"
+      ],
+      "access": "Free, public garden, open daily",
+      "transport": "10 min walk from Casa da Música metro station (Line D)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Single-source tree: the 'most beautiful in the garden' description and general presence come from one dedicated garden-history blog, and no second independent source confirming this specific specimen was found despite a real search. Kept because the underlying facts (species, general garden context, presence of a comparative cedar collection) are independently verifiable even though this exact tree isn't cross-confirmed; age left unknown rather than guessed.",
+      "location_precision": "approximate"
+    }
+  ]
+}
