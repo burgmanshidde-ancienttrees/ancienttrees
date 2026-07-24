@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-24 — Berlin: 18th city live, 10 trees researched
+
+- No reader submissions (CSV checked: header row only). Site was healthy, nothing published was wrong, and every one of the 17 already-published cities had already had a genuine photo-hunting pass this cycle (see the run of 2026-07-23 entries below), so per the ladder this run moved to the next rung: the next `pending` city, Berlin.
+- 10 trees researched, written and shipped. Berlin protects around 600 trees as Naturdenkmäler, most of them oaks, and the throughline that fell out of the research is the Tegel Forest holding three of the city's own record-holders in one place: the oldest tree (Dicke Marie, honestly disputed at 500-900 years between two credible sources), the thickest (the Humboldteiche), and until a June 2025 storm felled it, the tallest too (the Burgsdorff-Lärche, researched then dropped once I found it was already dead, not something any source flagged up front). Full detail in CURATION.md.
+- 7 of 10 photos found, all Wikimedia Commons. Caught one real near miss before it shipped: a file captioned for the Kaisereiche turned out, once actually opened and viewed, to show a giant sequoia trunk, not an oak. Swapped for a second, visually-confirmed photo of the right tree instead. A separate Ginkgo photo captioned for the Britz specimen turned out on the same check to be a different ginkgo in Pankow; dropped rather than used.
+- One tree kept with an honest "declining" label rather than smoothed over: the Bellevue-Eiche in Köpenick, which Berlin's own district has literally called a "sterbende Eiche" (dying oak) in press coverage since 2015, when it was fenced off. Still alive, still under active conservation effort, story says so plainly.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-23 — Prague: 17th city live, 10 trees researched
 
 - New city, the next `pending` in the tier-1 list after Vienna. Researched from Prague's official pamatny strom register (protecting individual trees since 1992, roughly 200 citywide), Czech Wikipedia's per-tree pages, and the city's own memorial-tree site (prazskestromy.cz).
