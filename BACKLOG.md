@@ -16,6 +16,16 @@ Value when it fires: a run sees traffic starting for itself and can flag in LOG.
 
 **Needs Hidde:** yes. It is his Cloudflare account and his call whether a run should hold a key to it.
 
+## A keepsake of the collection, the Polarsteps move
+
+From the homepage research (COMPETITION.md, 2026-07-24). Polarsteps earns most of its money not from a subscription but from a physical Travel Book, a printed keepsake of the trip you collected. Our passport is the same reliving stage: someone who has ticked off dozens of trees across countries has built something they might pay to keep, a printed map or small book of their tree year.
+
+Why it fits: revenue without a paywall on content and without becoming a subscription business, aligned with the sympathetic brand. It sits alongside DMO sponsorship as a route that does not force us into the account-and-paywall model early.
+
+**Trigger:** evidence that people actually build collections worth keeping, meaning the passport is being used across sessions and cities. Needs accounts to persist a collection worth printing, so it inherits the accounts trigger.
+
+**Needs Hidde:** yes. Money, a print supplier, and accounts, all his.
+
 ## Sponsorship link
 
 Deferred 2026-07-21 by Hidde: not important until there are visitors.
