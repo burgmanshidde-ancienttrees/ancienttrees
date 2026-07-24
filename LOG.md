@@ -44,6 +44,16 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-24 — Seville: 19th city live, 10 trees researched
+
+- No reader submissions (CSV checked: header row only). Site was healthy, nothing published was wrong, so went straight to the next rung: the next `pending` city, Seville.
+- 10 trees researched, written and shipped. The throughline that fell out of the research: almost nothing in Seville is actually ancient. Most of its grandest trees, the Australian figs and eucalyptus, the ginkgos, date to two deliberate planting booms in the 1910s-1920s and the 1929 Ibero-American Exposition, not to any medieval or Moorish origin. Full detail in CURATION.md.
+- One real research correction worth flagging: dropped a "500-600 year old orange tree planted by King Pedro I" after its only findable source (a since-removed city blog post) gave two different ages for itself in the same piece. Replaced it with a much better documented tree in the same gardens: a grove of ginkgos planted in 1910, 10 of 25 originals still alive today.
+- 4 trees flagged honestly (thin or single sourcing, or an age that had to be stated as a range), none fabricated. Kept one single-sourced tree on the list anyway, a camphor tree said to be the only one in the city, since the underlying facts check out even though this specific specimen isn't cross-confirmed.
+- 5 of 10 photos found on Wikimedia Commons, every one opened and viewed directly before approval rather than caption-matched. 5 missing after a real search, including one tree (the Gran Capitán eucalyptus, Seville's tallest) that turns out to have no dedicated photography anywhere, consistent with its own story: locally obscure despite being 50 metres tall.
+- Four of the ten trees stand inside paid-admission sites (Real Alcázar, the Cartuja/CAAC, Seville Cathedral), noted plainly in each one's access field.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-24 — Berlin: 18th city live, 10 trees researched
 
 - No reader submissions (CSV checked: header row only). Site was healthy, nothing published was wrong, and every one of the 17 already-published cities had already had a genuine photo-hunting pass this cycle (see the run of 2026-07-23 entries below), so per the ladder this run moved to the next rung: the next `pending` city, Berlin.
