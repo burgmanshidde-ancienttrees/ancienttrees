@@ -1,0 +1,43 @@
+# Product principles
+
+What we have learned from comparable products (AllTrails, Polarsteps, Strava, Atlas Obscura, PictureThis) and from established web practice, written down so every run and session applies the same thinking. Applied, not generic: each line says what it means for Ancient Trees.
+
+## Lessons from the comparable products
+
+1. **The core loop is a habit loop: trigger, action, reward, investment.** Our action is the check-in; the reward is a tree turning green and a story worth the walk; the investment is the collection that accumulates. The investment phase is the retention moat: the more someone has collected, the harder it is to leave. Surface progress everywhere, make each check-in feel like it adds up.
+
+2. **The collection is the moat, so protect it.** A growing passport is switching cost. Keep it survivable (portable link, eventually accounts), never lose it, always show the running total across cities. This is why the passport is not a gimmick but the retention engine.
+
+3. **Never reset progress punitively.** If completion or streaks are ever added, welcome people back rather than zeroing them, the way Calm and Apple Fitness do. A tree collection is naturally forgiving; keep it that way.
+
+4. **First value must be frictionless: the aha moment fast, with the fewest clicks.** For us the aha is a genuinely remarkable tree the visitor did not know stood near them, or their first check-in. No signup wall stands in front of it, which is a real advantage over Polarsteps, which forces account creation first and is criticised for it. Guard this: never put a gate before the first wow.
+
+5. **Sharing is the growth loop that does not need Hidde to post.** Distribution is our weakest point and the owner will not post under his name. But users can share their own collection. A shareable "my trees" page turns every enthusiast into word of mouth and an inbound link. Build the passport to be shared, not just kept.
+
+6. **Seasonality is the re-engagement trigger.** "At its best right now" and, later, "trees at their best near you this week" are the internal triggers that bring people back, the way AllTrails uses recaps. The season feature is not decoration; it is the reason to return.
+
+7. **Privacy is a feature worth saying out loud.** Polarsteps sells "no ads, no data sale." We are already there: no accounts, no trackers, cookieless. Say it on the homepage; it differentiates us from PictureThis's aggressive monetisation and matches the honesty positioning.
+
+8. **Money without a content paywall: two proven routes.** Utility behind a soft paywall (AllTrails: offline, routes) and a keepsake of the collection (Polarsteps: the physical book). Both let the content stay free and indexable. Neither forces us to become a subscription business early. See COMPETITION.md.
+
+9. **Breadth is honest trust.** AllTrails' city and park directory builds credibility by its size and doubles as SEO. Our city grid does the same. Lean into "cities mapped, more to go" instead of social proof we cannot fake.
+
+## General web practice we hold to
+
+1. **Show, do not tell.** We can, because the product is the value. Use the real map, a real tree, the real season chart in the hero, not claims. SaaS sells a promise; we show the thing.
+
+2. **One primary action per screen.** The homepage hero has one: find trees near me. Everything else is secondary.
+
+3. **Empty states teach.** A 0 of 10 passport should invite the first check-in, not look broken. Every zero state is an instruction, not a dead end.
+
+4. **Mobile-first, and performance is UX.** Our visitor is outdoors on a phone, maybe on 3G in a park. Static HTML, light pages, images that load. A slow page in a park is a lost walk.
+
+5. **Programmatic SEO quality rules, because search is our only channel.** Every page must exist for a real reason and carry unique, substantive content, never fill-in-the-city-name templating (blueprint P3). Internal links by relevance, not everywhere. Quality over quantity: a few excellent pages beat many thin ones, which is the same logic as ten curated trees per city and the lead-group focus. Publish a little, measure, then scale, the canary-batch pattern, which is exactly the reference-city approach in GO_TO_MARKET.md.
+
+6. **Progressive disclosure.** Lead with the one thing that matters, reveal depth on demand. A tree page opens with the story and the walk, not a wall of fields.
+
+7. **Trust through honesty is the moat.** Every honest label (an approximate pin that says so, "not finished yet") is a deposit in the one account competitors cannot copy. Never trade it for polish or growth.
+
+## How to use this
+
+When building or judging anything user-facing, check it against these. If a change strengthens the habit loop, the aha moment, shareability, honesty or findability, it serves the goals. If it adds friction before first value, fakes trust, or chases breadth that dilutes quality, it does not.
