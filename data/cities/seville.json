@@ -1,0 +1,341 @@
+{
+  "city": "Seville",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Seville's grandest trees are mostly not ancient at all. They are the product of two specific bursts of civic ambition: centuries of orange trees planted for scent rather than fruit in Andalusi and Christian gardens alike, and a wave of botanical experimentation around the 1929 Ibero-American Exposition that filled Parque de María Luisa with Australian figs, American eucalyptus and Asian ginkgos never native to this soil. A handful of trees here predate all of that. Most are free to see, and the ones that aren't are inside places worth the ticket anyway.",
+  "meta_description": "Seville's remarkable trees range from a 500-year ombu tied to Columbus's son to the city's tallest tree, a hidden 50-metre eucalyptus.",
+  "question_answer": "Seville's oldest documented tree is the ombu at the Monasterio de la Cartuja, roughly 500 years old and said to have grown from South American seeds brought back by Hernando Colon, son of Christopher Columbus, around 1529. It stands in the grounds of what is now the CAAC contemporary art museum on Isla de la Cartuja, reachable by tram from the city centre.",
+  "question_meta": "Seville's oldest tree is a 500-year-old ombu at a former monastery, tied to Columbus's own son. Where it stands, and the city's ten most remarkable trees.",
+  "question_context": "The ombu at the Monasterio de la Cartuja has a stronger claim to age than anything else documented in Seville: local tradition holds that Hernando Colon, Christopher Columbus's son, planted it from seeds gathered in South America around 1529, in his own private arboretum, and that the tree or its seed passed to the neighbouring Carthusian monks after his death. If the date holds, it may be the first ombu ever grown in Europe. The tree nearly died in the early 1990s when a botched restoration sealed cavities in its trunk with polyurethane foam, trapping moisture that fed the fungus already damaging the wood; Expo '92 technicians removed the foam just in time, though the removal caused its own damage, and the tree has been left deliberately untouched since. It grows on the grounds of the former monastery, which today houses the Centro Andaluz de Arte Contemporaneo (CAAC), on Isla de la Cartuja across the river from central Seville. Most other candidates for Seville's oldest tree turn out, on closer inspection, to be twentieth-century arrivals: the city's famous fig and eucalyptus specimens mostly date to the 1910s and 1920s, and even the orange trees in the cathedral's Patio de los Naranjos were replanted within living memory.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Seville?",
+      "a": "The ombu at the Monasterio de la Cartuja, roughly 500 years old by tradition, said to have grown from seeds Hernando Colon, Columbus's son, brought from South America around 1529."
+    },
+    {
+      "q": "Are Seville's remarkable trees free to visit?",
+      "a": "Six of the ten on this list stand in free public parks or squares. Four are inside sites that charge admission: the Real Alcazar, the Monasterio de la Cartuja (CAAC), and Seville Cathedral's Patio de los Naranjos, all UNESCO-listed or nationally protected monuments worth the ticket regardless of the trees."
+    },
+    {
+      "q": "Why are so many of Seville's biggest trees Australian or American imports rather than native Spanish species?",
+      "a": "Much of Seville's tree canopy dates to a deliberate wave of botanical experimentation around the 1929 Ibero-American Exposition, when landscape architects filled Parque de Maria Luisa and nearby plazas with fast-growing exotic species, Australian Moreton Bay figs and eucalyptus especially, alongside older Andalusi traditions of planting citrus and palms for scent and shade rather than timber."
+    },
+    {
+      "q": "Why does Seville have so many orange trees if the fruit is too bitter to eat?",
+      "a": "Bitter oranges (Citrus aurantium) were planted under Almohad rule from the 12th century onward for their fragrant blossom and evergreen shade rather than their fruit, a tradition Christian Seville kept after the 1248 conquest and one the city still follows in new plantings today."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sev_001",
+      "name": "The Ginkgo Grove of the Real Alcázar",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "116 years",
+      "age_min": 110,
+      "age_max": 120,
+      "location": {
+        "address": "Jardín Inglés, Real Alcázar de Sevilla, 41004 Sevilla",
+        "latitude": 37.3844,
+        "longitude": -5.9912,
+        "neighbourhood": "Santa Cruz, Casco Antiguo"
+      },
+      "story": "Ten of these ginkgos are Seville survivors from a delivery of twenty-five. The trees arrived at the Real Alcázar in the autumn and winter of 1910, part of a shipment from the Royal Site of La Granja de San Ildefonso near Segovia, sent south to plant the palace's new English Garden, a cooler, shadier counterpoint to the clipped Andalusi courtyards elsewhere in the grounds. Fifteen didn't survive more than a century of Seville's dry heat, a climate ginkgos tolerate poorly compared to the temperate gardens they came from. The ten that did are now among the oldest ginkgos in Andalusia, and every December and January they do something nothing else in the garden does: every leaf turns the same intense yellow within days of each other, a uniform gold that stands out hard against the evergreen palms, cypresses and citrus around it. The species survived in the wild only in a few restricted pockets of China, kept alive for centuries as a sacred tree in Chinese and Japanese temple gardens before European botanists began exporting it in the 18th century. Its old Chinese name means duck's foot, a reference to the fan-shaped leaf that later inspired Goethe to write an entire poem about the tree's paired, seemingly single lobes. The Alcázar's ginkgos arrived almost a century after Goethe wrote it, foreign transplants in a garden that was already centuries old by the time they showed up.",
+      "verified_sources": [
+        "https://alcazarvegetal.wordpress.com/2015/01/01/ginkgo-biloba/",
+        "https://www.lugaresconhistoria.com/reales-alcazares-de-sevilla-el-jardin-del-eden"
+      ],
+      "access": "Paid entry (Real Alcázar admission ticket required)",
+      "transport": "10 min walk from Puerta de Jerez tram stop (T1), inside the Real Alcázar grounds",
+      "best_time": {
+        "months": [12, 1],
+        "label": "December into January, when every leaf turns uniform gold within days"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Ginkgo_biloba_alc%C3%A1zar_de_sevilla_agosto_2008.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Juan carlos boza, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Arrival date (autumn-winter 1910, ex-La Granja de San Ildefonso), original count (25) and survivor count (10) confirmed by a dedicated botanical-history source on the Alcázar's own flora, cross-referenced against a second independent article on the gardens. Coordinates are the Real Alcázar's general address; the English Garden is a specific section within the larger grounds, not independently surveyed, hence approximate.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sev_002",
+      "name": "The Ombú of La Cartuja",
+      "species": "Ombú (Phytolacca dioica)",
+      "age_estimate": "500 years",
+      "age_min": 480,
+      "age_max": 500,
+      "location": {
+        "address": "Monasterio de la Cartuja (CAAC), Avenida Américo Vespucio 2, 41092 Sevilla",
+        "latitude": 37.4128,
+        "longitude": -6.0053,
+        "neighbourhood": "Isla de la Cartuja"
+      },
+      "story": "This ombú, a soft-wooded relative of spinach that grows to the size of an oak, is said to have come from seeds Hernando Colón, son of Christopher Columbus, brought back from South America and planted in his own private arboretum around 1529. After his death the seeds, or the seedling itself, passed to the Carthusian monks next door, and the tree has stood at the Monasterio de la Cartuja ever since, possibly the first ombú ever grown in Europe. It nearly didn't survive the twentieth century. In the early 1990s, restorers tried to seal cavities in its soft trunk with polyurethane foam, a technique meant for harder wood that instead trapped moisture and fed the fungus already eating the tree from inside. Expo '92 technicians removed the foam before it could finish the job, but the extraction itself caused more damage, and the tree has been left deliberately untouched since. Its wood is famously soft, closer to a swollen vegetable than timber, which is why arborists now recommend a fence and a no-walking perimeter rather than any further intervention. The monastery today houses Andalusia's contemporary art museum, so a tree that may have crossed the Atlantic in a conquistador's son's luggage now shares its courtyard with rotating exhibitions of modern sculpture.",
+      "verified_sources": [
+        "https://venerablesarboles.blogspot.com/2021/07/el-ombu-de-la-cartuja.html",
+        "https://www.ciccartuja.es/how-to-get-there/?lang=en"
+      ],
+      "access": "Paid entry (CAAC museum ticket, 3.01 euros; free Tuesday-Friday 19:00-21:00 and Saturday 11:00-21:00)",
+      "transport": "5 min walk from the Cartuja tram stop (T1), or bus C1/C2",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Omb%C3%BA_Cartuja_001.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "Anual, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "The Hernando Colón/1529 origin story rests on one detailed source (a dedicated old-trees blog); the CAAC's own site confirms the monastery's Colón-era history and the site's general access details but does not itself date the tree. Flagged for single-source dating rather than dropped, since the tree's existence, near-death in the 1990s and current protected status are independently corroborated. Coordinates are the museum's street address; the tree's exact spot within the grounds is not independently surveyed, hence approximate.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sev_003",
+      "name": "The Figs of Plaza del Cristo de Burgos",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "100 years",
+      "age_min": 95,
+      "age_max": 115,
+      "location": {
+        "address": "Plaza del Cristo de Burgos, 41003 Sevilla",
+        "latitude": 37.3935,
+        "longitude": -5.9915,
+        "neighbourhood": "San Vicente, Casco Antiguo"
+      },
+      "story": "Four of Seville's biggest fig trees didn't start out on this plaza at all. City gardeners moved these Moreton Bay figs here from Parque de María Luisa around 1925, an unusually bold transplant for trees of this size, and they took root well enough that the biggest now measures 7.2 metres around and 28 metres tall. The species, native to the coastal forests of eastern Australia, is known for the buttressed, almost architectural roots it grows to stabilize such a heavy crown, and for aerial roots that descend from its branches and thicken into secondary trunks over time. Every one of the four gets pruned back hard each spring, not for the trees' health but for Easter: Semana Santa's processions route directly through this plaza, and the candle-bearing floats need branches out of the way. The square itself has changed names more often than the trees have changed address, known at various points as Plaza de Argüelles, Plaza Virgen del Pilar and Plaza de San Pedro before settling on its current name, and locals called it the Plaza de las Magnolias for years even though the ficus, not the magnolias, dominate the space today. All four are individually protected on Seville's own register of singular trees, a rare case of a whole relocated group qualifying together rather than one specimen alone.",
+      "verified_sources": [
+        "https://www.sevilla.org/documentos/parquesyjardines/ArbolesSingularesSevilla/116/",
+        "https://jardinesdelaoliva.wordpress.com/tag/arboles-singulares-de-sevilla/"
+      ],
+      "access": "Free, public plaza",
+      "transport": "5 min walk from the Plaza de la Encarnación or Alameda de Hércules",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Girth (720 cm) and height (28 m) confirmed by Seville's official singular-trees register; the 1925 transplant-from-María-Luisa history confirmed by a second, independent local source. No tree-specific coordinates found in either source; the pin is an estimate of the plaza's location from its described street boundaries (Almirante Apodaca, Dormitorio, Descalzos, Morería), not independently surveyed.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sev_004",
+      "name": "The Cypress of the Glorieta de Bécquer",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "160 years",
+      "age_min": 150,
+      "age_max": 175,
+      "location": {
+        "address": "Glorieta de Bécquer, Parque de María Luisa, 41013 Sevilla",
+        "latitude": 37.377828,
+        "longitude": -5.989183,
+        "neighbourhood": "Parque de María Luisa"
+      },
+      "story": "Seville built a monument to its most famous Romantic poet around a tree that had nothing to do with him. The bald cypress at the centre of the Glorieta de Bécquer was already standing, planted sometime between 1850 and 1870, when the city commissioned sculptor Lorenzo Coullaut Valera to surround it with white marble and bronze figures representing three stages of love, a monument inaugurated in 1911, decades before Gustavo Adolfo Bécquer's poetry made this corner of Parque de María Luisa a literary pilgrimage site. The tree itself, native to the swamps of the Mississippi basin, is a curious choice for a Mediterranean city: it needs no flooding to thrive, but it does drop its needles every winter like a broadleaf tree, a trait most conifers don't share. At around 150 to 175 years old, with a trunk 5.82 metres round and a crown reaching 33 metres, it now frames whichever restoration the poet's monument currently needs, which has been more than once. Photographers queue for the same shot from the same bench angle nearly every day of the year. Almost none of them come for the tree.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Glorieta_de_B%C3%A9cquer_(Sevilla)",
+        "https://www.xn--arbolybosquedelao-uxb.es/cipres-los-pantanos-sevilla/"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Prado de San Sebastián bus/tram interchange, inside Parque de María Luisa",
+      "best_time": {
+        "months": [11],
+        "label": "November, when its needles turn rust-orange before dropping"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Glorieta_de_B%C3%A9cquer_%28Sevilla%29_01.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "CarlosVdeHabsburgo, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Planting window (1850-1870) and dimensions (5.82 m girth, 33 m height) confirmed by two independent sources, including Spain's own 'Árbol y Bosque del Año' historic-tree competition site. Coordinates from the Spanish Wikipedia infobox for this specific glorieta.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sev_005",
+      "name": "El Gran Capitán",
+      "species": "River Red Gum (Eucalyptus camaldulensis)",
+      "age_estimate": "100 years",
+      "age_min": 90,
+      "age_max": 120,
+      "location": {
+        "address": "Jardines de Murillo, Paseo de Catalina de Ribera, 41004 Sevilla",
+        "latitude": 37.3825,
+        "longitude": -5.9878,
+        "neighbourhood": "Santa Cruz, Casco Antiguo"
+      },
+      "story": "Seville's tallest tree is also one of its least visited, despite standing in the middle of the historic centre. This river red gum, known locally as El Gran Capitán, rises more than 50 metres above the Paseo de Catalina de Ribera at the edge of Jardines de Murillo, a five minute walk from the Real Alcázar's own walls, yet it rarely appears in a single guidebook or walking tour. Its trunk has grown close to five metres around, and in 2025 the city carried out a precision pruning operation specifically to reduce the risk of falling limbs, treating a tree this size with the same caution as a structural repair. Eucalyptus camaldulensis is native to Australian riverbanks, not Andalusian gardens, and it owes its presence here to the same wave of botanical experimentation that filled Parque de María Luisa nearby with Australian figs: gardeners in the early twentieth century testing which imports would thrive in Seville's dry heat. This one thrived almost too well, outgrowing every other tree in the city by a wide margin while somehow staying anonymous. Locals who live nearby walk past it daily without a second look. Visitors headed for the more famous gardens on either side, the Alcázar and the cathedral, pass directly underneath it and rarely notice they've done so.",
+      "verified_sources": [
+        "https://www.sevilla.org/actualidad/noticias/2025/una-poda-de-precision-evita-riesgos-en-el-gran-capitan-el-arbol-mas-alto-de-sevilla",
+        "https://okdiario.com/naturaleza/uno-arboles-mas-altos-espana-descomunal-eucalipto-sevillano-60-metros-altura-16250403"
+      ],
+      "access": "Free, public garden",
+      "transport": "5 min walk from Puerta de Jerez tram stop (T1)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Height (over 50 m, one source measuring closer to 60 m) and 'tallest tree in Seville' status confirmed by the city's own 2025 press release plus an independent news report; the two sources vary on exact height, so a range is given rather than a single figure. No planting record found; age is an estimate based on the species' introduction period, not a documented date. Coordinates are the gardens' general address, not independently surveyed for this specific tree.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sev_006",
+      "name": "The Centennial Hackberries of María Luisa",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "100+ years",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Glorieta Rafael de León, Parque de María Luisa, 41013 Sevilla",
+        "latitude": 37.3738,
+        "longitude": -5.9862,
+        "neighbourhood": "Parque de María Luisa"
+      },
+      "story": "Not every tree on this list needed royal patronage or a foreign pedigree to earn its place. The Mediterranean hackberries scattered through Parque de María Luisa, clustered most densely near the Glorieta Rafael de León, the Choza de los Carneros and the Paseo de los Rosales, are a native Iberian species that grew in this soil for generations before any garden was landscaped around it. Several specimens here are recognized as centennial by the city's own singular-trees inventory, prized less for any single record than for the deep, textured shade their slow canopies provide across the park's oldest paths. The species is tough and long-lived, tolerant of drought, poor soil and hard pruning, which is exactly why Seville's gardeners let so many of them stand while faster, showier imports like the park's Australian figs and eucalyptus got the attention. Parque de María Luisa itself was the private garden of the Palacio de San Telmo before Princess María Luisa Fernanda donated part of it to the city in 1893, decades before landscape architect Jean-Claude Nicolas Forestier redesigned it for the 1929 Ibero-American Exposition. These hackberries predate that transformation. They were already old when the glorietas, fountains and pavilions went up around them, quiet holdovers from what the land looked like before it became a park at all.",
+      "verified_sources": [
+        "https://www.sevilla.org/documentos/parquesyjardines/ArbolesSingularesSevilla/116/",
+        "https://jardinesdelaoliva.wordpress.com/tag/parque-de-maria-luisa/"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Prado de San Sebastián bus/tram interchange, inside Parque de María Luisa",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Ensemble entry: multiple centennial hackberries confirmed by Seville's official singular-trees register and a second park-history source, but neither gives one definitive age or a single representative specimen, so this is presented as a group rather than one named tree, and the pin marks the Glorieta Rafael de León area rather than one surveyed trunk.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sev_007",
+      "name": "The Trees of the Alameda de Hércules",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "100 years",
+      "age_min": 90,
+      "age_max": 110,
+      "location": {
+        "address": "Alameda de Hércules, 41002 Sevilla",
+        "latitude": 37.398825,
+        "longitude": -5.994133,
+        "neighbourhood": "San Vicente, Casco Antiguo"
+      },
+      "story": "Seville's oldest public promenade was built on a swamp, and it takes its name from the trees planted to drain it. The Alameda de Hércules, laid out in 1574 on marshy ground just north of the old city walls, is named for the white poplars, álamos in Spanish, planted to help dry and stabilize the reclaimed land, trees used as infrastructure rather than ornament. Poplars still line the central walkway today, though the ones standing now trace only to a major 1764 replanting that added more than 1,600 trees, not to the original 16th-century planting. At both ends of the promenade stand dense stands of London planes, nearly a century old themselves, that have survived every renovation the square has undergone since, including a long twentieth-century decline and its more recent revival as one of Seville's most popular nightlife streets. Two Roman columns, salvaged from a demolished temple, still stand at the promenade's southern entrance, predating every tree here by more than a millennium and giving the Alameda its Hercules name through a 17th-century statue once mounted on top of one of them. Bars and terraces now crowd the same ground the poplars were planted to drain, four and a half centuries after the swamp they replaced.",
+      "verified_sources": [
+        "https://jardinessinfronteras.com/2018/12/14/vicisitudes-de-la-alameda-de-hercules-a-traves-de-sus-arboles/",
+        "https://treveler.es/descubre-la-historia-y-encanto-de-la-alameda-de-hercules/"
+      ],
+      "access": "Free, public square",
+      "transport": "5 min walk from the Feria or Alameda de Hércules bus stops; 10 min walk from Plaza de la Encarnación",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Alameda_de_Hercules_Sevilla_1.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Gzzz, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Ensemble entry: 1574 founding, drainage planting and 1764 replanting confirmed by two independent local-history sources; the London planes at both ends are separately described as 'nearly a century old' without a precise planting year. Coordinates from the Spanish Wikipedia infobox for the square itself.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sev_008",
+      "name": "The Orange Trees of the Patio de los Naranjos",
+      "species": "Bitter Orange (Citrus aurantium)",
+      "age_estimate": "100 years or less",
+      "age_min": 60,
+      "age_max": 100,
+      "location": {
+        "address": "Patio de los Naranjos, Catedral de Sevilla, 41004 Sevilla",
+        "latitude": 37.385742,
+        "longitude": -5.993096,
+        "neighbourhood": "Casco Antiguo"
+      },
+      "story": "The orange trees that give Seville Cathedral's most famous courtyard its name aren't nearly as old as the courtyard itself. The Patio de los Naranjos, a rectangular yard 43 by 81 metres, was built between 1172 and 1186 as the ablutions courtyard of the Almohad mosque that once stood on this site, the place worshippers washed before prayer. The mosque came down after the 1248 Christian conquest and the Gothic cathedral rose around the same footprint, but the orange trees visitors photograph today only date to a 20th-century restoration led by architect Félix Hernández, replacing whatever grew here before rather than surviving from it. What has survived intact is more remarkable than any tree: the mosque's minaret, spared demolition entirely, still stands beside the patio as the cathedral's bell tower, known today as the Giralda, and a fountain basin at the courtyard's centre, possibly Roman or Visigothic in origin, still occupies the same spot where the ablutions fountain once stood. For most of its eight centuries this courtyard cost nothing to enter. That changed in 1992, when the cathedral folded it into its paid tourist route, ending a run of open public access longer than most European countries have existed. The orange trees are new. The habit of walking through them for free is the part that's actually gone.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Patio_de_los_Naranjos_(Sevilla)",
+        "https://www.sevillaactualidad.com/sevilla/535112-el-patio-de-los-naranjos-30-anos-privatizado/"
+      ],
+      "access": "Paid entry (Seville Cathedral admission ticket required since 1992)",
+      "transport": "Inside Seville Cathedral, adjoining the Giralda tower",
+      "best_time": {
+        "months": [2, 3],
+        "label": "late February into March, azahar season, when the blossom scents the whole courtyard"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/3_Patio_de_los_Naranjos_de_la_Catedral_de_Sevilla._Sevilla.%281%29.JPG",
+        "license": "CC BY-SA 3.0 ES",
+        "attribution": "Roberto Chamoso G, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Current trees confirmed as a 20th-century replanting (Félix Hernández restoration) rather than a surviving Almohad-era grove, so age is stated as an estimate bound by the restoration era, not a documented planting year. The 1992 shift from free to paid access is confirmed by a dedicated local news retrospective. Coordinates are the cathedral's general address; the patio is one specific courtyard within the larger complex, not independently surveyed.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sev_009",
+      "name": "The Fig of the Glorieta de Goya",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "100 years",
+      "age_min": 95,
+      "age_max": 115,
+      "location": {
+        "address": "Glorieta de Goya, Parque de María Luisa, 41013 Sevilla",
+        "latitude": 37.3776,
+        "longitude": -5.9862,
+        "neighbourhood": "Parque de María Luisa"
+      },
+      "story": "Two marble columns are the only physical trace left of the pavilion this fig tree now grows inside. The Glorieta de Goya, a circular clearing in Parque de María Luisa near Plaza de España, once held a full-scale replica of the Quinta del Sordo, Francisco de Goya's house outside Madrid, built for the 1929 Ibero-American Exposition and dismantled once the fair closed. Only two four-metre Doric columns from that pavilion's entrance survived the teardown, and they now frame a Moreton Bay fig planted in the same period, introduced to Seville in the early 20th century and naturalized well enough in the local climate that Ficus macrophylla now shows up across the city's parks and plazas. The tree has grown into the columns' role as much as around them, its crown now the dominant feature of a clearing designed to showcase a painter's house rather than a fig tree. Later redesigns in the second half of the twentieth century reshaped the glorieta's paths and plantings more than once, but the columns and the fig both survived every version. Visitors walking the park's central axis between Plaza de España and the fountain gardens pass directly beneath it, often without registering that the shade they're standing in used to be somebody's front garden reconstruction.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Glorieta_de_Goya_(Sevilla)",
+        "http://explicartesevilla.blogspot.com/2020/05/la-glorieta-de-goya-en-el-parque-de.html"
+      ],
+      "access": "Free, public park",
+      "transport": "5 min walk from Plaza de España, inside Parque de María Luisa",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "The 1929 pavilion history and surviving columns confirmed by two independent sources. No precise planting date found for the fig itself; age is estimated from the species' early-20th-century introduction to Seville. No GPS coordinates found in either source; pin estimated from the glorieta's described position near Plaza de España's north tower, not independently surveyed.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sev_010",
+      "name": "The Camphor Tree of the Glorieta de Doña Sol",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "unknown",
+      "age_min": 40,
+      "age_max": 100,
+      "location": {
+        "address": "Glorieta de Doña Sol, Parque de María Luisa, 41013 Sevilla",
+        "latitude": 37.3762,
+        "longitude": -5.9873,
+        "neighbourhood": "Parque de María Luisa"
+      },
+      "story": "As far as one dedicated local record can tell, this camphor tree has no rivals anywhere in Seville. It stands in the Glorieta de Doña Sol, a quiet clearing in Parque de María Luisa, described as the only confirmed Cinnamomum camphora growing in the city, a species more commonly associated with temple courtyards in Japan and southern China, where individual specimens are known to live well past a thousand years. No planting record has surfaced for this particular tree, and no formal age estimate exists yet, since it was only proposed for Seville's singular-trees catalogue in 2016. What sets it apart is entirely botanical rather than historical: camphor trees produce an aromatic oil in their bark and leaves, once distilled commercially for the same compound used in mothballs and topical liniments, and crushing a leaf releases a sharp, medicinal scent unlike anything else growing nearby. The glorieta gained a small dedicated corner in 2023, the Rincón de Pepe Elías, named for a local garden historian, close enough to the camphor tree that visitors reading the memorial plaque stand in its shade without necessarily knowing which tree is the rare one. Being the only example of something is a modest kind of fame, and this tree has held it for years without anyone making a fuss about it.",
+      "verified_sources": [
+        "https://jardinesdelaoliva.wordpress.com/2016/08/23/el-alcanforero/"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Prado de San Sebastián bus/tram interchange, inside Parque de María Luisa",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Single-source tree: the 'only camphor tree in Seville' claim and its 2016 proposal for the singular-trees catalogue both trace to one dedicated local gardens blog, and no second independent source confirming this specific specimen was found despite a real search. Kept on the list because the underlying facts (species rarity, general behaviour, 2023 memorial corner nearby) are independently verifiable even though this exact tree is not cross-confirmed; age left as unknown rather than guessed.",
+      "location_precision": "approximate"
+    }
+  ]
+}
