@@ -42,3 +42,39 @@ That is exactly why Hidde's own goal is right. If this were a 90-million-user ma
 - The route/offline paywall is validated (AllTrails). Keep building toward it, price it never (hard rule 2).
 - DMO/tourism-board sponsorship is a real revenue path that needs no accounts and no paywall. Worth remembering when the traffic question is answered. On the backlog with the sponsorship item.
 - Our moat is curation, story, beauty and honesty, not coverage. Every competitive move should deepen that, not chase breadth that invites a giant.
+
+## Homepage, UX and funnel teardown: AllTrails and Polarsteps
+
+Researched 2026-07-24 at Hidde's request, to learn how the closest comparable products present themselves. Both turned out to validate the find/walk/collect homepage direction and, more importantly, to point at a revenue path that fits our constraints.
+
+### AllTrails homepage (web-first, our closest structural model)
+
+- Hero is search-first, not signup-first: headline "Find your next adventure" over a search bar. The primary action is to search nearby, exactly the "Find trees near me" hero we mocked up.
+- Three capability sections in sequence: activity recording, offline maps, custom routes. The three-act structure is the proven pattern; ours (find, walk, collect) is the same shape.
+- A large "Adventure anywhere" directory of 100+ cities and 80+ parks. It builds trust through breadth and doubles as SEO. Our city grid is the same move; lean into it.
+- Soft paywall: content is free, no hard block. AllTrails+ sells utility (offline maps, print maps, route tools). This validates the route/offline paywall instinct a third time.
+
+### Polarsteps homepage (app-first, but the model is the lesson)
+
+- Core loop is Plan, Track, Relive. Almost identical to find, walk, collect. Reinforces the structure.
+- Revenue, and this is the finding: the biggest earner is not the subscription, it is a physical Travel Book, a printed keepsake of the trip you collected, at 36 to 150 euro. A light Plus subscription (nicer maps, stats) and affiliate booking sit alongside. Privacy-first, no ads, no data sale, grown from its own revenue.
+- Named testimonials and a 4.8 from 370K ratings carry the page. We have none of that and must not fake it.
+
+### What transfers, and what does not
+
+Adopt:
+- The search-first hero: "Find trees near me" as the primary action, web-first like AllTrails, not an app download like Polarsteps (we have no app).
+- The three-act structure, find, walk, collect, now double-validated.
+- The directory as honest trust and SEO: "12 cities mapped, 88 to go" instead of fake social proof.
+- Privacy-first as a stated selling point: no accounts, no ads, no trackers. It differentiates us from PictureThis and matches our honesty positioning. Polarsteps proves it is a feature worth saying out loud.
+- The soft paywall on utility, never on content: the AllTrails model, which we already favour.
+
+Reject:
+- Fake or borrowed social proof. No 20M users, no 4.8 from hundreds of thousands. Honesty is the whole brand.
+- The app-download CTA. We are web-first by strategy.
+
+### The strategic finding: the passport is our "relive," and it can be sold
+
+Polarsteps monetises the reliving, not the tracking: it sells a beautiful artifact of the collection you built. Our "collect" (the passport) is exactly that same reliving stage. Someone who has ticked off forty trees across five countries has built something they might pay to keep: a printed map or small book of their tree year, a "tree passport" as an object.
+
+Why this matters: it is a revenue path that needs no paywall on content, no subscription to administer, and it fits the sympathetic brand. It still eventually needs accounts, to persist a collection worth printing, which is the destination already recorded in CLAUDE.md. But it reframes why accounts exist: not to gate the trees, but to enable a keepsake people actually want. It sits alongside the DMO-sponsorship path from the earlier analysis as the two revenue routes that do not require becoming a subscription business.
