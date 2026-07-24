@@ -44,6 +44,16 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-24 — Florence: 22nd city live, 10 trees researched
+
+- No reader submissions (CSV checked: header row only). Site was healthy, nothing published was wrong, so went straight to the next rung: the next `pending` city, Florence.
+- 10 trees researched, written and shipped, all with confirmed GPS pins this time (Italy's own regional monumental-tree registry, RAMI, gives an individually surveyed coordinate for every one of the 145 Florence trees it tracks, a stronger footing than most cities on this list have started from). The throughline: Florence's oldest documented trees sit in one institution, the Giardino dei Semplici botanical garden (founded 1545), which kept its own planting records; almost everything else on the list dates from the single decade in the 1860s-70s when Florence was briefly capital of unified Italy and architect Giuseppe Poggi built the parks and viewpoints (Piazzale Michelangelo, the Bobolino) that the city is still walking around today. Full detail in CURATION.md.
+- Two real corrections caught mid-research, both prevented from shipping wrong rather than just vague: a much-repeated cedar landmark at Villa Fabbricotti turned out to have died in 2001 (only the trunk remains); a separately researched, officially-recognised monumental elm at Piazza Vittorio Veneto turned out to have died and been felled in July 2023, a fact several older tourism sources don't reflect. Both dropped entirely rather than published as living trees to visit.
+- One hard-rule-10 exclusion: a regionally-registered monumental palm at Villa di Rusciano is explicitly marked "not accessible to the public" in its own registry entry, contradicting looser claims that the surrounding park is open; left off the list given the direct conflict.
+- 8 of 10 trees flagged honestly, all for undocumented age rather than a fabricated one; one genuine age dispute (a Mexican cypress at the botanical garden, where two sources disagree by about 25 years) presented as a range rather than picking a number.
+- 2 of 10 photos found and visually confirmed on Wikimedia Commons (the botanical garden's Montezuma cypress, and the ginkgo at Piazzale Michelangelo, which almost none of the millions who photograph that view each year seem to notice). 8 missing after a genuine search; Florence's own citizen-registry photos were not used since their licensing terms aren't a verified open licence.
+- Site rebuilt, all contracts validated on the first pass, pushed.
+
 ## 2026-07-24 — Athens: 21st city live, 10 trees researched
 
 - No reader submissions (CSV checked: header row only, confirmed by fetch). Site healthy, nothing published was wrong. Before starting new work, rechecked Edinburgh's 6 remaining photo gaps (still the weakest focus-region city at 4/10) in case anything had turned up since the 2026-07-23 pass; it hadn't, including two near-misses on iNaturalist that turned out, once checked at a tight 300m radius, not to actually be at the named site. No further hunting is planned there until something changes; continuing to re-search the same 20 cities' known gaps would be the exact "looping forever" the mandate warns against, and the last three runs already moved on for the same reason. Went to the next rung: the next `pending` city, Athens.

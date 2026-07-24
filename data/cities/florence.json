@@ -1,0 +1,337 @@
+{
+  "city": "Florence",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Florence's old trees split between two origins. The Giardino dei Semplici, a botanical garden founded in 1545 to grow medicine for the Medici, holds the city's oldest documented trees: a yew planted in 1720, a cork oak from 1805, still growing where their directors put them. Almost everything else dates from one decade, the 1860s and 70s, when Florence briefly served as capital of unified Italy and architect Giuseppe Poggi carved new parks and viewpoints across the hills above the Arno. Both eras still stand, mostly overlooked by the millions who come only for the Duomo.",
+  "meta_description": "Florence's ten remarkable trees, from a 1720 botanical-garden yew to the tree nobody notices at Piazzale Michelangelo.",
+  "question_answer": "Florence's oldest documented tree is a European yew in the Giardino dei Semplici botanical garden, planted in 1720 by the botanist Pier Antonio Micheli and now around 306 years old. It stands a short walk from Piazza San Marco, behind the entrance ticket of one of the world's oldest university botanical gardens.",
+  "question_meta": "Florence's oldest tree is a 306-year-old yew planted in 1720 in the Giardino dei Semplici. Where it stands, plus the city's ten most remarkable trees.",
+  "question_context": "Most claims about a city's oldest tree rest on estimated girth rather than any documented planting date, which is what makes the Giardino dei Semplici's yew unusual: its 1720 planting is on record because Pier Antonio Micheli, the botanist who added it, ran the garden's own books at the time. That gives Florence something rarer than an old tree: a tree whose age nobody has to guess at. It grows in the Giardino dei Semplici, a walled botanical garden on Via Pier Antonio Micheli near Piazza San Marco, founded in 1545 by Cosimo I de' Medici to grow medicinal plants and now among the oldest university botanical gardens still operating anywhere. A ticket is required, unlike most of the trees on this list. Nearby grows a cork oak planted less than a century later, in 1805, and a Mexican cypress added in 1884 that has since grown the widest trunk of any tree in the city. All three have spent their entire lives within a few hundred metres of one another, tended by a sequence of directors rather than left to grow wild, which is exactly why their ages are known instead of estimated.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Florence?",
+      "a": "A European yew in the Giardino dei Semplici botanical garden, planted in 1720 by the botanist Pier Antonio Micheli. At around 306 years old, it is one of the few trees in the city whose exact planting date is on record rather than estimated."
+    },
+    {
+      "q": "Are Florence's remarkable trees free to visit?",
+      "a": "Six of the ten are free: the two Parco delle Cascine entries, the Bobolino, Salviatino, Piazzale Michelangelo and Villa Vogel all charge nothing. The other four stand inside two paid gardens, the Giardino dei Semplici botanical garden and the Boboli Gardens, both ordinary museum-style tickets rather than anything specific to the trees themselves."
+    },
+    {
+      "q": "Why are so few of Florence's remarkable trees medieval or older?",
+      "a": "Most of the city's oldest documented trees were planted deliberately inside institutional gardens, starting with the Giardino dei Semplici in 1545, rather than left standing through centuries of agriculture, flooding and war. Florence's real age is in its buildings; its trees are mostly eighteenth, nineteenth and early twentieth century plantings by comparison."
+    },
+    {
+      "q": "What did Giuseppe Poggi have to do with Florence's trees?",
+      "a": "Poggi was the architect who redesigned Florence's hillsides and boulevards when the city briefly served as capital of unified Italy in the 1860s and 70s. Piazzale Michelangelo, the Bobolino garden and several of the trees on this list all date from that single decade of work."
+    }
+  ],
+  "trees": [
+    {
+      "id": "flo_001",
+      "name": "The Micheli Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "306 years",
+      "age_min": 300,
+      "age_max": 312,
+      "location": {
+        "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+        "latitude": 43.778461,
+        "longitude": 11.261449,
+        "neighbourhood": "San Marco"
+      },
+      "story": "Florence's oldest verified tree grows behind a ticket gate, in a garden older than the city's most famous museums by two centuries. Pier Antonio Micheli planted this yew in 1720, while running the Orto Botanico for Cosimo III de' Medici, and it has now outlived the Grand Duchy that employed him by more than 150 years. At around 306 years old it is Florence's most precisely dated living thing: unlike the ring-count guesswork behind most ancient trees, its planting is on record because Micheli, one of Europe's first professional botanists, kept the garden's books himself. The trunk has thickened to nearly four metres around, and its dark, dense crown still throws the kind of deep shade yews are prized and feared for; every part of the tree except the red flesh around the seed is poisonous, a fact eighteenth century physicians studying it would have known well. The Giardino dei Semplici itself opened in 1545 to grow medicinal plants for the Medici, making it one of the oldest university botanical gardens anywhere in the world, and this yew has stood in it for nearly two thirds of that entire history. It survived the catastrophic 1966 Arno flood that drowned much of central Florence a few streets away, and it is still growing, still dropping the small red arils that birds strip clean every autumn.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/6491-tasso-giardino-dei-semplici-tasso-firenze-fi-toscana",
+        "https://www.ortobotanicoitalia.it/toscana/unifirenze/"
+      ],
+      "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+      "transport": "5 min walk from Piazza San Marco (T2 tram stop)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Registered on Italy's regional monumental tree list (RAMI ID #6491) with a specific GPS survey point. Planting date and attribution to Micheli corroborated by a second independent source.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_002",
+      "name": "The Cork Oak of the Giardino dei Semplici",
+      "species": "Cork Oak (Quercus suber)",
+      "age_estimate": "221 years",
+      "age_min": 215,
+      "age_max": 226,
+      "location": {
+        "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+        "latitude": 43.77851,
+        "longitude": 11.261264,
+        "neighbourhood": "San Marco"
+      },
+      "story": "Every commercial cork oak in Portugal and Spain gets stripped bare every nine years or so, its bark peeled for wine corks and flooring while the tree survives underneath, scarred orange until it heals. Florence's cork oak, planted in 1805 by Ottaviano Targioni Tozzetti in the same botanical garden that grew Micheli's yew, has never once been stripped. Two centuries of undisturbed growth have thickened its bark into a spongy, deeply fissured armour more than four metres around, exactly the texture and thickness that would make a cork harvester elsewhere in the Mediterranean take notice. Left alone for research and teaching rather than product, it has instead grown one of the widest, most theatrical crowns in the Giardino dei Semplici, spreading over 400 square metres of canopy from a single trunk. Targioni Tozzetti directed the garden in the early 1800s, the third generation of a Tuscan dynasty of naturalists, and this tree was one of his additions to a collection built around teaching pharmacy students to recognise plants by sight rather than from a drawing. It stands a short walk from the yew, in a garden that has quietly kept some of the oldest documented specimens of both species in Italy, without either one ever having to earn its keep.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/6490-quercia-da-sughero-firenze-fi-toscana",
+        "https://www.ortobotanicoitalia.it/toscana/unifirenze/"
+      ],
+      "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+      "transport": "5 min walk from Piazza San Marco (T2 tram stop)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Registered on Italy's regional monumental tree list (RAMI ID #6490) with a specific GPS survey point. Planting date and attribution to Targioni Tozzetti corroborated by a second independent source.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_003",
+      "name": "The Montezuma Cypress",
+      "species": "Montezuma Cypress (Taxodium mucronatum)",
+      "age_estimate": "approximately 140 years",
+      "age_min": 115,
+      "age_max": 145,
+      "location": {
+        "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+        "latitude": 43.778638,
+        "longitude": 11.26142,
+        "neighbourhood": "San Marco"
+      },
+      "story": "Nothing else in Florence comes from Mexico, has a trunk seven metres around, and survived being struck by lightning barely a decade ago. This Montezuma cypress, a cousin of the American bald cypress native to riverbanks around Mexico City, went into the ground at the Giardino dei Semplici in the 1880s, brought north as one of the many botanical trophies nineteenth century gardens competed to acquire. It grew for over a century without much incident, reaching a girth few trees on this list can match, before a September 2014 storm hit it directly, splitting and reshaping its crown in a single afternoon. The tree survived, though its silhouette now carries the asymmetry of that strike rather than the tidy pyramid shape the species usually holds. In its native range this cypress can live for a thousand years or more, most famously as the Arbol del Tule near Oaxaca, one of the stoutest trees on Earth; Florence's specimen is a comparative youngster, but it is already the widest girthed tree in this entire list. Visitors touring the botanical garden for its more famous residents, the Medici era yew and the cork oak nearby, often walk straight past it without registering that they have just passed something that does not grow naturally anywhere within four thousand kilometres of Tuscany.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/6487-cipresso-di-montezuma-firenze-fi-toscana",
+        "https://commons.wikimedia.org/wiki/File:Taxodium_mucronatum_01_by_Line1.jpg",
+        "https://www.ascuoladaglialberi.net/firenze/"
+      ],
+      "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+      "transport": "5 min walk from Piazza San Marco (T2 tram stop)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Taxodium_mucronatum_01_by_Line1.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Line1, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Age genuinely disputed between sources: RAMI's registry (ID #6487) gives a specific 1884 planting date (about 142 years as of 2026), while an independent Tuscany monumental-tree survey (ascuoladaglialberi.net) gives 115 years from an earlier assessment. Presented as a 115-145 year range rather than asserting either figure. The September 2014 lightning strike is reported by RAMI's own field notes only; no second source found for that specific detail, included as reported since the tree's visibly asymmetric crown is consistent with storm damage.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_004",
+      "name": "The Farnia of the Ippodromo",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 100 years",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Ippodromo delle Mulina, Parco delle Cascine, 50144 Firenze",
+        "latitude": 43.789366,
+        "longitude": 11.20751,
+        "neighbourhood": "Parco delle Cascine"
+      },
+      "story": "The tallest tree in Florence's largest park stands where racehorses used to run. This pedunculate oak, rising 29 metres above the western meadows of the Parco delle Cascine, grows on the site of the old Ippodromo delle Mulina, a trotting racecourse that operated from 1891 until Florence's city council reclaimed the disused land in recent years. The oak predates the racecourse by generations. It is one of only six trees the City of Florence has formally recognised as monumental in its own right, a status granted well before the municipality's recent push to catalogue dozens more candidates across the Cascine and its historic villas, a list that has grown from a dozen entries in 2020 to 29 by 2026. Its trunk measures close to four and a half metres around, wide enough that arborists estimate its age at well over a century without ever finding a planting record to confirm it. What is certain is its size: nothing else standing in the Cascine's 130 hectares, a park with its own dark history (Nazi occupying forces used it for a mass execution in July 1944, still marked today by a memorial stone), comes close to this oak's height. It grows at the park's western edge, past the horse chestnuts and the poplars, far from the joggers and market stalls nearer the city, exactly where a tree left alone for a century tends to end up.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/6507-farnia-firenze-fi-toscana",
+        "https://www.nove.firenze.it/alberi-monumentali-il-comune-di-firenze-candida-19-esemplari.htm",
+        "https://www.lanazione.it/firenze/cronaca/ippodromo-mulina-cascine-comune-kr9rj4o1"
+      ],
+      "access": "Free, public park",
+      "transport": "20 min walk from the Cascine tram stop (T1), through the park to the former Ippodromo delle Mulina",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "One of the six trees the Comune di Firenze already owns and recognises as monumental in its own right (per the municipality's own press materials on the wider 19-candidate/6-recognised registry). No planting date or documented age has surfaced anywhere; age range is a wide, honest estimate from trunk girth and height alone.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_005",
+      "name": "The Leccio of the Cascine",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "estimated over 100 years",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Parco delle Cascine, Arno-side path near the weekly market, 50144 Firenze",
+        "latitude": 43.777337,
+        "longitude": 11.227961,
+        "neighbourhood": "Parco delle Cascine"
+      },
+      "story": "This holm oak has spent its whole life fighting for balance, and it shows. Growing beside the Arno-facing path through the Parco delle Cascine, not far from the market that sets up every Tuesday along the river, the tree has developed unusually large buttress roots and long exposed root sections that flare out from its base like something built rather than grown. Arborists who surveyed it in 2022 and again in 2025 recorded a trunk holding steady at just over four metres around and a canopy reaching nearly 19 metres high, and rated its health excellent both times, buttresses and all. Holm oaks are evergreen, native across the Mediterranean, and built to survive exactly the kind of periodic flooding the Arno has delivered to this park for centuries; the exposed, muscular root system is very likely the tree's own answer to wet, shifting soil rather than a defect. No documented planting date survives for it, which is typical for a park this old and this large, but its girth puts it easily past its first century. It stands in a stretch of the Cascine most tourists never reach, well past the old horse track, in the quieter western half of a park that has been public land since Napoleon's own sister, Elisa Baciocchi, opened the former Medici hunting grounds to ordinary Florentines during her rule as Grand Duchess of Tuscany.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/14678-il-leccio-del-parco-delle-cascine-leccio-firenze-fi-toscana",
+        "https://www.ascuoladaglialberi.net/firenze/"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from the Cascine tram stop (T1), along the Arno-side path",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No age or planting date documented anywhere found; range estimated from girth and species growth rate alone, stated as a wide honest range rather than a false precise figure.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_006",
+      "name": "The Honey Locust of Salviatino",
+      "species": "Honey Locust (Gleditsia triacanthos)",
+      "age_estimate": "age undocumented",
+      "age_min": 80,
+      "age_max": 180,
+      "location": {
+        "address": "Viale Righi / Via Lungo l'Affrico, Salviatino, 50137 Firenze",
+        "latitude": 43.78538,
+        "longitude": 11.294196,
+        "neighbourhood": "Salviatino"
+      },
+      "story": "Florence has two trees popularly linked to Judas, and this is the one people picture wrong. The tree usually called Albero di Giuda in Italian is Cercis siliquastrum, the small pink flowered species tied to the legend that Judas hanged himself from one; this is Spino di Giuda, a completely different tree, honey locust, native to North America and named instead for its genuinely vicious thorns, some once over ten centimetres long, that grew along its trunk and branches before cultivated varieties bred them softer. Florence's specimen, standing alone at a residential intersection in Salviatino on the city's northeastern edge, has never been bred for anything. Its trunk has thickened to five and a half metres around, among the largest recorded for the species anywhere, and Italy's own monumental tree registry gives it national level significance, a rating few other Florentine trees share. No planting record survives, which is common for a tree standing on what was once open agricultural land before Salviatino urbanised around it. It offers little shade in winter and no flowers to speak of, and most residents of the surrounding apartment blocks likely have no idea their street corner holds a genuine botanical record holder.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/6516-spino-di-giuda-firenze-fi-toscana",
+        "https://www.nove.firenze.it/alberi-monumentali-il-comune-di-firenze-candida-19-esemplari.htm"
+      ],
+      "access": "Free, public street corner",
+      "transport": "Bus line 11 to the Salviatino terminus, then a short walk down Via Lungo l'Affrico",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "One of the six trees the Comune di Firenze already owns and recognises as monumental in its own right. No age or planting record found anywhere; age range is a wide estimate only, not a documented figure.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_007",
+      "name": "The Cedar of the Bobolino",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "age undocumented, garden dates from the 1860s-70s",
+      "age_min": 100,
+      "age_max": 160,
+      "location": {
+        "address": "Giardino del Bobolino, Viale Machiavelli, 50125 Firenze",
+        "latitude": 43.75794,
+        "longitude": 11.24942,
+        "neighbourhood": "Bobolino, near Porta Romana"
+      },
+      "story": "Most of Florence's grand hillside gardens exist because the city briefly ran the whole of Italy. When Florence served as the young kingdom's capital between 1865 and 1871, architect Giuseppe Poggi was given the job of modernising it, and alongside demolishing the old city walls for wide boulevards he laid out a string of new parks on the hills above the Arno, of which the Bobolino, a modest wedge of public garden near Porta Romana, is one of the smallest and least visited. Its centrepiece is this cedar of Lebanon, now with a trunk over four and a half metres around and a crown just past 22 metres tall, standing roughly where Poggi's plan put it a century and a half ago. Italy's regional registry lists this cedar among Tuscany's officially recognised monumental trees, one entry in the growing tally of Florence specimens that has expanded from a dozen in 2020 to 29 candidates by 2026 as the municipality works through a backlog of overlooked trees across its parks. Unlike its more famous neighbour Boboli a few hundred metres away, the Bobolino charges nothing and never closes its gates, which makes this cedar one of the few genuinely monumental trees in Florence that anyone can walk up to at any hour of the day or night.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/6483-cedro-del-libano-firenze-fi-toscana",
+        "https://www.intoscana.it/it/dal-cedro-del-libano-di-bobolino-allolmo-del-giappone-dellorto-botanico-sono-29-gli-alberi-monumentali-di-firenze/"
+      ],
+      "access": "Free, public garden, always open",
+      "transport": "15 min walk from Porta Romana, along Viale Machiavelli",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No individual planting date or age has been documented for this specific tree; age range bounded loosely by the Bobolino garden's known construction under Poggi (1865-1877), not a measured figure. Regional monumental-tree status (RAMI, 'regional significance') is distinct from the Comune di Firenze's separate list of six municipally-owned recognised trees, which this tree is not part of; worded carefully to avoid conflating the two registries.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_008",
+      "name": "The Cedar Above Pegasus",
+      "species": "Deodar Cedar (Cedrus deodara)",
+      "age_estimate": "age undocumented, likely under 160 years",
+      "age_min": 60,
+      "age_max": 160,
+      "location": {
+        "address": "Giardino del Cavaliere, Giardino di Boboli, Piazza Pitti 1, 50125 Firenze",
+        "latitude": 43.763862,
+        "longitude": 11.248978,
+        "neighbourhood": "Boboli Gardens, Oltrarno"
+      },
+      "story": "Florence's public symbol has stood next to this cedar since 1865, and almost nobody visiting climbs high enough in the Boboli Gardens to notice either one. The Giardino del Cavaliere, a walled terrace at the garden's highest point, holds a winged horse statue that the Tuscany region has since adopted as its own official emblem, sculpted by Aristodemo Costoli the same year Florence became capital of the newly unified Kingdom of Italy. Growing beside it is a deodar cedar, a Himalayan species that had only reached European gardens a few decades earlier, after British and French plant hunters brought seed back from the mountains of Kashmir and Nepal in the 1830s and 40s. Boboli's specimen has grown a trunk nearly four and three quarter metres around, evergreen and untouched by the seasonal crowds that mob the garden's lower amphitheatre for weddings and photographs. No planting record for this particular tree has surfaced, so its age can only be bounded by the species' own arrival in Europe and the terrace's known history, putting it somewhere in its second century at most. It stands quietly above one of the most visited gardens in Italy, on a terrace most day trippers skip because it means one more flight of steps after the main lawns.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/15096-il-cedro-di-boboli-cedro-dellhimalaya-firenze-fi-toscana",
+        "https://www.conoscifirenze.it/sculture/1540-pegaso-al-boboli.html"
+      ],
+      "access": "Paid entry (Boboli Gardens ticket)",
+      "transport": "15 min walk uphill from the Palazzo Pitti entrance to the Giardino del Cavaliere terrace",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No planting date or age documented for this individual tree; age bounded only by the species' known arrival in Europe and the terrace's 1865 statue, not a measured figure specific to the cedar.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_009",
+      "name": "The Ginkgo of Piazzale Michelangelo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "age undocumented, likely under 150 years",
+      "age_min": 60,
+      "age_max": 150,
+      "location": {
+        "address": "Piazzale Michelangelo, 50125 Firenze",
+        "latitude": 43.762197,
+        "longitude": 11.265766,
+        "neighbourhood": "Piazzale Michelangelo, Oltrarno"
+      },
+      "story": "Millions of people photograph the view from Piazzale Michelangelo every year, and almost none of them photograph the tree they are standing under to do it. This ginkgo grows at the edge of the piazzale that architect Giuseppe Poggi built in 1875 as the grand viewing terrace for his newly reshaped city, planted among the dozens of ornamental species Poggi and his gardener Attilio Pucci chose to line the new hillside boulevards. Ginkgo biloba is often called a living fossil, the sole surviving member of a family of trees that flourished alongside dinosaurs and has barely changed since; this specimen, with a trunk three metres around, is a comparative newcomer at well under 150 years old, but it belongs to the oldest tree lineage on this entire list by a margin of tens of millions of years. Every November its fan shaped leaves turn a uniform gold and drop within days, all at once, rather than fading gradually the way most autumn colour does, briefly carpeting the ground in a colour that photographs even better than the skyline behind it. No exact planting date has been documented for this individual tree, only its presence in the same landscaping scheme as the piazzale itself.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/6510-ginkgo-del-piazzale-ginkgo-firenze-fi-toscana",
+        "https://commons.wikimedia.org/wiki/File:Ginkgo_Biloba_a_Firenze_(piazzale_Michelangelo).jpg",
+        "https://www.firenzetoday.it/cronaca/segreti-piazzale-michelangelo.html"
+      ],
+      "access": "Free, public piazza, always open",
+      "transport": "20 min walk uphill from Ponte Vecchio, or bus lines 12/13 to Piazzale Michelangelo",
+      "best_time": {
+        "months": [11],
+        "label": "November, when its fan-shaped leaves turn gold and drop within days"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Ginkgo_Biloba_a_Firenze_%28piazzale_Michelangelo%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "PROPOLI87, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "No planting date or age documented; the piazzale itself dates to Poggi's 1875 design, giving an upper bound on age but not a measured figure for this specific tree.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_010",
+      "name": "The Pine of Villa Vogel",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "age undocumented",
+      "age_min": 80,
+      "age_max": 160,
+      "location": {
+        "address": "Parco di Villa Vogel, Via delle Torri 23, 50142 Firenze",
+        "latitude": 43.775722,
+        "longitude": 11.20653,
+        "neighbourhood": "Isolotto-Legnaia, Quartiere 4"
+      },
+      "story": "Florence's Renaissance gardens get all the attention; this pine grows in a very different kind of park. The Parco di Villa Vogel sits in Isolotto-Legnaia, a residential district southwest of the historic centre with none of the tour groups that fill Boboli or the queues outside the Uffizi, in a villa the Vogel family donated to the city in the 1980s so their grounds could become a public playground, skating rink and picnic area for the neighbourhood. This stone pine stands in what surveyors describe as the oldest surviving section of that original garden, in an isolated spot still ringed by centuries-old cypresses that predate the villa's donation by generations. Its trunk measures a modest three and a third metres around, smaller than the show-garden specimens across town, but it has outlived whatever family occasion or landscaping fashion first put it there, and it now shades children's play equipment instead of a private lawn. No record of its planting survives, consistent with a garden built for a family rather than catalogued for visitors. It is a reminder that Florence's old trees are not only in ticketed gardens and postcard piazzas: some of them just ended up in the park nearest to where ordinary Florentines happen to live.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/14460-il-pino-di-villa-vogel-pino-domestico-firenze-fi-toscana",
+        "https://it.wikipedia.org/wiki/Villa_Vogel"
+      ],
+      "access": "Free, public park",
+      "transport": "Bus toward Isolotto-Legnaia (lines 6 or 9) to Via delle Torri, then a few minutes' walk into the park",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No age or planting date documented; RAMI's own field notes describe it only as standing in 'the oldest part' of the park. Age range is a wide, honest estimate.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
