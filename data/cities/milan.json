@@ -1,0 +1,359 @@
+{
+  "city": "Milan",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Ten trees, and almost every one owes its survival to a specific human decision.",
+  "meta_description": "Milan's ten remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
+  "question_answer": "Milan's oldest tree is one of a pair of ginkgo trees in the Orto Botanico di Brera, planted in 1775 when the garden's founders imported them directly from China. Both are now around 250 years old and grow a few steps from the garden's 18th-century greenhouse on Via Brera 28.",
+  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775. Its story, plus 10 remarkable trees.",
+  "question_context": "Milan has never been an easy city for an old tree to survive in. Wars, plague and relentless nineteenth and twentieth century redevelopment levelled most of what predates them, so almost nothing on this list is medieval. The one clear exception is the university's own ginkgo biloba pair, a male and a female planted together in 1775 when Abbot Fulgenzio Vitman was building the Orto Botanico di Brera for Empress Maria Theresa's new medical faculty, importing seed directly from China less than two decades after the species had reached Europe at all. Italy's monumental tree registry calculates their age from growth data at 235 years, a little short of the 251 years a straight planting-date count would give; this page states both rather than picking one, since the gap is exactly the kind of rounding error that comes from measuring a slow grower by two different methods. Either way, they are Milan's oldest trees by a wide margin over anything else here, and the garden marked their joint 250th anniversary with a public conference in March 2026.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Milan?",
+      "a": "One of a pair of ginkgo trees in the Orto Botanico di Brera, planted in 1775 from seed brought directly from China. Depending on the calculation method, the pair is 235 to 251 years old, the oldest documented trees in the city by a wide margin."
+    },
+    {
+      "q": "Are Milan's remarkable trees free to visit?",
+      "a": "All ten on this list are free. Unlike Rome or Florence, none of Milan's most remarkable trees stand inside a paid garden or monument; the closest thing to a ticket is Parco Trotter's restricted opening hours, since its grounds double as a working school."
+    },
+    {
+      "q": "Why does Milan have so few genuinely ancient trees compared to Rome or Florence?",
+      "a": "Milan lacks the long-running institutional gardens, papal villas and monastery grounds that protected old trees elsewhere in Italy. Almost everything on this list was planted deliberately within the last two centuries, inside parks built from scratch or squares redesigned after the city's rapid nineteenth and twentieth century growth."
+    },
+    {
+      "q": "Has Milan lost any of its historic trees recently?",
+      "a": "Yes. A widely loved 200-year-old red oak known as the Quercia di Montale fell in October 2019 during heavy rain; its trunk is preserved in place rather than removed. A plane tree planted in 1773 at Villa Litta, once one of the city's oldest, was felled in 2015 after a fungal disease; a cross-section of its trunk is displayed inside the villa."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mil_001",
+      "name": "Il Sacerdote",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "approximately 156 years",
+      "age_min": 150,
+      "age_max": 165,
+      "location": {
+        "address": "Giardini Pubblici Indro Montanelli, Corso Venezia 55, 20121 Milano",
+        "latitude": 45.474759,
+        "longitude": 9.200005,
+        "neighbourhood": "Porta Venezia"
+      },
+      "story": "For years, gardeners in Porta Venezia's park called this tree a metasequoia and had the genus wrong before anyone checked properly. It is in fact a bald cypress, one of the first ever planted in Milan, native to the swamps of the American South rather than to any part of Italy, and one of very few conifers anywhere that drops its needles for winter, the trait that gives the whole species its English name. Standing roughly 35 metres tall with a trunk 6.2 metres around, it grows at the edge of the artificial lake inside the Giardini Pubblici Indro Montanelli, Milan's oldest public park, opened in 1784 on land a Habsburg duke gave up for prisoners to landscape. Other cypresses share its stretch of water, but this is the tallest and widest of the whole stand, the reason the Milanese writer and forest scholar Tiziano Fratus nicknamed it Il Sacerdote, the priest, for the way its bare winter branches spread like a robe. Its roots, like those of every bald cypress in wet ground, throw up woody knees above the waterline to breathe, a feature visitors often mistake for stumps. At around 156 years old it predates the park's nineteenth century English-garden makeover and has outlasted the zoo that once shared these grounds, dismantled in 1992.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/2204-il-sacerdote-cipresso-calvo-milano-mi-lombardia",
+        "https://josway.it/il-poeta-e-il-sacerdote/"
+      ],
+      "access": "Free, public park (opening hours vary by season)",
+      "transport": "5 min walk from Porta Venezia (M1)",
+      "best_time": {
+        "months": [10, 11],
+        "label": "October into November, when its needles turn rust orange before falling"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Age corroborated within a consistent range by a second, independent source (josway.it gives 150-200 years); no real dispute, RAMI's 156-year figure used as the point estimate.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mil_002",
+      "name": "Platano di Indro",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "age undocumented, likely 100-240 years",
+      "age_min": 100,
+      "age_max": 240,
+      "location": {
+        "address": "Giardini Pubblici Indro Montanelli, Corso Venezia 55, 20121 Milano",
+        "latitude": 45.473612,
+        "longitude": 9.197206,
+        "neighbourhood": "Porta Venezia"
+      },
+      "story": "The largest plane tree in Milan does not grow tall so much as it grows sideways, in every direction at once. Named for Indro Montanelli, the journalist the park was rededicated to in 2002, it stands about 50 metres from his statue with a trunk 8.36 metres around, the widest of any plane in the city, rising from a short, irregular, deeply fluted base that splits almost at ground level into at least five major limbs, each thick enough to be a trunk of its own. The effect, according to arborists who have surveyed it, is closer to a vase held open than to the single straight column most plane trees grow into. No planting record survives, ordinary for a park redesigned twice since 1784 and never catalogued tree by tree until recently, so its age can only be guessed at from girth: somewhere in its second century, possibly its third. What is documented is who lives in it. Ring-necked parakeets, an escaped-pet species now breeding wild across Milan, nest in cavities high in the crown, adding flashes of tropical green to a tree already too disorderly to look properly manicured. Visitors chasing the statue for a photograph rarely look up at what is standing over it.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/2205-platano-grosso-dei-giardini-montanelli-platano-comune-milano-mi-lombardia",
+        "https://www.in-lombardia.it/en/tourism-in-lombardy/tourism-milan/monumental-plane-trees-milan"
+      ],
+      "access": "Free, public park (opening hours vary by season)",
+      "transport": "5 min walk from Porta Venezia (M1)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No planting date or age documented anywhere found; age range is a wide, honest estimate from trunk girth alone, bounded loosely by the park's 1784 founding. A candidate Commons photo (Platano_secolare_ai_Giardini_Montanelli.jpg) was viewed and rejected: its caption identifies it only as 'a centuries-old plane tree' in the gardens generally, and the park holds several large planes, so it could not be confirmed as this specific, individually surveyed specimen.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mil_003",
+      "name": "Bagolaro dei Giardini Montanelli",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "approximately 164 years",
+      "age_min": 150,
+      "age_max": 180,
+      "location": {
+        "address": "Giardini Pubblici Indro Montanelli, Corso Venezia 55, 20121 Milano",
+        "latitude": 45.475007,
+        "longitude": 9.20054,
+        "neighbourhood": "Porta Venezia"
+      },
+      "story": "Milan calls this species spaccasassi, the stone-splitter, for roots strong enough to crack paving, and this hackberry has had over a century and a half to test the claim against the paths of the city's oldest public park. Standing 27 metres tall with a trunk 4.24 metres around, it is one of seven trees the city has formally recognised as monumental within the Giardini Pubblici Indro Montanelli, sharing that status with the plane and the cypress a short walk away. Celtis australis is native across the Mediterranean and was planted widely in nineteenth century Milan for the same reason it thrives today: almost nothing bothers it, not soot, not drought, not the compacted soil under a park crossed by tens of thousands of people a week. Its small, dark, cherry-like fruit ripens in autumn and draws blackbirds rather than people, who mostly walk past a tree with none of the visible drama of its more contorted neighbours. Italy's monumental tree registry puts its age at 164 years, calculated from growth data rather than any surviving planting record, the only figure any source gives; treated here as an estimate rather than a settled fact.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/2210-bagolaro-giardini-montanelli-bagolaro-milano-mi-lombardia",
+        "https://www.comune.milano.it/aree-tematiche/verde/manutenzione-progettazione/alberi-monumentali/bagolaro-giardini-montanelli"
+      ],
+      "access": "Free, public park (opening hours vary by season)",
+      "transport": "5 min walk from Porta Venezia (M1)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Celtis_australis_-_Giardini_Pubblici_-_Milano.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Sordelli, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "The 164-year age figure comes from RAMI's registry only; the second source (comune.milano.it) confirms species, location and monumental status but not that specific number, so the age is flagged as single-sourced.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mil_004",
+      "name": "Il Ginkgo dell'Orto Botanico di Brera",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "approximately 235-251 years",
+      "age_min": 235,
+      "age_max": 251,
+      "location": {
+        "address": "Orto Botanico di Brera, Via Brera 28, 20121 Milano",
+        "latitude": 45.470817,
+        "longitude": 9.188826,
+        "neighbourhood": "Brera"
+      },
+      "story": "Behind Palazzo Brera's courtyard grows a pair of trees older than the idea of Italy itself: a male and a female ginkgo, planted together in 1775 when Empress Maria Theresa's new botanical garden was barely a year old, grown from seed carried directly from China less than two decades after the species had reached Europe at all. Ginkgo biloba is often called a living fossil, essentially unchanged for over 200 million years and the sole survivor of a family that once grew alongside dinosaurs; this pair is a comparative sapling by that measure, but at somewhere between 235 and 251 years old, depending on whether growth-ring calculation or the garden's own planting record is trusted, they are the oldest documented trees in Milan by a wide margin. In March 2026 the university marked their joint 250th anniversary with a public conference built entirely around the two trees. Every November their fan-shaped leaves turn a uniform gold and drop within days rather than fading gradually, briefly carpeting the beds around them. Entry to the garden is free, a rarity among Milan's oldest sites, down a courtyard most visitors to the Pinacoteca next door never think to enter.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/2246-ginkgo-milano-mi-lombardia",
+        "https://lastatalenews.unimi.it/eventi/250-anni-dellorto-botanico-brera-storia-attraverso-alberi-ginkgo-biloba"
+      ],
+      "access": "Free entry, Orto Botanico di Brera (Mon-Sat, hours vary by season)",
+      "transport": "5 min walk from Lanza (M2) or Montenapoleone (M3)",
+      "best_time": {
+        "months": [11],
+        "label": "November, when its fan-shaped leaves turn uniform gold and drop within days"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age genuinely disputed between two calculation methods: RAMI's registry gives 235 years from growth data, while the garden's own 250th-anniversary material (2026) implies a 251-year planting-date count from 1775. Presented as a range rather than asserting either. Two Commons garden photos were checked (Brera Botanical Garden - 4.jpg, Orto botanico Brera a Milano 319.jpg) and rejected: neither caption identifies a ginkgo specifically among the garden's roughly 300 plant beds.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mil_005",
+      "name": "La Catalpa della Guastalla",
+      "species": "Southern Catalpa (Catalpa bignonioides)",
+      "age_estimate": "approximately 136 years",
+      "age_min": 125,
+      "age_max": 145,
+      "location": {
+        "address": "Giardini della Guastalla, Via Francesco Sforza 23, 20122 Milano",
+        "latitude": 45.460221,
+        "longitude": 9.196787,
+        "neighbourhood": "Guastalla"
+      },
+      "story": "Milan's oldest public garden, laid out in 1555 for a countess who did not live to see it finished, keeps its strangest tree behind a baroque fish pond nobody expects to find in the middle of the city. This catalpa, a North American species imported to Europe for ornamental foliage rather than any practical use, has spent roughly 136 years twisting instead of growing straight, until arborists describe its 3.5-metre trunk as closer to a piece of vegetal sculpture than an ordinary shade tree. Every June its crown fills with white, orchid-patterned flowers in dense upright clusters, followed by the long, thin seed pods that earned the species its American nickname, the cigar tree. The Giardini della Guastalla itself predates almost everything else on this list: founded by Ludovica Torelli, Countess of Guastalla, as a garden for the girls' college she funded, it became one of Milan's first public parks open to all, four centuries after her death. At just over 12,000 square metres it is one of the smallest gardens on this list and one of the easiest to walk past, a few streets from the university hospital rather than fronting any grand piazza.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/2245-catalpa-della-guastalla-catalpa-milano-mi-lombardia",
+        "https://it.wikipedia.org/wiki/Giardini_della_Guastalla"
+      ],
+      "access": "Free, public garden (gated, roughly 7:00-21:00, hours vary seasonally)",
+      "transport": "5 min walk from Crocetta (M3)",
+      "best_time": {
+        "months": [6],
+        "label": "June, when its white, orchid-like flowers cover the crown"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Catalpa_guastalla.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Fontema, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "The 136-year age figure comes from RAMI's registry only; independent sources confirm the tree, species and garden history but not that specific figure, so it is flagged as single-sourced.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mil_006",
+      "name": "La Quercia Rossa di Piazza XXIV Maggio",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "approximately 131 years",
+      "age_min": 125,
+      "age_max": 136,
+      "location": {
+        "address": "Piazza XXIV Maggio, 20143 Milano",
+        "latitude": 45.452247,
+        "longitude": 9.17985,
+        "neighbourhood": "Porta Ticinese"
+      },
+      "story": "This oak was already growing in an American nursery when Milan was still deciding what to do with the site of one of its six historic gates. Giunio Capè had the sapling brought to Piazza XXIV Maggio at the end of the First World War and planted it in 1924 in memory of his son Giuseppe, an Alpine soldier who survived the war, and of the Alpini who did not. A century later the oak stands nearly 20 metres tall with a trunk just under 5 metres around, held up since 2019 by a discreet steel exoskeleton a Bergamo carpentry firm built to support a crown that had begun to outgrow its own structure. Quercus rubra is native to eastern North America and turns a deep, almost oxidised red in October and November, the colour that gives the species its name and, briefly each autumn, the only real red in a square better known for the nineteenth century customs arches of the old Porta Ticinese behind it. Milanese press sometimes calls it the oldest tree in the city; it is not, several trees on this list are older, but it may be the only one whose exact planting date and reason for standing there are both on record.",
+      "verified_sources": [
+        "https://www.vistanet.it/milano/2022/10/11/lo-sapevate-lalbero-piu-antico-di-milano-e-la-quercia-rossa-di-piazza-xxiv-maggio/",
+        "https://www.milanocittastato.it/evergreen/forse-non-sapevi-che/la-quercia-rossa-di-milano-piu-di-120-anni-di-storia/",
+        "https://ilregistrodeglialberi.it/2231-quercia-rossa-di-piazza-xxiv-maggio-quercia-rossa-milano-mi-lombardia"
+      ],
+      "access": "Free, public square",
+      "transport": "10 min walk from Porta Genova (M2), or tram 3/9/15 to Porta Ticinese",
+      "best_time": {
+        "months": [10, 11],
+        "label": "October and November, when its leaves turn a deep, oxidised red"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Quercia_rossa_di_Porta_Ticinese.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Saggittarius A, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "The 'oldest tree in Milan' superlative repeated in some local press is not adopted here, per hard rule 8: the ginkgo pair at the Orto Botanico di Brera (mil_004) is considerably older and better documented. The 1924 planting/memorial story is corroborated by two independent press sources plus RAMI's registry entry.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mil_007",
+      "name": "La Quercia Rossa del Trotter",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "approximately 85 years",
+      "age_min": 80,
+      "age_max": 95,
+      "location": {
+        "address": "Parco Trotter, Via Giacosa 46, 20127 Milano",
+        "latitude": 45.494362,
+        "longitude": 9.225878,
+        "neighbourhood": "Trotter, Municipio 2"
+      },
+      "story": "This oak grows on a horse-racing track that stopped racing a century ago and became a school instead. Parco Trotter takes its name from the Società del Trotter, which ran harness races here from the 1800s until the track moved to San Siro in 1924; when the sporting company folded, Milan's city council bought the abandoned oval and turned it, starting in 1919, into Casa del Sole, a 128,000 square metre open-air school for children with tuberculosis and other chronic illness, built on the belief that fresh air and space were themselves a treatment. The ring shape of the old racetrack still defines the park's paths today, cut across by a single straight avenue of plane trees. This red oak, planted not long after the school opened, now stands about 40 metres tall, taller than any other tree on this list, with a trunk 4.3 metres around, growing beside Via Giacosa near the park's old chapel. The school never fully closed. Children still attend classes on these grounds, which is why the park keeps unusual hours, open to the public only outside school time, free every day it opens rather than at any point in between.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/2248-quercia-rossa-milano-mi-lombardia",
+        "https://www.milanocittastato.it/featured/parco-trotter-la-storia-e-i-progetti-di-riqualificazione-della-casa-del-sole-di-milano/",
+        "https://it.wikipedia.org/wiki/Parco_Trotter"
+      ],
+      "access": "Free, public park, open outside school hours (times vary by season)",
+      "transport": "Bus or tram toward Loreto/Turro, then a short walk to Via Giacosa",
+      "best_time": {
+        "months": [10, 11],
+        "label": "October and November, when its canopy turns red above the old racetrack"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mil_008",
+      "name": "La Paulownia di Via Madonnina",
+      "species": "Empress Tree (Paulownia tomentosa)",
+      "age_estimate": "over 65 years, exact age undocumented",
+      "age_min": 65,
+      "age_max": 90,
+      "location": {
+        "address": "Corner of Via Madonnina and Via San Carpoforo, 20121 Milano",
+        "latitude": 45.4718,
+        "longitude": 9.1858,
+        "neighbourhood": "Brera"
+      },
+      "story": "Milan's most photographed tree grows on a triangular scrap of land where a building once stood, until Allied bombs brought it down during the Second World War. Nothing was rebuilt on the corner of Via Madonnina and Via San Carpoforo, and sometime in the decades after the war a paulownia took root in the cleared gap, on land nobody had any particular plan for. By the 2010s the plot had become something else entirely: probably the most photographed tree in the city according to local press, its lilac flowers a fixture of every spring guide to the Brera district. That popularity is the only reason it still stands. A developer held rights to build a small residential block on the triangular lot, and only a sustained campaign by Brera residents, who formed a committee specifically to save the tree, persuaded Milan's city council to acquire the 155 square metre plot in 2016 in exchange for a larger site elsewhere in the city. The paulownia survived a violent storm in July 2023 that uprooted an old fig tree growing beside it. No scientific study has ever aged it precisely; residents describe it as over 65 years old, grown entirely on its own rather than planted by anyone with a plan.",
+      "verified_sources": [
+        "https://blog.urbanfile.org/2023/08/01/milano-brera-salva-la-storica-paulonia-di-via-madonnina/",
+        "https://www.milanotoday.it/zone/centro/topi-a-brera-i-cittadini-la-paulonia-di-via-madonnina-non-si-tocca.html"
+      ],
+      "access": "Free, visible from the street (small municipally-owned lot rather than a walk-in garden)",
+      "transport": "5 min walk from Lanza (M2)",
+      "best_time": {
+        "months": [4],
+        "label": "April, when its lilac flowers cover the bare branches before the leaves appear"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No individual tree registry entry found (this is a self-seeded tree on a former bomb site, not one of RAMI's catalogued specimens); age is press-reported ('over 65 years' as of 2023) rather than measured, and no exact planting date exists since nobody planted it deliberately. Coordinates are an estimate of the named street corner, not a surveyed point. Two Flickr photos of this exact tree were found and checked but both are marked All Rights Reserved, not a usable open licence.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mil_009",
+      "name": "La Pianta di Affori",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "187 years by dendrochronological analysis; local tradition claims over 250",
+      "age_min": 187,
+      "age_max": 260,
+      "location": {
+        "address": "Corner of Viale Affori and Via Astesani, 20161 Milano",
+        "latitude": 45.521,
+        "longitude": 9.174,
+        "neighbourhood": "Affori, Municipio 9"
+      },
+      "story": "Every Milanese from Affori knows this tree simply as la Pianta, the Plant, as if there were no other, and local legend insists Napoleon is the reason it stands where it does: supposedly planted to honour a Milanese noblewoman he had fallen for during his Italian campaign, sometime around 1800. Core samples taken in 2013, when a restoration crew drilled into the trunk to check its health, tell a more modest story: growth rings put the tree at about 187 years old at the time, closer to the 1820s than the Napoleonic Wars. This page gives both figures, since neither can be disproved outright and the drilled sample is the harder evidence. What is not in dispute is the tree itself: a plane 20 metres tall with a trunk over 2 metres in diameter, standing at the corner of Viale Affori and Via Astesani since before the surrounding neighbourhood existed as anything but farmland. An owl once nested in a cavity on its western side; the memory is marked today by a small wooden owl sculpture at the base of the trunk. A metal bracket further up the trunk, once used to string electrical cable through the branches, is a rare surviving trace of how Milan wired its outer suburbs before anyone thought to protect the tree carrying the load.",
+      "verified_sources": [
+        "https://www.demetra.net/alberi-monumentali-adottati-platano-di-via-affori-milano/",
+        "https://www.comune.milano.it/aree-tematiche/verde/manutenzione-progettazione/alberi-monumentali/pianta-affori"
+      ],
+      "access": "Free, public street corner",
+      "transport": "5 min walk from Affori Centro (M3)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Platano_comune_a01.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Alberto Panzani, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Genuine age dispute between a 2013 dendrochronological core sample (about 187 years) and the popular Napoleonic-era legend (over 250 years); presented as a range with the scientific figure given more weight, per hard rule 8/P7. Coordinates are an estimate of the named street corner rather than a surveyed point. This is a different, still-living tree from the similarly aged plane at Villa Litta (also in Affori), which was felled in 2015 after a fungal disease; only a trunk cross-section of that one survives, noted in this city's FAQ rather than listed as a tree to visit.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mil_010",
+      "name": "Il Noce del Caucaso di Parco Sempione",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "age undocumented",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Parco Sempione, near the pond and Ponte delle Sirenette, 20154 Milano",
+        "latitude": 45.472661,
+        "longitude": 9.176022,
+        "neighbourhood": "Sempione"
+      },
+      "story": "This walnut grows almost horizontally over the water, its lower limbs bending so far toward the pond in Parco Sempione that locals joke it is trying to drink from it. Pterocarya fraxinifolia is native to the Caucasus and northern Iran, a wetland species that thrives on constantly moist soil, exactly the condition it gets growing at the edge of the artificial lake beside the Ponte delle Sirenette, a footbridge moved here in 1930 when the canal it originally crossed elsewhere in Milan was filled in. Its trunk measures 4.35 metres around and 18 metres high, and Italy's monumental tree registry lists it, along with a companion specimen nearby, as the oldest Caucasian walnut in the city, though no source gives either tree an exact age or planting date. Compound leaves, similar in shape to an ash tree's, turn a warm gold in October and November alongside the marsh cypresses planted at the same waterline, briefly making the pond's edge the best autumn colour anywhere in the park. Visitors headed for the Castello Sforzesco or the Triennale rarely detour the extra hundred metres to the water's edge where it grows.",
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q55741806",
+        "https://www.in-lombardia.it/en/tourism-in-lombardy/tourism-milan/caucasian-walnut-parco-sempione"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Cadorna (M1/M2) or Cairoli (M1)",
+      "best_time": {
+        "months": [10, 11],
+        "label": "October and November, when its foliage turns gold above the pond"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Noce_del_Caucaso_parco_Sempione_Milano.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Carlodell, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "No age or planting date documented anywhere found; age range is a wide, honest estimate from trunk girth and the park's 1893 redesign, not a measured figure.",
+      "location_precision": "confirmed"
+    }
+  ]
+}

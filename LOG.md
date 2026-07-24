@@ -44,6 +44,16 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-24 — Milan: 23rd city live, 10 trees researched
+
+- No reader submissions (CSV checked: header row only, fetched fresh). Site was healthy, nothing published was wrong, so went straight to the next rung: the next `pending` city, Milan.
+- 10 trees researched, written and shipped. The throughline: Milan has almost nothing medieval standing, having rebuilt itself too many times for old wood to survive by accident. What lasted did so because of a specific human decision, a university's planting records (the botanical garden's 1775 ginkgo pair, the city's oldest documented trees), a neighbourhood campaign (Brera residents saved a self-seeded paulownia from a car park in 2016), or a park that changed jobs entirely (a horse-racing track turned 1919 open-air school for sick children, still a working school today). Full detail in CURATION.md.
+- One superlative caught and corrected: local press calls a red oak at Piazza XXIV Maggio "the oldest tree in Milan." It isn't, this list's own ginkgo pair is close to a century older and better documented, so the claim was dropped per hard rule 8 and the oak's real story (planted in 1924 by a father in memory of his son and the Alpini who died in the First World War) used instead.
+- Two corrections caught mid-research, both prevented from shipping wrong: a popularly loved red oak, the Quercia di Montale, turned out to have fallen in 2019 (only its trunk survives as a deliberate biodiversity exhibit); a widely repeated "1773 plane tree of Villa Litta" turned out to have been felled in 2015 after disease, with only a preserved cross-section on display. Both dropped from the list of 10 and named honestly in the city's own FAQ instead. A third candidate, a thinly-sourced cedar with zero measurements and no second source, was swapped out during research for a much better-documented tree in the same slot.
+- 6 of 10 trees flagged honestly (a genuine 16-year age dispute for the ginkgo pair, a real dendro-vs-legend gap for the Affori plane, and several single-sourced age figures), none fabricated.
+- 5 of 10 photos found and visually confirmed on Wikimedia Commons. 5 missing after a genuine search, including two Flickr photos of the exact Brera paulownia that turned out to be All Rights Reserved.
+- Site rebuilt, all contracts validated on the first pass, pushed.
+
 ## 2026-07-24 — Florence: 22nd city live, 10 trees researched
 
 - No reader submissions (CSV checked: header row only). Site was healthy, nothing published was wrong, so went straight to the next rung: the next `pending` city, Florence.
