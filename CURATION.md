@@ -2,6 +2,17 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-25 — Nice: 26th city live, 10 trees, 10 flagged, 8 photos missing
+
+- New city, the next `pending` in the tier list after Munich. No reader submissions (CSV checked fresh: header row only). Site healthy, nothing published was wrong.
+- Researched via piedsdazur.fr, provence7.com, the regional Inventaire Général du Patrimoine Culturel (maregionsud.fr), nice.fr, culture.gouv.fr's Jardin Remarquable label pages, and ANNAM's dedicated Alpes-Maritimes remarkable-trees registry (asnatnic.fr).
+- The throughline, used as the city's own intro: almost everything remarkable about Nice's trees is recent and deliberate, a public garden planted in 1851, a promenade planted with palms from 1862, a whole hillside forest replanted by hand the same decade after being stripped bare, because Nice as a resort city is itself a mid-19th-century creation. The one real exception is Cimiez, gardened continuously since Franciscan monks arrived in 1546, whose olive grove holds this city's only trees plausibly over 400 years old.
+- One private-land exclusion caught and applied per hard rule 10: two well-documented ~500-year-old carob trees at a private Nice property (labelled "arbre remarquable" by a regional association) were dropped after a direct check found the trees explicitly "not open for visits." A different labelled specimen, an Arbutus unedo at Château de Crémat, a working Bellet vineyard estate with genuine booked public tours, was used instead, the only entry in this city with a precisely surveyed coordinate (from the label registry itself) rather than an approximate pin.
+- All 10 flagged honestly, none fabricated. 6 of the 10 are presented as explicit ensembles (a garden's founding-era planting or a documented reforestation campaign) rather than a single named specimen, since no individual tree in any of them has a separately measured age, consistent with how this project has handled undated groves elsewhere (Antwerp's Den Brandt, Athens's cemetery cypresses). One softened superlative per hard rule 8: Parc Vigier's "first Phoenix canariensis planted in France, 1864" claim rests on a single detailed source with no independent corroboration found, so the story attributes it as a claim rather than stating it as settled fact.
+- One human-interest find worth naming: Henri Matisse is buried under an old olive tree on land adjoining the Cimetière du Monastère de Cimiez, a short walk from the Musée Matisse, freely visitable.
+- 2 of 10 photos found on Wikimedia Commons with filename/category matches (the Cimiez monastery garden, the Cimetière du Château), both marked `found_needs_check` rather than `approved` for the same reason as Venice and Munich this run: this session's tools could not open image files to visually confirm content. 8 of 10 photos missing after a genuine search.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-25 — Munich: 25th city live, 10 trees, 10 flagged, 5 photos missing
 
 - New city, the next `pending` in the tier list after Venice. No reader submissions (CSV checked fresh: header row only). Site healthy, nothing published was wrong.
