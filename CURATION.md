@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-25 — Lyon: 27th city live, 10 trees, 10 flagged, 9 photos missing
+
+- New city, the next `pending` in the tier list after Nice. No reader submissions (CSV checked fresh: header row only). Site healthy, nothing published was wrong.
+- Lyon was the best-documented city yet: the city government publishes an actual list of nationally labelled Arbres Remarquables (four individual trees, plus Parc de la Tête d'Or's own "Ensemble Arboré Remarquable" label for its full 8,800-tree collection), and a dendrology blog (lestetardsarboricoles.fr) plus the International Dendrology Society's own reference site (treesandshrubsonline.org) gave precise GPS coordinates, measurements and even a "oldest cultivated specimen in Europe" claim for individual Tête d'Or trees, letting 3 of the 10 entries carry `location_precision: confirmed` rather than approximate, more than any other city on the site so far.
+- The throughline, used as the city's own intro: Lyon's remarkable trees split into a formally documented arboretum (Tête d'Or, built from 1856 by Swiss landscape architects, absorbing the city's old botanical garden in 1857) and a handful of individually labelled specimens scattered across quieter neighbourhood parks, plus one genuine outlier, a cedar in the garden of a Saône island abbey with roots going back to the 4th century.
+- **A genuine age dispute caught and named rather than silently resolved**: the Atlas cedar at Parc de la Chapelle carries a locally repeated claim of roughly 500 years, officially labelled as a national remarkable tree on 16 October 2024 with real, independently confirmed measurements (28m tall, 32m crown, 6.35m girth). But Cedrus atlantica was not introduced into French cultivation until the 1840s, which makes a genuine 500-year-old specimen hard to reconcile with the species' own documented history in Europe. The claim is stated as a claim, not adopted as settled fact, per hard rule 2 and P7.
+- All 10 flagged honestly. None fabricated. 3 of 10 presented as explicit ensembles (Parc de la Cerisaie's 1913 oak collection, Jardin des Chartreux's undated garden trees, and initially a third that was swapped for a stronger measured specimen, the Cappadocian Maple, once found) rather than forcing a single named specimen where none is documented.
+- 1 of 10 photos found on Wikimedia Commons (the Tête d'Or's Osage orange, CC BY 4.0, filename and description both confirming species and exact park), marked `found_needs_check` rather than `approved` for the same tool-constraint reason as Venice, Munich and Nice this run: images could not be opened and visually confirmed this session. One near-miss caught and correctly rejected: a matching Flickr photo of the Pin de Bunge was found but marked All Rights Reserved, not a usable licence, so not used per hard rule 4. 9 of 10 photos missing after a genuine search.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-25 — Nice: 26th city live, 10 trees, 10 flagged, 8 photos missing
 
 - New city, the next `pending` in the tier list after Munich. No reader submissions (CSV checked fresh: header row only). Site healthy, nothing published was wrong.

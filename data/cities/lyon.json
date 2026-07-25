@@ -1,0 +1,330 @@
+{
+  "city": "Lyon",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Lyon keeps a formal, published list of its remarkable trees, four so far carrying the national Arbre Remarquable label, one park holding the collective Ensemble Arboré Remarquable label for its whole 8,800-tree collection. That park, the Tête d'Or, exists because 19th century Lyonnais wanted a green space to rival Paris's Bois de Boulogne, and two Swiss brothers gave them one with an arboretum's worth of species from four continents. What survives elsewhere is quieter: a giant chestnut in a half-wild neighbourhood park, a cedar on a Saône island where monks gardened for over a thousand years, an oak collection planted the year before the First World War.",
+  "meta_description": "Lyon labels its remarkable trees by law. Meet a pine first grown in Europe via Kew in 1856, a giant chestnut, and an island cedar monks once tended.",
+  "question_answer": "Lyon has no single documented oldest tree, but its most precisely dated remarkable tree is the Pin de Bunge, also called the Pin de Napoléon, in the Parc de la Tête d'Or, planted around 1856 during the park's creation and now roughly 170 years old. It carries France's national Arbre Remarquable label and is described by the label association as having no equivalent elsewhere in the country.",
+  "question_meta": "Lyon's most precisely dated remarkable tree is an 1856 Chinese pine in Parc de la Tête d'Or. Its story, exact location, and nine more labelled trees.",
+  "question_context": "Lyon is one of the few cities on this list with an actual published inventory to work from: the city government maintains a list of nationally labelled Arbres Remarquables, awarded by the A.R.B.R.E.S. association, and the Metropole publishes open data on protected trees across Greater Lyon. That inventory favours species rarity, size and documented planting circumstances over sheer age, which is why the Pin de Bunge, a Chinese species first introduced to Europe through Kew Gardens in the 19th century, anchors this list rather than an oak or a yew. It stands along the perimeter path of the Tête d'Or's arboretum, a five minute walk from the Boulevard des Belges entrance, in a park that itself holds France's Ensemble Arboré Remarquable label for the whole collection.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Lyon?",
+      "a": "No single tree in Lyon has a formally documented single oldest claim. The most precisely dated remarkable tree is the Pin de Bunge in Parc de la Tête d'Or, planted around 1856 during the park's creation, now roughly 170 years old."
+    },
+    {
+      "q": "Why does Parc de la Tête d'Or have so many rare trees?",
+      "a": "It was designed from 1856 by Swiss landscape architects Eugène and Denis Bühler as a full arboretum alongside a public park, and absorbed Lyon's old botanical garden collection in 1857, giving it species pulled from four continents rather than the usual local mix."
+    },
+    {
+      "q": "How does Lyon protect its remarkable trees?",
+      "a": "Through the national Arbre Remarquable label, awarded by the A.R.B.R.E.S. association, which four individual Lyon trees currently hold, and through the Metropole's own urban plan (PLU), which flags protected trees and wooded areas on open data maps."
+    },
+    {
+      "q": "Are Lyon's remarkable trees free to see?",
+      "a": "Yes. All ten stand in free public parks and gardens with no entry fee, including the island garden of Île Barbe, reachable on foot via a footbridge over the Saône."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lyo_001",
+      "name": "The Pin de Bunge, or Pin de Napoléon",
+      "species": "Lacebark Pine (Pinus bungeana)",
+      "age_estimate": "approximately 170 years",
+      "age_min": 165,
+      "age_max": 172,
+      "location": {
+        "address": "Parc de la Tête d'Or, arboretum perimeter path, 69006 Lyon",
+        "latitude": 45.7746,
+        "longitude": 4.8534,
+        "neighbourhood": "6th arrondissement"
+      },
+      "story": "This pine's bark peels in patches of grey, green and cream as it ages, a trait so distinctive that the species barely needs its Latin name to identify it. Pinus bungeana is native to central China, first documented for Western science by the Russian botanist Alexander von Bunge in 1831 at a temple garden in Beijing, and this specimen was probably planted in 1856, the year construction began on the Parc de la Tête d'Or itself, making it one of the park's original plantings rather than a later addition. The International Dendrology Society's own reference site names it directly as the oldest cultivated Pinus bungeana in Europe, calling it a national treasure of the Lyon botanical garden, a specific claim rather than a vague superlative, and one this project treats as credible given the source. Locally it carries the nickname Pin de Napoléon, though no source connects the name to any specific historical event rather than general period association, so that link is not claimed here as fact. Nearly 170 years on, its trunk has developed the pale, almost white patchwork bark that only develops with real age, the single feature that makes this pine worth seeking out among the arboretum's thousands of other specimens.",
+      "verified_sources": [
+        "https://mairie4.lyon.fr/actualite/nature-en-ville/les-arbres-remarquables-de-lyon",
+        "https://www.treesandshrubsonline.org/articles/pinus/pinus-bungeana/"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Masséna metro station (Line A)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The 'Pin de Napoléon' nickname's origin is not documented in any source checked; not claimed as connected to Napoleon himself, only reported as a local name. A matching photo exists on Flickr (user Michele 69600) but is marked All Rights Reserved, not a usable open licence, so not used per hard rule 4.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "lyo_002",
+      "name": "The Osage Orange of the Tête d'Or",
+      "species": "Osage Orange (Maclura pomifera)",
+      "age_estimate": "over 100 years",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Parc de la Tête d'Or, arboretum, 69006 Lyon",
+        "latitude": 45.77389,
+        "longitude": 4.85610,
+        "neighbourhood": "6th arrondissement"
+      },
+      "story": "This tree's American ancestors were weapons before they were shade. Maclura pomifera is named for the Osage nation of the central United States, who prized its wood, dense, springy and rot-resistant, for war bows and arrows above almost any other timber available to them. The species reached Europe in 1823, and French growers in the south of the country initially planted it not for its odd, wrinkled, inedible fruit but as living fencing and, briefly, as a food source for silkworms before mulberry proved more practical. This specimen in the Tête d'Or's arboretum has grown into something closer to a specimen tree than a hedge: a dendrologist's survey put its girth at 3.70 metres a metre above the ground, with a trunk described as ridged and hollowed over some two metres of its height, reasonably read as the marks of a genuinely old, over-a-century specimen rather than a fast-growing recent planting. Osage orange also spreads by layering, sending down roots wherever a low branch touches soil, so what looks like one tree in a dense stand may in places be a single genetic individual repeating itself.",
+      "verified_sources": [
+        "https://lestetardsarboricoles.fr/wordpress/2014/11/05/merveilles-vegetales-du-parc-tete-dor-lyon/",
+        "https://www.jardinier-amateur.fr/parcs-jardins/parc-de-la-tete-d-or-lyon.html"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Masséna metro station (Line A)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Maclura_pomifera_in_Parc_de_la_Tete_d%27Or_%284%29.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Krzysztof Golik, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Age given as 'plus que centenaire' (over a century) by the dendrology source rather than a precise figure, based on girth and trunk condition rather than a documented planting record. Photo filename explicitly names this species and exact park, a strong textual match, but this run's tools could not open the image to visually confirm content, so marked found_needs_check rather than approved.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lyo_003",
+      "name": "The Bald Cypress of the Tête d'Or",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "undated, mature specimen",
+      "age_min": 100,
+      "age_max": 168,
+      "location": {
+        "address": "Parc de la Tête d'Or, near the lake, 69006 Lyon",
+        "latitude": 45.77565,
+        "longitude": 4.85502,
+        "neighbourhood": "6th arrondissement"
+      },
+      "story": "This tree grows as though it remembers the Louisiana wetlands its species comes from, even landlocked in a Lyon park more than eight thousand kilometres away. Taxodium distichum is one of the few conifers that sheds its needles every autumn, and where it grows in standing water, it sends up woody knees, called pneumatophores, that poke above the surface to bring oxygen to submerged roots, a trait this specimen displays even without the flooded ground its Gulf Coast relatives depend on. A dendrological survey recorded its girth at 5.45 metres a metre above ground and its height at just over 30 metres, among the largest measured trees anywhere in the park's arboretum, with a deeply fluted, buttressed trunk in excellent health. No source gives it a specific planting date, so its age is estimated here from the park's own founding in the 1850s rather than documented directly, but a tree of this size, in a species not known for exceptionally fast growth, is a serious candidate for one of the arboretum's oldest original plantings.",
+      "verified_sources": [
+        "https://lestetardsarboricoles.fr/wordpress/2014/11/05/merveilles-vegetales-du-parc-tete-dor-lyon/",
+        "https://daniellys.fr/2024/03/03/parc-de-la-tete-dor/"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Masséna metro station (Line A)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No documented planting date; age estimated from the park's 1850s founding given the tree's exceptional measured size (5.45m girth, 30.5m height) rather than a verified record.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lyo_004",
+      "name": "The Giant Chestnut of Parc de la Garde",
+      "species": "Common Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "undated, called a giant specimen",
+      "age_min": 100,
+      "age_max": 180,
+      "location": {
+        "address": "Parc de la Garde, 6 Rue de la Garde, 69005 Lyon",
+        "latitude": 45.744,
+        "longitude": 4.788,
+        "neighbourhood": "Champvert, 5th arrondissement"
+      },
+      "story": "Most visitors to this park come for the wildness rather than any single tree, but the chestnut at its centre is the reason locals bother naming the place at all. Parc de la Garde keeps a half-forested character unusual for a Lyon city park: its lower half is genuinely wooded, criss-crossed by informal paths, and holds a small stone bridge that once carried the old Vaugneray tramway line through the woods before the route was abandoned. The horse chestnut standing among these trees has been formally recognised with France's national Arbre Remarquable label, described locally simply as an enormous trunk carrying multiple large branches, a scale that marks it out even among the park's other mature trees. No source gives the tree an individual age or measured girth beyond that general description, so any figure here is an estimate rather than a documented record. The label itself, rather than any dramatic history, is what distinguishes this specimen from the thousands of ordinary horse chestnuts planted across French parks in the 19th and 20th centuries.",
+      "verified_sources": [
+        "https://mairie4.lyon.fr/actualite/nature-en-ville/les-arbres-remarquables-de-lyon",
+        "https://sandrillon-in-lyon.fr/le-parc-de-la-garde-lyon-champvert/"
+      ],
+      "access": "Free, public park",
+      "transport": "Bus to Parc de la Garde stop, or 15 min walk from Gorge de Loup station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No individual age or precise girth documented beyond 'enormous trunk with multiple branches'; the national label confirms formal recognition but not a specific age.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "lyo_005",
+      "name": "The Japanese Pagoda Tree of Parc de Gerland",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "undated",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Parc de Gerland, 24 Allée Pierre de Coubertin, 69007 Lyon",
+        "latitude": 45.735,
+        "longitude": 4.826,
+        "neighbourhood": "Gerland, 7th arrondissement"
+      },
+      "story": "Gerland is one of Lyon's newer large parks by name, built out on former industrial and marshland south of the city centre and reworked repeatedly through the 20th century, so a tree old enough to carry a national remarkable-tree label stands out by contrast with almost everything else growing around it. In 2024 the A.R.B.R.E.S. association added this Japanese pagoda tree to its national list, formally measuring it at 16 metres tall with an 18 metre crown spread and a trunk 302 centimetres around at chest height, figures precise enough to track any future growth or decline against. Despite the common name, the species is native to China rather than Japan, introduced to Europe in the 18th century and prized since for flowering late in summer when few other large trees are still blooming, a trait that makes it valuable to bees and other pollinators after the main spring flush has finished. No individual planting date is documented, so the tree's age is estimated here from its measured size rather than a verified record, but the label recognition alone marks it as one of the more significant individual trees in a 40 hectare park built mainly for sport and recreation rather than horticulture.",
+      "verified_sources": [
+        "https://mairie7.lyon.fr/actualite/nature-en-ville/les-arbres-remarquables-de-lyon",
+        "https://www.fondation-groupe-ldlc.org/projets/a-r-b-r-e-s/"
+      ],
+      "access": "Free, public park",
+      "transport": "5 min walk from Stade de Gerland tram stop (T1)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Precise size measurements (16m height, 18m crown, 302cm girth) are documented via the 2024 A.R.B.R.E.S. labelling, but no planting date or age figure is given by any source checked.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "lyo_006",
+      "name": "The Atlas Cedar of Parc de la Chapelle",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "age_estimate": "locally claimed at 500 years, botanically disputed",
+      "age_min": 100,
+      "age_max": 500,
+      "location": {
+        "address": "Parc de la Chapelle, 18 Rue de la Chapelle, 69009 Lyon",
+        "latitude": 45.774,
+        "longitude": 4.797,
+        "neighbourhood": "Champvert, 9th arrondissement"
+      },
+      "story": "This cedar is effectively the reason the park around it exists in its current shape: much of Parc de la Chapelle is built around a single enormous specimen, with the site's open lawn and paths arranged to give the tree room rather than the other way around. Measured at 28 metres tall with a 32 metre crown spread and a trunk 6.35 metres around, it received France's national Arbre Remarquable label on 16 October 2024, and city sources describe it as multi-centenary, some putting a figure of around 500 years on it directly. That number sits awkwardly against the species' own history: Cedrus atlantica, native to the Atlas Mountains of Morocco and Algeria, was not introduced into French cultivation until the 1840s, which would make a genuinely 500-year-old specimen growing in a Lyon park difficult to reconcile with any documented planting. The claim is stated here as what it is, a locally repeated figure rather than a settled fact, alongside the tree's real, independently confirmed scale and its 2024 national label. Whatever its true age, it is locally described as possibly the largest Atlas cedar in Lyon, and its branches shelter birds and squirrels in a quiet residential corner of the 9th arrondissement.",
+      "verified_sources": [
+        "https://www.guichetdusavoir.org/question/voir/140424",
+        "https://www.lyon.fr/sites/lyonfr/files/content/documents/2024-11/16-10%20-%20Label%20arbres%20remarquables%20-%20la%20Ville%20de%20Lyon%20r%C3%A9compens%C3%A9e%20pour%20la%20richesse%20de%20son%20patrimoine%20arbor%C3%A9.PDF"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Gorge de Loup station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The locally repeated ~500-year age is hard to reconcile with Cedrus atlantica's own introduction to French cultivation in the 1840s; stated as a claim rather than adopted as fact, per hard rule 2 and P7. Measurements (28m/32m/6.35m) and the October 2024 label date are independently confirmed by two sources. The 'largest Atlas cedar in Lyon' claim is a local description, not a citywide survey, softened per hard rule 8.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "lyo_007",
+      "name": "The Cedar of Île Barbe",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "undated, called immense",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Jardin de l'Île Barbe, 69009 Lyon",
+        "latitude": 45.808,
+        "longitude": 4.812,
+        "neighbourhood": "Île Barbe"
+      },
+      "story": "Monks gardened this island in the Saône for roughly fourteen centuries before anyone planted this specific tree, which puts even an old cedar into perspective. A Benedictine abbey occupied the northern half of Île Barbe from the 4th century until the Revolution finally dissolved it in the 18th, making it one of the oldest continuously religious sites in the Lyon region, host over that span to a long procession of ecclesiastical and lay notables the local record simply describes as celebrities of their era. The monks' garden, recently restored, keeps rare species and several genuinely centuries-old specimens today, and among them a single immense cedar of Lebanon stands out enough that visitors and local dendrological surveys single it out by name, though without giving it a specific measured age. No source dates the cedar's planting, so any age given here is a rough estimate rather than a documented figure, but a cedar of Lebanon reaching immense scale in a temperate French garden is consistent with a planting well over a century old, a species that can live a thousand years given the right conditions. The island itself, reached on foot over a footbridge from the Lyon quays, keeps a genuinely different, half-wild character from the rest of the city around it.",
+      "verified_sources": [
+        "https://www.lignedroite.fr/histoire-secrets-ile-barbe",
+        "https://www.o2-saone.fr/ile-barbe-au-milieu-de-la-saone/"
+      ],
+      "access": "Free, open access via footbridge",
+      "transport": "Bus to Île Barbe stop, or 20 min walk along the Saône quays from Vaise",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No source gives this cedar a documented planting date or measurement; described consistently as 'immense' rather than measured, so age here is a rough estimate rather than a verified figure.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "lyo_008",
+      "name": "The Oak Collection of Parc de la Cerisaie",
+      "species": "Mixed species (1913 hillside park)",
+      "age_estimate": "undated, park designed 1913",
+      "age_min": 100,
+      "age_max": 113,
+      "location": {
+        "address": "Parc de la Cerisaie, Rue Chazière, 69004 Lyon",
+        "latitude": 45.782,
+        "longitude": 4.826,
+        "neighbourhood": "Croix-Rousse, 4th arrondissement"
+      },
+      "story": "This park takes its name from a cherry orchard that no longer exists, replaced just before the First World War by a very different planting scheme. Landscape architect René-Edouard André, son of the more famous Édouard André whose formal garden style shaped parks across France and beyond, designed Parc de la Cerisaie in 1913 on the Croix-Rousse hillside, centring the roughly 1,200-tree planting on a significant oak collection alongside birches, yews and beeches. That timing puts the park's founding trees at just over a century old today, planted the year before the war that would go on to reshape the neighbourhood and the city around them. No individual tree in the collection carries a separately documented age or measurement, so the range given here describes the park's own founding date rather than any single named specimen, consistent with how this project treats other undated group plantings. What survives is less a single monumental tree than a coherent, deliberately designed early 20th century woodland, unusually intact for a century-old civic planting scheme.",
+      "verified_sources": [
+        "https://www.explorer-lyon.fr/parc-cerisaie/",
+        "https://www.vanupied.com/lyon/parc-lyon/parc-ceriseraie-chazieres-lyon-croix-rousse.html"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Croix-Rousse metro station (Line C)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as an ensemble tied to the park's documented 1913 design date; no individual tree in the roughly 1,200-tree collection has a separately recorded age.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "lyo_009",
+      "name": "The Garden Trees of Jardin des Chartreux",
+      "species": "Mixed species (Croix-Rousse hillside garden)",
+      "age_estimate": "undated",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Jardin des Chartreux, Montée des Chartreux, 69004 Lyon",
+        "latitude": 45.771,
+        "longitude": 4.827,
+        "neighbourhood": "Croix-Rousse, 4th arrondissement"
+      },
+      "story": "This garden sits on the steep slope between the Croix-Rousse plateau and the Saône, on ground once attached to a Carthusian monastery that gave the neighbourhood its name and that disappeared, like most French religious houses of its kind, during the Revolution. What remains today is a public garden of broad lawns and mature trees, magnolia, cedar and horse chestnut among the species named in descriptions of the site, arranged to take advantage of a genuinely striking view over the Saône quays and the hills of Fourvière on the opposite bank. No individual tree here has a documented planting date or measurement, and no single specimen is singled out by name the way the labelled trees elsewhere on this list are, so this entry describes the garden's mature tree cover as a group rather than claiming one named champion. The steep terrain that makes the view worthwhile also keeps the garden genuinely quiet, a local rather than a tourist destination, reached by a climb up from the river that most visitors to Lyon never make.",
+      "verified_sources": [
+        "https://www.vanupied.com/lyon/parc-lyon/jardin-des-chartreux-parc-a-lyon.html",
+        "https://patrimoine.auvergnerhonealpes.fr/dossier/IA69007112"
+      ],
+      "access": "Free, public garden",
+      "transport": "15 min walk (uphill) from Vaise or Croix-Rousse metro stations",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as an ensemble; no individual tree in the garden is named or dated in the sources checked, so no single specimen is claimed as remarkable on its own.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "lyo_010",
+      "name": "The Cappadocian Maple of the Tête d'Or",
+      "species": "Cappadocian Maple (Acer cappadocicum)",
+      "age_estimate": "undated, mature specimen",
+      "age_min": 80,
+      "age_max": 168,
+      "location": {
+        "address": "Parc de la Tête d'Or, arboretum, 69006 Lyon",
+        "latitude": 45.77403,
+        "longitude": 4.85562,
+        "neighbourhood": "6th arrondissement"
+      },
+      "story": "This maple comes from a stretch of the world most visitors to a French municipal park have never had reason to think about: the mountain forests running from the Caucasus through northern Iran and on toward the Himalayas, where Acer cappadocicum grows wild among beech and oak. Lyon's botanical garden, folded into the Tête d'Or since 1857, was built to hold exactly this kind of geographic range, species chosen for scientific and educational value as much as for looks. A dendrological survey of the park recorded this specimen's girth at 3.20 metres a metre above ground and its height at 26 metres, respectable rather than record-breaking figures next to the arboretum's largest specimens, but enough to mark it as a genuinely mature, long-established tree rather than a recent planting. No individual planting date is documented, so its age is estimated here from its measured size and the arboretum's own founding period rather than a verified record. In autumn its leaves turn a clean, even yellow, a display Cappadocian maples are specifically valued for in cultivation, though no source dates this specimen's colour peak precisely enough to state a reliable calendar window here.",
+      "verified_sources": [
+        "https://lestetardsarboricoles.fr/wordpress/2014/11/05/merveilles-vegetales-du-parc-tete-dor-lyon/",
+        "https://en.wikipedia.org/wiki/Jardin_botanique_de_Lyon"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Masséna metro station (Line A)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No documented planting date; age estimated from measured size (3.20m girth, 26m height) and the arboretum's 1857 founding period rather than a verified record.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
