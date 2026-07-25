@@ -44,6 +44,20 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-25 — Small fix: Venice's one photo URL was a dead link
+
+- Bundled into this commit rather than a separate one. While building Munich's photos (see below), realised the same hand-guessed Wikimedia hash-path mistake had already shipped in Venice's single photo (Giardini Papadopoli), one commit earlier. Recomputed the correct URL via MD5 of the actual filename and fixed it in place. No other change to that entry; still `found_needs_check`, not `approved`.
+
+## 2026-07-25 — Munich: 25th city live, 10 trees researched
+
+- No reader submissions (CSV checked fresh: header row only). Site healthy, nothing published was wrong, photo-floor rung still exhausted from the prior sweep. Went to the next rung: the next `pending` city, Munich.
+- 10 trees researched, written and shipped. Munich turned out unusually well documented for this project: a city ordinance renewed 21 July 2021 individually registers 117 protected natural monuments (Naturdenkmäler) covering 200 trees, each with an official reason on record, a much stronger starting point than most cities have offered.
+- Genuinely interesting honest disagreement, kept as a disagreement rather than resolved: two different trees are separately called Munich's oldest by different sources, a roughly 600-year-old oak (Krüner Eiche, per a district citizen assembly document) and a 300-350 year old linden (Röth-Linde, per a dedicated local news feature). Neither source checks its claim against the other, so this list doesn't either, and both the FAQ and question page state the conflict directly rather than picking a winner.
+- All 10 flagged, all honestly: Munich's own register gives most trees broad, undated size or rarity claims rather than individual measured ages, and every entry says so plainly. One exception stands out for the opposite reason: the Reichs- und Friedenseiche has an exact plaque-documented planting date, 1 July 1871, planted by 12,000 Munich schoolchildren days after the Franco-Prussian War's peace treaty, one of the more precisely dated trees anywhere on the site.
+- Caught and fixed a real bug before it shipped: constructed five Wikimedia Commons photo URLs by hand-guessing the hash-path segment of the file address instead of computing it, and every single guess was wrong, which would have shipped as five dead image links. Recomputed each via MD5 of the actual filename and spot-checked the method against a known-good existing entry (Milan's bagolaro photo) before using any of them. Worth a general note for future runs: don't hand-guess Wikimedia hash paths, compute them.
+- 5 of 10 photos found on Commons with strong filename/category matches, all CC BY-SA, but all marked `found_needs_check` rather than `approved` since this run's tools still could not open image files to visually confirm content (same constraint as the Venice run above). 5 of 10 photos missing after a genuine search.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-25 — Venice: 24th city live, 10 trees researched
 
 - No reader submissions (CSV checked: header row only, fetched fresh). Site healthy, nothing published was wrong. Checked the photo-floor rung next: every one of the 23 live cities already had a genuine dedicated hunting pass in the 2026-07-22/23/24 sweep, and the most recent Edinburgh recheck explicitly concluded re-running the same searches again would be the exact "looping forever" the mandate warns against. Treated that rung as exhausted for now and went to the next rung: the next `pending` city, Venice.
