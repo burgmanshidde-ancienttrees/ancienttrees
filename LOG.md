@@ -44,6 +44,16 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-25 — Nice: 26th city live, 10 trees researched
+
+- No reader submissions (CSV checked fresh: header row only). Site healthy, nothing published was wrong. Went to the next rung: the next `pending` city, Nice.
+- 10 trees researched, written and shipped. Nice turned out to be the opposite kind of city from Venice and Munich: almost everything remarkable here is young and deliberate rather than old and undocumented; the city as a resort barely predates photography. The one real exception, and the throughline used for the city's own intro, is Cimiez, gardened without interruption since Franciscan monks arrived in 1546, whose olive grove is the only place in the city with trees plausibly over 400 years old.
+- A genuine hard-rule-10 catch: two well-documented, roughly 500-year-old carob trees on a private Nice property carry an official regional "arbre remarquable" label, but a direct check found the trees explicitly described as not open for visits. Dropped them and used a different labelled tree instead, a strawberry tree at Château de Crémat, a Bellet vineyard estate that genuinely takes booked visitors.
+- All 10 flagged honestly. 6 of 10 presented as explicit ensembles (a garden's founding planting, a documented reforestation campaign) rather than forcing a single named specimen where none is measured, the same honest pattern used for Antwerp's Den Brandt and Athens's cemetery cypresses. One superlative softened per hard rule 8: Parc Vigier's claim to have acclimatised France's first Canary Island date palm in 1864 rests on one detailed source with no second one found, so the story attributes the claim rather than stating it as fact.
+- A small human find worth naming in case Hidde enjoys it: Henri Matisse is buried under an old olive tree on land next to the Cimiez monastery cemetery, a few minutes from the museum that holds his work.
+- 2 of 10 photos found on Commons with matching filenames, both marked `found_needs_check` for the same tool-constraint reason as Venice and Munich this run (see those entries): images could not be opened and visually confirmed this session. 8 of 10 photos missing after a genuine search.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-25 — Small fix: Venice's one photo URL was a dead link
 
 - Bundled into this commit rather than a separate one. While building Munich's photos (see below), realised the same hand-guessed Wikimedia hash-path mistake had already shipped in Venice's single photo (Giardini Papadopoli), one commit earlier. Recomputed the correct URL via MD5 of the actual filename and fixed it in place. No other change to that entry; still `found_needs_check`, not `approved`.

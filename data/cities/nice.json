@@ -1,0 +1,330 @@
+{
+  "city": "Nice",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Nice's oldest trees are almost all olives, and almost all of them stand on one hill. Cimiez, the Roman-era district above the old town, has been continuously gardened since Franciscan monks arrived in 1546, and centuries of careful tending left a grove of olive trees now reckoned in the hundreds of years old, one of them shading Henri Matisse's own grave. Everywhere else in the city, the story is younger and more deliberate: a public garden planted in 1851, a promenade lined with palms from 1862, a forest replanted by hand the same decade after the hillside above it was stripped bare. Nice grew its green spaces on purpose, mostly within living memory of photography.",
+  "meta_description": "Nice's oldest trees are centuries-old olives on one hill above the old town. Meet the Cimiez olive grove, Matisse's own tree, and France's first palm.",
+  "question_answer": "Nice's oldest documented trees are the olive trees of the Cimiez monastery garden, some individually estimated at more than 400 years old, growing in a walled garden whose grid layout has not changed since Franciscan monks laid it out after settling on the hill in 1546. No single tree there has an individually measured age; the figure comes from the grove's general estimate rather than one named specimen.",
+  "question_meta": "Nice's oldest trees are 400-plus-year-old olives in the Cimiez monastery garden. Their story, exact location, and nine more remarkable trees in the city.",
+  "question_context": "Nice is unusual on this list for how recent most of its remarkable trees actually are: the city as a modern resort dates almost entirely from the mid-19th century onward, when the Promenade des Anglais, the Jardin Albert 1er and the forested hillsides around the bay were all laid out within a few decades of each other. That makes the Cimiez olive grove the clear outlier, a garden whose grid layout has been unchanged since the 1540s, planted with olives whose exact ages were never individually recorded but which local sources place at four centuries and beyond for at least some specimens. The garden is free, faces the Roman arena and the Monastery of Cimiez, and adjoins the cemetery where Matisse is buried under an olive tree of his own. It sits a 20 minute uphill walk, or a short bus ride, from central Nice.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Nice?",
+      "a": "The olive trees of the Cimiez monastery garden, some individually estimated at more than 400 years old, growing in a garden whose layout has been unchanged since Franciscan monks settled there in 1546. No single tree has its own separately measured age."
+    },
+    {
+      "q": "Where is Henri Matisse buried in Nice?",
+      "a": "On land adjoining the Cimetière du Monastère de Cimiez, under an old olive tree, a short walk from the Musée Matisse. The grave is simple and freely visitable alongside the cemetery."
+    },
+    {
+      "q": "Are Nice's remarkable trees free to see?",
+      "a": "Almost all of them. Eight of the ten stand in free public parks, gardens or streets. Château de Crémat, a working vineyard estate, charges for guided tours, and the Cimiez olive grove and monastery garden are free year-round."
+    },
+    {
+      "q": "Why does Nice have so many palm trees?",
+      "a": "A deliberate 19th century choice. Palms went into the ground along the Promenade des Anglais from 1862 as fast-growing shade trees, and Parc Vigier is credited with acclimatising the Canary Island date palm in France for the first time in 1864, a species that then spread along the whole Côte d'Azur."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nce_001",
+      "name": "The Olive Grove of the Cimiez Monastery Garden",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "undated, some individually estimated over 400 years",
+      "age_min": 200,
+      "age_max": 400,
+      "location": {
+        "address": "Jardin du Monastère de Cimiez, Place du Monastère, 06000 Nice",
+        "latitude": 43.7237,
+        "longitude": 7.2795,
+        "neighbourhood": "Cimiez"
+      },
+      "story": "Franciscan monks reached this hilltop above Nice in 1546 and laid out a grid-patterned vegetable and orchard garden following the monastic planting rules of Albert the Great, a layout that, unusually, has not changed since. What grows there today, thousands of olive trees spread across the monastery garden and the adjoining Jardin des Arènes, includes specimens local sources place at more than four hundred years old, though no individual tree has ever had its own age separately measured or recorded, so the figure describes the grove rather than one named tree. The garden sits directly beside the ruins of a first century Roman amphitheatre, meaning visitors can stand among trees planted under the Ancien Régime while looking at stonework that predates them by a millennium and a half. Entry has always been free, and the grove today is as much a public living room as a historic garden: people picnic, paint and do yoga under trees that were already old when the Franciscans who planted their ancestors were still tending the hill.",
+      "verified_sources": [
+        "https://www.piedsdazur.fr/visite-jardin-monastere-cimiez/",
+        "https://mariage-06.fr/blog/mariage-cimiez-monastere-nice-lieux-2026/"
+      ],
+      "access": "Free, open daily",
+      "transport": "Bus lines 15, 17, 20, 22 to Monastère de Cimiez stop",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Jardin_du_monast%C3%A8re_de_Cimiez%2C_Nice%2C_France-3.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Édouard Hue, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as an ensemble: the garden's unchanged 1546 layout is well documented, but the 400-plus year age applies to some unnamed specimens within the grove rather than a single measured tree. Photo filename and category confirm the exact garden, but this run's tools could not open the image to visually confirm olive trees are in frame, so marked found_needs_check rather than approved.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nce_002",
+      "name": "Matisse's Olive Tree",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "undated, described as old",
+      "age_min": 100,
+      "age_max": 300,
+      "location": {
+        "address": "Adjoining the Cimetière du Monastère de Cimiez, Place du Monastère, 06000 Nice",
+        "latitude": 43.7239,
+        "longitude": 7.2801,
+        "neighbourhood": "Cimiez"
+      },
+      "story": "Henri Matisse spent the last years of his life a short walk from this hill and asked to be buried on it, under a tree rather than inside a mausoleum. He was laid to rest in 1954 on land adjoining the Cimetière du Monastère de Cimiez, the formal cemetery where painter Raoul Dufy and Nobel laureate Roger Martin du Gard are also buried, but on ground that had been part of his own property, beneath an olive tree that visitors consistently describe as old rather than newly planted for the occasion. No source gives the tree an individual age, so any figure here is a rough estimate rather than a documented fact, but its presence fits the wider Cimiez hillside, where centuries-old olives are the norm rather than the exception. The grave itself is famously plain, a pale stone slab for Matisse and his wife, a deliberate contrast to the ornate 19th and early 20th century monuments filling the cemetery just beside it. It remains freely visitable, reached on the same path as the cemetery and the Musée Matisse a few minutes further on.",
+      "verified_sources": [
+        "https://www.tombes-sepultures.com/crbst_1856.html",
+        "https://www.tripadvisor.fr/ShowUserReviews-g187234-d4191598-r194803085-Cimetiere_du_Monastere_de_Cimiez-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_.html"
+      ],
+      "access": "Free, open daily",
+      "transport": "Bus lines 15, 17, 20, 22 to Monastère de Cimiez stop",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No source gives this specific olive tree a documented age; described consistently as old, not newly planted, but treated here as an unverified estimate.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nce_003",
+      "name": "The Founding Trees of Jardin Albert 1er",
+      "species": "Mixed species (19th-century public garden)",
+      "age_estimate": "undated, garden planted from 1851-52",
+      "age_min": 150,
+      "age_max": 175,
+      "location": {
+        "address": "Jardin Albert 1er, Promenade des Anglais, 06000 Nice",
+        "latitude": 43.6959,
+        "longitude": 7.2686,
+        "neighbourhood": "Promenade des Anglais"
+      },
+      "story": "This garden began as a swamp with a name that admitted it: Prato de la Fous, roughly the meadow of the mad, marshy ground at the mouth of the Paillon river that nobody had found a use for. A drainage and landscaping project started in 1829 gave the site its first real shape, and in 1851 the city drew up a specific planting list, 70 horse chestnuts, 60 elms, 40 lindens, 30 acacias and 24 mimosas among them, before levelling and planting the ground in 1852. The garden has changed names as often as it has changed fashion since, Jardin Paradis, Jardin des Plantes, Jardin des Palmiers, before settling on its current name in 1914 in tribute to the Belgian king's resistance to Germany. Ten plane trees stand among the garden's mix today, alongside descendants of that original 1851 species list, though no individual tree here carries its own measured age, so any figure is an estimate based on the garden's founding rather than a documented record. It remains one of Nice's oldest continuously maintained public gardens, a short walk from where the Paillon once flowed uncovered.",
+      "verified_sources": [
+        "https://www.provence7.com/portails/nature-en-provence/parcs-et-jardins-en-provence/jardin-albert-1er-a-nice/",
+        "https://nicecitymag.fr/le-jardin-albert-1er/"
+      ],
+      "access": "Free, public garden",
+      "transport": "5 min walk from Masséna tram stop",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as an ensemble per the garden's own documented 1851 planting list; no individual tree has a separately recorded age.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nce_004",
+      "name": "The Olive and Pine Grove of Colline du Château",
+      "species": "Mixed species (Mediterranean hillside park)",
+      "age_estimate": "undated, park created from 1822",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Parc de la Colline du Château, 06300 Nice",
+        "latitude": 43.6959,
+        "longitude": 7.2822,
+        "neighbourhood": "Colline du Château"
+      },
+      "story": "For most of Nice's history this hill was a fortress rather than a garden. A citadel stood here from the 11th century, guarding the bay, until the troops of Louis XIV demolished it in 1706 rather than let it fall back into Savoyard hands. The ruins sat mostly untouched for over a century before the city began turning the hilltop into a public park in 1822, planting stone pines, olives, carob trees, cypresses, evergreen oaks, hackberries and mastic trees across what is now a 19.3 hectare Mediterranean garden with more than three kilometres of paths. Centuries-old olive trees are among the oldest individual specimens now growing there, alongside stands of Aleppo pine, though no source gives any single tree in the park a documented age, so any figure is an estimate from the park's own founding date rather than a measured record. The climb rewards itself regardless of the trees: the summit is the highest point in central Nice, with the bay, the old town and the Paillon valley all visible from the same viewpoint the citadel's own defenders once used.",
+      "verified_sources": [
+        "https://dossiersinventaire.maregionsud.fr/dossier/IA06003110",
+        "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/"
+      ],
+      "access": "Free, open daily",
+      "transport": "10 min walk (or free lift) from Old Nice / Place Garibaldi",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as an ensemble; the park's 1822 founding date is documented but no individual tree's age is.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nce_005",
+      "name": "The Cypresses of the Cimetière du Château",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "undated, cemetery reorganised after 1860",
+      "age_min": 100,
+      "age_max": 165,
+      "location": {
+        "address": "Cimetière du Château, Montée du Château, 06300 Nice",
+        "latitude": 43.6957,
+        "longitude": 7.2837,
+        "neighbourhood": "Colline du Château"
+      },
+      "story": "This cemetery exists because the King of Sardinia decided in 1783 that burying the dead inside church chapels was a public health risk, and ordered the practice stopped across his kingdom, which then included Nice. The city chose the ruined citadel grounds on the hill above the old town, terracing the site into the stepped, orderly plots still visible today. When Nice was annexed by France in 1860, the cemetery was enlarged and reorganised, work that involved cutting back or replanting the site's cypress cover along with new paths and retaining walls, so most of the cypresses standing today likely date from that period rather than the cemetery's 1783 founding, though no individual tree has a documented planting record. What survives is a genuinely striking setting: 2,800 graves on terraces overlooking the bay and the port, shaded by cypress trees that give the whole hillside its dark, vertical silhouette from the sea. The cemetery remains free and open to visitors alongside the surrounding Colline du Château park.",
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Cimeti%C3%A8re_du_Ch%C3%A2teau_(Nice)",
+        "https://artplastoc.blogspot.com/2021/02/1176-nice-petite-histoire-du-cimetiere.html"
+      ],
+      "access": "Free, open daily",
+      "transport": "10 min walk (or free lift) from Old Nice / Place Garibaldi",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Cimeti%C3%A8re_Colline_du_Ch%C3%A2teau_Nice.JPG",
+        "license": "CC BY-SA 3.0 / GFDL",
+        "attribution": "Tubantia, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as an ensemble; cypress cover was reworked during the 1860s reorganisation per the sources checked, so the age range assumes a post-1860 planting rather than the cemetery's earlier 1783 founding, though no individual tree is documented either way. Photo filename confirms this exact cemetery, but this run's tools could not open the image to visually confirm cypresses are clearly in frame, so marked found_needs_check rather than approved.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nce_006",
+      "name": "The Palms of the Promenade des Anglais",
+      "species": "Mixed species (19th-century seafront planting)",
+      "age_estimate": "undated, planted from 1862",
+      "age_min": 155,
+      "age_max": 164,
+      "location": {
+        "address": "Promenade des Anglais, near Jardin Albert 1er, 06000 Nice",
+        "latitude": 43.6952,
+        "longitude": 7.2669,
+        "neighbourhood": "Promenade des Anglais"
+      },
+      "story": "The promenade that gave Nice its postcard image was planted for practical reasons before it became a symbol. By February 1862, city planners were already putting palms, evergreen oaks, carob trees and maritime pines into the ground along the seafront, a revision of an earlier plan that had called only for oaks or pines spaced ten metres apart; officials added the faster-growing palms and shrubs specifically because pedestrians needed shade sooner than slow-growing oaks could provide it. By 1868 a further row of larger palms had gone in along the promenade's northern side, and palm plantings spread rapidly through Nice's public and private gardens between 1867 and 1878, a fashion the city is still identified with today. No individual palm from that original planting is documented as still standing, and Nice's palms since have faced repeated disease pressure, so any specific tree's age here is an estimate rather than a verified record tied to a named specimen. The promenade itself, though widened and rebuilt many times since, still runs the same shoreline these first plantings were meant to shade.",
+      "verified_sources": [
+        "https://artplastoc.blogspot.com/2020/05/1117-nice-la-promenade-des-anglais-2.html",
+        "https://www.jardinsdefrance.org/les-palmiers-en-alignement-sur-la-cote-dazur-un-apercu-historique/"
+      ],
+      "access": "Free, public promenade",
+      "transport": "Adjacent to Jardin Albert 1er / Masséna tram stop",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as an ensemble tied to the documented 1862 and 1868 planting campaigns; no individual living palm from that period is identified in the sources checked, so the age range describes the planting campaign rather than a specific surviving tree.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nce_007",
+      "name": "The Washingtonia Palms of Villa Masséna",
+      "species": "California Fan Palm (Washingtonia filifera)",
+      "age_estimate": "undated, garden opened to the public in 1921",
+      "age_min": 100,
+      "age_max": 125,
+      "location": {
+        "address": "Jardin du Musée Masséna, 65 Rue de France, 06000 Nice",
+        "latitude": 43.6947,
+        "longitude": 7.2586,
+        "neighbourhood": "Promenade des Anglais"
+      },
+      "story": "A Belle Époque prince's winter garden became one of Nice's most formal public spaces almost by accident of inheritance. Prince Victor d'Essling, descendant of Napoleon's Marshal Masséna, had his seafront villa built from 1898 in a neoclassical style modelled on the Villa Rothschild in Cannes, with a garden laid out by the noted French landscape architect Édouard André. When Victor's son ceded the property to the city in 1919, he attached one condition: a museum inside, and the garden opened to the public outside. That happened in 1921, and André's design, structured around three formal flowerbeds on its eastern side with Washingtonia filifera palms rising at each corner, has since been restored to match his original plan after later alterations blurred it. No individual palm here carries a documented planting date, so any age given is an estimate tied to the garden's known 1898-1921 development window rather than a measured record, but the specimens are substantial enough to frame the formal garden exactly as André intended over a century ago.",
+      "verified_sources": [
+        "https://www.nice.fr/lieux/musee-massena/",
+        "https://www.culture.gouv.fr/regions/drac-provence-alpes-cote-d-azur/politique-et-actions-culturelles/le-label-jardin-remarquable-en-provence-alpes-cote-d-azur/alpes-maritimes/nice-jardin-de-la-villa-massena"
+      ],
+      "access": "Free, public garden (the museum inside charges separate admission)",
+      "transport": "2 min walk from Promenade des Anglais / Masséna tram stop",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No individual palm has a documented planting date; age range is estimated from the villa's 1898 construction to the garden's 1921 public opening.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nce_008",
+      "name": "The First Canary Island Date Palm of France",
+      "species": "Canary Island Date Palm (Phoenix canariensis)",
+      "age_estimate": "planted 1864",
+      "age_min": 161,
+      "age_max": 163,
+      "location": {
+        "address": "Parc Vigier, Boulevard Franck Pilatte, 06300 Nice",
+        "latitude": 43.7027,
+        "longitude": 7.2916,
+        "neighbourhood": "Nice Port"
+      },
+      "story": "Every Phoenix canariensis lining a promenade or a hotel driveway anywhere in France arguably traces back to one estate on Nice's eastern port. Baron Georges Vigier bought a Venetian-style villa here in 1863 and hired Jean-Pierre Barillet-Deschamps, the head gardener of Paris's own parks department, to landscape 30,000 square metres of grounds with tropical plants, tree ferns, bamboo, orange and olive groves and vineyards. In 1864, according to the garden's own preservation society, Vigier acclimatised the Canary Island date palm here for the first time in France, a claim resting on a single detailed source rather than independent corroboration, though the species did subsequently spread through Riviera gardens over the following decades in exactly the pattern that origin story implies. Vigier went on to breed a hybrid palm of his own, named the Vigieris after him. The estate itself shrank drastically after his era, down to a single hectare when the modern Parc Vigier opened to the public in 1971, but palms including rare Livistona australis specimens still stand among its collection today.",
+      "verified_sources": [
+        "https://www.parcsetjardins.fr/jardins/631-le-parc-vigier",
+        "https://cotedazurfrance.com/offers/parc-vigier-nice-en-3031837/"
+      ],
+      "access": "Free, open daily",
+      "transport": "10 min walk from Port area, or bus to Cyrnos stop",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The 'first in France' claim rests on a single detailed source (the garden's own preservation society) without independent corroboration found, so softened to 'according to' rather than stated as settled fact, per hard rule 8.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nce_009",
+      "name": "The Aleppo Pine Forest of Mont Boron",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "undated, reforestation began 1862",
+      "age_min": 155,
+      "age_max": 164,
+      "location": {
+        "address": "Parc Forestier du Mont Boron, 06300 Nice",
+        "latitude": 43.6949,
+        "longitude": 7.3106,
+        "neighbourhood": "Mont Boron"
+      },
+      "story": "This entire forest exists because a 19th century engineer refused to give up on bare rock. When Nice became French in 1860, the summit of Mont Boron was heathland, stripped of tree cover by centuries of grazing and cutting. Forester Prosper Demontzey, who later became one of France's most influential figures in mountain reforestation, took on the hillside in 1862 and tried sowing Aleppo pine seed directly into the exposed ground first. It failed repeatedly. What worked was planting young pines into deep, prepared holes instead, a labour-intensive method that eventually caught, and the pine cover that established itself went on to shelter the return of olive and carob trees beneath it as the canopy matured. The forest today covers 57 hectares with eleven kilometres of marked trails, wrapping around the villas that Second Empire figures like Baron Haussmann built on the hill once it was fashionable and shaded again. No individual tree from Demontzey's original planting is identified as still standing, so any age given describes the reforestation campaign rather than a specific measured pine.",
+      "verified_sources": [
+        "https://dossiersinventaire.maregionsud.fr/dossier/IA06002949",
+        "https://www.departement06.fr/nice/parc-forestier-du-mont-boron-17394.html"
+      ],
+      "access": "Free, open daily",
+      "transport": "Bus line 14 to Mont Boron, or 30 min walk from Nice Port",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as an ensemble tied to Demontzey's documented 1862 reforestation campaign; no individual pine is identified as an original 1862 survivor in the sources checked.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nce_010",
+      "name": "The Strawberry Tree of Château de Crémat",
+      "species": "Strawberry Tree (Arbutus unedo)",
+      "age_estimate": "undated",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Château de Crémat, 442 Chemin de Cremat, 06200 Nice",
+        "latitude": 43.723514,
+        "longitude": 7.209016,
+        "neighbourhood": "Saint-Antoine de Ginestière / Bellet"
+      },
+      "story": "This tree grows on a wine estate whose owners kept rebuilding the same hillside into ever grander versions of itself. Antoine Mari bought the land on the hill of Crémat in 1906 and built a medieval-style château with a machicolated tower, part of the Bellet appellation that has grown grapes on Nice's inland hills since Roman times. Irène Bretz, a wealthy American who took over the estate in 1923, added neo-Tuscan flourishes and built out the surrounding gardens further, the setting in which this Arbutus unedo, listed with precise coordinates on the regional remarkable-trees registry for the Alpes-Maritimes, now stands. The species carries both flowers and red, strawberry-like fruit on its branches at the same time in autumn, an unusual trait for a Mediterranean evergreen, and no individual age is documented for this specimen beyond its listing as a notable specimen. The estate still produces organically farmed Bellet wine today and takes visitors on booked tours through its gardens, art collection and cellars, one of the few trees on this list that comes with a tasting afterward.",
+      "verified_sources": [
+        "https://asnatnic.fr/les-arbres-remarquables-des-alpes-maritimes/",
+        "https://chateaucremat.com/en/our-visits/"
+      ],
+      "access": "Guided tours Monday-Saturday 10:00-17:30, booking required via the estate's website",
+      "transport": "Car recommended; Bellet hills, north-west Nice",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No individual age documented; listed by the regional 'arbres remarquables' registry (ANNAM) with precise coordinates, which is why this entry alone is marked confirmed rather than approximate.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
