@@ -54,6 +54,15 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 - 2 of 10 photos found on Commons with matching filenames, both marked `found_needs_check` for the same tool-constraint reason as Venice and Munich this run (see those entries): images could not be opened and visually confirmed this session. 8 of 10 photos missing after a genuine search.
 - Site rebuilt, all contracts validated, pushed.
 
+## 2026-07-25 — Lyon: 27th city live, 10 trees researched
+
+- No reader submissions (CSV checked fresh: header row only). Site healthy, nothing published was wrong. Went to the next rung: the next `pending` city, Lyon.
+- 10 trees researched, written and shipped. Lyon was the best-documented city this run has hit: the city publishes its own list of nationally labelled remarkable trees, and a French dendrology blog plus the International Dendrology Society's own reference site gave precise coordinates and measurements for several specimens, letting 3 of the 10 entries carry a fully confirmed pin rather than an approximate one, the most of any city on the site so far.
+- Genuinely interesting catch, named honestly rather than smoothed over: Parc de la Chapelle's Atlas cedar carries a locally repeated claim of roughly 500 years and a real 2024 national label with solid measurements, but Cedrus atlantica wasn't introduced into French cultivation until the 1840s, which makes a true 500-year-old specimen hard to square with the species' own history in Europe. Presented as a stated local claim, not adopted as fact.
+- All 10 flagged honestly, none fabricated. 2 of 10 presented as explicit ensembles where no individual tree is documented (a 1913 oak collection, an undated hillside garden), the same honest pattern used in Venice, Munich and Nice this run.
+- 1 of 10 photos found and used (the Tête d'Or's Osage orange, CC BY 4.0), marked `found_needs_check` for the same tool-constraint reason as this run's other three cities. A matching Flickr photo of the park's Chinese pine was found and correctly rejected: All Rights Reserved, not a usable licence.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-25 — Small fix: Venice's one photo URL was a dead link
 
 - Bundled into this commit rather than a separate one. While building Munich's photos (see below), realised the same hand-guessed Wikimedia hash-path mistake had already shipped in Venice's single photo (Giardini Papadopoli), one commit earlier. Recomputed the correct URL via MD5 of the actual filename and fixed it in place. No other change to that entry; still `found_needs_check`, not `approved`.
