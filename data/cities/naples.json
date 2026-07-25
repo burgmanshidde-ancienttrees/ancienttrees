@@ -1,0 +1,332 @@
+{
+  "city": "Naples",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Naples has more officially catalogued monumental trees than any other Italian city, and more than half of them grow inside one place: the Real Bosco di Capodimonte, a 134-hectare former royal hunting estate that the Bourbon kings spent two centuries filling with specimens shipped in from China, Mexico and Australia. This list draws six of its ten from that single collection, honestly, because that is where Naples actually kept its trees. The rest are scattered across the city that grew up around the park: a cloister platano regrown from its own felled root, a plane tree on the seafront, and a pine that Italy loved so much it replanted the tree after losing the original.",
+  "meta_description": "Naples's ten most remarkable trees, mostly from the Bourbon-era Capodimonte estate: a 220-year-old camphor, a cloister platano regrown from its own root.",
+  "question_answer": "Naples's oldest documented tree is the Canforo del Giardino dei Principi, a camphor tree in the Real Bosco di Capodimonte planted in the early 1800s and roughly 220 years old, brought directly from China during the Bourbon era. It grows in the Garden of the Princes, a free section of the park in the north of the city.",
+  "question_meta": "Naples's oldest tree is a 220-year-old camphor at Capodimonte's Garden of the Princes, brought from China by the Bourbons. Its story and nine more trees.",
+  "question_context": "Naples tops Italy's own official register of monumental trees, the national list created under a 2013 law, with more catalogued specimens than any other municipality in the country. Most of that count concentrates in one place, the Real Bosco di Capodimonte, the former Bourbon royal hunting estate whose Garden of the Princes and Royal Orchard the park's own museum has singled out as home to six specifically monumental trees. Among those, the camphor tree of the Garden of the Princes is the one most consistently dated, at roughly 220 years old, brought from China in the early 1800s and now one of the largest camphor trees anywhere in Europe. The park is free to enter in most sections.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Naples?",
+      "a": "The Canforo del Giardino dei Principi, a camphor tree in the Real Bosco di Capodimonte, planted in the early 1800s and roughly 220 years old. It grows in the free Garden of the Princes section of the park."
+    },
+    {
+      "q": "Why does Capodimonte have so many of Naples's oldest trees?",
+      "a": "Because the Bourbon kings spent roughly two centuries turning a royal hunting estate into a working botanical showcase, importing camphor from China, cypress from Mexico and eucalyptus from Australia. Six of the ten trees on this list, and more than half of Naples's officially catalogued monumental trees citywide, grow within its 134 hectares."
+    },
+    {
+      "q": "What happened to the famous Pino di Posillipo?",
+      "a": "The original stone pine, planted after 1855 and one of the most photographed trees in the world through Naples's postcard era, was felled in 1984 after disease. The environmental group Legambiente replanted a new pine on the same spot in 1995, which the group still marks the anniversary of every year. The tree visible today is that younger replacement, not the original."
+    },
+    {
+      "q": "Are Naples's remarkable trees free to see?",
+      "a": "Most are, standing in free public parks, squares and a state archive courtyard. The Real Bosco di Capodimonte's outdoor gardens are free, though its museum and some restored sections keep separate hours; check before visiting a specific tree inside the park."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nap_001",
+      "name": "The Camphor of the Garden of the Princes",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "approximately 220 years",
+      "age_min": 210,
+      "age_max": 225,
+      "location": {
+        "address": "Giardino dei Principi, Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
+        "latitude": 40.8746,
+        "longitude": 14.2534,
+        "neighbourhood": "Capodimonte"
+      },
+      "story": "This camphor tree arrived from China at the start of the 1800s, part of the Bourbon dynasty's decades-long project of turning their hunting estate at Capodimonte into a botanical showcase to rival any court garden in Europe. It has done more than survive the two centuries since: its trunk now measures 670cm around at chest height and its canopy shades roughly 400 square metres of the Garden of the Princes, dimensions that put it among the largest camphor trees anywhere on the continent. Cinnamomum camphora produces the aromatic oil that gives the tree its name, historically distilled for medicine and moth repellent, but this specimen's value today is closer to ecological than commercial: its bark and lower branches host an entire miniature ecosystem of mosses, ferns and fungi, distinct enough that Italy's official register of monumental trees names ecological value as one of the specific criteria for its 2021 listing. The tree stands in a section of the royal park that Naples reopened to visitors after years of restoration, free to enter and walk beneath.",
+      "verified_sources": [
+        "https://capodimonte.cultura.gov.it/gli-alberi-monumentali-del-real-bosco-di-capodimonte/",
+        "https://www.fanpage.it/napoli/al-bosco-di-capodimonte-ce-un-albero-che-ha-220-anni-portato-dalla-cina-dai-borbone/"
+      ],
+      "access": "Free, Real Bosco di Capodimonte (Garden of the Princes)",
+      "transport": "Bus C63/178 to Capodimonte, or 20 min uphill walk from Museo Nazionale metro",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age (early 1800s planting, ~220 years) and dimensions (670cm circumference, ~400 sqm canopy) corroborated across the park's own official museum page and an independent press article. No usable photo found on Commons or iNaturalist for this specific tree.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nap_002",
+      "name": "The Camphor of the Royal Orchard",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "19th century, undated precisely",
+      "age_min": 190,
+      "age_max": 225,
+      "location": {
+        "address": "Giardino Torre (Real Fruttiera), Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
+        "latitude": 40.876,
+        "longitude": 14.2515,
+        "neighbourhood": "Capodimonte"
+      },
+      "story": "A second camphor tree grows in Capodimonte's Royal Orchard, arriving in the same 19th century wave of Chinese imports as its counterpart in the Garden of the Princes but growing considerably wider: 730cm around at chest height, a 20 metre height and a canopy spreading across some 450 square metres, making it the single largest-girth tree in the entire royal estate. It stands at the physical centre of the Giardino Torre, positioned beside a marble fountain in a working orchard the Bourbon court once used to grow fruit and vegetables for the royal table, an arrangement the site has restored rather than simply preserved for looks: cherry varieties known locally as O Monte still grow around its base, planted in roughly the pattern the Bourbon gardeners used. The garden closed for years of restoration before reopening its citrus and orchard collections to the public, and the camphor, too large to have gone anywhere in the meantime, has been the one constant landmark through all of it.",
+      "verified_sources": [
+        "https://capodimonte.cultura.gov.it/gli-alberi-monumentali-del-real-bosco-di-capodimonte/",
+        "https://www.ildenaro.it/dal-mandarino-del-1816-ai-frutti-rari-il-real-bosco-di-capodimonte-celebra-gli-agrumi-riapre-il-giardino-torre/"
+      ],
+      "access": "Free, Real Bosco di Capodimonte (Giardino Torre, check restoration-phase opening hours)",
+      "transport": "Bus C63/178 to Capodimonte, or 20 min uphill walk from Museo Nazionale metro",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Dimensions (730cm circumference, 20m height, 450 sqm canopy) from the park's own official page; a second, independent press article corroborates the Giardino Torre's Bourbon-era orchard history and citrus programme without repeating the exact camphor measurements. No individual planting year documented beyond '1800s'. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nap_003",
+      "name": "The Robust Eucalyptus of Capodimonte",
+      "species": "Swamp Mahogany (Eucalyptus robusta)",
+      "age_estimate": "19th century, undated precisely",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Real Bosco di Capodimonte, near Porta Grande, Via Miano 2, 80131 Napoli",
+        "latitude": 40.8735,
+        "longitude": 14.2565,
+        "neighbourhood": "Capodimonte"
+      },
+      "story": "Among everything the Bourbon court imported to Capodimonte, this eucalyptus grew larger than any other exotic species in the park: 30 metres tall with a trunk 330cm across, tall enough to be visible over the surrounding tree line from well outside the estate's own walls. Eucalyptus robusta, native to Australia's eastern coast, reached Naples in the 19th century as part of the same acclimatisation push that filled European botanic gardens with newly available species from across an expanding colonial trade network, and this specimen was among the first of its kind planted anywhere in the city. It grows near Porta Grande, one of the park's main gates, dominating the immediate skyline the way its official designation describes: the largest exotic tree in the entire Real Bosco, camphor and cypress included. Eucalyptus bark sheds in long ribbons rather than staying fixed the way most European trees' bark does, a visual habit that alone tends to stop visitors expecting a Naples park to look distinctly Australian for a moment.",
+      "verified_sources": [
+        "https://capodimonte.cultura.gov.it/gli-alberi-monumentali-del-real-bosco-di-capodimonte/",
+        "https://movery.it/en/campania/napoli/bosco-di-capodimonte/"
+      ],
+      "access": "Free, Real Bosco di Capodimonte",
+      "transport": "Bus C63/178 to Capodimonte, or 20 min uphill walk from Museo Nazionale metro",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Dimensions (30m height, 330cm diameter) and 'largest exotic tree in the park' designation from the park's own official page, corroborated by an independent park-guide article describing the same 19th century eucalyptus specimens generally. No individual planting year documented. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nap_004",
+      "name": "The Yew of the Garden of the Princes",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "documented since 1753",
+      "age_min": 270,
+      "age_max": 350,
+      "location": {
+        "address": "Giardino dei Principi, Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
+        "latitude": 40.8746,
+        "longitude": 14.2534,
+        "neighbourhood": "Capodimonte"
+      },
+      "story": "Almost everything else remarkable at Capodimonte arrived from somewhere else, shipped in by Bourbon collectors chasing the latest botanical fashion from China, Mexico or Australia. This yew did not. Taxus baccata grows wild across Europe, and this specimen appears in the park's own documentation as far back as 1753, decades before most of Capodimonte's exotic imports had even left their countries of origin, making it one of the very few native species the Bourbons chose to keep and cultivate rather than replace with something more exotic. It has grown into something closer to sculpture than tree since: a gnarled, twisting trunk barely 10 metres tall but 250cm around, roots exposed and looping above the soil in a way the park's own curators describe as genuinely mysterious rather than simply old, the kind of specimen that looks deliberately shaped even though nothing about a slow-growing yew's form is ever really planned. Yews resist precise dating better than almost any tree, their heartwood rotting away as they age, so the 1753 reference remains the firmest anchor for this specimen's real age rather than a ring count anyone could safely take.",
+      "verified_sources": [
+        "https://capodimonte.cultura.gov.it/gli-alberi-monumentali-del-real-bosco-di-capodimonte/",
+        "https://cosedinapoli.com/itinerari/gli-alberi-monumentali-di-napoli-storia-identita-e-paesaggio/"
+      ],
+      "access": "Free, Real Bosco di Capodimonte (Garden of the Princes)",
+      "transport": "Bus C63/178 to Capodimonte, or 20 min uphill walk from Museo Nazionale metro",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "1753 documentary reference and dimensions (10m height, 250cm circumference) from the park's own official page; a second, independent local heritage site corroborates the yew's inclusion among Capodimonte's monumental trees generally. Age range given as a broad estimate consistent with the 1753 reference rather than a precise figure, honestly reflecting how difficult yews are to date exactly. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nap_005",
+      "name": "The Montezuma Cypress of the Garden of the Princes",
+      "species": "Montezuma Cypress (Taxodium huegelii)",
+      "age_estimate": "19th century, undated precisely",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Giardino dei Principi, Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
+        "latitude": 40.8746,
+        "longitude": 14.2534,
+        "neighbourhood": "Capodimonte"
+      },
+      "story": "Nicknamed the Tree of Thule after Mexico's own famous, vastly older specimen of the same species, this cypress was among the first of its kind planted anywhere in Naples, identified by Michele Tenore, the director of the city's Royal Botanical Garden, not long after it went into the ground in the 1800s. Taxodium huegelii is a Mexican relative of the bald cypress, native to riverbanks and wet ground across the country's central highlands, and remains scarce enough in Italian cultivation that this specimen still counts as a genuine botanical rarity two centuries after its planting. It has reached 18 metres with a trunk three metres around, modest next to the towering original Arbol del Tule near Oaxaca, whose trunk is wide enough that a dozen adults joining hands still cannot circle it, but a legitimate specimen of the same lineage all the same. It grows in the Garden of the Princes among camphor, yew and cypress from three different continents, one more entry in a collection Capodimonte's own Bourbon-era gardeners built specifically to be internationally strange.",
+      "verified_sources": [
+        "https://capodimonte.cultura.gov.it/gli-alberi-monumentali-del-real-bosco-di-capodimonte/",
+        "https://movery.it/en/campania/napoli/bosco-di-capodimonte/"
+      ],
+      "access": "Free, Real Bosco di Capodimonte (Garden of the Princes)",
+      "transport": "Bus C63/178 to Capodimonte, or 20 min uphill walk from Museo Nazionale metro",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Dimensions (18m height, 3m circumference) and Tenore identification from the park's own official page, corroborated by an independent park-guide article noting the species' rarity in Italian cultivation generally. No individual planting year documented. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nap_006",
+      "name": "The Historic Citrus Grove of the Bourbons",
+      "species": "Mandarin (Citrus deliciosa)",
+      "age_estimate": "planted 1816",
+      "age_min": 210,
+      "age_max": 210,
+      "best_time": { "months": [1, 2], "label": "January and February, when the mandarins ripen" },
+      "location": {
+        "address": "Giardino Torre (Real Fruttiera), Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
+        "latitude": 40.876,
+        "longitude": 14.2515,
+        "neighbourhood": "Capodimonte"
+      },
+      "story": "The mandarin as most of the world now knows it was, in a real sense, first described from a Capodimonte orchard. Bourbon gardeners introduced the fruit here experimentally in 1816, decades before it became a familiar winter citrus across Europe, and in 1840 Michele Tenore, director of Naples's Royal Botanical Garden, formally described the tree growing here under the scientific name Citrus deliciosa, a naming still used today. The grove has since grown into a working collection of more than 50 citrus species, cultivars and hybrids, restored after years of closure and reopened to the public with the same working-orchard character the Bourbon court originally intended: not an ornamental museum piece but a productive garden, harvested and celebrated with an annual citrus festival held on site every February. Italy's national register of monumental trees added the grove to its official list in 2021, one of a small number of entries recognised as a collective planting rather than a single dated specimen, the same honest framing used here.",
+      "verified_sources": [
+        "https://www.ildenaro.it/dal-mandarino-del-1816-ai-frutti-rari-il-real-bosco-di-capodimonte-celebra-gli-agrumi-riapre-il-giardino-torre/",
+        "https://www.napolitoday.it/eventi/agrumi-in-festa-bosco-capodimonte-giardino-torre-14-15-febbraio-2026.html"
+      ],
+      "access": "Free, Real Bosco di Capodimonte (Giardino Torre, check restoration-phase opening hours)",
+      "transport": "Bus C63/178 to Capodimonte, or 20 min uphill walk from Museo Nazionale metro",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Ensemble entry describing the historic citrus grove rather than one dated individual tree, consistent with its own 2021 national listing as a collective planting. 1816 planting and 1840 Tenore naming corroborated across two independent press sources covering the garden's restoration and citrus festival. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nap_007",
+      "name": "The Platano of San Severino",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "regrown from a felled root since 1959",
+      "age_min": 60,
+      "age_max": 67,
+      "location": {
+        "address": "Complesso dei Santi Severino e Sossio, Via Bartolomeo Capasso, 80138 Napoli",
+        "latitude": 40.8484,
+        "longitude": 14.2584,
+        "neighbourhood": "San Lorenzo"
+      },
+      "story": "The tree standing today in the Cloister of the Platano is not the tree the cloister was named for, though it is, in a sense, the same organism. Legend credits the original planting to Saint Benedict of Norcia in the 5th or 6th century, using land donated for the monastery, and whether or not that founding story is literal, a plane tree of real age genuinely dominated this cloister for centuries, reaching a documented 8.45 metres in trunk circumference before termite damage forced its removal in 1959. Rather than replant from scratch, the monastery let the stump regrow from its own root system, so the tree visible today, now well past six decades old itself, is a direct continuation of the original rather than an unrelated replacement, a distinction this site is careful to draw clearly. The cloister itself, the oldest part of the complex, dates to the 10th century and carries a cycle of early 16th century frescoes depicting Saint Benedict's life on two of its four walls. The complex now houses Naples's State Archive, and the cloister remains publicly accessible during archive opening hours.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Chiostri_dei_Santi_Severino_e_Sossio",
+        "https://www.napoligrafia.it/monumenti/chiostri/severinoSossio/severinoSossio.htm"
+      ],
+      "access": "Free, State Archive of Naples (check archive opening hours)",
+      "transport": "10 min walk from Napoli Duomo metro",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "1959 felling (8.45m circumference at removal) and root regrowth corroborated across two independent sources. The Saint Benedict planting legend is presented explicitly as legend, not fact, per the project's standard for unverifiable founding stories; current tree's age calculated from the 1959 regrowth date, not from the legendary original planting. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nap_008",
+      "name": "The Pine of Posillipo",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "planted 1995",
+      "age_min": 30,
+      "age_max": 31,
+      "label": "Young replacement",
+      "location": {
+        "address": "Via Minucio Felice, near Chiesa di Sant'Antonio, 80122 Napoli",
+        "latitude": 40.828,
+        "longitude": 14.2173,
+        "neighbourhood": "Posillipo"
+      },
+      "story": "For roughly a century, one pine tree on a hillside above Mergellina was arguably the single most photographed tree on earth, framed against the Bay of Naples and Vesuvius in postcards, oil paintings and tourist snapshots from the late 19th century clear through the 1970s, an image so ubiquitous it became visual shorthand for the entire city. That original stone pine, which grew tall enough to be visible from the water sometime after 1855, was felled in 1984 after a terminal disease left no realistic option to save it, ending a run of well over a century as Naples's most recognisable living landmark. The hillside did not stay bare. In 1995 the environmental group Legambiente planted a new stone pine on the same spot near the church of Sant'Antonio a Posillipo, an act the organisation still marks the anniversary of every year, treating the replanting itself as worth remembering rather than something to quietly gloss over. The tree visible today is that younger pine, honestly labelled here as a replacement rather than the storied original, standing on a hillside that still frames one of the most photographed views in Italy.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Pino_di_Napoli",
+        "https://www.vesuviolive.it/aree-locali/notizie-di-napoli/194282-pino-posillipo-lalbero-piu-famoso-al-mondo-la-storia/"
+      ],
+      "access": "Free, public hillside street",
+      "transport": "Bus C31 to Posillipo, or 20 min walk from Mergellina",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "1984 felling and 1995 Legambiente replanting corroborated across two independent sources (Wikipedia's sourced article and a dedicated local-history piece). Explicitly labelled 'young replacement' since the tree visible today is not the historic original, the same honesty standard applied to Edinburgh's Corstorphine sycamore. Historical Wikimedia Commons photographs exist of the original, now-dead pine (by Giorgio Sommer and others); deliberately not used here since they would misrepresent what a visitor sees today. No usable photo found of the current 1995 tree.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nap_009",
+      "name": "The Plane Tree of the Villa Comunale",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "19th century, undated precisely",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Villa Comunale, Riviera di Chiaia, 80121 Napoli",
+        "latitude": 40.8327,
+        "longitude": 14.2368,
+        "neighbourhood": "Chiaia"
+      },
+      "story": "Naples's seafront garden holds five of the twenty-six trees the Campania region has catalogued as monumental across the whole city, and this Oriental plane, standing beside the Fontana dei Leoni near the garden's street boundary, is among the most substantial: 18 metres tall with a trunk 428cm across. The Villa Comunale itself dates to the years of French rule in the early 19th century, when Naples answered to Joseph Bonaparte and then Joachim Murat, and its planting scheme, planes alongside weeping willows, citrus and acacias, followed instructions traceable to that Bonapartist administration rather than to the Bourbon court that had governed the city before and would again after. The garden runs along the Chiaia waterfront between the sea and the city's grand 19th century apartment blocks, and this plane is one of three catalogued specimens of its species growing within it, alongside one monumental eucalyptus and a single giant palm that share the same official protected status.",
+      "verified_sources": [
+        "http://www.agricoltura.regione.campania.it/foreste/monum/scheda_21.html",
+        "https://it.wikipedia.org/wiki/Villa_comunale_di_Napoli"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Piazza del Plebiscito or the Chiaia seafront",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Dimensions (18m height, 428cm diameter) and location from the Campania region's own official monumental-trees register page; the garden's early 19th century Bonapartist-era planting history corroborated by Wikipedia's sourced article. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nap_010",
+      "name": "The Holm Oak of Sant'Andrea delle Dame",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "undated, mature",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Complesso di Sant'Andrea delle Dame, Vico Luigi De Crecchio, 80138 Napoli",
+        "latitude": 40.8523,
+        "longitude": 14.2529,
+        "neighbourhood": "San Lorenzo"
+      },
+      "story": "Four 16th century Neapolitan noblewomen, sisters who took religious vows together, founded the convent whose cloister now holds this holm oak, one of two trees the site is best known for alongside a camphor said to have been planted by Joachim Murat during his brief reign as King of Naples. At 24 metres, the oak is the taller of the pair and the more anonymously documented, no individual planting date or attributed founder the way the camphor has, simply a long-established presence in a cloister garden enclosed by piperno stone arcades and rows of Washingtonia palms locally reckoned the tallest in the city. The convent the sisters founded in 1580 has since become the Faculty of Medicine of the University of Campania Luigi Vanvitelli, and the cloister, once a place of enclosed religious life, now sits inside a working university building, its centuries-old wooded garden intact around students and staff rather than nuns. Quercus ilex is Mediterranean by origin, evergreen year round, and slow enough growing that a specimen this size represents a very long, very undocumented stretch of the site's history.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Complesso_di_Sant%27Andrea_delle_Dame",
+        "https://www.storiacity.it/guide/85-zona-sant-andrea-delle-dame"
+      ],
+      "access": "Free, university building courtyard (check faculty opening hours)",
+      "transport": "10 min walk from Napoli Museo metro",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "24m height and general cloister setting corroborated across two independent sources; the Murat-planted camphor detail is mentioned for context but that is a different tree, not this entry. No individual age or planting date documented for the oak itself; presented as a broad mature estimate. No usable photo found.",
+      "location_precision": "approximate"
+    }
+  ]
+}

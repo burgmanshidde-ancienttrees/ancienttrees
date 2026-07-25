@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-25 — Naples: 31st city live, 10 trees researched
+
+- No submissions, site healthy, nothing published wrong. Rung 5: the next `pending` city, Naples. Naples holds more officially catalogued monumental trees than any other Italian municipality, mostly concentrated at the Real Bosco di Capodimonte, the former Bourbon royal estate; six of the ten trees come from there, an honest reflection of where the city's tree heritage actually sits rather than a shortcut.
+- Two honesty calls worth Hidde's attention: the Pino di Posillipo, one of the most photographed trees in the world in its day, died in 1984 and was replanted in 1995, so it is labelled a young replacement here, same as Edinburgh's Corstorphine sycamore; and the Platano di San Severino, felled in 1959 and regrown from its own root, is dated from that regrowth rather than the legendary original planting. One near-mixup avoided: a "ficus magnolioide" at Naples's own botanical garden kept surfacing conflated with Palermo's much more famous tree of the same name (a different tree, in a different pending city), so dropped it for a cleaner-sourced alternative rather than risk a wrong-city error.
+- 0 of 10 photos found despite a genuine search across Commons and iNaturalist; full detail in CURATION.md, including why a strong-looking historical photo of the original Posillipo pine was deliberately not used.
+- Site rebuilt, all contracts validated on the first pass, pushed.
+
 ## 2026-07-25 — Granada: 30th city live, 10 trees researched
 
 - No submissions (CSV still header-only), site healthy, nothing published wrong. Rung 5: the next `pending` city after Malaga, Granada. No single municipal register exists for Granada's trees, so pieced this together from a magazine survey of twelve singular specimens, the Alhambra/Generalife's own heritage pages, and the UGR Botanical Garden's records.
