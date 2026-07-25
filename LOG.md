@@ -54,6 +54,16 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 - 2 of 10 photos found on Commons with matching filenames, both marked `found_needs_check` for the same tool-constraint reason as Venice and Munich this run (see those entries): images could not be opened and visually confirmed this session. 8 of 10 photos missing after a genuine search.
 - Site rebuilt, all contracts validated, pushed.
 
+## 2026-07-25 — Valencia: 28th city live, 10 trees researched
+
+- No reader submissions (CSV checked fresh: header row only). Site healthy, nothing published was wrong. Went to the next rung: the next `pending` city, Valencia.
+- 10 trees researched, written and shipped. Valencia is exceptionally well documented for this project's purposes: a 2006 regional law protects over 2,400 monumental trees across the Comunitat Valenciana, more than any other Spanish region, and the city itself maps five named tree routes with individual tree profiles, on top of two local-history blogs that had already done real reporting on several of these trees' backstories.
+- A real catch worth flagging: the tree originally slotted in as the tenth entry, a historic pine in Campanar and the last survivor of a forest that once stretched to Godella, turned out to have been cut down by the city's own gardeners in August 2019. Found this mid-research rather than after publishing, and swapped it out entirely for a still-living tree (a Kashmir cypress) rather than publish a tree that no longer exists.
+- One quieter catch: an early source called three landmark palms on Calle Albacete "Washingtonia," a second, more specific source corrected the species to Phoenix canariensis, and the correction went in before publication rather than after.
+- All 10 flagged honestly, none fabricated. Several of these trees have genuinely well-documented human stories, not just measurements: a fig planted by mistake for a magnolia in 1852 that's now Valencia's widest canopy, a palm moved across the city by truck in a single night with the mayor's permission to close the streets, a fig sapling that survived a demolition crew because the head gardener lied about what pruning would do to it.
+- 2 of 10 photos found and used (a ficus in El Parterre, a ginkgo in Jardín de Monforte, both CC BY-SA, filenames naming the exact tree and garden), marked `found_needs_check` for the same tool-constraint reason as this run's other cities. 8 of 10 photos missing after a genuine search.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-25 — Lyon: 27th city live, 10 trees researched
 
 - No reader submissions (CSV checked fresh: header row only). Site healthy, nothing published was wrong. Went to the next rung: the next `pending` city, Lyon.

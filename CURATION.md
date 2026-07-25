@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-25 — Valencia: 28th city live, 10 trees, 10 flagged, 8 photos missing
+
+- New city, the next `pending` in the tier list after Lyon. No reader submissions (CSV checked fresh: header row only). Site healthy, nothing published was wrong.
+- Valencia was extremely well documented: the Comunitat Valenciana keeps a legal Catálogo de Árboles Monumentales y Singulares (2,439 protected trees, the most of any Spanish region), and the city separately maps five named monumental-tree routes with individual profiles, plus two dedicated local-history blogs (valenciaplaza.com's "siete árboles históricos", valenciablancoynegro.blogspot.com) that gave rich, specific, cross-checkable stories for several individual trees.
+- **A real catch, not shipped**: the original tenth candidate, the Pino de Can Calet in the Campanar district, the last survivor of a historic pine forest, was found mid-research to have been felled by the city's own gardening service on 29 August 2019. Dropped entirely rather than published as a living tree, consistent with how this project has handled other confirmed-dead specimens (Milan, Florence). Replaced with the Kashmir cypress of the university's Jardí Botanic, a genuinely rare, currently living species.
+- One species correction caught mid-research: an initial source described "Los Tres Amigos" (three palms on Calle Albacete) as Washingtonia; a second, more specific local source identified them as Phoenix canariensis, corrected before publication.
+- All 10 flagged honestly, none fabricated. One tree's most colourful detail, a councilwoman physically blocking excavators to save the Avenida de Aragón holm oak, appears in only one of the two sources checked, so it is noted in this entry's internal notes but not stated as confirmed fact in the story text.
+- 2 of 10 photos found on Wikimedia Commons with filenames explicitly naming the tree and garden (El Parterre's ficus, Jardín de Monforte's ginkgo), both CC BY-SA, both marked `found_needs_check` rather than `approved` for the same tool-constraint reason as this run's other cities: images could not be opened and visually confirmed this session. 8 of 10 photos missing after a genuine search.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-25 — Lyon: 27th city live, 10 trees, 10 flagged, 9 photos missing
 
 - New city, the next `pending` in the tier list after Nice. No reader submissions (CSV checked fresh: header row only). Site healthy, nothing published was wrong.
