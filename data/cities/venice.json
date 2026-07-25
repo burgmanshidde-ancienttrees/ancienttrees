@@ -1,0 +1,330 @@
+{
+  "city": "Venice",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Venice's historic islands are built on water and packed with stone, which leaves almost nowhere for a tree to grow old by accident. Every remarkable tree on this list survives because someone deliberately made room for it: Napoleon's engineers draining marshland for a public garden in 1810, Armenian monks building a monastery garden from 1717, a cemetery planted with cypress the year it opened. The result is a city where the oldest trees hide on islands and behind garden walls rather than lining streets, and where the closest thing to a forest stands on the mainland in Mestre. None of these are single record-holders the way Paris or London can name one; Venice's green history is told in gardens and avenues instead.",
+  "meta_description": "Venice has almost no room for old trees to grow by accident. Meet the cypresses, cedars and garden trees planted deliberately on its islands since 1717.",
+  "question_answer": "Venice has no single, individually dated oldest tree the way some cities do. Its best-documented old plantings are the trees of the Giardini della Biennale (the Napoleonic Gardens) in Castello, laid out by Giannantonio Selva for the garden's 1810 opening, which makes some of its lindens, hackberries and plane trees up to around 216 years old, though no individual specimen there has been separately measured or aged.",
+  "question_meta": "Venice's oldest documented trees grow in the 1810 Napoleonic Gardens. Why the city has no single record-holder, and ten remarkable trees worth the walk.",
+  "question_context": "Ring counts and growth-based estimates work poorly in Venice's own record because almost nothing here has been measured the way a monumental tree in Milan or Rome has. What the city does have is documented planting and construction dates for the gardens themselves: the Giardini della Biennale (Castello) laid out in 1810, the cemetery island of San Michele completed in 1813, San Lazzaro degli Armeni's monastery garden begun in 1717. Those dates set an upper bound on how old any tree standing there today could be, but they are not proof that any single tree dates back that far, since replanting is common and mostly undocumented. That gap between a garden's founding date and an individual tree's real age is stated honestly across every entry on this list rather than smoothed into a false precision. The Giardini della Biennale is reachable on foot from the Giardini vaporetto stop (lines 1, 4.1, 4.2), a few minutes from the Biennale's own entrance on Riva dei Sette Martiri.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Venice?",
+      "a": "No single tree in Venice carries an individually verified age. The oldest documented plantings are the garden trees of the 1810 Giardini della Biennale, which could be up to around 216 years old, though no specimen there has its own published measurement."
+    },
+    {
+      "q": "Why does Venice have so few ancient trees compared to other cities?",
+      "a": "The historic islands are built on reclaimed marsh and packed with stone buildings and canals, leaving almost no open ground for a tree to grow old undisturbed. Every tree on this list stands in a garden, cemetery or park that someone deliberately created, mostly from the 18th century onward."
+    },
+    {
+      "q": "Are Venice's remarkable trees free to visit?",
+      "a": "Most are. Seven of the ten stand in free public parks and gardens. San Lazzaro degli Armeni charges a small fee for its guided tour, San Francesco del Deserto asks for a donation and requires a private boat, and Ca' Zenobio's garden is open mainly during scheduled exhibitions."
+    },
+    {
+      "q": "Where can I see trees in the Venice lagoon islands rather than the main city?",
+      "a": "San Michele (the cemetery island), San Lazzaro degli Armeni, the Certosa and San Francesco del Deserto all hold trees on this list, and all four are reachable by public vaporetto or, for San Francesco del Deserto, a short private boat from Burano."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ven_001",
+      "name": "The Founding Trees of the Giardini della Biennale",
+      "species": "Mixed species (Napoleonic public garden)",
+      "age_estimate": "undated, garden founded 1810",
+      "age_min": 150,
+      "age_max": 216,
+      "location": {
+        "address": "Giardini della Biennale, Castello, 30122 Venezia",
+        "latitude": 45.42917,
+        "longitude": 12.35694,
+        "neighbourhood": "Castello"
+      },
+      "story": "Venice's biggest green space exists because Napoleon needed somewhere to put a park and had no scruples about what stood in the way. In 1807 his decree ordered the city to create public gardens, and to make room, engineers demolished a cluster of churches and convents on marshy ground at the eastern edge of Castello, including San Domenico and Sant'Antonio Abate, and drained the site. Architect Giannantonio Selva, working with botanist Pietro Antonio Zorzi, laid out a formal neoclassical garden of straight avenues, inaugurated in 1810. By the mid-19th century, fashion had shifted, and the geometry was reworked into the winding paths and irregular groves visible today. More than a hundred tree species now grow across the site, lindens, hackberries and plane trees among the most common, though no individual specimen here has ever been separately dated or measured. Since 1895 two thirds of the grounds have hosted the Venice Biennale's international pavilions, making this simultaneously the city's oldest public garden and its best known contemporary art venue, with cats that have their own informal reputation among regulars.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Giardini_Napoleonici",
+        "https://en.wikipedia.org/wiki/Giardini_della_Biennale"
+      ],
+      "access": "Free, public gardens; the Biennale exhibition areas require a ticket during the Art and Architecture Biennale seasons",
+      "transport": "5 min walk from Giardini vaporetto stop (lines 1, 4.1, 4.2)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as an ensemble: the garden's 1810 founding and mid-19th-century redesign are well documented, but no source dates or measures any individual tree. Age range spans the redesign era to the founding date.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ven_002",
+      "name": "The Cypresses of San Michele Cemetery",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "undated, island completed 1813",
+      "age_min": 150,
+      "age_max": 213,
+      "location": {
+        "address": "Cimitero di San Michele, Isola di San Michele, 30121 Venezia",
+        "latitude": 45.44698,
+        "longitude": 12.34630,
+        "neighbourhood": "San Michele in Isola"
+      },
+      "story": "Venice's dead live on an island of their own, and the cypresses that ring it are the first thing anyone sees crossing the lagoon toward it. The idea was Napoleon's: his 1804 Edict of Saint-Cloud banned burial within cities for public health reasons, and Venice, unable to bury its dead on land it did not have, chose the island of San Cristoforo della Pace, merging it with the neighbouring islet of San Michele in stages between 1813 and 1839. Architect Giannantonio Selva, who had designed the Napoleonic Gardens across the lagoon a few years earlier, laid out the cemetery's original plan, and cypress became its signature planting, a tree with its own funerary tradition stretching back to antiquity. No individual tree here carries a published planting date or measurement, so the exact age of any specimen standing today is unverified, but the dark spires visible above the cemetery's brick walls have been part of the approach to Venice for close to two centuries. Ezra Pound, Igor Stravinsky and Joseph Brodsky are buried among them.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Cimitero_di_San_Michele_(Venezia)",
+        "https://en.wikipedia.org/wiki/San_Michele_Cemetery,_Venice"
+      ],
+      "access": "Free, open daily (hours vary by season, typically morning to early evening)",
+      "transport": "Cimitero vaporetto stop (lines 4.1, 4.2, 5.1, 5.2)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as an ensemble: the cemetery's 1813-1839 construction is well documented, but no source dates any individual cypress. A candidate photo (File:Cimitero_san_michele_venezia_10.jpg, CC BY-SA 4.0) was found but its description confirms only the cemetery's grave sections, not clear cypress content, so it was not used without a stronger visual match.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ven_003",
+      "name": "The Cedar of San Lazzaro degli Armeni",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "century-old (undated more precisely)",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Isola di San Lazzaro degli Armeni, 30126 Venezia",
+        "latitude": 45.411979,
+        "longitude": 12.361422,
+        "neighbourhood": "San Lazzaro degli Armeni"
+      },
+      "story": "An Armenian monk fleeing the Ottoman conquest of his hometown turned a derelict leper-hospital island into one of Europe's least likely botanical collections, and the cedar growing there today is a direct result. Mechitar of Sebaste, forced out of Modone in 1715, was granted the abandoned island in 1717 and spent the following decades rebuilding it as a monastery and library for the Mekhitarist Armenian Catholic order, work finished around 1740. The garden he and his monks planted mixes a Cedar of Lebanon with Aleppo pines bent low by lagoon winds, a Canary Island palm, and roses grown for centuries to make vartanush, a rose petal jam still produced by the monks today. Sources describe the cedar only as centuries-old, without a specific planting date, so its exact age is unverified, but it has grown in a garden that has been continuously tended by the same religious order since the 18th century, a continuity almost nowhere else on this list can claim. The island also holds a khachkar, a 13th-century Armenian stone cross gifted by Armenia to mark the community's ties to Venice.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/San_Lazzaro_degli_Armeni",
+        "https://luoghi.italianbotanicalheritage.com/en/saint-lazarus-of-the-armenians-island/"
+      ],
+      "access": "Paid entry (8 euro), guided tour only, daily at 15:25 (about 90 minutes)",
+      "transport": "Vaporetto line 20 from San Zaccaria (Riva degli Schiavoni), about 25 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Cedar's age given only as 'centenario' (century-old) by both sources checked, with no specific figure or planting date, so treated as a wide, unverified range rather than a precise number.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ven_004",
+      "name": "The Cypress Ring of San Francesco del Deserto",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "undated, called ancient without a specific record",
+      "age_min": 100,
+      "age_max": 300,
+      "location": {
+        "address": "Isola di San Francesco del Deserto, 30012 Burano, Venezia",
+        "latitude": 45.4731,
+        "longitude": 12.4169,
+        "neighbourhood": "Northern lagoon, between Burano and Sant'Erasmo"
+      },
+      "story": "Francis of Assisi is said to have landed on this four-hectare island in 1220, returning from the Fifth Crusade, and a local legend claims he planted his walking staff in the ground, where it grew into a pine tree that survived until 1701, when its dried trunk was carved into a statue of the saint. That original tree is gone, but the cypresses that now ring the island's perimeter, visible from the water as a dense green band around the convent walls, are old enough that every source describing them reaches for the word ancient without offering a planting date or measurement, so their exact age is unverified here. Six Franciscan friars still live on the island today, one of whom leads the only tours available, walking visitors past cloisters dating to the 15th century and gardens the friars still work themselves. There is no public vaporetto stop: reaching the island means taking the line to Burano and then a private boat or water taxi for the final short crossing, a genuine detour that keeps the place as quiet as its name suggests.",
+      "verified_sources": [
+        "https://www.metropolitano.it/san-francesco-venezia/",
+        "https://en.wikipedia.org/wiki/San_Francesco_del_Deserto"
+      ],
+      "access": "Free entry, donation welcome; guided visits Tuesday-Sunday 9:00-11:00 and 15:00-17:00, closed Monday",
+      "transport": "Vaporetto line 12 to Burano, then private boat or water taxi (about 15 minutes)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is genuinely undated in every source checked; the legendary 1220 pine is explicitly a different, no-longer-living tree and not claimed as the age of today's cypresses. Candidate photo found (File:San_Francesco_del_Deserto_01.jpg, public domain, Godromil) showing the island's exterior, but its description does not confirm the cypress ring is clearly visible in frame, so marked found_needs_check rather than approved pending a visual check this run could not perform.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ven_005",
+      "name": "The Black Poplar of the Certosa",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "undated, described as one of the island's largest specimens",
+      "age_min": 80,
+      "age_max": 200,
+      "location": {
+        "address": "Isola della Certosa, 30122 Venezia",
+        "latitude": 45.43430,
+        "longitude": 12.37344,
+        "neighbourhood": "Certosa"
+      },
+      "story": "This poplar stands alone in the middle of what is effectively an accidental nature reserve. The Certosa takes its name from a Carthusian monastery founded here in 1424, abandoned under Napoleon, then used for over a century as a military store and firing range before the Italian army finally left in 1997. Left to itself for decades, the 22 hectare island grew wild: stands of white poplar, black poplar and ash now cover ground that soldiers once marched across, described by the site's own conservation literature as one of few places where the lagoon's original sandy-soil vegetation can still be studied directly. The black poplar growing at the heart of this wild wood is repeatedly singled out in local sources as one of the largest of its kind rooted in the island's sandy ground, though none gives it a specific age or trunk measurement, so its exact age is unverified. A public urban park opened on part of the island in 2013, and the whole site is now open from dawn to sunset, a quiet contrast to the crowds a ten minute boat ride away.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Isola_della_Certosa",
+        "https://evenice.it/venezia/isole-venezia/certosa-isola-venezia"
+      ],
+      "access": "Free, public park, dawn to sunset",
+      "transport": "Vaporetto lines 41/42, Certosa stop (request stop)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No source gives this specific poplar a measured age; described consistently as 'gigantic' and among the largest specimens on the island, treated here as an unverified age range rather than a claimed superlative.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ven_006",
+      "name": "The Olive Tree of San Servolo",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "century-old (undated more precisely)",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Isola di San Servolo, 30124 Venezia",
+        "latitude": 45.418666,
+        "longitude": 12.357338,
+        "neighbourhood": "San Servolo"
+      },
+      "story": "This olive tree grows in a garden originally planted to stock a pharmacy, on an island whose most recent past was Italy's largest asylum for the criminally insane. Benedictine monks are documented on San Servolo from at least the 8th century, and the garden they and later religious orders built up over a thousand years carries more than 400 tree species today, including Canary palms, agaves and a Chusan palm alongside the century-old olive tree, planted originally for medicinal use when the island supplied remedies to the Venetian military. The asylum operated from the 18th century until its closure in 1978, a history now documented in the island's own Museo del Manicomio, and the contrast between that clinical past and the freely walkable garden that surrounds it is part of what makes a visit here unusual. No source gives this specific olive tree an exact planting date, so its precise age is unverified, but its description as secolare, century-old, is consistent across the records checked. Venice International University now occupies much of the island.",
+      "verified_sources": [
+        "https://patrimonio.cittametropolitana.ve.it/immobile/giardino-dellisola-di-san-servolo",
+        "https://en.wikipedia.org/wiki/San_Servolo"
+      ],
+      "access": "Free, public park; separate paid ticket for the Museo del Manicomio",
+      "transport": "Vaporetto line 20 from San Zaccaria, about 10 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Olive's age given only as 'secolare' (century-old) without a specific figure. Candidate photo found (File:San_Servolo_Aug_2020_1.jpg, CC BY-SA 4.0, Kasa Fue) but its description does not confirm garden or tree content is visible, so marked found_needs_check pending a visual check this run could not perform.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ven_007",
+      "name": "The Garden Trees of Giardini Papadopoli",
+      "species": "Mixed species (19th-century public garden)",
+      "age_estimate": "undated, garden founded 1834-35",
+      "age_min": 160,
+      "age_max": 192,
+      "location": {
+        "address": "Giardini Papadopoli, Santa Croce, 30135 Venezia",
+        "latitude": 45.43851,
+        "longitude": 12.32068,
+        "neighbourhood": "Santa Croce"
+      },
+      "story": "This is the first patch of green most visitors to Venice ever see, and also the smallest survivor of its original self. Count Spiridione Papadopoli commissioned the garden in 1834-35 from designer Francesco Bagnara for his wife Teresa Mosconi, laid out with terraced paths and shade trees on what had been open land near the city's edge. Marco Quignon reworked the planting in 1863, and the garden reached about 12,000 square metres at its largest. That size did not survive the 20th century: construction of Piazzale Roma in 1933 cut away the western third for a road and car park, and the Rio Novo canal took more, leaving roughly 7,500 square metres of the original design. What remains still holds mature plane trees, holm oaks, cypresses and horse chestnuts creating the shaded paths the garden was designed for, though no individual tree here has a separately documented age, so any figure would be an estimate rather than a verified fact. It is now most visitors' first and last stop, sitting between the train station and the bus terminal, a quiet transition before or after the crowds of the historic centre.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Giardini_Papadopoli",
+        "https://www.idealista.it/news/vacanze/mete-turistiche/2026/01/08/309235-dove-si-trovano-i-giardini-papadopoli-a-venezia-e-come-arrivarci-da-piazzale-roma"
+      ],
+      "access": "Free, public garden",
+      "transport": "2 min walk from Piazzale Roma / Venezia Santa Lucia station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Giardini_Papadopoli_%28arbres%29.jpg/800px-Giardini_Papadopoli_%28arbres%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Didier Descouens, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Photo coordinates (45°26'18.37\"N, 12°19'14.3\"E) match this entry's own pin closely and the filename translates as 'trees', a strong textual match, but this run could not visually open the image to confirm content directly, so it is marked found_needs_check rather than approved pending that check.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ven_008",
+      "name": "The Hackberries of Villa Groggia",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "undated, park built late 19th century",
+      "age_min": 120,
+      "age_max": 150,
+      "location": {
+        "address": "Parco di Villa Groggia, Fondamenta Riformati 3161, Cannaregio, 30121 Venezia",
+        "latitude": 45.4508,
+        "longitude": 12.3308,
+        "neighbourhood": "Sant'Alvise, Cannaregio"
+      },
+      "story": "Two hackberries, the species Milan nicknames spaccasassi, the stone-splitter, for roots strong enough to crack paving, line the path toward a small theatre that has outlived every building that once stood around it. The land was part of the 16th century Palazzo Donà estate, then a working orchard and garden, before the palazzo itself was demolished in 1823 for building material. Giuseppe Groggia built the villa and its romantic-style park toward the end of the 19th century, complete with artificial hills and a Neo-Gothic teatrino from around 1913, and when the family later donated the property, the city took over its upkeep. The garden today is one of the few in Venice with genuinely free, unrestricted public access, a contrast to the palace gardens elsewhere on this list that open only on schedule or by appointment. The two Celtis australis trees along its main path have no individually documented planting date, so their exact age is unverified, but their scale suggests they belong to the villa's original 19th century planting rather than a later addition.",
+      "verified_sources": [
+        "https://www.veneziaunica.it/en/things-to-do-in-venice/gardens-parks-natural-oases/villa-groggia-park",
+        "https://www.conoscerevenezia.it/?p=60616"
+      ],
+      "access": "Free, public park",
+      "transport": "Sant'Alvise vaporetto stop (lines 4.1, 4.2, 5.1, 5.2), short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No source gives the two hackberries a specific planting date; age range is an estimate based on the villa's own late-19th-century construction. Coordinates are an approximation for the Sant'Alvise district, since no source gave the park's own precise GPS position.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ven_009",
+      "name": "The Garden of Ca' Zenobio degli Armeni",
+      "species": "Mixed species (romantic garden)",
+      "age_estimate": "undated, garden reworked in the 19th century",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Ca' Zenobio degli Armeni, Fondamenta del Soccorso 2596-2598, Dorsoduro, 30123 Venezia",
+        "latitude": 45.4336,
+        "longitude": 12.3208,
+        "neighbourhood": "Dorsoduro"
+      },
+      "story": "One of the last big private gardens in Venice survives attached to a palace that changed hands three times without ever losing its garden. Ca' Zenobio was completed in 1690 for the Zenobio family from Verona, passed later to the Albrizzi family, and eventually became a college for Armenian Mekhitarist monks under the name Moorat-Raphael. The garden reached its current romantic layout in the 19th century, when its formal Baroque geometry was reworked into winding paths, small artificial hills and bridges, planted with yews, laurels, cypresses, hackberries and a row of black locusts leading to a neoclassical loggia. No individual tree here carries a documented age or measurement, so any figure is an estimate rather than a verified fact, but the 19th-century redesign gives a reasonable upper bound. Access is not constant: the garden opens mainly during temporary exhibitions and events hosted at the palace, including Biennale collateral shows in some years, so a visit takes some planning rather than a simple walk-in.",
+      "verified_sources": [
+        "https://luoghi.italianbotanicalheritage.com/en/ca-zenobio-degli-armeni-garden/",
+        "https://en.wikipedia.org/wiki/Ca'_Zenobio_degli_Armeni"
+      ],
+      "access": "Free when open; the garden hosts temporary exhibitions and events, check the current schedule before visiting",
+      "transport": "10 min walk from Ca' Rezzonico vaporetto stop, via Campo Santa Margherita",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Candidate photo found (File:Ca_zenobio_giardini.JPG, CC BY-SA 3.0, Abxbay, categorised under the palace's garden) but this run could not visually confirm trees are the clear subject rather than the palazzo facade, so marked found_needs_check rather than approved.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ven_010",
+      "name": "Forte Marghera's Century Trees",
+      "species": "Mixed species (fortress park)",
+      "age_estimate": "century-old (undated more precisely)",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Forte Marghera, Via Forte Marghera, 30173 Mestre, Venezia",
+        "latitude": 45.47387,
+        "longitude": 12.26314,
+        "neighbourhood": "Mestre"
+      },
+      "story": "This fortress spent most of its working life defending Venice from the mainland side, a threat the lagoon city had never needed to worry about until the railway bridge connected it to dry land in 1846. Built up from 1805 under a combination of Napoleonic and Austrian engineering, Forte Marghera anchored Venice's landward defences through the 1848-49 siege and into the 20th century, before eventually being decommissioned and left to the Comune. Its parade grounds and ramparts are now planted with large poplars, common limes, plane trees and hackberries that local sources describe simply as century-old, without giving any individual tree a specific planting date or measurement, so their exact age is unverified. What survives is less a single monumental specimen than the mainland's closest equivalent to the tree-lined avenues and gardens Venice's own islands mostly lack, run today by a foundation that has turned the fort into a venue for exhibitions and Biennale pavilions alongside its resident colony of cats.",
+      "verified_sources": [
+        "https://live.comune.venezia.it/it/storia-forte-marghera-venezia",
+        "https://siviaggia.it/idee-di-viaggio/forte-marghera-venezia-parco-arte-gatti/583246/"
+      ],
+      "access": "Free, public park",
+      "transport": "15 min walk from Mestre railway station, or local bus",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No source dates or measures an individual tree at the fort; description as 'secolare' (century-old) is consistent across sources but unspecific.",
+      "location_precision": "approximate"
+    }
+  ]
+}
