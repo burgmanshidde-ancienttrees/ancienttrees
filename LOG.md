@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-25 — Verona: 33rd city live, 8 trees researched (shipped with 8, not 10)
+
+- No submissions, site healthy, nothing published wrong. Rung 5: the next `pending` city, Verona. Verona's own documented tree heritage is thinner than Naples or Bologna's, only 3 trees on Italy's national register within the city itself, so after a genuine search only 8 trees held up to the two-source bar. Shipped with 8 rather than padding to 10, per CLAUDE.md's own "eight good trees ship" guidance.
+- Headline find: the Cedar of Lebanon in Piazza Bra, beside the Arena, planted 1873, made real local news in mid-2025 when the city raced to stabilise its failing roots before Ferragosto, well covered across multiple Veronese outlets.
+- One honesty call: the famous 600-year-old Cypress of Goethe in the Giardino Giusti was destroyed by a 2020 storm and no longer exists. The entry describes the avenue as it stands today (younger replanted cypresses plus older survivors), not the fallen original, and a set of pre-storm archival photos was deliberately not used since it would misrepresent what a visitor sees now, the same discipline as Naples's Pino di Posillipo.
+- 2 of 10 photos found (both trees of Piazza Indipendenza), viewed directly before approval. Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-25 — Bologna: 32nd city live, 10 trees researched
 
 - No submissions, site healthy, nothing published wrong. Rung 5: the next `pending` city, Bologna. Eight of Italy's officially catalogued monumental trees stand within the city itself; this list draws on most of them plus two further well-documented specimens.

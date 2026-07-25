@@ -1,0 +1,270 @@
+{
+  "city": "Verona",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Verona keeps fewer officially catalogued monumental trees than nearby Bologna or Naples, only three on Italy's national register within the city itself, but what it has clusters around the places everyone already visits: the cedar shading the square in front of the Arena, the cypress avenue Goethe wrote home about, a plane tree filling an entire public garden. This list draws on that short official register, the Renaissance garden that has outlived the exact tree that made it famous, and a handful of specimens the city has been fighting to keep standing. Eight trees, honestly researched, rather than ten stretched thin.",
+  "meta_description": "Verona's most remarkable trees, from the century-old cedar just saved beside the Arena to the cypress avenue that captivated Goethe in 1786.",
+  "question_answer": "Verona's oldest precisely documented tree is the Cedar of Lebanon in Piazza Bra, planted in 1873 as part of the square's original garden design and still standing beside the Roman Arena today, roughly 153 years old. It stands free to visit in the city's largest and most central square.",
+  "question_meta": "Verona's oldest documented tree is a 150-year-old cedar in Piazza Bra beside the Arena, planted in 1873. Its story and seven more remarkable trees.",
+  "question_context": "Verona's tree heritage is thinner in the official record than some Italian cities: only three specimens within the city itself appear on the national Alberi Monumentali d'Italia register, all added in recent years. Among those, and among the wider set of well-documented specimens across the city's parks and gardens, the Cedar of Lebanon in Piazza Bra has the most precisely traceable planting date, tied to the square's 1870s garden redesign rather than a rounder estimate. It made local headlines in 2025 when arborists raced to stabilise it after its roots showed signs of failure. The square itself is free and always open.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Verona?",
+      "a": "The Cedar of Lebanon in Piazza Bra, planted in 1873 and still standing beside the Roman Arena today, roughly 150 years old. It was stabilised by the city in 2025 after its roots showed signs of failure."
+    },
+    {
+      "q": "What happened to the famous Cypress of Goethe?",
+      "a": "The cypress in the Giardino Giusti that captivated the writer Goethe in 1786, over 600 years old by the time he saw it, was uprooted by a violent storm on 23 August 2020. Younger cypresses have since been replanted in the garden's historic avenue, but the specific tree Goethe described no longer stands."
+    },
+    {
+      "q": "Are Verona's remarkable trees free to see?",
+      "a": "Most standing in public squares and parks are free. The Giardino Giusti charges an entry fee, and the Himalayan cedar of Villa Bersani grows on private property, visible from the street corner it overlooks rather than from inside the grounds."
+    },
+    {
+      "q": "Why does this list have eight trees instead of ten?",
+      "a": "Verona's officially documented tree heritage is smaller than several other Italian cities on this site. Rather than pad the list with unverifiable specimens, it stops at eight well-researched trees; more may be added as better sources turn up."
+    }
+  ],
+  "trees": [
+    {
+      "id": "ver_001",
+      "name": "The Cedar of Piazza Bra",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "planted 1873",
+      "age_min": 152,
+      "age_max": 153,
+      "location": {
+        "address": "Piazza Bra, 37121 Verona",
+        "latitude": 45.4392,
+        "longitude": 10.9927,
+        "neighbourhood": "Centro Storico"
+      },
+      "story": "This cedar has stood beside the Roman Arena for longer than most of the buildings currently ringing the square around it. Piazza Bra got its first deliberate garden in 1870, when the city decided the space needed shade and elegance to match its role as Verona's civic heart, and laid out three circular flowerbeds around a central fountain in 1873. The cedar planted then is one of the last survivors of that original scheme, now nearly 20 metres tall and weighing an estimated 16 tonnes. In June 2025 a gardener from the municipal green-space agency noticed the ground around its roots lifting unnaturally, a warning sign that the tree could be at risk of toppling in one of the city's busiest public spaces. What followed was a genuine local drama, tracked across Veronese news outlets for weeks: engineers drove three anchor points some four metres into the ground, tied together by twenty steel piles set in concrete, stabilising the root plate without removing the tree. The work finished just before the mid-August holiday, and the cedar, by every account since, is healthy and expected to stand for decades more.",
+      "verified_sources": [
+        "https://www.veronaoggi.it/verona/missione-compiuta-cedro-piazza-bra-adesso-salvo-16-agosto-2025/",
+        "https://www.giornaleadige.it/2025/10/28/cedro-piazza-bra-sicurezza-mia/"
+      ],
+      "access": "Free, public square",
+      "transport": "Adjacent to the Verona Arena, 5 min walk from Verona Porta Nuova station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "1873 planting date, dimensions (nearly 20m, 16 tonnes) and the 2025 stabilisation work corroborated across multiple independent Veronese press outlets covering the same event in real time (veronaoggi.it, giornaleadige.it, larena.it, veronanews.net, primadituttoverona.it all covered the story). No usable photo found specifically of this tree despite Piazza Bra's own well-photographed Commons category.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ver_002",
+      "name": "The Plane Tree of Piazza Indipendenza",
+      "species": "London Plane (Platanus acerifolia)",
+      "age_estimate": "documented mature by 1941",
+      "age_min": 85,
+      "age_max": 150,
+      "location": {
+        "address": "Piazza Indipendenza, 37121 Verona",
+        "latitude": 45.4428,
+        "longitude": 10.9996,
+        "neighbourhood": "Citta Antica"
+      },
+      "story": "One tree fills most of the garden at the centre of Piazza Indipendenza, a trunk 505cm around supporting a canopy 35.5 metres tall, official measurements that make it, by height, one of the largest plane trees recorded anywhere in Verona. Municipal records place it as already a well-grown, mature specimen by 1941, which puts its actual planting date decades earlier still, though no precise year survives in the sources checked for this entry. The square itself sits inside Verona's ancient walled centre, redeveloped and reopened to the public in 2017 after a period of restoration, and the city's own environmental office chose this exact plane, alongside a neighbouring ginkgo, to launch a smartphone project cataloguing the stories behind Verona's individual trees, a small sign of how locally significant this specimen already is. Common planes like this one can live for centuries under the right conditions, and this one, still visibly healthy and now protected under Italy's national monumental-tree register, looks set to outlast the current square by as much as it has outlasted the last one.",
+      "verified_sources": [
+        "https://www.veronanews.net/pubblicato-elenco-alberi-monumentali-ditalia-tre-verona/",
+        "https://ufficiostampa.comune.verona.it/nqcontent.cfm?a_id=9561&id_com=23641"
+      ],
+      "access": "Free, public square",
+      "transport": "10 min walk from Piazza delle Erbe",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Platano_piazza_Indipendenza-Verona_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Mauzzan, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Dimensions (505cm circumference, 35.5m height) from the official AMI national monumental-trees listing, corroborated by the city's own press office covering the same tree as part of its tree-heritage app project. No individual planting date documented beyond 'already mature by 1941'. Photo verified directly: shows a large plane trunk and canopy in a garden square setting with a stone balustrade, consistent with the described location.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ver_003",
+      "name": "The Ginkgo of Piazza Indipendenza",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "undated, mature",
+      "age_min": 80,
+      "age_max": 150,
+      "best_time": { "months": [11], "label": "November, when its fan-shaped leaves turn gold" },
+      "location": {
+        "address": "Piazza Indipendenza, 37121 Verona",
+        "latitude": 45.4428,
+        "longitude": 10.9996,
+        "neighbourhood": "Citta Antica"
+      },
+      "story": "Verona's official monumental-tree register lists this ginkgo as a group rather than a single trunk, an average circumference of 323cm and average height of 23.5 metres across the specimens growing together in Piazza Indipendenza, sharing the same small garden as the square's much taller plane tree. Ginkgo biloba is a genuine living relic, the last surviving member of a family of trees that covered much of the planet before flowering plants existed, all descended from populations that survived in a handful of sheltered valleys in southeast China while the species vanished everywhere else. This grouping's precise age is not documented, though its inclusion on Italy's national monumental register confirms it as long-established rather than a recent planting. The city chose this square specifically to launch a public tree-history project in 2018, scanning trees with QR codes to tell their stories, evidence that this ginkgo and its plane tree neighbour are treated locally as some of Verona's most significant living landmarks, official register or not.",
+      "verified_sources": [
+        "https://www.veronanews.net/pubblicato-elenco-alberi-monumentali-ditalia-tre-verona/",
+        "https://commons.wikimedia.org/wiki/Category:Ginkgo_biloba_(piazza_Indipendenza,_Verona)"
+      ],
+      "access": "Free, public square",
+      "transport": "10 min walk from Piazza delle Erbe",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ginkgo_biloba_piazza_Indipendenza_Verona.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Garonzi Stefania, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Dimensions (323cm average circumference, 23.5m average height) from the official AMI national monumental-trees listing; the tree's own dedicated Wikimedia Commons category (structured data, coordinates matching Piazza Indipendenza) independently corroborates its identity and location. Presented as a group entry since the register itself lists it that way rather than as one single specimen. Photo verified directly: shows unmistakable ginkgo fan-shaped foliage and bark, matching the species and general setting.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ver_004",
+      "name": "The Himalayan Cedar of Via Nino Bixio",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "undated, mature",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Viale Nino Bixio, 37126 Verona",
+        "latitude": 45.449,
+        "longitude": 10.9908,
+        "neighbourhood": "Borgo Trento"
+      },
+      "story": "This cedar rises over Viale Nino Bixio, a tree-lined avenue running through Borgo Trento from the city hospital toward Ponte Garibaldi, and it is one of only three trees standing anywhere within Verona city limits that Italy's national monumental-tree register has formally recognised. Its official measurements, a trunk 309cm around and a crown reaching 28 metres, earned it inclusion specifically for landscape value rather than for a documented age or historical association, the register's own more modest criterion compared to the age-and-dimension reasoning applied to its counterparts in Piazza Indipendenza. Cedrus deodara is native to the western Himalayas, where it grows at altitudes up to 3,000 metres in conditions nothing like Borgo Trento's flat, urban riverside setting, and its presence on a residential Verona boulevard reflects the same 19th and early 20th century fashion for grand, fast-growing conifers that filled institutional and civic gardens across Italy in the same period. No individual planting date is recorded, so its age here is presented as a broad, mature estimate rather than a precise figure.",
+      "verified_sources": [
+        "https://www.veronanews.net/pubblicato-elenco-alberi-monumentali-ditalia-tre-verona/",
+        "https://ilregistrodeglialberi.it/italia/veneto/verona/verona"
+      ],
+      "access": "Free, public avenue",
+      "transport": "10 min walk from Ponte Garibaldi",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Dimensions (309cm circumference, 28m height) and 'landscape value' listing criterion from the official AMI national register, corroborated by the independent RAMI tree-registry aggregator covering the same three Verona entries. No individual age or planting date documented. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ver_005",
+      "name": "The Cypress Avenue of Giardino Giusti",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "planting renewed since 2020, older survivors remain",
+      "age_min": 5,
+      "age_max": 100,
+      "location": {
+        "address": "Giardino Giusti, Via Giardino Giusti 2, 37129 Verona",
+        "latitude": 45.4437,
+        "longitude": 11.0076,
+        "neighbourhood": "Veronetta"
+      },
+      "story": "A long avenue of cypresses climbs from the Renaissance palace at the garden's entrance toward a grotto and grotesque stone mask at the far end, the single axis around which Agostino Giusti built his entire garden after 1570, using forced perspective to make the walk feel longer and grander than the plot of land actually allows. For over two centuries the most famous tree in that avenue was a single cypress that had already stood for hundreds of years when Johann Wolfgang von Goethe visited in 1786 and admired it enough to record the moment in his own Italian Journey. That specific tree no longer exists: a violent storm on 23 August 2020 tore it from the ground entirely, ending a run of more than six hundred years and taking with it the garden's single most photographed feature. The garden has since replanted cypresses along the same historic line, younger and considerably shorter than what fell, alongside the surviving older specimens elsewhere in the row that the storm did not reach. Visiting today means walking the same axis Goethe walked, framed by the same design, honestly no longer beneath the exact tree that made it famous.",
+      "verified_sources": [
+        "https://www.veronasera.it/cronaca/crollo-caduta-cipresso-goethe-giardino-giusti-verona-24-agosto-2020.html",
+        "https://www.heraldo.it/2020/09/04/giardino-giusti-la-ripresa-dopo-la-tempesta/"
+      ],
+      "access": "Paid entry, Giardino Giusti",
+      "transport": "10 min walk from Piazza delle Erbe",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Ensemble entry describing the garden's cypress avenue as it exists today, deliberately not claiming the historic Goethe cypress is still standing. The 2020 storm loss and subsequent replanting corroborated across two independent local press sources. No usable photo found of the current, post-2020 avenue specifically; a set of 1993-94 architectural documentation photos exists on Wikimedia Commons but predates the storm and would misrepresent the avenue's current state, so not used.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ver_006",
+      "name": "The Yew and Laurel Wood of Giardino Giusti",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "undated, mature",
+      "age_min": 80,
+      "age_max": 200,
+      "location": {
+        "address": "Giardino Giusti, Via Giardino Giusti 2, 37129 Verona",
+        "latitude": 45.4437,
+        "longitude": 11.0076,
+        "neighbourhood": "Veronetta"
+      },
+      "story": "Behind the Giardino Giusti's formal cypress avenue and geometric flowerbeds, the garden turns considerably wilder: a wooded section built from yew and laurel, an evergreen understorey planted to feel more like a natural grove than a designed landscape, leading down to a sixteenth-century grotto styled after the artificial caves fashionable in Renaissance Italian gardens. Taxus baccata is one of the most enduring tree species cultivated in European gardens, capable of living for many centuries and famously difficult to date precisely since its heartwood tends to hollow and rot away long before the tree itself dies, and this wood's older specimens fit that same pattern of a documented presence without a documented age. The grotto they surround was built to let visitors imagine themselves stepping into wilder, mythological terrain after walking through the garden's rigidly geometric front section, a contrast this yew and laurel planting still delivers exactly as designed more than four centuries later, regardless of what has happened to the garden's more famous cypress out front.",
+      "verified_sources": [
+        "https://www.artribune.com/turismo/2020/11/giardino-giusti-verona/",
+        "https://www.giardiniapertiverona.org/giardini/20-giardino-giusti/"
+      ],
+      "access": "Paid entry, Giardino Giusti",
+      "transport": "10 min walk from Piazza delle Erbe",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Ensemble entry describing the garden's wooded yew-and-laurel section rather than one dated individual specimen, corroborated across two independent sources describing the same layout. No individual age or planting date documented. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ver_007",
+      "name": "The Cedar of Villa Bersani",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "centenarian, undated",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Via Alessandro Volta, corner of Via Cipolla, 37131 Verona",
+        "latitude": 45.4432,
+        "longitude": 11.0127,
+        "neighbourhood": "Borgo Venezia"
+      },
+      "story": "This cedar towers over the corner of Via Volta and Via Cipolla, tall enough to be a landmark for the whole intersection long before anyone notices the Liberty-style villa it actually belongs to. Villa Bersani sits within a stretch of Borgo Venezia that UNESCO recognition has helped protect, and the cedar in its grounds has become something closer to a piece of shared civic identity than a private garden feature, well enough loved locally that residents formally petitioned the city in May 2015 to add it to Italy's monumental-tree register for its history, landscape value and age. That request has not resulted in an official listing, unlike the three trees elsewhere in Verona that did make the national register, but the tree's local reputation and the intersection's own layout, which seems to have been planned around leaving it room to grow, tell their own story regardless of paperwork. It stands on private property, visible from the street corner it dominates rather than from inside grounds the public cannot enter, an honest limitation for a tree this recognisable.",
+      "verified_sources": [
+        "https://www.veronanews.net/pubblicato-elenco-alberi-monumentali-ditalia-tre-verona/"
+      ],
+      "access": "Visible from the public street corner only (private property)",
+      "transport": "15 min walk from the historic centre, Borgo Venezia",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Single-sourced: the 2015 monumental-tree nomination request and general description come from one dedicated local-press article; no independent second source found despite a genuine search. Kept per the project's standard for single-sourced claims where the underlying facts (a private garden tree visible from a public street, a real petition) are plausible and specific rather than vague. Access honestly marked as street-visible only, not enterable, since the tree stands on private grounds. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ver_008",
+      "name": "The Historic Collection of Parco delle Colombare",
+      "species": "White Mulberry (Morus alba)",
+      "age_estimate": "undated, mature",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Parco delle Colombare, Via Ca' di Cozzi, 37124 Verona",
+        "latitude": 45.4533,
+        "longitude": 11.0066,
+        "neighbourhood": "Valdonega"
+      },
+      "story": "A large mulberry anchors what remains of a private estate's tree collection, one of the oldest specimens documented in Parco delle Colombare, a hillside park whose ownership shifted repeatedly before the city bought it in 1967 and opened it to the public. Named for Villa Colombari, built by a merchant who traded in the ochre earth pigments quarried on the property, the park's grounds were surveyed in 1946 and found to hold some 260 tall trees in its wooded section alone, alongside a working agricultural strip of grapevines, olives, cherries, pears and quinces that has since faded but left its own trace on the landscape. Alongside the mulberry, the collection that survives today runs to hornbeam, beech, tulip tree, ginkgo, an Australian sterculia, a California incense cedar and both Mediterranean and Kashmir cypress, an unusually wide-ranging planting for a single hillside estate. No individual specimen's exact age is documented beyond the general age of the collection itself, but the range of species alone marks this out as a genuine 19th and early 20th century private arboretum, now free and open to anyone willing to walk the hill above Verona's historic centre.",
+      "verified_sources": [
+        "https://internoverde.it/parco-delle-colombare/",
+        "https://www.giardiniapertiverona.org/giardini/08-parco-delle-colombare/"
+      ],
+      "access": "Free, public park",
+      "transport": "15 min walk from Piazza delle Erbe, uphill into Valdonega",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Ensemble entry describing the park's documented historic tree collection (per its own 1946 survey) rather than one dated individual specimen, headlined by the mulberry since it is the most consistently named standout across sources. Species list and estate history corroborated across two independent sources. No usable photo found.",
+      "location_precision": "approximate"
+    }
+  ]
+}
