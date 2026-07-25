@@ -1,0 +1,333 @@
+{
+  "city": "Granada",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Granada plants its trees the way it builds its gardens: behind walls, inside monastery grounds, up palace hillsides, rarely as an afterthought. A mystic poet planted one with his own hands while awaiting canonisation of a very different kind. A tree measured decades before botanists had formally described its own species grows two centuries downhill of that. Between the Alhambra's forest and the private carmenes of the Albaicin, this list draws on the city's own scattered singular-tree research rather than any single register, because Granada, unusually for a city this documented, has never compiled one.",
+  "meta_description": "Granada's ten most remarkable trees, from a 440-year-old cypress planted by a mystic poet to Generalife sequoias older than their own species' discovery.",
+  "question_answer": "Granada's oldest documented tree is the cypress of San Juan de la Cruz at the Carmen de los Martires, planted by the Carmelite mystic and poet between 1582 and 1588 during his time as prior there, making it roughly 440 years old. It grows inside the free public garden on Antequeruela Alta, a short walk from the Alhambra.",
+  "question_meta": "Granada's oldest tree: a 440-year-old cypress at Carmen de los Martires, planted by poet San Juan de la Cruz. Its story and nine more remarkable trees.",
+  "question_context": "Granada has no single municipal tree register the way some cities do, so this list draws on scattered research: a magazine-published survey of twelve singular trees across the city, the Alhambra and Generalife's own heritage documentation, and the University of Granada Botanical Garden's records of its own founding-era specimens. Within that combined pool, the cypress of San Juan de la Cruz at Carmen de los Martires is the one most precisely dated, on the strength of a documented six-year residency (1582-1588) by the Carmelite mystic, rather than a vaguer estimate. Some popular sources round the tree's age up to 500 years; this site uses the more conservative, better-documented figure tied to San Juan de la Cruz's own recorded time at the convent. The garden is free and open to the public, a short walk from the Alhambra.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Granada?",
+      "a": "The cypress of San Juan de la Cruz at Carmen de los Martires, planted by the mystic poet between 1582 and 1588, making it roughly 440 years old. Some sources round this up to 500 years; this site uses the more conservative figure tied to his documented residency."
+    },
+    {
+      "q": "Can you see trees in the Alhambra for free?",
+      "a": "Yes. The Bosque de la Alhambra, the wooded hillside walk leading up to the monument through the Puerta de las Granadas, is free and open without a ticket, and includes some of the oldest horse chestnuts in the city. The Nazarid palaces and the Generalife gardens themselves require a paid, timed ticket."
+    },
+    {
+      "q": "What is the sequoia mystery of the Alhambra?",
+      "a": "In 1926 a visiting botanist measured a large redwood at the Alhambra and calculated it was old enough to predate the species' formal scientific discovery in the 1850s, a puzzle later explained by a Spanish naturalist's likely 1791 seed-collecting trip to California decades before botanists catalogued the tree. That original specimen died before 2002; the sequoias visible in the Generalife's Upper Gardens today were planted later, in 1854-56."
+    },
+    {
+      "q": "Are Granada's remarkable trees free to see?",
+      "a": "Most are, standing in free public gardens, squares and the Alhambra's own free forest walk. Exceptions: the Generalife's sequoias and the Parador's cypresses and sophora require a paid Alhambra ticket or hotel visit, the Cuarto Real de Santo Domingo charges a small fee to enter the monument itself (though its robinia stands in the free entrance square), and Carmen de la Victoria's grounds are free but require booking an appointment in advance."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gra_001",
+      "name": "The Cypress of San Juan de la Cruz",
+      "species": "Mexican Cypress (Hesperocyparis lusitanica)",
+      "age_estimate": "approximately 440 years",
+      "age_min": 438,
+      "age_max": 444,
+      "location": {
+        "address": "Carmen de los Martires, Antequeruela Alta, 18009 Granada",
+        "latitude": 37.172,
+        "longitude": -3.5851,
+        "neighbourhood": "Antequeruela"
+      },
+      "story": "This cypress is not native to Spain, or even to the continent it is usually associated with. Hesperocyparis lusitanica, despite its name, comes from Mexico and Central America, and reached Europe through Carmelite missionaries who brought it first to Portugal, then into Spain's own monastery gardens. One of those Carmelites was San Juan de la Cruz, the mystic and poet, who served as prior of the Convent of the Martyrs here between 1582 and 1588, by his own order's account the calmest and most productive years of his life. Tradition holds he planted this tree himself, using his prior's staff, choosing the species as a personal symbol for reaching heaven. It was here that he shaped the poems he had first composed from memory in a Toledo prison, including the verses that became Dark Night of the Soul. Roughly two decades ago lightning tore away a significant part of the crown, and the tree still shows the damage today, new growth sprouting from the truncated stump rather than a single unbroken trunk. It survives regardless, in a free public garden that still keeps much of the convent's original layout, lake and orchard included.",
+      "verified_sources": [
+        "https://wastemagazine.es/impresiones/cipres-sanjuandelacruz.htm",
+        "https://www.turgranada.es/en/fichas/cypress-carmen-de-los-martires-48406/"
+      ],
+      "access": "Free, public garden",
+      "transport": "15 min walk from the city centre, near the Manuel de Falla Auditorium",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is calculated from San Juan de la Cruz's documented 1582-1588 residency (438-444 years as of 2026) rather than the rounder '500 years' some tourism sources use, a more conservative and better-sourced figure. The lightning-damage detail and general history are corroborated across two independent sources (a dedicated garden-history site and a Granada tourism guide). A separate official Alhambra Patronato page describes a similarly named 'Cedro de San Juan' at a different property, Carmen de Bellavista, with specific measurements (22m height, 74cm trunk diameter); not conflated with this entry since no source links the two as the same tree, and the popular, multiply-corroborated location for the San Juan de la Cruz story is consistently Carmen de los Martires. No usable photo found on Commons or iNaturalist for this specific specimen.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gra_002",
+      "name": "The Sequoias of the Generalife's Upper Gardens",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "approximately 170 years",
+      "age_min": 170,
+      "age_max": 172,
+      "location": {
+        "address": "Jardines Altos, Generalife, 18009 Granada",
+        "latitude": 37.1712,
+        "longitude": -3.5808,
+        "neighbourhood": "Alhambra"
+      },
+      "story": "Coast redwoods reached Europe in 1843, and Granada planted some of the continent's first within little more than a decade, sequoias going into the Generalife's Upper Gardens between 1854 and 1856, while the gardens were still privately owned ground. Sequoia sempervirens can live three thousand years and grow past 100 metres in its native California; these specimens, still comparatively young, have nonetheless become some of the tallest living things inside the Alhambra complex. Granada's connection to the species runs oddly deeper than that planting date suggests. In 1926 an American botanist examining a separate, older redwood elsewhere on the grounds calculated it was roughly 120 years old, old enough to have been planted before European science had formally identified the coast redwood at all, a puzzle eventually attributed to Thaddaeus Haenke, a naturalist on the 1791 Malaspina expedition who is thought to have carried seed back from California decades before the species reached botanical record books. That original mystery tree died sometime before 2002. The sequoias standing in the Upper Gardens today are the later, better-documented planting, reachable only with a paid, timed Alhambra and Generalife ticket.",
+      "verified_sources": [
+        "https://www.alhambra-patronato.es/elemento-del-mes/la-sequoia-012014",
+        "https://www.xataka.com/ecologia-y-naturaleza/enigma-secuoya-alhambra-arbol-que-se-planto-granada-anos-antes-que-botanicos-descubrieran"
+      ],
+      "access": "Paid entry, Alhambra and Generalife (timed ticket required)",
+      "transport": "Alhambra bus (C30/C32) or 25 min walk uphill from the city centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The 1854-56 planting date is corroborated by the Alhambra Patronato's own official page and an independent long-form science article (Xataka); both are also the source for the separate 'mystery tree' anecdote, which this story deliberately keeps distinct from the currently living, precisely dated specimens rather than conflating an older legend with a verifiable planting. No usable photo found; the Jardines Altos Commons category (46 files) documents garden architecture and general views, no sequoia-focused shot identified.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gra_003",
+      "name": "The Ginkgo of the Botanical Garden",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "approximately 135 years",
+      "age_min": 133,
+      "age_max": 137,
+      "best_time": { "months": [11], "label": "November, when its fan-shaped leaves turn gold" },
+      "location": {
+        "address": "Jardin Botanico de la Universidad de Granada, Facultad de Derecho, 18001 Granada",
+        "latitude": 37.1782,
+        "longitude": -3.6024,
+        "neighbourhood": "Centro"
+      },
+      "story": "This was the first ginkgo Granada ever grew, planted in 1889 in a garden that had itself only existed since 1840, on ground that used to be the vegetable orchard of a Jesuit college before the University of Granada's Faculty of Law took over the site. Ginkgo biloba is the last living member of a plant order that once grew across the entire planet during the age of dinosaurs, a lineage so isolated botanists sometimes call it a living fossil, and this specimen's fan-shaped leaves, turning a uniform gold each November, still look almost identical to fossil ginkgo leaves more than 200 million years old. The species is famous for a harder kind of survival too: six ginkgos within roughly a mile of Hiroshima's atomic bomb epicentre lived through the blast and are still growing today, a fact this specimen's own garden plaque, next to a poem written for the tree by the Granada poet Elena Martin Vivaldi, does not fail to mention. The garden is open to the public on university working days, free of charge, tucked behind the Faculty of Law's own building in the city centre.",
+      "verified_sources": [
+        "https://jardinbotanico.ugr.es/secciones/ejemplares-destacados",
+        "https://www.guiadearbolado.com.ar/arbol-nacional-de-granada/"
+      ],
+      "access": "Free, open on university working days",
+      "transport": "10 min walk from Puerta Real, city centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "1889 planting date corroborated by the garden's own official page and an independent arboriculture-focused article. No usable photo found: the Commons 'Ginkgo biloba in Spain' category holds no Granada entries, and no iNaturalist observation was found near the garden's coordinates.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gra_004",
+      "name": "The Palms of the Archbishop's Palace",
+      "species": "Mexican Fan Palm (Washingtonia robusta)",
+      "age_estimate": "approximately 100 years",
+      "age_min": 98,
+      "age_max": 105,
+      "location": {
+        "address": "Plaza de Gracia, 18002 Granada",
+        "latitude": 37.1727,
+        "longitude": -3.6045,
+        "neighbourhood": "Centro"
+      },
+      "story": "Four Mexican fan palms tower over Plaza de Gracia, planted in 1923 to mark the completion of the Archbishop's Palace that still faces them across the square, a building whose own main facades otherwise look toward the cathedral rather than this quieter plaza behind it. Washingtonia robusta grows faster and taller than almost any other palm cultivated in southern Spain, capable of clearing 30 metres given a century, and this quartet has had almost exactly that long: over 100 years of growth in one of Granada's older civic squares, planted deliberately rather than surviving by accident, the way many of the city's oldest trees have. The species takes its genus name from Washington and its specific name from its robust trunk, an American import that became fashionable across southern European cities in the early 20th century for exactly the effect it produces here, four columns of green rising well above the surrounding rooftops, visible long before the palace itself comes into view.",
+      "verified_sources": [
+        "https://wastemagazine.es/arboles-singulares-granada.htm"
+      ],
+      "access": "Free, public square",
+      "transport": "5 min walk from the Cathedral",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Single-sourced: only one dedicated article (a magazine survey of Granada's singular trees) documents the 1923 planting date and the palace connection; no independent second source found despite a genuine search. Kept per the project's standard for single-sourced institutional claims where the underlying facts are plausible and verifiable in kind, flagged honestly rather than dropped. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gra_005",
+      "name": "The Plane Trees of the Fountain of Battles",
+      "species": "London Plane (Platanus hispanica)",
+      "age_estimate": "undated, mature",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Plaza del Campillo, 18009 Granada",
+        "latitude": 37.1722,
+        "longitude": -3.598,
+        "neighbourhood": "Realejo"
+      },
+      "story": "Four enormous plane trees give Plaza del Campillo its identity, ringing a baroque stone fountain whose own history is less certain than the trees that shade it. The fountain, known as the Fuente de las Batallas for the medieval army musters once held on this ground outside the city's old walls, may originally have belonged to a 17th century convent before arriving at its current spot only in 1950. The planes around it are considerably younger than that origin story but still large enough that their trunks run past five metres around and their crowns reach roughly 30 metres, tall enough to be visible over the surrounding rooftops of the Realejo district. No individual planting date survives for these specific trees, honestly left undated rather than guessed, but their scale alone has made the square one of central Granada's most consistently used gathering spots, host to concerts during the city's spring singer-songwriter festival and its annual book fair.",
+      "verified_sources": [
+        "https://rinconesdegranada.com/fuente-de-las-batallas/",
+        "https://es.wikipedia.org/wiki/Fuente_de_las_Batallas"
+      ],
+      "access": "Free, public square",
+      "transport": "5 min walk from Puerta Real",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Existence, location and general scale corroborated across two independent sources; neither gives an individual planting date, so age is left as a broad estimate for mature street planes rather than a sourced figure. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gra_006",
+      "name": "The Robinia of Cuarto Real de Santo Domingo",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "approximately 200 years",
+      "age_min": 190,
+      "age_max": 210,
+      "best_time": { "months": [5], "label": "May, when its white flower clusters hang from every branch" },
+      "location": {
+        "address": "Plaza de los Campos 6, 18009 Granada",
+        "latitude": 37.1717,
+        "longitude": -3.5949,
+        "neighbourhood": "Realejo"
+      },
+      "story": "This robinia has become famous enough in Granada to appear on a national lottery ticket. In 2023 the Spanish blind people's organisation ONCE printed the tree on five million tickets as part of a series celebrating Spain's most emblematic urban trees, alongside the Granada city council's own logo, a considerable amount of public recognition for a species usually valued for fence posts rather than beauty. What makes this specimen worth printing is its trunk: barely 7.5 metres tall, modest for the species, but swollen to roughly 4.6 metres in girth, thick and deeply weathered enough that it reads as far older than its estimated two centuries. It grows directly outside the entrance to the Cuarto Real de Santo Domingo, the best-preserved surviving palace pavilion from Granada's Almohad and early Nazarid period, standing in the small public square in front of the monument rather than requiring the monument's own separate admission fee. Each May its branches fill with hanging clusters of white flowers, drawing a very different kind of attention than its trunk does the rest of the year.",
+      "verified_sources": [
+        "https://wastemagazine.es/arboles-singulares-granada.htm",
+        "https://www.once.es/noticias/la-robinia-del-cuarto-real-de-santo-domingo-se-asoma-al-cupon-de-la-once"
+      ],
+      "access": "Free, standing in the public entrance square (the Cuarto Real monument itself charges separate admission)",
+      "transport": "10 min walk from Puerta Real",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/266293921/original.jpeg",
+        "license": "CC BY 4.0",
+        "attribution": "Ben Thomas, via iNaturalist",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Height (7.5m) and girth (4.6m) figures come from a single dedicated survey article; the ONCE lottery feature independently corroborates the tree's existence, species, and civic prominence, treated together as meeting the two-source bar. The '4.60 metre diameter' figure as literally worded in the source would be physically implausible for this species (a diameter that large has no precedent for Robinia pseudoacacia); presented here as girth/circumference, the measurement convention actually consistent with the number and with how the ONCE coverage describes the trunk as thick rather than impossibly wide. Photo verified directly: iNaturalist observation 90m from the geocoded address, showing a heavily thickened, gnarled trunk in flower, species-confirmed and consistent with the entrance-square setting.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gra_007",
+      "name": "The Twin Cypresses of the Parador",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "centenarian, undated",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Parador de Granada, Real de la Alhambra s/n, 18009 Granada",
+        "latitude": 37.1758,
+        "longitude": -3.5873,
+        "neighbourhood": "Alhambra"
+      },
+      "story": "Two centenarian cypresses flank what was once the entrance to a set of royal tombs, inside a garden that has spent the last five centuries as a Franciscan convent, then a hotel. The Parador de Granada occupies the former Convento de San Francisco, built in the 15th century within the Alhambra's own walls, on ground the Catholic Monarchs Ferdinand and Isabella briefly chose as their own burial place before their remains moved to the Royal Chapel in the city below. The garden that grew up around the convent later became a botanical showcase laid out with identifying labels for each species, mixing Mediterranean natives, lavender, thyme, rosemary, with the pines, figs and cypresses planted for height and structure, these two flanking the site's most historically loaded doorway. The Parador remains a working hotel, and its garden sits technically on private grounds, but the café and restaurant terrace opens directly onto it, meaning any visitor willing to buy a coffee can walk the same paths past the same trees that once shaded a monarch's intended tomb.",
+      "verified_sources": [
+        "https://wastemagazine.es/alhambra-parador.htm",
+        "https://wastemagazine.es/arboles-singulares-granada.htm"
+      ],
+      "access": "Free via the public cafe/restaurant terrace (Parador hotel grounds)",
+      "transport": "Alhambra bus (C30/C32) or 25 min walk uphill from the city centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Both sources are from the same publisher (wastemagazine.es, two separate dedicated articles); treated as closer to single-sourced for this specific pair's age and exact positioning, though the Parador's history and garden layout are independently documented by the hotel's own listings. No individual planting date found; age left as a broad centenarian estimate. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gra_008",
+      "name": "The Sophora of the Parador Garden",
+      "species": "Japanese Pagoda Tree (Sophora japonica)",
+      "age_estimate": "approximately 200 years",
+      "age_min": 190,
+      "age_max": 210,
+      "best_time": { "months": [7, 8], "label": "July and August, when its white flower clusters open" },
+      "location": {
+        "address": "Parador de Granada, Real de la Alhambra s/n, 18009 Granada",
+        "latitude": 37.1758,
+        "longitude": -3.5873,
+        "neighbourhood": "Alhambra"
+      },
+      "story": "Sophora japonica flowers late enough in the year to be useful: most ornamental trees in Granada's gardens finish blooming well before the height of summer, but this species holds its show for July and August, when its branches fill with hanging clusters of small white flowers, a genuine rarity in a Mediterranean garden calendar otherwise built around spring. Despite the name, the species is native to China rather than Japan, spread west along trade routes centuries before European botanists sorted out its origin, and this specimen has stood in the garden of what is now the Parador de Granada for close to two centuries, part of the same former Franciscan convent grounds that also hold the Parador's two flanking cypresses. Sharing a garden with cypresses planted for structure and pines for height, this sophora earns its place on scale and unusual timing alone, one of relatively few large deciduous flowering trees in a garden otherwise built around evergreens.",
+      "verified_sources": [
+        "https://wastemagazine.es/arboles-singulares-granada.htm",
+        "https://wastemagazine.es/alhambra-parador.htm"
+      ],
+      "access": "Free via the public cafe/restaurant terrace (Parador hotel grounds)",
+      "transport": "Alhambra bus (C30/C32) or 25 min walk uphill from the city centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Both sources are from the same publisher (wastemagazine.es); treated as closer to single-sourced for the age figure specifically, flagged honestly. A separate, independently documented Sophora japonica/Styphnolobium japonicum exists at the University of Granada Botanical Garden (recorded there since 1856); not the same tree, kept distinct rather than conflated. No usable photo found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gra_009",
+      "name": "The Cedars of Carmen de la Victoria",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "age_estimate": "centenarian, undated",
+      "age_min": 100,
+      "age_max": 180,
+      "location": {
+        "address": "Cuesta del Chapiz, 18010 Granada",
+        "latitude": 37.1822,
+        "longitude": -3.5897,
+        "neighbourhood": "Albaicin"
+      },
+      "story": "Two Atlas cedars rise well above the great white perimeter wall of Carmen de la Victoria, tall enough to be one of the first things a visitor sees climbing the Cuesta del Chapiz toward the Albaicin, long before the garden gate itself comes into view. The carmen, a traditional Granada house-and-garden type built around a walled orchard, dates its oldest section, the cypress walk, to well before the University of Granada bought the property in 1944 to use as a student residence and guest house, one of the few carmenes in the neighbourhood that remained in some form of institutional rather than private ownership. Alongside the cedars grow equally old cypresses left deliberately unpruned, and a Judas tree (arbol del amor) now so aged it needs a support post to keep standing, the whole ensemble reading as a garden that has been allowed to grow rather than one kept formally trimmed. Entry is free, but the university requires visitors to book an appointment in advance, one of the few remaining Albaicin carmenes still open to the public at all.",
+      "verified_sources": [
+        "https://lugaresdegranada.blogspot.com/2020/04/carmen-de-la-victoria-carmenes-del.html",
+        "https://carmendelavictoria.ugr.es/reservas/jardines-exposiciones/reservas/jardines-exposiciones"
+      ],
+      "access": "Free, by prior appointment (University of Granada residence gardens)",
+      "transport": "15 min walk from Plaza Nueva, uphill into the Albaicin",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Existence and description corroborated by an independent Granada gardens blog; the appointment-booking requirement and free entry confirmed directly on the University of Granada's own reservation page. No individual planting date or precise age found for the cedars specifically; presented as a broad centenarian estimate. No usable photo found: the Commons category's garden photos are general views, none confirmed to show the cedars specifically.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gra_010",
+      "name": "The Horse Chestnuts of the Alhambra Forest",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "planted 16th-19th century, undated individually",
+      "age_min": 100,
+      "age_max": 200,
+      "best_time": { "months": [4, 5], "label": "late April and early May, when the forest's chestnut blossom peaks" },
+      "location": {
+        "address": "Bosque de la Alhambra, Cuesta de Gomerez, 18009 Granada",
+        "latitude": 37.1775,
+        "longitude": -3.5922,
+        "neighbourhood": "Alhambra"
+      },
+      "story": "The wooded hillside visitors climb to reach the Alhambra did not exist when the fortress was still in Muslim hands. Under the Nazarid rulers this slope was a cemetery, reportedly the burial ground of Muhammad I, the dynasty's founder, and his descendants, and the forest only began taking shape after Charles V arrived in the 16th century, later filled out under Ferdinand VII in the early 19th century with species including horse chestnut, plane, acacia and hackberry. The chestnuts have adapted well enough to compete for light against the forest's taller species that some individuals reach 20 metres, and each spring, generally late April into May, they put on the display that has made them the Bosque's best-known trees, dense white flower spikes covering the crown for a few weeks before giving way to spiny, inedible fruit that only superficially resembles a true chestnut. Unlike the paid monuments the forest surrounds, this walk itself, entered through the monumental Puerta de las Granadas, costs nothing and requires no ticket.",
+      "verified_sources": [
+        "https://www.alhambra-patronato.es/la-primavera-de-los-castanos-de-indias",
+        "https://es.wikipedia.org/wiki/Bosque_de_la_Alhambra"
+      ],
+      "access": "Free, public forest walk (no ticket required)",
+      "transport": "Entrance at Puerta de las Granadas, 10 min walk from Plaza Nueva",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Ensemble entry describing the forest's horse chestnut population rather than one dated individual specimen, the same bar used for other cities' grove/avenue entries. Planting history (Charles V's 16th century start, Ferdinand VII's early 19th century expansion) and the species' presence corroborated across the Alhambra Patronato's own page and Wikipedia's sourced article. No usable photo found for this specific location despite a search.",
+      "location_precision": "approximate"
+    }
+  ]
+}

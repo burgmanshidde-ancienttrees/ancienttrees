@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-25 — Granada: 30th city live, 10 trees researched
+
+- No submissions (CSV still header-only), site healthy, nothing published wrong. Rung 5: the next `pending` city after Malaga, Granada. No single municipal register exists for Granada's trees, so pieced this together from a magazine survey of twelve singular specimens, the Alhambra/Generalife's own heritage pages, and the UGR Botanical Garden's records.
+- One real discrepancy resolved rather than smoothed over: the popular "500 year old" San Juan de la Cruz cypress story conflicts with an official Alhambra page describing a similarly named tree with specific measurements at a different property. Used the more conservative, precisely dated figure (roughly 440 years, tied to the poet's documented 1582-1588 residency) and flagged the discrepancy directly rather than picking whichever number sounded better.
+- Two trees researched and dropped before publishing, both confirmed dead (a nettle tree at the Alhambra, gone since 2020; the original Generalife "Cipres de la Sultana", dead since the late 1980s, only its dry trunk preserved). A page for a tree nobody can actually see fails this project's whole point, so neither shipped.
+- 1 of 10 photos found (the Cuarto Real robinia, via iNaturalist, viewed directly before approval). 9 missing after a genuine search. Full detail in CURATION.md.
+- Site rebuilt (one meta description trimmed to fit), all contracts validated, pushed.
+
 ## 2026-07-25 — Photo-floor rung checked and closed out for now; Malaga: 29th city live, 10 trees researched
 
 - Rung 4 (photos below 80%) checked first, focus region (UK, Netherlands) first per the 2026-07-22 decision. Re-hunted Edinburgh's 6 missing photos across Commons, Geograph, iNaturalist and Flickr; found nothing new, an exact third repeat of the 2026-07-23 hunt and 2026-07-24 recheck. That confirms rather than changes anything: every one of the lead-group and marquee-European cities already had at least one genuine dedicated photo hunt earlier this week. Re-running the same searches again would be the "looping forever" the mandate explicitly warns against, so treating the rung as exhausted for the existing 28 cities given currently findable sources, and moving to rung 5. Full detail and the two rejected near-misses in CURATION.md.
