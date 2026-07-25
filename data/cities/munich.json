@@ -1,0 +1,330 @@
+{
+  "city": "Munich",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Munich protects its remarkable trees by law and by number: a city ordinance renewed on 21 July 2021 registers 117 individual Naturdenkmäler covering 200 trees, each one legally protected the way a listed building would be. That bureaucratic precision sits oddly with how these trees actually got here, planted by a royal count's landscape garden, grown wild in a monastery orchard, set in the ground by twelve thousand schoolchildren celebrating a war's end. Two of the ten below carry rival claims to being the city's single oldest tree, and neither claim is settled. Munich has not tried to force the point, and neither does this list.",
+  "meta_description": "Munich protects 200 trees by city ordinance. Meet a 600-year-old oak, a hollow linden painted by an artist, and eight rare hackberries on a ring road.",
+  "question_answer": "Munich has no single agreed oldest tree: two different trees carry the claim from different sources. The Krüner Eiche, a pedunculate oak in Sendling-Westpark, is cited by a district citizen assembly as roughly 600 years old, which would date it to the 1420s. The Röth-Linde in Moosach, a winter linden, is separately described by local press as the city's oldest tree at 300 to 350 years. The two claims have never been reconciled against each other.",
+  "question_meta": "Munich has two rival claims to its oldest tree, a 600-year-old oak and a 300-plus-year-old linden. Both, and eight more protected trees, explained.",
+  "question_context": "Munich's own tally is the most precise starting point any city on this list has offered: a 2021 ordinance names 117 protected Naturdenkmäler covering 200 individual trees across the city, each with a case made for rarity, size, beauty or historical association. Age is a different matter. Ring counts require felling a tree, so every age here comes from growth models, historical association or simple local reputation, not a verified count. The Krüner Eiche's roughly 600-year figure comes from a 2017 Sendling-Westpark district citizen assembly document arguing for the oak's preservation; the Röth-Linde's 300 to 350 year figure, and its billing as Munich's oldest tree, comes from a dedicated local news feature and the tree's own German Wikipedia page. Both are treated here as the honest, sourced claims they are rather than resolved into one winner. The Krüner Eiche stands at Krüner Platz in Sendling-Westpark, an eight minute walk from Harras U-Bahn station.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Munich?",
+      "a": "Two trees claim the title from different sources: the roughly 600-year-old Krüner Eiche oak in Sendling-Westpark, and the 300 to 350-year-old Röth-Linde in Moosach, separately called the city's oldest tree by local press. Neither claim has been checked against the other."
+    },
+    {
+      "q": "How does Munich protect its old and remarkable trees?",
+      "a": "By city ordinance. A 2021 update to the Naturdenkmalverordnung lists 117 individually protected natural monuments covering 200 trees across Munich, each legally protected for its age, rarity, size or historical association."
+    },
+    {
+      "q": "Where is the best place to see protected trees in Munich?",
+      "a": "The Englischer Garten holds three trees on this list within a short walk of each other: the oldest known elms in the city, a beech over 300 years old, and a rare fern-leaved beech cultivar, all in the park's southern half near the Chinese Tower."
+    },
+    {
+      "q": "Are Munich's remarkable trees free to see?",
+      "a": "Yes. All ten stand in public parks, squares and streets with no entry fee, though the Nymphenburg palace grounds around one of them charge for the palace interior itself."
+    }
+  ],
+  "trees": [
+    {
+      "id": "muc_001",
+      "name": "The Röth-Linde",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "300-350 years",
+      "age_min": 300,
+      "age_max": 350,
+      "location": {
+        "address": "Near Gut Nederling, Moosach, 80992 München",
+        "latitude": 48.16811,
+        "longitude": 11.51533,
+        "neighbourhood": "Nederling, Moosach"
+      },
+      "story": "A painter made this tree famous by sitting under it, and the tree has been fighting for its life ever since. Local tradition holds that the linden was planted as a peace tree after the Thirty Years' War ended in 1648, which would put its planting in the mid-17th century, though like most trees on this list its exact age rests on estimate rather than a documented planting record. By the time landscape painter Philipp Röth worked in its shade around the turn of the 20th century, the tree was already reckoned to be some 200 years old, and it now carries his name and a memorial plaque. That long life has come at a cost: a botched fungal treatment in the 1980s left the trunk hollow, and the tree today stands on eight metal crown braces and a branch support, watered and pruned as what one local report calls an intensive-care patient. Winter lindens can live a thousand years under good conditions, which makes the Röth-Linde's current state, still leafing out every spring at 23 metres tall with a trunk over six metres around, as much a story about arboriculture as about age.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/R%C3%B6th-Linde",
+        "https://www.hallo-muenchen.de/hallo-serie/muenchen-aelteste-serie-aeltester-baum-roeth-linde-naturdenkmal-moosach-westfriedhof-winterlinde-91815229.html"
+      ],
+      "access": "Free, public land, viewable from outside Gut Nederling",
+      "transport": "10 min walk from Nederlinger Straße bus stop or Moosach S-Bahn station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The Thirty Years' War planting date is local tradition, not a documented record; the 300-350 year range comes from the tree's own Wikipedia entry and matches independently, but no source gives a single precise figure.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "muc_002",
+      "name": "The Krüner Eiche",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "approximately 600 years",
+      "age_min": 550,
+      "age_max": 600,
+      "location": {
+        "address": "Krüner Platz, Sendling-Westpark, 81373 München",
+        "latitude": 48.1177,
+        "longitude": 11.5322,
+        "neighbourhood": "Sendling-Westpark"
+      },
+      "story": "This oak has outlasted the village it once stood outside, the Bavarian duchy that once ruled the land, and most of its own major branches. A 2017 recommendation from the Sendling-Westpark district's citizen assembly, arguing for the tree's protection and continued care, dates it at roughly 600 years old, which would put its origins in the 1420s, a period when Munich was still ruled directly by Wittelsbach dukes and when Duke Albrecht III married in the city in 1436. No source directly connects the tree's planting to that or any specific historical event, so any such link stays unclaimed here. What is documented is more recent damage: three major limbs have been removed over the years and a fourth broke off on its own, thinning a crown that once spread wide with the snake-like, twisting branch pattern typical of very old pedunculate oaks. A new protective fence went up around the trunk in July 2022 to keep the compacted soil at the roots from getting worse. The tree still stands at the eastern corner of the small park that carries its name, a six-century survivor now fenced off from the joggers and dog walkers who pass it daily.",
+      "verified_sources": [
+        "https://www.muenchen-transparent.de/antraege/4753115",
+        "https://www.baumkunde.de/baumregister/2910-stiel_eiche_am_kruener_platz_in_muenchen/"
+      ],
+      "access": "Free, public park",
+      "transport": "8 min walk from Harras U-Bahn station (U3, U6)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The approximately 600-year age comes from a district citizen-assembly document rather than a dendrological survey; baumkunde.de independently suggests a planting date around 1440, consistent with but not identical to that figure. Any connection to Duke Albrecht III's 1436 wedding is local speculation found in searches but not confirmed by either source, so it is not stated as fact in the story.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "muc_003",
+      "name": "The Reichs- und Friedenseiche",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "155 years",
+      "age_min": 154,
+      "age_max": 156,
+      "location": {
+        "address": "Flaucheranlagen, near Brudermühlbrücke, Sendling, 81379 München",
+        "latitude": 48.1103,
+        "longitude": 11.5423,
+        "neighbourhood": "Flaucher, Sendling"
+      },
+      "story": "Twelve thousand schoolchildren planted this oak in one afternoon, or at least watched a handful of their classmates do it. On 1 July 1871, weeks after the peace treaty ending the Franco-Prussian War was signed in Frankfurt, Munich staged a peace festival at the Flaucher meadows along the Isar: a procession of children, city councillors and guests gathered while selected boys and girls set a young oak sapling into the ground. A plaque at the site still reads, in German, Reich and Peace Oak, planted by the youth of the city of Munich on 1 July 1871, making this one of the few trees on this list with an exact, undisputed planting date rather than an estimate. Similar Friedenseichen went into the ground across German cities that year, each one a small piece of civic theatre marking the unification of the German Empire under Kaiser Wilhelm I as much as the peace itself. This one has had a century and a half since to grow into an ordinary, unremarkable-looking oak in a riverside park, its real distinction lying entirely in the date rather than the trunk.",
+      "verified_sources": [
+        "https://stadtgeschichte-muenchen.de/sehenswert/d_sehenswert.php?id=2918",
+        "https://commons.wikimedia.org/wiki/Category:Friedenseiche_Flaucheranlagen_(M%C3%BCnchen)"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Brudermühlbrücke tram/bus stop",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Friedenseiche_Flaucheranlagen_Muenchen-1.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Rufus46, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Planting date (1 July 1871) is explicit on the tree's own plaque per stadtgeschichte-muenchen.de, so age is calculated directly rather than estimated. Photo filename and Commons category both explicitly confirm this exact tree and location, a strong textual match, but this run's tools could not open the image to visually confirm content, so marked found_needs_check rather than approved.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "muc_004",
+      "name": "The Beech of the Englischer Garten",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 340,
+      "location": {
+        "address": "Englischer Garten, near Forstweg, Schwabing-Freimann, 80802 München",
+        "latitude": 48.1608,
+        "longitude": 11.6013,
+        "neighbourhood": "Schwabing-Freimann"
+      },
+      "story": "This beech was already old when the park around it was new. The Englischer Garten was laid out from 1789 on the orders of Elector Karl Theodor, designed by the American-born Sir Benjamin Thompson, Count Rumford, as one of the first public parks on the European continent, open to everyone rather than reserved for a court. Most of what grows in the park today dates from that design and its later 19th century expansion, but this beech, standing between the Forstweg and Friedrich-Ludwig-von-Sckell-Weg paths near the park's second riding trail, predates the whole project, described in Munich's own natural monument register as over 300 years old and the outstanding tree of its immediate surroundings. That would put its origins in the very early 18th century or before, decades ahead of Rumford's landscaping crews, meaning the park's designers either built around an existing tree or the beech simply outgrew whatever else stood nearby before them. No individual measurement or precise felling-based age exists for it, so the three-century figure is treated here as the registered estimate it is rather than a settled fact.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/7176-rotbuche_im_englischen_garten/",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_M%C3%BCnchen"
+      ],
+      "access": "Free, public park",
+      "transport": "15 min walk from Universität U-Bahn station, or bus to Nationalmuseum/Haus der Kunst",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age given only as 'over 300 years' in the city's own Naturdenkmal register (via baumkunde.de and the Wikipedia list drawing on it); no more precise figure or measurement found.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "muc_005",
+      "name": "The Twin Elms of the Englischer Garten",
+      "species": "European White Elm (Ulmus laevis)",
+      "age_estimate": "undated, described as the oldest elms in the city",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Englischer Garten, near the Chinese Tower, Schwabing-Freimann, 80802 München",
+        "latitude": 48.1615,
+        "longitude": 11.6031,
+        "neighbourhood": "Schwabing-Freimann"
+      },
+      "story": "Munich's own natural monument register makes a specific, checkable claim about these two trees: no older elms are known anywhere in the city. Standing northwest of the Monopteros temple and southwest of the Chinese Tower, in the busiest part of the Englischer Garten, the pair are European white elms, a species that has fared better against Dutch elm disease than most of its European relatives but is still uncommon at real size in any German city after the epidemic spread through the 20th century. Neither tree carries an individual measured age, so the claim rests on comparison rather than a number, but it is specific and official rather than a vague tourist superlative, made by the same city ordinance that protects 200 trees across Munich by name. Thousands of visitors pass within metres of the two elms every week on their way to the Chinese Tower's beer garden, most without knowing they are walking past the oldest confirmed elms the city can point to.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/3860-flatterulme_im_englischen_garten_muenchen/",
+        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Zwei_Flatterulmen_Ulmus_laevis,_Englischer_Garten_(M%C3%BCnchen)"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Chinesischer Turm bus stop or Universität U-Bahn station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Zwei_Flatterulmen_Ulmus_laevis_Englischer_Garten_Muenchen-1.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Peterf, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "'No older elms known in the city area' is the register's own wording, a comparative claim rather than an absolute age; no individual figure exists for either tree. Photo filename explicitly names species, location and Naturdenkmal status, a strong textual match, but this run's tools could not open the image to visually confirm content, so marked found_needs_check rather than approved.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "muc_006",
+      "name": "The Fern-leaved Beech",
+      "species": "Fern-leaved Beech (Fagus sylvatica f. asplenifolia)",
+      "age_estimate": "undated",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Englischer Garten, west bank of the Schwabinger Bach near the Chinese Tower, Schwabing-Freimann, 80802 München",
+        "latitude": 48.1618,
+        "longitude": 11.6008,
+        "neighbourhood": "Schwabing-Freimann"
+      },
+      "story": "Most of the Englischer Garten's protected trees are old because they survived. This one is protected because it barely exists anywhere else in Munich. The fern-leaved beech is a naturally occurring form of the common European beech in which the leaves grow narrow, deeply cut and lace-like instead of the usual broad oval, a genetic quirk that occasionally turns up in beech forests and gets propagated deliberately when someone notices it. Munich's specimen, standing west of the administrative building near the Chinese Tower on the bank of the Schwabinger Bach stream, has a trunk 3.67 metres around and is registered by the city specifically for how rare the form is within Munich rather than for size or documented age, unlike most of the natural monuments on this list. From a distance in full leaf it can look almost feathery compared to an ordinary beech standing nearby, a small, deliberate anomaly kept alive in one of the park's quieter corners rather than along its main paths.",
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/3861-farnblaettrige_buche_im_englischen_garten_muenchen/",
+        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Farnbl%C3%A4ttrige_Buche_Fagus_sylvatica_forma_asplenifolia,_Englischer_Garten_(M%C3%BCnchen)"
+      ],
+      "access": "Free, public park",
+      "transport": "10 min walk from Chinesischer Turm bus stop",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Farnblaettrige_Buche_Englischer_Garten_Muenchen-1.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Peterf, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Protected for rarity of form rather than age; no source gives a planting date or age estimate, so the age range here is a rough guess based on trunk girth rather than a documented figure, flagged accordingly. Photo filename explicitly names species, form and location, a strong textual match, but this run's tools could not open the image to visually confirm content, so marked found_needs_check rather than approved.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "muc_007",
+      "name": "The Oak of the Dörfchen, Nymphenburg",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "undated, called unique in size for the city",
+      "age_min": 150,
+      "age_max": 300,
+      "location": {
+        "address": "Schlosspark Nymphenburg, near the Brunnhaus, 80638 München",
+        "latitude": 48.1602,
+        "longitude": 11.5010,
+        "neighbourhood": "Nymphenburg"
+      },
+      "story": "This oak grows in the one part of a royal palace garden built to look like it wasn't designed at all. The Dörfchen, or little village, is a cluster of rustic farm-style buildings inside Nymphenburg Palace Park, built from 1803 as a picturesque contrast to the palace's formal Baroque and later English-landscape grounds surrounding it, complete with a working dairy and a chapel meant to evoke ordinary rural life for an audience that never had to live it. The oak stands near the Brunnhaus, on the way toward the Badenburg pavilion and the park's Großer See lake, and Munich's own natural monument register singles it out as unique in size within the city, a claim about scale rather than age, since no source gives the tree a documented planting date or precise age. What is certain is that it has grown large enough, inside grounds that have been continuously maintained by the Bavarian royal family and its successors since the 17th century, to earn individual legal protection in a park already full of centuries-old formal avenues.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_M%C3%BCnchen",
+        "https://www.wochenanzeiger-muenchen.de/mc3bcnchen/maechtig-hoch-und-dominant,38627.html"
+      ],
+      "access": "Free, public park (the palace interior and botanical garden charge separate admission)",
+      "transport": "5 min walk from Schloss Nymphenburg tram stop (line 17)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No source gives this specific oak a documented age; 'unique in size within the city area' is the register's own claim about scale, not age, and is presented as such.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "muc_008",
+      "name": "The Hackberries of Oskar-von-Miller-Ring",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "undated, described as an extremely rare species group in the city",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Oskar-von-Miller-Ring, near the Siemens headquarters, Maxvorstadt, 80333 München",
+        "latitude": 48.1478,
+        "longitude": 11.5729,
+        "neighbourhood": "Maxvorstadt"
+      },
+      "story": "Eight Mediterranean trees grow on a green strip beside one of Munich's busiest ring roads, in a city more than 500 kilometres north of where the species grows wild. Celtis australis, native across southern Europe and North Africa, is registered by Munich as an extremely rare species within the city area, and this group of eight, standing on a green strip on Oskar-von-Miller-Ring west of the Siemens corporate headquarters, is protected as a natural monument specifically for that rarity rather than for any individual tree's size or age. No source gives the group a planting date, though a stand of eight mature specimens growing together suggests a single deliberate planting rather than volunteers that seeded themselves over time, most likely as an ornamental choice for the street rather than a remnant of anything older. Traffic on the ring road runs past them constantly, an odd setting for what the city's own records treat as a genuine botanical rarity worth the same legal protection as its oldest oaks and lindens.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_M%C3%BCnchen",
+        "https://stadtgeschichte-muenchen.de/strassen/d_strasse.php?id=3833"
+      ],
+      "access": "Free, public street planting",
+      "transport": "5 min walk from Karlsplatz (Stachus) or Königsplatz U-Bahn stations",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as an ensemble of eight trees per the city's own register entry; no individual age or planting date documented for any of the eight.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "muc_009",
+      "name": "The Japanese Pagoda Tree of Karolinenplatz",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "undated, protected for rarity of size in the cityscape",
+      "age_min": 100,
+      "age_max": 180,
+      "location": {
+        "address": "Karolinenplatz 2a, Maxvorstadt, 80333 München",
+        "latitude": 48.1467,
+        "longitude": 11.5683,
+        "neighbourhood": "Maxvorstadt"
+      },
+      "story": "This tree flowers in August, the quietest month of the year for almost anything else blooming in Munich, and does it well enough into old age that the city has singled it out for legal protection twice over, once for rarity of species and once for its unusual size. Styphnolobium japonicum, despite the common name, is native to China rather than Japan and was introduced to European gardens in the 18th century for exactly this trait: heat tolerance, resistance to drought and pollution, and a late, generous flowering of small cream-white blooms that pollinators rely on after most spring flowerers are finished. Munich's specimen stands on the grounds of the property at Karolinenplatz 2a, part of a formal obelisk square laid out in the early 19th century to commemorate Bavarian soldiers who died in Napoleon's Russian campaign, a considerably more sober origin than the tree growing on it. No source gives the tree a documented planting date, but the city's own register notes its size is rare for the species within Munich's built-up centre, an urban tree doing more than its share of feeding late-summer bees.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_M%C3%BCnchen",
+        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Japanischer_Schnurbaum_am_Karolinenplatz,_M%C3%BCnchen"
+      ],
+      "access": "Free, viewable from the public square and street",
+      "transport": "5 min walk from Königsplatz U-Bahn station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Schnurbaum_am_Karolinenplatz_%28von_S%29_-_2021-07-05_-_142b.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Wikimedia Commons contributor, category Naturdenkmal Japanischer Schnurbaum am Karolinenplatz",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "No individual attribution/author name confirmed for this specific file beyond the category page listing; needs a direct check of the file's own description page for exact photographer credit before publishing. This run's tools could not open the image to visually confirm content, so marked found_needs_check rather than approved.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "muc_010",
+      "name": "The Wych Elm of Maximiliansplatz",
+      "species": "Wych Elm (Ulmus glabra)",
+      "age_estimate": "undated, large specimens rare in the city due to Dutch elm disease",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Maximiliansplatz, Altstadt-Lehel/Maxvorstadt border, 80333 München",
+        "latitude": 48.1420,
+        "longitude": 11.5714,
+        "neighbourhood": "Maximiliansplatz"
+      },
+      "story": "Almost every elm this size that once grew in Munich is gone, and that absence is the entire reason this one is protected. Dutch elm disease, a fungus spread by bark beetles, swept through European elm populations across the 20th century in repeated waves, and Munich's own natural monument register notes plainly that wych elms of any real size have become rare across the whole city as a result, inner districts included. This one has survived on Maximiliansplatz, a roughly 300 by 60 metre park-like square laid out in the English-garden style along what was once the city's western fortification line, redesigned into a green public space after the walls came down in the 19th century. No source gives the tree an individual planting date or precise age, and its story here is less about a specific event than about what elm disease has quietly removed from cities across the continent: a species that was once an unremarkable street and park tree is now something Munich has to name and legally protect just to keep a mature specimen standing.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_M%C3%BCnchen",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Bergulme_Maximiliansplatz_M%C3%BCnchen.jpg"
+      ],
+      "access": "Free, public square",
+      "transport": "5 min walk from Odeonsplatz or Lenbachplatz",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Naturdenkmal_Bergulme_Maximiliansplatz_M%C3%BCnchen.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Peterf, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "No individual age or planting date documented; rarity is explicitly tied to Dutch elm disease losses across the city rather than this tree's own age. Photo filename explicitly names the Naturdenkmal, species and exact location, a strong textual match, but this run's tools could not open the image to visually confirm content, so marked found_needs_check rather than approved.",
+      "location_precision": "approximate"
+    }
+  ]
+}
