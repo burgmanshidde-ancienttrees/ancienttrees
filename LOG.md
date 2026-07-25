@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-25 — Bologna: 32nd city live, 10 trees researched
+
+- No submissions, site healthy, nothing published wrong. Rung 5: the next `pending` city, Bologna. Eight of Italy's officially catalogued monumental trees stand within the city itself; this list draws on most of them plus two further well-documented specimens.
+- Two more wrong-city near-misses caught this run (after Naples's Palermo ficus mixup): a Commons category literally named "Ginkgo di piazza Cavour" turned out to be a Turin tree, not Bologna's; and a Villa Ghigi cedar photo search surfaced a similarly named tree in Vallerano instead. Neither used. Also caught and fixed before commit: an early draft accidentally cited a Naples source (leftover from this same session's earlier research) for a Bologna tree; replaced with the correct source.
+- 3 of 10 photos found (two platani and the cypress over poet Giosue Carducci's grave at the Certosa cemetery), all viewed directly before approval. 7 missing after a genuine search. Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-25 — Naples: 31st city live, 10 trees researched
 
 - No submissions, site healthy, nothing published wrong. Rung 5: the next `pending` city, Naples. Naples holds more officially catalogued monumental trees than any other Italian municipality, mostly concentrated at the Real Bosco di Capodimonte, the former Bourbon royal estate; six of the ten trees come from there, an honest reflection of where the city's tree heritage actually sits rather than a shortcut.
