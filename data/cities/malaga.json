@@ -1,0 +1,330 @@
+{
+  "city": "Malaga",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Malaga's most remarkable trees rarely come from the wild. Almost every one on this list arrived as an import, an accident, or a rescue: a fig mistaken for a magnolia, an olive dug up whole from a neighbouring town, an avocado planted a century and a half ago when nobody in Spain yet grew the fruit to sell. The city itself joined a European tagging scheme in 2022 to mark ten of them with small identifying plaques, and this list draws heavily on that official selection, filled out with the botanical garden that has been collecting outsized specimens since 1855.",
+  "meta_description": "Malaga's ten most remarkable trees, from a 400-year-old transplanted olive to a fig beside a Picasso sculpture. Locations, stories, how to reach each one.",
+  "question_answer": "Malaga's oldest documented tree is the olive of the Jardin Botanico-Historico La Concepcion, estimated at around 400 years old and moved there whole from the neighbouring town of Velez-Malaga. It stands in the garden's Mediterranean plant collection, a short bus ride north of the city centre, inside the paid botanical garden.",
+  "question_meta": "Malaga's oldest tree: a 400-year-old olive at La Concepcion garden, moved whole from Velez-Malaga. Its story, location, and nine more remarkable trees.",
+  "question_context": "Malaga does not have a single dominant tree register the way some cities do. Its strongest source is a 2022 municipal scheme, run under the European TreeTags project and the international Tree Cities of the World programme, which tagged ten specimens across the city as singular for their size, age or location. Separately, the Jardin Botanico-Historico La Concepcion, a private estate opened to the public and declared a historic garden in 1943, keeps its own record of a dozen outsized trees inherited from more than a century of collecting. Within that combined pool, the Concepcion's olive tree is the one most consistently described as the city's oldest, on the strength of a roughly 400-year age estimate given by the garden itself, though as with most veteran olives, the figure is a general estimate rather than a ring count. The garden sits at the northern edge of the city, a paid site (small entry fee), reachable by bus from the centre.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Malaga?",
+      "a": "The olive tree of the Jardin Botanico-Historico La Concepcion, estimated at around 400 years old and moved there whole from Velez-Malaga. It grows in the garden's Mediterranean plant collection, a paid site north of the city centre."
+    },
+    {
+      "q": "What is Malaga's TreeTags scheme?",
+      "a": "A 2022 municipal programme, part of the European TreeTags project and the international Tree Cities of the World initiative, that placed identifying plaques on ten trees across Malaga chosen for their size, age or location. Six of the ten trees on this list carry one of those tags."
+    },
+    {
+      "q": "Are Malaga's remarkable trees free to see?",
+      "a": "Most are, standing in free public parks, gardens and streets. Two exceptions: the trees inside the Jardin Botanico-Historico La Concepcion require a small entry fee, and the avocado tree at a Churriana primary school is on working school grounds, visited by prior appointment rather than freely."
+    },
+    {
+      "q": "Why are so many of Malaga's oldest trees not native to Spain?",
+      "a": "Most arrived through 19th and 20th century fashion and trade: wealthy estate owners and municipal gardeners planting species from Australia, South America and Asia because they had just become available, not because they grow wild in Andalusia. The city's one native oak on this list stands out for being the exception."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mlg_001",
+      "name": "The Transplanted Olive of La Concepcion",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "approximately 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "location": {
+        "address": "Jardin Botanico-Historico La Concepcion, Camino del Jardin Botanico 3, 29014 Malaga",
+        "latitude": 36.7601,
+        "longitude": -4.426,
+        "neighbourhood": "Ciudad Jardin"
+      },
+      "story": "This olive did not grow where it now stands. It was dug up whole in Velez-Malaga, a town roughly 40km east along the coast, and moved into the Mediterranean plant collection of the Jardin Botanico-Historico La Concepcion, where it has continued growing as if nothing happened. The garden itself began in 1855, built by the Marquises of Casa Loring on a former farm estate, and later expanded by the Echevarria-Echevarrieta family before its 1943 declaration as a historic garden, but this olive predates all of that by centuries: the garden's own estimate puts it at roughly 400 years old, a trunk perimeter of 3.30 metres marking the slow accumulation of growth rings no one has counted directly, since felling a living tree to check would defeat the point. Olives resist precise dating the way most ancient trees do, hollowing and regrowing from their own base over centuries, which makes any figure an estimate rather than a measurement. What is certain is the transplant itself, a considerable feat of tree-moving for a specimen this size, undertaken to bring one of the region's oldest surviving olives into a collection built specifically to house trees too remarkable to leave where they were found.",
+      "verified_sources": [
+        "https://laconcepcion.malaga.eu/en/the-garden/historics-plants/detail-historics-plants/The-olive-tree/",
+        "https://laidbackgardener.blog/2026/05/07/la-concepcion-historical-botanical-garden-in-malaga-where-trees-meet-the-mountains/"
+      ],
+      "access": "Paid entry, Jardin Botanico-Historico La Concepcion",
+      "transport": "Bus from city centre to the garden entrance on Camino del Jardin Botanico",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Plaza_del_Olivo_Centenario.JPG",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Daniel Capilla (Dcapillae), via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Age (approximately 400 years) and the Velez-Malaga transplant origin come from the garden's own official page; a second, independent source (a garden-focused travel blog) corroborates the tree's age and significance but not an independent measurement, so this is closer to single-sourced than the project's usual two-independent-sources bar, kept per the same standard applied to other institutions' own authoritative pages elsewhere on this site. Photo verified directly: shows a large, heavily gnarled olive with a plaque at its base inside a curved white-walled plaza named 'Plaza del Olivo Centenario' (Centenary Olive Plaza), an exact match.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mlg_002",
+      "name": "The Ficus Avenue of the Alameda Principal",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "approximately 150 years",
+      "age_min": 145,
+      "age_max": 155,
+      "location": {
+        "address": "Alameda Principal, 29001 Malaga",
+        "latitude": 36.7176,
+        "longitude": -4.4234,
+        "neighbourhood": "Centro Historico"
+      },
+      "story": "Malaga's central promenade has had three different trees in its 240-year history, and the ones standing today were themselves meant to be temporary. The Alameda was laid out in 1783 with white poplars, which gave the street its name (alameda meaning poplar grove), later replaced with orange trees and oleanders. Those in turn came out in 1876, when architect Joaquin Rucoba's renovation brought in large-format ficus from India, Ficus microcarpa, known locally as laurel de indias. Nobody expected the imports to become the defining feature of the street, but 150 years on, their broad, wind-flattened canopies form a continuous green roof over the traffic below, dense enough that Malaguenos still call the shade underneath one of the coolest places in the city centre in August. Twenty-three of the original mature specimens survive today alongside younger replacements, and when Malaga built a metro line beneath the Alameda in 2018 and 2019, the works were designed specifically to protect their roots, removing traffic lanes rather than digging near the trunks. It remains one of the few 19th century streetscapes in Spain where the accidental choice, not the planned one, is the thing everyone remembers.",
+      "verified_sources": [
+        "https://ombrotipo.wordpress.com/2013/04/16/los-ficus-de-la-alameda-principal/",
+        "https://es.wikipedia.org/wiki/Alameda_Principal_(M%C3%A1laga)"
+      ],
+      "access": "Free, public street",
+      "transport": "Malaga Centro-Alameda tram/metro station, or 5 min walk from Plaza de la Marina",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Alameda_principal_Malaga.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "rosemarydukelow, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Ensemble entry describing the avenue's tree cover rather than one dated individual specimen, the same bar used for other cities' avenue/grove entries. 1876 planting date and the 2018-19 metro-works root protection are corroborated across both sources. Photo verified directly: shows the Alameda's large ficus canopy over the street, matching the description exactly.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mlg_003",
+      "name": "El Barrilito",
+      "species": "Floss Silk Tree (Ceiba chodatii)",
+      "age_estimate": "undated, mature",
+      "age_min": 60,
+      "age_max": 120,
+      "location": {
+        "address": "Jardines de Alfonso Canales, 29016 Malaga",
+        "latitude": 36.7168,
+        "longitude": -4.4209,
+        "neighbourhood": "Soho / Centro"
+      },
+      "story": "Everyone in Malaga who has walked past this tree calls it by its nickname rather than its species: El Barrilito, the little barrel, for a trunk so swollen it looks less like wood than like something inflated. Ceiba chodatii stores water in that trunk to survive its native South American dry season, and this specimen has taken the adaptation further than most, measured in April 2022 at 5.86 metres around at chest height, a girth that local tree enthusiasts consider possibly the thickest of its kind anywhere in Spain or continental Europe, a claim no national register has settled outright. It grows in the Jardines de Alfonso Canales, a small formal garden between Calle Vendeja and Plaza de la Marina named for the Malaga-born poet, where a bronze bust of Canales was installed beside the tree in 2007. For a period the tree stood behind a protective fence, removed in 2009, and it now shares its plaza with a set of bright red benches from a public art project, an odd but fitting pairing for a tree whose entire appeal is how strange it looks. In 2022 the city tagged it as one of ten singular trees under a European urban-tree awareness campaign, one of six on this list to carry that same designation.",
+      "verified_sources": [
+        "https://jardinessinfronteras.com/2018/12/19/ceiba-chodatii-el-palo-borracho-blanco-en-malaga/",
+        "https://www.malagactualidad.es/teletipos/61898-diez-arboles-singulares-de-malaga-forman-parte-de-la-campana-europea-de-divulgacion-tretags"
+      ],
+      "access": "Free, public garden",
+      "transport": "5 min walk from Plaza de la Marina",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Floss_Silk_Tree_in_Malaga.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Daniel Capilla (Dcapillae), via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "The 'possibly thickest in Spain/Europe' claim is presented with the hedge intact per hard rule 8, sourced to one dedicated garden blog (jardinessinfronteras.com) rather than an official register; softened language used throughout. No planting date documented; age range is a broad estimate for a mature specimen of this species rather than a sourced figure. Photo verified directly: bare-branched winter shot showing the distinctive swollen barrel trunk and the red urban-art benches described in the TreeTags coverage, an exact match to this tree and garden.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mlg_004",
+      "name": "The Floss Silk Tree of Cortina del Muelle",
+      "species": "Floss Silk Tree (Ceiba speciosa)",
+      "age_estimate": "undated, mature",
+      "age_min": 40,
+      "age_max": 80,
+      "location": {
+        "address": "Calle Cortina del Muelle, 29015 Malaga",
+        "latitude": 36.7192,
+        "longitude": -4.4191,
+        "neighbourhood": "Centro Historico"
+      },
+      "story": "This tree survived a construction project by becoming part of the construction. When the streets around Malaga Cathedral were remodelled roughly a decade ago, most of what stood in the way came out. This Ceiba speciosa, a South American species closely related to the Barrilito across town but distinguished by its spinier bark and paler, pink-tinged flowers, did not: engineers built an elevated planter bed around its base instead, integrating a 23-metre tree into the finished streetscape rather than removing it. The result is a strange piece of urban furniture, a raised stone ring on a historic pedestrian street with a substantial tropical tree growing straight out of the middle of it, steps from the cathedral that gives Cortina del Muelle its foot traffic. Malaga tagged it in 2022 as one of ten singular trees under the city's TreeTags scheme, citing its height and its unusually deliberate preservation as the reasons for the designation. No individual age or planting date survives for this specimen, honestly left as an estimate rather than guessed.",
+      "verified_sources": [
+        "https://www.malagactualidad.es/teletipos/61898-diez-arboles-singulares-de-malaga-forman-parte-de-la-campana-europea-de-divulgacion-tretags",
+        "https://limpiezademalaga.es/beneficios-arboles-malaga/"
+      ],
+      "access": "Free, public street",
+      "transport": "5 min walk from Malaga Cathedral",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Both sources report the same official TreeTags campaign description (23m height, preserved in an elevated planter during cathedral-area remodelling); treated as two independent republications of one municipal source rather than fully independent corroboration, consistent with how this project has flagged similar cases elsewhere. No usable photo found: the street's own Wikimedia Commons category (16 files) documents only buildings and plaques, no vegetation.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mlg_005",
+      "name": "The Fig of the Picasso Gardens",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "100+ years",
+      "age_min": 100,
+      "age_max": 145,
+      "location": {
+        "address": "Jardines de Picasso, Prolongacion de la Alameda, 29002 Malaga",
+        "latitude": 36.7166,
+        "longitude": -4.4344,
+        "neighbourhood": "Cruz de Humilladero"
+      },
+      "story": "This fig predates the garden built around it by decades. The Jardines de Picasso opened in 1981, laid out in a symmetrical petal pattern to mark the centenary of Picasso's birth in the city, but its two oldest Ficus macrophylla were already mature trees when the ground beneath them was formally landscaped, their aerial roots by then thick enough to rise nearly a metre clear of the soil. The city's own tagging scheme describes the pair as centenarian and among the largest of their kind found anywhere in Europe, a claim offered here with the same caution this site applies to any superlative no national register has independently confirmed. Between the two trees stands Siextasis, a sculpture by Malaga-born artist Miguel Ortiz Berrocal, better known for puzzle-like bronzes that separate into dozens of interlocking pieces, placed there as the garden's own tribute to Picasso. The pairing gives Jardines de Picasso an odd distinction: a public garden where the trees are older than the art dedicated to the city's most famous painter, and both were already there before the garden had a name.",
+      "verified_sources": [
+        "https://www.malagactualidad.es/teletipos/61898-diez-arboles-singulares-de-malaga-forman-parte-de-la-campana-europea-de-divulgacion-tretags",
+        "https://medioambiente.malaga.eu/parques-y-jardines/parques-y-jardines-de-malaga/detalle-del-parque/Jardines-de-Picasso/"
+      ],
+      "access": "Free, public garden",
+      "transport": "10 min walk from Malaga Centro-Alameda station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The 'among the largest in Europe' claim is softened per hard rule 8; sourced to the garden's own promotional description rather than an independent measurement. 25m height and centenarian status corroborated by the TreeTags coverage and the city's own park page. No usable photo found: the garden's 8-file Wikimedia Commons category covers a sister-city sculpture, a fountain and a different araucaria species' pollen cones, not this ficus; a candidate Flickr photo exists but its licence could not be confirmed as open this run.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mlg_006",
+      "name": "The Hackberry of the Cypress Cottage",
+      "species": "European Hackberry (Celtis australis)",
+      "age_estimate": "approximately 200 years",
+      "age_min": 190,
+      "age_max": 210,
+      "location": {
+        "address": "Jardin Botanico-Historico La Concepcion, Camino del Jardin Botanico 3, 29014 Malaga",
+        "latitude": 36.7601,
+        "longitude": -4.426,
+        "neighbourhood": "Ciudad Jardin"
+      },
+      "story": "Hackberry wood was cheap and ordinary enough that for centuries nobody thought to plant it for looks: it went into barrel staves, walking sticks, fishing rods and farm tools, and children used its small dark berries as ammunition for peashooters, the kind of tree valued for use rather than admired for size. This one at La Concepcion grew past all of that. Standing beside a building the garden calls the Casita de los Cipreses (Cypress Cottage), it now measures roughly 24 metres tall with a trunk 3.72 metres around, dimensions the garden's own record and an independent tree-history blog both describe as probably the largest and best-preserved hackberry anywhere in Malaga province. Celtis australis can live to six hundred years in the right conditions, which makes this specimen, at an estimated two centuries old, still comfortably short of its own species' ceiling. It grows within a botanical collection assembled since 1855 specifically to bring together trees too large or too rare to encounter anywhere else nearby, and next to the garden's showier imports, palms and figs from three continents, this unglamorous, useful species holds its own purely on scale.",
+      "verified_sources": [
+        "https://laconcepcion.malaga.eu/en/the-garden/historics-plants/detail-historics-plants/The-hackberry/",
+        "https://www.arbolesconhistoria.com/2019/06/14/jardin-historico-la-concepcion-malaga-arboles/"
+      ],
+      "access": "Paid entry, Jardin Botanico-Historico La Concepcion",
+      "transport": "Bus from city centre to the garden entrance on Camino del Jardin Botanico",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age (approximately 200 years), height (24m) and perimeter (3.72m) corroborated across the garden's own official page and an independent tree-history blog (arbolesconhistoria.com), both giving matching figures. No usable photo found on Wikimedia Commons or iNaturalist for this specific specimen despite a genuine search.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mlg_007",
+      "name": "The Tallest Araucaria in the Province",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "age_estimate": "approximately 200 years",
+      "age_min": 185,
+      "age_max": 200,
+      "location": {
+        "address": "Jardin Botanico-Historico La Concepcion, Camino del Jardin Botanico 3, 29014 Malaga",
+        "latitude": 36.7601,
+        "longitude": -4.426,
+        "neighbourhood": "Ciudad Jardin"
+      },
+      "story": "Araucaria heterophylla has been growing on earth since the Triassic, more than 200 million years, long enough to have shared the planet with the first dinosaurs, though the specimen standing beside La Concepcion's waterfall is a considerably more recent arrival. Native to a single small Pacific island roughly 1,600km east of Australia, the species became a fashionable planting in Malaga's gardens in the mid-19th century, when ship traffic and colonial-era plant collecting made previously unreachable species suddenly available to anyone with land and money. This one has been growing for close to two centuries since, long enough to reach 46 metres, the tallest confirmed araucaria anywhere in Malaga province according to the garden's own record. Its form is the reason the species was ever fashionable in the first place: branches arranged in perfectly regular tiers around a single straight trunk, giving young and old specimens alike a symmetry that looks almost designed rather than grown. Ships once used the trunks of related araucaria species for their main masts, a practical use this ornamental specimen, standing landlocked beside a garden waterfall, will never see.",
+      "verified_sources": [
+        "https://laconcepcion.malaga.eu/es/el-jardin/especies-monumentales/detalle-de-la-especie/La-araucaria-o-pino-de-pisos/",
+        "https://malaga.hammamalandalus.com/jardines-de-la-concepcion-un-paseo-por-los-pulmones-de-malaga/"
+      ],
+      "access": "Paid entry, Jardin Botanico-Historico La Concepcion",
+      "transport": "Bus from city centre to the garden entrance on Camino del Jardin Botanico",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "'Tallest in the province' claim comes from the garden's own page; a second source (a Malaga tourism/wellness blog) corroborates the height and age but both ultimately draw on the garden's own figures, so treat as closer to single-sourced for the superlative specifically, softened language used ('according to the garden's own record') per hard rule 8. No usable photo found for this specific tree on Commons or iNaturalist.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mlg_008",
+      "name": "The Native Oak of Malaga Park",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "undated, mature",
+      "age_min": 60,
+      "age_max": 120,
+      "location": {
+        "address": "Parque de Malaga, 29001 Malaga",
+        "latitude": 36.719,
+        "longitude": -4.4165,
+        "neighbourhood": "Centro Historico"
+      },
+      "story": "Almost everything remarkable in Malaga's tree canon arrived from somewhere else: Australia, South America, India, the Himalayas. This holm oak did not. Quercus ilex is the tree of the native Andalusian forest, the species that would dominate this coastline's hills if centuries of farming, grazing and building had not cleared most of it away, and its presence in Parque de Malaga reads less as a planting choice than as a reminder of what stood here before the park did. The park itself only exists because 19th century Malaga reclaimed land from the sea, built on a stretch of shoreline formerly occupied by a fortress esplanade, and filled with species from five continents once the 1896 development law inspired by Canovas del Castillo cleared the way. Amid that deliberately exotic collection, palms, dragon trees, ficus, jacarandas, this encina stands out for being ordinary in the best sense: 19 metres tall, 0.9 metres in trunk diameter, unremarkable anywhere else in Andalusia and quietly notable here for being the one tree in the city's own 2022 singular-trees list that actually belongs to this coastline.",
+      "verified_sources": [
+        "https://www.malagactualidad.es/teletipos/61898-diez-arboles-singulares-de-malaga-forman-parte-de-la-campana-europea-de-divulgacion-tretags",
+        "https://limpiezademalaga.es/beneficios-arboles-malaga/"
+      ],
+      "access": "Free, public park",
+      "transport": "5 min walk from Plaza de la Marina",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Both sources report the same official TreeTags figures (19m height, 0.9m diameter); treated as two republications of one municipal source. No planting date or age documented; described as mature rather than assigned a specific figure. No usable photo found for this specific specimen.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mlg_009",
+      "name": "The Rare Cassia of Malaga Park",
+      "species": "Yellow Poinciana (Peltophorum dubium)",
+      "age_estimate": "undated, mature",
+      "age_min": 50,
+      "age_max": 100,
+      "location": {
+        "address": "Parque de Malaga, 29001 Malaga",
+        "latitude": 36.719,
+        "longitude": -4.4165,
+        "neighbourhood": "Centro Historico"
+      },
+      "story": "Parque de Malaga holds roughly 300 different tree species across its 3.3 hectares, a density built deliberately when the park was landscaped on reclaimed harbour ground at the turn of the 20th century, and Peltophorum dubium is one of its genuine rarities, a South American species uncommon enough in Spanish cultivation that the city's own 2022 tagging campaign singled it out specifically for being unusual rather than for size or age. In its native Argentina, Brazil, Paraguay and Uruguay, the species is known as cana fistula, valued for durable timber and for the sprays of small yellow flowers it produces along the humid riverbanks it prefers. Malaga's specimen has adapted to considerably drier conditions than its home range, growing to 13 metres with a trunk half a metre across, modest dimensions next to some of the park's giant ficus and araucarias but enough to have earned its own identifying plaque under the same European urban-tree scheme that tagged the Barrilito and the Cortina del Muelle ceiba. It stands as one small proof of the park's original ambition: not simply a green space, but a working plant collection assembled from five continents and still, more than a century later, capable of surprising a visitor who thinks they know what a Spanish city park should look like.",
+      "verified_sources": [
+        "https://www.malagactualidad.es/teletipos/61898-diez-arboles-singulares-de-malaga-forman-parte-de-la-campana-europea-de-divulgacion-tretags",
+        "https://limpiezademalaga.es/beneficios-arboles-malaga/"
+      ],
+      "access": "Free, public park",
+      "transport": "5 min walk from Plaza de la Marina",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Both sources report the same official TreeTags figures (13m height, 0.5m diameter); treated as two republications of one municipal source rather than fully independent corroboration. No planting date or age documented. No usable photo found for this specific specimen.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "mlg_010",
+      "name": "The Avocado of Ciudad de Jaen School",
+      "species": "Avocado (Persea americana)",
+      "age_estimate": "150+ years",
+      "age_min": 150,
+      "age_max": 175,
+      "location": {
+        "address": "CEIP Ciudad de Jaen, Calle Torremolinos 65, 29140 Malaga",
+        "latitude": 36.6637,
+        "longitude": -4.504,
+        "neighbourhood": "Churriana"
+      },
+      "story": "Malaga and neighbouring Granada now grow nine of every ten avocados sold in Spain, an industry whose roots trace back to Churriana, a district in the city's southwest better known today for hosting the airport than for starting a national crop. Early avocado trees reached this coastline in the mid-19th century, brought back by travellers with ties to Cuba and the Americas and planted first as curiosities on private estates rather than as a business. This tree, growing in the courtyard of a working primary school, is one of the survivors from that early period, tagged by the city in 2022 as one of ten singular trees and described in that designation as among the first avocado specimens brought to Malaga, more than 150 years old and still standing roughly 11 metres tall inside a low protective wall. The school's parents' association has taken its name directly from the tree, calling itself AMPA Aguacate, and generations of Churriana schoolchildren have grown up eating lunch in its shade decades before avocado became the crop that now defines the region's agriculture. It is not freely open to the public: visiting means contacting the school directly and arranging a time, an honest limitation for a tree that otherwise has one of the best stories on this list.",
+      "verified_sources": [
+        "https://www.malagactualidad.es/teletipos/61898-diez-arboles-singulares-de-malaga-forman-parte-de-la-campana-europea-de-divulgacion-tretags",
+        "https://limpiezademalaga.es/beneficios-arboles-malaga/"
+      ],
+      "access": "Restricted: working school grounds, visits by prior appointment only",
+      "transport": "Bus to Churriana, Calle Torremolinos",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The '150+ years, among the first avocado imports' claim comes from the city's own TreeTags description, repeated identically by two press outlets covering the same municipal campaign, so treated as effectively one primary source rather than fully independent corroboration; presented with that caveat. The general history of 1850s-60s avocado introduction to Churriana via a separate, unconnected estate (San Javier) was found during research but not stated as this specific tree's origin, since no source directly links the two. Access honestly marked as appointment-only rather than implying free public entry, per the mandate's honesty rules. No usable photo found; the tree's only visibility online is through the school's own social media, not an open licence.",
+      "location_precision": "approximate"
+    }
+  ]
+}

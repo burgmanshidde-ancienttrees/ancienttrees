@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-25 — Photo-floor rung checked and closed out for now; Malaga: 29th city live, 10 trees researched
+
+- Rung 4 (photos below 80%) checked first, focus region (UK, Netherlands) first per the 2026-07-22 decision. Re-hunted Edinburgh's 6 missing photos across Commons, Geograph, iNaturalist and Flickr; found nothing new, an exact third repeat of the 2026-07-23 hunt and 2026-07-24 recheck. That confirms rather than changes anything: every one of the lead-group and marquee-European cities already had at least one genuine dedicated photo hunt earlier this week. Re-running the same searches again would be the "looping forever" the mandate explicitly warns against, so treating the rung as exhausted for the existing 28 cities given currently findable sources, and moving to rung 5. Full detail and the two rejected near-misses in CURATION.md.
+- Rung 5: the next `pending` city, Malaga. Researched via the city's own 2022 TreeTags scheme (ten municipally tagged trees, part of a European urban-tree awareness campaign) and the Jardin Botanico-Historico La Concepcion's own historic-plants records. 10 trees written and shipped. Throughline: almost everything on the list is an import, fig, ceiba, araucaria, avocado, arrived through 19th/20th century fashion and trade; the one native holm oak stands out precisely for being the exception.
+- One access case handled honestly rather than dropped or force-fit: the Churriana avocado tree stands on working school grounds, visited by appointment rather than freely, and the access field says so plainly.
+- 3 of 10 photos found on Wikimedia Commons, all fetched and viewed directly before approval (the Concepcion's olive, the Alameda's ficus avenue, El Barrilito's bottle trunk). 6 missing after a genuine search across Commons and iNaturalist. Full detail, sourcing caveats and the superlative claims kept with their hedges intact, in CURATION.md.
+- Site rebuilt (two meta descriptions trimmed to fit the 155-character limit), all contracts validated, pushed.
+
 ## 2026-07-25 — Nice: 26th city live, 10 trees researched
 
 - No reader submissions (CSV checked fresh: header row only). Site healthy, nothing published was wrong. Went to the next rung: the next `pending` city, Nice.
