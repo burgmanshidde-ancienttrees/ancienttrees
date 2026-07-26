@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Amsterdam pin resolved via OSM, two found_needs_check photos visually confirmed
+
+- **Capability note worth recording:** a prior run flagged that its tools couldn't open image files to visually check photos, leaving several stuck at `found_needs_check`. This run's tools could: fetching an image URL and then reading the saved file back displays it directly. Used this to clear two backlogged photos rather than leaving them unchecked.
+- **The Heimanseik** (Amsterdam): same OpenStreetMap named-tree-node technique as the Tokyo/London pass above. A node named "Heimanseik", tagged natural=tree, species Quercus robur, start_date 1775, sits about 300m from the previous general Artis-park pin, on Plantage Middenlaan at the park's edge. The name is distinctive enough that a false match is unlikely. Upgraded to confirmed.
+- **The Lomanstraat Cathedral of Trees** (Amsterdam): its Commons photo, previously `found_needs_check` because the file description didn't confirm the tree-tunnel effect, was viewed directly. It shows exactly the described canopy: a narrow Plan-Zuid street with plane trees interlocking overhead. Approved.
+- **The Paineira of Jardim Alfredo Keil** (Lisbon): its iNaturalist photo, also `found_needs_check` pending a visual check that a prior pass couldn't do, was viewed directly. Shows a mature trunk in bloom with the pink, white-throated flowers characteristic of Ceiba speciosa, against an urban backdrop consistent with the garden. Approved despite the observer's casual-grade species ID, since the photo itself now corroborates it.
+- Amsterdam now at 6 of 10 photos (from 5) and 3 of 10 approximate pins (from 4): the Hortus cycad (a potted indoor specimen, genuinely unmappable in outdoor tree data), the Amstelkade Olive Willow (tried OSM again this pass, a 315-tree radius search near the pin turned up nothing named or species-matched, and amsterdam.nl's own profile page returned 403 both live and via one archive attempt), and the Wingnuts of Amstelveld (46 trees, an honest permanent ensemble estimate like Kew's Old Lions). Not yet at Amsterdam's required zero, still the furthest of the eight lead cities from passing.
+- Lisbon now at 4 of 10 photos (unchanged in count, one upgraded from found_needs_check to approved) and 2 of 10 approximate pins, already meeting the exit test's precision bar; still short on photos.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Tokyo and London pass the depth exit test: OpenStreetMap named-tree nodes resolved 4 pins
 
 - New technique this pass, not tried in earlier depth work: OpenStreetMap carries contributor-mapped nodes for individually named notable trees in Japan, tagged with the tree's own name and species, separate from the generic municipal tree layer. Queried via Overpass API and Nominatim.

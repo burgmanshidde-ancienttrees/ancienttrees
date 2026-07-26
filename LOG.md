@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Amsterdam: one more pin, two backlogged photos cleared
+
+- Continuing straight on from the Tokyo/London pass below in the same session. Applied the same OpenStreetMap named-tree-node trick to Amsterdam: found a node named "Heimanseik" (Quercus robur, start_date 1775) about 300m from the old general-park pin, upgraded to confirmed.
+- Also cleared two photos that were stuck at `found_needs_check` because an earlier run's tools couldn't open image files to check them visually: this run's could (fetch the URL, then read the saved file back). Amsterdam's Lomanstraat canopy photo and Lisbon's Paineira bloom photo both checked out and are now approved. Worth knowing for future runs: the visual-check limitation a prior run flagged is not universal, worth trying before leaving something at found_needs_check.
+- Amsterdam: 6/10 photos (from 5), 3/10 approximate (from 4). Still the furthest of the eight lead cities from clearing rung 6's exit test, which needs it at zero. The three left (a potted indoor cycad, a street tree whose only real source page 403s, and a 46-tree square that honestly is an ensemble) are genuinely hard rather than unattempted; detail in CURATION.md.
+- Lisbon: 2/10 approximate (already at the bar), 4/10 photos (one upgraded, count otherwise unchanged).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Tokyo and London now pass the depth exit test
 
 - visitors.py: no Cloudflare account tag configured, skipped silently as instructed. No reader submissions either (checked the live CSV, still just the header row).
