@@ -2,6 +2,13 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Seville depth check: no new ground this pass
+
+- Next in rung 5's marquee-Europe order after Berlin, Vienna, Kyoto, Florence. Seville sits at 5 of 10 photos and 9 of 10 approximate pins (only the Cypress of the Glorieta de Bécquer confirmed).
+- OSM's named-tree-node technique, which worked well elsewhere today, came up short here: a query near the Bécquer cypress found only the tree already confirmed (a useful cross-check, its OSM position matches the stored pin within a few metres), and a query near El Gran Capitan found five unnamed, unspecied tree nodes.
+- Photo hunt for the 5 missing (Figs of Plaza del Cristo de Burgos, El Gran Capitan, Centennial Hackberries, Fig of the Glorieta de Goya, Camphor of the Glorieta de Dona Sol) came up empty: iNaturalist observations exist for three of the five species in Seville, but every one is CC-BY-NC or unlicensed. Commons search for the Cristo de Burgos figs, a well-documented set of four planted in 1925, found nothing.
+- No data changed. Recording here so a future run does not repeat the same searches.
+
 ## 2026-07-26 — Florence: 1 photo found; then the whole site's found_needs_check backlog cleared
 
 - **Florence**: hunted its 8 missing photos. iNaturalist turned up one strong match, the Cork Oak of the Giardino dei Semplici (observation 298430984, CC BY, 14m from the pin, tagged captive/cultivated, San Marco neighbourhood). Viewed directly (see capability note below): shows a massive trunk with deep, spongy, fissured bark, exactly the texture the story describes. Approved. The other 7 (yew, farnia, leccio, honey locust, two cedars, stone pine) came up empty across Commons and iNaturalist after a genuine search, all CC-BY-NC or unlicensed where anything existed at all. Florence stays at 3 of 10 photos.

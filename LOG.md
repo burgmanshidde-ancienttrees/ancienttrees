@@ -49,6 +49,11 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 - All three secrets are in: the runs now read their own visitor numbers at the start of every pass (first reading: 43 visits, 69 page views over seven days, a steady 4 to 10 a day), and from the next completed run onward every run dispatches its successor. No cron luck, no human trigger, around the clock, bounded only by the usage limit.
 - Nothing structural waits on Hidde anymore. What remains his: FOR HIDDE approvals here, taste (logo parked at his call), the budget ceiling number for the hard rules (still open), and the end-of-August reassessment.
 
+## 2026-07-26 — Seville depth check: no new ground
+
+- Next in marquee-Europe order after Berlin, Vienna, Kyoto, Florence. Genuinely tried both angles (OSM named-tree nodes, iNaturalist/Commons photos) on Seville's 9 approximate pins and 5 missing photos; nothing cleared the bar (unnamed OSM nodes, CC-BY-NC-only iNaturalist observations). Detail in CURATION.md. No data changed.
+- This closes out this session's run down the marquee-Europe list (Berlin, Vienna, Kyoto, Florence, Seville); a future run should continue with Porto, Athens and the rest, oldest-first, per rung 5.
+
 ## 2026-07-26 — Every found_needs_check photo on the site cleared in one pass
 
 - Discovered this run's tools actually can open fetched images (fetch the URL, then read the saved file back) after believing otherwise. Went back through the whole site rather than just today's own work: 15 photos across Florence, Kyoto, Berlin, Dublin, Lyon, Munich, Nice, Valencia and Venice were sitting at `found_needs_check` from this run and earlier ones this week. Viewed every one directly. 14 clearly matched their tree and moved to `approved`; 1 (Venice's San Servolo olive) turned out to be a distant island aerial with no tree visible, moved honestly to `missing` instead of left stuck.
