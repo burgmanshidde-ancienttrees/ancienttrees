@@ -57,6 +57,11 @@ SUBMISSIONS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRND_8GK5
 # Only Hidde can create this: it is his money and his account (hard list 2).
 SUPPORT_URL = ""
 
+# The account track (Hidde, 2026-07-26): the login ships as an unlinked,
+# noindexed prototype until his Supabase project and privacy page exist.
+# Flipping this to True is his call, made in a session, never by a run.
+AUTH_ENABLED = False
+
 MAPLIBRE_JS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"
 MAPLIBRE_CSS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
 # OpenFreeMap: free vector tiles, no API key, commercial use permitted
@@ -264,6 +269,13 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .sr-link { margin: 12px 0 0; font-size: 0.85rem; }
 .sr-link a { color: var(--moss); font-weight: 600; text-decoration: none; }
 .sr-link a:hover { text-decoration: underline; }
+.account-page { max-width: 480px; }
+.proto-note { background: #FDF6E3; border: 1px solid #EADFA9; border-radius: 8px; padding: 8px 12px; font-size: 12.5px; color: #7A6A2F; margin-bottom: 1.4rem; }
+.acct-card h1 { margin-bottom: 0.5rem; }
+.acct-sub { color: var(--ink-mid); margin-bottom: 1.1rem; }
+.acct-fine { font-size: 12px; color: var(--ink-light); margin-top: 0.7rem; }
+.acct-actions { display: flex; gap: 0.75rem; align-items: center; margin-top: 0.5rem; }
+.acct-link { background: none; border: none; padding: 0; font-family: var(--sans); font-size: 13.5px; color: var(--moss); text-decoration: underline; cursor: pointer; }
 .sr-months span.half { background: #A9BC8A; }
 .sp-name { position: absolute; top: -9px; left: 50%; transform: translateX(-50%); background: var(--ink);
   color: #fff; font-size: 8.5px; font-weight: 600; padding: 1.5px 7px; border-radius: 999px; white-space: nowrap; }
@@ -2428,6 +2440,106 @@ def build_in_season_page(renderable, tree_slugs, pages):
     pages.append(("in-season.html", page, canonical))
 
 
+def build_account_page():
+    """The sign-in flow, built to the common magic-link pattern before any
+    backend exists: email in, check-your-inbox with masked address and a
+    resend cooldown, an expired-link recovery, and the signed-in shell that
+    shows the visitor's real on-device collection. Written straight to DIST,
+    kept out of the sitemap and noindexed while AUTH_ENABLED is False."""
+    body = """
+<main class="content-page account-page">
+  <div class="proto-note">Prototype. Accounts are not live yet: nothing you type here is sent or stored.</div>
+
+  <section id="st-signin" class="acct-card">
+    <p class="hero-kicker">Your tree collection</p>
+    <h1>Sign in to keep it <em>everywhere</em>.</h1>
+    <p class="acct-sub">One email, no password. We send you a sign-in link; your collected trees follow you to any device.</p>
+    <form id="acct-form" class="hero-search" autocomplete="email">
+      <input type="email" id="acct-email" placeholder="you@example.com" aria-label="Email address" required>
+      <button type="submit" class="go-btn">Email me a sign-in link</button>
+    </form>
+    <p class="acct-fine">We use your address for sign-in links and nothing else.</p>
+  </section>
+
+  <section id="st-sent" class="acct-card" hidden>
+    <h1>Check your <em>inbox</em>.</h1>
+    <p class="acct-sub">We sent a sign-in link to <strong id="sent-to"></strong>. It works once and expires in 15 minutes.</p>
+    <p class="acct-actions">
+      <button type="button" id="resend" class="go-btn ghost" disabled>Resend (<span id="cool">30</span>)</button>
+      <button type="button" id="change" class="acct-link">Use a different address</button>
+    </p>
+  </section>
+
+  <section id="st-expired" class="acct-card" hidden>
+    <h1>That link has <em>expired</em>.</h1>
+    <p class="acct-sub">Links work once and briefly, to keep your account safe. One tap gets you a fresh one.</p>
+    <p class="acct-actions"><button type="button" id="re-expired" class="go-btn">Send a new link</button></p>
+  </section>
+
+  <section id="st-in" class="acct-card" hidden>
+    <p class="hero-kicker">Signed in (prototype)</p>
+    <h1>Your <em>trees</em>.</h1>
+    <div class="stat-row">
+      <div class="stat"><b id="n-trees">0</b><span>trees</span></div>
+      <div class="stat alt"><b id="n-cities">0</b><span>cities</span></div>
+    </div>
+    <p class="acct-sub" id="in-note">Collected on this device. When accounts go live, this follows you everywhere.</p>
+    <p class="acct-actions"><button type="button" id="signout" class="acct-link">Sign out</button></p>
+  </section>
+</main>
+<script>
+(function() {
+  var states = ["st-signin", "st-sent", "st-expired", "st-in"];
+  function show(id) {
+    states.forEach(function(x) { document.getElementById(x).hidden = (x !== id); });
+  }
+  function mask(e) {
+    var at = e.indexOf("@");
+    if (at < 2) return e;
+    return e[0] + "\u2022\u2022\u2022" + e.slice(at - 1);
+  }
+  var cooldown = null;
+  function startCooldown() {
+    var btn = document.getElementById("resend"), n = 30;
+    btn.disabled = true;
+    clearInterval(cooldown);
+    cooldown = setInterval(function() {
+      n--; document.getElementById("cool").textContent = n;
+      if (n <= 0) { clearInterval(cooldown); btn.disabled = false; btn.textContent = "Resend link"; }
+    }, 1000);
+  }
+  document.getElementById("acct-form").addEventListener("submit", function(ev) {
+    ev.preventDefault();
+    var e = document.getElementById("acct-email").value.trim();
+    if (!e) return;
+    document.getElementById("sent-to").textContent = mask(e);
+    show("st-sent"); startCooldown();
+  });
+  document.getElementById("change").addEventListener("click", function() { show("st-signin"); });
+  document.getElementById("resend").addEventListener("click", startCooldown);
+  document.getElementById("re-expired").addEventListener("click", function() { show("st-sent"); startCooldown(); });
+  document.getElementById("signout").addEventListener("click", function() { show("st-signin"); });
+  if (location.hash === "#expired") show("st-expired");
+  if (location.hash === "#in") {
+    try {
+      var seen = JSON.parse(localStorage.getItem("ancienttrees_seen")) || [];
+      document.getElementById("n-trees").textContent = seen.length;
+      var cities = {};
+      seen.forEach(function(id) { cities[id.slice(0, 3)] = 1; });
+      document.getElementById("n-cities").textContent = Object.keys(cities).length;
+    } catch (e) {}
+    show("st-in");
+  }
+})();
+</script>
+"""
+    page = render_page("Sign in to Ancient Trees", "Keep your tree collection on every device.",
+                       f"{BASE_URL}/account", body,
+                       head_extra='<meta name="robots" content="noindex, nofollow">',
+                       rootpath="./")
+    (DIST / "account.html").write_text(page)
+
+
 def build_sitemap(pages):
     today = date.today().isoformat()
     urls = [canonical for _, _, canonical in pages if canonical]
@@ -2515,6 +2627,9 @@ def main():
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(content)
     build_sitemap(pages)
+    # After the wipe and the sitemap on purpose: the account prototype exists
+    # on disk but not in the sitemap, unlinked and noindexed (AUTH_ENABLED).
+    build_account_page()
 
     n_trees = sum(p["count"] for p in published)
     print(f"Built {len(pages)} page(s) into {DIST}: "

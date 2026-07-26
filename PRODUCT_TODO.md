@@ -9,8 +9,8 @@ The queue a run may draw from when every content rung in CLAUDE.md Step 0 is sat
 
 ## Queue, in order
 
-### 1. SUPERSEDED, do not build: the shareable my-trees page
-Hidde is moving check-in and collecting toward the app (web becomes discovery plus the sales floor). Until that decision is recorded in CLAUDE.md, build nothing passport-related and remove nothing either. Skip to item 2.
+### 1. The account track, opened by Hidde 2026-07-26 (supersedes the earlier supersession)
+Collect returns to the web as the app's rehearsal: login UX (magic link, Slack-style states) is being built in-session behind an AUTH_ENABLED flag, unlinked and noindexed until Hidde's Supabase project and privacy page exist. Runs: do not wire any backend, do not link the page, do not touch the flag. The game design (points, badges, sets) is being settled with Hidde in conversation.
 
 ### 2. DONE 2026-07-26, built in session: the season radar page
 A page at `/in-season` (linked from the Season act on the homepage once it exists): every tree whose `best_time.months` contains the current build month, grouped by city, each with its label phrase and a link. Static is fine: the site rebuilds many times a day, so "this month" stays true. Month with nothing in season shows the nearest upcoming moments instead of an empty page (empty states teach, PRINCIPLES.md).
