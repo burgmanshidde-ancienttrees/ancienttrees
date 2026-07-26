@@ -44,6 +44,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Istanbul and Rome depth checks: no new ground, both genuinely tried
+
+- Continuing rung 5's order (Amsterdam, Lisbon, Istanbul, Rome) after the Lisbon pass above. Istanbul: this is the third genuine hunting pass on its photo gaps without a new find (after 2026-07-22 and 2026-07-23), and its own registry (anitagac.istanbul) embeds per-tree maps as JavaScript with no coordinates reachable from the page source, so pin precision couldn't be improved either. Rome: Italy's national tree registry has no search and 881 unpaginated Roma entries with no way to filter by villa, so a targeted lookup for the cedar at Villa Doria Pamphilj, the two trees at Villa Celimontana or Adonis wasn't reachable; Commons categories for both villas were checked directly and nothing confirms the specific named trees.
+- No data changed in either city. Recorded in CURATION.md so a future run does not repeat the same searches without knowing they were tried, per the mandate's own warning against looping.
+- This closes out rung 5's named order (Amsterdam, Lisbon, Istanbul, Rome) for this session; a future run should continue with the rest of the lead group and marquee Europe, oldest-first, as the rung directs.
+
 ## 2026-07-26 — Lisbon photo pass: 3/10 to 4/10
 
 - Next in rung 5's order after Amsterdam. Genuine hunt across Commons, iNaturalist, Flickr and Openverse for all 7 missing photos; found 1, a CC0 iNaturalist photo of the Paineira in bloom. Full detail, including two rejected near-misses, in CURATION.md.
