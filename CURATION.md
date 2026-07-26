@@ -2,6 +2,17 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Istanbul: no data changed, but three registry leads resolved (one alive, two dead) and a licensing trap avoided
+
+- Continued rung 5 after Lisbon: Istanbul, still the furthest-behind of the eight priority cities (2/10 photos, 8/10 approximate), and the one with the least prior success. Followed up specifically on the two untried leads a previous pass flagged.
+- **konusanagac.com is confirmed dead**, not a temporary failure: DNS resolution returns NXDOMAIN, the domain is not registered. Google's stale index still surfaces one tantalizing snippet (a named Beykoz plane, "Doğu Çınarı-Beykoz-0690", 217cm diameter, since 1603) but the page itself cannot be reached by any method tried. Stop retrying this domain.
+- **avrupaanitagaclar.com has been hijacked**: it now 301-redirects to an unrelated gambling site. Do not use or cite this domain again.
+- **anadoluanitagaclar.com is real and structured** (URL pattern `/agac/{id}/{district}-anit-agac/{species}.html`, covers Üsküdar, Beykoz, Adalar, all relevant to our open gaps there) but returns HTTP 403 to every direct fetch tried this pass, both by this session's tools and a follow-up check. Worth a retry with different fetch tooling; genuinely untried rather than exhausted.
+- **A licensing trap avoided**: anitagac.istanbul's individual tree detail pages (e.g. the Taşlı Çınar's own page) do have real embedded photos in static HTML, at direct URLs like `anitagac.istanbul/images/tree/image/629-2781.JPG`, contradicting an earlier assumption that the whole site is JS-only. But the site states no reuse license anywhere, so per the hard rule these default to all-rights-reserved and are not usable, however easy the hotlink looks. Flagging clearly so a future pass does not mistake "fetchable" for "licensed."
+- **The Ahtapot Çınar** has public Wikiloc hiking-track pages that explicitly name and route past it (e.g. `wikiloc.com/hiking-trails/bahcekoy-ahtapot-cinar-bilezikci-ciftligi-63613632`), a genuinely untried lead for tightening its pin, but this session's text-based fetch tools could not extract the interactive map's waypoint coordinates; needs a pass with map-reading capability.
+- No photo or pin changed on any of the 8 open gaps (ist_001, 002, 004, 006, 007, 008, 009, 010): iNaturalist, Wikimedia Commons, and Openverse were retried for each and either returned nothing or returned photos with the wrong licence, wrong distance, or no identifying feature tying them to the specific named tree, all rejected on that basis. Full per-tree detail in this run's LOG.md entry.
+- Site unchanged this pass (no data edits, so no rebuild needed).
+
 ## 2026-07-26 — Lisbon clears the pin half of the exit-test bar: both approximate pins resolved via Portugal's national tree registry
 
 - Continued rung 5 after Amsterdam. Lisbon was at 5/10 photos (floor is 8+) and 2/10 approximate; this pass found a new source, ICNF's national registry of classified public-interest trees (`sigservices.icnf.pt/server/rest/services/BDG/AIP/MapServer/0`), and used it on both remaining approximate pins.

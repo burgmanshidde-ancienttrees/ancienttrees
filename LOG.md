@@ -30,6 +30,12 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-26 — Istanbul: no data changed, but two dead domains and one licensing trap identified
+
+- Followed up rung 5's two untried leads on Istanbul, still furthest-behind of the eight priority cities (2/10 photos, 8/10 approximate). konusanagac.com is confirmed genuinely dead (NXDOMAIN, not a transient issue) and avrupaanitagaclar.com has been hijacked to a gambling redirect; both should stop being retried. anadoluanitagaclar.com is real and structured but 403-blocked to every fetch tried, worth another attempt with different tooling. Also caught a near-miss before it became a mistake: anitagac.istanbul's tree pages do have real photos in static HTML (not JS-only, as previously assumed) but the site states no reuse licence anywhere, so none of them are usable despite being easy to hotlink.
+- No photo or pin changed on any of the 8 open gaps; all retried and rejected on licence, distance, or lack of an identifying feature. Full detail in CURATION.md.
+- Moving to Rome next per rung 5's order.
+
 ## 2026-07-26 — Lisbon: both approximate pins resolved, clearing half the exit-test bar
 
 - Found a new source, Portugal's national registry of classified public-interest trees (ICNF), and used it to resolve both of Lisbon's remaining approximate pins. The Avenida de Berlim nettle tree moved by about 900m to the registry's own point, and its age corrected from a tourism-site "100 years" to the registry's measured 75 years in 2015 (~86 today), a real conflict resolved in favour of the direct government survey. The Jardim Alfredo Keil paineira's existing pin was confirmed against the registry's own ensemble point, 2m away.
