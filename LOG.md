@@ -44,6 +44,13 @@ Everything else that used to sit here is done or recorded: the submission form i
 - Paris now at 8/10 photos and 0/10 approximate, meeting the depth-exit-test bar from CLAUDE.md rung 6 for this city. Six of the eight priority cities now need work: Amsterdam (6/10 photos), Lisbon (5/10), Istanbul (2/10, 8 approximate), Rome (5/10). Tokyo and London already met the bar earlier.
 - Site rebuilt, all contracts validated, pushed.
 
+## 2026-07-26 — Barcelona's La Rambla entry replaced with a genuinely singular tree
+
+- CLAUDE.md itself flags that Barcelona's "Plane Trees of La Rambla" entry fails the project's own collectible-point rule, an avenue of 250 ordinary street trees rather than one tree or a compact ensemble, with an explicit instruction to replace it next time a run touched Barcelona. That was this pass.
+- New entry, same slot and id (bcn_008) so no URL changes: **The Silk Tree of the Ciutadella**, an Albizia julibrissin in Parc de la Ciutadella, individually catalogued since 1996, planted around 1896. The species usually lives 30-50 years; this one is roughly 130, hollowed at the trunk by decades of infection the city's own register states plainly, and still flowers every July regardless. Verified against the municipal catalogue and an independent news source before writing.
+- No photo found for the new entry yet, and Barcelona's other 4 photo gaps also stayed open this pass, genuine dead ends after a real try. Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Lisbon: one photo found, five stayed genuine dead ends
 
 - Continued rung 5 after Amsterdam. Lisbon needed photos (4/10, floor is 8+) more than pins (already 2/10 approximate). Found and verified a CC BY-SA 4.0 photo for the Santo Amaro olive trees, matched by its own description and a heritage reference number to the exact four trees the story describes.

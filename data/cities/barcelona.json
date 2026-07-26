@@ -246,34 +246,38 @@
     },
     {
       "id": "bcn_008",
-      "name": "The Plane Trees of La Rambla",
-      "species": "London Plane (Platanus x hispanica)",
-      "age_estimate": "130-155 years",
-      "age_min": 130,
-      "age_max": 155,
+      "name": "The Silk Tree of the Ciutadella",
+      "species": "Silk Tree (Albizia julibrissin)",
+      "age_estimate": "130 years",
+      "age_min": 125,
+      "age_max": 135,
       "location": {
-        "address": "La Rambla, 08001 Barcelona",
-        "latitude": 41.380654,
-        "longitude": 2.173848,
+        "address": "Parc de la Ciutadella, 08003 Barcelona",
+        "latitude": 41.387157,
+        "longitude": 2.186546,
         "neighbourhood": "Ciutat Vella"
       },
-      "story": "Barcelona's most photographed street is really a 1.2 kilometre plane tree avenue with shops underneath it. Trees have grown on La Rambla since at least 1548, according to the city's own municipal archives, and the promenade has been replanted eleven times since, the surviving plane trees arriving in a systematic push starting in 1859 that brought Parisian-style boulevard planting to Barcelona, with early stock reportedly sourced from the Devesa park in Girona. Most of today's trees date to a wave planted between 1870 and 1894, which makes the oldest survivors well over a century old, though the exact figure varies tree to tree rather than holding to one planting date, and sixteen were replaced as recently as winter 2009. There are 256 plane trees along La Rambla today, spaced roughly eight metres apart the way 19th century planners specified for every new Barcelona street. Millions of people walk beneath them every year on their way to the Boqueria market or the port, most without registering that the canopy overhead predates the Sagrada Familia.",
+      "story": "A silk tree in a temperate climate is not built to last much past forty. Barcelona's specimen in Parc de la Ciutadella has been flowering every July since around 1896, well over a century past its species' usual expiry date. Albizia julibrissin earns its keep fast: fern-like leaves that fold shut like a hand closing at dusk, and pink, thread-like blooms shaped like a powder puff, built for a few decades of showing off before the tree gives out. This one never got that memo. Repeated infections have hollowed out its central trunk over the decades, a fact the city's own tree register states plainly rather than hides, and the crown above keeps flowering regardless every summer. It went into the ground around the years Barcelona's Natural Sciences Society ran its collections out of the museums nearby, when the park doubled as an open-air showcase for botanical curiosities brought back from around the world. About 1,100 of the same species now grow across Barcelona's streets and gardens, mostly planted as short-lived ornamentals expected to be swapped out within a generation. The Ciutadella specimen, catalogued as a Tree of Local Interest in 1996, has spent thirty years since making that paperwork look premature.",
       "verified_sources": [
-        "https://www.bcnsostenible.cat/es/web/punt/platanus-x-hispanica",
-        "https://www.arbolesconhistoria.com/2025/09/29/historia-platanos-rambla-barcelona/",
-        "https://josepgordiarbresipaisatge.cat/2020/08/17/els-arbres-de-les-rambles-de-barcelona/"
+        "https://bcnsostenible.cat/web/punt/albizia-julibrissin",
+        "https://beteve.cat/societat/lacacia-de-constantinoble-un-altre-arbre-exotic-que-floreix-quan-arriba-la-calor/",
+        "https://ca.wikipedia.org/wiki/Ac%C3%A0cia_de_Constantinoble"
       ],
-      "access": "Free, public street",
-      "transport": "Liceu (Metro L3), on La Rambla",
+      "access": "Free, public park",
+      "transport": "Arc de Triomf (Metro L1) or Ciutadella-Vila Olimpica (Metro L4), 5 min walk",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/La_Rambla_Barcelona_2004.JPG",
-        "license": "Public domain",
-        "attribution": "Djm1279, via Wikimedia Commons",
-        "status": "approved"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
-      "curation_status": "flagged",
-      "notes": "This entry represents the plane tree ensemble of La Rambla as a whole rather than one surveyed specimen; the municipal catalogue itself describes the entry as a collection, with height ranging 7-25m and trunk circumference 0.45-2.5m across individual trees. Coordinates and location_precision are marked approximate for that reason, honestly, rather than pinning one tree as if it stood for all 256. FAILS the collectible-point rule (2026-07-26): a kilometre of ~1000 ordinary planes is an avenue, not a tree; replace with a singular Barcelona tree.",
-      "location_precision": "approximate"
+      "curation_status": "ai_generated",
+      "notes": "Replaces the previous entry for this slot, 'The Plane Trees of La Rambla,' which CLAUDE.md's 2026-07-26 collectibility rule flagged for failing the collectible-point test (a kilometre of ~250 ordinary street trees is an avenue, not a tree). This entry is a single, individually catalogued specimen (Barcelona's Catalogue of Trees of Local Interest, number 0103-01-96), verified against two independent sources: the municipal catalogue itself (planting year, dimensions, hollowing) and an independent beteve.cat news article (flowering behaviour, species distribution). One minor discrepancy left unresolved: two renderings of the same municipal record give crown diameter as 10m in one and 13m in another; not material to the story, not picked either way. No open-licensed photo found this pass; the one Commons file for this species in Barcelona shows a different specimen at a different location (Parroquia Santa Teresa Nino Jesus), not used.",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [7],
+        "label": "July, when its pink silk-thread flowers open"
+      }
     },
     {
       "id": "bcn_009",
