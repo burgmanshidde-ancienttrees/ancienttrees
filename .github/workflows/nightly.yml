@@ -65,8 +65,12 @@ jobs:
 
             Depth is the current phase, opened 2026-07-26 on Search Console
             evidence: impressions double daily and city pages rank on page one, so
-            Phase 1 of GO_TO_MARKET.md is live. New cities are FROZEN at 33; do not
-            add one, whatever the pending list says. The work is making the pages
+            Phase 1 of GO_TO_MARKET.md is live. New cities are frozen until the depth
+            exit test in CLAUDE.md rung 6 passes (the eight search-served cities
+            at 8+ photos and 2 or fewer vague pins, Amsterdam at zero); a run that
+            finds the test passing reopens coverage itself: Netherlands wave first,
+            per rung 6's order, counts per the doctrine (ten is a cap never a
+            quota, four verified trees minimum for a page). The work is making the pages
             people land on deliver the promise: resolve approximate pins to exact
             coordinates via registers, open data and street-level sources, and hunt
             photos to the 80 percent floor. Order: Amsterdam to flawless first (the

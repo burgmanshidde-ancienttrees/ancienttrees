@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-20",
-  "note": "Priority reordered 2026-07-21 for the lead-group focus: UK, Netherlands, Ireland, Belgium first, then marquee European traveller cities, then the rest of Europe, then the world. See OPEN_DATA_SURVEY.md and GO_TO_MARKET.md. Runs pick the next pending city from the top, so this steers coverage at the countries whose data and verifiability are strongest without touching the blueprint's positioning.",
+  "note": "Wave order set 2026-07-26: depth exit test first (see CLAUDE.md rung 6), then Netherlands dense, then UK, then Ireland, counts per the follow-the-trees doctrine. World cities remain queued behind them.",
   "cities": [
     {
       "city": "Amsterdam",
@@ -232,6 +232,146 @@
       "tier": 2,
       "slug": "verona",
       "status": "needs_curation"
+    },
+    {
+      "city": "Utrecht",
+      "country": "Netherlands",
+      "tier": 2,
+      "slug": "utrecht",
+      "status": "pending"
+    },
+    {
+      "city": "Rotterdam",
+      "country": "Netherlands",
+      "tier": 2,
+      "slug": "rotterdam",
+      "status": "pending"
+    },
+    {
+      "city": "The Hague",
+      "country": "Netherlands",
+      "tier": 2,
+      "slug": "the-hague",
+      "status": "pending"
+    },
+    {
+      "city": "Haarlem",
+      "country": "Netherlands",
+      "tier": 2,
+      "slug": "haarlem",
+      "status": "pending"
+    },
+    {
+      "city": "Groningen",
+      "country": "Netherlands",
+      "tier": 2,
+      "slug": "groningen",
+      "status": "pending"
+    },
+    {
+      "city": "Leiden",
+      "country": "Netherlands",
+      "tier": 2,
+      "slug": "leiden",
+      "status": "pending"
+    },
+    {
+      "city": "Delft",
+      "country": "Netherlands",
+      "tier": 2,
+      "slug": "delft",
+      "status": "pending"
+    },
+    {
+      "city": "Maastricht",
+      "country": "Netherlands",
+      "tier": 2,
+      "slug": "maastricht",
+      "status": "pending"
+    },
+    {
+      "city": "Nijmegen",
+      "country": "Netherlands",
+      "tier": 2,
+      "slug": "nijmegen",
+      "status": "pending"
+    },
+    {
+      "city": "Breda",
+      "country": "Netherlands",
+      "tier": 2,
+      "slug": "breda",
+      "status": "pending"
+    },
+    {
+      "city": "Den Bosch",
+      "country": "Netherlands",
+      "tier": 2,
+      "slug": "den-bosch",
+      "status": "pending"
+    },
+    {
+      "city": "Arnhem",
+      "country": "Netherlands",
+      "tier": 2,
+      "slug": "arnhem",
+      "status": "pending"
+    },
+    {
+      "city": "York",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "york",
+      "status": "pending"
+    },
+    {
+      "city": "Bath",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "bath",
+      "status": "pending"
+    },
+    {
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "oxford",
+      "status": "pending"
+    },
+    {
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "cambridge",
+      "status": "pending"
+    },
+    {
+      "city": "Bristol",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "bristol",
+      "status": "pending"
+    },
+    {
+      "city": "Glasgow",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "glasgow",
+      "status": "pending"
+    },
+    {
+      "city": "Cork",
+      "country": "Ireland",
+      "tier": 2,
+      "slug": "cork",
+      "status": "pending"
+    },
+    {
+      "city": "Galway",
+      "country": "Ireland",
+      "tier": 2,
+      "slug": "galway",
+      "status": "pending"
     },
     {
       "city": "Palermo",

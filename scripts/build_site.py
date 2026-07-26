@@ -1441,7 +1441,7 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pag
   {approx_note}
   <h2>Trees nearby</h2>
   <ul class="link-list">{nearby_html}</ul>
-  <div class="cta">Curious what else is standing in {esc(city)}? See <a href="../{cslug}">all 10 remarkable ancient trees in {esc(city)}</a> or find out <a href="oldest-tree">what the oldest tree in {esc(city)} is</a>.{species_line}</div>
+  <div class="cta">Curious what else is standing in {esc(city)}? See <a href="../{cslug}">all {len(all_trees)} remarkable ancient trees in {esc(city)}</a> or find out <a href="oldest-tree">what the oldest tree in {esc(city)} is</a>.{species_line}</div>
   <div class="report"><strong>Is something here not right?</strong> Wrong spot, wrong age, or the tree is gone? <a href="{submit_link('correction')}">Tell us and we will check it</a>. Every page on this site is corrected by the people who actually walk past these trees.</div>
 </main>
 """
@@ -1527,7 +1527,7 @@ def build_question_page(city_entry, collections, pages):
   <p class="answer-first">{esc(answer)}</p>
   <div class="map-embed"><div id="map" class="map"></div></div>
   <div class="prose-block"><p>{esc(context)}</p></div>
-  <div class="cta">Read <a href="{oslug}">the full story of {esc(old['name'])}</a>, or see <a href="../{cslug}">all 10 remarkable ancient trees in {esc(city)}</a>.</div>
+  <div class="cta">Read <a href="{oslug}">the full story of {esc(old['name'])}</a>, or see <a href="../{cslug}">all {len(trees)} remarkable ancient trees in {esc(city)}</a>.</div>
   {coll_link}
 </main>
 """
@@ -1560,8 +1560,8 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
     rootpath = "./"
 
     title = fit_title([
-        f"Ancient Trees in {city}: 10 Remarkable Trees Worth Visiting",
-        f"Ancient Trees in {city}: 10 Trees Worth Visiting",
+        f"Ancient Trees in {city}: {len(trees)} Remarkable Trees Worth Visiting",
+        f"Ancient Trees in {city}: {len(trees)} Trees Worth Visiting",
         f"Ancient Trees in {city}",
     ], canonical)
     description = city_data.get("meta_description") or (
@@ -2142,8 +2142,8 @@ def build_homepage(published, upcoming, collections, pages):
   <div class="home-act">
     <div class="home-act-copy">
       <span class="home-act-verb">Walk</span>
-      <h2>A route past the ten worth seeing.</h2>
-      <p>Not a database of everything. The ten most remarkable, linked into one walk you can do in an afternoon, each with its story and the month it is at its most spectacular, so you know when to go.</p>
+      <h2>A route past the ones worth seeing.</h2>
+      <p>Not a database of everything. Only the most remarkable, linked into one walk you can do in an afternoon, each with its story and the month it is at its most spectacular, so you know when to go.</p>
     </div>
     <figure class="home-act-visual card">
       <div class="hav-photo">
