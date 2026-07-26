@@ -261,6 +261,9 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .sr-months { display: flex; gap: 4px; margin-top: 12px; }
 .sr-months span { flex: 1; height: 5px; border-radius: 3px; background: #EFEDE3; }
 .sr-months span.on { background: var(--moss); }
+.sr-link { margin: 12px 0 0; font-size: 0.85rem; }
+.sr-link a { color: var(--moss); font-weight: 600; text-decoration: none; }
+.sr-link a:hover { text-decoration: underline; }
 .sr-months span.half { background: #A9BC8A; }
 .sp-name { position: absolute; top: -9px; left: 50%; transform: translateX(-50%); background: var(--ink);
   color: #fff; font-size: 8.5px; font-weight: 600; padding: 1.5px 7px; border-radius: 999px; white-space: nowrap; }
@@ -2234,6 +2237,7 @@ def build_homepage(published, upcoming, collections, pages):
       <div class="sr-row"><span class="sp">{radar_icon_2}</span><span class="sr-body"><b>Meiji Jingu Gaien Avenue</b><i>the whole street gold</i></span><span class="hav-badge-inline">now</span></div>
       <div class="sr-row dim"><span class="sp dim">{radar_icon_3}</span><span class="sr-body"><b>Kameido Tenjin Wisteria</b><i>hanging in flower</i></span><span class="sr-when">May</span></div>
       <div class="sr-months">{radar_months}</div>
+      <p class="sr-link"><a href="in-season">See what is at its best this month &rarr;</a></p>
     </div>
   </div>
   <div class="home-act">
@@ -2339,6 +2343,91 @@ def validate_internal_links(pages):
                 ERRORS.append(f"{page_url}: broken internal link {href!r} resolves to {target}")
 
 
+MONTH_FULL = ["January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December"]
+
+
+def build_in_season_page(renderable, tree_slugs, pages):
+    """The bloom page: what is at its best right now, as a plain list.
+
+    Approved by Hidde 2026-07-26 ("een in bloom pagina, en een lijst prima").
+    Static is honest here: the site rebuilds many times a day, so the current
+    month stays current. A month with nothing in season leads with what is
+    coming instead of an empty page."""
+    now = date.today().month
+    cur_name = MONTH_FULL[now - 1]
+
+    def entries_for(month):
+        out = []
+        for entry in renderable:
+            city = entry["data"]["city"]
+            cslug = entry["slug"]
+            for t in entry["data"]["trees"]:
+                bt = t.get("best_time") or {}
+                if month in (bt.get("months") or []) and t["id"] in tree_slugs:
+                    out.append((city, cslug, t, bt.get("label", "")))
+        return out
+
+    current = entries_for(now)
+    upcoming = []
+    for ahead in (1, 2):
+        m = (now - 1 + ahead) % 12 + 1
+        ups = entries_for(m)
+        if ups:
+            upcoming.append((MONTH_FULL[m - 1], ups))
+
+    def rows(items):
+        by_city = {}
+        for city, cslug, t, label in items:
+            by_city.setdefault((city, cslug), []).append((t, label))
+        parts = []
+        for (city, cslug), ts in sorted(by_city.items()):
+            lis = "".join(
+                f'<li><a href="{cslug}/{tree_slugs[t["id"]]}">{esc(t["name"])}</a>, {esc(label)}</li>'
+                for t, label in ts)
+            parts.append(f'<h3><a href="{cslug}">{esc(city)}</a></h3><ul class="link-list">{lis}</ul>')
+        return "".join(parts)
+
+    n = len(current)
+    title = fit_title([f"Trees at Their Best in {cur_name}",
+                       f"In Season: Trees at Their Best in {cur_name}"],
+                      f"{BASE_URL}/in-season")
+    if current:
+        answer = (f"{n} of the mapped trees are at their best in {cur_name}: "
+                  "this is the list, city by city, with what you will actually see.")
+    else:
+        answer = (f"No mapped tree peaks in {cur_name}, honestly. "
+                  "Here is what is coming next, so you can plan the walk that is worth it.")
+    description = (f"Which remarkable old trees are worth visiting in {cur_name}? " + answer)[:DESC_MAX]
+
+    body_parts = ['<main class="content-page">',
+                  breadcrumb_html([("Home", BASE_URL), ("In season", None)], "./"),
+                  f'<h1>Trees at their best in <em>{esc(cur_name)}</em></h1>',
+                  f'<p class="answer-first">{esc(answer)}</p>']
+    if current:
+        body_parts.append(rows(current))
+    for mname, ups in upcoming:
+        body_parts.append(f'<h2>Coming in {esc(mname)}</h2>')
+        body_parts.append(rows(ups))
+    body_parts.append('<p class="suggest">Every peak here is species-real: blossom, catkins or autumn colour, never filler. Trees that look the same all year, the yews and the evergreens, are honestly absent.</p>')
+    body_parts.append('</main>')
+    body = "\n".join(body_parts)
+
+    canonical = f"{BASE_URL}/in-season"
+    link_count = n + sum(len(u) for _, u in upcoming) + len({c for c, _, _, _ in current})
+    check_links(canonical, link_count, min(8, max(link_count, 1)))
+    graph = site_graph() + [
+        {"@type": "ItemList", "name": f"Trees at their best in {cur_name}",
+         "itemListElement": [
+             {"@type": "ListItem", "position": i, "name": t["name"],
+              "url": f"{BASE_URL}/{cslug}/{tree_slugs[t['id']]}"}
+             for i, (city, cslug, t, label) in enumerate(current, 1)]},
+        breadcrumb_schema([("Home", BASE_URL), ("In season", None)], canonical),
+    ]
+    page = render_page(title, description, canonical, body, ld_script(graph), "", rootpath="./")
+    pages.append(("in-season.html", page, canonical))
+
+
 def build_sitemap(pages):
     today = date.today().isoformat()
     urls = [canonical for _, _, canonical in pages if canonical]
@@ -2404,6 +2493,7 @@ def main():
         build_species_index(species_cards, published, pages)
 
     build_contribute_page(published, pages)
+    build_in_season_page(renderable, tree_slugs, pages)
     build_homepage(published, upcoming, collections, pages)
     build_redirects(published, pages)
     validate_internal_links(pages)
