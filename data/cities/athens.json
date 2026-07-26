@@ -97,8 +97,8 @@
       "label": "Young regrowth",
       "location": {
         "address": "Akadimia Platonos Archaeological Park, Kratylou & Tripoleos, Athens 10442",
-        "latitude": 37.9933,
-        "longitude": 23.7117,
+        "latitude": 37.991368,
+        "longitude": 23.708381,
         "neighbourhood": "Akadimia Platonos, Kolonos"
       },
       "story": "A city bus ended nearly 2,400 years of continuous shade in 1976, when it struck and split the trunk of the olive tree beneath which Plato is said to have taught. The tree stood in the grove of Akademos, the suburb that gave Plato's school, and eventually the English word academy, its name, and tradition held that the sacred grove here had grown from cuttings of Athena's own tree on the Acropolis centuries before Plato ever arrived to teach beneath it. The collision didn't kill the root system, and what grows in the archaeological park today is a genuine regrowth from that same base rather than a replacement sapling brought in from a nursery, a distinction the site treats as worth preserving. It is a young tree by any measure, decades old rather than millennia, and it looks like one: slim and upright, nothing like the gnarled giants elsewhere on this list. What makes it worth the detour is what it stands on rather than what it currently looks like, the excavated foundations of the gymnasium and residence buildings where Plato, and later Aristotle as a student, actually walked. The park is free, open daily except Monday from 9am to 4pm, and considerably quieter than the Acropolis eight kilometres away.",
@@ -109,7 +109,7 @@
       "access": "Free, open daily except Monday, 9am-4pm",
       "transport": "Bus to Akadimia Platonos or Kolonos, or 20 min walk from Metaxourgeio metro station (Line 2)",
       "curation_status": "flagged",
-      "notes": "The 1976 bus accident and regrowth are corroborated across two independent sources. The deeper claim, that the grove descended from cuttings of the Acropolis's Athena olive, is stated in the story as tradition rather than verified fact.",
+      "notes": "The 1976 bus accident and regrowth are corroborated across two independent sources. The deeper claim, that the grove descended from cuttings of the Acropolis's Athena olive, is stated in the story as tradition rather than verified fact. Pin tightened by geocoding the archaeological site itself (Nominatim), about 360m from the previous estimate; stays approximate since this locates the park, not the tree's exact spot within it. Deliberately did not use a Greek Wikipedia article for a separately-named 'Plato's olive tree' that gives a different address (Sacred Way 89-91, Botanikos, several hundred metres away): that article describes a distinct local tradition/legend site, not the excavated archaeological park this story and its sources are about, and conflating the two would risk a wrong pin dressed up as more precise.",
       "location_precision": "approximate",
       "photo": {
         "url": null,
@@ -260,13 +260,13 @@
       "access": "Free, unrestricted, open at any hour",
       "transport": "Acropoli or Thissio metro station (Line 1 or 2), 10 min walk",
       "curation_status": "flagged",
-      "notes": "Corrected mid-research: initial leads described these as centuries-old gnarled olives, but two independent architecture-history sources date the olive woodland itself to Pikionis's 1954-1957 project, replacing a mostly bare, grazed hillside. Presented honestly as a deliberately young planting rather than an ancient grove, per 'never fabricate'.",
+      "notes": "Corrected mid-research: initial leads described these as centuries-old gnarled olives, but two independent architecture-history sources date the olive woodland itself to Pikionis's 1954-1957 project, replacing a mostly bare, grazed hillside. Presented honestly as a deliberately young planting rather than an ancient grove, per 'never fabricate'. Stays approximate: an honest ensemble spread across the whole hillside, the same reasoning as Kew's Old Lions.",
       "location_precision": "approximate",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/417637352/original.jpeg",
+        "license": "CC BY",
+        "attribution": "Joseph Hubbard, via iNaturalist",
+        "status": "approved"
       }
     },
     {

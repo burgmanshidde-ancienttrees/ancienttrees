@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Athens: a pin tightened, a photo found, a near-miss caught and deliberately not used
+
+- Continued marquee Europe after Porto: Athens, at 4/10 photos and 10/10 approximate. Geocoded the Plato's Academy archaeological park itself for a 360m pin tightening (stays approximate, it locates the park not the tree). Found and approved a photo for the Olive Woodland of Filopappou Hill via iNaturalist, viewed directly.
+- Worth a flag: found a second, differently-addressed "Plato's olive tree" claim in a Greek Wikipedia article, several hundred metres from our tree's actual sourced location. Read as a distinct legend site, not used, to avoid conflating two different trees under one name. Full detail in CURATION.md.
+- Athens now at 5 of 10 photos (from 4). The rest of today's attempts (Kefalari planes, Kaisariani, Zappeion, the Pisistratus olive) came up empty or were left alone on purpose; genuine tries, recorded so they aren't repeated blind.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Porto: 4 pins resolved, 2 photos found, one stale "under review" claim corrected
 
 - Moved to the next untouched marquee-Europe city after Seville: Porto, barely worked so far (2/10 photos, 10/10 approximate).
