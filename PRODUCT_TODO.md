@@ -20,9 +20,13 @@ A page at `/in-season` (linked from the Season act on the homepage once it exist
 Walk every template string in `scripts/build_site.py` against CLAUDE.md's value proposition and the rule that copy may only promise what the paywall will survive. Remove drifted or filler copy; tighten to the tone of voice.
 **Done when:** grep finds no "free forever", "always free", "no accounts" (as a promise), "never pay" anywhere in generated pages; spot-grep of banned tone words ("hidden gem", "must-see", "breathtaking", "nestled", em dashes) stays zero across `site/dist`.
 
-### 4. Two new collection drafts from existing data
-Per BACKLOG.md: recombine the 328 researched trees into two new collections (candidates: Europe's oldest oaks; ginkgos worth a November trip). Contract D applies: they ship as `needs_curation` drafts and are announced in LOG.md under FOR HIDDE for publish approval.
-**Done when:** two new JSON files in `data/collections/` validate and build; LOG.md carries the FOR HIDDE line; nothing links to them publicly until approved.
+### 4. The collections programme, promoted by Hidde 2026-07-26
+Collections are the highest-leverage SEO pages we have (broad queries, zero new research, they recombine the 328 verified trees) and each one is designed as a future badge set: finite, completable, 5 to 12 trees across cities. Search Console already shows us ranking accidentally for "ancient oaks" (position 26) and "old trees" with no page aimed at either.
+
+Draft up to two per pass from this slate, best query-fit first: Ancient oaks of Europe; Trees older than 1000 years; The ginkgos worth a November trip; Europe's most remarkable yews; Trees that outlived their city; The great planes of Europe; Wisteria and blossom worth a spring trip; The oldest tree in every country we map. Ground every entry in existing verified data only.
+
+Contract D holds: drafts ship as `needs_curation`, announced under FOR HIDDE in LOG.md, nothing linked publicly until Hidde approves. His approval is deliberately cheap: read the draft, say yes or no.
+**Done when (per pass):** up to two new collection JSONs validate and build unlinked; the FOR HIDDE line exists; every listed tree exists in the data with the claimed property (age, species) checkable by script.
 
 ### 5. Seasonality completion pass
 Every qualifying tree across all 33 cities gets an honest `best_time` (species with a real peak only; evergreens get none, per Step 3's rules).
