@@ -161,9 +161,9 @@
       "age_min": 280,
       "age_max": 320,
       "location": {
-        "address": "Palm House, Hortus Botanicus Amsterdam, Plantage Middenlaan 2A, 1018 DD Amsterdam",
-        "latitude": 52.366969,
-        "longitude": 4.908442,
+        "address": "Palmenkas (Palm House), Hortus Botanicus Amsterdam, Plantage Middenlaan 2A, 1018 DD Amsterdam",
+        "latitude": 52.3663,
+        "longitude": 4.9081,
         "neighbourhood": "Plantage, Amsterdam-Centrum"
       },
       "story": "This plant was already growing in South Africa when Amsterdam's Hortus Botanicus bought it in 1850, and the two have been growing together ever since. It is an Eastern Cape giant cycad, estimated today at around 300 years old, kept potted under glass in the garden's Palm House for the 175 years it has lived here. Cycads as a group have barely changed in 300 million years and survived two mass extinctions that wiped out most of the plant kingdom around them, which makes one specimen's three centuries look almost brief by comparison. A younger female cycad, roughly 200 years old, grows opposite it, and Hortus staff hand-pollinate the two every year because the specific wasps and beetles that pollinate cycads in the wild do not live in an Amsterdam greenhouse. A few meters further into the same glasshouse stands a specimen of Encephalartos woodii, a cycad extinct in the wild since the early 1900s; every plant of that species alive anywhere today is a clone of a single specimen found in South Africa in 1895. The Hortus has been growing rare and difficult plants since 1638, and this cycad has now been part of that project for nearly half the garden's history.",
@@ -180,8 +180,8 @@
         "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Age estimate is sourced from the Hortus's own garden records and plant database; independent third-party confirmation was not found. Coordinates are a confirmed street geocode for the Hortus, not a pin on the specific plant within the Palm House. Photo candidate found 2026-07-26: a CC BY 2.0 Commons file (2015, category 'Hortus Botanicus Amsterdam') shows a cycad in what is very likely this garden's Palmenkas, but the Palm House holds more than one Encephalartos specimen (including a separately notable E. woodii clone), the file's own description does not name the plant, and this session's tools could not open the image to check for identifying features. Left at found_needs_check rather than approved until a future pass can view it directly or find a source naming the specific plant.",
-      "location_precision": "approximate"
+      "notes": "Age estimate is sourced from the Hortus's own garden records and plant database; independent third-party confirmation was not found. Coordinates corrected 2026-07-26 from a general Hortus street geocode to the Palmenkas (Palm House) building itself, located via OpenStreetMap building data (52.3663, 4.9081); this is the specific greenhouse the story places the cycad in, though the Palm House holds more than one Encephalartos specimen so the pin cannot distinguish which one inside the glasshouse. Photo candidate found 2026-07-26: a CC BY 2.0 Commons file (2015, category 'Hortus Botanicus Amsterdam') shows a cycad in what is very likely this garden's Palmenkas, but the file's own description does not name the plant, and this session's tools could not open the image to check for identifying features. Left at found_needs_check rather than approved until a future pass can view it directly or find a source naming the specific plant.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ams_006",
@@ -278,19 +278,20 @@
       "id": "ams_009",
       "name": "The Wingnuts of Amstelveld",
       "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
-      "age_estimate": "100+ years",
-      "age_min": 100,
-      "age_max": 150,
+      "age_estimate": "96 years",
+      "age_min": 90,
+      "age_max": 100,
       "location": {
-        "address": "Amstelveld, near Amstelkerk, 1017 Amsterdam",
-        "latitude": 52.3573,
-        "longitude": 4.8975,
-        "neighbourhood": "Amsterdam-Centrum, near the Amstel"
+        "address": "Amstelveld, southwest corner near Amstelkerk, 1017 JD Amsterdam",
+        "latitude": 52.362148,
+        "longitude": 4.89675,
+        "neighbourhood": "Amsterdam-Centrum, Grachtengordel"
       },
       "story": "In 2006 the city government tried to cut down 14 of these trees, and lost. The district council issued a felling permit that summer for over a dozen of the square's 46 Caucasian wingnuts, part of a resurfacing plan under an outdated tree ordinance. Two residents filed objections, then a court challenge, then finally an appeal to the Raad van State, the country's highest administrative court, after a district court sided with the city. No tree was felled while the case ran, and by 2010 the dispute ended with the square fully replanted around the surviving wingnuts rather than in place of them. To protect the three oldest, most valuable specimens from a resurfacing project's foot and cart traffic, engineers installed an underground support system to stop the soil from compacting around their roots, an unusually expensive concession for a handful of street trees. The wingnuts' surface roots still push up paving stones around the square often enough that it is a known feature of walking across Amstelveld, not a defect. The market that runs here on Mondays sets up its stalls under the same canopy the city once planned to remove.",
       "verified_sources": [
         "https://rudolfmisset.wordpress.com/2006/06/14/vleugelnootbomen-amstelveld-de-onzorgvuldigheid-van-hans-kaljee/",
-        "https://www.boomzorg.nl/upload/artikelen/bz513top10.pdf"
+        "https://www.boomzorg.nl/upload/artikelen/bz513top10.pdf",
+        "https://api.data.amsterdam.nl/v1/wfs/bomen/ (stamgegevens 1158361, 1158363, 1158364)"
       ],
       "access": "Free, public square",
       "transport": "Tram 4, Prinsengracht or Frederiksplein, few min walk",
@@ -300,9 +301,9 @@
         "attribution": "Fons Heijnsbroek (FotoDutch), via Wikimedia Commons",
         "status": "approved"
       },
-      "curation_status": "flagged",
-      "notes": "Exact planting date and precise age were not found; 'monumental' designation implies 100+ years, so a wide range is used pending confirmation. Coordinates are square-level, not tree-specific: could not find a source identifying which of the square's 46 wingnuts are the 'three oldest' specimens with underground root protection (2026-07-26 attempt: the boomzorg.nl source PDF could not be text-extracted, and the municipal bomen WFS only returned 4 nearby Pterocarya records, all planted 1980, none flagged monumentaal, which does not corroborate the century-old framing but is inconclusive given a possible bounding-box miss). Photo swapped 2026-07-26 from a 1973 Nationaal Archief image to a January 2022 CC0 photo of the same square (Prinsengracht side, Amstelkerk visible), same photographer family as ams_006's approved photo; more recent while the tree-specificity limitation is unchanged from before.",
-      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "notes": "Corrected 2026-07-26: the previous coordinate (52.3573, 4.8975) was found to be wrong, not merely approximate, roughly 550m from the actual Amstelveld/Amstelkerk (verified against Wikipedia's Amstelkerk coordinates and OpenStreetMap/Nominatim, both placing the square at approximately 52.362, 4.896). Re-centered on the square, then cross-checked against Amsterdam's municipal tree registry (stamgegevens WFS), which resolves the earlier open question: within the square's several dozen Pterocarya fraxinifolia, exactly three are tagged 'Monument' and share a distinct 1930 planting date (ids 1158361, 1158363, 1158364), set apart from the surrounding 1945 and later plantings. That matches the sources' account of three oldest, most valuable specimens singled out for underground root protection. Pin is the average position of those three trees. Age updated to 96 years (2026 minus 1930) from the prior 100+ placeholder.",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           7,
