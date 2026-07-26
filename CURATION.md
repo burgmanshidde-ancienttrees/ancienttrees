@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Lisbon: the Santo Amaro olive trees get a photo, five other gaps stay genuine dead ends
+
+- Moved to rung 5's next city after Amsterdam. Lisbon was at 4/10 photos (needs 8+) and already at 2/10 approximate (within target), so this pass focused entirely on its 6 photo gaps. Tried fresh angles beyond what prior passes exhausted: Wiki Loves Monuments/ICNF-tagged Commons categories, Portuguese Wikipedia, Câmara Municipal de Lisboa's own site, Flickr filtered to CC licenses, and dados.gov.pt's actual dataset API (not just the portal page).
+- **The Olive Trees of Santo Amaro**: found and independently verified a CC BY-SA 4.0 Commons photo whose own description reads "Conjunto de oliveiras no jardim da Capela do Alto de Santo Amaro" and carries a Wiki Loves Monuments heritage ID (ICNF-KNJ1/514) in the exact reference range florestas.pt's article already ties to these four specific trees. A direct match, not a species lookalike. Approved.
+- **Five stayed genuine dead ends after a real try**: the Tipu of Jardim de São Bento (two candidate Commons/Flickr photos of the same photographer's other Tipuana tipu specimens elsewhere in Lisbon, explicitly geotagged to different addresses, not used), the Coral Trees of Jardim da Luz, the Nettle Tree of Avenida de Berlim, the Ginkgo of Praça Paiva Couceiro (Commons only has a wrong-species plane tree at this square) and the Giant Rubber Tree of Mouraria (well documented in press, but every photo found is either unlicensed or CC-BY-NC). All confirmed via Commons, iNaturalist, Openverse and Flickr; none had a usable open-licensed photo.
+- **dados.gov.pt's "Árvores de Interesse Público" dataset has no CSV/JSON download**, only a WFS/WMS geoservice (`servicos.dgterritorio.pt/SDISNITWFSSRUP_AIP_PT1/...`). Not pursued further since all 6 gaps here are photo-only with pins already precise enough, but worth trying on other Portuguese cities' approximate pins.
+- Lisbon now at 5/10 photos (from 4). Still short of the 8/10 floor; the 5 remaining gaps are recorded here so a future pass does not repeat these exact searches blind.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Amsterdam: the Amstelkade Olive Willow's pin corrected by 350m, a candidate cycad photo held back on identity doubt
 
 - Continued rung 5 with Amsterdam, the reference city, still short of flawless (6/10 photos, 3/10 approximate before this pass). Delegated a fresh research pass on its 4 remaining photo gaps and 3 approximate pins, since many prior passes today already exhausted Wikimedia/iNaturalist/OSM/the gated Amsterdam APIs on these same trees; this pass tried Dutch-language sources, the municipal WFS tree registry with tight bounding boxes (rather than the whole-city fetch that failed before), and Flickr/Openverse.
