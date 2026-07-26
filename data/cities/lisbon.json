@@ -214,19 +214,20 @@
       "id": "lis_007",
       "name": "The Nettle Tree of Avenida de Berlim",
       "species": "European Nettle Tree (Celtis australis)",
-      "age_estimate": "100 years",
-      "age_min": 95,
-      "age_max": 105,
+      "age_estimate": "86 years",
+      "age_min": 80,
+      "age_max": 95,
       "location": {
         "address": "Avenida de Berlim, at the junction with Avenida Francisco Luís Gomes, 1800 Lisboa",
-        "latitude": 38.769665,
-        "longitude": -9.125884,
+        "latitude": 38.768953,
+        "longitude": -9.115614,
         "neighbourhood": "Olivais"
       },
-      "story": "One tree remembers the farms that used to be here. Before Lisbon's eastward expansion in the 1940s and 1950s paved over the quintas of Olivais with apartment blocks, this stretch of land was countryside, and a single European nettle tree from that era survived the building work, still standing at what is now the junction of Avenida de Berlim and Avenida Francisco Luís Gomes. It is roughly a century old, sixteen metres tall, with a broad symmetrical canopy that looks deliberately planted rather than accidentally spared, though it was almost certainly the latter. The species produces small sweet fruit that gives it a folk nickname referencing the birds that come to eat it, and its wood was historically valued for tool handles and whip stocks for its flexibility. Officially classified as a tree of public interest, it now stands beside a bronze sculpture called Homem Sucata, Scrap Man, welded from actual car parts in 1993, an odd pairing of the area's rural past and its industrial present sharing the same traffic island. Commuters on the surrounding avenues have a much older neighbour than the surrounding tower blocks suggest.",
+      "story": "One tree remembers the farms that used to be here. Before Lisbon's eastward expansion in the 1940s and 1950s paved over the quintas of Olivais with apartment blocks, this stretch of land was countryside, and a single European nettle tree from that era survived the building work, still standing at what is now the junction of Avenida de Berlim and Avenida Francisco Luís Gomes. Portugal's national registry of public-interest trees measured it in 2015 at 75 years old and 15.7 metres tall, younger than the round century once claimed for it but still older than the apartment blocks around it, with a broad symmetrical canopy that looks deliberately planted rather than accidentally spared, though it was almost certainly the latter. The species produces small sweet fruit that gives it a folk nickname referencing the birds that come to eat it, and its wood was historically valued for tool handles and whip stocks for its flexibility. Officially classified as a tree of public interest under process KNJ1/405, it now stands beside a bronze sculpture called Homem Sucata, Scrap Man, welded from actual car parts in 1993, an odd pairing of the area's rural past and its industrial present sharing the same traffic island. Commuters on the surrounding avenues have an older neighbour than the surrounding tower blocks suggest.",
       "verified_sources": [
         "https://www.theleafboutiquehotel.com/en/portfolio/lodao-bastardo-celtis-australis/",
-        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/"
+        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/",
+        "https://sigservices.icnf.pt/server/rest/services/BDG/AIP/MapServer/0 (feature id 283, processo KNJ1/405)"
       ],
       "access": "Free, public street/traffic island",
       "transport": "Roughly 15 min walk from Bela Vista station (Metro Red Line), or bus to Avenida de Berlim",
@@ -237,8 +238,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact position at the Avenida de Berlim / Avenida Francisco Luís Gomes junction and the nearest metro walking time are approximate; needs on-the-ground confirmation in a future improvement pass.",
-      "location_precision": "approximate"
+      "notes": "Pin and age corrected 2026-07-26: matched to Portugal's national registry of classified trees of public interest (ICNF, si.icnf.pt/sigservices.icnf.pt), feature id 283, processo KNJ1/405, a lodao-bastardo (Celtis australis) named at exactly this junction (\"Av. Berlim (cruzamento com Av Dr. Francisco Luis Gomes)\"), height 15.7m matching this story's \"sixteen metres\" closely, last measured 2015 at age 75 (roughly 86 today). The stored pin was about 900m off (a geocode of the general avenue, not the junction); the registry point is now used instead. The registry's age (75 in 2015) conflicts with the two original tourism-site sources' \"100 years\" claim; treated the government measurement as authoritative and corrected the story and age fields rather than flag the conflict, since one source is a direct physical survey and the others are undated blog estimates.",
+      "location_precision": "confirmed"
     },
     {
       "id": "lis_008",
@@ -286,7 +287,8 @@
       "story": "Every October this tree turns a small garden pink. The silk floss tree in Jardim Alfredo Keil is one of six individually classified specimens within a nine tree ensemble that the city declared collectively of public interest in 2017, a South American species whose thorny green trunk and cotton candy coloured blooms have become an unofficial marker of autumn across Lisbon in recent years. The garden itself, laid out in 1882 on the former site of the Feira da Ladra flea market before that market moved to Alfama, is barely large enough to contain the tree's crown, and a bust of the composer Alfredo Keil, who wrote the melody that became Portugal's national anthem, watches from one corner. No source isolates exactly how old this particular paineira is, since the 2017 classification covers the whole collection of trees rather than dating each specimen individually. The fruit that follows the flowers splits open to release seeds wrapped in a silky white floss, once used to stuff pillows and life jackets, a soft, practical footnote to a tree that spends every autumn putting on the loudest show in the neighbourhood.",
       "verified_sources": [
         "https://pt.wikipedia.org/wiki/Jardim_Alfredo_Keil",
-        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/"
+        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/",
+        "https://sigservices.icnf.pt/server/rest/services/BDG/AIP/MapServer/0 (feature id 316, conjunto arboreo)"
       ],
       "access": "Free, public garden",
       "transport": "6 min walk from Restauradores station (Metro Blue Line)",
@@ -297,8 +299,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "This paineira is one of six individually classified trees within a nine-tree ensemble at Jardim Alfredo Keil, classified collectively in 2017. No source isolates this specimen's individual age. Photo is iNaturalist observation 249878863 (2024-10-31), a Ceiba speciosa in bloom 28m from this pin, well within the small garden. Viewed directly 2026-07-26: shows a mature trunk and branches covered in the characteristic pink, white-throated blooms of Ceiba speciosa against an urban backdrop consistent with Praça da Alegria, matching both the species and the location closely enough to approve despite the observer's ID being casual-grade rather than community-confirmed.",
-      "location_precision": "approximate"
+      "notes": "This paineira is one of six individually classified trees within a nine-tree ensemble at Jardim Alfredo Keil, classified collectively in 2017. No source isolates this specimen's individual age. Photo is iNaturalist observation 249878863 (2024-10-31), a Ceiba speciosa in bloom 28m from this pin, well within the small garden. Viewed directly 2026-07-26: shows a mature trunk and branches covered in the characteristic pink, white-throated blooms of Ceiba speciosa against an urban backdrop consistent with Praça da Alegria, matching both the species and the location closely enough to approve despite the observer's ID being casual-grade rather than community-confirmed. Pin confirmed 2026-07-26 against Portugal's national registry of classified trees (ICNF), feature id 316, a conjunto arboreo (tree grouping) at Praca da Alegria listing exactly the garden's known species mix (2 Ceiba speciosa/crispiflora, 2 Metrosideros excelsa, 2 Erythrina crista-galli, 1 Celtis australis, 1 Washingtonia robusta), protected since 1970 with the 2017 classification adding to it. The registry's own point (38.717875, -9.145227) sits within 2m of the stored pin, so treated as confirmed even though, like the story itself says, the classification covers the ensemble rather than isolating this one paineira from its five neighbours.",
+      "location_precision": "confirmed"
     },
     {
       "id": "lis_010",
