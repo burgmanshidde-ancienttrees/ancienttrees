@@ -196,6 +196,42 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .hero-overlay p { font-size: 13px; font-weight: 300; color: var(--ink-mid); line-height: 1.65; }
 .hero-overlay .go-btn { border: none; font-family: var(--sans); cursor: pointer; margin-top: 0.9rem; }
 .near-me-result { font-size: 12px; margin-top: 0.6rem; min-height: 1em; }
+/* Find / walk / collect: the product told as three acts, in our own skin.
+   Validated by AllTrails and Polarsteps, both of which lead with three
+   capability sections. See PRINCIPLES.md and COMPETITION.md. */
+.home-acts { max-width: 1040px; margin: 0 auto; padding: 2rem 1.5rem 0; }
+.home-act { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; padding: 3rem 0; border-top: 1px solid var(--cream-dark); }
+.home-act:first-child { border-top: none; }
+.home-act:nth-child(even) .home-act-visual { order: -1; }
+.home-act-verb { font-family: var(--serif); font-style: italic; color: var(--moss); font-size: 1.1rem; }
+.home-act h2 { font-family: var(--serif); font-weight: 400; font-size: 1.75rem; margin: 0.35rem 0 0.7rem; line-height: 1.15; }
+.home-act-copy p { color: var(--ink-mid); font-size: 1.05rem; max-width: 42ch; }
+/* Find: a real photo with a floating locator chip. */
+.home-act-visual.photo { position: relative; margin: 0; border-radius: 16px; overflow: hidden; box-shadow: 0 18px 40px rgba(26,26,20,0.14); aspect-ratio: 4 / 3; }
+.home-act-visual.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hav-float { position: absolute; left: 14px; right: 14px; bottom: 14px; display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.93); backdrop-filter: blur(6px); border-radius: 10px; padding: 10px 14px; font-size: 13px; color: var(--ink); box-shadow: 0 4px 16px rgba(0,0,0,0.14); }
+.hav-float strong { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--moss); font-weight: 600; }
+.hav-dot { width: 12px; height: 12px; border-radius: 50%; background: #1E6FD9; box-shadow: 0 0 0 5px rgba(30,111,217,0.22); flex: none; }
+/* Walk: a real tree card, photo then story and season. */
+.home-act-visual.card { margin: 0; background: #fff; border: 1px solid var(--cream-dark); border-radius: 16px; overflow: hidden; box-shadow: 0 18px 40px rgba(26,26,20,0.10); }
+.hav-photo { position: relative; aspect-ratio: 16 / 10; }
+.hav-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hav-badge { position: absolute; top: 12px; left: 12px; background: var(--moss); color: #fff; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; padding: 3px 9px; border-radius: 999px; }
+.hav-card-body { padding: 1rem 1.25rem 1.25rem; }
+.hav-title { font-family: var(--serif); font-size: 1.2rem; }
+.hav-meta { font-size: 0.82rem; color: var(--ink-light); margin-bottom: 0.55rem; }
+/* Collect: real thumbnails, the visited ones vivid and checked. */
+.home-act-visual.grid-visual { margin: 0; }
+.hav-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.hav-cell { position: relative; aspect-ratio: 1; border-radius: 10px; overflow: hidden; }
+.hav-cell img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(0.5) opacity(0.72); transition: filter 0.2s; }
+.hav-cell.done img { filter: none; }
+.hav-cell.done { box-shadow: 0 0 0 2px var(--moss); }
+.hav-check { position: absolute; top: 6px; right: 6px; width: 22px; height: 22px; border-radius: 50%; background: var(--moss); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.hav-count { text-align: center; margin-top: 12px; font-size: 0.92rem; color: var(--ink-mid); }
+.hav-count strong { font-family: var(--serif); color: var(--moss); }
+.hav-credit { text-align: center; margin-top: 6px; font-size: 10.5px; color: var(--ink-light); }
+@media (max-width: 760px) { .home-act { grid-template-columns: 1fr; gap: 1.5rem; padding: 2.25rem 0; } .home-act:nth-child(even) .home-act-visual { order: 0; } }
 .page { max-width: 1100px; margin: 0 auto; padding: 3rem 2.5rem; }
 .section-heading { font-family: var(--serif); font-size: 1.75rem; font-weight: 400; margin-bottom: 1.5rem; }
 .prose { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
@@ -1981,24 +2017,77 @@ def build_homepage(published, upcoming, collections, pages):
 <div class="home-hero">
   <div id="map" class="map"></div>
   <div class="hero-overlay">
-    <h1>The remarkable trees <em>around you</em>.</h1>
-    <p>Every city has trees that were standing before the city was. These are the ones worth walking to, with the story, the spot, and directions from wherever you happen to be.</p>
-    <p class="hero-note">Made by tree lovers, for tree lovers. {len(published)} cities mapped, {100 - len(published)} to go.</p>
+    <h1>Epic old trees, <em>wherever you are</em>.</h1>
+    <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of.</p>
+    <p class="hero-note">Free, no account, no ads. Made by tree lovers, for tree lovers.</p>
     <button type="button" id="near-me" class="go-btn">Find trees near me</button>
     <p id="near-me-result" class="near-me-result"></p>
   </div>
 </div>
+<section class="home-acts">
+  <div class="home-act">
+    <div class="home-act-copy">
+      <span class="home-act-verb">Find</span>
+      <h2>The trees near you, right now.</h2>
+      <p>The map finds the remarkable old trees closest to where you are standing, and points you at the nearest one with a walk time and directions to your phone.</p>
+    </div>
+    <figure class="home-act-visual photo">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2025_Leidsebosje%2C_Asd%2C_dikke_plataan_noord_%28A%29.jpg?width=900" alt="A vast old plane tree" loading="lazy">
+      <figcaption class="hav-float">
+        <span class="hav-dot"></span>
+        <span><strong>Nearest to you</strong>The Leidsebosje Plane &middot; 6 min walk</span>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="home-act">
+    <div class="home-act-copy">
+      <span class="home-act-verb">Walk</span>
+      <h2>A route past the ten worth seeing.</h2>
+      <p>Not a database of everything. The ten most remarkable, linked into one walk you can do in an afternoon, each with its story and the month it is at its most spectacular, so you know when to go.</p>
+    </div>
+    <figure class="home-act-visual card">
+      <div class="hav-photo">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Giant_Ginkgo_Tree_-_Zenpukuji_-_Minato%2C_Tokyo_-_DSC06818.JPG?width=900" alt="The Zenpukuji Ginkgo in Tokyo" loading="lazy">
+        <span class="hav-badge">At its best now</span>
+      </div>
+      <div class="hav-card-body">
+        <div class="hav-title">The Zenpukuji Ginkgo</div>
+        <div class="hav-meta">Ginkgo &middot; 750 years &middot; Tokyo</div>
+        <svg viewBox="0 0 300 44" width="100%" aria-hidden="true"><path d="M0 38 C60 38 120 36 180 22 C220 12 250 6 300 12" fill="none" stroke="#3D5C1E" stroke-width="2.5"/><path d="M0 38 C60 38 120 36 180 22 C220 12 250 6 300 12 L300 44 L0 44Z" fill="#EAF0E0"/><circle cx="255" cy="6" r="4" fill="#3D5C1E"/></svg>
+      </div>
+    </figure>
+  </div>
+  <div class="home-act">
+    <div class="home-act-copy">
+      <span class="home-act-verb">Collect</span>
+      <h2>Tick off the ones you have stood in front of.</h2>
+      <p>Check in when you are actually at the tree and it turns green. Your collection grows across every city you visit, kept on your own phone, with no account and no sign-up.</p>
+    </div>
+    <div class="home-act-visual grid-visual">
+      <div class="hav-grid">
+        <span class="hav-cell done"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Totteridge_Yew%2C_St_Andrew%27s_church%2C_Totteridge.jpg?width=400" alt="" loading="lazy"><span class="hav-check">&check;</span></span>
+        <span class="hav-cell done"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Richmond_Park%2C_The_Royal_Oak_%281%29.jpg?width=400" alt="" loading="lazy"><span class="hav-check">&check;</span></span>
+        <span class="hav-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paris_-_Square_Ren%C3%A9_Viviani_-_robinier_-_1601.jpg?width=400" alt="" loading="lazy"></span>
+        <span class="hav-cell done"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Velkoprevorsky_palac_Beethovenuv_platan.jpg?width=400" alt="" loading="lazy"><span class="hav-check">&check;</span></span>
+        <span class="hav-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Oak_Tree_of_Torquato_Tasso_on_the_Rampa_della_Quercia%2C_Gianicolo_%E2%80%A2_Janiculum_Hill_%2846853511991%29.jpg?width=400" alt="" loading="lazy"></span>
+        <span class="hav-cell done"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2022_Wertheimpark%2C_Asd-Gewone_vleugelnoot_%281%29.jpg?width=400" alt="" loading="lazy"><span class="hav-check">&check;</span></span>
+      </div>
+      <div class="hav-count"><strong>7 of 10</strong> visited in Amsterdam, 23 across every city</div>
+      <p class="hav-credit">Photos: Wikimedia Commons (Philafrenzy, AndyScott, Ordifana75, Balaban, Sonse, Ceescamel), CC BY-SA</p>
+    </div>
+  </div>
+</section>
 <main class="page">
-  <h2 class="section-heading" id="cities">Cities</h2>
+  <p class="prose lead-why">Why bother: a 400 year old tree has outlasted every empire, plague and war its city has seen. It was here before the street was named and will be here after you leave. Most guides send you to the same squares and the same viewpoints. This sends you somewhere quieter, ten minutes off the route, and it is almost always worth the detour.</p>
+
+  <h2 class="section-heading" id="cities">Browse by city</h2>
+  <p class="prose">Not near any of these yet? The map above finds the nearest tree wherever you are. Otherwise, pick a city.</p>
   <div class="city-grid">{live_cards}{soon_cards}</div>
   {coll_html}
-  <h2 class="section-heading">How it works</h2>
-  <p class="prose">Pick the city you are in. You get ten trees, ranked, each with the story of what it has lived through, the exact spot it stands on, and a button that hands the directions to your phone. Take the whole city with you as a map file if you are going out for the day. Everything is free and stays free.</p>
-  <p class="prose">Why bother: a 400 year old tree has outlasted every empire, plague and war its city has seen. It was here before the street was named and will be here after you leave. Most guides send you to the same squares and the same viewpoints. This sends you somewhere quieter, ten minutes off the route, and it is almost always worth the detour.</p>
 
   <h2 class="section-heading">Built in the open, and not finished</h2>
-  <p class="prose">This is a project rather than a product. {len(published)} cities of a hundred are mapped, some trees still have no photograph, and a few pins mark the right park rather than the right trunk. Every one of those says so on its own page, because a vague pin that admits it is vague still gets you to the right place, and a confident wrong one wastes your afternoon.</p>
-  <p class="prose">Three ways to help, none of them much work. Add a tree we have missed. Map a city nobody has done yet. Or tell us when something here is wrong, which happens, and is the fastest way this gets better. There are no accounts and nothing to sign up for: the trees you tick off as visited are stored on your own device and go nowhere near us.</p>
+  <p class="prose">This is a project rather than a product. {len(published)} cities are mapped, some trees still have no photograph, and a few pins mark the right park rather than the right trunk. Every one of those says so on its own page, because a vague pin that admits it is vague still gets you to the right place, and a confident wrong one wastes your afternoon.</p>
+  <p class="prose">Three ways to help, none of them much work. Add a tree we have missed. Map a city nobody has done yet. Or tell us when something here is wrong, which happens, and is the fastest way this gets better. There are no accounts and nothing to sign up for: the trees you tick off as visited stay on your own device and go nowhere near us.</p>
   <p class="prose">{contribute_cta}{support_cta}</p>
 </main>
 """
