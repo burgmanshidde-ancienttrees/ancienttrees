@@ -35,14 +35,15 @@
       "age_max": 280,
       "location": {
         "address": "Casa Tait, Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
-        "latitude": 41.1472,
-        "longitude": -8.6267,
+        "latitude": 41.148057,
+        "longitude": -8.628376,
         "neighbourhood": "Massarelos"
       },
       "story": "This American tulip tree became one of Portugal's first individually protected trees in 1950, a legal status most of the country's current laws postdate. It grows beside Casa Tait, a 19th-century mansion inside the Jardins do Palácio de Cristal that once belonged to a British port wine family, and at more than 250 years old it predates both the mansion and the palace gardens built around it by a century or more. Liriodendron tulipifera is native to the eastern United States, named for the yellow-green, cup-shaped flowers it produces each late spring, blooms that only appear once a tree reaches real maturity and can go unnoticed entirely on a younger specimen. A second tulip tree grows nearby in the same grounds, over 40 metres tall, though it lacks this one's formal protection status and shouldn't be confused with it. Porto's oldest tulip tree survived the transformation of its surrounding grounds more than once: the Palácio de Cristal itself, the glass-and-iron exhibition hall that gave the gardens their name, was demolished in 1951 and replaced by the domed sports arena still standing today, a change that came one year after this tree's own protection was made permanent. Whatever else has come and gone around it, the tulip tree has stayed exactly where it was planted.",
       "verified_sources": [
         "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal_3",
-        "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html"
+        "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html",
+        "https://opendata.porto.digital/dataset/identificacao-e-caracterizacao-das-arvores-classificadas-no-municipio-do-porto"
       ],
       "access": "Free, public park, open daily",
       "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
@@ -53,8 +54,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Protection since 1950 and 250+ year age confirmed by both the Porto city council's own parks page and an independent garden-history source. Coordinates are the Jardins do Palácio de Cristal's general location from the Portuguese Wikipedia infobox; Casa Tait's exact position within the larger park is not independently surveyed, hence approximate.",
-      "location_precision": "approximate"
+      "notes": "Protection since 1950 and 250+ year age confirmed by both the Porto city council's own parks page and an independent garden-history source. Location upgraded to confirmed: the municipality's own open-data register of classified trees carries a Liriodendron tulipifera record with the exact same legal reference and 1950-09-01 classification date cited above, giving a surveyed point about 170m from the previous whole-garden estimate. A second Liriodendron tulipifera also appears in the open-data set nearby, classified separately in 2021 (a different legal reference and date), matching the story's own note about a second, less formally distinguished tulip tree in the same grounds; the 1950 record was used since it matches this tree's own citation.",
+      "location_precision": "confirmed"
     },
     {
       "id": "por_002",
@@ -99,14 +100,15 @@
       "age_max": 100,
       "location": {
         "address": "Near Biblioteca Almeida Garrett, Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
-        "latitude": 41.1472,
-        "longitude": -8.6267,
+        "latitude": 41.148633,
+        "longitude": -8.626666,
         "neighbourhood": "Massarelos"
       },
-      "story": "New Zealand's Christmas tree has adapted well to a country that celebrates the holiday in December for entirely unrelated reasons. This metrosideros, a species Māori communities call pōhutukawa and prize for the blaze of red flowers it produces each southern summer, stands near the Biblioteca Almeida Garrett inside the Jardins do Palácio de Cristal, and it is currently under review for formal protection as a tree of public interest. In its native New Zealand the species flowers in December, coinciding with the Southern Hemisphere summer, which is how it earned its English common name; transplanted to Porto's Northern Hemisphere climate, its flowering calendar shifts to match local seasons instead. It shares this corner of the garden with a Washingtonia palm and a scattering of camellias, part of the eclectic plant collection assembled here since the gardens were laid out in the 1860s by German landscape architect Émile David. The library beside it, built decades after the original planting, inherited the metrosideros as an established feature of the grounds rather than the other way around. Most visitors walking to the library's entrance pass directly under its canopy without knowing they're standing beneath one of the southern hemisphere's most photographed flowering trees.",
+      "story": "New Zealand's Christmas tree has adapted well to a country that celebrates the holiday in December for entirely unrelated reasons. This metrosideros, a species Māori communities call pōhutukawa and prize for the blaze of red flowers it produces each southern summer, stands near the Biblioteca Almeida Garrett inside the Jardins do Palácio de Cristal, and was formally classified a tree of public interest on 15 March 2019. In its native New Zealand the species flowers in December, coinciding with the Southern Hemisphere summer, which is how it earned its English common name; transplanted to Porto's Northern Hemisphere climate, its flowering calendar shifts to match local seasons instead. It shares this corner of the garden with a Washingtonia palm and a scattering of camellias, part of the eclectic plant collection assembled here since the gardens were laid out in the 1860s by German landscape architect Émile David. The library beside it, built decades after the original planting, inherited the metrosideros as an established feature of the grounds rather than the other way around. Most visitors walking to the library's entrance pass directly under its canopy without knowing they're standing beneath one of the southern hemisphere's most photographed flowering trees.",
       "verified_sources": [
         "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal_3",
-        "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html"
+        "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html",
+        "https://opendata.porto.digital/dataset/identificacao-e-caracterizacao-das-arvores-classificadas-no-municipio-do-porto"
       ],
       "access": "Free, public park, open daily",
       "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
@@ -117,8 +119,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Location and 'under classification' status confirmed by two independent sources. No age or planting date found in either source, so age is left as unknown rather than guessed; flagged for that gap.",
-      "location_precision": "approximate"
+      "notes": "Location confirmed and classification status corrected: the municipality's own open-data register of classified trees shows this Metrosideros excelsa (the only one in the whole dataset, a genuinely distinctive match) was formally classified 2019-03-15, not still under review as the 2017 source that originally flagged this tree had it. Story updated to match. Coordinate is the register's own surveyed point, about 160m from the previous whole-garden estimate. No age or planting date found in any source, so age is left as unknown rather than guessed; still flagged for that gap.",
+      "location_precision": "confirmed"
     },
     {
       "id": "por_004",
@@ -195,8 +197,8 @@
       "label": "Ensemble",
       "location": {
         "address": "Jardim Botânico do Porto, Rua do Campo Alegre 1191, 4150 Porto",
-        "latitude": 41.1536,
-        "longitude": -8.6426,
+        "latitude": 41.152526,
+        "longitude": -8.643278,
         "neighbourhood": "Lordelo do Ouro"
       },
       "story": "Three of the oldest members of a common tropical street tree species anywhere in Portugal grow together in one Porto garden. These Bischofia javanica, a fast-growing evergreen more often planted along Asian avenues than kept in botanical collections, are estimated at 120 to 150 years old, among the oldest specimens of the species documented in the country, and Porto's city council has classified all three jointly as trees of public interest. They stand in the Jardim Botânico do Porto, the former grounds of the Campo Alegre estate before the University of Porto absorbed the property and turned its greenhouses and formal beds into a research and teaching collection now run by the university's Natural History and Science Museum. Bischofia javanica, native to South and Southeast Asia, produces small dark fruit that stains heavily when crushed, a trait that makes it common as a shade tree along tropical roads and rare as a deliberate botanical specimen in European gardens, part of why this trio's protected status matters: there are very few comparably documented examples anywhere in the country to measure them against. The garden around them holds more than 1,100 plant species across roughly four hectares, but these three, ordinary elsewhere and unusual here, are the ones with their own legal protection order.",
@@ -207,14 +209,14 @@
       "access": "Free, public garden, open daily",
       "transport": "10 min walk from Casa da Música metro station (Line D)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1320306/original.JPG",
+        "license": "CC BY",
+        "attribution": "duarte, via iNaturalist",
+        "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Age range, joint classification and 'oldest of species in Portugal' status confirmed by the city council's own classification announcement; garden history and species count confirmed independently via Wikipedia. Coordinates are the Botanical Garden's general address from its Wikipedia infobox; the trio's exact spot within the grounds is not independently surveyed.",
-      "location_precision": "approximate"
+      "notes": "Age range, joint classification and 'oldest of species in Portugal' status confirmed by the city council's own classification announcement; garden history and species count confirmed independently via Wikipedia. Location upgraded to confirmed: an iNaturalist observation of this species inside the garden, the only Bischofia javanica recorded there, gives a surveyed point for one of the three (Bischofia javanica being rare enough in Portugal that a species match this specific is strong corroboration), about 130m from the previous whole-garden estimate. Photo from the same observation, viewed directly: fruit clusters and foliage consistent with the species.",
+      "location_precision": "confirmed"
     },
     {
       "id": "por_007",
@@ -285,8 +287,8 @@
       "age_max": 120,
       "location": {
         "address": "Jardim Botânico do Porto, Rua do Campo Alegre 1191, 4150 Porto",
-        "latitude": 41.1536,
-        "longitude": -8.6426,
+        "latitude": 41.154044,
+        "longitude": -8.642972,
         "neighbourhood": "Lordelo do Ouro"
       },
       "story": "The tallest tree species on Earth has a foothold in a four-hectare university garden in Porto, and it's already one of the biggest specimens the city has. This coast redwood, native to a narrow fog belt along the California and southern Oregon coastline where mature wild trees exceed 100 metres, is nowhere near that scale here, but the Jardim Botânico do Porto's own description lists it among the largest sequoias documented in the city. Coast redwoods reached European botanical collections in the mid-19th century, decades after their first scientific description, and gardens across Britain, France and the Iberian Peninsula planted them as living proof of the New World's most extreme trees, with no clear sense yet of how they'd perform in a climate so different from California's summer fog. This one has thrived well enough that its crown is now a genuine landmark within the garden's skyline, visible above the surrounding conifer collection from most approaches. The species can reproduce from stump sprouts as well as seed, meaning a felled coast redwood can regrow from its own base, a trait almost no other conifer shares. Porto's specimen has needed no such resilience yet. It has simply grown, steadily, since whichever year in the garden's history someone planted a California seedling in Portuguese soil and hoped for the best.",
@@ -297,14 +299,14 @@
       "access": "Free, public garden, open daily",
       "transport": "10 min walk from Casa da Música metro station (Line D)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1803059/original.JPG",
+        "license": "CC BY",
+        "attribution": "duarte, via iNaturalist",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "'Among the largest in the city' status confirmed by two independent sources describing the garden's conifer collection. No age, planting date or precise height measurement found for this individual tree, so age is left as unknown rather than guessed.",
-      "location_precision": "approximate"
+      "notes": "'Among the largest in the city' status confirmed by two independent sources describing the garden's conifer collection. No age, planting date or precise height measurement found for this individual tree, so age is left as unknown rather than guessed, still flagged for that gap. Location upgraded to confirmed: an iNaturalist observation of this species inside the garden, the only Sequoia sempervirens recorded there, gives a surveyed point about 60m from the previous whole-garden estimate. Photo from the same observation, viewed directly: a tall reddish fibrous-barked trunk rising into a conifer canopy, consistent with the species.",
+      "location_precision": "confirmed"
     },
     {
       "id": "por_010",

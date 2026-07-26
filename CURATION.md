@@ -2,6 +2,17 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Porto: 2 pins from the city's own open-data register, 2 more from iNaturalist, a stale "under review" claim corrected
+
+- Moved to marquee Europe's next untouched city after Seville: Porto, at 2 of 10 photos and 10 of 10 approximate, essentially unworked by depth passes so far.
+- New source this pass: Porto's municipal open-data portal (opendata.porto.digital) publishes a GeoJSON of every legally classified "tree of public interest" in the city, each carrying its own protection decree reference and date.
+  - **The Tulip Tree of Casa Tait**: matched to a Liriodendron tulipifera record classified 1950-09-01, the exact same legal reference and date already cited in the tree's own story. A second, unclassified tulip tree also appears nearby in the dataset (matching the story's own note about a second, less-protected tree in the same grounds); the 1950 record was used since it's the one with matching citation. Confirmed, about 170m from the previous whole-garden estimate.
+  - **The Metrosidero of the Library**: the only Metrosideros excelsa in the entire dataset, classified 2019-03-15. This corrected something wrong, not just imprecise: the story said the tree was "currently under review for formal protection," sourced from a 2017 article, but the classification completed in 2019. Story updated to reflect the tree is classified, not pending. Confirmed, about 160m from the previous estimate.
+- **The Bischofia Trio of the Botanical Garden** and **The Coast Redwood of the Botanical Garden**: both matched to the only iNaturalist observation of their respective species anywhere in the garden (Bischofia javanica and Sequoia sempervirens are rare enough there that a species-level match is strong corroboration), both CC BY, both viewed directly before approval: the Bischofia photo shows fruit clusters matching the species, the redwood shows a tall reddish fibrous-barked trunk. Confirmed pins about 130m and 60m respectively from the previous whole-garden estimates.
+- Four more photo gaps (Magnolia of Casa Tait, Plane of Quinta da Macieirinha, Texas Madrone, Atlas Cedar) tried via iNaturalist and came up empty; genuine attempts, not yet found.
+- Porto now at 4 of 10 photos (from 2) and 6 of 10 approximate pins (from 10). Still well short of both bars; the remaining four approximate pins (Magnolia and Plane at Casa Tait/Quinta da Macieirinha, Texas Madrone and Atlas Cedar at the Botanical Garden) still share their venue's general address coordinates and are next in line for the same open-data/iNaturalist treatment.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Amsterdam/Lisbon/Istanbul/Rome dead-end sweep, plus one more Berlin photo
 
 - Ran concurrently with the Seville/Florence/Vienna/Berlin passes below; picked up rung 5's order from the start (Amsterdam, Lisbon, Istanbul, Rome) rather than continuing past Kyoto, so some overlap with the Berlin work below is expected and reconciled here rather than duplicated.
