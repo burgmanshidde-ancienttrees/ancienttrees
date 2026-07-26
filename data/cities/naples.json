@@ -187,8 +187,8 @@
       "best_time": { "months": [1, 2], "label": "January and February, when the mandarins ripen" },
       "location": {
         "address": "Giardino Torre (Real Fruttiera), Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
-        "latitude": 40.876,
-        "longitude": 14.2515,
+        "latitude": 40.879389,
+        "longitude": 14.260647,
         "neighbourhood": "Capodimonte"
       },
       "story": "The mandarin as most of the world now knows it was, in a real sense, first described from a Capodimonte orchard. Bourbon gardeners introduced the fruit here experimentally in 1816, decades before it became a familiar winter citrus across Europe, and in 1840 Michele Tenore, director of Naples's Royal Botanical Garden, formally described the tree growing here under the scientific name Citrus deliciosa, a naming still used today. The grove has since grown into a working collection of more than 50 citrus species, cultivars and hybrids, restored after years of closure and reopened to the public with the same working-orchard character the Bourbon court originally intended: not an ornamental museum piece but a productive garden, harvested and celebrated with an annual citrus festival held on site every February. Italy's national register of monumental trees added the grove to its official list in 2021, one of a small number of entries recognised as a collective planting rather than a single dated specimen, the same honest framing used here.",
@@ -205,8 +205,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Ensemble entry describing the historic citrus grove rather than one dated individual tree, consistent with its own 2021 national listing as a collective planting. 1816 planting and 1840 Tenore naming corroborated across two independent press sources covering the garden's restoration and citrus festival. No usable photo found.",
-      "location_precision": "approximate"
+      "notes": "Ensemble entry describing the historic citrus grove rather than one dated individual tree, consistent with its own 2021 national listing as a collective planting. 1816 planting and 1840 Tenore naming corroborated across two independent press sources covering the garden's restoration and citrus festival. Pin corrected 2026-07-26 against Campania's regional monumental-tree register (scheda 246, \"l'Agrumeto della Reggia di Capodimonte\"), which gives 180 citrus plants at 40.879389, 14.260647, matching this ensemble's ~200-year age and Giardino Torre location, and sitting consistently close to nap_002's own registry-corrected point in the same garden. No usable photo found (the registry's own photo carries no stated licence, and no open-licensed photo of this specific grove turned up on Wikimedia, iNaturalist, Flickr or Openverse).",
+      "location_precision": "confirmed"
     },
     {
       "id": "nap_007",
