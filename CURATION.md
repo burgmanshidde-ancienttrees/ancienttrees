@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Rome depth check: no new ground this pass
+
+- Next in rung 5's order after Istanbul. Checked both angles: Italy's national monumental-tree registry (ilregistrodeglialberi.it), already a source for three Rome entries, has no site search and 881 unpaginated entries for Roma province with no evident way to filter by villa, so a targeted per-tree lookup for Villa Doria Pamphilj's cedar, Villa Celimontana's cedar and pine, or Adonis wasn't reachable this pass. Wikimedia Commons categories for Villa Borghese trees (56 files) and the Orto Botanico (63 files) were checked directly; nothing names Adonis specifically or confirms the Undici Fontane planes or the Orangery's cork oak.
+- No pin or photo changes this pass. 5 of 10 photos and 4 of 10 approximate pins stand as before. Worth a future attempt with a way to query the registry by location rather than browse it page by page.
+
+## 2026-07-26 — Istanbul depth check: no new ground, genuinely exhausted for now
+
+- Next in rung 5's order after Lisbon. Checked both angles this run: pin precision (Istanbul's own anıtağaç registry, anitagac.istanbul, embeds each tree's map as JavaScript with no coordinates in the fetchable page source, so its per-tree GPS stays out of reach without a browser; Nominatim/OpenStreetMap only reproduces park- or neighbourhood-level precision already recorded) and photos (iNaturalist has zero observations near Çengelköy's plane or Büyükada's cypress; Commons search surfaced nothing beyond what two prior passes, 2026-07-22 and 2026-07-23, already found and recorded).
+- This is the third genuine hunting pass on Istanbul's photo gaps specifically (still 2 of 10) without a new find, and the pattern matches the mandate's own warning against looping on the same ground. Leaving Istanbul as-is and moving to Rome, the next city in rung 5's order, rather than re-running the same searches a fourth time.
+
 ## 2026-07-26 — Lisbon photo pass: 3/10 to 4/10
 
 - Continuing the depth phase down rung 5's order after Amsterdam: Lisbon is next. Genuine hunt across Wikimedia Commons, iNaturalist, Flickr, Openverse and the city's own tree-history sources for all 7 missing photos (Olive Trees of Santo Amaro, Tipu of São Bento, Coral Trees of Jardim da Luz, Nettle Tree of Avenida de Berlim, Ginkgo of Praça Paiva Couceiro, Paineira of Jardim Alfredo Keil, Giant Rubber Tree of Mouraria).
