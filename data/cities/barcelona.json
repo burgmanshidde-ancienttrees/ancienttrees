@@ -35,8 +35,8 @@
       "age_max": 260,
       "location": {
         "address": "Carrer de l'Encarnacio 12, 08024 Barcelona",
-        "latitude": 41.4058,
-        "longitude": 2.1592,
+        "latitude": 41.4056831,
+        "longitude": 2.1583221,
         "neighbourhood": "Vila de Gracia"
       },
       "story": "Barcelona's oldest tree nearly lost to a housing development. This holm oak already stood on the rural Pla del Bonpa, tied to a farmhouse called Can Vidalet, when Gracia was still open countryside rather than a neighbourhood. It shows up on the city's own maps from 1845, and dendrochronologists, who read a tree's age in its rings, later put its age at around 250 years. By the 2010s the oak stood in the courtyard of the Casetes de l'Encarnacio, a cluster of small 19th century houses slated for demolition to build new flats. Neighbours spent three years fighting the plan under the banner Salvem l'Alzina, Save the Oak, and in 2019 the city catalogued the tree as a Tree of Local Interest specifically to stop the diggers. It worked, partly: the houses could not be fully restored, only their facades survived, but the garden around the oak opened to the public in April 2021. The tree is now 22 metres tall with a canopy the same width, wider than any other oak measured in the city.",
@@ -44,7 +44,8 @@
         "https://beteve.cat/va-passar-aqui/arbre-mes-antic-barcelona-alzina-cases-encarnacio/",
         "https://ajuntament.barcelona.cat/premsa/2019/03/29/lalzina-bicentenaria-del-carrer-encarnacio-catalogada-com-a-arbre-dinteres-local/",
         "https://www.independent.cat/noticia/98379/lalzina-mes-antiga-de-barcelona-de-lindult-de-la-tala-al-projecte-de-jardi-obert",
-        "https://www.totbarcelona.cat/politica/catalogada-alzina-centenaria-gracia-salvar-casetes-encarnacio-68723/"
+        "https://www.totbarcelona.cat/politica/catalogada-alzina-centenaria-gracia-salvar-casetes-encarnacio-68723/",
+        "https://www.openstreetmap.org/node/6924087390"
       ],
       "access": "Free, public garden",
       "transport": "Fontana (Metro L3), 8 min walk",
@@ -55,8 +56,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "A Wikimedia Commons file named similarly (\"Alzina del passeig de Gracia\") turned out on inspection to be a different holm oak, L'alzina de Mossen Cinto, elsewhere on Passeig de Gracia. Not used, to avoid misattributing a photo to the wrong tree. Coordinates are a street-level estimate for Carrer de l'Encarnacio 12; no surveyed lat/long was found in official sources.",
-      "location_precision": "approximate"
+      "notes": "A Wikimedia Commons file named similarly (\"Alzina del passeig de Gracia\") turned out on inspection to be a different holm oak, L'alzina de Mossen Cinto, elsewhere on Passeig de Gracia. Not used, to avoid misattributing a photo to the wrong tree. Pin corrected 2026-07-26: OpenStreetMap carries this tree as a mapped node from Barcelona's own \"Arbres d'interes local\" catalogue, tagged protected=yes, species Quercus ilex ssp. ilex, described as \"c. Encarnacio 13\", about 75m from the previous street-level estimate. Confirmed on that official-catalogue sourcing.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bcn_002",
@@ -110,13 +111,13 @@
       "access": "Free, within Park Guell's freely accessible wooded area (to be confirmed against current zoning, see notes on bcn_002)",
       "transport": "Lesseps (Metro L3), 15 min walk uphill",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/211744619/medium.jpeg",
+        "license": "CC BY-SA",
+        "attribution": "iNaturalist observation 124895274, Arboles Singulares de Espana project",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Age given is for the current regrown stem only; the original tree's age before it died back or was cut is not recorded in any source found. Story states this honestly rather than implying continuity of age.",
+      "notes": "Age given is for the current regrown stem only; the original tree's age before it died back or was cut is not recorded in any source found. Story states this honestly rather than implying continuity of age. Photo found 2026-07-26: an iNaturalist observation from the \"Arboles Singulares de Espana\" project, titled \"Garrofer de la Placa de la Natura del Park Guell\", the exact tree by name, 17m from this pin. Viewed directly, shows carob pods on the branches, consistent with the species.",
       "location_precision": "confirmed"
     },
     {
@@ -128,15 +129,16 @@
       "age_max": 118,
       "location": {
         "address": "Passeig dels Castanyers 1, Parc del Laberint d'Horta, 08035 Barcelona",
-        "latitude": 41.4362,
-        "longitude": 2.1481,
+        "latitude": 41.4396976,
+        "longitude": 2.1471213,
         "neighbourhood": "Horta-Guinardo"
       },
       "story": "This cedar grows in the oldest surviving garden of its kind in Barcelona, a neoclassical estate commissioned in 1791 that later grew a romantic wing around it, cypress maze included. The Himalayan cedar itself is a relative latecomer to that story, planted around 1910 in what the estate calls its domestic garden, alongside a silver lime it still shares the plot with today. Himalayan cedars come from the mountains between Afghanistan and Nepal, where the wood was prized for shipbuilding and temple construction; this one has spent over a century adapting to Mediterranean summers instead. A storm at some point in its life snapped its main growth leader, the topmost shoot that normally directs a conifer's upward climb, and the tree has grown on with a slightly altered silhouette ever since, its crown now 22 metres across. The park charges admission most days, one of only two remarkable trees on this list that do, but waives it on Wednesdays and Sundays, the arrangement most of Barcelona's public gardens outside the Ciutadella still keep.",
       "verified_sources": [
         "https://bcnsostenible.cat/web/punt/cedrus-deodara-2",
         "https://www.barcelona.cat/en/que-hacer-en-bcn/parques-y-jardines/arboles-de-interes-local/arbre-d-interes-local-cedre-de-l-himalaia-parc-del-laberint-99400455028",
-        "https://www.arbolesconhistoria.com/2020/08/14/ruta-arboles-laberinto-horta-barcelona/"
+        "https://www.arbolesconhistoria.com/2020/08/14/ruta-arboles-laberinto-horta-barcelona/",
+        "https://www.openstreetmap.org/node/4618756965"
       ],
       "access": "Paid entry, free Wednesdays and Sundays",
       "transport": "Mundet (Metro L3), 10 min walk",
@@ -147,8 +149,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Coordinates are the park's general location, not a surveyed pin for the tree itself, which stands in the park's 'jardi domestic' section.",
-      "location_precision": "approximate"
+      "notes": "Pin corrected 2026-07-26 from the park's general location to the tree itself: OpenStreetMap carries this tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Parc del Laberint\", species Cedrus deodara, about 400m from the previous general-park estimate and matching the barcelona.cat catalogue page already cited as a source.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bcn_005",
@@ -159,14 +161,15 @@
       "age_max": 106,
       "location": {
         "address": "Jardi Botanic Historic, Av. dels Muntanyans, 08038 Barcelona",
-        "latitude": 41.3618,
-        "longitude": 2.1587,
+        "latitude": 41.3673100,
+        "longitude": 2.1527300,
         "neighbourhood": "Montjuic, Sants-Montjuic"
       },
       "story": "Barcelona's biggest tree grows in a hole nobody visits. The Sot de l'Estany is a former quarry pit inside the city's historic botanical garden, deep enough and damp enough to work like a greenhouse, and this wingnut has used that shelter to reach roughly 40 metres, a height the city's own catalogue admits it struggled to measure with standard equipment because the surrounding walls block a laser sightline. The tree is a Rehder's wingnut, a deliberate hybrid between a Caucasian and a Chinese species first crossed in 1908 by Alfred Rehder, a horticulturist at Boston's Arnold Arboretum, which makes this specimen barely a decade or two younger than the hybrid itself. It is the only tree of its kind recorded in Barcelona, and likely for a considerable distance beyond it. In April 2025 the Catalan government named it one of only four monumental trees in the entire city, all four sharing this same ravine. Visitors to the botanical garden rarely find their way down into the Sot; the tree that beats every other in Barcelona for size stands in the one corner of the garden most people walk straight past.",
       "verified_sources": [
         "https://museuciencies.cat/es/quatre-exemplars-del-jardi-botanic-historic-declarats-arbres-monumentals/",
-        "https://www.arbolesconhistoria.com/2015/06/13/el-mayor-arbol-de-barcelona-huye-de-la-fama/"
+        "https://www.arbolesconhistoria.com/2015/06/13/el-mayor-arbol-de-barcelona-huye-de-la-fama/",
+        "https://www.openstreetmap.org/node/6924253587"
       ],
       "access": "Paid entry to the Jardi Botanic Historic",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
@@ -177,8 +180,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Height (~40m) is the municipal catalogue's own estimate, flagged there as uncertain due to measurement difficulty in the confined ravine; reported here as an estimate rather than a precise figure. Coordinates are the garden's single entrance, not a surveyed pin for the tree inside the Sot de l'Estany.",
-      "location_precision": "approximate"
+      "notes": "Height (~40m) is the municipal catalogue's own estimate, flagged there as uncertain due to measurement difficulty in the confined ravine; reported here as an estimate rather than a precise figure. Pin corrected 2026-07-26: the previous coordinates (41.3618, 2.1587) actually sat about 830m outside the garden's real bounds, not just an imprecise entrance estimate but a genuine error. OpenStreetMap carries this exact tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Jardi Botanic Historic. Sector de l'estany\", species Pterocarya x rehderiana, which names both the right garden and the right ravine sector. Confirmed on that match.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bcn_006",
@@ -189,14 +192,15 @@
       "age_max": 104,
       "location": {
         "address": "Jardi Botanic Historic, Av. dels Muntanyans 27, 08038 Barcelona",
-        "latitude": 41.3618,
-        "longitude": 2.1587,
+        "latitude": 41.3671438,
+        "longitude": 2.1516725,
         "neighbourhood": "Montjuic, Sants-Montjuic"
       },
       "story": "This ash comes from the flooded river bottoms of eastern North America, a species built to have its roots underwater for weeks at a time, and it is rare enough in Barcelona that the city's own tree catalogue calls it out by name. Planted in 1924 in the same sheltered ravine, the Sot de l'Estany, that shelters the botanical garden's giant wingnut, it has grown past 24 metres tall on the humidity the old quarry pit traps at the bottom of Montjuic. Green ash rarely gets planted as an ornamental tree in Mediterranean Europe, where its native swampy habitat has no local equivalent, which is part of why the Catalan government granted it monumental status alongside three neighbours in April 2025: not the biggest tree in the garden, but among the least expected. Botanists visiting the garden's deepest corner can, in a few square metres, find a Chinese-Caucasian hybrid, an American swamp tree, a native Iberian ash and a European maple relative growing side by side, an unplanned arboretum inside an arboretum.",
       "verified_sources": [
         "https://museuciencies.cat/es/quatre-exemplars-del-jardi-botanic-historic-declarats-arbres-monumentals/",
-        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-freixe-de-pennsilvania-antic-jardi-botanic-av-dels-montanyans-sn-99400455008"
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-freixe-de-pennsilvania-antic-jardi-botanic-av-dels-montanyans-sn-99400455008",
+        "https://www.openstreetmap.org/node/4506719952"
       ],
       "access": "Paid entry to the Jardi Botanic Historic",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
@@ -207,8 +211,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Coordinates are the garden's single entrance, not a surveyed pin for the tree inside the Sot de l'Estany.",
-      "location_precision": "approximate"
+      "notes": "Pin corrected 2026-07-26: the previous coordinates (41.3618, 2.1587) actually sat about 830m outside the garden's real bounds, not just an imprecise entrance estimate but a genuine error. OpenStreetMap carries this exact tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Antic Jardi Botanic\", species Fraxinus pennsylvanica, matching both the garden (an alternate name for the Jardi Botanic Historic) and the species. Confirmed on that match.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bcn_007",
@@ -292,12 +296,13 @@
       "access": "Free, public square",
       "transport": "Poblenou (Metro L4), 5 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/363138156/medium.jpeg",
+        "license": "CC0",
+        "attribution": "iNaturalist observation 205376677",
+        "status": "approved"
       },
       "curation_status": "ai_generated",
+      "notes": "Photo found 2026-07-26: CC0 iNaturalist observation 15m from this pin. Viewed directly, shows a massive gnarled, rippled trunk in an urban plaza setting consistent with an ombu and with Placa Prim.",
       "location_precision": "confirmed"
     },
     {

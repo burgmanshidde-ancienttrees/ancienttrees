@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Barcelona: found a genuine location error, not just imprecision
+
+- Continuing the same session, next untouched lead city: Barcelona. Barcelona keeps its own official "Arbres d'interes local" catalogue, and OpenStreetMap carries it as individually tagged tree nodes, same trick as Tokyo and Amsterdam above.
+- Worth flagging on its own: the Wingnut and Green Ash of the Sot de l'Estany weren't just approximate, their stored pin was about 830m outside the actual botanical garden. Found and fixed against a catalogue node literally labelled with the ravine sector by name. Also confirmed the Holm Oak and the Himalayan Cedar of the Labyrinth the same way.
+- Found and visually verified two new photos via iNaturalist: the carob at Placa de la Natura (an observation titled with the tree's own name) and the ombu at Placa Prim.
+- Barcelona: 6/10 photos (from 4), 1/10 approximate (from 5, La Rambla's plane ensemble, an honest permanent case). Precision bar cleared, photos still short of 8.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Amsterdam: one more pin, two backlogged photos cleared
 
 - Continuing straight on from the Tokyo/London pass below in the same session. Applied the same OpenStreetMap named-tree-node trick to Amsterdam: found a node named "Heimanseik" (Quercus robur, start_date 1775) about 300m from the old general-park pin, upgraded to confirmed.
