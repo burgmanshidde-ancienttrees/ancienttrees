@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Kyoto: Munakata camphor resolved; Seville, Florence, more of Kyoto tried and stayed dead ends
+
+- Continued down the list after Athens: Kyoto still had 2 of its earlier-flagged genuine dead ends (Hosen-in pine, Munakata camphor) plus 3 more approximate/missing trees untried this session.
+- **The Camphor of Munakata Shrine**: two independent iNaturalist observations of the species, 20m apart, both consistent with the shrine's southwest-corner position in Kyoto Gyoen (one's own place_guess names the shrine's neighbourhood, 御所, directly), about 140m from the previous estimate. Confirmed. Photo from the CC BY-SA observation, viewed directly: a large mature tree ringed by protective bollards on a gravel path.
+- Tried and stayed dead ends: the Five-Needle Pine of Hosen-in (iNaturalist empty, consistent with the two Overpass attempts already recorded above), the Taiko Weeping Cherry of Daigo-ji, the Heian Cedar of Katanami, and the Emperor's Gift Cherry of Kamigamo, all zero iNaturalist results within radius.
+- **Seville**: tried three fresh angles on El Gran Capitán, the Figs of Plaza del Cristo de Burgos and the Camphor of Glorieta de Doña Sol. The city's own "Árboles Singulares de Sevilla" catalogue exists (56 individually documented trees) but sevilla.org is unreachable from this session's tools (connection refused on every attempt). Overpass queries for the same three locations returned HTTP 504 on every attempt (a service-load issue today, given how many concurrent runs have hit it). iNaturalist found one Eucalyptus camaldulensis observation near El Gran Capitán's coordinates, but it is marked all-rights-reserved on every photo, not usable. No data changed; recorded so a future run tries the municipal catalogue again once sevilla.org is reachable, rather than repeating today's attempts blind.
+- **Florence**: re-checked all 7 remaining photo gaps via iNaturalist; all zero results, consistent with (and not improving on) the exhaustive search already logged for this city above. Confirms rather than adds anything.
+- Kyoto now at 6 of 10 photos (from 5) and 3 of 10 approximate pins (from 4).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Athens: one pin tightened, one photo found, one near-miss caught and deliberately not used
 
 - Next in marquee-Europe order after Porto: Athens, at 4 of 10 photos and 10 of 10 approximate pins.
