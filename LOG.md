@@ -30,6 +30,14 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-26 — Madrid: 6 of 10 approximate pins resolved by matching OpenStreetMap's mapping of the region's own singular-tree register
+
+- Continued down rung 5's list to Madrid, untouched today (4/10 photos, 10/10 approximate). Nine of its ten trees are on the Comunidad de Madrid's official singular-tree catalogue, and volunteers have separately mapped that catalogue into OpenStreetMap as individually named nodes, name-matching this project's own tree names closely enough to trust.
+- Six pins moved to confirmed this way, distances ranging from 90m to 530m from the previous estimates: the Ahuehuete of the Parterre, the Three-Trunked Yew of the Velazquez Palace (an exact name match to its own Spanish Wikipedia article), the Bald Cypresses of the Crystal Palace Pond, the Cypress and the Caucasian Elm of the Royal Botanic Garden, and the Grandfather Cedar of Parque del Oeste.
+- Four gaps stayed open: two trees on the singular-tree list have no matching OSM node yet (Himalayan Cedar, Aleppo Pine), one already had a reasonably tight pin from a sourced DMS reading (Holm Oak of the Trillo Roundabout), and one isn't on the regional catalogue at all (Stone Pine of El Capricho).
+- Madrid now at 4/10 approximate pins (from 10). Photos untried and unchanged at 4/10, a fresh Commons search on the newly pinned trees found nothing.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Amsterdam: found a real 550m location error hiding behind an "approximate" flag, both pins now confirmed
 
 - Visitors: 47 visits, 76 page views over 7 days (21-26 July: 8, 9, 10, 7, 4, 9), flat. No submissions.
