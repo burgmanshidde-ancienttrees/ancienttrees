@@ -44,6 +44,13 @@ Everything else that used to sit here is done or recorded: the submission form i
 - Paris now at 8/10 photos and 0/10 approximate, meeting the depth-exit-test bar from CLAUDE.md rung 6 for this city. Six of the eight priority cities now need work: Amsterdam (6/10 photos), Lisbon (5/10), Istanbul (2/10, 8 approximate), Rome (5/10). Tokyo and London already met the bar earlier.
 - Site rebuilt, all contracts validated, pushed.
 
+## 2026-07-26 — Dublin: a wrong species caught, 3 pins resolved via a new Irish source
+
+- Continued marquee Europe oldest-first (Dublin, city 12, was the worst-pinned city touched today: 9/10 approximate). Found a genuinely new source, GBIF's "Heritage Trees of Ireland" dataset, a 2009 nationwide field GPS survey, and used it to resolve 3 pins.
+- **A real correction, not just imprecision**: the Champion Planes of New Square were recorded as London Plane, but the survey independently identifies the pair as Oriental Plane, a call also visible all along in the tree's own already-approved photo's Commons filename. Corrected the species.
+- Dublin now at 6/10 approximate (from 9) and 4/10 photos (1 held at found_needs_check pending an identity check on a plausible but not certain candidate). Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Barcelona's La Rambla entry replaced with a genuinely singular tree
 
 - CLAUDE.md itself flags that Barcelona's "Plane Trees of La Rambla" entry fails the project's own collectible-point rule, an avenue of 250 ordinary street trees rather than one tree or a compact ensemble, with an explicit instruction to replace it next time a run touched Barcelona. That was this pass.

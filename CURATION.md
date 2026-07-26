@@ -2,6 +2,17 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Dublin: 3 pins resolved, a species correction caught, one photo held at found_needs_check
+
+- Moved to marquee Europe's oldest-first order after the lead group (Dublin was the 12th city published, on 2026-07-22, and hadn't had a depth pass since an initial photo hunt on 2026-07-23). Was at 4/10 photos and 9/10 approximate, the worst pin ratio of any city touched today.
+- New source this pass: **GBIF's "Heritage Trees of Ireland" dataset**, a 2009 nationwide field GPS survey by Aubrey Fennell, CC-BY 4.0, queryable via GBIF's public API. Fetched and cross-checked directly (not just taken on the research pass's word).
+- **Dean's Tree** and **Addison's Walk**: each matched to the dataset's own single record at their named site (Old Glebe yew; National Botanic Gardens yew), moved from wide placeholder coordinates to confirmed. Addison's Walk's record is one specimen within the double row described in the story, not a survey of the whole avenue, noted as such.
+- **The Champion Planes of New Square, a real correction, not just imprecision**: the dataset independently records two Platanus orientalis (Oriental Plane) specimens 15m apart at this exact site, matching the described pair. The tree's own already-approved photo, unnoticed until now, is itself filed on Commons as "Platanus_orientalis-Trinity_College_Dublin.jpg". Two independent sources agreeing on a different species than the one stored (London Plane, Platanus x hispanica) is enough to correct it, not just flag it. Pin tightened to the midpoint of the two GBIF points.
+- **The Great Sycamore of Farmleigh**: found a CC BY-SA 2.0 Commons photo captioned "Acer pseudoplatanus (the large tree)", the photographer's own note distinguishing it from other sycamores shot on the same visit. Plausible but not certain, so held at `found_needs_check` rather than approved.
+- **Queen Victoria's Sequoia, the Provost's Plane and the Oak Avenue of Corkagh** stayed genuine dead ends: none appear in the GBIF dataset, OSM, iNaturalist or Commons under any technique tried.
+- Dublin now at 4/10 photos (1 pending identity check) and 6/10 approximate (from 9). Still well short of both bars; worth another pass.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Barcelona: bcn_008 replaced per the collectibility rule; four photo gaps stay open
 
 - Continued the rest of the lead group after Paris. Barcelona needed both a fix flagged in CLAUDE.md itself (bcn_008 is known to fail the collectible-point test) and more photos (6/10, floor is 8+).
