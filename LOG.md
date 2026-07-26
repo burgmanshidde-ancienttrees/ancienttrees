@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Phase 1 opened: Google serves us, runs flip from width to depth
+
+- First Search Console export ever read: impressions 1 > 5 > 38 > 103 across four days, roughly doubling daily since the sitemap went in. First two clicks: the homepage, and Tokyo's Meiji Jingu Gaien ginkgo avenue (33% CTR from position 28, from Canada).
+- City pages already rank page one: Amsterdam 7.9, Lisbon 7.7, Istanbul 8.0, Kyoto 8.3, Barcelona 9.7. Rome pulls the most impressions (18). Real target queries showing: "trees in rome", "oldest tree in lisbon", "ancient tree map" (position ~41, a query we should own). Mobile ranks and clicks; desktop does not yet.
+- Per GO_TO_MARKET.md this is the Phase 1 trigger, so the phase flipped on evidence: new cities frozen at 33, runs now do depth on the cities search serves, Amsterdam to flawless first, then Lisbon, Istanbul, Rome. Ladder rungs 5 and 6 rewritten, workflow prompt aligned (it still said "resume coverage", the same two-truths mistake as 2026-07-22, caught this time).
+- Also checked: the submission form is still empty (zero submissions), and Cloudflare Web Analytics needs reading under Analytics & Logs > Web Analytics, not Account home, which measures proxied traffic we deliberately do not have.
+- FOR HIDDE: nothing blocks. If you want coverage reopened, flip rung 6 in CLAUDE.md; a run may not do it alone.
+
 ## 2026-07-25 — Verona: 33rd city live, 8 trees researched (shipped with 8, not 10)
 
 - No submissions, site healthy, nothing published wrong. Rung 5: the next `pending` city, Verona. Verona's own documented tree heritage is thinner than Naples or Bologna's, only 3 trees on Italy's national register within the city itself, so after a genuine search only 8 trees held up to the two-source bar. Shipped with 8 rather than padding to 10, per CLAUDE.md's own "eight good trees ship" guidance.

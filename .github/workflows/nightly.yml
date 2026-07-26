@@ -61,25 +61,25 @@ jobs:
 
             Step 0 holds a priority ladder; work out which rung applies and do that.
             Reader submissions outrank everything. Something published being wrong
-            outranks adding more. Otherwise the job is coverage: the next pending
-            city, and then the one after that.
+            outranks everything below it. Otherwise the job is depth, as follows.
 
-            Photos are the current priority by Hidde's decision of 2026-07-22, with
-            80 percent (8 of 10 trees) as the floor. Rung 4 of the ladder now reads:
-            a published city below that photo target outranks adding a new city.
-            Work the focus region first, UK and Netherlands then the rest of the
-            lead group and the marquee European cities, oldest-first. Hunt widely:
-            Wikimedia, iNaturalist, Flickr under CC, Openverse, park authorities,
-            submissions. Never publish a photo without a verified open licence and
-            attribution, and where 80 percent genuinely cannot be reached because no
-            open photo exists, note it in CURATION.md and move on rather than looping.
-
-            When every focus city is at target, resume coverage: the next pending
-            city, which the reordered list now leads with the lead group. Approximate
-            pins do not block anything, but never ship a tree without
-            location_precision set honestly: vague is fine when it says so, fake
-            precision is not. The full ladder in CLAUDE.md governs, and hard rule 10
-            (public trees only, never a location its source hides) is absolute.
+            Depth is the current phase, opened 2026-07-26 on Search Console
+            evidence: impressions double daily and city pages rank on page one, so
+            Phase 1 of GO_TO_MARKET.md is live. New cities are FROZEN at 33; do not
+            add one, whatever the pending list says. The work is making the pages
+            people land on deliver the promise: resolve approximate pins to exact
+            coordinates via registers, open data and street-level sources, and hunt
+            photos to the 80 percent floor. Order: Amsterdam to flawless first (the
+            reference city), then Lisbon, Istanbul, Rome, then the rest of the lead
+            group and marquee Europe, oldest-first. Hunt photos widely: Wikimedia,
+            iNaturalist, Flickr under CC, Openverse, park authorities. Never publish
+            a photo without a verified open licence and attribution; where a photo or
+            an exact pin genuinely cannot be found, record it in CURATION.md and move
+            on rather than looping. Never mark a pin confirmed without a source that
+            places the tree itself: honesty about precision is the one thing depth
+            work must never spend. The full ladder in CLAUDE.md governs, and hard
+            rule 10 (public trees only, never a location its source hides) is
+            absolute.
 
             Whatever the work turns out to be: verify against two independent
             sources, follow TONE_OF_VOICE.md and SEO_GEO_BLUEPRINT.md, set
