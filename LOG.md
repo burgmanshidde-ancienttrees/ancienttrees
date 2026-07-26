@@ -49,6 +49,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 - All three secrets are in: the runs now read their own visitor numbers at the start of every pass (first reading: 43 visits, 69 page views over seven days, a steady 4 to 10 a day), and from the next completed run onward every run dispatches its successor. No cron luck, no human trigger, around the clock, bounded only by the usage limit.
 - Nothing structural waits on Hidde anymore. What remains his: FOR HIDDE approvals here, taste (logo parked at his call), the budget ceiling number for the hard rules (still open), and the end-of-August reassessment.
 
+## 2026-07-26 — Berlin: reached 8/10 photos and 0/10 approximate pins
+
+- Continuing rung 5's marquee-Europe order past Kyoto, picked Berlin as the closest published city to fully clearing both bars (was 7/10 photos, 2/10 approximate).
+- The Ginkgo of Schlosspark Britz matched an OpenStreetMap node carrying the estate's own tree-inventory reference number, and gained a photo from a Commons category dedicated to this exact natural-monument tree. The Great Elm of Treptower Park matched a national heritage-tree registry's own surveyed GPS point, a ~460m correction; no open-licensed photo exists for it after a real search. Full detail in CURATION.md.
+- Berlin now clears the 80% photo floor (8/10) and has 0 approximate pins.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Kyoto: 2 pins resolved, 1 photo found, caught a species tag error rather than trusting the source
 
 - Correction to this entry's first version: it misstated Kyoto's starting count as 4 approximate; it was actually 6, so resolving 2 left 4, not 2. Fixed in CURATION.md.

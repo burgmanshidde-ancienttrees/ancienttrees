@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Berlin: both remaining approximate pins resolved, 1 photo found, now 8/10 photos and 0/10 approximate
+
+- Continuing rung 5's marquee-Europe, oldest-first order past Kyoto. Checked every published city's photo/pin counts and picked Berlin: already at 7/10 photos and 2/10 approximate, the closest city to fully clearing both bars.
+- **The Ginkgo of Schlosspark Britz**: OpenStreetMap carries a single Ginkgo biloba node in the park tagged with the estate's own inventory reference (`ref:schlossgutshofbritz=7`), the same reference scheme used on a neighbouring catalogued Robinia in the same park, about 120m from the previous palace-address estimate. Confirmed. Also found its photo: a dedicated Commons category for this exact tree ("Naturdenkmal Fächerblattbaum im Gutspark Britz", the tree's own natural-monument designation, Naturdenkmal 8-2/B), CC BY-SA 3.0. This run's tools couldn't open the image to visually confirm framing, so recorded `found_needs_check`.
+- **The Great Elm of Treptower Park**: found something better than a location fix while re-searching, a dedicated national heritage-tree registry page (nationalerbe-baeume.de, run by a TU Dresden forestry professor) with the tree's own surveyed GPS reading, about 460m from the previous general-park estimate. Confirmed. No open-licensed photo found for it despite a real search (Commons' Ulmus laevis category has 164 files, none from Berlin; iNaturalist empty; the registry's own photos are uncredited/all-rights-reserved), stays missing.
+- **The Steinlanke Oak**'s photo also stayed missing after a genuine search: a Flickr photo of this exact tree exists but is marked all-rights-reserved, and a specialist oak-photography site (monumentale-eichen.de) links only to its own copyrighted images, not Commons.
+- Berlin now at 8 of 10 photos (from 7) and 0 of 10 approximate pins (from 2), clearing the 80% photo floor and reaching full pin precision.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Kyoto: 2 pins resolved, one photo found, one species error caught and not repeated
 
 - **Correction to this entry's own first version**: it originally said Kyoto moved from 4 to 2 approximate pins. Wrong arithmetic; Kyoto started this pass at 6 approximate (not 4), so resolving 2 left 4, not 2. Fixed here rather than left standing.

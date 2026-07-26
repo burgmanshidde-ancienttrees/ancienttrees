@@ -155,14 +155,15 @@
       "age_max": 270,
       "location": {
         "address": "Treptower Park, near the Rosengarten, 12435 Berlin",
-        "latitude": 52.4875,
-        "longitude": 13.4687,
+        "latitude": 52.491303,
+        "longitude": 13.47132,
         "neighbourhood": "Treptow, Treptow-Köpenick"
       },
       "story": "The newest tree on Germany's national heritage register has its roots in a river. This European white elm, standing directly on the Spree's bank in Treptower Park, was declared a National Heritage Tree only on 25 September 2025, one of the most recent additions to a small national list that otherwise mostly honors trees for age or scale alone. This one earns its place partly through rarity: Ulmus laevis is a floodplain elm scarce enough in Germany that a healthy 250-year-old specimen counts as remarkable regardless of size. Its roots reach directly into the Spree, drawing on a water supply few park trees get, which foresters credit for a vigor unusual in a tree this old. The trunk measures 6.35 metres around and the crown rises 25 metres, making it one of the largest trees in a park better known for its Soviet war memorial than its vegetation. It stands near the Rosengarten, a short walk from the boat landing, easily found by anyone walking the riverside path instead of heading straight for the monument. Dutch elm disease wiped out most of mainland Europe's mature elms across the twentieth century, a fungus spread by bark beetles that killed trees by the millions. This species, less favored by those beetles than the more common field and Wych elms, simply kept growing while its relatives disappeared.",
       "verified_sources": [
         "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1592607.php",
-        "https://www.myheimat.de/berlin/c-natur/die-grosse-flatter-ulme-im-treptower-park-in-berlin_a3595038"
+        "https://www.myheimat.de/berlin/c-natur/die-grosse-flatter-ulme-im-treptower-park-in-berlin_a3595038",
+        "https://nationalerbe-baeume.de/project/grosse-flatter-ulme-im-treptower-park-bundeshauptstadt-berlin/"
       ],
       "access": "Free, public park",
       "transport": "5 min walk from Treptower Park S-Bahn station (S8/S9/S41/S42/S85/S46)",
@@ -173,8 +174,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Declared a Nationalerbe-Baum (National Heritage Tree) 25 September 2025, confirmed by the district's own press release and a second local news source. No tree-specific coordinates were found in either source; the pin uses Treptower Park's general coordinates, cross-checked against both sources' description of the tree standing near the Rosengarten and the Spree bank.",
-      "location_precision": "approximate"
+      "notes": "Declared a Nationalerbe-Baum (National Heritage Tree) 25 September 2025, confirmed by the district's own press release and a second local news source. Location upgraded to confirmed: the national heritage-tree register's own project page (run by a TU Dresden forestry professor) gives a specific GPS reading and a walking description (750m from the S-Bahn station along the riverside promenade, 150m east of the boat landing), a roughly 460m correction from the previous general-park estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ber_006",
@@ -276,14 +277,15 @@
       "age_max": 146,
       "location": {
         "address": "Alt-Britz 73, Schlosspark Britz, 12359 Berlin",
-        "latitude": 52.4469,
-        "longitude": 13.4378,
+        "latitude": 52.4470352,
+        "longitude": 13.439452,
         "neighbourhood": "Britz, Neukölln"
       },
       "story": "Berlin's oldest and tallest ginkgo survived something most of its European relatives never had to: being fashionable. Ginkgo biloba reached European gardens in the 18th century as a botanical curiosity, a living link to trees that grew alongside dinosaurs, and wealthy estates across the continent planted them as status symbols rather than for shade or timber. This one went into Gutspark Britz sometime between 1880 and 1890, when royal garden inspector Wilhelm Nahlop redesigned the grounds of a former manor estate into the landscape park still standing today. It has grown a trunk over three metres around and stands close to 20 metres tall, the largest ginkgo recorded anywhere in the German capital. Ginkgos are dioecious, meaning individual trees are strictly male or female, and this one's autumn performance is the reward for the wait: every leaf turns a uniform gold within days of each other in late October, then drops almost at once, rather than the gradual, patchy fade most trees go through. The palace itself, Schloss Britz, charges a small admission fee for its restored period rooms, but the surrounding Gutspark is free and open daily, its grounds having won a national landscape prize in 1997, decades after the ginkgo inside it had already quietly become the biggest in Berlin.",
       "verified_sources": [
         "https://schloss-gutshof-britz.de/schloss-und-gutshof-britz/geschichte-architektur/schlosspark/ginkgo",
-        "https://www.berlin.de/tourismus-neukoelln/entdecken/artikel.1153612.php"
+        "https://www.berlin.de/tourismus-neukoelln/entdecken/artikel.1153612.php",
+        "https://www.openstreetmap.org/node/622505161"
       ],
       "access": "Free (Gutspark); Schloss Britz's period rooms charge separate admission",
       "transport": "10 min walk from Parchimer Allee U-Bahn (U7), or bus 181 to Alt-Britz",
@@ -292,14 +294,14 @@
         "label": "late October, when every leaf turns gold and drops within days"
       },
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/F%C3%A4cherblattbaum_Gutspark_Britz_1.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Barfisch, Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
-      "notes": "Planting window (1880-1890) and 'oldest and tallest ginkgo in Berlin' claim confirmed by two independent sources (the palace's own history page and a Berlin.de tourism article). No tree-specific coordinates found; pin uses the palace address, cross-checked against both sources placing the tree within the Gutspark grounds.",
-      "location_precision": "approximate"
+      "notes": "Planting window (1880-1890) and 'oldest and tallest ginkgo in Berlin' claim confirmed by two independent sources (the palace's own history page and a Berlin.de tourism article). Location upgraded to confirmed: OpenStreetMap carries a single Ginkgo biloba node in the park tagged with the estate's own inventory reference (ref:schlossgutshofbritz=7), the same reference scheme used on neighbouring catalogued trees in the same park, about 120m from the previous palace-address estimate. Photo is from a dedicated Commons category for this exact tree (\"Naturdenkmal Facherblattbaum im Gutspark Britz\", the tree's own natural-monument designation, Naturdenkmal 8-2/B), but this run's tools could not open the image to visually confirm framing, so left found_needs_check.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ber_010",
