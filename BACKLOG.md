@@ -13,6 +13,8 @@ Hidde's direction, 2026-07-26, replacing photo-led presentation as the emotional
 - **Points per tree, weighted by rarity and age.** A neighbourhood plane is 10 points; a 2000-year yew is 500. The weighting already half-exists in the data (age_min/age_max, flagged uniqueness).
 - **Badges for completable sets:** a city complete ("Amsterdam 10/10"), a country complete, themed sets across cities ("the three oldest oaks of the world", "every ginkgo worth a November trip"). Collections thereby become playable content, not just SEO pages.
 - **Season multipliers:** checking in during a tree's best_time window is worth more, which points the game at exactly the moment worth going.
+- **Seasonal badge variants (Hidde, 2026-07-26):** the badge you earn at a tree takes the colour of the season you stood there, so one tree is four collectibles and a reason to come back in another season. Works for every tree, evergreen or not: the visit has a season even when the peak does not.
+- **Prime bonus:** checking in inside a tree's best_time window scores extra. Measured spread says this works year-round, not just spring: Nov 23 trees, Oct 9, May 8, Aug 8 (catkins), Apr 7, Jul 6, even Jan/Feb 3, with only Sep/Dec/Mar thin. Peaks rotate every few weeks, and a real prime lasts roughly ten days (blossom) to a month (autumn colour), which is exactly what makes a prime check-in scarce enough to reward.
 - Tasteful, not Pokemon Go (PRINCIPLES.md): no streak punishment, no popups.
 
 **Trigger:** the app project. **Needs Hidde:** the whole feel of it.
