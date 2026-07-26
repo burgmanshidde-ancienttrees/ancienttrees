@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Kyoto: 2 pins resolved, one real species error caught and not repeated
+
+- The eight lead-group cities were heavily worked by concurrent runs today, so moved on to rung 5's next instruction, marquee Europe/Japan oldest-first: Kyoto, published 2026-07-21, is the oldest still-approximate city after the lead group. Applied the OpenStreetMap named-tree-node technique that worked for Tokyo, Barcelona and Amsterdam.
+- **The Land Boat Pine** (Kinkaku-ji): OSM carries a survey-sourced node named "陸舟の松" (Rikushu-no-matsu) matching the tree's own name exactly, about 40m from the existing pin. Confirmed.
+- **The Reclining Dragon Pine** (Yoshimine-dera): OSM carries a heritage-tagged node named "遊龍松" (Yuryu-matsu), matching both the tree's name and its 1932 national-monument designation, about 60m from the existing pin. Confirmed the location, but not the node's species tag: OSM says Pinus thunbergii (Japanese black pine), while our two existing sources and a fresh check both independently describe this as a five-needle pine (Pinus parviflora, matching the story's own "five-needle pine" line), so the location was used and the wrong species tag was left out, recorded in the tree's notes so no future run copies it uncritically.
+- Kyoto now at 2 of 10 approximate pins (from 4) and still 4 of 10 photos. The remaining two approximate trees (Five-Needle Pine of Hosen-in, Camphor of Munakata Shrine) couldn't be checked this pass: Overpass API returned repeated 504 timeouts for both bounding boxes, a service issue rather than a confirmed dead end, worth retrying.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Depth sweep across four cities: genuine attempts, no new ground
 
 - Picked up depth work after Tokyo, London, Amsterdam and Barcelona had already been resolved by concurrent runs today (this session started work on Tokyo independently and lost the race; the other run's version, using OpenStreetMap named-tree nodes, was better sourced and is the one that stands). Re-read the current state and moved to the next real gaps: Barcelona's remaining photos, Rome's pins and photos, a recheck of Amsterdam's last approximate pin, and a first OSM-technique attempt on Istanbul.
