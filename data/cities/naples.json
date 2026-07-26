@@ -65,8 +65,8 @@
       "age_max": 225,
       "location": {
         "address": "Giardino Torre (Real Fruttiera), Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
-        "latitude": 40.876,
-        "longitude": 14.2515,
+        "latitude": 40.880139,
+        "longitude": 14.261415,
         "neighbourhood": "Capodimonte"
       },
       "story": "A second camphor tree grows in Capodimonte's Royal Orchard, arriving in the same 19th century wave of Chinese imports as its counterpart in the Garden of the Princes but growing considerably wider: 730cm around at chest height, a 20 metre height and a canopy spreading across some 450 square metres, making it the single largest-girth tree in the entire royal estate. It stands at the physical centre of the Giardino Torre, positioned beside a marble fountain in a working orchard the Bourbon court once used to grow fruit and vegetables for the royal table, an arrangement the site has restored rather than simply preserved for looks: cherry varieties known locally as O Monte still grow around its base, planted in roughly the pattern the Bourbon gardeners used. The garden closed for years of restoration before reopening its citrus and orchard collections to the public, and the camphor, too large to have gone anywhere in the meantime, has been the one constant landmark through all of it.",
@@ -83,8 +83,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Dimensions (730cm circumference, 20m height, 450 sqm canopy) from the park's own official page; a second, independent press article corroborates the Giardino Torre's Bourbon-era orchard history and citrus programme without repeating the exact camphor measurements. No individual planting year documented beyond '1800s'. No usable photo found.",
-      "location_precision": "approximate"
+      "notes": "Dimensions (730cm circumference, 20m height, 450 sqm canopy) from the park's own official page; a second, independent press article corroborates the Giardino Torre's Bourbon-era orchard history and citrus programme without repeating the exact camphor measurements. No individual planting year documented beyond '1800s'. Pin corrected 2026-07-26 against Campania's regional monumental-tree register (agricoltura.regione.campania.it, scheda 197, \"La Canfora n. 2 - Giardino Torre\"), which gives 40.880139, 14.261415 and an identical 730cm circumference, a strong identity match. The previous pin was a park-wide estimate roughly 900m off. No usable photo found.",
+      "location_precision": "confirmed"
     },
     {
       "id": "nap_003",
@@ -94,15 +94,16 @@
       "age_min": 150,
       "age_max": 200,
       "location": {
-        "address": "Real Bosco di Capodimonte, near Porta Grande, Via Miano 2, 80131 Napoli",
-        "latitude": 40.8735,
-        "longitude": 14.2565,
+        "address": "Real Bosco di Capodimonte, Giardino dei Principi, Via Miano 2, 80131 Napoli",
+        "latitude": 40.86884,
+        "longitude": 14.25249,
         "neighbourhood": "Capodimonte"
       },
-      "story": "Among everything the Bourbon court imported to Capodimonte, this eucalyptus grew larger than any other exotic species in the park: 30 metres tall with a trunk 330cm across, tall enough to be visible over the surrounding tree line from well outside the estate's own walls. Eucalyptus robusta, native to Australia's eastern coast, reached Naples in the 19th century as part of the same acclimatisation push that filled European botanic gardens with newly available species from across an expanding colonial trade network, and this specimen was among the first of its kind planted anywhere in the city. It grows near Porta Grande, one of the park's main gates, dominating the immediate skyline the way its official designation describes: the largest exotic tree in the entire Real Bosco, camphor and cypress included. Eucalyptus bark sheds in long ribbons rather than staying fixed the way most European trees' bark does, a visual habit that alone tends to stop visitors expecting a Naples park to look distinctly Australian for a moment.",
+      "story": "Among everything the Bourbon court imported to Capodimonte, this eucalyptus grew larger than any other exotic species in the park: 30 metres tall with a trunk 330cm across, tall enough to be visible over the surrounding tree line from well outside the estate's own walls. Eucalyptus robusta, native to Australia's eastern coast, reached Naples in the 19th century as part of the same acclimatisation push that filled European botanic gardens with newly available species from across an expanding colonial trade network, and this specimen was among the first of its kind planted anywhere in the city. It grows in the Garden of the Princes, alongside the estate's camphors and yew, dominating the immediate skyline the way its official designation describes: the largest exotic tree in the entire Real Bosco, camphor and cypress included. Eucalyptus bark sheds in long ribbons rather than staying fixed the way most European trees' bark does, a visual habit that alone tends to stop visitors expecting a Naples park to look distinctly Australian for a moment.",
       "verified_sources": [
         "https://capodimonte.cultura.gov.it/gli-alberi-monumentali-del-real-bosco-di-capodimonte/",
-        "https://movery.it/en/campania/napoli/bosco-di-capodimonte/"
+        "https://movery.it/en/campania/napoli/bosco-di-capodimonte/",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_200.html"
       ],
       "access": "Free, Real Bosco di Capodimonte",
       "transport": "Bus C63/178 to Capodimonte, or 20 min uphill walk from Museo Nazionale metro",
@@ -113,8 +114,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Dimensions (30m height, 330cm diameter) and 'largest exotic tree in the park' designation from the park's own official page, corroborated by an independent park-guide article describing the same 19th century eucalyptus specimens generally. No individual planting year documented. No usable photo found.",
-      "location_precision": "approximate"
+      "notes": "Dimensions (30m height, 330cm diameter) and 'largest exotic tree in the park' designation from the park's own official page, corroborated by an independent park-guide article describing the same 19th century eucalyptus specimens generally. No individual planting year documented. A real correction, not just imprecision: Campania's regional monumental-tree register (scheda 200) gives an identical 330cm circumference and 30m height but places it in the Giardino dei Principi, not near Porta Grande as this entry previously said; treated the register plus exact measurement match as authoritative and corrected the location and story text. No usable photo found.",
+      "location_precision": "confirmed"
     },
     {
       "id": "nap_004",
@@ -125,8 +126,8 @@
       "age_max": 350,
       "location": {
         "address": "Giardino dei Principi, Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
-        "latitude": 40.8746,
-        "longitude": 14.2534,
+        "latitude": 40.86844,
+        "longitude": 14.252714,
         "neighbourhood": "Capodimonte"
       },
       "story": "Almost everything else remarkable at Capodimonte arrived from somewhere else, shipped in by Bourbon collectors chasing the latest botanical fashion from China, Mexico or Australia. This yew did not. Taxus baccata grows wild across Europe, and this specimen appears in the park's own documentation as far back as 1753, decades before most of Capodimonte's exotic imports had even left their countries of origin, making it one of the very few native species the Bourbons chose to keep and cultivate rather than replace with something more exotic. It has grown into something closer to sculpture than tree since: a gnarled, twisting trunk barely 10 metres tall but 250cm around, roots exposed and looping above the soil in a way the park's own curators describe as genuinely mysterious rather than simply old, the kind of specimen that looks deliberately shaped even though nothing about a slow-growing yew's form is ever really planned. Yews resist precise dating better than almost any tree, their heartwood rotting away as they age, so the 1753 reference remains the firmest anchor for this specimen's real age rather than a ring count anyone could safely take.",
@@ -143,8 +144,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "1753 documentary reference and dimensions (10m height, 250cm circumference) from the park's own official page; a second, independent local heritage site corroborates the yew's inclusion among Capodimonte's monumental trees generally. Age range given as a broad estimate consistent with the 1753 reference rather than a precise figure, honestly reflecting how difficult yews are to date exactly. No usable photo found.",
-      "location_precision": "approximate"
+      "notes": "1753 documentary reference and dimensions (10m height, 250cm circumference) from the park's own official page; a second, independent local heritage site corroborates the yew's inclusion among Capodimonte's monumental trees generally. Age range given as a broad estimate consistent with the 1753 reference rather than a precise figure, honestly reflecting how difficult yews are to date exactly. Pin corrected 2026-07-26 against Campania's regional monumental-tree register (scheda 201, \"il Tasso\"), which gives 40.868440, 14.252714, an identical 10m height and 250cm circumference, a strong identity match. No usable photo found.",
+      "location_precision": "confirmed"
     },
     {
       "id": "nap_005",
@@ -155,8 +156,8 @@
       "age_max": 200,
       "location": {
         "address": "Giardino dei Principi, Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
-        "latitude": 40.8746,
-        "longitude": 14.2534,
+        "latitude": 40.8687,
+        "longitude": 14.252583,
         "neighbourhood": "Capodimonte"
       },
       "story": "Nicknamed the Tree of Thule after Mexico's own famous, vastly older specimen of the same species, this cypress was among the first of its kind planted anywhere in Naples, identified by Michele Tenore, the director of the city's Royal Botanical Garden, not long after it went into the ground in the 1800s. Taxodium huegelii is a Mexican relative of the bald cypress, native to riverbanks and wet ground across the country's central highlands, and remains scarce enough in Italian cultivation that this specimen still counts as a genuine botanical rarity two centuries after its planting. It has reached 18 metres with a trunk three metres around, modest next to the towering original Arbol del Tule near Oaxaca, whose trunk is wide enough that a dozen adults joining hands still cannot circle it, but a legitimate specimen of the same lineage all the same. It grows in the Garden of the Princes among camphor, yew and cypress from three different continents, one more entry in a collection Capodimonte's own Bourbon-era gardeners built specifically to be internationally strange.",
@@ -173,8 +174,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Dimensions (18m height, 3m circumference) and Tenore identification from the park's own official page, corroborated by an independent park-guide article noting the species' rarity in Italian cultivation generally. No individual planting year documented. No usable photo found.",
-      "location_precision": "approximate"
+      "notes": "Dimensions (18m height, 3m circumference) and Tenore identification from the park's own official page, corroborated by an independent park-guide article noting the species' rarity in Italian cultivation generally. No individual planting year documented. Pin corrected 2026-07-26 against Campania's regional monumental-tree register (scheda 198, \"Cipresso di Montezuma\"), which gives 40.868700, 14.252583 and an identical 300cm circumference; its own height figure (15m) is a bit lower than the 18m cited here, a minor discrepancy left open rather than resolved, since the circumference match and the rarity of this exact species at this exact garden leave little doubt it is the same tree. No usable photo found.",
+      "location_precision": "confirmed"
     },
     {
       "id": "nap_006",
@@ -216,26 +217,27 @@
       "age_max": 67,
       "location": {
         "address": "Complesso dei Santi Severino e Sossio, Via Bartolomeo Capasso, 80138 Napoli",
-        "latitude": 40.8484,
-        "longitude": 14.2584,
+        "latitude": 40.848275,
+        "longitude": 14.258456,
         "neighbourhood": "San Lorenzo"
       },
       "story": "The tree standing today in the Cloister of the Platano is not the tree the cloister was named for, though it is, in a sense, the same organism. Legend credits the original planting to Saint Benedict of Norcia in the 5th or 6th century, using land donated for the monastery, and whether or not that founding story is literal, a plane tree of real age genuinely dominated this cloister for centuries, reaching a documented 8.45 metres in trunk circumference before termite damage forced its removal in 1959. Rather than replant from scratch, the monastery let the stump regrow from its own root system, so the tree visible today, now well past six decades old itself, is a direct continuation of the original rather than an unrelated replacement, a distinction this site is careful to draw clearly. The cloister itself, the oldest part of the complex, dates to the 10th century and carries a cycle of early 16th century frescoes depicting Saint Benedict's life on two of its four walls. The complex now houses Naples's State Archive, and the cloister remains publicly accessible during archive opening hours.",
       "verified_sources": [
         "https://it.wikipedia.org/wiki/Chiostri_dei_Santi_Severino_e_Sossio",
-        "https://www.napoligrafia.it/monumenti/chiostri/severinoSossio/severinoSossio.htm"
+        "https://www.napoligrafia.it/monumenti/chiostri/severinoSossio/severinoSossio.htm",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_280.html"
       ],
       "access": "Free, State Archive of Naples (check archive opening hours)",
       "transport": "10 min walk from Napoli Duomo metro",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chiostro_del_Platano._0035_%2823370556592%29.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Giuseppe Guida, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "1959 felling (8.45m circumference at removal) and root regrowth corroborated across two independent sources. The Saint Benedict planting legend is presented explicitly as legend, not fact, per the project's standard for unverifiable founding stories; current tree's age calculated from the 1959 regrowth date, not from the legendary original planting. No usable photo found.",
-      "location_precision": "approximate"
+      "notes": "1959 felling (8.45m circumference at removal) and root regrowth corroborated across two independent sources. The Saint Benedict planting legend is presented explicitly as legend, not fact, per the project's standard for unverifiable founding stories; current tree's age calculated from the 1959 regrowth date, not from the legendary original planting. Pin corrected 2026-07-26 against Campania's regional monumental-tree register (agricoltura.regione.campania.it, scheda 280, \"Platano dell'Archivio di Stato\"), which gives 40.848275, 14.258456 directly at the cloister, matching this entry's own age range (registry: 63 years) almost exactly; the previous pin was already very close (within a few metres). Photo found the same pass: the Italian Wikipedia article's own caption identifies this specific Commons file as showing \"the historic plane tree\" at the centre of the cloister, not just the building.",
+      "location_precision": "confirmed"
     },
     {
       "id": "nap_008",
@@ -277,8 +279,8 @@
       "age_max": 200,
       "location": {
         "address": "Villa Comunale, Riviera di Chiaia, 80121 Napoli",
-        "latitude": 40.8327,
-        "longitude": 14.2368,
+        "latitude": 40.833138,
+        "longitude": 14.237944,
         "neighbourhood": "Chiaia"
       },
       "story": "Naples's seafront garden holds five of the twenty-six trees the Campania region has catalogued as monumental across the whole city, and this Oriental plane, standing beside the Fontana dei Leoni near the garden's street boundary, is among the most substantial: 18 metres tall with a trunk 428cm across. The Villa Comunale itself dates to the years of French rule in the early 19th century, when Naples answered to Joseph Bonaparte and then Joachim Murat, and its planting scheme, planes alongside weeping willows, citrus and acacias, followed instructions traceable to that Bonapartist administration rather than to the Bourbon court that had governed the city before and would again after. The garden runs along the Chiaia waterfront between the sea and the city's grand 19th century apartment blocks, and this plane is one of three catalogued specimens of its species growing within it, alongside one monumental eucalyptus and a single giant palm that share the same official protected status.",
@@ -295,8 +297,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Dimensions (18m height, 428cm diameter) and location from the Campania region's own official monumental-trees register page; the garden's early 19th century Bonapartist-era planting history corroborated by Wikipedia's sourced article. No usable photo found.",
-      "location_precision": "approximate"
+      "notes": "Dimensions (18m height, 428cm diameter) and location from the Campania region's own official monumental-trees register page; the garden's early 19th century Bonapartist-era planting history corroborated by Wikipedia's sourced article. Pin tightened 2026-07-26 to the registry's own GPS (40.833138, 14.237944, 'adiacente alla Fontana dei leoni'), about 40m from the previous estimate. Two Wikimedia Commons photos near this entrance (Piazza Vittoria) were checked but neither's description confirms a plane tree is actually in frame, so no photo approved this pass.",
+      "location_precision": "confirmed"
     },
     {
       "id": "nap_010",
