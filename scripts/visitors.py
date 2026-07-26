@@ -32,12 +32,17 @@ def main():
         return 0
 
     try:
-        acc = gql(token, "{ viewer { accounts { accountTag } } }")
-        tags = [a["accountTag"] for a in (acc.get("data") or {}).get("viewer", {}).get("accounts", [])]
-        if not tags:
-            print("visitors: token cannot see an account (needs Account Analytics: Read, scoped to the account).")
-            return 0
-        account = tags[0]
+        # An Account Analytics: Read token may read the data without being
+        # allowed to enumerate accounts, so the tag can be supplied directly
+        # (CF_ACCOUNT_TAG, plain env in the workflow: it is an id, not a secret).
+        account = os.environ.get("CF_ACCOUNT_TAG", "").strip()
+        if not account:
+            acc = gql(token, "{ viewer { accounts { accountTag } } }")
+            tags = [a["accountTag"] for a in (acc.get("data") or {}).get("viewer", {}).get("accounts", [])]
+            if not tags:
+                print("visitors: no CF_ACCOUNT_TAG set and token cannot enumerate accounts.")
+                return 0
+            account = tags[0]
 
         since = (date.today() - timedelta(days=7)).isoformat()
         until = date.today().isoformat()
