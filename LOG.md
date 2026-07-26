@@ -17,32 +17,18 @@ If an entry has no `FOR HIDDE` line, nothing is waiting on you. That is the norm
 
 # Open with Hidde
 
-Standing list. Everything else in this file is history; this block is what is actually waiting.
+Standing list. Everything else in this file is history; this block is what is actually waiting. Refreshed 2026-07-26.
 
-### 1. ~~Make the submission form~~ — DONE 2026-07-21
+### 1. The budget ceiling number
+The hard rules still say max 50 euro a month, written before Claude Max. Runs weigh costs against that figure. One number from you and a run records it.
 
-Form is live and wired in. Every contribution button on the site points at it, and
-runs read the published CSV (email column excluded, so no address ever reaches a
-run or the public sheet). Form: `SUBMISSION_FORM_URL`, responses:
-`SUBMISSIONS_CSV_URL`, both in `scripts/build_site.py`.
+### 2. The design pass you announced
+You said the site is not yet at the level you want, especially design, and that you are coming back to it. The working format that went well: you bring a reference or a verdict, a session builds live with the browser open. The type system, four acts and radar page came out of exactly that.
 
-Only thing left on Hidde: nothing, until submissions arrive. Then he may want to
-mail the people who left an address to say their tree went live. That list lives
-in the private column of his own spreadsheet.
+### 3. Collection drafts will appear here
+The night runs draft collections (ancient oaks first) as needs_curation; each one lands here as a FOR HIDDE line for a quick yes or no.
 
-### 2. Illustrated icons (needs Hidde's eye, do it together)
-
-Map pins should move to the painterly style he asked for, and to leaf shapes so species actually differ. Six of Lisbon's ten trees still share one broadleaf silhouette. Deliberately not started alone: it is taste work.
-
-### 3. Unanswered question
-
-He said "je kan niet de website gratis maken". Everything so far assumes the opposite: the site stays free forever because it is the entire acquisition engine (blueprint P9), and the app is what people pay for. Worth settling, because it changes a lot.
-
-### 4. Later, not now
-
-Analytics once there is traffic, and cookieless to avoid a consent banner. Search Console reading needs his Google credentials; no data worth reading yet.
-
----
+Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
 ## 2026-07-26 — Verona: 1 more pin resolved, and a tool reliability limit caught before it caused harm
 
