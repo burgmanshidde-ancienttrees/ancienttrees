@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-20",
-  "note": "Wave order reversed 2026-07-26 evening on evidence: English-only pages plus search-only distribution make language-match decisive, and the UK was already our top Search Console country in week one. UK dense first, then Ireland, then the Netherlands (which revives as first priority if Hidde ever seeds locally or Dutch-language pages happen). Amsterdam stays the flawless reference city regardless.",
+  "note": "Queue principle settled 2026-07-26 after three pulls the same day: English-searching footfall times tree-oldness. UK dense first (travelers AND resident enthusiasts AND the best register), then Ireland, then the remaining European traveler capitals (Budapest, Krakow, Copenhagen, Stockholm, and on), then the Netherlands (locals search Dutch; revives on Dutch pages or local seeding). Future reorder suggestions get tested against this principle instead of restarting the debate.",
   "cities": [
     {
       "city": "Amsterdam",
@@ -290,6 +290,83 @@
       "status": "pending"
     },
     {
+      "city": "Budapest",
+      "country": "Hungary",
+      "tier": 2,
+      "slug": "budapest",
+      "status": "pending"
+    },
+    {
+      "city": "Krakow",
+      "country": "Poland",
+      "tier": 2,
+      "slug": "krakow",
+      "status": "pending"
+    },
+    {
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "tier": 2,
+      "slug": "copenhagen",
+      "status": "pending"
+    },
+    {
+      "city": "Stockholm",
+      "country": "Sweden",
+      "tier": 2,
+      "slug": "stockholm",
+      "status": "pending"
+    },
+    {
+      "city": "Dubrovnik",
+      "country": "Croatia",
+      "tier": 4,
+      "slug": "dubrovnik",
+      "status": "pending"
+    },
+    {
+      "city": "Zurich",
+      "country": "Switzerland",
+      "tier": 2,
+      "slug": "zurich",
+      "status": "pending"
+    },
+    {
+      "city": "Oslo",
+      "country": "Norway",
+      "tier": 4,
+      "slug": "oslo",
+      "status": "pending"
+    },
+    {
+      "city": "Helsinki",
+      "country": "Finland",
+      "tier": 4,
+      "slug": "helsinki",
+      "status": "pending"
+    },
+    {
+      "city": "Geneva",
+      "country": "Switzerland",
+      "tier": 2,
+      "slug": "geneva",
+      "status": "pending"
+    },
+    {
+      "city": "Warsaw",
+      "country": "Poland",
+      "tier": 4,
+      "slug": "warsaw",
+      "status": "pending"
+    },
+    {
+      "city": "Zagreb",
+      "country": "Croatia",
+      "tier": 4,
+      "slug": "zagreb",
+      "status": "pending"
+    },
+    {
       "city": "Utrecht",
       "country": "Netherlands",
       "tier": 2,
@@ -388,55 +465,6 @@
       "status": "pending"
     },
     {
-      "city": "Copenhagen",
-      "country": "Denmark",
-      "tier": 2,
-      "slug": "copenhagen",
-      "status": "pending"
-    },
-    {
-      "city": "Stockholm",
-      "country": "Sweden",
-      "tier": 2,
-      "slug": "stockholm",
-      "status": "pending"
-    },
-    {
-      "city": "Budapest",
-      "country": "Hungary",
-      "tier": 2,
-      "slug": "budapest",
-      "status": "pending"
-    },
-    {
-      "city": "Krakow",
-      "country": "Poland",
-      "tier": 2,
-      "slug": "krakow",
-      "status": "pending"
-    },
-    {
-      "city": "Zurich",
-      "country": "Switzerland",
-      "tier": 2,
-      "slug": "zurich",
-      "status": "pending"
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "tier": 2,
-      "slug": "geneva",
-      "status": "pending"
-    },
-    {
-      "city": "Warsaw",
-      "country": "Poland",
-      "tier": 4,
-      "slug": "warsaw",
-      "status": "pending"
-    },
-    {
       "city": "Gdansk",
       "country": "Poland",
       "tier": 4,
@@ -448,20 +476,6 @@
       "country": "Slovenia",
       "tier": 4,
       "slug": "ljubljana",
-      "status": "pending"
-    },
-    {
-      "city": "Zagreb",
-      "country": "Croatia",
-      "tier": 4,
-      "slug": "zagreb",
-      "status": "pending"
-    },
-    {
-      "city": "Dubrovnik",
-      "country": "Croatia",
-      "tier": 4,
-      "slug": "dubrovnik",
       "status": "pending"
     },
     {
@@ -490,20 +504,6 @@
       "country": "Bulgaria",
       "tier": 4,
       "slug": "sofia",
-      "status": "pending"
-    },
-    {
-      "city": "Helsinki",
-      "country": "Finland",
-      "tier": 4,
-      "slug": "helsinki",
-      "status": "pending"
-    },
-    {
-      "city": "Oslo",
-      "country": "Norway",
-      "tier": 4,
-      "slug": "oslo",
       "status": "pending"
     },
     {
