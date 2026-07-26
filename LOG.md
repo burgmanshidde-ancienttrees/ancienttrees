@@ -30,6 +30,13 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-26 — Amsterdam: Amstelveld gets a modern photo, three more gaps confirmed genuinely exhausted
+
+- Visitors: 47 visits, 76 page views over 7 days, flat (21st-26th: 8, 9, 10, 7, 4, 9). No submissions (CSV still just the header row). Continued rung 5's ladder at the top: Amsterdam, the reference city, still short of flawless before this pass (6/10 photos, 2/10 approximate).
+- Swapped the Amstelveld wingnuts' approved photo from a 1973 archival image to a 2022 CC0 photo of the same square, viewed and confirmed directly. Re-hunted the remaining 4 gaps (Heimanseik, Vondelpark poplar and Amstelkade olive willow photos; Hortus cycad and Amstelveld pin ambiguities) with fresh techniques and found nothing further usable; recorded each as a genuine dead end in CURATION.md rather than looped on, per the "hunt hard, then move on" rule.
+- Amsterdam stays at 6/10 photos (1 pending an identity check) and 2/10 approximate. Moving to Lisbon next per rung 5's order.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Verona: 1 more pin resolved, and a tool reliability limit caught before it caused harm
 
 - Followed up the Rome pass by trying the same Italian national monumental-tree registry on Verona, the worst-covered published city (8 of 8 approximate). Resolved the Ginkgo of Piazza Indipendenza to confirmed, matched with high confidence since the registry's own measurements are the exact figures already in this entry's story from an earlier pass.
