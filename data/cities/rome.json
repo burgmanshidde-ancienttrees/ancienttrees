@@ -66,15 +66,17 @@
       "age_max": 430,
       "location": {
         "address": "Valle dei Platani, Villa Borghese, 00197 Roma",
-        "latitude": 41.914,
-        "longitude": 12.484,
+        "latitude": 41.9155,
+        "longitude": 12.4882,
         "neighbourhood": "Villa Borghese, Pinciano"
       },
       "story": "Nine trees are what remain of the eleven Cardinal Scipione Borghese planted here four centuries ago. Adonis is the largest survivor: a vast, hollow-trunked oriental plane at the entrance to what is now called the Valley of the Plane Trees, planted in the early 1600s by the cardinal's gardener, Domenico Savini da Montepulciano. At around 425 years old, it and its siblings are described by Italian foresters as the only urban stand of ancient oriental planes left in the West, and the oldest living trees in Rome. In 2021 the garden cloned it, growing a sapling from a single leaf found sprouting on the fragile trunk. The clone, planted nearby as Adonis Junior, is genetically identical to a four-hundred-year-old tree despite being six years old at planting. It was a hedge against the inevitable: Adonis is hollow and propped, and a nearby oak from the same era, nicknamed the Quercia del Lupo for a wolf-shaped burl on its trunk and already documented in a memoir of the villa's gardens by the 1650s, collapsed in a storm in 2018 after three to five hundred years standing, accounts differ. Adonis is still leafing out every spring in the hunting park a cardinal built long before anyone thought to call it a public garden.",
       "verified_sources": [
         "https://turismoroma.it/en/news/villa-borghese-welcomes-first-clone-ancient-oriental-plane-tree",
         "https://www.romatoday.it/zone/parioli/pinciano/villa-borghese-platano-monumentale-clonato.html",
-        "https://phys.org/news/2021-01-rome-villa-borghese-clone-17th-century.html"
+        "https://phys.org/news/2021-01-rome-villa-borghese-clone-17th-century.html",
+        "https://ilregistrodeglialberi.it/9250-platano-orientale-roma-rm-lazio",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
       ],
       "access": "Free, open access, Villa Borghese",
       "transport": "10 min walk from Metro A Spagna, entering via Via Pinciana",
@@ -85,8 +87,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact coordinates are for the Valle dei Platani generally, not Adonis's specific trunk; needs on-the-ground pin confirmation. Planting year is given as 'early 1600s' by every source, none more precise. A candidate photo (a 2009 generic Platanus orientalis shot in Villa Borghese) was checked and rejected: its description does not name Adonis specifically and, given this entry own admitted imprecise pin, could easily show a different plane tree in the same grove.",
-      "location_precision": "approximate"
+      "notes": "Coordinates now come from Italy's national monumental tree registry (MASAF), which lists a single individually-catalogued Platanus orientalis at this exact site (Villa Borghese, Valle dei Platani), matching Adonis's description as the grove's one officially registered specimen; moved from a park-wide estimate to this registry point, about 290m away. The registry's own growth-based estimate gives 407 years against the 425 cited elsewhere, the same order of disagreement already carried openly on rom_005 and rom_006, so the age range here is left as is rather than resolved. A candidate photo (a 2009 generic Platanus orientalis shot in Villa Borghese) stays rejected: its description does not name Adonis specifically and could show a different plane tree in the same grove of nine survivors.",
+      "location_precision": "confirmed"
     },
     {
       "id": "rom_003",
@@ -276,14 +278,15 @@
       "age_max": 150,
       "location": {
         "address": "Viale Cardinale Francesco Spellman, Villa Celimontana, 00184 Roma",
-        "latitude": 41.8865,
-        "longitude": 12.4918,
+        "latitude": 41.8852,
+        "longitude": 12.4944,
         "neighbourhood": "Celio"
       },
       "story": "Villa Celimontana keeps two of Rome's officially monumental trees within a few meters of each other, and this Aleppo pine is the more unusual of the pair. Pinus halepensis is a Mediterranean coastal species, more at home on the cliffs above Aleppo or along the Ligurian shore than on the Caelian Hill, and its presence here fits the exotic-planting habit of the Mattei family, who turned a vineyard into this garden starting in 1572. The tree stands along Viale Cardinale Francesco Spellman near the villa's main entrance at Piazza della Navicella, its twisting, wind-shaped canopy a contrast to the straighter cedar growing almost beside it. No source gives the pine a precise planting date, only the national registry's designation as monumental for its age, dimensions and form, so this account states it as undocumented rather than invent a number. What is certain is the company it has kept: Renaissance nobles, then the Italian Geographical Society, which held the villa from 1926, and now Sunday footballers on the grounds nearby, all under the same slanted pine.",
       "verified_sources": [
         "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295",
-        "https://liguriaday.it/2025/09/22/villa-celimontana-il-giardino-segreto-dove-roma-si-racconta/"
+        "https://liguriaday.it/2025/09/22/villa-celimontana-il-giardino-segreto-dove-roma-si-racconta/",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
       ],
       "access": "Free, open access, Villa Celimontana",
       "transport": "5 min walk from Metro B Colosseo, via Piazza della Navicella",
@@ -294,8 +297,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source gives a planting date or age figure; the municipal registry designates it monumental without a number. Age range here is a conservative placeholder, not a sourced estimate. Coordinates are approximate and need on-the-ground confirmation.",
-      "location_precision": "approximate"
+      "notes": "No source gives a planting date or age figure; the municipal registry designates it monumental without a number. Age range here is a conservative placeholder, not a sourced estimate. Coordinates now come from Italy's national monumental tree registry (MASAF), the only Pinus halepensis entry at this Viale Cardinale Spellman site, about 210m from the previous general estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "rom_010",

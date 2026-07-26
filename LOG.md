@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Rome: 2 pins resolved via Italy's national monumental tree registry
+
+- Visitors: 43 visits, 69 page views over 7 days, flat (2026-07-20 to 2026-07-26: 8, 9, 10, 7, 4, 5). No new submissions, CSV still just the header row.
+- Followed rung 5's order from the top: Amsterdam, Lisbon and Istanbul all got a genuine fresh attempt with new techniques (Amsterdam's own "special trees" GeoJSON layer, Lisbon's Commons categories and Portugal's national tree register, Istanbul's anıtağaç site source) and all three stayed dead ends, mostly for tooling reasons (files too large to fetch in full, a JS-rendered map with no exposed API) rather than the data genuinely not existing. Worth another look with better fetch tools. Full detail in CURATION.md.
+- **Rome** paid off: found Italy's national monumental tree registry (MASAF), a downloadable per-region spreadsheet with individual GPS coordinates for every officially registered monumental tree. Matched Adonis and the Aleppo Pine of Celimontana each to their own single registry entry at the exact named site, moving both from park-wide estimates to confirmed pins (290m and 210m corrections). One near miss caught and rejected: a registry tree at the Cedar of the Belvedere's exact site turned out to be a stone pine, not this tree's cedar of Lebanon, so that pin stays approximate rather than borrow the wrong tree's coordinates.
+- Rome now at 2 of 10 approximate pins (from 4). Photos unchanged at 5/10; fresh iNaturalist checks at the newly precise coordinates found nothing openly licensed. This Italian government registry is untried on Florence, Milan, Venice, Verona, Naples and Bologna, worth a future pass.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Kyoto's Munakata camphor resolved; Seville and Florence tried, genuinely stayed dead
 
 - Visitors were checked at the start of this session (43 visits, 69 page views over 7 days, flat); no submissions.
