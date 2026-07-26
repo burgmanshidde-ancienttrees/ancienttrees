@@ -92,6 +92,10 @@ Someone submits a tree and then hears nothing, because nobody may write to them 
 
 **Trigger:** the first real submission arriving.
 
+## Logo and favicon: parked 2026-07-26 after a rejected first round
+
+Three flat vector directions (tree rings, oak roundel, ginkgo leaf) were proposed and Hidde rejected all three: "ik vind de stijlen niks." The likely root cause is on record and should steer the next attempt: his stated art direction is painterly and illustrated, Polarsteps-like, not flat graphic marks. A next round starts from illustration, not geometry, and only when he asks for it.
+
 ## Illustrated map pins
 
 Painterly per-species icons instead of the current shared silhouettes. Six of Lisbon's ten trees still share one broadleaf shape.
