@@ -52,12 +52,22 @@ jobs:
 
       - name: Run the research workflow from CLAUDE.md
         uses: anthropics/claude-code-action@v1
+        env:
+          # The runs' eyes: lets a run read the visitor trend itself via
+          # scripts/visitors.py and carry it into LOG.md. Absent secret = the
+          # script prints one line and the run continues blind, never broken.
+          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
             You are running the autonomous research workflow for the Ancient Trees
             project. Read CLAUDE.md in the repository root and execute "The research
             workflow (autonomous run)" exactly as written.
+
+            Begin every run with: python3 scripts/visitors.py. Carry its 7-day
+            visits line into your LOG.md entry, and let it steer depth choices
+            (deepen what people actually visit). If it says no token or refuses,
+            skip it silently and work on.
 
             Step 0 holds a priority ladder; work out which rung applies and do that.
             Reader submissions outrank everything. Something published being wrong
