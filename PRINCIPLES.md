@@ -36,7 +36,9 @@ What we have learned from comparable products (AllTrails, Polarsteps, Strava, At
 
 6. **Progressive disclosure.** Lead with the one thing that matters, reveal depth on demand. A tree page opens with the story and the walk, not a wall of fields.
 
-7. **Trust through honesty is the moat.** Every honest label (an approximate pin that says so, "not finished yet") is a deposit in the one account competitors cannot copy. Never trade it for polish or growth.
+7. **Convention over invention for solved UX (Hidde, 2026-07-26).** Login, onboarding, forms, sharing, settings, empty states: these are solved problems with conventions users already know from the big apps. Research the leading pattern first, then build exactly that in our skin. The novelty budget is spent on the content, the game and the voice, never on plumbing UX: a surprising sign-in flow is a bug, not a feature.
+
+8. **Trust through honesty is the moat.** Every honest label (an approximate pin that says so, "not finished yet") is a deposit in the one account competitors cannot copy. Never trade it for polish or growth.
 
 ## How to use this
 
