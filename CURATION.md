@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Paris clears the exit-test bar: 2 photos found, now 8/10 photos and 0/10 approximate
+
+- Moved to the rest of the lead group after Amsterdam/Lisbon/Istanbul/Rome. Paris was at 6/10 photos (needs 8+) with pins already fully resolved, so this pass was photo-only on its 4 remaining gaps.
+- **The Second Robinier**: found a public-domain Commons photo whose own caption names this exact tree ("Robinier de Robin du XVIIe siecle, Jardin des Plantes de Paris"), not just the species. Distinct from Paris's more famous 1601 black locust at Square Rene-Viviani, the correct sibling specimen. Approved.
+- **The Sequoia of Buttes-Chaumont**: found a CC BY 4.0 Commons photo taken this month (July 2026), whose own embedded GPS coordinates land about 10m from this tree's confirmed pin, independent confirmation of both species and location. Approved.
+- **The Plane of Parc Montsouris** and **The Sophora by the Lake** stayed genuine dead ends: the plane has no captioned or geotagged Commons photo distinguishing it from the park's many other planes; the sophora has iNaturalist observations at the right spot but every one is CC-BY-NC, and Paris.fr's own editorial photo of it (it holds the "Arbre remarquable de France" label) carries no open license.
+- Paris now at 8 of 10 photos (from 6) and 0 of 10 approximate, clearing the depth-exit-test bar for this city.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Rome: no photo changes, one candidate needs a visual check, one near-miss stayed unresolved on purpose
 
 - Continuing rung 5's order after Istanbul. Rome sits at 5/10 photos (floor is 8+), already within the pin target, so this pass was photo-only on the 5 remaining gaps. Browsed Wikimedia Commons categories directly (not just text search) for the relevant gardens, checked Flickr/Openverse and Italy's registries.

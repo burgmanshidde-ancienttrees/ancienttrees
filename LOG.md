@@ -37,6 +37,13 @@ Everything else that used to sit here is done or recorded: the submission form i
 - Verona now at 7 of 8 approximate pins (from 8).
 - Site rebuilt, all contracts validated, pushed.
 
+## 2026-07-26 — Paris clears the depth-exit-test bar: 2 photos found
+
+- Moved to the rest of the lead group after Amsterdam, Lisbon, Istanbul and Rome (Istanbul and Rome yielded no changes this round, recorded in CURATION.md). Paris needed photos only (6/10, pins already all confirmed).
+- Found and verified two: the Second Robinier, whose own Commons caption names this exact 1636 tree rather than just the species, and the Sequoia of Buttes-Chaumont, whose photo's embedded GPS lands 10m from the stored pin.
+- Paris now at 8/10 photos and 0/10 approximate, meeting the depth-exit-test bar from CLAUDE.md rung 6 for this city. Six of the eight priority cities now need work: Amsterdam (6/10 photos), Lisbon (5/10), Istanbul (2/10, 8 approximate), Rome (5/10). Tokyo and London already met the bar earlier.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Lisbon: one photo found, five stayed genuine dead ends
 
 - Continued rung 5 after Amsterdam. Lisbon needed photos (4/10, floor is 8+) more than pins (already 2/10 approximate). Found and verified a CC BY-SA 4.0 photo for the Santo Amaro olive trees, matched by its own description and a heritage reference number to the exact four trees the story describes.
