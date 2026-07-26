@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Kyoto: 2 pins resolved, caught a species tag error rather than trusting the source
+
+- With the eight lead-group cities heavily worked by concurrent runs today, followed rung 5's next instruction (marquee Europe/Japan, oldest-first) to Kyoto, the oldest still-approximate city after the lead group.
+- The Land Boat Pine and the Reclining Dragon Pine both matched to OpenStreetMap nodes carrying their own Japanese names (陸舟の松, 遊龍松), moving each pin 40-60m to the tree's actual surveyed position. The dragon pine's OSM node also carried a species tag that contradicted our own sourcing (black pine vs. the five-needle pine two independent sources and the story itself describe); used the location, dropped the wrong species rather than overwrite good sourcing with a stranger's tag. Full detail in CURATION.md.
+- Kyoto now at 2 of 10 approximate pins (from 4), still 4 of 10 photos. Two more approximate trees left unchecked: Overpass timed out repeatedly on both, not concluded exhausted.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Depth sweep (Barcelona, Rome, Amsterdam, Istanbul, Lisbon): genuine attempts, no new ground this pass
 
 - Visitors, 7 days: 43 visits, 69 page views (2026-07-20 to 2026-07-26: 8, 9, 10, 7, 4, 5 visits), flat and too low yet to point depth work at a specific tree from traffic alone.

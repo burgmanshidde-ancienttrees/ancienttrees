@@ -35,15 +35,16 @@
       "age_max": 650,
       "location": {
         "address": "1372 Oshio-cho, Oharano, Nishikyo-ku, Kyoto 610-1133",
-        "latitude": 34.938167,
-        "longitude": 135.644194,
+        "latitude": 34.93828,
+        "longitude": 135.6449362,
         "neighbourhood": "Oharano, Nishikyo-ku"
       },
       "story": "This pine grows sideways, not up. Standing above the stone steps between Yoshimine-dera's main hall and its pagoda, the tree's trunk runs almost flat along a terrace rather than climbing skyward the way pines usually do, a five-needle pine trained or simply left to sprawl for over six centuries. A 19th century official, Hanayama's former minister Ieatsu, named it in 1857: Yuryu, the playing dragon, for the way its horizontal length resembles a dragon lounging on the ground. It once reached 50 metres end to end, long enough to rank as one of the longest documented pine specimens in Japan, until pine bark beetles infested it in 1994 and roughly 15 metres had to be cut away to save what remained. At its current 37 metres it is still one of the three trees Kyoto traditionally names as its most celebrated pines, and it remains a nationally designated natural monument, protected status Japan reserves for a small number of trees each century.",
       "verified_sources": [
         "https://www.begin.or.jp/~marusei/yuuryuunomatu.htm",
         "https://totteoki.kyoto.travel/34557/",
-        "https://ecoloquia.co.jp/20220110-02/"
+        "https://ecoloquia.co.jp/20220110-02/",
+        "https://www.openstreetmap.org/node/12358009109"
       ],
       "access": "Paid entry to Yoshimine-dera (500 yen adult)",
       "transport": "Hankyu Bus to Yoshiminedera stop, 8 min walk uphill",
@@ -54,8 +55,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Temple coordinates are confirmed; the pine's specific position within the temple grounds (above the steps between the main hall and pagoda) is described only relatively in sources, not surveyed.",
-      "location_precision": "approximate"
+      "notes": "OpenStreetMap carries a contributor-mapped, heritage-tagged node named \"遊龍松\" (Yuryu-matsu) at this spot, matching the tree's own Japanese name exactly and its 1932 national-monument designation; its species tag (Pinus thunbergii) contradicts our own two independent sources, which agree this is a five-needle pine (Pinus parviflora, matching the story's description), so the location was used but the species tag was not.",
+      "location_precision": "confirmed"
     },
     {
       "id": "kyo_002",
@@ -66,15 +67,16 @@
       "age_max": 620,
       "location": {
         "address": "Kinkakuji-cho 1, Kita-ku, Kyoto 603-8361",
-        "latitude": 35.039156,
-        "longitude": 135.72926,
+        "latitude": 35.0394604,
+        "longitude": 135.7290207,
         "neighbourhood": "Kinkakuji, Kita-ku"
       },
       "story": "Ashikaga Yoshimitsu, the shogun who built the Golden Pavilion, once kept this tree as a bonsai in a pot. Sometime after Yoshimitsu's death in 1408, his potted pine was planted in the ground beside Kinkaku-ji's Kyoko-chi pond and trained into the shape of a sailing ship, its trunk and branches clipped over generations to suggest a hull, a mast and a bow pointed deliberately west, toward the Buddhist Pure Land. The result, Rikushu-no-matsu, land boat pine, has been maintained in that same nautical silhouette for roughly six centuries, making it one of the longest continuously shaped ornamental pines in Japan and one of the three trees Kyoto names among its most celebrated. Nineteenth century photographs from the 1870s and 1880s already show it in recognizably the same boat form it holds today, meaning the shape itself, not just the tree, has outlasted the Meiji Restoration, two world wars and the reconstruction of the pavilion after a 1950 arson fire.",
       "verified_sources": [
         "https://commons.wikimedia.org/wiki/File:Rikushu-no-matsu_pine_tree_in_Rokuonji_Temple.JPG",
         "https://takumist.wordpress.com/2018/12/09/visiting-rikushu-no-matsu-%E9%99%B8%E8%88%9F%E3%81%AE%E6%9D%BE/",
-        "https://kazahana.holy.jp/kinkakuji.html"
+        "https://kazahana.holy.jp/kinkakuji.html",
+        "https://www.openstreetmap.org/node/3521144622"
       ],
       "access": "Paid entry to Kinkaku-ji",
       "transport": "Kyoto City Bus 101/205 to Kinkakuji-michi, 3 min walk",
@@ -85,8 +87,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Temple-level coordinates confirmed; the tree's exact position beside Kyoko-chi pond within the temple grounds is not separately surveyed.",
-      "location_precision": "approximate"
+      "notes": "OpenStreetMap carries a contributor-mapped, survey-sourced node named \"陸舟の松\" (Rikushu Pine) at this spot, matching the tree's own name exactly.",
+      "location_precision": "confirmed"
     },
     {
       "id": "kyo_003",
