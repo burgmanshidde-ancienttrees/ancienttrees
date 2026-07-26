@@ -291,13 +291,13 @@
       "access": "Free, public garden",
       "transport": "6 min walk from Restauradores station (Metro Blue Line)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/446773354/large.jpeg",
+        "license": "CC0",
+        "attribution": "bobcat-otter, iNaturalist",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "This paineira is one of six individually classified trees within a nine-tree ensemble at Jardim Alfredo Keil, classified collectively in 2017. No source isolates this specimen's individual age.",
+      "notes": "This paineira is one of six individually classified trees within a nine-tree ensemble at Jardim Alfredo Keil, classified collectively in 2017. No source isolates this specimen's individual age. Photo is iNaturalist observation 249878863 (2024-10-31), a Ceiba speciosa in bloom 28m from this pin, well within the small garden; species ID is the observer's own vision-assisted call (casual grade) rather than community-confirmed, and this run's tools could not open the image file to visually check it shows the tree itself, so left as found_needs_check rather than approved.",
       "location_precision": "approximate"
     },
     {
