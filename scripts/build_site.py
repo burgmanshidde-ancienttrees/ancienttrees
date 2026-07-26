@@ -249,7 +249,13 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
 .footer-note { font-size: 12px; color: var(--ink-light); }
 
 /* ---- Markers ---- */
-.pin { width: 30px; height: 30px; border-radius: 50%; background: var(--moss); border: 2px solid #fff; box-shadow: 0 2px 8px rgba(26,26,20,0.35); cursor: pointer; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 12px; font-weight: 600; font-family: var(--sans); transition: transform 0.15s, background 0.15s; }
+.pin { padding: 2px 8px; border-radius: 999px; background: var(--moss); border: 1.5px solid #fff; box-shadow: 0 2px 8px rgba(26,26,20,0.35); cursor: pointer; color: #fff; font-size: 10.5px; font-weight: 600; font-family: var(--sans); white-space: nowrap; transition: transform 0.15s, background 0.15s; }
+.pin:hover { transform: scale(1.1); z-index: 5; }
+.hero-search { display: flex; gap: 0.5rem; margin-top: 0.9rem; }
+.hero-search input { flex: 1; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 8px; padding: 0.65rem 0.9rem; font-family: var(--sans); font-size: 15px; background: #fff; color: var(--ink); }
+.hero-search input:focus { outline: 2px solid var(--moss); border-color: var(--moss); }
+.hero-search .go-btn { margin-top: 0; }
+.go-btn.ghost { background: none; color: var(--moss); border: 1px solid var(--moss); }
 .pin:hover { transform: scale(1.15); }
 .pin.active { background: var(--ink); transform: scale(1.25); z-index: 5; }
 
@@ -1037,8 +1043,11 @@ function initNearMe() {{
 var map = new maplibregl.Map({{
   container: 'map',
   style: '{MAP_STYLE}',
-  center: [10, 35],
-  zoom: 1.7,
+  // Opens on Europe: 30 of 33 cities stand there and the pills need room to
+  // breathe. The rest of the world is a drag or a search away, and the
+  // near-me button flies wherever you actually are.
+  center: [6, 47.5],
+  zoom: 3.1,
   scrollZoom: false
 }});
 map.addControl(new maplibregl.NavigationControl());
@@ -1047,7 +1056,8 @@ new ResizeObserver(function() {{ map.resize(); }}).observe(document.getElementBy
 markers.forEach(function(m) {{
   var el = document.createElement('div');
   el.className = 'pin';
-  el.textContent = m.label;
+  el.textContent = m.city;
+  el.title = m.label + ' trees';
   el.addEventListener('click', function() {{
     map.flyTo({{ center: [m.lng, m.lat], zoom: 9, duration: 1400 }});
     setTimeout(function() {{ window.location.href = m.url; }}, 1500);
@@ -1055,6 +1065,21 @@ markers.forEach(function(m) {{
   new maplibregl.Marker({{ element: el }}).setLngLat([m.lng, m.lat]).addTo(map);
 }});
 initNearMe();
+// The search bar: the front door for people who know where they are going.
+var sf = document.getElementById('city-search');
+if (sf) {{
+  sf.addEventListener('submit', function(e) {{
+    e.preventDefault();
+    var q = document.getElementById('city-q').value.trim().toLowerCase();
+    if (!q) return;
+    var hit = markers.find(function(m) {{ return m.city.toLowerCase() === q; }}) ||
+              markers.find(function(m) {{ return m.city.toLowerCase().indexOf(q) === 0; }}) ||
+              markers.find(function(m) {{ return m.city.toLowerCase().indexOf(q) !== -1; }});
+    var out = document.getElementById('near-me-result');
+    if (hit) {{ window.location.href = hit.url; }}
+    else {{ out.innerHTML = 'Not mapped yet. <a href="contribute">Be the first to map it</a>, or try the location button.'; }}
+  }});
+}}
 </script>
 """
 
@@ -2005,6 +2030,7 @@ def build_homepage(published, upcoming, collections, pages):
         for c in collections
     )
 
+    city_options = "".join(f'<option value="{esc(p["city"])}">' for p in published)
     contribute_cta = f'<a class="home-cta" href="{submit_link("home")}">Add a tree or a city</a>'
     # Empty until Hidde sets up somewhere to receive it. Donations rather than a
     # paywall: the content stays free and indexable, and there is no account, no
@@ -2020,7 +2046,12 @@ def build_homepage(published, upcoming, collections, pages):
     <h1>Epic old trees, <em>wherever you are</em>.</h1>
     <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of.</p>
     <p class="hero-note">Free, no account, no ads. Made by tree lovers, for tree lovers.</p>
-    <button type="button" id="near-me" class="go-btn">Find trees near me</button>
+    <form id="city-search" class="hero-search" autocomplete="off">
+      <input type="text" id="city-q" list="city-options" placeholder="Search a city, or use your location..." aria-label="Search for a city">
+      <datalist id="city-options">{city_options}</datalist>
+      <button type="submit" class="go-btn">Go</button>
+    </form>
+    <button type="button" id="near-me" class="go-btn ghost">Find trees near me</button>
     <p id="near-me-result" class="near-me-result"></p>
   </div>
 </div>

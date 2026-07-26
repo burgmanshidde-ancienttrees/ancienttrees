@@ -6,6 +6,22 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## The next coverage wave: home-country density, not more world cities
+
+Decided in discussion with Hidde 2026-07-26. When the depth phase completes and coverage reopens, the next wave is not the remaining world list but the Netherlands, dense: Utrecht, Rotterdam, Den Haag, Haarlem, Groningen, Leiden, Delft, Maastricht, Nijmegen, Breda and onward, so that a Dutch collector has a real collecting field at home.
+
+The reasoning, so it does not have to be re-argued: world cities and collections serve the searcher (acquisition); home-country density serves the resident collector, who is the person that returns, collects for months and eventually pays (retention). Density needs no search volume because collectors arrive via the map, not Google, so small-city pages are for the collector's map, not for ranking. A licence correction from 2026-07-26 tempers the economics: the Bomenstichting register turned out to be CC-BY-NC (see OPEN_DATA_SURVEY.md), so it is a research lead list, never an import source for a commercial product. Confirmed pins come instead from municipal government open data (licences to be read per city) and our own two-source verification. Hidde can verify in person, and the collector logic stands unchanged.
+
+**Trigger:** depth phase done (Amsterdam flawless, lead-group cities at the photo floor with pins resolved), and Hidde reopening coverage (ladder rung 6).
+
+**Needs Hidde:** only the reopen decision. Research is runs' work, and the register licence check must happen before any import (see OPEN_DATA_SURVEY.md).
+
+## More collections from existing data
+
+Hidde's read 2026-07-26: collections may be the best SEO value per page, and they are nearly free now, since a new collection recombines the 328 trees already researched, zero new research. Candidates: oldest oaks of Europe, ginkgos worth a November trip, trees older than the city around them, wisteria and blossom trees for spring. Runs may draft them (status needs_curation); per Contract D nothing publishes without Hidde's approval.
+
+**Trigger:** none for drafting; Hidde's approval per draft for publishing.
+
 ## Let runs read the visitor numbers
 
 A run cannot currently see Cloudflare analytics: the numbers need Hidde's login, and reading them would mean putting a Cloudflare API token in the repo or the GitHub environment. That is a new secret that can leak and a new third-party dependency (hard rule 5), and it puts a first crack in the deliberate separation that keeps visitor and personal data on Hidde's side rather than a run's. Worth it later, not now: today the number is almost certainly zero, so a run would add a key and a dependency to read a nought.
