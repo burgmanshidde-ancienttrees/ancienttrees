@@ -49,6 +49,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 - All three secrets are in: the runs now read their own visitor numbers at the start of every pass (first reading: 43 visits, 69 page views over seven days, a steady 4 to 10 a day), and from the next completed run onward every run dispatches its successor. No cron luck, no human trigger, around the clock, bounded only by the usage limit.
 - Nothing structural waits on Hidde anymore. What remains his: FOR HIDDE approvals here, taste (logo parked at his call), the budget ceiling number for the hard rules (still open), and the end-of-August reassessment.
 
+## 2026-07-26 — Vienna: 3 of 5 approximate pins resolved
+
+- Continuing rung 5's marquee-Europe order, Vienna next (already at 10/10 photos). Its protected trees carry individual Naturdenkmal numbers, and two already-approved Commons photos turned out to be geotagged at the tree itself by their photographer (a Vienna monuments specialist), plus a German tree register (baumkunde.de) independently publishes GPS for named specimens. Used both to confirm 3 pins 80-150m tighter than the previous address-level estimates. Full detail in CURATION.md.
+- Vienna now at 2 of 10 approximate pins (from 5): one stays an honest ensemble (a whole chestnut avenue), one (the Schönbrunn ginkgo) couldn't be independently re-verified this pass, a source went unreachable on retry.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Berlin: reached 8/10 photos and 0/10 approximate pins
 
 - Continuing rung 5's marquee-Europe order past Kyoto, picked Berlin as the closest published city to fully clearing both bars (was 7/10 photos, 2/10 approximate).
