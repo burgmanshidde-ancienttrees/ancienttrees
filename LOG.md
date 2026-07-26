@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Depth sweep (Barcelona, Rome, Amsterdam, Istanbul, Lisbon): genuine attempts, no new ground this pass
+
+- Visitors, 7 days: 43 visits, 69 page views (2026-07-20 to 2026-07-26: 8, 9, 10, 7, 4, 5 visits), flat and too low yet to point depth work at a specific tree from traffic alone.
+- Several other runs were working the same ladder concurrently today: by the time this pass started, Tokyo, London, Amsterdam's Heimanseik and Barcelona's first four pins were already resolved (this session's own independent Tokyo attempt lost that race to a better-sourced version using OpenStreetMap named-tree nodes, which is the one that stands; no harm done, just discarded before pushing). Moved to what was still open.
+- Tried genuinely, found nothing new: Barcelona's last 4 photo gaps (Commons, iNaturalist, Openverse, all empty), Rome's pins and photos (OSM tree nodes exist near all three target trees but none match on species or name, one iNaturalist near-match for the cork oak is fully unlicensed), Amsterdam's Amstelkade Olive Willow (OSM nodes nearby, none named or species-tagged). Full detail, including two Lisbon iNaturalist candidates rejected for being CC-BY-NC rather than an allowed license, in CURATION.md.
+- Istanbul's OSM queries all hit HTTP 504 this pass, an Overpass service issue rather than a data dead end; worth retrying, not counted as exhausted.
+- No data changed, nothing to rebuild or push beyond this log and CURATION.md.
+
 ## 2026-07-26 — Barcelona: found a genuine location error, not just imprecision
 
 - Continuing the same session, next untouched lead city: Barcelona. Barcelona keeps its own official "Arbres d'interes local" catalogue, and OpenStreetMap carries it as individually tagged tree nodes, same trick as Tokyo and Amsterdam above.
