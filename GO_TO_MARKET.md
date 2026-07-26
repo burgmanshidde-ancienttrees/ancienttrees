@@ -62,7 +62,7 @@ Every phase after 0 is gated on a demand signal, and that signal currently reads
 
 Set 2026-07-26, when Hidde asked whether the project is worth continuing. The answer then: the first leading indicator (search impressions doubling daily, page-one rankings within five days of sitemap submission) arrived faster than this plan predicted, and the cost of the full answer is a Claude subscription and light attention. So the experiment runs to a checkpoint rather than being read halfway.
 
-**Review at the end of August 2026.** By then depth is done and the Netherlands wave should be live. Healthy looks like: organic clicks growing week over week into the tens, any stranger checking in a tree or submitting one, any returning visitors in Cloudflare. Failing looks like: clicks flat near zero despite the depth work and the new wave, no submission, no check-in evidence. If it is failing, the honest reading is narrow: it does not say the product is dead, it says the search channel alone is not enough, because that is all this experiment tests. The options then, in order of cheapness: change the distribution stance (the fix that costs a post), change the product bet, or wind down. The date exists so that choice is made consciously with numbers on the table, instead of the project drifting on habit or dying quietly of doubt.
+**Review at the end of August 2026.** By then depth is done and the UK wave should be live. Per Hidde's ruling of 2026-07-26, the checkpoint judges the search trajectory only: healthy is impressions and clicks growing week over week into the tens; failing is clicks flat near zero despite the depth work and the new wave. Check-ins and submissions are welcome surprises, not criteria: the web's functions are not the product being judged, the app's will be. If it is failing, the honest reading is narrow: it does not say the product is dead, it says the search channel alone is not enough, because that is all this experiment tests. The options then, in order of cheapness: change the distribution stance (the fix that costs a post), change the product bet, or wind down. The date exists so that choice is made consciously with numbers on the table, instead of the project drifting on habit or dying quietly of doubt.
 
 Until then, doubt between checkpoints is normal and not a signal. The machine runs itself; the answer is being bought cheaply; read it when it is ready.
 
@@ -81,3 +81,14 @@ The queue order changed three times in one day, each swing well-argued and none 
 **5. Coverage order is third-order and is hereby settled** (the footfall-times-oldness principle). It changes again only on new evidence, defined as data, not as a fresh angle in conversation.
 
 Standard from here: any proposed strategy change gets an effect-size estimate against this list before it gets agreement. Agreeing quickly is cheap; ranking honestly is the job.
+
+## Hidde's rulings on the four levers, 2026-07-26 evening
+
+He weighed the ranked list himself and ruled on each. These stand until he changes them.
+
+1. **Distribution: agreed, but deliberately deferred behind a design bar.** No big announcement until the site looks the way he wants; design is his, and he is coming back to it. Phase 0's job sharpens accordingly: be worth arriving at before being pointed at.
+2. **The revenue arithmetic: parked.** The few-thousand-a-month figure was loose talk, not a commitment. Decision deferred until there is more knowledge; build so all four paths (bigger audience, keepsake, sponsorship, higher price) stay open.
+3. **Retention proof: not the web's job.** His read: the loop (check-in, collecting) only truly works in an iOS app, and the web functions are not at a level to be judged by. So the hunt for retention signal on the web stops being a gate. Consequence, applied below: the August checkpoint judges the search trajectory only (impressions and clicks growing), and the absence of check-ins or submissions no longer counts as failure evidence.
+4. **November: de-weighted at his call.** Seasons recur; he expects little from it. The radar and the ginkgo collection still ship, but as SEO and product work on their own merits, not as a bet on a date.
+
+**The resulting division of labour, which is now the strategy in one line: the machine makes the database better and the SEO work; Hidde does design and the app's functionality.** Clean lanes, no gates between them.
