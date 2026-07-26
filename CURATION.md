@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Lisbon clears the pin half of the exit-test bar: both approximate pins resolved via Portugal's national tree registry
+
+- Continued rung 5 after Amsterdam. Lisbon was at 5/10 photos (floor is 8+) and 2/10 approximate; this pass found a new source, ICNF's national registry of classified public-interest trees (`sigservices.icnf.pt/server/rest/services/BDG/AIP/MapServer/0`), and used it on both remaining approximate pins.
+- **The Nettle Tree of Avenida de Berlim, a real correction, not just imprecision**: the registry's own entry (feature 283, processo KNJ1/405) names the exact junction the story describes and gives a GPS point about 900m from the stored pin, which had been a general-avenue geocode. Moved to confirmed at the registry coordinates. The same record's measured age (75 years in 2015, roughly 86 today) also conflicts with the two original tourism-site sources' "100 years" claim; treated the direct government physical survey as authoritative over undated blog estimates and corrected the age fields and story text accordingly, rather than just flagging the discrepancy.
+- **The Paineira of Jardim Alfredo Keil**: the registry's ensemble entry (feature 316, a conjunto arboreo protected since 1970 with a 2017 addition) lists exactly the garden's known species mix and sits within 2m of the already-stored pin. Moved to confirmed, noting plainly that the classification covers the nine-tree ensemble rather than isolating this one paineira from its neighbours, same limitation the story itself already states.
+- Lisbon now at 0/10 approximate pins (from 2), meeting that half of the depth-exit-test bar. Photos stay at 5/10: retried the Nettle Tree's photo at its newly correct coordinates via iNaturalist and Wikimedia geosearch, still a genuine dead end. The other 4 photo gaps (Tipu, Coral Trees, Ginkgo, Rubber Tree) were not retried this pass, already recorded as exhausted earlier today.
+- ICNF's registry is untried on Porto's remaining approximate pins and photo gaps, worth a future pass given today's result here.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Amsterdam: Amstelveld gets a modern photo, three photo gaps and two approximate pins confirmed as genuine dead ends
 
 - Continued rung 5 at the top of the ladder: Amsterdam, the reference city, still short of flawless (6/10 photos, 2/10 approximate before this pass, after earlier passes today already resolved the Amstelkade pin and Vondelpark ambiguity). Delegated one more exhaustive research pass across all 5 remaining gaps before accepting any as exhausted.
