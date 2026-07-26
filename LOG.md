@@ -49,6 +49,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 - All three secrets are in: the runs now read their own visitor numbers at the start of every pass (first reading: 43 visits, 69 page views over seven days, a steady 4 to 10 a day), and from the next completed run onward every run dispatches its successor. No cron luck, no human trigger, around the clock, bounded only by the usage limit.
 - Nothing structural waits on Hidde anymore. What remains his: FOR HIDDE approvals here, taste (logo parked at his call), the budget ceiling number for the hard rules (still open), and the end-of-August reassessment.
 
+## 2026-07-26 — Every found_needs_check photo on the site cleared in one pass
+
+- Discovered this run's tools actually can open fetched images (fetch the URL, then read the saved file back) after believing otherwise. Went back through the whole site rather than just today's own work: 15 photos across Florence, Kyoto, Berlin, Dublin, Lyon, Munich, Nice, Valencia and Venice were sitting at `found_needs_check` from this run and earlier ones this week. Viewed every one directly. 14 clearly matched their tree and moved to `approved`; 1 (Venice's San Servolo olive) turned out to be a distant island aerial with no tree visible, moved honestly to `missing` instead of left stuck.
+- Along the way, found and approved one new photo for Florence (a cork oak in the Giardino dei Semplici, via iNaturalist) and caught a real near-miss: a felled "200-year Cedar of Lebanon" in the news turned out to be at Boboli Gardens (Pitti Palace), not our similarly-named Giardino del Bobolino tree near Porta Romana. Different gardens, tree unaffected. Full detail in CURATION.md.
+- Zero `found_needs_check` photos remain anywhere on the site as of this commit.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Vienna: 3 of 5 approximate pins resolved
 
 - Continuing rung 5's marquee-Europe order, Vienna next (already at 10/10 photos). Its protected trees carry individual Naturdenkmal numbers, and two already-approved Commons photos turned out to be geotagged at the tree itself by their photographer (a Vienna monuments specialist), plus a German tree register (baumkunde.de) independently publishes GPS for named specimens. Used both to confirm 3 pins 80-150m tighter than the previous address-level estimates. Full detail in CURATION.md.

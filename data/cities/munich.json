@@ -110,10 +110,10 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Friedenseiche_Flaucheranlagen_Muenchen-1.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Rufus46, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Planting date (1 July 1871) is explicit on the tree's own plaque per stadtgeschichte-muenchen.de, so age is calculated directly rather than estimated. Photo filename and Commons category both explicitly confirm this exact tree and location, a strong textual match, but this run's tools could not open the image to visually confirm content, so marked found_needs_check rather than approved.",
+      "notes": "Planting date (1 July 1871) is explicit on the tree's own plaque per stadtgeschichte-muenchen.de, so age is calculated directly rather than estimated. Photo viewed directly: shows a large solitary oak on a park lawn with a memorial stone at its base, consistent with a commemorative planting. Approved.",
       "location_precision": "approximate"
     },
     {
@@ -170,10 +170,10 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Zwei_Flatterulmen_Ulmus_laevis_Englischer_Garten_Muenchen-1.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Peterf, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "'No older elms known in the city area' is the register's own wording, a comparative claim rather than an absolute age; no individual figure exists for either tree. Photo filename explicitly names species, location and Naturdenkmal status, a strong textual match, but this run's tools could not open the image to visually confirm content, so marked found_needs_check rather than approved.",
+      "notes": "'No older elms known in the city area' is the register's own wording, a comparative claim rather than an absolute age; no individual figure exists for either tree. Photo viewed directly: shows a tall, mature tree with a complex, high-branching crown rising above the surrounding autumn canopy in a park setting, consistent with the paired elms. Approved.",
       "location_precision": "approximate"
     },
     {
@@ -200,10 +200,10 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Farnblaettrige_Buche_Englischer_Garten_Muenchen-1.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Peterf, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Protected for rarity of form rather than age; no source gives a planting date or age estimate, so the age range here is a rough guess based on trunk girth rather than a documented figure, flagged accordingly. Photo filename explicitly names species, form and location, a strong textual match, but this run's tools could not open the image to visually confirm content, so marked found_needs_check rather than approved.",
+      "notes": "Protected for rarity of form rather than age; no source gives a planting date or age estimate, so the age range here is a rough guess based on trunk girth rather than a documented figure, flagged accordingly. Photo viewed directly: shows a large dome-shaped beech with a finely textured autumn canopy in a park setting with benches beneath it, consistent with a protected specimen beech. Approved.",
       "location_precision": "approximate"
     },
     {
@@ -289,11 +289,11 @@
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Schnurbaum_am_Karolinenplatz_%28von_S%29_-_2021-07-05_-_142b.jpg",
         "license": "CC BY-SA 4.0",
-        "attribution": "Wikimedia Commons contributor, category Naturdenkmal Japanischer Schnurbaum am Karolinenplatz",
-        "status": "found_needs_check"
+        "attribution": "Martinus KE, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "No individual attribution/author name confirmed for this specific file beyond the category page listing; needs a direct check of the file's own description page for exact photographer credit before publishing. This run's tools could not open the image to visually confirm content, so marked found_needs_check rather than approved.",
+      "notes": "Attribution resolved by checking the file's own description page directly: Martinus KE, CC BY-SA 4.0. Photo viewed directly: shows a large tree with fine, compound pinnate foliage (consistent with Sophora japonica) beside a residential building near the square. Approved.",
       "location_precision": "approximate"
     },
     {
@@ -320,10 +320,10 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Naturdenkmal_Bergulme_Maximiliansplatz_M%C3%BCnchen.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Peterf, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "No individual age or planting date documented; rarity is explicitly tied to Dutch elm disease losses across the city rather than this tree's own age. Photo filename explicitly names the Naturdenkmal, species and exact location, a strong textual match, but this run's tools could not open the image to visually confirm content, so marked found_needs_check rather than approved.",
+      "notes": "No individual age or planting date documented; rarity is explicitly tied to Dutch elm disease losses across the city rather than this tree's own age. Photo viewed directly: shows a tall mature tree in a city square with buildings visible behind the canopy, consistent with a Maximiliansplatz specimen. Approved.",
       "location_precision": "approximate"
     }
   ]
