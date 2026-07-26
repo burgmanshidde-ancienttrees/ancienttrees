@@ -14,6 +14,8 @@ This is the core, and everything else serves it. Written 2026-07-24 by Hidde bec
 
 The one-sentence north star: *I am somewhere, I open it, it knows where I am, it shows me a cool tree nearby and a walk past a few, tells me why they are special, and I tick off the ones I visit.*
 
+**The product is four verbs, settled with Hidde on 2026-07-26: find, walk, collect, season.** Find cool trees near you; walk a route past them; collect them with badges and points as the game; see them at their best with the season radar. Features outside these four (trip planners, audio guides, personal records, standalone themed routes) are parked ideas, not the product, and are not built without his explicit yes.
+
 What this means for how we build:
 - **The map and "trees near me" are the product.** They lead everywhere, the homepage first.
 - **Cities, species and collections are acquisition, not the point.** They are SEO landing pages that bring people in from search. Keep them, they work, but they are the front door, not the house. On the homepage they sit below the value proposition, never in place of it.
