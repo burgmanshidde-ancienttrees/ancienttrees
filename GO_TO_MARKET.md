@@ -57,3 +57,11 @@ Grow along the lead group from the country research: the UK and Netherlands firs
 ## The single most important line
 
 Every phase after 0 is gated on a demand signal, and that signal currently reads zero. So the honest priority is Phase 0 done well, and patience. The cheapest possible path to the answer is to make the product excellent and findable, lay a few inbound links, and watch the one number that tells us whether any of this was wanted.
+
+## The checkpoint, so continuing stays a decision instead of a habit
+
+Set 2026-07-26, when Hidde asked whether the project is worth continuing. The answer then: the first leading indicator (search impressions doubling daily, page-one rankings within five days of sitemap submission) arrived faster than this plan predicted, and the cost of the full answer is a Claude subscription and light attention. So the experiment runs to a checkpoint rather than being read halfway.
+
+**Review at the end of August 2026.** By then depth is done and the Netherlands wave should be live. Healthy looks like: organic clicks growing week over week into the tens, any stranger checking in a tree or submitting one, any returning visitors in Cloudflare. Failing looks like: clicks flat near zero despite the depth work and the new wave, no submission, no check-in evidence. If it is failing, the honest reading is that search-only demand for this product is not there, and the right moves are stop, or change the distribution stance, not more cities.
+
+Until then, doubt between checkpoints is normal and not a signal. The machine runs itself; the answer is being bought cheaply; read it when it is ready.
