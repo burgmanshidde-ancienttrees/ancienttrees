@@ -44,6 +44,17 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Autonomy stack complete, waiting on two secrets
+
+- Product lane opened (rung 7 + PRODUCT_TODO.md): runs now build the site, not only research trees. First up: the shareable my-trees page.
+- Count doctrine live: ten is a cap, four verified trees minimum for a page. Verona's title lie (promised 10, had 8) fixed by making every count dynamic.
+- Depth exit test + Netherlands wave queued; the machine transitions by itself.
+- Checkpoint end of August recorded in GO_TO_MARKET.md with explicit healthy/failing criteria.
+- FOR HIDDE, two secrets and one number, then nothing structural waits on you:
+  1. `SELF_DISPATCH_TOKEN` (GitHub fine-grained token, Actions read/write, only this repo) → repo Settings > Secrets > Actions. Turns ~5 attempts/day into a continuous chain.
+  2. `CLOUDFLARE_ANALYTICS_TOKEN` (Account Analytics: Read) → same place. Lets runs read the visitor trend themselves and write it here.
+  3. The €50/month cost ceiling in the hard rules predates Claude Max. Say the new number and a run records it.
+
 ## 2026-07-26 — Phase 1 opened: Google serves us, runs flip from width to depth
 
 - First Search Console export ever read: impressions 1 > 5 > 38 > 103 across four days, roughly doubling daily since the sitemap went in. First two clicks: the homepage, and Tokyo's Meiji Jingu Gaien ginkgo avenue (33% CTR from position 28, from Canada).
