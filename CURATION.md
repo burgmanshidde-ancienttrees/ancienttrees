@@ -2,6 +2,13 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Barcelona: bcn_008 replaced per the collectibility rule; four photo gaps stay open
+
+- Continued the rest of the lead group after Paris. Barcelona needed both a fix flagged in CLAUDE.md itself (bcn_008 is known to fail the collectible-point test) and more photos (6/10, floor is 8+).
+- **The Plane Trees of La Rambla, replaced**: CLAUDE.md's Step 1 explicitly names this entry as failing the rule that an entry must be one identifiable tree or a compact, singular ensemble ("a thousand ordinary planes along a kilometre of La Rambla... do not [pass], there is nothing to stand at and nothing to have seen"), with an instruction to replace it "when a run next works Barcelona." Researched a replacement, verified independently against two sources before writing: **The Silk Tree of the Ciutadella**, an Albizia julibrissin in Parc de la Ciutadella, individually catalogued as Tree of Local Interest number 0103-01-96 in 1996, planted around 1896. The hook: this species typically lives 30-50 years in cultivation, and this specimen is roughly 130, its central trunk hollowed by repeated infections the city's own register documents plainly, still flowering every July regardless. Verified via the municipal catalogue (bcnsostenible.cat mirror, fetched directly) and an independent beteve.cat news article. One minor, immaterial discrepancy left open: two renderings of the same municipal record give crown diameter as 10m and 13m; not resolved either way. Kept the same tree id (bcn_008) so no URL breaks. No photo found for it yet; the only Commons file for this species in Barcelona turned out to show a different specimen at a different church, not used. Given a `best_time` (July, flowering) since the peak is real and specific.
+- **Four photo gaps stay open** (Holm Oak of Carrer de l'Encarnacio, Himalayan Cedar of the Labyrinth, Magnolia of the Maternity Gardens, Palms of Casa de la Misericordia): all confirmed to exist via Barcelona's municipal registry, but no Commons, iNaturalist or Flickr CC photo tied to any of the four specific specimens turned up this pass. Genuine dead ends, not yet exhausted with every technique (a dedicated Flickr/Openverse pass specifically, or an on-the-ground photo, is the next step).
+- Barcelona now at 6/10 photos (unchanged) with bcn_008 fixed. Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Paris clears the exit-test bar: 2 photos found, now 8/10 photos and 0/10 approximate
 
 - Moved to the rest of the lead group after Amsterdam/Lisbon/Istanbul/Rome. Paris was at 6/10 photos (needs 8+) with pins already fully resolved, so this pass was photo-only on its 4 remaining gaps.
