@@ -70,7 +70,8 @@ CSS = """
 :root {
   --cream: #F7F4EE; --cream-dark: #EDE9DF; --ink: #1A1A14; --ink-mid: #4A4A3A;
   --ink-light: #8A8A7A; --moss: #3D5C1E; --moss-light: #EAF0E0;
-  --serif: 'Playfair Display', Georgia, serif; --sans: 'Inter', system-ui, sans-serif;
+  --serif: 'Instrument Serif', Georgia, serif; --sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  --hand: 'Shantell Sans', cursive;
   --header-h: 3.5rem;
 }
 html { scroll-behavior: smooth; }
@@ -203,34 +204,51 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .home-act { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; padding: 3rem 0; border-top: 1px solid var(--cream-dark); }
 .home-act:first-child { border-top: none; }
 .home-act:nth-child(even) .home-act-visual { order: -1; }
-.home-act-verb { font-family: var(--serif); font-style: italic; color: var(--moss); font-size: 1.1rem; }
+.home-act-verb { font-family: var(--hand); font-weight: 700; color: var(--moss); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
 .home-act h2 { font-family: var(--serif); font-weight: 400; font-size: 1.75rem; margin: 0.35rem 0 0.7rem; line-height: 1.15; }
 .home-act-copy p { color: var(--ink-mid); font-size: 1.05rem; max-width: 42ch; }
-/* Find: a real photo with a floating locator chip. */
-.home-act-visual.photo { position: relative; margin: 0; border-radius: 16px; overflow: hidden; box-shadow: 0 18px 40px rgba(26,26,20,0.14); aspect-ratio: 4 / 3; }
-.home-act-visual.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.hav-float { position: absolute; left: 14px; right: 14px; bottom: 14px; display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.93); backdrop-filter: blur(6px); border-radius: 10px; padding: 10px 14px; font-size: 13px; color: var(--ink); box-shadow: 0 4px 16px rgba(0,0,0,0.14); }
-.hav-float strong { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--moss); font-weight: 600; }
-.hav-dot { width: 12px; height: 12px; border-radius: 50%; background: #1E6FD9; box-shadow: 0 0 0 5px rgba(30,111,217,0.22); flex: none; }
-/* Walk: a real tree card, photo then story and season. */
-.home-act-visual.card { margin: 0; background: #fff; border: 1px solid var(--cream-dark); border-radius: 16px; overflow: hidden; box-shadow: 0 18px 40px rgba(26,26,20,0.10); }
-.hav-photo { position: relative; aspect-ratio: 16 / 10; }
-.hav-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.hav-badge { position: absolute; top: 12px; left: 12px; background: var(--moss); color: #fff; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; padding: 3px 9px; border-radius: 999px; }
-.hav-card-body { padding: 1rem 1.25rem 1.25rem; }
-.hav-title { font-family: var(--serif); font-size: 1.2rem; }
-.hav-meta { font-size: 0.82rem; color: var(--ink-light); margin-bottom: 0.55rem; }
-/* Collect: real thumbnails, the visited ones vivid and checked. */
-.home-act-visual.grid-visual { margin: 0; }
-.hav-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-.hav-cell { position: relative; aspect-ratio: 1; border-radius: 10px; overflow: hidden; }
-.hav-cell img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(0.5) opacity(0.72); transition: filter 0.2s; }
-.hav-cell.done img { filter: none; }
-.hav-cell.done { box-shadow: 0 0 0 2px var(--moss); }
-.hav-check { position: absolute; top: 6px; right: 6px; width: 22px; height: 22px; border-radius: 50%; background: var(--moss); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; }
-.hav-count { text-align: center; margin-top: 12px; font-size: 0.92rem; color: var(--ink-mid); }
-.hav-count strong { font-family: var(--serif); color: var(--moss); }
-.hav-credit { text-align: center; margin-top: 6px; font-size: 10.5px; color: var(--ink-light); }
+/* The three acts, drawn in one illustrated system instead of photographs.
+   Reference: Polarsteps' stats-that-grow presentation, in our own cream and
+   moss. Find and Walk share a stylised map card; Collect is a phone with the
+   species grid as our "collected flags". */
+.hav-card { position: relative; margin: 0; aspect-ratio: 4 / 3; border-radius: 16px; overflow: hidden;
+  background: #EFEDE3; border: 1px solid var(--cream-dark); box-shadow: 0 18px 40px rgba(26,26,20,0.10); }
+.hav-card svg.scene { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hav-chip { position: absolute; left: 14px; bottom: 14px; display: flex; align-items: center; gap: 9px;
+  background: rgba(255,255,255,0.95); border-radius: 10px; padding: 9px 13px; font-size: 13px;
+  color: var(--ink); box-shadow: 0 4px 16px rgba(0,0,0,0.14); }
+.hav-chip strong { display: block; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.04em;
+  color: var(--moss); font-weight: 600; }
+.hav-dot { width: 12px; height: 12px; border-radius: 50%; background: #1E6FD9;
+  box-shadow: 0 0 0 5px rgba(30,111,217,0.22); flex: none; }
+.map-pin { position: absolute; width: 34px; height: 34px; border-radius: 50%; background: var(--cream);
+  border: 2px solid var(--moss); display: flex; align-items: center; justify-content: center;
+  color: var(--moss); box-shadow: 0 3px 9px rgba(26,26,20,0.22); transform: translate(-50%,-50%); }
+.map-pin svg { width: 21px; height: 21px; }
+.map-pin.me { width: 16px; height: 16px; background: #1E6FD9; border: 2.5px solid #fff;
+  box-shadow: 0 0 0 6px rgba(30,111,217,0.2); }
+.map-pin .n { position: absolute; top: -6px; right: -6px; min-width: 15px; height: 15px; border-radius: 8px;
+  background: var(--moss); color: #fff; font-size: 9.5px; font-weight: 700; display: flex;
+  align-items: center; justify-content: center; border: 1.5px solid var(--cream); }
+/* Collect: the phone. */
+.hav-phone { margin: 0 auto; width: min(78%, 300px); background: var(--ink); border-radius: 30px;
+  padding: 10px; box-shadow: 0 22px 44px rgba(26,26,20,0.24); }
+.hav-screen { background: #fff; border-radius: 22px; padding: 16px 14px 18px; }
+.hav-screen h4 { font-family: var(--serif); font-weight: 400; font-size: 1.05rem; margin: 0 0 10px; }
+.stat-row { display: flex; gap: 8px; margin-bottom: 12px; }
+.stat { flex: 1; border-radius: 12px; padding: 10px 8px; text-align: center; background: var(--moss-light); }
+.stat.alt { background: #F3EFE2; }
+.stat b { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.45rem; color: var(--moss); line-height: 1.1; }
+.stat span { font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-mid); }
+.hav-screen h5 { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-light);
+  margin: 0 0 8px; font-weight: 600; }
+.sp-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 7px; }
+.sp { position: relative; aspect-ratio: 1; border-radius: 50%; display: flex; align-items: center;
+  justify-content: center; background: var(--moss-light); color: var(--moss); }
+.sp svg { width: 68%; height: 68%; }
+.sp.dim { background: #F0EEE6; color: #C9C5B6; }
+.sp-name { position: absolute; top: -9px; left: 50%; transform: translateX(-50%); background: var(--ink);
+  color: #fff; font-size: 8.5px; font-weight: 600; padding: 1.5px 7px; border-radius: 999px; white-space: nowrap; }
 @media (max-width: 760px) { .home-act { grid-template-columns: 1fr; gap: 1.5rem; padding: 2.25rem 0; } .home-act:nth-child(even) .home-act-visual { order: 0; } }
 .page { max-width: 1100px; margin: 0 auto; padding: 3rem 2.5rem; }
 .section-heading { font-family: var(--serif); font-size: 1.75rem; font-weight: 400; margin-bottom: 1.5rem; }
@@ -373,7 +391,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <meta property="og:url" content="%%CANONICAL%%">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Shantell+Sans:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="%%ROOTPATH%%assets/style.css">
 %%HEAD_EXTRA%%
 </head>
@@ -2104,6 +2122,15 @@ def build_homepage(published, upcoming, collections, pages):
         for c in collections
     )
 
+    def _icon(k):
+        return f'<svg viewBox="0 0 40 40" fill="currentColor" aria-hidden="true">{SPECIES_ICONS[k]}</svg>'
+    find_pin_1=_icon("plane"); find_pin_2=_icon("wingnut"); find_pin_3=_icon("broadleaf")
+    walk_pin_1=_icon("oak"); walk_pin_2=_icon("plane"); walk_pin_3=_icon("ginkgo"); walk_pin_4=_icon("yew")
+    lit=["oak","plane","ginkgo","yew","cedar","olive"]; dim=["pine","cypress","fig","wisteria"]
+    collected_species="".join(
+        f'<span class="sp{"" if k in lit else " dim"}">{_icon(k)}'
+        + ('<span class="sp-name">Ginkgo</span>' if k=="ginkgo" else "") + '</span>'
+        for k in lit+dim)
     city_options = "".join(f'<option value="{esc(p["city"])}">' for p in published)
     contribute_cta = f'<a class="home-cta" href="{submit_link("home")}">Add a tree or a city</a>'
     # Empty until Hidde sets up somewhere to receive it. Donations rather than a
@@ -2136,49 +2163,62 @@ def build_homepage(published, upcoming, collections, pages):
       <h2>The trees near you, right now.</h2>
       <p>The map finds the remarkable old trees closest to where you are standing, and points you at the nearest one with a walk time and directions to your phone.</p>
     </div>
-    <figure class="home-act-visual photo">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2025_Leidsebosje%2C_Asd%2C_dikke_plataan_noord_%28A%29.jpg?width=900" alt="A vast old plane tree" loading="lazy">
-      <figcaption class="hav-float">
-        <span class="hav-dot"></span>
-        <span><strong>Nearest to you</strong>The Leidsebosje Plane &middot; 6 min walk</span>
-      </figcaption>
+    <figure class="home-act-visual hav-card">
+      <svg class="scene" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M-10 80 L410 60" stroke="#E2DFD2" stroke-width="14"/>
+        <path d="M-10 190 L410 210" stroke="#E2DFD2" stroke-width="18"/>
+        <path d="M120 -10 L100 310" stroke="#E2DFD2" stroke-width="12"/>
+        <path d="M300 -10 L330 310" stroke="#E2DFD2" stroke-width="14"/>
+        <path d="M150 95 Q 220 70 290 110 Q 310 170 240 185 Q 160 195 145 150 Z" fill="#E4EAD5"/>
+        <path d="M-10 250 Q 120 235 410 265 L410 310 L-10 310 Z" fill="#DCE7EF"/>
+      </svg>
+      <span class="map-pin" style="left:30%;top:28%">{find_pin_1}</span>
+      <span class="map-pin" style="left:63%;top:44%">{find_pin_2}</span>
+      <span class="map-pin" style="left:44%;top:74%">{find_pin_3}</span>
+      <span class="map-pin me" style="left:52%;top:58%"></span>
+      <figcaption class="hav-chip"><span class="hav-dot"></span>
+        <span><strong>Nearest to you</strong>The Wertheimpark Wingnut &middot; 6 min walk</span></figcaption>
     </figure>
   </div>
   <div class="home-act">
     <div class="home-act-copy">
       <span class="home-act-verb">Walk</span>
       <h2>A route past the ones worth seeing.</h2>
-      <p>Not a database of everything. Only the most remarkable, linked into one walk you can do in an afternoon, each with its story and the month it is at its most spectacular, so you know when to go.</p>
+      <p>Only the most remarkable, linked into one walk you can do in an afternoon, each with its story and the month it is at its most spectacular, so you know when to go.</p>
     </div>
-    <figure class="home-act-visual card">
-      <div class="hav-photo">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Giant_Ginkgo_Tree_-_Zenpukuji_-_Minato%2C_Tokyo_-_DSC06818.JPG?width=900" alt="The Zenpukuji Ginkgo in Tokyo" loading="lazy">
-        <span class="hav-badge">At its best now</span>
-      </div>
-      <div class="hav-card-body">
-        <div class="hav-title">The Zenpukuji Ginkgo</div>
-        <div class="hav-meta">Ginkgo &middot; 750 years &middot; Tokyo</div>
-        <svg viewBox="0 0 300 44" width="100%" aria-hidden="true"><path d="M0 38 C60 38 120 36 180 22 C220 12 250 6 300 12" fill="none" stroke="#3D5C1E" stroke-width="2.5"/><path d="M0 38 C60 38 120 36 180 22 C220 12 250 6 300 12 L300 44 L0 44Z" fill="#EAF0E0"/><circle cx="255" cy="6" r="4" fill="#3D5C1E"/></svg>
-      </div>
+    <figure class="home-act-visual hav-card">
+      <svg class="scene" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M-10 120 L410 100" stroke="#E2DFD2" stroke-width="16"/>
+        <path d="M200 -10 L190 310" stroke="#E2DFD2" stroke-width="12"/>
+        <path d="M40 200 Q 140 240 300 215 Q 380 200 420 230" stroke="#E2DFD2" stroke-width="14" fill="none"/>
+        <path d="M250 40 Q 340 30 380 80 Q 370 140 290 130 Q 240 110 250 40 Z" fill="#E4EAD5"/>
+        <path d="M76 234 C 120 200 96 150 150 132 C 210 112 232 150 268 96 C 290 62 320 70 340 84"
+          stroke="#3D5C1E" stroke-width="3.5" fill="none" stroke-dasharray="1 9" stroke-linecap="round"/>
+      </svg>
+      <span class="map-pin" style="left:19%;top:78%">{walk_pin_1}<span class="n">1</span></span>
+      <span class="map-pin" style="left:37.5%;top:44%">{walk_pin_2}<span class="n">2</span></span>
+      <span class="map-pin" style="left:67%;top:32%">{walk_pin_3}<span class="n">3</span></span>
+      <span class="map-pin" style="left:85%;top:28%">{walk_pin_4}<span class="n">4</span></span>
+      <figcaption class="hav-chip"><span><strong>Afternoon walk</strong>4 trees &middot; 5.2 km &middot; about 1h 10m</span></figcaption>
     </figure>
   </div>
   <div class="home-act">
     <div class="home-act-copy">
       <span class="home-act-verb">Collect</span>
       <h2>Tick off the ones you have stood in front of.</h2>
-      <p>Check in when you are actually at the tree and it turns green. Your collection grows across every city you visit, kept on your own phone, with no account and no sign-up.</p>
+      <p>Check in at the tree and watch your collection grow: trees, cities, species. Some trees are rarer than others, and a complete city is something to be proud of.</p>
     </div>
-    <div class="home-act-visual grid-visual">
-      <div class="hav-grid">
-        <span class="hav-cell done"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Totteridge_Yew%2C_St_Andrew%27s_church%2C_Totteridge.jpg?width=400" alt="" loading="lazy"><span class="hav-check">&check;</span></span>
-        <span class="hav-cell done"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Richmond_Park%2C_The_Royal_Oak_%281%29.jpg?width=400" alt="" loading="lazy"><span class="hav-check">&check;</span></span>
-        <span class="hav-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paris_-_Square_Ren%C3%A9_Viviani_-_robinier_-_1601.jpg?width=400" alt="" loading="lazy"></span>
-        <span class="hav-cell done"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Velkoprevorsky_palac_Beethovenuv_platan.jpg?width=400" alt="" loading="lazy"><span class="hav-check">&check;</span></span>
-        <span class="hav-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Oak_Tree_of_Torquato_Tasso_on_the_Rampa_della_Quercia%2C_Gianicolo_%E2%80%A2_Janiculum_Hill_%2846853511991%29.jpg?width=400" alt="" loading="lazy"></span>
-        <span class="hav-cell done"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2022_Wertheimpark%2C_Asd-Gewone_vleugelnoot_%281%29.jpg?width=400" alt="" loading="lazy"><span class="hav-check">&check;</span></span>
-      </div>
-      <div class="hav-count"><strong>7 of 10</strong> visited in Amsterdam, 23 across every city</div>
-      <p class="hav-credit">Photos: Wikimedia Commons (Philafrenzy, AndyScott, Ordifana75, Balaban, Sonse, Ceescamel), CC BY-SA</p>
+    <div class="home-act-visual" style="background:none;border:none;box-shadow:none;padding:0">
+      <div class="hav-phone"><div class="hav-screen">
+        <h4>Your trees</h4>
+        <div class="stat-row">
+          <div class="stat"><b>23</b><span>trees</span></div>
+          <div class="stat alt"><b>6</b><span>cities</span></div>
+          <div class="stat"><b>2000</b><span>oldest, yrs</span></div>
+        </div>
+        <h5>Collected species</h5>
+        <div class="sp-grid">{collected_species}</div>
+      </div></div>
     </div>
   </div>
 </section>
