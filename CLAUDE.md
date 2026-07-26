@@ -19,7 +19,7 @@ What this means for how we build:
 - **Cities, species and collections are acquisition, not the point.** They are SEO landing pages that bring people in from search. Keep them, they work, but they are the front door, not the house. On the homepage they sit below the value proposition, never in place of it.
 - **Collections stay** (for example "the ten most remarkable trees of Europe"). A real SEO strategy, kept and on the backlog as such, secondary to the core. Not to be deleted.
 - **The destination is: see the trees around you, walk them, collect them.** Accounts and an app are the eventual vehicle for the collection to persist and sync, the destination recorded under "Where this is going", gated on evidence, not now.
-- **Nothing is premium for now.** The job is users and the joy, not revenue. Which features ever become premium is undecided and deferred; today everything is free.
+- **Nothing is premium for now, but premium is the destination, and copy must never promise otherwise.** "Free today" is a growth tactic while we win users; the recorded end state is an account base with a premium tier and eventually an app (see "Where this is going"). So the site never says "free forever", "no accounts" or "always" anything: it simply does not gate today. Claims that survive the paywall (every tree free to explore, no ads, no tracking) are fine; claims the paywall would break are not. This distinction exists because a run once turned the sequencing into identity copy, and Hidde caught it.
 
 When a page, a feature or a line of copy does not serve "have a good afternoon outside seeing epic trees near you," it is decoration or acquisition, and it must not crowd out the core.
 
