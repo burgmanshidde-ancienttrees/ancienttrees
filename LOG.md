@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Tokyo and London now pass the depth exit test
+
+- visitors.py: no Cloudflare account tag configured, skipped silently as instructed. No reader submissions either (checked the live CSV, still just the header row).
+- Site was healthy and nothing published was wrong, so this run continued rung 5's depth work. A new technique paid off: OpenStreetMap carries contributor-mapped nodes for individually named notable trees (tagged with the tree's own name and species), separate from the generic street-tree layer, queryable via Overpass/Nominatim. Used it to resolve 3 of Tokyo's 4 remaining approximate pins (the Three Hundred Year Pine, the Sperm-Discovery Ginkgo, the Meoto Kusu) to confirmed, each corroborated by a second independent source. Tokyo: 8/10 photos, 1/10 approximate (the Meiji Jingu Gaien avenue, 146 trees, honestly stays an ensemble estimate).
+- London's last blocker fell too: a second independent source (an Open Plaques entry for the tree's own Great Trees of London plaque) confirmed Barney the Plane's EXIF-derived pin was correct, upgrading it from approximate to confirmed. London: 10/10 photos, 2/10 approximate (Berkeley Square and the Old Lions of Kew, both honest multi-tree ensembles).
+- **Tokyo and London both now individually clear rung 6's exit test bar (8+ photos, 2 or fewer approximate pins).** The bar still needs all eight lead cities passing, with Amsterdam at zero, before coverage reopens: Amsterdam, Lisbon, Istanbul, Rome, Paris and Barcelona remain short. Full numbers and reasoning in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — London: Royal Oak pin confirmed via Woodland Trust registry, Berkeley Square sourcing fixed
 
 - London already clears 8/10 photos; only its pin count blocked the exit test. The Royal Oak's own Woodland Trust Ancient Tree Inventory entry gives a precise, unobscured grid reference (checked directly against the hard-rule-10 Woodland Trust caveat before using it), converted and applied: a roughly 400m correction. Also backfilled two sources for the Berkeley Square Plane, which had shipped with none.
