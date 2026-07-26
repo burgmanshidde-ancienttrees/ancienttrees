@@ -295,9 +295,10 @@
         "longitude": -0.230953,
         "neighbourhood": "Barnes, South West London"
       },
-      "story": "The biggest London plane in London is a tree most Londoners have never heard of. Nicknamed Barney, it is over 300 years old, potentially the oldest of its kind in the city, and massive in every dimension. The London plane is the capital's signature tree, chosen for its resilience to soot and its tolerance of brutal pruning, and Barney is the patriarch of them all. It grows at Barn Elms in the riverside suburb of Barnes. One honest caveat: the exact spot is still being verified, which is why this tree sits at the bottom of the list until its pin can be trusted.",
+      "story": "The biggest London plane in London is a tree most Londoners have never heard of. Nicknamed Barney, it is over 300 years old, potentially the oldest of its kind in the city, and massive in every dimension. The London plane is the capital's signature tree, chosen for its resilience to soot and its tolerance of brutal pruning, and Barney is the patriarch of them all. It grows at Barn Elms in the riverside suburb of Barnes, tucked at the edge of the land next to the London Wetland Centre, marked by its own small Great Trees of London plaque that visitors mostly walk past without noticing.",
       "verified_sources": [
-        "https://commons.wikimedia.org/wiki/File:Barney_of_Barn_Elms_plane_tree_2026-05-06.jpg"
+        "https://commons.wikimedia.org/wiki/File:Barney_of_Barn_Elms_plane_tree_2026-05-06.jpg",
+        "https://openplaques.org/plaques/54213"
       ],
       "access": "Public access, Barnes area",
       "transport": "Barnes station or bus",
@@ -308,8 +309,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Coordinates updated 2026-07-22 from the EXIF geotag on a CC BY 4.0 photo captioned 'Barney of Barn Elms' (Matt Brown, May 2026), more precise than the earlier Barn Elms-wide estimate. Still only one source naming this specific tree, so location_precision stays approximate until a second independent source confirms it is the same tree. A tree-specific story replacing the generic London plane material also still needed.",
-      "location_precision": "approximate"
+      "notes": "Coordinates updated 2026-07-22 from the EXIF geotag on a CC BY 4.0 photo captioned 'Barney of Barn Elms' (Matt Brown, May 2026). A second independent source found 2026-07-26: Open Plaques records a Great Trees of London commemorative plaque for this exact tree ('the oldest in London... platanus x hispanica') at 51.47441, -0.23106, about 9 metres from the EXIF position, close enough to be the same tree. Location precision upgraded on that agreement. Story still leans general rather than tree-specific and runs under the usual word count; worth a fuller rewrite in a future pass.",
+      "location_precision": "confirmed"
     }
   ]
 }

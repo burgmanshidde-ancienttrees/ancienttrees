@@ -214,15 +214,16 @@
       "age_max": 320,
       "location": {
         "address": "Hamarikyu Onshi Teien, 1-1 Hamarikyucho, Chuo-ku, Tokyo 104-0046",
-        "latitude": 35.660176,
-        "longitude": 139.763824,
+        "latitude": 35.6624579,
+        "longitude": 139.7640080,
         "neighbourhood": "Hamamatsucho, Chuo"
       },
       "story": "The biggest black pine in Tokyo grows in a garden that floods on purpose. Hamarikyu was built on reclaimed tidal land as a shogunal duck-hunting villa, and its ponds still rise and fall with Tokyo Bay through a working seawater gate, the only tide-powered garden pond left in the city. This pine was planted around 1709, when the sixth shogun Tokugawa Ienobu rebuilt the estate into something closer to its current form, and it has spent three centuries spreading rather than climbing: its lowest branches now sprawl low and wide across log supports, some running more than 20 meters from the trunk. Locals simply call it Sanbyakunen no Matsu, the Three Hundred Year Pine. The garden survived two disasters that erased most of its original structures, the 1923 earthquake and the 1945 firebombing, and the tree's low, horizontal shape likely helped it through both: black pines built close to the ground catch less wind and radiant heat than tall ones. What is left today is one tree and one tea house rebuilt from photographs, inside a garden that Tokyo Bay still floods twice a day.",
       "verified_sources": [
         "https://www.tokyo-greenbizmap.metro.tokyo.lg.jp/tokusyu/meiboku/",
         "https://ja.wikipedia.org/wiki/%E6%B5%9C%E9%9B%A2%E5%AE%AE%E6%81%A9%E8%B3%9C%E5%BA%AD%E5%9C%92",
-        "https://www.jalan.net/kankou/spt_guide000000190885/"
+        "https://www.jalan.net/kankou/spt_guide000000190885/",
+        "https://www.openstreetmap.org/node/2493399895"
       ],
       "access": "Paid entry, 300 yen",
       "transport": "7 min walk from Shiodome Station (Oedo/Yurikamome lines)",
@@ -233,8 +234,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Garden spans roughly 25 hectares; the pin marks the garden's main entrance rather than a confirmed exact position for the tree itself.",
-      "location_precision": "approximate"
+      "notes": "Pin corrected from the garden's main entrance to the tree's own position: OpenStreetMap carries a contributor-mapped node named \"三百年の松\" (Three-Hundred-Year Pine Tree) tagged as Pinus thunbergii at this spot, with a matching guidepost and information-board node within a few metres corroborating it.",
+      "location_precision": "confirmed"
     },
     {
       "id": "tok_007",
@@ -245,14 +246,15 @@
       "age_max": 320,
       "location": {
         "address": "Koishikawa Botanical Garden, 3-7-1 Hakusan, Bunkyo-ku, Tokyo 112-0001",
-        "latitude": 35.720225,
-        "longitude": 139.744157,
+        "latitude": 35.7202202,
+        "longitude": 139.7451807,
         "neighbourhood": "Hakusan, Bunkyo"
       },
       "story": "In 1896, a botanist working under this tree changed what science understood about how plants reproduce. Hirase Sakugoro, an artist-turned-researcher with no university degree, spent years examining ginkgo ovules from this specimen at what was then Tokyo Imperial University's botanical garden. He discovered that ginkgo trees produce swimming sperm cells, motile and flagellated like something out of animal biology, a reproductive method no other seed plant on Earth was known to use. It overturned assumptions about the evolutionary line between ferns and flowering plants and made the ginkgo, already ancient as a genus, into a living fossil in the most literal sense: a plant still reproducing the way its ancestors did 200 million years ago. The discovery is commemorated with a stone marker at the tree's base, placed for its sixtieth anniversary in 1956. The tree itself, one of the female specimens whose ovules made the discovery possible, is estimated by ring count at around 300 years old, and it still drops a heavy carpet of ginkgo nuts every autumn, oblivious to its own scientific importance.",
       "verified_sources": [
         "https://www.bg.s.u-tokyo.ac.jp/koishikawa/overview/memorial.html",
-        "https://koishikawa-bg.jp/ennai/ginkgo/"
+        "https://koishikawa-bg.jp/ennai/ginkgo/",
+        "https://www.openstreetmap.org/node/4683343152"
       ],
       "access": "Paid entry, 500 yen (University of Tokyo botanical garden)",
       "transport": "10 min walk from Hakusan Station (Toei Mita line)",
@@ -263,8 +265,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Garden spans roughly 16 hectares; the pin marks the garden entrance rather than a confirmed exact position for the tree. Only photos of the adjacent commemorative stone were found on Wikimedia Commons, not the tree itself, so no photo is used.",
-      "location_precision": "approximate",
+      "notes": "Pin corrected from the garden entrance to the tree's own position: OpenStreetMap carries a contributor-mapped node named \"精子発見のイチョウ\" (The spermatozoid of Ginkgo biloba) tagged as Ginkgo biloba at this spot, with the 1956 commemorative-stele node recorded almost on top of it, matching the stone marker described in our own sources. Only photos of the adjacent commemorative stone were found on Wikimedia Commons, not the tree itself, so no photo is used.",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           11
@@ -358,14 +360,15 @@
       "age_max": 110,
       "location": {
         "address": "Meiji Jingu, near the outer worship hall, 1-1 Yoyogikamizonocho, Shibuya-ku, Tokyo 151-8557",
-        "latitude": 35.6763,
-        "longitude": 139.6993,
+        "latitude": 35.6757978,
+        "longitude": 139.6992138,
         "neighbourhood": "Yoyogi, Shibuya"
       },
       "story": "This is the youngest tree on this list by roughly six centuries, and also the one most people specifically travel here to touch. Two camphor trees were donated to Meiji Jingu when the shrine was built in 1920 to deify Emperor Meiji and Empress Shoken, planted side by side just in front of the outer worship hall and bound together with a sacred straw rope, a shimenawa, that marks them as one connected being rather than two separate trees. They are called Meoto Kusu, the Married Couple Camphors, and generations of visitors have prayed here for good marriages and family harmony, a tradition now widened into a general wish for good relationships of any kind. Camphor trees can live over a thousand years, so at just over a century old these two are barely past childhood by the standards of their own species, let alone the 750-year ginkgo across town in Motoazabu. What they lack in age they make up in company: Meiji Jingu draws close to three million visitors in the first three days of January alone, more than any other shrine in Japan, and a large share detour past these two camphors on the way to the main hall.",
       "verified_sources": [
         "https://subaru-t.co.jp/blog/2023/09/07/%EF%BD%82-12/",
-        "https://jinjabukkaku-arekore.com/meotokusu-at-meiji-shrine/"
+        "https://jinjabukkaku-arekore.com/meotokusu-at-meiji-shrine/",
+        "https://www.openstreetmap.org/node/4368070703"
       ],
       "access": "Free, shrine grounds open daily",
       "transport": "1 min walk from Meiji-Jingumae Station (Chiyoda/Fukutoshin lines)",
@@ -376,8 +379,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Sourcing is blog-level rather than an official registry or newspaper; the trees themselves and their 1920 planting date are consistently reported across independent sources, but a stronger primary source is worth finding later. Also the youngest tree on this list by far, included for its historical and cultural significance (Meiji Jingu's founding, and the site's status as Japan's most-visited shrine) rather than age.",
-      "location_precision": "approximate"
+      "notes": "Sourcing is blog-level rather than an official registry or newspaper; the trees themselves and their 1920 planting date are consistently reported across independent sources, but a stronger primary source is worth finding later. Also the youngest tree on this list by far, included for its historical and cultural significance (Meiji Jingu's founding, and the site's status as Japan's most-visited shrine) rather than age. Pin corrected to a contributor-mapped OpenStreetMap node named \"夫婦楠\" directly in front of the outer worship hall, independently matching a Yahoo Map place entry for the same name within a few metres.",
+      "location_precision": "confirmed"
     }
   ]
 }

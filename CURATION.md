@@ -2,6 +2,20 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Tokyo and London pass the depth exit test: OpenStreetMap named-tree nodes resolved 4 pins
+
+- New technique this pass, not tried in earlier depth work: OpenStreetMap carries contributor-mapped nodes for individually named notable trees in Japan, tagged with the tree's own name and species, separate from the generic municipal tree layer. Queried via Overpass API and Nominatim.
+- **Tokyo**, 3 of 4 remaining approximate pins resolved to confirmed:
+  - **The Three Hundred Year Pine** (Hamarikyu): OSM node named "三百年の松" tagged Pinus thunbergii, with a matching guidepost and information-board node within a few metres. Moved the pin from the garden's main entrance (previously honestly marked as such) to the tree itself, about 250m.
+  - **The Ginkgo of the Sperm Discovery** (Koishikawa): OSM node named "精子発見のイチョウ" tagged Ginkgo biloba, with the 1956 commemorative-stele node recorded almost on top of it, matching the stone marker our own sources describe.
+  - **The Meoto Kusu** (Meiji Jingu): OSM node named "夫婦楠" in front of the outer worship hall, independently matching a Yahoo Map place entry for the same name within a few metres. Two independent geocoding sources agreeing is treated as sufficient corroboration.
+  - The fourth, **The Meiji Jingu Gaien Ginkgo Avenue**, stays approximate on purpose: it is 146 individually planted trees along a 300 meter avenue, the same honest-ensemble reasoning already applied to Kew's Old Lions and Berkeley Square. Not a gap, a permanent state.
+  - Tokyo now at 8 of 10 photos (unchanged) and 1 of 10 approximate pins (from 4). Passes the depth exit test (8+ photos, 2 or fewer approximate) on its own.
+- **London**, the exit test's last blocker resolved: **Barney the Plane** had one source (an EXIF-geotagged photo) and was held at approximate on principle until a second independent source confirmed the same tree. Found one: Open Plaques records a Great Trees of London commemorative plaque for this exact tree at 51.47441, -0.23106, about 9 metres from the EXIF position, close enough to be the same trunk. Also lightly revised the story, which had a now-stale line about the pin "still being verified," and added the plaque as a small concrete detail.
+  - London now at 10 of 10 photos and 2 of 10 approximate pins (Berkeley Square and Old Lions of Kew, both honest permanent ensemble cases, from 3). Passes the exit test.
+- Rung 6's exit test needs all eight search-served cities at 8+ photos and 2 or fewer approximate pins, Amsterdam at zero. Tokyo and London now pass; Amsterdam, Lisbon, Istanbul, Rome, Paris and Barcelona do not yet. Worth trying the same OSM named-tree-node technique on Amsterdam next, since Dutch monumental trees may be similarly mapped and this angle wasn't tried in the two earlier Amsterdam passes.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — London: Royal Oak pin confirmed, Berkeley Square sourcing backfilled
 
 - London already clears the 8/10 photo floor (10/10); only its approximate-pin count blocked it from the depth exit test. Checked all 4: the Royal Oak's own Woodland Trust Ancient Tree Inventory entry (ID 40404, already cited) gives a full 10-figure grid reference, TQ1938873126, with no language obscuring or rounding it (checked directly against hard rule 10's Woodland Trust caveat before using), so converted it to WGS84 (51.44455, -0.283495) and marked the pin confirmed, a roughly 400m correction from the previous general "near Pen Ponds" estimate.
