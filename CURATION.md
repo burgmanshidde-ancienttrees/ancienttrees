@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Rome: both approximate pins resolved, one photo candidate found and held for a visual check
+
+- Continued rung 5 after Istanbul. Rome was at 5/10 photos and 2/10 approximate; this pass focused on the 2 pins plus a fresh look at the 5 photo gaps.
+- **The Cedar of the Belvedere (rom_005), a real correction, about 1.2km, not just imprecision**: two Wiki Loves Monuments Italia photos, independently titled "Cedro del Libano" at Villa Doria Pamphilj, by two different photographers in different years, carry identical embedded GPS. That point also matches Italy's national monumental tree registry (MASAF, AMI code 27/H501/RM/12, locality "Villa Pamphili - Belvedere del Lago del Giglio") to the hundredth of an arcsecond, checked across two separate spreadsheet fetches. The previous pin sat near the Via Aurelia Antica entrance, a real 1.2km walk from the Belvedere the story is actually about. Moved to confirmed. The matching photo is held at `found_needs_check` rather than approved: this session's tools cannot open images to visually confirm framing, and the villa has roughly 20 cedars scattered across its 180 hectares, so an exact-GPS match across two independent sources is strong evidence but not the same as eyes on the picture.
+- **The Cedar of Celimontana (rom_008)**: the photo already approved for this tree has its own embedded GPS, corroborated by two more independent Commons photos of the same named tree within about 26m, and by the neighbouring Aleppo pine's (rom_009) MASAF point sitting 20-25m away, matching the story's "a few meters apart" framing. Moved to confirmed using the approved photo's own coordinates.
+- **The five photo gaps stayed genuine dead ends** (Adonis, the Twin Planes of the Eleven Fountains, the Cork Oak of the Orangery, the Aleppo Pine of Celimontana): tried Wikimedia Commons category browsing (not just text search), Openverse, Flickr and iNaturalist for each. One near-miss worth flagging for a future pass with image-viewing tools: two CC0 Daderot photos of the Scalone Monumentale/Fontana degli Undici Zampilli (the exact staircase the Twin Planes flank) are strong candidates on location alone, but their own descriptions never mention trees, so they stay unused until someone can confirm the planes are actually in frame.
+- Rome now at 0/10 approximate pins (from 2) and 1 photo pending a visual check (unchanged photo count otherwise, 5/10). Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Istanbul: no data changed, but three registry leads resolved (one alive, two dead) and a licensing trap avoided
 
 - Continued rung 5 after Lisbon: Istanbul, still the furthest-behind of the eight priority cities (2/10 photos, 8/10 approximate), and the one with the least prior success. Followed up specifically on the two untried leads a previous pass flagged.

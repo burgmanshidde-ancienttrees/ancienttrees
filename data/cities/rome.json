@@ -158,26 +158,27 @@
       "age_max": 320,
       "location": {
         "address": "Belvedere del Lago del Giglio, Villa Doria Pamphilj, Via Aurelia Antica, 00165 Roma",
-        "latitude": 41.8863,
-        "longitude": 12.4595,
+        "latitude": 41.882956,
+        "longitude": 12.444775,
         "neighbourhood": "Monteverde"
       },
       "story": "Sources disagree by a century and a half on how old this cedar is, and the disagreement is the most honest thing anyone can say about it. One detailed study of Villa Doria Pamphilj's tree collection places its planting in the 1600s, when the Pamphilj family first laid out the estate, which would make it over 300 years old. The tree's own entry in Italy's national monumental tree registry gives a calculated age closer to 150 years, with a trunk 4.6 meters around and a height of 30 meters. Both figures describe the same cedar, shading the belvedere terrace above the Lago del Giglio in Rome's largest public park. What is not disputed is the setting: Villa Doria Pamphilj was a private hunting and pleasure ground until the Italian state expropriated it in 1965, and this cedar, whichever planting it dates to, has shaded cardinals, princes and now Sunday joggers from the same terrace above the same ornamental lake. It is listed as the only individually registered monumental tree in a park that otherwise counts its history in family names rather than tree ages.",
       "verified_sources": [
         "https://ilgiardinodialisia.it/i-cedri-del-libano-a-villa-pamphilj-quanto-sono-cresciuti",
-        "https://www.turismo.it/natura/articolo/art/villa-doria-pamphili-natura-e-storia-nel-cuore-di-roma-id-18630/"
+        "https://www.turismo.it/natura/articolo/art/villa-doria-pamphili-natura-e-storia-nel-cuore-di-roma-id-18630/",
+        "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano,_Parco_di_Villa_Doria_Pamphilj.jpg"
       ],
       "access": "Free, open access, Villa Doria Pamphilj",
       "transport": "Bus 870 or 791 to the Via Aurelia Antica entrance, 10 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Cedro_del_Libano%2C_Parco_di_Villa_Doria_Pamphilj.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Albarubescens, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Age disputed between two sources by up to 170 years (17th-century planting theory vs. a 150-year registry estimate). Coordinates are an approximation of the Belvedere/Lago del Giglio area within a very large park and need on-the-ground confirmation; the expropriation year (1965) is given by secondary sources and should be checked against a primary record.",
-      "location_precision": "approximate"
+      "notes": "Age disputed between two sources by up to 170 years (17th-century planting theory vs. a 150-year registry estimate); the expropriation year (1965) is given by secondary sources and should be checked against a primary record. Pin corrected 2026-07-26, a real correction of about 1.2km, not just imprecision: two Wiki Loves Monuments Italia photos independently titled \"Cedro del Libano\" at Villa Doria Pamphilj (by different photographers, 2021 and a companion shot from the lake canal) carry identical embedded GPS at 41.882956, 12.444775, which also matches Italy's national monumental tree registry (MASAF, AMI code 27/H501/RM/12, locality \"Villa Pamphili - Belvedere del Lago del Giglio\") to the hundredth of an arcsecond, byte-identical across two separate spreadsheet fetches. The previous pin was roughly 1.2km away, closer to the Via Aurelia Antica entrance than to the Belvedere itself. Left at found_needs_check rather than approved since this session's tools could not open the image to visually confirm framing (species is confirmed by the file's own title, not by sight), and the villa has roughly 20 cedars scattered across it, per ilgiardinodialisia.it, so the exact-GPS match across two independent sources is strong but not a substitute for eyes on the photo.",
+      "location_precision": "confirmed"
     },
     {
       "id": "rom_006",
@@ -248,8 +249,8 @@
       "age_max": 150,
       "location": {
         "address": "Viale Cardinale Francesco Spellman, Villa Celimontana, 00184 Roma",
-        "latitude": 41.8869,
-        "longitude": 12.4913,
+        "latitude": 41.885192,
+        "longitude": 12.49435,
         "neighbourhood": "Celio"
       },
       "story": "A few meters from Villa Celimontana's Aleppo pine grows its opposite in almost every way: straight where the pine leans, dense and dark where the pine is sparse, native to a mountain range a thousand kilometers further east. This cedar of Lebanon is one of two of Rome's officially monumental trees inside the villa, both standing along Viale Cardinale Francesco Spellman near the main entrance at Piazza della Navicella. Ciriaco Mattei began turning the site's vineyards into an ornamental garden in 1572, and cedars of Lebanon, prized in noble Roman gardens for their biblical associations with endurance, show up across the city's hilltop villas from the 1600s onward. No record fixes the year this particular tree went into the ground, only its registry status as a monumental specimen for its age, dimensions and form, so this account treats its age as undocumented rather than claim a number it cannot back. The villa passed to the Italian Geographical Society in 1926 and became public parkland in 1928, and the cedar, whatever its exact age, has outlasted every institution that has owned the ground beneath it.",
@@ -266,8 +267,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "No source gives a planting date or age figure; the municipal registry designates it monumental without a number. Age range here is a conservative placeholder, not a sourced estimate. Coordinates are approximate, positioned along Viale Cardinale Spellman near the entrance; exact spot needs on-the-ground confirmation.",
-      "location_precision": "approximate"
+      "notes": "No source gives a planting date or age figure; the municipal registry designates it monumental without a number. Age range here is a conservative placeholder, not a sourced estimate. Pin corrected 2026-07-26: the already-approved photo's own embedded GPS (41.885192, 12.494350) places this named, identified cedar precisely; a second independent Commons photo of the same named tree by a different photographer (Albarubescens, 2019) carries an almost identical GPS reading, and a third (Piroetta, 2021) lands about 26m away, consistent with the same tree. Also cross-checked against the neighbouring Aleppo pine's (rom_009) MASAF registry point, about 20-25m away, matching this story's \"a few meters apart\" framing.",
+      "location_precision": "confirmed"
     },
     {
       "id": "rom_009",
