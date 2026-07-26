@@ -239,7 +239,10 @@
         "neighbourhood": "Kew, South West London"
       },
       "story": "Five of the oldest trees in Kew Gardens, nicknamed the Old Lions by the garden's first curator John Smith. Among them is a Japanese pagoda tree planted in 1762, making it one of the oldest in Europe outside its native range. Kew's collection includes trees that have been growing here since the garden opened under Princess Augusta in the 1750s. Entry to Kew required but worth it.",
-      "verified_sources": [],
+      "verified_sources": [
+        "https://www.kew.org/read-and-watch/kews-old-lions",
+        "https://exploring-london.com/2024/06/19/10-significant-and-historic-london-trees8-the-old-lions/"
+      ],
       "access": "Paid entry to Kew Gardens",
       "transport": "Kew Gardens tube station (District Line), 5 min walk",
       "photo": {
@@ -249,7 +252,7 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Source URLs need backfilling.",
+      "notes": "Both named sources place the five trees at distinct spots across Kew (the pagoda tree by the Hive, the oriental plane by the Orangery, the elm and locust each their own specimen), so a single coordinate for the group is a garden-level estimate rather than a pin on any one trunk; location_precision stays approximate honestly rather than picking one tree's spot to represent all five.",
       "location_precision": "approximate"
     },
     {
