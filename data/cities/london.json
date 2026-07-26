@@ -63,8 +63,8 @@
       "age_max": 800,
       "location": {
         "address": "Near Pen Ponds, Richmond Park, Richmond, London",
-        "latitude": 51.4413,
-        "longitude": -0.2826,
+        "latitude": 51.44455,
+        "longitude": -0.283495,
         "neighbourhood": "Richmond Park"
       },
       "story": "The wall came second: this oak was already centuries old when Charles I enclosed Richmond Park around it in 1637. It is a massive hollow pollard, its trunk split and gnarled, wide enough to shelter a small football team, and it has lived behind royal fences ever since the King claimed the land for his deer. Richmond Park holds one of the largest collections of ancient oaks in Europe, and the Royal Oak is its figurehead. Sir David Attenborough made it the symbol of a conservation campaign. The deer still graze around it as they have for centuries.",
@@ -80,7 +80,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "notes": "Coordinates taken from the tree's own Woodland Trust Ancient Tree Inventory entry (ID 40404), grid reference TQ1938873126, converted from OSGB36 to WGS84. The ATI page carries no language obscuring or rounding this location (unlike some sensitive ATI entries), and the tree is a well-known, publicly signposted landmark, so the precise grid reference is used directly rather than the previous general \"near Pen Ponds\" estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "lon_003",
@@ -123,7 +124,10 @@
         "neighbourhood": "Mayfair"
       },
       "story": "In 2008 one of the plane trees in Berkeley Square was valued at 750,000 pounds, briefly making it the most valuable tree in Britain. The square's planes were planted in 1789 by MP Edward Bouverie, who lived at number 13, and are among the oldest in London. The nightingale that sang in Berkeley Square was almost certainly singing from one of these branches. They were among the original 41 Great Trees of London, and the Grade II listed garden they shade has kept its shape while everything around it changed.",
-      "verified_sources": [],
+      "verified_sources": [
+        "https://exploring-london.com/2024/07/03/10-significant-and-historic-london-trees10-berkeley-square-plane-tree/",
+        "https://lapadalondon.com/the-plane-facts-about-berkeley-square/"
+      ],
       "access": "Free, public garden",
       "transport": "2 min walk from Green Park or Bond Street tube",
       "photo": {
@@ -133,7 +137,7 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Source URLs need backfilling.",
+      "notes": "Two independent sources now back the planting date, Bouverie attribution, 2008 valuation and Great Trees of London designation. This entry describes the square's plane trees collectively (30+ specimens, one individually named and valued); coordinates mark the square itself rather than one specific trunk among many, so location_precision stays approximate honestly.",
       "location_precision": "approximate"
     },
     {
