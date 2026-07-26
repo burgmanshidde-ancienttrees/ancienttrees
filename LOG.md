@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Verona: 1 more pin resolved, and a tool reliability limit caught before it caused harm
+
+- Followed up the Rome pass by trying the same Italian national monumental-tree registry on Verona, the worst-covered published city (8 of 8 approximate). Resolved the Ginkgo of Piazza Indipendenza to confirmed, matched with high confidence since the registry's own measurements are the exact figures already in this entry's story from an earlier pass.
+- Worth flagging: tried the same technique on two more Verona trees and on Naples, and caught this session's spreadsheet-reading tool giving contradictory answers across repeat fetches of the same file when rows look similar. Did not use any of those results. No wrong pin shipped, but a future run relying on this same technique should cross-check any match against a second independent fetch before trusting it, the same discipline this pass used to keep the Ginkgo result but drop the rest.
+- Verona now at 7 of 8 approximate pins (from 8).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Rome: 2 pins resolved via Italy's national monumental tree registry
 
 - Visitors: 43 visits, 69 page views over 7 days, flat (2026-07-20 to 2026-07-26: 8, 9, 10, 7, 4, 5). No new submissions, CSV still just the header row.
