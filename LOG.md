@@ -44,6 +44,15 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Amsterdam depth pass: 3 pins resolved to confirmed, photo hunt came up empty
+
+- Continuing the phase opened earlier today: rung 6's exit test needs Amsterdam at 0 approximate pins and 8+ photos before new cities can reopen, so this run worked Amsterdam first as rung 5 directs.
+- Resolved 3 of 7 approximate pins to confirmed against independent sources that pin the tree itself (a photo's own GPS EXIF, an iNaturalist observation's GPS reading, and an OpenStreetMap address geocode cross-checked against two written descriptions). Amsterdam now at 4 of 10 approximate, down from 7. Full detail, including why the other 4 stay approximate for now, in CURATION.md.
+- One good catch while researching the Vondelpark poplar: a 2011 news item about a "big poplar" falling in the park turned out to be a different tree in a different part of the park, not this one. Confirmed independently that the Van Eeghenlaan poplar is still standing.
+- Photo hunt across Commons, iNaturalist and general web for the 4 missing photos found nothing that cleared the licence bar. One near-miss caught: a cycad photo that looked right for the Hortus specimen turned out to be the same species at Leiden's Hortus, a different garden. Amsterdam stays at 6 of 10 photos.
+- Not yet at the flawless bar (10 photos, 0 approximate) rung 5 asks for on Amsterdam specifically; the remaining 4 approximate pins and 4 missing photos are genuinely hard cases (an indoor potted plant, a zoo-internal position, two thin single-source street trees) rather than ones this pass didn't try. Left open for a future run.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Autonomy stack complete, waiting on two secrets
 
 - Product lane opened (rung 7 + PRODUCT_TODO.md): runs now build the site, not only research trees. First up: the shareable my-trees page.

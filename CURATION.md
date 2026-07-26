@@ -2,6 +2,18 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Amsterdam depth pass: 7 approximate pins down to 4, photos still 6/10
+
+- First depth-phase run on Amsterdam, the reference city rung 5 says must go to flawless first (10 photos, 0 approximate pins). Resolved 3 of 7 approximate pins to confirmed, each against an independent source that pins the tree itself rather than just the park or street:
+  - **Olifantsiep** (Zeeburgerdijk): its own approved Commons photo carries GPS EXIF (52.366153, 4.934188), matching bomenbieb.nl's independent description of the tree standing on the grassy corner by the Panamalaan bridge. Two independent confirmations of the same spot.
+  - **Rijksmuseum Wingnut**: the iNaturalist observation already cited as its photo source (122778135) carries its own 4m-accuracy GPS reading (52.359392, 4.885229), the only wingnut recorded at that location. Used the coordinate, not the observation's casual-grade species ID.
+  - **Vondelpark Poplar**: geocoded Van Eeghenlaan 27 via OpenStreetMap/Nominatim (52.3582115, 4.8747576); two independent sources (bomeninfo.nl, inhetvondelpark.nl) describe the tree as standing directly opposite that address on the park's edge. Not a surveyed trunk position, but a specific walkable spot, a real precision gain over the prior general-park estimate.
+  - Also checked, while researching this tree, whether "Grote Populier Omgevallen" (a big poplar fell in the park in 2011) was this specimen: it wasn't, a different poplar in a different part of the park (between the Schapenweide and Speelweide). The Van Eeghenlaan poplar is independently confirmed still standing, with flexible crown anchors installed for support.
+- **4 pins stay honestly approximate after a genuine attempt to tighten them:** the Heimanseik (inside Artis zoo, sources place it "near the chimpanzee enclosure" but no map or geotagged photo gives a trunk position), the Hortus cycad (a potted specimen inside one greenhouse building, no source surveys its position within the Palm House), the Amstelkade Olive Willow (street-level only, the one detailed source, a boomzorg.nl PDF, isn't machine-readable and no address-specific detail was found elsewhere), and the Amstelveld Wingnuts (a specific tree within a stand of 46, square-level only). Recorded here rather than looped on.
+- **Photo hunt: no new finds, stays at 6/10.** Searched Wikimedia Commons, iNaturalist and general web for all 4 missing (Heimanseik, Vondelpark Poplar, Hortus cycad, Amstelkade Olive Willow). One near-miss caught and rejected: an Encephalartos altensteinii Commons photo that looked like a match for the Hortus cycad turned out to be the same species at Leiden's Hortus Botanicus, a different garden entirely.
+- Amsterdam now at 4 of 10 approximate pins (from 7) and 6 of 10 photos (unchanged). Not yet at the flawless bar the depth phase asks for; left open for a future pass rather than exhausted further this run.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-25 — Verona: 33rd city live, 8 trees (not 10), 8 flagged, 6 photos missing
 
 - New city, the next `pending` city after Bologna. Verona's documented tree heritage is genuinely thinner than several other Italian cities researched this session: only three specimens within the city itself appear on Italy's national monumental-trees register (a plane and a ginkgo group in Piazza Indipendenza, a Himalayan cedar on Viale Nino Bixio), versus eight in Bologna or six-plus in Naples's single largest park alone.

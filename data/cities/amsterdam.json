@@ -94,8 +94,8 @@
       "age_max": 156,
       "location": {
         "address": "Vondelpark, opposite Van Eeghenlaan 27, 1071 Amsterdam",
-        "latitude": 52.3585,
-        "longitude": 4.8763,
+        "latitude": 52.3582115,
+        "longitude": 4.8747576,
         "neighbourhood": "Oud-Zuid, Amsterdam-Zuid"
       },
       "story": "The tallest tree in Amsterdam stands on the edge of a bicycle path, not in a forest. Sources disagree on exactly when this Canadian poplar went into the ground, sometime between the park's founding around 1870 and a specifically documented 1885, but either way it has reached roughly 38.5 meters, taller than most buildings in the surrounding Oud-Zuid neighborhood. Its trunk measures 617 centimeters around, the third thickest in the city behind only the two plane trees in Leidsebosje. Poplars grow fast and die relatively young for a tree, rarely making it past 150 years, so this one is closer to the end of its run than the beginning, and unlike an oak it will not get centuries more to look forward to. Vondelpark's own written guide to its old trees singles this poplar out specifically, distinguishing it from an ash of similar age elsewhere in the park that never got nearly as large. Cyclists and joggers pass beneath its crown on Van Eeghenlaan every day without necessarily registering that the tallest tree in a city of canals and gabled houses is a poplar nobody planted on purpose to be a landmark.",
@@ -112,8 +112,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Sources disagree on planting date (park-establishment era around 1870 vs a specific 1885 date); age range widened to cover both. Exact position along Van Eeghenlaan is street-level, not tree-specific.",
-      "location_precision": "approximate"
+      "notes": "Sources disagree on planting date (park-establishment era around 1870 vs a specific 1885 date); age range widened to cover both. Coordinates now geocoded precisely to Van Eeghenlaan 27 (Nominatim/OpenStreetMap), the address the tree stands directly opposite on the park side; multiple sources independently describe it that way (bomeninfo.nl: \"opposite house number 27\"; inhetvondelpark.nl: \"on the slope between the raised Van Eeghenlaan and the sunken Vondelpark\"). Not a surveyed trunk position, but a specific, walkable spot rather than a general park area.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ams_004",
@@ -190,9 +190,9 @@
       "age_min": 110,
       "age_max": 126,
       "location": {
-        "address": "Zeeburgerdijk, opposite number 56, 1093 Amsterdam-Oost",
-        "latitude": 52.365,
-        "longitude": 4.932,
+        "address": "Zeeburgerdijk, corner of Panamalaan, 1093 Amsterdam-Oost",
+        "latitude": 52.366153,
+        "longitude": 4.934188,
         "neighbourhood": "Zeeburg, Amsterdam-Oost"
       },
       "story": "A truck tore off part of this elm's trunk in 2015, and it is still standing, propped now on a steel support like a boxer who refuses to sit down between rounds. Amsterdam planted this twin-stemmed elm on Zeeburgerdijk sometime between 1900 and 1915, according to conflicting municipal and conservation records, and its nickname comes from a heavy low branch that early residents thought looked like an elephant's trunk reaching toward the ground. The city has tens of thousands of elms, more per capita than almost anywhere else in Europe, a legacy of planting elms along canals for their tolerance of the polluted, waterlogged soil common near open sewers a century ago. Dutch elm disease, first identified and named in the Netherlands in the 1920s, wiped out huge numbers of European elms over the following decades, and Amsterdam's collection survived largely because of an aggressive, decades-long eradication and breeding program that continues today. The Olifantsiep, girth pushing five meters, has outlived a disease epidemic, a truck collision and the severe storm of January 2018, still leafing out every spring behind a low fence anyone can lean on.",
@@ -209,8 +209,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Sources give a planting date range of 1900-1915 rather than a single year. Exact GPS is a street-level estimate; monumentaltrees.com likely holds a precise pin but its page could not be fetched for independent verification per the project's sourcing rules. Photo verified on Commons: caption places 'a huge tree with heavy branches which need solid support' at the corner of Zeeburgerdijk and Panamalaan, matching bomenbieb.nl's own description of this tree's position. Dated 2013, before the 2015 truck-damage repair, so shows an earlier state of the same tree.",
-      "location_precision": "approximate"
+      "notes": "Sources give a planting date range of 1900-1915 rather than a single year. Coordinates now taken from the approved photo's own GPS EXIF data (52.366153, 4.934188), which matches bomenbieb.nl's independent description of the tree standing \"on the grassy corner by the bridge to Panamalaan.\" Photo dated 2013, before the 2015 truck-damage repair, so shows an earlier state of the same tree, but the position itself is unchanged.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ams_007",
@@ -319,8 +319,8 @@
       "age_max": 140,
       "location": {
         "address": "Rijksmuseum Gardens, near the Directeurswoning, Museumstraat 1, 1071 XX Amsterdam",
-        "latitude": 52.3596,
-        "longitude": 4.885,
+        "latitude": 52.359392,
+        "longitude": 4.885229,
         "neighbourhood": "Museumkwartier, Amsterdam-Zuid"
       },
       "story": "The Rijksmuseum's own architect planted this tree in his own garden design, and it outlived every renovation the museum went through afterward. Pierre Cuypers, who designed the Rijksmuseum building itself, laid out its surrounding gardens between 1884 and 1916 in distinct historical styles, neo-Renaissance parterres beside a wild landscape garden, and planted a Caucasian wingnut near the director's villa in the southeast corner around 1907. By a 2014 survey the tree stood over 19 meters tall with a trunk more than four meters around. When the museum closed for a decade-long renovation completed in 2013, the landscape firm Copijn redesigned the gardens from scratch and could have cleared the site for something new. Instead the wingnut was kept and built around, one of the few mature trees preserved through the entire project. Wingnuts are still uncommon as full-grown specimens in the Netherlands, which puts this tree in the same small company as the ones in Wertheimpark and Amstelveld across town, three separate stands of the same species that all happened to reach old age inside Amsterdam's public gardens rather than getting cleared for something newer.",
@@ -337,8 +337,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "An earlier planting date of 1885 appears in one source; the 1907 date is favored here as it matches the documented 1884-1916 timeline of Cuypers' garden construction, but the discrepancy is not fully resolved. Coordinates are an estimate for the garden's southeast corner. Photo is iNaturalist observation 122778135 (2022-06-21), 4m positional accuracy at coordinates matching this tree almost exactly and the only wingnut recorded at this location; the species ID is the observer's own call (casual grade, no independent confirmations) rather than community-verified, noted here for a future curator.",
-      "location_precision": "approximate",
+      "notes": "An earlier planting date of 1885 appears in one source; the 1907 date is favored here as it matches the documented 1884-1916 timeline of Cuypers' garden construction, but the discrepancy is not fully resolved. Coordinates now taken directly from iNaturalist observation 122778135's own GPS reading (52.359392, 4.885229, 4m positional accuracy), the only wingnut recorded at this location. The species ID on that observation is the observer's own call (casual grade, no independent confirmations) rather than community-verified, noted here for a future curator, but the coordinate itself is independent of the ID and reliable.",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           7,
