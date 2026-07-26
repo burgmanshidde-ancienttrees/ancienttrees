@@ -337,6 +337,8 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
 .route-gps[aria-pressed="true"] { background: var(--moss-light); border-color: var(--moss); }
 .report-btn { display: inline-block; margin: 4px 6px 0 0; padding: 5px 12px; border: 1px solid var(--cream-dark); border-radius: 999px; font-size: 12.5px; color: var(--ink-mid); text-decoration: none; }
 .report-btn:hover { border-color: var(--moss); color: var(--moss); }
+.subtle-suggest { font-size: 13px; color: var(--ink-light); }
+.subtle-suggest a { color: var(--moss); }
 .hero-kicker { font-family: var(--hand); font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--moss); margin-bottom: 0.5rem; }
 .hero-note { margin-top: 0.75rem; font-size: 13px; color: var(--ink-light); }
 .home-cta { display: inline-block; background: var(--moss); color: #fff; text-decoration: none;
@@ -433,7 +435,6 @@ PAGE_SHELL = """<!DOCTYPE html>
     <a href="%%ROOTPATH%%#cities">Cities</a>
     <a href="%%ROOTPATH%%species" class="bar-secondary">Species</a>
     <a href="%%ROOTPATH%%collections" class="bar-secondary">Collections</a>
-    <a href="%%ROOTPATH%%contribute" class="bar-cta">Suggest a tree</a>
   </nav>
 </header>
 %%BODY%%
@@ -458,7 +459,7 @@ ANALYTICS_SNIPPET = (
 FOOTER = """
 <footer>
   <span class="footer-logo">Ancient Trees</span>
-  <span class="footer-links"><a href="%%ROOTPATH%%collections">Collections</a></span>
+  <span class="footer-links"><a href="%%ROOTPATH%%collections">Collections</a> <a href="%%ROOTPATH%%contribute">Suggest a tree</a></span>
   <span class="footer-note">&copy; %%YEAR%% Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors.</span>
 </footer>
 """
@@ -1496,7 +1497,8 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pag
   <div class="report"><strong>Help keep this page true.</strong>
     <a class="report-btn" href="{submit_link('correction')}">Wrong spot</a>
     <a class="report-btn" href="{submit_link('correction')}">The tree is gone</a>
-    <a class="report-btn" href="{submit_link('correction')}">Suggest an edit</a></div>
+    <a class="report-btn" href="{submit_link('correction')}">Suggest an edit</a>
+    <a class="report-btn" href="{submit_link('tree')}">Suggest another tree</a></div>
 </main>
 """
 
@@ -1682,6 +1684,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
 
     panel_foot = f"""
     <div class="panel-foot">
+      <p class="subtle-suggest">Know an ancient tree in {esc(city)} we missed? <a href="{submit_link('tree')}">Suggest it</a>.</p>
       <div class="take-with-you">
         <strong>Going there?</strong> <a href="{slug}.gpx" download>Download all {len(trees)} trees</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
       </div>
@@ -2280,9 +2283,7 @@ def build_homepage(published, upcoming, collections, pages):
   <div class="city-grid">{live_cards}{soon_cards}</div>
   {coll_html}
 
-  <h2 class="section-heading">Know a tree we should?</h2>
-  <p class="prose">This map grows through people who know their trees. Every story is researched and double-checked, and the people who actually walk past these trees make it better.</p>
-  <p class="prose"><a class="home-cta" href="{submit_link("tree")}">Suggest a tree</a><a class="home-cta secondary" href="{submit_link("correction")}">Something here is wrong</a>{support_cta}</p>
+  <p class="prose subtle-suggest">This map grows through people who know their trees. <a href="{submit_link("tree")}">Know one we missed?</a>{support_cta}</p>
 </main>
 """
     head_extra = map_head() + "\n" + ld_script(site_graph())
