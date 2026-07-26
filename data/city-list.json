@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-20",
-  "note": "Wave order set 2026-07-26: depth exit test first (see CLAUDE.md rung 6), then Netherlands dense, then UK, then Ireland, counts per the follow-the-trees doctrine. World cities remain queued behind them.",
+  "note": "Wave order reversed 2026-07-26 evening on evidence: English-only pages plus search-only distribution make language-match decisive, and the UK was already our top Search Console country in week one. UK dense first, then Ireland, then the Netherlands (which revives as first priority if Hidde ever seeds locally or Dutch-language pages happen). Amsterdam stays the flawless reference city regardless.",
   "cities": [
     {
       "city": "Amsterdam",
@@ -234,6 +234,62 @@
       "status": "needs_curation"
     },
     {
+      "city": "York",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "york",
+      "status": "pending"
+    },
+    {
+      "city": "Bath",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "bath",
+      "status": "pending"
+    },
+    {
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "oxford",
+      "status": "pending"
+    },
+    {
+      "city": "Cambridge",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "cambridge",
+      "status": "pending"
+    },
+    {
+      "city": "Bristol",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "bristol",
+      "status": "pending"
+    },
+    {
+      "city": "Glasgow",
+      "country": "United Kingdom",
+      "tier": 2,
+      "slug": "glasgow",
+      "status": "pending"
+    },
+    {
+      "city": "Cork",
+      "country": "Ireland",
+      "tier": 2,
+      "slug": "cork",
+      "status": "pending"
+    },
+    {
+      "city": "Galway",
+      "country": "Ireland",
+      "tier": 2,
+      "slug": "galway",
+      "status": "pending"
+    },
+    {
       "city": "Utrecht",
       "country": "Netherlands",
       "tier": 2,
@@ -315,62 +371,6 @@
       "country": "Netherlands",
       "tier": 2,
       "slug": "arnhem",
-      "status": "pending"
-    },
-    {
-      "city": "York",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "york",
-      "status": "pending"
-    },
-    {
-      "city": "Bath",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "bath",
-      "status": "pending"
-    },
-    {
-      "city": "Oxford",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "oxford",
-      "status": "pending"
-    },
-    {
-      "city": "Cambridge",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "cambridge",
-      "status": "pending"
-    },
-    {
-      "city": "Bristol",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "bristol",
-      "status": "pending"
-    },
-    {
-      "city": "Glasgow",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "glasgow",
-      "status": "pending"
-    },
-    {
-      "city": "Cork",
-      "country": "Ireland",
-      "tier": 2,
-      "slug": "cork",
-      "status": "pending"
-    },
-    {
-      "city": "Galway",
-      "country": "Ireland",
-      "tier": 2,
-      "slug": "galway",
       "status": "pending"
     },
     {
