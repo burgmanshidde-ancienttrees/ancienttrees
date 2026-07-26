@@ -168,13 +168,14 @@
       "access": "Free, public park",
       "transport": "5 min walk from Treptower Park S-Bahn station (S8/S9/S41/S42/S85/S46)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Naturdenkmal_Flatter-Ulme_Treptower_Park_Berlin-Alt-Treptow_2025-05-06_01.jpg",
+        "license": "CC0 1.0",
+        "attribution": "Leonhard Lenz (GPSLeo), via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Declared a Nationalerbe-Baum (National Heritage Tree) 25 September 2025, confirmed by the district's own press release and a second local news source. Location upgraded to confirmed: the national heritage-tree register's own project page (run by a TU Dresden forestry professor) gives a specific GPS reading and a walking description (750m from the S-Bahn station along the riverside promenade, 150m east of the boat landing), a roughly 460m correction from the previous general-park estimate.",
+      "notes": "Declared a Nationalerbe-Baum (National Heritage Tree) 25 September 2025, confirmed by the district's own press release and a second local news source. Location upgraded to confirmed: the national heritage-tree register's own project page (run by a TU Dresden forestry professor) gives a specific GPS reading and a walking description (750m from the S-Bahn station along the riverside promenade, 150m east of the boat landing), a roughly 460m correction from the previous general-park estimate. A second independent source agrees within 15m: a geotagged Wikimedia Commons photo of this exact tree (file title names it directly), also the photo used below.",
+
       "location_precision": "confirmed"
     },
     {
@@ -296,11 +297,11 @@
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/F%C3%A4cherblattbaum_Gutspark_Britz_1.JPG",
         "license": "CC BY-SA 3.0",
-        "attribution": "Barfisch, Wikimedia Commons",
+        "attribution": "Barfisch, via Wikimedia Commons",
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Planting window (1880-1890) and 'oldest and tallest ginkgo in Berlin' claim confirmed by two independent sources (the palace's own history page and a Berlin.de tourism article). Location upgraded to confirmed: OpenStreetMap carries a single Ginkgo biloba node in the park tagged with the estate's own inventory reference (ref:schlossgutshofbritz=7), the same reference scheme used on neighbouring catalogued trees in the same park, about 120m from the previous palace-address estimate. Photo is from a dedicated Commons category for this exact tree (\"Naturdenkmal Facherblattbaum im Gutspark Britz\", the tree's own natural-monument designation, Naturdenkmal 8-2/B); viewed directly, shows a tall mature tree with characteristic ginkgo fan-shaped leaves and a monument information sign on site. Approved.",
+      "notes": "Planting window (1880-1890) and 'oldest and tallest ginkgo in Berlin' claim confirmed by two independent sources (the palace's own history page and a Berlin.de tourism article). Location upgraded to confirmed: OpenStreetMap carries a single Ginkgo biloba node in the park tagged with the estate's own inventory reference (ref:schlossgutshofbritz=7), the same reference scheme used on neighbouring catalogued trees in the same park, about 120m from the previous palace-address estimate, corroborated independently by Wikidata's coordinates for the same tree's Naturdenkmal designation (ND-8-2/B), about 110m away. Photo is from a dedicated Commons category for this exact tree; viewed directly, shows a tall mature tree with characteristic ginkgo fan-shaped leaves and a monument information sign on site. Approved.",
       "location_precision": "confirmed"
     },
     {

@@ -44,6 +44,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Amsterdam/Lisbon/Istanbul/Rome dead-end sweep, plus the Great Elm's photo
+
+- Visitors, 7 days: 43 visits, 69 page views, flat. No submissions. Site healthy. Started rung 5's depth ladder from the top (Amsterdam, Lisbon, Istanbul, Rome) concurrently with the marquee-Europe pass below; some overlap on Berlin, reconciled rather than duplicated.
+- Genuine new-technique attempts on all four lead-group holdouts turned up nothing: Amsterdam's own open-data tree API blocked by auth (403, a new angle, now ruled out); direct iNaturalist API queries on Lisbon's remaining photo gaps; a full retry of the OSM named-tree-node technique on Istanbul now that Overpass is reachable again, genuinely empty this time rather than a service outage; Rome's photo gaps, with one near miss caught and correctly rejected (a CC0 iNaturalist cedar 200m from the Belvedere pin turned out to be Cedrus atlantica, not this tree's Cedrus libani). Full detail in CURATION.md, recorded so future runs do not repeat these exact searches.
+- Closed the one photo gap the Berlin pass below left open: the Great Elm of Treptower Park now has a CC0 Wikimedia Commons photo, its file title naming the tree directly, geotagged within 15m of the registry coordinate the pass below already confirmed. Viewed directly and approved.
+
 ## 2026-07-26 — The machine is complete: eyes and a self-starting chain
 
 - All three secrets are in: the runs now read their own visitor numbers at the start of every pass (first reading: 43 visits, 69 page views over seven days, a steady 4 to 10 a day), and from the next completed run onward every run dispatches its successor. No cron luck, no human trigger, around the clock, bounded only by the usage limit.
@@ -70,8 +76,8 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 ## 2026-07-26 — Berlin: reached 8/10 photos and 0/10 approximate pins
 
 - Continuing rung 5's marquee-Europe order past Kyoto, picked Berlin as the closest published city to fully clearing both bars (was 7/10 photos, 2/10 approximate).
-- The Ginkgo of Schlosspark Britz matched an OpenStreetMap node carrying the estate's own tree-inventory reference number, and gained a photo from a Commons category dedicated to this exact natural-monument tree. The Great Elm of Treptower Park matched a national heritage-tree registry's own surveyed GPS point, a ~460m correction; no open-licensed photo exists for it after a real search. Full detail in CURATION.md.
-- Berlin now clears the 80% photo floor (8/10) and has 0 approximate pins.
+- The Ginkgo of Schlosspark Britz matched an OpenStreetMap node carrying the estate's own tree-inventory reference number, and gained a photo from a Commons category dedicated to this exact natural-monument tree. The Great Elm of Treptower Park matched a national heritage-tree registry's own surveyed GPS point, a ~460m correction; its photo gap closed in the concurrent pass above. Full detail in CURATION.md.
+- Berlin now clears the 80% photo floor (9/10, once the elm's photo above is counted) and has 0 approximate pins.
 - Site rebuilt, all contracts validated, pushed.
 
 ## 2026-07-26 — Kyoto: 2 pins resolved, 1 photo found, caught a species tag error rather than trusting the source
