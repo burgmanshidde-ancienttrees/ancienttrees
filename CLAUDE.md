@@ -6,6 +6,23 @@ Ancient Trees is a discovery platform that maps the 10 most remarkable ancient t
 
 The end product: a website (ancienttrees.app) with an interactive map and one SEO page per city ("10 Most Beautiful Ancient Trees in [City]"), later followed by an iOS app with a freemium model (2 trees free per city, €19,99/year for full access).
 
+## The value proposition
+
+This is the core, and everything else serves it. Written 2026-07-24 by Hidde because the proposition had been drifting toward SEO and coverage, which are how people arrive, not why they stay. When anything here conflicts with an SEO or coverage instinct elsewhere, this wins.
+
+**Ancient Trees is for people who love being outdoors and love trees.** The promise is simple: wherever you are, it shows you the remarkable old trees near you, gives you a short walk that strings a few together and tells you why each is worth seeing, and lets you collect the ones you have stood in front of. The feeling it sells is a good afternoon outside, looking up at something epic and old.
+
+The one-sentence north star: *I am somewhere, I open it, it knows where I am, it shows me a cool tree nearby and a walk past a few, tells me why they are special, and I tick off the ones I visit.*
+
+What this means for how we build:
+- **The map and "trees near me" are the product.** They lead everywhere, the homepage first.
+- **Cities, species and collections are acquisition, not the point.** They are SEO landing pages that bring people in from search. Keep them, they work, but they are the front door, not the house. On the homepage they sit below the value proposition, never in place of it.
+- **Collections stay** (for example "the ten most remarkable trees of Europe"). A real SEO strategy, kept and on the backlog as such, secondary to the core. Not to be deleted.
+- **The destination is: see the trees around you, walk them, collect them.** Accounts and an app are the eventual vehicle for the collection to persist and sync, the destination recorded under "Where this is going", gated on evidence, not now.
+- **Nothing is premium for now.** The job is users and the joy, not revenue. Which features ever become premium is undecided and deferred; today everything is free.
+
+When a page, a feature or a line of copy does not serve "have a good afternoon outside seeing epic trees near you," it is decoration or acquisition, and it must not crowd out the core.
+
 ## Repository structure
 
 ```
