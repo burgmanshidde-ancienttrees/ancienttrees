@@ -30,6 +30,17 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-26 — A dead-end sweep: six depth targets tried with new techniques, one real lead found but unreachable, nothing published was wrong
+
+- Visitors: 47 visits, 76 page views over 7 days, flat (21-26 July: 8, 9, 10, 7, 4, 9). No submissions. Site healthy.
+- Re-verified the depth-exit-test count from the data directly: Tokyo, Paris and London already clear the bar (8+ photos, 2 or fewer approximate pins). Amsterdam, Lisbon, Rome and Barcelona each need photos only (6-7 of 10); Istanbul remains furthest behind on both counts. Coverage stays frozen.
+- Tried a genuinely new technique (Wikimedia Commons geosearch by exact coordinate, rather than category or text search) on Amsterdam's three photo gaps, Rome's Adonis, Barcelona's Silk Tree and Lisbon's ginkgo. It surfaced candidates nobody had found before, but reading each file's own description confirmed the same problem already flagged: none identify the specific named tree. No photo approved.
+- Istanbul's Overpass API is reachable again (no more 504s) but returned nothing matching any of its 8 remaining trees; three OSM nodes near the Taşlı Çınar carry an unread `image` tag, worth a future pass once Overpass stops timing out on single-node lookups.
+- Edinburgh's photo gaps are now genuinely exhausted across every technique available this session, including a first try of the UK's Woodland Trust Ancient Tree Inventory (a large national register, checked as CC-BY-NC so lead-list-only): none of its records sit anywhere near our ten named specimens.
+- Brussels: found a real, promising lead, a CC-BY-licensed regional tree inventory covering all 19 municipalities (unlike the City-of-Brussels-only dataset already tried, which doesn't cover most of our ten trees at all), but its host, `geodata.environnement.brussels`, refused every connection this session. Worth a retry with different network tooling, this is a lead, not a dead end.
+- Checked the news for anything published here that has actually fallen or died: found real 2026 tree-collapse stories elsewhere (Rome's Colosseum pines, a Venice oak, London's Whitewebbs Oak) but none match a tree on this site.
+- No data files changed. Full detail in CURATION.md, written so the next run doesn't re-spend today's searches on the same six gaps.
+
 ## 2026-07-26 — Madrid: 6 of 10 approximate pins resolved by matching OpenStreetMap's mapping of the region's own singular-tree register
 
 - Continued down rung 5's list to Madrid, untouched today (4/10 photos, 10/10 approximate). Nine of its ten trees are on the Comunidad de Madrid's official singular-tree catalogue, and volunteers have separately mapped that catalogue into OpenStreetMap as individually named nodes, name-matching this project's own tree names closely enough to trust.
