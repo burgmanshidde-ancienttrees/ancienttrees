@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Athens: one pin tightened, one photo found, one near-miss caught and deliberately not used
+
+- Next in marquee-Europe order after Porto: Athens, at 4 of 10 photos and 10 of 10 approximate pins.
+- **The Regrown Olive of Plato's Academy**: geocoded the archaeological park itself (Nominatim), moving the pin about 360m to the actual site entrance. Stays approximate, since this locates the park rather than the tree's exact spot inside it. Along the way, found a Greek Wikipedia article for a separately-named "Ελιά του Πλάτωνα" (Olive Tree of Plato) giving a different address entirely (Sacred Way 89-91, Botanikos, several hundred metres from the excavated park our story and its sources describe). Deliberately did not use it: it reads as a distinct local tradition/legend site, not the same tree, and importing its address would have risked a wrong pin dressed up as more precise. Worth flagging for a future run: two different "Plato's olive" claims exist in Athens and should not be conflated.
+- **The Olive Woodland of Filopappou Hill**: found and approved an iNaturalist photo (CC BY) taken on the hill itself, viewed directly, showing an olive branch with the hill's dry ground visible behind it. Stays approximate, an honest ensemble spread across the whole planted hillside (same reasoning as Kew's Old Lions), not a single tree's pin.
+- Tried and came up empty: iNaturalist for the Plane Trees of Kefalari and Kaisariani Monastery; a targeted Commons category browse for Zappeion's plane trees (85 files in the category, none titled or described as the trees specifically).
+- Also tried to locate the Olive Tree of Pisistratus (Agioi Anargyroi) more precisely; Nominatim returned no result for the church address, and Athens has more than one "Agioi Anargyroi" locality, so left this one alone rather than guess.
+- Athens now at 5 of 10 photos (from 4); approximate pin count unchanged at 10 of 10 since the one improvement made stayed honestly approximate.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Porto: 2 pins from the city's own open-data register, 2 more from iNaturalist, a stale "under review" claim corrected
 
 - Moved to marquee Europe's next untouched city after Seville: Porto, at 2 of 10 photos and 10 of 10 approximate, essentially unworked by depth passes so far.
