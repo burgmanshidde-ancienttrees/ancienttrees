@@ -2,30 +2,15 @@ name: City research
 
 on:
   schedule:
-    # Every hour, around the clock. These runs share Hidde's Claude Pro
-    # subscription, which has a rolling 5-hour usage window, so most attempts
-    # hit the limit and stop after one turn. That is the design: a failed
-    # attempt costs almost nothing, so knocking hourly lets the work through
-    # whenever the window has room, and covers for GitHub's habit of delaying
-    # or skipping scheduled triggers. Concurrency below stops overlap.
-    #
-    # Every hour, around the clock: Hidde is away, so nothing else is drawing on
-    # the allowance and the runs may take all of it. Restore the protected
-    # working block when he is back by replacing this with:
-    #   - cron: "0 19-23 * * *"
-    #   - cron: "0 0-7 * * *"
-    # which leaves 10:00-21:00 Amsterdam free.
-    # Every 20 minutes. Measured 2026-07-21: GitHub has fired exactly three
-    # scheduled runs in this repo's entire history, across three different cron
-    # settings, so the frequency here barely matters. An earlier note here
-    # blamed the */20 setting for that, which the data does not support: hourly
-    # produced no firings either. Left frequent because a rejected attempt costs
-    # nothing on a public repo and might catch an open usage window.
-    #
-    # The real mitigation is not this line, it is the long job timeout below:
-    # when a trigger does land, the run stays alive for hours and waits out the
-    # usage limit rather than exiting and hoping GitHub fires again.
+    # Two rhythms, set 2026-07-26 now that Hidde is back and talking to
+    # Claude daily. Daytime (07-19 UTC, roughly 09:00-21:00 Amsterdam) belongs
+    # to him: the chain pauses, only this sporadic cron knocks, and a run that
+    # hits the usage limit exits instead of camping on the window. Night is the
+    # machine's: the self-dispatch chain runs continuously. The 19:05 UTC entry
+    # is the evening igniter that reliably relights the chain after the pause;
+    # the */20 knock covers GitHub's habit of dropping schedules.
     - cron: "*/20 * * * *"
+    - cron: "5 19 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -123,9 +108,12 @@ jobs:
               half-researched city is worse than none. Never leave one part done.
             - Start no new item after 5 hours. The job is killed at 345 minutes,
               and work killed mid-flight is work lost.
-            - If you hit the usage limit, do not exit. Wait and try again: the
-              window is rolling, so it reopens while this job is still alive, and
-              a scheduled trigger may not come again for hours.
+            - Usage-limit behaviour depends on the clock. Between 07:00 and
+              19:00 UTC (Hidde's waking hours in Amsterdam) the window is his:
+              work while it is open, but the moment you hit the limit, finish
+              your commit and exit so his conversations get the room. Outside
+              those hours, do not exit: wait for the rolling window to reopen
+              and keep working through the night.
           claude_args: |
             --allowedTools "Bash(git:*),Bash(python3:*),Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
 
@@ -149,6 +137,11 @@ jobs:
         run: |
           if [ -z "$GH_TOKEN" ]; then
             echo "No SELF_DISPATCH_TOKEN set. Continuous mode off; relying on the cron."
+            exit 0
+          fi
+          H=$(date -u +%H)
+          if [ "$H" -ge 7 ] && [ "$H" -lt 19 ]; then
+            echo "Hidde's hours (07-19 UTC): chain pauses, evening igniter relights it."
             exit 0
           fi
           echo "Continuous mode on. Throttling before the next dispatch."
