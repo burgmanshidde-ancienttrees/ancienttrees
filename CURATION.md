@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Lisbon photo pass: 3/10 to 4/10
+
+- Continuing the depth phase down rung 5's order after Amsterdam: Lisbon is next. Genuine hunt across Wikimedia Commons, iNaturalist, Flickr, Openverse and the city's own tree-history sources for all 7 missing photos (Olive Trees of Santo Amaro, Tipu of São Bento, Coral Trees of Jardim da Luz, Nettle Tree of Avenida de Berlim, Ginkgo of Praça Paiva Couceiro, Paineira of Jardim Alfredo Keil, Giant Rubber Tree of Mouraria).
+- Found 1: an iNaturalist observation (249878863, 2024-10-31) of a Ceiba speciosa in bloom, CC0, 28m from the Paineira's existing pin and well within the small garden it shares with five other classified specimens. Species ID is the observer's own vision-assisted call rather than community-confirmed, and this run's tools could not open the image file to check it visually, so recorded as `found_needs_check` rather than `approved`.
+- The other 6 stay `missing` after a real search. Two near-misses checked and rejected: a Wikimedia Commons photo of Jardim de São Bento turned out to be of a sculpture, not the tipu tree; a Praça Paiva Couceiro square photo (the same one a prior run already flagged and rejected) still gives no confirmation the ginkgo itself is in frame.
+- Lisbon now at 4 of 10 photos, still short of the 8/10 floor. Left open for a future pass rather than looped on further.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Amsterdam depth pass: 7 approximate pins down to 4, photos still 6/10
 
 - First depth-phase run on Amsterdam, the reference city rung 5 says must go to flawless first (10 photos, 0 approximate pins). Resolved 3 of 7 approximate pins to confirmed, each against an independent source that pins the tree itself rather than just the park or street:

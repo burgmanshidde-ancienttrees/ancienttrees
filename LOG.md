@@ -44,6 +44,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Lisbon photo pass: 3/10 to 4/10
+
+- Next in rung 5's order after Amsterdam. Genuine hunt across Commons, iNaturalist, Flickr and Openverse for all 7 missing photos; found 1, a CC0 iNaturalist photo of the Paineira in bloom. Full detail, including two rejected near-misses, in CURATION.md.
+- Lisbon still well short of the 8/10 floor at 4/10; the remaining 6 gaps look like genuinely hard cases (an ensemble tree with no individual photography, a square nobody seems to have photographed with the tree in frame) rather than ones this pass skipped.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Amsterdam depth pass: 3 pins resolved to confirmed, photo hunt came up empty
 
 - Continuing the phase opened earlier today: rung 6's exit test needs Amsterdam at 0 approximate pins and 8+ photos before new cities can reopen, so this run worked Amsterdam first as rung 5 directs.
