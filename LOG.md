@@ -30,6 +30,13 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-26 — Rome: both approximate pins resolved
+
+- Two independently-photographed "Cedro del Libano" images at Villa Doria Pamphilj, by different photographers, agree on one exact GPS point that also matches Italy's national tree registry (MASAF) to the hundredth of an arcsecond. That point is 1.2km from the Belvedere cedar's old pin, a real correction, not just tightening; moved to confirmed, with the matching photo held at found_needs_check pending a future pass that can view images directly. The Cedar of Celimontana's pin was confirmed the same way, using its own already-approved photo's embedded GPS, corroborated by two more photos and the neighbouring pine's registry point.
+- Rome now at 0/10 approximate (from 2). Photos stay at 5/10 (1 pending a visual check); the other 4 gaps retried and stayed genuine dead ends. Full detail in CURATION.md.
+- Moving to the rest of the lead group next per rung 5's order (Tokyo, Paris, London and Barcelona already clear the exit-test bar; marquee Europe continues oldest-first from Dublin/Barcelona/Athens/Porto/Kyoto/Verona/Naples).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Istanbul: no data changed, but two dead domains and one licensing trap identified
 
 - Followed up rung 5's two untried leads on Istanbul, still furthest-behind of the eight priority cities (2/10 photos, 8/10 approximate). konusanagac.com is confirmed genuinely dead (NXDOMAIN, not a transient issue) and avrupaanitagaclar.com has been hijacked to a gambling redirect; both should stop being retried. anadoluanitagaclar.com is real and structured but 403-blocked to every fetch tried, worth another attempt with different tooling. Also caught a near-miss before it became a mistake: anitagac.istanbul's tree pages do have real photos in static HTML (not JS-only, as previously assumed) but the site states no reuse licence anywhere, so none of them are usable despite being easy to hotlink.
