@@ -79,7 +79,7 @@ body { background: var(--cream); color: var(--ink); font-family: var(--sans); fo
 a { color: var(--moss); }
 
 header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: var(--header-h); display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem; background: rgba(247,244,238,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--cream-dark); }
-.bar-logo { font-family: var(--serif); font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); text-decoration: none; }
+.bar-logo { font-family: var(--sans); font-weight: 700; font-size: 1.02rem; letter-spacing: 0.09em; text-decoration: none; color: var(--ink); }
 .bar-links a { font-size: 13px; color: var(--ink-mid); text-decoration: none; margin-left: 1.25rem; }
 .bar-links a:hover { color: var(--moss); }
 .bar-links a.bar-cta { color: var(--moss); font-weight: 500; border: 1px solid var(--moss); border-radius: 3px; padding: 0.35rem 0.7rem; }
@@ -95,8 +95,8 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .panel { width: 30rem; max-width: 45vw; height: 100%; overflow-y: auto; background: var(--cream); border-right: 1px solid var(--cream-dark); flex-shrink: 0; }
 .panel-head { padding: 2rem 1.75rem 1.5rem; border-bottom: 1px solid var(--cream-dark); }
 .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.75rem; }
-.panel-head h1 { font-family: var(--serif); font-size: 1.9rem; font-weight: 400; line-height: 1.2; margin-bottom: 0.75rem; }
-.panel-head h1 em { font-style: italic; color: var(--moss); }
+.panel-head h1 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.9rem; font-weight: 400; line-height: 1.2; margin-bottom: 0.75rem; }
+.panel-head h1 em { font-family: var(--serif); font-style: italic; color: var(--moss); font-weight: 400; letter-spacing: 0; font-size: 1.08em; }
 .lede { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
 .notice { background: var(--moss-light); border-left: 3px solid var(--moss); padding: 0.7rem 1rem; font-size: 12px; color: var(--ink-mid); margin-top: 1rem; }
 .stage { flex: 1; position: relative; }
@@ -110,8 +110,8 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .tree-card:hover .tree-card-photo img { transform: scale(1.04); }
 .tree-card-credit { font-size: 10px; color: var(--ink-light); margin: -0.6rem 0 0.85rem; }
 .tree-card-top { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 0.4rem; }
-.tree-num { font-family: var(--serif); font-size: 1.1rem; color: var(--moss); flex-shrink: 0; width: 1.4rem; }
-.tree-name { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; line-height: 1.25; }
+.tree-num { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.1rem; color: var(--moss); flex-shrink: 0; width: 1.4rem; }
+.tree-name { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.35rem; font-weight: 400; line-height: 1.25; }
 .tree-label { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mid); background: var(--cream-dark); border-radius: 2px; padding: 0.15rem 0.45rem; margin-left: 0.6rem; vertical-align: middle; white-space: nowrap; }
 .tree-meta { font-size: 12px; color: var(--ink-light); margin: 0 0 0.6rem 2.15rem; }
 .best-now, .best-now-inline { display: inline-block; background: var(--moss); color: #fff;
@@ -121,7 +121,7 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 /* Seasonal peak chart, in the spirit of PictureThis but in our own skin. */
 .season { margin: 2rem 0; background: #fff; border: 1px solid var(--cream-dark);
   border-radius: 10px; padding: 1.1rem 1.25rem 0.9rem; }
-.season-head { display: flex; align-items: center; gap: 0.5rem; font-family: var(--serif);
+.season-head { display: flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em;
   font-size: 1.05rem; color: var(--ink); margin-bottom: 0.5rem; }
 .sc-chip { font-family: var(--sans); font-size: 11px; font-weight: 600; color: var(--moss);
   border: 1px solid var(--moss); border-radius: 999px; padding: 1px 8px; text-transform: capitalize; }
@@ -141,7 +141,7 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .tree-more a { text-decoration: none; }
 .tree-more a:hover { text-decoration: underline; }
 .panel-foot { padding: 1.75rem; font-size: 13px; color: var(--ink-mid); }
-.panel-foot h2 { font-family: var(--serif); font-size: 1.25rem; font-weight: 400; margin-bottom: 0.75rem; }
+.panel-foot h2 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.25rem; font-weight: 400; margin-bottom: 0.75rem; }
 .panel-foot dt { font-weight: 500; margin-top: 1rem; }
 .panel-foot dd { font-weight: 300; margin-top: 0.3rem; }
 .panel-foot .suggest { border-top: 1px solid var(--cream-dark); margin-top: 1.5rem; padding-top: 1.25rem; color: var(--ink-light); }
@@ -151,9 +151,9 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .crumbs { font-size: 12px; color: var(--ink-light); margin-bottom: 1.25rem; }
 .crumbs a { color: var(--ink-light); text-decoration: none; }
 .crumbs a:hover { color: var(--moss); }
-.content-page h1 { font-family: var(--serif); font-size: 2.1rem; font-weight: 400; line-height: 1.2; margin-bottom: 1rem; }
-.content-page h2 { font-family: var(--serif); font-size: 1.4rem; font-weight: 400; margin: 2.25rem 0 0.75rem; }
-.content-page h3 { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; margin: 1.5rem 0 0.35rem; }
+.content-page h1 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 2.1rem; font-weight: 400; line-height: 1.2; margin-bottom: 1rem; }
+.content-page h2 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.4rem; font-weight: 400; margin: 2.25rem 0 0.75rem; }
+.content-page h3 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.15rem; font-weight: 400; margin: 1.5rem 0 0.35rem; }
 .answer-first { font-size: 1.05rem; line-height: 1.75; margin-bottom: 1rem; }
 .prose-block p { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin-bottom: 1rem; }
 .facts { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1.5rem; background: var(--cream-dark); padding: 1.25rem 1.5rem; border-radius: 4px; margin: 1.5rem 0; }
@@ -192,8 +192,8 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .home-hero { position: relative; height: 72vh; min-height: 420px; margin-top: var(--header-h); }
 .home-hero .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 .hero-overlay { position: absolute; top: 1.5rem; left: 1.5rem; z-index: 10; background: rgba(247,244,238,0.95); backdrop-filter: blur(8px); border: 1px solid var(--cream-dark); border-radius: 4px; padding: 1.75rem 2rem; max-width: 26rem; box-shadow: 0 4px 24px rgba(26,26,20,0.08); }
-.hero-overlay h1 { font-family: var(--serif); font-size: 1.75rem; font-weight: 400; line-height: 1.25; margin-bottom: 0.6rem; }
-.hero-overlay h1 em { font-style: italic; color: var(--moss); }
+.hero-overlay h1 { font-family: var(--sans); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.015em; line-height: 1.25; margin-bottom: 0.6rem; }
+.hero-overlay h1 em { font-family: var(--serif); font-style: italic; color: var(--moss); font-weight: 400; letter-spacing: 0; font-size: 1.08em; }
 .hero-overlay p { font-size: 13px; font-weight: 300; color: var(--ink-mid); line-height: 1.65; }
 .hero-overlay .go-btn { border: none; font-family: var(--sans); cursor: pointer; margin-top: 0.9rem; }
 .near-me-result { font-size: 12px; margin-top: 0.6rem; min-height: 1em; }
@@ -205,7 +205,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .home-act:first-child { border-top: none; }
 .home-act:nth-child(even) .home-act-visual { order: -1; }
 .home-act-verb { font-family: var(--hand); font-weight: 700; color: var(--moss); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
-.home-act h2 { font-family: var(--serif); font-weight: 400; font-size: 1.75rem; margin: 0.35rem 0 0.7rem; line-height: 1.15; }
+.home-act h2 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.75rem; margin: 0.35rem 0 0.7rem; line-height: 1.15; }
 .home-act-copy p { color: var(--ink-mid); font-size: 1.05rem; max-width: 42ch; }
 /* The three acts, drawn in one illustrated system instead of photographs.
    Reference: Polarsteps' stats-that-grow presentation, in our own cream and
@@ -234,11 +234,11 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .hav-phone { margin: 0 auto; width: min(78%, 300px); background: var(--ink); border-radius: 30px;
   padding: 10px; box-shadow: 0 22px 44px rgba(26,26,20,0.24); }
 .hav-screen { background: #fff; border-radius: 22px; padding: 16px 14px 18px; }
-.hav-screen h4 { font-family: var(--serif); font-weight: 400; font-size: 1.05rem; margin: 0 0 10px; }
+.hav-screen h4 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.05rem; margin: 0 0 10px; }
 .stat-row { display: flex; gap: 8px; margin-bottom: 12px; }
 .stat { flex: 1; border-radius: 12px; padding: 10px 8px; text-align: center; background: var(--moss-light); }
 .stat.alt { background: #F3EFE2; }
-.stat b { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.45rem; color: var(--moss); line-height: 1.1; }
+.stat b { display: block; font-family: var(--sans); font-weight: 700; letter-spacing: -0.01em; font-size: 1.45rem; color: var(--moss); line-height: 1.1; }
 .stat span { font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-mid); }
 .hav-screen h5 { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-light);
   margin: 0 0 8px; font-weight: 600; }
@@ -266,17 +266,17 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
   color: #fff; font-size: 8.5px; font-weight: 600; padding: 1.5px 7px; border-radius: 999px; white-space: nowrap; }
 @media (max-width: 760px) { .home-act { grid-template-columns: 1fr; gap: 1.5rem; padding: 2.25rem 0; } .home-act:nth-child(even) .home-act-visual { order: 0; } }
 .page { max-width: 1100px; margin: 0 auto; padding: 3rem 2.5rem; }
-.section-heading { font-family: var(--serif); font-size: 1.75rem; font-weight: 400; margin-bottom: 1.5rem; }
+.section-heading { font-family: var(--sans); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 1.5rem; }
 .prose { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
 .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2px; background: var(--cream-dark); border: 1px solid var(--cream-dark); margin-bottom: 3rem; }
 .city-card { background: var(--cream); padding: 1.5rem; text-decoration: none; border-top: 2px solid transparent; transition: border-top-color 0.2s; }
 .city-card:hover { border-top-color: var(--moss); }
-.city-card-name { font-family: var(--serif); font-size: 1.25rem; color: var(--ink); margin-bottom: 0.25rem; }
+.city-card-name { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.25rem; color: var(--ink); margin-bottom: 0.25rem; }
 .city-card-meta { font-size: 12px; color: var(--ink-light); }
 .city-card.soon { opacity: 0.55; }
 
 footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
-.footer-logo { font-family: var(--serif); font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
+.footer-logo { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
 .footer-links { font-size: 12px; }
 .footer-links a { color: var(--ink-mid); text-decoration: none; margin-right: 1rem; }
 .footer-note { font-size: 12px; color: var(--ink-light); }
@@ -362,7 +362,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
   .panel { padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
 }
 .maplibregl-popup-content { font-family: var(--sans); font-size: 13px; padding: 0.75rem 1rem; border-radius: 4px; }
-.maplibregl-popup-content strong { font-family: var(--serif); font-size: 15px; font-weight: 400; }
+.maplibregl-popup-content strong { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 15px; font-weight: 400; }
 
 @media (max-width: 800px) {
   .split { flex-direction: column-reverse; height: auto; }
@@ -377,7 +377,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
   /* Keep the bar on one line on phones: secondary links stay reachable from
      the homepage and from the pages themselves. */
   header.bar { flex-wrap: nowrap; padding: 0 1rem; }
-  .bar-logo { font-size: 12px; white-space: nowrap; }
+  .bar-logo { font-family: var(--sans); font-weight: 700; font-size: 1.02rem; letter-spacing: 0.09em; text-decoration: none; color: var(--ink); }
   .bar-links { display: flex; align-items: center; white-space: nowrap; }
   .bar-links a.bar-secondary { display: none; }
   /* Get to the trees faster: the intro is still fully in the HTML. */
