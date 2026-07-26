@@ -20,8 +20,43 @@ def sh(*args):
         return ""
 
 
+STATE = ROOT / ".claude" / "last-brief-head"
+
+
+def since_last_visit(out):
+    """What happened since Hidde's previous session: the missed part."""
+    sh("git", "fetch", "-q")  # pick up overnight run pushes; silent if offline
+    tip = sh("git", "rev-parse", "origin/main") or sh("git", "rev-parse", "HEAD")
+    last = STATE.read_text().strip() if STATE.exists() else ""
+    if last and last != tip:
+        rng = f"{last}..{tip}"
+        commits = sh("git", "log", "--oneline", rng)
+        n = len(commits.splitlines()) if commits else 0
+        bots = sh("git", "log", "--format=%an", rng).splitlines().count("claude[bot]")
+        out += [f"SINCE YOUR LAST VISIT: {n} commit(s), {bots} by the autonomous runs.", ""]
+        titles = sh("git", "log", "--format=%s", rng, "--author=claude[bot]")
+        if titles:
+            out.append("What the runs did, newest first:")
+            out += [f"  - {t}" for t in titles.splitlines()[:12]]
+            out.append("")
+        # newest visitors line the runs logged
+        log = sh("git", "show", f"{tip}:LOG.md")
+        for line in log.splitlines():
+            if line.strip().startswith("- Visitors"):
+                out += [f"Latest visitor reading: {line.strip()[2:]}", ""]
+                break
+    elif last:
+        out += ["SINCE YOUR LAST VISIT: nothing new pushed. The machine may be mid-run.", ""]
+    try:
+        STATE.parent.mkdir(exist_ok=True)
+        STATE.write_text(tip)
+    except Exception:
+        pass
+
+
 def main():
     out = ["ANCIENT TREES — state at session start", ""]
+    since_last_visit(out)
 
     # Cities and trees
     try:
