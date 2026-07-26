@@ -37,6 +37,13 @@ Everything else that used to sit here is done or recorded: the submission form i
 - Verona now at 7 of 8 approximate pins (from 8).
 - Site rebuilt, all contracts validated, pushed.
 
+## 2026-07-26 — Lisbon: one photo found, five stayed genuine dead ends
+
+- Continued rung 5 after Amsterdam. Lisbon needed photos (4/10, floor is 8+) more than pins (already 2/10 approximate). Found and verified a CC BY-SA 4.0 photo for the Santo Amaro olive trees, matched by its own description and a heritage reference number to the exact four trees the story describes.
+- The other 5 gaps (Tipu of São Bento, Coral Trees of Jardim da Luz, Nettle Tree of Avenida de Berlim, Ginkgo of Praça Paiva Couceiro, Rubber Tree of Mouraria) stayed genuine dead ends after trying Portuguese Wikipedia, Wiki Loves Monuments categories, Flickr CC and dados.gov.pt's actual dataset API (it turns out to be a WFS/WMS geoservice with no CSV download, not previously confirmed). Two near-misses caught and correctly rejected: candidate Tipuana tipu photos on Commons and Flickr turned out to be different specimens at different Lisbon addresses.
+- Lisbon now at 5/10 photos (from 4). Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Amsterdam: a wrong pin corrected by 350m, one photo held back on identity doubt
 
 - Visitors: 44 visits, 70 page views over 7 days, flat (21st-26th: 8, 9, 10, 7, 4, 6). No new submissions (CSV still just the header row). Site healthy, build clean. Continued rung 5's depth ladder at the top: Amsterdam, the reference city, still short of flawless.
