@@ -125,8 +125,8 @@
       "age_max": 205,
       "location": {
         "address": "Piazza Malpighi, 40123 Bologna",
-        "latitude": 44.4938,
-        "longitude": 11.3362,
+        "latitude": 44.4937,
+        "longitude": 11.3364,
         "neighbourhood": "Malpighi"
       },
       "story": "This plane tree grows in a garden raised more than four metres above the surrounding piazza, a quirk of geography with a specific origin: the ground was once known as the Cavallerizza, a riding ground used from 1612 for horsemanship and public events, before the noble Rusconi family converted it into a private garden around 1825 and planted, among other trees, this Oriental plane. Two centuries on it has become, by most local accounts, the single most imposing tree standing anywhere in Bologna's historic centre, 36 metres tall with a trunk 520cm around, close by the Rusconi family's own palazzo. Its elevated setting has become something of a double-edged inheritance: the raised garden and the tall retaining wall separating it from the piazza below have almost certainly limited how far its root system can spread, yet the tree shows no clear sign of decline generations after its likely planting date. It remains one of eight trees on Italy's official monumental register within Bologna city limits, a shy giant, in the words of one local tree writer, tucked into a garden most passersby in the piazza below never think to look up into.",
@@ -143,8 +143,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Dimensions (36m height, 520cm circumference), the Cavallerizza/Rusconi origin story and the ~1825 planting estimate corroborated across two independent dedicated tree-history sources. Photo verified directly: coordinates in the file's own metadata match the geocoded address closely, and the image clearly shows a large plane canopy over the same elevated garden setting described in the story.",
-      "location_precision": "approximate"
+      "notes": "Dimensions (36m height, 520cm circumference), the Cavallerizza/Rusconi origin story and the ~1825 planting estimate corroborated across two independent dedicated tree-history sources. Photo verified directly: coordinates in the file's own metadata match the geocoded address closely, and the image clearly shows a large plane canopy over the same elevated garden setting described in the story. Pin cross-checked against Italy's national monumental tree registry (MASAF, AMI code 14/A944/BO/08, \"Palazzo Rusconi - Piazza Malpighi 16\", Platano orientale), read identically across two independent fetches of the source spreadsheet; moved 15m to the registry point.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bol_005",
@@ -155,8 +155,8 @@
       "age_max": 135,
       "location": {
         "address": "Istituto Ortopedico Rizzoli, Via Giulio Cesare Pupilli 1, 40136 Bologna",
-        "latitude": 44.4802,
-        "longitude": 11.3422,
+        "latitude": 44.4809,
+        "longitude": 11.3408,
         "neighbourhood": "San Michele in Bosco"
       },
       "story": "This cedar grows in the garden of a working orthopaedic hospital, on ground that has already been a monastery, a royal residence and a public park before it became a place of medicine. San Michele in Bosco started as an Olivetan monastery rebuilt in 1437, later served briefly as Villa Reale when King Victor Emmanuel II stayed there around Italian unification in 1860, and only became a hospital in 1896, when the Istituto Ortopedico Rizzoli opened here in the presence of Italy's royal family, funded by a bequest from the surgeon Francesco Rizzoli. The cedar, planted around that same transition, has reached nearly 30 metres, its trunk 520cm around, standing in a garden landscaped specifically to frame the new medical facility when it opened. Himalayan cedar, native to high-altitude forests stretching from Afghanistan to Nepal, was a fashionable choice for grand Italian institutional gardens of the period, valued for its size and its distinctive drooping branch tips, and this specimen has had well over a century to earn its place on Italy's official monumental tree register.",
@@ -173,8 +173,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Dimensions (29.2m height, 520cm circumference) and AMI listing from a dedicated tree article; the 1896 institutional history corroborated independently by a city archive/library source. Planting date is an estimate tied to the hospital's 1896 opening rather than a documented planting record. No usable photo found on Commons for this specific tree.",
-      "location_precision": "approximate"
+      "notes": "Dimensions (29.2m height, 520cm circumference) and AMI listing from a dedicated tree article; the 1896 institutional history corroborated independently by a city archive/library source. Planting date is an estimate tied to the hospital's 1896 opening rather than a documented planting record. No usable photo found on Commons for this specific tree. Pin corrected by about 130m to Italy's national monumental tree registry point (MASAF, AMI code 03/A944/BO/08, \"Istituto Ortopedico Rizzoli - Via Pupilli 1\", Cedro dell'Himalaya), read identically across two independent fetches of the source spreadsheet.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bol_006",
@@ -186,7 +186,7 @@
       "best_time": { "months": [11], "label": "November, when its fan-shaped leaves turn gold" },
       "location": {
         "address": "Piazza Cavour, 40124 Bologna",
-        "latitude": 44.4909,
+        "latitude": 44.4911,
         "longitude": 11.3439,
         "neighbourhood": "Galvani"
       },
@@ -204,8 +204,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Height (29.5m) and circumference (338cm) corroborated across the official RAMI registry entry and an independent local-history article covering the Lucio Dalla connection. A same-named 'Ginkgo di piazza Cavour' Wikimedia Commons category exists but documents a different tree entirely, in Turin, not Bologna; not used here to avoid the wrong-city mixup. No usable photo found for the correct, Bologna specimen.",
-      "location_precision": "approximate"
+      "notes": "Height (29.5m) and circumference (338cm) corroborated across the official RAMI registry entry and an independent local-history article covering the Lucio Dalla connection. A same-named 'Ginkgo di piazza Cavour' Wikimedia Commons category exists but documents a different tree entirely, in Turin, not Bologna; not used here to avoid the wrong-city mixup. No usable photo found for the correct, Bologna specimen. Pin cross-checked against Italy's national monumental tree registry (MASAF, AMI code 12/A944/BO/08, \"Piazza Cavour\", Ginco), read identically across two independent fetches of the source spreadsheet; moved 22m to the registry point.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bol_007",
