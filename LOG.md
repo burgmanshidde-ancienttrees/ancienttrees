@@ -44,6 +44,11 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Paris photo check: no new ground, closest city to the exit test
+
+- Paris only needs 2 more photos to clear the 8/10 floor (already at 0 approximate pins). Checked Commons, iNaturalist, Flickr and the City of Paris's own remarkable-trees gallery for the 4 gaps; the gallery confirmed the right trees but isn't openly licensed, and nothing else cleared the bar. Stays at 6/10. Detail in CURATION.md.
+- This is the one city genuinely close to passing rung 6's exit test on its own; worth a dedicated photo push in a future run since only 2 finds stand between it and done.
+
 ## 2026-07-26 — Istanbul and Rome depth checks: no new ground, both genuinely tried
 
 - Continuing rung 5's order (Amsterdam, Lisbon, Istanbul, Rome) after the Lisbon pass above. Istanbul: this is the third genuine hunting pass on its photo gaps without a new find (after 2026-07-22 and 2026-07-23), and its own registry (anitagac.istanbul) embeds per-tree maps as JavaScript with no coordinates reachable from the page source, so pin precision couldn't be improved either. Rome: Italy's national tree registry has no search and 881 unpaginated Roma entries with no way to filter by villa, so a targeted lookup for the cedar at Villa Doria Pamphilj, the two trees at Villa Celimontana or Adonis wasn't reachable; Commons categories for both villas were checked directly and nothing confirms the specific named trees.

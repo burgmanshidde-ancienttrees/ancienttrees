@@ -2,6 +2,12 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Paris photo check: no new ground this pass
+
+- Paris already sits at 0 approximate pins (cleared 2026-07-21), so it only needs 2 more photos to clear the 8/10 floor: the Second Robinier, Buttes-Chaumont Sequoia, Parc Montsouris Plane, and Sophora by the Lake are the 4 gaps. Checked Wikimedia Commons, iNaturalist and Flickr for all 4; nothing cleared the licence bar.
+- One avenue checked and ruled out: the City of Paris's own gallery page of 13 classified "arbres remarquables" includes both the Montsouris plane and the Buttes-Chaumont sophora (useful confirmation these are the right trees), but the gallery carries no Creative Commons or Licence Ouverte/Etalab marking, standard Ville de Paris editorial copyright, so not usable per the open-licence rule.
+- Paris stays at 6 of 10 photos. Left open rather than looped on further.
+
 ## 2026-07-26 — Rome depth check: no new ground this pass
 
 - Next in rung 5's order after Istanbul. Checked both angles: Italy's national monumental-tree registry (ilregistrodeglialberi.it), already a source for three Rome entries, has no site search and 881 unpaginated entries for Roma province with no evident way to filter by villa, so a targeted per-tree lookup for Villa Doria Pamphilj's cedar, Villa Celimontana's cedar and pine, or Adonis wasn't reachable this pass. Wikimedia Commons categories for Villa Borghese trees (56 files) and the Orto Botanico (63 files) were checked directly; nothing names Adonis specifically or confirms the Undici Fontane planes or the Orangery's cork oak.
