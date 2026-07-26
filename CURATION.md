@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Rome: no photo changes, one candidate needs a visual check, one near-miss stayed unresolved on purpose
+
+- Continuing rung 5's order after Istanbul. Rome sits at 5/10 photos (floor is 8+), already within the pin target, so this pass was photo-only on the 5 remaining gaps. Browsed Wikimedia Commons categories directly (not just text search) for the relevant gardens, checked Flickr/Openverse and Italy's registries.
+- **The Twin Planes of the Eleven Fountains**: found a CC0 Commons photo of the Fontana degli Undici Zampilli itself, correctly located in Orto Botanico di Roma, but its description says nothing about the plane trees and this session's tools could not open the image to check whether they're actually in frame. Left unapproved; a future pass that can view the image should resolve this one way or the other rather than guess.
+- **The Cedar of the Belvedere**: found two CC BY-SA 4.0 photos of a Cedrus libani (right species this time, confirmed via Commons structured data) in Villa Doria Pamphilj, but their own embedded coordinates put them about 1.2km from the Belvedere del Lago del Giglio, and the villa has multiple large historic cedars. Same discipline as the earlier Cedrus atlantica near-miss here: correct species is not the same as confirmed identity, so this stays unused.
+- **Adonis, the Cork Oak of the Orangery, and the Aleppo Pine of Celimontana**: genuine dead ends this pass. Adonis in particular is a real, individually named tree (news coverage confirms a 2021 clone was made from it) but Wikimedia's Valle dei Platani category has only uncaptioned grove shots with no way to tell which frame is Adonis among nine surviving planes.
+- No data changed. Recorded so a future pass with image-viewing capability can resolve the two flagged candidates rather than repeat this search.
+
 ## 2026-07-26 — Istanbul: no data changed, but a real near-miss caught and two untried leads found
 
 - Next in rung 5's order after Amsterdam and Lisbon: Istanbul, the furthest-behind of the eight (2/10 photos, 8/10 approximate). Tried angles beyond what prior passes already exhausted (Wikimedia, iNaturalist, OSM Overpass, anitagac.istanbul's JS map): Turkey's national forestry registry, İBB open data, Turkish Wikipedia, Turkish-language Flickr/Openverse.
