@@ -325,18 +325,19 @@
       "story": "Four palm trees have stood in the courtyard of a former orphanage for over a century, planted around 1904 when the building still ran as the Casa de la Misericordia, a charitable institution founded in 1583 that raised abandoned girls into the 20th century. California fan palms are native to desert oases in the American Southwest and northern Mexico, an odd match on paper for a Gothic Revival courtyard in the Raval, but the species tolerates poor soil and long dry spells well enough to have become a fixture of Mediterranean city planting. For decades the courtyard itself was closed to the public, part of an institutional building tucked behind Carrer Elisabets that most of the Raval walked past without ever seeing inside. That changed recently when a cafe opened in the garden, putting four palms that had grown for a century behind closed doors back in view of anyone who orders a coffee. The building continues to house a school; the palms, remarkably, have outlasted several changes of institutional purpose above their heads.",
       "verified_sources": [
         "https://www.bcnsostenible.cat/es/web/punt/washingtonia-filifera",
-        "https://www.timeout.es/barcelona/es/noticias/la-mejor-terraza-del-raval-abre-en-la-casa-de-la-misericordia-041519"
+        "https://www.timeout.es/barcelona/es/noticias/la-mejor-terraza-del-raval-abre-en-la-casa-de-la-misericordia-041519",
+        "https://commons.wikimedia.org/wiki/File:Washingt%C3%B2nies_de_la_casa_de_la_Miseric%C3%B2rdia_P1510832.jpg"
       ],
       "access": "Free to enter the courtyard from Carrer Elisabets or via La Central bookshop; the cafe itself is paid",
       "transport": "Catalunya (Metro L1/L3), 6 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Washingt%C3%B2nies_de_la_casa_de_la_Miseric%C3%B2rdia_P1510832.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Pere Lopez Brosa (Pere prlpz), via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Access described as best understood from available sources; opening hours for the courtyard itself (as distinct from the cafe) were not confirmed and should be checked before a visitor relies on this.",
+      "notes": "Access described as best understood from available sources; opening hours for the courtyard itself (as distinct from the cafe) were not confirmed and should be checked before a visitor relies on this. Photo found 2026-07-26: file's own title and description name this exact location (\"Casa de la Misericordia, Carrer Elisabets 24\") and cite the trees' Catalan heritage protection ID (MA-080193/0096-01-94), a direct match rather than a lookalike. Its embedded GPS (41.383536, 2.168661) also lands within about 15m of the existing pin, corroborating it independently.",
       "location_precision": "confirmed"
     }
   ]

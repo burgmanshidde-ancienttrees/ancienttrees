@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Barcelona: one photo found, three gaps re-confirmed as genuine dead ends
+
+- Continued rung 5 after Rome. Barcelona's pins are already all confirmed (0/10 approximate); the only bar left is photos, at 5/10 before this pass.
+- **The Palms of Casa de la Misericordia**: found a direct match, a CC BY-SA 3.0 Commons photo whose own title and description name this exact courtyard ("Casa de la Misericordia, Carrer Elisabets 24") and cite the trees' Catalan heritage protection ID, with embedded GPS landing 15m from the stored pin. Approved.
+- **Three gaps re-confirmed as genuine dead ends** (the Holm Oak of Carrer de l'Encarnacio, the Himalayan Cedar of the Labyrinth, the Magnolia of the Maternity Gardens, the Silk Tree of the Ciutadella): tried iNaturalist (only cc-by-nc or unlicensed hits at all four), Wikimedia Commons category browsing and text search, and Barcelona's own municipal tree pages (no license stated, as found on a prior pass). All four are individually well-documented, named, protected trees, just without an open-licensed photo anywhere found.
+- Barcelona now at 6/10 photos (from 5). Still short of the 8/10 floor.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Rome: both approximate pins resolved, one photo candidate found and held for a visual check
 
 - Continued rung 5 after Istanbul. Rome was at 5/10 photos and 2/10 approximate; this pass focused on the 2 pins plus a fresh look at the 5 photo gaps.
