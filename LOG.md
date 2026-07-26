@@ -44,11 +44,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
-## 2026-07-26 — Kyoto: 2 pins resolved, caught a species tag error rather than trusting the source
+## 2026-07-26 — Kyoto: 2 pins resolved, 1 photo found, caught a species tag error rather than trusting the source
 
+- Correction to this entry's first version: it misstated Kyoto's starting count as 4 approximate; it was actually 6, so resolving 2 left 4, not 2. Fixed in CURATION.md.
 - With the eight lead-group cities heavily worked by concurrent runs today, followed rung 5's next instruction (marquee Europe/Japan, oldest-first) to Kyoto, the oldest still-approximate city after the lead group.
-- The Land Boat Pine and the Reclining Dragon Pine both matched to OpenStreetMap nodes carrying their own Japanese names (陸舟の松, 遊龍松), moving each pin 40-60m to the tree's actual surveyed position. The dragon pine's OSM node also carried a species tag that contradicted our own sourcing (black pine vs. the five-needle pine two independent sources and the story itself describe); used the location, dropped the wrong species rather than overwrite good sourcing with a stranger's tag. Full detail in CURATION.md.
-- Kyoto now at 2 of 10 approximate pins (from 4), still 4 of 10 photos. Two more approximate trees left unchecked: Overpass timed out repeatedly on both, not concluded exhausted.
+- The Land Boat Pine and the Reclining Dragon Pine both matched to OpenStreetMap nodes carrying their own Japanese names (陸舟の松, 遊龍松), moving each pin 40-60m to the tree's actual surveyed position. The dragon pine's OSM node also carried a species tag that contradicted our own sourcing (black pine vs. the five-needle pine two independent sources and the story itself describe); used the location, dropped the wrong species rather than overwrite good sourcing with a stranger's tag. Also found a Commons photo for the Inverted Ginkgo of Nishi Honganji, title-matched but not visually confirmable with this run's tools, so recorded `found_needs_check`. Full detail in CURATION.md.
+- Kyoto now at 4 of 10 approximate pins (from 6) and 5 of 10 photos (from 4). The remaining two approximate trees (Hosen-in pine, Munakata camphor) are a genuine dead end for the OSM technique this pass: retried Overpass, both bounding boxes came back empty rather than timing out.
 - Site rebuilt, all contracts validated, pushed.
 
 ## 2026-07-26 — Depth sweep (Barcelona, Rome, Amsterdam, Istanbul, Lisbon): genuine attempts, no new ground this pass
