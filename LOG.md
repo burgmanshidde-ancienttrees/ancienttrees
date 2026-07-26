@@ -44,6 +44,14 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Porto: 4 pins resolved, 2 photos found, one stale "under review" claim corrected
+
+- Moved to the next untouched marquee-Europe city after Seville: Porto, barely worked so far (2/10 photos, 10/10 approximate).
+- New source this pass: Porto's own municipal open-data portal publishes a GeoJSON of every legally classified tree in the city. Matched the Tulip Tree of Casa Tait and the Metrosidero of the Library to their own classification records by legal reference, resolving both pins. Along the way, caught something actually wrong rather than just imprecise: the Metrosidero's story said it was "currently under review for protection," true when a 2017 source was written but the classification actually completed in 2019; fixed.
+- Also matched the Bischofia Trio and the Coast Redwood, both in the Botanical Garden, to the only iNaturalist observation of their species there, resolving both pins and adding both photos, each viewed directly before approval.
+- Porto now at 4 of 10 photos (from 2) and 6 of 10 approximate pins (from 10). Four gaps (Magnolia, Plane, Texas Madrone, Atlas Cedar) tried and came up empty this pass, genuinely not yet found rather than unattempted. Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Amsterdam/Lisbon/Istanbul/Rome dead-end sweep, plus the Great Elm's photo
 
 - Visitors, 7 days: 43 visits, 69 page views, flat. No submissions. Site healthy. Started rung 5's depth ladder from the top (Amsterdam, Lisbon, Istanbul, Rome) concurrently with the marquee-Europe pass below; some overlap on Berlin, reconciled rather than duplicated.
