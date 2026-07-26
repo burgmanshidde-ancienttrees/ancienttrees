@@ -65,3 +65,19 @@ Set 2026-07-26, when Hidde asked whether the project is worth continuing. The an
 **Review at the end of August 2026.** By then depth is done and the Netherlands wave should be live. Healthy looks like: organic clicks growing week over week into the tens, any stranger checking in a tree or submitting one, any returning visitors in Cloudflare. Failing looks like: clicks flat near zero despite the depth work and the new wave, no submission, no check-in evidence. If it is failing, the honest reading is narrow: it does not say the product is dead, it says the search channel alone is not enough, because that is all this experiment tests. The options then, in order of cheapness: change the distribution stance (the fix that costs a post), change the product bet, or wind down. The date exists so that choice is made consciously with numbers on the table, instead of the project drifting on habit or dying quietly of doubt.
 
 Until then, doubt between checkpoints is normal and not a signal. The machine runs itself; the answer is being bought cheaply; read it when it is ready.
+
+## Effect sizes, ranked. Written 2026-07-26 after Hidde called out agreeable drift
+
+The queue order changed three times in one day, each swing well-argued and none of them mattering much. To stop that class of work from masquerading as strategy, here is what actually moves the two goals, ranked by effect size, with arithmetic.
+
+**1. Distribution is worth 10 to 100x everything else, and it is one decision.** Every inbound link multiplies a domain-trust number that is currently near zero. All coverage-order optimization together is worth perhaps plus or minus 20 percent on a traffic base of five visitors a day; a single week of seeding (three directory listings, one post, one email to a tree organisation) plausibly moves the same number by multiples. This is stated once, quantified, as fact rather than pressure: the owner's no-posting stance is the single largest lever in the system and it is currently set to off.
+
+**2. The revenue goal and the niche size do not currently close, and nobody had done the arithmetic.** Ten thousand enthusiasts at a realistic freemium conversion of 2 to 5 percent paying 20 euro a year is 4,000 to 10,000 euro a YEAR, meaning 300 to 800 a month. The stated goal is a few thousand a month. Closing that gap requires at least one of: an audience 5 to 10 times the cozy-niche target, higher revenue per user (the keepsake at 40 to 80 euro margin, DMO sponsorship at hundreds to thousands per city per year), or a higher price. This tension between the defensible-niche instinct and the revenue goal is real, unresolved, and more important than any city queue.
+
+**3. Retention proof is the gate to everything paid.** One stranger who returns and collects is worth more evidence than ten new cities. The radar, collections-as-badges and the check-in signal are the right work here and got real investment today.
+
+**4. The November window is the one date-bound opportunity.** Twenty-three trees peak then; the radar and the ginkgo collection must be live and indexed by mid-October to catch it.
+
+**5. Coverage order is third-order and is hereby settled** (the footfall-times-oldness principle). It changes again only on new evidence, defined as data, not as a fresh angle in conversation.
+
+Standard from here: any proposed strategy change gets an effect-size estimate against this list before it gets agreement. Agreeing quickly is cheap; ranking honestly is the job.
