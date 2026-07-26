@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Vienna: 3 of 5 approximate pins resolved, already at 10/10 photos
+
+- Continuing rung 5's marquee-Europe order. Vienna was already at 10/10 photos, so this pass targeted its 5 approximate pins. New technique this pass: Vienna's protected trees (Naturdenkmäler) are individually numbered, and the Commons photos of several were taken by GuentherZ, a prolific Vienna monuments photographer who tags his uploads with the geolocation of the subject itself, not just his shooting position, plus baumkunde.de, a German tree register that independently publishes GPS for individually catalogued specimens.
+- **The Cemetery Plane of Singerstraße** (Naturdenkmal 726) and **The Founding Plane of Rathauspark** (Naturdenkmal 564): both already had an approved GuentherZ photo as a source; that photo's own Commons page carries a geolocation tag for the tree, about 80m and 150m respectively from the previous address-level estimates. Confirmed both.
+- **The Sisi-Platane of Volksgarten** (Naturdenkmal 376): baumkunde.de's own register page gives this tree's surveyed coordinates tied to its Naturdenkmal number, about 150m from the previous fountain-area estimate. Confirmed.
+- **The Ginkgo of Schönbrunn** stays approximate: found a baumkunde.de entry with matching coordinates, but it returned HTTP 403 on a second attempt to independently re-verify the description matches this specific tree (not a different Schönbrunn ginkgo, there are several), and the coordinate is identical to what was already stored, so no change was possible either way. Worth another look when the source is reachable.
+- **The Chestnut Avenue of the Hauptallee** stays approximate on purpose: it names a whole avenue, the same honest-ensemble reasoning as Kew's Old Lions and the Meiji Gaien avenue.
+- Vienna now at 2 of 10 approximate pins (from 5) and remains at 10 of 10 photos.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Berlin: both remaining approximate pins resolved, 1 photo found, now 8/10 photos and 0/10 approximate
 
 - Continuing rung 5's marquee-Europe, oldest-first order past Kyoto. Checked every published city's photo/pin counts and picked Berlin: already at 7/10 photos and 2/10 approximate, the closest city to fully clearing both bars.

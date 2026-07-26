@@ -35,8 +35,8 @@
       "age_max": 310,
       "location": {
         "address": "Fähnrichhof courtyard, off Singerstraße 11 / Blutgasse 3, 1010 Wien",
-        "latitude": 48.2081,
-        "longitude": 16.3737,
+        "latitude": 48.207541,
+        "longitude": 16.374395,
         "neighbourhood": "Innere Stadt, 1st district"
       },
       "story": "This tree has been quietly absorbing a piece of iron fence for two and a half centuries. The plane in the Fähnrichhof, a courtyard just off Singerstraße in Vienna's old town, grew directly through part of the railing that once enclosed St Stephen's Cathedral's own graveyard, closed to burials in the 1730s. The fence is no longer visible today. Vienna's own natural monument record notes it as sealed inside the trunk by decades of callus growth, the tree's version of scar tissue closing over a wound. A 1987 expert assessment measured the trunk at two and a half metres around, the crown at ten metres across, and put the tree's age at more than 250 years even then, which makes it well past 280 today. It stands in a courtyard once attached to the Domherrenhof, the residence of St Stephen's cathedral canons, reachable on foot through a passage from Blutgasse that locals call a Durchhaus, one of the old town's many semi-hidden pedestrian shortcuts between streets. The glass door at the Blutgasse end is usually left open during the day. Almost nobody outside the neighbourhood knows this tree exists, let alone that it is quietly digesting a piece of ecclesiastical ironwork nobody has seen in living memory.",
@@ -53,8 +53,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Naturdenkmal Nr. 726, protected since 20 October 1987. Age figure is the 1987 survey's '>250 years' projected forward to 2026; no more recent measurement has surfaced.",
-      "location_precision": "approximate"
+      "notes": "Naturdenkmal Nr. 726, protected since 20 October 1987. Age figure is the 1987 survey's '>250 years' projected forward to 2026; no more recent measurement has surfaced. Location upgraded to confirmed: the approved photo's own Commons geolocation data (48°12'27.15\"N 16°22'27.82\"E, added by the photographer, Vienna monument specialist GuentherZ) places the tree itself, about 80m from the previous courtyard estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "vie_002",
@@ -194,8 +194,8 @@
       "age_max": 250,
       "location": {
         "address": "Rathauspark, Rathausplatz, 1010 Wien",
-        "latitude": 48.2108,
-        "longitude": 16.3573,
+        "latitude": 48.210094,
+        "longitude": 16.359186,
         "neighbourhood": "Innere Stadt, 1st district"
       },
       "story": "The oldest tree in front of Vienna's City Hall is older than the building itself by exactly one century. This plane went into the ground in 1783, when the site was still open land on the edge of the city, decades before anyone had drawn up plans for a Rathaus or the park now named after it. Construction of the neo-Gothic town hall did not start until 1872, and the park was landscaped around the new building only after that, which means this tree had already been growing for close to ninety years by the time the space around it became a park at all. It has since grown into a trunk six metres around and a crown thirty metres tall, big enough that Vienna's own tree registry lists it, under catalogue number 252, as Rathauspark's oldest specimen without qualification. It is one of three plane trees in the park with individual legal protection as natural monuments, granted in 1973. Office workers on lunch break, tourists cutting through on their way to the Burgtheater, and the occasional wedding photographer all pass beneath a canopy that was already mature when Mozart was writing his last symphonies, in a park that did not exist yet to contain it.",
@@ -212,8 +212,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "One of three plane trees in Rathauspark individually registered as natural monuments (Nr. 564, 566, 567), protected since 3 July 1973; this entry covers the specific tree identified by the park's own registry as the oldest, tree catalogue number 252.",
-      "location_precision": "approximate"
+      "notes": "One of three plane trees in Rathauspark individually registered as natural monuments (Nr. 564, 566, 567), protected since 3 July 1973; this entry covers the specific tree identified by the park's own registry as the oldest, tree catalogue number 252. Location upgraded to confirmed: the approved photo's own Commons geolocation data (48°12'36.34\"N 16°21'33.07\"E, added by the photographer, Vienna monument specialist GuentherZ) places the tree itself, about 150m from the previous park-address estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "vie_007",
@@ -223,15 +223,16 @@
       "age_min": 180,
       "age_max": 220,
       "location": {
-        "address": "Volksgarten, near the Volksgarten fountain, 1010 Wien",
-        "latitude": 48.2071,
-        "longitude": 16.3634,
+        "address": "Volksgarten, near the Theseus Temple, 1010 Wien",
+        "latitude": 48.208217,
+        "longitude": 16.36125,
         "neighbourhood": "Innere Stadt, 1st district"
       },
       "story": "Vienna named this plane tree after an empress who famously disliked Vienna. The Sisi-Platane stands near the fountain at the heart of the Volksgarten, close to the Theseus Temple, and at an estimated 200 years old it is the oldest tree in a garden that Empress Elisabeth, who gave the tree her nickname, mostly used as a shortcut on her way to somewhere else. She preferred riding and travelling to sitting still in Viennese gardens, but the name stuck anyway. The trunk now measures roughly three and a half metres around, and the crown spans a full twenty metres in every direction, wide enough to shade a large share of the garden's central lawn on a summer afternoon. Vienna placed it under legal protection in 1951 as Naturdenkmal Nr. 376, one of a small number of individually registered trees in the first district. Its exact age has not turned up in any planting record, only an estimate based on its size, so it should be read as approximate rather than precise. What nobody disputes is its rank: nothing else growing in the Volksgarten today is older, and few Viennese park benches offer a better patch of shade.",
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Volksgarten_(Wien)",
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Innere_Stadt"
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Innere_Stadt",
+        "https://www.baumkunde.de/baumregister/2909-sisi_platane_im_volksgarten_wien/"
       ],
       "access": "Free, public garden",
       "transport": "5 min walk from Volkstheater U-Bahn station (U2/U3)",
@@ -242,8 +243,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Naturdenkmal Nr. 376 (girth 3.6 m, height and crown 20 m each) is confirmed by two independent sources. The '200 years old' figure and the Empress Elisabeth nickname story appear only in secondary tourism sources, not in either primary source, so age is flagged as a single-source estimate.",
-      "location_precision": "approximate"
+      "notes": "Naturdenkmal Nr. 376 (girth 3.6 m, height and crown 20 m each) is confirmed by two independent sources. The '200 years old' figure and the Empress Elisabeth nickname story appear only in secondary tourism sources, not in either primary source, so age is flagged as a single-source estimate. Location upgraded to confirmed: baumkunde.de (a German tree register site) gives this tree's own surveyed geo-coordinates, tied to its Naturdenkmal 376 designation, about 150m from the previous fountain-area estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "vie_008",
