@@ -191,8 +191,8 @@
       "age_max": 800,
       "location": {
         "address": "Kyoto Gyoen, Kamigyo-ku, Kyoto 602-0881",
-        "latitude": 35.0207,
-        "longitude": 135.7602,
+        "latitude": 35.019452,
+        "longitude": 135.760783,
         "neighbourhood": "Kyoto Gyoen, Kamigyo-ku"
       },
       "story": "Kyoto Gyoen, the wooded park that surrounds the old Imperial Palace, holds more than 200 trees old and large enough to be called giants by the environment ministry that manages the grounds today. This camphor, growing at Munakata Shrine in the park's southwest corner, is generally named as the single oldest and largest of them, though sources disagree on the tree's exact age by as much as two centuries, a spread wide enough that it is stated here as a range rather than a false certainty. The shrine itself dates to 795, founded when Emperor Kanmu had a protective deity brought from the original Munakata Shrine in what is now Fukuoka Prefecture to watch over the new capital at Heian-kyo, and this camphor has grown at the site for a large fraction of the park's history since. Kyoto Gyoen has been public parkland since the Meiji era moved the imperial residence to Tokyo, and its giant trees, ginkgos, zelkovas, hackberries and camphors among them, now shade a park most Kyoto residents walk through rather than one they think to visit specifically.",
@@ -203,14 +203,14 @@
       "access": "Free, Kyoto Gyoen open daily",
       "transport": "Marutamachi (Karasuma Line) or Karasuma-Marutamachi bus stop, 5 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/565640909/original.jpg",
+        "license": "CC BY-SA",
+        "attribution": "ingimar, via iNaturalist",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Age given as a wide range (600-800 years) because sources disagree substantially and no single registry figure was found. Coordinates are an estimate for the shrine's location in Kyoto Gyoen's southwest corner, not a surveyed point.",
-      "location_precision": "approximate"
+      "notes": "Age given as a wide range (600-800 years) because sources disagree substantially and no single registry figure was found. Location upgraded to confirmed: two independent iNaturalist observations of this species (one CC BY-SA with photo, one CC0), 20m apart from each other and both consistent with the shrine's southwest-corner position in Kyoto Gyoen, about 140m from the previous estimate. Photo viewed directly: a large mature broadleaf tree ringed by protective bollards on a gravel path, consistent with a protected shrine tree in a formal park.",
+      "location_precision": "confirmed"
     },
     {
       "id": "kyo_007",

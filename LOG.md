@@ -44,6 +44,13 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — Kyoto's Munakata camphor resolved; Seville and Florence tried, genuinely stayed dead
+
+- Visitors were checked at the start of this session (43 visits, 69 page views over 7 days, flat); no submissions.
+- The Camphor of Munakata Shrine (Kyoto) matched to two independent iNaturalist observations of the species 20m apart, both consistent with the shrine's own corner of Kyoto Gyoen, resolving its pin and adding a photo, viewed directly before approval. Kyoto now 6/10 photos, 3/10 approximate.
+- Seville's own official tree catalogue (56 singular trees) exists but its website is unreachable from this session's tools; Overpass also returned service timeouts on every attempt today, likely load from the many concurrent runs hitting it. Not a dead end so much as a today-only access problem, worth retrying. Florence's remaining 7 photo gaps were re-checked and confirmed genuinely exhausted, matching the earlier pass. Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Athens: a pin tightened, a photo found, a near-miss caught and deliberately not used
 
 - Continued marquee Europe after Porto: Athens, at 4/10 photos and 10/10 approximate. Geocoded the Plato's Academy archaeological park itself for a 360m pin tightening (stays approximate, it locates the park not the tree). Found and approved a photo for the Olive Woodland of Filopappou Hill via iNaturalist, viewed directly.
