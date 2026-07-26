@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Barcelona: 4 pins resolved (one a genuine error, not just imprecision), 2 photos found
+
+- Barcelona hadn't been touched yet this session; picked up as the next lead-group city after Tokyo, London and Amsterdam. Applied the same technique: Barcelona runs its own official "Arbres d'interes local" (trees of local interest) catalogue, and OpenStreetMap carries individual nodes from it, each tagged with species and a description naming the exact tree and site.
+- **The Holm Oak of Carrer de l'Encarnacio**: matched to the catalogue node for "c. Encarnacio 13", about 75m from the previous street-level estimate. Confirmed.
+- **The Himalayan Cedar of the Labyrinth**: matched to the catalogue node for Parc del Laberint, Cedrus deodara, about 400m from the previous general-park estimate, and consistent with a barcelona.cat catalogue page already cited as a source. Confirmed.
+- **The Wingnut and Green Ash of the Sot de l'Estany**: this pair turned out not to be merely imprecise but genuinely wrong. The stored coordinates (41.3618, 2.1587) sit about 830m outside the actual Jardi Botanic Historic, confirmed by geocoding the garden itself. The catalogue node for the wingnut is even labelled "Sector de l'estany" by name, matching this tree specifically rather than just the garden. Both corrected and confirmed. Worth a general note: this is the first case this session where a stored pin was outside the venue entirely rather than just vague within it, so worth double-checking other "garden entrance" style approximate pins against the venue's real footprint rather than assuming they are merely imprecise.
+- **Photos**: found two via iNaturalist, both viewed directly before approval. The carob's observation is titled "Garrofer de la Placa de la Natura del Park Guell", the tree's own name, from the Arboles Singulares de Espana project, 17m from the pin, showing carob pods on the branch. The ombu's is a CC0 observation 15m from the pin showing the massive rippled trunk characteristic of the species in a plaza setting.
+- Barcelona now at 6 of 10 photos (from 4) and 1 of 10 approximate pins (from 5, the La Rambla plane ensemble, which honestly stays approximate for the same reason as Kew's Old Lions and the Meiji Gaien avenue). Precision bar cleared; still short on photos for the full exit test.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Amsterdam pin resolved via OSM, two found_needs_check photos visually confirmed
 
 - **Capability note worth recording:** a prior run flagged that its tools couldn't open image files to visually check photos, leaving several stuck at `found_needs_check`. This run's tools could: fetching an image URL and then reading the saved file back displays it directly. Used this to clear two backlogged photos rather than leaving them unchecked.
