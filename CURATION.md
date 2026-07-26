@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Verona: 1 pin resolved via the same national registry; a reliability limit found and worked around
+
+- Followed up the Rome pass by trying Italy's national monumental tree registry (MASAF) on other Italian cities' approximate pins, starting with Verona (8 of 8 trees approximate, the worst-covered city on the site).
+- **The Ginkgo of Piazza Indipendenza**: matched to the registry's own entry for this square, identified with high confidence because its circumference and height (323cm, 23.5m) are the exact figures already cited in this entry's own story from an earlier pass, an independent numeric match, not just a name match. Confirmed the same coordinates across two separate fetches of the source spreadsheet before using them. About 45m from the previous square-wide estimate.
+- **A reliability limit worth recording plainly**: tried to also resolve the neighbouring Plane Tree of Piazza Indipendenza and the Himalayan Cedar of Via Nino Bixio the same way, distinguishing them by their own already-documented circumference (505cm and 309cm respectively). Two separate fetches of the same spreadsheet returned different, contradictory ID codes and coordinates for what should have been the same rows, including comune codes that didn't match Verona city at all. This session's fetch tool cannot reliably parse an XLS this size row-by-row when rows look similar; treated as a tool limit, not a data absence, and left both pins approximate rather than risk publishing a wrong location with false confidence. Also tried the same species-matching approach on Naples' two camphor trees (Capodimonte) against the Campania region file; no match found, though given the reliability issue just found, this is recorded as inconclusive rather than a confirmed dead end.
+- Verona now at 7 of 8 approximate pins (from 8).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Rome: 2 pins resolved via Italy's national monumental tree registry; Amsterdam, Lisbon and Istanbul tried hard, stayed dead ends
 
 - Checked submissions first (still just the header row, no new rows) and visitors (43 visits/69 views over 7 days, flat), then picked up rung 5's order from the top: Amsterdam, Lisbon, Istanbul, Rome.
