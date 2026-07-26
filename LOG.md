@@ -44,6 +44,11 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — The machine is complete: eyes and a self-starting chain
+
+- All three secrets are in: the runs now read their own visitor numbers at the start of every pass (first reading: 43 visits, 69 page views over seven days, a steady 4 to 10 a day), and from the next completed run onward every run dispatches its successor. No cron luck, no human trigger, around the clock, bounded only by the usage limit.
+- Nothing structural waits on Hidde anymore. What remains his: FOR HIDDE approvals here, taste (logo parked at his call), the budget ceiling number for the hard rules (still open), and the end-of-August reassessment.
+
 ## 2026-07-26 — Kyoto: 2 pins resolved, 1 photo found, caught a species tag error rather than trusting the source
 
 - Correction to this entry's first version: it misstated Kyoto's starting count as 4 approximate; it was actually 6, so resolving 2 left 4, not 2. Fixed in CURATION.md.
@@ -59,6 +64,7 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 - Tried genuinely, found nothing new: Barcelona's last 4 photo gaps (Commons, iNaturalist, Openverse, all empty), Rome's pins and photos (OSM tree nodes exist near all three target trees but none match on species or name, one iNaturalist near-match for the cork oak is fully unlicensed), Amsterdam's Amstelkade Olive Willow (OSM nodes nearby, none named or species-tagged). Full detail, including two Lisbon iNaturalist candidates rejected for being CC-BY-NC rather than an allowed license, in CURATION.md.
 - Istanbul's OSM queries all hit HTTP 504 this pass, an Overpass service issue rather than a data dead end; worth retrying, not counted as exhausted.
 - No data changed, nothing to rebuild or push beyond this log and CURATION.md.
+
 
 ## 2026-07-26 — Barcelona: found a genuine location error, not just imprecision
 
