@@ -2,12 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
-## 2026-07-26 — Kyoto: 2 pins resolved, one real species error caught and not repeated
+## 2026-07-26 — Kyoto: 2 pins resolved, one photo found, one species error caught and not repeated
 
+- **Correction to this entry's own first version**: it originally said Kyoto moved from 4 to 2 approximate pins. Wrong arithmetic; Kyoto started this pass at 6 approximate (not 4), so resolving 2 left 4, not 2. Fixed here rather than left standing.
 - The eight lead-group cities were heavily worked by concurrent runs today, so moved on to rung 5's next instruction, marquee Europe/Japan oldest-first: Kyoto, published 2026-07-21, is the oldest still-approximate city after the lead group. Applied the OpenStreetMap named-tree-node technique that worked for Tokyo, Barcelona and Amsterdam.
 - **The Land Boat Pine** (Kinkaku-ji): OSM carries a survey-sourced node named "陸舟の松" (Rikushu-no-matsu) matching the tree's own name exactly, about 40m from the existing pin. Confirmed.
 - **The Reclining Dragon Pine** (Yoshimine-dera): OSM carries a heritage-tagged node named "遊龍松" (Yuryu-matsu), matching both the tree's name and its 1932 national-monument designation, about 60m from the existing pin. Confirmed the location, but not the node's species tag: OSM says Pinus thunbergii (Japanese black pine), while our two existing sources and a fresh check both independently describe this as a five-needle pine (Pinus parviflora, matching the story's own "five-needle pine" line), so the location was used and the wrong species tag was left out, recorded in the tree's notes so no future run copies it uncritically.
-- Kyoto now at 2 of 10 approximate pins (from 4) and still 4 of 10 photos. The remaining two approximate trees (Five-Needle Pine of Hosen-in, Camphor of Munakata Shrine) couldn't be checked this pass: Overpass API returned repeated 504 timeouts for both bounding boxes, a service issue rather than a confirmed dead end, worth retrying.
+- **The Inverted Ginkgo of Nishi Honganji**: found a Commons photo whose own title names this exact tree ("Grand Ginkgo Tree in West Honganji Temple"), CC BY-SA 3.0, same photographer (Soramimi) as the already-approved Land Boat Pine photo. This run's tools could not open the image file to visually confirm framing, so recorded as `found_needs_check` rather than `approved`, honest about the gap the same way earlier runs handled this same tool limitation.
+- **Five-Needle Pine of Hosen-in and Camphor of Munakata Shrine**: retried both Overpass queries after the first pair timed out; both came back empty (zero tree nodes in either bounding box) rather than timing out again, so this is a real dead end for the OSM technique on these two, not just an unreachable service.
+- Kyoto now at 4 of 10 approximate pins (from 6) and 5 of 10 photos (from 4). Still below both the exit-test-style bar and the 80% photo floor; left open for a future pass.
 - Site rebuilt, all contracts validated, pushed.
 
 ## 2026-07-26 — Depth sweep across four cities: genuine attempts, no new ground

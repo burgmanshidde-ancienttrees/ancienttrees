@@ -143,12 +143,13 @@
       "access": "Free, Nishi Honganji precinct open daily",
       "transport": "Kyoto Station, 15 min walk, or bus to Nishihonganji-mae",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Grand_Ginkgo_Tree_in_West_Honganji_Temple.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "そらみみ (Soramimi), Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
+      "notes": "Photo file title (\"Grand Ginkgo Tree in West Honganji Temple\") matches this tree by name; this run's tools could not open the image to visually confirm framing, left found_needs_check for a future pass or Hidde to check directly.",
       "location_precision": "confirmed"
     },
     {
