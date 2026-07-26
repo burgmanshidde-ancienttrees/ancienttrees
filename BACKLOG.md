@@ -6,6 +6,21 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## Gamification: points, badges, rarity (the app's collecting core)
+
+Hidde's direction, 2026-07-26, replacing photo-led presentation as the emotional engine: the photos of old trees are honestly often ugly, the game is not. Sketch to build on when the app lands:
+
+- **Points per tree, weighted by rarity and age.** A neighbourhood plane is 10 points; a 2000-year yew is 500. The weighting already half-exists in the data (age_min/age_max, flagged uniqueness).
+- **Badges for completable sets:** a city complete ("Amsterdam 10/10"), a country complete, themed sets across cities ("the three oldest oaks of the world", "every ginkgo worth a November trip"). Collections thereby become playable content, not just SEO pages.
+- **Season multipliers:** checking in during a tree's best_time window is worth more, which points the game at exactly the moment worth going.
+- Tasteful, not Pokemon Go (PRINCIPLES.md): no streak punishment, no popups.
+
+**Trigger:** the app project. **Needs Hidde:** the whole feel of it.
+
+## Web check-in moves to the app; web becomes discovery plus sales floor
+
+Hidde's call in principle, 2026-07-26: GPS check-in on a website feels half-app ("dat moet je voor de app maken"). Web keeps find (map, near me), the stories, walk (routes), suggest-a-tree and feedback; collecting becomes the app's reason to exist. Not yet executed: the counterpoint (check-in is our only pre-app collect-demand signal, and the August checkpoint reads it) is with him; awaiting his confirm on framing before code is removed. Until then PRODUCT_TODO item 1 stays superseded and nothing passport-related is built or removed.
+
 ## The next coverage wave: home-country density, not more world cities
 
 Decided in discussion with Hidde 2026-07-26. When the depth phase completes and coverage reopens, the next wave is not the remaining world list but the Netherlands, dense: Utrecht, Rotterdam, Den Haag, Haarlem, Groningen, Leiden, Delft, Maastricht, Nijmegen, Breda and onward, so that a Dutch collector has a real collecting field at home.
