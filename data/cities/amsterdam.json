@@ -113,7 +113,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Sources disagree on planting date (park-establishment era around 1870 vs a specific 1885 date); age range widened to cover both. Coordinates now geocoded precisely to Van Eeghenlaan 27 (Nominatim/OpenStreetMap), the address the tree stands directly opposite on the park side; multiple sources independently describe it that way (bomeninfo.nl: \"opposite house number 27\"; inhetvondelpark.nl: \"on the slope between the raised Van Eeghenlaan and the sunken Vondelpark\"). Not a surveyed trunk position, but a specific, walkable spot rather than a general park area.",
+      "notes": "Sources disagree on planting date (park-establishment era around 1870 vs a specific 1885 date); age range widened to cover both. Coordinates now geocoded precisely to Van Eeghenlaan 27 (Nominatim/OpenStreetMap), the address the tree stands directly opposite on the park side; multiple sources independently describe it that way (bomeninfo.nl: \"opposite house number 27\"; inhetvondelpark.nl: \"on the slope between the raised Van Eeghenlaan and the sunken Vondelpark\"). Not a surveyed trunk position, but a specific, walkable spot rather than a general park area. Cross-checked 2026-07-26 against Amsterdam's municipal tree registry (stamgegevens WFS): exactly two Populus canadensis 'Serotina' trees are marked 'Monumentale boom' in this stretch of the park, ids 989556 (planted 1862) and 989580 (planted 1892), about 30m apart and both within the existing pin's radius. Neither planting year lines up cleanly with the 140-156 age range already carried here, and there is no way from this dataset alone to tell which of the two is the specific record-holder the sources describe, so the address-based pin stands rather than moving to either registry point on a guess. No photo found for either candidate.",
       "location_precision": "confirmed"
     },
     {
@@ -174,13 +174,13 @@
       "access": "Paid entry, Hortus Botanicus ticket required",
       "transport": "Tram 14, Artis stop, directly outside",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://commons.wikimedia.org/wiki/File:Cycad_@_De_Hortus_Botanicus_@_Amsterdam_(21679155561).jpg",
+        "license": "CC BY 2.0",
+        "attribution": "Guilhem Vellut, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Age estimate is sourced from the Hortus's own garden records and plant database; independent third-party confirmation was not found. Coordinates are a confirmed street geocode for the Hortus, not a pin on the specific plant within the Palm House.",
+      "notes": "Age estimate is sourced from the Hortus's own garden records and plant database; independent third-party confirmation was not found. Coordinates are a confirmed street geocode for the Hortus, not a pin on the specific plant within the Palm House. Photo candidate found 2026-07-26: a CC BY 2.0 Commons file (2015, category 'Hortus Botanicus Amsterdam') shows a cycad in what is very likely this garden's Palmenkas, but the Palm House holds more than one Encephalartos specimen (including a separately notable E. woodii clone), the file's own description does not name the plant, and this session's tools could not open the image to check for identifying features. Left at found_needs_check rather than approved until a future pass can view it directly or find a source naming the specific plant.",
       "location_precision": "approximate"
     },
     {
@@ -251,18 +251,19 @@
       "age_min": 75,
       "age_max": 80,
       "location": {
-        "address": "Amstelkade, opposite number 154, 1078 Amsterdam-Zuid",
-        "latitude": 52.3505,
-        "longitude": 4.8925,
-        "neighbourhood": "De Pijp / Amsterdam-Zuid"
+        "address": "Amstelkade, Scheldebuurt, 1078 AZ Amsterdam-Zuid",
+        "latitude": 52.3481068,
+        "longitude": 4.8904994,
+        "neighbourhood": "Rivierenbuurt / Amsterdam-Zuid"
       },
       "story": "Despite the name, this tree is not a willow and has nothing to do with olives. The olijfwilg on Amstelkade is an Elaeagnus, a shrub-turned-tree genus with silvery, willow-shaped leaves and small fragrant flowers that ripen into fruit resembling tiny olives, hence a common name that misleads on both counts. Planted in 1948, three years after the Netherlands emerged from wartime occupation, it has grown along the Amstelkanaal into what the city's own tree inventory calls a specimen unique in the Netherlands for its combination of size and age. Nobody has documented a comparable one anywhere else in the country. At under 80 years old it is the youngest tree on this list by decades, included not for age but because Elaeagnus rarely gets the decades of undisturbed growth it takes to reach tree scale, most specimens staying shrub-sized in gardens rather than lining a public street. Amsterdam's official register of notable trees lists it among the city's most distinctive, a quiet distinction for a tree most passersby would assume was an ordinary willow if they noticed it at all.",
       "verified_sources": [
         "https://www.boomzorg.nl/upload/artikelen/bz513top10.pdf",
-        "https://www.amsterdam.nl/nieuws/achtergrond/tien-mooiste-bomen/"
+        "https://www.amsterdam.nl/nieuws/achtergrond/tien-mooiste-bomen/",
+        "https://api.data.amsterdam.nl/v1/wfs/bomen/ (stamgegevens.999049)"
       ],
       "access": "Free, public street",
-      "transport": "Tram 3 or 4, Amsteldijk/De Pijp area",
+      "transport": "Tram 3 or 4, Amsteldijk/Rivierenbuurt area",
       "photo": {
         "url": null,
         "license": null,
@@ -270,8 +271,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact species within Elaeagnus is not confirmed (likely E. angustifolia based on a 'narrow-leaved' descriptor); the two sources both trace back largely to the same original trade-press profile, so treat as a single well-documented but not fully independent source pair. Exact GPS is a street-level estimate.",
-      "location_precision": "approximate"
+      "notes": "Exact species within Elaeagnus is not confirmed (likely E. angustifolia based on a 'narrow-leaved' descriptor); the two original narrative sources both trace back largely to the same trade-press profile, so treat as a single well-documented but not fully independent source pair. Pin corrected 2026-07-26: the previous coordinate, derived from a street-level geocode of 'Amstelkade 154', was found to be about 350m off. Amsterdam's own municipal tree registry (stamgegevens WFS) carries exactly one Elaeagnus angustifolia in this stretch of Amstelkade, id 999049, planted 1948 (matching the 78-year age claim exactly) and marked 'Monumentale boom' (matching the 'unique in the Netherlands' framing), at 52.3481068, 4.8904994. Treated as confirmed. No photo found this pass despite iNaturalist, Wikimedia, Flickr and Openverse searches.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ams_009",

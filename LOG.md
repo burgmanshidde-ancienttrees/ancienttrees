@@ -37,6 +37,15 @@ Everything else that used to sit here is done or recorded: the submission form i
 - Verona now at 7 of 8 approximate pins (from 8).
 - Site rebuilt, all contracts validated, pushed.
 
+## 2026-07-26 — Amsterdam: a wrong pin corrected by 350m, one photo held back on identity doubt
+
+- Visitors: 44 visits, 70 page views over 7 days, flat (21st-26th: 8, 9, 10, 7, 4, 6). No new submissions (CSV still just the header row). Site healthy, build clean. Continued rung 5's depth ladder at the top: Amsterdam, the reference city, still short of flawless.
+- **The Amstelkade Olive Willow's pin was actually wrong, not just approximate**: it was geocoded from a street address and sat about 350m from the tree's real position. Amsterdam's own municipal tree registry, queried directly and cross-checked myself, carries exactly one Elaeagnus angustifolia on that stretch of Amstelkade, planted 1948, matching the story's 78-year age claim and "unique in the Netherlands" line exactly. Moved to confirmed. Also fixed its neighbourhood field, which named the wrong part of Amsterdam-Zuid.
+- Found a plausible CC BY 2.0 photo for the Hortus cycad but could not confirm it shows the specific 300-year-old specimen rather than one of the Palm House's other cycads, so it stays at `found_needs_check` rather than approved, honest uncertainty over a tidier-looking city page.
+- Checked the Vondelpark poplar's pin against the same registry: two candidate monumental poplars sit 30m apart with no way to tell which the sources mean, so left its existing address-based pin alone rather than guess.
+- Amsterdam now at 6/10 photos (1 pending identity check) and 2/10 approximate (the Hortus cycad, and the Amstelveld wingnuts' honest ensemble pin). Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Rome: 2 pins resolved via Italy's national monumental tree registry
 
 - Visitors: 43 visits, 69 page views over 7 days, flat (2026-07-20 to 2026-07-26: 8, 9, 10, 7, 4, 5). No new submissions, CSV still just the header row.
