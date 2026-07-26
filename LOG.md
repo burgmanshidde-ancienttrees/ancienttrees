@@ -30,6 +30,14 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-26 — Amsterdam: found a real 550m location error hiding behind an "approximate" flag, both pins now confirmed
+
+- Visitors: 47 visits, 76 page views over 7 days (21-26 July: 8, 9, 10, 7, 4, 9), flat. No submissions.
+- The Amstelveld wingnuts pin wasn't just imprecise, it was wrong: about 550m from the real square, confirmed against Wikipedia's Amstelkerk coordinates and OpenStreetMap geocoding. That's why an earlier pass's municipal-registry search near the old pin came back empty of anything matching, it was searching the wrong neighbourhood. Re-ran the search at the corrected location and it resolved cleanly: exactly three Pterocarya fraxinifolia in the square are registry-tagged "Monument" with a shared 1930 planting date, distinct from the dozens planted in 1945 onward, matching the sources' account of "three oldest, most valuable specimens" given underground root protection in the 2006-2010 felling dispute. Pin moved there, age corrected to 96 years, confirmed.
+- The Hortus cycad's pin was a general garden street address; moved it to the Palm House building itself using OpenStreetMap building data, a real precision gain even though the photo-identity question (which of several cycads in the glasshouse) stays open.
+- Amsterdam now has 0 approximate pins, from 2. Photos unchanged at 6/10 after another exhaustive, unsuccessful hunt for the same 3 gaps a prior pass today already tried; not retrying those with the same tools again.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Naples: worst-covered city gets its first depth pass, 6 of 10 pins resolved
 
 - Naples (0/10 photos, 10/10 approximate since its 2026-07-25 research, never touched since) got its first depth pass. Found a new source: Campania's regional monumental-tree register, which gives GPS for most of Capodimonte's catalogued trees. Its own photos carry no stated licence so none were usable, but exact circumference/height matching resolved 6 pins: the Royal Orchard camphor (moved ~900m), the yew, the Montezuma cypress, the citrus grove, the Villa Comunale plane and the San Severino cloister platano, which also picked up a photo via a Commons caption that explicitly names the tree.
