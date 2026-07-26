@@ -44,6 +44,12 @@ Analytics once there is traffic, and cookieless to avoid a consent banner. Searc
 
 ---
 
+## 2026-07-26 — London: Royal Oak pin confirmed via Woodland Trust registry, Berkeley Square sourcing fixed
+
+- London already clears 8/10 photos; only its pin count blocked the exit test. The Royal Oak's own Woodland Trust Ancient Tree Inventory entry gives a precise, unobscured grid reference (checked directly against the hard-rule-10 Woodland Trust caveat before using it), converted and applied: a roughly 400m correction. Also backfilled two sources for the Berkeley Square Plane, which had shipped with none.
+- London now at 2 of 10 approximate pins, at the exit test's own threshold. Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Paris photo check: no new ground, closest city to the exit test
 
 - Paris only needs 2 more photos to clear the 8/10 floor (already at 0 approximate pins). Checked Commons, iNaturalist, Flickr and the City of Paris's own remarkable-trees gallery for the 4 gaps; the gallery confirmed the right trees but isn't openly licensed, and nothing else cleared the bar. Stays at 6/10. Detail in CURATION.md.
