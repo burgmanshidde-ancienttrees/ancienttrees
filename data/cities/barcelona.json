@@ -161,8 +161,8 @@
       "age_max": 106,
       "location": {
         "address": "Jardi Botanic Historic, Av. dels Muntanyans, 08038 Barcelona",
-        "latitude": 41.3673100,
-        "longitude": 2.1527300,
+        "latitude": 41.36731,
+        "longitude": 2.15273,
         "neighbourhood": "Montjuic, Sants-Montjuic"
       },
       "story": "Barcelona's biggest tree grows in a hole nobody visits. The Sot de l'Estany is a former quarry pit inside the city's historic botanical garden, deep enough and damp enough to work like a greenhouse, and this wingnut has used that shelter to reach roughly 40 metres, a height the city's own catalogue admits it struggled to measure with standard equipment because the surrounding walls block a laser sightline. The tree is a Rehder's wingnut, a deliberate hybrid between a Caucasian and a Chinese species first crossed in 1908 by Alfred Rehder, a horticulturist at Boston's Arnold Arboretum, which makes this specimen barely a decade or two younger than the hybrid itself. It is the only tree of its kind recorded in Barcelona, and likely for a considerable distance beyond it. In April 2025 the Catalan government named it one of only four monumental trees in the entire city, all four sharing this same ravine. Visitors to the botanical garden rarely find their way down into the Sot; the tree that beats every other in Barcelona for size stands in the one corner of the garden most people walk straight past.",
@@ -272,7 +272,7 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "This entry represents the plane tree ensemble of La Rambla as a whole rather than one surveyed specimen; the municipal catalogue itself describes the entry as a collection, with height ranging 7-25m and trunk circumference 0.45-2.5m across individual trees. Coordinates and location_precision are marked approximate for that reason, honestly, rather than pinning one tree as if it stood for all 256.",
+      "notes": "This entry represents the plane tree ensemble of La Rambla as a whole rather than one surveyed specimen; the municipal catalogue itself describes the entry as a collection, with height ranging 7-25m and trunk circumference 0.45-2.5m across individual trees. Coordinates and location_precision are marked approximate for that reason, honestly, rather than pinning one tree as if it stood for all 256. FAILS the collectible-point rule (2026-07-26): a kilometre of ~1000 ordinary planes is an avenue, not a tree; replace with a singular Barcelona tree.",
       "location_precision": "approximate"
     },
     {

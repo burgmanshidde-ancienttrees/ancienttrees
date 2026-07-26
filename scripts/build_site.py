@@ -287,6 +287,8 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
   border-radius: 6px; padding: 0.7rem 0.9rem; font-family: var(--sans); font-size: 14px;
   cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.18); white-space: nowrap; }
 .route-gps[aria-pressed="true"] { background: var(--moss-light); border-color: var(--moss); }
+.report-btn { display: inline-block; margin: 4px 6px 0 0; padding: 5px 12px; border: 1px solid var(--cream-dark); border-radius: 999px; font-size: 12.5px; color: var(--ink-mid); text-decoration: none; }
+.report-btn:hover { border-color: var(--moss); color: var(--moss); }
 .hero-note { margin-top: 0.75rem; font-size: 13px; color: var(--ink-light); }
 .home-cta { display: inline-block; background: var(--moss); color: #fff; text-decoration: none;
   padding: 0.6rem 1.1rem; border-radius: 6px; font-size: 14px; font-weight: 500; margin-right: 0.5rem; }
@@ -382,7 +384,7 @@ PAGE_SHELL = """<!DOCTYPE html>
     <a href="%%ROOTPATH%%#cities">Cities</a>
     <a href="%%ROOTPATH%%species" class="bar-secondary">Species</a>
     <a href="%%ROOTPATH%%collections" class="bar-secondary">Collections</a>
-    <a href="%%ROOTPATH%%contribute" class="bar-cta">Map your city</a>
+    <a href="%%ROOTPATH%%contribute" class="bar-cta">Suggest a tree</a>
   </nav>
 </header>
 %%BODY%%
@@ -1442,7 +1444,10 @@ def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pag
   <h2>Trees nearby</h2>
   <ul class="link-list">{nearby_html}</ul>
   <div class="cta">Curious what else is standing in {esc(city)}? See <a href="../{cslug}">all {len(all_trees)} remarkable ancient trees in {esc(city)}</a> or find out <a href="oldest-tree">what the oldest tree in {esc(city)} is</a>.{species_line}</div>
-  <div class="report"><strong>Is something here not right?</strong> Wrong spot, wrong age, or the tree is gone? <a href="{submit_link('correction')}">Tell us and we will check it</a>. Every page on this site is corrected by the people who actually walk past these trees.</div>
+  <div class="report"><strong>Help keep this page true.</strong>
+    <a class="report-btn" href="{submit_link('correction')}">Wrong spot</a>
+    <a class="report-btn" href="{submit_link('correction')}">The tree is gone</a>
+    <a class="report-btn" href="{submit_link('correction')}">Suggest an edit</a></div>
 </main>
 """
 
@@ -2013,7 +2018,7 @@ def build_contribute_page(published, pages):
                        "Map Your City's Ancient Trees"], canonical)
     description = ("Know the remarkable old trees of your city? Put them on the map. "
                    "Every submission is verified against independent sources before it goes live.")
-    crumb_items = [("Home", BASE_URL), ("Map your city", None)]
+    crumb_items = [("Home", BASE_URL), ("Suggest a tree", None)]
 
     city_links = " &middot; ".join(
         f'<a href="{p["slug"]}">{esc(p["city"])}</a>' for p in published
@@ -2095,7 +2100,7 @@ def build_homepage(published, upcoming, collections, pages):
     )
 
     coll_html = "".join(
-        f'<p class="prose">Start with a collection: <a href="collections/{c["slug"]}">{esc(c["title"])}</a>.</p>'
+        f'<p class="prose">See <a href="collections/{c["slug"]}">{esc(c["title"])}</a>.</p>'
         for c in collections
     )
 
@@ -2114,7 +2119,7 @@ def build_homepage(published, upcoming, collections, pages):
   <div class="hero-overlay">
     <h1>Epic old trees, <em>wherever you are</em>.</h1>
     <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of.</p>
-    <p class="hero-note">Every tree free to explore. No ads, no tracking. By tree lovers, for tree lovers.</p>
+    <p class="hero-note">Every tree free to explore. By tree lovers, for tree lovers.</p>
     <form id="city-search" class="hero-search" autocomplete="off">
       <input type="text" id="city-q" list="city-options" placeholder="Search a city, or use your location..." aria-label="Search for a city">
       <datalist id="city-options">{city_options}</datalist>
@@ -2185,10 +2190,9 @@ def build_homepage(published, upcoming, collections, pages):
   <div class="city-grid">{live_cards}{soon_cards}</div>
   {coll_html}
 
-  <h2 class="section-heading">Built in the open, and not finished</h2>
-  <p class="prose">This is a project rather than a product. {len(published)} cities are mapped, some trees still have no photograph, and a few pins mark the right park rather than the right trunk. Every one of those says so on its own page, because a vague pin that admits it is vague still gets you to the right place, and a confident wrong one wastes your afternoon.</p>
-  <p class="prose">Three ways to help, none of them much work. Add a tree we have missed. Map a city nobody has done yet. Or tell us when something here is wrong, which happens, and is the fastest way this gets better. No sign-up needed to start: the trees you tick off as visited stay on your own device.</p>
-  <p class="prose">{contribute_cta}{support_cta}</p>
+  <h2 class="section-heading">Know a tree we should?</h2>
+  <p class="prose">This map grows through people who know their trees. Every story is researched and double-checked, and the people who actually walk past these trees make it better.</p>
+  <p class="prose"><a class="home-cta" href="{submit_link("tree")}">Suggest a tree</a><a class="home-cta secondary" href="{submit_link("correction")}">Something here is wrong</a>{support_cta}</p>
 </main>
 """
     head_extra = map_head() + "\n" + ld_script(site_graph())

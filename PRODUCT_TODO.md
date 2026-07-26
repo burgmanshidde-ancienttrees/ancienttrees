@@ -9,9 +9,8 @@ The queue a run may draw from when every content rung in CLAUDE.md Step 0 is sat
 
 ## Queue, in order
 
-### 1. The shareable "my trees" page
-A page at `/my-trees` that renders the visitor's passport from LocalStorage: which trees, grouped by city, city and total counts, and the existing `#trees=` link both as "back up your collection" and as "share it". Sharing is the one growth loop that needs nobody to post, and the page is the future reason an account is worth having. Empty state must invite ("You have not stood anywhere yet. Find a tree near you.") rather than look broken.
-**Done when:** the page builds and validates; grep shows it reads `ancienttrees_seen` and emits the `#trees=` link; every city page's passport box links to it; empty-state copy present in the built HTML.
+### 1. SUPERSEDED, do not build: the shareable my-trees page
+Hidde is moving check-in and collecting toward the app (web becomes discovery plus the sales floor). Until that decision is recorded in CLAUDE.md, build nothing passport-related and remove nothing either. Skip to item 2.
 
 ### 2. Copy audit against the value proposition and the durable-claims rule
 Walk every template string in `scripts/build_site.py` against CLAUDE.md's value proposition and the rule that copy may only promise what the paywall will survive. Remove drifted or filler copy; tighten to the tone of voice.
