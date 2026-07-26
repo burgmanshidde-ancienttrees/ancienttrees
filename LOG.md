@@ -30,6 +30,14 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-26 — Barcelona: one photo found via a direct heritage-ID match
+
+- Barcelona's pins were already all confirmed; the only bar left was photos (5/10). Found a direct match for the Casa de la Misericordia palms, a Commons photo whose own title names the exact courtyard and cites the trees' Catalan heritage protection ID, GPS landing 15m from the stored pin. Approved.
+- The other three gaps (Holm Oak of Encarnacio, Himalayan Cedar of the Labyrinth, Magnolia of the Maternity Gardens, Silk Tree of the Ciutadella) stayed genuine dead ends after a fresh iNaturalist/Commons/municipal-site try; all four are well-documented named trees, just without any open-licensed photo found anywhere.
+- Barcelona now at 6/10 photos (from 5). Still short of the depth-exit-test floor of 8/10.
+- This finishes a pass over all 8 depth-exit-test cities today: Tokyo, Paris and London already passed; Amsterdam, Lisbon, Istanbul, Rome and Barcelona all improved but none newly cleared the bar. Pin work is now largely done across the group (only Amsterdam's 2 and Istanbul's 8 remain); photos are the harder remaining gap everywhere except Istanbul, which needs both.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Rome: both approximate pins resolved
 
 - Two independently-photographed "Cedro del Libano" images at Villa Doria Pamphilj, by different photographers, agree on one exact GPS point that also matches Italy's national tree registry (MASAF) to the hundredth of an arcsecond. That point is 1.2km from the Belvedere cedar's old pin, a real correction, not just tightening; moved to confirmed, with the matching photo held at found_needs_check pending a future pass that can view images directly. The Cedar of Celimontana's pin was confirmed the same way, using its own already-approved photo's embedded GPS, corroborated by two more photos and the neighbouring pine's registry point.
