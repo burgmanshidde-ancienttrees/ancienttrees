@@ -95,7 +95,7 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .panel { width: 30rem; max-width: 45vw; height: 100%; overflow-y: auto; background: var(--cream); border-right: 1px solid var(--cream-dark); flex-shrink: 0; }
 .panel-head { padding: 2rem 1.75rem 1.5rem; border-bottom: 1px solid var(--cream-dark); }
 .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.75rem; }
-.panel-head h1 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.9rem; font-weight: 400; line-height: 1.2; margin-bottom: 0.75rem; }
+.panel-head h1 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.9rem; font-weight: 400; line-height: 1.2; margin-bottom: 0.75rem; }
 .panel-head h1 em { font-family: var(--serif); font-style: italic; color: var(--moss); font-weight: 400; letter-spacing: 0; font-size: 1.08em; }
 .lede { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
 .notice { background: var(--moss-light); border-left: 3px solid var(--moss); padding: 0.7rem 1rem; font-size: 12px; color: var(--ink-mid); margin-top: 1rem; }
@@ -110,8 +110,8 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .tree-card:hover .tree-card-photo img { transform: scale(1.04); }
 .tree-card-credit { font-size: 10px; color: var(--ink-light); margin: -0.6rem 0 0.85rem; }
 .tree-card-top { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 0.4rem; }
-.tree-num { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.1rem; color: var(--moss); flex-shrink: 0; width: 1.4rem; }
-.tree-name { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.35rem; font-weight: 400; line-height: 1.25; }
+.tree-num { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.1rem; color: var(--moss); flex-shrink: 0; width: 1.4rem; }
+.tree-name { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.35rem; font-weight: 400; line-height: 1.25; }
 .tree-label { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mid); background: var(--cream-dark); border-radius: 2px; padding: 0.15rem 0.45rem; margin-left: 0.6rem; vertical-align: middle; white-space: nowrap; }
 .tree-meta { font-size: 12px; color: var(--ink-light); margin: 0 0 0.6rem 2.15rem; }
 .best-now, .best-now-inline { display: inline-block; background: var(--moss); color: #fff;
@@ -121,7 +121,7 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 /* Seasonal peak chart, in the spirit of PictureThis but in our own skin. */
 .season { margin: 2rem 0; background: #fff; border: 1px solid var(--cream-dark);
   border-radius: 10px; padding: 1.1rem 1.25rem 0.9rem; }
-.season-head { display: flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em;
+.season-head { display: flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em;
   font-size: 1.05rem; color: var(--ink); margin-bottom: 0.5rem; }
 .sc-chip { font-family: var(--sans); font-size: 11px; font-weight: 600; color: var(--moss);
   border: 1px solid var(--moss); border-radius: 999px; padding: 1px 8px; text-transform: capitalize; }
@@ -141,7 +141,7 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .tree-more a { text-decoration: none; }
 .tree-more a:hover { text-decoration: underline; }
 .panel-foot { padding: 1.75rem; font-size: 13px; color: var(--ink-mid); }
-.panel-foot h2 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.25rem; font-weight: 400; margin-bottom: 0.75rem; }
+.panel-foot h2 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.25rem; font-weight: 400; margin-bottom: 0.75rem; }
 .panel-foot dt { font-weight: 500; margin-top: 1rem; }
 .panel-foot dd { font-weight: 300; margin-top: 0.3rem; }
 .panel-foot .suggest { border-top: 1px solid var(--cream-dark); margin-top: 1.5rem; padding-top: 1.25rem; color: var(--ink-light); }
@@ -151,9 +151,9 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .crumbs { font-size: 12px; color: var(--ink-light); margin-bottom: 1.25rem; }
 .crumbs a { color: var(--ink-light); text-decoration: none; }
 .crumbs a:hover { color: var(--moss); }
-.content-page h1 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 2.1rem; font-weight: 400; line-height: 1.2; margin-bottom: 1rem; }
-.content-page h2 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.4rem; font-weight: 400; margin: 2.25rem 0 0.75rem; }
-.content-page h3 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.15rem; font-weight: 400; margin: 1.5rem 0 0.35rem; }
+.content-page h1 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 2.1rem; font-weight: 400; line-height: 1.2; margin-bottom: 1rem; }
+.content-page h2 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.4rem; font-weight: 400; margin: 2.25rem 0 0.75rem; }
+.content-page h3 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.15rem; font-weight: 400; margin: 1.5rem 0 0.35rem; }
 .answer-first { font-size: 1.05rem; line-height: 1.75; margin-bottom: 1rem; }
 .prose-block p { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; margin-bottom: 1rem; }
 .facts { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1.5rem; background: var(--cream-dark); padding: 1.25rem 1.5rem; border-radius: 4px; margin: 1.5rem 0; }
@@ -192,7 +192,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .home-hero { position: relative; height: 72vh; min-height: 420px; margin-top: var(--header-h); }
 .home-hero .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 .hero-overlay { position: absolute; top: 1.5rem; left: 1.5rem; z-index: 10; background: rgba(247,244,238,0.95); backdrop-filter: blur(8px); border: 1px solid var(--cream-dark); border-radius: 4px; padding: 1.75rem 2rem; max-width: 26rem; box-shadow: 0 4px 24px rgba(26,26,20,0.08); }
-.hero-overlay h1 { font-family: var(--sans); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.015em; line-height: 1.25; margin-bottom: 0.6rem; }
+.hero-overlay h1 { font-family: var(--sans); font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.12; margin-bottom: 0.6rem; }
 .hero-overlay h1 em { font-family: var(--serif); font-style: italic; color: var(--moss); font-weight: 400; letter-spacing: 0; font-size: 1.08em; }
 .hero-overlay p { font-size: 13px; font-weight: 300; color: var(--ink-mid); line-height: 1.65; }
 .hero-overlay .go-btn { border: none; font-family: var(--sans); cursor: pointer; margin-top: 0.9rem; }
@@ -205,7 +205,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .home-act:first-child { border-top: none; }
 .home-act:nth-child(even) .home-act-visual { order: -1; }
 .home-act-verb { font-family: var(--hand); font-weight: 700; color: var(--moss); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
-.home-act h2 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.75rem; margin: 0.35rem 0 0.7rem; line-height: 1.15; }
+.home-act h2 { font-family: var(--sans); font-weight: 800; letter-spacing: -0.02em; font-size: 1.9rem; margin: 0.35rem 0 0.7rem; line-height: 1.1; }
 .home-act-copy p { color: var(--ink-mid); font-size: 1.05rem; max-width: 42ch; }
 /* The three acts, drawn in one illustrated system instead of photographs.
    Reference: Polarsteps' stats-that-grow presentation, in our own cream and
@@ -234,7 +234,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .hav-phone { margin: 0 auto; width: min(78%, 300px); background: var(--ink); border-radius: 30px;
   padding: 10px; box-shadow: 0 22px 44px rgba(26,26,20,0.24); }
 .hav-screen { background: #fff; border-radius: 22px; padding: 16px 14px 18px; }
-.hav-screen h4 { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.05rem; margin: 0 0 10px; }
+.hav-screen h4 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.05rem; margin: 0 0 10px; }
 .stat-row { display: flex; gap: 8px; margin-bottom: 12px; }
 .stat { flex: 1; border-radius: 12px; padding: 10px 8px; text-align: center; background: var(--moss-light); }
 .stat.alt { background: #F3EFE2; }
@@ -271,12 +271,12 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2px; background: var(--cream-dark); border: 1px solid var(--cream-dark); margin-bottom: 3rem; }
 .city-card { background: var(--cream); padding: 1.5rem; text-decoration: none; border-top: 2px solid transparent; transition: border-top-color 0.2s; }
 .city-card:hover { border-top-color: var(--moss); }
-.city-card-name { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 1.25rem; color: var(--ink); margin-bottom: 0.25rem; }
+.city-card-name { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.25rem; color: var(--ink); margin-bottom: 0.25rem; }
 .city-card-meta { font-size: 12px; color: var(--ink-light); }
 .city-card.soon { opacity: 0.55; }
 
 footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
-.footer-logo { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
+.footer-logo { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
 .footer-links { font-size: 12px; }
 .footer-links a { color: var(--ink-mid); text-decoration: none; margin-right: 1rem; }
 .footer-note { font-size: 12px; color: var(--ink-light); }
@@ -322,6 +322,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
 .route-gps[aria-pressed="true"] { background: var(--moss-light); border-color: var(--moss); }
 .report-btn { display: inline-block; margin: 4px 6px 0 0; padding: 5px 12px; border: 1px solid var(--cream-dark); border-radius: 999px; font-size: 12.5px; color: var(--ink-mid); text-decoration: none; }
 .report-btn:hover { border-color: var(--moss); color: var(--moss); }
+.hero-kicker { font-family: var(--hand); font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--moss); margin-bottom: 0.5rem; }
 .hero-note { margin-top: 0.75rem; font-size: 13px; color: var(--ink-light); }
 .home-cta { display: inline-block; background: var(--moss); color: #fff; text-decoration: none;
   padding: 0.6rem 1.1rem; border-radius: 6px; font-size: 14px; font-weight: 500; margin-right: 0.5rem; }
@@ -362,7 +363,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
   .panel { padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
 }
 .maplibregl-popup-content { font-family: var(--sans); font-size: 13px; padding: 0.75rem 1rem; border-radius: 4px; }
-.maplibregl-popup-content strong { font-family: var(--sans); font-weight: 650; letter-spacing: -0.01em; font-size: 15px; font-weight: 400; }
+.maplibregl-popup-content strong { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 15px; font-weight: 400; }
 
 @media (max-width: 800px) {
   .split { flex-direction: column-reverse; height: auto; }
@@ -406,7 +407,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <meta property="og:url" content="%%CANONICAL%%">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Shantell+Sans:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Shantell+Sans:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="%%ROOTPATH%%assets/style.css">
 %%HEAD_EXTRA%%
 </head>
@@ -2162,9 +2163,10 @@ def build_homepage(published, upcoming, collections, pages):
 <div class="home-hero">
   <div id="map" class="map"></div>
   <div class="hero-overlay">
+    <p class="hero-kicker">By tree lovers, for tree lovers</p>
     <h1>Epic old trees, <em>wherever you are</em>.</h1>
     <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of.</p>
-    <p class="hero-note">Every tree free to explore. By tree lovers, for tree lovers.</p>
+    <p class="hero-note">Every tree free to explore.</p>
     <form id="city-search" class="hero-search" autocomplete="off">
       <input type="text" id="city-q" list="city-options" placeholder="Search a city, or use your location..." aria-label="Search for a city">
       <datalist id="city-options">{city_options}</datalist>
