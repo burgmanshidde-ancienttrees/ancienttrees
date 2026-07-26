@@ -2,6 +2,13 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Istanbul: no data changed, but a real near-miss caught and two untried leads found
+
+- Next in rung 5's order after Amsterdam and Lisbon: Istanbul, the furthest-behind of the eight (2/10 photos, 8/10 approximate). Tried angles beyond what prior passes already exhausted (Wikimedia, iNaturalist, OSM Overpass, anitagac.istanbul's JS map): Turkey's national forestry registry, İBB open data, Turkish Wikipedia, Turkish-language Flickr/Openverse.
+- **A real near-miss, caught and correctly rejected**: two CC BY-SA 2.5 Commons photos captioned only "a tree in Gülhane Park" (2014) surfaced as candidates for the Taşlı Çınar, a specific ~446-year-old plane at the park's Alemdar Gate edge. Neither photo names the tree, gives coordinates, or shows the stones the name refers to, and Gülhane is a large park with many trees, so both stay unused rather than guess.
+- **Two untried leads worth a future pass**: anitagac.istanbul's individual tree detail pages (URL pattern `/agac/{ID}`) turned out to be fetchable, unlike its JS-rendered map, and contain useful facts (confirmed the Taşlı Çınar's exact site and the Ata Fıstık Çamı's name-confusion between two different pines), though the site itself carries no license statement so its own photos stay unusable. Also, `konusanagac.com`, a second İBB tree portal with per-tree pages, failed DNS resolution on every attempt this pass, a genuinely untried dead end rather than an exhausted one, and `anitagaclar.gov.tr` (the national registry) returned connection-refused rather than an empty result.
+- No photo or pin changed this pass. Recorded so a future run tries the two untried leads above rather than repeating today's exhausted techniques.
+
 ## 2026-07-26 — Lisbon: the Santo Amaro olive trees get a photo, five other gaps stay genuine dead ends
 
 - Moved to rung 5's next city after Amsterdam. Lisbon was at 4/10 photos (needs 8+) and already at 2/10 approximate (within target), so this pass focused entirely on its 6 photo gaps. Tried fresh angles beyond what prior passes exhausted: Wiki Loves Monuments/ICNF-tagged Commons categories, Portuguese Wikipedia, Câmara Municipal de Lisboa's own site, Flickr filtered to CC licenses, and dados.gov.pt's actual dataset API (not just the portal page).
