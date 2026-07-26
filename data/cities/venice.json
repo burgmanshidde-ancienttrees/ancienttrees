@@ -137,13 +137,13 @@
       "access": "Free entry, donation welcome; guided visits Tuesday-Sunday 9:00-11:00 and 15:00-17:00, closed Monday",
       "transport": "Vaporetto line 12 to Burano, then private boat or water taxi (about 15 minutes)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "found_needs_check"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/San_Francesco_del_Deserto_01.jpg",
+        "license": "Public Domain",
+        "attribution": "Godromil, Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Age is genuinely undated in every source checked; the legendary 1220 pine is explicitly a different, no-longer-living tree and not claimed as the age of today's cypresses. Candidate photo found (File:San_Francesco_del_Deserto_01.jpg, public domain, Godromil) showing the island's exterior, but its description does not confirm the cypress ring is clearly visible in frame, so marked found_needs_check rather than approved pending a visual check this run could not perform.",
+      "notes": "Age is genuinely undated in every source checked; the legendary 1220 pine is explicitly a different, no-longer-living tree and not claimed as the age of today's cypresses. Photo viewed directly: shows the island entirely ringed by a dense band of dark cypresses, exactly the 'green band around the convent walls' the story describes. Approved.",
       "location_precision": "approximate"
     },
     {
@@ -200,10 +200,10 @@
         "url": null,
         "license": null,
         "attribution": null,
-        "status": "found_needs_check"
+        "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Olive's age given only as 'secolare' (century-old) without a specific figure. Candidate photo found (File:San_Servolo_Aug_2020_1.jpg, CC BY-SA 4.0, Kasa Fue) but its description does not confirm garden or tree content is visible, so marked found_needs_check pending a visual check this run could not perform.",
+      "notes": "Olive's age given only as 'secolare' (century-old) without a specific figure. Candidate photo (File:San_Servolo_Aug_2020_1.jpg) viewed directly this pass: it's a distant aerial of the whole island, buildings and general greenery only, no garden or tree distinguishable. Not usable; resolved from found_needs_check to missing rather than leaving it unresolved.",
       "location_precision": "approximate"
     },
     {
@@ -230,10 +230,10 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Giardini_Papadopoli_%28arbres%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Didier Descouens, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Photo coordinates (45°26'18.37\"N, 12°19'14.3\"E) match this entry's own pin closely and the filename translates as 'trees', a strong textual match, but this run could not visually open the image to confirm content directly, so it is marked found_needs_check rather than approved pending that check.",
+      "notes": "Photo coordinates (45°26'18.37\"N, 12°19'14.3\"E) match this entry's own pin closely and the filename translates as 'trees', a strong textual match. Viewed directly: shows a wooded garden path lined with tall mature trees, matching the ensemble description. Approved.",
       "location_precision": "approximate"
     },
     {
@@ -287,13 +287,13 @@
       "access": "Free when open; the garden hosts temporary exhibitions and events, check the current schedule before visiting",
       "transport": "10 min walk from Ca' Rezzonico vaporetto stop, via Campo Santa Margherita",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "found_needs_check"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Ca_zenobio_giardini.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Abxbay, Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Candidate photo found (File:Ca_zenobio_giardini.JPG, CC BY-SA 3.0, Abxbay, categorised under the palace's garden) but this run could not visually confirm trees are the clear subject rather than the palazzo facade, so marked found_needs_check rather than approved.",
+      "notes": "Photo viewed directly: shows the garden's gravel path flanked by cypresses, a palm and statuary leading to the palazzo, a representative view of the garden ensemble this entry describes rather than a single named tree. Approved.",
       "location_precision": "approximate"
     },
     {
