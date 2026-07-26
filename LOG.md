@@ -30,6 +30,14 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-26 — Naples: worst-covered city gets its first depth pass, 6 of 10 pins resolved
+
+- Naples (0/10 photos, 10/10 approximate since its 2026-07-25 research, never touched since) got its first depth pass. Found a new source: Campania's regional monumental-tree register, which gives GPS for most of Capodimonte's catalogued trees. Its own photos carry no stated licence so none were usable, but exact circumference/height matching resolved 6 pins: the Royal Orchard camphor (moved ~900m), the yew, the Montezuma cypress, the citrus grove, the Villa Comunale plane and the San Severino cloister platano, which also picked up a photo via a Commons caption that explicitly names the tree.
+- One real correction along the way: the Robust Eucalyptus's registry match had an exact dimension match but placed it at Giardino dei Principi, not "near Porta Grande" as previously written; corrected the location and story rather than force the old description.
+- Two things flagged rather than guessed at: the Garden of the Princes camphor has a registry candidate with a conflicting circumference (830cm vs this entry's 670cm), left unresolved; and a secondhand, unverified note that the Eucalyptus might actually be a different species per the museum's own page, worth checking directly next time.
+- Naples now at 3/10 approximate (from 10) and 1/10 photos (from 0). Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed across four commits.
+
 ## 2026-07-26 — Barcelona: one photo found via a direct heritage-ID match
 
 - Barcelona's pins were already all confirmed; the only bar left was photos (5/10). Found a direct match for the Casa de la Misericordia palms, a Commons photo whose own title names the exact courtyard and cites the trees' Catalan heritage protection ID, GPS landing 15m from the stored pin. Approved.
