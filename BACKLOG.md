@@ -6,6 +6,12 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## Parked ideas, brainstormed but not validated (2026-07-26)
+
+From the functionality brainstorm, Hidde approved four verbs as the product (find, walk, collect, season; see CLAUDE.md). The rest of the list is parked here so it neither disappears nor sneaks into a build: themed cross-city route pages, personal records ("the oldest tree you ever stood at"), audio stories at the trunk, the multi-day trip planner. "Die andere weet ik niet," and unknown means not built.
+
+**Trigger:** Hidde explicitly asking for one of them. Nothing else.
+
 ## Gamification: points, badges, rarity (the app's collecting core)
 
 Hidde's direction, 2026-07-26, replacing photo-led presentation as the emotional engine: the photos of old trees are honestly often ugly, the game is not. Sketch to build on when the app lands:

@@ -247,6 +247,21 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
   justify-content: center; background: var(--moss-light); color: var(--moss); }
 .sp svg { width: 68%; height: 68%; }
 .sp.dim { background: #F0EEE6; color: #C9C5B6; }
+.season-card { background: #fff; border: 1px solid var(--cream-dark); border-radius: 16px; padding: 1.2rem 1.3rem; box-shadow: 0 18px 40px rgba(26,26,20,0.10); }
+.season-now { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--moss); font-weight: 700; margin: 0 0 12px; font-family: var(--hand); }
+.sr-row { display: flex; align-items: center; gap: 12px; padding: 9px 0; border-top: 1px solid #F0EDE3; }
+.sr-row:first-of-type { border-top: none; }
+.sr-row .sp { width: 40px; flex: none; }
+.sr-body { flex: 1; min-width: 0; }
+.sr-body b { display: block; font-size: 0.95rem; font-weight: 600; }
+.sr-body i { font-style: normal; font-size: 0.8rem; color: var(--ink-light); }
+.sr-row.dim .sr-body b { color: var(--ink-light); font-weight: 500; }
+.hav-badge-inline { background: var(--moss); color: #fff; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 3px 9px; border-radius: 999px; }
+.sr-when { font-size: 11px; color: var(--ink-light); border: 1px solid var(--cream-dark); border-radius: 999px; padding: 2px 9px; }
+.sr-months { display: flex; gap: 4px; margin-top: 12px; }
+.sr-months span { flex: 1; height: 5px; border-radius: 3px; background: #EFEDE3; }
+.sr-months span.on { background: var(--moss); }
+.sr-months span.half { background: #A9BC8A; }
 .sp-name { position: absolute; top: -9px; left: 50%; transform: translateX(-50%); background: var(--ink);
   color: #fff; font-size: 8.5px; font-weight: 600; padding: 1.5px 7px; border-radius: 999px; white-space: nowrap; }
 @media (max-width: 760px) { .home-act { grid-template-columns: 1fr; gap: 1.5rem; padding: 2.25rem 0; } .home-act:nth-child(even) .home-act-visual { order: 0; } }
@@ -2126,6 +2141,9 @@ def build_homepage(published, upcoming, collections, pages):
         return f'<svg viewBox="0 0 40 40" fill="currentColor" aria-hidden="true">{SPECIES_ICONS[k]}</svg>'
     find_pin_1=_icon("plane"); find_pin_2=_icon("wingnut"); find_pin_3=_icon("broadleaf")
     walk_pin_1=_icon("oak"); walk_pin_2=_icon("plane"); walk_pin_3=_icon("ginkgo"); walk_pin_4=_icon("yew")
+    radar_icon_1=_icon("ginkgo"); radar_icon_2=_icon("ginkgo"); radar_icon_3=_icon("wisteria")
+    _m=[0,0,0,.5,.5,0,.5,.5,0,.5,1,0]
+    radar_months="".join('<span class="%s"></span>'%("on" if v==1 else "half" if v==.5 else "") for v in _m)
     lit=["oak","plane","ginkgo","yew","cedar","olive"]; dim=["pine","cypress","fig","wisteria"]
     collected_species="".join(
         f'<span class="sp{"" if k in lit else " dim"}">{_icon(k)}'
@@ -2204,9 +2222,23 @@ def build_homepage(published, upcoming, collections, pages):
   </div>
   <div class="home-act">
     <div class="home-act-copy">
+      <span class="home-act-verb">Season</span>
+      <h2>See them at their best.</h2>
+      <p>Every tree has a moment: the ginkgo's golden week, ten days of blossom, a month of catkins. The radar shows what is at its best around you right now, so you go at exactly the right time.</p>
+    </div>
+    <div class="home-act-visual season-card">
+      <h5 class="season-now">At their best in November</h5>
+      <div class="sr-row"><span class="sp">{radar_icon_1}</span><span class="sr-body"><b>The Zenpukuji Ginkgo</b><i>turning deep gold</i></span><span class="hav-badge-inline">now</span></div>
+      <div class="sr-row"><span class="sp">{radar_icon_2}</span><span class="sr-body"><b>Meiji Jingu Gaien Avenue</b><i>the whole street gold</i></span><span class="hav-badge-inline">now</span></div>
+      <div class="sr-row dim"><span class="sp dim">{radar_icon_3}</span><span class="sr-body"><b>Kameido Tenjin Wisteria</b><i>hanging in flower</i></span><span class="sr-when">May</span></div>
+      <div class="sr-months">{radar_months}</div>
+    </div>
+  </div>
+  <div class="home-act">
+    <div class="home-act-copy">
       <span class="home-act-verb">Collect</span>
       <h2>Tick off the ones you have stood in front of.</h2>
-      <p>Check in at the tree and watch your collection grow: trees, cities, species. Some trees are rarer than others, and a complete city is something to be proud of.</p>
+      <p>Check in at the tree and watch your collection grow: trees, cities, species. Rarer and older trees count for more, and badges for a finished city are on their way.</p>
     </div>
     <div class="home-act-visual" style="background:none;border:none;box-shadow:none;padding:0">
       <div class="hav-phone"><div class="hav-screen">
