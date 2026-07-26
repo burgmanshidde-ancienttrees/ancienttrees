@@ -30,6 +30,12 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-26 — Bologna: 3 of 10 approximate pins resolved via Italy's national tree registry
+
+- Continued from the dead-end sweep below with Bologna (10/10 approximate, untouched today). Italy's national monumental tree registry, already used successfully on Rome, Naples and Verona, matched three trees by species and exact locality name: the Himalayan Cedar of the Rizzoli (moved ~130m, a real correction), the Oriental Plane of Piazza Malpighi and the Ginkgo of Piazza Cavour (both moved 15-22m, essentially confirming the existing estimates). Every match was cross-checked across two independent fetches before being applied, after an earlier pass today found this exact spreadsheet format can misread adjacent rows; one candidate (the Piazza Minghetti plane) came back three different, contradictory ways and was left alone rather than guessed.
+- Bologna now at 7 of 10 approximate pins. Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — A dead-end sweep: six depth targets tried with new techniques, one real lead found but unreachable, nothing published was wrong
 
 - Visitors: 47 visits, 76 page views over 7 days, flat (21-26 July: 8, 9, 10, 7, 4, 9). No submissions. Site healthy.

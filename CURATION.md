@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Bologna: 3 of 10 approximate pins resolved via Italy's national monumental tree registry, using a two-fetch discipline after an earlier reliability warning
+
+- Followed up the dead-end sweep above (same session) by trying Italy's national monumental tree registry (MASAF) on Bologna, untouched today and 10/10 approximate. A 2026-07-26 Verona pass had already flagged that this session's fetch tool sometimes reads contradictory coordinates for adjacent rows in this exact spreadsheet format, so every match below was read from at least two independent fetches of the source file (the Emilia-Romagna regional Excel) before being applied, and one candidate that came back different on a third attempt was dropped rather than guessed.
+- **Resolved to confirmed**: the Himalayan Cedar of the Rizzoli (bol_005, AMI code 03/A944/BO/08, "Istituto Ortopedico Rizzoli - Via Pupilli 1", moved about 130m, a real correction not just tightening), the Oriental Plane of Piazza Malpighi (bol_004, AMI code 14/A944/BO/08, "Palazzo Rusconi - Piazza Malpighi 16", moved 15m, essentially confirming the existing estimate), and the Ginkgo of Piazza Cavour (bol_006, AMI code 12/A944/BO/08, "Piazza Cavour", moved 22m). All three matched on species, locality name and comune, and all three coordinates were identical (to the arcsecond) across two separate fetches.
+- **One dropped for exactly the reliability reason flagged above**: AMI code 04/A944/BO/08, which should be the Plane Tree of Piazza Minghetti (bol_003) by locality name, came back three different ways across three fetches (Piazza Minghetti/unspecified species; no locality at all, coordinates 500m away; Piazza Minghetti but species "Ginco"/Ginkgo, which would be a second, different tree at the same square). Left bol_003's pin untouched rather than apply an answer this inconsistent.
+- **No match found** for the other six (Montagnola planes, the Giardini Margherita sequoia, the Botanical Garden ginkgo, the Certosa cypress, the Villa Ghigi cedar, the San Michele in Bosco camphor) after two targeted search passes over the same spreadsheet; either genuinely not on this particular national list or past what this session's extraction can reliably surface. Two Giardini Margherita entries did turn up in the registry (AMI 02 and 08/A944/BO/08) but both are Platano orientale, a different species from our Sequoia entry, so not usable as a match.
+- Bologna now at 7 of 10 approximate pins (from 10). Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — A dead-end sweep across Amsterdam, Rome, Lisbon, Istanbul, Edinburgh and Brussels, and one real lead found but unreachable
 
 - Visitors: 47 visits, 76 page views over 7 days (21-26 July: 8, 9, 10, 7, 4, 9), flat. No submissions (CSV still header row only). Site healthy, build clean.
