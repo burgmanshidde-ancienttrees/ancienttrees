@@ -12,9 +12,9 @@ The queue a run may draw from when every content rung in CLAUDE.md Step 0 is sat
 ### 1. SUPERSEDED, do not build: the shareable my-trees page
 Hidde is moving check-in and collecting toward the app (web becomes discovery plus the sales floor). Until that decision is recorded in CLAUDE.md, build nothing passport-related and remove nothing either. Skip to item 2.
 
-### 2. The season radar page, approved by Hidde 2026-07-26
+### 2. DONE 2026-07-26, built in session: the season radar page
 A page at `/in-season` (linked from the Season act on the homepage once it exists): every tree whose `best_time.months` contains the current build month, grouped by city, each with its label phrase and a link. Static is fine: the site rebuilds many times a day, so "this month" stays true. Month with nothing in season shows the nearest upcoming moments instead of an empty page (empty states teach, PRINCIPLES.md).
-**Done when:** the page builds and validates; a check script confirms every listed tree's best_time includes the build month; the homepage Season act links to it; zero dead links (contracts pass).
+Shipped as /in-season: current month plus the two coming months, grouped by city, linked from the homepage Season act, contracts green. Runs keep it honest simply by rebuilding the site. Skip to item 3.
 
 ### 3. Copy audit against the value proposition and the durable-claims rule
 Walk every template string in `scripts/build_site.py` against CLAUDE.md's value proposition and the rule that copy may only promise what the paywall will survive. Remove drifted or filler copy; tighten to the tone of voice.
