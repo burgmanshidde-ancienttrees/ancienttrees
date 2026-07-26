@@ -30,6 +30,13 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-26 — Lisbon: both approximate pins resolved, clearing half the exit-test bar
+
+- Found a new source, Portugal's national registry of classified public-interest trees (ICNF), and used it to resolve both of Lisbon's remaining approximate pins. The Avenida de Berlim nettle tree moved by about 900m to the registry's own point, and its age corrected from a tourism-site "100 years" to the registry's measured 75 years in 2015 (~86 today), a real conflict resolved in favour of the direct government survey. The Jardim Alfredo Keil paineira's existing pin was confirmed against the registry's own ensemble point, 2m away.
+- Lisbon now at 0/10 approximate (from 2). Photos stay at 5/10; the Nettle Tree's photo hunt was retried at its corrected coordinates and stayed a dead end, the other 4 gaps unchanged from earlier today.
+- Moving to Istanbul next per rung 5's order, the furthest-behind of the eight priority cities.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Amsterdam: Amstelveld gets a modern photo, three more gaps confirmed genuinely exhausted
 
 - Visitors: 47 visits, 76 page views over 7 days, flat (21st-26th: 8, 9, 10, 7, 4, 9). No submissions (CSV still just the header row). Continued rung 5's ladder at the top: Amsterdam, the reference city, still short of flawless before this pass (6/10 photos, 2/10 approximate).
