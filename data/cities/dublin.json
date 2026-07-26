@@ -94,8 +94,8 @@
       "age_max": 700,
       "location": {
         "address": "The Old Glebe, Newcastle, Co. Dublin",
-        "latitude": 53.3,
-        "longitude": -6.5,
+        "latitude": 53.301077,
+        "longitude": -6.505525,
         "neighbourhood": "Newcastle-Lyons, West Dublin"
       },
       "story": "Local tradition puts this yew at over seven hundred years old. A more cautious estimate, based on girth alone, still lands at over five hundred. Either figure makes it older than the house whose garden it now shares, built in 1710, and very likely the oldest living thing in County Dublin. Jonathan Swift, Dean of St Patrick's Cathedral, is said to have sat beneath it while writing and while courting Esther Vanhomrigh, the Vanessa of his poems, who lived nearby in Celbridge. Nobody can confirm the story, and old trees near famous writers tend to collect this kind of legend whether or not it happened, so take the Swift connection as folklore worth repeating rather than a documented fact. What is certain is the tree itself: a girth of five metres, split with age, still green, standing in a corner of a garden ringed with benches for visitors to sit exactly where Swift supposedly did. The Old Glebe is a private home and only opens to the public on set dates each year, under Ireland's Section 482 scheme for historic houses: all of May, all of June, and nine days in mid-August, 10am to 2pm. Check the dates before making the trip.",
@@ -112,8 +112,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Age is a wide, disputed range (500-700 years) and the Swift association is unverified legend, stated as such in the story. Access is genuinely limited to Section 482 open days; this is disclosed honestly per hard rule 10 rather than presented as freely open.",
-      "location_precision": "approximate"
+      "notes": "Age is a wide, disputed range (500-700 years) and the Swift association is unverified legend, stated as such in the story. Access is genuinely limited to Section 482 open days; this is disclosed honestly per hard rule 10 rather than presented as freely open. Pin tightened 2026-07-26 via GBIF's Heritage Trees of Ireland dataset (CC-BY 4.0, a 2009 field GPS survey), which carries a single Taxus baccata record at 'Old Glebe, Co. Dublin' matching this tree exactly. No open-licensed photo found; the garden's limited access likely explains the gap.",
+      "location_precision": "confirmed"
     },
     {
       "id": "dub_004",
@@ -124,8 +124,8 @@
       "age_max": 290,
       "location": {
         "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
-        "latitude": 53.3717,
-        "longitude": -6.2696,
+        "latitude": 53.373022,
+        "longitude": -6.272239,
         "neighbourhood": "Glasnevin"
       },
       "story": "A double row of yews in Ireland's national botanic garden may predate the garden itself by roughly sixty years. Thomas Tickell, a minor poet and friend of the essayist Joseph Addison, lived on this land from 1736 until his death in 1740, and is said to have planted this avenue in Addison's memory. The Dublin Society did not acquire the site to found the gardens until 1795, more than fifty years after Tickell died, a gap none of the surviving accounts explain, so treat the 1730s planting date as informed tradition rather than settled fact. What survives is real regardless of who is right: a dark, formal walk of clipped yew running through a garden otherwise built for scientific display rather than sentiment, doing exactly what a memorial avenue is supposed to do, nearly three centuries on. Whether Joseph Addison ever actually visited Glasnevin is a question the garden's own historians admit they cannot answer, but his name has outlasted the argument regardless. The National Botanic Gardens are free to enter and open every day of the year except Christmas Day.",
@@ -142,8 +142,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Sources disagree on the chronology: Tickell is said to have planted the walk before his death in 1740, but the garden itself was not founded until 1795, and no source reconciles the two dates. Presented as tradition rather than fact.",
-      "location_precision": "approximate"
+      "notes": "Sources disagree on the chronology: Tickell is said to have planted the walk before his death in 1740, but the garden itself was not founded until 1795, and no source reconciles the two dates. Presented as tradition rather than fact. Pin tightened 2026-07-26 via GBIF's Heritage Trees of Ireland dataset (CC-BY 4.0, 2009 field GPS survey), which carries exactly one Taxus baccata record in the gardens; this is one specimen within the double row rather than a survey of the whole avenue, but a specific point inside the actual yew walk rather than the garden's general address. No open-licensed photo found tied specifically to this walk.",
+      "location_precision": "confirmed"
     },
     {
       "id": "dub_005",
@@ -178,14 +178,14 @@
     {
       "id": "dub_006",
       "name": "The Champion Planes of New Square",
-      "species": "London Plane (Platanus x hispanica)",
+      "species": "Oriental Plane (Platanus orientalis)",
       "age_estimate": "190 years",
       "age_min": 185,
       "age_max": 195,
       "location": {
         "address": "New Square, Trinity College Dublin, Dublin 2",
-        "latitude": 53.3444,
-        "longitude": -6.2544,
+        "latitude": 53.34448,
+        "longitude": -6.255075,
         "neighbourhood": "Trinity College, Dublin 2"
       },
       "story": "Two plane trees in New Square have outgrown almost everything else on Trinity's campus, and both went in around 1834, when the college was rebuilding this quadrangle. The larger of the pair has a girth over five metres, the widest trunk of any tree on college grounds by Trinity's own count. Students eating lunch on the grass beneath them are sitting under trees planted when Daniel O'Connell was a sitting MP at Westminster, decades before the Easter Rising and a full century before the Irish Free State existed. Trinity's own tree survey lists this pair among the oldest specimens left on the main campus, most of the older generation having since died or been felled, including a celebrated pair of Oregon maples in Library Square that came down between 2008 and shortly after, one suddenly and one to fungal disease. New Square sits behind the Museum Building, a short walk from the queue for the Book of Kells, and unlike that queue, it costs nothing and never has one.",
@@ -202,8 +202,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Photo viewed directly: shows two large, burred-trunk plane trees standing together in a campus quadrangle. That resolves the earlier open question (the caption alone didn't tie it to New Square rather than the campus's other notable plane, the Provost's Plane, dub_005): the Provost's Plane is a single tree, so a photographed pair can only be this entry. Approved.",
-      "location_precision": "approximate"
+      "notes": "Photo viewed directly: shows two large, burred-trunk plane trees standing together in a campus quadrangle. That resolves the earlier open question (the caption alone didn't tie it to New Square rather than the campus's other notable plane, the Provost's Plane, dub_005): the Provost's Plane is a single tree, so a photographed pair can only be this entry. Approved. Species corrected 2026-07-26 from London Plane to Oriental Plane: both the approved photo's own Commons filename ('Platanus_orientalis-Trinity_College_Dublin.jpg') and an independent field identification in GBIF's Heritage Trees of Ireland dataset (CC-BY 4.0, 2009 survey, two Platanus orientalis records 15m apart matching this exact pair) agree on the species, against the original ai_generated field. Pin tightened to the midpoint of those two GBIF-surveyed points.",
+      "location_precision": "confirmed"
     },
     {
       "id": "dub_007",
@@ -287,13 +287,13 @@
       "access": "Free, grounds open daily 10am-6pm, last entry 5pm",
       "transport": "Dublin Bus route 37 to Castleknock Gate",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://commons.wikimedia.org/wiki/File:20130526_Farmleigh_AcerPseudoplatanus_Cutler_P1470345.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Wendy Cutler, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "The '220 years' age and 'donkey field' location both trace back to a single repeated estate description rather than two independently verifiable sources; included per the single-source rule with the gap stated in the story itself.",
+      "notes": "The '220 years' age and 'donkey field' location both trace back to a single repeated estate description rather than two independently verifiable sources; included per the single-source rule with the gap stated in the story itself. Photo candidate found 2026-07-26: a CC BY-SA 2.0 Commons file captioned 'Acer pseudoplatanus (the large tree), at Farmleigh', the photographer's own parenthetical distinguishing it from other sycamores they shot on the same estate visit. A reasonable but not certain match to this specific named tree; left at found_needs_check rather than approved pending a view of the image or a source naming the Great Sycamore directly.",
       "location_precision": "approximate"
     },
     {
