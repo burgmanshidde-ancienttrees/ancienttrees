@@ -5,6 +5,15 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 Format, deliberately short:
 
 ```
+## 2026-07-27 — Session with Hidde: interim identity chosen, top-10 city trips settled, Japan queued, live analytics wired
+
+- **Design pass delivered in session** (the one LOG has carried as "waiting on Hidde"): three full direction boards, then six logo variants; Hidde chose Direction A ("Growth Rings": Gabarito as the single family, warmed paper/pine/moss palette, gold accent) with mark 3A, the broad painterly oak, explicitly as an interim identity ("ooit vernieuwen met een echte designer"). Applied to the generator: one type family everywhere (Instrument Serif, Plus Jakarta and Shantell Sans removed), emphasis via weight and colour, 3A in the top bar and as SVG favicon. Built, all contracts green, 511 pages. NOT yet pushed live: awaiting Hidde's explicit "live", the rebuilt dist sits local-only.
+- **Top 10 tree city trips of Europe** researched (3 agents + clustering analysis of all 33 live cities), walk-weighted at Hidde's direction, Europe-scoped; ranking and leads in CURATION.md. Palermo, Cadiz and Sintra approved as new city pages (targeted exception in CLAUDE.md rung 6).
+- **Japan wave queued** ahead of UK dense, gated on a pre-wave demand scan; grounds in GO_TO_MARKET.md, deliberately not built on week-one metrics after Hidde called that out.
+- **Daily data digest live end-to-end**: DATA.md, written 05:15 UTC daily. Search Console reads via OAuth (Hidde authorised in session after Google blocked service-account keys); Cloudflare section stays honestly zero because the domain never routed through Cloudflare (nameserver move attempted, DNSSEC/TransIP walls, parked). First real entry verified in CI.
+- **Money rule** replaced the €50 ceiling: no spending without Hidde's approval, no fixed ceiling otherwise, condition: start earning.
+- FOR HIDDE: one word, "live", ships the new identity. Everything else from today is already pushed.
+
 ## YYYY-MM-DD HH:MM — what it did in one line
 - What changed (files, pages, cities)
 - Why, if it was a judgement call
