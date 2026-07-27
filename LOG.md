@@ -30,6 +30,11 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Athens: a real wrong-location bug caught, Kaisariani Monastery's pin was 3.6km off
+
+- Caught while sanity-checking the rest of Athens' approximate pins right after the pass below, rather than moving straight to the next city. The Trees of Kaisariani Monastery (ath_010) was pinned nowhere near the actual monastery, off by roughly 3.6km. Three independent sources (Wikipedia's own coordinates, Nominatim, an individually-named OpenStreetMap building) agree within metres on the real position; moved the pin there. This is a "something published is wrong" fix, not depth polish: the old pin would have sent someone up the wrong side of Mount Hymettus. The story and transport directions were already correct, so this was a pure coordinate bug, not a research error.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Athens: 2 approximate pins resolved to confirmed, 2 photos found and viewed by eye
 
 - Visitors: 48 visits, 77 page views over 7 days, flat (21-26 July: 8, 9, 10, 7, 4, 9). No submissions (CSV still header row only).
