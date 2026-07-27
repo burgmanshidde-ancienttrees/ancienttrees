@@ -30,6 +30,15 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Malaga: 5 of 10 approximate pins resolved, its pin dimension untouched since original research
+
+- Continued after New York. Nearly every below-floor city had already had a same-day depth pass except Malaga's pins specifically (its photos had a dead-end pass today, but pins had never been worked at all since original research), and three of its ten trees sat on one shared garden-centroid coordinate, an obvious sign at least two were wrong.
+- OpenStreetMap turned out to carry individually species-tagged tree nodes inside La Concepcion garden and Parque de Malaga, the same technique that has paid off in several other cities this week. Fixed: the Hackberry of the Cypress Cottage (370m, an exact species match 8m from an independent geocode of the building it's named for), the Rare Cassia of Malaga Park (160m, a rare-species exact match), El Barrilito (confirmed via a fountain named after the tree's own nickname, no coordinate change needed), the Fig of the Picasso Gardens (55m, via a sculpture two sources date and place exactly), and the school avocado (6m, via its building footprint).
+- The Tallest Araucaria in the Province got a real but partial fix: no tree node exists for it, but the garden's own page places it beside a waterfall, of which the garden has two about 50m apart; pinned to their midpoint and kept honestly `approximate` rather than guessing which one, but it's no longer sharing an identical coordinate with two other trees.
+- Two stay genuinely unresolved (the Transplanted Olive, the Native Oak of Malaga Park): no source placed either more precisely than the garden/park already on file, and Andalucia's own regional singular-tree catalogue explicitly excludes cultivated garden specimens like the olive.
+- Malaga now at 5/10 approximate pins (from 10). Photos unchanged at 3/10.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — New York: the Clove Lakes Colossus pin corrected 1.5km via NYC's own open tree dataset
 
 - Visitors: 51 visits, 80 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 3), flat, in line with the week's pattern. No submissions (CSV still header row only). Nothing published found wrong; build was clean at the start.
