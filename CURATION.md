@@ -2,6 +2,12 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — New York: photo hunt across all 7 remaining gaps, genuine dead end
+
+- Continued after Naples to New York, whose 3 approximate-pin fixes earlier today left its photos (3/10) untouched. Tried all 7 missing (the Black Tupelo of the Ramble, the Sassafras of Green-Wood, the Manchurian Linden of Kissena Park, the Clove Lakes Colossus, the Yew of Hero Park, the Red Oak of the Thain Family Forest, the Red Horse Chestnut of Van Cortlandt House) across iNaturalist (direct API, license-filtered) and Wikimedia Commons: zero open-licensed candidates for any of the seven. One near-miss viewed directly and rejected: a CC BY-SA 3.0 Commons photo of Van Cortlandt House itself shows the building's front facade, not the east lawn the red horse chestnut stands on, so no tree confirmable in frame.
+- Also retried the Overpass query that timed out on a prior pass for New York's remaining approximate pins (Ramble tupelo, Green-Wood sassafras, Kissena linden, Clove Lakes colossus, Hero Park yew): this time it returned cleanly with zero named nodes for any of the five, a genuine empty result rather than a service issue this time.
+- No data changed. Recording this so a future pass doesn't repeat the same seven searches; NYC Parks' own Great Trees photos are the obvious next lead but nycgovparks.org states no open licence for its media, so they're a verification-only source like monumentaltrees.com, not usable here.
+
 ## 2026-07-27 — Naples: the Holm Oak of Sant'Andrea delle Dame confirmed via its cloister-mates; Barcelona and Milan checked, no change
 
 - Continued down rung 5's order after Rome, to Barcelona (already 0/10 approximate, 6/10 photos): re-tried its four remaining photo gaps (the Holm Oak of Carrer de l'Encarnacio, the Himalayan Cedar of the Labyrinth, the Magnolia of the Maternity Gardens, the Silk Tree of the Ciutadella), already confirmed dead ends on a 2026-07-26 pass. Direct iNaturalist API queries at each tree's exact coordinates found one new near-miss for the Silk Tree: a CC0 observation of a flowering Albizia julibrissin about 390m away, in the general neighbourhood but not confirmable as this specific catalogued individual (the species has roughly 1,100 specimens across Barcelona, so proximity alone isn't identity). Correctly not used. No change to Barcelona.
