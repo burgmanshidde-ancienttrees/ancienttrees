@@ -6,6 +6,20 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## The flywheel: users strengthen the content, designed 2026-07-27 with Hidde
+
+The moat that compounds daily: content can be copied, field signal cannot. Six signal types, his four plus the two the design surfaced: proof-of-life ("the tree still stands", our defence against the staleness that will otherwise rot 328 trees), worth-signal ("was the visit worth it"), corrections and suggestions (both live), **user photos** (the strongest one: the person who just checked in is standing at our biggest content gap with a camera; needs a clean licence grant and credit), and **season ground-truth** ("the ginkgo is turning NOW", which upgrades the radar from forecast to live report).
+
+The carrier is the post-check-in moment, in the app: location-verified, one screen, three taps (worth it? standing well? share a photo?). Verified presence is also the trust model: only people who provably stood there feed the worth-signal.
+
+Scale-honesty, why this works at five visitors a day: classic flywheels need mass, ours does not, because the night runs make every single signal valuable at n=1. One report is a research lead, verified against sources the same night. Phase one (now): signals as leads, machine as the processing plant. Phase two (app plus accounts): volume, thresholds, weights.
+
+The self-improving selection: every tree quietly accrues a field record (visits, worth-votes, condition pings). Ten stays ten, but persistent underperformers go to the bench: a run researches a replacement from the lead lists and swaps, with an honest note. One guard rail that is design law: votes inform, runs decide with context. A quiet cloister tree with few votes is not a bad tree, and mass taste must never vote away calm beauty in favour of instagram trees.
+
+Build order when the time comes: 1. the worth-it tap after web check-in (tiny, starts harvesting early); 2. the user-photo path with licence grant (attacks our weakest number directly); 3. the condition ping; 4. live season pings in the app.
+
+**Trigger:** items 1 to 3 buildable on web whenever Hidde says go; item 4 is the app. **Needs Hidde:** the licence text for user photos carries his project's name.
+
 ## Parked ideas, brainstormed but not validated (2026-07-26)
 
 From the functionality brainstorm, Hidde approved four verbs as the product (find, walk, collect, season; see CLAUDE.md). The rest of the list is parked here so it neither disappears nor sneaks into a build: themed cross-city route pages, personal records ("the oldest tree you ever stood at"), audio stories at the trunk, the multi-day trip planner. "Die andere weet ik niet," and unknown means not built.
