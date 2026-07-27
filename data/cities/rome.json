@@ -28,34 +28,37 @@
   "trees": [
     {
       "id": "rom_001",
-      "name": "The Quercia del Tasso",
-      "species": "Oak (Quercus sp.)",
-      "age_estimate": "Undocumented; local tradition claims up to 1000 years",
-      "age_min": 300,
-      "age_max": 420,
+      "name": "The Ginkgo of Villa Sciarra",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "120 years",
+      "age_min": 115,
+      "age_max": 130,
       "location": {
-        "address": "Rampa della Quercia, Gianicolo, 00165 Roma",
-        "latitude": 41.8959,
-        "longitude": 12.46095,
-        "neighbourhood": "Gianicolo, Trastevere"
+        "address": "Villa Sciarra, Viale Adolfo Leducq, 00153 Roma",
+        "latitude": 41.8825603,
+        "longitude": 12.4656457,
+        "neighbourhood": "Monteverde / Trastevere"
       },
-      "story": "Local tradition gives this oak a thousand years. No dendrologist has ever confirmed the number, so take it as legend, not fact. What is documented is the company it kept. Torquato Tasso, dying of tuberculosis in the convent of Sant'Onofrio next door, reportedly rested in its shade during his final weeks in 1595. Two centuries later Giacomo Leopardi came to sit under the same branches. In the 1600s, followers of the Roman priest Filippo Neri cut an open-air amphitheater into the slope beside it, still called the Anfiteatro Quercia del Tasso. Guglielmo Marconi favored the spot on his visits to the city. The tree's modern life has been rough: lightning split it in 1843, and in 2011 someone deliberately set it on fire. A 1929 fountain at its base carries a line from Tasso's epic poem Jerusalem Delivered. Rome's own city museum now describes what stands here as what remains of a monumental tree, an honest label for a tree that has survived a poet's death, a lightning strike and an arsonist, roughly in that order.",
+      "story": "Rome's most famous old trees are cedars and planes, planted by cardinals and popes on grand estates. This ginkgo belongs to a very different Roman: George Washington Wurts, an American diplomat who bought this hillside property in 1902 and spent the rest of his life filling it with plants gathered from wherever caught his interest, botany as a private obsession rather than a commission. He had the ginkgo planted in the early 1900s, one of the first established in the city, a species Europe had only known for about two centuries at that point, brought over from temple gardens in China where it had grown essentially unchanged since before the dinosaurs went extinct. Rome's own environment department now lists it among the city's roughly twenty official monumental trees, qualifying on three separate grounds at once: age and size, landscape value, and simple botanical rarity, since ginkgos remain genuinely uncommon in Roman parks even a century after Wurts planted his. The trunk has thickened to just over three metres around and the crown now reaches 25 metres, taller than most of the villa's own follies and fake ruins built around the same period. Wurts died in 1928 without seeing what came next: his widow, the American heiress Henrietta Tower Wurts, gave the whole seven and a half hectare estate to the Italian state in the early 1930s, on condition it stay a public park. Every November the tree does what ginkgos do everywhere, turning uniformly gold within days rather than fading gradually like its neighbours.",
       "verified_sources": [
-        "https://it.wikipedia.org/wiki/Quercia_del_Tasso",
-        "https://www.ilmessaggero.it/video/roma/gianicolo_quercia_del_tasso-8625806.html",
-        "https://www.museodiromaintrastevere.it/it/mostra-evento/la-quercia-del-tasso-la-storia-i-personaggi"
+        "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295",
+        "https://www.alberimonumentali.info/regioni/lazio/roma/ginkgo-di-villa-sciarra"
       ],
-      "access": "Free, open access, Gianicolo park",
-      "transport": "20 min walk up from Trastevere (Piazza Trilussa), or bus 115 to Gianicolo",
+      "access": "Free, open access, Villa Sciarra public park",
+      "transport": "15 min walk from Trastevere, or bus routes to Via Dandolo / Via Calandrelli",
+      "best_time": {
+        "months": [11],
+        "label": "November, when it turns uniformly gold within days"
+      },
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Oak_Tree_of_Torquato_Tasso_on_the_Rampa_della_Quercia%2C_Gianicolo_%E2%80%A2_Janiculum_Hill_%2846853511991%29.jpg",
-        "license": "CC BY 2.0",
-        "attribution": "Sonse, via Wikimedia Commons",
-        "status": "approved"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Exact botanical species never identified in any source found. Age is popular legend (up to 1000 years) with no scientific dating behind it; age_min/age_max here reflect a conservative documented-history floor, not the legend. Current physical condition after the 2011 arson (how much of the original tree survives) needs an on-the-ground check. Photo dated 2018, post-arson.",
-      "location_precision": "confirmed"
+      "notes": "Replaces The Quercia del Tasso on 2026-07-27: verified via Italian-language sources (ilgiornale.it's coverage of a 2025 exhibition at the Museo di Roma in Trastevere dedicated to the tree) that the oak on the Gianicolo is now explicitly described as 'secco, morto, corroso' (dry, dead, decayed), propped up inside a small wall, not the living tree the old entry's own sources had left ambiguous ('what remains of a monumental tree'). This is the same violation of Hidde's 'we doen niet aan dode bomen' rule (CLAUDE.md Step 1) as Queen Elizabeth's Oak and Stock im Eisen, found while sweeping Rome's suspects from the same list. Id rom_001 reused; a redirect for the old slug (quercia-del-tasso) is registered in scripts/build_site.py's RENAMED_TREE_SLUGS. This replacement is sourced to Rome's own municipal monumental-tree page and a dedicated registry-style page (alberimonumentali.info, used for verification of size/location only, not copied); the circa-1900s planting date and Wurts/Tower estate history are corroborated by independent general sources (Wikipedia's Villa Sciarra and Henrietta Tower articles, Walks in Rome) but not a single primary planting record, so flagged. No open-licensed photo found; one Flickr photo of this exact tree exists but is marked all-rights-reserved, not usable.",
+      "location_precision": "approximate"
     },
     {
       "id": "rom_002",
