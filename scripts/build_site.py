@@ -2355,7 +2355,19 @@ def redirect_stub(target_rel, canonical, title):
     )
 
 
-def build_redirects(published, pages):
+# A tree that gets renamed (its id kept, per the dead-tree-replacement rule in
+# CLAUDE.md Step 1) changes URL, since tree slugs are derived from the name.
+# Entries here keep the old, possibly-indexed URL resolving. Add one whenever
+# a tree's name changes: (city_slug, old_tree_slug, tree_id).
+RENAMED_TREE_SLUGS = [
+    ("london", "queen-elizabeths-oak", "lon_005"),      # -> Sweet Chestnut of Greenwich Park, 2026-07-27
+    ("vienna", "stock-im-eisen", "vie_002"),             # -> Ginkgo of the Schubert Monument, 2026-07-27
+    ("barcelona", "plane-trees-of-la-rambla", "bcn_008"),  # -> Silk Tree of the Ciutadella, 2026-07-26 (never got a redirect until now)
+    ("dublin", "sculpted-cypress", "dub_007"),           # -> Many-Trunked Holm Oak of St Anne's Park, 2026-07-27
+]
+
+
+def build_redirects(published, pages, tree_slugs=None):
     """Old /cities/[slug]/ URLs redirect to the contract URLs, and
     /[slug]/ with a trailing slash redirects to the canonical /[slug]."""
     for p in published:
@@ -2370,6 +2382,14 @@ def build_redirects(published, pages):
     pages.append(("species/index.html",
                   redirect_stub("../species", f"{BASE_URL}/species",
                                 "Moved: Species"), None))
+    if tree_slugs:
+        for city_slug, old_slug, tree_id in RENAMED_TREE_SLUGS:
+            new_slug = tree_slugs.get(tree_id)
+            if not new_slug or new_slug == old_slug:
+                continue
+            pages.append((f"{city_slug}/{old_slug}.html",
+                          redirect_stub(new_slug, f"{BASE_URL}/{city_slug}/{new_slug}",
+                                        "Moved: this tree"), None))
 
 
 def validate_internal_links(pages):
@@ -2665,7 +2685,7 @@ def main():
     build_contribute_page(published, pages)
     build_in_season_page(renderable, tree_slugs, pages)
     build_homepage(published, upcoming, public_collections, pages)
-    build_redirects(published, pages)
+    build_redirects(published, pages, tree_slugs)
     validate_internal_links(pages)
 
     if ERRORS:

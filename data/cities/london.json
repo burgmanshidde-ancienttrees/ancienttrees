@@ -142,30 +142,36 @@
     },
     {
       "id": "lon_005",
-      "name": "Queen Elizabeth's Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "800+ years",
-      "age_min": 700,
-      "age_max": 900,
-      "label": "Fallen monument",
+      "name": "The Sweet Chestnut of Greenwich Park",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "365 years",
+      "age_min": 355,
+      "age_max": 375,
       "location": {
-        "address": "Near Maze Hill Gate, Lover's Walk, Greenwich Park, London SE10",
-        "latitude": 51.4778,
-        "longitude": 0.0039,
+        "address": "Greenwich Park, London SE10",
+        "latitude": 51.476729,
+        "longitude": 0.007199,
         "neighbourhood": "Greenwich"
       },
-      "story": "This tree fell during a storm in 1991 after standing since the 12th century. Its hollowed carcass still lies where it fell. Henry VIII was born in Greenwich Palace and is said to have danced around this oak with Anne Boleyn while courting. Their daughter Elizabeth I, also born here, reportedly picnicked under its canopy, giving the tree her name. The hollow trunk was allegedly used as a lock-up for troublemakers. It is no longer alive, but its remains are worth visiting.",
-      "verified_sources": [],
+      "story": "Charles II wanted Versailles and settled for Greenwich instead. After taking the throne in 1660, he ordered grand formal avenues cut through the old royal hunting park, hundreds of sweet chestnuts marched up the hill toward the future Royal Observatory in straight French rows. Most of that planting is gone, lost to storms, disease and three and a half centuries of ordinary attrition. This chestnut is one of roughly fifty survivors, and the one among them recognised individually as a Great Tree of London. Its trunk has thickened into something closer to architecture than plant, and it has been pollarded more than once, a pruning technique that resets a tree's internal clock and is a large part of why it is still standing while so many of its neighbours from the same planting are not. Its slowly rotting heartwood, hollow in places, now shelters beetles and fungi that need old deadwood and nowhere else. Every October it drops a carpet of spiny green cases across the grass, food for the park's squirrels and for anyone willing to peel one open. It has stood through the Restoration, two world wars and the digging of anti-aircraft gun pits nearby. Unlike the oak that once stood a short walk from here, it has never stopped growing.",
+      "verified_sources": [
+        "https://www.royalparks.org.uk/get-in-touch/media-centre/news-press-releases/vote-greenwich-parks-shortlisted-tree-year-2023",
+        "https://www.graftingardeners.co.uk/greatest-trees-london/"
+      ],
       "access": "Free, open parkland, Greenwich Park",
-      "transport": "Cutty Sark DLR station, 15 min walk",
-      "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Queen_Elizabeth%27s_Oak_Greenwich_Park_6386.JPG",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Clem Rutter, Rochester, Kent, via Wikimedia Commons",
-        "status": "approved"
+      "transport": "10 min walk from Maze Hill station, into Greenwich Park",
+      "best_time": {
+        "months": [10],
+        "label": "October, when its spiny nut cases carpet the ground beneath it"
       },
-      "curation_status": "ai_generated",
-      "notes": "Tree is dead and recumbent since 1991. Ruins only. Labelled 'Fallen monument' on the city page so visitors know what to expect. Source URLs need backfilling.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Greenwich_Park_Sweet_Chestnut_%281%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Replaces the dead/fallen Queen Elizabeth's Oak on 2026-07-27 per Hidde's 'we doen niet aan dode bomen' rule (CLAUDE.md Step 1); id lon_005 reused so the existing URL keeps resolving, same precedent as Barcelona's bcn_008 swap. Age is estimated from the well-documented 1660-64 planting date of Greenwich Park's Grand Plan chestnut avenue (Royal Parks; graftingardeners.co.uk), not from a record specific to this individual tree, so flagged. Its identity as this avenue's officially recognised Great Tree of London rests on the source photo's own caption ('one of the Great Trees of London') rather than a cross-checked official list. Coordinates taken directly from that photo's own Commons geolocation data, added by the photographer (Hopefully Acceptable Username, who supplied several of London's other approved photos). Photo not yet viewed directly this run (outbound file fetch was permission-gated with no user present to approve); a future pass with fetch access should view it before moving status beyond found_needs_check.",
       "location_precision": "confirmed"
     },
     {
