@@ -42,6 +42,14 @@ Everything else that used to sit here is done or recorded: the submission form i
 - FOR HIDDE: four collection drafts are waiting on your yes/no, two brand new (oaks, ginkgos) and two that turn out to have been public without you ever approving them (most remarkable trees; 400+ years). Read CURATION.md's latest entries; approving is exactly as cheap as it's always been meant to be, a status flip.
 - Site rebuilt, all contracts validated, pushed.
 
+## 2026-07-27 — City pages now link species pages where 3+ trees share one, PRODUCT_TODO item 6 (half)
+
+- Contract F already had every tree page link its own species page; the other half of item 6, city pages linking a species page when 3+ of their own trees share it, was never built. Added it to `build_city_page`: counts species per city, links any with 3+ members and a qualifying species page, in a new "Species on this list" line above the collection link.
+- Five cities cleared the 3+ bar with a species page already published: Amsterdam (Caucasian Wingnut), Berlin and Munich (Pedunculate Oak), London and Prague (London Plane). Verified by grepping the built HTML directly rather than assuming: exactly these five city pages now carry the link, and all five hrefs resolve (`validate_internal_links` passed).
+- Question pages' and city pages' collection link now falls back to a generic `/collections` link when no public collection exists yet (both currently in that state, see the entry above); this was necessary to keep question pages above their 3-link contract minimum once the collection link could no longer be assumed present.
+- Left undone for a future pass: item 6's other half, "question pages should link a relevant collection where one exists," is already true when one exists, but none currently do (all four are drafts pending your review above).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Seasonality completion pass: 10 trees get an honest `best_time`, PRODUCT_TODO item 5 done
 
 - Continued the product lane after the collections/gating work above. Wrote a count script per PRODUCT_TODO item 5's own done-when: every ginkgo, wisteria, wingnut, horse chestnut and magnolia should carry `best_time`; no evergreen should. It found 10 showpiece-species trees across 9 cities missing the field (mostly ginkgos that never got one when their siblings elsewhere did) and 0 real evergreen violations (the script's first pass flagged 2 bald cypresses, Milan's Il Sacerdote and Seville's Cypress of the Glorieta de Bécquer, but Taxodium distichum is genuinely deciduous, one of the few conifers that drops its needles, so their existing autumn best_time entries are correct, not a bug).

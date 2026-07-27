@@ -1604,7 +1604,8 @@ def build_question_page(city_entry, collections, pages):
 
 # ---------------------------------------------------------------- city pages
 
-def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
+def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), species_pages=None):
+    species_pages = species_pages or {}
     city_data = entry["data"]
     city = city_data["city"]
     country = city_data["country"]
@@ -1683,6 +1684,25 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
         f'<dt>More cities</dt><dd>{others_html}</dd>' if others_html else ""
     )
 
+    # Species page pass (PRODUCT_TODO item 6): a city page links onward to a
+    # species page when 3+ of its own trees share that species, the same
+    # threshold that gates the species page's existence (Contract F).
+    species_here = {}
+    for t in trees:
+        species_here.setdefault(species_common(t), 0)
+        species_here[species_common(t)] += 1
+    city_species_links = [
+        (common, species_pages[common]) for common, n in species_here.items()
+        if n >= 3 and common in species_pages
+    ]
+    species_links_html = (
+        '<dt>Species on this list</dt><dd>' + " &middot; ".join(
+            f'<a href="species/{sp_slug}">Every {esc(common.lower())} on the site</a>'
+            for common, sp_slug in city_species_links
+        ) + '</dd>'
+        if city_species_links else ""
+    )
+
     panel_foot = f"""
     <div class="panel-foot">
       <p class="subtle-suggest">Know an ancient tree in {esc(city)} we missed? <a href="{submit_link('tree')}">Suggest it</a>.</p>
@@ -1694,6 +1714,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
         {faq_html}
         <dt>More on the oldest tree</dt>
         <dd><a href="{slug}/oldest-tree">What is the oldest tree in {esc(city)}?</a> The full answer, with map and directions.</dd>
+        {species_links_html}
         {coll_link_html}
         {more_cities_html}
       </dl>
@@ -1788,7 +1809,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
 """
     scripts = city_map_script(markers, (avg_lat, avg_lng), route)
 
-    link_count = len(trees) + 1 + 1 + len(other_cities)
+    link_count = len(trees) + 1 + 1 + len(other_cities) + len(city_species_links)
     check_links(canonical, link_count, 12)
 
     page = render_page(title, description, canonical, body, head_extra, scripts,
@@ -2607,7 +2628,7 @@ def main():
             for e in renderable if e["slug"] != entry["slug"]
         ]
         build_city_gpx(entry, trees, pages)
-        result = build_city_page(entry, tree_slugs, public_collections, pages, other_cities)
+        result = build_city_page(entry, tree_slugs, public_collections, pages, other_cities, species_pages)
         if result:
             published.append(result)
 
