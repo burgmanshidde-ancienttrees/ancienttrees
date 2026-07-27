@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "trees",
+      "name": "design-boards",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/8e98b3aa-7ff3-4db7-8a97-8f5fba609482/scratchpad/serve.py"],
-      "port": 8899
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/bdcaec56-e5dd-4bae-abf9-70e07026c1d2/scratchpad/serve.py"],
+      "port": 8971
     }
   ]
 }

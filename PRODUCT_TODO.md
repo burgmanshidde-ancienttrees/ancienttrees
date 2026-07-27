@@ -25,8 +25,8 @@ Collections are the highest-leverage SEO pages we have (broad queries, zero new 
 
 Draft up to two per pass from this slate, best query-fit first: Ancient oaks of Europe; Trees older than 1000 years; The ginkgos worth a November trip; Europe's most remarkable yews; Trees that outlived their city; The great planes of Europe; Wisteria and blossom worth a spring trip; The oldest tree in every country we map. Ground every entry in existing verified data only. One future slate item, recorded 2026-07-26 when Hidde asked "why not the US": Live Oaks of the American South, unlockable once New Orleans (queued) and ideally Savannah or Charleston are built. The US already consumes our European pages (third country in week-one Search Console without one promoted US city); full US city coverage stays behind Europe because ancient is thin there, its cities are car cities, and its SERPs are the hardest, but the South's live oaks are the honest exception.
 
-Contract D holds: drafts ship as `needs_curation`, announced under FOR HIDDE in LOG.md, nothing linked publicly until Hidde approves. His approval is deliberately cheap: read the draft, say yes or no.
-**Done when (per pass):** up to two new collection JSONs validate and build unlinked; the FOR HIDDE line exists; every listed tree exists in the data with the claimed property (age, species) checkable by script.
+Since blueprint v1.3 (2026-07-27) collections publish without owner approval, under the research standard: every entry script-checked against the tree data, superlatives per hard rule 8, voice per TONE_OF_VOICE.md. Announce each new collection in LOG.md like any other work.
+**Done when (per pass):** up to two new collection JSONs validate, build and are linked; a check script confirms every listed tree exists with the claimed property (age, species); the LOG.md entry exists.
 
 ### 5. Seasonality completion pass
 Every qualifying tree across all 33 cities gets an honest `best_time` (species with a real peak only; evergreens get none, per Step 3's rules).
