@@ -1,0 +1,49 @@
+{
+  "slug": "europes-most-remarkable-yews",
+  "title": "Europe's Most Remarkable Yews",
+  "status": "published",
+  "meta_description": "Eight ancient yews across seven European cities, from a London yew older than the Roman city to a three-trunked Madrid specimen fused into one crown.",
+  "intro": "A yew does not announce its age the way a wide-crowned oak does: the trunk hollows out from the inside, so the tree that looks modest from across a churchyard can be the oldest living thing for miles. These eight, across seven cities, range from a London yew that predates the Roman founding of the city to a Madrid specimen still under two centuries old but split into three fused trunks wide enough to need three separate girth measurements. Several stand guard at entrances, doorways and castle gates, a role yews have played in European gardens for centuries longer than most of the buildings beside them. Every entry is publicly accessible, every coordinate verified. Start with the oldest living thing in London, already ancient when the Romans arrived.",
+  "entries": [
+    {
+      "city_slug": "london",
+      "tree_id": "lon_001",
+      "note": "The oldest entry by a wide margin: estimates run from 1,000 to 2,000 years, and even the conservative end predates the Roman founding of Londinium. The 13th century church built beside it is over a millennium younger than the tree."
+    },
+    {
+      "city_slug": "dublin",
+      "tree_id": "dub_003",
+      "note": "Local tradition puts Dean's Tree at over 700 years; a cautious girth-only estimate still lands past 500. Either figure makes it older than the house whose garden it now shares, built in 1710, and very likely the oldest living thing in County Dublin."
+    },
+    {
+      "city_slug": "edinburgh",
+      "tree_id": "edi_001",
+      "note": "Two yews have guarded Craigmillar Castle's courtyard entrance since before anyone recorded their planting. Historic Environment Scotland dates them conservatively to at least 300 years; local tradition claims considerably more."
+    },
+    {
+      "city_slug": "naples",
+      "tree_id": "nap_004",
+      "note": "While Capodimonte's other trees arrived as Bourbon-era imports from China, Mexico and Australia, this yew is a native European species, documented in the park's own records since 1753."
+    },
+    {
+      "city_slug": "florence",
+      "tree_id": "flo_001",
+      "note": "Florence's oldest verified tree, planted in 1720 by Pier Antonio Micheli while he ran the Orto Botanico for Cosimo III de' Medici. It has now outlived the Grand Duchy that employed him by two centuries."
+    },
+    {
+      "city_slug": "dublin",
+      "tree_id": "dub_004",
+      "note": "A double row of yews in Ireland's national botanic garden, said to predate the garden itself by roughly sixty years, planted by the poet Thomas Tickell in memory of his friend Joseph Addison."
+    },
+    {
+      "city_slug": "verona",
+      "tree_id": "ver_006",
+      "note": "Behind Giardino Giusti's formal cypress avenue, a wilder evergreen wood of yew and laurel leads down to a sixteenth-century grotto, planted to feel like a natural grove rather than a designed garden."
+    },
+    {
+      "city_slug": "madrid",
+      "tree_id": "mad_003",
+      "note": "Rather than one trunk, this yew splits into three, each thick enough to measure separately, fused into a single crown 18 metres wide beside the Palacio de Velazquez, a red-brick exhibition hall built in 1883."
+    }
+  ]
+}
