@@ -30,6 +30,15 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Athens: 2 approximate pins resolved to confirmed, 2 photos found and viewed by eye
+
+- Visitors: 48 visits, 77 page views over 7 days, flat (21-26 July: 8, 9, 10, 7, 4, 9). No submissions (CSV still header row only).
+- Continued rung 5's marquee-Europe order. Amsterdam/Lisbon/Rome/Barcelona (photos only) and Istanbul (both) have each had many exhaustive dead-end passes today already; moved instead to Athens, which had only ever had a photo-only pass, its 10/10 approximate pins never actually attempted.
+- Found real, previously untried ground: OpenStreetMap carries individually named nodes for two of Athens' single-specimen olives, the Sacred Olive of the Acropolis ("Holy olive tree", tagged `sacred_tree`) and the Olive Tree of Pisistratus ("Ελιά Πεισίστρατου", its own Greek name, tagged `tourism=attraction`). Moved both pins to confirmed (90m and 60m respectively), and could view Commons photos for both by eye this session: the Acropolis olive's photo confirmed the pin and also caught a small standing error, the story said "north side" of the Erechtheion when the tree actually stands in the Pandroseion on the temple's west side, now corrected. The Pisistratus olive's photo shows the tree's own on-site sign legible in frame, an unambiguous match, and got approved as a new photo.
+- Also approved a public-domain courtyard photo for the Trees of Kaisariani Monastery (ensemble entry). Three other photo/pin gaps tried hard and stayed genuine dead ends (Plato's Academy's regrowth olive, the Transplanted Olive, the Holm Oak; full detail in CURATION.md, including why one tempting Plato's Academy photo was correctly rejected for showing the site rather than the specific tree).
+- Athens now at 7/10 photos (from 5) and 8/10 approximate pins (from 10).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Dublin: a second pin corrected, the Provost's Plane moved to Trinity's own stated address
 
 - Continued straight on from the Sculpted Cypress fix below with the same "does a real named place match the story's own address" check on Dublin's other approximate pins. Trinity College's own published page states the Provost's Plane stands in "the Provost's Courtyard at No. 1 Grafton Street," and OpenStreetMap has the Provost's House building individually named at exactly that address. Moved the pin about 260m from a loose campus-area guess to the building itself, kept `approximate` since the tree is in the walled courtyard behind it, not at the front door.

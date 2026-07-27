@@ -35,12 +35,12 @@
       "age_max": 110,
       "label": "Continuously renewed",
       "location": {
-        "address": "Acropolis of Athens, north side near the Erechtheion, Athens 10555",
-        "latitude": 37.9715,
-        "longitude": 23.7255,
+        "address": "The Pandroseion, west side of the Erechtheion, Acropolis of Athens, Athens 10555",
+        "latitude": 37.9720628,
+        "longitude": 23.7263073,
         "neighbourhood": "Acropolis"
       },
-      "story": "The olive tree beside the Erechtheion has died and returned at least twice, and both times the same legend gets the credit. Herodotus wrote that when Xerxes' Persian army burned the Acropolis in 480 BC, the sacred olive Athena was said to have grown in her contest with Poseidon went up with it, only to sprout a new shoot a cubit high the very next day. The tree standing here now is a second resurrection: German occupying forces damaged the earlier specimen during the Second World War, and sources disagree on exactly when its replacement went in, some say 1917, before that war even started, others say 1952, after it. What both agree on is the point of the story rather than the paperwork: someone has kept an olive growing on this exact spot for as long as Athens has kept records, using cuttings from the previous tree rather than starting over with something unrelated. The Erechtheion behind it, an asymmetrical marble temple finished around 406 BC to house the Acropolis's holiest relics, has needed far more restoration than the tree ever has. Entry is included in the standard Acropolis ticket, and the olive stands on the north side, in plain view from the temple's own porch.",
+      "story": "The olive tree beside the Erechtheion has died and returned at least twice, and both times the same legend gets the credit. Herodotus wrote that when Xerxes' Persian army burned the Acropolis in 480 BC, the sacred olive Athena was said to have grown in her contest with Poseidon went up with it, only to sprout a new shoot a cubit high the very next day. The tree standing here now is a second resurrection: German occupying forces damaged the earlier specimen during the Second World War, and sources disagree on exactly when its replacement went in, some say 1917, before that war even started, others say 1952, after it. What both agree on is the point of the story rather than the paperwork: someone has kept an olive growing on this exact spot for as long as Athens has kept records, using cuttings from the previous tree rather than starting over with something unrelated. The Erechtheion behind it, an asymmetrical marble temple finished around 406 BC to house the Acropolis's holiest relics, has needed far more restoration than the tree ever has. Entry is included in the standard Acropolis ticket, and the olive stands walled into the Pandroseion, the small sanctuary against the temple's west side.",
       "verified_sources": [
         "https://greekcitytimes.com/2021/06/27/olive-tree-acropolis/",
         "https://www.oliveoil.com/the-sacred-olive-tree-at-the-acropolis-of-athens-a-living-memorial/"
@@ -48,8 +48,8 @@
       "access": "Paid entry, standard Acropolis of Athens ticket",
       "transport": "Acropoli metro station (Line 2), 5 min walk, or Acropolis entrance on Dionysiou Areopagitou",
       "curation_status": "flagged",
-      "notes": "Replanting date genuinely disputed between sources (1917 vs. 1952); presented as a range rather than a single confident figure. Age fields describe the physical wood standing today, not the mythologised 2,500-year lineage, which is stated as legend in the story text rather than as the tree's verified age. Photo fetched and viewed directly: the olive tree growing hard against the Erechtheion's wall, matching the story exactly.",
-      "location_precision": "approximate",
+      "notes": "Replanting date genuinely disputed between sources (1917 vs. 1952); presented as a range rather than a single confident figure. Age fields describe the physical wood standing today, not the mythologised 2,500-year lineage, which is stated as legend in the story text rather than as the tree's verified age. Photo fetched and viewed directly: the olive tree growing hard against the Erechtheion's wall, matching the story exactly. Pin corrected 2026-07-27 via an OpenStreetMap node individually named \"Holy olive tree\"/\"Heiliger Olivenbaum\", tagged place_of_worship=sacred_tree and linking a Wikimedia Commons photo (viewed directly, confirms the same walled olive against the Erechtheion) captioned \"Pandroseion sacred-olive-tree\"; moved about 90m and corrected \"north side\" to the Pandroseion on the temple's west side, which sources agree is the tree's actual position.",
+      "location_precision": "confirmed",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/The_olive_tree_on_the_Acropolis_of_Athens%2C_28_April_2021.jpg",
         "license": "CC BY-SA 2.0",
@@ -66,8 +66,8 @@
       "age_max": 2500,
       "location": {
         "address": "Small park behind the Church of Agioi Anargyroi, Leoforos Dimokratias 50, Agioi Anargyroi 13561",
-        "latitude": 38.0267,
-        "longitude": 23.7183,
+        "latitude": 38.0265016,
+        "longitude": 23.7189374,
         "neighbourhood": "Agioi Anargyroi, western Athens"
       },
       "story": "A tree in a pocket park behind a suburban church carries a claim that would make it older than the Parthenon: officially attested by the Hellenic Archaeological Society in 1919 at more than 2,500 years, and popularly billed since as the oldest living olive tree on Earth. Modern olive dating complicates that considerably. Olive trunks rot hollow from the inside as they age, taking the innermost, oldest rings with them, and radiocarbon studies of other headline-grabbing old Mediterranean olives have repeatedly found real ages closer to three or four hundred years once properly tested. No such study has been published for this specimen, so its 1919 figure rests on early 20th century measurement methods rather than anything a lab would confirm today. What isn't in dispute is the name behind it: Pisistratus, the 6th century BC tyrant of Athens, is credited with the wave of olive planting that turned Attica into the region's defining olive economy, and this suburb sits on what was once part of that grove. Part of the trunk was cut for firewood during the wartime occupation of the 1940s, and it grew back regardless. It is now a protected natural monument, free to visit, standing in a small park behind the church that gives the area its name.",
@@ -78,13 +78,13 @@
       "access": "Free, public park",
       "transport": "Agioi Anargyroi railway station (Piraeus-Platy suburban line), short walk",
       "curation_status": "flagged",
-      "notes": "The '2,500 years, oldest olive on Earth' claim traces to a 1919 Hellenic Archaeological Society attestation, not a modern radiocarbon or dendrochronological study; softened per hard rule 8 given that scientific dating of comparable ancient olives generally yields far lower ages. Age range given as 300-2,500 years to honestly span the traditional figure and the scientifically plausible low end, rather than asserting either.",
-      "location_precision": "approximate",
+      "notes": "The '2,500 years, oldest olive on Earth' claim traces to a 1919 Hellenic Archaeological Society attestation, not a modern radiocarbon or dendrochronological study; softened per hard rule 8 given that scientific dating of comparable ancient olives generally yields far lower ages. Age range given as 300-2,500 years to honestly span the traditional figure and the scientifically plausible low end, rather than asserting either. Pin corrected 2026-07-27 via an OpenStreetMap node individually named \"Ελιά Πεισίστρατου\" (Olive Tree of Pisistratus, exact Greek name) tagged tourism=attraction; moved about 60m. Photo fetched and viewed directly: the tree's own on-site sign, reading \"ΕΛΙΑ ΠΕΙΣΙΣΤΡΑΤΟΥ / OLIVE TREE OF PEISISTRATOS, Natural & Cultural Heritage Monument\", visible in frame.",
+      "location_precision": "confirmed",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/%CE%95%CE%9B%CE%99%CE%91_%CE%A0%CE%95%CE%99%CE%A3%CE%99%CE%A3%CE%A4%CE%A1%CE%91%CE%A4%CE%9F%CE%A5.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "ELENITSA1976, via Wikimedia Commons",
+        "status": "approved"
       }
     },
     {
@@ -326,13 +326,13 @@
       "access": "Paid entry, small fee",
       "transport": "Bus from Kaisariani or Ethniki Amyna metro station (Line 3), then uphill walk",
       "curation_status": "flagged",
-      "notes": "Ensemble entry: the monastery's own history (11th-12th century church, sacred spring since antiquity) is well documented, but no individual tree in its courtyard has a published age. Age range is a wide, honest estimate rather than a measurement.",
+      "notes": "Ensemble entry: the monastery's own history (11th-12th century church, sacred spring since antiquity) is well documented, but no individual tree in its courtyard has a published age. Age range is a wide, honest estimate rather than a measurement. Photo fetched and viewed directly 2026-07-27: the monastery's walled courtyard with tall cypresses and an overhanging pine, matching the described setting.",
       "location_precision": "approximate",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Kaisariani_Moni_9.jpg",
+        "license": "Public domain",
+        "attribution": "Dimkoa, via Wikimedia Commons",
+        "status": "approved"
       }
     }
   ]
