@@ -51,13 +51,13 @@
         "label": "October into November, when its needles turn rust orange before falling"
       },
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Cipresso_calvo_a_primavera%2C_dettaglio.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Elbalabiot, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "ai_generated",
-      "notes": "Age corroborated within a consistent range by a second, independent source (josway.it gives 150-200 years); no real dispute, RAMI's 156-year figure used as the point estimate.",
+      "notes": "Age corroborated within a consistent range by a second, independent source (josway.it gives 150-200 years); no real dispute, RAMI's 156-year figure used as the point estimate. Photo geotagged within about 15m of this entry's own coordinates and captioned 'Giardini Indro Montanelli', but the story itself notes other bald cypresses share this stretch of water, so the close-up cannot be confirmed as the specific tallest/widest specimen (Il Sacerdote) rather than a neighbour; held at found_needs_check rather than approved, and this session's tools could not view the image to check by eye.",
       "location_precision": "confirmed"
     },
     {
@@ -145,13 +145,13 @@
         "label": "November, when its fan-shaped leaves turn uniform gold and drop within days"
       },
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/518184323/medium.jpg",
+        "license": "CC BY",
+        "attribution": "Codrin Bucur, via iNaturalist",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Age genuinely disputed between two calculation methods: RAMI's registry gives 235 years from growth data, while the garden's own 250th-anniversary material (2026) implies a 251-year planting-date count from 1775. Presented as a range rather than asserting either. Two Commons garden photos were checked (Brera Botanical Garden - 4.jpg, Orto botanico Brera a Milano 319.jpg) and rejected: neither caption identifies a ginkgo specifically among the garden's roughly 300 plant beds.",
+      "notes": "Age genuinely disputed between two calculation methods: RAMI's registry gives 235 years from growth data, while the garden's own 250th-anniversary material (2026) implies a 251-year planting-date count from 1775. Presented as a range rather than asserting either. Two Commons garden photos were checked (Brera Botanical Garden - 4.jpg, Orto botanico Brera a Milano 319.jpg) and rejected: neither caption identifies a ginkgo specifically among the garden's roughly 300 plant beds. A CC BY iNaturalist observation (obs 288159360, Codrin Bucur, June 2025) is geotagged within a few metres of this entry's own coordinates, a strong match; held at found_needs_check since this session's tools could not view the image directly.",
       "location_precision": "confirmed"
     },
     {

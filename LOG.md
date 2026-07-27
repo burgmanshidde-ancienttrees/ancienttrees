@@ -30,6 +30,13 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Milan: 2 photo candidates found, pending a visual check a future run should finish
+
+- Continued rung 5's oldest-first order after Lyon. Milan already met the pin-precision bar (2/10 approximate) but sat at 5/10 photos, needing 3 more.
+- Found two strong candidates, both geotagged within metres of this project's own coordinates: a CC BY-SA Commons close-up of a bald cypress at Giardini Indro Montanelli (Il Sacerdote, mil_001) and a CC BY iNaturalist photo at the Orto Botanico di Brera (the ginkgo pair, mil_004). Both held at `found_needs_check` rather than approved: this session's tools couldn't open the image files to view them directly, and the cypress especially needs an eyes-on check since several cypresses share that stretch of water and the close-up doesn't itself prove it's the tallest, named one.
+- Two remaining gaps (the Trotter oak, the Madonnina paulownia) stayed genuine dead ends, consistent with their access-restricted or self-seeded nature already on record.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Lyon: the Pin de Bunge's pin corrected ~300m via a newly-found OpenStreetMap arboretum inventory
 
 - Visitors: 48 visits, 77 page views over 7 days (21-26 July: 8, 9, 10, 7, 4, 9), flat. No submissions (CSV still header row only).
