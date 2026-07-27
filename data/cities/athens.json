@@ -314,8 +314,8 @@
       "age_max": 200,
       "location": {
         "address": "Kaisariani Monastery, Ymittos, Athens 16121",
-        "latitude": 37.9683,
-        "longitude": 23.7583,
+        "latitude": 37.9607776,
+        "longitude": 23.7984918,
         "neighbourhood": "Kaisariani, Mount Hymettus"
       },
       "story": "A monastery on Mount Hymettus has drawn people to the same spring for over two thousand years, long before the Byzantine monks who gave Kaisariani its name and its 11th or 12th century church ever arrived. Ancient Athenians already regarded this water, cold and constant even in summer, as sacred and medicinal, and later residents believed it cured infertility, a reputation strong enough that the site is said to have kept the goodwill of both Christian and Muslim neighbours specifically because everyone valued the spring it protected. The monastery itself sits inside a walled courtyard shaded by tall cypress and plane trees, planted and replaced across the site's long working life as a religious community, so no single tree here can be dated against the monastery's own documented history, only estimated by size at anywhere from decades to a couple of centuries old. What the trees frame is the more reliably dated part: a church built over the remains of a Roman-era temple, Byzantine frescoes added in 1682, and stonework that hosted the Byzantine philosopher Gemistus Plethon among its scholars. The walk in passes gnarled olives on the lower slopes and the monastery's own ruined watermill. Entry costs a small fee, a rare paid stop on an otherwise free hillside walk.",
@@ -326,7 +326,7 @@
       "access": "Paid entry, small fee",
       "transport": "Bus from Kaisariani or Ethniki Amyna metro station (Line 3), then uphill walk",
       "curation_status": "flagged",
-      "notes": "Ensemble entry: the monastery's own history (11th-12th century church, sacred spring since antiquity) is well documented, but no individual tree in its courtyard has a published age. Age range is a wide, honest estimate rather than a measurement. Photo fetched and viewed directly 2026-07-27: the monastery's walled courtyard with tall cypresses and an overhanging pine, matching the described setting.",
+      "notes": "Ensemble entry: the monastery's own history (11th-12th century church, sacred spring since antiquity) is well documented, but no individual tree in its courtyard has a published age. Age range is a wide, honest estimate rather than a measurement. Photo fetched and viewed directly 2026-07-27: the monastery's walled courtyard with tall cypresses and an overhanging pine, matching the described setting. Pin was genuinely wrong, not just approximate: the stored coordinates (37.9683, 23.7583) sat about 3.6km from the actual monastery. Corrected 2026-07-27 to the monastery building itself, cross-checked against three independent sources that all agree within metres (English Wikipedia's infobox coordinates, Nominatim's geocode of \"Kaisariani Monastery,\" and an OpenStreetMap way individually named \"Kaisariani Monastery\"/\"Μονή Καισαριανής\"). Kept `approximate` since this locates the monastery building, not a surveyed position for any specific tree in its courtyard.",
       "location_precision": "approximate",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Kaisariani_Moni_9.jpg",

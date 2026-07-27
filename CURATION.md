@@ -2,6 +2,12 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Athens: Kaisariani Monastery's pin was wrong by 3.6km, not just approximate; fixed
+
+- Found immediately after committing the pass below, while sanity-checking the remaining approximate pins rather than moving straight to a new city: the Trees of Kaisariani Monastery (ath_010) was pinned at 37.9683, 23.7583, roughly 3.6km from the actual monastery. Cross-checked three independent sources that all agree within metres of each other: English Wikipedia's own infobox coordinates (37.96083, 23.79833), Nominatim's geocode of "Kaisariani Monastery," and an OpenStreetMap way individually named "Kaisariani Monastery" / "Μονή Καισαριανής" (way center 37.9607776, 23.7984918). Moved to that point.
+- This ranks as "something published is wrong" (Step 0 rung 3), not depth work, since the old pin would have sent a visitor to the wrong side of the mountain entirely. Kept `location_precision: approximate`, since the corrected point locates the monastery building, not a surveyed position for any specific tree in its courtyard. The story and transport text needed no change: both already correctly described reaching the monastery via a bus from Ethniki Amyna and an uphill walk, consistent with the real location, so this was a coordinate-only error rather than a research mistake.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Athens: 2 pins confirmed, 2 photos found and viewed, one address correction
 
 - Visitors: 48 visits, 77 page views over 7 days, flat. No submissions (CSV still header row only). Depth-exit-test count re-verified directly from the data: Amsterdam (7/10 photos, 0 approx), Lisbon (5/10, 0), Rome (6/10, 0) and Barcelona (6/10, 0) each still need photos only, all exhaustively tried many times today per prior entries; Istanbul (2/10, 8 approx) remains furthest behind. Rather than re-run identical searches on those five again, moved to rung 5's marquee-Europe order, oldest-first: Athens, untouched since a 2026-07-26 photo-only pass, still at 5/10 photos and 10/10 approximate pins, the latter never actually attempted.
