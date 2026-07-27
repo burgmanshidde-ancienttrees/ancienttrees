@@ -30,6 +30,12 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Dublin: a second pin corrected, the Provost's Plane moved to Trinity's own stated address
+
+- Continued straight on from the Sculpted Cypress fix below with the same "does a real named place match the story's own address" check on Dublin's other approximate pins. Trinity College's own published page states the Provost's Plane stands in "the Provost's Courtyard at No. 1 Grafton Street," and OpenStreetMap has the Provost's House building individually named at exactly that address. Moved the pin about 260m from a loose campus-area guess to the building itself, kept `approximate` since the tree is in the walled courtyard behind it, not at the front door.
+- Checked two more Dublin approximate pins (Corkagh Park's Oak Avenue, Farmleigh's Great Sycamore) for the same kind of fix; neither has an individually mapped feature to anchor a tighter pin, correctly left alone.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Dublin: a real pin/story fix on the Sculpted Cypress; a thorough dead-end pass on Istanbul, Edinburgh and Dublin's national tree register
 
 - Visitors: 48 visits, 77 page views over 7 days (21-26 July: 8, 9, 10, 7, 4, 9), flat. No submissions (CSV still header row only). Site healthy, nothing published was wrong at the start of this pass.
