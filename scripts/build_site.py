@@ -73,10 +73,14 @@ DESC_MAX = 155
 CSS = """
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --cream: #F7F4EE; --cream-dark: #EDE9DF; --ink: #1A1A14; --ink-mid: #4A4A3A;
-  --ink-light: #8A8A7A; --moss: #3D5C1E; --moss-light: #EAF0E0;
-  --serif: 'Instrument Serif', Georgia, serif; --sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
-  --hand: 'Shantell Sans', cursive;
+  /* Direction A "Growth Rings" palette, chosen by Hidde 2026-07-27. Interim
+     identity: one type family (Gabarito), emphasis via weight and colour,
+     never via a second typeface. --serif and --hand are kept as names only
+     so nothing breaks, but they now point at the same family on purpose. */
+  --cream: #F6F2E9; --cream-dark: #ECE7DA; --ink: #26301E; --ink-mid: #5C6350;
+  --ink-light: #8A8B80; --moss: #4A6B2A; --moss-light: #EAF0DC; --gold: #D9A13F;
+  --serif: 'Gabarito', system-ui, sans-serif; --sans: 'Gabarito', system-ui, sans-serif;
+  --hand: 'Gabarito', system-ui, sans-serif;
   --header-h: 3.5rem;
 }
 html { scroll-behavior: smooth; }
@@ -84,7 +88,7 @@ body { background: var(--cream); color: var(--ink); font-family: var(--sans); fo
 a { color: var(--moss); }
 
 header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: var(--header-h); display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem; background: rgba(247,244,238,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--cream-dark); }
-.bar-logo { font-family: var(--sans); font-weight: 700; font-size: 1.02rem; letter-spacing: 0.09em; text-decoration: none; color: var(--ink); }
+.bar-logo { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; text-decoration: none; color: var(--ink); }
 .bar-links a { font-size: 13px; color: var(--ink-mid); text-decoration: none; margin-left: 1.25rem; }
 .bar-links a:hover { color: var(--moss); }
 .bar-links a.bar-cta { color: var(--moss); font-weight: 500; border: 1px solid var(--moss); border-radius: 3px; padding: 0.35rem 0.7rem; }
@@ -101,7 +105,7 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .panel-head { padding: 2rem 1.75rem 1.5rem; border-bottom: 1px solid var(--cream-dark); }
 .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.75rem; }
 .panel-head h1 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.9rem; font-weight: 400; line-height: 1.2; margin-bottom: 0.75rem; }
-.panel-head h1 em { font-family: var(--serif); font-style: italic; color: var(--moss); font-weight: 400; letter-spacing: 0; font-size: 1.08em; }
+.panel-head h1 em { font-style: normal; color: var(--moss); font-weight: 800; letter-spacing: 0; }
 .lede { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
 .notice { background: var(--moss-light); border-left: 3px solid var(--moss); padding: 0.7rem 1rem; font-size: 12px; color: var(--ink-mid); margin-top: 1rem; }
 .stage { flex: 1; position: relative; }
@@ -198,7 +202,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .home-hero .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 .hero-overlay { position: absolute; top: 1.5rem; left: 1.5rem; z-index: 10; background: rgba(247,244,238,0.95); backdrop-filter: blur(8px); border: 1px solid var(--cream-dark); border-radius: 4px; padding: 1.75rem 2rem; max-width: 26rem; box-shadow: 0 4px 24px rgba(26,26,20,0.08); }
 .hero-overlay h1 { font-family: var(--sans); font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.12; margin-bottom: 0.6rem; }
-.hero-overlay h1 em { font-family: var(--serif); font-style: italic; color: var(--moss); font-weight: 400; letter-spacing: 0; font-size: 1.08em; }
+.hero-overlay h1 em { font-style: normal; color: var(--moss); font-weight: 800; letter-spacing: 0; }
 .hero-overlay p { font-size: 13px; font-weight: 300; color: var(--ink-mid); line-height: 1.65; }
 .hero-overlay .go-btn { border: none; font-family: var(--sans); cursor: pointer; margin-top: 0.9rem; }
 .near-me-result { font-size: 12px; margin-top: 0.6rem; min-height: 1em; }
@@ -209,7 +213,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .home-act { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; padding: 3rem 0; border-top: 1px solid var(--cream-dark); }
 .home-act:first-child { border-top: none; }
 .home-act:nth-child(even) .home-act-visual { order: -1; }
-.home-act-verb { font-family: var(--hand); font-weight: 700; color: var(--moss); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.home-act-verb { font-family: var(--sans); font-weight: 800; color: var(--moss); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
 .home-act h2 { font-family: var(--sans); font-weight: 800; letter-spacing: -0.02em; font-size: 1.9rem; margin: 0.35rem 0 0.7rem; line-height: 1.1; }
 .home-act-copy p { color: var(--ink-mid); font-size: 1.05rem; max-width: 42ch; }
 /* The three acts, drawn in one illustrated system instead of photographs.
@@ -253,7 +257,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .sp svg { width: 68%; height: 68%; }
 .sp.dim { background: #F0EEE6; color: #C9C5B6; }
 .season-card { background: #fff; border: 1px solid var(--cream-dark); border-radius: 16px; padding: 1.2rem 1.3rem; box-shadow: 0 18px 40px rgba(26,26,20,0.10); }
-.season-now { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--moss); font-weight: 700; margin: 0 0 12px; font-family: var(--hand); }
+.season-now { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--moss); font-weight: 800; margin: 0 0 12px; font-family: var(--sans); }
 .sr-row { display: flex; align-items: center; gap: 12px; padding: 9px 0; border-top: 1px solid #F0EDE3; }
 .sr-row:first-of-type { border-top: none; }
 .sr-row .sp { width: 40px; flex: none; }
@@ -339,7 +343,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
 .report-btn:hover { border-color: var(--moss); color: var(--moss); }
 .subtle-suggest { font-size: 13px; color: var(--ink-light); }
 .subtle-suggest a { color: var(--moss); }
-.hero-kicker { font-family: var(--hand); font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--moss); margin-bottom: 0.5rem; }
+.hero-kicker { font-family: var(--sans); font-weight: 800; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--moss); margin-bottom: 0.5rem; }
 .hero-note { margin-top: 0.75rem; font-size: 13px; color: var(--ink-light); }
 .home-cta { display: inline-block; background: var(--moss); color: #fff; text-decoration: none;
   padding: 0.6rem 1.1rem; border-radius: 6px; font-size: 14px; font-weight: 500; margin-right: 0.5rem; }
@@ -395,7 +399,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display:
   /* Keep the bar on one line on phones: secondary links stay reachable from
      the homepage and from the pages themselves. */
   header.bar { flex-wrap: nowrap; padding: 0 1rem; }
-  .bar-logo { font-family: var(--sans); font-weight: 700; font-size: 1.02rem; letter-spacing: 0.09em; text-decoration: none; color: var(--ink); }
+  .bar-logo { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; text-decoration: none; color: var(--ink); }
   .bar-links { display: flex; align-items: center; white-space: nowrap; }
   .bar-links a.bar-secondary { display: none; }
   /* Get to the trees faster: the intro is still fully in the HTML. */
@@ -424,13 +428,14 @@ PAGE_SHELL = """<!DOCTYPE html>
 <meta property="og:url" content="%%CANONICAL%%">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Shantell+Sans:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 64"><ellipse cx="34" cy="24" rx="24" ry="16" fill="%233A5222"/><circle cx="20" cy="23" r="11" fill="%234A6B2A"/><circle cx="48" cy="23" r="11" fill="%234A6B2A"/><circle cx="34" cy="12" r="11" fill="%235B7F35"/><path d="M31 62 h5.6 l-1.2-16 h-3.2z" fill="%236B4F33"/></svg>'>
 <link rel="stylesheet" href="%%ROOTPATH%%assets/style.css">
 %%HEAD_EXTRA%%
 </head>
 <body>
 <header class="bar">
-  <a href="%%ROOTPATH%%" class="bar-logo">Ancient Trees</a>
+  <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
   <nav class="bar-links">
     <a href="%%ROOTPATH%%#cities">Cities</a>
     <a href="%%ROOTPATH%%species" class="bar-secondary">Species</a>
