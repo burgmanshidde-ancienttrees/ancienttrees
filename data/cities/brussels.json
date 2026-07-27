@@ -157,8 +157,8 @@
       "age_max": 135,
       "location": {
         "address": "Parc de Woluwe, near Avenue de Tervueren, 1150 Woluwe-Saint-Pierre, Brussels",
-        "latitude": 50.8362,
-        "longitude": 4.4304,
+        "latitude": 50.826431,
+        "longitude": 4.428151,
         "neighbourhood": "Woluwe-Saint-Pierre"
       },
       "story": "The single largest tree in Brussels by trunk girth is not native to Europe at all. This giant sequoia, measured at 8.66 metres around in 2017, thicker than any other tree recorded in the region, grows in a park that did not exist until the 1890s, when the landscape architect Emile Laine laid it out for Leopold II as a green corridor linking the 1897 World's Fair site at the Cinquantenaire to a second exhibition site at Tervuren. That makes the sequoia, at most, only a little over a century old, remarkable for how much girth a genuinely young tree can put on: giant sequoias can live two thousand years and more in their native California, and reach 50 to 60 metres even in Belgium's cooler, wetter climate. Planted as an ornamental statement piece for an international exposition rather than surviving from an older forest, it has spent barely a tenth of its natural lifespan reaching a size that would take most Belgian native species several centuries to match. The park around it now holds some 180 different tree species, and this one is, by a wide margin, the thickest of all of them.",
@@ -175,8 +175,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Girth (866cm, measured 2017) and 'largest tree in Brussels' claim corroborated by the official heritage inventory and the park's own design history (Laine, 1890s, for Leopold II). Exact planting year not found, so age is inferred from the park's founding decade.",
-      "location_precision": "approximate"
+      "notes": "Girth (866cm, measured 2017) and 'largest tree in Brussels' claim corroborated by the official heritage inventory and the park's own design history (Laine, 1890s, for Leopold II). Exact planting year not found, so age is inferred from the park's founding decade. Pin corrected 2026-07-26: the prior coordinate was about 1.1km away, outside the tree's actual position. Bruxelles Environnement's own managed-tree WFS layer (ows.environnement.brussels/green) has exactly one Sequoiadendron giganteum in the park with a circumference this large (840cm, close to this entry's own sourced 866cm within plausible remeasurement drift); a second, much smaller sequoia (503cm) also exists in the park but is clearly not 'the single largest tree in Brussels' this entry describes.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bru_006",
@@ -188,8 +188,8 @@
       "best_time": { "months": [4, 5], "label": "April and May, when the new leaves are brightest red-purple" },
       "location": {
         "address": "Parc Tournay-Solvay, Chaussee de La Hulpe, 1170 Watermael-Boitsfort, Brussels",
-        "latitude": 50.7975,
-        "longitude": 4.4066,
+        "latitude": 50.793916,
+        "longitude": 4.411531,
         "neighbourhood": "Watermael-Boitsfort"
       },
       "story": "Alfred Solvay, brother of the industrial chemist Ernest Solvay, built a country manor at the edge of the Sonian Forest in 1878, and the park around it still carries his family's name today. His daughter Therese Tournay-Solvay later expanded the grounds, and in the early 20th century the landscape architect Jules Buyssens redesigned them into the layout that survives now, mixing exotic plantings with remnants of the original forest vegetation. Among the survivors is a purple beech, its almost black red foliage a deliberate contrast against the ordinary green beeches nearby, part of a group of large trees in the park old enough that several, this one included, appear in the official inventory of the Brussels region's natural heritage. No source gives this specific tree an individual age, only that trees of its kind in the park run from roughly a century and a half to two centuries old, a range wide enough to be honest rather than precise. The park sits directly against the edge of the Sonian Forest in Watermael-Boitsfort, free to enter, and considerably quieter than Brussels' larger, better known green spaces.",
@@ -206,8 +206,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Age range (150-200 years) is sourced to the park's trees generally, not confirmed for this individual purple beech specifically; flagged as an estimate rather than a measurement.",
-      "location_precision": "approximate"
+      "notes": "Age range (150-200 years) is sourced to the park's trees generally, not confirmed for this individual purple beech specifically; flagged as an estimate rather than a measurement. Pin corrected 2026-07-26 via Bruxelles Environnement's managed-tree WFS layer: the only Fagus sylvatica 'Atropunicea' (the purple beech cultivar) recorded in the park, moved about 500m from the prior estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bru_007",

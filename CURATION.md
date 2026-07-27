@@ -2,6 +2,17 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-26 — Brussels: 2 of 10 approximate pins resolved, one a real 1.1km error, via a regional tree registry that was unreachable earlier today
+
+- A prior pass today flagged Bruxelles Environnement's regional "arbres remarquables" scientific inventory (covering all 19 municipalities, CC-BY licensed) as a strong lead that was unreachable (hard connection refusal) at geodata.environnement.brussels. Retried this pass: the site is up. Traced through to the actual service (michelstuyts.be's WFS directory pointed to the real endpoint, ows.environnement.brussels/green, layer `tree`), which turns out to be Brussels Environment's own managed-tree inventory with per-tree species, trunk circumference (c150_cm), height and crown diameter, the same class of source that worked for Rome/Madrid/Bologna/Antwerp today.
+  - **The Giant Sequoia of Parc de Woluwe (bru_005), a real correction, not just imprecision**: the stored pin was about 1.1km from the tree's actual position. The park has exactly one Sequoiadendron giganteum with a circumference this large (840cm in the registry vs this entry's own sourced 866cm, close enough to be the same tree measured a few years apart) against a second, much smaller sequoia (503cm) nowhere close to matching the "single largest tree in Brussels" claim. Moved to confirmed.
+  - **The Purple Beech of Parc Tournay-Solvay (bru_006)**: the only Fagus sylvatica 'Atropunicea' in the park (ordinary green beeches are common there), moved about 500m to the exact match.
+  - **The Douglas Fir of the Hippodrome (bru_007) tried and NOT resolved, on purpose**: the bounding box around the Hippodrome/Bois de la Cambre area turned out to hold 4 separate Pseudotsuga menziesii specimens, all within a narrow 127-146cm circumference band with nothing to distinguish "the" named tree from the others (unlike the sequoia and beech cases, no dimension or species stood out as unique). Left approximate rather than guess between them.
+  - Bois de la Cambre's oak/beech ensemble (bru_004) and the other Brussels gaps (Kasterlinde, Parc Leopold plane, the Abbaye sophora, the Botanical Garden mulberry, the Cinquantenaire chestnuts) were not attempted this pass.
+- Brussels now at 8 of 10 approximate pins (from 10). Photos untouched, still 4/10.
+- Site rebuilt, all contracts validated, pushed.
+
+## 2026-07-26 — Antwerp: 4 of 10 approximate pins resolved, one a real 1.1km location error; Istanbul/Rome/Europeana dead ends confirmed, nothing new
 ## 2026-07-26 — Antwerp: 4 of 10 approximate pins resolved, one a real 1.1km location error; Istanbul/Rome/Europeana dead ends confirmed, nothing new
 
 - Visitors: 47 visits, 76 page views over 7 days, flat (21-26 July: 8, 9, 10, 7, 4, 9). No submissions (CSV still header row only). Re-verified the depth-exit-test count directly from the data: Amsterdam (6/10 photos, 0 approx), Lisbon (5/10, 0), Rome (5/10, 0) and Barcelona (6/10, 0) each still need photos only; Istanbul (2/10 photos, 8 approx) remains furthest behind on both. Bar not yet met, coverage stays frozen.
