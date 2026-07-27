@@ -35,8 +35,8 @@
       "age_max": 175,
       "location": {
         "address": "Jardín del Parterre, 46003 Valencia",
-        "latitude": 39.4738,
-        "longitude": -0.3745,
+        "latitude": 39.4722,
+        "longitude": -0.3703,
         "neighbourhood": "Ciutat Vella"
       },
       "story": "Gardeners planted this fig by accident in 1852, confusing the young sapling for one of the 47 magnolias also going into the newly laid-out Parterre garden that year, the same year Valencia's first railway line opened. The mistake became the city's most celebrated tree. Its trunk now measures nearly 13 metres around, its canopy reaches almost 23 metres high with a spread beyond 35 metres, and the shade it casts covers something close to 1,000 square metres of ground, the widest canopy of any tree in Valencia. It has outlasted a windstorm in 1926 and the catastrophic flood of 1957 that reshaped the whole city's relationship with the Turia river, and in 1915 it became a study subject for Madrid's School of Agricultural Engineers, evidence of how early its scale was recognised as remarkable. For decades it also hosted Sunday sardana dancing and other Valencian cultural gatherings in its shade. A nearby petrol station, whose underground tanks threatened its root system, was finally dismantled in 2020 after years of pressure to protect the tree, valued by the city at some 380,000 euros.",
@@ -53,8 +53,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Measurements (12.95m trunk perimeter, 22.70m height, 35m+ canopy) and the 2020 petrol station removal are corroborated across both sources; the 380,000 euro valuation figure comes from valenciabonita.es only. Photo viewed directly: shows a massive, spectacular ficus with huge buttress roots and a wide multi-trunk canopy in a paved plaza. Approved.",
-      "location_precision": "approximate"
+      "notes": "Measurements (12.95m trunk perimeter, 22.70m height, 35m+ canopy) and the 2020 petrol station removal are corroborated across both sources; the 380,000 euro valuation figure comes from valenciabonita.es only. Photo viewed directly: shows a massive, spectacular ficus with huge buttress roots and a wide multi-trunk canopy in a paved plaza. Approved. Pin corrected ~400m via the Generalitat Valenciana's own Catálogo de Árboles Monumentales y Singulares (ArcGIS layer), which lists this exact tree by name, 'Ficus del Parterre' (IPA 512), with a 13.82m trunk measurement matching this entry's own figure almost exactly.",
+      "location_precision": "confirmed"
     },
     {
       "id": "vlc_002",
@@ -65,8 +65,8 @@
       "age_max": 450,
       "location": {
         "address": "Parque de la Rambleta, Calle Pio IX, 46017 Valencia",
-        "latitude": 39.4535,
-        "longitude": -0.3831,
+        "latitude": 39.4473,
+        "longitude": -0.3939,
         "neighbourhood": "San Marcelino, Patraix"
       },
       "story": "This olive has stood through more than a dozen generations of Valencians without ever needing to move, unlike almost every other tree on this list, which the city has planted, transplanted or rescued from demolition at some point in its life. It grows in Parque de la Rambleta, a 14 hectare green space wedged between the San Marcelino neighbourhood and the General Cemetery in the south of the city, among a Mediterranean garden of date palms, Greek olives, cypresses, carob trees and a cedar of Lebanon. City sources place its age at roughly 400 years, without an individually documented planting record, which is typical for old olives generally: the species hollows and re-grows from its own base over centuries, making ring counts unreliable even where felling would be permitted. It is named directly, on the city's own monumental trees route, as the oldest single tree among all five of its mapped trails, a title that puts it ahead of trees standing in far more visited parts of the city.",
@@ -83,8 +83,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "The 400-year figure is a general estimate repeated across city sources rather than a documented planting record, typical for old olive trees; presented as an estimate rather than a precise age.",
-      "location_precision": "approximate"
+      "notes": "The 400-year figure is a general estimate repeated across city sources rather than a documented planting record, typical for old olive trees; presented as an estimate rather than a precise age. Pin corrected ~1.1km via the regional Catálogo de Árboles Monumentales y Singulares: the only Olea europaea recorded anywhere in Valencia's official monumental-tree dataset, marked at 350-plus years (this entry's own low-end estimate), sits within a cluster of catalogued date palms and eucalyptus in this same San Marcelino/Patraix pocket, consistent with the park's own mixed planting.",
+      "location_precision": "confirmed"
     },
     {
       "id": "vlc_003",
@@ -275,8 +275,8 @@
       "age_max": 100,
       "location": {
         "address": "Parc Lineal, near Les Carolines metro station, Benimamet, 46017 Valencia",
-        "latitude": 39.4967,
-        "longitude": -0.4159,
+        "latitude": 39.500,
+        "longitude": -0.424,
         "neighbourhood": "Benimamet"
       },
       "story": "At just over 41 metres tall, this eucalyptus is the tallest tree in the province of Valencia and the fourth tallest recorded anywhere in the wider region, a scale confirmed by the city's own maintenance crews, who need aerial platforms and, for its highest branches, help from the fire service just to prune it safely. It grows in the Parc Lineal in Benimamet, on the northwestern edge of the city, next to the tram line that was later routed underground past it, and is formally listed both by the Valencia city council and in the Comunitat Valenciana's own Catálogo de Árboles Monumentales y Singulares, the regional register that protects it by law. Eucalyptus camaldulensis, native to Australia, was planted widely across Mediterranean Spain from the early 20th century onward for its fast growth and tolerance of poor, dry soil, but few specimens anywhere in the region have been left to grow as large as this one. Its trunk runs some 6.1 metres around at the base, with a crown spreading 30 metres wide, dimensions that make it visible well beyond the park it stands in.",
@@ -293,8 +293,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Measurements (41.20m height, 6.1m trunk diameter, 30m crown) and the 80-100 year age come from the city's own official announcement; the regional catalogue source confirms its protected status but is a general registry page rather than an entry specific to this tree.",
-      "location_precision": "approximate"
+      "notes": "Measurements (41.20m height, 6.1m trunk diameter, 30m crown) and the 80-100 year age come from the city's own official announcement; the regional catalogue source confirms its protected status but is a general registry page rather than an entry specific to this tree. Pin corrected ~790m by querying that same regional catalogue directly (ArcGIS layer): it lists this exact tree by name, 'Eucalipto de Benimámet' (IPA 2375), with a 41.2m height matching this entry's own figure exactly.",
+      "location_precision": "confirmed"
     },
     {
       "id": "vlc_010",
