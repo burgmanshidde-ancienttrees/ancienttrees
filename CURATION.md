@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Milan: 2 photo candidates found (Il Sacerdote, the Ginkgo of Brera), pending visual check
+
+- Continued down rung 5's oldest-first order after Lyon, to the next marquee-Europe city with no depth pass since original research: Milan (2/10 approximate, already meeting the pin bar; 5/10 photos, needing 3 more for the floor).
+- **Il Sacerdote (mil_001, Bald Cypress)**: found a CC BY-SA 4.0 Wikimedia Commons close-up ("Cipresso calvo a primavera, dettaglio.jpg", Elbalabiot, Wiki Loves Monuments 2018) geotagged within about 15m of this entry's own coordinates and captioned "Giardini Indro Montanelli". Held at `found_needs_check` rather than approved: the story itself notes several bald cypresses share this stretch of water, and a tight close-up of one trunk cannot be confirmed as Il Sacerdote specifically (the tallest and widest of the stand) rather than a neighbour. This session's tools also could not view the image directly.
+- **The Ginkgo of Brera (mil_004)**: found a CC BY iNaturalist observation (obs 288159360, Codrin Bucur, June 2025) geotagged within a few metres of this entry's own coordinates, a tight match for a small, specific garden. Held at `found_needs_check`, same visual-check limitation.
+- **Two gaps tried and stayed genuine dead ends**: the Quercia Rossa del Trotter (mil_007, Parco Trotter is a working school with restricted hours, consistent with sparse coverage) and the Paulownia di Via Madonnina (mil_008, a self-seeded tree on a small municipal plot, already known from an earlier pass to have only all-rights-reserved Flickr coverage) turned up nothing new on Wikimedia Commons or iNaturalist this pass.
+- Milan's approximate-pin count unchanged (already at 2/10, below the 2-or-fewer bar). Photos: 5/10 approved, 2 more pending visual check.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Lyon: the Pin de Bunge's pin corrected ~300m via an OpenStreetMap arboretum inventory, one photo candidate found pending visual check
 
 - Checked submissions (still header-row only) and visitors (48 visits, 77 page views over 7 days, flat). Re-verified the depth-exit-test count directly: Amsterdam, Lisbon, Rome, Barcelona and Istanbul have all had multiple exhaustive passes today and in prior days with the same photo gaps confirmed as genuine dead ends each time; rather than re-run identical searches for a sixth or seventh time, moved to rung 5's "rest of the lead group and marquee Europe" with a city that has had no depth pass at all since its original research: Lyon (7/10 approximate pins, 1/10 photos).
