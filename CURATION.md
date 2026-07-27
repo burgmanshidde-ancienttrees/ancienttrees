@@ -1,3 +1,8 @@
+## 2026-07-27 — Photo hunt for the three fresh dead-tree replacements: genuine dead end
+
+- Tried the three new entries from today's sweep that shipped with `missing` photos, on the reasoning that nobody has ever searched for these specific trees before (unlike the exit-test cities' remaining gaps, hunted dozens of times today already). Wikimedia Commons (Vienna's Stadtpark category, 155 files, none ginkgo-related), iNaturalist's API (one Vienna ginkgo observation with no license, one with CC-BY-NC; one Dublin holm oak observation, also CC-BY-NC, none usable under the CC0/CC-BY/CC-BY-SA rule), and Openverse's API (zero results for both the Villa Sciarra ginkgo and the Stadtpark ginkgo) all came up empty or non-open-licensed. Recording so a future pass doesn't repeat the same three searches; these are genuinely obscure individual specimens, not well-photographed monuments like their exit-test counterparts.
+- London's Sweet Chestnut of Greenwich Park already has a real candidate (`found_needs_check`, CC BY-SA 4.0, geolocated) from the sweep itself; this pass didn't find a second option, and this session's tooling could not fetch/view the image directly (outbound file fetch stayed permission-gated with no user present all session). Left as-is for a future pass with fetch access.
+
 # CURATION — items awaiting Hidde's review
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
