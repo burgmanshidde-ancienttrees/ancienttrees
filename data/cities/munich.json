@@ -47,13 +47,13 @@
       "access": "Free, public land, viewable from outside Gut Nederling",
       "transport": "10 min walk from Nederlinger Straße bus stop or Moosach S-Bahn station",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/R%C3%B6th-Linde.jpg",
+        "license": "Public Domain",
+        "attribution": "Holger Heinzmann, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "The Thirty Years' War planting date is local tradition, not a documented record; the 300-350 year range comes from the tree's own Wikipedia entry and matches independently, but no source gives a single precise figure.",
+      "notes": "The Thirty Years' War planting date is local tradition, not a documented record; the 300-350 year range comes from the tree's own Wikipedia entry and matches independently, but no source gives a single precise figure. Photo's own Commons description explicitly names it as the Röth-Linde (public domain, VRT-verified permission), a strong textual match; held at found_needs_check since this session's tools could not view the image directly. Cross-checked against an OpenStreetMap node (denotation=natural_monument, name=Röth-Linde) within 5m of this entry's own coordinates: independent confirmation the pin is already right.",
       "location_precision": "confirmed"
     },
     {
@@ -227,13 +227,13 @@
       "access": "Free, public park (the palace interior and botanical garden charge separate admission)",
       "transport": "5 min walk from Schloss Nymphenburg tram stop (line 17)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Naturdenkmal_Stieleiche_im_Winter_Schlosspark_Nymphenburg_M%C3%BCnchen.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Peterf, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "No source gives this specific oak a documented age; 'unique in size within the city area' is the register's own claim about scale, not age, and is presented as such.",
+      "notes": "No source gives this specific oak a documented age; 'unique in size within the city area' is the register's own claim about scale, not age, and is presented as such. Photo found via the city's own Naturdenkmal list, whose Commons category and filename explicitly name this exact tree (a Stieleiche in Schlosspark Nymphenburg); held at found_needs_check since this session's tools could not view the image directly.",
       "location_precision": "approximate"
     },
     {
@@ -257,13 +257,13 @@
       "access": "Free, public street planting",
       "transport": "5 min walk from Karlsplatz (Stachus) or Königsplatz U-Bahn stations",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Acht_Zuergelbaeume_Oskar-von-Miller-Ring_Muenchen-2.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Rufus46, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Presented as an ensemble of eight trees per the city's own register entry; no individual age or planting date documented for any of the eight.",
+      "notes": "Presented as an ensemble of eight trees per the city's own register entry; no individual age or planting date documented for any of the eight. Photo found via the city's own Naturdenkmal list, whose Commons category and filename explicitly name this exact group ('eight Zürgelbäume, Oskar-von-Miller-Ring'); held at found_needs_check since this session's tools could not view the image directly.",
       "location_precision": "approximate"
     },
     {

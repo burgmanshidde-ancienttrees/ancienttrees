@@ -2,6 +2,18 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Munich: 3 photo candidates found via the city's own Naturdenkmal register, pending visual check; one pin cross-confirmed via OpenStreetMap
+
+- Continued down rung 5's oldest-first order after Venice, to Munich (2/10 approximate, already meeting the pin bar; 5/10 photos, needing 3 more).
+- Munich's own official Naturdenkmal (natural monument) list on German Wikipedia links a Commons category, and often a specific file, for many individually registered trees. Used it directly rather than searching blind:
+  - **The Röth-Linde (muc_001)**: found "Röth-Linde.jpg", a public-domain (VRT-verified) Commons file whose own description names this exact tree. Held at `found_needs_check`.
+  - **The Oak of the Dörfchen, Nymphenburg (muc_007)**: found "Naturdenkmal Stieleiche im Winter Schlosspark Nymphenburg München.jpg" (CC BY-SA 4.0, Peterf), the exact linked file from the city's own register entry for this specimen. Held at `found_needs_check`.
+  - **The Hackberries of Oskar-von-Miller-Ring (muc_008)**: found "Acht Zuergelbaeume Oskar-von-Miller-Ring Muenchen-2.jpg" (CC BY-SA 3.0, Rufus46), again the register's own linked file, explicitly captioned as this exact group of eight. Held at `found_needs_check`.
+  - None of the three could be viewed directly this session (tools couldn't open the image files), so all three stay at found_needs_check rather than approved despite the strong textual match.
+- **Pin cross-check**: queried OpenStreetMap directly for the Röth-Linde's coordinates and found a node tagged `denotation=natural_monument`, `name=Röth-Linde`, within about 5m of this entry's own stored position, independent confirmation the pin is already right. Tried the same for the Krüner Eiche: one untagged tree node exists about 90-100m away, but with no species or name tag to confirm it's the right specimen, so left unchanged rather than guessed. The Englischer Garten beech's OSM area has only untagged nodes too.
+- Munich now at 5/10 photos approved, 3 more pending visual check (would clear the 8-photo floor if confirmed). Pin precision unchanged (already at 2/10 approximate).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Venice: 2 photo candidates found (Giardini della Biennale, San Michele cypresses), pending visual check
 
 - Continued down rung 5's oldest-first order after Milan, to Venice (10/10 approximate, the least-resolved precision in the marquee-Europe group, but structurally so: every entry here is an island, garden or fortress ensemble rather than a single named tree, so "approximate" is the honest precision for most regardless of further search). Photos stood at 3/10, needing 5 more.
