@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Nice: 6 photos found and viewed directly, reaching the 8-photo floor
+
+- Continued down rung 5's oldest-first order after Munich, to Nice (2/10 photos, 9/10 approximate; the pins are structurally honest ensembles like Venice, so photos were the real target). With image-viewing available this session, searched Wikimedia Commons for each gap and viewed every candidate before using it.
+- **Approved (6)**: Matisse's Olive Tree (the grave's own inscription is visible in frame, an exact identity match, with tree canopy overhead), the Founding Trees of Jardin Albert 1er (an aerial panorama of the garden between the city and the Promenade), the Aleppo Pine Forest of Mont Boron (a viewpoint at Fort de Mont Alban on the same ridge, framed by mature evergreens), the First Canary Island Date Palm of France at Parc Vigier (a row of mature palms along the seafront lawn), the Palms of the Promenade des Anglais (the promenade's iconic palm row beside the beach, Colline du Château visible behind), and the Washingtonia Palms of Villa Masséna (the formal garden's fan palms and flowerbeds with the seafront gate visible beyond).
+- **One tried and rejected**: a candidate for the Olive and Pine Grove of Colline du Château showed only an entrance building with ordinary street trees, not the park's actual grove; a second candidate showed a grotto/fountain feature with no relevant tree cover. That gap (nce_004) stays without a photo.
+- Nice now at 8 of 10 photos approved, clearing the depth-exit-test floor. Pin precision unchanged (9/10 approximate, structural to these ensemble entries rather than a search gap, same pattern as Venice).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Visual check clears this session's photo backlog: Munich reaches the 8-photo floor, three false matches caught and rejected
 
 - This session's tools turned out to support viewing images after all (fetch the raw file via WebFetch, which saves it locally, then Read the saved file), a capability documented as intermittent across sessions. Used it to resolve every `found_needs_check` photo left pending, rather than leaving them all for a future run.
