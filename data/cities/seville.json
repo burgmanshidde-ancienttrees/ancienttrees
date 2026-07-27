@@ -287,8 +287,8 @@
       "age_max": 115,
       "location": {
         "address": "Glorieta de Goya, Parque de María Luisa, 41013 Sevilla",
-        "latitude": 37.3776,
-        "longitude": -5.9862,
+        "latitude": 37.3785,
+        "longitude": -5.9885,
         "neighbourhood": "Parque de María Luisa"
       },
       "story": "Two marble columns are the only physical trace left of the pavilion this fig tree now grows inside. The Glorieta de Goya, a circular clearing in Parque de María Luisa near Plaza de España, once held a full-scale replica of the Quinta del Sordo, Francisco de Goya's house outside Madrid, built for the 1929 Ibero-American Exposition and dismantled once the fair closed. Only two four-metre Doric columns from that pavilion's entrance survived the teardown, and they now frame a Moreton Bay fig planted in the same period, introduced to Seville in the early 20th century and naturalized well enough in the local climate that Ficus macrophylla now shows up across the city's parks and plazas. The tree has grown into the columns' role as much as around them, its crown now the dominant feature of a clearing designed to showcase a painter's house rather than a fig tree. Later redesigns in the second half of the twentieth century reshaped the glorieta's paths and plantings more than once, but the columns and the fig both survived every version. Visitors walking the park's central axis between Plaza de España and the fountain gardens pass directly beneath it, often without registering that the shade they're standing in used to be somebody's front garden reconstruction.",
@@ -299,14 +299,14 @@
       "access": "Free, public park",
       "transport": "5 min walk from Plaza de España, inside Parque de María Luisa",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Glorieta_de_Goya.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "CarlosVdeHabsburgo, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "The 1929 pavilion history and surviving columns confirmed by two independent sources. No precise planting date found for the fig itself; age is estimated from the species' early-20th-century introduction to Seville. No GPS coordinates found in either source; pin estimated from the glorieta's described position near Plaza de España's north tower, not independently surveyed.",
-      "location_precision": "approximate"
+      "notes": "Photo fetched and viewed directly 2026-07-27: a large Moreton Bay fig with buttress roots filling a circular railed clearing, its own caption confirming 'gran ficus en el centro' at the Glorieta de Goya, an unambiguous match. The 1929 pavilion history and surviving columns confirmed by two independent sources. No precise planting date found for the fig itself; age is estimated from the species' early-20th-century introduction to Seville. Pin corrected 2026-07-27, about 190m, via an OpenStreetMap feature individually named 'Glorieta de Goya' (an exact name match); no GPS coordinates were found in either original source, so the prior pin was estimated from a described position near Plaza de España's north tower rather than surveyed.",
+      "location_precision": "confirmed"
     },
     {
       "id": "sev_010",
