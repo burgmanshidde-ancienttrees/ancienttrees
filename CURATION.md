@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — New York: 2 approximate pins confirmed via exact-name OpenStreetMap matches (Hangman's Elm, Camperdown Elm)
+
+- Continued past Kyoto to New York (3/10 photos, 8/10 approximate, one of the least-worked cities on pin precision since its original research). The OSM named-tree-node technique found two of NYC's own designated "Great Trees" landmarks mapped individually, both with planting-year tags that independently corroborate this project's own age claims:
+  - **The Hangman's Elm**: node named exactly "Hangman's Elm", species Ulmus procera, planted 1679 (2026 minus 1679 = 347, matching this entry's own high-end estimate of 346 years almost exactly). Only a few metres from the existing pin, so this confirms precision rather than correcting an error, but confirms it with a real survey source rather than a park-corner estimate.
+  - **The Camperdown Elm**: node named exactly "Camperdown Elm", species Ulmus glabra 'Camperdownii', planted 1872, matching this entry's own planting year exactly. Moved about 70m from the previous Boathouse-area estimate, a real (if modest) correction.
+- Tried the same technique on the other 4 approximate/untried gaps (Ramble Black Tupelo, Green-Wood Sassafras, Kissena Linden, Clove Lakes Colossus, Hero Park Yew): Overpass returned zero named tree nodes for the Manhattan/Staten Island boxes, and timed out repeatedly on Green-Wood's, a service issue rather than a confirmed dead end, worth retrying.
+- New York now at 6 of 10 approximate pins (from 8), 3/10 photos unchanged (photos not attempted this pass). Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Kyoto: 2 pins resolved via OpenStreetMap named-node matches (one a real ~185m error, one a real ~165m error), one photo candidate found pending visual check
 
 - Checked submissions first (still just the header row, no new rows) and visitors (48 visits, 77 page views over 7 days, flat). Re-verified the depth-exit-test count directly from the data: Amsterdam (7/10 photos, 0 approx), Lisbon (5/10, 0), Rome (6/10, 0) and Barcelona (6/10, 0) each still need photos only; Istanbul (2/10, 8 approx) remains furthest behind on both. Made one genuine fresh attempt on Amsterdam's Heimanseik (Dutch-language search for a Wikimedia/Wikipedia photo tied to Eli Heimans or the tree's own name) and found nothing beyond what many prior passes already established as a dead end; not re-litigating the other two Amsterdam gaps or Lisbon/Istanbul/Rome/Barcelona's equally exhausted remaining gaps again this pass. The bar is not yet met, coverage stays frozen.

@@ -35,8 +35,8 @@
       "age_max": 346,
       "location": {
         "address": "Northwest corner, Washington Square Park, New York, NY 10012",
-        "latitude": 40.7319,
-        "longitude": -73.9986,
+        "latitude": 40.7319686,
+        "longitude": -73.9986093,
         "neighbourhood": "Greenwich Village, Manhattan"
       },
       "story": "This elm is one of the oldest living things on Manhattan Island, and almost everything colorful ever said about it is unproven. Its nickname comes from a folk legend that traitors and criminals were hanged from its branches during and after the American Revolution, a story with no supporting court or newspaper record; the earliest known references to it as a hanging tree only appear in print in the late 19th century, generations after the events they describe. What is documented is its age: the New York City Parks Department measured it at 310 years old in 1989, later revising that to a more cautious more than 300 years, with some accounts pushing the figure to 346. It stands at the northwest corner of Washington Square, a plot of land that served as a potter's field and public execution ground in the early 1800s, close enough to the tree that a real 1820 hanging nearby, of Rose Butler for arson, may be the seed of fact the legend grew from. The tree survived a 2012 park renovation that construction crews came close to damaging.",
@@ -54,8 +54,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Age given as a range (300-346 years) because sources genuinely disagree, from NYC Parks' cautious 'more than 300 years' to a commonly cited 346. Coordinates are an estimate for the park's northwest corner; no independently surveyed lat/long was found.",
-      "location_precision": "approximate"
+      "notes": "Age given as a range (300-346 years) because sources genuinely disagree, from NYC Parks' cautious 'more than 300 years' to a commonly cited 346. Pin confirmed 2026-07-27: OpenStreetMap carries a contributor-mapped, survey-sourced node named \"Hangman's Elm\" (species Ulmus procera, planted 1679, matching this entry's high-end age estimate of 346 years almost exactly), a few metres from the existing estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "nyc_002",
@@ -96,8 +96,8 @@
       "age_max": 156,
       "location": {
         "address": "Near the Boathouse, Prospect Park, Brooklyn, NY 11225",
-        "latitude": 40.6608,
-        "longitude": -73.9653,
+        "latitude": 40.6601734,
+        "longitude": -73.9651184,
         "neighbourhood": "Prospect Park, Brooklyn"
       },
       "story": "Every Camperdown elm on Earth is a clone, and this one is among the oldest. The cultivar began in the 1830s when a gardener for the Earl of Camperdown found a single mutant elm branch, contorted and weeping instead of growing upright, on the Camperdown House estate near Dundee, Scotland. Because the mutation cannot be grown from seed, every specimen since has been propagated by grafting a cutting onto a straight-trunked host, which makes each Camperdown elm in the world a genetic twin of that one Scottish branch. This graft was planted near Prospect Park's Boathouse in 1872, a gift to the young park, and by the 1960s had declined badly enough that Brooklyn nearly lost it, until the poet Marianne Moore, a devoted Prospect Park visitor, wrote publicly in its defense and helped rally the conservation campaign that saved it. She later called it Brooklyn's crowning curio. Its low, twisted canopy, propped and cabled for support, still spreads wide enough that visitors duck to walk beneath it, a shape no other tree in the park shares by nature.",
@@ -115,8 +115,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Coordinates are an estimate near the Boathouse and Lullwater, where sources place the tree; no independently surveyed point was found.",
-      "location_precision": "approximate"
+      "notes": "Pin corrected 2026-07-27 (about 70m): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"Camperdown Elm\" (species Ulmus glabra 'Camperdownii', planted 1872, matching this entry's own planting year exactly), replacing the previous Boathouse-area estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "nyc_004",
