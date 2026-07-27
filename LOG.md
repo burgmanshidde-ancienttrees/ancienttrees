@@ -30,6 +30,12 @@ Collections publish without your approval since blueprint v1.3; new ones simply 
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — A third collections pass: the great planes of Europe
+
+- One more item 4 pass. Of the 43 plane trees across the site, picked ten with the most distinctive individual stories, one per city, deliberately avoiding the three planes already anchoring today's other new collections (Istanbul's Bahçeköy plane, Prague's Beethoven Plane and Rome's Adonis all already appear in "The Oldest Tree in Every Country We Map") so the two pages don't read as reruns of each other.
+- **The Great Planes of Europe**: Dublin's Hungry Tree (swallowing a Victorian bench), Vienna's Mozart-Platane, Paris's Buffon Plane, Brussels' Oriental Plane of Parc Leopold, Bologna's Oriental Plane of Piazza Malpighi, Naples' Platano of San Severino (regrown from a felled root since 1959), Milan's Platano di Indro, London's Cheapside Plane, Amsterdam's Leidsebosje Planes (floated sideways on rafts in 1925 rather than felled), and Verona's Plane Tree of Piazza Indipendenza. Every entry grounded in this project's own already-verified story text, nothing new researched. A script confirmed all 10 resolve to a real Platanus tree with no accidental duplicates against the other 7 collections beyond the single expected overlap (London's Cheapside Plane, already in the original 10-tree collection, same as several other cross-collection overlaps already on the site). 8 public collections now.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — The same collection-link bug was on city pages too, fixed the same way
 
 - While checking whether the question-page fix from the previous entry had a twin elsewhere, found one: `build_city_page`'s "More like this" line had the identical `collections[0]` bug, live on the actual built output. Tokyo and Amsterdam's city pages both claimed "Several of these trees also appear in Europe's Ancient Oaks You Can Actually Visit", false for both, since neither city has an oak in that collection.
