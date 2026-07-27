@@ -92,3 +92,18 @@ He weighed the ranked list himself and ruled on each. These stand until he chang
 4. **November: de-weighted at his call.** Seasons recur; he expects little from it. The radar and the ginkgo collection still ship, but as SEO and product work on their own merits, not as a bet on a date.
 
 **The resulting division of labour, which is now the strategy in one line: the machine makes the database better and the SEO work; Hidde does design and the app's functionality.** Clean lanes, no gates between them.
+
+## The Japan wave, decided 2026-07-27
+
+Hidde's call, made in session, with the discipline the 2026-07-26 standard demands: coverage order changes only on evidence, so here is what this decision rests on and what still has to be checked before a single Japanese city gets built.
+
+**The decision:** after the Europe top-10 city-trips collection is delivered, the next coverage wave is Japan (Nara, Kamakura, Nikko, Osaka, Kanazawa, plus deepening the live Tokyo and Kyoto pages), ahead of the UK dense wave, which shifts one place back but stays queued. Not a pivot: the Europe depth work, the top-10 collection and everything already live continue unchanged.
+
+**The honest basis, structural rather than metric.** The week-one Search Console numbers (including "UK is our top country") are noise-level volume and are not evidence for or against anything; citing them was called out by Hidde and he was right. What actually carries the decision:
+1. **Competitive asymmetry.** The UK has the thickest ancient-tree content ecosystem on earth (Woodland Trust, Ancient Tree Inventory, National Trust, decades of authority). Japan's English-language tree content is thin, while its English-language trip-planning demand is enormous and strongly seasonal. Thin supply times thick demand is where a small site can win; we compete on tree-specific queries, never on generic "Japan things to do".
+2. **Source quality.** Japan designates individual trees as national and prefectural Natural Monuments, published registers of exactly the kind this project trusts most.
+3. **Season fit.** Momiji and ginkgo season planning is the strongest expression anywhere of our "at its best right now" advantage, and Tokyo (7 seasonal trees) plus Kyoto are already live to carry it.
+
+**The gate before the wave builds: the demand scan.** One run's worth of work, done before any new Japanese city: take ~20 concrete tree-specific queries (ten Japan, ten UK control: "oldest tree in kyoto", "ginkgo tokyo november", "ancient oak york" and the like), record who ranks on page one today and whether that page one is beatable, plus rough relative demand. If the scan contradicts the structural story, the queue question comes back to Hidde with the scan in hand instead of being quietly re-flipped. The scan's findings go in CURATION.md.
+
+**Interim test that costs nothing:** the ginkgo-November collection (drafted, awaiting his status flip) doubles as the Japan testballon once live; its query performance this autumn is real signal, unlike week-one country splits.

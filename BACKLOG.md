@@ -20,6 +20,19 @@ Build order when the time comes: 1. the worth-it tap after web check-in (tiny, s
 
 **Trigger:** items 1 to 3 buildable on web whenever Hidde says go; item 4 is the app. **Needs Hidde:** the licence text for user photos carries his project's name.
 
+## Top city trips and signature walks (Hidde's direction, 2026-07-27)
+
+Hidde, in session, partially unparking the themed-route idea below. His words, condensed: an **"Ancient Trees top 10" of the best tree city trips** (his gut list: Palermo, Cadiz, Lisbon), and **properly curated, genuinely attractive walking routes** in a handful of prime cities. The model he sketched matches the flywheel above: every big city set up by AI, strengthened by user signals, in a pleasantly walkable map; on top of that a thin, opinionated curated layer. Lists with an opinion are the acquisition surface.
+
+Two build shapes, both his to green-light per piece:
+
+1. **The flagship list: "The 10 best tree city trips"** as a collection-style page (Contract D machinery, research standard, editorial framing per hard rule 8: "our ten favourites", never unverifiable superlatives). Requires verifying anchor trees in cities not yet covered (Palermo's Piazza Marina ficus, Cadiz's Parque Genovés giants). Candidate pool beyond his three: Seville, Rome, Istanbul, Tokyo, Edinburgh, London, Amsterdam.
+2. **One signature walk per prime city**: 60 to 90 minutes, 4 to 6 trees, named, with a real start, end and story arc. Explicitly NOT two-hour marathons; Hidde flagged those as too long. Builds on the existing per-city GPX.
+
+**Trigger:** fired 2026-07-27, same session: Hidde said "run deze maar alvast, ik ben heel benieuwd naar deze lijsten". Research and drafting of the top-10 city trips list is a go; signature walks follow once the list settles which cities are prime.
+
+Addendum, same session: Hidde also wants the user-generated counterpart, **a public list ranked by "deze boom was de trip waard" votes**. That is exactly the worth-signal (flywheel item 1 above), surfaced as a leaderboard. Honesty rule: this list only appears once real vote volume exists; never render a ranking on a handful of votes as if it were consensus, and never fake counts. Until then the worth-tap quietly collects.
+
 ## Parked ideas, brainstormed but not validated (2026-07-26)
 
 From the functionality brainstorm, Hidde approved four verbs as the product (find, walk, collect, season; see CLAUDE.md). The rest of the list is parked here so it neither disappears nor sneaks into a build: themed cross-city route pages, personal records ("the oldest tree you ever stood at"), audio stories at the trunk, the multi-day trip planner. "Die andere weet ik niet," and unknown means not built.
