@@ -30,6 +30,10 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Florence and Naples: dead-end photo pass on both
+
+- Continued rung 5's order after Bologna. Both cities have unusually low photo coverage (Florence 3/10, Naples 1/10) but every fresh Commons/iNaturalist search for their remaining named specimens came back empty this pass, a broader gap than a single missed search. No data changed; full list of what was tried is in CURATION.md so a future pass doesn't repeat it blind.
+
 ## 2026-07-27 — Bologna: 1 more pin corrected via Italy's national monumental tree registry
 
 - Continued rung 5's order after Malaga. The Sequoia of the Giardini Margherita's own RAMI registry entry gives an identical 37.40m height and 5.20m circumference to this project's own sourced figures, a clean match; moved about 110m. Bologna now at 6/10 approximate pins (from 7). Two other gaps tried, stayed genuine dead ends.
