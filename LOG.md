@@ -30,6 +30,13 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Nice: 6 photos found and confirmed by eye, reaching the 8-photo floor
+
+- Continued rung 5's oldest-first order after Munich. Nice was at 2/10 photos; its 9/10 approximate pins are structural (island/garden ensembles like Venice, not a search gap).
+- With image-viewing available this session, found and directly confirmed six photos: Matisse's Olive Tree (the grave's own inscription visible, tree canopy overhead), Jardin Albert 1er, the Aleppo Pine Forest of Mont Boron, Parc Vigier's palm row, the Promenade des Anglais's palms, and Villa Masséna's formal garden. One candidate for the Colline du Château grove was viewed and rejected (wrong subject, no relevant trees), so that single gap stays open.
+- **Nice now at 8/10 photos, clearing the depth-exit-test floor.**
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Visual check on this session's photo backlog: Munich clears the 8-photo floor, three false matches caught
 
 - This session could view images after all (a capability that comes and goes, per earlier notes), so rather than leave tonight's found_needs_check photos for a future run, checked every one by eye.
