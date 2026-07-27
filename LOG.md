@@ -40,6 +40,19 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-27 — Kyoto's Hosen-in pine gets a photo; Naples, Florence, Barcelona photo dead ends closed out with new techniques
+
+Visitors: 64 visits, 98 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 16), a new high for a single day.
+
+- Rung 0/0b/3 checks first: no reader submissions (CSV still header row only), site healthy at session start, and a fresh news search for fallen/felled trees turned up nothing matching a tree this site actually publishes.
+- Checked the depth-exit-test bar directly: still short on Amsterdam (7/10 photos), Lisbon (6/10), Rome (6/10) and Istanbul (2/10 photos, 6 approx). All four have had many genuine dead-end passes today already across Wikimedia, iNaturalist, Flickr, Openverse and national registries, so rather than re-run identical searches, spent this pass on cities with a genuinely untried angle instead.
+- **Naples (worst photo coverage on the site, 1/10)**: closed out the two techniques an earlier pass today flagged as worth trying but hadn't. Campania's own regional monumental-trees register turned out to have photos for six of the eight remaining trees, but its licence is a bespoke non-commercial "Copyfree" term, not open, so it's a dead end for photos (a good coordinate/fact source, not a photo source). Wiki Loves Monuments Italia has nothing Naples-tree-specific. One close call at the Sant'Andrea delle Dame cloister (two genuinely open-licensed Commons photos) correctly not approved: both are dominated by the cloister's palms, with only a small, unidentifiable sliver of another tree in frame, not confidently the registered holm oak. Naples stays at 1/10.
+- **Florence (4/10 photos)**: same two techniques tried on its remaining 6 gaps. Tuscany's own RAMI registry has photos for five of the six trees, same non-open licence problem. One near miss: intoscana.it has a photo of the Cedar Above Pegasus itself, but the page carries no licence statement at all, so it's unusable by default. Florence stays at 4/10.
+- **Kyoto (6/10 photos) got a real find**: famous named temple trees are often much better photographed than ordinary park trees, and it paid off once. The Five-Needle Pine of Hosen-in now has an approved photo, Commons file "宝泉院_01.JPG", CC BY-SA 3.0 (Maechan0360), viewed directly: the temple's own signature framed-garden shot, an unambiguous match. Kyoto now at 7/10. Two more candidates (Daigo-ji's and Kamigamo's famous weeping cherries) are real, correctly-licensed photos of the right temple, but neither temple has just one named cherry and neither caption ties the photo to this project's specific named tree, so both stay honestly unapproved rather than guessed; a future pass with a source naming the specific tree in either photo could close these.
+- **Barcelona's Silk Tree of the Ciutadella (bcn_008)** got its first dedicated individual photo search since it replaced the old La Rambla ensemble; confirmed real via Barcelona's own municipal tree catalogue, but no open-licensed photo exists. Barcelona stays at 7/10.
+- Full per-tree detail (sources tried, exact rejection reasons) in CURATION.md so none of this gets re-tried expecting a different result.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Dead-tree sweep: both confirmed carcasses replaced, plus a second one found in Dublin, plus a real redirect bug fixed
 
 Visitors: 63 visits, 97 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 15), the strongest closing day of the week.
