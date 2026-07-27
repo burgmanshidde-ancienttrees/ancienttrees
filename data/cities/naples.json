@@ -308,9 +308,9 @@
       "age_min": 100,
       "age_max": 200,
       "location": {
-        "address": "Complesso di Sant'Andrea delle Dame, Vico Luigi De Crecchio, 80138 Napoli",
-        "latitude": 40.8523,
-        "longitude": 14.2529,
+        "address": "Complesso di Sant'Andrea delle Dame, Via Luigi De Crecchio 17, 80138 Napoli",
+        "latitude": 40.852566,
+        "longitude": 14.252485,
         "neighbourhood": "San Lorenzo"
       },
       "story": "Four 16th century Neapolitan noblewomen, sisters who took religious vows together, founded the convent whose cloister now holds this holm oak, one of two trees the site is best known for alongside a camphor said to have been planted by Joachim Murat during his brief reign as King of Naples. At 24 metres, the oak is the taller of the pair and the more anonymously documented, no individual planting date or attributed founder the way the camphor has, simply a long-established presence in a cloister garden enclosed by piperno stone arcades and rows of Washingtonia palms locally reckoned the tallest in the city. The convent the sisters founded in 1580 has since become the Faculty of Medicine of the University of Campania Luigi Vanvitelli, and the cloister, once a place of enclosed religious life, now sits inside a working university building, its centuries-old wooded garden intact around students and staff rather than nuns. Quercus ilex is Mediterranean by origin, evergreen year round, and slow enough growing that a specimen this size represents a very long, very undocumented stretch of the site's history.",
@@ -327,8 +327,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "24m height and general cloister setting corroborated across two independent sources; the Murat-planted camphor detail is mentioned for context but that is a different tree, not this entry. No individual age or planting date documented for the oak itself; presented as a broad mature estimate. No usable photo found.",
-      "location_precision": "approximate"
+      "notes": "24m height and general cloister setting corroborated across two independent sources; the Murat-planted camphor detail is mentioned for context but that is a different tree, not this entry. No individual age or planting date documented for the oak itself; presented as a broad mature estimate. Pin corrected 2026-07-27, about 45m: Campania's regional monumental-tree register carries two other specimens sharing this exact cloister (scheda 223, the Washingtonia palms; scheda 224, the camphor mentioned in this story), both giving identical coordinates (40.852566, 14.252485) for the cloister itself. The register has no separate entry for the holm oak specifically, so this isn't a direct match on this tree, but two independent official records placing its named companions in the same small courtyard is strong enough corroboration for the cloister location to confirm. No usable photo found.",
+      "location_precision": "confirmed"
     }
   ]
 }
