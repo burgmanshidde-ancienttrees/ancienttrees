@@ -1569,10 +1569,11 @@ def build_question_page(city_entry, collections, pages):
         "acceptedAnswer": {"@type": "Answer", "text": f["a"]},
     } for f in related]
 
-    coll = collections[0] if collections else None
+    city_collections = [c for c in collections if any(e["city_slug"] == cslug for e in c.get("entries", []))]
+    coll = city_collections[0] if city_collections else None
     coll_link = (
-        f'<p class="prose-block">The yew, the oaks and their peers across other cities are collected in '
-        f'<a href="../collections/{coll["slug"]}">{esc(coll["title"])}</a>.</p>'
+        f'<p class="prose-block">One of {esc(city)}\'s trees also appears in '
+        f'<a href="../collections/{coll["slug"]}">{esc(coll["title"])}</a>, a themed collection spanning several cities.</p>'
         if coll else
         '<p class="prose-block">See more <a href="../collections">themed collections</a> of remarkable trees.</p>'
     )
