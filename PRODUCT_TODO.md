@@ -32,6 +32,6 @@ Since blueprint v1.3 (2026-07-27) collections publish without owner approval, un
 Every qualifying tree across all 33 cities gets an honest `best_time` (species with a real peak only; evergreens get none, per Step 3's rules).
 **Done when:** a count script shows every ginkgo, wisteria, wingnut, horse chestnut, magnolia and deciduous-showpiece species carries `best_time`, and no evergreen (yew, holm oak, cypress, cedar, pine, camphor, olive) does.
 
-### 6. Internal linking pass for the collections and species pages
+### 6. DONE 2026-07-27, built across two passes: internal linking for collections and species pages
 Question pages should link a relevant collection where one exists; species pages should be linked from every tree of that species (already contract-checked) and from city pages where 3+ trees share a species.
-**Done when:** link-count contracts still validate and a grep confirms collection links on at least the city pages whose trees appear in a collection.
+Species linking shipped first (5 cities). The collection-linking half turned up a real bug on the way: both the question page and the city page were picking the same first collection unconditionally regardless of whether the city actually had a tree in it, with hardcoded copy ("the yew, the oaks", "Several of these trees") that was false for most cities. Fixed both to filter by actual membership and state the real count. Verified on built output: 23 question pages and every city with a collection tree now link a genuinely relevant one, the rest fall back to a generic `/collections` link. Nothing left in this item.
