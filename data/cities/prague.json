@@ -279,8 +279,8 @@
       "age_max": 170,
       "location": {
         "address": "Seminarska zahrada, above the pond below Petrinske terasy, 118 00 Praha 1",
-        "latitude": 50.0839,
-        "longitude": 14.3990,
+        "latitude": 50.083939,
+        "longitude": 14.399024,
         "neighbourhood": "Mala Strana, Petrin"
       },
       "story": "Field maples are usually shrubs. Left alone, most stay a scrubby hedge tree, rarely climbing past a few metres. This one, in the Seminary Garden on Petrin's eastern slope, ignored the script and grew into a proper 24 metre tree, the only field maple in Prague to earn individual legal protection because of it. Its trunk measured 285 centimetres around in a 2013 survey, thick for a species whose Czech name, babyka, is usually attached to something closer to a bush. Prague declared it a protected memorial tree on 19 June 2009, and it stands above a small pond just below the Petrinske Terasy restaurant, roughly 250 metres north of the Nebozizek cable car stop, a stretch of the garden slightly off the paths most visitors to Petrin actually walk. At an estimated 160 to 170 years old, it has had more than enough time to prove it is the exception rather than the rule for its species. People who study field maples cite examples like this one as evidence the plant's usual shrub form is a matter of circumstance, not biology. Give it room, apparently, and a field maple will eventually decide to become a tree instead.",
@@ -297,8 +297,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Registered pamatny strom (registry 105426/13166), protected since 19 June 2009. Girth (278-285 cm across 2008 and 2013 measurements), height (24 m) and the 2009 registration date are confirmed on the Czech Wikipedia article; the Wikidata entry corroborates the same registry numbers and species identification, but no independent narrative source was found beyond these two closely linked records, so this is flagged as thinner sourcing than the rest of the list despite the consistent data.",
-      "location_precision": "approximate"
+      "notes": "Registered pamatny strom (registry 105426/13166), protected since 19 June 2009. Girth (278-285 cm across 2008 and 2013 measurements), height (24 m) and the 2009 registration date are confirmed on the Czech Wikipedia article; the Wikidata entry corroborates the same registry numbers and species identification, but no independent narrative source was found beyond these two closely linked records, so this is flagged as thinner sourcing than the rest of the list despite the consistent data. Pin upgraded to confirmed 2026-07-27: this entry's own already-cited Wikidata item (Q26790033, specifically about this one tree) carries an individual P625 coordinate claim (50.083939, 14.399024) essentially identical to the stored pin, so the existing position is independently verified rather than a park-level estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "prg_010",

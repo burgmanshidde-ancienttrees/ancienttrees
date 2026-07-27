@@ -30,6 +30,12 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Prague: one pin independently confirmed via Wikidata, one photo lead checked and correctly rejected
+
+- Kept applying the technique that just paid off twice on Athens and Vienna: check each remaining approximate pin against whatever source the entry already cites. Prague's Field Maple of the Seminary Garden already cited a Wikidata item about this specific tree; its raw coordinate data matches the stored pin almost exactly, so this one gets upgraded to `confirmed` rather than corrected. Neruda's Pear Tree has no such source and stays honestly approximate.
+- Also chased Neruda's Pear Tree's missing photo: one Commons candidate looked promising by filename (mentions "Nerudy") but turned out, once viewed directly, to be a generic playground photo, the filename referring to the adjacent street rather than this tree. Correctly not used. Prague stays at 9/10 photos.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Vienna: another wrong-location pin fixed (Ginkgo of Schönbrunn, 700m off), sourced from the city's own monument register
 
 - Checked Vienna since it was already close to done (10/10 photos, 2/10 approximate). One of the two remaining approximate pins, the Ginkgo of Schönbrunn, turned out to be a genuine location error rather than honest vagueness: the entry's own already-cited source, Vienna's official Naturdenkmal register (published as a Wikipedia table), gives this specific protected tree (Nr. 110, matching on every fact: 1781 import, oldest ginkgo in Austria, protected since 1939) its own coordinates in Schönbrunn's Botanical Garden, about 700m from where this project had it pinned near the Wagenburg. Moved the pin and corrected the story/transport text to match. Vienna now at 10/10 photos and 1/10 approximate (a genuine ~4.5km avenue, the only remaining one).
