@@ -154,8 +154,8 @@
       "age_max": 266,
       "location": {
         "address": "Provost's Courtyard, No. 1 Grafton Street, Trinity College Dublin, Dublin 2",
-        "latitude": 53.3413,
-        "longitude": -6.2578,
+        "latitude": 53.3436,
+        "longitude": -6.2587,
         "neighbourhood": "Trinity College, Dublin 2"
       },
       "story": "Trinity College's own estates team cannot quite agree on how old their most impressive tree is. One internal account points to an image of it from 1760; another puts its planting in the early 1800s, documented on the college's 1892 tree map, and its age at around two hundred years. Either way, it has been rooted at the corner of Grafton and Nassau Street since before Dublin had trams, and that turned out to matter. When the city's first tram line opened along Nassau Street in 1872, and again a century later when the Luas arrived, the plane needed pruning on a schedule built around a transport timetable, including nighttime work between midnight and half past three so services would not be disrupted. It now stands 31 metres tall with a canopy spreading nearly 30 metres, and a girth of 4.64 metres that took two centuries to grow. It shades a corner of the Provost's private garden behind a high wall, and most of the shoppers on Grafton Street a few metres away have no idea it is there.",
@@ -172,7 +172,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Trinity's own two published sources disagree on planting date (a 1760 image versus an early-1800s planting recorded on an 1892 tree map), so age is presented as a range rather than a single figure.",
+      "notes": "Trinity's own two published sources disagree on planting date (a 1760 image versus an early-1800s planting recorded on an 1892 tree map), so age is presented as a range rather than a single figure. Pin moved about 260m to the Provost's House building itself (OpenStreetMap has it individually named at No. 1 Grafton Street, an exact match to TCD's own stated address), from a looser campus-area estimate. The tree stands in the walled courtyard behind this building rather than at its front door, so kept at `approximate` rather than `confirmed`.",
       "location_precision": "approximate"
     },
     {
