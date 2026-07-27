@@ -30,6 +30,14 @@ Collections publish without your approval since blueprint v1.3; new ones simply 
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Barcelona's Magnolia of the Maternity Gardens gets a photo via a new source (Openverse API)
+
+- Visitors: 58 visits, 91 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 10), a real uptick from yesterday's flat run of low-single-digit closing days. No submissions (CSV still header row only). Site built clean at the start, nothing published found wrong.
+- Checked the depth-exit-test bar directly from the data rather than trusting memory: Amsterdam 7/10 photos (0 approx), Lisbon 6/10 (0), Rome 7/10 (0), Barcelona 6/10 (0), Tokyo 8/10 (1), Paris 8/10 (0), London 10/10 (2), Istanbul 2/10 (6 approx), still furthest behind. Every remaining photo gap on these cities had already had multiple dead-end passes today across Wikimedia, iNaturalist, Flickr and general search, so rather than re-run the same searches, queried Openverse's API directly (federates Flickr/Wikimedia/other open repositories with server-side licence filtering), a technique not yet tried in dedicated form today.
+- **Barcelona's Magnolia of the Maternity Gardens (bcn_007) gets a photo**: two CC BY-SA 2.0 Flickr photos by Josep Trepat Font, titled in Catalan with the tree's own name. Viewed directly before approving: a magnolia in white bloom against the Modernista hospital building the story describes, matching the entry's June-July `best_time` too. Barcelona now at 7/10 photos.
+- Every other gap tried this pass (Rome's remaining 3, Barcelona's other 3, Lisbon's 4, Amsterdam's 3, Istanbul's 8) stayed a genuine dead end via this new source too, two near-misses (a non-commercial Orto Botanico shot for Rome, a non-commercial cedar for Barcelona's Labyrinth Cedar) correctly not used. Full detail in CURATION.md so a future pass doesn't retry Openverse on these same trees expecting a different result.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — A third collections pass: the great planes of Europe
 
 - One more item 4 pass. Of the 43 plane trees across the site, picked ten with the most distinctive individual stories, one per city, deliberately avoiding the three planes already anchoring today's other new collections (Istanbul's Bahçeköy plane, Prague's Beethoven Plane and Rome's Adonis all already appear in "The Oldest Tree in Every Country We Map") so the two pages don't read as reruns of each other.

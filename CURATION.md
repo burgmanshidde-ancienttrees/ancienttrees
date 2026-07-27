@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Openverse's direct API tried on every exit-test city's remaining photo gaps; one real find (Barcelona's Magnolia)
+
+- Rung 5's remaining photo gaps (Rome's 3, Barcelona's 4, Lisbon's 4, Amsterdam's 3, Istanbul's 8) had all been hit hard today with Wikimedia, iNaturalist and general web search; queried Openverse's API directly (`api.openverse.org/v1/images`, which federates Flickr, Wikimedia and other open repositories with server-side licence filtering) as a technique not yet tried in dedicated form.
+- **A real find: the Magnolia of the Maternity Gardens (bcn_007)**. Two CC BY-SA 2.0 photos by Josep Trepat Font (Flickr), titled "Magnolia dels Jardins de la Maternitat", the tree's own name in Catalan. Fetched and viewed the clearer one directly: a large tree in white bloom against a red-brick Modernista building, matching this entry's own story (planted in the grounds of a Modernista-era maternity hospital) and its June-July `best_time` exactly. Approved. Barcelona now at 7/10 photos.
+- **Everything else stayed a genuine dead end**, confirmed from this new angle: Rome's Cork Oak of the Orangery, Twin Planes of the Eleven Fountains and Aleppo Pine of Celimontana (one near-miss, a by-nc-nd Orto Botanico shot, correctly not used); Barcelona's Holm Oak of Carrer de l'Encarnacio and Silk Tree of the Ciutadella; Lisbon's Coral Trees, Nettle Tree, Ginkgo of Praça Paiva Couceiro and Giant Rubber Tree; Amsterdam's Heimanseik, Vondelpark Poplar and Amstelkade Olive Willow; Istanbul's Ahtapot Çınar, Beykoz Çayırı planes, Büyükada cypress, Çamlıca pines and Florya mastic tree (one near-miss, a by-nc-sa Parc del Laberint cedar for Barcelona's own Himalayan Cedar of the Labyrinth, correctly not used either). Openverse simply doesn't index most of these specific trees under any language variant tried.
+- Rome stays 7/10, Lisbon 6/10, Amsterdam 7/10, Istanbul 2/10; none crossed 8. Barcelona is the only city this pass moved.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Lisbon's Tipu gets a photo; Amsterdam's three remaining gaps re-confirmed as dead ends
 
 - **The Tipu of Jardim de São Bento (lis_005)**: found on Wikimedia Commons, two angles by the same photographer, both CC BY-SA 4.0. Used the clearer one (https://commons.wikimedia.org/wiki/File:Chaimite_no_Jardim_da_Pra%C3%A7a_da_Constitui%C3%A7%C3%A3o_de_1976.jpg, GualdimG), captioned with the tree's Portuguese common name and its actual garden. Lisbon now at 6/10 photos.
