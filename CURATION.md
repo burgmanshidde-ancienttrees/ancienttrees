@@ -2,6 +2,13 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Bologna: 1 pin corrected via Italy's national monumental tree registry
+
+- Continued down rung 5's order after Malaga, back to Bologna (7/10 approximate, last touched 2026-07-26). Italy's national monumental tree registry (RAMI), already the source for three prior Bologna matches, resolved one more: the Sequoia of the Giardini Margherita's own registry entry gives an identical 37.40m height and 5.20m trunk circumference to this entry's own sourced figures, an exact measurement match. Moved about 110m.
+- Tried the Cypress of Carducci's Tomb and the Camphor of San Michele in Bosco via both RAMI search and general web search; neither turned up a registry entry or usable source this pass, genuine dead ends for now.
+- Bologna now at 6 of 10 approximate pins (from 7). Photos unchanged.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Malaga: a genuine dead-end pass on photos, one candidate rejected on identification grounds
 
 - Continued down rung 5's oldest-first order after Granada, to Malaga (3/10 photos, 10/10 approximate, untouched since original research). All 7 photo gaps tried with fresh Commons/iNaturalist searches.
