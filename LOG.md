@@ -30,6 +30,14 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Dublin: a real pin/story fix on the Sculpted Cypress; a thorough dead-end pass on Istanbul, Edinburgh and Dublin's national tree register
+
+- Visitors: 48 visits, 77 page views over 7 days (21-26 July: 8, 9, 10, 7, 4, 9), flat. No submissions (CSV still header row only). Site healthy, nothing published was wrong at the start of this pass.
+- This session could view images directly (fetch, then read the saved file), so used it to re-check the one outstanding pending photo site-wide (Milan's Ginkgo of Brera) and to finally look at leads several prior passes could only find, not view. Full detail in CURATION.md; short version: Istanbul's Çengelköy Plane photo lead is now a confirmed dead end (viewed all 7 candidate photos directly, none show the tree), and Küçük Çamlıca's named pine trees in OpenStreetMap are real but don't include the specific one this project needs (Ata Fıstık Çamı).
+- **One real fix, not just a dead end**: Dublin's Sculpted Cypress (dub_007) had a genuine bug sitting in the data. A previous run's own verification note already knew, from the photo's Commons caption, that the sculpture stands at "the junction of Watermill Road and James Larkin Road," but the entry's story and address text still said "Clontarf Road," a road that doesn't actually meet Watermill Road anywhere near there, and the pin was never moved to match. Verified the correct junction independently via OpenStreetMap's own road geometry (it ends within 35m of the separately-mapped Bull Island Causeway, matching the same caption's "opposite Bull Island Causeway" detail) and fixed the story, address and pin, a real 700m correction.
+- Istanbul's photo count stays at 2/10 (this pass closed a lead rather than opening one); Edinburgh and Dublin's other approximate pins stayed unchanged, tried hard via OpenStreetMap and Dublin City Council's own open tree dataset but none confirmable enough to change without guessing.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Florence and Naples: dead-end photo pass on both
 
 - Continued rung 5's order after Bologna. Both cities have unusually low photo coverage (Florence 3/10, Naples 1/10) but every fresh Commons/iNaturalist search for their remaining named specimens came back empty this pass, a broader gap than a single missed search. No data changed; full list of what was tried is in CURATION.md so a future pass doesn't repeat it blind.
