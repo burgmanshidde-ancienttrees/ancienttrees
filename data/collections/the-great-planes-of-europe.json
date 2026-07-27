@@ -1,0 +1,59 @@
+{
+  "slug": "the-great-planes-of-europe",
+  "title": "The Great Planes of Europe",
+  "status": "published",
+  "meta_description": "Ten plane trees across ten European cities, from a Dublin tree swallowing a Victorian bench to a Naples cloister named for one that no longer exists.",
+  "intro": "A plane tree does not need to be the oldest thing in a city to be the most memorable. These ten, one per city, got their reputations from a bench eaten alive, a botanist's afternoon walks with Mozart, a bridge widening that moved two full-grown trunks by raft rather than fell them. None are ornamental additions to a park; each is the reason people know that particular corner at all. Start in Dublin, where a Victorian bench has been losing a very slow fight for decades.",
+  "entries": [
+    {
+      "city_slug": "dublin",
+      "tree_id": "dub_001",
+      "note": "A cast iron Victorian bench has been disappearing into this plane for decades, and the tree is winning. Bark now spills over the seat's arms and back inside the gates of King's Inns, Ireland's school of law since 1541."
+    },
+    {
+      "city_slug": "vienna",
+      "tree_id": "vie_005",
+      "note": "Its memorial stone calls it the Jacquin-Platane, after the botanist who planted it around 1780, but almost nobody in Vienna uses that name. Mozart walked past it often enough on his way to piano lessons at the planter's house nearby that the nickname stuck instead."
+    },
+    {
+      "city_slug": "paris",
+      "tree_id": "par_004",
+      "note": "Planted in 1785 by Buffon, then the most famous scientist in Europe, one of three oriental planes he put in the garden he had run for half a century. This is the sole survivor."
+    },
+    {
+      "city_slug": "brussels",
+      "tree_id": "bru_003",
+      "note": "The thickest tree of its kind anywhere in Brussels, measured at 6.48 metres around in 2023, in a park built over a vanished stream. It only joined the region's legal heritage inventory in 2024, formal recognition arriving two centuries after the tree itself."
+    },
+    {
+      "city_slug": "bologna",
+      "tree_id": "bol_004",
+      "note": "Grows in a garden raised more than four metres above the surrounding piazza, ground once used from 1612 as a riding school for horsemanship before a noble family converted it to a private garden."
+    },
+    {
+      "city_slug": "naples",
+      "tree_id": "nap_007",
+      "note": "The tree standing today is not the one the Cloister of the Platano was named for, though it regrew from that tree's felled root after 1959. Legend credits the original planting to Saint Benedict of Norcia in the 5th or 6th century."
+    },
+    {
+      "city_slug": "milan",
+      "tree_id": "mil_002",
+      "note": "The largest plane tree in Milan grows sideways more than tall, a trunk 8.36 metres around, the widest of any plane in the city, standing about 50 metres from the statue of the journalist the park was renamed for."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_003",
+      "note": "The only Great Tree of London within the Square Mile, growing in the churchyard of a church the Great Fire of 1666 destroyed and nobody ever rebuilt. By 1853 a cab company was already advertising its location as simply 'Under the tree, Cheapside'."
+    },
+    {
+      "city_slug": "amsterdam",
+      "tree_id": "ams_002",
+      "note": "When the city needed to widen a bridge in 1925, engineers floated these two fully grown planes sideways on rafts, roots and all, rather than fell them, after nearby residents objected loudly enough."
+    },
+    {
+      "city_slug": "verona",
+      "tree_id": "ver_002",
+      "note": "A single trunk 505cm around fills most of the garden at the centre of Piazza Indipendenza, its 35.5 metre canopy making it one of the tallest plane trees recorded anywhere in Verona. Municipal records place it as already mature by 1941."
+    }
+  ]
+}
