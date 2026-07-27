@@ -65,8 +65,8 @@
       "age_max": 150,
       "location": {
         "address": "Piazza Indipendenza, 37121 Verona",
-        "latitude": 45.4428,
-        "longitude": 10.9996,
+        "latitude": 45.442705,
+        "longitude": 11.000061,
         "neighbourhood": "Citta Antica"
       },
       "story": "One tree fills most of the garden at the centre of Piazza Indipendenza, a trunk 505cm around supporting a canopy 35.5 metres tall, official measurements that make it, by height, one of the largest plane trees recorded anywhere in Verona. Municipal records place it as already a well-grown, mature specimen by 1941, which puts its actual planting date decades earlier still, though no precise year survives in the sources checked for this entry. The square itself sits inside Verona's ancient walled centre, redeveloped and reopened to the public in 2017 after a period of restoration, and the city's own environmental office chose this exact plane, alongside a neighbouring ginkgo, to launch a smartphone project cataloguing the stories behind Verona's individual trees, a small sign of how locally significant this specimen already is. Common planes like this one can live for centuries under the right conditions, and this one, still visibly healthy and now protected under Italy's national monumental-tree register, looks set to outlast the current square by as much as it has outlasted the last one.",
@@ -83,8 +83,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Dimensions (505cm circumference, 35.5m height) from the official AMI national monumental-trees listing, corroborated by the city's own press office covering the same tree as part of its tree-heritage app project. No individual planting date documented beyond 'already mature by 1941'. Photo verified directly: shows a large plane trunk and canopy in a garden square setting with a stone balustrade, consistent with the described location.",
-      "location_precision": "approximate"
+      "notes": "Dimensions (505cm circumference, 35.5m height) from the official AMI national monumental-trees listing, corroborated by the city's own press office covering the same tree as part of its tree-heritage app project. No individual planting date documented beyond 'already mature by 1941'. Photo verified directly: shows a large plane trunk and canopy in a garden square setting with a stone balustrade, consistent with the described location. Pin refined 2026-07-27 and set to confirmed: ilregistrodeglialberi.it, a registry aggregator explicitly citing this tree's AMI listing, gives GPS coordinates (45.442705, 11.000061) with an identical circumference and height (505cm, 35.50m) to this entry's own figures, an exact match rather than a mere corroboration.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ver_003",

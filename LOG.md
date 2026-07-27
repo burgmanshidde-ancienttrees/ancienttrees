@@ -30,6 +30,12 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Verona: a new registry source confirms the Piazza Indipendenza plane's pin exactly
+
+- Continued to Verona after Antwerp. Found a new source (ilregistrodeglialberi.it, a per-tree registry aggregator, unlike the unreliable spreadsheet a prior pass had already flagged) that gives GPS coordinates for the Plane Tree of Piazza Indipendenza matching this entry's own circumference and height figures exactly. Refined the pin about 30m and set `confirmed`. Two more entries (a second Himalayan cedar, a cypress and mulberry that plausibly match existing ensemble entries) were checked on the same source and correctly left alone: either a real mismatch or no coordinates published.
+- Verona now at 6/8 approximate pins (from 7). Photos untouched, still 2/8.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Antwerp: a real 800m pin fix on a national record-holding poplar; four photo gaps stayed honest dead ends
 
 - Visitors: 49 visits, 78 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 1), flat. No submissions (CSV still header row only).
