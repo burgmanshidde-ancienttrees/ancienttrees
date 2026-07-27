@@ -214,12 +214,12 @@
       "age_max": 210,
       "label": "Sculpted deadwood",
       "location": {
-        "address": "St Anne's Park, near the Watermill Road / Clontarf Road corner, Raheny, Dublin 5",
-        "latitude": 53.3775,
-        "longitude": -6.1735,
+        "address": "St Anne's Park, near the Watermill Road / James Larkin Road corner (opposite the Bull Island causeway), Raheny, Dublin 5",
+        "latitude": 53.3741,
+        "longitude": -6.1646,
         "neighbourhood": "Raheny / Clontarf"
       },
-      "story": "When this two hundred year old Monterey cypress finally died, St Anne's Park did not remove it. Instead, over three years starting in 2015, UK chainsaw artist Tommy Craggs carved its dead trunk into a vertical menagerie: an octopus wrapped around the base, birds and small mammals climbing toward a swan perched at the very top, all modelled on animals found in the park itself and on the sandbars of nearby Bull Island. The final three metres were finished in June 2018. It stands at the park's northeast corner, near where Watermill Road meets Clontarf Road, a part of the grounds most visitors miss on their way to the rose garden. The tree was already ornamental once, planted as one of the wind-breaking evergreens Lord Ardilaun favoured when he developed the St Anne's estate in the late 19th century. Dead wood usually gets cleared. This piece got a second life as public art instead, oiled and left to weather outdoors like anything else in the park. Entry to St Anne's Park is free, at any hour.",
+      "story": "When this two hundred year old Monterey cypress finally died, St Anne's Park did not remove it. Instead, over three years starting in 2015, UK chainsaw artist Tommy Craggs carved its dead trunk into a vertical menagerie: an octopus wrapped around the base, birds and small mammals climbing toward a swan perched at the very top, all modelled on animals found in the park itself and on the sandbars of nearby Bull Island. The final three metres were finished in June 2018. It stands at the park's northeast corner, near where Watermill Road meets James Larkin Road, opposite the Bull Island causeway, a part of the grounds most visitors miss on their way to the rose garden. The tree was already ornamental once, planted as one of the wind-breaking evergreens Lord Ardilaun favoured when he developed the St Anne's estate in the late 19th century. Dead wood usually gets cleared. This piece got a second life as public art instead, oiled and left to weather outdoors like anything else in the park. Entry to St Anne's Park is free, at any hour.",
       "verified_sources": [
         "https://www.thejournal.ie/tree-sculpture-raheny-4387926-Dec2018/",
         "https://en.wikipedia.org/wiki/Saint_Anne%27s_Park"
@@ -233,7 +233,7 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Photo verified on Commons: caption places it exactly at 'the junction of Watermill Road and James Larkin Road' in St Anne's Park, carved from a dead Monterey cypress by Tommy Craggs, matching this entry precisely (source's 2015 vs this entry's 2015-2018 carving timeline is consistent, the piece was finished in stages).",
+      "notes": "Photo verified on Commons: caption places it exactly at 'the junction of Watermill Road and James Larkin Road (opposite Bull Island Causeway)' in St Anne's Park, carved from a dead Monterey cypress by Tommy Craggs, matching this entry precisely (source's 2015 vs this entry's 2015-2018 carving timeline is consistent, the piece was finished in stages). The story and address text had never been updated to match that caption, still naming 'Clontarf Road' instead; fixed 2026-07-27, along with the pin, moved about 700m to OpenStreetMap's Watermill Road / James Larkin Road junction (both roads' own geometry meet within 35m of the Bull Island Causeway entrance, an independent confirmation of the photo's own location description).",
       "location_precision": "approximate"
     },
     {
