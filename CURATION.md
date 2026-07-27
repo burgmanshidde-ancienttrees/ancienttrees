@@ -2,6 +2,12 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Dead-tree rule set by Hidde; suspect list for the sweep
+
+- Hidde, in session, seeing Queen Elizabeth's Oak (lon_005, a fenced carcass since 1991): "we doen niet aan dode bomen." Rule recorded in CLAUDE.md Step 1: every entry must be a living tree; dead trees are story context only. Replacements reuse the id (bcn_008 precedent).
+- CONFIRMED dead, replace first: lon_005 (Queen Elizabeth's Oak, Greenwich), vie_002 (Stock im Eisen, a nailed dead trunk in a display case).
+- SUSPECTS to verify one by one (story mentions death-adjacent words; most will be innocent context): ams_002, ams_009, ant_008, ant_010, ath_001, ath_009, ath_010, bcn_003, ber_006, ber_010, bol_002, bol_004, bol_009, dub_001, dub_004, dub_006, dub_007, edi_006, edi_009, edi_010, gra_001, gra_002, gra_007, ist_001, ist_004, ist_005, kyo_001, lis_002, lon_003, lon_010, lyo_009, mlg_002, mil_009, muc_009, nap_004, nap_005, nap_007, nap_008, nyc_006, nyc_007, nce_002, nce_003, nce_005, par_004, par_007, por_004, por_009, prg_008, rom_001, rom_002, rom_007, tok_003, tok_004, tok_005, tok_008, vlc_003, ven_002, ven_007, ver_005, ver_008, vie_008. Judge on: is the ENTRY's tree alive today? Regrowth from old roots (bcn_003) and living replantings described as such (par_007) pass. One city per pass, verify before replacing, honest notes.
+
 ## 2026-07-27 — Florence: the Micheli Yew gets a photo via Openverse; a wrong-statue candidate for the Cedar Above Pegasus caught and rejected
 
 - Continued the Openverse pass onto Florence (0/10 approximate, 3/10 photos, already a same-day dead-end pass on Wikimedia/iNaturalist for all 7 remaining gaps).
