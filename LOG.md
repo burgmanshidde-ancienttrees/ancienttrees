@@ -30,6 +30,13 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Istanbul: found the real data behind its monument-tree registry, 4 pins meaningfully tightened
+
+- Istanbul has been the furthest-behind of the eight lead cities all day. Past runs kept hitting anitagac.istanbul's map as an unreadable JavaScript wall. Traced it back to what actually powers it: a public ArcGIS Online feature service covering all of Turkey's monumental trees, directly queryable over a normal API. Used it (plus OpenStreetMap and direct geocoding) to move four pins closer to the truth: the Oldest Plane of Bahçeköy (~1.3km, to the real forestry-faculty campus), the Ahtapot Çınar (~1.2km, to the farm its own address already names), the Plane Trees of Beykoz Çayırı (~1km, to a meadow two independent sources now agree on) and the Ata Fıstık Çamı (~170m, tightened on a matching age record).
+- One dead end worth flagging so nobody chases it again: the same registry's photo links looked promising, but the domain behind a third of them has expired and now redirects to an unrelated gambling site. Not a licensing problem, the links are simply gone.
+- Istanbul's photos (2/10) untouched this pass; pins were the win today.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Verona: a new registry source confirms the Piazza Indipendenza plane's pin exactly
 
 - Continued to Verona after Antwerp. Found a new source (ilregistrodeglialberi.it, a per-tree registry aggregator, unlike the unreliable spreadsheet a prior pass had already flagged) that gives GPS coordinates for the Plane Tree of Piazza Indipendenza matching this entry's own circumference and height figures exactly. Refined the pin about 30m and set `confirmed`. Two more entries (a second Himalayan cedar, a cypress and mulberry that plausibly match existing ensemble entries) were checked on the same source and correctly left alone: either a real mismatch or no coordinates published.
