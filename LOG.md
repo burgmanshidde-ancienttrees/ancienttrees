@@ -30,6 +30,12 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Seville: a pin corrected via a newly-found OSM technique (named glorietas), one photo confirmed by eye
+
+- Moved to Seville next (5/10 photos, 7/10 approximate, never touched by a depth pass). New lead: Parque de María Luisa's many named clearings (glorietas) are individually mapped in OpenStreetMap. Matched and moved the Fig of the Glorieta de Goya's pin about 190m to the named feature, and found a Commons photo whose own caption ("gran ficus en el centro") and content are an unambiguous match, approved. Two other glorieta-named entries checked against the same rich OSM coverage came up genuinely absent, left alone rather than guessed.
+- Seville now at 6/10 photos (from 5) and 6/10 approximate (from 7).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Prague: one pin independently confirmed via Wikidata, one photo lead checked and correctly rejected
 
 - Kept applying the technique that just paid off twice on Athens and Vienna: check each remaining approximate pin against whatever source the entry already cites. Prague's Field Maple of the Seminary Garden already cited a Wikidata item about this specific tree; its raw coordinate data matches the stored pin almost exactly, so this one gets upgraded to `confirmed` rather than corrected. Neruda's Pear Tree has no such source and stays honestly approximate.

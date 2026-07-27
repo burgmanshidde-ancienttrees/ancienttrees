@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Seville: one pin corrected and confirmed, one photo found and viewed
+
+- Continued the ladder to Seville (5/10 photos, 7/10 approximate before this pass, untouched by any depth pass so far). Found that Parque de María Luisa's many named glorietas (roundabout clearings) are individually mapped in OpenStreetMap, a new lead not tried before.
+- **The Fig of the Glorieta de Goya (sev_009)**: matched an OSM feature individually named "Glorieta de Goya," about 190m from the stored estimate (the original sources gave no coordinates at all, only a description near Plaza de España's north tower). Moved and set `confirmed`. Also found and viewed a Commons photo directly: its own Spanish caption reads "Glorieta de Goya, con un gran ficus en el centro," and the image shows exactly that, a Moreton Bay fig with dramatic buttress roots filling a circular railed clearing. Approved.
+- **Tried and correctly left alone**: the Centennial Hackberries' Glorieta Rafael de León (sev_006) and the Camphor Tree's Glorieta de Doña Sol (sev_010) have no matching named feature in OpenStreetMap despite the park's otherwise rich glorieta coverage (checked ~30 named glorietas in the area, neither name appears), genuine dead ends rather than a missed search. The Ombú of La Cartuja (sev_002) had no tree nodes at all within 300m in OSM's data for that area.
+- Seville now at 6/10 photos (from 5) and 6/10 approximate (from 7).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Prague: one pin upgraded to confirmed via its own cited Wikidata item; the last photo gap tried hard and stayed a dead end
 
 - Continued the "check every approximate pin against its own already-cited source" pass from Athens and Vienna. Prague was at 9/10 photos, 2/10 approximate.
