@@ -3,8 +3,8 @@
 
 Sources:
 - Cloudflare zone analytics (GraphQL API), token from CLOUDFLARE_ANALYTICS_TOKEN.
-- Search Console: no API credential exists yet; the entry carries an honest
-  standing note until one does (see PRODUCT_TODO.md item 2b).
+- Search Console via OAuth refresh token (GSC_CLIENT_ID / GSC_CLIENT_SECRET /
+  GSC_REFRESH_TOKEN), authorised by Hidde 2026-07-27. Data lags 2-3 days.
 
 Stdlib only (hard rule 5). Safe to run twice a day: the second run is a no-op.
 """
@@ -13,6 +13,7 @@ import json
 import os
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -39,6 +40,63 @@ def api(url, payload=None, token=None):
     )
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.load(r)
+
+
+def fetch_gsc(today):
+    """Return (day_rows, top_queries, top_pages) from Search Console, or None
+    if the three GSC_* secrets are absent. Data lags 2-3 days; we report the
+    freshest rows Google provides and say which date they are."""
+    cid = os.environ.get("GSC_CLIENT_ID")
+    csec = os.environ.get("GSC_CLIENT_SECRET")
+    rtok = os.environ.get("GSC_REFRESH_TOKEN")
+    if not (cid and csec and rtok):
+        return None
+    body = urllib.parse.urlencode({
+        "client_id": cid, "client_secret": csec,
+        "refresh_token": rtok, "grant_type": "refresh_token",
+    }).encode()
+    with urllib.request.urlopen("https://oauth2.googleapis.com/token", body, timeout=30) as r:
+        access = json.load(r)["access_token"]
+
+    def q(payload):
+        req = urllib.request.Request(
+            "https://www.googleapis.com/webmasters/v3/sites/sc-domain%3Aancienttrees.app/searchAnalytics/query",
+            data=json.dumps(payload).encode(),
+            headers={"Authorization": "Bearer " + access, "Content-Type": "application/json"},
+        )
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.load(r).get("rows", [])
+
+    start = (today - datetime.timedelta(days=10)).isoformat()
+    end = today.isoformat()
+    days = q({"startDate": start, "endDate": end, "dimensions": ["date"], "dataState": "all"})
+    queries = q({"startDate": start, "endDate": end, "dimensions": ["query"], "rowLimit": 5, "dataState": "all"})
+    pages = q({"startDate": start, "endDate": end, "dimensions": ["page"], "rowLimit": 5, "dataState": "all"})
+    return days, queries, pages
+
+
+def gsc_section(gsc):
+    if gsc is None:
+        return ("Search Console: GSC_* secrets not configured; section skipped.")
+    days, queries, pages = gsc
+    days = [d for d in days if d.get("impressions") or d.get("clicks")]
+    if not days:
+        return "Search Console: connected, but Google returned no rows for the window."
+    latest = days[-1]
+    prev = days[-2] if len(days) > 1 else None
+    trend = "  ".join("%s:c%d/i%d" % (d["keys"][0][5:], d["clicks"], d["impressions"]) for d in days)
+    lines = [
+        "Search Console (freshest day Google provides, data lags 2-3 days):",
+        "- %s: %d clicks, %d impressions, avg position %.1f%s" % (
+            latest["keys"][0], latest["clicks"], latest["impressions"], latest["position"],
+            (" (day before: c%d/i%d)" % (prev["clicks"], prev["impressions"])) if prev else ""),
+        "- Days: %s" % trend,
+        "- Top queries (10d): " + "; ".join(
+            "%s (i%d, p%.0f)" % (r["keys"][0][:40], r["impressions"], r["position"]) for r in queries) if queries else "- Top queries: none",
+        "- Top pages (10d): " + "; ".join(
+            "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages) if pages else "- Top pages: none",
+    ]
+    return "\n".join(lines)
 
 
 def fetch_cloudflare(token, today):
@@ -74,7 +132,7 @@ query($tag: String!, $since: String!, $until: String!) {
     return g["data"]["viewer"]["zones"][0]["httpRequests1dGroups"]
 
 
-def build_entry(days, today):
+def build_entry(days, today, gsc_text):
     yday = today - datetime.timedelta(days=1)
     by_date = {d["dimensions"]["date"]: d for d in days}
     y = by_date.get(yday.isoformat())
@@ -131,16 +189,14 @@ Cloudflare, %s:
 - Page views, last days: %s
 - Top countries by requests: %s
 
-Search Console: no API access yet (needs a Google credential only Hidde can
-create, see PRODUCT_TODO.md 2b); latest manual export read 2026-07-26. When a
-newer export lands in the repo its numbers join this entry's date.
+%s
 
 **Conclusion:** %s
 """ % (
         yday.isoformat(), ZONE_NAME,
         y_views, b_views, delta(y_views, b_views),
         y_uniq, b_uniq, delta(y_uniq, b_uniq),
-        y_req, trend, top_line, conclusion,
+        y_req, trend, top_line, gsc_text, conclusion,
     )
 
 
@@ -167,7 +223,12 @@ def main():
         print("SKIP: Cloudflare fetch failed: %s" % e)
         return 1
 
-    entry = build_entry(days, today)
+    try:
+        gsc_text = gsc_section(fetch_gsc(today))
+    except Exception as e:  # GSC failure must never kill the Cloudflare half
+        gsc_text = "Search Console: fetch failed today (%s); numbers resume tomorrow." % e
+
+    entry = build_entry(days, today, gsc_text)
     body = existing[len(PREAMBLE):] if existing.startswith(PREAMBLE) else (
         "\n" + existing if existing else ""
     )
