@@ -99,8 +99,8 @@
       "age_max": 115,
       "location": {
         "address": "Plaza del Cristo de Burgos, 41003 Sevilla",
-        "latitude": 37.3935,
-        "longitude": -5.9915,
+        "latitude": 37.39196,
+        "longitude": -5.98973,
         "neighbourhood": "San Vicente, Casco Antiguo"
       },
       "story": "Four of Seville's biggest fig trees didn't start out on this plaza at all. City gardeners moved these Moreton Bay figs here from Parque de María Luisa around 1925, an unusually bold transplant for trees of this size, and they took root well enough that the biggest now measures 7.2 metres around and 28 metres tall. The species, native to the coastal forests of eastern Australia, is known for the buttressed, almost architectural roots it grows to stabilize such a heavy crown, and for aerial roots that descend from its branches and thicken into secondary trunks over time. Every one of the four gets pruned back hard each spring, not for the trees' health but for Easter: Semana Santa's processions route directly through this plaza, and the candle-bearing floats need branches out of the way. The square itself has changed names more often than the trees have changed address, known at various points as Plaza de Argüelles, Plaza Virgen del Pilar and Plaza de San Pedro before settling on its current name, and locals called it the Plaza de las Magnolias for years even though the ficus, not the magnolias, dominate the space today. All four are individually protected on Seville's own register of singular trees, a rare case of a whole relocated group qualifying together rather than one specimen alone.",
@@ -117,8 +117,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Girth (720 cm) and height (28 m) confirmed by Seville's official singular-trees register; the 1925 transplant-from-María-Luisa history confirmed by a second, independent local source. No tree-specific coordinates found in either source; the pin is an estimate of the plaza's location from its described street boundaries (Almirante Apodaca, Dormitorio, Descalzos, Morería), not independently surveyed.",
-      "location_precision": "approximate"
+      "notes": "Girth (720 cm) and height (28 m) confirmed by Seville's official singular-trees register; the 1925 transplant-from-María-Luisa history confirmed by a second, independent local source. Pin resolved 2026-07-27 via Seville's Parks and Gardens tree inventory (ArcGIS FeatureServer, services1.arcgis.com/hcmP7kr0Cx3AcTJk, layer 13): exactly four Ficus macrophylla found clustered together in the Alfalfa neighbourhood immediately around this plaza, matching this entry's own count of four relocated figs. Moved about 230m to the centroid of that cluster. Flagged honestly rather than hidden: all four in this newer inventory measure larger (780-1020cm circumference) than the register's own 720cm figure for 'the biggest,' consistent with real growth since an unspecified survey date, but a real enough gap that it is recorded here rather than used to update the story's own sourced number.",
+      "location_precision": "confirmed"
     },
     {
       "id": "sev_004",
@@ -163,8 +163,8 @@
       "age_max": 120,
       "location": {
         "address": "Jardines de Murillo, Paseo de Catalina de Ribera, 41004 Sevilla",
-        "latitude": 37.3825,
-        "longitude": -5.9878,
+        "latitude": 37.38219,
+        "longitude": -5.98876,
         "neighbourhood": "Santa Cruz, Casco Antiguo"
       },
       "story": "Seville's tallest tree is also one of its least visited, despite standing in the middle of the historic centre. This river red gum, known locally as El Gran Capitán, rises more than 50 metres above the Paseo de Catalina de Ribera at the edge of Jardines de Murillo, a five minute walk from the Real Alcázar's own walls, yet it rarely appears in a single guidebook or walking tour. Its trunk has grown close to five metres around, and in 2025 the city carried out a precision pruning operation specifically to reduce the risk of falling limbs, treating a tree this size with the same caution as a structural repair. Eucalyptus camaldulensis is native to Australian riverbanks, not Andalusian gardens, and it owes its presence here to the same wave of botanical experimentation that filled Parque de María Luisa nearby with Australian figs: gardeners in the early twentieth century testing which imports would thrive in Seville's dry heat. This one thrived almost too well, outgrowing every other tree in the city by a wide margin while somehow staying anonymous. Locals who live nearby walk past it daily without a second look. Visitors headed for the more famous gardens on either side, the Alcázar and the cathedral, pass directly underneath it and rarely notice they've done so.",
@@ -181,8 +181,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Height (over 50 m, one source measuring closer to 60 m) and 'tallest tree in Seville' status confirmed by the city's own 2025 press release plus an independent news report; the two sources vary on exact height, so a range is given rather than a single figure. No planting record found; age is an estimate based on the species' introduction period, not a documented date. Coordinates are the gardens' general address, not independently surveyed for this specific tree.",
-      "location_precision": "approximate"
+      "notes": "Height (over 50 m, one source measuring closer to 60 m) and 'tallest tree in Seville' status confirmed by the city's own 2025 press release plus an independent news report; the two sources vary on exact height, so a range is given rather than a single figure. No planting record found; age is an estimate based on the species' introduction period, not a documented date. Pin resolved 2026-07-27 via Seville's own Parks and Gardens tree inventory (ArcGIS FeatureServer, services1.arcgis.com/hcmP7kr0Cx3AcTJk, layer 13, a new source found after sevilla.org's own catalogue stayed connection-refused again this pass): exactly one Eucalyptus camaldulensis recorded in the Jardines de Murillo/Santa Cruz area, 571cm circumference, close to this entry's own sourced 'close to five metres around.' Moved about 100m to the exact match. The inventory's own height field (26m) is well short of the two press sources' 50-60m and is not used to override them, kept here as a data-quality note rather than acted on.",
+      "location_precision": "confirmed"
     },
     {
       "id": "sev_006",

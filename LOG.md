@@ -30,6 +30,12 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Seville: 2 pins resolved via a newly found city tree inventory
+
+- Berlin (next in the marquee-Europe order) turned out to already be in great shape, 9/10 photos and 0 approximate, so moved straight to Seville (9/10 approximate). sevilla.org's own catalogue is still down, but found a different Seville Parks and Gardens dataset on ArcGIS Hub covering the whole city's managed trees. Matched El Gran Capitán (a giant eucalyptus, by being the only one of its species in its garden) and the Figs of Plaza del Cristo de Burgos (by matching the exact count of four transplanted figs the story already describes). Two more checked and correctly left alone (a scattered hackberry ensemble with no way to isolate the "centennial" ones; a camphor tree genuinely outside this inventory).
+- Seville now at 7/10 approximate pins (from 9). Photos unchanged at 5/10.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Brussels: 3 more pins resolved, one a real 700m correction
 
 - Same regional tree registry that worked for Brussels on 2026-07-26 (two pins that day) resolved three more: the Botanical Garden's black mulberry, the Cinquantenaire's chestnut avenue (moved to the actual cluster of 11 recorded trees), and the Abbaye de la Cambre's pagoda tree, whose new registry match's trunk girth (313cm) is a tight match for the entry's own sourced 308cm measurement, a real 700m correction rather than just tightening.
