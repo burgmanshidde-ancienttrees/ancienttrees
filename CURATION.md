@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Porto: 3 pins tightened from a shared whole-garden estimate to their actual buildings
+
+- Continued the ladder to Porto (4/10 photos, 6/10 approximate). Four Palácio de Cristal entries (Magnolia and Camellias at Casa Tait, the Plane at Quinta da Macieirinha, the Himalayan Cedar) all shared the exact same coordinates, a whole-garden centroid rather than anything building-specific, even though two of the four name a specific building within the garden.
+- Geocoded Casa Tait and Quinta da Macieirinha independently (Nominatim, cross-checked across multiple address results for each that agree within tens of metres) and moved the Magnolia, Camellias and Plane entries to their respective buildings, about 140-150m each. Checked first whether Porto's own open-data classified-trees register (already used successfully for por_003, por_006 and por_009 in this same city) had surveyed points for any of the three: it doesn't, because all three are still working through classification and the register only carries trees that have already cleared it, consistent with what this project's own story text already said. So these stay `approximate` (a real building-level anchor, not a surveyed trunk), just a much tighter approximate than before.
+- The Himalayan Cedar's entry names no specific building beyond "the gardens" generally, so left unchanged rather than guessed.
+- Tried hard for photos on the remaining 6 gaps using the iNaturalist technique that worked for this city's Bischofia and Redwood entries; every candidate found for the Texas Madrone and the Metrosidero was licensed all-rights-reserved or CC BY-NC, which this project doesn't use. Genuine dead ends, not a missed search.
+- Porto's approximate count stays at 6/10 on paper (none of the three crossed the bar to `confirmed`, since a building anchor isn't a surveyed trunk position), but three of those six are now meaningfully tighter than the whole-garden estimate they replace. Photos unchanged at 4/10.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Seville: one pin corrected and confirmed, one photo found and viewed
 
 - Continued the ladder to Seville (5/10 photos, 7/10 approximate before this pass, untouched by any depth pass so far). Found that Parque de María Luisa's many named glorietas (roundabout clearings) are individually mapped in OpenStreetMap, a new lead not tried before.

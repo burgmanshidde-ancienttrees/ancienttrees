@@ -66,8 +66,8 @@
       "age_max": 150,
       "location": {
         "address": "Casa Tait, Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
-        "latitude": 41.1472,
-        "longitude": -8.6267,
+        "latitude": 41.147945,
+        "longitude": -8.628379,
         "neighbourhood": "Massarelos"
       },
       "story": "The base of this southern magnolia measures more than six metres around, thick enough that it would take several adults linking arms to circle it. It grows in the same grounds as Casa Tait's protected tulip tree, inside the Jardins do Palácio de Cristal, and like its neighbour it is currently working through Portugal's formal classification process for trees of public interest, a status that turns deliberate damage to it into a legal offence rather than simply bad manners. Magnolia grandiflora is native to the southeastern United States, prized in European gardens since the 18th century for its glossy, leathery leaves and dinner-plate-sized white flowers, which release a lemon-and-vanilla scent strong enough to notice from several metres away. Late summer is when this specimen puts on its best show, its last flush of blooms opening just as most of the garden's spring flowering has finished elsewhere. Casa Tait's grounds, now folded into the wider Palácio de Cristal park, once belonged to the Tait family, British port wine merchants whose 19th-century money planted much of what still grows here. The magnolia, like the tulip tree beside it, has outlasted the family's ownership by generations.",
@@ -88,7 +88,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Girth (over 6 m) and 'under classification' status confirmed by both the city council's parks page and an independent garden-history source. No documented planting date; age is an estimate from the tree's size and classification status. Coordinates as per the Casa Tait entry above, approximate.",
+      "notes": "Girth (over 6 m) and 'under classification' status confirmed by both the city council's parks page and an independent garden-history source. No documented planting date; age is an estimate from the tree's size and classification status. Pin moved 2026-07-27 about 140m to Casa Tait's own building coordinates (Nominatim, cross-checked across two independent address results that agree within 40m); the tree isn't in the municipality's classified-trees open dataset yet since it's still under review, so this stays a building-level anchor rather than a surveyed point, hence approximate.",
       "location_precision": "approximate"
     },
     {
@@ -131,8 +131,8 @@
       "age_max": 150,
       "location": {
         "address": "Quinta da Macieirinha, Jardins do Palácio de Cristal, Rua de Entre Quintas, 4050 Porto",
-        "latitude": 41.1472,
-        "longitude": -8.6267,
+        "latitude": 41.147320,
+        "longitude": -8.628275,
         "neighbourhood": "Massarelos"
       },
       "story": "A house dedicated to a dead king's exile keeps its own protected tree in the garden outside. The London plane at Quinta da Macieirinha, a manor house inside the Palácio de Cristal park grounds now serving as Porto's Museu Romântico, is under formal review for protection as a tree of public interest alongside the palace's more famous specimens across the park. The museum inside commemorates Charles Albert of Sardinia, the abdicated King of Sardinia-Piedmont who spent the final months of his life at this house in 1849, having lost his throne after a failed war against Austria. The plane tree predates that story by decades, part of the working quinta's original planting before its owners ever imagined a deposed Italian monarch would die inside. London planes were a standard choice for 19th-century Portuguese gardens, valued for fast growth, tolerance of hard pruning, and mottled, flaking bark that sheds pollution along with old skin, part of why the species still lines so many European boulevards today. This one has grown alongside the house through its transformation from private residence to royal deathbed to public museum, three very different identities for the same modest patch of ground.",
@@ -149,7 +149,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Location (Quinta da Macieirinha) and classification status confirmed by the city council's parks page; the Museu Romântico/Charles Albert history confirmed independently via the Portuguese Wikipedia article on the gardens. No individual age or measurement found; estimated as a mature 19th-century planting.",
+      "notes": "Location (Quinta da Macieirinha) and classification status confirmed by the city council's parks page; the Museu Romântico/Charles Albert history confirmed independently via the Portuguese Wikipedia article on the gardens. No individual age or measurement found; estimated as a mature 19th-century planting. Pin moved 2026-07-27 about 150m to the Quinta da Macieirinha building itself (Nominatim); checked the municipality's classified-trees open dataset for a surveyed point but this plane isn't in it yet (still under formal review, not yet legally classified), so this stays a building-level anchor, hence approximate.",
       "location_precision": "approximate"
     },
     {
@@ -162,8 +162,8 @@
       "label": "Ensemble",
       "location": {
         "address": "Casa Tait, Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
-        "latitude": 41.1472,
-        "longitude": -8.6267,
+        "latitude": 41.147945,
+        "longitude": -8.628379,
         "neighbourhood": "Massarelos"
       },
       "story": "Porto calls itself the City of Camellias, and the oldest proof of that claim is a set of hedges, not a single tree. More than sixty camellia specimens grow around Casa Tait inside the Jardins do Palácio de Cristal, several over a century old, planted as living, blooming partitions that section off parts of the garden the way a wall or fence would elsewhere. Camellias arrived in Portugal from China and Japan in the 18th and 19th centuries, and the country's mild, humid north proved so well suited to the plant that Portuguese growers eventually exported specimens back to camellia breeders across the rest of Europe, an unusual reversal of the typical colonial plant trade. Porto in particular leaned into the association hard enough that camellia season, roughly November through March depending on variety, now anchors a genuine tourism calendar, with garden openings and flower shows timed around peak bloom. Casa Tait's own hedges do the quieter version of that job every year: structuring the garden's paths, screening one glorieta from the next, doing exactly what a well-placed camellia has done in Portuguese gardens for two centuries. Nobody photographs a hedge the way they photograph a single dramatic tree, which may be exactly why this one has survived so many changes of garden fashion intact.",
@@ -184,7 +184,7 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Ensemble entry: over 60 camellia specimens at Casa Tait, several centenarian, confirmed by a dedicated garden-history source; Porto's 'City of Camellias' civic branding confirmed independently via the city's own environment department. No single representative specimen is named in either source, hence a group entry rather than one tree.",
+      "notes": "Ensemble entry: over 60 camellia specimens at Casa Tait, several centenarian, confirmed by a dedicated garden-history source; Porto's 'City of Camellias' civic branding confirmed independently via the city's own environment department. No single representative specimen is named in either source, hence a group entry rather than one tree. Pin moved 2026-07-27 about 140m to Casa Tait's own building coordinates (Nominatim), the same correction applied to this garden's other Casa Tait entry; stays approximate since this is a scattered ensemble, not one trunk.",
       "location_precision": "approximate"
     },
     {

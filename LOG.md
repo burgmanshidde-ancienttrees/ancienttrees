@@ -30,6 +30,11 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Porto: 3 pins tightened off a shared whole-garden estimate to their actual buildings
+
+- Four Palácio de Cristal entries were all sitting on the exact same coordinates, a whole-garden centroid, even though two name a specific building. Geocoded Casa Tait and Quinta da Macieirinha independently and moved three entries (the Magnolia, the Camellias, the Plane) to their real buildings, 140-150m each. They stay `approximate` rather than `confirmed`, since Porto's own classified-trees register doesn't cover them yet (still under formal review), so this is a tighter estimate, not a survey. Six photo gaps tried hard, all genuine dead ends (all-rights-reserved or CC BY-NC only).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Seville: a pin corrected via a newly-found OSM technique (named glorietas), one photo confirmed by eye
 
 - Moved to Seville next (5/10 photos, 7/10 approximate, never touched by a depth pass). New lead: Parque de María Luisa's many named clearings (glorietas) are individually mapped in OpenStreetMap. Matched and moved the Fig of the Glorieta de Goya's pin about 190m to the named feature, and found a Commons photo whose own caption ("gran ficus en el centro") and content are an unambiguous match, approved. Two other glorieta-named entries checked against the same rich OSM coverage came up genuinely absent, left alone rather than guessed.
