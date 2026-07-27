@@ -95,8 +95,8 @@
       "age_max": 205,
       "location": {
         "address": "Piazza Minghetti, 40124 Bologna",
-        "latitude": 44.4918,
-        "longitude": 11.3453,
+        "latitude": 44.4919576,
+        "longitude": 11.3453573,
         "neighbourhood": "Quadrilatero"
       },
       "story": "At 39.5 metres, this plane is the tallest of any monumental tree catalogued anywhere in Bologna's province, rising directly behind the bronze statue of the 19th century statesman Marco Minghetti that gives the square its name and its own local nickname for the tree, the guardian of the piazza. Its trunk measures 455cm around, respectable but not exceptional for a plane tree this old, which makes the height the genuinely remarkable figure: two centuries of growth in a confined city square, competing for light against surrounding buildings rather than spreading wide the way an open-park specimen might. The statue it now shades, sculpted by Giulio Monteverde and unveiled in 1896, commemorates a politician who served as Italy's Prime Minister in the 1860s, a piece of civic memory considerably younger than the tree standing over it. Piazza Minghetti sits inside Bologna's Quadrilatero, the tight medieval grid of streets and market stalls just east of Piazza Maggiore, making this one of the easiest monumental trees in the city to combine with an ordinary walk through the historic centre.",
@@ -113,7 +113,7 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Height (39.5m) and circumference (455cm) corroborated across two independent sources, including the 'tallest monumental tree in the province' superlative, presented as sourced rather than independently verified against a full provincial register. Photo verified directly: shows the Minghetti statue directly in front of the described plane tree canopy, an exact match to the square and story.",
+      "notes": "Height (39.5m) and circumference (455cm) corroborated across two independent sources, including the 'tallest monumental tree in the province' superlative, presented as sourced rather than independently verified against a full provincial register. Photo verified directly: shows the Minghetti statue directly in front of the described plane tree canopy, an exact match to the square and story. Pin tightened 2026-07-27: the only Platanus tree node OpenStreetMap maps in the piazza sits about 17m from the prior address-level estimate; kept `approximate` since the node itself carries no name or registry reference tying it individually to this tree.",
       "location_precision": "approximate"
     },
     {
@@ -216,8 +216,8 @@
       "age_max": 200,
       "location": {
         "address": "Orto Botanico ed Erbario, Via Irnerio 42, 40126 Bologna",
-        "latitude": 44.5001,
-        "longitude": 11.353,
+        "latitude": 44.4994086,
+        "longitude": 11.3527316,
         "neighbourhood": "Irnerio"
       },
       "story": "Bologna's botanical garden traces its founding to 1568, when the naturalist Ulisse Aldrovandi established it as one of the earliest such gardens anywhere in Europe, decades before ginkgo itself had even reached the continent. This specimen, an old female tree with a trunk 80cm across, came later, among the first ginkgos planted anywhere in Italy after the species reached European cultivation in the 18th century, brought from a mountainous pocket of southeast China where it had survived, essentially unchanged, for some 200 million years. It now dominates the garden's front section along Via Irnerio, included on the Emilia-Romagna region's own list of protected monumental trees for its size and age within a collection built primarily around gymnosperms, cone-bearing trees, from across Europe and Asia. Ginkgo biloba is famously resistant to disease, pollution and even fire in a way few other large trees can match, a resilience this specimen shares with every ginkgo on this list without needing any specific incident to prove it.",
@@ -234,7 +234,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Existence and front-garden location corroborated by the garden's own dedicated blog page; regional monumental-tree listing mentioned in general coverage of Bologna's botanical garden. No individual planting date or precise dimensions found for this specimen. No usable photo found.",
+      "notes": "Existence and front-garden location corroborated by the garden's own dedicated blog page; regional monumental-tree listing mentioned in general coverage of Bologna's botanical garden. No individual planting date or precise dimensions found for this specimen. No usable photo found. Pin tightened 2026-07-27: the only Ginkgo biloba tree node OpenStreetMap maps near the garden sits right at its southern boundary; kept `approximate` since it isn't tied to an individual accession record from the garden's own collection.",
       "location_precision": "approximate"
     },
     {
@@ -246,8 +246,8 @@
       "age_max": 150,
       "location": {
         "address": "Certosa di Bologna, Via della Certosa 18, 40133 Bologna",
-        "latitude": 44.4929,
-        "longitude": 11.3041,
+        "latitude": 44.4956629,
+        "longitude": 11.3098311,
         "neighbourhood": "Saragozza"
       },
       "story": "A cypress stands directly over the granite tomb of Giosue Carducci in the Certosa di Bologna, one of the tallest and most immediately recognisable trees within a cemetery field otherwise dominated by low funerary monuments, and it has become known simply as the poet's own cypress. Carducci, who became the first Italian to win the Nobel Prize in Literature in 1906, is buried in a section of the Certosa reserved for his memory, his surname cut into a single block of stone with no other ornament, a deliberate austerity that the cypress towering behind it makes considerably more dramatic than the monument alone would manage. The Certosa itself, a working cemetery since 1801 built on the site of a 14th century Carthusian monastery, is regarded as one of Europe's great open-air museums of funerary sculpture, some 30 hectares holding roughly 6,000 works of historic and artistic interest, and cypress plantings run throughout its oldest sections, including a double row leading to the monastery's original entrance. This particular tree earns its own name for standing over the one grave in the entire complex that draws readers rather than art historians.",
@@ -264,8 +264,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Carducci's burial location and the Certosa's own history corroborated across two independent sources. No individual age or planting date documented for the specific cypress; presented as a broad mature estimate. Photo verified directly: shows Carducci's named tomb flanked by tall columnar cypresses, a clear match to the described setting.",
-      "location_precision": "approximate"
+      "notes": "Carducci's burial location and the Certosa's own history corroborated across two independent sources. No individual age or planting date documented for the specific cypress; presented as a broad mature estimate. Photo verified directly: shows Carducci's named tomb flanked by tall columnar cypresses, a clear match to the described setting. Pin corrected by about 550m 2026-07-27: the prior coordinate was just the cemetery's main-gate address, not the grave itself, inside a 30-hectare complex. Moved to the tomb's own Wikidata-sourced coordinate (rank \"preferred\", cross-referenced to an OSM node named `Tomba di Giosue Carducci`), which this entry's own already-cited sources describe the cypress as standing directly over; the cypress itself isn't independently geotagged, but its position relative to the tomb was already an established, sourced fact before this pass.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bol_009",
@@ -276,8 +276,8 @@
       "age_max": 140,
       "location": {
         "address": "Parco di Villa Ghigi, Via San Mamolo 105, 40136 Bologna",
-        "latitude": 44.4762,
-        "longitude": 11.3289,
+        "latitude": 44.4764907,
+        "longitude": 11.3289668,
         "neighbourhood": "Colli Bolognesi"
       },
       "story": "This cedar was planted by Callisto Ghigi himself when he first acquired the hillside property that still carries his family's name, and it now dominates the meadow directly in front of the villa, tall enough that local photographers treat it as the park's single most reliable subject. Villa Ghigi sits just outside Porta San Mamolo on Bologna's southern hills, opened to the public by the city in 1974 and now spanning some 30 hectares of former agricultural land, old orchard rows of cherry, pear, apple and fig trees still legible in the landscape alongside century-old beech groves and native downy oaks. The cedar itself has been measured at 159cm in diameter and roughly 24 metres tall, and shows visible lightning-strike scarring on part of its crown, damage it has carried rather than been felled by. Its position on the open lawn in front of the villa gives visitors one of the clearest unobstructed views of any single tree on this list, framed against the hillside panorama over Bologna's historic centre that the whole park is known for.",
@@ -294,8 +294,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Callisto Ghigi planting attribution and general park history from a dedicated local-press feature; dimensions (159cm diameter, 24m height) and lightning-damage detail from the tree's own Wikimedia Commons category structured data. No individual planting date documented. A photo search found this tree's dedicated 6-file Commons subcategory, but the specific files checked (search-surfaced candidates) turned out to depict a different, similarly named cedar in Vallerano; not used to avoid a wrong-location mismatch, so recorded as missing rather than guessed.",
-      "location_precision": "approximate"
+      "notes": "Callisto Ghigi planting attribution and general park history from a dedicated local-press feature; dimensions (159cm diameter, 24m height) and lightning-damage detail from the tree's own Wikimedia Commons category structured data. No individual planting date documented. A photo search found this tree's dedicated 6-file Commons subcategory, but the specific files checked (search-surfaced candidates) turned out to depict a different, similarly named cedar in Vallerano; not used to avoid a wrong-location mismatch, so recorded as missing rather than guessed. Location confirmed 2026-07-27: an OpenStreetMap tree node tagged `denotation=natural_monument` with a MASAF national-registry reference (`ref:masaf=08/A944/BO/08`) and a Wikimedia Commons category explicitly named \"Villa Ghigi (Bologna) - Cedro dell'Himalaya\", resolving the Vallerano mixup this entry had already flagged: this node is unambiguously the Bologna specimen, not the same-species tree elsewhere.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bol_010",
