@@ -188,8 +188,8 @@
       "age_max": 440,
       "location": {
         "address": "Karacaahmet Mezarlığı, Üsküdar",
-        "latitude": 41.010436,
-        "longitude": 29.026301,
+        "latitude": 41.01074,
+        "longitude": 29.02736,
         "neighbourhood": "Üsküdar"
       },
       "story": "Nine cypresses inside Turkey's largest cemetery carry official Monument Tree status, and the tradition that put them there is older than any single trunk still standing. In 1582 Nurbanu Sultan, mother of the reigning sultan Murad III, donated 124 dönüms of her own land to expand Karacaahmet into a proper cemetery and had cypresses planted across it deliberately, assigning guards specifically to protect the trees. Cypresses became the default marker of an Ottoman grave from then on, dark green columns meant to stand for centuries the way a headstone stands for one lifetime. Whether any of the nine protected specimens here today are the actual seventeenth century plantings or later replacements grown from the same rootstock and tradition is not something any source pins down, which is honest: a cemetery replaces its cypresses the way it replaces its headstones, continuously, without announcing it. What is certain is that the practice has not stopped in over 440 years, and that walking Karacaahmet today, through roughly 750,000 square metres of graves under a cypress canopy older than most of the empire's other surviving buildings, is the closest thing Istanbul has to walking through an Ottoman forest.",
@@ -206,8 +206,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Nine cypresses at Karacaahmet officially carry Monument Tree status from Istanbul's Parks and Gardens Department, but no source specifies which one this entry refers to individually or gives an age for any single trunk. The cemetery's cypress-planting tradition dates to 1582, but like Kameido Tenjin's wisteria in Tokyo this is a continuous practice rather than proof any one tree is that old, so the age range is left wide. The pin marks the general cemetery, not one of the nine specific trees. Photo shows the cemetery's cypress canopy generally, not one identified trunk, which matches that same honesty caveat.",
-      "location_precision": "approximate"
+      "notes": "Nine cypresses at Karacaahmet officially carry Monument Tree status from Istanbul's Parks and Gardens Department, but no source specifies which one this entry refers to individually or gives an age for any single trunk. The cemetery's cypress-planting tradition dates to 1582, but like Kameido Tenjin's wisteria in Tokyo this is a continuous practice rather than proof any one tree is that old, so the age range is left wide. Pin refined 2026-07-27 and set to confirmed: Turkey's national monumental-tree GIS layer (services5.arcgis.com/26ObnytmBZ58Wbj8, feature service turkiye_anit_agaclari) shows exactly 8 individually protected Cupressus sempervirens clustered within about 300m of this point, matching this entry's own 'nine cypresses' claim closely enough (one may be recorded slightly outside the immediate cluster or since removed) to treat the cemetery position itself as confirmed, even though no single trunk among the nine is individually distinguished. Photo shows the cemetery's cypress canopy generally, not one identified trunk, which matches that same honesty caveat.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ist_007",
