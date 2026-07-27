@@ -30,6 +30,10 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Malaga: dead-end pass, one tempting photo caught and rejected
+
+- Continued rung 5's order after Granada. Malaga's 7 photo gaps got a fresh try; one real candidate (La Concepcion's tallest araucaria) turned up but couldn't be pinned to the specific record tree among several in frame, the same problem that sank a Milan candidate earlier tonight, so not used. The other six gaps stayed genuine dead ends. No data changed; detail in CURATION.md.
+
 ## 2026-07-27 — Granada: dead-end pass, nothing usable found
 
 - Continued rung 5's oldest-first order after Valencia. Granada was already flagged from original research as photo-poor; this pass tried fresh Commons/iNaturalist searches with image-viewing available and a new regional Andalusian tree inventory, all confirmed dead ends (the inventory only covers non-urban land, nowhere near Granada city). No data changed; full detail in CURATION.md so a future pass doesn't retry the same ground.
