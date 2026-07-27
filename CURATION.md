@@ -2,6 +2,12 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Verona: one photo candidate re-checked and correctly still rejected, two more gaps stayed dead ends
+
+- Continued down rung 5's order after Florence/Naples, to Verona (2/8 photos, 7/8 approximate). Found the same 1993-94 Giardino Giusti cypress-avenue photo set an earlier pass had already considered: viewed it directly this time, and it does show cypresses flanking the garden's central stone staircase exactly as described, a strong compositional match. Correctly left unused anyway: this entry's own story explains that the avenue's famous centrepiece cypress, standing since before Goethe's 1786 visit, was destroyed in a storm on 23 August 2020 and has since been replanted younger and shorter, so a pre-storm 1993-94 photo would misrepresent the avenue as it exists today. Confirms the earlier pass's reasoning was sound rather than overcautious.
+- The Cedar of Piazza Bra and the Historic Collection of Parco delle Colombare turned up nothing on Commons this pass, genuine dead ends.
+- No data changed.
+
 ## 2026-07-27 — Florence and Naples: a dead-end photo pass on both, nothing usable found
 
 - Continued down rung 5's order after Bologna. Florence (0/10 approximate, 3/10 photos) and Naples (3/10 approximate, 1/10 photos) both have unusually low photo coverage despite otherwise solid research; tried fresh Commons and iNaturalist searches for every remaining gap in both cities (Florence: the Micheli Yew, the Farnia of the Ippodromo, the Leccio of the Cascine, the Honey Locust of Salviatino, the Cedar of the Bobolino, the Cedar Above Pegasus, the Pine of Villa Vogel; Naples: both Garden of the Princes camphors, the Capodimonte eucalyptus, the Garden of the Princes yew and Montezuma cypress, the historic citrus grove, the Pine of Posillipo, the Villa Comunale plane, the Sant'Andrea delle Dame holm oak).
