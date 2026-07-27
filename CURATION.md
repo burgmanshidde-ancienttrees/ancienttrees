@@ -2,6 +2,13 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Malaga: a genuine dead-end pass on photos, one candidate rejected on identification grounds
+
+- Continued down rung 5's oldest-first order after Granada, to Malaga (3/10 photos, 10/10 approximate, untouched since original research). All 7 photo gaps tried with fresh Commons/iNaturalist searches.
+- **One candidate found and deliberately not used**: La Concepcion's "Tallest Araucaria" (mlg_007) has real Commons coverage (a same-photographer-as-two-already-approved-photos series, explicitly captioned as the garden's tallest araucaria trees), but every photo shows multiple araucaria specimens together with no way to isolate the specific 46m record-holder "beside the waterfall" the story describes, and no waterfall is visible in any frame. Same reasoning that sank Milan's Il Sacerdote candidate this session; not used.
+- **Six other gaps stayed genuine dead ends**: the Cortina del Muelle ceiba (iNaturalist observations exist but all CC-BY-NC or unlicensed), the Picasso Gardens fig, the La Concepcion hackberry, Parque de Malaga's holm oak and its Peltophorum, and the Ciudad de Jaen school avocado (restricted school grounds, no public photography online). None had a usable open-licensed match.
+- No data changed. Recording the specific reasons so a future pass doesn't retry this exact ground.
+
 ## 2026-07-27 — Granada: a genuine dead-end pass, nothing usable found for photos or pins
 
 - Continued down rung 5's oldest-first order after Valencia, to Granada (1/10 photos, 10/10 approximate, untouched since original research, which had already noted "no usable photo found" on nearly every entry).
