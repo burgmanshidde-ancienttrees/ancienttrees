@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Verona: the Piazza Indipendenza plane confirmed via a new registry source, two more entries checked and correctly left alone
+
+- Continued down rung 5's order after Antwerp, to Verona (2/8 photos, 7/8 approximate, worst-covered published city on precision). A 2026-07-26 pass had already flagged this session's spreadsheet-reading tool as unreliable for Verona's national-registry (MASAF/AMI) rows; found a different source this pass instead, ilregistrodeglialberi.it, a registry aggregator with individual per-tree detail pages rather than one large spreadsheet.
+- **The Plane Tree of Piazza Indipendenza (ver_002)**: its detail page on the aggregator (explicitly citing this tree's own AMI listing) gives GPS coordinates (45.442705, 11.000061) alongside a circumference and height (505cm, 35.50m) identical to this entry's own already-sourced figures, an exact match rather than a corroboration. Refined the pin (about 30m) and set `confirmed`.
+- **Tried and correctly not applied**: two different Himalayan Cedar entries exist on the same aggregator (480cm circumference with no address; 400cm in Marzana, 6km from Borgo Trento), neither matching the Himalayan Cedar of Via Nino Bixio's own sourced 309cm, so ver_004 stays approximate rather than force a mismatch. A cypress at "Parco Villa Giusti" and a mulberry at "Parco Le Colombare" both plausibly correspond to ver_005/ver_006 and ver_008, but neither entry publishes GPS coordinates, so no change to either (both are already honest ensemble entries, not single-trunk claims).
+- Photos not re-tried this pass (Verona's remaining gaps were already tried hard earlier today and in prior passes, full detail below).
+- Verona now at 6/8 approximate (from 7). Photos unchanged at 2/8.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Antwerp: the Eric Sasselaan poplar's pin was 800m off, fixed; 4 remaining photo gaps stay genuine dead ends
 
 - Amsterdam's three photo gaps (Heimanseik, Vondelpark Poplar, Amstelkade Olive Willow) were re-tried first, per rung 5's order, with Dutch-language searches, Wikimedia Commons geosearch and iNaturalist by species/radius: no new candidate on any of the three, confirming the many prior passes already logged here rather than adding anything. Not re-recording each dead end again since the pattern is already well established; moved on rather than loop.
