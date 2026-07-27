@@ -1,0 +1,54 @@
+{
+  "slug": "ancient-oaks-of-europe",
+  "title": "Europe's Ancient Oaks You Can Actually Visit",
+  "status": "needs_curation",
+  "meta_description": "Nine oaks in seven European cities, from a Berlin giant possibly 900 years old to a Barcelona holm oak saved from demolition by its own neighbours.",
+  "intro": "An oak does most of its living quietly, which is why so few of the truly old ones get noticed until someone measures the trunk. These nine, pedunculate and holm, span from a Tegel Forest giant that predates Berlin's first written mention to a Barcelona courtyard tree that neighbours spent three years fighting a developer to keep. None survived by being tended like museum pieces. One outlasted a Bavarian duchy. Another grew wider than its older neighbour simply by being left alone. What earns a place here is not age alone: a name, a fight, a poet who rested in the shade, a fence built to protect roots from foot traffic. Every entry is publicly accessible, every coordinate verified, and every page links onward with a map. Start with Berlin's oldest living thing, older than the city itself.",
+  "entries": [
+    {
+      "city_slug": "berlin",
+      "tree_id": "ber_001",
+      "note": "Berlin's oldest tree, and older than Berlin itself: this pedunculate oak had likely already been growing for a century when the city got its first written mention in 1237. Two teenage Humboldt brothers reportedly named it after the family cook around 1800, and in 2021 it became the first forest tree in Germany named a National Heritage Tree. Sources disagree on exactly how old, 500 to 900 years, and this project states the range rather than picking the bigger number."
+    },
+    {
+      "city_slug": "munich",
+      "tree_id": "muc_002",
+      "note": "A six century survivor at the eastern corner of a small Munich park, dated to roughly 600 years old by a 2017 citizen assembly recommendation for its protection. Three major limbs have been removed over the years and a fourth broke off on its own; a protective fence went up in 2022 to keep the compacted soil at its roots from getting worse."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_002",
+      "note": "The wall came second: this oak was already centuries old when Charles I enclosed Richmond Park around it in 1637. A massive hollow pollard wide enough to shelter a small football team, it became the figurehead David Attenborough used for a conservation campaign, and the deer still graze around it as they have for centuries."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_007",
+      "note": "Five centuries old partly because someone kept cutting it back: coppicing paradoxically resets a tree's clock. It is a Holm Oak, a Mediterranean evergreen rare this far north and quite possibly the oldest of its kind in Britain, planted by a 16th century Bishop of London at his own palace."
+    },
+    {
+      "city_slug": "berlin",
+      "tree_id": "ber_002",
+      "note": "The thickest trunk in Berlin, 7.8 metres around, belongs not to the city's oldest tree but to its neighbour a few hundred metres away. At 400 to 500 years it is younger than Dicke Marie by centuries yet wider, and Berlin listed it as a natural monument in 1939."
+    },
+    {
+      "city_slug": "brussels",
+      "tree_id": "bru_001",
+      "note": "Brussels' own heritage inventory calls this probably the oldest tree of any kind in the whole region, on the evidence of a 6.05 metre trunk. No planting record exists; the wood it grows in was already named in a document from 1648, a century before anyone thought to record its individual trees."
+    },
+    {
+      "city_slug": "rome",
+      "tree_id": "rom_001",
+      "note": "Local tradition gives this oak a thousand years, and no dendrologist has ever confirmed the number, so take it as legend rather than fact. What is documented is the company it kept: the poet Torquato Tasso reportedly rested in its shade in 1595, and Rome's own city museum now describes what stands here simply as what remains of a monumental tree."
+    },
+    {
+      "city_slug": "madrid",
+      "tree_id": "mad_007",
+      "note": "Roads converge on this tree rather than around it: a roundabout inside the former royal hunting estate of Casa de Campo is named for the roughly 300 year old holm oak growing at its centre. It spent two centuries on land reserved for the Spanish crown's deer and boar hunts before the estate opened to the public in 1931."
+    },
+    {
+      "city_slug": "barcelona",
+      "tree_id": "bcn_001",
+      "note": "Barcelona's oldest tree nearly lost to a housing development: neighbours spent three years fighting under the banner Salvem l'Alzina, Save the Oak, before the city catalogued it as a Tree of Local Interest in 2019 specifically to stop the diggers. At around 250 years old and 22 metres wide, it is now the widest oak measured in the city."
+    }
+  ]
+}

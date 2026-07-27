@@ -1573,7 +1573,8 @@ def build_question_page(city_entry, collections, pages):
     coll_link = (
         f'<p class="prose-block">The yew, the oaks and their peers across other cities are collected in '
         f'<a href="../collections/{coll["slug"]}">{esc(coll["title"])}</a>.</p>'
-        if coll else ""
+        if coll else
+        '<p class="prose-block">See more <a href="../collections">themed collections</a> of remarkable trees.</p>'
     )
 
     body = f"""
@@ -1595,8 +1596,7 @@ def build_question_page(city_entry, collections, pages):
     head_extra = map_head() + "\n" + ld_script(graph)
     scripts = single_pin_script(loc["latitude"], loc["longitude"])
 
-    link_count = 2 + (1 if coll else 0)
-    check_links(canonical, link_count, 3)
+    check_links(canonical, 3, 3)
 
     page = render_page(title, description, canonical, body, head_extra, scripts, rootpath)
     pages.append((f"{cslug}/oldest-tree.html", page, canonical))
@@ -1672,7 +1672,8 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
     coll_link_html = (
         f'<dt>More like this</dt><dd>Several of these trees also appear in '
         f'<a href="collections/{coll["slug"]}">{esc(coll["title"])}</a>.</dd>'
-        if coll else ""
+        if coll else
+        '<dt>More like this</dt><dd>Browse <a href="collections">themed collections</a> of remarkable trees.</dd>'
     )
     others_html = " &middot; ".join(
         f'<a href="./{c["slug"]}">Ancient trees in {esc(c["city"])}</a>'
@@ -1787,7 +1788,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
 """
     scripts = city_map_script(markers, (avg_lat, avg_lng), route)
 
-    link_count = len(trees) + 1 + (1 if coll else 0) + len(other_cities)
+    link_count = len(trees) + 1 + 1 + len(other_cities)
     check_links(canonical, link_count, 12)
 
     page = render_page(title, description, canonical, body, head_extra, scripts,
@@ -1799,7 +1800,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=()):
 
 # ---------------------------------------------------------- collection pages
 
-def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages):
+def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages, draft=False):
     slug = coll["slug"]
     canonical = f"{BASE_URL}/collections/{slug}"
     rootpath = "../"
@@ -1859,10 +1860,18 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages):
         breadcrumb_schema(crumb_items, canonical),
     ]
     head_extra = ld_script(graph)
+    if draft:
+        # Contract D: a draft is never linked publicly until Hidde approves.
+        # Built anyway so there is a stable URL to review; kept out of pages
+        # (and therefore the sitemap and every internal nav) until then, same
+        # pattern as the account prototype below.
+        head_extra += '\n<meta name="robots" content="noindex, nofollow">'
 
     check_links(canonical, entry_count + len(published), entry_count + min(3, len(published)))
 
     page = render_page(title, description, canonical, body, head_extra, "", rootpath)
+    if draft:
+        return (slug, page)
     pages.append((f"collections/{slug}.html", page, canonical))
     return canonical
 
@@ -2034,12 +2043,17 @@ def build_collections_index(collections, published, pages):
         f'<a href="{p["slug"]}">Ancient trees in {esc(p["city"])}</a>' for p in published
     )
 
+    entries_html = "".join(entries) if entries else (
+        '<div class="prose-block"><p>The first collections are drafted and being reviewed. '
+        "None are public yet; check back as the map grows.</p></div>"
+    )
+
     body = f"""
 <main class="content-page">
   {breadcrumb_html(crumb_items, rootpath)}
   <h1>Collections</h1>
   <div class="prose-block"><p>Cities organise these trees by place. Collections organise them by what makes them worth the trip: age, strangeness, the stories they carry. Each one is hand-curated, and every entry links to a verified tree with its own map and directions. More collections are added as the map grows.</p></div>
-  {''.join(entries)}
+  {entries_html}
   <p class="suggest">Explore by city instead: {city_links}</p>
 </main>
 """
@@ -2555,6 +2569,11 @@ def build_sitemap(pages):
 def main():
     cities = load_cities()
     collections = load_collections()
+    # Contract D: a draft (needs_curation) never gets linked publicly until
+    # Hidde approves it. Only non-draft collections feed the homepage, city,
+    # question and index pages; drafts still get their own page (see the
+    # draft_collection_pages handling below), just unlinked and noindexed.
+    public_collections = [c for c in collections if c.get("status") != "needs_curation"]
     species_intros = load_species_intros()
     cities_by_slug = {c["slug"]: c for c in cities}
     pages = []  # (relative path, html, canonical or None)
@@ -2582,20 +2601,23 @@ def main():
         trees = [t for t in entry["data"]["trees"] if tree_is_renderable(t)]
         for tree in trees:
             tree_slugs[tree["id"]] = build_tree_page(entry, tree, trees, collections, pages, species_pages)
-        build_question_page(entry, collections, pages)
+        build_question_page(entry, public_collections, pages)
         other_cities = [
             {"slug": e["slug"], "city": e["data"]["city"]}
             for e in renderable if e["slug"] != entry["slug"]
         ]
         build_city_gpx(entry, trees, pages)
-        result = build_city_page(entry, tree_slugs, collections, pages, other_cities)
+        result = build_city_page(entry, tree_slugs, public_collections, pages, other_cities)
         if result:
             published.append(result)
 
+    draft_collection_pages = []
     for coll in collections:
-        build_collection_page(coll, cities_by_slug, tree_slugs, published, pages)
-    if collections:
-        build_collections_index(collections, published, pages)
+        is_draft = coll.get("status") == "needs_curation"
+        result = build_collection_page(coll, cities_by_slug, tree_slugs, published, pages, draft=is_draft)
+        if is_draft:
+            draft_collection_pages.append(result)
+    build_collections_index(public_collections, published, pages)
 
     species_cards = []
     for common in sorted(qualifying, key=lambda c: -len(qualifying[c])):
@@ -2607,7 +2629,7 @@ def main():
 
     build_contribute_page(published, pages)
     build_in_season_page(renderable, tree_slugs, pages)
-    build_homepage(published, upcoming, collections, pages)
+    build_homepage(published, upcoming, public_collections, pages)
     build_redirects(published, pages)
     validate_internal_links(pages)
 
@@ -2631,11 +2653,19 @@ def main():
     # After the wipe and the sitemap on purpose: the account prototype exists
     # on disk but not in the sitemap, unlinked and noindexed (AUTH_ENABLED).
     build_account_page()
+    # Same pattern for collection drafts (Contract D): on disk at a stable
+    # URL for review, noindexed, kept out of the sitemap and every nav link.
+    if draft_collection_pages:
+        (DIST / "collections").mkdir(parents=True, exist_ok=True)
+        for slug, draft_page in draft_collection_pages:
+            (DIST / "collections" / f"{slug}.html").write_text(draft_page)
 
     n_trees = sum(p["count"] for p in published)
     print(f"Built {len(pages)} page(s) into {DIST}: "
           f"{len(published)} city, {n_trees} tree, {len(published)} question, "
-          f"{len(collections)} collection, homepage. All contracts validated.")
+          f"{len(public_collections)} public collection(s), "
+          f"{len(draft_collection_pages)} draft collection(s) (unlinked, needs_curation), "
+          f"homepage. All contracts validated.")
     for p in published:
         print(f"  - {p['city']}: {p['count']} trees")
 
