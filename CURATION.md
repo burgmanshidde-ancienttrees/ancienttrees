@@ -2,6 +2,12 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Florence and Naples: a dead-end photo pass on both, nothing usable found
+
+- Continued down rung 5's order after Bologna. Florence (0/10 approximate, 3/10 photos) and Naples (3/10 approximate, 1/10 photos) both have unusually low photo coverage despite otherwise solid research; tried fresh Commons and iNaturalist searches for every remaining gap in both cities (Florence: the Micheli Yew, the Farnia of the Ippodromo, the Leccio of the Cascine, the Honey Locust of Salviatino, the Cedar of the Bobolino, the Cedar Above Pegasus, the Pine of Villa Vogel; Naples: both Garden of the Princes camphors, the Capodimonte eucalyptus, the Garden of the Princes yew and Montezuma cypress, the historic citrus grove, the Pine of Posillipo, the Villa Comunale plane, the Sant'Andrea delle Dame holm oak).
+- Every search came back empty or near-empty: no Commons category matches for the specific gardens/species combinations tried, and zero iNaturalist observations within radius for any of the species checked at their exact coordinates. This is a broader pattern than a single missed search, both cities' remaining named specimens simply have very little open-licensed photography online.
+- No data changed in either city. Recording this so a future pass doesn't re-run the same searches; a genuinely different technique (a municipal registry with its own photos, or a Wiki Loves Monuments Italia sweep specific to Naples/Florence) would be needed to make further progress here.
+
 ## 2026-07-27 — Bologna: 1 pin corrected via Italy's national monumental tree registry
 
 - Continued down rung 5's order after Malaga, back to Bologna (7/10 approximate, last touched 2026-07-26). Italy's national monumental tree registry (RAMI), already the source for three prior Bologna matches, resolved one more: the Sequoia of the Giardini Margherita's own registry entry gives an identical 37.40m height and 5.20m trunk circumference to this entry's own sourced figures, an exact measurement match. Moved about 110m.
