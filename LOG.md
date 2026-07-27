@@ -30,6 +30,14 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Munich: 3 photo candidates found via the city's own Naturdenkmal register, pending visual check
+
+- Continued rung 5's oldest-first order after Venice. Munich already met the pin bar (2/10 approximate); photos stood at 5/10.
+- Munich's official list of protected trees links a Wikimedia Commons file for many entries directly, so this pass used the register itself rather than searching blind: found named, well-licensed candidates for the Röth-Linde, the Oak of the Dörfchen (Nymphenburg) and the Hackberries of Oskar-von-Miller-Ring. All three are held at `found_needs_check` since this session's tools couldn't open the images to confirm by eye, despite the strong textual match (the register's own linked file, explicitly captioned with the tree's name).
+- Also cross-checked the Röth-Linde's pin against OpenStreetMap: a node tagged with its exact name sits within 5m of this project's own coordinates, confirming the pin was already right. A similar check on the Krüner Eiche found only an untagged nearby node, not usable as confirmation.
+- If the three pending photos are confirmed by a future run with image-viewing tools, Munich clears the 8-photo depth-exit-test floor.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Venice: 2 photo candidates found, pending a visual check a future run should finish
 
 - Continued rung 5's oldest-first order after Milan. Venice's 10/10 approximate pins are structural, not a search gap: every entry is an island, garden or fortress ensemble rather than a single named tree, so there is no trunk to pin more precisely than "this garden." Photos were the real gap, 3/10.
