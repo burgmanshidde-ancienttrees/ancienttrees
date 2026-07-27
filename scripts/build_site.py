@@ -432,6 +432,9 @@ PAGE_SHELL = """<!DOCTYPE html>
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 64"><ellipse cx="34" cy="24" rx="24" ry="16" fill="%233A5222"/><circle cx="20" cy="23" r="11" fill="%234A6B2A"/><circle cx="48" cy="23" r="11" fill="%234A6B2A"/><circle cx="34" cy="12" r="11" fill="%235B7F35"/><path d="M31 62 h5.6 l-1.2-16 h-3.2z" fill="%236B4F33"/></svg>'>
 <link rel="stylesheet" href="%%ROOTPATH%%assets/style.css">
 %%HEAD_EXTRA%%
+<!-- Cloudflare Web Analytics: cookieless visit counting, no personal data.
+     Allowed by Hidde 2026-07-27 (hard rule 5); ads/ad-tracking stay banned. -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e4516eabbfab48c7b9675c1ebd767324"}'></script>
 </head>
 <body>
 <header class="bar">
