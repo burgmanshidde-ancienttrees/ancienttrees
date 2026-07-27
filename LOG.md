@@ -30,6 +30,13 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-26 — Brussels: the regional tree registry came back online, 2 more pins resolved
+
+- Followed straight on from the Antwerp pass with the same technique. A lead flagged earlier today, Brussels' regional "arbres remarquables" register, was unreachable (connection refused); this pass found the site back up and traced through to the actual data service.
+- Resolved the Giant Sequoia of Parc de Woluwe (a real 1.1km correction, not just tightening) and the Purple Beech of Parc Tournay-Solvay. Tried the Douglas Fir of the Hippodrome too but genuinely could not tell which of 4 near-identical specimens nearby was the named tree, so left it alone rather than guess.
+- Brussels now at 8/10 approximate (from 10). Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Antwerp: 4 pins resolved (one a real 1.1km error); a genuine news sweep found nothing wrong
 
 - Visitors: 47 visits, 76 page views over 7 days, flat. No submissions. Depth-exit-test bar still not met (Amsterdam, Lisbon, Rome, Barcelona need photos only; Istanbul needs both and stays furthest behind), so coverage stays frozen.
