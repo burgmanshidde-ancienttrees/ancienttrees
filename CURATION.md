@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Bologna: 2 more pins confirmed via OSM's own registry references and Wikidata, one a real 550m cemetery-address error
+
+- After Malaga, returned to Bologna (6/10 approximate; three prior passes today and yesterday had already used Italy's national and regional monumental-tree registries, so tried a different technique: OpenStreetMap tree nodes and named cemetery features, the same approach that just worked well for Malaga).
+- **The Himalayan Cedar of Villa Ghigi (bol_009)**: found via an OSM node explicitly tagged `denotation=natural_monument` with a MASAF national-registry reference number and a Wikimedia Commons category named "Villa Ghigi (Bologna) - Cedro dell'Himalaya". This resolves a mixup this entry's own notes had already flagged (a photo search once turned up a similarly named cedar in Vallerano, a different town, and correctly wasn't used): this node is unambiguous. Moved about 35m and set `confirmed`.
+- **The Cypress of Carducci's Tomb (bol_008)**: the stored pin, 550m off, turned out to be just the cemetery's main-gate address rather than the actual grave, inside a 30-hectare complex. Giosue Carducci's tomb has its own Wikidata entry with a "most trustworthy"-ranked coordinate, cross-referenced to an OSM node named "Tomba di Giosue Carducci." This entry's own already-cited sources state the cypress stands directly over the tomb, so the tomb's precise position is a fair anchor for the tree even though the cypress itself isn't independently geotagged. Moved and set `confirmed`.
+- **Two tightened but left honestly approximate**: the Plane Tree of Piazza Minghetti (bol_003) and the Ginkgo of the Botanical Garden (bol_007) each got a real OSM tree-node match (17m and roughly on-boundary respectively), but neither node carries a name or registry reference tying it individually to this specific specimen rather than just being the only tree of that species nearby, so both stay `approximate` with the tighter coordinate recorded.
+- **The Monumental Planes of the Montagnola (bol_001)** and **the Camphor of San Michele in Bosco (bol_010)** stay genuinely unresolved: the Montagnola has roughly 200 identically-tagged plane nodes with no distinguishing feature, an honest ensemble limit; no camphor-tagged OSM node exists anywhere near San Michele in Bosco at all.
+- Bologna now at 3/10 approximate pins (from 6). Photos unchanged.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Malaga: 5 of 10 approximate pins resolved, its pin dimension never touched since original research
 
 - After New York, checked which below-floor cities hadn't had a same-day depth pass at all yet, since virtually every lead-group and marquee-European city had already been worked at least once today. Malaga (3/10 photos, 10/10 approximate) stood out: its photo gap had a genuine dead-end pass today, but its pins had never been worked since the city's original research, and three trees (mlg_001, mlg_006, mlg_007) sat on an identical shared coordinate, the La Concepcion garden's centroid, an obvious tell that at least two of the three were wrong. Two more (mlg_008, mlg_009) shared Parque de Malaga's centroid the same way.

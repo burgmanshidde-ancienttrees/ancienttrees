@@ -30,6 +30,14 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Bologna: 2 more pins confirmed, one a real 550m cemetery-address error
+
+- Continued after Malaga. Bologna's remaining 6 approximate pins had already had three passes today and yesterday using Italy's national/regional tree registries, so tried OSM tree nodes and named cemetery features instead, the technique that just worked for Malaga.
+- The Himalayan Cedar of Villa Ghigi resolved cleanly via an OSM node carrying its own MASAF registry reference and a Commons category naming Bologna specifically, closing a Vallerano-mixup risk this entry had already flagged. The Cypress of Carducci's Tomb turned out to have a real bug, not just imprecision: its pin was the cemetery's main-gate address, 550m from the poet's actual grave, which has its own precisely sourced Wikidata coordinate this entry's already-cited sources already tie the tree to directly.
+- Two more (Piazza Minghetti's plane, the Botanical Garden's ginkgo) got real OSM matches but stayed honestly `approximate`, since neither node is individually named or registry-linked to the specific tree. Two stay genuinely unresolved (the Montagnola's plane ensemble, the San Michele in Bosco camphor).
+- Bologna now at 3/10 approximate pins (from 6). Photos unchanged.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Malaga: 5 of 10 approximate pins resolved, its pin dimension untouched since original research
 
 - Continued after New York. Nearly every below-floor city had already had a same-day depth pass except Malaga's pins specifically (its photos had a dead-end pass today, but pins had never been worked at all since original research), and three of its ten trees sat on one shared garden-centroid coordinate, an obvious sign at least two were wrong.
