@@ -48,9 +48,9 @@ The reasoning, so it does not have to be re-argued: world cities and collections
 
 ## More collections from existing data
 
-Hidde's read 2026-07-26: collections may be the best SEO value per page, and they are nearly free now, since a new collection recombines the 328 trees already researched, zero new research. Candidates: oldest oaks of Europe, ginkgos worth a November trip, trees older than the city around them, wisteria and blossom trees for spring. Runs may draft them (status needs_curation); per Contract D nothing publishes without Hidde's approval.
+Hidde's read 2026-07-26: collections may be the best SEO value per page, and they are nearly free, since a new collection recombines already-researched trees. First two (ancient oaks, November ginkgos) live since 2026-07-27. Since blueprint v1.3 they publish without owner approval, under the research standard with script-checked entries.
 
-**Trigger:** none for drafting; Hidde's approval per draft for publishing.
+**Trigger:** none; the slate lives in PRODUCT_TODO.md.
 
 ## Let runs read the visitor numbers
 

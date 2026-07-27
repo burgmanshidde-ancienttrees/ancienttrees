@@ -166,7 +166,7 @@ A photo does more for goal 1 than any paragraph, because it is what makes someon
 Cycle through existing cities oldest-first and: hunt for missing photos, strengthen weak stories, re-verify flagged items, check for dead trees in the news.
 
 ### Collections (any time coverage allows)
-data/collections/BACKLOG.md holds the prioritized queue of collection pages, with per-item triggers for when coverage suffices. At most one new draft at a time, and per Contract D a draft never publishes without Hidde's approval: it ships with status needs_curation and gets logged in CURATION.md.
+Collections publish under the same regime as everything else since blueprint v1.3 (2026-07-27): the research standard, script-checked entries, superlatives per hard rule 8, readers as the correction layer. No owner approval; new collections are announced in LOG.md like any other work.
 
 ### Step 0b — Process reader submissions (before picking a new city)
 
