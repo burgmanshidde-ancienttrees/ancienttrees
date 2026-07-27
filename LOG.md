@@ -5,15 +5,6 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 Format, deliberately short:
 
 ```
-## 2026-07-27 — Session with Hidde: interim identity chosen, top-10 city trips settled, Japan queued, live analytics wired
-
-- **Design pass delivered in session** (the one LOG has carried as "waiting on Hidde"): three full direction boards, then six logo variants; Hidde chose Direction A ("Growth Rings": Gabarito as the single family, warmed paper/pine/moss palette, gold accent) with mark 3A, the broad painterly oak, explicitly as an interim identity ("ooit vernieuwen met een echte designer"). Applied to the generator: one type family everywhere (Instrument Serif, Plus Jakarta and Shantell Sans removed), emphasis via weight and colour, 3A in the top bar and as SVG favicon. Built, all contracts green, 511 pages. NOT yet pushed live: awaiting Hidde's explicit "live", the rebuilt dist sits local-only.
-- **Top 10 tree city trips of Europe** researched (3 agents + clustering analysis of all 33 live cities), walk-weighted at Hidde's direction, Europe-scoped; ranking and leads in CURATION.md. Palermo, Cadiz and Sintra approved as new city pages (targeted exception in CLAUDE.md rung 6).
-- **Japan wave queued** ahead of UK dense, gated on a pre-wave demand scan; grounds in GO_TO_MARKET.md, deliberately not built on week-one metrics after Hidde called that out.
-- **Daily data digest live end-to-end**: DATA.md, written 05:15 UTC daily. Search Console reads via OAuth (Hidde authorised in session after Google blocked service-account keys); Cloudflare section stays honestly zero because the domain never routed through Cloudflare (nameserver move attempted, DNSSEC/TransIP walls, parked). First real entry verified in CI.
-- **Money rule** replaced the €50 ceiling: no spending without Hidde's approval, no fixed ceiling otherwise, condition: start earning.
-- FOR HIDDE: one word, "live", ships the new identity. Everything else from today is already pushed.
-
 ## YYYY-MM-DD HH:MM — what it did in one line
 - What changed (files, pages, cities)
 - Why, if it was a judgement call
@@ -26,18 +17,28 @@ If an entry has no `FOR HIDDE` line, nothing is waiting on you. That is the norm
 
 # Open with Hidde
 
-Standing list. Everything else in this file is history; this block is what is actually waiting. Refreshed 2026-07-26.
+Standing list. Everything else in this file is history; this block is what is actually waiting. Refreshed 2026-07-27.
 
-### 1. The budget ceiling number
-The hard rules still say max 50 euro a month, written before Claude Max. Runs weigh costs against that figure. One number from you and a run records it.
+### Nothing right now
+The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
-### 2. The design pass you announced
-You said the site is not yet at the level you want, especially design, and that you are coming back to it. The working format that went well: you bring a reference or a verdict, a session builds live with the browser open. The type system, four acts and radar page came out of exactly that.
+## 2026-07-27 — The interim identity shipped: Direction A, Gabarito, the 3A oak, live
 
-### 3. Nothing else
-Collections publish without your approval since blueprint v1.3; new ones simply appear in the entries below. The last mandatory gate you sat in is gone, exactly as you designed it.
+- Hidde's own "live" landed minutes after the entry below was written: `scripts/build_site.py` now carries the new identity for real (Gabarito as the single type family in place of the three-font mix, Direction A's palette, mark 3A in the top bar and as favicon, emphasis via weight and colour only). Confirmed directly in this checkout, not just described secondhand.
+- This closes the "Open with Hidde" item the entries below were still carrying as open; refreshed that section to say so.
 
-Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
+## 2026-07-27 — Session with Hidde: interim identity chosen, top-10 city trips settled, Japan queued, live analytics wired
+
+- **Design pass delivered in session**: three full direction boards, then six logo variants; Hidde chose Direction A ("Growth Rings": Gabarito as the single family, warmed paper/pine/moss palette, gold accent) with mark 3A, the broad painterly oak, explicitly as an interim identity ("ooit vernieuwen met een echte designer"). Applied to the generator: one type family everywhere (Instrument Serif, Plus Jakarta and Shantell Sans removed), emphasis via weight and colour, 3A in the top bar and as SVG favicon. Built, all contracts green, 511 pages. Shipped live minutes later, see the entry above.
+- **Top 10 tree city trips of Europe** researched (3 agents + clustering analysis of all 33 live cities), walk-weighted at Hidde's direction, Europe-scoped; ranking and leads in CURATION.md. Palermo, Cadiz and Sintra approved as new city pages (targeted exception in CLAUDE.md rung 6).
+- **Japan wave queued** ahead of UK dense, gated on a pre-wave demand scan; grounds in GO_TO_MARKET.md, deliberately not built on week-one metrics after Hidde called that out.
+- **Daily data digest live end-to-end**: DATA.md, written 05:15 UTC daily. Search Console reads via OAuth (Hidde authorised in session after Google blocked service-account keys); Cloudflare section stays honestly zero because the domain never routed through Cloudflare (nameserver move attempted, DNSSEC/TransIP walls, parked). First real entry verified in CI.
+- **Money rule** replaced the €50 ceiling: no spending without Hidde's approval, no fixed ceiling otherwise, condition: start earning.
+
+## 2026-07-27 — LOG.md's format example accidentally contained a real entry; moved it into the actual log
+
+- Found while reading LOG.md to catch up before this run's own work: the session entry above (identity/Japan/digest) was sitting inside the fenced code block meant only to illustrate the entry format, ahead of even the "Open with Hidde" section. A real, dated entry with its own FOR HIDDE line, in the one place a future run's careless read (or Hidde's own skim) would treat it as instructional example text rather than actual history and easily miss it.
+- Moved it out to a normal dated entry in the newest-first list and restored the format block to just the placeholder. Minutes later Hidde's own "live" push made the FOR HIDDE flag moot; see the entry above.
 
 ## 2026-07-27 — A photo-hunting pass with a new source (Openverse's API): Barcelona, Florence and one Micheli Yew, one Venice dead end confirmed twice over
 
