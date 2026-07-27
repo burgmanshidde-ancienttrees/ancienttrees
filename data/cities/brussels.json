@@ -35,8 +35,8 @@
       "age_max": 420,
       "location": {
         "address": "Parc Jacques Brel, Avenue Besme, 1190 Forest, Brussels",
-        "latitude": 50.8168,
-        "longitude": 4.3283,
+        "latitude": 50.8033,
+        "longitude": 4.3228,
         "neighbourhood": "Forest"
       },
       "story": "Brussels' own heritage inventory calls this oak probably the oldest tree of any kind in the entire region, and its evidence is a single number: 6.05 metres around the trunk, measured at chest height. That circumference translates, through standard oak growth tables, to an age close to four hundred years, since no planting record exists for a tree this old growing in what was once simply called the Kersbeekbosch, a wood already named in a document from 1648, a full century before anyone thought to record individual trees within it. A 20th century industrialist built a chateau and pleasure pavilion on the land and renamed it Parc des Eperons d'Or, but the commune of Forest only acquired the grounds in 1979 and opened them to the public in 1980, as Parc Jacques Brel. The oak, already three and a half centuries old by then, barely noticed the paperwork. At roughly 20 metres tall with a canopy shaped by centuries of unhurried growth, it now shares its park with joggers, a playground and Brussels' newer housing developments, a working class commune's public oak older than most of the buildings standing around it put together.",
@@ -53,8 +53,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Age is a girth-based estimate, not a documented planting date; the Kersbeekbosch reference (1648) establishes the wood existed, not this specific tree's age. Called 'probably the oldest oak' in the region by the Wood Wide Web heritage source, softened from an absolute claim per hard rule 8. No open licensed photo found this run.",
-      "location_precision": "approximate"
+      "notes": "Age is a girth-based estimate, not a documented planting date; the Kersbeekbosch reference (1648) establishes the wood existed, not this specific tree's age. Called 'probably the oldest oak' in the region by the Wood Wide Web heritage source, softened from an absolute claim per hard rule 8. No open licensed photo found this run. Pin was genuinely wrong, not just approximate: the stored coordinates sat about 1.5km from the actual park, seemingly a geocoding slip from an early research pass. Corrected 2026-07-27 directly from this entry's own already-cited source (woodwideweb.be's atlas entry for this exact tree, ID 1139, which states its own GPS reading), independently cross-checked against Nominatim's geocode of Parc Jacques Brel itself, which lands within 70m of the same point. Set to confirmed.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bru_002",

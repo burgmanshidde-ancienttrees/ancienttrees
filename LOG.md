@@ -30,6 +30,11 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Brussels: a fourth wrong-location pin found today, the Chêne Joséphine off by 1.5km
+
+- Same technique, same result: the Chêne Joséphine's own already-cited source (woodwideweb.be, ID 1139, specifically about this tree) states its own GPS reading, 1.5km from where this project had it pinned, an apparent slip from an early research pass rather than honest vagueness. Cross-checked independently against Nominatim's geocode of the park itself, which agrees within 70m. Moved and confirmed. Fourth genuinely-wrong pin found today (Athens, Vienna, Madrid, now Brussels) and the largest error of the four, which makes the "check each entry against its own cited source" pass feel less like a coincidence and more like a real, underused check.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Madrid: a third wrong-location pin found today (Trillo Holm Oak, 600m off), one more tightened
 
 - The Holm Oak of the Trillo Roundabout was pinned from a converted DMS reading that turned out to be 600m from the real tree. An OpenStreetMap node individually named "Encina del Trillo," tagged as a regional natural monument with an exact crown-diameter match to this entry's own story, gave the real position. Moved and confirmed. This is the third genuinely-wrong (not just imprecise) pin caught today, after Athens and Vienna, worth a FOR HIDDE note: it may be worth a dedicated systematic pass cross-checking DMS-converted and third-party-sourced pins across the older cities, rather than finding these one at a time as depth work happens to reach each city.

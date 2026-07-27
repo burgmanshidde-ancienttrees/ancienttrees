@@ -2,6 +2,13 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Brussels: the Chêne Joséphine's pin was wrong by 1.5km, the biggest error found today
+
+- Continued the ladder to Brussels (4/10 photos, 5/10 approximate). The Chêne Joséphine (bru_001) had its coordinates apparently misplaced from an early research pass: fetched its own already-cited source, woodwideweb.be's atlas entry (ID 1139, specifically about this tree), which states its own GPS reading directly: 50.8033, 4.3228. That's about 1.5km from the stored pin. Independently cross-checked by geocoding Parc Jacques Brel itself via Nominatim, which lands within 70m of the same point, not the stored one. Moved and set `confirmed`. This is the fourth genuinely-wrong pin found today (after Athens, Vienna, Madrid), and by far the largest error of the four.
+- Tried the same "check the entry's own cited source directly" approach on the Kasterlinde (bru_002), whose two sources are both a Brussels heritage-inventory tree page that returns 403 on direct fetch and an environnement.brussels blog post; a web search surfaced the same heritage.brussels page (confirming it's the right entry) but couldn't get past the 403 to read its coordinates, and no independent source gives GPS for this specific tree. Left unchanged rather than guess.
+- The Oriental Plane of Parc Leopold (bru_003), the Pond Oaks and Beeches of Bois de la Cambre (bru_004, an honest ensemble) and the Douglas Fir of the Hippodrome (bru_007) weren't reached this pass.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Madrid: the Holm Oak of the Trillo Roundabout's pin was wrong by 600m, not just approximate; fixed. One more pin tightened.
 
 - Continued the ladder to Madrid (4/10 photos, 4/10 approximate). The Holm Oak of the Trillo Roundabout (mad_007) had its pin converted from a sourced DMS reading, which turned out to sit about 600m from the tree's real position. Found an OpenStreetMap node individually named "Encina del Trillo," tagged as a Comunidad de Madrid natural monument, species Quercus ilex, with an 18.5m crown diameter, an exact match to this entry's own "18.5 metres across" figure; two more nearby OSM features (a "Glorieta del Trillo" locality node, its own information board) corroborate the same cluster. Moved and set `confirmed`. This is the third wrong-not-just-approximate pin found today (after Athens' Kaisariani Monastery and Vienna's Ginkgo), suggesting the DMS-conversion and cross-check step is worth a systematic pass across older entries at some point, not something to fix tree-by-tree forever.
