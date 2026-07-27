@@ -40,6 +40,16 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-27 — Dead-tree sweep: both confirmed carcasses replaced, plus a second one found in Dublin, plus a real redirect bug fixed
+
+Visitors: 63 visits, 97 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 15), the strongest closing day of the week.
+
+- Ran the dead-tree sweep the CURATION.md entry from earlier today set up. Both entries Hidde had flagged CONFIRMED dead got real living replacements, same ids so nothing changes shape underneath them: **Queen Elizabeth's Oak** (fallen 1991, Greenwich) is now **The Sweet Chestnut of Greenwich Park**, one of ~50 survivors of Charles II's own 1660s tree-planting scheme and individually recognised as a Great Tree of London. **Stock im Eisen** (a nailed dead trunk behind glass in Vienna since ~1440) is now **The Ginkgo of the Schubert Monument**, planted around 1900 in Stadtpark and protected as Naturdenkmal Nr. 569 since 1973.
+- Checking Dublin's four suspects from the sweep list turned up a real second violation nobody had flagged: **The Sculpted Cypress** was a genuinely dead 200-year-old Monterey cypress carved into art after it died, the identical failure shape as Stock im Eisen. Replaced with **The Many-Trunked Holm Oak of St Anne's Park**, an oddly multi-trunked specimen GPS-located via a government heritage-tree dataset. Dublin's other three suspects (Hungry Tree, Addison's Walk, Champion Planes) are all genuinely alive.
+- **A real bug found while doing this carefully**: renaming a tree changes its public URL (the site derives URLs from tree names, not ids), so the "same id, no URL breaks" reasoning that was supposed to justify these swaps was only half true. Checked whether the swap this reasoning was modelled on, Barcelona's bcn_008 from yesterday, actually held up: it didn't. Its old URL has been quietly 404ing for a full day. Fixed properly this time: added a small redirect list to `build_site.py` and populated it for all four renames done to date, including the retroactive Barcelona fix. All four now redirect correctly.
+- 27 of the sweep's 64 flagged suspects are still unchecked, one city per pass as planned; nothing urgent, just honest bookkeeping so a future run picks up where this one left off (full list in CURATION.md).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — The interim identity shipped: Direction A, Gabarito, the 3A oak, live
 
 - Hidde's own "live" landed minutes after the entry below was written: `scripts/build_site.py` now carries the new identity for real (Gabarito as the single type family in place of the three-font mix, Direction A's palette, mark 3A in the top bar and as favicon, emphasis via weight and colour only). Confirmed directly in this checkout, not just described secondhand.

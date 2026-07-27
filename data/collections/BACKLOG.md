@@ -17,7 +17,7 @@ Selection criteria per idea: (1) a real search phrase people use, (2) quotable f
 Slug: `trees-with-known-planting-dates`. Target: "oldest tree with known planting date", "when was the oldest tree planted". GEO angle: the global reference answer is the Sri Maha Bodhi (288 BC); a page that gives the European city answers (Robinier 1601, Kew pagoda tree 1762, Buffon plane 1785, Monceau 1814, Sophora 1873) is precise, verifiable and extremely quotable. Coverage today: 7+ entries. This is our data model at its strongest: dates, names, coordinates.
 
 ### 2. Trees Planted by Kings and Their Gardeners
-Slug: `trees-planted-by-kings`. Target: "royal trees", "trees planted by royalty". Coverage today: Royal Oak and Queen Elizabeth's Oak (royal parks), Charlton mulberry (James I's silk scheme), Fulham Palace oak (bishops of London), Robinier (Henri IV's herbalist), Old Lions (Princess Augusta's Kew). 6 entries now, grows with every European capital.
+Slug: `trees-planted-by-kings`. Target: "royal trees", "trees planted by royalty". Coverage today: Royal Oak (royal parks) and the Sweet Chestnut of Greenwich Park (Charles II's own 1660s Grand Plan avenue), Charlton mulberry (James I's silk scheme), Fulham Palace oak (bishops of London), Robinier (Henri IV's herbalist), Old Lions (Princess Augusta's Kew). 6 entries now, grows with every European capital.
 
 ### 3. Trees That Survived Wars and Fires
 Slug: `trees-that-survived-disasters`. Target: "trees that survived war", "tree survived fire". GEO angle: survivor stories are what AI engines quote for "remarkable trees". Coverage today: Cheapside Plane (Great Fire site, Blitz), Robinier (WWI shell), Sophora (both sieges of Paris), Evelyn Mulberry (Peter the Great's rampage). 4-5 entries now; every war-touched city adds more.
@@ -36,8 +36,8 @@ Slug: `churchyard-yews`. Target: "why are yew trees in churchyards" (a genuinely
 ### 7. Trees Older Than 1,000 Years You Can Actually Visit
 Slug: `trees-older-than-1000-years`. Target: "trees older than 1000 years". The 400-year collection's big sibling. Coverage today: only Totteridge qualifies. Trigger: 4+ qualifying trees (expect from Rome, Istanbul, Kyoto, UK cities).
 
-### 8. Fallen Monuments: Dead Trees Still Worth Visiting
-Slug: `fallen-monuments`. Target: low volume but unique angle nobody else has; strong P7 branding. Coverage today: only Queen Elizabeth's Oak. Trigger: 3+ dead or fallen trees with stories.
+### 8. ~~Fallen Monuments: Dead Trees Still Worth Visiting~~ — KILLED, contradicts the living-tree rule
+Slug would have been `fallen-monuments`. Struck 2026-07-27: Hidde's "we doen niet aan dode bomen" rule (CLAUDE.md Step 1) means a dead tree is never a collectible entry, so a whole collection built from them cannot exist. Its former anchor, Queen Elizabeth's Oak, was itself replaced with a living tree the same day. Kept here struck through, same convention as idea 5, so it is not re-proposed.
 
 ## Needs a scope decision (Hidde)
 
