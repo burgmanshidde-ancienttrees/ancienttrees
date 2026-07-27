@@ -30,6 +30,15 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Visual check on this session's photo backlog: Munich clears the 8-photo floor, three false matches caught
+
+- This session could view images after all (a capability that comes and goes, per earlier notes), so rather than leave tonight's found_needs_check photos for a future run, checked every one by eye.
+- Four confirmed and approved: Lyon's Pin de Bunge, Munich's Röth-Linde/Dörfchen oak/Oskar-von-Miller-Ring hackberries, and Venice's Giardini della Biennale. **Munich now stands at 8/10 photos, clearing the depth-exit-test floor.**
+- Three rejected as false matches once actually viewed, all previously held on strong text/location matches alone: Milan's Il Sacerdote candidate showed multiple cypress trunks together (can't confirm it's the specific named one), Venice's San Michele candidate showed a magnolia and statues in a cloister (nothing like the cypress waterfront described), and Kyoto's Five-Needle Pine candidate (pending since an earlier pass today) turned out to be a photo of a Japanese maple at night, not a pine. All three reverted to missing.
+- Worth flagging plainly: this is now several instances of a "strong textual match" (exact caption, exact coordinates) turning out wrong on an actual look. The found_needs_check status is doing real work catching these; a future run without image-viewing tools should keep using it rather than approving on metadata alone.
+- Milan's Ginkgo of Brera photo stays at found_needs_check: viewable but genuinely ambiguous from its upward angle, not a clear enough species check either way.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Munich: 3 photo candidates found via the city's own Naturdenkmal register, pending visual check
 
 - Continued rung 5's oldest-first order after Venice. Munich already met the pin bar (2/10 approximate); photos stood at 5/10.

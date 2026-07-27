@@ -112,13 +112,13 @@
       "access": "Paid entry to Hosen-in (includes matcha service)",
       "transport": "Kyoto Bus to Ohara, 12 min walk",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Hosen-in%2C_Bankan-en_%28Garden%29_-1_%28November_2013%29_-_panoramio.jpg/1024px-Hosen-in%2C_Bankan-en_%28Garden%29_-1_%28November_2013%29_-_panoramio.jpg",
-        "license": "CC BY 3.0",
-        "attribution": "ttshr1970, via Panoramio/Wikimedia Commons",
-        "status": "found_needs_check"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Coordinates are a street-level estimate from the temple's address; no surveyed lat/long was found in available sources. The 2021 source describing the tree recovering vigor implies a period of decline; no source gives a clear cause or timeline for that decline. Photo candidate found 2026-07-27: captioned specifically \"Hosen-in, Bankan-en (Garden)\", the name of the small purpose-built garden whose entire design frames this one pine (the temple's own gakubuchi teien concept), unlike a generic temple-grounds shot. This session's tools could not open the image file to visually confirm the pine fills the frame, so held at found_needs_check rather than approved, per house practice for text-only identity matches.",
+      "notes": "Coordinates are a street-level estimate from the temple's address; no surveyed lat/long was found in available sources. The 2021 source describing the tree recovering vigor implies a period of decline; no source gives a clear cause or timeline for that decline. A candidate photo captioned \"Hosen-in, Bankan-en (Garden)\" was viewed directly this pass and rejected: it shows an illuminated Japanese maple against a bamboo grove at night, not a pine at all, so the garden-name caption evidently covers more than just this one tree. No usable photo found.",
       "location_precision": "approximate"
     },
     {

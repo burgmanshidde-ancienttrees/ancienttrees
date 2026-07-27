@@ -2,6 +2,19 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Visual check clears this session's photo backlog: Munich reaches the 8-photo floor, three false matches caught and rejected
+
+- This session's tools turned out to support viewing images after all (fetch the raw file via WebFetch, which saves it locally, then Read the saved file), a capability documented as intermittent across sessions. Used it to resolve every `found_needs_check` photo left pending, rather than leaving them all for a future run.
+- **Confirmed and approved (4)**: Lyon's Pin de Bunge (distinctive pale mottled bark, exact match), Munich's Röth-Linde, Oak of the Dörfchen and Hackberries of Oskar-von-Miller-Ring (all matching their stories precisely, including the Siemens building visible behind the hackberry group), and Venice's Giardini della Biennale (a bridge and waterfront lined with mature pines and broadleaf trees, a genuine ensemble match).
+- **Rejected as false matches (3)**, all caught only because they could finally be viewed:
+  - **Milan's Il Sacerdote (mil_001)**: the candidate close-up showed at least two or three separate cypress trunks together, exactly the ambiguity the story itself warns about (several cypresses share this stretch of water); cannot be confirmed as the specific tallest/widest specimen. Reverted to missing.
+  - **Venice's Cypresses of San Michele (ven_002)**: the candidate (filenamed "Isola di San Michele") turned out to show a magnolia-like tree and statues inside a cloister courtyard, nothing like the cypress-ringed waterfront the story describes. Reverted to missing.
+  - **Kyoto's Five-Needle Pine of Hosen-in (kyo_003)**: a candidate captioned "Hosen-in, Bankan-en (Garden)" turned out to show an illuminated Japanese maple against a bamboo grove at night, not a pine at all; evidently the garden-name caption covers more than the one framed tree. Reverted to missing, a photo lead left pending since 2026-07-27's Kyoto pass.
+- **One left genuinely ambiguous**: Milan's Ginkgo of Brera (mil_004) photo shows an upward shot into leafy canopy with a vine-covered trunk, plausible for ginkgo but not clear enough from that angle to confirm the species by eye; stays at `found_needs_check`.
+- This is worth recording as a pattern: several of this project's "strong textual match" photos (exact location, exact caption) turned out wrong on an actual look, which is exactly why the found_needs_check status exists rather than approving on metadata alone.
+- Munich now at 8/10 photos approved, clearing rung 6's photo floor for the first time. Lyon stays at 2/10 (photo hunting there was largely exhausted this pass anyway), Milan at 5/10 with 1 pending, Venice at 4/10, Kyoto at 6/10 unchanged in count but with one false lead closed out.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Munich: 3 photo candidates found via the city's own Naturdenkmal register, pending visual check; one pin cross-confirmed via OpenStreetMap
 
 - Continued down rung 5's oldest-first order after Venice, to Munich (2/10 approximate, already meeting the pin bar; 5/10 photos, needing 3 more).
