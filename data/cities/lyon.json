@@ -35,8 +35,8 @@
       "age_max": 172,
       "location": {
         "address": "Parc de la Tête d'Or, arboretum perimeter path, 69006 Lyon",
-        "latitude": 45.7746,
-        "longitude": 4.8534,
+        "latitude": 45.7740651,
+        "longitude": 4.8571942,
         "neighbourhood": "6th arrondissement"
       },
       "story": "This pine's bark peels in patches of grey, green and cream as it ages, a trait so distinctive that the species barely needs its Latin name to identify it. Pinus bungeana is native to central China, first documented for Western science by the Russian botanist Alexander von Bunge in 1831 at a temple garden in Beijing, and this specimen was probably planted in 1856, the year construction began on the Parc de la Tête d'Or itself, making it one of the park's original plantings rather than a later addition. The International Dendrology Society's own reference site names it directly as the oldest cultivated Pinus bungeana in Europe, calling it a national treasure of the Lyon botanical garden, a specific claim rather than a vague superlative, and one this project treats as credible given the source. Locally it carries the nickname Pin de Napoléon, though no source connects the name to any specific historical event rather than general period association, so that link is not claimed here as fact. Nearly 170 years on, its trunk has developed the pale, almost white patchwork bark that only develops with real age, the single feature that makes this pine worth seeking out among the arboretum's thousands of other specimens.",
@@ -47,14 +47,14 @@
       "access": "Free, public park",
       "transport": "10 min walk from Masséna metro station (Line A)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/212211177/medium.jpg",
+        "license": "CC BY",
+        "attribution": "Julien Lepage, via iNaturalist",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "The 'Pin de Napoléon' nickname's origin is not documented in any source checked; not claimed as connected to Napoleon himself, only reported as a local name. A matching photo exists on Flickr (user Michele 69600) but is marked All Rights Reserved, not a usable open licence, so not used per hard rule 4.",
-      "location_precision": "approximate"
+      "notes": "The 'Pin de Napoléon' nickname's origin is not documented in any source checked; not claimed as connected to Napoleon himself, only reported as a local name. A matching photo exists on Flickr (user Michele 69600) but is marked All Rights Reserved, not a usable open licence, so not used per hard rule 4. An iNaturalist CC BY photo (obs 125150520, Julien Lepage) is held at found_needs_check pending a visual check this session's tools could not do.",
+      "location_precision": "confirmed"
     },
     {
       "id": "lyo_002",
@@ -113,7 +113,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No documented planting date; age estimated from the park's 1850s founding given the tree's exceptional measured size (5.45m girth, 30.5m height) rather than a verified record.",
+      "notes": "No documented planting date; age estimated from the park's 1850s founding given the tree's exceptional measured size (5.45m girth, 30.5m height) rather than a verified record. Cross-checked against an OpenStreetMap-tagged arboretum inventory node (ref 13912) recording the same 5.45m circumference in 2014 and 5.74m in 2025, within 5m of this entry's own coordinates: independent confirmation the pin is right, not a correction.",
       "location_precision": "confirmed"
     },
     {

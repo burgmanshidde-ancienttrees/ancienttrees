@@ -30,6 +30,16 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Lyon: the Pin de Bunge's pin corrected ~300m via a newly-found OpenStreetMap arboretum inventory
+
+- Visitors: 48 visits, 77 page views over 7 days (21-26 July: 8, 9, 10, 7, 4, 9), flat. No submissions (CSV still header row only).
+- Amsterdam, Lisbon, Rome, Barcelona and Istanbul's remaining photo gaps are exhaustively documented as dead ends across many passes today and this week; rather than repeat identical searches, moved down rung 5's order to Lyon, which had never had a depth pass since its original research (7/10 approximate pins, 1/10 photos, the most headroom of any untouched marquee-Europe city).
+- Found real, previously untried ground: OpenStreetMap's mapping of Parc de la Tête d'Or's arboretum is an individually-surveyed inventory (620 tagged tree nodes with species and measurements), not the sparse coverage seen elsewhere. The Pin de Bunge's node carries `denotation=natural_monument` and `species:fr=Pin Bunge, Pin Napoléon`, an exact match on both this tree's formal name and the local nickname already in its story. Moved ~300m to the confirmed position. The same inventory independently corroborated (not corrected) the Bald Cypress and Osage Orange pins already marked confirmed, matching their sourced circumference figures almost exactly.
+- One candidate photo found for the Pin de Bunge (CC BY, iNaturalist, Julien Lepage, ~15m from the confirmed node), held at `found_needs_check` since this session's tools could not view the image directly to confirm it by eye.
+- Four other gaps (Parc de la Garde chestnut, Parc de la Chapelle cedar, Île Barbe cedar, Parc de Gerland pagoda tree) tried and either genuinely lack species data in OSM or, for Gerland, hit a repeated timeout rather than a confirmed dead end. Full detail in CURATION.md so a future pass doesn't repeat the same ground blind.
+- Lyon now at 6 of 10 approximate pins (from 7). Photos unchanged at 1/10 approved.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — New York: 2 approximate pins confirmed via OpenStreetMap (Hangman's Elm, Camperdown Elm)
 
 - Same technique as the Kyoto pass just below, applied to New York, which hadn't had a pin pass since its original research. Both of NYC's own "Great Trees" landmarks used in this project's data turned out to be individually mapped in OpenStreetMap under their exact names, with planting years that independently match this project's own age claims. New York now at 6 of 10 approximate pins, from 8.
