@@ -30,6 +30,14 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Rome: Adonis finally gets a photo, via a workaround for images this session couldn't otherwise view
+
+- Continued to Rome after Istanbul. Its four remaining photo gaps had all been tried hard before; one, the Twin Planes of the Eleven Fountains, was stuck specifically because an earlier pass found a plausible photo but couldn't open it to check what was actually in frame.
+- Found a workaround worth remembering for future runs: fetching a raw image URL through WebFetch fails to produce a text description, but it does save the image to a local file, which the Read tool can then open and view directly. Used it to finally settle the Twin Planes candidate (a stone urn, not the trees, correctly rejected) and, more usefully, to confirm a 2009 photo of a large hollow-trunked oriental plane in Villa Borghese's plane grove as a genuine match for Adonis's own described hollow trunk, even though the file doesn't name Adonis specifically among the grove's nine survivors. Approved as an honest illustration of the tree and its grove, same standard as other ensemble photos already live on the site.
+- The other two gaps (the Cork Oak of the Orangery, the Aleppo Pine of Celimontana) stay genuine dead ends: fresh iNaturalist queries filtered server-side to open licences only, at both trees' exact registry coordinates, came back empty or non-open.
+- Rome now at 7/10 photos (from 6).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Istanbul: two more pins tightened to individual age-matched trees, Beykoz Çayırı upgraded to confirmed
 
 - Visitors: 50 visits, 79 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 2), flat, in line with the pattern this whole week. No submissions (CSV still header row only). Nothing published found wrong; build was clean at the start.

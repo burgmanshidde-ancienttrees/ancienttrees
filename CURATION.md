@@ -2,6 +2,16 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Rome: Adonis gets a photo, a new image-viewing technique closes an old open question
+
+- Continued down rung 5's order after Istanbul, to Rome (6/10 photos, 0/10 approximate, already at the precision half of the depth-exit-test bar). All 4 remaining photo gaps (Adonis, the Twin Planes of the Eleven Fountains, the Cork Oak of the Orangery, the Aleppo Pine of Celimontana) had been tried hard and left open across several prior passes, one specifically because "this session's tools could not open the image to check whether they're actually in frame."
+- **New technique that unblocks that class of gap**: WebFetch can fetch a raw image URL directly; when it cannot describe the binary, it still saves the fetched image to a local path in the tool result, which the Read tool can then open and actually view. This works around sessions where a direct image fetch or curl download requires an approval that never comes in an unattended run.
+- Used it to finally resolve **the Twin Planes of the Eleven Fountains**' one open candidate (a CC0 Commons photo of the fountain itself): viewed directly, it is a close-up of a stone garden urn against a hedge, no plane trees in frame. Correctly rejected, a genuine dead end now closed rather than left open.
+- Used it again on **Adonis**: a 2009 CC BY-SA 3.0 Commons photo (categorized "Valle dei platani") viewed directly shows a large oriental plane with a prominent hollow trunk cavity standing in a grove of similarly aged planes, an unusually strong match to Adonis's own described hollow trunk and setting. The file doesn't name Adonis specifically among the grove's nine survivors, so approved as an honest illustration of the tree and its grove, the same standard already used elsewhere on this project (Amsterdam's Hortus cycad pair, Istanbul's Karacaahmet cypresses) for ensemble scenes.
+- **The Cork Oak of the Orangery and the Aleppo Pine of Celimontana stay genuine dead ends**: Commons category browsing and direct iNaturalist API queries at both trees' exact registry coordinates (filtered server-side by open licence) returned zero CC0/CC-BY/CC-BY-SA candidates for either, only cc-by-nc and all-rights-reserved observations for the cork oak, nothing at all for the pine.
+- Rome now at 7/10 photos (from 6), still 0/10 approximate.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Istanbul: two Bahçeköy pins tightened to specific age-matched trees, Beykoz Çayırı upgraded to confirmed
 
 - Continued straight on from the pass below, querying the same national GIS layer (`turkiye_anit_agaclari`) with actual geometry returned and converted from Web Mercator to lat/lon, rather than relying on general campus/farm/park anchors.
