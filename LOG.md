@@ -30,6 +30,13 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Munich: all 9 remaining approximate pins fixed at once, via its own tree-protection law
+
+- Checked Munich's real numbers directly instead of trusting an old log line, and found it was actually at 9 of 10 approximate pins, its worst dimension by far given 8/10 photos already approved. All nine are named, individually law-protected trees, so this was worth real effort rather than an honest structural limit.
+- The fix came from a source already cited on every one of these entries without anyone having pulled its coordinates before: German Wikipedia's list of Munich's legally protected Naturdenkmal trees. Two entries returned suspiciously similar coordinates at first glance, which could have meant a copy-paste error in that table. Checked it two different ways before trusting it: geocoding one tree's own street address independently, and separately following a written direction ("200m northwest of the Monopteros temple") from one of this project's own approved photo captions. Both checks landed within 100m of what the table said, which was enough to trust it and also revealed the *old* stored pins were the actual errors, off by as much as 1.6km in a few cases.
+- Moved and confirmed all nine. Munich is now the first Naturdenkmal-heavy city on this site with zero approximate pins.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Naples: a pin confirmed via its neighbours in the same cloister; Barcelona and Milan's remaining gaps checked, no change needed
 
 - Barcelona's four remaining photo gaps (already dead ends from yesterday) got one more fresh iNaturalist pass: a near-miss CC0 photo of the right species turned up 390m away, but Barcelona has around 1,100 of these trees citywide, so proximity alone isn't enough to call it the same specific catalogued specimen. Correctly left unused.
