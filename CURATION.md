@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Venice: 2 photo candidates found (Giardini della Biennale, San Michele cypresses), pending visual check
+
+- Continued down rung 5's oldest-first order after Milan, to Venice (10/10 approximate, the least-resolved precision in the marquee-Europe group, but structurally so: every entry here is an island, garden or fortress ensemble rather than a single named tree, so "approximate" is the honest precision for most regardless of further search). Photos stood at 3/10, needing 5 more.
+- **The Founding Trees of the Giardini della Biennale (ven_001)**: found a CC BY-SA 3.0 Commons photo of the garden's own pedestrian bridge surrounded by mature landscaped greenery, a reasonable ensemble illustration matching the entry's own description of avenues and groves. Held at `found_needs_check`.
+- **The Cypresses of San Michele Cemetery (ven_002)**: an earlier pass already rejected one candidate for showing only grave sections. Found a different, CC BY-SA 2.0 Flickr-sourced photo simply titled "Isola di San Michele", most likely a water-approach view of the island per its framing, consistent with the story's description of cypress spires visible above the cemetery walls from the lagoon, though the caption does not explicitly name cypresses. Held at `found_needs_check`.
+- **Five gaps tried and stayed genuine dead ends**: San Lazzaro degli Armeni's cedar, the Certosa's black poplar, Villa Groggia's hackberries, San Servolo's olive (already rejected once) and Forte Marghera's century trees. Wikimedia Commons searches (English and Italian terms, direct category browsing) and targeted iNaturalist queries at each entry's own coordinates turned up nothing usable for any of the five; Forte Marghera in particular has Commons coverage of its entrance and grounds but nothing showing the described tree-lined parade grounds specifically.
+- Photos: 3/10 approved, 2 more pending visual check. Pin precision unchanged (10/10 approximate, structural to the entries rather than a search gap).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Milan: 2 photo candidates found (Il Sacerdote, the Ginkgo of Brera), pending visual check
 
 - Continued down rung 5's oldest-first order after Lyon, to the next marquee-Europe city with no depth pass since original research: Milan (2/10 approximate, already meeting the pin bar; 5/10 photos, needing 3 more for the floor).
