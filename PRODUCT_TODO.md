@@ -16,6 +16,18 @@ Collect returns to the web as the app's rehearsal: login UX (magic link, Slack-s
 A page at `/in-season` (linked from the Season act on the homepage once it exists): every tree whose `best_time.months` contains the current build month, grouped by city, each with its label phrase and a link. Static is fine: the site rebuilds many times a day, so "this month" stays true. Month with nothing in season shows the nearest upcoming moments instead of an empty page (empty states teach, PRINCIPLES.md).
 Shipped as /in-season: current month plus the two coming months, grouped by city, linked from the homepage Season act, contracts green. Runs keep it honest simply by rebuilding the site. Skip to item 3.
 
+### 2b. Daily data digest, requested by Hidde 2026-07-27 in session. Takes priority over items 3 and 4.
+Hidde: "ik zou graag ook een dagelijkse conclusie van je krijgen naast de changelog wat de google console en cloudflare zegt. wat is de data geweest van de afgelopen dag en wat zijn de veranderingen."
+
+Build: a new root file `DATA.md`, newest entries on top, one dated entry per day, written by the first run of each calendar day. Each entry: yesterday's numbers, the change against the day before, a 7-day trend, and ONE plain-language conclusion sentence (what this means, in the tone a busy owner reads cold). No graphs, no padding; a day with nothing notable says so in one line.
+
+Sources, strictly stdlib urllib (hard rule 5, no new dependencies):
+- **Cloudflare**: GraphQL Analytics API using the `CLOUDFLARE_ANALYTICS_TOKEN` secret, CONFIRMED present on the repo since 2026-07-26 (verified via `gh secret list` in session 2026-07-27, so do not wait on it; zone listed via the API with the same token). Pull for yesterday: requests, unique visitors, top 5 paths, top 5 countries.
+- **Search Console**: no API credential exists and creating one is Hidde's (Google account). Until then: whenever a fresh manual GSC export lands in the repo, fold its numbers into that day's entry with the export date clearly stated. Never present stale export numbers as current. If Hidde wants GSC fully automated, flag once in LOG.md what he must create (OAuth client + refresh token for the webmasters.readonly scope; the token exchange is a plain HTTPS POST, no new dependencies), with a short numbered list he can follow.
+- **Volume honesty, standing rule from the same session**: while volume is tiny, the conclusion sentence must say so plainly ("nog steeds ruis-niveau, geen conclusies uit te trekken") rather than narrate noise as trend. Hidde explicitly called out strategy built on week-one metrics.
+
+**Done when:** `DATA.md` exists; the digest step runs in CI, writes a dated entry when the token secret is present, and skips with a single honest LOG.md line when it is not; a second run the same day does not duplicate the entry; entries render valid markdown (spot-check by grep on the date header format).
+
 ### 3. Copy audit against the value proposition and the durable-claims rule
 Walk every template string in `scripts/build_site.py` against CLAUDE.md's value proposition and the rule that copy may only promise what the paywall will survive. Remove drifted or filler copy; tighten to the tone of voice.
 **Done when:** grep finds no "free forever", "always free", "no accounts" (as a promise), "never pay" anywhere in generated pages; spot-grep of banned tone words ("hidden gem", "must-see", "breathtaking", "nestled", em dashes) stays zero across `site/dist`.
