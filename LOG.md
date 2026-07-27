@@ -30,6 +30,15 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Three unverified photos actually confirmed by eye (Rome, Amsterdam, Dublin); a stale CLAUDE.md note fixed
+
+- Visitors: 48 visits, 77 page views over 7 days, flat. No submissions.
+- This session could download and view images directly, a capability that comes and goes across runs. Used it to clear every `found_needs_check` photo left on the site: Rome's Cedar of the Belvedere (unmistakably a Cedar of Lebanon, matches the exact-GPS registry match already made), Amsterdam's Cycad of the Hortus (two cycads facing each other, matching the story's own detail about a male-female pair grown opposite each other), and Dublin's Great Sycamore of Farmleigh (a single huge, fenced, ancient sycamore matching the file's own Farmleigh caption). All three approved. Rome now 6/10 photos, Amsterdam 7/10, Dublin 5/10.
+- Re-hunted Dublin's other 4 photo gaps and Rome's Adonis; all genuine dead ends, matching several prior passes' findings. Not looping further on those.
+- Fixed a stale instruction in CLAUDE.md: it still told runs to replace Barcelona's bcn_008 for failing the collectibility rule, but that replacement (the Silk Tree of the Ciutadella) already happened on 2026-07-26. Updated the note so a future run doesn't re-investigate something already done.
+- Depth-exit-test still not met: Istanbul (2/10 photos, 8 approximate) remains furthest behind and untouched this pass, already exhaustively covered on 2026-07-26. Amsterdam and Rome are now the closest of the eight to clearing the photo floor, one photo short of Lisbon's old lead.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-26 — Brussels: the regional tree registry came back online, 2 more pins resolved
 
 - Followed straight on from the Antwerp pass with the same technique. A lead flagged earlier today, Brussels' regional "arbres remarquables" register, was unreachable (connection refused); this pass found the site back up and traced through to the actual data service.
