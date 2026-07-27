@@ -2,6 +2,13 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Madrid: the Holm Oak of the Trillo Roundabout's pin was wrong by 600m, not just approximate; fixed. One more pin tightened.
+
+- Continued the ladder to Madrid (4/10 photos, 4/10 approximate). The Holm Oak of the Trillo Roundabout (mad_007) had its pin converted from a sourced DMS reading, which turned out to sit about 600m from the tree's real position. Found an OpenStreetMap node individually named "Encina del Trillo," tagged as a Comunidad de Madrid natural monument, species Quercus ilex, with an 18.5m crown diameter, an exact match to this entry's own "18.5 metres across" figure; two more nearby OSM features (a "Glorieta del Trillo" locality node, its own information board) corroborate the same cluster. Moved and set `confirmed`. This is the third wrong-not-just-approximate pin found today (after Athens' Kaisariani Monastery and Vienna's Ginkgo), suggesting the DMS-conversion and cross-check step is worth a systematic pass across older entries at some point, not something to fix tree-by-tree forever.
+- The Himalayan Cedar of the Crystal Palace (mad_002) was pinned to the pond area generally; geocoded the Palacio de Cristal building itself (Nominatim, two results agreeing within 40m) and moved about 160m closer. Checked OpenStreetMap's individually-tagged trees around the pond for this specific cedar, found only bald cypresses (one a natural monument in its own right, "Ciprés Calvo del Estanque del Palacio de Cristal"), no Cedrus deodara, so this stays a building-level anchor rather than a surveyed point.
+- The Aleppo Pine of Campo del Moro (mad_008) and the Stone Pine of the Priest's House at El Capricho (mad_010) were not reached this pass; left for a future one.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Porto: 3 pins tightened from a shared whole-garden estimate to their actual buildings
 
 - Continued the ladder to Porto (4/10 photos, 6/10 approximate). Four Palácio de Cristal entries (Magnolia and Camellias at Casa Tait, the Plane at Quinta da Macieirinha, the Himalayan Cedar) all shared the exact same coordinates, a whole-garden centroid rather than anything building-specific, even though two of the four name a specific building within the garden.

@@ -30,6 +30,13 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Madrid: a third wrong-location pin found today (Trillo Holm Oak, 600m off), one more tightened
+
+- The Holm Oak of the Trillo Roundabout was pinned from a converted DMS reading that turned out to be 600m from the real tree. An OpenStreetMap node individually named "Encina del Trillo," tagged as a regional natural monument with an exact crown-diameter match to this entry's own story, gave the real position. Moved and confirmed. This is the third genuinely-wrong (not just imprecise) pin caught today, after Athens and Vienna, worth a FOR HIDDE note: it may be worth a dedicated systematic pass cross-checking DMS-converted and third-party-sourced pins across the older cities, rather than finding these one at a time as depth work happens to reach each city.
+- Also tightened the Himalayan Cedar of the Crystal Palace's pin about 160m to the Palacio de Cristal building itself.
+- Noting for whichever run picks this up next rather than flagging for Hidde (this is ours to decide and act on): three genuinely-wrong pins turning up in one day just from incidental depth passes suggests a dedicated sweep, re-checking every approximate/DMS-derived pin against its own already-cited sources city by city, would likely pay for itself. Reversible, no contract change needed, a good candidate for a future run with room to spare.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Porto: 3 pins tightened off a shared whole-garden estimate to their actual buildings
 
 - Four Palácio de Cristal entries were all sitting on the exact same coordinates, a whole-garden centroid, even though two name a specific building. Geocoded Casa Tait and Quinta da Macieirinha independently and moved three entries (the Magnolia, the Camellias, the Plane) to their real buildings, 140-150m each. They stay `approximate` rather than `confirmed`, since Porto's own classified-trees register doesn't cover them yet (still under formal review), so this is a tighter estimate, not a survey. Six photo gaps tried hard, all genuine dead ends (all-rights-reserved or CC BY-NC only).
