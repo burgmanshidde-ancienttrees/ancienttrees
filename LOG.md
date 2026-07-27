@@ -30,6 +30,11 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Bologna: 1 more pin corrected via Italy's national monumental tree registry
+
+- Continued rung 5's order after Malaga. The Sequoia of the Giardini Margherita's own RAMI registry entry gives an identical 37.40m height and 5.20m circumference to this project's own sourced figures, a clean match; moved about 110m. Bologna now at 6/10 approximate pins (from 7). Two other gaps tried, stayed genuine dead ends.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Malaga: dead-end pass, one tempting photo caught and rejected
 
 - Continued rung 5's order after Granada. Malaga's 7 photo gaps got a fresh try; one real candidate (La Concepcion's tallest araucaria) turned up but couldn't be pinned to the specific record tree among several in frame, the same problem that sank a Milan candidate earlier tonight, so not used. The other six gaps stayed genuine dead ends. No data changed; detail in CURATION.md.

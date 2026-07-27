@@ -65,8 +65,8 @@
       "age_max": 145,
       "location": {
         "address": "Giardini Margherita, Viale Giovanni Gozzadini, 40125 Bologna",
-        "latitude": 44.4848,
-        "longitude": 11.3524,
+        "latitude": 44.483888,
+        "longitude": 11.351909,
         "neighbourhood": "Santo Stefano"
       },
       "story": "A coast redwood is a genuine oddity in an Italian city garden, and this one has grown into one of the tallest living things in Bologna: 37.4 metres, a trunk 520cm around, standing near the artificial lake that anchors the Giardini Margherita's English-style landscape design. Sequoia sempervirens is native to a narrow strip of California and southern Oregon coastline, kept alive there by coastal fog the species depends on to survive the dry summer months, conditions nothing like Bologna's own inland climate, which makes this specimen's continued health after more than a century something closer to a curiosity than a certainty. The gardens themselves opened in 1879 on land bought from a former convent estate, laid out as Bologna's first genuinely English-style public park, complete with an Etruscan necropolis whose remains are still visible near the grounds. Among the park's other conifers, oaks and horse chestnuts, the sequoia is unmistakable purely by scale, visibly taller than everything around it long before a visitor reaches the lake it stands beside.",
@@ -83,8 +83,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Dimensions (37.4m height, 520cm circumference) from a dedicated Bologna monumental-trees article, corroborated by Wikipedia's sourced article on the gardens' history and general species collection. No individual planting date documented. No usable photo found.",
-      "location_precision": "approximate"
+      "notes": "Dimensions (37.4m height, 520cm circumference) from a dedicated Bologna monumental-trees article, corroborated by Wikipedia's sourced article on the gardens' history and general species collection. No individual planting date documented. No usable photo found. Pin corrected ~110m via Italy's national monumental tree registry (RAMI), whose own entry for this exact tree records an identical 37.40m height and 5.20m circumference.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bol_003",
