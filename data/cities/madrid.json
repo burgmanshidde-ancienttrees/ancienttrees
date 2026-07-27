@@ -66,8 +66,8 @@
       "age_max": 160,
       "location": {
         "address": "Estanque del Palacio de Cristal, Parque del Retiro, 28009 Madrid",
-        "latitude": 40.4133,
-        "longitude": -3.6839,
+        "latitude": 40.4136,
+        "longitude": -3.6820,
         "neighbourhood": "Retiro"
       },
       "story": "This cedar stands directly in front of the pond at the Palacio de Cristal, a 19th century glass and iron pavilion built in 1887 to exhibit plants and animals brought back from the Philippines, and it has spent most of the pavilion's history as part of the same postcard view: the glass palace reflected in the water, framed by the cedar's dark, tiered branches. Deodar cedars come from the western Himalayas, where the name deodar derives from a Sanskrit phrase meaning timber of the gods, and the species reached European ornamental gardens in the early 19th century as one of many exotic conifers collectors raced to introduce. Madrid's climate, hot and dry in summer rather than the Himalayan cedar's native monsoon-fed mountains, has suited this specimen well enough that it now ranks among Retiro's six officially singular trees, protected under the same regional catalogue as its more famous neighbour, the disputed-age Ahuehuete a short walk away.",
@@ -84,7 +84,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Age is an estimate based on the Palacio de Cristal's 1887 construction date and typical planting-alongside-building practice; no source gives a precise planting date for this specific tree. Coordinates are for the Palacio de Cristal pond area generally, not a surveyed point for the tree.",
+      "notes": "Age is an estimate based on the Palacio de Cristal's 1887 construction date and typical planting-alongside-building practice; no source gives a precise planting date for this specific tree. Pin moved 2026-07-27 about 160m to the Palacio de Cristal building itself (Nominatim, two independent address results agreeing within 40m); checked OpenStreetMap's individually-tagged trees around the pond for this specific cedar but found only bald cypresses named there, no Cedrus deodara, so this stays a building-level anchor rather than a surveyed point for the tree itself.",
       "location_precision": "approximate"
     },
     {
@@ -218,8 +218,8 @@
       "age_max": 310,
       "location": {
         "address": "Glorieta del Trillo, Casa de Campo, 28011 Madrid",
-        "latitude": 40.41617,
-        "longitude": -3.74619,
+        "latitude": 40.4158156,
+        "longitude": -3.7531411,
         "neighbourhood": "Casa de Campo"
       },
       "story": "Roads converge on this tree rather than around it. The Glorieta del Trillo, where the Carretera de Somosaguas, the Paseo de los Castanos and the Camino de Rodajos all meet inside Casa de Campo, is named for the holm oak growing at its centre, a roughly 300 year old specimen with a crown 18.5 metres across and a trunk 4.6 metres around. Casa de Campo itself was a royal hunting estate from the 16th century until 1931, when the Second Republic opened it to the public, which means this oak spent roughly two centuries of its life on private land reserved for the Spanish crown's deer and boar hunts rather than growing in anything resembling a public park. Holm oaks are Iberia's signature evergreen, slow growing and built to survive exactly the hot, dry summers and cold winters Madrid delivers, and this one has outlasted the hunting estate, the monarchy that owned it, and the Republic that opened the gates, still marking the same road junction today.",
@@ -236,8 +236,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Coordinates converted from a sourced DMS reading (40°24'58.2\"N 3°44'46.3\"W) for the Glorieta del Trillo road junction; reasonably precise for the junction but not independently surveyed for the tree's exact trunk position.",
-      "location_precision": "approximate"
+      "notes": "Pin was genuinely wrong, not just approximate: the previous coordinates, converted from a sourced DMS reading (40°24'58.2\"N 3°44'46.3\"W), sat about 600m from the tree's actual position. Corrected 2026-07-27 via an OpenStreetMap node individually named \"Encina del Trillo,\" tagged as a Comunidad de Madrid natural monument with species Quercus ilex and an 18.5m crown diameter, an exact match to this entry's own '18.5 metres across' figure. Two more nearby OSM features (a \"Glorieta del Trillo\" locality node and its own information board) corroborate the same cluster.",
+      "location_precision": "confirmed"
     },
     {
       "id": "mad_008",
