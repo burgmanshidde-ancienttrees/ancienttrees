@@ -1,0 +1,84 @@
+{
+  "slug": "the-oldest-tree-in-every-country-we-map",
+  "title": "The Oldest Tree in Every Country We Map",
+  "status": "published",
+  "meta_description": "The single oldest verified tree in each of the 15 countries this site covers, from a disputed 2,500 year old Athens olive to a 200 year old Prague plane.",
+  "intro": "Fifteen countries, one tree each: the oldest verified specimen this site has found in every country it currently maps. Some claims are as solid as a tree gets, an oak whose ring count nearly matches a city's own founding record. Others are genuinely disputed, and say so rather than rounding up. What they share is a place you can actually walk to and stand in front of. Start with the most contested of them all, an Athens olive whose age depends entirely on who you ask.",
+  "entries": [
+    {
+      "city_slug": "athens",
+      "tree_id": "ath_002",
+      "note": "Officially attested at over 2,500 years by the Hellenic Archaeological Society in 1919, a figure modern olive-dating methods can't support with confidence. Presented honestly as a 300 to 2,500 year range rather than the eye-catching single number."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_001",
+      "note": "The oldest living thing in London by a wide margin: already ancient when the Romans built Londinium two thousand years ago, over a millennium older than the 13th century church built beside it."
+    },
+    {
+      "city_slug": "istanbul",
+      "tree_id": "ist_001",
+      "note": "Istanbul's oldest living thing predates the city's Ottoman name by seven centuries, an Oriental plane inside a university forestry research station with a trunk 4.5 metres across."
+    },
+    {
+      "city_slug": "kyoto",
+      "tree_id": "kyo_009",
+      "note": "Said to have been alive when the Heian-kyo palace it is named for was first built, standing in forest that was imperial timber land for centuries."
+    },
+    {
+      "city_slug": "berlin",
+      "tree_id": "ber_001",
+      "note": "Older than Berlin itself: when the city got its first written mention in 1237, this oak in the Tegel Forest had likely already been growing for over a century. How much older it has grown since stays a genuine, unresolved dispute."
+    },
+    {
+      "city_slug": "dublin",
+      "tree_id": "dub_003",
+      "note": "Local tradition puts this yew past seven hundred years; a more cautious girth-only estimate still lands past five hundred. Either figure makes it older than the house whose garden it now shares, built in 1710."
+    },
+    {
+      "city_slug": "vienna",
+      "tree_id": "vie_002",
+      "note": "Not really a tree anymore: the 2.19 metre midsection of a spruce that started growing around 1400, felled after forty years, and spent the roughly 500 years since being hammered full of nails by travelling craftsmen for luck."
+    },
+    {
+      "city_slug": "seville",
+      "tree_id": "sev_002",
+      "note": "Said to have come from seeds Hernando Colon, son of Christopher Columbus, brought back from South America around 1529 and planted in his own private arboretum."
+    },
+    {
+      "city_slug": "lyon",
+      "tree_id": "lyo_006",
+      "note": "The reason its park exists in its current shape: Parc de la Chapelle's open lawn and paths were arranged around this single cedar rather than the other way round. Its locally claimed 500 year age is botanically disputed."
+    },
+    {
+      "city_slug": "lisbon",
+      "tree_id": "lis_001",
+      "note": "Four olive trees outside a small round chapel that have outlived every Portuguese king since before the Braganza dynasty existed, dated to about 457 years by the city's own classification records."
+    },
+    {
+      "city_slug": "new-york",
+      "tree_id": "nyc_005",
+      "note": "Already centuries old when New Amsterdam was still a Dutch trading post, and unlike almost every other tree on this list, nobody planted it: a wild tulip poplar and the tallest carefully measured tree in New York City."
+    },
+    {
+      "city_slug": "rome",
+      "tree_id": "rom_002",
+      "note": "The largest survivor of eleven trees Cardinal Scipione Borghese planted here four centuries ago, a vast hollow-trunked oriental plane at the entrance to what is now called the Valley of the Plane Trees."
+    },
+    {
+      "city_slug": "brussels",
+      "tree_id": "bru_001",
+      "note": "Brussels' own heritage inventory calls this oak probably the oldest tree of any kind in the entire region, an age derived from a single number: 6.05 metres around the trunk."
+    },
+    {
+      "city_slug": "amsterdam",
+      "tree_id": "ams_005",
+      "note": "Already growing in South Africa when Amsterdam's Hortus Botanicus bought it in 1850, an Eastern Cape giant cycad the two have been growing together ever since, kept potted under glass."
+    },
+    {
+      "city_slug": "prague",
+      "tree_id": "prg_001",
+      "note": "The thickest protected tree in Prague, trunk seven and a half metres around. Its most famous story, that Beethoven rested beneath it in 1796, is almost certainly false, but the tree itself is real enough."
+    }
+  ]
+}

@@ -30,6 +30,13 @@ Collections publish without your approval since blueprint v1.3; new ones simply 
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — A second collections pass: the oldest tree in every country we map
+
+- Continued the product lane straight after the last entry; depth work stayed at today's exhausted state (confirmed again on Istanbul specifically, see below), so time went to another item 4 pass rather than a sixth re-try of the same dead ends.
+- **The Oldest Tree in Every Country We Map**, drafted and published directly: one entry per country, the single oldest verified tree this site has in each of the 15 countries it currently covers. Mechanically derived (a script picked the max `age_max` per country, cross-checked against every entry's own already-published age framing so disputed ones stay honestly disputed, e.g. Athens' olive keeps its 300-2,500 year range rather than the eye-catching 2,500 figure alone). All 15 kept rather than trimmed to the usual 5-12: the title promises "every country," so cutting any would break the promise the collection makes. A script confirmed all 15 entries resolve to a real tree in the right country with no duplicates before publishing. 7 public collections now, up from 6.
+- **Istanbul's remaining 6 approximate pins and 8 photo gaps got one more delegated pass**, independent of today's earlier registry work: same anitagaclar.gov.tr/anitagac.istanbul licensing dead end confirmed from a fresh angle (no explicit reuse licence stated anywhere on either site, silence isn't a licence), and one new candidate source (konusanagac.com, İBB's own "talking trees" site, which has an entry naming the Beykoz Çayırı plane) turned out to be DNS-dead, not merely unlicensed. No data changed; Istanbul stays at 2/10 photos, 6/10 approximate. Recording this so a future pass doesn't retry the same two leads expecting a different result.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — A real bug fixed: question pages linked the same collection to every city regardless of relevance, plus two more collections
 
 - Visitors: 0 visits recorded this week (scripts/visitors.py returned an empty window, 2026-07-20 to 2026-07-27). No submissions (CSV still header row only).
