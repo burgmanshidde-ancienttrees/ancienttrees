@@ -2,6 +2,12 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Porto: a new official classified-trees dataset found, but genuinely doesn't cover this city's remaining gaps
+
+- Next in marquee-Europe order after Seville. Found Porto's own open-data GeoJSON of legally classified/protected trees (`opendata.porto.digital`, CC0, 510 features), a real, previously untried source.
+- It doesn't help here: the six remaining approximate entries stand at Casa Tait/Quinta da Macieirinha/Palácio de Cristal (private estate and museum grounds) and the University of Porto's Botanical Garden, neither covered by this particular municipal classification list, which turns out to be centred on public avenue and street plantings elsewhere in the city (Magnolia and Platanus rows dated to a 2005 decree, Metrosideros and Phoenix canariensis groups). Zero Cedrus of any kind appear in the dataset at all, ruling out both of the Botanical Garden's two cedar entries directly.
+- No data changed. Recording the jurisdictional reason so a future pass doesn't requery this exact dataset for these same six trees.
+
 ## 2026-07-27 — Seville: 2 approximate pins resolved via a new city tree-inventory source; sevilla.org still down
 
 - Continued rung 5's marquee-Europe order (Berlin, already 9/10 photos and 0 approximate, needed nothing further) to Seville, at 9/10 approximate since research. sevilla.org's own singular-trees catalogue is still connection-refused (confirmed again this pass), but found a genuinely new source: Seville's Parks and Gardens department publishes its full 2025 tree inventory on ArcGIS Hub (`services1.arcgis.com/hcmP7kr0Cx3AcTJk/.../Parques_y_Jardines_Inventario_de_Arboles`), a different dataset from the singular-trees catalogue, covering ordinary managed park and street trees city-wide with species and trunk circumference.
