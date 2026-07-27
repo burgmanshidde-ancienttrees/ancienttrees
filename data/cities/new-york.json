@@ -217,15 +217,17 @@
       "age_min": 300,
       "age_max": 350,
       "location": {
-        "address": "Clove Lakes Park, north end near the paved path, Staten Island, NY 10301",
-        "latitude": 40.6183,
-        "longitude": -74.1083,
+        "address": "Clove Lakes Park, north end near the paved path off Forest Avenue, Staten Island, NY 10301",
+        "latitude": 40.627178,
+        "longitude": -74.121775,
         "neighbourhood": "Sunnyside, Staten Island"
       },
       "story": "Staten Island's tallest tree stands 119 feet, more than 14 feet shorter than Queens' record-holding tulip tree, but old enough on its own terms to anchor the north end of Clove Lakes Park, easily found along a paved path where its trunk, 21.4 feet around, dwarfs everything nearby. Tulip trees like this one are among the tallest native hardwoods in eastern North America, capable of shooting straight up through a forest canopy in search of light rather than spreading wide the way an open-grown oak would, which is part of why the species so often produces the height records claimed on lists like this one. Clove Lakes Park itself preserves one of Staten Island's last stretches of the mixed hardwood forest that once covered most of the borough before 20th century development, and the Colossus, reported at well over 300 years old, would have been an established mature tree when the surrounding land was still farmland rather than parkland. It remains one of Staten Island's contributions to New York City's official Great Trees registry, one of ten entries from the least visited of the five boroughs.",
       "verified_sources": [
         "https://www.untappedcities.com/this-is-the-oldest-and-tallest-tree-in-nyc-the-queens-giant-in-alley-pond-park/",
-        "https://www.nycgovparks.org/facilities/great-trees"
+        "https://www.nycgovparks.org/facilities/great-trees",
+        "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points, objectid 5600819)",
+        "https://www.inaturalist.org/observations/363934201"
       ],
       "access": "Free, public park",
       "transport": "Staten Island Railway to Clove Road area, or S61/S62 bus, 10 min walk",
@@ -236,8 +238,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Sourcing for this specific tree is thinner than the others on this list: the height and circumference figures come from secondary coverage rather than a dedicated NYC Parks Great Trees entry found in this search. Age presented as a wide range and the tree flagged for a stronger primary source in a future pass. Coordinates are for the park generally, not a surveyed point.",
-      "location_precision": "approximate"
+      "notes": "Sourcing for this specific tree is thinner than the others on this list: the height and circumference figures come from secondary coverage rather than a dedicated NYC Parks Great Trees entry found in this search. Age presented as a wide range and the tree flagged for a stronger primary source in a future pass. Location resolved 2026-07-27 via NYC Open Data's Forestry Tree Points dataset: the only Liriodendron tulipifera record citywide with a 93-inch DBH, an exact match to the Colossus's own reported circumference, sitting right at the park's mapped northern boundary off Forest Avenue. An independent iNaturalist observation of the same species sits about 10m away, corroborating the point rather than just the park.",
+      "location_precision": "confirmed"
     },
     {
       "id": "nyc_008",

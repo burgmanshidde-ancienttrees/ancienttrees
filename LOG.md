@@ -30,6 +30,14 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — New York: the Clove Lakes Colossus pin corrected 1.5km via NYC's own open tree dataset
+
+- Visitors: 51 visits, 80 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 3), flat, in line with the week's pattern. No submissions (CSV still header row only). Nothing published found wrong; build was clean at the start.
+- Checked the depth-exit-test cities directly first: Amsterdam, Lisbon, Rome and Barcelona have each had exhaustive photo-only dead-end passes today; Istanbul had a thorough registry/GIS pin pass today too. Moved to New York next per rung 5's oldest-first order, since same-day work there turned out thinner than assumed.
+- Delegated a fresh research pass across New York's 6 approximate pins and 7 missing photos. Most of it reconfirmed today's earlier photo dead ends (nothing licence-clean and tree-identifiable on Wikimedia, iNaturalist or Flickr; a promising Wikimedia "Tupelo Meadow" photo pair was viewed directly and turned out to be a generic wide shot, correctly rejected). One real find: NYC Open Data's Forestry Tree Points dataset (not tried by today's earlier OSM-based pass) has exactly one tulip tree citywide with a 93-inch trunk diameter, an exact match to the Clove Lakes Colossus's own reported circumference, independently corroborated by an iNaturalist observation 10m away and sitting right at Clove Lakes Park's actual mapped northern boundary. Moved the pin 1.5km and set `confirmed`.
+- New York now at 5/10 approximate pins (from 6). Photos stay at 3/10, genuinely exhausted today.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Munich: all 9 remaining approximate pins fixed at once, via its own tree-protection law
 
 - Checked Munich's real numbers directly instead of trusting an old log line, and found it was actually at 9 of 10 approximate pins, its worst dimension by far given 8/10 photos already approved. All nine are named, individually law-protected trees, so this was worth real effort rather than an honest structural limit.
