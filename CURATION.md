@@ -2,6 +2,21 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Florence: the Micheli Yew gets a photo via Openverse; a wrong-statue candidate for the Cedar Above Pegasus caught and rejected
+
+- Continued the Openverse pass onto Florence (0/10 approximate, 3/10 photos, already a same-day dead-end pass on Wikimedia/iNaturalist for all 7 remaining gaps).
+- **The Micheli Yew (flo_001) gets a photo**: "Sughera e tasso.jpg" (Cork oak and yew), CC BY-SA 2.5, Ilaria Camprincoli, captioned "Esemplari centenari di Tasso (Taxus baccata) e sughera (Quercus suber), Giardino dei Semplici di Firenze" and categorized to that exact garden. Viewed directly before approving: a dense, dark evergreen crown matching this entry's own "dark, dense crown" description precisely. Florence now at 4/10 photos.
+- **A candidate caught and correctly rejected, not just left as a maybe**: Openverse surfaced "Aristodemo Costoli, pegaso, 1852-53 circa.jpg" (CC BY 3.0) for the Cedar Above Pegasus (flo_008), whose story places a Pegasus statue by the same sculptor next to the cedar in the walled Giardino del Cavaliere in 1865. Viewed directly: an open lawn setting with no walled terrace and no deodar cedar in frame, and the file's own 1852-53 date doesn't match this entry's 1865 figure. Almost certainly a second, different Pegasus elsewhere in the Boboli Gardens (Costoli's workshop likely produced more than one), not the one this entry describes. Left `missing` rather than illustrate the wrong statue.
+- The other 5 gaps (Farnia of the Ippodromo, Leccio of the Cascine, Honey Locust of Salviatino, Cedar of the Bobolino, Pine of Villa Vogel) returned zero Openverse matches, consistent with the earlier same-day dead-end pass.
+- Site rebuilt, all contracts validated, pushed.
+
+## 2026-07-27 — Venice: the San Michele cypress photo lead tried again independently, confirms the existing rejection; four more gaps stay dead ends
+
+- Followed the Openverse pass below with Venice's five remaining photo gaps (San Lazzaro's cedar, San Michele's cypresses, the Certosa's black poplar, Villa Groggia's hackberries, Forte Marghera's century trees), all already logged dead ends from a same-day pass, to see if the new source changed anything.
+- **The Cypresses of San Michele Cemetery (ven_002)**: found "Isola di San Michele (50444433737).jpg" (CC BY-SA 2.0, Kent Wang) via Commons category browsing, not through Openverse itself. Fetched and viewed it directly before use: a magnolia-type tree with statues in a cloister courtyard, cypresses only visible incidentally at the frame edges. Independently arrives at the same rejection this entry's own notes already record for this exact file from an earlier pass today, worth having as a second confirmation rather than a contradiction.
+- The other four (San Lazzaro, Certosa, Villa Groggia, Forte Marghera) returned either zero Openverse matches or only by-nc/by-nc-nd licensed candidates (a 240-result Certosa search, all non-commercial). No change to any of the five; Venice stays 4/10 photos.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Openverse's direct API tried on every exit-test city's remaining photo gaps; one real find (Barcelona's Magnolia)
 
 - Rung 5's remaining photo gaps (Rome's 3, Barcelona's 4, Lisbon's 4, Amsterdam's 3, Istanbul's 8) had all been hit hard today with Wikimedia, iNaturalist and general web search; queried Openverse's API directly (`api.openverse.org/v1/images`, which federates Flickr, Wikimedia and other open repositories with server-side licence filtering) as a technique not yet tried in dedicated form.
