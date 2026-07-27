@@ -30,6 +30,14 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Valencia: 3 pins corrected via the region's own monumental-tree catalogue
+
+- Continued rung 5's oldest-first order after Nice, to Valencia, untouched since original research (2/10 photos, 10/10 approximate). Photo hunting came up empty this pass, a genuine dead end.
+- Found a real, previously untried source: the Generalitat Valenciana runs a live, queryable ArcGIS layer of its legally protected monumental trees, many entries carrying the tree's own popular name. Matched and moved three: El Titan (the Ficus del Parterre, ~400m, exact name match), the Olive Tree of La Rambleta (~1.1km, the only olive in the entire city dataset, age matching this entry's own figure), and the Eucalyptus of Benimamet (~790m, exact name and height match).
+- Caught one near-miss before applying it: a catalogue entry sitting 40m from the Ripalda ficus's pin was tempting but named after a different historic palace entirely (Palacio de Raga, not Palacio de Ripalda); left alone rather than misapplied.
+- Valencia now at 7/10 approximate pins (from 10). Photos still 2/10.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Nice: 6 photos found and confirmed by eye, reaching the 8-photo floor
 
 - Continued rung 5's oldest-first order after Munich. Nice was at 2/10 photos; its 9/10 approximate pins are structural (island/garden ensembles like Venice, not a search gap).

@@ -2,6 +2,17 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Valencia: 3 pins corrected via the region's own monumental-tree catalogue, one near-miss caught and rejected
+
+- Continued down rung 5's oldest-first order after Nice, to Valencia (2/10 photos, 10/10 approximate, untouched since original research). Photo hunting on Wikimedia Commons and iNaturalist for the individually named trees (the Rambleta olive, the Ripalda ficus, the Aragon holm oak, the Benimamet eucalyptus) came back empty across the board, a genuine dead end this pass.
+- Found real ground instead: the Generalitat Valenciana's own Catálogo de Árboles Monumentales y Singulares is a live ArcGIS layer (`carto.icv.gva.es/arcgis/rest/services/tm_medio_ambiente/forestal/MapServer/0`), queryable directly by bounding box, and many of its entries carry the tree's own popular name.
+  - **El Titan, the Ficus of the Parterre (vlc_001)**: the catalogue's own entry is literally named "Ficus del Parterre" (IPA 512), with a 13.82m trunk measurement matching this entry's own figure almost exactly. Moved about 400m to the exact match.
+  - **The Olive Tree of La Rambleta (vlc_002)**: the only Olea europaea recorded anywhere in the entire city dataset, marked at 350-plus years (matching this entry's own low end), sitting in a cluster of catalogued date palms and eucalyptus in the same San Marcelino/Patraix pocket the park occupies. Moved about 1.1km, the largest single correction found this pass.
+  - **The Eucalyptus of Benimamet (vlc_009)**: named directly in the catalogue as "Eucalipto de Benimámet" (IPA 2375), with a 41.2m height matching this entry's own figure exactly. Moved about 790m.
+- **One near-miss caught and rejected**: a catalogue entry named "Ficus del Palacio de Raga" sat only about 40m from the Ripalda ficus's stored pin, tempting but wrong: a quick check confirmed the Palacio de Raga (Calle Baja) and the Palacio de Ripalda (demolished 1967-68, the palace this project's own entry is about) are two entirely different historic buildings. Left the Ripalda ficus's pin unchanged rather than misapply a real dataset match to the wrong tree.
+- Valencia now at 7 of 10 approximate pins (from 10). Photos unchanged at 2/10.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Nice: 6 photos found and viewed directly, reaching the 8-photo floor
 
 - Continued down rung 5's oldest-first order after Munich, to Nice (2/10 photos, 9/10 approximate; the pins are structurally honest ensembles like Venice, so photos were the real target). With image-viewing available this session, searched Wikimedia Commons for each gap and viewed every candidate before using it.
