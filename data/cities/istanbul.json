@@ -35,8 +35,8 @@
       "age_max": 1400,
       "location": {
         "address": "İstanbul Üniversitesi-Cerrahpaşa Orman Fakültesi, Bahçeköy Yerleşkesi, Sarıyer",
-        "latitude": 41.1875,
-        "longitude": 28.996,
+        "latitude": 41.1759,
+        "longitude": 28.991,
         "neighbourhood": "Bahçeköy, Sarıyer"
       },
       "story": "Istanbul's oldest living thing predates the city's Ottoman name by seven centuries. Inside a university forestry research station in Bahçeköy stands an Oriental plane that foresters estimate at somewhere between 1,300 and 1,400 years old, a trunk 4.5 metres across and hollowed out enough that, as Istanbul University academic Süleyman Çoban has put it, the wood actually feeding the tree is the thin outer cambium layer, not the vast dead core inside it. The tree has effectively been growing on a shell for longer than most European cities have existed. It stood here through the final two centuries of Byzantine rule, the 1453 conquest, and every Ottoman sultan who followed, unnoticed by any of them because it happened to sit in a patch of forest nobody built on. It only became a public fact recently, when Istanbul University foresters surveying their own research grounds realised they were standing next to the oldest tree in the city. Two more officially protected monumental trees share the same forest: an octopus-shaped plane a short walk away, and a double-trunked plane roughly half its age. None of them have a plaque you would notice from the forest road.",
@@ -54,7 +54,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Age is disputed between sources: 1,300 years per Hürriyet Daily News quoting Istanbul University's Süleyman Çoban, versus 1,400 years and a roughly 5m diameter in Turkish wire coverage of the same forest survey. Presented as a range. Exact GPS within the forest is not independently confirmed; the pin marks the general campus area. Worth an on-the-ground check of public access conditions in a future pass.",
+      "notes": "Age is disputed between sources: 1,300 years per Hürriyet Daily News quoting Istanbul University's Süleyman Çoban, versus 1,400 years and a roughly 5m diameter in Turkish wire coverage of the same forest survey. Presented as a range. Pin corrected 2026-07-27: geocoded the forestry faculty campus itself directly (Nominatim), about 1.3km from the previous stored point, and cross-checked against Turkey's national monumental-tree GIS layer (services5.arcgis.com/26ObnytmBZ58Wbj8, feature service turkiye_anit_agaclari), which shows a dense cluster of exotic arboretum species (giant sequoia, American red oak, incense cedar) at essentially the same coordinates, consistent with a forestry-faculty planting rather than ordinary forest. Still approximate: this specific tree's own trunk isn't individually pinned in that dataset, only the campus it stands on.",
       "location_precision": "approximate"
     },
     {
@@ -66,8 +66,8 @@
       "age_max": 580,
       "location": {
         "address": "Near Bilezikçi Çiftliği, Çayırbaşı-Bahçeköy road, Sarıyer",
-        "latitude": 41.183,
-        "longitude": 29.001,
+        "latitude": 41.1728,
+        "longitude": 29.0054,
         "neighbourhood": "Bahçeköy, Sarıyer"
       },
       "story": "Seven trunks that are actually one tree share a single root system at this bend in the Bahçeköy forest. Its lowest branches touched the ground centuries ago and thickened into limbs that now radiate outward like separate trunks, which is how a plane tree ends up nicknamed the Octopus. Turkish foresters put its age at up to 580 years, old enough that a local claim ties its early growth to the reign of Suleiman the Magnificent in the 1500s, though a more conservative reading of the trunk puts it closer to 400. Either figure makes it one of the oldest individually named trees in the city, and unlike most ancient planes, which grow as a single vertical column, this one spread sideways instead, its lowest limbs thick enough to sit on. At over 40 metres tall and more than 3 metres across at the base, it dominates a bend on the old road between Çayırbaşı and Bahçeköy, a stop on the hiking routes that cross Belgrad Forest today. Locals photograph it for the shape. Foresters study it for what centuries of horizontal growth actually does to a trunk that size.",
@@ -84,7 +84,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Age is disputed: some sources give roughly 580 years (tying early growth to Suleiman the Magnificent's reign), others a more conservative 400. Presented as a range. Exact GPS not independently confirmed; the pin marks the general Bilezikçi Çiftliği bend on the Çayırbaşı-Bahçeköy road where multiple sources place it.",
+      "notes": "Age is disputed: some sources give roughly 580 years (tying early growth to Suleiman the Magnificent's reign), others a more conservative 400. Presented as a range. Pin corrected 2026-07-27: geocoded Bilezikçi Çiftliği directly (Nominatim), the farm this entry's own address is already named after, about 1.2km from the previous stored point. Still approximate: this specific tree's own trunk position within the forest near the farm isn't independently confirmed.",
       "location_precision": "approximate"
     },
     {
@@ -218,8 +218,8 @@
       "age_max": 400,
       "location": {
         "address": "Küçük Çamlıca Korusu, Üsküdar",
-        "latitude": 41.0198,
-        "longitude": 29.0662,
+        "latitude": 41.0186,
+        "longitude": 29.0674,
         "neighbourhood": "Küçük Çamlıca, Üsküdar"
       },
       "story": "The tree that gave a hill its name is not originally from this hill. Küçük Çamlıca, Istanbul's best known viewpoint on the Asian side, takes its name from the stone pines (çam) covering it, but foresters say the grove's own symbol tree, the Ata Fıstık Çamı, was brought here from the Aegean region generations ago and adapted to Bosphorus soil rather than growing here naturally. At roughly 397 years old, with a trunk 145 centimetres across and a crown reaching 25 metres, it predates the name Çamlıca itself, which only stuck once Sultan Abdülaziz began favouring the grove in the nineteenth century. Stone pines are usually grown for their edible pine nuts, and this one has produced them for longer than Istanbul has had streetlights, trams, or bridges across the Bosphorus. Istanbul's official monument tree registry lists it, and half a dozen younger pines around it, as individually protected, each with its own name and measured age, a small forest of transplants that outlived the reason anyone brought them here in the first place. The view from the hill gets the visitors. The tree that named the hill mostly gets ignored.",
@@ -236,7 +236,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Exact position within the grove is not independently pinned; the pin marks Küçük Çamlıca Korusu generally.",
+      "notes": "Pin tightened 2026-07-27, about 170m: Turkey's national monumental-tree GIS layer (services5.arcgis.com/26ObnytmBZ58Wbj8, feature service turkiye_anit_agaclari) carries a Pinus pinea in Üsküdar aged exactly 397 years, matching this entry's own age figure precisely, though its recorded circumference (520cm) doesn't cleanly match the '145cm across' (roughly 455cm circumference) already sourced here, so kept approximate rather than confirmed on an imperfect measurement match.",
       "location_precision": "approximate"
     },
     {
@@ -308,8 +308,8 @@
       "age_max": 500,
       "location": {
         "address": "Beykoz Çayırı, Ortaçeşme, Beykoz",
-        "latitude": 41.135,
-        "longitude": 29.093,
+        "latitude": 41.1429,
+        "longitude": 29.0863,
         "neighbourhood": "Beykoz"
       },
       "story": "Ottoman sultans hunted on this exact meadow, which is why locals still sometimes call it Hünkar Çayırı, the Sultan's Meadow, instead of its official name. A handful of plane trees standing on Beykoz Çayırı today, three or four individually protected as monumental, date to the era when Mehmed II built a hunting lodge near what is now Tokatköy after the 1453 conquest, and Istanbul University foresters estimate their average age at somewhere between 400 and 500 years, old enough that at least some may already have been standing before the lodge itself went up. Unlike a single named specimen with one clean story, these trees are witnesses in the plural: hunting parties under the Conqueror and his successors, then the meadow's slower afterlife as Beykoz shifted from imperial hunting ground to Bosphorus village. What they lack in individual fame they make up for in setting. This is one of the few spots on this list where you can stand under a centuries-old plane tree and see the Bosphorus doing exactly what it was doing when the tree was a sapling.",
@@ -326,7 +326,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "These are 3-4 individual plane trees on Beykoz Çayırı rather than one tree; the 400-500 year figure is an average forestry estimate, not a per-tree age. Exact positions of the individual trees within the meadow are not independently pinned.",
+      "notes": "These are 3-4 individual plane trees on Beykoz Çayırı rather than one tree; the 400-500 year figure is an average forestry estimate, not a per-tree age. Pin corrected 2026-07-27, about 1km: OpenStreetMap carries a leisure=park feature individually named 'Beykoz Çayırı' in Ortaçeşme Mahallesi, and Turkey's national monumental-tree GIS layer independently shows a dense cluster of a dozen-plus protected Platanus orientalis at essentially the same coordinates, confirming this as the real meadow rather than the previous stored guess. Exact positions of the individual trees within the meadow are still not independently pinned, so this stays approximate.",
       "location_precision": "approximate"
     }
   ]
