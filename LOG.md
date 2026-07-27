@@ -30,6 +30,14 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Naples: a pin confirmed via its neighbours in the same cloister; Barcelona and Milan's remaining gaps checked, no change needed
+
+- Barcelona's four remaining photo gaps (already dead ends from yesterday) got one more fresh iNaturalist pass: a near-miss CC0 photo of the right species turned up 390m away, but Barcelona has around 1,100 of these trees citywide, so proximity alone isn't enough to call it the same specific catalogued specimen. Correctly left unused.
+- Milan's one still-pending photo (the Ginkgo of Brera) got a direct look using the image-viewing trick from the Rome pass: confirms what an earlier, more cautious pass already suspected, an ambiguous shot that can't be confidently called a ginkgo by eye, from a casual-grade observation with no community confirmation. Left unresolved rather than approved on weak evidence.
+- Naples got a real fix: Campania's regional government registry doesn't have an entry for the Holm Oak of Sant'Andrea delle Dame itself, but it does have two for the palms and camphor sharing its exact cloister, both pointing to the same spot, about 45m from this project's own pin. Good enough to confirm the location. One tempting registry match for a different camphor tree in the same garden was checked and correctly rejected: the circumference figures didn't agree closely enough to be confident it's the same tree.
+- Naples now at 2/10 approximate pins (from 3).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Rome: Adonis finally gets a photo, via a workaround for images this session couldn't otherwise view
 
 - Continued to Rome after Istanbul. Its four remaining photo gaps had all been tried hard before; one, the Twin Planes of the Eleven Fountains, was stuck specifically because an earlier pass found a plausible photo but couldn't open it to check what was actually in frame.
