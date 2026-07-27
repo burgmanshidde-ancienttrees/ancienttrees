@@ -129,18 +129,18 @@
       "age_min": 240,
       "age_max": 250,
       "location": {
-        "address": "Schönbrunn Schlosspark, near the Wagenburg, Hietzinger Allee, 1130 Wien",
-        "latitude": 48.18214,
-        "longitude": 16.30056,
+        "address": "Schönbrunn Palace Botanical Garden, 1130 Wien",
+        "latitude": 48.186594,
+        "longitude": 16.30829,
         "neighbourhood": "Hietzing, 13th district"
       },
-      "story": "This is one tree with two sexes. Ginkgos are either male or female, never both, except this one: a female branch was grafted onto it at some point in its life, so a single male tree now also drops the messy, strong-smelling seeds normally produced only by female ginkgos. It arrived in Vienna in 1781, imported through an English nursery only a few decades after the species reached Europe at all, and it is very likely the oldest ginkgo now growing in Austria. It stands near the Wagenburg, the former imperial carriage house at Schönbrunn, on the Hietzinger Allee side of the park, its trunk grown to roughly five metres around and its crown to about twenty metres tall. Vienna listed it as a protected natural monument in 1939, one of the earliest ginkgos anywhere to receive that kind of formal status. It has outlived the empire that planted it and survived two world wars a few hundred metres from a palace that changed hands more than once, and each autumn it still does what ginkgos are famous for: every leaf on the tree turns gold and drops within days, all at once, rather than drifting down gradually like almost everything else in the park.",
+      "story": "This is one tree with two sexes. Ginkgos are either male or female, never both, except this one: a female branch was grafted onto it at some point in its life, so a single male tree now also drops the messy, strong-smelling seeds normally produced only by female ginkgos. It arrived in Vienna in 1781, imported through an English nursery only a few decades after the species reached Europe at all, and it is very likely the oldest ginkgo now growing in Austria. It stands in Schönbrunn's Botanical Garden, on the palace park's eastern side, its trunk grown to roughly five metres around and its crown to about twenty metres tall. Vienna listed it as a protected natural monument in 1939, one of the earliest ginkgos anywhere to receive that kind of formal status. It has outlived the empire that planted it and survived two world wars a few hundred metres from a palace that changed hands more than once, and each autumn it still does what ginkgos are famous for: every leaf on the tree turns gold and drops within days, all at once, rather than drifting down gradually like almost everything else in the park.",
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Hietzing",
         "https://pflanzenraritaeten.com/ginkgo-biloba-schoenbrunn"
       ],
       "access": "Free, Schönbrunn park and gardens (separate attractions inside the grounds, such as the Gloriette or maze, charge admission)",
-      "transport": "10 min walk from Schönbrunn U-Bahn station (U4), inside the palace park near the Wagenburg",
+      "transport": "10 min walk from Schönbrunn U-Bahn station (U4), inside the palace park's Botanical Garden",
       "best_time": {
         "months": [10, 11],
         "label": "late October into November, when every leaf turns gold and falls within days"
@@ -152,8 +152,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Naturdenkmal Nr. 110, protected since 4 February 1939. Coordinates taken from a GPS-tagged verification source (monumentaltrees.com, used for location cross-check only, not as a content source); not independently surveyed, hence approximate.",
-      "location_precision": "approximate"
+      "notes": "Naturdenkmal Nr. 110, protected since 4 February 1939. Pin and location corrected 2026-07-27: the stored coordinates and \"near the Wagenburg, Hietzinger Allee\" description (originally cross-checked only against monumentaltrees.com, used for verification not as a source) were about 700m from the tree's actual position. Vienna's own Naturdenkmal register, published as a table on German Wikipedia's List of Natural Monuments in Hietzing, gives this specific entry (Nr. 110, Ginkgo biloba, imported 1781, oldest in Austria, protected since 4 February 1939, an exact match on every fact) individual coordinates placing it in Schönbrunn's Botanical Garden, not near the Wagenburg. Moved to that point and corrected the story/transport text to match.",
+      "location_precision": "confirmed"
     },
     {
       "id": "vie_005",

@@ -30,6 +30,12 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Vienna: another wrong-location pin fixed (Ginkgo of Schönbrunn, 700m off), sourced from the city's own monument register
+
+- Checked Vienna since it was already close to done (10/10 photos, 2/10 approximate). One of the two remaining approximate pins, the Ginkgo of Schönbrunn, turned out to be a genuine location error rather than honest vagueness: the entry's own already-cited source, Vienna's official Naturdenkmal register (published as a Wikipedia table), gives this specific protected tree (Nr. 110, matching on every fact: 1781 import, oldest ginkgo in Austria, protected since 1939) its own coordinates in Schönbrunn's Botanical Garden, about 700m from where this project had it pinned near the Wagenburg. Moved the pin and corrected the story/transport text to match. Vienna now at 10/10 photos and 1/10 approximate (a genuine ~4.5km avenue, the only remaining one).
+- Re-tried Berlin's one remaining photo gap (Steinlanke Oak) with three fresh techniques (OSM, iNaturalist, Commons geosearch); all confirm the earlier finding rather than change it, no open-licensed photo exists for this specific remote tree. Left as is rather than loop on it again.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Athens: a real wrong-location bug caught, Kaisariani Monastery's pin was 3.6km off
 
 - Caught while sanity-checking the rest of Athens' approximate pins right after the pass below, rather than moving straight to the next city. The Trees of Kaisariani Monastery (ath_010) was pinned nowhere near the actual monastery, off by roughly 3.6km. Three independent sources (Wikipedia's own coordinates, Nominatim, an individually-named OpenStreetMap building) agree within metres on the real position; moved the pin there. This is a "something published is wrong" fix, not depth polish: the old pin would have sent someone up the wrong side of Mount Hymettus. The story and transport directions were already correct, so this was a pure coordinate bug, not a research error.
