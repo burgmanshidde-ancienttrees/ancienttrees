@@ -5,6 +5,24 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 Format, deliberately short:
 
 ```
+## 2026-07-27 — Assumption audit, on Hidde's parting instruction ("denk na of er meer van dit soort nergens op gebaseerde aannames in je instructies staan")
+
+The trigger: the "no tracking" promise turned out to be an assumption copied from a Polarsteps teardown that Polarsteps itself does not live by (they run cookies and Mixpanel). Audited CLAUDE.md, PRINCIPLES.md, COMPETITION.md, GO_TO_MARKET.md for the same shape: claims hardened into rules without evidence or without Hidde's decision.
+
+**Corrected on my own authority (each is Hidde's own later ruling, or a verified fact, catching up with older text):**
+- CLAUDE.md header no longer states "2 trees free per city, €19,99/year" as the model; it now points at the recorded "interim paywall line is still undecided", which had contradicted it for days.
+- Mandate goal 2 no longer hardcodes "a few thousand euro a month"; Hidde called that loose talk on 2026-07-26 and parked it. Direction stays, amount undecided.
+- Rung 6's queue rationale no longer cites week-one Search Console country data as evidence (noise-level, per Hidde's volume-honesty ruling); the language-match argument stands alone.
+- PRINCIPLES.md #7 rewritten: the durable privacy promise is no ads, no ad-tracking, no data sale, which is what Polarsteps actually promises; cookieless counting is in per Hidde's same-day ruling.
+
+**FOR HIDDE, four judgment calls found by the audit, none urgent:**
+1. **The queue formula "tourist footfall times tree-oldness decides" is unfalsifiable.** It justified UK-first and Japan-first within 24 hours, which means it decides nothing. Recommendation: replace it with the rule Japan now has: every coverage wave gets a demand scan before building. Say yes and a run rewrites the sentence.
+2. **"Using MonumentalTrees is miserable, that is the entire opening"** is the foundational positioning claim and has never been tested with a user. Probably true, cheap to sanity-check someday (five people, one task). Flagging for awareness, not action.
+3. **PRINCIPLES #4 claims Polarsteps "is criticised for" its signup wall**: secondhand, unverified. Worth softening to "forces account creation before value" (verifiable) unless a source exists.
+4. **PRINCIPLES #5 states sharing-as-growth-loop as law**; there is zero evidence yet. It is a good hypothesis and the flywheel will test it; suggest labelling it as hypothesis so a future run doesn't build on it as fact.
+
+Pattern to name, for future runs and sessions: the failure mode is never the observation ("Polarsteps sells privacy"), it is the silent promotion from observation to rule without a source or an owner decision in between. When adopting anything from a teardown, read the competitor's own source first; when recording a rule, record whose decision it was.
+
 ## YYYY-MM-DD HH:MM — what it did in one line
 - What changed (files, pages, cities)
 - Why, if it was a judgement call

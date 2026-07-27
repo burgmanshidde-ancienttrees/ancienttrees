@@ -16,7 +16,7 @@ What we have learned from comparable products (AllTrails, Polarsteps, Strava, At
 
 6. **Seasonality is the re-engagement trigger.** "At its best right now" and, later, "trees at their best near you this week" are the internal triggers that bring people back, the way AllTrails uses recaps. The season feature is not decoration; it is the reason to return.
 
-7. **Privacy is a feature worth saying out loud.** Polarsteps sells "no ads, no data sale." We are already there: no accounts, no trackers, cookieless. Say it on the homepage; it differentiates us from PictureThis's aggressive monetisation and matches the honesty positioning.
+7. **Privacy is a feature worth saying out loud, but say the right one.** Corrected 2026-07-27 after actually reading Polarsteps' privacy policy: Polarsteps runs cookies AND Mixpanel analytics; its real promise is no ads, no ad-tracking, no data sale. That is also our durable promise (hard rule 5), and Hidde chose cookieless visit counting the same day. The earlier version of this principle ("no trackers, cookieless, say it on the homepage") was an assumption copied from a teardown without verification, exactly the failure mode to watch for: never harden a competitor observation into our own promise without reading the source.
 
 8. **Money without a content paywall: two proven routes.** Utility behind a soft paywall (AllTrails: offline, routes) and a keepsake of the collection (Polarsteps: the physical book). Both let the content stay free and indexable. Neither forces us to become a subscription business early. See COMPETITION.md.
 
