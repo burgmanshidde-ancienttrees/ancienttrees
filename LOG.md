@@ -42,6 +42,13 @@ Everything else that used to sit here is done or recorded: the submission form i
 - FOR HIDDE: four collection drafts are waiting on your yes/no, two brand new (oaks, ginkgos) and two that turn out to have been public without you ever approving them (most remarkable trees; 400+ years). Read CURATION.md's latest entries; approving is exactly as cheap as it's always been meant to be, a status flip.
 - Site rebuilt, all contracts validated, pushed.
 
+## 2026-07-27 — Seasonality completion pass: 10 trees get an honest `best_time`, PRODUCT_TODO item 5 done
+
+- Continued the product lane after the collections/gating work above. Wrote a count script per PRODUCT_TODO item 5's own done-when: every ginkgo, wisteria, wingnut, horse chestnut and magnolia should carry `best_time`; no evergreen should. It found 10 showpiece-species trees across 9 cities missing the field (mostly ginkgos that never got one when their siblings elsewhere did) and 0 real evergreen violations (the script's first pass flagged 2 bald cypresses, Milan's Il Sacerdote and Seville's Cypress of the Glorieta de Bécquer, but Taxodium distichum is genuinely deciduous, one of the few conifers that drops its needles, so their existing autumn best_time entries are correct, not a bug).
+- Filled all 10, grounded in each tree's own story text where it already stated a season (Kyoto's inverted ginkgo, Lisbon's Praça Paiva Couceiro ginkgo, Barcelona's magnolia, both already describing their own bloom or colour) and in well documented genus-wide facts applied consistently across the site otherwise (ginkgo's uniform November gold; horse chestnut's May candle flowers; wingnut's summer fruit chains, the exact example CLAUDE.md itself gives). One judgement call: Vienna's Twin Giants pairs a ginkgo with an evergreen sequoia under one protection order; gave it a best_time that names only the ginkgo half turning gold, rather than implying the whole entry peaks, honest to the mixed-species reality the entry's own species field already states.
+- Count script now shows 0 missing among qualifying species and 0 real evergreens with the field. Full list in CURATION.md is unnecessary here since nothing was flagged or uncertain; every addition is grounded in existing verified data, and none required new research.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Bologna: 2 more pins confirmed, one a real 550m cemetery-address error
 
 - Continued after Malaga. Bologna's remaining 6 approximate pins had already had three passes today and yesterday using Italy's national/regional tree registries, so tried OSM tree nodes and named cemetery features instead, the technique that just worked for Malaga.
