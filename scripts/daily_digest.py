@@ -19,6 +19,7 @@ import urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_MD = os.path.join(ROOT, "DATA.md")
 ZONE_NAME = "ancienttrees.app"
+ACCOUNT_TAG = "949aa102070e5f296c9cc0d5bc1e1891"  # Cloudflare account for Web Analytics (RUM)
 
 PREAMBLE = """# DATA — the daily numbers, and what they mean
 
@@ -132,6 +133,42 @@ query($tag: String!, $since: String!, $until: String!) {
     return g["data"]["viewer"]["zones"][0]["httpRequests1dGroups"]
 
 
+def fetch_rum(token, today):
+    """Cookieless Web Analytics (beacon) numbers: real browser visits, no bots.
+    Returns text; never raises past itself."""
+    q = {
+        "query": """
+query($tag: String!, $since: Date!, $until: Date!) {
+  viewer { accounts(filter: {accountTag: $tag}) {
+    days: rumPageloadEventsAdaptiveGroups(limit: 10,
+        filter: {date_geq: $since, date_lt: $until}, orderBy: [date_ASC]) {
+      count dimensions { date } sum { visits }
+    }
+    paths: rumPageloadEventsAdaptiveGroups(limit: 5,
+        filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
+      count dimensions { requestPath }
+    }
+  } }
+}""",
+        "variables": {"tag": ACCOUNT_TAG,
+                      "since": (today - datetime.timedelta(days=8)).isoformat(),
+                      "until": today.isoformat()},
+    }
+    g = api("https://api.cloudflare.com/client/v4/graphql", q, token=token)
+    if g.get("errors"):
+        raise RuntimeError("rum graphql: %s" % json.dumps(g["errors"]))
+    acct = g["data"]["viewer"]["accounts"]
+    if not acct:
+        return "Web Analytics (beacon): no account data visible to this token."
+    days, paths = acct[0]["days"], acct[0]["paths"]
+    if not days:
+        return "Web Analytics (beacon): live since 2026-07-27, no visits recorded yet."
+    trend = "  ".join("%s:v%d/p%d" % (d["dimensions"]["date"][5:], d["sum"]["visits"], d["count"]) for d in days)
+    top = "; ".join("%s (%d)" % (p["dimensions"]["requestPath"], p["count"]) for p in paths)
+    return ("Web Analytics (beacon, real browsers, cookieless):\n"
+            "- Days (visits/pageviews): %s\n- Top paths: %s" % (trend, top))
+
+
 def build_entry(days, today, gsc_text):
     yday = today - datetime.timedelta(days=1)
     by_date = {d["dimensions"]["date"]: d for d in days}
@@ -227,6 +264,11 @@ def main():
         gsc_text = gsc_section(fetch_gsc(today))
     except Exception as e:  # GSC failure must never kill the Cloudflare half
         gsc_text = "Search Console: fetch failed today (%s); numbers resume tomorrow." % e
+
+    try:
+        gsc_text += "\n\n" + fetch_rum(token, today)
+    except Exception as e:
+        gsc_text += "\n\nWeb Analytics (beacon): fetch failed today (%s)." % e
 
     entry = build_entry(days, today, gsc_text)
     body = existing[len(PREAMBLE):] if existing.startswith(PREAMBLE) else (
