@@ -2,6 +2,14 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Antwerp's remaining 3 approximate pins re-checked against the city's own tree layer, confirmed structurally unresolvable rather than just unsearched
+
+- Queried Stad Antwerpen's Groeninventaris ArcGIS layer (`geodata.antwerpen.be/arcgissql/rest/services/P_Groeninventaris/Groeninventaris_extern/MapServer/5`) directly by WGS84 envelope (the service reprojects on its own, no manual EPSG:31370 math needed here, unlike Brussels' WFS) for the three gaps a 2026-07-26 pass left open.
+- **The Summer Linden of Rivierenhof (ant_002)**: even a tight 300m box centred on Sterckshof castle, exactly where the story places the tree, returns 21 separate Tilia platyphyllos (73-202cm circumference) with nothing to single one out; this is a genuinely dense planting, not a search gap.
+- **The Black Mulberry of Hertoghepark (ant_004)**: confirmed again, no Morus of any kind in the city's managed layer near the park, consistent with the 2026-07-26 finding that it sits outside this registry's scope (likely a garden specimen the city doesn't inventory).
+- **The Cut-Leaved Horse Chestnut of Middelheim (ant_005)**: the layer's species field carries no cultivar distinction (`GENUS` is null on every record), so even with over 1,000 trees in the query box, "Aesculus hippocastanum 'Laciniata'" specifically cannot be isolated from the 77 ordinary horse chestnuts nearby. A structural limit of this data source, not a missed search.
+- No data changed. Recording the specific reason for each so a future pass doesn't re-run the same three queries expecting a different result.
+
 ## 2026-07-27 — Brussels: 3 more approximate pins resolved via the regional tree WFS, one a real 700m correction
 
 - Continued Brussels' depth pass (last touched 2026-07-26, at 8/10 approximate) using the same Bruxelles Environnement managed-tree WFS (`ows.environnement.brussels/green`, layer `tree`) that resolved bru_005/bru_006 that day, this time working out the bbox math manually rather than relying on the service's own reprojection (which returned empty/degenerate boxes for EPSG:4326 BBOX params; native EPSG:31370 coordinates, derived from one known reprojected reference point, worked reliably).
