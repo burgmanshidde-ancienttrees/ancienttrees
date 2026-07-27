@@ -30,6 +30,11 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — New York: 2 approximate pins confirmed via OpenStreetMap (Hangman's Elm, Camperdown Elm)
+
+- Same technique as the Kyoto pass just below, applied to New York, which hadn't had a pin pass since its original research. Both of NYC's own "Great Trees" landmarks used in this project's data turned out to be individually mapped in OpenStreetMap under their exact names, with planting years that independently match this project's own age claims. New York now at 6 of 10 approximate pins, from 8.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Kyoto: 2 real pin errors corrected via OpenStreetMap, one new photo candidate found
 
 - Visitors: 48 visits, 77 page views over 7 days, flat (21-26 July: 8, 9, 10, 7, 4, 9). No submissions.
