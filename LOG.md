@@ -30,6 +30,13 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Venice: 2 photo candidates found, pending a visual check a future run should finish
+
+- Continued rung 5's oldest-first order after Milan. Venice's 10/10 approximate pins are structural, not a search gap: every entry is an island, garden or fortress ensemble rather than a single named tree, so there is no trunk to pin more precisely than "this garden." Photos were the real gap, 3/10.
+- Found two candidates, both held at `found_needs_check`: a CC BY-SA garden view of the Giardini della Biennale's own bridge, and a CC BY-SA Flickr-sourced view of San Michele cemetery island (likely showing the cypress-ringed approach the story describes, though the caption doesn't name cypresses explicitly). Neither could be viewed directly this session to confirm by eye.
+- Five other photo gaps (San Lazzaro's cedar, the Certosa poplar, Villa Groggia's hackberries, San Servolo's olive, Forte Marghera) stayed genuine dead ends after real search.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Milan: 2 photo candidates found, pending a visual check a future run should finish
 
 - Continued rung 5's oldest-first order after Lyon. Milan already met the pin-precision bar (2/10 approximate) but sat at 5/10 photos, needing 3 more.
