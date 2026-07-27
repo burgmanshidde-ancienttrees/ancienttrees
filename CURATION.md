@@ -2,6 +2,15 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Prague: one pin upgraded to confirmed via its own cited Wikidata item; the last photo gap tried hard and stayed a dead end
+
+- Continued the "check every approximate pin against its own already-cited source" pass from Athens and Vienna. Prague was at 9/10 photos, 2/10 approximate.
+- **The Field Maple of the Seminary Garden (prg_009)**: this entry already cited a Wikidata item (Q26790033) specifically about this one tree. Fetched its raw data directly: the P625 coordinate claim (50.083939, 14.399024) is essentially identical to the stored pin, an independent confirmation rather than a correction. Refined the coordinates to Wikidata's more precise figure and set `location_precision: confirmed`.
+- **Neruda's Pear Tree (prg_010)**: its own cited source, prazskestromy.cz, gives only a text description, no coordinates, and no Wikidata item exists for this specific tree, so this stays an honest `approximate`, correctly not upgraded.
+- **The same tree's photo gap**: prazskestromy.cz has three photos but "všechna práva vyhrazena" (all rights reserved), unusable. Found a tempting Commons candidate captioned "od Nerudy k dětskému hřišti" (from [Nerudova street] to the playground); fetched and viewed it directly before using it, since the filename's "Nerudy" is coincidental (it names the adjacent street, not this tree) rather than evidence. It shows a generic park/playground view with no pear tree in frame, correctly rejected. An iNaturalist Pyrus communis observation with a CC BY licence was 350m from this tree's pin with no identifying description, too loose to use for a single named specimen. Left `missing`.
+- Prague now at 9/10 photos (unchanged) and 1/10 approximate (from 2).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Vienna: the Ginkgo of Schönbrunn's pin was wrong by 700m, not just approximate; fixed. Berlin's last photo gap re-confirmed as a dead end.
 
 - Vienna was already close to the depth-exit-test shape (10/10 photos, only 2 approximate pins) so this pass checked both remaining gaps directly rather than moving to a fresh city. The Chestnut Avenue of the Hauptallee (vie_003) is a genuine ~4.5km avenue, correctly approximate, left alone.
