@@ -2,6 +2,13 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Granada: a genuine dead-end pass, nothing usable found for photos or pins
+
+- Continued down rung 5's oldest-first order after Valencia, to Granada (1/10 photos, 10/10 approximate, untouched since original research, which had already noted "no usable photo found" on nearly every entry).
+- Tried fresh angles this pass with image-viewing available: Wikimedia Commons searches (English and Spanish terms, direct category browsing of Jardines Altos/Generalife's 46 files) for the sequoias, and iNaturalist for the Alhambra forest's horse chestnuts, turned up nothing open-licensed (the three Aesculus observations found are all CC-BY-NC). The Bosque de la Alhambra has no dedicated Commons category at all.
+- Tried a genuinely new source for pins: the Junta de Andalucía's regional Inventario de Árboles y Arboledas Singulares. It turns out to be scoped to non-urban land only by its own stated criteria, and its actual coverage sits far to the west near Cádiz/Huelva, not Granada city; a structural mismatch rather than a search failure.
+- No data changed. Recording the specific reasons so a future pass doesn't re-try this exact ground expecting a different result; Granada's remaining gaps are genuinely hard rather than unsearched.
+
 ## 2026-07-27 — Valencia: 3 pins corrected via the region's own monumental-tree catalogue, one near-miss caught and rejected
 
 - Continued down rung 5's oldest-first order after Nice, to Valencia (2/10 photos, 10/10 approximate, untouched since original research). Photo hunting on Wikimedia Commons and iNaturalist for the individually named trees (the Rambleta olive, the Ripalda ficus, the Aragon holm oak, the Benimamet eucalyptus) came back empty across the board, a genuine dead end this pass.
