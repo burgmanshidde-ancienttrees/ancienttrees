@@ -30,6 +30,13 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Brussels: 3 more pins resolved, one a real 700m correction
+
+- Same regional tree registry that worked for Brussels on 2026-07-26 (two pins that day) resolved three more: the Botanical Garden's black mulberry, the Cinquantenaire's chestnut avenue (moved to the actual cluster of 11 recorded trees), and the Abbaye de la Cambre's pagoda tree, whose new registry match's trunk girth (313cm) is a tight match for the entry's own sourced 308cm measurement, a real 700m correction rather than just tightening.
+- Two checked and correctly left alone: the Chene Josephine's only nearby match in this registry is a much smaller oak, not the same tree; the Kasterlinde stands in Dilbeek, outside Brussels-Capital Region, so this Brussels-only registry was never going to cover it.
+- Brussels now at 5/10 approximate pins (from 8). Photos unchanged at 4/10.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Three unverified photos actually confirmed by eye (Rome, Amsterdam, Dublin); a stale CLAUDE.md note fixed
 
 - Visitors: 48 visits, 77 page views over 7 days, flat. No submissions.

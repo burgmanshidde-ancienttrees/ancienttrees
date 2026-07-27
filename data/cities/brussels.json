@@ -249,8 +249,8 @@
       "best_time": { "months": [8], "label": "August, when it is one of the last trees in the city to flower" },
       "location": {
         "address": "Jardins de l'Abbaye de la Cambre, Avenue Emile Duray, 1050 Ixelles, Brussels",
-        "latitude": 50.8235,
-        "longitude": 4.3717,
+        "latitude": 50.819676,
+        "longitude": 4.3799,
         "neighbourhood": "Ixelles"
       },
       "story": "A Japanese pagoda tree grows in the garden of a monastery that housed Cistercian nuns for nearly six hundred years. The Abbaye de la Cambre was founded in 1201 and suppressed in 1796 during the French occupation, and while its oldest surviving stonework, the abbey church and parts of the cloister, dates to the 13th and 14th centuries, most of the garden layout around this tree is 18th century. The sophora itself is considerably younger than any of that, a species that only reached European gardens in the mid 1700s and was slower still to become a common ornamental choice, but its trunk, measured at 3.08 metres around in 2012, makes it the sixth largest of its kind recorded anywhere in the Brussels region. Light, almost feathery foliage sets it apart from the abbey's heavier, older trees, and in late summer it produces long fleshy seed pods rather than the flowers most people expect from an ornamental tree. The abbey buildings now house a school and municipal offices, but the gardens remain open to the public, free, in the middle of Ixelles.",
@@ -267,8 +267,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Girth and regional size ranking (6th largest of its species) sourced to the official heritage inventory; no planting date found for this specific tree, so age range is a broad estimate.",
-      "location_precision": "approximate"
+      "notes": "Girth and regional size ranking (6th largest of its species) sourced to the official heritage inventory; no planting date found for this specific tree, so age range is a broad estimate. Pin resolved 2026-07-27 via Bruxelles Environnement's managed-tree WFS: of three Sophora japonica within the abbey grounds bounding box (208cm, 330cm and 313cm circumference), the 313cm specimen is a tight match for this entry's own sourced 308cm (2012) measurement, close enough to reflect a few years' further growth. Moved about 700m to the exact match, a real correction, not just tightening.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bru_009",
@@ -280,8 +280,8 @@
       "best_time": { "months": [8], "label": "August, when the fruit drops and stains the path" },
       "location": {
         "address": "Jardin Botanique (Le Botanique), Rue Royale, 1210 Saint-Josse-ten-Noode, Brussels",
-        "latitude": 50.8548,
-        "longitude": 4.3653,
+        "latitude": 50.855198,
+        "longitude": 4.36434,
         "neighbourhood": "Saint-Josse-ten-Noode"
       },
       "story": "A mulberry tree possibly older than Belgium itself grows in a garden that predates the country by four years. The State Botanical Garden of Brussels opened on this site in 1826, on a 6.4 hectare terraced plot at the corner of what is now Rue Royale and the Boulevard du Jardin Botanique, and this black mulberry, its trunk over two metres around, is old enough that it plausibly dates to those original 1820s plantings, though no surviving record names its exact planting year. Black mulberry is a Mediterranean species, slow to fruit and famous for staining anything beneath it a deep purple black when its berries drop in late summer, a domestic habit that made it a fixture of European monastery and manor gardens for centuries before this one arrived in a public botanical collection. The garden itself stopped functioning as a working scientific collection decades ago and is now a public park known simply as Le Botanique, its 19th century glasshouse repurposed as a concert venue, but the trees planted for research have stayed exactly where the botanists left them.",
@@ -298,8 +298,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source gives this tree a confirmed planting date; the 1826 garden founding date is used as a plausible upper bound, not a documented fact about this specific mulberry, and the story states that caveat directly.",
-      "location_precision": "approximate"
+      "notes": "No source gives this tree a confirmed planting date; the 1826 garden founding date is used as a plausible upper bound, not a documented fact about this specific mulberry, and the story states that caveat directly. Pin resolved 2026-07-27 via Bruxelles Environnement's own managed-tree WFS (ows.environnement.brussels/green, layer 'tree', the same source used for bru_005/bru_006 on 2026-07-26): exactly one Morus nigra recorded within Le Botanique's grounds (id_arb 20337), circumference 265cm, matching this entry's own sourced 'over two metres around' almost exactly. Moved about 100m to the exact match.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bru_010",
@@ -311,8 +311,8 @@
       "best_time": { "months": [5], "label": "May, when its candle-shaped flowers bloom along the avenue" },
       "location": {
         "address": "Parc du Cinquantenaire, 1000 Brussels / 1040 Etterbeek",
-        "latitude": 50.841,
-        "longitude": 4.3975,
+        "latitude": 50.8414,
+        "longitude": 4.4005,
         "neighbourhood": "European Quarter / Etterbeek"
       },
       "story": "When Brussels built Parc du Cinquantenaire in 1880 to mark Belgium's fiftieth year as a country, it cheated on the trees. Rather than planting saplings and waiting decades for a new park to look established, city gardeners transplanted trees that were already fully grown, moved in from the old Leopold Quarter cemetery, the Bois de la Cambre and the edge of the Sonian Forest itself. The common horse chestnuts that line one of the park's principal avenues are among the clearest survivors of that trick: mature when they arrived, they are older than the park itself by however many decades they had already grown before the move, plausibly close to two centuries old today, though no individual planting record confirms a precise figure for any single tree in the row. Around fifteen trees across the wider Cinquantenaire park made it onto Brussels' official register of remarkable trees, chestnuts among them alongside false acacias, a silver maple and a rare Italian alder, but the chestnut avenue is the one most visitors walk beneath without knowing they are standing under trees older than the triumphal arch at the park's centre.",
@@ -329,8 +329,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "The transplanting story (mature trees moved from the old Leopold Quarter cemetery, Bois de la Cambre and the Sonian Forest when the park was built in 1880) is well corroborated, but no individual chestnut in the avenue has a confirmed age; the range given assumes a plausible age at transplanting plus the 146 years since 1880. Photo shows a tree-lined avenue in Cinquantenaire/Jubelpark, a fair representative shot for this ensemble entry.",
-      "location_precision": "approximate"
+      "notes": "The transplanting story (mature trees moved from the old Leopold Quarter cemetery, Bois de la Cambre and the Sonian Forest when the park was built in 1880) is well corroborated, but no individual chestnut in the avenue has a confirmed age; the range given assumes a plausible age at transplanting plus the 146 years since 1880. Photo shows a tree-lined avenue in Cinquantenaire/Jubelpark, a fair representative shot for this ensemble entry. Pin tightened 2026-07-27 via Bruxelles Environnement's managed-tree WFS: 11 Aesculus hippocastanum recorded across the park's grounds, consistent with the source's count of about fifteen registered remarkable trees there; moved about 210m to the centroid of that cluster, the same honest-ensemble treatment as Amsterdam's Amstelveld wingnuts.",
+      "location_precision": "confirmed"
     }
   ]
 }

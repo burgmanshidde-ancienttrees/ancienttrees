@@ -2,6 +2,17 @@
 
 Newest entries on top. When you approve a city, its status moves to `curated` and each tree to `hidde_approved`.
 
+## 2026-07-27 — Brussels: 3 more approximate pins resolved via the regional tree WFS, one a real 700m correction
+
+- Continued Brussels' depth pass (last touched 2026-07-26, at 8/10 approximate) using the same Bruxelles Environnement managed-tree WFS (`ows.environnement.brussels/green`, layer `tree`) that resolved bru_005/bru_006 that day, this time working out the bbox math manually rather than relying on the service's own reprojection (which returned empty/degenerate boxes for EPSG:4326 BBOX params; native EPSG:31370 coordinates, derived from one known reprojected reference point, worked reliably).
+- **The Black Mulberry of the Botanical Garden (bru_009)**: exactly one Morus nigra recorded inside Le Botanique's grounds, 265cm circumference matching this entry's own sourced "over two metres around." Moved about 100m to the exact match.
+- **The Sophora of the Abbaye de la Cambre (bru_008), a real correction, not just tightening**: three Sophora japonica found within the abbey grounds bounding box (208cm, 330cm, 313cm circumference); the 313cm specimen is a tight match for this entry's own sourced 308cm (measured 2012), close enough to reflect a few years' further growth, and clearly distinct from the other two candidates. Moved about 700m.
+- **The Chestnut Avenue of the Cinquantenaire (bru_010)**: 11 Aesculus hippocastanum recorded across the park, consistent with the source's count of about fifteen registered remarkable trees there. Moved about 210m to the centroid of that cluster, given the same honest-ensemble treatment as Amsterdam's Amstelveld wingnuts (confirmed, not single-trunk precision).
+- **Two tried and correctly rejected rather than force-matched**: the Chene Josephine (bru_001, sourced at 6.05m/605cm circumference) has only one Quercus robur in its area at 376cm, a different, much smaller tree, not a match; the Kasterlinde (bru_002) sits in Dilbeek, a Flemish municipality outside Brussels-Capital Region entirely, so this regional WFS's zero result there is a real jurisdictional miss, not a search failure. Left both approximate rather than guess.
+- **One re-confirmed as unresolvable, not retried further**: the Douglas Fir of the Hippodrome (bru_007), already documented 2026-07-26 as 4 near-identical specimens with nothing to disambiguate them.
+- Brussels now at 5 of 10 approximate pins (from 8). Photos untouched, still 4/10.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Three found_needs_check photos resolved by actually viewing them (Rome, Amsterdam), one new photo confirmed by download-and-view (Dublin); CLAUDE.md's stale bcn_008 note corrected
 
 - Visitors: 48 visits, 77 page views over 7 days (21-26 July: 8, 9, 10, 7, 4, 9), flat. No submissions (CSV still header row only).
