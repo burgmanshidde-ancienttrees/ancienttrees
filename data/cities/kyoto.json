@@ -112,13 +112,13 @@
       "access": "Paid entry to Hosen-in (includes matcha service)",
       "transport": "Kyoto Bus to Ohara, 12 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Hosen-in%2C_Bankan-en_%28Garden%29_-1_%28November_2013%29_-_panoramio.jpg/1024px-Hosen-in%2C_Bankan-en_%28Garden%29_-1_%28November_2013%29_-_panoramio.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "ttshr1970, via Panoramio/Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Coordinates are a street-level estimate from the temple's address; no surveyed lat/long was found in available sources. The 2021 source describing the tree recovering vigor implies a period of decline; no source gives a clear cause or timeline for that decline.",
+      "notes": "Coordinates are a street-level estimate from the temple's address; no surveyed lat/long was found in available sources. The 2021 source describing the tree recovering vigor implies a period of decline; no source gives a clear cause or timeline for that decline. Photo candidate found 2026-07-27: captioned specifically \"Hosen-in, Bankan-en (Garden)\", the name of the small purpose-built garden whose entire design frames this one pine (the temple's own gakubuchi teien concept), unlike a generic temple-grounds shot. This session's tools could not open the image file to visually confirm the pine fills the frame, so held at found_needs_check rather than approved, per house practice for text-only identity matches.",
       "location_precision": "approximate"
     },
     {
@@ -252,8 +252,8 @@
       "age_max": 175,
       "location": {
         "address": "Sanboin, Daigo-ji, Fushimi-ku, Kyoto 601-1325",
-        "latitude": 34.9508,
-        "longitude": 135.8203,
+        "latitude": 34.9519148,
+        "longitude": 135.8187884,
         "neighbourhood": "Daigo, Fushimi-ku"
       },
       "story": "In the spring of 1598, months before his death, the warlord Toyotomi Hideyoshi staged one of the most extravagant cherry blossom parties in Japanese history at Daigo-ji, inviting hundreds of guests and reportedly having some 700 cherry trees transplanted to the temple grounds for the occasion. The weeping cherry now growing in the Sanboin sub-temple's garden carries his name, Taiko Shidarezakura, and his story, but it is not that tree: at roughly 150 to 170 years old it was planted in the 19th century, long after Hideyoshi's party and his own death the same year. What survives is the site and the association, strong enough that the painter Okumura Togyu made this specific tree the subject of a celebrated work simply titled Daigo, after which the tree picked up a second nickname, Togyu's cherry. Sanboin's garden itself was largely designed by Hideyoshi in the last months of his life, which means the cherry, even at a fraction of his party's age, blooms inside a landscape he did lay out himself.",
@@ -271,8 +271,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Coordinates estimated from Daigo-ji's general temple location; Sanboin's specific surveyed position was not found. Story explicitly states this is not the original Hideyoshi-era tree, to avoid the misleading impression the name invites.",
-      "location_precision": "approximate"
+      "notes": "Pin corrected 2026-07-27 (about 185m): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"太閤しだれ桜\" (Taiko shidarezakura, literally \"Taiko weeping cherry\") at this position, an exact and distinctive name match to this entry, replacing the previous estimate from Daigo-ji's general temple address. Story explicitly states this is not the original Hideyoshi-era tree, to avoid the misleading impression the name invites.",
+      "location_precision": "confirmed"
     },
     {
       "id": "kyo_009",
@@ -314,8 +314,8 @@
       "age_max": 180,
       "location": {
         "address": "339 Kamigamo Motoyama, Kita-ku, Kyoto 603-8047",
-        "latitude": 35.060326,
-        "longitude": 135.752721,
+        "latitude": 35.0588094,
+        "longitude": 135.7526545,
         "neighbourhood": "Kamigamo, Kita-ku"
       },
       "story": "This weeping cherry began its life somewhere inside the Kyoto Imperial Palace grounds before Emperor Komei, who reigned from 1846 to 1867 and was the father of the Meiji Emperor, had it given to Kamigamo Shrine. That gift is the source of its name, Gosho-zakura, palace cherry, and the reason a cherry tree with no natural connection to Kamigamo's centuries-old shrine complex has stood on the approach path between its first and second torii gates for roughly a century and a half regardless. It blooms alongside a second named cherry, Saio-zakura, whose deep red flowers offer a contrast to Gosho-zakura's white, so that visitors walking the approach in late March or early April see two named, individually storied trees rather than an anonymous cherry avenue. Kamigamo Shrine itself, formally Kamowakeikazuchi Shrine, is one of Kyoto's oldest religious sites and a UNESCO World Heritage component, its grounds predating this cherry by many centuries; the tree is a relatively recent addition to a very old place, and its imperial provenance is what earns it a place among the shrine's named, individually recognized trees rather than the roughly 200 unnamed cherries also growing on the grounds.",
@@ -333,6 +333,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
+      "notes": "Pin corrected 2026-07-27 (about 165m, a real error rather than mere imprecision): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"御所桜\" (Gosho-zakura), an exact name match, found alongside a second node 20m away named \"斉王桜\" (Saio-zakura), the companion red-flowered cherry this entry's own story names as growing beside it. The two names appearing together, matching the story precisely, makes this a confident match rather than a coincidence.",
       "location_precision": "confirmed"
     }
   ]

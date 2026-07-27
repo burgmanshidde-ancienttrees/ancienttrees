@@ -30,6 +30,14 @@ The night runs draft collections (ancient oaks first) as needs_curation; each on
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — Kyoto: 2 real pin errors corrected via OpenStreetMap, one new photo candidate found
+
+- Visitors: 48 visits, 77 page views over 7 days, flat (21-26 July: 8, 9, 10, 7, 4, 9). No submissions.
+- Amsterdam, Lisbon, Istanbul, Rome and Barcelona's remaining photo gaps are now genuinely exhausted across many prior passes (confirmed again with one fresh Amsterdam attempt this run, no new ground). Moved to Kyoto, next in rung 5's marquee-Europe order with real headroom left.
+- The OpenStreetMap named-tree-node technique that worked for Tokyo/Barcelona/Amsterdam found two exact name matches: the Taiko Weeping Cherry of Daigo-ji (moved ~185m to its real spot) and the Emperor's Gift Cherry of Kamigamo (moved ~165m, corrected from a pin that was already marked confirmed but was actually wrong, the same pattern as Amsterdam's Amstelveld find). Kyoto now at 2 of 10 approximate pins, from 3.
+- Also found a plausible photo for the Five-Needle Pine of Hosen-in (a CC BY 3.0 shot of the specific garden built to frame this one tree), held at found_needs_check rather than approved since this session couldn't open the image to look at it directly.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Seville: 2 pins resolved via a newly found city tree inventory
 
 - Berlin (next in the marquee-Europe order) turned out to already be in great shape, 9/10 photos and 0 approximate, so moved straight to Seville (9/10 approximate). sevilla.org's own catalogue is still down, but found a different Seville Parks and Gardens dataset on ArcGIS Hub covering the whole city's managed trees. Matched El Gran Capitán (a giant eucalyptus, by being the only one of its species in its garden) and the Figs of Plaza del Cristo de Burgos (by matching the exact count of four transplanted figs the story already describes). Two more checked and correctly left alone (a scattered hackberry ensemble with no way to isolate the "centennial" ones; a camphor tree genuinely outside this inventory).
