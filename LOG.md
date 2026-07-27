@@ -30,6 +30,13 @@ Collections publish without your approval since blueprint v1.3; new ones simply 
 
 Everything else that used to sit here is done or recorded: the submission form is live, the icons shipped (logo parked at your call), the free-vs-paid question is settled in CLAUDE.md's value proposition, and analytics run cookieless with the runs reading them daily.
 
+## 2026-07-27 — The same collection-link bug was on city pages too, fixed the same way
+
+- While checking whether the question-page fix from the previous entry had a twin elsewhere, found one: `build_city_page`'s "More like this" line had the identical `collections[0]` bug, live on the actual built output. Tokyo and Amsterdam's city pages both claimed "Several of these trees also appear in Europe's Ancient Oaks You Can Actually Visit", false for both, since neither city has an oak in that collection.
+- Fixed the same way as the question-page bug: filters to collections that actually include one of the city's own trees, and now states the real count ("One of these trees" vs "N of these trees") instead of a blanket "Several". Verified by hand across five built city pages (Tokyo now correctly points at the ginkgo collection, Amsterdam and Naples each correctly say "One of these trees", Paris says "5 of these trees" matching its actual count in the 400-years collection, Berlin says "2" matching its oak collection count).
+- Also dropped an unused `collections` parameter from `build_tree_page`, found while tracing the bug: it was threaded through the whole call chain but never read inside the function. No output change, confirmed by an identical page count before and after.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — A second collections pass: the oldest tree in every country we map
 
 - Continued the product lane straight after the last entry; depth work stayed at today's exhausted state (confirmed again on Istanbul specifically, see below), so time went to another item 4 pass rather than a sixth re-try of the same dead ends.

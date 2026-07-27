@@ -1402,7 +1402,7 @@ def location_is_approximate(tree):
 
 # ---------------------------------------------------------------- tree pages
 
-def build_tree_page(city_entry, tree, all_trees, collections, pages, species_pages=None):
+def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
     species_pages = species_pages or {}
     city_data = city_entry["data"]
     city = city_data["city"]
@@ -1670,13 +1670,18 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
         ERRORS.append(f"{canonical}: FAQ block (3-4 real questions) is required by Contract C")
     faq_html = "".join(f"<dt>{esc(f['q'])}</dt><dd>{esc(f['a'])}</dd>" for f in faq)
 
-    coll = collections[0] if collections else None
-    coll_link_html = (
-        f'<dt>More like this</dt><dd>Several of these trees also appear in '
-        f'<a href="collections/{coll["slug"]}">{esc(coll["title"])}</a>.</dd>'
-        if coll else
-        '<dt>More like this</dt><dd>Browse <a href="collections">themed collections</a> of remarkable trees.</dd>'
-    )
+    city_collections = [c for c in collections if any(e["city_slug"] == slug for e in c.get("entries", []))]
+    coll = city_collections[0] if city_collections else None
+    if coll:
+        n = sum(1 for e in coll.get("entries", []) if e["city_slug"] == slug)
+        phrase = "One of these trees" if n == 1 else f"{n} of these trees"
+        verb = "appears" if n == 1 else "appear"
+        coll_link_html = (
+            f'<dt>More like this</dt><dd>{phrase} also {verb} in '
+            f'<a href="collections/{coll["slug"]}">{esc(coll["title"])}</a>.</dd>'
+        )
+    else:
+        coll_link_html = '<dt>More like this</dt><dd>Browse <a href="collections">themed collections</a> of remarkable trees.</dd>'
     others_html = " &middot; ".join(
         f'<a href="./{c["slug"]}">Ancient trees in {esc(c["city"])}</a>'
         for c in other_cities
@@ -2622,7 +2627,7 @@ def main():
     for entry in renderable:
         trees = [t for t in entry["data"]["trees"] if tree_is_renderable(t)]
         for tree in trees:
-            tree_slugs[tree["id"]] = build_tree_page(entry, tree, trees, collections, pages, species_pages)
+            tree_slugs[tree["id"]] = build_tree_page(entry, tree, trees, pages, species_pages)
         build_question_page(entry, public_collections, pages)
         other_cities = [
             {"slug": e["slug"], "city": e["data"]["city"]}
