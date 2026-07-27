@@ -1,0 +1,44 @@
+{
+  "slug": "trees-that-outlived-their-city",
+  "title": "Trees That Outlived Their City",
+  "status": "published",
+  "meta_description": "Seven trees that survived fire, war and revolution and are still standing, from a firebombed Tokyo ginkgo to a Cheapside plane that outlasted the Blitz.",
+  "intro": "A tree does not know it is a monument until the buildings around it stop being ones. These seven watched a temple burn to the ground, a palace flatten in an air raid, a revolution take the man who planted them, and kept growing anyway, the one part of the view that did not need rebuilding afterward. None of them survived by being protected: most were simply too far from the blast, the flame front, or the guillotine to matter to whoever was doing the destroying. What they share now is a strange kind of authority: ask one of these trees what a lost building looked like, and it is the only witness left standing. Start with a Tokyo ginkgo that took a direct hit and kept its scorch marks to prove it.",
+  "entries": [
+    {
+      "city_slug": "tokyo",
+      "tree_id": "tok_002",
+      "note": "On the night of 10 March 1945, American firebombs burned nearly all of Asakusa to the ground, including Sensoji's main hall and pagoda. This ginkgo took a direct hit, its trunk still hollow and blackened five metres up, and kept growing anyway: the one part of the temple that watched everything else burn and rebuild around it rather than the other way round."
+    },
+    {
+      "city_slug": "london",
+      "tree_id": "lon_003",
+      "note": "It grows in the churchyard of a church the Great Fire of 1666 destroyed and nobody ever rebuilt. It survived the Blitz too, three centuries later, and a lease clause now keeps the buildings beside it under two storeys specifically to protect the canopy that outlasted both disasters."
+    },
+    {
+      "city_slug": "tokyo",
+      "tree_id": "tok_003",
+      "note": "This camphor watched Ueno Toshogu survive the 1657 Meireki fire, the 1868 Battle of Ueno, the 1923 earthquake and the 1945 air raids that flattened most of the park's other historic buildings, coming through all four with nothing worse than scorched leaves."
+    },
+    {
+      "city_slug": "tokyo",
+      "tree_id": "tok_005",
+      "note": "Planted by a shogun's own hand in 1641 at a shrine built to honour his grandfather. The 1945 air raids that levelled most of Shiba destroyed Zojoji's main hall next door and the shrine's smaller buildings with it; the ginkgo planted by the family the whole complex existed to honour came through the fires that took the buildings around it."
+    },
+    {
+      "city_slug": "berlin",
+      "tree_id": "ber_010",
+      "note": "Two world wars swept through the Tiergarten in the twentieth century, and postwar Berliners felled most of the park's remaining trees for firewood during the famine winters that followed 1945. This giant sequoia, planted decades earlier with no idea what the century ahead held, made it through anyway."
+    },
+    {
+      "city_slug": "berlin",
+      "tree_id": "ber_006",
+      "note": "Berlin's Bellevue Palace, an 18th century Hohenzollern pleasure palace, burned down in the Second World War and was never rebuilt. This oak from its grounds is the last living witness left. It is not thriving today, kept upright by a support structure and a protective fence, but it is still, deliberately, alive."
+    },
+    {
+      "city_slug": "paris",
+      "tree_id": "par_004",
+      "note": "Buffon planted three oriental planes in 1785, four years before the Revolution took the world he lived in. He missed the Terror by five years; his own son went to the guillotine. Two of the three trees are gone. This one, the last living thing Buffon is known to have planted, kept growing through all of it."
+    }
+  ]
+}
