@@ -6,6 +6,12 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## A nicer sign-in email (Hidde, 2026-07-28, explicitly not important now)
+
+The magic-link mail is currently Supabase's plain default template from their default sender. Fine for the quiet launch; his words: "voor nu niet belangrijk". When it matters: restyle the template in the brand voice and identity (Supabase dashboard, Authentication > Email Templates: subject plus HTML, a session job with Hidde logged in), and optionally send from an @ancienttrees.app address, which additionally needs SMTP config and remains his infrastructure call.
+
+**Trigger:** before the login ever links publicly (natural moment: the same session that builds the delete function), or earlier if Hidde asks.
+
 ## The flywheel: users strengthen the content, designed 2026-07-27 with Hidde
 
 The moat that compounds daily: content can be copied, field signal cannot. Six signal types, his four plus the two the design surfaced: proof-of-life ("the tree still stands", our defence against the staleness that will otherwise rot 328 trees), worth-signal ("was the visit worth it"), corrections and suggestions (both live), **user photos** (the strongest one: the person who just checked in is standing at our biggest content gap with a camera; needs a clean licence grant and credit), and **season ground-truth** ("the ginkgo is turning NOW", which upgrades the radar from forecast to live report).
