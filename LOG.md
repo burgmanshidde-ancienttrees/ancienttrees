@@ -40,6 +40,16 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — A new Italian tree registry (RAMI) found and put to work: two more real pin corrections, Naples and Milan
+
+Same session as the entries below. Went looking for an Italian equivalent of Turkey's registry, which resolved several pins earlier today. Found two: MASAF's official government dataset (real, but this session's tools can't parse its Excel format reliably, so nothing was applied from it) and RAMI (ilregistrodeglialberi.it), a large volunteer-run registry whose own search interface returns clean, usable results.
+
+- **Naples' Capodimonte camphor tree (nap_001) moved about 640m**, corroborated by an exact circumference match to RAMI's survey plus a nearby independent iNaturalist observation.
+- **Milan's Affori plane (mil_009) moved about 490m**, corroborated by RAMI's own naming of the tree and an independent OpenStreetMap geocode landing within 7m of RAMI's point.
+- A handful of other gaps (Naples' Posillipo pine, three Bologna trees, Milan's Paulownia, two Verona trees) came back genuine no-result dead ends on the same registry.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — London's flagship tree gets a real second source, after a site-wide single-source audit
 
 Same session as the entry below. With today's photo/pin depth ladder and PRODUCT_TODO.md both genuinely exhausted (every below-floor city already worked today, no backlog items left, PRODUCT_TODO.md's remaining slate explicitly blocked), checked all 10 site-wide entries that carry only one source, the same failure class that produced the Venice fabrication below.

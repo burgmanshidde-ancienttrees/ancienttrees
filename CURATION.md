@@ -1,3 +1,13 @@
+## 2026-07-28 — RAMI's own search interface turns out to work (unlike the raw MASAF spreadsheet): two real pin corrections, Naples and Milan
+
+Same session, right after the MASAF/RAMI entry below flagged RAMI's photos as unusable but its data as promising. Its `/cerca?keyword=` search returns clean HTML rather than a binary spreadsheet, so tried it directly on the remaining approximate pins in Naples, Bologna, Verona and Milan.
+
+- **nap_001, The Camphor of the Garden of the Princes, corrected about 640m.** RAMI's "Canforo di Capodimonte" entry (Giardino dei Principi, Real Bosco di Capodimonte) gives a surveyed circumference of 6.70m, an exact match to this entry's own already-sourced 670cm figure from an unrelated source, strong evidence it is the same specific tree rather than a same-species neighbour. An independent iNaturalist Cinnamomum camphora observation sits about 62m from RAMI's coordinate. Two independent sources converging, upgraded to confirmed.
+- **mil_009, La Pianta di Affori, corrected about 490m.** RAMI names this exact tree "Platano di Affori" at Via Astesani, matching the entry's own name and address; OpenStreetMap/Nominatim independently geocodes "Via Astesani, Affori" to within about 7m of RAMI's coordinate. Upgraded to confirmed.
+- **Genuine dead ends, real no-result searches rather than unsearched gaps**: Naples' Pine of Posillipo, Bologna's Monumental Planes of the Montagnola, Ginkgo of the Botanical Garden and Camphor of San Michele in Bosco, Milan's Paulownia of Via Madonnina, Verona's Cedar of Piazza Bra and Parco delle Colombare mulberry all returned "Nessun risultato trovato" for every keyword tried.
+- RAMI's own photos stay unusable (all-rights-reserved), so neither correction gained a photo.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — A new source found (Italy's national MASAF monumental-trees registry), but this session's tooling can't parse it reliably; no data changed
 
 Same session, after the single-source audit below. Went looking for an Italian equivalent of Turkey's queryable `turkiye_anit_agaclari` GIS layer, which has paid off repeatedly today, to help Verona, Milan, Naples, Bologna and Florence, all still below the photo floor with real approximate pins.
