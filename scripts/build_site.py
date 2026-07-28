@@ -1673,6 +1673,9 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
         tree["name"],
     ], canonical)
     description = meta_from_story(tree["story"])
+    story_wc = len(tree["story"].split())
+    if not (150 <= story_wc <= 250):
+        ERRORS.append(f"{canonical}: story is {story_wc} words, CLAUDE.md Step 3 requires 150-250")
 
     others = [t for t in all_trees if t["id"] != tree["id"]]
     others.sort(key=lambda t: haversine(
@@ -1831,6 +1834,8 @@ def build_question_page(city_entry, collections, pages):
     context = city_data.get("question_context", "")
     if not answer or not context:
         ERRORS.append(f"{canonical}: question_answer and question_context must be written per city (Contract B)")
+    elif not (150 <= len(context.split()) <= 200):
+        ERRORS.append(f"{canonical}: question_context is {len(context.split())} words, Contract B requires 150-200")
 
     crumb_items = [
         ("Home", BASE_URL),
@@ -1909,6 +1914,8 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
     if not intro:
         ERRORS.append(f"{canonical}: city intro (60-100 words, unique) is required by Contract C")
         intro = ""
+    elif not (60 <= len(intro.split()) <= 100):
+        ERRORS.append(f"{canonical}: city intro is {len(intro.split())} words, Contract C requires 60-100")
 
     crumb_items = [("Home", BASE_URL), (country, None), (city, None)]
 
