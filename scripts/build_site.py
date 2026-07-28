@@ -398,6 +398,25 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .plus-card h3 { font-size: 15.5px; font-weight: 800; margin-bottom: 0.3rem; }
 .plus-card p { font-size: 13px; color: var(--ink-mid); line-height: 1.55; }
 .plus-free-note { background: var(--moss-light); border-left: 3px solid var(--moss); border-radius: 0 14px 14px 0; padding: 0.85rem 1.1rem; font-size: 13.5px; color: var(--ink-mid); margin: 0 0 1.5rem; }
+.shelf { padding: 1.4rem 2rem 0.6rem; max-width: 74rem; margin: 0 auto; }
+.shelf-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 0.9rem; }
+.shelf-head h2 { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.015em; }
+.shelf-head a { font-size: 13.5px; font-weight: 700; color: var(--moss); text-decoration: underline; text-underline-offset: 3px; }
+.shelf-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.shelf-card { display: block; text-decoration: none; color: var(--ink); }
+.shelf-ph { position: relative; display: block; aspect-ratio: 4 / 3; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); margin-bottom: 0.6rem; background: var(--surface); }
+.shelf-ph img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.25s; }
+.shelf-card:hover .shelf-ph img { transform: scale(1.04); }
+.shelf-now { position: absolute; top: 10px; left: 10px; background: #F3E4C3; color: #8A6414; font-size: 10.5px; font-weight: 700; border-radius: 999px; padding: 3px 10px; }
+.shelf-card b { display: block; font-size: 15px; font-weight: 800; line-height: 1.3; }
+.shelf-meta { display: block; font-size: 12.5px; color: var(--ink-mid); margin-top: 2px; }
+@media (max-width: 800px) {
+  .shelf { padding: 1.2rem 1rem 0.4rem; }
+  .shelf-head { flex-direction: column; align-items: flex-start; gap: 0.15rem; }
+  .shelf-head h2 { font-size: 1.25rem; }
+  .shelf-row { display: flex; overflow-x: auto; gap: 12px; scroll-snap-type: x mandatory; padding-bottom: 0.5rem; }
+  .shelf-card { flex: 0 0 72%; scroll-snap-align: start; }
+}
 .dir-cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.25rem 2rem; margin: 0.75rem 0 0.5rem; }
 .dir-group h3 { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.35rem; }
 .dir-group a { display: block; font-size: 13.5px; color: var(--ink-mid); text-decoration: none; padding: 0.15rem 0; }
@@ -2699,10 +2718,61 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
         for c in upcoming
     )
 
-    coll_html = "".join(
-        f'<p class="prose">See <a href="collections/{c["slug"]}">{esc(c["title"])}</a>.</p>'
-        for c in collections
-    )
+
+    # The two card shelves (Hidde, 2026-07-28, the AllTrails "Local favorites"
+    # grammar): photo cards or nothing; a shelf with no photo-worthy content
+    # stays off the page rather than degrading into text links.
+    import datetime as _dt
+    _month = _dt.date.today().month
+    tree_by_id = {}
+    for entry in (renderable or []):
+        for t in entry["data"]["trees"]:
+            tree_by_id[t["id"]] = (entry, t)
+
+    season_cards = []
+    for entry in (renderable or []):
+        for t in entry["data"]["trees"]:
+            bt = t.get("best_time") or {}
+            ph = usable_photo(t)
+            if _month in (bt.get("months") or []) and ph:
+                season_cards.append(
+                    f'<a class="shelf-card" href="{entry["slug"]}/{slugify(t["name"])}">'
+                    f'<span class="shelf-ph"><img src="{esc(ph["url"])}" alt="" loading="lazy">'
+                    f'<span class="shelf-now">at its best now</span></span>'
+                    f'<b>{esc(t["name"])}</b>'
+                    f'<span class="shelf-meta">{esc(entry["data"]["city"])} &middot; {esc(bt.get("label", ""))}</span></a>')
+    season_shelf = ""
+    if len(season_cards) >= 2:
+        season_shelf = (
+            '<section class="shelf"><div class="shelf-head"><h2>At their best right now</h2>'
+            '<a href="in-season">See everything in season</a></div>'
+            '<div class="shelf-row">' + "".join(season_cards[:4]) + '</div></section>')
+
+    coll_cards = []
+    shelf_photos_used = set()
+    for c in collections or []:
+        photo = None
+        n_cities = len({e["city_slug"] for e in c.get("entries", [])})
+        for e in c.get("entries", []):
+            pair = tree_by_id.get(e["tree_id"])
+            p = pair and usable_photo(pair[1])
+            if p and p["url"] not in shelf_photos_used:
+                photo = p
+                break
+        if not photo:
+            continue
+        shelf_photos_used.add(photo["url"])
+        coll_cards.append(
+            f'<a class="shelf-card" href="collections/{esc(c["slug"])}">'
+            f'<span class="shelf-ph"><img src="{esc(photo["url"])}" alt="" loading="lazy"></span>'
+            f'<b>{esc(c["title"])}</b>'
+            f'<span class="shelf-meta">{len(c.get("entries", []))} trees &middot; {n_cities} cities</span></a>')
+    coll_shelf = ""
+    if coll_cards:
+        coll_shelf = (
+            '<section class="shelf"><div class="shelf-head"><h2>Collections worth a trip</h2>'
+            '<a href="collections">All collections</a></div>'
+            '<div class="shelf-row">' + "".join(coll_cards[:4]) + '</div></section>')
 
     def _icon(k):
         return f'<svg viewBox="0 0 40 40" fill="currentColor" aria-hidden="true">{SPECIES_ICONS[k]}</svg>'
@@ -2760,6 +2830,7 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
 <section class="hero-sub">
   <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of. Every tree free to explore.</p>
 </section>
+{season_shelf}
 <section class="home-acts">
   <div class="home-act">
     <div class="home-act-copy">
@@ -2841,14 +2912,12 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
     </div>
   </div>
 </section>
+{coll_shelf}
 <main class="page">
-  <p class="prose lead-why">Why bother: a 400 year old tree has outlasted every empire, plague and war its city has seen. It was here before the street was named and will be here after you leave. Most guides send you to the same squares and the same viewpoints. This sends you somewhere quieter, ten minutes off the route, and it is almost always worth the detour.</p>
-
   <h2 class="section-heading" id="cities">Ancient trees anywhere</h2>
-  <p class="prose">Not near any of these yet? The map above finds the nearest tree wherever you are. Otherwise, pick a city.</p>
+  <p class="prose">Not near any of these yet? <a href="explore">The map</a> finds the nearest tree wherever you are. Otherwise, pick a city.</p>
   {directory_html}
   <p class="dir-more">Not seeing your city? <a href="contribute">Help map it</a>.</p>
-  {coll_html}
 
   <p class="prose subtle-suggest">This map grows through people who know their trees. <a href="{submit_link("tree")}">Know one we missed?</a>{support_cta}</p>
 </main>
