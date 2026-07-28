@@ -40,6 +40,10 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Three word-count contracts fixed site-wide (story, intro, question_context) and now enforced permanently by the build itself
+
+Same session as the entries below. After finding and fixing the same class of gap three separate times today (9 London stories under 150 words, 14 city intros over 100, 16 question_context fields outside 150-200), added the three missing checks directly to `build_site.py`'s build-failure list rather than leaving it as a one-off cleanup. All three now fail the build on a future regression, the same way title/description overflow already does. Confirmed the full site still builds clean with all three checks live.
+
 ## 2026-07-28 — Wiki Loves Monuments Spain: one new photo (Malaga), 24 documented dead ends; 14 city intros trimmed to Contract C's word limit
 
 Same session as the entry below. A background research agent tried Wiki Loves Monuments' Spain categories and regional singular-tree catalogues, never used in this project for Spain before, against the ~25 missing photos in Granada, Valencia, Malaga and Seville. One real find: **Malaga's Fig of the Picasso Gardens**, viewed directly, confirmed by the same sculpture pairing already sourced in the entry. The other 24 stay genuine, documented dead ends (full detail in CURATION.md), including one caught species mismatch on Valencia's Kashmir Cypress that a caption alone would have gotten wrong.
