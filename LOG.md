@@ -40,6 +40,11 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Madrid's three remaining approximate pins re-tried, confirmed genuine dead ends
+
+Same session as the New York entry below. Madrid (5/10 photos, 3 approximate) had real headroom on paper, since OpenStreetMap named nodes had already resolved seven of its ten pins in earlier sessions. Tried the same technique on the remaining three (Himalayan Cedar, Aleppo Pine, Stone Pine of El Capricho): no OSM node exists for any of them, individually named or species-tagged, only generic unlabelled tree points in two cases. One iNaturalist deodar cedar observation sits 230m from the Himalayan Cedar's pin, too far and too common a species in a large park to confirm as this specific singular tree, so left alone rather than guessed. No data changed, full detail in CURATION.md so a future session skips these three searches.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — New York's Hero Park yew gets a real pin correction (about 1.4km) via a newly documented NYC open-data technique
 
 Visitors: 65 visits, 99 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17). No reader submissions, site healthy, nothing published found wrong. Amsterdam, Lisbon and Istanbul, the three lead-group cities still short of the depth-exit-test bar, are all documented exhausted across many sessions today via a wide range of techniques (Wikidata SPARQL, Naturdenkmal-filename search, Openverse direct API, credentials this session also lacks for Mapillary/Commons OAuth); re-trying the same searches on them again would be the looping CLAUDE.md explicitly warns against, so this pass moved to the next rung, the rest of the lead group, and found real headroom in New York.
