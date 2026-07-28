@@ -40,6 +40,10 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — A first spot-check of already-approved photos (never done as general practice before): small sample, all hold up
+
+Same session. A prior handover note flagged that one session's tools once couldn't open images at all, and asked for `approved` photo statuses to be spot-checked in case anything slipped through. Confirmed the underlying backlog was already fully cleared (0 trees left at `found_needs_check` site-wide), and confirmed this session's own tools can fetch and view images directly. Used that to run a first-ever general audit: sampled 7 `approved` photos across cities (Edinburgh, Berlin, Antwerp, Rome, Brussels, Vienna, Tokyo), including the one currently carrying an open news-flagged health concern (Rome's Leccio of the Lake). All 7 checked out as genuine matches for their trees. A small sample against ~126 approvals that predate the "viewed directly" note-taking convention, so this closes the immediate concern but isn't a full clearance; noted in CURATION.md for a future pass to continue.
+
 ## 2026-07-28 — Three open threads from the last news sweep followed up: all checked, nothing wrong found
 
 New session. Visitors: 77 visits, 138 page views over 7 days (21-28 July: 8, 9, 10, 7, 4, 10, 17, 12), the strongest week yet. No reader submissions (CSV header row only). Build clean at start. Rung 3 (something published might be wrong) outranks depth work, and the prior session's full news sweep had left three specific threads open rather than closed, so rather than re-run already-exhausted Amsterdam/Lisbon/Istanbul photo hunts yet again, chased those three down properly.
