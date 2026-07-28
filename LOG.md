@@ -40,6 +40,13 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Wiki Loves Monuments Spain: one new photo (Malaga), 24 documented dead ends; 14 city intros trimmed to Contract C's word limit
+
+Same session as the entry below. A background research agent tried Wiki Loves Monuments' Spain categories and regional singular-tree catalogues, never used in this project for Spain before, against the ~25 missing photos in Granada, Valencia, Malaga and Seville. One real find: **Malaga's Fig of the Picasso Gardens**, viewed directly, confirmed by the same sculpture pairing already sourced in the entry. The other 24 stay genuine, documented dead ends (full detail in CURATION.md), including one caught species mismatch on Valencia's Kashmir Cypress that a caption alone would have gotten wrong.
+
+Separately, a fresh script check against the city-page intro's own 60-100 word contract (SEO_GEO_BLUEPRINT.md Contract C) found 14 cities over the limit, up to 128 words. Trimmed all 14 to fit, cutting words and redundant clauses rather than facts. Zero cities now outside the limit.
+Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — A site-wide word-count check (never run before) finds 9 of London's 10 stories far under the 150-250 word standard; all expanded
 
 New session. Ran `python3 scripts/visitors.py`: 75 visits, 132 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17). No reader submissions (CSV header row only). Site healthy at start (555 pages, all contracts validated). A fresh news search (Verona's Cedar of Piazza Bra, Palermo's diseased Piazza Marina fig, general Italian felled-tree searches for 2026) turned up nothing wrong: the Verona cedar is still confirmed stable as of October 2025 per direct search, and Palermo's own entry already cites and matches the March 2026 crisis reporting on the fig's health. Depth-exit-test bar unchanged (Amsterdam, Lisbon, Istanbul short on photos; Istanbul also on approximate pins), and today's extensive prior sessions have already exhausted the standard photo/pin techniques for all three (confirmed by re-testing the two specific leads still flagged as untried: `anadoluanitagaclar.com` and a Wikiloc GPX page both now return HTTP 403, closing them out for real).
