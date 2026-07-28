@@ -44,6 +44,8 @@ What we have learned from comparable products (AllTrails, Polarsteps, Strava, At
 
 10. **The owner stays as private as the law allows, until he says otherwise (Hidde, 2026-07-28).** No personal name, no personal location ("run from the Netherlands" level detail included), no personal email, no photo, no social links, anywhere public: site copy, schema, privacy page, commit identities, artifacts. Contact runs through brand addresses (info@ancienttrees.app). Where a rule or best practice wants a named person (GDPR controller, SEO entity trust), we take the honest cost of the anonymous option and record it rather than leaking identity. Only Hidde reopens this, explicitly.
 
+11. **The whole page ships, not the element (Hidde, 2026-07-28, after a day of order-by-order shipping broke the homepage's composition).** Before any user-facing change goes live: view the COMPLETE affected page, top to bottom, desktop and 375px, and judge whether it still composes as one. When the owner fires a series of wishes, batch them and do one composition pass over the touched pages instead of shipping per order. For substantial screen changes, a fresh-context reviewer sees only the screenshots and the question "does this read as one whole?", never the builder's reasoning.
+
 ## How to use this
 
 When building or judging anything user-facing, check it against these. If a change strengthens the habit loop, the aha moment, shareability, honesty or findability, it serves the goals. If it adds friction before first value, fakes trust, or chases breadth that dilutes quality, it does not.
