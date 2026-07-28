@@ -40,6 +40,18 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Depth pass: one Istanbul pin resolved, thorough (documented) photo dead ends for Amsterdam and Lisbon
+
+New session. Visitors: 76 visits, 137 page views over 7 days (21-28 July: 8, 9, 10, 7, 4, 10, 17, 11), trending up. No reader submissions (CSV header row only). Site healthy at start (555 pages, all contracts validated).
+
+Checked the rung-6 exit test directly against current data rather than assuming last session's numbers still held: Amsterdam is at 0 approximate pins but only 7/10 photos; Lisbon 0 approximate, 6/10 photos; Istanbul 5 approximate, 2/10 photos. None clear the 8-photos-and-≤2-approximate bar yet, so new cities stay frozen.
+
+Hunted photos for Amsterdam's 3 and Lisbon's 4 missing trees across Wikimedia Commons, iNaturalist, Openverse and general web search. Nothing usable turned up (the only hits were CC BY-NC or unlicensed, which the project excludes). Recorded as real dead ends in CURATION.md rather than left silent, so a future session doesn't repeat the same searches.
+
+**Resolved Istanbul's `ist_007` (Ata Fıstık Çamı) from approximate to confirmed**: a prior run's note had rejected a strong registry match because it compared the wrong measurement field (girth vs diameter). Re-checked the diameter field directly: exact match on age (397), diameter (145cm) and coordinates (within 3m of the stored pin). Istanbul now has 4 approximate pins left instead of 5. Also confirmed the Istanbul monument-tree registry's own photos have no verifiable open licence (site returns no reachable terms page), so treated as verification-only, same policy as monumentaltrees.com; no new Istanbul photos added despite trying.
+
+Full detail in CURATION.md. Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Three word-count contracts fixed site-wide (story, intro, question_context) and now enforced permanently by the build itself
 
 Same session as the entries below. After finding and fixing the same class of gap three separate times today (9 London stories under 150 words, 14 city intros over 100, 16 question_context fields outside 150-200), added the three missing checks directly to `build_site.py`'s build-failure list rather than leaving it as a one-off cleanup. All three now fail the build on a future regression, the same way title/description overflow already does. Confirmed the full site still builds clean with all three checks live.
