@@ -106,6 +106,10 @@ jobs:
             Two rules on that, and they matter more than the throughput:
             - Finish and commit each item completely before starting the next. A
               half-researched city is worse than none. Never leave one part done.
+            - Commit the smallest complete step the moment it exists, then build
+              on it with further commits. A usage cutoff mid-item must only ever
+              cost minutes, never the whole item (lesson of 2026-07-28, when a
+              12-minute run died before its first commit and left nothing).
             - Start no new item after 5 hours. The job is killed at 345 minutes,
               and work killed mid-flight is work lost.
             - Usage-limit behaviour depends on the clock. Between 07:00 and
@@ -141,11 +145,24 @@ jobs:
           fi
           H=$(date -u +%H)
           if [ "$H" -ge 7 ] && [ "$H" -lt 19 ]; then
-            echo "Hidde's hours (07-19 UTC): chain pauses, evening igniter relights it."
-            exit 0
+            # Daytime: pause only when Hidde is actually around (presence
+            # beacon within 4h). Every check fails OPEN into working, per his
+            # capacity ruling 2026-07-28: silence means the machine runs.
+            LAST=$(gh run list --workflow=presence.yml --repo "${{ github.repository }}"                      --limit 1 --json createdAt --jq '.[0].createdAt' 2>/dev/null || echo "")
+            if [ -n "$LAST" ]; then
+              NOW=$(date -u +%s)
+              TS=$(date -u -d "$LAST" +%s 2>/dev/null || echo 0)
+              if [ $(( NOW - TS )) -lt 14400 ]; then
+                echo "Presence beacon $(( (NOW - TS) / 60 ))min ago (<4h): daytime chain pauses for Hidde."
+                exit 0
+              fi
+            fi
+            echo "No recent presence: daytime chain continues, gentle 30min throttle."
+            sleep 1800
+          else
+            echo "Night: continuous mode, 10min throttle."
+            sleep 600
           fi
-          echo "Continuous mode on. Throttling before the next dispatch."
-          sleep 600
           gh workflow run nightly.yml --repo "${{ github.repository }}" \
             && echo "Next run dispatched." \
             || echo "Dispatch failed; the cron will cover it."

@@ -1,0 +1,15 @@
+# The presence beacon. Hidde's Mac dispatches this (via the SessionStart hook)
+# every time he opens a working session. The research chain checks when this
+# workflow last ran: within 4 hours means Hidde may want the usage window, so
+# the daytime chain pauses. No beacon means silence, and silence means the
+# machine keeps working (Hidde's capacity ruling, 2026-07-28).
+name: Presence
+on:
+  workflow_dispatch:
+permissions: {}
+jobs:
+  beacon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - run: echo "Hidde opened a session at $(date -u)"

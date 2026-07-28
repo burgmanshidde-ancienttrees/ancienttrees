@@ -82,7 +82,7 @@ Every city file follows this exact structure (see data/cities/london.json for th
 
 ## The research workflow (autonomous run)
 
-Runs hourly around the clock via GitHub Actions. Most attempts hit the Claude usage limit and stop immediately, which is expected and costs almost nothing; the work goes through whenever the window has room.
+Runs chain themselves around the clock via GitHub Actions. **The capacity doctrine, ruled by Hidde 2026-07-28, replacing night-runs-only:** the goal is optimal use of his subscription, not politeness by clock. Concretely: the chain runs day and night; opening a working session fires a presence beacon (SessionStart hook dispatches the Presence workflow) that pauses the daytime chain for 4 hours so Hidde's own conversations get the window; every check fails OPEN into working, because his rule is that silence means the machine runs. Attempts that hit the usage limit die in seconds and cost nothing. Commit the smallest complete step first, always: a cutoff must cost minutes, not items. DATA.md's daily entry carries the utilization meter (attempts versus got-through) so nobody has to guess whether the limits are being used.
 
 Each run, do exactly this, in order:
 
