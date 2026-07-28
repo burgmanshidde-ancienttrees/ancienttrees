@@ -40,6 +40,12 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Cadiz clears the photo floor: 3 of 4 missing photos found and viewed directly
+
+Same session as the collection above. Cadiz shipped today at only 1 of 5 photos, below the 80% target. Hunted the other four (all in Parque Genoves) and found 3, all from one photographer's 2023 visit on iNaturalist (CC BY 4.0): the dragon tree, the pohutukawa (confirmed by its own legible interpretive sign in the photo), and the floss silk tree (weaker confidence, honestly flagged in its own notes). The ombu genuinely has no open-licensed photo anywhere, stays missing rather than faked. Cadiz now at 4/5 (80%).
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Europe's Best Tree City Trips: the collection you asked for on 2026-07-27 is live
 
 Visitors: 70 visits, 105 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), plus 5 so far today. No reader submissions. Site healthy at session start. With Palermo, Cadiz and Sintra all live (see entries below) and every below-floor city already worked exhaustively today by earlier sessions, built the one clearly unstarted, well-specified piece of work still open: the "10 best tree city trips" collection you green-lit in session, using the ranking and anchors already recorded here on 2026-07-27.
