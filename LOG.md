@@ -40,6 +40,10 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Sintra's other two photo gaps: a real, thorough dead end
+
+Same session. Sintra's remaining three missing photos got the same hunt as Cadiz's. One (the Fern Cork Oak) has no open-licensed photo anywhere. The other two came close: a plausible plane tree above the Parque da Liberdade skating rink and two candidate multi-trunked trees at Monserrate, but both stayed too ambiguous to confirm on sight (too distant to see bark, or indistinguishable from a lookalike species), so both stay `missing` rather than guessed. Full detail, including exactly which Commons files were checked, in CURATION.md so a future session doesn't repeat the same search.
+
 ## 2026-07-28 — Cadiz clears the photo floor: 3 of 4 missing photos found and viewed directly
 
 Same session as the collection above. Cadiz shipped today at only 1 of 5 photos, below the 80% target. Hunted the other four (all in Parque Genoves) and found 3, all from one photographer's 2023 visit on iNaturalist (CC BY 4.0): the dragon tree, the pohutukawa (confirmed by its own legible interpretive sign in the photo), and the floss silk tree (weaker confidence, honestly flagged in its own notes). The ombu genuinely has no open-licensed photo anywhere, stays missing rather than faked. Cadiz now at 4/5 (80%).
