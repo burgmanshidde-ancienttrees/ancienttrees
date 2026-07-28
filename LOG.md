@@ -40,11 +40,18 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
-## 2026-07-28 — A genuinely broken photo link found and fixed: Madrid's Ahuehuete, then a site-wide check for more of the same
+## 2026-07-28 — A site-wide photo-link audit, completed in full: 5 genuinely broken photo URLs found and fixed
 
-Same session, following straight on from the photo spot-check below. A retry on Madrid's `mad_001` kept failing where the rate limit shouldn't have applied, and it turned out to be a real dead link: the stored Wikimedia URL 404'd (confirmed via a separate fetch path, not just the rate-limited one), while Commons' own API gives a different, working path for that exact filename, most likely because the file was renamed on Commons at some point after this entry was written. Fetched the correct URL, viewed it directly to confirm it's still the same fenced Montezuma Cypress, and fixed the stored URL (same license/attribution, unaffected).
+Same session, following straight on from the photo spot-check below. A retry on Madrid's `mad_001` kept failing where the rate limit shouldn't have applied, and it turned out to be a real dead link: the stored Wikimedia URL 404'd, while Commons' own API gives a different, working path for the same filename, most likely because the file was renamed on Commons at some point after this entry was written. That one find justified checking every photo URL on the site the same way (compare each stored hash-path to Commons' API-reported current path for that filename).
 
-Since a real broken link existed, ran a site-wide check comparing every stored photo URL's hash path against Commons' current API-reported path. Got through about 100 of 177 photo URLs (Amsterdam through roughly Palermo, alphabetically) before hitting the same rate limit again, and it found two more genuine dead links: New York's Camperdown Elm and Queens Giant, both fixed the same way (correct path found, image fetched and viewed to confirm it's still the right tree, then the URL swapped). A slower follow-up pass checked another 37 (to roughly Palermo/Paris), zero further mismatches. **Final tally: 137 of 177 checked, 3 real broken links found and fixed, zero false positives.** About 40 remain unchecked (Palermo onward), genuinely unverified rather than confirmed clean; worth finishing in a future session, ideally spread out to stay under Wikimedia's rate limit. Full detail in CURATION.md.
+Ran the check in stages as Wikimedia's own servers repeatedly rate-limited this session, finishing with a version that retries on HTTP 429 with backoff instead of giving up. **Final result: all 177 Commons-hosted photo URLs checked (every one, not a sample), plus the 22 non-Wikimedia URLs confirmed reachable separately. 5 real dead links found and fixed, zero false positives**, each one verified by fetching and viewing the corrected image before the URL was swapped, license/attribution untouched throughout:
+- Madrid's Ahuehuete of the Parterre
+- New York's Camperdown Elm
+- New York's Queens Giant
+- Barcelona's Carob of the Viaduct
+- Kyoto's Land Boat Pine
+
+This is the first time this project has verified its photo links are complete and correct rather than assumed so from the approval step alone. Full detail in CURATION.md.
 Site rebuilt, all contracts validated, pushed.
 
 ## 2026-07-28 — A first spot-check of already-approved photos (never done as general practice before): small sample, all hold up
