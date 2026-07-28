@@ -6,6 +6,21 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## The open product question: tree-first or walk-first (Hidde, 2026-07-28)
+
+His framing, verbatim in spirit: AllTrails is clear, you go hiking and need a route; we hang between "you go for a walk with trees on it" and "you visit ten trees". A possible fork: not the ten most epic trees but the ten most walkable, but then we become a walking app, not a tree app. He does not have the answer, wants it parked, wants findings gathered slowly, leans toward staying open.
+
+**Working hypothesis while open (session's argued position, Hidde has read it): wow-first selection, walk-first packaging.** The tree is the product, the walk is the delivery. Walkability ranks CITIES for trips (his earlier ruling) and shapes routes, but never demotes an epic tree from its city's ten; the unwalkable epic gets the "worth the detour" label instead. The one door not to close while open: never replace "the ten most remarkable" with "the ten most walkable" as the selection rule without evidence.
+
+**The evidence streams that will settle it, each already flowing or scheduled:**
+1. **Search demand** (flowing): do people arrive on tree queries or walk queries? The demand scans already lean tree-first (tree queries are a vacuum, walk queries are institutionally owned); DATA.md's query lists keep scoring this daily.
+2. **On-page behaviour** (flowing, beacon): per-tree directions clicks versus walk-panel engagement and GPX downloads. Runs can add path-level counts to the digest once volume exists.
+3. **The founder field test (scheduled, the decisive one): Hidde's Japan trip, 2026-09-05.** Does he actually walk the chains, or cherry-pick single trees? His felt experience plus his check-in pattern is the richest single data point this project will get this year.
+4. **Worth-signal** (future, flywheel): "was the visit worth it" per tree versus completed walks, once the tap exists.
+5. **The top-10 trips collection** (soon): if trip pages outperform city pages on engagement, walk-weight rises.
+
+**Checkpoint: mid-September 2026, right after the Japan trip.** A session with Hidde reads streams 1-5 and either settles the question or explicitly extends the open state. Runs: gather, never decide this one.
+
 ## A nicer sign-in email (Hidde, 2026-07-28, explicitly not important now)
 
 The magic-link mail is currently Supabase's plain default template from their default sender. Fine for the quiet launch; his words: "voor nu niet belangrijk". When it matters: restyle the template in the brand voice and identity (Supabase dashboard, Authentication > Email Templates: subject plus HTML, a session job with Hidde logged in), and optionally send from an @ancienttrees.app address, which additionally needs SMTP config and remains his infrastructure call.
