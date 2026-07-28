@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.3 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.4 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -15,7 +15,7 @@ This document has two layers with different lifespans. Layer 1 (Principles) shou
 
 **P4. Machine-readable everything.** Every fact that appears as prose also appears as structured data. If a human can read the tree's age, coordinates, and species, so can a crawler and an AI engine. Schema is not an add-on; it is the second rendering of the page.
 
-**P5. Verifiable entity behind the site.** The site is publishe by a named, real person (Hidde) with a verifiable footprint. Every page carries site-level Person/WebSite schema. Anonymous programmatic sites are held in trust-limbo; named ones are not.
+**P5. Verifiable entity behind the site, within the owner-privacy rule.** Revised in v1.4: the owner chooses maximum personal privacy (2026-07-28), so the site-level entity is the Organization "Ancient Trees", not a named Person. Every page carries WebSite + Organization schema. The trade-off is known and accepted: an organisation signal is weaker than a named person against the anonymous-programmatic-site suspicion; the named-person option and the About page reopen only on the owner's explicit say-so.
 
 **P6. Freshness is systematic, not incidental.** Every page receives a genuine content update (new fact, updated status, refreshed date) at least once per quarter via the nightly improvement cycle. Recency is a measurable citation factor; we build it into the machine rather than hoping for it.
 
@@ -34,7 +34,7 @@ This document has two layers with different lifespans. Layer 1 (Principles) shou
 - **URLs:** lowercase, hyphens, no trailing slash, no dates. Patterns are permanent — a URL never changes once published (redirects only for genuine corrections).
 - **Canonical:** every page self-canonical unless explicitly deduplicating.
 - **Breadcrumbs:** visible on page AND as BreadcrumbList schema. Path: Home > [Country] > [City] > [Tree].
-- **Site-level schema on every page:** WebSite + Person (Hidde, with sameAs link to a verifiable profile).
+- **Site-level schema on every page:** WebSite + Organization (Ancient Trees). Person schema parked per the owner-privacy rule (v1.4).
 - **OpenGraph/Twitter:** og:title (may match title tag), og:description, og:image (tree photo when available; generated map-card of the location until then), og:type=article.
 - **Build-time validation:** title length, description length, schema validity, and link minima are checked at build. A page that fails validation does not deploy.
 - **Language:** English. Local-language tree names appear in the body and may appear in the title where the tree is famous under that name.
@@ -121,3 +121,5 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 - v1.2 — Removed the curation-status banner from every page type, approved by Hidde. He is not the quality gate and never will be at 1,000 trees, so promising "final human review is still in progress" was a promise nobody was going to keep. The bar is now the research standard already applied (two independent sources) plus readers as the correction layer. Two replacements: every tree page carries a visible "is something here not right?" invitation, and a tree whose pin is only approximate says so next to the directions button, because that costs the visitor a wasted walk. Uncertainty about age stays where it already was, inside the story text as a stated range (P7).
 - v1.1 — Added Contract F (species page `/species/[slug]` + `/species` index), approved by Hidde. Semi-automated browse facet: auto-generated entry list, hand-written intro, publish-gated at 3+ trees and an intro. Single-species collections are now folded into this contract to avoid duplicate content.
 - v1.0 — Initial blueprint. Consolidates: four-layer architecture, AllTrails-pattern page structure, metadata contracts, schema stacks, freshness rule, entity requirements, measurement hypothesis.
+
+- **v1.4 (2026-07-28):** Owner-privacy rule applied on Hidde's instruction in session: P5 and site-level schema switch from named Person to Organization; About page (Contract E) parked indefinitely. Trade-off recorded in P5 itself.

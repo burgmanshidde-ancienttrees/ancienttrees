@@ -528,12 +528,13 @@ def haversine(a, b):
 def site_graph():
     """Site-level WebSite + Person schema, on every page.
 
-    About page (Contract E) is deferred by Hidde's decision 2026-07-19;
-    when it ships, point the Person url at /about and add sameAs.
+    Owner-privacy rule (Hidde, 2026-07-28): no personal name anywhere public,
+    so the site-level entity is the Organization, not a Person. The About page
+    and Person schema stay parked until Hidde explicitly reopens them.
     """
     return [
         {"@type": "WebSite", "name": "Ancient Trees", "url": BASE_URL},
-        {"@type": "Person", "name": "Hidde", "url": BASE_URL},
+        {"@type": "Organization", "name": "Ancient Trees", "url": BASE_URL},
     ]
 
 
