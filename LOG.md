@@ -40,6 +40,15 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — London's flagship tree gets a real second source, after a site-wide single-source audit
+
+Same session as the entry below. With today's photo/pin depth ladder and PRODUCT_TODO.md both genuinely exhausted (every below-floor city already worked today, no backlog items left, PRODUCT_TODO.md's remaining slate explicitly blocked), checked all 10 site-wide entries that carry only one source, the same failure class that produced the Venice fabrication below.
+
+- **The Totteridge Yew (lon_001), London's own "oldest living thing in London" claim, was resting on one non-citable source**: monumentaltrees.com, which CLAUDE.md says to use for verification only. Found and verified a real second source that corroborates the age, girth and 2008 survey. Fixed.
+- The other nine single-sourced entries all check out clean against their citation; none needed a fix.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — A real fabrication caught and fixed in Venice; a 750m Granada pin correction; Istanbul's last two open leads closed for today
 
 Visitors: 65 visits, 99 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), rising toward the end of the week. No reader submissions.
