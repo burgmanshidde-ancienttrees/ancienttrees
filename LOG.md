@@ -40,6 +40,17 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Europe's Best Tree City Trips: the collection you asked for on 2026-07-27 is live
+
+Visitors: 70 visits, 105 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), plus 5 so far today. No reader submissions. Site healthy at session start. With Palermo, Cadiz and Sintra all live (see entries below) and every below-floor city already worked exhaustively today by earlier sessions, built the one clearly unstarted, well-specified piece of work still open: the "10 best tree city trips" collection you green-lit in session, using the ranking and anchors already recorded here on 2026-07-27.
+
+- Ten trips, in your own easiest-first order: Palermo, Seville, Cadiz, Lisbon+Sintra (paired, a train ride apart), Porto, Athens, Prague, Rome, Milan, Granada.
+- Each trip's distance and time is real, not guessed: computed with the exact same walk planner every city page already uses (nearest-neighbour route, real-street allowance, 6 km cap), so nothing new was added to satisfy your "plotted over streets" bar, the site's existing honest-walk machinery already does that, handing actual turn-by-turn navigation to the visitor's phone the same way every city page does. Hills that the flat kilometre count doesn't show are called out in plain language where they're real: the Gianicolo in Rome, the Alhambra hill in Granada, Filopappou in Athens, the Serra de Sintra.
+- One judgement call worth flagging: instead of one entry per tree (roughly 70 of them, mostly repeating the same walk-logistics line with the city swapped), each of the ten trips is one rich paragraph naming its flagship tree and the walk around it. Reads better, avoids the boilerplate-in-loops trap PRODUCT_TODO.md warns about.
+- Published immediately, no approval needed since blueprint v1.3.
+- Full sourcing and reasoning in CURATION.md.
+- Site rebuilt (555 pages, 10 public collections), all contracts validated, pushed.
+
 ## 2026-07-28 — Sintra goes live: 36th city, 5 trees, the last of three cities for the Europe city-trips collection
 
 Visitors: 69 visits, 104 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), plus 4 so far today. No reader submissions (form checked fresh, header row only). Site healthy at session start, build clean, nothing published found wrong. Re-verified rather than assumed: Amsterdam (7/10 photos), Lisbon (6/10) and Istanbul (2/10 photos, 5 approximate) are still short of the depth-exit-test bar and remain exhaustively documented dead ends across many sessions today; PRODUCT_TODO.md has nothing open. Moved to the one piece of new-city work still available under rung 6's standing exception: Sintra, the last of three cities (with Palermo and Cadiz) Hidde pre-approved to complete the "Top 10 tree city trips of Europe" collection. All three are now live, so that collection itself can finally be assembled.
