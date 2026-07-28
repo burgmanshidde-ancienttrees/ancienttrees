@@ -30,6 +30,9 @@ Sources, strictly stdlib urllib (hard rule 5, no new dependencies):
 
 **Done when:** `DATA.md` exists; the digest step runs in CI, writes a dated entry when the token secret is present, and skips with a single honest LOG.md line when it is not; a second run the same day does not duplicate the entry; entries render valid markdown (spot-check by grep on the date header format).
 
+### 2c. SESSION-RESERVED (needs eyes, runs keep out): Phase A of PRODUCT_IA.md
+The verb nav with the Explore dropdown, the homepage grid compressed to a directory block, tree-page actions above the story plus nearby-trees footer, and the humanity sweep of all loop-generated blocks (PRINCIPLES.md #9) in the same pass. Built in preview first, shipped on Hidde's look. Runs: do not attempt; template-anatomy work without eyes is how machine-logic blocks happen.
+
 ### 3. CHECKED 2026-07-27, clean: copy audit against the value proposition and the durable-claims rule
 Walk every template string in `scripts/build_site.py` against CLAUDE.md's value proposition and the rule that copy may only promise what the paywall will survive. Remove drifted or filler copy; tighten to the tone of voice.
 Ran the done-when's own greps against a full rebuild of `site/dist` (516 pages): zero hits for "free forever", "always free", "never pay", "no accounts" as a promise; zero hits for the banned tone words (hidden gem, must-see, breathtaking, nestled); zero em dashes. Nothing to fix. Re-run this same check after future copy changes to `build_site.py` rather than assuming it still holds.
