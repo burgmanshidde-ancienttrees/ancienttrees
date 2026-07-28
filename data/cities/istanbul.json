@@ -66,8 +66,8 @@
       "age_max": 580,
       "location": {
         "address": "Near Bilezikçi Çiftliği, Çayırbaşı-Bahçeköy road, Sarıyer",
-        "latitude": 41.170056,
-        "longitude": 29.01075,
+        "latitude": 41.1702028,
+        "longitude": 29.011277,
         "neighbourhood": "Bahçeköy, Sarıyer"
       },
       "story": "Seven trunks that are actually one tree share a single root system at this bend in the Bahçeköy forest. Its lowest branches touched the ground centuries ago and thickened into limbs that now radiate outward like separate trunks, which is how a plane tree ends up nicknamed the Octopus. Turkish foresters put its age at up to 580 years, old enough that a local claim ties its early growth to the reign of Suleiman the Magnificent in the 1500s, though a more conservative reading of the trunk puts it closer to 400. Either figure makes it one of the oldest individually named trees in the city, and unlike most ancient planes, which grow as a single vertical column, this one spread sideways instead, its lowest limbs thick enough to sit on. At over 40 metres tall and more than 3 metres across at the base, it dominates a bend on the old road between Çayırbaşı and Bahçeköy, a stop on the hiking routes that cross Belgrad Forest today. Locals photograph it for the shape. Foresters study it for what centuries of horizontal growth actually does to a trunk that size.",
@@ -84,8 +84,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Age is disputed: some sources give roughly 580 years (tying early growth to Suleiman the Magnificent's reign), others a more conservative 400. Presented as a range. Pin refined further 2026-07-27: Turkey's national monumental-tree GIS layer (turkiye_anit_agaclari) carries an individual tree record 380m from the Oldest Plane of Bahçeköy's own registry point (ist_001), aged exactly 579 years, essentially an exact match to this entry's 'up to 580 years' figure, about 500m from the prior farm-geocode point. Same open discrepancy as ist_001: the registry labels this record's species Platanus acerifolia rather than the Platanus orientalis this entry's Turkish sources describe, most likely a registry mislabeling given the extreme age, so kept approximate rather than confirmed despite the strong age match.",
-      "location_precision": "approximate"
+      "notes": "Age is disputed: some sources give roughly 580 years (tying early growth to Suleiman the Magnificent's reign), others a more conservative 400. Presented as a range. Pin refined 2026-07-27: Turkey's national monumental-tree GIS layer (turkiye_anit_agaclari) carries an individual tree record 380m from the Oldest Plane of Bahçeköy's own registry point (ist_001), aged exactly 579 years, essentially an exact match to this entry's 'up to 580 years' figure, but the registry labels that record's species Platanus acerifolia rather than the Platanus orientalis this entry's Turkish sources describe, most likely a mislabeling given the extreme age, so kept approximate despite the strong age match. Upgraded to confirmed 2026-07-28: OpenStreetMap carries a separately mapped node (id 11816636713) named \"Yatık Çınar\", denotation=natural_monument, matching this entry's own already-cited source (dogadakiler.com's page is titled \"Yatik-Cinar-Anit-Agac\", Yatık Çınar being the tree's registry name and Ahtapot Çınar/Octopus Plane its popular nickname for the same specimen). About 47m from the prior pin, well within the same site. The node carries no survey/imagery provenance in its OSM edit history, so this rests on a name match across two independent sources rather than a government-surveyed coordinate; recorded honestly.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ist_003",
