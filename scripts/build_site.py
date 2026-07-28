@@ -61,6 +61,9 @@ SUPPORT_URL = ""
 # noindexed prototype until his Supabase project and privacy page exist.
 # Flipping this to True is his call, made in a session, never by a run.
 AUTH_ENABLED = False
+# Hidde's Supabase project (2026-07-28). The publishable key is public by design.
+SUPABASE_URL = "https://caimvxiyrtifilimlkqw.supabase.co"
+SUPABASE_KEY = "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb"
 
 MAPLIBRE_JS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"
 MAPLIBRE_CSS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
@@ -467,7 +470,7 @@ ANALYTICS_SNIPPET = (
 FOOTER = """
 <footer>
   <span class="footer-logo">Ancient Trees</span>
-  <span class="footer-links"><a href="%%ROOTPATH%%collections">Collections</a> <a href="%%ROOTPATH%%contribute">Suggest a tree</a></span>
+  <span class="footer-links"><a href="%%ROOTPATH%%collections">Collections</a> <a href="%%ROOTPATH%%contribute">Suggest a tree</a> <a href="%%ROOTPATH%%privacy">Privacy</a></span>
   <span class="footer-note">&copy; %%YEAR%% Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors.</span>
 </footer>
 """
@@ -2110,6 +2113,34 @@ def build_collections_index(collections, published, pages):
     pages.append(("collections.html", page, canonical))
 
 
+def build_privacy_page(pages):
+    """The privacy page, text approved by Hidde 2026-07-28 ("prima dit").
+    Boring and factual on his instruction: no forever-promises, no personal
+    name or location, no contact address (his explicit choice, the formal
+    thinness of which is recorded in CLAUDE.md); deletion is self-service."""
+    canonical = f"{BASE_URL}/privacy"
+    body = """
+<main class="content-page">
+  <h1>Privacy</h1>
+  <div class="prose-block">
+    <p>Ancient Trees is a small independent project. This page describes what data the site handles.</p>
+    <h2>Browsing</h2>
+    <p>Every page works without an account. The site uses a cookieless visit counter (Cloudflare Web Analytics) that records aggregate page views only; it sets no cookies and cannot identify you. Map tiles load from OpenFreeMap and photos from Wikimedia Commons; those requests reach their servers the way any image on the web does.</p>
+    <h2>With an account (once sign-in opens)</h2>
+    <p>Signing in stores two things: your email address and your tree collection. The address is used for sign-in links and account service, nothing else. This data is stored with Supabase, on servers in the EU (Frankfurt).</p>
+    <h2>Deleting</h2>
+    <p>Your account page has a delete option. It removes your email address and your collection.</p>
+    <h2>Changes</h2>
+    <p>When this page changes, the date below changes with it.</p>
+    <p><em>Last updated: 28 July 2026</em></p>
+  </div>
+</main>
+"""
+    page = render_page("Privacy", "What data Ancient Trees handles.",
+                       canonical, body, rootpath="./")
+    pages.append(("privacy.html", page, canonical))
+
+
 def build_contribute_page(published, pages):
     """The flywheel's front door: readers send trees, the nightly run verifies
     and writes them up. Deliberately asks for the few things that make a
@@ -2520,7 +2551,7 @@ def build_account_page():
     kept out of the sitemap and noindexed while AUTH_ENABLED is False."""
     body = """
 <main class="content-page account-page">
-  <div class="proto-note">Prototype. Accounts are not live yet: nothing you type here is sent or stored.</div>
+  <div class="proto-note">Quiet launch. Sign-in is real and stores only your email address; collection sync is still being built. This page is not linked from the site yet.</div>
 
   <section id="st-signin" class="acct-card">
     <p class="hero-kicker">Your tree collection</p>
@@ -2530,7 +2561,7 @@ def build_account_page():
       <input type="email" id="acct-email" placeholder="you@example.com" aria-label="Email address" required>
       <button type="submit" class="go-btn">Email me a sign-in link</button>
     </form>
-    <p class="acct-fine">We use your address for sign-in links and nothing else.</p>
+    <p class="acct-fine">We use your address for sign-in links and nothing else. <a href="privacy">Privacy</a></p>
   </section>
 
   <section id="st-sent" class="acct-card" hidden>
@@ -2549,18 +2580,21 @@ def build_account_page():
   </section>
 
   <section id="st-in" class="acct-card" hidden>
-    <p class="hero-kicker">Signed in (prototype)</p>
+    <p class="hero-kicker">Signed in</p>
     <h1>Your <em>trees</em>.</h1>
+    <p class="acct-sub"><strong id="in-email"></strong></p>
     <div class="stat-row">
       <div class="stat"><b id="n-trees">0</b><span>trees</span></div>
       <div class="stat alt"><b id="n-cities">0</b><span>cities</span></div>
     </div>
-    <p class="acct-sub" id="in-note">Collected on this device. When accounts go live, this follows you everywhere.</p>
+    <p class="acct-sub" id="in-note">Your collection still lives on this device while sync is being built; signing in today claims your spot for it.</p>
     <p class="acct-actions"><button type="button" id="signout" class="acct-link">Sign out</button></p>
   </section>
 </main>
 <script>
 (function() {
+  var SB = "SUPABASE_URL_TOKEN";
+  var KEY = "SUPABASE_KEY_TOKEN";
   var states = ["st-signin", "st-sent", "st-expired", "st-in"];
   function show(id) {
     states.forEach(function(x) { document.getElementById(x).hidden = (x !== id); });
@@ -2569,6 +2603,14 @@ def build_account_page():
     var at = e.indexOf("@");
     if (at < 2) return e;
     return e[0] + "\u2022\u2022\u2022" + e.slice(at - 1);
+  }
+  var lastEmail = "";
+  function sendLink(email, done) {
+    fetch(SB + "/auth/v1/otp?redirect_to=" + encodeURIComponent(location.origin + location.pathname), {
+      method: "POST",
+      headers: { "apikey": KEY, "Content-Type": "application/json" },
+      body: JSON.stringify({ email: email, create_user: true })
+    }).then(function(r) { done(r.ok); }).catch(function() { done(false); });
   }
   var cooldown = null;
   function startCooldown() {
@@ -2580,19 +2622,7 @@ def build_account_page():
       if (n <= 0) { clearInterval(cooldown); btn.disabled = false; btn.textContent = "Resend link"; }
     }, 1000);
   }
-  document.getElementById("acct-form").addEventListener("submit", function(ev) {
-    ev.preventDefault();
-    var e = document.getElementById("acct-email").value.trim();
-    if (!e) return;
-    document.getElementById("sent-to").textContent = mask(e);
-    show("st-sent"); startCooldown();
-  });
-  document.getElementById("change").addEventListener("click", function() { show("st-signin"); });
-  document.getElementById("resend").addEventListener("click", startCooldown);
-  document.getElementById("re-expired").addEventListener("click", function() { show("st-sent"); startCooldown(); });
-  document.getElementById("signout").addEventListener("click", function() { show("st-signin"); });
-  if (location.hash === "#expired") show("st-expired");
-  if (location.hash === "#in") {
+  function localStats() {
     try {
       var seen = JSON.parse(localStorage.getItem("ancienttrees_seen")) || [];
       document.getElementById("n-trees").textContent = seen.length;
@@ -2600,11 +2630,81 @@ def build_account_page():
       seen.forEach(function(id) { cities[id.slice(0, 3)] = 1; });
       document.getElementById("n-cities").textContent = Object.keys(cities).length;
     } catch (e) {}
+  }
+  function signedIn(session) {
+    try { localStorage.setItem("ancienttrees_session", JSON.stringify(session)); } catch (e) {}
+    fetch(SB + "/auth/v1/user", { headers: { "apikey": KEY, "Authorization": "Bearer " + session.access_token } })
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(u) {
+        if (u && u.email) document.getElementById("in-email").textContent = u.email;
+      })
+      .catch(function() {});
+    localStats();
     show("st-in");
   }
+  function parseHash() {
+    var h = {};
+    location.hash.slice(1).split("&").forEach(function(kv) {
+      var p = kv.split("=");
+      if (p[0]) h[decodeURIComponent(p[0])] = decodeURIComponent(p[1] || "");
+    });
+    return h;
+  }
+  var h = parseHash();
+  if (h.access_token) {
+    history.replaceState(null, "", location.pathname);
+    signedIn({
+      access_token: h.access_token,
+      refresh_token: h.refresh_token || "",
+      expires_at: Math.floor(Date.now() / 1000) + parseInt(h.expires_in || "3600", 10)
+    });
+  } else if (h.error_code === "otp_expired" || h.error === "access_denied") {
+    history.replaceState(null, "", location.pathname);
+    show("st-expired");
+  } else {
+    try {
+      var s = JSON.parse(localStorage.getItem("ancienttrees_session"));
+      if (s && s.expires_at > Date.now() / 1000) signedIn(s);
+    } catch (e) {}
+  }
+  document.getElementById("acct-form").addEventListener("submit", function(ev) {
+    ev.preventDefault();
+    var e = document.getElementById("acct-email").value.trim();
+    if (!e) return;
+    lastEmail = e;
+    sendLink(e, function(ok) {
+      if (ok) {
+        document.getElementById("sent-to").textContent = mask(e);
+        show("st-sent"); startCooldown();
+      } else {
+        document.getElementById("acct-email").setCustomValidity("That did not work; try again in a minute.");
+        document.getElementById("acct-form").reportValidity();
+        setTimeout(function() { document.getElementById("acct-email").setCustomValidity(""); }, 3000);
+      }
+    });
+  });
+  document.getElementById("change").addEventListener("click", function() { show("st-signin"); });
+  document.getElementById("resend").addEventListener("click", function() {
+    if (lastEmail) sendLink(lastEmail, function() {});
+    startCooldown();
+  });
+  document.getElementById("re-expired").addEventListener("click", function() {
+    if (lastEmail) { sendLink(lastEmail, function() {}); document.getElementById("sent-to").textContent = mask(lastEmail); }
+    show(lastEmail ? "st-sent" : "st-signin"); if (lastEmail) startCooldown();
+  });
+  document.getElementById("signout").addEventListener("click", function() {
+    try {
+      var s = JSON.parse(localStorage.getItem("ancienttrees_session"));
+      if (s) fetch(SB + "/auth/v1/logout", { method: "POST",
+        headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } }).catch(function() {});
+    } catch (e) {}
+    try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
+    show("st-signin");
+  });
 })();
 </script>
 """
+    body = body.replace("SUPABASE_URL_TOKEN", SUPABASE_URL).replace("SUPABASE_KEY_TOKEN", SUPABASE_KEY)
     page = render_page("Sign in to Ancient Trees", "Keep your tree collection on every device.",
                        f"{BASE_URL}/account", body,
                        head_extra='<meta name="robots" content="noindex, nofollow">',
@@ -2685,6 +2785,7 @@ def main():
         build_species_index(species_cards, published, pages)
 
     build_contribute_page(published, pages)
+    build_privacy_page(pages)
     build_in_season_page(renderable, tree_slugs, pages)
     build_homepage(published, upcoming, public_collections, pages)
     build_redirects(published, pages, tree_slugs)
