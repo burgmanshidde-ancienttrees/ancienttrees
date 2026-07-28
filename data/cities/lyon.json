@@ -327,7 +327,8 @@
       },
       "curation_status": "flagged",
       "notes": "No documented planting date; age estimated from measured size (3.20m girth, 26m height) and the arboretum's 1857 founding period rather than a verified record.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": { "months": [10, 11], "label": "October into November, when its leaves turn a rich butter yellow" }
     }
   ]
 }
