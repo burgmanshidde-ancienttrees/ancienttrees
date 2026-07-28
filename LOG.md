@@ -40,6 +40,12 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Bologna gains two real photos: the sequoia and one of its two Himalayan cedars
+
+- **Bologna** (3/10 photos, 4/10 approximate), next after Malaga: found and approved two real photos. The Giardini Margherita sequoia's own species is named directly in a Commons photo caption ("sequoia sempreverde"), an exact match, viewed directly and confirmed as an unmistakable redwood trunk with an official monument tag on the bark. The Villa Ghigi Himalayan cedar's photo came from going straight to this entry's own already-cited Commons category rather than searching by keyword, which is what tripped up an earlier session (a keyword search had surfaced a wrong-city mixup, a similarly named cedar in Vallerano, correctly declined at the time). One photo candidate for a different tree, the Piazza Cavour ginkgo, was found and correctly declined: right species, wrong-looking setting (a plain brick wall rather than the formal piazza garden) and 130m from the registry-confirmed pin, in a city with several ginkgos in different squares. Bologna now at 5/10 photos, up from 3/10.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Malaga gains a real photo for the Tallest Araucaria, from a contributor already trusted on this page
 
 - **Malaga** (3/10 photos, 5/10 approximate), next in the depth ladder after the three lead-group cities above: found and approved a genuine photo for mlg_007, the Tallest Araucaria in the Province, via iNaturalist (CC-BY-SA), taken by Daniel Capilla, the same photographer already credited for two of this city's other approved photos. His own field notes independently describe the same "tallest in the garden, 45m+, tallest in the province" claim this entry already makes, a real corroboration rather than a coincidence. Approved with an honest caveat: the photo shows the garden's grove of araucarias rather than one trunk singled out as the record-holder. Malaga now at 4/10 photos. Six other gaps re-tried across iNaturalist and Openverse stay genuine dead ends, mostly CC-BY-NC observations or nothing at all.

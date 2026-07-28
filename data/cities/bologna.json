@@ -77,13 +77,13 @@
       "access": "Free, public park",
       "transport": "15 min walk from Bologna city centre, or bus to Viale Gozzadini",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Giardini_margherita_albero_monumentale.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Aneta Malinowska, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Dimensions (37.4m height, 520cm circumference) from a dedicated Bologna monumental-trees article, corroborated by Wikipedia's sourced article on the gardens' history and general species collection. No individual planting date documented. No usable photo found. Pin corrected ~110m via Italy's national monumental tree registry (RAMI), whose own entry for this exact tree records an identical 37.40m height and 5.20m circumference.",
+      "notes": "Dimensions (37.4m height, 520cm circumference) from a dedicated Bologna monumental-trees article, corroborated by Wikipedia's sourced article on the gardens' history and general species collection. No individual planting date documented. Photo found 2026-07-28, filename 'Giardini margherita albero monumentale' (monumental tree), Italian caption naming the species directly as 'sequoia sempreverde', an exact match to this entry's own Coast Redwood identification, the only sequoia species this park is sourced as holding. Viewed directly: a dramatic upward shot of the massive, deeply fissured fibrous red bark and multi-stemmed trunk unmistakable as Sequoia sempervirens, with an official monument tag visible attached to the bark. Approved. Pin corrected ~110m via Italy's national monumental tree registry (RAMI), whose own entry for this exact tree records an identical 37.40m height and 5.20m circumference.",
       "location_precision": "confirmed"
     },
     {
@@ -289,13 +289,13 @@
       "access": "Free, public park",
       "transport": "15 min walk uphill from Porta San Mamolo",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Cedro_dell%27Himalaya_nel_Parco_di_Villa_Ghigi.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ugeorge, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Callisto Ghigi planting attribution and general park history from a dedicated local-press feature; dimensions (159cm diameter, 24m height) and lightning-damage detail from the tree's own Wikimedia Commons category structured data. No individual planting date documented. A photo search found this tree's dedicated 6-file Commons subcategory, but the specific files checked (search-surfaced candidates) turned out to depict a different, similarly named cedar in Vallerano; not used to avoid a wrong-location mismatch, so recorded as missing rather than guessed. Location confirmed 2026-07-27: an OpenStreetMap tree node tagged `denotation=natural_monument` with a MASAF national-registry reference (`ref:masaf=08/A944/BO/08`) and a Wikimedia Commons category explicitly named \"Villa Ghigi (Bologna) - Cedro dell'Himalaya\", resolving the Vallerano mixup this entry had already flagged: this node is unambiguously the Bologna specimen, not the same-species tree elsewhere.",
+      "notes": "Callisto Ghigi planting attribution and general park history from a dedicated local-press feature; dimensions (159cm diameter, 24m height) and lightning-damage detail from the tree's own Wikimedia Commons category structured data. No individual planting date documented. Photo found 2026-07-28, correctly inside the dedicated 'Villa Ghigi (Bologna) - Cedro dell'Himalaya' Commons category this entry already cites as a source (unlike the earlier search-surfaced candidates that turned out to be the Vallerano mixup, flagged and avoided). Viewed directly: a single large Cedrus deodara with the species' characteristic drooping habit, standing on an open lawn behind the same split-rail wooden fence visible in the park's other confirmed photos, with a hilltop villa in the distance, matching the story's own description of its position on the open lawn. Approved. Location confirmed 2026-07-27: an OpenStreetMap tree node tagged `denotation=natural_monument` with a MASAF national-registry reference (`ref:masaf=08/A944/BO/08`) and the same Commons category name, resolving the Vallerano mixup: this node is unambiguously the Bologna specimen, not the same-species tree elsewhere.",
       "location_precision": "confirmed"
     },
     {
