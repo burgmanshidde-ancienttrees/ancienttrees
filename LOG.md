@@ -40,6 +40,12 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Antwerp: same session, one real lead found but too ambiguous to act on
+
+- **Antwerp** (5/10 photos, 7/10 approximate), the third and last untouched lead-group city today: re-queried the city's own Groeninventaris tree layer, which had already resolved 3 other Antwerp pins. Found a genuine new lead for the Millennium Ginkgo (4 ginkgos in Stadspark, 3 size-plausible for the year-2000 planting) but no way to tell which of the three is the specifically dated one without guessing, so left it approximate rather than pick one. The mulberry isn't in this city dataset at all (it's tracked only in Flanders' heritage inventory, a real structural gap not a search failure), and the cut-leaf horse chestnut cultivar can't be told apart from 128 ordinary horse chestnuts the layer doesn't distinguish by cultivar. One heritage photo candidate viewed directly turned out to show a park gate, not either missing-photo tree. Antwerp stays at 5/10, 7/10 approximate.
+- Full detail in CURATION.md. No data changed.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Dublin and Brussels: depth ladder continues, both re-confirmed genuine dead ends on their remaining gaps
 
 Visitors: 65 visits, 99 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), rising day over day toward the end of the week.
