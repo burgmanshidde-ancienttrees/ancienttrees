@@ -85,7 +85,14 @@
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates are an estimate for the Ramble near West 78th Street; no surveyed point for the specific tree was found.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "late September into October, often the first tree in the Ramble to turn, in brilliant scarlet"
+      }
     },
     {
       "id": "nyc_003",
@@ -146,7 +153,13 @@
       },
       "curation_status": "flagged",
       "notes": "Age is explicitly uncertain in the source material itself (Green-Wood's own write-up says there is no way to confirm age without coring the tree, and cautions that cemetery growing conditions likely make the tree larger than its age alone would suggest). Coordinates are for the cemetery's main entrance, not a surveyed point for the tree's specific location inside the grounds. Photo viewed directly: two large old trees a few feet apart in the cemetery, headstones visible, an exact match to the story's own description of the tree appearing as a pair of trunks.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when its leaves turn a mix of yellow, orange and purple, sometimes all on the same branch"
+      }
     },
     {
       "id": "nyc_005",
@@ -157,8 +170,8 @@
       "age_max": 450,
       "location": {
         "address": "Alley Pond Park, near Alley Creek, Douglaston, Queens, NY 11364",
-        "latitude": 40.75300,
-        "longitude": -73.74700,
+        "latitude": 40.753,
+        "longitude": -73.747,
         "neighbourhood": "Douglaston, Queens"
       },
       "story": "This tree was already centuries old when New Amsterdam was still a Dutch trading post, and unlike almost everything else on this list, nobody planted it. At 133.8 feet the Queens Giant is the tallest carefully measured tree in New York City, a tulip poplar growing wild in a stretch of Alley Pond Park's forest that has never been cleared, and the New York City Parks Department dates it to at least 368 years old, with other estimates ranging as wide as 350 to 450. Tulip trees can live 600 years and reach over 150 feet under ideal conditions, and this specimen's height alone marks it as one of the oldest living things in the entire New York metropolitan region, likely older than any building, monument or institution in the five boroughs. Some local histories connect the surrounding land to 17th century transactions between the Dutch West India Company and the Matinecock people who lived here before European settlement, though no source confirms this specific tree witnessed any documented exchange. It has simply kept growing, in a park most of the city drives past on the Long Island Expressway without knowing it is there.",
@@ -177,7 +190,13 @@
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates taken directly from the confirmed photo's embedded GPS metadata (40°45'10.8\"N, 73°44'49.2\"W), a rare case of a precisely surveyed point for the tree itself rather than an estimate. Photo URL fixed 2026-07-28: the stored path (commons/e/ef/...) 404'd, caught by the same site-wide hash-path check that found Madrid's and the Camperdown Elm's broken links; the real current path is 6/67. Fetched and viewed directly (a tall bare-branched tree towering above its neighbours in a leaf-litter forest) to confirm it's still the same tree before swapping.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when its canopy turns a luminous golden yellow"
+      }
     },
     {
       "id": "nyc_006",
@@ -239,7 +258,13 @@
       },
       "curation_status": "flagged",
       "notes": "Sourcing for this specific tree is thinner than the others on this list: the height and circumference figures come from secondary coverage rather than a dedicated NYC Parks Great Trees entry found in this search. Age presented as a wide range and the tree flagged for a stronger primary source in a future pass. Location resolved 2026-07-27 via NYC Open Data's Forestry Tree Points dataset: the only Liriodendron tulipifera record citywide with a 93-inch DBH, an exact match to the Colossus's own reported circumference, sitting right at the park's mapped northern boundary off Forest Avenue. An independent iNaturalist observation of the same species sits about 10m away, corroborating the point rather than just the park.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when its canopy turns golden yellow"
+      }
     },
     {
       "id": "nyc_008",
