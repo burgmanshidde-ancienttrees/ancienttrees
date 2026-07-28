@@ -218,8 +218,8 @@
       "age_max": 200,
       "location": {
         "address": "Jardin de l'Île Barbe, 69009 Lyon",
-        "latitude": 45.808,
-        "longitude": 4.812,
+        "latitude": 45.7973,
+        "longitude": 4.8321,
         "neighbourhood": "Île Barbe"
       },
       "story": "Monks gardened this island in the Saône for roughly fourteen centuries before anyone planted this specific tree, which puts even an old cedar into perspective. A Benedictine abbey occupied the northern half of Île Barbe from the 4th century until the Revolution finally dissolved it in the 18th, making it one of the oldest continuously religious sites in the Lyon region, host over that span to a long procession of ecclesiastical and lay notables the local record simply describes as celebrities of their era. The monks' garden, recently restored, keeps rare species and several genuinely centuries-old specimens today, and among them a single immense cedar of Lebanon stands out enough that visitors and local dendrological surveys single it out by name, though without giving it a specific measured age. No source dates the cedar's planting, so any age given here is a rough estimate rather than a documented figure, but a cedar of Lebanon reaching immense scale in a temperate French garden is consistent with a planting well over a century old, a species that can live a thousand years given the right conditions. The island itself, reached on foot over a footbridge from the Lyon quays, keeps a genuinely different, half-wild character from the rest of the city around it.",
@@ -236,7 +236,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source gives this cedar a documented planting date or measurement; described consistently as 'immense' rather than measured, so age here is a rough estimate rather than a verified figure.",
+      "notes": "No source gives this cedar a documented planting date or measurement; described consistently as 'immense' rather than measured, so age here is a rough estimate rather than a verified figure. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 2km from Île Barbe itself. Confirmed against Nominatim's own geocode of a named amenity inside the Jardin de l'Île Barbe (45.7970, 4.8313) and Wikipedia's stated coordinate for the island (45°47'52\"N 4°50'01\"E = 45.7978, 4.8336), which agree with each other within 250m; the stored pin sat nowhere near either. Moved onto the island; still approximate since no source gives the cedar's own position within the garden.",
       "location_precision": "approximate"
     },
     {
@@ -248,8 +248,8 @@
       "age_max": 113,
       "location": {
         "address": "Parc de la Cerisaie, Rue Chazière, 69004 Lyon",
-        "latitude": 45.782,
-        "longitude": 4.826,
+        "latitude": 45.776,
+        "longitude": 4.8165,
         "neighbourhood": "Croix-Rousse, 4th arrondissement"
       },
       "story": "This park takes its name from a cherry orchard that no longer exists, replaced just before the First World War by a very different planting scheme. Landscape architect René-Edouard André, son of the more famous Édouard André whose formal garden style shaped parks across France and beyond, designed Parc de la Cerisaie in 1913 on the Croix-Rousse hillside, centring the roughly 1,200-tree planting on a significant oak collection alongside birches, yews and beeches. That timing puts the park's founding trees at just over a century old today, planted the year before the war that would go on to reshape the neighbourhood and the city around them. No individual tree in the collection carries a separately documented age or measurement, so the range given here describes the park's own founding date rather than any single named specimen, consistent with how this project treats other undated group plantings. What survives is less a single monumental tree than a coherent, deliberately designed early 20th century woodland, unusually intact for a century-old civic planting scheme.",
@@ -266,7 +266,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Presented as an ensemble tied to the park's documented 1913 design date; no individual tree in the roughly 1,200-tree collection has a separately recorded age.",
+      "notes": "Presented as an ensemble tied to the park's documented 1913 design date; no individual tree in the roughly 1,200-tree collection has a separately recorded age. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1km from the actual park. Confirmed two independent ways, Nominatim's own geocode of Parc de la Cerisaie (45.7757, 4.8162) and of Rue Chazière itself (45.7764, 4.8168), agreeing within 100m of each other and both matching the 4th arrondissement/Croix-Rousse already stated here. Moved onto the park.",
       "location_precision": "approximate"
     },
     {

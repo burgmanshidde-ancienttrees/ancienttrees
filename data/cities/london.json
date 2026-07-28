@@ -194,13 +194,16 @@
     "label": "August, when it still fruits every summer despite four centuries of leaning"
    },
    "location": {
-    "address": "Charlton House, Charlton Road, London SE7 8RE",
-    "latitude": 51.4804,
-    "longitude": 0.0219,
+    "address": "Charlton House, Charlton Road, London SE7 7TH",
+    "latitude": 51.4807,
+    "longitude": 0.0371,
     "neighbourhood": "Charlton, South East London"
    },
    "story": "Planted around 1608 as part of King James I's ill-fated plan to establish a British silk industry. He ordered mulberry trees planted across England to feed silkworms. The plan failed because he accidentally ordered black mulberries, whose leaves silkworms refuse to eat. This tree, one of the survivors of that royal blunder, is now over 400 years old. It leans and sprawls dramatically, held up by wooden supports, and still produces fruit every summer.",
-   "verified_sources": [],
+   "verified_sources": [
+    "https://www.moruslondinium.org/research/charlton-house-heritage-mulberry",
+    "https://www.londonremembers.com/memorials/charlton-house-mulberry-tree-3"
+   ],
    "access": "Free, open grounds of Charlton House community centre",
    "transport": "Charlton rail station, 5 min walk",
    "photo": {
@@ -210,7 +213,7 @@
     "status": "approved"
    },
    "curation_status": "ai_generated",
-   "notes": "Source URLs need backfilling (original research cited Morus Londinium).",
+   "notes": "Source URLs backfilled 2026-07-28: Morus Londinium (a Woodland Trust/academic mulberry-mapping project) and London Remembers both corroborate the 1608 planting and James I connection independently. Location corrected the same pass: a systematic geocode audit flagged the stored coordinate as 1055m from Charlton House; Nominatim's own geocode of Charlton House, Charlton Road places it at 51.4807, 0.0371 (postcode SE7 7TH, not the stored SE7 8RE), matching this entry's own 'Charlton, South East London' neighbourhood. Fixed.",
    "location_precision": "confirmed"
   },
   {

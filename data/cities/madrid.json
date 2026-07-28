@@ -309,8 +309,8 @@
       "age_max": 240,
       "location": {
         "address": "El Capricho, Paseo de la Alameda de Osuna, 28042 Madrid",
-        "latitude": 40.459,
-        "longitude": -3.582,
+        "latitude": 40.4563,
+        "longitude": -3.598,
         "neighbourhood": "Barajas"
       },
       "story": "This stone pine grows half hidden among shrubs near a small hermitage called the Casa del Cura, the priest's house, in a park built for a duchess rather than a king. Maria Josefa Pimentel, Duchess of Osuna, commissioned El Capricho in 1784, hiring French landscape designers Jean-Baptiste Mulot and Pierre Provost to lay out French, English and Italian style gardens across fourteen hectares in what was then open countryside east of Madrid, now the Barajas district near the airport that shares its name. The pine likely dates from that same late 18th century construction period, making it a contemporary of the duchess's original vision rather than a later addition. Unlike Madrid's grander royal gardens, El Capricho suffered decades of neglect and, during the Spanish Civil War, served as a military command post, before the city restored it and reopened it to visitors in the 1990s. The pine survived all of it, one of the park's few catalogued singular trees and among the oldest living witnesses to the duchess's original 18th century design.",
@@ -327,7 +327,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Age is estimated from the park's known 1784-1839 construction period rather than a specific planting-date source. Coordinates are an estimate for El Capricho's general location near the Casa del Cura hermitage; no surveyed point was found.",
+      "notes": "Age is estimated from the park's known 1784-1839 construction period rather than a specific planting-date source. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1.4km from El Capricho. Nominatim's own geocode of the park's official name, \"Jardin historico El Capricho de la Alameda Osuna,\" places it at 40.4563, -3.5980, matching the Barajas neighbourhood already stated here. Moved onto the park; still approximate since no source gives the Casa del Cura hermitage's own position within it.",
       "location_precision": "approximate"
     }
   ]
