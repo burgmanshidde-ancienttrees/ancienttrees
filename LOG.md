@@ -40,6 +40,17 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Cadiz goes live: 35th city, 5 trees, second of three for the Europe city-trips collection
+
+Same session as Palermo below. Cadiz's public gardens are almost entirely non-native trees, a legacy of centuries as an Atlantic trading port: a fig from India, a dragon tree from the Canary Islands, a pohutukawa reported as Europe's oldest documented specimen of its species, an ombu from Argentina, a floss silk tree from Brazil.
+
+- A sixth candidate (a second fig site) was found but dropped rather than shipped: weaker sourcing, an internally inconsistent age claim, and a third same-species entry in one small city. Five solid trees beat six with one weak link.
+- The city's other, older dragon tree collapsed in a 2013 storm; this list's dragon tree is the last one standing in Cadiz.
+- 1 of 5 photos found and viewed directly; the rest genuinely missing after a real search, not guessed at.
+- All 5 pins are honestly approximate (park level, no per-tree registry available for Spain the way MASAF serves Italy).
+- Full detail in CURATION.md. Sintra is the last of the three pre-approved cities still needed before the collection itself can be assembled.
+- Site rebuilt (540 pages), all contracts validated, pushed.
+
 ## 2026-07-28 — Palermo goes live: 34th city, 8 trees, every pin confirmed from day one
 
 Same session as the MASAF-parser entry below. With the standard depth ladder genuinely exhausted for today and PRODUCT_TODO.md drained, moved to the one new-city work explicitly pre-approved by Hidde: Palermo, needed (with Cadiz and Sintra) to complete the "Top 10 tree city trips of Europe" collection.

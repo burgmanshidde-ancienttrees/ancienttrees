@@ -1,0 +1,186 @@
+{
+  "city": "Cadiz",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Cadiz spent centuries as a trading port to the Americas and the East, and its public gardens still read like a cargo manifest: a fig from India, a dragon tree from the Canary Islands, a pohutukawa from New Zealand, an ombu from the Argentine pampas, a floss silk tree from Brazil. Almost nothing in this list is native to Spain. Most of it clusters in two 19th century gardens built specifically to show off exactly this kind of imported curiosity, one on the seafront, one inland around a park the city still protects by name.",
+  "meta_description": "Cadiz's most remarkable trees: an Indian fig planted as a nun's memorial, the last dragon tree standing in the city, and Europe's oldest pohutukawa.",
+  "question_meta": "Cadiz's oldest confirmed tree is a 1903 fig on the Alameda Apodaca; a disputed 100-200 year dragon tree may be older. Full list of 5.",
+  "question_answer": "Cadiz's oldest tree with a documented planting date is the Ficus macrophylla of the Alameda Apodaca, planted in 1903 on the seafront promenade. The city's dragon tree in Parque Genoves may be older, estimated at 100 to 200 years, but no planting record confirms an exact date.",
+  "question_context": "Cadiz's remarkable trees come almost entirely from its history as a trading port rather than from any native old-growth woodland. The Alameda Apodaca's fig, planted in 1903, has the most specific documented date on this list, tied to a local legend about missionary nuns carrying saplings from India. Parque Genoves, an inland 19th century garden built specifically to display botanical imports, holds four more candidates, a dragon tree whose age is genuinely disputed between 100 and 200 years, a pohutukawa reported as the oldest documented specimen of its species in Europe, an ombu whose water-swollen trunk cannot be aged by growth rings at all, and a floss silk tree from South America. All are free to visit.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Cadiz?",
+      "a": "The Ficus macrophylla of the Alameda Apodaca, planted in 1903 on the seafront promenade. Parque Genoves' dragon tree may be older still, estimated at 100 to 200 years, but without a documented planting date."
+    },
+    {
+      "q": "Why are so many of Cadiz's trees not native to Spain?",
+      "a": "Cadiz was one of Spain's major Atlantic trading ports for centuries, and its 19th century public gardens were built specifically to display exotic species merchants and travellers brought home, a dragon tree from the Canary Islands, a pohutukawa from New Zealand, an ombu from Argentina, a fig from India."
+    },
+    {
+      "q": "What happened to Cadiz's other famous dragon tree?",
+      "a": "The Drago del Tinte, growing at a former arts and crafts school elsewhere in the city, collapsed in a storm in April 2013. The dragon tree in Parque Genoves is now the last one of any age standing in Cadiz."
+    },
+    {
+      "q": "Are Cadiz's remarkable trees free to see?",
+      "a": "Yes, all of them stand in free public gardens: the seafront Alameda Apodaca and the inland Parque Genoves, both open daily with no entry fee."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cad_001",
+      "name": "The Ficus of Alameda Apodaca",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "approximately 123 years",
+      "age_min": 120,
+      "age_max": 125,
+      "location": {
+        "address": "Alameda Apodaca, 11004 Cadiz",
+        "latitude": 36.536657,
+        "longitude": -6.296370,
+        "neighbourhood": "San Carlos"
+      },
+      "story": "Four fig saplings carried from India by missionary nuns are the origin story behind this tree and its three siblings scattered across Cadiz. One of the nuns died during the voyage and was nursed in her final days at the city's Hospital de Mora; the surviving sisters planted the saplings as a memorial, two here on the seafront Alameda and two more near the old hospital site. Planted in 1903, more than two decades before Juan Talavera y Heredia's regionalist redesign gave the Alameda its current look, the tree has since grown into something closer to a small grove than a single trunk, its lower branches sending down aerial roots that thicken into extra trunks over the flat marble terrace where it stands. Locals sometimes call the pair the Ficus Gemelos, the twin figs, though decades of divergent growth have left one visibly larger than the other. Cadiz's Atlantic wind is hard on a tree built this wide and this exposed, and its wood is known locally as brittle, prone to losing a branch when a storm comes through the bay. None has come down yet. The promenade it shades looks straight across the bay toward the mainland, a public garden with no entry fee and no fence around the roots.",
+      "verified_sources": [
+        "https://jardinessinfronteras.com/2019/01/16/arboles-monumentales-de-cadiz-los-ficus-macrophylla/",
+        "https://josecelestinomutis.cadiz.es/en/portfolio/los-dos-ficus-centenarios-que-se-encuentran-en-la-plaza-del-hospital-de-mora-2/",
+        "https://visitingcadiz.com/the-famous-strangler-figs-of-cadiz/"
+      ],
+      "access": "Free, public seafront garden",
+      "transport": "10 min walk from Cadiz train station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Ficus_alameda_2019An002.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Anual, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Species confirmed as Ficus macrophylla by a Cadiz-based botanist per Jardines Sin Fronteras; monumentaltrees.com labels it 'Rubber Fig' (usually Ficus elastica), checked for cross-reference only per hard rule 1 and treated as a likely generic mislabel rather than followed. Planting year (1903) and the nun/Hospital de Mora legend corroborated by two independent sources. Coordinates are the OSM place-level point for Alameda Apodaca, not a tree-specific survey; kept approximate rather than confirmed since the promenade is long and this marks the general viewpoint, not a verified exact trunk position. Photo viewed directly: an unmistakable huge fig with buttressed, thickened roots on a seafront marble terrace, balustrade and bay visible behind, matching the setting exactly.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cad_002",
+      "name": "The Dragon Tree of Parque Genoves",
+      "species": "Canary Islands Dragon Tree (Dracaena draco)",
+      "age_estimate": "estimated 100 to 200 years, genuinely disputed",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Parque Genoves, near the north entrance, 11002 Cadiz",
+        "latitude": 36.535744,
+        "longitude": -6.304335,
+        "neighbourhood": "Santa Barbara"
+      },
+      "story": "Cadiz used to have two famous dragon trees, then a storm took the roof off the wrong one. The Drago del Tinte, growing in a former arts and crafts school elsewhere in the city, collapsed in April 2013, leaving this specimen in Parque Genoves as the last dragon tree of any age left standing in Cadiz. Estimates for how old it actually is vary widely: the city's own parks department calls it simply centenario, over a hundred, while local guides put it as high as two hundred, and no planting record settles the question either way. What is certain is the shape, a squat grey trunk that branches only once it flowers, which for Dracaena draco can take decades, giving this specimen the umbrella silhouette that takes most dragon trees a lifetime to earn. It grows near the park's north entrance, in a garden laid out in the 19th century specifically to show off exotic imports from across the old Spanish trading network. The species itself is native to the Canary Islands and Macaronesia, not Cadiz, its sap once bottled and sold across Europe as sangre de drago, dragon's blood, a dye and a wound treatment.",
+      "verified_sources": [
+        "https://josecelestinomutis.cadiz.es/en/portfolio/dracaena-draco-2/",
+        "https://jardinessinfronteras.com/2022/03/04/el-parque-genoves-de-cadiz/",
+        "https://visitingcadiz.com/the-genoves-park-in-cadiz/"
+      ],
+      "access": "Free, public park",
+      "transport": "15 min walk from Cadiz train station, entrance on Avenida Doctor Gomez Ulla",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Existence and species confirmed independently by the Ayuntamiento de Cadiz's own parks pages and two independent Cadiz-focused sources; the 2013 collapse of the Drago del Tinte at the former Escuela de Artes y Oficios is separately confirmed (Andalucia Informacion, plus a Wikimedia Commons photo documenting it before the fall) and this tree is not confused with that one. Age is a genuine, unresolved source disagreement (100 vs 200 years), presented as a range rather than a picked figure. Location is park-level only ('near the north entrance'), no registry or survey point names this specific tree, so kept honestly approximate. No open-licensed photo found after checking Wikimedia Commons and iNaturalist (all iNaturalist observations near this location are CC-BY-NC or unlicensed, not usable under the CC0/CC-BY/CC-BY-SA rule).",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cad_003",
+      "name": "The Pohutukawa of Parque Genoves",
+      "species": "Pohutukawa (Metrosideros excelsa)",
+      "age_estimate": "reported as over a century, exact planting date undocumented",
+      "age_min": 100,
+      "age_max": 140,
+      "location": {
+        "address": "Parque Genoves, 11002 Cadiz",
+        "latitude": 36.535744,
+        "longitude": -6.304335,
+        "neighbourhood": "Santa Barbara"
+      },
+      "story": "A tree from the opposite side of the planet turns part of Cadiz crimson every early summer. This Metrosideros excelsa, a pohutukawa native to New Zealand's coastline, blooms in May and June with a mass of red flowers so consistent that New Zealanders call the species their Christmas tree, seven months out of sync with the Southern Hemisphere's own December summer. Spanish and international sources both describe it as the oldest documented pohutukawa anywhere in Europe, over a century old, a parent to cuttings that have gone on to seed the species in gardens across the continent. City arborists took no chances after it lost a branch in a winter storm: the parks department brought in a specialist firm to run a resistograph test and sound tomography on the trunk, then fitted a support structure, and Cadiz's own planning rules now protect it as a specimen of heritage value. It grows multi-trunked from the base, a shape more shrub than tree at first glance until the size of the individual limbs corrects that impression. Parque Genoves, the 19th century garden built to display exactly this kind of imported curiosity, gives it company: a dragon tree, an ombu, and a floss silk tree share the same grounds, each from a different continent, none native to Spain.",
+      "verified_sources": [
+        "https://jardinessinfronteras.com/2019/01/15/el-metrosidero-de-cadiz-propuesto-como-arbol-europeo-del-ano/",
+        "https://okdiario.com/naturaleza/arbol-europeo-mas-antiguo-especie-esta-cadiz-siempre-pasa-desapercibido-turistas-16106785"
+      ],
+      "access": "Free, public park",
+      "transport": "15 min walk from Cadiz train station, entrance on Avenida Doctor Gomez Ulla",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Species and 'oldest documented in Europe' claim reported independently by a Cadiz garden specialist blog and a national Spanish news outlet (okdiario), plus the Ayuntamiento de Cadiz's own news confirming a resistograph/tomography inspection and protective support structure after storm damage; the 'oldest in Europe' superlative is presented as reported/attributed rather than independently verified against a primary botanical register, per hard rule 8. Bloom timing (May-June) confirmed by two sources, qualifying for best_time. Location is park-level only, no exact tree survey point found, kept approximate. No open-licensed photo found (iNaturalist observations near this site are all CC-BY-NC or unlicensed).",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [5, 6],
+        "label": "May and June, when it blooms crimson"
+      }
+    },
+    {
+      "id": "cad_004",
+      "name": "The Ombu of Parque Genoves",
+      "species": "Ombu (Phytolacca dioica)",
+      "age_estimate": "undated, cannot be aged by growth rings",
+      "age_min": 50,
+      "age_max": 120,
+      "location": {
+        "address": "Parque Genoves, 11002 Cadiz",
+        "latitude": 36.535744,
+        "longitude": -6.304335,
+        "neighbourhood": "Santa Barbara"
+      },
+      "story": "This tree cannot be aged the normal way, because it does not grow the annual rings that make dating a trunk possible. Phytolacca dioica, the ombu, is technically an herbaceous plant that behaves like a tree, its trunk swollen not with wood but with water storing tissue soft enough that, unlike almost everything else in this park, it cannot be milled for lumber or dated by a cross section. What Cadiz's parks department can say is that it has stood in Parque Genoves long enough to reach a circumference of about five and a half metres and a height of nearly fifteen, a spongy grey mass of trunk that looks poured rather than grown. Native to the pampas of Argentina, Uruguay and southern Brazil, the ombu became a fixture of Spanish gardens the way palms and eucalyptus did elsewhere, brought back by a trading city that spent centuries filling its public spaces with whatever grew well in a similar climate somewhere else in the Spanish world. Its own bulk does the work other trees do with age or history: nobody needs telling this one is old, only shown its trunk. Free to see, alongside a dragon tree, a pohutukawa and a floss silk tree in the same 19th century garden.",
+      "verified_sources": [
+        "https://josecelestinomutis.cadiz.es/en/portfolio/phytolacca-dioica-2/",
+        "https://jardinesdelaoliva.wordpress.com/tag/parque-genoves-de-cadiz/"
+      ],
+      "access": "Free, public park",
+      "transport": "15 min walk from Cadiz train station, entrance on Avenida Doctor Gomez Ulla",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Species and location confirmed by two independent sources, including the Ayuntamiento de Cadiz's own parks department page, which also explains why the species cannot be dated by growth rings. Circumference (5.5m) and height (14.8m) figures surfaced via search snippet referencing monumentaltrees.com, used for verification only per hard rule 1, not copied as prose. No individual planting history exists for this species type, so age is presented as a wide, honest estimate rather than invented. Location is park-level only, kept approximate. No open-licensed photo found (iNaturalist observations near this site are CC-BY-NC or unlicensed only).",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cad_005",
+      "name": "The Floss Silk Tree of Parque Genoves",
+      "species": "Silk Floss Tree (Ceiba speciosa)",
+      "age_estimate": "undated",
+      "age_min": 40,
+      "age_max": 100,
+      "location": {
+        "address": "Parque Genoves, 11002 Cadiz",
+        "latitude": 36.535744,
+        "longitude": -6.304335,
+        "neighbourhood": "Santa Barbara"
+      },
+      "story": "Its name translates as the drunken stick, and one look at the trunk explains why. Ceiba speciosa, a floss silk tree from Argentina, Paraguay and southern Brazil, swells its bottle shaped trunk up to two metres across, studded with the conical thorns that in the wild deter animals from climbing it for water during the dry season. Cadiz's specimen grows in Parque Genoves, tucked behind the park's cafe near its fountain statue, a South American oddity planted alongside a dragon tree, a pohutukawa and an ombu in a 19th century garden built specifically to show off exactly this kind of imported curiosity. Like its neighbours, no planting record survives to date it precisely, only the trunk's own girth as evidence of age. When it flowers, usually toward autumn, the blooms come in shades of pink through white, briefly the showiest thing in a park that otherwise reads as a study in strange bark and stranger silhouettes. Free to visit, no ticket required, in a city whose 19th century merchants filled its public gardens with specimens from every port they traded through rather than sticking to anything native.",
+      "verified_sources": [
+        "https://josecelestinomutis.cadiz.es/en/portfolio/ceiba-speciosa-2/",
+        "https://visitingcadiz.com/the-genoves-park-in-cadiz/"
+      ],
+      "access": "Free, public park",
+      "transport": "15 min walk from Cadiz train station, entrance on Avenida Doctor Gomez Ulla",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Species and specific in-park location ('behind the cafe bar near the fountain statue') confirmed by two independent sources. No planting date documented anywhere found, so age is presented as a wide, honest estimate rather than invented; bloom month not confirmed precisely enough for Cadiz specifically to set a best_time field, so left unset rather than guessed. Location kept approximate at park level since the cafe/fountain landmark itself was not independently geocoded. No open-licensed photo found (iNaturalist observations near this site are CC-BY-NC or unlicensed only).",
+      "location_precision": "approximate"
+    }
+  ]
+}
