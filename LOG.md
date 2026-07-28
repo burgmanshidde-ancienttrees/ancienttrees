@@ -40,6 +40,17 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — A real fabrication caught and fixed in Venice; a 750m Granada pin correction; Istanbul's last two open leads closed for today
+
+Visitors: 65 visits, 99 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), rising toward the end of the week. No reader submissions.
+
+- **Venice's "century-old Cedar of Lebanon" (ven_003) turned out to be a fabrication.** Its two cited sources, checked directly, never mention a cedar at all. The real, sourced story is better: three young Cedars of Lebanon planted January 2008, carried from the Cedars of God forest in Lebanon by a Venice art student as a pilgrimage between two communities shaped by exile. Rewrote the entry to the true age (about 18 years) and story, same id, labelled "Recent planting, ancient provenance" so nobody expects an old trunk, same pattern as Lisbon's rubber tree.
+- **Granada's Generalife sequoia pin (gra_002) moved about 750m** to "Patio de la Guardia", where two independent sources (an iNaturalist field label and an OSM POI name, converging within 130m of each other) agree the trees actually stand. Upgraded to confirmed.
+- Istanbul's two remaining open leads from earlier today are now closed: `anitagaclar.gov.tr` is still unreachable from this environment, and the one CC-BY photo candidate near the Taşlı Çınar turned out to be a different tree at the Archaeology Museum, correctly declined.
+- Amsterdam and Lisbon, the site's other two below-floor lead cities, weren't re-touched: both are documented exhausted across many passes earlier today, and re-running the same searches would be the looping CLAUDE.md warns against.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Kyoto clears the depth-exit-test bar: 6 of 8 lead cities now pass
 
 Same session as the two entries below. Kyoto (7/10 photos) was one photo short, with two long-flagged near-miss cherry-tree photo candidates from prior sessions. **The Taiko Weeping Cherry of Daigo-ji gets a real, directly-viewed photo**: Commons' dedicated "Sakura at Sanbō-in" subcategory (not the general temple sakura category) holds one photoset of an old, gnarled, bamboo-propped weeping cherry matching this entry's own story almost exactly, CC BY-SA 2.0. **Kyoto now at 8/10 photos, clears the depth-exit-test floor.** That makes 6 of 8 lead cities passing (Tokyo, Paris, London, Barcelona, Rome, Kyoto); Amsterdam, Lisbon and Istanbul remain short and are documented exhausted for today's techniques. Kamigamo Shrine's other flagged candidate (the Emperor's Gift Cherry) got a real photo lead too, but it turned out to be a generic meadow shot of many young ornamental cherries with no tie to the specific named pair, correctly declined rather than guessed.
