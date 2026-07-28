@@ -15,6 +15,8 @@ Five categories touch the product. Figures are from public sources, 2025.
 | Atlas Obscura | curated curious places | profitable, "Been There" tracking | curation and collecting |
 | Seek / iNaturalist | nature collecting | gamified, "real-life Pokemon Go" | the collection mechanic |
 
+**The MonumentalTrees statement, as Hidde put it 2026-07-28, replacing the untested "using it is miserable":** no iOS app and a very dated UX, which is where we can beat them; and zero curation, which cuts both ways: it makes them the complete reference (a real strength) and overwhelming for a visitor who just wants a good afternoon (our opening). Their completeness plus our curation is the honest framing, not their inferiority.
+
 **Nobody occupies our exact spot.** Each has one axis. PictureThis has plant data but no destination. AllTrails has routes but the tree is a waypoint, never the goal. Atlas Obscura has curation and collecting but across all curious places, trees are a fraction. Seek gamifies identification, not a curated walk. The intersection (curated + story + destination + collectible, for trees) is genuinely empty.
 
 ## What we can learn, functionally
