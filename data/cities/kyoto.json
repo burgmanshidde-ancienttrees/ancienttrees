@@ -81,13 +81,13 @@
       "access": "Paid entry to Kinkaku-ji",
       "transport": "Kyoto City Bus 101/205 to Kinkakuji-michi, 3 min walk",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Rikushu-no-matsu_pine_tree_in_Rokuonji_Temple.JPG/1024px-Rikushu-no-matsu_pine_tree_in_Rokuonji_Temple.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Rikushu-no-matsu_pine_tree_in_Rokuonji_Temple.JPG",
         "license": "CC BY-SA 4.0",
         "attribution": "そらみみ (Soramimi), Wikimedia Commons",
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "OpenStreetMap carries a contributor-mapped, survey-sourced node named \"陸舟の松\" (Rikushu Pine) at this spot, matching the tree's own name exactly.",
+      "notes": "OpenStreetMap carries a contributor-mapped, survey-sourced node named \"陸舟の松\" (Rikushu Pine) at this spot, matching the tree's own name exactly. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/8/8e/...) 404'd, caught by a full site-wide hash-path check against Commons' API; the real current path is 4/4f. Fetched and viewed directly, the same boat-shaped trained pine beside Kinkaku-ji's roofline, before swapping.",
       "location_precision": "confirmed"
     },
     {

@@ -81,13 +81,13 @@
       "access": "Free, Park Guell's monumental zone charges general admission; the viaducts are within the free-access wooded area",
       "transport": "Lesseps (Metro L3), 15 min walk uphill",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Tronc_d%27arbre_al_mig_de_columnes_del_Parc_G%C3%BCell.jpeg/1024px-Tronc_d%27arbre_al_mig_de_columnes_del_Parc_G%C3%BCell.jpeg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Tronc_d%27arbre_al_mig_de_columnes_del_Parc_G%C3%BCell.jpeg",
         "license": "Public domain",
         "attribution": "Josep Maria Armengol i Bas (1865-1941), Wikimedia Commons, photographed September 1904",
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Access note needs on-the-ground confirmation: sources describe the viaducts as being in Park Guell's freely accessible wooded perimeter rather than the ticketed Monumental Zone, but this should be double-checked against current park signage before publishing with full confidence. Photo is historical (1904), not a modern photograph. Included because it is confirmed to be this specific tree and clearly dated, not because it shows the tree's current appearance.",
+      "notes": "Access note needs on-the-ground confirmation: sources describe the viaducts as being in Park Guell's freely accessible wooded perimeter rather than the ticketed Monumental Zone, but this should be double-checked against current park signage before publishing with full confidence. Photo is historical (1904), not a modern photograph. Included because it is confirmed to be this specific tree and clearly dated, not because it shows the tree's current appearance. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/e/e2/...) 404'd, caught by a full site-wide hash-path check against Commons' API; the real current path is 0/0a. Fetched and viewed directly, the same 1904 stereoscopic photo of a tree trunk between the viaduct's stone arches, before swapping.",
       "location_precision": "confirmed"
     },
     {
