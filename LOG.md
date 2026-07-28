@@ -40,6 +40,15 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Edinburgh (UK, the focus region) and Venice: pins tightened, honestly still approximate
+
+Same session. Edinburgh had all 10 trees on approximate pins; as a UK city it's the top depth priority per CLAUDE.md's focus-region rule. Venice was in the same shape and already had its photo gaps exhausted in prior sessions, so this pass targeted pins.
+
+- **Edinburgh**: 2 pins tightened (Camperdown Elm of St Cuthbert's, Corstorphine Sycamore), each moved 110-170m to the church's own geocoded location. Now 8/10 approximate (from 10/10). The other 8 stayed genuine dead ends, and no new photo cleared the bar; two near-miss photos were correctly rejected on caption grounds (they showed a different specimen at RBGE, not the tree in question). Overpass API was blocked throughout this session, which is probably why individual-tree-level UK data wasn't reachable; worth retrying.
+- **Venice**: 4 pins nudged toward better-sourced map centroids (park/island/garden boundaries), one candidate deliberately not applied because the only lead found couldn't be confirmed as the specific named tree and moving toward an unconfirmed match risked making the pin worse, not better.
+- Full per-tree detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Granada, the site's worst-covered city, gets two photos and a tightened pin
 
 Same session. Granada had every one of its 10 trees on an approximate pin plus only 1 photo, the worst combination on the site, so it jumped ahead of the strict oldest-first order for one pass.

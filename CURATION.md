@@ -1,3 +1,21 @@
+## 2026-07-28 — Edinburgh (UK focus region) and Venice: pin-tightening pass, no photo gains, all changes stay honestly approximate
+
+Edinburgh sat at 10/10 approximate pins, the UK being the project's top-priority focus region per rung 4. Venice was in the same shape (10/10 approximate) with photo-hunting already exhausted in prior sessions, so this pass targeted pins only for Venice and pins-plus-photos for Edinburgh.
+
+**Edinburgh: 2 of 10 pins tightened, 0 photos found.**
+- **edi_007 (Camperdown Elm of St Cuthbert's)**: moved ~160-170m to the church's own OSM/Nominatim geocode, which suggests the earlier pin actually sat in Princes Street Gardens rather than at the church itself.
+- **edi_010 (Corstorphine Sycamore)**: moved ~110-150m to the church's own OSM/Nominatim geocode, cross-checked against Historic Environment Scotland's listing for the same building.
+- Both stay `approximate`: a building-address point, not a tree-specific one, since Overpass API was rate-limited/blocked throughout this session (worth retrying with a working Overpass connection, since UK sites are often well-mapped at the individual-tree level when the query actually runs).
+- The other 8 trees (Craigmillar Castle Yews, Sweet Chestnut and Cedar of Lebanon at the Botanics, Cammo Ash, Monkey Puzzles of Lauriston Castle, Wentworth Elms of Holyroodhouse, Rockface Sycamore of Cramond, Tall Trees of the Hermitage of Braid) stayed genuine dead ends on pins. No photo cleared the bar for any of the 6 gaps: several near-miss candidates were correctly rejected on caption grounds (a Geograph Corstorphine sycamore photo turned out to be RBGE's separate conservation specimen, not the churchyard tree; a Lauriston Castle monkey puzzle iNaturalist observation sits ~560m away in a neighbourhood where the species is a common street tree independent of the castle). Two access limitations worth knowing for a future pass: `trove.scot` (Canmore's new host) blocks automated fetches with 403, and several council/heritage PDF site-plans (Cramond, Hermitage of Braid) failed with connection resets rather than confirmed absence.
+- Edinburgh stays at 4/10 photos, now 8/10 approximate pins (from 10/10).
+
+**Venice: 4 of 10 pins tightened (modest, all still approximate), 1 held back on identity risk.**
+- ven_002 (San Michele cemetery cypresses), ven_005 (Certosa black poplar), ven_008 (Villa Groggia hackberries, the standout at ~400m from a district-level guess to the park's own mapped boundary), and ven_009 (Ca' Zenobio garden) all moved to better-sourced OSM polygon/relation centroids, each still ensemble- or property-level rather than a single specimen's surveyed point.
+- **ven_006 (San Servolo olive) deliberately NOT moved**: a real geotagged iNaturalist olive observation exists 180m from the current pin, but the garden may hold more than one olive and nothing confirms this is specifically the named century-old specimen. Moving the pin toward an unconfirmed match risked making it less accurate, not more, so it was left as-is. Worth a future pass if a source ever names which olive is the old one.
+- ven_001, ven_003, ven_004, ven_007, ven_010 confirmed as already at the best achievable precision (island/garden geometric centers, already matching or near their OSM polygon centroids).
+- One content flag surfaced in passing, unrelated to pins: ven_003's currently-cited verification source (italianbotanicalheritage.com) doesn't actually mention a Cedar of Lebanon in its text, describing an Araucaria and a pomegranate instead. Worth a source re-check in a future pass.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Granada, the worst-covered city on the site (10/10 approximate pins, 1/10 photos): two photos found and approved, one pin tightened, a species discrepancy flagged
 
 Granada had every one of its 10 trees on an approximate pin and only 1 photo, the worst combination on the whole site. Most of its trees sit inside or near the Alhambra/Generalife complex, which turned out to help: UNESCO-adjacent gardens are better mapped and better photographed than an ordinary city park.

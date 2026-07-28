@@ -65,8 +65,8 @@
       "age_max": 213,
       "location": {
         "address": "Cimitero di San Michele, Isola di San Michele, 30121 Venezia",
-        "latitude": 45.44698,
-        "longitude": 12.34630,
+        "latitude": 45.4466494,
+        "longitude": 12.3456381,
         "neighbourhood": "San Michele in Isola"
       },
       "story": "Venice's dead live on an island of their own, and the cypresses that ring it are the first thing anyone sees crossing the lagoon toward it. The idea was Napoleon's: his 1804 Edict of Saint-Cloud banned burial within cities for public health reasons, and Venice, unable to bury its dead on land it did not have, chose the island of San Cristoforo della Pace, merging it with the neighbouring islet of San Michele in stages between 1813 and 1839. Architect Giannantonio Selva, who had designed the Napoleonic Gardens across the lagoon a few years earlier, laid out the cemetery's original plan, and cypress became its signature planting, a tree with its own funerary tradition stretching back to antiquity. No individual tree here carries a published planting date or measurement, so the exact age of any specimen standing today is unverified, but the dark spires visible above the cemetery's brick walls have been part of the approach to Venice for close to two centuries. Ezra Pound, Igor Stravinsky and Joseph Brodsky are buried among them.",
@@ -83,7 +83,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Presented as an ensemble: the cemetery's 1813-1839 construction is well documented, but no source dates any individual cypress. An earlier candidate (File:Cimitero_san_michele_venezia_10.jpg) was rejected for showing only grave sections. A second candidate, File:Isola di San Michele (50444433737).jpg, was viewed directly this pass and also rejected: it shows a magnolia-like tree and statues inside a cloister courtyard, not the cypress-ringed waterfront the story describes. No cypress photo found yet.",
+      "notes": "Presented as an ensemble: the cemetery's 1813-1839 construction is well documented, but no source dates any individual cypress. An earlier candidate (File:Cimitero_san_michele_venezia_10.jpg) was rejected for showing only grave sections. A second candidate, File:Isola di San Michele (50444433737).jpg, was viewed directly this pass and also rejected: it shows a magnolia-like tree and statues inside a cloister courtyard, not the cypress-ringed waterfront the story describes. No cypress photo found yet. Pin tightened 2026-07-28 to the cemetery's own mapped OSM polygon centroid (~65m from the earlier estimate); still ensemble-level, since no source dates or locates any individual cypress.",
       "location_precision": "approximate"
     },
     {
@@ -155,8 +155,8 @@
       "age_max": 200,
       "location": {
         "address": "Isola della Certosa, 30122 Venezia",
-        "latitude": 45.43430,
-        "longitude": 12.37344,
+        "latitude": 45.4343794,
+        "longitude": 12.3747016,
         "neighbourhood": "Certosa"
       },
       "story": "This poplar stands alone in the middle of what is effectively an accidental nature reserve. The Certosa takes its name from a Carthusian monastery founded here in 1424, abandoned under Napoleon, then used for over a century as a military store and firing range before the Italian army finally left in 1997. Left to itself for decades, the 22 hectare island grew wild: stands of white poplar, black poplar and ash now cover ground that soldiers once marched across, described by the site's own conservation literature as one of few places where the lagoon's original sandy-soil vegetation can still be studied directly. The black poplar growing at the heart of this wild wood is repeatedly singled out in local sources as one of the largest of its kind rooted in the island's sandy ground, though none gives it a specific age or trunk measurement, so its exact age is unverified. A public urban park opened on part of the island in 2013, and the whole site is now open from dawn to sunset, a quiet contrast to the crowds a ten minute boat ride away.",
@@ -173,7 +173,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source gives this specific poplar a measured age; described consistently as 'gigantic' and among the largest specimens on the island, treated here as an unverified age range rather than a claimed superlative.",
+      "notes": "No source gives this specific poplar a measured age; described consistently as 'gigantic' and among the largest specimens on the island, treated here as an unverified age range rather than a claimed superlative. Pin nudged 2026-07-28 to the island's own OSM polygon centroid (~100m from the earlier estimate), a textually-justified proxy since multiple sources independently describe the tree as standing in the middle of the island's wood; not a surveyed point for the tree itself.",
       "location_precision": "approximate"
     },
     {
@@ -245,8 +245,8 @@
       "age_max": 150,
       "location": {
         "address": "Parco di Villa Groggia, Fondamenta Riformati 3161, Cannaregio, 30121 Venezia",
-        "latitude": 45.4508,
-        "longitude": 12.3308,
+        "latitude": 45.4480049,
+        "longitude": 12.3276679,
         "neighbourhood": "Sant'Alvise, Cannaregio"
       },
       "story": "Two hackberries, the species Milan nicknames spaccasassi, the stone-splitter, for roots strong enough to crack paving, line the path toward a small theatre that has outlived every building that once stood around it. The land was part of the 16th century Palazzo Donà estate, then a working orchard and garden, before the palazzo itself was demolished in 1823 for building material. Giuseppe Groggia built the villa and its romantic-style park toward the end of the 19th century, complete with artificial hills and a Neo-Gothic teatrino from around 1913, and when the family later donated the property, the city took over its upkeep. The garden today is one of the few in Venice with genuinely free, unrestricted public access, a contrast to the palace gardens elsewhere on this list that open only on schedule or by appointment. The two Celtis australis trees along its main path have no individually documented planting date, so their exact age is unverified, but their scale suggests they belong to the villa's original 19th century planting rather than a later addition.",
@@ -263,7 +263,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source gives the two hackberries a specific planting date; age range is an estimate based on the villa's own late-19th-century construction. Coordinates are an approximation for the Sant'Alvise district, since no source gave the park's own precise GPS position.",
+      "notes": "No source gives the two hackberries a specific planting date; age range is an estimate based on the villa's own late-19th-century construction. Pin corrected 2026-07-28 from a district-level estimate for Sant'Alvise (~400m off) to the park's own mapped OSM boundary centroid, a real improvement though still park-level rather than pinned to the two specific trees.",
       "location_precision": "approximate"
     },
     {
@@ -275,8 +275,8 @@
       "age_max": 200,
       "location": {
         "address": "Ca' Zenobio degli Armeni, Fondamenta del Soccorso 2596-2598, Dorsoduro, 30123 Venezia",
-        "latitude": 45.4336,
-        "longitude": 12.3208,
+        "latitude": 45.433318,
+        "longitude": 12.3208574,
         "neighbourhood": "Dorsoduro"
       },
       "story": "One of the last big private gardens in Venice survives attached to a palace that changed hands three times without ever losing its garden. Ca' Zenobio was completed in 1690 for the Zenobio family from Verona, passed later to the Albrizzi family, and eventually became a college for Armenian Mekhitarist monks under the name Moorat-Raphael. The garden reached its current romantic layout in the 19th century, when its formal Baroque geometry was reworked into winding paths, small artificial hills and bridges, planted with yews, laurels, cypresses, hackberries and a row of black locusts leading to a neoclassical loggia. No individual tree here carries a documented age or measurement, so any figure is an estimate rather than a verified fact, but the 19th-century redesign gives a reasonable upper bound. Access is not constant: the garden opens mainly during temporary exhibitions and events hosted at the palace, including Biennale collateral shows in some years, so a visit takes some planning rather than a simple walk-in.",
@@ -293,7 +293,7 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Photo viewed directly: shows the garden's gravel path flanked by cypresses, a palm and statuary leading to the palazzo, a representative view of the garden ensemble this entry describes rather than a single named tree. Approved.",
+      "notes": "Photo viewed directly: shows the garden's gravel path flanked by cypresses, a palm and statuary leading to the palazzo, a representative view of the garden ensemble this entry describes rather than a single named tree. Approved. Pin nudged 2026-07-28 to the garden/building's own OSM relation centroid (~30m from the earlier street-address estimate).",
       "location_precision": "approximate"
     },
     {
