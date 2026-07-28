@@ -95,8 +95,8 @@
       "age_max": 205,
       "location": {
         "address": "Piazza Minghetti, 40124 Bologna",
-        "latitude": 44.4919576,
-        "longitude": 11.3453573,
+        "latitude": 44.492053,
+        "longitude": 11.345308,
         "neighbourhood": "Quadrilatero"
       },
       "story": "At 39.5 metres, this plane is the tallest of any monumental tree catalogued anywhere in Bologna's province, rising directly behind the bronze statue of the 19th century statesman Marco Minghetti that gives the square its name and its own local nickname for the tree, the guardian of the piazza. Its trunk measures 455cm around, respectable but not exceptional for a plane tree this old, which makes the height the genuinely remarkable figure: two centuries of growth in a confined city square, competing for light against surrounding buildings rather than spreading wide the way an open-park specimen might. The statue it now shades, sculpted by Giulio Monteverde and unveiled in 1896, commemorates a politician who served as Italy's Prime Minister in the 1860s, a piece of civic memory considerably younger than the tree standing over it. Piazza Minghetti sits inside Bologna's Quadrilatero, the tight medieval grid of streets and market stalls just east of Piazza Maggiore, making this one of the easiest monumental trees in the city to combine with an ordinary walk through the historic centre.",
@@ -113,8 +113,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Height (39.5m) and circumference (455cm) corroborated across two independent sources, including the 'tallest monumental tree in the province' superlative, presented as sourced rather than independently verified against a full provincial register. Photo verified directly: shows the Minghetti statue directly in front of the described plane tree canopy, an exact match to the square and story. Pin tightened 2026-07-27: the only Platanus tree node OpenStreetMap maps in the piazza sits about 17m from the prior address-level estimate; kept `approximate` since the node itself carries no name or registry reference tying it individually to this tree.",
-      "location_precision": "approximate"
+      "notes": "Height (39.5m) and circumference (455cm) corroborated across two independent sources, including the 'tallest monumental tree in the province' superlative, presented as sourced rather than independently verified against a full provincial register. Photo verified directly: shows the Minghetti statue directly in front of the described plane tree canopy, an exact match to the square and story. Pin tightened 2026-07-27: the only Platanus tree node OpenStreetMap maps in the piazza sits about 17m from the prior address-level estimate; kept `approximate` since the node itself carried no name or registry reference tying it individually to this tree. Upgraded to confirmed: Italy's official AMI national monumental-trees register lists a 'Platano comune' at Piazza Minghetti itself (record naming the exact square, species matching London Plane), read with a purpose-built binary XLS parser and independently landing about 11m from the already-tightened OSM node, two independent sources converging on the same point.",
+      "location_precision": "confirmed"
     },
     {
       "id": "bol_004",
