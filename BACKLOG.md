@@ -33,7 +33,9 @@ His framing, verbatim in spirit: AllTrails is clear, you go hiking and need a ro
 4. **Worth-signal** (future, flywheel): "was the visit worth it" per tree versus completed walks, once the tap exists.
 5. **The top-10 trips collection** (soon): if trip pages outperform city pages on engagement, walk-weight rises.
 
-**Checkpoint: mid-September 2026, right after the Japan trip.** A session with Hidde reads streams 1-5 and either settles the question or explicitly extends the open state. Runs: gather, never decide this one.
+**Sibling question, added by Hidde later the same day: is ten enough, or does walking need ten per DISTRICT in a megacity?** His Tokyo framing: every wijk could carry ten; one ten for all of Tokyo starves the walk. The session's argued position (Hidde has read it): the cap of ten stays sacred per collecting unit; the fix for megacities is redefining the UNIT (district pages: Setagaya's ten, Ueno's ten, with "Tokyo complete" as the badge above them), never raising the cap and never the previously rejected two-tier model. The clustering data already quantifies the problem (Tokyo's best walkable cluster: 3 of 10 trees). Evidence stream: the same Japan trip; Tokyo is literally on his route with this question in his pocket.
+
+**Checkpoint: mid-September 2026, right after the Japan trip.** A session with Hidde reads streams 1-5 and settles BOTH questions (tree-first vs walk-first, and the megacity unit) or explicitly extends the open state. Runs: gather, never decide this one.
 
 ## A nicer sign-in email (Hidde, 2026-07-28, explicitly not important now)
 
