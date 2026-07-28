@@ -48,13 +48,13 @@
       "access": "Free, public park",
       "transport": "Retiro (Metro L2) or Puerta de Alcala, 5 min walk",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Ahuehuete_porte.JPG/1024px-Ahuehuete_porte.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Ahuehuete_porte.JPG",
         "license": "Public domain",
         "attribution": "UAM Biblioteca y Archivo, Wikimedia Commons",
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Age is presented as a range because sources genuinely and substantially disagree (1633 legend vs. post-1814 estimates from city technicians), per the site's honesty standard rather than picking one figure. Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 4565394685, \"Ahuehuete del Parterre\"), which independently corroborates a Comunidad de Madrid singular-tree ficha reporting near-identical coordinates (40.41564, -3.68798) for the same tree.",
+      "notes": "Age is presented as a range because sources genuinely and substantially disagree (1633 legend vs. post-1814 estimates from city technicians), per the site's honesty standard rather than picking one figure. Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 4565394685, \"Ahuehuete del Parterre\"), which independently corroborates a Comunidad de Madrid singular-tree ficha reporting near-identical coordinates (40.41564, -3.68798) for the same tree. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/e/e4/...) 404'd, a genuine dead link caught by a site-wide approved-photo spot-check, not just a rate limit; Commons' own API gives this exact filename's real path as f/f2, fetched and viewed directly there to confirm it is still the same fenced, multi-trunked Ahuehuete before swapping the URL.",
       "location_precision": "confirmed"
     },
     {
