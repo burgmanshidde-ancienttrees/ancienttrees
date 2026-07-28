@@ -40,6 +40,18 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Palermo goes live: 34th city, 8 trees, every pin confirmed from day one
+
+Same session as the MASAF-parser entry below. With the standard depth ladder genuinely exhausted for today and PRODUCT_TODO.md drained, moved to the one new-city work explicitly pre-approved by Hidde: Palermo, needed (with Cadiz and Sintra) to complete the "Top 10 tree city trips of Europe" collection.
+
+- Seeded research with Sicily's MASAF register before searching anything else, which meant every one of Palermo's 8 trees launched with an official government GPS coordinate rather than needing later passes to tighten approximate pins, a first for a new city on this site.
+- The city's own giant fig, in Piazza Marina, is currently fighting a fungal infection that has cost it half its canopy since 2016. Its parent tree in the Orto Botanico (planted 1845, placed 4th in European Tree of the Year 2023) is healthy. Both facts are stated plainly rather than glossed over.
+- One of the 8 is the Falcone Tree, a fig outside assassinated judge Giovanni Falcone's home that Palermo has covered in memorial messages every 23 May since his 1992 murder.
+- 6 of 8 photos found and viewed directly before approval; 2 genuinely missing after a real search, recorded rather than guessed at.
+- Shipped honestly at 8 trees, not padded to 10.
+- Full detail in CURATION.md. Cadiz and Sintra still need full research passes before the collection itself can be assembled.
+- Site rebuilt (530 pages), all contracts validated, pushed.
+
 ## 2026-07-28 — A new technique unlocks Italy's national tree register: 3 real pin corrections (Rome, Bologna, Verona), all upgraded to confirmed
 
 Visitors: 66 visits, 100 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), rising toward the end of the week. No reader submissions, site healthy, nothing published found wrong. Re-checked (rather than trusted) the three leads earlier sessions today flagged as "unexplored, not exhausted": all three are now confirmed genuinely dead (the Istanbul gov.tr domain still refuses connections, Commons' SPARQL endpoint still demands OAuth login, and the Andalucia KML register turns out to be scoped to non-urban land and doesn't cover Malaga or Granada).
