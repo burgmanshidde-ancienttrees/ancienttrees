@@ -125,16 +125,17 @@
       "age_min": 98,
       "age_max": 105,
       "location": {
-        "address": "Plaza de Gracia, 18002 Granada",
-        "latitude": 37.1727,
-        "longitude": -3.6045,
+        "address": "Palacio de los Yanguas, Calle Gracia 48, 18002 Granada",
+        "latitude": 37.1735,
+        "longitude": -3.6043,
         "neighbourhood": "Centro"
       },
-      "story": "Four Mexican fan palms tower over Plaza de Gracia, planted in 1923 to mark the completion of the Archbishop's Palace that still faces them across the square, a building whose own main facades otherwise look toward the cathedral rather than this quieter plaza behind it. Washingtonia robusta grows faster and taller than almost any other palm cultivated in southern Spain, capable of clearing 30 metres given a century, and this quartet has had almost exactly that long: over 100 years of growth in one of Granada's older civic squares, planted deliberately rather than surviving by accident, the way many of the city's oldest trees have. The species takes its genus name from Washington and its specific name from its robust trunk, an American import that became fashionable across southern European cities in the early 20th century for exactly the effect it produces here, four columns of green rising well above the surrounding rooftops, visible long before the palace itself comes into view.",
+      "story": "Four Mexican fan palms tower over Plaza de Gracia, planted in 1923 the year construction finished on the Palacio de los Yanguas, the building bordering the square behind a garden wall on Calle Gracia. Architect Fernando Wilhelmi built it between 1920 and 1925 for the family of the Marquis of Casablanca; it later became the seat of Granada's Diocesan Curia, the archdiocese's administrative offices, which is why it is still known locally as the Archbishop's palace even though it was never built as one. Washingtonia robusta grows faster and taller than almost any other palm cultivated in southern Spain, capable of clearing 30 metres given a century, and this quartet has had almost exactly that long: over 100 years of growth, planted deliberately rather than surviving by accident, the way many of the city's oldest trees have. The species takes its genus name from Washington and its specific name from its robust trunk, an American import that became fashionable across southern European cities in the early 20th century for exactly the effect it produces here, four columns of green rising well above the surrounding rooftops. Visible from across the square is as close as most visitors get, since the palace's own garden is not open to the public.",
       "verified_sources": [
-        "https://wastemagazine.es/arboles-singulares-granada.htm"
+        "https://wastemagazine.es/arboles-singulares-granada.htm",
+        "https://www.degranada.net/zonas/palacio-de-los-yanguas-actual-curia-diocesana/"
       ],
-      "access": "Free, public square",
+      "access": "Free, public square; the palms stand inside the Diocesan Curia's own garden and are viewed from the plaza, not entered",
       "transport": "5 min walk from the Cathedral",
       "photo": {
         "url": null,
@@ -142,8 +143,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "curation_status": "flagged",
-      "notes": "Single-sourced: only one dedicated article (a magazine survey of Granada's singular trees) documents the 1923 planting date and the palace connection; no independent second source found despite a genuine search. Kept per the project's standard for single-sourced institutional claims where the underlying facts are plausible and verifiable in kind, flagged honestly rather than dropped. No usable photo found.",
+      "curation_status": "ai_generated",
+      "notes": "Previously single-sourced (wastemagazine.es only); degranada.net independently corroborates the building's identity, 1920-1925 construction, architect Fernando Wilhelmi and the Marquis of Casablanca commission, resolving the earlier flag. Coordinates tightened about 90m to the Palacio de los Yanguas building point recorded in Andalusia's official heritage register (IAPH, Guia Digital del Patrimonio Cultural, entry i21771, mirrored on Wikidata Q97604286); still a building point rather than a survey of the palms themselves, so precision stays approximate. Granada's own municipal park register (granada.org) separately lists 11 Phoenix canariensis within the public Plaza de Gracia park itself, a different planting from these four Washingtonia robusta inside the palace grounds next door, not a species conflict with this entry. No usable photo found despite a genuine search.",
       "location_precision": "approximate"
     },
     {
