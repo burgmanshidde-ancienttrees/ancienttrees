@@ -236,8 +236,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Pin tightened 2026-07-27, about 170m: Turkey's national monumental-tree GIS layer (services5.arcgis.com/26ObnytmBZ58Wbj8, feature service turkiye_anit_agaclari) carries a Pinus pinea in Üsküdar aged exactly 397 years, matching this entry's own age figure precisely, though its recorded circumference (520cm) doesn't cleanly match the '145cm across' (roughly 455cm circumference) already sourced here, so kept approximate rather than confirmed on an imperfect measurement match.",
-      "location_precision": "approximate"
+      "notes": "Upgraded to confirmed 2026-07-28: re-queried Turkey's national monumental-tree GIS layer (services5.arcgis.com/26ObnytmBZ58Wbj8, feature service turkiye_anit_agaclari) directly for its trunk-diameter field (govde_capi) rather than circumference, since the two are different measurements of the same tree. Feature OBJECTID 754, a Pinus pinea in Üsküdar, carries agac_yasi=397 (exact match to this entry's age) and govde_capi=145 (exact match to '145 centimetres across'), and its own coordinates (41.018625, 29.067384) land within about 3 metres of the pin already stored here. The 2026-07-27 note's '520cm circumference doesn't match' concern was comparing the wrong field; the diameter field matches exactly. The registry's own photo (anadoluanitagaclar.com) was not used: the site returned no reachable terms-of-use page to verify an open licence, so treated as verification-only, same as monumentaltrees.com.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ist_008",
