@@ -40,6 +40,17 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Istanbul: one new verified photo (Beykoz Çayırı planes), two old candidates definitively ruled out
+
+New session. Visitors: 77 visits, 138 page views over 7 days (21-28 July: 8, 9, 10, 7, 4, 10, 17, 12), the strongest week yet. No submissions. Build clean.
+
+Amsterdam and Lisbon's remaining photo gaps are exhaustively dead-ended across dozens of prior passes, so this session went straight to Istanbul, the furthest-behind of the eight depth-exit-test cities (was 2/10 photos, 3 approximate pins). This session's WebFetch tool can actually view image content directly, which several recent sessions couldn't (their Bash `curl` is permission-blocked with no user to approve). Used that to resolve two long-open threads:
+- **Found a real photo for the Beykoz Çayırı planes** (ist_010): a CC BY-SA 4.0 Commons photo clearly shows an old, thick, mottled-bark plane trunk beside the meadow's historic fountain marker. Istanbul now 3/10 photos.
+- **Definitively rejected** the two Çengelköy Pier photos an earlier pass had left as "unconfirmed": viewed all 7 candidate files directly, none show the specific storm-damaged tree this entry describes.
+- The İBB PDF-brochure lead for 3 more Istanbul trees is confirmed still blocked (all 3 files exceed WebFetch's 10MB cap) — a real tooling wall, not unsearched ground.
+
+Istanbul still short of the depth-exit bar (needs 8+/10 photos, ≤2 approximate; now at 3/10 and 3 approximate). Full detail in CURATION.md. Site rebuilt, all contracts validated, committed, pushed.
+
 ## 2026-07-28 — A site-wide photo-link audit, completed in full: 5 genuinely broken photo URLs found and fixed
 
 Same session, following straight on from the photo spot-check below. A retry on Madrid's `mad_001` kept failing where the rate limit shouldn't have applied, and it turned out to be a real dead link: the stored Wikimedia URL 404'd, while Commons' own API gives a different, working path for the same filename, most likely because the file was renamed on Commons at some point after this entry was written. That one find justified checking every photo URL on the site the same way (compare each stored hash-path to Commons' API-reported current path for that filename).
