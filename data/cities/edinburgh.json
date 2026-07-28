@@ -35,8 +35,8 @@
       "age_max": 450,
       "location": {
         "address": "Craigmillar Castle, Craigmillar Castle Road, Edinburgh EH16 4SY",
-        "latitude": 55.9339,
-        "longitude": -3.1092,
+        "latitude": 55.9259,
+        "longitude": -3.1406,
         "neighbourhood": "Craigmillar"
       },
       "story": "Two yew trees have guarded the courtyard entrance to Craigmillar Castle since before anyone thought to write down when they were planted. Historic Environment Scotland dates them to at least 300 years, but the popular story pushes them back further: local tradition holds they were planted to honour Mary, Queen of Scots during her stay here in 1566, recovering after the birth of her son James VI. That would make them over 450 years old, a gap of a century and a half between the cautious estimate and the romantic one that no ring count can settle, since living yews rot from the inside and take their birth certificate with them. What is certain is the castle itself: a five-hundred-year-old ruin of vaulted halls and spiral stairs, seat of the Preston family and, for three weeks in 1566, the site of the Craigmillar Bond, the meeting where Mary's advisors first discussed getting rid of her troublesome husband Lord Darnley. The yews watched that plotting happen, whichever decade they were planted in. They still stand exactly where the castle's builders put them, framing the entrance the same way they have for centuries, evergreen through every season Craigmillar has seen since.",
@@ -53,7 +53,7 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Age genuinely disputed: Historic Environment Scotland's own cautious figure is 300+ years; the Mary Queen of Scots planting legend requires 450+. Presented as a range, legend labelled as tradition rather than fact. Photo verified directly against its Commons file page: CC BY-SA 3.0 / GFDL, captioned as showing large yew trees in the inner courtyard, categorised under Taxus baccata in Scotland.",
+      "notes": "Age genuinely disputed: Historic Environment Scotland's own cautious figure is 300+ years; the Mary Queen of Scots planting legend requires 450+. Presented as a range, legend labelled as tradition rather than fact. Photo verified directly against its Commons file page: CC BY-SA 3.0 / GFDL, captioned as showing large yew trees in the inner courtyard, categorised under Taxus baccata in Scotland. Location corrected 2026-07-28: the stored coordinate had been about 2.2km from the actual castle, caught by a systematic geocode audit and confirmed independently two ways, Nominatim's own geocode of \"Craigmillar Castle Road, Bingham, Craigmillar\" (which resolves to this exact postcode, EH16 4SY, already cited in this entry's own address) and Wikipedia's stated coordinate for Craigmillar Castle (55.9259, -3.1406), agreeing within 40m of each other. Pin now sits on the castle itself; still approximate since it isn't a survey of the courtyard specifically.",
       "location_precision": "approximate"
     },
     {
@@ -95,9 +95,9 @@
       "age_min": 250,
       "age_max": 320,
       "location": {
-        "address": "Cammo Estate, Cammo Walk, Edinburgh EH4 8AN",
-        "latitude": 55.9655,
-        "longitude": -3.3175,
+        "address": "Cammo Estate, Cammo Walk, Edinburgh EH4 8AW",
+        "latitude": 55.9564,
+        "longitude": -3.3215,
         "neighbourhood": "Cammo, north-west Edinburgh"
       },
       "story": "One of the oldest ash trees in Edinburgh grows in a park with no house left standing in it. Cammo Estate was laid out from 1710 by Sir John Clerk of Penicuik, a lawyer, composer and self-taught landscape designer who spent the following years building what may have been Scotland's first true landscape garden around Cammo House. The house is a shell now, roofless and fenced off after decades of fire and vandalism following its abandonment in the 1970s, but the plantings Clerk commissioned outlived the family that made them: beech, horse chestnut, sycamore, and this ash, its trunk over a metre and a half across, which the Woodland Trust names among the oldest ash trees in the city. Edinburgh Council now manages the grounds as a wilderness nature reserve, deliberately left less manicured than a typical park, and the ash stands among yews, rhododendron and pine planted through the 18th and 19th centuries. No one has given this specific tree a documented planting date, so its age here is an estimate built from the estate's own timeline rather than a ring count, honestly short of certainty but long on plausibility. It costs nothing to visit, and the walk in passes the ruined tower and a Pictish standing stone on the way.",
@@ -114,7 +114,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Superlative softened per hard rule 8: some tourism sources call this outright 'the oldest and largest ash in Edinburgh', but the Woodland Trust's own page, the more authoritative source, hedges to 'one of the oldest'. No specific age or planting date exists for this individual tree; the range here is inferred from the estate's 1710 founding.",
+      "notes": "Superlative softened per hard rule 8: some tourism sources call this outright 'the oldest and largest ash in Edinburgh', but the Woodland Trust's own page, the more authoritative source, hedges to 'one of the oldest'. No specific age or planting date exists for this individual tree; the range here is inferred from the estate's 1710 founding. Location corrected 2026-07-28: the stored coordinate had been about 1.1km from the actual estate, caught by a systematic geocode audit and confirmed two ways, Nominatim's own geocode of Cammo Estate and Cammo Walk, and an independent park-directory source giving the reserve's own coordinates (55.9564, -3.3215, OS grid NT175745, postcode EH4 8AW), agreeing within 150m. Pin now sits within the actual 85-acre reserve; stays approximate since this specific tree has no surveyed point of its own within it.",
       "location_precision": "approximate"
     },
     {
