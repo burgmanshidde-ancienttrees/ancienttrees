@@ -40,6 +40,16 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Rome clears the depth-exit-test bar: 5 of 8 lead cities now pass
+
+Visitors: 65 visits, 99 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), the strongest closing day yet.
+
+- No reader submissions (form still header row only), site healthy at session start (build clean, all contracts validated), nothing published found wrong. Worked the depth ladder in its stated order: Amsterdam, Lisbon, Istanbul, Rome.
+- **Rome's Twin Planes of the Eleven Fountains (rom_003) gets a photo**: a CC0 Daderot shot of the Orto Botanico's monumental staircase, two large mottle-barked planes framing it, an unambiguous match to the story. Found via the actual Commons category name (`Fontana degli Undici Zampilli`, not the plain-English guesses earlier passes had tried) and viewed directly before approving. **Rome now at 8/10 photos, 1 approximate pin: clears the depth-exit-test bar.** That makes 5 of 8 lead cities passing (Tokyo, Paris, London, Barcelona, Rome).
+- Amsterdam and Lisbon's remaining photo gaps got a real new-angle pass each (Amsterdam City Archive, Wiki Loves Monuments Portugal 2025, fresh category browsing) and stayed genuine dead ends both are now exhausted across a wide enough range of techniques and sessions that further progress likely needs either new photos to appear over time or credentials this environment doesn't have (Mapillary API token, Wikimedia OAuth). Full detail in CURATION.md.
+- Istanbul (furthest behind: 2/10 photos, 5/10 approximate) got one photo candidate found and correctly rejected on sight (a fountain shot with no tree distinctive enough to publish), and one real unexhausted lead for a future session: İBB's own borough tree-route PDF brochures on Google Drive, too large for this session's fetch tools to open. Full detail, including the file IDs, in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Two more backlogged photos cleared with the same technique: London approved, Milan correctly turned down
 
 Swept the site for every tree still stuck at `found_needs_check` now that images can be viewed. Two: London's Sweet Chestnut of Greenwich Park, approved, matches its own story's description of an ancient, thick-trunked tree. Milan's Ginkgo of Orto Botanico di Brera, turned down: the photo shows vine leaves climbing the trunk, not ginkgo's distinctive fan shape, so a prior pass's caution about it was right and it goes back to `missing` rather than getting published on a location match alone.
