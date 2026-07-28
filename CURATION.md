@@ -8,6 +8,8 @@ Confirmed this session can fetch and view images directly (`urllib` download to 
 
 This is a small sample against 126 candidates, so it is reassurance, not full clearance: a future session with time to spare could keep working down the same list. Full list of the 126 (by city/tree id) is reproducible with the same one-line filter (approved photos whose notes lack a view-confirmation phrase) rather than needing to be copied here in full.
 
+**Extended the same pass with 2 more (London's Royal Oak of Richmond Park, the Mulberry of Charlton House)**, both flagship/high-visibility entries: the Royal Oak photo is an unmistakable massive hollow ancient oak inside a deer-park clearing with a boundary fence, and the Charlton House Mulberry shows a genuinely gnarled, low-sprawling mulberry (heart-shaped serrated leaves) in front of Jacobean brick with iron railings, both clean matches. 9 of 126 checked total this pass; stopped here after Wikimedia's image servers started rate-limiting this session's fetches (HTTP 429) rather than push through with retries. Worth resuming with the remaining candidates in a future session once the rate limit has cooled off.
+
 ## 2026-07-28 — Three open threads from the site-wide news sweep followed up directly: Lisbon's Ajuda dragon tree, and a full Valencia/Nice check; all checked clean or genuinely unresolved, nothing wrong found
 
 New session. Picked up three specific open threads the earlier news-sweep entry (below) had flagged but not resolved, rather than re-running exhausted photo/pin searches on Amsterdam/Lisbon/Istanbul yet again.
