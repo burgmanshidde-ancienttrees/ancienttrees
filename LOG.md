@@ -40,6 +40,13 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Naples, the worst-photographed city on the site, gets one real candidate; a dead-tree flag raised on the Pine of Posillipo and cleared
+
+- Same session, same technique, moved to Naples (1/10 photos, worst on the site) after the eight lead cities. **The Plane Tree of the Villa Comunale (nap_009)** gets a strong-on-paper candidate: a Wikidata item recording this exact tree's official measurements, linked to a CC BY-SA 3.0 photo. Held at `found_needs_check`, same reason as Rome and Barcelona's candidates today: this session can't view images directly, and the framing itself (palms in the foreground, the plane partially cut off) is a real open question, not just a formality.
+- **Worth knowing this didn't turn into anything**: researching the Pine of Posillipo (nap_008) surfaced sourcing that the original tree was felled in 1984. Checked it against this project's own data before treating it as news: nap_008 already ships as the "Young replacement," planted 1995, exactly the finding the dead-tree sweep recorded when it checked this same tree in an earlier pass. No fix needed, just confirming there's nothing here that got missed.
+- Three photo candidates are now waiting on the same one-look check: `rom_001` (Rome), `bcn_001` (Barcelona), `nap_009` (Naples), all `found_needs_check` with URL/licence/attribution already filled in.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Istanbul: one pin genuinely upgraded (Ahtapot Çınar), five stay honest, one untried government domain flagged
 
 - Same session. Istanbul is the furthest-behind of the eight lead cities on the depth-exit-test bar, so it got a pin-focused pass alongside today's photo work. One real upgrade: **ist_002, The Ahtapot Çınar**, moved from approximate to confirmed. OpenStreetMap carries a node named "Yatık Çınar", which is the tree's own registry name, matching this entry's own already-cited source (dogadakiler.com titles its page "Yatik-Cinar-Anit-Agac"); two independent sources naming the same tree the same way, about 47m from the old pin. Full honesty note, including that the OSM node itself has no survey provenance, is in the tree's data and in CURATION.md.
