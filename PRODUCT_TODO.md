@@ -6,6 +6,7 @@ The queue a run may draw from when every content rung in CLAUDE.md Step 0 is sat
 - Every item carries a **done when** that a blind run can verify with build output, grep, or a script, not with eyes.
 - No visual-taste work here: no logo, icon art, layout aesthetics or colour changes. Those need a session with eyes (Hidde's, or a browser-equipped session). No hard-list items, ever: no accounts, payments, dependencies, brand, blueprint or tone-of-voice edits.
 - One item per pass, finished and committed before the next. Log in LOG.md. When judgement wobbles, the mandate's three questions decide.
+- **Human-first check on every template change (PRINCIPLES.md #9):** any block a loop generates gets read as a stranger would read it before it ships. Repeated boilerplate phrases inside loops are a bug even when every contract passes.
 
 ## Queue, in order
 
