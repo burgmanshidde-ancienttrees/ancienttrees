@@ -255,6 +255,8 @@ The lesson is not "know more about Safari". It is that knowing something does no
 
 He fires many thoughts, fast, and that is the point of him; the system's duty is the other half: **test every incoming idea against the recorded picture before absorbing it.** Concretely, for each thought: (1) check what CLAUDE.md, PRODUCT_IA.md, PRINCIPLES.md, DECISIONS.md and BACKLOG.md already say, (2) name in one line what it touches, strengthens or contradicts, (3) only then build, park or push back. An idea that contradicts the corpus is not wrong (he outranks the corpus), but the contradiction must be said out loud so changing course is a decision, never a drift. Speed comes after the check, not instead of it.
 
+**The trio check (Hidde, 2026-07-28, the product-trio best practice sized for one AI):** every user-facing build choice gets looked at through three explicit lenses before building, one line each: Product (does it serve the verbs, the business direction, "ziel bomen, vorm AllTrails"), UX (the human outside on a phone: does it read as language, does it work at 375px, is it honest), Tech (the most boring reliable implementation, what breaks, is it reversible). For substantial pieces the three lines appear in chat before the build so an empty chair is visible up front; the day's proof was a nav shipped from the developer chair alone. Hidde is the standing PM; the lenses exist so execution never quietly drops one of the three.
+
 ### Deciding on something nobody wrote a rule for
 
 Most of what comes up is not in any list. Ask three questions, in order:
