@@ -291,13 +291,13 @@
       "access": "Free, public park",
       "transport": "10 min walk from Piazza del Plebiscito or the Chiaia seafront",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Platano_orientale.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Sordelli, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Dimensions (18m height, 428cm diameter) and location from the Campania region's own official monumental-trees register page; the garden's early 19th century Bonapartist-era planting history corroborated by Wikipedia's sourced article. Pin tightened 2026-07-26 to the registry's own GPS (40.833138, 14.237944, 'adiacente alla Fontana dei leoni'), about 40m from the previous estimate. Two Wikimedia Commons photos near this entrance (Piazza Vittoria) were checked but neither's description confirms a plane tree is actually in frame, so no photo approved this pass.",
+      "notes": "Dimensions (18m height, 428cm diameter) and location from the Campania region's own official monumental-trees register page; the garden's early 19th century Bonapartist-era planting history corroborated by Wikipedia's sourced article. Pin tightened 2026-07-26 to the registry's own GPS (40.833138, 14.237944, 'adiacente alla Fontana dei leoni'), about 40m from the previous estimate. Two Wikimedia Commons photos near this entrance (Piazza Vittoria) were checked but neither's description confirms a plane tree is actually in frame, so no photo approved this pass. Photo candidate found 2026-07-28: Wikidata item Q55741295 records this exact tree (address, height and girth all matching the registry figures above almost exactly) with a linked CC BY-SA 3.0 Commons photo, 'Platano orientale.jpg' by Sordelli. Strong identity match on paper, but the frame is a wide garden view dominated by Washingtonia palms with the plane's canopy visible but partially cut off, not a clean portrait. Held at found_needs_check pending a pass that can view the image directly rather than approve on metadata alone.",
       "location_precision": "confirmed"
     },
     {
