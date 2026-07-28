@@ -77,13 +77,13 @@
       "access": "Free, public park",
       "transport": "8 min walk from Harras U-Bahn station (U3, U6)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Stieleiche-Sendling-Westpark-1.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Tkarcher, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "The approximately 600-year age comes from a district citizen-assembly document rather than a dendrological survey; baumkunde.de independently suggests a planting date around 1440, consistent with but not identical to that figure. Any connection to Duke Albrecht III's 1436 wedding is local speculation found in searches but not confirmed by either source, so it is not stated as fact in the story. Pin corrected 2026-07-27, about 1.4km: German Wikipedia's own list of Munich's Naturdenkmäler (already a cited source) carries per-tree coordinates; independently geocoded 'Krüner Platz' via Nominatim to cross-check rather than trust the table blindly, and it lands within about 100m of the table's figure, confirming the table over the previous stored point, which was the actual error.",
+      "notes": "The approximately 600-year age comes from a district citizen-assembly document rather than a dendrological survey; baumkunde.de independently suggests a planting date around 1440, consistent with but not identical to that figure. Any connection to Duke Albrecht III's 1436 wedding is local speculation found in searches but not confirmed by either source, so it is not stated as fact in the story. Pin corrected 2026-07-27, about 1.4km: German Wikipedia's own list of Munich's Naturdenkmäler (already a cited source) carries per-tree coordinates; independently geocoded 'Krüner Platz' via Nominatim to cross-check rather than trust the table blindly, and it lands within about 100m of the table's figure, confirming the table over the previous stored point, which was the actual error. Photo found and approved 2026-07-28: file titled \"Stieleiche (Naturdenkmal) in Sendling-Westpark\", an exact species and district match. Viewed directly: a massive old oak with a heavily gnarled, twisting branch structure and thick low limbs behind a garden fence, consistent with the story's description of storm-thinned limbs and the July 2022 protective fence.",
       "location_precision": "confirmed"
     },
     {
@@ -138,13 +138,13 @@
       "access": "Free, public park",
       "transport": "15 min walk from Universität U-Bahn station, or bus to Nationalmuseum/Haus der Kunst",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Naturdenkmal_Rotbuche_Englischer_Garten_M%C3%BCnchen.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Peterf, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Age given only as 'over 300 years' in the city's own Naturdenkmal register (via baumkunde.de and the Wikipedia list drawing on it); no more precise figure or measurement found. Pin corrected 2026-07-27, about 1.6km, using that same Wikipedia list's per-tree coordinates (see muc_002 for the cross-check that validated this table).",
+      "notes": "Age given only as 'over 300 years' in the city's own Naturdenkmal register (via baumkunde.de and the Wikipedia list drawing on it); no more precise figure or measurement found. Pin corrected 2026-07-27, about 1.6km, using that same Wikipedia list's per-tree coordinates (see muc_002 for the cross-check that validated this table). Photo found and approved 2026-07-28: file titled \"Naturdenkmal Rotbuche Englischer Garten München\", the photographer's own title naming this as the specific protected specimen rather than any beech in the park. Viewed directly: a single tall, mature beech standing alone in an open grass clearing, bare in winter, consistent with the Englischer Garten's open meadow sections.",
       "location_precision": "confirmed"
     },
     {
