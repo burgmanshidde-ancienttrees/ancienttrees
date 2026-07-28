@@ -47,6 +47,10 @@ The collect button sits above the story (Atlas Obscura's law). Logged-out it sti
 
 Stays the workhorse it is. Order tightens to: map with the ten pins, then the walk banner ("Walk 7 of these trees, 4.9 km"), then the ten trees with collect buttons on each row, then explore-onward links. The question pages, species pages and collections keep feeding it from below.
 
+## The five deliberate deviations from AllTrails (Hidde asked "wijk ergens af?", 2026-07-28)
+
+Everything else copies wholesale. These five do not: (1) URL structure stays our flat /city/tree, never their deep /trail/country/region path: ours is indexed, short and irreversible territory. (2) No Shop item until there is something to sell (the keepsake, someday). (3) No star ratings ever: their soul is volume-plus-reviews, ours is ten-that-all-deserve-it; our future signal is the binary worth-it tap. (4) No user route planner: our walks are curated. (5) The species layer stays: an axis AllTrails does not have, our PictureThis side.
+
 ## Phasing
 
 - **Phase A, now (session work, needs Hidde's eyes):** nav switches to verbs with the Explore dropdown; homepage city grid compresses into the directory block; tree pages move actions above the story and gain the nearby-trees footer. No URL changes, no new features, pure re-emphasis.

@@ -94,7 +94,16 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .bar-logo { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; text-decoration: none; color: var(--ink); }
 .bar-links a { font-size: 13px; color: var(--ink-mid); text-decoration: none; margin-left: 1.25rem; }
 .bar-links a:hover { color: var(--moss); }
-.bar-links a.bar-cta { color: var(--moss); font-weight: 500; border: 1px solid var(--moss); border-radius: 3px; padding: 0.35rem 0.7rem; }
+.bar-links a.bar-cta { color: #fff; background: var(--moss); font-weight: 600; border: 1px solid var(--moss); border-radius: 4px; padding: 0.35rem 0.8rem; }
+.bar-links a.bar-plus { color: var(--moss); font-weight: 600; border: 1px solid var(--moss); border-radius: 4px; padding: 0.35rem 0.8rem; }
+.nav-drop { display: inline-block; position: relative; margin-left: 1.25rem; }
+.nav-drop summary { font-size: 13px; color: var(--ink-mid); cursor: pointer; list-style: none; }
+.nav-drop summary::-webkit-details-marker { display: none; }
+.nav-drop summary::after { content: " ▾"; font-size: 10px; }
+.nav-drop[open] summary { color: var(--moss); }
+.nav-drop-menu { position: absolute; right: 0; top: 1.9rem; background: #fff; border: 1px solid var(--cream-dark); border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); padding: 0.5rem 0; min-width: 11rem; z-index: 40; }
+.nav-drop-menu a { display: block; padding: 0.45rem 1.1rem; margin: 0; font-size: 13px; }
+.nav-drop-menu a:hover { background: var(--cream); }
 .bar-links a.bar-cta:hover { background: var(--moss); color: #fff; }
 .city-card.soon:hover { opacity: 1; border-top-color: var(--moss); }
 .city-card-cta { font-size: 12px; color: var(--moss); font-weight: 500; margin-top: 0.35rem; }
@@ -175,6 +184,21 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .tree-photo img { width: 100%; display: block; border-radius: 4px; }
 .tree-photo figcaption { font-size: 11px; color: var(--ink-light); margin-top: 0.45rem; }
 .go-btn { display: inline-block; background: var(--moss); color: #fff; text-decoration: none; font-size: 14px; font-weight: 500; padding: 0.7rem 1.25rem; border-radius: 4px; margin: 0.25rem 0 0.5rem; }
+.go-btn.ghost { background: transparent; border: 1.5px solid var(--moss); color: var(--moss); }
+.chip-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.35rem 0 1rem; }
+.chip { font-size: 12px; font-weight: 600; background: var(--cream-dark); border-radius: 999px; padding: 4px 12px; color: var(--ink-mid); }
+.chip.ok { background: var(--moss-light); color: var(--moss); }
+.chip.approx { border: 1.5px dashed var(--ink-light); background: transparent; }
+.chip.gold { background: #F3E4C3; color: #8A6414; }
+.action-row { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; margin: 0.75rem 0 1.25rem; }
+.action-row .go-btn { margin: 0; }
+.action-row .seen-btn { float: none; cursor: pointer; font-family: inherit; font-size: 14px; font-weight: 600; background: var(--moss); color: #fff; border: 1px solid var(--moss); border-radius: 4px; padding: 0.7rem 1.25rem; }
+.action-row .seen-btn[aria-pressed="true"] { background: var(--moss-light); color: var(--moss); }
+.action-link { font-size: 13.5px; font-weight: 600; color: var(--moss); text-decoration: none; }
+.near-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 0.5rem 0 1rem; list-style: none; padding: 0; }
+.near-card { display: block; background: #fff; border: 1px solid var(--cream-dark); border-radius: 12px; padding: 12px 14px; text-decoration: none; color: var(--ink); }
+.near-card b { display: block; font-size: 14px; font-weight: 700; margin-bottom: 2px; }
+.near-card span { font-size: 12px; color: var(--ink-light); }
 .go-btn:hover { background: #2f4717; }
 .go-note { font-size: 12px; color: var(--ink-light); margin-bottom: 1.5rem; }
 .take-with-you { background: var(--cream-dark); border-radius: 4px; padding: 1.1rem 1.4rem; margin: 1.5rem 0; font-size: 13px; }
@@ -291,13 +315,24 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .section-heading { font-family: var(--sans); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 1.5rem; }
 .prose { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
 .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2px; background: var(--cream-dark); border: 1px solid var(--cream-dark); margin-bottom: 3rem; }
+.dir-cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.25rem 2rem; margin: 0.75rem 0 0.5rem; }
+.dir-group h3 { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.35rem; }
+.dir-group a { display: block; font-size: 13.5px; color: var(--ink-mid); text-decoration: none; padding: 0.15rem 0; }
+.dir-group a:hover { color: var(--moss); }
+.dir-more { font-size: 13px; color: var(--ink-mid); margin-top: 0.75rem; }
 .city-card { background: var(--cream); padding: 1.5rem; text-decoration: none; border-top: 2px solid transparent; transition: border-top-color 0.2s; }
 .city-card:hover { border-top-color: var(--moss); }
 .city-card-name { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.25rem; color: var(--ink); margin-bottom: 0.25rem; }
 .city-card-meta { font-size: 12px; color: var(--ink-light); }
 .city-card.soon { opacity: 0.55; }
 
-footer { border-top: 1px solid var(--cream-dark); padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
+.footer-cols { display: flex; gap: 3rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.footer-about { max-width: 20rem; }
+.footer-about p { font-size: 13px; color: var(--ink-mid); line-height: 1.6; margin-top: 0.6rem; }
+.footer-col h4 { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.6rem; }
+.footer-col a { display: block; font-size: 13px; color: var(--ink-mid); text-decoration: none; padding: 0.2rem 0; }
+.footer-col a:hover { color: var(--moss); }
 .footer-logo { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
 .footer-links { font-size: 12px; }
 .footer-links a { color: var(--ink-mid); text-decoration: none; margin-right: 1rem; }
@@ -435,18 +470,11 @@ PAGE_SHELL = """<!DOCTYPE html>
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 64"><ellipse cx="34" cy="24" rx="24" ry="16" fill="%233A5222"/><circle cx="20" cy="23" r="11" fill="%234A6B2A"/><circle cx="48" cy="23" r="11" fill="%234A6B2A"/><circle cx="34" cy="12" r="11" fill="%235B7F35"/><path d="M31 62 h5.6 l-1.2-16 h-3.2z" fill="%236B4F33"/></svg>'>
 <link rel="stylesheet" href="%%ROOTPATH%%assets/style.css">
 %%HEAD_EXTRA%%
-<!-- Cloudflare Web Analytics: cookieless visit counting, no personal data.
-     Allowed by Hidde 2026-07-27 (hard rule 5); ads/ad-tracking stay banned. -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e4516eabbfab48c7b9675c1ebd767324"}'></script>
 </head>
 <body>
 <header class="bar">
   <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  <nav class="bar-links">
-    <a href="%%ROOTPATH%%#cities">Cities</a>
-    <a href="%%ROOTPATH%%species" class="bar-secondary">Species</a>
-    <a href="%%ROOTPATH%%collections" class="bar-secondary">Collections</a>
-  </nav>
+  <nav class="bar-links"><a href="%%ROOTPATH%%">Map</a><a href="%%ROOTPATH%%in-season">In season</a><details class="nav-drop"><summary>Explore</summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%#cities">Cities</a><a href="%%ROOTPATH%%species">Species</a><a href="%%ROOTPATH%%collections">Collections</a><a href="%%ROOTPATH%%contribute">Suggest a tree</a></div></details><a href="%%ROOTPATH%%plus" class="bar-plus">Plus</a><a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
 </header>
 %%BODY%%
 %%FOOTER%%
@@ -469,9 +497,28 @@ ANALYTICS_SNIPPET = (
 
 FOOTER = """
 <footer>
-  <span class="footer-logo">Ancient Trees</span>
-  <span class="footer-links"><a href="%%ROOTPATH%%collections">Collections</a> <a href="%%ROOTPATH%%contribute">Suggest a tree</a> <a href="%%ROOTPATH%%privacy">Privacy</a></span>
-  <span class="footer-note">&copy; %%YEAR%% Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors.</span>
+  <div class="footer-cols">
+    <div class="footer-col footer-about">
+      <span class="footer-logo">Ancient Trees</span>
+      <p>The remarkable old trees of the world's great cities: found, verified and mapped, ten per city and never padded. See the ones near you, walk a route past a few, and collect the ones you have stood in front of.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="%%ROOTPATH%%">Map</a>
+      <a href="%%ROOTPATH%%in-season">In season now</a>
+      <a href="%%ROOTPATH%%#cities">Cities</a>
+      <a href="%%ROOTPATH%%species">Species</a>
+      <a href="%%ROOTPATH%%collections">Collections</a>
+    </div>
+    <div class="footer-col">
+      <h4>Ancient Trees</h4>
+      <a href="%%ROOTPATH%%plus">Plus</a>
+      <a href="%%ROOTPATH%%app">The app</a>
+      <a href="%%ROOTPATH%%contribute">Suggest a tree</a>
+      <a href="%%ROOTPATH%%privacy">Privacy</a>
+    </div>
+  </div>
+  <span class="footer-note">&copy; %%YEAR%% Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors. Photos carry their own credits and open licences.</span>
 </footer>
 """
 
@@ -480,6 +527,13 @@ ERRORS = []
 
 def esc(s):
     return html.escape(str(s), quote=True)
+
+
+def dist_label(a_loc, b_loc):
+    """Human distance between two tree locations: '350 m' or '2.1 km'."""
+    m = haversine((a_loc["latitude"], a_loc["longitude"]),
+                  (b_loc["latitude"], b_loc["longitude"])) * 1000
+    return "%d m" % (round(m / 10) * 10) if m < 1000 else "%.1f km" % (m / 1000)
 
 
 def slugify(name):
@@ -1414,6 +1468,55 @@ def location_is_approximate(tree):
 
 # ---------------------------------------------------------------- tree pages
 
+
+TREE_CHECKIN_JS = """
+(function() {
+  var btn = document.querySelector('.action-row .seen-btn');
+  if (!btn) return;
+  var KEY = 'ancienttrees_seen';
+  function readSeen() { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; } }
+  function writeSeen(l) { try { localStorage.setItem(KEY, JSON.stringify(l)); } catch (e) {} }
+  function paint() {
+    var got = readSeen().indexOf(btn.dataset.tree) !== -1;
+    btn.setAttribute('aria-pressed', got ? 'true' : 'false');
+    btn.querySelector('.seen-text').textContent = got ? 'Visited' : 'Check in at this tree';
+  }
+  function metres(lat1, lng1, lat2, lng2) {
+    var R = 6371000, p = Math.PI / 180;
+    var a = Math.sin((lat2 - lat1) * p / 2) * Math.sin((lat2 - lat1) * p / 2)
+          + Math.cos(lat1 * p) * Math.cos(lat2 * p)
+          * Math.sin((lng2 - lng1) * p / 2) * Math.sin((lng2 - lng1) * p / 2);
+    return 2 * R * Math.asin(Math.sqrt(a));
+  }
+  function flash(msg, ms) {
+    var t = btn.querySelector('.seen-text'), was = t.textContent;
+    t.textContent = msg;
+    setTimeout(function() { if (t.textContent === msg) { paint(); } }, ms || 4000);
+  }
+  btn.addEventListener('click', function() {
+    var id = btn.dataset.tree, seen = readSeen();
+    if (seen.indexOf(id) !== -1) { seen.splice(seen.indexOf(id), 1); writeSeen(seen); paint(); return; }
+    if (!navigator.geolocation) { flash('This browser cannot check where you are'); return; }
+    flash('Checking where you are...', 20000);
+    navigator.geolocation.getCurrentPosition(function(pos) {
+      var away = metres(pos.coords.latitude, pos.coords.longitude,
+                        parseFloat(btn.dataset.lat), parseFloat(btn.dataset.lng));
+      if (away <= parseFloat(btn.dataset.radius)) {
+        var l = readSeen();
+        if (l.indexOf(id) === -1) { l.push(id); }
+        writeSeen(l); paint();
+      } else {
+        var far = away > 2000 ? Math.round(away / 1000) + ' km' : Math.round(away) + ' m';
+        flash('Still ' + far + ' away. Check in at the tree.', 6000);
+      }
+    }, function(err) {
+      flash(err.code === 1 ? 'Location needed to check in' : 'Could not find you. Try again.', 6000);
+    }, { enableHighAccuracy: true, maximumAge: 30000, timeout: 15000 });
+  });
+  paint();
+})();
+"""
+
 def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
     species_pages = species_pages or {}
     city_data = city_entry["data"]
@@ -1491,20 +1594,47 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
         if sp_slug else ""
     )
 
+    # Sprint 1 of PRODUCT_IA.md (2026-07-28): the do-buttons live above the
+    # story (Atlas Obscura's law), the chips answer the first three questions
+    # at a glance, and nearby becomes cards with distances so no page dead-ends.
+    precision_chip = ('<span class="chip approx">pin approximate</span>'
+                      if location_is_approximate(tree)
+                      else '<span class="chip ok">pin confirmed</span>')
+    season_chip = ""
+    bt = tree.get("best_time") or {}
+    if bt.get("label"):
+        season_chip = f'<span class="chip gold">{esc(bt["label"])}</span>'
+    chips = (f'<p class="chip-row"><span class="chip">{esc(tree.get("age_estimate", "age unknown"))}</span>'
+             f'<span class="chip">{esc(species_common(tree))}</span>{precision_chip}{season_chip}</p>')
+    radius = 200 if location_is_approximate(tree) else 75
+    action_row = f"""
+  <div class="action-row">
+    <button type="button" class="go-btn seen-btn" data-tree="{tree['id']}" data-lat="{loc['latitude']}" data-lng="{loc['longitude']}" data-radius="{radius}"><span class="seen-text">Check in at this tree</span></button>
+    <a class="go-btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination={loc['latitude']},{loc['longitude']}" target="_blank" rel="noopener">Take me there</a>
+    <a class="action-link" href="../{cslug}#walk">Walk more trees in {esc(city)}</a>
+  </div>"""
+
+    near_cards = "".join(
+        f'<a class="near-card" href="{slugify(t["name"])}"><b>{esc(t["name"])}</b>'
+        f'<span>{esc(t.get("age_estimate", ""))} &middot; {dist_label(loc, t["location"])} away</span></a>'
+        for t in nearby
+    )
+
     body = f"""
 <main class="content-page">
   {breadcrumb_html(crumb_items, rootpath)}
   <h1>{esc(tree['name'])}{label}</h1>
+  {chips}
   {photo_html}
-  {facts}
+  {action_row}
   <div class="prose-block"><p>{esc(tree['story'])}</p></div>
   {season_html}
   <div class="map-embed"><div id="map" class="map"></div></div>
-  <a class="go-btn" href="https://www.google.com/maps/dir/?api=1&amp;destination={loc['latitude']},{loc['longitude']}" target="_blank" rel="noopener">Take me there</a>
-  <p class="go-note">Opens directions in your maps app. {esc(tree.get('transport', ''))}</p>
+  <p class="go-note">The buttons above open directions and check-ins. {esc(tree.get('transport', ''))}</p>
   {approx_note}
+  {facts}
   <h2>Trees nearby</h2>
-  <ul class="link-list">{nearby_html}</ul>
+  <div class="near-cards">{near_cards}</div>
   <div class="cta">Curious what else is standing in {esc(city)}? See <a href="../{cslug}">all {len(all_trees)} remarkable ancient trees in {esc(city)}</a> or find out <a href="oldest-tree">what the oldest tree in {esc(city)} is</a>.{species_line}</div>
   <div class="report"><strong>Help keep this page true.</strong>
     <a class="report-btn" href="{submit_link('correction')}">Wrong spot</a>
@@ -1529,7 +1659,7 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
         breadcrumb_schema(crumb_items, canonical),
     ]
     head_extra = map_head() + og_image + "\n" + ld_script(graph)
-    scripts = single_pin_script(loc["latitude"], loc["longitude"])
+    scripts = single_pin_script(loc["latitude"], loc["longitude"]) + "\n" + TREE_CHECKIN_JS
 
     check_links(canonical, 2 + len(nearby), 4)
 
@@ -1794,7 +1924,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
         label = (f"Walk {route['count']} of these trees"
                  if route["count"] < route["of"] else f"Walk all {route['count']} trees")
         route_bar = f"""
-    <div class="route-bar">
+    <div class="route-bar" id="walk">
       <a class="route-go" href="{esc(route_url)}" target="_blank" rel="noopener">
         {label}
         <span class="route-meta">about {route['km']} km, {duration} on foot</span>
@@ -2141,6 +2271,44 @@ def build_privacy_page(pages):
     pages.append(("privacy.html", page, canonical))
 
 
+def build_fakedoor_pages(pages):
+    """Plus and The app: honest coming-soon pages (Hidde, 2026-07-28). They
+    exist to measure real interest via the cookieless path counts and to
+    collect volunteers via the existing form. Hard rules kept: no price
+    anywhere (rule 2), nothing promised as available today, every tree stays
+    free to explore."""
+    for slug, title, desc, body_inner in [
+        ("plus", "Ancient Trees Plus", "The convenience layer we are building around the walks.", """
+    <p class="answer-first">Plus does not exist yet. We are building it, and this page is here to be honest about what it will be and to let you raise your hand for it.</p>
+    <h2>What Plus is going to be</h2>
+    <div class="prose-block">
+      <p>Every tree, story and map on this site is free to explore, and that does not change. Plus will sell convenience around the walk: city packs that work offline where roaming is expensive, a nudge when a tree near you reaches its seasonal peak, guidance along the walking routes, and your routes on your watch or GPS.</p>
+      <p>No price exists yet, because it is not for sale yet.</p>
+    </div>
+    <h2>Want to hear when it arrives?</h2>
+    <div class="prose-block"><p>Leave your email through <a href="{form}">the contact form</a> with the word "Plus", and you will hear it first. That is all the form does with it.</p></div>"""),
+        ("app", "The Ancient Trees app", "The iOS app we are building for the walk itself.", """
+    <p class="answer-first">The app is on its way, and it is not here yet. This page is honest about both halves.</p>
+    <h2>What the app is going to be</h2>
+    <div class="prose-block">
+      <p>The website finds the trees; the app is for the walk itself: your position live on the route, checking in at the trunk, your collection growing in your pocket, and the season radar telling you when a tree near you is at its best.</p>
+      <p>Until then, this site works well on a phone: open a city, tap a tree, and the directions button takes over.</p>
+    </div>
+    <h2>Want to hear when it lands?</h2>
+    <div class="prose-block"><p>Leave your email through <a href="{form}">the contact form</a> with the word "app", and you will be first to know.</p></div>"""),
+    ]:
+        canonical = f"{BASE_URL}/{slug}"
+        inner = body_inner.replace("{form}", esc(submit_link("tree")))
+        body = f"""
+<main class="content-page">
+  <h1>{title}</h1>
+  {inner}
+</main>
+"""
+        page = render_page(title, desc, canonical, body, rootpath="./")
+        pages.append((f"{slug}.html", page, canonical))
+
+
 def build_contribute_page(published, pages):
     """The flywheel's front door: readers send trees, the nightly run verifies
     and writes them up. Deliberately asks for the few things that make a
@@ -2215,6 +2383,17 @@ def build_homepage(published, upcoming, collections, pages):
             "lat": lat, "lng": lng, "label": str(p["count"]),
             "url": p["slug"], "city": p["city"],
         })
+
+    by_country = {}
+    for p in published:
+        by_country.setdefault(p["country"], []).append(p)
+    directory_html = '<div class="dir-cols">' + "".join(
+        '<div class="dir-group"><h3>%s</h3>%s</div>' % (
+            esc(country),
+            "".join('<a href="%s">%s</a>' % (p["slug"], esc(p["city"]))
+                    for p in sorted(cities, key=lambda x: x["city"])))
+        for country, cities in sorted(by_country.items())
+    ) + "</div>"
 
     live_cards = "".join(
         f"""<a class="city-card" href="{p['slug']}">
@@ -2359,9 +2538,10 @@ def build_homepage(published, upcoming, collections, pages):
 <main class="page">
   <p class="prose lead-why">Why bother: a 400 year old tree has outlasted every empire, plague and war its city has seen. It was here before the street was named and will be here after you leave. Most guides send you to the same squares and the same viewpoints. This sends you somewhere quieter, ten minutes off the route, and it is almost always worth the detour.</p>
 
-  <h2 class="section-heading" id="cities">Browse by city</h2>
+  <h2 class="section-heading" id="cities">Ancient trees by city</h2>
   <p class="prose">Not near any of these yet? The map above finds the nearest tree wherever you are. Otherwise, pick a city.</p>
-  <div class="city-grid">{live_cards}{soon_cards}</div>
+  {directory_html}
+  <p class="dir-more">Not seeing your city? <a href="contribute">Help map it</a>.</p>
   {coll_html}
 
   <p class="prose subtle-suggest">This map grows through people who know their trees. <a href="{submit_link("tree")}">Know one we missed?</a>{support_cta}</p>
@@ -2786,6 +2966,7 @@ def main():
 
     build_contribute_page(published, pages)
     build_privacy_page(pages)
+    build_fakedoor_pages(pages)
     build_in_season_page(renderable, tree_slugs, pages)
     build_homepage(published, upcoming, public_collections, pages)
     build_redirects(published, pages, tree_slugs)
