@@ -99,7 +99,10 @@
     "neighbourhood": "City of London"
    },
    "story": "The only Great Tree of London in the Square Mile. It grows in what was the churchyard of St Peter Cheap, a church destroyed in the Great Fire of 1666 and never rebuilt. No one knows exactly how old it is. By 1853, a cab company was advertising its location as 'Under the tree, Cheapside.' In 1901 it was called the most valuable tree in the world. It survived the Blitz. Buildings beside it are prohibited from rising above two storeys by the terms of their leases, preserving its canopy. Wordsworth likely had it in mind in his 1800 poem Poor Susan.",
-   "verified_sources": [],
+   "verified_sources": [
+    "https://www.atlasobscura.com/places/cheapside-plane-tree",
+    "https://lookup.london/wood-street-tree/"
+   ],
    "access": "Free, public square, City of London",
    "transport": "2 min walk from St Paul's tube station",
    "photo": {
@@ -109,7 +112,7 @@
     "status": "approved"
    },
    "curation_status": "ai_generated",
-   "notes": "Source URLs need backfilling (original research cited Atlas Obscura and Wikimedia Commons without links).",
+   "notes": "Source URLs backfilled 2026-07-28: Atlas Obscura and Look Up London both independently corroborate the St Peter Cheap site, the 1853 cab-company advert, the 1901 'most valuable tree' claim and the Wordsworth connection.",
    "location_precision": "confirmed"
   },
   {
@@ -290,13 +293,16 @@
     "label": "August, when the fruit ripens, one of the few parts of Sayes Court's story that still repeats every year"
    },
    "location": {
-    "address": "Sayes Court Park, Sayes Court Street, Deptford, London SE8 5AB",
-    "latitude": 51.4793,
-    "longitude": -0.0254,
+    "address": "Sayes Court Park, Sayes Court Street, Deptford, London SE8 5RA",
+    "latitude": 51.484,
+    "longitude": -0.0311,
     "neighbourhood": "Deptford, East London"
    },
    "story": "Sayes Court Garden was the celebrated 17th century garden of writer and diarist John Evelyn, one of the most famous gardens in England. The garden was destroyed when Tsar Peter the Great of Russia rented the house in 1698 and reportedly used a wheelbarrow to race through the hedges for amusement. This mulberry may have survived even that. A stone at its base commemorates the story. Most of the garden is gone, but this tree, fenced and propped, still stands in what is now an unremarkable public park.",
-   "verified_sources": [],
+   "verified_sources": [
+    "https://www.atlasobscura.com/places/evelyn-s-mulberry",
+    "https://www.moruslondinium.org/research/john-evelyns-mulberry"
+   ],
    "access": "Free, public park",
    "transport": "Deptford or Deptford Bridge station, 5 min walk",
    "photo": {
@@ -306,7 +312,7 @@
     "status": "approved"
    },
    "curation_status": "ai_generated",
-   "notes": "Source URLs need backfilling (original research cited Atlas Obscura).",
+   "notes": "Source URLs backfilled 2026-07-28: Atlas Obscura and Morus Londinium (a Woodland Trust/academic mulberry-mapping project) both corroborate the Evelyn garden, the tree's age and the Peter the Great story; both also independently note historians doubt Peter himself planted it, consistent with this entry's own careful phrasing ('may have survived even that') rather than crediting him with planting it. Location corrected the same pass: the stored coordinate was about 700m from Sayes Court Street itself, whose Nominatim geocode (51.484, -0.031) agrees closely with the independently found Sayes Court Park coordinate from a parks-data source (51.4848, -0.0310). Moved onto the actual street/park cluster.",
    "location_precision": "confirmed"
   },
   {
