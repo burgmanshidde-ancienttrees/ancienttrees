@@ -40,6 +40,13 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Istanbul: one pin genuinely upgraded (Ahtapot Çınar), five stay honest, one untried government domain flagged
+
+- Same session. Istanbul is the furthest-behind of the eight lead cities on the depth-exit-test bar, so it got a pin-focused pass alongside today's photo work. One real upgrade: **ist_002, The Ahtapot Çınar**, moved from approximate to confirmed. OpenStreetMap carries a node named "Yatık Çınar", which is the tree's own registry name, matching this entry's own already-cited source (dogadakiler.com titles its page "Yatik-Cinar-Anit-Agac"); two independent sources naming the same tree the same way, about 47m from the old pin. Full honesty note, including that the OSM node itself has no survey provenance, is in the tree's data and in CURATION.md.
+- The other five approximate pins (ist_001, ist_004, ist_007, ist_008, ist_009) stay approximate. Each dead end is a real source that knows the tree but doesn't hand over a coordinate: two of anitagac.istanbul's own detail pages confirm the right registry entry by name but load coordinates via client-side JavaScript this session's fetch tools can't execute, not an absence of data, just current unreachability. Full per-tree detail in CURATION.md so a future pass doesn't retry the same five searches.
+- Istanbul now at 5/10 approximate (from 6), 2/10 photos (unchanged, this was pin work).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Amsterdam's photo gaps tried with the same new technique: still exhausted, but two real leads found blocked by auth, not by absence
 
 - Same session as the entry below. Applied the Wikidata SPARQL geo-query technique that worked for Rome and Barcelona to Amsterdam's three remaining gaps (Heimanseik, Vondelpark Poplar, Amstelkade Olive Willow); no result, these are now genuinely exhausted dead ends across a wide range of techniques over many sessions.
