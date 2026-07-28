@@ -1691,11 +1691,11 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
     else:
         coll_link_html = '<dt>More like this</dt><dd>Browse <a href="collections">themed collections</a> of remarkable trees.</dd>'
     others_html = " &middot; ".join(
-        f'<a href="./{c["slug"]}">Ancient trees in {esc(c["city"])}</a>'
+        f'<a href="./{c["slug"]}">{esc(c["city"])}</a>'
         for c in other_cities
     )
     more_cities_html = (
-        f'<dt>More cities</dt><dd>{others_html}</dd>' if others_html else ""
+        f'<dt>Ancient trees in more cities</dt><dd>{others_html}</dd>' if others_html else ""
     )
 
     # Species page pass (PRODUCT_TODO item 6): a city page links onward to a
@@ -1877,7 +1877,7 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages, dr
         sections.append(f"<h2>{esc(city_data['city'])}</h2>{''.join(rows)}")
 
     city_links = " &middot; ".join(
-        f'<a href="../{p["slug"]}">Ancient trees in {esc(p["city"])}</a>' for p in published
+        f'<a href="../{p["slug"]}">{esc(p["city"])}</a>' for p in published
     )
 
     body = f"""
@@ -1989,7 +1989,7 @@ def build_species_page(intro_data, members, tree_slugs, published, pages):
         sections.append(f'<h2>{esc(entry["data"]["city"])}</h2>{"".join(rows)}')
 
     city_links = " &middot; ".join(
-        f'<a href="../{p["slug"]}">Ancient trees in {esc(p["city"])}</a>' for p in published
+        f'<a href="../{p["slug"]}">{esc(p["city"])}</a>' for p in published
     )
 
     body = f"""
@@ -2031,7 +2031,7 @@ def build_species_index(species_cards, published, pages):
         for c in species_cards
     )
     city_links = " &middot; ".join(
-        f'<a href="{p["slug"]}">Ancient trees in {esc(p["city"])}</a>' for p in published
+        f'<a href="{p["slug"]}">{esc(p["city"])}</a>' for p in published
     )
     body = f"""
 <main class="content-page">
@@ -2075,7 +2075,7 @@ def build_collections_index(collections, published, pages):
       </div>""")
 
     city_links = " &middot; ".join(
-        f'<a href="{p["slug"]}">Ancient trees in {esc(p["city"])}</a>' for p in published
+        f'<a href="{p["slug"]}">{esc(p["city"])}</a>' for p in published
     )
 
     entries_html = "".join(entries) if entries else (
