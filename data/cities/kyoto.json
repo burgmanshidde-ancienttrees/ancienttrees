@@ -99,8 +99,8 @@
       "age_max": 710,
       "location": {
         "address": "187 Shorin-in-cho, Ohara, Sakyo-ku, Kyoto 601-1242",
-        "latitude": 35.1189,
-        "longitude": 135.8388,
+        "latitude": 35.1213608,
+        "longitude": 135.8326856,
         "neighbourhood": "Ohara, Sakyo-ku"
       },
       "story": "Visitors to this small temple in the Ohara valley sit on red felt cushions in a wooden hall and look at the garden through the frame of a doorway, a deliberate composition called a gakubuchi teien, or picture-frame garden. The subject of that living picture is this pine, trained over roughly seven centuries into a shape said to echo Mount Mikami, a solitary peak southeast of the city sometimes nicknamed Omi Fuji for its cone shape. The tree holds Kyoto City natural monument status and is one of the temple's central attractions alongside a ceiling made from the floorboards of Fushimi Castle, preserved with bloodstains from a 1600 samurai last stand. By 2021 the pine showed signs of strain from age and drought, prompting visible care from the temple's gardeners; recent visitor accounts describe it recovering vigor since. Ohara sits in the hills north of central Kyoto, quieter than the city's headline temples, and the pine rewards the trip out with a garden built around one tree's silhouette rather than a wide landscape.",
@@ -118,8 +118,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Coordinates are a street-level estimate from the temple's address; no surveyed lat/long was found in available sources. The 2021 source describing the tree recovering vigor implies a period of decline; no source gives a clear cause or timeline for that decline. A candidate photo captioned \"Hosen-in, Bankan-en (Garden)\" was viewed directly on an earlier pass and rejected: it shows an illuminated Japanese maple against a bamboo grove at night, not a pine at all, so the garden-name caption evidently covers more than just this one tree. A second candidate, Commons file \"宝泉院_01.JPG\" (Category:Goḳō-no-matsu, Hōsen-in, the tree's own name), was downloaded and viewed directly this pass: it is the temple's signature framed-garden shot, the pine's gnarled poled branches seen through the guest-hall window with tatami in the foreground, an unambiguous match. Approved.",
-      "location_precision": "approximate"
+      "notes": "The 2021 source describing the tree recovering vigor implies a period of decline; no source gives a clear cause or timeline for that decline. A candidate photo captioned \"Hosen-in, Bankan-en (Garden)\" was viewed directly on an earlier pass and rejected: it shows an illuminated Japanese maple against a bamboo grove at night, not a pine at all, so the garden-name caption evidently covers more than just this one tree. A second candidate, Commons file \"宝泉院_01.JPG\" (Category:Goḳō-no-matsu, Hōsen-in, the tree's own name), was downloaded and viewed directly this pass: it is the temple's signature framed-garden shot, the pine's gnarled poled branches seen through the guest-hall window with tatami in the foreground, an unambiguous match. Approved. Pin corrected 2026-07-28, about 625m: the previous coordinate was a street-level address estimate that turned out to be a genuine error, not just imprecise; OpenStreetMap carries two independently mapped nodes both named Hosen-in within about 150m of each other, one explicitly tagged with this entry's own street number (187), used here instead. The temple is a single small building around one guest hall and garden, so this building-level point puts a visitor at the pine itself, not just in the neighbourhood.",
+      "location_precision": "confirmed"
     },
     {
       "id": "kyo_004",
