@@ -40,6 +40,12 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Valencia: photo gaps checked, one pin quietly corroborated, nothing publishable
+
+- **Valencia** (2/10 photos, 7/10 approximate): checked all 8 remaining photo gaps via iNaturalist; only one hit, unusable (CC-BY-NC), but its GPS lands within about 15m of the existing pin for the Countess of Ripalda's ficus, a nice quiet confirmation the coordinate is already right. Two distinctively named entries (Los Tres Amigos, La Palmera de Vicente Peris) have real documented histories but no open-licensed photo anywhere found. Valencia stays at 2/10 photos, 7/10 approximate.
+- Full detail in CURATION.md. No data changed.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Nice and Lyon: depth headroom checked and found genuinely limited, not just unsearched
 
 - **Nice** (8/10 photos, already clears the floor, 9/10 approximate): checked whether the regional remarkable-trees registry that already confirmed one Nice tree covers any of the other nine. It doesn't, and for a real reason: eight of Nice's nine remaining entries are written as ensembles with no single named, measured specimen in any source, so there's no more precise point to pin without inventing one. High approximate count, honestly earned.
