@@ -45,6 +45,10 @@ That is exactly why Hidde's own goal is right. If this were a 90-million-user ma
 - DMO/tourism-board sponsorship is a real revenue path that needs no accounts and no paywall. Worth remembering when the traffic question is answered. On the backlog with the sponsorship item.
 - Our moat is curation, story, beauty and honesty, not coverage. Every competitive move should deepen that, not chase breadth that invites a giant.
 
+## Hidde's benchmark ruling, 2026-07-28: AllTrails is the model to build toward
+
+His words, looking at their Plus page: "ik vind persoonlijk AllTrails heel vergelijkbaar en dit is precies waar we heen moeten bouwen." What that makes canonical: web-first with the SEO layer as front door, the app as the deeper product, every tree and story free forever-of-the-moment, and the paid tier selling convenience around the walk (their offline maps / route conditions / wrong-turn alerts / Garmin export map onto our offline city packs / season alerts / on-walk guidance / GPX). Their price is theirs; ours stays undecided (hard rule 2, and the interim paywall line in CLAUDE.md stays open). The IA benchmark synthesis of 2026-07-28 uses AllTrails as the backbone and the other eight products as seasoning.
+
 ## Homepage, UX and funnel teardown: AllTrails and Polarsteps
 
 Researched 2026-07-24 at Hidde's request, to learn how the closest comparable products present themselves. Both turned out to validate the find/walk/collect homepage direction and, more importantly, to point at a revenue path that fits our constraints.
