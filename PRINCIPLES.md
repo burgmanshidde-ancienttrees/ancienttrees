@@ -10,9 +10,9 @@ What we have learned from comparable products (AllTrails, Polarsteps, Strava, At
 
 3. **Never reset progress punitively.** If completion or streaks are ever added, welcome people back rather than zeroing them, the way Calm and Apple Fitness do. A tree collection is naturally forgiving; keep it that way.
 
-4. **First value must be frictionless: the aha moment fast, with the fewest clicks.** For us the aha is a genuinely remarkable tree the visitor did not know stood near them, or their first check-in. No signup wall stands in front of it, which is a real advantage over Polarsteps, which forces account creation first and is criticised for it. Guard this: never put a gate before the first wow.
+4. **First value must be frictionless: the aha moment fast, with the fewest clicks.** For us the aha is a genuinely remarkable tree the visitor did not know stood near them, or their first check-in. No signup wall stands in front of it; that is our deliberate bet, and the opposite (Polarsteps asks for an account first) is simply a different strategy, not a flaw (Hidde, 2026-07-28). Guard this: never put a gate before the first wow.
 
-5. **Sharing is the growth loop that does not need Hidde to post.** Distribution is our weakest point and the owner will not post under his name. But users can share their own collection. A shareable "my trees" page turns every enthusiast into word of mouth and an inbound link. Build the passport to be shared, not just kept.
+5. **Sharing is the growth-loop HYPOTHESIS, untested (labelled 2026-07-28).** Distribution is our weakest point and the owner will not post under his name; the hope is that users share their own collection, making a shareable "my trees" page word of mouth and an inbound link. Nobody has shared anything yet, so build the passport to be shareable, but do not stack further work on this loop as if it were proven; the flywheel's worth-signal will test it.
 
 6. **Seasonality is the re-engagement trigger.** "At its best right now" and, later, "trees at their best near you this week" are the internal triggers that bring people back, the way AllTrails uses recaps. The season feature is not decoration; it is the reason to return.
 
