@@ -245,8 +245,8 @@
       "age_max": 163,
       "location": {
         "address": "Parc Vigier, Boulevard Franck Pilatte, 06300 Nice",
-        "latitude": 43.7027,
-        "longitude": 7.2916,
+        "latitude": 43.6936,
+        "longitude": 7.2895,
         "neighbourhood": "Nice Port"
       },
       "story": "Every Phoenix canariensis lining a promenade or a hotel driveway anywhere in France arguably traces back to one estate on Nice's eastern port. Baron Georges Vigier bought a Venetian-style villa here in 1863 and hired Jean-Pierre Barillet-Deschamps, the head gardener of Paris's own parks department, to landscape 30,000 square metres of grounds with tropical plants, tree ferns, bamboo, orange and olive groves and vineyards. In 1864, according to the garden's own preservation society, Vigier acclimatised the Canary Island date palm here for the first time in France, a claim resting on a single detailed source rather than independent corroboration, though the species did subsequently spread through Riviera gardens over the following decades in exactly the pattern that origin story implies. Vigier went on to breed a hybrid palm of his own, named the Vigieris after him. The estate itself shrank drastically after his era, down to a single hectare when the modern Parc Vigier opened to the public in 1971, but palms including rare Livistona australis specimens still stand among its collection today.",
@@ -263,7 +263,7 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "The 'first in France' claim rests on a single detailed source (the garden's own preservation society) without independent corroboration found, so softened to 'according to' rather than stated as settled fact, per hard rule 8. Photo viewed directly: shows a row of mature, thick-trunked palms along a lawn beside a seafront wall, matching the park's palm collection and waterfront setting. Approved.",
+      "notes": "The 'first in France' claim rests on a single detailed source (the garden's own preservation society) without independent corroboration found, so softened to 'according to' rather than stated as settled fact, per hard rule 8. Photo viewed directly: shows a row of mature, thick-trunked palms along a lawn beside a seafront wall, matching the park's palm collection and waterfront setting. Approved. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1km from the actual park (which sits right at the port, not further inland). Confirmed two ways, Nominatim's own geocode of Parc Vigier (43.6936, 7.2907) and of Boulevard Franck Pilatte itself (43.693-43.694, 7.288-7.290), which cluster tightly together. Moved onto the park.",
       "location_precision": "approximate"
     },
     {

@@ -40,14 +40,20 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
-## 2026-07-28 — A systematic geocode check finds Edinburgh's flagship tree has been mispinned by 2.2km since it went live
+## 2026-07-28 — A site-wide geocode audit finds 8 real location errors across 6 cities, including Edinburgh's flagship tree mispinned by 2.2km
 
-Same session as the entries below. The Brussels fix below made me suspect an "approximate" pin and a genuinely wrong one look identical unless someone checks the stored coordinate against the address next to it. Wrote a one-off script (stdlib only, no new dependency) that geocodes every tree's own address through Nominatim and flags large mismatches.
+Same session as the entries below. The Brussels fix below made me suspect an "approximate" pin and a genuinely wrong one look identical unless someone checks the stored coordinate against the address next to it. Wrote a one-off script (stdlib only, no new dependency) that geocodes all 346 trees' own addresses through Nominatim and flags large mismatches. It flagged 12; every one got a clean second geocode and, where possible, an independent source before anything moved, since the first pass's raw query tripped over Spanish postal codes and would have produced a couple of wrong "fixes" if trusted blind.
 
-- **Craigmillar Castle Yews, Edinburgh's own answer to "what's the oldest tree here", was pointing 2.2km from the actual castle.** Confirmed against both Nominatim and Wikipedia's own coordinate for the castle before fixing; they agree within 40m of each other. Fixed.
-- **Cammo Ash, also Edinburgh, was 1.1km off** the actual 85-acre estate it's supposed to stand in. Same pattern, same fix.
-- Spot-checked the rest of Edinburgh and the first dozen cities the audit has covered so far: nothing else this size, the usual honest approximate pins. The audit was still running (Nominatim allows one request per second, so 346 trees takes a while) at the time of this entry; worth reading the rest of its findings before calling the site clean.
-- Full detail, including exact sources and coordinates, in CURATION.md.
+**8 real errors, all fixed:**
+- **Craigmillar Castle Yews, Edinburgh's own answer to "what's the oldest tree here", was pointing 2.2km from the actual castle.** Confirmed against both Nominatim and Wikipedia's own coordinate for the castle; they agree within 40m of each other.
+- **Cammo Ash, also Edinburgh, was 1.1km off** the actual 85-acre estate it's supposed to stand in.
+- **Lyon's Cedar of Île Barbe was pinned off the island entirely** (roughly 2km out), and **the city's Oak Collection of Parc de la Cerisaie was 1km off** its own park.
+- **Madrid's Stone Pine of the Priest's House was 1.4km outside El Capricho**, the park it's supposed to stand in.
+- **Valencia's Ficus of the Countess of Ripalda was 1.2km off, and its own neighbourhood field was wrong too** (said Extramurs; it's actually in Exposicio). Both fixed together.
+- **Nice's First Canary Island Date Palm was pinned inland of Parc Vigier**, which actually sits right at the port.
+- **London's Mulberry of Charlton House was 1055m from Charlton House itself**, and separately had no sources cited at all despite a note flagging the gap; found and added two while fixing the pin.
+- The other 4 flags (Sintra, Malaga x2, Kyoto) turned out to be false positives from the same postcode quirk; re-checked cleanly, all already sit within 170m of where they should.
+- Full detail, including exact sources and coordinates for every fix, in CURATION.md.
 - Site rebuilt, all contracts validated, pushed.
 
 ## 2026-07-28 — Three real pin/quality fixes (Granada, Dublin, Brussels) found by chasing threads this project's own notes had left open

@@ -125,10 +125,10 @@
       "age_min": 134,
       "age_max": 136,
       "location": {
-        "address": "Plaza Legion Espanola, 46009 Valencia",
+        "address": "Plaza Legion Espanola, 46010 Valencia",
         "latitude": 39.4779,
-        "longitude": -0.3799,
-        "neighbourhood": "Extramurs"
+        "longitude": -0.3658,
+        "neighbourhood": "Exposicio, El Pla del Real"
       },
       "story": "A garden fashion imported from the French Riviera is the reason this tree exists at all. In 1891, the widowed Countess of Ripalda hired Valencia's head gardener, Fernando Llopis, to lay out the grounds of her new palace, and Llopis suggested a Moreton Bay fig after seeing the species become fashionable among wealthy families on the Cote d'Azur, a garden idea Valencian gardeners of the period regularly borrowed from that stretch of coast given its similar climate. The palace itself did not survive the 20th century, demolished in 1968, and when the demolition crew asked how to remove the tree along with it, head gardener Vicente Peris told them that severe pruning alone would be enough to kill it. He was wrong in the way that mattered: rather than dying, the fig grew stronger, and it now stands alone at the entrance to Plaza Legion Espanola, the sole surviving trace of a palace and garden otherwise erased from the site entirely.",
       "verified_sources": [
@@ -144,7 +144,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "1891 planting date and the 1968 demolition/survival story are corroborated across both sources.",
+      "notes": "1891 planting date and the 1968 demolition/survival story are corroborated across both sources. Location and neighbourhood corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1.2km from the actual plaza (same latitude, wrong longitude, suggesting an old data-entry slip). Nominatim places Plaza de la Legion Espanola at 39.4779, -0.3658/-0.3660, three independent hits agreeing within 100m; a further web search independently confirms the plaza sits in the Exposicio neighbourhood of El Pla del Real district, not Extramurs as previously stated. Fixed both fields.",
       "location_precision": "approximate"
     },
     {
