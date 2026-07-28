@@ -40,6 +40,16 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Two real photo leads found (Rome, Barcelona) via a new technique, held back one step short of published
+
+Visitors: 65 visits, 99 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), the strongest closing day yet.
+
+- No reader submissions, site healthy, nothing published found wrong. Depth-exit-test bar still not met: Amsterdam 7/10 photos, Lisbon 6/10, Rome 6/10, Barcelona 7/10, Istanbul 2/10 photos and 6 approximate pins. Amsterdam's own gaps are confirmed dead ends across many prior passes, so this run targeted Rome, Lisbon and Barcelona, the next-closest to the floor, with a genuinely new technique: Wikidata SPARQL geo-queries for images tagged near each tree, instead of re-running the Wikimedia/iNaturalist/Flickr/Openverse searches already exhausted on these gaps.
+- **Two real candidates found**, both well-sourced on paper: Rome's Ginkgo of Villa Sciarra (rom_001), via Rome's own official monumental-tree register on Wikidata, exact address match, CC BY-SA 4.0 photo from Wiki Loves Monuments Italia 2021. Barcelona's Holm Oak of Carrer de l'Encarnacio (bcn_001), a CC BY-SA 4.0 photo of the public garden built around the tree, confirmed as the right site by a companion photo showing "SALVEM L'ALZINA" graffiti, the exact campaign this tree's own story already names.
+- **Neither is marked `approved`.** This run's tooling could not fetch or render image files directly, so I could not personally view either photo to confirm it actually shows the tree rather than just the right site, the same gap a run flagged yesterday evening. Both are recorded as `found_needs_check` with the URL, licence and attribution already filled in, so the only work left is looking at two images. Lisbon's four remaining gaps and Rome/Barcelona's other three stay genuine dead ends, full detail in CURATION.md.
+- FOR HIDDE, only if you're passing a phone or laptop near this anyway: two photos are one look away from clearing Rome and Barcelona's floors. `data/cities/rome.json` tree `rom_001` and `data/cities/barcelona.json` tree `bcn_001`, both `photo.status: "found_needs_check"`. If the image matches the tree, flip that field to `"approved"`. Not blocking, a future run will keep trying too.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-27 — Kyoto's Hosen-in pine gets a photo; Naples, Florence, Barcelona photo dead ends closed out with new techniques
 
 Visitors: 64 visits, 98 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 16), a new high for a single day.
