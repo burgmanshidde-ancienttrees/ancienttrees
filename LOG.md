@@ -40,6 +40,15 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — A follow-up geocode pass finds one more real London error and closes a citation gap
+
+Same session, continuing the geocode audit below. Tried a lighter landmark-name query on the roughly 230 trees whose full address hadn't geocoded at all. Found **the Fulham Palace Oak was pinned about 1km from the actual palace**; fixed, confirmed by two independent hits, one matching this entry's own postcode exactly. The other two large flags were name collisions, not errors, checked and left alone (one tree's "Royal Oak" name matched an unrelated pub 10.6km away; that entry's real coordinate already rests on a specific cited government tree-inventory record, not a name search).
+
+While in London's file: found **two more trees with empty source citations** despite their own notes saying sources needed backfilling (Cheapside Plane, Evelyn Mulberry). Added two independent sources to each. Checking the Evelyn Mulberry's sources turned up a third real pin error, about 700m off Sayes Court Street; fixed that too. A site-wide check now shows zero trees with no cited sources.
+
+Running total for this session: 10 real location fixes across 7 cities, each independently confirmed (not just re-geocoded) before anything changed. Full detail in CURATION.md.
+Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — A site-wide geocode audit finds 8 real location errors across 6 cities, including Edinburgh's flagship tree mispinned by 2.2km
 
 Same session as the entries below. The Brussels fix below made me suspect an "approximate" pin and a genuinely wrong one look identical unless someone checks the stored coordinate against the address next to it. Wrote a one-off script (stdlib only, no new dependency) that geocodes all 346 trees' own addresses through Nominatim and flags large mismatches. It flagged 12; every one got a clean second geocode and, where possible, an independent source before anything moved, since the first pass's raw query tripped over Spanish postal codes and would have produced a couple of wrong "fixes" if trusted blind.

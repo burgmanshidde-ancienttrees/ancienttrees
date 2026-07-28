@@ -228,8 +228,8 @@
    "age_max": 550,
    "location": {
     "address": "Fulham Palace Gardens, Bishop's Avenue, London SW6 6EA",
-    "latitude": 51.4795,
-    "longitude": -0.2193,
+    "latitude": 51.4704,
+    "longitude": -0.2153,
     "neighbourhood": "Fulham"
    },
    "story": "This oak is five centuries old partly because people kept cutting it back. It was coppiced long ago, harvested down to its base, a practice that paradoxically resets a tree's clock and can extend its life by centuries. It is a Holm Oak, an evergreen Mediterranean species rare this far north, and quite possibly the oldest of its kind in Britain. It grows in the grounds of Fulham Palace, the former home of the Bishop of London. Bishop Grindal or Bishop Aylmer, who both lived here in the 16th century, are the likeliest candidates for planting it, among the earliest introductions of the species to England. The oak was among the original 41 trees awarded Great Tree status in 1988.",
@@ -246,7 +246,7 @@
     "status": "approved"
    },
    "curation_status": "ai_generated",
-   "notes": "Species corrected 2026-07-22: original data said Pedunculate Oak (Quercus robur), but Fulham Palace's own site and independent photo captions identify it as Holm Oak (Quercus ilex), possibly the oldest in Britain. Photo now found.",
+   "notes": "Species corrected 2026-07-22: original data said Pedunculate Oak (Quercus robur), but Fulham Palace's own site and independent photo captions identify it as Holm Oak (Quercus ilex), possibly the oldest in Britain. Photo now found. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1km from Fulham Palace itself; Nominatim's own geocode agrees on two separate queries (51.4704-51.4705, -0.2152 to -0.2154), one of them matching this entry's own postcode (SW6 6EA) exactly. Moved onto the palace grounds; still confirmed since the palace itself, not just a neighbourhood, is now correctly pinpointed.",
    "location_precision": "confirmed"
   },
   {
