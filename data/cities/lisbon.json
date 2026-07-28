@@ -177,7 +177,16 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "label": "late winter into spring, when the garden turns a startling shade of orange"
+      }
     },
     {
       "id": "lis_006",
@@ -208,7 +217,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "notes": "A candidate photo was checked and rejected: it is a general photo of the garden/square with no confirmation the named tree itself is in frame."
+      "notes": "A candidate photo was checked and rejected: it is a general photo of the garden/square with no confirmation the named tree itself is in frame.",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "label": "June, when both trees erupt in flowers shaped like a rooster's crest"
+      }
     },
     {
       "id": "lis_007",
@@ -301,7 +316,13 @@
       },
       "curation_status": "flagged",
       "notes": "This paineira is one of six individually classified trees within a nine-tree ensemble at Jardim Alfredo Keil, classified collectively in 2017. No source isolates this specimen's individual age. Photo is iNaturalist observation 249878863 (2024-10-31), a Ceiba speciosa in bloom 28m from this pin, well within the small garden. Viewed directly 2026-07-26: shows a mature trunk and branches covered in the characteristic pink, white-throated blooms of Ceiba speciosa against an urban backdrop consistent with Praça da Alegria, matching both the species and the location closely enough to approve despite the observer's ID being casual-grade rather than community-confirmed. Pin confirmed 2026-07-26 against Portugal's national registry of classified trees (ICNF), feature id 316, a conjunto arboreo (tree grouping) at Praca da Alegria listing exactly the garden's known species mix (2 Ceiba speciosa/crispiflora, 2 Metrosideros excelsa, 2 Erythrina crista-galli, 1 Celtis australis, 1 Washingtonia robusta), protected since 1970 with the 2017 classification adding to it. The registry's own point (38.717875, -9.145227) sits within 2m of the stored pin, so treated as confirmed even though, like the story itself says, the classification covers the ensemble rather than isolating this one paineira from its five neighbours.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when the tree turns the garden pink"
+      }
     },
     {
       "id": "lis_010",
