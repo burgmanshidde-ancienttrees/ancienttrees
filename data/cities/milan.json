@@ -301,8 +301,8 @@
       "age_max": 260,
       "location": {
         "address": "Corner of Viale Affori and Via Astesani, 20161 Milano",
-        "latitude": 45.521,
-        "longitude": 9.174,
+        "latitude": 45.517026,
+        "longitude": 9.171452,
         "neighbourhood": "Affori, Municipio 9"
       },
       "story": "Every Milanese from Affori knows this tree simply as la Pianta, the Plant, as if there were no other, and local legend insists Napoleon is the reason it stands where it does: supposedly planted to honour a Milanese noblewoman he had fallen for during his Italian campaign, sometime around 1800. Core samples taken in 2013, when a restoration crew drilled into the trunk to check its health, tell a more modest story: growth rings put the tree at about 187 years old at the time, closer to the 1820s than the Napoleonic Wars. This page gives both figures, since neither can be disproved outright and the drilled sample is the harder evidence. What is not in dispute is the tree itself: a plane 20 metres tall with a trunk over 2 metres in diameter, standing at the corner of Viale Affori and Via Astesani since before the surrounding neighbourhood existed as anything but farmland. An owl once nested in a cavity on its western side; the memory is marked today by a small wooden owl sculpture at the base of the trunk. A metal bracket further up the trunk, once used to string electrical cable through the branches, is a rare surviving trace of how Milan wired its outer suburbs before anyone thought to protect the tree carrying the load.",
@@ -319,8 +319,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Genuine age dispute between a 2013 dendrochronological core sample (about 187 years) and the popular Napoleonic-era legend (over 250 years); presented as a range with the scientific figure given more weight, per hard rule 8/P7. Coordinates are an estimate of the named street corner rather than a surveyed point. This is a different, still-living tree from the similarly aged plane at Villa Litta (also in Affori), which was felled in 2015 after a fungal disease; only a trunk cross-section of that one survives, noted in this city's FAQ rather than listed as a tree to visit.",
-      "location_precision": "approximate"
+      "notes": "Genuine age dispute between a 2013 dendrochronological core sample (about 187 years) and the popular Napoleonic-era legend (over 250 years); presented as a range with the scientific figure given more weight, per hard rule 8/P7. This is a different, still-living tree from the similarly aged plane at Villa Litta (also in Affori), which was felled in 2015 after a fungal disease; only a trunk cross-section of that one survives, noted in this city's FAQ rather than listed as a tree to visit. Pin corrected 2026-07-28, about 490m: Italy's volunteer-run RAMI tree registry (ilregistrodeglialberi.it) names this exact tree 'Platano di Affori' at Via Astesani, and OpenStreetMap/Nominatim independently geocodes 'Via Astesani, Affori' to within about 7m of RAMI's own coordinate, two independent sources converging tightly. Upgraded to confirmed.",
+      "location_precision": "confirmed"
     },
     {
       "id": "mil_010",
