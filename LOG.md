@@ -40,6 +40,12 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Amsterdam's photo gaps tried with the same new technique: still exhausted, but two real leads found blocked by auth, not by absence
+
+- Same session as the entry below. Applied the Wikidata SPARQL geo-query technique that worked for Rome and Barcelona to Amsterdam's three remaining gaps (Heimanseik, Vondelpark Poplar, Amstelkade Olive Willow); no result, these are now genuinely exhausted dead ends across a wide range of techniques over many sessions.
+- Two things worth knowing rather than re-discovering: Amsterdam released ~800,000 of its own Mapillary panoramas as open CC-BY-SA data, which would plausibly cover both a park-path tree and a street tree, but Mapillary needs an API token this session doesn't have. Wikimedia's Commons structured-data query endpoint now requires OAuth login even to read, blocking one more technique. Neither is a dead end, both are a credentials problem for whoever next wants to spend a session on Amsterdam's last three photos.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Two real photo leads found (Rome, Barcelona) via a new technique, held back one step short of published
 
 Visitors: 65 visits, 99 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), the strongest closing day yet.
