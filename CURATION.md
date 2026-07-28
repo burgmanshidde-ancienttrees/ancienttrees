@@ -1,3 +1,12 @@
+## 2026-07-28 — Malaga: a real photo found and approved for the Tallest Araucaria, from a contributor already trusted elsewhere in this file; six other gaps stay genuine dead ends
+
+Continued down the depth ladder after Dublin, Brussels and Antwerp (all above) to the next oldest-published city still below floor: Malaga (3/10 photos, 5/10 approximate at the start of this pass).
+
+- **mlg_007, The Tallest Araucaria in the Province: approved.** iNaturalist observation 3186160 (CC-BY-SA), photographed at La Concepcion by Daniel Capilla / dcapillae, the same photographer already credited for mlg_001 and mlg_003's approved photos elsewhere in this file, a real corroborating signal on top of the match itself. The observer's own field notes independently state "araucarias are the tallest trees in this garden, one exceeding 45m, the tallest in Malaga province", matching this entry's own claim almost word for word without either being copied from the other. Viewed the full-size image directly: several tall Araucaria heterophylla with the species' distinctive tiered branching rising above the garden's canopy, city visible behind. Approved with an honest caveat, the same treatment given to other multi-tree candid shots on this site: the frame shows the garden's araucaria grove rather than one trunk isolated and confirmed as the specific record-holder. **Malaga now at 4/10 photos.**
+- **Six remaining gaps re-tried, all stay genuine dead ends**: iNaturalist geo-radius searches on mlg_004 (Ceiba speciosa, Cortina del Muelle), mlg_006 (hackberry, already flagged single-source), mlg_008 (holm oak) and mlg_009's specific species (Peltophorum dubium, zero results) all returned only CC-BY-NC or unlicensed observations; mlg_010 (the Churriana avocado, restricted-access school grounds) returned zero iNaturalist results entirely, consistent with its online presence being limited to the school's own social media as already noted. Openverse searches for mlg_005 (Jardines de Picasso ficus), mlg_004 and mlg_010 all returned zero results.
+- Malaga now at 4/10 photos, 5/10 approximate.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Antwerp: Groeninventaris re-queried for the three remaining pin gaps, one real new lead found but too ambiguous to use; photo hunt across five gaps stays a dead end
 
 Continued the same depth pass onto Antwerp (5/10 photos, 7/10 approximate), the last of the three Belgium/Ireland lead-group cities not yet touched today, after Dublin and Brussels above.
