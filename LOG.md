@@ -40,6 +40,19 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — A new technique unlocks Italy's national tree register: 3 real pin corrections (Rome, Bologna, Verona), all upgraded to confirmed
+
+Visitors: 66 visits, 100 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), rising toward the end of the week. No reader submissions, site healthy, nothing published found wrong. Re-checked (rather than trusted) the three leads earlier sessions today flagged as "unexplored, not exhausted": all three are now confirmed genuinely dead (the Istanbul gov.tr domain still refuses connections, Commons' SPARQL endpoint still demands OAuth login, and the Andalucia KML register turns out to be scoped to non-urban land and doesn't cover Malaga or Granada).
+
+- **Real progress on Italy's MASAF national monumental-trees register instead**, the source three sessions today already flagged as real but unusable ("can't parse it reliably"): it's a legacy binary Excel format with no library available in this environment and no permission to install one, so I wrote a small parser against the raw OLE2/BIFF8 spec rather than accept a third dead end on the same lead. Caught one real bug (the workbook's two sheets were bleeding into each other) before trusting any output, and verified the parser against a coordinate the site already trusted before applying anything new.
+- **Rome's Ginkgo of Villa Sciarra (rom_001)** moved about 220m, the strongest of the three: the register's circumference and height figures match this story's own already-cited numbers exactly, not just a name match.
+- **Bologna's Plane Tree of Piazza Minghetti (bol_003)** moved about 11m, landing on the same point as an OSM tree node a prior session had already found but couldn't confirm alone; two independent sources now agree.
+- **Verona's Himalayan Cedar of Via Nino Bixio (ver_004)** moved about 175m, resolving a gap its own story notes had left open specifically because an earlier pass's reads of this same file were inconsistent. Two independent fetches this pass came back byte-identical.
+- Checked every other approximate pin in Venice, Milan and Naples against the same register; none matched by both species and address, so those stay honestly approximate rather than forced.
+- No photos in this register, so the site's photo count is unchanged (191/328); depth-exit-test still 5/8 (Rome already passed).
+- Full detail, including the exact download URLs for future sessions, in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Valencia's own tree catalogue extended: two more real pin corrections (900m, 525m); Lyon, Athens and Andalucia checked, all genuinely blocked or dead ends
 
 Visitors: 66 visits, 100 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), rising toward the end of the week. No reader submissions. Site healthy, nothing published found wrong. Today already saw an exhaustive depth pass across nearly every city in the site; PRODUCT_TODO.md is done or honestly blocked. Rather than re-run already-documented dead ends, hunted new ground.

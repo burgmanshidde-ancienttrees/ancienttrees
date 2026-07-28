@@ -126,9 +126,9 @@
       "age_min": 80,
       "age_max": 150,
       "location": {
-        "address": "Viale Nino Bixio, 37126 Verona",
-        "latitude": 45.449,
-        "longitude": 10.9908,
+        "address": "Viale Nino Bixio 2, 37126 Verona",
+        "latitude": 45.448842,
+        "longitude": 10.993025,
         "neighbourhood": "Borgo Trento"
       },
       "story": "This cedar rises over Viale Nino Bixio, a tree-lined avenue running through Borgo Trento from the city hospital toward Ponte Garibaldi, and it is one of only three trees standing anywhere within Verona city limits that Italy's national monumental-tree register has formally recognised. Its official measurements, a trunk 309cm around and a crown reaching 28 metres, earned it inclusion specifically for landscape value rather than for a documented age or historical association, the register's own more modest criterion compared to the age-and-dimension reasoning applied to its counterparts in Piazza Indipendenza. Cedrus deodara is native to the western Himalayas, where it grows at altitudes up to 3,000 metres in conditions nothing like Borgo Trento's flat, urban riverside setting, and its presence on a residential Verona boulevard reflects the same 19th and early 20th century fashion for grand, fast-growing conifers that filled institutional and civic gardens across Italy in the same period. No individual planting date is recorded, so its age here is presented as a broad, mature estimate rather than a precise figure.",
@@ -145,8 +145,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Dimensions (309cm circumference, 28m height) and 'landscape value' listing criterion from the official AMI national register, corroborated by the independent RAMI tree-registry aggregator covering the same three Verona entries. No individual age or planting date documented. No usable photo found.",
-      "location_precision": "approximate"
+      "notes": "Dimensions (309cm circumference, 28m height) and 'landscape value' listing criterion from the official AMI national register, corroborated by the independent RAMI tree-registry aggregator covering the same three Verona entries. No individual age or planting date documented. No usable photo found. Coordinates now taken directly from the AMI register's own GIS record (record 03/L781/VR/05, 'Via Nino Bixio 2', species 'Cedro dell'Himalaya'), read with a purpose-built binary XLS parser rather than the lossy text extraction that left this entry unresolved on earlier passes: two independent fetches of the source spreadsheet returned byte-identical coordinates. About 175m from the previous street-wide estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ver_005",
