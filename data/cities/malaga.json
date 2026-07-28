@@ -114,7 +114,16 @@
       },
       "curation_status": "flagged",
       "notes": "The 'possibly thickest in Spain/Europe' claim is presented with the hedge intact per hard rule 8, sourced to one dedicated garden blog (jardinessinfronteras.com) rather than an official register; softened language used throughout. No planting date documented; age range is a broad estimate for a mature specimen of this species rather than a sourced figure. Photo verified directly: bare-branched winter shot showing the distinctive swollen barrel trunk and the red urban-art benches described in the TreeTags coverage, an exact match to this tree and garden. Location confirmed 2026-07-27: the stored coordinates reverse-geocode to 'Fuente del Jardin del Palo Borracho' (Fountain of the Palo Borracho Garden), a fountain named after this tree's own popular Spanish name, an unambiguous landmark match.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "label": "February into May, when the barrel-shaped trunk sits beneath a canopy of cream-white flowers"
+      }
     },
     {
       "id": "mlg_004",
@@ -144,7 +153,14 @@
       },
       "curation_status": "flagged",
       "notes": "Both sources report the same official TreeTags campaign description (23m height, preserved in an elevated planter during cathedral-area remodelling); treated as two independent republications of one municipal source rather than fully independent corroboration, consistent with how this project has flagged similar cases elsewhere. No usable photo found: the street's own Wikimedia Commons category (16 files) documents only buildings and plaques, no vegetation.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October into November, when it drops its leaves and flowers pink at the same time"
+      }
     },
     {
       "id": "mlg_005",
