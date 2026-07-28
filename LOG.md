@@ -40,6 +40,15 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Berlin, Vienna, Prague and Munich reach 10/10 photos
+
+Visitors: 65 visits, 99 page views over 7 days, still the strongest closing day (17 visits yesterday). No submissions.
+
+- A new photo-search angle (searching Commons directly for the "Naturdenkmal [species] [park]" filename pattern these countries' own tree photographers use, instead of searching by tree name) found 5 real photos, each viewed directly before approval: Prague's Neruda's Pear Tree, Vienna's Ginkgo of the Schubert Monument, Munich's Krüner Eiche and Beech of the Englischer Garten, and Berlin's Steinlanke Oak. All four cities now stand at 10/10 photos.
+- Spent real effort re-hunting Amsterdam, Lisbon and Istanbul's gaps first, without realizing CURATION.md already had dozens of dead-end entries for exactly those searches today. Nothing new found there, no harm done, but worth a note: check CURATION.md for same-day dead ends on a city before re-searching it.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Product work: seasonality completion pass, PRODUCT_TODO.md item 5
 
 Every below-floor lead-group and marquee-Europe city had a fresh research pass earlier today (see the six entries below), so this pass moved to product work rather than re-run searches already confirmed exhausted a few hours earlier.

@@ -81,13 +81,13 @@
         "label": "November, when it turns the same uniform gold as Schönbrunn's ginkgo across town"
       },
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/GuentherZ_Naturdenkmal_569_2010-02-27_0152_Wien01_Stadtpark_Ginkgo.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "GuentherZ, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Replaces the dead Stock im Eisen relic on 2026-07-27 per Hidde's 'we doen niet aan dode bomen' rule (CLAUDE.md Step 1); id vie_002 reused so the existing URL keeps resolving, same precedent as Barcelona's bcn_008 swap. Naturdenkmal Nr. 569, protected since 3 July 1973 (Vienna's own Naturdenkmal list). The circa-1900 planting date and Heinrich Braun attribution are corroborated across independent secondary sources (cityabc.at's Stadtpark walking-route page and general web search) but not yet traced to a primary municipal record, so flagged. No open-licensed photo of the tree itself found on Wikimedia Commons, only a photo of its Naturdenkmal plaque (GuentherZ, 2010); left honestly missing rather than using the plaque photo to stand in for the tree. Location is the Schubert monument's own surveyed coordinates, used as a landmark anchor since no tree-specific coordinate was found; kept approximate for that reason despite the otherwise well-documented designation.",
+      "notes": "Replaces the dead Stock im Eisen relic on 2026-07-27 per Hidde's 'we doen niet aan dode bomen' rule (CLAUDE.md Step 1); id vie_002 reused so the existing URL keeps resolving, same precedent as Barcelona's bcn_008 swap. Naturdenkmal Nr. 569, protected since 3 July 1973 (Vienna's own Naturdenkmal list). The circa-1900 planting date and Heinrich Braun attribution are corroborated across independent secondary sources (cityabc.at's Stadtpark walking-route page and general web search) but not yet traced to a primary municipal record, so flagged. Location is the Schubert monument's own surveyed coordinates, used as a landmark anchor since no tree-specific coordinate was found; kept approximate for that reason despite the otherwise well-documented designation. Photo resolved 2026-07-28: a prior pass found only GuentherZ's companion photo of the tree's Naturdenkmal plaque and left the entry honestly missing rather than use a plaque photo to stand in for the tree; a wider same-photographer search this pass found the tree photo itself from the same 2010-02-27 shoot (three sequential files: 0152/0153 the tree, 0155 the plaque), CC BY 3.0. Viewed both directly: 0152 shows a mature bare-winter tree above Stadtpark's grand facades, and 0155 shows the plaque itself nailed to the bark reading \"WIENER NATURDENKMAL NR: 569 GINKGO BILOBA\" plus a second plaque \"FACHERBLATTERBAUM Ginkgo biloba\", the exact German nickname this entry's own story already quotes, taken minutes apart in the same sequence, about as strong an identity match as a citizen photo can carry. Approved on 0152 as the representative tree photo.",
       "location_precision": "approximate"
     },
     {

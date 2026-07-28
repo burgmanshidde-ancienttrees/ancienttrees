@@ -322,13 +322,13 @@
       "access": "Free, public garden (Seminarska zahrada), open since 1930",
       "transport": "5 min walk from the Hellichova tram stop (lines 12, 20, 22), via the Seminary Garden entrance",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/272497173/large.jpg",
+        "license": "CC BY",
+        "attribution": "Dave Richardson, via iNaturalist",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Not a legally protected pamatny strom, only an entry in Prague's separate, lower-tier 'significant trees' inventory since 2013, unlike every other tree on this list. No exact coordinates were published in either source; location given here is approximate, triangulated from the described path crossing between Petrinske Terasy restaurant and Hellichova street within the Seminary Garden. No open-licensed photo found despite a real search across Commons, iNaturalist and Flickr.",
+      "notes": "Not a legally protected pamatny strom, only an entry in Prague's separate, lower-tier 'significant trees' inventory since 2013, unlike every other tree on this list. No exact coordinates were published in either source; location given here is approximate, triangulated from the described path crossing between Petrinske Terasy restaurant and Hellichova street within the Seminary Garden. Photo found 2026-07-28: iNaturalist observation 157617276 (CC BY, Dave Richardson, 29 April 2023), place_guess \"Petrin Gardens, Prague 1\", viewed directly and shows a gnarled old fruit-tree trunk in white blossom with young leaves, consistent with a wild pear in April; the observation's own coordinates sit roughly 200m from this entry's triangulated pin, close enough within the same garden to treat as the tree described here, though the pin itself stays approximate since the source only names a path crossing, not a survey point.",
       "location_precision": "approximate"
     }
   ]
