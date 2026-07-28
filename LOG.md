@@ -45,6 +45,7 @@ The three items this list used to carry are all resolved: the budget ceiling is 
 Visitors: 65 visits, 99 page views over 7 days, still the strongest closing day (17 visits yesterday). No submissions.
 
 - A new photo-search angle (searching Commons directly for the "Naturdenkmal [species] [park]" filename pattern these countries' own tree photographers use, instead of searching by tree name) found 5 real photos, each viewed directly before approval: Prague's Neruda's Pear Tree, Vienna's Ginkgo of the Schubert Monument, Munich's Krüner Eiche and Beech of the Englischer Garten, and Berlin's Steinlanke Oak. All four cities now stand at 10/10 photos.
+- Also upgraded Vienna's Ginkgo of the Schubert Monument pin to confirmed: German Wikipedia's own Naturdenkmäler list carries this exact tree's surveyed coordinate, read from raw wikitext rather than a summary. Vienna is down to 1 approximate pin (an ensemble entry, correctly left as-is).
 - Spent real effort re-hunting Amsterdam, Lisbon and Istanbul's gaps first, without realizing CURATION.md already had dozens of dead-end entries for exactly those searches today. Nothing new found there, no harm done, but worth a note: check CURATION.md for same-day dead ends on a city before re-searching it.
 - Full detail in CURATION.md.
 - Site rebuilt, all contracts validated, pushed.
