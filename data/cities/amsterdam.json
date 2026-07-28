@@ -272,7 +272,14 @@
       },
       "curation_status": "flagged",
       "notes": "Exact species within Elaeagnus is not confirmed (likely E. angustifolia based on a 'narrow-leaved' descriptor); the two original narrative sources both trace back largely to the same trade-press profile, so treat as a single well-documented but not fully independent source pair. Pin corrected 2026-07-26: the previous coordinate, derived from a street-level geocode of 'Amstelkade 154', was found to be about 350m off. Amsterdam's own municipal tree registry (stamgegevens WFS) carries exactly one Elaeagnus angustifolia in this stretch of Amstelkade, id 999049, planted 1948 (matching the 78-year age claim exactly) and marked 'Monumentale boom' (matching the 'unique in the Netherlands' framing), at 52.3481068, 4.8904994. Treated as confirmed. No photo found this pass despite iNaturalist, Wikimedia, Flickr and Openverse searches.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "label": "May and June, when the small yellow flowers scent the whole street"
+      }
     },
     {
       "id": "ams_009",
