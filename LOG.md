@@ -40,6 +40,13 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Nice and Lyon: depth headroom checked and found genuinely limited, not just unsearched
+
+- **Nice** (8/10 photos, already clears the floor, 9/10 approximate): checked whether the regional remarkable-trees registry that already confirmed one Nice tree covers any of the other nine. It doesn't, and for a real reason: eight of Nice's nine remaining entries are written as ensembles with no single named, measured specimen in any source, so there's no more precise point to pin without inventing one. High approximate count, honestly earned.
+- **Lyon** (2/10 photos, 6/10 approximate): a fresh iNaturalist pass across every remaining species found nothing licence-clear. One real photo candidate for the Jardin des Chartreux entry was found and declined: correctly geotagged at "the garden" by name, but about 600m from this entry's own stored pin, too far for the small garden described, so left unconfirmed rather than guessed.
+- Full detail in CURATION.md. No data changed either city.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Milan gains a real photo; Florence re-confirmed exhausted
 
 - **Florence** (4/10 photos, marquee-Europe's last below-floor city): an independent iNaturalist pass on all 6 remaining gaps confirms the dead end already logged for this city rather than finding anything new. Stays 4/10.
