@@ -1,3 +1,12 @@
+## 2026-07-28 — Valencia's 8 photo gaps checked, one strong pin corroboration found, no publishable photo
+
+Continued the Tier-2 depth ladder after Lyon: Valencia (2/10 photos, 7/10 approximate).
+
+- iNaturalist API pass across all 8 remaining species (olive, Moreton Bay fig, holm oak, Canary Island date palm, Mexican fan palm x2, river red gum, Kashmir cypress): only one hit anywhere, a Ficus macrophylla observation for vlc_004 (Ficus of the Countess of Ripalda), CC-BY-NC and unusable, but its own GPS (39.4778898, -0.3799798) lands within about 15m of this entry's stored pin, a strong independent corroboration that the existing coordinate is genuinely right even though it stays formally `approximate` (no upgrade made, since the observation itself carries no survey provenance beyond a phone GPS, consistent with how this project treats single citizen observations elsewhere).
+- Targeted searches for the two most distinctively named entries (Los Tres Amigos, a named palm trio at Plaza España; La Palmera de Vicente Peris, a documented 1960s night-time relocation) found real local-history coverage but no Wikimedia Commons or other open-licensed photo of either specific tree.
+- Valencia stays at 2/10 photos, 7/10 approximate. No data changed.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Nice and Lyon checked for depth headroom: both genuinely limited, one Lyon photo candidate correctly declined on a coordinate mismatch
 
 Continued down the Tier-2 depth order after Milan.
