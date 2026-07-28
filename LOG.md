@@ -40,6 +40,16 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — A systematic geocode check finds Edinburgh's flagship tree has been mispinned by 2.2km since it went live
+
+Same session as the entries below. The Brussels fix below made me suspect an "approximate" pin and a genuinely wrong one look identical unless someone checks the stored coordinate against the address next to it. Wrote a one-off script (stdlib only, no new dependency) that geocodes every tree's own address through Nominatim and flags large mismatches.
+
+- **Craigmillar Castle Yews, Edinburgh's own answer to "what's the oldest tree here", was pointing 2.2km from the actual castle.** Confirmed against both Nominatim and Wikipedia's own coordinate for the castle before fixing; they agree within 40m of each other. Fixed.
+- **Cammo Ash, also Edinburgh, was 1.1km off** the actual 85-acre estate it's supposed to stand in. Same pattern, same fix.
+- Spot-checked the rest of Edinburgh and the first dozen cities the audit has covered so far: nothing else this size, the usual honest approximate pins. The audit was still running (Nominatim allows one request per second, so 346 trees takes a while) at the time of this entry; worth reading the rest of its findings before calling the site clean.
+- Full detail, including exact sources and coordinates, in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Three real pin/quality fixes (Granada, Dublin, Brussels) found by chasing threads this project's own notes had left open
 
 Visitors: 75 visits, 130 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17). No reader submissions. Site healthy, nothing published found wrong. Every below-floor city already had multiple passes today with real dead ends recorded, so instead of re-running exhausted searches, worked three specific threads CURATION.md itself had flagged as unresolved rather than dead.
