@@ -40,6 +40,20 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Sintra goes live: 36th city, 5 trees, the last of three cities for the Europe city-trips collection
+
+Visitors: 69 visits, 104 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), plus 4 so far today. No reader submissions (form checked fresh, header row only). Site healthy at session start, build clean, nothing published found wrong. Re-verified rather than assumed: Amsterdam (7/10 photos), Lisbon (6/10) and Istanbul (2/10 photos, 5 approximate) are still short of the depth-exit-test bar and remain exhaustively documented dead ends across many sessions today; PRODUCT_TODO.md has nothing open. Moved to the one piece of new-city work still available under rung 6's standing exception: Sintra, the last of three cities (with Palermo and Cadiz) Hidde pre-approved to complete the "Top 10 tree city trips of Europe" collection. All three are now live, so that collection itself can finally be assembled.
+
+- Sintra's throughline: a Romantic-era mountain town whose 19th century palace gardens (Pena, Monserrate) were planted with specimens imported from across the world, a New Zealand pohutukawa, a Norfolk Island pine, a Pacific cedar that has spent 150 years visibly walking across its own lawn, while the town's own native cork oak, over 300 years old, still stands where it always has at the edge of a public road.
+- Found Portugal's ICNF classified-tree register is directly queryable this session (a live ArcGIS endpoint, not just the blocked dados.gov.pt portal earlier Lisbon sessions hit). Two of Sintra's five trees are sourced straight from it with exact coordinates: the Plane Tree of Parque da Liberdade and the Fern Cork Oak of Quinta do Relógio, both shipped `confirmed`. The same query independently reconfirmed the standing exclusion of the 800-year sweet chestnut at Quinta do Castanheiro (private land, mutilated Feb 2025), correctly left off the site.
+- A real hard-rule-10 check, not skipped: the cork oak's address sat right at a private estate's edge. Found an explicit source confirming it stands at the public roadside, not inside the grounds, before publishing its coordinates.
+- One tree (the Pohutukawa of Monserrate) shipped honestly single-sourced and flagged rather than padded with a second, more dramatic pohutukawa at the same garden that only monumentaltrees.com documents.
+- 2 of 5 photos found and viewed directly (fetched then read as images, confirming this session's tools can do that); the other 3 are genuine dead ends after a real search, not guessed at.
+- Shipped at 5 trees, one above the 4-tree minimum, no padding.
+- Full detail in CURATION.md.
+- **Next for this collection**: the collection page and its walking routes still need building, plotted over real streets per Hidde's own bar. A future pass's job, not squeezed into this one.
+- Site rebuilt (550 pages), all contracts validated, pushed.
+
 ## 2026-07-28 — Cadiz goes live: 35th city, 5 trees, second of three for the Europe city-trips collection
 
 Same session as Palermo below. Cadiz's public gardens are almost entirely non-native trees, a legacy of centuries as an Atlantic trading port: a fig from India, a dragon tree from the Canary Islands, a pohutukawa reported as Europe's oldest documented specimen of its species, an ombu from Argentina, a floss silk tree from Brazil.
