@@ -6,6 +6,12 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## The account-era duty list (recorded 2026-07-28, gap analysis)
+
+What a real SaaS owes its users the day accounts link publicly, bundled at the same gate as the delete function so none of it can be forgotten: terms of service (plain, short, his approval); a line in the privacy page naming Supabase as processor (their standard DPA covers it, reference it); a backup-and-export story for user data (a collection someone built must survive our mistakes; Supabase backups exist on paid tiers, verify what the free tier gives and export weekly via a run if needed); Row Level Security policies reviewed on every table before public writes; the disposable test user removed. Best practice source: any pre-launch data-protection checklist; ours-sized, one session with Hidde.
+
+**Trigger:** the same session that builds the delete function, before the login ever links publicly.
+
 ## Liveness: the season layer as the site's heartbeat (Hidde, 2026-07-28, "opslaan tot we dat ooit moeten doen")
 
 His vision, condensed: the site must feel ALIVE, not static. Concretely:
