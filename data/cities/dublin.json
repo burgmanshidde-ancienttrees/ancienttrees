@@ -243,15 +243,16 @@
       "age_min": 145,
       "age_max": 158,
       "location": {
-        "address": "St Anne's Park, main avenue near All Saints Road, Raheny, Dublin 5",
-        "latitude": 53.3714,
+        "address": "Main Avenue, St Anne's Park, Raheny, Dublin 5",
+        "latitude": 53.3718,
         "longitude": -6.187,
         "neighbourhood": "Raheny / Clontarf"
       },
       "story": "Lord Ardilaun planted a windbreak in the 1870s that is still doing its job a century and a half later. Sixty seven holm oaks, evergreen and Mediterranean, line the main avenue and old estate boundaries of St Anne's Park, chosen because Dublin Bay's cold easterly winds off Bull Island would otherwise strip anything deciduous bare for half the year. Arthur Guinness, first Baron Ardilaun, inherited the estate in 1868 and spent much of his fortune turning it into a private demesne with formal gardens and grand tree-lined approaches, only for Dublin Corporation to buy the whole estate from his family in 1939 and open it to everyone. The oaks never got the memo that they were meant to shelter a private house: they shelter dog walkers, parkrunners and a Saturday market instead. Unlike most street trees, a holm oak keeps its dark, leathery leaves through the Irish winter, so the avenue looks essentially the same in January as it does in July, a rare piece of consistency in a park that changes with every season around it.",
       "verified_sources": [
         "https://en.wikipedia.org/wiki/Saint_Anne%27s_Park",
-        "https://www.clontarfonline.com/st.annes.htm"
+        "https://www.clontarfonline.com/st.annes.htm",
+        "https://www.eghn.org/en/st-annes-park-2/"
       ],
       "access": "Free, public park, open at all hours",
       "transport": "DART to Raheny or Harmonstown station, then a short walk",
@@ -262,8 +263,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Photo verified on Commons: filed under both Category:Saint Anne's Park, Dublin and Category:Quercus ilex (cultivated), showing a straight avenue of dense dark evergreen trees consistent with the holm oak avenue described.",
-      "location_precision": "approximate"
+      "notes": "Photo verified on Commons: filed under both Category:Saint Anne's Park, Dublin and Category:Quercus ilex (cultivated), showing a straight avenue of dense dark evergreen trees consistent with the holm oak avenue described. Pin resolved 2026-07-28: the European Garden Heritage Network's own account (eghn.org) explicitly states Main Avenue itself, not the separate All Saints Avenue elsewhere in the park, is 'lined with Austrian Pine and Holm Oak'. Queried OpenStreetMap for the park's named ways and found Main Avenue mapped as an actual surveyed path (running roughly east-west, several nodes between -6.178 and -6.194 longitude at ~53.372 latitude); the pin now sits on that mapped path rather than an estimate, replacing the earlier address's confusing reference to All Saints Road, which belongs to a real but different avenue in the same park (a prior pass's OSM candidate near All Saints Road, previously left unresolved as possibly unrelated, is that separate All Saints Avenue, not this one). Upgraded to confirmed since the pin now sits on the actual named, sourced avenue this entry describes.",
+      "location_precision": "confirmed"
     },
     {
       "id": "dub_009",
