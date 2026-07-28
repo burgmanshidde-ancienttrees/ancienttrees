@@ -123,6 +123,7 @@
       "age_estimate": "over 300 years",
       "age_min": 300,
       "age_max": 340,
+      "best_time": { "months": [10, 11], "label": "late October, when its leaves turn copper, older than the park Count Rumford built around it" },
       "location": {
         "address": "Englischer Garten, near Forstweg, Schwabing-Freimann, 80802 München",
         "latitude": 48.17222,
@@ -273,6 +274,7 @@
       "age_estimate": "undated, protected for rarity of size in the cityscape",
       "age_min": 100,
       "age_max": 180,
+      "best_time": { "months": [8], "label": "August, the quietest month of the year for almost anything else blooming in Munich" },
       "location": {
         "address": "Karolinenplatz 2a, Maxvorstadt, 80333 München",
         "latitude": 48.14417,

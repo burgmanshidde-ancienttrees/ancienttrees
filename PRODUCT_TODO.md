@@ -42,8 +42,9 @@ Draft up to two per pass from this slate, best query-fit first: ~~Ancient oaks o
 Since blueprint v1.3 (2026-07-27) collections publish without owner approval, under the research standard: every entry script-checked against the tree data, superlatives per hard rule 8, voice per TONE_OF_VOICE.md. Announce each new collection in LOG.md like any other work.
 **Done when (per pass):** up to two new collection JSONs validate, build and are linked; a check script confirms every listed tree exists with the claimed property (age, species); the LOG.md entry exists.
 
-### 5. Seasonality completion pass
+### 5. DONE 2026-07-28, built in session: seasonality completion pass
 Every qualifying tree across all 33 cities gets an honest `best_time` (species with a real peak only; evergreens get none, per Step 3's rules).
+The required genera (ginkgo, wisteria, wingnut, horse chestnut, magnolia) were already fully covered by prior sessions. This pass found and closed a narrower real gap: Bald Cypress, Black Locust, Black Mulberry, Japanese Pagoda Tree, European Beech and Northern Red Oak each had `best_time` on some entries and not identical-species siblings with the same genuine peak. Added it to 13 trees, each written fresh from its own story, not copied. Left Oriental Plane and Pedunculate Oak alone deliberately: most entries of both correctly have no `best_time`, since neither species carries a single specific worth-the-trip moment the way the others do; a lopsided ratio there is the no-filler rule working, not a gap. Full detail in CURATION.md 2026-07-28.
 **Done when:** a count script shows every ginkgo, wisteria, wingnut, horse chestnut, magnolia and deciduous-showpiece species carries `best_time`, and no evergreen (yew, holm oak, cypress, cedar, pine, camphor, olive) does.
 
 ### 6. DONE 2026-07-27, built across two passes: internal linking for collections and species pages

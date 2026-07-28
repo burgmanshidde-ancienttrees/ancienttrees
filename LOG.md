@@ -40,6 +40,15 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Product work: seasonality completion pass, PRODUCT_TODO.md item 5
+
+Every below-floor lead-group and marquee-Europe city had a fresh research pass earlier today (see the six entries below), so this pass moved to product work rather than re-run searches already confirmed exhausted a few hours earlier.
+
+- Audited `best_time` coverage across all 328 trees. The item's own required list (ginkgo, wisteria, wingnut, horse chestnut, magnolia) was already fully covered, but four other species turned out to have a real, documented seasonal moment on some entries and not their siblings of the identical species: Bald Cypress's autumn needle-drop, Black Locust's May bloom, Black Mulberry's August fruiting, Japanese Pagoda Tree's August bloom (Munich's own story already said "flowers in August" without the structured field set). Added `best_time` to 10 trees across Berlin, Lyon, Madrid, Paris (x3), London (x2) and Munich, each written fresh from that tree's own story. Also closed two more while auditing: European Beech's and Northern Red Oak's autumn colour, 3 more trees across Munich, Prague and New York.
+- Left Oriental Plane and Pedunculate Oak alone on purpose: most entries of both species correctly have no `best_time`, since neither carries the kind of specific, worth-a-trip moment the site's no-filler rule requires, unlike the four species above.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Verona gains a real photo for the Piazza Bra cedar
 
 - **Verona** (2/8 photos, 6/8 approximate), next after Bologna: found a real photo for ver_001, the Cedar of Piazza Bra, in the square's own Commons category, geotagged almost exactly on this entry's stored pin and showing the same fountain the tree's own story describes it standing beside since 1873. Approved with an honest caveat since several cedars are visible around the fountain, not one isolated trunk. Verona now at 3/8 photos. Five other gaps (Giardino Giusti's cypress avenue and yew wood, two more cedars) stay dead ends, all real iNaturalist coverage but CC-BY-NC or unlicensed throughout; a scanned 1993-94 academic thesis on the garden has relevant captioned images but they couldn't be located at individual file URLs this pass, worth a retry with better PDF tooling.
