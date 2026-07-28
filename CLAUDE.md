@@ -251,6 +251,10 @@ Cheap, and it is not a gate: it costs a minute of thinking and blocks nothing. B
 
 The lesson is not "know more about Safari". It is that knowing something does not help if nothing prompts you to ask. A feature whose value accrues over time has to be reasoned about over time, or the one property that matters is the one property never checked.
 
+### How Hidde's incoming thoughts get processed (his own instruction, 2026-07-28)
+
+He fires many thoughts, fast, and that is the point of him; the system's duty is the other half: **test every incoming idea against the recorded picture before absorbing it.** Concretely, for each thought: (1) check what CLAUDE.md, PRODUCT_IA.md, PRINCIPLES.md, DECISIONS.md and BACKLOG.md already say, (2) name in one line what it touches, strengthens or contradicts, (3) only then build, park or push back. An idea that contradicts the corpus is not wrong (he outranks the corpus), but the contradiction must be said out loud so changing course is a decision, never a drift. Speed comes after the check, not instead of it.
+
 ### Deciding on something nobody wrote a rule for
 
 Most of what comes up is not in any list. Ask three questions, in order:
