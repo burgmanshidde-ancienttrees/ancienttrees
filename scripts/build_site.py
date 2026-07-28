@@ -339,6 +339,14 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .explore-now-chip { display: inline-block; background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 11.5px; border-radius: 999px; padding: 2px 10px; margin-left: 0.4rem; }
 .explore-map { flex: 1; min-height: 320px; }
 .pop-now { background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 10px; border-radius: 999px; padding: 1px 8px; }
+.plus-hero { margin-bottom: 1.5rem; }
+.plus-hero .chip { margin-bottom: 0.75rem; display: inline-block; }
+.plus-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin: 1rem 0 1.5rem; }
+.plus-card { background: #fff; border: 1px solid var(--cream-dark); border-radius: 14px; padding: 1.25rem 1.25rem 1.1rem; }
+.plus-card svg { width: 44px; height: 44px; margin-bottom: 0.6rem; }
+.plus-card h3 { font-size: 15.5px; font-weight: 800; margin-bottom: 0.3rem; }
+.plus-card p { font-size: 13px; color: var(--ink-mid); line-height: 1.55; }
+.plus-free-note { background: var(--moss-light); border-left: 3px solid var(--moss); border-radius: 0 8px 8px 0; padding: 0.85rem 1.1rem; font-size: 13.5px; color: var(--ink-mid); margin: 0 0 1.5rem; }
 .dir-cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.25rem 2rem; margin: 0.75rem 0 0.5rem; }
 .dir-group h3 { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.35rem; }
 .dir-group a { display: block; font-size: 13.5px; color: var(--ink-mid); text-decoration: none; padding: 0.15rem 0; }
@@ -528,7 +536,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <body>
 <header class="bar">
   <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><a href="%%ROOTPATH%%in-season" class="only-desktop">In season</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile">Map</a><a href="%%ROOTPATH%%in-season" class="only-mobile">In season</a><a href="%%ROOTPATH%%#cities">Cities</a><a href="%%ROOTPATH%%species">Species</a><a href="%%ROOTPATH%%collections">Collections</a><a href="%%ROOTPATH%%contribute">Suggest a tree</a><a href="%%ROOTPATH%%plus" class="only-mobile">Plus</a></div></details><a href="%%ROOTPATH%%plus" class="bar-plus only-desktop">Plus</a><a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
+  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><a href="%%ROOTPATH%%in-season" class="only-desktop">In season</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile">Map</a><a href="%%ROOTPATH%%in-season" class="only-mobile">In season</a><a href="%%ROOTPATH%%#cities">Cities</a><a href="%%ROOTPATH%%species">Species</a><a href="%%ROOTPATH%%collections">Collections</a><a href="%%ROOTPATH%%contribute">Suggest a tree</a></div></details><a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
 </header>
 %%BODY%%
 %%FOOTER%%
@@ -2333,21 +2341,63 @@ def build_fakedoor_pages(pages):
     free to explore."""
     for slug, title, desc, body_inner in [
         ("plus", "Ancient Trees Plus", "The convenience layer we are building around the walks.", """
-    <p class="answer-first">Plus does not exist yet. We are building it, and this page is here to be honest about what it will be and to let you raise your hand for it.</p>
-    <h2>What Plus is going to be</h2>
-    <div class="prose-block">
-      <p>Every tree, story and map on this site is free to explore, and that does not change. Plus will sell convenience around the walk: city packs that work offline where roaming is expensive, a nudge when a tree near you reaches its seasonal peak, guidance along the walking routes, and your routes on your watch or GPS.</p>
-      <p>No price exists yet, because it is not for sale yet.</p>
+    <div class="plus-hero">
+      <span class="chip gold">Coming soon</span>
+      <p class="answer-first">Every tree, story and map on this site is free to explore. Plus is the convenience we are building around the walk itself, and it is not for sale yet: this page is what it will be, honestly, and a way to hear it first.</p>
     </div>
+    <div class="plus-grid">
+      <div class="plus-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="30" width="32" height="10" rx="3" fill="#ECEDE2"/><path d="M24 8 v18 M24 26 l-7 -7 M24 26 l7 -7" stroke="#4A6B2A" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg>
+        <h3>Offline city packs</h3>
+        <p>Every tree, story and map of a city on your phone before you leave the hotel wifi. Built for the trip where roaming costs more than lunch.</p>
+      </div>
+      <div class="plus-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="18" rx="11" ry="9" fill="#D9A13F"/><circle cx="18" cy="16" r="5" fill="#E8BC63"/><path d="M22.8 40h2.6l-.7-14h-1.3z" fill="#6B4F33"/><path d="M36 10 l2.5 2.5 M38 18 h3.5 M12 10 l-2.5 2.5 M10 18 H6.5" stroke="#D9A13F" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <h3>Season alerts</h3>
+        <p>A nudge when a tree near you reaches its peak: the ginkgo's golden week, ten days of blossom. The radar, but it comes to you.</p>
+      </div>
+      <div class="plus-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 38 C14 24 22 28 26 18 C29 11 36 10 40 12" stroke="#4A6B2A" stroke-width="3" fill="none" stroke-dasharray="1 7" stroke-linecap="round"/><circle cx="10" cy="38" r="4.5" fill="#4A6B2A"/><circle cx="40" cy="12" r="4.5" fill="#D9A13F"/></svg>
+        <h3>Guidance on the walk</h3>
+        <p>The signature walks, turn by turn, tree by tree, so you look up at the canopy instead of down at the map.</p>
+      </div>
+      <div class="plus-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="16" y="12" width="16" height="24" rx="5" fill="#ECEDE2" stroke="#4A6B2A" stroke-width="2.5"/><path d="M20 6 h8 M20 42 h8" stroke="#4A6B2A" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="24" r="4" fill="#4A6B2A"/></svg>
+        <h3>Routes on your watch</h3>
+        <p>Every walk exports to your watch or GPS. The trees come along; the phone stays in your pocket.</p>
+      </div>
+    </div>
+    <div class="plus-free-note"><strong>What stays outside Plus: the trees.</strong> Every tree on the site is free to explore, with its story, its map and its directions. Plus sells convenience, never the trees.</div>
     <h2>Want to hear when it arrives?</h2>
-    <div class="prose-block"><p>Leave your email through <a href="{form}">the contact form</a> with the word "Plus", and you will hear it first. That is all the form does with it.</p></div>"""),
+    <div class="prose-block"><p>No price exists yet, because it is not for sale yet. Leave your email through <a href="{form}">the contact form</a> with the word "Plus", and you will hear it first. That is all the form does with it.</p></div>"""),
         ("app", "The Ancient Trees app", "The iOS app we are building for the walk itself.", """
-    <p class="answer-first">The app is on its way, and it is not here yet. This page is honest about both halves.</p>
-    <h2>What the app is going to be</h2>
-    <div class="prose-block">
-      <p>The website finds the trees; the app is for the walk itself: your position live on the route, checking in at the trunk, your collection growing in your pocket, and the season radar telling you when a tree near you is at its best.</p>
-      <p>Until then, this site works well on a phone: open a city, tap a tree, and the directions button takes over.</p>
+    <div class="plus-hero">
+      <span class="chip gold">Coming soon</span>
+      <p class="answer-first">The website finds the trees; the app we are building is for the walk itself. It is not here yet, and this page is honest about both halves: what it will do, and how to hear it first.</p>
     </div>
+    <div class="plus-grid">
+      <div class="plus-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="22" r="14" fill="none" stroke="#4A6B2A" stroke-width="3"/><circle cx="24" cy="22" r="4" fill="#D9A13F"/><path d="M24 4 v6 M24 34 v6 M6 22 h6 M36 22 h6" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg>
+        <h3>The trees around you, live</h3>
+        <p>Open it anywhere and see the remarkable old trees near you, with the nearest one a walk-time away. The map knows where you stand.</p>
+      </div>
+      <div class="plus-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="19" rx="12" ry="10" fill="#3A5222"/><circle cx="17" cy="18" r="7" fill="#4A6B2A"/><circle cx="31" cy="18" r="7" fill="#4A6B2A"/><circle cx="24" cy="11" r="7" fill="#5B7F35"/><path d="M22.9 40h2.4l-.6-13h-1.2z" fill="#6B4F33"/><circle cx="36" cy="34" r="8" fill="#D9A13F"/><path d="M32.5 34 l2.5 2.5 5 -5" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Check in at the trunk</h3>
+        <p>Stand in front of a tree and collect it. Your collection lives in your pocket and counts in years of living history, not points.</p>
+      </div>
+      <div class="plus-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 30 a10 10 0 0 1 2 -19 a12 12 0 0 1 22 3 a8 8 0 0 1 0 16 z" fill="#ECEDE2" stroke="#4A6B2A" stroke-width="2.5"/><path d="M18 36 l-3 5 M26 36 l-3 5 M34 36 l-3 5" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg>
+        <h3>Works where wifi does not</h3>
+        <p>A whole city in your pocket before you leave the hotel: every tree, story, map and route, no roaming required.</p>
+      </div>
+      <div class="plus-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="20" cy="18" rx="10" ry="8" fill="#D9A13F"/><circle cx="15" cy="16" r="4.5" fill="#E8BC63"/><path d="M19 36h2.4l-.6-12h-1.2z" fill="#6B4F33"/><path d="M33 10 a10 10 0 0 1 5 9 M35.5 6 a15 15 0 0 1 7 13" stroke="#D9A13F" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg>
+        <h3>The season taps you</h3>
+        <p>When a tree near you reaches its golden week, the app says so. You go at exactly the right moment instead of reading about it after.</p>
+      </div>
+    </div>
+    <div class="plus-free-note"><strong>Until then:</strong> this site already works well on a phone. Open a city, tap a tree, check in at the trunk, and the directions button takes over. The app makes it better; it does not gate it.</div>
     <h2>Want to hear when it lands?</h2>
     <div class="prose-block"><p>Leave your email through <a href="{form}">the contact form</a> with the word "app", and you will be first to know.</p></div>"""),
     ]:
