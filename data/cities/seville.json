@@ -211,8 +211,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Ensemble entry: multiple centennial hackberries confirmed by Seville's official singular-trees register and a second park-history source, but neither gives one definitive age or a single representative specimen, so this is presented as a group rather than one named tree, and the pin marks the Glorieta Rafael de León area rather than one surveyed trunk.",
-      "location_precision": "approximate"
+      "notes": "Ensemble entry: multiple centennial hackberries confirmed by Seville's official singular-trees register and a second park-history source, but neither gives one definitive age or a single representative specimen, so this is presented as a group rather than one named tree. Pin confirmed 2026-07-28 via Seville's Parks and Gardens tree inventory (ArcGIS FeatureServer, services1.arcgis.com/hcmP7kr0Cx3AcTJk, layer 13): a dense cluster of Celtis australis specimens, several tagged mature phase, recorded in the 'Prado, Parque María Luisa' area within about 30m of the stored coordinate, matching this entry's own 'clustered most densely near the Glorieta Rafael de León' description. Still an ensemble pin over a cluster rather than one surveyed trunk, but now government-inventory-backed rather than estimated.",
+      "location_precision": "confirmed"
     },
     {
       "id": "sev_007",
@@ -241,8 +241,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Ensemble entry: 1574 founding, drainage planting and 1764 replanting confirmed by two independent local-history sources; the London planes at both ends are separately described as 'nearly a century old' without a precise planting year. Coordinates from the Spanish Wikipedia infobox for the square itself.",
-      "location_precision": "approximate"
+      "notes": "Ensemble entry: 1574 founding, drainage planting and 1764 replanting confirmed by two independent local-history sources; the London planes at both ends are separately described as 'nearly a century old' without a precise planting year. Pin confirmed 2026-07-28 via Seville's Parks and Gardens tree inventory (ArcGIS FeatureServer, services1.arcgis.com/hcmP7kr0Cx3AcTJk, layer 13): dozens of Platanus hispanica individually recorded with the location tag 'Alameda De Hercules, Plaza' itself, several in the oldest age phase, directly around the stored coordinate. An exact place-name match from the city's own inventory rather than an estimate, though still an ensemble pin over the whole plaza rather than one surveyed trunk.",
+      "location_precision": "confirmed"
     },
     {
       "id": "sev_008",

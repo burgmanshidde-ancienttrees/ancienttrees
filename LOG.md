@@ -40,6 +40,18 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Seville: two pins upgraded via a newly documented city tree-inventory technique
+
+Visitors: 65 visits, 99 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17).
+
+- No reader submissions, site healthy, nothing published found wrong (a generic news sweep for felled/fallen trees turned up nothing touching a tree this site publishes). Amsterdam, Lisbon and Istanbul, the three lead-group cities still below the depth-exit-test bar, are all re-confirmed exhausted or have work already in flight (see below), so this pass moved to the next rung: marquee Europe, oldest-first among cities below the 8-photo/2-approximate floor. Seville (6/10 photos, 6/10 approximate) was oldest-published and short.
+- Found and documented a reusable source: Seville's own Parks and Gardens tree inventory, a public ArcGIS FeatureServer with a 2025-updated, per-specimen dataset (species, size, age phase, exact coordinates). Two prior sessions had already used it once each without naming it as a repeatable technique; this pass queried it properly by species and radius across all of Seville's remaining approximate pins.
+- **Two pins upgraded to confirmed**: the Alameda de Hércules plane trees (an exact place-name match in the city's own dataset) and the María Luisa hackberries (a dense matching cluster 30m from the stored pin). Two more checked and genuinely absent from this dataset, not just unsearched: the Alcázar ginkgos and the cathedral's orange trees stand on separately-managed heritage land outside the city parks department's own inventory, and the single-source camphor tree isn't in any official register at all, consistent with what its own flagged note already said. All three stay honestly approximate.
+- Four photo gaps stayed genuine dead ends (real coverage exists for the Cristo de Burgos figs, but only as editorial stock or an unlicensed blog photo, neither usable). Seville now at 6/10 photos, 4/10 approximate (from 6).
+- Separately, a background pass this session took a second run at Istanbul's two specific untried leads flagged 2026-07-28 (an alternate government tree-registry domain, three İBB PDF route brochures); result to follow in a later entry once it returns.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Edinburgh (UK, the focus region) and Venice: pins tightened, honestly still approximate
 
 Same session. Edinburgh had all 10 trees on approximate pins; as a UK city it's the top depth priority per CLAUDE.md's focus-region rule. Venice was in the same shape and already had its photo gaps exhausted in prior sessions, so this pass targeted pins.
