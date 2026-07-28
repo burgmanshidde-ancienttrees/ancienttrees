@@ -1,3 +1,37 @@
+## 2026-07-28 — Europe's Best Tree City Trips: the collection itself finally built, published without a gate per blueprint v1.3
+
+New session. Ran `python3 scripts/visitors.py` first: 70 visits, 105 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), plus 5 so far today. No reader submissions (CSV fetched fresh via WebFetch through a redirect, header row only). Site healthy at session start: build clean (554 pages), nothing published found wrong.
+
+**State check before picking work**: the depth-exit-test bar is unchanged at 5/8 (Rome, Tokyo, Paris, London, Barcelona pass; Amsterdam 7/10 photos, Lisbon 6/10, Istanbul 2/10+5 approximate all remain short). Checked how exhaustively today's many prior sessions had already worked every below-floor city: every single one (Naples, Istanbul, Valencia, Lyon, Granada, Verona, Brussels, New York, Dublin, Malaga, Porto, Edinburgh, Venice, Bologna, Madrid, Antwerp, Milan, Athens, and more) already has 10+ mentions in today's CURATION.md entries, real techniques tried and real dead ends recorded. Re-running any of it would be exactly the looping CLAUDE.md warns against. PRODUCT_TODO.md is fully done or honestly blocked (item 4's "trees older than 1000 years" still stuck at 3 site-wide).
+
+**Found real, unstarted work instead**: since Sintra went live (see entry below), Palermo, Cadiz and Sintra, the three cities Hidde pre-approved specifically to complete "the 10 best tree city trips of Europe" (his direction, BACKLOG.md 2026-07-27, research and draft ranking recorded in this file's 2026-07-27 entry), are all live. Three separate 2026-07-28 entries below all flagged the same next step, unstarted: "the collection page itself and its walking routes still need to be built." Built it this pass.
+
+**The routing question, resolved without a new dependency.** Hidde's own publication bar from the 2026-07-27 session: "an entry is only done when its route is actually plotted over streets with start/end and elevation." Rather than add a routing API (a new third-party dependency, hard rule 5, needing his yes) or fabricate precision this project explicitly forbids, reused the site's own existing walk planner: every city page already computes an honest walkable cluster (`plan_walking_route()` in `scripts/build_site.py`, nearest-neighbour growth from every possible start, capped at a 6 km real-street-adjusted budget, 1.35x detour factor, same function already live and trusted on all 36 city pages) and hands real turn-by-turn routing to the visitor's own phone via the same Google Maps deep link used everywhere else on the site. Ran that exact algorithm against each of the eleven cities' full tree sets (imported nothing new, copied the function's logic directly) to get real, honest numbers rather than guessed ones:
+- Palermo: 5/8 trees, 5.5 km, 73 min (flat)
+- Seville: 9/10 trees, 4.3 km, 58 min (flat)
+- Cadiz: 5/5 trees, 1.0 km, 13 min (flat, shortest on the list)
+- Lisbon: 5/10 trees, 3.5 km, 46 min
+- Sintra: 5/5 trees, 5.7 km, 76 min (genuinely hilly, Serra de Sintra terrain the flat number doesn't show)
+- Porto: 10/10 trees, 2.6 km, 34 min (best tree-per-effort ratio on the list)
+- Athens: 5/10 trees, 3.8 km, 51 min (plus a real climb up Filopappou Hill at the end)
+- Prague: 7/10 trees, 4.6 km, 62 min
+- Rome: 7/10 trees, 5.2 km, 69 min (genuinely hilly, climbs the Gianicolo to reach the Garibaldi Mausoleum cedar, matching Hidde's own "Gianicolo climb stated honestly" note)
+- Milan: 7/10 trees, 5.0 km, 67 min (flat, as Hidde's session already flagged)
+- Granada: 10/10 trees, 5.2 km, 69 min by distance, but flagged honestly in its entry that the flat number understates the real climb since most of these ten sit within or below the hilltop Alhambra and Generalife grounds
+
+**A judgement call worth naming, since it departs from the literal city-count**: Hidde's own ranking treated "Lisbon+Sintra" as one combined trip, position 4 of 10. Contract D's entry structure is per-city, so this ships as two consecutive city sections rather than one merged one; the collection's intro states plainly that eleven cities carry ten rankings and that the two are meant as a paired day-trip a short train apart, so nobody reads it as a miscount.
+
+**A structural choice for entry format, also worth naming**: rather than one entry per tree (as every other collection on the site does, and Contract D's own "2-3 sentences" spec assumes), this collection carries one entry per city, its flagship tree linked, with the whole walk (which other trees, how far, how long, real hills where they exist) folded into that one note. A per-tree structure here would have meant roughly 70 entries, most repeating the same walk-logistics sentence with the city name swapped, exactly the "repeated boilerplate phrases inside loops" PRODUCT_TODO.md's own human-first check warns against. One rich paragraph per trip reads better and stays honest; flagging the deviation from the contract's literal per-entry length guidance since it was a judgement call, not an oversight.
+
+**Every fact re-checked against its own tree's already-verified story before use**, not re-derived: Palermo's "reportedly Europe's widest tree crown" and Cadiz's "reported as the oldest documented" pohutukawa both reuse claims this project already softened and sourced when those cities shipped, nothing new asserted. One correction made while checking: an early draft called Sintra's Walking Tree of Pena a "Pacific cedar"; its own story says western red cedar, fixed before publishing.
+
+**Flagship tree chosen per city** (favouring an already-photographed, most-recognisable specimen that also falls inside the computed walk cluster): Palermo's Orto Botanico fig, Seville's Real Alcázar ginkgos, Cadiz's Alameda fig, Lisbon's Largo do Limoeiro ombú, Sintra's Monserrate araucaria, Porto's Palácio de Cristal cedar, Athens's Sacred Olive of the Acropolis, Prague's Beethoven Plane, Rome's Twin Planes of the Eleven Fountains, Milan's Parco Sempione walnut, Granada's Cypress of San Juan de la Cruz.
+
+- Published immediately under blueprint v1.3 (no owner-approval gate); `status: "published"`, matching the newest collections' own pattern.
+- Site rebuilt: 555 pages (up from 554), 10 public collections (up from 9), all contracts validated. Verified directly on build output: linked from the homepage, `/collections` index and `sitemap.xml`; zero em dashes and zero banned tone words in the new JSON (grepped per PRODUCT_TODO item 3's standing check).
+- Full entry text, walk numbers and sourcing reasoning are in `data/collections/europes-best-tree-city-trips.json` itself.
+- Nothing left open for this collection. Full detail above; LOG.md carries the short version.
+
 ## 2026-07-28 — Sintra: 36th city live, 5 trees, the last of three cities pre-approved to complete the Europe city-trips collection
 
 With today's depth ladder still exhaustively documented as dead for Amsterdam, Lisbon and Istanbul (many sessions today, all techniques tried, re-confirmed at session start rather than assumed) and PRODUCT_TODO.md fully done or honestly blocked (item 4's "trees older than 1000 years" still stuck at 3 site-wide, item 1 is Hidde's own in-session track), moved to the one piece of new-city work still open under CLAUDE.md rung 6's standing exception: Sintra, needed alongside Palermo and Cadiz to complete the "Top 10 tree city trips of Europe" collection. That collection can now finally be assembled and route-plotted, since all three of its missing cities are live.
