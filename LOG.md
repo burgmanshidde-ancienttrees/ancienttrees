@@ -40,6 +40,13 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Milan gains a real photo; Florence re-confirmed exhausted
+
+- **Florence** (4/10 photos, marquee-Europe's last below-floor city): an independent iNaturalist pass on all 6 remaining gaps confirms the dead end already logged for this city rather than finding anything new. Stays 4/10.
+- **Milan** (5/10 photos, 2/10 approximate, next Tier-2 city in the depth order): gained a real photo for La Quercia Rossa del Trotter, an exact-name-match Commons file viewed directly and approved. Milan now 6/10 photos. One more candidate for Il Sacerdote (the bald cypress) was found and correctly declined again: a genuinely new file, but the same ambiguity (several cypresses in one shot, can't tell which is the named tree) a prior session already rejected a different photo of this tree for. Two other gaps have documented prior rejections; the last got a fresh, empty iNaturalist search.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Athens: three photo candidates actually viewed and correctly turned down; a real municipal tree registry found but likely low-relevance for this city's park/monastery ensembles
 
 - **Athens** (7/10 photos, 8/10 approximate, worst combination of any marquee city below floor, next after Porto): found and directly viewed (not just described) three real photo candidates for the Zappeion and Kefalari gaps, using the technique of fetching a raw Wikimedia image URL and reading the saved file as an image. All three turned out to be honest misses once actually seen: a Zappeion garden photo too general to confirm plane trees specifically among the mixed planting, a Kefalari "park" category that turned out to be a different, conifer-planted Kefalari location entirely, and a street scene with no plane trees in frame. Nothing approved rather than force a caption-only match. Also found Athens' own municipal tree GIS platform (athenstrees.cityofathens.gr), but by its own naming it looks scoped to street-tree planting campaigns, not the parks, monasteries and botanical collections where most of Athens' remaining approximate pins actually stand; a JS app this session's tools couldn't query directly, so left as an open avenue rather than a worked one. Athens stays at 7/10 photos, 8/10 approximate.
