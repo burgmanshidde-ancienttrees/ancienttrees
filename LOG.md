@@ -40,6 +40,15 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Valencia's own tree catalogue extended: two more real pin corrections (900m, 525m); Lyon, Athens and Andalucia checked, all genuinely blocked or dead ends
+
+Visitors: 66 visits, 100 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), rising toward the end of the week. No reader submissions. Site healthy, nothing published found wrong. Today already saw an exhaustive depth pass across nearly every city in the site; PRODUCT_TODO.md is done or honestly blocked. Rather than re-run already-documented dead ends, hunted new ground.
+
+- **Valencia's official regional tree catalogue** (already used successfully on 2026-07-27 for 3 pins) turned out not to have been extended to the rest of the city's approximate entries. Queried it properly: **the Ginkgo of Jardin de Monforte (vlc_003) moved about 900m** to the catalogue's own "Ginkgo de Monfort", the only citywide record of its species. **The Palm of Vicente Peris (vlc_008) moved about 525m** to the catalogue's own "La Palmera de Vicente Peris", the only named palm among 158 catalogued citywide. Both upgraded to confirmed. Three more gaps checked against the same source and confirmed as genuine absences rather than search failures (a street oak never eligible for the regional catalogue, a grassroots-adopted palm trio with no official designation, a cypress species the catalogue simply doesn't hold). Valencia now at 5/10 approximate pins, down from 7.
+- Lyon's Cedar of Lebanon (Ile Barbe) checked against Grand Lyon's real open-data tree API: confirmed dead end, the dataset only covers young street trees, not old park specimens. Athens' GIS layer re-confirmed still blocked for this session's tooling. Andalucia's own singular-tree inventory (would help Malaga and Granada) is real but KML-only, flagged as a genuine unexhausted lead for a future session with better file-parsing tools rather than guessed at with lossy text extraction.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — A new Italian tree registry (RAMI) found and put to work: two more real pin corrections, Naples and Milan
 
 Same session as the entries below. Went looking for an Italian equivalent of Turkey's registry, which resolved several pins earlier today. Found two: MASAF's official government dataset (real, but this session's tools can't parse its Excel format reliably, so nothing was applied from it) and RAMI (ilregistrodeglialberi.it), a large volunteer-run registry whose own search interface returns clean, usable results.
