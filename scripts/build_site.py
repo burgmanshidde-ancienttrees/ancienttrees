@@ -332,6 +332,13 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .section-heading { font-family: var(--sans); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 1.5rem; }
 .prose { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
 .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2px; background: var(--cream-dark); border: 1px solid var(--cream-dark); margin-bottom: 3rem; }
+.explore-page { display: flex; flex-direction: column; height: calc(100vh - var(--header-h)); }
+.explore-head { padding: 1.1rem 2rem 0.9rem; }
+.explore-head h1 { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.015em; }
+.explore-head p { font-size: 13px; color: var(--ink-mid); margin-top: 0.2rem; max-width: 46rem; }
+.explore-now-chip { display: inline-block; background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 11.5px; border-radius: 999px; padding: 2px 10px; margin-left: 0.4rem; }
+.explore-map { flex: 1; min-height: 320px; }
+.pop-now { background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 10px; border-radius: 999px; padding: 1px 8px; }
 .dir-cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.25rem 2rem; margin: 0.75rem 0 0.5rem; }
 .dir-group h3 { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.35rem; }
 .dir-group a { display: block; font-size: 13.5px; color: var(--ink-mid); text-decoration: none; padding: 0.15rem 0; }
@@ -521,7 +528,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <body>
 <header class="bar">
   <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  <nav class="bar-links"><a href="%%ROOTPATH%%" class="only-desktop">Map</a><a href="%%ROOTPATH%%in-season" class="only-desktop">In season</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%" class="only-mobile">Map</a><a href="%%ROOTPATH%%in-season" class="only-mobile">In season</a><a href="%%ROOTPATH%%#cities">Cities</a><a href="%%ROOTPATH%%species">Species</a><a href="%%ROOTPATH%%collections">Collections</a><a href="%%ROOTPATH%%contribute">Suggest a tree</a><a href="%%ROOTPATH%%plus" class="only-mobile">Plus</a></div></details><a href="%%ROOTPATH%%plus" class="bar-plus only-desktop">Plus</a><a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
+  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><a href="%%ROOTPATH%%in-season" class="only-desktop">In season</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile">Map</a><a href="%%ROOTPATH%%in-season" class="only-mobile">In season</a><a href="%%ROOTPATH%%#cities">Cities</a><a href="%%ROOTPATH%%species">Species</a><a href="%%ROOTPATH%%collections">Collections</a><a href="%%ROOTPATH%%contribute">Suggest a tree</a><a href="%%ROOTPATH%%plus" class="only-mobile">Plus</a></div></details><a href="%%ROOTPATH%%plus" class="bar-plus only-desktop">Plus</a><a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
 </header>
 %%BODY%%
 %%FOOTER%%
@@ -551,7 +558,7 @@ FOOTER = """
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
-      <a href="%%ROOTPATH%%">Map</a>
+      <a href="%%ROOTPATH%%explore">Map</a>
       <a href="%%ROOTPATH%%in-season">In season now</a>
       <a href="%%ROOTPATH%%#cities">Cities</a>
       <a href="%%ROOTPATH%%species">Species</a>
@@ -2356,6 +2363,104 @@ def build_fakedoor_pages(pages):
         pages.append((f"{slug}.html", page, canonical))
 
 
+
+def build_explore_page(all_cities, pages):
+    """One map, every tree (PRODUCT_IA follow-up, 2026-07-28). GeoJSON circle
+    layers with native clustering: fast at 341 trees and at 3,000. Trees whose
+    best_time includes the build month render gold, the season made visible.
+    The nav item "Map" points here; the homepage hero stays the front door."""
+    import datetime as _dt
+    month = _dt.date.today().month
+    feats = []
+    for entry in all_cities:
+        cslug = entry["slug"]
+        for t in entry["data"]["trees"]:
+            loc = t["location"]
+            bt = t.get("best_time") or {}
+            feats.append({
+                "type": "Feature",
+                "geometry": {"type": "Point",
+                             "coordinates": [loc["longitude"], loc["latitude"]]},
+                "properties": {
+                    "name": t["name"],
+                    "url": f"{cslug}/{slugify(t['name'])}",
+                    "age": t.get("age_estimate", ""),
+                    "city": entry["data"]["city"],
+                    "now": 1 if month in (bt.get("months") or []) else 0,
+                },
+            })
+    geojson = json.dumps({"type": "FeatureCollection", "features": feats})
+    n_now = sum(f["properties"]["now"] for f in feats)
+    canonical = f"{BASE_URL}/explore"
+    now_line = (f'<span class="explore-now-chip">{n_now} at their seasonal best right now</span>'
+                if n_now else "")
+    body = f"""
+<main class="explore-page">
+  <div class="explore-head">
+    <h1>The ancient tree map</h1>
+    <p>Every tree on the site, one map: {len(feats)} remarkable old trees across {len(all_cities)} cities, each verified, each with its story. Gold means at its best this month. {now_line}</p>
+  </div>
+  <div id="map" class="explore-map"></div>
+</main>
+"""
+    script = """
+var DATA = __GEOJSON__;
+var map = new maplibregl.Map({
+  container: 'map', style: '__STYLE__',
+  center: [8, 48], zoom: 3.4, attributionControl: {compact: true}
+});
+map.addControl(new maplibregl.NavigationControl());
+function initTreeLayers() {
+  if (map.getSource('trees')) { return; }
+  map.addSource('trees', {type: 'geojson', data: DATA, cluster: true,
+                          clusterMaxZoom: 11, clusterRadius: 42});
+  map.addLayer({id: 'clusters', type: 'circle', source: 'trees',
+    filter: ['has', 'point_count'],
+    paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,
+            'circle-radius': ['step', ['get', 'point_count'], 14, 10, 18, 30, 24],
+            'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
+  map.addLayer({id: 'cluster-count', type: 'symbol', source: 'trees',
+    filter: ['has', 'point_count'],
+    layout: {'text-field': ['get', 'point_count_abbreviated'],
+             'text-font': ['Noto Sans Regular'], 'text-size': 12},
+    paint: {'text-color': '#F6F2E9'}});
+  map.addLayer({id: 'tree', type: 'circle', source: 'trees',
+    filter: ['!', ['has', 'point_count']],
+    paint: {'circle-color': ['case', ['==', ['get', 'now'], 1], '#D9A13F', '#4A6B2A'],
+            'circle-radius': ['case', ['==', ['get', 'now'], 1], 9, 7],
+            'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
+  map.on('click', 'clusters', function(e) {
+    var f = map.queryRenderedFeatures(e.point, {layers: ['clusters']})[0];
+    map.getSource('trees').getClusterExpansionZoom(f.properties.cluster_id,
+      function(err, zoom) {
+        if (!err) { map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5}); }
+      });
+  });
+  map.on('click', 'tree', function(e) {
+    var p = e.features[0].properties;
+    var badge = p.now == 1 ? ' <span class="pop-now">at its best now</span>' : '';
+    new maplibregl.Popup({offset: 12})
+      .setLngLat(e.features[0].geometry.coordinates)
+      .setHTML('<strong>' + p.name + '</strong>' + badge + '<br>' + p.age + ' &middot; ' + p.city +
+               '<br><a href="' + p.url + '">See this tree &rarr;</a>')
+      .addTo(map);
+  });
+  ['clusters', 'tree'].forEach(function(l) {
+    map.on('mouseenter', l, function() { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', l, function() { map.getCanvas().style.cursor = ''; });
+  });
+}
+map.on('style.load', initTreeLayers);
+if (map.isStyleLoaded()) { initTreeLayers(); }
+"""
+    script = script.replace("__GEOJSON__", geojson).replace("__STYLE__", MAP_STYLE)
+    script = f'<script src="{MAPLIBRE_JS}"></script>\n<script>\n' + script + "\n</script>"
+    page = render_page("Ancient Tree Map: every remarkable old tree, one map",
+                       "The interactive map of every verified ancient tree on the site, with the ones at their seasonal best highlighted.",
+                       canonical, body, head_extra=map_head(), rootpath="./", scripts=script)
+    pages.append(("explore.html", page, canonical))
+
+
 def build_contribute_page(published, pages):
     """The flywheel's front door: readers send trees, the nightly run verifies
     and writes them up. Deliberately asks for the few things that make a
@@ -3014,6 +3119,7 @@ def main():
     build_contribute_page(published, pages)
     build_privacy_page(pages)
     build_fakedoor_pages(pages)
+    build_explore_page(renderable, pages)
     build_in_season_page(renderable, tree_slugs, pages)
     build_homepage(published, upcoming, public_collections, pages)
     build_redirects(published, pages, tree_slugs)
