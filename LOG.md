@@ -40,6 +40,15 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Photo floor work continues down the ladder: Madrid and New York each gain a photo
+
+Same session as the entry below. After the 8 lead cities, moved to rung 4's photo-floor work, oldest-published-first among cities still under 8/10: Kyoto, Madrid, New York.
+
+- **Madrid's Three-Trunked Yew (mad_003) and New York's Sassafras of Green-Wood (nyc_004) both get approved photos**, each viewed directly and confirmed against its own story before publishing (a paired-trunk cemetery tree matching its "appears as two trees" description; a multi-trunked yew matching its "three-trunked" name). Madrid now 5/10, New York 4/10, both still below the 80% target and queued for a future pass.
+- Kyoto's two long-known near-miss candidates (temple cherries with real photos but ambiguous identity among several named trees at the same site) stayed unresolved after a dedicated attempt; nailed down that "Emperor's Gift Cherry" is specifically Gosho-zakura, useful for later even without a photo. Kyoto stays at 7/10.
+- Full per-tree detail, including which of the remaining gaps are genuine dead ends versus just unconfirmed, in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Rome clears the depth-exit-test bar: 5 of 8 lead cities now pass
 
 Visitors: 65 visits, 99 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17), the strongest closing day yet.
