@@ -1,3 +1,14 @@
+## 2026-07-28 — Granada, the worst-covered city on the site (10/10 approximate pins, 1/10 photos): two photos found and approved, one pin tightened, a species discrepancy flagged
+
+Granada had every one of its 10 trees on an approximate pin and only 1 photo, the worst combination on the whole site. Most of its trees sit inside or near the Alhambra/Generalife complex, which turned out to help: UNESCO-adjacent gardens are better mapped and better photographed than an ordinary city park.
+
+- **gra_001, The Cypress of San Juan de la Cruz: approved.** Wikimedia Commons "Arbol_san_juan.jpg", CC BY 2.0, Jose Manuel ("Mazintosh"). Viewed directly: a large, heavily furrowed, gnarled trunk with a visibly broken, multi-stemmed crown, matching the story's own lightning-damage detail exactly. The file's own Spanish caption names this exact tree and garden ("Cedro de San Juan de la Cruz, en el Cármen de los mártires").
+- **gra_005, The Plane Trees of the Fountain of Battles: approved.** Wikimedia Commons "Plaza_del_Campillo.jpg", CC BY-SA 3.0, Iblancasa. Viewed directly: one massive plane tree dominating the plaza, geotagged to the site, unambiguous. Granada now 3/10 photos.
+- **gra_009, The Cedars of Carmen de la Victoria: pin tightened.** Moved from an estimated 37.1822/-3.5897 to 37.1809/-3.5890 (about 150-160m), anchored to two independent Nominatim geocodes of the property itself that converge within 15m of each other, corroborated by a separate address listing. Still property-level, not tree-level, so `location_precision` stays `approximate` honestly.
+- **The other 7 stay approximate/missing, genuine dead ends this pass** except one open thread: gra_002 (Sequoias of the Generalife's Upper Gardens) has 3 iNaturalist Sequoia sempervirens observations clustering tightly about 880m from the current pin, at a different named viewpoint (Patio de la Guardia) than the story's Jardines Altos. Not applied: unclear whether this is the same tree (meaning the current pin is badly wrong) or an unrelated sequoia elsewhere on the grounds. Worth a follow-up rather than a guess either way.
+- **One species discrepancy surfaced, not yet acted on**: Granada's own municipal tree register (granada.org's `arbolado` database) lists the Plaza de Gracia palms (gra_004) as Phoenix canariensis, not the Washingtonia robusta this entry currently states (sourced only to a single tourism site already flagged as thin). Worth a re-verification pass; the municipal register's own photos are non-commercial/restricted so not usable regardless of the species question.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Photo floor pass on the next oldest below-target cities: Madrid and New York each gain one photo, Kyoto's two near-miss candidates stay unresolved
 
 Continued past the 8 lead cities into rung 4's photo-floor work, oldest-published-first among cities still below 8/10: Kyoto (7/10, needs 1), Madrid (4/10), New York (3/10).

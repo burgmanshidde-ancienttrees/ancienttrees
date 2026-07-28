@@ -40,6 +40,17 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Granada, the site's worst-covered city, gets two photos and a tightened pin
+
+Same session. Granada had every one of its 10 trees on an approximate pin plus only 1 photo, the worst combination on the site, so it jumped ahead of the strict oldest-first order for one pass.
+
+- **The Cypress of San Juan de la Cruz and the Plane Trees of the Fountain of Battles both get approved photos**, each viewed directly and matched against the story before publishing (a lightning-scarred, gnarled ancient cypress; a single massive plaza plane tree). Granada now at 3/10 photos.
+- **The Cedars of Carmen de la Victoria's pin tightened** about 150-160m to the actual property, still honestly `approximate` rather than tree-level.
+- One open thread for a future pass: the Generalife sequoias may have a real photo lead 880m from the current pin, but it's not confirmed as the same tree, so nothing was guessed.
+- One fact worth a look: Granada's own municipal tree register lists the Plaza de Gracia palms as a different species (Phoenix canariensis) than this entry currently states (Washingtonia robusta, from a single thin source). Not changed yet, flagged in CURATION.md.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Photo floor work continues down the ladder: Madrid and New York each gain a photo
 
 Same session as the entry below. After the 8 lead cities, moved to rung 4's photo-floor work, oldest-published-first among cities still under 8/10: Kyoto, Madrid, New York.
