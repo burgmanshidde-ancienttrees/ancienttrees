@@ -40,6 +40,10 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — A second Istanbul pin resolved: `ist_001`, the city's oldest tree, is now confirmed
+
+Same session, immediately after the entry below. Tested the open species-mismatch caveat on `ist_001` directly instead of leaving it asserted: pulled all 40 Platanus records the national tree registry carries for Sarıyer district. The matched record (1,382 years) is the single oldest by nearly 600 years, and other registry records sharing its disputed "Londra Çınarı/Platanus acerifolia" label carry ages (816, 579 years) that are themselves impossible for a true London Plane hybrid, which only originated around 1670. That shows the registry's species labelling is unreliable site-wide, not uniquely wrong for this tree. Upgraded to confirmed; Istanbul now has 3 approximate pins left. Tried the remaining two resolvable ones (Taşlı Çınar, Florya Mastic Tree) and found no close-enough registry matches, so both stay approximate.
+
 ## 2026-07-28 — Depth pass: one Istanbul pin resolved, thorough (documented) photo dead ends for Amsterdam and Lisbon
 
 New session. Visitors: 76 visits, 137 page views over 7 days (21-28 July: 8, 9, 10, 7, 4, 10, 17, 11), trending up. No reader submissions (CSV header row only). Site healthy at start (555 pages, all contracts validated).
