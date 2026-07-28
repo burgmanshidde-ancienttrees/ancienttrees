@@ -50,6 +50,13 @@ Visitors: 65 visits, 99 page views over 7 days, still the strongest closing day 
 - Full detail in CURATION.md.
 - Site rebuilt, all contracts validated, pushed.
 
+## 2026-07-28 — Kyoto: a real 625m pin error fixed for the Five-Needle Pine of Hosen-in
+
+- The stored pin for Hosen-in's pine was a street geocode never cross-checked; OpenStreetMap has two nodes for the temple agreeing within 150m, one matching this entry's own street number exactly, about 625m from the old pin. Fixed and upgraded to confirmed.
+- Kyoto's other approximate pin (a remote, guide-only access forest grove) stays honestly approximate; no source gives a precise point and it would be fake precision to force one.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Product work: seasonality completion pass, PRODUCT_TODO.md item 5
 
 Every below-floor lead-group and marquee-Europe city had a fresh research pass earlier today (see the six entries below), so this pass moved to product work rather than re-run searches already confirmed exhausted a few hours earlier.
