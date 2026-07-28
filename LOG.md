@@ -40,6 +40,16 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Three open threads from the last news sweep followed up: all checked, nothing wrong found
+
+New session. Visitors: 77 visits, 138 page views over 7 days (21-28 July: 8, 9, 10, 7, 4, 10, 17, 12), the strongest week yet. No reader submissions (CSV header row only). Build clean at start. Rung 3 (something published might be wrong) outranks depth work, and the prior session's full news sweep had left three specific threads open rather than closed, so rather than re-run already-exhausted Amsterdam/Lisbon/Istanbul photo hunts yet again, chased those three down properly.
+
+- **Lisbon's Ajuda Dragon Tree**: the Museu Nacional's own storm-Kristin statement confirms Jardim Botânico da Ajuda was "quite affected," but no source, checked directly against the garden's own site too, names any specific tree lost. Stays a real, open risk given the tree's known fragility, not a confirmed one; no change made.
+- **Valencia, given a full pass** (previously almost entirely unchecked): found a genuine, current, positive story, the city started a 3-month conservation project on El Titan (the Parterre ficus) on 16 June 2026 to protect its roots, no confirmed closure. Also traced a "tree felled at Jardín de Monforte" headline directly to the article: it was a Celtis australis damaging a heritage wall, not our ginkgo entry. No changes needed, both closed out properly.
+- **Nice's palm entries**, re: red palm weevil: the one alarming lead ("40 century-old palms decimated" at Parc Vigier) turned out to be a 2017 article, outside this project's news window. Our own First Canary Island Date Palm entry already avoids claiming the 1864 original survives today, so it was never exposed to this risk. No change.
+
+Full detail in CURATION.md. Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — A site-wide news sweep (first at this scale) catches one real broken promise: Barcelona's Labyrinth cedar is behind a locked gate the page didn't mention
 
 New session. Visitors: 77 visits, 138 page views over 7 days (21-28 July: 8, 9, 10, 7, 4, 10, 17, 12), the strongest week yet. No reader submissions (CSV header row only). Site healthy at start.
