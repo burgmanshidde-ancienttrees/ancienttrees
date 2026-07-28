@@ -27,6 +27,11 @@ Same session as Palermo above. A research agent verified and expanded on the thr
 - Site rebuilt (540 pages), all contracts validated, pushed.
 - Next for this collection: Sintra still needs a full research pass; only then can walking-route-plotting and collection-page assembly begin.
 
+## 2026-07-28 — Daytime extra-runs experiment: one run cut mid-work, lesson recorded
+
+- Hidde freed his morning usage window for extra daytime runs. Outcome: one dispatched run worked 12 minutes (75 turns) and was cut by the usage limit BEFORE its first commit; in CI, uncommitted work evaporates with the runner. Cron retries died instantly. Net yield: zero.
+- Lesson 1: daytime dispatches only pay when the interactive session is also quiet; the window is shared.
+- Lesson 2, for every run: make the first commit as early as possible inside an item (smallest committable step first), so a mid-item cutoff loses minutes, not the item. A run that researches for ten minutes before its first commit is gambling all ten.
 ## 2026-07-28 — Palermo: 34th city live, 8 trees, all pins confirmed from the start via MASAF, 6 of 8 photos
 
 Same session as the MASAF-parser entry below, continued once that parser was working reliably. With the standard depth ladder genuinely exhausted for today (Amsterdam/Lisbon/Istanbul re-confirmed dead across multiple passes, PRODUCT_TODO.md drained), moved to the one piece of new-city work Hidde explicitly approved ahead of the general freeze: Palermo, Cadiz and Sintra, needed to complete the "Top 10 tree city trips of Europe" collection (CURATION.md 2026-07-27, CLAUDE.md rung 6's standing exception).
