@@ -41,6 +41,7 @@
       },
       "story": "The oldest living thing in London. This yew was already ancient when the Romans were building Londinium two thousand years ago. The church beside it was not built until the 13th century, meaning the tree is over a millennium older than the building that now stands next to it. Its trunk is hollow and propped, its girth nearly eight metres. The Hundred Court of the district once met in its shadow. It has been pollarded many times over the centuries, which is partly why it is still alive.",
       "verified_sources": [
+        "https://exploring-london.com/tag/totteridge-yew/",
         "https://www.monumentaltrees.com/en/gbr/england/greaterlondon/19632_standrewschurch/"
       ],
       "access": "Free, open access, churchyard",
@@ -52,6 +53,7 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
+      "notes": "Was single-sourced to monumentaltrees.com, which CLAUDE.md's own research workflow says to use for verification only, not as a citable source; London's single most prominent claim (\"the oldest living thing in London\") stood on one non-citable link. Added exploring-london.com as a genuine independent second source, checked directly: it corroborates the age range (1,000-2,000 years), the girth (25ft, matching this entry's \"nearly eight metres\"), the tree's Great Trees of London listing, and the 2008 Conservation Foundation/Ancient Yew Group/Barnet Council survey that named it possibly London's oldest tree.",
       "location_precision": "confirmed"
     },
     {
