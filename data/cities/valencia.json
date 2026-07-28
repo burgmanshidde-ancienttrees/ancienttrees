@@ -96,8 +96,8 @@
       "best_time": { "months": [11], "label": "November, when its fan-shaped leaves turn gold and drop within days" },
       "location": {
         "address": "Jardín de Monforte, Calle Montolivet, 46003 Valencia",
-        "latitude": 39.4693,
-        "longitude": -0.3628,
+        "latitude": 39.47722,
+        "longitude": -0.365013,
         "neighbourhood": "L'Eixample"
       },
       "story": "This ginkgo has survived every conflict Valencia has been through since the mid-19th century simply by belonging to a species built to survive almost anything. Ginkgo biloba is often described as a living fossil, its lineage traceable back some 250 million years, largely unchanged, and famous for its ability to resist fire, disease and pollution better than almost any other large tree. This particular specimen grows in the Jardín de Monforte, a roughly 12,000 square metre neoclassical garden the Marquis of San Juan built from an orchard he bought in 1849, filling it with marble statues, fountains and specimen trees over the following decades. Declared a National Artistic Garden in 1941, it remains the last 19th century historical-artistic garden intact in Valencia, and this ginkgo, planted not long after the garden's founding, is described by the city as the best known of its kind in Valencia. A second, younger female ginkgo grows nearby in the same garden.",
@@ -114,8 +114,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Age given as approximately 170 years by one source, tied to the garden's 1849 founding; no individually documented planting record for this specific tree beyond that estimate. Photo viewed directly: shows a large tree in golden autumn foliage with a garden statue visible in frame, consistent with Jardin de Monforte's neoclassical statuary garden. Approved.",
-      "location_precision": "approximate"
+      "notes": "Age given as approximately 170 years by one source, tied to the garden's 1849 founding; no individually documented planting record for this specific tree beyond that estimate. Photo viewed directly: shows a large tree in golden autumn foliage with a garden statue visible in frame, consistent with Jardin de Monforte's neoclassical statuary garden. Approved. Pin corrected 2026-07-28 via the Comunitat Valenciana's own Catalogo de Arboles Monumentales y Singulares (IPA 684, 'Ginkgo de Monfort'), the only Ginkgo biloba recorded citywide, moved about 900m to the catalogue's surveyed point.",
+      "location_precision": "confirmed"
     },
     {
       "id": "vlc_004",
@@ -246,8 +246,8 @@
       "age_max": 110,
       "location": {
         "address": "La Alameda, beginning of Avenida de Aragon, 46010 Valencia",
-        "latitude": 39.4735,
-        "longitude": -0.3639,
+        "latitude": 39.469482,
+        "longitude": -0.360702,
         "neighbourhood": "Pla del Real"
       },
       "story": "This palm survived being in the way twice, first of traffic and then of a demolition crew, thanks to one head gardener's refusal to let it simply be cut down. It originally grew in the courtyard of a Marist Brothers school at Plaza Mirasol, until the early 1960s, when that building and others nearby were demolished to widen what had been the narrow street of Les Granotes into today's Calle Poeta Querol. Rather than lose the tree, head gardener Vicente Peris asked mayor Adolfo Rincon de Arellano to close the surrounding streets to traffic for a single night, and the palm was loaded onto two trucks and moved under cover of darkness to a new home at the start of Avenida de Aragon, beside La Alameda, where it still stands today. The relocation is documented specifically enough, down to the mayor's name and the two-truck detail, that it reads as verified local history rather than embellished legend, a rare case on this list of a tree's survival being an entirely deliberate human choice rather than an accident of neglect.",
@@ -264,8 +264,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "The relocation story (Plaza Mirasol origin, early 1960s move, mayor's approval, two trucks) is corroborated across both sources with only minor variation in the gardener's recorded surname.",
-      "location_precision": "approximate"
+      "notes": "The relocation story (Plaza Mirasol origin, early 1960s move, mayor's approval, two trucks) is corroborated across both sources with only minor variation in the gardener's recorded surname. Pin corrected 2026-07-28 via the Comunitat Valenciana's own Catalogo de Arboles Monumentales y Singulares (IPA 673), which names this exact tree 'La Palmera de Vicente Peris', an exact match to this entry's own name; moved about 525m to the catalogue's surveyed point.",
+      "location_precision": "confirmed"
     },
     {
       "id": "vlc_009",
