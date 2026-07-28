@@ -171,6 +171,36 @@ query($tag: String!, $since: Date!, $until: Date!) {
             "- Days (visits/pageviews): %s\n- Top paths: %s" % (trend, top))
 
 
+def fetch_machine(today):
+    """Chain utilization from the GitHub Actions API: attempts vs runs that got
+    real work time. Answers Hidde's standing question (2026-07-28) whether his
+    subscription's windows actually get used."""
+    tok = os.environ.get("GITHUB_TOKEN")
+    repo = os.environ.get("GITHUB_REPOSITORY", "burgmanshidde-ancienttrees/ancienttrees")
+    if not tok:
+        return None
+    yday = (today - datetime.timedelta(days=1)).isoformat()
+    req = urllib.request.Request(
+        "https://api.github.com/repos/%s/actions/workflows/nightly.yml/runs?per_page=100&created=%s..%s" % (repo, yday, yday),
+        headers={"Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        runs = json.load(r).get("workflow_runs", [])
+    total, worked, minutes = len(runs), 0, 0
+    for run in runs:
+        try:
+            a = datetime.datetime.fromisoformat(run["run_started_at"].replace("Z", "+00:00"))
+            b = datetime.datetime.fromisoformat(run["updated_at"].replace("Z", "+00:00"))
+            dur = (b - a).total_seconds()
+        except Exception:
+            dur = 0
+        if dur > 150:
+            worked += 1
+            minutes += int(dur // 60)
+    return ("Machine: %d chain attempts yesterday, %d got real work time (~%d min "
+            "total). Dead-in-seconds attempts cost nothing; few get-throughs means "
+            "the usage window was full or closed." % (total, worked, minutes))
+
+
 def build_entry(days, today, gsc_text):
     yday = today - datetime.timedelta(days=1)
     by_date = {d["dimensions"]["date"]: d for d in days}
@@ -272,6 +302,13 @@ def main():
         gsc_text += "\n\n" + fetch_rum(token, today)
     except Exception as e:
         gsc_text += "\n\nWeb Analytics (beacon): fetch failed today (%s)." % e
+
+    try:
+        m = fetch_machine(today)
+        if m:
+            gsc_text += "\n\n" + m
+    except Exception as e:
+        gsc_text += "\n\nMachine utilization: fetch failed today (%s)." % e
 
     entry = build_entry(days, today, gsc_text)
     # While the CF zone is dormant (domain not proxied), its zeros must not drive

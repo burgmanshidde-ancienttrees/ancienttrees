@@ -115,3 +115,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# Presence beacon (Hidde's capacity ruling, 2026-07-28): opening a session tells
+# the research chain to leave the daytime usage window alone for 4 hours.
+# Fire-and-forget; every failure is silent because the brief must never break.
+try:
+    import subprocess, os
+    env = dict(os.environ)
+    env["PATH"] = os.path.expanduser("~/.local/bin") + ":" + env.get("PATH", "")
+    subprocess.Popen(
+        ["gh", "workflow", "run", "presence.yml",
+         "--repo", "burgmanshidde-ancienttrees/ancienttrees"],
+        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, env=env)
+except Exception:
+    pass
