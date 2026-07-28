@@ -80,8 +80,8 @@ CSS = """
      identity: one type family (Gabarito), emphasis via weight and colour,
      never via a second typeface. --serif and --hand are kept as names only
      so nothing breaks, but they now point at the same family on purpose. */
-  --cream: #F6F2E9; --cream-dark: #ECE7DA; --ink: #26301E; --ink-mid: #5C6350;
-  --ink-light: #8A8B80; --moss: #4A6B2A; --moss-light: #EAF0DC; --gold: #D9A13F;
+  --cream: #FFFFFF; --cream-dark: #ECEAE3; --ink: #26301E; --ink-mid: #5C6350;
+  --ink-light: #8A8B80; --moss: #4A6B2A; --moss-light: #EDF3E3; --surface: #F7F6F1; --shadow: 0 1px 3px rgba(26,32,18,0.08), 0 4px 14px rgba(26,32,18,0.05); --gold: #D9A13F;
   --serif: 'Gabarito', system-ui, sans-serif; --sans: 'Gabarito', system-ui, sans-serif;
   --hand: 'Gabarito', system-ui, sans-serif;
   --header-h: 3.5rem;
@@ -90,19 +90,21 @@ html { scroll-behavior: smooth; }
 body { background: var(--cream); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
 a { color: var(--moss); }
 
-header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: var(--header-h); display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem; background: rgba(247,244,238,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--cream-dark); }
+header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: var(--header-h); display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem; background: rgba(247,244,238,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--cream-dark); }
 .bar-logo { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; text-decoration: none; color: var(--ink); }
 .bar-links a { font-size: 13px; color: var(--ink-mid); text-decoration: none; margin-left: 1.25rem; }
 .bar-links a:hover { color: var(--moss); }
-.bar-links a.bar-cta { color: #fff; background: var(--moss); font-weight: 600; border: 1px solid var(--moss); border-radius: 4px; padding: 0.35rem 0.8rem; }
-.bar-links a.bar-plus { color: var(--moss); font-weight: 600; border: 1px solid var(--moss); border-radius: 4px; padding: 0.35rem 0.8rem; }
+.bar-links a.bar-cta { color: #fff; background: var(--moss); font-weight: 700; border: 1px solid var(--moss); border-radius: 999px; padding: 0.45rem 1rem; }
+.bar-links a.bar-plus { color: var(--moss); font-weight: 700; border: 1.5px solid var(--moss); border-radius: 999px; padding: 0.45rem 1rem; }
 .nav-drop { display: inline-block; position: relative; margin-left: 1.25rem; }
 .nav-drop summary { font-size: 13px; color: var(--ink-mid); cursor: pointer; list-style: none; }
 .nav-drop summary::-webkit-details-marker { display: none; }
 .nav-drop summary::after { content: " ▾"; font-size: 10px; }
 .nav-drop[open] summary { color: var(--moss); }
-.nav-drop-menu { position: absolute; right: 0; top: 1.9rem; background: #fff; border: 1px solid var(--cream-dark); border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); padding: 0.5rem 0; min-width: 11rem; z-index: 40; }
-.nav-drop-menu a { display: block; padding: 0.45rem 1.1rem; margin: 0; font-size: 13px; }
+.nav-drop-menu { position: absolute; right: 0; top: 2rem; background: #fff; border: none; border-radius: 16px; box-shadow: 0 6px 30px rgba(26,32,18,0.16); padding: 0.6rem 0; min-width: 13rem; z-index: 40; }
+.nav-drop-menu a { display: flex; align-items: center; gap: 0.7rem; padding: 0.5rem 1.1rem; margin: 0; font-size: 13.5px; font-weight: 600; color: var(--ink); }
+.nav-drop-menu .mi { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; background: var(--surface); color: var(--ink); flex-shrink: 0; }
+.nav-drop-menu .mi svg { width: 16px; height: 16px; }
 .nav-drop-menu a:hover { background: var(--cream); }
 .only-mobile { display: none; }
 .nav-drop summary .sum-mobile { display: none; }
@@ -185,7 +187,7 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .tree-photo { margin: 1.5rem 0; }
 .tree-photo img { width: 100%; display: block; border-radius: 4px; }
 .tree-photo figcaption { font-size: 11px; color: var(--ink-light); margin-top: 0.45rem; }
-.go-btn { display: inline-block; background: var(--moss); color: #fff; text-decoration: none; font-size: 14px; font-weight: 500; padding: 0.7rem 1.25rem; border-radius: 4px; margin: 0.25rem 0 0.5rem; }
+.go-btn { display: inline-block; background: var(--moss); color: #fff; text-decoration: none; font-size: 14px; font-weight: 700; padding: 0.75rem 1.5rem; border-radius: 999px; margin: 0.25rem 0 0.5rem; }
 .go-btn.ghost { background: transparent; border: 1.5px solid var(--moss); color: var(--moss); }
 .chip-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.35rem 0 1rem; }
 .chip { font-size: 12px; font-weight: 600; background: var(--cream-dark); border-radius: 999px; padding: 4px 12px; color: var(--ink-mid); }
@@ -194,11 +196,12 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .chip.gold { background: #F3E4C3; color: #8A6414; }
 .action-row { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; margin: 0.75rem 0 1.25rem; }
 .action-row .go-btn { margin: 0; }
-.action-row .seen-btn { float: none; cursor: pointer; font-family: inherit; font-size: 14px; font-weight: 600; background: var(--moss); color: #fff; border: 1px solid var(--moss); border-radius: 4px; padding: 0.7rem 1.25rem; }
+.action-row .seen-btn { float: none; cursor: pointer; font-family: inherit; font-size: 14px; font-weight: 700; background: var(--moss); color: #fff; border: 1px solid var(--moss); border-radius: 999px; padding: 0.75rem 1.5rem; }
 .action-row .seen-btn[aria-pressed="true"] { background: var(--moss-light); color: var(--moss); }
 .action-link { font-size: 13.5px; font-weight: 600; color: var(--moss); text-decoration: none; }
 .near-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 0.5rem 0 1rem; list-style: none; padding: 0; }
-.near-card { display: block; background: #fff; border: 1px solid var(--cream-dark); border-radius: 12px; padding: 12px 14px; text-decoration: none; color: var(--ink); }
+.near-card { display: block; background: #fff; border: none; box-shadow: var(--shadow); border-radius: 16px; padding: 14px 16px; text-decoration: none; color: var(--ink); transition: box-shadow 0.15s; }
+.near-card:hover { box-shadow: 0 2px 6px rgba(26,32,18,0.12), 0 8px 22px rgba(26,32,18,0.09); }
 .near-card b { display: block; font-size: 14px; font-weight: 700; margin-bottom: 2px; }
 .near-card span { font-size: 12px; color: var(--ink-light); }
 .go-btn:hover { background: #2f4717; }
@@ -339,14 +342,38 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .explore-now-chip { display: inline-block; background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 11.5px; border-radius: 999px; padding: 2px 10px; margin-left: 0.4rem; }
 .explore-map { flex: 1; min-height: 320px; }
 .pop-now { background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 10px; border-radius: 999px; padding: 1px 8px; }
+.appland { position: relative; min-height: calc(100vh - var(--header-h)); display: flex; align-items: center; justify-content: center; padding: 2.5rem 1rem; }
+.appland-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; filter: brightness(0.82); }
+.appland-credit { position: absolute; left: 0.9rem; bottom: 0.5rem; z-index: 2; font-size: 10px; color: rgba(255,255,255,0.85); }
+.appland-card { position: relative; z-index: 1; background: #fff; border-radius: 24px; box-shadow: 0 18px 60px rgba(0,0,0,0.3); max-width: 62rem; width: 100%; display: grid; grid-template-columns: 1.05fr 1fr; gap: 2.5rem; padding: 2.75rem 3rem; }
+.appland-left h1 { font-size: 2.1rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.12; margin: 0.9rem 0 0.6rem; }
+.appland-sub { font-size: 14.5px; color: var(--ink-mid); line-height: 1.6; margin-bottom: 1.4rem; }
+.appland-steps { list-style: none; padding: 0; margin: 0 0 1.6rem; }
+.appland-steps li { display: flex; gap: 0.8rem; align-items: flex-start; font-size: 13.5px; color: var(--ink-mid); padding: 0.5rem 0; }
+.appland-steps strong { color: var(--ink); }
+.step-ico { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: var(--moss-light); color: var(--moss); flex-shrink: 0; }
+.step-ico svg { width: 17px; height: 17px; }
+.appland-cta { display: inline-block; background: var(--ink); color: #fff; font-weight: 700; font-size: 15px; text-decoration: none; border-radius: 999px; padding: 0.95rem 2.4rem; }
+.appland-right h2 { font-size: 13px; font-weight: 600; letter-spacing: 0.02em; color: var(--ink-light); margin-bottom: 0.4rem; }
+.appland-feat { display: flex; gap: 1rem; align-items: flex-start; padding: 1.05rem 0; border-bottom: 1px solid var(--cream-dark); }
+.appland-feat:last-child { border-bottom: none; }
+.feat-tile { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 12px; background: var(--surface); flex-shrink: 0; }
+.feat-tile svg { width: 34px; height: 34px; }
+.appland-feat h3 { font-size: 14.5px; font-weight: 800; margin-bottom: 0.15rem; }
+.appland-feat p { font-size: 12.5px; color: var(--ink-mid); line-height: 1.5; }
+@media (max-width: 800px) {
+  .appland { padding: 1rem 0.6rem; }
+  .appland-card { grid-template-columns: 1fr; padding: 1.6rem 1.3rem; gap: 1.4rem; border-radius: 20px; }
+  .appland-left h1 { font-size: 1.6rem; }
+}
 .plus-hero { margin-bottom: 1.5rem; }
 .plus-hero .chip { margin-bottom: 0.75rem; display: inline-block; }
 .plus-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin: 1rem 0 1.5rem; }
-.plus-card { background: #fff; border: 1px solid var(--cream-dark); border-radius: 14px; padding: 1.25rem 1.25rem 1.1rem; }
+.plus-card { background: #fff; border: none; box-shadow: var(--shadow); border-radius: 18px; padding: 1.4rem 1.4rem 1.2rem; }
 .plus-card svg { width: 44px; height: 44px; margin-bottom: 0.6rem; }
 .plus-card h3 { font-size: 15.5px; font-weight: 800; margin-bottom: 0.3rem; }
 .plus-card p { font-size: 13px; color: var(--ink-mid); line-height: 1.55; }
-.plus-free-note { background: var(--moss-light); border-left: 3px solid var(--moss); border-radius: 0 8px 8px 0; padding: 0.85rem 1.1rem; font-size: 13.5px; color: var(--ink-mid); margin: 0 0 1.5rem; }
+.plus-free-note { background: var(--moss-light); border-left: 3px solid var(--moss); border-radius: 0 14px 14px 0; padding: 0.85rem 1.1rem; font-size: 13.5px; color: var(--ink-mid); margin: 0 0 1.5rem; }
 .dir-cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.25rem 2rem; margin: 0.75rem 0 0.5rem; }
 .dir-group h3 { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.35rem; }
 .dir-group a { display: block; font-size: 13.5px; color: var(--ink-mid); text-decoration: none; padding: 0.15rem 0; }
@@ -374,7 +401,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .pin { padding: 2px 8px; border-radius: 999px; background: var(--moss); border: 1.5px solid #fff; box-shadow: 0 2px 8px rgba(26,26,20,0.35); cursor: pointer; color: #fff; font-size: 10.5px; font-weight: 600; font-family: var(--sans); white-space: nowrap; transition: transform 0.15s, background 0.15s; }
 .pin:hover { transform: scale(1.1); z-index: 5; }
 .hero-search { display: flex; gap: 0.5rem; margin-top: 0.9rem; }
-.hero-search input { flex: 1; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 8px; padding: 0.65rem 0.9rem; font-family: var(--sans); font-size: 15px; background: #fff; color: var(--ink); }
+.hero-search input { border-radius: 999px; flex: 1; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 8px; padding: 0.65rem 0.9rem; font-family: var(--sans); font-size: 15px; background: #fff; color: var(--ink); }
 .hero-search input:focus { outline: 2px solid var(--moss); border-color: var(--moss); }
 .hero-search .go-btn { margin-top: 0; }
 .go-btn.ghost { background: none; color: var(--moss); border: 1px solid var(--moss); }
@@ -498,7 +525,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .bar-links a.bar-cta { padding: 0.3rem 0.5rem; }
   /* Keep the bar on one line on phones: secondary links stay reachable from
      the homepage and from the pages themselves. */
-  header.bar { flex-wrap: nowrap; padding: 0 1rem; }
+  header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); flex-wrap: nowrap; padding: 0 1rem; }
   .bar-logo { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; text-decoration: none; color: var(--ink); }
   .bar-links { display: flex; align-items: center; white-space: nowrap; }
   .bar-links a.bar-secondary { display: none; }
@@ -536,7 +563,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <body>
 <header class="bar">
   <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><a href="%%ROOTPATH%%in-season" class="only-desktop">In season</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile">Map</a><a href="%%ROOTPATH%%in-season" class="only-mobile">In season</a><a href="%%ROOTPATH%%#cities">Cities</a><a href="%%ROOTPATH%%species">Species</a><a href="%%ROOTPATH%%collections">Collections</a><a href="%%ROOTPATH%%contribute">Suggest a tree</a></div></details><a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
+  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><a href="%%ROOTPATH%%in-season" class="only-desktop">In season</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%in-season" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 3 6 7 6 10a6 6 0 0 1-12 0c0-3 2-7 6-10z"/><path d="M12 8v13"/></svg></span>In season</a><a href="%%ROOTPATH%%#cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a></div></details><a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
 </header>
 %%BODY%%
 %%FOOTER%%
@@ -2333,6 +2360,34 @@ def build_privacy_page(pages):
     pages.append(("privacy.html", page, canonical))
 
 
+
+APPLAND_BODY = """
+<div class="appland">
+  <img class="appland-bg" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Greenwich_Park_Sweet_Chestnut_%281%29.jpg" alt="">
+  <p class="appland-credit">Photo: Hopefully Acceptable Username, Wikimedia Commons (CC BY-SA 4.0)</p>
+  <div class="appland-card">
+    <div class="appland-left">
+      <span class="chip gold">Coming soon</span>
+      <h1>The walk in your pocket</h1>
+      <p class="appland-sub">The website finds the trees. The app we are building is for the walk itself, and there is nothing to download yet; this page is what it will be, and how to hear it first.</p>
+      <ol class="appland-steps">
+        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><div><strong>Today:</strong> leave your email through the form, with the word "app"</div></li>
+        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="9" rx="6" ry="5"/><path d="M11.4 20h1.2l-.3-7h-.6z"/></svg></span><div><strong>Meanwhile:</strong> we build, and the site already works well on your phone</div></li>
+        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.8 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><div><strong>Launch day:</strong> you hear it first, before anyone else</div></li>
+      </ol>
+      <a class="appland-cta" href="{form}">Keep me posted</a>
+    </div>
+    <div class="appland-right">
+      <h2>The app is going to include</h2>
+      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="22" r="14" fill="none" stroke="#4A6B2A" stroke-width="3"/><circle cx="24" cy="22" r="4" fill="#D9A13F"/><path d="M24 4 v6 M24 34 v6 M6 22 h6 M36 22 h6" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg></span><div><h3>The trees around you, live</h3><p>Open it anywhere and see the remarkable old trees near you, the nearest one a walk-time away.</p></div></div>
+      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="19" rx="12" ry="10" fill="#3A5222"/><circle cx="17" cy="18" r="7" fill="#4A6B2A"/><circle cx="31" cy="18" r="7" fill="#4A6B2A"/><circle cx="24" cy="11" r="7" fill="#5B7F35"/><path d="M22.9 40h2.4l-.6-13h-1.2z" fill="#6B4F33"/><circle cx="36" cy="34" r="8" fill="#D9A13F"/><path d="M32.5 34 l2.5 2.5 5 -5" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Check in at the trunk</h3><p>Stand before a tree and collect it; your collection counts in years of living history.</p></div></div>
+      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 30 a10 10 0 0 1 2 -19 a12 12 0 0 1 22 3 a8 8 0 0 1 0 16 z" fill="#ECEDE2" stroke="#4A6B2A" stroke-width="2.5"/><path d="M18 36 l-3 5 M26 36 l-3 5 M34 36 l-3 5" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg></span><div><h3>Works where wifi does not</h3><p>A whole city in your pocket before you leave the hotel; no roaming required.</p></div></div>
+      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="20" cy="18" rx="10" ry="8" fill="#D9A13F"/><circle cx="15" cy="16" r="4.5" fill="#E8BC63"/><path d="M19 36h2.4l-.6-12h-1.2z" fill="#6B4F33"/><path d="M33 10 a10 10 0 0 1 5 9 M35.5 6 a15 15 0 0 1 7 13" stroke="#D9A13F" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg></span><div><h3>The season taps you</h3><p>When a tree near you reaches its golden week, the app says so, at exactly the right moment.</p></div></div>
+    </div>
+  </div>
+</div>
+"""
+
 def build_fakedoor_pages(pages):
     """Plus and The app: honest coming-soon pages (Hidde, 2026-07-28). They
     exist to measure real interest via the cookieless path counts and to
@@ -2370,40 +2425,14 @@ def build_fakedoor_pages(pages):
     <div class="plus-free-note"><strong>What stays outside Plus: the trees.</strong> Every tree on the site is free to explore, with its story, its map and its directions. Plus sells convenience, never the trees.</div>
     <h2>Want to hear when it arrives?</h2>
     <div class="prose-block"><p>No price exists yet, because it is not for sale yet. Leave your email through <a href="{form}">the contact form</a> with the word "Plus", and you will hear it first. That is all the form does with it.</p></div>"""),
-        ("app", "The Ancient Trees app", "The iOS app we are building for the walk itself.", """
-    <div class="plus-hero">
-      <span class="chip gold">Coming soon</span>
-      <p class="answer-first">The website finds the trees; the app we are building is for the walk itself. It is not here yet, and this page is honest about both halves: what it will do, and how to hear it first.</p>
-    </div>
-    <div class="plus-grid">
-      <div class="plus-card">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="22" r="14" fill="none" stroke="#4A6B2A" stroke-width="3"/><circle cx="24" cy="22" r="4" fill="#D9A13F"/><path d="M24 4 v6 M24 34 v6 M6 22 h6 M36 22 h6" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg>
-        <h3>The trees around you, live</h3>
-        <p>Open it anywhere and see the remarkable old trees near you, with the nearest one a walk-time away. The map knows where you stand.</p>
-      </div>
-      <div class="plus-card">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="19" rx="12" ry="10" fill="#3A5222"/><circle cx="17" cy="18" r="7" fill="#4A6B2A"/><circle cx="31" cy="18" r="7" fill="#4A6B2A"/><circle cx="24" cy="11" r="7" fill="#5B7F35"/><path d="M22.9 40h2.4l-.6-13h-1.2z" fill="#6B4F33"/><circle cx="36" cy="34" r="8" fill="#D9A13F"/><path d="M32.5 34 l2.5 2.5 5 -5" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <h3>Check in at the trunk</h3>
-        <p>Stand in front of a tree and collect it. Your collection lives in your pocket and counts in years of living history, not points.</p>
-      </div>
-      <div class="plus-card">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 30 a10 10 0 0 1 2 -19 a12 12 0 0 1 22 3 a8 8 0 0 1 0 16 z" fill="#ECEDE2" stroke="#4A6B2A" stroke-width="2.5"/><path d="M18 36 l-3 5 M26 36 l-3 5 M34 36 l-3 5" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg>
-        <h3>Works where wifi does not</h3>
-        <p>A whole city in your pocket before you leave the hotel: every tree, story, map and route, no roaming required.</p>
-      </div>
-      <div class="plus-card">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="20" cy="18" rx="10" ry="8" fill="#D9A13F"/><circle cx="15" cy="16" r="4.5" fill="#E8BC63"/><path d="M19 36h2.4l-.6-12h-1.2z" fill="#6B4F33"/><path d="M33 10 a10 10 0 0 1 5 9 M35.5 6 a15 15 0 0 1 7 13" stroke="#D9A13F" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg>
-        <h3>The season taps you</h3>
-        <p>When a tree near you reaches its golden week, the app says so. You go at exactly the right moment instead of reading about it after.</p>
-      </div>
-    </div>
-    <div class="plus-free-note"><strong>Until then:</strong> this site already works well on a phone. Open a city, tap a tree, check in at the trunk, and the directions button takes over. The app makes it better; it does not gate it.</div>
-    <h2>Want to hear when it lands?</h2>
-    <div class="prose-block"><p>Leave your email through <a href="{form}">the contact form</a> with the word "app", and you will be first to know.</p></div>"""),
+        ("app", "The Ancient Trees app", "The iOS app we are building for the walk itself.", "__APPLAND__"),
     ]:
         canonical = f"{BASE_URL}/{slug}"
-        inner = body_inner.replace("{form}", esc(submit_link("tree")))
-        body = f"""
+        if body_inner == "__APPLAND__":
+            body = APPLAND_BODY.replace("{form}", esc(submit_link("tree")))
+        else:
+            inner = body_inner.replace("{form}", esc(submit_link("tree")))
+            body = f"""
 <main class="content-page">
   <h1>{title}</h1>
   {inner}
