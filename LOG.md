@@ -40,6 +40,12 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Kyoto clears the depth-exit-test bar: 6 of 8 lead cities now pass
+
+Same session as the two entries below. Kyoto (7/10 photos) was one photo short, with two long-flagged near-miss cherry-tree photo candidates from prior sessions. **The Taiko Weeping Cherry of Daigo-ji gets a real, directly-viewed photo**: Commons' dedicated "Sakura at Sanbō-in" subcategory (not the general temple sakura category) holds one photoset of an old, gnarled, bamboo-propped weeping cherry matching this entry's own story almost exactly, CC BY-SA 2.0. **Kyoto now at 8/10 photos, clears the depth-exit-test floor.** That makes 6 of 8 lead cities passing (Tokyo, Paris, London, Barcelona, Rome, Kyoto); Amsterdam, Lisbon and Istanbul remain short and are documented exhausted for today's techniques. Kamigamo Shrine's other flagged candidate (the Emperor's Gift Cherry) got a real photo lead too, but it turned out to be a generic meadow shot of many young ornamental cherries with no tie to the specific named pair, correctly declined rather than guessed.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Madrid's three remaining approximate pins re-tried, confirmed genuine dead ends
 
 Same session as the New York entry below. Madrid (5/10 photos, 3 approximate) had real headroom on paper, since OpenStreetMap named nodes had already resolved seven of its ten pins in earlier sessions. Tried the same technique on the remaining three (Himalayan Cedar, Aleppo Pine, Stone Pine of El Capricho): no OSM node exists for any of them, individually named or species-tagged, only generic unlabelled tree points in two cases. One iNaturalist deodar cedar observation sits 230m from the Himalayan Cedar's pin, too far and too common a species in a large park to confirm as this specific singular tree, so left alone rather than guessed. No data changed, full detail in CURATION.md so a future session skips these three searches.
