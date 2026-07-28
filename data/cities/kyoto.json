@@ -181,7 +181,14 @@
       },
       "curation_status": "flagged",
       "notes": "Age range reflects a genuine discrepancy between sources counting from the 1949 planting (about 77 years) versus the 1928 seed collection (about 90+ years). Presented as a range rather than picking one figure, per the site's honesty standard. Photo is captioned as the Gion weeping sakura in Maruyama Park with embedded coordinates (35.0035, 135.7805) within about 50m of this entry's pin; a text-search workflow cannot visually confirm the frame, so flagged found_needs_check per house practice.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "label": "late March into early April, when its cascading blossoms draw crowds for night illumination"
+      }
     },
     {
       "id": "kyo_006",
@@ -273,7 +280,14 @@
       },
       "curation_status": "flagged",
       "notes": "Pin corrected 2026-07-27 (about 185m): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"太閤しだれ桜\" (Taiko shidarezakura, literally \"Taiko weeping cherry\") at this position, an exact and distinctive name match to this entry, replacing the previous estimate from Daigo-ji's general temple address. Story explicitly states this is not the original Hideyoshi-era tree, to avoid the misleading impression the name invites. Photo viewed directly 2026-07-28: an old, thick, mossy, gnarled weeping cherry in full bloom, bamboo-propped, beside a temple wall, matching the story's description exactly; one of only four images in Commons' dedicated \"Sakura at Sanbō-in\" subcategory (not the broader Daigo-ji sakura category), consistent with this being the sub-temple's single named, famous specimen rather than an arbitrary garden cherry.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "label": "late March into early April, when its blossoms recreate the display Hideyoshi once staged here"
+      }
     },
     {
       "id": "kyo_009",
@@ -335,7 +349,14 @@
       },
       "curation_status": "ai_generated",
       "notes": "Pin corrected 2026-07-27 (about 165m, a real error rather than mere imprecision): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"御所桜\" (Gosho-zakura), an exact name match, found alongside a second node 20m away named \"斉王桜\" (Saio-zakura), the companion red-flowered cherry this entry's own story names as growing beside it. The two names appearing together, matching the story precisely, makes this a confident match rather than a coincidence.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "label": "late March into early April, among the first of the shrine's cherries to bloom"
+      }
     }
   ]
 }
