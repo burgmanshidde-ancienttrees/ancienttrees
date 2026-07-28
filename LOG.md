@@ -40,6 +40,13 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Porto's remaining gaps confirmed as genuine dead ends (not unsearched); a real new Istanbul source found but not usable
+
+- **Porto** (4/10 photos, 6/10 approximate, next oldest marquee city below floor after Seville): checked all 6 remaining approximate pins against the city's own classified-trees open-data register. Result is now a documented dead end rather than an open question: two trees (the Magnolia and the Plane) are still going through official classification and genuinely won't appear in a dataset of already-classified trees; three species (camellia, two cedars) don't exist anywhere in that 575-row register at all; the last (Texas Madrone) got a dedicated iNaturalist pass instead, two real observations found, neither a meaningful precision gain over the existing pin. Photo hunt across all 6 gaps found real coverage for three of them (iNaturalist observations, including one confirming the Tulip Tree's pin is dead-on accurate) but every one is CC-BY-NC or fully unlicensed, unusable under the no-NC rule. Porto stays at 4/10 photos, 6/10 approximate; nothing here is worth re-searching until Porto's two under-review trees get formally classified.
+- **Istanbul**: a background pass this session retried the two untried leads flagged earlier today (an alternate government domain, three PDF brochures); both remain blocked (connection refused, file-size cap), not confirmed dead. It also turned up a real new source, İBB's own 517-tree monument database (anitagac.istanbul), which corroborates three trees' existing addresses and ages closely but supplies no coordinates and no licensed photos, so nothing in the data changed. The single highest-value move left for Istanbul is a direct licensing/coordinates request to that database's own team, which needs Hidde since a run can't contact third parties on the project's behalf; flagged again in CURATION.md.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Seville: two pins upgraded via a newly documented city tree-inventory technique
 
 Visitors: 65 visits, 99 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17).
