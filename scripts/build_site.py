@@ -104,6 +104,8 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .nav-drop-menu { position: absolute; right: 0; top: 1.9rem; background: #fff; border: 1px solid var(--cream-dark); border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); padding: 0.5rem 0; min-width: 11rem; z-index: 40; }
 .nav-drop-menu a { display: block; padding: 0.45rem 1.1rem; margin: 0; font-size: 13px; }
 .nav-drop-menu a:hover { background: var(--cream); }
+.only-mobile { display: none; }
+.nav-drop summary .sum-mobile { display: none; }
 .bar-links a.bar-cta:hover { background: var(--moss); color: #fff; }
 .city-card.soon:hover { opacity: 1; border-top-color: var(--moss); }
 .city-card-cta { font-size: 12px; color: var(--moss); font-weight: 500; margin-top: 0.35rem; }
@@ -218,6 +220,21 @@ header.bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: va
 .entry-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .entry-body h3 { margin-top: 0; }
 @media (max-width: 800px) {
+  .bar-logo { font-size: 0.92rem; letter-spacing: 0.04em; white-space: nowrap; }
+  .bar-logo svg { width: 20px; height: 18px; }
+  .bar-links { display: flex; align-items: center; gap: 0.55rem; }
+  .bar-links a { margin-left: 0; }
+  .only-desktop { display: none !important; }
+  .only-mobile { display: block; }
+  .nav-drop { margin-left: 0; }
+  .nav-drop summary { font-size: 13px; padding: 0.35rem 0.2rem; }
+  .nav-drop summary .sum-desktop { display: none; }
+  .nav-drop summary .sum-mobile { display: inline; }
+  .nav-drop-menu { position: fixed; left: 0.75rem; right: 0.75rem; top: 3.4rem; min-width: 0; }
+  .bar-links a.bar-cta { padding: 0.35rem 0.6rem; font-size: 12px; white-space: nowrap; }
+  .footer-cols { flex-direction: column; gap: 1.5rem; }
+  .action-row .go-btn, .action-row .seen-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
+
   .entry.has-thumb { grid-template-columns: 72px 1fr; gap: 0.8rem; }
 }
 .suggest { font-size: 13px; color: var(--ink-light); border-top: 1px solid var(--cream-dark); padding-top: 1.25rem; margin-top: 2.5rem; }
@@ -416,6 +433,21 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .pin-me { width: 16px; height: 16px; border-radius: 50%; background: #1E6FD9;
   border: 3px solid #fff; box-shadow: 0 0 0 4px rgba(30,111,217,0.25); }
 @media (max-width: 800px) {
+  .bar-logo { font-size: 0.92rem; letter-spacing: 0.04em; white-space: nowrap; }
+  .bar-logo svg { width: 20px; height: 18px; }
+  .bar-links { display: flex; align-items: center; gap: 0.55rem; }
+  .bar-links a { margin-left: 0; }
+  .only-desktop { display: none !important; }
+  .only-mobile { display: block; }
+  .nav-drop { margin-left: 0; }
+  .nav-drop summary { font-size: 13px; padding: 0.35rem 0.2rem; }
+  .nav-drop summary .sum-desktop { display: none; }
+  .nav-drop summary .sum-mobile { display: inline; }
+  .nav-drop-menu { position: fixed; left: 0.75rem; right: 0.75rem; top: 3.4rem; min-width: 0; }
+  .bar-links a.bar-cta { padding: 0.35rem 0.6rem; font-size: 12px; white-space: nowrap; }
+  .footer-cols { flex-direction: column; gap: 1.5rem; }
+  .action-row .go-btn, .action-row .seen-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
+
   .route-bar { position: fixed; left: 0.75rem; right: 0.75rem;
     bottom: calc(0.75rem + env(safe-area-inset-bottom)); }
   /* The fixed bar would otherwise sit on top of the last tree in the list. */
@@ -425,6 +457,21 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .maplibregl-popup-content strong { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 15px; font-weight: 400; }
 
 @media (max-width: 800px) {
+  .bar-logo { font-size: 0.92rem; letter-spacing: 0.04em; white-space: nowrap; }
+  .bar-logo svg { width: 20px; height: 18px; }
+  .bar-links { display: flex; align-items: center; gap: 0.55rem; }
+  .bar-links a { margin-left: 0; }
+  .only-desktop { display: none !important; }
+  .only-mobile { display: block; }
+  .nav-drop { margin-left: 0; }
+  .nav-drop summary { font-size: 13px; padding: 0.35rem 0.2rem; }
+  .nav-drop summary .sum-desktop { display: none; }
+  .nav-drop summary .sum-mobile { display: inline; }
+  .nav-drop-menu { position: fixed; left: 0.75rem; right: 0.75rem; top: 3.4rem; min-width: 0; }
+  .bar-links a.bar-cta { padding: 0.35rem 0.6rem; font-size: 12px; white-space: nowrap; }
+  .footer-cols { flex-direction: column; gap: 1.5rem; }
+  .action-row .go-btn, .action-row .seen-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
+
   .split { flex-direction: column-reverse; height: auto; }
   .panel { width: 100%; max-width: none; height: auto; overflow: visible; border-right: none; }
   /* Smaller map on phones: the list is what people scan, the map is context. */
@@ -447,7 +494,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .home-hero { height: 60vh; }
   .hero-overlay { left: 1rem; right: 1rem; top: 1rem; max-width: none; padding: 1.25rem 1.5rem; }
   .page { padding: 2rem 1.5rem; }
-  footer { flex-direction: column; text-align: center; }
+
 }
 """
 
@@ -474,7 +521,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <body>
 <header class="bar">
   <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  <nav class="bar-links"><a href="%%ROOTPATH%%">Map</a><a href="%%ROOTPATH%%in-season">In season</a><details class="nav-drop"><summary>Explore</summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%#cities">Cities</a><a href="%%ROOTPATH%%species">Species</a><a href="%%ROOTPATH%%collections">Collections</a><a href="%%ROOTPATH%%contribute">Suggest a tree</a></div></details><a href="%%ROOTPATH%%plus" class="bar-plus">Plus</a><a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
+  <nav class="bar-links"><a href="%%ROOTPATH%%" class="only-desktop">Map</a><a href="%%ROOTPATH%%in-season" class="only-desktop">In season</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%" class="only-mobile">Map</a><a href="%%ROOTPATH%%in-season" class="only-mobile">In season</a><a href="%%ROOTPATH%%#cities">Cities</a><a href="%%ROOTPATH%%species">Species</a><a href="%%ROOTPATH%%collections">Collections</a><a href="%%ROOTPATH%%contribute">Suggest a tree</a><a href="%%ROOTPATH%%plus" class="only-mobile">Plus</a></div></details><a href="%%ROOTPATH%%plus" class="bar-plus only-desktop">Plus</a><a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
 </header>
 %%BODY%%
 %%FOOTER%%

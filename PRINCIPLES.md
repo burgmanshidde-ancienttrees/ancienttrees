@@ -30,7 +30,7 @@ What we have learned from comparable products (AllTrails, Polarsteps, Strava, At
 
 3. **Empty states teach.** A 0 of 10 passport should invite the first check-in, not look broken. Every zero state is an instruction, not a dead end.
 
-4. **Mobile-first, and performance is UX.** Our visitor is outdoors on a phone, maybe on 3G in a park. Static HTML, light pages, images that load. A slow page in a park is a lost walk.
+4. **Mobile-first, and performance is UX, and it is a CHECK, not a mood (sharpened 2026-07-28 after Hidde caught a desktop-only nav ship).** Our visitor is outdoors on a phone, maybe on 3G in a park. Static HTML, light pages, images that load. A slow page in a park is a lost walk. The rule with teeth: NO visual or template change ships without being looked at, in the same pass, at phone width (375px). Desktop-only shipping is the same failure mode as machine-logic copy: it passes every contract and fails the actual person, and it must be caught by us, never by Hidde.
 
 5. **Programmatic SEO quality rules, because search is our only channel.** Every page must exist for a real reason and carry unique, substantive content, never fill-in-the-city-name templating (blueprint P3). Internal links by relevance, not everywhere. Quality over quantity: a few excellent pages beat many thin ones, which is the same logic as ten curated trees per city and the lead-group focus. Publish a little, measure, then scale, the canary-batch pattern, which is exactly the reference-city approach in GO_TO_MARKET.md.
 
