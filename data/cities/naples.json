@@ -35,8 +35,8 @@
       "age_max": 225,
       "location": {
         "address": "Giardino dei Principi, Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
-        "latitude": 40.8746,
-        "longitude": 14.2534,
+        "latitude": 40.868866,
+        "longitude": 14.252507,
         "neighbourhood": "Capodimonte"
       },
       "story": "This camphor tree arrived from China at the start of the 1800s, part of the Bourbon dynasty's decades-long project of turning their hunting estate at Capodimonte into a botanical showcase to rival any court garden in Europe. It has done more than survive the two centuries since: its trunk now measures 670cm around at chest height and its canopy shades roughly 400 square metres of the Garden of the Princes, dimensions that put it among the largest camphor trees anywhere on the continent. Cinnamomum camphora produces the aromatic oil that gives the tree its name, historically distilled for medicine and moth repellent, but this specimen's value today is closer to ecological than commercial: its bark and lower branches host an entire miniature ecosystem of mosses, ferns and fungi, distinct enough that Italy's official register of monumental trees names ecological value as one of the specific criteria for its 2021 listing. The tree stands in a section of the royal park that Naples reopened to visitors after years of restoration, free to enter and walk beneath.",
@@ -53,8 +53,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Age (early 1800s planting, ~220 years) and dimensions (670cm circumference, ~400 sqm canopy) corroborated across the park's own official museum page and an independent press article. No usable photo found on Commons or iNaturalist for this specific tree.",
-      "location_precision": "approximate"
+      "notes": "Age (early 1800s planting, ~220 years) and dimensions (670cm circumference, ~400 sqm canopy) corroborated across the park's own official museum page and an independent press article. No usable photo found on Commons or iNaturalist for this specific tree. Pin corrected 2026-07-28, about 640m: Italy's volunteer-run national tree registry (ilregistrodeglialberi.it, RAMI) lists a 'Canforo di Capodimonte' in the Giardino dei Principi with a surveyed circumference of 6.70m, an exact match to this entry's own already-sourced 670cm figure, a strong sign it is the same specific tree rather than just a same-species neighbour. An independent iNaturalist Cinnamomum camphora observation sits about 62m from RAMI's coordinate, corroborating it. RAMI's photos are all-rights-reserved so no photo gain. Upgraded to confirmed.",
+      "location_precision": "confirmed"
     },
     {
       "id": "nap_002",
