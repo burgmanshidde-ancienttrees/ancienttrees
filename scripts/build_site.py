@@ -379,6 +379,11 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .dir-group a { display: block; font-size: 13.5px; color: var(--ink-mid); text-decoration: none; padding: 0.15rem 0; }
 .dir-group a:hover { color: var(--moss); }
 .dir-more { font-size: 13px; color: var(--ink-mid); margin-top: 0.75rem; }
+.dir-morelink { font-weight: 700; color: var(--moss) !important; margin-top: 0.3rem; }
+.dir-cols { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.dir-all { margin-top: 1.25rem; }
+.dir-all summary { font-size: 13.5px; font-weight: 700; color: var(--moss); cursor: pointer; }
+.dir-all .dir-cols { margin-top: 0.9rem; }
 .city-card { background: var(--cream); padding: 1.5rem; text-decoration: none; border-top: 2px solid transparent; transition: border-top-color 0.2s; }
 .city-card:hover { border-top-color: var(--moss); }
 .city-card-name { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.25rem; color: var(--ink); margin-bottom: 0.25rem; }
@@ -401,6 +406,23 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .pin { padding: 2px 8px; border-radius: 999px; background: var(--moss); border: 1.5px solid #fff; box-shadow: 0 2px 8px rgba(26,26,20,0.35); cursor: pointer; color: #fff; font-size: 10.5px; font-weight: 600; font-family: var(--sans); white-space: nowrap; transition: transform 0.15s, background 0.15s; }
 .pin:hover { transform: scale(1.1); z-index: 5; }
 .hero-search { display: flex; gap: 0.5rem; margin-top: 0.9rem; }
+.home-hero.poster { position: relative; height: min(78vh, 680px); min-height: 480px; }
+.home-hero.poster .map { position: absolute; inset: 0; height: 100%; }
+.hero-scrim { position: absolute; inset: 0; background: linear-gradient(rgba(22,28,15,0.30), rgba(22,28,15,0.55)); pointer-events: none; z-index: 1; }
+.hero-center { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 1rem; pointer-events: none; }
+.hero-center > * { pointer-events: auto; }
+.hero-center h1 { color: #fff; font-size: clamp(2.1rem, 5.5vw, 3.8rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.08; margin-bottom: 1.4rem; text-shadow: 0 2px 18px rgba(0,0,0,0.35); }
+.hero-center h1 em { color: #F0C876; font-style: normal; }
+.poster-search { width: min(640px, 94vw); background: #fff; border-radius: 999px; padding: 0.35rem 0.6rem 0.35rem 0.4rem; align-items: center; gap: 0.15rem; box-shadow: 0 10px 40px rgba(0,0,0,0.28); margin-top: 0; }
+.poster-search .search-ico { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border: none; background: transparent; color: var(--ink-light); cursor: pointer; }
+.poster-search .search-ico svg { width: 20px; height: 20px; }
+.poster-search input { border: none; border-radius: 999px; flex: 1; font-size: 16.5px; padding: 0.65rem 0.5rem; }
+.poster-search input:focus { outline: none; }
+.hero-links { display: flex; gap: 1.8rem; margin-top: 1.3rem; flex-wrap: wrap; justify-content: center; }
+.hero-link { background: none; border: none; cursor: pointer; font-family: inherit; color: #fff; font-size: 15.5px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.home-hero.poster .near-me-result { color: #fff; font-weight: 600; margin-top: 0.9rem; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
+.hero-sub { padding: 1.6rem 2rem; text-align: center; }
+.hero-sub p { max-width: 44rem; margin: 0 auto; font-size: 14.5px; color: var(--ink-mid); line-height: 1.65; }
 .hero-search input { border-radius: 999px; flex: 1; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 8px; padding: 0.65rem 0.9rem; font-family: var(--sans); font-size: 15px; background: #fff; color: var(--ink); }
 .hero-search input:focus { outline: 2px solid var(--moss); border-color: var(--moss); }
 .hero-search .go-btn { margin-top: 0; }
@@ -2601,7 +2623,7 @@ def build_contribute_page(published, pages):
 
 # ----------------------------------------------------------------- homepage
 
-def build_homepage(published, upcoming, collections, pages):
+def build_homepage(published, upcoming, collections, pages, renderable=None, species_slugs=None):
     title = "Ancient Trees: remarkable old trees near you, mapped"
     description = ("Find the remarkable old trees around you. Ten per city, each verified, "
                    "each with its story, its exact spot and directions from where you stand.")
@@ -2615,16 +2637,44 @@ def build_homepage(published, upcoming, collections, pages):
             "url": p["slug"], "city": p["city"],
         })
 
+    # The four-column "anywhere" block, straight from the AllTrails reference
+    # (top cities / parks / trails / POIs becomes top cities / species /
+    # collections / oldest trees). Hidde spotted the compressed first version
+    # in one second; the reference-compare rule exists because of it.
+    top_cities = sorted(published, key=lambda x: -x["count"])[:14]
+    cities_col = "".join('<a href="%s">%s</a>' % (p["slug"], esc(p["city"])) for p in top_cities)
+    species_col = "".join('<a href="species/%s">%s</a>' % (sl, esc(cn))
+                          for cn, sl in (species_slugs or []))
+    species_col += '<a class="dir-morelink" href="species">All species</a>'
+    coll_col = "".join('<a href="collections/%s">%s</a>' % (esc(c["slug"]), esc(c["title"]))
+                       for c in (collections or [])[:8])
+    coll_col += '<a class="dir-morelink" href="collections">All collections</a>'
+    oldest = []
+    for entry in (renderable or []):
+        for t in entry["data"]["trees"]:
+            if t.get("age_max"):
+                oldest.append((t["age_max"], t["name"], entry["slug"], slugify(t["name"])))
+    oldest.sort(key=lambda x: -x[0])
+    trees_col = "".join('<a href="%s/%s">%s</a>' % (cs, ts, esc(name))
+                        for _, name, cs, ts in oldest[:10])
+    directory_html = (
+        '<div class="dir-cols">'
+        + '<div class="dir-group"><h3>Top cities</h3>%s<a class="dir-morelink" href="#cities-all">All %d cities</a></div>' % (cities_col, len(published))
+        + '<div class="dir-group"><h3>Top species</h3>%s</div>' % species_col
+        + '<div class="dir-group"><h3>Collections</h3>%s</div>' % coll_col
+        + '<div class="dir-group"><h3>Oldest trees</h3>%s</div>' % trees_col
+        + '</div>'
+        + '<details class="dir-all" id="cities-all"><summary>All %d cities, by country</summary>' % len(published))
     by_country = {}
     for p in published:
         by_country.setdefault(p["country"], []).append(p)
-    directory_html = '<div class="dir-cols">' + "".join(
+    directory_html += '<div class="dir-cols">' + "".join(
         '<div class="dir-group"><h3>%s</h3>%s</div>' % (
             esc(country),
             "".join('<a href="%s">%s</a>' % (p["slug"], esc(p["city"]))
                     for p in sorted(cities, key=lambda x: x["city"])))
         for country, cities in sorted(by_country.items())
-    ) + "</div>"
+    ) + "</div></details>"
 
     live_cards = "".join(
         f"""<a class="city-card" href="{p['slug']}">
@@ -2669,22 +2719,26 @@ def build_homepage(published, upcoming, collections, pages):
                    if SUPPORT_URL else "")
 
     body = f"""
-<div class="home-hero">
+<div class="home-hero poster">
   <div id="map" class="map"></div>
-  <div class="hero-overlay">
-    <p class="hero-kicker">By tree lovers, for tree lovers</p>
+  <div class="hero-scrim"></div>
+  <div class="hero-center">
     <h1>Epic old trees, <em>wherever you are</em>.</h1>
-    <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of.</p>
-    <p class="hero-note">Every tree free to explore.</p>
-    <form id="city-search" class="hero-search" autocomplete="off">
-      <input type="text" id="city-q" list="city-options" placeholder="Search a city, or use your location..." aria-label="Search for a city">
+    <form id="city-search" class="hero-search poster-search" autocomplete="off">
+      <button type="submit" class="search-ico" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg></button>
+      <input type="text" id="city-q" list="city-options" placeholder="Search by city or tree" aria-label="Search for a city">
       <datalist id="city-options">{city_options}</datalist>
-      <button type="submit" class="go-btn">Go</button>
     </form>
-    <button type="button" id="near-me" class="go-btn ghost">Find trees near me</button>
+    <p class="hero-links">
+      <button type="button" id="near-me" class="hero-link">Explore trees near you</button>
+      <a class="hero-link" href="in-season">See what is at its best now</a>
+    </p>
     <p id="near-me-result" class="near-me-result"></p>
   </div>
 </div>
+<section class="hero-sub">
+  <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of. Every tree free to explore.</p>
+</section>
 <section class="home-acts">
   <div class="home-act">
     <div class="home-act-copy">
@@ -2769,7 +2823,7 @@ def build_homepage(published, upcoming, collections, pages):
 <main class="page">
   <p class="prose lead-why">Why bother: a 400 year old tree has outlasted every empire, plague and war its city has seen. It was here before the street was named and will be here after you leave. Most guides send you to the same squares and the same viewpoints. This sends you somewhere quieter, ten minutes off the route, and it is almost always worth the detour.</p>
 
-  <h2 class="section-heading" id="cities">Ancient trees by city</h2>
+  <h2 class="section-heading" id="cities">Ancient trees anywhere</h2>
   <p class="prose">Not near any of these yet? The map above finds the nearest tree wherever you are. Otherwise, pick a city.</p>
   {directory_html}
   <p class="dir-more">Not seeing your city? <a href="contribute">Help map it</a>.</p>
@@ -3200,7 +3254,9 @@ def main():
     build_fakedoor_pages(pages)
     build_explore_page(renderable, pages)
     build_in_season_page(renderable, tree_slugs, pages)
-    build_homepage(published, upcoming, public_collections, pages)
+    species_slugs = sorted((common, slugify(common)) for common in qualifying) if qualifying else []
+    build_homepage(published, upcoming, public_collections, pages,
+                   renderable=renderable, species_slugs=species_slugs)
     build_redirects(published, pages, tree_slugs)
     validate_internal_links(pages)
 
