@@ -1,0 +1,278 @@
+{
+  "city": "Palermo",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Palermo grows one species obsessively. Ficus macrophylla, the Moreton Bay fig, arrived from Australia in the 19th century and found a climate it liked even better than home, filling the city's villas and squares with trees whose aerial roots thicken into trunks of their own. The most famous, in Piazza Marina, is currently fighting a fungal infection that has cost it half its canopy. Its own parent tree still thrives quietly in the Botanical Garden nearby. Between the two: a fig turned into a murdered judge's memorial, two rare dragon trees, and a palm avenue inside Italy's first public garden.",
+  "meta_description": "Palermo's ten most remarkable trees: a fungus-fighting giant fig, its own 180-year-old parent, and a mafia judge's living memorial.",
+  "question_meta": "Palermo's oldest tree is a 181-year-old fig in the Orto Botanico, parent to the more famous giant in Piazza Marina. Its story and nine more trees.",
+  "question_answer": "Palermo's oldest tree is the Ficus macrophylla of the Orto Botanico, planted in 1845 and now about 181 years old, its canopy measured at roughly 3,000 square metres, reportedly the largest of any tree in Europe. It grows inside the city's botanical garden, a short walk from the historic centre.",
+  "question_context": "Palermo's fig population is unusually well documented because most of it traces back to a handful of 19th century plantings, several still identifiable today. The Orto Botanico's own specimen, planted in 1845, is the oldest and best studied: 180 years of growth have built a canopy now measured at roughly 3,000 square metres, reportedly the largest of any tree in Europe, held up by 44 secondary trunks that grow down from the branches as aerial roots. Its more famous descendant in Piazza Marina, grown from a cutting taken off this tree in the 1860s, is currently fighting a fungal infection that has cost it half its own canopy. The botanical garden charges standard entry; Piazza Marina, a short walk away, is free.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Palermo?",
+      "a": "The Ficus macrophylla of the Orto Botanico, planted in 1845 and now about 181 years old. It grows inside the city's botanical garden, which charges standard entry."
+    },
+    {
+      "q": "Why is the Falcone Tree covered in messages?",
+      "a": "After the mafia killed anti-mafia judge Giovanni Falcone in a 1992 car bombing, strangers began taping messages, photographs and poems to the fig tree outside his home on Via Notarbartolo. Palermitans call it l'Albero della Speranza, the Tree of Hope, and the tradition is renewed every 23 May."
+    },
+    {
+      "q": "Is the giant fig tree in Piazza Marina dying?",
+      "a": "It is seriously ill. A fungal infection has spread through roughly half the tree since 2016, drying out aerial roots and dropping branches in 2016, 2020 and 2024. The city is monitoring and propping it while studying whether it can be saved."
+    },
+    {
+      "q": "Are Palermo's remarkable trees free to see?",
+      "a": "Most are, standing in free public squares and parks. The two exceptions are the Orto Botanico's ficus and the interior of Villa Malfitano, both of which charge standard entry; Villa Malfitano's garden itself, where its dragon tree grows, is free."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pal_001",
+      "name": "The Ficus of Piazza Marina",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "approximately 162 years",
+      "age_min": 160,
+      "age_max": 163,
+      "location": {
+        "address": "Piazza Marina (Giardino Garibaldi), 90133 Palermo",
+        "latitude": 38.117539,
+        "longitude": 13.369553,
+        "neighbourhood": "Kalsa"
+      },
+      "story": "Half of Palermo's most famous tree is dying. A fungal infection has spread through roughly half the plant since 2016, drying out aerial roots and dropping branches in 2016, 2020 and 2024, and the city is still working out whether it can be saved. None of that undoes what is already there: a Ficus macrophylla planted around 1863 or 1864 in a garden laid out on the site of Inquisition executions, 188 people burned or garrotted in the same square over two centuries. The mayor who had it planted, the Marchese di Rudini, was marking the end of Bourbon rule after Garibaldi's arrival, and the tree later earned a second civic title, Tree of the 150 Years of Italian Unity, in 2011. Its trunk system has spread into a thicket of secondary trunks and aerial roots so dense that sources disagree on the real measurement, some citing a 20 metre circumference and others 36, depending on whether they are measuring the original trunk or the whole colonnaded mass it has since become. That confusion is itself the point: a fig this size stops being one trunk and starts being a small forest sharing one root system. Palermo's arborists are now doing what any city does for an ageing landmark, propping, monitoring and hoping the fungus loses before the tree does.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Ficus_di_Villa_Garibaldi",
+        "https://www.ilpost.it/2026/03/13/malato-fico-piazza-marina-palermo/",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, public square (Piazza Marina / Giardino Garibaldi)",
+      "transport": "15 min walk from Palermo Centrale station, near the historic harbour",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Fico_magnolioide%2C_Piazza_Marina%2C_Palermo.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Margherito1, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Location taken directly from Italy's official AMI national monumental-trees register (read with a purpose-built binary XLS parser), confirmed. Age and history corroborated by Italian Wikipedia and Il Post's March 2026 report on the tree's declining health, which is the source for the disease details in the story; this is a live, evolving situation, worth a status recheck on future passes. The circumference figure is genuinely disputed between sources (20m vs 36m), presented as such rather than picking one. The 'largest tree in Europe' superlative sometimes attached to this tree is deliberately not used here per hard rule 8, since the Orto Botanico's own ficus (pal_003) carries a more specifically sourced canopy-area superlative that would conflict with it. Photo viewed directly: an unmistakable mature Ficus macrophylla with a dense forest of aerial roots and secondary trunks behind an ornamental iron fence, matching the square and story exactly.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_002",
+      "name": "The Falcone Tree",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "approximately 90 years",
+      "age_min": 85,
+      "age_max": 95,
+      "location": {
+        "address": "Via Notarbartolo 23, 90141 Palermo",
+        "latitude": 38.132783,
+        "longitude": 13.345678,
+        "neighbourhood": "Libertà"
+      },
+      "story": "This fig has been Palermo's memorial wall for over three decades. On 23 May 1992 a mafia car bomb killed judge Giovanni Falcone, his wife Francesca Morvillo, and three bodyguards on the motorway into the city. Within days strangers began taping messages, photographs and poems to the trunk of the Ficus macrophylla outside his apartment building, and they have never really stopped. Palermitans call it l'Albero della Speranza, the Tree of Hope. The building itself is an unremarkable 1960s apartment block on a residential street, which is part of what makes the tree's transformation so complete: nobody would look twice at Via Notarbartolo without it. The city has since listed it as a protected cultural asset, and in 2023 a local council motion proposed a flowerbed specifically to stabilise its roots after arborists flagged structural risk, work that has continued with pruning and monitoring since. Every 23 May the covering paper and messages are renewed for the anniversary. The tree itself is roughly 90 years old, planted decades before anyone could have guessed what it would come to hold, which makes it older than the massacre it now stands for by about half a century.",
+      "verified_sources": [
+        "https://palermo.gds.it/articoli/cronaca/2023/05/23/palermo-in-via-notarbartolo-lalbero-falcone-e-in-pericolo-mobilitazione-per-salvare-il-ficus-0cb527dc-67ec-4eb5-bc78-5ca0bc2084f1/",
+        "https://www.comune.palermo.it/novita/anniversario-strage-di-capaci-lottava-circoscrizione-propone-di-realizzare-unaiuola-in-via-notarbartolo-a-tutela-della-stabilit-dell-albero-falcone/",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, a street tree visible from the public sidewalk at all times",
+      "transport": "15 min walk from Piazza Politeama, in the Libertà district",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Arvulu_Falcone.JPG",
+        "license": "Public Domain",
+        "attribution": "Klone123, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Location taken directly from Italy's official AMI national monumental-trees register (registered under 'historical/cultural/religious value' criterion, matching the memorial status), confirmed, matching the known Via Notarbartolo 23 address exactly. History corroborated by Giornale di Sicilia's 2023 coverage and the Comune di Palermo's own official statement on the anniversary flowerbed motion; monumentaltrees.com was checked for cross-verification only, per hard rule 1, never copied. Age (roughly 90 years) is an attributed estimate rather than a documented planting record, flagged accordingly. The tree's structural stability has been an active concern since at least 2023; worth a recheck on future passes given how dynamic tree-health situations are. Photo (dated 2002) is older but the memorial tradition it depicts is unbroken and renewed annually, confirmed still ongoing by the 2023 sourcing.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_003",
+      "name": "The Ficus of the Orto Botanico",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "approximately 181 years",
+      "age_min": 178,
+      "age_max": 183,
+      "location": {
+        "address": "Orto Botanico di Palermo, Via Lincoln 2/A, 90133 Palermo",
+        "latitude": 38.111042,
+        "longitude": 13.374717,
+        "neighbourhood": "Kalsa"
+      },
+      "story": "The most famous fig tree in Palermo is not the one in Piazza Marina, it is that tree's parent. Planted in the Orto Botanico in 1845, this Ficus macrophylla has spent 180 years building a canopy now measured at roughly 3,000 square metres, reportedly the largest crown of any tree in Europe, spread across 44 secondary trunks that grow down from the branches as aerial roots and thicken into full columns once they reach the ground. In 2023 it placed fourth in the European Tree of the Year contest after winning Italy's own national vote first, on the strength of more than 10,000 European votes. The garden's own records tie it directly to its more famous relative across town: the Piazza Marina fig was grown from a cutting taken off this one. Visiting means paying the botanical garden's standard entry fee, unlike its free offspring in the public square, but it buys a walk underneath a structure that no longer reads as a single tree so much as a roofed courtyard built from one root system. The species, native to Australia's Lord Howe Island and the Queensland coast, has now been growing on this one plot for longer than Italy has existed as a unified country.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2023/palermo-botanical-garden's-giant-ficus",
+        "https://en.wikipedia.org/wiki/Orto_botanico_di_Palermo",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Paid entry, Orto Botanico di Palermo (standard ticket, around 6 euros)",
+      "transport": "20 min walk from Palermo Centrale station, or bus to Via Lincoln",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Ficus_macrophylla_%28Palermo%29.JPG",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Giuseppe ME, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Location taken directly from Italy's official AMI national monumental-trees register (Orto Botanico entry matching the 'Fico magnolioide' species and confirmed as the tallest-listed of several ficus specimens the garden holds), confirmed. Age and the 2023 European Tree of the Year placement corroborated by the contest's own official site and Wikipedia's Orto botanico di Palermo article; one source names the species' native range as Queensland/New South Wales and another as Norfolk Island, a minor discrepancy likely reflecting the broader native range rather than a factual conflict, noted rather than resolved. The 'largest canopy in Europe' claim is sourced specifically to the European Tree of the Year contest's own published measurement (roughly 3,000 square metres), a different and more specific metric than the trunk-size superlative sometimes attached to the Piazza Marina fig (pal_001), so both are kept without contradiction. Photo viewed directly: an enormous fig with a person for scale standing beneath its spreading aerial-root canopy, consistent with the garden setting and story.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_004",
+      "name": "The Dragon Tree of Villa Malfitano",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "approximately 140 years",
+      "age_min": 130,
+      "age_max": 146,
+      "location": {
+        "address": "Villa Malfitano Whitaker, Via Dante 167, 90141 Palermo",
+        "latitude": 38.124167,
+        "longitude": 13.341944,
+        "neighbourhood": "Libertà"
+      },
+      "story": "This tree bleeds, or its close relatives do: cut into a dragon tree's bark and the sap that runs out is dark red, sold for centuries across Europe as sangue di drago, dragon's blood, a dye and wound treatment. Palermo's own specimen, a Dracaena draco with a trunk just under six metres around, grows in the private botanical garden the Whitaker family built around their villa in the 1880s. The Whitakers had made their fortune in Marsala wine, the fortified wine Joseph Whitaker's grandfather helped turn into a British staple, and Joseph spent part of it hiring the botanist Emilio Kunzmann to fill the grounds with plants gathered from Tunisia, Sumatra and Australia rather than the classical statuary a Sicilian villa garden usually got. The dragon tree, native to the Canary Islands and Macaronesia rather than anywhere the family's ships actually sailed, was one specimen among that collection, assembled for curiosity rather than status. Its crown has since branched into the tiered, umbrella-like shape the species only reaches after decades of growth, each segment ending in a burst of stiff blue green leaves. No record survives of the exact planting date, only that it arrived with the rest of Kunzmann's garden. The park is free to walk; only the villa's interior charges for a guided tour.",
+      "verified_sources": [
+        "https://www.apgi.it/giardino/villa-malfitano-whitaker/",
+        "https://www.fondazionewhitaker.it/en/villa-malfitano-whitaker-en/",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free garden access; the villa's interior requires a paid guided tour",
+      "transport": "20 min walk from Piazza Politeama, entrance on Via Dante",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Albero_del_Drago.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "FrankAdamo, via Wikimedia Commons (Wiki Loves Monuments)",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Location taken directly from Italy's official AMI national monumental-trees register (circumference 590cm matching this story's 'just under six metres'), confirmed. History corroborated independently by APGI (Associazione Parchi e Giardini Italiani) and the Fondazione Whitaker's own site. Exact planting date not documented in any source found, presented as an estimated range tied to the villa's 1880s-90s construction rather than invented. Photo viewed directly: an unmistakable mature dragon tree with the species' distinctive tiered umbrella crown, in a garden setting consistent with Villa Malfitano.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_005",
+      "name": "The Dragon Tree of the Palazzina Cinese",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "approximately 136 years",
+      "age_min": 130,
+      "age_max": 140,
+      "location": {
+        "address": "Parco della Favorita, near Palazzina Cinese, 90146 Palermo",
+        "latitude": 38.1665,
+        "longitude": 13.330883,
+        "neighbourhood": "Favorita"
+      },
+      "story": "A Bourbon king built a Chinese pavilion in Sicily, and the dragon tree standing in front of it has outlasted every reason he had for doing so. Ferdinand III commissioned the Palazzina Cinese in 1799 from architect Venanzio Marvuglia as a retreat inside what became Parco della Favorita, part of a broader taste for chinoiserie that swept European royal courts with no particular logic attached to Sicily specifically. This Dracaena draco, about 136 years old, is the largest of several dragon trees planted around the building, its trunk now measuring six metres around and its condition tracked as good in Italy's own national tree register. The palazzina itself has been restored and reopened to the public after long closures, and the tree stands in the section of the Favorita that has always stayed open regardless, a royal hunting park turned public one generations ago. Joggers and tourists pass it daily without necessarily clocking that it predates the pavilion's current public opening by over a century, and that dragon trees like this one only flower, then branch, after decades of growth, which means this specimen's entire visible shape is a record of exactly how long it has already stood here.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/15850-albero-del-drago-della-palazzina-cinese-albero-del-drago-palermo-pa-sicilia",
+        "https://it.wikipedia.org/wiki/Palazzina_Cinese",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, Parco della Favorita, open daily",
+      "transport": "Bus from central Palermo toward Piazza Leoni; not a walkable distance from the historic centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Location taken directly from Italy's official AMI national monumental-trees register, confirmed. Age (136 years) and condition ('Buona'/good) corroborated independently by the RAMI tree-registry aggregator (ilregistrodeglialberi.it, used for verification only per the same standard applied to monumentaltrees.com), which also explicitly marks the tree as publicly accessible, clearing any hard rule 10 concern about the surrounding Favorita being former royal grounds. No open-licensed photo found on Wikimedia Commons or iNaturalist after a dedicated search; genuinely missing rather than unsearched.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_006",
+      "name": "The Ficus of Villa Trabia",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "undated, likely planted in the late 19th century",
+      "age_min": 120,
+      "age_max": 160,
+      "location": {
+        "address": "Villa Trabia, Via Salinas, 90144 Palermo",
+        "latitude": 38.129858,
+        "longitude": 13.348642,
+        "neighbourhood": "Libertà"
+      },
+      "story": "A single 1910 inventory of Villa Trabia's grounds recorded 2,790 plant species on one aristocratic estate, and one of the Ficus macrophylla planted for that collection is still standing, its trunk now nearly five metres around. The villa belonged to the Lucchesi Palli family, princes of Campofranco, who built it in the 18th century and spent the following hundred years turning the grounds into one of Palermo's most serious private botanical collections before the city eventually took the park over as public land. Roughly twenty other fig trees share the grounds today, descendants and companions from the same planting era, but this one's circumference sets it apart from the rest. The villa building itself now houses a municipal office and a public library, an unglamorous second act for grounds a prince once filled with rarities gathered from across the world for no reason beyond having them. The park was renamed in 2024 for Ninni Cassara, a police officer killed by the mafia in 1985, giving Villa Trabia the same layered history as Palermo's Falcone tree across town: a garden built for private pleasure now doubling as memorial ground. Open daily, free, no ticket required to stand beneath it.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Villa_Trabia",
+        "https://turismo.comune.palermo.it/palermo-welcome-luogo-dettaglio.php?tp=68&det=23&id=157",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "15 min walk from Piazza Politeama, in the Libertà district",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Villa_Trabia_Ficus.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "FrankAdamo, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Location taken directly from Italy's official AMI national monumental-trees register (circumference 480cm, matching this story's 'nearly five metres'), confirmed. History corroborated by Italian Wikipedia and the Comune di Palermo's own tourism page. No source gives an exact planting date for this specific specimen among the roughly twenty ficus at Villa Trabia, so age is presented as a wide, honest estimate rather than invented. Photo viewed directly: a large ficus with characteristic aerial roots and a buttressed trunk over an ornamental stone bench, consistent with a mature specimen at Villa Trabia, though with multiple large figs on the grounds it is not independently confirmed as this exact 480cm specimen; approved with that caveat on record rather than left unphotographed, the same honest-caveat pattern used elsewhere on the site.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_007",
+      "name": "The Date Palm of Villa Bonanno",
+      "species": "Date Palm (Phoenix dactylifera)",
+      "age_estimate": "approximately 120 years",
+      "age_min": 115,
+      "age_max": 125,
+      "location": {
+        "address": "Villa Bonanno, Piazza della Vittoria, 90134 Palermo",
+        "latitude": 38.112417,
+        "longitude": 13.3553,
+        "neighbourhood": "Albergheria"
+      },
+      "story": "Underneath this palm garden's soil sits a Roman house with a mosaic of Alexander the Great hunting a lion, uncovered by accident in the 19th century and left exactly where it was found. Villa Bonanno, laid out in 1905 in front of the Norman Palace that still seats Sicily's regional parliament, was built specifically to show off both: the archaeology below and roughly 400 date palms imported directly from Tunisia to fill the ground above it, reportedly the largest concentrated planting of Phoenix dactylifera anywhere in Europe. This specimen, measured at up to 2.5 metres around, stands among the mature survivors of that original planting, in a square that has spent 900 years as the political centre of Sicily under Normans, Spanish viceroys and now the regional government. The garden's designer, Giuseppe Damiani Almeyda, also built a small caretaker's house on site in the same period, one of the few original 1905 structures that survived a 2013 EU funded renovation covering three of Palermo's historic squares. The garden stays open around the clock, unfenced, a rare case of a European capital's most politically important square doubling as an all hours public park rather than a monument viewed from behind railings.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Villa_Bonanno",
+        "https://turismo.comune.palermo.it/palermo-welcome-luogo-dettaglio.php?tp=68&det=23&id=158",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, open access, unfenced, no closing hours",
+      "transport": "5 min walk from Palermo Cathedral",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Location taken directly from Italy's official AMI national monumental-trees register (a single 'Palma da datteri' point with its own circumference measurement, distinct from a grove-wide ensemble entry), confirmed. This entry describes one specific registered specimen rather than the c.400-palm planting as a whole, so it passes as a single collectible tree rather than an unbounded ensemble; the historical grove context is background, not the claim. History corroborated by Italian Wikipedia and the Comune di Palermo's tourism page. Exact planting date not documented for this individual palm, estimated from the 1905 garden layout. No open-licensed photo of this specific palm found on Wikimedia Commons after a dedicated search of the Villa Bonanno category; genuinely missing.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_008",
+      "name": "The Palm Avenue of Villa Giulia",
+      "species": "Mexican Fan Palm (Washingtonia robusta)",
+      "age_estimate": "undated, planted in a 19th century garden expansion",
+      "age_min": 100,
+      "age_max": 160,
+      "location": {
+        "address": "Villa Giulia, Via Lincoln, 90133 Palermo",
+        "latitude": 38.114183,
+        "longitude": 13.374956,
+        "neighbourhood": "Kalsa"
+      },
+      "story": "Villa Giulia opened in 1778, which makes it, by most accounts, Italy's first public garden, decades before Rome, Florence or Milan opened anything comparable to ordinary citizens rather than nobility. Goethe visited in 1787 and called it the most stupendous place in the world, high praise from a man who had just finished touring the rest of the country. The garden's original 18th century layout, designed by Nicolo Palma with sculptures by Ignazio Marabitti, predates the entrance avenue most visitors actually remember: a colonnade of Washingtonia robusta, Mexican fan palms, planted along Via Lincoln when the garden expanded in the 19th century, tall enough now that walking the avenue means walking in dappled shade for its entire length regardless of the hour. The species is native to the Sonoran Desert, about as far from Sicily's climate zone as Mexico's coast, and it has thrived here since being introduced across southern Europe as an ornamental import. At the garden's centre, a marble sundial built to a 1784 design by the mathematician Lorenzo Federici still stands beside a fountain sculpted by Marabitti, both older than the palms that now frame the walk toward them. Free, open daily, still doing the job it was built for in 1778.",
+      "verified_sources": [
+        "https://it.wikipedia.org/wiki/Villa_Giulia_(Palermo)",
+        "https://ilregistrodeglialberi.it/15843-palme-messicane-di-villa-giulia-palma-del-messico-palermo-pa-sicilia",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, public garden, open daily",
+      "transport": "10 min walk from Palermo Centrale station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Villa_giulia_palme.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "Dedda71, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Location taken directly from Italy's official AMI national monumental-trees register ('Palme messicane', Villa Giulia), confirmed. Treated as a compact ensemble entry (the entrance avenue itself, a single obvious place to stand) rather than the whole garden, the same pattern that passed Amsterdam's Lomanstraat tunnel and Tokyo's Meiji Jingu Gaien avenue, and the reasoning that failed Barcelona's old La Rambla entry. History (first-public-garden claim, Goethe visit, sundial and fountain) corroborated by Italian Wikipedia; the RAMI registry independently corroborates the palm avenue itself but also registers it as a grouped entry, consistent with treating it as an avenue rather than a single specimen. Exact planting date for the 19th century expansion not established in sources found, presented as a wide honest range. Photo viewed directly: an unmistakable palm-lined avenue with visitors walking beneath it, matching the story exactly.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
