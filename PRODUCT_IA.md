@@ -24,7 +24,7 @@ URLs do not move. City pages stay at /[city], tree pages at /[city]/[tree]. This
 
 ## The homepage, reordered
 
-1. Hero: find trees near you (search + map). Unchanged in spirit, already right.
+1. Hero: find trees near you (search over a rotating curated photo, AllTrails-style). Amended 2026-07-28: the map moved to /explore; Hidde's grounds, plus his own addition that a sparse world map advertises incompleteness. The show-don't-tell principle now lives in the /explore page and the verb sections, and the hero photo bank is curated for one mood: warm light, one epic tree, human scale.
 2. The four verbs as sections (find, walk, collect, season). Exists; tighten.
 3. One opinionated shelf: the flagship collection (top-10 trips) plus in-season now. Lists with an opinion are the shareable layer.
 4. A COMPACT explore directory: country-grouped city links, plain names, plus species and collections links. The current 36-card grid moves here in a fraction of the height, exactly the AllTrails "Adventure anywhere" block: present for crawlers and the determined, invisible as furniture.
