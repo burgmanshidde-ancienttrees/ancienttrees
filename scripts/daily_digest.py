@@ -78,11 +78,11 @@ def fetch_gsc(today):
 
 def gsc_section(gsc):
     if gsc is None:
-        return ("Search Console: GSC_* secrets not configured; section skipped.")
+        return ("Search Console: GSC_* secrets not configured; section skipped.", None)
     days, queries, pages = gsc
     days = [d for d in days if d.get("impressions") or d.get("clicks")]
     if not days:
-        return "Search Console: connected, but Google returned no rows for the window."
+        return ("Search Console: connected, but Google returned no rows for the window.", None)
     latest = days[-1]
     prev = days[-2] if len(days) > 1 else None
     trend = "  ".join("%s:c%d/i%d" % (d["keys"][0][5:], d["clicks"], d["impressions"]) for d in days)
@@ -97,7 +97,9 @@ def gsc_section(gsc):
         "- Top pages (10d): " + "; ".join(
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages) if pages else "- Top pages: none",
     ]
-    return "\n".join(lines)
+    return "\n".join(lines), {"clicks": latest["clicks"], "impressions": latest["impressions"],
+                               "prev_clicks": prev["clicks"] if prev else 0,
+                               "prev_impressions": prev["impressions"] if prev else 0}
 
 
 def fetch_cloudflare(token, today):
@@ -260,8 +262,9 @@ def main():
         print("SKIP: Cloudflare fetch failed: %s" % e)
         return 1
 
+    gsc_latest = None
     try:
-        gsc_text = gsc_section(fetch_gsc(today))
+        gsc_text, gsc_latest = gsc_section(fetch_gsc(today))
     except Exception as e:  # GSC failure must never kill the Cloudflare half
         gsc_text = "Search Console: fetch failed today (%s); numbers resume tomorrow." % e
 
@@ -271,6 +274,21 @@ def main():
         gsc_text += "\n\nWeb Analytics (beacon): fetch failed today (%s)." % e
 
     entry = build_entry(days, today, gsc_text)
+    # While the CF zone is dormant (domain not proxied), its zeros must not drive
+    # the conclusion. If search data exists, it replaces the conclusion line.
+    if gsc_latest is not None:
+        c, i = gsc_latest["clicks"], gsc_latest["impressions"]
+        pc, pi = gsc_latest["prev_clicks"], gsc_latest["prev_impressions"]
+        if i < 1000:
+            concl = ("Search is the only channel with real data and it is still small: "
+                     "%d clicks and %d impressions on Google's freshest day (day before: c%d/i%d). "
+                     "Directional at best; no strategic conclusions from these volumes." % (c, i, pc, pi))
+        else:
+            concl = ("Google's freshest day: %d clicks, %d impressions (day before: c%d/i%d). "
+                     "Volumes are past noise; a run should replace this line with an actual "
+                     "reading of what moved." % (c, i, pc, pi))
+        import re as _re
+        entry = _re.sub(r"\*\*Conclusion:\*\* .*\n", "**Conclusion:** %s\n" % concl, entry)
     body = existing[len(PREAMBLE):] if existing.startswith(PREAMBLE) else (
         "\n" + existing if existing else ""
     )
