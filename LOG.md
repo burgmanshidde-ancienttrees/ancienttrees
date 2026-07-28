@@ -40,6 +40,10 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Two more backlogged photos cleared with the same technique: London approved, Milan correctly turned down
+
+Swept the site for every tree still stuck at `found_needs_check` now that images can be viewed. Two: London's Sweet Chestnut of Greenwich Park, approved, matches its own story's description of an ancient, thick-trunked tree. Milan's Ginkgo of Orto Botanico di Brera, turned down: the photo shows vine leaves climbing the trunk, not ginkgo's distinctive fan shape, so a prior pass's caution about it was right and it goes back to `missing` rather than getting published on a location match alone.
+
 ## 2026-07-28 — The image-viewing wall that's blocked several recent runs is down; three pending photos resolved, Barcelona clears the photo floor
 
 Several runs this week (see below, and the 2026-07-27 evening entry) flagged the same limit: no way to actually look at a candidate photo before publishing it, only its filename and license metadata. Found a way through it this session: fetching a raw Wikimedia image URL fails as text but saves the binary locally, and reading that local file renders the image properly. Simple, and worth knowing for every run after this one.
