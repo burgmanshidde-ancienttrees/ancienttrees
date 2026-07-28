@@ -1,3 +1,10 @@
+## 2026-07-28 — Istanbul's 8 photo gaps tried with the Wikidata SPARQL technique: genuine dead end across the board, one reason why worth recording
+
+- Extended today's Wikidata SPARQL geo-image technique (which found real candidates for Rome and Barcelona, see below) to Istanbul's 8 remaining photo gaps specifically, since it hadn't been tried there before in dedicated form. Result: **none of these 8 trees, or their registry entries, have their own Wikidata item at all**, so the geo-radius query only ever surfaces unrelated nearby landmarks (mosques, fountains, museums, villas) rather than the tree itself. This is a structurally different situation from Rome and Barcelona, where the trees themselves are individually catalogued in Wikidata's monumental-tree register; Istanbul's own national registry (`turkiye_anit_agaclari`, used successfully for pins) apparently isn't mirrored into Wikidata the same way. Worth knowing before a future pass tries this same technique here again expecting Rome's result.
+- One open thread, not a dead end: **ist_004 (Taşlı Çınar)** has two CC-BY iNaturalist plane-tree photos within a few hundred metres of its pin, near the Archaeology Museum/Gülhane area, viewed directly but not confirmably this specific tree. Worth a closer look by a future pass, ideally with a source that can place either photo exactly.
+- Istanbul stays at 2/10 photos. No data changed.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Istanbul's 6 approximate pins re-tried: one real upgrade (Ahtapot Çınar), five stay honestly approximate, one untried government domain flagged for later
 
 - Continued the same-day depth pass onto Istanbul's pins, the other half of rung 5's bar (2/10 photos, 6/10 approximate, furthest behind of the eight lead cities). New angles: fresh Overpass API queries specifically for named tree nodes (a prior pass hit 504s from server load, not from the technique being wrong), Wikidata SPARQL geo-radius around each tree, Turkish Wikipedia, and a second look at anitagac.istanbul's individual detail pages.
