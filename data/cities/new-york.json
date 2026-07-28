@@ -109,13 +109,13 @@
       "access": "Free, public park",
       "transport": "Prospect Park (Metro B/Q/S), 10 min walk",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Camperdown_Elm_Prospect_Park_Brooklyn.jpg/1024px-Camperdown_Elm_Prospect_Park_Brooklyn.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Camperdown_Elm_Prospect_Park_Brooklyn.jpg",
         "license": "CC BY-SA 2.0",
         "attribution": "Garry R. Osgood, Wikimedia Commons",
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Pin corrected 2026-07-27 (about 70m): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"Camperdown Elm\" (species Ulmus glabra 'Camperdownii', planted 1872, matching this entry's own planting year exactly), replacing the previous Boathouse-area estimate.",
+      "notes": "Pin corrected 2026-07-27 (about 70m): OpenStreetMap carries a contributor-mapped, survey-sourced node named \"Camperdown Elm\" (species Ulmus glabra 'Camperdownii', planted 1872, matching this entry's own planting year exactly), replacing the previous Boathouse-area estimate. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/e/e0/...) 404'd, caught by a site-wide hash-path check against Commons' API; the real current path is 2/20. Fetched and viewed directly to confirm it's still the same weeping, umbrella-canopied elm before swapping.",
       "location_precision": "confirmed"
     },
     {
@@ -170,13 +170,13 @@
       "access": "Free, public park",
       "transport": "Douglaston (LIRR Port Washington line), 10 min walk",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Queens_Giant_%28Tree%29_04072024.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Queens_Giant_%28Tree%29_04072024.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Bruce Schaff, Wikimedia Commons",
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Coordinates taken directly from the confirmed photo's embedded GPS metadata (40°45'10.8\"N, 73°44'49.2\"W), a rare case of a precisely surveyed point for the tree itself rather than an estimate.",
+      "notes": "Coordinates taken directly from the confirmed photo's embedded GPS metadata (40°45'10.8\"N, 73°44'49.2\"W), a rare case of a precisely surveyed point for the tree itself rather than an estimate. Photo URL fixed 2026-07-28: the stored path (commons/e/ef/...) 404'd, caught by the same site-wide hash-path check that found Madrid's and the Camperdown Elm's broken links; the real current path is 6/67. Fetched and viewed directly (a tall bare-branched tree towering above its neighbours in a leaf-litter forest) to confirm it's still the same tree before swapping.",
       "location_precision": "confirmed"
     },
     {
