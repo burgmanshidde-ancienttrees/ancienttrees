@@ -40,6 +40,12 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Malaga gains a real photo for the Tallest Araucaria, from a contributor already trusted on this page
+
+- **Malaga** (3/10 photos, 5/10 approximate), next in the depth ladder after the three lead-group cities above: found and approved a genuine photo for mlg_007, the Tallest Araucaria in the Province, via iNaturalist (CC-BY-SA), taken by Daniel Capilla, the same photographer already credited for two of this city's other approved photos. His own field notes independently describe the same "tallest in the garden, 45m+, tallest in the province" claim this entry already makes, a real corroboration rather than a coincidence. Approved with an honest caveat: the photo shows the garden's grove of araucarias rather than one trunk singled out as the record-holder. Malaga now at 4/10 photos. Six other gaps re-tried across iNaturalist and Openverse stay genuine dead ends, mostly CC-BY-NC observations or nothing at all.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Antwerp: same session, one real lead found but too ambiguous to act on
 
 - **Antwerp** (5/10 photos, 7/10 approximate), the third and last untouched lead-group city today: re-queried the city's own Groeninventaris tree layer, which had already resolved 3 other Antwerp pins. Found a genuine new lead for the Millennium Ginkgo (4 ginkgos in Stadspark, 3 size-plausible for the year-2000 planting) but no way to tell which of the three is the specifically dated one without guessing, so left it approximate rather than pick one. The mulberry isn't in this city dataset at all (it's tracked only in Flanders' heritage inventory, a real structural gap not a search failure), and the cut-leaf horse chestnut cultivar can't be told apart from 128 ordinary horse chestnuts the layer doesn't distinguish by cultivar. One heritage photo candidate viewed directly turned out to show a park gate, not either missing-photo tree. Antwerp stays at 5/10, 7/10 approximate.
