@@ -40,6 +40,17 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — New York's Hero Park yew gets a real pin correction (about 1.4km) via a newly documented NYC open-data technique
+
+Visitors: 65 visits, 99 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 17). No reader submissions, site healthy, nothing published found wrong. Amsterdam, Lisbon and Istanbul, the three lead-group cities still short of the depth-exit-test bar, are all documented exhausted across many sessions today via a wide range of techniques (Wikidata SPARQL, Naturdenkmal-filename search, Openverse direct API, credentials this session also lacks for Mapillary/Commons OAuth); re-trying the same searches on them again would be the looping CLAUDE.md explicitly warns against, so this pass moved to the next rung, the rest of the lead group, and found real headroom in New York.
+
+- **NYC Open Data's Forestry Tree Points dataset (`hn5i-inap`) is directly queryable as JSON**, and had quietly resolved one New York pin in an earlier session without being written up as a repeatable technique. Queried it properly this time against all four of New York's remaining non-cemetery approximate trees.
+- **nyc_008, The Yew of Hero Park, corrected and upgraded to confirmed**: the dataset holds exactly one yew inside Hero Park's own mapped boundary, an outlier 48-inch-diameter specimen consistent with a tree planted in the park's 1920 WWI memorial grove, replacing a bare street-corner guess with a real point about 1.4km away. Two Commons photos of the park entrance were found and viewed directly but declined, generic street views rather than a shot of this specific tree.
+- Three other leads (the Manchurian Linden, the Sassafras at Green-Wood Cemetery, the Ramble's Black Tupelo) confirmed as genuine dead ends in this same dataset, for three different honest reasons (species absent from the register, private cemetery outside the register's scope, no nearby match at all), not just unsearched gaps. One real near-miss, four candidate red oaks inside the Thain Family Forest at NYBG all plausible in size, correctly left unresolved rather than guessed at which one carries the Great Tree designation.
+- New York now at 4/10 approximate pins (from 5), photos unchanged at 4/10.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Berlin, Vienna, Prague and Munich reach 10/10 photos
 
 Visitors: 65 visits, 99 page views over 7 days, still the strongest closing day (17 visits yesterday). No submissions.

@@ -250,8 +250,8 @@
       "age_max": 108,
       "location": {
         "address": "Hero Park, Victory Boulevard and Louis Street, Staten Island, NY 10301",
-        "latitude": 40.6198,
-        "longitude": -74.0972,
+        "latitude": 40.6304551,
+        "longitude": -74.0880947,
         "neighbourhood": "Grymes Hill, Staten Island"
       },
       "story": "This yew is one of 144 evergreens planted in 1920 around a glacial boulder called Sugar Loaf Rock, each tree standing as a living memorial to a Staten Island resident killed in the First World War. A plaque at the boulder names every soldier the grove commemorates, making Hero Park one of the more literal war memorials in New York City: not statues or a wall of names alone, but a planted forest where each individual tree corresponds to an individual death, a practice with a documented precedent in similar WWI memorial tree plantings elsewhere in the country around the same period. European yews are exceptionally long lived and slow growing, a species choice that all but guaranteed this planting would still be standing a century later, evergreen through every winter since 1920 the way the soldiers it honors never got to see. At just over a century old it is younger than most other trees on this list, but its age is not really the point; the grove was planted to hold a specific memory in place, and a century on, it still does.",
@@ -268,8 +268,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Coordinates are a street-level estimate for the Victory Boulevard/Louis Street intersection; no surveyed lat/long was found for the park or the specific tree.",
-      "location_precision": "approximate"
+      "notes": "Pin corrected 2026-07-28 (about 1.4km, from a street-corner estimate): NYC's own Forestry Tree Points open dataset (data.cityofnewyork.us, resource hn5i-inap) carries exactly one Taxus baccata point inside Hero Park's OpenStreetMap boundary, an unusually large 48-inch DBH specimen consistent with a yew planted in the park's 1920 memorial grove, versus every other yew citywide in that dataset topping out in the teens and 20s. Two Commons photos of the park entrance (CC BY 4.0 and CC BY-SA 3.0, both Jim.henderson) were found and viewed directly but declined as this tree's photo: both show the park's general tree line from Victory Boulevard, not this specific yew isolated from the other 143 memorial evergreens.",
+      "location_precision": "confirmed"
     },
     {
       "id": "nyc_009",
