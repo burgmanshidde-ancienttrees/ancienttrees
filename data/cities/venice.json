@@ -88,21 +88,23 @@
     },
     {
       "id": "ven_003",
-      "name": "The Cedar of San Lazzaro degli Armeni",
+      "name": "The Bcharre Cedars of San Lazzaro degli Armeni",
       "species": "Cedar of Lebanon (Cedrus libani)",
-      "age_estimate": "century-old (undated more precisely)",
-      "age_min": 100,
-      "age_max": 200,
+      "age_estimate": "planted January 2008",
+      "age_min": 17,
+      "age_max": 19,
+      "label": "Recent planting, ancient provenance",
       "location": {
         "address": "Isola di San Lazzaro degli Armeni, 30126 Venezia",
         "latitude": 45.411979,
         "longitude": 12.361422,
         "neighbourhood": "San Lazzaro degli Armeni"
       },
-      "story": "An Armenian monk fleeing the Ottoman conquest of his hometown turned a derelict leper-hospital island into one of Europe's least likely botanical collections, and the cedar growing there today is a direct result. Mechitar of Sebaste, forced out of Modone in 1715, was granted the abandoned island in 1717 and spent the following decades rebuilding it as a monastery and library for the Mekhitarist Armenian Catholic order, work finished around 1740. The garden he and his monks planted mixes a Cedar of Lebanon with Aleppo pines bent low by lagoon winds, a Canary Island palm, and roses grown for centuries to make vartanush, a rose petal jam still produced by the monks today. Sources describe the cedar only as centuries-old, without a specific planting date, so its exact age is unverified, but it has grown in a garden that has been continuously tended by the same religious order since the 18th century, a continuity almost nowhere else on this list can claim. The island also holds a khachkar, a 13th-century Armenian stone cross gifted by Armenia to mark the community's ties to Venice.",
+      "story": "These three cedars did not grow up on this island, they were carried to it. On 21 January 2008 a Venice Academy of Fine Arts student brought three young Cedars of Lebanon from her home village of Bcharre and from the Cedars of God, the sacred, UNESCO-listed forest in the mountains above it, and planted them on San Lazzaro degli Armeni as an artistic pilgrimage, an offering from one small mountain community to an island monastery built by another people who had also fled for survival. Mechitar of Sebaste, an Armenian monk driven out by Ottoman advances, was granted this derelict leper-hospital island in 1717 and spent decades turning it into a monastery, library and garden for the Mekhitarist Armenian Catholic order, still tended by the same order today. The cedar is Lebanon's own national tree, printed on its flag, and the choice to plant three here rather than one is deliberate in the retellings of the event, an echo of the island's own layered history of exile and rebuilding. Visitors who take the monastery's guided tour, the only way onto the island, pass the young cedars among a garden that also holds a Canary Island palm, wind-bent Aleppo pines, and centuries-old rose beds still picked for vartanush, rose petal jam.",
       "verified_sources": [
-        "https://en.wikipedia.org/wiki/San_Lazzaro_degli_Armeni",
-        "https://luoghi.italianbotanicalheritage.com/en/saint-lazarus-of-the-armenians-island/"
+        "https://www.inchiostroepietra.org/2024/04/1427/",
+        "https://www.radica.org/pellegrinaggio-artistico-allisola-di-san-lazzaro-degli-armeni/",
+        "https://www.youvenice.it/cosa-vedere-a-venezia/isole-veneziane/san-lazzaro-degli-armeni/"
       ],
       "access": "Paid entry (8 euro), guided tour only, daily at 15:25 (about 90 minutes)",
       "transport": "Vaporetto line 20 from San Zaccaria (Riva degli Schiavoni), about 25 minutes",
@@ -113,7 +115,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Cedar's age given only as 'centenario' (century-old) by both sources checked, with no specific figure or planting date, so treated as a wide, unverified range rather than a precise number.",
+      "notes": "Corrected 2026-07-28: the previous version of this entry claimed a 'century-old' cedar, but neither of its two cited sources (Wikipedia, italianbotanicalheritage.com) actually mentions a cedar at all, italianbotanicalheritage.com instead names an Araucaria araucana as the garden's signature specimen. That age claim had no real source and has been removed. What is actually documented, across two independent Italian-language accounts of a 2008 art-pilgrimage event plus a third general source confirming cedars are a distinctive present-day feature of the island's planting, is three young Cedars of Lebanon planted 21 January 2008, brought from Bcharre and the Cedars of God forest by a Venice art student. Kept on the list under the 'historically significant' qualifying criterion (CLAUDE.md Step 1) rather than age, same pattern as Lisbon's Giant Rubber Tree, and labelled honestly so nobody expects a century-old trunk. The Araucaria mentioned by italianbotanicalheritage.com was not adopted as a replacement candidate this pass; worth checking for a second source in a future pass.",
       "location_precision": "approximate"
     },
     {
