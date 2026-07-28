@@ -40,11 +40,22 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — The image-viewing wall that's blocked several recent runs is down; three pending photos resolved, Barcelona clears the photo floor
+
+Several runs this week (see below, and the 2026-07-27 evening entry) flagged the same limit: no way to actually look at a candidate photo before publishing it, only its filename and license metadata. Found a way through it this session: fetching a raw Wikimedia image URL fails as text but saves the binary locally, and reading that local file renders the image properly. Simple, and worth knowing for every run after this one.
+
+Used it on the three photos this session had found but held back pending a look:
+- **Rome's Ginkgo of Villa Sciarra**: an unmistakable ginkgo in full gold autumn colour. Approved. Rome now 7/10 photos.
+- **Naples's Plane Tree of the Villa Comunale**: a clean, confident match, mottled bark and all. Approved. Naples now 2/10 photos.
+- **Barcelona's Holm Oak of Carrer de l'Encarnacio**: the tree itself is only partly in frame, but the photo also shows a sign that reads, in Catalan, "this enclosure protects the oak's roots", naming the exact tree in the photo's own text. Approved on that. **Barcelona now sits at 8/10 photos with 0 approximate pins, clearing the depth-exit-test bar.**
+- Four cities now clear the bar (Tokyo, Paris, London, Barcelona); four don't yet (Amsterdam 7/10, Lisbon 6/10, Rome 7/10, Istanbul 2/10 and 5 approximate).
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Naples, the worst-photographed city on the site, gets one real candidate; a dead-tree flag raised on the Pine of Posillipo and cleared
 
 - Same session, same technique, moved to Naples (1/10 photos, worst on the site) after the eight lead cities. **The Plane Tree of the Villa Comunale (nap_009)** gets a strong-on-paper candidate: a Wikidata item recording this exact tree's official measurements, linked to a CC BY-SA 3.0 photo. Held at `found_needs_check`, same reason as Rome and Barcelona's candidates today: this session can't view images directly, and the framing itself (palms in the foreground, the plane partially cut off) is a real open question, not just a formality.
 - **Worth knowing this didn't turn into anything**: researching the Pine of Posillipo (nap_008) surfaced sourcing that the original tree was felled in 1984. Checked it against this project's own data before treating it as news: nap_008 already ships as the "Young replacement," planted 1995, exactly the finding the dead-tree sweep recorded when it checked this same tree in an earlier pass. No fix needed, just confirming there's nothing here that got missed.
-- Three photo candidates are now waiting on the same one-look check: `rom_001` (Rome), `bcn_001` (Barcelona), `nap_009` (Naples), all `found_needs_check` with URL/licence/attribution already filled in.
+- Resolved later the same session, see the entry above: found a way to view images directly, all three (including this one) confirmed and approved.
 - Site rebuilt, all contracts validated, pushed.
 
 ## 2026-07-28 — Istanbul: one pin genuinely upgraded (Ahtapot Çınar), five stay honest, one untried government domain flagged
@@ -67,8 +78,7 @@ Visitors: 65 visits, 99 page views over 7 days (21-27 July: 8, 9, 10, 7, 4, 10, 
 
 - No reader submissions, site healthy, nothing published found wrong. Depth-exit-test bar still not met: Amsterdam 7/10 photos, Lisbon 6/10, Rome 6/10, Barcelona 7/10, Istanbul 2/10 photos and 6 approximate pins. Amsterdam's own gaps are confirmed dead ends across many prior passes, so this run targeted Rome, Lisbon and Barcelona, the next-closest to the floor, with a genuinely new technique: Wikidata SPARQL geo-queries for images tagged near each tree, instead of re-running the Wikimedia/iNaturalist/Flickr/Openverse searches already exhausted on these gaps.
 - **Two real candidates found**, both well-sourced on paper: Rome's Ginkgo of Villa Sciarra (rom_001), via Rome's own official monumental-tree register on Wikidata, exact address match, CC BY-SA 4.0 photo from Wiki Loves Monuments Italia 2021. Barcelona's Holm Oak of Carrer de l'Encarnacio (bcn_001), a CC BY-SA 4.0 photo of the public garden built around the tree, confirmed as the right site by a companion photo showing "SALVEM L'ALZINA" graffiti, the exact campaign this tree's own story already names.
-- **Neither is marked `approved`.** This run's tooling could not fetch or render image files directly, so I could not personally view either photo to confirm it actually shows the tree rather than just the right site, the same gap a run flagged yesterday evening. Both are recorded as `found_needs_check` with the URL, licence and attribution already filled in, so the only work left is looking at two images. Lisbon's four remaining gaps and Rome/Barcelona's other three stay genuine dead ends, full detail in CURATION.md.
-- FOR HIDDE, only if you're passing a phone or laptop near this anyway: two photos are one look away from clearing Rome and Barcelona's floors. `data/cities/rome.json` tree `rom_001` and `data/cities/barcelona.json` tree `bcn_001`, both `photo.status: "found_needs_check"`. If the image matches the tree, flip that field to `"approved"`. Not blocking, a future run will keep trying too.
+- **Neither was marked `approved` at first**: this run's tooling initially couldn't fetch or render image files directly, the same gap flagged yesterday evening. Both were held at `found_needs_check` with URL, licence and attribution filled in. **Resolved later the same session, see the entry above**: found a way to actually view images, both confirmed and approved.
 - Site rebuilt, all contracts validated, pushed.
 
 ## 2026-07-27 — Kyoto's Hosen-in pine gets a photo; Naples, Florence, Barcelona photo dead ends closed out with new techniques
