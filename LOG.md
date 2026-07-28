@@ -40,7 +40,7 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
-## 2026-07-28 — Istanbul: one new verified photo (Beykoz Çayırı planes), two old candidates definitively ruled out
+## 2026-07-28 — Istanbul photo progress, then a site-wide best_time sweep finds 15 real seasonal-peak gaps across 7 cities
 
 New session. Visitors: 77 visits, 138 page views over 7 days (21-28 July: 8, 9, 10, 7, 4, 10, 17, 12), the strongest week yet. No submissions. Build clean.
 
@@ -49,7 +49,16 @@ Amsterdam and Lisbon's remaining photo gaps are exhaustively dead-ended across d
 - **Definitively rejected** the two Çengelköy Pier photos an earlier pass had left as "unconfirmed": viewed all 7 candidate files directly, none show the specific storm-damaged tree this entry describes.
 - The İBB PDF-brochure lead for 3 more Istanbul trees is confirmed still blocked (all 3 files exceed WebFetch's 10MB cap) — a real tooling wall, not unsearched ground.
 
-Istanbul still short of the depth-exit bar (needs 8+/10 photos, ≤2 approximate; now at 3/10 and 3 approximate). Full detail in CURATION.md. Site rebuilt, all contracts validated, committed, pushed.
+Istanbul still short of the depth-exit bar (needs 8+/10 photos, ≤2 approximate; now at 3/10 and 3 approximate).
+
+**Then a genuinely different kind of depth work: rung 5 names "seasonality where real" as part of Amsterdam's flawless bar, so checked whether `best_time` was under-used site-wide.** It was, badly: roughly 200 of 346 trees have none, and while most of those are correctly evergreens or non-standout species, a real, well-sourced handful had never been flagged. Added 15 across 7 cities, each verified against a species/location-specific source, not assumed from genus:
+- **Kyoto's three weeping cherries** (the single biggest miss on the site, sakura season is the most obvious "go now" signal Kyoto has and none of the three carried it): late March into early April.
+- Amsterdam's Amstelkade Olive Willow (May-June flowers), Lisbon's Tipu/Coral Trees/Paineira, New York's Black Tupelo/Sassafras/two Tulip Trees (fall colour), Malaga's two Ceiba trees, Porto's pōhutukawa (deliberately checked against Portuguese sources rather than naively translating its own story's "New Zealand Christmas tree" framing, which would have given the wrong months), Lyon's Cappadocian Maple.
+- Explicitly skipped two candidates where sourcing was too weak to be honest (Malaga's Yellow Poinciana, only Southern Hemisphere bloom data; Cadiz's Floss Silk Tree, whose own municipal source says only "spring to autumn").
+- Checked and correctly left alone: Istanbul, Rome, Barcelona, Paris, Tokyo, London, all fully scanned with no real gaps found.
+- Not yet scanned: the other ~20 published cities, worth a future pass with the same method.
+
+Full detail in CURATION.md. Every change rebuilt and validated individually, site rebuilt, all contracts validated, committed, pushed.
 
 ## 2026-07-28 — A site-wide photo-link audit, completed in full: 5 genuinely broken photo URLs found and fixed
 
