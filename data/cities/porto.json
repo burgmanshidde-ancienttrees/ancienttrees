@@ -120,7 +120,11 @@
       },
       "curation_status": "flagged",
       "notes": "Location confirmed and classification status corrected: the municipality's own open-data register of classified trees shows this Metrosideros excelsa (the only one in the whole dataset, a genuinely distinctive match) was formally classified 2019-03-15, not still under review as the 2017 source that originally flagged this tree had it. Story updated to match. Coordinate is the register's own surveyed point, about 160m from the previous whole-garden estimate. No age or planting date found in any source, so age is left as unknown rather than guessed; still flagged for that gap.",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [5, 6, 7],
+        "label": "May into July, when it blazes with red flowers, six months off from the New Zealand Christmas the tree is named for"
+      }
     },
     {
       "id": "por_004",
