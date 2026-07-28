@@ -1,3 +1,12 @@
+## 2026-07-28 — Nice and Lyon checked for depth headroom: both genuinely limited, one Lyon photo candidate correctly declined on a coordinate mismatch
+
+Continued down the Tier-2 depth order after Milan.
+
+- **Nice (8/10 photos, 9/10 approximate)**: already clears the photo floor, so this pass targeted pins. Checked whether the Alpes-Maritimes regional "arbres remarquables" registry (ASNAT/ANNAM), the source that already gives nce_010 its confirmed status, covers any of the other 9 entries. It doesn't: none of the Cimiez olive grove, Colline du Château, Cimetière du Château, Promenade des Anglais palms, Villa Masséna, Parc Vigier or Mont Boron appear in it. This isn't a gap so much as a structural fact about these entries: eight of the nine are explicitly written as ensembles with no single named, measured specimen (the sources themselves never identify one tree), so there is no more precise point to pin them to without inventing one. Nice's high approximate count is honest rather than unsearched. No data changed.
+- **Lyon (2/10 photos, 6/10 approximate)**: iNaturalist API pass across all remaining species found only CC-BY-NC or licence-free observations (bald cypress, cedar of Lebanon, Atlas cedar, horse chestnut, Japanese pagoda tree all checked, several genuinely zero results). One real Commons candidate for lyo_009 (Garden Trees of Jardin des Chartreux), a CC0 photo titled and geotagged at the garden, was checked and declined: its own GPS coordinates sit about 600m from this entry's stored pin, too far apart for a garden of the roughly 1-hectare size sources describe, so it can't be confirmed as the same site rather than a nearby, differently-tagged spot. Recorded rather than guessed.
+- Neither city's numbers changed this pass; both are recorded as genuinely limited rather than left as an unclear "not yet checked."
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Florence re-confirmed exhausted via iNaturalist; Milan gains a real photo (Parco Trotter red oak), one candidate correctly declined again on the same known ambiguity
 
 Continued down the ladder after Athens: Florence (4/10 photos, 0 approximate, marquee-Europe's last below-floor city) next, then Milan (5/10 photos, 2 approximate, next Tier-2 city).
