@@ -40,6 +40,12 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-28 — Verona gains a real photo for the Piazza Bra cedar
+
+- **Verona** (2/8 photos, 6/8 approximate), next after Bologna: found a real photo for ver_001, the Cedar of Piazza Bra, in the square's own Commons category, geotagged almost exactly on this entry's stored pin and showing the same fountain the tree's own story describes it standing beside since 1873. Approved with an honest caveat since several cedars are visible around the fountain, not one isolated trunk. Verona now at 3/8 photos. Five other gaps (Giardino Giusti's cypress avenue and yew wood, two more cedars) stay dead ends, all real iNaturalist coverage but CC-BY-NC or unlicensed throughout; a scanned 1993-94 academic thesis on the garden has relevant captioned images but they couldn't be located at individual file URLs this pass, worth a retry with better PDF tooling.
+- Full detail in CURATION.md.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Bologna gains two real photos: the sequoia and one of its two Himalayan cedars
 
 - **Bologna** (3/10 photos, 4/10 approximate), next after Malaga: found and approved two real photos. The Giardini Margherita sequoia's own species is named directly in a Commons photo caption ("sequoia sempreverde"), an exact match, viewed directly and confirmed as an unmistakable redwood trunk with an official monument tag on the bark. The Villa Ghigi Himalayan cedar's photo came from going straight to this entry's own already-cited Commons category rather than searching by keyword, which is what tripped up an earlier session (a keyword search had surfaced a wrong-city mixup, a similarly named cedar in Vallerano, correctly declined at the time). One photo candidate for a different tree, the Piazza Cavour ginkgo, was found and correctly declined: right species, wrong-looking setting (a plain brick wall rather than the formal piazza garden) and 130m from the registry-confirmed pin, in a city with several ginkgos in different squares. Bologna now at 5/10 photos, up from 3/10.
