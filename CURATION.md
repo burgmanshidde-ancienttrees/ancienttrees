@@ -1,3 +1,12 @@
+## 2026-07-28 — Verona gains a real photo for the Piazza Bra cedar; five other gaps stay dead ends
+
+Continued the depth ladder after Bologna to Verona (2/8 photos, 6/8 approximate at the start of this pass, an 8-tree city per the doctrine that ten is a cap not a quota).
+
+- **ver_001, The Cedar of Piazza Bra: approved.** Found in Piazza Bra's own well-photographed Commons category (already flagged in this entry's notes as searched before without success): a file geotagged at 45.4389,10.9928, essentially this entry's own stored coordinate, showing the square's central fountain, the same fountain this entry's story describes the tree as standing beside since Piazza Bra's 1873 layout, ringed by mature cedars with the Arena behind. Approved with an honest caveat: several cedar-shaped trees are visible around the fountain, not one trunk isolated and confirmed as the specific 2025-stabilised specimen, consistent with the story's own "one of the last survivors" framing (implying more than one candidate). **Verona now at 3/8 photos.**
+- **Five remaining gaps re-tried, stay genuine dead ends**: iNaturalist geo-radius searches on ver_004 (Himalayan Cedar, Via Nino Bixio), ver_005/006 (Giardino Giusti cypress avenue and yew/laurel wood) and ver_007 (Cedar of Villa Bersani) returned real observations in every case but exclusively CC-BY-NC or unlicensed. A 1993-94 academic thesis on Giardino Giusti's garden design, scanned and hosted on Commons, has page images explicitly captioned as showing the cypress avenue in perspective, but the individual page files could not be located at their expected filenames this pass (likely embedded in the PDF rather than extracted as standalone images); worth a future pass with a PDF-page-extraction tool rather than guessed filenames.
+- Verona now at 3/8 photos, 6/8 approximate.
+- Site rebuilt, all contracts validated, pushed.
+
 ## 2026-07-28 — Bologna gains two real photos (sequoia, Himalayan cedar), both found inside their own tree-specific Commons categories
 
 Continued down the depth ladder after Malaga to Bologna (3/10 photos, 4/10 approximate at the start of this pass).
