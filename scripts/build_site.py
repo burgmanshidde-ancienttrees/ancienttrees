@@ -65,6 +65,30 @@ AUTH_ENABLED = False
 SUPABASE_URL = "https://caimvxiyrtifilimlkqw.supabase.co"
 SUPABASE_KEY = "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb"
 
+# The hero photo bank (Hidde, 2026-07-28): rotates per visit, AllTrails-style.
+# All Unsplash License (free incl. commercial), credits recorded per hard
+# rule 4. Curate by adding or removing lines; first entry is the no-JS
+# fallback.
+HERO_PHOTOS = [
+    ("https://images.unsplash.com/photo-1422393682802-921122338109?q=80&w=2400&auto=format&fit=crop",
+     "Photo: Kevin Young, Unsplash"),
+    ("https://images.unsplash.com/photo-1653794965935-9a8f0b476cd4?q=80&w=2400&auto=format&fit=crop",
+     "Photo: Joydeep Sensarma, Unsplash"),
+    ("https://images.unsplash.com/photo-1778517320768-ed8c93862cf9?q=80&w=2400&auto=format&fit=crop",
+     "Photo: Timur Seyfelmlyukov, Unsplash"),
+    ("https://images.unsplash.com/photo-1777718183339-b81165490b4c?q=80&w=2400&auto=format&fit=crop",
+     "Photo: Pepijn M, Unsplash"),
+]
+# Inspiration bank from Hidde's 2026-07-28 moodboard, not in the hero rotation
+# (his instruction: inspiration, not literal use). All free Unsplash. Intended
+# homes when their moment comes:
+# - Bernd Dittrich, tram + tree Lisbon (photo-1778533300437-c4ab3d8d2d36): Lisbon city-page hero
+# - Joshua Kettle, Kirstenbosch path (photo-1663411322211-431180d5d4f1): walks imagery / Cape Town
+# - Taylor Cole, redwood hiker (photo-1690269112887-da7d1f1ea6f3): app page alternative
+# - JQ C, grassland trees (photo-1779631270027-776f55648da7): section background
+# - Silvia Ambrosini, tree + building Faros (photo-1695796315108-92cd3f730bc2): collections
+# - Pieter Bouwer, Buenos Aires steps (photo-1597689047962-1718c756b55f): world edition someday
+
 MAPLIBRE_JS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"
 MAPLIBRE_CSS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
 # OpenFreeMap: free vector tiles, no API key, commercial use permitted
@@ -407,7 +431,8 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .pin:hover { transform: scale(1.1); z-index: 5; }
 .hero-search { display: flex; gap: 0.5rem; margin-top: 0.9rem; }
 .home-hero.poster { position: relative; height: min(78vh, 680px); min-height: 480px; }
-.home-hero.poster .map { position: absolute; inset: 0; height: 100%; }
+.home-hero.poster .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-credit { position: absolute; right: 0.9rem; bottom: 0.5rem; z-index: 3; font-size: 10px; color: rgba(255,255,255,0.75); }
 .hero-scrim { position: absolute; inset: 0; background: linear-gradient(rgba(22,28,15,0.30), rgba(22,28,15,0.55)); pointer-events: none; z-index: 1; }
 .hero-center { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 1rem; pointer-events: none; }
 .hero-center > * { pointer-events: auto; }
@@ -1233,84 +1258,66 @@ if (gpsBtn && navigator.geolocation) {{
 """
 
 
-def home_map_script(markers):
+def home_hero_script(markers, tree_index):
+    """The photo-hero homepage script: no map here anymore (the map lives at
+    /explore since 2026-07-28; the homepage shows the feeling, per Hidde, and
+    honestly also hides how incomplete a 36-city world map still looks).
+    Search resolves cities first, then tree names; near-me finds the nearest
+    mapped city from the embedded centroids."""
     data = json.dumps(markers)
-    return f"""
-<script src="{MAPLIBRE_JS}"></script>
+    trees = json.dumps(tree_index)
+    return """
 <script>
-var markers = {data};
-// "Around you" has to actually mean something, so the button asks the browser
-// where you are and flies the globe to the nearest city that is on the map.
-function initNearMe() {{
+var markers = __CITIES__;
+var TREES = __TREES__;
+function initNearMe() {
   var btn = document.getElementById('near-me');
   var out = document.getElementById('near-me-result');
   if (!btn) return;
-  if (!navigator.geolocation) {{ btn.style.display = 'none'; return; }}
-  btn.addEventListener('click', function() {{
+  if (!navigator.geolocation) { btn.style.display = 'none'; return; }
+  btn.addEventListener('click', function() {
     out.textContent = 'Looking...';
-    navigator.geolocation.getCurrentPosition(function(pos) {{
+    navigator.geolocation.getCurrentPosition(function(pos) {
       var la = pos.coords.latitude, lo = pos.coords.longitude, best = null, bestD = Infinity;
-      markers.forEach(function(m) {{
+      markers.forEach(function(m) {
         var dLa = (m.lat - la) * Math.PI / 180, dLo = (m.lng - lo) * Math.PI / 180;
         var a = Math.sin(dLa/2) * Math.sin(dLa/2) + Math.cos(la*Math.PI/180) *
                 Math.cos(m.lat*Math.PI/180) * Math.sin(dLo/2) * Math.sin(dLo/2);
         var d = 6371 * 2 * Math.asin(Math.sqrt(a));
-        if (d < bestD) {{ bestD = d; best = m; }}
-      }});
-      if (!best) {{ out.textContent = 'No cities on the map yet.'; return; }}
-      map.flyTo({{ center: [best.lng, best.lat], zoom: 9, duration: 2200 }});
+        if (d < bestD) { bestD = d; best = m; }
+      });
+      if (!best) { out.textContent = 'No cities on the map yet.'; return; }
       var km = Math.round(bestD);
       out.innerHTML = km < 60
-        ? 'You are in reach of <a href="' + best.url + '">' + best.city + '</a>. ' + best.label + ' trees to walk to.'
+        ? 'You are in reach of <a href="' + best.url + '">' + best.city + '</a>: ' + best.label + ' trees to walk to.'
         : 'Nearest mapped city is <a href="' + best.url + '">' + best.city + '</a>, about ' + km +
-          ' km away. <a href="contribute">Map your own city</a>.';
-    }}, function() {{
-      out.textContent = 'Could not get your location. Pick a city below instead.';
-    }}, {{ timeout: 8000 }});
-  }});
-}}
-var map = new maplibregl.Map({{
-  container: 'map',
-  style: '{MAP_STYLE}',
-  // Opens on Europe: 30 of 33 cities stand there and the pills need room to
-  // breathe. The rest of the world is a drag or a search away, and the
-  // near-me button flies wherever you actually are.
-  center: [6, 47.5],
-  zoom: 3.1,
-  scrollZoom: false
-}});
-map.addControl(new maplibregl.NavigationControl());
-map.on('load', function() {{ map.resize(); }});
-new ResizeObserver(function() {{ map.resize(); }}).observe(document.getElementById('map'));
-markers.forEach(function(m) {{
-  var el = document.createElement('div');
-  el.className = 'pin';
-  el.textContent = m.city;
-  el.title = m.label + ' trees';
-  el.addEventListener('click', function() {{
-    map.flyTo({{ center: [m.lng, m.lat], zoom: 9, duration: 1400 }});
-    setTimeout(function() {{ window.location.href = m.url; }}, 1500);
-  }});
-  new maplibregl.Marker({{ element: el }}).setLngLat([m.lng, m.lat]).addTo(map);
-}});
+          ' km away. Or see <a href="explore">the whole map</a>.';
+    }, function() {
+      out.textContent = 'Could not get your location. Search a city instead.';
+    }, { timeout: 8000 });
+  });
+}
 initNearMe();
-// The search bar: the front door for people who know where they are going.
 var sf = document.getElementById('city-search');
-if (sf) {{
-  sf.addEventListener('submit', function(e) {{
+if (sf) {
+  sf.addEventListener('submit', function(e) {
     e.preventDefault();
     var q = document.getElementById('city-q').value.trim().toLowerCase();
     if (!q) return;
-    var hit = markers.find(function(m) {{ return m.city.toLowerCase() === q; }}) ||
-              markers.find(function(m) {{ return m.city.toLowerCase().indexOf(q) === 0; }}) ||
-              markers.find(function(m) {{ return m.city.toLowerCase().indexOf(q) !== -1; }});
-    var out = document.getElementById('near-me-result');
-    if (hit) {{ window.location.href = hit.url; }}
-    else {{ out.innerHTML = 'Not mapped yet. <a href="contribute">Be the first to map it</a>, or try the location button.'; }}
-  }});
-}}
+    var hit = markers.find(function(m) { return m.city.toLowerCase() === q; }) ||
+              markers.find(function(m) { return m.city.toLowerCase().indexOf(q) === 0; });
+    if (hit) { window.location.href = hit.url; return; }
+    var tree = TREES.find(function(t) { return t.n.toLowerCase() === q; }) ||
+               TREES.find(function(t) { return t.n.toLowerCase().indexOf(q) !== -1; });
+    if (tree) { window.location.href = tree.u; return; }
+    hit = markers.find(function(m) { return m.city.toLowerCase().indexOf(q) !== -1; });
+    if (hit) { window.location.href = hit.url; return; }
+    document.getElementById('near-me-result').innerHTML =
+      'Not mapped yet. <a href="contribute">Be the first to map it</a>, or try the location button.';
+  });
+}
 </script>
-"""
+""".replace("__CITIES__", data).replace("__TREES__", trees)
 
 
 def render_page(title, description, canonical, body, head_extra="", scripts="",
@@ -2710,6 +2717,11 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
         + ('<span class="sp-name">Ginkgo</span>' if k=="ginkgo" else "") + '</span>'
         for k in lit+dim)
     city_options = "".join(f'<option value="{esc(p["city"])}">' for p in published)
+    tree_options = "".join(
+        f'<option value="{esc(t["name"])}">'
+        for entry in (renderable or []) for t in entry["data"]["trees"])
+    city_options += tree_options
+    hero_bank_json = json.dumps(HERO_PHOTOS)
     contribute_cta = f'<a class="home-cta" href="{submit_link("home")}">Add a tree or a city</a>'
     # Empty until Hidde sets up somewhere to receive it. Donations rather than a
     # paywall: the content stays free and indexable, and there is no account, no
@@ -2720,7 +2732,16 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
 
     body = f"""
 <div class="home-hero poster">
-  <div id="map" class="map"></div>
+  <img class="hero-bg" id="hero-bg" src="{HERO_PHOTOS[0][0]}" alt="">
+  <p class="hero-credit" id="hero-credit">{HERO_PHOTOS[0][1]}</p>
+  <script>
+  (function() {{
+    var bank = {hero_bank_json};
+    var pick = bank[Math.floor(Math.random() * bank.length)];
+    document.getElementById('hero-bg').src = pick[0];
+    document.getElementById('hero-credit').textContent = pick[1];
+  }})();
+  </script>
   <div class="hero-scrim"></div>
   <div class="hero-center">
     <h1>Epic old trees, <em>wherever you are</em>.</h1>
@@ -2832,8 +2853,12 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
   <p class="prose subtle-suggest">This map grows through people who know their trees. <a href="{submit_link("tree")}">Know one we missed?</a>{support_cta}</p>
 </main>
 """
-    head_extra = map_head() + "\n" + ld_script(site_graph())
-    scripts = home_map_script(city_markers)
+    head_extra = ld_script(site_graph())
+    tree_index = []
+    for entry in (renderable or []):
+        for t in entry["data"]["trees"]:
+            tree_index.append({"n": t["name"], "u": f"{entry['slug']}/{slugify(t['name'])}"})
+    scripts = home_hero_script(city_markers, tree_index)
     page = render_page(title, description, BASE_URL + "/", body, head_extra, scripts,
                        rootpath="./", og_type="website")
     pages.append(("index.html", page, BASE_URL + "/"))
