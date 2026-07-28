@@ -78,7 +78,7 @@ The queue order changed three times in one day, each swing well-argued and none 
 
 **4. The November window is the one date-bound opportunity.** Twenty-three trees peak then; the radar and the ginkgo collection must be live and indexed by mid-October to catch it.
 
-**5. Coverage order is third-order and is hereby settled** (the footfall-times-oldness principle). It changes again only on new evidence, defined as data, not as a fresh angle in conversation.
+**5. Coverage order is Hidde's rollout strategy, superseding the footfall-times-oldness formula (his ruling, 2026-07-28).** The formula proved rekbaar enough to justify opposite orderings within a day, and the site's own data is years from being steerable. So: Hidde sets the wave order as strategy; pre-wave demand scans are a sanity check that can flag a wall and report to him; neither runs nor sessions reorder waves on formulas, scans or early metrics.
 
 Standard from here: any proposed strategy change gets an effect-size estimate against this list before it gets agreement. Agreeing quickly is cheap; ranking honestly is the job.
 
