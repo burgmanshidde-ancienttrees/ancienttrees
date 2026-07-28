@@ -6,6 +6,20 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## Liveness: the season layer as the site's heartbeat (Hidde, 2026-07-28, "opslaan tot we dat ooit moeten doen")
+
+His vision, condensed: the site must feel ALIVE, not static. Concretely:
+- **"Trees at their prettiest now"** as a first-class surface: the ten trees at their peak right now, with honest peaks only.
+- **Radius scaling**: not just walkable distance; let the viewer widen the lens (around you, your country, the world) and see what is peaking where.
+- **The pulsing pin**: on the map, a tree at its peak gets a pulse animation on its icon, the visual heartbeat that says NOW. He literally sees this before him; build it with care when the icon pass happens.
+- Animations done beautifully, not decoration: the point is actuality, "veel minder statisch allemaal".
+
+What already exists as the foundation, so this is an evolution not an invention: honest `best_time` on qualifying trees; the /in-season page (this month plus next two, grouped by city); the gold "at its best NOW" pin state in the Direction A design system; the season block on tree pages. What is genuinely new: the now-list ranked across geography, the radius switcher, and the pulse.
+
+Cost note for whoever picks this up: the pulse alone is roughly an hour (a CSS animation on the existing gold pin state); the radius-scaled now-list is the real build. Do the pulse in the same pass as the painterly pin icons so the map gets its life in one move.
+
+**Trigger:** the icon/pin design pass, or Hidde saying go. Not before the Japan-wave deadline work (2026-08-22) unless he explicitly bumps it.
+
 ## The open product question: tree-first or walk-first (Hidde, 2026-07-28)
 
 His framing, verbatim in spirit: AllTrails is clear, you go hiking and need a route; we hang between "you go for a walk with trees on it" and "you visit ten trees". A possible fork: not the ten most epic trees but the ten most walkable, but then we become a walking app, not a tree app. He does not have the answer, wants it parked, wants findings gathered slowly, leans toward staying open.
