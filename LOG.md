@@ -40,6 +40,14 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — Lyon: pulled a tree that shouldn't have been published (unverifiable, possibly private land), plus real photo/pin progress
+
+Same session, continuing from the best_time sweep and a Lyon photo/pin research pass below. The Lyon research surfaced something more important than a missing photo: **the Cedar of Île Barbe (lyo_007) turned out to rest on thin ground.** Its own two cited sources don't actually name a cedar anywhere on the island, and an official government heritage brochure for the island (found while checking further) states plainly that the only public planting is a meadow of plane trees, while the private, residential half of the island "ne se visitent pas", isn't open to visitors at all. If the cedar exists, the likeliest place for it is exactly the half nobody can walk into.
+
+That combination, an unverified claim plus a real risk of sending someone to private land, is exactly what hard rule 10 exists for ("when in doubt, leave it out," and it overrides everything else). Pulled the tree rather than downgrade it. Lyon drops to 9 trees, still well clear of the 4-tree minimum. Added old-URL redirect handling to the build script (a small, reusable piece of infrastructure, not a one-off) so the dead tree's page forwards to the Lyon city page instead of 404ing. This didn't need to wait for you, it's the reversible kind of call the mandate describes, but flagging it clearly since hard rule 10 is the one rule that outranks speed.
+
+**Same Lyon pass also found a real photo** (the Jardin des Chartreux ensemble entry, CC BY-SA 3.0, matches the entry's own description) and correctly rejected a plausible-but-unconfirmable candidate for another. Full detail in CURATION.md.
+
 ## 2026-07-28 — Istanbul photo progress, then a site-wide best_time sweep finds 15 real seasonal-peak gaps across 7 cities
 
 New session. Visitors: 77 visits, 138 page views over 7 days (21-28 July: 8, 9, 10, 7, 4, 10, 17, 12), the strongest week yet. No submissions. Build clean.
