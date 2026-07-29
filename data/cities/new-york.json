@@ -207,8 +207,8 @@
       "age_max": 150,
       "location": {
         "address": "Kissena Park, near the tennis courts, Flushing, Queens, NY 11355",
-        "latitude": 40.7508,
-        "longitude": -73.8103,
+        "latitude": 40.74740557,
+        "longitude": -73.80930012,
         "neighbourhood": "Flushing, Queens"
       },
       "story": "This linden is a leftover from a 19th century nursery business rather than a park planting, standing 75 feet north of a restroom next to Kissena Park's tennis courts on land that was once part of Samuel Bowne Parsons's commercial tree nursery. Parsons, whose family also planted Manhattan's Hangman's Elm-era Washington Square trees and much of Central Park's original stock, ran one of the era's most important import operations from this site starting in the 1870s, bringing Japanese maples to America for the first time and propagating rhododendrons at commercial scale. After Parsons died in 1906, the city absorbed part of his former grove into what became Kissena Park, and this Manchurian linden, a species native to forests spanning China, Korea and Russia's far east, is one of more than 100 imported tree varieties that trace back to the original nursery grounds still growing in the park today. It carries Great Tree status as a living fragment of Flushing's forgotten reputation as America's premier 19th century horticultural center, a history most visitors to the tennis courts beside it have no reason to suspect.",
@@ -225,8 +225,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source gives a specific planting date for this individual tree; age is estimated from the nursery's known 1870s-1900s active period. Coordinates are an estimate near the tennis courts based on the park's official location description ('75 feet north of the public restroom'), not a surveyed point.",
-      "location_precision": "approximate"
+      "notes": "No source gives a specific planting date for this individual tree; age is estimated from the nursery's known 1870s-1900s active period. Pin corrected 2026-07-29 (about 387m, from a park-wide estimate near the tennis courts): NYC Parks' own Great Trees page links this entry to NYC Tree Map ID 5342202, whose record in the Forestry Tree Points open dataset gives an exact point; an independent iNaturalist observation identified as Tilia mandshurica sits about 6m from that same point, two independent sources converging. Worth flagging: the city's own Forestry Tree Points dataset mislabels this record's species as \"Tilia cordata\" (littleleaf linden), which conflicts with both NYC Parks' own Great Trees text and the iNaturalist identification, both of which agree on Manchurian Linden; treated as a City GIS species-code error rather than evidence this is the wrong tree, since the location link and DBH context still line up.",
+      "location_precision": "confirmed"
     },
     {
       "id": "nyc_007",
@@ -244,7 +244,7 @@
       "story": "Staten Island's tallest tree stands 119 feet, more than 14 feet shorter than Queens' record-holding tulip tree, but old enough on its own terms to anchor the north end of Clove Lakes Park, easily found along a paved path where its trunk, 21.4 feet around, dwarfs everything nearby. Tulip trees like this one are among the tallest native hardwoods in eastern North America, capable of shooting straight up through a forest canopy in search of light rather than spreading wide the way an open-grown oak would, which is part of why the species so often produces the height records claimed on lists like this one. Clove Lakes Park itself preserves one of Staten Island's last stretches of the mixed hardwood forest that once covered most of the borough before 20th century development, and the Colossus, reported at well over 300 years old, would have been an established mature tree when the surrounding land was still farmland rather than parkland. It remains one of Staten Island's contributions to New York City's official Great Trees registry, one of ten entries from the least visited of the five boroughs.",
       "verified_sources": [
         "https://www.untappedcities.com/this-is-the-oldest-and-tallest-tree-in-nyc-the-queens-giant-in-alley-pond-park/",
-        "https://www.nycgovparks.org/facilities/great-trees",
+        "https://www.nycgovparks.org/facilities/great-trees/62",
         "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points, objectid 5600819)",
         "https://www.inaturalist.org/observations/363934201"
       ],
@@ -257,7 +257,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Sourcing for this specific tree is thinner than the others on this list: the height and circumference figures come from secondary coverage rather than a dedicated NYC Parks Great Trees entry found in this search. Age presented as a wide range and the tree flagged for a stronger primary source in a future pass. Location resolved 2026-07-27 via NYC Open Data's Forestry Tree Points dataset: the only Liriodendron tulipifera record citywide with a 93-inch DBH, an exact match to the Colossus's own reported circumference, sitting right at the park's mapped northern boundary off Forest Avenue. An independent iNaturalist observation of the same species sits about 10m away, corroborating the point rather than just the park.",
+      "notes": "Sourcing for this specific tree is thinner than the others on this list: the height and circumference figures come from secondary coverage rather than a dedicated NYC Parks Great Trees entry found in this search. Age presented as a wide range and the tree flagged for a stronger primary source in a future pass. Location resolved 2026-07-27 via NYC Open Data's Forestry Tree Points dataset: the only Liriodendron tulipifera record citywide with a 93-inch DBH, an exact match to the Colossus's own reported circumference, sitting right at the park's mapped northern boundary off Forest Avenue. An independent iNaturalist observation of the same species sits about 10m away, corroborating the point rather than just the park. Re-confirmed 2026-07-29: NYC Parks' own Great Trees page for this specific listing (great-trees/62) links directly to the same Tree Map objectid this pin was already built on, closing the loop with an official source rather than just a DBH-matching inference.",
       "location_precision": "confirmed",
       "best_time": {
         "months": [
@@ -275,8 +275,8 @@
       "age_max": 108,
       "location": {
         "address": "Hero Park, Victory Boulevard and Louis Street, Staten Island, NY 10301",
-        "latitude": 40.6304551,
-        "longitude": -74.0880947,
+        "latitude": 40.63058515,
+        "longitude": -74.0882007,
         "neighbourhood": "Grymes Hill, Staten Island"
       },
       "story": "This yew is one of 144 evergreens planted in 1920 around a glacial boulder called Sugar Loaf Rock, each tree standing as a living memorial to a Staten Island resident killed in the First World War. A plaque at the boulder names every soldier the grove commemorates, making Hero Park one of the more literal war memorials in New York City: not statues or a wall of names alone, but a planted forest where each individual tree corresponds to an individual death, a practice with a documented precedent in similar WWI memorial tree plantings elsewhere in the country around the same period. European yews are exceptionally long lived and slow growing, a species choice that all but guaranteed this planting would still be standing a century later, evergreen through every winter since 1920 the way the soldiers it honors never got to see. At just over a century old it is younger than most other trees on this list, but its age is not really the point; the grove was planted to hold a specific memory in place, and a century on, it still does.",
@@ -293,7 +293,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Pin corrected 2026-07-28 (about 1.4km, from a street-corner estimate): NYC's own Forestry Tree Points open dataset (data.cityofnewyork.us, resource hn5i-inap) carries exactly one Taxus baccata point inside Hero Park's OpenStreetMap boundary, an unusually large 48-inch DBH specimen consistent with a yew planted in the park's 1920 memorial grove, versus every other yew citywide in that dataset topping out in the teens and 20s. Two Commons photos of the park entrance (CC BY 4.0 and CC BY-SA 3.0, both Jim.henderson) were found and viewed directly but declined as this tree's photo: both show the park's general tree line from Victory Boulevard, not this specific yew isolated from the other 143 memorial evergreens.",
+      "notes": "Pin corrected 2026-07-28 (about 1.4km, from a street-corner estimate) via NYC's Forestry Tree Points dataset, using a 48-inch-DBH outlier as the reasoning (every other citywide yew topped out in the teens and 20s). Corrected again 2026-07-29, about 46m: NYC Parks' own Great Trees page for this exact entry (nycgovparks.org/facilities/great-trees/121) links directly to NYC Tree Map ID 5095477, a 17-inch DBH yew at a slightly different point within the same memorial grove. Preferred this over the previous DBH-outlier inference because it is a direct, official Great-Trees-to-Tree-Map linkage for this specific listing rather than a size-based guess; the grove holds 144 yews of varying size, so DBH alone was never a reliable way to single one out. Two Commons photos of the park entrance (CC BY 4.0 and CC BY-SA 3.0, both Jim.henderson) were found and viewed directly but declined as this tree's photo: both show the park's general tree line from Victory Boulevard, not this specific yew isolated from the other 143 memorial evergreens.",
       "location_precision": "confirmed"
     },
     {
@@ -337,8 +337,8 @@
       "best_time": { "months": [5], "label": "May, when its pink flower spikes stand out against the ordinary white-flowering chestnuts nearby" },
       "location": {
         "address": "Van Cortlandt House Museum, Broadway and West 246th Street, Bronx, NY 10471",
-        "latitude": 40.891139,
-        "longitude": -73.894833,
+        "latitude": 40.89066221,
+        "longitude": -73.89424523,
         "neighbourhood": "Van Cortlandt Park, Bronx"
       },
       "story": "This tree grows on the east lawn of the Van Cortlandt House, built in 1748 and the oldest building still standing in the Bronx, and local tradition holds that a member of the Van Cortlandt family planted it themselves, though no source confirms exactly when. Red horse chestnuts are themselves a hybrid, a cross between the European horse chestnut and a red-flowered American buckeye species, bred for ornamental gardens rather than found in the wild, which means whoever planted this one chose it deliberately for its spring flowers rather than letting it seed in naturally. At nearly 88 feet tall with a trunk over three feet across, it has grown large enough to be one of three horse chestnuts at the house included in the NYC Parks Great Trees registry, all three now part of a Great Tree Clone Program in which cuttings are propagated and planted at new sites around the city, extending the genetic line of trees like this one even as the originals eventually age out. Van Cortlandt House operated as a Revolutionary War-era headquarters at times for both American and British forces, meaning this tree, whatever its precise age, grows on ground that has seen the city's founding conflict up close.",
@@ -355,7 +355,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source gives a specific planting date; NYC Parks itself only states the tree is 'believed' to have been planted by a Van Cortlandt family member, making it 'over a century old.' Age range left wide to reflect that genuine uncertainty.",
+      "notes": "No source gives a specific planting date; NYC Parks itself only states the tree is 'believed' to have been planted by a Van Cortlandt family member, making it 'over a century old.' Age range left wide to reflect that genuine uncertainty. Pin corrected 2026-07-29, about 72m: NYC Parks' own Great Trees page for this entry links to NYC Tree Map ID 5081918, a 42-inch DBH Aesculus x carnea (matching this story's 'trunk over three feet across') at this point. Some residual ambiguity remains honestly noted: NYC Parks' own reporting mentions three horse chestnuts on the house's east lawn, so this is specifically the one the registry tagged for this listing, not necessarily the only one a visitor might notice first.",
       "location_precision": "confirmed"
     }
   ]
