@@ -40,6 +40,14 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — Porto: two pins upgraded via Portugal's national classified-trees register, a stale classification line corrected, 6 photo gaps stay honest dead ends
+
+- Same session, continued after Seville. Porto was at 4/10 photos, 6/10 approximate, next untouched in the lead-group order.
+- Found and used a genuinely valuable new source: ICNF's national register of classified trees of public interest (sigservices.icnf.pt), Portugal's own legal register, distinct from the municipal open-data layer (currently unreachable, looks like a network-level block, not a dead site).
+- Fixed 2 pins: por_002 (Magnolia of Casa Tait, ~28m correction, also caught and corrected a stale "still under review" line, it was actually classified 21 May 2021) and por_007 (Texas Madrone, Botanical Garden, ~57m correction). Both upgraded to confirmed.
+- 3 more pins checked against the same register and genuinely stay approximate (no forced matches); all 6 photo gaps stay honest dead ends after real effort. Full detail in CURATION.md, including a live lead (the botanical garden's own PDF tree map) for a future session with better PDF tooling.
+- Porto now at 4/10 photos, 4/10 approximate (from 6). Site rebuilt, all contracts validated, committed, pushed. Nothing needs Hidde.
+
 ## 2026-07-29 — Seville: one pin fixed (Patio de los Naranjos), 4 photo gaps and 3 more approximate pins confirmed genuine dead ends
 
 - `python3 scripts/visitors.py`: 74 visits, 129 page views over 7 days, consistent with recent sessions. No reader submissions. Depth exit test still short (Amsterdam 7/10 photos, Lisbon 6/10, Istanbul 3/10 + 3 approximate), and those three plus Rome, Edinburgh and Brussels had already been worked exhaustively earlier today, so moved to rung 4's "rest of the lead group": Vienna, Prague, Berlin already at 10/10 photos, so Seville (6/10, 4 approximate) was next untouched.
