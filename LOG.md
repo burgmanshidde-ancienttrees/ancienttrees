@@ -6,6 +6,18 @@ Format, deliberately short:
 
 ```
 
+## 2026-07-29 — Valencia: two pins fixed via a newly found open city registry; Amsterdam/Lisbon reconfirmed exhausted
+
+`python3 scripts/visitors.py`: 99 visits, 177 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), strongest week yet, 30 today alone. No reader submissions. Build clean at start, REVIEW.md empty, nothing published found wrong. Depth-exit-test bar unchanged: Amsterdam 7/10 photos, Lisbon 7/10, Istanbul 4/10 still block it, checked directly against the data rather than trusted from memory.
+
+This session had working `WebSearch`/`WebFetch` but, like several sessions today, no `curl`/`gh` (both need interactive approval that never arrives unattended) and no way to download and personally view an image. Re-hunted Amsterdam's three remaining photo gaps as a sanity check on that constraint: genuine dead ends again, consistent with today's earlier sessions.
+
+**Real find: Valencia's own open tree registry, geoportal.valencia.es, CC BY 4.0, queryable by species/street.** Apparently untried before. Resolved two pins from approximate to confirmed: **Los Tres Amigos** (three registered Phoenix canariensis on Calle Albacete, matching exactly; previous pin was 640m off) and **the Ficus of the Countess of Ripalda** (the one Ficus macrophylla registered at Plaza Legion Espanola itself, not the four others nearby in the Alameda gardens). Valencia now 3/10 approximate pins, down from 5/10. Committed and pushed immediately (cd58984), before trying the rest.
+
+Three more Valencia gaps got real effort against the same registry and stayed honest dead ends, each an avenue-planting or coverage-gap problem rather than a search failure (full detail, so nobody repeats them, in CURATION.md): the Holm Oak of Avenida de Aragon (75 candidates, no distinguishing field), La Mas Delgada del Paseo (106 candidates district-wide, none tagged to the specific park), and the Kashmir Cypress of the Botanical Garden (one promising Wikimedia photo caught and correctly rejected: right-sounding name, wrong species, *Cupressus torulosa* not *cashmeriana*).
+
+One data file changed, one commit, site rebuilt clean, pushed. Nothing needs Hidde.
+
 ## 2026-07-29 — Depth work: one photo, one pin, and an honest map of where this session's tools hit a wall
 
 `python3 scripts/visitors.py`: 97 visits, 175 page views over the last 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), strongest week yet, climbing daily, no sharp signal to reorder priorities. No reader submissions. Build and QA clean at session start, REVIEW.md empty, nothing published found wrong.
