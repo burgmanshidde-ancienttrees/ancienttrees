@@ -253,14 +253,15 @@
       "age_max": 100,
       "location": {
         "address": "Patio de los Naranjos, Catedral de Sevilla, 41004 Sevilla",
-        "latitude": 37.385742,
-        "longitude": -5.993096,
+        "latitude": 37.3862614,
+        "longitude": -5.9932695,
         "neighbourhood": "Casco Antiguo"
       },
       "story": "The orange trees that give Seville Cathedral's most famous courtyard its name aren't nearly as old as the courtyard itself. The Patio de los Naranjos, a rectangular yard 43 by 81 metres, was built between 1172 and 1186 as the ablutions courtyard of the Almohad mosque that once stood on this site, the place worshippers washed before prayer. The mosque came down after the 1248 Christian conquest and the Gothic cathedral rose around the same footprint, but the orange trees visitors photograph today only date to a 20th-century restoration led by architect Félix Hernández, replacing whatever grew here before rather than surviving from it. What has survived intact is more remarkable than any tree: the mosque's minaret, spared demolition entirely, still stands beside the patio as the cathedral's bell tower, known today as the Giralda, and a fountain basin at the courtyard's centre, possibly Roman or Visigothic in origin, still occupies the same spot where the ablutions fountain once stood. For most of its eight centuries this courtyard cost nothing to enter. That changed in 1992, when the cathedral folded it into its paid tourist route, ending a run of open public access longer than most European countries have existed. The orange trees are new. The habit of walking through them for free is the part that's actually gone.",
       "verified_sources": [
         "https://es.wikipedia.org/wiki/Patio_de_los_Naranjos_(Sevilla)",
-        "https://www.sevillaactualidad.com/sevilla/535112-el-patio-de-los-naranjos-30-anos-privatizado/"
+        "https://www.sevillaactualidad.com/sevilla/535112-el-patio-de-los-naranjos-30-anos-privatizado/",
+        "https://nominatim.openstreetmap.org/search?q=Patio+de+los+Naranjos+Sevilla"
       ],
       "access": "Paid entry (Seville Cathedral admission ticket required since 1992)",
       "transport": "Inside Seville Cathedral, adjoining the Giralda tower",
@@ -275,8 +276,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Current trees confirmed as a 20th-century replanting (Félix Hernández restoration) rather than a surviving Almohad-era grove, so age is stated as an estimate bound by the restoration era, not a documented planting year. The 1992 shift from free to paid access is confirmed by a dedicated local news retrospective. Coordinates are the cathedral's general address; the patio is one specific courtyard within the larger complex, not independently surveyed.",
-      "location_precision": "approximate"
+      "notes": "Current trees confirmed as a 20th-century replanting (Félix Hernández restoration) rather than a surviving Almohad-era grove, so age is stated as an estimate bound by the restoration era, not a documented planting year. The 1992 shift from free to paid access is confirmed by a dedicated local news retrospective. Pin resolved 2026-07-29 via OpenStreetMap/Nominatim: a pedestrian feature individually named 'Patio de los Naranjos, Santa Cruz, Casco Antiguo, Sevilla' (an exact name match for the courtyard itself, not just the cathedral's general address), about 60m from the prior address-derived point. This is an ensemble entry (the whole orange-tree courtyard, not one trunk), so a courtyard-level pin is the appropriate precision; treated as confirmed on that basis.",
+      "location_precision": "confirmed"
     },
     {
       "id": "sev_009",
