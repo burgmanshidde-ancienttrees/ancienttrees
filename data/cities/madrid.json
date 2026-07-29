@@ -291,13 +291,13 @@
       "access": "Free, public park",
       "transport": "Moncloa (Metro L3/L6), 10 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Cedrus_atlantica_20090311.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "Luis Fernandez Garcia, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "No source found gives a specific planting date or precise current age for this tree; the age range given is bounded only by the species' 1840 introduction to Europe and general knowledge of Atlas cedar growth rates, stated honestly as an estimate rather than a researched figure. Coordinates corrected 2026-07-26 to a named \"Cedro del Atlas\" node in OpenStreetMap (id 10261810384), the only tree in Parque del Oeste tagged with that Spanish common name, about 300m from the previous estimate but inside the same park and consistent with the Fuente de la Salud/Ruperto Chapi area sources describe.",
+      "notes": "No source found gives a specific planting date or precise current age for this tree; the age range given is bounded only by the species' 1840 introduction to Europe and general knowledge of Atlas cedar growth rates, stated honestly as an estimate rather than a researched figure. Coordinates corrected 2026-07-26 to a named \"Cedro del Atlas\" node in OpenStreetMap (id 10261810384), the only tree in Parque del Oeste tagged with that Spanish common name, about 300m from the previous estimate but inside the same park and consistent with the Fuente de la Salud/Ruperto Chapi area sources describe. Photo added 2026-07-29: File:Cedrus atlantica 20090311.jpg (CC BY 3.0), whose own Commons description explicitly names Cedrus atlantica, Parque del Oeste, Madrid. Downloaded and personally viewed: a genuine, correctly-identified Atlas cedar branch and needle close-up, species confirmed by the silvery-blue needle clusters. Held at found_needs_check rather than approved: the photo carries no GPS data and is a needle macro with no trunk or landmark in frame, so it cannot positively confirm this is El Abuelo specifically rather than another Atlas cedar elsewhere in the park (OSM shows only one tree named that way, which favours it being the same tree, but the photo itself can't prove it).",
       "location_precision": "confirmed"
     },
     {
