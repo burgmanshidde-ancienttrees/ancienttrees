@@ -54,7 +54,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Protection since 1950 and 250+ year age confirmed by both the Porto city council's own parks page and an independent garden-history source. Location upgraded to confirmed: the municipality's own open-data register of classified trees carries a Liriodendron tulipifera record with the exact same legal reference and 1950-09-01 classification date cited above, giving a surveyed point about 170m from the previous whole-garden estimate. A second Liriodendron tulipifera also appears in the open-data set nearby, classified separately in 2021 (a different legal reference and date), matching the story's own note about a second, less formally distinguished tulip tree in the same grounds; the 1950 record was used since it matches this tree's own citation.",
+      "notes": "Protection since 1950 and 250+ year age confirmed by both the Porto city council's own parks page and an independent garden-history source. Location upgraded to confirmed: the municipality's own open-data register of classified trees carries a Liriodendron tulipifera record with the exact same legal reference and 1950-09-01 classification date cited above, giving a surveyed point about 170m from the previous whole-garden estimate. A second Liriodendron tulipifera also appears in the open-data set nearby, classified separately in 2021 (a different legal reference and date), matching the story's own note about a second, less formally distinguished tulip tree in the same grounds; the 1950 record was used since it matches this tree's own citation. Photo search 2026-07-29: no openly-licensed photo found. Checked Wikimedia Commons (full-text and category search, including the dedicated 'Liriodendron tulipifera in Portugal' category, which has no Porto entries), iNaturalist (one CC-BY-NC-only observation logged at this exact tree's coordinates, unusable), Openverse and a Flickr CC search. Still missing.",
       "location_precision": "confirmed"
     },
     {
@@ -66,14 +66,16 @@
       "age_max": 150,
       "location": {
         "address": "Casa Tait, Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
-        "latitude": 41.147945,
-        "longitude": -8.628379,
+        "latitude": 41.148200,
+        "longitude": -8.628350,
         "neighbourhood": "Massarelos"
       },
-      "story": "The base of this southern magnolia measures more than six metres around, thick enough that it would take several adults linking arms to circle it. It grows in the same grounds as Casa Tait's protected tulip tree, inside the Jardins do Palácio de Cristal, and like its neighbour it is currently working through Portugal's formal classification process for trees of public interest, a status that turns deliberate damage to it into a legal offence rather than simply bad manners. Magnolia grandiflora is native to the southeastern United States, prized in European gardens since the 18th century for its glossy, leathery leaves and dinner-plate-sized white flowers, which release a lemon-and-vanilla scent strong enough to notice from several metres away. Late summer is when this specimen puts on its best show, its last flush of blooms opening just as most of the garden's spring flowering has finished elsewhere. Casa Tait's grounds, now folded into the wider Palácio de Cristal park, once belonged to the Tait family, British port wine merchants whose 19th-century money planted much of what still grows here. The magnolia, like the tulip tree beside it, has outlasted the family's ownership by generations.",
+      "story": "The base of this southern magnolia measures more than six metres around, thick enough that it would take several adults linking arms to circle it. It grows in the same grounds as Casa Tait's protected tulip tree, inside the Jardins do Palácio de Cristal, and like its neighbour it was formally classified a tree of public interest on 21 May 2021, a status that turns deliberate damage to it into a legal offence rather than simply bad manners. Magnolia grandiflora is native to the southeastern United States, prized in European gardens since the 18th century for its glossy, leathery leaves and dinner-plate-sized white flowers, which release a lemon-and-vanilla scent strong enough to notice from several metres away. Late summer is when this specimen puts on its best show, its last flush of blooms opening just as most of the garden's spring flowering has finished elsewhere. Casa Tait's grounds, now folded into the wider Palácio de Cristal park, once belonged to the Tait family, British port wine merchants whose 19th-century money planted much of what still grows here. The magnolia, like the tulip tree beside it, has outlasted the family's ownership by generations.",
       "verified_sources": [
         "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal_3",
-        "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html"
+        "https://www.100milarvores.pt/2017/06/arvores-do-romantico-mais-de-250-anos-de-historia.html",
+        "https://sigservices.icnf.pt/server/rest/services/BDG/AIP/MapServer/0",
+        "https://www.noticiasaominuto.com/pais/1759119/icnf-classifica-de-interesse-publico-duas-arvores-seculares-na-casa-tait"
       ],
       "access": "Free, public park, open daily",
       "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
@@ -88,8 +90,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Girth (over 6 m) and 'under classification' status confirmed by both the city council's parks page and an independent garden-history source. No documented planting date; age is an estimate from the tree's size and classification status. Pin moved 2026-07-27 about 140m to Casa Tait's own building coordinates (Nominatim, cross-checked across two independent address results that agree within 40m); the tree isn't in the municipality's classified-trees open dataset yet since it's still under review, so this stays a building-level anchor rather than a surveyed point, hence approximate.",
-      "location_precision": "approximate"
+      "notes": "Girth (over 6 m) confirmed by both the city council's parks page and an independent garden-history source. No documented planting date; age is an estimate from the tree's size and classification status. Pin moved 2026-07-27 about 140m to Casa Tait's own building coordinates (Nominatim, cross-checked across two independent address results that agree within 40m); at that time the tree wasn't in the municipality's classified-trees open dataset, so it stayed a building-level anchor. Location upgraded to confirmed and classification status corrected, 2026-07-29: ICNF's own national register of classified trees of public interest (BDG/AIP layer, sigservices.icnf.pt) carries a Magnolia grandiflora record at 'Rua de Entre Quintas 219, Casa Tait' (id 531) matching this tree exactly, including a height of 22.5m consistent with the city's own '22 metres' figure elsewhere; gives a surveyed point about 28m from the previous building-level estimate. A news report (noticiasaominuto.com, 21 May 2021) confirms the ICNF classified this magnolia, alongside a second tulip tree in the same grounds, as a tree of public interest that day, so the story's 'currently working through classification' line was stale and has been corrected to say when it happened. Photo search 2026-07-29: no openly-licensed photo found despite checking Wikimedia Commons, iNaturalist (multiple observations at this exact tree, all CC-BY-NC only), Openverse and a Flickr CC search. Still missing.",
+      "location_precision": "confirmed"
     },
     {
       "id": "por_003",
@@ -119,7 +121,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Location confirmed and classification status corrected: the municipality's own open-data register of classified trees shows this Metrosideros excelsa (the only one in the whole dataset, a genuinely distinctive match) was formally classified 2019-03-15, not still under review as the 2017 source that originally flagged this tree had it. Story updated to match. Coordinate is the register's own surveyed point, about 160m from the previous whole-garden estimate. No age or planting date found in any source, so age is left as unknown rather than guessed; still flagged for that gap.",
+      "notes": "Location confirmed and classification status corrected: the municipality's own open-data register of classified trees shows this Metrosideros excelsa (the only one in the whole dataset, a genuinely distinctive match) was formally classified 2019-03-15, not still under review as the 2017 source that originally flagged this tree had it. Story updated to match. Coordinate is the register's own surveyed point, about 160m from the previous whole-garden estimate. No age or planting date found in any source, so age is left as unknown rather than guessed; still flagged for that gap. Photo search 2026-07-29: no openly-licensed photo found for this specimen. A CC-BY-SA 2.5 Metrosideros excelsa photo does exist on Commons (File:Metrosideros_excelsa_flowers.jpg, Júlio Reis/Tintazul), but its own category and EXIF tag it to the Jardim Botânico do Porto, a different garden about 2km away, not this Palácio de Cristal tree, so it was not used. Still missing.",
       "location_precision": "confirmed",
       "best_time": {
         "months": [5, 6, 7],
@@ -153,7 +155,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Location (Quinta da Macieirinha) and classification status confirmed by the city council's parks page; the Museu Romântico/Charles Albert history confirmed independently via the Portuguese Wikipedia article on the gardens. No individual age or measurement found; estimated as a mature 19th-century planting. Pin moved 2026-07-27 about 150m to the Quinta da Macieirinha building itself (Nominatim); checked the municipality's classified-trees open dataset for a surveyed point but this plane isn't in it yet (still under formal review, not yet legally classified), so this stays a building-level anchor, hence approximate.",
+      "notes": "Location (Quinta da Macieirinha) and classification status confirmed by the city council's parks page; the Museu Romântico/Charles Albert history confirmed independently via the Portuguese Wikipedia article on the gardens. No individual age or measurement found; estimated as a mature 19th-century planting. Pin moved 2026-07-27 about 150m to the Quinta da Macieirinha building itself (Nominatim); checked the municipality's classified-trees open dataset for a surveyed point but this plane isn't in it yet (still under formal review, not yet legally classified), so this stays a building-level anchor, hence approximate. Re-checked 2026-07-29 against ICNF's national register (sigservices.icnf.pt, BDG/AIP layer, the successor/authoritative source for this same classification process): no Platanus entry exists yet at Quinta da Macieirinha; the only two Porto plane-tree records in that register are at Jardim da Cordoaria and Jardim da Casa do Professor, both different sites, so the pin stays approximate. Photo search 2026-07-29: no openly-licensed photo found on Wikimedia Commons, iNaturalist, Openverse or Flickr CC search. Still missing.",
       "location_precision": "approximate"
     },
     {
@@ -231,14 +233,15 @@
       "age_max": 100,
       "location": {
         "address": "Jardim Botânico do Porto, Rua do Campo Alegre 1191, 4150 Porto",
-        "latitude": 41.1536,
-        "longitude": -8.6426,
+        "latitude": 41.153375,
+        "longitude": -8.641986,
         "neighbourhood": "Lordelo do Ouro"
       },
       "story": "A tree named for Texas and Mexico has found an unlikely second home in a university garden in northern Portugal. This Arbutus xalapensis, commonly called the Texas madrone across its native range in the Trans-Pecos region and northeastern Mexico, is currently under formal review for protection as a tree of public interest at the Jardim Botânico do Porto. The species is a close relative of the strawberry tree that grows wild across Portugal's own hillsides, sharing the same reddish, peeling bark and small urn-shaped flowers, which may be exactly why it settled into this collection more easily than most of the garden's other exotic imports. Specimens of this size are rare outside their native range, since the species is notoriously difficult to cultivate away from the dry, well-drained limestone soils it evolved for, and few botanical gardens outside Texas and northern Mexico maintain a documented example at all. The Jardim Botânico do Porto occupies the former Campo Alegre estate, absorbed by the University of Porto in the 20th century and now run as a teaching and research collection alongside its role as a free public garden. This madrone is one of the collection's quieter successes: no dramatic size record, no royal history, just a temperamental species that, against the odds, has been thriving in the wrong hemisphere for years.",
       "verified_sources": [
         "https://ambiente.cm-porto.pt/destaque/porto-tem-mais-21-arvores-de-interesse-publico",
-        "https://en.wikipedia.org/wiki/Jardim_Bot%C3%A2nico_do_Porto"
+        "https://en.wikipedia.org/wiki/Jardim_Bot%C3%A2nico_do_Porto",
+        "https://sigservices.icnf.pt/server/rest/services/BDG/AIP/MapServer/0"
       ],
       "access": "Free, public garden, open daily",
       "transport": "10 min walk from Casa da Música metro station (Line D)",
@@ -249,8 +252,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Classification status confirmed by the city council's announcement; general garden context via Wikipedia. No age, planting date or measurement found in either source, so age is left as unknown rather than guessed.",
-      "location_precision": "approximate"
+      "notes": "Classification status confirmed by the city council's announcement; general garden context via Wikipedia. No age, planting date or measurement found in either source, so age is left as unknown rather than guessed. Location upgraded to confirmed, 2026-07-29: ICNF's own national register of classified trees of public interest (BDG/AIP layer, sigservices.icnf.pt) carries an Arbutus xalapensis record (id 539) explicitly at 'Jardim Botânico da universidade do Porto', the only one in the whole city dataset, a genuinely distinctive species match; no legal classification reference is filled in yet there, consistent with this story's 'under formal review' status. Gives a surveyed point about 57m from the previous whole-garden estimate. Photo search 2026-07-29: no openly-licensed photo found; the two iNaturalist observations at this tree and a Flickr photo (karlgercens) from the same garden are all-rights-reserved, so none used. Still missing.",
+      "location_precision": "confirmed"
     },
     {
       "id": "por_008",
@@ -279,7 +282,7 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Height (~24 m) and 'possibly largest in the city' claim come from one detailed garden-history source describing a Porto cedar of this size and species; softened to 'one of the largest' per hard rule 8, since a comparable claim exists for other Porto cedars and no single citywide record-holder has been confirmed. The photo's own Commons categorisation and species identification (Cedrus deodara, Jardins do Palácio de Cristal) place it specifically in this garden, which fixed the location for this entry. No age or planting date found.",
+      "notes": "Height (~24 m) and 'possibly largest in the city' claim come from one detailed garden-history source describing a Porto cedar of this size and species; softened to 'one of the largest' per hard rule 8, since a comparable claim exists for other Porto cedars and no single citywide record-holder has been confirmed. The photo's own Commons categorisation and species identification (Cedrus deodara, Jardins do Palácio de Cristal) place it specifically in this garden, which fixed the location for this entry. No age or planting date found. Checked 2026-07-29 against ICNF's national register of classified trees (sigservices.icnf.pt, BDG/AIP layer) for a surveyed point: the only Cedrus deodara record for Porto is at 'FCUP - Faculdade de Ciências da Universidade do Porto' (id 536), a campus site near the Botanical Garden, not the Jardins do Palácio de Cristal where this tree and its photo are placed, so it was not used. No better source for this pin found; stays approximate.",
       "location_precision": "approximate"
     },
     {
@@ -338,7 +341,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Single-source tree: the 'most beautiful in the garden' description and general presence come from one dedicated garden-history blog, and no second independent source confirming this specific specimen was found despite a real search. Kept because the underlying facts (species, general garden context, presence of a comparative cedar collection) are independently verifiable even though this exact tree isn't cross-confirmed; age left unknown rather than guessed.",
+      "notes": "Single-source tree: the 'most beautiful in the garden' description and general presence come from one dedicated garden-history blog, and no second independent source confirming this specific specimen was found despite a real search. Kept because the underlying facts (species, general garden context, presence of a comparative cedar collection) are independently verifiable even though this exact tree isn't cross-confirmed; age left unknown rather than guessed. Checked 2026-07-29 against ICNF's national register of classified trees (sigservices.icnf.pt, BDG/AIP layer): the only Cedrus atlantica record for the whole of Porto is at 'Jardim da Casa do Professor' (id 360), a distinct site roughly 300m from the Botanical Garden's own coordinates with no clear connection to the garden in any source found, so it was not used to upgrade this pin; still approximate. Photo search 2026-07-29: no openly-licensed photo found on Wikimedia Commons (no 'Cedrus atlantica in Portugal' category exists), iNaturalist, Openverse or Flickr CC search. Still missing.",
       "location_precision": "approximate"
     }
   ]
