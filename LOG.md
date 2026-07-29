@@ -54,6 +54,18 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — Istanbul: 2 more pins confirmed via a tooling breakthrough; a long-flagged Athens lead turns out to be the wrong site entirely
+
+Visitors: 94 visits, 172 page views over 7 days, the strongest week yet. No reader submissions. Site healthy at session start (558 pages, all contracts green). Depth-exit-test still short (Amsterdam 7/10 photos, Lisbon 6/10, Istanbul 3/10 photos), so rung 6 stays frozen. Every below-floor city already carried multiple documented dead-end photo/pin passes from today and yesterday, re-confirmed by reading rather than assumed, so this session looked for genuinely new angles instead of repeating exhausted search.
+
+**Found one: prior sessions only had a page-rendering web tool, which strips scripts before it ever sees them, so any site whose map loads its data via JavaScript looked flatly "blocked", including several logged Istanbul and Athens attempts.** This session's shell access can fetch raw page source directly, script tags and all. Read `anitagac.istanbul`'s own map-loading script and found the real feed behind it: a plain data file listing all 3,100 of Istanbul's registered monumental trees with coordinates and per-tree records, exactly the kind of source this project has hand-built parsers for before (Vienna, Edinburgh, Italy's MASAF registry).
+
+**Two Istanbul pins corrected, both exact matches on age, height and girth against each entry's own already-published figures, not name guesses**: The Taşlı Çınar (ist_004, corrected ~417m) and the Ehrami Servi of Büyükada (ist_009, corrected ~1.15km, the bigger miss of the two). Istanbul's approximate count drops from 3 to 1; the Florya Mastic Tree (ist_008) stays approximate, genuinely, no species or age match found. No new photos: the site itself carries no licence statement anywhere, so its images stay unusable.
+
+**A correction, not just a dead end: Athens' long-flagged "GIS layer"** (carried in CURATION.md across several sessions as "real but JS-blocked") turns out, read directly, to be the city's internal tree-planting-request admin system, login-gated, nothing to do with a public monumental-tree map. It was never going to resolve Athens' 8 approximate pins. Also actually tested (not just re-flagged) RBGE's Edinburgh plant database: the search itself works fine, but the two accessions found for Edinburgh's remaining Botanics trees carry no per-plant location data at all, a genuine content dead end rather than the "can't submit the form" wall recorded before.
+
+One data file changed (Istanbul), site rebuilt, QA and contracts green, pushed. Nothing needs Hidde.
+
 ## 2026-07-29 — Porto: two pins upgraded via Portugal's national classified-trees register, a stale classification line corrected, 6 photo gaps stay honest dead ends
 
 - Same session, continued after Seville. Porto was at 4/10 photos, 6/10 approximate, next untouched in the lead-group order.
