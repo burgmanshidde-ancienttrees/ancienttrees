@@ -1,3 +1,15 @@
+## 2026-07-29 — Palermo's 2 remaining photo gaps: real candidates found, both correctly rejected on specificity grounds after direct visual verification
+
+Same session, after the source-link audit and the Most Valuable Trees check. Palermo (published 2026-07-28, one day old) sits at 6/8 photos (75%), just under the 80% floor, and had never had a dedicated photo hunt beyond initial research. Both gaps are well-known named landmarks, good odds in principle.
+
+Dispatched a research pass for pal_005 (Dragon Tree of the Palazzina Cinese) and pal_007 (Date Palm of Villa Bonanno), then verified the two strongest candidates myself by actually viewing the image pixels (this session's tooling can fetch an image file directly and view it with the Read tool, not just read page metadata; confirmed this works and used it to check real content rather than trust captions alone):
+
+- **pal_007's candidate** (`Palermo-Villa-Bonanno-bjs-1.jpg`, CC0, captioned "Palm garden of Villa Bonanno") is genuinely a clean, correctly located photo of mature date palms. **Rejected anyway, on the same specificity principle already applied elsewhere on the site** (e.g. Lyon's Parc de la Chapelle cedar, 2026-07-29): this entry's own data is pinned to one AMI-register-confirmed specimen (2.5m circumference, its own coordinate, deliberately written up as "one specific registered specimen rather than the c.400-palm planting as a whole" per its own notes), not the grove as an ensemble. A wide avenue shot of dozens of palms cannot confirm which one is this specific registered tree, so applying it would mean quietly downgrading a precisely-scoped entry to an ensemble claim it was deliberately written not to be. Left `missing`.
+- **pal_005's candidate** (a Palazzina Cinese exterior shot, CC BY-SA 4.0, Davide Mauro) was viewed directly: shows the building's facade with palms and a broad-leaved tree visible at the edge of frame, but no tree matching a mature Dragon Tree's distinctive thick trunk and umbrella-shaped leaf crown is identifiable in it. Correctly left `missing` rather than guessed.
+- Both entries' own AMI/RAMI register sourcing was reconfirmed solid regardless (age, condition, coordinates), so this is a photo-only gap, not a verification concern.
+
+Palermo stays at 6/8 (75%), a real, now twice-confirmed gap rather than an unsearched one. No data changed; no rebuild needed.
+
 ## 2026-07-29 — A site-wide `verified_sources` link audit (never done before, distinct from the photo-URL audit): 11 confirmed dead citations found, one replaced, rest documented
 
 New session. Visitors: 69 visits, 123 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), consistent with prior weeks. No reader submissions (CSV header row only). Build clean at start, depth-exit-test bar unchanged at 5/8 (Amsterdam, Lisbon, Istanbul still short).
