@@ -5,6 +5,12 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 Format, deliberately short:
 
 ```
+## 2026-07-29 — Hidde's walkthrough, executed as one composition pass (session)
+
+His full product walk, tested against the corpus and shipped in one pass: in-season demoted from nav and hero to a map layer (the recorded pulsing-pin idea in its first form: gold pins pulse, popup says "at its best now"), location asked only in map context, hero down to one link, collections shelf above the season shelf, explore copy made scale-proof (no counts), one-world map, explore search bar plus in-map geolocate button, equal directory columns, "pin confirmed" chip dropped (visitors only see the approximate warning), corrections block tightened. One real bug found by Hidde: cluster clicks did nothing, the MapLibre v4 promise API silently broke the old callback code. Fixed.
+
+Parked for Hidde: season-shelf naming, phenology icons per tree (needs a data field), native submission form (needs his yes, Supabase could carry it), the "old" brand question, and his 80/20 coverage proposal (answered in chat, decision his).
+
 ## 2026-07-29 — Whole-product composition pass (session, with Hidde): every page type walked, seven classes of defect fixed
 
 The homepage got the principle-11 treatment yesterday; today the rest of the product got the same walk, desktop and 375px, page type by page type. Found and fixed, one commit:

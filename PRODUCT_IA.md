@@ -12,11 +12,11 @@ Written 2026-07-28 from the nine-product benchmark (AllTrails, Komoot, Wikiloc, 
 
 ## The target navigation
 
-    [logo] Map | Walks | In season | Explore v          [My trees] [Sign in]
+    [logo] Map | Walks | Explore v          [My trees] [Sign in]
 
 - **Map**: the find-near-me product, the homepage hero grown up.
 - **Walks**: the signature walks index (ships when the routes ship; until then the item stays hidden).
-- **In season**: exists today at /in-season; promoted to the nav because it is our sharpest "why now".
+- **In season**: demoted from the nav on 2026-07-29 (Hidde: "wordt veel te belangrijk gemaakt"). Season is a map layer (gold pins, pulse, popup badge) and a per-tree block, not a destination; /in-season stays live for search but is linked only from season contexts and the footer.
 - **Explore** (dropdown): Cities, Species, Collections, Suggest a tree: the entire acquisition layer in one hub, eBird-style. Nothing deleted, everything demoted.
 - **My trees**: the collection, visible logged-out as the AllTrails-style hook; becomes the account dashboard.
 
