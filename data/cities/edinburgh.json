@@ -155,9 +155,9 @@
       "age_min": 170,
       "age_max": 185,
       "location": {
-        "address": "Lauriston Castle, 2A Cramond Road South, Edinburgh EH4 6AD",
-        "latitude": 55.9645,
-        "longitude": -3.287,
+        "address": "Lauriston Castle, 2A Cramond Road South, Edinburgh EH4 5QD",
+        "latitude": 55.971688,
+        "longitude": -3.277751,
         "neighbourhood": "Davidson's Mains"
       },
       "story": "Five monkey puzzle trees stand near the rose garden at Lauriston Castle, planted close to the exact year the species became fashionable enough for anyone outside a botanic garden to own one. Araucaria araucana arrived in Britain in 1795, brought back by the naturalist Archibald Menzies, but stayed a rare curiosity until 1843, when the nurseryman James Veitch sent the plant collector William Lobb to Chile specifically to gather seed for commercial sale. That single expedition is why Victorian Britain filled its gardens with monkey puzzles almost overnight, and Lauriston's five, planted around that same pivotal year, are plausibly among the first large scale plantings of the species anywhere in the country, though no dated planting record for this specific garden survives to confirm it outright. Chilean by origin and built for volcanic slopes and heavy snow, they are unmistakable even from a distance: rigid, spiralling branches armoured in sharp scale like leaves, a shape nothing else in a Scottish garden shares. The castle itself, an Edwardian time capsule left almost untouched since its last owners donated it to the city in 1926, sits behind them. The grounds are free to walk. Only the castle's furnished rooms require a ticket, and the trees do not care either way.",
@@ -174,8 +174,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "The 1843 link is a plausible historical inference (the species' commercial introduction year matches Lauriston's Victorian planting era) rather than a dated planting record for these specific five trees. No Wikimedia Commons photo found of this specific tree group despite a real search.",
-      "location_precision": "approximate"
+      "notes": "The 1843 link is a plausible historical inference (the species' commercial introduction year matches Lauriston's Victorian planting era) rather than a dated planting record for these specific five trees. No Wikimedia Commons photo found of this specific tree group despite a real search. Location resolved 2026-07-29: City of Edinburgh Council's own Trees open-data register (services-eu1.arcgis.com FeatureServer, OGL) lists exactly five Araucaria araucana at Site='Lauriston Castle' (PrimaryKeys Sgl/577, 583, 582, 575, 573; DBH 60-90cm, Middle Aged/Mature), an exact species-and-count match for this entry. Converted their OSGB36 National Grid eastings/northings to WGS84 with a from-scratch implementation of the Ordnance Survey's published Transverse Mercator and Helmert transform formulas, validated against OS's own worked examples (sub-metre agreement) before use. The resulting centroid (55.971688, -3.277751) also independently matches third-party GPS listings for Lauriston Castle itself (55.9712,-3.2786 / 55.9712,-3.2799), confirming the method; the previously stored pin (55.9645,-3.287) was roughly 800m off, southwest of the actual castle grounds. Postcode also corrected to EH4 5QD per the same lookup. Precision upgraded to confirmed: these are the specific trees' own surveyed positions from an authoritative register, not an estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "edi_006",
