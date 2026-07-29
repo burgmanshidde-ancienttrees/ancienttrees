@@ -40,6 +40,12 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — Photo spot-check reaches 54 of 206, two new cities cleared (Lyon, Palermo)
+
+Same session, continued. 12 more approved photos checked, including the first-ever checks for Lyon and Palermo (both genuine, including Palermo's Falcone memorial tree, its trunk visibly covered in taped tributes exactly as the entry describes). One, Edinburgh's Craigmillar yews, looked wrong to me on first glance (a tall narrow conifer that read more like a spruce than a yew), so checked the photo's own Commons page directly rather than trust the "approved" status. Its own caption and category both say yew; a yew boxed in by castle walls on both sides can plausibly grow tall and narrow reaching for light, which is what the photo shows. Held up under the scrutiny; no change made.
+
+Full detail in CURATION.md. Nothing needs Hidde.
+
 ## 2026-07-29 — A new Istanbul tree registry found (photos blocked by its own missing licence), edi_002's oddly bare photo checked and confirmed correct
 
 Same session, continuing straight on. The dispatched Istanbul research came back with a genuinely new source, `anitagac.istanbul`, İBB's own 517-tree monument registry. It independently corroborates two of Istanbul's approximate pins (Taşlı Çınar, the Cypress of Büyükada) by exact street match, and turns up a plausible but unconfirmable candidate for a third. No photos came from it though: checked the whole site directly for any licence statement and found none anywhere, so every one of its photos is disqualified under the open-licence rule, a clean, specific dead end rather than a maybe. Istanbul's counts don't change (3/10 photos, 3 approximate) but the lead itself is now properly closed out with two small wins (better corroboration) rather than left open.
