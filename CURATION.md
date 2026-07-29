@@ -39,6 +39,14 @@ Same session, after the Istanbul/Granada/Malaga/Athens photo-pin pass below turn
 
 Wrote `data/collections/trees-planted-by-kings.json`, `status: published` per blueprint v1.3's no-approval regime. Site rebuilt: 556 pages, 11 public collections (up from 10), all contracts validated. Committed and pushed alongside the research-dead-ends entry below.
 
+## 2026-07-29 — RBGE's Living Collection database tried for Edinburgh's two Botanics pins: genuinely tooling-blocked, not a content dead end
+
+Same session, a small final check. A 2026-07-27 entry had flagged `data.rbge.org.uk`'s Living Collection database as "worth trying... in a future pass, not attempted this session" for tightening `edi_002` (Sweet Chestnut) and `edi_004` (Cedar of Lebanon), Edinburgh's two remaining Botanics approximate pins. Edinburgh sits at 10/10 approximate, the worst pin ratio on the site, so this was worth a real attempt rather than leaving the flag open indefinitely.
+
+**Confirmed genuinely blocked by this session's tooling, not by content.** The site's search page (`data.rbge.org.uk/living/`) is a form with no discoverable action URL or field name in the rendered markdown (WebFetch strips form internals), and guessing common query-string patterns (`?taxon=`, `?query=`, `?name=`) all returned the same blank, unsubmitted form rather than results or even a clean 404 for a wrong parameter, consistent with a POST-only or session-token-gated form. This is the same shape of wall as Athens' JS-rendered GIS layer earlier today: a real, reachable site with real data behind it, but no way for this session's fetch tooling to actually submit the query. Worth a retry by a session that can inspect real page source or drive a form submission properly; not worth more blind parameter-guessing this session.
+
+No data changed. Recording so a future session doesn't re-flag this as merely "not attempted" when it has, in fact, now been tried and specifically hit a tooling wall.
+
 ## 2026-07-29 — Istanbul, Granada/Malaga and Athens photo/pin hunts: three genuinely fresh angles tried, all confirmed dead ends rather than assumed
 
 New session. Ran `python3 scripts/visitors.py`: 69 visits, 123 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), consistent with the prior week's strength. No reader submissions (CSV fetched fresh, header row only). Build clean at start (555 pages, all contracts validated). Dead-tree sweep already closed out as of 2026-07-28, nothing new to check there. Depth-exit-test bar re-checked directly from data: unchanged at 5/8 (Rome, Tokyo, Paris, London, Barcelona pass; Amsterdam 7/10 photos, Lisbon 6/10, Istanbul 3/10 photos + 3 approximate remain short).
