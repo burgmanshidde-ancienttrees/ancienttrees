@@ -91,7 +91,7 @@ Each run, do exactly this, in order:
 Read `/data/city-list.json` and the published city files, then take the first item on this ladder that applies. Do one thing per run and do it properly; a half-researched city is worse than none.
 
 1. **Unprocessed submissions** (see Step 0b). Someone cared enough to send something, that outranks everything.
-2. **The site is broken.** Build fails, a link is dead, a page violates a contract. Fix it before adding anything new.
+2. **The site is broken.** Build fails, a link is dead, a page violates a contract, the latest Smoke test workflow run is red, or REVIEW.md's newest entry holds a BLOCKER. Fix it before adding anything new.
 3. **Something published is wrong**, as opposed to merely imprecise: a tree that has fallen, a pin in the wrong place, a fact that does not hold up. Wrong costs trust; vague does not, as long as it says so.
 4. **A published city below the photo target of 8 of 10.** Decided by Hidde on 2026-07-22: photos are the priority, and 80 percent is the floor he wants. This ranks above adding a new city, because a photo is what makes someone want to walk there, and a page without one loses the click in search and cannot be shared at all. It is legitimate pre-demand work, unlike a precision gate, because being findable and shareable is exactly the Phase 0 job in GO_TO_MARKET.md. Work the focus region first (UK, Netherlands, then the rest of the lead group and the marquee European cities), oldest-first within that. Hunt hard and widely: Wikimedia, then iNaturalist, Flickr under CC, Openverse, the city or park authority, and reader submissions. Two honesty rules that never bend: never publish a photo without a verified open licence and attribution, and where 80 percent genuinely cannot be reached because no open photo of a tree exists, record that in CURATION.md and move on rather than looping on it forever. The target reprioritises the work; it is not a trap that blocks everything on one unphotographable tree.
 5. **Depth work on the cities search already serves.** Resolve approximate pins and hunt photos, hardest-ranking cities first. As of the 2026-07-26 Search Console export that order is: Amsterdam (position 7.9, 7 vague pins), Lisbon (7.7), Istanbul (8.0), Rome (most impressions, 18), then the rest of the lead group and marquee Europe, oldest-first. Amsterdam is the reference city and goes to flawless first: 10 photos, 0 vague pins, seasonality where real.
@@ -323,13 +323,14 @@ That puts the weight on you, so two rules tighten:
 
 `curation_status` and the `status` field on a city stay in the data as internal signal, but they no longer gate publication and no longer show on the site.
 
-## QA: three layers, ruled by Hidde 2026-07-29
+## QA: four layers, ruled by Hidde 2026-07-29
 
-The 2026-07-29 whole-product walk found a dead check-in button on all 345 tree pages, five broken photos and seven self-contradicting pages, all live. The lesson is structural, so QA is a standing work form with three layers:
+The 2026-07-29 whole-product walk found a dead check-in button on all 345 tree pages, five broken photos and seven self-contradicting pages, all live. The lesson is structural, so QA is a standing work form:
 
 1. **Build-time checks, every build.** build_site.py refuses contract violations, bare script text, File: page photo urls, and oldest-tree pages whose answer names a different tree than the page is built around. When a walk finds a new bug class, the fix ships WITH a check that makes it unshippable again; that ratchet is the point, and removing one of these checks needs Hidde.
-2. **scripts/qa.py, a gate on every deploy.** Validates the built HTML the way a browser meets it: internal links resolve, no em dashes or banned words in rendered text, image sources are real image urls. CI fails the deploy on any hit. A run that sees the deploy workflow fail on QA treats it as rung 2 (the site is broken).
-3. **The composition walk, periodic, with eyes.** Every page type at desktop and 375px, in a working session: every two weeks, and always straight after a visual system change. CI cannot see pages, so this layer is never delegated to a run; runs do not do visual-taste work.
+2. **Machine gates on every push.** scripts/qa.py gates the deploy (internal links resolve, no em dashes or banned words in rendered text, image sources are real image urls); the separate Smoke test workflow renders key pages in headless Chrome and asserts the product works as executed (maps construct, buttons exist, no script source visible as text). A run's rung 2 includes checking that the latest "Smoke test" workflow run succeeded (`gh run list --workflow=smoke.yml -L 1`); a red smoke run means the site is broken.
+3. **The fresh-eyes reviewer, daily.** A separate context with no builder memory reviews the last day's diffs and the built site against the corpus and writes findings to REVIEW.md (severity BLOCKER/WARN/NOTE), fixing nothing. Runs pick BLOCKERs up as rung 2 and WARNs as rung 3; Step 0 includes reading REVIEW.md's newest entry. This layer exists because the builder verifying its own work is how the dead button shipped.
+4. **The composition walk, periodic, with eyes.** Every page type at desktop and 375px, in a working session: every two weeks, and always straight after a visual system change. CI cannot judge composition, so this layer is never delegated to a run; runs do not do visual-taste work.
 
 ## Hidde's curation workflow (optional, when he feels like it)
 

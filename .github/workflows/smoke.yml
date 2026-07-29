@@ -1,0 +1,34 @@
+name: Smoke test
+
+# Renders key pages in headless Chrome and asserts the product works as
+# executed, not just as written (scripts/smoke_test.py). Separate from the
+# deploy gate on purpose: qa.py is deterministic and blocks deploys; Chrome
+# can hiccup, so smoke failures surface here as a red run that the next
+# research run treats as rung 2 (CLAUDE.md, QA section) instead of blocking
+# every deploy on browser flakiness.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: smoke
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build site
+        run: python3 scripts/build_site.py
+
+      - name: Smoke test in headless Chrome
+        run: python3 scripts/smoke_test.py
