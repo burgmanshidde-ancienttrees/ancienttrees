@@ -40,6 +40,18 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — A site-wide source-link audit (never done before) fixes one weakened citation and documents the rest; Edinburgh gets a real (if mostly negative) photo/pin pass; Most Valuable Trees collection confirmed genuinely blocked
+
+New session. Visitors: 69 visits, 123 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), same as the prior session's read. No reader submissions. Build clean at start, depth-exit-test bar unchanged at 5/8 (Amsterdam, Lisbon, Istanbul still short, all exhaustively dead-ended across many prior sessions).
+
+Checked which below-floor cities had NOT already had a dedicated hunt: Edinburgh (UK focus region, 4/10 photos, worst pin ratio on the site at 10/10 approximate) stood out. A real research pass came back mostly negative: no usable photo for 5 of 6 gaps, no pin tightened. One thing worth flagging so nobody wastes time rediscovering it: the exact right photo for the Corstorphine Sycamore churchyard tree exists on Flickr, correctly distinguished from a known RBGE mix-up, but under a CC BY-NC-SA license our hard rules exclude.
+
+**The more useful find came from a different angle: a full audit of the 779 `verified_sources` URLs across every tree, something the photo-URL audit two days ago never covered.** First confirmed these links aren't shown anywhere on the live site, so this is about the strength of our own verification record, not a visitor-facing bug. Of 104 non-200 responses, most are bot-blocking or timeouts (sites this project already knows are live but script-hostile); 11 are genuine 404/410s. Four of those dropped a tree to a single remaining source, which matters more: found and applied a real replacement for Granada's Cypress of San Juan de la Cruz; the other three (Istanbul's Florya Mastic Tree, Nice's Aleppo Pine Forest, Edinburgh's Corstorphine Sycamore) stay honestly on one source after real replacement searches came up empty.
+
+**Checked the collections queue rather than force a weak draft**: dispatched a proper research pass for BACKLOG.md's "Most Valuable Trees" idea (needs documented tree valuations beyond our 2 existing London entries). Came back with real near-misses, all correctly rejected on inspection (a Brescia cedar mistaken for Rome, an unsourced NYC figure, valuations outside our 36 cities), still at 2 of a needed 5. Recorded as checked-and-blocked rather than left as a stale "needs research" note. Also re-confirmed two smaller collection ideas (trees older than 1000 years, churchyard yews) are still genuinely short of their triggers, by direct count rather than assumption.
+
+Full detail on all of the above in CURATION.md. Nothing needs Hidde.
+
 ## 2026-07-29 — A new collection (Trees Planted by Kings), a stale approval-gate note in BACKLOG.md corrected, three depth-priority cities' photo/pin gaps re-confirmed as genuine dead ends
 
 New session. Visitors: 69 visits, 123 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), consistent with the prior week. No reader submissions. Build clean at start.
