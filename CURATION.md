@@ -1,3 +1,21 @@
+## 2026-07-29 — Bologna clears the 8-photo depth floor: 3 real photos found via one photographer's dedicated monumental-tree series, 2 gaps confirmed genuine dead ends
+
+Same session, continued after Verona. Bologna (5/10 photos, 3/10 approximate, last touched 2026-07-28) was next in oldest-first order with real headroom.
+
+**A single strong lead resolved three of the five remaining gaps at once.** bol_002's already-approved sequoia photo (found 2026-07-28) is credited to Aneta Malinowska, a Wiki Loves Monuments Italia contributor. Looking up her actual Commons username (AnetaMalinowska, distinct from the "Aneta Malinowska ART" display name) and pulling her full ~300-file upload history surfaced a dedicated series specifically photographing Bologna's monumental/veteran trees, most already correctly filenamed by tree and location:
+
+- **bol_005, The Himalayan Cedar of the Rizzoli**: File:4.rizzoli cedro dell'himalaya (12).jpg, filename naming this exact tree, geotagged 44.4811,11.3408, essentially identical to this entry's own AMI-registry pin.
+- **bol_006, The Ginkgo of Piazza Cavour**: File:Piazza cavour,.jpg, geotagged 44.4913,11.3439 (matching this entry's pin), the photographer's own Commons description explicitly naming a Ginkgo biloba in Piazza Cavour, Bologna, the correct city (an earlier session had already ruled out a same-named Commons category as a Turin mismatch; this is a different, correctly-located file).
+- **bol_001, The Monumental Planes of the Montagnola**: File:Montagnola ,.jpg, geotagged 44.5026,11.3464 (about 40m from this entry's pin), described as an autumn shot of the park's mature trees; less certain than the other two since the description doesn't confirm plane trees specifically rather than the park generally.
+
+All three added at `found_needs_check`, not `approved`: this session's Bash tool has no direct network access (`curl` needs interactive approval that never arrives unattended), so every match rests on WebFetch's read of each file's own Commons page rather than a first-hand look at the image. A future session with image-viewing tooling should confirm all three, bol_001 especially.
+
+**Two gaps stay genuine dead ends, checked rather than assumed:**
+- **bol_007 (Ginkgo of the Botanical Garden)**: three iNaturalist observations found within about 100m of the pin, but two are CC-BY-NC and one has no license set at all (null, all-rights-reserved by default).
+- **bol_010 (Camphor of San Michele in Bosco)**: checked the same photographer's full upload history for a match; no camphor or San Michele in Bosco park file exists in it. Commons keyword search for the park by name also empty.
+
+Bologna now at 8/10 photos (from 5), clearing the depth-work photo floor. Approximate-pin count unchanged (3/10, all honest ensemble entries per prior sessions' notes). One data file changed (Bologna), site rebuilt (558 pages), all contracts validated, committed, pushed. Nothing needs Hidde.
+
 ## 2026-07-29 — Verona: a real photo found for the Giardino Giusti cypress avenue (post-2020-storm, exactly the gap a prior session flagged as needing a current-day shot), three more gaps confirmed genuine dead ends
 
 Same session, continued after Venice. Verona (3/10 photos, 5/10 approximate, last touched 2026-07-28) was the next city with real untouched headroom in oldest-first order; its three already-approved photos (ver_001/002/003) were spot-checked and confirmed genuine in earlier sessions, so this pass targeted the four remaining gaps (ver_004 through ver_008, minus ver_004 which stayed a dead end already documented yesterday).
