@@ -338,6 +338,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .acct-fine { font-size: 12px; color: var(--ink-light); margin-top: 0.7rem; }
 .acct-actions { display: flex; gap: 0.75rem; align-items: center; margin-top: 0.5rem; }
 .acct-link { background: none; border: none; padding: 0; font-family: var(--sans); font-size: 13.5px; color: var(--moss); text-decoration: underline; cursor: pointer; }
+.acct-link.danger { color: #9c3f2f; }
 .sr-months span.half { background: #A9BC8A; }
 .sp-name { position: absolute; top: -9px; left: 50%; transform: translateX(-50%); background: var(--ink);
   color: #fff; font-size: 8.5px; font-weight: 600; padding: 1.5px 7px; border-radius: 999px; white-space: nowrap; }
@@ -3168,6 +3169,7 @@ def build_account_page():
     </div>
     <p class="acct-sub" id="in-note">Your collection still lives on this device while sync is being built; signing in today claims your spot for it.</p>
     <p class="acct-actions"><button type="button" id="signout" class="acct-link">Sign out</button></p>
+    <p class="acct-actions"><button type="button" id="del-acct" class="acct-link danger">Delete my account</button></p>
   </section>
 </main>
 <script>
@@ -3279,6 +3281,38 @@ def build_account_page():
     } catch (e) {}
     try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
     show("st-signin");
+  });
+  // Account deletion: calls the delete_user() SECURITY DEFINER function in
+  // Supabase (runs as owner, deletes auth.users row for auth.uid() only).
+  // Two clicks on purpose; no dialog dependency. The on-device collection in
+  // ancienttrees_seen is deliberately left alone: it was never on the server.
+  var delBtn = document.getElementById("del-acct");
+  var delArmed = false;
+  delBtn.addEventListener("click", function() {
+    if (!delArmed) {
+      delArmed = true;
+      delBtn.textContent = "This permanently deletes your account and email. Click again to confirm.";
+      return;
+    }
+    var s = null;
+    try { s = JSON.parse(localStorage.getItem("ancienttrees_session")); } catch (e) {}
+    if (!s) { show("st-signin"); return; }
+    fetch(SB + "/rest/v1/rpc/delete_user", { method: "POST",
+      headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token,
+                 "Content-Type": "application/json" }, body: "{}" })
+      .then(function(r) {
+        if (r.ok) {
+          try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
+          delArmed = false;
+          delBtn.textContent = "Delete my account";
+          show("st-signin");
+        } else {
+          delBtn.textContent = "Deletion failed. Try again, or email us via the privacy page.";
+        }
+      })
+      .catch(function() {
+        delBtn.textContent = "Deletion failed (network). Try again.";
+      });
   });
 })();
 </script>
