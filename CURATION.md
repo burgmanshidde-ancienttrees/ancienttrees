@@ -1,3 +1,16 @@
+## 2026-07-29 — best_time sweep finished: the remaining 18 cities scanned, 3 real gaps closed, several close calls correctly left alone
+
+Same session, after the Trees Planted by Kings collection below. The 2026-07-28 best_time sweep had explicitly left 18 published cities unscanned (Antwerp, Athens, Berlin, Bologna, Brussels, Dublin, Edinburgh, Granada, Milan, Munich, Naples, Seville, Valencia, Venice, Verona, Vienna, Sintra, Palermo); this was concrete, well-scoped, genuinely unfinished work rather than a repeat of exhausted photo/pin hunting, so continued it to completion.
+
+**Added `best_time` to 3 trees, each verified against its own species and climate rather than a generic textbook answer:**
+- **Antwerp `ant_007`**: Common Lime, June-July flowering.
+- **Munich `muc_001`**: Small-leaved Lime, June-July flowering (confirmed a touch later than large-leaved lime).
+- **Munich `muc_006`**: Fern-leaved Beech, October golden-bronze, matching the standard beech entry already in the same file.
+
+**Correctly left alone after real checking, not just skipped on a hunch**: Berlin's and Munich's European White Elms and Munich's Wych Elm (sourced as "not very spectacular"/"dull yellow"), Edinburgh's European Ash ("no marked autumn colour"), Edinburgh's two weeping-form elm cultivars (valued for shape, no sourced colour claim), and, the one genuine climate trap of this pass, **Naples' Montezuma Cypress**: the species is only reliably deciduous and colourful in cold climates and stays evergreen or semi-evergreen in a Mediterranean one, so assigning it an autumn moment here would have been exactly the hemisphere/climate-mismatch mistake the standing rule warns against. Plane trees and Mediterranean Hackberry, present across nearly every city, stayed untouched site-wide, consistent with the pattern already established for Paris and Rome's own entries (muted, brown seasonal change, not a real "go now" signal).
+
+This closes the best_time sweep that CLAUDE.md's Step 3 asks for: every published tree on the site has now been read once with this specific question in mind, not just the handful of headline genera (ginkgo, wisteria, sakura) that prompted the original pass. Diff touched only the `best_time` field in `data/cities/antwerp.json` and `data/cities/munich.json`, each file's existing single-file JSON formatting convention preserved. Site rebuilt (556 pages), all contracts validated, committed and pushed alongside the day's other work.
+
 ## 2026-07-29 — New collection: Trees Planted by Kings and Their Gardeners; BACKLOG.md's stale approval-gate status note corrected
 
 Same session, after the Istanbul/Granada/Malaga/Athens photo-pin pass below turned up genuine dead ends across the top depth-priority cities. With rungs 3-5 given real, documented effort today and nothing left to try without new environment access, moved to PRODUCT_TODO.md's rung 7, item 4 (the collections programme), which explicitly allows drafting up to two per pass.

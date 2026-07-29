@@ -240,6 +240,13 @@
       "age_min": 30,
       "age_max": 35,
       "label": "Youngest tree",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June and July, when its flowers scent the whole square"
+      },
       "location": {
         "address": "Grote Markt, Antwerp",
         "latitude": 51.221112,

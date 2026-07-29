@@ -33,6 +33,7 @@
       "age_estimate": "300-350 years",
       "age_min": 300,
       "age_max": 350,
+      "best_time": { "months": [6, 7], "label": "June and July, when its flowers scent the whole meadow" },
       "location": {
         "address": "Near Gut Nederling, Moosach, 80992 München",
         "latitude": 48.16811,
@@ -184,6 +185,7 @@
       "age_estimate": "undated",
       "age_min": 80,
       "age_max": 150,
+      "best_time": { "months": [10, 11], "label": "October, when its narrow, feathery leaves turn golden bronze" },
       "location": {
         "address": "Englischer Garten, west bank of the Schwabinger Bach near the Chinese Tower, Schwabing-Freimann, 80802 München",
         "latitude": 48.15111,
