@@ -127,8 +127,8 @@
       "age_max": 446,
       "location": {
         "address": "Alemdar Caddesi, Cankurtaran, Fatih (outside Gülhane Park's Alemdar gate)",
-        "latitude": 41.0135,
-        "longitude": 28.9808,
+        "latitude": 41.01010333,
+        "longitude": 28.97868889,
         "neighbourhood": "Alemdar, Fatih"
       },
       "story": "A stone was lodged inside this tree's bark for roughly three centuries, and until about ten years ago you could still see it. According to the story attached to the tree, Sultan Ahmed I rode past on his white horse sometime between 1590 and 1617 while the Alemdar gate and fountain to what is now Gülhane Park were being built, and a stone kicked loose from a horseshoe struck the sapling and stayed there as it grew, sealed a few metres up the trunk like a fossil. Whether or not the horse is real, the tree is: Istanbul's own monumental tree registry lists it at roughly 446 years old, 26 metres tall, with a trunk 328 centimetres around, the thickest Oriental plane in the district. The embedded stone was removed during conservation work about a decade ago, leaving a visible cavity where it used to sit. What remains is a tree that has watched the road outside Gülhane Park go from Ottoman thoroughfare to tram line, still standing exactly where a legend says a sultan's horse put it there.",
@@ -145,8 +145,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Coordinates are an estimate for the Alemdar Caddesi gate area outside Gülhane Park; the official registry gives the street address but not exact GPS.",
-      "location_precision": "approximate"
+      "notes": "Upgraded to confirmed 2026-07-29: found the registry's own underlying data feed (anitagac.istanbul/treeList, a GeoJSON layer the site's map loads client-side, not reachable through page-rendering tools but fetchable directly) and matched record AVR-20AA0027, already cited as this entry's source, against it directly. The record's age (446), height (26m) and girth (328cm) all match this entry's own figures exactly, confirming it as the same tree rather than a same-species neighbour. Its surveyed coordinate is about 417m from the prior street-corner estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ist_005",
@@ -278,8 +278,8 @@
       "age_max": 248,
       "location": {
         "address": "Şehit Murat Yüksel Sokak, Nizam, Büyükada, Adalar",
-        "latitude": 40.873,
-        "longitude": 29.1195,
+        "latitude": 40.86290611,
+        "longitude": 29.11675444,
         "neighbourhood": "Nizam, Büyükada"
       },
       "story": "The only tree on this list that requires a ferry to reach stands on a residential street on Büyükada, the largest of Istanbul's car-free Princes' Islands. Istanbul's official monument tree registry lists this Mediterranean cypress, grown into the tall narrow pyramidal form the species is known for, at approximately 244 years old, 18 metres tall, with a trunk 75 centimetres across. It predates the island's Belle Epoque mansions, the Greek Orthodox monastery on the hill above it, and the horse-drawn carriages that until recently were the island's only form of wheeled transport. The registry protects it under three separate criteria at once, historical importance, age, and trunk diameter, a bureaucratic way of saying there was no single reason to save it, there were three. Büyükada's own history runs through Byzantine exile, this is where empresses and princes were once banished, and through White Russian refugees fleeing the 1917 revolution, none of which this cypress witnessed directly from its residential street, but which shaped an island growing quietly taller around it for two and a half centuries.",
@@ -296,8 +296,8 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Coordinates estimated for the Nizam neighbourhood, Şehit Murat Yüksel Sokak; not independently geocoded to the exact trunk.",
-      "location_precision": "approximate"
+      "notes": "Upgraded to confirmed 2026-07-29: matched record AND-01KDA0036, already cited as this entry's source, against the registry's own underlying data feed (anitagac.istanbul/treeList, fetched directly rather than through the site's JS-rendered map). The record's title (Ehrami Servi), age (244), height (18m) and girth (75cm) all match this entry exactly, and its street/neighbourhood/district fields match this entry's address verbatim. Its surveyed coordinate is about 1.15km from the prior neighbourhood-level estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "ist_010",
