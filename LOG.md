@@ -40,6 +40,16 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — A quiet run: real effort on the three depth-exit-test stragglers, no photos or pins actually moved, one good lead banked for later
+
+Visitors: 71 visits, 125 page views over 7 days, no sharp change. No reader submissions. Site healthy start and end.
+
+Worked the ladder's photo/pin order (Amsterdam, Lisbon, Istanbul, then Rome) hunting specifically the gaps still open after previous sessions' work: 3 missing photos in Amsterdam, 4 in Lisbon, 2 in Rome, plus Istanbul's 3 approximate pins. Searched Wikimedia Commons (both full-text and direct category browsing), iNaturalist (geographic queries at each tree's real coordinates), Openverse, Flickr and general web search for every gap. All genuine dead ends this time, either nothing found, or found but wrongly licensed (mostly iNaturalist CC-BY-NC, which the hard rule on commercial reuse excludes), or found but the wrong tree/location on inspection. Full detail per city in CURATION.md.
+
+One thing worth knowing about: found Istanbul's actual municipal historic-tree registry, anitagac.istanbul, run by İBB's Urban Ecological Systems department. It has a page for the exact tree behind ist_004 (the Taşlı Çınar) confirming the entry's facts, and the registry looks comprehensive enough to plausibly resolve Istanbul's other approximate pins too. Its location data renders through client-side JavaScript, though, so it's invisible to a fetch-and-read tool; a session with a tool that can execute JS or find the site's real API could likely turn this into real pin fixes. Not applied this session, address and endpoint pattern are in CURATION.md so nobody has to refind it.
+
+No files changed except CURATION.md. Nothing needs you; flagging the JS-rendered-map limitation in case it explains other stalled leads too.
+
 ## 2026-07-29 — Depth work on Madrid, New York and Dublin; photo spot-check reaches 165/206; one content-quality concern flagged
 
 Visitors: 69 visits, 123 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), consistent with recent sessions. No reader submissions. Site healthy at start and end (build clean, all contracts validated). Amsterdam, Lisbon and Istanbul (the depth-exit-test stragglers) were re-confirmed still exhausted at the top of this session (retested the two specific blocked Istanbul URLs myself, still blocked), so worked down rung 5's oldest-first queue instead: Madrid, then New York, then Dublin.
