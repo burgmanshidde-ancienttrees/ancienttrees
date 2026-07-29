@@ -146,7 +146,7 @@ Stories and any page copy must satisfy SEO_GEO_BLUEPRINT.md — in particular P2
 "best_time": { "months": [11], "label": "late November, when the ginkgo turns gold" }
 ```
 
-`months` is the list of month numbers when it is at its best and drives the "at its best right now" badge; `label` is the short phrase a reader sees, in the tone of voice. Rules:
+`months` is the list of month numbers when it is at its best and drives the "at its best right now" badge; `label` is the short phrase a reader sees, in the tone of voice. Set `kind` too (Hidde, 2026-07-29, the PictureThis point: say WHY it peaks): one of `flowers`, `fruit`, `autumn colour`, `catkins`, `fresh leaves`; it renders as an icon chip on the season block. The build derives a kind from unambiguous label words when the field is missing, and shows nothing when in doubt; an explicit field always beats derivation. Rules:
 - Only add it when the moment is real and specific: blossom, autumn colour, a wingnut's summer catkins, a magnolia's ten days. An evergreen or an ancient yew that looks much the same all year gets no `best_time` at all. Forcing one on every tree is filler and defeats the point.
 - Base it on the species and the local climate, and say what actually happens in the label, not just a month. "May, when it flowers" beats "May".
 - Keep it honest: if a peak spans a range, use the real months. Guessing a precise week you cannot support is the same mistake as a fake pin.
