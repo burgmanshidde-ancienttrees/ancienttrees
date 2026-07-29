@@ -40,6 +40,14 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — A new Istanbul tree registry found (photos blocked by its own missing licence), edi_002's oddly bare photo checked and confirmed correct
+
+Same session, continuing straight on. The dispatched Istanbul research came back with a genuinely new source, `anitagac.istanbul`, İBB's own 517-tree monument registry. It independently corroborates two of Istanbul's approximate pins (Taşlı Çınar, the Cypress of Büyükada) by exact street match, and turns up a plausible but unconfirmable candidate for a third. No photos came from it though: checked the whole site directly for any licence statement and found none anywhere, so every one of its photos is disqualified under the open-licence rule, a clean, specific dead end rather than a maybe. Istanbul's counts don't change (3/10 photos, 3 approximate) but the lead itself is now properly closed out with two small wins (better corroboration) rather than left open.
+
+Continued the photo spot-check with 6 more (42 of 206 now checked). One, Edinburgh's Sweet Chestnut, needed a real second look rather than a rubber stamp: its photo shows what could easily be mistaken for a dead, broken trunk. Checked both the photo's own caption and RBGE's own page on the tree directly. Both confirm it's a real, deliberate choice, RBGE is keeping a declining veteran's deadwood in place as habitat rather than felling it, and the photo is an accurate, honest picture of exactly that, not a wrongly-published dead tree. No change needed.
+
+Full detail in CURATION.md. Nothing needs Hidde.
+
 ## 2026-07-29 — Photo spot-check extended to 36 of 206, with a genuine fix for a documented tooling wall; Istanbul research dispatched
 
 New session. Visitors: 69 visits, 123 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), consistent with prior sessions today. No reader submissions. Build clean at start.
