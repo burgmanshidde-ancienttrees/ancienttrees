@@ -1,3 +1,13 @@
+## 2026-07-29 — Brussels: Kasterlinde pin resolved to confirmed via a tree-named OSM node
+
+Same session, continued after Madrid and a failed Dublin attempt (four approximate pins there stayed genuine dead ends: no named OSM nodes, and the Tree Register of Ireland's champion database is members-only). Brussels (4/10 approximate) was next in list order with real headroom.
+
+**bru_002, The Kasterlinde: resolved from approximate to confirmed.** A 2026-07-28 pass had already corrected a 1.3km-wrong pin down to an anchor near the named "In De Linde" cafe, but stayed approximate since Brussels' own heritage register (sites.heritage.brussels) returns 403 to this session's tools. This pass found something stronger: an OpenStreetMap node individually named "Kasterlinde", the tree's own name rather than a street or cafe, sitting 15m from that anchor (50.8557989, 4.2898155). Treated as confirmed since the node names the tree itself, not a nearby landmark.
+
+Tried the same technique on Brussels' other three approximate pins (bru_003 Oriental Plane of Parc Leopold, bru_004 Bois de la Cambre oaks/beeches, bru_007 Hippodrome Douglas Fir): no matching OSM nodes for any, genuine dead ends.
+
+Brussels now at 4/10 photos (unchanged), 3/10 approximate (from 4). One data file changed, site rebuilt, all contracts validated, committed, pushed. Nothing needs Hidde.
+
 ## 2026-07-29 — Madrid: Himalayan Cedar pin resolved to confirmed via a named OSM node
 
 Same session, continued after the Amsterdam/Lisbon/Istanbul photo pass. With those three cities' remaining gaps genuinely exhausted for this session's tooling (see entry below), moved to the next city with real headroom in list order not yet touched today: Madrid (6/10 photos, 3/10 approximate).
