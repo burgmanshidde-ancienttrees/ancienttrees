@@ -1,15 +1,24 @@
 # Collections backlog
 
-STATUS: ON HOLD per Hidde, 2026-07-19. No new collection drafts until he reactivates this backlog; nightly runs skip this queue entirely. The two shipped collections stay live and awaiting his curation.
+STATUS UPDATED 2026-07-29: the "ON HOLD" note below and Contract D's approval language are both stale, superseded by blueprint v1.3 (2026-07-27, "yes pas aan"): collections now publish under the research standard with no owner-approval gate, exactly like city pages. PRODUCT_TODO.md item 4 is the live queue a run actually draws from (up to two per pass); this file is a source of ideas for that queue, not a separate gate. Left the original 2026-07-19 text below for its research value (search terms, GEO angles, coverage counts at the time), but treat "awaiting curation" and "never published without approval" as historical, not current policy.
 
-Prioritized queue of collection pages to build, based on search demand and GEO (AI citation) potential, researched 2026-07-19. Contract D applies to every item: hand-curated, drafted for Hidde, never published without his approval. One draft at a time; a collection only ships when enough verified trees exist to fill it honestly.
+Prioritized queue of collection pages to build, based on search demand and GEO (AI citation) potential, researched 2026-07-19. One draft at a time; a collection only ships when enough verified trees exist to fill it honestly.
 
 Selection criteria per idea: (1) a real search phrase people use, (2) quotable first paragraph for AI engines, (3) enough coverage in verified cities to ship without padding, (4) grows naturally as cities are added, (5) an angle competitors do not have. Our structural moat vs existing listicles (Touropia, NatGeo, blogs): every entry is publicly accessible, exactly located, and reachable by public transport. Competitor lists are wilderness trees with no directions.
 
 ## Shipped
 
-- Trees Older Than 400 Years You Can Actually Visit (awaiting curation)
-- Europe's 10 Most Remarkable Ancient Trees (awaiting curation)
+All published, no approval gate (see status note above). List as of 2026-07-29, PRODUCT_TODO.md item 4 carries the authoritative log of what shipped and when:
+- Trees Older Than 400 Years You Can Actually Visit
+- Europe's 10 Most Remarkable Ancient Trees
+- Europe's Ancient Oaks You Can Actually Visit
+- The Ginkgos Worth a November Trip
+- Europe's Most Remarkable Yews
+- The Great Planes of Europe
+- Wisteria and Blossom Worth a Spring Trip
+- The Oldest Tree in Every Country We Map
+- Trees That Outlived Their City
+- Europe's Best Tree City Trips
 
 ## Priority 1: enough coverage to draft now
 
