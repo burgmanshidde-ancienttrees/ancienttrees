@@ -52,6 +52,8 @@ Checked which below-floor cities had NOT already had a dedicated hunt: Edinburgh
 
 Same session, continued: Palermo (published yesterday, 6/8 photos) got a dedicated hunt for its 2 gaps. Found real, well-located candidates for both, but viewed each directly and rejected both on the same specificity discipline used elsewhere on the site: these entries are pinned to one specific register-measured tree, not a grove, and a wide garden shot can't confirm which individual it shows. Also extended the photo-URL spot-check from a prior session (9 checked, all clean) by 12 more, using a technique worth noting for future sessions: WebFetch's own text description of a raw image URL is usually useless (it tries to read JPEG bytes as text and reports them "corrupted"), but it saves the real image locally, and the Read tool opens that file as an actual photo. All 12 newly viewed photos are genuine matches; 3 more hit a real ~10MB tooling size cap rather than a content problem. 21 of 206 approved photos now spot-checked, zero bad matches across two sessions.
 
+Closed out two Naples news threads a prior session had left genuinely open (rung 3 outranks everything else): the Pine of Posillipo's replacement tree is confirmed unaffected by a wider district pine dieback (different street entirely), and the Villa Comunale plane tree flagged for a 2024 removal scare was actually saved, with the garden itself open daily as our own access note already says. Both close clean, no data changes needed.
+
 Full detail on all of the above in CURATION.md. Nothing needs Hidde.
 
 ## 2026-07-29 — A new collection (Trees Planted by Kings), a stale approval-gate note in BACKLOG.md corrected, three depth-priority cities' photo/pin gaps re-confirmed as genuine dead ends
