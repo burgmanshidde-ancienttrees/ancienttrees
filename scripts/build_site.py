@@ -107,7 +107,6 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .bar-links a { font-size: 13px; color: var(--ink-mid); text-decoration: none; margin-left: 1.25rem; }
 .bar-links a:hover { color: var(--moss); }
 .bar-links a.bar-cta { color: #fff; background: var(--moss); font-weight: 700; border: 1px solid var(--moss); border-radius: 999px; padding: 0.45rem 1rem; }
-.bar-links a.bar-plus { color: var(--moss); font-weight: 700; border: 1.5px solid var(--moss); border-radius: 999px; padding: 0.45rem 1rem; }
 .nav-drop { display: inline-block; position: relative; margin-left: 1.25rem; }
 .nav-drop summary { font-size: 13px; color: var(--ink-mid); cursor: pointer; list-style: none; }
 .nav-drop summary::-webkit-details-marker { display: none; }
@@ -356,7 +355,6 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .pop-now { background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 10px; border-radius: 999px; padding: 1px 8px; }
 .appland { position: relative; min-height: calc(100vh - var(--header-h)); display: flex; align-items: center; justify-content: center; padding: 2.5rem 1rem; }
 .appland-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; filter: brightness(0.82); }
-.appland-credit { position: absolute; left: 0.9rem; bottom: 0.5rem; z-index: 2; font-size: 10px; color: rgba(255,255,255,0.85); }
 .appland-card { position: relative; z-index: 1; background: #fff; border-radius: 24px; box-shadow: 0 18px 60px rgba(0,0,0,0.3); max-width: 62rem; width: 100%; display: grid; grid-template-columns: 1.05fr 1fr; gap: 2.5rem; padding: 2.75rem 3rem; }
 .appland-left h1 { font-size: 2.1rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.12; margin: 0.9rem 0 0.6rem; }
 .appland-sub { font-size: 14.5px; color: var(--ink-mid); line-height: 1.6; margin-bottom: 1.4rem; }
@@ -378,14 +376,6 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
   .appland-card { grid-template-columns: 1fr; padding: 1.6rem 1.3rem; gap: 1.4rem; border-radius: 20px; }
   .appland-left h1 { font-size: 1.6rem; }
 }
-.plus-hero { margin-bottom: 1.5rem; }
-.plus-hero .chip { margin-bottom: 0.75rem; display: inline-block; }
-.plus-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin: 1rem 0 1.5rem; }
-.plus-card { background: #fff; border: none; box-shadow: var(--shadow); border-radius: 18px; padding: 1.4rem 1.4rem 1.2rem; }
-.plus-card svg { width: 44px; height: 44px; margin-bottom: 0.6rem; }
-.plus-card h3 { font-size: 15.5px; font-weight: 800; margin-bottom: 0.3rem; }
-.plus-card p { font-size: 13px; color: var(--ink-mid); line-height: 1.55; }
-.plus-free-note { background: var(--moss-light); border-left: 3px solid var(--moss); border-radius: 0 14px 14px 0; padding: 0.85rem 1.1rem; font-size: 13.5px; color: var(--ink-mid); margin: 0 0 1.5rem; }
 .shelf { padding: 1.4rem 2rem 0.6rem; max-width: 74rem; margin: 0 auto; }
 .shelf-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 0.9rem; }
 .shelf-head h2 { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.015em; }
@@ -657,7 +647,6 @@ FOOTER = """
     </div>
     <div class="footer-col">
       <h4>Ancient Trees</h4>
-      <a href="%%ROOTPATH%%plus">Plus</a>
       <a href="%%ROOTPATH%%app">The app</a>
       <a href="%%ROOTPATH%%contribute">Suggest a tree</a>
       <a href="%%ROOTPATH%%privacy">Privacy</a>
@@ -2461,8 +2450,12 @@ def build_privacy_page(pages):
 
 APPLAND_BODY = """
 <div class="appland">
-  <img class="appland-bg" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Greenwich_Park_Sweet_Chestnut_%281%29.jpg" alt="">
-  <p class="appland-credit">Photo: Hopefully Acceptable Username, Wikimedia Commons (CC BY-SA 4.0)</p>
+  <!-- Taylor Cole, Unsplash License (no on-page credit required; recorded here
+       per hard rule 4). Replaced the Greenwich chestnut (CC BY-SA) on Hidde's
+       2026-07-29 no-visible-credit instruction: BY-SA requires the credit, the
+       Unsplash License does not, so the photo changed instead of the licence
+       being broken. -->
+  <img class="appland-bg" src="https://images.unsplash.com/photo-1690269112887-da7d1f1ea6f3?q=80&w=2400&auto=format&fit=crop" alt="">
   <div class="appland-card">
     <div class="appland-left">
       <span class="chip gold">Coming soon</span>
@@ -2487,57 +2480,25 @@ APPLAND_BODY = """
 """
 
 def build_fakedoor_pages(pages):
-    """Plus and The app: honest coming-soon pages (Hidde, 2026-07-28). They
-    exist to measure real interest via the cookieless path counts and to
-    collect volunteers via the existing form. Hard rules kept: no price
-    anywhere (rule 2), nothing promised as available today, every tree stays
-    free to explore."""
-    for slug, title, desc, body_inner in [
-        ("plus", "Ancient Trees Plus", "The convenience layer we are building around the walks.", """
-    <div class="plus-hero">
-      <span class="chip gold">Coming soon</span>
-      <p class="answer-first">Every tree, story and map on this site is free to explore. Plus is the convenience we are building around the walk itself, and it is not for sale yet: this page is what it will be, honestly, and a way to hear it first.</p>
-    </div>
-    <div class="plus-grid">
-      <div class="plus-card">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="30" width="32" height="10" rx="3" fill="#ECEDE2"/><path d="M24 8 v18 M24 26 l-7 -7 M24 26 l7 -7" stroke="#4A6B2A" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg>
-        <h3>Offline city packs</h3>
-        <p>Every tree, story and map of a city on your phone before you leave the hotel wifi. Built for the trip where roaming costs more than lunch.</p>
-      </div>
-      <div class="plus-card">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="18" rx="11" ry="9" fill="#D9A13F"/><circle cx="18" cy="16" r="5" fill="#E8BC63"/><path d="M22.8 40h2.6l-.7-14h-1.3z" fill="#6B4F33"/><path d="M36 10 l2.5 2.5 M38 18 h3.5 M12 10 l-2.5 2.5 M10 18 H6.5" stroke="#D9A13F" stroke-width="2.4" stroke-linecap="round"/></svg>
-        <h3>Season alerts</h3>
-        <p>A nudge when a tree near you reaches its peak: the ginkgo's golden week, ten days of blossom. The radar, but it comes to you.</p>
-      </div>
-      <div class="plus-card">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 38 C14 24 22 28 26 18 C29 11 36 10 40 12" stroke="#4A6B2A" stroke-width="3" fill="none" stroke-dasharray="1 7" stroke-linecap="round"/><circle cx="10" cy="38" r="4.5" fill="#4A6B2A"/><circle cx="40" cy="12" r="4.5" fill="#D9A13F"/></svg>
-        <h3>Guidance on the walk</h3>
-        <p>The signature walks, turn by turn, tree by tree, so you look up at the canopy instead of down at the map.</p>
-      </div>
-      <div class="plus-card">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="16" y="12" width="16" height="24" rx="5" fill="#ECEDE2" stroke="#4A6B2A" stroke-width="2.5"/><path d="M20 6 h8 M20 42 h8" stroke="#4A6B2A" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="24" r="4" fill="#4A6B2A"/></svg>
-        <h3>Routes on your watch</h3>
-        <p>Every walk exports to your watch or GPS. The trees come along; the phone stays in your pocket.</p>
-      </div>
-    </div>
-    <div class="plus-free-note"><strong>What stays outside Plus: the trees.</strong> Every tree on the site is free to explore, with its story, its map and its directions. Plus sells convenience, never the trees.</div>
-    <h2>Want to hear when it arrives?</h2>
-    <div class="prose-block"><p>No price exists yet, because it is not for sale yet. Leave your email through <a href="{form}">the contact form</a> with the word "Plus", and you will hear it first. That is all the form does with it.</p></div>"""),
-        ("app", "The Ancient Trees app", "The iOS app we are building for the walk itself.", "__APPLAND__"),
-    ]:
-        canonical = f"{BASE_URL}/{slug}"
-        if body_inner == "__APPLAND__":
-            body = APPLAND_BODY.replace("{form}", esc(submit_link("tree")))
-        else:
-            inner = body_inner.replace("{form}", esc(submit_link("tree")))
-            body = f"""
-<main class="content-page">
-  <h1>{title}</h1>
-  {inner}
-</main>
-"""
-        page = render_page(title, desc, canonical, body, rootpath="./")
-        pages.append((f"{slug}.html", page, canonical))
+    """The app: an honest coming-soon page (Hidde, 2026-07-28). It exists to
+    measure real interest via the cookieless path counts and to collect
+    volunteers via the existing form. Hard rules kept: no price anywhere
+    (rule 2), nothing promised as available today, every tree stays free to
+    explore.
+
+    Plus existed as a sibling door until 2026-07-29, when Hidde closed it
+    ("plus komt nog te vroeg... delete everything around plus"). Its url had
+    been public for a day, so /plus stays resolvable as a redirect to /app
+    per the Barcelona bcn_008 precedent instead of 404ing."""
+    canonical = f"{BASE_URL}/app"
+    body = APPLAND_BODY.replace("{form}", esc(submit_link("tree")))
+    page = render_page("The Ancient Trees app",
+                       "The iOS app we are building for the walk itself.",
+                       canonical, body, rootpath="./")
+    pages.append(("app.html", page, canonical))
+    pages.append(("plus.html",
+                  redirect_stub("./app", f"{BASE_URL}/app",
+                                "Moved: The Ancient Trees app"), None))
 
 
 
