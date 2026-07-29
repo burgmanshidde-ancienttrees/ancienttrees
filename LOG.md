@@ -40,6 +40,20 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — Photo spot-check extended to 36 of 206, with a genuine fix for a documented tooling wall; Istanbul research dispatched
+
+New session. Visitors: 69 visits, 123 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), consistent with prior sessions today. No reader submissions. Build clean at start.
+
+Depth-exit-test bar still 5/8; Amsterdam, Lisbon and Istanbul's photo/pin gaps have been hunted exhaustively across dozens of passes today already (every standard technique, several government portals, and two Turkish leads re-confirmed still network-blocked from this session too). Rather than repeat exhausted ground, extended the ongoing approved-photo spot-check instead: **13 more photos viewed directly and confirmed genuine** (Athens, Granada, Istanbul, Kyoto, Malaga, Milan, Naples, New York, Prague, Sintra, Valencia, Verona), bringing the running total to 36 of 206, zero bad matches found across all sessions that have done this check.
+
+Along the way, found a real fix for a tooling limit a prior session had flagged as unresolved: WebFetch's ~10MB size cap on large Commons files (which blocked 3 photos, including two of the ones checked today) can be dodged by querying the Wikimedia API for a smaller thumbnail URL first. Worth using by default going forward.
+
+One honest, minor gap caught and documented rather than ignored: Porto's Camellia hedge entry (por_005) has a real, correctly licensed photo, but it's a generic flower close-up with no tie to the actual garden. Left it in place (it fairly illustrates the species for an ensemble entry with no single named tree) and added a clarifying note so it's never mistaken for a photo of the real hedges.
+
+Also dispatched a background research pass on Istanbul's remaining photo/pin gaps using municipality-level Turkish sources not yet tried (district councils, university forestry literature), result pending.
+
+Full detail in CURATION.md. Nothing needs Hidde.
+
 ## 2026-07-29 — A real 1.8km pin error fixed in Lyon after finding this session's network reaches two previously-blocked data sources
 
 New session. Visitors: 69 visits, 123 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), consistent with prior sessions today. No reader submissions. Build clean at start.
