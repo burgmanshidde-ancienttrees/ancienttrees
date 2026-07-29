@@ -88,6 +88,9 @@ From the functionality brainstorm, Hidde approved four verbs as the product (fin
 
 ## Gamification: points, badges, rarity (the app's collecting core)
 
+- **The tier model over both layers (Hidde, 2026-07-30): everything on the map is collectible, value is tiered.** Register trees are the everywhere-supply (count as "seen"; no years until verified, coordinates and liveness from registers are not trustworthy enough for more); curated trees carry full value (their years, badge progress) and are the ones walking routes string together. City badges and collections stay exclusively about the curated ten, so completability survives. This supersedes the 2026-07-29 "register layer is not collectible" line AS THE DESTINATION, not as the pilot: the Japan pilot layer ships look-only, and the tier mechanics get designed at the mid-September checkpoint with register click data in hand. Guards that do not move: the currency stays years (no points), the liveness rule and pin honesty apply before anything register-side becomes check-in-able.
+
+
 Hidde's direction, 2026-07-26, replacing photo-led presentation as the emotional engine: the photos of old trees are honestly often ugly, the game is not. Sketch to build on when the app lands:
 
 - **The currency question, settled by research 2026-07-26: real stats beat points, and our points become YEARS.** The evidence: naked points are the weakest mechanic and can undermine intrinsic motivation in an already-passionate audience (SDT: extrinsic rewards crowding out intrinsic joy), while quantified-self stats are exactly what mastery-oriented hobbyists value most. Every product our audience already loves proves it: Strava runs on personal stats and records, not points; Polarsteps counts countries and percent-of-world; eBird runs birding, the closest cousin of tree collecting, on life lists and counts. None of them award a single point.
