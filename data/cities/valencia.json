@@ -93,7 +93,12 @@
       "age_estimate": "approximately 170 years",
       "age_min": 165,
       "age_max": 175,
-      "best_time": { "months": [11], "label": "November, when its fan-shaped leaves turn gold and drop within days" },
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when its fan-shaped leaves turn gold and drop within days"
+      },
       "location": {
         "address": "Jardín de Monforte, Calle Montolivet, 46003 Valencia",
         "latitude": 39.47722,
@@ -126,14 +131,15 @@
       "age_max": 136,
       "location": {
         "address": "Plaza Legion Espanola, 46010 Valencia",
-        "latitude": 39.4779,
-        "longitude": -0.3658,
+        "latitude": 39.477101,
+        "longitude": -0.365975,
         "neighbourhood": "Exposicio, El Pla del Real"
       },
       "story": "A garden fashion imported from the French Riviera is the reason this tree exists at all. In 1891, the widowed Countess of Ripalda hired Valencia's head gardener, Fernando Llopis, to lay out the grounds of her new palace, and Llopis suggested a Moreton Bay fig after seeing the species become fashionable among wealthy families on the Cote d'Azur, a garden idea Valencian gardeners of the period regularly borrowed from that stretch of coast given its similar climate. The palace itself did not survive the 20th century, demolished in 1968, and when the demolition crew asked how to remove the tree along with it, head gardener Vicente Peris told them that severe pruning alone would be enough to kill it. He was wrong in the way that mattered: rather than dying, the fig grew stronger, and it now stands alone at the entrance to Plaza Legion Espanola, the sole surviving trace of a palace and garden otherwise erased from the site entirely.",
       "verified_sources": [
         "https://valenciaplaza.com/siete-arboles-historicos-de-valencia",
-        "http://www.callejeandoporvalencia.com/2018/03/el-ficus-de-la-condesa-de-ripalda.html"
+        "http://www.callejeandoporvalencia.com/2018/03/el-ficus-de-la-condesa-de-ripalda.html",
+        "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/151"
       ],
       "access": "Free, public square",
       "transport": "10 min walk from Angel Guimera metro station",
@@ -144,8 +150,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "1891 planting date and the 1968 demolition/survival story are corroborated across both sources. Location and neighbourhood corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1.2km from the actual plaza (same latitude, wrong longitude, suggesting an old data-entry slip). Nominatim places Plaza de la Legion Espanola at 39.4779, -0.3658/-0.3660, three independent hits agreeing within 100m; a further web search independently confirms the plaza sits in the Exposicio neighbourhood of El Pla del Real district, not Extramurs as previously stated. Fixed both fields.",
-      "location_precision": "approximate"
+      "notes": "1891 planting date and the 1968 demolition/survival story are corroborated across both sources. Location and neighbourhood corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1.2km from the actual plaza (same latitude, wrong longitude, suggesting an old data-entry slip). Nominatim places Plaza de la Legion Espanola at 39.4779, -0.3658/-0.3660, three independent hits agreeing within 100m; a further web search independently confirms the plaza sits in the Exposicio neighbourhood of El Pla del Real district, not Extramurs as previously stated. Fixed both fields. Pin resolved 2026-07-29: Valencia's own official open-data tree inventory (CC BY 4.0) carries exactly one Ficus macrophylla registered at 'Legion Espanola Pl' (idarbol 99100614/2), matching this entry's species and its own 'stands alone' framing; four other Ficus macrophylla in the same neighbourhood are all in the separate Alameda gardens, not this plaza, so no ambiguity. Moved from a plaza-level Nominatim geocode to the tree's own individually registered point.",
+      "location_precision": "confirmed"
     },
     {
       "id": "vlc_005",
@@ -186,14 +192,15 @@
       "age_max": 110,
       "location": {
         "address": "Calle Albacete, near Plaza de Espana, 46007 Valencia",
-        "latitude": 39.4658,
-        "longitude": -0.3898,
+        "latitude": 39.465489,
+        "longitude": -0.382362,
         "neighbourhood": "Extramurs"
       },
       "story": "Three palms standing together at the entrance to a single street have become a landmark specific enough to have lent their nickname to nearby shops and a bar. Los Tres Amigos are believed to be the last visible trace of a private estate garden that once stood in this part of Valencia, before the neighbourhood around Plaza de Espana was fully urbanised in the early 20th century, leaving the three Phoenix canariensis specimens standing where a garden wall or gate might once have framed them. Palms of this species can live well over a century, and these are estimated at around a hundred years old, though no individual planting record survives to confirm an exact date. In January 2015 the local Abastos-Finca Roja neighbourhood association formally adopted the trio as a protected ensemble, a grassroots gesture of the kind more often given to a single monumental specimen than to a street corner planting. They remain, in the association's own words, a gateway to the street they mark.",
       "verified_sources": [
         "https://valenciablancoynegro.blogspot.com/2020/09/los-tres-amigos.html",
-        "https://www.elperiodicodeaqui.com/epda-noticias/las-tres-palmeras-de-la-calle-albacete-de-valencia-son-apadrinadas-por-la-asociacion-de-vecinos-abastos-finca-roja/79598"
+        "https://www.elperiodicodeaqui.com/epda-noticias/las-tres-palmeras-de-la-calle-albacete-de-valencia-son-apadrinadas-por-la-asociacion-de-vecinos-abastos-finca-roja/79598",
+        "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/151"
       ],
       "access": "Free, public street planting",
       "transport": "5 min walk from Angel Guimera metro station",
@@ -204,8 +211,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Species corrected during research: an initial source described these as Washingtonia palms, but a second, more specific source identifies them as Phoenix canariensis, which is the species used here. No individual planting date documented; age is an estimate.",
-      "location_precision": "approximate"
+      "notes": "Species corrected during research: an initial source described these as Washingtonia palms, but a second, more specific source identifies them as Phoenix canariensis, which is the species used here. No individual planting date documented; age is an estimate. Pin resolved 2026-07-29: Valencia's own official open-data tree inventory (arbolado viario, CC BY 4.0, geoportal.valencia.es) carries exactly three Phoenix canariensis registered on Calle Albacete in the Arrancapins neighbourhood, matching this entry's own description of three named palms in that exact spot. Averaged the three registered points (idarbol 1140/188, 1140/189, 1140/190) for the group's coordinate. Previous pin was roughly 640m off, an old geocode-only estimate.",
+      "location_precision": "confirmed"
     },
     {
       "id": "vlc_007",
@@ -276,7 +283,7 @@
       "age_max": 100,
       "location": {
         "address": "Parc Lineal, near Les Carolines metro station, Benimamet, 46017 Valencia",
-        "latitude": 39.500,
+        "latitude": 39.5,
         "longitude": -0.424,
         "neighbourhood": "Benimamet"
       },
