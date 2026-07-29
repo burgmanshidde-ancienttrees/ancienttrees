@@ -2965,6 +2965,14 @@ RENAMED_TREE_SLUGS = [
     ("rome", "quercia-del-tasso", "rom_001"),            # -> Ginkgo of Villa Sciarra, 2026-07-27
 ]
 
+# A tree that gets pulled outright (no replacement, unlike RENAMED_TREE_SLUGS)
+# because it turned out unverifiable or possibly on non-visitable private
+# land. Its old, possibly-indexed URL redirects to the city page rather than
+# 404ing. Entries: (city_slug, old_tree_slug).
+REMOVED_TREE_SLUGS = [
+    ("lyon", "cedar-of-ile-barbe"),  # lyo_007 pulled 2026-07-29: no source verifies the species claim, and the only garden it could plausibly stand in is the island's private residential half, explicitly non-visitable per the DIREN site classe brochure
+]
+
 
 def build_redirects(published, pages, tree_slugs=None):
     """Old /cities/[slug]/ URLs redirect to the contract URLs, and
@@ -2989,6 +2997,13 @@ def build_redirects(published, pages, tree_slugs=None):
             pages.append((f"{city_slug}/{old_slug}.html",
                           redirect_stub(new_slug, f"{BASE_URL}/{city_slug}/{new_slug}",
                                         "Moved: this tree"), None))
+    city_slug_by_slug = {p["slug"]: p["slug"] for p in published}
+    for city_slug, old_slug in REMOVED_TREE_SLUGS:
+        if city_slug not in city_slug_by_slug:
+            continue
+        pages.append((f"{city_slug}/{old_slug}.html",
+                      redirect_stub(f"../{city_slug}", f"{BASE_URL}/{city_slug}",
+                                    "Moved: this tree"), None))
 
 
 def validate_internal_links(pages):
