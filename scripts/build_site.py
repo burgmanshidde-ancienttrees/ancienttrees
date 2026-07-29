@@ -348,9 +348,17 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .prose { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
 .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2px; background: var(--cream-dark); border: 1px solid var(--cream-dark); margin-bottom: 3rem; }
 .explore-page { display: flex; flex-direction: column; height: calc(100vh - var(--header-h)); margin-top: var(--header-h); }
-.explore-head { padding: 1.1rem 2rem 0.9rem; }
+.explore-head { padding: 1.1rem 2rem 0.9rem; display: grid; grid-template-columns: 1fr auto; gap: 0.2rem 1.5rem; align-items: center; }
 .explore-head h1 { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.015em; }
-.explore-head p { font-size: 13px; color: var(--ink-mid); margin-top: 0.2rem; max-width: 46rem; }
+.explore-head p { font-size: 13px; color: var(--ink-mid); margin-top: 0.2rem; max-width: 46rem; grid-column: 1; }
+.ex-search { grid-column: 2; grid-row: 1 / span 2; display: flex; align-items: center; gap: 0.5rem; background: #fff; border: 1px solid var(--cream-dark); border-radius: 999px; padding: 0.55rem 1rem; min-width: 16rem; box-shadow: var(--shadow); }
+.ex-search svg { width: 16px; height: 16px; color: var(--ink-mid); flex-shrink: 0; }
+.ex-search input { border: none; outline: none; font-family: var(--sans); font-size: 13.5px; width: 100%; background: transparent; }
+@media (max-width: 800px) {
+  .explore-head { grid-template-columns: 1fr; }
+  .explore-head p { display: none; }
+  .ex-search { grid-column: 1; grid-row: auto; min-width: 0; margin-top: 0.4rem; }
+}
 .explore-now-chip { display: inline-block; background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 11.5px; border-radius: 999px; padding: 2px 10px; margin-left: 0.4rem; }
 .explore-map { flex: 1; min-height: 320px; }
 .pop-now { background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 10px; border-radius: 999px; padding: 1px 8px; }
@@ -610,7 +618,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <body>
 <header class="bar">
   <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><a href="%%ROOTPATH%%in-season" class="only-desktop">In season</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%in-season" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 3 6 7 6 10a6 6 0 0 1-12 0c0-3 2-7 6-10z"/><path d="M12 8v13"/></svg></span>In season</a><a href="%%ROOTPATH%%#cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a></div></details><a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
+  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%#cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a></div></details><a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
 </header>
 %%BODY%%
 %%FOOTER%%
@@ -1267,45 +1275,16 @@ if (gpsBtn && navigator.geolocation) {{
 
 
 def home_hero_script(markers, tree_index):
-    """The photo-hero homepage script: no map here anymore (the map lives at
-    /explore since 2026-07-28; the homepage shows the feeling, per Hidde, and
-    honestly also hides how incomplete a 36-city world map still looks).
-    Search resolves cities first, then tree names; near-me finds the nearest
-    mapped city from the embedded centroids."""
+    """The photo-hero homepage script: search only. The map lives at /explore;
+    location is asked THERE, in map context, never from the homepage (Hidde,
+    2026-07-29: a location prompt from a hero link "slaat nergens op"). Search
+    resolves cities first, then tree names."""
     data = json.dumps(markers)
     trees = json.dumps(tree_index)
     return """
 <script>
 var markers = __CITIES__;
 var TREES = __TREES__;
-function initNearMe() {
-  var btn = document.getElementById('near-me');
-  var out = document.getElementById('near-me-result');
-  if (!btn) return;
-  if (!navigator.geolocation) { btn.style.display = 'none'; return; }
-  btn.addEventListener('click', function() {
-    out.textContent = 'Looking...';
-    navigator.geolocation.getCurrentPosition(function(pos) {
-      var la = pos.coords.latitude, lo = pos.coords.longitude, best = null, bestD = Infinity;
-      markers.forEach(function(m) {
-        var dLa = (m.lat - la) * Math.PI / 180, dLo = (m.lng - lo) * Math.PI / 180;
-        var a = Math.sin(dLa/2) * Math.sin(dLa/2) + Math.cos(la*Math.PI/180) *
-                Math.cos(m.lat*Math.PI/180) * Math.sin(dLo/2) * Math.sin(dLo/2);
-        var d = 6371 * 2 * Math.asin(Math.sqrt(a));
-        if (d < bestD) { bestD = d; best = m; }
-      });
-      if (!best) { out.textContent = 'No cities on the map yet.'; return; }
-      var km = Math.round(bestD);
-      out.innerHTML = km < 60
-        ? 'You are in reach of <a href="' + best.url + '">' + best.city + '</a>: ' + best.label + ' trees to walk to.'
-        : 'Nearest mapped city is <a href="' + best.url + '">' + best.city + '</a>, about ' + km +
-          ' km away. Or see <a href="explore">the whole map</a>.';
-    }, function() {
-      out.textContent = 'Could not get your location. Search a city instead.';
-    }, { timeout: 8000 });
-  });
-}
-initNearMe();
 var sf = document.getElementById('city-search');
 if (sf) {
   sf.addEventListener('submit', function(e) {
@@ -1320,8 +1299,8 @@ if (sf) {
     if (tree) { window.location.href = tree.u; return; }
     hit = markers.find(function(m) { return m.city.toLowerCase().indexOf(q) !== -1; });
     if (hit) { window.location.href = hit.url; return; }
-    document.getElementById('near-me-result').innerHTML =
-      'Not mapped yet. <a href="contribute">Be the first to map it</a>, or try the location button.';
+    document.getElementById('search-note').innerHTML =
+      'Not mapped yet. <a href="contribute">Be the first to map it</a>, or <a href="explore">browse the map</a>.';
   });
 }
 </script>
@@ -1748,15 +1727,15 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
     # Sprint 1 of PRODUCT_IA.md (2026-07-28): the do-buttons live above the
     # story (Atlas Obscura's law), the chips answer the first three questions
     # at a glance, and nearby becomes cards with distances so no page dead-ends.
+    # Chips answer what a visitor asks, nothing else (Hidde, 2026-07-29:
+    # "pin confirmed, is dat informatie voor de gebruiker of voor ons twee?").
+    # A confirmed pin is the normal case and says nothing; only the
+    # approximate warning earns a chip. The season story lives in the Best
+    # time block below, not as an unexplained label up top.
     precision_chip = ('<span class="chip approx">pin approximate</span>'
-                      if location_is_approximate(tree)
-                      else '<span class="chip ok">pin confirmed</span>')
-    season_chip = ""
-    bt = tree.get("best_time") or {}
-    if bt.get("label"):
-        season_chip = f'<span class="chip gold">{esc(bt["label"])}</span>'
+                      if location_is_approximate(tree) else '')
     chips = (f'<p class="chip-row"><span class="chip">{esc(tree.get("age_estimate", "age unknown"))}</span>'
-             f'<span class="chip">{esc(species_common(tree))}</span>{precision_chip}{season_chip}</p>')
+             f'<span class="chip">{esc(species_common(tree))}</span>{precision_chip}</p>')
     radius = 200 if location_is_approximate(tree) else 75
     action_row = f"""
   <div class="action-row">
@@ -1788,9 +1767,7 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
   <div class="near-cards">{near_cards}</div>
   <div class="cta">Curious what else is standing in {esc(city)}? See <a href="../{cslug}">all {len(all_trees)} remarkable ancient trees in {esc(city)}</a> or find out <a href="oldest-tree">what the oldest tree in {esc(city)} is</a>.{species_line}</div>
   <div class="report"><strong>Help keep this page true.</strong>
-    <a class="report-btn" href="{submit_link('correction')}">Wrong spot</a>
-    <a class="report-btn" href="{submit_link('correction')}">The tree is gone</a>
-    <a class="report-btn" href="{submit_link('correction')}">Suggest an edit</a>
+    <a class="report-btn" href="{submit_link('correction')}">Something is wrong here</a>
     <a class="report-btn" href="{submit_link('tree')}">Suggest another tree</a></div>
 </main>
 """
@@ -2529,30 +2506,68 @@ def build_explore_page(all_cities, pages):
                 },
             })
     geojson = json.dumps({"type": "FeatureCollection", "features": feats})
-    n_now = sum(f["properties"]["now"] for f in feats)
     canonical = f"{BASE_URL}/explore"
-    now_line = (f'<span class="explore-now-chip">{n_now} at their seasonal best right now</span>'
-                if n_now else "")
+    # No counts in this copy (Hidde, 2026-07-29): "je moet nadenken dat alles
+    # wat je maakt ooit gaat bestaan uit miljoenen bomen." A sentence that
+    # brags about 13 or 345 stops working at 10,000; this one never will.
+    cities_json = json.dumps([
+        {"city": e["data"]["city"], "url": f'{e["slug"]}',
+         "lat": sum(t["location"]["latitude"] for t in e["data"]["trees"]) / len(e["data"]["trees"]),
+         "lng": sum(t["location"]["longitude"] for t in e["data"]["trees"]) / len(e["data"]["trees"])}
+        for e in all_cities if e["data"]["trees"]])
     body = f"""
 <main class="explore-page">
   <div class="explore-head">
     <h1>The ancient tree map</h1>
-    <p>Every tree on the site, one map: {len(feats)} remarkable old trees across {len(all_cities)} cities, each verified, each with its story. Gold means at its best this month. {now_line}</p>
+    <p>Every tree on the site, each verified, each with its story. Zoom in to a city and pick one; gold means at its best this month.</p>
+    <form id="ex-search" class="ex-search" autocomplete="off">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+      <input type="text" id="ex-q" list="ex-options" placeholder="Search a city or tree" aria-label="Search a city or tree">
+      <datalist id="ex-options">{"".join(f'<option value="{esc(c["city"])}">' for c in json.loads(cities_json))}</datalist>
+    </form>
   </div>
   <div id="map" class="explore-map"></div>
 </main>
 """
     script = """
 var DATA = __GEOJSON__;
+var CITIES = __CITIES__;
+// One world only (Hidde, 2026-07-29: "ik hoef niet 2 werelden te zien").
 var map = new maplibregl.Map({
   container: 'map', style: '__STYLE__',
-  center: [8, 48], zoom: 3.4, attributionControl: {compact: true}
+  center: [8, 48], zoom: 3.4, minZoom: 1.3,
+  renderWorldCopies: false,
+  attributionControl: {compact: true}
 });
 map.addControl(new maplibregl.NavigationControl());
+// Location is asked HERE, in map context, never on the homepage.
+map.addControl(new maplibregl.GeolocateControl({
+  positionOptions: { enableHighAccuracy: true },
+  showUserLocation: true, fitBoundsOptions: { maxZoom: 13.5 }
+}));
+var exForm = document.getElementById('ex-search');
+if (exForm) {
+  exForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var q = document.getElementById('ex-q').value.trim().toLowerCase();
+    if (!q) return;
+    var hit = CITIES.find(function(c) { return c.city.toLowerCase() === q; }) ||
+              CITIES.find(function(c) { return c.city.toLowerCase().indexOf(q) === 0; });
+    if (hit) { map.easeTo({center: [hit.lng, hit.lat], zoom: 12, duration: 1200}); return; }
+    var tree = DATA.features.find(function(f) {
+      return f.properties.name.toLowerCase().indexOf(q) !== -1; });
+    if (tree) { map.easeTo({center: tree.geometry.coordinates, zoom: 16, duration: 1200}); }
+  });
+}
 function initTreeLayers() {
   if (map.getSource('trees')) { return; }
   map.addSource('trees', {type: 'geojson', data: DATA, cluster: true,
                           clusterMaxZoom: 11, clusterRadius: 42});
+  // The season heartbeat: a soft pulse behind trees at their peak, the
+  // recorded pulsing-pin idea (BACKLOG) in its cheapest honest form.
+  map.addLayer({id: 'tree-pulse', type: 'circle', source: 'trees',
+    filter: ['all', ['!', ['has', 'point_count']], ['==', ['get', 'now'], 1]],
+    paint: {'circle-color': '#D9A13F', 'circle-opacity': 0.35, 'circle-radius': 9}});
   map.addLayer({id: 'clusters', type: 'circle', source: 'trees',
     filter: ['has', 'point_count'],
     paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,
@@ -2568,11 +2583,14 @@ function initTreeLayers() {
     paint: {'circle-color': ['case', ['==', ['get', 'now'], 1], '#D9A13F', '#4A6B2A'],
             'circle-radius': ['case', ['==', ['get', 'now'], 1], 9, 7],
             'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
+  // MapLibre v4: getClusterExpansionZoom returns a Promise; the old callback
+  // form failed silently, which made cluster clicks do nothing (Hidde found
+  // it: "als ik op die 30 klik moet er iets gebeuren").
   map.on('click', 'clusters', function(e) {
     var f = map.queryRenderedFeatures(e.point, {layers: ['clusters']})[0];
-    map.getSource('trees').getClusterExpansionZoom(f.properties.cluster_id,
-      function(err, zoom) {
-        if (!err) { map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5}); }
+    map.getSource('trees').getClusterExpansionZoom(f.properties.cluster_id)
+      .then(function(zoom) {
+        map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5, duration: 700});
       });
   });
   map.on('click', 'tree', function(e) {
@@ -2591,8 +2609,21 @@ function initTreeLayers() {
 }
 map.on('style.load', initTreeLayers);
 if (map.isStyleLoaded()) { initTreeLayers(); }
+// The pulse: radius and opacity breathe on a 2s cycle. Paint-property
+// animation only, no per-frame data churn; stops costing anything when the
+// tab is hidden because rAF pauses.
+(function pulse(ts) {
+  if (map.getLayer && map.getLayer('tree-pulse')) {
+    var t = (ts % 2000) / 2000;
+    map.setPaintProperty('tree-pulse', 'circle-radius', 9 + t * 9);
+    map.setPaintProperty('tree-pulse', 'circle-opacity', 0.4 * (1 - t));
+  }
+  requestAnimationFrame(pulse);
+})(0);
 """
-    script = script.replace("__GEOJSON__", geojson).replace("__STYLE__", MAP_STYLE)
+    script = (script.replace("__GEOJSON__", geojson)
+                    .replace("__CITIES__", cities_json)
+                    .replace("__STYLE__", MAP_STYLE))
     script = f'<script src="{MAPLIBRE_JS}"></script>\n<script>\n' + script + "\n</script>"
     page = render_page("Ancient Tree Map: every remarkable old tree, one map",
                        "The interactive map of every verified ancient tree on the site, with the ones at their seasonal best highlighted.",
@@ -2679,13 +2710,17 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
     # (top cities / parks / trails / POIs becomes top cities / species /
     # collections / oldest trees). Hidde spotted the compressed first version
     # in one second; the reference-compare rule exists because of it.
-    top_cities = sorted(published, key=lambda x: -x["count"])[:14]
+    # Equal-length columns (Hidde, 2026-07-29: "laten we die rijen even lang
+    # maken"): nine links plus a more-link each. Species has only three pages
+    # so far; the short column closes the row instead of leaving a hole
+    # mid-grid.
+    top_cities = sorted(published, key=lambda x: -x["count"])[:9]
     cities_col = "".join('<a href="%s">%s</a>' % (p["slug"], esc(p["city"])) for p in top_cities)
     species_col = "".join('<a href="species/%s">%s</a>' % (sl, esc(cn))
                           for cn, sl in (species_slugs or []))
     species_col += '<a class="dir-morelink" href="species">All species</a>'
     coll_col = "".join('<a href="collections/%s">%s</a>' % (esc(c["slug"]), esc(c["title"]))
-                       for c in (collections or [])[:8])
+                       for c in (collections or [])[:9])
     coll_col += '<a class="dir-morelink" href="collections">All collections</a>'
     oldest = []
     for entry in (renderable or []):
@@ -2698,9 +2733,9 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
     directory_html = (
         '<div class="dir-cols">'
         + '<div class="dir-group"><h3>Top cities</h3>%s<a class="dir-morelink" href="#cities-all">All %d cities</a></div>' % (cities_col, len(published))
-        + '<div class="dir-group"><h3>Top species</h3>%s</div>' % species_col
         + '<div class="dir-group"><h3>Collections</h3>%s</div>' % coll_col
         + '<div class="dir-group"><h3>Oldest trees</h3>%s</div>' % trees_col
+        + '<div class="dir-group"><h3>Top species</h3>%s</div>' % species_col
         + '</div>'
         + '<details class="dir-all" id="cities-all"><summary>All %d cities, by country</summary>' % len(published))
     by_country = {}
@@ -2803,13 +2838,6 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
         f'<option value="{esc(t["name"])}">'
         for entry in (renderable or []) for t in entry["data"]["trees"])
     city_options += tree_options
-    contribute_cta = f'<a class="home-cta" href="{submit_link("home")}">Add a tree or a city</a>'
-    # Empty until Hidde sets up somewhere to receive it. Donations rather than a
-    # paywall: the content stays free and indexable, and there is no account, no
-    # card data and no subscription to administer.
-    support_cta = (f'<a class="home-cta secondary" href="{esc(SUPPORT_URL)}" '
-                   f'target="_blank" rel="noopener">Support the project</a>'
-                   if SUPPORT_URL else "")
 
     body = f"""
 <div class="home-hero poster">
@@ -2823,16 +2851,15 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
       <datalist id="city-options">{city_options}</datalist>
     </form>
     <p class="hero-links">
-      <button type="button" id="near-me" class="hero-link">Explore trees near you</button>
-      <a class="hero-link" href="in-season">See what is at its best now</a>
+      <a class="hero-link" href="explore">Explore trees near you</a>
     </p>
-    <p id="near-me-result" class="near-me-result"></p>
+    <p id="search-note" class="near-me-result"></p>
   </div>
 </div>
 <section class="hero-sub">
   <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of. Every tree free to explore.</p>
 </section>
-{season_shelf}
+{coll_shelf}
 <section class="home-acts">
   <div class="home-act">
     <div class="home-act-copy">
@@ -2914,14 +2941,12 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
     </div>
   </div>
 </section>
-{coll_shelf}
+{season_shelf}
 <main class="page">
   <h2 class="section-heading" id="cities">Ancient trees anywhere</h2>
-  <p class="prose">Not near any of these yet? <a href="explore">The map</a> finds the nearest tree wherever you are. Otherwise, pick a city.</p>
   {directory_html}
   <p class="dir-more">Not seeing your city? <a href="contribute">Help map it</a>.</p>
 
-  <p class="prose subtle-suggest">This map grows through people who know their trees. <a href="{submit_link("tree")}">Know one we missed?</a>{support_cta}</p>
 </main>
 """
     head_extra = ld_script(site_graph())
