@@ -77,13 +77,13 @@
       "access": "Free, open daily (hours vary by season, typically morning to early evening)",
       "transport": "Cimitero vaporetto stop (lines 4.1, 4.2, 5.1, 5.2)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Cimeti%C3%A8re_ile_san_michele_vu_du_vaporetto.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "zedecoh, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Presented as an ensemble: the cemetery's 1813-1839 construction is well documented, but no source dates any individual cypress. An earlier candidate (File:Cimitero_san_michele_venezia_10.jpg) was rejected for showing only grave sections. A second candidate, File:Isola di San Michele (50444433737).jpg, was viewed directly this pass and also rejected: it shows a magnolia-like tree and statues inside a cloister courtyard, not the cypress-ringed waterfront the story describes. No cypress photo found yet. Pin tightened 2026-07-28 to the cemetery's own mapped OSM polygon centroid (~65m from the earlier estimate); still ensemble-level, since no source dates or locates any individual cypress.",
+      "notes": "Presented as an ensemble: the cemetery's 1813-1839 construction is well documented, but no source dates any individual cypress. Two earlier candidates (File:Cimitero_san_michele_venezia_10.jpg, File:Isola di San Michele (50444433737).jpg) were rejected for showing grave sections or a cloister courtyard instead. 2026-07-29: a new candidate found via Commons category search, File:Cimetiere ile san michele vu du vaporetto.jpg (CC BY 2.0, zedecoh/Flickr, 2008), described on its own Commons page as the island's brick perimeter wall seen from the water with cypress trees rising above it, exactly this entry's own framing. Held at found_needs_check rather than approved: this session's tooling cannot download and personally view the image (no direct file-fetch access), so the match rests on the Commons page's own description rather than a first-hand look. A future session that can view images directly should confirm before this photo is trusted as approved. Pin tightened 2026-07-28 to the cemetery's own mapped OSM polygon centroid (~65m from the earlier estimate); still ensemble-level, since no source dates or locates any individual cypress.",
       "location_precision": "approximate"
     },
     {
@@ -115,7 +115,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Corrected 2026-07-28: the previous version of this entry claimed a 'century-old' cedar, but neither of its two cited sources (Wikipedia, italianbotanicalheritage.com) actually mentions a cedar at all, italianbotanicalheritage.com instead names an Araucaria araucana as the garden's signature specimen. That age claim had no real source and has been removed. What is actually documented, across two independent Italian-language accounts of a 2008 art-pilgrimage event plus a third general source confirming cedars are a distinctive present-day feature of the island's planting, is three young Cedars of Lebanon planted 21 January 2008, brought from Bcharre and the Cedars of God forest by a Venice art student. Kept on the list under the 'historically significant' qualifying criterion (CLAUDE.md Step 1) rather than age, same pattern as Lisbon's Giant Rubber Tree, and labelled honestly so nobody expects a century-old trunk. The Araucaria mentioned by italianbotanicalheritage.com was not adopted as a replacement candidate this pass; worth checking for a second source in a future pass.",
+      "notes": "Corrected 2026-07-28: the previous version of this entry claimed a 'century-old' cedar, but neither of its two cited sources (Wikipedia, italianbotanicalheritage.com) actually mentions a cedar at all, italianbotanicalheritage.com instead names an Araucaria araucana as the garden's signature specimen. That age claim had no real source and has been removed. What is actually documented, across two independent Italian-language accounts of a 2008 art-pilgrimage event plus a third general source confirming cedars are a distinctive present-day feature of the island's planting, is three young Cedars of Lebanon planted 21 January 2008, brought from Bcharre and the Cedars of God forest by a Venice art student. Kept on the list under the 'historically significant' qualifying criterion (CLAUDE.md Step 1) rather than age, same pattern as Lisbon's Giant Rubber Tree, and labelled honestly so nobody expects a century-old trunk. The Araucaria mentioned by italianbotanicalheritage.com was not adopted as a replacement candidate this pass; worth checking for a second source in a future pass. 2026-07-29: Commons and iNaturalist searches for San Lazzaro degli Armeni cedars came back empty; a small, 17-19 year old planting on a guided-tour-only monastery island is unlikely to have public photo coverage. Genuine dead end.",
       "location_precision": "approximate"
     },
     {
@@ -175,7 +175,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source gives this specific poplar a measured age; described consistently as 'gigantic' and among the largest specimens on the island, treated here as an unverified age range rather than a claimed superlative. Pin nudged 2026-07-28 to the island's own OSM polygon centroid (~100m from the earlier estimate), a textually-justified proxy since multiple sources independently describe the tree as standing in the middle of the island's wood; not a surveyed point for the tree itself.",
+      "notes": "No source gives this specific poplar a measured age; described consistently as 'gigantic' and among the largest specimens on the island, treated here as an unverified age range rather than a claimed superlative. Pin nudged 2026-07-28 to the island's own OSM polygon centroid (~100m from the earlier estimate), a textually-justified proxy since multiple sources independently describe the tree as standing in the middle of the island's wood; not a surveyed point for the tree itself. 2026-07-29: Commons keyword search (\"Isola della Certosa Venezia\") and an iNaturalist radius query around the pin both came back empty for Populus nigra specifically; genuine dead end, not yet tried with a browser-based image search.",
       "location_precision": "approximate"
     },
     {
@@ -265,7 +265,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source gives the two hackberries a specific planting date; age range is an estimate based on the villa's own late-19th-century construction. Pin corrected 2026-07-28 from a district-level estimate for Sant'Alvise (~400m off) to the park's own mapped OSM boundary centroid, a real improvement though still park-level rather than pinned to the two specific trees.",
+      "notes": "No source gives the two hackberries a specific planting date; age range is an estimate based on the villa's own late-19th-century construction. Pin corrected 2026-07-28 from a district-level estimate for Sant'Alvise (~400m off) to the park's own mapped OSM boundary centroid, a real improvement though still park-level rather than pinned to the two specific trees. 2026-07-29: three iNaturalist Celtis australis observations found right at this pin (one within about 8m), confirming the location, but all three are unlicensed or CC-BY-NC; genuine dead end on the photo specifically.",
       "location_precision": "approximate"
     },
     {
@@ -325,7 +325,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No source dates or measures an individual tree at the fort; description as 'secolare' (century-old) is consistent across sources but unspecific.",
+      "notes": "No source dates or measures an individual tree at the fort; description as 'secolare' (century-old) is consistent across sources but unspecific. 2026-07-29: Commons carries roughly 140 Forte Marghera photos (Category:Forte Marghera), almost all entrance, museum-exhibit or building shots by filename; the two large series found (\"Entrada al Forte Marghera\", \"Baia Baia del Forte\") don't identify tree-specific shots without viewing each of the 100 files individually, which this session's tooling (no direct image download/view) can't do efficiently. A live lead for a future session with better image tooling, not a confirmed dead end.",
       "location_precision": "approximate"
     }
   ],
