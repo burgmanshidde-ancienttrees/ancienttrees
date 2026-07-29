@@ -210,36 +210,6 @@
       "location_precision": "approximate"
     },
     {
-      "id": "lyo_007",
-      "name": "The Cedar of Île Barbe",
-      "species": "Cedar of Lebanon (Cedrus libani)",
-      "age_estimate": "undated, called immense",
-      "age_min": 100,
-      "age_max": 200,
-      "location": {
-        "address": "Jardin de l'Île Barbe, 69009 Lyon",
-        "latitude": 45.7973,
-        "longitude": 4.8321,
-        "neighbourhood": "Île Barbe"
-      },
-      "story": "Monks gardened this island in the Saône for roughly fourteen centuries before anyone planted this specific tree, which puts even an old cedar into perspective. A Benedictine abbey occupied the northern half of Île Barbe from the 4th century until the Revolution finally dissolved it in the 18th, making it one of the oldest continuously religious sites in the Lyon region, host over that span to a long procession of ecclesiastical and lay notables the local record simply describes as celebrities of their era. The monks' garden, recently restored, keeps rare species and several genuinely centuries-old specimens today, and among them a single immense cedar of Lebanon stands out enough that visitors and local dendrological surveys single it out by name, though without giving it a specific measured age. No source dates the cedar's planting, so any age given here is a rough estimate rather than a documented figure, but a cedar of Lebanon reaching immense scale in a temperate French garden is consistent with a planting well over a century old, a species that can live a thousand years given the right conditions. The island itself, reached on foot over a footbridge from the Lyon quays, keeps a genuinely different, half-wild character from the rest of the city around it.",
-      "verified_sources": [
-        "https://www.lignedroite.fr/histoire-secrets-ile-barbe",
-        "https://www.o2-saone.fr/ile-barbe-au-milieu-de-la-saone/"
-      ],
-      "access": "Free, open access via footbridge",
-      "transport": "Bus to Île Barbe stop, or 20 min walk along the Saône quays from Vaise",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "No source gives this cedar a documented planting date or measurement; described consistently as 'immense' rather than measured, so age here is a rough estimate rather than a verified figure. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 2km from Île Barbe itself. Confirmed against Nominatim's own geocode of a named amenity inside the Jardin de l'Île Barbe (45.7970, 4.8313) and Wikipedia's stated coordinate for the island (45°47'52\"N 4°50'01\"E = 45.7978, 4.8336), which agree with each other within 250m; the stored pin sat nowhere near either. Moved onto the island; still approximate since no source gives the cedar's own position within the garden.",
-      "location_precision": "approximate"
-    },
-    {
       "id": "lyo_008",
       "name": "The Oak Collection of Parc de la Cerisaie",
       "species": "Mixed species (1913 hillside park)",
@@ -290,10 +260,10 @@
       "access": "Free, public garden",
       "transport": "15 min walk (uphill) from Vaise or Croix-Rousse metro stations",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Jardin_des_Chartreux_1.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "PHILDIC, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Presented as an ensemble; no individual tree in the garden is named or dated in the sources checked, so no single specimen is claimed as remarkable on its own.",
