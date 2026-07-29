@@ -127,14 +127,15 @@
       "best_time": { "months": [5], "label": "May, when its candle-shaped flower spikes cover the canopy" },
       "location": {
         "address": "Parc de la Garde, 6 Rue de la Garde, 69005 Lyon",
-        "latitude": 45.744,
-        "longitude": 4.788,
+        "latitude": 45.76073066,
+        "longitude": 4.78922252,
         "neighbourhood": "Champvert, 5th arrondissement"
       },
       "story": "Most visitors to this park come for the wildness rather than any single tree, but the chestnut at its centre is the reason locals bother naming the place at all. Parc de la Garde keeps a half-forested character unusual for a Lyon city park: its lower half is genuinely wooded, criss-crossed by informal paths, and holds a small stone bridge that once carried the old Vaugneray tramway line through the woods before the route was abandoned. The horse chestnut standing among these trees has been formally recognised with France's national Arbre Remarquable label, described locally simply as an enormous trunk carrying multiple large branches, a scale that marks it out even among the park's other mature trees. No source gives the tree an individual age or measured girth beyond that general description, so any figure here is an estimate rather than a documented record. The label itself, rather than any dramatic history, is what distinguishes this specimen from the thousands of ordinary horse chestnuts planted across French parks in the 19th and 20th centuries.",
       "verified_sources": [
         "https://mairie4.lyon.fr/actualite/nature-en-ville/les-arbres-remarquables-de-lyon",
-        "https://sandrillon-in-lyon.fr/le-parc-de-la-garde-lyon-champvert/"
+        "https://sandrillon-in-lyon.fr/le-parc-de-la-garde-lyon-champvert/",
+        "https://download.data.grandlyon.com/wfs/grandlyon?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:plu_h_opposable.pluboispt (feature id plu_h_opposable.pluboispt.4317, the Metropole de Lyon's own PLU-H Espace boise classe ponctuel / Arbre remarquable register)"
       ],
       "access": "Free, public park",
       "transport": "Bus to Parc de la Garde stop, or 15 min walk from Gorge de Loup station",
@@ -145,8 +146,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "No individual age or precise girth documented beyond 'enormous trunk with multiple branches'; the national label confirms formal recognition but not a specific age.",
-      "location_precision": "approximate"
+      "notes": "No individual age or precise girth documented beyond 'enormous trunk with multiple branches'; the national label confirms formal recognition but not a specific age. Location confirmed 2026-07-29 against the Metropole de Lyon's own PLU-H remarkable-tree register: a single Aesculus hippocastanum listed at 'Rue de la Garde', described as 'tres grand exemplaire en bonne sante', within 90m of Parc de la Garde's own geocoded centre and about 1.8km from this entry's prior approximate coordinate, which sat outside the park entirely.",
+      "location_precision": "confirmed"
     },
     {
       "id": "lyo_005",

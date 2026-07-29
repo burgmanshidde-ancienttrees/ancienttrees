@@ -40,6 +40,16 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — A real 1.8km pin error fixed in Lyon after finding this session's network reaches two previously-blocked data sources
+
+New session. Visitors: 69 visits, 123 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), consistent with prior sessions today. No reader submissions. Build clean at start.
+
+Today's many prior sessions already left Amsterdam, Lisbon and Istanbul's photo/pin gaps exhaustively documented (see the entries below), so this session tested something different first: whether its own network access differs from prior sessions', since a few leads had been explicitly parked as "worth a retry from a different environment." It does: `data.rbge.org.uk` (Edinburgh's RBGE plant database) and `data.grandlyon.com` (Lyon's open data portal) are both reachable now via direct HTTP, where prior sessions' WebFetch tooling hit blocks or unparseable JS.
+
+RBGE's database turned out reachable but genuinely useless for this project's purpose (no location/bed data per accession, just species and provenance), a different and more final finding than "blocked". Grand Lyon's WFS server was the real win: found the exact "Arbre remarquable" point layer (429 individually registered trees, species, street location, health note, coordinates) a prior session had named but never reached. Matched it against Lyon's 5 remaining approximate pins: **the Giant Chestnut of Parc de la Garde (lyo_004) was really 1.8km off**, sitting outside the park entirely; the register's own horse-chestnut entry for "Rue de la Garde" sits within 90m of the park's independently geocoded centre, and this entry's own story already claims the exact national label this register represents. Fixed and upgraded to `confirmed`. Two other gaps (Parc de Gerland, Parc de la Cerisaie) are genuine dead ends in this dataset; one match (Atlas Cedar vs. a wrong-species oak in a rural hamlet 15km out) correctly rejected; one corroboration (Jardin des Chartreux) left the pin alone since that entry is deliberately an unnamed ensemble.
+
+Lyon now at 4 approximate pins (from 5). Full detail in CURATION.md. Nothing needs Hidde.
+
 ## 2026-07-29 — A site-wide source-link audit (never done before) fixes one weakened citation and documents the rest; Edinburgh gets a real (if mostly negative) photo/pin pass; Most Valuable Trees collection confirmed genuinely blocked
 
 New session. Visitors: 69 visits, 123 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), same as the prior session's read. No reader submissions. Build clean at start, depth-exit-test bar unchanged at 5/8 (Amsterdam, Lisbon, Istanbul still short, all exhaustively dead-ended across many prior sessions).
