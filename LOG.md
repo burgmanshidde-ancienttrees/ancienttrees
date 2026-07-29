@@ -60,6 +60,22 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — Istanbul's Taşlı Çınar gets a photo; six other depth threads (Amsterdam, Lisbon, Antwerp, Brussels, Dublin) hunted hard and confirmed genuine dead ends
+
+Visitors: 80 visits, 150 page views over 7 days, consistent with recent sessions, nothing to steer priorities on. No reader submissions (CSV header only). Site healthy at session start (558 pages, all contracts green), smoke test's latest run green (confirmed via the GitHub API directly). REVIEW.md carries no dated entries yet. Depth-exit-test bar checked directly: only three cities block it now, all on photos alone since pins already clear for every one of the eight (Amsterdam 0 approximate, Lisbon 0, Istanbul 1): Amsterdam 7/10 photos, Lisbon 6/10, Istanbul 3/10.
+
+Dispatched three parallel research agents at Amsterdam's (3), Lisbon's (4) and Istanbul's (7) remaining photo gaps, each briefed on exactly which sources prior sessions already exhausted so they hunted new ground. Worked Antwerp, Brussels and Dublin's remaining approximate pins directly in parallel.
+
+**One real win: Istanbul's Taşlı Çınar (ist_004) gets its first photo**, an iNaturalist CC BY 4.0 shot found and personally viewed before adding, about 200m from the confirmed pin, showing an old plane trunk behind an official heritage-protection fence right where this tree is registered. Held at `found_needs_check` rather than `approved` since the immediate area could plausibly hold more than one large plane. Istanbul moves to 4/10 photos.
+
+**Everywhere else, real effort, genuine dead ends, each worth recording so it doesn't get re-walked:**
+- **Amsterdam and Lisbon's remaining photo gaps** (Heimanseik, Vondelpark Poplar, Amstelkade Olive Willow; Coral Trees, Nettle Tree, Ginkgo, Rubber Tree): new sources tried (Stadsarchief Beeldbank, GBIF, Anefo, Wiki Loves Monuments Portugal's now-1,350-file category), a couple of strong-looking candidates found and correctly rejected on license (CC-BY-NC) or identity (wrong species, viewed directly), nothing usable.
+- **Brussels' regional tree WFS finally works** (the exact request shape that returns clean EPSG:4326 GeoJSON, after prior sessions hit connection refusals or empty results), but confirms zero tree records near Parc Léopold or the Hippodrome de Boitsfort, a real jurisdictional gap, not a tooling one. Closes a lead flagged "worth retrying" since 2026-07-26.
+- **Antwerp's Groeninventaris registry, retried on its 5 remaining approximate pins**, caught one real false-positive before it shipped: the Middelheim horse chestnut's sourced 135cm circumference matches a registry entry exactly, but 19 separate trees in the same park share that same figure, an avenue-planting artifact, not an identifier. Left approximate rather than publish a coincidence dressed up as precision.
+- **Dublin's remaining pins stand on land Dublin City Council's own open data doesn't cover** (Phoenix Park is OPW, Trinity College is private, Corkagh Park belongs to South Dublin County Council), confirmed by checking each authority directly rather than assumed.
+
+Full detail on every source tried and rejected, city by city, is in CURATION.md. One data file changed (Istanbul), site rebuilt, QA and contracts green, committed, pushed. Nothing needs Hidde.
+
 ## 2026-07-29 — Istanbul: 2 more pins confirmed via a tooling breakthrough; a long-flagged Athens lead turns out to be the wrong site entirely
 
 Visitors: 94 visits, 172 page views over 7 days, the strongest week yet. No reader submissions. Site healthy at session start (558 pages, all contracts green). Depth-exit-test still short (Amsterdam 7/10 photos, Lisbon 6/10, Istanbul 3/10 photos), so rung 6 stays frozen. Every below-floor city already carried multiple documented dead-end photo/pin passes from today and yesterday, re-confirmed by reading rather than assumed, so this session looked for genuinely new angles instead of repeating exhausted search.
