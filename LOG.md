@@ -5,6 +5,20 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 Format, deliberately short:
 
 ```
+## 2026-07-29 — Whole-product composition pass (session, with Hidde): every page type walked, seven classes of defect fixed
+
+The homepage got the principle-11 treatment yesterday; today the rest of the product got the same walk, desktop and 375px, page type by page type. Found and fixed, one commit:
+
+- **Tree pages: the check-in button was dead on all 345 pages.** The check-in script was inserted without a script tag, so it rendered as raw text below the footer instead of executing. Live since the action-row rework. Fixed, plus a build-time check so bare script text can never validate again.
+- **Five photos were broken on the live site** (Amsterdam's Cycad, Lisbon's Santo Amaro olives, Paris's Second Robinier and Buttes-Chaumont sequoia, Dublin's Farmleigh sycamore): their url pointed at the Wikimedia File: page, which is HTML, not an image. Resolved to the real file URLs via the Commons API, licences re-verified along the way. New build check refuses File: page urls.
+- **Seven oldest-tree pages contradicted themselves** (Amsterdam, Tokyo, Kyoto, Antwerp, Milan, Venice, Verona): the title, pin and read-more link followed the mechanically-oldest tree while the hand-written answer named a different one (Amsterdam's title even said 300 years for the cycad, which is not a tree). New optional `oldest_tree_id` field per city picks the answer's tree; a build check now demands the answer names the tree the page is built around. Dublin's answer now names Dean's Tree explicitly.
+- **Species pages repeated their intro's first sentence twice**, once as the answer-first line and again in the body. The body now continues from sentence two.
+- **The /explore page title was invisible**, hidden under the fixed header since the restyle.
+- **In-season page repeated trees**: a tree at its best now also appeared under "coming next month". Coming lists now exclude what is already current.
+- **City-page map**: the walk banner spanned the whole map, covering the attribution and colliding with "Where am I"; now a compact card, AllTrails-style. The map now fits its pins (fitBounds, padding scaled to map size) instead of a fixed wide zoom, and all maps use compact attribution so a phone-width map is not one-third attribution bar.
+
+Parked on Hidde's word: the photo-quality/dummy-image question ("ik wil langer nadenken"), recorded in BACKLOG.md. Next, same session: design tokens in the CSS plus DESIGN_SYSTEM.md, on his instruction that consistency must be systemic, not remembered.
+
 ## 2026-07-27 — Assumption audit, on Hidde's parting instruction ("denk na of er meer van dit soort nergens op gebaseerde aannames in je instructies staan")
 
 The trigger: the "no tracking" promise turned out to be an assumption copied from a Polarsteps teardown that Polarsteps itself does not live by (they run cookies and Mixpanel). Audited CLAUDE.md, PRINCIPLES.md, COMPETITION.md, GO_TO_MARKET.md for the same shape: claims hardened into rules without evidence or without Hidde's decision.

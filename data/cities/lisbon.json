@@ -48,7 +48,7 @@
       "access": "Free, open access, public garden around the chapel",
       "transport": "11 min walk from Alcântara-Terra station (Linha de Cascais), or tram 15E to Calvário then 9 min walk",
       "photo": {
-        "url": "https://commons.wikimedia.org/wiki/File:Oliveiras_Alto_Santo_Amaro_1.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Oliveiras_Alto_Santo_Amaro_1.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Vampiregrave, via Wikimedia Commons",
         "status": "approved"
@@ -263,7 +263,12 @@
       "age_estimate": "100+ years",
       "age_min": 100,
       "age_max": 130,
-      "best_time": { "months": [11], "label": "November, when its leaves turn uniform bright yellow and drop almost simultaneously" },
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when its leaves turn uniform bright yellow and drop almost simultaneously"
+      },
       "location": {
         "address": "Praça Paiva Couceiro, 1170-284 Lisboa",
         "latitude": 38.730937,

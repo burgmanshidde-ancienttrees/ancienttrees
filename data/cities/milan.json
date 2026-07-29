@@ -47,7 +47,10 @@
       "access": "Free, public park (opening hours vary by season)",
       "transport": "5 min walk from Porta Venezia (M1)",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "label": "October into November, when its needles turn rust orange before falling"
       },
       "photo": {
@@ -141,7 +144,9 @@
       "access": "Free entry, Orto Botanico di Brera (Mon-Sat, hours vary by season)",
       "transport": "5 min walk from Lanza (M2) or Montenapoleone (M3)",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "label": "November, when its fan-shaped leaves turn uniform gold and drop within days"
       },
       "photo": {
@@ -175,7 +180,9 @@
       "access": "Free, public garden (gated, roughly 7:00-21:00, hours vary seasonally)",
       "transport": "5 min walk from Crocetta (M3)",
       "best_time": {
-        "months": [6],
+        "months": [
+          6
+        ],
         "label": "June, when its white, orchid-like flowers cover the crown"
       },
       "photo": {
@@ -210,7 +217,10 @@
       "access": "Free, public square",
       "transport": "10 min walk from Porta Genova (M2), or tram 3/9/15 to Porta Ticinese",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "label": "October and November, when its leaves turn a deep, oxidised red"
       },
       "photo": {
@@ -245,7 +255,10 @@
       "access": "Free, public park, open outside school hours (times vary by season)",
       "transport": "Bus or tram toward Loreto/Turro, then a short walk to Via Giacosa",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "label": "October and November, when its canopy turns red above the old racetrack"
       },
       "photo": {
@@ -279,7 +292,9 @@
       "access": "Free, visible from the street (small municipally-owned lot rather than a walk-in garden)",
       "transport": "5 min walk from Lanza (M2)",
       "best_time": {
-        "months": [4],
+        "months": [
+          4
+        ],
         "label": "April, when its lilac flowers cover the bare branches before the leaves appear"
       },
       "photo": {
@@ -343,7 +358,10 @@
       "access": "Free, public park",
       "transport": "10 min walk from Cadorna (M1/M2) or Cairoli (M1)",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "label": "October and November, when its foliage turns gold above the pond"
       },
       "photo": {
@@ -356,5 +374,6 @@
       "notes": "No age or planting date documented anywhere found; age range is a wide, honest estimate from trunk girth and the park's 1893 redesign, not a measured figure.",
       "location_precision": "confirmed"
     }
-  ]
+  ],
+  "oldest_tree_id": "mil_004"
 }

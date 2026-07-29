@@ -179,7 +179,12 @@
       "age_estimate": "unknown, mature",
       "age_min": 80,
       "age_max": 140,
-      "best_time": { "months": [5], "label": "May, when its candle-shaped flower spikes cover the canopy, same as any horse chestnut despite its oddly cut leaves" },
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when its candle-shaped flower spikes cover the canopy, same as any horse chestnut despite its oddly cut leaves"
+      },
       "location": {
         "address": "Park Middelheim, Middelheimlaan, Antwerp",
         "latitude": 51.1875,
@@ -366,5 +371,6 @@
       "notes": "Planting winter (1999-2000) is documented; age given as of 2026. Story is honest that this is a young tree included for what it represents (the park's own historic tree loss and a deliberate long-lived replacement), not for antiquity.",
       "location_precision": "approximate"
     }
-  ]
+  ],
+  "oldest_tree_id": "ant_001"
 }

@@ -359,7 +359,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .section-heading { font-family: var(--sans); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 1.5rem; }
 .prose { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
 .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2px; background: var(--cream-dark); border: 1px solid var(--cream-dark); margin-bottom: 3rem; }
-.explore-page { display: flex; flex-direction: column; height: calc(100vh - var(--header-h)); }
+.explore-page { display: flex; flex-direction: column; height: calc(100vh - var(--header-h)); margin-top: var(--header-h); }
 .explore-head { padding: 1.1rem 2rem 0.9rem; }
 .explore-head h1 { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.015em; }
 .explore-head p { font-size: 13px; color: var(--ink-mid); margin-top: 0.2rem; max-width: 46rem; }
@@ -490,16 +490,19 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .pin-tree.active .pin-rank { background: var(--cream); color: var(--ink); border-color: var(--moss); }
 /* The walk. On a phone this sits fixed at the bottom, because that is where a
    thumb is when someone is standing in the street holding a coffee. */
-.route-bar { position: absolute; left: 1rem; right: 1rem; bottom: 1rem; z-index: 5;
-  display: flex; gap: 0.5rem; align-items: stretch; }
+/* Compact floating card, not a full-width bar: the map and its attribution
+   stay visible, and "Where am I" never collides with the map edge. */
+.route-bar { position: absolute; left: 1rem; bottom: 1.6rem; z-index: 5;
+  display: flex; gap: 0.5rem; align-items: stretch;
+  width: calc(100% - 2rem); max-width: 420px; }
 .route-go { flex: 1; display: flex; flex-direction: column; justify-content: center;
-  background: var(--moss); color: #fff; text-decoration: none; padding: 0.7rem 1rem;
-  border-radius: 6px; font-size: 15px; font-weight: 500; line-height: 1.25;
+  background: var(--moss); color: #fff; text-decoration: none; padding: 0.7rem 1.1rem;
+  border-radius: 12px; font-size: 15px; font-weight: 500; line-height: 1.25;
   box-shadow: 0 2px 12px rgba(0,0,0,0.18); }
 .route-go:hover { background: #2f4717; }
 .route-meta { display: block; font-weight: 400; font-size: 12.5px; opacity: 0.85; margin-top: 2px; }
 .route-gps { background: #fff; color: var(--ink); border: 1px solid var(--cream-dark);
-  border-radius: 6px; padding: 0.7rem 0.9rem; font-family: var(--sans); font-size: 14px;
+  border-radius: 12px; padding: 0.7rem 0.9rem; font-family: var(--sans); font-size: 14px;
   cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.18); white-space: nowrap; }
 .route-gps[aria-pressed="true"] { background: var(--moss-light); border-color: var(--moss); }
 .report-btn { display: inline-block; margin: 4px 6px 0 0; padding: 5px 12px; border: 1px solid var(--cream-dark); border-radius: 999px; font-size: 12.5px; color: var(--ink-mid); text-decoration: none; }
@@ -902,7 +905,8 @@ def single_pin_script(lat, lng, label="1"):
 <script>
 var map = new maplibregl.Map({{
   container: 'map', style: '{MAP_STYLE}',
-  center: [{lng}, {lat}], zoom: 14.5, scrollZoom: false
+  center: [{lng}, {lat}], zoom: 14.5, scrollZoom: false,
+  attributionControl: {{ compact: true }}
 }});
 map.addControl(new maplibregl.NavigationControl());
 map.on('load', function() {{ map.resize(); }});
@@ -1027,12 +1031,20 @@ var map = new maplibregl.Map({{
   style: '{MAP_STYLE}',
   center: [{center[1]}, {center[0]}],
   zoom: 10.5,
-  scrollZoom: true
+  scrollZoom: true,
+  attributionControl: {{ compact: true }}
 }});
 map.addControl(new maplibregl.NavigationControl());
 map.addControl(new maplibregl.FullscreenControl());
 map.on('load', function() {{ map.resize(); }});
 new ResizeObserver(function() {{ map.resize(); }}).observe(document.getElementById('map'));
+if (markers.length > 1) {{
+  var _b = new maplibregl.LngLatBounds();
+  markers.forEach(function(m) {{ _b.extend([m.lng, m.lat]); }});
+  var _el = document.getElementById('map');
+  var _pad = Math.max(30, Math.min(90, Math.floor(Math.min(_el.clientWidth, _el.clientHeight) * 0.16)));
+  map.fitBounds(_b, {{ padding: _pad, maxZoom: 14.5, duration: 0 }});
+}}
 
 var pins = [];
 var activeIdx = -1;
@@ -1346,7 +1358,13 @@ def render_page(title, description, canonical, body, head_extra="", scripts="",
     if len(description) > DESC_MAX:
         ERRORS.append(f"{canonical}: description exceeds {DESC_MAX} chars ({len(description)})")
     footer_html = FOOTER.replace("%%ROOTPATH%%", rootpath) if footer else ""
-    return (
+    # Guard: script text passed without <script> tags renders as visible page
+    # text (shipped once, on every tree page). Catch it at build time.
+    if scripts:
+        outside = re.sub(r"<script\b.*?</script>", "", scripts, flags=re.S)
+        if re.search(r"\(function\(\)|=>|document\.|localStorage", outside):
+            ERRORS.append(f"{canonical}: bare JavaScript outside <script> tags would render as text")
+    page_html = (
         PAGE_SHELL
         .replace("%%TITLE%%", esc(title))
         .replace("%%DESCRIPTION%%", esc(description))
@@ -1361,6 +1379,7 @@ def render_page(title, description, canonical, body, head_extra="", scripts="",
                  ANALYTICS_SNIPPET.format(token=ANALYTICS_TOKEN) if ANALYTICS_TOKEN else "")
         .replace("%%YEAR%%", str(date.today().year))
     )
+    return page_html
 
 
 def check_links(page, count, minimum):
@@ -1544,6 +1563,11 @@ def usable_photo(tree):
     photo = tree.get("photo") or {}
     if (photo.get("url") and photo.get("license") and photo.get("attribution")
             and photo.get("status") in ("approved", "found_needs_check")):
+        # A Commons File: page is HTML, not an image; it renders as a broken
+        # img. Shipped five times before this check existed.
+        if "/wiki/File:" in photo["url"]:
+            ERRORS.append(f"{tree.get('id')}: photo url is a wiki File: page, not an image file")
+            return None
         return photo
     return None
 
@@ -1589,7 +1613,17 @@ def group_trees_by_species(renderable):
 SPECIES_MIN_TREES = 3
 
 
-def oldest_tree(trees):
+def oldest_tree(trees, city_data=None):
+    """Highest age_max wins, unless the city names its answer explicitly.
+
+    oldest_tree_id exists for cities where the mechanical winner is the wrong
+    answer: Amsterdam's Hortus cycad out-ages the Heimanseik but is a potted
+    cycad, not a tree, and the hand-written answer rightly names the oak. The
+    build cross-checks that the chosen tree appears in question_answer."""
+    if city_data and city_data.get("oldest_tree_id"):
+        named = [t for t in trees if t["id"] == city_data["oldest_tree_id"]]
+        if named:
+            return named[0]
     return max(trees, key=lambda t: t.get("age_max") or 0)
 
 
@@ -1799,7 +1833,8 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
         breadcrumb_schema(crumb_items, canonical),
     ]
     head_extra = map_head() + og_image + "\n" + ld_script(graph)
-    scripts = single_pin_script(loc["latitude"], loc["longitude"]) + "\n" + TREE_CHECKIN_JS
+    scripts = (single_pin_script(loc["latitude"], loc["longitude"])
+               + "\n<script>" + TREE_CHECKIN_JS + "</script>")
 
     check_links(canonical, 2 + len(nearby), 4)
 
@@ -1816,7 +1851,7 @@ def build_question_page(city_entry, collections, pages):
     country = city_data["country"]
     cslug = city_entry["slug"]
     trees = [t for t in city_data["trees"] if tree_is_renderable(t)]
-    old = oldest_tree(trees)
+    old = oldest_tree(trees, city_data)
     oslug = slugify(old["name"])
     loc = old["location"]
     age = age_token(old)
@@ -1834,8 +1869,24 @@ def build_question_page(city_entry, collections, pages):
     context = city_data.get("question_context", "")
     if not answer or not context:
         ERRORS.append(f"{canonical}: question_answer and question_context must be written per city (Contract B)")
-    elif not (150 <= len(context.split()) <= 200):
-        ERRORS.append(f"{canonical}: question_context is {len(context.split())} words, Contract B requires 150-200")
+    else:
+        # Title, pin and read-more link all follow `old`; an answer naming a
+        # different tree ships a self-contradicting page (Amsterdam and Tokyo
+        # did). Paraphrase is fine, so we only require one distinctive proper
+        # noun from the tree's name to appear in the answer.
+        generic = {"the", "of", "and", "tree", "trees", "oak", "yew", "yews", "ginkgo",
+                   "olive", "olives", "plane", "planes", "cedar", "cypress", "linden",
+                   "lime", "ficus", "pine", "elm", "ash", "beech", "chestnut", "wood",
+                   "grove", "ring", "garden", "gardens", "old", "great", "monumental",
+                   "de", "del", "della", "der", "du", "la", "le", "el", "van", "dos",
+                   "das", "do", "di", "san", "santa"}
+        tokens = [w for w in re.findall(r"[A-Za-z']+", old["name"])
+                  if w[0].isupper() and w.lower() not in generic]
+        if tokens and not any(t.lower() in answer.lower() for t in tokens):
+            ERRORS.append(f"{canonical}: question_answer never mentions {old['name']!r} "
+                          f"(looked for {tokens}); set oldest_tree_id or rewrite the answer")
+        if not (150 <= len(context.split()) <= 200):
+            ERRORS.append(f"{canonical}: question_context is {len(context.split())} words, Contract B requires 150-200")
 
     crumb_items = [
         ("Home", BASE_URL),
@@ -2270,12 +2321,17 @@ def build_species_page(intro_data, members, tree_slugs, published, pages):
         f'<a href="../{p["slug"]}">{esc(p["city"])}</a>' for p in published
     )
 
+    # The answer-first line borrows the intro's first sentence, so the body
+    # continues from the second one; printing the full intro repeated it.
+    first_sentence = intro_data["intro"].split(". ")[0] + "."
+    intro_rest = intro_data["intro"][len(first_sentence):].lstrip()
+    body_intro = f'<div class="prose-block"><p>{esc(intro_rest)}</p></div>' if intro_rest else ""
     body = f"""
 <main class="content-page">
   {breadcrumb_html(crumb_items, rootpath)}
   <h1>{esc(common)}</h1>
-  <p class="answer-first">{esc(intro_data['intro'].split('. ')[0])}. This page maps every {esc(common.lower())} on the site, {n} so far across {len(by_city)} cit{'y' if len(by_city)==1 else 'ies'}.</p>
-  <div class="prose-block"><p>{esc(intro_data['intro'])}</p></div>
+  <p class="answer-first">{esc(first_sentence)} This page maps every {esc(common.lower())} on the site, {n} so far across {len(by_city)} cit{'y' if len(by_city)==1 else 'ies'}.</p>
+  {body_intro}
   {''.join(sections)}
   <p class="suggest">Explore by city: {city_links} &middot; or browse <a href="../species">all species</a>.</p>
 </main>
@@ -3066,10 +3122,13 @@ def build_in_season_page(renderable, tree_slugs, pages):
         return out
 
     current = entries_for(now)
+    current_ids = {t["id"] for _, _, t, _ in current}
     upcoming = []
     for ahead in (1, 2):
         m = (now - 1 + ahead) % 12 + 1
-        ups = entries_for(m)
+        # A tree already at its best now is news today, not next month:
+        # repeating it under "Coming in August" reads as a bug.
+        ups = [e for e in entries_for(m) if e[2]["id"] not in current_ids]
         if ups:
             upcoming.append((MONTH_FULL[m - 1], ups))
 

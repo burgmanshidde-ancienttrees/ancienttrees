@@ -174,7 +174,7 @@
       "access": "Paid entry, Hortus Botanicus ticket required",
       "transport": "Tram 14, Artis stop, directly outside",
       "photo": {
-        "url": "https://commons.wikimedia.org/wiki/File:Cycad_@_De_Hortus_Botanicus_@_Amsterdam_(21679155561).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Cycad_%40_De_Hortus_Botanicus_%40_Amsterdam_%2821679155561%29.jpg",
         "license": "CC BY 2.0",
         "attribution": "Guilhem Vellut, via Wikimedia Commons",
         "status": "approved"
@@ -358,5 +358,6 @@
         "kind": "catkins"
       }
     }
-  ]
+  ],
+  "oldest_tree_id": "ams_001"
 }
