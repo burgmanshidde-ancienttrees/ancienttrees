@@ -283,13 +283,13 @@
       "access": "Free, public square",
       "transport": "Roughly 10 min walk from Arroios station (Metro Red Line)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Plantano_na_Pra%C3%A7a_Paiva_Couceiro%2C_Lisboa%2C_2024.jpg",
+        "license": "CC0 1.0",
+        "attribution": "JnpoJuwan, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "No source gives a precise planting date; 'over a century old' is the most specific figure available from the two independent write-ups found so far. Photo (2024) is a general shot of the small square where this ginkgo is the notable planted specimen; not independently confirmed to show the tree itself in frame, so flagged found_needs_check for a human visual check before it goes live. A candidate photo was checked and rejected: it is a general photo of the garden/square with no confirmation the named tree itself is in frame.",
+      "notes": "No source gives a precise planting date; 'over a century old' is the most specific figure available from the two independent write-ups found so far. An earlier candidate photo was checked and rejected: it was a general shot of the square with no confirmation the tree itself was in frame. 2026-07-29: a new candidate found, File:Plantano na Praça Paiva Couceiro, Lisboa, 2024.jpg (CC0 1.0, JnpoJuwan), whose own Commons caption names this exact square and this exact species ('Nogueira-do-japão na Praça Paiva Couceiro'). Held at found_needs_check rather than approved: this session's tools can read a file's Commons description page but cannot download or personally view the image itself, so the match rests on the uploader's own caption rather than a first-hand look. A future session with image-viewing tooling should confirm before it is trusted further.",
       "location_precision": "confirmed"
     },
     {
