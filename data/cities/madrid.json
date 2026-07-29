@@ -65,9 +65,9 @@
       "age_min": 140,
       "age_max": 160,
       "location": {
-        "address": "Estanque del Palacio de Cristal, Parque del Retiro, 28009 Madrid",
-        "latitude": 40.4136,
-        "longitude": -3.6820,
+        "address": "Paseo Julio Romero de Torres, Parque del Retiro, 28009 Madrid",
+        "latitude": 40.4137226,
+        "longitude": -3.6806496,
         "neighbourhood": "Retiro"
       },
       "story": "This cedar stands directly in front of the pond at the Palacio de Cristal, a 19th century glass and iron pavilion built in 1887 to exhibit plants and animals brought back from the Philippines, and it has spent most of the pavilion's history as part of the same postcard view: the glass palace reflected in the water, framed by the cedar's dark, tiered branches. Deodar cedars come from the western Himalayas, where the name deodar derives from a Sanskrit phrase meaning timber of the gods, and the species reached European ornamental gardens in the early 19th century as one of many exotic conifers collectors raced to introduce. Madrid's climate, hot and dry in summer rather than the Himalayan cedar's native monsoon-fed mountains, has suited this specimen well enough that it now ranks among Retiro's six officially singular trees, protected under the same regional catalogue as its more famous neighbour, the disputed-age Ahuehuete a short walk away.",
@@ -84,8 +84,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Age is an estimate based on the Palacio de Cristal's 1887 construction date and typical planting-alongside-building practice; no source gives a precise planting date for this specific tree. Pin moved 2026-07-27 about 160m to the Palacio de Cristal building itself (Nominatim, two independent address results agreeing within 40m); checked OpenStreetMap's individually-tagged trees around the pond for this specific cedar but found only bald cypresses named there, no Cedrus deodara, so this stays a building-level anchor rather than a surveyed point for the tree itself.",
-      "location_precision": "approximate"
+      "notes": "Age is an estimate based on the Palacio de Cristal's 1887 construction date and typical planting-alongside-building practice; no source gives a precise planting date for this specific tree. Pin moved 2026-07-27 about 160m to the Palacio de Cristal building itself, still an anchor rather than a surveyed point. Resolved to confirmed 2026-07-29: an individually-tagged OpenStreetMap node named \"Cedro del Himalaya\" (Spanish for this exact species) sits on Paseo Julio Romero de Torres, the pond-side walkway immediately beside the Palacio de Cristal, about 30m from mad_004's already-confirmed Bald Cypress pin in the same pond and roughly 115m from the prior building-level anchor. A second \"Cedro del Himalaya\" node exists elsewhere in Retiro (Paseo de Lagasca, over 700m away, clearly a different specimen) and was not used.",
+      "location_precision": "confirmed"
     },
     {
       "id": "mad_003",

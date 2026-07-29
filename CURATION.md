@@ -1,3 +1,13 @@
+## 2026-07-29 — Madrid: Himalayan Cedar pin resolved to confirmed via a named OSM node
+
+Same session, continued after the Amsterdam/Lisbon/Istanbul photo pass. With those three cities' remaining gaps genuinely exhausted for this session's tooling (see entry below), moved to the next city with real headroom in list order not yet touched today: Madrid (6/10 photos, 3/10 approximate).
+
+**mad_002, The Himalayan Cedar of the Crystal Palace: pin resolved from approximate to confirmed.** The stored pin was already a 2026-07-27 building-level anchor (Palacio de Cristal itself), not a surveyed point. An OpenStreetMap/Nominatim search this pass found an individually-tagged node named "Cedro del Himalaya" (Spanish for this exact species) on Paseo Julio Romero de Torres, the pond-side walkway directly beside the Palacio de Cristal, about 30m from mad_004's already-confirmed Bald Cypress pin in the same pond, roughly 115m from the prior building anchor. A second same-named OSM node exists over 700m away on Paseo de Lagasca, clearly a different specimen, and was not used. No open-licensed photo found for this tree despite trying iNaturalist and Commons at the exact new coordinate (two iNaturalist observations right at the spot, both unlicensed or CC-BY-NC).
+
+Tried the same technique for mad_008 (Aleppo Pine, Campo del Moro), Madrid's other remaining approximate pin: Nominatim has three separately-named "Pino Carrasco" nodes in Madrid (Rosaleda del Retiro, Real Jardín Botánico, Villaviciosa de Odón), none in Campo del Moro. Genuine dead end, stays approximate.
+
+Madrid now at 6/10 photos (unchanged), 2/10 approximate (from 3). One data file changed (Madrid), site rebuilt, all contracts validated, committed, pushed. Nothing needs Hidde.
+
 ## 2026-07-29 — Lisbon: one real photo found (Ginkgo of Praça Paiva Couceiro), Amsterdam and Istanbul stay genuine dead ends this pass
 
 New session. `python3 scripts/visitors.py`: 97 visits, 175 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12, and 28 on the 29th so far), strongest day yet, no sharp signal to reorder priorities. No reader submissions (CSV fetched fresh, header row only). Build clean, REVIEW.md empty (no dated entries), nothing published found wrong. Depth-exit-test bar checked directly: Amsterdam (7/10 photos), Lisbon (6/10) and Istanbul (4/10) still block it; the other five named cities already clear 8+ photos and 2-or-fewer approximate pins. Went to rung 5, Amsterdam-first order.
