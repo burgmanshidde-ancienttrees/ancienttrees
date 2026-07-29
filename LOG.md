@@ -40,6 +40,14 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — Edinburgh: a real pin fixed (Lauriston Castle monkey puzzles, ~800m error) via a newly found council tree register
+
+Visitors: 71 visits, 125 page views over 7 days, consistent with recent sessions, nothing to steer priorities on. No reader submissions (CSV checked directly, header only). Amsterdam/Lisbon/Istanbul/Rome and Madrid/New York/Dublin were already worked exhaustively earlier today (see this file's and CURATION.md's other entries); oldest-first through city-list.json's order, Edinburgh was next.
+
+Photo hunt on Edinburgh's 6 remaining gaps was a genuine dead end again (wrong species, wrong location, non-commercial-only licences, or a real candidate rejected because its photos only show foliage, not the signature trunk the story is about). While chasing one of those gaps I found something better: **City of Edinburgh Council runs its own open-data Trees register**, tracking individual council-owned trees by site, species, age and precise National Grid coordinates. It queried back exactly five monkey puzzle trees at "Lauriston Castle", matching an entry that specifically describes five. Converted their grid coordinates to normal map coordinates myself (built and validated my own implementation of the standard Ordnance Survey conversion formulas against OS's own worked examples first, since a conversion bug here would produce exactly the kind of false-confidence pin this project exists to prevent). The result lines up with independent GPS listings for the castle itself, and it turns out the pin that had been live was about 800 metres off, quietly wrong until today. Fixed and upgraded from approximate to confirmed. Full detail, including which other Edinburgh sites this register can and can't help with, is in CURATION.md.
+
+One data file changed (Edinburgh), site rebuilt, all contracts validated, pushed. Nothing needs Hidde.
+
 ## 2026-07-29 — A quiet run: real effort on the three depth-exit-test stragglers, no photos or pins actually moved, one good lead banked for later
 
 Visitors: 71 visits, 125 page views over 7 days, no sharp change. No reader submissions. Site healthy start and end.
