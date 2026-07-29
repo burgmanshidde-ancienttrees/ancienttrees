@@ -48,7 +48,11 @@ Today's many prior sessions already left Amsterdam, Lisbon and Istanbul's photo/
 
 RBGE's database turned out reachable but genuinely useless for this project's purpose (no location/bed data per accession, just species and provenance), a different and more final finding than "blocked". Grand Lyon's WFS server was the real win: found the exact "Arbre remarquable" point layer (429 individually registered trees, species, street location, health note, coordinates) a prior session had named but never reached. Matched it against Lyon's 5 remaining approximate pins: **the Giant Chestnut of Parc de la Garde (lyo_004) was really 1.8km off**, sitting outside the park entirely; the register's own horse-chestnut entry for "Rue de la Garde" sits within 90m of the park's independently geocoded centre, and this entry's own story already claims the exact national label this register represents. Fixed and upgraded to `confirmed`. Two other gaps (Parc de Gerland, Parc de la Cerisaie) are genuine dead ends in this dataset; one match (Atlas Cedar vs. a wrong-species oak in a rural hamlet 15km out) correctly rejected; one corroboration (Jardin des Chartreux) left the pin alone since that entry is deliberately an unnamed ensemble.
 
-Lyon now at 4 approximate pins (from 5). Full detail in CURATION.md. Nothing needs Hidde.
+Lyon now at 4 approximate pins (from 5).
+
+**Same session, continued: closed out two more "retry from elsewhere" leads with sharper reasons than before.** Athens' tree-planting web app has a real API (found by reading its JS bundle directly, something WebFetch's script-stripping couldn't do), but it returns a clean 401 Unauthorized, not a network or tooling failure: genuinely closed, needs credentials this project shouldn't seek. Istanbul's İBB open data portal is reachable this session and was searched properly via its CKAN API: it has 11 tree-related datasets, all aggregate canopy/count statistics, no individually-named monumental-tree register at all, a real content gap rather than the DNS/connection failures prior sessions hit on two other Istanbul URLs (which stay genuinely blocked from this session too).
+
+Full detail in CURATION.md. Nothing needs Hidde.
 
 ## 2026-07-29 — A site-wide source-link audit (never done before) fixes one weakened citation and documents the rest; Edinburgh gets a real (if mostly negative) photo/pin pass; Most Valuable Trees collection confirmed genuinely blocked
 
