@@ -94,16 +94,16 @@
       "id": "vie_003",
       "name": "The Chestnut Avenue of the Hauptallee",
       "species": "Common Horse Chestnut (Aesculus hippocastanum)",
-      "age_estimate": "up to 266 years",
-      "age_min": 236,
-      "age_max": 266,
+      "age_estimate": "most of the avenue is younger, a small number of survivors reported over 200 years",
+      "age_min": 150,
+      "age_max": 210,
       "location": {
         "address": "Prater Hauptallee, Praterstern to Lusthaus, 1020 Wien",
         "latitude": 48.2115,
         "longitude": 16.4100,
         "neighbourhood": "Leopoldstadt, 2nd district"
       },
-      "story": "Vienna's grandest avenue is older than the trees that define it by two centuries. The Hauptallee was cut through the Prater's floodplain forest in 1538, on the order of Emperor Ferdinand I, to connect the Augarten with the imperial hunting grounds, but the horse chestnuts that now line it in four to six dense rows came generations later. The oldest survivors are 236 and 266 years old, meaning they went into the ground around the time Mozart was still alive. Roughly 2,600 avenue trees run along the full 4.5 kilometre length, from Praterstern at one end to the Lusthaus, a former imperial hunting lodge, at the other, making this one of the longest tree-lined avenues in Europe. For a few weeks each spring the chestnuts turn the entire route white with candle-shaped blossom, an event Viennese joggers and cyclists plan routes around rather than merely notice. The avenue has hosted horse races, carriage parades, and, for decades, the finish straight of the Vienna City Marathon. Not every tree on the Hauptallee is old. Storms, disease, and simple traffic have taken their share over five centuries, and new chestnuts are replanted as older ones fail. The two oldest survivors are the exception, not the rule, which is exactly what makes them worth seeking out.",
+      "story": "Vienna's grandest avenue is older than the trees that define it by two centuries. The Hauptallee was cut through the Prater's floodplain forest in 1538, on the order of Emperor Ferdinand I, to connect the Augarten with the imperial hunting grounds, but the horse chestnuts that now line it in four to six dense rows came generations later. Roughly 2,600 avenue trees run along the full 4.5 kilometre length, from Praterstern at one end to the Lusthaus, a former imperial hunting lodge, at the other, making this one of the longest tree-lined avenues in Europe, with a small number reported over 200 years old among the many younger replacements. For a few weeks each spring the chestnuts turn the entire route white with candle-shaped blossom, an event Viennese joggers and cyclists plan routes around rather than merely notice. The avenue has hosted horse races, carriage parades, and, for decades, the finish straight of the Vienna City Marathon. Not every tree on the Hauptallee is old. Storms, disease, and simple traffic have taken their share over five centuries, and new chestnuts are replanted as older ones fail, which is exactly why this is a walk through a living tradition rather than a search for two specific trunks.",
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Hauptallee_(Wien)",
         "https://traveltips.at/die-prater-hauptallee-wiens-gruene-lunge-und-sportliche-seele/"
@@ -120,8 +120,8 @@
         "attribution": "Herzi Pinki, via Wikimedia Commons",
         "status": "approved"
       },
-      "curation_status": "ai_generated",
-      "notes": "Ensemble entry: the Hauptallee's chestnut planting as a whole, represented by its two oldest documented specimens (236 and 266 years). Pin marks the avenue's approximate midpoint, not a single tree.",
+      "curation_status": "flagged",
+      "notes": "Ensemble entry: the Hauptallee's chestnut planting as a whole. Pin marks the avenue's approximate midpoint, not a single tree. Corrected 2026-07-29: the entry previously stated the two oldest survivors as 236 and 266 years old, citing this file's own two verified_sources; neither actually supports that figure when re-checked directly (German Wikipedia's Hauptallee article names no individual tree ages at all, and traveltips.at only says the avenue's trees date to the 19th century). A web search traced the 236/266 figures to monumentaltrees.com, which this project can use for verification only, never as a citable source, and which could not be fetched this session to confirm even that (HTTP 403). Softened the story and age range to the one claim multiple echoes agree on (a small number of chestnuts reported over 200 years old among the avenue's ~2,600 trees) rather than publish two specific, unverifiable ages with false confidence. Also dropped the closing line encouraging readers to seek out \"the two oldest survivors\": no source gives their location within a 4.5km avenue, so that promise could not have been kept anyway. Vienna's own Baumkataster (data.wien.gv.at WFS, layer ogdwien:BAUMKATOGD) is a real, likely-authoritative source for pinning specific old chestnuts by planting year, but a bounding-box query returned zero features this session (parameter format issue, not a content dead end); worth a retry.",
       "location_precision": "approximate"
     },
     {
