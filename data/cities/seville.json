@@ -35,8 +35,8 @@
       "age_max": 120,
       "location": {
         "address": "Jardín Inglés, Real Alcázar de Sevilla, 41004 Sevilla",
-        "latitude": 37.3844,
-        "longitude": -5.9912,
+        "latitude": 37.38241607,
+        "longitude": -5.99091846,
         "neighbourhood": "Santa Cruz, Casco Antiguo"
       },
       "story": "Ten of these ginkgos are Seville survivors from a delivery of twenty-five. The trees arrived at the Real Alcázar in the autumn and winter of 1910, part of a shipment from the Royal Site of La Granja de San Ildefonso near Segovia, sent south to plant the palace's new English Garden, a cooler, shadier counterpoint to the clipped Andalusi courtyards elsewhere in the grounds. Fifteen didn't survive more than a century of Seville's dry heat, a climate ginkgos tolerate poorly compared to the temperate gardens they came from. The ten that did are now among the oldest ginkgos in Andalusia, and every December and January they do something nothing else in the garden does: every leaf turns the same intense yellow within days of each other, a uniform gold that stands out hard against the evergreen palms, cypresses and citrus around it. The species survived in the wild only in a few restricted pockets of China, kept alive for centuries as a sacred tree in Chinese and Japanese temple gardens before European botanists began exporting it in the 18th century. Its old Chinese name means duck's foot, a reference to the fan-shaped leaf that later inspired Goethe to write an entire poem about the tree's paired, seemingly single lobes. The Alcázar's ginkgos arrived almost a century after Goethe wrote it, foreign transplants in a garden that was already centuries old by the time they showed up.",
@@ -57,8 +57,8 @@
         "status": "approved"
       },
       "curation_status": "ai_generated",
-      "notes": "Arrival date (autumn-winter 1910, ex-La Granja de San Ildefonso), original count (25) and survivor count (10) confirmed by a dedicated botanical-history source on the Alcázar's own flora, cross-referenced against a second independent article on the gardens. Coordinates are the Real Alcázar's general address; the English Garden is a specific section within the larger grounds, not independently surveyed, hence approximate.",
-      "location_precision": "approximate"
+      "notes": "Arrival date (autumn-winter 1910, ex-La Granja de San Ildefonso), original count (25) and survivor count (10) confirmed by a dedicated botanical-history source on the Alcázar's own flora, cross-referenced against a second independent article on the gardens. Upgraded to confirmed 2026-07-29: the Real Alcázar's own living-collection database (nomadgarden.org, the garden's official specimen map, queried directly rather than through its JS-rendered map view) individually geotags 11 Ginkgo biloba specimens in the English Garden, clustered within about 110m of each other. Pin moved to their centroid, about 220m from the previous general-address estimate. Worth a note rather than a silent change: the database currently shows 11 living specimens against this entry's own sourced count of 10 survivors from the original 1910 planting; not resolved further this session, may reflect a later replacement planting rather than an error in either source.",
+      "location_precision": "confirmed"
     },
     {
       "id": "sev_002",
