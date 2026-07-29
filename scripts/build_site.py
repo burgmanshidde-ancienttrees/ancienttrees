@@ -65,29 +65,17 @@ AUTH_ENABLED = False
 SUPABASE_URL = "https://caimvxiyrtifilimlkqw.supabase.co"
 SUPABASE_KEY = "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb"
 
-# The hero photo bank (Hidde, 2026-07-28): rotates per visit, AllTrails-style.
-# All Unsplash License (free incl. commercial), credits recorded per hard
-# rule 4. Curate by adding or removing lines; first entry is the no-JS
-# fallback.
+# The hero photo (Hidde, 2026-07-29): one fixed image, no rotation. He picked
+# the Kevin Young frame and dropped the bank; new candidates only when he
+# brings them. Kevin Young, Unsplash License (free incl. commercial, no credit
+# required on-page); attribution recorded here per hard rule 4. The visible
+# credit overlay was removed on his instruction, which the Unsplash License
+# permits; CC tree photos elsewhere keep their visible credits, those licences
+# do require them.
 HERO_PHOTOS = [
     ("https://images.unsplash.com/photo-1422393682802-921122338109?q=80&w=2400&auto=format&fit=crop",
      "Photo: Kevin Young, Unsplash"),
-    ("https://images.unsplash.com/photo-1653794965935-9a8f0b476cd4?q=80&w=2400&auto=format&fit=crop",
-     "Photo: Joydeep Sensarma, Unsplash"),
-    ("https://images.unsplash.com/photo-1778517320768-ed8c93862cf9?q=80&w=2400&auto=format&fit=crop",
-     "Photo: Timur Seyfelmlyukov, Unsplash"),
-    ("https://images.unsplash.com/photo-1777718183339-b81165490b4c?q=80&w=2400&auto=format&fit=crop",
-     "Photo: Pepijn M, Unsplash"),
 ]
-# Inspiration bank from Hidde's 2026-07-28 moodboard, not in the hero rotation
-# (his instruction: inspiration, not literal use). All free Unsplash. Intended
-# homes when their moment comes:
-# - Bernd Dittrich, tram + tree Lisbon (photo-1778533300437-c4ab3d8d2d36): Lisbon city-page hero
-# - Joshua Kettle, Kirstenbosch path (photo-1663411322211-431180d5d4f1): walks imagery / Cape Town
-# - Taylor Cole, redwood hiker (photo-1690269112887-da7d1f1ea6f3): app page alternative
-# - JQ C, grassland trees (photo-1779631270027-776f55648da7): section background
-# - Silvia Ambrosini, tree + building Faros (photo-1695796315108-92cd3f730bc2): collections
-# - Pieter Bouwer, Buenos Aires steps (photo-1597689047962-1718c756b55f): world edition someday
 
 MAPLIBRE_JS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"
 MAPLIBRE_CSS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
@@ -451,7 +439,6 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .hero-search { display: flex; gap: 0.5rem; margin-top: 0.9rem; }
 .home-hero.poster { position: relative; height: min(78vh, 680px); min-height: 480px; }
 .home-hero.poster .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.hero-credit { position: absolute; right: 0.9rem; bottom: 0.5rem; z-index: 3; font-size: 10px; color: rgba(255,255,255,0.75); }
 .hero-scrim { position: absolute; inset: 0; background: linear-gradient(rgba(22,28,15,0.30), rgba(22,28,15,0.55)); pointer-events: none; z-index: 1; }
 .hero-center { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 1rem; pointer-events: none; }
 .hero-center > * { pointer-events: auto; }
@@ -2854,7 +2841,6 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
         f'<option value="{esc(t["name"])}">'
         for entry in (renderable or []) for t in entry["data"]["trees"])
     city_options += tree_options
-    hero_bank_json = json.dumps(HERO_PHOTOS)
     contribute_cta = f'<a class="home-cta" href="{submit_link("home")}">Add a tree or a city</a>'
     # Empty until Hidde sets up somewhere to receive it. Donations rather than a
     # paywall: the content stays free and indexable, and there is no account, no
@@ -2866,15 +2852,6 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
     body = f"""
 <div class="home-hero poster">
   <img class="hero-bg" id="hero-bg" src="{HERO_PHOTOS[0][0]}" alt="">
-  <p class="hero-credit" id="hero-credit">{HERO_PHOTOS[0][1]}</p>
-  <script>
-  (function() {{
-    var bank = {hero_bank_json};
-    var pick = bank[Math.floor(Math.random() * bank.length)];
-    document.getElementById('hero-bg').src = pick[0];
-    document.getElementById('hero-credit').textContent = pick[1];
-  }})();
-  </script>
   <div class="hero-scrim"></div>
   <div class="hero-center">
     <h1>Epic old trees, <em>wherever you are</em>.</h1>
