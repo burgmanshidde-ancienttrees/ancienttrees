@@ -321,6 +321,14 @@ That puts the weight on you, so two rules tighten:
 
 `curation_status` and the `status` field on a city stay in the data as internal signal, but they no longer gate publication and no longer show on the site.
 
+## QA: three layers, ruled by Hidde 2026-07-29
+
+The 2026-07-29 whole-product walk found a dead check-in button on all 345 tree pages, five broken photos and seven self-contradicting pages, all live. The lesson is structural, so QA is a standing work form with three layers:
+
+1. **Build-time checks, every build.** build_site.py refuses contract violations, bare script text, File: page photo urls, and oldest-tree pages whose answer names a different tree than the page is built around. When a walk finds a new bug class, the fix ships WITH a check that makes it unshippable again; that ratchet is the point, and removing one of these checks needs Hidde.
+2. **scripts/qa.py, a gate on every deploy.** Validates the built HTML the way a browser meets it: internal links resolve, no em dashes or banned words in rendered text, image sources are real image urls. CI fails the deploy on any hit. A run that sees the deploy workflow fail on QA treats it as rung 2 (the site is broken).
+3. **The composition walk, periodic, with eyes.** Every page type at desktop and 375px, in a working session: every two weeks, and always straight after a visual system change. CI cannot see pages, so this layer is never delegated to a run; runs do not do visual-taste work.
+
 ## Hidde's curation workflow (optional, when he feels like it)
 
 When Hidde opens a session, FIRST show him the top of CURATION.md: what's new, what's flagged, what needs photos. Prioritize his time on:
