@@ -40,6 +40,12 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — Photo spot-check reaches 102 of 206; a real photo upgrade found for Tokyo's Shiba Toshogu Ginkgo; a stale PRODUCT_TODO.md note fixed
+
+Same session, continued. Corrected PRODUCT_TODO.md item 4: it named "Trees That Survived Wars and Fires" as still open, but that idea already shipped 2026-07-27 as "Trees That Outlived Their City" (data/collections/BACKLOG.md, updated today, shows it struck through). Would have drafted a near-duplicate collection otherwise. Checked the two remaining Priority-2 collection ideas for real coverage while there: both (Churchyard Yews, Trees Older Than 1,000 Years) are genuinely too thin to draft honestly today, recorded so a future session doesn't re-check from scratch.
+
+Third spot-check batch: 16 more viewed, 15 genuine matches, one real fix. Tokyo's Shiba Toshogu Ginkgo (tok_005) had a technically-correct but visually weak approved photo, a bare winter shot, when the tree's whole `best_time` pitch is its late-November gold. Found the only other photo in its Commons category, same photographer and licence, showing the tree in full autumn colour with the shrine roof behind it, and swapped to that. Rebuilt, contracts green, one data file changed. Full detail in CURATION.md. Nothing needs Hidde.
+
 ## 2026-07-29 — Photo spot-check reaches 86 of 206, second batch spreads into the thinnest-checked cities
 
 Same session, continued straight on from the batch below. Picked the next 16 specifically from cities that had only 1 prior spot-check each (Bologna, Cadiz, Florence, Malaga, Milan, Nice, Porto, Seville, Sintra, Valencia, Verona), plus a few more from Munich, Antwerp, Berlin, Vienna, London. All 16 genuine matches, zero bad matches. Two worth a follow-up look for a real but minor reason, not suspicion: Porto's Bischofia Trio photo is a tight crop on leaves/berries rather than a full-tree shot, and Valencia's ginkgo is mid-leaf-drop (same normal seasonal behaviour already noted for Seville's ginkgo in the same batch). Full detail in CURATION.md. No data changes, nothing needs Hidde.
