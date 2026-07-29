@@ -2963,6 +2963,7 @@ RENAMED_TREE_SLUGS = [
     ("barcelona", "plane-trees-of-la-rambla", "bcn_008"),  # -> Silk Tree of the Ciutadella, 2026-07-26 (never got a redirect until now)
     ("dublin", "sculpted-cypress", "dub_007"),           # -> Many-Trunked Holm Oak of St Anne's Park, 2026-07-27
     ("rome", "quercia-del-tasso", "rom_001"),            # -> Ginkgo of Villa Sciarra, 2026-07-27
+    ("berlin", "bellevue-oak", "ber_006"),                # -> Mahlsdorf Village Lime, 2026-07-29
 ]
 
 # A tree that gets pulled outright (no replacement, unlike RENAMED_TREE_SLUGS)

@@ -181,33 +181,34 @@
     },
     {
       "id": "ber_006",
-      "name": "The Bellevue Oak",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "270 years",
-      "age_min": 260,
-      "age_max": 280,
-      "label": "Declining, under active protection",
+      "name": "The Mahlsdorf Village Lime",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "300-400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "best_time": { "months": [6, 7], "label": "late June, when the lime blossom scents the street", "kind": "flowering" },
       "location": {
-        "address": "Bellevuepark, Friedrichshagener Straße, 12555 Berlin",
-        "latitude": 52.4523,
-        "longitude": 13.5817,
-        "neighbourhood": "Köpenick, Treptow-Köpenick"
+        "address": "Hönower Straße 13, 12623 Berlin",
+        "latitude": 52.5061,
+        "longitude": 13.61255,
+        "neighbourhood": "Mahlsdorf, Marzahn-Hellersdorf"
       },
-      "story": "Berlin's Bellevue Palace burned down in the Second World War. One tree from its grounds did not. This pedunculate oak, likely planted around 1752, once stood among a grove surrounding a rococo pleasure palace built in 1766 for a Hohenzollern prince, a building destroyed in 1945 and never rebuilt. It is the last living witness left in what is now Bellevuepark, a public park in Köpenick unrelated to the better-known Schloss Bellevue across the city that today houses Germany's president. At around 270 years old, with a trunk 5.65 metres round, it has spent the last two decades visibly failing. Local papers have covered its condition roughly every five years since 2006, when its heaviest branch first needed a support structure, through a 40 percent crown reduction in 2014 meant to relieve pressure on its trunk, to a protective fence installed in 2015 after district conservationists, arborists and heritage officials agreed the tree needed distance from foot traffic to have any real chance of recovery. This is not a thriving tree. It is a dying one that Berlin has decided, deliberately and more than once, is worth the effort of trying to keep upright anyway, closer to a patient under long-term care than a finished specimen.",
+      "story": "In 2021 Berlin's district register dropped two of Mahlsdorf's protected trees, a Balkan horse chestnut and a black poplar, from its list of natural monuments. A crooked, ten metre lime standing in front of the neighbourhood's oldest building was not one of them. The Mahlsdorf Village Lime, a small-leaved lime outside the old parish church on Hönower Straße, has been protected since 1993 for outright rarity rather than size, a designation it has now outlasted two neighbours to keep. Its age is put at a minimum of 300 years, with local historians tracing the planting to the 17th century. Height was never the point: centuries of storm damage bent and hollowed the crown instead of raising it, leaving a squat, mossy shape barely taller than the church roofline while its trunk swelled to a girth of 4.45 metres, wider than many trees three times its height. By 1995 the district judged the limbs unsafe to leave unsupported and spent 8,000 Deutsche Mark bracing them with steel cables and fencing the base, work that still holds the tree together today. It stands on the old village high street, beside a church that itself survived the Thirty Years' War and the 1945 bombing, two witnesses to the same stretch of road that outlasted the empire, kingdom and two republics built around them.",
       "verified_sources": [
-        "https://de.wikipedia.org/wiki/Bellevue-Eiche",
-        "https://www.berliner-woche.de/koepenick/c-bauen/sterbende-eiche-im-bellevuepark-mit-einem-zaun-gesichert_a92939"
+        "https://de.wikipedia.org/wiki/Mahlsdorfer_Linde",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Marzahn-Hellersdorf",
+        "https://alles-mahlsdorf.de/mahlsdorf-bekommt-ein-neues-naturdenkmal-dafuer-sollen-zwei-andere-gestrichen-werden/"
       ],
-      "access": "Free, public park",
-      "transport": "4 min walk from the Gelnitzstraße tram stop (Tram 27), reachable from Köpenick S-Bahn station (S3)",
+      "access": "Free, stands on public ground in front of the church on Hönower Straße, viewable at all times (a low fence protects the base and root area)",
+      "transport": "10-12 min walk from Berlin-Mahlsdorf S-Bahn station (S5)",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Bellevue-Eiche_berlin_2019-06-15_(6).jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Z thomas, via Wikimedia Commons",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/2019-06-29_Mahlsdorfer_Linde_2.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Bernard Ladenthin, via Wikimedia Commons",
         "status": "approved"
       },
-      "curation_status": "flagged",
-      "notes": "Confirmed by German Wikipedia and two separate berliner-woche.de local news articles (2015 fencing, and an earlier crown reduction). Included with an honest 'declining' label per the tone-of-voice honesty principle rather than presented as healthy; local press explicitly calls it 'sterbende Eiche' (dying oak).",
+      "curation_status": "ai_generated",
+      "notes": "Replacement for the former ber_006, 'The Bellevue Oak', pulled 2026-07-29 after independent confirmation the original tree is dead: berliner-woche.de's own 2015 headline read 'Die alte Stieleiche ist tot' (the old oak is dead), and ostdeutsches-baumarchiv.de states it was fully dead by 2018 ('ein schneller Tod'). The prior entry's 'declining' framing undersold this; per CLAUDE.md's living-tree rule a dead tree is never a collectible entry. Id reused so the old URL redirects rather than 404s (see RENAMED_TREE_SLUGS in scripts/build_site.py). New tree researched from scratch: age is a floor ('at least 300 years' per Wikipedia, citing Vieth 2004) presented as a range rather than a false precise figure; confirmed still standing and actively protected via alles-mahlsdorf.de (2021), which reports it explicitly retained Naturdenkmal status in that year's register update while two other Mahlsdorf trees were delisted. Photo personally viewed and confirmed: a dramatically leaning, moss-covered, clearly living trunk in full leaf beside the church wall, dated 29 June 2019.",
       "location_precision": "confirmed"
     },
     {
