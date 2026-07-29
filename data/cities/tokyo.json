@@ -215,7 +215,7 @@
       "location": {
         "address": "Hamarikyu Onshi Teien, 1-1 Hamarikyucho, Chuo-ku, Tokyo 104-0046",
         "latitude": 35.6624579,
-        "longitude": 139.7640080,
+        "longitude": 139.764008,
         "neighbourhood": "Hamamatsucho, Chuo"
       },
       "story": "The biggest black pine in Tokyo grows in a garden that floods on purpose. Hamarikyu was built on reclaimed tidal land as a shogunal duck-hunting villa, and its ponds still rise and fall with Tokyo Bay through a working seawater gate, the only tide-powered garden pond left in the city. This pine was planted around 1709, when the sixth shogun Tokugawa Ienobu rebuilt the estate into something closer to its current form, and it has spent three centuries spreading rather than climbing: its lowest branches now sprawl low and wide across log supports, some running more than 20 meters from the trunk. Locals simply call it Sanbyakunen no Matsu, the Three Hundred Year Pine. The garden survived two disasters that erased most of its original structures, the 1923 earthquake and the 1945 firebombing, and the tree's low, horizontal shape likely helped it through both: black pines built close to the ground catch less wind and radiant heat than tall ones. What is left today is one tree and one tea house rebuilt from photographs, inside a garden that Tokyo Bay still floods twice a day.",
@@ -382,5 +382,6 @@
       "notes": "Sourcing is blog-level rather than an official registry or newspaper; the trees themselves and their 1920 planting date are consistently reported across independent sources, but a stronger primary source is worth finding later. Also the youngest tree on this list by far, included for its historical and cultural significance (Meiji Jingu's founding, and the site's status as Japan's most-visited shrine) rather than age. Pin corrected to a contributor-mapped OpenStreetMap node named \"夫婦楠\" directly in front of the outer worship hall, independently matching a Yahoo Map place entry for the same name within a few metres.",
       "location_precision": "confirmed"
     }
-  ]
+  ],
+  "oldest_tree_id": "tok_001"
 }

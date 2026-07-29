@@ -6,6 +6,10 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## Photo quality: the dummy-image question (Hidde, 2026-07-29, "ik wil langer nadenken")
+
+Hidde's observation while reviewing: much of the photo stock is mediocre, wide park shots that do not do the tree justice, and a bad photo can subtract more than it adds. His half-formed idea: a designed backup image per species (illustration or large species icon, plus age and name) for trees without a photo, possibly even replacing photos that fall below a bar. Tension named in session: his own 2026-07-22 ruling made photos the priority with an 8-of-10 floor, premised on any-photo-beats-none; the replace-bad-photos version would amend that premise, so it is his call, not a run's. SEO context that survives any answer: real photos remain the hunt target (Google Images and schema want real images; a repeated illustration earns nothing there), so a backup image is a display-layer fallback, never a reason to stop hunting. Status: parked until Hidde rules. A run may NOT build this.
+
 ## The account-era duty list (recorded 2026-07-28, gap analysis)
 
 What a real SaaS owes its users the day accounts link publicly, bundled at the same gate as the delete function so none of it can be forgotten: terms of service (plain, short, his approval); a line in the privacy page naming Supabase as processor (their standard DPA covers it, reference it); a backup-and-export story for user data (a collection someone built must survive our mistakes; Supabase backups exist on paid tiers, verify what the free tier gives and export weekly via a run if needed); Row Level Security policies reviewed on every table before public writes; the disposable test user removed. Best practice source: any pre-launch data-protection checklist; ours-sized, one session with Hidde.
