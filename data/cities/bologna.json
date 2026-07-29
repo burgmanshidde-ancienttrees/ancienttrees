@@ -50,10 +50,10 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Montagnola_%2C.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Aneta Malinowska, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Ensemble entry describing the park's surviving Napoleonic-era plane trees rather than one dated individual specimen, consistent with how the sources themselves describe the planting (roughly ten monumental specimens among fifty total). 1805 redesign and circumference figures (1-1.5m diameter, several over 4m circumference) corroborated across two independent sources. 2026-07-29: found via the same Wiki Loves Monuments Italia photographer (Aneta Malinowska) already used for bol_002's sequoia and bol_006's ginkgo, who shot a dedicated series of Bologna's monumental/veteran trees. File:Montagnola ,.jpg, geotagged 44.5026,11.3464 (about 40m from this entry's own pin), described on its own Commons page as an autumn shot of mature trees in the park. Held at found_needs_check rather than approved: this session's tooling cannot download and personally view the file, so a future session should confirm the plane trees themselves (not just the park generally) are identifiable in frame before trusting it further.",
+      "notes": "Ensemble entry describing the park's surviving Napoleonic-era plane trees rather than one dated individual specimen, consistent with how the sources themselves describe the planting (roughly ten monumental specimens among fifty total). 1805 redesign and circumference figures (1-1.5m diameter, several over 4m circumference) corroborated across two independent sources. 2026-07-29: found via the same Wiki Loves Monuments Italia photographer (Aneta Malinowska) already used for bol_002's sequoia and bol_006's ginkgo, who shot a dedicated series of Bologna's monumental/veteran trees. File:Montagnola ,.jpg, geotagged 44.5026,11.3464 (about 40m from this entry's own pin), described on its own Commons page as an autumn shot of mature trees in the park. 2026-07-29 (later session): downloaded and personally viewed the file. Shows plane trunks with the species' characteristic pale, patchy bark in the foreground, alongside the park's own 1896-dated ironwork and balustrade visible in frame, confirming both the species and the specific park. Approved.",
       "location_precision": "approximate"
     },
     {
@@ -170,10 +170,10 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/4.rizzoli_cedro_dell%27himalaya_%2812%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Aneta Malinowska, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Dimensions (29.2m height, 520cm circumference) and AMI listing from a dedicated tree article; the 1896 institutional history corroborated independently by a city archive/library source. Planting date is an estimate tied to the hospital's 1896 opening rather than a documented planting record. 2026-07-29: found via the same photographer (Aneta Malinowska, Wiki Loves Monuments Italia) whose dedicated Bologna monumental-tree series also supplied bol_001, bol_002 and bol_006's photos. File:4.rizzoli cedro dell'himalaya (12).jpg, filename naming this exact tree, geotagged 44.4811,11.3408, essentially identical to this entry's own AMI-registry pin. Held at found_needs_check rather than approved: this session's tooling cannot download and personally view the file. Pin corrected by about 130m to Italy's national monumental tree registry point (MASAF, AMI code 03/A944/BO/08, \"Istituto Ortopedico Rizzoli - Via Pupilli 1\", Cedro dell'Himalaya), read identically across two independent fetches of the source spreadsheet.",
+      "notes": "Dimensions (29.2m height, 520cm circumference) and AMI listing from a dedicated tree article; the 1896 institutional history corroborated independently by a city archive/library source. Planting date is an estimate tied to the hospital's 1896 opening rather than a documented planting record. 2026-07-29: found via the same photographer (Aneta Malinowska, Wiki Loves Monuments Italia) whose dedicated Bologna monumental-tree series also supplied bol_001, bol_002 and bol_006's photos. File:4.rizzoli cedro dell'himalaya (12).jpg, filename naming this exact tree, geotagged 44.4811,11.3408, essentially identical to this entry's own AMI-registry pin. 2026-07-29 (later session): downloaded and personally viewed the file, plus confirmed via the Commons API that its own description reads 'cedro dell'Himalaya'. Shows a single-stemmed conifer with the species' characteristic weeping, cascading branch tips beside a garden bust on a plinth, consistent with an institutional garden setting. Approved. Pin corrected by about 130m to Italy's national monumental tree registry point (MASAF, AMI code 03/A944/BO/08, \"Istituto Ortopedico Rizzoli - Via Pupilli 1\", Cedro dell'Himalaya), read identically across two independent fetches of the source spreadsheet.",
       "location_precision": "confirmed"
     },
     {
@@ -183,7 +183,12 @@
       "age_estimate": "approximately 150 years",
       "age_min": 145,
       "age_max": 155,
-      "best_time": { "months": [11], "label": "November, when its fan-shaped leaves turn gold" },
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when its fan-shaped leaves turn gold"
+      },
       "location": {
         "address": "Piazza Cavour, 40124 Bologna",
         "latitude": 44.4911,
@@ -201,10 +206,10 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Piazza_cavour%2C.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Aneta Malinowska, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Height (29.5m) and circumference (338cm) corroborated across the official RAMI registry entry and an independent local-history article covering the Lucio Dalla connection. A same-named 'Ginkgo di piazza Cavour' Wikimedia Commons category exists but documents a different tree entirely, in Turin, not Bologna; not used here to avoid the wrong-city mixup. 2026-07-29: found via the correct Bologna-specific source this time, File:Piazza cavour,.jpg by Aneta Malinowska (Wiki Loves Monuments Italia 2020, part of her dedicated Bologna monumental/veteran-tree series), whose own Commons page explicitly describes a Ginkgo biloba in Piazza Cavour, Bologna, geotagged 44.4913,11.3439, essentially this entry's own pin. Held at found_needs_check rather than approved: this session's tooling cannot download and personally view the file. Pin cross-checked against Italy's national monumental tree registry (MASAF, AMI code 12/A944/BO/08, \"Piazza Cavour\", Ginco), read identically across two independent fetches of the source spreadsheet; moved 22m to the registry point.",
+      "notes": "Height (29.5m) and circumference (338cm) corroborated across the official RAMI registry entry and an independent local-history article covering the Lucio Dalla connection. A same-named 'Ginkgo di piazza Cavour' Wikimedia Commons category exists but documents a different tree entirely, in Turin, not Bologna; not used here to avoid the wrong-city mixup. 2026-07-29: found via the correct Bologna-specific source this time, File:Piazza cavour,.jpg by Aneta Malinowska (Wiki Loves Monuments Italia 2020, part of her dedicated Bologna monumental/veteran-tree series), whose own Commons page explicitly describes a Ginkgo biloba in Piazza Cavour, Bologna, geotagged 44.4913,11.3439, essentially this entry's own pin. 2026-07-29 (later session): downloaded and personally viewed the file; the square's own CAVOUR and TAXI signage is legible in frame, confirming the location beyond the geotag alone. Approved. Pin cross-checked against Italy's national monumental tree registry (MASAF, AMI code 12/A944/BO/08, \"Piazza Cavour\", Ginco), read identically across two independent fetches of the source spreadsheet; moved 22m to the registry point.",
       "location_precision": "confirmed"
     },
     {
@@ -214,7 +219,12 @@
       "age_estimate": "undated, mature",
       "age_min": 100,
       "age_max": 200,
-      "best_time": { "months": [11], "label": "November, when its old canopy along Via Irnerio turns a single uniform gold" },
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when its old canopy along Via Irnerio turns a single uniform gold"
+      },
       "location": {
         "address": "Orto Botanico ed Erbario, Via Irnerio 42, 40126 Bologna",
         "latitude": 44.4994086,
