@@ -5,6 +5,21 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 Format, deliberately short:
 
 ```
+
+## 2026-07-29 — Depth work: one photo, one pin, and an honest map of where this session's tools hit a wall
+
+`python3 scripts/visitors.py`: 97 visits, 175 page views over the last 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), strongest week yet, climbing daily, no sharp signal to reorder priorities. No reader submissions. Build and QA clean at session start, REVIEW.md empty, nothing published found wrong.
+
+Depth-exit-test bar checked directly: Amsterdam, Lisbon and Istanbul still block it (need 8+ photos, currently 7, 6-then-7, and 4). Worked the priority order (Amsterdam, then Lisbon, then Istanbul) as instructed.
+
+**The honest headline: this session's Bash tool cannot reach the network directly** (`curl` needs interactive approval that never arrives unattended), so every photo/pin lead ran through WebSearch and WebFetch only, never a first-hand look at an image. That is a real ceiling, and it shows in the numbers: roughly 50 search attempts across Amsterdam, Lisbon and Istanbul's remaining gaps produced exactly one usable photo (Lisbon's Ginkgo of Praça Paiva Couceiro, CC0, confirmed via the Commons API directly rather than the HTML search page). Amsterdam's three gaps and Istanbul's six stayed genuine dead ends, checked across Commons search/API, iNaturalist geo-radius queries and Openverse, including trying the "find the photographer's whole upload history" technique that had just worked for Bologna, which came up empty for Amsterdam (Ceescamel's uploads turned out to be all street-facade photography, no trees). Full detail, including exactly what was tried so a future run does not repeat it, is in CURATION.md.
+
+Switched technique after that: pin resolution via named OpenStreetMap nodes, which does not need image access, only the Commons/Nominatim APIs. Worked once cleanly: **Madrid's Himalayan Cedar (mad_002)** moved from an approximate building-level anchor to confirmed, via an individually-tagged "Cedro del Himalaya" OSM node 30m from the already-confirmed Bald Cypress in the same pond. Tried the same move on Madrid's other approximate pin (Campo del Moro's Aleppo pine) and Dublin's four approximate pins; all stayed genuine dead ends, Ireland's OSM tree coverage is much sparser than Madrid's and its Tree Register is members-only.
+
+Net for the session: Lisbon 6/10 to 7/10 photos, Madrid 3/10 to 2/10 approximate pins. Three commits, each the smallest complete step, all pushed. Site rebuilt and QA-clean after every change.
+
+**Worth saying plainly for whoever picks this up next: photo and pin hunting via search-only tooling is close to exhausted for Amsterdam, Istanbul and Dublin specifically**, after this session and the prior 2026-07-29 sessions' extensive work on Venice/Verona/Bologna hit the same wall. A future session with actual `curl` and image-viewing access (to download a candidate and look at it, or query Overpass without timing out, which this session's WebFetch could not do reliably) is likely to do meaningfully better than another round of the same query patterns. Nothing here needs Hidde; flagging it so the next run does not re-spend an hour re-proving the same dead ends.
+
 ## 2026-07-29 — Hidde's walkthrough, executed as one composition pass (session)
 
 His full product walk, tested against the corpus and shipped in one pass: in-season demoted from nav and hero to a map layer (the recorded pulsing-pin idea in its first form: gold pins pulse, popup says "at its best now"), location asked only in map context, hero down to one link, collections shelf above the season shelf, explore copy made scale-proof (no counts), one-world map, explore search bar plus in-map geolocate button, equal directory columns, "pin confirmed" chip dropped (visitors only see the approximate warning), corrections block tightened. One real bug found by Hidde: cluster clicks did nothing, the MapLibre v4 promise API silently broke the old callback code. Fixed.
