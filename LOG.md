@@ -52,6 +52,10 @@ Lyon now at 4 approximate pins (from 5).
 
 **Same session, continued: closed out two more "retry from elsewhere" leads with sharper reasons than before.** Athens' tree-planting web app has a real API (found by reading its JS bundle directly, something WebFetch's script-stripping couldn't do), but it returns a clean 401 Unauthorized, not a network or tooling failure: genuinely closed, needs credentials this project shouldn't seek. Istanbul's İBB open data portal is reachable this session and was searched properly via its CKAN API: it has 11 tree-related datasets, all aggregate canopy/count statistics, no individually-named monumental-tree register at all, a real content gap rather than the DNS/connection failures prior sessions hit on two other Istanbul URLs (which stay genuinely blocked from this session too).
 
+Extended the approved-photo spot-check by 2 more (23/206 total), both genuine matches, before Wikimedia's rate limit shut the technique down for this session, same wall prior sessions hit.
+
+**Small doc fix**: BACKLOG.md's collection idea #3 ("Trees That Survived Wars and Fires") was stale, still listed as open when it shipped 2026-07-27 under a different name ("Trees That Outlived Their City", confirmed by reading that collection's own file: same bar, same kind of entries). Struck through with a note, same convention already used for two other superseded ideas in that file.
+
 Full detail in CURATION.md. Nothing needs Hidde.
 
 ## 2026-07-29 — A site-wide source-link audit (never done before) fixes one weakened citation and documents the rest; Edinburgh gets a real (if mostly negative) photo/pin pass; Most Valuable Trees collection confirmed genuinely blocked
