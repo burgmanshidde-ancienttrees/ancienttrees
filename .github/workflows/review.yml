@@ -1,0 +1,75 @@
+name: Fresh-eyes review
+
+# The reviewer layer of the QA form (CLAUDE.md, QA section; approved by Hidde
+# 2026-07-29). A separate, empty context reviews the last day's work against
+# the recorded corpus, because the builder cannot see its own blind spots:
+# the dead check-in button shipped through a builder who verified his own
+# work thoroughly. One run per day, findings only, never fixes.
+
+on:
+  schedule:
+    - cron: "10 6 * * *"   # 06:10 UTC, after the night chain, before Hidde's morning
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fresh-eyes-review
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build site
+        run: python3 scripts/build_site.py
+
+      - name: Review the last day with fresh eyes
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            You are the FRESH-EYES REVIEWER for Ancient Trees, deliberately
+            without the builder's context. You review; you never fix. A
+            reviewer who starts fixing becomes a builder grading their own
+            homework, which is the failure this job exists to prevent.
+
+            Do exactly this:
+
+            1. Read CLAUDE.md, PRODUCT_IA.md, PRINCIPLES.md, DECISIONS.md,
+               SEO_GEO_BLUEPRINT.md and TONE_OF_VOICE.md. That corpus is the
+               standard; your taste is not.
+            2. Look at what changed in the last 24 hours:
+               `git log --since="24 hours ago" --stat` and the diffs of the
+               most substantial commits (`git show <sha>`). Skim REVIEW.md so
+               you do not repeat yesterday's findings.
+            3. Inspect the BUILT product in site/dist (it is already built):
+               open the changed pages' HTML plus a random sample of 5 others.
+               Read them as a visitor would: does the page contradict itself,
+               promise something that is not there, leak code as text, claim
+               precision the data does not have, break a hard rule (em
+               dashes, banned words, superlative collisions, missing photo
+               licences, private locations)?
+            4. Write your findings to the TOP of REVIEW.md, under a heading
+               `## YYYY-MM-DD` (today, UTC). Each finding: one line of
+               severity BLOCKER / WARN / NOTE, what and where (file or URL),
+               and why it violates the corpus (name the rule). If you found
+               nothing, write the dated heading with the single line
+               "Nothing found." Honesty over volume: three real findings
+               beat fifteen nitpicks, and style preferences are not findings.
+            5. Commit ONLY REVIEW.md with the message
+               "Fresh-eyes review: <n> finding(s)" and push. Touch no other
+               file, fix nothing, however tempting.
+
+            Research runs pick BLOCKERs up as rung-2 work (the site is
+            broken) and WARNs as rung-3. You flag FOR HIDDE inside your
+            REVIEW.md entry only for judgment calls no run may make alone
+            (pricing, brand, blueprint changes, anything on the hard list).
+          claude_args: "--max-turns 60"
