@@ -40,6 +40,13 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-29 — Seville: one pin fixed (Patio de los Naranjos), 4 photo gaps and 3 more approximate pins confirmed genuine dead ends
+
+- `python3 scripts/visitors.py`: 74 visits, 129 page views over 7 days, consistent with recent sessions. No reader submissions. Depth exit test still short (Amsterdam 7/10 photos, Lisbon 6/10, Istanbul 3/10 + 3 approximate), and those three plus Rome, Edinburgh and Brussels had already been worked exhaustively earlier today, so moved to rung 4's "rest of the lead group": Vienna, Prague, Berlin already at 10/10 photos, so Seville (6/10, 4 approximate) was next untouched.
+- Fixed sev_008's pin (Orange Trees of the Patio de los Naranjos) via an OpenStreetMap/Nominatim feature named for the courtyard itself, ~60m correction, upgraded to confirmed.
+- The other 4 photo gaps and 3 remaining approximate pins stay honest dead ends after real effort, including catching two iNaturalist misidentifications (a cedar mislabeled near the ginkgo grove, a non-camphor tree mislabeled as the camphor). Full detail, including two live leads for later (the Alcázar's own JS-rendered garden atlas, a geocache sitting at the Cartuja ombú), in CURATION.md.
+- Site rebuilt (558 pages), all contracts validated, committed, pushed. Nothing needs Hidde.
+
 ## 2026-07-29 — Edinburgh: a real pin fixed (Lauriston Castle monkey puzzles, ~800m error) via a newly found council tree register
 
 Visitors: 71 visits, 125 page views over 7 days, consistent with recent sessions, nothing to steer priorities on. No reader submissions (CSV checked directly, header only). Amsterdam/Lisbon/Istanbul/Rome and Madrid/New York/Dublin were already worked exhaustively earlier today (see this file's and CURATION.md's other entries); oldest-first through city-list.json's order, Edinburgh was next.
