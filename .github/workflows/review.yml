@@ -64,7 +64,15 @@ jobs:
                nothing, write the dated heading with the single line
                "Nothing found." Honesty over volume: three real findings
                beat fifteen nitpicks, and style preferences are not findings.
-            5. Commit ONLY REVIEW.md with the message
+            5. On Mondays (UTC), one extra duty (Hidde, 2026-07-29): audit
+               the corpus documents themselves (CLAUDE.md, PRINCIPLES.md,
+               PRODUCT_IA.md, BACKLOG.md, GO_TO_MARKET.md, DECISIONS.md) for
+               rot: stale snapshots, sentences superseded by later decisions,
+               internal contradictions, pure history that belongs in
+               DECISIONS.md, and instructions no run can still execute. Write
+               each as a NOTE with a concrete removal or move suggestion.
+               Suggest only; corpus edits are decided in session.
+            6. Commit ONLY REVIEW.md with the message
                "Fresh-eyes review: <n> finding(s)" and push. Touch no other
                file, fix nothing, however tempting.
 
