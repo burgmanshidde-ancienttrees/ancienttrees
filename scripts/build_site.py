@@ -160,7 +160,9 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .season-head { display: flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em;
   font-size: 1.05rem; color: var(--ink); margin-bottom: 0.5rem; }
 .sc-chip { font-family: var(--sans); font-size: 11px; font-weight: 600; color: var(--moss);
-  border: 1px solid var(--moss); border-radius: 999px; padding: 1px 8px; text-transform: capitalize; }
+  border: 1px solid var(--moss); border-radius: 999px; padding: 1px 8px 1px 6px; text-transform: capitalize;
+  display: inline-flex; align-items: center; gap: 4px; }
+.sc-chip svg { width: 13px; height: 13px; flex-shrink: 0; }
 .season-svg { width: 100%; height: auto; display: block; overflow: visible; }
 .sc-area { fill: var(--moss-light); }
 .sc-line { fill: none; stroke: var(--moss); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
@@ -758,6 +760,46 @@ def season_intensities(peak_months):
     return out
 
 
+# The phenology vocabulary (Hidde, 2026-07-29, his PictureThis point: say WHY
+# a tree peaks, not just when). Five kinds, each with a small icon. `kind` in
+# best_time is authoritative; where it is missing the build derives one from
+# unambiguous words in the label, and derives nothing when in doubt. Runs
+# backfill the field properly per Step 3.
+KIND_ICONS = {
+    "flowers": '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="2" fill="currentColor"/><g fill="currentColor" opacity=".55"><ellipse cx="8" cy="3.4" rx="2" ry="2.6"/><ellipse cx="12.4" cy="6.6" rx="2" ry="2.6" transform="rotate(72 12.4 6.6)"/><ellipse cx="10.7" cy="12" rx="2" ry="2.6" transform="rotate(144 10.7 12)"/><ellipse cx="5.3" cy="12" rx="2" ry="2.6" transform="rotate(216 5.3 12)"/><ellipse cx="3.6" cy="6.6" rx="2" ry="2.6" transform="rotate(288 3.6 6.6)"/></g></svg>',
+    "fruit": '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6" cy="10" r="4" fill="currentColor" opacity=".75"/><circle cx="11" cy="8" r="3.2" fill="currentColor" opacity=".5"/><path d="M6 6 Q7 3 9.5 2.5" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>',
+    "autumn colour": '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 C11.5 4 13.5 7 13.5 10 A5.5 5.5 0 0 1 2.5 10 C2.5 7 4.5 4 8 1.5z" fill="currentColor" opacity=".7"/><path d="M8 4 v9" stroke="currentColor" stroke-width="1.1"/></svg>',
+    "catkins": '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3 q2 -1 5 -1 q4 0 6 1" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/><path d="M5 3.5 q-.5 4 .5 7 M8 3 q0 5 1 9 M11.5 3.5 q.5 3.5 -.3 6.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".65"/></svg>',
+    "fresh leaves": '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13 3 C8 3 4.5 6 4 11 c4.5.5 8-2 9-8z" fill="currentColor" opacity=".65"/><path d="M4.5 13 C6 9.5 9 6.5 12.5 4.5" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>',
+}
+KIND_ALIASES = {
+    "flowering": "flowers", "blossom": "flowers", "bloom": "flowers",
+    "autumn": "autumn colour", "fall color": "autumn colour",
+    "fall colour": "autumn colour", "autumn color": "autumn colour",
+}
+KIND_HINTS = [
+    ("catkins", ("catkin",)),
+    ("flowers", ("flower", "blossom", "bloom", "wisteria")),
+    ("autumn colour", ("autumn", "gold", "golden", "scarlet", "crimson", "turns", "fall colour", "fall color")),
+    ("fruit", ("fruit", "berries", "acorn", "fig ripen", "chestnut drop")),
+    ("fresh leaves", ("fresh leaves", "new leaves", "leaf-out", "unfurl")),
+]
+
+
+def season_kind(bt):
+    """Canonical phenology kind for a best_time, or '' when honestly unknown."""
+    raw = (bt.get("kind") or "").strip().lower()
+    if raw:
+        raw = KIND_ALIASES.get(raw, raw)
+        if raw in KIND_ICONS:
+            return raw
+        ERRORS.append(f"unknown best_time.kind {raw!r}; allowed: {sorted(KIND_ICONS)}")
+        return ""
+    label = (bt.get("label") or "").lower()
+    hits = [k for k, words in KIND_HINTS if any(w in label for w in words)]
+    return hits[0] if len(hits) == 1 else ""
+
+
 def smooth_path(points):
     """A rounded SVG path through the points, Catmull-Rom turned into cubics."""
     if len(points) < 2:
@@ -815,8 +857,9 @@ def season_curve(tree):
         f'<text x="{now_x:.1f}" y="{pad_t - 10:.1f}" class="sc-nowlabel">now</text>'
     )
 
-    kind = esc(bt.get("kind", "").strip())
-    chip = f'<span class="sc-chip">{kind}</span>' if kind else ""
+    kind = season_kind(bt)
+    chip = (f'<span class="sc-chip">{KIND_ICONS[kind]}{esc(kind)}</span>'
+            if kind else "")
     now_badge = '<span class="best-now">at its best right now</span>' if in_season else ""
 
     return f"""
