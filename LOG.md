@@ -50,6 +50,8 @@ With today's depth effort genuinely exhausted rather than assumed exhausted, mov
 
 **A small governance fix along the way**: `data/collections/BACKLOG.md` still said collections were "ON HOLD" and needed Hidde's approval, two days out of date with the actual blueprint v1.3 policy already recorded elsewhere. Corrected the header and refreshed its stale shipped-collections list so a future session doesn't get confused about which file is the live queue (PRODUCT_TODO.md item 4 is).
 
+**Second collection shipped same session: Trees With a Known Planting Date**, 14 trees whose actual planting year is on record (not an age estimate backed into a rough decade), from Florence's 1720 Micheli Yew to Antwerp's 1994 liberation-anniversary linden. Deliberately checked for overlap with the Kings collection first: zero, the candidate pool was large enough not to need any reuse. The real distinction this one enforces: ruling out ring-count-inferred ages dressed up as planting records, not just legend-based claims.
+
 Nothing here needs Hidde. Full detail in CURATION.md.
 
 ## 2026-07-29 — Lyon: pulled a tree that shouldn't have been published (unverifiable, possibly private land), plus real photo/pin progress
