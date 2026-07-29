@@ -174,13 +174,13 @@
       "access": "Paid entry, Giardino Giusti",
       "transport": "10 min walk from Piazza delle Erbe",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Italian_garden%2C_Giardino_Giusti%2C_Verona%2C_Italy%2C_August_2025_01.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Annika of Nine, via Wikimedia Commons",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Ensemble entry describing the garden's cypress avenue as it exists today, deliberately not claiming the historic Goethe cypress is still standing. The 2020 storm loss and subsequent replanting corroborated across two independent local press sources. No usable photo found of the current, post-2020 avenue specifically; a set of 1993-94 architectural documentation photos exists on Wikimedia Commons but predates the storm and would misrepresent the avenue's current state, so not used.",
+      "notes": "Ensemble entry describing the garden's cypress avenue as it exists today, deliberately not claiming the historic Goethe cypress is still standing. The 2020 storm loss and subsequent replanting corroborated across two independent local press sources. An earlier candidate set of 1993-94 architectural documentation photos predates the storm and was correctly not used. 2026-07-29: a real post-storm candidate found, File:Italian garden, Giardino Giusti, Verona, Italy, August 2025 01.jpg (CC BY-SA 4.0, Annika of Nine), photographed August 2025, five years after the replanting. Its Commons page describes a formal Italian garden avenue of tall cypress trees with a fountain, matching this entry exactly and dated to well after the loss the story describes. Held at found_needs_check rather than approved: this session's tooling cannot download and personally view the file (no direct image-fetch access), so the match rests on the Commons page's own description. A future session with image-viewing tooling should confirm.",
       "location_precision": "approximate"
     },
     {
@@ -210,7 +210,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Ensemble entry describing the garden's wooded yew-and-laurel section rather than one dated individual specimen, corroborated across two independent sources describing the same layout. No individual age or planting date documented. No usable photo found.",
+      "notes": "Ensemble entry describing the garden's wooded yew-and-laurel section rather than one dated individual specimen, corroborated across two independent sources describing the same layout. No individual age or planting date documented. No usable photo found. 2026-07-29: checked several of Giardino Giusti's own Commons files (the 2016/2017/2025 series) directly; all show the palace, courtyard or the formal cypress avenue (one now used for ver_005), none the wooded grotto section specifically. Genuine dead end for now.",
       "location_precision": "approximate"
     },
     {
@@ -239,7 +239,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Single-sourced: the 2015 monumental-tree nomination request and general description come from one dedicated local-press article; no independent second source found despite a genuine search. Kept per the project's standard for single-sourced claims where the underlying facts (a private garden tree visible from a public street, a real petition) are plausible and specific rather than vague. Access honestly marked as street-visible only, not enterable, since the tree stands on private grounds. No usable photo found.",
+      "notes": "Single-sourced: the 2015 monumental-tree nomination request and general description come from one dedicated local-press article; no independent second source found despite a genuine search. Kept per the project's standard for single-sourced claims where the underlying facts (a private garden tree visible from a public street, a real petition) are plausible and specific rather than vague. Access honestly marked as street-visible only, not enterable, since the tree stands on private grounds. No usable photo found. 2026-07-29: Commons keyword search and an iNaturalist radius query both came back empty; genuine dead end, expected for a specimen on private grounds with no public garden visitors to photograph it.",
       "location_precision": "approximate"
     },
     {
@@ -269,7 +269,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Ensemble entry describing the park's documented historic tree collection (per its own 1946 survey) rather than one dated individual specimen, headlined by the mulberry since it is the most consistently named standout across sources. Species list and estate history corroborated across two independent sources. No usable photo found.",
+      "notes": "Ensemble entry describing the park's documented historic tree collection (per its own 1946 survey) rather than one dated individual specimen, headlined by the mulberry since it is the most consistently named standout across sources. Species list and estate history corroborated across two independent sources. No usable photo found. 2026-07-29: Commons keyword search came back empty for the park by name; genuine dead end for now, a park that hasn't been individually photographed and catalogued on Commons yet.",
       "location_precision": "approximate"
     }
   ],
