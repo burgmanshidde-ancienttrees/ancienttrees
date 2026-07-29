@@ -64,7 +64,9 @@ Visitors: 94 visits, 172 page views over 7 days, the strongest week yet. No read
 
 **A correction, not just a dead end: Athens' long-flagged "GIS layer"** (carried in CURATION.md across several sessions as "real but JS-blocked") turns out, read directly, to be the city's internal tree-planting-request admin system, login-gated, nothing to do with a public monumental-tree map. It was never going to resolve Athens' 8 approximate pins. Also actually tested (not just re-flagged) RBGE's Edinburgh plant database: the search itself works fine, but the two accessions found for Edinburgh's remaining Botanics trees carry no per-plant location data at all, a genuine content dead end rather than the "can't submit the form" wall recorded before.
 
-One data file changed (Istanbul), site rebuilt, QA and contracts green, pushed. Nothing needs Hidde.
+**Same technique found a real, previously-unflagged win in Seville: the Real Alcázar runs its own public garden specimen database** (a platform built specifically for this one monument, confirmed not to cover any other city). Its map is also JS-rendered but the same raw-fetch approach found the real data feed: 21,000+ individually geotagged specimens across the gardens. Filtered to Ginkgo biloba, 11 cluster tightly in the English Garden, matching `sev_001`'s own story (the ten survivor ginkgos of a 1910 shipment) closely enough to move its pin about 220m and confirm it. Also retried Brussels' regional tree dataset through a different portal; it traced back to the exact same 6-field dataset (species and size only, no address) a prior session already shelved, closing that possibility for good rather than leaving it looking untried.
+
+Two data files changed (Istanbul, Seville), site rebuilt, QA and contracts green, pushed. Nothing needs Hidde.
 
 ## 2026-07-29 — Porto: two pins upgraded via Portugal's national classified-trees register, a stale classification line corrected, 6 photo gaps stay honest dead ends
 
