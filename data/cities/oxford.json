@@ -1,0 +1,181 @@
+{
+  "city": "Oxford",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "oldest_tree_id": "oxf_001",
+  "intro": "Oxford's most remarkable trees mostly belong to its colleges and gardens, not open woodland: a churchyard yew possibly older than the Norman church beside it, the yew Britain's first botanic garden curator planted in 1645, and a plane tree grown, so the story goes, from a seed a Hebrew professor carried back from the Ottoman Empire in 1636, said to have inspired Lewis Carroll's Tumtum tree. Add a mulberry that may be the oldest of its kind in Britain and the country's tallest Caucasian elm, and the whole set fits inside a short walk through a city built for walking.",
+  "meta_description": "Oxford's most remarkable trees: an Iffley churchyard yew older than its Norman church, Christ Church's Jabberwocky plane, and the 1645 Bobart yew.",
+  "question_answer": "Oxford's oldest tree is the yew in the churchyard of St Mary the Virgin in Iffley, on the southern edge of the city. Local tradition and an 1892 account put it at over 1,600 years old, predating the Norman church itself, though a more conservative reading places it at seven centuries or so, contemporary with the church's 12th-century construction. It stands free to visit, a short bus ride or 45 minute walk from Oxford city centre.",
+  "question_meta": "The Iffley churchyard yew is Oxford's oldest tree, estimated at anywhere from 700 to over 1,600 years old, standing beside a 12th-century Norman church.",
+  "question_context": "St Mary the Virgin in Iffley, on Oxford's southern edge, is one of England's most complete unaltered Norman churches, built around 1170 by the lord of the manor Robert de St Remy and his wife. A huge yew tree grows against the church's southeast wall, its trunk hollow and furrowed, its canopy wide enough to shade several gravestones beneath it. An 1892 account in Chambers Journal put its age at over 1,600 years, which would mean it predates the church by roughly a thousand years and was already ancient when the Anglo-Saxons arrived in the area. Later assessments are more cautious, describing the tree as having a good claim only to being contemporary with the Norman church itself, which would still make it around 850 years old and one of the oldest living things in Oxfordshire either way. The tree is said to have inspired one of Lewis Carroll's illustrations for an early draft of what became Alice in Wonderland, since Carroll, an Oxford don for most of his life, is thought to have visited the church often.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Oxford?",
+      "a": "The yew in the churchyard of St Mary the Virgin, Iffley. Estimates range from around 700 years, contemporary with the Norman church, to a more dramatic local tradition of over 1,600 years."
+    },
+    {
+      "q": "What is the Pococke tree at Christ Church?",
+      "a": "An Oriental Plane in the college's Pococke Garden, believed planted from a seed the Regius Professor of Hebrew Edward Pococke brought back from the Ottoman Empire in 1636. Its shape suggests the visible tree may be a later regrowth from the original rather than the 1636 planting itself, but either way it is thought to be the oldest Oriental Plane in the UK."
+    },
+    {
+      "q": "Is the Oxford Botanic Garden free to visit?",
+      "a": "No, the Botanic Garden charges admission, though prices are modest and it is free for University of Oxford students, staff and card-carrying members. It is open daily except Christmas Day and Boxing Day."
+    },
+    {
+      "q": "Where is Oxford's tallest tree?",
+      "a": "A Caucasian Elm on North Walk in the University Parks, at around 33 metres the tallest recorded example of its species in Britain. The parks are free and open daily."
+    }
+  ],
+  "trees": [
+    {
+      "id": "oxf_001",
+      "name": "The Iffley Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "700+ years",
+      "age_min": 700,
+      "age_max": 1600,
+      "location": {
+        "address": "St Mary the Virgin churchyard, Church Way, Iffley, Oxford OX4 4EJ",
+        "latitude": 51.727360,
+        "longitude": -1.238175,
+        "neighbourhood": "Iffley"
+      },
+      "story": "St Mary the Virgin in Iffley is one of the most complete unaltered Norman churches left in England, built around 1170 by the local lord of the manor and his wife. Against its southeast wall grows a yew so large that its canopy shades several gravestones beneath it, its trunk hollow, rust-red and furrowed with age, still producing dense evergreen foliage and berries every year. An 1892 account in Chambers Journal put its age at over 1,600 years, which would mean druids could plausibly have gathered beneath it a thousand years before the church's Norman builders laid a single stone, since pre-Christian communities across Britain regarded yew groves as sacred sites long before churches were built on top of them. Later, more cautious assessments back away from that figure and describe the tree only as a strong candidate for being contemporary with the Norman church itself, still a respectable 850 years or so. Either estimate makes it one of the oldest living things in Oxfordshire. Charles Dodgson, better known as Lewis Carroll, spent most of his life as an Oxford academic and is thought to have visited Iffley's church often; local tradition credits this yew as the inspiration for one of his early illustrations of the tree in Alice's Adventures Underground, the manuscript that became Alice in Wonderland.",
+      "verified_sources": [
+        "https://theoxfordsausage.com/the-oldest-tree-in-oxford/",
+        "https://www.sacred-destinations.com/england/oxford-iffley-church"
+      ],
+      "access": "Free, open access, churchyard",
+      "transport": "45 min walk or short bus ride from central Oxford",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The tree's existence, location (southeast wall of the churchyard) and general antiquity are corroborated by two independent sources (The Oxford Sausage, citing an 1892 Chambers Journal account, and Sacred Destinations, describing 'the huge yew tree south of the church' independently in the context of a churchyard cross). The specific '1,600 years' figure traces to a single 19th-century magazine account and is treated as local tradition rather than verified fact; a separate summary attributed to yew specialists frames the tree as having 'a good claim to being contemporary with the original Norman church' (roughly 850 years) instead, a full order of magnitude more conservative. Presented as a wide, honest range rather than picking a side, with the dramatic figure explicitly framed as legend in the story. No girth measurement found from the Ancient Yew Group's own database this run. Coordinates are the church's Nominatim-geocoded point, not a surveyed point for the trunk itself. Photo checked and declined: a Wikimedia Commons file ('Iffley church entrance and yew tree - geograph.org.uk - 735655.jpg', CC BY-SA 2.0) shows a yew near the church entrance, but its own photographer's caption states explicitly 'one of them - but not this one - was estimated to be twice as old as the church', i.e. the churchyard has multiple yews and this photograph is confirmed by its own description to be a different, non-famous one. Not used; a real gap, not a guess.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "oxf_002",
+      "name": "The Bobart Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "381 years",
+      "age_min": 375,
+      "age_max": 385,
+      "location": {
+        "address": "Walled Garden, University of Oxford Botanic Garden, Rose Lane, Oxford OX1 4AZ",
+        "latitude": 51.750550,
+        "longitude": -1.248153,
+        "neighbourhood": "City centre, opposite Christ Church Meadow"
+      },
+      "story": "Oxford Botanic Garden is Britain's oldest botanic garden, founded in 1621 as a physic garden for teaching medicinal plants to university students. Jacob Bobart the Elder, a German-born gardener who became the garden's first curator, planted a yew in the Walled Garden in 1645, according to his own handwritten planting notes, one of a pair he set at the site. Herbalists of the time dismissed yew as having no medicinal use worth the space, but Bobart planted it anyway, alongside an avenue of others, and it has outlasted every argument about its usefulness by nearly four centuries. Only one of the original pair survives today. In February 2020, Storm Ciara tore off a large section of its upper canopy, scattering branches across the Walled Garden and leaving the tree looking badly maimed. The garden's own staff were unworried: yews regenerate from collapsed and layered branches in a way few other trees can, regrowing new stems from wood that would kill most species, and the tree was expected to recover fully rather than decline. It remains the oldest documented plant in the garden's entire collection, its exact planting year more precisely known than almost any other tree on this list, thanks to one meticulous 17th-century gardener's own notebook.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_trees/oxford-botanic-garden-2762/",
+        "https://www.glam.ox.ac.uk/article/storm-ciara-and-the-botanic-gardens-oldest-tree"
+      ],
+      "access": "Paid admission (modest fee, free for University of Oxford students, staff and members), daily except Christmas Day and Boxing Day",
+      "transport": "10 min walk from Oxford railway station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Oxford_Botanic_Garden%2C_yew_tree_-_geograph.org.uk_-_3911752.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Stephen Craven, via Geograph/Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Well documented by project standards: the Ancient Yew Group's dedicated database entry (girth 241cm at 30cm height, age estimate ~369 years as of a November 2014 site visit, planting date sourced directly to Bobart's own handwritten notes, noting the modest girth reflects heavy clipping in its early decades, GPS 51.75055/-1.2481532) and Cherwell (the Oxford student newspaper) reporting the February 2020 Storm Ciara damage and the garden's expectation of full recovery. No post-2020 source found confirming current condition directly, but multiple current-dated tourism and garden pages (checked this run) continue to describe the yew in the present tense as the garden's oldest specimen, six years being ample recovery time for yew regrowth per the Ancient Yew Group's own account of the species. Age range calculated from the 1645 planting date to 2026. Photo: Wikimedia Commons file 'Oxford Botanic Garden, yew tree - geograph.org.uk - 3911752.jpg' (Stephen Craven, CC BY-SA 2.0), geotagged 51.750560/-1.248139, essentially identical to the Ancient Yew Group's own coordinate for tree 2762, strong confirmation this photographs the same specimen rather than one of the garden's other yews. Coordinates updated to the Ancient Yew Group's own GPS reading, upgrading precision.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "oxf_003",
+      "name": "The White Mulberry of the Botanic Garden",
+      "species": "White Mulberry (Morus alba)",
+      "age_estimate": "230 years",
+      "age_min": 220,
+      "age_max": 240,
+      "location": {
+        "address": "University of Oxford Botanic Garden, Rose Lane, Oxford OX1 4AZ",
+        "latitude": 51.750690,
+        "longitude": -1.247482,
+        "neighbourhood": "City centre, opposite Christ Church Meadow"
+      },
+      "story": "White Mulberry is not a tree Britain's climate treats kindly. It was imported by the thousand in the 17th and 18th centuries in a failed attempt to build a domestic silk industry, since it is the preferred food of silkworms, and most of those plantings died out or were grubbed up once the silk scheme collapsed. Oxford Botanic Garden's specimen survived because it was never planted for industry. It dates to the late 1790s, when the garden's keeper John Sibthorp rearranged the grounds and its planting scheme, and it is now thought to be the oldest White Mulberry still growing anywhere in Britain, a claim made by Morus Londinium, the mulberry research project that tracks the species' surviving specimens nationwide. Two and a bit centuries on, the tree has the low, wide, gnarled habit White Mulberries take on with age rather than the upright form of a young specimen, its bark deeply fissured. It stands as one of the oldest plants in a garden already 400 years old, a survivor twice over: first of an industry that failed around it, then of two more centuries most of its own species in Britain never reached.",
+      "verified_sources": [
+        "https://www.moruslondinium.org/map/721-Oxford-Botanic-2",
+        "https://en.wikipedia.org/wiki/University_of_Oxford_Botanic_Garden"
+      ],
+      "access": "Paid admission (modest fee, free for University of Oxford students, staff and members), daily except Christmas Day and Boxing Day",
+      "transport": "10 min walk from Oxford railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Morus Londinium (a dedicated mulberry-tracking research project, a credible specialist source) identifies this specimen as a remnant of John Sibthorp's 1790s garden rearrangement and states it 'may be the oldest surviving M. alba in Britain', hedged language kept intact rather than stated as settled fact. Age range calculated from a late-1790s planting to 2026 (roughly 226-236 years), rounded to a slightly wider honest band. No independent girth or exact planting-year source found beyond the Sibthorp rearrangement date; the 'possibly oldest in Britain' claim is a genuine superlative and is presented with its hedge intact per hard rule 8.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "oxf_004",
+      "name": "The Pococke Plane",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "270 years",
+      "age_min": 270,
+      "age_max": 390,
+      "location": {
+        "address": "Pococke Garden, Christ Church, St Aldate's, Oxford OX1 1DP",
+        "latitude": 51.750426,
+        "longitude": -1.255422,
+        "neighbourhood": "City centre"
+      },
+      "story": "Edward Pococke spent years in Aleppo and Constantinople as an Oxford scholar sent to master Arabic manuscripts, and returned in 1636 to become the university's first Regius Professor of Hebrew and Laudian Professor of Arabic. Tradition holds that he brought back more than languages: a seed of Oriental Plane, a species barely known in England at the time, which he planted in what is now Christ Church's Pococke Garden. The tree that stands there today has a girth approaching nine metres, by most measures the thickest and, by extension, oldest Oriental Plane recorded in Britain. Its own growth pattern complicates the story it is credited with, though: the shape and growth rate documented since the early 1900s suggest the visible tree may actually be a rooted layer, a branch that touched the ground, took root, and grew into what looks like a separate trunk, dating from around the mid-18th century rather than being Pococke's original 1636 planting itself. Whether it is the original tree or its own regrown descendant standing in the same spot, it has anchored the same corner of the garden for at least two and a half centuries. Lewis Carroll, an Oxford mathematics don for most of his career, is thought to have drawn on it for the Tumtum tree in his poem Jabberwocky, the one the Jabberwock supposedly rests beneath.",
+      "verified_sources": [
+        "https://www.treesandshrubsonline.org/articles/platanus/platanus-orientalis/",
+        "https://www.monumentaltrees.com/en/gbr/england/oxfordshire/9347_christchurchcollege/"
+      ],
+      "access": "Paid admission to Christ Church (Pococke Garden viewable as part of the college visit)",
+      "transport": "12 min walk from Oxford railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Treesandshrubsonline.org (International Dendrology Society's reference site, an independent authoritative horticultural source) corroborates the Pococke planting legend, the 'oldest Oriental Plane in the UK' claim, and the layered-regrowth theory in the same terms as secondary tourism summaries, giving genuine independent corroboration beyond monumentaltrees.com (checked for verification only per hard rule 1, never copied: girth 8.42m at 60cm height, measured 2014). Age range reflects the honest uncertainty over which planting event the standing tree dates to: 270 years (mid-18th-century regrowth theory) to 390 years (1636 original, if the regrowth theory is wrong). The Lewis Carroll/Jabberwocky connection is presented as attributed tradition, not fact, consistent with how the project treats similar literary legends elsewhere.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "oxf_005",
+      "name": "The Caucasian Elm of North Walk",
+      "species": "Caucasian Elm (Zelkova carpinifolia)",
+      "age_estimate": "150 years",
+      "age_min": 100,
+      "age_max": 180,
+      "location": {
+        "address": "North Walk, University Parks, Parks Road, Oxford OX1 3TW",
+        "latitude": 51.762367,
+        "longitude": -1.254413,
+        "neighbourhood": "University Parks"
+      },
+      "story": "Oxford's University Parks hold nine trees recognised as national champions, the tallest or largest recorded example of their species anywhere in Britain, and the Caucasian Elm on North Walk is the one that towers over the rest of the list. At around 33 metres it is the tallest Caucasian Elm recorded in the country, its crown spreading some 14 metres wide, dense and many-stemmed in the way the species characteristically grows once mature. Zelkova carpinifolia looks enough like a true elm to share the common name, but it belongs to a separate genus entirely, which is precisely why specimens like this one across Britain survived the Dutch Elm disease epidemic that devastated the country's actual elms from the 1970s onward. The Parks themselves opened to the public in 1864, laid out on former university-owned farmland along the River Cherwell, and have been adding notable specimen trees to their collection ever since. This one has had over a century to put on height in the open, undisturbed ground along North Walk, uncompeted for light in a way few urban trees ever get to be, which is likely a large part of how it became a national record holder rather than merely an old tree.",
+      "verified_sources": [
+        "https://www.alumni.ox.ac.uk/article/mapping-the-university-parks-trees-for-visitors",
+        "https://www.rhs.org.uk/plants/79372/zelkova-carpinifolia/details"
+      ],
+      "access": "Free, open access, University Parks (daily, 7:45am to dusk)",
+      "transport": "20 min walk from Oxford railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Oxford Alumni magazine's own mapping feature gives the specific measurements (33m height, 14m crown spread, national champion status) for this named specimen on North Walk. No precise planting date found in any source; age range is a wide, honest estimate based on the species' typical growth rate to reach 33m and the Parks' 1864 opening as an upper bound on how long the site has existed for planting, not a sourced figure for this specific tree. RHS's species page corroborates Zelkova carpinifolia's Dutch Elm disease immunity as a general species fact, not specific to this tree, cited for that general context only.",
+      "location_precision": "approximate"
+    }
+  ]
+}
