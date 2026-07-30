@@ -143,13 +143,13 @@
       "access": "Free, public park",
       "transport": "15 min walk from Cadiz train station, entrance on Avenida Doctor Gomez Ulla",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://static.inaturalist.org/photos/686980172/original.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Alain Cervantes (alainc), via iNaturalist",
+        "status": "found_needs_check"
       },
       "curation_status": "flagged",
-      "notes": "Species and location confirmed by two independent sources, including the Ayuntamiento de Cadiz's own parks department page, which also explains why the species cannot be dated by growth rings. Circumference (5.5m) and height (14.8m) figures surfaced via search snippet referencing monumentaltrees.com, used for verification only per hard rule 1, not copied as prose. No individual planting history exists for this species type, so age is presented as a wide, honest estimate rather than invented. Location is park-level only, kept approximate. No open-licensed photo found (iNaturalist observations near this site are CC-BY-NC or unlicensed only).",
+      "notes": "Species and location confirmed by two independent sources, including the Ayuntamiento de Cadiz's own parks department page, which also explains why the species cannot be dated by growth rings. Circumference (5.5m) and height (14.8m) figures surfaced via search snippet referencing monumentaltrees.com, used for verification only per hard rule 1, not copied as prose. No individual planting history exists for this species type, so age is presented as a wide, honest estimate rather than invented. Location is park-level only, kept approximate. Photo found 2026-07-30 via iNaturalist observation 375761116 (CC BY 4.0, place_guess explicitly 'Parque Genovés, Cadix', observed 2026-06-27, a genus this project had not found any open-licensed match for in many prior passes) and viewed directly: a genuine, in-focus close-up of Phytolacca dioica foliage and its characteristic segmented fruit racemes, not the tree's signature swollen trunk the story is built around, and this park's only individually recorded iNaturalist observation of the species within a 300m radius. Held at found_needs_check rather than approved precisely because it confirms species and park but not the specific trunk-level identity a single-specimen landmark entry deserves; a future session with a second photo of this observer's or others' upload history should look for a trunk shot before promoting it.",
       "location_precision": "approximate"
     },
     {
