@@ -1,3 +1,15 @@
+## 2026-07-30 — Galway researched, no page yet: no individually verifiable specimen found within the city
+
+Same session, straight after Cork. Galway was next in the queue. Researched Eyre Square, University of Galway (Quadrangle, campus trail, Dangan sports grounds), Salthill and Quincentennial Park, Nun's Island, Merlin Park Woods, and Barna Woods.
+
+**No single named, dated, individually verifiable tree turned up inside Galway city.** Two genuine ancient-woodland candidates exist, both real but both diffuse rather than a single collectible point: Barna Woods (Galway City Council-owned, roughly 3 miles from the city centre, "some of the oldest oak trees in all of the west of Ireland" per Galway National Park City, but no individual tree named, dated, or measured, and hit by Storm Eowyn in January 2025 which felled almost 100 trees there) and Merlin Park Woods (80 hectares on the city's eastern edge, remnant of the historic Wraithman estate, woodland "estimated at approximately 200+ years old" as a whole, again with no single named or measured specimen). Neither passes this project's collectible-point test (hard rule from CLAUDE.md: one identifiable tree, or a compact ensemble with one obvious place to stand): both are large, scattered woodlands where "the oldest tree" cannot currently be pointed to.
+
+**The area's most famous ancient tree is out of bounds for the same reason as Blarney was for Cork**: Lady Gregory's Autograph Tree, a copper beech at Coole Park signed by Yeats, Shaw and other literary figures, sits 35km from Galway city near Gort, a separate town, not the city itself.
+
+**Cork's UCC arboretum (10-15 minutes away by the same research pattern that works for university cities) has no Galway equivalent found**: University of Galway's Quadrangle and campus trail pages describe ivy and general biodiversity but name no individual tree, and no champion-tree register entry could be found tied to the university.
+
+**Galway stays `pending`, no page published.** Same reasoning as Cork earlier this session: padding to four would mean either fabricating ages/identities for woodland trees that were never individually documented, or crossing the city boundary into Coole Park, which the project's convention (also applied to Blarney and Rouken Glen this session) rules out. A future run with a lead on a specific named tree within Barna Woods, Merlin Park, or the university campus could still get Galway over the line. Moved on to the next city in the queue, Budapest, where richer heritage-tree documentation is expected.
+
 ## 2026-07-30 — Cork researched, no page yet: only one tree cleared the four-tree floor
 
 Same session, straight after Glasgow. Cork was next in the queue. Researched Fitzgerald's Park, University College Cork (UCC) and its arboretum, the Mardyke, Bishop Lucey Park, St Fin Barre's Cathedral grounds, Sunday's Well and Montenotte, looking for the city's four best trees.
