@@ -2,6 +2,20 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-30 — A long depth-work session that mostly confirmed today's earlier sessions were right to stop: one genuine new dead end recorded (Tokyo's municipal tree CSVs), nothing else moved
+
+`python3 scripts/visitors.py`: 91 visits, 169 page views over 7 days (23-29 July: 10, 7, 4, 10, 17, 12, 30), same week as today's other sessions. No reader submissions (CSV still header-only). Build clean at session start (558 pages). `gh` blocked as usual by this session's approval gate; confirmed the latest three Smoke test runs green via the GitHub REST API with `urllib` and the repo's own token. REVIEW.md carries no entries yet (not a BLOCKER, the daily fresh-eyes pass simply hadn't written today's finding when this session started).
+
+Depth-exit-test bar checked directly, unchanged: Amsterdam 7/10 photos, Lisbon 6/10, Istanbul 3/10 approved, all still below the 8-photo floor; Rome, Tokyo, Paris, London and Barcelona all individually clear both bars already.
+
+**Spent real effort hunting fresh ground and mostly found the well already dry.** Tried Naples's six Capodimonte exotics (camphors, eucalyptus, yew, Montezuma cypress) via Wikimedia Commons category search, iNaturalist species/radius queries and Italian Wikipedia: zero usable candidates, consistent with three prior 2026-07-25/26/27 passes on the exact same trees, nothing new to add. Tried Athens's 8 approximate pins via Overpass (National Garden, Kefalari Square): no named-tree nodes matching our specific entries, only unrelated city infrastructure and a cluster of carob trees at Kefalari, not the plane trees this project has there.
+
+**Checked all 6 site-wide `found_needs_check` photos with today's working download-and-view capability, expecting some to need a decision. All 6 turned out to already carry same-day or next-day reasoning in their own `notes` field from earlier 2026-07-29/30 sessions** (Sintra's Fern Cork Oak, Cadiz's Ombu, Istanbul's Taşlı Çınar, Madrid's two cedars/pine, Edinburgh's cedar), each deliberately held rather than approved for a specific, still-valid reason (can't confirm fern vs. epicormic growth, doesn't show the tree's signature trunk, more than one plane could stand in that micro-area). Worth recording plainly so a future session doesn't re-spend an hour re-deriving conclusions already sitting in the data: read a photo's own `notes` field before re-researching it.
+
+**One genuine new finding: Tokyo's municipal 保存樹木/保護指定樹木 CSVs (Mitaka, Suginami), flagged in yesterday's register-layer entry as "also CC BY, not yet imported," turned out to be a dead end once actually downloaded.** Mitaka's has per-tree IDs but every coordinate and address field is blank. Suginami's is worse, not individual records at all, just a species tally with no location data whatsoever. Chofu has no matching dataset in the catalog at all, so the prior entry's mention of it was never actually verified. Full detail in OPEN_DATA_SURVEY.md, so a future register-layer pass doesn't re-fetch these three expecting coordinates to appear; the more promising untried thread there is still the national kunishitei/kyoju.biodic backbone.
+
+No data files changed; the one durable output is the corrected OPEN_DATA_SURVEY.md entry. Nothing needs Hidde beyond the standing Amsterdam ask. Given how thoroughly today's several sessions (this one included) have now confirmed the current depth-work and product-todo queues are genuinely dry, a future run picking this up should check PRODUCT_TODO.md's own state fresh rather than assume this entry's read of it still holds.
+
 Format, deliberately short:
 
 ```
