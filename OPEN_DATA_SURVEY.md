@@ -82,6 +82,36 @@ The register layer (two-layer model, DECISIONS.md 2026-07-29) needs sources that
   
   Net: none of the four adds an import candidate; the backbone stays exactly the two national sources above. Treat all four as scouted and closed, same as Kyoto, not "not yet scouted."
 
+
+## The licence-led country scan, 2026-07-30 (verified by download and licence text)
+
+The queue-maker for the register layer (CLAUDE.md rung 5). Verdicts below rest on a fetched licence sentence or a fetched dataset, never on a portal's reputation. Countries still unscanned are named at the end rather than assumed.
+
+### Usable now, licence proven
+
+| Source | Trees | Coordinates | Licence, with the proving evidence |
+|---|---|---|---|
+| **Portugal, ICNF Arvoredo de Interesse Publico** (si.icnf.pt WFS `BDG:arv_class`, GeoJSON in one unauthenticated GET) | 555 designated (460 single trees; 87 ensembles need the collectible-point test) | Per-tree, median 8 decimals, all inside the country box | CC BY 4.0. ICNF's own metadata: "Sem restricoes. A utilizacao ou divulgacao deste conjunto de dados geograficos requer sempre a indicacao expressa da sua proveniencia e autoria: ICNF." dados.gov.pt returns `license: cc-by`; the WFS itself declares Fees "sem restricoes", AccessConstraints "Nenhum". |
+| **Czech Republic, AOPK CR pamatne stromy** (gis.nature.cz ArcGIS REST, `outSR=4326` native) | 16,795 individually positioned; 13,149 with species | Per-tree, WGS84 served directly | CC BY 4.0, verbatim: "Tato datova sada poskytovana Agenturou ochrany prirody a krajiny Ceske republiky podleha licenci Creative Commons Uvedte puvod 4.0 Mezinarodni". Attribution "(c) AOPK CR". |
+| **Poland, CRFOP / GDOS** (sdi.gdos.gov.pl WFS, daily updates) | 117,474 tree monuments, the largest verified pool anywhere | Yes, EPSG:2180 needs reprojection; precision unstated so `approximate` by default | CC0 per dane.gov.pl metadata; WFS Fees and AccessConstraints both "brak" (none). WEAKER PROOF: the licence-condition fields are empty and GDOS's own site publishes CC BY-SA 4.0 for site content. Pin the data licence down before importing 117k rows. |
+| **Brussels** (opendata.bruxelles.be `bruxelles_arbres_remarquables`) | 582, richest per record: Latin name, circumference, crown, rarity, status, official per-tree page | Yes, WGS84 `geo_point_2d` | CC BY 4.0 (`license_url` on the dataset). Two flags: the inventory surveys private gardens and courtyards, so rule-10 filtering is mandatory; and the `firstimage` photo URLs are NOT covered by the dataset licence, so those are not licensed photos. |
+
+### Blocked, and why (each is fixable, none by guessing)
+
+- **Wallonia, AHREM** (20,245 tree points, the richest schema found: genus, species, cultivar, circumference, height, survey year, decree date). Licence is fine and explicit: "Licence CC-BY 4.0 : L'utilisateur peut utiliser et modifier les donnees... a condition de citer les sources", access "Non restreint". BLOCKED on hard rule 10: the Walloon criterion deliberately includes private trees merely *visible from public space*, the `DOMAINE` field splits 13,007 / 6,985 / 253 across three codes nobody has decoded, and the data model itself admits some points are placed RANDOMLY inside an address perimeter ("Positionnes aleatoirement dans le perimetre defini en adresse"). Read AHREM.pdf's field dictionary first.
+- **Catalonia** (302 monumental trees plus a separate 4,176 monumental olives, per-trunk coordinates). BLOCKED on licence: the ISO metadata says only `otherRestrictions`, and the WFS declares no Fees or AccessConstraints at all, so there is no self-declared permission. Do not import until the sentence is found.
+- **Spain, four real registers with live download endpoints but no licence sentence yet**: Illes Balears (GeoJSON + CSV, the most import-ready), Comunitat Valenciana (statutory catalogue under Ley 4/2006, SHP + WMS), Castilla y Leon (SHP), Navarra (SHP, but the identifier says polygon so it may be perimeters not trunks). Each needs one page fetched and quoted.
+- **Spain dead ends**: Comunidad de Madrid has no machine-readable singular-tree dataset at all (the catalogue is a PDF under Decreto 18/1992); Madrid city publishes only a full bulk inventory, which the semantic filter forbids; Euskadi's singular trees exist legally (Decreto 265/1995) but survive only inside a 1:25,000 protected-areas polygon set whose metadata says `otherRestrictions` and whose download is a 404.
+- **Flanders** (4,398 rows, licence fine): NOT RECOMMENDED. Wrong shape and wrong places: only 1,768 are standing trees (the rest hedges, coppice, even farm buildings), geometry is parcel MultiPolygons with no coordinates in the CSV, and coverage is deliberately rural (Voeren 648 versus Antwerp 8, Leuven 16).
+
+### The finding worth copying into every future scan
+
+Catalonia's register ships a vitality field, `DIAGNOSI`, populated on all 302 records: 191 alive, 53 in advanced decline, 58 outright dead (37% dead or dying). A naive import would have put 58 confirmed-dead trees on a map whose promise is standing in front of something alive. **Every register scan from now on looks for a vitality or last-surveyed field before anything else**, and where none exists that alone is a reason to treat the source as a lead list rather than an import.
+
+### Still unscanned (not "no data", just not looked at)
+
+Italy (the ~4,944-tree MASAF national list, the biggest known European prize), Germany (per-Bundesland Naturdenkmal registers), France, and the whole English-speaking group including the UK's 233,000-record Ancient Tree Inventory whose licence remains the single highest-value unanswered question. Also unread: Spain's default reuse regime (RD 1495/2011 art. 8), which would settle four Spanish registers at once.
+
 ## Which countries to invest in, weighed 2026-07-21
 
 Researched at Hidde's request: national tree databases plus photo availability and other factors, ranked for the strategy (English site, travelers plus enthusiasts as the audience).
