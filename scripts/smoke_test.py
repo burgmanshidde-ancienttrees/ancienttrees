@@ -94,7 +94,7 @@ def main():
             ("maplibregl-canvas", "map canvas (JS ran, map constructed)"),
         ]),
         (f"{base}/{city.stem}/{tree.name}", f"tree page ({tree.stem})", [
-            ("seen-btn", "check-in button"),
+            ("Check in with the app", "app-funnel check-in button (Hidde, 2026-07-30)"),
             ("maplibregl-canvas", "map canvas (JS on this page executed)"),
         ]),
         (f"{base}/explore.html", "explore", [
