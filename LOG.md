@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-30 — Oxford opens: 5 college-and-garden trees, two legend traps declined
+
+Same session, straight after Bath. No submissions, site healthy, Oxford next in the queue.
+
+**Another city where the remarkable trees turned out to belong to institutions rather than woodland**: the Iffley churchyard yew beside one of England's most complete Norman churches, the yew Oxford Botanic Garden's first curator planted in 1645 (his own handwritten notes give the exact year), a White Mulberry that may be the oldest of its kind in Britain, Christ Church's Oriental Plane, grown, tradition says, from a seed Edward Pococke carried back from the Ottoman Empire in 1636 and thought to have inspired Lewis Carroll's Tumtum tree, and the country's tallest Caucasian Elm in the University Parks.
+
+**Declined two trees for good reason rather than publish on thin ground**: Magdalen College's much-repeated "Great Oak" at Addison's Walk, credited in tourism copy with witnessing the 1931 Tolkien/C.S. Lewis conversation, turns out to be a likely legend conflation, a primary account states the actual famous oak there fell in 1789, decades before either man was born, and no source could name a real, currently-standing replacement with any hard facts. New College's "Harry Potter oak" fared no better: sources couldn't even agree on the species. Both left out rather than guessed at.
+
+Also caught a near-miss photo before use: a Wikimedia Commons image captioned "Iffley church entrance and yew tree" looked like the obvious match, but the photographer's own caption says plainly it isn't the famous one, the churchyard has several yews. Declined. Did find and confirm one real photo: a Geograph image of "Oxford Botanic Garden, yew tree" whose GPS tag lines up almost exactly with the Ancient Yew Group's own coordinate for the historic Bobart Yew, strong enough to use and to upgrade that tree's pin to confirmed.
+
+1 of 5 photos found, 4 genuine gaps. Full detail in CURATION.md. Site rebuilt (589 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-30 — Bath opens: 5 Georgian-city trees, a real dead-tree trap caught before publishing
 
 `scripts/visitors.py`: 102 visits, 200 page views over 7 days (23-30 July: 10, 7, 4, 10, 17, 12, 30, 12), still climbing.
