@@ -2,6 +2,20 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-30 — Bath opens: 5 Georgian-city trees, a real dead-tree trap caught before publishing
+
+`scripts/visitors.py`: 102 visits, 200 page views over 7 days (23-30 July: 10, 7, 4, 10, 17, 12, 30, 12), still climbing.
+
+Bath was next in the queue per city-list.json and the session-start brief. No reader submissions, site healthy (build and QA clean, REVIEW.md empty, latest three smoke runs green), so straight to coverage.
+
+**Bath's trees turned out to be city trees, not woodland ones**: a plane at Abbey Green overlooking the square where Mary Shelley wrote most of Frankenstein, five planes the Circus's own Georgian residents planted in 1820 to cut carriage dust, Royal Victoria Park's sole surviving original-avenue elm (it lived because it's a Zelkova, immune to Dutch Elm disease, not because anyone protected it), a Coast Redwood in the park's old quarry-turned-Dell, and 18th-century yews in Prior Park, the landscape garden Ralph Allen built with Alexander Pope's advice. Shipped at 5, below the usual cap: that is where two-source verification stopped after searching the obvious spots (Royal Victoria Park, the Circus, Abbey Green, Prior Park, Sydney Gardens, the Bath Skyline woods, several churchyards). A couple of near-misses (a thinly sourced "Prince of Wales Oak", a Sydney Gardens cedar with no planting date) were left out rather than padded in.
+
+**Caught a real one before it shipped**: several sources describe Royal Victoria Park's Botanic Gardens as having lost a "Giant Redwood" to honey fungus, replaced in 2001 by a chainsaw sculpture near the Dovecote. Before writing up the Great Dell's own famous redwood as alive, checked whether it was the same tree. It isn't, monumentaltrees.com (verification only, never copied) names it a different species (Coast Redwood, not the presumed Giant Sequoia) at a different spot in the park, and calls it "vigorous health." Full reasoning in CURATION.md and the tree's own notes field.
+
+Also handled honestly rather than picked a convenient story: Abbey Green's plane has two conflicting planting dates (1793 by legend, 1880s by map evidence), so it got a wide age range and the Frankenstein connection is framed as conditional on the earlier date. And the oldest-tree question page names the Prior Park yews, not the more narratively neat Royal Victoria Park elm, because the yews are genuinely a century older per Historic England's own listing.
+
+0 of 5 photos found (a real gap, Wikimedia has categories for these places but no photo frames any of the five trees specifically enough to confirm identity), all 5 pins approximate, honestly. Full detail in CURATION.md. Site rebuilt (579 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-30 — York opens: coverage resumes for real, first new city since the quality-stop retirement
 
 `scripts/visitors.py`: 96 visits, 182 page views over 7 days (23-30 July: 10, 7, 4, 10, 17, 12, 30, 6), the week still climbing.

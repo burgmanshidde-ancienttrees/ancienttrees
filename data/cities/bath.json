@@ -1,0 +1,181 @@
+{
+  "city": "Bath",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "oldest_tree_id": "bat_005",
+  "intro": "Bath's remarkable trees stand less in ancient woodland than in the Georgian city itself: a plane tree said to have watched Mary Shelley write Frankenstein, five more planted by the residents of a perfect stone circle to keep carriage dust down, and a survivor elm that gave most of Britain's Caucasian elms their start. Add a Victorian quarry turned redwood grove and a run of 18th-century yews in the landscape garden Alexander Pope helped design, and the whole set fits inside a single UNESCO World Heritage city, most of it free to walk to on the same afternoon.",
+  "meta_description": "Bath's most remarkable trees: 18th-century yews at Prior Park, a Frankenstein-era plane at Abbey Green, and the Circus's five carriage-dust planes.",
+  "question_answer": "Bath's oldest confirmed trees are the yews near Prior Park's Sham Bridge, planted as part of Ralph Allen and Alexander Pope's original 18th-century landscape garden, roughly 280 to 296 years old. They stand inside the National Trust's Prior Park Landscape Garden, a 25 minute walk from Bath Spa railway station, with a paid admission.",
+  "question_meta": "The yews near Prior Park's Sham Bridge are Bath's oldest confirmed trees, planted in the 1730s in Ralph Allen and Alexander Pope's original garden.",
+  "question_context": "Ralph Allen, the postal reformer and stone quarry owner who financed much of Georgian Bath, began building Prior Park on the hillside above the city in the 1730s, working with the poet Alexander Pope and, in the garden's later stages, Capability Brown. A group of yews planted along the path east of the Sham Bridge, a deliberately ruined-looking stone crossing near the garden's ponds, dates to that original 18th-century design phase rather than any later Victorian replanting, making them contemporaries of the garden's famous Palladian bridge. A second band of yews marks the woodland's northern edge near the dam between the middle and northern ponds. Yew is one of the few species that can genuinely outlast a garden's changing fashions without needing replacement, and these have simply kept growing where Pope and Allen's landscapers first placed them nearly three centuries ago. They now also draw hawfinches, a shy finch rarely seen in Britain, which feed on the yews' seeds through the winter months.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Bath?",
+      "a": "A group of yews near the Sham Bridge in Prior Park Landscape Garden, planted in the 1730s as part of Ralph Allen and Alexander Pope's original design for the garden, making them roughly 280 to 296 years old."
+    },
+    {
+      "q": "What is the plane tree at Abbey Green in Bath?",
+      "a": "A giant London Plane at the centre of Abbey Green, a small square just south of Bath Abbey. Local tradition dates it to 1793, though map evidence suggests the tree visible today may date closer to the 1880s; either way it has stood over the square for well over a century."
+    },
+    {
+      "q": "Are the trees in the Circus in Bath free to see?",
+      "a": "Yes. The Circus's central green is a public space, and its five London Plane trees, planted by residents around 1820 to cut down on dust from horse-drawn carriages, can be seen at any time at no charge."
+    },
+    {
+      "q": "Is Prior Park Landscape Garden free to visit?",
+      "a": "No, Prior Park is a National Trust property with a paid admission (around £8 to £12 for non-members), though National Trust members enter free. It is open most days, with reduced hours in winter."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bat_001",
+      "name": "The Caucasian Elm of Royal Victoria Park",
+      "species": "Caucasian Elm (Zelkova carpinifolia 'James Gordon')",
+      "age_estimate": "195 years",
+      "age_min": 180,
+      "age_max": 196,
+      "location": {
+        "address": "Royal Avenue entrance, Royal Victoria Park, Bath BA1 2LR",
+        "latitude": 51.385700,
+        "longitude": -2.367300,
+        "neighbourhood": "Royal Victoria Park"
+      },
+      "story": "When Royal Victoria Park opened in 1830 as one of England's first public parks, its designers lined the south side of Royal Avenue with elms. Dutch Elm disease reached Britain in the 1970s and worked through the country's mature elms with brutal efficiency, and this avenue was no exception, except for one tree. It is called an elm, but it is genetically a Zelkova, a close relative that happens to be immune to the fungus that carries the disease, which is the only reason it is still standing while its neighbours are long gone. This particular variety traces back to a specimen the 18th-century nurseryman James Gordon brought into cultivation in Britain, distinct enough from the wild Caucasian Elm that it carries his name, 'James Gordon', and most of the Caucasian Elms now growing across the UK are propagated from that same original stock rather than the species as it grows in the wild. Nearly two centuries after the park's founders planted it as one tree among many in a fashionable avenue, it stands alone as the last living piece of Royal Victoria Park's original planting scheme, just inside the gates on Royal Avenue, its irregular, densely branched crown looking nothing like the elms it once stood beside.",
+      "verified_sources": [
+        "https://www.bathnats.org.uk/royal-victoria-park-bath15-january-2025/",
+        "https://historicengland.org.uk/listing/the-list/list-entry/1001257"
+      ],
+      "access": "Free, open access, Royal Victoria Park (daily, dawn to dusk)",
+      "transport": "20 min walk from Bath Spa railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Corroborated across the Bath Natural History Society's January 2025 walk write-up (which identifies the tree by species, cultivar and its position 'just inside park gates on south side of Royal Avenue') and Historic England's Grade II listing description for the park (which independently confirms the original avenue planting, its loss to Dutch Elm disease, and the single Caucasian Elm survivor); parksandgardens.org restates the same facts as a third corroborating page. James Gordon's 18th-century introduction of the cultivar and its status as ancestor to most UK Caucasian Elms is stated consistently across sources. No source gives an exact planting year, only 'planted with the park's original 1830 layout'; age range reflects 2026 minus 1830 as a maximum, with a few years' margin since avenue planting sometimes followed a park's opening by a season or two. Coordinates are the Royal Avenue park entrance, the location all sources describe ('just inside the gates'), not a surveyed point for the trunk itself.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bat_002",
+      "name": "The Plane Tree of Abbey Green",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "185 years",
+      "age_min": 138,
+      "age_max": 233,
+      "location": {
+        "address": "Abbey Green, Bath BA1 1NW",
+        "latitude": 51.380508,
+        "longitude": -2.358880,
+        "neighbourhood": "City centre, south of Bath Abbey"
+      },
+      "story": "Abbey Green is a small paved square tucked into the medieval streets just south of Bath Abbey, and a single giant London Plane fills nearly all of it, its canopy reaching over the surrounding Georgian facades. Local tradition holds it was planted as a sapling in 1793, which would make it one of the oldest deliberately planted trees of its kind anywhere. Mary Shelley lived at 5 Abbey Churchyard, overlooking the green, while writing most of Frankenstein between 1816 and 1817, and if the 1793 date is right, she would have looked out at this same tree. Historical maps complicate the story: the tree does not appear on an 1852 survey of the area but is clearly present by 1888, which points to a planting closer to the 1880s instead, six decades later than the popular legend claims. Either date makes it a serious tree, not a young one, and the square's own nickname, the Hanging Tree, comes from a separate and even less documented local legend about executions once carried out beneath its branches. Whichever story is true, the tree itself is real, and every December the city strings it with lights for the Bath Christmas Market, wrapped entirely around its trunk.",
+      "verified_sources": [
+        "https://www.weekendnotes.co.uk/abbey-green-ancient-plane-tree/",
+        "https://www.setinstories.com/abbey-green-bath-frankenstein/"
+      ],
+      "access": "Free, open access, public square",
+      "transport": "5 min walk from Bath Spa railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The 1793 planting date is widely repeated (travel and heritage sites, tourism copy) but is a local tradition rather than a documented fact. A second, independently reasoned account (map evidence: absent from an 1852 survey, present by 1888) points to a much later planting, roughly 1880s, making the tree 138-146 years old rather than 233. Presented honestly as a range rather than picking one story; the Frankenstein connection is framed as conditional on the earlier date being correct, since the later date would rule it out entirely. The 'Hanging Tree' execution legend is separately sourced local folklore with no primary documentation found; mentioned as the square's own nickname, not stated as fact.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bat_003",
+      "name": "The Plane Trees of the Circus",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "205 years",
+      "age_min": 200,
+      "age_max": 210,
+      "location": {
+        "address": "The Circus, Bath BA1 2ET",
+        "latitude": 51.386200,
+        "longitude": -2.363800,
+        "neighbourhood": "City centre"
+      },
+      "story": "The Circus is three curved terraces of Grade I listed townhouses arranged into a full circle, John Wood the Elder's answer to the Colosseum and one of the defining images of Georgian Bath. For its first decades the ring at the centre was paved stone setts sitting over a reservoir that supplied the surrounding houses with water. In 1800 the residents enclosed that centre as a private garden, grassed it over, and planted five London Planes, reportedly to cut down on the dust that horse-drawn carriages kicked up on the surrounding road. Those five trees, believed to date to around 1820, have since grown enormous, their canopies now higher than the roofline of the houses they were planted to shield, and they have become inseparable enough from the Circus's identity that Bath and North East Somerset Council names them as one of the features contributing to the whole ensemble's Grade I listing. Stand in the centre of the green today and the five trunks, the curving stone facades and the sky framed between them make one of the most photographed views in a city that has no shortage of them.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/The_Circus,_Bath",
+        "https://www.bath-preservation-trust.org.uk/planning-applications/central-green-the-circus-city-centre/"
+      ],
+      "access": "Free, open access, public green",
+      "transport": "15 min walk from Bath Spa railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as a single ensemble entry per CLAUDE.md's collectible-point test: five trees in one compact, famous, self-contained green with one obvious place to stand, the same pattern as the Lomanstraat tunnel and Meiji Jingu Gaien avenue precedents. Planting date ('around 1820') is Wikipedia's figure, citing Bath & North East Somerset Council and Bath Preservation Trust records directly (both primary-ish sources, inaccessible to direct fetch this run but independently corroborated by multiple secondary summaries). No single-tree girth or height figures found; flagged for that reason, not for doubt about the trees' existence or age bracket.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bat_004",
+      "name": "The Coast Redwood of the Great Dell",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "150 years",
+      "age_min": 120,
+      "age_max": 180,
+      "location": {
+        "address": "The Great Dell, Royal Victoria Park, Bath BA1 2NQ",
+        "latitude": 51.388500,
+        "longitude": -2.373500,
+        "neighbourhood": "Royal Victoria Park, Botanical Gardens"
+      },
+      "story": "The Great Dell is a disused stone quarry on the northern edge of Royal Victoria Park's Botanical Gardens, planted out in the Victorian era with conifers that had only just started arriving in Britain from the west coast of North America and the mountains of South America. Coast Redwood seed first reached British growers in the 1840s, and the tree that now dominates the Dell, by far its tallest, is one of that first generation of plantings finding out how a California native would fare in an English quarry. It shares the space with an evergreen Monkey Puzzle from Chile and Argentina and English Oaks that predate the quarry's conversion into a garden, but the redwood is the one visitors notice first, its soft, fibrous red-brown bark rising well above the surrounding tree line before the ground was ever cut into a walkway. An aerial walkway now runs along the back of the Dell at canopy height, built so visitors can look across at the redwood's crown rather than straight up at its trunk from the quarry floor. It remains, by any measure taken here, the tallest tree in the whole of Royal Victoria Park.",
+      "verified_sources": [
+        "https://www.bathrocks.co.uk/things-to-do/the-great-dell",
+        "https://www.monumentaltrees.com/en/gbr/england/somerset/9632_royalvictoriapark/"
+      ],
+      "access": "Free, open access, Botanical Gardens (daily, 9am-5pm)",
+      "transport": "25 min walk from Bath Spa railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Dead-tree check done before publishing: a separate 'Giant Redwood' (species not specified in sources, likely Sequoiadendron giganteum/Giant Sequoia, sometimes called 'Wellingtonia' in Britain) planted in Bath's Botanic Gardens in the 1850s died of honey fungus and was replaced in 2001 by a 7m chainsaw sculpture, 'Mankind's Hand in Nature,' near the park's Dovecote (Great British Life; corroborated by a second travel-blog summary of the same council/park history). Confirmed this is a different tree from the one in this entry: monumentaltrees.com's Royal Victoria Park listing (checked for verification only, per hard rule 1, never copied) catalogues a Coast Redwood (Sequoia sempervirens, not Sequoiadendron), specimen ID 19007, girth 5m @1.30m, explicitly noted 'vigorous health', a separate genus and species from the Dovecote sculpture's tree and standing in the Great Dell rather than near the Dovecote. No source gives an exact planting year for this specific tree; the Dell itself was quarried out and first planted in the 1830s-40s with advice from William Beckford (d.1844), but Coast Redwood seed did not reach Britain until the 1840s at the earliest, so this tree is necessarily a slightly later addition to the Dell's original planting scheme, not part of its first phase. Age range is a wide, honest estimate on that basis rather than a sourced figure. Coordinates are the Great Dell's general area within the Botanical Gardens, not a surveyed point for the trunk.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bat_005",
+      "name": "The Yews of Prior Park",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "290 years",
+      "age_min": 280,
+      "age_max": 296,
+      "location": {
+        "address": "Near the Sham Bridge, Prior Park Landscape Garden, Ralph Allen Drive, Bath BA2 5AH",
+        "latitude": 51.365800,
+        "longitude": -2.345700,
+        "neighbourhood": "Widcombe"
+      },
+      "story": "Ralph Allen made his fortune modernising Britain's postal system and quarrying the honey-coloured stone that built Georgian Bath, and in the 1730s he spent part of it building Prior Park, a landscape garden on the hillside above the city designed with advice from the poet Alexander Pope and, later, Capability Brown. A group of yews planted along the path east of Prior Park's Sham Bridge, a stone structure built to look older and more ruined than it is, dates to that same original 18th-century design, contemporaries of the garden's famous Palladian bridge rather than later Victorian additions. A second, similar band of yews marks the woodland's northern edge near the dam between the estate's middle and northern ponds. Yew is one of the few species that can genuinely outlast a garden's fashions without needing replacement, and these have simply kept growing in the positions Pope and Allen's landscapers chose for them nearly three centuries ago, dark evergreen anchors in a garden built to look like a series of paintings from every angle. In winter they draw one of the more unusual visitors to the grounds: hawfinches, a shy finch rarely seen in Britain, feed on yew seeds here.",
+      "verified_sources": [
+        "https://historicengland.org.uk/listing/the-list/list-entry/1000144",
+        "https://www.parksandgardens.org/places/prior-park"
+      ],
+      "access": "National Trust, paid admission (around £8-12 for non-members, free for members), daily 10am-5pm (reduced hours in winter)",
+      "transport": "25 min walk from Bath Spa railway station, or Bath Skyline/Prior Park bus services",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Presented as a single ensemble entry (a compact, named group along one path, the collectible-point test) rather than isolating one unnamed yew among many. Historic England's register entry for Prior Park describes the yews as dating to the 18th-century design phase, contemporary with Pope and Allen's original layout; parksandgardens.org corroborates the same detail. No source gives individual girths or a more precise planting decade than 'C18', so age range is wide and honest (any point in the 1730s-1750s main construction phase). Coordinates are the garden's general area near the Sham Bridge, not a surveyed point for any specific trunk within the group.",
+      "location_precision": "approximate"
+    }
+  ]
+}
