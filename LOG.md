@@ -162,8 +162,8 @@ If an entry has no `FOR HIDDE` line, nothing is waiting on you. That is the norm
 
 Standing list. Everything else in this file is history; this block is what is actually waiting. Refreshed 2026-07-27.
 
-### One small ask, no rush
-Amsterdam's last three photos (Heimanseik, Vondelpark Poplar, Amstelkade Olive Willow) have been searched today across every open-license source this project knows how to query, several of them more than once, and come up empty every time; full detail in CURATION.md's newest entry. All three pins are already exact (government-registry sourced). If you're ever in Amsterdam with five minutes and a phone, a photo of any of them would clear something automated search doesn't look able to. No urgency, and skip it entirely if it's not worth the walk.
+### Nothing right now
+(The 2026-07-30 ask to photograph three Amsterdam trees was withdrawn the same day by Hidde's ruling: the owner is not a content source, runs never ask him for fieldwork. Those gaps stay honest gaps until reader submissions or a licensed source close them.)
 
 ## 2026-07-30 — Same session, continued: the register layer ships end to end for its Tokyo pilot (scouting closed out, data file built, dots live on /explore), all three build-order steps in one pass
 
