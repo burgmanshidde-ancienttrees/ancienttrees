@@ -196,9 +196,39 @@ def fetch_machine(today):
         if dur > 150:
             worked += 1
             minutes += int(dur // 60)
-    return ("Machine: %d chain attempts yesterday, %d got real work time (~%d min "
+    line = ("Machine: %d chain attempts yesterday, %d got real work time (~%d min "
             "total). Dead-in-seconds attempts cost nothing; few get-throughs means "
             "the usage window was full or closed." % (total, worked, minutes))
+
+    # Cron watchdog (2026-07-30, after review.yml and data-digest.yml both
+    # silently skipped their morning slots): GitHub drops schedules without a
+    # trace, so every scheduled workflow is checked for a run in the last 26h.
+    # A missed cron becomes a visible line instead of a discovery.
+    quiet = []
+    for wf, label in (("review.yml", "fresh-eyes review"),
+                      ("data-digest.yml", "data digest"),
+                      ("nightly.yml", "research chain")):
+        try:
+            req2 = urllib.request.Request(
+                "https://api.github.com/repos/%s/actions/workflows/%s/runs?per_page=1" % (repo, wf),
+                headers={"Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json"})
+            with urllib.request.urlopen(req2, timeout=30) as r:
+                latest = json.load(r).get("workflow_runs", [])
+            if not latest:
+                quiet.append(label + " (never ran)")
+                continue
+            started = datetime.datetime.fromisoformat(
+                latest[0]["created_at"].replace("Z", "+00:00"))
+            age = datetime.datetime.now(datetime.timezone.utc) - started
+            if age.total_seconds() > 26 * 3600:
+                quiet.append("%s (last ran %dh ago)" % (label, int(age.total_seconds() // 3600)))
+        except Exception:
+            quiet.append(label + " (status unreadable)")
+    if quiet:
+        line += ("\nWATCHDOG: scheduled workflows silent past their slot: "
+                 + "; ".join(quiet) + ". Kick with `gh workflow run <file>` and "
+                 "treat a repeat as rung 2.")
+    return line
 
 
 def build_entry(days, today, gsc_text):
