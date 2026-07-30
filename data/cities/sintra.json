@@ -101,7 +101,8 @@
       },
       "story": "Sintra's park changed its name overnight and this tree didn't notice. Portuguese record keepers classified it as a tree of public interest in 1951, decades before 25 April 1974, when thousands of Sintra's own residents flooded this same municipal garden to celebrate the end of the dictatorship and the park was renamed Parque da Liberdade, Liberty Park, that same year. The tree itself, a London plane with a trunk measuring nearly ten metres around at its base, had already been growing for a century by then, planted sometime in the early to mid-1800s depending on which record you trust: the official government register puts it at roughly 200 years old, while a local history blog's own measurements suggest closer to 150. Either figure makes it one of the thickest plane trees documented anywhere in Portugal, rivalled mainly by a single private specimen near Figueira da Foz. Locals just call it the Platano Gigante, the giant plane, and treat the ground beneath it as one more park bench, shaded regardless of the hour by a canopy that has had a century and a half, at minimum, to fill in.",
       "verified_sources": [
-        "https://tudodenovoaocidente.blogs.sapo.pt/1616.html"
+        "https://tudodenovoaocidente.blogs.sapo.pt/1616.html",
+        "https://sigservices.icnf.pt/server/rest/services/BDG/AIP/MapServer/0/query?where=id%3D274&outFields=*&f=json"
       ],
       "access": "Free, public municipal park, open daily",
       "transport": "10 min walk from Sintra train station",
@@ -112,7 +113,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Coordinates taken directly from Portugal's ICNF national register of classified public-interest trees (live ArcGIS query, id 274, classified by government decree 18/12/1951), confirmed. Age is genuinely disputed: ICNF's register gives 200 years (measured 2006) while the independent tudodenovoaocidente local-history blog, citing its own perimeter measurement, estimates closer to 150; presented as a range rather than picking one, per P7. Only one independent secondary source found beyond the ICNF register itself; flagged for that reason rather than for doubt about the tree's existence. Searched Wikimedia Commons' full 38-file 'Parque da Liberdade Sintra' series (GualdimG, 2022) plus older uploads for a shot of this specific tree; none carry a caption identifying it and two viewed directly turned out to show the park's entrance gate and an Araucaria, not this plane. No open-licensed photo confirmed; genuinely missing rather than guessed at.",
+      "notes": "Second source added 2026-07-30: the direct, citable ICNF ArcGIS query URL for this record (id 274), already used for this entry's coordinates and decree date but not previously listed in verified_sources. Confirms species (Platanus hybrida, 'plátano'), decree 'D.G. n.º 290, II Série de 18/12/1951' matching this entry's own 1951 claim exactly, girth 9.75m matching 'nearly ten metres around', and age 200 (measured 2006). Age is genuinely disputed: ICNF's register gives 200 years while the independent tudodenovoaocidente local-history blog, citing its own perimeter measurement, estimates closer to 150; presented as a range rather than picking one, per P7. Searched Wikimedia Commons' full 38-file 'Parque da Liberdade Sintra' series (GualdimG, 2022) plus older uploads for a shot of this specific tree; none carry a caption identifying it and two viewed directly turned out to show the park's entrance gate and an Araucaria, not this plane. No open-licensed photo confirmed; genuinely missing rather than guessed at.",
       "location_precision": "confirmed"
     },
     {
