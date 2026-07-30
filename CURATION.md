@@ -1,3 +1,19 @@
+## 2026-07-30 — Same session, continued: Bristol opens, 5 trees, 1 photo found, a change from three straight college cities
+
+Continued from Cambridge. No submissions, build/QA clean, Bristol next in the queue.
+
+**A genuine change of pattern after three college-city sessions in a row**: Bristol's remarkable trees came from the parkland estates the city inherited from its merchant families rather than from university gardens. Ashton Court, a former private deer park now Bristol City Council-owned, holds the largest cluster of ancient pollard oaks in Britain outside Windsor Great Park, including the ~700-year-old Domesday Oak (one of the Tree Council's 50 Great British Trees, 2002) and a 600-year Sweet Chestnut. Added a Repton/Nash-landscaped Cedar of Lebanon at Blaise Castle Estate, an oak at Kings Weston that predates Vanbrugh's own 1719 house, and the London Planes ringing Queen Square, a civic square that survived the 1831 Bristol Riots.
+
+**A genuinely useful new source found this pass: the Bristol Tree Forum's own veteran tree survey** (bristoltreeforum.org), a specialist conservation organisation's detailed table of 51 named trees with OS grid references, girths and age estimates across the city. Far more rigorous than typical tourism-blog sourcing and worth remembering for any future Bristol work; it also flagged several candidates on clearly private or restricted land (hospital grounds, private golf courses, Clifton private garden squares) that were deliberately not used here per hard rule 10, even though they carry real data in the same table.
+
+**Verified the Domesday Oak's condition carefully before publishing**, since multiple sources describe its trunk as "partially collapsed": confirmed via the Ancient Tree Forum's site page, a Bristol247 feature, and a spot-checked 2025 visitor account that despite real structural failure (the trunk is now held upright by timber struts and wire) the tree is genuinely alive, not a monument to a dead one. Described honestly in the story as declining rather than glossed over.
+
+1 of 5 photos found: a Wikimedia Commons Geograph photo of Queen Square's planes, geotagged directly at the square, no identity ambiguity. 4 remain missing after a real search pass.
+
+All 5 pins `location_precision: approximate`: none surveyed to a specific trunk, all general estate or square-level points, several derived from the Bristol Tree Forum's OS grid references rather than independently surveyed by this project.
+
+Site rebuilt (609 pages: 41 city, 371 tree, 41 question, 12 collections, homepage), all contracts validated; `scripts/qa.py` clean (569 pages). `data/city-list.json` updated (Bristol: pending to needs_curation). One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-30 — Same session, continued: Cambridge opens, 5 trees, 2 photos found
 
 Continued straight on from Oxford. No submissions, build/QA clean, Cambridge next in the queue.

@@ -1,0 +1,181 @@
+{
+  "city": "Bristol",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "oldest_tree_id": "bri_001",
+  "intro": "Bristol's remarkable trees cluster in the parkland estates the city inherited from its merchant families: Ashton Court, once a private deer park, now holds the largest group of ancient pollard oaks in Britain outside Windsor Great Park, including a 700-year-old oak the Tree Council named one of the country's 50 greatest. Add a Repton-landscaped cedar at Blaise Castle, an oak that predates Vanbrugh's own house at Kings Weston, and a civic square's planes that have watched Bristol since a 1719 riot, and the whole set sits inside public parks the city has kept free for well over a century.",
+  "meta_description": "Bristol's most remarkable trees: Ashton Court's 700-year Domesday Oak, Blaise Castle's Repton-era cedar, and Queen Square's riot-era planes.",
+  "question_answer": "Bristol's oldest tree is the Domesday Oak in Ashton Court Estate, estimated at around 700 years old and named for the estate's mention in the 1086 Domesday Book. Its trunk has partially collapsed and is now held together with timber struts and wire, but it is still alive, one of Britain's 50 Great Trees named by the Tree Council in 2002. It stands free to visit in Ashton Court, a short bus ride from central Bristol.",
+  "question_meta": "The Domesday Oak in Ashton Court, around 700 years old, is Bristol's oldest tree, still alive despite a partly collapsed, wire-supported trunk.",
+  "question_context": "Ashton Court was a private deer park for centuries before Bristol City Council bought it in 1959 and opened it to the public. Its oldest surviving oak, thought to be around 700 years old, takes its name from the estate's own appearance in the Domesday Book of 1086, the survey William the Conqueror ordered of his new kingdom; the Tree Council believes the tree was already growing around the time that record was made. In 2002, to mark the Queen's golden jubilee, the Tree Council selected it as one of 50 Great British Trees. Its trunk has since partially collapsed, split and settled toward the ground, and is now held upright with timber struts and steel wire rather than its own structural strength alone. Visitors who knew the tree decades ago describe climbing inside a healthier, more intact trunk; today's is thinner in the canopy and visibly declining, though still producing leaves each year. It stands, easy to miss without signage, among Ashton Court's wider population of ancient pollard oaks, more than a hundred of them, the largest such cluster in Britain outside Windsor Great Park.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Bristol?",
+      "a": "The Domesday Oak in Ashton Court, around 700 years old and named for the estate's mention in the 1086 Domesday Book. Its trunk has partly collapsed and is held up with struts and wire, but it is still alive."
+    },
+    {
+      "q": "Is Ashton Court free to visit?",
+      "a": "Yes. Ashton Court Estate is owned and managed by Bristol City Council and is open daily from 8am at no charge, though a small car parking fee applies for drivers."
+    },
+    {
+      "q": "What trees are at Blaise Castle Estate?",
+      "a": "Cedars of Lebanon, an Atlas cedar, a Wellingtonia and a holm oak stand among the specimen trees the landscape designer Humphry Repton planted for the estate in the late 1790s. The grounds have been a free public park since 1926."
+    },
+    {
+      "q": "How old are the trees in Queen Square, Bristol?",
+      "a": "The London Planes around Queen Square's edge date to roughly the 1880s, making them around 145 years old. They replaced earlier avenue plantings from 1716, part of a square that has stood since 1699."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bri_001",
+      "name": "The Domesday Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "700 years",
+      "age_min": 650,
+      "age_max": 750,
+      "location": {
+        "address": "Ashton Court Estate, Long Ashton, Bristol BS41 9JN",
+        "latitude": 51.446130,
+        "longitude": -2.643786,
+        "neighbourhood": "Ashton Court"
+      },
+      "story": "Ashton Court appears in the Domesday Book, the survey William the Conqueror ordered of his new kingdom in 1086, and one oak in the estate's parkland is thought to have already been growing around that time, which is where its name comes from. At an estimated 700 years old, it may be the oldest living tree in greater Bristol. Its condition tells the story as plainly as its age: the trunk has split and partially collapsed, one section settling almost horizontally toward the ground while the rest hangs on, now held upright by timber struts and steel wire rather than its own strength. Visitors who knew the tree decades ago recall climbing inside a fuller, healthier trunk; today's crown is thinner and the bark flaking with decay. In 2002, the Tree Council named it one of 50 Great British Trees to mark the Queen's golden jubilee, official recognition for a specimen that has no sign or marker pointing casual visitors to it today, easy to walk past in a park that holds more than a hundred other ancient pollard oaks, the largest such cluster in Britain outside Windsor Great Park.",
+      "verified_sources": [
+        "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/south-west/domesday-oak-ashton-court/",
+        "https://www.bristol247.com/news-and-features/features/the-secrets-rooted-in-a-tree-as-old-as-domesday/"
+      ],
+      "access": "Free, open access, Ashton Court Estate (daily from 8am, closing time varies by season)",
+      "transport": "Bus or short drive from central Bristol; no on-site rail",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Corroborated by the Ancient Tree Forum's dedicated site page and a Bristol247 feature article, both independently describing the tree's condition (partial collapse, struts and wire support), its 700-year age estimate, the Domesday Book naming story, and the 2002 Tree Council 'Great British Tree' designation. Cross-checked against a 2017 social media post from a local heritage account describing the same collapse and support structure, consistent across multiple years. Genuinely alive as of the most recent (2025) source checked this run, though in decline. Coordinates are Ashton Court Estate's general point (Nominatim-geocoded), not a surveyed position for this specific tree within the large estate; visitor reports note it lacks on-site signage and can be hard to find, reinforcing that no precise public coordinate exists yet.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bri_002",
+      "name": "The Sweet Chestnut of Ashton Park",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "600 years",
+      "age_min": 550,
+      "age_max": 650,
+      "location": {
+        "address": "Ashton Court Estate, Long Ashton, Bristol BS41 9JN",
+        "latitude": 51.447000,
+        "longitude": -2.641500,
+        "neighbourhood": "Ashton Court"
+      },
+      "story": "Sweet Chestnuts spiral as they age, their bark twisting around the trunk in a pattern that gets more pronounced with every passing century, and Ashton Park's oldest is a dramatic example: an estimated 600 years old, with a girth of over eight metres, according to the Bristol Tree Forum's own survey of the city's veteran trees. Sweet Chestnut is not native to Britain, introduced by the Romans and long favoured by estate owners for timber and for the nuts it produces, and a tree of this size and age likely dates to well before Ashton Court passed through its various private owners into Bristol City Council's hands in 1959. It shares its parkland with the Domesday Oak and more than a hundred other ancient pollard oaks, together forming the largest concentration of veteran trees anywhere in Britain outside Windsor Great Park, a legacy of centuries spent as private deer park rather than farmed or built over.",
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+        "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/south-west/ashton-court-park/"
+      ],
+      "access": "Free, open access, Ashton Court Estate (daily from 8am, closing time varies by season)",
+      "transport": "Bus or short drive from central Bristol; no on-site rail",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Girth (805cm) and age estimate (600 years) from the Bristol Tree Forum's detailed veteran tree survey table, a specialist conservation-organisation source with an OS grid reference (ST5541 7203) for this specific specimen; the Ancient Tree Forum's own Ashton Court Park page corroborates the estate's broader status as the largest cluster of veteran/ancient trees in Britain outside Windsor Great Park, the context this entry sits inside. Coordinates are an approximate point within Ashton Court Estate near the grid reference, not independently surveyed by this project.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bri_003",
+      "name": "The Cedar of Lebanon at Blaise Castle",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "250 years",
+      "age_min": 230,
+      "age_max": 270,
+      "location": {
+        "address": "Blaise Castle Estate, Kings Weston Road, Bristol BS10 7QS",
+        "latitude": 51.499170,
+        "longitude": -2.646262,
+        "neighbourhood": "Henbury"
+      },
+      "story": "John Scandrett Harford, a wealthy Bristol banker, bought Blaise Castle Estate in 1789 and hired the two biggest names in English landscape design of the era, Humphry Repton and later John Nash, to remake it into a Picturesque parkland. Repton's method favoured framing views with carefully placed specimen trees rather than dense planting, and the Cedars of Lebanon he set out near Blaise Castle House are some of the estate's oldest surviving evidence of that design still growing where he placed it. Cedar of Lebanon was still a relatively novel import to English gardens at the time, prized for its wide, flat-tiered canopy and biblical associations, and a tree planted in Repton's era has now had well over two centuries to develop the broad, layered crown the species is known for. Bristol Corporation bought the estate in 1926, turning Harford's private grounds into a free public park, and the cedar has stood through that entire transition from private landscape statement to a tree thousands of Bristol families walk past on the way to the children's playground nearby.",
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+        "https://collections.bristolmuseums.org.uk/stories/the-history-of-blaise-estate/"
+      ],
+      "access": "Free, open access, Blaise Castle Estate (daily, dawn to dusk)",
+      "transport": "Bus from central Bristol; no on-site rail",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Girth (695cm) and age estimate (250 years) from the Bristol Tree Forum's veteran tree survey (grid reference ST5624 7869, 'Blaise House'); Bristol Museums' own history of the estate corroborates Repton and Nash's landscaping work for Harford from the 1790s and the 1926 sale to Bristol Corporation. No source gives an exact planting year for this specific cedar; age range reflects the Repton-era design period rather than a precise sourced date.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bri_004",
+      "name": "The Oak of Kings Weston",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "450 years",
+      "age_min": 420,
+      "age_max": 480,
+      "location": {
+        "address": "Kings Weston Estate, Kings Weston Lane, Bristol BS11 0UR",
+        "latitude": 51.494412,
+        "longitude": -2.661499,
+        "neighbourhood": "Kings Weston"
+      },
+      "story": "Sir John Vanbrugh, the architect behind Blenheim Palace and Castle Howard, designed Kings Weston House for the politician Edward Southwell between 1712 and 1719, one of the grandest early 18th-century houses in the Bristol area. An oak growing in the estate's parkland predates that whole building project by well over a century, already an old, established tree when Vanbrugh's workmen were still laying foundations. At an estimated 450 years, it is the oldest tree recorded on the entire estate, a living link to the land before Southwell's family ever owned it. Kings Weston's grounds also hold a lime avenue planted alongside the house's construction around 1720, the oldest of its kind in the city, but the oak stands apart from that formal design, a survivor from an entirely different era of the landscape's history rather than a planned garden feature. Bristol City Council now manages the estate's parkland, keeping it free and open to walkers, cyclists and anyone tracing the boundary between what Southwell built and what was already standing when he arrived.",
+      "verified_sources": [
+        "https://bristoltreeforum.org/meet-bristols-remarkable-trees/veteran-trees-in-the-public-realm/",
+        "https://www.bristolworld.com/news/we-visit-the-historic-bristol-estate-with-stunning-river-views-4344563"
+      ],
+      "access": "Free, open access, Kings Weston Estate (daily, dawn to dusk)",
+      "transport": "Bus from central Bristol; no on-site rail",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Girth (600cm) and age (450 years) from the Bristol Tree Forum's veteran tree survey (grid reference ST5400 7738, 'Kings Weston Estate'), which also independently describes it as the estate's oldest tree, predating the house; a Bristol World feature on the estate corroborates the Vanbrugh/Southwell construction history (1712-1719) used for the comparison in the story. Coordinates are Kings Weston House's general point, not a surveyed position for the tree itself within the wider estate.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bri_005",
+      "name": "The Planes of Queen Square",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "145 years",
+      "age_min": 135,
+      "age_max": 150,
+      "location": {
+        "address": "Queen Square, Bristol BS1 4QS",
+        "latitude": 51.450513,
+        "longitude": -2.594638,
+        "neighbourhood": "City centre"
+      },
+      "story": "Bristol's city council built Queen Square between 1699 and 1720 on reclaimed marshland, selling plots to the city's merchants for grand townhouses around a formal green, one of the largest and earliest Georgian squares in England. The council planted 257 trees there in avenues as early as 1716, but almost none of that original planting survives: the double lines of London Planes that ring the square's edge today were planted later, probably in the 1880s, replacing whatever had come before. The square witnessed real violence in October 1831, when rioters protesting the House of Lords' rejection of electoral reform burned roughly a hundred buildings around its edges, including the Customs House and the Mansion House, in one of the most destructive urban riots in 19th-century Britain; the west side of the square was entirely rebuilt afterward. The planes now ringing the square postdate that fire by half a century, but they have had a century and a half since to grow into the mature canopy that shades the square's paths today, standing over a green that has been rebuilt, replanted and repurposed more than once since 1699.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Queen_Square,_Bristol",
+        "https://www.brh.org.uk/site/articles/bristol-1831-the-queens-square-uprising/"
+      ],
+      "access": "Free, open access, public square",
+      "transport": "5 min walk from Bristol Temple Meads railway station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/London_Planes_Queens_Square_-_geograph.org.uk_-_91527.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "michael, via Geograph/Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Wikipedia's Queen Square, Bristol page and the Bristol Radical History Group's dedicated 1831 riot article corroborate the square's construction history (1699-1720), the 1716 original planting (257 trees, largely lost), the current planes dating to 'probably after 1882', and the 1831 riot's destruction and rebuilding of the west side. Bristol Tree Forum's survey independently lists a Queens Square plane at 510cm girth, 180 years, a slightly older estimate than the '1880s' planting date implies; age range widened to honestly straddle both figures rather than picking one. Presented as a single ensemble entry (the ringed double avenue) per the collectible-point test, not one tree standing in for the whole square. Photo: Wikimedia Commons file 'London Planes Queens Square - geograph.org.uk - 91527.jpg' (michael, CC BY-SA 2.0), geotagged directly at Queen Square, an unambiguous match for this ensemble entry.",
+      "location_precision": "approximate"
+    }
+  ]
+}

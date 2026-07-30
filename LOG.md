@@ -2,6 +2,16 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-30 — Bristol opens: 5 trees, a break from three straight college cities
+
+Same session, straight after Cambridge. No submissions, site healthy, Bristol next in the queue.
+
+**A real change of scenery**: Bristol's remarkable trees come from its merchant-family parkland estates rather than university gardens. Ashton Court, once a private deer park, holds Britain's largest cluster of ancient pollard oaks outside Windsor Great Park, including the ~700-year-old Domesday Oak, one of the Tree Council's 50 Great British Trees, its trunk now held up by struts and wire but genuinely still alive. Added a Repton-landscaped cedar at Blaise Castle, an oak at Kings Weston older than Vanbrugh's own house there, and the planes ringing Queen Square, which survived the 1831 Bristol Riots.
+
+Found a genuinely useful new source this pass: the Bristol Tree Forum's own detailed veteran-tree survey, with OS grid references, girths and ages for 51 named trees across the city, far more rigorous than the usual tourism-blog fare. It also surfaced several candidates on clearly private land (hospital grounds, golf clubs, private garden squares), left out per the public-access rule even though the data existed.
+
+1 of 5 photos found (Queen Square's planes, geotagged directly at the square). Full detail in CURATION.md. Site rebuilt (609 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-30 — Cambridge opens: 5 college trees, 2 photos, a felled-tree superlative avoided
 
 Same session, straight after Oxford. No submissions, site healthy, Cambridge next in the queue.
