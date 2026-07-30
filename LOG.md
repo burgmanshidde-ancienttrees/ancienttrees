@@ -2,6 +2,12 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-30 — Same session, continued: the national Japanese register's licence turns out weaker than assumed, so it stays unimported
+
+Followed up on this session's own note that the national kunishitei/kyoju.biodic backbone was the next real thread for the register layer (Japan pilot). Actually read kunishitei.bunka.go.jp's `/top/policy` page (linked from `/bsys/about`; the `/bsys/top/policy` path OPEN_DATA_SURVEY.md previously guessed 404s) rather than trusting the prior entry's assumption that it cites 政府標準利用規約 2.0. It doesn't: the page says text may be freely reused with attribution, names no open-licence framework, and sits under a blanket "All Rights Reserved" copyright footer, the same shape Tokyo's own catalog page had before its CKAN API's explicit `license_id` field settled that case. **This is genuinely ambiguous, not a clean pass, so nothing was imported.** Corrected OPEN_DATA_SURVEY.md's national-level entry to record the actual policy language and leave the licence question open rather than restate the earlier, unverified assumption. CSV export and coordinate presence also remain unverified; confirming either needs a session that can drive the live search/export interaction rather than read static markup.
+
+No data files changed (documentation only, both this and the entry below). Build and QA re-confirmed clean. Nothing needs Hidde; flagging for whoever next touches the register layer that the national source isn't a ready import despite yesterday's note calling it the pilot backbone.
+
 ## 2026-07-30 — A long depth-work session that mostly confirmed today's earlier sessions were right to stop: one genuine new dead end recorded (Tokyo's municipal tree CSVs), nothing else moved
 
 `python3 scripts/visitors.py`: 91 visits, 169 page views over 7 days (23-29 July: 10, 7, 4, 10, 17, 12, 30), same week as today's other sessions. No reader submissions (CSV still header-only). Build clean at session start (558 pages). `gh` blocked as usual by this session's approval gate; confirmed the latest three Smoke test runs green via the GitHub REST API with `urllib` and the repo's own token. REVIEW.md carries no entries yet (not a BLOCKER, the daily fresh-eyes pass simply hadn't written today's finding when this session started).
