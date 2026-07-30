@@ -1,0 +1,154 @@
+{
+  "city": "Glasgow",
+  "country": "United Kingdom",
+  "status": "needs_curation",
+  "oldest_tree_id": "gla_001",
+  "intro": "Glasgow's remarkable trees are civic rather than wild. A 450-year-old sycamore survived a 2025 hurricane on the strength of its own name alone, an oak was planted in 1918 as a suffrage protest turned permanent, 88 yews still stand around a demolished merchant's mansion, and a pair of Californian redwoods went almost unrecorded until a National Trust survey rediscovered them. None grew up in ancient woodland. All four stand in public parks the city has kept free to enter for the better part of a century.",
+  "meta_description": "Glasgow's most remarkable trees: the storm-damaged Darnley Sycamore, King's Park's yew grove, the 1918 Suffragette Oak, and Holmwood's twin redwoods.",
+  "question_answer": "Glasgow's oldest tree is the Darnley Sycamore, estimated at 450 to 500 years old, standing on the southern edge of the city near Darnley Primary School. Storm Eowyn tore away roughly half its crown in January 2025, but council inspectors found the trunk sound and expect it to survive for decades yet.",
+  "question_meta": "The Darnley Sycamore, 450 to 500 years old and linked to Mary Queen of Scots, is Glasgow's oldest tree, its trunk still standing after 2025 storm damage.",
+  "question_context": "Darnley takes its name from the personal name behind the district, which pre-dates the sycamore by centuries, but by the time Mary Stuart is said to have sat beneath it in 1565, both name and tree were already established features of the countryside south of Glasgow. The city grew out to meet the tree rather than the other way round; postwar housing now surrounds it on every side, with a fence and small plaque the only markers separating it from ordinary suburban Darnley. It has needed defending twice before: once in the early 1900s, when a resident's complaint kept a new tramline from running through it, and again in 1969, when a Barrhead schoolteacher marched primary pupils out with placards to stop a dual carriageway doing the same. Its most serious threat came from weather rather than planners: Storm Eowyn's 100mph gusts in January 2025 tore away roughly half its crown. Council arborists inspected it by hoist rather than write it off from the ground, found the trunk sound, and expect it to stand for decades yet, its recovery now as much a part of the story as its age.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Glasgow?",
+      "a": "The Darnley Sycamore, on the southern edge of the city, estimated at 450 to 500 years old. Storm Eowyn damaged around half its crown in January 2025, but council inspectors expect it to survive for decades."
+    },
+    {
+      "q": "Where is the Suffragette Oak?",
+      "a": "In Kelvingrove Park, near Glasgow University. Suffrage campaigners planted the Hungarian oak on 20 April 1918, days after some British women won the right to vote, and it was named Scotland's Tree of the Year in 2015."
+    },
+    {
+      "q": "Are the King's Park yews open to the public?",
+      "a": "Yes. The 88 yews stand in King's Park, a Glasgow City Council park on Aikenhead Road that has been open and free since the estate was gifted to the city in 1930."
+    },
+    {
+      "q": "Can you visit Holmwood's giant redwoods for free?",
+      "a": "Yes. The grounds of Holmwood House in Cathcart are free to walk; only the Alexander 'Greek' Thomson-designed house itself charges admission, free for National Trust for Scotland members."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gla_001",
+      "name": "The Darnley Sycamore",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "450-500 years",
+      "age_min": 450,
+      "age_max": 550,
+      "location": {
+        "address": "Off Nitshill Road, Darnley, Glasgow G53 7RL",
+        "latitude": 55.8077,
+        "longitude": -4.3476,
+        "neighbourhood": "Darnley"
+      },
+      "story": "For an oak or a yew, 450 years would be middle age. For a sycamore, a fast-growing species that rarely lives past 400, the Darnley Sycamore is already exceptional, and Glasgow has nearly lost it more than once. Local legend holds that in 1565 Mary, Queen of Scots sat beneath its branches nursing her new husband, Henry Stuart, Lord Darnley, through an illness, a story specific enough that the tree still carries his name four and a half centuries later. In 1969, a Barrhead schoolteacher marched 28 primary pupils out with placards reading 'Save the Sycamore' when council engineers proposed routing a new dual carriageway straight through it; newspaper coverage of the protest changed the road's course instead. Decades later came a stranger threat: Storm Eowyn's hurricane-force winds in January 2025, which tore away roughly half its crown and left neighbours fearing the worst. Glasgow City Council sent an arborist up on a hoist rather than write the tree off from the ground, and found the trunk sounder than photographs of the wreckage suggested. Officials now expect decades more from it, with unsafe limbs removed and the rest left to regrow. What remains today stands fenced and plaqued on a housing estate that grew up entirely around it, the only visible trace of the countryside Darnley once was.",
+      "verified_sources": [
+        "https://news.stv.tv/west-central/can-ancient-sycamore-tree-grow-back-after-storm-eowyn-damage",
+        "https://www.forestryjournal.co.uk/news/24884109.community-devastated-storm-eowyn-claimed-historic-glasgow-tree/",
+        "https://en.wikipedia.org/wiki/Darnley"
+      ],
+      "access": "Free, open access, fenced but publicly visible year-round",
+      "transport": "Priesthill & Darnley railway station, then a walk through the housing estate; local buses run along Nitshill Road",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/DarnleySycamore.JPG",
+        "license": "Public Domain",
+        "attribution": "Rosser1954, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Existence, age estimate and 2025 storm damage confirmed independently by STV News, Forestry Journal and the Wikipedia entry citing multiple press sources; the Ancient Tree Inventory (treeId 145911) corroborates the ancient/heritage classification and gives the surveyed grid reference used for coordinates here. Long-term survival remains genuinely uncertain: a January 2025 council statement described the tree as sound and expected to live decades, but an August 2025 Ancient Tree Inventory visitor comment notes a further limb loss and the database itself lists living status as 'Unknown'. The 1969 dual-carriageway protest, including the teacher's and school's names, is sourced to one detailed local-history blog citing a 1969 Daily Record report; not independently re-confirmed elsewhere, so treated as likely but not fully corroborated.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gla_002",
+      "name": "The Suffragette Oak",
+      "species": "Hungarian Oak (Quercus frainetto)",
+      "age_estimate": "108 years",
+      "age_min": 107,
+      "age_max": 109,
+      "location": {
+        "address": "Kelvingrove Park, near Glasgow University, Glasgow G12",
+        "latitude": 55.871667,
+        "longitude": -4.285278,
+        "neighbourhood": "Kelvingrove"
+      },
+      "story": "Not every remarkable tree here began as a sapling nobody thought twice about. This one was planted as a protest made permanent: on 20 April 1918, days after the Representation of the People Act gave some British women the vote for the first time, suffrage campaigner Louisa Lumsden planted a Hungarian oak in Kelvingrove Park on behalf of the Glasgow Society of Women's Suffrage, the Scottish Universities Suffrage Union, the Women's Freedom League and the United Suffragists, groups that had spent years disagreeing on tactics and, for one afternoon, planted a tree together instead. The Women's Committee of Glasgow City Council added a plaque in 1995 on International Women's Day, and in 2015 the Glasgow Women's Library campaigned it to a public vote as Scotland's Tree of the Year, beating five other historic finalists. Storm Ophelia found it in October 2017, stripping around a third of its canopy and tearing its trunk; council arborists reduced its height and rebalanced the crown to save it rather than remove it, and the timber that came down was carved into earrings, coasters and trinket boxes sold by the Women's Library. Now well over a century old and visibly reshaped by that storm, it stands a short walk from Glasgow University, one of the few trees in Britain planted specifically to mark a fight for the vote rather than a coronation or a laird's coming of age.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/The_Suffragette_Oak",
+        "https://feeds.bbci.co.uk/news/uk-scotland-glasgow-west-34655433",
+        "https://charteredforesters.org/suffragette-oak-is-scottish-tree-of-the-year"
+      ],
+      "access": "Free, open access, Kelvingrove Park (open daily)",
+      "transport": "Kelvinhall or Kelvinbridge subway station, short walk through the park",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Scotlands_Tree_of_the_Year_2015_%28geograph_6057313%29.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Thomas Nugent, via Geograph/Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Planting date (20 April 1918), organisers, 1995 plaque, 2015 Tree of the Year win and 2017 Storm Ophelia damage independently confirmed across Wikipedia, BBC News and the Institute of Chartered Foresters. Coordinates from Wikipedia's article-specific geotag, consistent with the Geograph photo's caption placing the tree near Glasgow University in Kelvingrove Park.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gla_003",
+      "name": "The King's Park Yews",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "around 200-220 years",
+      "age_min": 200,
+      "age_max": 220,
+      "location": {
+        "address": "King's Park, Aikenhead Road, Glasgow G44",
+        "latitude": 55.815173,
+        "longitude": -4.2416202,
+        "neighbourhood": "King's Park"
+      },
+      "story": "Most of the ancient-looking yews scattered through Britain's churchyards got there because someone wanted shade over graves. These 88 got here because a Glasgow merchant who had made his fortune in the West Indies trade wanted his new estate to look established. When architect David Hamilton laid out the grounds of Aikenhead House for its owner, John Gordon, in the early 1800s, he planted a formal grove of yews on rising ground east of the mansion, then a second, larger avenue of them a little later in imitation of the first. A specialist survey of the site in 2021 confirmed what the difference in trunk girth already suggested: the smaller eastern grove of 22 trees is measurably older and larger than the 66 planted afterward, some girthed at over four metres. The mansion the yews were planted to flatter had itself replaced an even older house on the same spot, one built for a 17th-century Lord Provost of Glasgow that burned down long before. Aikenhead House passed out of private hands in 1930, when developer Sir John MacTaggart gave the house and its 68 acres of parkland to the city as King's Park. The yews needed no care to survive that change of ownership: they simply kept growing, dark and unhurried, while the mansion around them changed hands, uses, and eventually postcodes.",
+      "verified_sources": [
+        "https://www.ancient-yew.org/yew_trees/glasgow-kings-park-3706/",
+        "https://www.ancient-yew.org/yew_tree_database/glasgow-kings-park/",
+        "https://friendsofkingsparkglasgow.co.uk/history/"
+      ],
+      "access": "Free, open access, King's Park (Glasgow City Council park, open daily)",
+      "transport": "King's Park railway station (Cathcart Circle Line), short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The two groves (22 and 66 yews) and their relative ages by girth are documented by the Ancient Yew Group's dedicated site survey, visited October 2021, cross-checked against Friends of King's Park's own history page for the Aikenhead House ownership timeline and 1805-1823 landscaping dates. No precise planting date exists for either grove, only the estate's documented landscaping window, so the age range is an estimate rather than a recorded figure. Coordinates are the Ancient Yew Group's own GPS reading for their tagged specimen in the older east grove; the entry represents the wider two-grove planting of 88 trees, not a single named tree, in the same way other ensemble entries on this site are pinned to one representative point.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gla_004",
+      "name": "Holmwood's Giant Redwoods",
+      "species": "Giant Redwood (Sequoiadendron giganteum)",
+      "age_estimate": "around 100 years",
+      "age_min": 90,
+      "age_max": 110,
+      "location": {
+        "address": "Holmwood House, 61-63 Netherlee Road, Cathcart, Glasgow G44 3YU",
+        "latitude": 55.8097,
+        "longitude": -4.2593,
+        "neighbourhood": "Cathcart"
+      },
+      "story": "Alexander 'Greek' Thomson's Holmwood is famous for its architecture, a villa modelled so closely on classical Greek temples that its own guidebooks call it his masterpiece, and for years little attention went to what was actually growing in its garden. That changed when the National Trust for Scotland's PLANTS project, a survey set up to catalogue what its properties' grounds actually contain rather than assume the historical record already covers it, worked through Holmwood's parkland and found two Giant Redwoods the trust's own records had barely registered, plus a Himalayan deodar cedar keeping them company. At around a century old, both sequoias are younger than the villa itself, planted well after paper magnate James Couper commissioned the house in 1857, and younger still than California's oldest specimens of the same species, some of which are pushing 3,000 years and eighty metres tall. Glasgow's pair share the same silhouette in miniature: a straight, buttressed trunk and soft, rope-like bark that a curious visitor can press a thumb into without hurting the tree. Whoever planted them was following a very Victorian fashion; seed brought back from California's Sierra Nevada groves after 1853 turned half of aspirational Britain's gardens into pocket-sized redwood forests, and Holmwood's pair survived to become, by complete accident of record-keeping, one of the last things about the estate anybody thought to write down.",
+      "verified_sources": [
+        "https://www.nts.org.uk/stories/plant-of-the-month-sequoiadendron-giganteum",
+        "https://www.nts.org.uk/stories/sprouting-success-year-one-of-plants"
+      ],
+      "access": "Free, grounds open to walk daily; the house itself charges admission (National Trust for Scotland, members free)",
+      "transport": "Cathcart railway station, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Both National Trust for Scotland 'PLANTS project' stories independently describe the two giant redwoods and the accompanying deodar cedar, discovered/catalogued during the project's site survey, and give the approximate age as about 100 years; no more precise planting date is recorded by the source. Coordinates are Holmwood House's general grounds point (5 acres), not a surveyed position for either specific tree within the garden.",
+      "location_precision": "approximate"
+    }
+  ]
+}

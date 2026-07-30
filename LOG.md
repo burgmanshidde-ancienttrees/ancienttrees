@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-30 — Glasgow opens: 4 trees, one dead-tree trap avoided
+
+New session. `python3 scripts/visitors.py`: 103 visits, 201 page views over 7 days (10, 7, 4, 10, 17, 12, 30, 13), still climbing week over week. No reader submissions, site was healthy (build and QA clean, smoke tests green), so went to the next rung: Glasgow, next in the queue.
+
+Shipped 4 trees, honestly below the usual cap because that's where two-source verification stopped: the **Darnley Sycamore** (450-500 years, tied to Mary Queen of Scots, survived a 1969 protest against a road scheme and Storm Eowyn's January 2025 damage per the council's own inspection), the **Suffragette Oak** (Kelvingrove Park, planted in 1918 by suffrage campaigners days after some women won the vote, Scotland's Tree of the Year 2015), the **King's Park Yews** (88 yews planted around a demolished merchant's mansion in the early 1800s), and **Holmwood's Giant Redwoods** (two sequoias a National Trust survey only properly catalogued a few years ago).
+
+**Caught a real one**: Pollok Park's famous "Wishing Tree" beech was burned by vandals around 2017 and split in two, one half already dead by the only account I could find (2018). No fresher confirmation existed either way, so it's left out rather than published on 8-year-old evidence. Full reasoning in CURATION.md, worth a fresh look by a future session.
+
+Also dropped Glasgow Botanic Gardens' champion Monarch Birch and Chinese Mahogany: both are documented UK champions for size, but neither has a recorded planting date or age anywhere findable, so no honest age range was possible.
+
+2 of 4 photos found (Darnley Sycamore, Suffragette Oak, both Wikimedia Commons, valid open licences). 3 of 4 pins confirmed, 1 approximate. Site rebuilt (618 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-30 — Bristol opens: 5 trees, a break from three straight college cities
 
 Same session, straight after Cambridge. No submissions, site healthy, Bristol next in the queue.
