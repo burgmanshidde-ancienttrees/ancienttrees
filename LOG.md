@@ -58,6 +58,17 @@ His full product walk, tested against the corpus and shipped in one pass: in-sea
 
 Parked for Hidde: season-shelf naming, phenology icons per tree (needs a data field), native submission form (needs his yes, Supabase could carry it), the "old" brand question, and his 80/20 coverage proposal (answered in chat, decision his).
 
+## 2026-07-30 (avond) — Hidde's bedtime batch: check-in wordt app-funnel, login live, registerstrategie in de runs
+
+Executed while he slept, all gates his own words from tonight:
+
+- **Check-in left the web.** The tree-page button now reads "Check in with the app" and links to /app; city-row check-in buttons and the geolocation script are gone. Visitors' on-device collections are untouched; city pages still paint previously collected pins. This activates the recorded "web check-in moves to the app" direction and turns every check-in impulse into app-demand signal for the /app door experiment.
+- **Login is live.** His delete_user() SQL ran; the full chain was machine-verified (create account with a disposable inbox, sign in, delete via the rpc, user_not_found afterwards). AUTH_ENABLED flipped: "Log in" sits next to Get-the-app on desktop and in the mobile menu; the account page stays noindexed. One leftover for him, non-blocking: the OLD test user (attest...@web-library.net) predates the delete button; one click in Supabase dashboard (Authentication -> Users) removes it.
+- **The register strategy is now run-executable.** CLAUDE.md gained "The register layer" work form (register-source rule, semantic filter, licence-first with proving sentences, approximate-by-default pins, no pages, not collectible, game parked). OPEN_DATA_SURVEY.md gained the Japan scouting: Tokyo has a CC BY CSV with coordinates (35 natural monuments, first import candidate), the national register is the backbone (policy page needs one full read), Nara is CC BY without coordinates, Kyoto has nothing usable, Kyushu/Hokuriku still unscouted (a register-work run picks that up first). His "first connected tree register of the world" positioning is recorded in GO_TO_MARKET.md as an instinct, not yet copy. His tier model (everything collectible, value tiered) and the >10-per-city-for-routes question are both parked in BACKLOG.md for the mid-September checkpoint; runs build none of the game.
+- Earlier today, same session: the whole-product walkthrough shipped (season demoted to a map layer with pulsing gold pins, cluster-click bug fixed, one-world map, in-map search and locate, nav deduplicated, chips cleaned, equal directory columns), phenology icons on the season block, the QA machine (qa.py deploy gate, Chrome smoke test, daily fresh-eyes reviewer, Monday corpus audits), CLAUDE.md slimmed a third on his yes, Plus closed, one fixed hero photo, and the credits rule (record always, display only when the licence requires).
+
+FOR HIDDE (morning read, nothing urgent): delete the old test user (one click, above); say the word on the season-shelf name whenever; the native form build starts next session and will need one SQL + one GitHub secret from you at the switch moment.
+
 ## 2026-07-29 — Whole-product composition pass (session, with Hidde): every page type walked, seven classes of defect fixed
 
 The homepage got the principle-11 treatment yesterday; today the rest of the product got the same walk, desktop and 375px, page type by page type. Found and fixed, one commit:
