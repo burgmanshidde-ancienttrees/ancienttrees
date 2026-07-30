@@ -15,7 +15,9 @@ anything is written. A page that fails validation fails the build.
 URLs are extensionless (london.html is served at /london by GitHub
 Pages). Old /cities/[slug]/ URLs get redirect stubs.
 
-Reads data/city-list.json, data/cities/*.json, data/collections/*.json.
+Reads data/city-list.json, data/cities/*.json, data/collections/*.json,
+data/registers/*.json (the register layer: government-designated trees
+shown as unlinked, unverified map dots, see CLAUDE.md).
 Writes site/dist/. No dependencies beyond the Python 3.9 stdlib.
 
 Usage: python3 scripts/build_site.py
@@ -1599,6 +1601,33 @@ def load_collections():
     return [json.loads(f.read_text()) for f in sorted(coll_dir.glob("*.json"))]
 
 
+def load_registers():
+    """The register layer (CLAUDE.md, 'The register layer', approved 2026-07-29/30):
+    officially designated trees from government registers, shown as honestly-labeled
+    map dots. Not our research, not collectible, no own pages. Each data/registers/*.json
+    already carries only trees a register itself calls monumental/remarkable (never a
+    bulk inventory) and only the licence this project verified as commercial-reuse-safe."""
+    reg_dir = DATA / "registers"
+    if not reg_dir.exists():
+        return []
+    out = []
+    for f in sorted(reg_dir.glob("*.json")):
+        d = json.loads(f.read_text())
+        for t in d.get("trees", []):
+            out.append({
+                "name": t.get("name_en") or t["name_ja"],
+                # English display area falls back to the raw field rather than
+                # hiding a tree a translation was missed for (P7: say what you
+                # know honestly, never blank).
+                "area": t.get("area_en") or t.get("area", ""),
+                "prefecture": d["prefecture"],
+                "designation": f"{d['prefecture']} Natural Monument",
+                "lat": t["latitude"],
+                "lng": t["longitude"],
+            })
+    return out
+
+
 def load_species_intros():
     """Hand-written intros keyed by common_name. A species page can't publish
     without one (Contract F, P3)."""
@@ -2481,11 +2510,16 @@ def build_fakedoor_pages(pages):
 
 
 
-def build_explore_page(all_cities, pages):
+def build_explore_page(all_cities, pages, registers=None):
     """One map, every tree (PRODUCT_IA follow-up, 2026-07-28). GeoJSON circle
     layers with native clustering: fast at 341 trees and at 3,000. Trees whose
     best_time includes the build month render gold, the season made visible.
-    The nav item "Map" points here; the homepage hero stays the front door."""
+    The nav item "Map" points here; the homepage hero stays the front door.
+
+    The register layer (CLAUDE.md, approved 2026-07-29/30) renders as a second,
+    visually quieter source: small hollow grey dots, no clustering (the pilot
+    is 28 points), no link out since these carry no own page, and a popup that
+    always states the required honesty label verbatim."""
     import datetime as _dt
     month = _dt.date.today().month
     feats = []
@@ -2507,6 +2541,13 @@ def build_explore_page(all_cities, pages):
                 },
             })
     geojson = json.dumps({"type": "FeatureCollection", "features": feats})
+    reg_feats = [{
+        "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [r["lng"], r["lat"]]},
+        "properties": {"name": r["name"], "area": r["area"],
+                       "designation": r["designation"]},
+    } for r in (registers or [])]
+    reg_geojson = json.dumps({"type": "FeatureCollection", "features": reg_feats})
     canonical = f"{BASE_URL}/explore"
     # No counts in this copy (Hidde, 2026-07-29): "je moet nadenken dat alles
     # wat je maakt ooit gaat bestaan uit miljoenen bomen." A sentence that
@@ -2532,6 +2573,7 @@ def build_explore_page(all_cities, pages):
 """
     script = """
 var DATA = __GEOJSON__;
+var REGISTERS = __REGISTERS__;
 var CITIES = __CITIES__;
 // One world only (Hidde, 2026-07-29: "ik hoef niet 2 werelden te zien").
 var map = new maplibregl.Map({
@@ -2584,6 +2626,28 @@ function initTreeLayers() {
     paint: {'circle-color': ['case', ['==', ['get', 'now'], 1], '#D9A13F', '#4A6B2A'],
             'circle-radius': ['case', ['==', ['get', 'now'], 1], 9, 7],
             'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
+  // The register layer: officially designated trees from a government
+  // register, not our own research. Visually quieter than the curated
+  // trees on purpose (small, hollow, grey) so the two layers read as
+  // different kinds of thing, not competing dots. No clustering (small
+  // pilot count); no click-through URL, since these carry no own page.
+  if (REGISTERS.features.length) {
+    map.addSource('registers', {type: 'geojson', data: REGISTERS});
+    map.addLayer({id: 'register', type: 'circle', source: 'registers',
+      paint: {'circle-color': 'rgba(0,0,0,0)', 'circle-radius': 5,
+              'circle-stroke-width': 1.5, 'circle-stroke-color': '#8A8578'}});
+    map.on('click', 'register', function(e) {
+      var p = e.features[0].properties;
+      new maplibregl.Popup({offset: 10})
+        .setLngLat(e.features[0].geometry.coordinates)
+        .setHTML('<strong>' + p.name + '</strong><br>' + p.designation +
+                 (p.area ? ' &middot; ' + p.area : '') +
+                 '<br><em>From the official register, not yet verified by us.</em>')
+        .addTo(map);
+    });
+    map.on('mouseenter', 'register', function() { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', 'register', function() { map.getCanvas().style.cursor = ''; });
+  }
   // MapLibre v4: getClusterExpansionZoom returns a Promise; the old callback
   // form failed silently, which made cluster clicks do nothing (Hidde found
   // it: "als ik op die 30 klik moet er iets gebeuren").
@@ -2623,6 +2687,7 @@ if (map.isStyleLoaded()) { initTreeLayers(); }
 })(0);
 """
     script = (script.replace("__GEOJSON__", geojson)
+                    .replace("__REGISTERS__", reg_geojson)
                     .replace("__CITIES__", cities_json)
                     .replace("__STYLE__", MAP_STYLE))
     script = f'<script src="{MAPLIBRE_JS}"></script>\n<script>\n' + script + "\n</script>"
@@ -3368,6 +3433,7 @@ def build_sitemap(pages):
 def main():
     cities = load_cities()
     collections = load_collections()
+    registers = load_registers()
     # Contract D: a draft (needs_curation) never gets linked publicly until
     # Hidde approves it. Only non-draft collections feed the homepage, city,
     # question and index pages; drafts still get their own page (see the
@@ -3429,7 +3495,7 @@ def main():
     build_contribute_page(published, pages)
     build_privacy_page(pages)
     build_fakedoor_pages(pages)
-    build_explore_page(renderable, pages)
+    build_explore_page(renderable, pages, registers=registers)
     build_in_season_page(renderable, tree_slugs, pages)
     species_slugs = sorted((common, slugify(common)) for common in qualifying) if qualifying else []
     build_homepage(published, upcoming, public_collections, pages,
