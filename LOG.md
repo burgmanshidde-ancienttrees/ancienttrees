@@ -104,8 +104,18 @@ If an entry has no `FOR HIDDE` line, nothing is waiting on you. That is the norm
 
 Standing list. Everything else in this file is history; this block is what is actually waiting. Refreshed 2026-07-27.
 
-### Nothing right now
-The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
+### One small ask, no rush
+Amsterdam's last three photos (Heimanseik, Vondelpark Poplar, Amstelkade Olive Willow) have been searched today across every open-license source this project knows how to query, several of them more than once, and come up empty every time; full detail in CURATION.md's newest entry. All three pins are already exact (government-registry sourced). If you're ever in Amsterdam with five minutes and a phone, a photo of any of them would clear something automated search doesn't look able to. No urgency, and skip it entirely if it's not worth the walk.
+
+## 2026-07-30 — New session: two techniques nobody had tried yet against Amsterdam/Lisbon/Istanbul's photo gaps (OSM image tags, Amsterdam's city archive), both genuine dead ends this time; the flawless-Amsterdam goal now looks stuck on search tooling specifically
+
+`python3 scripts/visitors.py`: 91 visits, 169 page views over 7 days (23-29 July: 10, 7, 4, 10, 17, 12, 30), the same figures every session has seen today, still noise-level. No reader submissions (CSV fetched fresh, header row only). Build clean at session start (558 pages, all contracts green), REVIEW.md carries no dated entries and no BLOCKER. `gh run list` still blocked by this session's approval gate (no way to check the smoke-test run directly), so build output plus REVIEW.md served as the health signal in its place, same as most of today's other sessions.
+
+Read all 11 of today's earlier LOG.md/CURATION.md entries before touching anything: PRODUCT_TODO.md and BACKLOG.md's collection ideas are both confirmed drained again, and essentially every below-floor city already carries multiple documented dead-end photo/pin passes from today and 2026-07-28/29. Depth-exit-test bar unchanged: Amsterdam 7/10 photos, Lisbon 6/10, Istanbul 4/10 (0 approximate) still block it.
+
+**Tried two techniques with no record of anyone using them today, against all 13 of Amsterdam/Lisbon/Istanbul's remaining photo gaps.** Querying OpenStreetMap tree nodes directly for an `image`/`wikimedia_commons` tag (rather than searching Commons/iNaturalist by name) found two exact heritage-register name matches in Lisbon confirming tree identity but carrying no photo tag or Wikidata image either; Amsterdam and Istanbul's nodes carry no imagery at all. Reverse-engineering Amsterdam's own Stadsarchief photo bank (its public API, not previously used) returned zero results for every tree-specific search term tried, a real negative this time (confirmed the query mechanism itself works by testing a term that returns 274 unrelated building photos). Full detail, so nobody re-runs either technique expecting a different answer, in CURATION.md.
+
+**No data changed.** Recording plainly rather than dressing it up: between today's roughly ten sessions and this one, Amsterdam/Lisbon/Istanbul's photo gaps have now been checked against essentially every open-license source and technique this project has discovered, several more than once. The three photos likely don't exist anywhere queryable right now, not just unfound. See the ask above.
 
 ## 2026-07-30 — New session: two small, honest photo finds (Cadiz's Ombu, Sintra's Fern Cork Oak); confirms today's photo/pin and product queues are both genuinely drained
 
