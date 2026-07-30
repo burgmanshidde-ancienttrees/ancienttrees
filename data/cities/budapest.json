@@ -1,0 +1,183 @@
+{
+  "city": "Budapest",
+  "country": "Hungary",
+  "status": "needs_curation",
+  "oldest_tree_id": "bud_002",
+  "intro": "Budapest's oldest trees survive because a Habsburg palatine liked gardening. Archduke Joseph turned Margaret Island into his private botanical retreat in the 1810s and 1820s, planting a plane tree the city and the Hungarian Academy of Sciences later jointly named the Tree of Science, and employing the gardener behind a Japanese pagoda tree at Buda Castle that went on to survive a revolution, an emperor's redesign plans, and two world wars. A mulberry from Maria Theresa's silk industry and a war-scarred plane the city renamed in tribute round out a list built entirely on trees Budapest fought to keep standing.",
+  "meta_description": "Budapest's most remarkable trees: Margaret Island's Tree of Science plane, Buda Castle's 250-year pagoda tree, and mulberry from Maria Theresa's silk era.",
+  "question_answer": "Budapest's oldest documented tree is the Japanese Pagoda Tree beside the Great Rondella at Buda Castle, planted around 1790 and estimated at 230 to 250 years old. It survived the 1848-49 revolution, a plan to remove it in the 1890s, and heavy fighting in the Second World War.",
+  "question_meta": "The Japanese Pagoda Tree at Buda Castle, planted around 1790, is Budapest's oldest documented tree, surviving a revolution and two world wars.",
+  "question_context": "Antal Tost, gardener to Palatine Joseph, planted a Japanese pagoda tree on the slope beside Buda Castle's great southern rondella around 1790, when the species was still a rare Chinese import into Europe despite its misleading Japanese name. By 1862 an academic lecture already called it the largest tree in the castle garden. It stood through the cannon fire of the 1848-49 revolution, and nearly lost a slower fight decades later: when the castle gardens were redesigned at the end of the 19th century, the plan called for felling it, until head gardener Karoly Mraz personally talked Emperor Franz Joseph into sparing it instead. It survived the Second World War as well, through fighting that flattened much of the district around it, and today stands on ground that is free to walk through the South Gardens' terraces below the palace. Locals have long called it simply the Nagy Fa, the Big Tree, a name older and plainer than any of the official ones the city has since given it.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Budapest?",
+      "a": "The Japanese Pagoda Tree beside Buda Castle's Great Rondella, planted around 1790 and estimated at 230 to 250 years old, Budapest's oldest documented tree."
+    },
+    {
+      "q": "What is the Tree of Science on Margaret Island?",
+      "a": "A London Plane that Archduke Joseph, Palatine of Hungary, planted in 1823. The city and the Hungarian Academy of Sciences jointly named it the Tree of Science for its size and age."
+    },
+    {
+      "q": "Is the Taban Mulberry still alive?",
+      "a": "Yes, though fragile. Budapest's parks authority began active conservation work on the roughly 200-to-300-year-old tree in 2021, and a sign now asks visitors not to climb its branches."
+    },
+    {
+      "q": "Why is it called the Seven Chieftains Plane?",
+      "a": "The name honors an earlier Margaret Island plane that split into seven trunks after an 1838 flood and died around 1935. This tree, a different specimen nearby, regrew into seven limbs after war damage in 1945 and was renamed in tribute."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bud_001",
+      "name": "The Tree of Science",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "around 203 years",
+      "age_min": 200,
+      "age_max": 205,
+      "location": {
+        "address": "Margaret Island, near the water tower, between the Dominican convent ruins and Saint Michael's Chapel",
+        "latitude": 47.53028,
+        "longitude": 19.05,
+        "neighbourhood": "Margaret Island"
+      },
+      "story": "Archduke Joseph, Palatine of Hungary, planted this plane tree with his own hands in 1823 on what was then his private island retreat, two years before Count Istvan Szechenyi founded the Hungarian Academy of Sciences a short walk away across the water. The near-coincidence in dates gave the tree its modern title: the city and the Academy jointly named it the Tree of Science, a formal honour for a plane that has quietly outlasted both the Habsburg court that planted it and the war that nearly took its neighbours. Its statistics explain the reputation on their own: a trunk 6.64 metres around, a crown 55 metres wide, and a canopy foresters have estimated at 30 to 50 tonnes of leaf and wood, among the most admired plane crowns anywhere in Europe. It has stood through two world wars, the 1956 revolution, and repeated redesigns of the island around it, rooted between the ruined Dominican convent where Saint Margaret of Hungary once lived and the Art Nouveau water tower built in 1911. Archduke Joseph is the reason Margaret Island has any ancient trees at all: he turned a semi-wild royal hunting ground into a private garden in the 1810s and 1820s, planting exotic specimens with no way of knowing they would still be standing two centuries later, at nearly double the height of the buildings around them.",
+      "verified_sources": [
+        "https://welovebudapest.com/cikk/2026/06/21/osplatan-margitsziget-tudomany-faja/",
+        "https://pestbuda.hu/cikk/20171008_osplatan_a_margitszigeten",
+        "https://kertesz.blog.hu/2012/05/29/margitszigeti_osplatan_vigyaz_z_unk_rad"
+      ],
+      "access": "Free, open access, Margaret Island (public park, open daily)",
+      "transport": "Bus 26 (the island's only bus route, from Nyugati ter) or tram 4/6 to Margit hid, budai hidfo, then a walk onto the island",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Planting date (1823), planter (Archduke Joseph), and measurements (664cm trunk circumference, 42m height, 55m crown per welovebudapest's dedicated 2026 article) cross-checked against pestbuda.hu's 2017 feature and a 2012 arborist blog post; minor variation between sources on exact trunk girth (six-and-a-half metres versus 664cm) and height (40m versus 42m) reflects different measurement years, not a real dispute. The 2026 'Tree of Science' naming is a joint Budapest Municipality/Hungarian Academy of Sciences initiative reported by multiple contemporary outlets.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bud_002",
+      "name": "The Pagoda Tree of Buda Castle",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "230-250 years",
+      "age_min": 230,
+      "age_max": 250,
+      "location": {
+        "address": "Beside the Great Rondella (Nagy Rondella), Buda Castle South Gardens, Budapest I. kerulet",
+        "latitude": 47.494,
+        "longitude": 19.0414,
+        "neighbourhood": "Castle Hill"
+      },
+      "story": "By the time Franz Joseph became emperor, this tree had already outlived the reason anyone remembered planting it. Antal Tost, gardener to Palatine Joseph, chose a Japanese pagoda tree for the slope beside Buda Castle's great southern rondella around 1790, when the species itself was still a botanical novelty in Europe, imported from China only a few decades earlier despite its misleading name. By 1862, an academic lecture was already calling it the largest tree in the castle garden. It survived the 1848-49 revolution, when fighting tore through the district around it, and came close to losing a very different fight decades later: when the castle's gardens were redesigned at the end of the 19th century, the plan called for the tree's removal, until head gardener Karoly Mraz personally persuaded Franz Joseph to spare it. It survived the Second World War too, through fighting that flattened much of the district above it. Today it stands roughly 230 to 250 years old by the estimates on record, Budapest's oldest documented tree, on ground that is free to walk through the South Gardens' terraces. Locals nicknamed it simply the Nagy Fa, the Big Tree, long before anyone thought to give it a more official name.",
+      "verified_sources": [
+        "https://pestbuda.hu/en/cikk/19700101_a_garden_for_kings_the_oldest_trees_of_buda_castle_each_have_a_story_to_tell",
+        "https://fokert.budapestikozmuvek.hu/japan-akac-a-rondellanal-i-keruletnevezetes-fak",
+        "https://www.budacastle.hu/what-to-see/deli-rondella/"
+      ],
+      "access": "Free, open access, Buda Castle South Gardens (terraces open daily)",
+      "transport": "Buda Castle Funicular from Clark Adam ter, or the free public elevator at the Castle Garden Bazaar; bus 16 from Deak Ferenc ter",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Planting date (c.1790), planter/gardener attribution (Antal Tost for Palatine Joseph), the 1862 lecture reference, the 1848-49 revolution survival, the late-19th-century removal plan and Karoly Mraz's intervention, and WWII survival are corroborated across the official FOKERT (Budapest parks authority) page and pestbuda.hu's English feature, independently reported in the same terms. Age is given as a range (230-250 years) because sources use both a rough 'around 250 years' figure and a more specific '1790s planting' date, which yield slightly different totals depending on the reference year.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bud_003",
+      "name": "The Old Acacia of Erzsebet Square",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "150-165 years",
+      "age_min": 150,
+      "age_max": 165,
+      "location": {
+        "address": "Erzsebet ter, corner toward Jozsef Attila utca, Budapest V. kerulet",
+        "latitude": 47.4984,
+        "longitude": 19.0532,
+        "neighbourhood": "Belvaros-Lipotvaros"
+      },
+      "story": "A 1960s survey by Budapest's own parks department already described this black locust as over a hundred years old, which places its planting somewhere in the 1860s, not long after Erzsebet Square itself was laid out on the site of a demolished monastery cemetery. It has stood at the corner toward Jozsef Attila utca through everything the square went through since: the aftermath of the square's namesake, Empress Elisabeth's assassination in 1898, the arrival of the city's first long-distance bus station on the same ground in the 20th century, and the underground shopping centre and park redesign that replaced the bus station later still. Black locusts are not typically long-lived or especially prized trees; 19th-century Hungary planted them mainly to bind the sandy soil of the Great Plain rather than for their looks, which makes this one's survival at the dead centre of the capital more a matter of civic accident than deliberate preservation. It has not gone entirely unscathed: its upper branch dried out sometime in the 1980s, and it has leaned slowly ever since, now propped at two points by the city's own parks maintenance company rather than left to fall on its own schedule. Nobody planted it to be remembered. It simply refused to be removed for a century and a half while the square around it was rebuilt three times over.",
+      "verified_sources": [
+        "https://welovebudapest.com/toplista/2023/05/10/latnivalok-es-kultura-budapest-idos-fai/",
+        "https://pestbuda.hu/cikk/20181213_szivos_szemtanu_idos_akac_az_erzsebet_teren"
+      ],
+      "access": "Free, open access, Erzsebet ter (public square, open at all times)",
+      "transport": "Deak Ferenc ter (metro lines M1/M2/M3, adjacent square), short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Age estimate, location, 1980s branch damage and ongoing structural support independently confirmed by welovebudapest's 2023 feature on Budapest's old trees and a dedicated 2018 pestbuda.hu article on this specific tree. No age or planting-date dispute found between the two.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bud_004",
+      "name": "The Taban Mulberry",
+      "species": "White Mulberry (Morus alba)",
+      "age_estimate": "200-300 years",
+      "age_min": 200,
+      "age_max": 300,
+      "location": {
+        "address": "Near Komuves lepcso (Stonemason's Stairs), Taban, Budapest I. kerulet",
+        "latitude": 47.4925,
+        "longitude": 19.0379,
+        "neighbourhood": "Taban"
+      },
+      "story": "Popular legend says Ottoman occupiers planted this mulberry during their century and a half ruling Buda, which would make it well over 400 years old; the more carefully sourced version, and the one this project follows, credits Empress Maria Theresa's 18th-century push to build a domestic silk industry, which put mulberry orchards across Taban specifically to feed silkworms, with a 1771 report confirming mulberries already growing in the district by then. Either story would make it one of the oldest trees in Budapest; historians settle on 200 to 250 years as the defensible range, though some push it as high as 300. It once grew inside the yard of a house whose fence has long since vanished, its canopy spilling toward what was then the top of the Komuves lepcso, a stone staircase since rebuilt slightly further along the hillside than its original route. By 2021 the tree was in poor enough condition that Budapest's parks authority began active conservation work to save it, propping and pruning rather than letting a specimen this rare simply fail. A sign on today's Taban Botanical Trail warns visitors not to climb its branches, a small, practical reminder that a centuries-old story is still standing on a genuinely fragile trunk.",
+      "verified_sources": [
+        "https://pestbuda.hu/cikk/20170930_az_eperfa_osi_lombja",
+        "https://hu.wikipedia.org/wiki/Tab%C3%A1ni_eperfa"
+      ],
+      "access": "Free, open access, Taban Botanical Trail (public hillside, open at all times)",
+      "transport": "Tram 19 or 41 along the Danube to Varkert Bazar, then a walk uphill into Taban",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age range (200-300 years), Maria Theresa-era silk industry origin, the 1771 planting report and the Ottoman legend (explicitly presented as the less likely account) are corroborated between pestbuda.hu's dedicated feature and the Hungarian Wikipedia entry, which cites the same underlying sources. The tree's poor condition and 2021 conservation intervention are separately confirmed by a 2021 gardening blog post (kreativkertesz.hu) describing active rescue works beginning that April. Exact coordinates are Komuves lepcso's general location (Nominatim-geocoded), not a surveyed point for the specific tree, which sources describe as somewhat displaced from the rebuilt staircase's current route.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bud_005",
+      "name": "The Seven Chieftains Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "around 80 years",
+      "age_min": 75,
+      "age_max": 85,
+      "location": {
+        "address": "Margaret Island, opposite Palatinus Strand",
+        "latitude": 47.5281,
+        "longitude": 19.0469,
+        "neighbourhood": "Margaret Island"
+      },
+      "story": "This tree is not the one its name first belonged to. Palatine Joseph's original favourite plane on Margaret Island, split into seven trunks after an 1838 flood snapped it as a sapling, was struck by lightning and finally died around 1935; Hungarians called it the Het Testver, the Seven Brothers. A different plane growing 265 metres north, opposite what is now the Palatinus Strand, took catastrophic damage of its own during the fighting that swept the island in January 1945. Rather than remove it, head gardener Antal Kunsch cut the wrecked trunk back hard, and the tree responded by resprouting into seven new limbs of its own, an accident of pruning that echoed the older tree closely enough that Budapest's parks authority renamed it in tribute: the Hetvezer, the Seven Chieftains. Eight decades later it casts roughly 300 square metres of shade, nearly 30 metres tall, its bark peeling in the mottled patches typical of old planes, on ground that thousands of sunbathers walk past every summer on their way to the baths without necessarily knowing they are looking at a war wound that became one of the island's best-loved trees.",
+      "verified_sources": [
+        "https://pestbuda.hu/cikk/20190710_viczian_zsofia_platan_a_palatinusnal_avagy_a_het_vezer_nyomaban",
+        "https://www.szeretlekmagyarorszag.hu/budapest/a-margitsziget-platanfainak-rejtelye/"
+      ],
+      "access": "Free, open access, Margaret Island (public park, open daily; Palatinus Strand itself is a paid bathing complex, but the tree stands outside it on open parkland)",
+      "transport": "Bus 26 (the island's only bus route, from Nyugati ter), stop near Palatinus Strand",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The distinction between the original 'Het Testver' plane (died c.1935) and this successor tree (war-damaged and regrown after January 1945, renamed 'Hetvezer' in tribute) is documented in detail and consistently across pestbuda.hu's dedicated feature and szeretlekmagyarorszag.hu's independent piece; kept the two trees clearly separate in the story to avoid the same original-versus-successor conflation this project has caught in other cities. Coordinates are Palatinus Strand's general location, not a surveyed point for the tree itself.",
+      "location_precision": "approximate"
+    }
+  ]
+}
