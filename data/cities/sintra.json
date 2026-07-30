@@ -35,8 +35,8 @@
       "age_max": 160,
       "location": {
         "address": "Parque da Pena, near the Fonte dos Passarinhos, 2710-609 Sintra",
-        "latitude": 38.7862,
-        "longitude": -9.3928,
+        "latitude": 38.786,
+        "longitude": -9.393361,
         "neighbourhood": "São Pedro de Penaferrim"
       },
       "story": "This tree has spent a century and a half slowly relocating itself. Planted not long after King Ferdinand II began building his Romantic fantasy palace on the ruins of a monastery above Sintra, this western red cedar grows a peculiar habit into every low branch: instead of staying airborne, they arc down under their own weight, touch the ground, take root, and thicken into new trunks entirely separate from the original. Repeat that for a century and a half and the result is a small forest walking, metre by metre, toward the nearby lake, each generation of trunks a few steps closer than the last. Forestry students have used it as a teaching example since at least 1916, and it was still notable enough in 2019 to be shortlisted for Portugal's national Árvore do Ano contest. Its perimeter now measures nearly 17 metres, though that number describes a cluster of connected trunks rather than one column the way most tree measurements do. Parque da Pena's own guides call it simply the tree that walks, and once you have seen one root touch down mid-arc, the name stops sounding like a metaphor. It stands a short walk from the Fonte dos Passarinhos, inside the park surrounding Pena Palace, one of the most visited sites in Portugal.",
@@ -53,8 +53,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Location is approximate: sourced to the Fonte dos Passarinhos landmark near this tree, not a surveyed point for the tree itself, since Parques de Sintra does not publish individual tree coordinates. Age and history corroborated independently by Parques de Sintra's own blog and Ambiente Magazine's 2019 Arvore do Ano coverage (also carried by Sintra Noticias); no source gives an exact planting date, so the range is estimated from the park's mid-19th century construction under Ferdinand II. Photo viewed directly (fetched and read as an image, not just metadata): shows a multi-trunked conifer with one low branch arcing down and rooting into a new trunk beside an interpretive sign, matching this tree's own defining feature exactly.",
-      "location_precision": "approximate"
+      "notes": "Age and history corroborated independently by Parques de Sintra's own blog and Ambiente Magazine's 2019 Arvore do Ano coverage (also carried by Sintra Noticias); no source gives an exact planting date, so the range is estimated from the park's mid-19th century construction under Ferdinand II. Photo viewed directly (fetched and read as an image, not just metadata): shows a multi-trunked conifer with one low branch arcing down and rooting into a new trunk beside an interpretive sign, matching this tree's own defining feature exactly. Coordinates tightened 2026-07-30, moved about 50m from the old Fonte dos Passarinhos landmark estimate: an OpenStreetMap node individually tagged 'Tuia-gigante' / 'Western Red Cedar' with a natural_monument denotation (Portugal's own tree-of-the-year competition once profiled it, though that specific page no longer resolves) sits at 38.786, -9.393361, matching this tree's species exactly. Portugal's ICNF national register of classified public-interest trees was checked directly for Sintra concelho (16 entries) and does not include this specimen, since it stands inside the paid Pena estate rather than on public land, so ICNF is not a competing source here.",
+      "location_precision": "confirmed"
     },
     {
       "id": "sin_002",
@@ -124,8 +124,8 @@
       "age_max": 180,
       "location": {
         "address": "Parque de Monserrate, near the lake, 2710-405 Sintra",
-        "latitude": 38.7942,
-        "longitude": -9.4206,
+        "latitude": 38.79332,
+        "longitude": -9.421356,
         "neighbourhood": "Galamares"
       },
       "story": "The tallest tree in one of Portugal's most exotic gardens came from an island most of its visitors couldn't place on a map. Francis Cook, the English textile magnate who bought the crumbling Monserrate estate in 1856, spent the following decades turning its grounds into a private arboretum stitched together from wherever his money could reach: Mexico, the Himalayas, Australia, and this Araucaria heterophylla, native only to a single island in the Tasman Sea, Norfolk Island, some 1,600 kilometres from the Australian mainland it is usually filed under. Planted in Monserrate's mid-19th century expansion, it now stands over 50 metres tall with a crown spreading 22 metres across, by most measurements the tallest tree in the entire garden and a strong candidate for the tallest on mainland Portugal. It grows at the low point of the grounds, beside the ornamental lake, so that visitors coming down through Cook's Himalayan and Mexican plantings see it rising above everything else before they reach the water. Cook never lived to see the tree reach anything like its current size. What he built instead was a garden designed to keep growing into something stranger than he planted, and this conifer, alone among everything else at Monserrate, decided to do that by going straight up.",
@@ -142,8 +142,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Location is approximate: Monserrate's own material describes the tree as standing at the base of the grounds beside the lake, but no source gives surveyed coordinates for the individual specimen, so this uses the palace's own coordinate rather than a precise pin. Height and 'tallest in the garden' claim corroborated independently by Parques de Sintra's own site and the Almanaque Acoriano forestry article, which together also supply the mid-19th century, Francis Cook-era planting context; monumentaltrees.com's own estimate (germination around 1790) was checked for cross-verification only per hard rule 1 and not used, since it conflicts with both citable sources and cannot be independently confirmed. Photo viewed directly: a single tall conifer towering above the surrounding tree line next to a lake, matching 'at its base, next to the lake' exactly.",
-      "location_precision": "approximate"
+      "notes": "Height and 'tallest in the garden' claim corroborated independently by Parques de Sintra's own site and the Almanaque Acoriano forestry article, which together also supply the mid-19th century, Francis Cook-era planting context; monumentaltrees.com's own estimate (germination around 1790) was checked for cross-verification only per hard rule 1 and not used, since it conflicts with both citable sources and cannot be independently confirmed. Photo viewed directly: a single tall conifer towering above the surrounding tree line next to a lake, matching 'at its base, next to the lake' exactly. Coordinates tightened 2026-07-30, moved about 120m from the palace's own generic coordinate: an OpenStreetMap node individually tagged 'Araucaria de Norfolk' with height=50m sits at 38.79332, -9.421356, matching this entry's own '50 metres tall' claim exactly and consistent with the lakeside location. Not on Portugal's ICNF public-interest register (checked directly for Sintra concelho, 16 entries, none matching), expected since the tree stands inside the paid Monserrate estate rather than on public land.",
+      "location_precision": "confirmed"
     },
     {
       "id": "sin_005",
