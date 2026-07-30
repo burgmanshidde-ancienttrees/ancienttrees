@@ -2,6 +2,16 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-30 — Cambridge opens: 5 college trees, 2 photos, a felled-tree superlative avoided
+
+Same session, straight after Oxford. No submissions, site healthy, Cambridge next in the queue.
+
+**A third UK college city, same pattern**: Trinity's Newton apple tree (a real 1954 graft from the Woolsthorpe original), Christ's College's Milton Mulberry (regrown from a 1608/1609 root after an 1795 storm, still fruiting and made into jam every summer), Jesus College's plane grown from an 1802 Thermopylae seed, and the Botanic Garden's giant redwood (planted ~1855, the first-ever seed shipment of the species out of California) and one-off hybrid oak.
+
+**Caught two real traps.** The Botanic Garden had its own, separate "Newton's Apple Tree" that was blown down by Storm Eunice in 2022, easy to confuse with Trinity's still-living one since they share a name and a Woolsthorpe origin, kept carefully distinct. And Queens' College's famous record-holding elm, "the tallest surviving Vegeta in Britain," turned out to have been cut down in summer 2025 after a source update surfaced that detail, dropped entirely rather than publish a now-false superlative.
+
+2 of 5 photos found (fresh 2017 and 2025 Wikimedia images with no identity ambiguity), 3 genuine gaps. Full detail in CURATION.md. Site rebuilt (599 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-30 — Oxford opens: 5 college-and-garden trees, two legend traps declined
 
 Same session, straight after Bath. No submissions, site healthy, Oxford next in the queue.

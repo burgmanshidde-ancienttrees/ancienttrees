@@ -1,3 +1,19 @@
+## 2026-07-30 — Same session, continued: Cambridge opens, 5 trees, 2 photos found
+
+Continued straight on from Oxford. No submissions, build/QA clean, Cambridge next in the queue.
+
+**A third UK college city in one session, and the pattern held again**: nearly every remarkable tree belongs to a college garden or the university's own botanic garden rather than open land. Trinity College's Newton's Apple Tree (a genuine 1954 graft from the actual Woolsthorpe Manor specimen), Christ's College's Milton Mulberry (regrown from the root of a 1608/1609 planting after a 1795 storm, still fruiting), Jesus College's Oriental Plane (grown from a seed a fellow collected at Thermopylae in 1802), and the University Botanic Garden's Giant Redwood (planted ~1855 from William Lobb's first-ever shipment of the species' seed out of California) and its one-off hybrid Cambridge Oak (Quercus x warburgii, "the finest in the country" per an authoritative 1910 survey).
+
+**Two real dead/felled-tree traps caught this pass:**
+- **Cambridge University Botanic Garden's own "Newton's Apple Tree"** (a separate Woolsthorpe graft from the Trinity one, on Brookside lawn) was blown down by Storm Eunice in February 2022 and has not been replaced with a mature specimen; the garden's own page confirms this plainly. The entry published here is explicitly the Trinity College specimen, a different tree at a different site, confirmed alive via recent (June 2025) visitor reports. The two trees share a name and a Woolsthorpe origin story and are easy to conflate; kept them straight in the notes field so a future session doesn't merge them.
+- **Queens' College's celebrated Chichester Elms** ("the tallest 'Vegeta' surviving in Britain," 34.5m, DNA-confirmed as one of only four known trees of a rare cultivar) were a strong candidate until a 2025 source update surfaced: "in the summer of 2025, the taller of these two elms became diseased and had to be cut down." The record-holding tree is dead. Dropped entirely rather than publish a superlative that a 2025 event has already falsified; not worth the risk of a stale claim this soon after the fact, even with a hedge.
+
+**2 of 5 photos found**, both freshly-dated (2017, 2025) Wikimedia Commons Geograph photos in dedicated per-tree categories with no identity ambiguity: Newton's Apple Tree (N Chadwick, CC BY-SA 2.0) and the Milton Mulberry (Mr Ignavy, CC BY-SA 2.0, taken April 2025, explicitly tagged Morus nigra in the Fellows' Garden category). 3 remain missing after searching, genuine gaps.
+
+All 5 pins `location_precision`: 1 confirmed (Newton's Apple Tree, a well-documented single point outside a named gate), 4 approximate (general college-garden or botanic-garden-area points, no surveyed trunk position).
+
+Site rebuilt (599 pages: 40 city, 366 tree, 40 question, 12 collections, homepage), all contracts validated; `scripts/qa.py` clean (560 pages). `data/city-list.json` updated (Cambridge: pending to needs_curation). One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-30 — Same session, continued: Oxford opens, 5 trees, another college/garden-heavy city
 
 Continued straight on from Bath in the same session: no reader submissions (re-checked, still header row only), build and QA clean, Bath's own smoke-test-triggering push confirmed in progress via the GitHub API. Oxford was next in the queue.
