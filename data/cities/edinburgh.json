@@ -138,13 +138,13 @@
       "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
       "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
       "photo": {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/218172733/original.jpeg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "tonyrebelo, via iNaturalist",
-        "status": "found_needs_check"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Planting date (1826) independently corroborated by RBGE's own Living Collection page and treecare.org.uk, an independent arboretum-tracking site. The single best documented age of any Edinburgh entry. Photo added 2026-07-30: an iNaturalist observation (tonyrebelo, 2022-07-06) whose individual photo carries a CC BY-SA 4.0 licence distinct from the observation's own default. About 260m from this entry's stored pin, inside the same botanic garden. Downloaded and personally viewed: a large, clearly old Cedar of Lebanon with a visible interpretive sign at its base, consistent with a labelled flagship specimen rather than an ordinary planting. Held at found_needs_check rather than approved: RBGE is a large collection and this entry's own pin is already only approximate (no per-plant location data available from RBGE's database, per an earlier session's finding), so a second Cedar of Lebanon elsewhere in the garden can't be ruled out with certainty.",
+      "notes": "Planting date (1826) independently corroborated by RBGE's own Living Collection page and treecare.org.uk, an independent arboretum-tracking site. The single best documented age of any Edinburgh entry. Photo candidate rejected 2026-07-30: the 2026-07-30 found_needs_check pick (iNaturalist observation 128445057, tonyrebelo, 2022-07-06, photo 218172733) is the RBGE Botanics' Atlas Cedar (Cedrus atlantica), not this entry's Cedar of Lebanon (Cedrus libani); confirmed via the observation's own current community taxon field, not just visual judgement, and the blue-grey glaucous foliage and cascading habit in the photo itself matches Atlas Cedar's look over Lebanon Cedar's flatter, greener tiers. A same-bounding-box iNaturalist search for genuine Cedrus libani near RBGE turned up only a Davidson's Mains specimen and a Merchiston Castle School specimen, both different gardens entirely, no usable candidate at RBGE itself. Reverted to missing rather than left pending, so a future session doesn't approve a mismatched species by trusting the prior note's visual description alone.",
       "location_precision": "approximate"
     },
     {
