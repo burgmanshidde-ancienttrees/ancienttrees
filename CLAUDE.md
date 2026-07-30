@@ -156,6 +156,8 @@ Search Wikimedia Commons and other openly-licensed sources (CC0, CC-BY, CC-BY-SA
 
 **Credits: record always, display only when the licence requires it (Hidde, 2026-07-29).** CC BY and BY-SA photos keep their visible on-page credit, that is the licence's price and it never gets stripped; if a visible credit has to go, the photo changes to a source that needs none (Unsplash License), never the other way round. Decorative and marketing imagery (hero, app page) comes from no-credit-needed sources from the start.
 
+**The owner is not a content source (Hidde, 2026-07-30: "stop met het mij vragen fotos te maken").** A run never asks Hidde to photograph, visit or field-verify anything; one owner does not scale and it is not his job. The supply ladder for a photo gap is: open-licence sources (below), then reader submissions (UGC, the flywheel), and otherwise the gap stays an honest gap in CURATION.md. AI imagery is allowed ONLY as clearly-labeled illustration (the parked dummy-image direction, BACKLOG.md); an AI-generated image presented as a photo of a real, specific tree is fabrication under hard rule 2 and never ships. Any paid generation tool needs his yes first (hard rule 5).
+
 **Do not stop at Wikimedia.** Coverage there varies by country rather than by tree, which is why Tokyo came in at 7 photos out of 10 and London at 0. Same trees, different places to look. When Wikimedia comes up empty, try in this order:
 - **iNaturalist**, which often has CC-licensed photographs with coordinates attached, useful for confirming a pin as well as illustrating it. Check the individual observation's licence, it varies per photo.
 - **Flickr**, filtered to CC licences. Old and well photographed trees are often there under CC-BY.
