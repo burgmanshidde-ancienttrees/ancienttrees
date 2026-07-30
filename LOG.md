@@ -22,6 +22,8 @@ Format, deliberately short:
 
 Five data files changed (Bologna, Lisbon, Venice, Verona, Madrid), two commits, site rebuilt and QA-clean after each, pushed. Nothing needs Hidde.
 
+**Same session, continued past midnight: one more photo, Edinburgh's Cedar of Lebanon at the Botanics (edi_004).** A CC BY-SA 4.0 iNaturalist photo (a licence set at the individual-photo level, different from that observation's own default) showing a large, clearly old cedar with a visible interpretive sign at its base, consistent with RBGE's oldest, most documented specimen (planted 1826). About 260m from the entry's already-approximate pin inside the botanic garden, so held at found_needs_check. Edinburgh now 5/10 photos (from 4); its other 5 gaps checked and stay genuine dead ends (candidates exist close to each pin but every one is unlicensed or CC-BY-NC). One data file changed, site rebuilt, pushed.
+
 ## 2026-07-29 — Valencia: two pins fixed via a newly found open city registry; Amsterdam/Lisbon reconfirmed exhausted
 
 `python3 scripts/visitors.py`: 99 visits, 177 page views over 7 days (22-28 July: 9, 10, 7, 4, 10, 17, 12), strongest week yet, 30 today alone. No reader submissions. Build clean at start, REVIEW.md empty, nothing published found wrong. Depth-exit-test bar unchanged: Amsterdam 7/10 photos, Lisbon 7/10, Istanbul 4/10 still block it, checked directly against the data rather than trusted from memory.
