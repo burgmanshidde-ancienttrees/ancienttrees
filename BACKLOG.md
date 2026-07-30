@@ -30,6 +30,10 @@ Cost note for whoever picks this up: the pulse alone is roughly an hour (a CSS a
 
 **Trigger:** the icon/pin design pass, or Hidde saying go. Not before the Japan-wave deadline work (2026-08-22) unless he explicitly bumps it.
 
+## More than ten per city, for the routes? (Hidde, 2026-07-30, parked to the same checkpoint)
+
+His reasoning for someday relaxing the ten: more curated trees make walking routes richer. Counter-thought recorded for the checkpoint: the register layer may solve this without touching the cap, because routes can thread register trees as waypoints between the ten epic ones (the walk gets denser, the collectible tier stays finite and exclusive). Decide mid-September with the Japan wave and register pilot in hand; "10 per stad - getal nog te bediscuseren" is his explicit framing, so the number is genuinely open, not settled.
+
 ## The open product question: tree-first or walk-first (Hidde, 2026-07-28)
 
 His framing, verbatim in spirit: AllTrails is clear, you go hiking and need a route; we hang between "you go for a walk with trees on it" and "you visit ten trees". A possible fork: not the ten most epic trees but the ten most walkable, but then we become a walking app, not a tree app. He does not have the answer, wants it parked, wants findings gathered slowly, leans toward staying open.

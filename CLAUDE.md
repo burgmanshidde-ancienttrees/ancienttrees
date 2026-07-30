@@ -177,6 +177,16 @@ Cycle through existing cities oldest-first and: hunt for missing photos, strengt
 ### Collections (any time coverage allows)
 Collections publish under the same regime as everything else since blueprint v1.3 (2026-07-27): the research standard, script-checked entries, superlatives per hard rule 8, readers as the correction layer. No owner approval; new collections are announced in LOG.md like any other work.
 
+### The register layer (Hidde's two-layer model, approved 2026-07-29/30)
+
+Above the curated cities sits a second, wider layer: **officially designated remarkable trees from government registers, shown as honestly-labeled dots on the map.** Hidde's framing: the app that shows all monumental trees becomes "the first connected tree register of the world", with our curated selection of the most epic trees on top. Layer 2 is coverage and demand-sensing; layer 1 stays the product. Rules for runs, all binding:
+
+- **One official register counts as the source** for a layer-2 dot ("ik vertrouw de overheid wel"); the two-independent-sources bar keeps applying to everything in layer 1.
+- **Semantic filter, never bulk import:** only trees a register itself designates as monumental/remarkable. Never full municipal tree inventories. Hard rule 10 applies in full: access-filtered, withheld or blurred locations respected, private land excluded.
+- **Licence first:** a register is usable only with a verified open licence compatible with commercial-leaning reuse (CC BY, 政府標準利用規約 2.0, PDL 1.0). Non-commercial terms (NL national register, MLIT P32) disqualify a source outright. Record the proving sentence in OPEN_DATA_SURVEY.md before importing anything.
+- **Honesty over polish:** register coordinates are often area-level; imported dots default to `location_precision: approximate` unless verified. Dots carry the label "from the official register, not yet verified by us", get NO own pages (thin-page risk) and are NOT collectible; the tier/game design is parked in BACKLOG.md until the mid-September checkpoint, and a run may not build any of it.
+- **Pilot: Japan, riding with the wave.** Scouted sources and verdicts live in OPEN_DATA_SURVEY.md ("Japan scouting", 2026-07-30): Tokyo's CC BY CSV with coordinates is the first import candidate, the national Natural Monument register is the backbone (read its /top/policy in full first), Kyushu/Hokuriku prefectures still need scouting. Build order for runs: finish the scouting, then the data file (data/registers/), then the explore-map layer, smallest honest step first.
+
 ### Step 0b — Process reader submissions (before picking a new city)
 
 Readers submit trees and whole cities through a public form. Hidde is deliberately not in this loop: submissions come straight to you.

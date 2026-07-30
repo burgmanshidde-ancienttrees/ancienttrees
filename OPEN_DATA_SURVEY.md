@@ -58,6 +58,22 @@ Nothing here is currently checked for it. Before importing any register, and arg
 2. Read the UK licence terms properly, and find out what the Dutch register offers and under what conditions.
 3. Decide the tree-protection rule above. That one does not need to wait for anything.
 
+
+## Japan scouting for the register layer, 2026-07-30 (two research passes, verified by download where stated)
+
+The register layer (two-layer model, DECISIONS.md 2026-07-29) needs sources that are official, licensed for commercial-leaning reuse, and ideally carry coordinates. Japan, as the pilot:
+
+**National level:**
+- **国指定文化財等データベース (kunishitei.bunka.go.jp), Agency for Cultural Affairs.** 967 Natural Monuments + 75 Special Natural Monuments (plants, animals AND geology; the individual-tree subset is likely a few hundred, exact count unverified). Browsable with CSV export of search results. Per-record map pages exist; whether the CSV carries lat/long is UNVERIFIED, and designations often cover an area, so imported pins will structurally be `approximate`. Licence: the site defers to MEXT terms, which state conformity with 政府標準利用規約 2.0, CC BY 4.0 compatible, commercial use allowed; IMAGES are explicitly excluded (third-party rights). One duty before shipping: read kunishitei's own /top/policy page in full; its footer boilerplate says "All Rights Reserved" and the umbrella-terms reading must survive that. **Pilot backbone.**
+- **環境省 巨樹・巨木林データベース (kyoju.biodic.go.jp).** ~64,500 giant trees (girth >= 3m), GIS downloads exist on biodic's shapedata page. Licence 公共データ利用規約 PDL 1.0 (attribution required, modifications stated, commercial OK), with the explicit carve-out that USER-SUBMITTED content stays with contributors. Decades-old records in places, no accessibility info per entry, so hard rule 10 filtering is manual. **The later volume layer, not the pilot.**
+- **国土数値情報 P32 (MLIT, prefectural designations as points).** REJECTED: terms say 非商用 (non-commercial), data is 2014, and Tokyo/Nara/Oita are withheld at those prefectures' own request.
+
+**Prefecture detail (verified by download):**
+- **Tokyo: the best source found anywhere so far.** 文化財一覧 CSV (opendata.metro.tokyo.lg.jp, dataset t000021d0000000017), licence field literally CC-BY-4.0. 248 rows, 35 天然記念物, nearly all individual trees, WITH populated 緯度/経度 columns (245/248). Shift_JIS encoding. Municipal 保存樹木 CSVs (Mitaka, Suginami, Chofu) also CC BY. **First import candidate.**
+- **Nara: CC BY list, no coordinates.** 県指定文化財一覧 XLSX (pref.nara.lg.jp), 715 properties, 64 天然記念物, town-level addresses only; prefecture deliberately withholds coordinates (same grounds as its P32 opt-out). Treat as a lead list: geocode only what is clearly public and signposted, per hard rule 10. Nara City's own CSV is name-only, near-useless.
+- **Kyoto: effectively no itemized open data.** The prefectural cultural-property DB lives inside a GIS with no export and no open licence (all-rights-reserved by default); Kyoto City's portal has zero cultural-property datasets. Kyoto register data = verification-only source, like monumentaltrees.
+- **Kyushu/Hokuriku (Ishikawa, Fukuoka, Miyazaki, Kagoshima): NOT yet scouted** (the research pass died mid-flight). A run doing register work picks this up first: same questions, per prefecture (dataset, coordinates, licence verdict with the proving sentence).
+
 ## Which countries to invest in, weighed 2026-07-21
 
 Researched at Hidde's request: national tree databases plus photo availability and other factors, ranked for the strategy (English site, travelers plus enthusiasts as the audience).
