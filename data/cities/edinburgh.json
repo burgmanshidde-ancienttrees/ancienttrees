@@ -96,8 +96,8 @@
       "age_max": 320,
       "location": {
         "address": "Cammo Estate, Cammo Walk, Edinburgh EH4 8AW",
-        "latitude": 55.9564,
-        "longitude": -3.3215,
+        "latitude": 55.959261,
+        "longitude": -3.3252321,
         "neighbourhood": "Cammo, north-west Edinburgh"
       },
       "story": "One of the oldest ash trees in Edinburgh grows in a park with no house left standing in it. Cammo Estate was laid out from 1710 by Sir John Clerk of Penicuik, a lawyer, composer and self-taught landscape designer who spent the following years building what may have been Scotland's first true landscape garden around Cammo House. The house is a shell now, roofless and fenced off after decades of fire and vandalism following its abandonment in the 1970s, but the plantings Clerk commissioned outlived the family that made them: beech, horse chestnut, sycamore, and this ash, its trunk over a metre and a half across, which the Woodland Trust names among the oldest ash trees in the city. Edinburgh Council now manages the grounds as a wilderness nature reserve, deliberately left less manicured than a typical park, and the ash stands among yews, rhododendron and pine planted through the 18th and 19th centuries. No one has given this specific tree a documented planting date, so its age here is an estimate built from the estate's own timeline rather than a ring count, honestly short of certainty but long on plausibility. It costs nothing to visit, and the walk in passes the ruined tower and a Pictish standing stone on the way.",
@@ -114,8 +114,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Superlative softened per hard rule 8: some tourism sources call this outright 'the oldest and largest ash in Edinburgh', but the Woodland Trust's own page, the more authoritative source, hedges to 'one of the oldest'. No specific age or planting date exists for this individual tree; the range here is inferred from the estate's 1710 founding. Location corrected 2026-07-28: the stored coordinate had been about 1.1km from the actual estate, caught by a systematic geocode audit and confirmed two ways, Nominatim's own geocode of Cammo Estate and Cammo Walk, and an independent park-directory source giving the reserve's own coordinates (55.9564, -3.3215, OS grid NT175745, postcode EH4 8AW), agreeing within 150m. Pin now sits within the actual 85-acre reserve; stays approximate since this specific tree has no surveyed point of its own within it.",
-      "location_precision": "approximate"
+      "notes": "Superlative softened per hard rule 8: some tourism sources call this outright 'the oldest and largest ash in Edinburgh', but the Woodland Trust's own page, the more authoritative source, hedges to 'one of the oldest'. No specific age or planting date exists for this individual tree; the range here is inferred from the estate's 1710 founding. Location corrected 2026-07-28 to a park-level estimate (55.9564, -3.3215), then to a specific surveyed tree 2026-07-30: the Woodland Trust's Ancient Tree Inventory (queried directly via its public ArcGIS FeatureServer) has exactly one Ash within the reserve, record 102509, veteran status, measured girth 4.74m, matching this entry's own 'trunk over a metre and a half across' almost exactly (a 1.5m+ diameter implies a circumference of roughly 4.7m). Its coordinate independently reverse-geocodes to South Avenue, Cammo, postcode EH4 8AW, the same postcode already cited for this entry. Moved about 390m to the surveyed point and upgraded to confirmed.",
+      "location_precision": "confirmed"
     },
     {
       "id": "edi_004",
