@@ -2,6 +2,14 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-30 — Cork and Galway researched, no pages yet; Budapest opens with 5 trees instead
+
+Same session, straight after Glasgow. Cork and Galway were next in the queue, but neither reached the four-tree minimum after genuine research: Cork's UCC arboretum has real champion trees but only its pair of giant redwoods (~150 years) has a findable age; Galway's oldest trees turned out to be diffuse ancient woodland (Barna Woods, Merlin Park) rather than individually documented specimens, and the area's famous Yeats-linked beech at Coole Park sits 35km outside the city. Both stay `pending` with full reasoning in CURATION.md rather than being padded or forced. Moved to the next city in the queue, Budapest, which had far richer documentation.
+
+**Budapest opens at 5 trees, all survivors of a specific historical threat rather than just old**: the Japanese Pagoda Tree at Buda Castle (planted c.1790, Budapest's oldest documented tree, survived the 1848-49 revolution and a 19th-century removal plan a gardener talked Franz Joseph out of), Margaret Island's "Tree of Science" plane (planted 1823 by Archduke Joseph, survived two world wars and 1956), the Erzsebet Square black locust (survived three rebuilds of the square around it), the Taban Mulberry (linked to Maria Theresa's silk industry, under active conservation since 2021), and the Seven Chieftains Plane, whose 200-year-old namesake actually died in the 1930s; the tree standing today is a different, younger plane that regrew into seven limbs after 1945 war damage, kept carefully distinct in the entry rather than conflated with the original.
+
+0 of 5 photos found despite a real search. All 5 pins approximate (nearest landmark, not a surveyed trunk position). Site rebuilt (628 pages), all contracts validated, QA clean. Three commits (Glasgow, the Cork/Galway research notes, Budapest), all pushed. Nothing needs Hidde.
+
 ## 2026-07-30 — Glasgow opens: 4 trees, one dead-tree trap avoided
 
 New session. `python3 scripts/visitors.py`: 103 visits, 201 page views over 7 days (10, 7, 4, 10, 17, 12, 30, 13), still climbing week over week. No reader submissions, site was healthy (build and QA clean, smoke tests green), so went to the next rung: Glasgow, next in the queue.
