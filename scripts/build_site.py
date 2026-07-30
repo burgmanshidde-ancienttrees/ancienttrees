@@ -60,7 +60,10 @@ SUPPORT_URL = ""
 # The account track (Hidde, 2026-07-26): the login ships as an unlinked,
 # noindexed prototype until his Supabase project and privacy page exist.
 # Flipping this to True is his call, made in a session, never by a run.
-AUTH_ENABLED = False
+# Flipped True on 2026-07-30: account deletion verified end-to-end by machine
+# (create -> sign in -> delete_user rpc 204 -> user_not_found), which was the
+# gate Hidde set before login could go public.
+AUTH_ENABLED = True
 # Hidde's Supabase project (2026-07-28). The publishable key is public by design.
 SUPABASE_URL = "https://caimvxiyrtifilimlkqw.supabase.co"
 SUPABASE_KEY = "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb"
@@ -106,6 +109,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .bar-logo { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 800; font-size: 1.02rem; letter-spacing: 0.07em; text-decoration: none; color: var(--ink); }
 .bar-links a { font-size: 13px; color: var(--ink-mid); text-decoration: none; margin-left: 1.25rem; }
 .bar-links a:hover { color: var(--moss); }
+.bar-links a.bar-login { font-weight: 700; color: var(--ink); }
 .bar-links a.bar-cta { color: #fff; background: var(--moss); font-weight: 700; border: 1px solid var(--moss); border-radius: 999px; padding: 0.45rem 1rem; }
 .nav-drop { display: inline-block; position: relative; margin-left: 1.25rem; }
 .nav-drop summary { font-size: 13px; color: var(--ink-mid); cursor: pointer; list-style: none; }
@@ -620,7 +624,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <body>
 <header class="bar">
   <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%#cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a></div></details><a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
+  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%#cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>%%LOGIN_MENU%%</div></details>%%LOGIN%%<a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
 </header>
 %%BODY%%
 %%FOOTER%%
@@ -1363,8 +1367,17 @@ def render_page(title, description, canonical, body, head_extra="", scripts="",
         outside = re.sub(r"<script\b.*?</script>", "", scripts, flags=re.S)
         if re.search(r"\(function\(\)|=>|document\.|localStorage", outside):
             ERRORS.append(f"{canonical}: bare JavaScript outside <script> tags would render as text")
+    login_link = ('<a href="%%ROOTPATH%%account" class="bar-login only-desktop">Log in</a>'
+                  if AUTH_ENABLED else "")
+    login_menu = ('<a href="%%ROOTPATH%%account" class="only-mobile"><span class="mi">'
+                  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
+                  'stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/>'
+                  '<path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>Log in</a>'
+                  if AUTH_ENABLED else "")
     page_html = (
         PAGE_SHELL
+        .replace("%%LOGIN_MENU%%", login_menu)
+        .replace("%%LOGIN%%", login_link)
         .replace("%%TITLE%%", esc(title))
         .replace("%%DESCRIPTION%%", esc(description))
         .replace("%%CANONICAL%%", canonical)
@@ -1639,54 +1652,6 @@ def location_is_approximate(tree):
 # ---------------------------------------------------------------- tree pages
 
 
-TREE_CHECKIN_JS = """
-(function() {
-  var btn = document.querySelector('.action-row .seen-btn');
-  if (!btn) return;
-  var KEY = 'ancienttrees_seen';
-  function readSeen() { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; } }
-  function writeSeen(l) { try { localStorage.setItem(KEY, JSON.stringify(l)); } catch (e) {} }
-  function paint() {
-    var got = readSeen().indexOf(btn.dataset.tree) !== -1;
-    btn.setAttribute('aria-pressed', got ? 'true' : 'false');
-    btn.querySelector('.seen-text').textContent = got ? 'Visited' : 'Check in at this tree';
-  }
-  function metres(lat1, lng1, lat2, lng2) {
-    var R = 6371000, p = Math.PI / 180;
-    var a = Math.sin((lat2 - lat1) * p / 2) * Math.sin((lat2 - lat1) * p / 2)
-          + Math.cos(lat1 * p) * Math.cos(lat2 * p)
-          * Math.sin((lng2 - lng1) * p / 2) * Math.sin((lng2 - lng1) * p / 2);
-    return 2 * R * Math.asin(Math.sqrt(a));
-  }
-  function flash(msg, ms) {
-    var t = btn.querySelector('.seen-text'), was = t.textContent;
-    t.textContent = msg;
-    setTimeout(function() { if (t.textContent === msg) { paint(); } }, ms || 4000);
-  }
-  btn.addEventListener('click', function() {
-    var id = btn.dataset.tree, seen = readSeen();
-    if (seen.indexOf(id) !== -1) { seen.splice(seen.indexOf(id), 1); writeSeen(seen); paint(); return; }
-    if (!navigator.geolocation) { flash('This browser cannot check where you are'); return; }
-    flash('Checking where you are...', 20000);
-    navigator.geolocation.getCurrentPosition(function(pos) {
-      var away = metres(pos.coords.latitude, pos.coords.longitude,
-                        parseFloat(btn.dataset.lat), parseFloat(btn.dataset.lng));
-      if (away <= parseFloat(btn.dataset.radius)) {
-        var l = readSeen();
-        if (l.indexOf(id) === -1) { l.push(id); }
-        writeSeen(l); paint();
-      } else {
-        var far = away > 2000 ? Math.round(away / 1000) + ' km' : Math.round(away) + ' m';
-        flash('Still ' + far + ' away. Check in at the tree.', 6000);
-      }
-    }, function(err) {
-      flash(err.code === 1 ? 'Location needed to check in' : 'Could not find you. Try again.', 6000);
-    }, { enableHighAccuracy: true, maximumAge: 30000, timeout: 15000 });
-  });
-  paint();
-})();
-"""
-
 def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
     species_pages = species_pages or {}
     city_data = city_entry["data"]
@@ -1779,10 +1744,9 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
                       if location_is_approximate(tree) else '')
     chips = (f'<p class="chip-row"><span class="chip">{esc(tree.get("age_estimate", "age unknown"))}</span>'
              f'<span class="chip">{esc(species_common(tree))}</span>{precision_chip}</p>')
-    radius = 200 if location_is_approximate(tree) else 75
     action_row = f"""
   <div class="action-row">
-    <button type="button" class="go-btn seen-btn" data-tree="{tree['id']}" data-lat="{loc['latitude']}" data-lng="{loc['longitude']}" data-radius="{radius}"><span class="seen-text">Check in at this tree</span></button>
+    <a class="go-btn" href="../app">Check in with the app</a>
     <a class="go-btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination={loc['latitude']},{loc['longitude']}" target="_blank" rel="noopener">Take me there</a>
     <a class="action-link" href="../{cslug}#walk">Walk more trees in {esc(city)}</a>
   </div>"""
@@ -1830,8 +1794,7 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
         breadcrumb_schema(crumb_items, canonical),
     ]
     head_extra = map_head() + og_image + "\n" + ld_script(graph)
-    scripts = (single_pin_script(loc["latitude"], loc["longitude"])
-               + "\n<script>" + TREE_CHECKIN_JS + "</script>")
+    scripts = single_pin_script(loc["latitude"], loc["longitude"])
 
     check_links(canonical, 2 + len(nearby), 4)
 
@@ -1989,12 +1952,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
       <p class="tree-meta">{esc(t.get('species', ''))} &middot; {esc(t.get('age_estimate', 'age unknown'))} &middot; {esc(loc.get('neighbourhood', ''))}{best_time_short(t)}</p>""")
         cards[-1] += f"""
       <p class="tree-story">{esc(t['story'])}</p>
-      <p class="tree-more"><a href="{slug}/{tslug}">Read more and get directions &rarr;</a>
-        <button type="button" class="seen-btn" data-tree="{esc(t['id'])}"
-                data-lat="{loc['latitude']}" data-lng="{loc['longitude']}"
-                data-radius="{200 if location_is_approximate(t) else 75}" aria-pressed="false">
-          <span class="seen-mark" aria-hidden="true"></span><span class="seen-text">Check in at this tree</span>
-        </button></p>
+      <p class="tree-more"><a href="{slug}/{tslug}">Read more and get directions &rarr;</a></p>
     </article>"""
         markers.append({"lat": loc["latitude"], "lng": loc["longitude"], "label": str(i),
                         "icon": species_icon(t), "name": t["name"], "id": t["id"]})
@@ -3075,7 +3033,10 @@ def validate_internal_links(pages):
 
     Catches wrong relative paths (P8: no dead ends) before deploy.
     """
-    valid = {"/", "/assets/style.css"}
+    # account.html is written straight to DIST by build_account_page (outside
+    # the pages list, deliberately out of the sitemap), but nav links to it
+    # once AUTH_ENABLED is on, so the checker must know it exists.
+    valid = {"/", "/assets/style.css", "/account", "/account.html"}
     for relpath, _, _ in pages:
         url = "/" + relpath
         valid.add(url)
@@ -3199,7 +3160,7 @@ def build_account_page():
     kept out of the sitemap and noindexed while AUTH_ENABLED is False."""
     body = """
 <main class="content-page account-page">
-  <div class="proto-note">Quiet launch. Sign-in is real and stores only your email address; collection sync is still being built. This page is not linked from the site yet.</div>
+  <div class="proto-note">Sign-in is real and stores only your email address; collection sync arrives with the app. You can delete your account here at any time.</div>
 
   <section id="st-signin" class="acct-card">
     <p class="hero-kicker">Your tree collection</p>
