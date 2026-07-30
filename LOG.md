@@ -105,6 +105,12 @@ His full product walk, tested against the corpus and shipped in one pass: in-sea
 
 Parked for Hidde: season-shelf naming, phenology icons per tree (needs a data field), native submission form (needs his yes, Supabase could carry it), the "old" brand question, and his 80/20 coverage proposal (answered in chat, decision his).
 
+## 2026-07-30 (middag, sessie) — Hidde opent de kwantiteitsfase: exit test eraf, Japan-wave en registerlanden parallel
+
+His ruling in session: the quality stop goes, quantity is the phase, quality returns later. CLAUDE.md's ladder is rebuilt: coverage (Japan wave first, deadline 2026-08-22) is rung 4, register countries licence-led rung 5, photos/depth demoted to the background lane with an explicit do-not-re-run-exhausted-hunts line. Also ruled today and recorded in DECISIONS.md: the owner is never a content source (photo asks to Hidde are banned; supply is sources -> UGC -> honest gap), monumentaltrees stays verification-only (rule 1 unchanged, his "afkijkdata" idea declined on database-rights and positioning grounds), and the photo-supply question (UGC upload, AI illustration) is parked. The register track's first task for runs: a licence-led country scan (Poland and Flanders look promising, Germany per Land) so the register order comes from the data itself.
+
+FOR HIDDE: nothing waits. The chain starts the Japan wave in its next window.
+
 ## 2026-07-30 (avond) — Hidde's bedtime batch: check-in wordt app-funnel, login live, registerstrategie in de runs
 
 Executed while he slept, all gates his own words from tonight:
