@@ -35,8 +35,8 @@
       "age_max": 125,
       "location": {
         "address": "Alameda Apodaca, 11004 Cadiz",
-        "latitude": 36.536657,
-        "longitude": -6.296370,
+        "latitude": 36.537325,
+        "longitude": -6.298715,
         "neighbourhood": "San Carlos"
       },
       "story": "Four fig saplings carried from India by missionary nuns are the origin story behind this tree and its three siblings scattered across Cadiz. One of the nuns died during the voyage and was nursed in her final days at the city's Hospital de Mora; the surviving sisters planted the saplings as a memorial, two here on the seafront Alameda and two more near the old hospital site. Planted in 1903, more than two decades before Juan Talavera y Heredia's regionalist redesign gave the Alameda its current look, the tree has since grown into something closer to a small grove than a single trunk, its lower branches sending down aerial roots that thicken into extra trunks over the flat marble terrace where it stands. Locals sometimes call the pair the Ficus Gemelos, the twin figs, though decades of divergent growth have left one visibly larger than the other. Cadiz's Atlantic wind is hard on a tree built this wide and this exposed, and its wood is known locally as brittle, prone to losing a branch when a storm comes through the bay. None has come down yet. The promenade it shades looks straight across the bay toward the mainland, a public garden with no entry fee and no fence around the roots.",
@@ -54,8 +54,8 @@
         "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Species confirmed as Ficus macrophylla by a Cadiz-based botanist per Jardines Sin Fronteras; monumentaltrees.com labels it 'Rubber Fig' (usually Ficus elastica), checked for cross-reference only per hard rule 1 and treated as a likely generic mislabel rather than followed. Planting year (1903) and the nun/Hospital de Mora legend corroborated by two independent sources. Coordinates are the OSM place-level point for Alameda Apodaca, not a tree-specific survey; kept approximate rather than confirmed since the promenade is long and this marks the general viewpoint, not a verified exact trunk position. Photo viewed directly: an unmistakable huge fig with buttressed, thickened roots on a seafront marble terrace, balustrade and bay visible behind, matching the setting exactly.",
-      "location_precision": "approximate"
+      "notes": "Species confirmed as Ficus macrophylla by a Cadiz-based botanist per Jardines Sin Fronteras; monumentaltrees.com labels it 'Rubber Fig' (usually Ficus elastica), checked for cross-reference only per hard rule 1 and treated as a likely generic mislabel rather than followed. Planting year (1903) and the nun/Hospital de Mora legend corroborated by two independent sources. Photo viewed directly: an unmistakable huge fig with buttressed, thickened roots on a seafront marble terrace, balustrade and bay visible behind, matching the setting exactly. Coordinates tightened 2026-07-30, moved about 220m along the promenade from the old place-level Alameda Apodaca geocode: an OpenStreetMap node individually tagged 'Ficus macrophylla' (natural=tree, species and common names in three languages) sits at 36.537325, -6.298715, still within the Alameda. The story's own 'Ficus Gemelos' pair means this node marks one of the two twin trees rather than a single unambiguous trunk, so this stays a real improvement over a generic promenade-level pin without claiming survey-grade precision for the specific twin.",
+      "location_precision": "confirmed"
     },
     {
       "id": "cad_002",

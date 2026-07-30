@@ -234,13 +234,13 @@
       "access": "Free, open access, unfenced, no closing hours",
       "transport": "5 min walk from Palermo Cathedral",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Palma_Da_Datteri.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Diego Gelvis, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "notes": "Location taken directly from Italy's official AMI national monumental-trees register (a single 'Palma da datteri' point with its own circumference measurement, distinct from a grove-wide ensemble entry), confirmed. This entry describes one specific registered specimen rather than the c.400-palm planting as a whole, so it passes as a single collectible tree rather than an unbounded ensemble; the historical grove context is background, not the claim. History corroborated by Italian Wikipedia and the Comune di Palermo's tourism page. Exact planting date not documented for this individual palm, estimated from the 1905 garden layout. No open-licensed photo of this specific palm found on Wikimedia Commons after a dedicated search of the Villa Bonanno category; genuinely missing.",
+      "notes": "Location taken directly from Italy's official AMI national monumental-trees register (a single 'Palma da datteri' point with its own circumference measurement, distinct from a grove-wide ensemble entry), confirmed. This entry describes one specific registered specimen rather than the c.400-palm planting as a whole, so it passes as a single collectible tree rather than an unbounded ensemble; the historical grove context is background, not the claim. History corroborated by Italian Wikipedia and the Comune di Palermo's tourism page. Exact planting date not documented for this individual palm, estimated from the 1905 garden layout. Photo found 2026-07-30 via a coordinate-radius Commons geosearch rather than category browsing (the file isn't in the Villa Bonanno category, which is why the earlier dedicated search missed it): its own embedded GPS metadata reads 38.112417, 13.355300, matching this entry's AMI-register coordinate to 6 decimal places. Viewed directly: a mature fruiting date palm against open sky, consistent with the species and the register's measured specimen.",
       "location_precision": "confirmed"
     },
     {
