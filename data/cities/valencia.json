@@ -283,8 +283,8 @@
       "age_max": 100,
       "location": {
         "address": "Parc Lineal, near Les Carolines metro station, Benimamet, 46017 Valencia",
-        "latitude": 39.5,
-        "longitude": -0.424,
+        "latitude": 39.500018,
+        "longitude": -0.423515,
         "neighbourhood": "Benimamet"
       },
       "story": "At just over 41 metres tall, this eucalyptus is the tallest tree in the province of Valencia and the fourth tallest recorded anywhere in the wider region, a scale confirmed by the city's own maintenance crews, who need aerial platforms and, for its highest branches, help from the fire service just to prune it safely. It grows in the Parc Lineal in Benimamet, on the northwestern edge of the city, next to the tram line that was later routed underground past it, and is formally listed both by the Valencia city council and in the Comunitat Valenciana's own Catálogo de Árboles Monumentales y Singulares, the regional register that protects it by law. Eucalyptus camaldulensis, native to Australia, was planted widely across Mediterranean Spain from the early 20th century onward for its fast growth and tolerance of poor, dry soil, but few specimens anywhere in the region have been left to grow as large as this one. Its trunk runs some 6.1 metres around at the base, with a crown spreading 30 metres wide, dimensions that make it visible well beyond the park it stands in.",
@@ -301,7 +301,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Measurements (41.20m height, 6.1m trunk diameter, 30m crown) and the 80-100 year age come from the city's own official announcement; the regional catalogue source confirms its protected status but is a general registry page rather than an entry specific to this tree. Pin corrected ~790m by querying that same regional catalogue directly (ArcGIS layer): it lists this exact tree by name, 'Eucalipto de Benimámet' (IPA 2375), with a 41.2m height matching this entry's own figure exactly.",
+      "notes": "Measurements (41.20m height, 6.1m trunk diameter, 30m crown) and the 80-100 year age come from the city's own official announcement; the regional catalogue source confirms its protected status but is a general registry page rather than an entry specific to this tree. Pin corrected ~790m by querying that same regional catalogue directly (ArcGIS layer): it lists this exact tree by name, 'Eucalipto de Benimámet' (IPA 2375), with a 41.2m height matching this entry's own figure exactly. Tightened by about 50m on 2026-07-30 via an independently bulk-imported OpenStreetMap node carrying the same register reference (reg_ref 2375, name 'Eucaliptus de Benimàmet', 41.2m height), which gives a more precise coordinate than the earlier rounded transcription.",
       "location_precision": "confirmed"
     },
     {
