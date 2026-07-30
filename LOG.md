@@ -107,6 +107,22 @@ Standing list. Everything else in this file is history; this block is what is ac
 ### Nothing right now
 The three items this list used to carry are all resolved: the budget ceiling is recorded in CLAUDE.md hard rule 5, the design pass shipped (Direction A, Gabarito, mark 3A, live as of this evening's session), and collections publish without approval since blueprint v1.3. The last mandatory gate you sat in is gone, exactly as you designed it.
 
+## 2026-07-30 — New session: two small, honest photo finds (Cadiz's Ombu, Sintra's Fern Cork Oak); confirms today's photo/pin and product queues are both genuinely drained
+
+`python3 scripts/visitors.py`: 91 visits, 169 page views over 7 days (23-29 July: 10, 7, 4, 10, 17, 12, 30), consistent with the day's other sessions. No reader submissions (CSV fetched fresh, header row only). Build and QA clean at session start (523 pages), REVIEW.md carries no dated entries. `gh` blocked by this session's approval gate as always; plain Python `urllib` reached Wikimedia, iNaturalist and Overpass freely, so build/QA/REVIEW.md served as the health signal in place of a smoke-test check.
+
+Read today's five earlier entries in full before touching anything. Amsterdam, Lisbon and Istanbul (the three depth-exit-test blockers) had already been re-confirmed exhausted this morning with a genuinely fresh technique (recency-sorted iNaturalist, fresh Commons geosearch). Cadiz, Sintra and Palermo had already been worked via an Overpass/OSM technique today, Edinburgh via the Woodland Trust's ATI. PRODUCT_TODO.md's queue is fully drained too: the account track and PRODUCT_IA.md Phase A are explicitly session-reserved (need eyes), the copy audit is clean, and every collections idea in BACKLOG.md is shipped or honestly blocked on a new city or Hidde's own scope call. Re-checked the long-open Lisbon Ajuda Dragon Tree storm-damage thread directly: still no source confirms any change since 2026-07-28. Nothing published found wrong.
+
+**Two small, real photo finds, both held at `found_needs_check` rather than approved, being honest about what they do and don't confirm:**
+- **Cadiz's Ombu (cad_004)**, a genus with no open-licensed photo found across several prior passes, gets a 2026-06-27 CC BY iNaturalist observation whose place_guess reads "Parque Genovés" exactly. Viewed directly: a genuine, correctly-identified close-up of Phytolacca dioica foliage and fruit, not the swollen trunk the entry's own story is built around, so held rather than approved.
+- **Sintra's Fern Cork Oak (sin_002)** gets a CC0 observation whose place_guess names the tree's own quinta exactly, about 60m from the ICNF-surveyed pin. Shows a damaged, hollowed trunk with vegetation growing from a bark wound, consistent with the "Sobreira dos Fetos" name and the story's bark-stripping account, but this session's tooling can't confirm the growth is fern specifically.
+
+**A live-looking lead closed cleanly rather than left open**: an Overpass query found an OSM node tagged `Dracaena draco` 128m from Cadiz's Dragon Tree pin. Before touching the pin, re-read its own notes: a 2026-07-28 session had already traced this exact coordinate to Cadiz's separate, already-excluded "Drago del Obispado," not this tree. Confirmed rather than repeated; no change made.
+
+**A site-wide single-source sweep** (the 2026-07-28 pass predates Cadiz/Sintra/Palermo) found 6 trees with only one citation. Five stay as flagged, correctly; one real lead surfaced for Seville's Camphor Tree (the city's own parks department page independently names it Seville's only camphor tree) but sevilla.org is unreachable from this session's tooling (`ECONNREFUSED` / timeout), a tooling wall worth a future session's retry, not applied.
+
+Two data files changed (Cadiz, Sintra), three commits, site rebuilt (523 pages) and QA-clean after each, all pushed. Full detail in CURATION.md. Nothing needs Hidde.
+
 ## 2026-07-30 — A reusable pure-Python .xls parser for Italy's national tree registry, closing a tooling gap several sessions hit; no data changed, but a real technical asset added
 
 `python3 scripts/visitors.py`: 90 visits, 166 page views over 7 days (23-29 July: 10, 7, 4, 10, 17, 12, 30), still climbing. No reader submissions. Build and QA clean at session start (523 pages), REVIEW.md empty, smoke test's latest run green. Depth-exit-test bar unchanged: Amsterdam (7/10 photos), Lisbon (6/10) and Istanbul (4/10, 1 approximate) remain the only three blockers.
