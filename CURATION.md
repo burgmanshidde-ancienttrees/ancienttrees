@@ -1,3 +1,17 @@
+## 2026-07-31 — Ljubljana opens: 4 trees, its oldest turning exactly 400 this year
+
+Same session, straight after Gdansk. Ljubljana was next fresh city in the queue.
+
+**Shipped 4**: the Furmanska Lipa / Carter's Linden (Tilia cordata, planted 1626, turning exactly 400 in 2026, on Borstnikov trg in front of Gostilna Pod lipo, with real literary provenance: France Preseren, Matija Cop and Andrej Smole wrote under it, and Joze Plecnik and Fran Saleski Finzgar later sat in its shade), the Marmontova Lipa (Tilia cordata, planted 1810 the same year Ljubljana's Botanical Garden was founded, named for Napoleon's marshal Auguste de Marmont who governed the city as capital of the Illyrian Provinces), and two American Sycamores on Streliska ulica, the only two survivors of a double-row avenue visible on Florijancic's 1744 map of the city and individually listed in both of Slovenia's national heritage registers.
+
+**A genuine age gap resolved rather than picked arbitrarily**: two lindens both had strong documentation (an exact planting year each), so the oldest-tree question_context explicitly states the 184-year gap between them (1626 vs 1810) rather than treating the choice as close or debatable, since it isn't.
+
+**Coordinate honesty**: the two Streliska ulica planes have no single authoritative published coordinate found this session (the Slovenian heritage database dedi.si returned SSL errors on every direct-fetch attempt, and general web search gave street-level detail only), so both ship `location_precision: approximate`, coordinates estimated from the street's known path between Krekov trg and Hradeckega cesta rather than fabricated as precise. The two lindens, by contrast, have confirmed street-level or landmark-level addresses and ship `confirmed`/`approximate` accordingly.
+
+**Photo hunt**: 0 of 4 found. No Wikimedia Commons category exists yet for Streliska ulica specifically, and no confirmed match surfaced for either linden.
+
+Site rebuilt (841 pages: 65 city, 483 tree, 65 question, 12 collections, homepage), all contracts validated. `scripts/qa.py` clean (777 pages). `data/city-list.json` updated (Ljubljana: pending to needs_curation). One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Gdansk opens: 4 trees, sourced from the city's own 203-entry official register, including a tree that survived an arson attack seven months ago
 
 Same session, straight after Thessaloniki. Gdansk was next fresh city in the queue. It turned out unusually well documented: the city publishes a live PDF register of all 201 designated natural monuments (157 individual trees, plus groups, avenues and boulders), updated as recently as 05/2026, with an embedded Google Maps pin for every single entry. Fetched and read directly (the PDF's binary/compressed text defeated a plain WebFetch read, but the Read tool opened it as a document and extracted the full table, including exact coordinates decodable from each entry's Google Maps link).
