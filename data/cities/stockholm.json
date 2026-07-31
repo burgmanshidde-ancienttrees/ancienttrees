@@ -1,0 +1,151 @@
+{
+  "city": "Stockholm",
+  "country": "Sweden",
+  "status": "needs_curation",
+  "oldest_tree_id": "sto_001",
+  "intro": "Stockholm protects nearly 3,000 ancient oaks, most of them on Djurgården, a legacy of a royal law that made felling one a capital crime because the navy needed the timber for warships. The four gathered here go beyond simple age: an 800-year oak the city built a motorway junction around rather than remove, an oak a Scottish geologist used to help prove Scandinavia's land was rising out of the sea, elm trees Stockholmers once occupied overnight to save from chainsaws, and the single largest tree in the city by volume.",
+  "meta_description": "Stockholm's most remarkable trees: the 800-year Birger Jarl's Oak, Lyell's oak, the protest-saved Kungstradgarden elms, and Prince Eugen's giant oak.",
+  "question_answer": "Stockholm's oldest tree is generally considered Birger Jarl's Oak, on a traffic island at the Kristineberg motorway interchange on Kungsholmen, estimated at roughly 800 years old, as old as the city itself. Its trunk is more than two metres across, among the nine thickest oaks recorded in Stockholm.",
+  "question_meta": "Birger Jarl's Oak on Kungsholmen, roughly 800 years old and named for Stockholm's founder, is the city's oldest tree, on a motorway traffic island.",
+  "question_context": "Birger Jarl is traditionally credited with founding Stockholm around 1252, and this oak on Kungsholmen has been growing for nearly as long, its age estimated at roughly 800 years from trunk measurements the city has taken over the decades. Nobody claims Birger Jarl planted it; the name marks that its age roughly matches the city's own rather than any documented planting event. What makes the tree unusual today is less its age than its setting: when engineers built the Essingeleden motorway and its Kristineberg interchange, they routed the roads around this single oak rather than through it, leaving it standing on a traffic island about ten metres from six lanes of moving traffic. City surveys give it the same protection status as a nature reserve and rank its trunk, more than two metres across, among Stockholm's nine thickest recorded oaks. It is not a tree to walk up to or picnic beneath; it is visible from nearby Kungsholmen streets and from the interchange itself, a genuinely ancient survivor the city chose to build around rather than remove, in a spot no one would ever have chosen for a tree on purpose.",
+  "faq": [
+    {
+      "q": "What is Stockholm's oldest tree?",
+      "a": "Birger Jarl's Oak on Kungsholmen, estimated at roughly 800 years old, standing on a traffic island at the Kristineberg motorway interchange."
+    },
+    {
+      "q": "Why is there an oak in the middle of a motorway junction?",
+      "a": "Engineers building the Essingeleden motorway's Kristineberg interchange routed the roads around Birger Jarl's Oak rather than felling it, leaving the ancient tree standing on a traffic island."
+    },
+    {
+      "q": "Are the Kungstradgarden elms from the 1971 protest still standing?",
+      "a": "Most of them. Several still carry visible chainsaw scars from the night protesters stopped their felling, though one was lost to Dutch elm disease in September 2025 despite annual vaccination."
+    },
+    {
+      "q": "What is the largest tree in Stockholm?",
+      "a": "Prince Eugen's Oak at Waldemarsudde on Djurgarden, 45 cubic metres by volume, with a trunk 9.2 metres around."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sto_001",
+      "name": "Birger Jarl's Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "around 800 years",
+      "age_min": 750,
+      "age_max": 850,
+      "location": {
+        "address": "Kristineberg interchange, Essingeleden, Kungsholmen, Stockholm",
+        "latitude": 59.335481,
+        "longitude": 18.01049,
+        "neighbourhood": "Kristineberg, Kungsholmen"
+      },
+      "story": "Stockholm's founding date is usually given as 1252, when the regent Birger Jarl is credited with establishing the city, and this oak has been growing on Kungsholmen for almost exactly as long, roughly 800 years, according to trunk measurements the city has taken over the decades. Nobody claims Birger Jarl planted it himself; the name is a nod to its age matching the city's own rather than a documented act. What makes it remarkable today has less to do with the tree and more to do with what grew up around it: when engineers built Essingeleden, one of Stockholm's busiest motorways, they routed the Kristineberg interchange so that this single oak now stands on a traffic island roughly ten metres from six lanes of moving cars. City surveys rate its trunk, over two metres across, among the nine thickest oaks in Stockholm and give the surrounding habitat the same protection status as a nature reserve, despite being wedged into asphalt rather than parkland. It is not a tree to picnic under. It is visible from the road and from nearby streets on Kungsholmen, a genuinely ancient survivor that the city built a motorway interchange around rather than through, when it could easily have gone the other way.",
+      "verified_sources": [
+        "https://sv.wikipedia.org/wiki/Birger_jarls_ek",
+        "https://miljobarometern.stockholm.se/natur/naturkvaliteter/kulturpraglad-skog/ekmiljoer/jatteeken-birger-jarls-ek/"
+      ],
+      "access": "Visible year-round from nearby Kungsholmen streets and the Kristineberg motorway interchange; the tree stands on a traffic island and is not meant to be approached on foot",
+      "transport": "Stadshagen or Thorildsplan metro station, then a short walk toward the Kristineberg interchange",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Birger_jarls_ek%2C_v%C3%A5ren_2025.jpg",
+        "license": "CC0 1.0 (Public Domain)",
+        "attribution": "Sabeloga, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Age (roughly 800 years), trunk diameter (202cm) and nature-value classification confirmed by Stockholm's own environmental agency (Miljobarometern) and Swedish Wikipedia, which agree closely. Access described honestly: the tree stands on a traffic island within a live motorway interchange, viewable but not intended for close approach.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sto_002",
+      "name": "Lyell's Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 400 years",
+      "age_min": 400,
+      "age_max": 450,
+      "location": {
+        "address": "Norra Djurgarden, near Fiskartorpet, Stockholm",
+        "latitude": 59.355761,
+        "longitude": 18.084207,
+        "neighbourhood": "Norra Djurgarden"
+      },
+      "story": "In 1835, the Scottish geologist Charles Lyell was in Stockholm gathering evidence for one of the founding ideas of modern geology, that Scandinavia's land was slowly rising out of the sea, a process now called postglacial rebound. To measure how much the land had lifted, Lyell needed a fixed reference point old enough to have been growing when earlier surveyors recorded the water line, and he found one in this oak on Norra Djurgarden, alongside a second oak, Fiskartorpseken, by a nearby royal fishing cottage. He measured the oak's girth and height above the water of Husarviken bay and used its estimated age to help calculate how much the shoreline had shifted, fieldwork now considered a small but real contribution to a theory Charles Darwin would later draw on directly. The oak has kept growing steadily in the two centuries since serving as scientific apparatus: 4.04 metres around in Lyell's own 1835 measurement, 5.20 metres when the Swedish botanist Rutger Sernander surveyed Djurgarden's oaks in 1926, and 6.30 metres by a 2011 measurement, a slow, legible record of exactly the kind of long, undisturbed growth that made it useful to Lyell in the first place.",
+      "verified_sources": [
+        "https://sv.wikipedia.org/wiki/K%C3%A4nda_tr%C3%A4d_i_Stockholm",
+        "https://miljobarometern.stockholm.se/natur/naturkvaliteter/kulturpraglad-skog/ekmiljoer/"
+      ],
+      "access": "Free, open access, Royal National City Park (Djurgarden), open at all times",
+      "transport": "Bus toward Norra Djurgarden or a walk/cycle from Ostermalm via Djurgardsbrunnsviken",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Lyells_ek_Norra_Djurg%C3%A5rden_2011b.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Holger.Ellgaard, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "notes": "The 1835 Lyell measurement, the postglacial-rebound research context, and the successive circumference measurements (1835, 1926, 2011) are documented on Swedish Wikipedia's 'famous trees in Stockholm' page, consistent with the tree's genuine historical role. No second fully independent source found describing the scientific episode itself, though the tree's existence, location, and measurements are corroborated by Stockholm's own environmental monitoring pages.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sto_003",
+      "name": "The Elms of Kungstradgarden",
+      "species": "Wych Elm (Ulmus glabra)",
+      "age_estimate": "160-205 years",
+      "age_min": 160,
+      "age_max": 205,
+      "location": {
+        "address": "Near the teahouse, Kungstradgarden, Stockholm",
+        "latitude": 59.331743,
+        "longitude": 18.071289,
+        "neighbourhood": "Norrmalm"
+      },
+      "story": "On the night of 12 May 1971, a small crowd of Stockholmers climbed into these elms and refused to come down, stopping city workers who had arrived with chainsaws to fell them for a new metro station entrance. Four of the trees took saw damage before officials called off the operation for safety reasons, and none came down that night or afterward: the plan for the metro entrance was scrapped, and the elms stayed exactly where 19th-century planters had put them, already old growth by the time Stockholm considered removing them. What Swedes call Almstriden, the Elm Conflict, became one of the country's defining environmental protests, credited with a lasting shift in Stockholm's own planning culture toward fewer demolitions, fewer new roads through old neighbourhoods, and more parks left alone. Several of the surviving elms still carry visible chainsaw scars from that night, kept rather than smoothed over. The trees now face a slower threat than any road planner: Dutch elm disease, against which the city vaccinates them every year, though the precaution did not save one elm lost to the fungus in September 2025, felled before it could infect its neighbours. The rest keep standing in one of Stockholm's most visited parks, a protest still legible in living wood.",
+      "verified_sources": [
+        "https://sv.wikipedia.org/wiki/Almstriden",
+        "https://stockholmskallan.stockholm.se/teman/stockholmshandelser/almstriden-1971/"
+      ],
+      "access": "Free, open access, Kungstradgarden (public square and park, open at all times)",
+      "transport": "Kungstradgarden metro station, adjacent",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The 1971 protest, its outcome, ongoing chainsaw-scar visibility, annual vaccination and the September 2025 loss of one elm are corroborated between Swedish Wikipedia's dedicated Almstriden entry and Stockholmskallan (the city's own historical archive). Sources genuinely disagree on the trees' planting era: one account describes them as already a century old in 1971 (implying c.1870s), another as roughly 200 years old by 2021 (implying c.1820s), and a third states the tea-house cluster of thirteen elms was planted in the 1860s; the wide age range here reflects that real disagreement rather than picking one figure. Only 1971 historical protest photographs were found on Wikimedia Commons for these trees, not a current photo, so photo status is missing rather than using a 55-year-old image presented as the tree's current appearance.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sto_004",
+      "name": "Prince Eugen's Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "300-400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "location": {
+        "address": "North of Waldemarsudde, Sodra Djurgarden, Stockholm",
+        "latitude": 59.320004,
+        "longitude": 18.113735,
+        "neighbourhood": "Sodra Djurgarden"
+      },
+      "story": "Sweden once made cutting down an oak a capital offense, because the navy needed every mature oak trunk for warship hulls and the crown claimed ownership of the species outright, a protection that stayed in force in some form until the 1830s. This oak, growing today just north of the painter Prince Eugen's old home at Waldemarsudde, is one of the direct beneficiaries: at 300 to 400 years old, it predates that legal protection's repeal by a comfortable margin and is Stockholm's largest tree by volume, 45 cubic metres of wood by a 2006 measurement, with a trunk 9.2 metres around and a canopy 21 metres tall. It originally grew as three separate trunks fused near the base, the kind of multi-stemmed form old oaks take when a young tree loses its main leader and several side branches compete to replace it. Prince Eugen, the so-called Painter Prince, bought Waldemarsudde in 1899 and would have known this oak as an already-ancient fixture of the grounds decades before his own paintings made the estate famous; the tree outranks his tenure there by centuries in one direction and, since his death in 1947, has outlasted him by generations in the other. It remains the benchmark against which Djurgarden's roughly 3,000 other protected oaks are measured, the single largest specimen in a park that holds more ancient oaks than almost anywhere else in Northern Europe.",
+      "verified_sources": [
+        "https://royaldjurgarden.se/en/attractions/the-prince-eugen-oak/",
+        "https://sv.wikipedia.org/wiki/K%C3%A4nda_tr%C3%A4d_i_Stockholm"
+      ],
+      "access": "Free, open access, Royal National City Park (Djurgarden), open at all times",
+      "transport": "Tram 7 (Djurgardslinjen) to Waldemarsudde, short walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Prins_Eugens_ek_h%C3%B6st.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Holger.Ellgaard, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Measurements (21m height, 9.2m circumference, 45m3 volume, 2006), age range and three-stemmed origin confirmed by Royal Djurgarden's own official visitor page and cross-checked against Swedish Wikipedia's list of famous Stockholm trees, which agree without contradiction.",
+      "location_precision": "approximate"
+    }
+  ]
+}
