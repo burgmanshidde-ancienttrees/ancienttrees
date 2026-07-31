@@ -2,6 +2,14 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Warsaw opens: 5 trees, mostly notable for history rather than age
+
+Same session, straight after Geneva. No new submissions. Warsaw was almost entirely destroyed 1939-1945, so few of its trees are genuinely old; the list leans on concentrated history instead. Shipped: Dab Mieszko I (600-640 years, Warsaw's oldest, survived a 2019 arson attack), the Poplar of the Defenders (stood inside a real 1939 barricade, later grew beside a WWII transit camp where survivor testimony describes a mass grave beneath it), Sowinski's Linden (rooted where a general died defending an 1831 uprising redoubt), Dr Korczak's Oak (beside the only building left standing around the orphanage Janusz Korczak ran until deportation to Treblinka in 1942), and Ciechomski's Pear (an honestly flagged, disputed memorial-tree legend).
+
+One tree dropped after full research: a maple at Warsaw's Oncology Institute popularly credited to Marie Sklodowska-Curie's own hand turned out, on the source's own closer reading, to be neither reliably her planting (photo analysis says she planted different trees) nor on genuinely public land (the institute's internal grounds). Left out rather than published on a shaky legend and a hard-rule-10 access problem; noted in CURATION.md so it isn't re-researched.
+
+3 of 5 photos found. Site rebuilt (712 pages), all contracts validated on the first build pass, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Geneva opens: 6 trees, 4 of 6 photos found
 
 Same session, straight after Helsinki. No new submissions. Geneva was well documented via the city's own official heritage-tree pages plus a Wikimedia contributor who had specifically photographed several of the named trees, so 4 of 6 photos came back found, well above this session's usual Nordic-city haul. Shipped: the Official Chestnut Tree (a 208-year-unbroken civic tradition of watching for spring's first leaf, honestly the youngest tree on the list at ~11 years since its 2015 replacement), the Cedars of Parc Beaulieu (~290 years, grown from the same 1735 seed shipment as Paris's Cedar of Jussieu), the Grange Cedar, the Botanical Garden Plane Trees (Geneva's actual oldest, documented on an official 1728 map, nearly two centuries older than the garden they grow in), the Sequoia Grove of Parc Barton (~30 sequoias protected forever by a 1935 bequest), and the Place du Cirque Plane (downtown's largest, rooted over a rerouted river's water table).
