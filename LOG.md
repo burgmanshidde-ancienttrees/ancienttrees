@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Gdansk opens: 4 trees, including one still recovering from an arson attack seven months ago
+
+Same session, straight after Thessaloniki. Gdansk turned out to have the richest official data source found this session: a live municipal PDF listing all 201 protected natural monuments (157 of them individual trees), each with an exact map pin, updated as recently as this May. Read directly with the Read tool after a plain web fetch couldn't decode the PDF's compressed text.
+
+Shipped 4: the Willow of Kupaly-Subislawa (~140 years old, set on fire by suspected arson or fireworks on 29 December 2025, saved by firefighters but had to lose about 4 metres of crown for safety, its recovery genuinely still uncertain and stated as such rather than either downplayed or written off), the Ash of the Royal Rifle Factory (~280 years, older than the 1839 Prussian weapons factory built around it, protected via a citizen-nomination scheme running since 2017), the Oak of Wzgorze Luizy (~250 years, at the foot of a hill named for the Prussian queen credited with the alliance that helped defeat Napoleon, with an 1817 monument on the summit), and the Beech of Ludolfino (girth 470cm, in a historic park now part of a physical-education academy campus).
+
+One near-miss caught: early research conflated two different protected white willows in Gdansk that both happened to be described as "140 years old" in different sources. Cross-checked against the city's own register by street and district before writing anything, and only used the one whose facts (the fire, the exact girth, the exact protection year) triangulate cleanly across two independent sources.
+
+2 of 4 photos found on Wikimedia Commons and viewed directly, both confirmed to show the right trees: the willow pair pre-fire (2014) and the oak in autumn colour. Full detail in CURATION.md.
+
+Site rebuilt (832 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Thessaloniki opens: 4 trees, all dated by core sample instead of estimate
 
 Same session, straight after Arnhem. The Netherlands wave's remaining pending cities (Cork, Galway, Zagreb, Delft, Den Bosch) are all genuinely exhausted or marginal, including after two fresh attempts this session to unblock Den Bosch and Delft via newly-found municipal tree datasets, so moved to the next fresh city in the queue instead: Thessaloniki.
