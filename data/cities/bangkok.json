@@ -1,0 +1,183 @@
+{
+  "city": "Bangkok",
+  "country": "Thailand",
+  "status": "needs_curation",
+  "intro": "Bangkok's remarkable trees are almost all Bodhi trees, and almost all documented to the exact year they went into the ground, because temples here have kept precise planting records since the city's founding in 1782. That makes this list unusually verifiable for a tropical capital: no dendrochronology, no girth-based guessing, just royal chronicles and temple archives naming which king planted which sapling and when. The oldest specimens tie directly to Bangkok's founding wars and its 1970s fight for democracy, not to raw age alone.",
+  "meta_description": "Bangkok's remarkable trees, all with documented planting dates: a 1818 Bodhi cutting from Sri Lanka, ironwoods Rama I planted for warships.",
+  "question_answer": "Bangkok's oldest documented trees are five Thai ironwoods planted along Khlong Lot behind Wat Ratchabophit, dated to the reign of King Rama I between 1782 and 1809, making them more than 217 years old. The more precisely dated Bodhi tree of Wat Saket, planted in 1818 from a cutting carried back from Sri Lanka, is about 208 years old, the runner-up by exact record.",
+  "question_meta": "Bangkok's oldest tree is one of five ironwood survivors King Rama I planted for shipbuilding (1782-1809), over 217 years old, behind Wat Ratchabophit.",
+  "question_context": "The ironwoods' age is a range rather than a fixed year, since no single record dates their planting to a specific day, only to King Rama I's reign, which ran from 1782 to 1809. Even the low end of that range makes them older than Wat Saket's Bodhi tree, whose 1818 planting is dated to the exact year but falls after Rama I's death. That makes the ironwoods the oldest by any reasonable reading of the evidence, even though the Bodhi tree is, ironically, the more precisely documented of the two. The two Bodhi trees at Wat Phra Kaew and Wat Benchamabophit are younger still, planted in 1864 and 1900 respectively, but carry the most exact dates of any tree on this list, down to the year a specific king planted a specific sapling. Both survived long enough to answer a different question about the city than most 'oldest tree' claims do elsewhere: this is a capital where the recorded age of its oldest trees tracks almost exactly with the age of the city itself, founded in 1782, because almost nothing standing here predates Bangkok.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Bangkok?",
+      "a": "By the broadest documented range, one of five Thai ironwood trees planted along Khlong Lot behind Wat Ratchabophit during King Rama I's reign (1782-1809), making them over 217 years old. The most precisely dated tree is the Bodhi tree of Wat Saket, planted in 1818."
+    },
+    {
+      "q": "Are Bangkok's old trees inside temples?",
+      "a": "Most of them. Four of the five trees on this list grow on Buddhist temple or university grounds, and all but one (the Grand Palace's Wat Phra Kaew) are free to enter without a ticket."
+    },
+    {
+      "q": "Is the Bodhi tree at the Grand Palace hard to find?",
+      "a": "No. It stands in the open section of Wat Phra Kaew that every visitor already walks through on the way to the Emerald Buddha, beside the Prasat Phra Thep Bidon. It simply gets no attention next to the temple's gilded chedis."
+    },
+    {
+      "q": "Why does Bangkok have so many old Bodhi trees?",
+      "a": "Thai Buddhist tradition treats the Bodhi tree, the species the Buddha reached enlightenment beneath at Bodh Gaya, as a living relic. Thai kings and monks repeatedly sponsored expeditions to Sri Lanka and India to bring back cuttings descended from that original tree, and temples recorded exactly when each one was planted."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bkk_001",
+      "name": "The Ironwoods of Khlong Lot",
+      "species": "Thai Ironwood (Hopea odorata)",
+      "age_estimate": "over 217 years (planted during King Rama I's reign, 1782-1809)",
+      "age_min": 217,
+      "age_max": 244,
+      "location": {
+        "address": "Khlong Lot canal, Atsadang Road, behind Wat Ratchabophit, Phra Nakhon, Bangkok",
+        "latitude": 13.74917,
+        "longitude": 100.49722,
+        "neighbourhood": "Phra Nakhon, Rattanakosin Island"
+      },
+      "story": "Five ironwood trees standing over a Bangkok canal are, in effect, a two-century-old weapons reserve nobody ever needed to use again. King Rama I ordered Thai ironwood planted along Khlong Lot shortly after founding Bangkok in 1782, part of a hardwood stockpile meant to build warships for a kingdom still fighting Burma on a near-annual basis. Ironwood's real advantages, dense grain, genuine rot-resistance, and enough buoyancy once cut to float downriver, made it the standard timber for Siamese naval construction, and someone in the new capital planted with fleets in mind rather than gardens. The trees outlasted every war they were grown for and most of what came after: seven remained by 1998, five by 2019, worn down by two centuries of city growth rather than by axes. Thai folk belief holds that timber cut for shipbuilding carries its own protective spirit into the vessel, called Chao Mae Takian, so wood taken from here would once have gone to sea as more than lumber. In December 2021, Bangkok's environmental office joined a heritage-tree foundation, the Ministry of Defence and three professional associations to formally restore what remains, an unusually wide coalition for five trees behind a temple most visitors walk straight past on the way to something older-looking. They still stand exactly where Rama I put them, doing nothing more useful now than being two hundred years old.",
+      "verified_sources": [
+        "https://www.silpa-mag.com/history/article_36908",
+        "https://www.onep.go.th/14-%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1-2564-%E0%B8%9F%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%9F%E0%B8%B9%E0%B8%95%E0%B8%B0%E0%B9%80%E0%B8%84%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%82/",
+        "https://www.silpa-mag.com/history/article_155493"
+      ],
+      "access": "Free, public canal-side street, viewable at any time",
+      "transport": "10 minute walk from MRT Sanam Chai (Blue Line), via Atsadang Road",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/%282023%29_%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%94%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%98_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "กสิณธร ราชโอรส, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Photo filename and category confirm the correct canal segment (Khlong Lot at Wat Ratchabophit) but this session could not visually confirm the specific ironwood trees are in frame rather than just the canal and buildings; a future session that can view images directly should check before treating this as approved.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bkk_002",
+      "name": "The Bodhi Tree of Wat Saket",
+      "species": "Bodhi Tree (Ficus religiosa)",
+      "age_estimate": "planted 1818, about 208 years",
+      "age_min": 208,
+      "age_max": 208,
+      "location": {
+        "address": "Lan Pho, in front of the ubosot, Wat Saket Ratcha Wora Maha Wihan, Chakkraphatdi Phong Road, Pom Prap Sattru Phai, Bangkok",
+        "latitude": 13.75389,
+        "longitude": 100.50833,
+        "neighbourhood": "Pom Prap Sattru Phai, near the Golden Mount"
+      },
+      "story": "Two monks left Bangkok on a mission from King Rama II and came back three years later with tree cuttings instead of relics. In 1814, Phra Achan Dee and Phra Achan Thep returned from Sri Lanka after studying at Anuradhapura, the city that has kept an unbroken line of Bodhi trees since a cutting from Bodh Gaya arrived there in the third century BC. Of the three saplings they carried home, the king had one planted at Wat Saket in 1818, at Lan Pho directly in front of the ordination hall, where it has stood ever since below the temple's later, far more famous addition: an 80 metre artificial hill capped in gold that Rama III would not begin building for another decade. The tree predates the Golden Mount that now draws every visitor's eye upward and past it. Two centuries on, it is genuinely struggling. Competing vegetation and fungal pressure have weakened the trunk enough that the temple launched a public restoration campaign timed to Makha Bucha 2026, asking Buddhists to help nurse a 208-year-old living relic back to health rather than simply photograph the hill behind it. Free to see, no ticket required beyond the small fee charged only for the climb up the Mount itself.",
+      "verified_sources": [
+        "https://www.dailynews.co.th/news/5629097/",
+        "https://www.thairath.co.th/news/local/bangkok/2916678"
+      ],
+      "access": "Free entry to temple grounds; a small fee applies only to climb the Golden Mount itself",
+      "transport": "14 minute walk from MRT Sam Yot (Blue Line), or a short walk from Phanfa Leelard pier via the Khlong Saen Saep canal boat",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bkk_003",
+      "name": "The Bodhi Tree of Wat Phra Kaew",
+      "species": "Bodhi Tree (Ficus religiosa)",
+      "age_estimate": "planted 1864, about 162 years",
+      "age_min": 162,
+      "age_max": 162,
+      "location": {
+        "address": "Beside Prasat Phra Thep Bidon, Wat Phra Kaew, the Grand Palace, Na Phra Lan Road, Phra Nakhon, Bangkok",
+        "latitude": 13.75139,
+        "longitude": 100.4925,
+        "neighbourhood": "Phra Nakhon, the Grand Palace"
+      },
+      "story": "Inside the single most photographed temple complex in Thailand grows a tree that gets photographed by almost nobody. King Rama IV had a Bodhi tree planted beside the Prasat Phra Thep Bidon in 1864, grown from a shoot cut from the tree at Bodh Gaya where the historical Buddha reached enlightenment. In 1903, fire tore through the building it shades, destroying the original gilt stupa and part of the structure; the tree, already thirty-nine years old, stood close enough to watch and kept standing while King Rama VI rebuilt what became the Royal Pantheon of the Chakri dynasty. That pantheon now holds statues of the dynasty's kings and opens to the public exactly one day a year, Chakri Memorial Day, April 6th, from eight until noon. The tree faces no such restriction. It grows in the section of Wat Phra Kaew that every visitor to the Grand Palace already walks through on the way to the Emerald Buddha, sharing ground with the complex's gilded chedis and mythological guardian statues, and drawing none of their attention. At 162 years old it is younger than most of the buildings around it, proof that even Thailand's most sacred royal compound has kept adding, burning and rebuilding since 1782, not stood frozen at its founding.",
+      "verified_sources": [
+        "https://becommon.co/world/how-bodhi-trees-are-in-thailand/",
+        "http://www.thapra.lib.su.ac.th/web-temple/index.php?option=com_content&view=article&id=17&Itemid=18",
+        "https://bangkokforvisitors.com/ratanakosin/grand-palace/emerald-buddha-temple/royal-pantheon/"
+      ],
+      "access": "Paid entry (Grand Palace and Wat Phra Kaew ticket, standard foreign-visitor rate), strict dress code, open approximately 8:30am-3:30pm daily",
+      "transport": "5 minute walk from Tha Chang Pier (N9, Chao Phraya Express Boat), or about 15 minutes on foot from MRT Sanam Chai (Blue Line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "The thapra.lib.su.ac.th source (Silpakorn University's Rattanakosin temple archive) could only be confirmed via search-indexed snippet this session; direct fetch failed with a socket error on every attempt. The 1864/Rama IV planting date is independently corroborated by becommon.co, an unrelated source, so the fact stands on two sources despite the direct-fetch failure.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bkk_004",
+      "name": "The Bodhi Tree of Wat Benchamabophit",
+      "species": "Bodhi Tree (Ficus religiosa)",
+      "age_estimate": "planted 1900, about 126 years",
+      "age_min": 126,
+      "age_max": 126,
+      "location": {
+        "address": "Lawn behind the ubosot, Wat Benchamabophit Dusitwanaram, Nakhon Pathom Road, Dusit, Bangkok",
+        "latitude": 13.766583,
+        "longitude": 100.514083,
+        "neighbourhood": "Dusit"
+      },
+      "story": "When Thailand received its first-ever direct cutting from the actual Bodhi tree at Bodh Gaya in 1891, King Chulalongkorn did not plant it right away. He sent it two hundred kilometres to Wat Asdangnimit in Si Racha to be nursed for nine years first, unwilling to risk India's most sacred sapling on an unproven transplant. Only in 1900, once it had grown strong enough to travel again, did he personally plant it at Wat Benchamabophit, on the lawn behind the ordination hall, in the temple he had built as his own before ascending the throne and where his ashes would later be interred beneath the main Buddha image. Every other Bodhi tree in Thailand before this one had arrived at one remove, propagated from Sri Lankan trees that themselves descended from a cutting planted at Anuradhapura more than two thousand years earlier. This was the first to skip that detour and come straight from the source. Unusually for a Thai temple, this Bodhi stands where a chedi would normally rise, treated as the ordination hall's spiritual counterweight rather than a subordinate planting. At 126 years old it remains younger than the marble temple around it, itself finished only in 1911, eleven years after this tree was already established.",
+      "verified_sources": [
+        "https://today.line.me/th/v3/article/3NqW87P",
+        "https://www.posttoday.com/business/572677",
+        "http://www.thapra.lib.su.ac.th/web-temple/index.php?option=com_content&view=article&id=26&Itemid=21"
+      ],
+      "access": "Paid entry (small temple fee), standard dress code, typically open daily",
+      "transport": "Best reached by taxi or Grab; no BTS or MRT station within comfortable walking distance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "The thapra.lib.su.ac.th source could only be confirmed via search-indexed snippet this session; direct fetch failed with a socket error. The 1891 Bodh Gaya cutting, Si Racha nursery and 1900 planting are independently corroborated across today.line.me and posttoday.com.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bkk_005",
+      "name": "Lan Pho, the Bodhi Tree of Thammasat University",
+      "species": "Bodhi Tree (Ficus religiosa)",
+      "age_estimate": "at least 90 years, exact planting date undocumented",
+      "age_min": 90,
+      "age_max": 150,
+      "location": {
+        "address": "Lan Pho, in front of the Faculty of Liberal Arts, Thammasat University (Tha Phra Chan campus), Phra Chan Road, Phra Nakhon, Bangkok",
+        "latitude": 13.7568,
+        "longitude": 100.4917,
+        "neighbourhood": "Phra Nakhon, Tha Phra Chan"
+      },
+      "story": "A single tree on a university lawn became the starting point for the protest that ended a Thai dictatorship. On 6 October 1973, students gathered under this Bodhi tree at Thammasat University to demand the release of activists arrested for distributing leaflets calling for a new constitution, a protest that grew within days into the mass uprising of 14 October 1973, which brought down the government of Field Marshal Thanom Kittikachorn. Three years later, the same tree stood over one of the darkest days in modern Thai history, the 6 October 1976 massacre, when paramilitary and police forces killed student protesters occupying the same grounds. The plaza around the tree, still called Lan Pho, the Bodhi Court, has carried that weight ever since, a birthplace of Thai democracy and the site of a massacre within three years of each other, under the same branches. The tree itself predates all of it. Thammasat was founded on this former Front Palace site in 1934, and the tree was already established ground the university simply inherited, mature enough that nobody has ever recorded when it was planted. At well over ninety years old, and probably far older, it is a tree that Thai political history simply happened around rather than the other way round.",
+      "verified_sources": [
+        "https://mgronline.com/qol/detail/9490000019598",
+        "https://www.khaosod.co.th/newspaper-column/general-knowledge/news_6668574",
+        "https://www.silpa-mag.com/history/article_155493"
+      ],
+      "access": "Free, public university campus grounds, generally open during daytime hours",
+      "transport": "6 minute walk from Tha Phra Chan pier (Chao Phraya Express Boat), or roughly 15-20 minutes on foot from MRT Sanam Chai (Blue Line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Exact planting date undocumented; sources agree the tree predates Thammasat's 1934 founding on this site but give no planting record, only that the land was inherited rather than landscaped. Included for historical and civic significance under CLAUDE.md's qualifying bar rather than confirmed age, the same pattern as Reykjavik's Spruce of Elliðaárhólmi.",
+      "location_precision": "approximate"
+    }
+  ]
+}
