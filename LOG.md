@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Utrecht opens: 5 trees, walled gardens beat open canals for genuine age
+
+Same session, straight after the Zagreb research note. No new submissions. Shipped: the Uithof Linden (Utrecht's oldest, ~275 years, beside a farmhouse whose name now belongs to the whole university science campus around it), the Oude Hortus Ginkgo (~260+ years, a male tree with a female branch grafted on in the 1800s so it could finally seed, the graft scar still visible), the Handkerchief Tree and the Yew of the same walled Oude Hortus garden, and Onder de Linden, the Nieuwegracht's named canal-side lime avenue, honestly the youngest of the five since its current trees date to an undocumented ~1830 replanting.
+
+One lead dropped after direct reading: a Wilhelminapark social-media post about a "Hiroshima survivor" Chinese parasol tree turned out, read closely, to be about the original Hiroshima tree rather than confirming Utrecht actually has a planted descendant. No second source found either way, so left out.
+
+2 of 5 photos found, both modern (2024/2025) shots by the same Dutch heritage-tree photographer. Site rebuilt (721 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
+## 2026-07-31 — Zagreb researched, no page yet: its most famous tree died in May 2026, and the rest didn't clear the bar
+
+Same session, straight after Warsaw. Zagreb was next in the queue. Its own most celebrated tree, "Dedek," a roughly 600-year-old oak in Park Maksimir, turned out to have been destroyed in a storm on 2026-05-15/16, a near-miss catch (would have been easy to publish as living). What's left, mainly the well-documented Zrinjevac plane avenue plus three thinly-sourced Botanical Garden specimens, doesn't clear the four-tree floor with confidence, so nothing shipped; full detail in CURATION.md. Moved on to Utrecht.
+
 ## 2026-07-31 — Warsaw opens: 5 trees, mostly notable for history rather than age
 
 Same session, straight after Geneva. No new submissions. Warsaw was almost entirely destroyed 1939-1945, so few of its trees are genuinely old; the list leans on concentrated history instead. Shipped: Dab Mieszko I (600-640 years, Warsaw's oldest, survived a 2019 arson attack), the Poplar of the Defenders (stood inside a real 1939 barricade, later grew beside a WWII transit camp where survivor testimony describes a mass grave beneath it), Sowinski's Linden (rooted where a general died defending an 1831 uprising redoubt), Dr Korczak's Oak (beside the only building left standing around the orphanage Janusz Korczak ran until deportation to Treblinka in 1942), and Ciechomski's Pear (an honestly flagged, disputed memorial-tree legend).
