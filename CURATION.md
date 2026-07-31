@@ -1,3 +1,13 @@
+## 2026-07-31 — Zagreb researched, no page yet: its most famous tree died in May 2026, and the rest didn't clear the bar
+
+Same session, straight after Warsaw. Zagreb was next in the queue.
+
+**A real dead-tree catch, the reason this research mattered even without a page**: Zagreb's own most celebrated tree, "Dedek" ("Grandpa"), a roughly 600-year-old pedunculate oak in Park Maksimir and the only tree in the park with its own name, was destroyed in a storm on the night of 15-16 May 2026 (index.hr, telegram.hr, net.hr all confirm, published the same day). It began growing during the reign of Matthias Corvinus, survived two lightning strikes, and was Zagreb's oldest tree until this year. Genetic material (around 500 grafts, 1,600+ acorns collected since 2014) will eventually produce clones for replanting, but the original is gone. It was fully identified as this city's obvious headline entry before the storm-date check turned up its death; would have been an easy near-miss to publish as living, the same class of catch as the Shimogamo Shrine tree in the Kyoto run.
+
+**What's left doesn't clear the four-tree floor with confidence**: the Zrinjevac Plane Trees (an avenue of ~220 planes shipped from Trieste in 1873, most still standing, one uprooted by storm in spring 2026 after 153 years, well documented via Croatian press and Wikipedia) is genuinely strong and would anchor a future Zagreb page. Beyond that, the Zagreb Botanical Garden has a roughly 200-year-old pedunculate oak (its oldest plant), century-old bald cypresses along its pond, and an old Parrotia persica (iron tree), but none of these could be confirmed beyond thin, single-source AI-summarized web fetches; direct fetches of the garden's own arboretum page failed on a certificate error this session. Padding to four with under-verified specifics felt like the wrong trade against CLAUDE.md's honesty bar, so nothing shipped.
+
+**Zagreb stays without a page.** A future run with a working direct fetch of botanickivrt.biol.pmf.hr's arboretum page, or Croatia's national Register of Protected Natural Values (mentioned but not successfully queried this session), could likely get it over the line quickly, since the Zrinjevac entry alone is already solid and only three more genuinely need firming up rather than finding from scratch. Moved on to the next city in the queue, Utrecht.
+
 ## 2026-07-31 — Warsaw opens: 5 trees, history did more work than age
 
 Same session, straight after Geneva. Reader submissions rechecked (still only the header row). Next in the queue was Warsaw.
