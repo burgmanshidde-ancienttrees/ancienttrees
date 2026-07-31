@@ -2050,6 +2050,8 @@ def build_question_page(city_entry, collections, pages):
                    "olive", "olives", "plane", "planes", "cedar", "cypress", "linden",
                    "lime", "ficus", "pine", "elm", "ash", "beech", "chestnut", "wood",
                    "grove", "ring", "garden", "gardens", "old", "great", "monumental",
+                   "king", "queen", "prince", "princess", "royal", "grand", "giant",
+                   "ancient", "sacred", "holy", "wishing", "guardian",
                    "de", "del", "della", "der", "du", "la", "le", "el", "van", "dos",
                    "das", "do", "di", "san", "santa"}
         tokens = [w for w in re.findall(r"[A-Za-z']+", old["name"])
