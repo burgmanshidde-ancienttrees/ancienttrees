@@ -1,0 +1,161 @@
+{
+  "city": "Krakow",
+  "country": "Poland",
+  "status": "needs_curation",
+  "oldest_tree_id": "kra_002",
+  "intro": "Krakow's most remarkable trees cluster oddly close together: three of the four grow a few dozen metres apart inside Poland's oldest botanical garden, founded in 1783, including an oak whose folklore age of 500 years turned out, once someone finally measured it, to be less than half that. The fourth survives for a different reason: a roadside oak in Borek that one devoted neighbour spent his life protecting from occupying soldiers and road crews alike. Krakow's 362 registered natural monuments are mostly ordinary; these four are the exceptions worth the walk.",
+  "meta_description": "Krakow's most remarkable trees: the Jagiellonian Oak, Poland's oldest black locust, the Sniadecki dogwoods, all in one garden, and the roadside Henryk Oak.",
+  "question_answer": "Krakow's oldest tree is generally considered the Henryk Oak in the Borek Falecki district, estimated at around 240 to 250 years old and named after Henryk Bartyzel, the neighbour who protected it from felling for most of the 20th century. It stands beside a road Austrian authorities cut through its original forest in 1790.",
+  "question_meta": "The Henryk Oak in Borek Falecki, roughly 240 to 250 years old, is Krakow's oldest tree, named for the neighbour who spent decades protecting it.",
+  "question_context": "The Henryk Oak is the last living fragment of a pine-and-oak forest that once covered the village of Borek, on Krakow's southern edge, the same wood that gave the settlement its name (bor being an old Polish word for pine forest). It became a roadside tree in 1790, not long after Poland's first partition, when Austrian authorities drove the new highway from Vienna to Lwow directly through the old stand, leaving this one oak standing at the edge of what became one of the busiest streets in the district. For most of the 20th century, one man kept it that way: Henryk Bartyzel lived beside the tree from 1923 until 2010, intervening when occupation authorities ordered it felled during the Second World War and again through decades of routine road works that might otherwise have taken it out. A civic council named the tree in his honour the same year he died, and in 2017 a community project involving more than 90 volunteers restored the ground around its base and reopened it properly to the public. It represented Krakow for the first time in Poland's national Tree of the Year contest the following year.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Krakow?",
+      "a": "The Henryk Oak in the Borek Falecki district, estimated at 240 to 250 years old, named for Henryk Bartyzel, the neighbour who protected it for decades."
+    },
+    {
+      "q": "How old is the Jagiellonian Oak really?",
+      "a": "Around 230 years, not the 500 popularly claimed for years. A dendrochronological study corrected the figure, making it roughly as old as the Botanical Garden itself, founded in 1783."
+    },
+    {
+      "q": "Where is Poland's oldest black locust tree?",
+      "a": "In the Jagiellonian University's Botanical Garden, in front of Collegium Sniadeckiego on the Kopernika Street side: 239 years old by a 2022 measurement, with a trunk 475cm around."
+    },
+    {
+      "q": "Is the Botanical Garden free to visit?",
+      "a": "No, entry is ticketed, though modestly priced. It is the only paid site among Krakow's trees here; the Henryk Oak stands free beside a public street."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kra_001",
+      "name": "The Jagiellonian Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "around 230 years",
+      "age_min": 225,
+      "age_max": 235,
+      "location": {
+        "address": "Botanical Garden of the Jagiellonian University, ul. Kopernika 27, Krakow",
+        "latitude": 50.062917,
+        "longitude": 19.957917,
+        "neighbourhood": "Wesola"
+      },
+      "story": "For generations, guides at Poland's oldest botanical garden told visitors this oak was 500 years old, older than the university faculty that planted the garden around it. A dendrochronological study eventually corrected the number to roughly 230, a reminder that even a garden built by scientists can carry a folk legend for two centuries before anyone tests it properly. The real number is less dramatic but not much less impressive: the tree is very nearly as old as the garden itself, founded in 1783 when the Commission of National Education bought monastic land from the Jesuits to give the Krakow Academy's chemistry and natural history faculty somewhere to grow a teaching collection. Sitting at the heart of that collection ever since, the Jagiellonian Oak has outlived the partitions of Poland, two world wars, and the garden's own repeated redesigns. Its species is the single most common one Krakow protects today, a pedunculate oak among 121 individual specimens registered across the city as of 2023, but this particular tree is the one the garden itself calls its most impressive, trunk now six metres around. It stands for anyone who buys the garden's modest entry ticket, its crown wide enough to shade a good stretch of the main path, still growing quietly while its age keeps getting revised downward by better science.",
+      "verified_sources": [
+        "https://ogrod.uj.edu.pl/ogrod/rosliny/najstarsze-okazy",
+        "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Botaniczny_Uniwersytetu_Jagiello%C5%84skiego"
+      ],
+      "access": "Paid entry, Jagiellonian University Botanical Garden (open seasonally, check hours)",
+      "transport": "Krakow Glowny railway station, short walk (garden is close to the Old Town's eastern edge)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age correction (folk estimate of 500 years versus dendrochronological finding of roughly 230) confirmed by the Botanical Garden's own official page and repeated in Polish Wikipedia's entry on the garden. Coordinates are the garden's general address point, not a surveyed position for the specific tree within the 9.6-hectare grounds.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "kra_002",
+      "name": "The Henryk Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "240-250 years",
+      "age_min": 240,
+      "age_max": 250,
+      "location": {
+        "address": "Near ul. Zakopianska, Borek Falecki, Krakow",
+        "latitude": 50.008,
+        "longitude": 19.9254,
+        "neighbourhood": "Lagiewniki-Borek Falecki"
+      },
+      "story": "This oak is named after the man who spent decades making sure it did not get cut down, not after anyone who planted it. Henryk Bartyzel, who lived beside the tree from 1923 until his death in 2010, is the reason it survived a felling order from wartime occupation authorities and decades of routine maintenance on what became one of Krakow's busiest streets. The oak itself predates him by more than a century: it is the last survivor of the pine-and-oak forest that once covered the former village of Borek, the same wood that gave the village its name, bor being an old Polish word for pine forest, and it became a roadside tree almost by accident in 1790, when Austrian authorities cut the Vienna-to-Lwow highway straight through the ancient stand shortly after Poland's first partition. Everything else that forest once held is gone; only this oak, now around 240 to 250 years past that road-building, is left standing at its edge. In 2010, a civic council formally named it Henryk in Bartyzel's honour, and in 2017 a community restoration project reopened its surroundings after more than 90 volunteers cleared and replanted the ground around its base. It competed, as Krakow's first entrant, in Poland's national Tree of the Year contest in 2018.",
+      "verified_sources": [
+        "https://dlaseniora.krakow.pl/aktualnosci/220872,64,komunikat,dab_henryk_z_krakowa_w_konkursie_drzewo_roku_2018.html",
+        "https://krakow.naszemiasto.pl/krakow-240-letni-dab-henryk-w-borku-faleckim-bedzie-lepiej/ar/c8-3863166",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie"
+      ],
+      "access": "Free, open access, roadside on public ground in Borek Falecki",
+      "transport": "Borek Falecki tram loop (Zakopianska), short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "History (1790 road-cutting, Bartyzel's protection from 1923-2010, 2010 naming, 2017 community restoration, 2018 Tree of the Year entry) confirmed across the official Krakow senior-citizens news page and a Nasze Miasto Krakow local news article giving the '240-year-old' figure; the age range here (240-250) allows for the years since that undated article. Exact coordinates are Zakopianska street's general area (Nominatim-geocoded), not a surveyed point for the specific tree, which sources place near a former bus depot on that street without a precise address.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "kra_003",
+      "name": "Poland's Oldest Black Locust",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "239 years",
+      "age_min": 238,
+      "age_max": 243,
+      "location": {
+        "address": "In front of Collegium Sniadeckiego, Botanical Garden of the Jagiellonian University, ul. Kopernika side, Krakow",
+        "latitude": 50.0629,
+        "longitude": 19.9579,
+        "neighbourhood": "Wesola"
+      },
+      "story": "Black locusts are not supposed to be rare in Poland. The species arrived from North America in the 18th century and spread so successfully across Central Europe's sandy soils that it now grows practically everywhere, valued for holding loose ground rather than for looking distinguished. Which is what makes the specimen standing in front of Collegium Sniadeckiego, on the Kopernika Street side of the Jagiellonian University's Botanical Garden, worth singling out: at 239 years old by a 2022 measurement, with a trunk 475cm around and a height of 27 metres, it is the oldest confirmed black locust anywhere in Poland. Its age lines up almost exactly with the garden's own founding in 1783, meaning whoever first planted it did so within a few years of the garden's earliest plantings, one of the collection's original survivors rather than a later addition. May brings the reward for anyone who times a visit right: a black locust in full bloom carries heavy clusters of white flowers that draw bees from across the garden, the same nectar that makes the species one of Europe's most productive honey trees. It shares this stretch of path with a run of other exceptionally old specimens dating to the same founding decades, giving one corner of the garden a disproportionate share of Poland's oldest confirmed trees.",
+      "verified_sources": [
+        "https://ogrod.uj.edu.pl/ogrod/rosliny/najstarsze-okazy",
+        "https://gazetakrakowska.pl/najstarszy-ogrod-botaniczny-w-polsce-swietowal-swoje-240lecie-nie-zabraklo-okazalych-prezentow/ar/c1-17917969"
+      ],
+      "access": "Paid entry, Jagiellonian University Botanical Garden (open seasonally, check hours)",
+      "transport": "Krakow Glowny railway station, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "The 'oldest confirmed black locust in Poland' claim, the 2022 measurements (239 years, 475cm circumference, 27m height) and the founding-era planting date are given directly by the Botanical Garden's own official page and repeated in a Gazeta Krakowska feature marking the garden's 240th anniversary in 2023; both agree without contradiction.",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [5],
+        "label": "May, when it flowers in heavy white clusters",
+        "kind": "flowers"
+      }
+    },
+    {
+      "id": "kra_004",
+      "name": "The Sniadecki Dogwoods",
+      "species": "Cornelian Cherry (Cornus mas)",
+      "age_estimate": "around 230 years",
+      "age_min": 225,
+      "age_max": 235,
+      "location": {
+        "address": "Main path, Botanical Garden of the Jagiellonian University, ul. Kopernika 27, Krakow",
+        "latitude": 50.0629,
+        "longitude": 19.9579,
+        "neighbourhood": "Wesola"
+      },
+      "story": "Jan Sniadecki was one of the Enlightenment's great Polish polymaths, an astronomer and mathematician who reformed how Krakow's university taught science, and tradition credits him with personally planting these cornelian cherries along the Botanical Garden's main path around 1790, while he was directing the observatory next door. Cornelian cherry is usually grown as a large shrub rather than what most people picture as a tree, which is part of why these specimens stand out: at roughly 230 years old, they are among the oldest cultivated cornelian cherries recorded in Poland, multi-stemmed and gnarled in a way that reads more like an old apple tree than the tidy hedge shrub gardeners plant today. They flower before almost anything else in the garden wakes up, small clusters of yellow blossom opening as early as February while frost is still a real possibility, followed by tart red fruit in late summer that Polish households have turned into preserves and liqueur for centuries. Sniadecki's connection to the garden runs deeper than one planting: the university's astronomical observatory, which he helped establish, still stands in the Collegium building the garden surrounds, and the dogwoods are the closest thing to a living monument to the man himself, unlabelled and easy to walk past without knowing what they are.",
+      "verified_sources": [
+        "https://ogrod.uj.edu.pl/ogrod/rosliny/najstarsze-okazy"
+      ],
+      "access": "Paid entry, Jagiellonian University Botanical Garden (open seasonally, check hours)",
+      "transport": "Krakow Glowny railway station, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Only one source found (the Botanical Garden's own 'oldest specimens' page), which itself presents the Sniadecki planting as tradition ('according to tradition') rather than documented fact; the age (c.1790, roughly 230 years) is the garden's own figure. Flagged for single-source attribution on the planting story specifically, though the trees' existence, species, and age are not in dispute.",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [2, 3],
+        "label": "February and March, when it flowers before its leaves appear",
+        "kind": "flowers"
+      }
+    }
+  ]
+}
