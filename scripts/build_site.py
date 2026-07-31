@@ -2926,10 +2926,7 @@ function initTreeLayers() {
       var cities = {};
       leaves.forEach(function(l) { cities[l.properties.cs] = true; });
       var keys = Object.keys(cities);
-      if (keys.length === 1) {
-        if (!enterCity(keys[0])) { window.location.href = keys[0]; }
-        return;
-      }
+      if (keys.length === 1) { window.location.href = keys[0]; return; }
       src.getClusterExpansionZoom(f.properties.cluster_id).then(function(zoom) {
         map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5, duration: 700});
       });
@@ -2952,55 +2949,19 @@ function initTreeLayers() {
 }
 map.on('style.load', initTreeLayers);
 if (map.isStyleLoaded()) { initTreeLayers(); }
-// ---- One map, two views (Hidde, 2026-07-31, third pass: "beide gewoon een
-// bepaalde view in dezelfde map"). Zoomed out the panel is the chooser (up
-// to ten city cards, most likely first); click one or zoom in and the SAME
-// map enters city view: the panel becomes that city's trees, with the city
-// page one click away for the full stories. Hysteresis stops flapping.
+// ---- The city chooser (Hidde, 2026-07-31, final form: "waarom kom ik
+// dan niet direct op de City Page?"). The map is where you choose; the
+// city page is the city experience, full stop. The panel lists up to ten
+// cities in view, most likely first, and every click goes straight there.
 var panel = document.getElementById('ex-panel');
-var panelMode = 'cities';
 function fmtCard(c) {
   var ph = c.ph ? '<span class="exc-ph"><img src="' + c.ph + '" alt="" loading="lazy"></span>' : '<span class="exc-ph exc-noph"></span>';
-  return '<a class="exc-card" href="' + c.url + '" data-city="' + c.url + '">' + ph +
+  return '<a class="exc-card" href="' + c.url + '">' + ph +
          '<span class="exc-body"><b>' + c.city + '</b>' +
          '<span>' + c.n + ' trees &middot; ' + c.country + '</span></span></a>';
 }
-function cityMeta(cs) {
-  for (var i = 0; i < CITIES.length; i++) { if (CITIES[i].url === cs) { return CITIES[i]; } }
-  return null;
-}
-function dominantCity() {
-  var b = map.getBounds(), counts = {};
-  DATA.features.forEach(function(f) {
-    if (b.contains(f.geometry.coordinates)) { counts[f.properties.cs] = (counts[f.properties.cs] || 0) + 1; }
-  });
-  var best = null, n = 0;
-  Object.keys(counts).forEach(function(cs) { if (counts[cs] > n) { n = counts[cs]; best = cs; } });
-  return best;
-}
 function renderPanel() {
   if (!panel) return;
-  var z = map.getZoom();
-  if (panelMode === 'cities' && z >= 11.5) { panelMode = 'trees'; }
-  if (panelMode === 'trees' && z <= 10.5) { panelMode = 'cities'; }
-  if (panelMode === 'trees') {
-    var cs = dominantCity(), meta = cityMeta(cs);
-    if (cs && meta) {
-      var rows = DATA.features.filter(function(f) { return f.properties.cs === cs; })
-        .map(function(f) {
-          var p = f.properties;
-          var now = p.now == 1 ? ' <span class="exc-now">at its best</span>' : '';
-          return '<a class="exc-row" href="' + p.url + '"><b>' + p.name + '</b>' + now +
-                 '<span>' + (p.age || '') + '</span></a>';
-        });
-      if (history.replaceState) { history.replaceState(null, '', '#' + cs); }
-      panel.innerHTML = '<div class="exc-cityhead"><h2>' + meta.city + '</h2>' +
-        '<a href="' + cs + '">Open the city page &rarr;</a></div>' + rows.join('');
-      return;
-    }
-    panelMode = 'cities';
-  }
-  if (history.replaceState) { history.replaceState(null, '', location.pathname); }
   var b = map.getBounds();
   var cities = CITIES.filter(function(c) { return b.contains([c.lng, c.lat]); });
   if (!cities.length) {
@@ -3011,26 +2972,9 @@ function renderPanel() {
   panel.innerHTML = '<div class="exc-cityhead"><h2>' + head + '</h2></div>' +
     cities.slice(0, 10).map(fmtCard).join('');
 }
-function enterCity(cs) {
-  var meta = cityMeta(cs);
-  if (!meta) { return false; }
-  panelMode = 'trees';
-  map.flyTo({center: [meta.lng, meta.lat], zoom: 13, duration: 1200});
-  return true;
-}
-panel.addEventListener('click', function(e) {
-  var card = e.target.closest ? e.target.closest('.exc-card') : null;
-  if (card && enterCity(card.getAttribute('data-city'))) { e.preventDefault(); }
-});
 map.on('moveend', renderPanel);
 map.on('load', renderPanel);
 renderPanel();
-// Deep link: /explore#lisbon opens in that city's view.
-(function() {
-  var h = (location.hash || '').replace('#', '');
-  var meta = cityMeta(h);
-  if (meta) { panelMode = 'trees'; map.jumpTo({center: [meta.lng, meta.lat], zoom: 13}); }
-})();
 
 // The pulse: radius and opacity breathe on a 2s cycle. Paint-property
 // animation only, no per-frame data churn; stops costing anything when the
