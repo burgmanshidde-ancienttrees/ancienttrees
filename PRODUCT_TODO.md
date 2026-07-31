@@ -1,3 +1,8 @@
+## Two small SEO wins from the competitor comparison (2026-07-31)
+
+1. **FAQPage schema on question pages** (Contract B): the oldest-tree pages are already question-and-answer; add the FAQPage/Question/Answer schema stack to the existing ld_script graph. Verify with a schema validator fetch or by asserting the JSON-LD structure in build output.
+2. **Query mining line in the daily digest**: extend scripts/daily_digest.py's GSC section with one line: the top query (by impressions, 10d) that has NO matching page on the site, as a standing content lead ("albero roma" found us before we had anything Italian). Deterministic string match against the sitemap's slugs is enough; no page gets built from it automatically.
+
 ## Contract G renderer: country pages (added 2026-07-31, blueprint v1.5 approved)
 
 Build build_country_page() per Contract G exactly: root-level country slug (build fails on any clash with a city slug), title/meta/H1/answer-first per the table, hand-written intro from data/countries/[slug].json (page does not build without it), country map with the existing city-chooser panel, city photo cards via city_face(), oldest-tree block, schema stack, link minima, and the city-breadcrumb upgrade (country crumb becomes a link when the country page exists). Verify by build output and qa.py; the first shippable country is the Netherlands.
