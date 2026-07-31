@@ -140,7 +140,8 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": { "months": [9, 10], "label": "late September into October, when the walnuts ripen and drop", "kind": "fruit" }
     }
   ]
 }

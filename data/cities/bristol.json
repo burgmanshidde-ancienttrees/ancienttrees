@@ -85,7 +85,8 @@
       },
       "curation_status": "flagged",
       "notes": "Girth (805cm) and age estimate (600 years) from the Bristol Tree Forum's detailed veteran tree survey table, a specialist conservation-organisation source with an OS grid reference (ST5541 7203) for this specific specimen; the Ancient Tree Forum's own Ashton Court Park page corroborates the estate's broader status as the largest cluster of veteran/ancient trees in Britain outside Windsor Great Park, the context this entry sits inside. Coordinates are an approximate point within Ashton Court Estate near the grid reference, not independently surveyed by this project.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": { "months": [10], "label": "October, when the spiny husks split and the nuts fall", "kind": "fruit" }
     },
     {
       "id": "bri_003",
