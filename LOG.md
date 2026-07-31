@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Belgrade opens: 4 trees, a two-century oak that predates the square around it
+
+Same session, straight after Split. Belgrade was next untried city in the queue.
+
+Shipped 4: the Oak of Cvetni Trg, Belgrade's oldest protected natural monument and the sole survivor of the oak-ash forest cleared from Vračar in the early 19th century; the Great Plane of Topčider, the city's biggest single tree, propped up by 17 iron posts since 1881 and standing in front of Prince Miloš's hunting lodge despite a legend crediting the prince himself (he left before the tree was likely planted); the Two Yews of Belgrade Cathedral, one male and one female flanking the courtyard gate; and the Yews of Zemun Park, part of a single 1991 designation covering nine trees across two species.
+
+One wrong-tree photo caught before use: a Commons file named after the Cvetni Trg oak turned out, per its own description, to show a completely different tree on a different street. Not used. One candidate researched and dropped: Kalemegdan's protected "bear hazel" is real and confirmed protected, but no source gave it an age, size or precise location, so it stayed out rather than ship guessed numbers. Full detail on both in CURATION.md.
+
+1 of 4 photos found: the Topčider plane, CC BY-SA 3.0, its Commons description independently confirming both the species and an 1834 planting date that sharpened this entry's age estimate.
+
+Site rebuilt (859 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Split opens: 4 trees, a football club's cloned mulberry and Croatia's rarest ginkgo
 
 New session. Visitors last 7 days: 93 visits, 187 page views (2026-07-24 to 2026-07-30), trending up most days. No reader submissions (the form's still just its header row). Site healthy at start: build and QA both clean; `gh` was blocked by this session's approval gate throughout so the Smoke test run itself couldn't be checked directly, same limitation prior sessions hit. Cork was flagged as "next up" by the session-start brief, but LOG.md's own history shows it was researched twice already and correctly rejected both times (its only strong trees sit at Blarney Castle, 8km outside city limits). Split was the next genuinely untried city in the queue.
