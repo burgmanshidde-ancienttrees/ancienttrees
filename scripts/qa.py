@@ -78,6 +78,12 @@ def main():
         scan.feed(page.read_text(encoding="utf-8"))
         text = " ".join(scan.text_parts)
 
+        if rel.name == "index.html" and rel.parent.name == "":
+            import re as _re
+            m = _re.search(r"<title>([^<]*)</title>", page.read_text(encoding="utf-8"))
+            if m and not m.group(1).startswith("Ancient Trees"):
+                failures.append(f"{rel}: homepage <title> is {m.group(1)!r}; a shelf caption once shadowed it")
+
         if "—" in text:
             failures.append(f"{rel}: em dash in rendered text (hard rule 3)")
         lower = text.lower()
