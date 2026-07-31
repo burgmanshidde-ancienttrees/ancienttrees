@@ -1,3 +1,17 @@
+## 2026-07-31 — Belgrade opens: 4 trees, a two-century oak that predates the square around it
+
+Same session, straight after Split. Belgrade was next untried city in the queue (Cork, Galway, Zagreb, Delft, Den Bosch remain previously marginal/exhausted).
+
+**Shipped 4**: the Oak of Cvetni Trg (Pedunculate Oak, Quercus robur, 200+ years, protected 1980/2001), Belgrade's oldest protected natural monument and the last living remnant of the oak-ash forest cleared from Vračar in the early 19th century; the Great Plane of Topčider (London Plane, Platanus x acerifolia, ~192 years, planted 1834 per a Wikimedia Commons photo caption, natural monument since 1979), Belgrade's largest single tree, held up by 17 iron posts since 1881, standing in front of Prince Miloš's hunting lodge despite a debunked legend that the prince planted it himself (he left Topčider in 1839); the Two Yews of Belgrade Cathedral (European Yew, Taxus baccata, ~115 years, protected 1979), one male and one female flanking the courtyard entrance; and the Yews of Zemun Park (European Yew, ~115 years, protected 1991 as a single 9-tree/group natural monument alongside 4 groups of Caucasian wingnut, story mentions the wingnuts as context but the entry itself centers the yews).
+
+**A wrong-tree photo caught and dropped**: a Wikimedia Commons file named "HRAST_CVETNI_TRG_2.JPG" looked like an exact match for the Oak of Cvetni Trg, but its own description identifies it as a different tree entirely, a Northern red oak (Quercus rubra) in flower boxes on Knez Mihailova Street. Not used.
+
+**A dropped candidate**: the "mečja leska" (bear/Turkish hazel, Corylus colurna) at Kalemegdan fortress, one of four state-protected trees there, was researched as a possible 4th or 5th entry but dropped for lack of any individual age, size or precise-location data after several searches; only its existence and protected status were confirmed. Left out rather than published with fabricated numbers. Worth a follow-up if a Serbian nature-protection registry (Zavod za zaštitu prirode Srbije) becomes directly accessible.
+
+**1 photo found**: the Great Plane of Topčider, CC BY-SA 3.0 (Andy Mabbett/Pigsonthewing, Wikimedia Commons), found_needs_check, description confirms "London Plane in Topčider Park, Belgrade, planted in 1834" and its coordinates match this entry's pin within about 8 metres. 3 photos missing (oak, cathedral yews, Zemun yews), none found after Commons searches.
+
+**Coordinate honesty**: the oak, plane and cathedral yews all use coordinates sourced to a dedicated Serbian Wikipedia natural-monument article or the Cathedral's own Wikipedia infobox, shipped `confirmed`. Zemun Park's yews use only the park-level natural-monument coordinate (the 9 trees/groups are not individually catalogued in any source found), shipped `approximate`, flagged.
+
 ## 2026-07-31 — Split opens: 4 trees, a football club's cloned mulberry and Croatia's rarest ginkgo
 
 New session. Split was next untried city in the queue (Cork, Galway, Zagreb, Delft, Den Bosch all previously marginal/exhausted; Split had no prior research history in this file).
