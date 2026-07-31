@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Thessaloniki opens: 4 trees, all dated by core sample instead of estimate
+
+Same session, straight after Arnhem. The Netherlands wave's remaining pending cities (Cork, Galway, Zagreb, Delft, Den Bosch) are all genuinely exhausted or marginal, including after two fresh attempts this session to unblock Den Bosch and Delft via newly-found municipal tree datasets, so moved to the next fresh city in the queue instead: Thessaloniki.
+
+It turned out unusually well documented: a 2019 University of Thessaloniki study core-sampled four Oriental plane trees ahead of a municipal proposal to protect them as natural monuments, giving real dendrochronological ages rather than the girth-based guesses most cities offer. Shipped all four: the Kastro Plane (~828 years, Thessaloniki's likely oldest tree, in the old town below the Byzantine walls), the Navarino Square Plane (~310 years, beside the excavated ruins of Emperor Galerius's Roman palace, survived the 1917 fire that burned a third of the city), the White Tower Plane (~235 years, opposite the city's best-known monument, the largest of the four despite being younger than two others), and the Apostolou Pavlou Plane (~205 years, at the entrance to the Atatürk Museum).
+
+One access question worth flagging: early research described the fourth tree as standing at the "Turkish Consulate entrance," which would have failed the hard rule against publishing trees on private land. Checked further and found the building is specifically the Atatürk Museum next door to the consulate, free to enter Tuesday to Sunday, so it shipped with the museum's actual opening hours in the access field rather than an assumption either way.
+
+0 of 4 photos found. Full detail on both Thessaloniki and the Den Bosch/Delft dead ends in CURATION.md.
+
+Site rebuilt (823 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Arnhem opens: 4 trees, and a municipal open-data tree register gave every pin exact coordinates
 
 New session. Visitors last 7 days: 93 visits, 187 page views (2026-07-24 to 2026-07-30), trending up most days; nothing in that window points at a specific page to deepen. No reader submissions (form still just its header row). Site healthy at session start: build and QA both clean (`gh` was blocked by this session's approval gate throughout, so the Smoke test run itself couldn't be checked directly; relied on build+QA as the health signal). Arnhem was next in the Netherlands wave per the prior session's handover.
