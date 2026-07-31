@@ -1,0 +1,147 @@
+{
+  "city": "Haarlem",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Haarlem's oldest trees mostly grow from the same source: fashionable 19th-century Dutch landscape design, and especially one family, the Zochers, who reshaped a demolished fortress line into Kenaupark, redesigned the medieval Haarlemmerhout, and laid out the Kleverlaan cemetery in the English landscape style within a few decades of each other. Older still is a beech carved by an exiled king passing time at his own government estate, and a plane tree thick enough to need several people to encircle it, growing in the garden of the province's own seat of government.",
+  "meta_description": "Haarlem's oldest trees include a beech carved by an exiled king and the province's own thickest plane. Four verified locations, real stories.",
+  "question_answer": "Haarlem's oldest documented tree is the Lodewijk Napoleon Beech in the Haarlemmerhout, carved with a crowned royal monogram by the exiled King of Holland sometime between 1808 and 1810. The carving itself has now grown over almost entirely, but the tree, likely well over 230 years old, still stands in the Netherlands' oldest public park.",
+  "question_meta": "A beech carved by an exiled king between 1808 and 1810 is Haarlem's oldest documented tree, its carving now nearly grown over. The full four.",
+  "question_context": "Haarlem's age claims split along a clear line: the Lodewijk Napoleon Beech has an actual historical event pinned to it, a specific exiled king carving a specific mark in a specific two-year window, which is why it anchors this list as the oldest despite nobody having counted its rings. The other three candidates are honestly less certain. Haarlem's thickest tree, the Provinciehuis plane, has no recorded planting date at all; its size alone suggests a 19th-century origin, but that is inference from girth rather than a documented fact. The Kleverlaan cemetery's yew and Kenaupark's copper beech both belong to the Zocher family's 19th-century landscape schemes, laid out within a few decades of each other, and both are old enough to anchor their respective grounds without either source giving a precise age. None of that uncertainty is unusual for city trees planted before municipal record-keeping became routine; it simply means the crowned R carved into one beech's bark, however faded now, remains the single most specific piece of evidence this city's tree history has to offer.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Haarlem?",
+      "a": "The Lodewijk Napoleon Beech in the Haarlemmerhout, carved with a royal monogram by the exiled King of Holland between 1808 and 1810, likely over 230 years old."
+    },
+    {
+      "q": "Are Haarlem's remarkable trees free to visit?",
+      "a": "Yes, all four stand in public parks or a public cemetery, open during normal hours at no charge."
+    },
+    {
+      "q": "What is Haarlem's thickest tree?",
+      "a": "A plane tree in the garden of Paviljoen Welgelegen, the province of Noord-Holland's government seat, with a trunk six metres around."
+    },
+    {
+      "q": "Why do so many of Haarlem's old trees date from the 19th century?",
+      "a": "The landscape architect family Zocher redesigned much of the city's greenery within a few decades of each other: Haarlemmerhout, Kenaupark and the Kleverlaan cemetery all carry their planting scheme."
+    }
+  ],
+  "trees": [
+    {
+      "id": "haa_001",
+      "name": "The Lodewijk Napoleon Beech",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "over 230 years",
+      "age_min": 230,
+      "age_max": 280,
+      "location": {
+        "address": "Haarlemmerhout, near Paviljoen Welgelegen",
+        "latitude": 52.3676661,
+        "longitude": 4.6260287,
+        "neighbourhood": "Haarlemmerhout"
+      },
+      "story": "A lonely, exiled king passed the time by carving his own royal monogram into a beech tree, and two centuries later almost nothing is left to see of it. Lodewijk Napoleon, installed by his brother as the first King of Holland in 1806, spent time at the government estate now known as Paviljoen Welgelegen, a short walk from this stretch of the Haarlemmerhout, and sometime between 1808 and 1810 carved a crowned letter R into the beech's bark, R for Roi, the French word for king. He was not a popular monarch by Dutch standards, remembered mostly for resisting his brother's harsher demands on the Dutch economy before Napoleon deposed him outright in 1810 and annexed the kingdom directly into France. The carving outlasted the reign by two centuries, slowly closing over as the tree's bark grew and healed around the old wound, the way any scar eventually fades on a tree that keeps living. By 2025, arborists inspecting it reported there was virtually nothing left to make out, the crown and the letter both swallowed by growth. The beech stands in the Haarlemmerhout, the oldest public park in the Netherlands, itself burned to nothing during the 1572-73 Spanish siege of Haarlem and replanted from 1584, meaning this specific tree is a second or third generation of forest on ground that has been fought over more than once.",
+      "verified_sources": [
+        "https://www.monumentaltrees.com/nl/nld/noordholland/haarlem/1092_haarlemmerhout/28248/",
+        "https://www.rodi.nl/haarlem/historie/202206/historisch-haarlem-7-het-gekerfde-kroontje-van-lodewijk-napoleon",
+        "https://www.nhnieuws.nl/nieuws/301854/zes-speciale-bomen-in-noord-holland-van-een-zevenling-tot-een-boomkerving-van-napoleon"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "15-20 minute walk from Haarlem Centraal station, or tram/bus",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "haa_002",
+      "name": "The Provinciehuis Plane",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "not documented, likely 19th century",
+      "age_min": 100,
+      "age_max": 180,
+      "location": {
+        "address": "Griffietuin, Paviljoen Welgelegen, Dreef 3",
+        "latitude": 52.3717214,
+        "longitude": 4.6305692,
+        "neighbourhood": "Centrum"
+      },
+      "story": "Haarlem's thickest tree grows in the garden of the province's own seat of government, a plane tree with a trunk six metres around, measured at chest height, which takes several adults linking hands to properly encircle. It stands in the grounds of Paviljoen Welgelegen, a country house built for a wealthy Haarlem merchant in the 1780s that later became the government building of the province of Noord-Holland, its garden known as the Griffietuin. No source pins down exactly when the tree was planted, though a plane tree reaching this girth in the Dutch climate typically implies a century and a half or more of steady growth, placing its likely origin somewhere in the 19th century, around the same era the estate itself changed from private pleasure garden to civic seat. Renovation work on the Griffietuin in recent years has deliberately reconnected it with the neighbouring Frederikspark, restoring a stretch of green that visitors can walk through freely even when the government building itself is closed to the public. The building only opens fully for exhibitions, public council sessions, or the national Open Monumentendag, but the garden and its giant plane require no appointment at all, a rare case of the tree being easier to visit than the institution that happens to house it.",
+      "verified_sources": [
+        "https://www.boomkronen.eu/node/99",
+        "https://www.noord-holland.nl/Over_de_provincie/Paviljoen_Welgelegen/Welgelegen_als_provinciehuis"
+      ],
+      "access": "Free, open garden at any time; the Provinciehuis building itself only opens for exhibitions, public sessions, or Open Monumentendag",
+      "transport": "15-20 minute walk from Haarlem Centraal station, or tram/bus",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "haa_003",
+      "name": "The Kleverlaan Yew",
+      "species": "Yew (Taxus baccata)",
+      "age_estimate": "not documented, described as genuinely old",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Begraafplaats Kleverlaan",
+        "latitude": 52.3959996,
+        "longitude": 4.6394171,
+        "neighbourhood": "Kleverpark"
+      },
+      "story": "Haarlem's oldest general cemetery is also one of the best places in the city to see what a 19th-century idea of a peaceful afterlife looked like in tree form. Zocher, the same landscape architecture family responsible for much of Haarlem's parkland, laid out Begraafplaats Kleverlaan in 1828 on the site of a former farm, choosing the English landscape style over the rigid formal rows more typical of cemetery design at the time: winding paths, ponds, gentle slopes, and specimen trees planted for their individual character rather than uniform rows of identical species. An old yew stands among the results, a species chosen deliberately and repeatedly across European cemeteries for centuries because of its association with mourning and, less morbidly, because yews simply live longer than almost anything else planted beside them, capable in the right conditions of outlasting the cemetery itself. Alongside it grow water and swamp cypresses, an Atlas cedar and a ginkgo, part of the same original planting scheme, though no source gives the yew's precise age beyond describing it as genuinely old rather than merely mature. The cemetery remains open to visitors during normal hours, free of charge, a working burial ground that also functions, almost incidentally, as one of Haarlem's better tree collections.",
+      "verified_sources": [
+        "https://www.ivn.nl/afdeling/zuid-kennemerland/natuuractiviteiten/monumentale-bomen-op-de-begraafplaats/",
+        "https://regioonline.nl/regio-amsterdam/wandeling-begraafplaats-kleverlaan/"
+      ],
+      "access": "Free, open cemetery during normal daytime hours",
+      "transport": "Tram or bus to Kleverpark, then a short walk, roughly 15-20 minutes from central Haarlem",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "haa_004",
+      "name": "The Kenaupark Red Beech",
+      "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+      "age_estimate": "not documented, likely about 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "location": {
+        "address": "Kenaupark, in front of one of the park's villas",
+        "latitude": 52.3866642,
+        "longitude": 4.6336530,
+        "neighbourhood": "Kenaupark"
+      },
+      "story": "This copper beech stands in front of a 19th-century villa with the kind of theatrical, deep purple-red canopy that looks almost too deliberately composed to be real, the sort of tree that would not look out of place backing a formal portrait, if the painters of Haarlem's Golden Age had lived to see Kenaupark built. The park itself dates from 1865, designed by the father-and-son landscape architects Zocher, the same family behind Haarlemmerhout's redesign a century earlier and the Kleverlaan cemetery, laid out on the site of the old city fortifications after Haarlem's walls came down and the ground beneath them needed a new purpose. Kenaupark takes its name from Kenau Simonsdochter Hasselaer, a Haarlem woman celebrated, with some historical exaggeration, for helping defend the city during the 1572-73 Spanish siege, one of the few Dutch women from that era whose name survived into a public square's naming. The beech itself has no precise recorded planting date, though its size and the park's own founding year point toward roughly a century and a half of growth. It shares the park with monumental planes, a cypress grove, oaks, a walnut and a stand of chestnuts, all part of the same original planting a Haarlem council chose to make graceful rather than merely functional out of a demolished fortress line.",
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Kenaupark",
+        "https://jtravel.nl/bezienswaardigheden-haarlem/kenaupark"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "10-15 minute walk from Haarlem Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

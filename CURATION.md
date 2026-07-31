@@ -1,3 +1,15 @@
+## 2026-07-31 — Haarlem opens: 4 trees, one Zocher family did most of the landscaping
+
+Same session, straight after The Hague. No new submissions. Haarlem was next in the queue.
+
+**Shipped**: the Lodewijk Napoleon Beech (Haarlemmerhout, Haarlem's oldest documented tree, carved with a crowned royal monogram by the exiled King of Holland between 1808 and 1810, the carving now almost entirely grown over per a 2025 arborist inspection), the Provinciehuis Plane (Haarlem's thickest tree, six metres in circumference, in the government garden of Paviljoen Welgelegen, undated but inferred 19th-century from its size), the Kleverlaan Yew (in Haarlem's oldest general cemetery, laid out by the Zocher family in 1828, genuinely old but undated by any source found), and the Kenaupark Red Beech (a copper beech in a 1865 Zocher-designed park built over the demolished city fortifications, also undated).
+
+**Two of four flagged for the same honest reason**: the Provinciehuis plane and Kenaupark beech both lack any documented planting date; their ages are presented as inference from girth and park-founding year rather than fact, with wide flagged ranges rather than a false precision. Only the Lodewijk Napoleon Beech has an actual pinned historical event (a specific king, a specific two-year carving window), which is why it anchors the page as Haarlem's oldest despite nobody having counted its rings either.
+
+**Photo hunt**: 0 of 4 found on Wikimedia Commons. All 4 pins `location_precision: approximate`, park or estate-level addresses.
+
+Site rebuilt (748 pages: 56 city, 442 tree, 56 question, 12 collections, homepage), all contracts validated on the first pass; `scripts/qa.py` clean (700 pages). `data/city-list.json` updated (Haarlem: pending to needs_curation). One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — The Hague opens: 5 trees, each protected by a different kind of boundary
 
 Same session, straight after Rotterdam. No new submissions. The Hague was next in the queue.

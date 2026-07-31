@@ -2,6 +2,12 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Haarlem opens: 4 trees, the Zocher family's landscaping shows up everywhere
+
+Same session, straight after The Hague. No new submissions. Shipped: the Lodewijk Napoleon Beech (Haarlem's oldest documented tree, carved with a royal monogram by the exiled King of Holland between 1808-1810, the carving now nearly grown over), the Provinciehuis Plane (Haarlem's thickest tree, six metres around, in the provincial government's own garden), the Kleverlaan Yew, and the Kenaupark Red Beech. Two of the four are honestly flagged for having no documented planting date at all, only size-based inference.
+
+0 of 4 photos found. Site rebuilt (748 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — The Hague opens: 5 trees, each protected by a different kind of boundary
 
 Same session, straight after Rotterdam. No new submissions. Shipped: the Juttepeer of Heilige Geesthofje (The Hague's oldest, ~388 years, a 1638 pear tree in a still-functioning almshouse courtyard, likely the Netherlands' oldest), the Koekamp Oak (~300 years, protected since William of Orange's 1576 promise that the Haagse Bos would never be logged), the Veteran Linden of Clingendael (~290 years, the first tree in the Netherlands to get the country's new "veteran tree" protection status in 2019), the Postzegelboom (a horse chestnut that survived two rounds of royal demolition and hosted a decades-long open-air stamp market), and the Kabouterboom (~94 years, included for a neighbourhood's gnome-tree tradition rather than age).
