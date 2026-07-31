@@ -3697,7 +3697,12 @@ def main():
     build_contribute_page(published, pages)
     build_privacy_page(pages)
     build_fakedoor_pages(pages)
-    build_explore_page(renderable, pages, registers=registers)
+    # Register layer hidden from users (Hidde, 2026-07-31: "de huidige
+    # interactie is het niet, bewaar de informatie"). The data files, the
+    # loader and the render path all stay; only this argument is withheld
+    # until the layer's interaction is properly designed (BACKLOG, viewport
+    # panel). Re-enable by passing registers=registers again.
+    build_explore_page(renderable, pages, registers=None)
     build_in_season_page(renderable, tree_slugs, pages)
     species_slugs = sorted((common, slugify(common)) for common in qualifying) if qualifying else []
     build_homepage(published, upcoming, public_collections, pages,
