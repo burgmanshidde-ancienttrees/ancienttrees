@@ -1,0 +1,187 @@
+{
+  "city": "Groningen",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Groningen's oldest tree keeps company with cows, not city planners: a lime planted in 1684 still stands before a private farmhouse northeast of the centre, decades before Groningen laid out a single public park. Its younger rivals cluster in the Sterrebos, an 18th-century star-shaped forest whose oaks turned out, after a 2024 storm and a ring count, to be far older than anyone had assumed. One of the park's rarest trees, a sessile oak spared from a paving project in 2025, is still fighting for root space today.",
+  "meta_description": "Groningen's oldest tree is a 1684 lime at a private farm, older than any tree in its parks. Five verified locations, real stories, one under threat.",
+  "question_answer": "Groningen's oldest tree is a Common Lime at De Rollen, a moated farm on the city's northeastern edge, planted in 1684 and now roughly 340 years old. The Dutch national heritage register calls it plainly the oldest tree in the province, older than anything in the city's own celebrated parks by more than a century.",
+  "question_meta": "A 1684 lime at a moated farm called De Rollen, on Groningen's edge, is the city and province's oldest documented tree. The full five.",
+  "question_context": "Groningen's age claims split cleanly into documented and inferred. The Common Lime at De Rollen carries an actual date, 1684, recorded in the Rijksdienst voor het Cultureel Erfgoed's own listing for the farm and repeated in the municipality's 2018 monumental tree policy, which is why it anchors this page as the oldest tree in the city despite standing on private farmland rather than in a park built for visitors. Sterrebos's surviving oaks come close on a technicality: when a storm toppled one of their number in January 2024, a ring count revealed a germination year of around 1758, nearly 130 years earlier than the previous estimate, and heritage officials now assume its still-standing neighbours share that birth year, though none of the survivors have themselves been individually dated. The rest of the list is honestly younger and more provisional: Noorderplantsoen's ginkgo rests on a single municipal source, and Groenestein's plane tree is inferred from the size of its trunk and the age of the estate around it rather than any planting record. None of that uncertainty is unusual for trees planted before anyone thought to write the date down.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Groningen?",
+      "a": "A Common Lime at De Rollen farm on Noorddijkerweg, planted in 1684 and roughly 340 years old, according to the Dutch national heritage register."
+    },
+    {
+      "q": "Are Groningen's remarkable trees free to visit?",
+      "a": "Four of the five stand in public parks, open at any time. The De Rollen lime is on working farmland and is visible only from the public road, Noorddijkerweg."
+    },
+    {
+      "q": "What is Groningen's rarest tree?",
+      "a": "A sessile oak (Quercus petraea) in the Zuiderplantsoen, part of the old Sterrebos. Fewer than 5 percent of the Netherlands' native oaks are this species, and it was nearly felled for a footpath in 2025."
+    },
+    {
+      "q": "Why did the age of a Sterrebos oak just get revised upward by more than a century?",
+      "a": "A storm felled one of the park's original oaks in January 2024. A ring count on the fallen trunk found it had germinated around 1758, nearly 130 years earlier than the estimate on file, and its surviving neighbours are now assumed to share that age."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gro_001",
+      "name": "The Linden of De Rollen",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "about 340 years",
+      "age_min": 330,
+      "age_max": 350,
+      "location": {
+        "address": "Noorddijkerweg 32, De Rollen farm",
+        "latitude": 53.2351796,
+        "longitude": 6.6332914,
+        "neighbourhood": "Noorddijk"
+      },
+      "story": "Groningen's oldest tree grows exactly where the national heritage register says it should: in front of the farmhouse at De Rollen, a moated farm complex on the city's northeastern edge, planted in 1684. That makes this Common Lime roughly 340 years old, standing decades before Groningen had a Noorderplantsoen or a Sterrebos to compete with. The Rijksdienst voor het Cultureel Erfgoed's own listing calls it plainly the oldest tree in the province, a claim the municipality's 2018 tree policy document repeats for the city specifically. De Rollen itself dates to the 17th century in its original form, rebuilt as a working farmstead in the first half of the 19th century, moat, gateposts and wooden bridge intact, and the linden predates most of what stands around it today, including the farmhouse's own current front door. Twenty-two more lindens and nine ash trees ring the property's edges, a documented perimeter planting, but none come close to this one's age. The farm still works the land, so the tree is not something to walk up to and touch. It stands in a private dooryard, visible from Noorddijkerweg itself, quietly outlasting three centuries of Groningen's growth from a fortified town into a university city, without ever once needing to move.",
+      "verified_sources": [
+        "https://www.monumenten.nl/monument/529490",
+        "https://lokaleregelgeving.overheid.nl/CVDR609688",
+        "https://www.rtvnoord.nl/nieuws/128307/Meer-monumentale-bomen-in-Groningen"
+      ],
+      "access": "Visible from the public road (Noorddijkerweg); De Rollen is a private working farm, not open to visitors",
+      "transport": "About 5km northeast of Groningen city centre; a 20-minute bike ride or bus toward Noorddijk/Ruischerbrug, then a short walk along Noorddijkerweg",
+      "best_time": {
+        "months": [7],
+        "label": "July, when the lime flowers turn the dooryard into a hum of bees",
+        "kind": "flowers"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gro_002",
+      "name": "The Star Point Oaks of Sterrebos",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 265 years, revised upward in 2024",
+      "age_min": 250,
+      "age_max": 270,
+      "location": {
+        "address": "Sterrebos / Zuiderplantsoen, southern boundary near the historic main path",
+        "latitude": 53.2044,
+        "longitude": 6.5772,
+        "neighbourhood": "Helpman"
+      },
+      "story": "Storm Henk answered a question nobody had thought to ask properly. When the January 2024 storm toppled one of the old summer oaks planted along Sterrebos's original 18th-century layout, the city's heritage department counted its rings rather than simply clearing the wood, and found a germination year of around 1758, nearly 130 years earlier than the estimate on file. Sterrebos itself was laid out in 1765 by city gardener Jan Godfried Becker as a literal star, eight paths radiating from one central point through a plantation of oaks; this tree had evidently been planted a few years before the park's official founding date, likely an existing woodlot the design was built around rather than a fresh planting. The surviving oaks nearest the fallen one, still standing along the same southern boundary line, are now assumed to share its birth year rather than the younger estimate used before. That correction matters beyond bookkeeping: it means Groningen's civic parks are not simply Victorian additions to a medieval city, they carry at least one working generation of trees from the mid-18th century, quietly older than the park built to showcase them. Storm Henk's felled oak is gone. Its neighbours, grown from the same original planting, are not, and nobody had properly counted their age until one of them fell.",
+      "verified_sources": [
+        "https://erfgoed.groningen.nl/nieuws/zomereik-sterrebos-blijkt-266-jaar-oud",
+        "https://nl.wikipedia.org/wiki/Sterrebos_(Groningen)",
+        "https://www.rtvnoord.nl/nieuws/128307/Meer-monumentale-bomen-in-Groningen"
+      ],
+      "access": "Free, open public park at any time",
+      "transport": "10-15 minute walk or short bus ride from Groningen Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gro_003",
+      "name": "The Winter Oak of Zuiderplantsoen",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "not documented",
+      "age_min": 140,
+      "age_max": 260,
+      "location": {
+        "address": "Zuiderplantsoen (Sterrebos), north side near Waterloolaan",
+        "latitude": 53.2067741,
+        "longitude": 6.5771401,
+        "neighbourhood": "Helpman"
+      },
+      "story": "In the summer of 2025, a paving contractor's permit nearly ended this tree's life over a wheelchair-accessible path. The winter oak growing beside a footpath in Groningen's Zuiderplantsoen, part of the old Sterrebos, is a genuine rarity: over 95 percent of the Netherlands' native oaks are summer oaks, and this is one of the remaining few sessile, or winter, oaks, distinguishable by its straighter trunk and stalkless acorns. When the municipality applied to fell eight trees to widen accessibility through the reopened park, the campaign group Bomenridders objected specifically to this one, arguing a narrower path could save it. Seven of the eight felling permits were refused outright; the eighth, for this oak, went unused after the breeding season closed the window, and the alderman announced in June 2025 that accessibility around it was good enough without cutting it down. The story has not stayed tidy since. By April 2026, residents were counting roughly nine dead branches on the tree, still bare while everything around it leafed out, and blaming the thick paving laid close to its trunk for choking its roots and shedding rainwater away instead of into the soil. The tree survived the saw. Whether it survives the path built to spare it is still being decided, one growing season at a time.",
+      "verified_sources": [
+        "https://www.oogtv.nl/2025/06/zorgen-over-kap-zeldzame-wintereik-in-sterrebos-deze-boom-voegt-alles-toe/",
+        "https://www.oogtv.nl/2025/06/wintereik-zuiderplantsoen-gered-van-kap-bomenridders-reageren-opgelucht/",
+        "https://www.oogtv.nl/2026/04/zorgen-over-zeldzame-wintereik-bij-sterrebos-pad-moet-smaller-voor-ademruimte/"
+      ],
+      "access": "Free, open public park at any time",
+      "transport": "10-15 minute walk or short bus ride from Groningen Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gro_004",
+      "name": "The Duck's Foot Tree of Noorderplantsoen",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "more than 140 years",
+      "age_min": 140,
+      "age_max": 160,
+      "location": {
+        "address": "Noorderplantsoen, Kruissingel",
+        "latitude": 53.2235104,
+        "longitude": 6.5547600,
+        "neighbourhood": "Binnenstad-Noord"
+      },
+      "story": "The oldest tree in Noorderplantsoen is not a native Dutch species at all. Somewhere along the park's paths grows a ginkgo more than 140 years old, planted not long after the park itself was laid out over Groningen's demolished 17th-century fortifications, following an 1874 law that finally let the city expand past its old walls. Locals call it the eendenpootboom, the duck's foot tree, for the shape of its fan-like leaves, and the nickname is more accurate botany than most: ginkgo is the last surviving member of an entire plant family that predates most of the trees around it by tens of millions of years, a genuine living fossil rather than a figure of speech. In several Asian countries the species carries religious weight, planted at temples and eaten for its seeds, though the seeds are mildly toxic and best left alone here. Noorderplantsoen itself holds more than fifty labelled tree species along a marked route, the kind of park where a stroller with fifteen minutes to spare can read the name of nearly everything overhead, and this ginkgo is the one specimen old enough to have watched the entire park grow up around it, fortress moat turned ornamental pond and all.",
+      "verified_sources": [
+        "https://gemeente.groningen.nl/huh-een-eendenpootboom-in-groningen"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "10-15 minute walk from Groningen Centraal station, in the city centre",
+      "best_time": {
+        "months": [11],
+        "label": "November, when the fan-shaped leaves turn gold and drop almost overnight",
+        "kind": "autumn colour"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gro_005",
+      "name": "The Groenestein Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented, likely 19th century",
+      "age_min": 100,
+      "age_max": 160,
+      "location": {
+        "address": "Park Groenestein, Groenesteinlaan 22",
+        "latitude": 53.2007846,
+        "longitude": 6.5879008,
+        "neighbourhood": "Helpman"
+      },
+      "story": "South of a 19th-century country villa in Groningen's smallest urban forest grows the tree that gives Park Groenestein its scale: a plane tree large enough to anchor an entire estate's landscaping around it. The villa itself, called Groenestein, was rebuilt in 1871 over the footprint of a 1685 house, in the sober, understated style favoured by the Groningen merchant families who commissioned these southern estates, and the park around it took its current form in the same period. No source records exactly when this particular plane was planted, only that its size points toward the same 19th-century landscaping campaign that shaped the rest of the grounds, putting it somewhere around a century and a half old rather than a documented number. The municipality's own 2018 tree inventory lists it among the city's monumental specimens on that basis, size and context standing in for a missing planting record. Groenestein, known locally as the owl wood for its resident owls alongside bats, hedgehogs and squirrels, has been a national monument since 1971, but unlike several of Groningen's other historic estates its grounds stay open to anyone who wants to walk them, no appointment and no entry fee, just a short walk along the Helperzoom to a garden that has quietly outgrown the house it was built to flatter.",
+      "verified_sources": [
+        "https://lokaleregelgeving.overheid.nl/CVDR609688",
+        "https://nl.wikipedia.org/wiki/Park_Groenestein"
+      ],
+      "access": "Free, open park at any time; the villa itself remains a private residence",
+      "transport": "15-20 minute walk or short bike ride from Groningen city centre, in Helpman",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

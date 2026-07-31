@@ -2,6 +2,16 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Groningen opens: 5 trees, a farm tree older than any of the city's own parks
+
+New session. Visitors last 7 days: 93 visits, 187 page views (2026-07-24 to 2026-07-30), trending up most days; nothing in that window points at a specific page to deepen. No reader submissions (form's still just its header row). Site health checked first: build and QA both clean, REVIEW.md empty. Continued the Netherlands wave: Groningen was next fresh city (Cork, Galway and Zagreb remain pending but were already researched in earlier sessions and fell short of the four-tree floor, so not re-chased).
+
+Groningen's oldest tree beats every one of its own parks to the record: a Common Lime at De Rollen, a still-working private farm, planted in 1684 per the national heritage register, making it the oldest documented tree in the whole province. The Sterrebos's story is stranger: when storm Henk felled one of the park's original 18th-century oaks in January 2024, a ring count found it had germinated around 1758, nearly 130 years earlier than assumed, and its surviving neighbours are now presumed to share that age. A rare winter oak nearby was saved from felling in 2025 by a local conservation campaign, only for residents to report dead branches on it in April 2026, possibly from the very paving job that spared it. Rounded out with Noorderplantsoen's ginkgo (140+ years, single-sourced) and the Groenestein Plane (undated, inferred 19th-century).
+
+Caught one dead-tree trap: Noorderplantsoen's former "thickest tree in the city," a white willow, has already died and been removed, so it stays off the page. Also dropped a muddled "Kiki Plataan" legend on Grote Markt after closer reading showed the square's first tree was only planted in 2023, contradicting the ancient-tree framing the initial search summaries implied.
+
+0 of 5 photos found. Site rebuilt (765 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Haarlem opens: 4 trees, the Zocher family's landscaping shows up everywhere
 
 Same session, straight after The Hague. No new submissions. Shipped: the Lodewijk Napoleon Beech (Haarlem's oldest documented tree, carved with a royal monogram by the exiled King of Holland between 1808-1810, the carving now nearly grown over), the Provinciehuis Plane (Haarlem's thickest tree, six metres around, in the provincial government's own garden), the Kleverlaan Yew, and the Kenaupark Red Beech. Two of the four are honestly flagged for having no documented planting date at all, only size-based inference.

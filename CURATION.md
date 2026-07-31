@@ -1,3 +1,17 @@
+## 2026-07-31 — Groningen opens: 5 trees, a farm tree older than any of the city's own parks
+
+New session. `python3 scripts/visitors.py`: 93 visits, 187 page views over the last 7 days (2026-07-24 to 2026-07-30), trending up most days. No reader submissions (CSV still header row only). Site health checked first: build and QA both clean, REVIEW.md empty (no BLOCKER or WARN). Groningen was next fresh city in the Netherlands wave (Cork, Galway and Zagreb are still pending but already exhaustively researched and short of the four-tree floor per earlier entries in this file; not re-chased).
+
+**Shipped**: the Linden of De Rollen (Common Lime, Noorddijkerweg, planted 1684 per the national heritage register, Groningen and the province's oldest documented tree, standing in the dooryard of a still-working private farm), the Star Point Oaks of Sterrebos (Pedunculate Oak, part of the park's original 1758-ish planting phase, an age only discovered when a storm felled one of their number in January 2024 and a ring count corrected a previous, much younger estimate), the Winter Oak of Zuiderplantsoen (Sessile Oak, a genuinely rare Dutch native, saved from felling in 2025 after a conservation campaign, but reported in April 2026 to be showing dead branches, possibly from the paving laid around its trunk to spare it), the Duck's Foot Tree of Noorderplantsoen (Ginkgo, 140+ years, single-sourced from the municipality's own website), and the Groenestein Plane (London Plane, undated, inferred 19th-century from the park's own founding).
+
+**A dead-tree trap avoided**: Noorderplantsoen's actual former "thickest tree in the city," a schietwilg (white willow) at the park's eastern entrance, turned out via the neighbourhood website to have already died and been removed after years of decline; it does not appear on this page. Also dropped: a "Kiki Plataan" legend tied to Grote Markt, which on closer reading described the square's first-ever tree, planted March 2023, contradicting the older-tree framing the initial search summaries implied. Left out rather than published on a muddled, self-contradicting source.
+
+**Two of five flagged**: the Sterrebos oaks' age is inferred by analogy to one ring-counted, now-dead sibling rather than any of the survivors being individually dated; the Noorderplantsoen ginkgo rests on a single official source (the municipality's own website), with no independent second source found despite a real search.
+
+**Photo hunt**: 0 of 5 found. Searched Wikimedia Commons, general Sterrebos and Noorderplantsoen categories exist but nothing confidently identifiable as any of these five specific named trees; none guessed. All 5 pins `location_precision: approximate` except the De Rollen linden, `confirmed` (the national monument register places it specifically in front of the farm's front house).
+
+Site rebuilt (765 pages: 57 city, 447 tree, 57 question, 12 collections, homepage), all contracts validated on the first pass; `scripts/qa.py` clean (709 pages). `data/city-list.json` updated (Groningen: pending to needs_curation). One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Haarlem opens: 4 trees, one Zocher family did most of the landscaping
 
 Same session, straight after The Hague. No new submissions. Haarlem was next in the queue.
