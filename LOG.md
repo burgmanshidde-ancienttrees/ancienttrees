@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Nijmegen opens: 5 trees; a near-miss caught first, Cork almost got republished on out-of-bounds trees
+
+New session. Visitors last 7 days: 93 visits, 187 page views (2026-07-24 to 2026-07-30), trending up most days. No reader submissions. Site healthy at start (build, QA, smoke test all clean).
+
+Worth flagging plainly: the session-start brief pointed at Cork as next up, but Cork had already been researched twice before and correctly left unpublished, because its only two strong trees (a 600-year yew and a red cedar) both sit at Blarney Castle, 8km outside Cork city, and this project has a standing rule against crossing city boundaries for a tree (the same rule that kept Rouken Glen off Glasgow and Coole Park off Galway). I re-researched Cork without checking that history first and drafted a page anchored on those same Blarney trees plus a third tree 40km away in Doneraile, an even bigger boundary miss. Caught it before committing, by reading CURATION.md's own back-entries, and reverted the draft entirely. Nothing published, nothing broken, but a real process gap: check a city's own research history before starting, not just its status field. Recorded in full in CURATION.md.
+
+Moved to Nijmegen, the next untried city in the Netherlands wave. It shipped with 5: a sycamore that won its neighbourhood's 2021 Tree of the Year vote on the Roman-era Valkhof hill, a modest park ginkgo whose one mutated branch became a garden-centre plant sold across Europe (Ginkgo biloba 'Mariken', RHS Award of Garden Merit), the likely-oldest tree stock in the city (a beech circle surviving from an 18th-century star-shaped forest, honestly missing some of its original ring), a horse chestnut planted on the exact day Juliana became queen in 1948, and a giant sequoia in a small railway-workers' park.
+
+Applied the boundary check properly this time, before writing rather than after: two strong-looking nearby trees (a 450-year chestnut in Beek, a claimed "oldest oak in the Netherlands" in Doornenburg) were investigated and correctly excluded as being in different municipalities, and a third candidate was left out on unresolved boundary uncertainty alone.
+
+0 of 5 photos found. Site rebuilt (796 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Maastricht opens: 5 trees; Delft researched but held back short of the four-tree floor
 
 Same session, straight after Leiden. No new submissions. Delft was next in the queue but only produced three trees solid enough to verify (a 1707 mulberry at Hofje van Pauw, a 1956 linden grown from a graft of Dillenburg's historic Wilhelmslinde tied to William of Orange, and the 1920 chestnuts of St. Agathaplein outside Museum Prinsenhof); a fourth candidate's age claim didn't hold up under a second look, so Delft stays without a page rather than being padded to four. Full detail in CURATION.md; moved on to Maastricht, next in line.
