@@ -238,6 +238,10 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .entry p { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin-top: 0.25rem; }
 /* Image first, text second: a thumbnail leads the row where a photo exists. */
 .entry.has-thumb { display: grid; grid-template-columns: 96px 1fr; gap: 1rem; align-items: start; }
+.coll-city { color: inherit; text-decoration: none; }
+.coll-city:hover { color: var(--moss); }
+.coll-citycta { margin: 0.4rem 0 2rem; font-size: 13.5px; font-weight: 700; }
+.coll-citycta a { color: var(--moss); }
 .entry-thumb { border-radius: 6px; overflow: hidden; aspect-ratio: 1 / 1; background: var(--cream-dark); }
 .entry-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .entry-body h3 { margin-top: 0; }
@@ -380,6 +384,11 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .appland-steps strong { color: var(--ink); }
 .step-ico { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: var(--moss-light); color: var(--moss); flex-shrink: 0; }
 .step-ico svg { width: 17px; height: 17px; }
+.waitlist { display: flex; gap: 0.5rem; margin-top: 0.4rem; flex-wrap: wrap; }
+.waitlist input { flex: 1 1 12rem; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 999px;
+  padding: 0.75rem 1.1rem; font-family: var(--sans); font-size: 14px; background: #fff; }
+.waitlist input:focus { outline: 2px solid var(--moss); outline-offset: 1px; }
+.waitlist-note { font-size: 12px; color: var(--ink-light); margin-top: 0.5rem; }
 .appland-cta { display: inline-block; background: var(--ink); color: #fff; font-weight: 700; font-size: 15px; text-decoration: none; border-radius: 999px; padding: 0.95rem 2.4rem; }
 .appland-right h2 { font-size: 13px; font-weight: 600; letter-spacing: 0.02em; color: var(--ink-light); margin-bottom: 0.4rem; }
 .appland-feat { display: flex; gap: 1rem; align-items: flex-start; padding: 1.05rem 0; border-bottom: 1px solid var(--cream-dark); }
@@ -2196,7 +2205,13 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages, dr
           <p>{esc(e['note'])}</p>
         </div>
       </div>""")
-        sections.append(f"<h2>{esc(city_data['city'])}</h2>{''.join(rows)}")
+        # The whole section leads to the city, not just the one tree shown
+        # (Hidde, 2026-07-30): a collection entry should make you want to
+        # go, and the city page with its map is where you decide that.
+        sections.append(
+            f'<h2><a class="coll-city" href="../{cslug}">{esc(city_data["city"])}</a></h2>'
+            + "".join(rows)
+            + f'<p class="coll-citycta"><a href="../{cslug}">See all {len(city_data["trees"])} trees in {esc(city_data["city"])} on the map &rarr;</a></p>')
 
     city_links = " &middot; ".join(
         f'<a href="../{p["slug"]}">{esc(p["city"])}</a>' for p in published
@@ -2529,7 +2544,11 @@ APPLAND_BODY = """
         <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="9" rx="6" ry="5"/><path d="M11.4 20h1.2l-.3-7h-.6z"/></svg></span><div><strong>Meanwhile:</strong> we build, and the site already works well on your phone</div></li>
         <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.8 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><div><strong>Launch day:</strong> you hear it first, before anyone else</div></li>
       </ol>
-      <a class="appland-cta" href="{form}">Keep me posted</a>
+      <form class="waitlist" id="waitlist">
+        <input type="email" id="wl-email" placeholder="you@example.com" aria-label="Your email address" required>
+        <button type="submit" class="appland-cta">Keep me posted</button>
+      </form>
+      <p class="waitlist-note" id="wl-note">One email when the app is ready. Nothing else, ever.</p>
     </div>
     <div class="appland-right">
       <h2>The app is going to include</h2>
@@ -2555,6 +2574,39 @@ def build_fakedoor_pages(pages):
     per the Barcelona bcn_008 precedent instead of 404ing."""
     canonical = f"{BASE_URL}/app"
     body = APPLAND_BODY.replace("{form}", esc(submit_link("tree")))
+    # The waitlist lives on our own page and posts to Hidde's Supabase, which
+    # replaces the Google Form for this one job (Hidde, 2026-07-30: "just a
+    # simple add your email address here"). Insert-only by design: the table
+    # grants anon INSERT and nothing else, so nobody can read the list back.
+    body += """
+<script>
+(function() {
+  var f = document.getElementById('waitlist'), note = document.getElementById('wl-note');
+  if (!f) return;
+  f.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = document.getElementById('wl-email').value.trim();
+    if (!email) return;
+    note.textContent = 'Sending...';
+    fetch('SB_URL/rest/v1/waitlist', {
+      method: 'POST',
+      headers: {'apikey': 'SB_KEY', 'Content-Type': 'application/json',
+                'Prefer': 'return=minimal'},
+      body: JSON.stringify({email: email, source: 'app'})
+    }).then(function(r) {
+      if (r.ok || r.status === 409) {
+        f.hidden = true;
+        note.textContent = 'You are on the list. We will email you once, when it is ready.';
+      } else {
+        note.textContent = 'That did not go through. Try again in a moment.';
+      }
+    }).catch(function() {
+      note.textContent = 'No connection. Try again in a moment.';
+    });
+  });
+})();
+</script>
+""".replace('SB_URL', SUPABASE_URL).replace('SB_KEY', SUPABASE_KEY)
     page = render_page("The Ancient Trees app",
                        "The iOS app we are building for the walk itself.",
                        canonical, body, rootpath="./")
@@ -2644,6 +2696,27 @@ map.addControl(new maplibregl.GeolocateControl({
   positionOptions: { enableHighAccuracy: true },
   showUserLocation: true, fitBoundsOptions: { maxZoom: 13.5 }
 }));
+// Open where the visitor is, without asking for anything (Hidde,
+// 2026-07-30). The browser's own timezone gives a region for free: no
+// permission prompt, no IP lookup, no third-party service, nothing stored.
+// The Geolocate button above is still there for an exact fix.
+var REGIONS = {
+  'Europe/Amsterdam': [4.9, 52.37], 'Europe/Brussels': [4.35, 50.85],
+  'Europe/London': [-0.13, 51.51], 'Europe/Dublin': [-6.26, 53.35],
+  'Europe/Lisbon': [-9.14, 38.72], 'Europe/Madrid': [-3.7, 40.42],
+  'Europe/Paris': [2.35, 48.86], 'Europe/Berlin': [13.4, 52.52],
+  'Europe/Rome': [12.5, 41.9], 'Europe/Vienna': [16.37, 48.21],
+  'Europe/Prague': [14.42, 50.09], 'Europe/Athens': [23.73, 37.98],
+  'Europe/Warsaw': [21.01, 52.23], 'Europe/Istanbul': [28.98, 41.01],
+  'Asia/Tokyo': [139.69, 35.69], 'Asia/Singapore': [103.82, 1.35],
+  'Asia/Bangkok': [100.5, 13.75], 'America/New_York': [-74.0, 40.71],
+  'Atlantic/Reykjavik': [-21.9, 64.15]
+};
+try {
+  var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  if (REGIONS[tz]) { map.jumpTo({center: REGIONS[tz], zoom: 9}); }
+  else if (tz && tz.indexOf('Europe/') === 0) { map.jumpTo({center: [10, 50], zoom: 4}); }
+} catch (e) {}
 var exForm = document.getElementById('ex-search');
 if (exForm) {
   exForm.addEventListener('submit', function(e) {
