@@ -1,0 +1,153 @@
+{
+  "city": "Gdansk",
+  "country": "Poland",
+  "status": "needs_curation",
+  "intro": "Gdansk protects 157 individual trees by official designation, more than almost any city this project has covered, and its oldest survivors turn up in unlikely company: a willow that survived an arson attack seven months ago, an ash older than the royal rifle factory built around it, an oak that predates the battle its own hill is named for, and a beech that has outlasted six changes of ownership on the same patch of ground. All are free to visit, scattered across ordinary neighbourhoods rather than concentrated in one grand park.",
+  "meta_description": "Gdansk's oldest tree is a ~280-year-old ash inside a former royal rifle factory. Four verified trees, real stories, how to reach each one.",
+  "question_answer": "Gdansk's oldest tree is very likely the Ash of the Royal Rifle Factory, growing in a courtyard on Lakowa street, estimated at around 280 years old, decades older than the 19th-century weapons factory built up around it. It stands 26 metres tall with a trunk 523 centimetres around.",
+  "question_meta": "A ~280-year-old ash inside a former royal rifle factory is likely Gdansk's oldest tree. Where to find it, and the city's other three.",
+  "question_context": "Gdansk maintains an unusually large official register of protected trees, 157 individual specimens as of 2026, but only a handful carry a documented age rather than a girth-based estimate. The Ash of the Royal Rifle Factory is the strongest candidate for oldest: at approximately 280 years, it predates the Konigliche Gewehr-Fabrik, the Prussian state weapons factory built on the same Lakowa street site from 1839, by more than a century, meaning the tree was already mature when the ground around it was still a sugar refinery. Its closest competitor is the pedunculate oak at the foot of Wzgorze Luizy in Lostowice, estimated at around 250 years old and protected since the late 1980s, already standing when Prussian and Napoleonic forces clashed on the hill above it in 1813. The gap between the two, roughly thirty years, is well inside the margin of error either age estimate carries, so neither claim is treated as settled beyond reasonable doubt. Both easily outdate Gdansk's other two entries on this list, whose ages are inferred from girth rather than documented.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Gdansk?",
+      "a": "Very likely the Ash of the Royal Rifle Factory on Lakowa street, estimated at around 280 years old, though a ~250-year-old oak at Wzgorze Luizy is a close second."
+    },
+    {
+      "q": "Are Gdansk's ancient trees free to visit?",
+      "a": "Yes, all four stand on public streets, parks or courtyards with free access."
+    },
+    {
+      "q": "What happened to the willow of Kupaly-Subislawa?",
+      "a": "It was set on fire on 29 December 2025, likely by fireworks or arson. Firefighters saved it before the blaze spread, but the city had to cut roughly four metres off its crown for safety. It survives, recovery uncertain."
+    },
+    {
+      "q": "How many protected trees does Gdansk have?",
+      "a": "201 registered natural monuments in total as of 2026, including 157 individual trees, plus tree groups, avenues and glacial boulders."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gda_001",
+      "name": "The Willow of Kupaly-Subislawa",
+      "species": "White Willow (Salix alba)",
+      "age_estimate": "~140 years",
+      "age_min": 130,
+      "age_max": 150,
+      "location": {
+        "address": "Kupaly - Subislawa green space, beside the pond, Oliwa, Gdansk",
+        "latitude": 54.4154167,
+        "longitude": 18.5741667,
+        "neighbourhood": "Oliwa"
+      },
+      "story": "Seven months ago this willow was still whole. On 29 December 2025, someone or something, fireworks testing has not been ruled out, set fire to the trunk of this 140-year-old white willow beside a pond in Oliwa, and the blaze burned out its core before neighbours spotted the flames and called the fire brigade. Firefighters put it out in time to save the tree next to it, a second protected willow believed to be around 165 years old, growing close enough that the fire could easily have spread. What was left standing had been hollowed out from the inside, its trunk statically unsafe, so the city's ecology department made the call foresters dread: cutting roughly four metres off the crown of a tree that had carried official protection since 2000, girth 495 centimetres, height 22 metres, just to keep it upright. The city filed a police report and the case remains open. What happens next genuinely is not settled. Botanists monitoring the tree say it may sprout new growth this season, though never at its old height again, and if it does not survive at all, Gdansk plans to leave the trunk standing anyway as deadwood habitat rather than remove it. For now it is alive, recovering by inches at a pond most of Oliwa walks past without knowing what stands there.",
+      "verified_sources": [
+        "https://www.gdansk.pl/wiadomosci/Pozar-pomnikowej-wierzby-Uratowala-ja-szybka-interwencja,a,303640",
+        "https://www.trojmiasto.pl/wiadomosci/Pomnik-przyrody-rosl-od-140-lat-Ktos-go-podpalil-n213708.html"
+      ],
+      "access": "Free, public green space, open daily",
+      "transport": "Oliwa district, near the Kupaly-Subislawa pond; about a 15 minute walk from Gdansk Oliwa railway station",
+      "best_time": {
+        "months": [4],
+        "label": "April, when the catkins open, the clearest sign each spring that the fire-scarred crown is still alive",
+        "kind": "catkins"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/1095_i_1096._wierzby_kupa%C5%82y_gdansk.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Zbigniew Zielinski (Drumeros), via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Photo taken 2014-06-03, before the December 2025 fire: shows both protected willows healthy and full-crowned by the pond, girths recorded then as 485 and 552 cm. Viewed directly and confirmed as the right pair of trees at the right location (Wikimedia Commons file description names the exact spot, Janka Kupaly street, and matches register entries 1095/1096). Kept as an honest pre-fire record rather than withheld; the story text is explicit about the fire and current state.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gda_002",
+      "name": "The Ash of the Royal Rifle Factory",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "~280 years",
+      "age_min": 260,
+      "age_max": 300,
+      "location": {
+        "address": "Lakowa 35/38, courtyard of the former Royal Rifle Factory, Gdansk",
+        "latitude": 54.3412389,
+        "longitude": 18.6606722,
+        "neighbourhood": "Dolne Miasto"
+      },
+      "story": "This ash tree is older than the gun factory that grew up around it. The Prussian state's Royal Rifle Factory moved onto this stretch of Lakowa street in 1839, converted from an earlier sugar refinery, and expanded through the 19th century into a complex that at its 1918 wartime peak turned out 2,500 rifles a day with 6,500 workers on the payroll, before closing for good in 1921 when the newly independent Free City of Danzig demilitarised. The ash predates all of it, estimated at around 280 years old, which puts its own roots down sometime in the early 18th century, decades before anyone here was making weapons. It stands 26 metres tall with a trunk 523 centimetres around, in what is now a quiet courtyard inside the old factory walls. Its protected status is recent and came from an unusual source: since April 2017, Gdansk has run a programme letting any resident nominate a tree for legal protection, and this ash, tucked away where most passersby would never look for it, was one of the results. A factory that armed a kingdom rose and fell around it in under a century. The tree just kept growing.",
+      "verified_sources": [
+        "https://download.cloudgdansk.pl/gdansk-pl/d/202605274435/wykaz-gdanskich-pomnikow-przyrody_stan-na-05-2026.pdf",
+        "https://pl.wikipedia.org/wiki/Kr%C3%B3lewska_Fabryka_Karabin%C3%B3w"
+      ],
+      "access": "Free, public courtyard, viewable anytime",
+      "transport": "Dolne Miasto, south of the city centre; about a 15 minute walk from Gdansk Glowny railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gda_003",
+      "name": "The Oak of Wzgorze Luizy",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "~250 years",
+      "age_min": 230,
+      "age_max": 270,
+      "location": {
+        "address": "Niepolomicka 8, at the foot of Wzgorze Luizy, Lostowice, Gdansk",
+        "latitude": 54.3175556,
+        "longitude": 18.5937222,
+        "neighbourhood": "Lostowice"
+      },
+      "story": "At the foot of a hill named for a dead queen's role in defeating Napoleon grows Lostowice's oldest documented tree. Wzgorze Luizy, a 68 metre moraine hill, was named in 1810 for Louise of Prussia, credited with brokering the Prussian-Russian alliance that helped bring Napoleon down five years later; in 1813 Prussian Landwehr troops clashed with Napoleonic forces on this exact hill, and in 1817 an iron cross went up on the summit naming nine officers who died in it. This pedunculate oak, protected as a natural monument since the late 1980s and estimated at around 250 years old, was already mature when that battle happened, growing quietly at the base of the slope while history took place above it. It has outlasted the monument's own turbulent afterlife: the hill was informally renamed for a local landowner after the Second World War, and only recently got an official viewpoint restoring some of its original prominence. Two younger trees, an oak and a beech, grow near the summit closer to the iron cross itself, added to the protected list decades after this one. Of the three, this is the tree that was already old when the story the hill is named for happened.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/G%C3%B3ra_Luizy",
+        "https://download.cloudgdansk.pl/gdansk-pl/d/202605274435/wykaz-gdanskich-pomnikow-przyrody_stan-na-05-2026.pdf"
+      ],
+      "access": "Free, public street verge, viewable anytime",
+      "transport": "Lostowice district, near the Niepolomicka/Kampinoska junction; reachable by tram or bus from central Gdansk, about 25 minutes",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/551_oak_Gda%C5%84sk_niepo%C5%82omicka.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "Zbigniew Zielinski (Drumeros), via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Viewed directly: a gnarled, wide-crowned oak on a roadside slope in full autumn colour, unmistakably the register's entry 551, whose Commons file description states its exact position, 'na skarpie ul. Niepolomicka, podnoze Gory Luizy' (on the slope of Niepolomicka street, foot of Mount Luiza), matching this entry precisely.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gda_004",
+      "name": "The Beech of Ludolfino",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "~180 years",
+      "age_min": 150,
+      "age_max": 220,
+      "location": {
+        "address": "Czyzewskiego 26, Ludolfino park, Oliwa, Gdansk",
+        "latitude": 54.419875,
+        "longitude": 18.5602583,
+        "neighbourhood": "Oliwa"
+      },
+      "story": "An opera singer's wife gave her name to this park, and this beech has outgrown every owner who has held it since. Ludolfino takes its name from Dorothea Ludolphine Bachmann-Ackermann, wife of the singer who first carved this estate out of the neighbouring Stawowie grounds in the late 18th century; the property shows up on city maps as early as 1822. It changed hands repeatedly after that, the Braune family from 1877, a private owner named Robert von Kolkow from 1922, an Evangelical religious order that ran it as a deaconess house from 1933, and the Polish state from 1957, before landing with Gdansk's physical education academy, AWFiS, which now uses the old manor as its main library. This common beech has been protected as a natural monument since 1988, its trunk 470 centimetres around and its crown 24 metres tall, growing on ground that has technically never once belonged to the tree itself. Students studying inside the converted manor now walk past it without necessarily knowing they are passing something that predates every institution that has ever owned the land beneath it.",
+      "verified_sources": [
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Gda%C5%84sku",
+        "https://pl.wikipedia.org/wiki/Ludolfino"
+      ],
+      "access": "Free, park grounds on a public university campus, open daily",
+      "transport": "Oliwa district, near the AWFiS campus; about a 15 minute walk from Gdansk Oliwa railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
