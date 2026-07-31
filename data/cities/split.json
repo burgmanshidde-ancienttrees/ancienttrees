@@ -1,0 +1,146 @@
+{
+  "city": "Split",
+  "country": "Croatia",
+  "status": "needs_curation",
+  "intro": "Split's remarkable trees split cleanly between two very different institutions. Its most reliably dated old tree is a white mulberry that stood in the courtyard of HNK Hajduk's first home from before the club's 1911 founding until 1979, later healed and cloned by scientists as a tribute to the club itself. A few minutes into the old town, Đardin, the city's 19th-century public garden, holds Croatia's most valuable ginkgo and a black walnut that has no business surviving this far south. On Marjan hill, a cypress planted the year its honoree died still lines the walkway that carries his name.",
+  "meta_description": "Split's most remarkable trees: a football club's cloned 130-year-old mulberry, Croatia's rarest ginkgo, and a memorial cypress on Marjan hill.",
+  "question_answer": "Split's oldest tree with a documented age is the Hajdukova Murva (Hajduk's Mulberry), a white mulberry planted around 1894 in the courtyard of HNK Hajduk Split's first home, Stari plac, and assessed at roughly 120 years old in a 2014 arborist survey. Đardin's Category I ginkgo and black walnut may be older still, but neither has a recorded planting date, so the mulberry holds the title by documentation rather than by certainty.",
+  "question_meta": "A 130-year-old mulberry from a football club's first home holds Split's best-documented age record, though a nearby ginkgo may be older still.",
+  "question_context": "The Hajdukova Murva's claim rests on unusually solid ground for a tree nobody bothered to protect until it was already ailing. In 2014, with the white mulberry in the former courtyard of HNK Hajduk's first stadium showing real decline, Split's mayor backed a rescue effort, and the arborists who examined it put its age at around 120, meaning it went into the ground in the mid-1890s, roughly a decade before Hajduk itself existed. That figure came from a professional assessment tied to a documented restoration project, not a folk estimate, which is more than can be said for Split's other candidates. Đardin's ginkgo, rated the single most valuable tree in the city by the municipal park authority's own rarity survey, has no recorded planting date at all, and neither does the garden's black walnut. Either could plausibly be older than the mulberry. Until someone core-samples them, the mulberry's documented 120 years is the strongest number the city has, so it takes the title on the strength of its paperwork rather than a settled fact about which tree is actually oldest.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Split?",
+      "a": "The Hajdukova Murva (Hajduk's Mulberry), a white mulberry assessed at around 120 years old in a 2014 survey, planted in the mid-1890s in the courtyard of HNK Hajduk Split's first home, Stari plac."
+    },
+    {
+      "q": "Can you visit the Hajdukova Murva today?",
+      "a": "Yes, though it stands within the grounds now used by RK Nada, the rugby club that took over Hajduk's former Stari plac stadium; it is visible from the surrounding streets, and the site is planned to become a public memorial park."
+    },
+    {
+      "q": "Why does Đardin have a black walnut tree?",
+      "a": "Nobody recorded who planted it or why. Juglans nigra is native to eastern North America and almost never grows this far south on the Adriatic, which is exactly why Split's own botanical survey rates it a Category II rarity."
+    },
+    {
+      "q": "Are Split's ancient trees free to visit?",
+      "a": "Yes, three of the four stand on a public promenade or in a public garden with no charge. The fourth, the Hajdukova Murva, stands on a publicly used sports ground and is viewable from the street."
+    }
+  ],
+  "trees": [
+    {
+      "id": "spl_001",
+      "name": "The Hajdukova Murva (Hajduk's Mulberry)",
+      "species": "White Mulberry (Morus alba)",
+      "age_estimate": "~130 years",
+      "age_min": 120,
+      "age_max": 140,
+      "location": {
+        "address": "Stari plac (former HNK Hajduk stadium grounds), Zrinsko-Frankopanska ulica, Split",
+        "latitude": 43.5123,
+        "longitude": 16.4351,
+        "neighbourhood": "Lučac-Manuš"
+      },
+      "story": "In 2015 a team from Zagreb's Faculty of Science took a DNA sample from an ailing mulberry tree in Split and cloned it 105 times, once for every year of HNK Hajduk Split's existence. The tree had stood in the courtyard of the club's first home, Stari plac, since before Hajduk itself existed, and every player who wore the checkerboard shirt between the club's founding in 1911 and its move to Poljud in 1979 walked past it on the way to training. Supporters kept coming back long after the club left: candles still turn up at its roots on the anniversaries of dead club legends, an unofficial shrine nobody organized and everybody understands. By 2014 the tree was ailing badly enough that the city's mayor stepped in personally to back a rescue, and the arborists who examined it put its age at around 120, close to two decades before the club it would outlive by a century was even founded. The clone count of 105 was symbolic, tied to the club's anniversary, but the genetics were real: each seedling carries the original's exact DNA, distributed around Split with the first planted ceremonially at the university campus in 2016. As far as anyone has documented, Hajduk remains the only football club anywhere with its own cloned tree.",
+      "verified_sources": [
+        "https://split.hr/clanak/predstavljen-projekt-hajdukova-murva",
+        "https://hajduk.hr/vijest/predstavljena-hajdukova-murva--jedinstveni-projekt-u-svijetu/6792",
+        "https://dalmatinskiportal.hr/sport/hajdukova-murva-zivjet-ce-vjecno/10220"
+      ],
+      "access": "Restricted; stands within the grounds now used by RK Nada rugby club at the former Stari plac stadium, visible from Zrinsko-Frankopanska and Plinarska streets",
+      "transport": "Lučac-Manuš district; about a 20 minute walk from the Riva",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "spl_002",
+      "name": "The Ginkgo of Đardin",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "100+ years (undocumented)",
+      "age_min": 90,
+      "age_max": 160,
+      "location": {
+        "address": "Strossmayerov perivoj (Đardin), north of the Golden Gate, Split",
+        "latitude": 43.5095,
+        "longitude": 16.4404,
+        "neighbourhood": "Grad (Old Town)"
+      },
+      "story": "Split's own park authority has only ever given one tree its highest rarity grade, and it stands a few steps from the busiest gate of Diocletian's Palace. The ginkgo in Đardin, the compact 19th-century garden wedged between two old Venetian bastions just north of the Golden Gate, was singled out in a municipal botanical survey as a Category I rarity, officially the single most valuable tree in the park and, by the same assessment, in the city. Ginkgo biloba is itself a botanical anomaly wherever it grows, a conifer relative with fan-shaped leaves and no living close cousins, a lineage old enough to have shared the planet with dinosaurs and simply outlasted them. No record gives this particular specimen's planting date, only its rank, so its age here is an estimate rather than a documented figure. What is documented is the garden around it: cleared as parkland in 1808, when the wall between two Venetian bastions came down under French rule, and made the city's main public garden in 1859. The tree has outgrown both the empire that freed its ground and the kingdom that gave the park its purpose, and neither gets a plaque nearly as pointed as the one the city's own botanists gave the tree itself.",
+      "verified_sources": [
+        "https://dalmatinskiportal.hr/projekt-solar-sredinom-19--stoljeca-bilo-je-11-zabiljezenih-parkova-u-staroj-gradskoj-jezgri--a-danas-je-ostao-samo-dardin-",
+        "https://visitsplit.com/en/1245/strossmayers-park"
+      ],
+      "access": "Free, public garden, open daily",
+      "transport": "At the Golden Gate, a 5 minute walk from Diocletian's Palace's Peristil",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "spl_003",
+      "name": "The Cypress of Kolombatović",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "118 years",
+      "age_min": 115,
+      "age_max": 122,
+      "location": {
+        "address": "Kolombatovićevo šetalište, Marjan, Split",
+        "latitude": 43.5085,
+        "longitude": 16.4259,
+        "neighbourhood": "Marjan"
+      },
+      "story": "The cypress on Marjan's Kolombatović walkway went into the ground in 1908, the same year the man it honors died. Juraj Kolombatović was a Split zoologist who spent much of his career naming fish nobody else had described, and in 1903 he became founding president of the Marjan Society, the group that turned decades of scattered tree planting on the barren hill above the city into an organized, permanent effort. Aleppo pines had gone in as early as 1852, but Marjan stayed a patchy, half wild slope until Kolombatović's generation gave its reforestation an institution to answer to. When he died, the society planted a Mediterranean cypress in his memory, and the promenade running past it now carries his name, Kolombatovićevo šetalište, the same path that leads to Split's zoo and natural history museum today. More than a century on, the cypress stands taller than most of the pines planted decades before it, on a hill that is now one continuous forest instead of the bare outcrop Kolombatović's own contemporaries described. It is the one tree on Marjan with a name attached to a specific act of memory rather than a species list.",
+      "verified_sources": [
+        "https://drustvomarjan.hr/o-drustvu-marjan/kronologija-drustva",
+        "https://en.wikipedia.org/wiki/Juraj_Kolombatovi%C4%87"
+      ],
+      "access": "Free, public promenade on Marjan hill, open daily",
+      "transport": "Marjan hill, via Šetalište Ivana Meštrović; about a 20-25 minute walk from the Riva",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "spl_004",
+      "name": "The Black Walnut of Đardin",
+      "species": "Black Walnut (Juglans nigra)",
+      "age_estimate": "100+ years (undocumented)",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Strossmayerov perivoj (Đardin), north of the Golden Gate, Split",
+        "latitude": 43.5096,
+        "longitude": 16.4402,
+        "neighbourhood": "Grad (Old Town)"
+      },
+      "story": "The black walnut growing in Đardin, Split's 19th-century public garden by the Golden Gate, is not a Mediterranean tree at all. Juglans nigra is native to eastern North America, and Split's own botanical survey lists it as a Category II rarity precisely because it is almost never seen this far south on the Adriatic, a temperate forest species making an unlikely living among the palms, planes and pines the city's actual climate can support. Nobody has recorded when it went in or who planted it, only that it survived long enough, and improbably enough, to earn a rarity grade alongside the garden's more famous ginkgo. Đardin itself dates to 1859, when the ground between two former Venetian bastions became the city's main public garden, decades after French forces first cleared the fortification wall in 1808, so the walnut has had, at most, a century and a half to establish itself as one of only a handful of its kind on this stretch of coast. It stands without a plaque, its rarity administrative rather than advertised, recorded in a municipal botanical assessment rather than on any sign a visitor would actually see walking past it.",
+      "verified_sources": [
+        "https://dalmatinskiportal.hr/projekt-solar-sredinom-19--stoljeca-bilo-je-11-zabiljezenih-parkova-u-staroj-gradskoj-jezgri--a-danas-je-ostao-samo-dardin-"
+      ],
+      "access": "Free, public garden, open daily",
+      "transport": "At the Golden Gate, a 5 minute walk from Diocletian's Palace's Peristil",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
