@@ -1591,6 +1591,46 @@ def submit_link(kind):
     return f"mailto:{CONTACT}?subject={subject}&amp;body={body}"
 
 
+
+def thumb_url(url, width):
+    """A right-sized image URL for the big three sources, original otherwise.
+
+    Hidde, 2026-07-31 ("doe je uberhaupt resolutie aanpassen aan grootte?"):
+    we did not, and shipped 6000px originals into 300px cards. Wikimedia,
+    Unsplash and iNaturalist all resize on the fly via the URL, free."""
+    try:
+        if "upload.wikimedia.org/wikipedia/commons/" in url and "/thumb/" not in url:
+            head, tail = url.split("/wikipedia/commons/", 1)
+            fname = tail.rsplit("/", 1)[-1]
+            if not re.search(r"\.(jpe?g|png|gif)$", fname, re.I):
+                return url
+            # Wikimedia only serves fixed thumbnail buckets since 2024
+            # (probed 2026-07-31: 250/330/500/960 are live, 400/800 are 400s).
+            for bucket in (250, 330, 500, 960):
+                if width <= bucket:
+                    width = bucket
+                    break
+            else:
+                return url  # larger than the largest bucket: use the original
+            return f"{head}/wikipedia/commons/thumb/{tail}/{width}px-{fname}"
+        if "images.unsplash.com/" in url:
+            return f"{url.split('?')[0]}?q=80&w={width}&auto=format&fit=crop"
+        m = re.match(r"(https://(?:static\.inaturalist\.org|inaturalist-open-data\.s3\.amazonaws\.com)/photos/[^/]+/)(original|large|medium)(\.[A-Za-z]+)(.*)", url)
+        if m:
+            size = "medium" if width <= 500 else "large"
+            return f"{m.group(1)}{size}{m.group(3)}{m.group(4)}"
+    except Exception:
+        pass
+    return url
+
+
+def img_srcset(url, widths, sizes):
+    """src/srcset/sizes attribute string for a photo url."""
+    cands = ", ".join(f"{esc(thumb_url(url, w))} {w}w" for w in widths)
+    return (f'src="{esc(thumb_url(url, widths[0]))}" '
+            f'srcset="{cands}" sizes="{esc(sizes)}"')
+
+
 def usable_photo(tree):
     """Return the photo dict if it has a URL, license and attribution and is
     cleared for display; otherwise None. One gate for every page type."""
@@ -1743,7 +1783,7 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
     if photo:
         photo_html = f"""
   <figure class="tree-photo">
-    <img src="{esc(photo['url'])}" alt="{esc(tree['name'])}" loading="lazy">
+    <img {img_srcset(photo['url'], [700, 1100, 1600], "(max-width: 800px) 100vw, 760px")} alt="{esc(tree['name'])}" loading="lazy">
     <figcaption>Photo: {esc(photo['attribution'])} ({esc(photo['license'])})</figcaption>
   </figure>"""
         og_image = f'\n<meta property="og:image" content="{esc(photo["url"])}">'
@@ -1989,7 +2029,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
         photo_block = ""
         if cphoto:
             photo_block = f"""
-      <div class="tree-card-photo"><img src="{esc(cphoto['url'])}" alt="{esc(t['name'])}" loading="lazy"></div>
+      <div class="tree-card-photo"><img {img_srcset(cphoto['url'], [500, 900], "(max-width: 800px) 100vw, 560px")} alt="{esc(t['name'])}" loading="lazy"></div>
       <p class="tree-card-credit">Photo: {esc(cphoto['attribution'])} ({esc(cphoto['license'])})</p>"""
         cards.append(f"""
     <article class="tree-card" id="tree-{i}">
@@ -2197,7 +2237,7 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages, dr
                 "name": t["name"], "url": f"{BASE_URL}/{cslug}/{tslug}",
             })
             ph = usable_photo(t)
-            thumb = (f'<div class="entry-thumb"><img src="{esc(ph["url"])}" alt="{esc(t["name"])}" loading="lazy"></div>'
+            thumb = (f'<div class="entry-thumb"><img {img_srcset(ph["url"], [300, 600], "140px")} alt="{esc(t["name"])}" loading="lazy"></div>'
                      if ph else "")
             rows.append(f"""
       <div class="entry{' has-thumb' if ph else ''}">
@@ -2315,7 +2355,7 @@ def build_species_page(intro_data, members, tree_slugs, published, pages):
                 "name": t["name"], "url": f"{BASE_URL}/{cslug}/{tslug}",
             })
             ph = usable_photo(t)
-            thumb = (f'<div class="entry-thumb"><img src="{esc(ph["url"])}" alt="{esc(t["name"])}" loading="lazy"></div>'
+            thumb = (f'<div class="entry-thumb"><img {img_srcset(ph["url"], [300, 600], "140px")} alt="{esc(t["name"])}" loading="lazy"></div>'
                      if ph else "")
             rows.append(f"""
       <div class="entry{' has-thumb' if ph else ''}">
@@ -3000,7 +3040,7 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
 
     def _season_card(entry, t, bt, ph):
         return (f'<a class="shelf-card" href="{entry["slug"]}/{slugify(t["name"])}">'
-                f'<span class="shelf-ph"><img src="{esc(ph["url"])}" alt="" loading="lazy">'
+                f'<span class="shelf-ph"><img {img_srcset(ph["url"], [400, 800], "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy">'
                 f'<span class="shelf-now">at its best now</span></span>'
                 f'<b>{esc(t["name"])}</b>'
                 f'<span class="shelf-meta">{esc(entry["data"]["city"])} &middot; {esc(bt.get("label", ""))}</span></a>')
@@ -3042,16 +3082,25 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
         e = by_slug.get(cs)
         if not e:
             continue
+        # hero_tree_id (optional, per city JSON): which tree's photo is the
+        # city's face on shelves. Hidde, 2026-07-31: a camellia close-up is a
+        # fine photo for that tree but "niet als hoofdfoto" for Porto.
         photo = None
-        for t in e["data"]["trees"]:
-            photo = usable_photo(t)
-            if photo:
-                break
+        hero = e["data"].get("hero_tree_id")
+        if hero:
+            for t in e["data"]["trees"]:
+                if t["id"] == hero:
+                    photo = usable_photo(t)
+        if not photo:
+            for t in e["data"]["trees"]:
+                photo = usable_photo(t)
+                if photo:
+                    break
         if not photo:
             continue
         fav_cards.append(
             f'<a class="shelf-card" href="{cs}">'
-            f'<span class="shelf-ph"><img src="{esc(photo["url"])}" alt="" loading="lazy"></span>'
+            f'<span class="shelf-ph"><img {img_srcset(photo["url"], [400, 800], "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>'
             f'<b>{esc(e["data"]["city"])}</b>'
             f'<span class="shelf-meta">{len(e["data"]["trees"])} trees &middot; {esc(e["data"]["country"])}</span></a>')
     fav_shelf = ""
@@ -3077,7 +3126,7 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
         shelf_photos_used.add(photo["url"])
         coll_cards.append(
             f'<a class="shelf-card" href="collections/{esc(c["slug"])}">'
-            f'<span class="shelf-ph"><img src="{esc(photo["url"])}" alt="" loading="lazy"></span>'
+            f'<span class="shelf-ph"><img {img_srcset(photo["url"], [400, 800], "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>'
             f'<b>{esc(c["title"])}</b>'
             f'<span class="shelf-meta">{len(c.get("entries", []))} trees &middot; {n_cities} cities</span></a>')
     coll_shelf = ""
