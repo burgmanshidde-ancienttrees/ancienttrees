@@ -2,6 +2,14 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Copenhagen opens: 4 trees, all tied to named historical figures
+
+Same session, straight after Krakow. Denmark's two most famous ancient oaks both sit outside Copenhagen's boundary (Jaegerspris, Gentofte) and were excluded on that basis. Shipped 4 trees instead, each with a specific named person behind it: Christian IV's silk-industry mulberry on Slotsholmen, a Mexican cycad botanist Frederik Liebmann brought home in 1842, a black locust tradition says sculptor Bertel Thorvaldsen carried home from Italy in 1838, and a lime avenue in the king's own garden that has simply outlasted every replanting around it since the 1660s.
+
+**Worth flagging as a process note**: a fifth candidate, a linden in Regensen's historic student courtyard with a genuinely lovely 1785 tradition attached, was fully researched and written before a late access check found the courtyard has no public access, a private dormitory rather than a park. Pulled before commit and swapped for a properly public tree from the same research. Hard rule 10 held, but the check happened later than it should have; noting it so a future session checks access earlier in the process rather than after writing the story.
+
+0 of 4 photos found. All 4 pins approximate. Site rebuilt (646 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Krakow opens: 4 trees, three sharing one 240-year-old garden
 
 Same session, straight after Budapest. Krakow was next in the queue. Three of the four trees turned out to grow within a few dozen metres of each other inside Poland's oldest botanical garden (founded 1783): the Jagiellonian Oak (folklore said 500 years old, a dendrochronological study found roughly 230), the officially confirmed oldest black locust in Poland (239 years, 475cm trunk), and the Sniadecki Dogwoods (cornelian cherries locals credit to astronomer Jan Sniadecki, c.1790). The fourth, and the city's actual oldest, is different in kind: the Henryk Oak in Borek Falecki, a lone survivor of the pine forest that gave the district its name, protected for most of the 20th century by one neighbour whose life the tree is now named after.
