@@ -2615,7 +2615,7 @@ def build_privacy_page(pages):
     <p>Every page works without an account. The site uses a cookieless visit counter (Cloudflare Web Analytics) that records aggregate page views only; it sets no cookies and cannot identify you. Map tiles load from OpenFreeMap and photos from Wikimedia Commons; those requests reach their servers the way any image on the web does.</p>
     <h2>With an account (once sign-in opens)</h2>
     <p>Signing in stores two things: your email address and your tree collection. The address is used for sign-in links and account service, nothing else. This data is stored with Supabase, on servers in the EU (Frankfurt).</p>
-    <p>Two forms store what you type into them, in the same EU database: the app waitlist keeps your email address until launch, used for that one announcement; a tree suggestion keeps what you wrote, including the name you optionally leave for credit. Want either removed? Use the contact address below.</p>
+    <p>Two forms store what you type into them, in the same EU database: the app waitlist keeps your email address, used to email you when the app is ready; a tree suggestion keeps what you wrote, including the name you optionally leave for credit. Want either removed? Use the contact address below.</p>
     <h2>Deleting</h2>
     <p>Your account page has a delete option. It removes your email address and your collection.</p>
     <h2>Changes</h2>
@@ -2652,7 +2652,7 @@ APPLAND_BODY = """
         <input type="email" id="wl-email" placeholder="you@example.com" aria-label="Your email address" required>
         <button type="submit" class="appland-cta">Keep me posted</button>
       </form>
-      <p class="waitlist-note" id="wl-note">One email when the app is ready. Nothing else, ever.</p>
+      <p class="waitlist-note" id="wl-note">We will email you when the app is ready.</p>
     </div>
     <div class="appland-right">
       <h2>The app is going to include</h2>
@@ -2702,7 +2702,7 @@ def build_fakedoor_pages(pages):
     }).then(function(r) {
       if (r.ok || r.status === 409) {
         f.hidden = true;
-        note.textContent = 'You are on the list. We will email you once, when it is ready.';
+        note.textContent = 'You are on the list. We will email you when the app is ready.';
       } else {
         note.textContent = 'That did not go through. Try again in a moment.';
       }
