@@ -2,6 +2,16 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Breda opens: 4 trees, a public library built around its oldest trees rather than over them
+
+Same session, straight after Nijmegen. Breda was next in the Netherlands wave and untouched by any prior session, no boundary near-misses this time.
+
+Shipped with 4: three 1780s mulberries in the courtyard of Breda's public library, De Nieuwe Veste, which architect Herman Hertzberger built around them in 1995 instead of clearing the site; a catalpa in Wilhelminapark leaning so far over its pond that the municipality props it on columns; a Caucasian wingnut in Valkenberg, the city's central park beside Breda Castle, planted around 1830; and a giant sequoia on a street named for a village it does not actually stand in (Ulvenhoutselaan runs inside Breda proper, not neighbouring Ulvenhout).
+
+Two real trees looked at and left out for good reason: a beloved "Tree of the Year" oak stands in the median of a live motorway with no safe way to actually visit it, and Breda's reported oldest tree, a Terheijdenseweg chestnut, has been visibly dying of honey fungus since at least 2013 with no recent confirmation it is still alive.
+
+0 of 4 photos found. Site rebuilt (805 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Nijmegen opens: 5 trees; a near-miss caught first, Cork almost got republished on out-of-bounds trees
 
 New session. Visitors last 7 days: 93 visits, 187 page views (2026-07-24 to 2026-07-30), trending up most days. No reader submissions. Site healthy at start (build, QA, smoke test all clean).

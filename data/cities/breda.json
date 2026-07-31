@@ -1,0 +1,151 @@
+{
+  "city": "Breda",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Breda's oldest trees survived by getting in the way of a building, not by being protected on purpose. A trio of mulberries stopped a 1995 library architect from building where he first planned to, a wingnut from the Caucasus outgrew the fashion that planted it, and a giant sequoia keeps growing beside a street named for the village it is not quite in. None of it is planned heritage. All of it is free to see, in a city better known for its Golden Triangle nightlife than for what is quietly growing behind it.",
+  "meta_description": "Breda's oldest trees are three 1780s mulberries a library was built around. Four verified trees, real stories, how to reach each one.",
+  "question_answer": "Breda's oldest trees are three black mulberries in the inner courtyard of De Nieuwe Veste on Molenstraat, planted around 1780 in the garden of the manor house Huize Ocrum, roughly 245 years old. Architect Herman Hertzberger built the current library and cultural centre around them in 1995 rather than remove them.",
+  "question_meta": "Three 1780s mulberry trees, built around by a 1995 library, are Breda's oldest. Where to find them, and the city's other three verified ancient trees.",
+  "question_context": "The mulberries' age comes from the property's own recorded history rather than a ring count: Huize Ocrum's garden is documented as the planting site around 1780, under its then-owner Gerrit Willem Motman, steward of the princely domains, and the trees survived as the surrounding estate was built up and eventually demolished around them over the following two centuries. When Herman Hertzberger designed the current De Nieuwe Veste library and cultural centre in the mid-1990s, the three trees were already old enough that removing them was never seriously considered. Instead the building folds around the courtyard they stand in, their canopy shaping the layout of the structure above rather than the other way round, an unusually literal case of architecture following an existing tree rather than clearing space for a new one. They are not the tallest or thickest trees in Breda; the courtyard is small and the trees have grown accordingly. Their claim to being the city's oldest rests on the documented planting date alone, which none of Breda's other candidate trees can currently match with the same specificity.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Breda?",
+      "a": "Three black mulberries in the courtyard of De Nieuwe Veste on Molenstraat, planted around 1780 in what was then the garden of Huize Ocrum, roughly 245 years old."
+    },
+    {
+      "q": "Are Breda's ancient trees free to visit?",
+      "a": "Yes, all four are in public parks or a public library courtyard with free access during opening hours."
+    },
+    {
+      "q": "Why does a library in Breda have trees growing inside its courtyard?",
+      "a": "The mulberries at De Nieuwe Veste predate the current 1995 building by over two centuries. Architect Herman Hertzberger designed the library and cultural centre around them rather than remove them."
+    },
+    {
+      "q": "What is the Caucasian wingnut in Valkenberg park?",
+      "a": "A Pterocarya fraxinifolia planted around 1830, roughly 195 years old, with a trunk nearly 6 metres around, growing in Breda's central park beside Breda Castle and the Grote Kerk."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bre_001",
+      "name": "The Mulberries of Nieuwe Veste",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "245 years",
+      "age_min": 230,
+      "age_max": 250,
+      "location": {
+        "address": "De Nieuwe Veste, Molenstraat 6, Breda",
+        "latitude": 51.5886,
+        "longitude": 4.7745,
+        "neighbourhood": "City centre"
+      },
+      "story": "A library was built around these trees rather than the other way round. Three black mulberries have grown in this small courtyard since around 1780, when it was still the garden of Huize Ocrum, a manor house owned at the time by Gerrit Willem Motman, steward of the Dutch princely domains. The house came down over the following two centuries as the site changed hands and purpose, but the mulberries stayed, and when architect Herman Hertzberger designed De Nieuwe Veste, Breda's combined library, music school and cultural centre, in the mid-1990s, he folded the new building's plan around the courtyard rather than clear it. The trees now shape the layout of a public building constructed more than two hundred years after they were planted, an unusually literal case of architecture yielding to something already there. At roughly 245 years old they are, as far as any documented planting date in Breda goes, the city's oldest living trees, though the courtyard they stand in is modest and the trees themselves are not large by monumental-tree standards elsewhere in the country. Free to visit during the library's opening hours, they are also one of the few entries on this list a visitor can reach without ever stepping outside.",
+      "verified_sources": [
+        "https://www.nieuweveste.nl/kunstwerken-bij-nieuwe-veste/moerbeibomen",
+        "https://www.explorebreda.com/en/blogs/special-trees-in-breda"
+      ],
+      "access": "Free, public library and cultural centre, open during opening hours",
+      "transport": "Central Breda, Molenstraat; 10 minute walk from Breda railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bre_002",
+      "name": "The Trumpet Tree of Wilhelminapark",
+      "species": "Southern Catalpa (Catalpa bignonioides)",
+      "age_estimate": "120 years",
+      "age_min": 110,
+      "age_max": 130,
+      "location": {
+        "address": "Wilhelminapark, Breda",
+        "latitude": 51.58198,
+        "longitude": 4.78255,
+        "neighbourhood": "Zandberg"
+      },
+      "story": "This catalpa grew sideways instead of up, and Breda decided to help it keep doing so. It leans out over the pond in Wilhelminapark, a park laid out in 1894 by landscape architect Leonard A. Springer, far enough over the water that the municipality now props its lowest limbs on columns rather than let them snap or drag. Local tradition credits Queen Wilhelmina herself, the park's namesake, with intervening at some point to see the tree preserved rather than felled for convenience, though the story's exact origin is harder to pin down than the tree's current, very visible lean. Catalpas are not native to the Netherlands, brought from the southeastern United States as an ornamental species prized for its huge heart-shaped leaves and its white, purple-throated flower spikes in midsummer, and this one has had well over a century in Dutch soil to develop the sprawling, horizontal habit the species is capable of when nothing stops it. No exact planting record survives, so its age is inferred from the park's own founding date rather than documented outright. Wilhelminapark itself has lost several of its other historic trees in recent years to disease and storm damage, which makes this one's continued, actively supported survival more notable rather than less.",
+      "verified_sources": [
+        "http://www.cubra.nl/bomen/boomvandeweek/Breda%20trompetboom%20wilhelminapark/bredawilhelminparktrompetboom.htm",
+        "https://www.explorebreda.com/en/blogs/special-trees-in-breda"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Zandberg neighbourhood, Breda; 15 minute walk from Breda railway station",
+      "best_time": {
+        "months": [7],
+        "label": "July, when the catalpa's white flower spikes open",
+        "kind": "flowers"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bre_003",
+      "name": "The Caucasian Wingnut of Valkenberg",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "195 years",
+      "age_min": 185,
+      "age_max": 205,
+      "location": {
+        "address": "Valkenberg, Breda",
+        "latitude": 51.59131,
+        "longitude": 4.7791,
+        "neighbourhood": "City centre"
+      },
+      "story": "A tree from the mountains between the Black and Caspian Seas has been growing in Breda's oldest park for close to two centuries. This Caucasian wingnut, planted around 1830 in Valkenberg beside Breda Castle and the Grote Kerk, was measured in September 2020 at 5.82 metres around, a size that reflects how fast and wide the species spreads once established rather than any particular rarity of specimen. Wingnuts were a genuine curiosity in 19th-century Dutch parks, planted by landscape designers testing what exotic species could handle the local climate, and this one has clearly handled it: its suckering roots have likely spread new stems around the original trunk over the decades, the species' usual habit when left alone in open ground. Valkenberg itself predates the tree by centuries, laid out on the grounds beside Breda Castle, once the seat of the House of Nassau and now a military academy, with the Grote Kerk's tower visible over the park's mature tree canopy. The wingnut is one of several genuinely old trees in the park, including planes and horse chestnuts pushing a century themselves, but its size and unusual leaf, long pinnate fronds rather than a single broad leaf, make it the one visitors actually stop under.",
+      "verified_sources": [
+        "https://www.monumentaltrees.com/nl/nld/noordbrabant/breda/25470_hetstadsparkvalkenberg/",
+        "https://bredabloeit.nl/parken/valkenberg"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Central Breda, beside Breda Castle; 10 minute walk from Breda railway station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bre_004",
+      "name": "The Giant Sequoia of Laurenspark",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "140 years",
+      "age_min": 130,
+      "age_max": 145,
+      "location": {
+        "address": "Laurenspark, Ulvenhoutselaan, Breda",
+        "latitude": 51.56173,
+        "longitude": 4.79227,
+        "neighbourhood": "Ginneken"
+      },
+      "story": "Despite its name, Ulvenhoutselaan runs inside Breda, not the separate village of Ulvenhout the street is named after, and this giant sequoia stands well within city limits along it, in the Ginneken district in the south of town. Planted in 1885, measured at 25 metres tall and 5.70 metres around, it belongs to the wave of Californian conifers that spread through Dutch estates and parks in the second half of the 19th century, after the species was first introduced to Europe in the 1850s and became, briefly, a fashionable statement for anyone with land to plant on. At 140 years old it has had time to become a genuinely large tree by Dutch standards without coming close to challenging its own species' natural lifespan, which can run past two thousand years in California's Sierra Nevada. Ginneken itself was a separate village until it merged into Breda in the 20th century, which makes the sequoia's setting a small irony of its own: a street named for a village that is not this tree's home, in a neighbourhood that used to be a different one. Free to see, in a quiet residential park rather than a tourist destination, it rewards anyone who already knows where to look.",
+      "verified_sources": [
+        "https://www.monumentaltrees.com/en/nld/northbrabant/breda/252_ulvenhoutselaan/",
+        "https://degoudencirkelbreda.nl/wp-content/uploads/Wandeling-langs-monumentale-bomen-Breda-Centrum.pdf"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Ginneken, Breda; bus from Breda railway station or a 25 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
