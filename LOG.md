@@ -2,6 +2,16 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Leiden opens: 6 trees, half of them fighting root disease
+
+Same session, straight after Groningen. No new submissions. Leiden was next in the Netherlands wave.
+
+The Netherlands' oldest botanical garden, Hortus Botanicus Leiden (founded 1590), keeps unusually good planting records, so four of the six trees come from there: a tulip tree sown by professor Herman Boerhaave in 1716 from Virginia seed (the garden's own oldest tree and, per its own claim, the oldest tulip tree in Europe), a ginkgo planted 1785 and surgically grafted with a female branch in 1935, a weeping beech documented since 1836 and already declining enough that a successor was planted beside it in 1982, and a golden chain tree whose popular "planted in 1601" legend the Hortus itself debunked in favour of the 1720s. Beyond the garden: the Beets Beech on Leiden's medieval fortress mound, named in 1989 for student writer Nicolaas Beets and one of the few trees spared the city's 1945 Hunger Winter fuel-felling, and the Groenesteeg Beech, a copper-on-green beech graft in a public cemetery, officially the thickest tree in South Holland and fourth-place finisher in the 2025 national Tree of the Year vote.
+
+Two of the six are honestly flagged as currently fighting root-rot fungus, the Beets Beech more seriously (a 2024 report called its survival uncertain, no update found either way since), the Groenesteeg beech under active treatment by its caretakers. Both stated plainly in their own stories rather than smoothed over.
+
+0 of 6 photos found. Site rebuilt (776 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Groningen opens: 5 trees, a farm tree older than any of the city's own parks
 
 New session. Visitors last 7 days: 93 visits, 187 page views (2026-07-24 to 2026-07-30), trending up most days; nothing in that window points at a specific page to deepen. No reader submissions (form's still just its header row). Site health checked first: build and QA both clean, REVIEW.md empty. Continued the Netherlands wave: Groningen was next fresh city (Cork, Galway and Zagreb remain pending but were already researched in earlier sessions and fell short of the four-tree floor, so not re-chased).
