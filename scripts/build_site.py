@@ -1611,7 +1611,8 @@ def thumb_url(url, width):
                     width = bucket
                     break
             else:
-                return url  # larger than the largest bucket: use the original
+                width = 960  # cap: 960 is the largest bucket Wikimedia serves;
+                # a 960px thumb beats shipping the multi-MB original
             return f"{head}/wikipedia/commons/thumb/{tail}/{width}px-{fname}"
         if "images.unsplash.com/" in url:
             return f"{url.split('?')[0]}?q=80&w={width}&auto=format&fit=crop"
@@ -1626,7 +1627,13 @@ def thumb_url(url, width):
 
 def img_srcset(url, widths, sizes):
     """src/srcset/sizes attribute string for a photo url."""
-    cands = ", ".join(f"{esc(thumb_url(url, w))} {w}w" for w in widths)
+    seen, pairs = set(), []
+    for w in widths:
+        u = thumb_url(url, w)
+        if u not in seen:
+            seen.add(u)
+            pairs.append((u, w))
+    cands = ", ".join(f"{esc(u)} {w}w" for u, w in pairs)
     return (f'src="{esc(thumb_url(url, widths[0]))}" '
             f'srcset="{cands}" sizes="{esc(sizes)}"')
 
@@ -1786,7 +1793,7 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
     <img {img_srcset(photo['url'], [700, 1100, 1600], "(max-width: 800px) 100vw, 760px")} alt="{esc(tree['name'])}" loading="lazy">
     <figcaption>Photo: {esc(photo['attribution'])} ({esc(photo['license'])})</figcaption>
   </figure>"""
-        og_image = f'\n<meta property="og:image" content="{esc(photo["url"])}">'
+        og_image = f'\n<meta property="og:image" content="{esc(thumb_url(photo["url"], 1200))}">'
 
     # Honest where it costs the visitor something: an approximate pin means
     # standing in the right park without finding the tree.
@@ -2575,7 +2582,7 @@ APPLAND_BODY = """
        2026-07-29 no-visible-credit instruction: BY-SA requires the credit, the
        Unsplash License does not, so the photo changed instead of the licence
        being broken. -->
-  <img class="appland-bg" src="https://images.unsplash.com/photo-1690269112887-da7d1f1ea6f3?q=80&w=2400&auto=format&fit=crop" alt="">
+  <img class="appland-bg" APPLAND_SRCSET alt="">
   <div class="appland-card">
     <div class="appland-left">
       <span class="chip gold">Coming soon</span>
@@ -2616,6 +2623,8 @@ def build_fakedoor_pages(pages):
     per the Barcelona bcn_008 precedent instead of 404ing."""
     canonical = f"{BASE_URL}/app"
     body = APPLAND_BODY.replace("{form}", esc(submit_link("tree")))
+    body = body.replace("APPLAND_SRCSET", img_srcset(
+        "https://images.unsplash.com/photo-1690269112887-da7d1f1ea6f3", [1200, 2000, 2800], "100vw"))
     # The waitlist lives on our own page and posts to Hidde's Supabase, which
     # replaces the Google Form for this one job (Hidde, 2026-07-30: "just a
     # simple add your email address here"). Insert-only by design: the table
@@ -3156,7 +3165,7 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
 
     body = f"""
 <div class="home-hero poster">
-  <img class="hero-bg" id="hero-bg" src="{HERO_PHOTOS[0][0]}" alt="">
+  <img class="hero-bg" id="hero-bg" {img_srcset(HERO_PHOTOS[0][0], [1200, 2000, 2800], "100vw")} alt="">
   <div class="hero-scrim"></div>
   <div class="hero-center">
     <h1>Epic old trees, <em>wherever you are</em>.</h1>
