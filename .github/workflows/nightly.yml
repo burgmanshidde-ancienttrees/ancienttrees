@@ -17,7 +17,10 @@ on:
     # 2026-07-31 second tune: six knocks a day, but the real lever is
     # below: timeout-minutes 60 caps every run to one hour, so a day
     # of machine work tops out at ~6 hours instead of yesterday's 16.
-    - cron: "0 1,4,7,13,19,22 * * *"
+    # 2026-07-31 evening trim: 63% of the week gone at day 2.5 of 7 with
+    # heavy session days; four one-hour runs (~4-5%/day) leaves daily
+    # session room. Recalibrate at Monday's usage glance.
+    - cron: "0 1,5,13,21 * * *"
   workflow_dispatch: {}
 
 permissions:
