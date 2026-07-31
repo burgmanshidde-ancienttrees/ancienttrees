@@ -25,6 +25,15 @@ DIST = Path(__file__).resolve().parent.parent / "site" / "dist"
 
 BANNED_WORDS = ["hidden gem", "must-see", "breathtaking", "nestled"]
 
+# Product-copy surfaces (no editorial stories on them) may not make absolute
+# promises: the paywall rule bans forever-claims, and "Nothing else, ever"
+# still shipped twice before this gate existed. Story prose is exempt because
+# "the tree never recovered" is legitimate narrative.
+PROMISE_PAGES = {"app.html", "account.html", "contribute.html", "privacy.html",
+                 "explore.html", "index.html", "cities.html"}
+PROMISE_PATTERNS = [", ever", " forever", "we will never", "we will always",
+                    "nothing else, ever", "no ads, ever", "always free"]
+
 
 class PageScan(HTMLParser):
     def __init__(self):
@@ -83,6 +92,11 @@ def main():
             m = _re.search(r"<title>([^<]*)</title>", page.read_text(encoding="utf-8"))
             if m and not m.group(1).startswith("Ancient Trees"):
                 failures.append(f"{rel}: homepage <title> is {m.group(1)!r}; a shelf caption once shadowed it")
+
+        if rel.name in PROMISE_PAGES and rel.parent.name == "":
+            for pat in PROMISE_PATTERNS:
+                if pat in text.lower():
+                    failures.append(f"{rel}: absolute promise {pat!r} in product copy (forever-claims rule)")
 
         if "—" in text:
             failures.append(f"{rel}: em dash in rendered text (hard rule 3)")
