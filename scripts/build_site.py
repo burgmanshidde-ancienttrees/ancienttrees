@@ -1454,7 +1454,6 @@ def home_hero_script(markers, tree_index):
     return """
 <script>
 var markers = __CITIES__;
-var TREES = __TREES__;
 var moreBtn = document.getElementById('more-cities-btn');
 if (moreBtn) {
   moreBtn.addEventListener('click', function() {
@@ -1471,9 +1470,6 @@ if (sf) {
     var hit = markers.find(function(m) { return m.city.toLowerCase() === q; }) ||
               markers.find(function(m) { return m.city.toLowerCase().indexOf(q) === 0; });
     if (hit) { window.location.href = hit.url; return; }
-    var tree = TREES.find(function(t) { return t.n.toLowerCase() === q; }) ||
-               TREES.find(function(t) { return t.n.toLowerCase().indexOf(q) !== -1; });
-    if (tree) { window.location.href = tree.u; return; }
     hit = markers.find(function(m) { return m.city.toLowerCase().indexOf(q) !== -1; });
     if (hit) { window.location.href = hit.url; return; }
     document.getElementById('search-note').innerHTML =
@@ -1481,7 +1477,7 @@ if (sf) {
   });
 }
 </script>
-""".replace("__CITIES__", data).replace("__TREES__", trees)
+""".replace("__CITIES__", data)
 
 
 def render_page(title, description, canonical, body, head_extra="", scripts="",
@@ -3373,10 +3369,7 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
         + ('<span class="sp-name">Ginkgo</span>' if k=="ginkgo" else "") + '</span>'
         for k in lit+dim)
     city_options = "".join(f'<option value="{esc(p["city"])}">' for p in published)
-    tree_options = "".join(
-        f'<option value="{esc(t["name"])}">'
-        for entry in (renderable or []) for t in entry["data"]["trees"])
-    city_options += tree_options
+
 
     body = f"""
 <div class="home-hero poster">
@@ -3386,7 +3379,7 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
     <h1>Epic old trees, <em>wherever you are</em>.</h1>
     <form id="city-search" class="hero-search poster-search" autocomplete="off">
       <button type="submit" class="search-ico" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg></button>
-      <input type="text" id="city-q" list="city-options" placeholder="Search by city or tree" aria-label="Search for a city">
+      <input type="text" id="city-q" list="city-options" placeholder="Search by city" aria-label="Search for a city">
       <datalist id="city-options">{city_options}</datalist>
     </form>
     <p class="hero-links">
