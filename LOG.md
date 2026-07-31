@@ -2,6 +2,14 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Oslo opens: 4 trees, session's search budget ran out at the very end
+
+Same session, straight after Zurich, the seventh city this run. Shipped Munch-eika (Montebello, 500-600 years, Oslo's oldest tree by its own city planning office, name likely tied to painter Edvard Munch though not confirmed), the Linden Alley of Dronningparken (planted 1778, older than the Royal Palace built around it decades later), the Birches of Birkelunden (1860s, heart of Norway's first protected urban neighbourhood), and the Ginkgo of Botanisk Hage (planted 1870, believed to be the oldest ginkgo in Northern Europe).
+
+This session's web search allowance ran out right at the photo-hunting stage for this city, so all 4 photos are honestly missing rather than guessed. Worth a future session pacing searches if planning to cover this many cities in one sitting.
+
+Site rebuilt (682 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Zurich opens: 4 trees, plus a git push credential fix worth knowing about
 
 Same session, straight after Dubrovnik. Hit a real infrastructure snag mid-run: `git push` started failing with "Invalid username or token" because the installation token embedded in the remote URL had a 1-hour expiry and quietly ran out. Fixed by rebuilding the remote from the `DEFAULT_WORKFLOW_TOKEN` environment variable (available in this GitHub Actions runner), which has push rights the more obvious `GITHUB_TOKEN`/`GH_TOKEN` did not. Worth any future session knowing about if a push fails mid-session with the same error.

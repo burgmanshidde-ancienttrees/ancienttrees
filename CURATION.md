@@ -1,3 +1,15 @@
+## 2026-07-31 — Oslo opens: 4 trees, this session's WebSearch budget exhausted mid-research
+
+Same session, straight after Zurich. Oslo was next in the queue. This session's WebSearch allowance (200 calls) ran out partway through photo-hunting for the fourth tree; research and story-writing were unaffected since they were already complete, but no photo search was possible for any of Oslo's four trees, so all four are honestly marked missing rather than guessed from memory or left unchecked. Future sessions should budget web searches accordingly if doing this much research in one sitting, or split photo-hunting into an earlier pass.
+
+**Shipped**: Munch-eika (Montebello, 500-600 years, Oslo's own city-planning office names it the city's oldest tree; its name likely but not confirmedly connects to painter Edvard Munch, whose home at nearby Ekely stood a short walk away, flagged honestly as this project's inference rather than a sourced fact), the Linden Alley of Dronningparken (part of Slottsparken, planted from 1778 by merchant Bernt Anker decades before the Royal Palace it now surrounds was built 1823-1849), the Birches of Birkelunden (Grunerlokka, 1860s planting by Thorvald Meyer, centre of the first protected urban cultural environment in Norway since 2006), and the Ginkgo of Botanisk Hage (Toyen, planted 1870, believed by the University of Oslo's own Natural History Museum to be the oldest ginkgo in Northern Europe, a claim carried with the museum's own hedge, 'believed to be', per hard rule 8).
+
+Norway's Tordenskiold Oak (Horten) was investigated and correctly excluded: genuinely ancient (800-1000 years) but in a different municipality entirely, not within Oslo.
+
+0 of 4 photos found (search budget exhausted before this could be completed properly; none guessed). All 4 pins approximate.
+
+Site rebuilt (682 pages: 49 city, 404 tree, 49 question, 12 collections, homepage; one meta-description-length violation caught and fixed pre-commit), all contracts validated; `scripts/qa.py` clean (634 pages). `data/city-list.json` updated (Oslo: pending to needs_curation). One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Zurich opens: 4 trees, none of them protected the way anyone would expect
 
 Same session, straight after Dubrovnik. Zurich was next in the queue. A git push failure surfaced mid-session (the installation token embedded in `git remote -v` had expired, a 1-hour TTL); resolved by rebuilding the remote URL from the `DEFAULT_WORKFLOW_TOKEN` environment variable available in this GitHub Actions runner, which has push rights the ambient `GITHUB_TOKEN`/`GH_TOKEN` in the same environment did not. Worth recording for any future session hitting the same "Invalid username or token" push failure mid-run: check `git remote -v`'s embedded token expiry first (decode the JWT `exp` claim), and if expired, rebuild the remote URL from `DEFAULT_WORKFLOW_TOKEN` rather than the general `GITHUB_TOKEN`.
