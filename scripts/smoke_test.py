@@ -99,6 +99,14 @@ def main():
         ]),
         (f"{base}/explore.html", "explore", [
             ("maplibregl-canvas", "map canvas"),
+            ("exc-", "city chooser panel rendered"),
+        ]),
+        (f"{base}/contribute.html", "contribute", [
+            ('id="suggest"', "native suggestion form"),
+            ("rest/v1/submissions", "form posts to our backend"),
+        ]),
+        (f"{base}/app.html", "app page", [
+            ('id="waitlist"', "waitlist form"),
         ]),
     ]
 

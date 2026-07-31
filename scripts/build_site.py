@@ -533,6 +533,13 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   border-radius: 12px; padding: 0.7rem 0.9rem; font-family: var(--sans); font-size: 14px;
   cursor: pointer; box-shadow: 0 2px 12px rgba(0,0,0,0.18); white-space: nowrap; }
 .route-gps[aria-pressed="true"] { background: var(--moss-light); border-color: var(--moss); }
+.suggest-form { display: flex; flex-direction: column; gap: 0.9rem; margin: 1.5rem 0; max-width: 34rem; }
+.suggest-form label { font-size: 13.5px; font-weight: 700; display: flex; flex-direction: column; gap: 0.35rem; }
+.sg-hint { font-weight: 400; color: var(--ink-light); font-size: 12.5px; }
+.suggest-form input, .suggest-form select, .suggest-form textarea { font-family: var(--sans); font-size: 14px; padding: 0.65rem 0.85rem; border: 1px solid var(--cream-dark); border-radius: 10px; background: #fff; }
+.suggest-form input:focus, .suggest-form select:focus, .suggest-form textarea:focus { outline: 2px solid var(--moss); outline-offset: 1px; }
+.suggest-form .go-btn { align-self: flex-start; cursor: pointer; border: none; font-family: inherit; }
+.sg-note { font-size: 13px; color: var(--ink-mid); min-height: 1em; }
 .report-btn { display: inline-block; margin: 4px 6px 0 0; padding: 5px 12px; border: 1px solid var(--cream-dark); border-radius: 999px; font-size: 12.5px; color: var(--ink-mid); text-decoration: none; }
 .report-btn:hover { border-color: var(--moss); color: var(--moss); }
 .subtle-suggest { font-size: 13px; color: var(--ink-light); }
@@ -1601,15 +1608,10 @@ SUBMIT_TEMPLATES = {
 
 
 def submit_link(kind):
-    """Where a contribution button points.
-
-    One constant at the top of this file flips every button on the site from a
-    prefilled mailto to the hosted form, so switching over is a one-line change.
-    """
-    if SUBMISSION_FORM_URL:
-        return SUBMISSION_FORM_URL
-    subject, body = SUBMIT_TEMPLATES[kind]
-    return f"mailto:{CONTACT}?subject={subject}&amp;body={body}"
+    """Every contribution button on the site points at our own form
+    (Hidde, 2026-07-31: "de Google Form wil ik killen"), carrying what the
+    visitor was doing so the form preselects it."""
+    return f"/contribute?kind={kind}"
 
 
 
@@ -2582,6 +2584,7 @@ def build_privacy_page(pages):
     <p>Every page works without an account. The site uses a cookieless visit counter (Cloudflare Web Analytics) that records aggregate page views only; it sets no cookies and cannot identify you. Map tiles load from OpenFreeMap and photos from Wikimedia Commons; those requests reach their servers the way any image on the web does.</p>
     <h2>With an account (once sign-in opens)</h2>
     <p>Signing in stores two things: your email address and your tree collection. The address is used for sign-in links and account service, nothing else. This data is stored with Supabase, on servers in the EU (Frankfurt).</p>
+    <p>Two forms store what you type into them, in the same EU database: the app waitlist keeps your email address until launch, used for that one announcement; a tree suggestion keeps what you wrote, including the name you optionally leave for credit. Want either removed? Use the contact address below.</p>
     <h2>Deleting</h2>
     <p>Your account page has a delete option. It removes your email address and your collection.</p>
     <h2>Changes</h2>
@@ -2793,6 +2796,7 @@ var map = new maplibregl.Map({
   attributionControl: {compact: true}
 });
 map.addControl(new maplibregl.NavigationControl());
+new ResizeObserver(function() { map.resize(); }).observe(document.getElementById('map'));
 // Location is asked HERE, in map context, never on the homepage.
 map.addControl(new maplibregl.GeolocateControl({
   positionOptions: { enableHighAccuracy: true },
@@ -2891,17 +2895,7 @@ function initTreeLayers() {
       var cities = {};
       leaves.forEach(function(l) { cities[l.properties.cs] = true; });
       var keys = Object.keys(cities);
-      if (keys.length === 1) {
-        panelMode = 'trees';
-        for (var i = 0; i < CITIES.length; i++) {
-          if (CITIES[i].url === keys[0]) {
-            map.flyTo({center: [CITIES[i].lng, CITIES[i].lat], zoom: 13, duration: 1200});
-            return;
-          }
-        }
-        window.location.href = keys[0];
-        return;
-      }
+      if (keys.length === 1) { window.location.href = keys[0]; return; }
       src.getClusterExpansionZoom(f.properties.cluster_id).then(function(zoom) {
         map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5, duration: 700});
       });
@@ -2924,94 +2918,33 @@ function initTreeLayers() {
 }
 map.on('style.load', initTreeLayers);
 if (map.isStyleLoaded()) { initTreeLayers(); }
-// ---- The viewport panel (Hidde, 2026-07-31, "lesgo"): the panel follows
-// the map. Zoomed out: the cities in view as cards, favourites first.
-// Zoomed in on one city: that city's trees as rows. Hysteresis around the
-// threshold so the panel does not flap at the boundary.
+// ---- The city chooser panel (Hidde, 2026-07-31, v2 same day: "the city
+// view was perfect, don't change it"). /explore is where you pick a city:
+// the panel shows up to ten city cards for what the map shows, most likely
+// first (favourites, then size). Clicking one opens the city PAGE, the
+// experience he called perfect. No in-map tree mode.
 var panel = document.getElementById('ex-panel');
-var panelMode = 'cities';
 function fmtCard(c) {
   var ph = c.ph ? '<span class="exc-ph"><img src="' + c.ph + '" alt="" loading="lazy"></span>' : '<span class="exc-ph exc-noph"></span>';
-  return '<a class="exc-card" href="#' + c.url + '" data-city="' + c.url + '">' + ph +
+  return '<a class="exc-card" href="' + c.url + '">' + ph +
          '<span class="exc-body"><b>' + c.city + '</b>' +
          '<span>' + c.n + ' trees &middot; ' + c.country + '</span></span></a>';
 }
-function citiesInView() {
-  var b = map.getBounds();
-  return CITIES.filter(function(c) { return b.contains([c.lng, c.lat]); });
-}
-function dominantCity() {
-  var feats = map.queryRenderedFeatures({layers: ['tree', 'clusters']});
-  var b = map.getBounds(), counts = {};
-  DATA.features.forEach(function(f) {
-    var g = f.geometry.coordinates;
-    if (b.contains(g)) { counts[f.properties.cs] = (counts[f.properties.cs] || 0) + 1; }
-  });
-  var best = null, n = 0;
-  Object.keys(counts).forEach(function(cs) { if (counts[cs] > n) { n = counts[cs]; best = cs; } });
-  return best;
-}
 function renderPanel() {
   if (!panel) return;
-  var z = map.getZoom();
-  if (panelMode === 'cities' && z >= 11.5) { panelMode = 'trees'; }
-  if (panelMode === 'trees' && z <= 10.5) { panelMode = 'cities'; }
-  if (panelMode === 'trees') {
-    var cs = dominantCity();
-    var meta = null;
-    for (var i = 0; i < CITIES.length; i++) { if (CITIES[i].url === cs) { meta = CITIES[i]; } }
-    if (cs && meta) {
-      var b = map.getBounds();
-      var rows = DATA.features.filter(function(f) {
-        return f.properties.cs === cs;
-      }).map(function(f) {
-        var p = f.properties;
-        var now = p.now == 1 ? ' <span class="exc-now">at its best</span>' : '';
-        return '<a class="exc-row" href="' + p.url + '"><b>' + p.name + '</b>' + now +
-               '<span>' + (p.age || '') + '</span></a>';
-      });
-      if (history.replaceState) { history.replaceState(null, '', '#' + cs); }
-      panel.innerHTML = '<div class="exc-cityhead"><h2>' + meta.city + '</h2>' +
-        '<a href="' + cs + '">Open the city page &rarr;</a></div>' + rows.join('');
-      return;
-    }
-    panelMode = 'cities';
-  }
-  var cities = citiesInView();
-  if (history.replaceState) { history.replaceState(null, '', location.pathname); }
+  var b = map.getBounds();
+  var cities = CITIES.filter(function(c) { return b.contains([c.lng, c.lat]); });
   if (!cities.length) {
-    panel.innerHTML = '<p class="exc-empty">No mapped cities in view yet. Zoom out, or <a href="contribute">suggest one</a>.</p>';
+    panel.innerHTML = '<p class="exc-empty">No mapped cities in view. Zoom out, or <a href="contribute">be the first to map one here</a>.</p>';
     return;
   }
-  panel.innerHTML = '<div class="exc-cityhead"><h2>Cities in view</h2></div>' + cities.slice(0, 20).map(fmtCard).join('');
+  var head = cities.length === 1 ? cities[0].city : 'Cities in view';
+  panel.innerHTML = '<div class="exc-cityhead"><h2>' + head + '</h2></div>' +
+    cities.slice(0, 10).map(fmtCard).join('');
 }
-panel.addEventListener('click', function(e) {
-  var card = e.target.closest ? e.target.closest('.exc-card') : null;
-  if (card) {
-    e.preventDefault();
-    var cs = card.getAttribute('data-city');
-    for (var i = 0; i < CITIES.length; i++) {
-      if (CITIES[i].url === cs) {
-        panelMode = 'trees';
-        map.flyTo({center: [CITIES[i].lng, CITIES[i].lat], zoom: 13, duration: 1400});
-      }
-    }
-  }
-});
 map.on('moveend', renderPanel);
 map.on('load', renderPanel);
 renderPanel();
-// Deep link: /explore#lisbon opens on that city in tree mode.
-(function() {
-  var h = (location.hash || '').replace('#', '');
-  for (var i = 0; i < CITIES.length; i++) {
-    if (CITIES[i].url === h) {
-      panelMode = 'trees';
-      map.jumpTo({center: [CITIES[i].lng, CITIES[i].lat], zoom: 13});
-      return;
-    }
-  }
-})();
 
 // The pulse: radius and opacity breathe on a 2s cycle. Paint-property
 // animation only, no per-frame data churn; stops costing anything when the
@@ -3062,17 +2995,32 @@ def build_contribute_page(published, pages):
     <p>Everything sent in gets checked against independent sources, and the location gets verified, because a wrong pin is worse than a missing tree. Confirmed trees get their own page with your credit on the city. What cannot be confirmed waits instead of going live half-true. To be straight with you about what you get: your name on the city you mapped, not a login or a profile. Those may come later.</p>
   </div>
 
-  <div class="path">
-    <h2>Map your whole city</h2>
-    <p class="prose-block">The big one. Tell us which city and which trees belong on its list. You do not need ten, and you do not need to write anything polished. Names and rough locations are enough; the research, the checking and the writing happen here.</p>
-    <a class="go-btn" href="{submit_link('city')}">Map my city</a>
-  </div>
-
-  <div class="path">
-    <h2>Or just one tree</h2>
-    <p class="prose-block">Saw something remarkable and know roughly where it stands? That is enough. One tree in a city we have never touched is often the thing that starts it.</p>
-    <a class="go-btn" href="{submit_link('tree')}">Send one tree</a>
-  </div>
+  <form id="suggest" class="suggest-form" autocomplete="off">
+    <label>What are you sending?
+      <select id="sg-kind">
+        <option value="tree">One remarkable tree</option>
+        <option value="city">My city's trees</option>
+        <option value="correction">A correction to something on the site</option>
+      </select>
+    </label>
+    <label>Which city?
+      <input type="text" id="sg-city" required placeholder="Utrecht">
+    </label>
+    <label>The tree, or trees
+      <input type="text" id="sg-tree" placeholder="The plane on the church square">
+    </label>
+    <label>Where does it stand? <span class="sg-hint">A street, a park, or a Google Maps link. The single most useful thing you can give us.</span>
+      <input type="text" id="sg-where" placeholder="Domplein, next to the cathedral entrance">
+    </label>
+    <label>Why is it remarkable?
+      <textarea id="sg-why" rows="3" placeholder="Old, huge, a story attached, or simply the tree everyone knows"></textarea>
+    </label>
+    <label>Your name, for the credit <span class="sg-hint">Optional. Shown on the city page when your tree goes live.</span>
+      <input type="text" id="sg-name" placeholder="First name is fine">
+    </label>
+    <button type="submit" class="go-btn">Send it in</button>
+    <p class="sg-note" id="sg-note"></p>
+  </form>
 
   <h2>What helps most</h2>
   <ul class="link-list">
@@ -3091,7 +3039,45 @@ def build_contribute_page(published, pages):
 """
     graph = site_graph() + [breadcrumb_schema(crumb_items, canonical)]
     head_extra = ld_script(graph)
-    page = render_page(title, description, canonical, body, head_extra, "", rootpath)
+    SUGGEST_JS = """
+<script>
+(function() {
+  var f = document.getElementById('suggest'), note = document.getElementById('sg-note');
+  if (!f) return;
+  var params = new URLSearchParams(location.search);
+  var kind = params.get('kind');
+  var map = {tree: 'tree', city: 'city', home: 'city', correction: 'correction'};
+  if (kind && map[kind]) { document.getElementById('sg-kind').value = map[kind]; }
+  f.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var city = document.getElementById('sg-city').value.trim();
+    if (!city) return;
+    note.textContent = 'Sending...';
+    fetch('SB_URL/rest/v1/submissions', {
+      method: 'POST',
+      headers: {'apikey': 'SB_KEY', 'Content-Type': 'application/json', 'Prefer': 'return=minimal'},
+      body: JSON.stringify({
+        kind: document.getElementById('sg-kind').value,
+        city: city,
+        tree: document.getElementById('sg-tree').value.trim(),
+        location_hint: document.getElementById('sg-where').value.trim(),
+        why: document.getElementById('sg-why').value.trim(),
+        name: document.getElementById('sg-name').value.trim(),
+        page: document.referrer || null
+      })
+    }).then(function(r) {
+      if (r.ok) {
+        f.hidden = true;
+        note.textContent = 'Thank you. Everything sent in is verified against independent sources; confirmed trees go live with your credit.';
+      } else {
+        note.textContent = 'That did not go through. Try again in a moment.';
+      }
+    }).catch(function() { note.textContent = 'No connection. Try again in a moment.'; });
+  });
+})();
+</script>
+""".replace('SB_URL', SUPABASE_URL).replace('SB_KEY', SUPABASE_KEY)
+    page = render_page(title, description, canonical, body, head_extra, SUGGEST_JS, rootpath)
     pages.append(("contribute.html", page, canonical))
 
 
