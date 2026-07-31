@@ -1,3 +1,15 @@
+## 2026-07-31 — Den Bosch researched, no page yet: two solid candidates, the rest single-sourced or out of bounds, session's WebSearch budget ran out mid-hunt
+
+Same session, straight after Breda. 's-Hertogenbosch (Den Bosch) was next in the Netherlands wave, untouched by any prior session.
+
+**Two candidates cleared verification**: the Weichselboom of Parklaan (a St Lucie Cherry, Prunus mahaleb, growing against the old city wall, nominated for the Dutch national "Bomen Top 50" in 2022, roughly 100-125 years old, corroborated by monumentaltrees.com, a local heritage-news site and a municipal video segment) and the Sycamore of Bastion Oranje (planted 1860-70 on a restored 17th-century fortification bastion, now a public park). The Bastion Oranje tree currently has only monumentaltrees.com for its specific age and girth, with a species disagreement between the Bomenstichting register (sycamore maple) and the municipal tree register (Norway maple) still unresolved; would need a second independent source or the discrepancy resolved before publishing.
+
+**Everything else fell short**: Bastion Vught lists three trees (plane, linden, maple) with no age or girth retrievable from search snippets, and monumentaltrees.com blocks direct fetching (confirmed again this session via WebFetch, 403 on every attempt). Zuiderpark's poplar is similarly single-sourced and its sequoia mention could not be confirmed as belonging to Den Bosch's Zuiderpark rather than The Hague's park of the same name. Landgoed Coudewater has 219 monumental trees but is mid-redevelopment into 400 new homes, so public access to any specific tree needs confirming before use, a hard-rule-10 concern rather than a documentation gap. The Vughterweg plane avenue (56 trees) fails the collectible-point test outright. The Bossche Broek willow is too young (~95 years) to carry the entry on age alone.
+
+**One boundary catch worth recording**: the Netherlands' own "oldest linden tree" (~400 years, Sambeek) and a Vughtse marsh oak defended by a Den Bosch-based advocacy group both surfaced in Den Bosch searches but sit in different municipalities (Land van Cuijk and Vught respectively) and were excluded, the same discipline applied to Cork and Breda earlier this session.
+
+**Den Bosch stays without a page.** Two verified trees is short of the four-tree floor, and this session's WebSearch allowance ran out before a second data point could be found for Bastion Oranje or Bastion Vught's individual trees could be measured. A future session with search budget in hand should prioritise: a live (non-blocked) read of monumentaltrees.com's Bastion Vught and Zuiderpark pages, the municipal ArcGIS monumental-trees dataset (stad-in-kaart-gmdb.hub.arcgis.com, not yet loaded), and confirming Coudewater's post-redevelopment public access. Moved to product work for the remainder of this session rather than continue city research with no search budget left.
+
 ## 2026-07-31 — Breda opens: 4 trees, a library built around a courtyard of 1780s mulberries
 
 Same session, straight after Nijmegen. Breda was next in the Netherlands wave, untouched by any prior session.
