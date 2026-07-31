@@ -407,6 +407,8 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .shelf-head h2 { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.015em; }
 .shelf-head a { font-size: 13.5px; font-weight: 700; color: var(--moss); text-decoration: underline; text-underline-offset: 3px; }
 .shelf-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.shelf-row-wide { display: flex; overflow-x: auto; gap: 16px; scroll-snap-type: x mandatory; padding-bottom: 0.5rem; }
+.shelf-row-wide .shelf-card { flex: 0 0 calc(20% - 13px); min-width: 180px; scroll-snap-align: start; }
 .shelf-card { display: block; text-decoration: none; color: var(--ink); }
 .shelf-ph { position: relative; display: block; aspect-ratio: 4 / 3; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); margin-bottom: 0.6rem; background: var(--surface); }
 .shelf-ph img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.25s; }
@@ -2981,24 +2983,83 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
         for t in entry["data"]["trees"]:
             tree_by_id[t["id"]] = (entry, t)
 
-    season_cards = []
+    # Tree of the month (Hidde, 2026-07-31: "logischere taal; tree of the
+    # month: the blooming wingnut of the yellowing ginkgo"). When one species
+    # dominates the month's peaks, the shelf becomes that species' moment and
+    # shows its best specimens; otherwise it falls back to the generic title.
+    candidates = []
     for entry in (renderable or []):
         for t in entry["data"]["trees"]:
             bt = t.get("best_time") or {}
             ph = usable_photo(t)
             if _month in (bt.get("months") or []) and ph:
-                season_cards.append(
-                    f'<a class="shelf-card" href="{entry["slug"]}/{slugify(t["name"])}">'
-                    f'<span class="shelf-ph"><img src="{esc(ph["url"])}" alt="" loading="lazy">'
-                    f'<span class="shelf-now">at its best now</span></span>'
-                    f'<b>{esc(t["name"])}</b>'
-                    f'<span class="shelf-meta">{esc(entry["data"]["city"])} &middot; {esc(bt.get("label", ""))}</span></a>')
+                candidates.append((entry, t, bt, ph))
+
+    KIND_VERB = {"flowers": "blooming", "catkins": "blooming", "fruit": "fruiting",
+                 "autumn colour": "turning", "fresh leaves": "unfurling"}
+
+    def _season_card(entry, t, bt, ph):
+        return (f'<a class="shelf-card" href="{entry["slug"]}/{slugify(t["name"])}">'
+                f'<span class="shelf-ph"><img src="{esc(ph["url"])}" alt="" loading="lazy">'
+                f'<span class="shelf-now">at its best now</span></span>'
+                f'<b>{esc(t["name"])}</b>'
+                f'<span class="shelf-meta">{esc(entry["data"]["city"])} &middot; {esc(bt.get("label", ""))}</span></a>')
+
     season_shelf = ""
-    if len(season_cards) >= 2:
+    if len(candidates) >= 2:
+        by_species = {}
+        for c in candidates:
+            by_species.setdefault(species_common(c[1]), []).append(c)
+        dominant, group = max(by_species.items(), key=lambda kv: len(kv[1]))
+        # NOT `title`: that variable is the homepage's <title> further down,
+        # and shadowing it once shipped the shelf caption as the tab title.
+        shelf_title = "At their best right now"
+        picked = candidates
+        if len(group) >= 2:
+            # "the yellowing ginkgo": verb from the kind, short name from the
+            # common name's last word (Caucasian Wingnut -> wingnut).
+            kinds = [season_kind(c[2]) for c in group]
+            kind = next((k for k in kinds if k), "")
+            verb = KIND_VERB.get(kind)
+            short = dominant.split()[-1].lower()
+            if verb:
+                shelf_title = f"Tree of the month: the {verb} {esc(short)}"
+                picked = group
         season_shelf = (
-            '<section class="shelf"><div class="shelf-head"><h2>At their best right now</h2>'
+            f'<section class="shelf"><div class="shelf-head"><h2>{shelf_title}</h2>'
             '<a href="in-season">See everything in season</a></div>'
-            '<div class="shelf-row">' + "".join(season_cards[:4]) + '</div></section>')
+            '<div class="shelf-row">' + "".join(_season_card(*c) for c in picked[:4]) + '</div></section>')
+
+    # Our favourite tree cities (Hidde, 2026-07-31): ten cards in the prime
+    # shelf spot. The list is HIS to curate; this order mixes the pages search
+    # already rewards with the pages he is proudest of (Cadiz is the photo
+    # calibration city). Reorder or swap on his word, no code beyond the list.
+    FAVOURITE_CITIES = ["lisbon", "cadiz", "porto", "amsterdam", "kyoto",
+                        "rome", "palermo", "paris", "london", "barcelona"]
+    by_slug = {e["slug"]: e for e in (renderable or [])}
+    fav_cards = []
+    for cs in FAVOURITE_CITIES:
+        e = by_slug.get(cs)
+        if not e:
+            continue
+        photo = None
+        for t in e["data"]["trees"]:
+            photo = usable_photo(t)
+            if photo:
+                break
+        if not photo:
+            continue
+        fav_cards.append(
+            f'<a class="shelf-card" href="{cs}">'
+            f'<span class="shelf-ph"><img src="{esc(photo["url"])}" alt="" loading="lazy"></span>'
+            f'<b>{esc(e["data"]["city"])}</b>'
+            f'<span class="shelf-meta">{len(e["data"]["trees"])} trees &middot; {esc(e["data"]["country"])}</span></a>')
+    fav_shelf = ""
+    if len(fav_cards) >= 4:
+        fav_shelf = (
+            '<section class="shelf"><div class="shelf-head"><h2>Our favourite tree cities</h2>'
+            '<a href="cities">All cities</a></div>'
+            '<div class="shelf-row shelf-row-wide">' + "".join(fav_cards[:10]) + '</div></section>')
 
     coll_cards = []
     shelf_photos_used = set()
@@ -3022,7 +3083,7 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
     coll_shelf = ""
     if coll_cards:
         coll_shelf = (
-            '<section class="shelf"><div class="shelf-head"><h2>Collections worth a trip</h2>'
+            '<section class="shelf"><div class="shelf-head"><h2>Collections</h2>'
             '<a href="collections">All collections</a></div>'
             '<div class="shelf-row">' + "".join(coll_cards[:4]) + '</div></section>')
 
@@ -3064,7 +3125,7 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
 <section class="hero-sub">
   <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of. Every tree free to explore.</p>
 </section>
-{coll_shelf}
+{fav_shelf}
 <section class="home-acts">
   <div class="home-act">
     <div class="home-act-copy">
@@ -3147,6 +3208,7 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
   </div>
 </section>
 {season_shelf}
+{coll_shelf}
 <main class="page">
   <h2 class="section-heading" id="cities">Ancient trees anywhere</h2>
   {directory_html}
