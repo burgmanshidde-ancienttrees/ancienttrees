@@ -2,6 +2,14 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Den Bosch researched but held back, then this session's WebSearch budget ran out; closing here rather than force low-confidence work
+
+Same session, straight after Breda. Den Bosch (`'s-Hertogenbosch`) produced only 2 verified candidates against the 4-tree floor (full detail in CURATION.md); moved to pick more up, but this session's search allowance (200 calls) was already spent across Nijmegen, Breda and the Den Bosch pass.
+
+With no search budget left, tried two other lanes rather than stop immediately: PRODUCT_TODO.md's queue (nothing actionable, everything open is either done or explicitly session/Hidde-reserved), and photo hunting on the two just-shipped cities via Wikimedia Commons' own site search and iNaturalist through direct URLs (not the exhausted tool). Neither Nijmegen's nor Breda's specific named trees turned up in Commons' search results, and guessing a generic park photo onto a specific named tree would be exactly the kind of false attribution the honesty rules exist to prevent, so none were added. iNaturalist's search page returned a bot block.
+
+Closing the session here rather than force work that would either be low-confidence or outside this lane's rules. Two cities shipped this session (Nijmegen, Breda, 9 trees total), one honestly held back (Den Bosch), one near-miss caught and reverted before commit (Cork, see the entry below). Nothing needs Hidde; a future session with search budget available should pick up Arnhem next in the Netherlands wave, then return to Den Bosch and Cork with the specific follow-up leads already recorded in CURATION.md.
+
 ## 2026-07-31 — Breda opens: 4 trees, a public library built around its oldest trees rather than over them
 
 Same session, straight after Nijmegen. Breda was next in the Netherlands wave and untouched by any prior session, no boundary near-misses this time.
