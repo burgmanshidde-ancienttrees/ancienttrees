@@ -2,6 +2,20 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Hong Kong opens: 6 trees, and a bug caught before it could ship an unverified age as the city's official "oldest tree"
+
+Same session as the submission-processing and September best_time backfill entries below. After the depth backfill and photo spot-check work, moved to new coverage: an earlier 2026-07-31 session's Dubai research had left Hong Kong as the next untried city in the data-led queue, so a research subagent was dispatched for it while the backfill work continued in parallel.
+
+Hong Kong's own Old and Valuable Trees register turned out to be genuinely open data (data.gov.hk terms, free reuse with attribution, confirmed by fetching the CSV directly) with individually-surveyed HK1980 Grid coordinates for every candidate. Implemented and sanity-checked a Transverse Mercator inverse transform to convert grid references to lat/lon (verified the forward transform reproduces the register's own false origin exactly, then cross-checked several converted points against independently-known Hong Kong locations before trusting any of them), so every tree ships `location_precision: confirmed` from the register itself rather than a geocoded guess.
+
+Shipped 6: the King Banyan of Kowloon Park (government-recognised as Hong Kong's largest urban tree in 1997, about 400 years old, a third of its trunk lost to a 2007 typhoon and now fighting brown root rot under active treatment); the Stone Wall Trees of Forbes Street (27 banyans and figs grown into one Kennedy Town retaining wall, famous enough that the MTR rerouted a station under a former swimming pool in 2005 rather than disturb them); the Kam Tin Tree House (a banyan that grew straight through a stone house abandoned during the Qing dynasty's 1661 coastal evacuation order); and three New Territories feng shui camphors, She Shan Tsuen's (300-500 years, single-sourced age, flagged), Sha Lo Wan's "King Camphor" (locally and officially claimed at over 1,000 years) and Lai Chi Wo's Five-Finger Camphor (undated, its WWII branch-loss standoff with occupying soldiers the qualifying hook).
+
+**A real bug caught before it shipped, worth recording.** The build's mechanical "oldest tree" picker selects by `age_max`, and Sha Lo Wan's unverified 1,000-year folklore claim would have silently become the city's official, schema-marked "oldest tree" answer, self-contradicting the hand-written King Banyan answer in question_context. The build's own cross-check, comparing proper-noun tokens between the mechanically-picked tree and the hand-written answer, passed anyway: "King" appears in both "King Banyan" and "King Camphor" by coincidence. Fixed by setting `oldest_tree_id` explicitly to the King Banyan and pulling Sha Lo Wan's `age_max` back to a defensible 300 rather than encoding an unchecked superlative into a field that feeds site-wide comparisons, per hard rule 8. Worth a look for whoever owns build_site.py: the token-overlap check is too permissive when two different trees share a common word like "King", "Old" or "Great" in their names.
+
+2 of 6 photos found on Wikimedia Commons and viewed directly before approval (Forbes Street's root-covered wall, the Kam Tin tree house); 4 stay honest gaps after real search attempts (Kowloon Park, She Shan, Sha Lo Wan, Lai Chi Wo).
+
+Site rebuilt (920 pages), all contracts validated, QA clean (848 pages). One commit, pushed. Nothing needs Hidde, though the build-script token-overlap note above might be worth a look next time someone is in build_site.py.
+
 ## 2026-07-31 (avond, sessie met Hidde) — De kaart wordt af, de formulieren worden echt, en het vliegwiel sluit
 
 The evening in one breath, all live and verified:
