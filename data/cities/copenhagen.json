@@ -1,0 +1,154 @@
+{
+  "city": "Copenhagen",
+  "country": "Denmark",
+  "status": "needs_curation",
+  "oldest_tree_id": "cop_001",
+  "intro": "Copenhagen's oldest surviving trees trace back to specific, named people rather than to a park or forest: a sailor who may have brought home a mulberry to feed Christian IV's silkworms, the botanist Frederik Liebmann who carried a cycad back from Mexico in 1842, and the sculptor Bertel Thorvaldsen, whose black locust supposedly grew from Italian seed. The fourth entry belongs to no one in particular: a lime avenue in the king's own garden that has simply outlasted every replanting around it since the 1660s.",
+  "meta_description": "Copenhagen's most remarkable trees: Christian IV's silk mulberry, Thorvaldsen's black locust, a 1842 Mexican cycad, and a student tradition's linden.",
+  "question_answer": "Copenhagen's oldest tree is generally considered the mulberry at Proviantgarden on Slotsholmen, dating to King Christian IV's early 17th-century attempt to build a Danish silk industry by planting mulberries to feed silkworms. It is likely 350 to 420 years old.",
+  "question_meta": "The Proviantgarden mulberry, planted for Christian IV's 17th-century silk venture, is Copenhagen's oldest tree at roughly 350 to 420 years old.",
+  "question_context": "King Christian IV pursued a Danish silk industry the way several of his European contemporaries were doing in the early 1600s, by planting mulberry trees to feed silkworms rather than importing raw silk. Almost nothing survives of that venture beyond a street name, Silkegade, and this one tree, standing at Proviantgarden on Slotsholmen, part of the naval arsenal Christian IV built from 1603 to supply his warships. Tradition credits its planting to a sailor who brought the tree home from Asia rather than a court gardener, and it has stood long enough to have watched tall ships come and go from the harbor basin the arsenal once fronted, well before Slotsholmen became the seat of Denmark's parliament and courts. The island's naval buildings have since changed jobs entirely, now government offices rather than stores for rope and ships' biscuit, but the mulberry keeps leafing out every spring regardless. No precise planting date survives, only its association with Christian IV's long reign, which is why this project gives it a wide, honest age range rather than a single invented number.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Copenhagen?",
+      "a": "The mulberry at Proviantgarden on Slotsholmen, planted during Christian IV's early 17th-century silk industry attempt and likely 350 to 420 years old."
+    },
+    {
+      "q": "Is the Palm House cycad really that old?",
+      "a": "Yes. Botanist Frederik Liebmann brought it from Mexico in 1842, and it remains the Botanical Garden's oldest living specimen, roughly 184 years old."
+    },
+    {
+      "q": "Did Thorvaldsen really bring his own tree home from Italy?",
+      "a": "Tradition says so: the black locust beside Thorvaldsens Museum is said to have grown from seed the sculptor carried back when he returned to Copenhagen in 1838, though this is tradition rather than documented fact."
+    },
+    {
+      "q": "Where are Copenhagen's oldest lindens?",
+      "a": "Along Husalle in Kongens Have, the king's garden beside Rosenborg Castle. Garden historians describe them as among the oldest living trees in Denmark, unlike the castle's two more formal linden avenues, which have been replanted repeatedly since the 1660s and 1700s."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cop_001",
+      "name": "The Mulberry of Proviantgarden",
+      "species": "White Mulberry (Morus alba)",
+      "age_estimate": "350-420 years",
+      "age_min": 350,
+      "age_max": 420,
+      "location": {
+        "address": "Proviantgarden, Slotsholmen, Copenhagen",
+        "latitude": 55.674873,
+        "longitude": 12.582236,
+        "neighbourhood": "Slotsholmen"
+      },
+      "story": "King Christian IV tried to build a Danish silk industry the way his contemporaries elsewhere in Europe were doing it, by planting mulberry trees to feed silkworms, and this is the one tree from that entire royal venture that anyone can still point to. It stands today at Proviantgarden, part of the naval arsenal Christian IV built on Slotsholmen from 1603 to supply his warships, on ground that once fronted a working harbor basin where vessels docked to be provisioned and armed. Tradition credits a sailor who brought it home from Asia rather than a court gardener, and it has stood long enough to have watched those same tall ships come and go for provisions centuries before Slotsholmen became the seat of Denmark's parliament and courts. The Danish silk venture itself mostly failed; Copenhagen's climate never suited silkworms the way Christian IV hoped, and the street name Silkegade nearby is now the closest most Copenhageners get to the story. This tree is the exception, a specimen one detailed historical account describes as having remarkable vitality, still leafing out every spring in a courtyard surrounded by 17th-century naval buildings that have long since changed jobs, now government offices rather than stores for rope and ships' biscuit.",
+      "verified_sources": [
+        "https://www.trae.dk/artikel/kortlaegning-af-vaerdifulde-koebenhavnske-traeer/",
+        "https://www.hovedstadshistorie.dk/slotsholmen/proviantgaarden/"
+      ],
+      "access": "Free, open access, public courtyard on Slotsholmen",
+      "transport": "Christianshavn metro station or Copenhagen Central Station, short walk across Slotsholmen",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The Christian IV silk-industry origin and the tree's location and vitality are described consistently across Trae.dk's detailed feature on Copenhagen's valuable trees and a local heritage site's history of Proviantgarden, though both ultimately appear to draw on the same underlying historical account rather than fully independent research. No source names the exact species; White Mulberry (Morus alba) is given here because it is the species historically used for silkworm cultivation, which the sources' own silk-industry framing implies, but this is inference rather than a directly sourced identification. No precise planting date exists, only the association with Christian IV's reign (1588-1648), hence the wide age range.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cop_002",
+      "name": "The Ancient Cycad of the Palm House",
+      "species": "Mexican Cycad (Dioon edule)",
+      "age_estimate": "around 184 years",
+      "age_min": 180,
+      "age_max": 186,
+      "location": {
+        "address": "Palmehuset, Botanical Garden, Gothersgade 128, Copenhagen",
+        "latitude": 55.684895,
+        "longitude": 12.573239,
+        "neighbourhood": "Indre By"
+      },
+      "story": "In 1842, the Danish botanist Frederik Liebmann sailed to Mexico and came home with, among other specimens, a small cycad that looked more like a stunted pineapple than anything resembling a tree. It has spent nearly two centuries since then growing at its own unhurried pace in Copenhagen's Botanical Garden, first at the garden's earlier city-centre site and then, from 1874, in the Palm House built specifically to keep tropical and subtropical plants alive through Danish winters. Cycads are not actually related to palms or ferns despite resembling both; they are among the oldest living groups of seed plants on Earth, largely unchanged since long before flowering plants existed, which makes a 184-year-old specimen barely middle-aged by the standards of its own family. Liebmann died in 1856 at just 43, only 14 years after bringing the plant home, but his cycad has outlived him by more than a century and a half and remains, by the garden's own account, its oldest living specimen and one of its genuine star attractions, a slow-growing plant that has simply outlasted everyone who ever went looking for one.",
+      "verified_sources": [
+        "https://da.wikipedia.org/wiki/Botanisk_Have_(K%C3%B8benhavn)"
+      ],
+      "access": "Paid entry to Palmehuset (the outdoor Botanical Garden itself is free)",
+      "transport": "Norreport railway and metro station, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The Liebmann collection date (1842), his death (1856), and the plant's status as the garden's oldest living specimen are given by the Danish Wikipedia entry on the Botanical Garden; only one detailed source found for this specific specimen, flagged accordingly, though the garden's own move to the current Palm House in 1874 is independently well documented. Coordinates are the garden's street address, not a surveyed position within the Palm House.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cop_003",
+      "name": "Thorvaldsen's Robinia",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "around 185 years",
+      "age_min": 180,
+      "age_max": 190,
+      "location": {
+        "address": "Beside Thorvaldsens Museum, Slotsholmen, Copenhagen",
+        "latitude": 55.676433,
+        "longitude": 12.57745,
+        "neighbourhood": "Slotsholmen"
+      },
+      "story": "Bertel Thorvaldsen spent more than 40 years in Rome becoming Europe's most celebrated Neoclassical sculptor before returning home to Copenhagen in 1838 to a hero's welcome, and this multi-stemmed black locust growing beside the museum built to house his life's work is said to have come home with him, grown from seed he carried back from Italy. Denmark's dendrological society surveyed the tree in 1995 and recorded a trunk over three metres around, splitting into several stems rather than one, and estimated its age at up to 155 years at that time, consistent with a planting soon after Thorvaldsen's actual return. That would put the tree, and not just the museum, among the direct physical legacies of a sculptor whose bronze and marble work now sits in collections from the Vatican to Warsaw. Black locust is not a species anyone would plant deliberately for its connection to fine art. It is a hardy, fast-growing tree valued more for binding loose soil and producing useful timber than for looking distinguished, which makes its adoption into Thorvaldsen's own story feel almost like an accident that stuck, a workmanlike species growing beside one of Europe's grandest personal museums, surveyed precisely enough by Danish tree recorders in 2008 to give this project one of its few confirmed coordinates.",
+      "verified_sources": [
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=101"
+      ],
+      "access": "Free, open access, public ground beside Thorvaldsens Museum",
+      "transport": "Christianshavn metro station or Copenhagen Central Station, short walk across Slotsholmen",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The only detailed source found is the Danish Dendrological Society's own tree register entry, which itself frames Thorvaldsen's personal planting as tradition ('possibly brought Robinia seeds') rather than documented fact; flagged accordingly. Measurements (3.2m circumference, 1995) and coordinates (surveyed 2008) come directly from that official register, making the location one of this city's most precisely confirmed.",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [5],
+        "label": "May, when it flowers in heavy white clusters",
+        "kind": "flowers"
+      }
+    },
+    {
+      "id": "cop_004",
+      "name": "The Husalle Lindens",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "around 300-360 years",
+      "age_min": 300,
+      "age_max": 360,
+      "location": {
+        "address": "Husalle, Kongens Have, Copenhagen",
+        "latitude": 55.685078,
+        "longitude": 12.579981,
+        "neighbourhood": "Indre By"
+      },
+      "story": "Kongens Have is Copenhagen's oldest public park, laid out from 1606 for King Christian IV beside his new Rosenborg Castle, and its formal linden avenues were planted soon after: Kavalergangen and Damegangen, the two clipped alleys nearest the castle, date to around 1664 and 1700. Almost none of those original trees survive; both avenues have been replanted more than once in the four centuries since. Husalle, a third avenue running parallel to the garden's main axis a little further north, has fared differently: its lindens are described by garden historians as among the oldest living trees in Denmark, having escaped the repeated replacements that emptied the more formal avenues nearer the castle of their original planting. The garden itself has survived far more than ordinary wear. It has hosted royal pleasure grounds, public promenades, and, in recent years, a summer sound installation that lets speakers hidden in ten of its trees tell stories to anyone who walks close enough to trigger them, a very modern use for trees old enough to have shaded Danish kings centuries before recorded sound existed. Husalle's lindens do their storytelling the old way, simply by having outlasted almost everything planted around them.",
+      "verified_sources": [
+        "https://trap.lex.dk/Kongens_Have_-_Slots-_og_Kulturstyrelsen",
+        "https://da.wikipedia.org/wiki/Kongens_Have"
+      ],
+      "access": "Free, open access, Kongens Have (public park, open daily)",
+      "transport": "Norreport railway and metro station, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Kongens Have's founding (1606) and the c.1664/c.1700 planting of Kavalergangen and Damegangen are documented by the official Danish heritage agency's Trap Danmark entry and corroborated by Danish Wikipedia; both also state that virtually no original trees remain in those two avenues. The claim that Husalle's lindens are 'among the oldest in the country' comes from the same sources but without an exact planting date for that specific avenue, so the age range given here (300-360 years) reflects the garden's documented 1660s-1700s planting era generally rather than a dated record for Husalle itself. This entry represents the avenue as a whole rather than a single named tree.",
+      "location_precision": "approximate"
+    }
+  ]
+}
