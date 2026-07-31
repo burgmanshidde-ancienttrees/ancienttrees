@@ -115,3 +115,7 @@ Twenty queries, ten per wing, full notes in CURATION.md 2026-07-28. Japan's city
 ## Positioning instinct, Hidde 2026-07-30 (recorded, not yet adopted copy)
 
 His words, going to bed: the app that shows all monumental trees is "het eerste gekoppelde boomregister van de wereld" — the first connected tree register of the world — with our curated epic-tree selection, collecting and walking routes on top. Strong PR/SEO frame IF the register layer earns it; until several countries' registers are actually live it would be a promise the product cannot keep, so no public copy uses it yet. Revisit when the Japan pilot layer ships.
+
+## The SEO pyramid gains its middle tier, 2026-07-31
+
+Hidde's instruction ("neem dit mee in de totale seo strategie"): country pages (Contract G, blueprint v1.5) slot between city pages and collections. The full ladder now: tree pages catch long-tail names, question pages catch "oldest tree in X", city pages catch "[city] trees" (where all current clicks live), country pages catch "ancient trees in [country]" head terms, collections catch thematic queries. Country pages are gated (3+ cities, hand-written intro) so the tier adds authority without thin pages; each one also upgrades its cities' breadcrumbs to a linked parent, which is internal-linking value that compounds as coverage grows. Rollout: runs build qualifying countries (about nine today) inside the coverage lane, NL first since it has the densest city set.
