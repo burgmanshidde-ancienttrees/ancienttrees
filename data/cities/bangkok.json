@@ -48,13 +48,13 @@
       "access": "Free, public canal-side street, viewable at any time",
       "transport": "10 minute walk from MRT Sanam Chai (Blue Line), via Atsadang Road",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/%282023%29_%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%94%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9A%E0%B8%9E%E0%B8%B4%E0%B8%98_%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%84%E0%B8%A3_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_%282%29.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "กสิณธร ราชโอรส, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Photo filename and category confirm the correct canal segment (Khlong Lot at Wat Ratchabophit) but this session could not visually confirm the specific ironwood trees are in frame rather than just the canal and buildings; a future session that can view images directly should check before treating this as approved.",
+      "notes": "Photo candidate rejected 2026-07-31 after direct viewing (a session with working image tooling): the Wikimedia file (filename/category matched the correct canal segment, Khlong Lot at Wat Ratchabophit) turns out to be a canal streetscape shot, buildings and water dominate the frame and the trees are a distant, barely-identifiable smudge in the background. Fails the subject test (Cadiz standard: the tree must be unmistakably the subject, not something to search for in a wide shot). Reverted to missing rather than approved; a future session should look for a photo actually framed on one of the five ironwoods themselves.",
       "location_precision": "approximate"
     },
     {
