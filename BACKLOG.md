@@ -30,6 +30,10 @@ Cost note for whoever picks this up: the pulse alone is roughly an hour (a CSS a
 
 **Trigger:** the icon/pin design pass, or Hidde saying go. Not before the Japan-wave deadline work (2026-08-22) unless he explicitly bumps it.
 
+## Country pages, Contract G: proposed 2026-07-31, WAITS ON HIDDE'S YES (hard rule 7)
+
+His impulse, from AllTrails' country pages ("dit heeft alltrails wss ook vanuit seo overweging gedaan"). The design agreed in chat: country overview pages ("Ancient trees in the Netherlands") ONLY for countries with three or more published cities (about nine today: NL, ES, IT, UK, PT, FR, JP, BE, DE), because 18 of 30 countries have a single city and a one-city country page is a duplicate with a flag on it (P3). Ingredients per page: hand-written country intro (species-page discipline, no templating), the country map with the city chooser, city photo cards, the oldest tree of the country, links to relevant collections and registers. Blueprint edits need his explicit yes; when he says "voeg het landencontract toe", write Contract G into SEO_GEO_BLUEPRINT.md with a version bump, then runs build the qualifying countries inside the coverage lane.
+
 ## Tree of the week, in months rich enough to carry it (Hidde, 2026-07-31)
 
 His extension of tree-of-the-month: when a month has depth (November already has 28 photo-ready ginkgo-and-more candidates), the shelf could rotate weekly ("mss worden het in sommige maanden wel van de week"). Mechanics when built: same dominant-species logic, but pick per ISO week from the month's pool, deterministic on the week number so the static rebuild stays honest. Only in months clearing a threshold (say 12+ photo-ready candidates); thin months keep the monthly frame. Parked per the fortnight; the best_time backfill the runs are doing IS the prerequisite, so this builds itself a runway.
