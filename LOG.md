@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Bucharest opens: 4 trees, a mulberry with a carved legend and a plane tree with a documented wound
+
+Same session, straight after Belgrade. Bucharest was next untried city in the queue.
+
+Shipped 4: the Dudul din Batiștei, a white mulberry in a church courtyard generally agreed to be Bucharest's oldest tree, carrying both a documented 200-plus-year age and a local legend, tied to Prince Constantin Brâncoveanu, that pushes it past 300; the Secular Plane of Cișmigiu, the oldest tree in Bucharest's first public park, which lost a quarter of its crown when a 2018 municipal lighting trench cut through two main roots, damage still visible today; the Turkish Hazel of Cișmigiu, one of only two officially protected specimens of its species in the entire country; and the Ginkgos of the Botanical Garden, four specimens protected as a group inside the University of Bucharest's collection.
+
+Two dead-tree risks caught and avoided: a widely cited "ancient oak on Ferdinand Street" turned out to have already collapsed earlier this year, and Herăstrău Park's old oaks were confirmed cut down in October 2025 in a still-disputed removal, so Herăstrău was dropped as a candidate area entirely rather than risk citing a tree that may no longer stand. Two named candidates (the oaks of Cotroceni, the willows of Herăstrău) turned up repeatedly in Romanian press coverage of a coming national tree-protection catalog but never with individual age or location data, so both stayed out. Full detail in CURATION.md.
+
+0 of 4 photos found on Wikimedia Commons.
+
+Site rebuilt (868 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Belgrade opens: 4 trees, a two-century oak that predates the square around it
 
 Same session, straight after Split. Belgrade was next untried city in the queue.

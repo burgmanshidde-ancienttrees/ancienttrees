@@ -1,3 +1,17 @@
+## 2026-07-31 — Bucharest opens: 4 trees, a mulberry with a carved legend and a plane tree with a documented wound
+
+Same session, straight after Belgrade. Bucharest was next untried city in the queue.
+
+**Shipped 4**: the Dudul din Batiștei (White Mulberry, Morus alba, 200-320 years, a dedicated Romanian Wikipedia entry), in the courtyard of Batiștei Church, generally agreed to be Bucharest's oldest living tree, carrying both a conservative documented age (200+) and a local legend tied to Prince Constantin Brâncoveanu (executed 1714) that would put it past 300, presented as a stated range rather than picking one; the Secular Plane of Cișmigiu (London Plane, Platanus x acerifolia, ~170-205 years), the oldest tree in Bucharest's first public park, which lost a quarter of its crown after a 2018 municipal lighting trench severed two main roots, still alive and visibly damaged; the Turkish Hazel of Cișmigiu (Corylus colurna), one of only two officially protected specimens of the species in Romania, also with a dedicated Wikipedia page but no age data; and the Ginkgos of the Botanical Garden (Ginkgo biloba), four specimens protected as a group inside the University of Bucharest's Botanical Garden under the local nickname "arborii pagodelor" (pagoda trees), also undated.
+
+**A dead tree and a felled-tree scare avoided**: an "ancient oak on Ferdinand Street" (~300 years, "last secular oak from the Codrii Vlăsiei forest") turned up in research but had already collapsed earlier this year after a nearby gas station's construction damaged its roots; not used. Separately, old oaks at Herăstrău Park's entrance were confirmed cut down in October 2025 in a still-disputed removal (a former MEP has filed a criminal complaint); Herăstrău was dropped as a candidate area entirely rather than risk citing a tree that may no longer stand.
+
+**Candidates researched and dropped for lack of individual data**: "Stejarii din Cotroceni" (the oaks of Cotroceni) and "Sălciile Pletoase din Herăstrău" (the weeping willows of Herăstrău) are both named in Romanian press coverage of a forthcoming national remarkable-trees catalog, but no source found gives either an individual age, size, species confirmation or precise location beyond the neighbourhood name. Left out rather than guessed.
+
+**0 of 4 photos found** on Wikimedia Commons after direct searches for each tree.
+
+**Coordinate honesty**: all four pins are `location_precision: approximate`. The mulberry and Botanical Garden ginkgos use their institution's own address/coordinates (church, garden entrance); Cișmigiu's plane and hazel both use the park's general coordinates, since no source gives either tree's exact position within the 16-hectare park.
+
 ## 2026-07-31 — Belgrade opens: 4 trees, a two-century oak that predates the square around it
 
 Same session, straight after Split. Belgrade was next untried city in the queue (Cork, Galway, Zagreb, Delft, Den Bosch remain previously marginal/exhausted).
