@@ -2,6 +2,16 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Same session, closing out: a second photo spot-check pass, 4 more approved
+
+After Hong Kong shipped, returned to the found_needs_check photo backlog (24 remained after this session's first pass, recorded below). Wikimedia's rate limit had eased; downloaded and viewed 10 more before it kicked back in with a "contact noc@wikimedia.org" message, a harder block than the earlier plain 429s, so stopped rather than keep hammering it.
+
+Approved 4 (clear the Cadiz standard on direct viewing): Bristol's Planes of Queen Square, Geneva's Official Chestnut Tree (its own on-trunk plaque confirms identity beyond doubt) and the Grange Cedar, Glasgow's Darnley Sycamore. Left 2 at found_needs_check with the reasoning written into each entry rather than guessed: Cambridge's Milton Mulberry (a wide Fellows' Garden shot with several candidate trees, filename identity strong but visual confirmation isn't there); Gdansk's Willow of Kupaly-Subislawa (a prior session already made a considered call to keep an honest pre-fire photo for a story about fire damage; agreed with the read but left the approve/reject call open rather than override a thoughtful prior decision on my own).
+
+Across both rounds this session: 18 of the original 30-tree backlog resolved (11 approved, 3 rejected back to missing after failing the subject test, 4 stay explicitly flagged), the remaining ~12 are genuine rate-limit casualties for a future session with a fresh Wikimedia quota.
+
+Site rebuilt, all contracts validated, QA clean throughout. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Hong Kong opens: 6 trees, and a bug caught before it could ship an unverified age as the city's official "oldest tree"
 
 Same session as the submission-processing and September best_time backfill entries below. After the depth backfill and photo spot-check work, moved to new coverage: an earlier 2026-07-31 session's Dubai research had left Hong Kong as the next untried city in the data-led queue, so a research subagent was dispatched for it while the backfill work continued in parallel.
