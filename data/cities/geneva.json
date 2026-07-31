@@ -1,0 +1,206 @@
+{
+  "city": "Geneva",
+  "country": "Switzerland",
+  "status": "needs_curation",
+  "intro": "Geneva's oldest trees mostly arrived as souvenirs. Diplomats, bankers and returning travellers filled the city's 19th-century lakeside estates with cedars from Lebanon, sequoias from California and planes grown wild before the gardens around them existed, imports that outlived the households who planted them and now stand in parks the city inherited along with the trees. One tradition runs even older: an unbroken 208-year civic ritual of watching a single chestnut tree for the first leaf of spring, Switzerland's oldest recorded natural-history dataset.",
+  "meta_description": "Geneva's remarkable trees run from 290-year-old cedars to a chestnut watched for spring's first leaf since 1818. Six verified locations, real stories.",
+  "question_answer": "Geneva's oldest trees are the Botanical Garden Plane Trees, five London planes in the Jardin botanique's central avenue, already mature enough to appear on a cantonal cadastral map in 1728, making them at least 298 years old today. They predate the garden itself by nearly two centuries; the Conservatoire et Jardin botaniques only moved onto this land, the former Ariana estate, in 1905.",
+  "question_meta": "Five plane trees older than the botanical garden they stand in, recorded on an official map since 1728, are Geneva's oldest trees. The full six.",
+  "question_context": "Geneva's tree age claims split into two honest categories: a handful backed by documentary evidence, and a majority inferred from girth and planting-era estate records. The plane trees are the rare first case, cross-checked against the canton's own 1728 cadastral survey rather than estimated from trunk measurements, which is why this entry names them ahead of Parc Beaulieu's cedars even though both plantings sit in the same rough era. The Beaulieu cedars have the better-known story, seeds gifted in 1735 from the same Bernard de Jussieu shipment that produced Paris's own celebrated Cedar of Jussieu, but their 1735 date describes when saplings were planted, not when the seed itself was gathered, so a small margin of uncertainty sits underneath the widely repeated figure. Parc de la Grange's cedar, grown from Beaulieu seed a generation later, and Parc Barton's sequoia grove, planted from 1858, are both younger by a wide enough margin that the ranking among Geneva's oldest three rests on the plane trees and the cedars, not on any of the newer estate plantings.",
+  "faq": [
+    {
+      "q": "What are Geneva's oldest trees?",
+      "a": "Five London plane trees in the botanical garden's central avenue, already standing when a 1728 cadastral map recorded them, at least 298 years old and roughly two centuries older than the garden itself."
+    },
+    {
+      "q": "Are Geneva's remarkable trees free to visit?",
+      "a": "Yes, all six stand in public parks or squares open at any time, no ticket or booking required."
+    },
+    {
+      "q": "Why does Geneva have so many cedars and sequoias?",
+      "a": "The city's 19th-century lakeside estates competed to plant exotic trees brought back from abroad, cedars of Lebanon and Californian sequoias among them, as a fashionable show of wealth. Several of those private gardens later passed to the city intact."
+    },
+    {
+      "q": "What is Geneva's official chestnut tree?",
+      "a": "A horse chestnut on the Promenade de la Treille that the canton's own secretary has checked for the season's first open leaf every year since 1818, the city's official signal that spring has arrived."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gen_001",
+      "name": "The Official Chestnut Tree",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "about 11 years (the tradition dates to 1818)",
+      "age_min": 10,
+      "age_max": 13,
+      "location": {
+        "address": "Promenade de la Treille, opposite the Tour Baudet, Vieille-Ville",
+        "latitude": 46.2005633,
+        "longitude": 6.1462996,
+        "neighbourhood": "Vieille-Ville"
+      },
+      "story": "Geneva has kept an unbroken written record of a chestnut tree's first spring leaf since 1818, one of the oldest continuous phenology datasets anywhere, third-oldest in the world by the canton's own claim. Every year the sautier, the secretary of Geneva's cantonal parliament, walks to a designated tree on the Promenade de la Treille, checks for the season's first open leaf, and reports the date to the press, a civic tradition treated with the same seriousness as a budget vote. The tree doing the job today is the fourth in the role. The first died young; the second lasted from 1905 to 1929; the third served for 86 years before a root fungus called armillaria killed it from the inside, its final recorded observation logged on 13 March 2015. Its replacement was chosen that September for one quality above all others: standing conveniently opposite Tour Baudet, the tower housing the cantonal government, so the sautier's walk stays short. This is the youngest tree on this list by a wide margin, but the record it now carries is the oldest thing about it, two centuries of Geneva watching the same small square for the first sign spring has actually arrived.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Geneva_official_chestnut_tree",
+        "https://fr.wikipedia.org/wiki/Marronnier_officiel_de_Gen%C3%A8ve",
+        "https://www.geneve.ch/marronnier-treille"
+      ],
+      "access": "Free, open promenade at any time",
+      "transport": "Central Vieille-Ville, walkable from anywhere in the old town",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Marronnier_officiel_Gen%C3%A8ve_2024_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "MHM55, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gen_002",
+      "name": "The Cedars of Parc Beaulieu",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "about 290 years",
+      "age_min": 285,
+      "age_max": 295,
+      "location": {
+        "address": "Parc Beaulieu, Rue Baulacre, Grottes-Saint-Gervais",
+        "latitude": 46.2147406,
+        "longitude": 6.1377497,
+        "neighbourhood": "Grottes-Saint-Gervais"
+      },
+      "story": "A French naturalist smuggled cedar seeds out of a garden in England, sowed them at the Jardin des Plantes in Paris, and a handful of the resulting saplings ended up gifted to a Genevan baron in 1735. Bernard de Jussieu's seed run is the same one behind the celebrated Cedar of Jussieu still standing in Paris today, a rare case of two cities' oldest cedars sharing one 18th-century courier. Baron Jean-Francois de Sellon planted his share at his lakeside estate, now Parc Beaulieu, and two of the resulting trees still stand there, close enough together to read as one destination rather than two. Geneva's own tree register calls them the oldest cedars of Lebanon in Switzerland, and possibly in Europe, a claim this entry repeats as the city's own rather than an independently verified fact. Lightning has since taken several metres off the tallest, now 27 metres instead of the 30-plus it once reached, and its trunk has grown past 6 metres around, canopy spread 34 metres, numbers that make the loss of a treetop look almost incidental. Napoleon is said to have visited the estate in 1800, back when the cedars were already mature enough to be worth the detour.",
+      "verified_sources": [
+        "https://www.geneve.ch/fr/themes/environnement-urbain-espaces-verts/nature-ville/arbres/arbres-particuliers/cedres-parc-beaulieu",
+        "https://www.tdg.ch/notre-histoire-geneve-venere-ses-cedres-depuis-260-ans-527737662792"
+      ],
+      "access": "Free, open park at any time, partially wheelchair accessible",
+      "transport": "Short walk from Gare Cornavin (main train station)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/C%C3%A8dres_du_Parc_Beaulieu-IMG_9877.JPG",
+        "license": "CC BY-SA 2.0 FR",
+        "attribution": "Rama, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gen_003",
+      "name": "The Grange Cedar",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "200-225 years",
+      "age_min": 200,
+      "age_max": 225,
+      "location": {
+        "address": "Parc La Grange, avenue William Favre, near the main house, Eaux-Vives",
+        "latitude": 46.2060984,
+        "longitude": 6.1675085,
+        "neighbourhood": "Eaux-Vives"
+      },
+      "story": "This cedar is a direct descendant of the Beaulieu cedars across town, grown from their seed once the Lullin family decided their own lakeside estate needed the same fashionable tree everyone else was planting. Cedars of Lebanon became the must-have addition to Geneva's English-style landscaped parks from around 1800 onward, and the Grange estate, later the city's largest park, got its own sometime in that same window, though no source pins the planting to an exact year. Two centuries on, the tree has outgrown its parent generation: 7.62 metres around the trunk and just over 25 metres tall by a 2019 measurement, a girth that would take four or five adults joining hands to encircle. Parc La Grange has a literary footnote worth knowing: Franz Liszt and Marie d'Agoult stayed at the estate in the 1830s, and their daughter Cosima, later Richard Wagner's wife, was born nearby during that same visit. The cedar would already have been a substantial young tree by then, decades into growing toward the giant it is now. It stands near the park's main house, an easy stop on a walk through Geneva's rose garden and lakeside paths.",
+      "verified_sources": [
+        "https://www.monumentaltrees.com/fr/che/geneve/geneva/8820_grange/40201/",
+        "https://www.geneve.ch/fr/themes/environnement-urbain-espaces-verts/nature-ville/arbres/arbres-particuliers/cedres-parc-beaulieu"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "Bus or tram to Eaux-Vives, then a short walk, roughly 15 minutes from the centre",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Gen%C3%A8ve_parc_La_Grange_grand_c%C3%A8dre-01.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "MHM55, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gen_004",
+      "name": "The Botanical Garden Plane Trees",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "at least 298 years",
+      "age_min": 298,
+      "age_max": 320,
+      "location": {
+        "address": "Jardin botanique, central avenue near chemin de l'Impératrice, on the former Ariana estate",
+        "latitude": 46.2281460,
+        "longitude": 6.1462926,
+        "neighbourhood": "Nations"
+      },
+      "story": "Five plane trees in Geneva's botanical garden were already mature enough to appear on a cantonal cadastral map in 1728, nearly two centuries before the garden itself moved onto the land they stand on. The Conservatoire et Jardin botaniques relocated here from Parc des Bastions in 1905, onto the former Ariana estate that property heir Gustave Revilliod had left to the city, and inherited these five trees as a ready-made avenue rather than planting anything itself. City gardeners since have deliberately left them alone: unlike Geneva's street plane trees, pruned hard every winter into tight pollarded shapes, the botanical garden's five were allowed to spread their branches naturally, the difference between a tree kept small for a pavement and one left to become what a 300-year-old plane actually looks like. Botanists have reclassified them more than once; they currently go by Platanus x hispanica, having previously been labelled Platanus x acerifolia, the taxonomy shifting even as the trees themselves have not changed in decades. The central avenue they form is still the garden's spine, a shaded walk near the entrance from chemin de l'Impératrice, in the Nations district a short tram ride from the city centre.",
+      "verified_sources": [
+        "https://www.geneve.ch/themes/environnement-urbain-espaces-verts/ville-nature/arbres/250-arbres-decouvrir/platanes-jardin-botanique",
+        "https://www.patrimoine-vert-geneve.ch/node/2"
+      ],
+      "access": "Free, open garden at any time",
+      "transport": "Tram to Nations, then a short walk, roughly 20 minutes from the centre",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/CJB-07-All%C3%A9e_centrale.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "MHM55, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gen_005",
+      "name": "The Sequoia Grove of Parc Barton",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "150-170 years",
+      "age_min": 150,
+      "age_max": 170,
+      "location": {
+        "address": "Parc Barton, Rue de Lausanne, Pâquis",
+        "latitude": 46.2222069,
+        "longitude": 6.1513792,
+        "neighbourhood": "Pâquis"
+      },
+      "story": "About thirty giant sequoias grow in one Geneva park because a British diplomat's family fell for a California fashion, and because his daughter later made sure nobody could ever cut them down. Robert Peel, son of the British prime minister and Britain's own representative to Switzerland, bought the Barton estate in 1858, right as giant sequoia seedlings from the American west were becoming the trophy planting for European estate owners with money and an English-style park to fill. He planted a grove instead of a single specimen, and it grew into what the city now calls a cathédrale végétale, a vegetative cathedral, dense enough to change the light underneath it. His daughter, Alexandra Barton Peel, inherited the estate and grew as attached to its trees as her father had been. When she bequeathed the property to the Swiss Confederation in 1935, she attached one condition, that it never be divided and that the trees growing there never be felled. The estate came close to a very different fate: League of Nations planners considered Barton as a site for their new headquarters after 1919, and only Barton Peel's refusal to sell kept the grove intact for what it is today, a public park a short walk from the lakefront.",
+      "verified_sources": [
+        "https://www.geneve.ch/sequoias-parc-barton/",
+        "https://fr.wikipedia.org/wiki/Parc_Barton",
+        "https://www.geneve-int.ch/chapter-3-william-rappard-centre-trees-perspective"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "Walkable from central Geneva, roughly 15 minutes, or local bus",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "gen_006",
+      "name": "The Place du Cirque Plane",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "about 120 years",
+      "age_min": 110,
+      "age_max": 130,
+      "location": {
+        "address": "Place du Cirque, Plainpalais",
+        "latitude": 46.2011713,
+        "longitude": 6.1401296,
+        "neighbourhood": "Plainpalais"
+      },
+      "story": "The largest plane tree in downtown Geneva grows in the middle of one of its busiest intersections, and the reason it got that big is buried under the pavement. Place du Cirque sits on the former bed of the Arve river, rerouted decades before the tree was planted around 1900, and the water table left behind still runs close enough to the surface for the tree's roots to draw on it freely. The result, after roughly a century and a quarter: 35 metres tall, a trunk 4.25 metres around, one and a half metres in diameter, dimensions that would be remarkable in a forest and are startling in the middle of a traffic circle. Thousands of pedestrians pass directly under its canopy every day without necessarily registering that they are walking beneath one of the biggest trees in the canton, let alone the largest one standing in the city centre itself. The square takes its name from the travelling circuses that once pitched their tents on this stretch of the Plainpalais plain. The tree arrived after most of that history, but has since outlasted every circus that has come and gone since.",
+      "verified_sources": [
+        "https://www.geneve.ch/themes/environnement-urbain-espaces-verts/ville-nature/arbres/250-arbres-decouvrir/platane-place-cirque",
+        "https://www.tdg.ch/le-platane-de-la-place-du-cirque-perdra-des-plumes-792411378601"
+      ],
+      "access": "Free, open public square at any time",
+      "transport": "Central Plainpalais, walkable from the old town, roughly 10 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

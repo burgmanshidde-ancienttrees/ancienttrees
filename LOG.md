@@ -2,6 +2,14 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Geneva opens: 6 trees, 4 of 6 photos found
+
+Same session, straight after Helsinki. No new submissions. Geneva was well documented via the city's own official heritage-tree pages plus a Wikimedia contributor who had specifically photographed several of the named trees, so 4 of 6 photos came back found, well above this session's usual Nordic-city haul. Shipped: the Official Chestnut Tree (a 208-year-unbroken civic tradition of watching for spring's first leaf, honestly the youngest tree on the list at ~11 years since its 2015 replacement), the Cedars of Parc Beaulieu (~290 years, grown from the same 1735 seed shipment as Paris's Cedar of Jussieu), the Grange Cedar, the Botanical Garden Plane Trees (Geneva's actual oldest, documented on an official 1728 map, nearly two centuries older than the garden they grow in), the Sequoia Grove of Parc Barton (~30 sequoias protected forever by a 1935 bequest), and the Place du Cirque Plane (downtown's largest, rooted over a rerouted river's water table).
+
+One real bug caught by the build gate: the question-page answer described Geneva's oldest tree without using its exact entry name, so the automated cross-check failed the build until the text was rewritten to name it explicitly. No oldest-tree override was needed otherwise, since the mechanically correct answer (the plane trees) was also the best-evidenced one.
+
+Site rebuilt (703 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Helsinki opens: 8 trees, sourced mostly from the city's own official register
 
 New session. Visitors last 7 days: 93 visits, 187 page views (2026-07-24 to 2026-07-30), trending up most days; nothing in that window points at a specific page to deepen yet. No reader submissions (form's still just its header row). Site health checked first: latest Smoke test run green, build and QA both clean, REVIEW.md empty. Next queued city was Cork, but Cork and Galway were both already exhaustively researched last session and genuinely don't clear the four-tree floor (see CURATION.md), so moved to the next untried city, Helsinki.
