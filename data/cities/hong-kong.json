@@ -1,0 +1,213 @@
+{
+  "city": "Hong Kong",
+  "country": "China",
+  "status": "needs_curation",
+  "oldest_tree_id": "hkg_001",
+  "intro": "Hong Kong's old trees are shaped by the same shortage of flat ground that shapes the rest of the city: banyans root straight into the mortar of century-old stone retaining walls, and New Territories villages have kept camphor groves standing behind their houses for centuries as feng shui protection. The government's own Old and Valuable Trees register tracks several hundred protected specimens by district. These six range from a wall of banyans an MTR station was rerouted to avoid, to a fig tree that grew through an abandoned seventeenth-century stone house.",
+  "meta_description": "Hong Kong's most remarkable old trees, from a banyan wall an MTR station rerouted around to a fig tree engulfing an abandoned 17th-century house.",
+  "question_answer": "Hong Kong's oldest documented tree is the King Banyan of Kowloon Park, an Indian laurel fig estimated at around 400 years old, growing above the spectator stand of the park's mini soccer pitch in Tsim Sha Tsui. The government recognised it as the city's largest urban tree by trunk girth in 1997.",
+  "question_meta": "The King Banyan of Kowloon Park, an Indian laurel fig around 400 years old, is Hong Kong's oldest documented tree and largest urban tree by trunk girth.",
+  "question_context": "A third of the King Banyan's trunk collapsed in a typhoon in 2007, and what survives is still recognised as Hong Kong's largest urban tree, a title the government gave it in 1997 after arborists put its age at around four hundred years. The tree grows above the spectator stand of a mini soccer pitch in Kowloon Park, on ground that was British military land, part of the former Whitfield Barracks, from the 1890s until 1967, three years before the Urban Council turned the site into the park itself. So the banyan is old enough to have shaded soldiers on parade long before it ever shaded families with strollers. It is currently infected with brown root rot, a fungal disease that has killed several of Hong Kong's other old trees, and sits under continuous government monitoring and treatment rather than removal, after conservation groups pushed for exactly that when the infection was first detected. Its crown still spans wide enough over the pitch to be unmistakable from the park's main path, cracked trunk, iron bracing and all, one of roughly 460 trees on Hong Kong's own public Old and Valuable Trees register.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Hong Kong?",
+      "a": "By documented estimate, the King Banyan of Kowloon Park, an Indian laurel fig the government recognised as the city's largest urban tree in 1997, at around 400 years old. Local tradition claims an even older age for a camphor tree in Sha Lo Wan on Lantau Island, over a thousand years, but that figure has no scientific dating behind it."
+    },
+    {
+      "q": "Does Hong Kong have an official register of old trees?",
+      "a": "Yes. The Old and Valuable Trees register, run jointly by the Development Bureau and departments including the Leisure and Cultural Services Department, has tracked several hundred protected trees on government land since 2004, each individually mapped, inspected and re-surveyed."
+    },
+    {
+      "q": "What are Hong Kong's stone wall trees?",
+      "a": "Banyans and figs that took root directly in the mortar of the city's many stone retaining walls, built into hillsides where flat ground was scarce. Roots eventually spread through the masonry itself; Forbes Street in Kennedy Town, with 27 trees on one wall, is the largest example."
+    },
+    {
+      "q": "Are Hong Kong's old trees free to visit?",
+      "a": "Yes, all six trees on this list stand on public land, streets, parks and village playgrounds, with no admission charge. Two, in Sha Lo Wan and Lai Chi Wo, take a ferry or a hike to reach."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hkg_001",
+      "name": "The King Banyan of Kowloon Park",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "about 400 years (recognised as Hong Kong's largest urban tree in 1997)",
+      "age_min": 380,
+      "age_max": 450,
+      "location": {
+        "address": "Kowloon Park, above the spectator stand of the mini soccer pitch, Tsim Sha Tsui",
+        "latitude": 22.304125,
+        "longitude": 114.167424,
+        "neighbourhood": "Tsim Sha Tsui, Kowloon Park"
+      },
+      "story": "A third of this banyan's trunk came down in a 2007 typhoon, and what remains is still recognised as Hong Kong's largest urban tree by trunk girth, a title the government's own tree register gave it in 1997 when arborists put its age at around four hundred years. Indian laurel figs are common street trees across the city, planted by the thousand along roads and in parks, but almost none of them are left to grow old and wide the way this one has, standing above the spectator stand of Kowloon Park's mini soccer pitch since long before the park existed. The ground beneath it was British military land from the 1890s until 1967, part of the former Whitfield Barracks, three years before the Urban Council turned the site into a public park. The tree is old enough to have shaded soldiers on parade before it ever shaded families with strollers. It is now fighting a slower fight than the typhoon: brown root rot, a fungal disease that has spread through several of Hong Kong's oldest trees, has been detected in its roots, and the government has kept it under continuous monitoring and treatment rather than felling it, a decision conservation groups pushed hard for when the disease was first found. The crown still spreads wide enough over the pitch to be unmistakable, cracked trunk and all.",
+      "verified_sources": [
+        "https://www.scmp.com/news/hong-kong/article/1635940/400-year-old-chinese-banyan-tree-kowloon-park-saved-chop",
+        "https://www.cahk.org.hk/en/work/90/",
+        "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "10 minute walk from MTR Tsim Sha Tsui station, via Haiphong Road entrance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age (about 400 years) and 'largest urban tree' status from SCMP's 2015 report on the 1997 government recognition, corroborated by the Conservancy Association's own campaign page describing the tree's brown root rot treatment. Coordinates converted from the government's own Old and Valuable Trees register (OVTNo LCSD YTM/97, HK1980 Grid easting 835547 / northing 818183, data.gov.hk / greening.gov.hk, free reuse with attribution per data.gov.hk's terms and conditions) using a Transverse Mercator inverse transform implemented and sanity-checked this session (origin round-trip exact; several other converted points cross-checked against independently known Hong Kong locations). Whitfield Barracks dates (1890s construction, returned to government 1967, redeveloped into Kowloon Park 1970) corroborated via Wikipedia and Hong Kong Antiquities and Monuments Office material. Photo search this session found no clearly identifiable, individually-tagged open photo of this specific banyan among Kowloon Park's many trees; stays an honest gap.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hkg_002",
+      "name": "The Stone Wall Trees of Forbes Street",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "wall dates to the 1890s; several trees individually over 100 years",
+      "age_min": 100,
+      "age_max": 130,
+      "location": {
+        "address": "Forbes Street, near Exit C of Kennedy Town MTR station, Kennedy Town",
+        "latitude": 22.282723,
+        "longitude": 114.12449,
+        "neighbourhood": "Kennedy Town"
+      },
+      "story": "When engineers first drew up plans to extend the MTR through Kennedy Town, a wall of nearly thirty banyan trees stood directly in the way, and after a 2005 flash-mob campaign by the Conservancy Association, the MTR rerouted the station underneath the old Kennedy Town Swimming Pool instead and built an exit specifically to leave the wall alone. Twenty-seven Chinese banyans and figs grow straight out of three stone masonry retaining walls along Forbes Street, roots fused into brickwork some records date to the 1890s, when the street was first laid out near the American Forbes family's Hong Kong Rope Works. It is the largest tree wall of its kind in the city, out of roughly 1,200 masonry wall trees recorded across Hong Kong, and several of its oldest specimens are individually listed on the government's own Old and Valuable Trees register. Stone wall trees grow the way this dense, hillside city forced them to: a seed lands in a crack, roots spread through mortar instead of soil, and given enough decades the tree and the wall become one structure, impossible to remove one without damaging the other. That, as much as the 2005 campaign, is what actually saved this one. It stands on an ordinary residential street a few minutes from the tram terminus, walls and trees together, exactly where the fight to keep them left them.",
+      "verified_sources": [
+        "https://www.cahk.org.hk/en/work/97/",
+        "https://www.stonewalltreehk.com/forbes-street"
+      ],
+      "access": "Free, public street, viewable at any time",
+      "transport": "At Exit C of MTR Kennedy Town station (Island Line)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/HK_Forbes_Street_Kennedy_Town_Stone_Wall_Trees_n_Minibus.JPG",
+        "license": "CC BY 3.0",
+        "attribution": "Forz, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Ensemble entry (27 individual banyans/figs on one wall), the collectible point is the wall itself, matching the site's ensemble bar (Amsterdam's Lomanstraat, Barcelona's Ciutadella silk tree precedent) since it is compact, famous for being exactly that, with one obvious place to stand. MTR rerouting and 2005 campaign corroborated by the Conservancy Association's own project page (cahk.org.hk) and an independent local heritage site (stonewalltreehk.com). Several individual trees on this wall carry their own OVT/SWT register entries (e.g. Department Ref ARCHSD CW/44, CW/45, CW/47), confirming government recognition, though this entry treats the wall as one collectible ensemble rather than listing each tree separately. Coordinates are the register's own grid point for the OVT-listed tree nearest the playground entrance (ARCHSD CW/47), converted from HK1980 Grid as described in hkg_001's notes. Photo viewed directly 2026-07-31: the wall's cascading roots are unmistakably the subject, daylight, colour, well framed, passes the Cadiz standard.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hkg_003",
+      "name": "The Kam Tin Tree House",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "the banyan is over 100 years old; the stone ruin it engulfs is late Ming dynasty",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Shui Mei Village Playground, Kam Tin, Yuen Long",
+        "latitude": 22.44919,
+        "longitude": 114.058279,
+        "neighbourhood": "Kam Tin, Yuen Long"
+      },
+      "story": "Nobody agrees on what this stone house was originally for, a temple, a study hall, a family residence, but everybody agrees on why it stands empty: in 1661, the new Qing dynasty ordered Hong Kong's coastline evacuated to cut off supplies reaching Ming loyalist rebels, and the Tang clan family who owned this house in Kam Tin left with everyone else. Villagers were kept from the coast for eight years, and by the time the order lifted, whoever had lived here never came back. The building sat abandoned long enough that, at some point in the following centuries, a Chinese banyan took root in it, and it has spent more than a hundred years since growing directly through the structure rather than around it, trunk and roots forcing themselves through gaps in the brickwork until tree and ruin became a single object. What is left today reads less like a house with a tree beside it than a tree that happens to have kept a house's walls as part of its own shape, roof long gone, window openings now just holes the trunk grows past. It stands in a public playground in Shui Mei Village, a short trip by minibus from Yuen Long or Kam Sheung Road, one of the more unusual things a seventeenth-century eviction order has ever produced.",
+      "verified_sources": [
+        "https://www.hongkongfootprint.com/2018/09/kam-tin-tree-house-ancient-tree-house.html",
+        "https://chestnutjournal.com/2020/the-tree-house-of-kam-tin/",
+        "https://www.gohk.gov.hk/en/spots/spot_detail.php?spot=Kam+Tin+Tree+House"
+      ],
+      "access": "Free, public playground",
+      "transport": "By minibus from Yuen Long or Kam Sheung Road MTR station towards Kam Tin, short walk from Shui Mei Village",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Kam_Tin_Tree_House.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Fran1001hk, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "1661 Qing coastal evacuation order and the tree's 100+ year age corroborated across two independent travel/history sources (Hong Kong Footprint, Chestnut Journal) plus the official Hong Kong Tourism-linked gohk.gov.hk district guide. Coordinates from the government's own Old and Valuable Trees register (OVTNo LCSD YL/6, 'Shui Mei Village Playground', HK1980 Grid 824313/834252), converted as described in hkg_001's notes; this is the same public playground the sources describe, so identity is not in question even though the register entry does not itself name the tree house. Photo viewed directly 2026-07-31: the roots and trunk consuming the ruin are unmistakably the subject, daylight, colour, well framed, passes the Cadiz standard.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hkg_004",
+      "name": "The Camphor of She Shan Tsuen",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "estimated 300-500 years, most often cited as about 400",
+      "age_min": 300,
+      "age_max": 500,
+      "location": {
+        "address": "She Shan Fung Shui Woodland, She Shan Tsuen, Lam Tsuen, Tai Po",
+        "latitude": 22.451687,
+        "longitude": 114.142669,
+        "neighbourhood": "Lam Tsuen, Tai Po"
+      },
+      "story": "Ten adults linking arms cannot fully encircle this camphor's trunk, and the tree they would be hugging predates every building in the village it half-hides. She Shan Tsuen's feng shui woodland, 5.7 hectares the government protected as a Site of Special Scientific Interest in 1975, exists because villages across Hong Kong's New Territories deliberately left a strip of hillside forest standing behind their houses, believing an intact wood at a settlement's back shielded it from bad fortune and worse weather. Camphor trees anchor most of these feng shui woods, chosen centuries ago for their size and longevity rather than planted at random, and She Shan's has grown into one of the largest examples in the New Territories: a 32 metre crown, seven storeys of glossy waxy leaves, and an age historical references put between three and five centuries, most often cited at around four hundred years. Government inspectors have logged a severe cavity and dead branches in recent surveys, the ordinary wear of a tree old enough that nobody alive remembers it being young, and it remains under continuous monitoring and pruning rather than removal. It stands on the wooded slope directly behind the village, a short walk off Lam Kam Road, still doing the job it was left standing there to do.",
+      "verified_sources": [
+        "https://culture-hongkong.com/hong-kong-trees-that-speak/",
+        "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html"
+      ],
+      "access": "Free, reachable via a footpath behind the village; part of a protected Site of Special Scientific Interest, please keep to the path",
+      "transport": "By minibus or car to Lam Tsuen off Lam Kam Road, then a short walk to She Shan village",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age (300-500 years, commonly cited as 400), crown size (32m) and trunk girth (ten adults linking arms) come from one detailed source, culture-hongkong.com; a second search pass through Wikipedia's She Shan Tsuen article and the government's own Herbarium fung shui woods overview confirmed the woodland's 1975 SSSI designation and the village's location but added no independent corroboration of the individual tree's age or size, so this stays flagged for a single-source age claim rather than presented as fully cross-verified. Existence, species and exact location are independently confirmed via the government's own Old and Valuable Trees register (OVTNo LANDSD TP/1, 'She Shan Tsuen, Tai Po, She Shan Fung Shui Woodland SSSI', condition notes matching: severe cavity, dead branches), coordinates converted from its HK1980 Grid reference (833000/834524) as described in hkg_001's notes. A future session should look for a second independent source on the specific age figure before upgrading this out of flagged.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hkg_005",
+      "name": "The King Camphor of Sha Lo Wan",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "undated; local and official tourism material claims over 1,000 years but no scientific dating exists",
+      "age_min": 200,
+      "age_max": 300,
+      "location": {
+        "address": "The slope next to Sha Lo Wan School, Sha Lo Wan, Lantau Island",
+        "latitude": 22.285321,
+        "longitude": 113.900627,
+        "neighbourhood": "Sha Lo Wan, Lantau Island"
+      },
+      "story": "Japanese soldiers cut down most of Lantau Island's large trees for fuel during the wartime occupation, and by local account, they stopped short of this one because they believed a guardian spirit haunted it and would frighten off anyone who tried. Whether the spirit or something more practical spared it, the camphor beside Sha Lo Wan's old village school survived a period when little large timber on the island did, and villagers still call it Sha Lo Wan's King Camphor. Hong Kong's own tourism authority repeats the village's claim that it is over a thousand years old, a figure with no scientific dating behind it and best treated as local tradition rather than a measured fact, though camphors are long-lived enough that a large old specimen reaching many centuries is far from implausible. What is certain is its role: Sha Lo Wan, a fishing village on Lantau's quiet north-west coast reachable by a coastal footpath or a rural kaido ferry from Tung Chung, has treated this tree as a feng shui guardian for generations, the kind of tree a village builds its sense of protection around rather than fells for a hard winter. It still stands on the government-registered slope beside the school, watched over rather than the other way around now.",
+      "verified_sources": [
+        "https://www.lantau.gov.hk/en/exploring-lantau/stories/sha-lo-wan/",
+        "https://nstecker.com/2010/04/04/tree-stories-the-red-kapok-and-%e2%80%9cfeng-shui%e2%80%9d-camphor/"
+      ],
+      "access": "Free, public village land",
+      "transport": "By kaido ferry from Tung Chung to Sha Lo Wan, or via the Lantau coastal footpath",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The '1,000+ years' figure is a local/official claim, sourced to the government's own South Development and Sustainable Lantau Office (CEDD) storytelling page, repeated by other tourism material, but not a scientifically dated figure; the story presents it explicitly as a claim rather than a fact per the honesty rule. age_min/age_max are deliberately kept to a conservative, defensible 200-300 rather than encoding the unverified 1,000-year figure into age_max: this field feeds mechanical site-wide comparisons (the per-city oldest-tree page, any future oldest-trees-in-the-world collection), and hard rule 8 requires superlative-driving numbers to be checked rather than passed through from an unverified local claim. hong-kong.json sets oldest_tree_id to hkg_001 for the same reason, so this entry's own claimed age never silently drives the city's 'oldest tree' answer. The WWII guardian-spirit story is independently corroborated by a second, unrelated source (a personal blog, nstecker.com, predating and unconnected to the government page). Existence, species and exact location confirmed via the government's own Old and Valuable Trees register (OVTNo AFCD/KS/005, 'The slope next to Sha Lo Wan School, Lantau Island', condition notes: minor cavity, fair health, sign of termite infestation), coordinates converted from its HK1980 Grid reference (808051/816127) as described in hkg_001's notes.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hkg_006",
+      "name": "The Five-Finger Camphor of Lai Chi Wo",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "undocumented; a mature specimen already large enough to be targeted during the WWII occupation",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Lai Chi Wo village feng shui woodland, Sha Tau Kok, North District",
+        "latitude": 22.527906,
+        "longitude": 114.255694,
+        "neighbourhood": "Lai Chi Wo, Sha Tau Kok"
+      },
+      "story": "Only one of this camphor's original five trunks is missing, and the reason it lost that one and not the rest is the whole story: during the Japanese occupation, soldiers came to cut the tree for fuel, and Lai Chi Wo's villagers physically stood between them and the trunk. They lost the argument over a single branch. Four still remain, splayed from a shared base wide enough that the tree is simply known as the Five-Finger Camphor, and it has stood in the feng shui woodland behind this Hakka village since before anyone alive can date it. Hakka settlers built Lai Chi Wo in the 16th century, grew it to more than two hundred houses and over a thousand residents by laying the village out on strict geomantic lines, and then watched it empty through the 1960s and 70s as families left for the city and abroad. The camphor stayed, along with the rest of the feng shui wood's more than a hundred native plant species, and it has become the emblem of a rural revival effort that has slowly repopulated and restored the village since the 2010s. Reaching it means a ferry from Ma Liu Shui or a hike in from Wu Kau Tang, through one of the last intact Hakka settlements left in Hong Kong's New Territories, to stand under four fingers where there used to be five.",
+      "verified_sources": [
+        "https://www.ejinsight.com/eji/article/id/1470883/20170113-lai-chi-wo-a-hakka-walled-village-with-a-living-forest",
+        "https://www.360cities.net/image/five-finger-camphor-at-lai-chi-wo-hong-kong"
+      ],
+      "access": "Free, within an active countryside conservation and rural revival area",
+      "transport": "By ferry from Ma Liu Shui (weekends and public holidays) or a hike from Wu Kau Tang",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "WWII branch-loss story and village history corroborated across two independent sources (EJ Insight news article, 360Cities panorama caption); village settlement date and rural-revival programme also appear on Hong Kong Tourism Board's own Lai Chi Wo page. No source gives a specific planting date or age for the tree itself, so age_min/age_max left at 0 rather than guessed, per the honesty rule (same convention as Singapore's undated heritage-register entries). Existence, species and exact location confirmed via the government's own Old and Valuable Trees register (OVTNo AFCD/LK/009, TR no. AFCD/N/00002, 'Lai Chi Wo, Sha Tau Kok', condition notes: asymmetric canopy, minor cavity, moderate decay), coordinates converted from its HK1980 Grid reference (844630/842966) as described in hkg_001's notes.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
