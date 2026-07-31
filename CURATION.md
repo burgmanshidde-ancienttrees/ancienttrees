@@ -1,3 +1,15 @@
+## 2026-07-31 — Rotterdam opens: 5 trees, all survivors of the 1940 bombing or the 1953 flood
+
+Same session, straight after Utrecht. No new submissions. Rotterdam was next in the queue.
+
+**A city whose tree age story is really a disaster-survival story**: Rotterdam has barely 3,000 monumental trees against 600,000 total, unusually few for a city its size, and both Dutch press coverage (Rijnmond) and the municipality's own materials name the same two causes: the German bombing of 14 May 1940, which flattened the historic centre in one night, and the region's soft, subsiding soil, which shortens most trees' working lives regardless of what happens above ground. Every tree that made this page earned its place partly by surviving one or both.
+
+**Shipped**: the Park Plane (het Park, Rotterdam's oldest at ~226 years, standing since around 1800 before the Zocher family designed the park around it in 1852, survived both the 1940 bombing and the 1953 North Sea flood that put the park itself underwater), the Breitenbach Plane (Westersingel/Mauritsweg corner, since 1860, stood on the exact firestorm line in 1940 and came through unscathed, saved again in the 1960s when the city rerouted a canal redesign around it rather than fell it, nicknamed after South African poet Breyten Breytenbach who recited poetry beneath it in the 1970s), the Westersingel Plane (~130 years, physically transplanted across the canal in the 1960s rather than felled, runner-up in the Netherlands' 2021 national Tree of the Year vote), the Wilhelmina Linden (Parklaan, planted for Queen Wilhelmina's 1898 coronation as part of a genuine national planting tradition, its decorative iron fence separately listed on the Dutch heritage register), and the Koningin Emmaplein Beech (~135 years, centre of a square nicknamed "Rijkeluishofje," the rich people's almshouse, alongside an 1890 urn designed by Hendrik Berlage).
+
+**Photo hunt**: 0 of 5 found. Wikimedia Commons has general street-view categories for Westersingel and similar locations but no image specifically identifiable as any of these five named trees; none guessed. All 5 pins `location_precision: approximate`, park or street-level addresses rather than surveyed trunk positions.
+
+Site rebuilt (730 pages: 54 city, 433 tree, 54 question, 12 collections, homepage), all contracts validated on the first pass; `scripts/qa.py` clean (683 pages). `data/city-list.json` updated (Rotterdam: pending to needs_curation). One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Utrecht opens: 5 trees, three behind one garden wall, two out in the open
 
 Same session, straight after the Zagreb research note. No new submissions. Utrecht was next in the queue.
