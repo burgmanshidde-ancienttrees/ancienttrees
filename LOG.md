@@ -2,6 +2,20 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Split opens: 4 trees, a football club's cloned mulberry and Croatia's rarest ginkgo
+
+New session. Visitors last 7 days: 93 visits, 187 page views (2026-07-24 to 2026-07-30), trending up most days. No reader submissions (the form's still just its header row). Site healthy at start: build and QA both clean; `gh` was blocked by this session's approval gate throughout so the Smoke test run itself couldn't be checked directly, same limitation prior sessions hit. Cork was flagged as "next up" by the session-start brief, but LOG.md's own history shows it was researched twice already and correctly rejected both times (its only strong trees sit at Blarney Castle, 8km outside city limits). Split was the next genuinely untried city in the queue.
+
+Shipped 4: the Hajdukova Murva, a white mulberry that stood in the courtyard of HNK Hajduk Split's first stadium from before the club's 1911 founding until 1979, assessed at around 120 years old in a 2014 rescue effort and then DNA-cloned into 105 identical seedlings by Zagreb scientists, one for every year of the club's existence; the Ginkgo of Đardin, rated by Split's own municipal botanical survey as the single most valuable tree in the city, growing steps from the Golden Gate of Diocletian's Palace; the Cypress of Kolombatović on Marjan hill, planted in 1908 the year the zoologist and reforestation pioneer it honors died; and the Black Walnut of Đardin, a North American species almost never seen this far down the Adriatic.
+
+One near-miss caught before it shipped: an early search summary claimed a "300-year-old oak" in Đardin as the garden's oldest tree. Fetching the actual source directly found no oak mentioned anywhere in it, just the ginkgo, yew, walnut and elm rarities it does name. Dropped rather than published, full detail in CURATION.md.
+
+Two of the four (ginkgo, walnut) rest on a single strong source, a news outlet's coverage of an official EU-funded park survey, and carry honestly wide, undocumented age ranges rather than a guessed number. All four pins are approximate, none confirmed; the mulberry's old courtyard no longer exists as such; the site is now a rugby club's grounds, shipped with an honest "restricted" access note rather than either dropping the tree or overclaiming free access.
+
+0 of 4 photos found on Wikimedia Commons.
+
+Site rebuilt (850 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Ljubljana opens: 4 trees, its oldest turning exactly 400 this year
 
 Same session, straight after Gdansk, the fourth city this run. Shipped the Furmanska Lipa (Carter's Linden), planted in 1626 on Borstnikov trg and turning exactly 400 years old in 2026, once shaded France Preseren, Slovenia's national poet, and later the architect Joze Plecnik; the Marmontova Lipa, planted in 1810 the same year Ljubljana's Botanical Garden was founded, named for the Napoleonic marshal who governed the city; and two American sycamores on Streliska ulica, the last two survivors of a tree-lined avenue visible on a 1744 map of the city and gone everywhere else.

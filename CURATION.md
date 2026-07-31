@@ -1,3 +1,19 @@
+## 2026-07-31 — Split opens: 4 trees, a football club's cloned mulberry and Croatia's rarest ginkgo
+
+New session. Split was next untried city in the queue (Cork, Galway, Zagreb, Delft, Den Bosch all previously marginal/exhausted; Split had no prior research history in this file).
+
+**Shipped 4**: the Hajdukova Murva (White Mulberry, Morus alba, ~130 years old, assessed at ~120 in a 2014 arborist survey), which stood in the courtyard of HNK Hajduk Split's first home, Stari plac, from before the club's 1911 founding until 1979 and was DNA-cloned into 105 genetically identical seedlings by Zagreb's Faculty of Science in 2015; the Ginkgo of Đardin (Ginkgo biloba), rated a Category I rarity, "the single most valuable tree in the park and the city," by a municipal botanical survey (Projekt SOLAR, reported by dalmatinskiportal.hr) but with no recorded planting date; the Cypress of Kolombatović (Cupressus sempervirens, planted 1908) on Marjan hill, a memorial to zoologist and Marjan Society founding president Juraj Kolombatović, planted the year he died; and the Black Walnut of Đardin (Juglans nigra), a Category II rarity in the same park, also undated.
+
+**A near-fabrication caught and dropped**: an early web-search synthesis claimed a "300-year-old oak, the oldest tree in the garden" in Đardin. Direct-fetching the actual source article it was attributed to found no mention of any oak at all, only the ginkgo/yew/walnut/elm rarities actually quoted in the piece. Dropped the oak claim entirely rather than publish an unsourced figure the search tool appears to have invented or pulled from elsewhere.
+
+**2 flagged**: the Ginkgo and the Black Walnut of Đardin both rest on a single detailed source (the SOLAR project reporting), a legitimate news outlet covering an official EU-funded park study, but neither has an independently corroborated planting date, so both carry wide, honest age ranges (90-160 and 80-150) rather than fabricated precision, the same single-strong-source pattern already accepted for some of Rome's Villa Celimontana trees.
+
+**Access honesty**: the Hajdukova Murva's exact courtyard no longer exists as such. The former clubhouse site is now used by RK Nada rugby club, with an approved 2024 plan to eventually turn the grounds into a public memorial park. Shipped with `access: "Restricted"` and a note that it is visible from the surrounding streets, rather than either excluding it or overclaiming free access.
+
+**Coordinate honesty**: all four pins are `location_precision: approximate`. Đardin's two trees share the park's general coordinates near the Golden Gate (no in-park GPS survey found for either specimen); the mulberry uses the former Stari plac stadium's coordinates, not an exact in-courtyard spot; the cypress uses the Kolombatović promenade/zoo-entrance coordinates on Marjan, since the "east side of the Natural History Museum building" description in the source could not be pinned more precisely without risking a wrong guess between the current in-town museum building and whatever structure stood on Marjan in 1908.
+
+**Photo hunt**: 0 of 4 found. Wikimedia Commons has no results for the mulberry or the cypress, and only a generic, unconfirmed park photo for Đardin (not verified to show either the ginkgo or the walnut specifically, so not used, per the honesty rule against guessing a generic photo onto a named tree).
+
 ## 2026-07-31 — Ljubljana opens: 4 trees, its oldest turning exactly 400 this year
 
 Same session, straight after Gdansk. Ljubljana was next fresh city in the queue.
