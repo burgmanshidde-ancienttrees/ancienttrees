@@ -5,7 +5,7 @@
       "name": "design-boards",
       "runtimeExecutable": "python3",
       "runtimeArgs": [
-        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/f740f5b8-b178-4b8b-84a0-b64cc1060247/scratchpad/serve.py"
+        "scripts/preview_serve.py"
       ],
       "port": 8971
     }

@@ -2,6 +2,21 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 (avond, sessie met Hidde) — De kaart wordt af, de formulieren worden echt, en het vliegwiel sluit
+
+The evening in one breath, all live and verified:
+
+- **The map found its final form after four iterations with Hidde's eyes on it.** The city page is the city experience, untouched; /explore is the chooser (up to ten city cards for what the map shows, straight links to city pages); and the city pages' own panels now BECOME that chooser when you zoom out past province level, restoring the tree list when you zoom back in. One map, one design, verified in both directions. His words to preserve: the city view was perfect; clicks go directly to city pages; one map, not two.
+- **The Google Form is dead site-wide.** /contribute is our own form (kind/city/tree/where/why/name) posting to an insert-only Supabase table; every CTA repointed with kind-preselect. The waitlist on /app went native earlier the same day. Both chains machine-verified end-to-end; read-back with the public key is impossible by design.
+- **The flywheel closed and proved itself.** Hidde installed SUPABASE_SERVICE_KEY; the proof run read the test submission, judged it a pipeline test, declined to publish, recorded and marked it processed, and then self-corrected the fleet toward the fortnight's neglected backfill lane. Constitution steering without supervision.
+- **Design-system pass on his taste calls:** cities index rebuilt as photo cards per country (the chooser's cards, via a shared city_face helper); homepage search city-only; four city faces re-picked light and in colour; the Cadiz standard gained the colour rule (never black-and-white, "liever geen foto dan zwart-wit") and two Barcelona photos became honest gaps with hunt briefs; the no-builder-speak and no-absolute-promises rules landed in TONE_OF_VOICE.md and the QA gate respectively.
+- **Ops:** run chain trimmed to four one-hour runs/day (63% of the week gone at day 2.5); preview server made session-stable (scripts/preview_serve.py).
+
+### Waiting on Hidde
+- **The country-pages contract**: say "voeg het landencontract toe" and Contract G gets written (design agreed, BACKLOG.md has it; hard rule 7 requires the explicit yes).
+- **Monday's usage glance**: weekly under ~80% at Wednesday's reset trajectory means "verhoog" lifts the chain back toward six-plus runs.
+- Housekeeping when in the dashboard anyway: two test rows in `waitlist`, one in `submissions` (id 1, already processed), and the old pre-delete-button test user.
+
 ## 2026-07-31 — Submission processed, then a September backfill: 6 trees get honest seasonal peaks
 
 New session. `python3 scripts/visitors.py`: 110 visits, 252 page views over 2026-07-24 to 2026-07-31, trending up. No page-level signal (the tool only reports site totals), consistent with what prior sessions have noted. Site health checked first: build and QA both clean (909 pages, 838 for QA before this run), REVIEW.md still empty (no BLOCKER). `gh run list --workflow=smoke.yml` required interactive approval this session's sandbox never grants, same limitation several prior sessions hit; build/QA cleanliness stood in as the health signal per that precedent.
