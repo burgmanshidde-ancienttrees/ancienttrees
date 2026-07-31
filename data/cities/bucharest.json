@@ -1,0 +1,146 @@
+{
+  "city": "Bucharest",
+  "country": "Romania",
+  "status": "needs_curation",
+  "intro": "Bucharest's oldest tree grows in a church courtyard, not a park: a white mulberry that supposedly outlived the prince said to have scolded a child for climbing it, centuries ago. Its closest rivals cluster in Cișmigiu, the capital's first public garden, drained from a swamp in the 1830s, including a plane tree that lost a quarter of its crown to a 2018 construction accident and one of only two protected Turkish hazels in the country. A fourth grows quietly inside the university's Botanical Garden, unbothered by any of it.",
+  "meta_description": "Bucharest's most remarkable trees: a mulberry with its own legend, a damaged secular plane, a rare Turkish hazel, and the Botanical Garden's ginkgos.",
+  "question_answer": "Bucharest's oldest tree is the Dudul din Batiștei, a white mulberry in the courtyard of Batiștei Church, reliably dated to over 200 years old with a traditional claim, tied to a local legend about Prince Constantin Brâncoveanu, that pushes it past 300. It predates the church's current building and the streets around it.",
+  "question_meta": "A 300-year-old mulberry with its own carved legend, older than the church built around it, holds the record for Bucharest's oldest tree.",
+  "question_context": "The Dudul din Batiștei carries two different ages depending on which claim is trusted. A 1993 Romanian survey of protected natural sites lists it conservatively at over 200 years, a figure that would put its planting sometime in the early 19th century. Local tradition, recorded on a plaque in the porch of the church whose courtyard it still stands in, pushes that further: the story of a boy named Manciu telling Prince Constantin Brâncoveanu that the tree would outlive him implies a planting date before the prince's execution in 1714, over 300 years ago. Neither claim has a documented planting record to settle the gap, which is common for Bucharest's oldest trees generally; none of the four on this page has a precisely dated origin. What is not disputed is the mulberry's status as the oldest living tree in the capital by consensus among Bucharest's own local historians and heritage writers, ahead of Cișmigiu's plane and hazel by at least several decades under even the most conservative reading of both ages.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Bucharest?",
+      "a": "The Dudul din Batiștei, a white mulberry in the courtyard of Batiștei Church, over 200 years old by conservative record and, by local legend tied to Prince Constantin Brâncoveanu, more than 300."
+    },
+    {
+      "q": "Why did part of Cișmigiu's oldest plane tree die?",
+      "a": "In 2018 a municipal crew digging a trench for park lighting cut through two of its main support roots. About a quarter of its crown dried out and died as a result, though the tree itself survives."
+    },
+    {
+      "q": "Why is the Turkish hazel in Cișmigiu significant?",
+      "a": "It is one of only two officially protected specimens of Corylus colurna in Romania, growing far outside the species' native range in the Balkans, Anatolia and the Caucasus."
+    },
+    {
+      "q": "Are Bucharest's remarkable trees free to visit?",
+      "a": "Three of the four, in a church courtyard and a public park, cost nothing. The fourth, in the University of Bucharest's Botanical Garden, requires a paid admission ticket."
+    }
+  ],
+  "trees": [
+    {
+      "id": "buc_001",
+      "name": "The Dudul din Batiștei (White Mulberry of Batiștei)",
+      "species": "White Mulberry (Morus alba)",
+      "age_estimate": "200-300+ years",
+      "age_min": 200,
+      "age_max": 320,
+      "location": {
+        "address": "Batiștei Church courtyard, Strada Batiștei, Sector 2, Bucharest",
+        "latitude": 44.439031,
+        "longitude": 26.104653,
+        "neighbourhood": "Batiștei"
+      },
+      "story": "According to a story carved onto a plaque in its own church porch, a boy named Manciu once told Prince Constantin Brâncoveanu that the mulberry tree he had just been scolded for climbing would outlive the prince himself. It did, by a very wide margin. Brâncoveanu was executed by the Ottomans in 1714, and the white mulberry in the courtyard of Batiștei Church is still standing, now generally reckoned Bucharest's oldest living tree, though estimates for exactly how old split between a documented 200-plus years and a traditional claim, tied to the Brâncoveanu legend, of over 300. Either figure makes it older than the church building around it in its current form, and older than the surrounding streets, which grew up around the tree rather than the other way round, back when this stretch of the city was a mahala, a merchants' and craftsmen's quarter where local children apparently used the tree as a climbing frame long before anyone thought to protect it. It carries official status as an arbore ocrotit, a protected tree, one of a small number in the capital with that designation and a documented legend to go with it rather than just a girth measurement.",
+      "verified_sources": [
+        "https://ro.wikipedia.org/wiki/Dudul_alb_de_pe_strada_Bati%C8%99tei_(Bucure%C8%99ti)",
+        "https://hotnews.ro/dudul-din-batistei-cel-mai-batran-copac-din-bucuresti-are-peste-300-de-ani-si-propria-i-legenda-1842500"
+      ],
+      "access": "Free, public church courtyard, viewable during normal visiting hours",
+      "transport": "Sector 2, near Piața Universității; about a 10 minute walk from University Square metro station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "buc_002",
+      "name": "The Secular Plane of Cișmigiu",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "~180-200 years",
+      "age_min": 170,
+      "age_max": 205,
+      "location": {
+        "address": "Cișmigiu Gardens, Bulevardul Regina Elisabeta, Sector 5, Bucharest",
+        "latitude": 44.4369,
+        "longitude": 26.0905,
+        "neighbourhood": "Cișmigiu"
+      },
+      "story": "In 2018 a municipal crew digging a trench for park lighting cut through two of the main support roots of Cișmigiu's oldest tree, and within two years a full quarter of its crown had dried out and died. The plane tree is reckoned at around 200 years old by one account and closer to 170 by another that ties its planting more directly to the park's own founding, when Viennese-trained landscape architect Wilhelm Meyer turned a drained swamp into Bucharest's first public garden between 1847 and its 1854 opening. Either figure makes it one of the very few survivors of that original planting scheme still standing. Popular legend has occasionally stretched its age to 300 or even 500 years, a claim the park's own history rules out immediately: nothing could have been growing here before the marsh itself was drained in 1830. What is true is dramatic enough without embellishment. The tree has outlived a kingdom, two world wars, and decades of the regime that followed, only to lose a quarter of its living crown to a lighting cable trench nobody has since gone back to properly repair. It is still standing, still shading part of the park it has occupied for close to two centuries, its damage visible to anyone who looks up rather than hidden away.",
+      "verified_sources": [
+        "https://buletin.de/bucuresti/video-un-sfert-din-coroana-platanului-secular-din-cismigiu-s-a-uscat-din-cauza-unui-sant-nimeni-nu-isi-pune-problema-ce-se-intampla/",
+        "https://ro.wikipedia.org/wiki/Parcul_Ci%C5%9Fmigiu"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Central Bucharest, main entrance on Bulevardul Regina Elisabeta; a 5 minute walk from Izvor or Universitate metro stations",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "buc_003",
+      "name": "The Turkish Hazel of Cișmigiu",
+      "species": "Turkish Hazel (Corylus colurna)",
+      "age_estimate": "undocumented, likely 19th-century planting",
+      "age_min": 90,
+      "age_max": 175,
+      "location": {
+        "address": "Cișmigiu Gardens, Bulevardul Regina Elisabeta, Sector 5, Bucharest",
+        "latitude": 44.4369,
+        "longitude": 26.0905,
+        "neighbourhood": "Cișmigiu"
+      },
+      "story": "Romania has only two officially protected specimens of Corylus colurna, the Turkish hazel, and one of them grows inside Cișmigiu, Bucharest's oldest and most visited public park. Most of the species' native range lies far to the southeast, in the Balkans, Anatolia and the Caucasus, which makes a mature, healthy specimen this far north and west of its usual territory a genuine rarity rather than an ordinary park planting. Cișmigiu itself began as a swamp: the site was drained in 1830 on the order of General Pavel Kiseleff, then redesigned from 1847 by the Viennese-trained landscape architect Wilhelm Meyer, who filled the new grounds with imported and unusual species before the garden's official opening in 1854. No record fixes an exact planting date for this particular hazel, but its inclusion among Meyer's original plantings would put it among the oldest trees the park has, and its formal protection recognizes the tree for a fact simpler than age: outside a handful of botanical collections, there is nowhere else in the country to see one like it.",
+      "verified_sources": [
+        "https://ro.wikipedia.org/wiki/Alunul_turcesc_din_Ci%C8%99migiu",
+        "https://ro.wikipedia.org/wiki/Parcul_Ci%C5%9Fmigiu"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Central Bucharest, main entrance on Bulevardul Regina Elisabeta; a 5 minute walk from Izvor or Universitate metro stations",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "buc_004",
+      "name": "The Ginkgos of the Botanical Garden",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "undocumented, garden dates to 1884",
+      "age_min": 100,
+      "age_max": 145,
+      "location": {
+        "address": "Bucharest Botanical Garden \"Dimitrie Brândză\", Șoseaua Cotroceni 32, Sector 6, Bucharest",
+        "latitude": 44.438056,
+        "longitude": 26.063611,
+        "neighbourhood": "Cotroceni"
+      },
+      "story": "Bucharest's Botanical Garden protects four ginkgo trees as a group, 200 metres inside its main entrance, under the local nickname arborii pagodelor, the pagoda trees, a label more commonly attached to an entirely different species, the Japanese pagoda tree. Ginkgo biloba earned the borrowed name anyway, probably because its fan-shaped leaves and East Asian origin read as pagoda-adjacent to whoever named it first, and the name stuck regardless of the mismatch. The garden itself dates to 1860, moving to its current site on the edge of the Cotroceni district in 1884, and functions as the University of Bucharest's living plant collection rather than a public park in the ordinary sense, which is part of why these four trees have survived largely undisturbed while so many of the capital's older street and park trees have not. No record gives an exact planting date for the group, but ginkgo has been standard in serious botanical collections since the 18th century, and a garden built to university academic standards from the 1880s onward is exactly the kind of institution that would have planted one of the world's oldest surviving tree lineages among its founding specimens rather than adding it later as decoration.",
+      "verified_sources": [
+        "https://ro.wikipedia.org/wiki/Arborii_pagodelor_din_Gr%C4%83dina_Botanic%C4%83_din_Bucure%C8%99ti",
+        "https://ro.wikipedia.org/wiki/Gr%C4%83dina_Botanic%C4%83_%E2%80%9EDimitrie_Br%C3%A2ndz%C4%83%E2%80%9D_a_Universit%C4%83%C8%9Bii_din_Bucure%C8%99ti"
+      ],
+      "access": "Paid entry, University of Bucharest Botanical Garden, standard visiting hours",
+      "transport": "Cotroceni district, Șoseaua Cotroceni 32; about a 10 minute walk from Eroilor metro station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
