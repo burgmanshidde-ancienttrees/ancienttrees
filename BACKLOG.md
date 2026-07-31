@@ -30,6 +30,14 @@ Cost note for whoever picks this up: the pulse alone is roughly an hour (a CSS a
 
 **Trigger:** the icon/pin design pass, or Hidde saying go. Not before the Japan-wave deadline work (2026-08-22) unless he explicitly bumps it.
 
+## The viewport panel: one continuous map experience (Hidde, 2026-07-31, parked by the fortnight rule)
+
+His words, while using the live map: zoomed in on Amsterdam you see the ten trees in the panel; zoom out and the panel should become the CITIES in your viewport, each as a card with one photo, click to dive in ("ik kijk naar een kaart waar Duitsland, Amsterdam, Frankrijk en Engeland te zien zijn, en dat je dan de hoofdsteden uitlicht met een foto"). This is the AllTrails explore pattern exactly (the results panel follows the map) and the natural phase two of the one-map-experience decision of 2026-07-30.
+
+Buildable spec, so 15 August can start cold: on /explore, add a side panel; on `moveend`, if zoom < ~10 show city cards for cities whose centroid is in the viewport (city name, tree count, one calibration-quality photo, link), if zoomed into one city show its tree list (reusing the city-page row rendering); the data is already client-side (city centroids in the search index, tree GeoJSON, photos would need adding to the embedded city data). Keep static city pages untouched for SEO; /explore becomes the app-like surface. Risks: payload weight (photos per city on /explore), and the panel must not break the 375px experience (full-screen map with a bottom-sheet panel is the mobile pattern).
+
+Status: parked until the 2026-08-14 review per the steady fortnight; a run may not build it.
+
 ## More than ten per city, for the routes? (Hidde, 2026-07-30, parked to the same checkpoint)
 
 His reasoning for someday relaxing the ten: more curated trees make walking routes richer. Counter-thought recorded for the checkpoint: the register layer may solve this without touching the cap, because routes can thread register trees as waypoints between the ten epic ones (the walk gets denser, the collectible tier stays finite and exclusive). Decide mid-September with the Japan wave and register pilot in hand; "10 per stad - getal nog te bediscuseren" is his explicit framing, so the number is genuinely open, not settled.
