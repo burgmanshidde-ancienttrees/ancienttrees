@@ -1,0 +1,178 @@
+{
+  "city": "Utrecht",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Utrecht's oldest trees live behind walls more often than in open parks, protected first by a university's own working garden and later by simple survival. The city's genuine standout is a walled botanical garden barely bigger than a single city block, home to a ginkgo that predates the Netherlands' current constitution and a Chinese tree so rare it took a missionary decades to bring seeds to Europe at all. Add a farmhouse linden absorbed whole by a modern science campus, and a canal named for its own trees since the 1600s.",
+  "meta_description": "Utrecht's oldest trees hide behind garden walls: a 260-year ginkgo, a rare handkerchief tree, a farmhouse linden. Five verified locations, real stories.",
+  "question_answer": "Utrecht's oldest tree is the Uithof Linden, a common lime planted around 1750 beside a 17th-century farmhouse that gave its name to what is now Utrecht Science Park. At roughly 275 years old, it predates the university campus built up around it by two centuries, one of the oldest Dutch lindens still standing anywhere.",
+  "question_meta": "A 275-year-old linden beside a 17th-century farmhouse, now swallowed by a university science campus, is Utrecht's oldest tree. The full five.",
+  "question_context": "Utrecht keeps its oldest trees in two very different settings, and the contrast says something about how a Dutch city actually preserves age. The Uithof Linden and the Oude Hortus's three specimens all survive because they sat inside a boundary somebody drew and then defended: a farmhouse's private dooryard in one case, a university garden's walls in the other, both places where nobody had reason to fell an inconvenient tree for centuries. The Nieuwegracht's canal lindens took the opposite route, out in the open on a public street since the 1600s, which is also why they are honestly the youngest of the five: street trees get replaced when they die or block a view, and at least one full replanting happened there sometime between the original 1660 planting scheme and the roughly 1830-dated lime trees standing today. Between the walled survivors and the replanted street trees sits the real explanation for why this city's canal-lined image and its handful of genuinely centuries-old specimens rarely overlap on the same tree.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Utrecht?",
+      "a": "The Uithof Linden, a common lime planted around 1750 beside a farmhouse that gave its name to what is now Utrecht Science Park, roughly 275 years old."
+    },
+    {
+      "q": "Are Utrecht's remarkable trees free to visit?",
+      "a": "Three of the five, all in the Oude Hortus, require a paid ticket to the Universiteitsmuseum. The Uithof Linden and the Nieuwegracht's canal lindens are free and visible from public streets at any time."
+    },
+    {
+      "q": "Why does Utrecht have so few very old street trees?",
+      "a": "Canal-side trees like Nieuwegracht's lindens get replaced when they die, and Utrecht's unusual two-level canal streets leave little root space, which limits how large or old street trees typically grow. The city's oldest survivors are mostly the ones that stood inside a private or institutional boundary instead."
+    },
+    {
+      "q": "What is unusual about Utrecht's ginkgo?",
+      "a": "It began life as a male tree, the only sex ginkgos naturally are, until a 19th-century gardener grafted a female branch onto its trunk so it could finally produce seeds. The graft scar is still visible today."
+    }
+  ],
+  "trees": [
+    {
+      "id": "utr_001",
+      "name": "The Uithof Linden",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "about 275 years",
+      "age_min": 270,
+      "age_max": 280,
+      "location": {
+        "address": "Toulouselaan 43, beside the historic farmhouse 'de Uithof', Utrecht Science Park",
+        "latitude": 52.0806877,
+        "longitude": 5.1745807,
+        "neighbourhood": "De Uithof, Utrecht Science Park"
+      },
+      "story": "This linden has outlived the entire farming landscape it was planted into. It went into the ground around 1750 on the south side of a farmhouse called de Uithof, following a Dutch custom of the time: plant a linden on a farmhouse's sunniest side and it will shade the house all summer while dropping its leaves in time to let winter light back in. That practical 18th-century logic is most of why lindens are the tree most often found beside old Dutch farms, more common there than any species chosen for beauty alone. The land around this particular farmhouse, once part of a monastery estate called Oostbroek, gave its name centuries later to something nobody planting the tree could have predicted: De Uithof, now Utrecht Science Park, one of the largest university campuses in the Netherlands, built up around the old farm over the second half of the 20th century. The farmhouse itself survives as a listed national monument, a low 17th-century building now surrounded by university faculties and student housing rather than fields. At roughly 275 years old, the linden is one of the oldest Dutch lindens still standing anywhere, having watched a working farm turn into a research campus without ever leaving the spot it was planted for shade.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/uithof-linde-utrecht/",
+        "https://commons.wikimedia.org/wiki/File:Oude_Uithoflindeboom,_Toulouselaan_43,_Utrecht,_27_januari_2025_06.jpg"
+      ],
+      "access": "Viewable from the public street at any time; the farmhouse grounds themselves are institutional, not open parkland",
+      "transport": "Bus or tram to Utrecht Science Park, then a short walk, roughly 20-25 minutes from Utrecht Centraal",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Oude_Uithoflindeboom%2C_Toulouselaan_43%2C_Utrecht%2C_27_januari_2025_06.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Hansmuller, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "utr_002",
+      "name": "The Oude Hortus Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "over 260 years",
+      "age_min": 255,
+      "age_max": 270,
+      "location": {
+        "address": "Oude Hortus, Universiteitsmuseum Utrecht, Lange Nieuwstraat 106",
+        "latitude": 52.0848271,
+        "longitude": 5.1257245,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "A ginkgo is either male or female for its entire life, except this one, which has been both since sometime in the 19th century, when a gardener grafted a female branch onto the male trunk so the tree could finally produce the seeds its species is famous for. The graft still shows on the bark today, a visible seam between two sexes on one plant, and it worked: this ginkgo, planted around 1770 in what was then Utrecht University's working medicinal garden, is now old enough that the University Museum's own researchers call it possibly one of the oldest ginkgos growing anywhere outside Japan. The species itself had only just reached Europe when this seedling went into the ground, imported from a country most Dutch botanists of the time had never visited, decades before Charles Darwin was born. The garden around it operated as a teaching collection for medicinal and useful plants from 1723 until 1920, when the university's plant science moved elsewhere and left this walled plot as what it is today, a quiet historic garden behind the University Museum rather than a working laboratory. The tree has outlived that entire purpose. A visit requires a museum ticket, the price of admission for standing next to something that predates the country's current constitution by decades.",
+      "verified_sources": [
+        "https://umu.nl/oude-hortus/bijzondere-bomen-en-planten-in-de-oude-hortus/",
+        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-utrecht.html"
+      ],
+      "access": "Paid entry, Universiteitsmuseum ticket or separate Oude Hortus ticket",
+      "transport": "10-15 minute walk from Utrecht Centraal station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Old_ginkgo_tree%2C_old_Hortus_Botanicus%2C_Utrecht_University%2C_August_2024_-_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Hansmuller, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "utr_003",
+      "name": "The Handkerchief Tree of the Oude Hortus",
+      "species": "Handkerchief Tree (Davidia involucrata)",
+      "age_estimate": "not documented",
+      "age_min": 40,
+      "age_max": 100,
+      "location": {
+        "address": "Oude Hortus, Universiteitsmuseum Utrecht, Lange Nieuwstraat 106",
+        "latitude": 52.0848271,
+        "longitude": 5.1257245,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "For about ten days every May, this tree looks like it is covered in hundreds of small white handkerchiefs, or according to the alternative common name, a flock of ghosts caught mid-flutter. What actually flowers are pairs of oversized white bracts, modified leaves rather than petals, that hang beneath each small flower cluster and catch any breath of wind. Davidia involucrata was unknown to Western botany until 1869, when the French missionary and naturalist Armand David first documented it in the mountains of central China, and it stayed a horticultural rarity for decades afterward because its seeds are notoriously reluctant to germinate, sometimes taking two winters before anything happens at all. Utrecht's specimen, in the walled garden behind the University Museum, is one of the relatively few handkerchief trees the Netherlands has managed to establish and keep alive to a real size, now tall enough to tower over the path beneath it. Outside its two-week May window, it reads as an unremarkable mid-sized tree with heart-shaped leaves, nothing that would make a passerby stop. The garden rewards exactly that kind of patience: come at the wrong time and miss the point entirely, come in May and understand immediately why a tree can be worth crossing a continent for.",
+      "verified_sources": [
+        "https://umu.nl/oude-hortus/bijzondere-bomen-en-planten-in-de-oude-hortus/vaantjesboom/"
+      ],
+      "access": "Paid entry, Universiteitsmuseum ticket or separate Oude Hortus ticket",
+      "transport": "10-15 minute walk from Utrecht Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [5],
+        "label": "mid-May, when the white bracts hang like handkerchiefs",
+        "kind": "flowers"
+      }
+    },
+    {
+      "id": "utr_004",
+      "name": "The Oude Hortus Yew",
+      "species": "Yew (Taxus baccata)",
+      "age_estimate": "over 150 years",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Oude Hortus, Universiteitsmuseum Utrecht, Lange Nieuwstraat 106",
+        "latitude": 52.0848271,
+        "longitude": 5.1257245,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "Every part of this tree is poisonous except the bright red flesh around its seed, which birds eat happily while leaving the seed itself, the one genuinely toxic part, to pass through unharmed and land somewhere new. That single evolutionary trick is most of why yews are found planted beside old churches and gardens across Europe: birds do the planting, humans get the credit. This yew has stood in Utrecht University's old botanical garden for at least 150 years, part of a teaching collection that once used its poisonous foliage as a live lesson in medicinal and dangerous plants rather than as a specimen prized for size or age alone. Yews grow slowly and live long by almost any measure, routinely reaching centuries in places nobody has disturbed them, and this one has had a walled, tended garden to itself for its entire recorded life, none of the storm damage or development pressure that shortens most urban trees' lives. It stands quietly among the ginkgo and rarer imports from China, easy to walk past without a second look, though it has technically been capable of killing anyone who ate the wrong part of it since long before any visitor reading this was born.",
+      "verified_sources": [
+        "https://umu.nl/oude-hortus/bijzondere-bomen-en-planten-in-de-oude-hortus/"
+      ],
+      "access": "Paid entry, Universiteitsmuseum ticket or separate Oude Hortus ticket",
+      "transport": "10-15 minute walk from Utrecht Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "utr_005",
+      "name": "Onder de Linden",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "about 190 years",
+      "age_min": 180,
+      "age_max": 200,
+      "location": {
+        "address": "Nieuwegracht, southern stretch between the Quintijnsbrug and Brigittenbrug",
+        "latitude": 52.0874291,
+        "longitude": 5.1257909,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "The southern stretch of the Nieuwegracht has been called Onder de Linden, literally under the lindens, since at least the 17th century, when the canal first got a uniform planted row of trees in 1660. The trees standing there today are not that old: sources place the current lindens at around 1830, meaning at least one replanting happened somewhere in the intervening 170 years, though no record pins down exactly when or why. What survives is the pattern rather than any single tree, a continuous double row shading the water between the Quintijnsbrug and Brigittenbrug bridges, close enough to the original 17th-century design that the old name still fits. Utrecht's canal-side streets, Nieuwegracht and Oudegracht both, are unusual among Dutch cities for having a lower service level built at water height beneath the upper street, a two-tier system that shaped how the trees above could root and grow for centuries. The lindens here have had to share cramped underground space with wharf cellars and canal walls the whole time, which likely explains why Utrecht's canal trees rarely reach the size of specimens planted in open parkland. None of that shows from the towpath. What shows is dense, cool shade over green water on even the hottest days, the same effect this stretch of canal has been named for since before the Dutch Golden Age had properly started.",
+      "verified_sources": [
+        "https://erfgoed.utrecht.nl/fileadmin/uploads/documenten/zz-erfgoed/publicaties/rapporten-cultuurhistorie/rapport-cultuurhistorie-bomen-langs-de-utrechtse-grachten.pdf",
+        "https://oud-utrecht.nl/nieuws/1119-bomen-langs-de-grachten-van-utrecht-dwalen-door-een-paradijs"
+      ],
+      "access": "Free, public street at any time",
+      "transport": "Central Binnenstad, walkable from Utrecht Centraal, roughly 15 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

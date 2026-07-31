@@ -1,3 +1,17 @@
+## 2026-07-31 — Utrecht opens: 5 trees, three behind one garden wall, two out in the open
+
+Same session, straight after the Zagreb research note. No new submissions. Utrecht was next in the queue.
+
+**A city where the walls matter more than the park boundaries**: Utrecht's genuinely old trees cluster in two very different kinds of protected ground, a walled university garden and a single farmhouse dooryard, both places nobody had reason to fell a tree for centuries; its open canal-side streets, despite being the city's visual signature, turned out to hold the youngest specimens on the page for exactly that reason (street trees get replaced).
+
+**Shipped**: the Uithof Linden (Utrecht's oldest at ~275 years, planted around 1750 beside a farmhouse whose name now belongs to the university's entire science campus built up around it), the Oude Hortus Ginkgo (~260+ years, planted in the university's working medicinal garden, a male tree with a female branch grafted on in the 1800s so it could finally produce seed, the graft scar still visible), the Handkerchief Tree of the Oude Hortus (Davidia involucrata, a genuine Dutch rarity, unknown to Western botany until 1869 and famously hard to germinate), the Oude Hortus Yew (150+ years, part of the same historic teaching garden), and Onder de Linden (the Nieuwegracht's canal-side lime avenue, named since a 1660 planting scheme, honestly the youngest of the five since the current trees date to a ~1830 replanting nobody has documented the reason for).
+
+**A dropped lead worth recording so it isn't re-chased**: a Facebook post from Stichting Wilhelminapark referencing a "rare Chinese parasol tree that survived the Hiroshima atomic bomb" looked promising (the broader phenomenon, second-generation seedlings from Hiroshima survivor trees distributed worldwide as peace symbols, is well documented via Leiden University's own Hortus and a 2023 planting in Zeist), but the post itself, read directly, turned out to be about the original tree in Hiroshima rather than confirming Wilhelminapark actually holds a planted descendant. No second source found either way. Left out rather than publish an unconfirmed claim dressed up by an appealing story.
+
+**Photo hunt**: 2 of 5 found on Wikimedia Commons, both modern (2024/2025) CC BY-SA 4.0 photos by the same Dutch heritage-tree photographer (Hansmuller): the Oude Hortus ginkgo and the Uithof Linden. The Nieuwegracht lindens have plenty of Wikimedia Commons coverage under their historic name "Onder de Linden," but every match was a pre-1900s archival photograph; per the same reasoning that kept a 55-year-old protest photo off Stockholm's elm entry this session, an old photo does not honestly represent a current tree's appearance, so this entry stays photo-missing rather than borrow one. 5 of 5 pins `location_precision: approximate`.
+
+Site rebuilt (721 pages: 53 city, 428 tree, 53 question, 12 collections, homepage), all contracts validated on the first pass; `scripts/qa.py` clean (674 pages). `data/city-list.json` updated (Utrecht: pending to needs_curation). One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Zagreb researched, no page yet: its most famous tree died in May 2026, and the rest didn't clear the bar
 
 Same session, straight after Warsaw. Zagreb was next in the queue.
