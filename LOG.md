@@ -2,6 +2,12 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Stockholm opens: 4 trees, one standing on a live motorway traffic island
+
+Same session, straight after Copenhagen, and the easiest city to source all night: Stockholm keeps its own register of nearly 3,000 protected ancient oaks, a legacy of a royal law that made felling one a capital offence. Shipped Birger Jarl's Oak (Kungsholmen, ~800 years, as old as the city itself, standing on a traffic island because a motorway interchange was built around it rather than through it), Lyell's Oak (Norra Djurgarden, 400+ years, used by geologist Charles Lyell in 1835 for pioneering research on Scandinavia's rising land), the Elms of Kungstradgarden (survivors of the famous 1971 "Almstriden" protest that reshaped Swedish urban planning, several still scarred, one lost to disease as recently as September 2025), and Prince Eugen's Oak (Djurgarden, Stockholm's single largest tree by volume).
+
+Judgment call worth flagging: Birger Jarl's Oak sits in a live motorway interchange, public ground but genuinely unsafe to approach closely, so the entry says exactly that rather than either excluding it or overpromising a pleasant walk. 3 of 4 photos found; the elms have only 1971 protest photos on Commons, no current image, so left honestly missing. Site rebuilt (655 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Copenhagen opens: 4 trees, all tied to named historical figures
 
 Same session, straight after Krakow. Denmark's two most famous ancient oaks both sit outside Copenhagen's boundary (Jaegerspris, Gentofte) and were excluded on that basis. Shipped 4 trees instead, each with a specific named person behind it: Christian IV's silk-industry mulberry on Slotsholmen, a Mexican cycad botanist Frederik Liebmann brought home in 1842, a black locust tradition says sculptor Bertel Thorvaldsen carried home from Italy in 1838, and a lime avenue in the king's own garden that has simply outlasted every replanting around it since the 1660s.
