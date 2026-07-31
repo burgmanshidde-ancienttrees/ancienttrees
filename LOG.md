@@ -2,6 +2,21 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Singapore opens: 7 trees, coverage reopens past the exhausted NL/Ireland tail
+
+New session. Visitors last 7 days: 93 visits, 187 page views (2026-07-24 to 2026-07-30), trending up most days; nothing in that window points at a specific page to deepen. No reader submissions (form's still just its header row, CSV checked directly). Site health checked first: build and QA both clean (817 pages before this run). The Smoke test run itself couldn't be checked this session (`gh` required interactive approval this session's sandbox wouldn't grant, same limitation some prior sessions hit) but REVIEW.md is empty (no BLOCKER recorded) and the build/QA gates were both green, so treated as healthy and proceeded per the fail-open rule.
+
+The session-start brief pointed at Cork as next up, but LOG.md's own history (confirmed by re-reading it, learning from the 2026-07-31 Nijmegen near-miss entry above) shows Cork, Galway, Zagreb, Delft and Den Bosch were all already researched, some multiple times, and correctly left `pending`: none clears the four-tree floor without new data that repeated attempts haven't found. Rather than re-chase them, moved to the next genuinely untried city in the queue: Singapore, tier 1, English-speaking, and, per the data-led ordering rule, backed by an unusually good official register (NParks' Heritage Tree Scheme, 251 trees, exact coordinates for every entry).
+
+Shipped 7: the Tembusu of Lawn E, the tree on Singapore's five-dollar note and the only tree on the register with a real documented age (200+ years, predating the Botanic Gardens themselves); and six more concentrated in Fort Canning Park, a colonial-era rain tree looming over the Hill Street steps, the country's largest known Madras thorn, a rare-surviving tamalan from an early-1900s ornamental scheme, a terap nasi on the 14th Century Walk of History, plus a huge-girthed kapok tree in a Mount Faber car park standing 20m from a forgotten WWII bunker, and a pair of mangrove apples at Chek Jawa on Pulau Ubin, the only two mangrove trees anywhere in Singapore's heritage register.
+
+All 7 pins ship `confirmed`, every one sourced directly from NParks' own per-tree coordinates, a rare zero-approximate city. 3 of 7 photos found on Wikimedia Commons (Tembusu, Rain Tree, Madras Thorn), all CC BY/BY-SA 4.0 with attribution; 4 stay honestly `missing`. 3 trees carry undocumented ages and ship `flagged` rather than guessed, per the honesty rule (age_min/age_max left at 0, not invented).
+
+One real find worth flagging: Singapore's actual oldest heritage tree by documented age, a 226-366 year old Sindora hybrid in Changi, was excluded after research showed it stands in front of a Singapore Land Authority black-and-white bungalow, a private rental property, with no public-access statement from NParks. Full reasoning and every other exclusion (a hotel-restricted fig, a private church-compound angsana, a young thinly-sourced Botanic Gardens baobab, two dead trees) in CURATION.md.
+
+Site rebuilt (828 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
+
 ## 2026-07-31 — Reykjavik opens: 4 trees, honestly young by any standard but genuinely old for Iceland
 
 Same session, straight after Sofia. Reykjavik was next untried city in the queue, and the first genuinely different research problem this session: Iceland lost nearly all its forest within centuries of Norse settlement, so nothing here is old by the standards of the rest of the site. The city intro and every tree's own story say that plainly rather than let the numbers speak for themselves.
