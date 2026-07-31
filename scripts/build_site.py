@@ -1109,6 +1109,11 @@ def city_map_script(markers, center, route=None, other_cities=None):
             "properties": {"slug": c["slug"], "city": c["city"], "n": c["n"]},
         } for c in (other_cities or [])],
     })
+    _ranked = sorted(other_cities or [], key=lambda c: (c.get("rank", 99), -c["n"]))
+    chooser_cities_json = json.dumps(
+        [{"url": c["slug"], "city": c["city"], "country": c["country"],
+          "n": c["n"], "ph": c.get("ph"), "lat": c["lat"], "lng": c["lng"]}
+         for c in _ranked])
     return f"""
 <script src="{MAPLIBRE_JS}"></script>
 <script>
@@ -1144,6 +1149,50 @@ if (OTHER_CITIES.features.length) {{
     map.on('mouseleave', 'othercity', function() {{ map.getCanvas().style.cursor = ''; }});
   }});
 }}
+// One map (Hidde, 2026-07-31, the Groningen articulation): zoom out on a
+// city page and the panel itself becomes the city chooser, same cards as
+// /explore; zoom back in and the trees return. The static page Google sees
+// never changes; this is presentation only.
+var CHOOSER_CITIES = {chooser_cities_json};
+var cityPanel = document.querySelector('.panel');
+var chooserBox = null;
+var chooserOn = false;
+function ensureChooserBox() {{
+  if (chooserBox) {{ return chooserBox; }}
+  chooserBox = document.createElement('div');
+  chooserBox.className = 'panel-chooser';
+  chooserBox.style.display = 'none';
+  cityPanel.appendChild(chooserBox);
+  return chooserBox;
+}}
+function chooserCard(c) {{
+  var ph = c.ph ? '<span class="exc-ph"><img src="' + c.ph + '" alt="" loading="lazy"></span>' : '<span class="exc-ph exc-noph"></span>';
+  return '<a class="exc-card" href="/' + c.url + '">' + ph +
+         '<span class="exc-body"><b>' + c.city + '</b>' +
+         '<span>' + c.n + ' trees &middot; ' + c.country + '</span></span></a>';
+}}
+function updatePanelMode() {{
+  if (!cityPanel || !CHOOSER_CITIES.length) {{ return; }}
+  var z = map.getZoom();
+  if (!chooserOn && z <= 9.5) {{ chooserOn = true; }}
+  else if (chooserOn && z >= 10.5) {{ chooserOn = false; }}
+  var box = ensureChooserBox();
+  for (var i = 0; i < cityPanel.children.length; i++) {{
+    var el = cityPanel.children[i];
+    if (el !== box) {{ el.style.display = chooserOn ? 'none' : ''; }}
+  }}
+  if (chooserOn) {{
+    var b = map.getBounds();
+    var inview = CHOOSER_CITIES.filter(function(c) {{ return b.contains([c.lng, c.lat]); }});
+    box.innerHTML = '<div class="exc-cityhead"><h2>Cities in view</h2></div>' +
+      (inview.length ? inview.slice(0, 10).map(chooserCard).join('')
+                     : '<p class="exc-empty">No other mapped cities in view yet. Keep zooming out.</p>');
+    box.style.display = '';
+  }} else {{
+    box.style.display = 'none';
+  }}
+}}
+map.on('moveend', updatePanelMode);
 if (markers.length > 1) {{
   var _b = new maplibregl.LngLatBounds();
   markers.forEach(function(m) {{ _b.extend([m.lng, m.lat]); }});
@@ -3891,9 +3940,23 @@ def main():
         for tree in trees:
             tree_slugs[tree["id"]] = build_tree_page(entry, tree, trees, pages, species_pages)
         build_question_page(entry, public_collections, pages)
+        _FAVES = ["lisbon", "cadiz", "porto", "amsterdam", "kyoto",
+                  "rome", "palermo", "paris", "london", "barcelona"]
+        def _face(e):
+            hero = e["data"].get("hero_tree_id")
+            if hero:
+                for t in e["data"]["trees"]:
+                    if t["id"] == hero and usable_photo(t):
+                        return thumb_url(usable_photo(t)["url"], 400)
+            for t in e["data"]["trees"]:
+                if usable_photo(t):
+                    return thumb_url(usable_photo(t)["url"], 400)
+            return None
         other_cities = [
             {"slug": e["slug"], "city": e["data"]["city"],
-             "n": len(e["data"]["trees"]),
+             "country": e["data"]["country"], "n": len(e["data"]["trees"]),
+             "ph": _face(e),
+             "rank": _FAVES.index(e["slug"]) if e["slug"] in _FAVES else 99,
              "lat": sum(t["location"]["latitude"] for t in e["data"]["trees"]) / len(e["data"]["trees"]),
              "lng": sum(t["location"]["longitude"] for t in e["data"]["trees"]) / len(e["data"]["trees"])}
             for e in renderable if e["slug"] != entry["slug"] and e["data"]["trees"]
