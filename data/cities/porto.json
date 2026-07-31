@@ -66,8 +66,8 @@
       "age_max": 150,
       "location": {
         "address": "Casa Tait, Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
-        "latitude": 41.148200,
-        "longitude": -8.628350,
+        "latitude": 41.1482,
+        "longitude": -8.62835,
         "neighbourhood": "Massarelos"
       },
       "story": "The base of this southern magnolia measures more than six metres around, thick enough that it would take several adults linking arms to circle it. It grows in the same grounds as Casa Tait's protected tulip tree, inside the Jardins do Palácio de Cristal, and like its neighbour it was formally classified a tree of public interest on 21 May 2021, a status that turns deliberate damage to it into a legal offence rather than simply bad manners. Magnolia grandiflora is native to the southeastern United States, prized in European gardens since the 18th century for its glossy, leathery leaves and dinner-plate-sized white flowers, which release a lemon-and-vanilla scent strong enough to notice from several metres away. Late summer is when this specimen puts on its best show, its last flush of blooms opening just as most of the garden's spring flowering has finished elsewhere. Casa Tait's grounds, now folded into the wider Palácio de Cristal park, once belonged to the Tait family, British port wine merchants whose 19th-century money planted much of what still grows here. The magnolia, like the tulip tree beside it, has outlasted the family's ownership by generations.",
@@ -80,7 +80,9 @@
       "access": "Free, public park, open daily",
       "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
       "best_time": {
-        "months": [8],
+        "months": [
+          8
+        ],
         "label": "August, for the season's last flush of lemon-scented white blooms"
       },
       "photo": {
@@ -124,7 +126,11 @@
       "notes": "Location confirmed and classification status corrected: the municipality's own open-data register of classified trees shows this Metrosideros excelsa (the only one in the whole dataset, a genuinely distinctive match) was formally classified 2019-03-15, not still under review as the 2017 source that originally flagged this tree had it. Story updated to match. Coordinate is the register's own surveyed point, about 160m from the previous whole-garden estimate. No age or planting date found in any source, so age is left as unknown rather than guessed; still flagged for that gap. Photo search 2026-07-29: no openly-licensed photo found for this specimen. A CC-BY-SA 2.5 Metrosideros excelsa photo does exist on Commons (File:Metrosideros_excelsa_flowers.jpg, Júlio Reis/Tintazul), but its own category and EXIF tag it to the Jardim Botânico do Porto, a different garden about 2km away, not this Palácio de Cristal tree, so it was not used. Still missing.",
       "location_precision": "confirmed",
       "best_time": {
-        "months": [5, 6, 7],
+        "months": [
+          5,
+          6,
+          7
+        ],
         "label": "May into July, when it blazes with red flowers, six months off from the New Zealand Christmas the tree is named for"
       }
     },
@@ -137,7 +143,7 @@
       "age_max": 150,
       "location": {
         "address": "Quinta da Macieirinha, Jardins do Palácio de Cristal, Rua de Entre Quintas, 4050 Porto",
-        "latitude": 41.147320,
+        "latitude": 41.14732,
         "longitude": -8.628275,
         "neighbourhood": "Massarelos"
       },
@@ -180,7 +186,10 @@
       "access": "Free, public park, open daily",
       "transport": "10 min walk from Câmara de Massarelos or Casa da Música metro/bus stops",
       "best_time": {
-        "months": [1, 2],
+        "months": [
+          1,
+          2
+        ],
         "label": "January into February, near peak camellia bloom"
       },
       "photo": {
@@ -344,5 +353,6 @@
       "notes": "Single-source tree: the 'most beautiful in the garden' description and general presence come from one dedicated garden-history blog, and no second independent source confirming this specific specimen was found despite a real search. Kept because the underlying facts (species, general garden context, presence of a comparative cedar collection) are independently verifiable even though this exact tree isn't cross-confirmed; age left unknown rather than guessed. Checked 2026-07-29 against ICNF's national register of classified trees (sigservices.icnf.pt, BDG/AIP layer): the only Cedrus atlantica record for the whole of Porto is at 'Jardim da Casa do Professor' (id 360), a distinct site roughly 300m from the Botanical Garden's own coordinates with no clear connection to the garden in any source found, so it was not used to upgrade this pin; still approximate. Photo search 2026-07-29: no openly-licensed photo found on Wikimedia Commons (no 'Cedrus atlantica in Portugal' category exists), iNaturalist, Openverse or Flickr CC search. Still missing.",
       "location_precision": "approximate"
     }
-  ]
+  ],
+  "hero_tree_id": "por_008"
 }
