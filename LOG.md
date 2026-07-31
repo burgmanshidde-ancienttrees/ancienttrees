@@ -2,6 +2,14 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Dubrovnik opens: 4 trees, and a real bug caught by the build gate before it shipped
+
+Same session, straight after Stockholm. All four trees are in Trsteno, a village 20km up the coast that's nonetheless officially part of the City of Dubrovnik: two free, ~500-year-old plane trees on the public square (survived war, fire, and a small 2020 fire, nominated European Tree of the Year 2018), plus a ginkgo, cedar of Lebanon and yew inside the adjoining paid arboretum, each precisely dated to 1858-1871.
+
+**Worth flagging**: this city's trees were first written using the id prefix `dub_`, the obvious short form for Dubrovnik, but Dublin already owns that exact prefix (it's live with 10 trees, dub_001 through dub_010) and five existing collections reference Dublin's `dub_003`/`dub_004` by id. The build script's link validator failed the build outright rather than let it ship broken, which is the gate working as designed. Renamed to `drv_` and rebuilt clean. Flagging the general lesson: check a new city's id prefix against collections, not just against other cities, before finalizing.
+
+1 of 4 photos found. All 4 pins approximate. Site rebuilt (664 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Stockholm opens: 4 trees, one standing on a live motorway traffic island
 
 Same session, straight after Copenhagen, and the easiest city to source all night: Stockholm keeps its own register of nearly 3,000 protected ancient oaks, a legacy of a royal law that made felling one a capital offence. Shipped Birger Jarl's Oak (Kungsholmen, ~800 years, as old as the city itself, standing on a traffic island because a motorway interchange was built around it rather than through it), Lyell's Oak (Norra Djurgarden, 400+ years, used by geologist Charles Lyell in 1835 for pioneering research on Scandinavia's rising land), the Elms of Kungstradgarden (survivors of the famous 1971 "Almstriden" protest that reshaped Swedish urban planning, several still scarred, one lost to disease as recently as September 2025), and Prince Eugen's Oak (Djurgarden, Stockholm's single largest tree by volume).

@@ -1,0 +1,155 @@
+{
+  "city": "Dubrovnik",
+  "country": "Croatia",
+  "status": "needs_curation",
+  "oldest_tree_id": "drv_001",
+  "intro": "Dubrovnik's most remarkable trees all grow in one place, Trsteno, a village the city's own administrative boundary reaches 20 kilometres up the coast: two free-standing plane trees on the public square, planted around 1500 and among the largest of their kind in Europe, and three more inside the adjoining arboretum, a working Renaissance garden founded in the 1490s and still adding species five centuries later. Both halves have survived war, fire and simple time.",
+  "meta_description": "Dubrovnik's most remarkable trees: Trsteno's free 500-year plane trees and its arboretum's 19th-century ginkgo, cedar of Lebanon, and yew.",
+  "question_answer": "Dubrovnik's oldest trees are the two Oriental Planes on Trsteno's village square, planted around 500 years ago by a sea captain who brought saplings home from Constantinople. Their trunks are five metres across, among the largest of their kind in continental Europe.",
+  "question_meta": "The Oriental Planes of Trsteno, planted around 500 years ago, are Dubrovnik's oldest trees, their trunks five metres across on the village's public square.",
+  "question_context": "Trsteno sits about 20 kilometres up the coast from Dubrovnik's old town, within the city's own administrative boundary, and its two ancient plane trees have grown on the village's public square since around 1500, when a sea captain, Florio Jakob Antunov by tradition, planted five saplings brought home from Constantinople beside a natural spring. Three did not survive; two did, and five centuries of Adriatic weather, wars and fires have not managed to finish the job since. The trees came through the 1991 war that reached this coastline, a forest fire that swept the surrounding hills in 2000, and a smaller fire in February 2020, when burning weeds nearby sent a spark into a rotten branch; firefighters extinguished it with foam before serious damage was done. Croatia put the pair forward for European Tree of the Year in 2018. They stand outside the gate of the adjoining Trsteno Arboretum, a separate paid attraction, on open public ground beside the coast road, free for anyone passing through the village to stop and see.",
+  "faq": [
+    {
+      "q": "What is Dubrovnik's oldest tree?",
+      "a": "The two Oriental Planes on Trsteno's village square, planted around 500 years ago and among the largest of their kind in continental Europe."
+    },
+    {
+      "q": "Are the Trsteno plane trees free to see?",
+      "a": "Yes. They stand on the public square in the village of Trsteno, outside the gate of the paid arboretum next door."
+    },
+    {
+      "q": "What is inside Trsteno Arboretum besides the plane trees?",
+      "a": "A working Renaissance garden founded in the 1490s, including a ginkgo, a cedar of Lebanon and a yew, all planted between 1858 and 1871, among the eight oldest documented specimens in its collection."
+    },
+    {
+      "q": "Is Trsteno part of Dubrovnik?",
+      "a": "Yes, administratively. Trsteno is a village within the City of Dubrovnik's boundary, about 20 kilometres from the old town."
+    }
+  ],
+  "trees": [
+    {
+      "id": "drv_001",
+      "name": "The Plane Trees of Trsteno",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "around 500 years",
+      "age_min": 450,
+      "age_max": 550,
+      "location": {
+        "address": "Village square, Trsteno, Dubrovnik",
+        "latitude": 42.713929,
+        "longitude": 17.976462,
+        "neighbourhood": "Trsteno"
+      },
+      "story": "Around 500 years ago, a sea captain remembered as Florio Jakob Antunov sailed home to Trsteno from Constantinople with five young plane tree saplings and planted them beside a spring on the village's main square. Three did not survive; two did, and they have spent the five centuries since growing into what botanists call unique specimens of their kind anywhere in continental Europe, trunks five metres across and canopies rising as high as 50 to 60 metres over the village road. They have outlasted the Republic of Dubrovnik that existed when they were planted, survived the 1991 war that reached this coastline, came through a 2000 forest fire that swept the surrounding hills, and, in February 2020, caught fire themselves when nearby weed-burning sent a spark into a rotten branch; firefighters put it out with foam before serious damage was done. Croatia nominated the pair for European Tree of the Year in 2018, official recognition for two trees that have needed no institutional protection to survive this long, only the water from the spring they were planted beside and, evidently, considerable luck. They stand on public ground, not inside the paid arboretum next door, free for anyone driving the coast road through Trsteno to stop and stand beneath.",
+      "verified_sources": [
+        "https://www.dubrovnik-online.net/trsteno-arboretum",
+        "https://www.thedubrovniktimes.com/news/dubrovnik/item/8260-in-front-of-trsteno-arboretum-famous-dubrovnik-tree-on-fire",
+        "https://total-croatia-news.com/lifestyle/450-year-old-plane-tree-in-arboretum-trsteno-nominated-for-european-tree-of-the-year/"
+      ],
+      "access": "Free, open access, public village square in Trsteno (outside the paid arboretum gate)",
+      "transport": "Local bus from Dubrovnik's Pile Gate toward Trsteno/Orasac, or a car via the D8 coast road, roughly 20km northwest of the old town",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Platane-2%2C_Trsteno.JPG",
+        "license": "Public Domain",
+        "attribution": "Modzzak, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Planting legend (Captain Florio Jakob Antunov, saplings from Constantinople), survival through the 1991 war and 2000 fire, and the February 2020 fire incident are corroborated across Dubrovnik Online, Total Croatia News and a direct Dubrovnik Times report on the 2020 fire. The exact planting date and captain's identity rest on local tradition rather than a documentary record, consistent with how this project treats similar named-founder legends elsewhere; the wide age range (450-550 years) reflects the 'around 500 years' figure most sources converge on.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "drv_002",
+      "name": "Trsteno's Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "around 168 years",
+      "age_min": 165,
+      "age_max": 170,
+      "location": {
+        "address": "Trsteno Arboretum, Trsteno, Dubrovnik",
+        "latitude": 42.71291,
+        "longitude": 17.977163,
+        "neighbourhood": "Trsteno"
+      },
+      "story": "A botanical survey of Trsteno Arboretum identifies eight trees as the collection's oldest documented specimens, each with a planting date recorded to the year rather than estimated from growth rings, and this ginkgo, planted in 1858, is one of two of its kind on that list. Ginkgo biloba is sometimes called a living fossil, a species whose basic form has barely changed across more than 200 million years of fossil record, old enough to have grown alongside dinosaurs, which makes a specimen planted only in the 19th century a relative newcomer by the standards of its own genealogy even as it becomes one of the oldest trees on these particular grounds. It was planted a few decades after Trsteno's own arboretum had already been developing for more than three centuries, part of a wave of exotic introductions to the garden's collection during the 19th century that also brought a second ginkgo in 1861, an American linden the same year as this one, and the yew and persimmon still growing nearby. Ginkgos are famously resistant to disease, pests and pollution, and unlike many of the collection's more delicate Mediterranean and subtropical specimens, this one has needed comparatively little intervention to reach the arboretum's list of oldest survivors.",
+      "verified_sources": [
+        "https://www.researchgate.net/publication/332637316_Dendroloske_znacajke_Arboretuma_Trsteno"
+      ],
+      "access": "Paid entry, Trsteno Arboretum (open daily, hours vary by season)",
+      "transport": "Local bus from Dubrovnik's Pile Gate toward Trsteno/Orasac, or a car via the D8 coast road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Planting date (1858) and its place among the arboretum's eight oldest documented specimens come from a single academic dendrological survey of the arboretum (Dendroloske znacajke Arboretuma Trsteno); no second independent source found giving this specific planting date, though the arboretum's general history and species range are independently well documented elsewhere.",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [11],
+        "label": "November, when its fan-shaped leaves turn brilliant yellow",
+        "kind": "autumn colour"
+      }
+    },
+    {
+      "id": "drv_003",
+      "name": "Trsteno's Cedar of Lebanon",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "around 155 years",
+      "age_min": 150,
+      "age_max": 158,
+      "location": {
+        "address": "Trsteno Arboretum, Trsteno, Dubrovnik",
+        "latitude": 42.71291,
+        "longitude": 17.977163,
+        "neighbourhood": "Trsteno"
+      },
+      "story": "Planted in 1871, this cedar is the youngest of the eight trees Trsteno's own dendrological survey names as the arboretum's oldest documented specimens, and even at roughly 155 years old it already qualifies as a mature, textbook example of a species famous for taking its time. Cedar of Lebanon grows slowly by the standards of most garden trees, developing the wide, flat-tiered canopy visitors associate with the species only after many decades, which means this specimen has spent most of its life still visibly maturing into its now-characteristic shape. It arrived at Trsteno during the same 19th-century wave of exotic plantings that brought the arboretum's ginkgos and other now-venerable specimens, decades after the two famous 500-year-old plane trees outside the gate were already ancient by any measure. The cedar's own native range runs through the mountains of Lebanon, Syria and Turkey, forests logged for construction timber since the biblical era and now surviving only in fragments, which makes botanical gardens like Trsteno part of the species' effective range as much as its wild mountains are. Visitors touring the arboretum's grounds, a paid ticket beyond the free plane trees at the village gate, pass this cedar as part of the same 19th-century collecting era that shaped most of what grows here today.",
+      "verified_sources": [
+        "https://www.researchgate.net/publication/332637316_Dendroloske_znacajke_Arboretuma_Trsteno"
+      ],
+      "access": "Paid entry, Trsteno Arboretum (open daily, hours vary by season)",
+      "transport": "Local bus from Dubrovnik's Pile Gate toward Trsteno/Orasac, or a car via the D8 coast road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Planting date (1871) comes from the same single academic dendrological survey cited for the ginkgo entry; no independent second source found for this specific date, though the species and its presence in the arboretum's collection are independently documented in general arboretum descriptions.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "drv_004",
+      "name": "Trsteno's Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "around 167 years",
+      "age_min": 165,
+      "age_max": 170,
+      "location": {
+        "address": "Trsteno Arboretum, Trsteno, Dubrovnik",
+        "latitude": 42.71291,
+        "longitude": 17.977163,
+        "neighbourhood": "Trsteno"
+      },
+      "story": "Yews are Europe's slowest-aging trees by reputation, individual specimens in churchyards across the continent routinely claimed to be a thousand years old or more, sometimes credibly. Trsteno's own yew makes no such claim: its planting is recorded precisely, 1859, part of the same run of 19th-century plantings that gave the arboretum its ginkgos and cedar, and at around 167 years it is a comparative youngster next to its species' most famous specimens. What it demonstrates instead is how the arboretum itself has worked for nearly six centuries: founded in the 1490s by the Gucetic-Gozze family as a Renaissance summer garden, expanded across generations with whatever species each era's owners could get their hands on, from Mediterranean natives to exotic imports arriving by ship. The yew belongs to the second big wave of that expansion, the 19th-century collecting push that also planted the arboretum's ginkgos and its Lebanon cedar within a few years of each other. It stands as a quieter, darker counterpoint to Trsteno's famous sunlit plane trees at the village gate outside, evergreen where they turn deciduous, patient where they grew fast, part of the same six centuries of continuous cultivation on one stretch of Adriatic coastline.",
+      "verified_sources": [
+        "https://www.researchgate.net/publication/332637316_Dendroloske_znacajke_Arboretuma_Trsteno",
+        "https://www.pvdp.hr/en/arboretum-trsteno/o-arboretumu"
+      ],
+      "access": "Paid entry, Trsteno Arboretum (open daily, hours vary by season)",
+      "transport": "Local bus from Dubrovnik's Pile Gate toward Trsteno/Orasac, or a car via the D8 coast road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Planting date (1859) comes from the academic dendrological survey used for the ginkgo and cedar entries; the arboretum's own official history page independently confirms the 1490s founding and the general character of its 19th-century expansion, though not this specific tree's date.",
+      "location_precision": "approximate"
+    }
+  ]
+}
