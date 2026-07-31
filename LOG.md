@@ -2,6 +2,16 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Helsinki opens: 8 trees, sourced mostly from the city's own official register
+
+New session. Visitors last 7 days: 93 visits, 187 page views (2026-07-24 to 2026-07-30), trending up most days; nothing in that window points at a specific page to deepen yet. No reader submissions (form's still just its header row). Site health checked first: latest Smoke test run green, build and QA both clean, REVIEW.md empty. Next queued city was Cork, but Cork and Galway were both already exhaustively researched last session and genuinely don't clear the four-tree floor (see CURATION.md), so moved to the next untried city, Helsinki.
+
+Helsinki turned out well documented: the City of Helsinki maintains an official public register of 31 individually protected "natural monument" trees and formations, which corroborated three separate Finnish tree-feature articles on species, location and protection history. Shipped 8: the King's Oak (legendarily planted by a Swedish king, flagged as tradition not fact), the Kirjanpuisto Willow (Helsinki's thickest tree, hollow trunk fit 20 children per local lore), the Tali Manor Oak (Finland's second-thickest oak, stands on a golf course), the Tullisaari Lime (Finland's thickest park lime, survived a storm that felled the natural-monument oak beside it), the Herttoniemi Pear Tree (likely Finland's oldest and tallest), the Meilahti Ancient Pine (Helsinki's oldest confirmed tree, ~340 years by core sampling, next to a Bronze Age grave), the North Haaga Snake-branch Spruce (a natural mutant spruce form, this one twice the usual height ceiling), and the Eira Sea Buckthorn (a shrub species that grew into a 7-metre tree).
+
+One real judgment call: the mechanically oldest tree by age range was the Tali oak, but its age is only girth-inferred, while the Meilahti pine has an actual core-sampled figure, so `oldest_tree_id` was set explicitly to the pine, same override pattern as Amsterdam's cycad. 0 of 8 photos found (consistent with this session's Nordic cities generally); all 8 pins approximate, honestly.
+
+Site rebuilt (695 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Oslo opens: 4 trees, session's search budget ran out at the very end
 
 Same session, straight after Zurich, the seventh city this run. Shipped Munch-eika (Montebello, 500-600 years, Oslo's oldest tree by its own city planning office, name likely tied to painter Edvard Munch though not confirmed), the Linden Alley of Dronningparken (planted 1778, older than the Royal Palace built around it decades later), the Birches of Birkelunden (1860s, heart of Norway's first protected urban neighbourhood), and the Ginkgo of Botanisk Hage (planted 1870, believed to be the oldest ginkgo in Northern Europe).
