@@ -2,6 +2,20 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Arnhem opens: 4 trees, and a municipal open-data tree register gave every pin exact coordinates
+
+New session. Visitors last 7 days: 93 visits, 187 page views (2026-07-24 to 2026-07-30), trending up most days; nothing in that window points at a specific page to deepen. No reader submissions (form still just its header row). Site healthy at session start: build and QA both clean (`gh` was blocked by this session's approval gate throughout, so the Smoke test run itself couldn't be checked directly; relied on build+QA as the health signal). Arnhem was next in the Netherlands wave per the prior session's handover.
+
+Shipped 4: De Poortwachters, three sweet chestnuts nicknamed Hans, Gretel and the Witch, planted around 1650-1700 at the gate of Kasteel Zijpendaal and Arnhem's likely oldest tree; the Dalweg Oak, a pedunculate oak kept unusually large (35 metre crown) by a slope with permanent groundwater; the Huissensedijk Plane, the thickest Oriental plane in the Netherlands, standing beside a small church German troops occupied in WWII while the tree and village both came through the Battle of Arnhem largely unscathed; and the Poplar of Lauwersgrachtpark, listed by the Bomenstichting's national register as the country's oldest poplar, growing on the one stretch of Arnhem's old moat that was never filled in.
+
+Worth flagging for future Netherlands-wave cities: Arnhem runs its own ArcGIS open-data tree register (`geo.arnhem.nl/arcgis/rest/services/OpenData/Waardevolle_bomen`), queryable directly by street, species and feature tags, and it gave exact coordinates for all four trees, a clean sweep of `location_precision: confirmed`. Worth checking whether other Dutch municipalities publish the same kind of layer before settling for park-level approximate pins.
+
+One candidate researched and dropped: a "Red Beech" grove near Huis Zypendaal is real (two sources) but no source anywhere gives it a planting date, and the register's nearest matching tree cluster is labelled the plain species rather than the copper cultivar the popular name implies, so it stayed out rather than ship undated. One boundary catch: the Wodanseiken, Arnhem's best-known named-oak legend, actually stand in Wolfheze, municipality of Renkum, and were excluded on that basis, same discipline as recent Cork and Nijmegen near-misses. Full detail on both in CURATION.md.
+
+0 of 4 photos found; Wikimedia has a photo category for the church beside the plane tree but nothing could be confirmed to actually show the tree itself rather than just the building.
+
+Site rebuilt (814 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Den Bosch researched but held back, then this session's WebSearch budget ran out; closing here rather than force low-confidence work
 
 Same session, straight after Breda. Den Bosch (`'s-Hertogenbosch`) produced only 2 verified candidates against the 4-tree floor (full detail in CURATION.md); moved to pick more up, but this session's search allowance (200 calls) was already spent across Nijmegen, Breda and the Den Bosch pass.
