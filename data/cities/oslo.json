@@ -1,0 +1,155 @@
+{
+  "city": "Oslo",
+  "country": "Norway",
+  "status": "needs_curation",
+  "oldest_tree_id": "osl_001",
+  "intro": "Oslo's remarkable trees span the city's whole social history: a roughly 500-year-old oak in the western suburbs that predates the city's written tree records entirely, a linden avenue a merchant planted decades before the Royal Palace that now surrounds it existed, the birch-ringed square at the heart of Norway's first protected urban neighbourhood, and a ginkgo in the country's oldest botanical garden believed to be the oldest of its kind anywhere in Northern Europe.",
+  "meta_description": "Oslo's most remarkable trees: the 500-year Munch-eika oak, Dronningparken's pre-palace lindens, Birkelunden's birches, and a record ginkgo.",
+  "question_answer": "Oslo's oldest tree is the Munch-eika, an oak in the Montebello area estimated at 500 to 600 years old with a trunk about eight metres around, according to the city's own planning office. It predates Oslo's written records of its tree population entirely.",
+  "question_meta": "The Munch-eika, a 500-to-600-year-old oak in Montebello, is Oslo's oldest tree, its trunk about eight metres around.",
+  "question_context": "Oslo's city-planning magazine names the Munch-eika as the clearest example of the value, and the fragility, of the city's oldest trees: an oak in the Montebello area estimated at 500 to 600 years old, with a trunk roughly eight metres around, already mature centuries before Christiania grew into the modern city that eventually surrounded it. Its name almost certainly points to Edvard Munch, whose home and studio at nearby Ekely stood a short walk away for the last decades of his life, though no source this project could find documents the naming story itself beyond that geographic coincidence. What the same city article makes explicit is how quickly a tree this old can still be lost: root damage, soil compaction or simple neglect can undo five centuries of growth in a handful of years, which is why Oslo's own planners use the Munch-eika to argue for protecting old trees before they become emergencies rather than after. It stands today as one of very few individual Oslo trees old enough to predate the city's own written tree records.",
+  "faq": [
+    {
+      "q": "What is Oslo's oldest tree?",
+      "a": "The Munch-eika, an oak in the Montebello area estimated at 500 to 600 years old with a trunk about eight metres around."
+    },
+    {
+      "q": "Why is it called Munch-eika?",
+      "a": "The name almost certainly refers to painter Edvard Munch, whose home and studio at nearby Ekely stood a short walk away, though the exact naming story is not documented."
+    },
+    {
+      "q": "Are Dronningparken's lindens older than the Royal Palace?",
+      "a": "Yes. Merchant Bernt Anker planted the linden alley from 1778, while the Royal Palace was not built until 1823-1849, decades later on land already shaped by his garden."
+    },
+    {
+      "q": "What makes the Botanisk hage ginkgo special?",
+      "a": "Planted in 1870, it is believed by the garden's own museum to be the oldest ginkgo tree in Northern Europe."
+    }
+  ],
+  "trees": [
+    {
+      "id": "osl_001",
+      "name": "Munch-eika",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "500-600 years",
+      "age_min": 500,
+      "age_max": 600,
+      "location": {
+        "address": "Montebello, Oslo",
+        "latitude": 59.934837,
+        "longitude": 10.666408,
+        "neighbourhood": "Montebello"
+      },
+      "story": "Oslo's own city-planning office names this oak the city's oldest tree, roughly 500 to 600 years old with a trunk about eight metres around, growing in the Montebello area on the city's west side. Its name almost certainly points to Edvard Munch, whose home and studio at nearby Ekely stood a short walk from here for the last decades of his life, though the exact naming story is not documented anywhere this project could confirm, only the coincidence of the painter's name and the neighbourhood. What is documented is the oak's remarkable persistence: a tree with this trunk girth would have already been mature when Christiania, as Oslo was then called, was still a modest fortified trading town centuries away from the industrial and cultural boom that eventually brought artists like Munch to its western suburbs. Oslo's municipal magazine on street trees uses the Munch-eika as its lead example of what the city stands to lose when old trees go untended, a reminder that a tree with five centuries behind it can still be brought down by root damage, soil compaction or simple neglect in a matter of years rather than centuries. It survives today as one of very few individual trees in Oslo old enough to predate the city's written records of its own tree population.",
+      "verified_sources": [
+        "https://magasin.oslo.kommune.no/byplan/bytraer-til-glede-og-besvaer"
+      ],
+      "access": "Free, open access, Montebello (residential area, tree visible from public streets)",
+      "transport": "Montebello railway/metro station, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age (500-600 years), trunk circumference (about 8m) and status as Oslo's oldest tree come from a single source, Oslo municipality's own city-planning magazine feature on the city's trees; no independent second source found. The name's connection to painter Edvard Munch is this project's own inference from his documented residence at nearby Ekely, not a sourced claim; flagged as unconfirmed in the story text itself rather than stated as fact.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "osl_002",
+      "name": "The Linden Alley of Dronningparken",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "around 240 years",
+      "age_min": 225,
+      "age_max": 245,
+      "location": {
+        "address": "Dronningparken, Slottsparken, Oslo",
+        "latitude": 59.916138,
+        "longitude": 10.725358,
+        "neighbourhood": "Vika"
+      },
+      "story": "Before Oslo's Royal Palace existed, this stretch of ground was Sommerro, a meadow the mayor Christian Henrik Stoedt turned into a small rococo garden in 1751. When the merchant Bernt Anker took over the property in 1778, he kept the formal garden but planted a linden avenue through the surrounding land he was reshaping into a more naturalistic park, the alley that still opens today toward Henrik Ibsens gate. The Royal Palace itself would not be built for another half-century, going up between 1823 and 1849 around and beside the park Anker had already shaped; when it was finished, his linden alley became part of the grounds of a building that did not exist when the trees were planted. Not everything from that planting survives: when a new entrance to the National Theatre metro station opened in the park's southwest corner in 1998, the oldest lindens in that stretch were removed to make way for it. The alley that remains is Oslo's clearest surviving link to the city's pre-royal, merchant-era parkland, predating the palace it now appears to belong to by nearly half a century.",
+      "verified_sources": [
+        "https://oslobyleksikon.no/side/Slottsparken",
+        "https://snl.no/Dronningparken"
+      ],
+      "access": "Free, open access, Dronningparken/Slottsparken (public park, open at all times)",
+      "transport": "National Theatre railway and metro station, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The 1751 rococo garden, Bernt Anker's 1778 takeover and linden planting, and the 1998 partial replacement for the metro entrance are corroborated between Oslo byleksikon (the city's own historical encyclopedia) and Store norske leksikon's Dronningparken entry. No source gives a precise planting year for the surviving lindens beyond 'from Anker's time' (from 1778), so the age range reflects that decade rather than a single dated planting.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "osl_003",
+      "name": "The Birches of Birkelunden",
+      "species": "Silver Birch (Betula pendula)",
+      "age_estimate": "around 160 years",
+      "age_min": 155,
+      "age_max": 165,
+      "location": {
+        "address": "Birkelunden, Grunerlokka, Oslo",
+        "latitude": 59.926351,
+        "longitude": 10.760197,
+        "neighbourhood": "Grunerlokka"
+      },
+      "story": "A cavalry officer named Thorvald Meyer laid out this park in the 1860s as he subdivided the farmland around it into what became Grunerlokka, one of Oslo's first planned working-class districts, and lined its edges with birch trees, the species that gave the park its name, bjork being Norwegian for birch. Meyer gave the park to the city for free in 1882, and between 1916 and 1920 much of its internal planting was rearranged into a practical playground for the neighbourhood's children, though the perimeter birches from Meyer's original layout mostly stayed in place. In 2006, Birkelunden and the streets and apartment blocks around it became the first protected urban cultural environment in Norway, a designation covering 116 hectares, 139 buildings, the neighbourhood's Paulus Church and its school, with the park's own birch trees, now around 160 years old, standing at the centre of what the protection order is meant to preserve. Grunerlokka has since become one of Oslo's most fashionable neighbourhoods, its industrial-era apartment blocks converted into some of the city's most sought-after addresses, but the birches ringing the square are the one feature that connects today's cafes and boutiques back to Meyer's 1860s farmland subdivision without needing a plaque to explain it.",
+      "verified_sources": [
+        "https://lokalhistoriewiki.no/Birkelunden_(Oslo)",
+        "https://www.riksantikvaren.no/kulturhistorie/birkelunden-murbyens-hjerte/"
+      ],
+      "access": "Free, open access, Birkelunden (public park, open at all times)",
+      "transport": "Tram to Birkelunden or Olaf Ryes plass, adjacent",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Thorvald Meyer's 1860s layout, the 1882 gift to the municipality, the 1916-1920 replanting and the 2006 heritage protection are corroborated between lokalhistoriewiki.no and Riksantikvaren (Norway's own directorate for cultural heritage). No source gives an exact planting year for the specific surviving perimeter birches, only that they date from Meyer's original 1860s layout, hence the age range rather than a precise figure.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "osl_004",
+      "name": "The Ginkgo of Botanisk Hage",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "around 156 years",
+      "age_min": 154,
+      "age_max": 158,
+      "location": {
+        "address": "Botanisk hage, Toyen, Oslo",
+        "latitude": 59.916075,
+        "longitude": 10.76846,
+        "neighbourhood": "Toyen"
+      },
+      "story": "Norway's oldest botanical garden, founded in 1814 on land the newly created University of Oslo assigned to its first botany professor, Christen Smith, holds what its own museum believes to be the oldest ginkgo tree anywhere in Northern Europe. It was planted in 1870 behind what would become the Victoria House, a tropical glasshouse built six years later specifically to grow and display the enormous Victoria water lily, and the ginkgo has spent the century and a half since then growing into the garden's largest specimen of its kind. Ginkgo biloba survived essentially unchanged for over 200 million years in the fossil record before nearly disappearing everywhere except a few pockets of China, which is why Europeans often call it a living fossil or, in Norwegian, a temple tree, a name reflecting the species' long cultivation around Buddhist and Confucian temple grounds in East Asia. The Victoria House itself marked its 150th anniversary in 2026, a reminder that even the garden's celebrated glasshouse is younger than the tree growing quietly behind it. Ginkgos are famously resistant to pollution, pests and disease, among the reasons this one has outlasted several rebuilding phases of the garden around it since 1870.",
+      "verified_sources": [
+        "https://www.nhm.uio.no/utstillinger/botanisk-hage/avdelinger/arboretet/trar/ginkgo/",
+        "https://www.uniforum.uio.no/nyheter/2026/06/sjarmerende-og-slitt-150-ars-jubilant.html"
+      ],
+      "access": "Free, open access, Botanisk hage (public garden, open at all times; glasshouses may charge separately)",
+      "transport": "Toyen metro station, short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Planting date (1870) and the 'oldest ginkgo in Northern Europe' claim come from the Natural History Museum's (University of Oslo) own page on the garden's ginkgo, phrased there as 'antas a vaere' (believed to be) rather than stated as certain; carried here with the same hedge per hard rule 8. The Victoria House's 1876 opening and 2026 150th-anniversary marker independently corroborate the garden's mid-19th-century development phase via a University of Oslo staff-news article.",
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [10],
+        "label": "October, when its fan-shaped leaves turn brilliant yellow",
+        "kind": "autumn colour"
+      }
+    }
+  ]
+}
