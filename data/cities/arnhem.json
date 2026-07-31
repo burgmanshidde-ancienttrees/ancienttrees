@@ -1,0 +1,152 @@
+{
+  "city": "Arnhem",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Arnhem's oldest trees keep watch at doorways: three chestnuts at the gate of a castle, an oak above a slope no drought can dry out, a plane tree beside the village church that watched German soldiers move in and Allied paratroopers fight past without either burning it down. All four survive on the strength of where they happened to stand rather than any special protection, at a castle entrance, a hillside spring, a dike, and the last surviving stretch of the city's old moat. None require a ticket.",
+  "meta_description": "Arnhem's oldest tree is likely a ~370-year-old chestnut trio guarding Kasteel Zijpendaal's gate. Four verified trees, real stories, how to reach each one.",
+  "question_answer": "Arnhem's oldest tree is very likely one of De Poortwachters, three sweet chestnuts planted around 1650 to 1700 at the entrance to Kasteel Zijpendaal, now roughly 350 to 375 years old. Locals have nicknamed the two thickest Hans and Gretel and the leaner third the Witch.",
+  "question_meta": "Three 350-year-old chestnuts guarding a castle gate are likely Arnhem's oldest trees. Where to find them, and the city's other three.",
+  "question_context": "De Poortwachters, three sweet chestnuts standing together at the entrance to Kasteel Zijpendaal in Gulden Bodem park, are the best-documented candidates for Arnhem's oldest tree, planted somewhere between 1650 and 1700 and now measured at roughly 750, 718 and 472 centimetres around. A local legend credits Karel van Egmond, the last independent Duke of Guelders, with planting them personally; the dates rule that out, since he died in 1538, more than a century before these trees are estimated to have gone in. What the legend gets right is the trees' role: everyone who has visited the castle since has had to walk between them, which is likely how they earned their name. A competing candidate is the Huissensedijk plane tree beside the Bonifatiuskerk in Elden, whose age is less settled: estimates for its planting range from 1725 to 1800, a spread wide enough that on its earliest possible date it could be older than the chestnuts, and on its latest, younger than the poplar. Given that uncertainty, the chestnuts are the safer answer. All three stand in a park bought whole by the municipality in 1899 and open, free, every day.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Arnhem?",
+      "a": "Very likely one of De Poortwachters, three sweet chestnuts planted around 1650 to 1700 at the entrance to Kasteel Zijpendaal, now roughly 350 to 375 years old."
+    },
+    {
+      "q": "Are Arnhem's ancient trees free to visit?",
+      "a": "Yes, all four are in public parks or beside public streets with free access."
+    },
+    {
+      "q": "Which Arnhem tree is the thickest of its kind in the Netherlands?",
+      "a": "The Oriental plane beside the Bonifatiuskerk in Elden, with a trunk around 7.1 to 7.5 metres in circumference."
+    },
+    {
+      "q": "Which Arnhem tree is the oldest of its kind in the Netherlands?",
+      "a": "The poplar of Lauwersgrachtpark, a hybrid clone planted between 1750 and 1800 and listed as the country's oldest poplar in the Bomenstichting's national register of monumental trees."
+    }
+  ],
+  "trees": [
+    {
+      "id": "arn_001",
+      "name": "De Poortwachters",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "~370 years",
+      "age_min": 325,
+      "age_max": 390,
+      "location": {
+        "address": "Gulden Bodem park, entrance to Kasteel Zijpendaal, Zijpendaalseweg, Arnhem",
+        "latitude": 52.0000888,
+        "longitude": 5.8905785,
+        "neighbourhood": "Hoogkamp"
+      },
+      "story": "Locals call them Hans, Gretel and the Witch, and Arnhem's storytellers like to credit Karel van Egmond, the last independent Duke of Guelders, with planting these three sweet chestnuts by hand. The dates do not support it: van Egmond died in 1538, and these trees, girths of 750, 718 and 472 centimetres, are closer to 370 years old, planted around 1650 to 1700 at the gateway to Huis Zypendaal. The name that stuck anyway is De Poortwachters, the Gatekeepers, because for the better part of four centuries every visitor to the castle has had to walk between them first. The Hansel and Gretel nicknames follow the same logic: the two thickest, standing side by side, are the well fed pair, and the leaner third is the witch left behind. They survived a fire in 1945, the year Allied troops finally liberated Arnhem after the previous autumn's battle for the city, and outlast everything else the same way they always have, rooted exactly where the path forces you past them. In 2024, for Sonsbeek park's 125th anniversary, artists wired sensors into six of the park's trees for a temporary route called Arnhemse Bomen Vertellen, Arnhem's Trees Tell, translating each tree's sap flow and trunk movement into sound; the Poortwachters were its first stop.",
+      "verified_sources": [
+        "https://bootsandbowtie.com/the-monumental-trees-of-arnhem-a-birch-too-far/",
+        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/15-bijzondere-bomen-in-gelderland.html",
+        "https://arnhem.nieuws.nl/gemeenteberichten/20240617/wandelroute-arnhemse-bomen-vertellen-begint-in-sonsbeek/"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Gulden Bodem park, north Arnhem; about a 30 minute walk from Arnhem Centraal station, or a short bus ride toward Alteveer",
+      "best_time": {
+        "months": [7],
+        "label": "July, when the chestnuts hang cream-coloured catkins the length of a hand",
+        "kind": "catkins"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_002",
+      "name": "The Dalweg Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "~300 years",
+      "age_min": 275,
+      "age_max": 325,
+      "location": {
+        "address": "Path from Dalweg to Braamweg, Sonsbeek-Zijpendaal-Gulden Bodem estate, Arnhem",
+        "latitude": 51.9938195,
+        "longitude": 5.9141088,
+        "neighbourhood": "Hazegrietje"
+      },
+      "story": "Most oak stories are about longevity. This one is about plumbing. The Dalweg Oak has spent close to three centuries rooted on a slope where groundwater runs permanently just beneath the surface, so in the driest summer its roots still reach water, and in the wettest winter the slope drains before it can drown. That single accident of geology explains a tree with a 35 metre crown, wider than most Dutch houses are tall, and a trunk that measured roughly 6.2 metres around in 2015, thick enough to rank among the largest oaks in the country. It has not had an easy run at the top: a beech grew up beside it and a self seeded Douglas fir plantation crowded in later, both stealing light, and the oak has shed side branches in response for years. None of that has touched its vitality. Planted somewhere between 1700 and 1750, it stands above the walking path that climbs from Dalweg to Braamweg, one of the quieter corners of the Sonsbeek, Zypendaal and Gulden Bodem estate that the municipality bought whole in 1899 and never fenced off. No plaque marks it. You just have to look up while you are still catching your breath from the hill.",
+      "verified_sources": [
+        "https://bootsandbowtie.com/the-monumental-trees-of-arnhem-a-birch-too-far/",
+        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/15-bijzondere-bomen-in-gelderland.html"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Sonsbeek estate, north Arnhem; about a 20 minute walk from Arnhem Centraal station via Park Sonsbeek",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_003",
+      "name": "The Huissensedijk Plane",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "~265 years",
+      "age_min": 225,
+      "age_max": 300,
+      "location": {
+        "address": "Huissensedijk, beside the Bonifatiuskerk, Elden, Arnhem",
+        "latitude": 51.9608784,
+        "longitude": 5.8885157,
+        "neighbourhood": "Elden"
+      },
+      "story": "The thickest Oriental plane in the Netherlands stands beside the smallest, whitest church in Arnhem, and the two have shared roughly two centuries of the same ground. Sources disagree on exactly how long: the tree is usually dated to somewhere between 1725 and 1800, its circumference now around 7.1 to 7.5 metres, short stemmed with arms so thick they read as separate trunks holding up one broad crown above the dike. In the winter floods of 1926, with the surrounding polder underwater, a farmer strung a rope from his raised farmhouse to this tree and used it to pull a small boat across the flooded land so his children could still reach school and the household could still shop. During the Second World War, German troops occupying the little Bonifatiuskerk beside it made the tree a direct witness to the occupation, and when the Battle of Arnhem tore through the city in September 1944, the village of Elden and this tree both came through largely unscathed while much of Arnhem did not. Its wounds since have been more mundane: storm damage patched in 1980, its heavy crown cabled in the 1990s to keep the arms from splitting under their own weight. It still stands exactly where the dike meets the church, in a corner of the city built around a football stadium and a ring road that mostly gets driven past rather than walked to.",
+      "verified_sources": [
+        "https://gemeentederankarnhem.nl/elden/kerkgebouw/de-oosterse-plataan/",
+        "https://erfgoedarnhem.wordpress.com/2015/05/10/monumentale-en-markante-bomen-in-arnhem/"
+      ],
+      "access": "Free, public churchyard, viewable anytime",
+      "transport": "Elden, south Arnhem, near GelreDome stadium; reachable by bus from Arnhem Centraal station, about 25 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "arn_004",
+      "name": "The Poplar of Lauwersgrachtpark",
+      "species": "Canadian Poplar (Populus x canadensis)",
+      "age_estimate": "~250 years",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Lauwersgrachtpark, behind Musis Sacrum, Eusebiusbuitensingel, Arnhem",
+        "latitude": 51.9810861,
+        "longitude": 5.9149959,
+        "neighbourhood": "Markt"
+      },
+      "story": "The Netherlands' oldest poplar grows behind a concert hall, on the last stretch of canal Arnhem never filled in. Most of the city's old defensive moat became streets generations ago; the Lauwersgracht survived by accident, and this Canadian poplar has grown alongside it since somewhere between 1750 and 1800, long enough that the Bomenstichting's national register of monumental trees lists it as the oldest of its kind in the country. It is not a pure species but a hybrid clone, one of the first crosses of Populus nigra, Europe's native black poplar, with an American parent, made in France around 1800 and planted across the continent before anyone had settled on what to call it. A postcard from around 1920 already shows a mature tree leaning over the water in almost the same spot; a photograph from 2008 shows the same reflection, barely changed. It stands today in Lauwersgrachtpark, tucked behind Musis Sacrum's concert stages just off the Eusebiusbuitensingel, the kind of tree a city walks past on the way to a show without knowing it is looking at the oldest poplar in the Netherlands.",
+      "verified_sources": [
+        "http://www.bomeninfo.nl/arnhem4.htm",
+        "https://www.bomenstichting.nl/infotheek-en-faq/informatie-over-bomen/populier.html"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "City centre, behind Musis Sacrum; about a 10 minute walk from Arnhem Centraal station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}
