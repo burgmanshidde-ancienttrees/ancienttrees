@@ -1,0 +1,174 @@
+{
+  "city": "Maastricht",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Maastricht's most remarkable trees sit on the edges of the things that shaped the city: a chestnut on a working farm above Amby, a grove of giant sequoias in a cemetery that has taken the city's dead since 1812, and a stand of 300-year-old oaks marking the outline of a baron's star-shaped forest garden above Kasteel Neercanne. Closer to the centre, Stadspark, one of the oldest city parks in the Netherlands, holds the country's tallest recorded plane tree alongside three beeches nearly as old as the park's own 19th-century layout.",
+  "meta_description": "Maastricht's oldest trees range from a contested-age farm chestnut to 300-year-old star-forest oaks. Five verified trees, real stories, real locations.",
+  "question_answer": "Maastricht's oldest tree with a reliable date is a stand of oaks ringing the edge of Cannerbos, a star-shaped forest garden Baron Daniel Wolfgang van Dopff laid out around 1700 beside Kasteel Neercanne, making them roughly 300 years old. A farm chestnut in Amby may be close in age or even older, but its planting date is genuinely disputed and unconfirmed.",
+  "question_meta": "The 300-year-old oaks of Cannerbos, planted around a baron's 1700 star forest, are Maastricht's oldest reliably dated tree. The full five.",
+  "question_context": "Maastricht's oldest-tree claim goes to whichever standard matters more, a reliable date or a possibly older but unconfirmed one. The Cannerbos oaks ring the edge of a star-shaped forest garden a baron laid out around 1700, and their roughly 300-year age is treated as trustworthy because it is tied to a single, dated landscaping event rather than a guess from girth alone. The Molenweg chestnut could plausibly be just as old or older, but its own documentation shows real disagreement: the Bomenstichting's national register estimates an 1750-1800 planting, a 2022 measurement suggested 1800 plus or minus 40 years, and a persistent local legend crediting Russian Cossacks during the 1814 siege of Maastricht has been investigated and dismissed as implausible by the tree's own researchers. Only a core sample would settle it, and none has been taken. Stadspark's three oldest beeches and its record-height plane tree are both well measured but comparatively young, 150 to 160 years old, products of the park's 19th-century expansion rather than survivors of its 17th-century linden-lined origins, none of which are known to still stand.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Maastricht?",
+      "a": "The most reliably dated are the oaks ringing Cannerbos, planted around 1700 as part of a baron's star-shaped forest garden, roughly 300 years old. A farm chestnut in Amby may be as old or older, but its planting date is disputed."
+    },
+    {
+      "q": "Are Maastricht's remarkable trees free to visit?",
+      "a": "Four of the five are free and open to the public at any time. The Molenweg chestnut stands on working farmland and is visible only from the access road."
+    },
+    {
+      "q": "Where is the tallest plane tree in the Netherlands?",
+      "a": "In Maastricht's Stadspark, part of a row of three planes beside Van Heylerhofflaan. The tallest measures 39 metres, the other two 37.5 and 36.5 metres."
+    },
+    {
+      "q": "What is the story behind the Cannerbos oaks?",
+      "a": "They mark the edge of a star-shaped forest garden Baron Daniel Wolfgang van Dopff laid out around 1700 beside Kasteel Neercanne, and are roughly 300 years old today."
+    }
+  ],
+  "trees": [
+    {
+      "id": "maa_001",
+      "name": "The Sweet Chestnut of Molenweg",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "disputed, likely 250-275 years",
+      "age_min": 225,
+      "age_max": 280,
+      "location": {
+        "address": "Molenweg 1a, Amby",
+        "latitude": 50.8534549,
+        "longitude": 5.7374452,
+        "neighbourhood": "Amby"
+      },
+      "story": "Nobody can say exactly when this tree was planted, and the people who study it are refreshingly honest about that. Standing beside the entrance gate of the Prickaerts family farm in Amby, this sweet chestnut has a trunk 25 metres tall and, as of a 2021 measurement, just over six metres around, up from 5.25 metres when first recorded in 1986. The national tree register estimates it was planted between 1750 and 1800; a 2022 assessment by Monumental Trees suggested 1800, plus or minus 40 years. A persistent local story credits Russian Cossack troops with planting it during the 1814 blockade of Maastricht, but researchers who looked into Cossack military behaviour during that campaign found the tale, in their own words, highly unrealistic, and no supporting evidence has ever surfaced. Only a dendrochronological core sample would settle the question with any precision, and none had been taken as of the most recent published research, part of an ongoing joint study between the Bomenstichting and Wageningen University sampling several of Maastricht's oldest trees. Until that happens, this chestnut carries its age the same way it carries its twisted, weather-beaten trunk: honestly, and without pretending to a certainty nobody has actually earned.",
+      "verified_sources": [
+        "https://amiepedia.nl/index.php/Tamme_kastanje_Molenweg_-_deel_1",
+        "https://www.thuisinmaastricht.nl/actueel/artikel/reusachtige-tamme-kastanjeboom-1-van-de-oudste-bomen-van-maastricht"
+      ],
+      "access": "On private farmland, visible from the public access road",
+      "transport": "About 4km northeast of Maastricht centre, in Amby; reachable by bus or a 15-minute bike ride",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "maa_002",
+      "name": "The Giant Sequoias of Tongerseweg",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "about 150 years",
+      "age_min": 145,
+      "age_max": 155,
+      "location": {
+        "address": "Algemene Begraafplaats Tongerseweg",
+        "latitude": 50.8410656,
+        "longitude": 5.6632307,
+        "neighbourhood": "Wyckerpoort"
+      },
+      "story": "Some of the honour squares in Maastricht's oldest surviving cemetery were planted not with the usual yews or cypresses but with giant sequoias, a species native to a single mountain range in California and almost never found in a 19th-century Dutch burial ground. The cemetery itself has taken Maastricht's dead since 1812, making it one of the oldest municipal cemeteries in the Netherlands, and its brick chapel and the towering sequoias are what most visitors remember. The largest measures 6.85 metres around and 36.6 metres tall, roughly 150 years old, among the thickest specimens of its kind recorded anywhere in the country, though no longer the tallest: other Dutch sequoias have since overtaken it in height while it kept adding girth instead. Planting a species built to eventually reach 90 metres and outlive the Roman Empire in a graveyard designed for individual human memory is its own quiet statement, whether or not the 19th-century planners intended it that way. The cemetery, now a national heritage monument holding more than a thousand trees in total, remains open to visitors during normal hours, sequoias included.",
+      "verified_sources": [
+        "https://www.bomenstichting.nl/infotheek-en-faq/informatie-over-bomen/mammoetboom.html",
+        "https://nl.wikipedia.org/wiki/Algemene_Begraafplaats_Tongerseweg"
+      ],
+      "access": "Free, cemetery open to visitors during normal daytime hours",
+      "transport": "15-20 minute walk or short bus ride from Maastricht centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "maa_003",
+      "name": "The 1700 Oaks of Cannerbos",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 300 years",
+      "age_min": 290,
+      "age_max": 320,
+      "location": {
+        "address": "Cannerbos, edge of the forest near Kasteel Neercanne",
+        "latitude": 50.8187008,
+        "longitude": 5.6673808,
+        "neighbourhood": "Sint Pieter"
+      },
+      "story": "A baron's coat of arms is the reason this forest has straight lines running through it at all. Around 1700, Baron Daniel Wolfgang van Dopff, who had just built Kasteel Neercanne into the hillside beside it, laid out the slope forest above his new estate as a sterrenbos, a half-star pattern of radiating paths that echoed the half-star on his own family crest, complete with a belvedere, a tea house and a temple of love at the centre where the paths converged. Oaks, elms, beeches and alders went into the ground as part of that original planting scheme. The formal star layout did not survive the 19th century, when neglect let the forest grow back into something closer to ordinary woodland, but a number of oaks along and around the forest's edge are still standing from that first planting, roughly 300 years old today, the clearest physical trace left of Van Dopff's geometric ambition. Kasteel Neercanne itself, built into an old marl quarry, still stands beside the forest and today operates as a restaurant and hotel, while the wooded slope above it remains open, publicly accessible walking terrain.",
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Cannerbos",
+        "https://www.limburgs-landschap.nl/natuurgebied/cannerbos/"
+      ],
+      "access": "Free, open public woodland at any time",
+      "transport": "20-25 minute bus ride from Maastricht centre, or a longer bike ride",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "maa_004",
+      "name": "The Three Oldest Beeches of Stadspark",
+      "species": "Beech (Fagus sylvatica)",
+      "age_estimate": "about 160 years",
+      "age_min": 155,
+      "age_max": 165,
+      "location": {
+        "address": "Stadspark Maastricht",
+        "latitude": 50.8430365,
+        "longitude": 5.6974494,
+        "neighbourhood": "Jekerdal"
+      },
+      "story": "Stadspark's own marked walking route names these three beeches, standing together partway along the Jeker, as the oldest trees in a park that otherwise holds more than 1,400 of them. At around 160 years, they date to the park's main 19th-century expansion rather than to its far older origins: Stadspark traces its beginnings to a linden planting in 1648 and a formal walking path laid out from 1706, but none of those 17th and early 18th-century originals are known to have survived into the present, so these beeches, planted as the various sub-parks along the Jeker were laid out through the 1800s, are as far back as anyone can point with confidence today. The park itself is one of the oldest continuous city parks in the Netherlands, a 10-hectare green belt running along the Jeker and the old fortification walls, now home to roughly 800 trees across some 160 species from across the world, including a ginkgo, a tulip tree, silver limes and an American yellowwood elsewhere on the same route. The three beeches remain the route's own answer to the obvious question a visitor would ask first: which of all this is the oldest.",
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Stadspark_Maastricht",
+        "https://nhgl.nl/nas/download/bestanden/wandelingen?map=natuurlijk-maastricht%2F19+Het+Stadspark&file=19+Kaart+Stadspark.pdf"
+      ],
+      "access": "Free, open public park at any time",
+      "transport": "10-15 minute walk from Maastricht centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "maa_005",
+      "name": "The Tallest Plane Tree in the Netherlands",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 154 years",
+      "age_min": 145,
+      "age_max": 165,
+      "location": {
+        "address": "Stadspark Maastricht, beside Van Heylerhofflaan",
+        "latitude": 50.8426022,
+        "longitude": 5.6958237,
+        "neighbourhood": "Jekerdal"
+      },
+      "story": "Three plane trees grow in a row beside Van Heylerhofflaan on Stadspark's edge, planted together around 1870, and one of the three has since measured 39 metres tall, the tallest plane tree ever recorded in the Netherlands. Its two companions are barely shorter, at 37.5 and 36.5 metres, which makes the whole trio a small, accidental grove of national height records rather than a single freak specimen. None of the three is the thickest tree in Stadspark, a title that belongs to a separate, unrelated plane elsewhere in the park, a reminder that height and girth are different competitions and a tree can win one without the other. Planted during the same 19th-century wave of park-building that gave Stadspark most of its current character, this row has had roughly a century and a half of steady, undisturbed growth along a riverside strip of ground with nothing overhead to compete with for light, which is likely the plainest explanation for why it, rather than an older or more storied plane elsewhere in the country, holds the record today.",
+      "verified_sources": [
+        "https://www.monumentaltrees.com/en/nld/limburg/maastricht/2125_stadspark/3598/"
+      ],
+      "access": "Free, open public park at any time",
+      "transport": "10-15 minute walk from Maastricht centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

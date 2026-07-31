@@ -1,3 +1,17 @@
+## 2026-07-31 — Maastricht opens: 5 trees, the oldest claim goes to the better-dated tree, not the possibly-older one
+
+Same session, straight after the Delft research note. Maastricht was next in the Netherlands wave.
+
+**Shipped**: the Sweet Chestnut of Molenweg (Amby, a private farm, honestly disputed age of roughly 1750-1800, with a debunked local legend about Cossack planters during the 1814 siege), the Giant Sequoias of Tongerseweg (a 150-year-old cemetery sequoia, among the thickest of its kind in the Netherlands though no longer the tallest), the 1700 Oaks of Cannerbos (roughly 300 years old, ringing the edge of a star-shaped forest garden Baron van Dopff laid out beside Kasteel Neercanne), the Three Oldest Beeches of Stadspark (~160 years, named on the park's own official walking route), and the Tallest Plane Tree in the Netherlands (also Stadspark, 39 metres, ~154 years, sourced to monumentaltrees.com only and flagged accordingly).
+
+**A build-time catch worth recording**: the initial draft named the disputed-age Molenweg chestnut as Maastricht's oldest tree in the page copy, but its own age range (225-280 years) was mechanically younger than the Cannerbos oaks (290-320 years), and the build's own oldest-tree consistency check caught the mismatch before it shipped. Rewrote the answer to correctly name the Cannerbos oaks, whose age is tied to a single dated 1700 event, as the more reliable oldest-tree claim, while keeping the chestnut's honestly larger uncertainty stated in its own entry.
+
+**Avoided a dead-tree trap**: Stadspark's Osage orange ("Goudappel"), noted on the park's own walking-route leaflet as having blown down in 2009 at 130 years old and since replaced by three saplings, does not appear as a living entry.
+
+**Photo hunt**: 0 of 5 found. Checked the Tongerseweg cemetery's own 143-file Wikimedia Commons category directly; plenty of general cemetery and grave photos but nothing confidently showing the sequoia itself.
+
+Site rebuilt (786 pages: 59 city, 458 tree, 59 question, 12 collections, homepage), all contracts validated (after the oldest-tree fix above); `scripts/qa.py` clean (728 pages). `data/city-list.json` updated (Maastricht: pending to needs_curation). One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Delft researched, no page yet: three good trees, nothing to make a safe fourth
 
 Same session, straight after Leiden. Delft was next in the Netherlands wave. Three trees checked out well: the Black Mulberry of Hofje van Pauw (Paardenmarkt, planted 1707 when the almshouse was founded, roughly 319 years old, Delft's oldest documented fruit tree, verified via boomzorg.nl and the conservation group Natuurlijk Delfland's own research with Copijn Boomspecialisten), the Willemslinde of the Prinsentuin (a winter linden planted 1956 beside Museum Prinsenhof, a rooted graft of the historic Wilhelmslinde in Dillenburg where William of Orange received a Dutch delegation in 1568, verified via a professional De Boominspecteurs tree assessment report and Dillenburg's own tourism site), and the St. Agathaplein Chestnuts (three white and two red horse chestnuts, all planted 1920 as a coordinated planting outside the same Prinsenhof complex where William of Orange was assassinated in 1584, same De Boominspecteurs source).

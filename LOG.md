@@ -2,6 +2,16 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Maastricht opens: 5 trees; Delft researched but held back short of the four-tree floor
+
+Same session, straight after Leiden. No new submissions. Delft was next in the queue but only produced three trees solid enough to verify (a 1707 mulberry at Hofje van Pauw, a 1956 linden grown from a graft of Dillenburg's historic Wilhelmslinde tied to William of Orange, and the 1920 chestnuts of St. Agathaplein outside Museum Prinsenhof); a fourth candidate's age claim didn't hold up under a second look, so Delft stays without a page rather than being padded to four. Full detail in CURATION.md; moved on to Maastricht, next in line.
+
+Maastricht shipped with 5: a disputed-age farm chestnut in Amby (honestly flagged, with a debunked Cossack-planting legend investigated and dismissed), giant sequoias in a cemetery dating to 1812, 300-year-old oaks ringing the edge of a baron's 1700 star-shaped forest garden beside Kasteel Neercanne, Stadspark's three ~160-year-old beeches, and the tallest recorded plane tree in the Netherlands, also in Stadspark.
+
+One real catch worth noting: the draft initially named the disputed-age chestnut as Maastricht's oldest tree, but its own stated age range was mechanically younger than the Cannerbos oaks', and the build's consistency check caught the contradiction before anything shipped. Rewrote to correctly credit the better-dated oaks instead.
+
+0 of 5 photos found. Site rebuilt (786 pages), all contracts validated, QA clean. Two commits (the Delft research note, then Maastricht), both pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Leiden opens: 6 trees, half of them fighting root disease
 
 Same session, straight after Groningen. No new submissions. Leiden was next in the Netherlands wave.
