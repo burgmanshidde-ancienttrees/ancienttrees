@@ -1,3 +1,7 @@
+## Contract G renderer: country pages (added 2026-07-31, blueprint v1.5 approved)
+
+Build build_country_page() per Contract G exactly: root-level country slug (build fails on any clash with a city slug), title/meta/H1/answer-first per the table, hand-written intro from data/countries/[slug].json (page does not build without it), country map with the existing city-chooser panel, city photo cards via city_face(), oldest-tree block, schema stack, link minima, and the city-breadcrumb upgrade (country crumb becomes a link when the country page exists). Verify by build output and qa.py; the first shippable country is the Netherlands.
+
 # Product work for autonomous runs
 
 The queue a run may draw from when every content rung in CLAUDE.md Step 0 is satisfied. Rules of this lane, and they are strict because a CI run cannot see the page it changes:

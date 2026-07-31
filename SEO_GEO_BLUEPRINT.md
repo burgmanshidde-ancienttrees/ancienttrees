@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.4 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.5 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -108,6 +108,23 @@ The one browse facet: "show me every [species] on the site". Semi-automated. The
 | Publish gate | A species page ships ONLY when it has 3+ renderable trees on the site AND a hand-written intro exists for it. Fewer trees or no intro: no page (P3). Never a bare templated list. |
 | Index | `/species` lists every published species page. One species is never split across two collections and a species page; a single-species collection is prohibited (use the species page). |
 
+### Contract G — Country page  `/[country-slug]`
+
+The mid-tier of the pyramid (tree → city → country), added v1.5 on Hidde's instruction after the AllTrails country-page pattern. Targets "ancient trees in [country]" head terms, and gives city pages a linked breadcrumb parent. Semi-automated like Contract F: structure generated, intro hand-written.
+
+| Element | Specification |
+|---|---|
+| Title (≤60 chars) | `Ancient Trees in [Country]: [N] Cities to Explore` (shorten if over 60) |
+| Meta description (≤155) | The country's tree story in one line + strongest city or tree as teaser |
+| H1 | `Ancient trees in [Country]` |
+| First two sentences | How many cities and trees the site maps there, and the single most remarkable thing among them, quotable standalone (P2) |
+| Body | Hand-written country intro (100-150 words, Paris-quality, unique per country, P3) → the country map with the city chooser panel → city photo cards (the design-system card, count + face) → "the oldest tree in [Country]" block linking its tree page → footer links to relevant collections and, where a usable national register exists, an honest one-line register note |
+| Schema | CollectionPage + ItemList (cities) + BreadcrumbList |
+| Internal links (min) | Every published city in the country; the oldest tree's page; 1+ collection; /cities |
+| Breadcrumbs | Home → [Country]. City pages switch their country crumb from plain text to a link the moment the country page exists. |
+| Publish gate | A country page ships ONLY when the country has 3+ published cities AND a hand-written intro exists (data/countries/[slug].json). Fewer cities or no intro: no page. A one-city country page is a duplicate of that city page with a flag on it (P3). |
+| URL | Root-level country slug (`/netherlands`, `/united-kingdom`). Never a prefix path; collision with city slugs is prevented at build time (build fails on a clash). |
+
 ---
 
 ## MEASUREMENT CONTRACT (what proves this blueprint works)
@@ -122,4 +139,5 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 - v1.1 — Added Contract F (species page `/species/[slug]` + `/species` index), approved by Hidde. Semi-automated browse facet: auto-generated entry list, hand-written intro, publish-gated at 3+ trees and an intro. Single-species collections are now folded into this contract to avoid duplicate content.
 - v1.0 — Initial blueprint. Consolidates: four-layer architecture, AllTrails-pattern page structure, metadata contracts, schema stacks, freshness rule, entity requirements, measurement hypothesis.
 
+- **v1.5 (2026-07-31):** Added Contract G (country page `/[country-slug]`), approved by Hidde ("voeg het landencontract toe en neem dit mee in de totale seo strategie"). The AllTrails country-page pattern sized to our honesty rules: publish-gated at 3+ published cities plus a hand-written intro, so no one-city duplicate pages exist. Slots the pyramid's missing middle tier (tree → city → country) and gives every city page a linked breadcrumb parent.
 - **v1.4 (2026-07-28):** Owner-privacy rule applied on Hidde's instruction in session: P5 and site-level schema switch from named Person to Organization; About page (Contract E) parked indefinitely. Trade-off recorded in P5 itself.
