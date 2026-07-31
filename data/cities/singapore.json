@@ -1,0 +1,241 @@
+{
+  "city": "Singapore",
+  "country": "Singapore",
+  "status": "needs_curation",
+  "intro": "Singapore keeps its old trees on an actual register: NParks has designated 251 Heritage Trees since 2001, each one measured, mapped and profiled. Most of the city's remarkable specimens cluster in two places, Fort Canning Park's colonial-era plantings and the UNESCO-listed Botanic Gardens, with a handful standing apart in a roadside car park and a tidal mangrove reserve reachable only by boat. None rivals Europe's millennium yews, but several carry records of their own: the country's largest of their kind, or its only two of a kind at all.",
+  "meta_description": "Singapore's heritage trees, from the Tembusu on the $5 note to Fort Canning's colonial-era rain tree, Madras thorn and rosewood, all NParks-registered.",
+  "question_answer": "Singapore's oldest documented tree is the Tembusu of the Botanic Gardens, estimated by NParks at over 200 years old, standing on Lawn E overlooking Swan Lake. It is the tree depicted on the back of the Singapore five-dollar note.",
+  "question_meta": "The Tembusu on Lawn E, over 200 years old and the tree on Singapore's $5 note, is the country's oldest NParks-registered heritage tree.",
+  "question_context": "Singapore's Heritage Tree Scheme, launched in 2001, is unusually precise as these registers go: every one of its 251 trees carries a measured girth, height and, where evidence allows, an age estimate, reviewed periodically by NParks arborists. Most entries carry no confirmed planting date at all, since they were already mature specimens when the scheme began surveying the island's remaining old growth. The Tembusu is the exception. NParks dates it to more than 200 years before the Botanic Gardens itself opened in 1859, based on its size and growth pattern relative to other tembusu of documented age, making it older than the Gardens that now contain it. Its fame outside botanical circles comes from a single distinctive branch, a low lateral limb curling out almost parallel to the ground, which illustrator Eng Siak Loy chose to draw on the reverse of Singapore's five-dollar note. Several of Fort Canning Park's own heritage trees are older by inference, planted during an early-1900s ornamental scheme whose planting records were never kept, but without a documented date none can currently outrank the Tembusu's sourced estimate.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Singapore?",
+      "a": "By documented age, the Tembusu on Lawn E of the Singapore Botanic Gardens, estimated by NParks at over 200 years old and predating the Gardens themselves. It is also the tree on the Singapore five-dollar note."
+    },
+    {
+      "q": "Where are most of Singapore's heritage trees?",
+      "a": "Fort Canning Park and the Singapore Botanic Gardens hold the densest concentrations of publicly accessible heritage trees, though NParks' full register of 251 trees spans the whole island, including some on private land that are not open to visitors."
+    },
+    {
+      "q": "Are Singapore's heritage trees free to visit?",
+      "a": "Yes, every tree on this list stands in a free public park or car park, or is reached via a free boardwalk on Pulau Ubin. The Botanic Gardens itself has no admission charge, though its separate Orchid Garden does."
+    },
+    {
+      "q": "What is Singapore's Heritage Tree Scheme?",
+      "a": "A National Parks Board program launched in 2001 that identifies and protects trees of exceptional size, age or historical value. Each of its 251 trees (as of the most recent count) has an individual profile with girth, height and species on NParks' public register."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sgp_001",
+      "name": "The Tembusu of Lawn E",
+      "species": "Tembusu (Cyrtophyllum fragrans)",
+      "age_estimate": "200+ years",
+      "age_min": 200,
+      "age_max": 230,
+      "location": {
+        "address": "Lawn E, Singapore Botanic Gardens, overlooking Swan Lake, Singapore",
+        "latitude": 1.30859,
+        "longitude": 103.81683,
+        "neighbourhood": "Tanglin, Singapore Botanic Gardens"
+      },
+      "story": "This tree was already old when the Singapore Botanic Gardens opened around it in 1859. NParks estimates it at more than 200 years, based on growth patterns compared with other tembusu of known age, which makes it a survivor of whatever forest stood on this ground before the Gardens were laid out. Its most distinctive feature is a single low branch that grows out almost parallel to the ground before curling upward, a shape unusual enough that illustrator Eng Siak Loy chose this exact tree, and this exact limb, to draw on the reverse of Singapore's five-dollar note. It is the only tree ever to appear on a Singapore banknote. Tembusu wood is prized separately from the tree's fame: dense and highly resistant to termites, it has long been used in Malay boat-building and furniture, and the timber's hardness even became a figure of speech in Malay for a person with an unyielding heart. The tree's creamy-white flowers open in clusters and turn yellow with age, most fragrant in the late evening, when they once would have drawn Malayan flying foxes to feed on the fruit that follows. It stands in the free section of the Gardens, an easy walk from the Tanglin Gate, on open lawn rather than behind any barrier, close enough to Swan Lake that most visitors photograph the water first and only notice the tree, and the branch on their banknote, on the way back.",
+      "verified_sources": [
+        "https://heritagetrees.nparks.gov.sg/ht-2001-26/",
+        "https://mothership.sg/2022/09/5-sing-dollar-note-tree/",
+        "https://sbg.nparks.gov.sg/attractions/heritage-trees-and-landscapes/"
+      ],
+      "access": "Free, public section of Singapore Botanic Gardens, open 5am-12am daily",
+      "transport": "10 minute walk from Botanic Gardens MRT station (Circle/Downtown Line), Tanglin Gate entrance",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Tembusu_tree_at_Lawn_E%2C_Singapore_Botanic_Gardens_20240210_182325.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "ZKang123, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sgp_002",
+      "name": "The Fort Canning Rain Tree",
+      "species": "Rain Tree (Samanea saman)",
+      "age_estimate": "over 100 years (planting date undocumented)",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Fort Canning Park, near Raffles Gardens and the steps to Hill Street, Singapore",
+        "latitude": 1.29197,
+        "longitude": 103.84809,
+        "neighbourhood": "Fort Canning, Singapore"
+      },
+      "story": "This rain tree spreads its umbrella-shaped canopy directly over a public stairway that carries walkers out of Fort Canning Park onto Hill Street, so almost everyone who takes those steps passes under it whether they notice or not. Rain trees only arrived in Singapore in 1876, imported from tropical America and planted heavily through the colonial coffee and nutmeg plantations that once covered much of the island, and this specimen's own planting date was never recorded, though its 4.93 metre girth points to a tree well over a century old. Its most reliable feature is not size but timing: every evening, roughly ninety minutes before sunset, its paired leaflets fold shut, and they do the same on overcast days, a light-sensitive reflex that gave the species both its English name and its Malay one, Pukul Lima, five o'clock. Fort Canning Hill itself was the seat of the ancient Kingdom of Singapura before it became a British fort and then a public park, so a tree standing sentinel over one of its main entrances is, in a small way, guarding ground with a longer history than the tree itself. Clusters of pink-and-white flowers appear through the year without a single dramatic peak, and the pods that follow ripen dark and fleshy, adding to the tree's already broad, low silhouette.",
+      "verified_sources": [
+        "https://heritagetrees.nparks.gov.sg/ht-2014-228/",
+        "https://commons.wikimedia.org/wiki/File:Heritage_Rain_Tree_looming_over_steps_leading_out_of_Fort_Canning_Park_onto_Hill_Street_-_2022-05-27.jpg"
+      ],
+      "access": "Free, public park, open 24 hours",
+      "transport": "5 minute walk from Fort Canning MRT station (Downtown Line), via the Hill Street steps",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Heritage_Rain_Tree_looming_over_steps_leading_out_of_Fort_Canning_Park_onto_Hill_Street_-_2022-05-27.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Wzhkevin, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Planting date undocumented; age_min/age_max are an inference from girth and species growth rate, not a sourced figure. A different Fort Canning heritage tree, a Burmese banyan, collapsed nearby in January 2021; this is not that tree, and remains standing.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sgp_003",
+      "name": "The Fort Canning Madras Thorn",
+      "species": "Madras Thorn (Pithecellobium dulce)",
+      "age_estimate": "age undocumented, girth grew from 7.4m to 8.5m since 2001",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Fort Canning Park, path beside the Service Reservoir, Singapore",
+        "latitude": 1.29314,
+        "longitude": 103.84625,
+        "neighbourhood": "Fort Canning, Singapore"
+      },
+      "story": "NParks records this as the largest Madras thorn on Singapore's heritage register, an 8.5 metre girth today, up from 7.4 metres when it was first measured for the scheme in 2001. The species arrived in the region centuries ago with Portuguese and Spanish traders from tropical America, and by the mid-1900s it lined roadsides and housing estates across Singapore as a shade tree, until a caterpillar infestation through the 1970s got it stripped from most public planting. This one, tucked beside Fort Canning's old Service Reservoir rather than out on a street, survived that cull. Its crown is low, spreading and unusually bushy for a tree this size, shaggy with bird's nest ferns and other epiphytes that have colonized its branches over the decades, giving it a wilder look than its more manicured heritage-tree neighbours. Short, sharp thorns guard the base of each leaf, the source of both its common name and part of the Greek genus name, which references the fruit's resemblance to a monkey's earring. Those fruits split into coiled, rose-red pods each spring, exposing a sweet white pulp around glossy black seeds that draws yellow-vented bulbuls and Oriental magpie robins to disperse them, and the same pulp is eaten by people elsewhere in its native range as a sour-sweet snack or juice.",
+      "verified_sources": [
+        "https://heritagetrees.nparks.gov.sg/ht-2001-04/",
+        "https://commons.wikimedia.org/wiki/File:Heritage_Madras_Thorn_tree_in_Fort_Canning_Park_-_2022-07-26.jpg"
+      ],
+      "access": "Free, public park, open 24 hours",
+      "transport": "8 minute walk from Fort Canning MRT station (Downtown Line)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Heritage_Madras_Thorn_tree_in_Fort_Canning_Park_-_2022-07-26.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Wzhkevin, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Age genuinely undocumented; NParks' own register gives no planting date or estimate, only girth growth since 2001, so age_min/age_max are left at 0 rather than guessed. 'Largest of its kind' is NParks' own register claim about its own designated trees, not an unqualified cross-site superlative.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sgp_004",
+      "name": "The Fort Canning Tamalan",
+      "species": "Tamalan / Burmese Rosewood (Dalbergia oliveri)",
+      "age_estimate": "likely 100+ years (planting era documented, exact date not)",
+      "age_min": 100,
+      "age_max": 125,
+      "location": {
+        "address": "Fort Canning Park, Fort Green, Singapore",
+        "latitude": 1.2952,
+        "longitude": 103.8476,
+        "neighbourhood": "Fort Canning, Singapore"
+      },
+      "story": "This tamalan is one of the last survivors of an ornamental planting scheme that once covered much of Fort Canning Hill in the early 1900s, when the old fort grounds were being turned into a colonial pleasure garden. NParks' own register notes that few of the tamalan planted here in that era still line the hill's paths, which makes this specimen, standing at Fort Green, a rare direct witness to that specific phase of the park's history rather than a later replacement. The species is native to Myanmar, Thailand and Vietnam, where it can reach 20 to 30 metres, and it was brought to Singapore purely for its looks: a crown of delicate, feathery foliage carried on branches that spread wide and low, with flower buds that open lilac, shift to pink, and fade to white as they age. Its wood connects it to a more famous family. Dalbergia is the genus behind Brazilian rosewood and African blackwood, both prized and now heavily restricted timbers, and while this tree has never been harvested, its relatives explain why the genus carries the weight it does among furniture makers and luthiers. At 5.48 metres in girth and just under 15 metres tall, it is modest next to some of Fort Canning's other heritage trees, but it is one of the few left standing from a planting era the park's own records otherwise struggle to document.",
+      "verified_sources": [
+        "https://heritagetrees.nparks.gov.sg/ht-2014-224/",
+        "https://www.alamy.com/heritage-trees-at-fort-canning-park-tamalan-dalbergia-oliveri-tree-singapore-press-via-ap-images-image533657219.html"
+      ],
+      "access": "Free, public park, open 24 hours",
+      "transport": "10 minute walk from Fort Canning MRT station (Downtown Line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Planting date not documented; age is inferred from NParks' note that the species was 'extensively planted' at Fort Canning in the early 1900s, not from a source dating this specific tree.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sgp_005",
+      "name": "The Terap Nasi of the 14th Century Walk",
+      "species": "Terap Nasi (Artocarpus elasticus)",
+      "age_estimate": "age undocumented, girth grew from 4.1m to 5.68m since 2001",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Fort Canning Park, 14th Century Walk of History, near the Service Reservoir, Singapore",
+        "latitude": 1.29266,
+        "longitude": 103.84639,
+        "neighbourhood": "Fort Canning, Singapore"
+      },
+      "story": "This terap grows beside Fort Canning's 14th Century Walk of History, a path named for the hill's role as the seat of the ancient Kingdom of Singapura, and it carries plank buttresses at its base broad enough to make the connection to old ground feel physical rather than just historical. Its girth has grown from 4.1 metres, when NParks first endorsed it as a heritage tree in 2001, to 5.68 metres today, real if unspectacular proof of two and a half decades of recorded growth, though nothing in the register dates its planting itself. Botanist John Henry Corner, assistant director of the Botanic Gardens through the 1930s and 40s, documented Fort Canning's terap specimens in his standard reference Wayside Trees of Malaya, giving this small grove a paper trail most street trees never get. In the wild the species can reach 45 to 65 metres; Singapore's cultivated specimens stay far smaller, but the fruit does not: each one grows to roughly 18 centimetres, ripening from cream to brown and smelling notoriously strong when cut open, guarding a sweet white pulp locals have described as tasting like tangy marshmallow. The tree's tough, fibrous inner bark was historically stripped and worked into cordage, coarse cloth and basket lining across the region, a practical use that outlived the kingdom the walking path beside it is named for.",
+      "verified_sources": [
+        "https://heritagetrees.nparks.gov.sg/ht-2001-12/",
+        "https://remembersingapore.org/2022/05/06/singapore-heritage-tree-terap/"
+      ],
+      "access": "Free, public park, open 24 hours",
+      "transport": "8 minute walk from Fort Canning MRT station (Downtown Line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age genuinely undocumented; NParks gives only girth growth since 2001 endorsement, so age_min/age_max are left at 0 rather than guessed. Three other terap heritage trees stand nearby on the same walk and one more on Canning Rise; this entry is specifically HT 2001-12.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sgp_006",
+      "name": "The Kapok Tree of Seah Im Road",
+      "species": "Kapok (Ceiba pentandra)",
+      "age_estimate": "age undocumented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Seah Im Road public car park, at the base of Mount Faber, Singapore",
+        "latitude": 1.268655,
+        "longitude": 103.817348,
+        "neighbourhood": "Mount Faber, Singapore"
+      },
+      "story": "At 11.55 metres in girth, this is one of the largest-trunked trees on Singapore's entire heritage register, rising 34.6 metres from the edge of an ordinary public car park at the foot of Mount Faber. Kapok is deciduous, unusual for a tropical tree, dropping its leaves entirely before flowering, and its cream-coloured blooms open at night with a milky scent that draws bats to pollinate them, an entirely different visiting crowd than the tree gets by day. The seed pods that follow split to release a fine, water-resistant white fiber once used to stuff life jackets and mattresses worldwide, the reason the tree ended up as Puerto Rico's national tree despite originating, like this one's ancestors, in tropical America. What makes this particular specimen worth the detour is what stands twenty metres behind it in the undergrowth: a brick-entranced wartime bunker, its tunnel about 2.5 metres tall inside with small ventilation holes along the walls, largely forgotten until vegetation was cleared enough to rediscover it. Local historians believe it was built shortly before the Second World War, though its exact use, whether to hold prisoners of war or simply to store equipment and ammunition, has never been confirmed. The kapok tree is the only obvious marker for anyone trying to find it.",
+      "verified_sources": [
+        "https://heritagetrees.nparks.gov.sg/ht-2005-134/",
+        "https://remembersingapore.org/2019/10/13/seah-im-road-bunker-exploration/"
+      ],
+      "access": "Free, public car park",
+      "transport": "10 minute walk from HarbourFront MRT station (Circle/North East Line), near the Mount Faber cable car base station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The bunker's wartime use (POW holding vs. storage) is stated by local historians as a belief, not a confirmed fact, and the story is phrased accordingly. Age of the tree itself is undocumented by NParks.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sgp_007",
+      "name": "The Mangrove Apples of Chek Jawa",
+      "species": "Mangrove Apple / Perepat (Sonneratia alba)",
+      "age_estimate": "age undocumented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Chek Jawa Wetlands, beside House No. 1, Pulau Ubin, Singapore",
+        "latitude": 1.40735,
+        "longitude": 103.9884,
+        "neighbourhood": "Pulau Ubin"
+      },
+      "story": "These two mangrove apples are, according to NParks' own register, the only mangrove trees among Singapore's 251 heritage trees, standing together beside the old House No. 1 at Chek Jawa, on the far side of Pulau Ubin from the mainland. Getting there already takes effort: a bumboat from Changi Point to Ubin, then a walk or bike ride to the free boardwalk that lets visitors cross the wetland without touching the mud beneath it. The trees themselves spend part of every day partly submerged, rising and falling with the tide in a stretch of shoreline built almost entirely on salt tolerance. Around their bases, pneumatophores, root structures that poke straight up through the mud like a field of woody snorkels, let the trees pull in oxygen from air rather than the waterlogged, anoxic soil their main roots sit in. To manage the salt that soil carries, they concentrate it in their oldest leaves and simply shed them, a slow-motion filtering system with no equivalent among ordinary garden trees. Chek Jawa itself very nearly does not exist as a public reserve at all. It was slated for land reclamation in 2001 until a citizen-led biodiversity survey and public campaign got the plan shelved, meaning this pair of trees, unremarkable in age but singular in the register, sits inside a wetland Singapore almost paved over entirely.",
+      "verified_sources": [
+        "https://heritagetrees.nparks.gov.sg/ht-2007-163/",
+        "https://en.wikipedia.org/wiki/Chek_Jawa",
+        "https://pulau-ubin.nparks.gov.sg/chek-jawa-wetlands/"
+      ],
+      "access": "Free, public boardwalk (Chek Jawa Wetlands, 7am-7pm daily), reached via a paid bumboat to Pulau Ubin",
+      "transport": "Bumboat from Changi Point Ferry Terminal to Pulau Ubin, then a 20-25 minute walk or bike ride to the Chek Jawa boardwalk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age undocumented by NParks for either tree; the pair's status as 'the only two mangrove trees in the Heritage Tree Register' is NParks' own register claim about its own designated trees. Coordinates are the midpoint of the two individually-surveyed trees (HT 2007-162 and HT 2007-163), roughly 20m apart at the same named location.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
