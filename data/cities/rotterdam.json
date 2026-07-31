@@ -1,0 +1,177 @@
+{
+  "city": "Rotterdam",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Rotterdam's old trees are survivors first and monuments second. The German bombing of May 1940 erased most of the city centre in a single night, and the soft, subsiding soil across much of the region shortens most trees' working lives regardless of what happens above ground; the city has barely 3,000 monumental trees against 600,000 total. What remains earned its place the hard way: a plane that predates the park built around it, another that survived the exact firestorm that flattened everything nearby, a coronation linden, a beech that watched the shipping elite build their street.",
+  "meta_description": "Rotterdam's oldest trees survived what the city itself often didn't: the 1940 bombing, the 1953 flood, a canal redesign. Five verified locations.",
+  "question_answer": "Rotterdam's oldest tree is the Plane of het Park, standing since around 1800, before landscape architects Jan David and Louis Paul Zocher designed the park around it in 1852. At roughly 226 years old, it has survived both the 1940 bombing that destroyed much of the city centre and the 1953 flood that put het Park itself underwater.",
+  "question_meta": "A plane tree older than the park around it, standing since 1800, survived the 1940 bombing and the 1953 flood. Rotterdam's oldest, plus four more.",
+  "question_context": "Rotterdam's tree ages tell a story most Dutch cities don't have to tell: almost everything old here either predates the 20th century's two great disasters or was planted afterward to replace what didn't survive them. The Park Plane and the Breitenbach Plane both cleared the German bombing of 14 May 1940 that flattened the historic centre a short walk from each of them, and the Park Plane cleared a second disaster besides, the 1953 flood that put much of the park underwater for weeks. That double survival is the actual basis for calling it Rotterdam's oldest confirmed tree rather than simply its most storied one; several other candidates are old enough to be plausible rivals but lack a comparably documented history reaching back before 1900. The Westersingel Plane, the Wilhelmina Linden and the Koningin Emmaplein Beech are all younger by a wide enough margin, planted within a few decades of each other in the 1890s, that the ranking among Rotterdam's oldest three genuinely rests on the two 19th-century-or-earlier planes rather than any of the turn-of-the-century additions.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Rotterdam?",
+      "a": "The Plane of het Park, standing since around 1800, older than the park itself, which was designed around it starting in 1852."
+    },
+    {
+      "q": "Are Rotterdam's remarkable trees free to visit?",
+      "a": "Yes, all five stand in public parks or on public streets, open at any time, no ticket required."
+    },
+    {
+      "q": "Why does Rotterdam have so few monumental trees?",
+      "a": "The German bombing of 14 May 1940 destroyed most of the historic centre in a single night, and much of the region's soft, subsiding soil shortens trees' working lives regardless of what happens above ground."
+    },
+    {
+      "q": "Which Rotterdam tree is named after a poet?",
+      "a": "The Breitenbach Plane on the Westersingel, named for South African poet Breyten Breytenbach, who recited poetry beneath it in the 1970s and called it the grave of the unknown poet."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rot_001",
+      "name": "The Park Plane",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "about 226 years",
+      "age_min": 220,
+      "age_max": 230,
+      "location": {
+        "address": "het Park, near the Euromast, Rotterdam Centrum",
+        "latitude": 51.9061574,
+        "longitude": 4.4703727,
+        "neighbourhood": "Centrum"
+      },
+      "story": "This plane tree was already standing when father-and-son landscape architects Jan David and Louis Paul Zocher began designing het Park around it in 1852, which means the tree came first and the celebrated English-style landscape grew up around a specimen nobody planted specifically for the design. It has since survived two disasters that reshaped Rotterdam far more than any garden ever could. The German bombing of May 1940 destroyed most of the city's historic centre a short walk away; the tree stood close enough to feel it and far enough to survive. Thirteen years later the North Sea flood of 1953 put het Park itself underwater for an extended stretch, one of the worst natural disasters in modern Dutch history, and the tree came through that too, roots submerged in salt water that killed less established trees outright. Today its trunk measures 185 centimetres across, thick enough that the city's own tree inspectors check it on a regular safety schedule reserved for its most significant specimens. Het Park itself is a national monument, 21 hectares running along the Maas river beside the Euromast, and this plane is the one tree in it old enough to have watched the whole modern city rebuild itself twice.",
+      "verified_sources": [
+        "https://hetparkinrotterdam.nl/nieuws/de-kranige-plataan-uit-1800",
+        "https://hetparkinrotterdam.nl/rijksmonument",
+        "https://stadsarchief.rotterdam.nl/watersnood"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "Walkable from central Rotterdam, near the Euromast, roughly 15 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "rot_002",
+      "name": "The Breitenbach Plane",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "about 166 years",
+      "age_min": 160,
+      "age_max": 170,
+      "location": {
+        "address": "Corner of Mauritsweg and Westersingel",
+        "latitude": 51.9134174,
+        "longitude": 4.4755315,
+        "neighbourhood": "Dijkzigt"
+      },
+      "story": "This plane tree has been standing since 1860, older than the Westersingel canal that now runs beside it, and it survived the one event that erased almost everything else nearby: the German bombing of Rotterdam's city centre on 14 May 1940, which burned through this exact stretch of the city and somehow left the tree unscathed. Decades of care since have earned it an unofficial title, the most expensive tree in Rotterdam, for the sustained municipal maintenance a tree this old and this large now requires. It nearly lost a different fight in the 1960s, when a major redesign of the Westersingel waterway put the tree directly in the way of new plans; the city's own head of landscaping at the time, Andre Raad, pushed back hard enough that engineers rerouted the water instead of felling the tree, an unusual case of a canal moving to accommodate a plant rather than the other way round. Its more recent name comes from South African poet Breyten Breytenbach, who recited poetry beneath it in the 1970s and declared it the grave of the unknown poet, a line that stuck well enough that Rotterdam's own Poetry International later gave the spot a permanent place in the city's poetry trail. It still stands at the corner of Mauritsweg and Westersingel, doing the same job it has done since before the Netherlands had a railway.",
+      "verified_sources": [
+        "https://www.rijnmond.nl/nieuws/amp/1411866/Deze-ruim-anderhalve-eeuw-oude-kolos-in-Rotterdam-is-straks-misschien-Boom-van-het-Jaar",
+        "https://straatpoezie.nl/gedicht/graf-van-de-onbekende-dichter/",
+        "https://fredmarree.wordpress.com/2020/10/07/breytenbachboom/"
+      ],
+      "access": "Free, public street at any time",
+      "transport": "Walkable from central Rotterdam, roughly 10 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "rot_003",
+      "name": "The Westersingel Plane",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "about 130 years",
+      "age_min": 125,
+      "age_max": 135,
+      "location": {
+        "address": "Westersingel, moved from the west to the east side of the canal in the 1960s",
+        "latitude": 51.9134174,
+        "longitude": 4.4755315,
+        "neighbourhood": "Dijkzigt"
+      },
+      "story": "Moving a mature tree across a street sounds like a euphemism for felling it and planting a new one, but Rotterdam actually did it: sometime in the 1960s, engineers transplanted this plane tree bodily from the west side of the Westersingel canal to the east side, roots and all, rather than lose it to whatever roadworks or redesign prompted the move. It survived the operation and kept growing, now roughly 130 years old and widely considered one of Rotterdam's most impressive individual trees, a status confirmed in 2021 when it placed second in the Netherlands' national Tree of the Year competition, a public vote that draws entries from across the country. The achievement is not really about beauty or age alone. Rotterdam has fewer monumental trees than almost any comparable Dutch city, a direct consequence of the 1940 bombing that flattened its historic centre and the soft, subsiding soil across much of the region that shortens most trees' working lives regardless of what happens above ground. A plane tree that not only reached this size but survived being dug up and relocated says something about the species' famous toughness along waterways, and about a city that has had unusually good reason to fight for the few old trees it has left.",
+      "verified_sources": [
+        "https://www.rijnmond.nl/nieuws/198634/waarom-staan-er-zo-weinig-monumentale-bomen-in-rotterdam",
+        "https://www.monumentaltrees.com/nl/nld/zuidholland/rotterdam/"
+      ],
+      "access": "Free, public street at any time",
+      "transport": "Walkable from central Rotterdam, roughly 10 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "rot_004",
+      "name": "The Wilhelmina Linden",
+      "species": "Crimean Linden (Tilia x euchlora)",
+      "age_estimate": "about 128 years",
+      "age_min": 125,
+      "age_max": 130,
+      "location": {
+        "address": "Parklaan, Scheepvaartkwartier",
+        "latitude": 51.9075341,
+        "longitude": 4.4753899,
+        "neighbourhood": "Scheepvaartkwartier"
+      },
+      "story": "An 18-year-old queen's coronation once triggered a small nationwide planting spree, and this linden on the Parklaan is Rotterdam's surviving entry in it. When Wilhelmina was crowned Queen of the Netherlands on 6 September 1898, a metalworks foundry in Doetinchem sent a brochure to every Dutch municipality suggesting they mark the occasion with a commemorative tree, offering to supply the decorative iron fencing to go around it. Towns across the country took up the idea, and Rotterdam planted this Crimean linden on the Parklaan, in what was then a fashionable new residential quarter for the city's shipping merchants. The tree's iron fence has outlasted plenty of the era's other civic gestures: it holds its own listing on the Dutch national heritage register, a decorative object protected separately from the tree it surrounds, which is either a bureaucratic curiosity or a sign of how seriously the country still takes its handful of surviving coronation trees. At roughly 128 years old, the linden has outlived the queen it honours by more than seven decades and stands a quiet, well-tended reminder that Rotterdam's grandest 19th-century street was, for one afternoon in 1898, briefly about a young monarch rather than shipping money.",
+      "verified_sources": [
+        "https://www.monumentaltrees.com/nl/nld/zuidholland/rotterdam/8785_parklaan/17312/",
+        "https://monumentenregister.cultureelerfgoed.nl/monumenten/516445"
+      ],
+      "access": "Free, public street at any time",
+      "transport": "Walkable from central Rotterdam, roughly 10-15 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "rot_005",
+      "name": "The Koningin Emmaplein Beech",
+      "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+      "age_estimate": "about 135 years",
+      "age_min": 130,
+      "age_max": 138,
+      "location": {
+        "address": "Koningin Emmaplein, Scheepvaartkwartier",
+        "latitude": 51.9100144,
+        "longitude": 4.4754989,
+        "neighbourhood": "Scheepvaartkwartier"
+      },
+      "story": "Fifteen grand townhouses built between 1888 and 1891 once earned this small square a joking nickname, Rijkeluishofje, the rich people's almshouse, a dig at how sheltered and comfortable its wealthy residents had it compared with the actual almshouses the word usually described. The copper beech at its centre went into the ground around the same years the houses went up, planted alongside a decorative 1890 urn designed by Hendrik Berlage, the architect who would later define much of Amsterdam's own cityscape. The neo-renaissance townhouses around the square housed Rotterdam's shipping elite, close enough to the harbour to manage their businesses and far enough from it to avoid the noise and smell, and the beech has stood at the centre of that arrangement for roughly 135 years, its trunk now 325 centimetres around. Copper beeches are planted for their colour, deep purple-red leaves that shift with the season and light rather than staying a uniform green, and this one has had over a century to fill out into the kind of specimen that makes an otherwise ordinary residential square worth a detour. It remains free and open, a short walk from the Westersingel and Parklaan trees on the same side of the city centre.",
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Koningin_Emmaplein_(Rotterdam)",
+        "https://www.monumentaltrees.com/nl/nld/zuidholland/rotterdam/6608_koninginemmaplein/"
+      ],
+      "access": "Free, public square at any time",
+      "transport": "Walkable from central Rotterdam, roughly 10-15 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    }
+  ]
+}
