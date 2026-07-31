@@ -1,3 +1,17 @@
+## 2026-07-31 — The Hague opens: 5 trees, each protected by a different kind of boundary
+
+Same session, straight after Rotterdam. No new submissions. The Hague was next in the queue.
+
+**Shipped**: the Juttepeer of Heilige Geesthofje (The Hague's oldest at ~388 years, planted 1638 in a still-functioning almshouse courtyard, likely the oldest pear tree in the Netherlands, residents still make jelly from it), the Koekamp Oak (~300 years, inside the Haagse Bos, protected since a deed William of Orange signed in 1576 promising the forest would never be logged), the Veteran Linden of Clingendael (~290 years, sole survivor of a formal 18th-century trained-linden row, the first tree in the Netherlands to receive the country's new "veteran tree" protective designation in 2019), the Postzegelboom (a horse chestnut opposite Paleis Noordeinde that survived two rounds of royal demolition and hosted an open-air stamp-trading market for decades, restored by the Dutch postal service PTT in 1990), and the Kabouterboom (~94 years, the youngest and most honestly included for community tradition rather than age: a neighbourhood has furnished its trunk hollow like a dollhouse for gnomes for generations).
+
+**A real access-honesty case, not a hard-rule-10 exclusion**: the Heilige Geesthofje's pear tree courtyard is not casually walk-in; the almshouse still functions as a residence and visiting requires a guided Buitenmuseum tour, an appointment, or the national Open Monumentendag. This differs from land a source withholds or genuinely private land with no visitor path at all (which would trigger exclusion under hard rule 10): here, a real, bookable public-access route exists, so the entry stays in, with the access field stating the restriction plainly rather than implying an anytime walk-in, the same treatment given to Dublin's Old Glebe yew.
+
+**A judgment call under question 3 of the mandate**: Haagse Bos also contains the so-called "Hitlerboom," a beech carved with a swastika and a portrait of Hitler by a German occupation-era sentry, its authenticity disputed among historians. Left off deliberately: even setting the authenticity question aside, a page meant to send someone outside to enjoy an old tree is the wrong context for a Nazi-carved specimen, and the disputed authenticity adds a second reason not to publish it as fact. Noting the decision here so a future run doesn't re-surface it as an obvious inclusion.
+
+**Photo hunt**: 1 of 5 found (the Postzegelboom, CC BY-SA 4.0, with precise GPS metadata confirming its position, upgraded to `location_precision: confirmed`). The other 4 stay missing and approximate.
+
+Site rebuilt (739 pages: 55 city, 438 tree, 55 question, 12 collections, homepage), all contracts validated on the first pass; `scripts/qa.py` clean (692 pages). `data/city-list.json` updated (The Hague: pending to needs_curation). One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Rotterdam opens: 5 trees, all survivors of the 1940 bombing or the 1953 flood
 
 Same session, straight after Utrecht. No new submissions. Rotterdam was next in the queue.
