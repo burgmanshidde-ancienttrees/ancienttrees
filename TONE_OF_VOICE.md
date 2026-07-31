@@ -7,6 +7,14 @@ Section "Hidde's voice" is a placeholder for v1.1: Hidde supplies samples of his
 
 ---
 
+## No builder-speak toward the visitor (Hidde, 2026-07-31, explicit approval for this edit)
+
+The trigger: an account page that said "Sign-in is real and stores only your email address." "Real" is the builder reassuring himself; a visitor never doubted it until we raised it. His rule: **never show the visitor internally-focused text. The site presents itself as finished** ("keep up appearances, facade until test").
+
+- Copy states what something DOES, never its state of construction. Banned on public pages: "is real", "still being built", "prototype", "quiet launch", "not linked yet", "works now", and any sentence whose subject is our progress rather than the visitor's benefit.
+- The boundary that keeps this compatible with the honesty ethos: appearances never become false claims. A feature that does not exist is either absent from the page or an honest, styled "coming soon" (the app page's waitlist is the model). Visitor-serving warnings (the approximate-pin note) are facts about the product, not construction narration; they stay.
+
+
 ## The voice in one line
 
 Scott Galloway meets nature writing: direct, specific, a little vivid, never precious.
