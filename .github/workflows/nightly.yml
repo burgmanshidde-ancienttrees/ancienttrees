@@ -9,8 +9,12 @@ on:
     # machine's: the self-dispatch chain runs continuously. The 19:05 UTC entry
     # is the evening igniter that reliably relights the chain after the pause;
     # the */20 knock covers GitHub's habit of dropping schedules.
-    - cron: "*/20 * * * *"
-    - cron: "5 19 * * *"
+    # Throttled 2026-07-31 (Hidde: nearly at the weekly limit on day 2 of 7).
+    # Was */20 plus a self-dispatch chain, which spent ~940 minutes in a
+    # single day. Four knocks a day, no chaining: the machine still works
+    # every night, it just stops eating the week in two days. Raise this
+    # back up when the limit stops being the constraint.
+    - cron: "0 1,4,7,22 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -163,6 +167,7 @@ jobs:
             echo "Night: continuous mode, 10min throttle."
             sleep 600
           fi
+          echo "Self-chaining is throttled off (2026-07-31, usage limit). Cron only."; exit 0
           gh workflow run nightly.yml --repo "${{ github.repository }}" \
             && echo "Next run dispatched." \
             || echo "Dispatch failed; the cron will cover it."
