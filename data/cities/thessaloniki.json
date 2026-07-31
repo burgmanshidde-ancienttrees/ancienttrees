@@ -1,0 +1,147 @@
+{
+  "city": "Thessaloniki",
+  "country": "Greece",
+  "status": "needs_curation",
+  "intro": "Four plane trees are what is left of pre-fire Thessaloniki. The Great Fire of 1917 burned through most of the city's Ottoman-era center in a single day, and a University of Thessaloniki study later found only four trees old enough, and far enough outside the burn line, to have watched it happen, then core-sampled each one to prove it. The oldest predates the Ottoman conquest of the city; together the four have stood for more than fifteen centuries combined. All four are free to see, on ordinary streets and squares rather than behind any gate.",
+  "meta_description": "Thessaloniki's oldest tree is an 828-year-old plane in the Kastra district, dated by core sample. Four verified trees, real stories, how to find each one.",
+  "question_answer": "Thessaloniki's oldest tree is very likely the Kastro Plane, at the corner of Acropoleos and Eptapyrgiou streets in the Kastra district, core-sampled at approximately 828 years old, predating the Ottoman conquest of the city by more than two centuries. It once stood beside a public fountain fed by the aqueduct of Vlatades Monastery, demolished around 1940.",
+  "question_meta": "An 828-year-old plane tree in Thessaloniki's old town is the city's likely oldest. Where to find it, and the city's other three.",
+  "question_context": "In 2019, a University of Thessaloniki study identified four Oriental plane trees in the historic center old enough to merit protection as natural monuments, dated by core sample rather than by estimating from girth alone. The oldest by a wide margin is the Kastro Plane, at the corner of Acropoleos and Eptapyrgiou streets in Kastra, the old town below the Byzantine walls, core-sampled at approximately 828 years, more than twice the age of the other three (310, 235 and 205 years). Its size has barely changed across more than a century of photographs, read by researchers as the signature of a very old, slow-growing tree rather than a young one still filling out. It once grew beside a public fountain fed by the aqueduct of the nearby Vlatades Monastery, at what was then the boundary between an Ottoman Turkish neighbourhood and a Greek one; the fountain was demolished around 1940 during road widening, and the tree's vigour has reportedly declined somewhat since. All four trees stand outside the burn line of the catastrophic 1917 fire that destroyed roughly a third of the city center, part of why they survived to be dated at all.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Thessaloniki?",
+      "a": "Very likely the plane tree at the corner of Acropoleos and Eptapyrgiou streets in Kastra, core-sampled at approximately 828 years old."
+    },
+    {
+      "q": "Are Thessaloniki's ancient trees free to visit?",
+      "a": "Yes, three of the four stand in public streets or squares with free access at any time; the fourth grows at the entrance to the Atatürk Museum, free to enter Tuesday to Sunday."
+    },
+    {
+      "q": "How were Thessaloniki's ancient plane trees dated?",
+      "a": "By core sample, a scientific dendrochronology method more precise than the girth-based estimates most cities rely on, as part of a 2019 university study proposing the four trees for protection as natural monuments."
+    },
+    {
+      "q": "Which Thessaloniki tree survived the Great Fire of 1917?",
+      "a": "The plane tree of Navarino Square, beside the ruins of Galerius's palace; flames reportedly reached its position during the fire without taking it down, and all four of the city's oldest trees stood outside the main burn line."
+    }
+  ],
+  "trees": [
+    {
+      "id": "the_001",
+      "name": "The Kastro Plane",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "~828 years",
+      "age_min": 780,
+      "age_max": 870,
+      "location": {
+        "address": "Corner of Acropoleos and Eptapyrgiou streets, Kastra, Thessaloniki",
+        "latitude": 40.6427,
+        "longitude": 22.9562,
+        "neighbourhood": "Kastra, Ano Poli"
+      },
+      "story": "At the corner of two narrow streets below Thessaloniki's Byzantine walls stands a tree old enough to have watched the Ottomans arrive. Core-sampled in 2019 as part of a university study, the Kastro plane came back at approximately 828 years, more than double the age of the next oldest tree the same study found in the city, and its size in photographs over a century old is barely different from its size today, the signature of a tree that stopped growing quickly long ago rather than one still filling out. Part of its trunk is dead, hollowed and split, but enough living tissue remains around it to keep the crown alive, a common shape for a tree this age rather than a sign of imminent failure. For most of its life it grew beside a public fountain, fed by an aqueduct running down from the nearby Vlatades Monastery, at the exact spot where an Ottoman Turkish neighbourhood met a Greek one. The fountain was demolished around 1940 when the street was widened, and researchers who study the tree today note its vigour has declined somewhat since, water it no longer gets. It still stands at the corner of Acropoleos and Eptapyrgiou streets, a short climb up from the modern city into the old one.",
+      "verified_sources": [
+        "https://www.archaiologia.gr/blog/2019/11/01/%CE%B4%CE%B9%CE%B1%CF%84%CE%B7%CF%81%CE%B7%CF%84%CE%AD%CE%B1-%CE%BC%CE%BD%CE%B7%CE%BC%CE%B5%CE%AF%CE%B1-%CF%84%CE%B7%CF%82-%CF%86%CF%8D%CF%83%CE%B7%CF%82-%CF%84%CE%AD%CF%83%CF%83%CE%B5%CF%81%CE%B1/",
+        "https://www.voria.gr/article/thessaloniki-diatiritea-mnimia-tis-fisis-4-ipereonovia-platania",
+        "https://www.researchgate.net/publication/334989362_Monumental_Trees_in_the_Historic_Centre_of_Thessaloniki_highlighting_them_through_a_cultural_route"
+      ],
+      "access": "Free, public street corner, viewable anytime",
+      "transport": "Kastra, Ano Poli district; about a 25 minute uphill walk from Aristotelous Square, or a short bus ride into the old town",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "the_002",
+      "name": "The Navarino Square Plane",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "~310 years",
+      "age_min": 290,
+      "age_max": 330,
+      "location": {
+        "address": "Navarino Square, beside the Galerius Palace ruins, Thessaloniki",
+        "latitude": 40.630694,
+        "longitude": 22.948694,
+        "neighbourhood": "City centre"
+      },
+      "story": "This plane tree has spent three centuries next to one of the more improbable ruins in central Thessaloniki: the palace the Roman emperor Galerius built for himself around 300 AD, excavated directly beside the square where the tree now stands. Core-sampled at around 310 years old, it grew up during the Ottoman period beside a public fountain that made this corner the social centre of the old Lefko Temenos neighbourhood, a meeting point for the district's merchant class long before the square took its current name from a 19th-century naval battle. Its most quietly remarkable feat is what it did not do: on 18 August 1917, a fire that started in a kitchen a few streets away spread through the wind-dried Ottoman-era city centre and destroyed roughly a third of Thessaloniki in a single day, and flames reportedly reached this tree's position without taking it down. Three other plane trees the city has since identified as comparably old all stood, by chance or design, outside that fire's path too. Today the tree shares its square with a fountain sculpture of a whistling boy and the low Roman walls it has outlived by seventeen centuries.",
+      "verified_sources": [
+        "https://www.archaiologia.gr/blog/2019/11/01/%CE%B4%CE%B9%CE%B1%CF%84%CE%B7%CF%81%CE%B7%CF%84%CE%AD%CE%B1-%CE%BC%CE%BD%CE%B7%CE%BC%CE%B5%CE%AF%CE%B1-%CF%84%CE%B7%CF%82-%CF%86%CF%8D%CF%83%CE%B7%CF%82-%CF%84%CE%AD%CF%83%CF%83%CE%B5%CF%81%CE%B1/",
+        "https://el.wikipedia.org/wiki/%CE%A0%CE%BB%CE%B1%CF%84%CE%B5%CE%AF%CE%B1_%CE%9D%CE%B1%CF%85%CE%B1%CF%81%CE%AF%CE%BD%CE%BF%CF%85_(%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7)"
+      ],
+      "access": "Free, public square, open anytime",
+      "transport": "City centre, beside the Galerius Palace archaeological site; short walk from Aristotelous Square or Egnatia Street",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "the_003",
+      "name": "The White Tower Plane",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "~235 years",
+      "age_min": 215,
+      "age_max": 255,
+      "location": {
+        "address": "Tsirogianni Square, opposite the White Tower, Thessaloniki",
+        "latitude": 40.626431,
+        "longitude": 22.948294,
+        "neighbourhood": "Waterfront"
+      },
+      "story": "Standing across the square from the White Tower, Thessaloniki's best-known monument, this plane tree is younger than its two counterparts in Kastra and Navarino Square, core-sampled at around 235 years old, yet it is the largest of the four by a clear margin: 26.4 metres tall with a trunk 140 centimetres through at chest height, taller and thicker than the 828-year-old tree in the old town above it. The gap says less about the tree's own vigour than about its ground: a wide-open waterfront square, full sun and no competing canopy, will grow a plane tree faster than a narrow street between old stone walls, whatever extra centuries the older tree has had to work with. Both were included in the same 2019 university study that first proposed protecting Thessaloniki's oldest trees as natural monuments, dated by core sample rather than the rougher girth-based estimates most cities settle for. The White Tower itself, an Ottoman-era fortification turned museum, has stood on the waterfront since the 15th century, more than seven times longer than this tree, and yet the two are usually photographed together, the tower for what it has witnessed and the tree for simply being enormous.",
+      "verified_sources": [
+        "https://www.archaiologia.gr/blog/2019/11/01/%CE%B4%CE%B9%CE%B1%CF%84%CE%B7%CF%81%CE%B7%CF%84%CE%AD%CE%B1-%CE%BC%CE%BD%CE%B7%CE%BC%CE%B5%CE%AF%CE%B1-%CF%84%CE%B7%CF%82-%CF%86%CF%8D%CF%83%CE%B7%CF%82-%CF%84%CE%AD%CF%83%CF%83%CE%B5%CF%81%CE%B1/",
+        "https://www.voria.gr/article/thessaloniki-diatiritea-mnimia-tis-fisis-4-ipereonovia-platania"
+      ],
+      "access": "Free, public square, open anytime",
+      "transport": "Waterfront, directly across from the White Tower; about a 10 minute walk along the seafront from Aristotelous Square",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "the_004",
+      "name": "The Apostolou Pavlou Plane",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "~205 years",
+      "age_min": 190,
+      "age_max": 220,
+      "location": {
+        "address": "Apostolou Pavlou Street, entrance to the Atatürk Museum, Thessaloniki",
+        "latitude": 40.635739,
+        "longitude": 22.954353,
+        "neighbourhood": "Ano Poli"
+      },
+      "story": "The youngest of Thessaloniki's four core-sampled ancient planes, at around 205 years old, grows at the entrance to a house built in the final years of the Ottoman era and preserved today as the Atatürk Museum, the birthplace, by tradition, of the Turkish republic's founder, and now free to enter for anyone who visits. The tree is close to 21 metres tall, younger and slighter than its counterpart across town by the White Tower, but old enough to have stood over the building through the last Ottoman decades, the Greek annexation of the city in 1912, and everything since, including the handover of the building itself to the Turkish state as a museum. It was identified alongside the other three trees on this list in the same 2019 university study that dated all four by core sample rather than estimate, part of a proposal to give Thessaloniki's oldest trees formal protection as natural monuments, the kind of status usually reserved for buildings rather than the plants growing next to them.",
+      "verified_sources": [
+        "https://www.archaiologia.gr/blog/2019/11/01/%CE%B4%CE%B9%CE%B1%CF%84%CE%B7%CF%81%CE%B7%CF%84%CE%AD%CE%B1-%CE%BC%CE%BD%CE%B7%CE%BC%CE%B5%CE%AF%CE%B1-%CF%84%CE%B7%CF%82-%CF%86%CF%8D%CF%83%CE%B7%CF%82-%CF%84%CE%AD%CF%83%CF%83%CE%B5%CF%81%CE%B1/",
+        "https://www.greeka.com/macedonia/thessaloniki/sightseeing/ataturk-museum/"
+      ],
+      "access": "Free, Atatürk Museum grounds, Tuesday to Sunday 10:00-17:00",
+      "transport": "Ano Poli district; about a 20 minute walk uphill from the city centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    }
+  ]
+}
