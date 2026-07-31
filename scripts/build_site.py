@@ -360,6 +360,27 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .prose { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
 .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2px; background: var(--cream-dark); border: 1px solid var(--cream-dark); margin-bottom: 3rem; }
 .explore-page { display: flex; flex-direction: column; height: calc(100vh - var(--header-h)); margin-top: var(--header-h); }
+.explore-split { display: flex; flex: 1; min-height: 0; }
+.ex-panel { width: 360px; flex-shrink: 0; overflow-y: auto; background: #fff; border-right: 1px solid var(--cream-dark); padding: 0.9rem; }
+.exc-cityhead { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; margin: 0.2rem 0.2rem 0.8rem; }
+.exc-cityhead h2 { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
+.exc-cityhead a { font-size: 12.5px; font-weight: 700; color: var(--moss); white-space: nowrap; }
+.exc-card { display: flex; gap: 0.7rem; align-items: center; padding: 0.45rem; border-radius: 12px; text-decoration: none; color: var(--ink); }
+.exc-card:hover { background: var(--surface); }
+.exc-ph { width: 86px; height: 62px; border-radius: 9px; overflow: hidden; flex-shrink: 0; background: var(--cream-dark); }
+.exc-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.exc-body b { display: block; font-size: 14.5px; font-weight: 750; }
+.exc-body span { font-size: 12.5px; color: var(--ink-mid); }
+.exc-row { display: block; padding: 0.5rem 0.45rem; border-radius: 9px; text-decoration: none; color: var(--ink); }
+.exc-row:hover { background: var(--surface); }
+.exc-row b { font-size: 13.5px; font-weight: 700; }
+.exc-row span { display: block; font-size: 12px; color: var(--ink-mid); }
+.exc-now { font-size: 10.5px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.04em; }
+.exc-empty { font-size: 13px; color: var(--ink-mid); padding: 0.5rem; }
+@media (max-width: 800px) {
+  .explore-split { flex-direction: column-reverse; }
+  .ex-panel { width: 100%; height: 38vh; border-right: none; border-top: 1px solid var(--cream-dark); }
+}
 .explore-head { padding: 1.1rem 2rem 0.9rem; display: grid; grid-template-columns: 1fr auto; gap: 0.2rem 1.5rem; align-items: center; }
 .explore-head h1 { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.015em; }
 .explore-head p { font-size: 13px; color: var(--ink-mid); margin-top: 0.2rem; max-width: 46rem; grid-column: 1; }
@@ -2711,11 +2732,38 @@ def build_explore_page(all_cities, pages, registers=None):
     # No counts in this copy (Hidde, 2026-07-29): "je moet nadenken dat alles
     # wat je maakt ooit gaat bestaan uit miljoenen bomen." A sentence that
     # brags about 13 or 345 stops working at 10,000; this one never will.
-    cities_json = json.dumps([
-        {"city": e["data"]["city"], "url": f'{e["slug"]}',
-         "lat": sum(t["location"]["latitude"] for t in e["data"]["trees"]) / len(e["data"]["trees"]),
-         "lng": sum(t["location"]["longitude"] for t in e["data"]["trees"]) / len(e["data"]["trees"])}
-        for e in all_cities if e["data"]["trees"]])
+    # The panel's city cards need a face and a rank: hero photo per the
+    # Cadiz standard where set, favourites first (the homepage list), then
+    # tree count. Thumbs at 400 keep 70+ cards light.
+    _FAVES = ["lisbon", "cadiz", "porto", "amsterdam", "kyoto",
+              "rome", "palermo", "paris", "london", "barcelona"]
+    def _city_face(e):
+        hero = e["data"].get("hero_tree_id")
+        if hero:
+            for t in e["data"]["trees"]:
+                if t["id"] == hero and usable_photo(t):
+                    return usable_photo(t)["url"]
+        for t in e["data"]["trees"]:
+            ph = usable_photo(t)
+            if ph:
+                return ph["url"]
+        return None
+    _city_rows = []
+    for e in all_cities:
+        trees = e["data"]["trees"]
+        if not trees:
+            continue
+        face = _city_face(e)
+        _city_rows.append({
+            "city": e["data"]["city"], "url": e["slug"],
+            "country": e["data"]["country"], "n": len(trees),
+            "lat": sum(t["location"]["latitude"] for t in trees) / len(trees),
+            "lng": sum(t["location"]["longitude"] for t in trees) / len(trees),
+            "ph": thumb_url(face, 400) if face else None,
+            "rank": _FAVES.index(e["slug"]) if e["slug"] in _FAVES else 99,
+        })
+    _city_rows.sort(key=lambda r: (r["rank"], -r["n"]))
+    cities_json = json.dumps(_city_rows)
     body = f"""
 <main class="explore-page">
   <div class="explore-head">
@@ -2727,7 +2775,10 @@ def build_explore_page(all_cities, pages, registers=None):
       <datalist id="ex-options">{"".join(f'<option value="{esc(c["city"])}">' for c in json.loads(cities_json))}</datalist>
     </form>
   </div>
-  <div id="map" class="explore-map"></div>
+  <div class="explore-split">
+    <aside id="ex-panel" class="ex-panel" aria-live="polite"></aside>
+    <div id="map" class="explore-map"></div>
+  </div>
 </main>
 """
     script = """
@@ -2840,7 +2891,17 @@ function initTreeLayers() {
       var cities = {};
       leaves.forEach(function(l) { cities[l.properties.cs] = true; });
       var keys = Object.keys(cities);
-      if (keys.length === 1) { window.location.href = keys[0]; return; }
+      if (keys.length === 1) {
+        panelMode = 'trees';
+        for (var i = 0; i < CITIES.length; i++) {
+          if (CITIES[i].url === keys[0]) {
+            map.flyTo({center: [CITIES[i].lng, CITIES[i].lat], zoom: 13, duration: 1200});
+            return;
+          }
+        }
+        window.location.href = keys[0];
+        return;
+      }
       src.getClusterExpansionZoom(f.properties.cluster_id).then(function(zoom) {
         map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5, duration: 700});
       });
@@ -2863,6 +2924,95 @@ function initTreeLayers() {
 }
 map.on('style.load', initTreeLayers);
 if (map.isStyleLoaded()) { initTreeLayers(); }
+// ---- The viewport panel (Hidde, 2026-07-31, "lesgo"): the panel follows
+// the map. Zoomed out: the cities in view as cards, favourites first.
+// Zoomed in on one city: that city's trees as rows. Hysteresis around the
+// threshold so the panel does not flap at the boundary.
+var panel = document.getElementById('ex-panel');
+var panelMode = 'cities';
+function fmtCard(c) {
+  var ph = c.ph ? '<span class="exc-ph"><img src="' + c.ph + '" alt="" loading="lazy"></span>' : '<span class="exc-ph exc-noph"></span>';
+  return '<a class="exc-card" href="#' + c.url + '" data-city="' + c.url + '">' + ph +
+         '<span class="exc-body"><b>' + c.city + '</b>' +
+         '<span>' + c.n + ' trees &middot; ' + c.country + '</span></span></a>';
+}
+function citiesInView() {
+  var b = map.getBounds();
+  return CITIES.filter(function(c) { return b.contains([c.lng, c.lat]); });
+}
+function dominantCity() {
+  var feats = map.queryRenderedFeatures({layers: ['tree', 'clusters']});
+  var b = map.getBounds(), counts = {};
+  DATA.features.forEach(function(f) {
+    var g = f.geometry.coordinates;
+    if (b.contains(g)) { counts[f.properties.cs] = (counts[f.properties.cs] || 0) + 1; }
+  });
+  var best = null, n = 0;
+  Object.keys(counts).forEach(function(cs) { if (counts[cs] > n) { n = counts[cs]; best = cs; } });
+  return best;
+}
+function renderPanel() {
+  if (!panel) return;
+  var z = map.getZoom();
+  if (panelMode === 'cities' && z >= 11.5) { panelMode = 'trees'; }
+  if (panelMode === 'trees' && z <= 10.5) { panelMode = 'cities'; }
+  if (panelMode === 'trees') {
+    var cs = dominantCity();
+    var meta = null;
+    for (var i = 0; i < CITIES.length; i++) { if (CITIES[i].url === cs) { meta = CITIES[i]; } }
+    if (cs && meta) {
+      var b = map.getBounds();
+      var rows = DATA.features.filter(function(f) {
+        return f.properties.cs === cs;
+      }).map(function(f) {
+        var p = f.properties;
+        var now = p.now == 1 ? ' <span class="exc-now">at its best</span>' : '';
+        return '<a class="exc-row" href="' + p.url + '"><b>' + p.name + '</b>' + now +
+               '<span>' + (p.age || '') + '</span></a>';
+      });
+      if (history.replaceState) { history.replaceState(null, '', '#' + cs); }
+      panel.innerHTML = '<div class="exc-cityhead"><h2>' + meta.city + '</h2>' +
+        '<a href="' + cs + '">Open the city page &rarr;</a></div>' + rows.join('');
+      return;
+    }
+    panelMode = 'cities';
+  }
+  var cities = citiesInView();
+  if (history.replaceState) { history.replaceState(null, '', location.pathname); }
+  if (!cities.length) {
+    panel.innerHTML = '<p class="exc-empty">No mapped cities in view yet. Zoom out, or <a href="contribute">suggest one</a>.</p>';
+    return;
+  }
+  panel.innerHTML = '<div class="exc-cityhead"><h2>Cities in view</h2></div>' + cities.slice(0, 20).map(fmtCard).join('');
+}
+panel.addEventListener('click', function(e) {
+  var card = e.target.closest ? e.target.closest('.exc-card') : null;
+  if (card) {
+    e.preventDefault();
+    var cs = card.getAttribute('data-city');
+    for (var i = 0; i < CITIES.length; i++) {
+      if (CITIES[i].url === cs) {
+        panelMode = 'trees';
+        map.flyTo({center: [CITIES[i].lng, CITIES[i].lat], zoom: 13, duration: 1400});
+      }
+    }
+  }
+});
+map.on('moveend', renderPanel);
+map.on('load', renderPanel);
+renderPanel();
+// Deep link: /explore#lisbon opens on that city in tree mode.
+(function() {
+  var h = (location.hash || '').replace('#', '');
+  for (var i = 0; i < CITIES.length; i++) {
+    if (CITIES[i].url === h) {
+      panelMode = 'trees';
+      map.jumpTo({center: [CITIES[i].lng, CITIES[i].lat], zoom: 13});
+      return;
+    }
+  }
+})();
+
 // The pulse: radius and opacity breathe on a 2s cycle. Paint-property
 // animation only, no per-frame data churn; stops costing anything when the
 // tab is hidden because rAF pauses.
@@ -3484,7 +3634,6 @@ def build_account_page():
     kept out of the sitemap and noindexed while AUTH_ENABLED is False."""
     body = """
 <main class="content-page account-page">
-  <div class="proto-note">Sign-in is real and stores only your email address; collection sync arrives with the app. You can delete your account here at any time.</div>
 
   <section id="st-signin" class="acct-card">
     <p class="hero-kicker">Your tree collection</p>
@@ -3494,7 +3643,7 @@ def build_account_page():
       <input type="email" id="acct-email" placeholder="you@example.com" aria-label="Email address" required>
       <button type="submit" class="go-btn">Email me a sign-in link</button>
     </form>
-    <p class="acct-fine">We use your address for sign-in links and nothing else. <a href="privacy">Privacy</a></p>
+    <p class="acct-fine">We store only your email address, for sign-in links and nothing else, and you can delete your account at any time. <a href="privacy">Privacy</a></p>
   </section>
 
   <section id="st-sent" class="acct-card" hidden>
@@ -3520,7 +3669,7 @@ def build_account_page():
       <div class="stat"><b id="n-trees">0</b><span>trees</span></div>
       <div class="stat alt"><b id="n-cities">0</b><span>cities</span></div>
     </div>
-    <p class="acct-sub" id="in-note">Your collection still lives on this device while sync is being built; signing in today claims your spot for it.</p>
+    <p class="acct-sub" id="in-note">Your collected trees are saved on this device. The app brings them to all your devices.</p>
     <p class="acct-actions"><button type="button" id="signout" class="acct-link">Sign out</button></p>
     <p class="acct-actions"><button type="button" id="del-acct" class="acct-link danger">Delete my account</button></p>
   </section>
