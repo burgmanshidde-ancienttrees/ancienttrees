@@ -1,0 +1,147 @@
+{
+  "city": "Sofia",
+  "country": "Bulgaria",
+  "status": "needs_curation",
+  "intro": "Sofia's remarkable trees keep company with the country's founding myths more than its buildings do. A mulberry on a side street near the old mineral baths is where legend has Vasil Levski tying his horse, and is reckoned the oldest tree in the capital under any of several wildly disputed age estimates. Ivan Vazov, Bulgaria's most celebrated writer, planted a spruce in Borisova Garden that has since outgrown his own memorial. In Lozenets, an oak said to predate Ottoman rule entirely once sheltered the country's most important literary circle. None of it costs anything to see.",
+  "meta_description": "Sofia's most remarkable trees: Vasil Levski's legendary mulberry, Ivan Vazov's 1885 spruce, a 500-year-old literary oak, and a poplar planted in 1892.",
+  "question_answer": "Sofia's oldest tree is generally considered the Mulberry of Vasil Levski on Iskar Street, where legend says the national hero tied his horse over 150 years ago. Its exact age is genuinely disputed, with expert estimates ranging from around 220 years to more than 600, but every account agrees it predates every other candidate tree in the capital.",
+  "question_meta": "A mulberry tied to Vasil Levski's legend, its true age disputed by centuries, is generally reckoned Sofia's oldest tree.",
+  "question_context": "The Mulberry of Vasil Levski holds its claim to being Sofia's oldest tree by consensus rather than by settled fact. Local historians and the tree's official protection status both point to it first, but the specific age varies enormously depending on the source: some experts, working from growth-rate estimates, put it at around 220 years, while others argue for a figure well over 600, a gap wide enough to place its planting anywhere from the early 1800s to before the fall of Constantinople. The legend anchoring it to Vasil Levski, Bulgaria's most revered independence fighter, rests on his own surviving notes referencing a stay at Hadji Mano's inn, which stood near the tree, though the notes describe the inn rather than the tree specifically. No comparable candidate comes close on either end of the range: Ivan Vazov's spruce and Doctors' Garden's poplar are both reliably dated to the late 19th century, while even the most generously aged oak in the Slaveykov garden tops out around 500. So the mulberry keeps the title, on the strength of being unambiguously the oldest even when nobody agrees by how much.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Sofia?",
+      "a": "The Mulberry of Vasil Levski on Iskar Street, where legend says the national hero tied his horse. Estimates for its exact age range widely, from around 220 years to more than 600."
+    },
+    {
+      "q": "Did Ivan Vazov really plant the spruce in Borisova Garden himself?",
+      "a": "Yes, according to the accounts behind the tree's name. He planted it in 1885, decades before the city built his marble memorial nearby in 1920."
+    },
+    {
+      "q": "Why is the oak in Lozenets called the Slaveykov Oak?",
+      "a": "It stands in the garden the poet Pencho Slaveykov's family bought in 1879, where he wrote some of his best known work and where Bulgaria's influential Misal literary circle used to gather."
+    },
+    {
+      "q": "Are Sofia's remarkable trees free to visit?",
+      "a": "Yes, all four stand on a public street or in public parks and gardens, with no entry charge."
+    }
+  ],
+  "trees": [
+    {
+      "id": "sof_001",
+      "name": "The Mulberry of Vasil Levski",
+      "species": "Mulberry (Morus alba)",
+      "age_estimate": "220-650 years (disputed)",
+      "age_min": 220,
+      "age_max": 650,
+      "location": {
+        "address": "Ulitsa Iskar 2, near the Central Sofia Bath, Sofia",
+        "latitude": 42.6998,
+        "longitude": 23.3245,
+        "neighbourhood": "City Center"
+      },
+      "story": "According to a story that has passed down through Sofia for generations, Vasil Levski, the revolutionary Bulgarians call the Apostle of Freedom, used to tie his horse to a mulberry tree on what is now Iskar Street whenever he stayed at Hadji Mano's inn nearby, a stop confirmed by Levski's own surviving notes referencing a stay at Manoviya han. He was executed by the Ottomans in 1873, and the tree he supposedly used is still standing, about a hundred paces east of the old Central Sofia Bath, now generally called the oldest tree in the capital. How old exactly is genuinely unresolved: estimates from different experts range from roughly 220 years to more than 600, a gap wide enough to place its planting anywhere from the Bulgarian National Revival period back to before the fall of Constantinople, and even its species is described inconsistently across sources, some calling it a white mulberry, others simply a mulberry without specifying which. What survives every version of the story is the tree's role as a fixed point through Sofia's growth from Ottoman provincial town to national capital, still rooted in the same spot while the city grew up entirely around it, and its formal status today as an officially protected specimen.",
+      "verified_sources": [
+        "https://about-sofia.com/bg/zabelejitelnosti/priroda/vekovno-darvo-chernitsa-na-levski/",
+        "https://www.bgonair.bg/a/36-sutreshen-blok/425764-taynite-na-vekovnite-darveta-v-sofiya-ot-chernitsata-na-vasil-levski-do-vazoviya-smarch"
+      ],
+      "access": "Free, public street, viewable anytime",
+      "transport": "Central Sofia, near the Regional History Museum (former Central Bath); a 5 minute walk from Serdika metro station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sof_002",
+      "name": "Ivan Vazov's Spruce",
+      "species": "Norway Spruce (Picea abies)",
+      "age_estimate": "~140 years",
+      "age_min": 138,
+      "age_max": 143,
+      "location": {
+        "address": "Near the Ivan Vazov monument, Borisova Garden, Sofia",
+        "latitude": 42.67972,
+        "longitude": 23.34139,
+        "neighbourhood": "Borisova Garden"
+      },
+      "story": "Ivan Vazov, the author routinely called the Patriarch of Bulgarian Literature, planted a spruce in Borisova Garden in 1885, decades before Sofia's own cultural establishment got around to building him a monument. That marble bust went up in 1920, sculpted by Zheko Spiridonov and funded by the city's Art and Industrial School, and it now stands near a tree that has since grown to roughly 30 metres, taller than most buildings in the surrounding park. Picea abies grows naturally in Bulgaria's mountain forests rather than in lowland Sofia, so a spruce this size and age inside a city park represents decades of deliberate cultivation rather than a wild survivor, tended carefully enough to outlast the writer who planted it by more than a century. Vazov himself lived until 1921, long enough to see his own tree well established, and Borisova Garden, opened as the city's grand municipal park in the 1880s, has grown up around both the tree and the bust as one of Sofia's most visited green spaces. Few visitors walking past either object today realize the taller of the two is also the older.",
+      "verified_sources": [
+        "https://www.bgonair.bg/a/36-sutreshen-blok/425764-taynite-na-vekovnite-darveta-v-sofiya-ot-chernitsata-na-vasil-levski-do-vazoviya-smarch",
+        "https://bg.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BC%D0%B5%D1%82%D0%BD%D0%B8%D0%BA_%D0%BD%D0%B0_%D0%98%D0%B2%D0%B0%D0%BD_%D0%92%D0%B0%D0%B7%D0%BE%D0%B2_(%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0_%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%BD%D0%B0)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Borisova Garden, central Sofia; a 10 minute walk from Vasil Levski metro station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sof_003",
+      "name": "The Oak of Pencho Slaveykov",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "300-500+ years (disputed)",
+      "age_min": 300,
+      "age_max": 520,
+      "location": {
+        "address": "Park Slaveykovite Dabove, Ulitsa Sveta Gora, Lozenets, Sofia",
+        "latitude": 42.67726,
+        "longitude": 23.329224,
+        "neighbourhood": "Lozenets"
+      },
+      "story": "When the Slaveykov family moved from Plovdiv to Sofia after Bulgaria's 1878 liberation and bought a garden in what is now the Lozenets district, they got more than a plot of land. The garden held a surviving fragment of Kurubaglar, an old oak grove that had once covered a wide stretch of the area later swallowed by the city, and one of its oaks, later named for the poet Pencho Slaveykov, is reckoned by some accounts at more than 500 years old, old enough to have been standing through the entire span of Ottoman rule the 1878 liberation ended. A more conservative count of the garden's roughly 28 other trees puts their age nearer 300 years, itself old enough to make the plot one of Sofia's oldest continuously wooded pieces of ground. Pencho Slaveykov wrote some of his best known work in this garden, and it became a regular meeting place for the literary circle around the journal Misal, Bulgaria's most influential turn of the century intellectual gathering, whose members included the poet Peyo Yavorov and the critic Dr. Krastev. The site was declared a national cultural monument in 2005, though the park around the oak has since fallen into visible disrepair, its benches broken and its fountain dry, a contrast the tree itself seems entirely unbothered by.",
+      "verified_sources": [
+        "https://unknown-sofia.com/bg/news/16498463702731/slaveykovi-dabove-",
+        "https://bepf-bg.org/dejnosti/for-the-trees/park-slaveykovi-dabove/",
+        "https://commons.wikimedia.org/wiki/File:The_Meadow_Slaveykov%27s_oaks,_Sofia,_2012_-_001.jpg"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Lozenets district, Ulitsa Sveta Gora; about a 20 minute walk from Vasil Levski Stadium",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/The_Meadow_Slaveykov%27s_oaks%2C_Sofia%2C_2012_-_001.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Peter Kirkov, Sofia Code, CC BY-SA 4.0, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "sof_004",
+      "name": "The Gray Poplar of Doctors' Garden",
+      "species": "Gray Poplar (Populus canescens)",
+      "age_estimate": "~134 years",
+      "age_min": 130,
+      "age_max": 138,
+      "location": {
+        "address": "Doktorska Gradina (Doctors' Garden), Sofia",
+        "latitude": 42.694583,
+        "longitude": 23.339399,
+        "neighbourhood": "Doctors' Garden"
+      },
+      "story": "Doctors' Garden started life in 1896 as one of Sofia's first botanical gardens, a role it kept for roughly four decades before the collection was absorbed elsewhere and the grounds became an ordinary public park. Its oldest tree predates even that botanical mission: a grey poplar planted in 1892, four years before the garden's formal opening, making it the first tree in the ground on a site that would later fill with imported rarities like ginkgo, bald cypress and thorny honey locust brought over from North America. Populus canescens is a wild-type species, unlike the ornamental poplar cultivars usually chosen for city planting, and its survival as a deliberately kept specimen among later collections of showier imports is itself part of what earned it protected status. The garden takes its name from the doctors of the nearby Alexandrovska Hospital, who used the grounds for open air recovery and, informally, still do, so this poplar has spent more than a century sheltering patients on the same soil where it was one of the first things anyone thought to plant.",
+      "verified_sources": [
+        "https://trees.visitsofia.bg/%D0%B4%D0%BE%D0%BA%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0-%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%BD%D0%B0/",
+        "https://www.24plovdiv.bg/novini/article/23260005"
+      ],
+      "access": "Free, public garden, open daily",
+      "transport": "Central Sofia, near Alexandrovska Hospital; a 10 minute walk from Sofia University metro station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    }
+  ]
+}

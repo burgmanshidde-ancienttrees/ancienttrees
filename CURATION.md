@@ -1,3 +1,15 @@
+## 2026-07-31 — Sofia opens: 4 trees, a national hero's mulberry and a poet's oak
+
+Same session, straight after Bucharest. Sofia was next untried city in the queue.
+
+**Shipped 4**: the Mulberry of Vasil Levski (Morus alba, 220-650 years, hugely disputed), on Iskar Street near the old Central Sofia Bath, generally called Sofia's oldest tree by consensus though the disputed range spans over four centuries and even the species description varies across sources (white mulberry vs. unspecified); Ivan Vazov's Spruce (Norway Spruce, Picea abies, planted 1885, ~30m), in Borisova Garden near the 1920 marble bust of Bulgaria's most celebrated writer, planted by Vazov himself decades before the memorial went up; the Oak of Pencho Slaveykov (Pedunculate Oak, Quercus robur, 300-500+ years, disputed), the last fragment of Sofia's old Kurubaglar oak grove, in the garden where the Misal literary circle (Slaveykov, Yavorov, Dr. Krastev) met, a national cultural monument since 2005 despite the park itself having fallen into visible disrepair (noted honestly, benches broken, fountain dry, per an August 2024 article); and the Gray Poplar of Doctors' Garden (Populus canescens, planted 1892), the first tree in the ground on a site that became one of Sofia's early botanical gardens in 1896.
+
+**A useful official source found**: trees.visitsofia.bg, an official Visit Sofia municipal micro-site cataloguing the city's protected/remarkable trees, corroborated the Doctors' Garden species list and gave exact coordinates for that garden; its homepage independently referenced the Levski mulberry and Slaveykov oaks, giving a second, official-source confirmation for both without needing to guess at exact URLs for individual tree pages the site may or may not have.
+
+**1 of 4 photos found**: the Slaveykov Oaks, CC BY-SA 4.0 (Peter Kirkov, "Sofia Code" project, 2012, Wikimedia Commons), found_needs_check, its geotag landing within about 15 metres of this entry's pin. 3 missing (mulberry, spruce, poplar), none found on Commons.
+
+**Coordinate honesty**: all four pins are `location_precision: approximate`. None has a source giving the exact trunk position; all are anchored to the named street, park or garden the tree stands in.
+
 ## 2026-07-31 — Bucharest opens: 4 trees, a mulberry with a carved legend and a plane tree with a documented wound
 
 Same session, straight after Belgrade. Bucharest was next untried city in the queue.
