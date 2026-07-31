@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Reykjavik opens: 4 trees, honestly young by any standard but genuinely old for Iceland
+
+Same session, straight after Sofia. Reykjavik was next untried city in the queue, and the first genuinely different research problem this session: Iceland lost nearly all its forest within centuries of Norse settlement, so nothing here is old by the standards of the rest of the site. The city intro and every tree's own story say that plainly rather than let the numbers speak for themselves.
+
+Shipped 4: the Whitebeam of Víkurgarður, Iceland's oldest planted tree at any location, planted 1884 on the site of Reykjavik's former churchyard; the Larch of Hólavallagarður, Tree of the Year 2011, growing in the country's oldest surviving cemetery; the City Hall Maple, planted in 1918 the year of Iceland's Act of Union sovereignty and still, by the national forestry society's own words, healthy as a horse; and the Spruce of Elliðaárhólmi, Tree of the Year 2019 and honestly only 55-65 years old, included for its role as a symbol of the country's postwar forestry revival rather than for age.
+
+One duplicate-park trap caught before writing: Víkurgarður and Fógetagarður are the same park under two names, which early research nearly turned into two separate entries for the same whitebeam. One dead-tree near-miss avoided too: a bay willow planted the same year and site, once the ancestor of nearly every bay willow in Iceland, blew down in 1987 and no longer stands; mentioned only as context, not shipped.
+
+0 of 4 photos found on Wikimedia Commons.
+
+Site rebuilt (886 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Sofia opens: 4 trees, a national hero's mulberry and a poet's oak
 
 Same session, straight after Bucharest. Sofia was next untried city in the queue.

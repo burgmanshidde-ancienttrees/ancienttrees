@@ -1,0 +1,146 @@
+{
+  "city": "Reykjavik",
+  "country": "Iceland",
+  "status": "needs_curation",
+  "intro": "Iceland lost nearly all its forest cover within a few centuries of Norse settlement, so nothing on this list is old by European standards, and every entry says so honestly. What survives instead is deliberate: a Swedish whitebeam planted in 1884 on top of Reykjavik's old churchyard, now the oldest planted tree in the entire country; a larch inside the city's most historic cemetery; a sycamore maple planted the year Iceland became a sovereign state; and a spruce from the country's first serious postwar forestry push. None is ancient elsewhere. Each one is, here.",
+  "meta_description": "Reykjavik's most remarkable trees: the oldest planted tree in Iceland, a cemetery larch, a maple from 1918, and a spruce marking a forestry revival.",
+  "question_answer": "Reykjavik's oldest tree, and the oldest planted tree in all of Iceland, is a Swedish whitebeam in Víkurgarður (also called Fógetagarður), planted in 1884 by health director Georg Schierbeck on the site of the city's former churchyard. It stands at the corner of Aðalstræti and Kirkjustræti and is roughly 142 years old.",
+  "question_meta": "A Swedish whitebeam planted in 1884 on Reykjavik's old churchyard is not just the city's oldest tree, it is the oldest planted tree in Iceland.",
+  "question_context": "The whitebeam's claim is unusually solid for a country where almost no tree can point to a documented planting year at all. Georg Schierbeck, Iceland's Danish-born director of health, took over the site of Reykjavik's disused churchyard in 1883 specifically to run horticultural trials, testing which imported species could survive the climate, and his own records place the whitebeam's planting in the summer of 1884. Most of what he planted alongside it did not survive; a bay willow from the same year and site, once the parent of nearly every bay willow in Iceland, blew down in a 1987 storm and is gone. The whitebeam is the exception, cared for continuously by the magistrate's family who took over the garden after Schierbeck left for Denmark in 1894, through a 1972 redesign, and into the present, where it still stands at the same street corner. Nothing else in Reykjavik, or in Iceland more broadly, has a comparably documented claim to being older as a deliberately planted, still-living specimen, which is why this one tree carries the title at both the city and national level simultaneously.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Reykjavik?",
+      "a": "A Swedish whitebeam in Víkurgarður (Fógetagarður), planted in 1884 by health director Georg Schierbeck. At roughly 142 years old, it is also the oldest planted tree in all of Iceland."
+    },
+    {
+      "q": "Why are Reykjavik's oldest trees all under 150 years old?",
+      "a": "Iceland lost nearly all its natural forest cover within a few centuries of Norse settlement in the 9th century, and organized replanting only began in earnest in the 20th century, so almost nothing planted before the late 1800s survives anywhere in the country."
+    },
+    {
+      "q": "Is the maple at Reykjavik City Hall really from 1918?",
+      "a": "Yes. It was planted the year Iceland became a sovereign state in union with Denmark and was named the country's Tree of the Year in 1994, still described by the national forestry society as being in excellent health."
+    },
+    {
+      "q": "Are Reykjavik's remarkable trees free to visit?",
+      "a": "Yes, all four stand in public parks, a public cemetery, or on a public street corner, with no charge to see them."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rey_001",
+      "name": "The Whitebeam of Víkurgarður",
+      "species": "Swedish Whitebeam (Sorbus intermedia)",
+      "age_estimate": "~142 years",
+      "age_min": 140,
+      "age_max": 144,
+      "location": {
+        "address": "Víkurgarður (Fógetagarður), corner of Aðalstræti and Kirkjustræti, Reykjavik",
+        "latitude": 64.1474,
+        "longitude": -21.9418,
+        "neighbourhood": "City Center"
+      },
+      "story": "Reykjavik's oldest tree stands on ground that was the city's main burial ground for roughly six centuries, from a church first recorded around 1200 until the last graves stopped in 1839. In 1883 the Danish health director Georg Schierbeck took over the disused churchyard for horticultural experiments, planting vegetables, grain, shrubs and trees to test what could actually grow in Iceland's climate, and the following summer he put a Swedish whitebeam in the ground at the corner of Aðalstræti and Kirkjustræti. It survived when almost everything else in his experimental garden did not, and at around 142 years old it now holds the title of the oldest planted tree in the country, not just the city, a distinction that says as much about Iceland's near-total historical deforestation as it does about the tree itself. Schierbeck left for Denmark a decade later, and the site passed to a local magistrate's family who kept tending it, which is most of why anything from his original planting survived at all. The whitebeam has outlasted the churchyard's headstones, the garden's original purpose, and a 1972 redesign that turned the space into more of a square than a garden, one of only a few of Schierbeck's original trees still standing.",
+      "verified_sources": [
+        "https://www.gruggogmakk.com/blog/fgetagerur-and-the-oldest-tree-in-reykjavk",
+        "https://heidmork.is/borgartre-og-tre-arsins-i-reykjavik/"
+      ],
+      "access": "Free, public park, viewable anytime",
+      "transport": "Downtown Reykjavik, Aðalstræti; a 3 minute walk from the old harbour area",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "rey_002",
+      "name": "The Larch of Hólavallagarður",
+      "species": "European Larch (Larix decidua)",
+      "age_estimate": "~95 years",
+      "age_min": 90,
+      "age_max": 98,
+      "location": {
+        "address": "Hólavallagarður cemetery, Suðurgata, Reykjavik",
+        "latitude": 64.1446,
+        "longitude": -21.9479,
+        "neighbourhood": "Vesturbær"
+      },
+      "story": "European larch does not grow wild anywhere near Iceland, and conifers in general struggle against the country's wind and thin soil more than almost any other kind of tree, which is part of why Iceland's forestry society singled one out in 2011 growing inside Hólavallagarður, Reykjavik's oldest surviving cemetery. Consecrated in 1838 and still the resting place of many of the country's most significant historical figures, the cemetery has become, almost by accident, one of the most heavily wooded plots of ground in the capital, its narrow gravel paths winding between headstones and trees rather than through open lawn the way most cemeteries are laid out. The larch was already about 80 years old when it won its designation, putting its planting around the early 1930s, decades into Iceland's first serious attempts at organized forestry after centuries in which the country had almost none. Larches lose their needles every winter, unusual for a conifer, so for several months a year this one stands bare among the cemetery's evergreens, a reminder that even the country's championed trees keep behaving like nothing else planted around them.",
+      "verified_sources": [
+        "https://heidmork.is/borgartre-og-tre-arsins-i-reykjavik/",
+        "https://is.wikipedia.org/wiki/H%C3%B3lavallagar%C3%B0ur"
+      ],
+      "access": "Free, public cemetery, open daily during daylight hours",
+      "transport": "Vesturbær district, Suðurgata; a 15 minute walk from downtown Reykjavik",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "rey_003",
+      "name": "The City Hall Maple",
+      "species": "Sycamore Maple (Acer pseudoplatanus)",
+      "age_estimate": "~108 years",
+      "age_min": 105,
+      "age_max": 110,
+      "location": {
+        "address": "Corner of Suðurgata and Vonarstræti, near Reykjavik City Hall",
+        "latitude": 64.146,
+        "longitude": -21.9422,
+        "neighbourhood": "City Center"
+      },
+      "story": "In 1918, the year the Act of Union made Iceland a sovereign state in union with Denmark, a sycamore maple went into the ground at the corner of Suðurgata and Vonarstræti, on a small patch of grass squeezed against what would later become a parking area. It grew alongside the birth of modern Icelandic statehood, was named the country's Tree of the Year in 1994, and by every recent assessment is still, in the Icelandic forestry society's own phrase, healthy as a horse, crown maintained, foliage vigorous, standing its ground on a corner most passers by would assume was chosen for parking rather than for a tree planted before the country existed in its current form. Sycamore maple is not native to Iceland any more than most of the species on this list, and a specimen this size at this age, over a century into a climate its ancestors never evolved for, represents one of the country's oldest continuous experiments in whether an imported tree can actually thrive here. It stands close enough to Reykjavik's City Hall and the Tjörnin pond that most visitors to either landmark walk directly past it without knowing it predates both the current city hall building and, in an informal sense, the country's independence itself.",
+      "verified_sources": [
+        "https://heidmork.is/borgartre-og-tre-arsins-i-reykjavik/",
+        "https://heidmork.is/gardahlynur-acer-pseudoplatanus/"
+      ],
+      "access": "Free, public street corner, viewable anytime",
+      "transport": "Downtown Reykjavik, beside Reykjavik City Hall and Tjörnin pond",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "rey_004",
+      "name": "The Spruce of Elliðaárhólmi",
+      "species": "Norway Spruce (Picea abies)",
+      "age_estimate": "~55-65 years (undocumented exact date)",
+      "age_min": 55,
+      "age_max": 70,
+      "location": {
+        "address": "Elliðaárhólmi, Elliðaárdalur valley, Reykjavik",
+        "latitude": 64.1183,
+        "longitude": -21.8405,
+        "neighbourhood": "Elliðaárdalur"
+      },
+      "story": "The Norway spruce named Iceland's Tree of the Year in 2019 is not old by the standards of almost anywhere else on this site, an estimated 50 to 60 years at the time of its selection, but it stands on ground that had no trees at all a human lifetime earlier. Elliðaárhólmi, an island within the Elliðaárdalur river valley on Reykjavik's eastern edge, only began receiving planted forest around 1950, when staff from the city's hydroelectric power company started work later taken over by the Reykjavik Forestry Society in 1972. Norway spruce imported from northern Norway went in heavily through the 1950s, 60s and 70s, part of a national effort to prove that organized forestry could work at all in a country that had lost nearly all its original woodland centuries earlier to settlement-era clearing and grazing. This particular tree, twelve metres tall by the time it won its designation, has become something like a mascot for that project, not ancient, not native, but proof that a spruce planted with real effort in the right spot can grow into something worth naming, in a country where almost no tree could make that claim a century ago.",
+      "verified_sources": [
+        "https://reykjavik.is/frettir/tre-arsins-er-raudgreni-i-ellidaarholma",
+        "https://heidmork.is/borgartre-og-tre-arsins-i-reykjavik/"
+      ],
+      "access": "Free, public nature reserve, open daily",
+      "transport": "Elliðaárdalur valley, eastern Reykjavik; accessible via walking and cycling paths from Árbær or Breiðholt",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

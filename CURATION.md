@@ -1,3 +1,17 @@
+## 2026-07-31 — Reykjavik opens: 4 trees, honestly young by any standard but genuinely old for Iceland
+
+Same session, straight after Sofia. Reykjavik was next untried city in the queue. Iceland's near-total historical deforestation (lost within centuries of Norse settlement, organized replanting only from the 20th century) means nothing here is old by the standards of the rest of the site; the city intro and every tree's story say so directly rather than let the numbers imply otherwise.
+
+**Shipped 4**: the Whitebeam of Víkurgarður (Swedish Whitebeam, Sorbus intermedia, planted 1884, ~142 years), Reykjavik's and Iceland's oldest planted tree, on the site of the city's former churchyard (Víkurkirkja, in use ~1200-1839), planted by health director Georg Schierbeck during 1883-84 horticultural trials; the Larch of Hólavallagarður (European Larch, Larix decidua, ~95 years), Iceland's Tree of the Year 2011, growing in the country's oldest surviving cemetery (consecrated 1838); the City Hall Maple (Sycamore Maple, Acer pseudoplatanus, planted 1918, ~108 years), planted the year of Iceland's Act of Union sovereignty, Tree of the Year 1994, confirmed in excellent health by the national forestry society; and the Spruce of Elliðaárhólmi (Norway Spruce, Picea abies, ~55-65 years, undated exactly), Tree of the Year 2019, from Reykjavik's postwar municipal forestry programme, included for historical/civic significance under CLAUDE.md's qualifying bar rather than age, same pattern as Lisbon's Rubber Tree of Mouraria.
+
+**A duplicate-park trap avoided**: Víkurgarður and Fógetagarður turned out to be the same physical park under two names (the historical name and the common modern name), which two separate early search results initially presented as different locations each hosting "Reykjavik's oldest tree." Confirmed via a dedicated search before writing; only one entry shipped for the whitebeam.
+
+**A dead-tree near-miss avoided**: a bay willow planted the same year (1884) at the same site, once the parent of nearly every bay willow in Iceland, blew down in a 1987 storm and no longer stands. Referenced only as context in the whitebeam's story, not shipped as its own entry.
+
+**0 of 4 photos found** on Wikimedia Commons.
+
+**Coordinate honesty**: all four pins `location_precision: approximate`, anchored to the named park, cemetery, street corner or valley rather than a surveyed trunk position.
+
 ## 2026-07-31 — Sofia opens: 4 trees, a national hero's mulberry and a poet's oak
 
 Same session, straight after Bucharest. Sofia was next untried city in the queue.
