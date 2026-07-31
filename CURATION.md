@@ -1,3 +1,7 @@
+## 2026-07-31 — Submission #1 (Teststad): not published, reads as a pipeline test not a real lead
+
+First row ever read from the new Supabase `submissions` table (native form on /contribute, live since 2026-07-31). Contents: city "Teststad", tree "Claude-verificatieboom", location hint "chain test", reason "proving the pipe", submitted by "Claude". Treated it as a research lead per Step 0b regardless, but "Teststad" is not a real place (German/Dutch for "test city") and "Claude-verificatieboom" is not a documented tree name or species anywhere findable; nothing to verify against two independent sources. Read as someone (or a prior run) proving the Supabase pipe works end to end rather than an actual contribution. Not published. Row id 1 appended to `data/submissions-processed.json`.
+
 ## 2026-07-31 — Barcelona: two photos pulled by Hidde's eye, both now honest gaps
 
 - **bcn (Holm Oak of Carrer de l'Encarnacio):** the photo showed the community garden with the oak as a corner of canopy; subject test failed. Commons has only the WRONG holm oak (Passeig de Gracia) and Sedeta building shots; iNaturalist has no CC candidates at the spot. Hunt brief: the tree is locally "l'alzina de l'Encarnacio", saved by neighbours from a 2017-2019 development; campaign imagery exists but licences unverified.
