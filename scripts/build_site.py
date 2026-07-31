@@ -376,6 +376,8 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .exc-row b { font-size: 13.5px; font-weight: 700; }
 .exc-row span { display: block; font-size: 12px; color: var(--ink-mid); }
 .exc-now { font-size: 10.5px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.04em; }
+.cindex-country { font-size: 1.05rem; font-weight: 800; margin: 1.6rem 0 0.6rem; }
+.cindex-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.35rem 1rem; }
 .exc-empty { font-size: 13px; color: var(--ink-mid); padding: 0.5rem; }
 @media (max-width: 800px) {
   .explore-split { flex-direction: column-reverse; }
@@ -1752,6 +1754,21 @@ def usable_photo(tree):
     return None
 
 
+def city_face(entry, width=400):
+    """The city's face photo url at card size: hero_tree_id first, else the
+    first tree with a usable photo, else None. One definition for the
+    favourites shelf, the choosers and the cities index."""
+    hero = entry["data"].get("hero_tree_id")
+    if hero:
+        for t in entry["data"]["trees"]:
+            if t["id"] == hero and usable_photo(t):
+                return thumb_url(usable_photo(t)["url"], width)
+    for t in entry["data"]["trees"]:
+        if usable_photo(t):
+            return thumb_url(usable_photo(t)["url"], width)
+    return None
+
+
 def load_cities():
     city_list = json.loads((DATA / "city-list.json").read_text())["cities"]
     for entry in city_list:
@@ -2545,7 +2562,7 @@ def build_species_index(species_cards, published, pages):
     pages.append(("species.html", page, canonical))
 
 
-def build_cities_index(published, pages):
+def build_cities_index(published, pages, faces=None):
     """Every mapped city, grouped by country, at /cities.
 
     Built 2026-07-30 when the by-country block left the homepage (Hidde:
@@ -2562,12 +2579,17 @@ def build_cities_index(published, pages):
     by_country = {}
     for p in published:
         by_country.setdefault(p["country"], []).append(p)
+    def _card(p):
+        face = (faces or {}).get(p["slug"])
+        ph = (f'<span class="exc-ph"><img src="{esc(face)}" alt="" loading="lazy"></span>'
+              if face else '<span class="exc-ph exc-noph"></span>')
+        return (f'<a class="exc-card" href="{p["slug"]}">{ph}'
+                f'<span class="exc-body"><b>{esc(p["city"])}</b>'
+                f'<span>{p["count"]} trees</span></span></a>')
     groups = "".join(
-        '<div class="dir-group"><h3>%s</h3>%s</div>' % (
+        '<h2 class="cindex-country">%s</h2><div class="cindex-grid">%s</div>' % (
             esc(country),
-            "".join('<a href="%s">%s <span class="dir-count">%d</span></a>'
-                    % (p["slug"], esc(p["city"]), p["count"])
-                    for p in sorted(cities, key=lambda x: x["city"])))
+            "".join(_card(p) for p in sorted(cities, key=lambda x: x["city"])))
         for country, cities in sorted(by_country.items()))
     total = sum(p["count"] for p in published)
     body = f"""
@@ -2575,7 +2597,7 @@ def build_cities_index(published, pages):
   {breadcrumb_html(crumb_items, rootpath)}
   <h1>Every city we have mapped</h1>
   <p class="answer-first">{len(published)} cities, {total} trees, each one verified and placed. Pick a city for its trees, or open <a href="explore">the map</a> to see what is near you.</p>
-  <div class="dir-cols">{groups}</div>
+  {groups}
 </main>
 """
     graph = site_graph() + [
@@ -3966,7 +3988,7 @@ def main():
         if is_draft:
             draft_collection_pages.append(result)
     build_collections_index(public_collections, published, pages)
-    build_cities_index(published, pages)
+    build_cities_index(published, pages, {e['slug']: city_face(e) for e in renderable})
 
     species_cards = []
     for common in sorted(qualifying, key=lambda c: -len(qualifying[c])):
