@@ -1,0 +1,174 @@
+{
+  "city": "The Hague",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "The Hague's oldest tree is not in a park at all: it grows behind a locked gate in an almshouse courtyard, still tended by the elderly women who live there, exactly as it has been since 1638. That pattern repeats across the city's genuinely remarkable trees: an oak protected by a prince's four-century-old promise, a linden that escaped a formal garden's discipline by outliving it, a chestnut that dodged two rounds of royal demolition. The newest addition is barely a century old and earns its place for what a neighbourhood made of it, not its rings.",
+  "meta_description": "The Hague's oldest tree, a 1638 pear, still grows in a locked almshouse courtyard. Five verified locations, from a royal oak to a gnome-tree tradition.",
+  "question_answer": "The Hague's oldest tree is the Juttepeer of the Heilige Geesthofje, a pear tree planted in 1638 in the courtyard of a still-functioning almshouse near the Paviljoensgracht. At roughly 388 years old, it is widely considered the oldest pear tree in the Netherlands, and residents still make jelly from its fruit every year.",
+  "question_meta": "A 1638 pear tree in a locked almshouse courtyard, likely the oldest pear tree in the Netherlands, is The Hague's oldest tree. The full five.",
+  "question_context": "The Hague's oldest confirmed tree survives specifically because it never had to compete for space in open, public ground. The Heilige Geesthofje's pear has spent nearly four centuries inside a walled almshouse courtyard that has functioned continuously as a residence since 1616, protected by the same institutional boundary that has kept the almshouse itself intact while the city rebuilt around it. Its closest rival for genuine age, the Koekamp oak at roughly 300 years, took the opposite route: growing in land that was never private at all, protected instead by a 1576 promise from William of Orange that the Haagse Bos would never be logged for timber, a guarantee that has held for four and a half centuries with only one serious interruption, wartime felling under German occupation. Both routes worked. What links every tree on this list, from a 290-year-old escapee of a formal garden to a 94-year-old oak a neighbourhood has turned into a shared piece of folklore, is that each one found a boundary, legal, institutional or simply social, that nobody had reason to cross.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in The Hague?",
+      "a": "The Juttepeer of the Heilige Geesthofje, a pear tree planted in 1638 in a still-functioning almshouse courtyard, likely the oldest pear tree in the Netherlands."
+    },
+    {
+      "q": "Are The Hague's remarkable trees free to visit?",
+      "a": "Four of the five are free and open at any time. The Juttepeer is the exception: its courtyard is only accessible by guided tour, appointment, or during the national Open Monumentendag."
+    },
+    {
+      "q": "Why has the Koekamp oak survived so long?",
+      "a": "It grows inside the Haagse Bos, protected by a deed William of Orange signed in 1576 promising the forest would never be sold or logged, a guarantee that has held for over four centuries with one wartime exception."
+    },
+    {
+      "q": "What is the Kabouterboom?",
+      "a": "A roughly 94-year-old oak in the Bosjes van Zanen that generations of local children have treated as a home for gnomes, leaving notes and small dolls in its hollow trunk."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hag_001",
+      "name": "The Juttepeer of Heilige Geesthofje",
+      "species": "Juttepeer Pear (Pyrus communis)",
+      "age_estimate": "about 388 years",
+      "age_min": 385,
+      "age_max": 390,
+      "location": {
+        "address": "Heilige Geesthofje courtyard, Paviljoensgracht",
+        "latitude": 52.0735406,
+        "longitude": 4.3133413,
+        "neighbourhood": "Centrum"
+      },
+      "story": "Elderly women living in this almshouse have been making jelly from this pear tree's fruit since at least the 17th century, and the tree they are picking from is very likely the same one their predecessors used four centuries ago. Planted in 1638 in the inner courtyard of the Heilige Geesthofje, founded in 1616 to house women of unblemished character, the tree is widely considered the oldest pear tree in the Netherlands, a juttepeer, a small, hard, old Dutch variety better suited to cooking and preserving than eating straight off the branch. The courtyard itself functioned as a working kitchen garden for residents for most of its history, vegetables and fruit grown for the household rather than for show, and the pear outlasted whatever else was once planted alongside it. It still bears fruit every year, harvested and turned into jelly by the almshouse's current residents in a tradition nobody has needed to formally revive because it never actually stopped. The courtyard is not casually open to passersby; the almshouse still functions as a residence, and visiting means booking a guided tour through the Buitenmuseum, arranging an appointment, or timing a visit to the national Open Monumentendag, a small price for standing beside something planted six years before Rembrandt painted the Night Watch.",
+      "verified_sources": [
+        "https://bomenbieb.nl/bijzondere-bomen/juttepeer-heilige-geesthofje/",
+        "https://nl.wikipedia.org/wiki/Heilige_Geesthofje_(Den_Haag)"
+      ],
+      "access": "Restricted: guided Buitenmuseum tours, by appointment, or during Open Monumentendag. Not open to casual walk-in visitors",
+      "transport": "10-15 minute walk from Den Haag Centraal or Hollands Spoor station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "hag_002",
+      "name": "The Koekamp Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 300 years",
+      "age_min": 290,
+      "age_max": 310,
+      "location": {
+        "address": "Koekamp deer enclosure, Haagse Bos",
+        "latitude": 52.0838873,
+        "longitude": 4.3225274,
+        "neighbourhood": "Haagse Hout"
+      },
+      "story": "William of Orange personally guaranteed this oak's forest would survive forever, four and a half centuries before anyone thought to count the tree's actual rings. In 1576, with the Eighty Years' War against Spain already underway, Orange signed a deed on behalf of the States of Holland promising that the Haagse Bos and the Koekamp within it would never be sold or logged for timber, a rare 16th-century conservation guarantee that has, remarkably, held. This oak, standing roughly 300 years old inside the Koekamp's fenced deer enclosure, is a direct beneficiary: too young to have existed when Orange made his promise, but growing on land that promise had already protected for well over a century by the time this acorn took root. Red and fallow deer still graze around its base today, the same enclosure function the Koekamp has served for centuries, a working piece of countryside preserved inside a European capital rather than a themed park built to imitate one. The forest's luck ran out only once, briefly: during the German occupation, half of it was felled for military purposes, a rare interruption in an otherwise unbroken run of protection stretching back to a promise a Dutch prince made before his own war was won.",
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Koekamp_(Den_Haag)",
+        "https://www.denhaag.nl/nl/natuur-en-milieu/groen-en-bomen/viering-haagse-bos-al-450-jaar-beschermd/"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "Adjacent to Den Haag Centraal station, 5-10 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "hag_003",
+      "name": "The Veteran Linden of Clingendael",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "about 290 years",
+      "age_min": 285,
+      "age_max": 295,
+      "location": {
+        "address": "Landgoed Clingendael, Wassenaarseweg",
+        "latitude": 52.0998488,
+        "longitude": 4.3312020,
+        "neighbourhood": "Haagse Hout"
+      },
+      "story": "This linden is the last member standing of a row that stopped existing as a row sometime in the last three centuries. An 18th-century drawing of Clingendael's formal gardens, laid out around 1730, shows several trained lindens planted in a disciplined line, pruned and trellised into the geometric shapes fashionable in Dutch garden design of the period. Every other tree in that row is gone; this one alone survived, and without the regular pruning that once kept it in formation, it has spent three centuries growing into a gnarled, irregular shape that looks nothing like the tidy row it escaped from. That accidental wildness turned out to matter. In 2019, Den Haag became the first Dutch municipality to formally create a veteran tree designation, a status imported from England that protects a tree's final life stage with dedicated fencing and minimal-intervention care rather than the routine pruning applied to younger specimens, and this linden was the first tree in the country to receive it. The designation recognizes exactly what makes the tree valuable now: not tidiness, but the accumulated evidence of three centuries alone, still standing on an estate that has otherwise been rebuilt and replanted around it more than once.",
+      "verified_sources": [
+        "https://dendrologie.nl/arbor-vitae/oude-linde-is-eerste-veteraan-boom/"
+      ],
+      "access": "Free, open estate park at any time",
+      "transport": "Tram or bus to Haagse Hout, then a short walk, roughly 20-25 minutes from central Den Haag",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "hag_004",
+      "name": "The Postzegelboom",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "at least 150 years, predates 1883",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Opposite Paleis Noordeinde, Noordeinde",
+        "latitude": 52.0813,
+        "longitude": 4.3074,
+        "neighbourhood": "Centrum"
+      },
+      "story": "Up to a hundred stamp collectors at a time used to crowd around this horse chestnut on Wednesday and Saturday afternoons, trading and selling postage stamps under its branches for decades before the practice finally faded. The tree earned its name, the Postzegelboom, the stamp tree, from that informal open-air market rather than from anything botanical, and the trade continued through the years before the Second World War, when philatelists first started meeting under its leaves opposite the royal Noordeinde Palace. The tree itself predates that market by decades: it was already growing as a small tree in a private garden when King Willem II ordered every building opposite his palace demolished in the mid-19th century to make way for a Gothic Revival gallery. Those buildings themselves fell into disrepair and came down for good in 1883, but the chestnut, tucked into what had been someone's garden, was spared both rounds of demolition and left standing behind the new gallery. The Dutch postal service PTT thought enough of the connection to fund a full restoration by a tree surgeon in 1990, keeping alive both a monumental tree and the memory of the market that made it famous.",
+      "verified_sources": [
+        "https://www.bomenservicezuid.nl/en/boomverzorging-treework/een-boom-met-een-verhaal-de-postzegelboom-voor-paleis-noordeinde-in-den-haag/",
+        "https://bomenbieb.nl/bijzondere-bomen/postzegelboom-noordeinde/"
+      ],
+      "access": "Free, public street at any time",
+      "transport": "10-15 minute walk from Den Haag Centraal station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/20191025_DenHaagPostzegelboom.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "WeeJeeVee, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "hag_005",
+      "name": "The Kabouterboom",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 94 years",
+      "age_min": 90,
+      "age_max": 98,
+      "location": {
+        "address": "Bosjes van Zanen, edge of the Clingendael estate",
+        "latitude": 52.1019545,
+        "longitude": 4.3277366,
+        "neighbourhood": "Haagse Hout"
+      },
+      "story": "A hollow in this oak's trunk has been furnished like a dollhouse for as long as anyone in the neighbourhood can remember, complete with tiny notes left for gnomes nobody has ever claimed to see. At only about 94 years old, the Kabouterboom, the gnome tree, is by far the youngest entry on this list, included for a different reason than the others: generations of children from the surrounding Bosjes van Zanen neighbourhood have treated this specific oak as a shared piece of make-believe, tucking dolls, notes and small gifts into its hollow and low branches, a tradition adults have kept alive rather than outgrown. Nobody organizes it and no sign explains it; parents simply pass the game to their children the way they might pass down any local custom, and the tree accumulates a rotating cast of tiny residents as a result. It sits at the edge of the Clingendael estate, an easy detour from the veteran linden a short walk away, proof that a tree earns a place on a list like this one for reasons that have nothing to do with circumference or century, and everything to do with what a neighbourhood decided to make of it.",
+      "verified_sources": [
+        "https://www.monumentaltrees.com/nl/nld/zuidholland/denhaag/6776_bosjesvanzanen/",
+        "https://groenewijk.wordpress.com/tag/haagse-bos/"
+      ],
+      "access": "Free, open park at any time",
+      "transport": "Tram or bus to Haagse Hout, then a short walk, roughly 20 minutes from central Den Haag",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    }
+  ]
+}

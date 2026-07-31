@@ -2,6 +2,14 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — The Hague opens: 5 trees, each protected by a different kind of boundary
+
+Same session, straight after Rotterdam. No new submissions. Shipped: the Juttepeer of Heilige Geesthofje (The Hague's oldest, ~388 years, a 1638 pear tree in a still-functioning almshouse courtyard, likely the Netherlands' oldest), the Koekamp Oak (~300 years, protected since William of Orange's 1576 promise that the Haagse Bos would never be logged), the Veteran Linden of Clingendael (~290 years, the first tree in the Netherlands to get the country's new "veteran tree" protection status in 2019), the Postzegelboom (a horse chestnut that survived two rounds of royal demolition and hosted a decades-long open-air stamp market), and the Kabouterboom (~94 years, included for a neighbourhood's gnome-tree tradition rather than age).
+
+One deliberate exclusion worth recording: Haagse Bos also has a so-called "Hitlerboom," a beech carved with Nazi imagery by an occupation-era sentry, authenticity disputed among historians. Left off on judgment: wrong tone for this project even setting the authenticity question aside.
+
+1 of 5 photos found. Site rebuilt (739 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Rotterdam opens: 5 trees, all survivors of the 1940 bombing or the 1953 flood
 
 Same session, straight after Utrecht. No new submissions. Rotterdam has unusually few monumental trees for its size, and the reason is specific: the German bombing of 14 May 1940 flattened the historic centre, and the region's soft, subsiding soil shortens most trees' lives anyway. Shipped: the Park Plane (Rotterdam's oldest, ~226 years, older than the park built around it in 1852, survived both the 1940 bombing and the 1953 flood that put het Park underwater), the Breitenbach Plane (stood on the exact 1940 firestorm line and survived, saved again in the 1960s when the city rerouted a canal around it, nicknamed for a South African poet who recited beneath it in the 1970s), the Westersingel Plane (physically transplanted across the canal in the 1960s, runner-up in the Netherlands' 2021 national Tree of the Year vote), the Wilhelmina Linden (planted for Queen Wilhelmina's 1898 coronation), and the Koningin Emmaplein Beech (~135 years, on a square nicknamed "the rich people's almshouse").
