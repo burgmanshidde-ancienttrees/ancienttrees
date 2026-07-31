@@ -2,6 +2,12 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Krakow opens: 4 trees, three sharing one 240-year-old garden
+
+Same session, straight after Budapest. Krakow was next in the queue. Three of the four trees turned out to grow within a few dozen metres of each other inside Poland's oldest botanical garden (founded 1783): the Jagiellonian Oak (folklore said 500 years old, a dendrochronological study found roughly 230), the officially confirmed oldest black locust in Poland (239 years, 475cm trunk), and the Sniadecki Dogwoods (cornelian cherries locals credit to astronomer Jan Sniadecki, c.1790). The fourth, and the city's actual oldest, is different in kind: the Henryk Oak in Borek Falecki, a lone survivor of the pine forest that gave the district its name, protected for most of the 20th century by one neighbour whose life the tree is now named after.
+
+Dropped Tyniec Abbey's celebrated 1780 lime avenue after finding a 2022 storm felled 9 of its original 15 trees with no update on the survivors' current state, the same caution applied to Bristol's Wishing Tree and Glasgow's Pollok Beech earlier this session. 0 of 4 photos found. All 4 pins approximate. Site rebuilt (637 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-30 — Cork and Galway researched, no pages yet; Budapest opens with 5 trees instead
 
 Same session, straight after Glasgow. Cork and Galway were next in the queue, but neither reached the four-tree minimum after genuine research: Cork's UCC arboretum has real champion trees but only its pair of giant redwoods (~150 years) has a findable age; Galway's oldest trees turned out to be diffuse ancient woodland (Barna Woods, Merlin Park) rather than individually documented specimens, and the area's famous Yeats-linked beech at Coole Park sits 35km outside the city. Both stay `pending` with full reasoning in CURATION.md rather than being padded or forced. Moved to the next city in the queue, Budapest, which had far richer documentation.
