@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Sofia opens: 4 trees, a national hero's mulberry and a poet's oak
+
+Same session, straight after Bucharest. Sofia was next untried city in the queue.
+
+Shipped 4: the Mulberry of Vasil Levski, generally called Sofia's oldest tree though its disputed age spans 220 to 650 years depending on the source; Ivan Vazov's Spruce in Borisova Garden, planted by Bulgaria's most celebrated writer in 1885, decades before the city built his memorial nearby; the Oak of Pencho Slaveykov, the last fragment of Sofia's old Kurubaglar oak grove and the meeting place of the influential Misal literary circle, a national cultural monument since 2005 even as the park around it has fallen into visible disrepair; and the Gray Poplar of Doctors' Garden, planted in 1892, the first tree on a site that became one of the city's earliest botanical gardens.
+
+Found a useful new source for future Bulgaria work: trees.visitsofia.bg, an official municipal micro-site cataloguing the city's protected trees, which corroborated two of today's four entries independently. Full detail in CURATION.md.
+
+1 of 4 photos found: the Slaveykov Oaks, CC BY-SA 4.0, its geotag landing almost exactly on this entry's pin.
+
+Site rebuilt (877 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Bucharest opens: 4 trees, a mulberry with a carved legend and a plane tree with a documented wound
 
 Same session, straight after Belgrade. Bucharest was next untried city in the queue.
