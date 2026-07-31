@@ -418,6 +418,8 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .dir-group a:hover { color: var(--moss); }
 .dir-more { font-size: 13px; color: var(--ink-mid); margin-top: 0.75rem; }
 .dir-morelink { font-weight: 700; color: var(--moss) !important; margin-top: 0.3rem; }
+.dir-morebtn { display: block; background: none; border: none; padding: 0.15rem 0; font-family: var(--sans); font-size: 13.5px; text-align: left; cursor: pointer; }
+.dir-count { color: var(--ink-light); font-size: 12px; margin-left: 0.35rem; }
 .dir-cols { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
 .dir-all { margin-top: 1.25rem; }
 .dir-all summary { font-size: 13.5px; font-weight: 700; color: var(--moss); cursor: pointer; }
@@ -626,7 +628,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <body>
 <header class="bar">
   <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%#cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>%%LOGIN_MENU%%</div></details>%%LOGIN%%<a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
+  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>%%LOGIN_MENU%%</div></details>%%LOGIN%%<a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
 </header>
 %%BODY%%
 %%FOOTER%%
@@ -658,7 +660,7 @@ FOOTER = """
       <h4>Explore</h4>
       <a href="%%ROOTPATH%%explore">Map</a>
       <a href="%%ROOTPATH%%in-season">In season now</a>
-      <a href="%%ROOTPATH%%#cities">Cities</a>
+      <a href="%%ROOTPATH%%cities">Cities</a>
       <a href="%%ROOTPATH%%species">Species</a>
       <a href="%%ROOTPATH%%collections">Collections</a>
     </div>
@@ -1334,6 +1336,13 @@ def home_hero_script(markers, tree_index):
 <script>
 var markers = __CITIES__;
 var TREES = __TREES__;
+var moreBtn = document.getElementById('more-cities-btn');
+if (moreBtn) {
+  moreBtn.addEventListener('click', function() {
+    document.getElementById('more-cities').hidden = false;
+    moreBtn.remove();
+  });
+}
 var sf = document.getElementById('city-search');
 if (sf) {
   sf.addEventListener('submit', function(e) {
@@ -2373,6 +2382,52 @@ def build_species_index(species_cards, published, pages):
     pages.append(("species.html", page, canonical))
 
 
+def build_cities_index(published, pages):
+    """Every mapped city, grouped by country, at /cities.
+
+    Built 2026-07-30 when the by-country block left the homepage (Hidde:
+    "all 37 cities by country makes absolutely no sense" there). It is the
+    right content in the wrong place: a directory page wants it, a living
+    room does not. Keeps the full list crawlable in one hop from the nav."""
+    canonical = f"{BASE_URL}/cities"
+    rootpath = "./"
+    title = fit_title(["Every City We Have Mapped", "Ancient Trees by City"], canonical)
+    description = ("Every city on the map, by country: the remarkable old trees of each, "
+                   "verified, with their stories and exact spots.")
+    crumb_items = [("Home", BASE_URL), ("Cities", None)]
+
+    by_country = {}
+    for p in published:
+        by_country.setdefault(p["country"], []).append(p)
+    groups = "".join(
+        '<div class="dir-group"><h3>%s</h3>%s</div>' % (
+            esc(country),
+            "".join('<a href="%s">%s <span class="dir-count">%d</span></a>'
+                    % (p["slug"], esc(p["city"]), p["count"])
+                    for p in sorted(cities, key=lambda x: x["city"])))
+        for country, cities in sorted(by_country.items()))
+    total = sum(p["count"] for p in published)
+    body = f"""
+<main class="content-page">
+  {breadcrumb_html(crumb_items, rootpath)}
+  <h1>Every city we have mapped</h1>
+  <p class="answer-first">{len(published)} cities, {total} trees, each one verified and placed. Pick a city for its trees, or open <a href="explore">the map</a> to see what is near you.</p>
+  <div class="dir-cols">{groups}</div>
+</main>
+"""
+    graph = site_graph() + [
+        {"@type": "ItemList", "name": "Cities",
+         "itemListElement": [
+             {"@type": "ListItem", "position": i, "name": p["city"],
+              "url": f"{BASE_URL}/{p['slug']}"}
+             for i, p in enumerate(published, 1)]},
+        breadcrumb_schema(crumb_items, canonical),
+    ]
+    check_links(canonical, len(published) + 2, 4)
+    page = render_page(title, description, canonical, body, ld_script(graph), "", rootpath)
+    pages.append(("cities.html", page, canonical))
+
+
 def build_collections_index(collections, published, pages):
     """Overview of all collections at /collections."""
     canonical = f"{BASE_URL}/collections"
@@ -2535,8 +2590,9 @@ def build_explore_page(all_cities, pages, registers=None):
                 "properties": {
                     "name": t["name"],
                     "url": f"{cslug}/{slugify(t['name'])}",
-                    "age": t.get("age_estimate", ""),
+                    "cs": cslug,
                     "city": entry["data"]["city"],
+                    "age": t.get("age_estimate", ""),
                     "now": 1 if month in (bt.get("months") or []) else 0,
                 },
             })
@@ -2648,15 +2704,23 @@ function initTreeLayers() {
     map.on('mouseenter', 'register', function() { map.getCanvas().style.cursor = 'pointer'; });
     map.on('mouseleave', 'register', function() { map.getCanvas().style.cursor = ''; });
   }
-  // MapLibre v4: getClusterExpansionZoom returns a Promise; the old callback
-  // form failed silently, which made cluster clicks do nothing (Hidde found
-  // it: "als ik op die 30 klik moet er iets gebeuren").
+  // One map experience, not two (Hidde, 2026-07-30): the world map is the
+  // launcher, the city page (map plus tree list) is the destination. A
+  // cluster that is entirely one city's trees opens that city's page; only
+  // a multi-city cluster zooms. getClusterLeaves/ExpansionZoom are Promises
+  // in MapLibre v4 (the old callback form failed silently once).
   map.on('click', 'clusters', function(e) {
     var f = map.queryRenderedFeatures(e.point, {layers: ['clusters']})[0];
-    map.getSource('trees').getClusterExpansionZoom(f.properties.cluster_id)
-      .then(function(zoom) {
+    var src = map.getSource('trees');
+    src.getClusterLeaves(f.properties.cluster_id, 1000, 0).then(function(leaves) {
+      var cities = {};
+      leaves.forEach(function(l) { cities[l.properties.cs] = true; });
+      var keys = Object.keys(cities);
+      if (keys.length === 1) { window.location.href = keys[0]; return; }
+      src.getClusterExpansionZoom(f.properties.cluster_id).then(function(zoom) {
         map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5, duration: 700});
       });
+    });
   });
   map.on('click', 'tree', function(e) {
     var p = e.features[0].properties;
@@ -2664,7 +2728,8 @@ function initTreeLayers() {
     new maplibregl.Popup({offset: 12})
       .setLngLat(e.features[0].geometry.coordinates)
       .setHTML('<strong>' + p.name + '</strong>' + badge + '<br>' + p.age + ' &middot; ' + p.city +
-               '<br><a href="' + p.url + '">See this tree &rarr;</a>')
+               '<br><a href="' + p.url + '">See this tree &rarr;</a> &middot; ' +
+               '<a href="' + p.cs + '">All ' + p.city + ' trees &rarr;</a>')
       .addTo(map);
   });
   ['clusters', 'tree'].forEach(function(l) {
@@ -2780,8 +2845,15 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
     # maken"): nine links plus a more-link each. Species has only three pages
     # so far; the short column closes the row instead of leaving a hole
     # mid-grid.
-    top_cities = sorted(published, key=lambda x: -x["count"])[:9]
-    cities_col = "".join('<a href="%s">%s</a>' % (p["slug"], esc(p["city"])) for p in top_cities)
+    # Cities: nine visible, the next ten revealed by a button (Hidde,
+    # 2026-07-30). The by-country fold that used to sit under this block is
+    # gone: "all 37 cities by country makes absolutely no sense" on a
+    # homepage. /cities remains the full crawlable index.
+    ranked_cities = sorted(published, key=lambda x: -x["count"])
+    cities_col = "".join('<a href="%s">%s</a>' % (p["slug"], esc(p["city"]))
+                         for p in ranked_cities[:9])
+    more_cities = "".join('<a href="%s">%s</a>' % (p["slug"], esc(p["city"]))
+                          for p in ranked_cities[9:19])
     species_col = "".join('<a href="species/%s">%s</a>' % (sl, esc(cn))
                           for cn, sl in (species_slugs or []))
     species_col += '<a class="dir-morelink" href="species">All species</a>'
@@ -2796,24 +2868,18 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
     oldest.sort(key=lambda x: -x[0])
     trees_col = "".join('<a href="%s/%s">%s</a>' % (cs, ts, esc(name))
                         for _, name, cs, ts in oldest[:10])
+    more_block = (
+        '<span id="more-cities" hidden>%s</span>'
+        '<button type="button" class="dir-morelink dir-morebtn" id="more-cities-btn">Show 10 more</button>'
+        '<a class="dir-morelink" href="cities">All %d cities</a>' % (more_cities, len(published))
+    ) if more_cities else '<a class="dir-morelink" href="cities">All %d cities</a>' % len(published)
     directory_html = (
         '<div class="dir-cols">'
-        + '<div class="dir-group"><h3>Top cities</h3>%s<a class="dir-morelink" href="#cities-all">All %d cities</a></div>' % (cities_col, len(published))
+        + '<div class="dir-group"><h3>Top cities</h3>%s%s</div>' % (cities_col, more_block)
         + '<div class="dir-group"><h3>Collections</h3>%s</div>' % coll_col
         + '<div class="dir-group"><h3>Oldest trees</h3>%s</div>' % trees_col
         + '<div class="dir-group"><h3>Top species</h3>%s</div>' % species_col
-        + '</div>'
-        + '<details class="dir-all" id="cities-all"><summary>All %d cities, by country</summary>' % len(published))
-    by_country = {}
-    for p in published:
-        by_country.setdefault(p["country"], []).append(p)
-    directory_html += '<div class="dir-cols">' + "".join(
-        '<div class="dir-group"><h3>%s</h3>%s</div>' % (
-            esc(country),
-            "".join('<a href="%s">%s</a>' % (p["slug"], esc(p["city"]))
-                    for p in sorted(cities, key=lambda x: x["city"])))
-        for country, cities in sorted(by_country.items())
-    ) + "</div></details>"
+        + '</div>')
 
     live_cards = "".join(
         f"""<a class="city-card" href="{p['slug']}">
@@ -3483,6 +3549,7 @@ def main():
         if is_draft:
             draft_collection_pages.append(result)
     build_collections_index(public_collections, published, pages)
+    build_cities_index(published, pages)
 
     species_cards = []
     for common in sorted(qualifying, key=lambda c: -len(qualifying[c])):
