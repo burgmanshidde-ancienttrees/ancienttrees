@@ -197,7 +197,9 @@ Above the curated cities sits a second, wider layer: **officially designated rem
 
 Readers submit trees and whole cities through a public form. Hidde is deliberately not in this loop: submissions come straight to you.
 
-If `SUBMISSIONS_CSV_URL` is set in scripts/build_site.py, fetch it at the start of every run. Each row is one submission. Skip any row whose id already appears in `data/submissions-processed.json`.
+Submissions arrive in the `submissions` table of Hidde's Supabase (the native form on /contribute, live since 2026-07-31). A run reads them ONLY when the SUPABASE_SERVICE_KEY env var is present (curl GET {SUPABASE_URL}/rest/v1/submissions with apikey+Bearer set to it); when the secret is absent, skip without complaint. Track processed rows by id in `data/submissions-processed.json`, same as always.
+
+The old channel stays readable during the transition: if `SUBMISSIONS_CSV_URL` is set in scripts/build_site.py, fetch it at the start of every run. Each row is one submission. Skip any row whose id already appears in `data/submissions-processed.json`.
 
 For each new submission:
 1. Treat it as a research lead, never as fact. A submitter saying a tree is 500 years old is a claim to verify, not a source.

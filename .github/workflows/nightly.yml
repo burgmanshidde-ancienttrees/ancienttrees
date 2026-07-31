@@ -49,6 +49,10 @@ jobs:
           # scripts/visitors.py and carry it into LOG.md. Absent secret = the
           # script prints one line and the run continues blind, never broken.
           CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+          # Reader submissions intake (native form -> Supabase). Absent secret
+          # = runs skip reading submissions, never broken. Hidde adds it as a
+          # GitHub secret when he is ready to open the tap.
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           # Account id, not a secret: it appears in every dashboard URL.
           CF_ACCOUNT_TAG: "949aa102070e5f296c9cc0d5bc1e1891"
         with:
