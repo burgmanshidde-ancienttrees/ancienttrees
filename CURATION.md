@@ -1,3 +1,8 @@
+## 2026-07-31 — Barcelona: two photos pulled by Hidde's eye, both now honest gaps
+
+- **bcn (Holm Oak of Carrer de l'Encarnacio):** the photo showed the community garden with the oak as a corner of canopy; subject test failed. Commons has only the WRONG holm oak (Passeig de Gracia) and Sedeta building shots; iNaturalist has no CC candidates at the spot. Hunt brief: the tree is locally "l'alzina de l'Encarnacio", saved by neighbours from a 2017-2019 development; campaign imagery exists but licences unverified.
+- **bcn (Carob of the Viaduct, Park Guell):** the 1904 Armengol stereograph is out under the new colour rule (Cadiz standard: never black-and-white, "liever geen foto dan zwart-wit"). Commons' viaduct photos are architecture-first; none passes the subject test. Hunt brief: colour photo where the carob under the colonnade is unmistakably the subject; Park Guell is heavily photographed, so iNaturalist/Flickr-CC are promising.
+
 ## 2026-07-31 — Dubai researched, no page yet: 3 candidates, one short of the four-tree floor
 
 Same session, straight after Bangkok. Dubai was next in the queue. Delegated a thorough English/Arabic research pass to a subagent, then followed up myself on the most promising remaining lead (Al Marmoom Desert Conservation Reserve, Hatta Heritage Village) before accepting the shortfall.

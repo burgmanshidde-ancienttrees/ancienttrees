@@ -50,10 +50,10 @@
       "access": "Free, public garden",
       "transport": "Fontana (Metro L3), 8 min walk",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Barcelona_-_Jardi_de_l%27Alzina_01.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Joe Mabel, via Wikimedia Commons",
-        "status": "approved"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "ai_generated",
       "notes": "A Wikimedia Commons file named similarly (\"Alzina del passeig de Gracia\") turned out on inspection to be a different holm oak, L'alzina de Mossen Cinto, elsewhere on Passeig de Gracia. Not used, to avoid misattributing a photo to the wrong tree. Pin corrected 2026-07-26: OpenStreetMap carries this tree as a mapped node from Barcelona's own \"Arbres d'interes local\" catalogue, tagged protected=yes, species Quercus ilex ssp. ilex, described as \"c. Encarnacio 13\", about 75m from the previous street-level estimate. Confirmed on that official-catalogue sourcing. Photo found and approved 2026-07-28: Commons category \"Jardi de l'Alzina\" (a companion photo in the same series shows graffiti reading \"SALVEM L'ALZINA\", the exact neighbourhood campaign named above). Viewed directly: shows the garden with a wooden-fenced planting bed and a sign explicitly reading \"Aquest corralet protegeix les arrels de l'alzina\" (\"This enclosure protects the oak's roots\"), the oak's own dark evergreen canopy visible overhanging top-right of frame. Not a clean full portrait, the tree is only partially in frame, but the sign gives an explicit textual identification of this exact tree that the photo itself carries, stronger confirmation than most park photos get.",
@@ -81,10 +81,10 @@
       "access": "Free, Park Guell's monumental zone charges general admission; the viaducts are within the free-access wooded area",
       "transport": "Lesseps (Metro L3), 15 min walk uphill",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Tronc_d%27arbre_al_mig_de_columnes_del_Parc_G%C3%BCell.jpeg",
-        "license": "Public domain",
-        "attribution": "Josep Maria Armengol i Bas (1865-1941), Wikimedia Commons, photographed September 1904",
-        "status": "approved"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "flagged",
       "notes": "Access note needs on-the-ground confirmation: sources describe the viaducts as being in Park Guell's freely accessible wooded perimeter rather than the ticketed Monumental Zone, but this should be double-checked against current park signage before publishing with full confidence. Photo is historical (1904), not a modern photograph. Included because it is confirmed to be this specific tree and clearly dated, not because it shows the tree's current appearance. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/e/e2/...) 404'd, caught by a full site-wide hash-path check against Commons' API; the real current path is 0/0a. Fetched and viewed directly, the same 1904 stereoscopic photo of a tree trunk between the viaduct's stone arches, before swapping.",
@@ -159,7 +159,13 @@
       "age_estimate": "about 100 years",
       "age_min": 96,
       "age_max": 106,
-      "best_time": { "months": [6, 7], "label": "June into July, when long chains of winged fruit hang the length of an arm from every branch" },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June into July, when long chains of winged fruit hang the length of an arm from every branch"
+      },
       "location": {
         "address": "Jardi Botanic Historic, Av. dels Muntanyans, 08038 Barcelona",
         "latitude": 41.36731,
@@ -222,7 +228,13 @@
       "age_estimate": "100+ years",
       "age_min": 100,
       "age_max": 135,
-      "best_time": { "months": [6, 7], "label": "June into July, when its blooms open up to 30 centimetres across" },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June into July, when its blooms open up to 30 centimetres across"
+      },
       "location": {
         "address": "Jardins de la Maternitat, Travessera de les Corts 159, 08028 Barcelona",
         "latitude": 41.3812749,
@@ -277,7 +289,9 @@
       "notes": "Replaces the previous entry for this slot, 'The Plane Trees of La Rambla,' which CLAUDE.md's 2026-07-26 collectibility rule flagged for failing the collectible-point test (a kilometre of ~250 ordinary street trees is an avenue, not a tree). This entry is a single, individually catalogued specimen (Barcelona's Catalogue of Trees of Local Interest, number 0103-01-96), verified against two independent sources: the municipal catalogue itself (planting year, dimensions, hollowing) and an independent beteve.cat news article (flowering behaviour, species distribution). One minor discrepancy left unresolved: two renderings of the same municipal record give crown diameter as 10m in one and 13m in another; not material to the story, not picked either way. No open-licensed photo found this pass; the one Commons file for this species in Barcelona shows a different specimen at a different location (Parroquia Santa Teresa Nino Jesus), not used.",
       "location_precision": "confirmed",
       "best_time": {
-        "months": [7],
+        "months": [
+          7
+        ],
         "label": "July, when its pink silk-thread flowers open"
       }
     },
