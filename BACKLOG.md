@@ -30,6 +30,10 @@ Cost note for whoever picks this up: the pulse alone is roughly an hour (a CSS a
 
 **Trigger:** the icon/pin design pass, or Hidde saying go. Not before the Japan-wave deadline work (2026-08-22) unless he explicitly bumps it.
 
+## Tree of the week, in months rich enough to carry it (Hidde, 2026-07-31)
+
+His extension of tree-of-the-month: when a month has depth (November already has 28 photo-ready ginkgo-and-more candidates), the shelf could rotate weekly ("mss worden het in sommige maanden wel van de week"). Mechanics when built: same dominant-species logic, but pick per ISO week from the month's pool, deterministic on the week number so the static rebuild stays honest. Only in months clearing a threshold (say 12+ photo-ready candidates); thin months keep the monthly frame. Parked per the fortnight; the best_time backfill the runs are doing IS the prerequisite, so this builds itself a runway.
+
 ## The viewport panel: one continuous map experience (Hidde, 2026-07-31, parked by the fortnight rule)
 
 His words, while using the live map: zoomed in on Amsterdam you see the ten trees in the panel; zoom out and the panel should become the CITIES in your viewport, each as a card with one photo, click to dive in ("ik kijk naar een kaart waar Duitsland, Amsterdam, Frankrijk en Engeland te zien zijn, en dat je dan de hoofdsteden uitlicht met een foto"). This is the AllTrails explore pattern exactly (the results panel follows the map) and the natural phase two of the one-map-experience decision of 2026-07-30.
