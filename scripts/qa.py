@@ -94,6 +94,13 @@ def main():
         for src in scan.img_srcs:
             if "/wiki/File:" in src:
                 failures.append(f"{rel}: img src is a wiki File: page: {src}")
+            # The image standard (Hidde, 2026-07-31): every rendered image is
+            # right-sized via img_srcset. A full-resolution original in an img
+            # tag means a new render site skipped the helper.
+            if "upload.wikimedia.org/wikipedia/commons/" in src and "/thumb/" not in src:
+                failures.append(f"{rel}: full-size Wikimedia original in img (use img_srcset): {src[:90]}")
+            if re.search(r"(static\.inaturalist\.org|inaturalist-open-data)[^\"]*/original\.", src):
+                failures.append(f"{rel}: iNaturalist original in img (use img_srcset): {src[:90]}")
             if not (src.startswith("http") or src.startswith("data:")
                     or not re.match(r"^[a-z]+:", src)):
                 failures.append(f"{rel}: img src with unexpected scheme: {src}")
