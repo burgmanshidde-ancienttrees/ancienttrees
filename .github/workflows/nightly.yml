@@ -14,7 +14,10 @@ on:
     # single day. Four knocks a day, no chaining: the machine still works
     # every night, it just stops eating the week in two days. Raise this
     # back up when the limit stops being the constraint.
-    - cron: "0 1,4,7,22 * * *"
+    # 2026-07-31 second tune: six knocks a day, but the real lever is
+    # below: timeout-minutes 60 caps every run to one hour, so a day
+    # of machine work tops out at ~6 hours instead of yesterday's 16.
+    - cron: "0 1,4,7,13,19,22 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -34,7 +37,7 @@ jobs:
     # honours a handful of schedules a day. If a trigger is rare, it should be
     # worth as much as possible: work, and when the usage window closes, wait for
     # it to reopen inside the same run rather than hoping GitHub fires again.
-    timeout-minutes: 345
+    timeout-minutes: 60
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
