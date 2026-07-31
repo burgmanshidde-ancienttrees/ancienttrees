@@ -2,6 +2,16 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-07-31 — Ljubljana opens: 4 trees, its oldest turning exactly 400 this year
+
+Same session, straight after Gdansk, the fourth city this run. Shipped the Furmanska Lipa (Carter's Linden), planted in 1626 on Borstnikov trg and turning exactly 400 years old in 2026, once shaded France Preseren, Slovenia's national poet, and later the architect Joze Plecnik; the Marmontova Lipa, planted in 1810 the same year Ljubljana's Botanical Garden was founded, named for the Napoleonic marshal who governed the city; and two American sycamores on Streliska ulica, the last two survivors of a tree-lined avenue visible on a 1744 map of the city and gone everywhere else.
+
+The two lindens both carry documented planting years 184 years apart, so the city's oldest-tree page states that gap plainly rather than treating the choice as close. The two sycamores have no single confirmed coordinate (Slovenia's heritage database returned errors on every direct fetch this session), so they ship with an honestly approximate pin rather than a guessed precise one.
+
+0 of 4 photos found. Full detail in CURATION.md.
+
+Site rebuilt (841 pages), all contracts validated, QA clean. One commit, pushed. Nothing needs Hidde.
+
 ## 2026-07-31 — Gdansk opens: 4 trees, including one still recovering from an arson attack seven months ago
 
 Same session, straight after Thessaloniki. Gdansk turned out to have the richest official data source found this session: a live municipal PDF listing all 201 protected natural monuments (157 of them individual trees), each with an exact map pin, updated as recently as this May. Read directly with the Read tool after a plain web fetch couldn't decode the PDF's compressed text.

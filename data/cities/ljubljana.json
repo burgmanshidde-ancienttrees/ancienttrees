@@ -1,0 +1,147 @@
+{
+  "city": "Ljubljana",
+  "country": "Slovenia",
+  "status": "needs_curation",
+  "intro": "Ljubljana's oldest tree turns exactly 400 this year, a linden planted in 1626 for carters travelling between Vienna and Trieste, whose shade later sheltered Slovenia's national poet and, generations on, the architect who redesigned much of the city. Its nearest rival for the title, a linden the same age as the city's own botanical garden, was named for one of Napoleon's marshals. Two plane trees on Streliska ulica are the last living trace of a tree-lined avenue drawn on a map from 1744 and gone everywhere else. None of the four cost anything to visit.",
+  "meta_description": "Ljubljana's oldest tree, a linden planted in 1626, turns exactly 400 in 2026. Four verified trees, real stories, how to find each one.",
+  "question_answer": "Ljubljana's oldest documented tree is the Furmanska lipa (Carter's Linden) on Borstnikov trg, planted in 1626 and turning exactly 400 years old in 2026. It already appears on a city map from 1744 and is closely followed in documented age by the Marmontova lipa in the Botanical Garden, planted in 1810.",
+  "question_meta": "A linden planted in 1626 turns exactly 400 this year, Ljubljana's oldest tree. Where to find it, and the city's other three.",
+  "question_context": "The Furmanska lipa, or Carter's Linden, standing on Borstnikov trg in front of the inn Gostilna Pod lipo, carries the strongest documented claim to being Ljubljana's oldest tree: planted in 1626 and named by researchers Miran Satler and France Stele in their study of old Slovenian lindens, it already appears, roughly 118 years old, on Florijancic's 1744 map of the city, and turns exactly 400 in 2026. Its nearest rival by documentation, rather than by age, is the Marmontova lipa in Ljubljana's Botanical Garden, planted in 1810, the same year the garden itself was founded, and named for Auguste de Marmont, the French marshal who governed Ljubljana during Napoleon's brief Illyrian Provinces period; at roughly 216 years old, it is a full 184 years younger than the Carter's Linden. Both trees are individually documented by name and planting year, a level of certainty the city's other two entries, a pair of plane trees on Streliska ulica dated only by their shared appearance on the same 1744 map, do not quite match. The gap between the two lindens is real and not close.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Ljubljana?",
+      "a": "The Furmanska lipa (Carter's Linden) on Borstnikov trg, planted in 1626 and turning exactly 400 years old in 2026."
+    },
+    {
+      "q": "Are Ljubljana's ancient trees free to visit?",
+      "a": "Yes, all four stand on public squares or streets, or in a botanical garden with public opening hours, with no charge to see them from outside."
+    },
+    {
+      "q": "Why is the linden in Ljubljana's Botanical Garden called Marmontova lipa?",
+      "a": "It is named for Auguste de Marmont, the French marshal who governed Ljubljana as capital of Napoleon's Illyrian Provinces, planted in 1810, the same year the garden itself was founded."
+    },
+    {
+      "q": "What is left of Ljubljana's historic plane-tree avenue?",
+      "a": "Two trees, both on Streliska ulica, the only survivors of a double-row avenue visible on the city's 1744 map and now individually protected as natural values of national importance."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lju_001",
+      "name": "The Furmanska Lipa (Carter's Linden)",
+      "species": "Small-Leaved Lime (Tilia cordata)",
+      "age_estimate": "400 years",
+      "age_min": 390,
+      "age_max": 410,
+      "location": {
+        "address": "Borstnikov trg, in front of Gostilna Pod lipo, Ljubljana",
+        "latitude": 46.047898,
+        "longitude": 14.498665,
+        "neighbourhood": "Center"
+      },
+      "story": "Carters bound between Vienna and Trieste used to stop under this linden to buy hay for their horses, and the trade gave the tree its name, Furmanska lipa, the Carter's Linden. It went into the ground in 1626, on what is now Borstnikov trg, and by the time Florijancic drew his map of Ljubljana in 1744 the tree was already old enough, at roughly 118, to be worth marking. In 2026 it turns 400, the oldest documented tree in the city by a wide margin. Its shade did more than shelter horse traders. France Preseren, Slovenia's national poet, wrote under it alongside his closest friend Matija Cop and the writer Andrej Smole, all three now central figures in the country's literary canon; later the architect Joze Plecnik and the priest-writer Fran Saleski Finzgar sat under the same crown. The square itself sits on ground that was once Roman Emona, the road running past it still called Rimska cesta, Roman Road, so the tree has spent four centuries growing on a spot that was already old when it was planted. The inn it still fronts, Gostilna Pod lipo, under the linden, takes its own name directly from the tree. Four hundred years on, both are still standing.",
+      "verified_sources": [
+        "https://ljubljanainfo.com/novica/lokalno/o-zelenih-skrivnostih-ljubljane-najstarejse-drevo-letos-praznuje-400-let-pa-je",
+        "https://www.ljubljana.si/en/ljubljana-for-you/environmental-protection/the-oldest/",
+        "https://zrsvn-varstvonarave.si/blog/2021/01/08/najstarejsemu-drevesu-v-ljubljani-smo-izboljsali-rastne-razmere/"
+      ],
+      "access": "Free, public square, viewable anytime",
+      "transport": "Ljubljana city centre, Borstnikov trg; about a 10 minute walk from Preseren Square",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lju_002",
+      "name": "The Marmontova Lipa",
+      "species": "Small-Leaved Lime (Tilia cordata)",
+      "age_estimate": "~216 years",
+      "age_min": 205,
+      "age_max": 220,
+      "location": {
+        "address": "Botanical Garden of the University of Ljubljana, Izanska cesta 15, Ljubljana",
+        "latitude": 46.0392,
+        "longitude": 14.5137,
+        "neighbourhood": "Rudnik"
+      },
+      "story": "This linden and the garden around it were planted the same year, and both were named for the same brief, foreign occupation. In July 1810, with Ljubljana serving as capital of Napoleon's short-lived Illyrian Provinces, botanist Franc Hladnik founded what is now the oldest continuously operating botanical garden in southeastern Europe, and among its first plantings went in a linden later named for Auguste de Marmont, the French marshal who governed the province. The Illyrian Provinces lasted only four years before Austria took the region back, but Marmontova lipa outlived the empire that named it by two centuries and counting. It remains the garden's single mightiest tree, still shading the same paths Hladnik laid out, in a garden that has run without interruption since a French general's brief and largely forgotten administration. Ljubljana's Botanical Garden was declared a cultural monument of national importance in 2008, two centuries after Marmont's name first got attached to a sapling, by which point the marshal himself was a footnote and the tree had become the point.",
+      "verified_sources": [
+        "https://zgodovinanadlani.si/1810-ustanovljen-botanicni-vrt-v-ljubljani/",
+        "https://sl.wikipedia.org/wiki/Botani%C4%8Dni_vrt_Univerze_v_Ljubljani"
+      ],
+      "access": "Public botanical garden, free entry, open daily in the growing season",
+      "transport": "Rudnik district, southeast of Ljubljana Castle, beside the Gruberjev kanal; about a 15 minute walk or short bus ride from the city centre",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "lju_003",
+      "name": "The Elder Plane of Streliska",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "~280 years",
+      "age_min": 260,
+      "age_max": 300,
+      "location": {
+        "address": "Streliska ulica, Ljubljana",
+        "latitude": 46.0503,
+        "longitude": 14.5147,
+        "neighbourhood": "Center"
+      },
+      "story": "Two trees are all that is left of an avenue that once ran from the foot of Ljubljana Castle to the start of the road toward Dolenjska, a double row of planes planted along what was then the edge of the old city. Florijancic's 1744 map of Ljubljana shows the avenue already in place; today only two of its trees survive, both on Streliska ulica, both individually protected as natural values of national importance, a designation held by almost nothing else in the city's narrow historic centre. This one is the thicker of the pair, its trunk 596 centimetres around and its crown reaching 33 metres, making it one of the largest trees of its species anywhere in Slovenia. It has outlived the old fortifications it once grew beside by more than two centuries; Ljubljana's city walls came down long ago, but the avenue's last survivors kept growing regardless, witnesses to a street plan nobody alive remembers walking.",
+      "verified_sources": [
+        "http://www.dedi.si/dediscina/141-platana-1-na-streliski-ulici-v-ljubljani",
+        "https://sl.wikipedia.org/wiki/Streli%C5%A1ka_ulica,_Ljubljana"
+      ],
+      "access": "Free, public street, viewable anytime",
+      "transport": "Ljubljana city centre, Streliska ulica; about a 15 minute walk from Preseren Square",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "lju_004",
+      "name": "The Corner Plane of Streliska and Strossmayerjeva",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "age_estimate": "~280 years",
+      "age_min": 260,
+      "age_max": 300,
+      "location": {
+        "address": "Corner of Streliska ulica and Strossmayerjeva ulica, Ljubljana",
+        "latitude": 46.0509,
+        "longitude": 14.514,
+        "neighbourhood": "Center"
+      },
+      "story": "A short walk from its twin on Streliska ulica stands the second survivor of Ljubljana's vanished plane-tree avenue, rooted exactly at the corner where Streliska meets Strossmayerjeva. The two trees are the only physical evidence left of a double row that once ran the length of the street, visible on the city's 1744 map and gone everywhere else since. This one carries its own separate listing in both of Slovenia's national heritage registers, the Register of Natural Values and the Register of Immovable Cultural Heritage, protected not for any single record-breaking measurement but for being one half of a pair whose surviving presence is the whole point: two trees, planted together, are what is left of a street plan otherwise erased. The streets around it have been repaved and renamed since the avenue first went in, most recently Strossmayerjeva itself, renovated in recent years without disturbing the tree on the corner. It has no plaque and needs none. It is simply still there, half of the last two.",
+      "verified_sources": [
+        "http://www.dedi.si/dediscina/142-platana-2-na-streliski-ulici-v-ljubljani",
+        "https://sl.wikipedia.org/wiki/Streli%C5%A1ka_ulica,_Ljubljana"
+      ],
+      "access": "Free, public street corner, viewable anytime",
+      "transport": "Ljubljana city centre, corner of Streliska and Strossmayerjeva; about a 15 minute walk from Preseren Square",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
