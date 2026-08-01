@@ -2624,7 +2624,9 @@ def build_collection_page(coll, cities_by_slug, tree_slugs, published, pages, dr
     slug = coll["slug"]
     canonical = f"{BASE_URL}/collections/{slug}"
     rootpath = "../"
-    title = fit_title([coll["title"]], canonical)
+    # The title tag targets the query, the H1 keeps the editorial line
+    # (Hidde, 2026-08-01, blueprint v1.6). Falls back when no seo_title exists.
+    title = fit_title([coll.get("seo_title", ""), coll["title"]], canonical)
     description = coll.get("meta_description", "")
 
     crumb_items = [("Home", BASE_URL), ("Collections", f"{BASE_URL}/collections"), (coll["title"], None)]
