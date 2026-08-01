@@ -226,12 +226,27 @@ def fetch_events(today):
     except Exception as e:
         return "Site actions: events table unreadable (%s)." % e
     if not rows:
-        return "Site actions (yesterday): none recorded."
-    counts = {}
-    for row in rows:
-        counts[row["name"]] = counts.get(row["name"], 0) + 1
-    return "Site actions (yesterday): " + "; ".join(
-        "%s %d" % (k, v) for k, v in sorted(counts.items(), key=lambda kv: -kv[1]))
+        line = "Site actions (yesterday): none recorded."
+    else:
+        counts = {}
+        for row in rows:
+            counts[row["name"]] = counts.get(row["name"], 0) + 1
+        line = "Site actions (yesterday): " + "; ".join(
+            "%s %d" % (k, v) for k, v in sorted(counts.items(), key=lambda kv: -kv[1]))
+    # Waitlist total: a fortnight-review criterion (2026-08-14, "whether a
+    # single waitlist signup exists"), so the digest states it daily. Count
+    # only, never the addresses.
+    try:
+        req = urllib.request.Request(
+            "https://caimvxiyrtifilimlkqw.supabase.co/rest/v1/waitlist?select=id",
+            headers={"apikey": key, "Authorization": "Bearer " + key,
+                     "Prefer": "count=exact", "Range": "0-0"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            total = (r.headers.get("Content-Range") or "/0").split("/")[-1]
+        line += "\nWaitlist signups (total): %s." % total
+    except Exception:
+        pass
+    return line
 
 
 def fetch_machine(today):
