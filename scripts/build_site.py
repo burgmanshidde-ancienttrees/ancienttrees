@@ -623,7 +623,8 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .split { flex-direction: column-reverse; height: auto; }
   .panel { width: 100%; max-width: none; height: auto; overflow: visible; border-right: none; }
   /* Smaller map on phones: the list is what people scan, the map is context. */
-  .stage { position: sticky; top: var(--header-h); height: 32vh; min-height: 200px; z-index: 5; }
+  .stage { position: sticky; top: var(--header-h); height: 48vh; min-height: 320px; z-index: 5; }
+  .crumbs { display: none; }
   .tree-card { padding: 1.25rem 1.1rem; }
   .tree-meta, .tree-story, .tree-more { margin-left: 0; }
   .tree-card-photo { aspect-ratio: 16 / 10; }
