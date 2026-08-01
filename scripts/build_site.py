@@ -124,21 +124,14 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .nav-drop-menu .mi svg { width: 16px; height: 16px; }
 .nav-drop-menu a:hover { background: var(--cream); }
 .only-mobile { display: none; }
-/* The header follows the convention of the products this one is measured
-   against (AllTrails, Komoot, Google Maps): with a handful of destinations
-   they sit flat in the bar, account stays its own item on the right, and the
-   primary CTA is last. The collapsed menu appears only when the bar runs out
-   of room, and then it holds those same items ONCE. Specificity note: the
-   .nav-drop-menu a rule above outranks a bare .only-mobile, which is exactly
-   how Log in and Map came to render twice on desktop. */
+/* The header, as Hidde wants it (2026-08-01): Map stands alone in the bar
+   because the map is the product, Explore holds the browse facets with their
+   icons, and account plus the CTA close the row. Everything collapses into
+   the one Menu below 800px. Specificity note, the actual bug behind "login
+   and map twice": .nav-drop-menu a outranks a bare .only-mobile, so the
+   hide has to be scoped to the same depth or it silently loses. */
 .nav-drop-menu a.only-mobile { display: none; }
-.nav-flat { display: inline-flex; align-items: center; }
-.nav-drop { display: none; }
-@media (max-width: 1000px) {
-  .nav-flat { display: none; }
-  .nav-drop { display: inline-block; }
-  .nav-drop-menu a.only-mobile { display: flex; }
-}
+.nav-drop summary .sum-mobile { display: none; }
 .bar-links a.bar-cta:hover { background: var(--moss); color: #fff; }
 .city-card.soon:hover { opacity: 1; border-top-color: var(--moss); }
 .city-card-cta { font-size: 12px; color: var(--moss); font-weight: 500; margin-top: 0.35rem; }
@@ -272,6 +265,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   .bar-links a { margin-left: 0; }
   .only-desktop { display: none !important; }
   .only-mobile { display: block; }
+  .nav-drop-menu a.only-mobile { display: flex; }
   .nav-drop { margin-left: 0; }
   .nav-drop summary { font-size: 13px; padding: 0.35rem 0.2rem; }
   .nav-drop summary .sum-desktop { display: none; }
@@ -531,7 +525,13 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .pin { padding: 2px 8px; border-radius: 999px; background: var(--moss); border: 1.5px solid #fff; box-shadow: 0 2px 8px rgba(26,26,20,0.35); cursor: pointer; color: #fff; font-size: 10.5px; font-weight: 600; font-family: var(--sans); white-space: nowrap; transition: transform 0.15s, background 0.15s; }
 .pin:hover { transform: scale(1.1); z-index: 5; }
 .hero-search { display: flex; gap: 0.5rem; margin-top: 0.9rem; }
-.home-hero.poster { position: relative; height: min(78vh, 680px); min-height: 480px; }
+/* Hero height, benchmarked (Hidde, 2026-08-01: "staat wel erg weinig boven de
+   fold"). AllTrails, Komoot and the rest of the discovery category land their
+   hero around 55-65% of the viewport and let the next section peek above the
+   fold on purpose: the peek is what tells a visitor there is more, and a
+   full-height hero is the one thing that reliably stops people scrolling.
+   62vh capped at 560px, so the value proposition always shows. */
+.home-hero.poster { position: relative; height: min(62vh, 560px); min-height: 380px; }
 .home-hero.poster .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .hero-scrim { position: absolute; inset: 0; background: linear-gradient(rgba(22,28,15,0.30), rgba(22,28,15,0.55)); pointer-events: none; z-index: 1; }
 .hero-center { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 1rem; pointer-events: none; }
@@ -638,6 +638,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .bar-links a { margin-left: 0; }
   .only-desktop { display: none !important; }
   .only-mobile { display: block; }
+  .nav-drop-menu a.only-mobile { display: flex; }
   .nav-drop { margin-left: 0; }
   .nav-drop summary { font-size: 13px; padding: 0.35rem 0.2rem; }
   .nav-drop summary .sum-desktop { display: none; }
@@ -662,6 +663,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .bar-links a { margin-left: 0; }
   .only-desktop { display: none !important; }
   .only-mobile { display: block; }
+  .nav-drop-menu a.only-mobile { display: flex; }
   .nav-drop { margin-left: 0; }
   .nav-drop summary { font-size: 13px; padding: 0.35rem 0.2rem; }
   .nav-drop summary .sum-desktop { display: none; }
@@ -692,6 +694,9 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .panel-head { padding: 1.25rem 1.1rem 1rem; }
   .panel-head h1 { font-size: 1.6rem; }
   .home-hero { height: 60vh; }
+  /* Phones measure vh against the tall viewport, so the same number reads
+     bigger than it is; svh is what the visitor actually sees. */
+  .home-hero.poster { height: min(56svh, 460px); min-height: 340px; }
   .hero-overlay { left: 1rem; right: 1rem; top: 1rem; max-width: none; padding: 1.25rem 1.5rem; }
   .page { padding: 2rem 1.5rem; }
 
@@ -721,7 +726,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <body>
 <header class="bar">
   <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  <nav class="bar-links"><span class="nav-flat"><a href="%%ROOTPATH%%explore">Map</a><a href="%%ROOTPATH%%cities">Cities</a><a href="%%ROOTPATH%%species">Species</a><a href="%%ROOTPATH%%collections">Collections</a><a href="%%ROOTPATH%%contribute">Suggest a tree</a></span><details class="nav-drop"><summary><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>%%LOGIN_MENU%%</div></details>%%LOGIN%%<a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
+  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>%%LOGIN_MENU%%</div></details>%%LOGIN%%<a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
 </header>
 %%BODY%%
 %%FOOTER%%
