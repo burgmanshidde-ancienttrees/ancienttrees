@@ -1,3 +1,15 @@
+## 2026-08-01 — Hidde's dispatch: Porto age corrections from the full ICNF register export
+
+Following Hidde's LOG.md dispatch note ("kwaliteitsronde op de vijf SEO-steden... coördinaat- en leeftijdscorrecties uit data/registers/portugal-icnf.json doorvoeren"). Matched every Lisbon and Porto tree against the register file by genus and distance (<100m), then projected each register `age_register` forward from its `last_measured` year to 2026.
+
+**Two real corrections found, both in Porto**: the register's own age field had never actually been pulled into the site data, even though a 2026-07-29 session had already used the same register (via the live ICNF ArcGIS layer, not this fuller WFS export) to fix these same two trees' *locations*.
+- **por_002, The Magnolia of Casa Tait**: was `age_min: 100, age_max: 150`, sourced from girth alone ("no documented planting date"). The register's exact-address match (processo AIP131218102I, 0m away) carries `age_register: 200` as of its 2021 survey, projecting to roughly 205 in 2026. Corrected to `age_min: 200, age_max: 210`. The register's own height figure (22.5m) already matched the site's independent "22 metres" claim, giving confidence this is the same tree, not a coincidence.
+- **por_003, The Metrosidero of the Library**: was `age_estimate: "unknown"` (genuinely, no age source existed at the time). The register's match (processo AIP13121858I, same "Palácio de Cristal" location, same 2019-03-15 classification date as the site's own story, an exact record match) carries `age_register: 150` as of 2015, projecting to roughly 160 in 2026. Corrected to `age_min: 150, age_max: 165`, stays `flagged` since only one source gives a number.
+
+**Checked and found already consistent, no change made**: lis_001 (Olive Trees of Santo Amaro, register projects to 468 vs site's 450-465, a 3-year drift not worth chasing), lis_003 (Cypress of Príncipe Real, register projects to 156 vs site's 145-155, 1-year drift), lis_004, lis_006, lis_007, lis_008 (all within their existing ranges once projected to 2026). por_001 (Tulip Tree, register projects to 270, well within the site's existing 250-280).
+
+**Coordinates**: not touched. Every Lisbon tree is already `confirmed` and within 5-60m of its register match, tight enough that further micro-adjustment isn't a meaningful correction. Porto's 4 remaining `approximate` pins (por_004, por_005, por_008, por_010) were re-confirmed as genuinely unmatched in this fuller export too (same finding as this morning's session and 2026-07-28/29): no register entry of the right species sits within 150m of any of them. Not re-run further.
+
 ## 2026-08-01 — Seoul opens: 8 trees, 4 photos, 3 age disputes recorded honestly
 
 South Korea's Cultural Heritage Administration Natural Monument register and Wikipedia's own tree-specific coordinate infoboxes did the verification work. Two research subagent passes: one for content (dispatched, returned a full draft city), one implicit in my own follow-up (direct photo download and viewing, coordinate cross-check against ko.wikipedia.org's API, license verification against the Wikimedia API).
