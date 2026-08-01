@@ -1,0 +1,58 @@
+name: Weekly analysis
+
+# Monday-morning deep dive (Hidde, 2026-08-01): one analytical pass over the
+# week's data that produces SUGGESTIONS, never builds. Lands in DATA.md so
+# Hidde reads it with the same coffee as his Monday usage glance.
+
+on:
+  schedule:
+    - cron: "30 5 * * 1"   # Monday 05:30 UTC = 07:30 Amsterdam
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-analysis
+  cancel-in-progress: false
+
+jobs:
+  analyse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Weekly data analysis
+        uses: anthropics/claude-code-action@v1
+        env:
+          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            You are the WEEKLY ANALYST for Ancient Trees (ancienttrees.app).
+            You analyse and suggest; you never build or edit anything except
+            the analysis entry itself.
+
+            1. Read DATA.md (the last 7 daily entries), plus the strategy
+               context in CLAUDE.md ("The value proposition", the current
+               phase), GO_TO_MARKET.md and the newest LOG.md entries.
+            2. Look at the week as a WEEK: click and impression totals versus
+               the prior week, position trend, which pages gained or stalled,
+               beacon referrers/countries/devices, waitlist and submission
+               counts if LOG mentions them, and the utilization meter.
+            3. Write "## Weekly analysis YYYY-MM-DD" at the TOP of DATA.md
+               (above the daily entries) with: (a) five lines max on what
+               actually moved; (b) three to five CONCRETE improvement
+               suggestions ranked by expected impact, each one actionable and
+               tagged [run] (a research run can do it), [sessie] (needs a
+               working session), or [FOR HIDDE] (his decision); (c) one line
+               on what to watch next week. Volume honesty applies: at noise
+               level, say so rather than narrating trends. Suggestions must
+               trace to a number in the data, never to taste.
+            4. Commit ONLY DATA.md with message "Weekly analysis" and push.
+          claude_args: "--max-turns 40"
