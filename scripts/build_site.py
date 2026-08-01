@@ -3225,7 +3225,7 @@ def build_privacy_page(pages):
     <p>The site also counts, anonymously, which buttons get used (for example how often a directions button is clicked). These counts contain no names, no addresses, no identifiers and no cookies; they cannot be traced to anyone.</p>
     <p>Two forms store what you type into them, in the same EU database: the app waitlist keeps your email address, used to email you when the app is ready; a tree suggestion keeps what you wrote, including the name you optionally leave for credit. Want either removed? Use the contact address below.</p>
     <h2>Contact</h2>
-    <p>Questions about any of this, or want something removed? Email <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a>.</p>
+    <p>Questions about any of this, or want something removed? <a href="contribute?kind=privacy">Send a privacy request</a> and say what you want removed. It reaches the people who run this site, and nothing else is needed from you.</p>
 
     <h2>Deleting</h2>
     <p>Your account page has a delete option. It removes your email address and your collection.</p>
@@ -3625,6 +3625,7 @@ def build_contribute_page(published, pages):
         <option value="tree">One remarkable tree</option>
         <option value="city">My city's trees</option>
         <option value="correction">A correction to something on the site</option>
+        <option value="privacy">A privacy request (remove what I sent in)</option>
       </select>
     </label>
     <label>Which city?
@@ -3670,7 +3671,7 @@ def build_contribute_page(published, pages):
   if (!f) return;
   var params = new URLSearchParams(location.search);
   var kind = params.get('kind');
-  var map = {tree: 'tree', city: 'city', home: 'city', correction: 'correction'};
+  var map = {tree: 'tree', city: 'city', home: 'city', correction: 'correction', privacy: 'privacy'};
   if (kind && map[kind]) { document.getElementById('sg-kind').value = map[kind]; }
   f.addEventListener('submit', function(e) {
     e.preventDefault();
