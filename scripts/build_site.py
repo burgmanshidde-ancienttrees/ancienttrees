@@ -675,10 +675,11 @@ PAGE_SHELL = """<!DOCTYPE html>
 %%FOOTER%%
 <script>
 window.at = window.at || {};
-at.track = function(name) {
+at.track = function(name, detail) {
   try {
     var body = JSON.stringify({name: String(name).slice(0, 40),
-                               path: location.pathname.slice(0, 120)});
+                               path: location.pathname.slice(0, 120),
+                               detail: detail ? String(detail).slice(0, 60) : null});
     navigator.sendBeacon
       ? navigator.sendBeacon('SB_URL/rest/v1/events?apikey=SB_KEY',
           new Blob([body], {type: 'application/json'}))
@@ -1491,7 +1492,7 @@ if (sf) {
     e.preventDefault();
     var q = document.getElementById('city-q').value.trim().toLowerCase();
     if (!q) return;
-    at.track('search-home');
+    at.track('search-home', q);
     var hit = markers.find(function(m) { return m.city.toLowerCase() === q; }) ||
               markers.find(function(m) { return m.city.toLowerCase().indexOf(q) === 0; });
     if (hit) { window.location.href = hit.url; return; }
@@ -2956,7 +2957,7 @@ if (exForm) {
     e.preventDefault();
     var q = document.getElementById('ex-q').value.trim().toLowerCase();
     if (!q) return;
-    at.track('search-explore');
+    at.track('search-explore', q);
     var hit = CITIES.find(function(c) { return c.city.toLowerCase() === q; }) ||
               CITIES.find(function(c) { return c.city.toLowerCase().indexOf(q) === 0; });
     if (hit) { map.easeTo({center: [hit.lng, hit.lat], zoom: 12, duration: 1200}); return; }

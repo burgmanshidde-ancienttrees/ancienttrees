@@ -45,6 +45,14 @@ jobs:
                the prior week, position trend, which pages gained or stalled,
                beacon referrers/countries/devices, waitlist and submission
                counts if LOG mentions them, and the utilization meter.
+            2b. Maintain the SCORECARD: one compact markdown table row per
+               week (impressions, clicks, CTR, visits, directions clicks,
+               directions-per-visit, app-cta, waitlist total, submissions
+               total). Funnel RATIOS over raw counts: rates hold meaning at
+               volumes where counts are noise. Segment by device where the
+               beacon allows. Search-term events (the detail column of the
+               events table) are a standing content-gap source: a term
+               searched but unserved is a lead.
             3. Write "## Weekly analysis YYYY-MM-DD" at the TOP of DATA.md
                (above the daily entries) with: (a) five lines max on what
                actually moved; (b) three to five CONCRETE improvement
