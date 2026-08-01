@@ -404,6 +404,8 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .ats-row.active, .ats-row:hover { background: #F1EFE8; }
 .ats-empty { padding: 0.75rem 1.1rem; font-family: var(--sans); font-size: 13px; color: var(--ink-mid); }
 .ats-empty a { color: var(--moss); }
+.sp-citylink { color: inherit; text-decoration: none; }
+.sp-citylink:hover { text-decoration: underline; }
 .collect-dialog { border: none; border-radius: 16px; padding: 1.5rem 1.6rem; margin: auto; max-width: 26rem; width: calc(100vw - 3rem); box-shadow: 0 18px 60px rgba(0,0,0,0.3); font-family: var(--sans); color: var(--ink); }
 .collect-dialog::backdrop { background: rgba(38, 48, 30, 0.45); }
 .collect-dialog h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
@@ -2690,7 +2692,7 @@ def build_species_page(intro_data, members, tree_slugs, published, pages):
           <p>{esc(loc.get('neighbourhood',''))}. {esc(t['story'].split('. ')[0])}.</p>
         </div>
       </div>""")
-        sections.append(f'<h2>{esc(entry["data"]["city"])}</h2>{"".join(rows)}')
+        sections.append(f'<h2><a class="sp-citylink" href="../{cslug}">{esc(entry["data"]["city"])}</a></h2>{"".join(rows)}')
 
     city_links = " &middot; ".join(
         f'<a href="../{p["slug"]}">{esc(p["city"])}</a>' for p in published
