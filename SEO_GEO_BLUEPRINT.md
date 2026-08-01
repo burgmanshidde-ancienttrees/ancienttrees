@@ -81,8 +81,8 @@ This document has two layers with different lifespans. Layer 1 (Principles) shou
 
 | Element | Specification |
 |---|---|
-| Title (≤60 chars) | The promise, plainly: `Trees Older Than 1,000 Years You Can Actually Visit` |
-| H1 | Matches title |
+| Title (≤60 chars) | The search query, plainly, in `seo_title`: a number, a place and the words people actually type (`6 Ancient Trees Older Than the Cities Around Them`). Falls back to `title` when absent. |
+| H1 | The editorial `title`, which may differ from the title tag: the tag answers a query, the H1 sets the tone once the reader is on the page. Every superlative in either still passes hard rule 8. |
 | Body | Hand-written intro (100-150 words, Paris-quality) → curated entries, 2-3 sentences each + link to tree page, grouped logically (by region or era) |
 | Schema | ItemList + BreadcrumbList |
 | Internal links | Every entry links to its tree page; footer links to 3+ city pages |
@@ -134,6 +134,7 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 ---
 
 ## CHANGELOG
+- **v1.6 (2026-08-01):** Contract D splits the title tag from the H1, approved by Hidde in session ("de content beslissing rond collecties klinken goed doe het maar") after he judged the collection titles weak for search. The editorial titles were doing double duty: strong as headings, invisible to search, because nobody types "Trees That Outlived Their City". New optional `seo_title` per collection carries the query-shaped version; `title` stays the H1. All 12 collections got one the same day.
 - v1.3 — Contract D loses the owner-approval gate, approved by Hidde ("yes pas aan", 2026-07-27). It was the last place he sat as a mandatory quality gate, contradicting the recorded principle that the system publishes and readers correct. The risks it guarded are covered without him: entries are script-verifiable against the tree data, superlatives fall under the existing softening rule, voice under TONE_OF_VOICE.md. Collections now publish like cities do.
 - v1.2 — Removed the curation-status banner from every page type, approved by Hidde. He is not the quality gate and never will be at 1,000 trees, so promising "final human review is still in progress" was a promise nobody was going to keep. The bar is now the research standard already applied (two independent sources) plus readers as the correction layer. Two replacements: every tree page carries a visible "is something here not right?" invitation, and a tree whose pin is only approximate says so next to the directions button, because that costs the visitor a wasted walk. Uncertainty about age stays where it already was, inside the story text as a stated range (P7).
 - v1.1 — Added Contract F (species page `/species/[slug]` + `/species` index), approved by Hidde. Semi-automated browse facet: auto-generated entry list, hand-written intro, publish-gated at 3+ trees and an intro. Single-species collections are now folded into this contract to avoid duplicate content.
