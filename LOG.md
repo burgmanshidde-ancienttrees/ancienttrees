@@ -46,6 +46,10 @@ Shipped 6: the King Banyan of Kowloon Park (government-recognised as Hong Kong's
 
 Site rebuilt (920 pages), all contracts validated, QA clean (848 pages). One commit, pushed. Nothing needs Hidde, though the build-script token-overlap note above might be worth a look next time someone is in build_site.py.
 
+## 2026-08-01 — Dispatch note van Hidde voor de eerstvolgende run(s)
+
+**Opdracht: kwaliteitsronde op de vijf SEO-steden** — de pagina's die Search Console nu daadwerkelijk beloont: Lisbon (koploper, 6 kliks/10d), Amsterdam (108 vertoningen), Rome (165), Vienna (37), Porto. Werk per stad langs de vaste lat: foto's richting de 8-van-10-vloer (Cadiz-standaard, kleur, zelf bekijken), vage pins naar confirmed waar een bron het toelaat, en voor Lisbon/Porto de coördinaat- en leeftijdscorrecties uit data/registers/portugal-icnf.json doorvoeren (officiële bron, per boom verantwoorden in de commit). Dit valt binnen de steady-fortnight-kwaliteitshelft; geen nieuwe steden in deze opdracht.
+
 ## 2026-07-31 (avond, sessie met Hidde) — De kaart wordt af, de formulieren worden echt, en het vliegwiel sluit
 
 The evening in one breath, all live and verified:
