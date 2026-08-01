@@ -400,9 +400,16 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .explore-head { padding: 1.1rem 2rem 0.9rem; display: grid; grid-template-columns: 1fr auto; gap: 0.2rem 1.5rem; align-items: center; }
 .explore-head h1 { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.015em; }
 .explore-head p { font-size: 13px; color: var(--ink-mid); margin-top: 0.2rem; max-width: 46rem; grid-column: 1; }
-.ex-search { grid-column: 2; grid-row: 1 / span 2; display: flex; align-items: center; gap: 0.5rem; background: #fff; border: 1px solid var(--cream-dark); border-radius: 999px; padding: 0.55rem 1rem; min-width: 16rem; box-shadow: var(--shadow); }
-.ex-search svg { width: 16px; height: 16px; color: var(--ink-mid); flex-shrink: 0; }
-.ex-search input { border: none; outline: none; font-family: var(--sans); font-size: 13.5px; width: 100%; background: transparent; }
+/* One search component, one look (Hidde, 2026-08-01: the home experience and
+   the one above the map should be the same thing). The pill lives on
+   .at-search itself, so a new placement inherits it instead of inventing its
+   own; .poster-search only scales it up for the photo hero. */
+.at-search { position: relative; display: flex; align-items: center; gap: 0.15rem; background: #fff; border-radius: 999px; padding: 0.3rem 0.5rem 0.3rem 0.35rem; box-shadow: 0 6px 22px rgba(26,32,18,0.13); }
+.at-search > svg { width: 20px; height: 20px; color: var(--ink-light); flex-shrink: 0; margin-left: 0.55rem; }
+.at-search .search-ico { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border: none; background: transparent; color: var(--ink-light); cursor: pointer; }
+.at-search .search-ico svg { width: 20px; height: 20px; }
+.at-search input { border: none; outline: none; background: transparent; flex: 1; min-width: 0; font-family: var(--sans); font-size: 16px; padding: 0.6rem 0.6rem; color: var(--ink); }
+.ex-search { grid-column: 2; grid-row: 1 / span 2; width: min(30rem, 100%); }
 .at-search { position: relative; }
 .at-search input::-webkit-search-decoration { display: none; }
 .ats-drop { position: absolute; top: calc(100% + 8px); left: 0; right: 0; background: #fff; border-radius: 14px; box-shadow: 0 14px 44px rgba(0,0,0,0.22); overflow: hidden; overflow-y: auto; max-height: min(21rem, 55vh); z-index: 80; text-align: left; }
@@ -538,11 +545,8 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .hero-center > * { pointer-events: auto; }
 .hero-center h1 { color: #fff; font-size: clamp(2.1rem, 5.5vw, 3.8rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.08; margin-bottom: 1.4rem; text-shadow: 0 2px 18px rgba(0,0,0,0.35); }
 .hero-center h1 em { color: #F0C876; font-style: normal; }
-.poster-search { width: min(640px, 94vw); background: #fff; border-radius: 999px; padding: 0.35rem 0.6rem 0.35rem 0.4rem; align-items: center; gap: 0.15rem; box-shadow: 0 10px 40px rgba(0,0,0,0.28); margin-top: 0; }
-.poster-search .search-ico { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border: none; background: transparent; color: var(--ink-light); cursor: pointer; }
-.poster-search .search-ico svg { width: 20px; height: 20px; }
-.poster-search input { border: none; border-radius: 999px; flex: 1; font-size: 16.5px; padding: 0.65rem 0.5rem; }
-.poster-search input:focus { outline: none; }
+.poster-search { width: min(640px, 94vw); padding: 0.35rem 0.6rem 0.35rem 0.4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.28); margin-top: 0; }
+.poster-search input { font-size: 16.5px; padding: 0.65rem 0.5rem; }
 .hero-links { display: flex; gap: 1.8rem; margin-top: 1.3rem; flex-wrap: wrap; justify-content: center; }
 .hero-link { background: none; border: none; cursor: pointer; font-family: inherit; color: #fff; font-size: 15.5px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
 .home-hero.poster .near-me-result { color: #fff; font-weight: 600; margin-top: 0.9rem; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
@@ -1597,8 +1601,10 @@ def search_form(ctx, input_id, form_class, with_button=False):
 SEARCH_WIDGET_JS = """
 <script>
 (function() {
-  var form = document.querySelector('form.at-search');
-  if (!form) return;
+  // Every .at-search on the page gets wired, so a second placement (a header
+  // bar, the AllTrails pattern) needs no new script.
+  Array.prototype.forEach.call(document.querySelectorAll('form.at-search'), setup);
+  function setup(form) {
   var input = form.querySelector('input');
   var drop = form.querySelector('.ats-drop');
   var ctx = form.getAttribute('data-ctx');
@@ -1677,6 +1683,7 @@ SEARCH_WIDGET_JS = """
     e.preventDefault();
     if (rows.length) { go(rows[active >= 0 ? active : 0]); }
   });
+  }
 })();
 </script>
 """
