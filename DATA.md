@@ -5,6 +5,29 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+## 2026-07-31 (previous UTC day)
+
+Cloudflare, ancienttrees.app:
+- Page views: 0 (day before: 0, 0)
+- Unique visitors: 0 (day before: 0, 0)
+- Requests total: 0
+- Page views, last days: no data
+- Top countries by requests: none recorded
+
+Search Console (freshest day Google provides, data lags 2-3 days):
+- 2026-07-31: 1 clicks, 55 impressions, avg position 16.1 (day before: c7/i249)
+- Days: 07-22:c0/i38  07-23:c1/i103  07-24:c2/i106  07-25:c0/i117  07-26:c1/i197  07-27:c8/i205  07-28:c5/i197  07-29:c9/i247  07-30:c7/i249  07-31:c1/i55
+- Top queries (10d): "quercus aggressive" -site:reddit.com -s (i6, p2); "york museum gardens" -site:reddit.com - (i3, p5); acient tree (i1, p40); albero roma (i1, p47); alley pond giant (i1, p28)
+- Top pages (10d): /lisbon (c6/i79); /amsterdam (c2/i108); /porto (c2/i8); /rome (c2/i165); /vienna (c2/i37)
+
+Web Analytics (beacon, real browsers, cookieless):
+- Days (visits/pageviews): 07-24:v0/p20  07-25:v10/p10  07-26:v10/p20  07-27:v20/p20  07-28:v20/p50  07-29:v10/p10  07-30:v10/p10  07-31:v0/p60
+- Top paths: / (70); /lisbon (20); /cadiz (20); /rotterdam (10); /verona/plane-tree-of-piazza-indipendenza (10)
+
+Machine: 8 chain attempts yesterday, 8 got real work time (~444 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Conclusion:** Search is the only channel with real data and it is still small: 1 clicks and 55 impressions on Google's freshest day (day before: c7/i249). Directional at best; no strategic conclusions from these volumes.
+
 ## 2026-07-30 (previous UTC day)
 
 Cloudflare, ancienttrees.app:
