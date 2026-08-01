@@ -629,7 +629,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .split { flex-direction: column-reverse; height: auto; }
   .panel { width: 100%; max-width: none; height: auto; overflow: visible; border-right: none; }
   /* Smaller map on phones: the list is what people scan, the map is context. */
-  .stage { position: sticky; top: var(--header-h); height: 48vh; min-height: 320px; z-index: 5; }
+  .stage { position: sticky; top: var(--header-h); height: 42vh; height: 42svh; min-height: 300px; z-index: 5; }
   .crumbs { display: none; }
   .tree-card { padding: 1.25rem 1.1rem; }
   .tree-meta, .tree-story, .tree-more { margin-left: 0; }
@@ -1208,6 +1208,7 @@ var CHOOSER_CITIES = {chooser_cities_json};
 var cityPanel = document.querySelector('.panel');
 var chooserBox = null;
 var chooserOn = false;
+var homeZoom = null;
 function ensureChooserBox() {{
   if (chooserBox) {{ return chooserBox; }}
   chooserBox = document.createElement('div');
@@ -1225,8 +1226,13 @@ function chooserCard(c) {{
 function updatePanelMode() {{
   if (!cityPanel || !CHOOSER_CITIES.length) {{ return; }}
   var z = map.getZoom();
-  if (!chooserOn && z <= 9.5) {{ chooserOn = true; }}
-  else if (chooserOn && z >= 10.5) {{ chooserOn = false; }}
+  // Thresholds sit relative to the city's own opening zoom: on a phone a
+  // sprawling city fits at z~9.4, and a fixed 9.5 line put fresh page loads
+  // straight into chooser mode (the Paris bug, 2026-08-01). The chooser is
+  // for people who deliberately zoomed OUT of the opening view.
+  var onAt = homeZoom === null ? 9.5 : Math.min(9.5, homeZoom - 1.2);
+  if (!chooserOn && z <= onAt) {{ chooserOn = true; }}
+  else if (chooserOn && z >= onAt + 1) {{ chooserOn = false; }}
   var box = ensureChooserBox();
   for (var i = 0; i < cityPanel.children.length; i++) {{
     var el = cityPanel.children[i];
@@ -1250,6 +1256,7 @@ if (markers.length > 1) {{
   var _el = document.getElementById('map');
   var _pad = Math.max(30, Math.min(90, Math.floor(Math.min(_el.clientWidth, _el.clientHeight) * 0.16)));
   map.fitBounds(_b, {{ padding: _pad, maxZoom: 14.5, duration: 0 }});
+  homeZoom = map.getZoom();
 }}
 
 var pins = [];
