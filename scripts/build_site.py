@@ -165,10 +165,16 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   border-radius: 10px; padding: 1.1rem 1.25rem 0.9rem; }
 .season-head { display: flex; align-items: center; gap: 0.5rem; font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em;
   font-size: 1.05rem; color: var(--ink); margin-bottom: 0.5rem; }
-.sc-chip { font-family: var(--sans); font-size: 11px; font-weight: 600; color: var(--moss);
-  border: 1px solid var(--moss); border-radius: 999px; padding: 1px 8px 1px 6px; text-transform: capitalize;
-  display: inline-flex; align-items: center; gap: 4px; }
-.sc-chip svg { width: 13px; height: 13px; flex-shrink: 0; }
+.sc-chip { font-family: var(--sans); font-size: 12.5px; font-weight: 700; color: var(--ink);
+  background: #fff; border: 1px solid var(--cream-dark); border-radius: 999px; padding: 5px 12px 5px 9px;
+  text-transform: capitalize; display: inline-flex; align-items: center; gap: 6px; }
+.sc-chip svg { width: 16px; height: 16px; flex-shrink: 0; }
+.season-plot { position: relative; }
+.sc-peakbadge { position: absolute; transform: translate(-50%, -130%); background: #fff;
+  border-radius: 10px; padding: 5px; box-shadow: 0 2px 10px rgba(26,32,18,0.14); line-height: 0; }
+.sc-peakbadge svg { width: 18px; height: 18px; }
+.sc-grid { stroke: var(--cream-dark); stroke-width: 1; opacity: 0.6; }
+.season-legend { margin-top: 0.5rem; }
 .season-svg { width: 100%; height: auto; display: block; overflow: visible; }
 .sc-area { fill: var(--moss-light); }
 .sc-line { fill: none; stroke: var(--moss); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
@@ -839,11 +845,13 @@ def season_intensities(peak_months):
 # unambiguous words in the label, and derives nothing when in doubt. Runs
 # backfill the field properly per Step 3.
 KIND_ICONS = {
-    "flowers": '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="2" fill="currentColor"/><g fill="currentColor" opacity=".55"><ellipse cx="8" cy="3.4" rx="2" ry="2.6"/><ellipse cx="12.4" cy="6.6" rx="2" ry="2.6" transform="rotate(72 12.4 6.6)"/><ellipse cx="10.7" cy="12" rx="2" ry="2.6" transform="rotate(144 10.7 12)"/><ellipse cx="5.3" cy="12" rx="2" ry="2.6" transform="rotate(216 5.3 12)"/><ellipse cx="3.6" cy="6.6" rx="2" ry="2.6" transform="rotate(288 3.6 6.6)"/></g></svg>',
-    "fruit": '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6" cy="10" r="4" fill="currentColor" opacity=".75"/><circle cx="11" cy="8" r="3.2" fill="currentColor" opacity=".5"/><path d="M6 6 Q7 3 9.5 2.5" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>',
-    "autumn colour": '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 C11.5 4 13.5 7 13.5 10 A5.5 5.5 0 0 1 2.5 10 C2.5 7 4.5 4 8 1.5z" fill="currentColor" opacity=".7"/><path d="M8 4 v9" stroke="currentColor" stroke-width="1.1"/></svg>',
-    "catkins": '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3 q2 -1 5 -1 q4 0 6 1" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/><path d="M5 3.5 q-.5 4 .5 7 M8 3 q0 5 1 9 M11.5 3.5 q.5 3.5 -.3 6.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".65"/></svg>',
-    "fresh leaves": '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13 3 C8 3 4.5 6 4 11 c4.5.5 8-2 9-8z" fill="currentColor" opacity=".65"/><path d="M4.5 13 C6 9.5 9 6.5 12.5 4.5" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>',
+    # PictureThis grammar (Hidde, 2026-08-01: "deze vorm en iconen meer
+    # namaken"): each kind carries its own colour; rounded, friendly forms.
+    "flowers": '<svg viewBox="0 0 20 20" aria-hidden="true"><g fill="#E8705F"><ellipse cx="10" cy="4.6" rx="2.6" ry="3.2"/><ellipse cx="15.4" cy="10" rx="3.2" ry="2.6"/><ellipse cx="10" cy="15.4" rx="2.6" ry="3.2"/><ellipse cx="4.6" cy="10" rx="3.2" ry="2.6"/></g><circle cx="10" cy="10" r="2.1" fill="#fff"/></svg>',
+    "fruit": '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="11.6" r="6" fill="#E8A33D"/><path d="M10 5.8 Q10.2 3.4 12.6 2.6" stroke="#7FA653" stroke-width="1.6" fill="none" stroke-linecap="round"/><ellipse cx="13.4" cy="3.4" rx="2.2" ry="1.3" fill="#7FA653" transform="rotate(-24 13.4 3.4)"/><circle cx="8" cy="10" r="1.1" fill="#fff" opacity=".55"/></svg>',
+    "autumn colour": '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2 C14.5 5 17 9 17 12.5 A7 7 0 0 1 3 12.5 C3 9 5.5 5 10 2z" fill="#D97843"/><path d="M10 5.5 v11" stroke="#fff" stroke-width="1.2" opacity=".7"/></svg>',
+    "catkins": '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 4 q3 -1.6 6 -1.6 q3.6 0 6 1.6" stroke="#7FA653" stroke-width="1.6" fill="none" stroke-linecap="round"/><g stroke="#C9B458" stroke-width="2.4" stroke-linecap="round"><path d="M6 5 q-.4 4.4 .5 7.6"/><path d="M10 4.6 q0 5.4 .9 9.6"/><path d="M14 5 q.4 3.8 -.3 7"/></g></svg>',
+    "fresh leaves": '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.5 3.5 C10 3.5 5.5 7.5 5 14 c6 .6 10.5 -3 11.5 -10.5z" fill="#7FA653"/><path d="M5.5 16.5 C7.5 12 11.5 8 16 5.5" stroke="#4A6B2A" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>',
 }
 KIND_ALIASES = {
     "flowering": "flowers", "blossom": "flowers", "bloom": "flowers",
@@ -919,10 +927,14 @@ def season_curve(tree):
     peak_x, peak_y = pts[peak_i]
     now_x = pts[now - 1][0]
 
-    # Month labels, every other one to keep it clean at this width.
+    # All twelve month labels plus light gridlines (the PictureThis frame).
     ticks = "".join(
         f'<text x="{pts[i][0]:.1f}" y="{H - 6:.0f}" class="sc-m">{MONTH_ABBR[i]}</text>'
-        for i in range(0, 12, 2)
+        for i in range(12)
+    )
+    grid = "".join(
+        f'<line x1="{pad_x:.1f}" y1="{pad_t + plot_h * f:.1f}" x2="{W - pad_x:.1f}" y2="{pad_t + plot_h * f:.1f}" class="sc-grid"/>'
+        for f in (0.25, 0.5, 0.75)
     )
 
     now_marker = (
@@ -933,20 +945,33 @@ def season_curve(tree):
     kind = season_kind(bt)
     chip = (f'<span class="sc-chip">{KIND_ICONS[kind]}{esc(kind)}</span>'
             if kind else "")
+    peak_badge = ""
+    if kind:
+        # PictureThis form: a white rounded badge with the kind icon floating
+        # at the curve's peak. Positioned in % so it scales with the svg.
+        bx = peak_x / W * 100
+        by = peak_y / H * 100
+        peak_badge = (f'<span class="sc-peakbadge" style="left:{bx:.1f}%;top:{by:.1f}%">'
+                      f'{KIND_ICONS[kind]}</span>')
     now_badge = '<span class="best-now">at its best right now</span>' if in_season else ""
 
     return f"""
 <figure class="season">
   <figcaption class="season-head">
-    <span>Best time to visit</span>{chip}{now_badge}
+    <span>Best time to visit</span>{now_badge}
   </figcaption>
+  <div class="season-plot">
+  {peak_badge}
   <svg viewBox="0 0 {W:.0f} {H:.0f}" class="season-svg" role="img" aria-label="Seasonal peak: {esc(bt['label'])}">
+    {grid}
     <path d="{area}" class="sc-area"/>
     <path d="{line}" class="sc-line"/>
     {now_marker}
     <circle cx="{peak_x:.1f}" cy="{peak_y:.1f}" r="4.5" class="sc-peak"/>
     {ticks}
   </svg>
+  </div>
+  <p class="season-legend">{chip}</p>
   <p class="season-label">{esc(bt['label'])}</p>
 </figure>"""
 
