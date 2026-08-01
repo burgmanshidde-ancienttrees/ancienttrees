@@ -673,6 +673,28 @@ PAGE_SHELL = """<!DOCTYPE html>
 </header>
 %%BODY%%
 %%FOOTER%%
+<script>
+window.at = window.at || {};
+at.track = function(name) {
+  try {
+    var body = JSON.stringify({name: String(name).slice(0, 40),
+                               path: location.pathname.slice(0, 120)});
+    navigator.sendBeacon
+      ? navigator.sendBeacon('SB_URL/rest/v1/events?apikey=SB_KEY',
+          new Blob([body], {type: 'application/json'}))
+      : fetch('SB_URL/rest/v1/events', {method: 'POST', keepalive: true,
+          headers: {'apikey': 'SB_KEY', 'Content-Type': 'application/json',
+                    'Prefer': 'return=minimal'}, body: body});
+  } catch (e) {}
+};
+document.addEventListener('click', function(e) {
+  var a = e.target && e.target.closest ? e.target.closest('a, button') : null;
+  if (!a) return;
+  var h = a.getAttribute('href') || '';
+  if (h.indexOf('google.com/maps/dir') !== -1) { at.track('directions'); }
+  else if (h.indexOf('/app') === 0 || h === 'app' || h === '../app' || h === './app') { at.track('app-cta'); }
+});
+</script>
 %%SCRIPTS%%
 %%ANALYTICS%%
 </body>
@@ -1469,6 +1491,7 @@ if (sf) {
     e.preventDefault();
     var q = document.getElementById('city-q').value.trim().toLowerCase();
     if (!q) return;
+    at.track('search-home');
     var hit = markers.find(function(m) { return m.city.toLowerCase() === q; }) ||
               markers.find(function(m) { return m.city.toLowerCase().indexOf(q) === 0; });
     if (hit) { window.location.href = hit.url; return; }
@@ -1504,6 +1527,8 @@ def render_page(title, description, canonical, body, head_extra="", scripts="",
                   if AUTH_ENABLED else "")
     page_html = (
         PAGE_SHELL
+        .replace("SB_URL", SUPABASE_URL)
+        .replace("SB_KEY", SUPABASE_KEY)
         .replace("%%LOGIN_MENU%%", login_menu)
         .replace("%%LOGIN%%", login_link)
         .replace("%%TITLE%%", esc(title))
@@ -2684,6 +2709,7 @@ def build_privacy_page(pages):
     <p>Every page works without an account. The site uses a cookieless visit counter (Cloudflare Web Analytics) that records aggregate page views only; it sets no cookies and cannot identify you. Map tiles load from OpenFreeMap and photos from Wikimedia Commons; those requests reach their servers the way any image on the web does.</p>
     <h2>With an account (once sign-in opens)</h2>
     <p>Signing in stores two things: your email address and your tree collection. The address is used for sign-in links and account service, nothing else. This data is stored with Supabase, on servers in the EU (Frankfurt).</p>
+    <p>The site also counts, anonymously, which buttons get used (for example how often a directions button is clicked). These counts contain no names, no addresses, no identifiers and no cookies; they cannot be traced to anyone.</p>
     <p>Two forms store what you type into them, in the same EU database: the app waitlist keeps your email address, used to email you when the app is ready; a tree suggestion keeps what you wrote, including the name you optionally leave for credit. Want either removed? Use the contact address below.</p>
     <h2>Deleting</h2>
     <p>Your account page has a delete option. It removes your email address and your collection.</p>
@@ -2763,6 +2789,7 @@ def build_fakedoor_pages(pages):
     var email = document.getElementById('wl-email').value.trim();
     if (!email) return;
     note.textContent = 'Sending...';
+    at.track('waitlist-submit');
     fetch('SB_URL/rest/v1/waitlist', {
       method: 'POST',
       headers: {'apikey': 'SB_KEY', 'Content-Type': 'application/json',
@@ -2929,6 +2956,7 @@ if (exForm) {
     e.preventDefault();
     var q = document.getElementById('ex-q').value.trim().toLowerCase();
     if (!q) return;
+    at.track('search-explore');
     var hit = CITIES.find(function(c) { return c.city.toLowerCase() === q; }) ||
               CITIES.find(function(c) { return c.city.toLowerCase().indexOf(q) === 0; });
     if (hit) { map.easeTo({center: [hit.lng, hit.lat], zoom: 12, duration: 1200}); return; }
@@ -3152,6 +3180,7 @@ def build_contribute_page(published, pages):
     var city = document.getElementById('sg-city').value.trim();
     if (!city) return;
     note.textContent = 'Sending...';
+    at.track('suggestion-submit');
     fetch('SB_URL/rest/v1/submissions', {
       method: 'POST',
       headers: {'apikey': 'SB_KEY', 'Content-Type': 'application/json', 'Prefer': 'return=minimal'},
