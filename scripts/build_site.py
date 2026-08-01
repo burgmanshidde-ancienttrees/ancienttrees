@@ -768,6 +768,11 @@ document.addEventListener('click', function(e) {
 # and no personal data. Chosen over Google Analytics on 2026-07-21 for exactly
 # that reason: a consent popup is friction on the street, which is where this
 # site has to work. Empty string switches it off everywhere.
+# The project identity, never the owner's name (Hidde, 2026-08-01: "ik wil
+# mijn naam niet noemen dus dat email adres"). Set up as a forward at the
+# registrar; nothing on the site or in a reply ever needs his own address.
+CONTACT_EMAIL = "info@ancienttrees.app"
+
 ANALYTICS_TOKEN = "fcbbfb8b426c4f6aa2066b00be6454f6"
 
 # The owner's own visits were most of the traffic (Hidde, 2026-08-01: "deze 60
@@ -3208,7 +3213,7 @@ def build_privacy_page(pages):
     name or location, no contact address (his explicit choice, the formal
     thinness of which is recorded in CLAUDE.md); deletion is self-service."""
     canonical = f"{BASE_URL}/privacy"
-    body = """
+    body = f"""
 <main class="content-page">
   <h1>Privacy</h1>
   <div class="prose-block">
@@ -3219,6 +3224,9 @@ def build_privacy_page(pages):
     <p>Signing in stores two things: your email address and your tree collection. The address is used for sign-in links and account service, nothing else. This data is stored with Supabase, on servers in the EU (Frankfurt).</p>
     <p>The site also counts, anonymously, which buttons get used (for example how often a directions button is clicked). These counts contain no names, no addresses, no identifiers and no cookies; they cannot be traced to anyone.</p>
     <p>Two forms store what you type into them, in the same EU database: the app waitlist keeps your email address, used to email you when the app is ready; a tree suggestion keeps what you wrote, including the name you optionally leave for credit. Want either removed? Use the contact address below.</p>
+    <h2>Contact</h2>
+    <p>Questions about any of this, or want something removed? Email <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a>.</p>
+
     <h2>Deleting</h2>
     <p>Your account page has a delete option. It removes your email address and your collection.</p>
     <h2>Changes</h2>
