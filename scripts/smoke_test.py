@@ -104,6 +104,11 @@ def main():
             ("exc-", "city chooser panel rendered"),
             ('class="ats-drop"', "shared search dropdown (one interaction, home and explore)"),
         ]),
+        (f"{base}/netherlands.html", "country page (Contract G)", [
+            ("maplibregl-canvas", "country map canvas (JS ran)"),
+            ("ctry-row", "ranked city list rendered"),
+            ("The oldest tree mapped in", "oldest-tree block"),
+        ]),
         (f"{base}/contribute.html", "contribute", [
             ('id="suggest"', "native suggestion form"),
             ("rest/v1/submissions", "form posts to our backend"),

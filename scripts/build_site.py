@@ -124,7 +124,21 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .nav-drop-menu .mi svg { width: 16px; height: 16px; }
 .nav-drop-menu a:hover { background: var(--cream); }
 .only-mobile { display: none; }
-.nav-drop summary .sum-mobile { display: none; }
+/* The header follows the convention of the products this one is measured
+   against (AllTrails, Komoot, Google Maps): with a handful of destinations
+   they sit flat in the bar, account stays its own item on the right, and the
+   primary CTA is last. The collapsed menu appears only when the bar runs out
+   of room, and then it holds those same items ONCE. Specificity note: the
+   .nav-drop-menu a rule above outranks a bare .only-mobile, which is exactly
+   how Log in and Map came to render twice on desktop. */
+.nav-drop-menu a.only-mobile { display: none; }
+.nav-flat { display: inline-flex; align-items: center; }
+.nav-drop { display: none; }
+@media (max-width: 1000px) {
+  .nav-flat { display: none; }
+  .nav-drop { display: inline-block; }
+  .nav-drop-menu a.only-mobile { display: flex; }
+}
 .bar-links a.bar-cta:hover { background: var(--moss); color: #fff; }
 .city-card.soon:hover { opacity: 1; border-top-color: var(--moss); }
 .city-card-cta { font-size: 12px; color: var(--moss); font-weight: 500; margin-top: 0.35rem; }
@@ -404,6 +418,21 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .ats-row.active, .ats-row:hover { background: #F1EFE8; }
 .ats-empty { padding: 0.75rem 1.1rem; font-family: var(--sans); font-size: 13px; color: var(--ink-mid); }
 .ats-empty a { color: var(--moss); }
+/* Country page: the ranked-list form (Hidde, 2026-08-01, the PictureThis
+   Top-50 pattern): rank numeral, photo, name, one honest sub-line, chevron. */
+.ctry-list { margin: 0.5rem 0 2rem; }
+.ctry-row { display: flex; align-items: center; gap: 0.9rem; padding: 0.7rem 0.2rem; border-bottom: 1px solid var(--cream-dark); text-decoration: none; color: var(--ink); }
+.ctry-row:last-child { border-bottom: none; }
+.ctry-rank { font-family: var(--sans); font-size: 20px; font-weight: 700; color: var(--moss); min-width: 1.6rem; text-align: center; flex-shrink: 0; }
+.ctry-ph { display: block; width: 78px; height: 62px; border-radius: 10px; overflow: hidden; background: var(--cream-dark); flex-shrink: 0; }
+.ctry-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ctry-noph { display: flex; align-items: center; justify-content: center; color: #CFCEC4; }
+.ctry-noph svg { width: 30px; height: 28px; }
+.ctry-body { flex: 1; min-width: 0; font-family: var(--sans); }
+.ctry-body b { display: block; font-size: 16px; font-weight: 600; }
+.ctry-body span { display: block; font-size: 12.5px; color: var(--ink-mid); margin-top: 2px; }
+.ctry-chev { color: var(--ink-light); font-size: 26px; line-height: 1; flex-shrink: 0; padding-right: 0.2rem; }
+.ctry-row:hover .ctry-body b { text-decoration: underline; }
 .sp-citylink { color: inherit; text-decoration: none; }
 .sp-citylink:hover { text-decoration: underline; }
 .collect-dialog { border: none; border-radius: 16px; padding: 1.5rem 1.6rem; margin: auto; max-width: 26rem; width: calc(100vw - 3rem); box-shadow: 0 18px 60px rgba(0,0,0,0.3); font-family: var(--sans); color: var(--ink); }
@@ -692,7 +721,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <body>
 <header class="bar">
   <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>%%LOGIN_MENU%%</div></details>%%LOGIN%%<a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
+  <nav class="bar-links"><span class="nav-flat"><a href="%%ROOTPATH%%explore">Map</a><a href="%%ROOTPATH%%cities">Cities</a><a href="%%ROOTPATH%%species">Species</a><a href="%%ROOTPATH%%collections">Collections</a><a href="%%ROOTPATH%%contribute">Suggest a tree</a></span><details class="nav-drop"><summary><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>%%LOGIN_MENU%%</div></details>%%LOGIN%%<a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
 </header>
 %%BODY%%
 %%FOOTER%%
@@ -1992,6 +2021,28 @@ def load_species_intros():
     return out
 
 
+def load_country_intros():
+    """Hand-written country intros keyed by country name. Contract G: no page
+    without one, same gate as species (P3, no templated country pages)."""
+    c_dir = DATA / "countries"
+    if not c_dir.exists():
+        return {}
+    out = {}
+    for f in sorted(c_dir.glob("*.json")):
+        d = json.loads(f.read_text())
+        out[d["country"]] = d
+    return out
+
+
+def country_name(intro_data, capital=False):
+    """'the Netherlands' in a sentence, 'The Netherlands' at its start."""
+    art = intro_data.get("article")
+    name = intro_data["country"]
+    if not art:
+        return name
+    return f"{art.capitalize() if capital else art} {name}"
+
+
 def group_trees_by_species(renderable):
     """common_name -> list of (city_entry, tree), preserving city order then age."""
     groups = {}
@@ -2003,6 +2054,7 @@ def group_trees_by_species(renderable):
 
 
 SPECIES_MIN_TREES = 3
+COUNTRY_MIN_CITIES = 3  # Contract G: fewer cities and a country page is a city duplicate
 
 
 def oldest_tree(trees, city_data=None):
@@ -2316,8 +2368,10 @@ def build_question_page(city_entry, collections, pages):
 
 # ---------------------------------------------------------------- city pages
 
-def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), species_pages=None):
+def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), species_pages=None,
+                    country_pages=None):
     species_pages = species_pages or {}
+    country_pages = country_pages or {}
     city_data = entry["data"]
     city = city_data["city"]
     country = city_data["country"]
@@ -2344,7 +2398,9 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
     elif not (60 <= len(intro.split()) <= 100):
         ERRORS.append(f"{canonical}: city intro is {len(intro.split())} words, Contract C requires 60-100")
 
-    crumb_items = [("Home", BASE_URL), (country, None), (city, None)]
+    # Contract G: the country crumb becomes a link the moment its page exists.
+    country_url = f"{BASE_URL}/{country_pages[country]}" if country in country_pages else None
+    crumb_items = [("Home", BASE_URL), (country, country_url), (city, None)]
 
     cards = []
     markers = []
@@ -2764,6 +2820,195 @@ def build_species_index(species_cards, published, pages):
     head_extra = ld_script(graph)
     page = render_page(title, description, canonical, body, head_extra, "", rootpath)
     pages.append(("species.html", page, canonical))
+
+
+def country_map_script(cities):
+    """The country map: one green dot per mapped city, click goes to its page.
+    Deliberately the simplest map on the site (no clustering, no season layer):
+    at country zoom the job is orientation, not detail."""
+    def centre(c):
+        ms = c["markers"]
+        return [sum(m["lng"] for m in ms) / len(ms), sum(m["lat"] for m in ms) / len(ms)]
+    data = json.dumps({
+        "type": "FeatureCollection",
+        "features": [{
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": centre(c)},
+            "properties": {"slug": c["slug"], "city": c["city"], "n": str(c["count"])},
+        } for c in cities],
+    })
+    return f"""
+<script src="{MAPLIBRE_JS}"></script>
+<script>
+var CITIES = {data};
+var map = new maplibregl.Map({{
+  container: 'map', style: '{MAP_STYLE}',
+  center: [0, 0], zoom: 3, renderWorldCopies: false,
+  attributionControl: {{ compact: true }}
+}});
+map.addControl(new maplibregl.NavigationControl());
+var b = new maplibregl.LngLatBounds();
+CITIES.features.forEach(function(f) {{ b.extend(f.geometry.coordinates); }});
+// Fit on load AND on resize until the visitor takes over: fitting against a
+// container that has not reached its final size lands the country at half
+// the right zoom, which is what it did on the first build.
+var touched = false;
+function fit() {{ if (!touched) {{ map.fitBounds(b, {{ padding: 48, maxZoom: 9, duration: 0 }}); }} }}
+map.on('dragstart', function() {{ touched = true; }});
+map.on('zoomstart', function(e) {{ if (e.originalEvent) {{ touched = true; }} }});
+new ResizeObserver(function() {{ map.resize(); fit(); }}).observe(document.getElementById('map'));
+map.on('load', function() {{
+  fit();
+  map.addSource('cities', {{type: 'geojson', data: CITIES}});
+  map.addLayer({{id: 'city-dot', type: 'circle', source: 'cities',
+    paint: {{'circle-color': '#4A6B2A', 'circle-opacity': 0.92, 'circle-radius': 15,
+            'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}}}});
+  map.addLayer({{id: 'city-n', type: 'symbol', source: 'cities',
+    layout: {{'text-field': ['get', 'n'], 'text-font': ['Noto Sans Regular'],
+             'text-size': 12, 'text-allow-overlap': true}},
+    paint: {{'text-color': '#F6F2E9'}}}});
+  map.addLayer({{id: 'city-name', type: 'symbol', source: 'cities',
+    layout: {{'text-field': ['get', 'city'], 'text-font': ['Noto Sans Regular'],
+             'text-size': 12, 'text-offset': [0, 1.6], 'text-anchor': 'top'}},
+    paint: {{'text-color': '#26301E', 'text-halo-color': '#F6F2E9', 'text-halo-width': 1.4}}}});
+  map.on('click', 'city-dot', function(e) {{
+    window.location.href = '/' + e.features[0].properties.slug;
+  }});
+  map.on('mouseenter', 'city-dot', function() {{ map.getCanvas().style.cursor = 'pointer'; }});
+  map.on('mouseleave', 'city-dot', function() {{ map.getCanvas().style.cursor = ''; }});
+}});
+</script>
+"""
+
+
+def build_country_page(intro_data, country_cities, entries_by_slug, tree_slugs,
+                       published, collections, pages):
+    """Contract G. The pyramid's middle tier: tree -> city -> country.
+
+    Form follows the country-page convention of AllTrails, Komoot and Atlas
+    Obscura (region map, then a ranked list of destinations as photo cards,
+    then one highlighted entry), in the ranked-list shape Hidde picked on
+    2026-08-01. Publish gate: 3+ published cities AND a hand-written intro."""
+    slug = intro_data["slug"]
+    country = intro_data["country"]
+    disp = country_name(intro_data)
+    canonical = f"{BASE_URL}/{slug}"
+    rootpath = "./"
+
+    total = sum(c["count"] for c in country_cities)
+    title = fit_title([
+        f"Ancient Trees in {disp}: {len(country_cities)} Cities to Explore",
+        f"Ancient Trees in {disp}: {len(country_cities)} Cities",
+        intro_data.get("title", ""),
+        f"Ancient Trees in {country}",
+    ], canonical)
+    description = intro_data.get("meta_description", "")
+
+    crumb_items = [("Home", BASE_URL), (country, None)]
+
+    # Cities ranked by how much of each is mapped: honest and self-explaining,
+    # unlike a taste ranking nobody can check.
+    ranked = sorted(country_cities, key=lambda c: (-c["count"], c["city"]))
+
+    # The oldest tree in the country, by the most defensible reading: highest
+    # lower bound first, so a wide guess never outranks a documented age.
+    oldest, oldest_city = None, None
+    for c in country_cities:
+        entry = entries_by_slug[c["slug"]]
+        for t in entry["data"]["trees"]:
+            if not tree_is_renderable(t):
+                continue
+            key = (t.get("age_min") or 0, t.get("age_max") or 0)
+            if oldest is None or key > (oldest.get("age_min") or 0, oldest.get("age_max") or 0):
+                oldest, oldest_city = t, c
+
+    rows = []
+    for i, c in enumerate(ranked, 1):
+        entry = entries_by_slug[c["slug"]]
+        face = city_face(entry, 300)
+        # No photo yet is an honest state, not a broken one: the placeholder
+        # carries the mark rather than sitting there as an empty grey hole.
+        ph = (f'<span class="ctry-ph"><img src="{esc(face)}" alt="" loading="lazy"></span>'
+              if face else '<span class="ctry-ph ctry-noph" aria-hidden="true">'
+                           '<svg viewBox="0 0 68 64" fill="none"><ellipse cx="34" cy="24" rx="24" ry="16" fill="currentColor"/>'
+                           '<circle cx="20" cy="23" r="11" fill="currentColor"/><circle cx="48" cy="23" r="11" fill="currentColor"/>'
+                           '<circle cx="34" cy="12" r="11" fill="currentColor"/>'
+                           '<path d="M31 62 h5.6 l-1.2-16 h-3.2z" fill="currentColor"/></svg></span>')
+        city_oldest = max((t for t in entry["data"]["trees"] if tree_is_renderable(t)),
+                          key=lambda t: (t.get("age_min") or 0, t.get("age_max") or 0), default=None)
+        sub = f'{c["count"]} trees'
+        if city_oldest:
+            sub += f' &middot; oldest {esc(city_oldest.get("age_estimate", ""))}'
+        rows.append(
+            f'<a class="ctry-row" href="{c["slug"]}">'
+            f'<span class="ctry-rank">{i}</span>{ph}'
+            f'<span class="ctry-body"><b>{esc(c["city"])}</b><span>{sub}</span></span>'
+            f'<span class="ctry-chev" aria-hidden="true">&rsaquo;</span></a>')
+
+    oldest_block = ""
+    if oldest is not None:
+        tslug = tree_slugs[oldest["id"]]
+        ph = usable_photo(oldest)
+        thumb = (f'<div class="entry-thumb"><img {img_srcset(ph["url"], [300, 600], "140px")}'
+                 f' alt="{esc(oldest["name"])}" loading="lazy"></div>' if ph else "")
+        oldest_block = f"""
+  <h2>The oldest tree mapped in {esc(disp)}</h2>
+  <div class="entry{' has-thumb' if ph else ''}">
+    {thumb}
+    <div class="entry-body">
+      <h3><a href="{oldest_city['slug']}/{tslug}">{esc(oldest['name'])}</a> <span class="tree-label">{esc(oldest.get('age_estimate',''))}</span></h3>
+      <p>{esc(oldest['location'].get('neighbourhood',''))}, {esc(oldest_city['city'])}. {esc(oldest['story'].split('. ')[0])}.</p>
+    </div>
+  </div>"""
+
+    country_slugs = {c["slug"] for c in country_cities}
+    rel_colls = [c for c in collections
+                 if any(e["city_slug"] in country_slugs for e in c.get("entries", []))]
+    coll_line = ""
+    if rel_colls:
+        links = " &middot; ".join(
+            f'<a href="collections/{c["slug"]}">{esc(c["title"])}</a>' for c in rel_colls[:3])
+        coll_line = f'Trees from {esc(disp)} also appear in {links}. '
+
+    register_note = ""
+    if intro_data.get("register_note"):
+        register_note = f'<p class="notice">{esc(intro_data["register_note"])}</p>'
+
+    first_sentence = intro_data["intro"].split(". ")[0] + "."
+    intro_rest = intro_data["intro"][len(first_sentence):].lstrip()
+    oldest_line = ""
+    if oldest is not None:
+        oldest_line = (f' The oldest of them is {esc(oldest["name"])} in {esc(oldest_city["city"])}, '
+                       f'at {esc(oldest.get("age_estimate", "an uncertain age"))}.')
+
+    body = f"""
+<main class="content-page">
+  {breadcrumb_html(crumb_items, rootpath)}
+  <h1>Ancient trees in {esc(disp)}</h1>
+  <p class="answer-first">{esc(first_sentence)} This page maps {total} remarkable trees across {len(country_cities)} cities in {esc(disp)}, each one verified and placed.{oldest_line}</p>
+  <div class="prose-block"><p>{esc(intro_rest)}</p></div>
+  <div class="map-embed"><div id="map" class="map"></div></div>
+  <h2>Every mapped city in {esc(disp)}</h2>
+  <div class="ctry-list">{"".join(rows)}</div>
+  {oldest_block}
+  {register_note}
+  <p class="suggest">{coll_line}See <a href="cities">every city on the map</a>, or <a href="explore">open the map</a> to find what is near you.</p>
+</main>
+"""
+    list_elements = [
+        {"@type": "ListItem", "position": i, "name": c["city"],
+         "url": f"{BASE_URL}/{c['slug']}"} for i, c in enumerate(ranked, 1)]
+    graph = site_graph() + [
+        {"@type": "CollectionPage", "name": f"Ancient trees in {disp}",
+         "description": description, "url": canonical},
+        {"@type": "ItemList", "name": f"Cities in {disp}", "itemListElement": list_elements},
+        breadcrumb_schema(crumb_items, canonical),
+    ]
+    head_extra = map_head() + "\n" + ld_script(graph)
+    check_links(canonical, len(ranked) + 2, len(ranked) + 2)
+    page = render_page(title, description, canonical, body, head_extra,
+                       country_map_script(country_cities), rootpath)
+    pages.append((f"{slug}.html", page, canonical))
 
 
 def build_cities_index(published, pages, faces=None):
@@ -4096,6 +4341,7 @@ def main():
     # draft_collection_pages handling below), just unlinked and noindexed.
     public_collections = [c for c in collections if c.get("status") != "needs_curation"]
     species_intros = load_species_intros()
+    country_intros = load_country_intros()
     cities_by_slug = {c["slug"]: c for c in cities}
     pages = []  # (relative path, html, canonical or None)
 
@@ -4117,6 +4363,21 @@ def main():
         if len(members) >= SPECIES_MIN_TREES and common in species_intros
     }
     species_pages = {common: species_intros[common]["slug"] for common in qualifying}
+
+    # Which countries qualify for a page (Contract G): 3+ renderable cities AND
+    # a hand-written intro. Known before any city page renders, so the city
+    # breadcrumb can link its country in the same pass.
+    country_counts = {}
+    for e in renderable:
+        country_counts[e["data"]["country"]] = country_counts.get(e["data"]["country"], 0) + 1
+    country_pages = {
+        c: country_intros[c]["slug"] for c in country_intros
+        if country_counts.get(c, 0) >= COUNTRY_MIN_CITIES
+    }
+    city_slugs = {e["slug"] for e in renderable}
+    for c, cslug in country_pages.items():
+        if cslug in city_slugs:
+            ERRORS.append(f"country slug {cslug!r} ({c}) collides with a city slug (Contract G)")
 
     for entry in renderable:
         trees = [t for t in entry["data"]["trees"] if tree_is_renderable(t)]
@@ -4145,7 +4406,8 @@ def main():
             for e in renderable if e["slug"] != entry["slug"] and e["data"]["trees"]
         ]
         build_city_gpx(entry, trees, pages)
-        result = build_city_page(entry, tree_slugs, public_collections, pages, other_cities, species_pages)
+        result = build_city_page(entry, tree_slugs, public_collections, pages, other_cities,
+                                 species_pages, country_pages)
         if result:
             published.append(result)
 
@@ -4157,6 +4419,13 @@ def main():
             draft_collection_pages.append(result)
     build_collections_index(public_collections, published, pages)
     build_cities_index(published, pages, {e['slug']: city_face(e) for e in renderable})
+
+    entries_by_slug = {e["slug"]: e for e in renderable}
+    for country in sorted(country_pages):
+        build_country_page(country_intros[country],
+                           [p for p in published if p["country"] == country],
+                           entries_by_slug, tree_slugs, published,
+                           public_collections, pages)
 
     species_cards = []
     for common in sorted(qualifying, key=lambda c: -len(qualifying[c])):
