@@ -1,0 +1,248 @@
+{
+  "city": "Seoul",
+  "country": "South Korea",
+  "status": "needs_curation",
+  "intro": "Seoul's oldest trees survive less through isolation than through protection: a lacebark pine at the Constitutional Court, a Confucian academy's ginkgo still shading students five centuries on, a gnarled juniper predating the palace built around it. None stand in deep forest. They stand at temple gates, apartment courtyards and traffic circles, having outlasted the Joseon dynasty, colonial occupation and the redevelopment that flattened almost everything built alongside them. South Korea's Cultural Heritage Administration has formally designated several as Natural Monuments; this list cross-checks those records against city archives, and states both figures where they disagree.",
+  "meta_description": "Seoul's oldest verified trees: a 750-year palace juniper, ancient ginkgos, and a pine linked to a Ming envoy, researched and mapped tree by tree.",
+  "question_answer": "By local tradition, Seoul's oldest trees are the ginkgos at Siheung-dong's Ginkgo Tree Intersection in Geumcheon-gu, reputed to be nearly 880 years old and marking the site of a vanished royal way-station. That figure rests on oral history and district registration rather than a scientific survey, so it should be read as a well-established estimate, not a lab-verified one. The most rigorously documented ancient tree is instead the 750-year-old Chinese juniper inside Changdeokgung Palace, formally listed as a National Natural Monument.",
+  "question_meta": "Seoul's oldest tree, by tradition: an 880-year ginkgo grove in Geumcheon-gu. The most rigorously verified is Changdeokgung's 750-year juniper.",
+  "question_context": "Ask several sources what Seoul's oldest tree is and the answers will not agree, and that disagreement is itself the honest story. The ginkgos at Siheung-dong's Ginkgo Tree Intersection carry the highest number, close to 880 years, tied to a royal way-station where King Jeongjo stopped en route to his father's tomb in the late 1700s. Sources disagree on whether two or three trees stand there, and the age itself rests on oral tradition and protected-tree registration, not a forestry survey. Banghak-dong's ginkgo in Dobong-gu was Seoul's very first officially protected tree, registered in 1968 at a believed age of 830, but a 2013 scientific survey by the National Institute of Forest Science placed its real age closer to 550, a genuine and unresolved discrepancy. That leaves Changdeokgung Palace's Chinese juniper as the most defensible answer for anyone who wants a number they can trust: a National Natural Monument, formally surveyed, consistently dated at roughly 750 years across every source checked, and older than the palace built up around it.",
+  "faq": [
+    {
+      "q": "Can you visit Seoul's ancient trees for free?",
+      "a": "Most of them, yes. Only Changdeokgung Palace charges admission, around KRW 3,000, since its 750-year-old juniper stands inside the palace grounds. The ginkgos, the pine and the pagoda tree elsewhere in the city are all viewable from public streets, temple courtyards or park paths at no cost."
+    },
+    {
+      "q": "Why are so many of Seoul's oldest trees ginkgos?",
+      "a": "Ginkgo biloba resists fire, disease and insect damage unusually well, which is why Confucian academies and palace grounds across Korea planted them beside wooden buildings for centuries. That resilience is a large part of why so many of the survivors that reached 400, 500 or more years old happen to be ginkgos."
+    },
+    {
+      "q": "Is the Sillim-dong oak really 1,000 years old?",
+      "a": "Almost certainly not. The tree is tied to a legend about the 11th century general Gang Gam-chan planting his walking stick, but a Cultural Heritage Administration survey before its 1982 designation put its actual age at roughly 250 years, meaning today's tree is most likely a younger successor near the spot the legend describes."
+    }
+  ],
+  "trees": [
+    {
+      "id": "seo_001",
+      "name": "The Munmyo Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 500 years",
+      "age_min": 400,
+      "age_max": 507,
+      "location": {
+        "address": "31 Sungkyunkwan-ro, Myeongnyun 3-ga, Jongno-gu (Sungkyunkwan / Munmyo Confucian Shrine)",
+        "latitude": 37.58556,
+        "longitude": 126.99556,
+        "neighbourhood": "Myeongnyun-dong"
+      },
+      "story": "In 1519, Sungkyunkwan's head instructor Yun Tak planted this ginkgo for a very specific reason: shade for the students memorizing Confucian classics in the courtyard below, and, tradition says, because ginkgos rarely catch fire, a reassuring quality beside wooden lecture halls. Five centuries on, the tree the scholars studied under is now one of the largest ginkgos in Korea, its trunk swollen to over seven metres around and its crown spreading twenty two metres, roughly the width of a basketball court laid sideways.\n\nLook closely at the trunk and you will see it is not one shoot but several, fused: the original stem died back at some point in its long life and seven new trunks grew from the base, knitting themselves into the single giant standing today. Three club shaped aerial roots, called yuju, hang from its lower branches, a feature that only appears on ginkgos of serious age. Rare for such an old specimen, this is a male tree, so it never drops the notoriously pungent fruit that carpets ginkgo lined streets across Seoul every autumn.\n\nIt stands in the Munmyo shrine courtyard, part of Sungkyunkwan, Korea's Confucian royal academy founded in 1398, meaning students have been examined within sight of this tree for as long as most countries have had a fixed capital city.",
+      "verified_sources": [
+        "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8_%EB%AC%B8%EB%AC%98_%EC%9D%80%ED%96%89%EB%82%98%EB%AC%B4",
+        "https://encykorea.aks.ac.kr/Article/E0027995",
+        "https://commons.wikimedia.org/wiki/Category:Seoul_Munmyeong_Ginkgo_Tree"
+      ],
+      "access": "Free, within the Sungkyunkwan / Munmyo Confucian Shrine grounds, open daily during visiting hours.",
+      "transport": "Hyehwa Station (Line 4), Exit 4, about a 10 minute walk.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/%EC%84%9C%EC%9A%B8_%EB%AC%B8%EB%AC%98_%EC%9D%80%ED%96%89%EB%82%98%EB%AC%B4_%281%29.jpg",
+        "license": "KOGL Type 1",
+        "attribution": "Cultural Heritage Administration of Korea, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "best_time": { "months": [11], "kind": "autumn colour", "label": "mid-to-late November, when the canopy turns gold" }
+    },
+    {
+      "id": "seo_002",
+      "name": "The Changdeokgung Chinese Juniper",
+      "species": "Chinese Juniper (Juniperus chinensis)",
+      "age_estimate": "about 750 years",
+      "age_min": 700,
+      "age_max": 750,
+      "location": {
+        "address": "99 Yulgok-ro, Waryong-dong, Jongno-gu (inside Changdeokgung Palace)",
+        "latitude": 37.57944,
+        "longitude": 126.99111,
+        "neighbourhood": "Waryong-dong, Bukchon"
+      },
+      "story": "Look up and this Chinese juniper does not read as a tree so much as a gesture: a trunk that twists and climbs, missing one whole limb, shaped by more history than Changdeokgung Palace itself has stood. Court records describe its form as a dragon ascending to heaven, and once you see the comparison it is hard to unsee. The surviving eastern branch spirals upward in a genuine coil, while the southern branch was cut long ago and the northern one died on its own.\n\nPlanted an estimated seven and a half centuries ago, before Changdeokgung existed, the juniper predates every building around it and has outlived the Joseon dynasty that built them. It has needed help to keep going: a 2010 typhoon tore into its already reduced crown, and conservators have since propped and cabled what remains. What is left is still remarkable, a living fragment that Joseon kings would have walked past on their way to court business, its aromatic wood once prized for temple incense.\n\nReaching it means walking the same courtyards the royal family used for five centuries, past halls now designated national treasures. The juniper needs no separate ticket. It is simply there, along the path, doing what it has done since before Korea had a Joseon king to rule it.",
+      "verified_sources": [
+        "https://ko.wikipedia.org/wiki/%EC%B0%BD%EB%8D%95%EA%B6%81_%ED%96%A5%EB%82%98%EB%AC%B4",
+        "http://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1361101940000",
+        "https://www.seouland.com/arti/culture/culture_general/7476.html"
+      ],
+      "access": "Paid entry, general Changdeokgung Palace admission (around KRW 3,000); included on the standard palace route.",
+      "transport": "Anguk Station (Line 3), Exit 3, about a 5 minute walk to the palace entrance.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "seo_003",
+      "name": "The Banghak-dong Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "550 to 830 years (disputed)",
+      "age_min": 550,
+      "age_max": 830,
+      "location": {
+        "address": "656 Madeul-ro, Banghak-dong, Dobong-gu",
+        "latitude": 37.664,
+        "longitude": 127.0294,
+        "neighbourhood": "Banghak-dong"
+      },
+      "story": "When Seoul designated its very first protected tree in 1968, officials wrote down its age as 830 years. In 2013, the National Institute of Forest Science ran an actual scientific survey and came back with a very different number: closer to 550. Whichever figure is right, and this treats both as honest possibilities rather than picking a winner, it remains one of the oldest ginkgos anyone in the city can point to.\n\nLocals call it the patriotic tree, because legend says a mysterious fire appeared on its trunk ahead of major national crises, most notably in 1910, the year Japan annexed Korea. Villagers pitched tents around its base in 1991 to stop an apartment development from bulldozing it, and won. The tree also carries yuju, drooping growths shaped like a woman's breast, which folk belief once treated as a sign of fertility and made the tree an object of local prayer.\n\nIts neighbor is Korea's most reviled monarch. Yeonsangun, the tyrant king deposed in 1506, is buried on the hillside directly across from it, exiled even in death to the edge of the old capital. The ginkgo has stood watch over that grave for longer than anyone can precisely say, which is, in the end, the most honest thing you can say about it.",
+      "verified_sources": [
+        "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8_%EB%B0%A9%ED%95%99%EB%8F%99_%EC%9D%80%ED%96%89%EB%82%98%EB%AC%B4",
+        "https://mediahub.seoul.go.kr/archives/1278523?tr_code=m_snews",
+        "https://news.skbroadband.com/news/articleView.html?idxno=208259"
+      ],
+      "access": "Free, viewable from the roadside; a low fence protects the root area so visitors view it from just outside rather than at the trunk.",
+      "transport": "Ssangmun Station (Line 4), then bus 130 to the Yeonsangun-myo stop, 6 minute walk.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Banghakdongginkotree.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Mechurii, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "best_time": { "months": [11], "kind": "autumn colour", "label": "November, when its huge crown turns bright yellow" }
+    },
+    {
+      "id": "seo_004",
+      "name": "The Jaedong Lacebark Pine",
+      "species": "Lacebark Pine (Pinus bungeana)",
+      "age_estimate": "about 600 years (partly legend)",
+      "age_min": 500,
+      "age_max": 600,
+      "location": {
+        "address": "15 Bukchon-ro, Jae-dong, Jongno-gu (beside the Constitutional Court)",
+        "latitude": 37.57806,
+        "longitude": 126.98472,
+        "neighbourhood": "Jae-dong, Bukchon"
+      },
+      "story": "This pine is not native to Korea. It is Pinus bungeana, a lacebark pine from China, and the story goes that a Ming dynasty envoy brought it here as a gift some six centuries ago, though nobody can prove that part and it may well be a flattering exaggeration attached after the fact. What is certain is the tree itself: bark that flakes away in pale patches until entire sections of trunk look bone white, which is why Koreans call it baeksong, white pine.\n\nA single trunk splits near the ground into what looks like two separate pines standing side by side, an accident of growth that makes it read as a pair rather than one seventeen metre specimen. Political legend has attached itself here too. The 19th century regent Heungseon Daewongun is said to have plotted the downfall of the powerful Andong Kim clan from a pavilion that once stood beside this very tree, watching it as he worked out how to break their grip on the throne.\n\nThe pine has outlasted the girls' high school that used to occupy this land and now stands on the grounds of South Korea's Constitutional Court, a small irony given its own role, real or invented, in a much older struggle for power.",
+      "verified_sources": [
+        "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8_%EC%9E%AC%EB%8F%99_%EB%B0%B1%EC%86%A1",
+        "http://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1361100080000"
+      ],
+      "access": "Free, visible from the street and the Constitutional Court's public front garden.",
+      "transport": "Anguk Station (Line 3), Exit 1, about a 5 minute walk.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "seo_005",
+      "name": "The Siheung-dong Ginkgos",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "nearly 880 years (local tradition, unaudited)",
+      "age_min": 700,
+      "age_max": 880,
+      "location": {
+        "address": "Near 711 Geumha-ro, Siheung-dong, Geumcheon-gu (Ginkgo Tree Intersection / 은행나무오거리)",
+        "latitude": 37.4485,
+        "longitude": 126.902,
+        "neighbourhood": "Siheung-dong"
+      },
+      "story": "Five roads meet at a point in Geumcheon-gu named, quite literally, Ginkgo Tree Intersection, and the trees that gave it the name are still standing at the center of it. Local accounts count either two or three ginkgos here, depending on which one you read, all reputed to be pushing 880 years old, though that figure comes from oral tradition and district registration rather than a scientific tree ring survey, so it is treated here as a well worn estimate rather than a proven fact.\n\nWhat is documented is the history underneath them. This was the site of Siheung Haenggung, a royal way station where King Jeongjo stopped overnight in the late 18th century on his repeated processions south to visit the tomb of his father, Crown Prince Sado, who had been executed by being sealed inside a rice chest on his grandfather's orders. Jeongjo's journeys here were recorded in exhaustive court detail, down to the meals served, and the ginkgos would already have been centuries old when his procession passed beneath them.\n\nThe palace itself is gone, absorbed long ago into the ordinary streets of southern Seoul. The ginkgos are what is left of it, roots planted in what was once a royal courtyard and is now a traffic circle, still marking the spot where five roads meet.",
+      "verified_sources": [
+        "https://www.seouland.com/arti/culture/culture_general/3065.html",
+        "http://www.atlasnews.co.kr/news/articleView.html?idxno=9064"
+      ],
+      "access": "Free, standing at a public road intersection.",
+      "transport": "Geumcheon-gu Office Station (Line 1), then village bus Geumcheon-01 to the Ginkgo Tree stop, 2 minute walk.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "best_time": { "months": [11], "kind": "autumn colour", "label": "November, when all the ginkgos on the intersection turn gold together" }
+    },
+    {
+      "id": "seo_006",
+      "name": "The Hwayang-dong Zelkova",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "about 700 years",
+      "age_min": 650,
+      "age_max": 700,
+      "location": {
+        "address": "110-34 Hwayang-dong, Gwangjin-gu",
+        "latitude": 37.54667,
+        "longitude": 127.07194,
+        "neighbourhood": "Hwayang-dong"
+      },
+      "story": "A queen once caught her breath under this tree while fleeing a mutiny. In 1882, soldiers enraged over unpaid wages and foreign favoritism stormed the palace in what became known as the Imo Incident, and Queen Min, who would later be assassinated by Japanese agents in 1895, escaped the capital in disguise. Her route south took her past Hwayangjeong, a royal pavilion built here during King Sejong's reign in the early 15th century, where she is recorded to have rested.\n\nThe pavilion is long gone, but the zelkova that stood beside it has not moved in roughly seven centuries. It has grown into a proper giant, twenty eight metres tall with a trunk seven and a half metres around, splitting into four massive limbs a couple of metres above the ground. Age and weight have not been kind to it: sections of the trunk have been treated for rot, and metal supports now brace the upper branches so they do not tear away from their own bulk.\n\nSix younger zelkovas have grown up around the original tree over the centuries, forming an informal grove, but this is the one the Cultural Heritage Administration singled out, the one that was already ancient when a fleeing queen needed somewhere to stop.",
+      "verified_sources": [
+        "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8_%ED%99%94%EC%96%91%EB%8F%99_%EB%8A%90%ED%8B%B0%EB%82%98%EB%AC%B4",
+        "http://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=2331100020000"
+      ],
+      "access": "Free, in a small public green space in Hwayang-dong.",
+      "transport": "Konkuk University Station (Lines 2 and 7), about a 20 minute walk or a short ride on bus 102.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/%EC%84%9C%EC%9A%B8_%ED%99%94%EC%96%91%EB%8F%99_%EB%8A%90%ED%8B%B0%EB%82%98%EB%AC%B4.jpg",
+        "license": "KOGL Type 1",
+        "attribution": "Cultural Heritage Administration of Korea, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "best_time": { "months": [11], "kind": "autumn colour", "label": "November, when the crown turns a deep orange-brown" }
+    },
+    {
+      "id": "seo_007",
+      "name": "The Sillim-dong Cork Oak",
+      "species": "Oriental Cork Oak (Quercus variabilis)",
+      "age_estimate": "roughly 270 to 320 years (legend claims 1,000)",
+      "age_min": 270,
+      "age_max": 320,
+      "location": {
+        "address": "28-7 Nangok-ro 35-gil, Sillim-dong, Gwanak-gu",
+        "latitude": 37.477,
+        "longitude": 126.9235,
+        "neighbourhood": "Sillim-dong, Nangok"
+      },
+      "story": "Legend says this oak grew from a walking stick. General Gang Gam-chan, the Goryeo dynasty commander who crushed a Khitan invasion in 1019, is supposed to have planted his cane here near his birthplace a thousand years ago, and the story is charming enough that it still gets repeated in tourist brochures today. It is also almost certainly not true as stated: when the Cultural Heritage Administration surveyed the tree before designating it a Natural Monument in 1982, its estimated age came out to roughly 250 years, not a thousand. The honest reading is that this is very likely a successor tree grown near a site the legend had already attached itself to, not the original.\n\nSet that aside and there is still a genuinely old, sizeable cork oak worth seeing, its bark thick and deeply corked in the way that gives the species its name, standing barely ten metres from the wall of an apartment block that eventually grew up around it rather than the other way round. Its branches reach nearly ten metres east and west, a wide spread for a tree squeezed into residential grounds.\n\nIt shares its neighborhood with Nakseongdae, the park built around Gang Gam-chan's actual birthplace, so the legend, even if botanically shaky, at least has the right zip code.",
+      "verified_sources": [
+        "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8_%EC%8B%A0%EB%A6%BC%EB%8F%99_%EA%B5%B4%EC%B0%B8%EB%82%98%EB%AC%B4",
+        "http://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1361102710000",
+        "https://www.gwanak.go.kr/site/gwanak/05/10505010300002016051205.jsp"
+      ],
+      "access": "Free, inside the grounds of Geonyoung Apartment Complex 2; a marked path leads to the tree, though it sits on residential grounds so visit considerately.",
+      "transport": "Sillim Station (Line 2), about a 15 to 20 minute walk, or a short bus or taxi ride.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/%EC%84%9C%EC%9A%B8_%EC%8B%A0%EB%A6%BC%EB%8F%99_%EA%B5%B4%EC%B0%B8%EB%82%98%EB%AC%B4.jpg",
+        "license": "KOGL Type 1",
+        "attribution": "Cultural Heritage Administration of Korea, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "seo_008",
+      "name": "The Jogyesa Pagoda Tree",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "about 400 to 450 years",
+      "age_min": 380,
+      "age_max": 450,
+      "location": {
+        "address": "55 Ujeongguk-ro, Gyeonji-dong, Jongno-gu (Jogyesa Temple)",
+        "latitude": 37.57385,
+        "longitude": 126.98186,
+        "neighbourhood": "Insadong, Gyeonji-dong"
+      },
+      "story": "Every year on Buddha's Birthday, thousands of paper lanterns get strung through this tree's canopy until the entire crown disappears under a ceiling of color, and it is large enough to make that possible: its branches spread wide enough to shade the whole courtyard in front of Jogyesa's main hall. What most visitors do not realize is that the tree is far older than the temple around it. Jogyesa's current Daeungjeon hall was only built in 1938, relocated log by log from a temple in Jeongju, while this pagoda tree had already been growing on this spot in central Seoul for roughly four centuries.\n\nThe species, Styphnolobium japonicum, was traditionally planted at Confucian academies and scholars' homes across East Asia in the belief that it brought good fortune and produced distinguished sons, which explains why old specimens turn up so often at former noble residences around Seoul rather than only at temples. In July and August it produces long, drooping clusters of small cream flowers that dust the courtyard stones below.\n\nJogyesa sits in the middle of downtown Seoul, a five minute walk from either Jonggak or Anguk subway stations, so the tree gets more foot traffic than almost anything else on this list, most of it people who came for the temple and only noticed the tree once they were standing under it.",
+      "verified_sources": [
+        "https://www.jogyesa.kr/about/location.php",
+        "https://ko.wikipedia.org/wiki/%ED%9A%8C%ED%99%94%EB%82%98%EB%AC%B4",
+        "https://mediahub.seoul.go.kr/archives/2018653"
+      ],
+      "access": "Free, in the main courtyard of Jogyesa Temple, open daily.",
+      "transport": "Jonggak Station (Line 1), Exit 2, about a 5 minute walk.",
+      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate",
+      "best_time": { "months": [7, 8], "kind": "flowers", "label": "July and August, when it drapes the courtyard in cream-colored flower clusters" }
+    }
+  ]
+}
