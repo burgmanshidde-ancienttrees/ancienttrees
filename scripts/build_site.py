@@ -3906,7 +3906,7 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
   <img class="hero-bg" id="hero-bg" {img_srcset(HERO_PHOTOS[0][0], [1200, 2000, 2800], "100vw")} alt="">
   <div class="hero-scrim"></div>
   <div class="hero-center">
-    <h1>Epic old trees, <em>wherever you are</em>.</h1>
+    <h1>Trees worth the walk, <em>wherever you are</em>.</h1>
     {search_form("home", "city-q", "hero-search poster-search", with_button=True)}
     <p class="hero-links">
       <a class="hero-link" href="explore">Explore trees near you</a>
