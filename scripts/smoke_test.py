@@ -88,18 +88,21 @@ def main():
         (f"{base}/index.html", "homepage", [
             ('class="hero-bg"', "hero image"),
             ('id="city-q"', "search input"),
+            ('class="ats-drop"', "shared search dropdown (one interaction, home and explore)"),
         ]),
         (f"{base}/{city.name}", f"city page ({city.stem})", [
             ('class="route-bar"', "walk banner"),
             ("maplibregl-canvas", "map canvas (JS ran, map constructed)"),
         ]),
         (f"{base}/{city.stem}/{tree.name}", f"tree page ({tree.stem})", [
-            ("Check in with the app", "app-funnel check-in button (Hidde, 2026-07-30)"),
+            ("Collect this tree", "collect button with explainer dialog (Hidde, 2026-08-01)"),
+            ('id="collect-dialog"', "the explainer dialog itself"),
             ("maplibregl-canvas", "map canvas (JS on this page executed)"),
         ]),
         (f"{base}/explore.html", "explore", [
             ("maplibregl-canvas", "map canvas"),
             ("exc-", "city chooser panel rendered"),
+            ('class="ats-drop"', "shared search dropdown (one interaction, home and explore)"),
         ]),
         (f"{base}/contribute.html", "contribute", [
             ('id="suggest"', "native suggestion form"),

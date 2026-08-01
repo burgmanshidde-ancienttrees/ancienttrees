@@ -395,6 +395,20 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .ex-search { grid-column: 2; grid-row: 1 / span 2; display: flex; align-items: center; gap: 0.5rem; background: #fff; border: 1px solid var(--cream-dark); border-radius: 999px; padding: 0.55rem 1rem; min-width: 16rem; box-shadow: var(--shadow); }
 .ex-search svg { width: 16px; height: 16px; color: var(--ink-mid); flex-shrink: 0; }
 .ex-search input { border: none; outline: none; font-family: var(--sans); font-size: 13.5px; width: 100%; background: transparent; }
+.at-search { position: relative; }
+.at-search input::-webkit-search-decoration { display: none; }
+.ats-drop { position: absolute; top: calc(100% + 8px); left: 0; right: 0; background: #fff; border-radius: 14px; box-shadow: 0 14px 44px rgba(0,0,0,0.22); overflow: hidden; overflow-y: auto; max-height: min(21rem, 55vh); z-index: 80; text-align: left; }
+.ats-row { display: block; padding: 0.55rem 1.1rem; text-decoration: none; color: var(--ink); font-family: var(--sans); }
+.ats-row b { display: block; font-size: 14.5px; font-weight: 600; }
+.ats-row span { display: block; font-size: 12.5px; color: var(--ink-mid); }
+.ats-row.active, .ats-row:hover { background: #F1EFE8; }
+.ats-empty { padding: 0.75rem 1.1rem; font-family: var(--sans); font-size: 13px; color: var(--ink-mid); }
+.ats-empty a { color: var(--moss); }
+.collect-dialog { border: none; border-radius: 16px; padding: 1.5rem 1.6rem; margin: auto; max-width: 26rem; width: calc(100vw - 3rem); box-shadow: 0 18px 60px rgba(0,0,0,0.3); font-family: var(--sans); color: var(--ink); }
+.collect-dialog::backdrop { background: rgba(38, 48, 30, 0.45); }
+.collect-dialog h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+.collect-dialog p { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.65; }
+.collect-actions { display: flex; gap: 0.6rem; margin-top: 1.1rem; flex-wrap: wrap; }
 @media (max-width: 800px) {
   .explore-head { grid-template-columns: 1fr; }
   .explore-head p { display: none; }
@@ -1502,16 +1516,13 @@ if (gpsBtn && navigator.geolocation) {{
 """
 
 
-def home_hero_script(markers, tree_index):
-    """The photo-hero homepage script: search only. The map lives at /explore;
-    location is asked THERE, in map context, never from the homepage (Hidde,
-    2026-07-29: a location prompt from a hero link "slaat nergens op"). Search
-    resolves cities first, then tree names."""
-    data = json.dumps(markers)
-    trees = json.dumps(tree_index)
+def home_hero_script():
+    """The photo-hero homepage script. The map lives at /explore; location is
+    asked THERE, in map context, never from the homepage (Hidde, 2026-07-29:
+    a location prompt from a hero link "slaat nergens op"). Search is the
+    shared SEARCH_WIDGET_JS component, identical to /explore."""
     return """
 <script>
-var markers = __CITIES__;
 var moreBtn = document.getElementById('more-cities-btn');
 if (moreBtn) {
   moreBtn.addEventListener('click', function() {
@@ -1519,24 +1530,117 @@ if (moreBtn) {
     moreBtn.remove();
   });
 }
-var sf = document.getElementById('city-search');
-if (sf) {
-  sf.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var q = document.getElementById('city-q').value.trim().toLowerCase();
-    if (!q) return;
-    at.track('search-home', q);
-    var hit = markers.find(function(m) { return m.city.toLowerCase() === q; }) ||
-              markers.find(function(m) { return m.city.toLowerCase().indexOf(q) === 0; });
-    if (hit) { window.location.href = hit.url; return; }
-    hit = markers.find(function(m) { return m.city.toLowerCase().indexOf(q) !== -1; });
-    if (hit) { window.location.href = hit.url; return; }
-    document.getElementById('search-note').innerHTML =
-      'Not mapped yet. <a href="contribute">Be the first to map it</a>, or <a href="explore">browse the map</a>.';
-  });
-}
 </script>
-""".replace("__CITIES__", data)
+"""
+
+
+# The one search interaction (Hidde, 2026-08-01: "ik wil dezelfde interactie
+# op home en hier en ik wil dat je die gelijk houdt"). The convention every
+# search-led product uses (AllTrails, Google Maps, Airbnb): suggestions appear
+# UNDER the field while you type, and tapping one takes you straight there.
+# The native datalist is gone on purpose: iOS renders it as a half-broken
+# QuickType strip, which is exactly what felt unnatural. One component, one
+# shared /search-index.json, so home and explore cannot drift apart.
+def search_form(ctx, input_id, form_class, with_button=False):
+    ico = ('<button type="submit" class="search-ico" aria-label="Search">'
+           '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">'
+           '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg></button>'
+           if with_button else
+           '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">'
+           '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>')
+    return (f'<form class="{form_class} at-search" data-ctx="{ctx}" role="search" autocomplete="off">'
+            f'{ico}'
+            f'<input type="search" id="{input_id}" placeholder="Search a city or tree"'
+            f' aria-label="Search a city or tree" autocapitalize="off" autocorrect="off" spellcheck="false">'
+            f'<div class="ats-drop" hidden></div></form>')
+
+
+SEARCH_WIDGET_JS = """
+<script>
+(function() {
+  var form = document.querySelector('form.at-search');
+  if (!form) return;
+  var input = form.querySelector('input');
+  var drop = form.querySelector('.ats-drop');
+  var ctx = form.getAttribute('data-ctx');
+  var IDX = null, loading = false, rows = [], active = -1;
+  function norm(s) {
+    s = s.toLowerCase();
+    try { s = s.normalize('NFD').replace(/[\\u0300-\\u036f]/g, ''); } catch (e) {}
+    return s;
+  }
+  function escT(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+  function load() {
+    if (IDX || loading) return;
+    loading = true;
+    fetch('/search-index.json').then(function(r) { return r.json(); })
+      .then(function(j) { IDX = j; if (document.activeElement === input) show(); })
+      .catch(function() { loading = false; });
+  }
+  function results(q) {
+    var out = [], buckets = [[], [], [], []];
+    IDX.c.forEach(function(c) {
+      var i = norm(c.city).indexOf(q);
+      if (i === 0) buckets[0].push({k: 'c', it: c});
+      else if (i > 0 || norm(c.country).indexOf(q) === 0) buckets[1].push({k: 'c', it: c});
+    });
+    IDX.t.forEach(function(t) {
+      var i = norm(t.n).indexOf(q);
+      if (i === 0) buckets[2].push({k: 't', it: t});
+      else if (i > 0) buckets[3].push({k: 't', it: t});
+    });
+    buckets.forEach(function(b) { out = out.concat(b); });
+    return out.slice(0, 8);
+  }
+  function hide() { drop.hidden = true; active = -1; }
+  function show() {
+    var q = norm(input.value.trim());
+    if (!q) { hide(); return; }
+    load();
+    if (!IDX) return;
+    var res = results(q);
+    active = -1;
+    if (!res.length) {
+      drop.innerHTML = '<div class="ats-empty">Not mapped yet. <a href="/contribute">Be the first to map it</a>.</div>';
+    } else {
+      drop.innerHTML = res.map(function(r) {
+        var name = r.k === 'c' ? r.it.city : r.it.n;
+        var sec = r.k === 'c' ? r.it.n + ' trees &middot; ' + escT(r.it.country) : escT(r.it.c);
+        return '<a class="ats-row" href="/' + r.it.u + '"><b>' + escT(name) + '</b><span>' + sec + '</span></a>';
+      }).join('');
+    }
+    drop.hidden = false;
+    rows = Array.prototype.slice.call(drop.querySelectorAll('.ats-row'));
+  }
+  function go(row) {
+    at.track('search-' + ctx, norm(input.value.trim()).slice(0, 60));
+    window.location.href = row.getAttribute('href');
+  }
+  function mark(i) {
+    rows.forEach(function(r) { r.classList.remove('active'); });
+    if (i >= 0 && rows[i]) { rows[i].classList.add('active'); rows[i].scrollIntoView({block: 'nearest'}); }
+    active = i;
+  }
+  input.addEventListener('input', show);
+  input.addEventListener('focus', function() { load(); show(); });
+  input.addEventListener('blur', function() { setTimeout(hide, 150); });
+  input.addEventListener('keydown', function(e) {
+    if (drop.hidden || !rows.length) return;
+    if (e.key === 'ArrowDown') { e.preventDefault(); mark((active + 1) % rows.length); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); mark((active - 1 + rows.length) % rows.length); }
+    else if (e.key === 'Escape') { hide(); }
+  });
+  drop.addEventListener('mousedown', function(e) {
+    var a = e.target.closest ? e.target.closest('.ats-row') : null;
+    if (a) { e.preventDefault(); go(a); }
+  });
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (rows.length) { go(rows[active >= 0 ? active : 0]); }
+  });
+})();
+</script>
+"""
 
 
 def render_page(title, description, canonical, body, head_extra="", scripts="",
@@ -1923,6 +2027,27 @@ def location_is_approximate(tree):
 # ---------------------------------------------------------------- tree pages
 
 
+COLLECT_JS = """
+<script>
+(function() {
+  var btn = document.getElementById('collect-btn');
+  var dlg = document.getElementById('collect-dialog');
+  if (!btn) return;
+  if (dlg && dlg.showModal) {
+    btn.addEventListener('click', function() {
+      at.track('collect-open');
+      dlg.showModal();
+    });
+    document.getElementById('collect-close').addEventListener('click', function() { dlg.close(); });
+    dlg.addEventListener('click', function(e) { if (e.target === dlg) { dlg.close(); } });
+  } else {
+    btn.addEventListener('click', function() { window.location.href = '../app'; });
+  }
+})();
+</script>
+"""
+
+
 def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
     species_pages = species_pages or {}
     city_data = city_entry["data"]
@@ -2015,12 +2140,25 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
                       if location_is_approximate(tree) else '')
     chips = (f'<p class="chip-row"><span class="chip">{esc(tree.get("age_estimate", "age unknown"))}</span>'
              f'<span class="chip">{esc(species_common(tree))}</span>{precision_chip}</p>')
+    # "Collect this tree" with an explainer on tap (Hidde, 2026-08-01:
+    # "Collect this tree klinkt goed en eigenlijk wil je uitleg scheme als je
+    # er op klikt"): the button opens a small dialog saying what collecting
+    # is and that it lives in the app, then funnels to /app. Browsers
+    # without <dialog> go straight to /app, the old behaviour.
     action_row = f"""
   <div class="action-row">
-    <a class="go-btn" href="../app">Check in with the app</a>
+    <button class="go-btn" id="collect-btn" type="button">Collect this tree</button>
     <a class="go-btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination={loc['latitude']},{loc['longitude']}" target="_blank" rel="noopener">Take me there</a>
     <a class="action-link" href="../{cslug}#walk">Walk more trees in {esc(city)}</a>
-  </div>"""
+  </div>
+  <dialog id="collect-dialog" class="collect-dialog">
+    <h3>Keep the trees you have stood in front of</h3>
+    <p>Collecting is the game of Ancient Trees: stand in front of a tree like this one, tick it off, and your collection of old giants grows city by city. It lives in the Ancient Trees app, along with walking routes past several trees.</p>
+    <div class="collect-actions">
+      <a class="go-btn" href="../app">Get the app</a>
+      <button class="go-btn ghost" type="button" id="collect-close">Not now</button>
+    </div>
+  </dialog>"""
 
     near_cards = "".join(
         f'<a class="near-card" href="{slugify(t["name"])}"><b>{esc(t["name"])}</b>'
@@ -2038,7 +2176,7 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
   <div class="prose-block"><p>{esc(tree['story'])}</p></div>
   {season_html}
   <div class="map-embed"><div id="map" class="map"></div></div>
-  <p class="go-note">The buttons above open directions and check-ins. {esc(tree.get('transport', ''))}</p>
+  <p class="go-note">The buttons above open directions and collecting. {esc(tree.get('transport', ''))}</p>
   {approx_note}
   {facts}
   <h2>Trees nearby</h2>
@@ -2065,7 +2203,7 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
         breadcrumb_schema(crumb_items, canonical),
     ]
     head_extra = map_head() + og_image + "\n" + ld_script(graph)
-    scripts = single_pin_script(loc["latitude"], loc["longitude"])
+    scripts = single_pin_script(loc["latitude"], loc["longitude"]) + COLLECT_JS
 
     check_links(canonical, 2 + len(nearby), 4)
 
@@ -2933,11 +3071,7 @@ def build_explore_page(all_cities, pages, registers=None):
   <div class="explore-head">
     <h1>The ancient tree map</h1>
     <p>Every tree on the site, each verified, each with its story. Zoom in to a city and pick one; gold means at its best this month.</p>
-    <form id="ex-search" class="ex-search" autocomplete="off">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
-      <input type="text" id="ex-q" list="ex-options" placeholder="Search a city or tree" aria-label="Search a city or tree">
-      <datalist id="ex-options">{"".join(f'<option value="{esc(c["city"])}">' for c in json.loads(cities_json))}</datalist>
-    </form>
+    {search_form("explore", "ex-q", "ex-search")}
   </div>
   <div class="explore-split">
     <aside id="ex-panel" class="ex-panel" aria-live="polite"></aside>
@@ -2984,21 +3118,6 @@ try {
   if (REGIONS[tz]) { map.jumpTo({center: REGIONS[tz], zoom: 9}); }
   else if (tz && tz.indexOf('Europe/') === 0) { map.jumpTo({center: [10, 50], zoom: 4}); }
 } catch (e) {}
-var exForm = document.getElementById('ex-search');
-if (exForm) {
-  exForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var q = document.getElementById('ex-q').value.trim().toLowerCase();
-    if (!q) return;
-    at.track('search-explore', q);
-    var hit = CITIES.find(function(c) { return c.city.toLowerCase() === q; }) ||
-              CITIES.find(function(c) { return c.city.toLowerCase().indexOf(q) === 0; });
-    if (hit) { map.easeTo({center: [hit.lng, hit.lat], zoom: 12, duration: 1200}); return; }
-    var tree = DATA.features.find(function(f) {
-      return f.properties.name.toLowerCase().indexOf(q) !== -1; });
-    if (tree) { map.easeTo({center: tree.geometry.coordinates, zoom: 16, duration: 1200}); }
-  });
-}
 function initTreeLayers() {
   if (map.getSource('trees')) { return; }
   map.addSource('trees', {type: 'geojson', data: DATA, cluster: true,
@@ -3123,7 +3242,7 @@ renderPanel();
                     .replace("__REGISTERS__", reg_geojson)
                     .replace("__CITIES__", cities_json)
                     .replace("__STYLE__", MAP_STYLE))
-    script = f'<script src="{MAPLIBRE_JS}"></script>\n<script>\n' + script + "\n</script>"
+    script = f'<script src="{MAPLIBRE_JS}"></script>\n<script>\n' + script + "\n</script>" + SEARCH_WIDGET_JS
     page = render_page("Ancient Tree Map: every remarkable old tree, one map",
                        "The interactive map of every verified ancient tree on the site, with the ones at their seasonal best highlighted.",
                        canonical, body, head_extra=map_head(), rootpath="./", scripts=script)
@@ -3249,15 +3368,6 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
     title = "Ancient Trees: remarkable old trees near you, mapped"
     description = ("Find the remarkable old trees around you. Ten per city, each verified, "
                    "each with its story, its exact spot and directions from where you stand.")
-
-    city_markers = []
-    for p in published:
-        lat = sum(m["lat"] for m in p["markers"]) / len(p["markers"])
-        lng = sum(m["lng"] for m in p["markers"]) / len(p["markers"])
-        city_markers.append({
-            "lat": lat, "lng": lng, "label": str(p["count"]),
-            "url": p["slug"], "city": p["city"],
-        })
 
     # The four-column "anywhere" block, straight from the AllTrails reference
     # (top cities / parks / trails / POIs becomes top cities / species /
@@ -3455,24 +3565,16 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
         f'<span class="sp{"" if k in lit else " dim"}">{_icon(k)}'
         + ('<span class="sp-name">Ginkgo</span>' if k=="ginkgo" else "") + '</span>'
         for k in lit+dim)
-    city_options = "".join(f'<option value="{esc(p["city"])}">' for p in published)
-
-
     body = f"""
 <div class="home-hero poster">
   <img class="hero-bg" id="hero-bg" {img_srcset(HERO_PHOTOS[0][0], [1200, 2000, 2800], "100vw")} alt="">
   <div class="hero-scrim"></div>
   <div class="hero-center">
     <h1>Epic old trees, <em>wherever you are</em>.</h1>
-    <form id="city-search" class="hero-search poster-search" autocomplete="off">
-      <button type="submit" class="search-ico" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg></button>
-      <input type="text" id="city-q" list="city-options" placeholder="Search by city" aria-label="Search for a city">
-      <datalist id="city-options">{city_options}</datalist>
-    </form>
+    {search_form("home", "city-q", "hero-search poster-search", with_button=True)}
     <p class="hero-links">
       <a class="hero-link" href="explore">Explore trees near you</a>
     </p>
-    <p id="search-note" class="near-me-result"></p>
   </div>
 </div>
 <section class="hero-sub">
@@ -3570,11 +3672,7 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
 </main>
 """
     head_extra = ld_script(site_graph())
-    tree_index = []
-    for entry in (renderable or []):
-        for t in entry["data"]["trees"]:
-            tree_index.append({"n": t["name"], "u": f"{entry['slug']}/{slugify(t['name'])}"})
-    scripts = home_hero_script(city_markers, tree_index)
+    scripts = home_hero_script() + SEARCH_WIDGET_JS
     page = render_page(title, description, BASE_URL + "/", body, head_extra, scripts,
                        rootpath="./", og_type="website")
     pages.append(("index.html", page, BASE_URL + "/"))
@@ -4091,6 +4189,16 @@ def main():
     (DIST / "assets" / "style.css").write_text(CSS)
     # Custom domain for GitHub Pages; must survive every rebuild.
     (DIST / "CNAME").write_text(CUSTOM_DOMAIN + "\n")
+    # One shared index behind the one search interaction on home and /explore.
+    search_index = {"c": [], "t": []}
+    for entry in renderable:
+        d = entry["data"]
+        search_index["c"].append({"city": d["city"], "country": d["country"],
+                                  "n": len(d["trees"]), "u": entry["slug"]})
+        for t in d["trees"]:
+            search_index["t"].append({"n": t["name"], "c": d["city"],
+                                      "u": f"{entry['slug']}/{slugify(t['name'])}"})
+    (DIST / "search-index.json").write_text(json.dumps(search_index))
     for relpath, content, _ in pages:
         out = DIST / relpath
         out.parent.mkdir(parents=True, exist_ok=True)
