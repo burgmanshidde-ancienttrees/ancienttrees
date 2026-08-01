@@ -150,6 +150,18 @@ query($tag: String!, $since: Date!, $until: Date!) {
         filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
       count dimensions { requestPath }
     }
+    refs: rumPageloadEventsAdaptiveGroups(limit: 5,
+        filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
+      count dimensions { refererHost }
+    }
+    countries: rumPageloadEventsAdaptiveGroups(limit: 5,
+        filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
+      count dimensions { countryName }
+    }
+    devices: rumPageloadEventsAdaptiveGroups(limit: 3,
+        filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
+      count dimensions { deviceType }
+    }
   } }
 }""",
         "variables": {"tag": ACCOUNT_TAG,
@@ -163,12 +175,26 @@ query($tag: String!, $since: Date!, $until: Date!) {
     if not acct:
         return "Web Analytics (beacon): no account data visible to this token."
     days, paths = acct[0]["days"], acct[0]["paths"]
+    refs = acct[0].get("refs") or []
+    countries = acct[0].get("countries") or []
+    devices = acct[0].get("devices") or []
     if not days:
         return "Web Analytics (beacon): live since 2026-07-27, no visits recorded yet."
     trend = "  ".join("%s:v%d/p%d" % (d["dimensions"]["date"][5:], d["sum"]["visits"], d["count"]) for d in days)
     top = "; ".join("%s (%d)" % (p["dimensions"]["requestPath"], p["count"]) for p in paths)
+    def _dim(rows, key, skip=("", None)):
+        out = []
+        for r in rows:
+            v = r["dimensions"].get(key)
+            if v in skip:
+                v = "(direct)" if key == "refererHost" else "(unknown)"
+            out.append("%s (%d)" % (v, r["count"]))
+        return "; ".join(out) if out else "none recorded"
     return ("Web Analytics (beacon, real browsers, cookieless):\n"
-            "- Days (visits/pageviews): %s\n- Top paths: %s" % (trend, top))
+            "- Days (visits/pageviews): %s\n- Top paths: %s\n"
+            "- Referrers: %s\n- Countries: %s\n- Devices: %s"
+            % (trend, top, _dim(refs, "refererHost"),
+               _dim(countries, "countryName"), _dim(devices, "deviceType")))
 
 
 def fetch_machine(today):
