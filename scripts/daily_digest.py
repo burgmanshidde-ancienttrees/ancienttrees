@@ -162,6 +162,10 @@ query($tag: String!, $since: Date!, $until: Date!) {
         filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
       count dimensions { deviceType }
     }
+    perf: rumPerformanceEventsAdaptiveGroups(limit: 1,
+        filter: {date_geq: $since, date_lt: $until}) {
+      quantiles { pageLoadTimeP50 pageLoadTimeP90 }
+    }
   } }
 }""",
         "variables": {"tag": ACCOUNT_TAG,
@@ -190,11 +194,44 @@ query($tag: String!, $since: Date!, $until: Date!) {
                 v = "(direct)" if key == "refererHost" else "(unknown)"
             out.append("%s (%d)" % (v, r["count"]))
         return "; ".join(out) if out else "none recorded"
+    perf = acct[0].get("perf") or []
+    speed = ""
+    if perf and perf[0].get("quantiles"):
+        qq = perf[0]["quantiles"]
+        speed = "\n- Page load (8d): p50 %dms, p90 %dms" % (
+            qq.get("pageLoadTimeP50") or 0, qq.get("pageLoadTimeP90") or 0)
     return ("Web Analytics (beacon, real browsers, cookieless):\n"
             "- Days (visits/pageviews): %s\n- Top paths: %s\n"
-            "- Referrers: %s\n- Countries: %s\n- Devices: %s"
+            "- Referrers: %s\n- Countries: %s\n- Devices: %s%s"
             % (trend, top, _dim(refs, "refererHost"),
-               _dim(countries, "countryName"), _dim(devices, "deviceType")))
+               _dim(countries, "countryName"), _dim(devices, "deviceType"), speed))
+
+
+def fetch_events(today):
+    """Anonymous action counts from the site's own events table (Supabase,
+    insert-only from the site; read here with the service key). Absent key or
+    table: one quiet line, never an error."""
+    key = os.environ.get("SUPABASE_SERVICE_KEY")
+    if not key:
+        return None
+    since = (today - datetime.timedelta(days=1)).isoformat()
+    url = ("https://caimvxiyrtifilimlkqw.supabase.co/rest/v1/events"
+           "?select=name&created_at=gte.%sT00:00:00Z&created_at=lt.%sT00:00:00Z"
+           % (since, today.isoformat()))
+    req = urllib.request.Request(url, headers={
+        "apikey": key, "Authorization": "Bearer " + key})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            rows = json.load(r)
+    except Exception as e:
+        return "Site actions: events table unreadable (%s)." % e
+    if not rows:
+        return "Site actions (yesterday): none recorded."
+    counts = {}
+    for row in rows:
+        counts[row["name"]] = counts.get(row["name"], 0) + 1
+    return "Site actions (yesterday): " + "; ".join(
+        "%s %d" % (k, v) for k, v in sorted(counts.items(), key=lambda kv: -kv[1]))
 
 
 def fetch_machine(today):
@@ -360,6 +397,9 @@ def main():
         gsc_text += "\n\nWeb Analytics (beacon): fetch failed today (%s)." % e
 
     try:
+        ev = fetch_events(today)
+        if ev:
+            gsc_text += "\n\n" + ev
         m = fetch_machine(today)
         if m:
             gsc_text += "\n\n" + m
