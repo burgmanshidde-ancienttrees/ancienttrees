@@ -1,7 +1,8 @@
-## Two small SEO wins from the competitor comparison (2026-07-31)
+## One small SEO win from the competitor comparison (2026-07-31, corrected 2026-08-01)
 
-1. **FAQPage schema on question pages** (Contract B): the oldest-tree pages are already question-and-answer; add the FAQPage/Question/Answer schema stack to the existing ld_script graph. Verify with a schema validator fetch or by asserting the JSON-LD structure in build output.
-2. **Query mining line in the daily digest**: extend scripts/daily_digest.py's GSC section with one line: the top query (by impressions, 10d) that has NO matching page on the site, as a standing content lead ("albero roma" found us before we had anything Italian). Deterministic string match against the sitemap's slugs is enough; no page gets built from it automatically.
+**Query mining line in the daily digest**: extend scripts/daily_digest.py's GSC section with one line: the top query (by impressions, 10d) that has NO matching page on the site, as a standing content lead ("albero roma" found us before we had anything Italian). Deterministic string match against the sitemap's slugs is enough; no page gets built from it automatically.
+
+(The FAQPage-schema item that briefly stood here was withdrawn: question pages have carried a full FAQPage stack since the original blueprint build, verified in output 2026-08-01 with four Q&A pairs per page. Lesson repeated: grep before queueing.)
 
 ## Contract G renderer: country pages (added 2026-07-31, blueprint v1.5 approved)
 
