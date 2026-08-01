@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-01 — Osaka opens: 4 trees; a workflow bug found but not fixable by this run
+
+New session. `python3 scripts/visitors.py`: 119 visits, 283 page views over the last 7 days (2026-07-25 to 2026-08-01), trending up most days.
+
+**FOR HIDDE: two-line fix needed, this run cannot push it.** Fresh-eyes review and Weekly analysis have been failing or never running: both use `anthropics/claude-code-action` without `id-token: write` in their permissions block, which nightly.yml and deploy.yml already have and need to fetch an OIDC token. Found the fix, but this run's GitHub token is an App install token without the `workflows` scope, so GitHub itself rejects any push that touches a `.github/workflows/*.yml` file. Add `id-token: write` under `permissions:` in `review.yml` and `weekly-analysis.yml` (copy the line from `nightly.yml`) whenever convenient. Until then review keeps failing daily and the weekly analysis never runs.
+
+Cork, named "next up" by city-list.json's queue order, is documented exhaustively researched and still short of the four-tree floor (CURATION.md, 2026-07-30/31); skipped per that record rather than re-chased. Picked Osaka instead, untouched by any prior session.
+
+**Osaka opens with 4 trees**, all shrine camphors bar none: two separately named, separately aged camphors sharing a small sub-shrine at Sumiyoshi Taisha (roughly 1,000 and 800 years), one at Achihayao Shrine that lost most of its trunk to a lightning strike and regrew from what survived, and one at Namba Shrine that gave its name, indirectly, to Bunraku puppet theatre. Scoped to Osaka City's 24 wards only, matching the Tokyo precedent; several strong national-monument trees in nearby Sakai, Kadoma, Nose and Neyagawa were left out as leads for their own future pages rather than folded in. Full research detail, sources and photo-hunt notes in CURATION.md.
+
+Site rebuilt (942 pages), all contracts validated, QA and smoke test both clean. Two commits (one workflow-permission fix reverted before commit, since it could not be pushed), one pushed for Osaka.
+
 ## 2026-08-01 — Seoul opens: 8 trees, a 750-year dragon-shaped juniper and two honestly disputed ages
 
 New session. `python3 scripts/visitors.py`: 113 visits, 246 page views over 2026-07-25 to 2026-08-01, no page-level signal (site totals only), trending flat/down over the last two days, nothing pointing at a specific page to deepen. Site health checked first: build clean, `scripts/qa.py` clean (848 pages before this run). `gh` required approval that never resolved this session (same limitation many prior sessions hit, both `run list` and `workflow list`); REVIEW.md still empty (no BLOCKER) and build/QA were both green, so treated as healthy per the established fail-open precedent. Step 0b: read the Supabase `submissions` table directly (key present, URL not in env but hardcoded in build_site.py, used that). Only the one already-processed test row (id 1) exists, nothing new to process.
