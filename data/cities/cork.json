@@ -1,0 +1,186 @@
+{
+  "city": "Cork",
+  "country": "Ireland",
+  "status": "published",
+  "intro": "Cork's oldest tree grows out of solid rock eight kilometres from the city, and the Irish public once voted it the country's best. The city splits its remarkable trees three ways: the Blarney Castle gardens, where a medieval yew presides over the Rock Close; a university campus that is also an accredited arboretum; and Fota Island in Cork Harbour, where one family spent three generations planting trees from every continent, free to walk and thirteen minutes away by train. None of it needs a car: the 215 bus, the Cobh line, or your feet.",
+  "meta_description": "Cork's five most remarkable trees: a 600-year yew voted Ireland's Tree of the Year, redwoods paid for with beer money, and an 1870 Himalayan magnolia.",
+  "question_meta": "Cork's oldest tree is the Witch's Yew at Blarney, more than 600 years old and voted Ireland's Tree of the Year in 2019. Its story and four more.",
+  "question_answer": "Cork's oldest tree is the Witch's Yew, a European Yew growing from the limestone of the Rock Close at Blarney Castle, estimated at more than 600 years old. It was voted Ireland's Tree of the Year in 2019 and stood for Europe's in 2020. Blarney is eight kilometres from the city centre, about 30 minutes on the 215 bus, and the yew is inside the paid castle gardens.",
+  "question_context": "The yew predates everything designed around it. When the Jeffreyes family landscaped the Rock Close in the 1750s they built their Witch's Kitchen folly directly beneath a tree that was already centuries old, and the 1446 castle keep most visitors come for is roughly the yew's contemporary, not its elder. Legend keeps the Blarney Witch in it, the spirit said to have first revealed what kissing the Blarney Stone does; the 2019 national vote and its 11,372-vote European campaign the following spring were really votes for that whole story growing out of bare limestone. Yews resist precise dating because their trunks hollow with age, so the 600-year figure is an expert floor rather than a ceiling; the tree could be considerably older. Cork's other remarkable trees are younger imports, mostly Victorian: the beer-funded redwoods and the 1929 Monterey pine of the University College Cork campus arboretum in the city itself, and the 1870 Campbell's Magnolia at Fota, planted from Darjeeling seed six years before Kilmacurragh's celebrated specimen and still flowering on bare branches every February.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Cork?",
+      "a": "The Witch's Yew in the Rock Close at Blarney Castle, estimated at more than 600 years old and voted Ireland's Tree of the Year in 2019. It stands inside the paid castle gardens, about 30 minutes from Cork city on the 215 bus."
+    },
+    {
+      "q": "Do you have to pay to see the Witch's Yew?",
+      "a": "Yes. The yew grows in the Rock Close inside Blarney Castle & Gardens, so it takes a gardens ticket, the same one that covers the castle and the Blarney Stone. Of the three, the yew is the only one that was alive in the Middle Ages."
+    },
+    {
+      "q": "When does the Fota magnolia flower?",
+      "a": "Late February into March. Campbell's Magnolia flowers before it leafs, so the huge pink cups open on bare branches, and Cork Harbour's mild air makes Fota's 1870 tree one of the earliest big flowering moments in Ireland. The arboretum is free to enter."
+    },
+    {
+      "q": "Can anyone visit the trees at University College Cork?",
+      "a": "Yes, the campus is open to walkers and is an ArbNet-accredited arboretum of around 2,500 trees. The two giant redwoods stand outside the Boole Library and the 1929 Monterey pine frames the ceremonial Western Road gates, all free."
+    }
+  ],
+  "trees": [
+    {
+      "id": "cor_001",
+      "name": "The Witch's Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "more than 600 years",
+      "age_min": 600,
+      "age_max": 800,
+      "location": {
+        "address": "Rock Close, Blarney Castle & Gardens, Blarney, Co. Cork",
+        "latitude": 51.92907,
+        "longitude": -8.56776,
+        "neighbourhood": "Blarney"
+      },
+      "story": "In 2019 the Irish public voted this yew the country's Tree of the Year, and the next spring 11,372 Europeans backed it for the European title. What they were voting for is a tree growing where no tree should: straight out of the top of a limestone outcrop in the Rock Close, the strangest corner of the Blarney Castle gardens. Experts put it at more than 600 years, older than the designed landscape around it and roughly contemporary with the 1446 castle keep that most visitors climb without noticing it. When the Jeffreyes family laid out the Rock Close in the 1750s they built a folly called the Witch's Kitchen directly beneath the yew, treating a tree already centuries old as ready-made scenery. Legend houses the Blarney Witch here: she is said to have been the first to tell mortals what kissing the Blarney Stone actually does, and to be locked inside the nearby Witch Stone by day, free only after dark. Entry to the gardens is paid, but the one ticket covers the stone, the castle and this tree, and only the tree was alive in the Middle Ages.",
+      "verified_sources": [
+        "https://www.treeoftheyear.org/previous-years/2020/Carodejny-tis",
+        "https://www.rte.ie/news/munster/2019/0829/1071691-tree-of-the-year/",
+        "https://www.irishexaminer.com/news/arid-30947027.html"
+      ],
+      "access": "Paid entry (Blarney Castle & Gardens ticket)",
+      "transport": "Bus 215 from Cork bus station to Blarney, about 30 min, then a short walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Blarney_Witches_yew_tree_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "UtDicitur, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "cor_002",
+      "name": "The Great Western Red Cedar of Blarney",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "age_estimate": "planted in the early 1900s",
+      "age_min": 110,
+      "age_max": 130,
+      "location": {
+        "address": "Blarney Castle & Gardens, Blarney, Co. Cork",
+        "latitude": 51.92861,
+        "longitude": -8.57278,
+        "neighbourhood": "Blarney"
+      },
+      "story": "The estate calls this the most photographed tree in its gardens, which is a serious claim on grounds that also hold a medieval yew and the Blarney Stone. The reason is the shape. The trunk divides low and its limbs run out sideways, each one thicker than most full-grown trees, so the whole plant reads less like a conifer than a wooden octopus caught mid-stride. Children understand it instantly; the low wooden fence around it exists because everyone's first instinct is to climb. In its native Pacific Northwest a Western Red Cedar grows as a straight sixty-metre rainforest column, and the totem poles and canoes of the coastal First Nations were carved from its trunks. Planted here in the early 1900s by the estate's own record, this one chose width over height, and a century of soft Irish rain has clearly agreed with it. The estate has put a small species board at its base, a landowner explicitly inviting visitors to come and stand under it, which is exactly what you should do: the view from inside the canopy, surrounded by rising limbs, is the best in the gardens.",
+      "verified_sources": [
+        "https://blarneycastle.ie/gexplore/great-trees/",
+        "https://commons.wikimedia.org/wiki/File:Western_red_cedar_at_Blarney_Castle_-_geograph.org.uk_-_8147217.jpg"
+      ],
+      "access": "Paid entry (Blarney Castle & Gardens ticket)",
+      "transport": "Bus 215 from Cork bus station to Blarney, about 30 min, then a short walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Western_red_cedar_at_Blarney_Castle_-_geograph.org.uk_-_8147217.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Marathon, via geograph.org.uk and Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Existence and exact position carry two independent sources (the estate's own Great Trees page and a 2025 geotagged geograph photograph with an information board at the tree). The early-1900s planting date rests on the estate's own record alone; flagged for that single-source age, not for any doubt about the tree.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "cor_003",
+      "name": "The Boole Library Redwoods",
+      "species": "Giant Redwood (Sequoiadendron giganteum)",
+      "age_estimate": "approximately 150 years",
+      "age_min": 140,
+      "age_max": 170,
+      "location": {
+        "address": "Boole Library, University College Cork, College Road, Cork",
+        "latitude": 51.8932,
+        "longitude": -8.4915,
+        "neighbourhood": "University College Cork"
+      },
+      "story": "The tallest trees on University College Cork's campus were paid for with beer. William Crawford of the Beamish & Crawford brewery, one of the young college's great benefactors, donated the pair of Giant Redwoods that now stand 27 and 29 metres above the Boole Library, and at roughly 150 years old they have barely started: in California's Sierra Nevada the species passes 2,000 years and 80 metres. They are the obvious landmarks of a campus that is quietly one of Ireland's best tree collections, planted continuously since the college opened in 1849 and accredited as an arboretum by the international ArbNet programme in 2020, around 2,500 trees of some 120 species. The library beneath them is named for George Boole, the college's first professor of mathematics, whose two-value algebra now runs inside every computer on the desks inside. Students cram under trees that will outlive everything they are studying, and the university runs public tours of the campus trees led by its own plant scientists. Free, open to any walker, and fifteen minutes on foot from Grand Parade.",
+      "verified_sources": [
+        "https://www.ucc.ie/en/arboretum/why-trees-matter/top10trees/",
+        "https://www.whatsonincork.com/the-cork-public-are-offered-a-tour-of-uccs-historic-trees/"
+      ],
+      "access": "Free, open campus",
+      "transport": "15 min walk from Grand Parade; buses along Western Road",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cor_004",
+      "name": "The Monterey Pine at the Gates",
+      "species": "Monterey Pine (Pinus radiata)",
+      "age_estimate": "planted around 1929",
+      "age_min": 90,
+      "age_max": 100,
+      "location": {
+        "address": "Western Road entrance, University College Cork, Cork",
+        "latitude": 51.8938,
+        "longitude": -8.4886,
+        "neighbourhood": "University College Cork"
+      },
+      "story": "Every graduation procession through University College Cork's ceremonial Western Road gates since 1929 has walked beneath this pine, which makes it the most photobombed tree in Cork: it stands in the background of a century of family photographs without ever being the subject. The species has one of the strangest stories in forestry. In the wild the Monterey Pine survives on a few kilometres of Californian coast and two Mexican islands, and is formally listed as endangered there, yet planted forestry made it one of the most cultivated trees on earth, the backbone of timber industries from New Zealand to Chile and a fair share of Ireland's own plantations. So the endangered Californian at the front gates is also a quiet joke about globalisation, thriving further from home than almost any tree on campus. UCC's arboretum staff list it among their top ten campus trees for the way its dark, wind-shaped crown frames the entrance. It is free to see at any hour, on the main bus corridor into the city, and the gates beside it are the best-looking way to enter the campus arboretum anyway.",
+      "verified_sources": [
+        "https://www.ucc.ie/en/arboretum/why-trees-matter/top10trees/",
+        "https://tripeanddrisheen.substack.com/p/voices-from-cork-our-favourite-trees"
+      ],
+      "access": "Free, open campus",
+      "transport": "Buses along Western Road; 15 min walk from Grand Parade",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cor_005",
+      "name": "The 1870 Magnolia of Fota",
+      "species": "Campbell's Magnolia (Magnolia campbellii)",
+      "age_estimate": "planted in 1870",
+      "age_min": 150,
+      "age_max": 160,
+      "location": {
+        "address": "Fota Arboretum, Fota Island, Carrigtwohill, Co. Cork",
+        "latitude": 51.899,
+        "longitude": -8.279,
+        "neighbourhood": "Fota Island"
+      },
+      "story": "For about ten days in late winter this tree does something almost nothing else in Ireland can: it covers itself in rose-pink flowers the size of dinner plates while its branches are still completely bare. Campbell's Magnolia flowers before it leafs, and it needs decades of growth before it starts, which is why the great specimens are all in old gardens. Fota's was grown from seed collected near Darjeeling in the Himalayan foothills and planted in 1870, six years before the celebrated tree at Kilmacurragh in Wicklow that usually gets the attention. It stands in an arboretum the Smith-Barry family built across three generations, starting in the 1820s, on an island in Cork Harbour whose frost-free air let them grow things the rest of Ireland could not; the collection around the magnolia runs from Chilean conifers to Japanese cedars. The Office of Public Works keeps the arboretum free to enter, and the train from Cork's Kent Station reaches Fota in thirteen minutes. Time the trip for the flowers if you can. An 1870 magnolia in full February bloom is worth rearranging a week around.",
+      "verified_sources": [
+        "https://www.irishexaminer.com/property/homeandgardens/arid-41094721.html",
+        "https://heritageireland.ie/visit/places-to-visit/fota-arboretum-and-gardens/"
+      ],
+      "access": "Free (paid parking); Apr-Oct 9:00-18:00, Nov-Mar 9:00-17:00",
+      "transport": "Train from Cork Kent to Fota, 13 min, then a 10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The 1870 planting date and Darjeeling seed origin come from one strong named source (Irish Examiner gardening column by Peter Dowdall); the second source confirms the arboretum, its Smith-Barry history and free access but not the individual tree's date. Flagged until a second individual-tree source appears (OPW or Fota House documentation would settle it).",
+      "best_time": {
+        "months": [
+          2,
+          3
+        ],
+        "label": "late February into March, when huge pink cups open on bare branches",
+        "kind": "flowers"
+      },
+      "location_precision": "approximate"
+    }
+  ]
+}

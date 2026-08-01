@@ -1263,7 +1263,6 @@ function updatePanelMode() {{
     box.style.display = 'none';
   }}
 }}
-map.on('moveend', updatePanelMode);
 if (markers.length > 1) {{
   var _b = new maplibregl.LngLatBounds();
   markers.forEach(function(m) {{ _b.extend([m.lng, m.lat]); }});
@@ -1272,6 +1271,10 @@ if (markers.length > 1) {{
   map.fitBounds(_b, {{ padding: _pad, maxZoom: 14.5, duration: 0 }});
   homeZoom = map.getZoom();
 }}
+// Registered AFTER the opening fitBounds on purpose: its zero-duration jump
+// fires moveend synchronously, and a listener armed before homeZoom exists
+// re-creates the Paris bug on any wide city (Cork proved it).
+map.on('moveend', updatePanelMode);
 
 var pins = [];
 var activeIdx = -1;
