@@ -61,9 +61,9 @@
       "id": "por_002",
       "name": "The Magnolia of Casa Tait",
       "species": "Southern Magnolia (Magnolia grandiflora)",
-      "age_estimate": "100+ years",
-      "age_min": 100,
-      "age_max": 150,
+      "age_estimate": "roughly 205 years",
+      "age_min": 200,
+      "age_max": 210,
       "location": {
         "address": "Casa Tait, Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
         "latitude": 41.1482,
@@ -92,16 +92,16 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "notes": "Girth (over 6 m) confirmed by both the city council's parks page and an independent garden-history source. No documented planting date; age is an estimate from the tree's size and classification status. Pin moved 2026-07-27 about 140m to Casa Tait's own building coordinates (Nominatim, cross-checked across two independent address results that agree within 40m); at that time the tree wasn't in the municipality's classified-trees open dataset, so it stayed a building-level anchor. Location upgraded to confirmed and classification status corrected, 2026-07-29: ICNF's own national register of classified trees of public interest (BDG/AIP layer, sigservices.icnf.pt) carries a Magnolia grandiflora record at 'Rua de Entre Quintas 219, Casa Tait' (id 531) matching this tree exactly, including a height of 22.5m consistent with the city's own '22 metres' figure elsewhere; gives a surveyed point about 28m from the previous building-level estimate. A news report (noticiasaominuto.com, 21 May 2021) confirms the ICNF classified this magnolia, alongside a second tulip tree in the same grounds, as a tree of public interest that day, so the story's 'currently working through classification' line was stale and has been corrected to say when it happened. Photo search 2026-07-29: no openly-licensed photo found despite checking Wikimedia Commons, iNaturalist (multiple observations at this exact tree, all CC-BY-NC only), Openverse and a Flickr CC search. Still missing.",
+      "notes": "Girth (over 6 m) confirmed by both the city council's parks page and an independent garden-history source. Pin moved 2026-07-27 about 140m to Casa Tait's own building coordinates (Nominatim, cross-checked across two independent address results that agree within 40m); at that time the tree wasn't in the municipality's classified-trees open dataset, so it stayed a building-level anchor. Location upgraded to confirmed and classification status corrected, 2026-07-29: ICNF's own national register of classified trees of public interest (BDG/AIP layer, sigservices.icnf.pt) carries a Magnolia grandiflora record at 'Rua de Entre Quintas 219, Casa Tait' (id 531) matching this tree exactly, including a height of 22.5m consistent with the city's own '22 metres' figure elsewhere; gives a surveyed point about 28m from the previous building-level estimate. A news report (noticiasaominuto.com, 21 May 2021) confirms the ICNF classified this magnolia, alongside a second tulip tree in the same grounds, as a tree of public interest that day, so the story's 'currently working through classification' line was stale and has been corrected to say when it happened. Age corrected 2026-08-01, per Hidde's dispatch order: the fuller ICNF WFS export at data/registers/portugal-icnf.json (processo AIP131218102I, same address, 0m from this pin) carries an age_register field of 200 years as of its 2021 survey, which the 2026-07-29 session's live-API check apparently didn't pull in ('No documented planting date; age is an estimate from the tree's size' was wrong, not just stale). Projected to 2026 that's roughly 205; age_estimate updated from '100+ years' to match, previous figure was a guess from girth alone and undersold it by about a century. Photo search 2026-07-29: no openly-licensed photo found despite checking Wikimedia Commons, iNaturalist (multiple observations at this exact tree, all CC-BY-NC only), Openverse and a Flickr CC search. Still missing.",
       "location_precision": "confirmed"
     },
     {
       "id": "por_003",
       "name": "The Metrosidero of the Library",
       "species": "Pōhutukawa (Metrosideros excelsa)",
-      "age_estimate": "unknown",
-      "age_min": 50,
-      "age_max": 100,
+      "age_estimate": "roughly 160 years",
+      "age_min": 150,
+      "age_max": 165,
       "location": {
         "address": "Near Biblioteca Almeida Garrett, Jardins do Palácio de Cristal, Rua de D. Manuel II, 4050 Porto",
         "latitude": 41.148633,
@@ -123,7 +123,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "notes": "Location confirmed and classification status corrected: the municipality's own open-data register of classified trees shows this Metrosideros excelsa (the only one in the whole dataset, a genuinely distinctive match) was formally classified 2019-03-15, not still under review as the 2017 source that originally flagged this tree had it. Story updated to match. Coordinate is the register's own surveyed point, about 160m from the previous whole-garden estimate. No age or planting date found in any source, so age is left as unknown rather than guessed; still flagged for that gap. Photo search 2026-07-29: no openly-licensed photo found for this specimen. A CC-BY-SA 2.5 Metrosideros excelsa photo does exist on Commons (File:Metrosideros_excelsa_flowers.jpg, Júlio Reis/Tintazul), but its own category and EXIF tag it to the Jardim Botânico do Porto, a different garden about 2km away, not this Palácio de Cristal tree, so it was not used. Still missing.",
+      "notes": "Location confirmed and classification status corrected: the municipality's own open-data register of classified trees shows this Metrosideros excelsa (the only one in the whole dataset, a genuinely distinctive match) was formally classified 2019-03-15, not still under review as the 2017 source that originally flagged this tree had it. Story updated to match. Coordinate is the register's own surveyed point, about 160m from the previous whole-garden estimate. Age corrected 2026-08-01, per Hidde's dispatch order: the fuller ICNF WFS export at data/registers/portugal-icnf.json (processo AIP13121858I, same 'Palácio de Cristal' location, same 2019-03-15 classification date, an exact match) carries an age_register of 150 years as of its 2015 survey, which the 2026-07-29 session's live-API check missed ('No age or planting date found in any source' was wrong, the fuller WFS export just wasn't consulted then). Projected to 2026 that's roughly 160; updated from the previous honest 'unknown' (which itself is now a real finding, not a gap). Still `flagged` since only this one register gives a number, no second independent age source. Photo search 2026-07-29: no openly-licensed photo found for this specimen. A CC-BY-SA 2.5 Metrosideros excelsa photo does exist on Commons (File:Metrosideros_excelsa_flowers.jpg, Júlio Reis/Tintazul), but its own category and EXIF tag it to the Jardim Botânico do Porto, a different garden about 2km away, not this Palácio de Cristal tree, so it was not used. Still missing.",
       "location_precision": "confirmed",
       "best_time": {
         "months": [
