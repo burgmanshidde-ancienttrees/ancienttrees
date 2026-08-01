@@ -20,7 +20,10 @@ on:
     # 2026-07-31 evening trim: 63% of the week gone at day 2.5 of 7 with
     # heavy session days; four one-hour runs (~4-5%/day) leaves daily
     # session room. Recalibrate at Monday's usage glance.
-    - cron: "0 1,5,13,21 * * *"
+    # Temporarily nights-only (Hidde flagged 77% weekly usage on Saturday
+    # 2026-08-01); restore "0 1,5,13,21 * * *" when he says "verhoog" or the
+    # week resets.
+    - cron: "0 1,5 * * *"
   workflow_dispatch: {}
 
 permissions:
