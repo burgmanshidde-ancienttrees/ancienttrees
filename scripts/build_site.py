@@ -1948,6 +1948,19 @@ def img_srcset(url, widths, sizes):
             f'srcset="{cands}" sizes="{esc(sizes)}"')
 
 
+def credit_required(license_str):
+    """Whether the licence forces a visible on-page credit (Hidde, 2026-07-29:
+    record always, display only when the licence requires it). CC0, public
+    domain and the Unsplash License require none, so those lines are noise on
+    the page and come off; CC BY and BY-SA keep theirs, because that credit is
+    the price of the photo and stripping it would breach the licence."""
+    lic = (license_str or "").lower()
+    if not lic:
+        return True
+    free = ("cc0", "public domain", "publicdomain", "unsplash", "pdm")
+    return not any(f in lic for f in free)
+
+
 def usable_photo(tree):
     """Return the photo dict if it has a URL, license and attribution and is
     cleared for display; otherwise None. One gate for every page type."""
@@ -2157,10 +2170,12 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
     photo_html = ""
     og_image = ""
     if photo:
+        credit_line = (f"<figcaption>Photo: {esc(photo['attribution'])} ({esc(photo['license'])})</figcaption>"
+                       if credit_required(photo.get("license")) else "")
         photo_html = f"""
   <figure class="tree-photo">
     <img {img_srcset(photo['url'], [700, 1100, 1600], "(max-width: 800px) 100vw, 760px")} alt="{esc(tree['name'])}" loading="lazy">
-    <figcaption>Photo: {esc(photo['attribution'])} ({esc(photo['license'])})</figcaption>
+    {credit_line}
   </figure>"""
         og_image = f'\n<meta property="og:image" content="{esc(thumb_url(photo["url"], 1200))}">'
 
@@ -2423,9 +2438,11 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
         cphoto = usable_photo(t)
         photo_block = ""
         if cphoto:
+            card_credit = (f'<p class="tree-card-credit">Photo: {esc(cphoto["attribution"])} ({esc(cphoto["license"])})</p>'
+                           if credit_required(cphoto.get("license")) else "")
             photo_block = f"""
       <div class="tree-card-photo"><img {img_srcset(cphoto['url'], [500, 900], "(max-width: 800px) 100vw, 560px")} alt="{esc(t['name'])}" loading="lazy"></div>
-      <p class="tree-card-credit">Photo: {esc(cphoto['attribution'])} ({esc(cphoto['license'])})</p>"""
+      {card_credit}"""
         cards.append(f"""
     <article class="tree-card" id="tree-{i}">
       {photo_block}
@@ -2789,8 +2806,44 @@ def build_species_page(intro_data, members, tree_slugs, published, pages):
     check_links(canonical, n + len(published) + 1, n + min(2, len(published)) + 1)
     page = render_page(title, description, canonical, body, head_extra, "", rootpath)
     pages.append((f"species/{slug}.html", page, canonical))
+    face = None
+    for _entry, _t in members:
+        _p = usable_photo(_t)
+        if _p:
+            face = thumb_url(_p["url"], 400)
+            break
     return {"slug": slug, "common": common, "scientific": intro_data.get("scientific_name", ""),
-            "count": n, "cities": len(by_city)}
+            "count": n, "cities": len(by_city), "face": face}
+
+
+def browse_card(href, name, sub, face):
+    """The one card used by every browse index (cities, species, collections):
+    photo, name, one honest sub-line. Same component, so the facets read as
+    siblings instead of three different pages."""
+    if face:
+        ph = f'<span class="exc-ph"><img src="{esc(face)}" alt="" loading="lazy"></span>'
+    else:
+        ph = ('<span class="exc-ph ctry-noph" aria-hidden="true">'
+              '<svg viewBox="0 0 68 64" fill="none"><ellipse cx="34" cy="24" rx="24" ry="16" fill="currentColor"/>'
+              '<circle cx="20" cy="23" r="11" fill="currentColor"/><circle cx="48" cy="23" r="11" fill="currentColor"/>'
+              '<circle cx="34" cy="12" r="11" fill="currentColor"/>'
+              '<path d="M31 62 h5.6 l-1.2-16 h-3.2z" fill="currentColor"/></svg></span>')
+    return (f'<a class="exc-card" href="{href}">{ph}'
+            f'<span class="exc-body"><b>{esc(name)}</b><span>{sub}</span></span></a>')
+
+
+def collection_face(coll, cities_by_slug):
+    """First entry in the collection that has a usable photo."""
+    for e in coll.get("entries", []):
+        entry = cities_by_slug.get(e["city_slug"])
+        if not entry or not entry.get("data"):
+            continue
+        for t in entry["data"]["trees"]:
+            if t["id"] == e.get("tree_id"):
+                p = usable_photo(t)
+                if p:
+                    return thumb_url(p["url"], 400)
+    return None
 
 
 def build_species_index(species_cards, published, pages):
@@ -2801,14 +2854,12 @@ def build_species_index(species_cards, published, pages):
                   "Europe's streets, the wingnut Amsterdam went to court over, and more.")
     crumb_items = [("Home", BASE_URL), ("Species", None)]
 
-    entries = "".join(
-        f"""
-      <div class="entry">
-        <h3><a href="species/{c['slug']}">{esc(c['common'])}</a> <span class="tree-label">{c['count']} trees</span></h3>
-        <p><em>{esc(c['scientific'])}</em>. Mapped across {c['cities']} cit{'y' if c['cities']==1 else 'ies'} so far.</p>
-      </div>"""
-        for c in species_cards
-    )
+    # Browse facets get the same photo-card grid as /cities: a list of names is
+    # a database view, and a species is chosen by the look of the tree.
+    entries = '<div class="cindex-grid">%s</div>' % "".join(
+        browse_card(f"species/{c['slug']}", c["common"],
+                    f"{c['count']} trees &middot; {c['cities']} cities", c.get("face"))
+        for c in species_cards)
     city_links = " &middot; ".join(
         f'<a href="{p["slug"]}">{esc(p["city"])}</a>' for p in published
     )
@@ -3074,8 +3125,9 @@ def build_cities_index(published, pages, faces=None):
     pages.append(("cities.html", page, canonical))
 
 
-def build_collections_index(collections, published, pages):
+def build_collections_index(collections, published, pages, cities_by_slug=None):
     """Overview of all collections at /collections."""
+    cities_by_slug = cities_by_slug or {}
     canonical = f"{BASE_URL}/collections"
     rootpath = "./"
     title = fit_title(["Collections: Remarkable Trees by Theme"], canonical)
@@ -3086,18 +3138,17 @@ def build_collections_index(collections, published, pages):
 
     entries = []
     for c in collections:
-        first_sentence = c["intro"].split(". ")[0] + "."
-        entries.append(f"""
-      <div class="entry">
-        <h3><a href="collections/{c['slug']}">{esc(c['title'])}</a></h3>
-        <p>{esc(first_sentence)} {len(c.get('entries', []))} trees, across {len({e['city_slug'] for e in c.get('entries', [])})} cities.</p>
-      </div>""")
+        n_cities = len({e["city_slug"] for e in c.get("entries", [])})
+        entries.append(browse_card(
+            f"collections/{c['slug']}", c["title"],
+            f"{len(c.get('entries', []))} trees &middot; {n_cities} cities",
+            collection_face(c, cities_by_slug)))
 
     city_links = " &middot; ".join(
         f'<a href="{p["slug"]}">{esc(p["city"])}</a>' for p in published
     )
 
-    entries_html = "".join(entries) if entries else (
+    entries_html = ('<div class="cindex-grid">%s</div>' % "".join(entries)) if entries else (
         '<div class="prose-block"><p>The first collections are drafted and being reviewed. '
         "None are public yet; check back as the map grows.</p></div>"
     )
@@ -4429,7 +4480,7 @@ def main():
         result = build_collection_page(coll, cities_by_slug, tree_slugs, published, pages, draft=is_draft)
         if is_draft:
             draft_collection_pages.append(result)
-    build_collections_index(public_collections, published, pages)
+    build_collections_index(public_collections, published, pages, cities_by_slug)
     build_cities_index(published, pages, {e['slug']: city_face(e) for e in renderable})
 
     entries_by_slug = {e["slug"]: e for e in renderable}
