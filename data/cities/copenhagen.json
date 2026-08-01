@@ -55,7 +55,15 @@
       },
       "curation_status": "flagged",
       "notes": "The Christian IV silk-industry origin and the tree's location and vitality are described consistently across Trae.dk's detailed feature on Copenhagen's valuable trees and a local heritage site's history of Proviantgarden, though both ultimately appear to draw on the same underlying historical account rather than fully independent research. No source names the exact species; White Mulberry (Morus alba) is given here because it is the species historically used for silkworm cultivation, which the sources' own silk-industry framing implies, but this is inference rather than a directly sourced identification. No precise planting date exists, only the association with Christian IV's reign (1588-1648), hence the wide age range.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June into July, when the mulberries ripen and drop",
+        "kind": "fruit"
+      }
     },
     {
       "id": "cop_002",
@@ -115,7 +123,9 @@
       "notes": "The only detailed source found is the Danish Dendrological Society's own tree register entry, which itself frames Thorvaldsen's personal planting as tradition ('possibly brought Robinia seeds') rather than documented fact; flagged accordingly. Measurements (3.2m circumference, 1995) and coordinates (surveyed 2008) come directly from that official register, making the location one of this city's most precisely confirmed.",
       "location_precision": "confirmed",
       "best_time": {
-        "months": [5],
+        "months": [
+          5
+        ],
         "label": "May, when it flowers in heavy white clusters",
         "kind": "flowers"
       }

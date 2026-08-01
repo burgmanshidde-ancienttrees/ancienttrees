@@ -147,7 +147,15 @@
       },
       "curation_status": "flagged",
       "notes": "Age range (200-300 years), Maria Theresa-era silk industry origin, the 1771 planting report and the Ottoman legend (explicitly presented as the less likely account) are corroborated between pestbuda.hu's dedicated feature and the Hungarian Wikipedia entry, which cites the same underlying sources. The tree's poor condition and 2021 conservation intervention are separately confirmed by a 2021 gardening blog post (kreativkertesz.hu) describing active rescue works beginning that April. Exact coordinates are Komuves lepcso's general location (Nominatim-geocoded), not a surveyed point for the specific tree, which sources describe as somewhat displaced from the rebuilt staircase's current route.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June into July, when the mulberries ripen",
+        "kind": "fruit"
+      }
     },
     {
       "id": "bud_005",

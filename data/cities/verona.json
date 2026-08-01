@@ -270,7 +270,15 @@
       },
       "curation_status": "flagged",
       "notes": "Ensemble entry describing the park's documented historic tree collection (per its own 1946 survey) rather than one dated individual specimen, headlined by the mulberry since it is the most consistently named standout across sources. Species list and estate history corroborated across two independent sources. No usable photo found. 2026-07-29: Commons keyword search came back empty for the park by name; genuine dead end for now, a park that hasn't been individually photographed and catalogued on Commons yet.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June into July, when the mulberries ripen",
+        "kind": "fruit"
+      }
     }
   ],
   "oldest_tree_id": "ver_001"

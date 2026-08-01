@@ -53,7 +53,15 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June into July, when the mulberries ripen",
+        "kind": "fruit"
+      }
     },
     {
       "id": "sof_002",
