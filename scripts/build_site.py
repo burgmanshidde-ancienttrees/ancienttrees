@@ -698,9 +698,9 @@ PAGE_SHELL = """<!DOCTYPE html>
 window.at = window.at || {};
 at.track = function(name, detail) {
   try {
-    var body = JSON.stringify({name: String(name).slice(0, 40),
-                               path: location.pathname.slice(0, 120),
-                               detail: detail ? String(detail).slice(0, 60) : null});
+    var ev = {name: String(name).slice(0, 40), path: location.pathname.slice(0, 120)};
+    if (detail) { ev.detail = String(detail).slice(0, 60); }
+    var body = JSON.stringify(ev);
     navigator.sendBeacon
       ? navigator.sendBeacon('SB_URL/rest/v1/events?apikey=SB_KEY',
           new Blob([body], {type: 'application/json'}))
