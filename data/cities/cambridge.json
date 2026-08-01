@@ -36,7 +36,7 @@
       "age_max": 72,
       "location": {
         "address": "Outside the main gate, Trinity College, Trinity Street, Cambridge CB2 1TQ",
-        "latitude": 52.206890,
+        "latitude": 52.20689,
         "longitude": 0.115113,
         "neighbourhood": "City centre"
       },
@@ -56,7 +56,13 @@
       "curation_status": "flagged",
       "notes": "Distinguished carefully in research from a separate, similarly-named tree: Cambridge University Botanic Garden had its own Woolsthorpe-grafted 'Newton's Apple Tree' on Brookside lawn, which was blown down by Storm Eunice in February 2022 and has not been replaced with a mature specimen (young grafted clones are still in the garden's nursery). This entry is the Trinity College specimen, a separate tree at a separate site, planted 1954, confirmed alive and visitor-accessible as recently as June 2025 per multiple visitor reports checked this run. Age calculated from the 1954 planting date to 2026. Woolsthorpe Manor itself (Newton's family home, where the original tree stood) is in Lincolnshire, well outside Cambridge, and is not this entry's subject. Photo: Wikimedia Commons file '\"Newton's\" apple tree, Trinity College - geograph.org.uk - 5599349.jpg' (N Chadwick, CC BY-SA 2.0), part of the dedicated Commons category for this specific tree, no identity ambiguity.",
       "location_precision": "confirmed",
-      "best_time": { "months": [9], "label": "September, when the historic 'Flower of Kent' apples ripen", "kind": "fruit" }
+      "best_time": {
+        "months": [
+          9
+        ],
+        "label": "September, when the historic 'Flower of Kent' apples ripen",
+        "kind": "fruit"
+      }
     },
     {
       "id": "cam_002",
@@ -86,7 +92,15 @@
       },
       "curation_status": "flagged",
       "notes": "Corroborated by Christ's College's own official page (which itself notes the 1608 vs 1609 discrepancy between popular retellings and the college archives, resolved here in favour of the college's own archival figure, 1609) and Morus Londinium, a dedicated mulberry-tracking research project. Age range spans both the technically-accurate 'grown from the same root since 1795' figure (231 years) and the popularly-cited 'planted 1609' figure (417 years) that the college itself uses in visitor-facing material, since the tree is honestly a continuous regrowth of the original root rather than either a new planting or literally the same trunk Milton saw. Presented in the story as a living continuation, the same honest framing precedent used for Paris's Elm of Saint-Gervais. Photo: Wikimedia Commons file 'Milton's Mulberry Tree - geograph.org.uk - 8115998.jpg' (Mr Ignavy, CC BY-SA 2.0, photographed 17 April 2025), filed in the Fellows' Garden category and tagged 'Morus nigra', a recent, clearly identified photo of this exact tree. Viewed directly 2026-07-31: shows a wider Fellows' Garden view with several bare-season trees, a church spire and a greenhouse visible; one low, spreading, gnarled tree near the centre is plausibly the propped mulberry by its habit, but no supporting post or plaque is visible to confirm it against the other trees in frame with certainty. Kept at found_needs_check rather than approved, since the filename/category is a strong identity signal but this session couldn't visually confirm which specific tree in the frame it names, per the Cadiz standard's own rule against approving from a filename or description alone.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          8,
+          9
+        ],
+        "label": "August into September, when the mulberries ripen",
+        "kind": "fruit"
+      }
     },
     {
       "id": "cam_003",
@@ -127,8 +141,8 @@
       "age_max": 173,
       "location": {
         "address": "Main Walk, Cambridge University Botanic Garden, Cambridge CB2 1JE",
-        "latitude": 52.192500,
-        "longitude": 0.128700,
+        "latitude": 52.1925,
+        "longitude": 0.1287,
         "neighbourhood": "Newtown"
       },
       "story": "In 1852, the Cornish plant collector William Lobb reached Calaveras Grove in California and became one of the first Europeans to see Giant Redwoods growing wild, trees already thousands of years old and taller than anything in Britain. Recognising what he had found, he cut his expedition short and raced seed back to England for the Veitch nursery in Exeter, which was selling seedlings within a year, an unusually fast turnaround for a tree nobody in Europe had grown before. Cambridge University Botanic Garden was among the very first customers, planting out its own seedlings around 1855. Two of that original planting still stand on opposite sides of the garden's Main Walk near the fountain, and a third, at the junction with Henslow Walk, has grown into the tallest tree in the entire garden at just over 30 metres. Redwoods take centuries to reach the scale they are famous for in California, so at under two hundred years old this specimen is, by the standards of its own species, still young, a fast-growing adolescent rather than anything close to the giants Lobb originally found.",
@@ -157,8 +171,8 @@
       "age_max": 153,
       "location": {
         "address": "Near the Terrace Garden, Cambridge University Botanic Garden, Cambridge CB2 1JE",
-        "latitude": 52.192900,
-        "longitude": 0.128200,
+        "latitude": 52.1929,
+        "longitude": 0.1282,
         "neighbourhood": "Newtown"
       },
       "story": "Most oaks on this site are one of a small handful of well-known species. The Cambridge Oak is not: it is a hybrid, most likely a cross between the evergreen Quercus rugosa, native to Mexico and the southwestern United States, and Britain's own native Pedunculate Oak, a pairing that should not naturally occur an ocean apart and that appears to exist, in this precise combination, only here. It came from the Worcester nursery of Messrs Smith sometime between 1873 and 1875 and was planted in Cambridge University Botanic Garden soon after. By 1910, the tree had already earned a place in Elwes and Henry's authoritative survey The Trees of Great Britain and Ireland, which singled it out as the finest specimen of its kind in the entire country, a claim about a tree that may have been, functionally, one of a kind to begin with. It has grown considerably since, from under 12 metres tall in 1910 to nearly 17 metres with a 19.5 metre crown spread by a 2005 measurement, though a butt-decaying fungus now regularly fruits on its trunk each autumn, a visible sign of age and decline rather than imminent death. The garden has already grafted a younger replacement, planted near the Terrace Garden in 1991, as insurance for whenever the original eventually goes.",

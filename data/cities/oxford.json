@@ -36,7 +36,7 @@
       "age_max": 1600,
       "location": {
         "address": "St Mary the Virgin churchyard, Church Way, Iffley, Oxford OX4 4EJ",
-        "latitude": 51.727360,
+        "latitude": 51.72736,
         "longitude": -1.238175,
         "neighbourhood": "Iffley"
       },
@@ -66,7 +66,7 @@
       "age_max": 385,
       "location": {
         "address": "Walled Garden, University of Oxford Botanic Garden, Rose Lane, Oxford OX1 4AZ",
-        "latitude": 51.750550,
+        "latitude": 51.75055,
         "longitude": -1.248153,
         "neighbourhood": "City centre, opposite Christ Church Meadow"
       },
@@ -96,7 +96,7 @@
       "age_max": 240,
       "location": {
         "address": "University of Oxford Botanic Garden, Rose Lane, Oxford OX1 4AZ",
-        "latitude": 51.750690,
+        "latitude": 51.75069,
         "longitude": -1.247482,
         "neighbourhood": "City centre, opposite Christ Church Meadow"
       },
@@ -115,7 +115,15 @@
       },
       "curation_status": "flagged",
       "notes": "Morus Londinium (a dedicated mulberry-tracking research project, a credible specialist source) identifies this specimen as a remnant of John Sibthorp's 1790s garden rearrangement and states it 'may be the oldest surviving M. alba in Britain', hedged language kept intact rather than stated as settled fact. Age range calculated from a late-1790s planting to 2026 (roughly 226-236 years), rounded to a slightly wider honest band. No independent girth or exact planting-year source found beyond the Sibthorp rearrangement date; the 'possibly oldest in Britain' claim is a genuine superlative and is presented with its hedge intact per hard rule 8.",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June into July, when the mulberries ripen",
+        "kind": "fruit"
+      }
     },
     {
       "id": "oxf_004",

@@ -53,7 +53,15 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          8,
+          9
+        ],
+        "label": "August into September, when the mulberries ripen",
+        "kind": "fruit"
+      }
     },
     {
       "id": "bre_002",
@@ -76,7 +84,9 @@
       "access": "Free, public park, open daily",
       "transport": "Zandberg neighbourhood, Breda; 15 minute walk from Breda railway station",
       "best_time": {
-        "months": [7],
+        "months": [
+          7
+        ],
         "label": "July, when the catalpa's white flower spikes open",
         "kind": "flowers"
       },

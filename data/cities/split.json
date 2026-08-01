@@ -54,7 +54,15 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June into July, when the mulberries ripen",
+        "kind": "fruit"
+      }
     },
     {
       "id": "spl_002",
@@ -141,7 +149,14 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "best_time": { "months": [9, 10], "label": "late September into October, when the walnuts ripen and drop", "kind": "fruit" }
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "late September into October, when the walnuts ripen and drop",
+        "kind": "fruit"
+      }
     }
   ]
 }
