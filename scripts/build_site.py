@@ -738,6 +738,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 window.at = window.at || {};
 at.track = function(name, detail) {
   try {
+    if (localStorage.getItem('at_notrack') === '1') { return; }
     var ev = {name: String(name).slice(0, 40), path: location.pathname.slice(0, 120)};
     if (detail) { ev.detail = String(detail).slice(0, 60); }
     var body = JSON.stringify(ev);
@@ -769,9 +770,29 @@ document.addEventListener('click', function(e) {
 # site has to work. Empty string switches it off everywhere.
 ANALYTICS_TOKEN = "fcbbfb8b426c4f6aa2066b00be6454f6"
 
+# The owner's own visits were most of the traffic (Hidde, 2026-08-01: "deze 60
+# directe bezoeken zijn wss allemaal door mij gedaan"), which makes the numbers
+# a mirror rather than a measurement. Visiting any page with ?notrack=1 sets a
+# flag in that browser; from then on neither the Cloudflare beacon nor our own
+# events fire there. ?notrack=0 undoes it. Per browser and per device, because
+# a cookieless setup has nothing else to recognise, and stored in localStorage
+# rather than a cookie so no consent question appears.
 ANALYTICS_SNIPPET = (
-    "<script defer src='https://static.cloudflareinsights.com/beacon.min.js' "
-    "data-cf-beacon='{{\"token\": \"{token}\"}}'></script>"
+    "<script>\n"
+    "(function() {{\n"
+    "  try {{\n"
+    "    var p = new URLSearchParams(location.search);\n"
+    "    if (p.get('notrack') === '1') {{ localStorage.setItem('at_notrack', '1'); }}\n"
+    "    else if (p.get('notrack') === '0') {{ localStorage.removeItem('at_notrack'); }}\n"
+    "    if (localStorage.getItem('at_notrack') === '1') {{ return; }}\n"
+    "  }} catch (e) {{}}\n"
+    "  var s = document.createElement('script');\n"
+    "  s.defer = true;\n"
+    "  s.src = 'https://static.cloudflareinsights.com/beacon.min.js';\n"
+    "  s.setAttribute('data-cf-beacon', '{{\"token\": \"{token}\"}}');\n"
+    "  document.head.appendChild(s);\n"
+    "}})();\n"
+    "</script>"
 )
 
 FOOTER = """
