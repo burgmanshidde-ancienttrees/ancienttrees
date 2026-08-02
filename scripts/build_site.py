@@ -4047,6 +4047,7 @@ RENAMED_TREE_SLUGS = [
     ("dublin", "sculpted-cypress", "dub_007"),           # -> Many-Trunked Holm Oak of St Anne's Park, 2026-07-27
     ("rome", "quercia-del-tasso", "rom_001"),            # -> Ginkgo of Villa Sciarra, 2026-07-27
     ("berlin", "bellevue-oak", "ber_006"),                # -> Mahlsdorf Village Lime, 2026-07-29
+    ("athens", "trees-of-kaisariani-monastery", "ath_010"),  # -> Rubber Fig of Drosopoulou Street, 2026-08-02 (collectible-point failure)
 ]
 
 # A tree that gets pulled outright (no replacement, unlike RENAMED_TREE_SLUGS)
