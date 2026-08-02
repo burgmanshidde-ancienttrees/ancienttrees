@@ -307,32 +307,32 @@
     },
     {
       "id": "ath_010",
-      "name": "The Trees of Kaisariani Monastery",
-      "species": "Oriental Plane (Platanus orientalis)",
-      "age_estimate": "decades to roughly 200 years, undated individually",
-      "age_min": 50,
-      "age_max": 200,
+      "name": "The Rubber Fig of Drosopoulou Street",
+      "species": "Rubber Fig (Ficus elastica)",
+      "age_estimate": "age undocumented, exceptional size for a species usually grown as a houseplant",
+      "age_min": 0,
+      "age_max": 0,
       "location": {
-        "address": "Kaisariani Monastery, Ymittos, Athens 16121",
-        "latitude": 37.9607776,
-        "longitude": 23.7984918,
-        "neighbourhood": "Kaisariani, Mount Hymettus"
+        "address": "Iasonos Drosopoulou 103, Kypseli, Athens 112 57",
+        "latitude": 38.0028739,
+        "longitude": 23.735224,
+        "neighbourhood": "Kypseli"
       },
-      "story": "A monastery on Mount Hymettus has drawn people to the same spring for over two thousand years, long before the Byzantine monks who gave Kaisariani its name and its 11th or 12th century church ever arrived. Ancient Athenians already regarded this water, cold and constant even in summer, as sacred and medicinal, and later residents believed it cured infertility, a reputation strong enough that the site is said to have kept the goodwill of both Christian and Muslim neighbours specifically because everyone valued the spring it protected. The monastery itself sits inside a walled courtyard shaded by tall cypress and plane trees, planted and replaced across the site's long working life as a religious community, so no single tree here can be dated against the monastery's own documented history, only estimated by size at anywhere from decades to a couple of centuries old. What the trees frame is the more reliably dated part: a church built over the remains of a Roman-era temple, Byzantine frescoes added in 1682, and stonework that hosted the Byzantine philosopher Gemistus Plethon among its scholars. The walk in passes gnarled olives on the lower slopes and the monastery's own ruined watermill. Entry costs a small fee, a rare paid stop on an otherwise free hillside walk.",
+      "story": "Most people know Ficus elastica as a houseplant that tops out against a ceiling. On Drosopoulou Street in Kypseli it has done something else entirely: grown into a street tree over 26 metres tall, taller than the apartment blocks lining the road around it. The Greek Tree Registry (Friends of Hellenic National Parks) measured it in August 2023 at 26.55 metres with a trunk just under a metre around, a scale mismatch that stops anyone who knows the species only from a windowsill. Kypseli itself has swung twice in little more than a century: laid out from 1908 on former farmland, an upmarket district of theatres and cinemas by the 1960s, then a cheaper, immigrant-heavy neighbourhood from the 1980s as wealthier residents moved north, and more recently a magnet for young Athenians drawn back by its interwar apartment blocks. Nobody has recorded when this particular tree went in the ground, so no institution puts a number on its age, an honest gap rather than a guess. What is measured is size: a species built for dry rooms and low light has instead spent decades in full Mediterranean sun, on a plain city pavement with no fence and no plaque, one more street tree to the people who pass it daily and a genuine oddity to anyone who has ever owned the version in a pot.",
       "verified_sources": [
-        "https://en.wikipedia.org/wiki/Kaisariani_Monastery",
-        "https://greekcitytimes.com/2026/07/01/kaisariani-monastery-mount-hymettus-athens/"
+        "https://filoiparkon.org/en/%CF%80%CE%B9%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CE%BC%CE%B7%CF%84%CF%81%CF%89%CE%BF-%CE%B5%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%89%CE%BD-%CE%B4%CE%B5%CE%BD%CF%84%CF%81%CF%89%CE%BD/",
+        "https://en.wikipedia.org/wiki/Kypseli,_Athens"
       ],
-      "access": "Paid entry, small fee",
-      "transport": "Bus from Kaisariani or Ethniki Amyna metro station (Line 3), then uphill walk",
+      "access": "Free, public street tree",
+      "transport": "Victoria metro station (Line 1), then about a 15-20 minute walk into Kypseli",
       "curation_status": "flagged",
-      "notes": "Ensemble entry: the monastery's own history (11th-12th century church, sacred spring since antiquity) is well documented, but no individual tree in its courtyard has a published age. Age range is a wide, honest estimate rather than a measurement. Photo fetched and viewed directly 2026-07-27: the monastery's walled courtyard with tall cypresses and an overhanging pine, matching the described setting. Pin was genuinely wrong, not just approximate: the stored coordinates (37.9683, 23.7583) sat about 3.6km from the actual monastery. Corrected 2026-07-27 to the monastery building itself, cross-checked against three independent sources that all agree within metres (English Wikipedia's infobox coordinates, Nominatim's geocode of \"Kaisariani Monastery,\" and an OpenStreetMap way individually named \"Kaisariani Monastery\"/\"Μονή Καισαριανής\"). Kept `approximate` since this locates the monastery building, not a surveyed position for any specific tree in its courtyard.",
+      "notes": "Replaces the prior ath_010 (\"The Trees of Kaisariani Monastery\"), which Hidde ruled a collectible-point test failure on 2026-08-01 (an undated ensemble whose real destination is the monastery, not any one tree); id reused so the URL keeps resolving, per the Barcelona bcn_008 precedent. This entry is single-sourced for the tree itself: existence, species, exact address and the August 2023 height/girth measurement (26.55m / 0.92m girth) all come from the Greek Tree Registry (\"Mitroo Ellinikon Dentron\"), run by Oi Filoi ton Ethnikon Parkon (Friends of Hellenic National Parks), a scientific-committee-run registry that cooperates with forestry authorities. A second, independent source specifically confirming this tree could not be found after real effort (Commons, iNaturalist, Flickr, Greek and English news and neighbourhood-history searches all came up empty); flagged accordingly rather than published as confirmed. The Wikipedia source backs the neighbourhood-history context only, not the tree. No age is claimed since the registry records dimensions, not age, and none was found elsewhere. Location precision is approximate: Nominatim geocodes house number 103 on Drosopoulou to a specific building, not a surveyed position for the tree itself, which stands on the pavement outside it. No qualifying photo found (Commons, iNaturalist, Flickr, Openverse all searched); genuine gap, not for lack of trying.",
       "location_precision": "approximate",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Kaisariani_Moni_9.jpg",
-        "license": "Public domain",
-        "attribution": "Dimkoa, via Wikimedia Commons",
-        "status": "approved"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]
