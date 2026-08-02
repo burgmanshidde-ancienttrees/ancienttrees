@@ -5,6 +5,70 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+## Weekly analysis 2026-08-02
+
+First weekly analysis; only six daily entries exist (07-26 to 07-31), so
+this sets the scorecard's first row rather than showing a trend.
+
+**Scorecard**
+
+| Week ending | Impressions | Clicks | CTR | Visits (beacon) | Pageviews (beacon) | Directions/visit | App-CTA | Waitlist total | Submissions total |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-31 | 1,150 | 31 | 2.7% | 70 | 170 | n/a (not captured) | n/a (not captured) | 0 real (2 test rows) | 0 real (1 test row) |
+
+**What moved:**
+1. Impressions climbed from noise (i38-i117 in the days before 07-26) to a
+   197-249/day plateau by week's end, but clicks stayed single-digit and
+   flat (0-9/day) the whole week: the site is getting crawled and indexed,
+   not yet ranking well enough to convert (avg position 11.8-16.1, all
+   page two or worse).
+2. Beacon visits are the one number with a real, repeated up-move: 93
+   visits in the window ending 07-30, 122 in the window ending 08-01, per
+   three separate sessions' own `visitors.py` checks in LOG.md. Small, but
+   the first trend that isn't noise.
+3. Lisbon is the only page with meaningful clicks (6/10d) of anything on
+   the site; Amsterdam, Rome, Vienna and Porto trail with 2/10d each.
+   These five are exactly what Hidde's 08-01 dispatch already targets for
+   a quality round.
+4. Cloudflare's own top-line block ("Page views: 0, Unique visitors: 0")
+   has read zero every single day for six days straight while the beacon
+   reports real traffic on the same days: that block looks broken, not
+   quiet.
+5. Zero real waitlist or submission rows this week, only the one test row
+   each already flagged in CURATION.md as pipeline tests. Demand signal
+   is still exactly zero; Phase 1's trigger in GO_TO_MARKET.md has not
+   fired.
+
+**Suggestions, ranked:**
+1. **[run]** Finish Hidde's 08-01 quality round on Lisbon, Amsterdam,
+   Rome, Vienna, Porto (photos to 8/10, vague pins to confirmed, the
+   ICNF corrections). These five pages carry 100% of this week's clicks
+   (c6/i79, c2/i108, c2/i165, c2/i37, c2/i8), so any ranking or CTR gain
+   there compounds directly instead of spreading thin across 78 cities.
+2. **[run]** Diagnose the Cloudflare Web Analytics block: 0 page views
+   and 0 unique visitors every day for six straight days while the
+   separate beacon shows 10-60 page views the same days. Either the
+   Cloudflare zone/binding is misconfigured or this metric is dead;
+   either fix it or drop the section, a guaranteed-zero line every day
+   is not a data point.
+3. **[run]** Check whether "quercus aggressive" -site:reddit.com -s is a
+   real query or a digest parsing artifact (the filter text reads like
+   it leaked into the query string). It repeats at avg position 2 with
+   real impressions, which is either a ranking worth understanding or a
+   broken query extraction that is currently polluting "top queries"
+   every day.
+4. **[sessie]** Add directions-click, app-cta, waitlist and submission
+   counts to the daily digest output. LOG.md confirms the events table
+   went live 2026-07-31, but DATA.md carries none of it, so this
+   scorecard cannot yet report the funnel ratios (directions-per-visit,
+   waitlist/submissions growth) the analysis is meant to track. Without
+   this the gap repeats every week.
+
+**Watch next week:** whether clicks start converting from the roughly
+1,150 impressions/week the site now draws (avg position moving below 10
+on any of the five SEO cities), and whether any real (non-test) waitlist
+or submission row appears now that the Supabase pipe is live.
+
 ## 2026-07-31 (previous UTC day)
 
 Cloudflare, ancienttrees.app:
