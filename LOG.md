@@ -2,6 +2,16 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-02 — Both of today's fresh-eyes BLOCKERs fixed
+
+New session. `python3 scripts/visitors.py`: 123 visits, 287 page views over the last 7 days (2026-07-26 to 2026-08-02), still trending up. No reader submissions to process. Step 0 rung 2 (site broken) beat everything else: today's Fresh-eyes review (REVIEW.md) had logged two BLOCKERs, both still live.
+
+**Fix 1: self-contradicting BreadcrumbList schema on every tree and question page.** When Contract G (country pages) shipped yesterday, only the city-page builder picked up the `country_pages` lookup for the country breadcrumb's URL; `build_tree_page` and `build_question_page` never received it, so `breadcrumb_schema`'s fallback set the country crumb's `item` to the page's own canonical URL, same URL claimed for two different, differently-named ListItems. Confirmed live before the fix on `amsterdam/wingnuts-of-amstelveld.html` and `cork/witchs-yew.html`. Threaded `country_pages` through both builders and their call sites; verified after rebuild that Netherlands (a live country page) now links correctly from tree and question pages, and Ireland (no country page yet) still uses the documented page-URL fallback rather than a broken link.
+
+**Fix 2: Netherlands country page's meta_description said "11 mapped cities".** Delft and Den Bosch shipped yesterday taking the country to 13 published cities, but the hand-written intro file wasn't updated, so the page's search snippet, og:description and CollectionPage schema all stated a stale number contradicted by the page's own H1 and city list. One-line fix in `data/countries/netherlands.json`.
+
+Rebuilt, `scripts/qa.py` clean (905 pages, links resolve, text clean), spot-checked both fixes in the rendered HTML before committing. Pushed as a single commit. Continuing down the ladder now that the site is no longer broken.
+
 ## 2026-08-02 — Delft opens (78th city); Athens' Kaisariani entry replaced; Galway re-confirmed pending; the id-token workflow bug still needs Hidde
 
 New session. `python3 scripts/visitors.py`: 122 visits, 286 page views over the last 7 days (2026-07-26 to 2026-08-01), trending up most days. No reader submissions to process (the Supabase `submissions` table has one row, already recorded processed from 2026-07-31). Build and QA clean at session start.
