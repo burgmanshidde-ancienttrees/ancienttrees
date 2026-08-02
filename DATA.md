@@ -5,6 +5,25 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+## 2026-08-01 (previous UTC day)
+
+Search Console: GSC_* secrets not configured; section skipped.
+
+Web Analytics (beacon, real browsers, cookieless):
+- Days (visits/pageviews): 07-25:v10/p10  07-26:v10/p20  07-27:v20/p20  07-28:v20/p50  07-29:v10/p10  07-30:v10/p10  07-31:v0/p60  08-01:v10/p60
+- Top paths: / (100); /cadiz (20); /lisbon (20); /rotterdam (10); /collections/europes-best-tree-city-trips (10)
+- Referrers: ancienttrees.app (150); (direct) (50); www.google.com (40)
+- Countries: NL (190); US (20); UA (10); AU (10); BE (10)
+- Devices: desktop (150); mobile (90)
+- Page load (8d): p50 360700ms, p90 1019000ms
+
+Site actions (yesterday): smoke-test 2
+Waitlist signups (total): 2.
+
+Machine: 4 chain attempts yesterday, 4 got real work time (~204 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Conclusion:** Volume is still noise-level (0 unique visitors yesterday, 0 over the window): direction is not readable and no strategic conclusion should be drawn from these numbers yet.
+
 ## Weekly analysis 2026-08-02
 
 First weekly analysis; only six daily entries exist (07-26 to 07-31), so
