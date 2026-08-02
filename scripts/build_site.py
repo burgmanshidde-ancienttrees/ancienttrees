@@ -864,7 +864,12 @@ def species_common(tree):
 
 
 def meta_from_story(story):
-    """Build a meta description from the story's opening sentences, max DESC_MAX."""
+    """Build a meta description from the story's opening sentences, max DESC_MAX.
+
+    A single sentence longer than the limit used to be cut mid-clause, which
+    silently threw away whatever the sentence was building toward (fresh-eyes
+    review, 2026-08-02: a description that stopped at "a single word" without
+    ever saying the word). Now it cuts on a word boundary and marks the cut."""
     sentences = re.split(r"(?<=[.!?]) ", story)
     out = ""
     for s in sentences:
@@ -872,7 +877,7 @@ def meta_from_story(story):
             break
         out = (out + " " + s).strip()
         if len(out) > DESC_MAX:
-            out = out[:DESC_MAX].rsplit(" ", 1)[0].rstrip(",.;:")
+            out = out[:DESC_MAX - 1].rsplit(" ", 1)[0].rstrip(",.;:") + "\u2026"
             break
     return out
 
@@ -930,6 +935,7 @@ def season_intensities(peak_months):
 # unambiguous words in the label, and derives nothing when in doubt. Runs
 # backfill the field properly per Step 3.
 KIND_ICONS = {
+    "bare silhouette": '<svg viewBox="0 0 20 20" fill="none" stroke="#8C8577" stroke-width="1.6" stroke-linecap="round"><path d="M10 18V9"/><path d="M10 11 6 6M10 11l4-5M10 8 7.5 3.5M10 8l2.5-4.5"/></svg>',
     # PictureThis grammar (Hidde, 2026-08-01: "deze vorm en iconen meer
     # namaken"): each kind carries its own colour; rounded, friendly forms.
     "flowers": '<svg viewBox="0 0 20 20" aria-hidden="true"><g fill="#E8705F"><ellipse cx="10" cy="4.6" rx="2.6" ry="3.2"/><ellipse cx="15.4" cy="10" rx="3.2" ry="2.6"/><ellipse cx="10" cy="15.4" rx="2.6" ry="3.2"/><ellipse cx="4.6" cy="10" rx="3.2" ry="2.6"/></g><circle cx="10" cy="10" r="2.1" fill="#fff"/></svg>',
@@ -1079,12 +1085,17 @@ def breadcrumb_schema(items, page_url=None):
     # crumb. Passing page_url is what makes those crumbs valid; without it they
     # are dropped, which is the "Missing field item" error Search Console flagged.
     elements = []
+    last = len(items)
     for i, (name, url) in enumerate(items, 1):
-        item = url or page_url
-        if not item:
-            # Catch it at build time rather than weeks later in Search Console.
-            ERRORS.append(f"breadcrumb crumb {name!r} has no item URL and no page_url fallback")
-        el = {"@type": "ListItem", "position": i, "name": name, "item": item}
+        el = {"@type": "ListItem", "position": i, "name": name}
+        if url:
+            el["item"] = url
+        elif i == last and page_url:
+            # Only the final crumb may fall back to this page: that is what
+            # Google's docs prescribe. An intermediate crumb doing the same
+            # claimed the country WAS this tree page (fresh-eyes review,
+            # 2026-08-02). A ListItem with a name and no item is valid.
+            el["item"] = page_url
         elements.append(el)
     return {"@type": "BreadcrumbList", "itemListElement": elements}
 
