@@ -434,6 +434,23 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .ctry-body span { display: block; font-size: 12.5px; color: var(--ink-mid); margin-top: 2px; }
 .ctry-chev { color: var(--ink-light); font-size: 26px; line-height: 1; flex-shrink: 0; padding-right: 0.2rem; }
 .ctry-row:hover .ctry-body b { text-decoration: underline; }
+.phenology { margin: 0 0 1.6rem; }
+.phenology h2 { font-size: 1.05rem; margin-bottom: 0.6rem; }
+.ph-head, .ph-row { display: flex; align-items: center; gap: 0.6rem; }
+.ph-label { flex: 0 0 5.6rem; font-family: var(--sans); font-size: 11.5px; color: var(--ink-mid); text-align: right; }
+.ph-cells { display: grid; grid-template-columns: repeat(12, 1fr); gap: 2px; flex: 1; min-width: 0; }
+.ph-cell { height: 13px; border-radius: 3px; background: #F1EFE8; }
+.ph-cell.ph-now { outline: 1.5px solid var(--ink); outline-offset: 1px; }
+.ph-m { font-family: var(--sans); font-size: 9.5px; color: var(--ink-light); text-align: center; letter-spacing: -0.02em; }
+.ph-m.ph-now-m { color: var(--ink); font-weight: 700; }
+.ph-row { margin-top: 4px; }
+.ph-note { display: block; margin: 2px 0 6px 6.2rem; font-family: var(--sans); font-size: 11.5px; color: var(--ink-mid); }
+.ph-foot { margin: 0.7rem 0 0 6.2rem; font-family: var(--sans); font-size: 11px; color: var(--ink-light); }
+@media (max-width: 800px) {
+  .ph-label { flex-basis: 4.4rem; font-size: 11px; }
+  .ph-note, .ph-foot { margin-left: 5rem; }
+  .ph-m { font-size: 8px; }
+}
 .sp-citylink { color: inherit; text-decoration: none; }
 .sp-citylink:hover { text-decoration: underline; }
 .collect-dialog { border: none; border-radius: 16px; padding: 1.5rem 1.6rem; margin: auto; max-width: 26rem; width: calc(100vw - 3rem); box-shadow: 0 18px 60px rgba(0,0,0,0.3); font-family: var(--sans); color: var(--ink); }
@@ -2104,6 +2121,8 @@ def group_trees_by_species(renderable):
     return groups
 
 
+MONTHS_SHORT = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 SPECIES_MIN_TREES = 3
 COUNTRY_MIN_CITIES = 3  # Contract G: fewer cities and a country page is a city duplicate
 
@@ -2154,6 +2173,84 @@ COLLECT_JS = """
 })();
 </script>
 """
+
+
+PHENOLOGY = {}
+
+
+def load_phenology():
+    """Per-species year calendars (Hidde, 2026-08-02: every tree should carry a
+    calendar that is correct, not just a single peak). Phenology is a property
+    of the species in a climate, so it lives per species and gets shifted by
+    latitude at render time. A species without a file simply shows no calendar,
+    the same honest gap as a missing photo."""
+    d = DATA / "phenology"
+    if not d.exists():
+        return {}
+    out = {}
+    for f in sorted(d.glob("*.json")):
+        e = json.loads(f.read_text())
+        out[e["common_name"]] = e
+    return out
+
+
+def _shift(months, delta):
+    return sorted({((m - 1 + delta) % 12) + 1 for m in months})
+
+
+def phenology_for(tree, lat):
+    """The species calendar, shifted for where the tree actually stands. South
+    of about 42N spring runs a month early and leaves hang on later; north of
+    56N the reverse. Tropical latitudes get nothing: the temperate pattern
+    would simply be wrong there, and a wrong calendar is worse than none."""
+    e = PHENOLOGY.get(species_common(tree))
+    if not e or abs(lat) < 25:
+        return None
+    delta = -1 if lat < 42 else (1 if lat > 56 else 0)
+    out = dict(e)
+    for k in ("leaf", "flowers", "fruit", "colour", "bare"):
+        if e.get(k) and len(e[k]) < 12:
+            out[k] = _shift(e[k], delta)
+    return out
+
+
+def phenology_block(tree, lat):
+    ph = phenology_for(tree, lat)
+    if not ph:
+        return ""
+    rows = [
+        ("bare", "Bare", "#B9AE99", ph.get("bare_label")),
+        ("leaf", "In leaf", "#6E9147", ph.get("leaf_label")),
+        ("flowers", "Flowers", "#E8705F", ph.get("flower_label")),
+        ("fruit", "Fruit", "#E8A33D", ph.get("fruit_label")),
+        ("colour", "Autumn colour", "#D97843", ph.get("colour_label")),
+    ]
+    now = date.today().month
+    out = []
+    for key, label, colour, note in rows:
+        months = ph.get(key) or []
+        if not months:
+            continue
+        cells = "".join(
+            '<span class="ph-cell%s" style="%s"></span>' % (
+                " ph-now" if m == now else "",
+                ("background:%s" % colour) if m in months else "")
+            for m in range(1, 13))
+        note_html = '<span class="ph-note">%s</span>' % esc(note) if note else ""
+        out.append('<div class="ph-row"><span class="ph-label">%s</span>'
+                   '<span class="ph-cells">%s</span></div>%s'
+                   % (esc(label), cells, note_html))
+    if not out:
+        return ""
+    heads = "".join('<span class="ph-m%s">%s</span>' % (
+        " ph-now-m" if i == now else "", MONTHS_SHORT[i - 1]) for i in range(1, 13))
+    return """
+  <div class="phenology">
+    <h2>The tree's year</h2>
+    <div class="ph-head"><span class="ph-label"></span><span class="ph-cells">%s</span></div>
+    %s
+    <p class="ph-foot">Typical for this species where this tree stands. Exact weeks shift with the year and the weather.</p>
+  </div>""" % (heads, "".join(out))
 
 
 def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, country_pages=None):
@@ -2249,6 +2346,7 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, coun
     # A confirmed pin is the normal case and says nothing; only the
     # approximate warning earns a chip. The season story lives in the Best
     # time block below, not as an unexplained label up top.
+    phenology_html = phenology_block(tree, loc['latitude'])
     precision_chip = ('<span class="chip approx">pin approximate</span>'
                       if location_is_approximate(tree) else '')
     chips = (f'<p class="chip-row"><span class="chip">{esc(tree.get("age_estimate", "age unknown"))}</span>'
@@ -2288,6 +2386,7 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, coun
   {action_row}
   <div class="prose-block"><p>{esc(tree['story'])}</p></div>
   {season_html}
+  {phenology_html}
   <div class="map-embed"><div id="map" class="map"></div></div>
   <p class="go-note">The buttons above open directions and collecting. {esc(tree.get('transport', ''))}</p>
   {approx_note}
@@ -4442,6 +4541,8 @@ def main():
     # draft_collection_pages handling below), just unlinked and noindexed.
     public_collections = [c for c in collections if c.get("status") != "needs_curation"]
     species_intros = load_species_intros()
+    global PHENOLOGY
+    PHENOLOGY = load_phenology()
     country_intros = load_country_intros()
     cities_by_slug = {c["slug"]: c for c in cities}
     pages = []  # (relative path, html, canonical or None)
