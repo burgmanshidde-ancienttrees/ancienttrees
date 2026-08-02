@@ -555,6 +555,20 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .hero-links { display: flex; gap: 1.8rem; margin-top: 1.3rem; flex-wrap: wrap; justify-content: center; }
 .hero-link { background: none; border: none; cursor: pointer; font-family: inherit; color: #fff; font-size: 15.5px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
 .home-hero.poster .near-me-result { color: #fff; font-weight: 600; margin-top: 0.9rem; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 62rem; margin: 0 auto; padding: 0.4rem 2rem 2.4rem; }
+.step { display: block; text-decoration: none; color: var(--ink); font-family: var(--sans); text-align: center; }
+.step-ico { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 50%; background: var(--moss-light); color: var(--moss); margin-bottom: 0.6rem; }
+.step-ico svg { width: 22px; height: 22px; }
+.step b { display: block; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem; }
+.step span:last-child { display: block; font-size: 13.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.6; max-width: 19rem; margin: 0 auto; }
+.step:hover b { text-decoration: underline; }
+@media (max-width: 800px) {
+  .steps { grid-template-columns: 1fr; gap: 1.4rem; padding: 0.2rem 1.5rem 1.8rem; text-align: left; }
+  .step { display: grid; grid-template-columns: 46px 1fr; column-gap: 0.9rem; text-align: left; align-items: start; }
+  .step-ico { grid-row: 1 / span 2; margin-bottom: 0; }
+  .step b { margin-bottom: 0.1rem; }
+  .step span:last-child { max-width: none; margin: 0; }
+}
 .hero-sub { padding: 1.6rem 2rem; text-align: center; }
 .hero-sub p { max-width: 44rem; margin: 0 auto; font-size: 14.5px; color: var(--ink-mid); line-height: 1.65; }
 .hero-search input { border-radius: 999px; flex: 1; min-width: 0; border: 1px solid var(--cream-dark); border-radius: 8px; padding: 0.65rem 0.9rem; font-family: var(--sans); font-size: 15px; background: #fff; color: var(--ink); }
@@ -4084,6 +4098,23 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
 </div>
 <section class="hero-sub">
   <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of. Every tree free to explore.</p>
+</section>
+<section class="steps">
+  <a class="step" href="explore">
+    <span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+    <b>Find</b>
+    <span>Open the map and see the remarkable old trees around you, each one verified and placed.</span>
+  </a>
+  <a class="step" href="cities">
+    <span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-3 3-3 3-6s-3-3-3-6"/><circle cx="5" cy="4" r="1.6"/><circle cx="19" cy="20" r="1.6"/><path d="M9 19h8"/></svg></span>
+    <b>Walk</b>
+    <span>String a few of them into an afternoon, with the story of why each one is worth the stop.</span>
+  </a>
+  <a class="step" href="app">
+    <span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+    <b>Collect</b>
+    <span>Tick off the ones you have stood in front of, city by city. Collecting lives in the app.</span>
+  </a>
 </section>
 {fav_shelf}
 <section class="home-acts">
