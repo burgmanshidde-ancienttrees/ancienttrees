@@ -9,6 +9,7 @@ Sources:
 Stdlib only (hard rule 5). Safe to run twice a day: the second run is a no-op.
 """
 import datetime
+import glob
 import json
 import os
 import sys
@@ -73,19 +74,63 @@ def fetch_gsc(today):
     days = q({"startDate": start, "endDate": end, "dimensions": ["date"], "dataState": "all"})
     queries = q({"startDate": start, "endDate": end, "dimensions": ["query"], "rowLimit": 5, "dataState": "all"})
     pages = q({"startDate": start, "endDate": end, "dimensions": ["page"], "rowLimit": 5, "dataState": "all"})
-    return days, queries, pages
+    # Wider pull for the content-gap line below: the top 5 by clicks are
+    # almost always queries we already rank for, so finding one with no page
+    # needs a bigger pool to pick the highest-impression miss out of.
+    gap_queries = q({"startDate": start, "endDate": end, "dimensions": ["query"],
+                      "rowLimit": 25, "dataState": "all"})
+    return days, queries, pages, gap_queries
+
+
+def known_terms():
+    """Every city, country and species name a rendered page already covers.
+    Used to spot a Search Console query with no matching page (PRODUCT_TODO.md
+    item 1, 2026-07-31): a deterministic string match, not a page build, so a
+    miss here is a lead, not an action. Deliberately excludes collection
+    titles: their words ("trees", "ancient", "with") are generic enough to
+    false-match almost any query on this site and would swallow real gaps."""
+    terms = set()
+    for path in glob.glob(os.path.join(ROOT, "data/cities/*.json")):
+        d = json.load(open(path))
+        terms.add(d.get("city", "").lower())
+        terms.add(d.get("country", "").lower())
+    for path in glob.glob(os.path.join(ROOT, "data/countries/*.json")):
+        d = json.load(open(path))
+        terms.add(d.get("country", "").lower())
+    for path in glob.glob(os.path.join(ROOT, "data/species/*.json")):
+        d = json.load(open(path))
+        terms.add(d.get("common_name", "").lower())
+    return {t for t in terms if t}
+
+
+def find_content_gap(gap_queries):
+    """The top-impression query (10d) whose text matches no known city,
+    country or species term: a standing content lead, the kind that found us
+    before we had a page for it ("albero roma")."""
+    terms = known_terms()
+    misses = [r for r in gap_queries
+              if not any(t in r["keys"][0].lower() for t in terms if len(t) > 2)]
+    if not misses:
+        return None
+    return max(misses, key=lambda r: r["impressions"])
 
 
 def gsc_section(gsc):
     if gsc is None:
         return ("Search Console: GSC_* secrets not configured; section skipped.", None)
-    days, queries, pages = gsc
+    days, queries, pages, gap_queries = gsc
     days = [d for d in days if d.get("impressions") or d.get("clicks")]
     if not days:
         return ("Search Console: connected, but Google returned no rows for the window.", None)
     latest = days[-1]
     prev = days[-2] if len(days) > 1 else None
     trend = "  ".join("%s:c%d/i%d" % (d["keys"][0][5:], d["clicks"], d["impressions"]) for d in days)
+    gap = find_content_gap(gap_queries)
+    gap_line = (
+        "- Content lead: %r has no matching page (i%d, p%.0f)" % (
+            clean_query(gap["keys"][0]), gap["impressions"], gap["position"])
+        if gap else "- Content lead: none of the top 25 queries lack a matching page"
+    )
     lines = [
         "Search Console (freshest day Google provides, data lags 2-3 days):",
         "- %s: %d clicks, %d impressions, avg position %.1f%s" % (
@@ -96,6 +141,7 @@ def gsc_section(gsc):
             "%s (i%d, p%.0f)" % (clean_query(r["keys"][0]), r["impressions"], r["position"]) for r in queries) if queries else "- Top queries: none",
         "- Top pages (10d): " + "; ".join(
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages) if pages else "- Top pages: none",
+        gap_line,
     ]
     return "\n".join(lines), {"clicks": latest["clicks"], "impressions": latest["impressions"],
                                "prev_clicks": prev["clicks"] if prev else 0,
