@@ -155,6 +155,12 @@ If sources conflict or only one source exists, include the tree but set `curatio
 
 Stories and any page copy must satisfy SEO_GEO_BLUEPRINT.md — in particular P2 (answer first, in the first two sentences where the page is a question/city page) and P3 (unique content, no fill-in-the-city-name templating) — and follow TONE_OF_VOICE.md, including its calibration examples and hard bans.
 
+**Every tree carries a year calendar (Hidde, 2026-08-02: "elke boom een mooi overzicht met bladloos, blad, verkleuring, fruit, bloem, en die moeten gewoon kloppen").** Separate from `best_time`, which names one moment: the calendar shows the whole year, bare / in leaf / flowers / fruit / autumn colour, with the current month marked.
+
+It lives per species in `data/phenology/[species-slug].json`, not per tree, because phenology is a property of the species in a climate rather than a fact about an individual. The build shifts the months by latitude (a month early below 42N, a month late above 56N) and prints nothing at all below 25N, because the temperate pattern is simply wrong in the tropics and a wrong calendar is worse than none. Each phase may carry a short label saying what actually happens ("acorns drop, and a good mast year buries the ground in them"). The page states plainly that the weeks shift with the year.
+
+A species with no file shows no calendar: an honest gap, exactly like a missing photo. 25 species covering 302 tree pages exist as of 2026-08-02; adding the rest is normal run work, oldest-species-first by tree count. Every entry needs a real source, and evergreens get an empty bare row rather than an invented one.
+
 **Set `best_time` when, and only when, a tree has a real seasonal peak.** Broadened by Hidde on 2026-08-02, because the first reading was too narrow: a peak is anything a visitor would notice and enjoy on the day, not only a burst of colour. Three families count:
 - **Flower, leaf and colour**: blossom, autumn colour, catkins, fresh leaves. The original reading.
 - **Fruit, nuts and mast**: acorns underfoot in October, conkers, sweet chestnuts you can gather, figs, the olive harvest, mulberries. Hidde: "deze boom heeft nog steeds vruchten, eikels, kastanjes, op een moment wat leuk is om te weergeven." Use `kind: fruit`.
