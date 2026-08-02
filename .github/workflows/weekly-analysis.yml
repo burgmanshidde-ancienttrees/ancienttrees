@@ -64,4 +64,4 @@ jobs:
                level, say so rather than narrating trends. Suggestions must
                trace to a number in the data, never to taste.
             4. Commit ONLY DATA.md with message "Weekly analysis" and push.
-          claude_args: "--max-turns 40"
+          claude_args: "--max-turns 40 --allowedTools \"Bash(git:*),Bash(python3:*),Read,Write,Edit,Glob,Grep,WebSearch,WebFetch\""
