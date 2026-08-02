@@ -93,13 +93,25 @@ def gsc_section(gsc):
             (" (day before: c%d/i%d)" % (prev["clicks"], prev["impressions"])) if prev else ""),
         "- Days: %s" % trend,
         "- Top queries (10d): " + "; ".join(
-            "%s (i%d, p%.0f)" % (r["keys"][0][:40], r["impressions"], r["position"]) for r in queries) if queries else "- Top queries: none",
+            "%s (i%d, p%.0f)" % (clean_query(r["keys"][0]), r["impressions"], r["position"]) for r in queries) if queries else "- Top queries: none",
         "- Top pages (10d): " + "; ".join(
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages) if pages else "- Top pages: none",
     ]
     return "\n".join(lines), {"clicks": latest["clicks"], "impressions": latest["impressions"],
                                "prev_clicks": prev["clicks"] if prev else 0,
                                "prev_impressions": prev["impressions"] if prev else 0}
+
+
+def clean_query(q):
+    """Search Console hands back whatever the visitor typed, operators and
+    all. A query like `quercus aggressive -site:reddit.com -s` is a real
+    search someone ran, not a parsing bug, but the operators say nothing
+    about us; strip them so the digest reports the term (weekly analysis,
+    2026-08-02, suggestion 3)."""
+    import re as _re
+    q = _re.sub(r"-?\bsite:\S+", "", q)
+    q = _re.sub(r"(^|\s)-\S*", " ", q)
+    return " ".join(q.split())[:40] or "(operators only)"
 
 
 def fetch_cloudflare(token, today):
@@ -357,24 +369,32 @@ def build_entry(days, today, gsc_text):
             "with a sharper one when something real happens." % (second, first, 100.0 * (second - first) / first)
         )
 
-    return """## %s (previous UTC day)
-
-Cloudflare, %s:
+    # The zone block is structurally zero and always will be: it counts
+    # requests through Cloudflare's proxy, and this site's DNS lives at the
+    # registrar so no request ever passes through it (the "Invalid
+    # nameservers" notice in the dashboard is the same fact). Printed only
+    # when a number actually appears, so the report stops carrying a
+    # guaranteed zero every day (weekly analysis, 2026-08-02).
+    zone_block = ""
+    if y_req or y_views or y_uniq:
+        zone_block = """Cloudflare zone (proxied traffic), %s:
 - Page views: %d (day before: %d, %s)
 - Unique visitors: %d (day before: %d, %s)
 - Requests total: %d
 - Page views, last days: %s
 - Top countries by requests: %s
 
-%s
+""" % (ZONE_NAME,
+       y_views, b_views, delta(y_views, b_views),
+       y_uniq, b_uniq, delta(y_uniq, b_uniq),
+       y_req, trend, top_line)
+
+    return """## %s (previous UTC day)
+
+%s%s
 
 **Conclusion:** %s
-""" % (
-        yday.isoformat(), ZONE_NAME,
-        y_views, b_views, delta(y_views, b_views),
-        y_uniq, b_uniq, delta(y_uniq, b_uniq),
-        y_req, trend, top_line, gsc_text, conclusion,
-    )
+""" % (yday.isoformat(), zone_block, gsc_text, conclusion)
 
 
 def main():
