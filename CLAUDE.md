@@ -155,7 +155,13 @@ If sources conflict or only one source exists, include the tree but set `curatio
 
 Stories and any page copy must satisfy SEO_GEO_BLUEPRINT.md — in particular P2 (answer first, in the first two sentences where the page is a question/city page) and P3 (unique content, no fill-in-the-city-name templating) — and follow TONE_OF_VOICE.md, including its calibration examples and hard bans.
 
-**Set `best_time` when, and only when, a tree has a real seasonal peak.** This is the single strongest reason a page gives someone to actually go, because it turns "nice" into "this weekend". A tree with a pronounced moment gets:
+**Set `best_time` when, and only when, a tree has a real seasonal peak.** Broadened by Hidde on 2026-08-02, because the first reading was too narrow: a peak is anything a visitor would notice and enjoy on the day, not only a burst of colour. Three families count:
+- **Flower, leaf and colour**: blossom, autumn colour, catkins, fresh leaves. The original reading.
+- **Fruit, nuts and mast**: acorns underfoot in October, conkers, sweet chestnuts you can gather, figs, the olive harvest, mulberries. Hidde: "deze boom heeft nog steeds vruchten, eikels, kastanjes, op een moment wat leuk is om te weergeven." Use `kind: fruit`.
+- **Bare winter structure**: a veteran tree with real architecture is at its most legible in January, when the leaves are gone and the whole frame of it shows. Hidde: "geen bladeren in de winter wat leuk is om te weergeven." Use `kind: bare silhouette`. Only for trees whose shape is actually the point: a hollow, buttressed or wildly limbed veteran, never a young street tree.
+
+Two limits keep this honest. **A tree gets one `best_time`, so pick its strongest moment**, and **scarcity is what makes the badge mean anything**: if every deciduous tree claimed both an autumn fruit peak and a winter silhouette, the "at its best right now" badge would light up permanently and stop being a reason to go anywhere. Give it to the trees where the moment is genuinely worth the trip and leave the rest empty.
+ This is the single strongest reason a page gives someone to actually go, because it turns "nice" into "this weekend". A tree with a pronounced moment gets:
 
 ```json
 "best_time": { "months": [11], "label": "late November, when the ginkgo turns gold" }
