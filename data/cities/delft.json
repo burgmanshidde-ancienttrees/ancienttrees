@@ -1,0 +1,149 @@
+{
+  "city": "Delft",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Delft's oldest tree predates the Netherlands' own royal house by two centuries and still fruits every summer in a working almshouse courtyard. Its youngest tree is a graft from Germany, planted specifically to keep William of Orange's memory rooted in the city where he died. Four verified trees, one of them a living link to a 1944 discovery once thought extinct.",
+  "meta_description": "Delft's oldest tree is a 319-year-old mulberry in a 1707 almshouse courtyard. Four verified ancient trees, real stories, how to reach each one.",
+  "question_answer": "Delft's oldest tree is a black mulberry in the courtyard of Hofje van Pauw on Paardenmarkt, planted in 1707 when the almshouse was founded and roughly 319 years old. Tree specialist Jorn Copijn identified it in 2023 as a rare subspecies likely brought to the Netherlands by the VOC.",
+  "question_meta": "A 319-year-old mulberry in a 1707 almshouse courtyard is Delft's oldest tree. Where to find it, and the city's other three verified ancient trees.",
+  "question_context": "The mulberry's age comes from the founding date of Hofje van Pauw itself, the almshouse Elisabeth Pauw endowed by testament in 1707, rather than a ring count or measured estimate. Copijn Boomspecialisten's 2023 assessment identified the tree as Morus nigra subsp. multicaulus, a subspecies not formally recorded in Europe until 1821, well over a century after this specimen was already growing in the courtyard. The most likely explanation ties the tree to Delft's own trading history rather than European botany: the Dutch East India Company traded out of India, where the subspecies originates, from 1700, and kept a chamber in Delft from 1602, making a returning VOC ship a more plausible route for the tree than any documented import. The hofje's courtyard gate on Paardenmarkt stays open to visitors during the day, though the houses around the tree are still lived in. None of Delft's other verified trees currently outdate it; the next oldest, a set of horse chestnuts on Sint Agathaplein, is over two centuries younger.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Delft?",
+      "a": "A black mulberry in the courtyard of Hofje van Pauw on Paardenmarkt, planted in 1707 when the almshouse was founded, roughly 319 years old."
+    },
+    {
+      "q": "Are Delft's ancient trees free to visit?",
+      "a": "The mulberry's courtyard and Sint Agathaplein are both free public access. The Prinsentuin linden sits on Museum Prinsenhof's grounds, which are mid-renovation through 2027, so garden access may be temporarily restricted. TU Delft's Botanic Garden, home to the dawn redwoods, charges standard admission."
+    },
+    {
+      "q": "Why does Delft have a tree grown from a twig cut in Germany?",
+      "a": "The Prinsentuin's winter linden, planted in 1956, grew from a cutting of the Wilhelmslinde in Dillenburg, the tree William of Orange grew up beside before leading the Dutch revolt and being assassinated in Delft in 1584. Supporters planted its cuttings at sites tied to his life."
+    },
+    {
+      "q": "What are the dawn redwoods at TU Delft's Botanic Garden?",
+      "a": "Two Metasequoia glyptostroboides, a species known only from fossils until a living stand was found in China in 1944. Delft's specimens descend from the 1947 international seed collection that followed, making them among the first of their species grown in Europe."
+    }
+  ],
+  "trees": [
+    {
+      "id": "del_001",
+      "name": "The Black Mulberry of Hofje van Pauw",
+      "species": "Black Mulberry (Morus nigra subsp. multicaulus)",
+      "age_estimate": "319 years, planted 1707",
+      "age_min": 300,
+      "age_max": 320,
+      "location": {
+        "address": "Hofje van Pauw, Paardenmarkt 54, Delft",
+        "latitude": 52.0163504,
+        "longitude": 4.3576182,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "The black mulberry in the courtyard of Hofje van Pauw has been fruiting since before the Dutch East India Company's Delft chamber was a century old. Tree specialist Jorn Copijn identified it in 2023 as Morus nigra subsp. multicaulus, a subspecies not officially recorded in Europe until 1821, more than a century after this specimen was already growing here. The likely explanation involves no botanist at all: the VOC had traded out of India, where the subspecies originates, since 1700, and Delft kept its own VOC chamber from 1602, so a sea captain or merchant returning home is the more probable route than any recorded introduction. At 319 years old it ranks among the oldest fruit trees documented in the Netherlands. The hofje itself, an almshouse Elisabeth Pauw endowed by testament in 1707 for women who had fallen on hard times, still houses residents today, now adults with intellectual disabilities, and the tree has outlived every one of them. Its courtyard gate on Paardenmarkt stays unlocked during the day. Visitors are asked to keep to the garden and skip the windows, since the houses ringing the tree are still lived in, not a museum.",
+      "verified_sources": [
+        "https://www.boomzorg.nl/article/43633/moerbei-uit-1707-in-delfts-hofje-moet-op-monumentale-bomenlijst",
+        "https://platform-groen.nl/dashboard/nieuws/zet-moerbei-uit-1707-op-monumentale-bomenlijst/"
+      ],
+      "access": "Free, public courtyard accessible via the gatehouse during the day; the surrounding houses are private residences, please respect residents' privacy",
+      "transport": "Delft railway station, then about a 10-minute walk",
+      "curation_status": "hidde_approved",
+      "location_precision": "confirmed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "del_002",
+      "name": "The Horse Chestnuts of Sint Agathaplein",
+      "species": "Horse Chestnut (Aesculus hippocastanum and Aesculus x carnea)",
+      "age_estimate": "roughly 106 years, planted 1920",
+      "age_min": 100,
+      "age_max": 110,
+      "location": {
+        "address": "Sint Agathaplein, Delft",
+        "latitude": 52.0123651,
+        "longitude": 4.3548642,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "Five horse chestnuts on Sint Agathaplein, three white-flowered and two red, have stood outside the building where William of Orange was shot dead since 1920, planted as part of a coordinated square-wide planting rather than growing in on their own. The address carries more history than the trees themselves: Museum Prinsenhof occupies the former convent where William, leader of the Dutch revolt against Spanish rule, was assassinated on the staircase in 1584, and the bullet holes are still in the wall inside. De Boominspecteurs, commissioned by the municipality to assess the square's trees ahead of a major renovation, confirmed the chestnuts as part of the site's protected planting. The renovation itself started in 2025 and is due to finish in 2027, with the museum closed for the duration, and the municipality has stated the square's monumental trees are being kept in the new design even where other, younger planting is not. What that means for a visitor right now is straightforward caution rather than a locked gate: Sint Agathaplein is a public square, but a live building site sits next to it, so the usual free, unrestricted access may be temporarily altered until the work finishes.",
+      "verified_sources": [
+        "https://www.boominspecteurs.nl/nieuws/onderzoek-en-advies-st-agathaplein-prinsentuin-delft/",
+        "https://www.delft.nl/sites/default/files/2025-04/lijst-monumentale-bomen-in-delft.pdf"
+      ],
+      "access": "Sint Agathaplein is a free public square; an active construction site next door (the Prinsenhof renovation, underway to 2027) may temporarily affect the immediate surroundings",
+      "transport": "Delft railway station, then about a 10-minute walk",
+      "curation_status": "flagged",
+      "notes": "Planting year (1920) and species mix (3 white, 2 red) sourced from De Boominspecteurs' 2024/2025 municipal assessment; independently corroborated by the municipality's own 2007 monumental-trees register, which lists the same square, count and species split (though without a planting date). Flagged for the ongoing Prinsenhof renovation (started 2025, due 2027): the municipality has stated its monumental trees are being kept in the new design, but current day-to-day access to the immediate area may vary while construction continues.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "del_003",
+      "name": "The Willemslinde of the Prinsentuin",
+      "species": "Winter Linden (Tilia cordata)",
+      "age_estimate": "roughly 70 years, planted 1956",
+      "age_min": 65,
+      "age_max": 75,
+      "location": {
+        "address": "Prinsentuin, Museum Prinsenhof, Sint Agathaplein 1, Delft",
+        "latitude": 52.0123651,
+        "longitude": 4.3548642,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "This winter linden did not grow from a seed that fell nearby. It grew from a twig cut from the Wilhelmslinde in Dillenburg, Germany, the tree under which William of Orange spent his childhood before he became the reluctant leader of the Dutch revolt and was assassinated in Delft in 1584. Supporters of the House of Orange took cuttings from the Dillenburg original and planted them at sites tied to William's life, and this one went into the Prinsentuin, the garden beside Museum Prinsenhof, in 1956. It is by a wide margin the youngest tree on this list, not even a century old against the mulberry's three, but it carries the most direct physical link to the man Delft is built around commemorating. The museum grounds are mid-renovation as of 2026, work that started in 2025 and runs to 2027, and the municipality has said the garden's historic trees are being kept rather than cleared for the new design. Until the museum reopens, treat the Prinsentuin as a garden worth checking on rather than one guaranteed open on any given day.",
+      "verified_sources": [
+        "https://www.boominspecteurs.nl/nieuws/onderzoek-en-advies-st-agathaplein-prinsentuin-delft/",
+        "https://www.dillenburg.de/kultur-tourismus/erleben/historischer-weg/wilhelmslinde/"
+      ],
+      "access": "Museum Prinsenhof and its garden are mid-renovation (started 2025, due to reopen 2027-2028); the municipality has confirmed the garden's historic trees are being kept, but the Prinsentuin itself may not be openly walkable until the work finishes, check current status before visiting",
+      "transport": "Delft railway station, then about a 10-minute walk",
+      "curation_status": "flagged",
+      "notes": "The 1956 planting date and Dillenburg-graft story come from De Boominspecteurs' municipal assessment; the Dillenburg connection is independently corroborated by the Wilhelmslinde's own official Dillenburg tourism page, which confirms cuttings from the original tree were planted at sites tied to William of Orange's life, though it does not itself name Delft's exact planting year. Flagged mainly for the live construction context: the garden is inside an active renovation site as of 2026, so treat the access note above as load-bearing, not a formality.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "del_004",
+      "name": "The Dawn Redwoods of TU Delft's Botanic Garden",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "age undocumented, among the first of the species grown in Europe after its 1944 rediscovery",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Botanic Garden TU Delft, Poortlandplein 6, Delft",
+        "latitude": 52.0075,
+        "longitude": 4.37111,
+        "neighbourhood": "Wippolder"
+      },
+      "story": "Every dawn redwood alive today, anywhere in the world, descends from a single discovery: a species known only from 150-million-year-old fossils, presumed extinct, until a forester found a living stand of it in a remote Chinese valley in 1944. An international seed-collecting expedition followed in 1947, and botanical gardens across Europe, including several in the Netherlands, raised their first Metasequoia glyptostroboides from that single haul. Two of them now dominate the middle section of TU Delft's Botanic Garden, tall enough to be the garden's own reference point long before a visitor reaches the rarer specimens around them. Nobody recorded the exact planting year for these two, so no source gives a precise age, only the certainty that they belong to the first generation of the species ever grown outside China since its rediscovery, making them roughly seventy to eighty years old by extension rather than by record. The garden charges standard admission and sits a short walk from Delft's main station, a working research collection rather than a park, with the redwoods' feathery, deciduous foliage turning copper in autumn before it drops, unusual for a conifer and part of what first convinced botanists this was something genuinely new.",
+      "verified_sources": [
+        "https://www.tudelft.nl/en/hortus-botanicus/discover-the-hortus-botanicus/a-walk-through-the-garden",
+        "https://www.dendrologie.nl/botanische-tuin-tu-delft/"
+      ],
+      "access": "Paid entry, standard botanic garden admission",
+      "transport": "Delft railway station, then about a 15-minute walk, or tram/bus to TU Noord",
+      "curation_status": "flagged",
+      "notes": "Both sources (TU Delft's own garden guide and the Dutch Dendrological Society) independently describe these two Metasequoia as among the earliest planted in the Netherlands following the species' 1944 rediscovery and the 1947 international seed-collecting expedition, but neither gives an exact planting year for the Delft specimens specifically. No age is asserted (age_min/max left at 0) rather than guessed; the roughly 70-80 year figure implied by the story text is explicitly framed as inference from the species' introduction history, not a documented date. No qualifying photo found (Commons category for TU Delft's garden has no Metasequoia-specific image); genuine gap.",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
