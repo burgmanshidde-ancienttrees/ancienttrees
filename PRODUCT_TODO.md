@@ -1,5 +1,7 @@
 ## One small SEO win from the competitor comparison (2026-07-31, corrected 2026-08-01)
 
+DONE 2026-08-02 (built in run): `scripts/daily_digest.py` now pulls a wider (25-row) query batch and adds a "Content lead" line to the GSC section: the highest-impression query whose text matches no known city, country or species name. Deterministic string match against `data/cities`, `data/countries` and `data/species`, collection titles deliberately excluded (their words are generic enough to swallow real gaps). No page gets built from it. Verified with synthetic GSC payloads (`known_terms()`/`find_content_gap()`/`gsc_section()` all return correct results), since no live GSC secrets are available in this environment to exercise it against real queries; grep `Content lead:` in `DATA.md` once a real gap query appears.
+
 **Query mining line in the daily digest**: extend scripts/daily_digest.py's GSC section with one line: the top query (by impressions, 10d) that has NO matching page on the site, as a standing content lead ("albero roma" found us before we had anything Italian). Deterministic string match against the sitemap's slugs is enough; no page gets built from it automatically.
 
 (The FAQPage-schema item that briefly stood here was withdrawn: question pages have carried a full FAQPage stack since the original blueprint build, verified in output 2026-08-01 with four Q&A pairs per page. Lesson repeated: grep before queueing.)
