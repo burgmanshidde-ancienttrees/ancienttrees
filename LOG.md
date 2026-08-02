@@ -2,6 +2,14 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-02 — Product work: the query-mining content-gap line
+
+Same session, continued. With both BLOCKERs fixed, checked rung 4/5/6 before dropping to product work: city-list.json has zero pending cities in Spain, Japan or Portugal (the current-focus countries all have their listed cities at `needs_curation` already), and Porto's remaining photo/pin gaps are extensively documented dead ends across many prior sessions (CURATION.md, re-hunting forbidden). Couldn't reach `gh` this session (every `gh run list`/`gh workflow run` call was blocked by the sandbox regardless of the allowlist, a new limitation worth a future session checking), so skipped the smoke-test and stale-workflow checks silently rather than guess. Went to PRODUCT_TODO.md, top of the queue.
+
+**Built the query-mining line from PRODUCT_TODO.md item 1** (open since 2026-07-31): `scripts/daily_digest.py`'s GSC section now pulls a wider 25-row query batch and reports the highest-impression query that matches no known city, country or species name, a standing content lead the same way "albero roma" once found us before we had anything Italian. Deliberately matches against city/country/species names only, not collection titles: an early version using collection-title words false-matched almost every query on "trees", "ancient" and similar generic words, which would have buried real gaps; caught by testing against synthetic payloads before shipping. Verified with hand-built GSC responses since no live secrets are available in this session to exercise it against real queries. Also ran the script once to confirm it behaves, which had the honest side effect of backfilling DATA.md's missing 2026-08-01 entry (the scheduled workflow evidently missed that day).
+
+Rebuilt, `qa.py` clean, PRODUCT_TODO.md item marked done, committed and pushed.
+
 ## 2026-08-02 — Both of today's fresh-eyes BLOCKERs fixed
 
 New session. `python3 scripts/visitors.py`: 123 visits, 287 page views over the last 7 days (2026-07-26 to 2026-08-02), still trending up. No reader submissions to process. Step 0 rung 2 (site broken) beat everything else: today's Fresh-eyes review (REVIEW.md) had logged two BLOCKERs, both still live.
