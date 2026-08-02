@@ -3,9 +3,9 @@
   "country": "Portugal",
   "status": "needs_curation",
   "intro": "Lisbon officially records almost every notable tree in the city. Since a 2012 law, the state can formally classify select specimens as trees of public interest, and Lisbon holds more of them than any other Portuguese municipality. Its oldest are four hollow olive trees outside a hilltop chapel in Alcântara, older than the Braganza dynasty. Its strangest is a rubber fig that escaped a cracked flowerpot in Mouraria and swallowed a street. Between them sit a bleeding dragon tree, a cypress mistaken for a cedar, and the Portuguese parliament's private tipu. All but one are free to visit.",
-  "meta_description": "Lisbon's oldest trees are classified by law. Meet the 457-year-old olives of Santo Amaro and nine more, from a dragon tree to a rogue rubber fig.",
+  "meta_description": "Lisbon's oldest trees are classified by law. Meet the 457-year-old olives of Santo Amaro, a dragon tree nobody can age, and ten more.",
   "question_answer": "The oldest tree in Lisbon is one of four olive trees outside the Capela de Santo Amaro in Alcântara, estimated at around 457 years old, the only trees in the city with documented ages predating the 18th century. They stand in a small hilltop garden with a well known river view, an eleven minute walk from Alcântara-Terra train station.",
-  "question_meta": "The 457-year-old olive trees of Santo Amaro are Lisbon's oldest. Their exact location, how to reach them, and nine more remarkable trees nearby.",
+  "question_meta": "The 457-year-old olive trees of Santo Amaro are Lisbon's oldest. Their exact location, how to reach them, and eleven more remarkable trees.",
   "question_context": "Lisbon keeps its oldest trees close to its water. The four olive trees at the Capela de Santo Amaro have grown against the wall of a small circular hilltop chapel in Alcântara since sometime in the 1500s, making them roughly 457 years old by the city's own classification records, decades older than anything else on this list. The chapel itself, built in 1549, is a national monument, but the trees have outlasted several rounds of restoration to the building beside them. Their runner up in age is Lisbon's dragon tree in the Jardim Botânico da Ajuda, which was already a mature adult when transplanted into the city's first botanical garden in 1768, making it at least 258 years old. Between them, the two trees frame two very different kinds of longevity: quiet olives outside a functioning chapel, and a dramatic, half collapsed dragon tree behind paid admission and a steel prop. Getting to the olive trees is straightforward: Alcântara-Terra train station on the Cascais line, then an eleven minute walk uphill past the Miradouro de Santo Amaro, one of the better river views in the city and usually far quieter than the famous ones downtown.",
   "faq": [
     {
@@ -359,6 +359,68 @@
       },
       "curation_status": "flagged",
       "notes": "Not an ancient tree: origin and exact age are unknown, and researchers who have examined it consider it a modern escapee from a broken pot, likely under 40 years old. Included for its visual spectacle and local renown rather than its age, per the qualifying criteria in CLAUDE.md. No official classification or protected status; access and public visibility are well documented, unlike its history.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lis_011",
+      "name": "The Fig of the Estrela Garden",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "about 150 years",
+      "age_min": 100,
+      "age_max": 175,
+      "location": {
+        "address": "Jardim da Estrela (Jardim Guerra Junqueiro), Praça da Estrela, 1200-667 Lisboa",
+        "latitude": 38.71428,
+        "longitude": -9.16008,
+        "neighbourhood": "Estrela"
+      },
+      "story": "The city of Lisbon has bolted a small metal plate to this trunk giving the species, the country it came from and, where the age should be, a single word: unknown. That is unusually honest for a municipality, and it is also the most interesting thing about the tree. The garden around it opened in April 1852 after ten years of stop-start construction, so the fig cannot be much more than a century and three quarters old, which for something this bulky is the surprise. Moreton Bay figs grow at a speed that makes ordinary trees look idle. The plate arrived in 2020, when Lisbon gave 27,610 of its trees an identity card and hung QR codes on around 750 of them. Look up and you see why this species unsettles people: aerial roots hang from the limbs like rope, and where they reach soil they thicken into new trunks, so the tree slowly becomes a colony of itself. It is not alone here either. At least five mature figs stand in these five hectares, and the one at the pond's edge, roots spilling over the kerb toward the ducks, is the one everybody photographs.",
+      "verified_sources": [
+        "https://pt.wikipedia.org/wiki/Jardim_da_Estrela",
+        "https://www.timeout.pt/lisboa/pt/atraccoes/jardim-da-estrela",
+        "https://www.portaldojardim.com/pdj/2014/04/21/jardim-da-estrela-jardim-guerra-junqueiro-um-espaco-diferente-e-emblematico-com-159-anos-de-historia/"
+      ],
+      "access": "Free, open daily 07:00 to midnight",
+      "transport": "Tram 25E or 28E to Estrela (Basílica), then about 2 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Lisbon%2C_Jardim_da_Estrela%2C_Moreton_Bay_fig.JPG",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Dguendel, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is genuinely undocumented: Lisbon's own QR identification plate on this tree records the age as 'desconhecida'. The range given is bounded by the garden's 1852 opening and calibrated against ICNF-classified Ficus macrophylla elsewhere in Lisbon (Príncipe Real 145 years, Largo Hintze Ribeiro 100, Jardim Constantino 107). Not in the ICNF register: the nearest classified tree is 494m away. Pin is the fig at the pond's edge, the photographed and most-visited of the park's five or more mature figs; approximate because the park's figs are scattered and no source distinguishes them individually.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "lis_012",
+      "name": "The Dragon Tree of the Estrela Garden",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "unknown, planted after the garden opened in 1852",
+      "age_min": 100,
+      "age_max": 175,
+      "location": {
+        "address": "Jardim da Estrela (Jardim Guerra Junqueiro), Praça da Estrela, 1200-667 Lisboa",
+        "latitude": 38.714894,
+        "longitude": -9.159779,
+        "neighbourhood": "Estrela"
+      },
+      "story": "Nobody can tell you how old this tree is, and that is a property of the species rather than a gap in the paperwork. A dragon tree is not a tree in the ordinary sense: it lays down no annual rings, so the one method that reliably ages an oak or a beech simply does not apply. Botanists count branch generations instead, because the crown forks only after each flowering, which happens at intervals of a decade or more. What that produces is this shape, a trunk splitting into a tight umbrella of stiff blue-green blades that looks less grown than engineered. Cut the bark and the sap runs red, which is where the name comes from and why the resin was traded across medieval Europe as dragon's blood, used for varnish, medicine and dye. The species belongs to the Canary Islands and Madeira, where it is now scarce in the wild. This one has stood among the palms and benches near the centre of the garden since some point after 1852, quietly outliving every gardener who has worked around it, and Lisbon has a second on our map in the botanical garden at Ajuda.",
+      "verified_sources": [
+        "https://www.timeout.pt/lisboa/pt/atraccoes/jardim-da-estrela",
+        "https://pt.wikipedia.org/wiki/Jardim_da_Estrela",
+        "https://www.portaldojardim.com/pdj/2014/04/21/jardim-da-estrela-jardim-guerra-junqueiro-um-espaco-diferente-e-emblematico-com-159-anos-de-historia/"
+      ],
+      "access": "Free, open daily 07:00 to midnight",
+      "transport": "Tram 25E or 28E to Estrela (Basílica), then about 2 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Lisbon%2C_Jardim_da_Estrela%2C_Canary_Islands_dragon_tree.JPG",
+        "license": "CC BY 4.0",
+        "attribution": "Dguendel, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "No published age exists and dragon trees cannot be aged by rings; the range is bounded only by the garden's 1852 opening. Not in the ICNF register. Pin is a 12-observation iNaturalist centroid with under 19m spread, all with stated accuracy of 10m or better, so the individual is identifiable on the ground.",
       "location_precision": "confirmed"
     }
   ],
