@@ -171,10 +171,10 @@
       "access": "Free, public garden beside the Assembleia da República",
       "transport": "2 min walk from São Bento train station (Linha de Sintra)",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Chaimite_no_Jardim_da_Pra%C3%A7a_da_Constitui%C3%A7%C3%A3o_de_1976.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "GualdimG, via Wikimedia Commons",
-        "status": "approved"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
@@ -186,7 +186,8 @@
           5
         ],
         "label": "late winter into spring, when the garden turns a startling shade of orange"
-      }
+      },
+      "notes": "Photo removed 2026-08-02: the approved file (Chaimite no Jardim da Praca da Constituicao de 1976) is a photograph of an armoured car parked in the garden, not of the tipu tree. Caught by Hidde on the live site. Any replacement must show the tree itself, per the Cadiz standard."
     },
     {
       "id": "lis_006",
