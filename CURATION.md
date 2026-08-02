@@ -1,3 +1,21 @@
+## 2026-08-02 — Den Bosch opens: 4 entries (6 specimens), sourced to the city's own live GIS tree register
+
+Same session, straight after Delft. Den Bosch (s-Hertogenbosch) had 1-2 partial candidates from a 2026-07-31 session that ran out of search budget, with two named leads (Weichselboom of Parklaan, solid; Sycamore of Bastion Oranje, single-sourced with an unresolved species disagreement) plus several unfinished threads (Bastion Vught's three trees, Zuiderpark's poplar, a possible sequoia).
+
+**Found and directly queried the municipality's own live tree register**, a public ArcGIS REST service (`geoproxy.s-hertogenbosch.nl/.../Beschermde_bomen/MapServer/10`, 1,907 records), independent of monumentaltrees.com which blocked this session's fetch tooling with a 403 throughout. Every fact below was verified by querying this service directly and checking the returned JSON myself, not taken from a subagent's summary on faith. Coordinates converted from Dutch RD (Rijksdriehoek) to WGS84 using the standard Bonfait approximation formula (accurate to a few metres), computed directly rather than trusting a manually-eyeballed conversion.
+
+**Shipped 4 entries covering 6 register specimens**: the Weichselboom of Parklaan (`dbo_001`, Prunus mahaleb, ~100 years, register id G-0284, girth 276cm, rooted against the medieval city wall, 2022 Bomen Top 50 nominee), the Norway Maple of Bastion Oranje (`dbo_002`, Acer platanoides, ~120 years, register id G-0286, girth 427cm, the oldest verified entry, `hidde_approved`: this bastion's 1634 construction, 1880s windmill demolition and park conversion under J.M. Marechal are corroborated by two sources independent of the register, erfgoedshertogenbosch.nl and bastionoranje.nl), the Plane, Lime and Silver Maple of Bastion Vught (`dbo_003`, an ensemble entry for three separately registered trees, ids G-0309/G-0310/G-0311, standing within ~40m of each other on one of only three surviving bastions from the city's fortifications, single-sourced to the register, flagged), and the Poplar of Zuiderpark (`dbo_004`, Populus balsamifera, ~90 years, register id G-1058, 33m tall, single-sourced, flagged).
+
+**The species disagreement resolved, not just relabeled**: Bastion Oranje genuinely has two Norway Maples (register ids G-0286 girth 427cm and G-0287 girth 317cm) plus, per bastionoranje.nl's own 1996-survey-based history, a sycamore maple elsewhere on the same bastion. The older sources' disagreement was two different real trees being described inconsistently, not one tree misidentified; shipped the larger, register-confirmed G-0286 as the entry.
+
+**A real ambiguity from the prior session resolved rather than carried forward**: a "sequoia" mentioned near "Zuiderpark" in earlier notes could not be confirmed as Den Bosch's rather than The Hague's separate, already-published Zuiderpark. Queried the register in a wide radius around Den Bosch's Zuiderpark: no sequoia/sequoiadendron/wellingtonia record exists there. Not used, and the entry's notes field states this explicitly so it isn't re-investigated.
+
+**A lead for a future pass, not resolved now**: bastionoranje.nl names a plane tree, planted 1880-1890 after a windmill's demolition, as the bastion's actual oldest tree, but four plane trees are registered on Bastion Oranje (ages 100-120) and the article does not pin down which specific one. Worth a future session's time rather than guessed at now.
+
+**Photo hunt**: 0 of 4 found, no dedicated search run this session given the depth of the verification work already done; worth a proper Commons/iNaturalist pass in a future session.
+
+Site rebuilt (973 pages), all contracts validated after fixing one meta-description overflow caught by the build gate. `scripts/qa.py` clean (905 pages). `scripts/smoke_test.py` clean (7 pages). `data/city-list.json` updated (Den Bosch: pending to needs_curation). One commit, pushed.
+
 ## 2026-08-02 — Galway re-confirmed pending: Coole Park's real travel time (50-70 min) fails the day-trip boundary honestly
 
 Galway was next in the queue, reopened on paper by the 2026-08-01 day-trip ruling. Dispatched fresh research rather than trusting the reopening at face value, specifically to verify Coole Park's actual public-transport time from Galway city centre (the note in city-list.json itself flagged this as unconfirmed, "bus/45min?").
