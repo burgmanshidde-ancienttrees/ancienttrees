@@ -288,7 +288,7 @@
       "tier": 2,
       "slug": "galway",
       "status": "pending",
-      "note": "REOPENED by the 2026-08-01 day-trip ruling (DECISIONS.md): Coole Park (bus/45min?) and other County Galway sites within ~30 min public transport now count, honestly labeled. Prior research history in CURATION.md 2026-07-30; start from that, not from zero."
+      "note": "Re-confirmed pending 2026-08-02: Coole Park verified at 50-70 min door-to-door public transport (Bus Eireann 434 to Gort is 40-50 min alone, plus a 4km/29min walk or seasonal-only shuttle to the park itself), not the roughly-30-minute day-trip boundary, so it does not honestly qualify. No other individual tree found within the true city/30-min radius after a fresh sweep (Terryland, University of Galway campus, Rinville/Oranmore, Aughnanure Castle all checked and rejected). Stays pending until a genuinely closer verified tree turns up, or Hidde makes an explicit call to stretch the boundary for Coole Park anyway."
     },
     {
       "city": "Budapest",
@@ -414,7 +414,7 @@
       "country": "Netherlands",
       "tier": 2,
       "slug": "delft",
-      "status": "pending"
+      "status": "needs_curation"
     },
     {
       "city": "Maastricht",

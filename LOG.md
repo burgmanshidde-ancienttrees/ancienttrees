@@ -2,6 +2,20 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-02 — Delft opens (78th city); Athens' Kaisariani entry replaced; Galway re-confirmed pending; the id-token workflow bug still needs Hidde
+
+New session. `python3 scripts/visitors.py`: 122 visits, 286 page views over the last 7 days (2026-07-26 to 2026-08-01), trending up most days. No reader submissions to process (the Supabase `submissions` table has one row, already recorded processed from 2026-07-31). Build and QA clean at session start.
+
+**FOR HIDDE, unchanged from 2026-08-01: the two-line `id-token: write` fix for Fresh-eyes review and Weekly analysis still needs a human push.** Confirmed both workflows are still failing on every run (checked the actual job logs via the GitHub API: "Could not fetch an OIDC token... Did you remember to add `id-token: write`"). Wrote the fix again, confirmed this run's GitHub token still lacks the `workflows` scope needed to push a `.github/workflows/*.yml` change, reverted locally rather than leave an unpushable commit. Add `id-token: write` under `permissions:` in `review.yml` and `weekly-analysis.yml` (copy the line from `nightly.yml`) whenever convenient.
+
+**Athens: replaced ath_010** (the Trees of Kaisariani Monastery, ruled a collectible-point failure by Hidde on 2026-08-01) **with the Rubber Fig of Drosopoulou Street**, a 26.55m Ficus elastica street tree in Kypseli, exceptional size for a species usually grown as a houseplant. Single-sourced for the tree itself (the Greek Tree Registry) after a real search for a second source came up empty, shipped `flagged` rather than held back. Id reused, old URL redirects.
+
+**Galway re-confirmed pending.** Verified Coole Park's actual public-transport time from Galway (Bus Eireann's own timetable): 50-70 minutes door to door, not the "roughly 30" the day-trip boundary requires. Nothing else in the true 30-minute radius cleared the bar after a fresh sweep. Stays unpublished rather than stretch the boundary rule.
+
+**Delft opens: 4 trees.** Three were already verified in a prior session; found the fourth by chasing a genuinely fresh lead rather than the two dead-end register entries an earlier session had flagged (a "Van Speykstraat walnut" turned out, on reading the actual register PDF, to be a mulberry with zero documentation anywhere; an M. Trompstraat ginkgo was equally undocumented). The real fourth: two Dawn Redwoods at TU Delft's Botanic Garden, among the first of their "living fossil" species planted in Europe after its 1944 rediscovery. Caught and flagged a real, current access caveat before publishing: the Prinsenhof museum grounds (home to two of the four trees) are mid-renovation through 2027, so both those entries carry an honest note rather than a blanket "free access" claim. 0 of 4 photos found, genuine gaps.
+
+Site rebuilt (973 pages), all contracts validated, `scripts/qa.py` and `scripts/smoke_test.py` both clean throughout. Three commits, all pushed. Continuing to the next rung.
+
 ## 2026-08-01 — Osaka opens: 4 trees; a workflow bug found but not fixable by this run
 
 New session. `python3 scripts/visitors.py`: 119 visits, 283 page views over the last 7 days (2026-07-25 to 2026-08-01), trending up most days.
