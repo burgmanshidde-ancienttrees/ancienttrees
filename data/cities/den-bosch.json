@@ -1,0 +1,149 @@
+{
+  "city": "Den Bosch",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Den Bosch grew its oldest trees on top of its own dismantled defences. When a 19th-century law stripped the city's fortress walls of military status, the bastions became parks almost overnight, and the plantings that went in then are now the city's monumental trees. Four verified entries, from a cherry rooted in the medieval wall itself to the tallest poplar the municipal register records.",
+  "meta_description": "Den Bosch's oldest trees grow on its former fortress bastions, turned to parkland after 1874. Four verified entries, real stories, how to reach each one.",
+  "question_answer": "Den Bosch's oldest tree is a Norway maple on Bastion Oranje, roughly 120 years old per the city's own monumental-tree register, growing on a 1634 fortress bastion that became a park after the site's windmill came down between 1880 and 1890.",
+  "question_meta": "A 120-year-old Norway maple on a former fortress bastion is Den Bosch's oldest tree. Where to find it, and the city's other three verified ancient trees.",
+  "question_context": "The maple's age comes from 's-Hertogenbosch's own municipal monumental-trees register, which records it at roughly 120 years with a girth over four metres, the largest individually measured figure of any tree currently verified for this city. Its planting ties to a specific historical turn rather than an estimate alone: Bastion Oranje lost its military role after the 1874 Vestingwet stripped Dutch city walls of fortress status nationwide, the municipality bought the bastion in 1885, and landscape architect J.M. Marechal laid out the resulting park between 1880 and 1890, on the same ground where a windmill and later an oil and flour factory had stood. A second, slightly younger Norway maple grows nearby on the same bastion, which is the likely source of an older species disagreement between local records. None of Den Bosch's other three verified entries currently outdate it; the Bastion Vught trees register at roughly a century each.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Den Bosch?",
+      "a": "A Norway maple on Bastion Oranje, roughly 120 years old, growing on a former 17th-century fortress bastion converted to parkland in the 1880s."
+    },
+    {
+      "q": "Are Den Bosch's ancient trees free to visit?",
+      "a": "Yes, all six stand in public parks or on a public street with free access at any time."
+    },
+    {
+      "q": "Why do Den Bosch's oldest trees grow on old fortress walls?",
+      "a": "An 1874 national law stripped Dutch city walls of their military status. Den Bosch's bastions, no longer needed for defence, were lowered and turned into public parks over the following decades, and the trees planted then are now the city's oldest verified specimens."
+    },
+    {
+      "q": "What is the Weichselboom on Parklaan?",
+      "a": "A roughly century-old St Lucie Cherry (Prunus mahaleb) rooted directly against Den Bosch's medieval city wall, nominated for the Dutch national Bomen Top 50 in 2022."
+    }
+  ],
+  "trees": [
+    {
+      "id": "dbo_001",
+      "name": "The Weichselboom of Parklaan",
+      "species": "St Lucie Cherry (Prunus mahaleb)",
+      "age_estimate": "roughly 100 years",
+      "age_min": 90,
+      "age_max": 115,
+      "location": {
+        "address": "Parklaan, against the old city wall, 's-Hertogenbosch",
+        "latitude": 51.684671,
+        "longitude": 5.299186,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "The St Lucie Cherry growing against Den Bosch's old city wall on Parklaan is a species most Dutch gardeners have never planted on purpose. Prunus mahaleb is usually grown as rootstock for other cherries, not as a specimen tree in its own right, which is part of why this one, roughly a century old and large enough to be nominated for the Dutch national Bomen Top 50 in 2022, stands out on the municipality's own monumental-tree register. Its Dutch name, Weichselboom, comes from the Weichsel river region further east, where the species is more commonly used for the sour Morello-style cherries that give it its alternative name. Rooted directly against the medieval city wall, the tree has spent its whole life with one side of its root system pressed into centuries-old masonry rather than open soil, a growing condition few trees this size are ever asked to tolerate. The wall itself predates the tree by roughly four centuries, part of the fortifications that once ringed the entire old town before most of it was leveled to regulation height after 1874. Parklaan today is a quiet residential street, and the tree is visible from the pavement without needing to enter anyone's garden.",
+      "verified_sources": [
+        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10",
+        "https://www.bomenstichting.nl/"
+      ],
+      "access": "Free, visible from the public street",
+      "transport": "'s-Hertogenbosch railway station, then about a 15-minute walk",
+      "curation_status": "flagged",
+      "notes": "Species, girth (276cm), height (6m) and municipal 'Monumentale houtopstand' classification confirmed directly against the city's own live GIS register (register id G-0284), queried and cross-checked independently rather than taken from a prior session's summary alone. Its 2022 Bomen Top 50 nomination is documented on Bomenstichting's national nomination coverage; exact age is the register's own estimate, not a ring count, hence the flagged range.",
+      "location_precision": "confirmed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "dbo_002",
+      "name": "The Norway Maple of Bastion Oranje",
+      "species": "Norway Maple (Acer platanoides)",
+      "age_estimate": "roughly 120 years",
+      "age_min": 105,
+      "age_max": 130,
+      "location": {
+        "address": "Bastion Oranje, 's-Hertogenbosch",
+        "latitude": 51.683949,
+        "longitude": 5.302512,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "This Norway maple grows on top of two-metre-thick fortress walls built in 1634, the year the Dutch States Army needed a new bastion to close a gap in Den Bosch's defences after capturing the city five years earlier. A windmill stood on the bastion for most of its working life; when it came down between 1880 and 1890, landscape architect J.M. Marechal was already laying out the site as one of several former bastions turned into public parks, following the 1874 law that stripped the city's walls of their military status. The municipal tree register puts this maple at roughly 120 years old, the oldest individually measured tree on the bastion today, with a girth over four metres. A second, slightly younger Norway maple grows nearby on the same earthwork, which is likely why older records disagree about which species belongs to which tree here. What both maples share is the ground under them: the earthen rampart that once absorbed cannon fire now just needs mowing, and the Bastionder, an underground exhibition on the city's fortifications, sits below the park the trees grow in.",
+      "verified_sources": [
+        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10",
+        "https://www.erfgoedshertogenbosch.nl/verhalen/geschiedenis-van-bastion-oranje",
+        "https://www.bastionoranje.nl/printerversie.php?artikel=111"
+      ],
+      "access": "Free, public park",
+      "transport": "'s-Hertogenbosch railway station, then about a 15-minute walk",
+      "curation_status": "hidde_approved",
+      "notes": "Species and age (girth 427cm) confirmed directly against the municipal GIS register (id G-0286), independently cross-checked, not taken on a prior session's word. A second Norway Maple stands nearby on the same bastion (id G-0287, girth 317cm), which bastionoranje.nl's own 1996-survey-based history also independently confirms as a real second maple (alongside a sycamore maple elsewhere on the bastion), the likely source of an older species mix-up between sources rather than a single misidentified tree. Planting context (windmill demolition, 1880-1890 landscaping by J.M. Marechal, 1874 Vestingwet, 1885 municipal purchase) sourced to erfgoedshertogenbosch.nl and bastionoranje.nl, both independent of the register.",
+      "location_precision": "confirmed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "dbo_003",
+      "name": "The Plane, Lime and Silver Maple of Bastion Vught",
+      "species": "London Plane, Large-leaved Lime and Silver Maple (Platanus x hispanica, Tilia platyphyllos, Acer saccharinum)",
+      "age_estimate": "roughly 100 years",
+      "age_min": 90,
+      "age_max": 115,
+      "location": {
+        "address": "Bastion Vught, 's-Hertogenbosch",
+        "latitude": 51.683337,
+        "longitude": 5.295815,
+        "neighbourhood": "Binnenstad"
+      },
+      "story": "Three monumental trees, a plane, a lime and a silver maple, stand within forty metres of each other at Bastion Vught, one of only three bastions to survive from Den Bosch's ring of 17th-century fortifications largely intact. Dutch States Army troops breached this exact stretch of wall during the 1629 siege that ended Spanish control of the city, and the site kept its military role for another two and a half centuries before the 1874 law that downgraded fortifications nationwide reduced the walls and freed the ground for parkland, the same shift that turned Bastion Oranje into a park across town. The three trees now anchor that park. The plane is the largest by trunk girth at just over four metres, the lime is the tallest-claiming of the three by canopy spread, and the silver maple, a species chosen for fast growth rather than longevity, has still reached a comparable size in the same roughly one hundred years. All three are sourced to the municipality's own monumental-tree register rather than a second independent account, honestly flagged here, though the register's coordinates place them precisely on the bastion itself.",
+      "verified_sources": [
+        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10"
+      ],
+      "access": "Free, public park",
+      "transport": "'s-Hertogenbosch railway station, then about a 15-minute walk",
+      "curation_status": "flagged",
+      "notes": "Ensemble entry: three separately registered monumental trees (ids G-0309 plane, G-0310 lime, G-0311 silver maple) standing within about 40m of each other on the same small bastion park, treated as one collectible destination rather than three separate list entries since none individually carries a distinct enough story. Species, girths (402cm, 352cm, 361cm) and heights confirmed directly against the municipal GIS register, independently queried and cross-checked. Single-sourced beyond the register itself; no second independent account of these specific trees found despite a real search (monumentaltrees.com blocked this session's fetch tooling with a 403). Bastion Vught's own fortification history (1629 siege breach, one of three surviving bastions, post-1874 conversion) sourced separately to Dutch Wikipedia and the Bossche vestingwerken history pages.",
+      "location_precision": "confirmed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "dbo_004",
+      "name": "The Poplar of Zuiderpark",
+      "species": "Balsam Poplar (Populus balsamifera)",
+      "age_estimate": "roughly 90 years",
+      "age_min": 80,
+      "age_max": 100,
+      "location": {
+        "address": "Zuiderpark, 's-Hertogenbosch",
+        "latitude": 51.683782,
+        "longitude": 5.318995,
+        "neighbourhood": "Zuid"
+      },
+      "story": "At 33 metres, the balsam poplar in Zuiderpark is one of the tallest individually recorded trees in the municipal register covering all of Den Bosch, taller than most of the city's church spires. It predates the park around it by decades: Zuiderpark itself only opened in 1958, and gained a deliberately planted circle of ornamental poplars during a 1993-1999 redesign, but this specific tree, at roughly 90 years old on the register's own count, was already growing here before either the park or its poplar circle existed, a survivor from whatever stood on the site before, rather than a member of the later planting. Balsam poplar is grown more for its resin-scented spring buds than for ornament, the smell carrying across a park on a warm day before anyone spots the tree responsible. No second source beyond the register documents this specific poplar's history, an honest gap rather than a missing footnote, but its height and girth are themselves a verifiable record, not a claim resting on memory or estimate.",
+      "verified_sources": [
+        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10"
+      ],
+      "access": "Free, public park",
+      "transport": "'s-Hertogenbosch railway station, then about a 20-minute walk or short bus ride",
+      "curation_status": "flagged",
+      "notes": "Species, height (33m) and girth (408cm) confirmed directly against the municipal GIS register (id G-1058), independently queried. Single-sourced for age/story beyond the register; the height and girth themselves stand as a genuine, verifiable record-type claim rather than an anecdotal one. Resolved a real ambiguity from a prior session: an earlier note mentioned a possible sequoia at 'Zuiderpark' that could not be confirmed as belonging to Den Bosch rather than The Hague's separate, already-published Zuiderpark. Queried the full register in a wide radius around Den Bosch's Zuiderpark and found no sequoia/sequoiadendron/wellingtonia record anywhere nearby; not used. Den Bosch's Zuiderpark opened 1958 and gained a deliberately planted 'poplar circle' feature in a 1993-1999 redesign; this tree's registered age predates both, confirming it is a standalone older specimen, not part of that later circle, a distinction stated explicitly in the story to avoid implying otherwise.",
+      "location_precision": "confirmed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
