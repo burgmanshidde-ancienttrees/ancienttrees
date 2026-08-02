@@ -81,4 +81,4 @@ jobs:
             broken) and WARNs as rung-3. You flag FOR HIDDE inside your
             REVIEW.md entry only for judgment calls no run may make alone
             (pricing, brand, blueprint changes, anything on the hard list).
-          claude_args: "--max-turns 60 --allowedTools \"Bash(git:*),Bash(python3:*),Read,Write,Edit,Glob,Grep\""
+          claude_args: "--max-turns 120 --allowedTools \"Bash(git:*),Bash(python3:*),Read,Write,Edit,Glob,Grep\""
