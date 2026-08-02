@@ -434,23 +434,11 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .ctry-body span { display: block; font-size: 12.5px; color: var(--ink-mid); margin-top: 2px; }
 .ctry-chev { color: var(--ink-light); font-size: 26px; line-height: 1; flex-shrink: 0; padding-right: 0.2rem; }
 .ctry-row:hover .ctry-body b { text-decoration: underline; }
-.phenology { margin: 0 0 1.6rem; }
-.phenology h2 { font-size: 1.05rem; margin-bottom: 0.6rem; }
-.ph-head, .ph-row { display: flex; align-items: center; gap: 0.6rem; }
-.ph-label { flex: 0 0 5.6rem; font-family: var(--sans); font-size: 11.5px; color: var(--ink-mid); text-align: right; }
-.ph-cells { display: grid; grid-template-columns: repeat(12, 1fr); gap: 2px; flex: 1; min-width: 0; }
-.ph-cell { height: 13px; border-radius: 3px; background: #F1EFE8; }
-.ph-cell.ph-now { outline: 1.5px solid var(--ink); outline-offset: 1px; }
-.ph-m { font-family: var(--sans); font-size: 9.5px; color: var(--ink-light); text-align: center; letter-spacing: -0.02em; }
-.ph-m.ph-now-m { color: var(--ink); font-weight: 700; }
-.ph-row { margin-top: 4px; }
-.ph-note { display: block; margin: 2px 0 6px 6.2rem; font-family: var(--sans); font-size: 11.5px; color: var(--ink-mid); }
-.ph-foot { margin: 0.7rem 0 0 6.2rem; font-family: var(--sans); font-size: 11px; color: var(--ink-light); }
-@media (max-width: 800px) {
-  .ph-label { flex-basis: 4.4rem; font-size: 11px; }
-  .ph-note, .ph-foot { margin-left: 5rem; }
-  .ph-m { font-size: 8px; }
-}
+.phenology .season-head { margin-bottom: 0.2rem; }
+.ph-keys { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; margin: 0.5rem 0 0; }
+.ph-key { display: inline-flex; align-items: center; gap: 0.35rem; font-family: var(--sans); font-size: 12px; color: var(--ink-mid); }
+.ph-key svg { width: 15px; height: 15px; flex-shrink: 0; }
+.ph-foot { margin: 0.5rem 0 0; font-family: var(--sans); font-size: 11px; color: var(--ink-light); line-height: 1.5; }
 .sp-citylink { color: inherit; text-decoration: none; }
 .sp-citylink:hover { text-decoration: underline; }
 .collect-dialog { border: none; border-radius: 16px; padding: 1.5rem 1.6rem; margin: auto; max-width: 26rem; width: calc(100vw - 3rem); box-shadow: 0 18px 60px rgba(0,0,0,0.3); font-family: var(--sans); color: var(--ink); }
@@ -2215,42 +2203,99 @@ def phenology_for(tree, lat):
 
 
 def phenology_block(tree, lat):
+    """The year as one chart, in the PictureThis form Hidde asked for: the
+    curve is leaf cover, so the dip IS the bare season, and at most three
+    icon badges sit on it at the month each thing happens (flowers, fruit,
+    autumn colour). The five-row strip this replaces was readable but read
+    like a spreadsheet."""
     ph = phenology_for(tree, lat)
     if not ph:
         return ""
-    rows = [
-        ("bare", "Bare", "#B9AE99", ph.get("bare_label")),
-        ("leaf", "In leaf", "#6E9147", ph.get("leaf_label")),
-        ("flowers", "Flowers", "#E8705F", ph.get("flower_label")),
-        ("fruit", "Fruit", "#E8A33D", ph.get("fruit_label")),
-        ("colour", "Autumn colour", "#D97843", ph.get("colour_label")),
-    ]
-    now = date.today().month
-    out = []
-    for key, label, colour, note in rows:
-        months = ph.get(key) or []
-        if not months:
-            continue
-        cells = "".join(
-            '<span class="ph-cell%s" style="%s"></span>' % (
-                " ph-now" if m == now else "",
-                ("background:%s" % colour) if m in months else "")
-            for m in range(1, 13))
-        note_html = '<span class="ph-note">%s</span>' % esc(note) if note else ""
-        out.append('<div class="ph-row"><span class="ph-label">%s</span>'
-                   '<span class="ph-cells">%s</span></div>%s'
-                   % (esc(label), cells, note_html))
-    if not out:
+    leaf = set(ph.get("leaf") or [])
+    if not leaf:
         return ""
-    heads = "".join('<span class="ph-m%s">%s</span>' % (
-        " ph-now-m" if i == now else "", MONTHS_SHORT[i - 1]) for i in range(1, 13))
+    bare = set(ph.get("bare") or [])
+    colour = set(ph.get("colour") or [])
+
+    # Leaf cover per month: full in leaf, none when bare, half in the turn
+    # months so the curve rises and falls instead of stepping.
+    def cover(m):
+        if m in bare:
+            return 0.06
+        if m in leaf:
+            prev_bare = ((m - 2) % 12) + 1 in bare
+            next_bare = (m % 12) + 1 in bare
+            if m in colour:
+                return 0.72
+            if prev_bare:
+                return 0.62
+            if next_bare:
+                return 0.55
+            return 1.0
+        return 0.4
+
+    vals = [cover(m) for m in range(1, 13)]
+    now = date.today().month
+    W, H, pad_t, pad_b, pad_x = 320.0, 128.0, 30.0, 24.0, 10.0
+    plot_h = H - pad_t - pad_b
+    step = (W - 2 * pad_x) / 11.0
+    pts = [(pad_x + i * step, pad_t + (1 - v) * plot_h) for i, v in enumerate(vals)]
+    line = smooth_path(pts)
+    area = line + f" L {pts[-1][0]:.1f},{pad_t + plot_h:.1f} L {pts[0][0]:.1f},{pad_t + plot_h:.1f} Z"
+
+    grid = "".join(
+        f'<line x1="{pad_x:.1f}" y1="{pad_t + plot_h * f:.1f}" x2="{W - pad_x:.1f}" y2="{pad_t + plot_h * f:.1f}" class="sc-grid"/>'
+        for f in (0.25, 0.5, 0.75))
+    ticks = "".join(
+        f'<text x="{pts[i][0]:.1f}" y="{H - 6:.0f}" class="sc-m">{MONTH_ABBR[i]}</text>'
+        for i in range(12))
+    now_x = pts[now - 1][0]
+    now_marker = (
+        f'<line x1="{now_x:.1f}" y1="{pad_t - 6:.1f}" x2="{now_x:.1f}" y2="{pad_t + plot_h:.1f}" class="sc-now"/>'
+        f'<text x="{now_x:.1f}" y="{pad_t - 10:.1f}" class="sc-nowlabel">now</text>')
+
+    # At most three badges, each at the middle month of its phase.
+    def mid(months):
+        if not months:
+            return None
+        run = sorted(months)
+        if 12 in run and 1 in run:  # a phase that wraps the new year
+            run = sorted(((m + 5) % 12) + 1 for m in run)
+            return ((run[len(run) // 2] + 6) % 12) + 1
+        return run[len(run) // 2]
+
+    badges, notes = [], []
+    for key, kind, note_key in (("flowers", "flowers", "flower_label"),
+                                ("fruit", "fruit", "fruit_label"),
+                                ("colour", "autumn colour", "colour_label")):
+        months = ph.get(key) or []
+        m = mid(months)
+        if not m:
+            continue
+        x, y = pts[m - 1]
+        badges.append(f'<span class="sc-peakbadge" style="left:{x / W * 100:.1f}%;top:{y / H * 100:.1f}%">'
+                      f'{KIND_ICONS[kind]}</span>')
+        note = ph.get(note_key)
+        notes.append('<span class="ph-key">%s%s</span>' % (
+            KIND_ICONS[kind], esc(note or kind.capitalize())))
+
     return """
-  <div class="phenology">
-    <h2>The tree's year</h2>
-    <div class="ph-head"><span class="ph-label"></span><span class="ph-cells">%s</span></div>
+  <figure class="season phenology">
+    <figcaption class="season-head"><span>The tree's year</span></figcaption>
+    <div class="season-plot">
     %s
-    <p class="ph-foot">Typical for this species where this tree stands. Exact weeks shift with the year and the weather.</p>
-  </div>""" % (heads, "".join(out))
+    <svg viewBox="0 0 %.0f %.0f" class="season-svg" role="img" aria-label="Leaf cover through the year">
+      %s
+      <path d="%s" class="sc-area"/>
+      <path d="%s" class="sc-line"/>
+      %s
+      %s
+    </svg>
+    </div>
+    <p class="ph-keys">%s</p>
+    <p class="ph-foot">The line is the tree in leaf, so the dip is winter. Typical for this species where this tree stands; exact weeks shift with the year.</p>
+  </figure>""" % ("".join(badges), W, H, grid, area, line, now_marker, ticks,
+                  "".join(notes))
 
 
 def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, country_pages=None):
