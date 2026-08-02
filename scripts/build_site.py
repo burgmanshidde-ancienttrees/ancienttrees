@@ -2156,8 +2156,9 @@ COLLECT_JS = """
 """
 
 
-def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
+def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, country_pages=None):
     species_pages = species_pages or {}
+    country_pages = country_pages or {}
     city_data = city_entry["data"]
     city = city_data["city"]
     country = city_data["country"]
@@ -2185,9 +2186,11 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
         (t["location"]["latitude"], t["location"]["longitude"])))
     nearby = others[:3]
 
+    # Contract G: the country crumb becomes a link the moment its page exists.
+    country_url = f"{BASE_URL}/{country_pages[country]}" if country in country_pages else None
     crumb_items = [
         ("Home", BASE_URL),
-        (country, None),
+        (country, country_url),
         (city, f"{BASE_URL}/{cslug}"),
         (tree["name"], None),
     ]
@@ -2324,7 +2327,8 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None):
 
 # ------------------------------------------------------------ question pages
 
-def build_question_page(city_entry, collections, pages):
+def build_question_page(city_entry, collections, pages, country_pages=None):
+    country_pages = country_pages or {}
     city_data = city_entry["data"]
     city = city_data["city"]
     country = city_data["country"]
@@ -2369,9 +2373,10 @@ def build_question_page(city_entry, collections, pages):
         if not (150 <= len(context.split()) <= 200):
             ERRORS.append(f"{canonical}: question_context is {len(context.split())} words, Contract B requires 150-200")
 
+    country_url = f"{BASE_URL}/{country_pages[country]}" if country in country_pages else None
     crumb_items = [
         ("Home", BASE_URL),
-        (country, None),
+        (country, country_url),
         (city, f"{BASE_URL}/{cslug}"),
         ("Oldest tree", None),
     ]
@@ -4478,8 +4483,8 @@ def main():
     for entry in renderable:
         trees = [t for t in entry["data"]["trees"] if tree_is_renderable(t)]
         for tree in trees:
-            tree_slugs[tree["id"]] = build_tree_page(entry, tree, trees, pages, species_pages)
-        build_question_page(entry, public_collections, pages)
+            tree_slugs[tree["id"]] = build_tree_page(entry, tree, trees, pages, species_pages, country_pages)
+        build_question_page(entry, public_collections, pages, country_pages)
         _FAVES = ["lisbon", "cadiz", "porto", "amsterdam", "kyoto",
                   "rome", "palermo", "paris", "london", "barcelona"]
         def _face(e):
