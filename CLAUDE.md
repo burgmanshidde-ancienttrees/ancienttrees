@@ -141,6 +141,7 @@ Append what you did to `LOG.md`, newest first, in the format that file describes
 
 **Speed, as a standing instruction (Hidde, 2026-08-02: "sneller zou wel beter zijn").** A run's window is the scarce resource, so spend it on finding and verifying trees, not on re-deciding things that are already decided:
 
+- **Check whether the city is already done or being done, before dispatching anything.** `data/cities/[slug].json` existing means it shipped; the queue's status field and LOG.md's newest entries say what is in flight. On 2026-08-03 a night run published Fukuoka while a session research pass was already running on it, and the two overlapped on four trees out of ten. The merge was worth more than either alone, but the duplicated hour was not.
 - **Read this file's own history before researching a city.** CURATION.md records what was already tried and found empty. Cork was researched from zero three separate times before anyone checked; that is three windows spent on one city.
 - **Dispatch the search wide, verify narrow.** Candidate discovery parallelises well (one agent per city, or per park list); verification does not, because it is the part that must not be rushed. Two cities researched in parallel and verified carefully beats one city done end to end.
 - **Photo hunting has a floor and a ceiling.** Hunt hard while a city is being written, then stop: a documented dead end in CURATION.md is a finished piece of work, and re-running an exhausted hunt is the single most repeated waste in this project's history.
