@@ -1,0 +1,58 @@
+{
+  "city": "Nara",
+  "country": "Japan",
+  "city_slug": "nara",
+  "note": "Candidates from the 2026-08-03 research pass. Nara does not ship yet: only 2 of the candidates found (the Great Cedar and the Sunazuri wisteria, both at Kasuga Taisha) clear two-source verification with a real age figure, short of the project's 4-tree minimum for a page. Full incremental research record in data/research/nara.md. The 2 verified trees stay there, unpublished, until a future pass either strengthens 2 more of these leads or finds fresh candidates.",
+  "leads": [
+    {
+      "name": "Great Camphor of Wakamiya Shrine (Kasuga Taisha precinct)",
+      "species": "Cinnamomum camphora",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Three camphor trunks fused into one, 8m+ combined girth, named and precisely located (before the steps up to Wakamiya Shrine) by two independent giant-tree inventories. Closest of the leads to shipping: only missing piece is an age figure, which neither source gives. A future pass should check whether Nara City's own tree-preservation register (paginated, only partly checked this pass) or Nara Prefecture's natural-monument list covers it."
+    },
+    {
+      "name": "Hollow Camphor of Tobihino (southern end)",
+      "species": "Cinnamomum camphora",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "7.07m girth, 23m tall, hollow enough for several adults to stand inside and look up through the trunk. Confirmed as a tree distinct from Tobihino's better-documented 1908 Meiji memorial camphor trio by two independent sources, but neither gives any age figure for this specific tree, only its size. Visually the strongest lead found this pass (a walk-into hollow trunk in an open, famous meadow), worth a dedicated follow-up search for an age or registry entry before it is lost to being conflated with its more famous, younger neighbour."
+    },
+    {
+      "name": "Camphor Three Brothers, Tobihino (Meiji memorial camphor)",
+      "species": "Cinnamomum camphora",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Three trunks grown together as one, planted 1908 to commemorate Emperor Meiji's visit during army manoeuvres, so only about 118 years old today, well documented and precisely dated by a local tourism source. Genuinely too young to be an ancient tree by this project's standard; kept as a lead rather than blocked because it is visually striking and well sourced, in case the site ever wants a 'young but remarkable' entry for Nara the way other cities carry one."
+    },
+    {
+      "name": "Giant Ichii-gashi (evergreen oak), Kasugayama Primeval Forest, south trail",
+      "species": "Quercus gilva",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "6.00m girth, 35m tall, described as the premier giant tree on the forest's southern walking trail by one dedicated giant-tree inventory. Strong context (a UNESCO-listed primeval forest, sacred and unlogged for over 1,100 years) but only one source has measurements for this individual specimen; needs a second independent source, ideally a Japanese hiking or nature blog documenting the south trail, before it clears the bar."
+    },
+    {
+      "name": "Mukunoki (hackberry) with plank-buttress roots, Tamukeyama Hachimangu",
+      "species": "Celtis sinensis (likely; unconfirmed)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "5.0m girth, 28m tall, striking plank/board-shaped buttress roots, per one giant-tree inventory (kyoboku.jp). No second source found, and the shrine's own pages don't mention it, and no age figure exists anywhere. Worth a dedicated follow-up given the distinctive root form."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Ginkgo, Hakusan Shrine, Gangoji-cho",
+      "species": "Ginkgo biloba",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "why": "Nara City's own preservation-tree register (designation 15-004, 2003) gives only 320cm girth and 10m height, a young-ish tree by this project's standard with no age claim or story beyond the municipal listing. Not a candidate at any point without a much stronger story or a real age figure surfacing."
+    }
+  ]
+}
