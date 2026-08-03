@@ -1,0 +1,334 @@
+{
+  "city": "Nara",
+  "country": "Japan",
+  "status": "published",
+  "intro": "Japan's first capital kept its trees the way it kept its temples, as part of the religion. Nara Park is not a park in the European sense but the shared grounds of Kasuga Taisha and Todai-ji, where deer have grazed for centuries and cutting a tree needed a reason. The result is a city whose oldest living things stand in the open with rope tied around them: a camphor that has watched a thousand years of festivals, a cedar drawn as a sapling in 1309, and a hollow trunk with a bamboo growing out of the top.",
+  "meta_description": "Nara's oldest tree is a camphor of a thousand years, its trunk twelve metres round. That, a cedar drawn as a sapling in 1309, and eight more.",
+  "question_meta": "Nara's oldest tree is the thousand-year camphor of Naratsuhiko Shrine, twelve metres round at the base and a protected natural monument since 1951.",
+  "question_answer": "The oldest tree in Nara is the giant camphor behind the main hall of Naratsuhiko Shrine on the old Narazaka pass road, recorded as over a thousand years old and protected as a Nara Prefecture Natural Monument since 1951. It measures 12.8 metres around at ground level and roughly thirty metres tall, forking into two great limbs about seven metres up. It is free to visit.",
+  "question_context": "The age is traditional rather than measured, as it is for almost every great camphor in Japan, but the size supports it and the shrine's own founding legend puts it at twelve centuries. What makes this tree worth the fifteen minute bus ride is what happens beneath it. On the evening of the eighth of October each year the shrine performs the Okina-mai, a masked dance recognised as an Important Intangible Folk Cultural Property and one of the oldest surviving ancestors of Noh theatre, and it is danced in the camphor's shade. The tree stands on Narazaka, the pass that carried travellers into the capital from the north, so anyone arriving in Nara from Kyoto in the eighth century walked past it. The only serious rival for the title is the great cedar at Kasuga Taisha, which sources date at somewhere between eight hundred and a thousand years and which has the better documentary evidence.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Nara?",
+      "a": "The giant camphor of Naratsuhiko Shrine, over a thousand years old and 12.8 metres around at the base. A prefectural natural monument since 1951, and free to visit."
+    },
+    {
+      "q": "Which Nara tree has the best story?",
+      "a": "The great cedar at Kasuga Taisha. It appears as a young sapling in a picture scroll donated to the shrine in 1309, and a second tree growing from its base was allowed through a hole cut in the roof of the hall beside it rather than be cut down."
+    },
+    {
+      "q": "When should I visit for blossom?",
+      "a": "Late March. The weeping cherry at Himuro Shrine is known as Nara's first cherry because it opens before any other in the city, and the five-colour camellia at Byakugo-ji flowers from late March into mid-April."
+    },
+    {
+      "q": "Are these trees free to see?",
+      "a": "Most are. Everything in Nara Park is open ground, and Naratsuhiko and Himuro shrines cost nothing. Byakugo-ji charges 500 yen and involves over a hundred stone steps."
+    }
+  ],
+  "hero_tree_id": "nra_001",
+  "oldest_tree_id": "nra_001",
+  "trees": [
+    {
+      "id": "nra_001",
+      "name": "The Giant Camphor of Naratsuhiko Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "over 1,000 years",
+      "age_min": 800,
+      "age_max": 1200,
+      "location": {
+        "address": "Naratsuhiko Shrine, Narazaka-cho, Nara 630-8102",
+        "latitude": 34.7041073,
+        "longitude": 135.8337606,
+        "neighbourhood": "Narazaka"
+      },
+      "story": "Twelve point eight metres around at the ground, and it holds a rope. This camphor stands behind the main hall of a shrine on Narazaka, the pass road that carried travellers into Japan's first permanent capital from the north, which means anyone walking into Nara from Kyoto in the eighth century passed beneath it. It rises about thirty metres and forks into two great limbs some seven metres up, each of which forks again, so from below the crown reads less like a tree than like several trees agreeing to share a base. The prefecture designated it a natural monument in 1951. What makes it worth the bus ride rather than merely worth reading about is the eighth of October. On that evening the shrine performs the Okina-mai, a masked dance recognised as an Important Intangible Folk Cultural Property and one of the oldest surviving ancestors of Noh theatre, and it is danced here, under this tree, as it has been for centuries. Be honest about the thousand years: like almost every great camphor in Japan, the figure is traditional rather than measured. The girth supports it.",
+      "verified_sources": [
+        "https://www.city.nara.lg.jp/site/bunkazai/2460.html",
+        "https://narashikanko.or.jp/spot/detail_10054.html",
+        "https://ja.wikipedia.org/wiki/%E5%A5%88%E8%89%AF%E8%B1%86%E6%AF%94%E5%8F%A4%E7%A5%9E%E7%A4%BE"
+      ],
+      "access": "Free, grounds open 09:00 to 17:00",
+      "transport": "Bus from JR or Kintetsu Nara toward Aoyama Jutaku, about 15 min, alight at Narazaka",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Naratsuhiko-Jinja-Kusu.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Kochizufan, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Age is traditional, not dated: no source gives a method. The 1951 prefectural designation, the measurements and the Okina-mai connection are all independently sourced. Coordinates are the individually mapped tree, not the shrine centroid.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nra_002",
+      "name": "The Great Cedar of Kasuga Taisha",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "between 800 and 1,000 years",
+      "age_min": 800,
+      "age_max": 1000,
+      "location": {
+        "address": "Kasuga Taisha, 160 Kasugano-cho, Nara 630-8212",
+        "latitude": 34.6814044,
+        "longitude": 135.8482731,
+        "neighbourhood": "Kasugano"
+      },
+      "story": "There is a picture scroll, donated to this shrine in 1309, in which this cedar appears as a sapling. Seven centuries later it is roughly eight metres around and twenty-five tall, standing beside the hall where offerings are shared after the rituals, and the sapling in the painting is the same organism. Almost no ancient tree anywhere can be checked against its own portrait as a young plant. The better story is what grows out of its base. A second tree, a shinpaku, took root there and grew toward the neighbouring hall, and rather than cut it back somebody cut a hole in the roof and let it through. The hall still has the hole. Kasuga Taisha was founded in 768 for the deity of the Fujiwara clan and rebuilt every twenty years for centuries, so the buildings around this cedar are younger than the cedar, repeatedly. One practical note before you go: sources place the tree beside the Naoraiden near the inner gate, and it is not clear from the shrine's own pages whether that spot falls inside the free outer precinct or the paid inner one.",
+      "verified_sources": [
+        "https://www.mlit.go.jp/tagengo-db/H30-00888.html",
+        "https://www.library.pref.nara.jp/nara_2010/0181.html"
+      ],
+      "access": "Kasuga Taisha precinct, open 06:00 to 18:00; the outer grounds are free, and it is unclear whether this tree stands inside the paid inner area, so check on arrival",
+      "transport": "About 25 to 30 min walk from Kintetsu Nara, or bus to Kasuga Taisha Honden",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Sacred_Sugi_inside_Kasuga_Taisha_shrine.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Pufacz, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Sources disagree on age (800 to 1,000 per the national multilingual database, about 1,000 in the mapped record) and on girth (7.94m against 8.7m, likely different measuring heights); both ranges are reported rather than resolved. The access zone genuinely could not be confirmed and is stated as uncertain.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nra_003",
+      "name": "The Five-Colour Camellia of Byakugo-ji",
+      "species": "Common Camellia (Camellia japonica)",
+      "age_estimate": "about 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "location": {
+        "address": "Byakugo-ji, 392 Byakugoji-cho, Nara 630-8302",
+        "latitude": 34.6706754,
+        "longitude": 135.8513758,
+        "neighbourhood": "Byakugoji"
+      },
+      "story": "One tree, five colours, and it does not drop its flowers the way a camellia is supposed to. This four hundred year old camellia opens red, white and peach blossoms on the same plant, along with striped and variegated ones, which is how it earned its name and its place among the three famous camellias of Nara. Most camellias shed the whole flower head at once, which is why the Japanese associated them with beheading and why samurai were said to dislike them; this one is a chiri-tsubaki, shedding petal by petal instead, so the ground beneath it in April is a scatter of loose colour rather than a row of fallen heads. It is only about five metres tall. The prefecture designated it a natural monument in 1957. Byakugo-ji itself sits on a hillside at the southeastern edge of the city with the whole Nara basin spread out below, which is the compensation for the climb: over a hundred stone steps stand between the bus stop and the tree, and there is no way around them.",
+      "verified_sources": [
+        "https://www.city.nara.lg.jp/site/bunkazai/2460.html",
+        "https://yamatoji.nara-kankou.or.jp/01shaji/02tera/01north_area/byakugoji/"
+      ],
+      "access": "Paid, 500 yen for adults, open 09:00 to 17:00; over 100 stone steps from the road, not step-free",
+      "transport": "Bus from Nara station toward Takabatake, then about 10 min walk and the steps",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Age given as about 400 by most sources and 450 by one; the range covers both. No openly licensed photograph of this tree exists on Wikimedia Commons or iNaturalist, searched by Japanese name, by romanised name and by geosearch of the temple. A genuine gap.",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "label": "late March into mid-April, when one tree opens red, white and pink at once",
+        "kind": "flowers"
+      },
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nra_004",
+      "name": "The Soapberry with a Bamboo Through It",
+      "species": "Chinese Soapberry (Sapindus mukorossi)",
+      "age_estimate": "not recorded",
+      "age_min": 150,
+      "age_max": 300,
+      "location": {
+        "address": "Nara Park, beside the approach to Kasuga Taisha near the Nara National Museum",
+        "latitude": 34.682259,
+        "longitude": 135.837719,
+        "neighbourhood": "Nara Park"
+      },
+      "story": "The trunk is hollow, and a bamboo has grown up inside it and out through the top. Bamboo from the tea house grove behind found the cavity in this soapberry, went up through it and emerged from the crown, so what stands on the bend of the Kasuga approach is one tree wearing another. The shrine's own guide describes the effect as a mother holding a child. At four and a half metres around and over fifteen tall it is claimed as the largest soapberry in Nara Prefecture, and nobody has published an age for it, which is worth saying plainly rather than inventing a number. Its black seeds had two jobs. Strung, they became prayer beads. Loose, they were the weights inside the shuttlecocks of hanetsuki, the New Year battledore game, which is why the tree turns up in old accounts of the season. The pulp around them lathers in water, and that is where the English name comes from: this is the tree people washed with before soap was cheap.",
+      "verified_sources": [
+        "https://www.kasugataisha.or.jp/guidance/morisanpo/",
+        "https://www.kyoboku.jp/%E2%91%A8%E5%A5%88%E8%89%AF%E5%85%AC%E5%9C%92-%E6%98%A5%E6%97%A5%E5%B1%B1%E5%8E%9F%E5%A7%8B%E6%9E%97/"
+      ],
+      "access": "Free, open parkland at all hours",
+      "transport": "About 10 min walk from Kintetsu Nara, beside the Nara National Museum",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No published age exists; the range is inferred from girth alone and is the weakest figure on this page. Girth is 4.58m per the mapped record and 470cm per the giant-tree society, consistent. No openly licensed photograph found.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October and November, when the translucent amber fruit ripens",
+        "kind": "fruit"
+      },
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nra_005",
+      "name": "The Camphors of Tobihino",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "about 140 years",
+      "age_min": 120,
+      "age_max": 150,
+      "location": {
+        "address": "Tobihino meadow, Nara Park, Kasugano-cho",
+        "latitude": 34.681592,
+        "longitude": 135.840921,
+        "neighbourhood": "Nara Park"
+      },
+      "story": "Three trees planted in 1908 have grown into one cloud. They stand in a ring fence in the middle of the Tobihino meadow, marking the spot where Emperor Meiji sat to watch army manoeuvres, and in a little over a century they have closed into a single dome so complete that most people photograph them believing they are looking at one enormous tree. The largest trunk is nearly five metres around and the crown reaches twenty-six metres. What makes the spot rather than the tree is everything else in the frame: open grass, morning mist off the hills behind, and the deer of Nara Park grazing right up to the fence, because Tobihino is where they gather. This is the youngest tree on this page by several centuries and it earns its place on presence alone. Come early. The meadow faces east, the light comes in under the crown, and the deer are out before the buses are.",
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/files/course/001/guide_narakouen_ja.pdf",
+        "https://www.tabicocolo.com/article/0001-tobihino-kusunoki.html"
+      ],
+      "access": "Free, open meadow at all hours",
+      "transport": "About 15 min walk from Kintetsu Nara",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Great_camphor_tree_in_Nara_Park.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Soramimi, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "Two different camphors stand on this meadow and local sources use overlapping names: the Environment Ministry places the three Meiji memorial trees (4.8m, 26m, about 140 years) here, while another source places a separate hollow camphor of 7.07m girth at the south end. The confirmed coordinate and the measurements match the Meiji triplets, which is what this entry describes. Photo licence and framing recorded but not yet viewed at full size, so it stays unapproved.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nra_006",
+      "name": "The Great Nagi of Kasuga Taisha",
+      "species": "Nagi (Nageia nagi)",
+      "age_estimate": "500 to 1,000 years, sources disagree",
+      "age_min": 500,
+      "age_max": 1000,
+      "location": {
+        "address": "Kasuga Taisha precinct, north of the Treasure Hall, 160 Kasugano-cho, Nara",
+        "latitude": 34.6818,
+        "longitude": 135.8465,
+        "neighbourhood": "Kasugano"
+      },
+      "story": "This tree should not be here at all. Nagi grows wild in Kyushu and Taiwan, far to the south, and the nine hectares of it on this hillside are the northernmost stand of its kind, a national natural monument since 1923. Nara City's own record is blunt about why: the grove is not natural. Trees were offered to the shrine during the Nara period and the descendants of those offerings spread across the slope, so what looks like ancient woodland is the result of twelve centuries of donation. This individual is the largest of them, three and a third metres around and thirteen metres tall, which for a species this slow is why estimates run to five centuries and beyond. It is a conifer that has forgotten how to look like one: the leaves are broad, leathery ovals with parallel veins running end to end and no midrib at all, so people who know their trees stop, look again, and go and read the sign. The city protected the tree itself in 1997, along with a twenty metre square of ground around it.",
+      "verified_sources": [
+        "https://www.city.nara.lg.jp/site/bunkazai/8348.html",
+        "https://kyoju.biodic.go.jp/files/course/001/guide_narakouen_ja.pdf",
+        "https://www.city.nara.lg.jp/site/bunkazai/3337.html"
+      ],
+      "access": "Kasuga Taisha precinct; outer grounds free, check on arrival which zone this tree falls in",
+      "transport": "About 25 min walk from Kintetsu Nara, or bus to Kasuga Taisha Honden",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The city's cultural-properties page dates the grove to roughly 1,000 years while the Environment Ministry gives this individual 500 or more; both are reported. Position is sourced as 'north of the Treasure Hall' with no published coordinate, so the pin is the Treasure Hall area and precision is approximate.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nra_007",
+      "name": "The First Cherry of Nara",
+      "species": "Weeping Higan Cherry (Prunus subhirtella)",
+      "age_estimate": "about 100 years",
+      "age_min": 80,
+      "age_max": 120,
+      "location": {
+        "address": "Himuro Shrine, 1-4 Kasugano-cho, Nara 630-8212",
+        "latitude": 34.684297,
+        "longitude": 135.837877,
+        "neighbourhood": "Kasugano"
+      },
+      "story": "Nara's spring officially starts at this tree. The weeping cherry standing beside the approach to Himuro Shrine opens before any other cherry in the city, which earned it the name Nara ichiban zakura, first cherry of Nara, and turns a quiet shrine into a queue for about ten days in late March. It leans over the pond in front of the gate, so the flowers arrive twice, once above you and once in the water. The shrine underneath it is stranger than the tree. It stands on the site of a Nara period ice house and enshrines the deity of ice: blocks were cut in winter, packed into a pit insulated with straw and kept through the summer for the imperial court, and ice merchants still come here to pray for their trade. Every year at the end of May the shrine holds a festival where offerings are made in ice, including whole fish frozen inside blocks. The tree is young by the standards of this page, and its hundred years rests on a single source, so treat the number lightly and the timing seriously.",
+      "verified_sources": [
+        "http://yamatoji.nara-kankou.or.jp/023flower_spot/himurojinja/0000000001/",
+        "https://narashikanko.or.jp/spot/detail_10014.html"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "Bus to Himuro Jinja / Kokuritsu Hakubutsukan, which stops at the gate, or about 15 min walk from Nara station",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Weeping_cherry_tree_in_Himuro_jinja_20150326_01.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "Degueulasse, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "flagged",
+      "notes": "The age figure comes from a single source and is treated as soft. The bloom timing is well sourced. Photo licence recorded but not yet viewed at full size, so it stays unapproved rather than trusted.",
+      "best_time": {
+        "months": [
+          3
+        ],
+        "label": "late March, when it opens before every other cherry in Nara",
+        "kind": "flowers"
+      },
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nra_008",
+      "name": "The Chinaberry of the East Pagoda Ruins",
+      "species": "Chinaberry (Melia azedarach)",
+      "age_estimate": "not recorded",
+      "age_min": 100,
+      "age_max": 250,
+      "location": {
+        "address": "Nara Park, about 100 m east of the Todai-ji East Pagoda ruins",
+        "latitude": 34.6874,
+        "longitude": 135.8433,
+        "neighbourhood": "Nara Park"
+      },
+      "story": "It stands on ground that once held one of the tallest buildings in Japan. Todai-ji's east pagoda rose seven storeys and is reported at around a hundred metres, burned, was rebuilt, burned again and was never rebuilt a third time, so all that remains is a raised platform in the grass with a chinaberry beside it four and a half metres around and twenty metres tall. Nobody has published its age. What is recorded is the reason its species turns up in places like this: chinaberry was believed to drive off evil spirits and was traditionally planted in graveyards and at sites where the dead were remembered, which is exactly what a burned pagoda platform became. For most of the year it is an unremarkable spreading tree that visitors walk past on their way to the Great Buddha. For two weeks in the middle of May it covers itself in loose sprays of pale purple flowers, and the official guide to Nara Park's giant trees singles that fortnight out as the reason to come.",
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/files/course/001/guide_narakouen_ja.pdf",
+        "https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%A4%A7%E5%AF%BA"
+      ],
+      "access": "Free, open parkland at all hours",
+      "transport": "About 20 min walk from Kintetsu Nara, in the grounds between Todai-ji and the park",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Age is explicitly not recorded by the Environment Ministry's own guide, which is the single substantive source for the tree itself; the range is inferred from girth. Position is sourced as about 100m east of the pagoda ruins, so the pin is approximate. The flowering month comes from that same official guide.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "mid-May, when it covers itself in pale purple sprays",
+        "kind": "flowers"
+      },
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nra_009",
+      "name": "The Thickest Black Pine of Nara Park",
+      "species": "Japanese Black Pine (Pinus thunbergii)",
+      "age_estimate": "about 250 years",
+      "age_min": 200,
+      "age_max": 280,
+      "location": {
+        "address": "Nara Park, northeast corner of the Kofuku-ji National Treasure Hall block",
+        "latitude": 34.6839,
+        "longitude": 135.833,
+        "neighbourhood": "Nara Park"
+      },
+      "story": "Black pines were planted through Nara Park for centuries for no reason except that they looked right, and this is the fattest survivor of that long habit: three and a half metres around, twenty-eight metres tall, and roughly two hundred and fifty years old, which puts its planting in the middle of the Edo period. It is also the easiest tree on this page to reach, about five minutes from the station, standing at the corner of the block that holds Kofuku-ji's National Treasure Hall. Look at the ground under it before you look up. Flying squirrels live in the park and strip the cones for their seeds, leaving the gnawed cores scattered beneath the tree in a shape the locals compare to fried prawns, so a handful of little stripped spindles on the path is the sign that something was in the crown overnight. The official guide to the park's giant trees ends its entry on this tree by remarking that the Edo period gardeners who put it here would be pleased with how it turned out, which is a fair summary of the whole park.",
+      "verified_sources": [
+        "https://kyoju.biodic.go.jp/files/course/001/guide_narakouen_ja.pdf",
+        "https://www.nara-park.com/"
+      ],
+      "access": "Free, open parkland at all hours",
+      "transport": "About 5 min walk from Kintetsu Nara",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The Environment Ministry's park guide is the single substantive source for this individual, giving girth, height and an estimated 250 years. Position is sourced by description rather than coordinate, so the pin is approximate.",
+      "location_precision": "approximate"
+    }
+  ]
+}
