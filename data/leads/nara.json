@@ -2,57 +2,152 @@
   "city": "Nara",
   "country": "Japan",
   "city_slug": "nara",
-  "note": "Candidates from the 2026-08-03 research pass. Nara does not ship yet: only 2 of the candidates found (the Great Cedar and the Sunazuri wisteria, both at Kasuga Taisha) clear two-source verification with a real age figure, short of the project's 4-tree minimum for a page. Full incremental research record in data/research/nara.md. The 2 verified trees stay there, unpublished, until a future pass either strengthens 2 more of these leads or finds fresh candidates.",
+  "note": "From the 2026-08-03 research pass. Leads failed only our evidence bar or the count; blocked can never ship.",
   "leads": [
     {
-      "name": "Great Camphor of Wakamiya Shrine (Kasuga Taisha precinct)",
-      "species": "Cinnamomum camphora",
+      "name": "Milestone Hackberry of the Todai-ji West Gate",
+      "species": "Celtis sinensis",
       "lat": null,
       "lng": null,
       "status": "lead",
-      "why": "Three camphor trunks fused into one, 8m+ combined girth, named and precisely located (before the steps up to Wakamiya Shrine) by two independent giant-tree inventories. Closest of the leads to shipping: only missing piece is an age figure, which neither source gives. A future pass should check whether Nara City's own tree-preservation register (paginated, only partly checked this pass) or Nara Prefecture's natural-monument list covers it."
+      "why": "3.95m girth and 30m, the tallest tree in the official Nara Park giant-tree course, believed to mark the milestone on the Kyoto road that begins at Todai-ji's Tegai-mon. Age explicitly not recorded, single official source, and no coordinate exists for the West Gate ruins in any gazetteer. Needs a pin before it can ship."
     },
     {
-      "name": "Hollow Camphor of Tobihino (southern end)",
+      "name": "Roben-sugi at Nigatsu-do",
+      "species": "Cryptomeria japonica",
+      "lat": 34.6892513,
+      "lng": 135.8439422,
+      "status": "lead",
+      "why": "Superb legend: the infant Roben was said to have been carried off by an eagle and left in its branches, and Todai-ji's founding abbot was reunited with his mother beneath it. But the original fell to a typhoon in 1961 and the present tree is a successor, roughly 60 years old. Includable only on the Kyoto Gion-cherry precedent, and only if the entry says plainly it is a replanting. Good open photos exist."
+    },
+    {
+      "name": "Wakamiya Great Camphor, Kasuga Taisha",
       "species": "Cinnamomum camphora",
+      "lat": 34.680262,
+      "lng": 135.848781,
+      "status": "lead",
+      "why": "Legend says Empress Jingu planted it. Sources contradict badly on size: 12.46m girth and 24m in one record against '8m+, 7m tall, three trees planted together' in another, which is not a rounding difference. No official register lists it, and the one open photo fails the card crop with stone lanterns filling the centre."
+    },
+    {
+      "name": "Great Zelkova of Kasuga",
+      "species": "Zelkova serrata",
       "lat": null,
       "lng": null,
       "status": "lead",
-      "why": "7.07m girth, 23m tall, hollow enough for several adults to stand inside and look up through the trunk. Confirmed as a tree distinct from Tobihino's better-documented 1908 Meiji memorial camphor trio by two independent sources, but neither gives any age figure for this specific tree, only its size. Visually the strongest lead found this pass (a walk-into hollow trunk in an open, famous meadow), worth a dedicated follow-up search for an age or registry entry before it is lost to being conflated with its more famous, younger neighbour."
+      "why": "4.9m girth, the largest zelkova in Nara Park, hollow and mossy. Single-sourced to the shrine's own forest-walk page, no coordinate, no age, and 'upper portions lost' needs checking that it is thriving rather than a relic."
     },
     {
-      "name": "Camphor Three Brothers, Tobihino (Meiji memorial camphor)",
-      "species": "Cinnamomum camphora",
+      "name": "Cycad of Jokyo-ji",
+      "species": "Cycas revoluta",
+      "lat": 34.6823,
+      "lng": 135.8252,
+      "status": "lead",
+      "why": "Nara City Natural Monument, 1979, and close to the station. Small tree at a minor temple, thin sourcing, visitor access unverified."
+    },
+    {
+      "name": "Bayberry of Oryu-ji",
+      "species": "Myrica rubra",
       "lat": null,
       "lng": null,
       "status": "lead",
-      "why": "Three trunks grown together as one, planted 1908 to commemorate Emperor Meiji's visit during army manoeuvres, so only about 118 years old today, well documented and precisely dated by a local tourism source. Genuinely too young to be an ancient tree by this project's standard; kept as a lead rather than blocked because it is visually striking and well sourced, in case the site ever wants a 'young but remarkable' entry for Nara the way other cities carry one."
+      "why": "Nara City Natural Monument, 1979. Same profile as the cycad: real designation, thin sourcing, access unverified."
     },
     {
-      "name": "Giant Ichii-gashi (evergreen oak), Kasugayama Primeval Forest, south trail",
+      "name": "Persimmon of Jigen-ji",
+      "species": "Diospyros kaki",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Nara City Natural Monument, 1983. Real designation, thin sourcing, access unverified."
+    },
+    {
+      "name": "Ichiigashi of the Kasugayama primeval forest",
       "species": "Quercus gilva",
       "lat": null,
       "lng": null,
       "status": "lead",
-      "why": "6.00m girth, 35m tall, described as the premier giant tree on the forest's southern walking trail by one dedicated giant-tree inventory. Strong context (a UNESCO-listed primeval forest, sacred and unlogged for over 1,100 years) but only one source has measurements for this individual specimen; needs a second independent source, ideally a Japanese hiking or nature blog documenting the south trail, before it clears the bar."
+      "why": "6.00m girth and 35m on the southern path, which would be a strong entry, but one source and no coordinate. A single named tree inside the forest can qualify even though the forest cannot."
     },
     {
-      "name": "Mukunoki (hackberry) with plank-buttress roots, Tamukeyama Hachimangu",
-      "species": "Celtis sinensis (likely; unconfirmed)",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "5.0m girth, 28m tall, striking plank/board-shaped buttress roots, per one giant-tree inventory (kyoboku.jp). No second source found, and the shrine's own pages don't mention it, and no age figure exists anywhere. Worth a dedicated follow-up given the distinctive root form."
-    }
-  ],
-  "blocked": [
-    {
-      "name": "Ginkgo, Hakusan Shrine, Gangoji-cho",
-      "species": "Ginkgo biloba",
+      "name": "Yogo-no-Matsu, Kasuga Taisha",
+      "species": "Pinus",
       "lat": null,
       "lng": null,
       "status": "blocked",
-      "why": "Nara City's own preservation-tree register (designation 15-004, 2003) gives only 320cm girth and 10m height, a young-ish tree by this project's standard with no age claim or story beyond the municipal listing. Not a candidate at any point without a much stronger story or a real age figure surfacing."
+      "blocked_reason": "dead",
+      "why": "NEVER SHIP. The original pine died in 1995; a successor sapling grows beside the surviving stump. Famous as the claimed origin of the pine painted on every Noh stage, though even that attribution is disputed as a later invention."
+    },
+    {
+      "name": "Chisokuin Nara-no-Yaezakura",
+      "species": "Prunus verecunda",
+      "lat": 34.692202,
+      "lng": 135.840597,
+      "status": "blocked",
+      "blocked_reason": "dead and inaccessible",
+      "why": "NEVER SHIP. The tree designated a national Natural Monument in 1923 has died; today's cherries are propagated descendants. Chisokuin is a closed sub-temple open roughly one day a year."
+    },
+    {
+      "name": "Kasugayama Primeval Forest",
+      "species": "mixed",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "NEVER SHIP as one entry. A Special Natural Monument covering a whole mountain, with no single tree and nowhere to stand. A named individual inside it can qualify separately."
+    },
+    {
+      "name": "Kasuga Ichiigashi giant-tree group",
+      "species": "Quercus gilva",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "NEVER SHIP. Thirty-plus separate trees over 3m girth scattered across the precinct, designated as a group. No single destination."
+    },
+    {
+      "name": "Sunazuri-no-Fuji",
+      "species": "Wisteria floribunda",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a tree",
+      "why": "NEVER SHIP. A wisteria vine on a trellis."
+    },
+    {
+      "name": "Shoryaku-ji Kojii grove",
+      "species": "Castanopsis",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "grove, and out of range",
+      "why": "NEVER SHIP. A prefecturally designated grove rather than one tree, and Bodaisen-cho is well beyond the day-trip boundary."
+    },
+    {
+      "name": "Takiyama left-spiral Torreya",
+      "species": "Torreya nucifera",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "out of range",
+      "why": "NEVER SHIP for Nara. A prefectural Natural Monument, but in Tsuge-Hayama-cho, inside the municipal boundary only through a merger and far over 30 minutes out."
+    },
+    {
+      "name": "Tsukigase Oyama ancient plums",
+      "species": "Prunus mume",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "out of range, and an ensemble",
+      "why": "NEVER SHIP for Nara. City-designated in March 2026, but Tsukigase is roughly an hour out, and it is a group rather than one tree."
+    },
+    {
+      "name": "The thousand-year cedar at the Kasuga Treasure Hall cafe",
+      "species": "Cryptomeria japonica",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not alive",
+      "why": "NEVER SHIP. A cut stump on indoor display. Easy to confuse with the living great cedar, which is why it is recorded here."
     }
   ]
 }
