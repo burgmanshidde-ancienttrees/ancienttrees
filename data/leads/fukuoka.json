@@ -1,0 +1,66 @@
+{
+  "city": "Fukuoka",
+  "country": "Japan",
+  "city_slug": "fukuoka",
+  "note": "Candidates and near-misses found during the 2026-08-03 research pass that did not ship. Kept because the platform's direction is to map every remarkable tree eventually (Hidde, 2026-08-03). Never rendered: these are leads and blocked entries, not published trees.",
+  "leads": [
+    {
+      "name": "Ichiyamatsu (one-night pine), Sumiyoshi Shrine",
+      "species": "Pine, likely Pinus thunbergii",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Legend places its miraculous straightening in 1439. Confirmed alive today (photographed, red-fenced, on the shrine's own map page), but no source gives an age, height or girth measurement. The same 'one-night pine' motif is documented elsewhere in Japan to have died and been replanted from cuttings more than once. Needs a generation-confirming source, ideally the shrine itself on the record, before treating as an ancient rather than a young marker tree carrying an old legend."
+    },
+    {
+      "name": "Hakomatsu (marker pine), Hakozaki Shrine",
+      "species": "Pine, species unconfirmed",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Marks the spot where legend says Empress Jingu buried Emperor Ojin's placenta, the origin of the shrine's and district's name. Confirmed still standing (the shrine's own site and a 2026 Fukuoka City Museum leaflet both describe it, red-fenced, beside the tower gate), but same gap as the Ichiyamatsu: no age, height or girth figure anywhere, and no confirmation this is the original tree rather than a later replacement. A strong story, no physical data to check it against yet."
+    },
+    {
+      "name": "Sacred pine, Fukuoka Castle honmaru (Maizuru Park)",
+      "species": "Pine, unconfirmed",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Mentioned once, with no detail, in the Fukuoka City Museum's own tree leaflet. A separate direct search for a named tree in Maizuru Park / Fukuoka Castle's main enclosure found nothing corroborating. Single source, no measurements, no confirmed current condition."
+    },
+    {
+      "name": "Camphor tree, Dazaifu Tenmangu grounds",
+      "species": "Cinnamomum camphora",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Cited once, near the shrine's heart-shaped pond, as roughly 1,000 years old. Single source only; the grounds have multiple mature camphors and this one could not be confirmed as a distinct, individually named specimen rather than one of several unremarkable trees near the pond. Worth a second look given how well the rest of Dazaifu Tenmangu is documented."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "\"700-year ginkgo\", Sumiyoshi Shrine (Hakata)",
+      "species": "Ginkgo biloba",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "why": "A claim repeated in search-engine summaries could not be traced to any working source. The shrine's own map page (nihondaiichisumiyoshigu.jp/map) names only the Ichiyamatsu pine as a sacred tree, never a ginkgo. The city's cultural-properties page for the shrine covers its architecture and bronzes, no trees. A Nishi-ku municipal page the claim cited by URL now 404s. Almost certainly a search-snippet artefact or a conflation with a different Sumiyoshi Shrine (there are 2,000+ nationwide); do not re-publish without a source that actually names and measures the tree."
+    },
+    {
+      "name": "Yubuta no Mori, Umi Hachiman Shrine",
+      "species": "Cinnamomum camphora",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "why": "National Natural Monument, genuinely ancient (traditional age 1,000-2,000 years depending on source, two sources disagree on which of the shrine's two camphors carries which figure), in the Ministry of Environment's own giant-tree database. Blocked purely on distance: Hakata to Umi Station is 52 minutes by train (JR Kasuya Line via a transfer) plus a 9-minute walk, well outside the roughly 30-minute day-trip boundary CLAUDE.md sets. Revisit only if the boundary itself is ever revisited."
+    },
+    {
+      "name": "Kinugake no Mori, Umi Hachiman Shrine",
+      "species": "Cinnamomum camphora",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "why": "Sister tree to Yubuta no Mori at the same shrine, same National Natural Monument designation, same distance problem: Umi-machi is roughly an hour from central Fukuoka by public transport. Also carries a genuine age conflict between sources (300 years vs 2,000 years) that would need resolving even if the distance issue were waived."
+    }
+  ]
+}
