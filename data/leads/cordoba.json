@@ -1,0 +1,159 @@
+{
+  "city": "Cordoba",
+  "country": "Spain",
+  "city_slug": "cordoba",
+  "note": "Candidates found during the 2026-08-03 research pass that did not ship. Kept because the platform's direction is to map every remarkable tree eventually (Hidde, 2026-08-03). Never rendered: these are leads, not entries.",
+  "leads": [
+    {
+      "name": "Red River Gum of the Celia Mendez Garden",
+      "species": "Eucalyptus camaldulensis",
+      "lat": 37.891073,
+      "lng": -4.749328,
+      "status": "lead",
+      "why": "The thickest trunk in the whole municipal catalogue at 4.86m girth and 34.8m tall, a relict of the riverside market gardens. Undated, no photo, peripheral neighbourhood 3km east, and no story beyond size. Strong candidate the day Cordoba grows past seven."
+    },
+    {
+      "name": "Ash of Santa Marina",
+      "species": "Fraxinus excelsior",
+      "lat": 37.8827,
+      "lng": -4.77496,
+      "status": "lead",
+      "why": "Two sources and real history (documented in Los Arboles de Cordoba, 1984, and the 2002 provincial inventory; local botanist Rafa Tamajon argues it is centenarian). But only 9.5m tall with visible trunk decay and declining. Latitude was lost in the catalogue PDF extraction and needs recovering from the page image."
+    },
+    {
+      "name": "Chinaberry at the Puerta de Almodovar",
+      "species": "Melia azedarach",
+      "lat": 37.880531,
+      "lng": -4.784276,
+      "status": "lead",
+      "why": "24.5m tall casting 400 square metres of shade, about 72 years old now. Handsome, young, no story yet."
+    },
+    {
+      "name": "Cypress at the Alcazar entrance",
+      "species": "Cupressus sempervirens",
+      "lat": 37.87711,
+      "lng": -4.781352,
+      "status": "lead",
+      "why": "26.5m tall on a crown only 3.5m wide, a green needle, and free to see outside the ticket gate. About 77 years old, so young for us, but visually the most striking of Cordoba's modern trees."
+    },
+    {
+      "name": "Stone Pine of Santa Maria de Trassierra",
+      "species": "Pinus pinea",
+      "lat": 37.929984,
+      "lng": -4.893739,
+      "status": "lead",
+      "why": "3.26m girth, 25m, roughly 90 years. Reachable by Aucorsa line L-T in about 19 minutes but only about five services a day, which strains the day-trip boundary."
+    },
+    {
+      "name": "Photinia at the Palacio de la Merced",
+      "species": "Photinia serratifolia",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "A naturalists' walk claims it is the oldest specimen of its species in the province. Not in the municipal catalogue and unverified. One follow-up search would settle it."
+    },
+    {
+      "name": "Casuarinas of the Plaza de Jeronimo Paez",
+      "species": "Casuarina equisetifolia",
+      "lat": 37.881735,
+      "lng": -4.778087,
+      "status": "lead",
+      "why": "Three trees, the tallest above 30m, five minutes from the Mezquita. Single-sourced to the municipal catalogue with no independent second source and no published age."
+    },
+    {
+      "name": "Himalayan Cedar of the Plaza del Cardenal Toledo",
+      "species": "Cedrus deodara",
+      "lat": 37.886662,
+      "lng": -4.777057,
+      "status": "lead",
+      "why": "22.5m and the near-sole occupant of its square, about 102 years old, and it predates the 1945 garden around it. Single-sourced, no photo."
+    },
+    {
+      "name": "Siberian Elm of the Alcazar",
+      "species": "Ulmus pumila",
+      "lat": 37.875429,
+      "lng": -4.782149,
+      "status": "lead",
+      "why": "27m against a species maximum of 15m, genuinely exceptional. Single-sourced and behind a paid gate, though the gardens are free on summer mornings."
+    },
+    {
+      "name": "Canary Palm of the Doctor Emilio Luque Square",
+      "species": "Phoenix canariensis",
+      "lat": 37.883576,
+      "lng": -4.781434,
+      "status": "lead",
+      "why": "Around 112 years and among the oldest palms in the city. Single-sourced, and the catalogue names red palm weevil as the threat that has killed dozens of Cordoba's Canary palms, so survival needs checking before anything is published."
+    },
+    {
+      "name": "Ginkgo of the Agriculture Gardens",
+      "species": "Ginkgo biloba",
+      "lat": 37.888092,
+      "lng": -4.786331,
+      "status": "lead",
+      "why": "About 72 years, the oldest ginkgo in Cordoba's public gardens and a landmark for the city's botany students. Young, and no photo."
+    },
+    {
+      "name": "Olive of the Agriculture Gardens",
+      "species": "Olea europaea",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "no local history",
+      "why": "NEVER SHIP. Looks perfect on paper at 2.6m girth, and it is the tree the naturalists' walk stops at, but the municipal catalogue itself says it has barely any history: it was installed on 30 April 2009, transplanted from Castellon. An old tree in the wrong city. This is the trap in Cordoba olive research; do not confuse it with the Patio de los Naranjos olive."
+    },
+    {
+      "name": "The private patios of the Patios Festival",
+      "species": "various citrus",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "restricted access",
+      "why": "NEVER SHIP as ordinary entries. UNESCO-listed and full of old citrus, but open only during the May festival. Hard rule 10 restricted access; if ever used, the restriction must be stated in the entry itself."
+    },
+    {
+      "name": "Sotos de la Albolafia",
+      "species": "riverside poplar, willow, elm, ash",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "not a collectible point",
+      "why": "NEVER SHIP. A protected Natural Monument of 21 hectares of riverside woodland between the Roman and San Rafael bridges. No single identifiable tree and no trunk to stand at, so it fails the collectible-point test exactly as a long avenue does."
+    },
+    {
+      "name": "Hackberries of Santa Maria de Trassierra",
+      "species": "Celtis australis",
+      "lat": 37.925726,
+      "lng": -4.896267,
+      "status": "blocked",
+      "blocked_reason": "private land",
+      "why": "NEVER SHIP. Base girths to 5.97m, but condition rated bad to very bad, systematically pollarded, and built into the boundary walls of private houses. Private-land risk with no viewing point."
+    },
+    {
+      "name": "Molle and swamp cypress of Cordoba Zoo",
+      "species": "Schinus molle, Taxodium distichum",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "restricted access",
+      "why": "NEVER SHIP. Inside a paid zoo, and the molle stands inside a gibbon enclosure."
+    },
+    {
+      "name": "Pecan of El Arenal",
+      "species": "Carya illinoinensis",
+      "lat": 37.879131,
+      "lng": -4.761327,
+      "status": "blocked",
+      "blocked_reason": "no public access",
+      "why": "NEVER SHIP. On a fenced empty lot."
+    },
+    {
+      "name": "Tetraclinis of the Patio de los Naranjos",
+      "species": "Tetraclinis articulata",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "blocked_reason": "gone",
+      "why": "NEVER SHIP. Recorded as disappeared."
+    }
+  ]
+}
