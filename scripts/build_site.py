@@ -2127,6 +2127,17 @@ def country_name(intro_data, capital=False):
 def group_trees_by_species(renderable):
     """common_name -> list of (city_entry, tree), preserving city order then age."""
     groups = {}
+    # Tree ids are the join key for species and collection pages, so two cities
+    # sharing an id prefix silently point each other's URLs at the wrong city
+    # (Cordoba and Cork both started cor_, caught 2026-08-03).
+    _id_city = {}
+    for entry in renderable:
+        for t in entry["data"]["trees"]:
+            other = _id_city.get(t["id"])
+            if other and other != entry["slug"]:
+                ERRORS.append(f"tree id {t['id']} is used by both {other} and {entry['slug']}")
+            _id_city[t["id"]] = entry["slug"]
+
     for entry in renderable:
         trees = [t for t in entry["data"]["trees"] if tree_is_renderable(t)]
         for t in trees:
