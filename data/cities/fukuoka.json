@@ -1,0 +1,183 @@
+{
+  "city": "Fukuoka",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Fukuoka's oldest trees stand watch over shrines the city grew up around, not the other way around. A cedar Empress Jingu is said to have planted with her own hand still guards Kashii Shrine's inner grounds. A stubbornly hollow ginkgo, already declared a thousand years old on a stone plaque installed in 1913, anchors Hakata's biggest festival. A giant camphor stands in the exact middle of Tenjin's shopping crowds, and another keeps a quieter neighbourhood's own calendar entirely. None of them are Fukuoka's famous sights. All of them were already old when the city's postwar skyline was still rice paddies.",
+  "meta_description": "Fukuoka's oldest trees guard its shrines: a legendary cedar, a hollow thousand-year ginkgo, and a camphor rooted in the middle of Tenjin.",
+  "question_answer": "The oldest tree in Fukuoka is, by tradition, the Ayasugi, a Japanese cedar at Kashii Shrine said to be around 1,800 years old and planted, by legend, by Empress Jingu herself. It stands 21.5 metres tall beside the shrine's main hall in Higashi-ku.",
+  "question_meta": "Kashii Shrine's Ayasugi cedar, said to be 1,800 years old, is Fukuoka's oldest tree. Its legend, exact location, and 4 more remarkable trees nearby.",
+  "question_context": "Fukuoka's claim to its oldest tree rests on tradition rather than measurement. The Ayasugi's roughly 1,800-year figure comes from Kashii Shrine's own founding legend, that Empress Jingu planted a cedar branch from her armor here on returning from a third-century campaign, a story with no ring count or scientific dating behind it. A more conservative rival stands across town: the ginkgo at Kushida Shrine, which a 1913 monument already called over a thousand years old, though a later trunk measurement suggested a real age closer to 600. Neither figure is settled science, which is honest for a city where almost every old tree grows on shrine ground with a founding myth attached rather than a documented planting record. What is not in dispute is which tree carries more ceremonial weight: the Ayasugi's cuttings have traditionally been sent to the Imperial court, and its shrine is one of the few in Japan that still receives a personal envoy from the Emperor. Getting there: JR Kashii-jingu-mae Station, about a five-minute walk to the shrine's inner grounds.",
+  "oldest_tree_id": "fuk_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Fukuoka?",
+      "a": "By shrine tradition, the Ayasugi cedar at Kashii Shrine, roughly 1,800 years old. A more conservatively dated rival, the ginkgo at Kushida Shrine, carries a 1913 monument claiming over 1,000 years, though a later trunk measurement suggests closer to 600."
+    },
+    {
+      "q": "Why are so many of Fukuoka's oldest trees at shrines?",
+      "a": "Shrine grounds are some of the only land in a dense, frequently rebuilt city that has never been cleared for redevelopment, and camphors, cedars and ginkgoes were traditionally planted as a shrine's sacred tree, exactly the undisturbed conditions an old tree needs to survive centuries."
+    },
+    {
+      "q": "Are Fukuoka's ancient trees free to visit?",
+      "a": "Yes. All are on shrine grounds that are free and open daily, from Kego Shrine's camphor in the middle of Tenjin's shopping district to the quieter, residential grounds of Tajima Hachiman Shrine."
+    },
+    {
+      "q": "Is the Flying Plum at Dazaifu Tenmangu really in Fukuoka?",
+      "a": "No, honestly: Dazaifu is a separate city, about 30 minutes from central Fukuoka on the direct Nishitetsu express train. It is included as a well-documented day trip, not as a Fukuoka City tree, the same way this project treats other short out-of-town detours."
+    }
+  ],
+  "trees": [
+    {
+      "id": "fuk_001",
+      "name": "The Ayasugi of Kashii Shrine",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "traditionally about 1,800 years",
+      "age_min": 1700,
+      "age_max": 1900,
+      "location": {
+        "address": "Kashii Shrine, 4-16-1 Kashii, Higashi-ku, Fukuoka 813-0011",
+        "latitude": 33.6534861,
+        "longitude": 130.4526583,
+        "neighbourhood": "Kashii, Higashi-ku"
+      },
+      "story": "Legend says this cedar started as a twig. Empress Jingu, returning from a campaign on the Korean peninsula in the third century, is said to have buried a sword, a spear and a staff on this spot, then pushed a cedar branch from her own armor sleeve into the ground beside them with a vow that it should guard Japan forever. The branch took. Its leaves grow in an alternating, woven pattern that gave the tree its name, Ayasugi, patterned cedar, and for centuries cuttings from it have been sent to the Imperial court as a token from one of Japan's most ceremonially important shrines. Kashii Shrine is a chokusaisha, one of the few shrines that still receives a personal envoy from the Emperor, and its unusual kashii-zukuri roofline is a National Important Cultural Property in its own right. The tree made its way into classical poetry too: a verse in the Shin Kokin Wakashu, compiled around 1205, already treats the Ayasugi as an old and storied thing. Today it stands 21.5 metres tall with a trunk 4.9 metres around, a dense green pyramid beside the shrine's main hall, still doing, by tradition, the exact job it was planted for eighteen centuries ago.",
+      "verified_sources": [
+        "https://museum.city.fukuoka.jp/archives/leaflet/290/index.html",
+        "https://kashiigu.com/keidai-annai/"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "JR Kashii-jingu-mae Station, about 5 to 9 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Sacred_tree_%22Ayasugi%22_in_Kashii_Shrine.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "そらみみ, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Age is Kashii Shrine's own traditional figure, tied to a founding legend involving Empress Jingu, not a measured or ring-counted date. Height and trunk circumference are directly measured and not in dispute. Coordinates are the shrine's own location, not the tree's exact spot within the grounds."
+    },
+    {
+      "id": "fuk_002",
+      "name": "The Ginkgo of Kushida Shrine",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "600 to over 1,000 years",
+      "age_min": 600,
+      "age_max": 1050,
+      "location": {
+        "address": "Kushida Shrine, 1-41 Kamikawabata-machi, Hakata-ku, Fukuoka 812-0026",
+        "latitude": 33.592972,
+        "longitude": 130.410472,
+        "neighbourhood": "Kawabata, Hakata-ku"
+      },
+      "story": "A 1913 stone monument at the foot of this ginkgo already declared it over a thousand years old, and the monument itself is now old enough to be doubted along with the tree. A later measurement of its trunk put the real figure closer to 600 years, which barely dents the point: this is Hakata's most sung-about tree, its own line in the centuries-old Hakata Iwai Uta, the toast still performed at weddings and shop openings across the district. It stands beside the starting point of the Gion Yamakasa festival, so its crown has watched every decorated float lurch past below it every July for generations. Age has not been gentle underneath the show: the lower trunk is hollow and decayed, several major limbs have been cut back hard, and metal rings and props now hold up what canopy remains. None of that stops it turning, every November, into a single dense cone of butter-gold leaves that the whole neighbourhood times its photographs around. A female tree, it drops fruit by the bagful onto the shrine's stone paving each autumn, pollinated by male ginkgoes it cannot see from streets away.",
+      "verified_sources": [
+        "https://bunkazai.city.fukuoka.lg.jp/cultural_properties/detail/459",
+        "https://jinjafan.jp/4000646/spots/1786/"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "Nakasu-Kawabata Station (subway), about 5 min walk",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Kushida_no_Ginan_the_W_side_1-41_Kami-kawabatamachi_Hakata-ku_Fukuoka_20231128.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Hirho, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "best_time": { "months": [11], "label": "late November, when the whole crown turns gold within about a week", "kind": "autumn colour" },
+      "notes": "A 1913 preservation monument records \"over 1,000 years\"; a later trunk-based estimate suggests closer to 600. Both figures are stated rather than one being picked as correct. Coordinates are the shrine's own location, not the tree's exact spot within the grounds."
+    },
+    {
+      "id": "fuk_003",
+      "name": "The Flying Plum of Dazaifu Tenmangu",
+      "species": "Japanese Apricot (Prunus mume)",
+      "age_estimate": "traditionally over 1,000 years",
+      "age_min": 1000,
+      "age_max": 1125,
+      "location": {
+        "address": "Dazaifu Tenmangu, 4-7-1 Saifu, Dazaifu, Fukuoka 818-0195",
+        "latitude": 33.521528,
+        "longitude": 130.534861,
+        "neighbourhood": "Saifu, Dazaifu (day trip from central Fukuoka)"
+      },
+      "story": "When the courtier Sugawara no Michizane was exiled from Kyoto in 901, legend says three trees in his garden reacted differently: the cherry withered from grief, the pine tried to follow him and only made it as far as modern Kobe before giving up, and the plum flew the whole distance overnight to take root in front of him at Dazaifu. Michizane had written it a farewell poem asking it to keep sending its scent east even with its master gone, and the plum, so the story goes, closed the distance itself instead. Whatever actually happened, this tree has been called Tobiume, the Flying Plum, ever since, and it blooms earliest of the roughly six thousand plum trees planted across these grounds, usually from late January. Its base splits into three separate stems, evidence of centuries dying back and regrowing from the root rather than one continuous trunk, and it originally stood at a different shrine on the site of Michizane's actual residence before being moved here when Dazaifu Tenmangu was built around him. Michizane became the god of scholarship after his death, and this is the tree students touch for luck before an exam season most of them will not personally remember choosing. Dazaifu sits a short train ride from central Fukuoka, roughly thirty minutes on the direct express from Tenjin.",
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/飛梅",
+        "https://www.dazaifutenmangu.or.jp/kigan/tobiume",
+        "https://jinjafan.jp/4002576/spots/1164/"
+      ],
+      "access": "Free to enter the shrine grounds; some inner buildings and treasure halls charge admission",
+      "transport": "Nishitetsu Dazaifu Station, 5 min walk to the shrine; about 29 min by direct express train from Nishitetsu Fukuoka (Tenjin) Station, longer with a transfer on some weekday services",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Plum_tree_%22Tobiume%22_in_front_of_Gohonden_of_Dazaifu_Temman_Shrine.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "そらみみ, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "best_time": { "months": [1, 2], "label": "late January into February, when it opens first among the shrine's thousands of plum trees", "kind": "flowers" },
+      "notes": "Age is legendary, tied to the 901 exile of Sugawara no Michizane. The tree's three-stemmed base suggests centuries of dying back and regrowing from the root rather than one continuous trunk since a single planting. Dazaifu is a separate city from Fukuoka; included under the project's day-trip rule and labelled honestly as such throughout."
+    },
+    {
+      "id": "fuk_004",
+      "name": "The Camphor of Kego Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 420,
+      "location": {
+        "address": "Kego Shrine, 2-2-20 Tenjin, Chuo-ku, Fukuoka 810-0001",
+        "latitude": 33.58778,
+        "longitude": 130.399917,
+        "neighbourhood": "Tenjin, Chuo-ku"
+      },
+      "story": "Fukuoka's busiest shopping street runs past a camphor tree older than the district's name. Tenjin was built up around Kego Shrine, not the other way around, and the shrine's own record puts this camphor at over three hundred years, older than the 1608 rebuilding ordered by Kuroda Nagamasa, the daimyo who also built Fukuoka Castle. The shrine traces its founding much further back, to a guardian deity said to have protected Empress Jingu's fleet during a third-century campaign, but the tree standing today is a comparatively recent arrival by that math, planted or self-seeded sometime after the shrine's Edo-period move to this exact spot. What makes it worth a detour is the contrast: department stores, a covered shopping arcade and some of the highest rents in Kyushu surround a small shrine precinct where a single camphor still throws real shade over the forecourt. Kego Park borders the grounds to the north, giving the tree a second, quieter side to be seen from. Independent measurements of its exact girth or height are hard to come by, which is unusual for a tree this central. What is not in doubt is its address: closer to a train platform than any other tree on this list.",
+      "verified_sources": [
+        "https://kegojinja.or.jp/about/"
+      ],
+      "access": "Free, shrine grounds open 6:00-18:00",
+      "transport": "Nishitetsu Fukuoka (Tenjin) Station, adjacent; Tenjin-Minami subway station, about 1 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Age comes from the shrine's own official website; no second independent source giving a measurement or figure was found. Included on that single, credible source per the project's flagging rule. Coordinates are the shrine's own location, not the tree's exact spot within the grounds."
+    },
+    {
+      "id": "fuk_005",
+      "name": "The Great Camphor of Tajima Hachiman Shrine",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "several hundred years",
+      "age_min": 300,
+      "age_max": 600,
+      "location": {
+        "address": "Tajima Hachiman Shrine, Tajima, Jonan-ku, Fukuoka 814-0113",
+        "latitude": 33.567414,
+        "longitude": 130.374018,
+        "neighbourhood": "Tajima, Jonan-ku"
+      },
+      "story": "Wrap a tape measure around this camphor and you will need eleven metres of it, roughly the wingspan of a small aircraft. It is the largest of twelve trees on these grounds that Fukuoka City has individually designated as preserved trees, a small grove of camphors and ginkgoes several hundred years old crowded into a quiet residential shrine across the Hii River from the city centre. Unlike Fukuoka's grander, more visited shrines, Tajima Hachiman keeps its own calendar: Tajima Kagura, a masked sacred dance handed down through the neighbourhood for generations, is still performed on these grounds rather than staged for tourists elsewhere. The camphor stands close to the main hall, a single column of dense evergreen crown that has outgrown its own trunk's proportions, the kind of tree whose base takes several adults holding hands to encircle. Camphor wood was prized across East Asia for shipbuilding and for warding off insects, both of which likely helped trees like this one survive centuries that felled less useful species nearby. It carries no legend as old as Fukuoka's imperial-founded shrines, and that is part of its appeal: a genuinely enormous tree, growing where people actually live, with no admission gate and no crowd between you and its trunk.",
+      "verified_sources": [
+        "https://sasatto.jp/article/entry-583.html",
+        "https://tabi-bito.net/camphor-tree-of-tajima-hachiman-shrine-fukuoka-city/"
+      ],
+      "access": "Free, shrine grounds open daily",
+      "transport": "No direct train or subway; Nishitetsu bus route 12 from Tenjin toward Tajima, then a short walk across the Hii River",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Age is described only as \"several hundred years\" in the two sources found, both consistent but neither giving a precise figure. Coordinates are geocoded from the shrine's street address, not a tree-specific source; the exact house number for the address varies slightly between sources, so this pin should be treated as a close approximation of the shrine block rather than the tree itself."
+    }
+  ]
+}
