@@ -130,6 +130,14 @@ Append what you did to `LOG.md`, newest first, in the format that file describes
 
 **An entry must be a collectible point (Hidde, 2026-07-26).** One identifiable tree, or an ensemble only when the ensemble itself is the destination: compact, famous for being exactly that, with one obvious place to stand. The Lomanstraat tunnel and the Meiji Jingu Gaien avenue pass; a thousand ordinary planes along a kilometre of La Rambla do not, there is nothing to stand at and nothing to have seen. Barcelona's bcn_008 failed this test as "The Plane Trees of La Rambla" and was replaced on 2026-07-26 with a genuinely singular tree, the Silk Tree of the Ciutadella (same id, so no URL broke). Apply the test to every future ensemble candidate.
 
+**How to brief a research pass, and why the last one cost too much (2026-08-02/03).** Cordoba's research ran two and three quarter hours and came back with twelve candidates, an exhaustive list of rejects and a separate full photo sweep. Seven trees shipped. Nara's ran alongside it, was still going when the session closed, and was lost entirely, because a background agent lives in the session that started it. Both problems have the same shape: a brief that asks for everything, unbounded, with nothing written down until the end. So:
+
+- **Write findings to disk as they are found, never only at the end.** A research pass appends each verified candidate to `data/research/[city].md` as it completes it. A pass that dies halfway then leaves half a city behind instead of nothing, and the next session continues rather than restarts.
+- **Ask for what ships, not for everything.** Eight strong candidates is plenty for a ten-tree page; the ninth and tenth cost as much as the first eight and usually get cut. Rejected trees are worth one line each in CURATION.md, not a paragraph.
+- **Photos are a second pass, on the shortlist only.** Hunting images for candidates that will not be published is the most expensive way to produce nothing.
+- **Time-box it.** Say in the brief: report what you have after roughly forty minutes rather than continuing to completeness. An unbounded brief will always spend the whole window.
+- **Prefer register-first countries when the window is short.** A national or municipal catalogue gives species, age and coordinates in one document; Portugal and Spain verify in minutes what takes an hour elsewhere.
+
 **Speed, as a standing instruction (Hidde, 2026-08-02: "sneller zou wel beter zijn").** A run's window is the scarce resource, so spend it on finding and verifying trees, not on re-deciding things that are already decided:
 
 - **Read this file's own history before researching a city.** CURATION.md records what was already tried and found empty. Cork was researched from zero three separate times before anyone checked; that is three windows spent on one city.
