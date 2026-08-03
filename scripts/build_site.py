@@ -198,6 +198,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .tree-more a { text-decoration: none; }
 .tree-more a:hover { text-decoration: underline; }
 .panel-foot { padding: 1.75rem; font-size: 13px; color: var(--ink-mid); }
+.subtle-suggest b { color: var(--ink); font-weight: 700; }
 .panel-foot h2 { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 1.25rem; font-weight: 400; margin-bottom: 0.75rem; }
 .panel-foot dt { font-weight: 500; margin-top: 1rem; }
 .panel-foot dd { font-weight: 300; margin-top: 0.3rem; }
@@ -555,6 +556,11 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .hero-links { display: flex; gap: 1.8rem; margin-top: 1.3rem; flex-wrap: wrap; justify-content: center; }
 .hero-link { background: none; border: none; cursor: pointer; font-family: inherit; color: #fff; font-size: 15.5px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
 .home-hero.poster .near-me-result { color: #fff; font-weight: 600; margin-top: 0.9rem; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
+.mission { max-width: 46rem; margin: 0 auto; padding: 0 2rem 1.4rem; text-align: center; }
+.mission p { font-family: var(--sans); font-size: 14.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
+.mission b { font-weight: 700; color: var(--ink); }
+.mission a, .footer-about a { color: var(--moss); }
+.report-line { font-size: 13px; font-weight: 300; color: var(--ink-mid); margin: 0.3rem 0 0.7rem; line-height: 1.6; }
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 62rem; margin: 0 auto; padding: 0.4rem 2rem 2.4rem; }
 .step { display: block; text-decoration: none; color: var(--ink); font-family: var(--sans); text-align: center; }
 .step-ico { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 50%; background: var(--moss-light); color: var(--moss); margin-bottom: 0.6rem; }
@@ -824,7 +830,7 @@ FOOTER = """
   <div class="footer-cols">
     <div class="footer-col footer-about">
       <span class="footer-logo">Ancient Trees</span>
-      <p>The remarkable old trees of the world's great cities: found, verified and mapped, ten per city and never padded. See the ones near you, walk a route past a few, and collect the ones you have stood in front of.</p>
+      <p>We are mapping every remarkable tree in the world, one city at a time, and we need your help. Each one is found, verified and placed by hand. If you know a tree that belongs on the map, <a href="%%ROOTPATH%%contribute">tell us about it</a>.</p>
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
@@ -2475,7 +2481,8 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, coun
   <h2>Trees nearby</h2>
   <div class="near-cards">{near_cards}</div>
   <div class="cta">Curious what else is standing in {esc(city)}? See <a href="../{cslug}">all {len(all_trees)} remarkable ancient trees in {esc(city)}</a> or find out <a href="oldest-tree">what the oldest tree in {esc(city)} is</a>.{species_line}</div>
-  <div class="report"><strong>Help keep this page true.</strong>
+  <div class="report"><strong>We are mapping every remarkable tree in the world, and we need your help.</strong>
+    <p class="report-line">This page was researched from a distance. If you know this tree, you know things we do not.</p>
     <a class="report-btn" href="{submit_link('correction')}">Something is wrong here</a>
     <a class="report-btn" href="{submit_link('tree')}">Suggest another tree</a></div>
 </main>
@@ -2715,7 +2722,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
 
     panel_foot = f"""
     <div class="panel-foot">
-      <p class="subtle-suggest">Know an ancient tree in {esc(city)} we missed? <a href="{submit_link('tree')}">Suggest it</a>.</p>
+      <p class="subtle-suggest"><b>We are mapping every remarkable tree in the world, and we need your help.</b> Know one in {esc(city)} we missed? <a href="{submit_link('tree')}">Put it on the map</a>.</p>
       <div class="take-with-you">
         <strong>Going there?</strong> <a href="{slug}.gpx" download>Download all {len(trees)} trees</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
       </div>
@@ -4110,6 +4117,9 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
 <section class="hero-sub">
   <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of. Every tree free to explore.</p>
 </section>
+<section class="mission">
+  <p><b>We are mapping every remarkable tree in the world, one city at a time.</b> Every tree here was found, verified and placed by hand, which means the map is only as complete as the people who know their own streets. <a href="contribute">Put a tree on it</a>.</p>
+</section>
 <section class="steps">
   <a class="step" href="explore">
     <span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
@@ -4214,7 +4224,7 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
 <main class="page">
   <h2 class="section-heading" id="cities">Ancient trees anywhere</h2>
   {directory_html}
-  <p class="dir-more">Not seeing your city? <a href="contribute">Help map it</a>.</p>
+  <p class="dir-more">Your city not here yet? We are mapping every remarkable tree in the world and we need your help. <a href="contribute">Start your city</a>.</p>
 
 </main>
 """
