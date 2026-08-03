@@ -1,0 +1,267 @@
+{
+  "city": "Cordoba",
+  "country": "Spain",
+  "status": "published",
+  "intro": "Cordoba keeps its oldest trees behind walls. The city's public gardens were laid out in the nineteenth and twentieth centuries, so its own catalogue of singular trees is full of magnificent specimens only eighty or ninety years old, while the genuinely ancient ones stand in a cathedral courtyard and a palace garden. What the city has in abundance is scale and scent: a plane reaching thirty-seven metres, another split in half by a cyclone and still standing, and a courtyard of bitter oranges watered by the same channels for centuries.",
+  "meta_description": "Cordoba's oldest tree is an olive drawn on a 1741 plan and still fruiting on half a trunk. That, a 400-year holm oak, and the orange courtyard.",
+  "question_meta": "Cordoba's oldest tree is the olive in the Mezquita's orange courtyard, on a 1741 plan and still bearing 60 kilos a year on half a trunk.",
+  "question_answer": "The oldest tree in Cordoba is the olive beside the fountain in the Patio de los Naranjos, the orange courtyard of the Mezquita-Catedral. It already appears on a plan of the courtyard drawn in 1741, which makes it around 285 years old, and it is documented rather than estimated. The Patio is free to enter daily, so this is one ancient tree that costs nothing to stand in front of.",
+  "question_context": "Half of its trunk is gone. The tree hollowed through the twentieth century and decayed badly from the 1980s, so what leans toward the fountain today is a shell that still produces about sixty kilos of olives a year, and the cathedral chapter has planted a young olive nearby as its eventual successor. In 2018 researchers sampled its leaves and fruit without harming it and found a local cultivar barely recorded anywhere else, which they have proposed naming after the city. Tourist copy sometimes calls the tree a thousand years old; there is no basis for that, and the 1741 plan is the actual evidence. The only tree in Cordoba that may be older is the holm oak in the garden of the Palacio de Viana, which the palace says has stood for four centuries and which rises above the roofline at over twenty-five metres, though that age rests on the palace's own word rather than on any survey. Everything else in the city is younger than it looks.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Cordoba?",
+      "a": "The olive beside the fountain in the Patio de los Naranjos, around 285 years old and documented on a 1741 plan of the courtyard. It survives on half a trunk and still fruits. Free to visit, daily."
+    },
+    {
+      "q": "When does the orange blossom in Cordoba?",
+      "a": "The azahar peaks in late March and early April, and the scent lasts roughly a month on the tree. The exact date shifts every year with the weather, so nobody can promise you a week."
+    },
+    {
+      "q": "Does Cordoba have really ancient trees?",
+      "a": "Two, honestly. The rest of the city's remarkable trees are eighty to a hundred and thirty years old, because its public gardens were laid out in the nineteenth and twentieth centuries. Several of them are spectacular anyway."
+    },
+    {
+      "q": "Which of these are free to see?",
+      "a": "All but two. The Patio de los Naranjos with its olive, the Orive garden, the Agriculture Gardens, the Alpargate plane and the cemetery Judas tree cost nothing. The Viana holm oak is inside a paid museum."
+    }
+  ],
+  "hero_tree_id": "cdb_001",
+  "trees": [
+    {
+      "id": "cdb_001",
+      "name": "The Olive of the Orange Courtyard",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "about 285 years",
+      "age_min": 270,
+      "age_max": 290,
+      "location": {
+        "address": "Patio de los Naranjos, Mezquita-Catedral, Calle del Cardenal Herrero, 14003 Cordoba",
+        "latitude": 37.879576,
+        "longitude": -4.779893,
+        "neighbourhood": "Centro Historico"
+      },
+      "story": "This tree is on a map drawn in 1741, which is a rarer thing than being old. Most claims about an ancient tree's age come from tradition; this one comes from an inventory of the courtyard that counted, alongside the olive, ninety-five orange trees, six cypresses, ten palms and a chinaberry. Two and a half centuries later roughly half its trunk is gone. It hollowed through the twentieth century, decayed badly from the 1980s, and what leans toward the fountain now is a shell that still manages about sixty kilos of olives a year. The cathedral chapter has conserved what remains and planted a young olive nearby to take over eventually. In 2018 researchers took leaf and fruit samples without harming it and found a cultivar barely recorded anywhere else, which they have proposed naming after the city. The fountain beside it is officially the Fuente de Santa Maria, finished in December 1741, but everyone calls its spout the Cano del Olivo, after the tree. Suitors were once told to drink from it for luck in love.",
+      "verified_sources": [
+        "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf",
+        "https://www.canalsur.es/noticias/andalucia/cordoba/el-olivo-del-patio-de-los-naranjos-de-cordoba-un-tesoro-que-resiste-el-paso-del-tiempo/2220671.html",
+        "http://saberyrecordar.blogspot.com/2015/06/el-olivo-del-cano-del-olivo-de-la.html"
+      ],
+      "access": "Free, the Patio de los Naranjos is open daily 08:30 to 19:00 (the prayer hall is ticketed separately)",
+      "transport": "In the historic centre, a few minutes on foot from anywhere in the old town",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Olivo_del_Patio_de_los_Naranjos_-_Mezquita_de_C%C3%B3rdoba.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Luca Volpi, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Age is documented rather than estimated: the tree appears on a 1741 plan of the courtyard, corroborated by the municipal singular-trees catalogue and by regional television reporting the 2018 DNA study. Tourist sources calling it 'almost a thousand years old' have no documentary basis and are not used here.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "cdb_002",
+      "name": "The Orange Courtyard of the Mezquita",
+      "species": "Bitter Orange (Citrus aurantium)",
+      "age_estimate": "a grove documented since 1512, replanted tree by tree",
+      "age_min": 40,
+      "age_max": 120,
+      "location": {
+        "address": "Patio de los Naranjos, Mezquita-Catedral, 14003 Cordoba",
+        "latitude": 37.87955,
+        "longitude": -4.7795,
+        "neighbourhood": "Centro Historico"
+      },
+      "story": "Ninety-eight bitter orange trees stand here in rows that line up with the columns of the prayer hall next door, so the courtyard reads as the building continuing outdoors into the light. It may be the oldest surviving garden in Europe: the enclosure goes back to the mosque founded in 784, orange trees are recorded in it from at least 1512, and the shallow channels that link the tree pits still carry the water that feeds them. In 2001 workers found a tenth-century cistern twelve metres beneath the paving, built to hold twelve hundred cubic metres so that washing and irrigation would never stop. Be honest about the trees themselves: they are ordinary Seville oranges, replaced one by one as they fail, so the grid is old and the individuals are not. What is worth timing a trip for is the last days of March, when the whole courtyard flowers at once and the scent of azahar carries out into the surrounding streets. Since 2026 the chapter has turned the bitter harvest, previously thrown away, into vinegar.",
+      "verified_sources": [
+        "https://mezquita-catedraldecordoba.es/en/descubre-el-monumento/el-edificio/patio-de-los-naranjos/",
+        "https://www.mezquitadecordoba.org/en/history-courtyard-orange-trees.html",
+        "https://www.infobae.com/espana/2026/02/25/el-sorprendente-destino-de-las-naranjas-amargas-de-la-mezquita-de-cordoba-se-utilizaran-para-un-vinagre-gourmet/"
+      ],
+      "access": "Free, open daily 08:30 to 19:00",
+      "transport": "In the historic centre, on foot",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Orange_Tree_Courtyard_%2814603047357%29.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Elliott Brown, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "An ensemble entry, and it passes the collectible-point test on purpose: a bounded courtyard of about 50 by 30 metres, planted in a deliberate grid, famous for being exactly that, with one obvious place to stand. The age range describes the individual trees, which are replaced as they fail; the grove itself is documented from 1512. The flowering window is real but shifts every year, so no week is claimed.",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "label": "late March into April, when the whole courtyard flowers and the scent carries into the streets",
+        "kind": "flowers"
+      },
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "cdb_003",
+      "name": "The Holm Oak of the Viana Palace",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "said by the palace to be over 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "location": {
+        "address": "Palacio de Viana, Plaza de Don Gome 2, 14001 Cordoba",
+        "latitude": 37.888861,
+        "longitude": -4.773472,
+        "neighbourhood": "Santa Marina"
+      },
+      "story": "Twelve courtyards, eighteen noble families, five centuries of owners, and the oldest inhabitant of the house is a tree. The palace calls this holm oak four hundred years old, which would make it older than most of the building around it, and at over twenty-five metres it rises clear above the roofline, so you see it from the street before you have paid to go in. It stands in the middle of a garden that only became a garden in 1814, when the seventh Marquis of Villaseca bought the land and laid it out in the French manner with sixteen box parterres that are themselves two centuries old now. Against the walls grow espaliered lemon, lime, mandarin, orange and grapefruit, the oldest plants in the palace after the oak itself. A holm oak is an evergreen, so there is no season to catch it in: the leaves are small, dark and leathery, closer to an olive's than to the lobed oak leaf on an English pub sign, and they stay all year. Worth knowing before you go: the four-century figure rests on the palace's own account, with no forestry survey behind it.",
+      "verified_sources": [
+        "https://www.palaciodeviana.com/patios-de-cordoba/el-jardin/",
+        "https://es.wikipedia.org/wiki/Palacio_de_Viana_(C%C3%B3rdoba)"
+      ],
+      "access": "Paid entry to the Palacio de Viana museum; closed Mondays, shorter hours in July and August",
+      "transport": "About 15 min walk northeast of the Mezquita",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Two published sources give the same 400-year figure and both very likely trace to the palace museum itself; no press, botanical or register source dates it independently. Published as the palace's claim rather than as established fact. Pin is the garden, not a surveyed trunk position.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cdb_004",
+      "name": "The Jacaranda of the Orive Garden",
+      "species": "Blue Jacaranda (Jacaranda mimosifolia)",
+      "age_estimate": "possibly a century",
+      "age_min": 80,
+      "age_max": 120,
+      "location": {
+        "address": "Jardines de Orive, Plaza de Orive, 14002 Cordoba",
+        "latitude": 37.885413,
+        "longitude": -4.7742,
+        "neighbourhood": "San Pedro"
+      },
+      "story": "For four hundred years nobody outside could see this tree. It grew in a walled orchard belonging first to a Dominican convent, on ground granted in 1241, and then to a Renaissance palace built in 1560 by the architect Hernan Ruiz II, and the gate was only opened to the public in 2004. It has come close to dying twice since. Naturalists recording it note that it barely survived the freeze of 2003, when Cordoba hit nine degrees below zero, and the municipal catalogue records the winters of 2010 and 2011 killing jacarandas across the city while this one held on. What stands there now is three trunks grown together into what looks like one tree, spreading a crown twenty metres across at nearly nineteen metres tall, probably the largest of its kind in the city. For most of the year it is a fine green canopy over a quiet square. For a couple of weeks in May it turns violet, flowering largely before the new leaves arrive, which is the whole reason jacarandas were planted across southern Spain in the first place.",
+      "verified_sources": [
+        "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf",
+        "https://www.notascordobesas.com/2018/10/ruta-de-arboles-singulares-de-cordoba.html"
+      ],
+      "access": "Free, public municipal garden",
+      "transport": "About 12 min walk northeast of the Mezquita",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The municipal catalogue says dating tests suggest it could be centenarian but does not settle it, and notes it is almost certainly two or three individuals fused. The flowering month is sourced from southern Spain generally rather than from Cordoba specifically, so no precise week is claimed. Pin is the garden; the catalogue's longitude for this record was lost in text extraction and was substituted from a neighbouring tree in the same small garden.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when it turns violet before the new leaves arrive",
+        "kind": "flowers"
+      },
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cdb_005",
+      "name": "The Giant Plane of the Agriculture Gardens",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "probably a century or more",
+      "age_min": 90,
+      "age_max": 130,
+      "location": {
+        "address": "Jardines de la Agricultura, 14004 Cordoba",
+        "latitude": 37.88789,
+        "longitude": -4.785496,
+        "neighbourhood": "Ciudad Jardin"
+      },
+      "story": "At thirty-seven metres this is the tallest tree in Cordoba's own catalogue of singular trees, and it stands in the city's oldest public garden, opened on the first of March 1811 by a mayor who had spent years travelling the Islamic world disguised as a Syrian prince. The trunk measures nearly four metres around and widens to over five at the base, which is what a plane does when nothing has hurried it. Cordobans do not call this place the Agriculture Gardens. They call it Los Patos, after the duck pond, and they have done so for generations. The tree rings a small central plaza together with several other big planes, so the one to look for is the tallest, the one whose crown disappears above the others when you stand underneath. The gardens were reorganised in 1864 and bought outright by the council in 1866, so the ground has been public for a hundred and sixty years, which in a city that keeps its best trees behind walls is worth something. A plane's autumn in Andalusia is a dull brown, so come for the size, not the season.",
+      "verified_sources": [
+        "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf",
+        "https://es.wikipedia.org/wiki/Jardines_de_la_Agricultura_(C%C3%B3rdoba)"
+      ],
+      "access": "Free, public park",
+      "transport": "About 16 min walk northwest of the Mezquita",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "The municipal catalogue gives the dimensions and calls the age probably centenarian without dating it. Pin is the central plazoleta: this is the largest of a group of similar planes there, and no source distinguishes the individual by coordinate.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cdb_006",
+      "name": "The Split Plane of the Alpargate",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "one of the oldest planes in the city",
+      "age_min": 100,
+      "age_max": 140,
+      "location": {
+        "address": "Plaza del Cristo de Gracia, 14002 Cordoba",
+        "latitude": 37.890734,
+        "longitude": -4.765368,
+        "neighbourhood": "San Lorenzo"
+      },
+      "story": "A cyclone tore this tree in half and it is still twenty-four metres tall. What stands over the Plaza del Cristo de Gracia today is the surviving portion of something that was once roughly twice the size, and the municipal catalogue rates it as very probably one of the oldest planes in Cordoba. Its crown occupies twenty of those twenty-four metres, so from beneath it there is essentially nothing else to see. It shades a Baroque fountain that the city paid for with the proceeds of three bullfights held in 1747, and which was moved to this square from the Puerta Nueva in 1950. During Holy Week the brotherhood of the Padres de Gracia carries its floats in and out beneath the branches, which is the one week of the year the tree has to make room for something. The catalogue's own photograph records a small indignity worth mentioning, because it says a lot about how cities treat their big trees: someone has bolted an electrical box to the trunk.",
+      "verified_sources": [
+        "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf",
+        "https://www.artencordoba.com/plazas/plaza-jardines-alpargate-cordoba.html"
+      ],
+      "access": "Free, open square",
+      "transport": "About 22 min walk northeast of the Mezquita",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Undated: the municipal catalogue calls the age very advanced and says it is very probably among the oldest planes in Cordoba, without a figure. Sources disagree on species, one local site calling it an Oriental plane; the professional municipal catalogue's identification is used here.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "cdb_007",
+      "name": "The Judas Tree of the San Rafael Cemetery",
+      "species": "Judas Tree (Cercis siliquastrum)",
+      "age_estimate": "undated, the largest of its species in the province",
+      "age_min": 70,
+      "age_max": 120,
+      "location": {
+        "address": "Cementerio de San Rafael, Avenida de Libia 2, 14005 Cordoba",
+        "latitude": 37.887337,
+        "longitude": -4.762606,
+        "neighbourhood": "Fuensanta"
+      },
+      "story": "A tree that flowers straight out of its own bark, standing at the gate of a cemetery. Judas trees do not put their blossom on new shoots the way most trees do; the magenta flowers push directly through the old wood of the trunk and the heavy limbs, before any leaves appear, so for two or three weeks in early spring the whole frame of the tree is coloured rather than covered. Botanists recording Cordoba's remarkable trees name this one the largest specimen of its species in the province: two and three quarter metres around, though only ten metres tall, splitting into three arms below head height. It shares the entrance with a Mexican fan palm, two big red river gums and an uncommon jujube, in a cemetery that thousands of people walk through in the last days of October. Which is the wrong time to see it. Come in March instead, when the gate is quiet and the tree is doing the one thing it is famous for.",
+      "verified_sources": [
+        "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf",
+        "https://cecosam.cordoba.es/es/informacion-general/plano-horario-acceso"
+      ],
+      "access": "Free, cemetery open from 08:30, closing 18:00 to 20:00 depending on season",
+      "transport": "About 20 min walk east of the Mezquita",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "No age published anywhere; the range is inferred from its dimensions and is the weakest figure on this page. The size claim (largest of its species in the province) comes from the municipal catalogue citing a botanical survey.",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "label": "March and April, when magenta flowers push straight out of the bare bark",
+        "kind": "flowers"
+      },
+      "location_precision": "confirmed"
+    }
+  ],
+  "oldest_tree_id": "cdb_001"
+}
