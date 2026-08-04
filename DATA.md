@@ -5,6 +5,30 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+## 2026-08-03 (previous UTC day)
+
+Search Console (freshest day Google provides, data lags 2-3 days):
+- 2026-08-03: 2 clicks, 249 impressions, avg position 12.4 (day before: c7/i299)
+- Days: 07-25:c0/i117  07-26:c1/i197  07-27:c8/i205  07-28:c5/i197  07-29:c9/i247  07-30:c7/i251  07-31:c2/i230  08-01:c7/i253  08-02:c7/i299  08-03:c2/i249
+- Top queries (10d): "york museum gardens" (i4, p4); acient tree (i1, p40); albero roma (i1, p47); alley pond giant (i1, p28); amsterdam plane trees (i1, p11)
+- Top pages (10d): /lisbon (c6/i104); /berlin/swamp-cypress-of-charlottenburg (c2/i4); /bologna (c2/i27); /brussels/oldest-tree (c2/i4); /cadiz/oldest-tree (c2/i16)
+- Content lead: 'ancient tree map' has no matching page (i7, p15)
+
+Web Analytics (beacon, real browsers, cookieless):
+- Days (visits/pageviews): 07-27:v20/p20  07-28:v20/p50  07-29:v10/p10  07-30:v10/p10  07-31:v0/p60  08-01:v10/p60  08-02:v20/p20  08-03:v10/p10
+- Top paths: / (100); /lisbon (20); /cadiz (20); /kyoto (10); /collections/europes-best-tree-city-trips (10)
+- Referrers: ancienttrees.app (140); (direct) (60); www.google.com (40)
+- Countries: NL (160); UA (30); US (20); ES (10); BE (10)
+- Devices: desktop (140); mobile (100)
+- Page load (8d): p50 399000ms, p90 3411000ms
+
+Site actions (yesterday): none recorded.
+Waitlist signups (total): 2.
+
+Machine: 1 chain attempts yesterday, 1 got real work time (~43 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Conclusion:** Search is the only channel with real data and it is still small: 2 clicks and 249 impressions on Google's freshest day (day before: c7/i299). Directional at best; no strategic conclusions from these volumes.
+
 ## 2026-08-02 (previous UTC day)
 
 Search Console (freshest day Google provides, data lags 2-3 days):
