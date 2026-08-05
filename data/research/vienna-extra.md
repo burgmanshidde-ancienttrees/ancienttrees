@@ -83,3 +83,36 @@ Every hop is under a kilometre and most are a five minute stroll.
 | vie_014 | Persian Ironwood, Grete-Rehor-Park | 3257543 | 225310 | 1940 | 460 cm |
 | vie_015 | Caucasian Wingnut, Stadtpark | 3257447 | 194189 | 1921 | 308 cm |
 | vie_016 | Japanese Pagoda Tree, Stadtpark | 3257446 | 193786 | 1860 | 444 cm |
+
+## FLAG: Vienna passes ten
+
+10 published + 6 here = 16. Before vienna-extra.json is merged into
+data/cities/vienna.json, the copy that promises ten has to stop:
+
+- `intro`: "The ten below range from a plane tree..." and "All ten are free to see."
+- `meta_description`: "Ten remarkable trees, all free to visit."
+- `faq[1].a`: "All ten trees on this list are free to see."
+- the page title and the question page, per the count check in
+  scripts/build_site.py, which FAILS the build rather than warning.
+
+Not fixed here, per the brief.
+
+## Photos
+
+Three viewed, three approved, which is the per-pass ceiling: the Rathauspark
+fern-leaved beech (Michael Kranewitter, CC BY-SA 3.0 AT), the Schmerlingplatz
+Persian ironwood and the Stadtpark pagoda tree (both Thomas Ledl, CC BY-SA
+3.0 AT). Two more were viewed and rejected rather than approved: the
+Schoenbornpark lime, where the trunk hides behind the pond's rockwork, and
+two GuentherZ files that turned out to be photographs of the monument plaque
+rather than of the tree. The plaques were still worth opening, since the
+wingnut's reads "Nr. 280 Kaukasische Fluegelnuss" and independently confirms
+which tree carries that designation.
+
+## Leads and blocked
+
+data/leads/vienna.json, 34 leads and 8 blocked. The one lead worth a run on
+its own: Naturdenkmal 3257933, a ginkgo the Baumkataster dates to 1864 and
+measures at 408 cm, inside the Prater administration grounds at
+Vivariumstrasse 17. Older and thicker than the Stadtpark ginkgo we already
+publish. Whether anyone can walk to it was not established.

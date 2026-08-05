@@ -2,10 +2,10 @@
   "city": "Vienna",
   "country": "Austria",
   "status": "needs_curation",
-  "intro": "Vienna keeps its oldest trees on an official register: since 1936, remarkable specimens have qualified as Naturdenkmäler, natural monuments protected the same way a listed building is. That bureaucratic habit is why this city can name an exact protection date for almost every tree on this list, down to the day. The ten below range from a plane tree Mozart is said to have walked past on his way to piano lessons to a ginkgo planted beside a composer's statue in the city's first public park. All ten are free to see.",
-  "meta_description": "Vienna's ancient trees range from a Mozart-era plane to twin ginkgos a century apart. Ten remarkable trees, all free to visit.",
+  "intro": "Vienna keeps its oldest trees on an official register: since 1936, remarkable specimens have qualified as Naturdenkmäler, natural monuments protected the same way a listed building is. That bureaucratic habit is why this city can name an exact protection date for almost every tree on this list, down to the day. The sixteen below range from a plane tree Mozart is said to have walked past on his way to piano lessons to a ginkgo planted beside a composer's statue in the city's first public park. All sixteen are free to see.",
+  "meta_description": "Vienna's ancient trees range from a Mozart-era plane to twin ginkgos a century apart. Sixteen remarkable trees, all free to visit.",
   "question_answer": "The oldest tree in Vienna is a plane tree tucked into the Fähnrichhof courtyard off Singerstraße in the old town, estimated at more than 280 years old. A 1987 survey already measured its age at over 250 years, and in the centuries since it has grown around part of the iron fence from St Stephen's old cathedral graveyard, closed in the 1730s. It stands a short walk from Stephansplatz, reached through a public passage from Blutgasse.",
-  "question_meta": "Vienna's oldest tree is a 280-year-old plane hidden in a Singerstraße courtyard. Where it stands, and the city's ten most remarkable trees.",
+  "question_meta": "Vienna's oldest tree is a 280-year-old plane hidden in a Singerstrasse courtyard. Where it stands, and fifteen more remarkable trees.",
   "question_context": "Vienna's natural monument register, running since 1936, gives an exact protection date for almost every historic tree in the city, but planting dates are rarer, so ages here are mostly expert estimates rather than documented facts. The Singerstraße plane is the exception: a formal 1987 survey put its age at more than 250 years even then, which is about as close to a hard number as Vienna's tree records get, ahead of the ginkgo by the Schubert monument and the Hauptallee's chestnut avenue, both estimated rather than surveyed. It grows in the Fähnrichhof, a courtyard reached through a passage (a Durchhaus, in local terms) connecting Blutgasse and Singerstraße in the first district, a few minutes on foot from Stephansplatz. The tree's most remarkable feature is not visible: part of the iron fence that once enclosed St Stephen's Cathedral's own graveyard, closed to burials in the 1730s, is sealed inside its trunk, absorbed by decades of growth.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Vienna's ancient trees free to visit?",
-      "a": "All ten trees on this list are free to see. Most stand in public parks, along streets, or in courtyards open to pedestrians during the day, and none require a paid ticket."
+      "a": "All sixteen trees on this list are free to see. Most stand in public parks, along streets, or in courtyards open to pedestrians during the day, and none require a paid ticket."
     },
     {
       "q": "What is a Wiener Naturdenkmal?",
@@ -200,16 +200,16 @@
       "id": "vie_006",
       "name": "The Founding Plane of Rathauspark",
       "species": "London Plane (Platanus x hispanica)",
-      "age_estimate": "243 years",
-      "age_min": 235,
-      "age_max": 250,
+      "age_estimate": "disputed: 1783 by tradition, 1876 in the city register",
+      "age_min": 150,
+      "age_max": 245,
       "location": {
         "address": "Rathauspark, Rathausplatz, 1010 Wien",
         "latitude": 48.210094,
         "longitude": 16.359186,
         "neighbourhood": "Innere Stadt, 1st district"
       },
-      "story": "The oldest tree in front of Vienna's City Hall is older than the building itself by exactly one century. This plane went into the ground in 1783, when the site was still open land on the edge of the city, decades before anyone had drawn up plans for a Rathaus or the park now named after it. Construction of the neo-Gothic town hall did not start until 1872, and the park was landscaped around the new building only after that, which means this tree had already been growing for close to ninety years by the time the space around it became a park at all. It has since grown into a trunk six metres around and a crown thirty metres tall, big enough that Vienna's own tree registry lists it, under catalogue number 252, as Rathauspark's oldest specimen without qualification. It is one of three plane trees in the park with individual legal protection as natural monuments, granted in 1973. Office workers on lunch break, tourists cutting through on their way to the Burgtheater, and the occasional wedding photographer all pass beneath a canopy that was already mature when Mozart was writing his last symphonies, in a park that did not exist yet to contain it.",
+      "story": "The oldest tree in front of Vienna's City Hall is older than the building itself by exactly one century. Two records disagree about this tree by ninety years. Tradition puts it in the ground in 1783, when the site was open land beyond the city. The city's own tree register says 1876, three years after the park was laid out, and gives that same year to every monument here, which is what a register writes down when a park is planted at once. Nobody has counted its rings. Construction of the neo-Gothic town hall did not start until 1872, and the park was landscaped around the new building only after that, which means this tree had already been growing for close to ninety years by the time the space around it became a park at all. It has since grown into a trunk six metres around and a crown thirty metres tall, big enough that Vienna's own tree registry lists it, under catalogue number 252, as Rathauspark's oldest specimen without qualification. It is one of three plane trees in the park with individual legal protection as natural monuments, granted in 1973. Office workers on lunch break, tourists cutting through on their way to the Burgtheater, and the occasional wedding photographer all pass beneath a canopy that was already mature when Mozart was writing his last symphonies, in a park that did not exist yet to contain it.",
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Rathauspark_(Wien)",
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Innere_Stadt"
@@ -222,7 +222,7 @@
         "attribution": "GuentherZ, via Wikimedia Commons",
         "status": "approved"
       },
-      "curation_status": "ai_generated",
+      "curation_status": "flagged",
       "notes": "One of three plane trees in Rathauspark individually registered as natural monuments (Nr. 564, 566, 567), protected since 3 July 1973; this entry covers the specific tree identified by the park's own registry as the oldest, tree catalogue number 252. Location upgraded to confirmed: the approved photo's own Commons geolocation data (48°12'36.34\"N 16°21'33.07\"E, added by the photographer, Vienna monument specialist GuentherZ) places the tree itself, about 150m from the previous park-address estimate.",
       "location_precision": "confirmed"
     },
@@ -351,6 +351,225 @@
       },
       "curation_status": "flagged",
       "notes": "Naturdenkmal Nr. 817, protected since 25 January 2010, covering both the ginkgo and the giant sequoia at this address as a single designation. Ginkgo age ('around 100 years') is as stated at the time of the 2010 survey; no updated measurement has surfaced, so current age is an estimate projected forward.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_011",
+      "name": "The Lime of the Schönbornpark",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "187 years, planted 1839 by the city's tree register",
+      "age_min": 180,
+      "age_max": 195,
+      "location": {
+        "address": "Schönbornpark, Laudongasse 15-19, 1080 Wien",
+        "latitude": 48.2126,
+        "longitude": 16.351025,
+        "neighbourhood": "Josefstadt, 8th district"
+      },
+      "story": "Vienna's tree registry lists nearly nine hundred trees in the eighth district and gives this one a girth of 489 centimetres, which makes it comfortably the thickest thing growing in Josefstadt. The lime stands beside the pond in Schönbornpark, the garden of the Palais Schönborn, and the city dates its planting to 1839. That is twenty-three years before the Schönborn family sold the grounds to the municipality and the private garden became a public park, so the tree spent its first two decades behind a wall, in a palace garden nobody was allowed into. The palace itself, built between 1706 and 1711 to a design by Johann Lucas von Hildebrandt, has housed the Volkskundemuseum since 1917, which means the lime now shades a lawn where people eat lunch between looking at Austrian farmhouse furniture. At 26 to 30 metres it is taller than the palace behind it. Large-leaved limes flower earlier than the small-leaved kind, usually the middle two weeks of June, and when this one goes off the whole park smells of it and the crown audibly hums. Bring something to sit on. The benches around the pond fill up fast on the first properly warm evening of the year, and locals know exactly which fortnight to come for.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Josefstadt",
+        "https://data.wien.gv.at (Baumkataster, layer ogdwien:BAUMKATOGD, BAUM_ID 220685)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "12 min walk from Rathaus U-Bahn station (U2), uphill along Josefstädter Straße",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "label": "mid-June, when it flowers and the whole park smells of lime",
+        "kind": "flowers"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Naturdenkmal Nr. 645, protected 30 December 1976, listed by the Vienna monument register (register_id 3257637) as a single tree at 48.212614/16.351002 and by the city's separate Baumkataster (MA 42) as BAUM_ID 220685 at 48.2125997/16.3510248, 2.3 m apart. Baumkataster figures: PFLANZJAHR 1839, girth 489 cm, height class 6 (26-30 m), crown class 5 (13-15 m). The 1839 date is the city's own record rather than a document we have seen, and park planting years in Vienna are sometimes the park's construction year doing duty as a planting date; here it is not, because the garden was private until 1862, so 1839 cannot be a park-creation default. Photo hunted 2026-08-05: GuentherZ's CC BY 3.0 September 2011 shot (File:Naturdenkmal 645 2011-09-27 P9270027 Wien08 Schoenbornpark Sommerlinde GuentherZ.JPG) was viewed and rejected against the Cadiz standard, the trunk is hidden behind the pond's rockwork and a second tree fills the left foreground. Honest gap rather than a mediocre photo.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_012",
+      "name": "The Plane Outside the Grey House",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "about 200 years",
+      "age_min": 190,
+      "age_max": 215,
+      "location": {
+        "address": "Landesgerichtsstraße, outside the Landesgericht für Strafsachen, 1080 Wien",
+        "latitude": 48.213012,
+        "longitude": 16.355763,
+        "neighbourhood": "Josefstadt, 8th district"
+      },
+      "story": "There used to be two of them. Vienna protected a pair of oriental planes on Landesgerichtsstraße in July 1956, recording trunk girths of 2.1 and 3.6 metres, and today both the monument register and the city's tree catalogue find exactly one oriental plane on the entire street. The survivor is the bigger one, now 445 centimetres around and 21 to 25 metres tall, and its two record-keepers disagree pleasantly about its birthday: the protection decree guessed it was planted around 1835, the tree catalogue writes 1815. Either way it beat the building it stands in front of. The Landesgericht für Strafsachen, the grey slab of a criminal court Viennese people simply call the Graues Haus, went up between 1831 and 1839 on ground that had been the citizens' shooting range and, before that, the St Stephanus cemetery. So the plane was already rooted while the site was still a rifle range on the edge of town, decades before the city walls came down and the Ringstrasse was drawn. It has since spent nearly two centuries a few metres from the door people are led through on the worst day of their lives. Nobody planted it as a memorial to anything. It simply outlasted every use the ground has been put to.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Josefstadt",
+        "https://data.wien.gv.at (Baumkataster, layer ogdwien:BAUMKATOGD, BAUM_ID 130254)",
+        "https://de.wikipedia.org/wiki/Landesgericht_f%C3%BCr_Strafsachen_Wien"
+      ],
+      "access": "Free, public sidewalk, visible at all times",
+      "transport": "4 min walk from Rathaus U-Bahn station (U2), north along Landesgerichtsstraße",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Naturdenkmal Nr. 459, protected 19 July 1956 (Vienna monument register, register_id 3257520, single-tree type, 48.213028/16.355784). Baumkataster BAUM_ID 130254 at 48.21301197/16.35576302, 2.4 m away: PFLANZJAHR 1815, girth 445 cm, height class 5 (21-25 m), crown class 6 (16-18 m). Flagged because the two departments disagree on age by twenty years (decree 'vermutlich um 1835', catalogue 1815), so the stated range is deliberately wide. The 1956 decree covered TWO planes with girths of 2.1 and 3.6 m; a query of every Platanus on Landesgerichtsstraße returns one Platanus orientalis (this one) plus a single 1977 Platanus x acerifolia 77 m away, so the smaller of the pair is gone and this entry describes only the survivor, which the 3.6 m figure matches after seventy years of growth. Photo: GuentherZ has a CC BY 3.0 September 2011 image (File:Naturdenkmal 459 2011-09-29 P9290036 ...) but it is framed as the pair from across the street; not viewed this pass because the three-photo budget was spent, left as an honest gap for a later run.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_013",
+      "name": "The Fern-leaved Beech of the Rathauspark",
+      "species": "Fern-leaved Beech (Fagus sylvatica 'Laciniata')",
+      "age_estimate": "about 153 years, planted 1873",
+      "age_min": 145,
+      "age_max": 160,
+      "location": {
+        "address": "Rathauspark, south lawn near Rathausplatz, 1010 Wien",
+        "latitude": 48.210165,
+        "longitude": 16.35982,
+        "neighbourhood": "Innere Stadt, 1st district"
+      },
+      "story": "Four hundred and forty-nine trees are individually registered in the Rathauspark and this one has the thickest trunk of the lot, six metres around, beating the park's famous plane trees by a few centimetres. It is also the strangest looking. A fern-leaved beech is a cultivated freak of the common beech whose leaves come out shredded into narrow ribbons, so from a distance the canopy reads as feathery rather than solid, and up close you keep checking whether you are looking at a beech at all. Vienna gave it legal protection in July 1973, the same day it protected three of the park's planes. Its trunk is the reason to come. Rather than one clean column it goes up as a fused mass of grey limbs that split at head height and lean outward in every direction, with the roots buttressing out across bare earth where a century and a half of feet have worn the grass away. Generations of Viennese have carved initials into it, all healed over into pale scars. The park was laid out in 1873, which is also the year the city gives as this tree's planting, so it has stood in front of the town hall for as long as there has been a town hall to stand in front of.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Innere_Stadt",
+        "https://data.wien.gv.at (Baumkataster, layer ogdwien:BAUMKATOGD, BAUM_ID 146749)"
+      ],
+      "access": "Free, public park, open at all times",
+      "transport": "3 min walk from Rathaus U-Bahn station (U2) or the Rathausplatz tram stop (Tram 1/71/D)",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "label": "January, when the leaves are gone and the whole buttressed frame of it shows",
+        "kind": "bare silhouette"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Wiener_Naturdenkmal_562_-_Geschlitztbl%C3%A4ttrige_Rotbuche_%28Innere_Stadt%29_d.JPG",
+        "license": "CC BY-SA 3.0 AT",
+        "attribution": "Michael Kranewitter, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Naturdenkmal Nr. 562, protected 3 July 1973 (Vienna monument register, register_id 3257648, 48.210209/16.359763). Baumkataster BAUM_ID 146749 at 48.2101646/16.3598198, 6.5 m away: PFLANZJAHR 1873, girth 600 cm, height class 5 (21-25 m), crown class 8 (>21 m). The 'thickest trunk in the park' claim is checked, not asserted: a query of all 449 Baumkataster records with OBJEKT_STRASSE '01., Rathauspark' returns 600 cm here against 597, 534 and 526 for the three protected planes, so it is the maximum. It does not conflict with vie_006's claim to be the park's OLDEST tree, which is a different superlative, but see data/research/vienna-extra.md: the Baumkataster dates vie_006 to 1876, not the 1783 that entry's story asserts, and that needs re-checking separately. Species string uses the corpus's existing common name 'Fern-leaved Beech' (Cordoba carries a Fagus sylvatica f. asplenifolia under it) with the cultivar name the Vienna registers actually use. Photo viewed directly at 960x1440 before approval: daylight, colour, the tree fills the frame, the buttressed base and the limb structure both readable, the Naturdenkmal plaque visible on a limb at upper right, and the centre band of the frame is trunk, so it survives the wide card crop.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_014",
+      "name": "The Persian Ironwood of the Grete-Rehor-Park",
+      "species": "Persian Ironwood (Parrotia persica)",
+      "age_estimate": "estimated 85-110 years",
+      "age_min": 85,
+      "age_max": 110,
+      "location": {
+        "address": "Grete-Rehor-Park, Schmerlingplatz, 1010 Wien",
+        "latitude": 48.206798,
+        "longitude": 16.358963,
+        "neighbourhood": "Innere Stadt, 1st district"
+      },
+      "story": "This tree is twice as wide as it is tall. The Persian ironwood on Schmerlingplatz stands between 6 and 10 metres high and throws a crown 16 to 18 metres across, which is what the species does when nobody crowds it: instead of a trunk it grows a low fused knot of leaning stems that peel in grey, green and fawn plates like a plane tree's, then spreads sideways until it makes its own room. The city measures the base at 460 centimetres around, an exceptional figure for a species most European gardens never get past arm's width. Vienna protected it on 5 November 1956, and the stated reason was not its age or size but simply its rarity. Parrotia persica grows wild only in the Caspian forests of northern Iran and Azerbaijan, and in the 1950s a full-grown one in a Vienna square was worth a legal decree. What it does in late October is the reason to walk over. The leaves do not turn a single colour, they turn several at once and unevenly, so one branch goes scarlet while the next is still green and a third has already reached amber, and the whole low dome ends up looking backlit even under grey sky. The small park around it, a wedge of grass beside the Justizpalast, was named in 2016 after Grete Rehor, the first woman to hold a ministry in Austria.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Innere_Stadt",
+        "https://data.wien.gv.at (Baumkataster, layer ogdwien:BAUMKATOGD, BAUM_ID 225310)"
+      ],
+      "access": "Free, public park, open at all times",
+      "transport": "5 min walk from Volkstheater U-Bahn station (U2/U3), across Museumsplatz",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October, when the leaves turn scarlet, amber and green all at once",
+        "kind": "autumn colour"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Schmerlingplatz_Persische_Parrotie.jpg",
+        "license": "CC BY-SA 3.0 AT",
+        "attribution": "Thomas Ledl, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Naturdenkmal Nr. 477, protected 5 November 1956 'aufgrund ihrer Seltenheit' (Vienna monument register, register_id 3257543, listed under the address Schmerlingplatz, 48.206851/16.359083). Baumkataster BAUM_ID 225310 at 48.20679769/16.35896258, 10.7 m away, the widest offset of any match in this pass: PFLANZJAHR 1940, girth 460 cm, height class 2 (6-10 m), crown class 6 (16-18 m). AGE IS FLAGGED, and this is the one place in this batch where the two departments do not sit comfortably together: a tree planted in 1940 would have been sixteen years old when the city declared it a natural monument in 1956. That is not impossible, since the decree's stated ground is the species' rarity rather than the tree's age, but 460 cm of fused base in 86 years is fast even for a multi-stemmed parrotia, so the age range here is deliberately open at the top and no precise figure is claimed. The girth is a base measurement across fused stems, not a single trunk, which the story says in plain words rather than in a number. Photo viewed directly at 960x643 before approval: daylight, colour, correctly exposed, the tree fills the frame with crown and base both readable, centre band is tree. Overhead tram wires cross the upper third, which is honest to the place.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_015",
+      "name": "The Caucasian Wingnut of the Stadtpark",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "about 105 years, planted 1921",
+      "age_min": 100,
+      "age_max": 112,
+      "location": {
+        "address": "Stadtpark, west bank of the Wien river, 1010 Wien",
+        "latitude": 48.205087,
+        "longitude": 16.379469,
+        "neighbourhood": "Innere Stadt, 1st district"
+      },
+      "story": "Come in July and this tree is hung with several hundred green ropes. The Caucasian wingnut fruits in chains up to half a metre long, each one a string of little winged nutlets that dangle straight down from the branch tips and stay there, greening, then browning, into autumn. No other tree in the Stadtpark does anything remotely like it, and most people who stop have no idea what they are looking at. Vienna put it under protection on 16 December 1941, in the middle of a war, as Naturdenkmal Nr. 280. The city's tree catalogue dates it to 1921 and gives its trunk as 308 centimetres around under a crown 16 to 18 metres wide. It also lists two more wingnuts of exactly the same age within five metres, which is not an accident of record keeping: this species suckers hard from the root plate, sending up new stems around the parent until one tree slowly becomes a thicket of itself. The old bark helps you find it. Wingnut bark is deeply corded and ridged, closer to a very old ash than to the walnut it is related to, and this one carries its enamel monument plaque half swallowed by ivy about chest height. It stands near the Wien river, two minutes from the ginkgo by the Schubert monument.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Innere_Stadt",
+        "https://data.wien.gv.at (Baumkataster, layer ogdwien:BAUMKATOGD, BAUM_ID 194189)"
+      ],
+      "access": "Free, public park (Stadtpark), open at all times",
+      "transport": "4 min walk from Stadtpark U-Bahn station (U4)",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "July and August, when half-metre chains of winged nutlets hang from every branch tip",
+        "kind": "catkins"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Naturdenkmal Nr. 280, protected 16 December 1941 (Vienna monument register, register_id 3257447, 48.205087/16.379469). Baumkataster BAUM_ID 194189 at the same point to within 0.0 m, the tightest match of the pass: PFLANZJAHR 1921, girth 308 cm, height class 4 (16-20 m), crown class 6 (16-18 m). Two sibling records, BAUM_ID 194188 (253 cm) and 194190 (324 cm), sit 2 m and 5 m away with the same 1921 date, and the monument register carries only one entry for the spot, so this is treated as one designated tree with its own suckers rather than as three collectible points; the story says so. The two folded ids are recorded as leads in data/leads/vienna.json. Identity independently corroborated by File:Kaukasische Flügelnuss1.jpg on Wikimedia Commons, viewed this pass: it shows the enamel plaque reading 'WIENER NATURDENKMAL Nr. 280 Kaukasische Flügelnuß' on deeply corded bark with ivy across it, which is why the story can describe the plaque. That file is a plaque photo, not a tree photo, so it was NOT used as this entry's image and the photo stays an honest gap.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_016",
+      "name": "The Pagoda Tree of the Stadtpark",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "166 years, planted 1860 by the city's tree register",
+      "age_min": 160,
+      "age_max": 172,
+      "location": {
+        "address": "Stadtpark, southern end near the Johannesgasse entrance, 1010 Wien",
+        "latitude": 48.203669,
+        "longitude": 16.379102,
+        "neighbourhood": "Innere Stadt, 1st district"
+      },
+      "story": "Vienna's tree catalogue dates this one to 1860, and the Stadtpark did not open until August 1862. Whichever way you read that, the pagoda tree was in the ground before the park was, either as one of the very first things planted while the Wien river bank was still a building site or as a tree the landscapers found there and kept. It has grown to 444 centimetres around and stands 21 to 25 metres, on a trunk that forks low and then leans away from itself in two directions at once, so it looks less like a park specimen than like something that had to negotiate for its light. Styphnolobium japonicum is the tree Chinese emperors were buried under and Beijing planted along its temple approaches, and it earns its place in a European park by flowering at the one time of year when almost nothing else does. Late July into August it covers itself in loose sprays of small cream pea-flowers, then drops them, and for a week the path underneath is pale with them. Vienna protected it on 16 December 1941 as Naturdenkmal Nr. 276, the same day it protected the wingnut a hundred and sixty metres away. Both are still here.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Innere_Stadt",
+        "https://data.wien.gv.at (Baumkataster, layer ogdwien:BAUMKATOGD, BAUM_ID 193786)"
+      ],
+      "access": "Free, public park (Stadtpark), open at all times",
+      "transport": "6 min walk from Stadtpark U-Bahn station (U4), or 4 min from Stubentor (U3)",
+      "best_time": {
+        "months": [
+          8
+        ],
+        "label": "August, when it flowers cream at the one time of year almost nothing else does",
+        "kind": "flowers"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Stadtpark_Japanischer_Schnurbaum.jpg",
+        "license": "CC BY-SA 3.0 AT",
+        "attribution": "Thomas Ledl, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Naturdenkmal Nr. 276, protected 16 December 1941 (Vienna monument register, register_id 3257446, 48.203669/16.379102). Baumkataster BAUM_ID 193786 at the same point to within 0.0 m: PFLANZJAHR 1860, girth 444 cm, height class 5 (21-25 m), crown class 6 (16-18 m). Note the Baumkataster still files the species under the old name Sophora japonica; the corpus canonical name is 'Japanese Pagoda Tree (Styphnolobium japonicum)', which seven other trees on the site already use. A second, much younger pagoda tree (BAUM_ID 193723, 1938, 238 cm) stands 18 m away and is not the monument. The 1860-versus-1862 point is stated as the tension it is rather than resolved, because the register's planting year is the city's own figure and no planting document has been seen. Photo viewed directly at 960x1387 before approval: daylight, colour, blue sky, the tree fills the frame from root flare to crown, the low fork clearly readable, a small white stone monument behind it for scale. Portrait format, but the tree is centred so the wide card crop still lands on trunk and lower crown.",
       "location_precision": "confirmed"
     }
   ]

@@ -2,10 +2,10 @@
   "city": "Naples",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Naples has more catalogued monumental trees than any other Italian city, and more than half grow inside one place: the Real Bosco di Capodimonte, a former royal hunting estate the Bourbon kings spent two centuries filling with specimens from China, Mexico and Australia. This list draws six of its ten from that single collection, since that is where Naples kept its trees. The rest are scattered around the park: a cloister platano regrown from its felled root, a plane on the seafront, and a pine Italy loved so much it replanted after losing the original.",
-  "meta_description": "Naples's twelve most remarkable trees, mostly from the Bourbon-era Capodimonte estate: a 220-year-old camphor, a cloister plane regrown from its own root.",
+  "intro": "Naples has more catalogued monumental trees than any other Italian city, and keeps them in two places worth a morning each. The Real Bosco di Capodimonte is a former Bourbon hunting estate the court spent two centuries filling with specimens from China, Mexico and Australia, and eight of these trees grow there. The second walk is the Real Orto Botanico, founded by decree in 1807, where five more stand within 150 metres, including the widest trunk on the city's register. The rest are scattered.",
+  "meta_description": "Naples's most remarkable trees, in two walks: the Bourbon estate at Capodimonte with its 220-year-old camphor, and the 1807 botanical garden on Via Foria.",
   "question_answer": "Naples's oldest documented tree is the Canforo del Giardino dei Principi, a camphor tree in the Real Bosco di Capodimonte planted in the early 1800s and roughly 220 years old, brought directly from China during the Bourbon era. It grows in the Garden of the Princes, a free section of the park in the north of the city.",
-  "question_meta": "Naples's oldest tree is a 220-year-old camphor at Capodimonte's Garden of the Princes, brought from China by the Bourbons. Its story and eleven more trees.",
+  "question_meta": "Naples's oldest tree is a 220-year-old camphor at Capodimonte, brought from China by the Bourbons. Its story, and sixteen more trees.",
   "question_context": "Naples tops Italy's own official register of monumental trees, the national list created under a 2013 law, with more catalogued specimens than any other municipality in the country. Most of that count concentrates in one place, the Real Bosco di Capodimonte, the former Bourbon royal hunting estate whose Garden of the Princes and Royal Orchard the park's own museum has singled out as home to six specifically monumental trees. Among those, the camphor tree of the Garden of the Princes is the one most consistently dated, at roughly 220 years old, brought from China in the early 1800s and now one of the largest camphor trees anywhere in Europe. A second camphor in the nearby Royal Orchard and a Montezuma cypress share the same garden but only carry a broad 19th century estimate, undated precisely by any single source, a gap common to several other trees on this list. The park is free to enter in most sections.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Why does Capodimonte have so many of Naples's oldest trees?",
-      "a": "Because the Bourbon kings spent roughly two centuries turning a royal hunting estate into a working botanical showcase, importing camphor from China, cypress from Mexico and eucalyptus from Australia. Eight of the twelve trees on this list, and more than half of Naples's officially catalogued monumental trees citywide, grow within its 134 hectares."
+      "a": "Because the Bourbon kings spent roughly two centuries turning a royal hunting estate into a working botanical showcase, importing camphor from China, cypress from Mexico and eucalyptus from Australia. Eight of the seventeen trees on this list, and more than half of Naples's officially catalogued monumental trees citywide, grow within its 134 hectares."
     },
     {
       "q": "What happened to the famous Pino di Posillipo?",
@@ -22,7 +22,7 @@
     },
     {
       "q": "Are Naples's remarkable trees free to see?",
-      "a": "Most are, standing in free public parks, squares and a state archive courtyard. The Real Bosco di Capodimonte's outdoor gardens are free, though its museum and some restored sections keep separate hours; check before visiting a specific tree inside the park."
+      "a": "Most are, standing in free public parks, squares and a state archive courtyard. The Real Bosco di Capodimonte's outdoor gardens are free, though its museum and some restored sections keep separate hours. The Real Orto Botanico is also free and needs no booking, but it opens on weekdays only, until 14:00 on Monday, Wednesday and Friday and 16:00 on Tuesday and Thursday, so the five trees there cannot be seen at a weekend."
     }
   ],
   "trees": [
@@ -395,6 +395,174 @@
       },
       "curation_status": "ai_generated",
       "notes": "Age is the museum's 'mid-nineteenth century' carried to today. Pin marked approximate deliberately: at 75 cm girth and 9 m this is a small tree in a planted garden and a visitor will have to look, unlike the camphor 120 m west. Girth 75 cm is the smallest in the Naples register, which is a units sanity check that passes: it is a genuinely slender tree, listed for rarity.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nap_013",
+      "name": "The False Kapok of the Botanical Garden",
+      "species": "Silk Floss Tree (Ceiba speciosa)",
+      "age_estimate": "more than 100 years, undated precisely",
+      "age_min": 100,
+      "age_max": 200,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October and November, when the bare crown fills with pink flowers",
+        "kind": "flowers"
+      },
+      "location": {
+        "address": "Real Orto Botanico di Napoli, Via Foria 223, 80139 Napoli",
+        "latitude": 40.8612,
+        "longitude": 14.262192,
+        "neighbourhood": "San Carlo all'Arena"
+      },
+      "story": "Naples has 53 entries on Italy's national monumental register and this one has the widest trunk of the lot. What you actually walk up to is not the single swollen bottle the species is famous for. It is four or five enormous stems rising together out of one fused base, smooth and grey-green, leaning gently apart like a hand opening. The 880 centimetres the national register records is a measurement taken around the whole of that base; Campania's regional register says 800. Either figure wins.\n\nCeiba speciosa comes from Brazil, Peru and Argentina, a relative of the kapok whose pods split open into silky white floss. Young trees arm themselves with fat conical spines and shed most of them as the bark stretches, which is why this one is smooth everywhere you can reach. The leaves repay a look as well: five to seven pointed leaflets spreading from one stalk like fingers.\n\nCome in October or November. The crown fills with big five-petalled flowers, pink at the tips and streaked yellow towards the throat, and since the leaves are going at roughly the same time the flowers end up sitting on bare wood. They drop in quantity, so the grass underneath turns pink well before the tree above has finished.\n\nIt has stood here more than a century, through the years the Allies used this garden as a barracks, a car park and a football pitch.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_165.html",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.ortobotaniconapoli.it/it/12-arboreto.html"
+      ],
+      "access": "Free, no booking. Open weekdays only: Mon, Wed, Fri 9:00-14:00, Tue and Thu 9:00-16:00, closed Saturday and Sunday",
+      "transport": "10 min walk from Cavour or Museo metro, or bus along Via Foria",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/579727236/original.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Mary Lata, via iNaturalist",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Two registers agree on species, height (25 m) and position to sub-metre (MASAF sheet 34/F839/NA/15 at 40.861200, 14.262192; Campania scheda 165 at 40.861200, 14.262193). They differ on girth, 880 cm against 800 cm, and the story states both rather than picking one. Age is Campania's '>100 anni'; MASAF carries no age field for any Italian tree, so there is no second opinion on age and none is invented. The garden's own arboretum page independently names Ceiba speciosa among its majestic specimens, which is the third source for existence. October-November flowering is the species' documented Mediterranean flowering window. The 1947 'total ruin' report and the wartime use of the garden come from the garden's own history page. Photo: iNaturalist observation 320623421, viewed at full size before approving. Note the licence subtlety, checked against the API rather than assumed: the OBSERVATION is CC BY-NC, the individual photo is CC BY, and the photo licence is the one that governs reuse. Identity is strong: the observation carries GPS 40.861190, 14.262114 with 6 m stated accuracy, seven metres from the register point, and the frame shows fallen pink Ceiba petals on the grass and a garden plant label at the foot of the trunk. The photo also CORRECTED the story: this specimen is multi-stemmed with a fused base and smooth mature bark, not the single spined bottle trunk the species is known for, and the first draft of the story described the textbook tree rather than this one. Also confirms it was alive and flowering when photographed, which is the liveness check the registers cannot do.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nap_014",
+      "name": "The Ginkgo of the Botanical Garden",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "more than 100 years, undated precisely",
+      "age_min": 100,
+      "age_max": 200,
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "late November, when the fans turn flat gold and drop almost together",
+        "kind": "autumn colour"
+      },
+      "location": {
+        "address": "Real Orto Botanico di Napoli, Via Foria 223, 80139 Napoli",
+        "latitude": 40.861414,
+        "longitude": 14.263156,
+        "neighbourhood": "San Carlo all'Arena"
+      },
+      "story": "Every other tree on this walk came to Naples as a novelty from somewhere far away. This one is a survivor from somewhere far back. Ginkgo biloba is the last living member of a lineage that covered the planet before flowering plants existed, and it now grows wild in two small pockets of eastern China and nowhere else on earth. Everything else its family ever produced is a fossil, which is why the garden's own notes call it a living one.\n\nThe specimen here is three metres round and sixteen tall, and the national and regional registers agree on both figures exactly. Its age is recorded as more than a hundred years and nothing tighter, because nobody planted it with a note.\n\nCome in the second half of November. Ginkgo leaves are small stiff fans, split down the middle, held on long stalks, and they do not fade through brown the way most leaves do. They go from green to a flat saturated yellow, hold it for roughly a fortnight, and then let go, often most of the tree inside a day or two after the first hard night. What is left is a gold circle on the ground the exact width of the crown, which is worth the walk on its own. The garden singles the leaves out as its reason to visit in winter.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_167.html",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.ortobotaniconapoli.it/en/resources/information-on-tree-species/ginkgo-biloba.html"
+      ],
+      "access": "Free, no booking. Open weekdays only: Mon, Wed, Fri 9:00-14:00, Tue and Thu 9:00-16:00, closed Saturday and Sunday",
+      "transport": "10 min walk from Cavour or Museo metro, or bus along Via Foria",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "MASAF sheet 36/F839/NA/15 and Campania scheda 167 agree on 300 cm girth, 16 m height and position to sub-metre (40.861414, 14.263156 / 14.263155). Age is Campania's '>100 anni' only. The garden's own species page is the third source and supplies the living-fossil framing and the two-pockets-of-eastern-China range; its visiting page names 'the golden leaves of the Ginkgo biloba' as a reason to visit in winter, which is what the best_time rests on rather than a generic species assumption. Naples sits at 40.86N so the phenology renderer applies no latitude shift.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nap_015",
+      "name": "The Crenate Oak of the Botanical Garden",
+      "species": "Crenate Oak (Quercus crenata)",
+      "age_estimate": "more than 100 years, undated precisely",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Real Orto Botanico di Napoli, Via Foria 223, 80139 Napoli",
+        "latitude": 40.861181,
+        "longitude": 14.262758,
+        "neighbourhood": "San Carlo all'Arena"
+      },
+      "story": "This oak is two species at once. Quercus crenata is the natural hybrid of the Turkey oak and the cork oak, and Italian calls it cerro-sughera after both parents in turn. It appears wherever the two grow within pollen range of each other, it is never common, and it does not breed true, so most specimens are one-offs rather than a population.\n\nYou can read the parentage off the tree. The bark thickens and cracks into something approaching the cork oak's spongy layer, never quite as deep, but soft enough to press a thumb into. The leaves settle the question: shallow rounded teeth all around the margin, which is what crenata describes, and a habit of hanging on through the winter instead of dropping cleanly, so from December to March the tree is half evergreen and looks undecided about it.\n\nAt 440 centimetres round and 18 metres it is one of the widest trunks the registers record inside this garden. Both of them list it and neither can agree what to call it. The national register writes Quercus crenata, the regional one writes Quercus hispanica, which is the older umbrella name for crosses between the same two parents. An argument about what to call a hybrid is roughly the argument a hybrid deserves.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_166.html",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, no booking. Open weekdays only: Mon, Wed, Fri 9:00-14:00, Tue and Thu 9:00-16:00, closed Saturday and Sunday",
+      "transport": "10 min walk from Cavour or Museo metro, or bus along Via Foria",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "MASAF sheet 35/F839/NA/15 and Campania scheda 166 agree on 440 cm girth, 18 m height and position to sub-metre (40.861181, 14.262758 / 14.262757). Flagged for the naming disagreement, which the story states openly rather than resolving: MASAF says Quercus crenata Lam., Campania says Quercus hispanica. These are two names for the same Quercus cerris x Quercus suber hybrid complex rather than two different trees, so existence and identity are not in doubt. Quercus crenata is used as the canonical binomial because it is the national register's, it is the accepted name for the wild-origin hybrid, and no other city in the corpus carries either name yet. Age is Campania's '>100 anni' only. No best_time: the semi-evergreen leaf hold is a curiosity, not a peak worth crossing town for.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nap_016",
+      "name": "The Blue Gum of the Botanical Garden",
+      "species": "Tasmanian Blue Gum (Eucalyptus globulus)",
+      "age_estimate": "more than 100 years, undated precisely",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Real Orto Botanico di Napoli, Via Foria 223, 80139 Napoli",
+        "latitude": 40.861142,
+        "longitude": 14.262447,
+        "neighbourhood": "San Carlo all'Arena"
+      },
+      "story": "Thirty metres, which makes this the tallest tree the registers record inside the garden, and the reason it stands here at all is a nineteenth century medical theory that turned out to be wrong.\n\nEucalyptus globulus was planted across southern Europe from the 1860s onward because it grows fast, drinks enormously, and was believed to dry marshy ground and so drive out malaria. Some authorities went further and credited the aromatic oil in its leaves with cleaning the air. The drinking part was real. The rest was not, since malaria is carried by mosquitoes rather than by bad air, which is what the word literally means. By the time that was settled the tree had been planted from Portugal to the Caucasus, and it is now the most widely grown eucalyptus on the planet.\n\nThis one measures 440 centimetres round. Look for two completely different leaves on the same tree. Young shoots carry rounded stalkless pairs clasped around the stem, coated in a waxy bloom that reads as pale blue, which is where the name comes from. The mature crown carries long dark sickles that hang edge-on to the sun, so a tree this size throws almost no shade. Crush one between your fingers and the smell arrives instantly, sharp and medicinal, the oil the nineteenth century was banking on.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_168.html",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, no booking. Open weekdays only: Mon, Wed, Fri 9:00-14:00, Tue and Thu 9:00-16:00, closed Saturday and Sunday",
+      "transport": "10 min walk from Cavour or Museo metro, or bus along Via Foria",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "MASAF sheet 37/F839/NA/15 and Campania scheda 168 agree on 440 cm girth, 30 m height and position to sub-metre (40.861142, 14.262447 / 40.861141, 14.262446). Age is Campania's '>100 anni' only. 'Tallest tree the registers record inside the garden' is scoped deliberately to the nine registered specimens and checked against them: the next tallest is the false kapok at 25 m. A different species from nap_003, which is Eucalyptus robusta at Capodimonte, and the story is written on the malaria-drainage history and the juvenile-versus-adult foliage so the two do not repeat each other.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nap_017",
+      "name": "The Chilean Wine Palm of the Botanical Garden",
+      "species": "Chilean Wine Palm (Jubaea chilensis)",
+      "age_estimate": "more than 100 years, undated precisely",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Real Orto Botanico di Napoli, Via Foria 223, 80139 Napoli",
+        "latitude": 40.860608,
+        "longitude": 14.2623,
+        "neighbourhood": "San Carlo all'Arena"
+      },
+      "story": "This palm was very nearly drunk out of existence. Jubaea chilensis carries one of the thickest trunks of any palm on earth, and that trunk is full of sweet sap. Chilean producers spent the eighteenth and nineteenth centuries felling mature wild palms in order to tap them, boiling the sap down into a syrup sold as palm honey and taking the crop of small coconuts as a bonus. A tapped palm never recovers, because a palm has exactly one growing point and it sits at the top. Groves that once ran to millions of trees were cut back to a few thousand hectares, and the species is now protected at home and listed as threatened.\n\nIt is also one of the slowest palms there is. A seedling can spend a decade doing nothing visible before it starts building a trunk at all, which is how this one is only four metres tall after more than a century, while measuring 250 centimetres around. The garden calls it a splendid specimen and grows younger ones near it.\n\nStand close and look at the trunk rather than up at the crown. It is smooth, grey and straight-sided, marked all over with the diamond scars of fronds that dropped a very long time ago.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_162.html",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.ortobotaniconapoli.it/it/15-palmeto.html"
+      ],
+      "access": "Free, no booking. Open weekdays only: Mon, Wed, Fri 9:00-14:00, Tue and Thu 9:00-16:00, closed Saturday and Sunday",
+      "transport": "10 min walk from Cavour or Museo metro, or bus along Via Foria",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "MASAF sheet 31/F839/NA/15 and Campania scheda 162 agree on 250 cm girth, 4 m height and position to sub-metre (40.860608, 14.262300 / 40.860607, 14.262299). The garden's own palmeto page is the third source and calls it a 'splendido esemplare di Jubaea chilensis'. Deliberately marked approximate rather than confirmed, unlike the other four: the same page says the palm grove holds both mature and young specimens of this species, so a visitor arriving at the registered point still has to work out which trunk is the registered one, and at four metres it does not announce itself over the collection. Age is Campania's '>100 anni' only. No best_time: it fruits, but nothing about the moment is worth planning a visit around.",
       "location_precision": "approximate"
     }
   ]

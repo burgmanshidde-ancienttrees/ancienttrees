@@ -23,7 +23,7 @@ Spain has no national register; every autonomous community keeps its own, and th
 
 ## Japan: the Environment Ministry giant-tree database (scouted 2026-08-04, VERDICT: usable with one real caveat)
 
-`https://kyoju.biodic.go.jp/` — 巨樹・巨木林データベース, the national record of every tree in Japan over 300 cm girth at breast height, with measured girth, height, species, and location. It is the closest thing Japan has to Portugal's ICNF, and it is the spine of any cheap layer-two coverage for Japanese cities.
+`https://kyoju.biodic.go.jp/`, the 巨樹・巨木林データベース, the national record of every tree in Japan over 300 cm girth at breast height, with measured girth, height, species, and location. It is the closest thing Japan has to Portugal's ICNF, and it is the spine of any cheap layer-two coverage for Japanese cities.
 
 **Licence, with the proving sentence.** The Biodiversity Centre's terms page (`https://www.biodic.go.jp/copyright/terms_of_service.html`) states that its content may be used under 「公共データ利用規約（第1.0版）」（PDL1.0）, the Public Data License 1.0, which permits commercial reuse with attribution and which CLAUDE.md already names as an acceptable register licence. Attribution must give the title, 環境省生物多様性センター, and the URL or download date; any editing or adaptation must be stated separately along with who did it.
 
@@ -292,3 +292,50 @@ with ages, Lazio publishes criteria, notes and a removed-trees sheet, Friuli
 publishes criteria and place names but no age. **No Italian source at any level
 carries an age**, which is why the newspaper step now sits above the register in
 the search order.
+
+### Piemonte breaks that rule, scouted and imported 2026-08-05 while researching Turin
+
+The sentence above is no longer true, and Piemonte is the exception that proves
+where to look. Regione Piemonte publishes **Alberi Monumentali del Piemonte: dati
+del censimento** on the regional Geoportale, inside the Sistema Conoscenze
+Ambientali catalogue, as a live WFS and WMS rather than as a file drop.
+
+**Licence, CC BY 4.0.** The proving sentence is on the metadata record for
+`r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218`: the dataset is released under
+Creative Commons Attribution 4.0
+(https://creativecommons.org/licenses/by/4.0/deed.it), with access limitation per
+INSPIRE Directive art. 13(1)(a). Attribution required, commercial reuse not
+restricted. Imported in full to `data/registers/piemonte-alberi-monumentali.json`,
+391 trees, on 2026-08-05.
+
+WFS: `https://gisserver.territorio.csi.it/geoserver/decsiraogc_geo_alb_monum/wfs`
+(typeName `decsiraogc_geo_alb_monum:AlberiMonumentaliLoc`, add
+`outputFormat=application/json&srsName=EPSG:4326` and it answers plain GeoJSON).
+
+Two fields make this the best Italian register found so far:
+
+- **`eta_presunta`, a presumed age**, as a band rather than a figure: `< 100`,
+  `100-200`, `> 200`, `Non applicabile`. Populated on 344 of 391. A band is not a
+  date, but it separates a 200-year tree from a 120-year one, which is the
+  distinction a page actually needs and which MASAF cannot make at all.
+- **`descr_stato`, a removal status held inline**, which is Italy's usual missing
+  vitality field: 378 listed, 11 removed for natural death, 2 removed by felling.
+  Lazio publishes the same information as a separate sheet; Piemonte keeps it in
+  the same layer, so a live query is self-cleaning.
+
+Also carried: `oggetto_di_identif`, which mechanically separates ALBERO SINGOLO
+from GRUPPO, VIALE ALBERATO, FILARE SINGOLO and FILARE DOPPIO, so avenues and
+stands filter out without reading names; `tipo_proprieta` (Pubblica / Privata /
+Sia pubblica che privata), which settles hard rule 10 without a site visit;
+girth, measured height, mean crown diameter, and a link to the ministerial decree.
+
+Two cautions. **MASAF's national file for Torino repeats these coordinates and
+girths exactly**, so national and regional are one survey and not two independent
+sources; the second source still has to come from outside the register. And the
+register id encodes the comune (L219 is Torino), so trees the local press counts
+as a city's are sometimes filed under a neighbour: Turin's count reads 14, 15 or
+16 depending on who is counting, and the difference is a downy oak on the Colle
+della Maddalena filed under an adjoining municipality.
+
+So the corrected rule for Italy: **the age question is regional, not national, and
+it is worth one WFS call before assuming a newspaper is the only route to a date.**

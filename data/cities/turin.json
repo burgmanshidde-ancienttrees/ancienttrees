@@ -1,0 +1,303 @@
+{
+  "city": "Turin",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Turin's monumental trees run in a line from the front door of the station to the river, and this walk takes eight of them in about three kilometres. It starts with a Caucasian wingnut six metres round in the garden outside Porta Nuova, passes a plane and a ginkgo in a garden built on demolished bastions, and finishes in Parco del Valentino with the tallest tree in the city, forty metres of London plane beside an 1898 fountain. Half of Turin's listed trees are planes, and the park holds most of them.",
+  "meta_description": "Eight monumental trees on one 3 km walk through Turin, from the Caucasian wingnut outside Porta Nuova station to the 40 metre plane in Parco del Valentino.",
+  "question_meta": "Turin's oldest tree is usually said to be the plane in Parco della Tesoriera, over 200 years old. Three on this walk share its age band.",
+  "question_answer": "The oldest tree in Turin is usually said to be the London plane in Parco della Tesoriera, which the regional register puts at over two hundred years and which the city calls the grandfather, although it stands 3.6 km west of this walk. On the walk itself three trees share that same age band: the plane facing the Eridano in Parco del Valentino, which at six metres round is the widest of the three, the forty metre plane at the Fontana dei Dodici Mesi, and the pedunculate oak behind the Castello del Valentino, which is the only tree in Turin outside the plane family that the register dates past two hundred years.",
+  "question_context": "No Italian register carries an age in years, so nothing on this page comes from a growth ring. What Piemonte publishes is better than most. Its regional monumental tree layer, unlike the national one, gives every tree a presumed age band of under 100, 100 to 200, or over 200, along with girth, measured height, crown width, ownership, and whether the tree has since been struck off the list. That last field is the useful one. Of 391 trees in the regional layer, eleven have been removed for natural death and two for felling, and all fourteen of Turin's are still listed. The bands are why this page gives ranges instead of dates. Five Turin trees sit in the over two hundred band and four of them are planes. The counts do not agree either: the city's own walking route names fifteen trees and the local press sometimes says sixteen, while the current regional layer holds fourteen for the comune of Turin, with the downy oak on the Colle della Maddalena filed under a neighbouring municipality.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Turin?",
+      "a": "Probably the plane in Parco della Tesoriera, over 200 years old and 3.6 km west of this walk. Of the eight trees here, three sit in the register's oldest band: the two Valentino planes at the Eridano and the Fontana dei Dodici Mesi, and the oak behind the Castello del Valentino."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "Yes, and it is one straight line. All eight lie within a 1.9 km spread running south from Porta Nuova station to the Po, about three kilometres of actual walking and an easy afternoon. The first tree is sixty seconds from the platform."
+    },
+    {
+      "q": "Do any of them cost anything?",
+      "a": "No. All eight stand in public gardens and parks that are free and open, and the regional register lists every one of them as publicly owned. Parco del Valentino, which holds five of the eight, has no gates."
+    },
+    {
+      "q": "Why are so many of Turin's monumental trees plane trees?",
+      "a": "Seven of the fourteen on the regional register are London planes, including four of the five that the register dates past 200 years. The plane took over European city planting because it tolerates compacted soil, drought and dirty air, and along the Po it also gets a water table close to the surface, which is why Turin's grow so tall."
+    }
+  ],
+  "hero_tree_id": "tor_001",
+  "oldest_tree_id": "tor_006",
+  "trees": [
+    {
+      "id": "tor_001",
+      "name": "The Caucasian Wingnut of the Giardino Sambuy",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "100 to 200 years, by the regional register's age band",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Giardino Sambuy, Piazza Carlo Felice, 10121 Torino",
+        "latitude": 45.06368,
+        "longitude": 7.6795,
+        "neighbourhood": "Centro"
+      },
+      "story": "The first monumental tree on this walk is sixty seconds from the platform you arrive on. Giardino Sambuy fills the middle of Piazza Carlo Felice, directly opposite Porta Nuova station, and the heavy fluted trunk near its centre belongs to a Caucasian wingnut six metres round. The species comes from the forests of the Caucasus and northern Iran and reached European gardens in the 1780s, which is why it turns up in exactly the sort of nineteenth century civic planting this garden is. The garden carries the name of Ernesto Balbo Bertone di Sambuy, who ran Turin's public gardens before becoming its mayor, and who laid out the Giardini Cavour at the next stop. The first two stops on this walk are in that sense the same man's work. Come in July or August. A wingnut in fruit hangs its seeds in chains up to half a metre long, green ropes of small winged nutlets that dangle straight down through the canopy and make the tree unmistakable from across the square. The register measures it at twenty-seven metres and puts it between one hundred and two hundred years old. It is the widest trunk the register records anywhere near the city centre.",
+      "verified_sources": [
+        "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
+        "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
+        "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
+        "https://mole24.it/2025/08/13/alberi-monumentali-di-torino/"
+      ],
+      "access": "Free, public garden in Piazza Carlo Felice, open at all hours",
+      "transport": "Directly opposite Porta Nuova station, 1 min walk. Metro Porta Nuova",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/ID_01L21902L219TO01_Noce_del_Caucaso_05_Giardino_Sambuy_Piazza_Carlo_Felice_Torino.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Matthewlunas, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Regional register card 002/L219/TO/01: 605 cm girth, 27 m, age band 100-200, publicly owned. Turismo Torino's route and both press lists independently place a Pterocarya fraxinifolia of 27 m in the Giardino Sambuy opposite Porta Nuova, which is the second source for existence, species and place. Age is single-sourced to the register band and given as a range for that reason. MASAF's national file repeats the same coordinates and girth, so national and regional count as one source, not two. Photo file is named for this exact register card number.",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "July and August, when it hangs half-metre chains of winged seeds",
+        "kind": "catkins"
+      },
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "tor_002",
+      "name": "The Plane of the Giardini Cavour",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 150 years, from the garden's laying out in the 1870s",
+      "age_min": 140,
+      "age_max": 165,
+      "location": {
+        "address": "Giardini Cavour, Piazza Cavour, 10123 Torino",
+        "latitude": 45.06323,
+        "longitude": 7.68949,
+        "neighbourhood": "Centro"
+      },
+      "story": "This garden is built on the rubble of Turin's defences, and the humps you walk over are the evidence. When the seventeenth century fortifications came down the ground was left uneven, and between 1872 and 1875 Ernesto Balbo Bertone di Sambuy turned that awkward topography into an English style garden of irregular mounds and curved beds, planting large trees straight into it: planes, limes, oaks, horse chestnuts, magnolias. This plane is the one that did best. It stands thirty-four metres tall with a crown thirty metres across, so it covers most of the garden on its own, and it is five and a half metres round the trunk. Platanus x acerifolia is a hybrid of the oriental and the American plane that turned up in seventeenth century Europe by accident and then became the standard city tree everywhere, because it puts up with compacted soil, drought and filthy air, and sheds its bark in plates to shed the dirt along with it. Turin took to it harder than most Italian cities: half the trees on the regional monumental register for the comune are planes. Look for the flaking camouflage bark and the fruit balls that hang on stalks all winter.",
+      "verified_sources": [
+        "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
+        "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
+        "https://www.museotorino.it/view/s/d3d457ff24a246fe9af6876d5f5c6220",
+        "https://mole24.it/2024/01/09/giardini-cavour-di-torino-un-oasi-di-bellezza-e-storia/"
+      ],
+      "access": "Free, public garden, open at all hours",
+      "transport": "About 10 min walk north from Porta Nuova station along Via Lagrange",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Regional register card 003/L219/TO/01: 550 cm girth, 34 m, crown 30 m, age band 100-200, publicly owned. Turismo Torino's route and the press lists give 33.5 m for the same tree, so the height is rounded differently rather than disputed. The age band is the register's; the narrower figure comes from MuseoTorino and Mole24, which both date the garden's laying out and its large tree planting to 1872-1875. That is the garden's date, not a measurement of this trunk, so the range is kept wide. Commons has 14 photographs filed under this exact register card number, not yet reviewed; this pass hit its three-photo limit first.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "tor_003",
+      "name": "The Ginkgo of the Giardini Cavour",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 150 years, from the garden's laying out in the 1870s",
+      "age_min": 140,
+      "age_max": 165,
+      "location": {
+        "address": "Giardini Cavour, Piazza Cavour, 10123 Torino",
+        "latitude": 45.06329,
+        "longitude": 7.69029,
+        "neighbourhood": "Centro"
+      },
+      "story": "Sixty metres from the plane stands a tree with no living relatives. Ginkgo biloba is the only surviving species of an entire order of plants, closer to the conifers than to anything else with a broad leaf, and near identical leaves come out of rock two hundred million years old. This one is twenty-seven metres tall and three metres seventy round, planted with the rest of the garden in the 1870s. The register lists it for its particular vegetative architecture rather than its size, and standing under it shows why: the trunk goes up hard and straight, the limbs come off it in tiers, and the fan shaped leaves sit in flat sprays instead of a dome. Go in November. Ginkgo autumn is one of the few reliable spectacles in the plant world, because the leaves turn from green to a hard uniform yellow and then let go, very often most of them within a day or two, leaving a gold floor under a bare tree. Nobody records whether this one is male or female, so no promises about the fruit. Cities usually plant males, because the female drops a fleshy seed coat that smells strongly of rancid butter.",
+      "verified_sources": [
+        "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
+        "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
+        "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
+        "https://mole24.it/2024/01/09/giardini-cavour-di-torino-un-oasi-di-bellezza-e-storia/"
+      ],
+      "access": "Free, public garden, open at all hours",
+      "transport": "About 10 min walk north from Porta Nuova station along Via Lagrange",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/ID_01L21904L219TO01_Ginkgo_di_piazza_Cavour_05_Giardini_Cavour_Torino.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Matthewlunas, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Regional register card 004/L219/TO/01: 370 cm girth, 27 m, crown 22 m, age band 100-200, publicly owned. Second source for existence, species, place and height is Turismo Torino's route plus both press lists. The designation reason, particular vegetative architecture, is published by Mole24's table rather than by the register layer itself. Photo file is named for this exact register card number and shows the whole tree in daylight with the trunk readable. Sex not recorded anywhere, so the story makes no fruit claim.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when it turns hard yellow and drops the lot in a day or two",
+        "kind": "autumn colour"
+      },
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "tor_004",
+      "name": "The Hackberry of the Valentino",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "100 to 200 years, by the regional register's age band",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Parco del Valentino, near Corso Massimo d'Azeglio, 10126 Torino",
+        "latitude": 45.05787,
+        "longitude": 7.68789,
+        "neighbourhood": "San Salvario"
+      },
+      "story": "This one stands by itself on open grass, which is why it looks the way it does. A Mediterranean hackberry with room on every side builds a wide even dome, and this one carries twenty-three metres of height over a trunk four metres seventy-five round, at the northern end of Parco del Valentino near Corso Massimo d'Azeglio. Celtis australis is southern European, tough, and largely ignored, which is a shame, because the wood used to be the reason anyone cared about it. It is flexible enough that whip handles, walking sticks and pitchfork shafts were made from nothing else, and the trade lasted into the twentieth century. The leaves are lopsided at the base, long pointed, and rough on the upper side like fine sandpaper. In autumn the tree carries small dark fruits on long stalks that taste faintly of dates and that birds strip fast. It is the only hackberry on Turin's monumental register. The park it stands in opened in 1856 as the city's first public park, laid out in the French manner by the gardener Jean-Pierre Barillet-Deschamps, and everything else on this walk from here south is inside it.",
+      "verified_sources": [
+        "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
+        "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
+        "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
+        "https://en.wikipedia.org/wiki/Parco_del_Valentino"
+      ],
+      "access": "Free, public park, no gates",
+      "transport": "About 15 min walk south from Porta Nuova, or tram 9 and 16 along Corso Massimo d'Azeglio",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Bagolaro_Parco_del_Valentino.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Emmanuelbaltasar, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Regional register card 008/L219/TO/01: 475 cm girth, 23 m, crown 16 m, age band 100-200, publicly owned. Second source is Turismo Torino's route and both press lists, which all place a 23 m Celtis australis in Parco del Valentino. The photo shows an isolated dome-crowned tree on open lawn at the north end of the park, which matches the register point and the Commons file naming it for Corso Massimo d'Azeglio. No best_time set: the autumn fruit is real but small, and the badge is kept for moments worth crossing town for.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "tor_005",
+      "name": "The Oak behind the Castello del Valentino",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 200 years, by the regional register's age band",
+      "age_min": 200,
+      "age_max": 260,
+      "location": {
+        "address": "Parco del Valentino, near the Rocaille behind the Faculty of Architecture, 10126 Torino",
+        "latitude": 45.05298,
+        "longitude": 7.68632,
+        "neighbourhood": "San Salvario"
+      },
+      "story": "Every other tree in Turin that the register dates past two hundred years is a plane. This oak is the exception, and it is the only reason the city's oldest age band contains a second species at all. It stands behind the Castello del Valentino near the rock garden the park calls the Rocaille, four metres round and twenty-eight metres tall. Quercus robur is the oak of northern European woodland and it is near its southern limit here on the Po plain, growing where the water table sits close enough to the surface to carry it through an Italian August. The castle it stands behind was rebuilt in the seventeenth century as the residence of Christine of France, and it has housed the city's engineering and architecture school since 1859, so the oak has spent most of its life being walked past by students who were not looking. The Rocaille is much newer than the tree: the artificial cliffs, streams and grottoes were built in 1961 for Italia 61, the exhibition marking a century of Italian unity. Look for a short heavy trunk and limbs coming off it almost horizontally, which is what an oak does when it grows with space around it.",
+      "verified_sources": [
+        "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
+        "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
+        "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
+        "https://en.wikipedia.org/wiki/Parco_del_Valentino"
+      ],
+      "access": "Free, public park, no gates",
+      "transport": "Tram 9 or 16 along Corso Massimo d'Azeglio, then into the park behind the Castello del Valentino",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Regional register card 007/L219/TO/01: 400 cm girth, 28 m, crown 15 m, age band over 200, publicly owned. Second source is Quotidiano Piemontese, which places a 28 m Quercus robur 'nei pressi della Rocaille vicina al retro della Facolta di Architettura'. Flagged on pin, not on facts: the rock garden area is broad and Parco del Valentino holds other large oaks, and the register coordinate is single-sourced because MASAF repeats it rather than confirming it. Marked approximate for that reason.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "tor_006",
+      "name": "The Plane by the Eridano",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "over 200 years, by the regional register's age band",
+      "age_min": 200,
+      "age_max": 260,
+      "location": {
+        "address": "Parco del Valentino, Viale Virgilio, opposite the Eridano, 10126 Torino",
+        "latitude": 45.05117,
+        "longitude": 7.68635,
+        "neighbourhood": "San Salvario"
+      },
+      "story": "Six metres round, and it is the widest trunk in the park. This plane stands on the river side of Viale Virgilio opposite the Eridano, and the regional register puts it in the oldest band it uses, over two hundred years, which would make it older than the park around it. That is entirely possible. Parco del Valentino opened to the public in 1856, but the grounds of the Castello del Valentino had been Savoy property with planted avenues for two centuries before that, so a handful of trees here predate the park by a long way. It is not the tallest plane in Turin. At twenty-six metres it is fourteen short of the one waiting at the end of this walk, and the whole difference sits in the trunk: this tree put its growth sideways instead of up. That usually means light and space on every side rather than a place in a row. The Po running just behind it is the other half of the explanation, because a plane with its roots in a river's water table grows fat with very little effort. Stand at the base and the bark reads as a jigsaw of grey, olive and cream.",
+      "verified_sources": [
+        "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
+        "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
+        "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
+        "https://mole24.it/2025/08/13/alberi-monumentali-di-torino/"
+      ],
+      "access": "Free, public park, no gates",
+      "transport": "Tram 9 or 16 along Corso Massimo d'Azeglio, then to the riverside path at Viale Virgilio",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Regional register card 011/L219/TO/01: 600 cm girth, 26 m, crown 24 m, age band over 200, publicly owned. Largest girth of the five register trees inside Parco del Valentino, which is what 'widest trunk in the park' rests on. Second source is Turismo Torino's route and the press lists, all of which place a 26 m plane 'fronte Eridano'. Set as oldest_tree_id for the page: three trees here share the over-200 band and this is the widest of them, but the register bands rather than dates, so it is the best available answer and not a measured one.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "tor_007",
+      "name": "The Plane at the Borgo Medievale",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "100 to 200 years, by the regional register's age band",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Parco del Valentino, near the Borgo Medievale, Viale Virgilio, 10126 Torino",
+        "latitude": 45.04815,
+        "longitude": 7.68406,
+        "neighbourhood": "San Salvario"
+      },
+      "story": "The medieval village beside this tree was built in 1884 and there is nothing dishonest about it. Alfredo d'Andrade put up the Borgo Medievale for the Esposizione Generale Italiana as a full scale working model of a fifteenth century Piedmontese village, copying real buildings from real valleys, and it came out so well that the city kept it instead of pulling it down. The plane standing near it is thirty-six metres tall and five metres ten round, the second tallest tree on Turin's monumental register, and it is genuinely old in a way the village is not. The register bands it between one hundred and two hundred years, so it may well have been a young tree already standing when the exhibition opened. Three monumental oaks grow beside it, registered as a group rather than as individuals, which is why they get no entries of their own here. What makes this stretch worth slowing down for is the scale of the contrast: a row of low timber and stone houses with the roofline of a small mountain village, and then one tree going up more than twice their height directly behind them. The village courtyard is free to walk into.",
+      "verified_sources": [
+        "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
+        "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
+        "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
+        "https://en.wikipedia.org/wiki/Parco_del_Valentino"
+      ],
+      "access": "Free, public park. The Borgo Medievale courtyard is free; its museum house charges",
+      "transport": "Tram 9 or 16 along Corso Massimo d'Azeglio, then 5 min into the park to the Borgo Medievale",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Regional register card 012/L219/TO/01: 510 cm girth, 36 m, crown 27 m, age band 100-200, publicly owned. Second tallest of the fourteen Turin register trees, after 010/L219/TO/01 at 40 m. Second source is Turismo Torino's route and both press lists, all placing a 36 m plane at the Borgo Medievale. Flagged on pin only: several large planes stand along this stretch of Viale Virgilio and the register coordinate is single-sourced, so it is marked approximate. The three oaks mentioned are register card 013/L219/TO/01, filed as a GRUPPO with no girth, height or age, and blocked in data/leads/turin.json.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "tor_008",
+      "name": "The Plane of the Fontana dei Dodici Mesi",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "over 200 years, by the regional register's age band",
+      "age_min": 200,
+      "age_max": 260,
+      "location": {
+        "address": "Parco del Valentino, by the Fontana dei Dodici Mesi, Corso Massimo d'Azeglio, 10126 Torino",
+        "latitude": 45.04651,
+        "longitude": 7.68347,
+        "neighbourhood": "San Salvario"
+      },
+      "story": "Forty metres, and nothing in Turin is taller. This plane stands beside the Fontana dei Dodici Mesi at the southern end of Parco del Valentino, and it clears the second tallest tree on the city's monumental register by four full metres. The fountain would be worth the walk on its own. Carlo Ceppi built it in 1898 for the Esposizione Generale Italiana, a great oval basin ringed by twelve statues, one for each month, with four more for the rivers of the Turin plain. The tree is older than the fountain. The register puts it past two hundred years, five and a half metres round, with a crown thirty-two metres across, the widest canopy it records anywhere in the city. Forty metres is a serious height for a plane growing outside a forest, and it happens here for the same reason the fountain does: the Po is a couple of hundred metres away and the water table under this end of the park never really drops. Come late in the afternoon, when the light comes up the river from the west and the statues are lit from behind. It is the last stop, and the tram back to Porta Nuova runs from Corso Massimo d'Azeglio.",
+      "verified_sources": [
+        "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
+        "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
+        "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
+        "https://mole24.it/2025/08/13/alberi-monumentali-di-torino/"
+      ],
+      "access": "Free, public park, no gates",
+      "transport": "Tram 9 or 16 to Corso Massimo d'Azeglio near Ponte Isabella, then 3 min into the park",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Regional register card 010/L219/TO/01: 550 cm girth, 40 m, crown 32 m, age band over 200, publicly owned. Tallest and widest-crowned of the fourteen Turin register trees. Turismo Torino's route and both press lists give 39.5 m for the same tree at the Fontana 12 mesi, so the half metre is a rounding difference between the tourist board and the register rather than a conflict. Commons has 'Platano comune Parco del Valentino.jpg' under CC BY-SA 4.0, not yet viewed and not yet matched to this individual; this pass hit its three-photo limit first.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
