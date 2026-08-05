@@ -20,10 +20,16 @@ on:
     # 2026-07-31 evening trim: 63% of the week gone at day 2.5 of 7 with
     # heavy session days; four one-hour runs (~4-5%/day) leaves daily
     # session room. Recalibrate at Monday's usage glance.
-    # Four runs, all in the Dutch night (Hidde, 2026-08-01: "vier per nacht
-    # redden we wel"): 23:00, 01:00, 03:00, 05:00 CEST. Daytime stays clear
-    # for his own sessions while the weekly limit is tight.
-    - cron: "0 1,3,21,23 * * *"
+    # 2026-08-04, fresh week, Hidde at 2% on day one and asking for more
+    # machine time while staying deliberate. Six knocks: 23:00, 01:00, 03:00,
+    # 05:00, 07:00 and 09:00 CEST, each capped at 60 minutes by
+    # timeout-minutes below. The arithmetic behind the number: four runs cost
+    # roughly 4-5% of the week per day, so six lands near 6-7%, about 45% over
+    # seven days, which leaves his own sessions the larger half. The last two
+    # reach into the morning on purpose; the presence beacon pauses the chain
+    # for four hours the moment he opens a session, so they yield to him
+    # automatically. Recalibrate at Monday's usage glance.
+    - cron: "0 1,3,5,7,21,23 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -77,27 +83,41 @@ jobs:
             Reader submissions outrank everything. Something published being wrong
             outranks everything below it. Otherwise the job is depth, as follows.
 
-            Depth is the current phase, opened 2026-07-26 on Search Console
-            evidence: impressions double daily and city pages rank on page one, so
-            Phase 1 of GO_TO_MARKET.md is live. New cities are frozen until the depth
-            exit test in CLAUDE.md rung 6 passes (the eight search-served cities
-            at 8+ photos and 2 or fewer vague pins, Amsterdam at zero); a run that
-            finds the test passing reopens coverage itself: Netherlands wave first,
-            per rung 6's order, counts per the doctrine (ten is a cap never a
-            quota, four verified trees minimum for a page). The work is making the pages
-            people land on deliver the promise: resolve approximate pins to exact
-            coordinates via registers, open data and street-level sources, and hunt
-            photos to the 80 percent floor. Order: Amsterdam to flawless first (the
-            reference city), then Lisbon, Istanbul, Rome, then the rest of the lead
-            group and marquee Europe, oldest-first. Hunt photos widely: Wikimedia,
-            iNaturalist, Flickr under CC, Openverse, park authorities. Never publish
-            a photo without a verified open licence and attribution; where a photo or
-            an exact pin genuinely cannot be found, record it in CURATION.md and move
-            on rather than looping. Never mark a pin confirmed without a source that
-            places the tree itself: honesty about precision is the one thing depth
-            work must never spend. The full ladder in CLAUDE.md governs, and hard
-            rule 10 (public trees only, never a location its source hides) is
-            absolute.
+            Coverage is the current phase, on the method Hidde approved on
+            2026-08-03 and sharpened on 2026-08-04: register first, walkable
+            clusters over counts, batched by country. The job is good city pages
+            with a walk in them, not more thin pages.
+
+            What a good city run produces, and it is one city done properly:
+            - Between 8 and 10 highlighted trees for an ordinary city, and for a
+              large one two or three clusters of 6 to 8 rather than a long list.
+              A cluster is trees within roughly 2 km of each other, because the
+              walk is the product; the measured proof is Cadiz at 600 metres
+              reading as a good afternoon while Kyoto at 35 km does not.
+            - The walking route the page generates must actually work. Check the
+              km and minutes the build prints. If the route is 20 km, the trees
+              were chosen wrong, not the route.
+            - At most 3 photos per city for now. Photos measured 72k tokens each
+              last week against 20k for a whole researched tree, so they are the
+              expensive habit to break. A missing photo is an honest gap and
+              always has been.
+            - Everything found and not shipped goes to data/leads/[city].json in
+              the two kinds, leads and blocked, per CLAUDE.md. Nothing gets
+              thrown away, ever. Run python3 scripts/tree_index.py afterwards so
+              the one database reflects the work.
+
+            How to find the trees, in this order, because it is far faster than a
+            web sweep: the country's official register if it has one (see
+            OPEN_DATA_SURVEY.md; Portugal's ICNF and Japan's Environment Ministry
+            giant-tree database are both cleared for use, Spain has regional and
+            municipal catalogues), then the city's named parks and sacred ground,
+            then the generic sweep for whatever is left. Use
+            python3 scripts/cluster_register.py on a register to get the walkable
+            groups before deciding which trees a city gets.
+
+            Current focus countries, in order: Spain, Japan, Portugal. Italy is
+            next after those three. Do not start a city that already has a file
+            in data/cities or that LOG.md shows in flight.
 
             Whatever the work turns out to be: verify against two independent
             sources, follow TONE_OF_VOICE.md and SEO_GEO_BLUEPRINT.md, set
