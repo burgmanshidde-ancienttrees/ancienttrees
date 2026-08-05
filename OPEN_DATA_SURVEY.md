@@ -273,3 +273,22 @@ crown diameters N-S and E-O, lean and its direction) and both physiological and
 phytosanitary condition. That last pair is the closest thing to a vitality field
 found in any register so far. It is a municipal document distinct from, and denser
 than, the Andalusian REDIAM catalogue already imported.
+
+### Friuli Venezia Giulia, scouted 2026-08-05 while researching Trieste
+
+`decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF`,
+"Elenco regionale degli alberi monumentali 2025" (DPReg 071/2025), all four
+provinces. Over the national MASAF file it adds LOCALITA, a real place name
+rather than a coordinate, which is what turns a point into a walk; CRITERI DI
+MONUMENTALITA, the legal reason for the designation; and NUMERO ELEMENTI, which
+separates single trees from stands. It has no age field and no vitality field,
+the same gap as MASAF, and no removed-trees sheet the way Lazio has. A 2020
+edition exists and diffing it against 2025 is the closest thing to a vitality
+signal here. The open-data mirror at dati.friuliveneziagiulia.it refuses
+anonymous reads, so the decree PDF is the usable channel.
+
+Running total on Italian regional registers: Campania publishes per-tree cards
+with ages, Lazio publishes criteria, notes and a removed-trees sheet, Friuli
+publishes criteria and place names but no age. **No Italian source at any level
+carries an age**, which is why the newspaper step now sits above the register in
+the search order.

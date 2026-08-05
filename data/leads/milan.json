@@ -1,0 +1,189 @@
+{
+  "city": "Milan",
+  "country": "Italy",
+  "researched": "2026-08-05",
+  "note": "Deepening pass on an already-published city (10 trees live). Source pool: the Comune di Milano's own monumental-tree pages, which publish one page per tree with address, description, the city's VTA inventory number, height, trunk diameter and a map point (13 trees), cross-read against the 33 MASAF national-register entries within 12 km of the Duomo. Five additions went to data/research/milan-extra.json; everything else is here. Counts to quote carefully: the comune publishes 13, the national register holds 22 for the comune of Milano and about 75 for the metropolitan area, and the two lists overlap without matching, because several nationally designated trees stand on state, church or university ground the city does not manage. Lombardia publishes no per-tree regional register: the only regional dataset is Bellezze Individue (SIBA landscape designations, CC0), which designates gardens and parks rather than individual trees, gives every Milano row the same comune-centroid coordinate, and carries no species, age or vitality field. The city's two labelled botanical trails (Parco Sempione, 31 plants; Giardino della Guastalla, 41) turn out to be species-teaching routes with no individual ages or measurements, so they are good for confirming a species on the spot and useless as a second source for a specific tree.",
+  "leads": [
+    {
+      "name": "Il bagolaro di Villa Marietti Radice Fossati",
+      "species": "Celtis australis",
+      "girth_cm": 420,
+      "height_m": 18,
+      "location": {
+        "latitude": 45.500933,
+        "longitude": 9.147947,
+        "address": "Piazza Villapizzone 3, Milano"
+      },
+      "sources": [
+        "https://www.comune.milano.it/argomenti/ambiente-e-animali/gli-alberi-monumentali-a-milano/il-bagolaro-di-villa-marietti-radice-fossati",
+        "MASAF national register, Villa Marietti Radice Fossati"
+      ],
+      "why_not_published": "Verifies on two sources and has a genuinely good story (the comune retells the folk name Arcidiavolo and the legend that Lucifer carried the species to earth in his claws, which is why the leaves are hooked). Held back only because it stands alone: 4.7 km northwest of the Duomo, 2.5 km from the Villa Litta pair, so it joins no walk. Access also needs a sentence of care, since the villa is a lived-in residential community and the comune's own wording is that one may enter the gate 'with the discretion owed to an inhabited place'. Pick this up if Milan ever wants a northwestern point."
+    },
+    {
+      "name": "Il platano di Piazza Sant'Ambrogio",
+      "species": "Platanus x acerifolia",
+      "girth_cm": 420,
+      "height_m": 34,
+      "location": {
+        "latitude": 45.463431,
+        "longitude": 9.175503,
+        "address": "Piazza Sant'Ambrogio / Largo Caduti Milanesi per la Patria"
+      },
+      "sources": [
+        "MASAF national register, Milano, Piazza Sant'Ambrogio"
+      ],
+      "why_not_published": "Single-sourced. It would be the best-placed tree in this batch, on the square of a basilica founded in 379 and 1.2 km from Parco Sempione, but it is not on the comune's list of 13 (the ground is basilica and Universita Cattolica land, not municipal park), and searching in Italian for a monumental plane on that square returns nothing beyond the register row. Needs a second source: the Basilica di Sant'Ambrogio's own publications, the Universita Cattolica campus material, or the regional decree text behind the designation."
+    },
+    {
+      "name": "Il platano di Viale Montesanto 4/6",
+      "species": "Platanus x acerifolia",
+      "girth_cm": 525,
+      "height_m": 38,
+      "location": {
+        "latitude": 45.479167,
+        "longitude": 9.195
+      },
+      "sources": [
+        "MASAF national register, Milano, Viale Montesanto 4/6"
+      ],
+      "why_not_published": "Single-sourced and unnamed. At 38 m it is one of the tallest registered trees in Milan and it sits between Porta Garibaldi and the Montanelli gardens, so it would extend that walk northwest if a second source turns up."
+    },
+    {
+      "name": "Il platano di Viale Vittorio Veneto 3",
+      "species": "Platanus x acerifolia",
+      "girth_cm": 570,
+      "height_m": 36,
+      "location": {
+        "latitude": 45.475,
+        "longitude": 9.204167
+      },
+      "sources": [
+        "MASAF national register, Milano, Viale Vittorio Veneto 3"
+      ],
+      "why_not_published": "Single-sourced, unnamed, and a street tree on the Bastioni rather than a destination. Sits 300 m off the northeast corner of the Giardini Montanelli, so it is cheap to add to that walk the day a second source exists."
+    },
+    {
+      "name": "Two further planes inside the Giardini Montanelli",
+      "species": "Platanus x acerifolia",
+      "girth_cm": 625,
+      "height_m": 28,
+      "location": {
+        "latitude": 45.473889,
+        "longitude": 9.200833
+      },
+      "sources": [
+        "MASAF national register, Giardini Indro Montanelli (625 cm / 28 m at 45.473889, 9.200833 and 475 cm / 34 m at 45.474389, 9.203111)"
+      ],
+      "why_not_published": "Single-sourced and unnamed. The comune publishes pages for only three Montanelli trees plus the bald cypress and the hackberry; these two are register rows with no municipal page, no name and no story, and the gardens already carry five of our entries. Raw material for a later depth pass, not page-worthy on their own."
+    },
+    {
+      "name": "Il platano di Piazzale Libia",
+      "species": "Platanus x acerifolia",
+      "girth_cm": 400,
+      "height_m": 35,
+      "location": {
+        "latitude": 45.453889,
+        "longitude": 9.209444
+      },
+      "sources": [
+        "MASAF national register, Milano, Piazzale Libia"
+      ],
+      "why_not_published": "Single-sourced and unnamed, and 1 km east of the Porta Romana cluster on a large traffic circle. Would need a second source and a reason to walk there."
+    },
+    {
+      "name": "The Parco Sempione plane on Viale Cervantes",
+      "species": "Platanus x acerifolia",
+      "girth_cm": 390,
+      "height_m": 33,
+      "location": {
+        "latitude": 45.473056,
+        "longitude": 9.176667
+      },
+      "sources": [
+        "MASAF national register, Milano, Viale Cervantes - Parco Sempione"
+      ],
+      "why_not_published": "Single-sourced and the smallest registered plane in central Milan. This is the whole reason Parco Sempione did not become a second walk this pass: apart from the wingnut we already publish (mil_010), the park holds exactly one more register entry, and it is an unnamed 3.9 m plane. The park's labelled botanical trail names 31 plants but is a species guide with no individual ages or measurements, so it cannot supply a second source either."
+    },
+    {
+      "name": "Milan's other Villa Litta planes",
+      "species": "Platanus x acerifolia",
+      "girth_cm": 550,
+      "height_m": 43,
+      "location": {
+        "latitude": 45.516944,
+        "longitude": 9.166111
+      },
+      "sources": [
+        "MASAF national register, Viale Affori - Villa Litta Modignani (550 cm / 43 m and 480 cm / 38 m, plus two entries with no girth at 30 m and 28 m)",
+        "https://milanoaffori.it/parco-villa-litta-affori-tra-i-piu-antichi-di-milano/"
+      ],
+      "why_not_published": "The register holds four Villa Litta plane entries and the comune publishes pages for two of them; only the Siamese survives the identification test cleanly. The 43 m specimen is the tallest registered tree in Milan and is almost certainly one of the surviving 18th-century planes a local history source describes as still standing 'oltre i trenta metri', but no source ties a name, a page or a photograph to a specific coordinate, and one of these four rows may well be the tree felled in 2015. Do not publish any of them until a site visit or a current municipal inventory says which is which."
+    },
+    {
+      "name": "Monumental trees in the wider metropolitan area",
+      "species": "various",
+      "sources": [
+        "MASAF national register, comuni of Cinisello Balsamo, Pioltello, Bollate, Vimodrone"
+      ],
+      "why_not_published": "Outside the day-trip boundary as walks, but on the record: a 495 cm hackberry in Vicolo Cornelio and a 445 cm hackberry plus a magnolia in the park of Villa Ghirlanda at Cinisello Balsamo (9 to 10 km), a hackberry-and-yew group in Piazza Giovanni XXIII at Pioltello (11 km), a 400 cm black poplar in Bollate, a magnolia at Villa Torri in Vimodrone. Candidate pool if Milan ever grows a second page or a Lombardy collection."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Il platano del 1773 a Villa Litta",
+      "species": "Platanus x acerifolia",
+      "sources": [
+        "https://www.comune.milano.it/argomenti/ambiente-e-animali/gli-alberi-monumentali-a-milano/il-platano-del-1773-a-villa-litta",
+        "https://milanoaffori.it/el-rondelun-testimonianza-del-secolare-platano-di-villa-litta/"
+      ],
+      "reason": "Dead, and the register entry has outlived it. Local history source milanoaffori.it states the plane dated to 1773 stood on the southeast side of Villa Litta Modignani 'fino al 2015' and was then felled; the six-quintal trunk section that produced the 1773 ring count, El Rondelun, is displayed in the villa's civil wedding hall with a timeline panel running 1773 to 2015. The comune's own page still describes the tree in the present tense, with height, diameter, cabling and a fence, and dates it from a section it attributes to a lost twin. Both cannot be true. Our own city file already tells the felled version in its FAQ. A dendrochronologically dated tree is the best evidence this project ever gets and it is still not enough to publish a tree that a local source says has been gone for eleven years."
+    },
+    {
+      "name": "Il platano dei Giardini di Villa Belgiojoso (Villa Reale di Palestro)",
+      "species": "Platanus x acerifolia",
+      "girth_cm": 620,
+      "height_m": 35,
+      "location": {
+        "latitude": 45.471944,
+        "longitude": 9.198444
+      },
+      "sources": [
+        "https://www.comune.milano.it/argomenti/ambiente-e-animali/gli-alberi-monumentali-a-milano/il-platano-dei-giardini-di-villa-belgiojoso-villa-reale-di-palestro-",
+        "MASAF national register, Villa Belgioioso Bonaparte - Via Palestro 16"
+      ],
+      "reason": "Access-restricted, and enforced. The garden of Villa Belgiojoso Bonaparte admits children under 12; adults may enter only accompanying one, and the Guardie Ecologiche Volontarie check at the gate. A 35 m plane, one of the tallest trees in Milan, that most of our readers are not allowed to walk up to fails the promise the site makes. Revisit if the announced two-million-euro restoration opens the garden to visitors of the Galleria d'Arte Moderna, which the 2026 press coverage floats as a possibility."
+    },
+    {
+      "name": "Il bagolaro dei Giardini di Villa Belgiojoso (Villa Reale di Palestro)",
+      "species": "Celtis australis",
+      "girth_cm": 440,
+      "height_m": 30,
+      "location": {
+        "latitude": 45.471631,
+        "longitude": 9.198667
+      },
+      "sources": [
+        "https://www.comune.milano.it/argomenti/ambiente-e-animali/gli-alberi-monumentali-a-milano/il-bagolaro-dei-giardini-di-villa-belgiojoso-villa-reale-di-palestro-",
+        "MASAF national register, Villa Belgioioso Bonaparte - Via Palestro 16"
+      ],
+      "reason": "Same closed gate as the plane above: adults only when accompanying a child under 12. Two further strikes even if it opened: the comune says this specimen is one of a pair growing into each other, so the point is not singular, and its measurements are nearly identical to the hackberry we already publish 200 m away in the Giardini Montanelli (mil_003), which the comune itself notes."
+    },
+    {
+      "name": "L'insieme omogeneo di Ginkgo biloba, Orto Botanico di Brera",
+      "species": "Ginkgo biloba",
+      "sources": [
+        "MASAF national register, Orto Botanico di Brera, Via Brera 28"
+      ],
+      "reason": "Not a separate tree. This is the register's group entry ('insieme omogeneo') covering the 1775 ginkgo pair we already publish as mil_004, which is why the register shows no girth or height for it. Recorded here so a future pass does not read it as an eleventh tree."
+    },
+    {
+      "name": "La Quercia di Montale",
+      "species": "Quercus rubra",
+      "sources": [
+        "milan.json FAQ, researched in an earlier pass"
+      ],
+      "reason": "Fallen. The red oak known as the Quercia di Montale came down in October 2019 in heavy rain and its trunk was left in place. Already handled honestly in the city page's FAQ; listed here so nobody re-researches it as a candidate."
+    }
+  ]
+}

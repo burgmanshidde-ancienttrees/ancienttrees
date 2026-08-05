@@ -77,3 +77,64 @@ Register 36/L424/TS/06, 45.65444 / 13.78442.
 ### tri_007 The Valonia Oak of the Giardino Pubblico — Quercus ithaburensis subsp. macrolepis, 179 cm, 18 m
 Register 65/L424/TS/06, 45.65525 / 13.78543. Designated on botanical rarity ALONE, the only entry in the
 whole Trieste list with criterion d) and nothing else.
+
+---
+
+## Pass completed 2026-08-05 (second session, first died mid-pass)
+
+**data/research/trieste.json** written with 8 trees, **data/leads/trieste.json** with 29 leads and 10 blocked.
+All 47 register entries for the comune are accounted for: 8 published, 29 leads, 10 blocked.
+
+### The second source problem, solved by one newspaper
+The register (MASAF national + FVG regional decree) is ONE source, not two: same designation, two publications.
+The independent source for Trieste is **Il Piccolo's survey of the city's 48 monumental trees**,
+`https://www.ilpiccolo.it/cronaca/alberi-antichi-trieste-tutela-gootn505`. It carries the ages the registers
+lack and it names individual trees:
+- London plane, Viale al Cacciatore / rotonda del Boschetto: **over 200 years, the oldest tree in the city**
+- Bagolaro, Piazza Hortis: over 180 years, fenced in 2025, ~17,000 euro of drainage work
+- Largest tree in the Giardino Pubblico: ~180 years, girth "approaches 530 cm" (register says 542)
+- Vallonea oak, Giardino Pubblico: "probably the only one in the entire region"
+- Pinus sabiniana, Miramare: named as the "pino fantasma"
+- Ownership split: 26 municipal, 14 in the Giardino Pubblico, 13 at Miramare
+
+Second sources for the gardens themselves: comune di Trieste and verdepubblico pages (Giardino Pubblico
+begun 1854 by Muzio de Tommasini, ~320 trees from 5 continents, planes planted by him personally, the only
+vallonea oak in FVG); cultura.gov.it and it.wikipedia for Miramare (park begun spring 1856 by Maximilian,
+exotic conifers imported within ten years).
+
+### tri_008 added this pass — The Plane of the Boschetto Roundabout
+Register 54/L424/TS/06, Platanus x acerifolia, 510 cm, 25 m, 45.654428 / 13.799328, locality Viale al
+Cacciatore. **The oldest tree in Trieste**, so it drives the question page. 1.2 km straight uphill from the
+Giardino Pubblico along Via Giulia, which turns the city trees into a real four-tree walk instead of one park.
+Its companion 55/L424 (440 cm) stands 25 m away, recorded as a lead. Pin approximate: the pair cannot be told
+apart from the register data alone.
+
+### tri_006 folded, per the Setubal twin rule
+36/L424 and 39/L424 are both 335 cm and 23 m, 30 m apart. Published as one entry describing both;
+39/L424 and the third chestnut 37/L424 (317 cm) are leads. Pin approximate.
+
+### Flagged, and why
+- **tri_002 Monterey Cypress**: both registers say Cupressus macrocarpa, a popular park description says
+  Cupressus sempervirens while giving the same 18 m height. Register used, conflict stated in the story.
+- **tri_004 Greek Strawberry Tree**: register only. No municipal or popular source names an Arbutus andrachne
+  at Miramare; the park's own material talks about the corbezzolo (A. unedo) stand, which is the 59-element
+  entry 23/L424 and is blocked as not a point.
+- **tri_006 Horse Chestnut**: age inferred from the garden's 1854 foundation, nothing dates these individually.
+
+### PHOTOS: dead end, do not re-run this hunt
+Zero usable photos for all eight. What was searched and what is there:
+- `Category:Parco di Miramare` — **empty**. `Category:Boschetto del Ferdinandeo` — **empty**.
+- `Category:Trees in Trieste` — 4 files, none a tree portrait (a sunset, the castle, two views).
+- `Category:Giardino pubblico Muzio de' Tommasini` — 18 files, 15 of which are busts, a pond, a bandstand
+  and a police post. One tree photo only.
+- Three candidates were downloaded and **looked at**, all rejected against the Cadiz standard:
+  - `"Sua Altezza"Sequoia - panoramio.jpg`, CC BY-SA 3.0, Fulvio Bacchia, GPS 45.704153/13.713459 which is
+    **7 m from the tri_001 pin**, so it is almost certainly the right tree. Rejected anyway: it is a
+    look-straight-up-the-trunk shot. Fine redwood bark, but the tree is not readable and a wide card crop
+    gives a band of trunk. The best near-miss on the list if the standard is ever revisited.
+  - `Giardino Muzio de Tommasini - Ippocastano.jpg`, CC BY-SA 4.0, Wilrooij, GPS 55 m from the tri_006 twins.
+    Rejected: shot on 1 December, overcast, underexposed to near-silhouette, tree almost bare, and the GPS is
+    too far off to say which chestnut it is.
+  - `Drammatic .....Sequoia - panoramio.jpg`, CC BY-SA 3.0. Rejected: GPS is 150 m from either registered
+    redwood, so the subject cannot be established.
+Next place to look is iNaturalist and Flickr geosearch on the two park polygons, not Commons.
