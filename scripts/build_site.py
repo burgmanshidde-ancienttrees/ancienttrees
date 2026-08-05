@@ -2267,6 +2267,94 @@ def _shift(months, delta):
     return sorted({((m - 1 + delta) % 12) + 1 for m in months})
 
 
+# How loud a moment actually is, in plain words (Hidde, 2026-08-05). The old
+# curve drew leaf cover, which made every evergreen a straight line, and a
+# straight line says nothing. This draws how much there is to SEE, so a moment
+# has to carry a judgement: a ginkgo flowers in April and nobody can tell, and
+# it turns gold in November and people cross town for it. `nice` is the default
+# on purpose, because a species nobody has judged yet should get no false peak.
+INTENSITY_WEIGHTS = {
+    "unseen": 0.0,
+    "nice": 0.18,
+    "striking": 0.35,
+    "worth the trip": 0.55,
+}
+# Baselines: bare is nearly nothing, in leaf is a decent afternoon, and the
+# turn months sit between the two.
+BASE_BARE, BASE_TURN, BASE_LEAF, FRESH_LEAF_BONUS = 0.08, 0.22, 0.38, 0.15
+SHOULDER = 0.4  # the month either side of a moment, so a peak rises and falls
+
+
+def phase_mid(months):
+    """The middle month of a phase, handling one that wraps the new year."""
+    if not months:
+        return None
+    run = sorted(months)
+    if 12 in run and 1 in run:
+        run = sorted(((m + 5) % 12) + 1 for m in run)
+        return ((run[len(run) // 2] + 6) % 12) + 1
+    return run[len(run) // 2]
+
+
+def highlight_curve(ph):
+    """Twelve values for how much there is to see, and the moments behind them.
+
+    Not normalised per species: a genuinely uneventful tree stays low all year,
+    because if every species reached full height the peak would stop meaning
+    anything. Same argument as scarcity on best_time.
+    """
+    leaf = set(ph.get("leaf") or [])
+    bare = set(ph.get("bare") or [])
+    inten = ph.get("intensity") or {}
+
+    vals = [BASE_BARE if m in bare else (BASE_LEAF if m in leaf else BASE_TURN)
+            for m in range(1, 13)]
+    # The spring flush is a real moment and it is recorded nowhere in the data.
+    for m in range(1, 13):
+        if m in leaf and ((m - 2) % 12) + 1 in bare:
+            vals[m - 1] += FRESH_LEAF_BONUS
+
+    moments = []
+    for key, kind, label_key in (("flowers", "flowers", "flower_label"),
+                                 ("fruit", "fruit", "fruit_label"),
+                                 ("colour", "autumn colour", "colour_label")):
+        word = str(inten.get(key, "nice")).strip().lower()
+        if word not in INTENSITY_WEIGHTS:
+            ERRORS.append(f"unknown phenology intensity {word!r} for {ph.get('common_name')}; "
+                          f"allowed: {sorted(INTENSITY_WEIGHTS)}")
+            word = "nice"
+        weight = INTENSITY_WEIGHTS[word]
+        months = ph.get(key) or []
+        if not months or not weight:
+            continue
+        span = set(months)
+        for m in months:
+            vals[m - 1] += weight
+            for n in (((m - 2) % 12) + 1, (m % 12) + 1):
+                if n not in span:
+                    vals[n - 1] += weight * SHOULDER
+        moments.append({"kind": kind, "word": word, "month": phase_mid(months),
+                        "label": ph.get(label_key)})
+
+    return [min(1.0, v) for v in vals], moments
+
+
+def check_phenology():
+    """The ratchet for the bug this replaces (CLAUDE.md QA layer 1): a species
+    that records real moments and still draws a straight line is a scoring bug
+    or an intensity block set to unseen across the board. Either way the page
+    would show a flat chart that says nothing, so the build stops instead."""
+    for name, e in sorted(PHENOLOGY.items()):
+        for key in e.get("intensity") or {}:
+            if key not in ("flowers", "fruit", "colour"):
+                ERRORS.append(f"phenology {name}: unknown intensity key {key!r}")
+        events = sum(len(e.get(k) or []) for k in ("flowers", "fruit", "colour"))
+        vals, _ = highlight_curve(e)
+        if events and max(vals) - min(vals) < 0.02:
+            ERRORS.append(f"phenology {name}: records {events} seasonal month(s) but the "
+                          f"curve is flat, so the chart would say nothing")
+
+
 def phenology_for(tree, lat):
     """The species calendar, shifted for where the tree actually stands. South
     of about 42N spring runs a month early and leaves hang on later; north of
@@ -2283,40 +2371,35 @@ def phenology_for(tree, lat):
     return out
 
 
-def phenology_block(tree, lat):
-    """The year as one chart, in the PictureThis form Hidde asked for: the
-    curve is leaf cover, so the dip IS the bare season, and at most three
-    icon badges sit on it at the month each thing happens (flowers, fruit,
-    autumn colour). The five-row strip this replaces was readable but read
-    like a spreadsheet."""
+def season_block(tree, lat):
+    """The year as one chart: how much there is to see, month by month.
+
+    This is one figure where the page used to stack two (a best_time peak chart
+    and a leaf-cover year chart), which made the same promise twice in a row.
+    The curve is the seasonal highlight score from the species phenology, the
+    marked peak is the tree's own best_time, and the icons sit on the months
+    each thing actually happens. A tree whose species has no phenology file
+    falls back to the older best_time-only curve rather than losing its chart.
+    """
     ph = phenology_for(tree, lat)
-    if not ph:
-        return ""
-    leaf = set(ph.get("leaf") or [])
-    if not leaf:
-        return ""
-    bare = set(ph.get("bare") or [])
-    colour = set(ph.get("colour") or [])
+    bt = tree.get("best_time") or {}
+    has_bt = bool(bt.get("label") and bt.get("months"))
 
-    # Leaf cover per month: full in leaf, none when bare, half in the turn
-    # months so the curve rises and falls instead of stepping.
-    def cover(m):
-        if m in bare:
-            return 0.06
-        if m in leaf:
-            prev_bare = ((m - 2) % 12) + 1 in bare
-            next_bare = (m % 12) + 1 in bare
-            if m in colour:
-                return 0.72
-            if prev_bare:
-                return 0.62
-            if next_bare:
-                return 0.55
-            return 1.0
-        return 0.4
+    if not ph or not (ph.get("leaf") or ph.get("bare")):
+        return season_curve(tree) if has_bt else ""
 
-    vals = [cover(m) for m in range(1, 13)]
+    vals, moments = highlight_curve(ph)
+    if max(vals) - min(vals) < 0.02:
+        # A species with nothing to show is an honest gap, like a missing photo.
+        if has_bt:
+            return season_curve(tree)
+        return ('<p class="ph-foot ph-noseason">This tree looks much the same in '
+                'every month of the year, so there is no season to chart.</p>')
+
     now = date.today().month
+    peak_m = phase_mid(bt.get("months") or []) if has_bt else None
+    in_season = has_bt and now in bt["months"]
+
     W, H, pad_t, pad_b, pad_x = 320.0, 128.0, 30.0, 24.0, 10.0
     plot_h = H - pad_t - pad_b
     step = (W - 2 * pad_x) / 11.0
@@ -2335,48 +2418,52 @@ def phenology_block(tree, lat):
         f'<line x1="{now_x:.1f}" y1="{pad_t - 6:.1f}" x2="{now_x:.1f}" y2="{pad_t + plot_h:.1f}" class="sc-now"/>'
         f'<text x="{now_x:.1f}" y="{pad_t - 10:.1f}" class="sc-nowlabel">now</text>')
 
-    # At most three badges, each at the middle month of its phase.
-    def mid(months):
-        if not months:
-            return None
-        run = sorted(months)
-        if 12 in run and 1 in run:  # a phase that wraps the new year
-            run = sorted(((m + 5) % 12) + 1 for m in run)
-            return ((run[len(run) // 2] + 6) % 12) + 1
-        return run[len(run) // 2]
+    def badge(month, kind):
+        x, y = pts[month - 1]
+        return (f'<span class="sc-peakbadge" style="left:{x / W * 100:.1f}%;top:{y / H * 100:.1f}%">'
+                f'{KIND_ICONS[kind]}</span>')
 
-    badges, notes = [], []
-    for key, kind, note_key in (("flowers", "flowers", "flower_label"),
-                                ("fruit", "fruit", "fruit_label"),
-                                ("colour", "autumn colour", "colour_label")):
-        months = ph.get(key) or []
-        m = mid(months)
-        if not m:
-            continue
-        x, y = pts[m - 1]
-        badges.append(f'<span class="sc-peakbadge" style="left:{x / W * 100:.1f}%;top:{y / H * 100:.1f}%">'
-                      f'{KIND_ICONS[kind]}</span>')
-        note = ph.get(note_key)
-        notes.append('<span class="ph-key">%s%s</span>' % (
-            KIND_ICONS[kind], esc(note or kind.capitalize())))
+    # The marked peak follows best_time, even where the curve tops out
+    # elsewhere: that field is a judgement about this tree and it outranks a
+    # score derived from the species.
+    badges, peak_dot = [], ""
+    kind = season_kind(bt) if has_bt else ""
+    if peak_m:
+        px, py = pts[peak_m - 1]
+        peak_dot = f'<circle cx="{px:.1f}" cy="{py:.1f}" r="4.5" class="sc-peak"/>'
+        if kind:
+            badges.append(badge(peak_m, kind))
+    # Only the loud moments get their own icon, so the chart does not crowd.
+    for mo in moments:
+        if mo["word"] in ("striking", "worth the trip") and mo["month"] != peak_m:
+            badges.append(badge(mo["month"], mo["kind"]))
+
+    keys = "".join(
+        '<span class="ph-key">%s%s</span>' % (KIND_ICONS[mo["kind"]],
+                                               esc(mo["label"] or mo["kind"].capitalize()))
+        for mo in moments)
+    now_badge = '<span class="best-now">at its best right now</span>' if in_season else ""
+    label_line = f'<p class="season-label">{esc(bt["label"])}</p>' if has_bt else ""
 
     return """
   <figure class="season phenology">
-    <figcaption class="season-head"><span>The tree's year</span></figcaption>
+    <figcaption class="season-head"><span>The tree's year</span>%s</figcaption>
     <div class="season-plot">
     %s
-    <svg viewBox="0 0 %.0f %.0f" class="season-svg" role="img" aria-label="Leaf cover through the year">
+    <svg viewBox="0 0 %.0f %.0f" class="season-svg" role="img" aria-label="How much there is to see through the year">
       %s
       <path d="%s" class="sc-area"/>
       <path d="%s" class="sc-line"/>
       %s
       %s
+      %s
     </svg>
     </div>
     <p class="ph-keys">%s</p>
-    <p class="ph-foot">The line is the tree in leaf, so the dip is winter. Typical for this species where this tree stands; exact weeks shift with the year.</p>
-  </figure>""" % ("".join(badges), W, H, grid, area, line, now_marker, ticks,
-                  "".join(notes))
+    %s
+    <p class="ph-foot">The line is our estimate of how much there is to see, not a measurement. Typical for this species where this tree stands; exact weeks shift with the year.</p>
+  </figure>""" % (now_badge, "".join(badges), W, H, grid, area, line,
+                  now_marker, peak_dot, ticks, keys, label_line)
 
 
 def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, country_pages=None):
@@ -2449,8 +2536,6 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, coun
   <dt>Access</dt><dd>{esc(tree.get('access', ''))}</dd>
   <dt>Getting there</dt><dd>{esc(tree.get('transport', ''))}</dd>
 </dl>"""
-    season_html = season_curve(tree)
-
     nearby_html = "".join(
         f'<li><a href="{slugify(t["name"])}">{esc(t["name"])}, '
         f'{esc(t.get("age_estimate", ""))} ({esc(t["location"].get("neighbourhood", ""))})</a></li>'
@@ -2470,9 +2555,9 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, coun
     # Chips answer what a visitor asks, nothing else (Hidde, 2026-07-29:
     # "pin confirmed, is dat informatie voor de gebruiker of voor ons twee?").
     # A confirmed pin is the normal case and says nothing; only the
-    # approximate warning earns a chip. The season story lives in the Best
-    # time block below, not as an unexplained label up top.
-    phenology_html = phenology_block(tree, loc['latitude'])
+    # approximate warning earns a chip. The season story lives in the year
+    # chart below, not as an unexplained label up top.
+    season_html = season_block(tree, loc['latitude'])
     precision_chip = ('<span class="chip approx">pin approximate</span>'
                       if location_is_approximate(tree) else '')
     chips = (f'<p class="chip-row"><span class="chip">{esc(tree.get("age_estimate", "age unknown"))}</span>'
@@ -2512,7 +2597,6 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, coun
   {action_row}
   <div class="prose-block"><p>{esc(tree['story'])}</p></div>
   {season_html}
-  {phenology_html}
   <div class="map-embed"><div id="map" class="map"></div></div>
   <p class="go-note">The buttons above open directions and collecting. {esc(tree.get('transport', ''))}</p>
   {approx_note}
@@ -4710,6 +4794,7 @@ def main():
     species_intros = load_species_intros()
     global PHENOLOGY
     PHENOLOGY = load_phenology()
+    check_phenology()
     country_intros = load_country_intros()
     cities_by_slug = {c["slug"]: c for c in cities}
     pages = []  # (relative path, html, canonical or None)

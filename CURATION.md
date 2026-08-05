@@ -4083,3 +4083,13 @@ Newest entries on top. When you approve a city, its status moves to `curated` an
 - 10 tree names carried over from chat research, no data behind them yet
 - Status stays `pending` so the nightly workflow picks Amsterdam up for a full research run
 - Nothing to curate yet
+
+## 2026-08-05 — two species with no season on record
+
+Giant Sequoia and Moreton Bay Fig carry no flowers, fruit or autumn colour in
+data/phenology/, so their 25 tree pages now show a plain sentence instead of a
+year chart. For the sequoia that is probably right: it has no moment a visitor
+would notice. For the Moreton Bay Fig it is a gap, not a fact, because the tree
+does fruit and the fallen figs stain pavements in Palermo, Seville and Valencia.
+Needs two sources and a month range before it can be filled. Not urgent: an
+honest blank beats an invented season.

@@ -33,8 +33,13 @@
     2,
     3
   ],
-  "fruit_label": "bristly seed balls hang on through winter, long after the leaves have gone",
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "nice",
+    "colour": "nice"
+  },
   "flower_label": "small green flower balls appear with the new leaves",
+  "fruit_label": "bristly seed balls hang on through winter, long after the leaves have gone",
   "sources": [
     "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
     "https://www.treesandshrubsonline.org/"

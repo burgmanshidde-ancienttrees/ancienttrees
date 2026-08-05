@@ -26,8 +26,13 @@
     2,
     3
   ],
-  "colour_label": "the whole crown turns butter gold, then drops in a day or two",
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "nice",
+    "colour": "worth the trip"
+  },
   "fruit_label": "female trees drop fleshy seeds that smell strongly",
+  "colour_label": "the whole crown turns butter gold, then drops in a day or two",
   "sources": [
     "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
     "https://www.treesandshrubsonline.org/"
