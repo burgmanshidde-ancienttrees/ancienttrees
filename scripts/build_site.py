@@ -556,7 +556,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .hero-links { display: flex; gap: 1.8rem; margin-top: 1.3rem; flex-wrap: wrap; justify-content: center; }
 .hero-link { background: none; border: none; cursor: pointer; font-family: inherit; color: #fff; font-size: 15.5px; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
 .home-hero.poster .near-me-result { color: #fff; font-weight: 600; margin-top: 0.9rem; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
-.mission { max-width: 46rem; margin: 0 auto; padding: 0 2rem 1.4rem; text-align: center; }
+.mission { max-width: 44rem; margin: 2.5rem auto 0; padding: 1.6rem 2rem 0; border-top: 1px solid var(--cream-dark); text-align: center; }
 .mission p { font-family: var(--sans); font-size: 14.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
 .mission b { font-weight: 700; color: var(--ink); }
 .mission a, .footer-about a { color: var(--moss); }
@@ -755,7 +755,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <body>
 <header class="bar">
   <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>%%LOGIN_MENU%%</div></details>%%LOGIN%%<a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
+  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%countries"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg></span>Countries</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>%%LOGIN_MENU%%</div></details>%%LOGIN%%<a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
 </header>
 %%BODY%%
 %%FOOTER%%
@@ -830,13 +830,14 @@ FOOTER = """
   <div class="footer-cols">
     <div class="footer-col footer-about">
       <span class="footer-logo">Ancient Trees</span>
-      <p>We are mapping every remarkable tree in the world, one city at a time, and we need your help. Each one is found, verified and placed by hand. If you know a tree that belongs on the map, <a href="%%ROOTPATH%%contribute">tell us about it</a>.</p>
+      <p>We are on a mission to map every remarkable tree in the world, and we could use your help. If you know a good tree, or spot a mistake on one of these pages, <a href="%%ROOTPATH%%contribute">tell us</a>. We work on this database every day.</p>
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
       <a href="%%ROOTPATH%%explore">Map</a>
       <a href="%%ROOTPATH%%in-season">In season now</a>
       <a href="%%ROOTPATH%%cities">Cities</a>
+      <a href="%%ROOTPATH%%countries">Countries</a>
       <a href="%%ROOTPATH%%species">Species</a>
       <a href="%%ROOTPATH%%collections">Collections</a>
     </div>
@@ -2481,7 +2482,7 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, coun
   <h2>Trees nearby</h2>
   <div class="near-cards">{near_cards}</div>
   <div class="cta">Curious what else is standing in {esc(city)}? See <a href="../{cslug}">all {len(all_trees)} remarkable ancient trees in {esc(city)}</a> or find out <a href="oldest-tree">what the oldest tree in {esc(city)} is</a>.{species_line}</div>
-  <div class="report"><strong>We are mapping every remarkable tree in the world, and we need your help.</strong>
+  <div class="report"><strong>We could use your help.</strong>
     <p class="report-line">This page was researched from a distance. If you know this tree, you know things we do not.</p>
     <a class="report-btn" href="{submit_link('correction')}">Something is wrong here</a>
     <a class="report-btn" href="{submit_link('tree')}">Suggest another tree</a></div>
@@ -2722,7 +2723,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
 
     panel_foot = f"""
     <div class="panel-foot">
-      <p class="subtle-suggest"><b>We are mapping every remarkable tree in the world, and we need your help.</b> Know one in {esc(city)} we missed? <a href="{submit_link('tree')}">Put it on the map</a>.</p>
+      <p class="subtle-suggest"><b>We are mapping every remarkable tree in the world.</b> Know one in {esc(city)} we missed, or spot a mistake here? <a href="{submit_link('tree')}">Tell us</a>.</p>
       <div class="take-with-you">
         <strong>Going there?</strong> <a href="{slug}.gpx" download>Download all {len(trees)} trees</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
       </div>
@@ -3292,6 +3293,49 @@ def build_country_page(intro_data, country_cities, entries_by_slug, tree_slugs,
     page = render_page(title, description, canonical, body, head_extra,
                        country_map_script(country_cities), rootpath)
     pages.append((f"{slug}.html", page, canonical))
+    face = None
+    for c in ranked:
+        f = city_face(entries_by_slug[c["slug"]], 400)
+        if f:
+            face = f
+            break
+    return {"slug": slug, "display": country_name(intro_data, capital=True),
+            "cities": len(country_cities), "trees": total, "face": face}
+
+
+def build_countries_index(country_cards, published, pages):
+    """The missing hop: country pages existed but nothing linked to them, so
+    they were orphans (Hidde, 2026-08-04: "I'm missing the whole country
+    view"). This is the page the Explore menu now points at."""
+    canonical = f"{BASE_URL}/countries"
+    rootpath = "./"
+    title = fit_title(["Ancient Trees by Country", "Browse Ancient Trees by Country"], canonical)
+    description = ("Every country on the map, with the cities and trees mapped in each: "
+                   "Japan's shrine camphors, Spain's imported giants, Portugal's register.")
+    crumb_items = [("Home", BASE_URL), ("Countries", None)]
+    cards = "".join(
+        browse_card(c["slug"], c["display"],
+                    f'{c["cities"]} cities &middot; {c["trees"]} trees', c.get("face"))
+        for c in country_cards)
+    total_c = sum(c["cities"] for c in country_cards)
+    total_t = sum(c["trees"] for c in country_cards)
+    body = f"""
+<main class="content-page">
+  {breadcrumb_html(crumb_items, rootpath)}
+  <h1>Ancient trees by country</h1>
+  <p class="answer-first">{len(country_cards)} countries have enough mapped cities to have a page of their own: {total_c} cities and {total_t} trees between them. Every other country is on <a href="cities">the city list</a> while it grows.</p>
+  <div class="cindex-grid">{cards}</div>
+</main>
+"""
+    graph = site_graph() + [
+        {"@type": "ItemList", "name": "Countries",
+         "itemListElement": [{"@type": "ListItem", "position": i, "name": c["display"],
+                              "url": f"{BASE_URL}/{c['slug']}"}
+                             for i, c in enumerate(country_cards, 1)]},
+        breadcrumb_schema(crumb_items, canonical)]
+    check_links(canonical, len(country_cards) + 1, 2)
+    page = render_page(title, description, canonical, body, ld_script(graph), "", rootpath)
+    pages.append(("countries.html", page, canonical))
 
 
 def build_cities_index(published, pages, faces=None):
@@ -4117,26 +4161,6 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
 <section class="hero-sub">
   <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of. Every tree free to explore.</p>
 </section>
-<section class="mission">
-  <p><b>We are mapping every remarkable tree in the world, one city at a time.</b> Every tree here was found, verified and placed by hand, which means the map is only as complete as the people who know their own streets. <a href="contribute">Put a tree on it</a>.</p>
-</section>
-<section class="steps">
-  <a class="step" href="explore">
-    <span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
-    <b>Find</b>
-    <span>Open the map and see the remarkable old trees around you, each one verified and placed.</span>
-  </a>
-  <a class="step" href="cities">
-    <span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-3 3-3 3-6s-3-3-3-6"/><circle cx="5" cy="4" r="1.6"/><circle cx="19" cy="20" r="1.6"/><path d="M9 19h8"/></svg></span>
-    <b>Walk</b>
-    <span>String a few of them into an afternoon, with the story of why each one is worth the stop.</span>
-  </a>
-  <a class="step" href="app">
-    <span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
-    <b>Collect</b>
-    <span>Tick off the ones you have stood in front of, city by city. Collecting lives in the app.</span>
-  </a>
-</section>
 {fav_shelf}
 <section class="home-acts">
   <div class="home-act">
@@ -4224,7 +4248,9 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
 <main class="page">
   <h2 class="section-heading" id="cities">Ancient trees anywhere</h2>
   {directory_html}
-  <p class="dir-more">Your city not here yet? We are mapping every remarkable tree in the world and we need your help. <a href="contribute">Start your city</a>.</p>
+  <div class="mission">
+    <p>We are on a mission to map every remarkable tree in the world, and we could use your help. If you know a good tree, or want to map a whole city, <a href="contribute">tell us about it</a>. If you spot a mistake, tell us that too. We work on this database every day.</p>
+  </div>
 
 </main>
 """
@@ -4731,11 +4757,17 @@ def main():
     build_cities_index(published, pages, {e['slug']: city_face(e) for e in renderable})
 
     entries_by_slug = {e["slug"]: e for e in renderable}
+    country_cards = []
     for country in sorted(country_pages):
-        build_country_page(country_intros[country],
-                           [p for p in published if p["country"] == country],
-                           entries_by_slug, tree_slugs, published,
-                           public_collections, pages)
+        card = build_country_page(country_intros[country],
+                                  [p for p in published if p["country"] == country],
+                                  entries_by_slug, tree_slugs, published,
+                                  public_collections, pages)
+        if card:
+            country_cards.append(card)
+    if country_cards:
+        country_cards.sort(key=lambda c: -c["trees"])
+        build_countries_index(country_cards, published, pages)
 
     species_cards = []
     for common in sorted(qualifying, key=lambda c: -len(qualifying[c])):
