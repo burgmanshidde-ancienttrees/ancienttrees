@@ -13,6 +13,89 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-05
+
+**BLOCKER** — `/collections/wisteria-and-blossom-worth-a-spring-trip` now
+self-contradicts in its own `<head>`. Today's commit 08e4e01 ("Collections
+retitled on measured demand") changed this collection's `seo_title` (the
+`<title>` tag per Contract D) to "Where to See Japan's Oldest Wisteria and
+Blossom Trees". The collection's actual 11 entries: 1 in Tokyo, the other 10
+in Seville, Milan, Granada, Vienna, Antwerp (x2), Lyon, Brussels and New
+York (`data/collections/wisteria-and-blossom-worth-a-spring-trip.json`).
+Verified live: `site/dist/collections/wisteria-and-blossom-worth-a-spring-trip.html`
+carries `<title>Where to See Japan's Oldest Wisteria and Blossom Trees</title>`
+directly above `<meta name="description" content="Eleven trees across nine
+cities at their spring peak, from Seville's February orange blossom to a
+Tokyo wisteria...">`, so the page tells Google and any reader two different
+things about its own scope one line apart. Violates P2 (the answer must be
+quotable and true) and P7 (truth outranks polish); also the kind of
+unverified geographic superlative hard rule 8 exists to catch. A reader who
+clicks through from "Japan's" expecting a Japan list lands on a page that is
+90% Europe and New York.
+
+**BLOCKER** — Same commit, same bug, second collection:
+`/collections/europes-most-remarkable-yews`'s `seo_title` became "The Oldest
+Yew Trees of Britain and Ireland", but 4 of its 8 entries are in Naples,
+Florence, Verona (Italy) and Madrid (Spain), not Britain or Ireland
+(`data/collections/europes-most-remarkable-yews.json`). Verified live:
+`site/dist/collections/europes-most-remarkable-yews.html` has
+`<title>The Oldest Yew Trees of Britain and Ireland</title>` immediately
+above `<meta name="description" content="Eight ancient yews across seven
+European cities, from a London yew ... to a three-trunked Madrid
+specimen...">`, the same title-vs-description contradiction as above, in the
+same commit. Worth checking the other 5 collections this commit touched
+before trusting the pattern is contained: those 5 (`europes-most-
+remarkable-trees`, `ginkgos-worth-a-november-trip`, `the-great-planes-of-
+europe`, `the-oldest-tree-in-every-country-we-map`, `trees-that-outlived-
+their-city`) were checked against their actual entry cities and their new
+seo_titles do match scope, so the error looks like it was made per-title
+rather than systemically, but two live self-contradicting pages from one
+commit is enough to call the commit's QA (which caught neither, since
+qa.py has no check for title-vs-content scope match) rung 2.
+
+**WARN** — The exact copy claim that today's other work declared false and
+removed is still live in two other places. Commit b416ace added TONE_OF_VOICE.md's
+"Product copy is soberer than the stories" section, naming "Every tree here
+was found, verified and placed by hand" as untrue ("these pages are
+researched from sources, and several carry ranges precisely because nobody
+has measured them"); commit a935f16 then removed that exact sentence from
+the homepage and footer. But `scripts/build_site.py` still prints "each one
+verified and placed" verbatim on the `/cities` index (line 3413, "81
+cities, 575 trees, each one verified and placed") and on all four country
+pages (line 3310; verified live on `site/dist/cities.html`,
+`site/dist/japan.html`, `site/dist/spain.html`, `site/dist/portugal.html`
+and `site/dist/netherlands.html`). Both lines predate today (2026-07-31 and
+2026-08-01) but they make the identical claim in the identical week the
+site started treating that claim as false enough to rewrite elsewhere.
+"Placed" is also literally imprecise for roughly half the map: the
+session-start count is 269 of 575 trees at `location_precision:
+"approximate"`, not a confirmed placement. Not a new bug, but today's own
+reasoning (TONE_OF_VOICE.md's new rule, applied same-day to the homepage)
+argues these two lines should not survive next to it.
+
+**NOTE** — `.github/workflows/nightly.yml` (commit db6f60f) now tells every
+autonomous night run to cap new-city photo hunting at "at most 3 photos per
+city for now", justified by measured token cost. CLAUDE.md's own Step 4 and
+Step 0 rung 6 still describe hunting photos "hard" toward an "8-of-10 photo
+target" with no such cap, and a run reads CLAUDE.md as the standing
+instruction set. Not necessarily wrong (Hidde's own reasoning is in the
+commit message), but the two documents that drive research runs now say
+different things about the same number, and only the workflow file
+mentions the change. Worth folding into CLAUDE.md's Step 4 or Step 0 rung 6
+if the 3-photo cap is meant to stick, so a run reading CLAUDE.md alone does
+not over-hunt against the new instruction.
+
+**NOTE** — This file has no entry between 2026-08-02 and today: three days
+(08-03, 08-04, 08-05) where either nothing ran the Fresh-eyes review
+workflow or it ran and found nothing worth a dated heading (the latter
+would still need a "Nothing found." line per this file's own convention,
+so more likely it simply did not run). `review.yml` already carries `id-
+token: write`, so it is not the permissions bug prior sessions hit. Worth a
+`gh run list --workflow=review.yml` check by a session that has `gh`
+access, since this run's did not.
+
+---
+
 ## 2026-08-02 (second pass)
 
 **WARN** — CLAUDE.md's Step 3 (`best_time`) was widened today (commit 63b7b51) to
