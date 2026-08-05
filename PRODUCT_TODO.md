@@ -30,9 +30,18 @@ deepening, Barcelona second deepening, Milan deepening.
 5. **Prague, deepen.** prazskestromy.cz publishes three tree-by-tree walking
    routes with maps and on-site boards, over an official register of 196. The
    site is all-rights-reserved: cite and verify, never copy.
-6. **Munich, new.** 117 Naturdenkmaeler covering about 200 individual trees under
-   the 2021 ordinance, with species, address, coordinates and an ownership
-   column. Filter the private parcels out per hard rule 10.
+6. **Munich, DEEPEN, not new.** It has been live since 2026-07-25 with 10 trees
+   and 10 photos, and calling it new in this list sent a pass out to duplicate
+   it, the third time that has happened. **Run `python3 scripts/backlog.py`
+   before writing any brief; do not trust a queue entry, including this one.**
+   The work itself: 116 of the 117 monuments are parsed into
+   data/leads/munich.json already, and only 34 of them survive the filters,
+   because 51 are privately owned and 8 more are publicly owned but stand in a
+   school yard, a hospital courtyard or a council forecourt. Ownership and
+   access are different things and the ordinance records only the first. The
+   cluster worth writing is Schlosspark Nymphenburg: five clean candidates plus
+   the one we already publish, six trees in one free park inside 1.3 km, every
+   candidate already carrying a Commons image.
 7. **Seville, deepen.** The 2022 municipal inventory is a 36 MB PDF that pdfminer
    reads once it is fetched whole (see the recipe in OPEN_DATA_SURVEY.md). Per
    tree it gives WGS84 coordinates, ownership, full dendrometry, and both

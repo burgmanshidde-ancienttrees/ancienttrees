@@ -1,0 +1,54 @@
+
+## cluster 1: 30 trees, 3.6 km across, centre 40.86453,14.25460
+- Falso kapok | Ceiba speciosa (A.St.-Hil, A.Juss & Cambess.) syn Chorisia speciosa A. St. Hill | 880cm | 40.86120,14.26219 | Napoli
+- Albero della canfora | Cinnamomum camphora T.Nees et Eberm | 830cm | 40.86884,14.25249 | Napoli
+- Albero della canfora | Cinnamomum camphora T.Nees et Eberm | 730cm | 40.88014,14.26141 | Napoli
+- Pianta mangiafumo | Nolina longifolia (Karw. ex Shult. & Shult.f.) Hemsl | 560cm | 40.86106,14.26171 | Napoli
+- Magnolia | Magnolia grandiflora L. | 540cm | 40.87666,14.25056 | Napoli
+- Albero della canfora | Cinnamomum camphora T.Nees et Eberm | 500cm | 40.85257,14.25249 | Napoli
+- Cerro-Sughera | Quercus crenata Lam. | 440cm | 40.86118,14.26276 | Napoli
+- Eucalitto blu | Eucalyptus globulus Labill. | 440cm | 40.86114,14.26245 | Napoli
+- Platano comune | Platanus acerifolia (Aiton) Willd. | 430cm | 40.87645,14.24929 | Napoli
+- Cedro del Libano | Cedrus libani A.Richard | 418cm | 40.86661,14.24800 | Napoli
+- Platano orientale | Platanus orientalis L. | 396cm | 40.86681,14.24842 | Napoli
+- Albero della canfora | Cinnamomum camphora T.Nees et Eberm | 388cm | 40.86683,14.24794 | Napoli
+- Palma da dattero di Creta | Phoenix theophrasti Greuter | 380cm | 40.86631,14.25219 | Napoli
+- Cedro del Libano | Cedrus libani A.Richard | 347cm | 40.84926,14.24785 | Napoli
+- Mogano delle paludi | Eucalyptus robusta Sm. | 330cm | 40.86664,14.25215 | Napoli
+- Albero della canfora | Cinnamomum camphora T.Nees et Eberm | 303cm | 40.86473,14.25906 | Napoli
+- Albero della canfora | Cinnamomum camphora T.Nees et Eberm | 300cm | 40.85175,14.25118 | Napoli
+- Ginco | Ginkgo biloba L. | 300cm | 40.86141,14.26316 | Napoli
+- Cipresso messicano | Taxodium huegelii C.Lawson | 300cm | 40.86870,14.25258 | Napoli
+- Podocarpo | Podocarpus elongatus AitonL'herit. ex Pers. | 300cm | 40.87486,14.24922 | Napoli
+- Platano orientale | Platanus orientalis L. | 255cm | 40.84828,14.25846 | Napoli
+- Palma gigante del Cile | Jubaea chilensis Johow. | 250cm | 40.86061,14.26230 | Napoli
+- Tasso | Taxus baccata L. | 250cm | 40.86844,14.25271 | Napoli
+- Podocarpo | Podocarpus macrophyllus (Thunb.) Sweet | 242cm | 40.85449,14.25307 | Napoli
+- Roverella | Quercus pubescens Willd. | 240cm | 40.87943,14.25156 | Napoli
+- Palma azzurra del Messico | Brahea roezlii Linden | 190cm | 40.86109,14.26175 | Napoli
+- Palma azzurra del Messico | Brahea roezlii Linden | 160cm | 40.86938,14.25058 | Napoli
+- Melaleuca Corteccia di Carta | Melaleuca styphelioides Sm. | 75cm | 40.86890,14.25383 | Napoli
+- Albero della canfora | Cinnamomum camphora T.Nees et Eberm |  | 40.85348,14.25431 | Napoli
+- Eucalitto menta bianca | Eucalyptus pulchella Desf. |  | 40.86853,14.25248 | Napoli
+
+## cluster 2: 6 trees, 2.4 km across, centre 40.83592,14.23795
+- Eucalitto rostrato | Eucalyptus camaldulensis Dehnh. | 676cm | 40.83339,14.23525 | Napoli
+- Platano comune | Platanus acerifolia (Aiton) Willd. | 484cm | 40.83467,14.25131 | Napoli
+- Platano orientale | Platanus orientalis L. | 439cm | 40.83308,14.23733 | Napoli
+- Platano orientale | Platanus orientalis L. | 428cm | 40.83314,14.23756 | Napoli
+- Platano orientale | Platanus orientalis L. | 412cm | 40.83314,14.23794 | Napoli
+- Fitolacca arborea | Phytolacca dioica L. | 350cm | 40.84812,14.22831 | Napoli
+
+## cluster 3: 6 trees, 1.8 km across, centre 40.82095,14.18794
+- Fitolacca arborea | Phytolacca dioica L. | 627cm | 40.81108,14.19794 | Napoli
+- Fico magnolioide | Ficus macrophylla Desf. ex Pers. | 600cm | 40.82218,14.18633 | Napoli
+- Yucca | Yucca gigantea Lem. | 380cm | 40.82429,14.18649 | Napoli
+- Tipuana | Tipuana tipu (Benth.) Kuntze | 320cm | 40.82158,14.18499 | Napoli
+- Podocarpo | Podocarpus elongatus AitonL'herit. ex Pers. | 200cm | 40.82248,14.18482 | Napoli
+- Albero della canfora | Cinnamomum camphora T.Nees et Eberm | 130cm | 40.82410,14.18708 | Napoli
+
+## cluster 4: 4 trees, 1.9 km across, centre 40.89203,14.26276
+- Albero della canfora | Cinnamomum camphora T.Nees et Eberm | 454cm | 40.88904,14.25549 | Napoli
+- Platano orientale | Platanus orientalis L. | 442cm | 40.88975,14.27814 | Napoli
+- Palma delle Canarie | Phoenix canariensis Chabaud | 250cm | 40.89464,14.25865 | Napoli
+- Cedro del Libano | Cedrus libani A.Richard | 240cm | 40.89467,14.25876 | Napoli
