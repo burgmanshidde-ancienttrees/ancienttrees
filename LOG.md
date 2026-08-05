@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-05 (session) — Italy and Andalusia imported, the year chart stops lying about evergreens
+
+**Two registers landed, and they are the biggest coverage jump this project has had.** Italy's MASAF national register: 5,007 entries with coordinates, of which 4,522 are single trees and 1,653 stand inside a city by the register's own urban flag. Andalusia's REDIAM: 749 trees, 435 of them linking to an official per-tree PDF. Both CC BY 4.0 with the proving sentence recorded in OPEN_DATA_SURVEY.md. The tree index now knows 5,083 Italian and 1,047 Spanish trees, against 76 and 72 published.
+
+**Two tools were quietly broken and are fixed.** The .xls parser dropped every shared string past the 1,077th, because it glued CONTINUE records together and ate the byte that says how the rest is encoded; every Italian species name past that point read as a number. And cluster_register.py was cubic and simply never returned on 5,007 points; it now indexes by a grid and reproduces Portugal's known answer exactly, in 0.03 seconds.
+
+**The cheapest-cluster ranking is rebuilt** across all six registers and sits at the top of PRODUCT_TODO.md. 296 clusters of four or more, holding 2,358 trees. Priverno, Caserta, Monte Sant'Angelo and Napoli now outrank the Portuguese list, and Barcelona alone has 61 registered trees inside 3.8 km against the ten we publish.
+
+**The year chart on tree pages was drawing leaf cover, so every evergreen was a straight line.** Hidde's call: it now draws how much there is to see per month, with each moment on a species carrying a judgement (unseen, nice, striking, worth the trip). Ginkgo's invisible April flowering no longer peaks; its November gold does. The same page also stacked two curve charts making the same promise, one from best_time and one from phenology; they are one figure now. 291 tree pages get the new chart, 74 keep the old best_time curve where the species has no phenology file, and 25 say plainly that the tree looks the same all year. The build now refuses a species that records real moments and still draws a flat line.
+
+**FOR HIDDE: nothing blocks, one thing waits on your word.** Publishing the clusters is agent work and therefore the expensive half, so per your rule it has not started. The estimate and the question are in chat.
+
 ## 2026-08-03 — Fukuoka opens: 5 trees, the city you asked for
 
 New session. `python3 scripts/visitors.py`: 138 visits, 311 page views over the last 7 days, up from the prior week. Site was healthy at the start (build, QA and smoke test all clean; REVIEW.md's two open WARNs from 2026-08-02 were already fixed by an earlier commit). No reader submissions on either channel. `gh` was unreachable all session (permission prompts with no one to answer them), so the usual stale-workflow checks were skipped rather than guessed at.

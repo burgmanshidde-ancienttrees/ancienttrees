@@ -46,6 +46,10 @@ def load(path):
     rows = d.get("entries") or d.get("trees") or (d if isinstance(d, list) else [])
     out = []
     for t in rows:
+        if t.get("group"):
+            # An avenue or a stand, not one tree. It cannot be a stop on a walk,
+            # so it must not inflate a cluster either.
+            continue
         loc = t.get("location") or {}
         lat = t.get("latitude") or loc.get("latitude")
         lng = t.get("longitude") or loc.get("longitude")
