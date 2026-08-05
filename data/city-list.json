@@ -1015,6 +1015,14 @@
       "slug": "trieste",
       "status": "published",
       "note": "Densest cluster in the Italian register: 34 designated trees in two groups, one of them 12 within 300 m. Published as two walks 8 km apart (Miramare park and the city centre), which the FAQ says plainly. Rest in data/leads/trieste.json."
+    },
+    {
+      "city": "Turin",
+      "country": "Italy",
+      "tier": 1,
+      "slug": "turin",
+      "status": "published",
+      "note": "One walk, Porta Nuova station to the Po, 1.94 km spread. Taken from the official 13.9 km tourist route, which is really four walks; the other three are in data/leads/turin.json. Piemonte's regional register (data/registers/piemonte-alberi-monumentali.json) carries presumed age bands and removal status, which no other Italian source does."
     }
   ]
 }

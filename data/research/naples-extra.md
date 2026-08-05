@@ -1,7 +1,6 @@
-# Naples deepening pass, 2026-08-05 — the Orto Botanico second walk
+# Naples deepening pass, 2026-08-05: the Orto Botanico second walk
 
-Naples publishes 12 trees (data/cities/naples.json, nap_001..nap_012), 10 of them in or around
-Capodimonte. This pass adds a SECOND WALK: the Real Orto Botanico di Napoli, Via Foria 223.
+Naples publishes 12 trees (data/cities/naples.json, nap_001..nap_012), 8 of them at Capodimonte. This pass adds a SECOND WALK: the Real Orto Botanico di Napoli, Via Foria 223.
 
 ## The access question, and why it is now a yes
 
@@ -55,13 +54,13 @@ used as a date.
 ## Two register conflicts, handled rather than hidden
 
 1. **The Ceiba's girth.** MASAF 880 cm, Campania 800 cm. Both are plausible readings of the same
-   buttressed, spined trunk at slightly different heights. Published as a range with both figures
-   named. It is the largest registered tree in Naples on either number.
+   fused multi-stem base at slightly different heights, which the approved photograph shows clearly.
+   Published with both figures named. It is the largest registered tree in Naples on either number.
 2. **The Nolina's species.** MASAF says *Nolina longifolia*, Campania says *Nolina recurvata*
    (the plant now usually placed in *Beaucarnea*). These are genuinely different plants and the
-   registers cannot both be right. Handled by publishing the genus only, saying the two registers
-   disagree, and flagging the entry. Not dropped, because the specimen itself is not in doubt:
-   both registers give the same 560 cm base at the same point.
+   registers cannot both be right. Genus-only publication was drafted and then rejected, since no
+   entry in the corpus names a species at genus level and hard rule 9 keys the species pages on the
+   binomial. The tree is held as a lead instead. See the Outcome section below.
 
 ## What was left out of the walk, and why
 
