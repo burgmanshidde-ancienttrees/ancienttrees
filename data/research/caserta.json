@@ -1,0 +1,218 @@
+{
+  "city": "Caserta",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Caserta's remarkable trees are all in one place, and it is not the town. In 1786 Maria Carolina had 23 hectares at the top of the royal park turned into the first landscape garden in Italy, and John Andrew Graefer filled it with species nobody in Campania had seen. What survives is a walk of a few hundred metres past a cedar seven and three quarter metres round, a Douglas fir of forty metres, a plane that grew sideways, and a yew that was already old when it was carried in.",
+  "meta_description": "Seven monumental trees inside the English Garden of the Reggia di Caserta: a cedar 7.75 m round, a 40 m Douglas fir, and a yew older than the garden.",
+  "question_meta": "Caserta's oldest tree is almost certainly the yew at the Bath of Venus, already mature when it was set in place in the 1790s.",
+  "question_answer": "Caserta's oldest tree is almost certainly the European yew at the Bath of Venus, in the English Garden of the Reggia. The Campania regional register calls it one of the patriarchs of the garden and records that it was already a mature tree when it was put in place at the garden's creation in the 1790s, which puts it comfortably past 250 years even though the age field on the same record says only 150. The Douglas fir and the camphor tree a few hundred metres downhill are each given about 200 years, and no tree in Caserta has been dated by counting rings.",
+  "question_context": "Every age on this page comes from one place, the Campania regional register of monumental trees, and every age on it is an eta presunta, an estimate. The national MASAF register lists the same trees with the same girths and heights but carries no age field at all, so the two agree on what stands where and only one of them says how old it is. That matters more here than in most cities, because almost nothing in this garden is native and almost nothing was planted before 1786. Maria Carolina commissioned the garden that year on the advice of Sir William Hamilton, the British ambassador in Naples, and John Andrew Graefer, the gardener sent to build it, spent a decade collecting exotics from Capri, Salento and Palermo. Under Giovanni Gussone and Nicola Terracciano it later became a working botanical garden. So most of these trees are between 150 and 240 years old, and where a register says 200 it means the first planting rather than a measurement. The park also loses trees in storms, most recently a monumental Monterey cypress in December 2019, so treat any single specimen as something to check before a long trip.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Caserta?",
+      "a": "The yew at the Bath of Venus, in the English Garden of the Reggia. The regional register says it was already a mature tree when it was set there in the 1790s, so it predates the garden. The Douglas fir and the camphor are each given about 200 years."
+    },
+    {
+      "q": "Do you have to pay to see them?",
+      "a": "Yes. All seven stand inside the English Garden of the Reggia di Caserta, which is covered by the combined Royal Park and English Garden ticket, 9 euro plus a 1 euro online fee. A 3 euro park-only ticket exists but excludes the English Garden. Closed Tuesdays."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "Easily, once you are there. Six of the seven sit within about 200 metres of each other in the flat southern part of the English Garden that the royal gardeners called the Palco, and the yew is 500 metres further up. Getting to the garden is the long part: it is roughly 2.5 km from the palace gate along the main axis, or take the electric shuttle."
+    },
+    {
+      "q": "Which is the strangest?",
+      "a": "The sweet osmanthus. The national register credits it with 6.5 metres of trunk; the regional one explains that this is every stem added together, because the species grows as a bundle. In autumn it produces a scent of apricot from flowers a few millimetres wide."
+    }
+  ],
+  "hero_tree_id": "cas_001",
+  "oldest_tree_id": "cas_003",
+  "trees": [
+    {
+      "id": "cas_001",
+      "name": "The Cedar of the Palco",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "over 150 years",
+      "age_min": 150,
+      "age_max": 240,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09334,
+        "longitude": 14.33028,
+        "neighbourhood": "Giardino Inglese"
+      },
+      "story": "Seven and three quarter metres around the trunk, and sixteen metres tall. That ratio is the whole story of this cedar: it has spent its life spreading rather than climbing, and no thicker trunk appears anywhere in the national register's entries for Caserta. It stands in the flat southern end of the English Garden, the stretch the royal gardeners called the Palco, which holds more oversized trees per hectare than the rest of the park put together. Cedar of Lebanon reached western Europe in the seventeenth century as a curiosity out of the mountains of Lebanon and Syria, where the species is now down to scattered protected groves after three thousand years of cutting for temples, palaces and ships. In a Campanian garden fed by the Carolino aqueduct it grows faster and wider than it ever would at home, which is what you are looking at. The garden around it was laid out from 1786 by John Andrew Graefer, an English gardener sent over on the recommendation of the Royal Society, for a queen who wanted something less geometric than the rest of the park. Both registers put the tree at over 150 years without being more precise, so it belongs somewhere between the first planting and the Victorian expansion.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_213.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "MASAF sheet 18/B963/CE/15 (775 cm, 16 m) and Campania scheda 213 agree on the measurements. Both give the same coordinate, which MASAF also gives to three other trees, so it is a garden centroid rather than the trunk. Age is 'over 150 years' in the regional register only; MASAF has no age field.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cas_002",
+      "name": "The Plane That Grew Sideways",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "over 150 years",
+      "age_min": 150,
+      "age_max": 240,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09334,
+        "longitude": 14.33028,
+        "neighbourhood": "Giardino Inglese, il Palco"
+      },
+      "story": "This tree is too small to qualify and the register listed it anyway. Campania asks a plane for four metres of trunk before it counts as monumental; this one has two metres sixty and stands nine metres tall, and it got in on the strength of a crown twenty-five metres across. The regional record calls it among the most beautiful and most photographed plants in the English Garden, which is an unusual thing for a government form to say about anything. The branching is what makes it. Instead of one trunk driving upward, the limbs leave low and travel outward in long sinuous curves that cross and interlace, so the tree reads as a wide low room rather than a column, and visitors come to it on purpose. The old royal gardeners knew it as the Indian plane, which it is not: Platanus x acerifolia is a seventeenth-century hybrid of the Oriental and American planes, and its bark flakes off in fine plates to leave the grey, cream and brown patchwork the species is known for. Come in January or February. With the leaves off, the whole tangle of branches is visible, and that is the only time of year you can see what the shape is actually doing.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_216.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "MASAF sheet 21/B963/CE/15 (260 cm, 9 m) and Campania scheda 216. The regional card is titled 'l'acero della Reggia' (the maple) while its species field says Platanus acerifolia, an artefact of the epithet; MASAF confirms the plane. Coordinate is the shared garden centroid, not the trunk.",
+      "best_time": {
+        "months": [1, 2],
+        "label": "January and February, when the leaves are off and the interlaced branches show",
+        "kind": "bare silhouette"
+      },
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cas_003",
+      "name": "The Yew of the Bath of Venus",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "the register says 150 years, its own note implies 250 or more",
+      "age_min": 150,
+      "age_max": 300,
+      "location": {
+        "address": "Bagno di Venere, Giardino Inglese, Reggia di Caserta, 81100 Caserta",
+        "latitude": 41.09712,
+        "longitude": 14.33117,
+        "neighbourhood": "Giardino Inglese, Bagno di Venere"
+      },
+      "story": "This yew was already a grown tree when it was carried into the garden, which makes it older than the garden. The Campania register is explicit: the specimen was mature when it was set in place at the creation of the English Garden in the 1790s, and it calls the tree one of the patriarchs of the whole design. That is also why the age field on the same record, which says 150 years, cannot be right, and it is stated here as the disagreement it is. Nearly four metres round the trunk and twenty metres tall, it stands at the Bath of Venus, the grotto at the top of the garden where a Carrara marble Venus by Tommaso Solari, carved in 1762 and installed here around 1840, crouches on a rock above a pool. The Reggia's own description of the place records that the water surrounding the statue rises from the base of a monumental yew. That is this tree. Yew is the slowest-growing timber tree in Europe and among the longest-lived, which is exactly why an eighteenth-century designer would move a mature one rather than plant a sapling and wait. The boulders, the ferns and the ruined cryptoporticus behind it were all built to look accidental. The yew is the only part that is not.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_245.html",
+        "https://reggiadicaserta.cultura.gov.it/en/discover-the-complex/the-bath-of-venus/"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis, then to the far end of the English Garden. An electric shuttle runs the axis.",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "flagged",
+      "notes": "Flagged on age: the Campania card (scheda 245) gives 150 years in its age field but states in its own text that the tree was already adult when placed here at the garden's creation, which cannot both be true. MASAF sheet 34/B963/CE/15 gives 392 cm and 20 m at the same coordinate. The Reggia's own Bath of Venus page independently confirms a monumental yew at the spring, which is the strongest third-party corroboration on this page. The regional card also contains a stray sentence about the 'camelia madre' that belongs to a different record.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cas_004",
+      "name": "The Douglas Fir of the English Garden",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "the register says about 200 years, which is the outer edge of possible",
+      "age_min": 150,
+      "age_max": 200,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09323,
+        "longitude": 14.33044,
+        "neighbourhood": "Giardino Inglese, il Palco"
+      },
+      "story": "At forty metres, only one other tree in Caserta's register stands as tall, and this one's stated age does not quite work. The Campania register gives it about two hundred years, which would mean a planting around 1826. David Douglas did not send the first seed of the species back from the Pacific Northwest until 1827, and it spread through European gardens over the decades that followed, so two hundred is the outer edge of what is possible and is more likely a round number than a measurement. The tree itself is not in doubt. Five metres eighty around the trunk, forty metres of it, with the thick corky grey bark split into broad plates, which is armour: in its native range the species survives ground fire that kills its neighbours because that bark insulates the trunk. Douglas fir is the timber tree of the American west, the one that built ships, bridges and most of Oregon, and nineteenth-century Europe planted it hard for exactly that reason. Here it does no work at all. It stands in the middle of a landscape garden designed to look wild and engineered to the last stone, alongside a cedar, a cork oak and a plane from three other continents, all of them collected for a queen who wanted a botanical garden and got one.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_185.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "flagged",
+      "notes": "Flagged on age. MASAF sheet 12/B963/CE/15 and Campania scheda 185 agree on 580 cm and 40 m and on the coordinate to five decimals. The regional card's 200 anni would date the planting to about 1826, a year before the species reached Europe as seed; the same card says only that the species spread in Europe in the first half of the nineteenth century. The tie on height is with the Chilgoza pine, also 40 m.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cas_005",
+      "name": "The Sweet Osmanthus of the Winding Path",
+      "species": "Sweet Osmanthus (Osmanthus fragrans)",
+      "age_estimate": "about 150 years",
+      "age_min": 130,
+      "age_max": 200,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09336,
+        "longitude": 14.33057,
+        "neighbourhood": "Giardino Inglese"
+      },
+      "story": "The national register credits this tree with six and a half metres of trunk. The regional one adds the detail that makes sense of it: that figure is every stem added together, not one trunk, because Osmanthus fragrans grows as a bundle rather than a column. It is ten metres tall, which is large for the species, and the register calls it a rarity in this climate. The reason to walk to it is the smell. For a few weeks in autumn a sweet osmanthus in flower puts out one of the strongest scents any hardy tree makes, apricot and ripe peach, carried well past the tree itself, and it comes from flowers so small you have to hunt for them: clusters of cream stars a few millimetres across, tucked into the leaf axils. In China, where the species comes from, those flowers are picked for tea, for wine and for sweets, and the city of Guilin takes its name from them. Graefer and the botanists who followed him were buying novelty from the far side of the world for a queen who wanted her garden to beat the other royal gardens of Europe. This is one of the few things they planted that a visitor notices without being told what it is.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_269.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "A register trap caught: MASAF sheet 42/B963/CE/15 lists 650 cm as girth with no qualifier, while Campania scheda 269 writes '650 cm (insieme dei fusti)', the stems combined. The page says so rather than repeating 6.5 m as a trunk. Age is the regional register's 150 years, an estimate.",
+      "best_time": {
+        "months": [9, 10],
+        "label": "late September and October, when flowers you have to look for fill the path with apricot",
+        "kind": "flowers"
+      },
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cas_006",
+      "name": "The Camphor Tree of the Palco",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "about 200 years",
+      "age_min": 160,
+      "age_max": 220,
+      "location": {
+        "address": "Giardino Inglese, il Palco, Reggia di Caserta, 81100 Caserta",
+        "latitude": 41.09262,
+        "longitude": 14.33174,
+        "neighbourhood": "Giardino Inglese, il Palco"
+      },
+      "story": "Thirty-eight metres is a strange height for a camphor tree. In Japan and southern China, where the species is native and where it is planted at shrines, it usually spreads wide and low. A camphor drawn up to thirty-eight metres has been competing for light its whole life, and this one stands in the most crowded corner of the English Garden, the low meadow the gardeners called the Palco, on the south-eastern side towards Puccianiello. The register puts it at about two hundred years, which places it with the first generation of the garden. Camphor is a laurel, and the whole tree smells. Crush a leaf and you get the entire medicine cabinet, because the wood and foliage are the historic source of camphor itself, distilled for centuries for embalming, moth-proofing, liniment and, for a few decades, smokeless gunpowder. The chemistry is a defence, which is why camphor timber resists insects and why it was cut in enormous quantity in Taiwan and Japan until synthetic camphor arrived and the trade collapsed. This one was never cut. Its bark is fissured in long vertical lines, its new leaves flush bronze before turning glossy, and it is not alone: the Reggia has more camphors elsewhere in the park, including a row of eight nearer the palace.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_237.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "MASAF sheet 26/B963/CE/15 (370 cm, 38 m) and Campania scheda 237 agree on measurements and coordinate. The regional card places it precisely: 'il Palco o prateria bassa, a sud-est, lato Puccianiello'. Age is the regional register's 200 years, an estimate that in practice means first-generation planting.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cas_007",
+      "name": "The Cork Oak of the Palco",
+      "species": "Cork Oak (Quercus suber)",
+      "age_estimate": "over 150 years",
+      "age_min": 150,
+      "age_max": 240,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.0933,
+        "longitude": 14.33006,
+        "neighbourhood": "Giardino Inglese, il Palco"
+      },
+      "story": "This is the one tree on the walk you can put a hand on and be surprised. Cork oak grows an outer bark up to thirty centimetres thick, spongy and slightly warm to the touch, and it is the only European tree whose bark regenerates completely after being stripped, which is why Portugal and Spain harvest it on a nine-year cycle for wine corks and floor tiles. Four metres twenty around the trunk and twenty-eight metres tall, this one has never been harvested. A stripped cork oak carries a smooth ochre trunk for years afterwards, so the deep fissured layer here is the mark of a tree left alone since it was planted. The register adds something worth knowing: several smaller cork oaks stand scattered around it in no pattern at all, which is what happens when an old tree in an irrigated garden is left long enough to seed itself. The bark is also why the species survives fire across the Iberian dehesa. It insulates the trunk well enough that the tree comes back from a burn that kills everything around it, a useful thing to have evolved in a landscape people have been burning for grazing for four thousand years. In a garden of imported curiosities, this one is a Mediterranean native doing what it does at home.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_218.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "MASAF sheet 23/B963/CE/15 (420 cm, 28 m) and Campania scheda 218 agree on measurements and coordinate. The scattered smaller cork oaks are stated by the regional card, not inferred. Age is 'over 150 years' from the regional register only.",
+      "location_precision": "approximate"
+    }
+  ]
+}

@@ -36,3 +36,49 @@ Everything else (Cimitero Comunale, Piazza Vanvitelli, San Leucio, Briano, Casol
 1-3 km away and outside the park: different walk, not this cluster.
 
 ## Verified trees (appended as completed)
+
+PUBLISHED (7), all in the English Garden, all location_precision "approximate":
+1. cas_001 Cedar of Lebanon, 775 cm / 16 m, >150 yrs. MASAF 18/B963 + scheda 213.
+   Thickest trunk in the whole Caserta register.
+2. cas_002 London Plane "that grew sideways", 260 cm / 9 m, crown 25 m, >150 yrs.
+   MASAF 21/B963 + scheda 216. Below the 4 m species threshold and registered anyway; the
+   regional card calls it among the most beautiful and most photographed in the garden.
+   best_time: bare silhouette, Jan-Feb.
+3. cas_003 European Yew of the Bagno di Venere, 392 cm / 20 m. MASAF 34/B963 + scheda 245
+   + the Reggia's own Bath of Venus page (genuine third-party corroboration: "the waters
+   surrounding it spring from the base of a monumental Yew tree"). FLAGGED on age: the card's
+   age field says 150 but its text says the tree was already adult when placed here in the
+   1790s. Set as oldest_tree_id, with the contradiction stated on the page.
+4. cas_004 Douglas Fir, 580 cm / 40 m. MASAF 12/B963 + scheda 185. FLAGGED on age: 200 years
+   dates the planting to ~1826, and Douglas's first seed reached Europe in 1827.
+5. cas_005 Sweet Osmanthus, 650 cm / 10 m. MASAF 42/B963 + scheda 269. Register trap caught:
+   MASAF prints 650 cm as girth, the regional card qualifies it "insieme dei fusti", stems
+   combined. best_time: flowers, Sep-Oct.
+6. cas_006 Camphor, 370 cm / 38 m, ~200 yrs. MASAF 26/B963 + scheda 237. Located by the card
+   to "il Palco o prateria bassa, a sud-est, lato Puccianiello".
+7. cas_007 Cork Oak, 420 cm / 28 m, >150 yrs. MASAF 23/B963 + scheda 218. Card notes smaller
+   cork oaks self-seeded around it.
+
+NOT PUBLISHED: 39 leads + 5 blocked in data/leads/caserta.json.
+Headline calls:
+- Monterey Cypress (485 cm) pulled to leads. A monumental Cupressus macrocarpa in this same
+  English Garden fell in the December 2019 storms; the Reggia says four other specimens remain.
+  Neither register has a vitality field, so I cannot tell whether the registered tree is the
+  one that fell.
+- Cephalotaxus fortunei (450 cm / 25 m) pulled to leads: those figures are far outside the
+  species' normal range and look like a register error or a misidentification.
+- Phillyrea latifolia (420 cm) same doubt, and its regional card carries the holm-oak stand's
+  coordinate from 2 km away.
+- Zelkova pulled: MASAF says carpinifolia, the regional card says "serrata / carpinifolia".
+  Species must be settled for hard rule 9.
+- Maclura "sdraiata" pulled: the girth field literally reads "lying down". Alive? Unknown.
+- 5 blocked, all non-collectible groups: 8-camphor row, 25 holm oaks, Castelluccia magnolia
+  stand, 3 Italian cypresses, cemetery cypress group.
+
+PHOTOS: none. Commons has no identified portrait of any of these trees. The only near-misses
+are Bath of Venus shots (CC BY-SA 4.0), and both were viewed: the subject is the marble Venus
+and the grotto, not a tree, so they fail the Cadiz standard. Honest gap.
+
+ACCESS: paid. Royal Park + English Garden ticket 9 EUR (+1 EUR online); a 3 EUR park-only
+ticket exists but excludes the English Garden. Closed Tuesdays. The garden is ~2.5 km up the
+axis from the palace gate; a paid electric shuttle runs the length.

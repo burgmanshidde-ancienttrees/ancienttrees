@@ -224,3 +224,22 @@ Neither register is on the explore map yet: load_registers() in build_site.py
 still only understands the Japanese `trees` + `prefecture` shape, so both files
 are read by tree_index.py and cluster_register.py and ignored by the map. That
 is a wiring job, not a licence question.
+
+### Campania's regional cards: the second source MASAF cannot give you (found 2026-08-05)
+
+MASAF has no age field at all, which is the single biggest gap in the Italian
+register. Campania publishes a per-tree card at
+`agricoltura.regione.campania.it/foreste/monum/scheda_NNN.html` carrying an age
+estimate, its own coordinates and a short description. The Caserta pass scraped
+schede 180-299 and matched 40 of them to register entries, which supplied the
+second source for nearly every tree in one go. The same pattern is worth
+checking region by region: **MASAF gives you the tree, the regional register
+gives you the age and the story.**
+
+Two warnings from the same pass. The two registers disagree on coordinates for
+the same tree by up to 400 metres, and MASAF hands one identical coordinate to
+four different Caserta trees, so nothing there could honestly be marked
+`confirmed`. And where MASAF prints a girth for a multi-stemmed tree, the
+regional card sometimes reveals it as *insieme dei fusti*, every stem added
+together: publishing the MASAF number alone would have invented a 6.5 m trunk
+for the Reggia's sweet osmanthus.
