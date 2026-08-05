@@ -4,6 +4,23 @@ Measured 2026-07-21. The question changed halfway through, and so did the answer
 
 It started as "can open data get us to every city in the world", which assumed publishing hundreds of trees per city. Hidde rejected that the same day: ten per city is what makes the passport work, and scarcity is the mechanism rather than a limitation. See BACKLOG.md. So the surviving question is narrower and more useful: **can open data cut the dull half of a city run, finding candidates and fixing coordinates, so runs spend their time on stories?**
 
+## Spain: the regional registers, scouted 2026-08-04
+
+Spain has no national register; every autonomous community keeps its own, and they differ in quality, licence and whether the file even downloads. Scouted for the cities we publish and the ones we might.
+
+**The fastest way to find them, worth reusing for any country:** the datos.gob.es API returns every regional dataset in one call with licence and download URL attached, `https://datos.gob.es/apidata/catalog/dataset/title/árboles singulares` with the accents URL-encoded. Three registers below surfaced there and in no ordinary web search.
+
+**USABLE, licence verified against the holder's own metadata:**
+- **Navarra**, 47 named trees, per-tree coordinates, and a per-tree official PDF fact sheet, which is a second-source generator in itself. Shapefile at `https://idena.navarra.es/descargas/BIODIV_Sym_MonumNat.zip`. The ISO metadata inside the download states CC BY 4.0 and the required wording: "Información geográfica propiedad del Gobierno de Navarra." A companion layer covers 8 trees in the Pamplona river park, a walkable cluster on its own.
+- **Aragon**, 45 singular trees and 13 groves region-wide, CC BY 4.0 per `opendata.aragon.es`, which states commercial use explicitly. Served through IDEAragon; the GeoNetwork record was returning a server error, so the direct file URL still needs resolving through their download portal. Note the count: 45 for the whole region means one or two inside Zaragoza.
+- **Illes Balears**, 78 trees, CC BY per the holder's CKAN metadata, GeoJSON and CSV both downloadable. **But the export carries a single attribute, the year catalogued: no name, no species, no municipality.** As shipped it is 78 dots. The attributes presumably live on the regional WFS. Not usable until that is resolved.
+
+**THE TRAP, and it is a good one.** Castilla y Leon publishes two datasets on the same portal, same subject, different licences. "Arboles singulares en espacios naturales" is CC BY 4.0 and is the one to use, though every download URL was 404 during the scout and the page itself said the service was temporarily unavailable. "Mapa de Arboles Singulares de Castilla y Leon" carries **IGCYL-NC**, whose terms authorise only non-commercial use, which disqualifies it outright under our rules. Anyone finding the second one first would import a licence we cannot use.
+
+**Needs a human, ranked by what they would unlock:** Comunitat Valenciana has a Catalogo de Arboles Monumentales y Singulares covering Valencia and Alicante, licence unchecked, and is the obvious next scout. Las Palmas de Gran Canaria has a municipal catalogue of 326 specimens, the largest single count found anywhere in this scan and city-scale. Cantabria has 214 catalogued trees browsable per municipality with no open distribution. Asturias runs an ArcGIS Hub, which would give GeoJSON out of the box, but its dataset record came back empty. Murcia, Extremadura and La Rioja all have real catalogues behind PDFs or a Cloudflare challenge.
+
+**Not worth the effort:** Castilla-La Mancha declares about ten singular trees in the whole region, none near a city we would publish.
+
 ## Japan: the Environment Ministry giant-tree database (scouted 2026-08-04, VERDICT: usable with one real caveat)
 
 `https://kyoju.biodic.go.jp/` — 巨樹・巨木林データベース, the national record of every tree in Japan over 300 cm girth at breast height, with measured girth, height, species, and location. It is the closest thing Japan has to Portugal's ICNF, and it is the spine of any cheap layer-two coverage for Japanese cities.
