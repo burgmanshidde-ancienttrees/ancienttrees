@@ -1,0 +1,2053 @@
+{
+ "source": "Agency for Cultural Affairs (文化庁), National Designated Cultural Properties database: Natural Monuments (天然記念物 and 特別天然記念物)",
+ "endpoint": "https://kunishitei.bunka.go.jp/bsys/ (CSV export via POST to /utile/csv-list)",
+ "licence": "Free reuse with attribution, MEXT website terms (政府標準利用規約 family)",
+ "licence_proof": "kunishitei.bunka.go.jp/top/policy: 文字情報 出典を記載の上、自由にご利用ください。Images are explicitly excluded: 第三者が権利を有しているものがあるため、作品毎に個別の許諾が必要になります。",
+ "attribution": "文化庁 国指定文化財等データベース",
+ "country": "Japan",
+ "fetched": "2026-08-04",
+ "scope": "The tree subset of Japan's national Natural Monument designations, filtered from 967 天然記念物 plus 75 特別天然記念物 by name, because the database carries no field separating trees from geology, animals and plant communities.",
+ "caveat": "Three things to know. The filter is a name match and therefore imperfect: it over-catches designations that mention a tree species inside a larger site and under-catches trees named only for their location, so treat every entry as a candidate rather than a confirmed individual tree. There is no species, age, girth or height field anywhere in this database, so those still need a second source per tree. And the images on that site are explicitly excluded from the licence and must never be used.",
+ "entries": [
+  {
+   "name": "松前小島",
+   "designation": "天然記念物",
+   "designated": "19721212",
+   "prefecture": "北海道",
+   "address": "松前郡松前町",
+   "city": "松前郡松前町",
+   "latitude": 41.3596201,
+   "longitude": 139.80543713
+  },
+  {
+   "name": "北金ヶ沢のイチョウ",
+   "designation": "天然記念物",
+   "designated": "20040930",
+   "prefecture": "青森県",
+   "address": "西津軽郡深浦町",
+   "city": "西津軽郡深浦町",
+   "latitude": 40.74906318,
+   "longitude": 140.08939852
+  },
+  {
+   "name": "法量のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19261020",
+   "prefecture": "青森県",
+   "address": "十和田市法量",
+   "city": "十和田市",
+   "latitude": 40.587055,
+   "longitude": 141.017929
+  },
+  {
+   "name": "華蔵寺の宝珠マツ",
+   "designation": "天然記念物",
+   "designated": "19351224",
+   "prefecture": "岩手県",
+   "address": "陸前高田市小友町",
+   "city": "陸前高田市",
+   "latitude": 38.990593,
+   "longitude": 141.706909
+  },
+  {
+   "name": "シダレカツラ",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "岩手県",
+   "address": "盛岡市肴町・門・大ヶ生",
+   "city": "盛岡市",
+   "latitude": 39.698135,
+   "longitude": 141.155502
+  },
+  {
+   "name": "実相寺のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19381214",
+   "prefecture": "岩手県",
+   "address": "二戸郡一戸町",
+   "city": "二戸郡一戸町",
+   "latitude": 40.221268,
+   "longitude": 141.300262
+  },
+  {
+   "name": "長泉寺の大イチョウ",
+   "designation": "天然記念物",
+   "designated": "19310220",
+   "prefecture": "岩手県",
+   "address": "久慈市門前",
+   "city": "久慈市",
+   "latitude": 40.200783,
+   "longitude": 141.766968
+  },
+  {
+   "name": "藤島のフジ",
+   "designation": "天然記念物",
+   "designated": "19381214",
+   "prefecture": "岩手県",
+   "address": "二戸郡一戸町",
+   "city": "二戸郡一戸町",
+   "latitude": 40.166382,
+   "longitude": 141.304749
+  },
+  {
+   "name": "龍谷寺のモリオカシダレ",
+   "designation": "天然記念物",
+   "designated": "19360903",
+   "prefecture": "岩手県",
+   "address": "盛岡市名須川町",
+   "city": "盛岡市",
+   "latitude": 39.710468,
+   "longitude": 141.15451
+  },
+  {
+   "name": "雨乞のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19681108",
+   "prefecture": "宮城県",
+   "address": "柴田郡柴田町",
+   "city": "柴田郡柴田町",
+   "latitude": 38.115761,
+   "longitude": 140.795959
+  },
+  {
+   "name": "称名寺のシイノキ",
+   "designation": "天然記念物",
+   "designated": "19430824",
+   "prefecture": "宮城県",
+   "address": "亘理郡亘理町",
+   "city": "亘理郡亘理町",
+   "latitude": 38.027733,
+   "longitude": 140.851318
+  },
+  {
+   "name": "滝前不動のフジ",
+   "designation": "天然記念物",
+   "designated": "19760616",
+   "prefecture": "宮城県",
+   "address": "柴田群川崎町",
+   "city": "柴田群川崎町",
+   "latitude": 38.18391,
+   "longitude": 140.727554
+  },
+  {
+   "name": "朝鮮ウメ",
+   "designation": "天然記念物",
+   "designated": "19420919",
+   "prefecture": "宮城県",
+   "address": "仙台市若林区古城宮城刑務所構内",
+   "city": "仙台市",
+   "latitude": 38.235786,
+   "longitude": 140.903214
+  },
+  {
+   "name": "苦竹のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19261020",
+   "prefecture": "宮城県",
+   "address": "仙台市宮城野区銀杏町",
+   "city": "仙台市",
+   "latitude": 38.262924,
+   "longitude": 140.907364
+  },
+  {
+   "name": "赤津のカツラ",
+   "designation": "天然記念物",
+   "designated": "19410127",
+   "prefecture": "福島県",
+   "address": "郡山市湖南町",
+   "city": "郡山市",
+   "latitude": 37.34236111,
+   "longitude": 140.05822222
+  },
+  {
+   "name": "木幡の大スギ",
+   "designation": "天然記念物",
+   "designated": "19410327",
+   "prefecture": "福島県",
+   "address": "二本松市",
+   "city": "二本松市",
+   "latitude": 37.62294444,
+   "longitude": 140.57619444
+  },
+  {
+   "name": "沢尻の大ヒノキ（サワラ）",
+   "designation": "天然記念物",
+   "designated": "19740810",
+   "prefecture": "福島県",
+   "address": "いわき市川前町",
+   "city": "いわき市",
+   "latitude": 37.26109425,
+   "longitude": 140.69111296
+  },
+  {
+   "name": "杉沢の大スギ",
+   "designation": "天然記念物",
+   "designated": "19430824",
+   "prefecture": "福島県",
+   "address": "二本松市",
+   "city": "二本松市",
+   "latitude": 37.51069444,
+   "longitude": 140.57916667
+  },
+  {
+   "name": "諏訪神社の翁スギ媼スギ",
+   "designation": "天然記念物",
+   "designated": "19371221",
+   "prefecture": "福島県",
+   "address": "田村郡小野町",
+   "city": "田村",
+   "latitude": 37.25552778,
+   "longitude": 140.66063889
+  },
+  {
+   "name": "高瀬の大木（ケヤキ）",
+   "designation": "天然記念物",
+   "designated": "19410127",
+   "prefecture": "福島県",
+   "address": "会津若松市神指町大字高瀬",
+   "city": "会津若松市",
+   "latitude": 37.51364769,
+   "longitude": 139.89580996
+  },
+  {
+   "name": "中釜戸のシダレモミジ",
+   "designation": "天然記念物",
+   "designated": "19370615",
+   "prefecture": "福島県",
+   "address": "いわき市渡辺町",
+   "city": "いわき市",
+   "latitude": 36.963444,
+   "longitude": 140.807388
+  },
+  {
+   "name": "熊野神社の大スギ",
+   "designation": "天然記念物",
+   "designated": "19270408",
+   "prefecture": "山形県",
+   "address": "鶴岡市水沢",
+   "city": "鶴岡市",
+   "latitude": 38.692272,
+   "longitude": 139.746033
+  },
+  {
+   "name": "羽黒山の爺スギ",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "山形県",
+   "address": "鶴岡市",
+   "city": "鶴岡市",
+   "latitude": 38.704308,
+   "longitude": 139.969467
+  },
+  {
+   "name": "文下のケヤキ",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "山形県",
+   "address": "鶴岡市文下",
+   "city": "鶴岡市",
+   "latitude": 38.765614,
+   "longitude": 139.851456
+  },
+  {
+   "name": "山五十川の玉スギ",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "山形県",
+   "address": "鶴岡市",
+   "city": "鶴岡市",
+   "latitude": 38.64518,
+   "longitude": 139.657028
+  },
+  {
+   "name": "早田のオハツキイチョウ",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "山形県",
+   "address": "鶴岡市",
+   "city": "鶴岡市",
+   "latitude": 38.57037,
+   "longitude": 139.567978
+  },
+  {
+   "name": "逆スギ",
+   "designation": "天然記念物",
+   "designated": "19370417",
+   "prefecture": "栃木県",
+   "address": "那須塩原市",
+   "city": "那須塩原市",
+   "latitude": 36.97677778,
+   "longitude": 139.80755556
+  },
+  {
+   "name": "三波川（サクラ）",
+   "designation": "天然記念物",
+   "designated": "19370417",
+   "prefecture": "群馬県",
+   "address": "藤岡市",
+   "city": "藤岡市",
+   "latitude": 36.1616836,
+   "longitude": 139.0213752
+  },
+  {
+   "name": "原町の大ケヤキ",
+   "designation": "天然記念物",
+   "designated": "19330413",
+   "prefecture": "群馬県",
+   "address": "吾妻郡東吾妻町",
+   "city": "吾妻郡東吾妻町",
+   "latitude": 36.57480556,
+   "longitude": 138.832
+  },
+  {
+   "name": "榛名神社の矢立スギ",
+   "designation": "天然記念物",
+   "designated": "19330413",
+   "prefecture": "群馬県",
+   "address": "高崎市",
+   "city": "高崎市",
+   "latitude": 36.45825,
+   "longitude": 138.85205556
+  },
+  {
+   "name": "横室の大カヤ",
+   "designation": "天然記念物",
+   "designated": "19330413",
+   "prefecture": "群馬県",
+   "address": "前橋市",
+   "city": "前橋市",
+   "latitude": 36.44147222,
+   "longitude": 139.05544445
+  },
+  {
+   "name": "与野の大カヤ",
+   "designation": "天然記念物",
+   "designated": "19320725",
+   "prefecture": "埼玉県",
+   "address": "さいたま市中央区鈴谷",
+   "city": "さいたま市",
+   "latitude": 35.87191667,
+   "longitude": 139.62683333
+  },
+  {
+   "name": "安良川の爺スギ",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "茨城県",
+   "address": "高萩市安良川",
+   "city": "高萩市",
+   "latitude": 36.715542,
+   "longitude": 140.70282
+  },
+  {
+   "name": "いぶき山イブキ樹叢",
+   "designation": "天然記念物",
+   "designated": "19221012",
+   "prefecture": "茨城県",
+   "address": "日立市十王町",
+   "city": "日立市",
+   "latitude": 36.69255826,
+   "longitude": 140.71567077
+  },
+  {
+   "name": "大戸のサクラ",
+   "designation": "天然記念物",
+   "designated": "19320723",
+   "prefecture": "茨城県",
+   "address": "東茨城郡茨城町",
+   "city": "東茨城郡茨城町",
+   "latitude": 36.31941667,
+   "longitude": 140.42083333
+  },
+  {
+   "name": "桜川のサクラ",
+   "designation": "天然記念物",
+   "designated": "19740716",
+   "prefecture": "茨城県",
+   "address": "桜川市磯部",
+   "city": "桜川市",
+   "latitude": 36.3653569,
+   "longitude": 140.13725272
+  },
+  {
+   "name": "白旗山八幡宮のオハツキイチョウ",
+   "designation": "天然記念物",
+   "designated": "19290402",
+   "prefecture": "茨城県",
+   "address": "水戸市八幡町",
+   "city": "水戸市",
+   "latitude": 36.387798,
+   "longitude": 140.459763
+  },
+  {
+   "name": "清澄の大スギ",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "千葉県",
+   "address": "鴨川市",
+   "city": "鴨川市",
+   "latitude": 35.16004875,
+   "longitude": 140.15155859
+  },
+  {
+   "name": "神崎の大クス",
+   "designation": "天然記念物",
+   "designated": "19261020",
+   "prefecture": "千葉県",
+   "address": "香取郡神崎町",
+   "city": "香取郡神崎町",
+   "latitude": 35.90577778,
+   "longitude": 140.40058333
+  },
+  {
+   "name": "千本イチョウ",
+   "designation": "天然記念物",
+   "designated": "19310220",
+   "prefecture": "千葉県",
+   "address": "市川市八幡",
+   "city": "市川市",
+   "latitude": 35.72413889,
+   "longitude": 139.93152778
+  },
+  {
+   "name": "府馬の大クス",
+   "designation": "天然記念物",
+   "designated": "19261020",
+   "prefecture": "千葉県",
+   "address": "香取市",
+   "city": "香取市",
+   "latitude": 35.80477778,
+   "longitude": 140.60966667
+  },
+  {
+   "name": "幸神神社のシダレアカシデ",
+   "designation": "天然記念物",
+   "designated": "19420721",
+   "prefecture": "東京都",
+   "address": "西多摩郡日の出町",
+   "city": "西多摩郡日の出町",
+   "latitude": 35.74427,
+   "longitude": 139.228073
+  },
+  {
+   "name": "シイノキ山のシイノキ群叢",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "東京都",
+   "address": "大島町泉津",
+   "city": "大島町",
+   "latitude": 34.76402291,
+   "longitude": 139.41401949
+  },
+  {
+   "name": "善福寺のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19261020",
+   "prefecture": "東京都",
+   "address": "港区元麻布一丁目",
+   "city": "港区",
+   "latitude": 35.65325,
+   "longitude": 139.73325
+  },
+  {
+   "name": "善養寺影向のマツ",
+   "designation": "天然記念物",
+   "designated": "20110921",
+   "prefecture": "東京都",
+   "address": "東京都江戸川区",
+   "city": "東京都江戸川区",
+   "latitude": 35.72752778,
+   "longitude": 139.89356481
+  },
+  {
+   "name": "練馬白山神社の大ケヤキ",
+   "designation": "天然記念物",
+   "designated": "19400712",
+   "prefecture": "東京都",
+   "address": "練馬区練馬四丁目",
+   "city": "練馬区",
+   "latitude": 35.740719,
+   "longitude": 139.650406
+  },
+  {
+   "name": "御岳の神代ケヤキ",
+   "designation": "天然記念物",
+   "designated": "19280218",
+   "prefecture": "東京都",
+   "address": "青梅市御岳山",
+   "city": "青梅市",
+   "latitude": 35.78425,
+   "longitude": 139.15205556
+  },
+  {
+   "name": "城願寺のビャクシン",
+   "designation": "天然記念物",
+   "designated": "19390907",
+   "prefecture": "神奈川県",
+   "address": "足柄下郡湯河原町",
+   "city": "足柄下郡湯河原町",
+   "latitude": 35.14780556,
+   "longitude": 139.10136111
+  },
+  {
+   "name": "箒スギ",
+   "designation": "天然記念物",
+   "designated": "19340326",
+   "prefecture": "神奈川県",
+   "address": "足柄上郡山北町",
+   "city": "足柄上郡山北町",
+   "latitude": 35.45836111,
+   "longitude": 139.05938889
+  },
+  {
+   "name": "鵜川神社の大ケヤキ",
+   "designation": "天然記念物",
+   "designated": "19300228",
+   "prefecture": "新潟県",
+   "address": "柏崎市新道",
+   "city": "柏崎市",
+   "latitude": 37.32584,
+   "longitude": 138.565506
+  },
+  {
+   "name": "将軍スギ",
+   "designation": "天然記念物",
+   "designated": "19270408",
+   "prefecture": "新潟県",
+   "address": "東蒲原郡阿賀町岩谷",
+   "city": "東蒲原郡阿賀町",
+   "latitude": 37.72069445,
+   "longitude": 139.36094445
+  },
+  {
+   "name": "天神社の大スギ",
+   "designation": "天然記念物",
+   "designated": "19411113",
+   "prefecture": "新潟県",
+   "address": "妙高市",
+   "city": "妙高市",
+   "latitude": 36.862034,
+   "longitude": 138.201797
+  },
+  {
+   "name": "梅護寺の珠数掛ザクラ",
+   "designation": "天然記念物",
+   "designated": "19270408",
+   "prefecture": "新潟県",
+   "address": "阿賀野市小島",
+   "city": "阿賀野市",
+   "latitude": 37.80611111,
+   "longitude": 139.188
+  },
+  {
+   "name": "虫川の大スギ",
+   "designation": "天然記念物",
+   "designated": "19370417",
+   "prefecture": "新潟県",
+   "address": "上越市浦川原",
+   "city": "上越市",
+   "latitude": 37.153728,
+   "longitude": 138.447754
+  },
+  {
+   "name": "上日寺のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19261020",
+   "prefecture": "富山県",
+   "address": "氷見市朝日本町",
+   "city": "氷見市",
+   "latitude": 36.85286111,
+   "longitude": 136.98305556
+  },
+  {
+   "name": "杉沢の沢スギ",
+   "designation": "天然記念物",
+   "designated": "19730804",
+   "prefecture": "富山県",
+   "address": "下新川郡入善町吉原",
+   "city": "下新川郡入善町",
+   "latitude": 36.94255403,
+   "longitude": 137.47219008
+  },
+  {
+   "name": "脇谷のトチノキ",
+   "designation": "天然記念物",
+   "designated": "19261020",
+   "prefecture": "富山県",
+   "address": "南砺市",
+   "city": "南砺市",
+   "latitude": 36.53438889,
+   "longitude": 137.02541667
+  },
+  {
+   "name": "太田の大トチノキ",
+   "designation": "天然記念物",
+   "designated": "19930406",
+   "prefecture": "石川県",
+   "address": "白山市白峰",
+   "city": "白山市",
+   "latitude": 36.150719,
+   "longitude": 136.603836
+  },
+  {
+   "name": "御仏供スギ",
+   "designation": "天然記念物",
+   "designated": "19380808",
+   "prefecture": "石川県",
+   "address": "白山市吉野",
+   "city": "白山市",
+   "latitude": 36.362511,
+   "longitude": 136.620453
+  },
+  {
+   "name": "栢野の大スギ",
+   "designation": "天然記念物",
+   "designated": "19281130",
+   "prefecture": "石川県",
+   "address": "加賀市",
+   "city": "加賀市",
+   "latitude": 36.215797,
+   "longitude": 136.352051
+  },
+  {
+   "name": "松月寺のサクラ",
+   "designation": "天然記念物",
+   "designated": "19430824",
+   "prefecture": "石川県",
+   "address": "金沢市寺町",
+   "city": "金沢市",
+   "latitude": 36.55461111,
+   "longitude": 136.65144445
+  },
+  {
+   "name": "堂形のシイノキ",
+   "designation": "天然記念物",
+   "designated": "19430824",
+   "prefecture": "石川県",
+   "address": "金沢市広坂",
+   "city": "金沢市",
+   "latitude": 36.56220109,
+   "longitude": 136.6576554
+  },
+  {
+   "name": "八幡神社の大スギ",
+   "designation": "天然記念物",
+   "designated": "19430824",
+   "prefecture": "石川県",
+   "address": "加賀市",
+   "city": "加賀市",
+   "latitude": 36.219704,
+   "longitude": 136.354843
+  },
+  {
+   "name": "杉森神社のオハツキイチョウ",
+   "designation": "天然記念物",
+   "designated": "19350827",
+   "prefecture": "福井県",
+   "address": "大飯郡高浜町",
+   "city": "大飯郡高浜町",
+   "latitude": 35.483109,
+   "longitude": 135.474701
+  },
+  {
+   "name": "専福寺の大ケヤキ",
+   "designation": "天然記念物",
+   "designated": "19350607",
+   "prefecture": "福井県",
+   "address": "大野市友兼",
+   "city": "大野市",
+   "latitude": 35.96075,
+   "longitude": 136.53080556
+  },
+  {
+   "name": "常神のソテツ",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "福井県",
+   "address": "三方上中郡若狭町",
+   "city": "三方上中郡若狭町",
+   "latitude": 35.63736111,
+   "longitude": 135.82033333
+  },
+  {
+   "name": "萬徳寺のヤマモミジ",
+   "designation": "天然記念物",
+   "designated": "19310603",
+   "prefecture": "福井県",
+   "address": "小浜市金屋",
+   "city": "小浜市",
+   "latitude": 35.468945,
+   "longitude": 135.785095
+  },
+  {
+   "name": "上野原の大ケヤキ",
+   "designation": "天然記念物",
+   "designated": "19441113",
+   "prefecture": "山梨県",
+   "address": "上野原市",
+   "city": "上野原市",
+   "latitude": 35.62975,
+   "longitude": 139.11277778
+  },
+  {
+   "name": "美森の大ヤマツツジ",
+   "designation": "天然記念物",
+   "designated": "19350607",
+   "prefecture": "山梨県",
+   "address": "北杜市",
+   "city": "北杜市",
+   "latitude": 35.93511111,
+   "longitude": 138.41955556
+  },
+  {
+   "name": "古長禅寺のビャクシン",
+   "designation": "天然記念物",
+   "designated": "19531114",
+   "prefecture": "山梨県",
+   "address": "南アルプス市",
+   "city": "南アルプス市",
+   "latitude": 35.59583333,
+   "longitude": 138.47022222
+  },
+  {
+   "name": "精進の大スギ",
+   "designation": "天然記念物",
+   "designated": "19280131",
+   "prefecture": "山梨県",
+   "address": "甲府市",
+   "city": "甲府市",
+   "latitude": 35.49633333,
+   "longitude": 138.60905556
+  },
+  {
+   "name": "上沢寺のオハツキイチョウ",
+   "designation": "天然記念物",
+   "designated": "19290402",
+   "prefecture": "山梨県",
+   "address": "南巨摩郡身延町",
+   "city": "南巨摩郡身延町",
+   "latitude": 35.41963889,
+   "longitude": 138.4445
+  },
+  {
+   "name": "根古屋神社の大ケヤキ",
+   "designation": "天然記念物",
+   "designated": "19580515",
+   "prefecture": "山梨県",
+   "address": "北杜市",
+   "city": "北杜市",
+   "latitude": 35.82019444,
+   "longitude": 138.46391667
+  },
+  {
+   "name": "本国寺のオハツキイチョウ",
+   "designation": "天然記念物",
+   "designated": "19290402",
+   "prefecture": "山梨県",
+   "address": "南巨摩郡身延町",
+   "city": "南巨摩郡身延町",
+   "latitude": 35.41380556,
+   "longitude": 138.44111111
+  },
+  {
+   "name": "三恵の大ケヤキ",
+   "designation": "天然記念物",
+   "designated": "19281130",
+   "prefecture": "山梨県",
+   "address": "南アルプス市寺部",
+   "city": "南アルプス市",
+   "latitude": 35.62180556,
+   "longitude": 138.49408333
+  },
+  {
+   "name": "八木沢のオハツキイチョウ",
+   "designation": "天然記念物",
+   "designated": "19400712",
+   "prefecture": "山梨県",
+   "address": "南巨摩郡身延町",
+   "city": "南巨摩郡身延町",
+   "latitude": 35.41108333,
+   "longitude": 138.45852778
+  },
+  {
+   "name": "山中のハリモミ純林",
+   "designation": "天然記念物",
+   "designated": "19630118",
+   "prefecture": "山梨県",
+   "address": "南都留郡山中湖村",
+   "city": "南都留郡山中湖村",
+   "latitude": 35.44840443,
+   "longitude": 138.84904363
+  },
+  {
+   "name": "山ノ神のフジ",
+   "designation": "天然記念物",
+   "designated": "19280131",
+   "prefecture": "山梨県",
+   "address": "富士吉田市上暮地",
+   "city": "富士吉田市",
+   "latitude": 35.516499,
+   "longitude": 138.830536
+  },
+  {
+   "name": "素桜神社の神代ザクラ",
+   "designation": "天然記念物",
+   "designated": "19351224",
+   "prefecture": "長野県",
+   "address": "長野市泉平",
+   "city": "長野市",
+   "latitude": 36.68038889,
+   "longitude": 138.16194445
+  },
+  {
+   "name": "月瀬の大スギ",
+   "designation": "天然記念物",
+   "designated": "19441113",
+   "prefecture": "長野県",
+   "address": "下伊那郡根羽村",
+   "city": "下伊那郡根羽村",
+   "latitude": 35.25779,
+   "longitude": 137.566986
+  },
+  {
+   "name": "東内のシダレエノキ",
+   "designation": "天然記念物",
+   "designated": "19200717",
+   "prefecture": "長野県",
+   "address": "上田市",
+   "city": "上田市",
+   "latitude": 36.315166,
+   "longitude": 138.244736
+  },
+  {
+   "name": "大山の大スギ",
+   "designation": "天然記念物",
+   "designated": "19430824",
+   "prefecture": "岐阜県",
+   "address": "加茂郡白川町",
+   "city": "加茂郡白川町",
+   "latitude": 35.619576,
+   "longitude": 137.227783
+  },
+  {
+   "name": "加子母のスギ",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "岐阜県",
+   "address": "中津川市加子母",
+   "city": "中津川市",
+   "latitude": 35.752209,
+   "longitude": 137.334595
+  },
+  {
+   "name": "神淵神社の大スギ",
+   "designation": "天然記念物",
+   "designated": "19300228",
+   "prefecture": "岐阜県",
+   "address": "加茂郡七宗町",
+   "city": "加茂郡七宗町",
+   "latitude": 35.591969,
+   "longitude": 137.107803
+  },
+  {
+   "name": "霞間ヶ渓（サクラ）",
+   "designation": "天然記念物",
+   "designated": "19280217",
+   "prefecture": "岐阜県",
+   "address": "揖斐郡池田町",
+   "city": "揖斐郡池田町",
+   "latitude": 35.43182188,
+   "longitude": 136.54930232
+  },
+  {
+   "name": "神ノ御杖スギ",
+   "designation": "天然記念物",
+   "designated": "19340501",
+   "prefecture": "岐阜県",
+   "address": "郡上市美並町",
+   "city": "郡上市",
+   "latitude": 35.679066,
+   "longitude": 136.950867
+  },
+  {
+   "name": "臥竜のサクラ",
+   "designation": "天然記念物",
+   "designated": "19730526",
+   "prefecture": "岐阜県",
+   "address": "高山市一之宮町",
+   "city": "高山市",
+   "latitude": 36.088936,
+   "longitude": 137.247971
+  },
+  {
+   "name": "久津八幡神社の夫婦スギ",
+   "designation": "天然記念物",
+   "designated": "19281130",
+   "prefecture": "岐阜県",
+   "address": "下呂市萩原町",
+   "city": "下呂市",
+   "latitude": 35.887554,
+   "longitude": 137.212372
+  },
+  {
+   "name": "治郎兵衛のイチイ",
+   "designation": "天然記念物",
+   "designated": "19940115",
+   "prefecture": "岐阜県",
+   "address": "高山市荘川町",
+   "city": "高山市",
+   "latitude": 36.014454,
+   "longitude": 136.981689
+  },
+  {
+   "name": "千光寺の五本スギ",
+   "designation": "天然記念物",
+   "designated": "19290402",
+   "prefecture": "岐阜県",
+   "address": "高山市丹生川町",
+   "city": "高山市",
+   "latitude": 36.18625,
+   "longitude": 137.29097222
+  },
+  {
+   "name": "禅昌寺の大スギ",
+   "designation": "天然記念物",
+   "designated": "19290402",
+   "prefecture": "岐阜県",
+   "address": "下呂市萩原町",
+   "city": "下呂市",
+   "latitude": 35.845947,
+   "longitude": 137.22937
+  },
+  {
+   "name": "飛騨国分寺の大イチョウ",
+   "designation": "天然記念物",
+   "designated": "19530331",
+   "prefecture": "岐阜県",
+   "address": "高山市総和町",
+   "city": "高山市",
+   "latitude": 36.14339055,
+   "longitude": 137.25374537
+  },
+  {
+   "name": "阿豆佐和気神社の大クス",
+   "designation": "天然記念物",
+   "designated": "19330228",
+   "prefecture": "静岡県",
+   "address": "熱海市西山町",
+   "city": "熱海市",
+   "latitude": 35.10066876,
+   "longitude": 139.06759189
+  },
+  {
+   "name": "北浜の大カヤノキ",
+   "designation": "天然記念物",
+   "designated": "19540320",
+   "prefecture": "静岡県",
+   "address": "浜松市本沢合",
+   "city": "浜松市",
+   "latitude": 34.81291667,
+   "longitude": 137.80047222
+  },
+  {
+   "name": "京丸のアカヤシオおよびシロヤシオ群生地",
+   "designation": "天然記念物",
+   "designated": "19741126",
+   "prefecture": "静岡県",
+   "address": "浜松市",
+   "city": "浜松市",
+   "latitude": 35.09272214,
+   "longitude": 138.00586374
+  },
+  {
+   "name": "葛見神社の大クス",
+   "designation": "天然記念物",
+   "designated": "19330228",
+   "prefecture": "静岡県",
+   "address": "伊東市馬場町",
+   "city": "伊東市",
+   "latitude": 34.96413889,
+   "longitude": 139.09905556
+  },
+  {
+   "name": "新町の大ソテツ",
+   "designation": "天然記念物",
+   "designated": "19360903",
+   "prefecture": "静岡県",
+   "address": "賀茂郡河津町",
+   "city": "賀茂郡河津町",
+   "latitude": 34.75791667,
+   "longitude": 138.98369444
+  },
+  {
+   "name": "杉桙別命神社の大クス",
+   "designation": "天然記念物",
+   "designated": "19361216",
+   "prefecture": "静岡県",
+   "address": "賀茂郡河津町",
+   "city": "賀茂郡河津町",
+   "latitude": 34.75441667,
+   "longitude": 138.98897222
+  },
+  {
+   "name": "智満寺の十本スギ",
+   "designation": "天然記念物",
+   "designated": "19620629",
+   "prefecture": "静岡県",
+   "address": "島田市千葉",
+   "city": "島田市",
+   "latitude": 34.89322222,
+   "longitude": 138.15905556
+  },
+  {
+   "name": "能満寺のソテツ",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "静岡県",
+   "address": "榛原郡吉田町",
+   "city": "榛原郡吉田町",
+   "latitude": 34.77880556,
+   "longitude": 138.24827778
+  },
+  {
+   "name": "熊野の長フジ",
+   "designation": "天然記念物",
+   "designated": "19320725",
+   "prefecture": "静岡県",
+   "address": "磐田市",
+   "city": "磐田市",
+   "latitude": 34.73777778,
+   "longitude": 137.81519444
+  },
+  {
+   "name": "龍華寺のソテツ",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "静岡県",
+   "address": "清水市村松",
+   "city": "清水市",
+   "latitude": 34.99022222,
+   "longitude": 138.48477778
+  },
+  {
+   "name": "木曽川堤（サクラ）",
+   "designation": "天然記念物",
+   "designated": "19270811",
+   "prefecture": "愛知県",
+   "address": "江南市一宮市",
+   "city": "江南市",
+   "latitude": 35.35339338,
+   "longitude": 136.84006687
+  },
+  {
+   "name": "神明社の大シイ",
+   "designation": "天然記念物",
+   "designated": "19320419",
+   "prefecture": "愛知県",
+   "address": "西尾市上永良町",
+   "city": "西尾市",
+   "latitude": 34.87497222,
+   "longitude": 137.11388889
+  },
+  {
+   "name": "杉本の貞観スギ",
+   "designation": "天然記念物",
+   "designated": "19440626",
+   "prefecture": "愛知県",
+   "address": "豊田市",
+   "city": "豊田市",
+   "latitude": 35.205795,
+   "longitude": 137.365433
+  },
+  {
+   "name": "清田の大クス",
+   "designation": "天然記念物",
+   "designated": "19291217",
+   "prefecture": "愛知県",
+   "address": "蒲郡市清田町",
+   "city": "蒲郡市",
+   "latitude": 34.84577778,
+   "longitude": 137.23394444
+  },
+  {
+   "name": "名古屋城のカヤ",
+   "designation": "天然記念物",
+   "designated": "19320725",
+   "prefecture": "愛知県",
+   "address": "名古屋市中区本丸",
+   "city": "名古屋市",
+   "latitude": 35.18413889,
+   "longitude": 136.89758333
+  },
+  {
+   "name": "大杉谷",
+   "designation": "天然記念物",
+   "designated": "19721213",
+   "prefecture": "三重県",
+   "address": "多気郡大台町",
+   "city": "多気郡大台町",
+   "latitude": 34.21337299,
+   "longitude": 136.15348347
+  },
+  {
+   "name": "椋本の大ムク",
+   "designation": "天然記念物",
+   "designated": "19340122",
+   "prefecture": "三重県",
+   "address": "津市",
+   "city": "津市",
+   "latitude": 34.807236,
+   "longitude": 136.424896
+  },
+  {
+   "name": "了徳寺のオハツキイチョウ",
+   "designation": "天然記念物",
+   "designated": "19291217",
+   "prefecture": "滋賀県",
+   "address": "米原市醒井",
+   "city": "米原市",
+   "latitude": 35.32783333,
+   "longitude": 136.34872222
+  },
+  {
+   "name": "薫蓋クス",
+   "designation": "天然記念物",
+   "designated": "19380530",
+   "prefecture": "大阪府",
+   "address": "門真市三ツ島",
+   "city": "門真市",
+   "latitude": 34.72123,
+   "longitude": 135.595932
+  },
+  {
+   "name": "野間の大ケヤキ",
+   "designation": "天然記念物",
+   "designated": "19480114",
+   "prefecture": "大阪府",
+   "address": "豊能郡能勢町",
+   "city": "豊能郡能勢町",
+   "latitude": 34.946,
+   "longitude": 135.4505
+  },
+  {
+   "name": "妙国寺のソテツ",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "大阪府",
+   "address": "堺市材木町東",
+   "city": "堺市",
+   "latitude": 34.58083333,
+   "longitude": 135.48086111
+  },
+  {
+   "name": "糸井の大カツラ",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "兵庫県",
+   "address": "朝来市和田山町竹ノ内",
+   "city": "朝来市",
+   "latitude": 35.411964,
+   "longitude": 134.920654
+  },
+  {
+   "name": "追手神社のモミ",
+   "designation": "天然記念物",
+   "designated": "19940323",
+   "prefecture": "兵庫県",
+   "address": "篠山市大山",
+   "city": "篠山市",
+   "latitude": 35.105644,
+   "longitude": 135.124084
+  },
+  {
+   "name": "畑上の大トチノキ",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "兵庫県",
+   "address": "豊岡市畑上",
+   "city": "豊岡市",
+   "latitude": 35.584911,
+   "longitude": 134.845505
+  },
+  {
+   "name": "八代の大ケヤキ",
+   "designation": "天然記念物",
+   "designated": "19280324",
+   "prefecture": "兵庫県",
+   "address": "朝来市八代",
+   "city": "朝来市",
+   "latitude": 35.231972,
+   "longitude": 134.785065
+  },
+  {
+   "name": "三ノ公川トガサワラ原始林",
+   "designation": "天然記念物",
+   "designated": "19291217",
+   "prefecture": "奈良県",
+   "address": "吉野郡川上村",
+   "city": "吉野郡川上村",
+   "latitude": 34.26705333,
+   "longitude": 136.072164
+  },
+  {
+   "name": "二見の大ムク",
+   "designation": "天然記念物",
+   "designated": "19570508",
+   "prefecture": "奈良県",
+   "address": "五條市二見町",
+   "city": "五條市",
+   "latitude": 34.344063,
+   "longitude": 135.686874
+  },
+  {
+   "name": "八ツ房スギ",
+   "designation": "天然記念物",
+   "designated": "19320425",
+   "prefecture": "奈良県",
+   "address": "宇陀市",
+   "city": "宇陀市",
+   "latitude": 34.443241,
+   "longitude": 135.976868
+  },
+  {
+   "name": "遊龍松",
+   "designation": "天然記念物",
+   "designated": "19320419",
+   "prefecture": "京都府",
+   "address": "京都市西京区大原野小塩町",
+   "city": "京都市",
+   "latitude": 34.938427,
+   "longitude": 135.644928
+  },
+  {
+   "name": "船通山のイチイ",
+   "designation": "天然記念物",
+   "designated": "19570727",
+   "prefecture": "鳥取県",
+   "address": "日野郡日南町",
+   "city": "日野郡日南町",
+   "latitude": 35.155392,
+   "longitude": 133.179398
+  },
+  {
+   "name": "伯耆の大シイ",
+   "designation": "天然記念物",
+   "designated": "19370417",
+   "prefecture": "鳥取県",
+   "address": "東伯郡琴浦町",
+   "city": "東伯郡琴浦町",
+   "latitude": 35.43369444,
+   "longitude": 133.68394445
+  },
+  {
+   "name": "海潮のカツラ",
+   "designation": "天然記念物",
+   "designated": "19370417",
+   "prefecture": "島根県",
+   "address": "雲南市大東町",
+   "city": "雲南市",
+   "latitude": 35.332394,
+   "longitude": 133.01236
+  },
+  {
+   "name": "竹崎のカツラ",
+   "designation": "天然記念物",
+   "designated": "19430824",
+   "prefecture": "島根県",
+   "address": "仁多郡奥出雲町横田",
+   "city": "仁多郡奥出雲町",
+   "latitude": 35.190098,
+   "longitude": 133.181168
+  },
+  {
+   "name": "玉若酢命神社の八百スギ",
+   "designation": "天然記念物",
+   "designated": "19291217",
+   "prefecture": "島根県",
+   "address": "隠岐郡隠岐の島町",
+   "city": "隠岐郡隠岐の島町",
+   "latitude": 36.207039,
+   "longitude": 133.312546
+  },
+  {
+   "name": "日御碕の大ソテツ",
+   "designation": "天然記念物",
+   "designated": "19340501",
+   "prefecture": "島根県",
+   "address": "出雲市大社町",
+   "city": "出雲市",
+   "latitude": 35.429577,
+   "longitude": 132.636459
+  },
+  {
+   "name": "菩提寺のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19280118",
+   "prefecture": "岡山県",
+   "address": "勝田郡奈義町",
+   "city": "勝田郡奈義町",
+   "latitude": 35.156189,
+   "longitude": 134.2034
+  },
+  {
+   "name": "熊野の大トチ",
+   "designation": "天然記念物",
+   "designated": "19580206",
+   "prefecture": "広島県",
+   "address": "庄原市西城町",
+   "city": "庄原市",
+   "latitude": 35.016083,
+   "longitude": 133.072174
+  },
+  {
+   "name": "大玉スギ",
+   "designation": "天然記念物",
+   "designated": "19300825",
+   "prefecture": "山口県",
+   "address": "周南市須々万",
+   "city": "周南市",
+   "latitude": 34.118656,
+   "longitude": 131.863541
+  },
+  {
+   "name": "恩徳寺の結びイブキ",
+   "designation": "天然記念物",
+   "designated": "19551026",
+   "prefecture": "山口県",
+   "address": "下関市豊北町",
+   "city": "下関市",
+   "latitude": 34.32625,
+   "longitude": 130.89736111
+  },
+  {
+   "name": "川棚のクスの森",
+   "designation": "天然記念物",
+   "designated": "19221012",
+   "prefecture": "山口県",
+   "address": "下関市豊浦町",
+   "city": "下関市",
+   "latitude": 34.170876,
+   "longitude": 130.958099
+  },
+  {
+   "name": "平川の大スギ",
+   "designation": "天然記念物",
+   "designated": "19280118",
+   "prefecture": "山口県",
+   "address": "山口市平井",
+   "city": "山口市",
+   "latitude": 34.13202778,
+   "longitude": 131.47513889
+  },
+  {
+   "name": "余田臥龍梅",
+   "designation": "天然記念物",
+   "designated": "19330413",
+   "prefecture": "山口県",
+   "address": "柳井市余田",
+   "city": "柳井市",
+   "latitude": 33.960175,
+   "longitude": 132.080475
+  },
+  {
+   "name": "龍蔵寺のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19420721",
+   "prefecture": "山口県",
+   "address": "山口市吉敷",
+   "city": "山口市",
+   "latitude": 34.16747222,
+   "longitude": 131.41163889
+  },
+  {
+   "name": "赤羽根大師のエノキ",
+   "designation": "天然記念物",
+   "designated": "20040930",
+   "prefecture": "徳島県",
+   "address": "美馬郡つるぎ町",
+   "city": "美馬郡つるぎ町",
+   "latitude": 33.952065,
+   "longitude": 134.069611
+  },
+  {
+   "name": "乳保神社のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19441107",
+   "prefecture": "徳島県",
+   "address": "板野郡上板町",
+   "city": "板野郡上板町",
+   "latitude": 34.099659,
+   "longitude": 134.39856
+  },
+  {
+   "name": "誓願寺のソテツ",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "香川県",
+   "address": "小豆郡小豆島町",
+   "city": "小豆郡小豆島町",
+   "latitude": 34.46175,
+   "longitude": 134.243607
+  },
+  {
+   "name": "大山祇神社のクスノキ群",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "愛媛県",
+   "address": "今治市大三島町",
+   "city": "今治市",
+   "latitude": 34.24781903,
+   "longitude": 133.00595932
+  },
+  {
+   "name": "北吉井のビャクシン",
+   "designation": "天然記念物",
+   "designated": "19481218",
+   "prefecture": "愛媛県",
+   "address": "東温市樋口",
+   "city": "東温市",
+   "latitude": 33.81071071,
+   "longitude": 132.88288218
+  },
+  {
+   "name": "下柏の大柏（イブキ）",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "愛媛県",
+   "address": "四国中央市下柏町",
+   "city": "四国中央市",
+   "latitude": 33.9843818,
+   "longitude": 133.55853827
+  },
+  {
+   "name": "新居浜一宮神社のクスノキ群",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "愛媛県",
+   "address": "新居浜市一宮町",
+   "city": "新居浜市",
+   "latitude": 33.96172696,
+   "longitude": 133.27893078
+  },
+  {
+   "name": "八幡神社のイブキ",
+   "designation": "天然記念物",
+   "designated": "19430219",
+   "prefecture": "愛媛県",
+   "address": "宇和島市伊吹町",
+   "city": "宇和島市",
+   "latitude": 33.23695,
+   "longitude": 132.572266
+  },
+  {
+   "name": "三崎のアコウ",
+   "designation": "天然記念物",
+   "designated": "19210303",
+   "prefecture": "愛媛県",
+   "address": "西宇和郡伊方町",
+   "city": "西宇和郡伊方町",
+   "latitude": 33.392,
+   "longitude": 132.11766667
+  },
+  {
+   "name": "大谷のクス",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "高知県",
+   "address": "須崎市多ノ郷",
+   "city": "須崎市",
+   "latitude": 33.38586111,
+   "longitude": 133.3185
+  },
+  {
+   "name": "天神の大スギ",
+   "designation": "天然記念物",
+   "designated": "19430219",
+   "prefecture": "高知県",
+   "address": "香南市",
+   "city": "香南市",
+   "latitude": 33.56213889,
+   "longitude": 133.75130556
+  },
+  {
+   "name": "平石の乳イチョウ",
+   "designation": "天然記念物",
+   "designated": "19280118",
+   "prefecture": "高知県",
+   "address": "土佐郡土佐町",
+   "city": "土佐郡土佐町",
+   "latitude": 33.7155,
+   "longitude": 133.48861111
+  },
+  {
+   "name": "黒木のフジ",
+   "designation": "天然記念物",
+   "designated": "19280131",
+   "prefecture": "福岡県",
+   "address": "八女郡黒木町",
+   "city": "八女郡黒木町",
+   "latitude": 33.212784,
+   "longitude": 130.672836
+  },
+  {
+   "name": "新舟小屋のクスノキ林",
+   "designation": "天然記念物",
+   "designated": "19740618",
+   "prefecture": "福岡県",
+   "address": "みやま市",
+   "city": "みやま市",
+   "latitude": 33.18088815,
+   "longitude": 130.50425543
+  },
+  {
+   "name": "太宰府神社のクス",
+   "designation": "天然記念物",
+   "designated": "19220308",
+   "prefecture": "福岡県",
+   "address": "太宰府市宰府",
+   "city": "太宰府市",
+   "latitude": 33.521252,
+   "longitude": 130.534302
+  },
+  {
+   "name": "鎮西村のカツラ",
+   "designation": "天然記念物",
+   "designated": "19341228",
+   "prefecture": "福岡県",
+   "address": "飯塚市大字建花寺",
+   "city": "飯塚市",
+   "latitude": 33.655994,
+   "longitude": 130.620743
+  },
+  {
+   "name": "英彦山の鬼スギ",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "福岡県",
+   "address": "田川郡添田町",
+   "city": "田川郡添田町",
+   "latitude": 33.469688,
+   "longitude": 130.919464
+  },
+  {
+   "name": "本庄のクス",
+   "designation": "天然記念物",
+   "designated": "19220308",
+   "prefecture": "福岡県",
+   "address": "築上郡築上町",
+   "city": "築上郡築上町",
+   "latitude": 33.606148,
+   "longitude": 130.981537
+  },
+  {
+   "name": "湯蓋の森（クス）衣掛の森（クス）",
+   "designation": "天然記念物",
+   "designated": "19220308",
+   "prefecture": "福岡県",
+   "address": "糟谷郡宇美町",
+   "city": "糟谷郡宇美町",
+   "latitude": 33.57012127,
+   "longitude": 130.50861985
+  },
+  {
+   "name": "有田のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19261020",
+   "prefecture": "佐賀県",
+   "address": "西松浦郡有田町",
+   "city": "西松浦郡有田町",
+   "latitude": 33.19388889,
+   "longitude": 129.90566667
+  },
+  {
+   "name": "川古のクス",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "佐賀県",
+   "address": "武雄市若木町川古",
+   "city": "武雄市",
+   "latitude": 33.251816,
+   "longitude": 129.9935
+  },
+  {
+   "name": "広沢寺のソテツ",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "佐賀県",
+   "address": "唐津市鎮西町",
+   "city": "唐津市",
+   "latitude": 33.53086111,
+   "longitude": 129.87119445
+  },
+  {
+   "name": "下合瀬の大カツラ",
+   "designation": "天然記念物",
+   "designated": "19620516",
+   "prefecture": "佐賀県",
+   "address": "佐賀市",
+   "city": "佐賀市",
+   "latitude": 33.443619,
+   "longitude": 130.260254
+  },
+  {
+   "name": "八藤丘陵の阿蘇４火砕流堆積物及び埋没林",
+   "designation": "天然記念物",
+   "designated": "20040930",
+   "prefecture": "佐賀県",
+   "address": "三養基郡上峰町",
+   "city": "三養基郡上峰町",
+   "latitude": 33.34853955,
+   "longitude": 130.42536189
+  },
+  {
+   "name": "大村のイチイガシ天然林",
+   "designation": "天然記念物",
+   "designated": "19810124",
+   "prefecture": "長崎県",
+   "address": "大村市雄ヶ原町",
+   "city": "大村",
+   "latitude": 32.93956433,
+   "longitude": 130.00003247
+  },
+  {
+   "name": "奈良尾のアコウ",
+   "designation": "天然記念物",
+   "designated": "19610427",
+   "prefecture": "長崎県",
+   "address": "南松浦郡新上五島町",
+   "city": "南松浦郡新上五島町",
+   "latitude": 32.839802,
+   "longitude": 129.059753
+  },
+  {
+   "name": "女夫木の大スギ",
+   "designation": "天然記念物",
+   "designated": "19750626",
+   "prefecture": "長崎県",
+   "address": "諫早市小川町",
+   "city": "諫早市",
+   "latitude": 32.816395,
+   "longitude": 130.066818
+  },
+  {
+   "name": "阿弥陀スギ",
+   "designation": "天然記念物",
+   "designated": "19341228",
+   "prefecture": "熊本県",
+   "address": "阿蘇郡小国町",
+   "city": "阿蘇郡小国町",
+   "latitude": 33.130089,
+   "longitude": 131.023056
+  },
+  {
+   "name": "大野下の大ソテツ",
+   "designation": "天然記念物",
+   "designated": "19341228",
+   "prefecture": "熊本県",
+   "address": "玉名市",
+   "city": "玉名市",
+   "latitude": 32.916294,
+   "longitude": 130.504898
+  },
+  {
+   "name": "金比羅スギ",
+   "designation": "天然記念物",
+   "designated": "19590724",
+   "prefecture": "熊本県",
+   "address": "阿蘇郡南小国町",
+   "city": "阿蘇郡南小国町",
+   "latitude": 33.079159,
+   "longitude": 131.097229
+  },
+  {
+   "name": "下田のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19371231",
+   "prefecture": "熊本県",
+   "address": "下益城郡城南町",
+   "city": "下益城郡城南町",
+   "latitude": 32.70402784,
+   "longitude": 130.72775769
+  },
+  {
+   "name": "下の城のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19341228",
+   "prefecture": "熊本県",
+   "address": "阿蘇郡小国町",
+   "city": "阿蘇郡小国町",
+   "latitude": 33.150757,
+   "longitude": 131.055145
+  },
+  {
+   "name": "竹の熊の大ケヤキ",
+   "designation": "天然記念物",
+   "designated": "19350607",
+   "prefecture": "熊本県",
+   "address": "阿蘇郡南小国町",
+   "city": "阿蘇郡南小国町",
+   "latitude": 33.090145,
+   "longitude": 131.075867
+  },
+  {
+   "name": "藤崎台のクスノキ群",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "熊本県",
+   "address": "熊本市宮内",
+   "city": "熊本市",
+   "latitude": 32.805794,
+   "longitude": 130.697617
+  },
+  {
+   "name": "大杵社の大スギ",
+   "designation": "天然記念物",
+   "designated": "19340809",
+   "prefecture": "大分県",
+   "address": "由布市",
+   "city": "由布市",
+   "latitude": 33.252369,
+   "longitude": 131.357925
+  },
+  {
+   "name": "松屋寺のソテツ",
+   "designation": "天然記念物",
+   "designated": "19241209",
+   "prefecture": "大分県",
+   "address": "速見郡日出町",
+   "city": "速見郡日出町",
+   "latitude": 33.372597,
+   "longitude": 131.527451
+  },
+  {
+   "name": "柞原八幡宮のクス",
+   "designation": "天然記念物",
+   "designated": "19220308",
+   "prefecture": "大分県",
+   "address": "大分市大字八幡",
+   "city": "大分市",
+   "latitude": 33.236874,
+   "longitude": 131.551056
+  },
+  {
+   "name": "内海のアコウ",
+   "designation": "天然記念物",
+   "designated": "19411003",
+   "prefecture": "宮崎県",
+   "address": "宮崎市大字内海",
+   "city": "宮崎市",
+   "latitude": 31.73888889,
+   "longitude": 131.46811111
+  },
+  {
+   "name": "瓜生野八幡のクスノキ群",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "宮崎県",
+   "address": "宮崎市大字瓜生野",
+   "city": "宮崎市",
+   "latitude": 31.9795,
+   "longitude": 131.39025
+  },
+  {
+   "name": "大久保の大ヒノキ",
+   "designation": "天然記念物",
+   "designated": "19940302",
+   "prefecture": "宮崎県",
+   "address": "東臼杵郡椎葉村",
+   "city": "東臼杵郡椎葉村",
+   "latitude": 32.508778,
+   "longitude": 131.204208
+  },
+  {
+   "name": "上穂北のクス",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "宮崎県",
+   "address": "西都市大字南方",
+   "city": "西都市",
+   "latitude": 32.13033333,
+   "longitude": 131.39311111
+  },
+  {
+   "name": "清武の大クス",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "宮崎県",
+   "address": "宮崎郡清武町",
+   "city": "宮崎郡清武町",
+   "latitude": 31.86777778,
+   "longitude": 131.37933333
+  },
+  {
+   "name": "去川のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19351224",
+   "prefecture": "宮崎県",
+   "address": "宮崎市",
+   "city": "宮崎市",
+   "latitude": 31.91419444,
+   "longitude": 131.22572222
+  },
+  {
+   "name": "下野八幡宮のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "宮崎県",
+   "address": "西臼杵郡高千穂町",
+   "city": "西臼杵郡高千穂町",
+   "latitude": 32.745152,
+   "longitude": 131.307602
+  },
+  {
+   "name": "下野八幡宮のケヤキ",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "宮崎県",
+   "address": "西臼杵郡高千穂町",
+   "city": "西臼杵郡高千穂町",
+   "latitude": 32.745079,
+   "longitude": 131.307495
+  },
+  {
+   "name": "高岡の月知梅",
+   "designation": "天然記念物",
+   "designated": "19351224",
+   "prefecture": "宮崎県",
+   "address": "宮崎市",
+   "city": "宮崎市",
+   "latitude": 31.950897,
+   "longitude": 131.307236
+  },
+  {
+   "name": "高鍋のクス",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "宮崎県",
+   "address": "児湯郡高鍋町",
+   "city": "児湯郡高鍋町",
+   "latitude": 32.12375,
+   "longitude": 131.50311111
+  },
+  {
+   "name": "田原のイチョウ",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "宮崎県",
+   "address": "西臼杵郡高千穂町",
+   "city": "西臼杵郡高千穂町",
+   "latitude": 32.77744445,
+   "longitude": 131.25458333
+  },
+  {
+   "name": "妻のクス",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "宮崎県",
+   "address": "西都市大字妻",
+   "city": "西都市",
+   "latitude": 32.11486111,
+   "longitude": 131.40416667
+  },
+  {
+   "name": "東郷のクス",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "宮崎県",
+   "address": "日南市東郷",
+   "city": "日南市",
+   "latitude": 31.62619444,
+   "longitude": 131.39086111
+  },
+  {
+   "name": "宮崎神社のオオシラフジ",
+   "designation": "天然記念物",
+   "designated": "19510609",
+   "prefecture": "宮崎県",
+   "address": "宮崎市神宮二丁目",
+   "city": "宮崎市",
+   "latitude": 31.93646787,
+   "longitude": 131.42457115
+  },
+  {
+   "name": "八村スギ",
+   "designation": "天然記念物",
+   "designated": "19350607",
+   "prefecture": "宮崎県",
+   "address": "東臼杵郡椎葉村",
+   "city": "東臼杵郡椎葉村",
+   "latitude": 32.511665,
+   "longitude": 131.191574
+  },
+  {
+   "name": "湯ノ宮の座論梅",
+   "designation": "天然記念物",
+   "designated": "19351224",
+   "prefecture": "宮崎県",
+   "address": "児湯郡新富町",
+   "city": "児湯郡新富町",
+   "latitude": 32.09744444,
+   "longitude": 131.45477778
+  },
+  {
+   "name": "志布志の大クス",
+   "designation": "天然記念物",
+   "designated": "19411113",
+   "prefecture": "鹿児島県",
+   "address": "志布志市",
+   "city": "志布志市",
+   "latitude": 31.48572222,
+   "longitude": 131.07627778
+  },
+  {
+   "name": "塚崎のクス",
+   "designation": "天然記念物",
+   "designated": "19400210",
+   "prefecture": "鹿児島県",
+   "address": "肝属郡肝属町",
+   "city": "肝属郡肝属町",
+   "latitude": 31.33916667,
+   "longitude": 130.97097222
+  },
+  {
+   "name": "藤川天神の臥龍梅",
+   "designation": "天然記念物",
+   "designated": "19411003",
+   "prefecture": "鹿児島県",
+   "address": "薩摩川内市東郷町",
+   "city": "薩摩川内市",
+   "latitude": 31.934,
+   "longitude": 130.31213889
+  },
+  {
+   "name": "伊平屋島の念頭平松",
+   "designation": "天然記念物",
+   "designated": "20160301",
+   "prefecture": "沖縄県",
+   "address": "沖縄県島尻郡伊平屋村",
+   "city": "沖縄県島尻郡伊平屋村",
+   "latitude": 27.07153457,
+   "longitude": 127.99672064
+  },
+  {
+   "name": "久米の五枝のマツ",
+   "designation": "天然記念物",
+   "designated": "19970728",
+   "prefecture": "沖縄県",
+   "address": "島尻郡久米島町",
+   "city": "島尻郡久米島町",
+   "latitude": 26.35869184,
+   "longitude": 126.74251146
+  },
+  {
+   "name": "首里金城の大アカギ",
+   "designation": "天然記念物",
+   "designated": "19720515",
+   "prefecture": "沖縄県",
+   "address": "那覇市首里",
+   "city": "那覇市",
+   "latitude": 26.21588889,
+   "longitude": 127.71605556
+  },
+  {
+   "name": "名護のひんぷんガジュマル",
+   "designation": "天然記念物",
+   "designated": "19970902",
+   "prefecture": "沖縄県",
+   "address": "名護市",
+   "city": "名護市",
+   "latitude": 26.587337,
+   "longitude": 127.985947
+  },
+  {
+   "name": "東根の大ケヤキ",
+   "designation": "特別天然記念物",
+   "designated": "19261020",
+   "prefecture": "山形県",
+   "address": "東根市東根",
+   "city": "東根市",
+   "latitude": 38.441917,
+   "longitude": 140.402451
+  },
+  {
+   "name": "牛島のフジ",
+   "designation": "特別天然記念物",
+   "designated": "19280118",
+   "prefecture": "埼玉県",
+   "address": "春日部市牛島",
+   "city": "春日部市",
+   "latitude": 35.985,
+   "longitude": 139.77322222
+  },
+  {
+   "name": "大島のサクラ株",
+   "designation": "特別天然記念物",
+   "designated": "19351224",
+   "prefecture": "東京都",
+   "address": "大島町泉津",
+   "city": "大島町",
+   "latitude": 34.76291667,
+   "longitude": 139.42919445
+  },
+  {
+   "name": "石徹白のスギ",
+   "designation": "特別天然記念物",
+   "designated": "19241209",
+   "prefecture": "岐阜県",
+   "address": "郡上市白鳥町",
+   "city": "郡上市",
+   "latitude": 35.992085,
+   "longitude": 136.768707
+  },
+  {
+   "name": "加茂の大クス",
+   "designation": "特別天然記念物",
+   "designated": "19261020",
+   "prefecture": "徳島県",
+   "address": "三好郡東みよし町",
+   "city": "三好郡東みよし町",
+   "latitude": 34.040913,
+   "longitude": 133.931931
+  },
+  {
+   "name": "杉の大スギ",
+   "designation": "特別天然記念物",
+   "designated": "19241209",
+   "prefecture": "高知県",
+   "address": "長岡郡大豊町",
+   "city": "長岡郡大豊町",
+   "latitude": 33.75408333,
+   "longitude": 133.66330556
+  },
+  {
+   "name": "立花山クスノキ原始林",
+   "designation": "特別天然記念物",
+   "designated": "19280207",
+   "prefecture": "福岡県",
+   "address": "糟屋郡新宮町・久山町",
+   "city": "糟屋郡新宮町",
+   "latitude": 33.67876119,
+   "longitude": 130.47444264
+  },
+  {
+   "name": "蒲生のクス",
+   "designation": "特別天然記念物",
+   "designated": "19220308",
+   "prefecture": "鹿児島県",
+   "address": "姶良郡蒲生町",
+   "city": "姶良郡蒲生町",
+   "latitude": 31.76561,
+   "longitude": 130.569626
+  },
+  {
+   "name": "屋久島スギ原始林",
+   "designation": "特別天然記念物",
+   "designated": "19241209",
+   "prefecture": "鹿児島県",
+   "address": "熊毛郡屋久島町",
+   "city": "熊毛郡屋久島町",
+   "latitude": 30.32868711,
+   "longitude": 130.50416571
+  }
+ ]
+}
