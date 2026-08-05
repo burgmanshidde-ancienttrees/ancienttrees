@@ -48,3 +48,25 @@ data/research/lisbon-extra-santos.md)
 - KNJ3/008 tamareira (3), Largo Barao de Quintela: conjunto of three palms, no single point.
 - All Parque Florestal de Monsanto entries: woodland stands, not points.
 - KNJ1/331/332 Quinta Nova da Conceicao, KNJ1/070 Quinta da Fonte school garden: access to establish, likely closed.
+
+## OUTCOME (pass closed 2026-08-05)
+
+Shipped to data/research/lisbon-extra.json, 7 trees, lis_013..lis_019:
+- lis_013 Strangler Fig of Principe Real (AIP11066144I) | approximate | no photo
+- lis_014 Yew of Campo Santana (AIP11065607I) | confirmed | no photo
+- lis_015 Weeping Fig of Campo Santana (AIP11065608I) | approximate | no photo
+- lis_016 Taxodium of the Jardim da Parada (AIP11065946I) | confirmed | photo approved
+- lis_017 Pohutukawa of the Jardim da Parada (AIP11065947I + 948I folded) | approximate | photo approved | best_time May/Jun flowers
+- lis_018 Tipuana of the Ninth of April Garden (KNJ1/400) | confirmed | no photo
+- lis_019 Date Palm of the Ninth of April Garden (KNJ1/402) | confirmed | no photo
+
+DROPPED from the shortlist after checking:
+- AIP11066601C Largo Hintze Ribeiro fig: the register calls it a Conjunto arboreo and the square holds
+  nine large figs. Not a collectible point. -> blocked.
+- KNJ1/401 Brachychiton, Jardim 9 de Abril: register species is only "Brachychiton spp.", so no canonical
+  common name can be set without breaking the hard-rule-9 build check. -> lead, worth resolving, it would
+  make the Santos walk three trees.
+
+Leads/blocked written to data/leads/lisbon.json: 29 leads, 22 blocked, every blocked entry with a reason.
+Photo hunting stopped at 2 approved (max is 3): no openly licensed portrait of the Principe Real figs,
+the Campo Santana yew or the Jardim 9 de Abril trees exists on Commons under a usable licence.

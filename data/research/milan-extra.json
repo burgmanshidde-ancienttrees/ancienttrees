@@ -91,13 +91,13 @@
       "kind": "autumn colour"
     },
     "photo": {
-      "url": null,
-      "license": null,
-      "attribution": null,
-      "status": "missing"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Pterocarya_fraxinifolia_-_Giardini_Pubblici_-_Milano.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Sordelli, via Wikimedia Commons",
+      "status": "approved"
     },
     "curation_status": "flagged",
-    "notes": "Existence, species and size from the national MASAF register (Pterocarya fraxinifolia, Giardini Indro Montanelli, girth 550 cm, height 20 m). The second source is the Comune di Milano's monumental-tree page for the Parco Sempione wingnut, which names this tree by the city's own inventory number ('Assieme a quella dei Giardini Montanelli, Pterocaria VTA 36443, e la pterocaria piu datata tra quelle presenti in citta'), confirming both its existence and its standing as one of the two oldest of its species in the city. No age figure exists anywhere; the range is an honest estimate from girth. Only one source publishes a coordinate, so the pin stays approximate. NOTE for a later pass: mil_010's story calls the Sempione wingnut's companion 'a companion specimen nearby', which the comune source shows is this tree, 1.6 km away in a different park, not a neighbour.",
+    "notes": "Existence, species and size from the national MASAF register (Pterocarya fraxinifolia, Giardini Indro Montanelli, girth 550 cm, height 20 m). The second source is the Comune di Milano's monumental-tree page for the Parco Sempione wingnut, which names this tree by the city's own inventory number ('Assieme a quella dei Giardini Montanelli, Pterocaria VTA 36443, e la pterocaria piu datata tra quelle presenti in citta'), confirming both its existence and its standing as one of the two oldest of its species in the city. No age figure exists anywhere; the range is an honest estimate from girth. Only one source publishes a coordinate, so the pin stays approximate. Photo downloaded and viewed at 960px this pass and approved against the Cadiz standard: the tree fills the frame in flat May daylight, the broad low crown and the multi-stemmed base are both readable, and the centre band of the card crop is all tree. Its description reads 'Caucasian wingnut, Giardini Pubblici, Milano' and its photographer, Sordelli, also took the hackberry photo already published on mil_003 in this same park; the file carries no geotag, but the register lists only one wingnut in these gardens, so the identification is safe. NOTE for a later pass: mil_010's story calls the Sempione wingnut's companion 'a companion specimen nearby', which the comune source shows is this tree, 1.6 km away in a different park, not a neighbour.",
     "location_precision": "approximate"
   },
   {
@@ -163,7 +163,7 @@
       "status": "missing"
     },
     "curation_status": "flagged",
-    "notes": "Existence, species, form and condition from the Comune di Milano's own monumental-tree page (VTA 9595, height 34 m, two fused trunks, cabled, described as at the end of its biological cycle) and the national MASAF register, which lists two surviving Villa Litta planes of 43 m and 38 m plus two further entries in the same park. Local history source milanoaffori.it independently confirms that plane trees planted in the second half of the 1700s still stand in this park. No source publishes an age for this specific tree, so the range is estimated from the park's own planting era, not measured. Coordinates: the comune's map point and the nearest register point differ by about 70 m, hence approximate. IMPORTANT: this is NOT the felled 1773 plane. That tree stood on the villa's south-east side until 2015 and its trunk section is displayed indoors; see data/leads/milan.json, blocked. Counted as ONE collectible point rather than two trees because the fusion is what the designation and the nickname are about, and there is one obvious place to stand.",
+    "notes": "Existence, species, form and condition from the Comune di Milano's own monumental-tree page (VTA 9595, height 34 m, two fused trunks, cabled, described as at the end of its biological cycle) and the national MASAF register, which lists two surviving Villa Litta planes of 43 m and 38 m plus two further entries in the same park. Local history source milanoaffori.it independently confirms that plane trees planted in the second half of the 1700s still stand in this park. No source publishes an age for this specific tree, so the range is estimated from the park's own planting era, not measured. Coordinates: the comune's map point and the nearest register point differ by about 70 m, hence approximate. IMPORTANT: this is NOT the felled 1773 plane. That tree stood on the villa's south-east side until 2015 and its trunk section is displayed indoors; see data/leads/milan.json, blocked. Counted as ONE collectible point rather than two trees because the fusion is what the designation and the nickname are about, and there is one obvious place to stand. Photos: two CC BY-SA 4.0 Commons images of a Villa Litta plane exist (Platano comune a02.jpg and a03.jpg, Alberto Panzani, 2018), but both are geotagged at 45.515147, 9.166122, about 230 m from this tree and exactly on a different register entry, so neither can be used here.",
     "location_precision": "approximate"
   }
 ]
