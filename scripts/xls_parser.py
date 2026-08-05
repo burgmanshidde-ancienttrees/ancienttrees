@@ -170,39 +170,100 @@ def biff_records(stream):
         yield pending_type, pending_data
 
 
-def parse_sst(data):
-    total, unique = struct.unpack_from("<II", data, 0)
-    pos = 8
+def sst_segments(stream):
+    """The SST record and its CONTINUE payloads, kept as separate segments.
+
+    They cannot simply be concatenated. A string may be cut in half by a record
+    boundary, and the CONTINUE that carries the rest starts with its own option
+    byte saying whether that remainder is one byte or two per character. Gluing
+    the payloads together swallows those bytes as text, and every string after
+    the first split comes out shifted. That is what truncated the Italian
+    register at 1,077 of 4,183 strings, which read on the page as a species
+    called "1083".
+    """
+    segs = []
+    pos, n = 0, len(stream)
+    while pos + 4 <= n:
+        rtype, rlen = struct.unpack_from("<HH", stream, pos)
+        data = stream[pos + 4:pos + 4 + rlen]
+        pos += 4 + rlen
+        if rtype == 0x00FC:
+            segs = [data]
+        elif rtype == 0x003C and segs:
+            segs.append(data)
+        elif segs:
+            break  # the SST plus its CONTINUEs are contiguous; stop at the next record
+    return segs
+
+
+def parse_sst(data_or_segments):
+    segs = data_or_segments if isinstance(data_or_segments, list) else [data_or_segments]
+    if not segs:
+        return []
+    total, unique = struct.unpack_from("<II", segs[0], 0)
+    si, off = 0, 8
     strings = []
-    n = len(data)
+
+    def at_end():
+        return si >= len(segs)
+
+    def settle():
+        # move to the next segment when the current one is spent. A string
+        # header never straddles a boundary, so no option byte is involved.
+        nonlocal si, off
+        while si < len(segs) and off >= len(segs[si]):
+            si += 1
+            off = 0
+
+    def skip(count):
+        nonlocal si, off
+        while count > 0 and si < len(segs):
+            room = len(segs[si]) - off
+            step = min(count, room)
+            off += step
+            count -= step
+            settle()
+
     for _ in range(unique):
-        if pos + 3 > n:
+        settle()
+        if at_end() or off + 3 > len(segs[si]):
             break
-        cch = struct.unpack_from("<H", data, pos)[0]
-        flags = data[pos + 2]
-        pos += 3
+        cch = struct.unpack_from("<H", segs[si], off)[0]
+        flags = segs[si][off + 2]
+        off += 3
         compressed = not (flags & 0x1)
-        has_rich = bool(flags & 0x8)
-        has_asian = bool(flags & 0x4)
         crun = 0
         cb_ext = 0
-        if has_rich:
-            crun = struct.unpack_from("<H", data, pos)[0]
-            pos += 2
-        if has_asian:
-            cb_ext = struct.unpack_from("<I", data, pos)[0]
-            pos += 4
-        if compressed:
-            raw = data[pos:pos + cch]
-            pos += cch
-            s = raw.decode("cp1252", errors="replace")
-        else:
-            raw = data[pos:pos + cch * 2]
-            pos += cch * 2
-            s = raw.decode("utf-16le", errors="replace")
-        pos += crun * 4
-        pos += cb_ext
-        strings.append(s)
+        if flags & 0x8:  # rich text runs
+            settle()
+            crun = struct.unpack_from("<H", segs[si], off)[0]
+            off += 2
+        if flags & 0x4:  # far east extension
+            settle()
+            cb_ext = struct.unpack_from("<I", segs[si], off)[0]
+            off += 4
+
+        need, parts = cch, []
+        while need > 0 and si < len(segs):
+            width = 1 if compressed else 2
+            room = len(segs[si]) - off
+            take = min(need, room // width)
+            if take == 0:
+                si += 1
+                if si >= len(segs):
+                    break
+                # the continuation re-declares its own width in one byte
+                compressed = not (segs[si][0] & 0x1)
+                off = 1
+                continue
+            raw = segs[si][off:off + take * width]
+            off += take * width
+            parts.append(raw.decode("cp1252" if compressed else "utf-16le",
+                                    errors="replace"))
+            need -= take
+        strings.append("".join(parts))
+        skip(crun * 4)
+        skip(cb_ext)
     return strings
 
 
@@ -304,11 +365,7 @@ def load_xls(path_or_bytes):
 
     # SST (shared strings) lives in the globals substream, before the first
     # worksheet BOF; scan the whole stream once, merging CONTINUEs.
-    sst = []
-    for rtype, data_ in biff_records(wb):
-        if rtype == 0x00FC:
-            sst = parse_sst(data_)
-            break
+    sst = parse_sst(sst_segments(wb))
 
     boundsheets, bofs = sheets_from_workbook(wb)
     result = []

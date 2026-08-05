@@ -105,9 +105,10 @@ def from_registers():
             yield {
                 "id": f"reg_{slugify(os.path.basename(f)[:-5])}_{n:04d}",
                 "tier": "known",
-                "name": t.get("name") or t.get("name_pt") or t.get("species") or "",
+                "name": (t.get("name") or t.get("name_pt") or t.get("name_it")
+                         or t.get("species") or ""),
                 "species": t.get("species", ""),
-                "city": t.get("city") or t.get("concelho") or "",
+                "city": t.get("city") or t.get("concelho") or t.get("comune") or "",
                 "country": country,
                 "lat": t.get("latitude") or loc.get("latitude"),
                 "lng": t.get("longitude") or loc.get("longitude"),

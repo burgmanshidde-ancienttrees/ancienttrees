@@ -22,6 +22,7 @@ A register says a tree is protected, not that it is worth the walk.
 """
 import argparse
 import glob
+import heapq
 import json
 import math
 import sys
@@ -52,9 +53,11 @@ def load(path):
             continue
         out.append({
             "lat": float(lat), "lng": float(lng),
-            "name": t.get("name") or t.get("name_pt") or t.get("species") or "?",
+            "name": (t.get("name") or t.get("name_pt") or t.get("name_it")
+                     or t.get("species") or "?"),
             "species": t.get("species", ""),
-            "place": t.get("concelho") or t.get("freguesia") or t.get("city") or "",
+            "place": (t.get("concelho") or t.get("comune") or t.get("freguesia")
+                      or t.get("city") or t.get("province") or ""),
             "age": t.get("age_register") or t.get("age_estimate") or "",
             "girth": t.get("girth_cm") or "",
         })
@@ -64,18 +67,55 @@ def load(path):
 def cluster(points, radius):
     """Greedy: repeatedly take the point with the most unclaimed neighbours
     within the radius and claim them together. Simple on purpose, and stable,
-    which matters more here than optimality."""
-    left = set(range(len(points)))
+    which matters more here than optimality.
+
+    Indexed by a grid of radius-sized cells, so a neighbour lookup touches nine
+    cells instead of the whole register. The plain version was fine on
+    Portugal's 555 trees and did not return at all on Italy's 5,007.
+    """
+    if not points:
+        return []
+    dlat = radius / 111.0
+    # Cells must be at least a radius wide everywhere in the set, so size the
+    # longitude step at the highest latitude present, where a degree is
+    # shortest.
+    worst_lat = max(abs(p["lat"]) for p in points)
+    dlon = radius / (111.0 * max(math.cos(worst_lat * math.pi / 180), 0.05))
+
+    grid = {}
+    for i, p in enumerate(points):
+        key = (int(math.floor(p["lat"] / dlat)), int(math.floor(p["lng"] / dlon)))
+        grid.setdefault(key, []).append(i)
+
+    alive = [True] * len(points)
+
+    def neighbours(i):
+        p = points[i]
+        cx = int(math.floor(p["lat"] / dlat))
+        cy = int(math.floor(p["lng"] / dlon))
+        out = []
+        for ax in (cx - 1, cx, cx + 1):
+            for ay in (cy - 1, cy, cy + 1):
+                for j in grid.get((ax, ay), ()):
+                    if alive[j] and km((p["lat"], p["lng"]),
+                                       (points[j]["lat"], points[j]["lng"])) <= radius:
+                        out.append(j)
+        return out
+
+    heap = [(-len(neighbours(i)), i) for i in range(len(points))]
+    heapq.heapify(heap)
     groups = []
-    while left:
-        seed = max(left, key=lambda i: sum(
-            1 for j in left if km((points[i]["lat"], points[i]["lng"]),
-                                  (points[j]["lat"], points[j]["lng"])) <= radius))
-        grp = [j for j in left
-               if km((points[seed]["lat"], points[seed]["lng"]),
-                     (points[j]["lat"], points[j]["lng"])) <= radius]
-        groups.append(grp)
-        left -= set(grp)
+    while heap:
+        count, i = heapq.heappop(heap)
+        if not alive[i]:
+            continue
+        grp = neighbours(i)
+        if -count != len(grp):  # someone else claimed part of this neighbourhood
+            heapq.heappush(heap, (-len(grp), i))
+            continue
+        for j in grp:
+            alive[j] = False
+        groups.append(sorted(grp))
     return sorted(groups, key=len, reverse=True)
 
 

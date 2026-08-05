@@ -192,3 +192,35 @@ What it still is: a research lead list. Finding a candidate in the register, the
 The general lesson, which reshuffles the register ranking for import purposes: **NGO registers protect, government registers open.** Bomenstichting is NC, the Woodland Trust hides locations and its terms sit unread behind a download flow, the Tree Council of Ireland's terms are unknown. Meanwhile government sources (Italy's MASAF registry, the Flanders heritage inventory, Paris open data) are typically published under open licences that allow commercial reuse. For anything we import rather than merely consult, government sources first, and read every licence before touching the data.
 
 Dense-Netherlands remains viable despite the NC register: Dutch municipalities publish their own tree data as government open data (Amsterdam's gemeente among them), and the register stays a lead list. Checked for the licence only; the municipal licences still need reading per city.
+
+## Imported 2026-08-05: Italy and Andalusia, both CC BY 4.0
+
+**Italy, MASAF national register.** 21 regional .xls files from
+https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260, one
+identical schema, 5,008 rows, of which 4,522 single trees and 485 marked
+"Insieme omogeneo di ..." (a homogeneous set: an avenue or a stand, not a
+collectible point). 1,653 of the singles carry the register's own CONTESTO
+URBANO flag, which filters city trees for free. Coordinates are sexagesimal
+text with a comma decimal; converted on import and cross-checked against
+Sicily's decimal GeoJSON republication, where 156 of 159 agree to the metre and
+the three that do not are re-surveys between the 2021 and 2025 versions.
+Licence proof: the Sicilian republication of the same data carries
+`license_id: cc-by` in its portal metadata (dati.regione.sicilia.it, dataset
+alberi-monumentali-di-sicilia). The photo gallery on masaf.gov.it is explicitly
+NOT under that licence. Data yes, images never.
+
+**Andalusia, REDIAM.** Eight province KML files (arb_sing_<province>.kml) from
+portalrediam.cica.es, 749 individual trees, decimal WGS84, and 435 of them link
+to an official per-tree PDF sheet, which is the cheapest verification path in
+Spain. The companion groves layer (arbda_sing_*) is deliberately not imported.
+Licence proof, from the dataset's own GeoNetwork record
+(uuid c5d37ec9-a857-42b2-a8d2-2e0d4b947a4e, "Inventario de arboles y arboledas
+singulares de Andalucia"): "Creative Commons Attribution 4.0 International
+Public License (CC BY 4.0)". The Junta mixes CC BY, CC BY-NC and CC BY 3.0
+across its portal, so this proof covers this dataset and nothing else from that
+source.
+
+Neither register is on the explore map yet: load_registers() in build_site.py
+still only understands the Japanese `trees` + `prefecture` shape, so both files
+are read by tree_index.py and cluster_register.py and ignored by the map. That
+is a wiring job, not a licence question.
