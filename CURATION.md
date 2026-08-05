@@ -4104,3 +4104,31 @@ NOT settled here: the story itself says the five Old Lions span the Kew site
 rather than clustering, which is the same test the Rambla planes failed. Worth
 a decision: either the entry becomes the single pagoda tree at its pin, or the
 Old Lions come off the page.
+
+## 2026-08-05 — Zaragoza researched and deliberately not published
+
+Four trees verified on a 1.65 km walk, and the page is held back, because the
+source that made the city cheap is also the reason it cannot ship yet. The
+city's 2006 book "Arboles Singulares de Zaragoza" carries 68 fichas with GPS,
+dimensions and ownership per tree, and it is not a list of living trees: an
+arborist reviewing it reckoned nearly half were gone or in poor condition by
+2012. Two of the nine checked in this pass are confirmed dead. Ficha 54, the
+Parque Bruil hackberry, dried out, was carved into a sculpture in 2017 and the
+sculpture itself was felled in 2022; it was going to be the lead entry. Ficha
+12, the Parque Bruil honey locust, fell in the winter of 2014 and had already
+been written into the file before the check came back.
+
+So only one of the four has dated proof of life, and the floor is four verified
+trees. The research is kept in data/research/zaragoza.json and
+data/leads/zaragoza-register.json (68 fichas, no open licence: the book states
+copyright over its texts and photographs, so it stays out of data/registers/).
+
+Two more cautions in the file: the book's coordinates are ED50, and a naive
+conversion puts every pin about 200 metres northeast of its tree, so both values
+are stored with the wrong one named; and three fichas print another tree's GPS
+string, which is why every pin is approximate.
+
+**The cheapest way to unblock Zaragoza** is the 2019 "Arbol Singular Urbano de
+Zaragoza" catalogue, reported as 56 trees plus 15 conjuntos. No run has found
+the document yet. Inclusion in it would be the city confirming what still
+stands, which is exactly what the 2006 book cannot do.

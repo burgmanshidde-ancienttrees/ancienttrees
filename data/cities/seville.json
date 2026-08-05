@@ -5,7 +5,7 @@
   "intro": "Seville's grandest trees are mostly not ancient at all. They are the product of two specific bursts of civic ambition: centuries of orange trees planted for scent rather than fruit in Andalusi and Christian gardens alike, and a wave of botanical experimentation around the 1929 Ibero-American Exposition that filled Parque de María Luisa with Australian figs, American eucalyptus and Asian ginkgos never native to this soil. A handful of trees here predate all of that. Most are free to see, and the ones that aren't are inside places worth the ticket anyway.",
   "meta_description": "Seville's remarkable trees range from a 500-year ombu tied to Columbus's son to the city's tallest tree, a hidden 50-metre eucalyptus.",
   "question_answer": "Seville's oldest documented tree is the ombu at the Monasterio de la Cartuja, roughly 500 years old and said to have grown from South American seeds brought back by Hernando Colon, son of Christopher Columbus, around 1529. It stands in the grounds of what is now the CAAC contemporary art museum on Isla de la Cartuja, reachable by tram from the city centre.",
-  "question_meta": "Seville's oldest tree is a 500-year-old ombu at a former monastery, tied to Columbus's own son. Where it stands, and the city's ten most remarkable trees.",
+  "question_meta": "Seville's oldest tree is a 500-year-old ombu at a former monastery, tied to Columbus's own son. Where it stands, and fifteen more remarkable trees.",
   "question_context": "The ombu at the Monasterio de la Cartuja has a stronger claim to age than anything else documented in Seville: local tradition holds that Hernando Colon, Christopher Columbus's son, planted it from seeds gathered in South America around 1529, in his own private arboretum, and that the tree or its seed passed to the neighbouring Carthusian monks after his death. If the date holds, it may be the first ombu ever grown in Europe. The tree nearly died in the early 1990s when a botched restoration sealed cavities in its trunk with polyurethane foam, trapping moisture that fed the fungus already damaging the wood; Expo '92 technicians removed the foam just in time, though the removal caused its own damage; the tree has been left untouched since. It grows on the grounds of the former monastery, which today houses the Centro Andaluz de Arte Contemporaneo (CAAC), on Isla de la Cartuja across the river from central Seville. Most other candidates for Seville's oldest tree turn out to be twentieth-century arrivals: the city's famous fig and eucalyptus trees mostly date to the 1910s and 1920s, and the orange trees in the cathedral's Patio de los Naranjos were replanted within living memory.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Seville's remarkable trees free to visit?",
-      "a": "Six of the ten on this list stand in free public parks or squares. Four are inside sites that charge admission: the Real Alcazar, the Monasterio de la Cartuja (CAAC), and Seville Cathedral's Patio de los Naranjos, all UNESCO-listed or nationally protected monuments worth the ticket regardless of the trees."
+      "a": "Twelve of the sixteen on this list stand in free public parks or squares. Four are inside sites that charge admission: the Real Alcazar, the Monasterio de la Cartuja (CAAC), and Seville Cathedral's Patio de los Naranjos, all UNESCO-listed or nationally protected monuments worth the ticket regardless of the trees."
     },
     {
       "q": "Why are so many of Seville's biggest trees Australian or American imports rather than native Spanish species?",
@@ -345,6 +345,204 @@
       "curation_status": "flagged",
       "notes": "Single-source tree: the 'only camphor tree in Seville' claim and its 2016 proposal for the singular-trees catalogue both trace to one dedicated local gardens blog, and no second independent source confirming this specific specimen was found despite a real search. Kept on the list because the underlying facts (species rarity, general behaviour, 2023 memorial corner nearby) are independently verifiable even though this exact tree is not cross-confirmed; age left as unknown rather than guessed.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "sev_011",
+      "name": "The Ficus of the Pila del Pato",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "about 80 years",
+      "age_min": 75,
+      "age_max": 85,
+      "location": {
+        "address": "Plaza de San Leandro, 41003 Sevilla",
+        "latitude": 37.39119661204458,
+        "longitude": -5.988471637189091,
+        "neighbourhood": "San Bartolomé, Casco Antiguo"
+      },
+      "story": "A residents' association liked this tree enough to put it on their letterhead. The Indian laurel fig on the Plaza de San Leandro, known by the duck fountain it stands beside, was probably planted around 1945, going by photographs from the period. It survived the plaza's 1966 rebuild, when the bare earth square was paved over with cobbles and river stone, and the paving nearly finished it: the roots stopped getting air, branches died back from the tips, and the tree went into visible decline. The parks service drilled a ring of shafts around the root crown to let oxygen and nutrients back down, and it recovered fast. A bench built too close was later removed for the same reason. In 2019 the Asociación de Vecinos Casco Antiguo, working with the city, widened the planting pit and put new planting around it, and the association took the tree as its logo. It now measures 4.77 metres round with a crown 21 metres wide, and it has quietly reduced its own canopy over the years in response to the root damage, a tree editing itself down to what it can support. The city was still working on its soil in October 2025.",
+      "verified_sources": [
+        "https://www.femas.es/servicios/medio-ambiente-parques-jardines/arboles-singulares-de-sevilla/inventario-de-arboles-singulares-de-sevilla_redux.pdf",
+        "https://jardinessinfronteras.com/2018/05/31/las-especies-de-ficus-existentes-enlos-jardines-de-sevilla/"
+      ],
+      "access": "Free, public square",
+      "transport": "12 min walk east from the Plaza Nueva tram stop (T1); buses on Calle Recaredo",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Two independent sources. Species and the tree's standing as the most significant Ficus microcarpa in Seville's squares come from Jose Elias Bonells, former head of the city's parks service, writing in 2018, four years before the municipal catalogue. Planting date, the 1966 paving, the root drainage shafts, the 2019 alcorque widening and the residents' association logo come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 20. The catalogue words the 1945 date as a probability read off period photographs, so the age is given as a range. Confirmed alive: the city announced conservation measures for this tree in October 2025. City records conservation Bueno, phytosanitary state without anomalies. Titularidad: Ayuntamiento de Sevilla, Arbomap id 11.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sev_012",
+      "name": "The Magnolia of the Cathedral",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "about 85 years",
+      "age_min": 80,
+      "age_max": 90,
+      "location": {
+        "address": "Avenida de la Constitución, beside Seville Cathedral, 41004 Sevilla",
+        "latitude": 37.38524166088369,
+        "longitude": -5.993738019866403,
+        "neighbourhood": "Santa Cruz, Casco Antiguo"
+      },
+      "story": "The best evidence for this tree's age is photographs it does not appear in. Shots taken from the Teatro Coliseo in 1931 and from the corner of the cathedral in 1934 show the spot empty, which puts the planting in the early 1940s and makes this magnolia much younger than the Gothic wall it stands against, begun in 1401. By 1965 it was well grown. Then the city nearly killed it by tidying up. The pedestrianisation of the Avenida de la Constitución in 2007 and the tram works that followed shrank its planting bed and laid slabs over the roots that were still doing the work, and it was one of only three notable trees on the avenue to come through those works at all. It declined so visibly that both the parks service and ordinary passers-by were alarmed. In June 2021 the city spent 18,500 euros lifting the paving again, widening the bed, draining it, treating soil that had gone too limey, and putting in irrigation and a low pomegranate hedge to keep feet off the roots. Seville's own inventory now rates it stressed but recovering. The assessment is blunt about the cause: this was not weather or disease, it was the pavement.",
+      "verified_sources": [
+        "https://www.femas.es/servicios/medio-ambiente-parques-jardines/arboles-singulares-de-sevilla/inventario-de-arboles-singulares-de-sevilla_redux.pdf",
+        "https://jardinesdelaoliva.wordpress.com/2021/02/09/el-magnolio-de-la-catedral-de-sevilla/",
+        "https://www.eldiario.es/sevilla/plantadas-cuatro-jacarandas-frente-archivo-indias-setos-torno-magnolio-catedral-sevilla_1_8832377.html"
+      ],
+      "access": "Free, public street",
+      "transport": "Archivo de Indias tram stop (T1) is 100 m away; Puerta de Jerez metro 5 min walk",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "label": "May and June, when the cream flowers open the size of a spread hand",
+        "kind": "flowers"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Two independent sources. The 2007 damage, the 18,500 euro restoration, the pH treatment, the irrigation and the pomegranate hedge are documented by the Asociacion Amigos de los Jardines de la Oliva in February 2021, before the municipal catalogue, and the hedge planting was separately reported by eldiario.es. Dating from absence in the 1931 and 1934 photographs, and the stressed-but-recovering assessment, come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 24. Neither independent source writes out grandiflora, though magnolio in Spanish horticulture means Magnolia grandiflora by default; the species is therefore catalogue-led and the age is a range. Confirmed alive: the city was working on it again in November 2025. Titularidad: Ayuntamiento de Sevilla, Arbomap id 123396.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sev_013",
+      "name": "The Pineapple Guava of the Plaza de Santa Cruz",
+      "species": "Pineapple Guava (Acca sellowiana)",
+      "age_estimate": "about 105 years",
+      "age_min": 100,
+      "age_max": 110,
+      "location": {
+        "address": "Plaza de Santa Cruz, 41004 Sevilla",
+        "latitude": 37.38524408139013,
+        "longitude": -5.988502076980995,
+        "neighbourhood": "Santa Cruz, Casco Antiguo"
+      },
+      "story": "Children in this square have known for a century that the green fruit on it tastes of pineapple. The pineapple guava normally stops at a shrub of four or five metres. This one reached six, and it did so because it has been left alone since about 1921, when the architect Juan Talavera laid out the Plaza de Santa Cruz on ground cleared by the demolition of a church and planted the garden that still frames it. At the centre he set the Cruz de la Cerrajería, a wrought-iron cross forged in 1692 by Sebastián Conde, a blacksmith from Almonte, which had already been moved twice, from the corner of Calles Sierpes and Rioja to the Museo de Bellas Artes and finally here. The guava went in with the rest of the planting and has outlasted most of it. Its flowers are the show nobody expects from a fruit bush: white petals curled back around a crown of red stamens tipped with bright yellow pollen, held on the branch for weeks. The fruit needs a second tree's pollen to set, comes in a little larger than a medlar, and is what the neighbourhood remembers it for.",
+      "verified_sources": [
+        "https://www.femas.es/servicios/medio-ambiente-parques-jardines/arboles-singulares-de-sevilla/inventario-de-arboles-singulares-de-sevilla_redux.pdf",
+        "https://jardinesdelaoliva.wordpress.com/2009/12/23/el-guayabo-del-brasil/"
+      ],
+      "access": "Free, public square",
+      "transport": "6 min walk east from Seville Cathedral, through the Santa Cruz quarter; Archivo de Indias tram stop (T1) 8 min",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October into November, when the fruit ripens and drops",
+        "kind": "fruit"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Two independent sources. The Asociacion Amigos de los Jardines de la Oliva recorded an ornamental Feijoa sellowiana in the Plaza de Santa Cruz in 2009, thirteen years before the municipal catalogue, and gives the family correctly as Myrtaceae. The 1921 laying out of the square by Juan Talavera with this specimen in the planting, the 1692 cross by Sebastian Conde and its earlier locations, and the flower and fruit description come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 52. Age is catalogue-led and given as a range. NOTE a catalogue error: ficha 52 files this species under Arecaceae, the palm family; it is Myrtaceae. The catalogue's Feijoa sellowiana is a synonym of the accepted Acca sellowiana, used here for species-page grouping. Smallest of this batch at 6 m and 78 cm girth, catalogued for rarity and age rather than size. City records physiological, phytosanitary and biomechanical state all Optimo. Titularidad: Ayuntamiento de Sevilla, Arbomap id 4.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sev_014",
+      "name": "The Pecan of the Real Alcázar",
+      "species": "Pecan (Carya illinoinensis)",
+      "age_estimate": "about 110 years",
+      "age_min": 105,
+      "age_max": 115,
+      "location": {
+        "address": "Jardín del Marqués de la Vega Inclán, Real Alcázar de Sevilla, Patio de Banderas s/n, 41004 Sevilla",
+        "latitude": 37.38332177373127,
+        "longitude": -5.989617650527207,
+        "neighbourhood": "Santa Cruz, Casco Antiguo"
+      },
+      "story": "The tallest tree in the Alcázar gardens is a nut tree from the Mississippi valley, and almost nobody looks up at it. The pecan stands 37 metres in the Jardín del Marqués de la Vega Inclán, the garden José Gómez Millán laid out between 1913 and 1917 over what had been the Huerta del Retiro, the palace's working orchard. It was planted with the garden, alongside the other fruit trees Gómez Millán scattered through his design, so it is roughly as old as the layout around it. An older pecan grew near the Pabellón de Carlos V and was taken down when it became decrepit, which leaves this one carrying the species almost alone in the city. It is in unusually good order. Of the fifty-six individual trees in Seville's singular-tree inventory, this is one of a handful rated optimal on all three counts the city measures: physiological state, phytosanitary state and biomechanical structure. The inventory credits careful pruning across its whole life, and a planted border that keeps visitors off the ground under its canopy. Its trunk is 2.8 metres round, its crown 24 metres across, and it fruits into autumn, though the nuts are not yours to gather.",
+      "verified_sources": [
+        "https://www.femas.es/servicios/medio-ambiente-parques-jardines/arboles-singulares-de-sevilla/inventario-de-arboles-singulares-de-sevilla_redux.pdf",
+        "https://personal.us.es/zarco/Aula_Experiencia/Itinerario_Alcazar.html"
+      ],
+      "access": "Paid entry (Real Alcázar admission ticket required)",
+      "transport": "10 min walk from Puerta de Jerez tram stop (T1), inside the Real Alcázar grounds",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Two independent sources. Carlos Romero Zarco's botanical itinerary of the Alcazar for the University of Seville, October 2005, lists the pacanero in the Jardin del Marques de la Vega-Inclan by name and species, seventeen years before the municipal catalogue, confirming both tree and location. The 1913-1917 garden date, the lost older specimen by the Pabellon de Carlos V, the dimensions and the condition ratings come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 3. Age is a range because the catalogue dates the planting to the garden's construction window, not a year. The 37 m height is the tallest of the seven Alcazar trees in the catalogue; it is not the tallest tree in Seville, which the same catalogue records as El Gran Capitan at 55 m, already published here as sev_005. Titularidad: Real Alcazar de Sevilla.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sev_015",
+      "name": "The Fig of the University Moat",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "56 years",
+      "age_min": 54,
+      "age_max": 58,
+      "location": {
+        "address": "Calle Palos de la Frontera, beside the University of Seville, 41004 Sevilla",
+        "latitude": 37.38065926279002,
+        "longitude": -5.992443915305706,
+        "neighbourhood": "Santa Cruz, Casco Antiguo"
+      },
+      "story": "A man in Seville asked the parks department in 1970 whether he could plant a tree to mark his son's birth. They said yes, brought a Moreton Bay fig to a bed on the Calle Palos de la Frontera, and let him throw the first spadefuls of earth in himself. That son turns fifty-six this year. So does the tree, and it has done rather better out of the arrangement: its trunk is now 6.12 metres round, thicker than any of the far older figs elsewhere in the city's inventory, and its crown spreads 28 metres, reaching sideways over the dry moat of the old Royal Tobacco Factory, the eighteenth-century building that has housed the University of Seville since the 1950s. In November 2025 the city brought in an Air Spade, a tool that blasts compacted soil apart with compressed air without tearing roots, and cut radial trenches around it to get the ground breathing again. The delegate who ordered the work called figs like this one part of the identity of Seville. Fifty-six years is nothing for a tree. This one has not read the memo.",
+      "verified_sources": [
+        "https://www.femas.es/servicios/medio-ambiente-parques-jardines/arboles-singulares-de-sevilla/inventario-de-arboles-singulares-de-sevilla_redux.pdf",
+        "https://jardinessinfronteras.com/2018/05/31/las-especies-de-ficus-existentes-enlos-jardines-de-sevilla/",
+        "https://www.andaluciainformacion.es/articulo/sevilla/ayuntamiento-actua-ficus-palos-frontera-mejorar-salud-estabilidad/202511271641193174881.html"
+      ],
+      "access": "Free, public street",
+      "transport": "4 min walk from Puerta de Jerez metro and tram stop (T1); Prado de San Sebastián 8 min",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Three independent sources, the best-verified tree of this batch. Jose Elias Bonells, former head of the city's parks service, names the Ficus macrophylla on Calle Palos de la Frontera in 2018 and calls it close to fifty years old, which puts planting around 1968 and corroborates the catalogue's 1970 within tolerance; the age range here spans both. The planting-for-a-son's-birth story, the 1970 date and the dimensions come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 19. The November 2025 Air Spade intervention and the quote from delegate Evelia Rincon come from Andalucia Informacion, which also confirms the tree alive and standing at that date. Note a figure clash to avoid repeating: the 2025 press says the species can exceed 30 m in height, which is a species statement, not this tree's crown spread of 28 m. City records physiological state Optimo. Titularidad: Ayuntamiento de Sevilla, Arbomap id 55.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "sev_016",
+      "name": "The Ficus of the Altozano",
+      "species": "Rubber Fig (Ficus elastica)",
+      "age_estimate": "54 years",
+      "age_min": 53,
+      "age_max": 55,
+      "location": {
+        "address": "Plaza del Altozano, Triana, 41010 Sevilla",
+        "latitude": 37.385286330505636,
+        "longitude": -6.003045652999617,
+        "neighbourhood": "Triana Casco Antiguo, Triana"
+      },
+      "story": "Triana's landmark tree began as a pot plant. The city kept large containerised specimens for dressing streets and squares during civic celebrations, and in 1972, when the monument to the bullfighter Juan Belmonte was inaugurated on the Plaza del Altozano, one of those container plants was put into the ground and left there. It is a rubber fig, and specifically the variety that was fashionable as a houseplant in the same decade, the kind that sat in a corner of a thousand Spanish living rooms. Seville's run of mild winters let this one keep going outdoors. Fifty-four years on it has a trunk 5.86 metres round and a crown 31 metres across, and it is the only shade on the square, covering both halves of it at once: the approach to the Puente de Isabel II, successor to the old bridge of boats, and the mouth of the Calle Betis running downriver. The city's inventory is candid that the tree is not especially old and says its value here is symbolic. It has paid for that status. Every year the Velá de Triana sets its stalls up around the trunk, and in some years cooks put stoves underneath, badly enough to burn the bark.",
+      "verified_sources": [
+        "https://www.femas.es/servicios/medio-ambiente-parques-jardines/arboles-singulares-de-sevilla/inventario-de-arboles-singulares-de-sevilla_redux.pdf",
+        "https://jardinessinfronteras.com/2020/11/10/plazas-y-plazuelas-de-triana/"
+      ],
+      "access": "Free, public square",
+      "transport": "10 min walk from Plaza Nueva tram stop (T1) across the Puente de Isabel II; buses to Plaza del Altozano",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Two independent sources. Jose Elias Bonells, former head of the city's parks service, describes the Plaza del Altozano specimen in 2020 as a large Ficus elastica var. decora of the Moraceae planted when the Juan Belmonte monument was inaugurated, two years before the municipal catalogue and confirming species and planting event independently. The 1972 date, the origin as a municipal container plant, the Vela de Triana stove damage and the dimensions come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 18. The catalogue itself notes the tree is not especially old and rests its case on symbolic value and size, which the story states rather than dresses up. City records physiological state Normal, conservation Bueno. Titularidad: Ayuntamiento de Sevilla.",
+      "location_precision": "confirmed"
     }
   ]
 }
