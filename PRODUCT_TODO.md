@@ -1,3 +1,17 @@
+## NEXT UP, set 2026-08-04 with Hidde's approval: import Italy and Andalucia
+
+Both are pure retrieval and parsing, so they are cheap in tokens and pay back forever. Do these before any more city research.
+
+**1. Italy, MASAF national register.** The single biggest coverage lever available. 5,008 entries covering 17,564 specimens, of which **4,524 are single trees** and therefore collectible-point eligible; the rest are avenues and groups that fail that test by default. CC BY 4.0, proven twice on the ministry's own pages. Per-tree coordinates, girth, height, and a `CONTESTO URBANO` yes/no flag that filters urban trees for free. City counts already known: Rome 70, Naples 54, Palermo 46, Florence 29, Milan 26, Genoa 17, Turin 14, Venice 13, Bologna 9.
+- Do NOT use the "complete shapefile on request" form. All 21 regional Excel files download directly with no auth and together are the national list.
+- Coordinates in the .xls are sexagesimal split across columns, so they need converting. Shortcut: Sicilia (159) and Milano city (13) republish as GeoJSON with decimal geometry; start there to check the parser before doing the DMS work.
+- The photo gallery on that site is explicitly NOT under the CC BY licence. Data yes, images never.
+
+**2. Andalucia, REDIAM.** 749 trees across eight province KML files, CC BY 4.0 from the dataset's own ISO metadata, decimal WGS84 per tree, and each entry links to a per-tree official PDF, which is the cheapest verification path in Spain. Covers five cities we already publish (Seville, Granada, Cordoba, Cadiz, Malaga) so it deepens them rather than only opening new ones.
+- Caveat recorded: the Junta mixes CC BY, CC BY-NC and CC BY 3.0 across its datasets. The CC BY on this one authorises this one; do not generalise it to anything else from that portal.
+
+**Already retrieved and waiting in this session's scratchpad, worth re-fetching rather than hunting:** Barcelona city (208, imported), Valencia city (482, GeoJSON URL known and working), Tokyo Nakano (262) and Inagi (148), Oita (63 with name, age AND girth) and Okinawa (128 with age and girth), the last two being the best-structured Japanese tree data found anywhere.
+
 ## One small SEO win from the competitor comparison (2026-07-31, corrected 2026-08-01)
 
 DONE 2026-08-02 (built in run): `scripts/daily_digest.py` now pulls a wider (25-row) query batch and adds a "Content lead" line to the GSC section: the highest-impression query whose text matches no known city, country or species name. Deterministic string match against `data/cities`, `data/countries` and `data/species`, collection titles deliberately excluded (their words are generic enough to swallow real gaps). No page gets built from it. Verified with synthetic GSC payloads (`known_terms()`/`find_content_gap()`/`gsc_section()` all return correct results), since no live GSC secrets are available in this environment to exercise it against real queries; grep `Content lead:` in `DATA.md` once a real gap query appears.
