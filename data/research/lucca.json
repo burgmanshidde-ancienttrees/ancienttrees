@@ -2,7 +2,7 @@
   "city": "Lucca",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Lucca keeps its best trees in a ring about eight hundred metres across, which makes this one of the shortest walks on this site. Three of the six stand in a botanical garden founded in 1820 and planted with things nobody in Tuscany had seen before: a cedar from Lebanon by way of Pisa, a Californian redwood raised almost as soon as the species reached Europe, and a ginkgo that lightning knocked down and that grew back as three trunks. The other three are a cypress on a gun platform, a cedar with a name and a date, and seven oaks on a tower roof.",
+  "intro": "Lucca keeps its best trees inside a ring eight hundred metres across, which makes this one of the shortest walks on this site. Three of the six stand in a botanical garden founded in 1820 and planted with things nobody in Tuscany had seen: a cedar from Lebanon by way of Pisa, a Californian redwood raised almost as soon as the species reached Europe, and a ginkgo that lightning knocked down and that grew back as three. The other three are a cypress on a gun platform, a cedar with a name, and seven oaks on a tower roof.",
   "meta_description": "Six remarkable trees inside Lucca's walls, all within 800 metres: seven oaks on the Guinigi tower, a redwood, and a cedar planted in 1822.",
   "question_meta": "The oldest tree in Lucca is the Cedar of Lebanon in the botanical garden, planted in 1822 by the garden's first director and now 204 years old.",
   "question_answer": "The oldest tree in Lucca is the Cedar of Lebanon in the Orto Botanico, planted in 1822 by Paolo Volpi, the garden's first director, which makes it 204 years old and two years younger than the garden around it. It is also one of the largest, at six and a half metres round the trunk. The seven holm oaks on top of the Torre Guinigi are the more famous trees, and the idea of planting them up there is far older, but the living oaks are undated replantings.",
@@ -51,7 +51,7 @@
       "access": "Paid entry to the Orto Botanico di Lucca",
       "transport": "About 15 min walk from Lucca station, in the southeast corner inside the walls",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Lucca%2C_Orto_Botanico%2C_Abies_cedrus.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Lucca%2C_Orto_Botanico%2C_Abies_cedrus.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Palickap, via Wikimedia Commons",
         "status": "approved"
@@ -82,7 +82,7 @@
       "access": "Paid entry to the Orto Botanico di Lucca",
       "transport": "About 15 min walk from Lucca station, in the southeast corner inside the walls",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Lucca%2C_Orto_Botanico%2C_Sequoia_sempervirens.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Lucca%2C_Orto_Botanico%2C_Sequoia_sempervirens.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Palickap, via Wikimedia Commons",
         "status": "approved"
@@ -104,20 +104,27 @@
         "longitude": 10.511214,
         "neighbourhood": "Centro Storico"
       },
-      "story": "Lightning destroyed this tree around 1950 and it came back as three. The ginkgo planted here in 1862 was struck and lost, and what stands today is a set of shoots that rose from the surviving stump and grew into three full trunks, now twenty-six metres tall. That is why the national register, which lists a trunk girth for almost every tree it protects, leaves the figure blank for this one. There is no single trunk to measure. Ginkgo biloba is the last species of an entire order of plants, with no living relatives closer than the conifers, and fossils of nearly identical leaves come out of rock two hundred million years old. It survives what other trees do not: it was among the first things to grow back near the epicentre at Hiroshima, and the trait on display here, regenerating from a battered base, is part of the same toughness. Come in the second half of November. Ginkgo leaves turn a hard uniform yellow and then drop, often most of them within a day or two, so the tree goes from full gold to bare with a gold floor underneath it.",
+      "story": "Lightning took this tree down after the war and it came back as three. The ginkgo planted here in 1862 was struck in the post-war years and thrown into regrowth, and the garden let three of the resulting shoots run. They are now three full trunks of one tree, twenty-six metres tall, which is why the national register, which lists a trunk girth for almost everything it protects, leaves the figure blank for this one. There is no single trunk to measure. Ginkgo biloba is the last species of an entire order of plants, with no living relative closer than the conifers, and fossils of nearly identical leaves come out of rock two hundred million years old. It survives what other trees do not: it was among the first things to grow back near the epicentre at Hiroshima, and the trick on display here, rebuilding itself from a wrecked base, is the same trait. Come in the middle of November. The garden treats the turn as one of its events of the year, when the leaves go from green to a hard uniform yellow and then drop, often most of them within a day or two, leaving a gold floor and a bare tree above it.",
       "verified_sources": [
         "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
         "https://www.luccaindiretta.it/dalla-citta/2024/09/20/sono-36-gli-alberi-monumentali-nel-territorio-del-comune-di-lucca/426398/",
-        "https://www.visittuscany.com/en/attractions/the-botanical-garden-of-lucca/"
+        "https://ortobotanicodilucca.it/19-novembre-2022-ginkgo-biloba/"
       ],
       "access": "Paid entry to the Orto Botanico di Lucca",
       "transport": "About 15 min walk from Lucca station, in the southeast corner inside the walls",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
-      "notes": "Register 27/E715/LU/09 records height 26 m and no girth at all, which fits the three-trunk description rather than contradicting it. Planting year 1862 from LuccaInDiretta; the lightning strike around 1950 and the three trunks from the visittuscany description of the garden. Whether the tree is male or female is not recorded anywhere, so no claim is made about fruit.",
+      "notes": "Register 27/E715/LU/09 records height 26 m and no girth at all, which fits the three-trunk description rather than contradicting it. Planting year 1862 from LuccaInDiretta; the lightning strike and the three shoots are stated by the garden itself, which dates the strike to the post-war years rather than to a single year. Whether the tree is male or female is not recorded anywhere, so no claim is made about fruit.",
       "best_time": {
-        "months": [11],
-        "label": "the second half of November, when it turns hard yellow and drops it all at once",
+        "months": [
+          11
+        ],
+        "label": "mid-November, when it turns hard yellow and drops it all at once",
         "kind": "autumn colour"
       },
       "location_precision": "confirmed"
@@ -143,7 +150,12 @@
       ],
       "access": "Free, on the public walk along the city walls",
       "transport": "On the walls at the San Regolo bastion, directly above the botanical garden",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "notes": "Register 09/E715/LU/09, 355 cm girth, 28 m. Flagged on age only: no source dates this tree. The city's own walls itinerary credits the North American cypress by the bastion to Cesare Bicchi, botanical garden director from 1860, which is where the rough range comes from, so it is given as a range and not as a figure.",
       "location_precision": "confirmed"
@@ -171,7 +183,7 @@
       "access": "Paid entry to the Torre Guinigi, 8 euro, 230 steps and no lift",
       "transport": "In the middle of the old town, at Via Sant'Andrea and Via Guinigi",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Top_of_Torre_Guinigi_%28Lucca%29_-_Tuscany%2C_Italy.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Top_of_Torre_Guinigi_%28Lucca%29_-_Tuscany%2C_Italy.jpg",
         "license": "CC BY 2.0",
         "attribution": "Graeme Maclean, via Wikimedia Commons",
         "status": "approved"
@@ -202,7 +214,12 @@
       ],
       "access": "Free, public garden of Villa Bottini, open during garden hours",
       "transport": "Just inside Porta San Gervasio on Via Elisa, about 5 min walk from the botanical garden",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "notes": "Register 08/E715/LU/09, 700 cm girth, 30 m, the largest girth of the 36 register entries in the comune of Lucca. Flagged on age: no source dates it, and the 1840s ceiling is the species introduction date rather than a measurement of this tree. Species and location double-sourced by the register and by La Nazione's report of the 2021 dedication.",
       "location_precision": "confirmed"

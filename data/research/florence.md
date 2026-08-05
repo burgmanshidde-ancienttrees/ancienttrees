@@ -1,9 +1,9 @@
-# Firenze research pass, 2026-08-05
+# Florence deepening pass, 2026-08-05 (register-led)
 
 ## IMPORTANT CONTEXT FOUND FIRST
 
 `data/cities/florence.json` ALREADY EXISTS and is published with 10 trees (ids flo_001..flo_010).
-This pass is therefore NOT a new city. It is an upgrade of an existing one, driven by the MASAF
+This pass is therefore NOT a new city. It is a DEEPENING pass on an existing one, driven by the MASAF
 register (data/registers/italy-masaf.json, 29 entries for comune Firenze).
 
 Existing file's weakness, measured: only flo_001/002/003 sit in the Orto Botanico cluster.
@@ -35,7 +35,7 @@ Missing from the page: **brutia, serrata, carpinifolia, deodara**.
 
 ## VERIFIED TREES (appended as verified)
 
-### 1. Zelkova carpinifolia, Olmo del Caucaso — VERIFIED, 2 sources
+### 1. Zelkova carpinifolia, Olmo del Caucaso , VERIFIED, 2 sources
 - MASAF 06/D612/FI/09: girth 610 cm, height 30.0 m, 43.778750,11.261944
 - RAMI 6488 (survey 14 Oct 2021): girth 5.75 m, height **10.00 m**, planted **1827**,
   "199 anni" estimated, GPS 43.778827,11.261576. Note: "Vecchio olmo del Caucaso presente
@@ -49,7 +49,7 @@ Missing from the page: **brutia, serrata, carpinifolia, deodara**.
 - Alive: yes (2021 survey, catalogued, publicly accessible).
 - Girth: two figures, 610 (MASAF) vs 575 (RAMI 2021 at 130 cm). Different measuring height. Use ~5.8-6.1 m.
 
-### 2. Zelkova serrata, Olmo giapponese — VERIFIED but AGE CONFLICTS, flag
+### 2. Zelkova serrata, Olmo giapponese , VERIFIED but AGE CONFLICTS, flag
 - MASAF 04/D612/FI/09: girth 453 cm, height 25.0 m, 43.778694,11.260361
 - RAMI 6499 (survey 14 Oct 2021): girth 4.40 m at 130 cm, height 26.00 m,
   GPS 43.778691,11.260302, health "Sufficiente", "Interessante e raro esemplare monumentale".
@@ -77,12 +77,12 @@ every tree in the cluster, and it is the garden's own record, so it outranks the
 - Pinus halepensis subsp. brutia: present from the late 1800s, **moved to its present spot in 1922**.
   Flag-shaped crown, requires constant monitoring.
 
-### 3. Cedrus deodara, Cedro dell'Himalaya — VERIFIED, 2 sources
+### 3. Cedrus deodara, Cedro dell'Himalaya , VERIFIED, 2 sources
 - MASAF 07/D612/FI/09: girth 418 cm, height 28.0 m, 43.778556,11.262611
 - sma.unifi.it: in the garden since 1880 -> **about 146 years**
 - Alive, publicly accessible on the garden ticket. No conflict between sources.
 
-### 4. Pinus halepensis subsp. brutia, Pino bruzio — VERIFIED, 2 sources
+### 4. Pinus halepensis subsp. brutia, Pino bruzio , VERIFIED, 2 sources
 - MASAF 03/D612/FI/09: girth 382 cm, height 33.5 m, 43.778444,11.261111
 - sma.unifi.it: present late 1800s, repositioned **1922**, flag-shaped crown under monitoring
 - Regione Toscana monumental census (via search): 384 cm girth, 33.4 m height. Matches MASAF
@@ -116,3 +116,60 @@ to south**. Seven MASAF-registered monumental trees inside two hundred metres, o
 By the measure used across the 81 published cities, this is the densest cluster on the site.
 The existing florence.json publishes only three of the seven and then scatters the other
 seven entries across 9 km of metropolis.
+
+## DELIVERABLES OF THIS PASS (corrected mid-pass)
+
+An earlier draft of this pass wrote `data/research/firenze.json` as a full city object, on the
+assumption that Firenze was an unbuilt city. That was wrong and the file has been deleted.
+The correct deliverables are:
+
+- `data/research/florence-extra.json`, a JSON ARRAY of 5 tree objects, ids flo_011 to flo_015,
+  in the schema used inside data/cities/florence.json. Nothing in data/cities/ was edited.
+- `data/leads/florence.json`, leads and blocked in two kinds, plus a non-lead section recording
+  the four off-cluster trees already live on the page.
+
+### The five, and why each one
+- flo_011 Zelkova carpinifolia, flo_012 Zelkova serrata, flo_013 Pinus brutia, flo_014 Cedrus
+  deodara: all four are MASAF-registered trees INSIDE the Giardino dei Semplici, where the page
+  already has flo_001, flo_002 and flo_003. They take the garden from 3 trees to 7 within a
+  185 m strip on one ticket, which makes it the tightest cluster on the site.
+- flo_015 Calocedrus decurrens, the Albero degli Sposi: 45 m from the live flo_007 in the
+  Giardino del Bobolino, so it thickens the southern hillside stop rather than opening a new one.
+
+### Count warning
+10 published + 5 = **15 trees**. Florence passes ten, so the page title and the question page
+must stop promising ten. Flagged, not fixed.
+
+### Authority-citation trap: checked, clean
+Per the warning from the Naples pass, every year met in this pass was checked for being a
+taxonomic authority citation rather than a record. None of the dates used here are: 1720, 1805,
+1827, 1880, 1884, 1891 and 1922 all come from the garden's own archive as reported on
+sma.unifi.it, and 1865-1877 is the comune's construction date for the Bobolino garden.
+"Taxus baccata L." carries no year in any source used here.
+
+### Superlative conflicts found and handled
+- An earlier draft called the Pinus brutia the tallest tree in the garden. It is not: MASAF gives
+  the cork oak 35.0 m against its 33.5 m. Claim removed.
+- The garden credits the Zelkova serrata with the widest crown in the collection, while the live
+  flo_002 story credits the cork oak with "one of the widest". The zelkova claim is attributed to
+  the garden rather than asserted, and the clash is recorded in the entry's notes for the merge.
+- flo_003's live claims ("widest trunk of any tree in the city", 670 cm) are untouched and
+  unchallenged: nothing added here exceeds 610 cm.
+
+### Two things a human should decide
+1. **Deodar naming.** flo_014 uses "Himalayan Cedar (Cedrus deodara)", the site majority (5 vs 3),
+   but the live flo_008 in this same city says "Deodar Cedar". As it stands Florence's two
+   deodars land on different species pages, which hard rule 9 exists to prevent. One-line fix to
+   the live file, deliberately not made here.
+2. **The four off-cluster live trees** (flo_004, flo_005, flo_006, flo_010), 2.7 to 4.5 km out.
+   Listed with distances in data/leads/florence.json. Not touched.
+
+### Photo budget: 3 used, all viewed at 960 px before judging
+- flo_011 Zelkova crenata 01 by Line1.jpg, CC BY-SA 3.0, Line1: APPROVED. Massive fluted trunk
+  fills the frame, crown readable, daylight, colour, survives the wide card crop.
+- flo_013 Pinus brutia 01 by Line1.jpg, CC BY-SA 3.0, Line1: APPROVED. Whole tree against sky,
+  trunk and flag crown both legible.
+- flo_012 Zelkova serrata 01 by Line1.jpg, CC BY-SA 3.0, Line1: found_needs_check. Tree is the
+  subject and the mosaic bark matches the story, but it is framed tighter than Cadiz wants.
+- REJECTED after viewing: Cedrus deodara 01 by Line1.jpg (dark, backlit, tree unreadable) and
+  Zelkova serrata a Firenze.JPG (a man hugging the trunk is the subject, not the tree).

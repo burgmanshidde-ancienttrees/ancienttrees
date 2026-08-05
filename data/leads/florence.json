@@ -1,0 +1,141 @@
+{
+  "city": "Florence",
+  "country": "Italy",
+  "city_slug": "florence",
+  "note": "From the 2026-08-05 MASAF register pass on comune Firenze (29 register entries). This was a deepening pass on an already-published city, not a new city. Leads failed only our evidence bar or the count; blocked can never ship as they stand. The 'off_cluster_currently_published' section is not a lead list, it is an observation about the live page for whoever next edits it.",
+  "leads": [
+    {
+      "name": "The Stone Pine of the Bobolino",
+      "species": "Pinus pinea",
+      "lat": 43.757833,
+      "lng": 11.249194,
+      "status": "lead",
+      "why": "MASAF 14/D612/FI/09, girth 412 cm, height 31.5 m. Stands about 25 m from the live flo_007 and 45 m from flo_015, so it is the single cheapest addition left in Florence: a visitor already standing at the Bobolino cedars would not take a step. Held back only for want of a genuinely independent second source. The comune's list and the intoscana article that reports it both derive from the same MASAF designation, so they are one source repeated, not two. A RAMI per-tree page or the comune's own park inventory would settle it in one fetch."
+    },
+    {
+      "name": "The Monterey Cypress of the Giardino Simone Weil",
+      "species": "Cupressus macrocarpa",
+      "lat": 43.758658,
+      "lng": 11.248544,
+      "status": "lead",
+      "why": "MASAF 15/D612/FI/09, girth 388 cm, height 18.5 m, in a free public garden about 90 m from the Bobolino cluster. Same problem as the stone pine above: one register, no independent corroboration found in this pass. Monterey cypress is a striking species with a tiny native range on the California coast, so it would earn its place on the story alone if a second source turns up."
+    },
+    {
+      "name": "The Cypress of the Monte alle Croci Steps",
+      "species": "Cupressus sempervirens",
+      "lat": 43.762661,
+      "lng": 11.262575,
+      "status": "lead",
+      "why": "MASAF 19/D612/FI/09, girth 346 cm, height 21.5 m. Sits on the stepped pilgrim climb from Piazza Poggi up to San Miniato al Monte, about 250 m from the live flo_009 ginkgo at Piazzale Michelangelo, so it would join the two hillside stops into a continuous route. Only the register and its municipal republication were found, which is one source. Worth one targeted search on the Via del Monte alle Croci scalinata before the next Florence pass."
+    },
+    {
+      "name": "The Aleppo Pine of Via Giramondino",
+      "species": "Pinus halepensis",
+      "lat": 43.757781,
+      "lng": 11.258919,
+      "status": "lead",
+      "why": "MASAF 17/D612/FI/09, girth 323 cm, height 22.5 m, on Viale Galileo roughly midway between the Bobolino cluster and Piazzale Michelangelo. Would be the connecting stop on Poggi's Viale dei Colli walk. Single-sourced, and the smallest girth of the hillside candidates, so it is the weakest of the four on merit as well as on evidence."
+    },
+    {
+      "name": "The Strawberry Tree of the Giardino dell'Iris",
+      "species": "Arbutus unedo",
+      "lat": 43.762333,
+      "lng": 11.266222,
+      "status": "lead",
+      "why": "MASAF 18/D612/FI/09, height 8.0 m, and the register records no girth at all. Stands about 40 m from the live flo_009 ginkgo, which is as tight as a pairing gets. Two problems, neither fatal: no girth and no age in any source found, and the Giardino dell'Iris opens only for a few weeks around the iris flowering each spring, so the access field would have to say so plainly and the season would effectively be the visit. A strawberry tree fruiting in autumn is a real best_time candidate if it ever clears the evidence bar."
+    },
+    {
+      "name": "The Chilean Wine Palm of Villa di Rusciano",
+      "species": "Jubaea chilensis",
+      "lat": 43.759778,
+      "lng": 11.279306,
+      "status": "lead",
+      "why": "MASAF 22/D612/FI/09, girth 349 cm, height 15.5 m. A genuinely uncommon species in Europe and a good story (the sap was tapped for palm honey until the species was nearly wiped out in Chile), in a municipal villa park. Failed on the count and on distance rather than on quality: it is about 1.6 km east of the Piazzale Michelangelo stop, so it does not join either existing walk. Keep for a third Florence walk if the east side is ever built out."
+    },
+    {
+      "name": "The Three Hackberries of the Cascine",
+      "species": "Celtis australis",
+      "lat": 43.782611,
+      "lng": 11.271056,
+      "status": "lead",
+      "why": "MASAF 54, 55 and 56/D612/FI/09, girths 407, 397 and 355 cm, standing within 25 m of one another at Piazza Vasari. REGISTER TRAP, recorded so the next pass does not repeat the work: these are three separate register entries for what a visitor sees as one group, exactly the double-counting pattern Setubal produced. If they ship they ship as ONE entry describing the group, with the other two sheet ids folded in as leads. Held back this pass because a group of three needs the collectible-point test applied with care, and because the Cascine coordinates in the register put them 3.5 km from the Orto Botanico cluster."
+    },
+    {
+      "name": "The Cypress of Villa della Petraia",
+      "species": "Cupressus sempervirens",
+      "lat": 43.820278,
+      "lng": 11.244639,
+      "status": "lead",
+      "why": "MASAF 10/D612/FI/09, girth 580 cm, the second largest girth in the whole comune after the Montezuma cypress. Villa della Petraia is a Medici villa, a UNESCO site and open to the public, so access is fine. Failed purely on distance: 5 km north of the centre, joins no walk, and would repeat the scattering problem the live page already has. A strong candidate for a Medici villas collection rather than for the city page."
+    },
+    {
+      "name": "The Black Pine of Villa Gamberaia",
+      "species": "Pinus nigra",
+      "lat": 43.778953,
+      "lng": 11.328269,
+      "status": "lead",
+      "why": "MASAF 09/D612/FI/09, girth 364 cm. The intoscana report of the comune's list calls it 'il famoso pino nero' and records the property as private. Villa Gamberaia at Settignano does admit visitors to its gardens by paid ticket, so this is not automatically blocked, but the register itself marks the ownership private and that needs confirming against the villa's own visiting terms before anything is published. 6 km east of the centre."
+    },
+    {
+      "name": "Further Orto Botanico trees on RAMI but not on MASAF",
+      "species": "Acer x peronai, Ginkgo biloba, Liriodendron tulipifera",
+      "lat": 43.7784,
+      "lng": 11.2613,
+      "status": "lead",
+      "why": "RAMI lists 6486 (hybrid maple), 6489 (ginkgo) and 6493 (tulip tree) inside the same garden, none of them on the national MASAF list. They would extend the tightest cluster on the site at zero walking cost. Not pursued this pass because the pass was scoped to the MASAF candidates and the count was already met, and because each needs its own second source. Note the site already has phenology files for ginkgo and tulip-tree, so both would render a year calendar immediately. This is the obvious next Florence job."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "The Stone Pine of the Cascine Pratone",
+      "species": "Pinus pinea",
+      "lat": null,
+      "lng": null,
+      "reason": "Dead. Felled by the windstorm of March 2015 according to the Tuscany monumental tree survey. Hidde's rule: no dead trees as entries, however large. Girth was about 4.5 m."
+    },
+    {
+      "name": "The Wisteria of Via Pisana 130-132",
+      "species": "Wisteria sinensis",
+      "lat": 43.772217,
+      "lng": 11.232589,
+      "reason": "Private property. The comune's own list records the ownership as private and the address is a residential street number, so hard rule 10 applies: not open to visitors, do not publish."
+    },
+    {
+      "name": "The Robinia of Via dei Pepi 7",
+      "species": "Robinia pseudoacacia",
+      "lat": 43.769583,
+      "lng": 11.262278,
+      "reason": "Private property. Recorded as privately owned in the comune's list, at a street number in the centre, with no evidence of public access. Attractive location for a walk and still blocked."
+    },
+    {
+      "name": "The Myrtle of Villa La Stella",
+      "species": "Myrtus communis",
+      "lat": null,
+      "lng": null,
+      "reason": "Private grounds, and not a collectible point. The Tuscany survey describes multiple stems of up to 50 cm circumference in the gardens of Villa La Stella, with a Dante-era age it marks as unconfirmed. A multi-stemmed shrub on private ground fails both the access rule and the one-identifiable-tree rule."
+    },
+    {
+      "name": "The Plane Trees of the Cascine avenue",
+      "species": "Platanus x acerifolia",
+      "lat": null,
+      "lng": null,
+      "reason": "Not a collectible point. Described in the Tuscany survey as the planes along the avenue towards the former racecourse, with girths to about 6 m. An avenue has no single place to stand and nothing to have seen, the same test that removed Barcelona's La Rambla planes."
+    },
+    {
+      "name": "The trees of Villa Torrigiani",
+      "species": "Ginkgo biloba, Platanus, Taxus baccata",
+      "lat": null,
+      "lng": null,
+      "reason": "Access-restricted private garden. The Tuscany survey lists a fine ginkgo of about 6 m girth, decapitated by a German grenade in September 1944 and recovered, but states that visits require a reservation made by telephone through a private contact. That is not publicly accessible in the sense this site promises, so it does not ship. Worth revisiting only if the garden publishes open visiting hours."
+    }
+  ],
+  "off_cluster_currently_published": {
+    "note": "Not leads and not blocked. These four are live on the Florence page today and are named here only because this pass measured the geometry and the next editor will want the numbers. Each is 4 to 9 km from the Orto Botanico cluster and none of them joins a walk. Nothing was changed about them.",
+    "entries": [
+      "flo_004 Farnia dell'Ippodromo, 43.789366/11.20751, about 4.5 km west of the Orto Botanico cluster",
+      "flo_005 Leccio delle Cascine, 43.777337/11.227961, about 2.7 km west",
+      "flo_006 Honey Locust of Salviatino, 43.78538/11.294196, about 2.7 km east",
+      "flo_010 Pine of Villa Vogel, 43.775722/11.20653, about 4.4 km west"
+    ]
+  }
+}
