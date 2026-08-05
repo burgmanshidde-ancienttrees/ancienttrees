@@ -95,15 +95,16 @@
       "age_max": 200,
       "location": {
         "address": "Real Bosco di Capodimonte, Giardino dei Principi, Via Miano 2, 80131 Napoli",
-        "latitude": 40.86884,
-        "longitude": 14.25249,
+        "latitude": 40.86664,
+        "longitude": 14.25215,
         "neighbourhood": "Capodimonte"
       },
       "story": "Among everything the Bourbon court imported to Capodimonte, this eucalyptus grew larger than any other exotic species in the park: 30 metres tall with a trunk 330cm across, tall enough to be visible over the surrounding tree line from well outside the estate's own walls. Eucalyptus robusta, native to Australia's eastern coast, reached Naples in the 19th century as part of the same acclimatisation push that filled European botanic gardens with newly available species from across an expanding colonial trade network, and this specimen was among the first of its kind planted anywhere in the city. It grows in the Garden of the Princes, alongside the estate's camphors and yew, dominating the immediate skyline the way its official designation describes: the largest exotic tree in the entire Real Bosco, camphor and cypress included. Eucalyptus bark sheds in long ribbons rather than staying fixed the way most European trees' bark does, a visual habit that alone tends to stop visitors expecting a Naples park to look distinctly Australian for a moment.",
       "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_200.html",
         "https://capodimonte.cultura.gov.it/gli-alberi-monumentali-del-real-bosco-di-capodimonte/",
         "https://movery.it/en/campania/napoli/bosco-di-capodimonte/",
-        "https://agricoltura.regione.campania.it/foreste/monum/scheda_200.html"
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
       ],
       "access": "Free, Real Bosco di Capodimonte",
       "transport": "Bus C63/178 to Capodimonte, or 20 min uphill walk from Museo Nazionale metro",
@@ -121,19 +122,19 @@
       "id": "nap_004",
       "name": "The Yew of the Garden of the Princes",
       "species": "European Yew (Taxus baccata)",
-      "age_estimate": "documented since 1753",
-      "age_min": 270,
-      "age_max": 350,
+      "age_estimate": "undated; the garden around it dates from about 1840",
+      "age_min": 100,
+      "age_max": 200,
       "location": {
         "address": "Giardino dei Principi, Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
         "latitude": 40.86844,
         "longitude": 14.252714,
         "neighbourhood": "Capodimonte"
       },
-      "story": "Almost everything else remarkable at Capodimonte arrived from somewhere else, shipped in by Bourbon collectors chasing the latest botanical fashion from China, Mexico or Australia. This yew did not. Taxus baccata grows wild across Europe, and this specimen appears in the park's own documentation as far back as 1753, decades before most of Capodimonte's exotic imports had even left their countries of origin, making it one of the very few native species the Bourbons chose to keep and cultivate rather than replace with something more exotic. It has grown into something closer to sculpture than tree since: a gnarled, twisting trunk barely 10 metres tall but 250cm around, roots exposed and looping above the soil in a way the park's own curators describe as genuinely mysterious rather than simply old, the kind of specimen that looks deliberately shaped even though nothing about a slow-growing yew's form is ever really planned. Yews resist precise dating better than almost any tree, their heartwood rotting away as they age, so the 1753 reference remains the firmest anchor for this specimen's real age rather than a ring count anyone could safely take.",
+      "story": "In a garden assembled almost entirely from elsewhere, this is the one that was already European. Nearly everything around it came by ship: camphor from China, a cypress from Mexico, eucalyptus and paperbark from Australia. Taxus baccata grows wild from Ireland to Iran and needed no importing, and the park's curators single it out for exactly that, one of the few native species kept in a collection built to show off the foreign. It is not big. Ten metres tall, two and a half metres round, which for a yew means very little, because the species hollows itself out as it ages and stops keeping a legible record of its own years. What it has instead is shape. The trunk twists, and the roots come up out of the soil and loop across it, so the tree reads as carved rather than grown. One correction, because it is a trap worth naming. Some accounts date this yew to 1753. That is not a record of the tree. It is the year Linnaeus published Species Plantarum, and it sits after the species name in every proper citation of it. Nobody has dated this yew, and the honest answer is that it is old and undated.",
       "verified_sources": [
         "https://capodimonte.cultura.gov.it/gli-alberi-monumentali-del-real-bosco-di-capodimonte/",
-        "https://cosedinapoli.com/itinerari/gli-alberi-monumentali-di-napoli-storia-identita-e-paesaggio/"
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
       ],
       "access": "Free, Real Bosco di Capodimonte (Garden of the Princes)",
       "transport": "Bus C63/178 to Capodimonte, or 20 min uphill walk from Museo Nazionale metro",
@@ -184,7 +185,13 @@
       "age_estimate": "planted 1816",
       "age_min": 210,
       "age_max": 210,
-      "best_time": { "months": [1, 2], "label": "January and February, when the mandarins ripen" },
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "label": "January and February, when the mandarins ripen"
+      },
       "location": {
         "address": "Giardino Torre (Real Fruttiera), Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
         "latitude": 40.879389,
@@ -329,6 +336,66 @@
       "curation_status": "flagged",
       "notes": "24m height and general cloister setting corroborated across two independent sources; the Murat-planted camphor detail is mentioned for context but that is a different tree, not this entry. No individual age or planting date documented for the oak itself; presented as a broad mature estimate. Pin corrected 2026-07-27, about 45m: Campania's regional monumental-tree register carries two other specimens sharing this exact cloister (scheda 223, the Washingtonia palms; scheda 224, the camphor mentioned in this story), both giving identical coordinates (40.852566, 14.252485) for the cloister itself. The register has no separate entry for the holm oak specifically, so this isn't a direct match on this tree, but two independent official records placing its named companions in the same small courtyard is strong enough corroboration for the cloister location to confirm. No usable photo found.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "nap_011",
+      "name": "The Cretan Palm That Came Back From a War",
+      "species": "Cretan Date Palm (Phoenix theophrasti)",
+      "age_estimate": "about 105 years",
+      "age_min": 95,
+      "age_max": 125,
+      "location": {
+        "address": "Near the Porta Grande, Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
+        "latitude": 40.866309,
+        "longitude": 14.251963,
+        "neighbourhood": "Capodimonte"
+      },
+      "story": "This palm arrived in Naples as a war souvenir. Campania's regional register records it as a ricordo di guerra, brought back during Italy's military campaigns in the eastern Mediterranean in the early 1900s, which is how a tree endemic to Crete and a handful of Aegean islands came to stand a few steps inside the main gate of a Bourbon hunting park. Phoenix theophrasti is one of only two palms native to Europe, the other being the dwarf fan palm of the western Mediterranean. It is named for Theophrastus, the Greek who wrote the first surviving books on plants around 300 BC, and in the wild it clings on in a few dozen ravines and beaches on Crete and the Turkish coast. This one does something its species is not supposed to do. The trunk divides low down into several stems, which the register calls atypical for the genus and which is how you pick it out from every other palm in the park. It stands sixteen metres and measures 3.8 metres round, a figure the national and regional registers give identically. The register put its age at 100 years when the record was compiled, so read it as a little over a century now.",
+      "verified_sources": [
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_249.html",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, public park, open daily from 7am",
+      "transport": "Bus C63 or 178 to Capodimonte, then in through the Porta Grande",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Two registers, national and regional, agree exactly on 380 cm girth and 16 m height and their coordinates fall 25 m apart. The age of 100 years is the age at the regional record's last update (December 2019 to January 2020), not today, hence about 105. The colonial-souvenir origin and the branched trunk are the regional register's own wording.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nap_012",
+      "name": "The Paperbark of the Garden of the Princes",
+      "species": "Prickly Paperbark (Melaleuca styphelioides)",
+      "age_estimate": "about 170 years",
+      "age_min": 150,
+      "age_max": 190,
+      "location": {
+        "address": "Giardino dei Principi, Real Bosco di Capodimonte, Via Miano 2, 80131 Napoli",
+        "latitude": 40.8689,
+        "longitude": 14.25383,
+        "neighbourhood": "Capodimonte"
+      },
+      "story": "At 75 centimetres round, this is the slenderest tree Italy's monumental register lists anywhere in Naples, and it is on the list for what it is rather than for how big it got. The museum calls it a true rarity and says it grows in the Bourbon royal sites of Naples and effectively nowhere else in the country, planted here in the middle of the nineteenth century. Melaleuca styphelioides comes from the east coast of Australia, and the whole point of it is the bark. It builds in hundreds of thin papery layers, cream and pale brown, soft enough to press a thumb into, and it lifts off in sheets you could write on. Aboriginal Australians used exactly that: as bandaging, as roofing, as a wrapping for food cooked in ground ovens. The leaves are small and sharp, which is where the name prickly paperbark comes from, and in summer the tree carries short cream flowers like a bottlebrush. It stands nine metres, which for the species is respectable. Do not walk up looking for something monumental in the usual sense. This one asks you to come close and put a hand on the trunk.",
+      "verified_sources": [
+        "https://capodimonte.cultura.gov.it/gli-alberi-monumentali-del-real-bosco-di-capodimonte/",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, public park, open daily from 7am. The Garden of the Princes reopened to visitors in June 2025 after restoration",
+      "transport": "Bus C63 or 178 to Capodimonte, or a 20 minute uphill walk from Museo metro station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Age is the museum's 'mid-nineteenth century' carried to today. Pin marked approximate deliberately: at 75 cm girth and 9 m this is a small tree in a planted garden and a visitor will have to look, unlike the camphor 120 m west. Girth 75 cm is the smallest in the Naples register, which is a units sanity check that passes: it is a genuinely slender tree, listed for rarity.",
+      "location_precision": "approximate"
     }
   ]
 }
