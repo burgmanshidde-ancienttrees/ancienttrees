@@ -1,0 +1,492 @@
+{
+ "source": "Gobierno de Navarra, SITNA/IDENA, Monumentos Naturales (declared natural monument trees)",
+ "endpoint": "https://idena.navarra.es/descargas/BIODIV_Sym_MonumNat.zip",
+ "licence": "CC BY 4.0",
+ "licence_proof": "The ISO metadata inside the download states: Esta capa se publica bajo los terminos de la licencia Creative Commons Reconocimiento 4.0 Internacional (CC BY 4.0). Sera necesario nombrar la fuente de procedencia de la informacion de la manera siguiente: Informacion geografica propiedad del Gobierno de Navarra.",
+ "designation": "Monumento Natural de Navarra",
+ "country": "Spain",
+ "attribution": "Informacion geografica propiedad del Gobierno de Navarra",
+ "fetched": "2026-08-05",
+ "scope": "All 47 declared tree monuments. 'group': true marks those the register itself counts as more than one individual, which are not collectible points.",
+ "caveat": "Coordinates were published in ETRS89 / UTM zone 30N and converted here; ETRS89 and WGS84 differ by centimetres in Europe. The register carries no vitality field and no age, only the year of declaration, so both stay per-tree checks.",
+ "entries": [
+  {
+   "name": "Acebo de Bera",
+   "name_eu": "Berako gorostia",
+   "species": "Ilex aquifolium L.",
+   "place": "Bera",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 43.303256,
+   "longitude": -1.631324
+  },
+  {
+   "name": "Arce de Lezáun",
+   "name_eu": "Lezaungo astigarra",
+   "species": "Acer monspessulanum L.",
+   "place": "Lezáun",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 42.799172,
+   "longitude": -2.021353
+  },
+  {
+   "name": "Encina de Basaura",
+   "name_eu": "Basaulako artea",
+   "species": "Quercus ilex L. subsp. ilex L.",
+   "place": "Améscoa Baja",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 42.762121,
+   "longitude": -2.127776
+  },
+  {
+   "name": "Encinas de Olóriz",
+   "name_eu": "Olorizko arteak",
+   "species": "Quercus ilex subsp. ballota (Desf.) Samp.",
+   "place": "Olóriz",
+   "declared": "2009",
+   "individuals": 5,
+   "latitude": 42.641065,
+   "longitude": -1.628195,
+   "group": true
+  },
+  {
+   "name": "Enebro de Legardeta",
+   "name_eu": "Legardetako ipurua",
+   "species": "Juniperus oxycedrus L.",
+   "place": "Villatuerta",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 42.641178,
+   "longitude": -1.974655
+  },
+  {
+   "name": "Haya de Limitaciones",
+   "name_eu": "Limitaciones Mendiko pagoa",
+   "species": "Fagus sylvatica L.",
+   "place": "Limitaciones de las Améscoas",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 42.796307,
+   "longitude": -2.226919
+  },
+  {
+   "name": "Majuelo de Leitza",
+   "name_eu": "Leitzako elorria",
+   "species": "Crataegus monogyna Jacq.",
+   "place": "Leitza",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 43.070089,
+   "longitude": -1.894911
+  },
+  {
+   "name": "Nogal de Mélida",
+   "name_eu": "Melidako intxaurrondoa",
+   "species": "Juglans regia L.",
+   "place": "Mélida",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 42.362039,
+   "longitude": -1.546891
+  },
+  {
+   "name": "Peral de Bera",
+   "name_eu": "Berako udareondoa",
+   "species": "Pyrus cordata Desv.",
+   "place": "Bera",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 43.291454,
+   "longitude": -1.628507
+  },
+  {
+   "name": "Quejigo de Garínoain",
+   "name_eu": "Garinoaingo erkametza",
+   "species": "Quercus faginea Lam.",
+   "place": "Garínoain",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 42.592328,
+   "longitude": -1.685294
+  },
+  {
+   "name": "Roble de Azanza",
+   "name_eu": "Azantzako haritza",
+   "species": "Quercus humilis Mill.",
+   "place": "Azanza",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 42.824021,
+   "longitude": -1.844074
+  },
+  {
+   "name": "Roble de Echagüe",
+   "name_eu": "Etxagueko haritza",
+   "species": "Quercus humilis Mill.",
+   "place": "Echagüe",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 42.664534,
+   "longitude": -1.585667
+  },
+  {
+   "name": "Roble de Etxarri-Aranatz",
+   "name_eu": "Etxarri Aranazko haritza",
+   "species": "Quercus petraea (Matt.) Liebl.",
+   "place": "Etxarri-Aranatz",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 42.926357,
+   "longitude": -2.096379
+  },
+  {
+   "name": "Roble de Lizarraga",
+   "name_eu": "Lizarragako haritza",
+   "species": "Quercus humilis Mill.",
+   "place": "Lizarraga de Izagaondoa",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 42.764599,
+   "longitude": -1.499303
+  },
+  {
+   "name": "Roble de Orkin",
+   "name_eu": "Orkingo haritza",
+   "species": "Quercus robur L.",
+   "place": "Arraitz-Orkin",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 42.983562,
+   "longitude": -1.639285
+  },
+  {
+   "name": "Tejo de Auztegia",
+   "name_eu": "Auztegiko hagina",
+   "species": "Taxus baccata L.",
+   "place": "Ochagavía",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.998249,
+   "longitude": -1.094658
+  },
+  {
+   "name": "Álamos de Lodosa",
+   "name_eu": "Lodosako zurzuriak",
+   "species": "Populus alba L.",
+   "place": "Lodosa",
+   "declared": "1991",
+   "individuals": 19,
+   "latitude": 42.420202,
+   "longitude": -2.077371,
+   "group": true
+  },
+  {
+   "name": "Arce de Orion",
+   "name_eu": "Oriongo astigarra",
+   "species": "Acer campestre L.",
+   "place": "Orbaitzeta",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 43.011872,
+   "longitude": -1.184228
+  },
+  {
+   "name": "Avellanos de Orion",
+   "name_eu": "Oriongo hurritzak",
+   "species": "Corylus avellana L.",
+   "place": "Orbaitzeta",
+   "declared": "1991",
+   "individuals": 5,
+   "latitude": 43.012608,
+   "longitude": -1.183691,
+   "group": true
+  },
+  {
+   "name": "Encina de Eraul",
+   "name_eu": "Eraulgo artea",
+   "species": "Quercus ilex L. subsp. ilex L. x Quercus ilex subsp. ballota (Desf.) Samp.",
+   "place": "Eraul",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.716268,
+   "longitude": -2.043579
+  },
+  {
+   "name": "Encino de las Tres Patas",
+   "name_eu": "Hiru Hankako artea",
+   "species": "Quercus ilex L. subsp. ilex L.",
+   "place": "Mendaza",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.643142,
+   "longitude": -2.232213
+  },
+  {
+   "name": "Encina de Cábrega",
+   "name_eu": "Cabregako artea",
+   "species": "Quercus ilex subsp. ballota (Desf.) Samp.",
+   "place": "Mués",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.618705,
+   "longitude": -2.251877
+  },
+  {
+   "name": "Encinas de Corella",
+   "name_eu": "Corellako arteak",
+   "species": "Quercus ilex L. subsp. ilex L. x Quercus ilex subsp. ballota (Desf.) Samp.",
+   "place": "Corella",
+   "declared": "1991",
+   "individuals": 3,
+   "latitude": 42.138767,
+   "longitude": -1.748237,
+   "group": true
+  },
+  {
+   "name": "Enebro del Caserío Equiza",
+   "name_eu": "Ekiza Etxarteko ipurua",
+   "species": "Juniperus oxycedrus L.",
+   "place": "Arce",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.853777,
+   "longitude": -1.262649
+  },
+  {
+   "name": "Espino de Azparren",
+   "name_eu": "Azparrengo elorria",
+   "species": "Crataegus monogyna Jacq.",
+   "place": "Azparren",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.886285,
+   "longitude": -1.270369
+  },
+  {
+   "name": "Haya de los tres brazos",
+   "name_eu": "Hiru Besangako pagoa",
+   "species": "Fagus sylvatica L.",
+   "place": "Orbaitzeta",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 43.014156,
+   "longitude": -1.190259
+  },
+  {
+   "name": "Haya de Nabala",
+   "name_eu": "Nabalako pagoa",
+   "species": "Fagus sylvatica L.",
+   "place": "Orbaitzeta",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.993532,
+   "longitude": -1.276255
+  },
+  {
+   "name": "Morera del Castillo de Olite",
+   "name_eu": "Erriberriko Gazteluko  masustondoa",
+   "species": "Morus nigra L.",
+   "place": "Olite",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.481675,
+   "longitude": -1.649559
+  },
+  {
+   "name": "Nogal de Garde",
+   "name_eu": "Gardeko intxaurrondoa",
+   "species": "Juglans regia L.",
+   "place": "Garde",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.789074,
+   "longitude": -0.926137
+  },
+  {
+   "name": "Pinos de Surio",
+   "name_eu": "Surioko pinuak",
+   "species": "Pinus sylvestris L.",
+   "place": "Uztárroz",
+   "declared": "1991",
+   "individuals": 6,
+   "latitude": 42.933639,
+   "longitude": -0.924156,
+   "group": true
+  },
+  {
+   "name": "Quejigo de Rala",
+   "name_eu": "Erralako erkametza",
+   "species": "Quercus faginea Lam.",
+   "place": "Lónguida",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.814579,
+   "longitude": -1.329175
+  },
+  {
+   "name": "Quejigos de Learza",
+   "name_eu": "Learzako erkametzak",
+   "species": "Quercus faginea Lam.",
+   "place": "Etayo",
+   "declared": "1991",
+   "individuals": 12,
+   "latitude": 42.617406,
+   "longitude": -2.170564,
+   "group": true
+  },
+  {
+   "name": "Roble de Eltzaburu",
+   "name_eu": "Eltzaburuko haritza",
+   "species": "Quercus robur L.",
+   "place": "Eltzaburu",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 43.008808,
+   "longitude": -1.716913
+  },
+  {
+   "name": "Roble de Garaioa",
+   "name_eu": "Garaioako haritza",
+   "species": "Quercus petraea (Matt.) Liebl. x Quercus humilis Mill.",
+   "place": "Garaioa",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.928717,
+   "longitude": -1.283003
+  },
+  {
+   "name": "Roble de Jauntsarats I",
+   "name_eu": "Jauntsarasko haritza I",
+   "species": "Quercus robur L.",
+   "place": "Jauntsarats",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 43.002732,
+   "longitude": -1.797562
+  },
+  {
+   "name": "Roble de Jauntsarats II",
+   "name_eu": "Jauntsarasko haritza II",
+   "species": "Quercus robur L.",
+   "place": "Jauntsarats",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.997618,
+   "longitude": -1.798483
+  },
+  {
+   "name": "Roble de \"El Bocal\"",
+   "name_eu": "Bocaleko haritza",
+   "species": "Quercus robur L.",
+   "place": "Fontellas",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.0196,
+   "longitude": -1.557426
+  },
+  {
+   "name": "El Centinela",
+   "name_eu": "El Centinela",
+   "species": "Quercus faginea Lam.",
+   "place": "Zudaire",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.775397,
+   "longitude": -2.136354
+  },
+  {
+   "name": "Sauce de la Presa del Molino",
+   "name_eu": "Errotaren Presako sahatsa",
+   "species": "Salix alba L.",
+   "place": "Sangüesa",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.544414,
+   "longitude": -1.344628
+  },
+  {
+   "name": "Sequoya del Palacio de Diputación",
+   "name_eu": "Diputazioaren Jauregiko sekuoia",
+   "species": "Sequoiadendron giganteum (Lindl.) Buchholz",
+   "place": "Pamplona",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.81549,
+   "longitude": -1.642982
+  },
+  {
+   "name": "Tejo de Otsaportillo",
+   "name_eu": "Otsaportilloko hagina",
+   "species": "Taxus baccata L.",
+   "place": "Sierra de Urbasa",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 42.839719,
+   "longitude": -2.083977
+  },
+  {
+   "name": "Roble de Santa Isabel",
+   "name_eu": "Santa Isabelgo haritza",
+   "species": "Quercus robur L.",
+   "place": "Cortes",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 41.949768,
+   "longitude": -1.390398
+  },
+  {
+   "name": "Robles de Irañeta",
+   "name_eu": "Irañetako haritzak",
+   "species": "Quercus robur L. x Quercus humilis Mill.",
+   "place": "Irañeta",
+   "declared": "2009",
+   "individuals": 5,
+   "latitude": 42.90075,
+   "longitude": -1.936723,
+   "group": true
+  },
+  {
+   "name": "Abetos de Leitzalarrea",
+   "name_eu": "Leitzalarreko izeiak",
+   "species": "Abies alba Mill",
+   "place": "Leitza",
+   "declared": "1991",
+   "individuals": 53,
+   "latitude": 43.119331,
+   "longitude": -1.899286,
+   "group": true
+  },
+  {
+   "name": "Sequoya del embalse de Domiko",
+   "name_eu": "Domikoko Urtegiko sekuoia",
+   "species": "Sequoia sempervirens (D.Don) Endl.",
+   "place": "Lesaka",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 43.24942,
+   "longitude": -1.76429
+  },
+  {
+   "name": "Tejo de Etxalar",
+   "name_eu": "Etxalarko hagina",
+   "species": "Taxus baccata L.",
+   "place": "Etxalar",
+   "declared": "2009",
+   "individuals": 1,
+   "latitude": 43.227528,
+   "longitude": -1.588898
+  },
+  {
+   "name": "Cedro de Bertiz",
+   "name_eu": "Bertizko zedroa",
+   "species": "Cedrus libani A. Rich.",
+   "place": "Señorío de Bertiz, Oieregi",
+   "declared": "1991",
+   "individuals": 1,
+   "latitude": 43.138977,
+   "longitude": -1.613905
+  }
+ ]
+}
