@@ -10,52 +10,62 @@ Two tools were broken and are fixed: the .xls parser lost every string past the
 1,077th, so species names came back as numbers; and cluster_register.py never
 returned on 5,007 points and now uses a grid index.
 
-## THE CHEAPEST CLUSTERS, ranked 2026-08-05 across all six registers
+## THE QUEUE, re-sorted 2026-08-05 on Hidde's ruling: places people search for first
 
-Every cluster of four or more within a 2 km walk, cheapest first. The register
-already gives species, coordinates and usually girth, so a pass here is verify
-and write, not search. `*` marks a city we already publish, where the work
-deepens a page instead of opening one and no new page furniture is needed.
+Regenerate the whole picture with `python3 scripts/backlog.py`. It matches clusters to
+published cities by distance rather than by name (Napoli is Naples, Firenze is
+Florence, and matching those by string sent two passes out to cities that were
+already live), and it sorts on whether the place is one people travel to before
+sorting on how many trees are in the cluster.
 
-| n | across | country | place |
+**Depth is where the volume is now.** 46 of the 56 major cities anyone would name
+are already published, so the biggest untapped supply is not new pages, it is the
+register trees standing next to pages we already have:
+
+| city | we publish | register holds nearby |
+|---|---|---|
+| Barcelona | 16 | 202 |
+| Lisbon | 12 | 70 |
+| Naples | 12 | 58 |
+| Milan | 10 | 48 |
+| Porto | 10 | 41 |
+| Palermo | 8 | 38 |
+| Caserta | 7 | 41 |
+| Lucca | 6 | 29 |
+
+**New pages worth opening, best first.** `t` marks a place people travel to.
+
+| n | across | | place |
 |---|---|---|---|
-| 61 | 3.8 km | Spain | Barcelona `*` |
-| 46 | 2.3 km | Italy | Priverno |
-| 41 | 3.0 km | Italy | Caserta |
-| 31 | 2.9 km | Italy | Monte Sant'Angelo |
-| 30 | 3.6 km | Italy | Napoli |
-| 29 | 0.9 km | Portugal | Mealhada |
-| 29 | 3.7 km | Portugal | Lisboa `*` |
-| 26 | 3.4 km | Portugal | Porto `*` |
-| 26 | 3.7 km | Italy | Varese |
-| 24 | 2.9 km | Italy | Udine |
-| 22 | 2.8 km | Italy | Trieste |
-| 21 | 0.9 km | Italy | Rhemes-Notre-Dame |
-| 21 | 2.6 km | Italy | L'Aquila |
-| 20 | 1.6 km | Italy | Lucca |
-| 20 | 3.3 km | Italy | Firenze |
-| 19 | 3.6 km | Italy | Palermo `*` |
-| 18 | 0.2 km | Italy | San Giorgio in Bosco |
-| 17 | 3.6 km | Italy | Roma |
-| 16 | 2.8 km | Italy | Milano |
+| 22 | 2.8 km | t | Trieste (plus a second cluster of 12 within 300 m, the densest in the register) |
+| 14 | 3.4 km | t | Guimaraes |
+| 14 | 3.3 km | t | Como / Cernobbio |
+| 12 | 3.2 km | t | Perugia (plus 7 within 100 m) |
+| 11 | 2.0 km | t | Padova |
+| 10 | 3.6 km | t | Torino |
+| 9 | 3.5 km | t | Trento |
+| 8 | 1.4 km | t | Viana do Castelo |
+| 12 | 2.6 km | t | Sorrento |
+| 7 | 1.5 km | t | Cagliari |
 
-296 clusters of four or more in total, holding 2,358 registered trees. Regenerate
-with `python3 scripts/cluster_register.py data/registers/*.json`.
+Two warnings on that list. A cluster labelled "Roma" with 14 trees is the southern
+edge of the comune at Castelporziano, twenty kilometres out and on presidential
+estate land: check access before anyone researches it. And Turin is the one big
+city on the list, which is the point Hidde made: the small dense clusters make good
+walks but they do not pull users.
 
-Reading it: cluster size is candidate supply, not the count that ships. A walk is
-four to eight trees, so 46 candidates in Priverno is one comfortable walk with
-plenty of slack, not a 46-tree page. The floor of four verified trees stands, and
-a cluster that thins out under verification gets no page.
+**The next big-city wave is an import job, not a research job.** Of the ten major
+cities still missing (Bilbao, Zaragoza, Turin, Genoa, Pisa, Siena, Catania,
+Hamburg, Marseille, Bordeaux), only Turin, Genoa and Catania have any register
+supply, and Pisa and Siena have zero entries in the Italian national register.
+Madrid, Valencia, Bilbao and Zaragoza need a Spanish register we have not imported;
+Valencia's 482-tree GeoJSON is already located and is the cheapest of those.
+Hamburg needs a German Naturdenkmal register, Marseille and Bordeaux a French one.
+Scout the licence first, per the rule in CLAUDE.md.
 
-**1. Italy, MASAF national register.** The single biggest coverage lever available. 5,008 entries covering 17,564 specimens, of which **4,524 are single trees** and therefore collectible-point eligible; the rest are avenues and groups that fail that test by default. CC BY 4.0, proven twice on the ministry's own pages. Per-tree coordinates, girth, height, and a `CONTESTO URBANO` yes/no flag that filters urban trees for free. City counts already known: Rome 70, Naples 54, Palermo 46, Florence 29, Milan 26, Genoa 17, Turin 14, Venice 13, Bologna 9.
-- Do NOT use the "complete shapefile on request" form. All 21 regional Excel files download directly with no auth and together are the national list.
-- Coordinates in the .xls are sexagesimal split across columns, so they need converting. Shortcut: Sicilia (159) and Milano city (13) republish as GeoJSON with decimal geometry; start there to check the parser before doing the DMS work.
-- The photo gallery on that site is explicitly NOT under the CC BY licence. Data yes, images never.
-
-**2. Andalucia, REDIAM.** 749 trees across eight province KML files, CC BY 4.0 from the dataset's own ISO metadata, decimal WGS84 per tree, and each entry links to a per-tree official PDF, which is the cheapest verification path in Spain. Covers five cities we already publish (Seville, Granada, Cordoba, Cadiz, Malaga) so it deepens them rather than only opening new ones.
-- Caveat recorded: the Junta mixes CC BY, CC BY-NC and CC BY 3.0 across its datasets. The CC BY on this one authorises this one; do not generalise it to anything else from that portal.
-
-**Already retrieved and waiting in this session's scratchpad, worth re-fetching rather than hunting:** Barcelona city (208, imported), Valencia city (482, GeoJSON URL known and working), Tokyo Nakano (262) and Inagi (148), Oita (63 with name, age AND girth) and Okinawa (128 with age and girth), the last two being the best-structured Japanese tree data found anywhere.
+Reading the counts: cluster size is candidate supply, not what ships. A walk is four
+to eight trees, the floor of four verified stands, and a cluster that thins out under
+verification gets no page.
 
 ## One small SEO win from the competitor comparison (2026-07-31, corrected 2026-08-01)
 
