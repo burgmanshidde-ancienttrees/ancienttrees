@@ -125,7 +125,7 @@
       "age_max": 220,
       "location": {
         "address": "Kampa Park, northern edge near the Liechtenstein Palace entrance, 118 00 Praha 1",
-        "latitude": 50.0850,
+        "latitude": 50.085,
         "longitude": 14.4083,
         "neighbourhood": "Mala Strana, Kampa"
       },
@@ -153,7 +153,13 @@
       "age_estimate": "estimated 230 years",
       "age_min": 210,
       "age_max": 250,
-      "best_time": { "months": [10, 11], "label": "late October, when the canopy of Central Europe's tallest tree on this list turns copper" },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October, when the canopy of Central Europe's tallest tree on this list turns copper"
+      },
       "location": {
         "address": "Obora Hvezda nature reserve, near Brevnovska brana, 162 00 Praha 6-Liboc",
         "latitude": 50.0804,
@@ -198,7 +204,9 @@
       "access": "Free, public park (Stromovka / Kralovska obora)",
       "transport": "10 min walk from the Vystaviste tram stop, within Stromovka park near the Governor's Summer House",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "label": "November, when its fan-shaped leaves turn gold and drop within days"
       },
       "photo": {
@@ -304,7 +312,7 @@
     {
       "id": "prg_010",
       "name": "Neruda's Pear Tree",
-      "species": "Wild Pear (Pyrus communis)",
+      "species": "European Pear (Pyrus communis)",
       "age_estimate": "estimated 190 years",
       "age_min": 170,
       "age_max": 200,
@@ -330,7 +338,12 @@
       "curation_status": "flagged",
       "notes": "Not a legally protected pamatny strom, only an entry in Prague's separate, lower-tier 'significant trees' inventory since 2013, unlike every other tree on this list. No exact coordinates were published in either source; location given here is approximate, triangulated from the described path crossing between Petrinske Terasy restaurant and Hellichova street within the Seminary Garden. Photo found 2026-07-28: iNaturalist observation 157617276 (CC BY, Dave Richardson, 29 April 2023), place_guess \"Petrin Gardens, Prague 1\", viewed directly and shows a gnarled old fruit-tree trunk in white blossom with young leaves, consistent with a wild pear in April; the observation's own coordinates sit roughly 200m from this entry's triangulated pin, close enough within the same garden to treat as the tree described here, though the pin itself stays approximate since the source only names a path crossing, not a survey point.",
       "location_precision": "approximate",
-      "best_time": { "months": [4], "label": "April, when it fills with white blossom before the leaves are fully out" }
+      "best_time": {
+        "months": [
+          4
+        ],
+        "label": "April, when it fills with white blossom before the leaves are fully out"
+      }
     }
   ]
 }

@@ -112,7 +112,9 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "best_time": {
-        "months": [5],
+        "months": [
+          5
+        ],
         "label": "mid-May, when the white bracts hang like handkerchiefs",
         "kind": "flowers"
       }
@@ -120,7 +122,7 @@
     {
       "id": "utr_004",
       "name": "The Oude Hortus Yew",
-      "species": "Yew (Taxus baccata)",
+      "species": "European Yew (Taxus baccata)",
       "age_estimate": "over 150 years",
       "age_min": 150,
       "age_max": 200,

@@ -54,7 +54,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "best_time": { "months": [10], "label": "October, when the spiny husks split and the nuts fall", "kind": "fruit" }
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when the spiny husks split and the nuts fall",
+        "kind": "fruit"
+      }
     },
     {
       "id": "maa_002",
@@ -117,7 +123,7 @@
     {
       "id": "maa_004",
       "name": "The Three Oldest Beeches of Stadspark",
-      "species": "Beech (Fagus sylvatica)",
+      "species": "European Beech (Fagus sylvatica)",
       "age_estimate": "about 160 years",
       "age_min": 155,
       "age_max": 165,

@@ -855,6 +855,7 @@ FOOTER = """
 """
 
 ERRORS = []
+REGISTER_ASSET = ""  # the register layer's GeoJSON, written beside the page
 
 
 def esc(s):
@@ -2112,24 +2113,44 @@ def load_registers():
     officially designated trees from government registers, shown as honestly-labeled
     map dots. Not our research, not collectible, no own pages. Each data/registers/*.json
     already carries only trees a register itself calls monumental/remarkable (never a
-    bulk inventory) and only the licence this project verified as commercial-reuse-safe."""
+    bulk inventory) and only the licence this project verified as commercial-reuse-safe.
+
+    Registers do not share a shape and never will: one is Japanese cultural-property
+    records, one is an Italian ministry spreadsheet, one is a Portuguese WFS. So the
+    fields are read by fallback rather than by schema. Anything an entry flags as a
+    group (an avenue, a stand) is skipped, because a dot has to be a place you can
+    stand."""
     reg_dir = DATA / "registers"
     if not reg_dir.exists():
         return []
     out = []
     for f in sorted(reg_dir.glob("*.json")):
         d = json.loads(f.read_text())
-        for t in d.get("trees", []):
+        designation = (d.get("designation") or d.get("attribution")
+                       or d.get("prefecture") or "official register")
+        for t in d.get("trees", []) + d.get("entries", []):
+            if t.get("group"):
+                continue
+            lat, lng = t.get("latitude"), t.get("longitude")
+            if lat is None or lng is None:
+                continue
+            name = (t.get("name_en") or t.get("name") or t.get("name_ja")
+                    or t.get("name_it") or t.get("name_pt") or t.get("species") or "")
+            area = (t.get("area_en") or t.get("area") or t.get("comune")
+                    or t.get("concelho") or t.get("city") or t.get("province")
+                    or t.get("prefecture") or "")
+            own = t.get("designation")
+            if d.get("prefecture") and not own:
+                own = f"{d['prefecture']} Natural Monument"
             out.append({
-                "name": t.get("name_en") or t["name_ja"],
+                "name": name,
                 # English display area falls back to the raw field rather than
                 # hiding a tree a translation was missed for (P7: say what you
                 # know honestly, never blank).
-                "area": t.get("area_en") or t.get("area", ""),
-                "prefecture": d["prefecture"],
-                "designation": f"{d['prefecture']} Natural Monument",
-                "lat": t["latitude"],
-                "lng": t["longitude"],
+                "area": area,
+                "designation": own or designation,
+                "lat": lat,
+                "lng": lng,
             })
     return out
 
@@ -2337,6 +2358,88 @@ def highlight_curve(ph):
                         "label": ph.get(label_key)})
 
     return [min(1.0, v) for v in vals], moments
+
+
+# Two checks born from one afternoon of merging six register passes (2026-08-05).
+# Both failures were live before anyone noticed, both are mechanical, and both
+# cost a human twenty minutes to find by reading pages. The build finds them now.
+
+NUMBER_WORDS = {w: n for n, w in enumerate(
+    "zero one two three four five six seven eight nine ten eleven twelve thirteen "
+    "fourteen fifteen sixteen seventeen eighteen nineteen twenty".split())}
+_N = "|".join(NUMBER_WORDS)
+# Three shapes, each deliberately narrow. A page counts other things all the
+# time ("the two trees frame two kinds of longevity", "only four trees in the
+# whole city carry the designation"), so only a phrase that can just about
+# only mean "this is how many trees this page has" is allowed to fail a build.
+SUMMARY = ("meta_description", "question_meta")
+ALL_COPY = ("intro", "meta_description", "question_meta", "question_answer",
+            "question_context", "faq")
+_PROMISE = [
+    # "Naples's ten most remarkable trees"
+    (re.compile(r"\b(%s)\s+(?:most|remarkable)\b" % _N, re.I), lambda n: {n}, ALL_COPY),
+    # "its story, and nine more". One or two trees are named before it. Only in
+    # the two summary fields: in body prose "five more planted by the residents"
+    # is Bath counting the five planes inside a single entry.
+    (re.compile(r"\b(%s)\s+more\b" % _N, re.I), lambda n: {n + 1, n + 2}, SUMMARY),
+    # "six of the ten trees on this list", "none of these ten need a ticket"
+    (re.compile(r"\bof the\s+(%s)\s+trees?\b" % _N, re.I), lambda n: {n}, ALL_COPY),
+    (re.compile(r"\b(?:these|the)\s+(%s)\s+"
+                r"(?:are|is|need|needs|were|was|stand|stands|remain|listed)\b" % _N, re.I),
+     lambda n: {n}, ALL_COPY),
+]
+
+
+def check_count_promises(city_data, canonical):
+    """A city that grows past ten must stop promising ten.
+
+    Florence went to fifteen with three separate sentences still saying ten, one
+    of them a FAQ answer counting which six of the ten were free. The title is
+    generated and corrected itself; the hand-written copy did not, and nothing
+    was watching it."""
+    n = len(city_data.get("trees") or [])
+    fields = [(k, city_data.get(k, "")) for k in
+              ("intro", "meta_description", "question_meta", "question_answer",
+               "question_context")]
+    for f in city_data.get("faq") or []:
+        fields += [("faq", f.get("q", "")), ("faq", f.get("a", ""))]
+    for key, text in fields:
+        if not text:
+            continue
+        for rx, allowed, scope in _PROMISE:
+            if key not in scope:
+                continue
+            for m in rx.finditer(text):
+                word = next(g for g in m.groups() if g)
+                claims = allowed(NUMBER_WORDS[word.lower()])
+                if min(claims) < 4 or n in claims:
+                    continue
+                ERRORS.append(
+                    f"{canonical}: copy still promises "
+                    f"{'/'.join(str(c) for c in sorted(claims))} trees but the city has "
+                    f"{n} ({m.group(0)!r})")
+
+
+def check_species_names(cities):
+    """Hard rule 9: one canonical common name per species, or the species pages
+    split. Florence carried a Deodar Cedar and a Himalayan Cedar, the same tree
+    twice, and Celtis australis was living under three names across the corpus."""
+    by_latin = {}
+    for entry in sorted(cities, key=lambda e: e["slug"]):
+        slug, data = entry["slug"], entry.get("data") or {}
+        for t in data.get("trees") or []:
+            sp = t.get("species") or ""
+            m = re.search(r"\(([^)]+)\)", sp)
+            if not m:
+                continue
+            common = sp[:m.start()].strip()
+            by_latin.setdefault(m.group(1).strip(), {}).setdefault(common, []).append(slug)
+    for latin, commons in sorted(by_latin.items()):
+        if len(commons) > 1:
+            spread = "; ".join(f"{c!r} in {sorted(set(v))[0]}" + (" and others" if len(set(v)) > 1 else "")
+                               for c, v in sorted(commons.items()))
+            ERRORS.append(f"species {latin} uses {len(commons)} common names, hard rule 9 "
+                          f"allows one: {spread}")
 
 
 def check_phenology():
@@ -2759,6 +2862,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
         f"The oldest and most remarkable trees in {city}, {country}: "
         f"verified locations, real stories, and how to reach each one."
     )
+    check_count_promises(city_data, canonical)
     intro = city_data.get("intro")
     if not intro:
         ERRORS.append(f"{canonical}: city intro (60-100 words, unique) is required by Contract C")
@@ -3726,7 +3830,14 @@ def build_explore_page(all_cities, pages, registers=None):
         "properties": {"name": r["name"], "area": r["area"],
                        "designation": r["designation"]},
     } for r in (registers or [])]
-    reg_geojson = json.dumps({"type": "FeatureCollection", "features": reg_feats})
+    # Written beside the page rather than into it (see the fetch in the script
+    # below): coordinates rounded to five decimals, about a metre, which is far
+    # finer than a register pin deserves and saves a fifth of the file.
+    for f in reg_feats:
+        f["geometry"]["coordinates"] = [round(c, 5) for c in f["geometry"]["coordinates"]]
+    global REGISTER_ASSET
+    REGISTER_ASSET = "" if not reg_feats else json.dumps({"type": "FeatureCollection", "features": reg_feats},
+                                ensure_ascii=False, separators=(",", ":"))
     canonical = f"{BASE_URL}/explore"
     # No counts in this copy (Hidde, 2026-07-29): "je moet nadenken dat alles
     # wat je maakt ooit gaat bestaan uit miljoenen bomen." A sentence that
@@ -3778,7 +3889,6 @@ def build_explore_page(all_cities, pages, registers=None):
 """
     script = """
 var DATA = __GEOJSON__;
-var REGISTERS = __REGISTERS__;
 var CITIES = __CITIES__;
 // One world only (Hidde, 2026-07-29: "ik hoef niet 2 werelden te zien").
 var map = new maplibregl.Map({
@@ -3844,22 +3954,29 @@ function initTreeLayers() {
   // trees on purpose (small, hollow, grey) so the two layers read as
   // different kinds of thing, not competing dots. No clustering (small
   // pilot count); no click-through URL, since these carry no own page.
-  if (REGISTERS.features.length) {
-    map.addSource('registers', {type: 'geojson', data: REGISTERS});
-    map.addLayer({id: 'register', type: 'circle', source: 'registers',
-      paint: {'circle-color': 'rgba(0,0,0,0)', 'circle-radius': 5,
-              'circle-stroke-width': 1.5, 'circle-stroke-color': '#8A8578'}});
-    map.on('click', 'register', function(e) {
-      var p = e.features[0].properties;
-      new maplibregl.Popup({offset: 10})
-        .setLngLat(e.features[0].geometry.coordinates)
-        .setHTML('<strong>' + p.name + '</strong><br>' + p.designation +
-                 (p.area ? ' &middot; ' + p.area : '') +
-                 '<br><em>From the official register, not yet verified by us.</em>')
-        .addTo(map);
-    });
-    map.on('mouseenter', 'register', function() { map.getCanvas().style.cursor = 'pointer'; });
-    map.on('mouseleave', 'register', function() { map.getCanvas().style.cursor = ''; });
+  // Fetched rather than inlined: there are thousands of these and they would
+  // otherwise be the heaviest thing on the page, loaded before the map the
+  // visitor actually came for. They also only appear from zoom 8, because a
+  // grey haze over Europe at world zoom tells nobody anything.
+  if (!map.getSource('registers')) {
+    fetch('assets/registers.json').then(function(r) { return r.json(); }).then(function(data) {
+      if (!data.features.length || map.getSource('registers')) { return; }
+      map.addSource('registers', {type: 'geojson', data: data});
+      map.addLayer({id: 'register', type: 'circle', source: 'registers', minzoom: 8,
+        paint: {'circle-color': 'rgba(0,0,0,0)', 'circle-radius': 5,
+                'circle-stroke-width': 1.5, 'circle-stroke-color': '#8A8578'}});
+      map.on('click', 'register', function(e) {
+        var p = e.features[0].properties;
+        new maplibregl.Popup({offset: 10})
+          .setLngLat(e.features[0].geometry.coordinates)
+          .setHTML('<strong>' + p.name + '</strong><br>' + p.designation +
+                   (p.area ? ' &middot; ' + p.area : '') +
+                   '<br><em>From the official register, not yet verified by us.</em>')
+          .addTo(map);
+      });
+      map.on('mouseenter', 'register', function() { map.getCanvas().style.cursor = 'pointer'; });
+      map.on('mouseleave', 'register', function() { map.getCanvas().style.cursor = ''; });
+    }).catch(function() { /* the map works without this layer */ });
   }
   // One map experience, not two (Hidde, 2026-07-30): the world map is the
   // launcher, the city page (map plus tree list) is the destination. A
@@ -3936,7 +4053,6 @@ renderPanel();
 })(0);
 """
     script = (script.replace("__GEOJSON__", geojson)
-                    .replace("__REGISTERS__", reg_geojson)
                     .replace("__CITIES__", cities_json)
                     .replace("__STYLE__", MAP_STYLE))
     script = f'<script src="{MAPLIBRE_JS}"></script>\n<script>\n' + script + "\n</script>" + SEARCH_WIDGET_JS
@@ -4795,6 +4911,7 @@ def main():
     global PHENOLOGY
     PHENOLOGY = load_phenology()
     check_phenology()
+    check_species_names(cities)
     country_intros = load_country_intros()
     cities_by_slug = {c["slug"]: c for c in cities}
     pages = []  # (relative path, html, canonical or None)
@@ -4921,6 +5038,10 @@ def main():
         shutil.rmtree(DIST)
     (DIST / "assets").mkdir(parents=True)
     (DIST / "assets" / "style.css").write_text(CSS)
+    # Written here, not while the page is built: DIST is wiped and recreated
+    # at this point, so anything written earlier disappears.
+    if REGISTER_ASSET:
+        (DIST / "assets" / "registers.json").write_text(REGISTER_ASSET)
     # Custom domain for GitHub Pages; must survive every rebuild.
     (DIST / "CNAME").write_text(CUSTOM_DOMAIN + "\n")
     # One shared index behind the one search interaction on home and /explore.

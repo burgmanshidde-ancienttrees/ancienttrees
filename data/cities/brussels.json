@@ -63,7 +63,13 @@
       "age_estimate": "200+ years",
       "age_min": 200,
       "age_max": 260,
-      "best_time": { "months": [6, 7], "label": "late June, when its flowers scent the whole street corner" },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "late June, when its flowers scent the whole street corner"
+      },
       "location": {
         "address": "Kasterlindenstraat, opposite Cafe In de Linde, Dilbeek, Brussels",
         "latitude": 50.8557989,
@@ -124,7 +130,13 @@
       "age_estimate": "old growth, undated",
       "age_min": 100,
       "age_max": 220,
-      "best_time": { "months": [10, 11], "label": "late October, when the beech turn copper over the ponds" },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October, when the beech turn copper over the ponds"
+      },
       "location": {
         "address": "Bois de la Cambre, near the ponds and Chalet Robinson, 1000 Brussels",
         "latitude": 50.8058,
@@ -181,11 +193,17 @@
     {
       "id": "bru_006",
       "name": "The Purple Beech of Parc Tournay-Solvay",
-      "species": "Purple Beech (Fagus sylvatica f. purpurea)",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
       "age_estimate": "150-200 years",
       "age_min": 150,
       "age_max": 200,
-      "best_time": { "months": [4, 5], "label": "April and May, when the new leaves are brightest red-purple" },
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "label": "April and May, when the new leaves are brightest red-purple"
+      },
       "location": {
         "address": "Parc Tournay-Solvay, Chaussee de La Hulpe, 1170 Watermael-Boitsfort, Brussels",
         "latitude": 50.793916,
@@ -246,7 +264,12 @@
       "age_estimate": "unknown, mature",
       "age_min": 100,
       "age_max": 180,
-      "best_time": { "months": [8], "label": "August, when it is one of the last trees in the city to flower" },
+      "best_time": {
+        "months": [
+          8
+        ],
+        "label": "August, when it is one of the last trees in the city to flower"
+      },
       "location": {
         "address": "Jardins de l'Abbaye de la Cambre, Avenue Emile Duray, 1050 Ixelles, Brussels",
         "latitude": 50.819676,
@@ -277,7 +300,12 @@
       "age_estimate": "possibly 200 years",
       "age_min": 120,
       "age_max": 200,
-      "best_time": { "months": [8], "label": "August, when the fruit drops and stains the path" },
+      "best_time": {
+        "months": [
+          8
+        ],
+        "label": "August, when the fruit drops and stains the path"
+      },
       "location": {
         "address": "Jardin Botanique (Le Botanique), Rue Royale, 1210 Saint-Josse-ten-Noode, Brussels",
         "latitude": 50.855198,
@@ -304,11 +332,16 @@
     {
       "id": "bru_010",
       "name": "The Chestnut Avenue of the Cinquantenaire",
-      "species": "Common Horse Chestnut (Aesculus hippocastanum)",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
       "age_estimate": "possibly close to 200 years",
       "age_min": 140,
       "age_max": 190,
-      "best_time": { "months": [5], "label": "May, when its candle-shaped flowers bloom along the avenue" },
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when its candle-shaped flowers bloom along the avenue"
+      },
       "location": {
         "address": "Parc du Cinquantenaire, 1000 Brussels / 1040 Etterbeek",
         "latitude": 50.8414,

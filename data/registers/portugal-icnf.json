@@ -3,6 +3,7 @@
  "endpoint": "https://si.icnf.pt/wfs/arv_class (WFS 2.0, GeoJSON, EPSG:4326)",
  "licence": "CC BY 4.0",
  "licence_proof": "Sem restricoes. A utilizacao ou divulgacao deste conjunto de dados geograficos requer sempre a indicacao expressa da sua proveniencia e autoria: ICNF. (https://geocatalogo.icnf.pt/metadados/arv_class.html)",
+ "designation": "Arvoredo de Interesse Publico",
  "attribution": "ICNF",
  "fetched": "2026-08-04",
  "scope": "Complete national register, all 18 mainland districts. The earlier import held only 124 entries because the fetch was scoped to Lisboa, Porto and Sintra; the other 431 sat behind the same endpoint under the same licence.",

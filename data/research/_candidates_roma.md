@@ -1,0 +1,44 @@
+- Ippocastano | Aesculus hippocastanum L. | 345cm | 41.89340,12.48219
+- Fitolacca arborea | Phytolacca dioica L. |  | 41.89380,12.48253
+- Cedro del Libano | Cedrus libani A.Richard | 453cm | 41.88846,12.46511
+- Podocarpo | Podocarpus neriifolius D. Don | 200cm | 41.88335,12.46369
+- Cedro dell'Himalaya | Cedrus deodara (D.Don) G.Don | 500cm | 41.88339,12.46473
+- Pino d'Aleppo | Pinus  halepensis Mill. | 350cm | 41.88518,12.49436
+- Cedro del Libano | Cedrus libani A.Richard | 440cm | 41.88519,12.49435
+- Cedro del Libano | Cedrus libani A.Richard | 500cm | 41.88423,12.49300
+- Falso kapok | Ceiba speciosa (A.St.-Hil, A.Juss & Cambess.) syn Chorisia speciosa A. St. Hill | 380cm | 41.88268,12.49413
+- Ibrido di Quercia americana | Quercus nigra L. x velutina Lam | 380cm | 41.88203,12.49504
+- Platano comune | Platanus acerifolia (Aiton) Willd. | 565cm | 41.88722,12.46964
+- Magnolia | Magnolia grandiflora L. | 290cm | 41.89269,12.46714
+- Sequoia sempreverde | Sequoia sempervirens (D. Don) Endl. | 420cm | 41.91164,12.47961
+- Pino dell'Himalaya | Pinus roxburghii Sarg. | 290cm | 41.89353,12.49711
+- Melograno | Punica granatum L. |  | 41.88217,12.49619
+- Palma blu del Messico o Palma armata | Brahea armata S.Watson | 294cm | 41.88350,12.46481
+- Podocarpo | Podocarpus neriifolius D. Don | 230cm | 41.89506,12.50322
+- Frassino meridionale | Fraxinus angustifolia Vahl subsp. oxycarpa (Willd.) Franco & Rocha Afonso |  | 41.69572,12.38012
+- Farnia | Quercus robur L. | 605cm | 41.70389,12.39336
+- Leccio | Quercus ilex L. | 450cm | 41.68211,12.39754
+- Rovere | Quercus petraea (Matt.) Liebl. | 420cm | 41.70112,12.37978
+- Sughera | Quercus suber L. | 675cm | 41.69839,12.40541
+- Fillirea | Phillyrea latifolia L. |  | 41.69040,12.40461
+- Cerro-sughera | Quercus crenata Lam. | 560cm | 41.68940,12.40025
+- Frassino meridionale | Fraxinus angustifolia Vahl subsp. oxycarpa (Willd.) Franco & Rocha Afonso | 362cm | 41.70623,12.39919
+- Sughera | Quercus suber L. | 450cm | 41.70038,12.40716
+- Sughera | Quercus suber L. | 430cm | 41.68562,12.39919
+- Sughera | Quercus suber L. | 410cm | 41.70623,12.39919
+- Ontano nero | Alnus glutinosa  (L.) Gaertn. | 300cm | 41.69245,12.37407
+- Sughera | Quercus suber L. | 450cm | 41.69494,12.39766
+- Sughera | Quercus suber L. | 640cm | 41.69709,12.39086
+- Platano comune | Platanus acerifolia (Aiton) Willd. | 553cm | 41.94526,12.53335
+- Mandorlo | Prunus dulcis (Mill.) D.A. Webb | 360cm | 41.95381,12.53628
+- Mandorlo | Prunus dulcis (Mill.) D.A. Webb | 300cm | 41.95417,12.53717
+- Pioppo nero | Populus nigra L. | 405cm | 41.94131,12.52233
+- Leccio | Quercus ilex L. | 430cm | 41.91521,12.48273
+- Cedro del Libano | Cedrus libani A.Richard | 410cm | 41.91515,12.48348
+- Leccio | Quercus ilex L. | 280cm | 41.92514,12.46469
+- Sughera | Quercus suber L. | 595cm | 41.76390,12.42379
+- Farnia | Quercus robur L. | 450cm | 41.75303,12.43077
+- Pioppo nero | Populus nigra L. | 620cm | 41.77442,12.43147
+- Bagolaro | Celtis australis L. | 414cm | 41.87636,12.50267
+- Bagolaro | Celtis australis L. | 401cm | 41.87661,12.50136
+- Pino dell'Himalaya | Pinus roxburghii Sarg. | 297cm | 41.88461,12.52350

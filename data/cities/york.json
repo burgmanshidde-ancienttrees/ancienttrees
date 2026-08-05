@@ -147,7 +147,10 @@
       "notes": "Same two-source basis as the Willow-Leaved Ash; both pages place it on 'the bottom lawn near the river', used to position the coordinate toward the garden's river edge. No Ancient Tree Inventory alder record exists inside the garden at all, so this stays garden-level, not tree-level; marked approximate. A CC-BY iNaturalist Alnus glutinosa photo taken just south of the garden was checked and declined: ordinary, uncut leaves, not this cultivar's deeply incised form.",
       "location_precision": "approximate",
       "best_time": {
-        "months": [2, 3],
+        "months": [
+          2,
+          3
+        ],
         "label": "February and March, when its reddish-purple catkins hang before the leaves appear",
         "kind": "catkins"
       }
@@ -185,7 +188,7 @@
     {
       "id": "yor_006",
       "name": "The Small-Leaved Lime",
-      "species": "Small-Leaved Lime (Tilia cordata)",
+      "species": "Small-leaved Lime (Tilia cordata)",
       "age_estimate": "150 years",
       "age_min": 80,
       "age_max": 150,
@@ -212,7 +215,9 @@
       "notes": "Same two-source basis as the Willow-Leaved Ash. The Ancient Tree Inventory's only lime record near York sits well outside the garden (Fulford area), so it is not this tree; coordinate stays garden-level, marked approximate.",
       "location_precision": "approximate",
       "best_time": {
-        "months": [10],
+        "months": [
+          10
+        ],
         "label": "October, when its small heart-shaped leaves turn a clean yellow",
         "kind": "autumn colour"
       }

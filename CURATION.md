@@ -4093,3 +4093,14 @@ would notice. For the Moreton Bay Fig it is a gap, not a fact, because the tree
 does fruit and the fallen figs stain pavements in Palermo, Seville and Valencia.
 Needs two sources and a month range before it can be filled. Not urgent: an
 honest blank beats an invented season.
+
+## 2026-08-05 — the Old Lions of Kew, a collectible-point question
+
+lon_009 carried the species "Multiple species including Japanese Pagoda Tree
+(Styphnolobium japonicum)", which broke the hard rule 9 check because it is not
+a species name. Set to Japanese Pagoda Tree, since the scientific name in the
+entry already commits to one species. The underlying question is bigger and is
+NOT settled here: the story itself says the five Old Lions span the Kew site
+rather than clustering, which is the same test the Rambla planes failed. Worth
+a decision: either the entry becomes the single pagoda tree at its pin, or the
+Old Lions come off the page.
