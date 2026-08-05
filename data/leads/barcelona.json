@@ -1,0 +1,390 @@
+{
+  "city": "Barcelona",
+  "country": "Spain",
+  "updated": "2026-08-05",
+  "source": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere.",
+  "how_to_read": "leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason.",
+  "leads": [
+    {
+      "name": "Freixe de fulla estreta del Jardi Botanic Historic",
+      "species": "Fraxinus angustifolia",
+      "register_id": 99400637941,
+      "latitude": 41.366868,
+      "longitude": 2.152084,
+      "why_not": "Count, not quality. This and the Acer below are the two remaining trees of the four the Catalan government declared monumental in April 2025, all four in the Sot de l'Estany ravine. We already publish the other two (bcn_005, bcn_006) and the city intro already tells the reader there are four. Adding both would put four of sixteen Barcelona entries inside one ravine behind one paid gate. Strong candidates the day the page can carry them, and the pair completes a claim the page already makes.",
+      "register_notes": "No planting year recorded. 29 m tall, girth 2.5 m, crown 15 m. Catalogued 2015."
+    },
+    {
+      "name": "Fals platan del Jardi Botanic Historic",
+      "species": "Acer pseudoplatanus",
+      "register_id": 99400637939,
+      "latitude": 41.36677,
+      "longitude": 2.152069,
+      "why_not": "Same as above: the fourth monumental tree of the Sot de l'Estany, held back on count rather than merit. Register gives no planting year ('Per determinar'), so it would ship flagged.",
+      "register_notes": "30 m tall, girth 1.4 m, crown 12 m. Catalogued 2015."
+    },
+    {
+      "name": "Camforer del Jardi Botanic Historic",
+      "species": "Cinnamomum camphora",
+      "register_id": null,
+      "latitude": 41.36716,
+      "longitude": 2.15338,
+      "why_not": "1933, so 93 years, and a third entry inside the same paid garden. Ownership reads 'Privat' but that is the museum owning the land, not a closed gate, the same as bcn_006. Held on count and age, not access.",
+      "register_notes": "Sector de la Mediterrania. OSM node 4506730853 confirms the position."
+    },
+    {
+      "name": "Robinia del parc de la Ciutadella",
+      "species": "Robinia pseudoacacia",
+      "register_id": 99400761017,
+      "latitude": 41.388178,
+      "longitude": 2.186597,
+      "why_not": "A 4.3 m trunk perimeter, which is large for a black locust, but the register's age field reads '100 anys' rather than a year, so there is no date to verify and no second source was found. Catalogued only in 2024, so press coverage may follow.",
+      "register_notes": "12 m tall, crown 9 m. Parterre between passeig Joaquim Renart and the Cascada."
+    },
+    {
+      "name": "Platan del parc de la Ciutadella",
+      "species": "Platanus x acerifolia",
+      "register_id": 99400728979,
+      "latitude": 41.388756,
+      "longitude": 2.187429,
+      "why_not": "3.6 m girth and a 24 m crown, the biggest plane in the park, but the register carries no planting year at all and no second source dates it.",
+      "register_notes": "Between the lake and the zoo fence. Catalogued 2021."
+    },
+    {
+      "name": "Pitospor de la Ciutadella",
+      "species": "Pittosporum tobira",
+      "register_id": 99400638005,
+      "latitude": 41.387625,
+      "longitude": 2.186243,
+      "why_not": "No planting year, no recorded height, and a 1.55 m girth on a species that is usually a shrub. Interesting as a curiosity, thin as a page.",
+      "register_notes": "In front of the Glorieta de la Transsexual Sonia. Catalogued 2017."
+    },
+    {
+      "name": "Araucaria de la casa de la Misericordia",
+      "species": "Araucaria heterophylla",
+      "register_id": 99400637926,
+      "latitude": 41.383534,
+      "longitude": 2.168782,
+      "why_not": "27 m tall in the same courtyard as bcn_010, but the register gives no planting year and no independent source was found. It would also be a second entry on one small Raval courtyard.",
+      "register_notes": "Catalogued 2016."
+    },
+    {
+      "name": "Platan oriental de la Universitat",
+      "species": "Platanus orientalis",
+      "register_id": 99400454967,
+      "latitude": 41.386361,
+      "longitude": 2.164063,
+      "why_not": "1933, so 93 years, on a square rather than in a garden. A true Platanus orientalis rather than the usual London plane hybrid is genuinely uncommon in Spanish cities and this is worth a second look when Barcelona next grows. Would extend the Raval walk east to Placa de la Universitat.",
+      "register_notes": "18 m tall, girth 2 m, crown 17 m. Public."
+    },
+    {
+      "name": "Alvocater de la placa de Can Bruixa",
+      "species": "Persea americana",
+      "register_id": 99400455082,
+      "latitude": 41.383571,
+      "longitude": 2.130811,
+      "why_not": "An avocado tree 17 m tall in a Les Corts square is a good story, but 1945 makes it 81 years, under the bar, and its 0.8 m girth is slight. 465 m from bcn_007, so it would join that walk if the age bar ever softens.",
+      "register_notes": "Public. OSM node 4506776546 confirms the position."
+    },
+    {
+      "name": "Lagunaria dels jardins del Teatre Grec",
+      "species": "Lagunaria patersonia",
+      "register_id": 99400455071,
+      "latitude": 41.369803,
+      "longitude": 2.159438,
+      "why_not": "1923, 103 years, girth 2.4 m, crown 20 m, on public ground in the Teatre Grec gardens. Held only because Montjuic already carries two entries and this pass spent its budget on Ciutadella. A good first pick for the next Montjuic pass, together with the Erythrina below, which would make a real Montjuic walk instead of two trees behind one gate.",
+      "register_notes": "OSM node 4492855030 confirms the position."
+    },
+    {
+      "name": "Eritrina dels jardins del Teatre Grec",
+      "species": "Erythrina falcata",
+      "register_id": 99400455020,
+      "latitude": 41.36928,
+      "longitude": 2.158602,
+      "why_not": "1923, girth 2.7 m, 20 m crown, public, and a species that flowers hard enough to carry a best_time. Same reason as the Lagunaria: saved for a Montjuic pass. Note the register's units field is empty for this entry, so check it is one tree and not a group before writing.",
+      "register_notes": "OSM node 4492857600 records the species as Erythrina lysistemon rather than falcata; resolve that before publishing."
+    },
+    {
+      "name": "Huingan del carrer Joaquim Blume",
+      "species": "Schinus longifolia",
+      "register_id": null,
+      "latitude": 41.37205,
+      "longitude": 2.15539,
+      "why_not": "1916, public, but a street tree with no second source found and little to say beyond the species."
+    },
+    {
+      "name": "Taronger de Louisiana del carrer Maria Montessori",
+      "species": "Maclura pomifera",
+      "register_id": 99400455061,
+      "latitude": 41.370731,
+      "longitude": 2.155415,
+      "why_not": "1948, 78 years. The same species as bcn_013 and younger; Barcelona does not need two Osage oranges.",
+      "register_notes": "Named in the same beteve.cat article as bcn_013."
+    },
+    {
+      "name": "Castanyer bord de la placa Carles Buigas",
+      "species": "Aesculus hippocastanum",
+      "register_id": null,
+      "latitude": 41.37,
+      "longitude": 2.1497,
+      "why_not": "1937, 89 years, under the bar."
+    },
+    {
+      "name": "Ginjoler dels jardins Joan Maragall",
+      "species": "Ziziphus jujuba",
+      "register_id": 99400455075,
+      "latitude": 41.36753,
+      "longitude": 2.15644,
+      "why_not": "1958, 68 years, well under the bar, and the Joan Maragall gardens open only at weekends."
+    },
+    {
+      "name": "Ginkgo dels jardins de Mossen Cinto Verdaguer",
+      "species": "Ginkgo biloba",
+      "register_id": 99400455074,
+      "latitude": 41.367376,
+      "longitude": 2.164573,
+      "why_not": "1958, 68 years. Would carry an excellent autumn best_time if the age bar ever softened for a species this distinctive."
+    },
+    {
+      "name": "Molle del jardi d'Aclimatacio and Eucaliptus tuart del jardi d'Aclimatacio",
+      "species": "Schinus longifolia; Eucalyptus gomphocephala",
+      "register_id": null,
+      "latitude": 41.3663,
+      "longitude": 2.1512,
+      "why_not": "Both dated 'Per determinar' in the register, both a short walk from bcn_005 and bcn_006. Two undated trees is not a walk."
+    },
+    {
+      "name": "Llentiscle de l'Hort de l'Avi, Garrofer del carrer Maignon, Pebrer bord del carrer Maignon, Xiprer comu del carrer Betlem",
+      "species": "Pistacia lentiscus; Ceratonia siliqua; Schinus molle; Cupressus sempervirens",
+      "register_id": null,
+      "latitude": null,
+      "longitude": null,
+      "why_not": "All four sit within 450 m of the Park Guell pins and all four are dated 'Per determinar'. They are the obvious material for thickening the Gracia walk, and every one of them needs a date first."
+    },
+    {
+      "name": "Ficus de Mysore del Santuari de Sant Josep de la Muntanya",
+      "species": "Ficus drupacea",
+      "register_id": null,
+      "latitude": 41.4123,
+      "longitude": 2.1494,
+      "why_not": "Undated in the register and access to the sanctuary grounds is unverified. Worth a proper look: it is sacred ground 424 m from the Park Guell cluster, and CLAUDE.md's own step 1 says that is exactly where the unlisted old trees are."
+    },
+    {
+      "name": "Arbres de l'amor de la placa Joanic",
+      "species": "Cercis siliquastrum",
+      "register_id": null,
+      "latitude": 41.4046,
+      "longitude": 2.1615,
+      "why_not": "1956, 70 years. A Judas tree's April flowering would make a strong best_time, and it is 330 m from bcn_001, but it is too young."
+    },
+    {
+      "name": "The Pedralbes cluster: Jardins del Palau Reial de Pedralbes and Jardins de la Torre Girona",
+      "species": "Pinus pinea; Cedrus deodara; Tetraclinis articulata; Brachychiton populneus; Maclura pomifera; Pinus halepensis",
+      "register_id": null,
+      "latitude": 41.3886,
+      "longitude": 2.1163,
+      "why_not": "Not evaluated in this pass, and recorded here because it is the strongest untouched cluster in the city. Eight register entries lie inside 400 m of each other across the Palau Reial gardens, the Torre Girona gardens and the Pavellons Guell with Gaudi's dragon gate, all in one walk, 1.2 km west of bcn_007. A future pass should take this as a single unit rather than tree by tree, and must check the access of each: the Palau Reial gardens are public, Torre Girona sits on the UPC campus, and the Pavellons Guell keep visiting hours.",
+      "register_notes": "OSM nodes 4506752018, 4532330334, 4506742261, 4506743003, 4506753110 confirm several of these positions."
+    },
+    {
+      "name": "The Vil-la Amelia and Sarria cluster",
+      "species": "Schinus molle; Phoenix canariensis; Platanus x acerifolia; Eucalyptus globulus",
+      "register_id": null,
+      "latitude": 41.3925,
+      "longitude": 2.1223,
+      "why_not": "Four register entries inside one public Sarria garden, 900 m from the Pedralbes cluster above. Not evaluated this pass. The eucalyptus and the plane are single-unit; the palms are a group and would need the collectible-point test."
+    },
+    {
+      "name": "Lledoner de la Fundacio Munoz Ramonet",
+      "species": "Celtis australis",
+      "register_id": null,
+      "latitude": 41.39627,
+      "longitude": 2.14689,
+      "why_not": "Access unverified. The Munoz Ramonet gardens passed to the city and open to the public on a limited schedule; that needs confirming before this counts as publicly accessible. Undated in the candidate list."
+    },
+    {
+      "name": "Figuera de la Facultat de Dret",
+      "species": "Ficus carica",
+      "register_id": null,
+      "latitude": 41.38738,
+      "longitude": 2.12075,
+      "why_not": "On the university law faculty grounds. The campus is open in practice but the register does not say so, and the entry is undated. Sits inside the Pedralbes cluster above, so resolve it with that pass."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Platans de les Rambles",
+      "species": "Platanus x acerifolia",
+      "register_id": null,
+      "reason": "Non-collectible point: 273 registered trees along a kilometre of avenue. This exact entry was already published once as bcn_008 and removed on 2026-07-26 for failing the collectible-point test. It does not come back."
+    },
+    {
+      "name": "Alzines de la placa Catalunya",
+      "species": "Quercus ilex",
+      "register_id": null,
+      "reason": "Non-collectible point: 44 units across a square. There is no one place to stand."
+    },
+    {
+      "name": "Tarongers de la Casa de la Misericordia",
+      "species": "Citrus aurantium",
+      "register_id": 99400637948,
+      "reason": "Non-collectible point: 33 units, registered as the Jardi dels Tarongers, an orchard rather than a tree."
+    },
+    {
+      "name": "Washingtonies de l'Avinguda Francesc Ferrer i Guardia",
+      "species": "Washingtonia filifera",
+      "register_id": null,
+      "reason": "Non-collectible point: 24 palms lining an avenue on Montjuic."
+    },
+    {
+      "name": "Arbreda de la placa del Nord",
+      "species": "Tipuana tipu",
+      "register_id": null,
+      "reason": "Non-collectible point: 16 units. The register's own name for it, arbreda, means grove."
+    },
+    {
+      "name": "Xiprers calbs del Parc de la Ciutadella",
+      "species": "Taxodium distichum",
+      "register_id": 99400454974,
+      "reason": "Non-collectible point: seven bald cypresses standing in the artificial lake. A fine sight and not one tree."
+    },
+    {
+      "name": "Alzines del Parc del Laberint",
+      "species": "Quercus ilex",
+      "register_id": null,
+      "reason": "Non-collectible point: eight units. The park is also closed for restoration until March 2027, see bcn_004."
+    },
+    {
+      "name": "Coculs del Jardi de la Casa Ignacio de Puig",
+      "species": "Cocculus laurifolius",
+      "register_id": null,
+      "reason": "Non-collectible point (nine units) and a private house garden."
+    },
+    {
+      "name": "Pebrers de Brasil dels jardins Joan Maragall",
+      "species": "Schinus terebinthifolia",
+      "register_id": null,
+      "reason": "Non-collectible point: four units."
+    },
+    {
+      "name": "Tipuanes de la placa Sant Felip Neri",
+      "species": "Tipuana tipu",
+      "register_id": null,
+      "reason": "Non-collectible point: three units."
+    },
+    {
+      "name": "Platans dels jardins del Claustre",
+      "species": "Platanus x acerifolia",
+      "register_id": null,
+      "reason": "Non-collectible point: three units."
+    },
+    {
+      "name": "Xiprers del Teatre Grec",
+      "species": "Cupressus sempervirens",
+      "register_id": null,
+      "reason": "Non-collectible point: two units."
+    },
+    {
+      "name": "Oliveres del Jardi Botanic de Barcelona",
+      "species": "Olea europaea",
+      "register_id": null,
+      "reason": "Non-collectible point: two units, undated."
+    },
+    {
+      "name": "Pins de fulla llarga del Himalaia de la Ciutadella",
+      "species": "Pinus roxburghii",
+      "register_id": 99400761021,
+      "reason": "Non-collectible point: two units registered under one entry at one coordinate, and the age reads 'En estudi'."
+    },
+    {
+      "name": "Livistones xineses de l'Ateneu Barcelones",
+      "species": "Livistona chinensis",
+      "register_id": 99400455070,
+      "reason": "Private, and four units. The Ateneu Barcelones patio is a members' club courtyard."
+    },
+    {
+      "name": "Livistona australiana de l'Ateneu Barcelones",
+      "species": "Livistona australis",
+      "register_id": null,
+      "reason": "Private: the same members' club courtyard. Register ownership reads Privat."
+    },
+    {
+      "name": "Roure martinenc del parc Zoologic",
+      "species": "Quercus pubescens",
+      "register_id": 99400679813,
+      "reason": "Access-restricted: inside the Barcelona zoo enclosure. Register ownership reads Privat. A 145-year-old oak with a 2.7 m trunk, and unreachable without a zoo ticket, which is not what this site sends people to."
+    },
+    {
+      "name": "Teix de la Facultat de Geografia i Historia",
+      "species": "Taxus baccata",
+      "register_id": 99400454946,
+      "reason": "Access-restricted: an interior faculty courtyard, described by the register as 'Pati Interior'. Undated too."
+    },
+    {
+      "name": "Ginkgo dels jardins de la Universitat",
+      "species": "Ginkgo biloba",
+      "register_id": 99400455073,
+      "reason": "Register ownership reads Privat, in the University of Barcelona's own gardens. A 1904 ginkgo with a fine autumn peak; re-open only if the university's access is confirmed public in writing."
+    },
+    {
+      "name": "Teix dels jardins de la Universitat",
+      "species": "Taxus baccata",
+      "register_id": null,
+      "reason": "Register ownership reads Privat, same gardens as above."
+    },
+    {
+      "name": "Pi Josep de Vallcarca",
+      "species": "Pinus halepensis",
+      "register_id": null,
+      "reason": "Private garden (Jardi Josep de Vallcarca), register ownership Privat."
+    },
+    {
+      "name": "Magnolia del Col-legi La Salle Bonanova",
+      "species": "Magnolia grandiflora",
+      "register_id": null,
+      "reason": "School grounds. Never publish a tree that puts a visitor at a school gate."
+    },
+    {
+      "name": "Pins canaris del Col-legi de les Teresianes",
+      "species": "Pinus canariensis",
+      "register_id": null,
+      "reason": "School grounds, and a multi-unit entry."
+    },
+    {
+      "name": "Teix de l'Escola Pia de Sarria",
+      "species": "Taxus baccata",
+      "register_id": null,
+      "reason": "School grounds."
+    },
+    {
+      "name": "Roure martinenc de l'Escola Lexia",
+      "species": "Quercus pubescens",
+      "register_id": null,
+      "reason": "School grounds."
+    },
+    {
+      "name": "Cocul de la Clinica Corachan",
+      "species": "Cocculus laurifolius",
+      "register_id": null,
+      "reason": "Private hospital grounds."
+    },
+    {
+      "name": "Araucaria Columnar de la Clinica Sagrada Familia",
+      "species": "Araucaria columnaris",
+      "register_id": null,
+      "reason": "Private hospital grounds."
+    },
+    {
+      "name": "Ficus de Port Jackson de l'Edifici IBM, Xicranda de l'Edifici IBM, Eritrina cresta de gall de la Via Augusta",
+      "species": "Ficus rubiginosa; Jacaranda mimosifolia; Erythrina crista-galli",
+      "register_id": null,
+      "reason": "All three carry the same coordinate on a private corporate office plot on Via Augusta. Private land, and three trees sharing one pin is not three destinations."
+    },
+    {
+      "name": "Nolines de la Creu de Pedralbes",
+      "species": "Nolina beldingii",
+      "register_id": null,
+      "reason": "Multi-unit entry on a private Pedralbes plot."
+    }
+  ]
+}
