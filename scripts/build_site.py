@@ -2126,6 +2126,13 @@ def load_registers():
     out = []
     for f in sorted(reg_dir.glob("*.json")):
         d = json.loads(f.read_text())
+        if d.get("publish_dots") is False:
+            # Paris is ODbL, which is share-alike for derived databases, and the
+            # map publishes exactly such a file. Held back until Hidde decides
+            # whether our own register export may carry ODbL terms: that is a
+            # question about how this project licenses what it publishes, so it
+            # is his, not a run's. The data is imported and usable for research.
+            continue
         designation = (d.get("designation") or d.get("attribution")
                        or d.get("prefecture") or "official register")
         for t in d.get("trees", []) + d.get("entries", []):
