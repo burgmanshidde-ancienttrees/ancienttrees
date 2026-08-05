@@ -1,61 +1,218 @@
-- Ginjoler del carrer Arimon | Ziziphus jujuba |  | 41.40473,2.13726 | Barcelona
-- Lledoner de la Fundació Muñoz Ramonet | Celtis australis |  | 41.39627,2.14689 | Barcelona
-- Figuera de l'Antiga Colònia Castells | Ficus carica |  | 41.38689,2.13993 | Barcelona
-- Pi pinyer de la Travessera de les Corts | Pinus pinea |  | 41.38614,2.13395 | Barcelona
-- Pins canaris del Col·legi de les Teresianes | Pinus canariensis |  | 41.39947,2.13338 | Barcelona
-- Pi  Josep de Vallcarca | Pinus halepensis |  | 41.41369,2.14667 | Barcelona
-- Pi blanc de Can Ponsic | Pinus halepensis |  | 41.39644,2.11876 | Barcelona
-- Freixes de la plaça Gal·la Placídia | Fraxinus pennsylvanica |  | 41.39925,2.15291 | Barcelona
-- Lledoner del carrer Benet i Mateu | Celtis australis |  | 41.39208,2.12720 | Barcelona
-- Pi pinyer del Palau de Pedralbes | Pinus pinea |  | 41.38824,2.11599 | Barcelona
-- Washingtònies de la Masia Can Sert | Washingtonia filifera |  | 41.40805,2.14851 | Barcelona
-- Pebrer bord dels jardins de la Vil·la Amèlia | Schinus molle |  | 41.39218,2.12196 | Barcelona
-- Palmeres canàries de la Vil·la Amèlia | Phoenix canariensis |  | 41.39259,2.12244 | Barcelona
-- Nolines de la Creu de Pedralbes | Nolina beldingii |  | 41.39541,2.11342 | Barcelona
-- Pinus roxburghii de l'Av. Diagonal | Pinus roxburghii |  | 41.38973,2.13152 | Barcelona
-- Washingtònies de la plaça Lesseps | Washingtonia robusta |  | 41.40741,2.15059 | Barcelona
-- Cedre de la Universitat Abat Oliba | Cedrus deodara |  | 41.40995,2.12624 | Barcelona
-- Ficus de Port Jackson de l'Edifici IBM | Ficus rubiginosa |  | 41.39801,2.13964 | Barcelona
-- Fotínia del jardins de Sentmenat | Photinia serratifolia |  | 41.40247,2.11470 | Barcelona
-- Roure martinenc del parc de la Tamarita | Quercus pubescens |  | 41.41069,2.13516 | Barcelona
-- Araucaria de la Tamarita | Araucaria cunninghamii |  | 41.41018,2.13597 | Barcelona
-- Pins pinyers dels jardins de la Torre Girona | Pinus pinea |  | 41.38909,2.11627 | Barcelona
-- Pi pinyer de l'Orlandai | Pinus pinea |  | 41.39860,2.12488 | Barcelona
-- Llentiscle dels Pavellons Güell | Pistacia lentiscus |  | 41.38846,2.12085 | Barcelona
-- Molles cendrosos del carrer Sant Pere Claver | Schinus lentiscifolia |  | 41.40644,2.11707 | Barcelona
-- Còcul de l'Arxiu Joan Maragall | Cocculus laurifolius |  | 41.40049,2.14690 | Barcelona
-- Cedres dels jardins del Palau Reial de Pedralbes | Cedrus deodara |  | 41.38807,2.11785 | Barcelona
-- Eritrina cresta de gall de la Via Augusta | Erythrina crista-galli |  | 41.39801,2.13964 | Barcelona
-- Garrofer dels Pavellons Güell | Ceratonia siliqua |  | 41.38849,2.12086 | Barcelona
-- Plàtan dels jardins de la Vil·la Amèlia | Platanus x acerifolia |  | 41.39265,2.12283 | Barcelona
-- Washingtònies de la plaça Francesc Macià | Washingtonia filifera |  | 41.39286,2.14373 | Barcelona
-- Xiprer quadrivalve dels jardins del Palau de Pedralbes | Tetraclinis articulata |  | 41.38697,2.11829 | Barcelona
-- Surera del Parc de Monterols | Quercus suber |  | 41.40262,2.14124 | Barcelona
-- Xiprer comú del carrer Betlem | Cupressus sempervirens |  | 41.40566,2.15394 | Barcelona
-- Araucària Columnar de la Clínica Sagrada Família | Araucaria columnaris |  | 41.40070,2.13480 | Barcelona
-- Grevillea de la Via Augusta | Grevillea robusta |  | 41.39787,2.13493 | Barcelona
-- Alvocater de la plaça de Can Bruixa | Persea americana |  | 41.38357,2.13081 | Barcelona
-- Parasenegàlies de la plaça Molina | Parasenegalia visco |  | 41.40101,2.14708 | Barcelona
-- Eucaliptus blanc de la Vil·la Amèlia | Eucalyptus globulus |  | 41.39294,2.12268 | Barcelona
-- Palmera blava de la plaça Pius XII | Brahea armata |  | 41.38741,2.12222 | Barcelona
-- Arbre ampolla dels jardins de Torre Girona | Brachychiton populneus |  | 41.38890,2.11604 | Barcelona
-- Eucaliptus blanc del parc del Castell de l'Oreneta | Eucalyptus globulus |  | 41.39776,2.11129 | Barcelona
-- Magnòlia del Col·legi La Salle Bonanova | Magnolia grandiflora |  | 41.40668,2.13111 | Barcelona
-- Xicranda de l'Edifici IBM | Jacaranda mimosifolia |  | 41.39801,2.13964 | Barcelona
-- Teix de l'Escola Pia de Sarrià | Taxus baccata |  | 41.40692,2.12470 | Barcelona
-- Garrofer del parc del Castell de l'Oreneta | Ceratonia siliqua |  | 41.39911,2.11064 | Barcelona
-- Garrofer de la plaça del Doctor Castelló | Ceratonia siliqua |  | 41.39187,2.13552 | Barcelona
-- Xicrandes del carrer Alfons XII | Jacaranda mimosifolia |  | 41.39944,2.14848 | Barcelona
-- Eucaliptus blanc del passeig de la Bonanova | Eucalyptus globulus |  | 41.40531,2.13087 | Barcelona
-- Morera del carrer Alcoi | Morus alba |  | 41.40848,2.13122 | Barcelona
-- Aladern de fulla ampla de la Torre Castanyer | Phillyrea latifolia |  | 41.40782,2.13247 | Barcelona
-- Còcul de la Clínica Corachan | Cocculus laurifolius |  | 41.39349,2.13036 | Barcelona
-- Cedre de la Torre Castanyer | Cedrus deodara |  | 41.40814,2.13418 | Barcelona
-- Bellaombra de la plaça Francesc Macià | Phytolacca dioica |  | 41.39262,2.14435 | Barcelona
-- Tipuanes del passatge Maluquer | Tipuana tipu |  | 41.40867,2.13713 | Barcelona
-- Pi pinyer del carrer Bosch i Gimpera | Pinus pinea |  | 41.39371,2.11845 | Barcelona
-- Roure martinenc de l'Escola Lexia | Quercus pubescens |  | 41.41453,2.13962 | Barcelona
-- Pi blanc dels jardins de Torre Girona | Pinus halepensis |  | 41.38876,2.11534 | Barcelona
-- Figuera de la Facultat de Dret | Ficus carica |  | 41.38738,2.12075 | Barcelona
-- Tarongers de Louisiana dels jardins de la Torre Girona | Maclura pomifera |  | 41.38894,2.11653 | Barcelona
-- Figuera dels Jardins Blanca Selva i Henry | Ficus carica |  | 41.39176,2.13149 | Barcelona
+
+## cluster 1: 61 trees, 3.8 km across, centre 41.39771,2.13066
+- Ginjoler del carrer Arimon | Ziziphus jujuba |  | 41.40473,2.13726
+- Lledoner de la Fundació Muñoz Ramonet | Celtis australis |  | 41.39627,2.14689
+- Figuera de l'Antiga Colònia Castells | Ficus carica |  | 41.38689,2.13993
+- Pi pinyer de la Travessera de les Corts | Pinus pinea |  | 41.38614,2.13395
+- Pins canaris del Col·legi de les Teresianes | Pinus canariensis |  | 41.39947,2.13338
+- Pi  Josep de Vallcarca | Pinus halepensis |  | 41.41369,2.14667
+- Pi blanc de Can Ponsic | Pinus halepensis |  | 41.39644,2.11876
+- Freixes de la plaça Gal·la Placídia | Fraxinus pennsylvanica |  | 41.39925,2.15291
+- Lledoner del carrer Benet i Mateu | Celtis australis |  | 41.39208,2.12720
+- Pi pinyer del Palau de Pedralbes | Pinus pinea |  | 41.38824,2.11599
+- Washingtònies de la Masia Can Sert | Washingtonia filifera |  | 41.40805,2.14851
+- Pebrer bord dels jardins de la Vil·la Amèlia | Schinus molle |  | 41.39218,2.12196
+- Palmeres canàries de la Vil·la Amèlia | Phoenix canariensis |  | 41.39259,2.12244
+- Nolines de la Creu de Pedralbes | Nolina beldingii |  | 41.39541,2.11342
+- Pinus roxburghii de l'Av. Diagonal | Pinus roxburghii |  | 41.38973,2.13152
+- Washingtònies de la plaça Lesseps | Washingtonia robusta |  | 41.40741,2.15059
+- Cedre de la Universitat Abat Oliba | Cedrus deodara |  | 41.40995,2.12624
+- Ficus de Port Jackson de l'Edifici IBM | Ficus rubiginosa |  | 41.39801,2.13964
+- Fotínia del jardins de Sentmenat | Photinia serratifolia |  | 41.40247,2.11470
+- Roure martinenc del parc de la Tamarita | Quercus pubescens |  | 41.41069,2.13516
+- Araucaria de la Tamarita | Araucaria cunninghamii |  | 41.41018,2.13597
+- Pins pinyers dels jardins de la Torre Girona | Pinus pinea |  | 41.38909,2.11627
+- Pi pinyer de l'Orlandai | Pinus pinea |  | 41.39860,2.12488
+- Llentiscle dels Pavellons Güell | Pistacia lentiscus |  | 41.38846,2.12085
+- Molles cendrosos del carrer Sant Pere Claver | Schinus lentiscifolia |  | 41.40644,2.11707
+- Còcul de l'Arxiu Joan Maragall | Cocculus laurifolius |  | 41.40049,2.14690
+- Cedres dels jardins del Palau Reial de Pedralbes | Cedrus deodara |  | 41.38807,2.11785
+- Eritrina cresta de gall de la Via Augusta | Erythrina crista-galli |  | 41.39801,2.13964
+- Garrofer dels Pavellons Güell | Ceratonia siliqua |  | 41.38849,2.12086
+- Plàtan dels jardins de la Vil·la Amèlia | Platanus x acerifolia |  | 41.39265,2.12283
+- Washingtònies de la plaça Francesc Macià | Washingtonia filifera |  | 41.39286,2.14373
+- Xiprer quadrivalve dels jardins del Palau de Pedralbes | Tetraclinis articulata |  | 41.38697,2.11829
+- Surera del Parc de Monterols | Quercus suber |  | 41.40262,2.14124
+- Xiprer comú del carrer Betlem | Cupressus sempervirens |  | 41.40566,2.15394
+- Araucària Columnar de la Clínica Sagrada Família | Araucaria columnaris |  | 41.40070,2.13480
+- Grevillea de la Via Augusta | Grevillea robusta |  | 41.39787,2.13493
+- Alvocater de la plaça de Can Bruixa | Persea americana |  | 41.38357,2.13081
+- Parasenegàlies de la plaça Molina | Parasenegalia visco |  | 41.40101,2.14708
+- Eucaliptus blanc de la Vil·la Amèlia | Eucalyptus globulus |  | 41.39294,2.12268
+- Palmera blava de la plaça Pius XII | Brahea armata |  | 41.38741,2.12222
+- Arbre ampolla dels jardins de Torre Girona | Brachychiton populneus |  | 41.38890,2.11604
+- Eucaliptus blanc del parc del Castell de l'Oreneta | Eucalyptus globulus |  | 41.39776,2.11129
+- Magnòlia del Col·legi La Salle Bonanova | Magnolia grandiflora |  | 41.40668,2.13111
+- Xicranda de l'Edifici IBM | Jacaranda mimosifolia |  | 41.39801,2.13964
+- Teix de l'Escola Pia de Sarrià | Taxus baccata |  | 41.40692,2.12470
+- Garrofer del parc del Castell de l'Oreneta | Ceratonia siliqua |  | 41.39911,2.11064
+- Garrofer de la plaça del Doctor Castelló | Ceratonia siliqua |  | 41.39187,2.13552
+- Xicrandes del carrer Alfons XII | Jacaranda mimosifolia |  | 41.39944,2.14848
+- Eucaliptus blanc del passeig de la Bonanova | Eucalyptus globulus |  | 41.40531,2.13087
+- Morera del carrer Alcoi | Morus alba |  | 41.40848,2.13122
+- Aladern de fulla ampla de la Torre Castanyer | Phillyrea latifolia |  | 41.40782,2.13247
+- Còcul de la Clínica Corachan | Cocculus laurifolius |  | 41.39349,2.13036
+- Cedre de la Torre Castanyer | Cedrus deodara |  | 41.40814,2.13418
+- Bellaombra de la plaça Francesc Macià | Phytolacca dioica |  | 41.39262,2.14435
+- Tipuanes del passatge Maluquer | Tipuana tipu |  | 41.40867,2.13713
+- Pi pinyer del carrer Bosch i Gimpera | Pinus pinea |  | 41.39371,2.11845
+- Roure martinenc de l'Escola Lexia | Quercus pubescens |  | 41.41453,2.13962
+- Pi blanc dels jardins de Torre Girona | Pinus halepensis |  | 41.38876,2.11534
+- Figuera de la Facultat de Dret | Ficus carica |  | 41.38738,2.12075
+- Tarongers de Louisiana dels jardins de la Torre Girona | Maclura pomifera |  | 41.38894,2.11653
+- Figuera dels Jardins Blanca Selva i Henry | Ficus carica |  | 41.39176,2.13149
+
+## cluster 2: 60 trees, 3.7 km across, centre 41.38154,2.16948
+- Livistones xineses de l'Ateneu Barcelonès | Livistona chinensis |  | 41.38433,2.17171
+- Ginkgo dels jardins de Mossèn Cinto Verdaguer | Ginkgo biloba |  | 41.36738,2.16457
+- Ginjoler dels jardins Joan Maragall | Ziziphus jujuba |  | 41.36755,2.15641
+- Plàtans dels jardins del Claustre | Platanus x acerifolia |  | 41.36890,2.15864
+- Còculs dels jardins del Palau Robert | Cocculus laurifolius |  | 41.39564,2.15911
+- Taronger de Louisiana de la Ciutadella | Maclura pomifera |  | 41.38857,2.18762
+- Margalló de la pl. del Dr. Letamendi | Chamaerops humilis |  | 41.38879,2.16074
+- Alzina de la Diagonal | Quercus ilex |  | 41.39747,2.16345
+- Washingtònies de la casa de la Misericòrdia | Washingtonia filifera |  | 41.38354,2.16865
+- Washingtònies de la plaça del Dr. Letamendi | Washingtonia robusta |  | 41.38907,2.16036
+- Lledoner del carrer Casp | Celtis australis |  | 41.39256,2.17475
+- Plàtan oriental de la Universitat | Platanus orientalis |  | 41.38636,2.16406
+- Plàtans de les Rambles | Platanus x acerifolia |  | 41.38537,2.17024
+- Roure martinenc del parc Zoològic | Quercus pubescens |  | 41.38521,2.18719
+- Teix dels jardins de la Universitat | Taxus baccata |  | 41.38710,2.16288
+- Tipuana de la plaça Carles Buïgas | Tipuana tipu |  | 41.37208,2.15334
+- Palmera del Senegal de la plaça d'Urquinaona | Phoenix reclinata |  | 41.38949,2.17339
+- Datiler de la Casa de l'Ardiaca | Phoenix dactylifera |  | 41.38415,2.17570
+- Alvocater del Teatre Lliure | Persea americana |  | 41.37044,2.15713
+- Robínia del parc de la Ciutadella | Robinia pseudoacacia |  | 41.38818,2.18660
+- Pins de fulla llarga del Himàlaia de la Ciutadella | Pinus roxburghii |  | 41.38818,2.18660
+- Magnòlies dels jardins del claustre de la Catedral | Magnolia grandiflora |  | 41.38385,2.17606
+- Taronger de Louisiana del carrer Maria Montessori | Maclura pomifera |  | 41.37070,2.15543
+- Washingtònies de la carretera de Miramar | Washingtonia robusta |  | 41.36880,2.17130
+- Iuca filífera dels jardins de Mossèn Costa i Llobera | Yucca filifera |  | 41.36828,2.17177
+- Eucaliptus vermell de la plaça de les Caramelles | Eucalyptus camaldulensis |  | 41.38240,2.16774
+- Plàtan de la plaça Catalunya - Fontanella | Platanus x acerifolia |  | 41.38690,2.17164
+- Pollancre del Canadà del Parc de l'Estació del Nord | Populus x canadensis |  | 41.39328,2.18375
+- Palmeres canàries de l'Antiga Torre Bayer | Phoenix canariensis |  | 41.39446,2.17374
+- Roure blanc mexicà de la Ciutadella | Quercus polymorpha |  | 41.38889,2.18642
+- Tarongers de la Casa de la Misericòrdia | Citrus aurantium |  | 41.38377,2.16815
+- Pitòspor de la Ciutadella | Pittosporum tobira |  | 41.38763,2.18624
+- Còculs | Cocculus laurifolius |  | 41.38115,2.17444
+- Lagunària dels jardins del Teatre Grec | Lagunaria patersonia |  | 41.36980,2.15944
+- Ginkgo dels jardins de la Universitat | Ginkgo biloba |  | 41.38646,2.16260
+- Huingan del carrer Joaquim Blume | Schinus longifolia |  | 41.37211,2.15533
+- Araucària de la casa de la Misericòrdia | Araucaria heterophylla |  | 41.38353,2.16878
+- Eritrina dels jardins del Teatre Grec | Erythrina falcata |  | 41.36928,2.15860
+- Bellaombres dels jardins de Miramar | Phytolacca dioica |  | 41.37071,2.17199
+- Alzines de la plaça Catalunya | Quercus ilex |  | 41.38722,2.17053
+- Datiler del carrer Lancaster | Phoenix dactylifera |  | 41.37846,2.17429
+- Livistona australiana de l'Ateneu Barcelonès | Livistona australis |  | 41.38440,2.17166
+- Araucaria del Teatre Grec | Araucaria bidwillii |  | 41.37038,2.15920
+- Corísies de Drassanes | Ceiba speciosa |  | 41.37479,2.17563
+- Plàtan del parc de la Ciutadella | Platanus x acerifolia |  | 41.38876,2.18743
+- Figuera de l'Antic Teatre | Ficus carica |  | 41.38714,2.17590
+- Xicrandes dels Jardins de Miramar | Jacaranda mimosifolia |  | 41.37089,2.17191
+- Ficus de Cautxú del Parc Safo | Ficus elastica |  | 41.38117,2.14545
+- Arbre de les sedes de la Ciutadella | Albizia julibrissin |  | 41.38720,2.18661
+- Xiprers del Teatre Grec | Cupressus sempervirens |  | 41.36881,2.15835
+- Tipuanes de la plaça Sant Felip Neri | Tipuana tipu |  | 41.38347,2.17510
+- Til·lers de la Rambla Catalunya | Tilia tomentosa / Tilia × europaea / Tilia × euchlora |  | 41.39178,2.16282
+- Teix de la Facultat de Geografia i Història | Taxus baccata |  | 41.38378,2.16750
+- Xiprers calbs del Parc de la Ciutadella | Taxodium distichum |  | 41.38800,2.18703
+- Casuarina del parc de la Ciutadella | Casuarina cunninghamiana |  | 41.38941,2.18732
+- Acàcia del Japó del carrer Guàrdia Urbana | Styphnolobium japonicum |  | 41.37137,2.15443
+- Ficus de Port Jackson de l'Escola Saint Nicholas | Ficus rubiginosa |  | 41.39671,2.16324
+- Castanyer bord de la plaça Carles Buïgas | Aesculus hippocastanum |  | 41.37163,2.15371
+- Melaleuca dels jardins de Petra Kelly | Melaleuca armillaris |  | 41.36523,2.16176
+- Eritrina dels jardins Mossèn Costa i Llobera | Erythrina caffra |  | 41.36958,2.17231
+
+## cluster 3: 26 trees, 3.8 km across, centre 41.43333,2.18564
+- Livistona de la plaça Major de Nou Barris | Livistona australis |  | 41.43690,2.17090
+- Arbre serp dels interiors de Via Favència | Radermachera sinica |  | 41.44520,2.17470
+- Freixe de fulla estreta del carrer Tàrrega | Fraxinus angustifolia |  | 41.43766,2.20599
+- Washingtònies de la Plaça de la Torre Llobeta | Washingtonia robusta |  | 41.42661,2.17388
+- Washingtònies del carrer Camil Fabra | Washingtonia robusta |  | 41.42942,2.18712
+- Morera del Bon Pastor | Morus alba |  | 41.43812,2.20288
+- Firmianes de la plaça del Congrés Eucarístic | Firmiana simplex |  | 41.42544,2.18063
+- Cedres de les Antigues Casernes de Sant Andreu | Cedrus libani |  | 41.44452,2.19274
+- Mèlia del carrer Fernando Pessoa | Melia azedarach |  | 41.44529,2.19267
+- Lledoner de la plaça Josep Andreu Abelló | Celtis australis |  | 41.44814,2.19013
+- Bellaombres de la rambla del Caçador | Phytolacca dioica |  | 41.44075,2.16963
+- Plàtan d'ombra del passatge Irlanda | Platanus x acerifolia |  | 41.43141,2.18601
+- Eucaliptus vermell de la Guineueta | Eucalyptus camaldulensis |  | 41.43999,2.16824
+- Acàcia de les tres punxes de l'estació de Sant Andreu Comtal | Gleditsia triacanthos |  | 41.43598,2.19301
+- Sòfora de la plaça Santa Engràcia | Styphnolobium japonicum |  | 41.44296,2.18057
+- Tarongers de l'esglèsia de Sant Martí de Provençals | Citrus aurantium |  | 41.42079,2.19693
+- Plàtan del carrer Cantàbria | Platanus x acerifolia |  | 41.42368,2.19883
+- Palmera canària de la Rambla Guipúscoa | Phoenix canariensis |  | 41.41492,2.19481
+- Pebrer bord dels Jardins de Jaume Ferran i Clua | Schinus molle |  | 41.42369,2.17798
+- Plàtans de la plaça Nadal | Platanus x acerifolia |  | 41.42889,2.18858
+- Washingtònia de Can Verdaguer | Washingtonia robusta |  | 41.43443,2.17902
+- Sòfora de la plaça de Can Portabella | Styphnolobium japonicum |  | 41.42880,2.19405
+- Tipuanes de la plaça Virrei Amat | Tipuana tipu |  | 41.43016,2.17484
+- Pineda del Parc del Turó de la Peira | Pinus halepensis |  | 41.43359,2.16455
+- Mèlia del carrer Formiga | Melia azedarach |  | 41.43460,2.20199
+- Datiler del carrer Olesa | Phoenix dactylifera |  | 41.42474,2.18603
+
+## cluster 4: 20 trees, 3.9 km across, centre 41.41350,2.15976
+- Garrofer del viaducte del Park Güell | Ceratonia siliqua |  | 41.41509,2.15368
+- Lledoner de la plaça Sagrada Família | Celtis australis |  | 41.40303,2.17280
+- Arbreda de la plaça del Nord | Tipuana tipu |  | 41.40720,2.15559
+- Llentiscle de l'Hort de l'Avi | Pistacia lentiscus |  | 41.41597,2.14910
+- Alzina de Can Vidalet | Quercus ilex |  | 41.40560,2.15865
+- Lledoner del barri d'Horta | Celtis australis |  | 41.43508,2.15600
+- Arbres de l'amor de la plaça Joanic | Cercis siliquastrum |  | 41.40563,2.16226
+- Arbre de l'amor del Turó de la Rovira | Cercis siliquastrum |  | 41.41906,2.16432
+- Garrofer de Can Miralletes | Ceratonia siliqua |  | 41.41427,2.17860
+- Garrofer del carrer Maignon | Ceratonia siliqua |  | 41.41042,2.15283
+- Xicrandes de la plaça Sagrada Família | Jacaranda mimosifolia |  | 41.40262,2.17313
+- Olivera del Park Güell | Olea europaea |  | 41.41491,2.15491
+- Garrofer de la Plaça de la Natura del Park Güell | Ceratonia siliqua |  | 41.41418,2.15289
+- Llentiscle del Parc de la Creueta del Coll | Pistacia lentiscus |  | 41.41875,2.14826
+- Palmeres canàries de l'Hospital de Sant Pau | Phoenix canariensis |  | 41.41242,2.17575
+- Ficus de Mysore del Santuari de Sant Josep de la Muntaya | Ficus drupacea |  | 41.41040,2.15333
+- Figueres del parc de les Aigües | Ficus carica |  | 41.41338,2.16530
+- Teix dels jardins de la Granja Vella de Martí-Codolar | Taxus baccata |  | 41.42851,2.14924
+- Fotínies del parc de les Aigües del Guinardó | Photinia serratifolia |  | 41.41319,2.16559
+- Pebrer bord del carrer Maignon | Schinus molle |  | 41.41023,2.15288
+
+## cluster 5: 17 trees, 2.4 km across, centre 41.36569,2.14832
+- Noguera amb ales del Jardí Botànic Històric | Pterocarya x rehderiana |  | 41.36690,2.15222
+- Washingtònies dels jardins de Can Farrero | Washingtonia robusta |  | 41.35809,2.14194
+- Molle del jardí d'Aclimatació | Schinus longifolia |  | 41.36619,2.15258
+- Freixe de fulla estreta del Jardí Botànic Històric | Fraxinus angustifolia |  | 41.36687,2.15208
+- Fals plàtan del Jardí Botànic Històric | Acer pseudoplatanus |  | 41.36677,2.15207
+- Carpí del jardí Botànic Històric | Carpinus betulus |  | 41.36701,2.15198
+- Pebrers de Brasil dels jardins Joan Maragall | Schinus terebinthifolia |  | 41.36651,2.15623
+- Araucària de l'avinguda Francesc Ferrer i Guàrdia | Araucaria heterophylla |  | 41.36966,2.14873
+- Washintònia del carrer dels Jocs Florals | Washingtonia robusta |  | 41.37500,2.13446
+- Oliveres del Jardí Botànic de Barcelona | Olea europaea |  | 41.36410,2.15875
+- Plàtans dels jardins de Can Farrero | Platanus x acerifolia |  | 41.35844,2.14189
+- Washingtònies de l'Avinguda Francesc Ferrer i Guàrdia | Washingtonia filifera |  | 41.36945,2.14582
+- Eucaliptus tuart del jardí d'Aclimatació | Eucalyptus gomphocephala |  | 41.36588,2.15357
+- Camforer del Jardí Botànic Històric | Cinnamomum camphora |  | 41.36728,2.15333
+- Freixe vermell americà del jardí Botànic Històric | Fraxinus pennsylvanica |  | 41.36718,2.15185
+- Grevillea dels jardins dels Drets Humans | Grevillea robusta |  | 41.36127,2.13668
+- Lledoner dels jardins dels Drets Humans | Celtis australis |  | 41.36007,2.13725
+
+## cluster 6: 8 trees, 3.1 km across, centre 41.43662,2.14666
+- Alzines del Parc del Laberint | Quercus ilex |  | 41.44006,2.14653
+- Til·ler argentat del Parc del Laberint | Tilia tomentosa |  | 41.43947,2.14737
+- Sequoia del parc del Laberint d'Horta | Sequoia sempervirens |  | 41.43983,2.14591
+- Pi pinyer del carrer Natzaret | Pinus pinea |  | 41.42298,2.13915
+- Arboç del parc del Laberint d'Horta | Arbutus unedo |  | 41.44016,2.14636
+- Xiprers ploraners del barri de Canyelles | Cupressus funebris |  | 41.44319,2.16487
+- Pi de Sant Genís dels Agudells | Pinus halepensis |  | 41.42768,2.13587
+- Cedre del Parc del Laberint | Cedrus deodara |  | 41.43958,2.14724
+
+## cluster 7: 5 trees, 1.6 km across, centre 41.42366,2.09432
+- Roure cerrioide de la Font de Les Planes | Quercus x cerrioides |  | 41.42863,2.08949
+- Alzina de Santa Maria de Vallvidrera | Quercus ilex |  | 41.41825,2.10191
+- Alzina del carrer Baladre | Quercus ilex |  | 41.42675,2.09304
+- Plàtans del camí del pantà de Vallvidrera | Platanus x acerifolia |  | 41.41604,2.09766
+- Roure cerrioide de l'aparcament de Les Planes | Quercus cerrioides |  | 41.42863,2.08949
+
+## cluster 8: 5 trees, 2.1 km across, centre 41.41081,2.20654
+- Eucaliptus vermells del carrer Germans Serra | Eucalyptus camaldulensis |  | 41.41777,2.21343
+- Plàtans del carrer Pere IV | Platanus x acerifolia |  | 41.41820,2.20949
+- Om siberià del carrer Llull | Ulmus pumila |  | 41.40856,2.21176
+- Bellaombres de la plaça Prim | Phytolacca dioica |  | 41.39947,2.20705
+- Araucària del carrer Sant Joan de Malta | Araucaria heterophylla |  | 41.41007,2.19096
