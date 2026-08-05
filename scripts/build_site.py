@@ -3713,21 +3713,21 @@ APPLAND_BODY = """
   <img class="appland-bg" APPLAND_SRCSET alt="">
   <div class="appland-card">
     <div class="appland-left">
-      <span class="chip gold">Not out yet</span>
-      <h1>An app for the walk itself</h1>
-      <p class="appland-sub">There is nothing to download yet. This page says what we are building and lets you leave an email if you want to know when it exists. The website already does the finding, and it works on a phone, so nothing here is waiting on the app.</p>
+      <span class="chip gold">Coming soon</span>
+      <h1>Every ancient tree, in your pocket</h1>
+      <p class="appland-sub">Open it wherever you happen to be and it finds the remarkable old trees within walking distance, strings the good ones into one afternoon, and tells you what you are standing in front of when you get there. Every tree you visit is one you keep.</p>
       <form class="waitlist" id="waitlist">
         <input type="email" id="wl-email" placeholder="you@example.com" aria-label="Your email address" required>
-        <button type="submit" class="appland-cta">Keep me posted</button>
+        <button type="submit" class="appland-cta">Tell me first</button>
       </form>
-      <p class="waitlist-note" id="wl-note">One email, when there is something to open. Nothing else.</p>
+      <p class="waitlist-note" id="wl-note">Leave your email and you are on the list we write to the day it opens. One email. Nothing else.</p>
     </div>
     <div class="appland-right">
-      <h2>What it will do</h2>
-      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="22" r="14" fill="none" stroke="#4A6B2A" stroke-width="3"/><circle cx="24" cy="22" r="4" fill="#D9A13F"/><path d="M24 4 v6 M24 34 v6 M6 22 h6 M36 22 h6" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg></span><div><h3>The trees around you</h3><p>Open it anywhere and it shows the remarkable old trees nearby, with a walking time to the closest one.</p></div></div>
-      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="19" rx="12" ry="10" fill="#3A5222"/><circle cx="17" cy="18" r="7" fill="#4A6B2A"/><circle cx="31" cy="18" r="7" fill="#4A6B2A"/><circle cx="24" cy="11" r="7" fill="#5B7F35"/><path d="M22.9 40h2.4l-.6-13h-1.2z" fill="#6B4F33"/><circle cx="36" cy="34" r="8" fill="#D9A13F"/><path d="M32.5 34 l2.5 2.5 5 -5" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Collect the ones you have seen</h3><p>Stand in front of a tree, tick it off, and your collection grows city by city.</p></div></div>
-      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 30 a10 10 0 0 1 2 -19 a12 12 0 0 1 22 3 a8 8 0 0 1 0 16 z" fill="#ECEDE2" stroke="#4A6B2A" stroke-width="2.5"/><path d="M18 36 l-3 5 M26 36 l-3 5 M34 36 l-3 5" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg></span><div><h3>Works without a signal</h3><p>Download a city before you go, so the map still works when your phone has no data.</p></div></div>
-      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="20" cy="18" rx="10" ry="8" fill="#D9A13F"/><circle cx="15" cy="16" r="4.5" fill="#E8BC63"/><path d="M19 36h2.4l-.6-12h-1.2z" fill="#6B4F33"/><path d="M33 10 a10 10 0 0 1 5 9 M35.5 6 a15 15 0 0 1 7 13" stroke="#D9A13F" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg></span><div><h3>A note when a tree is at its best</h3><p>Some trees are only worth the trip in one particular month. The app can tell you when one near you is in that month.</p></div></div>
+      <h2>What you will be able to do</h2>
+      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="22" r="14" fill="none" stroke="#4A6B2A" stroke-width="3"/><circle cx="24" cy="22" r="4" fill="#D9A13F"/><path d="M24 4 v6 M24 34 v6 M6 22 h6 M36 22 h6" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg></span><div><h3>Find the ones near you</h3><p>It opens on where you are and shows the remarkable old trees around you, closest first, with the walk to each.</p></div></div>
+      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="19" rx="12" ry="10" fill="#3A5222"/><circle cx="17" cy="18" r="7" fill="#4A6B2A"/><circle cx="31" cy="18" r="7" fill="#4A6B2A"/><circle cx="24" cy="11" r="7" fill="#5B7F35"/><path d="M22.9 40h2.4l-.6-13h-1.2z" fill="#6B4F33"/><circle cx="36" cy="34" r="8" fill="#D9A13F"/><path d="M32.5 34 l2.5 2.5 5 -5" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Collect the ones you visit</h3><p>Stand in front of a tree, tick it off, and watch a collection build itself city by city and country by country.</p></div></div>
+      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 30 a10 10 0 0 1 2 -19 a12 12 0 0 1 22 3 a8 8 0 0 1 0 16 z" fill="#ECEDE2" stroke="#4A6B2A" stroke-width="2.5"/><path d="M18 36 l-3 5 M26 36 l-3 5 M34 36 l-3 5" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg></span><div><h3>Keep going without a signal</h3><p>Save a city before you set off, so the map still works in the middle of a park with one bar.</p></div></div>
+      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="20" cy="18" rx="10" ry="8" fill="#D9A13F"/><circle cx="15" cy="16" r="4.5" fill="#E8BC63"/><path d="M19 36h2.4l-.6-12h-1.2z" fill="#6B4F33"/><path d="M33 10 a10 10 0 0 1 5 9 M35.5 6 a15 15 0 0 1 7 13" stroke="#D9A13F" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg></span><div><h3>Catch a tree at its best</h3><p>Some trees are only worth the trip in one month of the year. You get a nudge when one of those near you hits its week.</p></div></div>
     </div>
   </div>
 </div>
