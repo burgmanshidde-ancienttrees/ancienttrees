@@ -418,6 +418,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .ats-row b { display: block; font-size: 14.5px; font-weight: 600; }
 .ats-row span { display: block; font-size: 12.5px; color: var(--ink-mid); }
 .ats-row.active, .ats-row:hover { background: #F1EFE8; }
+.ats-head { padding: 0.5rem 1.1rem 0.15rem; font-family: var(--sans); font-size: 10.5px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-light); }
 .ats-empty { padding: 0.75rem 1.1rem; font-family: var(--sans); font-size: 13px; color: var(--ink-mid); }
 .ats-empty a { color: var(--moss); }
 /* Country page: the ranked-list form (Hidde, 2026-08-01, the PictureThis
@@ -1686,20 +1687,40 @@ SEARCH_WIDGET_JS = """
       .catch(function() { loading = false; });
   }
   function results(q) {
-    var out = [], buckets = [[], [], [], []];
+    // A hierarchy rather than one flat relevance list, which is what every
+    // search-led map product does (Google Maps, AllTrails, Airbnb): places
+    // first and always, then species, and an individual tree only when the
+    // query is specific enough to be asking for one.
+    var out = [];
+    var places = [], species = [], trees = [];
+    IDX.k.forEach(function(k) {
+      var i = norm(k.country).indexOf(q);
+      if (i === 0) places.unshift({kind: 'country', it: k});
+      else if (i > 0) places.push({kind: 'country', it: k});
+    });
     IDX.c.forEach(function(c) {
       var i = norm(c.city).indexOf(q);
-      if (i === 0) buckets[0].push({k: 'c', it: c});
-      else if (i > 0 || norm(c.country).indexOf(q) === 0) buckets[1].push({k: 'c', it: c});
+      if (i === 0) places.push({kind: 'city', it: c});
+      else if (i > 0 || norm(c.country).indexOf(q) === 0) places.push({kind: 'city', it: c});
     });
-    IDX.t.forEach(function(t) {
-      var i = norm(t.n).indexOf(q);
-      if (i === 0) buckets[2].push({k: 't', it: t});
-      else if (i > 0) buckets[3].push({k: 't', it: t});
+    IDX.s.forEach(function(s) {
+      if (norm(s.n).indexOf(q) === 0) species.push({kind: 'species', it: s});
     });
-    buckets.forEach(function(b) { out = out.concat(b); });
-    return out.slice(0, 8);
+    // Trees only earn a slot once the query is specific: at least four
+    // characters, matching the start of a word in the name, and never
+    // crowding out a place that matched.
+    if (q.length >= 4) {
+      IDX.t.forEach(function(t) {
+        var n = norm(t.n);
+        if (n.indexOf(q) === 0 || n.indexOf(' ' + q) !== -1) trees.push({kind: 'tree', it: t});
+      });
+    }
+    out = places.slice(0, 6).concat(species.slice(0, 2));
+    var room = 8 - out.length;
+    if (room > 0) out = out.concat(trees.slice(0, Math.min(room, places.length ? 2 : 5)));
+    return out;
   }
+
   function hide() { drop.hidden = true; active = -1; }
   function show() {
     var q = norm(input.value.trim());
@@ -1711,10 +1732,26 @@ SEARCH_WIDGET_JS = """
     if (!res.length) {
       drop.innerHTML = '<div class="ats-empty">Not mapped yet. <a href="/contribute">Be the first to map it</a>.</div>';
     } else {
+      var lastKind = null;
       drop.innerHTML = res.map(function(r) {
-        var name = r.k === 'c' ? r.it.city : r.it.n;
-        var sec = r.k === 'c' ? r.it.n + ' trees &middot; ' + escT(r.it.country) : escT(r.it.c);
-        return '<a class="ats-row" href="/' + r.it.u + '"><b>' + escT(name) + '</b><span>' + sec + '</span></a>';
+        var name, sec, head = '';
+        if (r.kind === 'country') {
+          name = r.it.country;
+          sec = r.it.cities + ' cities &middot; ' + r.it.n + ' trees';
+        } else if (r.kind === 'city') {
+          name = r.it.city;
+          sec = r.it.n + ' trees &middot; ' + escT(r.it.country);
+        } else if (r.kind === 'species') {
+          name = r.it.n;
+          sec = r.it.count + ' mapped &middot; every one on the site';
+        } else {
+          name = r.it.n;
+          sec = escT(r.it.c);
+        }
+        var label = (r.kind === 'country' || r.kind === 'city') ? 'Places'
+                  : r.kind === 'species' ? 'Species' : 'Trees';
+        if (label !== lastKind) { head = '<div class="ats-head">' + label + '</div>'; lastKind = label; }
+        return head + '<a class="ats-row" href="/' + r.it.u + '"><b>' + escT(name) + '</b><span>' + sec + '</span></a>';
       }).join('');
     }
     drop.hidden = false;
@@ -4806,7 +4843,11 @@ def main():
     # Custom domain for GitHub Pages; must survive every rebuild.
     (DIST / "CNAME").write_text(CUSTOM_DOMAIN + "\n")
     # One shared index behind the one search interaction on home and /explore.
-    search_index = {"c": [], "t": []}
+    # Places first, then species, then individual trees, because that is what
+    # people actually type: our own Search Console queries are almost entirely
+    # place-shaped ("amsterdam trees", "albero roma", "york museum gardens")
+    # and only rarely a tree by name (Hidde, 2026-08-04).
+    search_index = {"c": [], "k": [], "s": [], "t": []}
     for entry in renderable:
         d = entry["data"]
         search_index["c"].append({"city": d["city"], "country": d["country"],
@@ -4814,6 +4855,15 @@ def main():
         for t in d["trees"]:
             search_index["t"].append({"n": t["name"], "c": d["city"],
                                       "u": f"{entry['slug']}/{slugify(t['name'])}"})
+    for country, cslug in sorted(country_pages.items()):
+        n_cities = sum(1 for e in renderable if e["data"]["country"] == country)
+        n_trees = sum(len(e["data"]["trees"]) for e in renderable
+                      if e["data"]["country"] == country)
+        search_index["k"].append({"country": country, "cities": n_cities,
+                                  "n": n_trees, "u": cslug})
+    for common in sorted(qualifying, key=lambda c: -len(qualifying[c])):
+        search_index["s"].append({"n": common, "count": len(qualifying[common]),
+                                  "u": f"species/{species_intros[common]['slug']}"})
     (DIST / "search-index.json").write_text(json.dumps(search_index))
     for relpath, content, _ in pages:
         out = DIST / relpath
