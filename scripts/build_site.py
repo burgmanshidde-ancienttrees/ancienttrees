@@ -2137,8 +2137,8 @@ def load_registers():
             name = (t.get("name_en") or t.get("name") or t.get("name_ja")
                     or t.get("name_it") or t.get("name_pt") or t.get("species") or "")
             area = (t.get("area_en") or t.get("area") or t.get("comune")
-                    or t.get("concelho") or t.get("city") or t.get("province")
-                    or t.get("prefecture") or "")
+                    or t.get("concelho") or t.get("city") or t.get("place")
+                    or t.get("province") or t.get("prefecture") or "")
             own = t.get("designation")
             if d.get("prefecture") and not own:
                 own = f"{d['prefecture']} Natural Monument"
