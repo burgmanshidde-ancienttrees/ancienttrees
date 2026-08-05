@@ -1,0 +1,298 @@
+{
+  "city": "Setubal",
+  "country": "Portugal",
+  "status": "published",
+  "intro": "Setubal put its own tree walk on paper before we arrived. The parish publishes a route past its classified trees, the state has designated sixteen of them, and the city signposts them, which is rare enough to be worth saying out loud. What you get is a compact walk through a working port city: six Australian araucarias around an old stone tank, a melaleuca that grows sideways instead of up, poplars beside the school named after the poet born here, and a street tree whose resin once went onto fishing nets.",
+  "meta_description": "Setubal's classified trees make a real walk: six araucarias round a stone tank, a melaleuca that grows sideways, and a tree that mended nets.",
+  "question_meta": "Setubal's oldest trees are a stone pine and a box elder, both about 117 years. A melaleuca claims 150 but nobody has confirmed it.",
+  "question_answer": "Setubal's oldest trees, on the best evidence available, are a stone pine on Rua Engenheiro Henri Perron and a box elder in the Jardim do Bonfim, both around 117 years old. The pine also has the thickest trunk in the city centre at 4.15 metres. A melaleuca on the waterfront carries a higher register figure, 150 years, but no independent source confirms it, so it is not the answer here.",
+  "question_context": "Both dates trace back to a single assessment made in 2009, which the state re-recorded when it measured the trees again in 2015, and the parish and the national register agree to within six years across all nine species, which is unusually tidy. The pine is the more interesting of the two. The parish describes the stone pines on that street as survivors of the woodland that stood there before the city grew outwards, which makes them older than the neighbourhood around them rather than planted into it. The melaleuca is worth the detour regardless of its age: it is only three and a half metres tall with a crown eleven metres across, so it has spent its life growing sideways along the waterfront instead of upwards, and the parish calls it a living monument. Three olives out at Vila Fresca de Azeitao are claimed at around two thousand years and would beat everything here, but whether a visitor may approach them is unconfirmed, so they are not published.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Setubal?",
+      "a": "A stone pine on Rua Engenheiro Henri Perron and a box elder in the Jardim do Bonfim, both about 117 years. A waterfront melaleuca claims 150 in the register, but nothing confirms it."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "Yes, and it is one of the better walks on this site. Six of them sit within 700 metres of Largo Jose Afonso, running from the old square along the Sado waterfront through the historic centre to the city park."
+    },
+    {
+      "q": "Do they cost anything to see?",
+      "a": "No. Every tree on this page stands on a public street, square or park, and the parish signposts most of them as its own walking route."
+    },
+    {
+      "q": "Which is the strangest?",
+      "a": "The melaleuca in the Jardim Engenheiro Luis da Fonseca. Two metres round the trunk, three and a half metres tall, and a crown eleven metres wide: it grows outwards, not up."
+    }
+  ],
+  "hero_tree_id": "stb_001",
+  "oldest_tree_id": "stb_005",
+  "trees": [
+    {
+      "id": "stb_001",
+      "name": "The Six Araucarias of Largo Jose Afonso",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "age_estimate": "about 107 years",
+      "age_min": 100,
+      "age_max": 115,
+      "location": {
+        "address": "Largo Jose Afonso, 2900 Setubal",
+        "latitude": 38.52177,
+        "longitude": -8.89779,
+        "neighbourhood": "Centro"
+      },
+      "story": "Six trees stand in a ring around one old circular stone tank with a fountain at its middle, and at twenty-six metres they are the tallest classified trees in the city. They were planted around 1919, which means they have watched the square change names three times and change purpose twice. It began as the Passeio do Lago, named for a garden with a lake at its centre. In January 1911 it became the Parque das Escolas, after two primary schools opened on it, one for boys and one for girls, so the young trees spent their first decades in a schoolyard. Through the 1930s the square held two open-air cinemas, one of them run by the volunteer fire brigade and the other called the Cine Parque, and films were projected under these branches on summer evenings. The name it carries now arrived in 1988, for Jose Afonso, whose song Grandola, Vila Morena was the radio signal that launched the revolution of 1974, and Grandola is in this district. The trees are evergreen, so they look the same in January as in July.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.uf-setubal.pt/atividades/ambiente/projetos/377-roteiro-das-arvores-de-interesse-publico",
+        "https://www.uf-setubal.pt/sabados-com-historia/1159-o-largo-jose-afonso"
+      ],
+      "access": "Free, open public square",
+      "transport": "In the centre of Setubal, a few minutes on foot from the station",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "An ensemble entry that passes the collectible-point test: six trees ringing one stone tank, with a single obvious place to stand. Age is the 2009 assessment carried forward; the register and the parish agree to within six years across every species here.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "stb_002",
+      "name": "The Plane of Largo Doutor Francisco Soveral",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 71 years",
+      "age_min": 65,
+      "age_max": 80,
+      "location": {
+        "address": "Largo Doutor Francisco Soveral, 2900 Setubal",
+        "latitude": 38.5236,
+        "longitude": -8.8919,
+        "neighbourhood": "Centro Historico"
+      },
+      "story": "This tree is not a specimen you look at, it is the ceiling of a small square in the old town. Twenty-six metres tall with a crown twenty-seven metres across, it covers the whole of Largo Doutor Francisco Soveral, so the shade underneath is not a patch but a room. That is what the plane was bred for. It is a hybrid, a cross between the American sycamore and the Oriental plane that turned up in Europe in the seventeenth century and proved almost impossible to kill in a dirty city: it shrugs off exhaust, tolerates brutal pruning and sheds its bark in patches to throw off the grime, which is why half the capitals of Europe are lined with them. In a port city with a canning industry those were useful qualities. At around seventy years it is one of the younger classified trees here and it earns its place on presence rather than age, which is worth being honest about. Come in summer and you will understand why the state bothered to protect a seventy-year-old street tree.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.uf-setubal.pt/atividades/ambiente/1597-conheca-as-arvores-classificadas-do-territorio"
+      ],
+      "access": "Free, open public square",
+      "transport": "In the historic centre, on foot",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "The register gives 60 years at the 2015 measurement, so about 71 today. The parish records a larger girth than the register (4.06m against 3.38m), which is base against breast height rather than a disagreement.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "stb_003",
+      "name": "The Silky Oaks of Largo Marques de Pombal",
+      "species": "Silky Oak (Grevillea robusta)",
+      "age_estimate": "about 97 years",
+      "age_min": 90,
+      "age_max": 105,
+      "location": {
+        "address": "Largo Marques de Pombal, 2900 Setubal",
+        "latitude": 38.52357,
+        "longitude": -8.8986,
+        "neighbourhood": "Centro"
+      },
+      "story": "For eleven months of the year this is a tall Australian tree that most people walk past. For a few weeks in spring it covers itself in orange, in dense one-sided combs of flower that look more like a bottlebrush than anything a European tree does, and the whole square changes colour. The parish, which knows its own trees, describes them as rare in Portugal, and there are two of them here, standing metres apart on what used to be the Praca de Sao Pedro. Silky oak is not an oak at all. It belongs to the protea family, its nearest relatives are the banksias and grevilleas of Australia, and it was carried around the world in the nineteenth century for exactly the display it puts on here. In its native Queensland it grows to forty metres in rainforest; on a Portuguese square it settles for nineteen. The two trees are near twins and the register separates them only by trunk girth, so stand between them and you are looking at both.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.uf-setubal.pt/atividades/ambiente/projetos/377-roteiro-das-arvores-de-interesse-publico"
+      ],
+      "access": "Free, open public square",
+      "transport": "In the centre, about 200 m from Largo Jose Afonso",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "Two registered trees of the same species metres apart, distinguished in the register only by girth, so this entry is the pair. The spring flowering is stated by the parish itself rather than inferred from the species.",
+      "best_time": {
+        "months": [4, 5],
+        "label": "April and May, when the whole crown turns orange",
+        "kind": "flowers"
+      },
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "stb_004",
+      "name": "The Melaleuca That Grows Sideways",
+      "species": "Bracelet Honey Myrtle (Melaleuca armillaris)",
+      "age_estimate": "the register claims 150 years, unconfirmed",
+      "age_min": 60,
+      "age_max": 150,
+      "location": {
+        "address": "Jardim Engenheiro Luis da Fonseca, 2900 Setubal",
+        "latitude": 38.52074,
+        "longitude": -8.8912,
+        "neighbourhood": "Waterfront"
+      },
+      "story": "Two metres round the trunk, three and a half metres tall, and a crown eleven metres wide. Those numbers describe a tree that decided early on to spend its life going outwards rather than up, and the result in this waterfront garden is a low sprawling dome of long branches running almost horizontally from the base, which you walk under rather than look up at. The parish calls it a living monument, and it is the strangest thing on this page. Melaleuca armillaris comes from the coast of New South Wales, gets its name from the bracelet-like rings its cream flowers form along the stems, and has papery bark that peels in soft sheets. It is planted along the Sado waterfront because it tolerates salt wind, which is the same reason it grows low and wide: this is what the species does when it spends a century in the path of weather off the water. The register puts it at 150 years, which is high for its kind and which no other source confirms, so treat the number lightly and the tree seriously.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.uf-setubal.pt/atividades/ambiente/projetos/377-roteiro-das-arvores-de-interesse-publico"
+      ],
+      "access": "Free, public waterfront garden",
+      "transport": "On the Sado waterfront, about 10 min walk from the centre",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "flagged",
+      "notes": "The 150-year register figure at the 2016 measurement is the highest in Setubal and is unconfirmed anywhere else; the parish records no age at all for this tree. Published as a register claim with the range left wide rather than repeated as fact.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "stb_005",
+      "name": "The Stone Pines of Rua Henri Perron",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "about 117 years",
+      "age_min": 110,
+      "age_max": 125,
+      "location": {
+        "address": "Rua Engenheiro Henri Perron, 2900 Setubal",
+        "latitude": 38.53827,
+        "longitude": -8.89603,
+        "neighbourhood": "Norte"
+      },
+      "story": "These two were here before the street was. The parish describes the stone pines on this road as survivors of the woodland that covered the ground before the city expanded northwards over it, which makes them older than the neighbourhood rather than planted into it, and it explains why they stand where they do rather than in any pattern. The larger has a trunk four and fifteen metres around, the thickest of any tree in central Setubal. Stone pine is the umbrella pine of every Portuguese and Italian horizon, the one with a bare trunk and a flat spreading head, and it is a working tree as much as an ornamental one: its cones hold pine nuts, which take three years to ripen and are still harvested commercially across this part of Portugal. The shape is not decorative either. A stone pine sheds its lower branches as it grows so that the crown sits above browsing height and above the reach of ground fire, which is a design for surviving exactly the landscape this city was built on.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.uf-setubal.pt/atividades/ambiente/projetos/377-roteiro-das-arvores-de-interesse-publico"
+      ],
+      "access": "Free, public street",
+      "transport": "North of the centre, about 20 min walk or a short bus ride",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "Two registered pines metres apart, separated in the register only by girth (4.15m and 3.20m), so this entry is the pair and the pin is the larger. Age is the 2009 assessment carried forward, matching the parish figure to within six years.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "stb_006",
+      "name": "The Box Elder of the Jardim do Bonfim",
+      "species": "Box Elder (Acer negundo)",
+      "age_estimate": "about 117 years",
+      "age_min": 110,
+      "age_max": 125,
+      "location": {
+        "address": "Jardim do Bonfim, 2900 Setubal",
+        "latitude": 38.52945,
+        "longitude": -8.89159,
+        "neighbourhood": "Bonfim"
+      },
+      "story": "The ground this tree stands on was called the Campo da Barbuda in the sixteenth century, long before anyone thought to make a garden of it, and the box elder is now the oldest thing in what became Setubal's main park. It is a maple that does not look like one. Where every other maple carries a single lobed leaf, Acer negundo splits its into three, five or seven separate leaflets, so people routinely mistake it for an ash and it is sometimes called the ash-leaved maple for that reason. It is North American, it grows fast, it is short-lived by maple standards, and at nearly four metres round and a hundred and seventeen years old this one has outlasted what the species usually manages. That is the reason it is classified. It comes into leaf late and drops early, and in the weeks between it does what a park tree is for: it holds up a large amount of shade over the benches underneath.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.uf-setubal.pt/atividades/ambiente/projetos/377-roteiro-das-arvores-de-interesse-publico"
+      ],
+      "access": "Free, public park",
+      "transport": "About 10 min walk from the centre",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "Register gives 100 years at the 2009 assessment, so about 117 today. The parish calls the park the Jardim do Bonfim while the register writes Parque do Bonfim; the parish name is used here.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "stb_007",
+      "name": "The Norfolk Island Hibiscus of Montalvao",
+      "species": "Norfolk Island Hibiscus (Lagunaria patersonii)",
+      "age_estimate": "about 62 years",
+      "age_min": 55,
+      "age_max": 70,
+      "location": {
+        "address": "Rua Oliveira Martins, Montalvao, 2900 Setubal",
+        "latitude": 38.52764,
+        "longitude": -8.89672,
+        "neighbourhood": "Montalvao"
+      },
+      "story": "This tree comes from an island of thirty-five square kilometres in the Pacific, thirteen thousand kilometres away, and there are not many of them in Portugal. Lagunaria patersonii is native to Norfolk Island and Lord Howe, grows into a neat dense pyramid, and flowers in summer in pale pink cups that look like a small hibiscus, which is where the common name comes from. It also has a famous defence: the seed capsules are packed with fine stiff hairs that irritate skin badly enough that Australians call it the itchy bomb tree, so admire the fruit and do not open it. Setubal planted it for the same reason coastal cities everywhere did, because it stands up to salt wind and poor soil without complaint. At sixty-two it is the youngest tree on this page, and it is classified not for its age but because the species is genuinely uncommon here. The parish route lists it among the trees worth walking to, which is a fair verdict on a tree most people would pass without a glance.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.uf-setubal.pt/atividades/ambiente/projetos/377-roteiro-das-arvores-de-interesse-publico"
+      ],
+      "access": "Free, public street",
+      "transport": "About 10 min walk from the centre, in the Montalvao district",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "Register gives 51 years at the 2015 measurement, so about 62 today. Summer flowering is species knowledge rather than a Setubal-specific source, so no best_time is claimed.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "stb_008",
+      "name": "The Poplars by Bocage's School",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "about 97 years",
+      "age_min": 90,
+      "age_max": 105,
+      "location": {
+        "address": "Praceta Manuel Nunes de Almeida, 2900 Setubal",
+        "latitude": 38.53322,
+        "longitude": -8.89148,
+        "neighbourhood": "Norte"
+      },
+      "story": "Two black poplars of twenty-five metres stand beside the Escola Secundaria du Bocage, which is named for Manuel Maria Barbosa du Bocage, the poet born in this city in 1765. Bocage is the reason Setubal has a literary reputation at all. He ran away to sea, deserted, wrote satirical verse sharp enough to get himself arrested by the Inquisition in 1797, and produced sonnets that Portuguese schoolchildren still learn; the school that carries his name has stood here since the trees were young. Black poplar is a riverside species and it behaves like one: fast, tall, thirsty, and among the first trees to break bud in spring and among the last to hold its leaves in autumn. It also moves. The leaves are set on flattened stalks that twist in the smallest breeze, so a poplar makes noise where other trees are silent, which is why they were planted along roads and rivers across Europe. Stand under these two on a windy afternoon and the sound is the point.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.uf-setubal.pt/atividades/ambiente/projetos/377-roteiro-das-arvores-de-interesse-publico"
+      ],
+      "access": "Free, public street",
+      "transport": "North of the centre, about 18 min walk",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "Two registered poplars metres apart, distinguished only by girth (3.34m and 3.00m), so this entry is the pair. Register gives 86 years at the 2015 measurement, tracing to the 2009 assessment, so about 97 today.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "stb_009",
+      "name": "The Pepper Tree That Mended Nets",
+      "species": "Brazilian Pepper (Schinus terebinthifolius)",
+      "age_estimate": "about 83 years",
+      "age_min": 75,
+      "age_max": 90,
+      "location": {
+        "address": "Avenida Manuel Maria Portela, 2900 Setubal",
+        "latitude": 38.52656,
+        "longitude": -8.88673,
+        "neighbourhood": "Leste"
+      },
+      "story": "In a city built on sardines, this street tree used to work for the fleet. The parish records that the resin of the Brazilian pepper was used on fishing nets, a treatment that stiffened and waterproofed the fibres and slowed the rot that salt water works on anything organic. Setubal canned fish on an industrial scale from the nineteenth century onwards and the port is still the reason the city exists, so an ornamental avenue tree quietly feeding the tackle shed is a better fact than most trees on this page can offer. The species is Brazilian, related to the cashew and the mango, and it is the source of the pink peppercorns sold in supermarket grinders, which are not true pepper at all. It fruits heavily in autumn and winter, hanging clusters of small bright red drupes on a tree that is otherwise unremarkable, and that is the moment to see it. It is about eighty-three years old and thirteen metres tall, which is respectable rather than impressive; the story is the reason it is here.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.uf-setubal.pt/atividades/ambiente/projetos/377-roteiro-das-arvores-de-interesse-publico"
+      ],
+      "access": "Free, public street",
+      "transport": "East of the centre, about 15 min walk",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "Register gives 66 years at the 2015 measurement, so about 83 today. The fishing-net use is stated by the parish, not inferred.",
+      "best_time": {
+        "months": [11, 12],
+        "label": "late autumn, when the clusters of pink peppercorns turn red",
+        "kind": "fruit"
+      },
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "stb_010",
+      "name": "The Peruvian Pepper of the Jardim de Palhais",
+      "species": "Peruvian Pepper (Schinus molle)",
+      "age_estimate": "about 102 years",
+      "age_min": 90,
+      "age_max": 115,
+      "location": {
+        "address": "Jardim de Palhais, Sao Sebastiao, 2900 Setubal",
+        "latitude": 38.5249,
+        "longitude": -8.8858,
+        "neighbourhood": "Sao Sebastiao"
+      },
+      "story": "The Peruvian pepper is the weeping cousin of the tree on the avenue nearby, and the two together make a small lesson in how the same idea arrived in Europe twice. This one is Andean, it was carried back by the Spanish in the sixteenth century, and the Inca used its fruit for a fermented drink and its resin for embalming. What it looks like is a willow that took a wrong turn: long drooping compound leaves on branches that hang almost to the ground, so from underneath it forms a green tent. Crush a leaf and it smells sharply of pepper, which is the family trait, and in autumn it carries loose pink drupes on strings. At around a hundred and two years it is among the older trees in Setubal, and it stands alone in a small garden in Sao Sebastiao, off the line of the main walk. One honest caveat: this is the only tree on this page that the parish route does not cover, because the garden sits in a different parish, so it rests on the national register alone.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.icnf.pt/florestas/arvoredodeinteressepublico"
+      ],
+      "access": "Free, public garden",
+      "transport": "East of the centre, about 12 min walk",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "flagged",
+      "notes": "The only single-sourced tree on this page: it sits in Sao Sebastiao parish, outside the Uniao de Freguesias route that independently corroborates the other nine. Register gives 85 years at the 2009 assessment, so about 102 today.",
+      "best_time": {
+        "months": [10, 11],
+        "label": "October and November, when the pink drupes hang in strings",
+        "kind": "fruit"
+      },
+      "location_precision": "confirmed"
+    }
+  ]
+}
