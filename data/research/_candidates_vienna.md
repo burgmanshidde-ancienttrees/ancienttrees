@@ -1,0 +1,257 @@
+
+## cluster 1: 89 trees, 3.8 km across, centre 48.24762,16.33955
+- zweigeschlechtliche Eibe | Taxus baccata |  | 48.25602,16.34262 | 
+- Eibe | Taxus baccata |  | 48.25581,16.34014 | 
+- Platane | Platanus x hybrida |  | 48.23623,16.35409 | 
+- Traubeneiche | Quercus petraea |  | 48.24033,16.34634 | 
+- Rosskastanie | Aesculus hippocastanum |  | 48.22961,16.34027 | 
+- Silberpappel | Populus alba |  | 48.23378,16.34212 | 
+- Libanonzeder | Cedrus libani |  | 48.25524,16.35487 | 
+- Sommerlinde | Tilia platyphyllos |  | 48.24219,16.35598 | 
+- Schwarzkiefer | Pinus nigra |  | 48.25052,16.32306 | 
+- Schwarzkiefer | Pinus nigra |  | 48.25049,16.32309 | 
+- Hängeesche | Fraxinus excelsior „Pendula“ |  | 48.25631,16.31339 | 
+- Hängeesche | Fraxinus excelsior „Pendula“ |  | 48.25624,16.31334 | 
+- Eibe | Taxus baccata |  | 48.25544,16.34072 | 
+- Riesenmammutbaum | Sequoiadendron giganteum |  | 48.25557,16.34060 | 
+- Bruchweide | Salix fragilis |  | 48.26028,16.34498 | 
+- Stieleiche | Quercus robur |  | 48.23252,16.34959 | 
+- Morgenländischer Lebensbaum | Thuja orientalis |  | 48.25667,16.33916 | 
+- Winterlinde | Tilia cordata |  | 48.25317,16.35591 | 
+- Baumhasel | Corylus colurna |  | 48.23180,16.34506 | 
+- Platane | Platanus x hybrida |  | 48.24687,16.33846 | 
+- Gleditschie | Gleditsia triacanthos |  | 48.24087,16.34605 | 
+- Bergahorn | Acer pseudoplatanus |  | 48.24019,16.35338 | 
+- Schwarznuss | Juglans nigra |  | 48.23230,16.34237 | 
+- Morgenländische Platane | Platanus orientalis |  | 48.24398,16.35470 | 
+- Stieleiche | Quercus robur |  | 48.23312,16.35074 | 
+- Platane | Platanus x hybrida |  | 48.24720,16.33822 | 
+- Schwarzkiefer | Pinus nigra |  | 48.23871,16.31426 | 
+- Schwarzkiefer | Pinus nigra |  | 48.23866,16.31445 | 
+- Esche | Fraxinus excelsior |  | 48.23758,16.35225 | 
+- Spitzahorn | Acer platanoides |  | 48.24668,16.33315 | 
+- Esche | Fraxinus excelsior |  | 48.23831,16.35573 | 
+- Winterlinde | Tilia cordata |  | 48.25230,16.32143 | 
+- Eibe | Taxus baccata |  | 48.25990,16.33420 | 
+- Eibe | Taxus baccata |  | 48.25986,16.33428 | 
+- Rosskastanie | Aesculus hippocastanum |  | 48.25479,16.34484 | 
+- Krimlinde | Tilia x euchlora |  | 48.23025,16.32298 | 
+- Schwarzkiefer | Pinus nigra |  | 48.24931,16.31169 | 
+- Schwarzkiefer | Pinus nigra |  | 48.24929,16.31178 | 
+- Riesenmammutbaum | Sequoiadendron giganteum |  | 48.24612,16.30832 | 
+- Riesenmammutbaum | Sequoiadendron giganteum |  | 48.24688,16.33760 | 
+- Eibe | Taxus baccata |  | 48.23999,16.35402 | 
+- Blutbuche | Fagus sylvatica Atropurpurea |  | 48.23999,16.35402 | 
+- Feldahorn | Acer campestre |  | 48.23999,16.31698 | 
+- Baumhasel | Corylus colurna |  | 48.23006,16.33449 | 
+- Blutbuche | Fagus sylvatica Atropurpurea |  | 48.24560,16.35262 | 
+- Ginkgo | Ginkgo biloba |  | 48.24021,16.35252 | 
+- Rotföhre | Pinus sylvestris |  | 48.25337,16.35390 | 
+- Schwarzkiefer | Pinus nigra |  | 48.25321,16.35425 | 
+- Schwarzkiefer | Pinus nigra |  | 48.25325,16.35425 | 
+- Schwarzkiefer | Pinus nigra |  | 48.25324,16.35430 | 
+- Baumhasel | Corylus colurna |  | 48.23868,16.35091 | 
+- Winterlinde | Tilia cordata |  | 48.25340,16.34735 | 
+- Platane | Platanus x hybrida |  | 48.25376,16.35088 | 
+- Platane | Platanus x hybrida |  | 48.25377,16.35097 | 
+- Eibe | Taxus baccata |  | 48.24466,16.34721 | 
+- Sommerlinde | Tilia platyphyllos |  | 48.24466,16.34736 | 
+- Sommerlinde | Tilia platyphyllos |  | 48.25677,16.33963 | 
+- Stieleiche | Quercus robur |  | 48.25670,16.33977 | 
+- Eibe | Taxus baccata |  | 48.25158,16.35514 | 
+- Riesenmammutbaum | Sequoiadendron giganteum |  | 48.25131,16.35675 | 
+- Winterlinde | Tilia cordata |  | 48.25413,16.34236 | 
+- Eibe | Taxus baccata |  | 48.25458,16.34238 | 
+- Hängebuche | Fagus sylvatica 'Pendula' |  | 48.25836,16.33542 | 
+- Hängebuche | Fagus sylvatica 'Pendula' |  | 48.25873,16.33570 | 
+- Sommerlinde | Tilia platyphyllos |  | 48.25904,16.33523 | 
+- Abendländischer Lebensbaum | Thuja occidentalis |  | 48.25887,16.33533 | 
+- Sommerlinde | Tilia platyphyllos |  | 48.26163,16.34016 | 
+- Baumhasel | Corylus colurna |  | 48.25265,16.31874 | 
+- Schwarzkiefer | Pinus nigra ssp.nigra |  | 48.24263,16.31666 | 
+- Roter Walnussbaum | Juglans  |  | 48.25638,16.31468 | 
+- Ginkgo | Ginkgo biloba |  | 48.23316,16.33668 | 
+- Riesenmammutbaum | Sequoiadendron giganteum |  | 48.23313,16.33673 | 
+- Blutbuche | Fagus sylvatica Atropurpurea |  | 48.24293,16.35783 | 
+- Speierling | Sorbus domestica |  | 48.24244,16.35934 | 
+- Blutbuche | Fagus sylvatica Atropurpurea |  | 48.25920,16.33387 | 
+- Stieleiche | Quercus robur |  | 48.25684,16.34312 | 
+- Pyramideneiche | Quercus robur "Fastigiata" |  | 48.23329,16.31870 | 
+- Kornelkirsche | Cornus mas |  | 48.24783,16.33143 | 
+- Edelkastanie | Castanea sativa |  | 48.26012,16.34060 | 
+- Platane | Platanus acerifolia |  | 48.24431,16.35294 | 
+- Schwarzkiefer | Pinus nigra |  | 48.24101,16.31853 | 
+- Stieleiche | Quercus robur |  | 48.25483,16.34236 | 
+- Stieleiche | Quercus robur |  | 48.25648,16.35444 | 
+- Ginkgo | Ginkgo biloba |  | 48.24454,16.34628 | 
+- Sommerlinde | Tilia platyphyllos |  | 48.24845,16.32330 | 
+- Serbische Fichte | Picea omorica |  | 48.23719,16.33760 | 
+- Hängebuche | Fagus sylvatica 'Pendula' |  | 48.23321,16.34496 | 
+- Rotbuche | Fagus sylvatica |  | 48.25861,16.33535 | 
+- Rotbuche | Fagus sylvatica |  | 48.25803,16.33556 | 
+
+## cluster 2: 64 trees, 3.7 km across, centre 48.18474,16.28776
+- Morgenländische Platane | Platanus orientalis |  | 48.18719,16.29532 | 
+- Japanischer Schnurbaum | Styphnolobium japonicum |  | 48.18443,16.30138 | 
+- Stieleiche | Quercus robur |  | 48.18397,16.30091 | 
+- Eibe | Taxus baccata |  | 48.18386,16.30088 | 
+- Platane | Platanus x hybrida |  | 48.18783,16.29915 | 
+- Stechpalme | Ilex aquifolium |  | 48.18638,16.29086 | 
+- Schwarzpappel | Populus nigra |  | 48.19281,16.27559 | 
+- Morgenländische Platane | Platanus orientalis |  | 48.18674,16.30117 | 
+- Gewöhnlicher Buchsbaum | Buxus sempervirens |  | 48.19195,16.29834 | 
+- Baumhasel | Corylus colurna |  | 48.18829,16.26647 | 
+- Magnolie | Magnolia x hybrida |  | 48.19176,16.29984 | 
+- Platane | Platanus x hybrida |  | 48.18713,16.29944 | 
+- Eibe | Taxus baccata |  | 48.18724,16.29946 | 
+- Winterlinde | Tilia cordata |  | 48.16955,16.28727 | 
+- Platane | Platanus x hybrida |  | 48.19016,16.28556 | 
+- Ginkgo | Ginkgo biloba |  | 48.18661,16.29164 | 
+- Eibe | Taxus baccata |  | 48.19426,16.27667 | 
+- Morgenländische Platane | Platanus orientalis |  | 48.18398,16.29718 | 
+- Eibe | Taxus baccata |  | 48.18290,16.29943 | 
+- Eibe | Taxus baccata |  | 48.18723,16.26103 | 
+- Baumhasel | Corylus colurna |  | 48.18005,16.29774 | 
+- Baumhasel | Corylus colurna |  | 48.18219,16.29548 | 
+- Eibe | Taxus baccata |  | 48.17996,16.29772 | 
+- Ginkgo | Ginkgo biloba |  | 48.18572,16.28471 | 
+- Stechpalme | Ilex aquifolium |  | 48.18576,16.28479 | 
+- Eibe | Taxus baccata |  | 48.18719,16.29119 | 
+- Platane | Platanus x hybrida |  | 48.18810,16.29660 | 
+- Rosskastanie | Aesculus hippocastanum |  | 48.17139,16.28229 | 
+- Platane | Platanus x hybrida |  | 48.18896,16.30261 | 
+- Stieleiche | Quercus robur |  | 48.18544,16.26005 | 
+- Stieleiche | Quercus robur |  | 48.18542,16.26017 | 
+- Tränenkiefer | Pinus wallichiana |  | 48.18840,16.29198 | 
+- Kalifornische Flusszeder | Calocedrus decurrens |  | 48.18425,16.29192 | 
+- Ginkgo | Ginkgo biloba |  | 48.18662,16.30830 | 
+- Morgenländische Platane | Platanus orientalis |  | 48.18580,16.30170 | 
+- Morgenländische Platane | Platanus orientalis |  | 48.18578,16.30188 | 
+- Riesenmammutbaum | Sequoiadendron giganteum |  | 48.18017,16.25977 | 
+- Eibe | Taxus baccata |  | 48.19036,16.27156 | 
+- Schwarzpappel | Populus nigra |  | 48.19005,16.26303 | 
+- Silberahorn | Acer saccharinum |  | 48.19005,16.26303 | 
+- Esche | Fraxinus excelsior |  | 48.19005,16.26303 | 
+- Morgenländische Platane | Platanus orientalis |  | 48.18749,16.30187 | 
+- Esche | Fraxinus excelsior |  | 48.18929,16.27444 | 
+- Rosskastanie | Aesculus hippocastanum |  | 48.18916,16.27392 | 
+- Sommerlinde | Tilia platyphyllos |  | 48.18785,16.28873 | 
+- Kaukasische Flügelnuss | Pterocarya fraxinifolia |  | 48.17531,16.27385 | 
+- Blutbuche | Fagus sylvatica Atropurpurea |  | 48.17835,16.27520 | 
+- Winterlinde | Tilia cordata |  | 48.17409,16.30105 | 
+- Pyramideneiche | Quercus robur "Fastigiata" |  | 48.18004,16.29516 | 
+- Blutbuche | Fagus sylvatica Atropurpurea |  | 48.19218,16.29518 | 
+- Winterlinde | Tilia cordata |  | 48.18747,16.28851 | 
+- Schwarzkiefer | Pinus nigra |  | 48.18814,16.28483 | 
+- Sommerlinde | Tilia platyphyllos |  | 48.18055,16.29852 | 
+- Blutbuche | Fagus sylvatica Atropurpurea |  | 48.18786,16.28915 | 
+- Stieleiche | Quercus robur |  | 48.17693,16.27706 | 
+- Stieleiche | Quercus robur |  | 48.17468,16.28468 | 
+- Säulenwacholder | Juniperus chinensis |  | 48.17041,16.29184 | 
+- Säulenwacholder | Juniperus chinensis |  | 48.17039,16.29195 | 
+- Blutbuche | Fagus sylvatica Atropurpurea |  | 48.17988,16.27718 | 
+- Winterlinde | Tilia cordata |  | 48.18867,16.28647 | 
+- Baumhasel | Corylus colurna |  | 48.18520,16.29861 | 
+- Bergulme | Ulmus glabra |  | 48.19361,16.28468 | 
+- Edelkastanie | Castanea sativa |  | 48.17983,16.29320 | 
+- Edelkastanie | Castanea sativa |  | 48.17987,16.29346 | 
+
+## cluster 3: 45 trees, 3.7 km across, centre 48.20779,16.36040
+- Morgenländische Platane | Platanus orientalis |  | 48.20811,16.36121 | 
+- Stieleiche | Quercus robur |  | 48.20070,16.38200 | 
+- Robinie | Robinia pseudoacacia |  | 48.19384,16.35856 | 
+- Japanischer Schnurbaum | Styphnolobium japonicum |  | 48.20367,16.37910 | 
+- Kirschlorbeer | Prunus laurocerasus |  | 48.19741,16.36257 | 
+- Feldulme | Ulmus minor |  | 48.20418,16.35179 | 
+- Götterbaum | Ailanthus altissima |  | 48.19989,16.34724 | 
+- Kaukasische Flügelnuss | Pterocarya fraxinifolia |  | 48.20509,16.37947 | 
+- Morgenländische Platane | Platanus orientalis |  | 48.21303,16.35578 | 
+- Sommerlinde | Tilia platyphyllos |  | 48.21123,16.34086 | 
+- Baumhasel | Corylus colurna |  | 48.19862,16.35522 | 
+- Baumhasel | Corylus colurna |  | 48.19856,16.35511 | 
+- Persische Parrotie (Eisenholzbaum) | Parrotia persica |  | 48.20685,16.35908 | 
+- Baumhasel | Corylus colurna |  | 48.19912,16.37024 | 
+- Baumhasel | Corylus colurna |  | 48.19922,16.36985 | 
+- Pyramidenpappel | Populus nigra 'Italica' |  | 48.22604,16.36166 | 
+- Sommerlinde | Tilia platyphyllos |  | 48.21261,16.35100 | 
+- Geschlitztblättrige Rotbuche | Fagus sylvatica Laciniata |  | 48.21021,16.35976 | 
+- Platane | Platanus x hybrida |  | 48.21013,16.35917 | 
+- Platane | Platanus x hybrida |  | 48.21107,16.35997 | 
+- Platane | Platanus x hybrida |  | 48.21115,16.35923 | 
+- Ginkgo | Ginkgo biloba |  | 48.20597,16.37996 | 
+- Platane | Platanus x hybrida |  | 48.19356,16.37473 | 
+- Baumhasel | Corylus colurna |  | 48.20460,16.34230 | 
+- Baumhasel | Corylus colurna |  | 48.20460,16.34235 | 
+- Sommerlinde | Tilia platyphyllos |  | 48.20459,16.34274 | 
+- Eibe | Taxus baccata |  | 48.22293,16.37454 | 
+- Eibe | Taxus baccata |  | 48.22299,16.37443 | 
+- Weißer Maulbeerbaum | Morus alba |  | 48.20434,16.38560 | 
+- Platane | Platanus x hybrida |  | 48.21532,16.34626 | 
+- Schwarzer Maulbeerbaum | Morus nigra |  | 48.19474,16.34752 | 
+- Platane | Platanus x hybrida |  | 48.20761,16.37958 | 
+- Judasbaum | Cercis siliquastrum |  | 48.21710,16.35258 | 
+- Kugeltrompetenbaum | Catalpa bignonioides "Nana" |  | 48.20377,16.35445 | 
+- Kugeltrompetenbaum | Catalpa bignonioides "Nana" |  | 48.20371,16.35448 | 
+- Gewöhnliche Platane | Platanus x hispanica |  | 48.21932,16.37772 | 
+- Feldulme | Ulmus minor |  | 48.19448,16.36899 | 
+- Ginkgo | Ginkgo biloba |  | 48.20891,16.35179 | 
+- Blutbuche | Fagus sylvatica Atropurpurea |  | 48.21798,16.35703 | 
+- Morgenländische Platane | Platanus orientalis |  | 48.21926,16.35124 | 
+- Edelkastanie | Castanea sativa |  | 48.21270,16.34290 | 
+- Platane | Platanus x hybrida |  | 48.22351,16.36222 | 
+- Blauglockenbaum | Paulownia tomentosa |  | 48.21673,16.35901 | 
+- Morgenländische Platane | Platanus orientalis |  | 48.20750,16.37435 | 
+- Rosskastanie | Aesculus hippocastanum |  | 48.20343,16.34223 | 
+
+## cluster 4: 18 trees, 3.7 km across, centre 48.19894,16.40609
+- Kalifornische Flusszeder | Calocedrus decurrens |  | 48.19381,16.39603 | 
+- Kalifornische Flusszeder | Calocedrus decurrens |  | 48.19372,16.39614 | 
+- Morgenländische Platane | Platanus orientalis |  | 48.19698,16.38694 | 
+- Morgenländische Platane | Platanus orientalis |  | 48.19443,16.40555 | 
+- Schwarzpappel | Populus nigra |  | 48.20325,16.42754 | 
+- Weißer Maulbeerbaum | Morus alba |  | 48.20853,16.39510 | 
+- Eibe | Taxus baccata |  | 48.19381,16.38236 | 
+- Eibe | Taxus baccata |  | 48.19380,16.38251 | 
+- Morgenländische Platane | Platanus orientalis |  | 48.19540,16.38385 | 
+- Stieleiche | Quercus robur |  | 48.17742,16.40970 | 
+- Stieleiche | Quercus robur |  | 48.19604,16.42191 | 
+- Traubeneiche | Quercus petraea |  | 48.19240,16.42875 | 
+- Stieleiche | Quercus robur |  | 48.21038,16.40839 | 
+- Platane | Platanus |  | 48.20895,16.41723 | 
+- Platane | Platanus |  | 48.20919,16.41752 | 
+- Platane | Platanus |  | 48.20907,16.41775 | 
+- Platane | Platanus |  | 48.20882,16.41745 | 
+- Stieleiche | Quercus robur |  | 48.19499,16.41482 | 
+
+## cluster 5: 16 trees, 3.7 km across, centre 48.16380,16.30957
+- Bergahorn | Acer pseudoplatanus |  | 48.16793,16.31545 | 
+- Schwarzkiefer | Pinus nigra |  | 48.16517,16.31517 | 
+- Esche | Fraxinus excelsior |  | 48.16933,16.29701 | 
+- Schwarzkiefer | Pinus nigra |  | 48.14927,16.30044 | 
+- Eibe | Taxus baccata |  | 48.14936,16.30055 | 
+- Esche | Fraxinus excelsior |  | 48.14928,16.30074 | 
+- Zerreiche | Quercus cerris |  | 48.14942,16.30040 | 
+- Pyramidenpappel | Populus nigra 'Italica' |  | 48.15818,16.30827 | 
+- Wintergrüne Eiche | Quercus turneri Pseudoturneri |  | 48.17180,16.31040 | 
+- Abendländischer Zürgelbaum | Celtis occidentalis |  | 48.17980,16.31911 | 
+- Platane | Platanus x hybrida |  | 48.17887,16.31899 | 
+- Esche | Fraxinus excelsior |  | 48.16575,16.31099 | 
+- Eibe | Taxus baccata |  | 48.16385,16.32003 | 
+- Esche | Fraxinus excelsior |  | 48.16398,16.32070 | 
+- Stieleiche | Quercus robur |  | 48.17298,16.32857 | 
+- Eibe | Taxus baccata |  | 48.16575,16.28636 | 
+
+## cluster 6: 13 trees, 2.5 km across, centre 48.22779,16.29447
+- Kalifornische Flusszeder | Calocedrus decurrens |  | 48.22726,16.30269 | 
+- Kalifornische Flusszeder | Calocedrus decurrens |  | 48.22778,16.29290 | 
+- Riesenmammutbaum | Sequoiadendron giganteum |  | 48.22737,16.29368 | 
+- Riesenmammutbaum | Sequoiadendron giganteum |  | 48.22724,16.29456 | 
+- Winterlinde | Tilia cordata |  | 48.22840,16.29902 | 
+- Riesenmammutbaum | Sequoiadendron giganteum |  | 48.22886,16.29236 | 
+- Ginkgo | Ginkgo biloba |  | 48.21579,16.28167 | 
+- Platane | Platanus x hybrida |  | 48.23809,16.28412 | 
+- Feldahorn | Acer campestre |  | 48.22942,16.30225 | 
+- Sommerlinde | Tilia platyphyllos |  | 48.23768,16.28688 | 
+- Blutbuche | Fagus sylvatica purpurea |  | 48.22889,16.29498 | 
+- Blutbuche | Fagus sylvatica Atropurpurea |  | 48.21857,16.30101 | 
+- Baumhasel | Corylus colurna |  | 48.22592,16.30199 | 

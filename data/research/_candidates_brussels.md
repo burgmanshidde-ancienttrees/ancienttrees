@@ -1,0 +1,585 @@
+
+## cluster 1: 213 trees, 3.8 km across, centre 50.84227,4.36869
+- Platane d'Orient | Platanus orientalis | 648cm | 50.83746,4.37853 | 
+- Platane d'Orient | Platanus orientalis | 514cm | 50.83929,4.37961 | 
+- Platane à feuille d'érable | Platanus x hispanica | 499cm | 50.83926,4.39082 | 
+- Platane à feuille d'érable | Platanus x hispanica | 481cm | 50.83931,4.39063 | 
+- Marronnier commun | Aesculus hippocastanum | 481cm | 50.84348,4.37092 | 
+- Marronnier commun | Aesculus hippocastanum | 480cm | 50.83850,4.37904 | 
+- Platane à feuille d'érable | Platanus x hispanica | 471cm | 50.84634,4.37809 | 
+- Platane à feuille d'érable | Platanus x hispanica | 459cm | 50.84698,4.39214 | 
+- Platane à feuille d'érable | Platanus x hispanica | 441cm | 50.84626,4.37826 | 
+- Marronnier commun | Aesculus hippocastanum | 437cm | 50.84687,4.37800 | 
+- Platane à feuille d'érable | Platanus x hispanica | 415cm | 50.84457,4.37972 | 
+- Frêne à feuilles étroites | Fraxinus angustifolia | 412cm | 50.85360,4.35029 | 
+- Hêtre d'Europe | Fagus sylvatica | 409cm | 50.83892,4.37824 | 
+- Platane à feuille d'érable | Platanus x hispanica | 407cm | 50.84282,4.38779 | 
+- Platane à feuille d'érable | Platanus x hispanica | 406cm | 50.84039,4.36899 | 
+- Platane à feuille d'érable | Platanus x hispanica | 404cm | 50.83886,4.37828 | 
+- Platane à feuille d'érable | Platanus x hispanica | 404cm | 50.83887,4.39013 | 
+- Erable sycomore | Acer pseudoplatanus | 397cm | 50.83776,4.35642 | 
+- Erable argenté | Acer saccharinum | 392cm | 50.84653,4.38297 | 
+- Platane à feuille d'érable | Platanus x hispanica | 388cm | 50.83315,4.34331 | 
+- Erable sycomore | Acer pseudoplatanus | 387cm | 50.83935,4.37929 | 
+- Cèdre du Liban | Cedrus libani | 385cm | 50.84739,4.38142 | 
+- Platane à feuille d'érable | Platanus x hispanica | 379cm | 50.84358,4.36114 | 
+- Tulipier de Virginie | Liriodendron tulipifera | 375cm | 50.83826,4.37836 | 
+- Acer pseudoplatanus f. aureovariegatum | Acer pseudoplatanus f. aureovariegatum | 375cm | 50.84361,4.37117 | 
+- Ailante glanduleux | Ailanthus altissima | 373cm | 50.84743,4.38392 | 
+- Noyer noir | Juglans nigra | 370cm | 50.83591,4.37613 | 
+- Platane à feuille d'érable | Platanus x hispanica | 367cm | 50.83767,4.35572 | 
+- Marronnier commun | Aesculus hippocastanum | 367cm | 50.83906,4.37941 | 
+- Platane à feuille d'érable | Platanus x hispanica | 365cm | 50.83933,4.39046 | 
+- Marronnier commun | Aesculus hippocastanum | 361cm | 50.84573,4.38592 | 
+- Platane à feuille d'érable | Platanus x hispanica | 350cm | 50.83880,4.39060 | 
+- Platane à feuille d'érable | Platanus x hispanica | 350cm | 50.83814,4.37768 | 
+- Tilleul argenté | Tilia tomentosa | 347cm | 50.83950,4.35690 | 
+- Chêne rouge d'Amérique | Quercus rubra | 342cm | 50.83822,4.35649 | 
+- Ailante glanduleux | Ailanthus altissima | 342cm | 50.84047,4.35551 | 
+- Platane à feuille d'érable | Platanus x hispanica | 339cm | 50.84540,4.36444 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 333cm | 50.84260,4.36640 | 
+- Platane à feuille d'érable | Platanus x hispanica | 330cm | 50.83881,4.39052 | 
+- Platane à feuille d'érable | Platanus x hispanica | 330cm | 50.83886,4.39023 | 
+- Arbre aux quarante écus | Ginkgo biloba | 327cm | 50.83826,4.35671 | 
+- Marronnier commun | Aesculus hippocastanum | 327cm | 50.84648,4.37809 | 
+- Marronnier commun | Aesculus hippocastanum | 323cm | 50.83788,4.37754 | 
+- Ailante glanduleux | Ailanthus altissima | 321cm | 50.84655,4.35484 | 
+- Zelkova du Japon | Zelkova serrata | 321cm | 50.83799,4.37720 | 
+- Tilleul argenté | Tilia tomentosa | 320cm | 50.84109,4.35752 | 
+- Marronnier commun | Aesculus hippocastanum | 314cm | 50.84696,4.39149 | 
+- Platane à feuille d'érable | Platanus x hispanica | 314cm | 50.84681,4.36800 | 
+- Platane à feuille d'érable | Platanus x hispanica | 310cm | 50.84997,4.34155 | 
+- Erable sycomore | Acer pseudoplatanus | 308cm | 50.84037,4.36966 | 
+- Marronnier commun | Aesculus hippocastanum | 308cm | 50.83757,4.35558 | 
+- Noyer noir | Juglans nigra | 308cm | 50.84277,4.36557 | 
+- Marronnier commun | Aesculus hippocastanum | 308cm | 50.84240,4.36057 | 
+- Tulipier de Virginie | Liriodendron tulipifera | 306cm | 50.83813,4.35668 | 
+- Marronnier du Japon | Aesculus turbinata | 305cm | 50.85386,4.34986 | 
+- Marronnier commun | Aesculus hippocastanum | 305cm | 50.84217,4.37240 | 
+- Châtaignier | Castanea sativa | 302cm | 50.84305,4.38792 | 
+- Acer saccharinum var. laciniatum | Acer saccharinum var. laciniatum | 300cm | 50.83265,4.34463 | 
+- Marronnier commun | Aesculus hippocastanum | 300cm | 50.83996,4.37627 | 
+- Marronnier commun | Aesculus hippocastanum | 299cm | 50.84310,4.37132 | 
+- Cèdre du Liban | Cedrus libani | 298cm | 50.83713,4.35556 | 
+- Tilleul à larges feuilles | Tilia platyphyllos | 298cm | 50.84721,4.37799 | 
+- Métaséquoia | Metasequoia glyptostroboides | 293cm | 50.83800,4.37958 | 
+- Marronnier commun | Aesculus hippocastanum | 292cm | 50.84276,4.36661 | 
+- Platane à feuille d'érable | Platanus x hispanica | 291cm | 50.83882,4.39040 | 
+- Chêne de Turner | Quercus x turneri | 290cm | 50.83811,4.35771 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 290cm | 50.84161,4.36582 | 
+- Marronnier commun | Aesculus hippocastanum | 289cm | 50.84001,4.35505 | 
+- Erable sycomore | Acer pseudoplatanus | 286cm | 50.83963,4.35671 | 
+- Marronnier commun | Aesculus hippocastanum | 286cm | 50.84154,4.36577 | 
+- Hêtre d'Europe | Fagus sylvatica | 285cm | 50.83765,4.35593 | 
+- Ptérocaryer à feuilles de frêne | Pterocarya fraxinifolia | 283cm | 50.84498,4.34383 | 
+- Ailante glanduleux | Ailanthus altissima | 282cm | 50.85195,4.36195 | 
+- Erable sycomore | Acer pseudoplatanus | 281cm | 50.83861,4.34726 | 
+- Platane à feuille d'érable | Platanus x hispanica | 278cm | 50.84559,4.38320 | 
+- Cyprès chauve de Louisiane | Taxodium distichum | 278cm | 50.83815,4.37958 | 
+- Platane à feuille d'érable | Platanus x hispanica | 276cm | 50.85240,4.36143 | 
+- Marronnier commun | Aesculus hippocastanum | 274cm | 50.84046,4.35563 | 
+- Arbre aux quarante écus | Ginkgo biloba | 272cm | 50.84264,4.36552 | 
+- Platane d'Orient | Platanus orientalis | 272cm | 50.83814,4.35634 | 
+- Mûrier blanc | Morus alba | 271cm | 50.84508,4.35570 | 
+- Marronnier commun | Aesculus hippocastanum | 271cm | 50.83928,4.37949 | 
+- Tilleul argenté | Tilia tomentosa | 270cm | 50.84072,4.34420 | 
+- Platane à feuille d'érable | Platanus x hispanica | 270cm | 50.84267,4.34458 | 
+- Marronnier commun | Aesculus hippocastanum | 270cm | 50.83974,4.37964 | 
+- Marronnier commun | Aesculus hippocastanum | 268cm | 50.84879,4.38405 | 
+- Platane à feuille d'érable | Platanus x hispanica | 266cm | 50.84560,4.38314 | 
+- Erable argenté | Acer saccharinum | 266cm | 50.83530,4.35234 | 
+- Tilleul argenté pleureur | Tilia x petiolaris | 266cm | 50.84308,4.37269 | 
+- Merisier | Prunus avium | 265cm | 50.84094,4.38356 | 
+- Tilleul commun | Tilia x europaea | 264cm | 50.84031,4.34371 | 
+- Chêne de Turner | Quercus x turneri | 264cm | 50.83744,4.35607 | 
+- Tilleul argenté | Tilia tomentosa | 262cm | 50.84897,4.38748 | 
+- Cyprès chauve de Louisiane | Taxodium distichum | 261cm | 50.83988,4.37977 | 
+- Orme champêtre | Ulmus minor | 259cm | 50.85457,4.36104 | 
+- Erable sycomore | Acer pseudoplatanus | 258cm | 50.84012,4.37946 | 
+- Erable sycomore | Acer pseudoplatanus | 256cm | 50.83831,4.35478 | 
+- Hêtre d'Europe | Fagus sylvatica | 255cm | 50.83733,4.35525 | 
+- Marronnier commun | Aesculus hippocastanum | 253cm | 50.84819,4.37834 | 
+- Ailante glanduleux | Ailanthus altissima | 252cm | 50.85218,4.36216 | 
+- Erable sycomore | Acer pseudoplatanus | 250cm | 50.84819,4.38603 | 
+- Saule pleureur | Salix x sepulcralis | 248cm | 50.84752,4.37824 | 
+- Cyprès chauve de Louisiane | Taxodium distichum | 247cm | 50.83946,4.38021 | 
+- Métaséquoia | Metasequoia glyptostroboides | 246cm | 50.83828,4.38021 | 
+- Platane à feuille d'érable | Platanus x hispanica | 243cm | 50.84685,4.36785 | 
+- Tilleul à petites feuilles | Tilia cordata | 243cm | 50.82399,4.36894 | 
+- Robinier faux-acacia | Robinia pseudoacacia | 241cm | 50.84876,4.38713 | 
+- Orme champêtre | Ulmus minor | 241cm | 50.85453,4.36114 | 
+- Sophora du Japon | Sophora japonica | 240cm | 50.83802,4.37700 | 
+- Ptérocaryer à feuilles de frêne | Pterocarya fraxinifolia | 240cm | 50.84606,4.37896 | 
+- Erable sycomore | Acer pseudoplatanus | 240cm | 50.83788,4.37703 | 
+- Hêtre d'Europe | Fagus sylvatica | 239cm | 50.83772,4.35599 | 
+- Tilleul du Caucase | Tilia x euchlora | 238cm | 50.84809,4.37756 | 
+- Ailante glanduleux | Ailanthus altissima | 238cm | 50.85220,4.36205 | 
+- Noyer royal | Juglans regia | 236cm | 50.84416,4.38590 | 
+- Ailante glanduleux | Ailanthus altissima | 236cm | 50.83923,4.35656 | 
+- Ptérocaryer à feuilles de frêne | Pterocarya fraxinifolia | 235cm | 50.84090,4.34919 | 
+- Marronnier commun | Aesculus hippocastanum | 234cm | 50.84783,4.37741 | 
+- Erable plane | Acer platanoides | 233cm | 50.83924,4.34824 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 230cm | 50.82563,4.36414 | 
+- Cyprès chauve de Louisiane | Taxodium distichum | 230cm | 50.83984,4.37970 | 
+- Tilleul argenté | Tilia tomentosa | 230cm | 50.84345,4.35874 | 
+- Robinier faux-acacia | Robinia pseudoacacia | 229cm | 50.84310,4.37257 | 
+- Pin noir | Pinus nigra | 224cm | 50.83794,4.37695 | 
+- Tulipier de Virginie | Liriodendron tulipifera | 223cm | 50.84322,4.39364 | 
+- Marronnier commun | Aesculus hippocastanum | 222cm | 50.83933,4.35704 | 
+- If commun | Taxus baccata | 220cm | 50.83817,4.37859 | 
+- Erable plane | Acer platanoides | 219cm | 50.83934,4.35644 | 
+- Acer pseudoplatanus f. aureovariegatum | Acer pseudoplatanus f. aureovariegatum | 218cm | 50.84306,4.37154 | 
+- Erable plane | Acer platanoides | 218cm | 50.83265,4.34498 | 
+- Ptérocaryer à feuilles de frêne | Pterocarya fraxinifolia | 215cm | 50.84099,4.34919 | 
+- Platane à feuille d'érable | Platanus x hispanica | 214cm | 50.83884,4.39031 | 
+- Noyer noir | Juglans nigra | 214cm | 50.83788,4.35603 | 
+- Zelkova du Japon | Zelkova serrata | 213cm | 50.83797,4.37784 | 
+- Hêtre pleureur | Fagus sylvatica f. pendula | 212cm | 50.84274,4.36610 | 
+- Févier d'Amérique | Gleditsia triacanthos | 212cm | 50.84090,4.35721 | 
+- Tilleul à petites feuilles | Tilia cordata | 210cm | 50.82405,4.36899 | 
+- Arbre aux quarante écus | Ginkgo biloba | 208cm | 50.83993,4.36959 | 
+- Sophora du Japon | Sophora japonica | 208cm | 50.83521,4.35231 | 
+- Noisetier de Byzance | Corylus colurna | 208cm | 50.84066,4.35610 | 
+- If commun | Taxus baccata | 208cm | 50.84970,4.38680 | 
+- Orme commun/de montagne | Ulmus glabra | 207cm | 50.85048,4.34294 | 
+- Paulownia impérial | Paulownia tomentosa | 206cm | 50.84031,4.37861 | 
+- Ptérocaryer à feuilles de frêne | Pterocarya fraxinifolia | 205cm | 50.84092,4.34908 | 
+- Tilleul du Caucase | Tilia x euchlora | 204cm | 50.84044,4.35589 | 
+- Hêtre d'Europe | Fagus sylvatica | 204cm | 50.83770,4.35588 | 
+- Orme commun/de montagne | Ulmus glabra | 204cm | 50.85056,4.34296 | 
+- Charme commun | Carpinus betulus | 204cm | 50.83812,4.38028 | 
+- Févier sans épines | Gleditsia triacanthos var. inermis | 203cm | 50.84095,4.35729 | 
+- Erable sycomore | Acer pseudoplatanus | 201cm | 50.85188,4.36080 | 
+- Micocoulier de Méditerranée | Celtis australis | 199cm | 50.83800,4.38058 | 
+- Orme commun/de montagne | Ulmus glabra | 199cm | 50.85040,4.34294 | 
+- Noyer royal | Juglans regia | 197cm | 50.84694,4.39183 | 
+- Mûrier blanc | Morus alba | 196cm | 50.84044,4.36933 | 
+- Merisier | Prunus avium | 194cm | 50.84481,4.39039 | 
+- Erable sycomore | Acer pseudoplatanus | 194cm | 50.84866,4.38288 | 
+- Erable à grandes feuilles | Acer macrophyllum | 194cm | 50.84323,4.37283 | 
+- Orme commun/de montagne | Ulmus glabra | 192cm | 50.85044,4.34292 | 
+- Catalpa commun | Catalpa bignonioides | 192cm | 50.84687,4.37825 | 
+- Sophora du Japon | Sophora japonica | 191cm | 50.83523,4.35177 | 
+- Tilleul à petites feuilles | Tilia cordata | 190cm | 50.83942,4.35636 | 
+- Cèdre de l'Himalaya | Cedrus deodara | 188cm | 50.84322,4.34290 | 
+- Erable argenté | Acer saccharinum | 185cm | 50.83619,4.34361 | 
+- Frêne commun | Fraxinus excelsior | 185cm | 50.85114,4.38514 | 
+- Arbre aux quarante écus | Ginkgo biloba | 184cm | 50.83915,4.37910 | 
+- Châtaignier | Castanea sativa | 182cm | 50.83825,4.37878 | 
+- Frêne commun | Fraxinus excelsior | 181cm | 50.84813,4.38115 | 
+- Orme hybride 'Lobel' | Ulmus x hollandica 'Lobel' | 176cm | 50.84799,4.34617 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 174cm | 50.84995,4.36079 | 
+- Ptérocaryer à feuilles de frêne | Pterocarya fraxinifolia | 173cm | 50.84484,4.35558 | 
+- Tilleul à petites feuilles | Tilia cordata | 170cm | 50.82398,4.36892 | 
+- Sophora du Japon | Sophora japonica | 170cm | 50.84015,4.37738 | 
+- Tilleul commun | Tilia x europaea | 167cm | 50.84855,4.38430 | 
+- Erable sycomore | Acer pseudoplatanus | 166cm | 50.84035,4.38326 | 
+- Chêne pédonculé | Quercus robur | 166cm | 50.84417,4.35688 | 
+- Noyer royal | Juglans regia | 165cm | 50.83897,4.35102 | 
+- Sophora du Japon | Sophora japonica | 164cm | 50.83770,4.35714 | 
+- Erable plane | Acer platanoides | 163cm | 50.83927,4.35667 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 163cm | 50.84996,4.36093 | 
+- Tilleul du Caucase | Tilia x euchlora | 162cm | 50.84142,4.38360 | 
+- Erable plane | Acer platanoides | 160cm | 50.83944,4.35701 | 
+- Fagus grandifolia | Fagus grandifolia | 158cm | 50.83788,4.37825 | 
+- Noisetier de Byzance | Corylus colurna | 153cm | 50.84028,4.37873 | 
+- Métaséquoia | Metasequoia glyptostroboides | 149cm | 50.85052,4.38650 | 
+- Poirier cultivé | Pyrus communis | 147cm | 50.84523,4.38172 | 
+- Métaséquoia | Metasequoia glyptostroboides | 146cm | 50.85061,4.38656 | 
+- Poirier cultivé | Pyrus communis | 146cm | 50.84756,4.39166 | 
+- houx | Ilex aquifolium | 143cm | 50.84313,4.39353 | 
+- Mûrier blanc | Morus alba | 140cm | 50.85245,4.36000 | 
+- Févier sans épines | Gleditsia triacanthos var. inermis | 140cm | 50.83744,4.35551 | 
+- Orme commun/de montagne | Ulmus glabra | 140cm | 50.85051,4.34292 | 
+- Ilex aquifolium 'Pyramidalis' | Ilex aquifolium 'Pyramidalis' | 140cm | 50.83791,4.35637 | 
+- Tétradium de Daniel | Tetradium daniellii | 137cm | 50.83746,4.37814 | 
+- Métaséquoia | Metasequoia glyptostroboides | 135cm | 50.85079,4.38668 | 
+- houx | Ilex aquifolium | 134cm | 50.84766,4.37886 | 
+- Frêne pleureur | Fraxinus excelsior f. pendula | 134cm | 50.83762,4.35642 | 
+- Marronnier jaune | Aesculus flava | 134cm | 50.83942,4.35691 | 
+- Tétradium de Daniel | Tetradium daniellii | 133cm | 50.83769,4.37798 | 
+- Mûrier blanc | Morus alba | 130cm | 50.83749,4.35677 | 
+- Tétradium de Daniel | Tetradium daniellii | 129cm | 50.83757,4.37807 | 
+- houx | Ilex aquifolium | 125cm | 50.85413,4.35055 | 
+- Tétradium de Daniel | Tetradium daniellii | 125cm | 50.83778,4.37791 | 
+- Erable sycomore | Acer pseudoplatanus | 121cm | 50.83969,4.35660 | 
+- Mûrier blanc | Morus alba | 120cm | 50.84605,4.37883 | 
+- Ginkgo biloba 'Fastigiata' | Ginkgo biloba 'Fastigiata' | 118cm | 50.83920,4.34733 | 
+- Métaséquoia | Metasequoia glyptostroboides | 113cm | 50.85072,4.38663 | 
+- Sureau noir | Sambucus nigra | 100cm | 50.85241,4.36003 | 
+- houx | Ilex aquifolium | 88cm | 50.84319,4.39356 | 
+- houx | Ilex aquifolium | 86cm | 50.84308,4.39350 | 
+- houx | Ilex aquifolium | 81cm | 50.85412,4.35065 | 
+- Chicot du Canada | Gymnocladus dioica | 73cm | 50.83789,4.35728 | 
+- Eucalyptus | Eucalyptus globulus | 70cm | 50.83937,4.35590 | 
+- Pin nain des montagnes | Pinus mugo | 50cm | 50.85436,4.35019 | 
+
+## cluster 2: 188 trees, 3.5 km across, centre 50.88974,4.34723
+- Sequoia géant | Sequoiadendron giganteum | 744cm | 50.88841,4.35878 | 
+- Platane à feuille d'érable | Platanus x hispanica | 520cm | 50.88877,4.33052 | 
+- Sequoia géant | Sequoiadendron giganteum | 514cm | 50.89309,4.35781 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 511cm | 50.88079,4.35594 | 
+- Peuplier du Canada | Populus x canadensis | 510cm | 50.89354,4.34803 | 
+- Tilleul argenté | Tilia tomentosa | 507cm | 50.89372,4.36091 | 
+- Cèdre du Liban | Cedrus libani | 504cm | 50.89614,4.34820 | 
+- Tulipier de Virginie | Liriodendron tulipifera | 471cm | 50.88923,4.35465 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 454cm | 50.88955,4.35162 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 453cm | 50.88966,4.35198 | 
+- Platane d'Orient | Platanus orientalis | 448cm | 50.88677,4.35252 | 
+- Cèdre du Liban | Cedrus libani | 447cm | 50.89399,4.36071 | 
+- Marronnier commun | Aesculus hippocastanum | 445cm | 50.89426,4.34473 | 
+- Marronnier commun | Aesculus hippocastanum | 443cm | 50.88693,4.35430 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 437cm | 50.88949,4.34522 | 
+- Platane d'Orient | Platanus orientalis | 437cm | 50.87164,4.35160 | 
+- Magnolier à feuilles acuminées | Magnolia acuminata | 435cm | 50.88951,4.35433 | 
+- Platane d'Orient | Platanus orientalis | 432cm | 50.87149,4.35166 | 
+- Peuplier du Canada | Populus x canadensis | 424cm | 50.89387,4.34898 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 422cm | 50.89350,4.36251 | 
+- Hêtre d'Europe | Fagus sylvatica | 420cm | 50.89390,4.34374 | 
+- Magnolier à feuilles acuminées | Magnolia acuminata | 419cm | 50.88942,4.35454 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 418cm | 50.89323,4.34464 | 
+- Hêtre d'Europe | Fagus sylvatica | 417cm | 50.89477,4.34362 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 405cm | 50.89454,4.34240 | 
+- Robinier faux-acacia | Robinia pseudoacacia | 400cm | 50.88827,4.35288 | 
+- Platane à feuille d'érable | Platanus x hispanica | 400cm | 50.88155,4.35031 | 
+- Robinier faux-acacia | Robinia pseudoacacia | 400cm | 50.89161,4.36791 | 
+- Chêne pédonculé fastigié | Quercus robur f. fastigiata | 399cm | 50.88263,4.35282 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 385cm | 50.88479,4.34515 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 382cm | 50.89622,4.34868 | 
+- Chêne rouge d'Amérique | Quercus rubra | 381cm | 50.88490,4.34550 | 
+- Erable argenté | Acer saccharinum | 380cm | 50.88652,4.34400 | 
+- Platane à feuille d'érable | Platanus x hispanica | 380cm | 50.88347,4.34215 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 379cm | 50.89626,4.34851 | 
+- Hêtre d'Europe | Fagus sylvatica | 377cm | 50.89644,4.34817 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 375cm | 50.89022,4.34546 | 
+- Frêne commun | Fraxinus excelsior | 370cm | 50.88105,4.35682 | 
+- Marronnier commun | Aesculus hippocastanum | 370cm | 50.89016,4.34550 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 370cm | 50.88774,4.35070 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 366cm | 50.88970,4.34526 | 
+- Erable argenté | Acer saccharinum | 364cm | 50.89340,4.33129 | 
+- Platane à feuille d'érable | Platanus x hispanica | 364cm | 50.89435,4.34686 | 
+- Hêtre d'Europe | Fagus sylvatica | 361cm | 50.89472,4.34340 | 
+- Chêne rouge d'Amérique | Quercus rubra | 360cm | 50.88592,4.33231 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 360cm | 50.90124,4.34606 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 360cm | 50.88557,4.34333 | 
+- Marronnier commun | Aesculus hippocastanum | 354cm | 50.88731,4.35264 | 
+- Platane à feuille d'érable | Platanus x hispanica | 354cm | 50.88460,4.34606 | 
+- Acer saccharinum var. laciniatum | Acer saccharinum var. laciniatum | 354cm | 50.89340,4.34348 | 
+- Erable plane | Acer platanoides | 353cm | 50.88128,4.35542 | 
+- Robinier faux-acacia | Robinia pseudoacacia | 351cm | 50.89395,4.35941 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 350cm | 50.88890,4.34580 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 350cm | 50.88469,4.34545 | 
+- Acer saccharinum var. laciniatum | Acer saccharinum var. laciniatum | 348cm | 50.89704,4.32457 | 
+- Chêne pubescent | Quercus pubescens | 348cm | 50.89270,4.34968 | 
+- Frêne blanc d'Amérique | Fraxinus americana | 345cm | 50.89706,4.34891 | 
+- Erable sycomore | Acer pseudoplatanus | 345cm | 50.88035,4.35513 | 
+- Chêne rouge d'Amérique | Quercus rubra | 340cm | 50.88584,4.33224 | 
+- Tilleul argenté | Tilia tomentosa | 340cm | 50.88036,4.35612 | 
+- Erable plane | Acer platanoides | 338cm | 50.88673,4.35237 | 
+- Acer saccharinum var. laciniatum | Acer saccharinum var. laciniatum | 336cm | 50.89713,4.32465 | 
+- Marronnier commun | Aesculus hippocastanum | 334cm | 50.88575,4.34317 | 
+- Fraxinus excelsior f.aureopunctata | Fraxinus excelsior f.aureopunctata | 331cm | 50.89183,4.34930 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 331cm | 50.88639,4.33381 | 
+- Chêne rouge d'Amérique | Quercus rubra | 326cm | 50.89984,4.33225 | 
+- Frêne commun | Fraxinus excelsior | 326cm | 50.88798,4.33238 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 326cm | 50.88632,4.33371 | 
+- Peuplier du Canada | Populus x canadensis | 325cm | 50.89879,4.34720 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 325cm | 50.90218,4.34339 | 
+- Platane à feuille d'érable | Platanus x hispanica | 320cm | 50.88155,4.35164 | 
+- Fraxinus angustifolia 'Raywood' | Fraxinus angustifolia 'Raywood' | 319cm | 50.89177,4.34936 | 
+- Marronnier commun | Aesculus hippocastanum | 316cm | 50.88130,4.35663 | 
+- Caryer à folioles cordées | Carya cordiformis | 315cm | 50.88982,4.35374 | 
+- Frêne commun | Fraxinus excelsior | 315cm | 50.89335,4.36185 | 
+- Platane à feuille d'érable | Platanus x hispanica | 315cm | 50.88147,4.35154 | 
+- Platane à feuille d'érable | Platanus x hispanica | 315cm | 50.88908,4.33971 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 314cm | 50.89375,4.32914 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 314cm | 50.90223,4.34368 | 
+- Hêtre d'Europe | Fagus sylvatica | 313cm | 50.89433,4.34297 | 
+- Platane à feuille d'érable | Platanus x hispanica | 312cm | 50.89913,4.33205 | 
+- Tilleul à petites feuilles | Tilia cordata | 310cm | 50.90180,4.34569 | 
+- Ptérocaryer à feuilles de frêne | Pterocarya fraxinifolia | 310cm | 50.89420,4.34666 | 
+- Erable argenté | Acer saccharinum | 310cm | 50.89767,4.32513 | 
+- Tilleul argenté | Tilia tomentosa | 307cm | 50.88043,4.35558 | 
+- Fraxinus excelsior var. elegantissima | Fraxinus excelsior var. elegantissima | 306cm | 50.88821,4.35212 | 
+- Saule pleureur | Salix x sepulcralis | 306cm | 50.89734,4.33738 | 
+- Marronnier commun | Aesculus hippocastanum | 300cm | 50.88730,4.35255 | 
+- Platane à feuille d'érable | Platanus x hispanica | 300cm | 50.88160,4.35051 | 
+- Tilleul commun | Tilia x europaea | 300cm | 50.89775,4.36015 | 
+- Saule pleureur | Salix x sepulcralis | 300cm | 50.89866,4.36419 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 299cm | 50.90220,4.34353 | 
+- Marronnier à fleurs rouges | Aesculus x carnea | 298cm | 50.89056,4.34362 | 
+- Erable argenté | Acer saccharinum | 296cm | 50.89757,4.32518 | 
+- Hêtre d'Europe | Fagus sylvatica | 295cm | 50.89444,4.34239 | 
+- Marronnier commun | Aesculus hippocastanum | 291cm | 50.88387,4.34749 | 
+- Métaséquoia | Metasequoia glyptostroboides | 291cm | 50.88531,4.34368 | 
+- Marronnier commun | Aesculus hippocastanum | 291cm | 50.88186,4.35248 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 289cm | 50.88901,4.34537 | 
+- Hêtre pleureur | Fagus sylvatica f. pendula | 285cm | 50.88631,4.33307 | 
+- Ptérocaryer à feuilles de frêne | Pterocarya fraxinifolia | 284cm | 50.89387,4.34793 | 
+- Erable sycomore | Acer pseudoplatanus | 282cm | 50.88313,4.34067 | 
+- Noyer noir | Juglans nigra | 281cm | 50.89419,4.36081 | 
+- Arbre aux quarante écus | Ginkgo biloba | 276cm | 50.89282,4.36177 | 
+- Ptérocaryer à feuilles de frêne | Pterocarya fraxinifolia | 272cm | 50.89809,4.32479 | 
+- Erable argenté | Acer saccharinum | 272cm | 50.89759,4.32504 | 
+- Marronnier commun | Aesculus hippocastanum | 270cm | 50.88175,4.35241 | 
+- Erable sycomore | Acer pseudoplatanus | 270cm | 50.88058,4.34843 | 
+- Catalpa commun | Catalpa bignonioides | 269cm | 50.89602,4.34804 | 
+- Arbre aux quarante écus | Ginkgo biloba | 266cm | 50.89377,4.32891 | 
+- Noyer noir | Juglans nigra | 266cm | 50.89479,4.34732 | 
+- Pin noir | Pinus nigra | 264cm | 50.88372,4.34221 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 261cm | 50.88598,4.33220 | 
+- Frêne commun | Fraxinus excelsior | 261cm | 50.89296,4.36072 | 
+- Tilleul commun | Tilia x europaea | 261cm | 50.87969,4.35353 | 
+- Erable plane 'Boule' | Acer platanoides f. globosum | 260cm | 50.88950,4.34959 | 
+- Saule marsault | Salix caprea | 260cm | 50.88281,4.34964 | 
+- Tilleul à larges feuilles | Tilia platyphyllos | 259cm | 50.88943,4.34961 | 
+- Erable plane | Acer platanoides | 257cm | 50.90220,4.34267 | 
+- Acer pseudoplatanus f. aureovariegatum | Acer pseudoplatanus f. aureovariegatum | 257cm | 50.88926,4.34512 | 
+- Févier d'Amérique | Gleditsia triacanthos | 256cm | 50.87765,4.35349 | 
+- If commun | Taxus baccata | 255cm | 50.87937,4.35496 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 255cm | 50.89478,4.34220 | 
+- Chêne rouge d'Amérique | Quercus rubra | 255cm | 50.88627,4.33304 | 
+- Tilleul argenté | Tilia tomentosa | 255cm | 50.89623,4.35465 | 
+- Frêne commun | Fraxinus excelsior | 253cm | 50.88508,4.34688 | 
+- Catalpa commun | Catalpa bignonioides | 251cm | 50.88814,4.35427 | 
+- Tilleul argenté | Tilia tomentosa | 250cm | 50.87795,4.35500 | 
+- If commun | Taxus baccata | 250cm | 50.88839,4.35063 | 
+- Erable sycomore | Acer pseudoplatanus | 249cm | 50.90114,4.34594 | 
+- Paulownia impérial | Paulownia tomentosa | 249cm | 50.88262,4.34846 | 
+- Erable sycomore | Acer pseudoplatanus | 248cm | 50.87489,4.34164 | 
+- Févier sans épines | Gleditsia triacanthos var. inermis | 246cm | 50.89357,4.32755 | 
+- Sophora du Japon | Sophora japonica | 244cm | 50.89360,4.32742 | 
+- Erable sycomore | Acer pseudoplatanus | 240cm | 50.87182,4.35144 | 
+- Tulipier de Virginie | Liriodendron tulipifera | 239cm | 50.89774,4.34810 | 
+- Arbre aux quarante écus | Ginkgo biloba | 239cm | 50.88978,4.35066 | 
+- Catalpa commun | Catalpa bignonioides | 238cm | 50.88799,4.35469 | 
+- Marronnier commun | Aesculus hippocastanum | 238cm | 50.89813,4.33204 | 
+- Tilleul commun | Tilia x europaea | 230cm | 50.87809,4.35572 | 
+- Erable sycomore | Acer pseudoplatanus | 224cm | 50.89432,4.35755 | 
+- Noyer royal | Juglans regia | 223cm | 50.88377,4.34936 | 
+- Calocèdre d'Amérique | Calocedrus decurrens | 223cm | 50.89288,4.36148 | 
+- Salix babylonica 'Tortuosa' | Salix babylonica 'Tortuosa' | 222cm | 50.88936,4.33062 | 
+- Pin noir | Pinus nigra | 220cm | 50.88262,4.35045 | 
+- Noyer noir | Juglans nigra | 214cm | 50.89787,4.34795 | 
+- Chêne pédonculé | Quercus robur | 211cm | 50.89374,4.32942 | 
+- Erable palmé | Acer palmatum | 210cm | 50.89309,4.36099 | 
+- Pin noir | Pinus nigra | 209cm | 50.88000,4.35498 | 
+- Arbre aux quarante écus | Ginkgo biloba | 208cm | 50.89335,4.32985 | 
+- Ptérocaryer à feuilles de frêne | Pterocarya fraxinifolia | 208cm | 50.89410,4.32006 | 
+- Pin noir | Pinus nigra | 206cm | 50.88649,4.33209 | 
+- Magnolier à feuilles acuminées | Magnolia acuminata | 205cm | 50.88972,4.35396 | 
+- Marronnier jaune | Aesculus flava | 205cm | 50.88145,4.35167 | 
+- Noyer royal | Juglans regia | 204cm | 50.89060,4.33787 | 
+- Frêne commun | Fraxinus excelsior | 201cm | 50.89468,4.34217 | 
+- Arbre aux quarante écus | Ginkgo biloba | 200cm | 50.89332,4.32979 | 
+- Frêne commun | Fraxinus excelsior | 200cm | 50.88164,4.35245 | 
+- Calocèdre d'Amérique | Calocedrus decurrens | 195cm | 50.88899,4.34533 | 
+- If commun | Taxus baccata | 193cm | 50.88262,4.35068 | 
+- Ptérocaryer à feuilles de frêne | Pterocarya fraxinifolia | 192cm | 50.89404,4.32017 | 
+- Cerisier du Japon | Prunus serrulata 'Kanzan' | 190cm | 50.87940,4.35584 | 
+- If commun | Taxus baccata | 184cm | 50.87941,4.35459 | 
+- Katsura du Japon | Cercidiphyllum japonicum | 177cm | 50.89286,4.36159 | 
+- Araucaria du Chili | Araucaria araucana | 170cm | 50.89588,4.36409 | 
+- Cerisier du Portugal | Prunus lusitanica | 170cm | 50.88402,4.34051 | 
+- Erable champêtre | Acer campestre | 169cm | 50.89771,4.34811 | 
+- Erable palmé | Acer palmatum | 163cm | 50.88087,4.35542 | 
+- Glycine | Wisteria sinensis | 160cm | 50.89209,4.35860 | 
+- Douglas du Pacifique | Pseudotsuga menziesii | 159cm | 50.88858,4.35022 | 
+- Cornouiller mâle | Cornus mas | 158cm | 50.89431,4.36057 | 
+- Epicea d'Orient | Picea orientalis | 157cm | 50.88852,4.35035 | 
+- Zelkova du Japon | Zelkova serrata | 156cm | 50.89503,4.34749 | 
+- Paulownia impérial | Paulownia tomentosa | 149cm | 50.88631,4.34352 | 
+- Cornus mas f. variegata | Cornus mas f. variegata | 147cm | 50.89434,4.35968 | 
+- Catalpa commun | Catalpa bignonioides | 135cm | 50.88890,4.35282 | 
+- Poirier cultivé | Pyrus communis | 126cm | 50.89613,4.35464 | 
+- Cornus mas f. variegata | Cornus mas f. variegata | 124cm | 50.89436,4.35976 | 
+- Cornus mas f. variegata | Cornus mas f. variegata | 120cm | 50.89434,4.35976 | 
+- Magnolier de Soulange | Magnolia x soulangeana | 115cm | 50.89301,4.36170 | 
+- Pommier sauvage | Malus sylvestris | 113cm | 50.88588,4.33196 | 
+- Davidia de Chine | Davidia involucrata | 108cm | 50.89489,4.34752 | 
+- Cryptomérie du Japon | Cryptomeria japonica | 108cm | 50.89706,4.36241 | 
+- Cornus mas f. variegata | Cornus mas f. variegata | 100cm | 50.89438,4.35973 | 
+- Cornus mas f. variegata | Cornus mas f. variegata | 90cm | 50.89437,4.35968 | 
+- Erable palmé | Acer palmatum | 75cm | 50.88947,4.34203 | 
+- Betula pendula f. youngii | Betula pendula f. youngii | 70cm | 50.88200,4.34687 | 
+- Faux pistachier | Staphylea pinnata L. | 25cm | 50.88265,4.34818 | 
+
+## cluster 3: 151 trees, 3.5 km across, centre 50.80817,4.38117
+- Sequoia géant | Sequoiadendron giganteum | 690cm | 50.80064,4.38997 | 
+- Sequoia géant | Sequoiadendron giganteum | 645cm | 50.80015,4.38990 | 
+- Sequoia géant | Sequoiadendron giganteum | 630cm | 50.79893,4.39838 | 
+- Sequoia géant | Sequoiadendron giganteum | 620cm | 50.80045,4.39006 | 
+- Sequoia géant | Sequoiadendron giganteum | 558cm | 50.79881,4.39824 | 
+- Hêtre d'Europe | Fagus sylvatica | 555cm | 50.79950,4.38369 | 
+- Chêne pédonculé | Quercus robur | 535cm | 50.79927,4.38305 | 
+- Chêne sessile | Quercus petraea | 530cm | 50.80380,4.38402 | 
+- Chêne sessile | Quercus petraea | 516cm | 50.79986,4.38346 | 
+- Hêtre d'Europe | Fagus sylvatica | 510cm | 50.81113,4.37759 | 
+- Chêne pédonculé | Quercus robur | 506cm | 50.80502,4.37841 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 499cm | 50.80029,4.39010 | 
+- Chêne sessile | Quercus petraea | 483cm | 50.80586,4.37506 | 
+- Hêtre d'Europe | Fagus sylvatica | 481cm | 50.81175,4.37604 | 
+- Hêtre d'Europe | Fagus sylvatica | 480cm | 50.80549,4.37661 | 
+- Hêtre d'Europe | Fagus sylvatica | 475cm | 50.80292,4.37797 | 
+- Hêtre d'Europe | Fagus sylvatica | 469cm | 50.80820,4.37990 | 
+- Tilleul à larges feuilles | Tilia platyphyllos | 468cm | 50.80557,4.38108 | 
+- Hêtre d'Europe | Fagus sylvatica | 463cm | 50.81475,4.37475 | 
+- Chêne pédonculé | Quercus robur | 454cm | 50.79901,4.38345 | 
+- Hêtre d'Europe | Fagus sylvatica | 453cm | 50.80934,4.37437 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 449cm | 50.80189,4.37745 | 
+- Platane à feuille d'érable | Platanus x hispanica | 446cm | 50.81676,4.37585 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 446cm | 50.81536,4.38256 | 
+- Platane à feuille d'érable | Platanus x hispanica | 444cm | 50.82159,4.36997 | 
+- Hêtre d'Europe | Fagus sylvatica | 444cm | 50.80021,4.38492 | 
+- Platane à feuille d'érable | Platanus x hispanica | 439cm | 50.82125,4.37074 | 
+- Platane à feuille d'érable | Platanus x hispanica | 429cm | 50.81093,4.37403 | 
+- Frêne commun | Fraxinus excelsior | 429cm | 50.81253,4.37065 | 
+- Platane à feuille d'érable | Platanus x hispanica | 425cm | 50.81203,4.38173 | 
+- Charme commun | Carpinus betulus | 423cm | 50.81379,4.37497 | 
+- Platane à feuille d'érable | Platanus x hispanica | 420cm | 50.79749,4.39875 | 
+- Chêne pédonculé | Quercus robur | 420cm | 50.80016,4.37888 | 
+- Chêne pédonculé | Quercus robur | 419cm | 50.80095,4.38404 | 
+- Platane à feuille d'érable | Platanus x hispanica | 417cm | 50.80284,4.38495 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 417cm | 50.79888,4.39936 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 416cm | 50.81218,4.37993 | 
+- Chêne pédonculé | Quercus robur | 415cm | 50.81150,4.37186 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 414cm | 50.80167,4.37766 | 
+- Chêne pédonculé | Quercus robur | 413cm | 50.80202,4.38407 | 
+- Chêne pédonculé | Quercus robur | 413cm | 50.81370,4.37593 | 
+- Chêne pédonculé | Quercus robur | 412cm | 50.81201,4.37569 | 
+- Tulipier de Virginie | Liriodendron tulipifera | 411cm | 50.80622,4.38240 | 
+- Tilleul à larges feuilles | Tilia platyphyllos | 408cm | 50.79740,4.39940 | 
+- Platane à feuille d'érable | Platanus x hispanica | 408cm | 50.82145,4.36966 | 
+- Hêtre d'Europe | Fagus sylvatica | 401cm | 50.81328,4.36844 | 
+- Chêne pédonculé | Quercus robur | 401cm | 50.80486,4.38338 | 
+- Chêne pédonculé | Quercus robur | 400cm | 50.81182,4.37099 | 
+- Platane à feuille d'érable | Platanus x hispanica | 400cm | 50.79732,4.39884 | 
+- Hêtre d'Europe | Fagus sylvatica | 399cm | 50.81150,4.37441 | 
+- Hêtre d'Europe | Fagus sylvatica | 397cm | 50.80209,4.38521 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 394cm | 50.79884,4.39925 | 
+- Châtaignier | Castanea sativa | 393cm | 50.80110,4.38132 | 
+- Chêne pédonculé | Quercus robur | 387cm | 50.81407,4.36996 | 
+- Sequoia géant | Sequoiadendron giganteum | 384cm | 50.79910,4.39787 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 383cm | 50.79863,4.39808 | 
+- Chêne pédonculé | Quercus robur | 383cm | 50.79812,4.38885 | 
+- Hêtre pleureur | Fagus sylvatica f. pendula | 382cm | 50.80514,4.37563 | 
+- Marronnier commun | Aesculus hippocastanum | 381cm | 50.81992,4.36933 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 381cm | 50.79788,4.39849 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 380cm | 50.81528,4.38246 | 
+- Hêtre d'Europe | Fagus sylvatica | 379cm | 50.81314,4.37108 | 
+- Erable argenté | Acer saccharinum | 370cm | 50.79782,4.39872 | 
+- Cèdre de l'Atlas | Cedrus atlantica | 369cm | 50.79860,4.39810 | 
+- Marronnier commun | Aesculus hippocastanum | 366cm | 50.81518,4.37216 | 
+- Hêtre d'Europe | Fagus sylvatica | 365cm | 50.80730,4.37542 | 
+- Châtaignier | Castanea sativa | 365cm | 50.80443,4.37316 | 
+- Pin noir | Pinus nigra | 363cm | 50.80731,4.38166 | 
+- Marronnier commun | Aesculus hippocastanum | 360cm | 50.82091,4.36746 | 
+- Marronnier commun | Aesculus hippocastanum | 360cm | 50.79749,4.39790 | 
+- Hêtre pleureur de Borny/Hêtre drapé | fagus sylvatica f. bornyensis | 360cm | 50.79802,4.39850 | 
+- Châtaignier | Castanea sativa | 359cm | 50.80443,4.37339 | 
+- Châtaignier | Castanea sativa | 357cm | 50.79862,4.38528 | 
+- Marronnier commun | Aesculus hippocastanum | 352cm | 50.80194,4.38236 | 
+- Platane à feuille d'érable | Platanus x hispanica | 350cm | 50.81186,4.38188 | 
+- Erable sycomore | Acer pseudoplatanus | 346cm | 50.80698,4.38294 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 345cm | 50.80747,4.38146 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 340cm | 50.80774,4.38128 | 
+- If commun | Taxus baccata | 337cm | 50.80164,4.37489 | 
+- Platane à feuille d'érable | Platanus x hispanica | 337cm | 50.81564,4.38242 | 
+- Cèdre de l'Atlas | Cedrus atlantica | 336cm | 50.81140,4.38107 | 
+- Laburnum x watereri | Laburnum x watereri | 335cm | 50.81223,4.38307 | 
+- Tilleul d'Amérique | Tilia americana | 335cm | 50.79793,4.39983 | 
+- Platane à feuille d'érable | Platanus x hispanica | 330cm | 50.81812,4.37500 | 
+- Tulipier de Virginie | Liriodendron tulipifera | 329cm | 50.80629,4.38248 | 
+- Chêne pédonculé | Quercus robur | 328cm | 50.81465,4.37380 | 
+- Cèdre du Liban | Cedrus libani | 327cm | 50.80721,4.38358 | 
+- Cèdre bleu de l'Atlas | Cedrus atlantica 'Glauca' | 322cm | 50.81247,4.38272 | 
+- Erable plane | Acer platanoides | 322cm | 50.79758,4.39878 | 
+- Cèdre du Liban | Cedrus libani | 317cm | 50.80706,4.38368 | 
+- Platane à feuille d'érable | Platanus x hispanica | 315cm | 50.79739,4.39803 | 
+- Marronnier commun | Aesculus hippocastanum | 312cm | 50.82159,4.36838 | 
+- Platane à feuille d'érable | Platanus x hispanica | 310cm | 50.81385,4.38263 | 
+- Châtaignier | Castanea sativa | 309cm | 50.79864,4.38508 | 
+- Platane à feuille d'érable | Platanus x hispanica | 309cm | 50.81518,4.38152 | 
+- Pin noir | Pinus nigra | 309cm | 50.81160,4.37563 | 
+- Tilleul à larges feuilles | Tilia platyphyllos | 307cm | 50.80171,4.37465 | 
+- Hêtre pleureur | Fagus sylvatica f. pendula | 304cm | 50.80383,4.38609 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 301cm | 50.81231,4.38039 | 
+- Platane à feuille d'érable | Platanus x hispanica | 298cm | 50.81883,4.37373 | 
+- Marronnier commun | Aesculus hippocastanum | 294cm | 50.81733,4.37136 | 
+- Cèdre du Liban | Cedrus libani | 282cm | 50.80712,4.38356 | 
+- Erable sycomore | Acer pseudoplatanus | 281cm | 50.81231,4.37473 | 
+- Cèdre de l'Atlas | Cedrus atlantica | 275cm | 50.82165,4.36855 | 
+- Chêne sessile | Quercus petraea | 274cm | 50.80516,4.37358 | 
+- Acer platanoides f. schwedleri | Acer platanoides f. schwedleri | 271cm | 50.81334,4.37875 | 
+- Châtaignier | Castanea sativa | 270cm | 50.81036,4.38450 | 
+- Erable sycomore | Acer pseudoplatanus | 270cm | 50.80443,4.37274 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 268cm | 50.81232,4.38047 | 
+- Marronnier commun | Aesculus hippocastanum | 266cm | 50.80150,4.37518 | 
+- Ginkgo biloba 'Fastigiata' | Ginkgo biloba 'Fastigiata' | 265cm | 50.81207,4.38299 | 
+- Calocedrus decurrens 'Columnaris' | Calocedrus decurrens 'Columnaris' | 260cm | 50.79841,4.39830 | 
+- Tilleul à larges feuilles | Tilia platyphyllos | 257cm | 50.81455,4.38303 | 
+- Châtaignier | Castanea sativa | 255cm | 50.80442,4.37255 | 
+- Erable sycomore | Acer pseudoplatanus | 254cm | 50.80996,4.38498 | 
+- Tilleul argenté pleureur | Tilia x petiolaris | 251cm | 50.79782,4.39316 | 
+- Erable champêtre | Acer campestre | 250cm | 50.79932,4.39773 | 
+- Laburnum x watereri | Laburnum x watereri | 250cm | 50.81219,4.38307 | 
+- Charme commun | Carpinus betulus | 250cm | 50.82232,4.37159 | 
+- Hêtre pleureur | Fagus sylvatica f. pendula | 248cm | 50.80273,4.37548 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 244cm | 50.81113,4.38190 | 
+- Platane à feuille d'érable | Platanus x hispanica | 244cm | 50.81754,4.37132 | 
+- Tilleul commun | Tilia x europaea | 236cm | 50.81138,4.38129 | 
+- Marronnier commun | Aesculus hippocastanum | 233cm | 50.81745,4.37170 | 
+- Charme commun | Carpinus betulus | 228cm | 50.80615,4.38030 | 
+- Acer pseudoplatanus f. aureovariegatum | Acer pseudoplatanus f. aureovariegatum | 225cm | 50.80507,4.37580 | 
+- Chamaecyparis pisifera 'Plumosa' | Chamaecyparis pisifera 'Plumosa' | 223cm | 50.79818,4.39838 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 211cm | 50.81118,4.38192 | 
+- Chamaecyparis pisifera 'Plumosa' | Chamaecyparis pisifera 'Plumosa' | 206cm | 50.81229,4.38284 | 
+- Muscadier de Californie | Torreya californica | 206cm | 50.79861,4.39821 | 
+- Hêtre pourpre | Fagus sylvatica f. purpurea | 205cm | 50.81114,4.38183 | 
+- Févier d'Amérique | Gleditsia triacanthos | 199cm | 50.80377,4.38169 | 
+- Araucaria du Chili | Araucaria araucana | 194cm | 50.80758,4.38182 | 
+- Sapin du Colorado | Abies concolor | 193cm | 50.81212,4.38259 | 
+- Tilleul à larges feuilles | Tilia platyphyllos | 192cm | 50.81242,4.38020 | 
+- Tilleul à larges feuilles | Tilia platyphyllos | 191cm | 50.80442,4.37303 | 
+- Araucaria du Chili | Araucaria araucana | 190cm | 50.81234,4.38252 | 
+- Acer pseudoplatanus f. aureovariegatum | Acer pseudoplatanus f. aureovariegatum | 187cm | 50.81881,4.37020 | 
+- Hêtre à feuilles lacinées | Fagus sylvatica var. laciniata | 186cm | 50.81880,4.36996 | 
+- If commun | Taxus baccata | 180cm | 50.80723,4.38363 | 
+- Araucaria du Chili | Araucaria araucana | 170cm | 50.81534,4.37229 | 
+- Araucaria du Chili | Araucaria araucana | 167cm | 50.81517,4.37234 | 
+- Araucaria du Chili | Araucaria araucana | 149cm | 50.81527,4.37229 | 
+- Magnolier de Soulange | Magnolia x soulangeana | 143cm | 50.81214,4.38301 | 
+- Arbre aux quarante écus | Ginkgo biloba | 141cm | 50.81403,4.38298 | 
+- houx | Ilex aquifolium | 120cm | 50.82294,4.37102 | 
+- Pterostyrax hispida | Pterostyrax hispida | 103cm | 50.81217,4.38244 | 
+- houx | Ilex aquifolium | 97cm | 50.81913,4.37005 | 
+- Charme fastigié | Carpinus betulus 'Fastigiata' | 89cm | 50.81976,4.36953 | 
+- Charme fastigié | Carpinus betulus 'Fastigiata' | 88cm | 50.81979,4.36950 | 
+- Charme fastigié | Carpinus betulus 'Fastigiata' | 80cm | 50.81978,4.36948 | 
+
+## cluster 4: 25 trees, 3.0 km across, centre 50.89688,4.39348
+- Chêne pédonculé | Quercus robur | 430cm | 50.90145,4.38982 | 
+- Erable argenté | Acer saccharinum | 350cm | 50.89762,4.38959 | 
+- Paulownia impérial | Paulownia tomentosa | 298cm | 50.90454,4.39994 | 
+- Tilleul à larges feuilles | Tilia platyphyllos | 287cm | 50.89520,4.39579 | 
+- Frêne commun | Fraxinus excelsior | 273cm | 50.89223,4.41739 | 
+- Marronnier à fleurs rouges | Aesculus x carnea | 254cm | 50.90852,4.40180 | 
+- Robinier faux-acacia | Robinia pseudoacacia | 252cm | 50.88822,4.37965 | 
+- Merisier | Prunus avium | 240cm | 50.89884,4.38880 | 
+- Noisetier de Byzance | Corylus colurna | 229cm | 50.89753,4.38901 | 
+- Noisetier de Byzance | Corylus colurna | 225cm | 50.89762,4.38912 | 
+- Noisetier de Byzance | Corylus colurna | 223cm | 50.89752,4.38919 | 
+- Robinier faux-acacia | Robinia pseudoacacia | 214cm | 50.89294,4.41752 | 
+- Noyer royal | Juglans regia | 210cm | 50.89529,4.38081 | 
+- Noisetier de Byzance | Corylus colurna | 199cm | 50.89784,4.38874 | 
+- Erable champêtre | Acer campestre | 193cm | 50.89163,4.38097 | 
+- Saule marsault | Salix caprea | 190cm | 50.90116,4.39143 | 
+- Poirier cultivé | Pyrus communis | 183cm | 50.89925,4.38994 | 
+- Saule marsault | Salix caprea | 177cm | 50.90093,4.39089 | 
+- Marronnier à fleurs rouges | Aesculus x carnea | 171cm | 50.89263,4.41742 | 
+- Févier d'Amérique | Gleditsia triacanthos | 168cm | 50.89137,4.38386 | 
+- Saule marsault | Salix caprea | 145cm | 50.90085,4.39089 | 
+- Prunus cerasifera | Prunus cerasifera | 141cm | 50.89383,4.42130 | 
+- Faux-cyprès de Nutka | Chamaecyparis nootkatensis | 123cm | 50.89141,4.38271 | 
+- Araucaria du Chili | Araucaria araucana | 102cm | 50.89803,4.38956 | 
+- Figuier commun | Ficus carica | 80cm | 50.89544,4.38093 | 
