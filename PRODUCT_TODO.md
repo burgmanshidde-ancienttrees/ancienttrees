@@ -1,6 +1,51 @@
-## NEXT UP, set 2026-08-04 with Hidde's approval: import Italy and Andalucia
+## DONE 2026-08-05: Italy and Andalusia are imported
 
-Both are pure retrieval and parsing, so they are cheap in tokens and pay back forever. Do these before any more city research.
+Both landed in one session. `data/registers/italy-masaf.json` (5,007 entries with
+coordinates, 4,522 single trees, 1,653 of them urban by the register's own flag)
+and `data/registers/andalucia-rediam.json` (749 trees, 435 with an official PDF
+sheet). Licence proofs in OPEN_DATA_SURVEY.md. Re-runnable with
+`scripts/import_masaf.py` and `scripts/import_rediam.py`.
+
+Two tools were broken and are fixed: the .xls parser lost every string past the
+1,077th, so species names came back as numbers; and cluster_register.py never
+returned on 5,007 points and now uses a grid index.
+
+## THE CHEAPEST CLUSTERS, ranked 2026-08-05 across all six registers
+
+Every cluster of four or more within a 2 km walk, cheapest first. The register
+already gives species, coordinates and usually girth, so a pass here is verify
+and write, not search. `*` marks a city we already publish, where the work
+deepens a page instead of opening one and no new page furniture is needed.
+
+| n | across | country | place |
+|---|---|---|---|
+| 61 | 3.8 km | Spain | Barcelona `*` |
+| 46 | 2.3 km | Italy | Priverno |
+| 41 | 3.0 km | Italy | Caserta |
+| 31 | 2.9 km | Italy | Monte Sant'Angelo |
+| 30 | 3.6 km | Italy | Napoli |
+| 29 | 0.9 km | Portugal | Mealhada |
+| 29 | 3.7 km | Portugal | Lisboa `*` |
+| 26 | 3.4 km | Portugal | Porto `*` |
+| 26 | 3.7 km | Italy | Varese |
+| 24 | 2.9 km | Italy | Udine |
+| 22 | 2.8 km | Italy | Trieste |
+| 21 | 0.9 km | Italy | Rhemes-Notre-Dame |
+| 21 | 2.6 km | Italy | L'Aquila |
+| 20 | 1.6 km | Italy | Lucca |
+| 20 | 3.3 km | Italy | Firenze |
+| 19 | 3.6 km | Italy | Palermo `*` |
+| 18 | 0.2 km | Italy | San Giorgio in Bosco |
+| 17 | 3.6 km | Italy | Roma |
+| 16 | 2.8 km | Italy | Milano |
+
+296 clusters of four or more in total, holding 2,358 registered trees. Regenerate
+with `python3 scripts/cluster_register.py data/registers/*.json`.
+
+Reading it: cluster size is candidate supply, not the count that ships. A walk is
+four to eight trees, so 46 candidates in Priverno is one comfortable walk with
+plenty of slack, not a 46-tree page. The floor of four verified trees stands, and
+a cluster that thins out under verification gets no page.
 
 **1. Italy, MASAF national register.** The single biggest coverage lever available. 5,008 entries covering 17,564 specimens, of which **4,524 are single trees** and therefore collectible-point eligible; the rest are avenues and groups that fail that test by default. CC BY 4.0, proven twice on the ministry's own pages. Per-tree coordinates, girth, height, and a `CONTESTO URBANO` yes/no flag that filters urban trees for free. City counts already known: Rome 70, Naples 54, Palermo 46, Florence 29, Milan 26, Genoa 17, Turin 14, Venice 13, Bologna 9.
 - Do NOT use the "complete shapefile on request" form. All 21 regional Excel files download directly with no auth and together are the national list.
