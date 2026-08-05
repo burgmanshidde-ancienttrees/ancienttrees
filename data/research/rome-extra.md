@@ -65,16 +65,24 @@ The municipal page describes it as a pair with our rom_006. 70 m apart.
 Age: undocumented. FLAGGED.
 
 ### rom_016 Coast Redwood, Villa Borghese, Pincio
-41.911639, 12.479611 | Lazio sheet 68/H501/RM/12 | 420 cm girth, **30 m, the tallest tree in Rome's register**
-Sources: Lazio register + [second source pending, see below]
+41.911639, 12.479611 | Lazio sheet 68/H501/RM/12 | 420 cm girth, 30 m
+**SINGLE SOURCE.** No municipal, press or garden-history source names this individual tree; Roma Capitale's monumental-tree page covers only the batch registered up to 2018 and this is sheet 68. Shipped flagged with the uncertainty stated in the story's own last sentences, and pinned `approximate` because nothing independent corroborates the coordinate.
+Superlative caught before it shipped: it is NOT the tallest tree on Rome's register. The Aleppo pine at Villa Celimontana, our own rom_009, is 34 m; two more reach 32 m and one 31 m. Written as "among the five tallest" instead.
 
-### rom_017 Mediterranean Hackberry, Parco degli Scipioni
-41.876611, 12.501361 | Lazio sheet 66/H501/RM/12 | 401 cm girth, 20 m
-Second of a pair: 65/H501 at Viale delle Mura Latine, 414 cm, is 120 m away.
-Sources: Lazio register + [pending]
+### Dropped from the shortlist, and why
+
+- **Mediterranean Hackberry pair, Parco degli Scipioni and Viale delle Mura Latine** (66 and 65/H501). Register-only, no second source found. Goes to leads; the pair would make a real two-tree cluster 1.2 km from Villa Celimontana.
+- **Southern Magnolia, Via Corsini** (67/H501). 109 m from rom_003, so it would have been the cheapest win of the pass, but the botanical garden's own monumental-tree list does not include it and the address is shared with the Corsini palace grounds. Access unresolved, so leads.
+- **Chir Pine, Colle Oppio** (71/H501). The best story in the whole Roman register (brought back from the Himalaya by the Tibetologist Giuseppe Tucci, standing at the garden's 1936 inauguration, roots crushing the Domus Aurea nymphaeum below). Vitality unresolved: 2018 press framing is that the giant was dying and was propagated, and the Domus Aurea garden redesign involves removing exactly these tall trees. Still on the November 2025 active list. Needs its own pass.
+- **The four trees at the Semenzaio di San Sisto** (28, 29, 30, 73/H501), 280 m from Villa Celimontana and therefore the obvious thickeners. **Blocked: the nursery is not normally open to the public**, only for occasional booked guided visits. This is the single most useful negative result of the pass, because those coordinates look like an easy urban cluster in any register-first workflow.
+- **Cedar of Lebanon and Stone Pine, Villa Torlonia** (19 and 75/H501). The cedar is six metres around, the thickest on Rome's register, and Roma Capitale calls it colossal, so it clears the evidence bar on two sources. Held back only on clustering: 3.5 km out, a new walk rather than a thickened one. Should ship as a Torlonia pair.
 
 ---
 
 ## Superlative check (hard rule 8)
 
-rome.json already claims: Adonis is "the oldest confirmed tree in the city"; the Valle dei Platani planes are "the only urban stand of ancient oriental planes left in the West"; Rome has "more monumental trees than any other Italian city". Nothing below contradicts those. The two new superlatives used are narrow and register-bounded: "largest plane in central Rome's register" and "tallest tree in Rome's register", both stated as register facts, not world claims.
+rome.json already claims: Adonis is "the oldest confirmed tree in the city"; the Valle dei Platani planes are "the only urban stand of ancient oriental planes left in the West"; Rome has "more monumental trees than any other Italian city". Nothing here contradicts those. Two new superlatives are used, both bounded to the register and stated as such: "the thickest plane trunk on Rome's monumental register" (565 cm, checked against all 65 comune entries, next is 553 cm; the larger Valle dei Platani and Fontane Oscure figures are group maxima for a different species) and "among the five tallest trees on the register" for the redwood, after the "tallest" version was checked and found false.
+
+## Counts, for whoever quotes them next
+
+65 register entries in the comune of Roma. That is not a count of monumental trees in Rome: six are groups rather than single trees, 22 stand inside the Tenuta di Castelporziano presidential estate, four are inside a closed municipal nursery, and one more, sheet 18, is dead and on the removal list while still sitting in the national file. rome.json's intro currently says 65 and its FAQ says 65; both are defensible as "registered trees" but neither should ever be phrased as trees a visitor can go and see.
