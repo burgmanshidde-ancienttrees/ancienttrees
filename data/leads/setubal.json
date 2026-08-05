@@ -1,0 +1,36 @@
+{
+  "city": "Setubal",
+  "country": "Portugal",
+  "city_slug": "setubal",
+  "note": "From the 2026-08-04 register-first pass. Leads failed only our evidence bar or the count; blocked can never ship as they stand.",
+  "leads": [
+    {
+      "name": "The Millennial Olives of Vila Fresca de Azeitao",
+      "species": "Olea europaea",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Three olives classified in 1959, decades before anything in the centre, with girths of 7.60m, 5.25m and 5.24m, so by far the largest trees in the municipality and claimed at roughly 2,000 years. Three blockers, all solvable: access is unconfirmed (they stand by the EN10 at Quinta Velha and no source says whether a visitor may approach, so hard rule 10's leave-it-out applies), the register's age field is corrupt for all three (it reads 2009, a year in an age column), and the 2,000-year claim needs checking against Portugal's other olive claims under hard rule 8. About 10 km west, within the day-trip boundary by TST bus. If access confirms, these beat everything on the published page."
+    },
+    {
+      "name": "The Centenarian Magnolias of Avenida Luisa Todi",
+      "species": "Magnolia grandiflora",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Named in local press as centenarian and proposed for classification but not yet classified, with white scented flowers in spring. They stand on the main central avenue, squarely inside the existing walk, so they would strengthen it rather than extend it. Failed only on the evidence bar: no register entry and press as the single source."
+    },
+    {
+      "name": "KNJ1/520, the smaller silky oak",
+      "species": "Grevillea robusta",
+      "lat": 38.52352,
+      "lng": -8.89854,
+      "status": "lead",
+      "why": "Registered separately but standing metres from its twin and distinguished only by girth, so it is described inside that entry rather than given a pin of its own. Same for KNJ1/524 (stone pine) and KNJ1/527 (black poplar): three registered trees folded into their siblings' pages to avoid near-identical entries."
+    }
+  ],
+  "open_questions": [
+    "The municipality counts 21 classified trees plus 14 newly proposed against the 16 our ICNF import holds for this concelho. Either the import misses rows or the municipality counts individuals where the register counts processos. Worth reconciling before Portugal's country page quotes any national total.",
+    "Setubal em Bom Ambiente (setubalambiente.pt) runs an interactive municipal tree map that the press says carries per-tree location, height, age and curiosidades. Untried. Worth one fetch next pass for both extra facts and any image licence."
+  ]
+}
