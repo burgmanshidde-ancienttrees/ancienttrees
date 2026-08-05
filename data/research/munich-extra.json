@@ -1,0 +1,141 @@
+[
+ {
+  "id": "muc_011",
+  "name": "The Copper Beech of the Badenburg",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "undated, protected for its size and its setting beside the Badenburg",
+  "age_min": 150,
+  "age_max": 250,
+  "best_time": {
+   "months": [
+    4,
+    5
+   ],
+   "kind": "fresh leaves",
+   "label": "late April and May, when the new leaves open translucent red before darkening"
+  },
+  "location": {
+   "address": "Schlosspark Nymphenburg, about 25 m south of the Badenburg, 80638 München",
+   "latitude": 48.15403,
+   "longitude": 11.49411,
+   "neighbourhood": "Nymphenburg"
+  },
+  "story": "Every copper beech in Europe descends from an accident. The purple leaf is a mutation that appears rarely and at random in wild green beech forests, and every ornamental one since has been propagated by gardeners who found the freak worth keeping. This one stands about 25 metres south of the Badenburg, the bathing pavilion Joseph Effner built for Elector Max Emanuel between 1718 and 1721 around what is generally reckoned the first heated indoor pool built in Europe since Roman times. Munich's natural monument ordinance protects the tree as a solitary specimen and gives its relationship with that building as the reason, which is a statute saying out loud that where a tree stands can matter as much as how big it is. Local descriptions of the park rank it among the mightiest beeches anywhere in the city. Its age is not documented anywhere. What is documented is the ground: Friedrich Ludwig von Sckell converted these grounds from a French baroque garden into an English landscape park between 1799 and 1823, which is when most of the park's free-standing specimen trees were placed, so a planting inside that window is plausible without being proven. Come in late April and the new leaves open a bright translucent red, darkening to near black by August.",
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_M%C3%BCnchen",
+   "https://stadt.muenchen.de/rathaus/stadtrecht/vorschrift/910/version2/0.html"
+  ],
+  "access": "Free, public park, open daily (the palace, Amalienburg and Badenburg interiors charge separate admission)",
+  "transport": "Tram 17 to Schloss Nymphenburg, then about 20 min walk west through the park",
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nymphenburg_Blutbuche_Badenburg-1.jpg",
+   "license": "CC BY-SA 3.0",
+   "attribution": "Rufus46, via Wikimedia Commons",
+   "status": "approved"
+  },
+  "curation_status": "flagged",
+  "notes": "Age undated: Munich's Naturdenkmal ordinance carries no age or girth column, and no second source gives this tree a date, so the 150-250 range is inferred from Sckell's documented 1799-1823 landscape redesign rather than measured. Existence, species, location and protection are legally attested by the 2021 ordinance; ownership is Freistaat Bayern, public parkland. Flagged because the ordinance is effectively the only source on the tree itself. Photo viewed directly at 1280px before approval: daylight, colour, deep blue sky, the dark purple crown unmistakable against the green trees beside it, trunk visible at the base, and the yellow baroque Badenburg in frame at left, which corroborates the register's stated Badenburg connection. Survives a wide card crop; the tree holds the centre band.",
+  "location_precision": "confirmed"
+ },
+ {
+  "id": "muc_012",
+  "name": "The Leaning Lime of the Badenburger See",
+  "species": "Large-leaved Lime (Tilia platyphyllos)",
+  "age_estimate": "undated in the city register; a tree-recorders' database estimates roughly 180 years",
+  "age_min": 150,
+  "age_max": 250,
+  "best_time": {
+   "months": [
+    12,
+    1,
+    2
+   ],
+   "kind": "bare silhouette",
+   "label": "midwinter, when the leaves drop and the whole leaning frame shows over the ice"
+  },
+  "location": {
+   "address": "Schlosspark Nymphenburg, about 50 m northwest of the Badenburg on the lake shore, 80638 München",
+   "latitude": 48.15455,
+   "longitude": 11.49324,
+   "neighbourhood": "Nymphenburg"
+  },
+  "story": "Munich protects this lime, in law, for being strange looking. The reason recorded in the city's natural monument ordinance is bizarrer und knorriger Wuchs, bizarre and gnarled growth, together with a striking appearance, which is an unusually candid thing for a protection statute to say about a tree. It earns it. The trunk leans hard out over the Badenburger See and the whole crown follows, throwing its heaviest limbs sideways across the water rather than upward, so the tree reads as a single long gesture toward the lake. A bench sits underneath, facing the Monopteros on the far shore. A German tree-recorders' database measured the trunk at 4.2 metres around in 2014 and the height at 19 metres, and estimates the tree at about 180 years, which would place its planting inside Friedrich Ludwig von Sckell's conversion of these grounds into an English landscape park between 1799 and 1823. That figure is a volunteer estimate rather than an official one, and the city's own register gives no age at all. Come in winter and the case for the tree is at its clearest: bare, every crooked limb legible against the sky, the lake frozen behind it and the pavilion small and white in the distance.",
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_M%C3%BCnchen",
+   "https://www.baumkunde.de/baumregister/4054-linde_im_park_schloss_nymphenburg/",
+   "https://reise-zikaden.de/schlosspark-nymphenburg-einzigartiges-naturparadies-mitten-in-muenchen/"
+  ],
+  "access": "Free, public park, open daily (the palace, Amalienburg and Badenburg interiors charge separate admission)",
+  "transport": "Tram 17 to Schloss Nymphenburg, then about 20 min walk west through the park",
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Naturdenkmal_Sommerlinde_am_Badenburger_See_im_Winter.jpg",
+   "license": "CC BY-SA 4.0",
+   "attribution": "NiamhNature, via Wikimedia Commons",
+   "status": "approved"
+  },
+  "curation_status": "flagged",
+  "notes": "The 180-year figure comes from baumkunde.de register entry 4054, a community-compiled German tree register, used here as a lead and named as such in the story rather than as an authority; the city ordinance carries no age column. Its coordinates (48.15457, 11.49279) fall about 33 m from the ordinance's, which independently corroborates the pin. Flagged because the only numeric age is volunteer-sourced. Photo viewed directly at 1280px before approval and run through the Cadiz test deliberately, since it is a bare winter shot: it is daylight and in colour, not black and white, with blue sky, warm brown far bank and ice on the lake. The tree fills the left and centre of the frame with trunk and full crown readable, a bench at its base for scale and the Badenburg visible across the water. It survives a wide card crop because the trunk and the heavy lateral limbs sit in the centre band. Approved. The bare silhouette best_time is the register's own stated reason for protection, not an invented peak.",
+  "location_precision": "confirmed"
+ },
+ {
+  "id": "muc_013",
+  "name": "The Fern-leaved Beech of the Amalienburg",
+  "species": "Fern-leaved Beech (Fagus sylvatica f. asplenifolia)",
+  "age_estimate": "undated in the city register; a tree-recorders' database estimates roughly 180 years",
+  "age_min": 150,
+  "age_max": 220,
+  "location": {
+   "address": "Schlosspark Nymphenburg, at the path fork about 50 m south of the Amalienburg, 80638 München",
+   "latitude": 48.15528,
+   "longitude": 11.50042,
+   "neighbourhood": "Nymphenburg"
+  },
+  "story": "No fern-leaved beech anywhere is much more than two centuries old, because the tree did not exist before about 1804. It is a cultivated form of the ordinary European beech whose leaves are cut into narrow ribbons, and it cannot be relied on to come true from seed, so every one of them has been grafted or struck from cuttings taken off another. That gives this specimen an unusually hard ceiling on its age, which is useful in a park where almost nothing else has a date. It stands alone at a fork in the path about 50 metres south of the Amalienburg, the rococo hunting lodge Francois de Cuvillies built in the 1730s, with a small metal plate on the trunk marking it as a natural monument. Munich's ordinance calls it a mighty and rare solitary specimen in a good position, and a German tree-recorders' database measured it in 2019 at 2.95 metres around and 25 metres tall, estimating roughly 180 years and recording its condition as vital. Look closely at the foliage and the trick of the tree becomes clear: most of the leaves are shredded to threads, but a branch here and there reverts and throws out ordinary broad beech leaves instead.",
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_M%C3%BCnchen",
+   "https://www.baumkunde.de/baumregister/4055-schlitzblaettrige_buche_im_park_schloss_nymphenburg/",
+   "https://reise-zikaden.de/schlosspark-nymphenburg-einzigartiges-naturparadies-mitten-in-muenchen/"
+  ],
+  "access": "Free, public park, open daily (the palace, Amalienburg and Badenburg interiors charge separate admission)",
+  "transport": "Tram 17 to Schloss Nymphenburg, then about 10 min walk west through the park",
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Schlosspark_Nymphenburg_Naturdenkmal_Farnblaettrige_Buche-1.jpg",
+   "license": "CC BY-SA 3.0",
+   "attribution": "Rufus46, via Wikimedia Commons",
+   "status": "approved"
+  },
+  "curation_status": "flagged",
+  "notes": "Named 'of the Amalienburg' deliberately: muc_006 is already 'The Fern-leaved Beech', in the Englischer Garten, and two entries cannot share a name. Same species, different tree, roughly 7 km apart. The 180-year figure and the vitality note come from baumkunde.de register entry 4055, a community-compiled German register, used as a lead and attributed in the story rather than treated as authority; the city ordinance carries no age column. Its coordinates (48.15538, 11.50030) fall about 15 m from the ordinance's, independently corroborating the pin, and its 2019 condition note is the only vitality evidence available for any tree in this cluster. Photo viewed directly at 1280px before approval: daylight, colour, the tree fills the frame with the smooth silvery trunk running the full height and the finely cut foliage readable, path and boulders at the base for scale. Survives a wide card crop, trunk squarely in the centre band. Approved.",
+  "location_precision": "confirmed"
+ },
+ {
+  "id": "muc_014",
+  "name": "The Weeping Beech of the Schwanenbrücke",
+  "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+  "age_estimate": "undated",
+  "age_min": 120,
+  "age_max": 200,
+  "location": {
+   "address": "Schlosspark Nymphenburg, south of the Schwanenbrücke, 80638 München",
+   "latitude": 48.15755,
+   "longitude": 11.49961,
+   "neighbourhood": "Nymphenburg"
+  },
+  "story": "Munich protects this beech partly because people are fond of it. The reason entered in the city's natural monument ordinance is that it is a dominant tree in a historic garden with besondere Bedeutung für Münchner Bürger, particular significance for the citizens of Munich, which is a legal document recording public affection as grounds for protection. That is rarer than it sounds; most entries on the same list argue from size, rarity or townscape effect. The tree stands just south of the Schwanenbrücke, the swan bridge over the canal that runs north through the park. A weeping beech grows nothing like the wild form it was bred from: instead of a clean grey column carrying a high crown, the limbs arch outward and then fall, so the branches hang to the ground and the whole tree closes around a hollow space at its centre. Walking under one is the point of it, and generations of Munich children have done exactly that here. Its age is not recorded anywhere. The cultivar has only been in general garden circulation since the early nineteenth century, and the surrounding park was landscaped between 1799 and 1823, which brackets it loosely and honestly without pretending to a date.",
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_M%C3%BCnchen",
+   "https://stadt.muenchen.de/rathaus/stadtrecht/vorschrift/910/version2/0.html"
+  ],
+  "access": "Free, public park, open daily (the palace, Amalienburg and Badenburg interiors charge separate admission)",
+  "transport": "Tram 17 to Schloss Nymphenburg, then about 15 min walk northwest through the park",
+  "photo": {
+   "url": null,
+   "license": null,
+   "attribution": null,
+   "status": "missing"
+  },
+  "curation_status": "flagged",
+  "notes": "Age undated and no second source beyond the ordinance itself, so flagged. The 120-200 range is bracketed from the cultivar's introduction date and Sckell's 1799-1823 landscaping, not measured; baumkunde.de has no entry for this tree. Photo deliberately left missing rather than filled. Three candidates exist on Wikimedia Commons and all three were checked: the register-linked 'Haengebuche im Schlosspark Nymphenburg.jpg' was viewed directly at 1280px and fails the Cadiz standard, being a close-up shot looking up into the canopy with no trunk base, no whole-tree shape and no sense of scale, plus a painted red heart on one limb; the other two ('Unter der Haengebuche', 'Laub der Haengebuche') are by the same photographer and are respectively an under-canopy and a foliage close-up, failing the same way. An honest gap beats a mediocre photo. Worth re-hunting when someone photographs this tree whole.",
+  "location_precision": "confirmed"
+ }
+]

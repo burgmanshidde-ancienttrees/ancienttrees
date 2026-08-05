@@ -1,0 +1,128 @@
+{
+  "city": "Turin",
+  "country": "Italy",
+  "compiled": "2026-08-05",
+  "source_note": "All register references are Regione Piemonte's 'Alberi Monumentali del Piemonte: dati del censimento' (CC BY 4.0), read live from the WFS at gisserver.territorio.csi.it. That layer carries an age band, ownership and a removal status per tree. MASAF's national file repeats the same coordinates and girths for Turin, so it is the same survey and not an independent source. Place names come from Turismo Torino's 13.9 km urban route and from the Quotidiano Piemontese and Mole24 lists.",
+  "leads": [
+    {
+      "name": "The Plane of Parco della Tesoriera",
+      "species": "London Plane (Platanus x acerifolia)",
+      "register_id": "001/L219/TO/01",
+      "latitude": 45.07588,
+      "longitude": 7.63816,
+      "girth_cm": 665,
+      "height_m": 28,
+      "crown_m": 25,
+      "age_band": ">200",
+      "ownership": "Pubblica",
+      "reason": "The widest trunk and the tree most often called Turin's oldest, nicknamed the grandfather, but it stands 3.6 km west of this walk in its own park and forms a cluster of one. It is the obvious ninth entry if Turin ever grows past this walk, and it is what the page's oldest-tree question has to name honestly."
+    },
+    {
+      "name": "The Caucasian Elm of the Giardini Reali Inferiori",
+      "species": "Caucasian Elm (Zelkova carpinifolia)",
+      "register_id": "005/L219/TO/01",
+      "latitude": 45.0726,
+      "longitude": 7.68916,
+      "girth_cm": 350,
+      "height_m": 24,
+      "crown_m": 14,
+      "age_band": "100-200",
+      "ownership": "Pubblica",
+      "reason": "Designated for botanical rarity and standing in the Royal Gardens beside the Palazzo Reale, which is a strong setting. Cut only on geometry: it sits 1.05 km north of the Giardini Cavour, the wrong way from a walk that runs south to the river, and adding it would bend a straight line into a Y. Register gives 24 m, the tourist route gives 27 m, so the height needs settling before it ships."
+    },
+    {
+      "name": "The Plane of Parco di Villa Rey",
+      "species": "London Plane (Platanus x acerifolia)",
+      "register_id": "009/L219/TO/01",
+      "latitude": 45.07579,
+      "longitude": 7.70409,
+      "girth_cm": 494,
+      "height_m": 27,
+      "crown_m": 17,
+      "age_band": "100-200",
+      "ownership": "Pubblica",
+      "reason": "2.4 km northeast of the walk, up on the hill across the Po. Register height 27 m against the tourist route's 33.5 m, a 6.5 m disagreement that needs a third source. A candidate for a second Turin cluster on the collina, not for this one."
+    },
+    {
+      "name": "The wide plane east of the Po",
+      "species": "London Plane (Platanus x acerifolia)",
+      "register_id": "006/L219/TO/01",
+      "latitude": 45.06427,
+      "longitude": 7.71956,
+      "girth_cm": 640,
+      "height_m": 14,
+      "crown_m": 16,
+      "age_band": ">200",
+      "ownership": "Pubblica",
+      "reason": "Second widest trunk in the city at 6.4 m and yet only 14 m tall, which almost certainly means a pollarded or topped tree. Neither the tourist route nor either press list names it, so it has no place name at all yet and no second source. Worth a look because of the girth, but the height ratio needs explaining before it could be written."
+    },
+    {
+      "name": "The Downy Oak of the Colle della Maddalena",
+      "species": "Downy Oak (Quercus pubescens)",
+      "register_id": "001/F335/TO/01",
+      "latitude": 45.03042,
+      "longitude": 7.72147,
+      "girth_cm": 415,
+      "height_m": 18,
+      "crown_m": null,
+      "age_band": "100-200",
+      "ownership": "Sia pubblica che privata",
+      "reason": "Mole24 counts this as Turin's sixteenth monumental tree and gives it about 100 years, but the register files it under a neighbouring comune, which is the whole explanation for why the city's count is quoted as 15 or 16 depending on who is counting. 4.8 km from the centre, up at the Parco della Rimembranza. Ownership is mixed public and private, so access needs checking before it could ever ship."
+    },
+    {
+      "name": "The three oaks of the Borgo Medievale, if they are ever split",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "register_id": "013/L219/TO/01",
+      "latitude": 45.0492,
+      "longitude": 7.68468,
+      "girth_cm": null,
+      "height_m": null,
+      "crown_m": null,
+      "age_band": null,
+      "ownership": "Pubblica",
+      "reason": "Blocked as shipped (see below) because the register files them as one GRUPPO with no measurements. Kept as a lead because the press lists them individually at 27 m each, so if a municipal source ever gives them separate girths and points, they are three ready-made entries sitting in the middle of a walk that already passes them."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Group of oaks at the Borgo Medievale",
+      "register_id": "013/L219/TO/01",
+      "reason": "Register type GRUPPO with no girth, height, age or crown recorded, so there is no one identifiable tree to stand in front of and nothing to verify per trunk."
+    },
+    {
+      "name": "Group of oaks near Superga",
+      "register_id": "016/L219/TO/01",
+      "reason": "Register type GRUPPO with no measurements, and 5.6 km from the centre. Not a collectible point."
+    },
+    {
+      "name": "Double avenue of planes, southwest of the city",
+      "register_id": "001/E216/TO/01",
+      "reason": "Register type FILARE DOPPIO, a double avenue rather than a tree, and privately owned. Fails the collectible-point test and hard rule 10 at once."
+    },
+    {
+      "name": "Avenue of oaks, northwest of the city",
+      "register_id": "001/L727/TO/01",
+      "reason": "Register type VIALE ALBERATO, an avenue. Nothing to stand at and nothing to have seen."
+    },
+    {
+      "name": "The plane of Corso Novara, by the Cimitero Monumentale",
+      "register_id": "not present in the current regional layer",
+      "reason": "Named by Turismo Torino's route and both press lists at 27 m, but absent from the regional census layer as read on 2026-08-05, and the council has run an active felling programme on Corso Novara for trees at risk of falling. Vitality unconfirmed on a street where trees are being taken down. Do not publish without a current municipal source saying this individual still stands."
+    },
+    {
+      "name": "Oak on private land, northeast of the city",
+      "register_id": "001/I030/TO/01",
+      "reason": "Register ownership Privata. Private land with no evidence it is open to visitors."
+    },
+    {
+      "name": "Holm oak on private land, south of the city",
+      "register_id": "001/G398/TO/01",
+      "reason": "Register ownership Privata, and the age field reads 'Non applicabile'. Private land, no public access recorded."
+    },
+    {
+      "name": "Service tree on private land, southeast of the city",
+      "register_id": "001/G678/TO/01",
+      "reason": "Register ownership Privata. Also only 133 cm round, well under anything this site would call remarkable."
+    }
+  ]
+}

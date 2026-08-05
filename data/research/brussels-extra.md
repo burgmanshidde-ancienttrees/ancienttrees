@@ -56,3 +56,48 @@ id 3420 Sophora japonica 208cm Place Jean Jacobs, 17th
 id 7112 Gymnocladus dioica 73cm Parc d'Egmont, 4th of species (young)
 id 3425 Acer pseudoplatanus 256cm Rue aux Laines 17, ESPACE PRIVE -> blocked
 id 7366 Eucalyptus globulus 70cm Rue de la Regence, ESPACE PRIVE -> blocked
+
+## Outcome
+
+Six trees written to data/research/brussels-extra.json, all in Parc d'Egmont:
+bru_011 Turner's Oak (reg 648), bru_012 Ginkgo (637), bru_013 Tulip Tree (642),
+bru_014 Sycamore (6357), bru_015 Cedar of Lebanon (629), bru_016 Northern Red
+Oak (647). All six are on Brussels Environment's own published Egmont walk
+(woodwideweb.be/fr/walk/4.html) and on the park's on-site trilingual
+information panel, which is a public authority signposting them. Brussels
+therefore passes ten: 16 trees.
+
+Walk geometry: all six inside a 1.5 hectare walled park, longest leg about
+180 m. The published ten span 11 km; this adds a walk that spans 180 m.
+
+Park access confirmed from the City's own page and the on-site panel: open
+daily 08:00 to 20:00, closed when wind exceeds 80 km/h, entrances on Boulevard
+de Waterloo, Rue aux Laines and Rue du Grand Cerf, metro Louise.
+
+Park chronology used for the age ranges: Renaissance gardens from 1532,
+Servandoni's French formal layout 1759-1762, Suys' redesign and levelling
+1830, Galoppin's English landscape park 1901-1902, sale to the City and
+opening to the public 1918, public part renovated 2001.
+
+## Photos: none taken, and why
+
+Wikimedia Commons Category:Egmont Park holds 20 files. Seven were downloaded
+and looked at. Four are park views or the palace facade, two are photographs
+of the park's information panel, one is a close-up of panel text. None is
+identifiable as one of the six trees. Two CC0 files by Daderot (DSC08297 and
+DSC08305, 2016) each show a low, broad, dark evergreen tree fenced with
+chestnut paling near the palace railings, whose shape matches the Turner's
+oak's recorded 10 m height against 17 m crown, but neither file says so and
+approving on a resemblance is exactly what the photo rule forbids. Recorded
+here so a later pass starts from the shortlist rather than from a blank search:
+  https://commons.wikimedia.org/wiki/File:Egmont_Park_-_Brussels,_Belgium_-_DSC08297.jpg  CC0, Daderot
+  https://commons.wikimedia.org/wiki/File:Egmont_Park_-_Brussels,_Belgium_-_DSC08305.jpg  CC0, Daderot
+
+## Free correction available on an existing entry
+
+bru_003, the Oriental Plane of Parc Leopold, is currently location_precision
+"approximate" at 50.8377, 4.3778. The register carries that exact tree as id
+794 (Platanus orientalis, 648 cm, crown 38 m, the same figures the entry
+already cites) with a surveyed position of 50.837462, 4.378534, about 57 m
+away. That is a confirmed pin for free, from a source the entry already lists.
+Not applied here because this pass was told not to edit data/cities/brussels.json.

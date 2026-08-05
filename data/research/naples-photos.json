@@ -6,6 +6,36 @@
     "attribution": "Mary Lata, via iNaturalist",
     "status": "approved",
     "source_page": "https://www.inaturalist.org/observations/320623421",
-    "notes": "Viewed the pixels. Daylight colour portrait of a colossal multi-stemmed Ceiba: four pale green-grey trunks rising from one swollen buttressed base that fills the lower half of the frame, blue sky and dappled light behind, botanical-garden lawn with a small green plant label at the foot and pink Ceiba petals fallen on the grass, a Dracaena draco and palms in the background left. Trunk unmistakably the subject and centred, so it survives a wide card crop; crown foliage reads at the top of the frame though the full canopy is cut off, which is normal for a tree this size photographed from beneath. Proof it is this tree: the observation carries GPS 40.86119014, 14.26211407 with 6 m positional accuracy, seven metres from the register coordinate for the Orto Botanico falso kapok, and the surroundings (labelled specimens, dragon tree, palm collection) are the Orto Botanico. Photo licence is CC BY on the individual photo (the observation itself is CC BY-NC, the photo is not). Observed 2025-10-13."
+    "notes": "Viewed the pixels at 768x1024. Daylight colour portrait of a colossal multi-stemmed Ceiba: four pale green-grey trunks rising from one swollen buttressed base that fills the lower half of the frame, blue sky and dappled light behind, botanical-garden lawn with a small green plant label at the foot and pink Ceiba petals fallen on the grass, a Dracaena draco and palms in the background left. The trunk is unmistakably the subject and sits centred, so it survives a wide card crop. Crown foliage reads at the top of the frame though the full canopy is cut off, which is normal for a tree this size photographed from beneath. Proof it is this tree: the observation carries GPS 40.86119014, 14.26211407 with 6 m positional accuracy, seven metres from the register coordinate for the Orto Botanico falso kapok, and the surroundings (labelled specimens, dragon tree, palm collection) are the Orto Botanico. Licence check: the individual photo is CC BY; the observation record itself is CC BY-NC, which does not apply to the photo. Observed 2025-10-13. Two other photos on the same observation are a flower close-up and a leaf macro, both rejected as macros."
+  },
+  {
+    "tree": "2. Camphor of the Giardino dei Principi, Real Bosco di Capodimonte (40.86884, 14.25249)",
+    "status": "dead_end",
+    "notes": "Searched iNaturalist by taxon (Cinnamomum camphora / Camphora officinarum) within 2 km of Capodimonte, and separately swept the whole Capodimonte bounding box (40.8675-40.8700 N, 14.2505-14.2545 E, 140 observations). The only camphor there is observation 205112748 at 40.86895, 14.25323, which is 65 m from the target AND licensed CC BY-NC, so it is unusable on both counts. Every plant observation inside that bbox is CC BY-NC or unlicensed; the handful of CC BY records are insects and a single Quercus ilex. Openverse (which indexes Flickr, Wikimedia and others) returns nothing for 'Capodimonte canfora', 'Capodimonte camphor tree', 'Real Bosco di Capodimonte albero' or 'Giardino dei Principi Capodimonte'; the only Capodimonte hits are museum paintings and three generic woodland landscapes. Wikimedia Commons was not re-searched, per the earlier documented dead end. Conclusion: no open-licence photograph of this tree exists in the searchable open pools as of 2026-08-05. Next hope is a reader submission, not another hunt."
+  },
+  {
+    "tree": "3. Montezuma Cypress of the Giardino dei Principi, Capodimonte (40.86870, 14.25258)",
+    "status": "dead_end",
+    "notes": "iNaturalist has zero observations of Taxodium mucronatum (or huegelii) anywhere within 2 km of Capodimonte, at any licence. The full Capodimonte bbox sweep of 140 observations contains no Taxodium at all. Openverse returns nothing for 'Taxodium mucronatum Napoli'. Same conclusion as the camphor above: nothing open-licensed exists to find, and this hunt should not be repeated."
+  },
+  {
+    "tree": "4. Ginkgo biloba of the Orto Botanico di Napoli (40.86141, 14.26316)",
+    "status": "dead_end",
+    "notes": "One CC0 iNaturalist observation exists in the garden (379023972, photos 693272659 and 693272604, both CC0), and I viewed both. Photo 693272659 is shot straight up into the canopy: sky, branches and leaves only, no trunk, and it is impossible to tell which tree you are looking at. Photo 693272604 is a leaf macro, banned outright. Neither survives the Cadiz bar. The observation also sits at 40.86146, 14.26235, about 68 m west of the register coordinate for the monumental ginkgo, so even a good photo from it would need separate proof of identity. Wikimedia Commons has no identified ginkgo image for this garden (see the note on the Commons set below)."
+  },
+  {
+    "tree": "5. Quercus crenata / Quercus x hispanica of the Orto Botanico di Napoli (40.86118, 14.26276)",
+    "status": "dead_end",
+    "notes": "No iNaturalist observation of Quercus crenata within 2 km of the garden at any licence, and none in the open-licence bbox sweep of the Orto Botanico (76 records covering the whole garden). Nothing identified on Wikimedia Commons either."
+  },
+  {
+    "tree": "6. Nolina / Beaucarnea recurvata of the Orto Botanico di Napoli (40.86106, 14.26171)",
+    "status": "dead_end",
+    "notes": "No iNaturalist observation of Beaucarnea or Nolina within 2 km at any licence, and none in the open-licence bbox sweep of the garden. Nothing identified on Wikimedia Commons."
+  },
+  {
+    "tree": "Wikimedia Commons, Orto Botanico di Napoli as a whole",
+    "status": "dead_end",
+    "notes": "Searched properly for the first time, so this note is the record. The category 'Orto botanico di Napoli' returns no members directly; a geosearch at 40.8614/14.2622 with a 250 m radius returns 123 files, and 121 of them are one amateur upload series titled 'Orto botanico di Napoli NNN' with a Hebrew caption meaning only 'the botanical garden of Naples'. Two problems make the whole set unusable. First, every file in the series carries the SAME coordinate, the garden entrance, so the coordinates prove nothing about which tree is shown; there is no per-tree location evidence anywhere in the set. Second, I built four contact sheets and looked at all 121 thumbnails: they are snapshots of plant labels, lawns, greenhouse benches, potted seedlings, the garden map board and distant path views. Not one is a tree portrait meeting the Cadiz bar, and none of the six target species is identifiably present. Openverse adds only 'Orto Botanico Napoli' (Flickr, CC BY-SA), which I downloaded and viewed: a spring shot of pink Polygala flowers with a blossoming tree behind, not any target tree. Do not re-run this sweep."
   }
 ]
