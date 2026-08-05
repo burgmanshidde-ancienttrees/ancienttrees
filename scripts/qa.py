@@ -130,6 +130,37 @@ def main():
             if not resolves(target):
                 failures.append(f"{rel}: dead internal link {url!r}")
 
+    # Orphan check: the machine-testable half of the whole-page rule (Hidde,
+    # 2026-08-04). Country pages shipped live with nothing linking to them for
+    # three days because "how does anyone reach this" was never asked. A page
+    # nobody links to cannot be found by a visitor and is barely crawled.
+    linked = set()
+    for page in pages:
+        scan = PageScan()
+        scan.feed(page.read_text(encoding="utf-8"))
+        for url in scan.links:
+            if re.match(r"^(https?:|mailto:|data:|tel:|#)", url):
+                continue
+            path = url.split("#", 1)[0].split("?", 1)[0]
+            if not path:
+                continue
+            base = DIST if path.startswith("/") else page.parent
+            target = (base / path.lstrip("/")).resolve()
+            for cand in (target, target.with_suffix(target.suffix + ".html"),
+                         target / "index.html"):
+                if cand.is_file():
+                    linked.add(cand)
+                    break
+    # Redirect stubs and the noindexed account prototype are linked on purpose
+    # by nothing; the homepage is the root.
+    for page in pages:
+        if page in linked or page.name == "index.html":
+            continue
+        text = page.read_text(encoding="utf-8")
+        if 'http-equiv="refresh"' in text or "noindex" in text:
+            continue
+        failures.append(f"{page.relative_to(DIST)}: orphan, no page on the site links to it")
+
     if failures:
         print(f"QA FAILED: {len(failures)} problem(s) in {len(pages)} pages")
         for f in failures[:60]:
