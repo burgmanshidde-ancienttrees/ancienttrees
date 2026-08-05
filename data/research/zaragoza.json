@@ -2,11 +2,11 @@
   "city": "Zaragoza",
   "country": "Spain",
   "status": "needs_curation",
-  "intro": "Zaragoza's trees are unusually well documented and unusually undated. The city catalogued 57 singular trees in 2006 and measured every one of them, girth at the base, girth at chest height, height, crown, and recorded no ages at all. Five of them make a walk of under two kilometres along the buried course of the river Huerva, from a park that was a banker's private pleasure garden until 1959 to the grounds of a university building from 1893. Three of the five stand in that one park, which is why this reads as an afternoon rather than a tour.",
-  "meta_description": "Five remarkable trees in Zaragoza on a walk of under two kilometres: the hackberry that came third in Spain's tree of the year, a holm oak, and a rare yew.",
+  "intro": "Zaragoza's trees are unusually well documented and unusually undated. The city catalogued 57 singular trees in 2006 and measured every one of them, girth at the base, girth at chest height, height, crown, and recorded no ages at all. Four of them make a walk of a little under two kilometres along the buried course of the river Huerva, from a park that was a banker's private pleasure garden until 1959 to the grounds of a university building from 1893. Two of the four stand in that one park, which is why this reads as an afternoon rather than a tour.",
+  "meta_description": "Four remarkable trees in Zaragoza on a walk of under two kilometres: the hackberry that came third in Spain's tree of the year, a holm oak, a street plane and a rare yew.",
   "question_meta": "Nobody has established which tree in Zaragoza is oldest. The city's catalogue of 57 singular trees records no ages, and the best-supported candidates are the survivors of the Bruil estate gardens.",
   "question_answer": "Nobody has established it, and the reason is unusually specific: the Ayuntamiento's catalogue of the city's 57 singular trees measures every one of them and dates none of them. The best-supported candidates all stand in Parque Bruil, on ground that was laid out as private gardens after Juan Bruil bought the estate in 1842, which would put them at roughly 150 to 180 years. The hackberry there is the only tree in the city with any public age claim attached to it, and that claim is simply that it is centennial.",
-  "question_context": "This is a gap in the sources rather than in the trees. Spain has no national register of monumental trees; the instrument that exists in Aragon is the regional catalogue of arboles singulares, and it holds 45 trees across the whole region and not one inside the municipality of Zaragoza, because it is a rural conservation tool rather than an urban one. The city's own catalogue, published as a 187 page book in 2006 and given legal force in 2013 when the Ordenanza de Proteccion del Arbolado Urbano listed the same trees in Section IV of its municipal register, is therefore the only document that covers them. It carries a per-tree field for girth at the base, girth at 1.30 metres, trunk height, total height, crown diameter, neighbourhood, street-level position, conservation state and even the legal owner, and it carries no field for age. Where a date exists at all it arrives sideways, in the free-text notes: the honey locust in Parque Bruil is put at the last quarter of the nineteenth century, the honey locusts along Paseo Echegaray at the 1890s, and a privately owned cypress at Juslibol at about 300 years on the word of its owner. One further caution about those figures. Every measurement in the catalogue was taken in 2004 or 2005, so each is twenty years old, and the register has no vitality field of any kind. At least one catalogued tree has died since: the second hackberry of Parque Bruil dried out, was carved into a sculpture in 2017 and was removed in 2022.",
+  "question_context": "This is a gap in the sources rather than in the trees. Spain has no national register of monumental trees; the instrument that exists in Aragon is the regional catalogue of arboles singulares, and it holds 45 trees across the whole region and not one inside the municipality of Zaragoza, because it is a rural conservation tool rather than an urban one. The city's own catalogue, published as a 187 page book in 2006 and given legal force in 2013 when the Ordenanza de Proteccion del Arbolado Urbano listed the same trees in Section IV of its municipal register, is therefore the only document that covers them. It carries a per-tree field for girth at the base, girth at 1.30 metres, trunk height, total height, crown diameter, neighbourhood, street-level position, conservation state and even the legal owner, and it carries no field for age. Where a date exists at all it arrives sideways, in the free-text notes: the honey locusts along Paseo Echegaray are put at the 1890s, and a privately owned cypress at Juslibol at about 300 years on the word of its owner. There is a second and harder caution. Every measurement in the catalogue was taken in 2004 or 2005, and it records nothing about whether a tree still stands. By 2012 an arborist reviewing it reckoned nearly half the listed trees had already gone or were in poor condition, and Parque Bruil alone has lost two of them: the park's second hackberry dried out, was carved into a sculpture of Aragonese animals in 2017 and was taken down in 2022, and its honey locust, the tree the catalogue itself called the oldest in the park, fell in the winter of 2014. A twenty year old measurement is a good place to start looking and it is not evidence that anything is there.",
   "faq": [
     {
       "q": "What is the oldest tree in Zaragoza?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "Yes. The five run just under two kilometres from Parque Bruil in the Tenerias quarter west to the Paraninfo on Plaza Basilio Paraiso, roughly following the course of the Huerva, which runs buried under the Paseo de la Constitucion for the last stretch. Three of the five are in Parque Bruil itself, within a couple of hundred metres of each other."
+      "a": "Yes. The four run a little under two kilometres from Parque Bruil in the Tenerias quarter west to the Paraninfo on Plaza Basilio Paraiso, roughly following the course of the Huerva, which runs buried under the Paseo de la Constitucion for the last stretch. Two of the four are in Parque Bruil itself, a couple of hundred metres apart."
     },
     {
       "q": "Which is the one that was on television?",
@@ -95,42 +95,6 @@
     },
     {
       "id": "zar_003",
-      "name": "The Honey Locust of Parque Bruil",
-      "species": "Honey Locust (Gleditsia triacanthos)",
-      "age_estimate": "Around 140 years, dated to the last quarter of the 19th century",
-      "age_min": 125,
-      "age_max": 155,
-      "location": {
-        "address": "Parque Bruil, near the Calle Asalto side, 50002 Zaragoza",
-        "latitude": 41.649858,
-        "longitude": -0.870327,
-        "neighbourhood": "Tenerias, Casco Historico"
-      },
-      "story": "The oldest tree in this park, on the city's own reading, is an American import. The catalogue puts it in the last quarter of the nineteenth century, which is the most precise date it gives any public tree in Zaragoza, and it is a honey locust from the Mississippi valley, a species that reached European gardens as a curiosity and stayed because it tolerates drought, salt and bad city air better than almost anything. This one is four metres twenty round at the base and twenty one metres tall, the tallest thing in the park. Its trunk shows what the species is really armed with, branched thorns that grow straight out of the bark in bunches, though old cultivated trees often lose them with age. One of its main limbs is held up by a cable, which is the honest sign of a tree the city has decided to keep rather than replace. In autumn it drops seed pods up to forty centimetres long, dark, flattened and twisted like leather straps, and they lie on the path for weeks. Bruil's gardeners were buying novelty when they planted it. What they got was the tree that outlasted the garden.",
-      "verified_sources": [
-        "https://www.zaragoza.es/contenidos/medioambiente/arboles_singulares.pdf",
-        "https://www.zaragoza.es/cont/paginas/normativa/anexos/anejo-3-arbolado.pdf",
-        "https://www.enjoyzaragoza.es/parque-bruil-zaragoza/"
-      ],
-      "access": "Free, public park",
-      "transport": "About 10 minutes on foot east from Plaza del Pilar. The park entrance is on Calle Asalto.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "notes": "FLAGGED ON VITALITY AND ON SOURCES. Ficha 12: girth 4.20 m at base, 2.75 m at 1.30 m, 21 m tall, condition 'bastante bueno' in 2005, owner Ayuntamiento de Zaragoza. The dating to the last quarter of the 19th century and the cable brace are both the 2006 book's own statements. No source later than 2005 confirms it stands. The second source, the Ordenanza's Anejo III of 2013, is the same municipal catalogue given legal force rather than an independent confirmation, so this tree currently rests on one source for existence and one for age, and both are the same document. Needs an independent check before publication.",
-      "best_time": {
-        "months": [10, 11],
-        "label": "October and November, when the long twisted seed pods drop and lie on the path",
-        "kind": "fruit"
-      },
-      "location_precision": "approximate"
-    },
-    {
-      "id": "zar_004",
       "name": "The London Plane of Calle Asalto",
       "species": "London Plane (Platanus x hispanica)",
       "age_estimate": "Not recorded",
@@ -160,7 +124,7 @@
       "location_precision": "approximate"
     },
     {
-      "id": "zar_005",
+      "id": "zar_004",
       "name": "The Yew of the Paraninfo",
       "species": "European Yew (Taxus baccata)",
       "age_estimate": "Not recorded",
@@ -191,5 +155,6 @@
       "notes": "FLAGGED ON VITALITY, ON SOURCES AND ON ACCESS. Ficha 52: girth 1.20 m at 1.30 m, 1.30 m at base, 13 m tall, condition 'bueno' in 2005, owner Universidad de Zaragoza per the Ordenanza's Anejo III. No source of any date confirms the yew still stands; the building is exhaustively documented and none of that documentation mentions its trees. THE BOTANICAL GARDEN CLAIM DOES NOT CHECK OUT AS THE BOOK STATES IT, which is why the story calls it tradition rather than fact: the historic Jardin Botanico de Zaragoza was founded in 1796 in the Huerta de Santa Catalina entered from Calle San Miguel 30, not on this plot, and was wrecked in the Sitios; the garden in Parque Grande is a separate 20th century one inaugurated in 1927. The 2006 book's own wording is 'quiza supervivientes', perhaps survivors. ACCESS UNRESOLVED: it could not be established whether the recinto is freely walkable or whether the yews stand in an internal courtyard. That must be settled before publication, because the access line as written promises less than a visitor needs to know. Both catalogue sources are the same document in two forms. Coordinate is datum-corrected from ED50.",
       "location_precision": "approximate"
     }
-  ]
+  ],
+  "not_ready_to_publish": "DO NOT MOVE THIS TO data/cities/ AS IT STANDS. Four trees is the floor and this file holds four, but only zar_001 has dated proof of life. The 2006 catalogue this city was built from is not a list of living trees: the arborist Ismael Sanz is quoted saying that by 2012 nearly half of it had already disappeared or was in poor condition, and two of the nine trees checked on 2026-08-05 were confirmed dead, including one that had already been written into this file. What each tree still needs is in its own notes field. The cheapest way to unblock the city is the 2019 'Arbol Singular Urbano de Zaragoza' catalogue, reported as 56 trees plus 15 conjuntos, which would be the city confirming what still stands; no run has yet found that document."
 }
