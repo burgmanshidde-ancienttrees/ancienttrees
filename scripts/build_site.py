@@ -2126,6 +2126,14 @@ def load_registers():
     out = []
     for f in sorted(reg_dir.glob("*.json")):
         d = json.loads(f.read_text())
+        if not isinstance(d, dict):
+            # A register file is an object carrying its licence, its proof and
+            # its entries. A bare list has no licence attached, and an import
+            # that skips the wrapper is exactly how unlicensed data would reach
+            # the map. Refuse it loudly rather than reading it.
+            ERRORS.append(f"register {f.name} is a bare list with no licence block; "
+                          f"an import must write the wrapper (see scripts/import_wien.py)")
+            continue
         if d.get("publish_dots") is False:
             # Paris is ODbL, which is share-alike for derived databases, and the
             # map publishes exactly such a file. Held back until Hidde decides
