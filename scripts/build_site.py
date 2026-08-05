@@ -5015,12 +5015,16 @@ def main():
     build_contribute_page(published, pages)
     build_privacy_page(pages)
     build_fakedoor_pages(pages)
-    # Register layer hidden from users (Hidde, 2026-07-31: "de huidige
-    # interactie is het niet, bewaar de informatie"). The data files, the
-    # loader and the render path all stay; only this argument is withheld
-    # until the layer's interaction is properly designed (BACKLOG, viewport
-    # panel). Re-enable by passing registers=registers again.
-    build_explore_page(renderable, pages, registers=None)
+    # The register layer is on again (Hidde, 2026-08-05: "zet de tweede
+    # kaartlaag maar aan, ik ben benieuwd hoe het eruit ziet en het kan me
+    # inspireren hoe dan te ontwerpen"). He switched it off on 2026-07-31
+    # because the interaction was not right, and that objection still stands:
+    # this is grey dots to look at and think about, not a finished design.
+    # Two things keep it honest meanwhile. It appears only from zoom 8, so the
+    # world map stays our own verified trees rather than a haze over Europe,
+    # and it is fetched as assets/registers.json rather than inlined, because
+    # 6,266 dots have no business being the heaviest thing on the page.
+    build_explore_page(renderable, pages, registers=registers)
     build_in_season_page(renderable, tree_slugs, pages)
     species_slugs = sorted((common, slugify(common)) for common in qualifying) if qualifying else []
     build_homepage(published, upcoming, public_collections, pages,
