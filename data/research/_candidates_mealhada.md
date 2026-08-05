@@ -1,0 +1,29 @@
+- adernal e outras espécies | Phillyrea latifolia L. e outras espécies |  | 40.37223,-8.36605 | Mealhada
+- sequóia | Sequoia sempervirens (D.Don) Endl. |  | 40.37580,-8.36147 | Mealhada
+- cedro-do-buçaco | Cupressus lusitanica Miller |  | 40.37618,-8.36834 | Mealhada
+- cedro-do-buçaco | Cupressus lusitanica Miller |  | 40.37477,-8.36717 | Mealhada
+- fetos arbóreos | Dicksonia antarctica Labill. |  | 40.37814,-8.36507 | Mealhada
+- plátano-bastardo | Acer pseudoplatanus L. |  | 40.37839,-8.36761 | Mealhada
+- eucalipto | Eucalyptus globulus Labillardière |  | 40.37711,-8.36578 | Mealhada
+- eucalipto | Eucalyptus regans Muller |  | 40.37731,-8.36318 | Mealhada
+- sobreiro | Quercus suber L. |  | 40.37732,-8.37118 | Mealhada
+- sequóia | Sequoia sempervirens (D.Don) Endl. |  | 40.37740,-8.36294 | Mealhada
+- sequóia | Sequoia sempervirens (D.Don) Endl. |  | 40.37607,-8.36349 | Mealhada
+- oliveira | Olea europaea L. var. Europaea |  | 40.37635,-8.36564 | Mealhada
+- til | Ocotea foentens (Aiton) Baill. |  | 40.37868,-8.37003 | Mealhada
+- freixo-americano | Fraxinus americana L. |  | 40.37643,-8.36576 | Mealhada
+- araucaria-da-queenslândia ou bunya-bunya | Araucaria bidwillii Hooker |  | 40.37631,-8.36503 | Mealhada
+- fetos arbóreos | Dicksonia antarctica Labill. |  | 40.37849,-8.36877 | Mealhada
+- sequóia | Sequoia sempervirens (D.Don) Endl. |  | 40.37589,-8.36147 | Mealhada
+- mirtilo-magenta | Syzygium paniculatum Gaertn. |  | 40.37669,-8.36566 | Mealhada
+- sequóia | Sequoia sempervirens (D.Don) Endl. |  | 40.37810,-8.37171 | Mealhada
+- cedro-do-buçaco | Cupressus lusitanica Miller |  | 40.37450,-8.36627 | Mealhada
+- cedro-do-buçaco | Cupressus lusitanica Miller |  | 40.37606,-8.36905 | Mealhada
+- carvalho-roble ou carvalho-alvarinho | Quercus robur L. |  | 40.37523,-8.36730 | Mealhada
+- freixo-verde-americano (7) | Fraxinus pennsylvanica Marshall (7) |  | 40.37828,-8.36743 | Mealhada
+- pinheiro-alvar-do-méxico | Pinus ayacahuite Ehrenb. ex Schltdl. |  | 40.37586,-8.36812 | Mealhada
+- pinheiro-alvar-do-méxico | Pinus ayacahuite Ehrenb. ex Schltdl. |  | 40.37939,-8.37006 | Mealhada
+- cedro-do-buçaco | Cupressus lusitanica Mill. |  | 40.37959,-8.36999 | Mealhada
+- cedro-do-atlas (8) | Cedrus atlantica (Endl.) Manetti ex Carrière (8) |  | 40.37839,-8.36606 | Mealhada
+- cedro-do-atlas (7) | Cedrus atlantica (Endl.) Manetti ex Carrière (7) |  | 40.37843,-8.36801 | Mealhada
+- cedro-do-atlas (10) | Cedrus atlantica (Endl.) Manetti ex Carrière (10) |  | 40.37882,-8.36933 | Mealhada

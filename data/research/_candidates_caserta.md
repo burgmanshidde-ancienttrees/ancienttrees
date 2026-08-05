@@ -1,0 +1,41 @@
+- Cedro del Libano | Cedrus libani A.Richard | 775cm | 41.09334,14.33028 | Caserta
+- Platano comune | Platanus acerifolia (Aiton) Willd. | 720cm | 41.09266,14.33058 | Caserta
+- Osmanto odoroso | Osmanthus fragrans Lour. | 650cm | 41.09336,14.33057 | Caserta
+- Cedro del Libano | Cedrus libani A.Richard | 635cm | 41.08932,14.34119 | Caserta
+- Abete di Douglas | Pseudotsuga menziesii (Mirb.) Franco | 580cm | 41.09323,14.33044 | Caserta
+- Platano comune | Platanus acerifolia (Aiton) Willd. | 560cm | 41.09184,14.32994 | Caserta
+- Cipresso messicano | Taxodium huegelii C.Lawson | 552cm | 41.09682,14.33042 | Caserta
+- Albero della canfora | Cinnamomum camphora T.Nees et Eberm | 500cm | 41.08923,14.34135 | Caserta
+- Cipresso di Monterey | Cupressus macrocarpa Hartw. | 485cm | 41.09296,14.33023 | Caserta
+- Platano comune | Platanus acerifolia (Aiton) Willd. | 480cm | 41.09844,14.31556 | Caserta
+- Sequoia sempreverde | Sequoia sempervirens (D. Don) Endl. | 469cm | 41.09334,14.33028 | Caserta
+- Cedro del Libano | Cedrus libani A.Richard | 464cm | 41.09592,14.33128 | Caserta
+- Cefalotasso di Fortune | Cephalotaxus fortunei Hook | 450cm | 41.09273,14.33013 | Caserta
+- Magnolia | Magnolia grandiflora L. | 440cm | 41.09309,14.32993 | Caserta
+- Olmo del Caucaso | Zelkova carpinifolia (Pall.) K. Koch | 430cm | 41.09334,14.33028 | Caserta
+- Sughera | Quercus suber L. | 420cm | 41.09330,14.33006 | Caserta
+- Fillirea | Phillyrea latifolia L. | 420cm | 41.09327,14.33059 | Caserta
+- Platano comune | Platanus acerifolia (Aiton) Willd. | 410cm | 41.09487,14.32389 | Caserta
+- Tasso | Taxus baccata L. | 392cm | 41.09712,14.33117 | Caserta
+- Albero della canfora | Cinnamomum camphora T.Nees et Eberm | 370cm | 41.09262,14.33174 | Caserta
+- Torreya | Torreya grandis Fortune ex Lindl. | 370cm | 41.09388,14.33186 | Caserta
+- Kurrajong | Brachychiton populneus (Schott & Endl.) R.Br. | 360cm | 41.09316,14.32965 | Caserta
+- Bagolaro | Celtis australis L. | 350cm | 41.09503,14.33129 | Caserta
+- Pino dell'Himalaya | Pinus roxburghii Sarg. | 350cm | 41.09431,14.33149 | Caserta
+- Cerro | Quercus cerris L. | 345cm | 41.09392,14.33173 | Caserta
+- Pino del Cile | Araucaria araucana (Molina) K.Koch | 330cm | 41.07508,14.33208 | Caserta
+- Liriodendro | Liriodendron tulipifera L. | 310cm | 41.08014,14.34258 | Caserta
+- Pino di Chilgoza | Pinus gerardiana  Wall. ex D. Don | 310cm | 41.09376,14.32996 | Caserta
+- Pino del Queensland | Araucaria bidwillii Hook. | 278cm | 41.07818,14.32260 | Caserta
+- Casuarina | Casuarina equisetifolia L. | 270cm | 41.07553,14.33242 | Caserta
+- Tasso | Taxus baccata L. | 270cm | 41.07535,14.33218 | Caserta
+- Maclura | Maclura pomifera (Raf.) C.K. Schneid. | 260cm | 41.09728,14.33162 | Caserta
+- Platano comune | Platanus acerifolia (Aiton) Willd. | 260cm | 41.09334,14.33028 | Caserta
+- Eucalitto rostrato | Eucalyptus camaldulensis Dehnh. | 225cm | 41.09689,14.33120 | Caserta
+- Tasso | Taxus baccata L. | 210cm | 41.09337,14.33537 | Caserta
+- Magnolia di Soulange | Magnolia × soulangeana Soul.-Bod. | 175cm | 41.09491,14.33038 | Caserta
+- Melaleuca Corteccia di Carta | Melaleuca styphelioides Sm. | 150cm | 41.09475,14.33132 | Caserta
+- Bosso | Buxus sempervirens L. | 110cm | 41.09489,14.33104 | Caserta
+- Alloro della California | Umbellularia californica (Hook. & Arn.) Nutt. | 100cm | 41.09777,14.33154 | Caserta
+- Camelia | Camellia japonica L. | 61cm | 41.09776,14.33157 | Caserta
+- Maclura | Maclura pomifera (Raf.) C.K. Schneid. |  | 41.09711,14.33077 | Caserta
