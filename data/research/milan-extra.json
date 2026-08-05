@@ -1,0 +1,169 @@
+[
+  {
+    "id": "mil_011",
+    "name": "Il Noce del Caucaso dell'Orto Botanico di Brera",
+    "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+    "age_estimate": "over 80 years, exact age undocumented",
+    "age_min": 80,
+    "age_max": 120,
+    "location": {
+      "address": "Orto Botanico di Brera, arboreto, Via Brera 28, 20121 Milano",
+      "latitude": 45.471111,
+      "longitude": 9.188889,
+      "neighbourhood": "Brera"
+    },
+    "story": "The famous trees in this garden are the two ginkgos of 1775, and neither of them is the one the state decided to protect. That honour went to a Caucasian wingnut at the back of the arboretum, declared a monumental tree of Italy on 11 February 2025, the first tree in the Orto Botanico di Brera ever to carry the designation, granted in the year the garden turned 250. Pterocarya fraxinifolia comes from the forests between the Black Sea and northern Iran, where it grows in ground too wet for most hardwoods, and it behaves in Milan the way it behaves at home: instead of one clean column it throws its limbs sideways into a low green dome, with a root system spreading as wide as the crown. The national register measures the trunk at 4.7 metres around and the tree at 29 metres, which makes it the tallest of the three wingnuts standing in central Milan and the only one on university ground. Its age has never been established by ring count or planting record; the university says over eighty years, which is a floor rather than a figure. In summer it hangs chains of winged green seeds half a metre long from every branch, the detail that gives the genus its name, from the Greek for wing and nut.",
+    "verified_sources": [
+      "https://lastatalenews.unimi.it/orto-botanico-brera-noce-caucaso-riconosciuto-albero-monumentale",
+      "https://ortibotanici.unimi.it/il-noce-del-caucaso-e-albero-monumentale/",
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    ],
+    "access": "Free entry, Orto Botanico di Brera (Mon-Sat, hours vary by season)",
+    "transport": "5 min walk from Lanza (M2) or Montenapoleone (M3)",
+    "best_time": {
+      "months": [6, 7],
+      "label": "June and July, when half-metre chains of winged seeds hang from every branch",
+      "kind": "fruit"
+    },
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "notes": "Species, dimensions and monumental status confirmed by two independent bodies: the national MASAF register (Pterocarya fraxinifolia, Orto Botanico di Brera, girth 470 cm, height 29 m) and the University of Milan's own announcement of the 11 February 2025 designation. Age is single-sourced and vague ('over 80 years', university press release); no ring count or planting record exists, so age_max is an honest upper bound from girth, not a figure anyone has published. Coordinates are the register's garden-level point, roughly 35 m from our own ginkgo entry (mil_004); the arboretum is at the back of the garden, so the pin is approximate rather than surveyed.",
+    "location_precision": "approximate"
+  },
+  {
+    "id": "mil_012",
+    "name": "Il Platano della Biodiversita",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "age undocumented, likely 100-180 years",
+    "age_min": 100,
+    "age_max": 180,
+    "location": {
+      "address": "Giardini Pubblici Indro Montanelli, Via Palestro, 20121 Milano",
+      "latitude": 45.475792,
+      "longitude": 9.200014,
+      "neighbourhood": "Porta Venezia"
+    },
+    "story": "Milan picked one plane tree in this park and started counting what lives on it. The city's monumental tree file calls it simply Platano VTA 43474, and it was entered into a research cycle measuring how much biodiversity a single urban tree carries in its crown and on its bark: the beetles, lichens, mosses, spiders and birds that treat 30 metres of plane tree as an address. The answer, in a city of 170,000 street and park trees, turns out to be a lot, which is why a tree with no legend attached to it now has a municipal page of its own. It stands about 30 metres tall on a trunk 1.6 metres thick, and its roots do something planes often do in compacted parkland: instead of diving, they spread flat across the surface of the root plate like poured wax. The city built a low wooden fence around the base purely to keep service vehicles off them. Its main limbs join the trunk at weak, narrow angles, so rather than shorten them, arborists tied them back to the trunk with anchoring cables. Almost nobody walking the path notices either the fence or the cables, which is the point of both.",
+    "verified_sources": [
+      "https://www.comune.milano.it/argomenti/ambiente-e-animali/gli-alberi-monumentali-a-milano/il-platano-della-biodiversita-ai-giardini-montanelli",
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    ],
+    "access": "Free, public park (opening hours vary by season)",
+    "transport": "5 min walk from Palestro (M1) or Porta Venezia (M1)",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "notes": "Two independent sources on existence, species and size: the Comune di Milano's own monumental-tree page (VTA inventory 43474, height 30 m, diameter at breast height 160 cm) and the national MASAF register (Platanus acerifolia, Giardini Indro Montanelli, girth 483 cm, height 32 m). Neither gives an age, and no planting record survives for this park, so the range is an honest estimate from girth alone. Pin is approximate on purpose: the two sources agree on latitude to five decimals but their longitudes sit about 165 m apart (register 9.200014, comune 9.197869), so the tree is somewhere along that line in the northern half of the gardens. Distinct from mil_002, the much wider 'grande' plane (830 cm girth) about 260 m south.",
+    "location_precision": "approximate"
+  },
+  {
+    "id": "mil_013",
+    "name": "Il Noce del Caucaso dei Giardini Montanelli",
+    "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+    "age_estimate": "age undocumented, among the oldest of its species in Milan",
+    "age_min": 90,
+    "age_max": 150,
+    "location": {
+      "address": "Giardini Pubblici Indro Montanelli, Corso Venezia 55, 20121 Milano",
+      "latitude": 45.473867,
+      "longitude": 9.196278,
+      "neighbourhood": "Porta Venezia"
+    },
+    "story": "Milan has three Caucasian wingnuts worth crossing town for, and this is the widest of them: 5.5 metres around, against 4.7 in the Brera botanical garden and 4.35 for the better-known specimen leaning over the pond in Parco Sempione. The city's own arborists pair this tree with the Sempione one as the two oldest of their species in Milan, which is as close to a date as anyone has put on either. It is a squat, wide, low tree rather than a tall one, 20 metres at most, because Pterocarya fraxinifolia spends its growth on width and on suckers: left alone it throws up new shoots from the base until a single tree reads as a thicket. Ash-like compound leaves, sometimes 60 centimetres long, turn butter yellow in late October. The species arrived in European gardens from the Caucasus and northern Iran in the early 1780s, brought back by a French botanist who found it growing in the wet forests south of the Caspian, and Milan planted it in parks for the same reason it planted bald cypress: land near ornamental water needed trees that would not sulk with wet feet. Walk the gardens' western edge toward Via Manin and it is the broad, many-stemmed one nobody photographs.",
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+      "https://www.comune.milano.it/argomenti/ambiente-e-animali/gli-alberi-monumentali-a-milano/il-noce-del-caucaso-al-parco-sempione"
+    ],
+    "access": "Free, public park (opening hours vary by season)",
+    "transport": "5 min walk from Turati (M3) or Palestro (M1)",
+    "best_time": {
+      "months": [10],
+      "label": "late October, when the long compound leaves turn butter yellow",
+      "kind": "autumn colour"
+    },
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "notes": "Existence, species and size from the national MASAF register (Pterocarya fraxinifolia, Giardini Indro Montanelli, girth 550 cm, height 20 m). The second source is the Comune di Milano's monumental-tree page for the Parco Sempione wingnut, which names this tree by the city's own inventory number ('Assieme a quella dei Giardini Montanelli, Pterocaria VTA 36443, e la pterocaria piu datata tra quelle presenti in citta'), confirming both its existence and its standing as one of the two oldest of its species in the city. No age figure exists anywhere; the range is an honest estimate from girth. Only one source publishes a coordinate, so the pin stays approximate. NOTE for a later pass: mil_010's story calls the Sempione wingnut's companion 'a companion specimen nearby', which the comune source shows is this tree, 1.6 km away in a different park, not a neighbour.",
+    "location_precision": "approximate"
+  },
+  {
+    "id": "mil_014",
+    "name": "Il Platano del Giardino Bazlen",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "age undocumented, likely 120-200 years",
+    "age_min": 120,
+    "age_max": 200,
+    "location": {
+      "address": "Giardino Roberto Bazlen e Luciano Foa, Corso di Porta Romana 106-116, 20122 Milano",
+      "latitude": 45.454668,
+      "longitude": 9.197052,
+      "neighbourhood": "Porta Romana"
+    },
+    "story": "The garden is named after the two men who invented Adelphi, and the tree is the only thing in it older than the publishing house. Roberto Bazlen and Luciano Foa founded Adelphi Edizioni in Milan in 1962; the small green square off Corso di Porta Romana that carries their names is mostly a children's playground now, and this plane is the last big tree left standing in it. Its top was cut out at some point, which took metres off its height and left it stockier than it should be, but the trunk is still 1.95 metres thick, wide enough that the whole playground arranges itself around the base. The city is blunt about what happens next. Wood-decaying fungi have colonised the trunk and cannot be removed, so the tree is inspected at the collar and at every branch join, and the municipal page states plainly that it will be kept for as long as its presence does not create a safety problem over the play area beneath it. That is an unusually honest sentence to publish about a monument, and it is the reason to go now rather than eventually. Planes tolerate Milan's air better than almost anything else, which is how this one outlasted every other large tree on its own block.",
+    "verified_sources": [
+      "https://www.comune.milano.it/argomenti/ambiente-e-animali/gli-alberi-monumentali-a-milano/il-platano-del-giardino-bazlen",
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    ],
+    "access": "Free, public garden with a playground",
+    "transport": "5 min walk from Crocetta (M3), or tram 16 along Corso di Porta Romana",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "notes": "Two independent sources: the Comune di Milano monumental-tree page (VTA 44854, trunk diameter 195 cm, crown reduced, fungal decay, periodic checks) and the national MASAF register (Platanus acerifolia, Giardino Roberto Balzen, Corso di Porta Romana 112-116, girth 600 cm, height 16 m; the register's spelling 'Balzen' is a typo for Bazlen). The two coordinates agree to within about 22 m, which is why this pin is confirmed rather than approximate. No age is published by either source; the range is estimated from girth. The tree is alive and monitored as of the comune page's last update, but its own manager says it stays only while it is safe above the playground, so a future pass should re-check before this entry ages.",
+    "location_precision": "confirmed"
+  },
+  {
+    "id": "mil_015",
+    "name": "Il Platano Siamese di Villa Litta",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "age undocumented, planted with the villa's 18th-century park",
+    "age_min": 180,
+    "age_max": 250,
+    "location": {
+      "address": "Parco di Villa Litta Modignani, Viale Affori 21, 20161 Milano",
+      "latitude": 45.517092,
+      "longitude": 9.167894,
+      "neighbourhood": "Affori, Municipio 9"
+    },
+    "story": "Two plane trees grew close enough together here that they stopped being two. Their roots fused, then part of their trunks, then their crowns interlaced, and the result is catalogued by the city as one tree, Platano VTA 9595, nicknamed the Siamese. It reaches 34 metres, and the reason the city protects it has less to do with size than with occupancy. Colonies of ring-necked parakeets and starlings nest in its cavities, crows keep a nest in the crown, and until a few years ago the large hollow on the north trunk held a Great Grey Owl, a bird whose natural range is the boreal forest of Lapland and Siberia. Woodpeckers drill the trunk for the insect larvae that come with rotting heartwood, and those holes are also the clearest sign of what is happening inside: the city writes that the tree is at the end of its biological cycle, its internal decay advanced, its stability worse than it was, the heavy steel cables binding the two trunks together recently replaced. It stands 300 metres from the Pianta of Affori, in a park the Litta family laid out in the second half of the 1700s, and a visit is worth making sooner rather than later.",
+    "verified_sources": [
+      "https://www.comune.milano.it/argomenti/ambiente-e-animali/gli-alberi-monumentali-a-milano/il-platano-siamese-di-villa-litta",
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+      "https://milanoaffori.it/parco-villa-litta-affori-tra-i-piu-antichi-di-milano/"
+    ],
+    "access": "Free, public park",
+    "transport": "8 min walk from Affori FN (M3) or Affori Centro (M3)",
+    "best_time": {
+      "months": [1],
+      "label": "January, when the leaves are off and the two fused trunks and their cables are fully visible",
+      "kind": "bare silhouette"
+    },
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "notes": "Existence, species, form and condition from the Comune di Milano's own monumental-tree page (VTA 9595, height 34 m, two fused trunks, cabled, described as at the end of its biological cycle) and the national MASAF register, which lists two surviving Villa Litta planes of 43 m and 38 m plus two further entries in the same park. Local history source milanoaffori.it independently confirms that plane trees planted in the second half of the 1700s still stand in this park. No source publishes an age for this specific tree, so the range is estimated from the park's own planting era, not measured. Coordinates: the comune's map point and the nearest register point differ by about 70 m, hence approximate. IMPORTANT: this is NOT the felled 1773 plane. That tree stood on the villa's south-east side until 2015 and its trunk section is displayed indoors; see data/leads/milan.json, blocked. Counted as ONE collectible point rather than two trees because the fusion is what the designation and the nickname are about, and there is one obvious place to stand.",
+    "location_precision": "approximate"
+  }
+]

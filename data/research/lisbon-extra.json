@@ -1,0 +1,225 @@
+[
+  {
+    "id": "lis_013",
+    "name": "The Strangler Fig of Príncipe Real",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "about 155 years",
+    "age_min": 140,
+    "age_max": 160,
+    "location": {
+      "address": "Jardim França Borges, Praça do Príncipe Real, 1250-096 Lisboa",
+      "latitude": 38.71675,
+      "longitude": -9.14911,
+      "neighbourhood": "Príncipe Real, Misericórdia"
+    },
+    "story": "Everyone in this square looks at the cypress. It sits under a metal frame like a green table, it was the first tree in Lisbon given legal protection, in 1940, and it takes all the photographs. Three Australian figs stand around it and almost nobody registers them, which is odd, because they are the reason the square feels roofed. This one carries the thickest trunk of the three, just over six metres around, and holds its crown twenty one metres up. Ficus macrophylla does not start life as a tree in Australia. It germinates in the fork of another one, drops roots down the host's trunk and thickens them until the host is enclosed and dies, which is why the species is called a strangler. Here it had nothing to strangle, so the aerial roots simply hang, reach the gravel and stiffen into props. Underneath all of this is water. The Patriarcal reservoir was finished in 1864, an octagonal chamber on thirty one pillars holding 880 cubic metres for the city, and the garden is its lid. On Saturday mornings a producers' market sets up between the trunks.",
+    "verified_sources": [
+      "https://si.icnf.pt/wfs/arv_class",
+      "https://florestas.pt/descobrir/cedro-do-bucaco-do-principe-real-a-primeira-arvore-classificada-em-lisboa/",
+      "https://pt.wikipedia.org/wiki/Jardim_do_Pr%C3%ADncipe_Real"
+    ],
+    "access": "Free, public square, open at all times",
+    "transport": "Metro Rato (yellow line), about 6 min walk uphill, or tram 24E to Praça do Príncipe Real",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "approximate",
+    "notes": "ICNF processo AIP11066144I, 'figueira-da-baía-de-moreton (n.º 2)', classified D.R. n.º 11, II Série, 14/01/2004. Register figures: girth 6.05 m, height 21 m, age 145 at the 2015 survey, so about 156 in 2026. Independent second source florestas.pt, which describes three classified Australian figs in this garden of roughly the same age as the columnar araucaria, about 140 years, 'que se destacam pelas suas dimensões e raízes aéreas'. The two age figures (145 at 2015 versus about 140 at publication) do not reconcile exactly, hence the 140-160 range and the flag. Pin is approximate on purpose: the register surveys n.º 1 (AIP11066142I, girth 4.80 m) and n.º 3 (AIP11066145I, girth 4.70 m) at 49 m and 26 m from this point, all three are Ficus macrophylla in the same square, and no source on the ground tells a visitor which numbered tree is which. Stand at the largest. The other two processos are recorded as leads. Not to be confused with lis_003, the Cupressus lusitanica 24 m away in the same square."
+  },
+  {
+    "id": "lis_014",
+    "name": "The Yew of Campo Santana",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "about 130 years",
+    "age_min": 120,
+    "age_max": 145,
+    "location": {
+      "address": "Jardim Braamcamp Freire, Campo dos Mártires da Pátria, 1150-230 Lisboa",
+      "latitude": 38.7217,
+      "longitude": -9.14,
+      "neighbourhood": "Campo Santana, Arroios"
+    },
+    "story": "A European yew has no business growing here. The species belongs to damp northern churchyards and mountain shade, and Lisbon offers neither, yet this one has put on close to four metres of girth and fourteen metres of height on a hill above the Avenida. Portugal classified it in May 1968, which makes it one of the earliest protected trees in the city, and the national register now puts it a little past 130 years old. The ground under it has a harder history than the lawns suggest. This field held a slaughterhouse and then a bullring, and in 1817 the men condemned with Gomes Freire de Andrade were hanged on it, which is how Campo de Santana became Campo dos Mártires da Pátria. The garden came afterwards, laid out around a lake with exotic birds wandering the paths, and the medical school and the Hospital de São José still crowd its edges. At the top of the same field stands the statue of Sousa Martins, a physician who died in 1897, its plinth buried under marble plaques left by people who believe he still answers. Every part of a yew is poisonous except the red flesh around the seed.",
+    "verified_sources": [
+      "https://si.icnf.pt/wfs/arv_class",
+      "https://pt.wikipedia.org/wiki/Jardim_Braamcamp_Freire",
+      "https://www.e-cultura.pt/patrimonio_item/11717"
+    ],
+    "access": "Free, municipal garden, open daily",
+    "transport": "Metro Intendente (green line), about 8 min walk, or Metro Avenida (blue line), about 10 min",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "location_precision": "confirmed",
+    "notes": "ICNF processo AIP11065607I, 'teixo', classified D.G. n.º 121, II Série, 21/05/1968 and re-published D.R. n.º 115, II Série, 18/06/2018. Register figures: girth 3.80 m, height 14 m, age 123 at the 2016 survey, so about 133 in 2026. Second source: Wikipedia PT 'Jardim Braamcamp Freire' independently lists Taxus baccata L. among the garden's árvores de interesse público under the same 1968 diploma. One unresolved point recorded rather than published: a search snippet claims two classified yews here, one from 1968 and one from 2000, but the register holds only this one teixo and the Wikipedia list names only one, so the story does not claim a pair. Pin is the register's own surveyed point and this is the only classified yew in the garden, hence confirmed."
+  },
+  {
+    "id": "lis_015",
+    "name": "The Weeping Fig of Campo Santana",
+    "species": "Weeping Fig (Ficus benjamina)",
+    "age_estimate": "about 130 years",
+    "age_min": 120,
+    "age_max": 145,
+    "location": {
+      "address": "Jardim Braamcamp Freire, Campo dos Mártires da Pátria, 1150-230 Lisboa",
+      "latitude": 38.72153,
+      "longitude": -9.13983,
+      "neighbourhood": "Campo Santana, Arroios"
+    },
+    "story": "Ficus benjamina is the tree most people know as a pot plant, the glossy thing sulking in an office corner and shedding leaves whenever somebody moves it. Fifty paces from the yew, on the same slope, one of them has a trunk five metres around and a crown twenty metres up. Portugal classified it on exactly the same day as the yew, 21 May 1968, and the national register still files it under a second name that says what the species does when nothing stops it: matapalo, tree killer. Like its Moreton Bay relatives it can begin high in another tree and work downward, and even planted honestly in soil it keeps the habit of letting fine roots down from the limbs. One useful correction before you go. The register maps a single specimen here. Portuguese sources describing the garden count two of them, classified together under the same 1968 diploma. That gap between a national list and what a city actually holds is completely normal, so expect a pair and stand at the bigger one. The garden around them runs to twenty eight tree species, a Himalayan cedar and a paper mulberry among them, so the fig is not the only import that outgrew its label.",
+    "verified_sources": [
+      "https://si.icnf.pt/wfs/arv_class",
+      "https://pt.wikipedia.org/wiki/Jardim_Braamcamp_Freire",
+      "https://www.e-cultura.pt/patrimonio_item/11717"
+    ],
+    "access": "Free, municipal garden, open daily",
+    "transport": "Metro Intendente (green line), about 8 min walk, or Metro Avenida (blue line), about 10 min",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "approximate",
+    "notes": "ICNF processo AIP11065608I, 'figueira-benjamin; matapalo', classified D.G. n.º 121, II Série, 21/05/1968 and re-published D.R. n.º 115, II Série, 18/06/2018. Register figures: girth 5.00 m, height 20 m, age 123 at the 2016 survey, so about 133 in 2026. Second source: Wikipedia PT 'Jardim Braamcamp Freire' lists 'Ficus benjamina L. (dois exemplares)' under the same 1968 diploma. Flagged and pinned approximate precisely because of that count: the register surveys one tree, the encyclopedia and the garden's own description say two classified specimens, and no source distinguishes them, so a visitor may find a pair within a few dozen metres of this point. Canonical common name chosen as 'Weeping Fig' because no other city file in the corpus yet uses Ficus benjamina and Weeping Fig is the nationality-neutral standard name; the corpus already uses Moreton Bay Fig, Indian Laurel Fig, Rubber Fig and Bodhi Tree for its other Ficus species."
+  },
+  {
+    "id": "lis_016",
+    "name": "The Taxodium of the Jardim da Parada",
+    "species": "Montezuma Cypress (Taxodium mucronatum)",
+    "age_estimate": "unknown, not recorded in the national register",
+    "age_min": 80,
+    "age_max": 150,
+    "location": {
+      "address": "Jardim Teófilo Braga (Jardim da Parada), Rua Coelho da Rocha, 1350-075 Lisboa",
+      "latitude": 38.7181,
+      "longitude": -9.1653,
+      "neighbourhood": "Campo de Ourique"
+    },
+    "story": "Six and a half metres around the trunk and twenty six metres up, this is the largest tree in a garden that fills one whole city block, and for four years it has been at the centre of an argument about a railway. Lisbon is building a metro station under Campo de Ourique. The worksite takes a slice of the garden, residents formed a movement to stop it, and in 2024 they tied coloured ribbons through the branches: black for a tree to be felled, red for high risk of dying, yellow for at risk. The metro company's public answer was a twenty metre radius around the garden's three classified trees with no work inside it and continuing health checks, with six unclassified hackberries taken out instead, four of them replanted in the same holes. The tree carries a small taxonomic dispute of its own. The national register lists it as Taxodium mucronatum, the Montezuma cypress of Mexican riverbanks, the species that produced the widest trunk ever measured on a tree. The parish council and the Portuguese encyclopedia both call it a bald cypress. Nobody has published a resolution. The garden was the parade ground of the Campo de Ourique barracks, which is why nobody calls it by the president's name.",
+    "verified_sources": [
+      "https://si.icnf.pt/wfs/arv_class",
+      "https://pt.wikipedia.org/wiki/Jardim_Te%C3%B3filo_Braga_(Lisboa)",
+      "https://www.metrolisboa.pt/institucional/2022/10/04/metro-de-lisboa-ira-repor-o-jardim-da-parada/",
+      "https://poligrafo.sapo.pt/fact-check/e-verdade-obras-de-nova-estacao-de-metro-em-lisboa-vao-obrigar-a-abater-arvores-no-jardim-da-parada"
+    ],
+    "access": "Free, public garden. A metro construction site takes part of the block until at least the end of 2026 and paths move around it; the classified trees sit inside a protected radius away from the works",
+    "transport": "Tram 25E or 28E to Campo de Ourique, then about 5 min walk",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/%C3%81rvore_isolada_%28tax%C3%B3dio%29_em_Jardim_Te%C3%B3filo_de_Braga_em_Campo_de_Ourique.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Camilla Morselli, via Wikimedia Commons",
+      "status": "approved"
+    },
+    "curation_status": "flagged",
+    "location_precision": "confirmed",
+    "notes": "ICNF processo AIP11065946I, 'taxódio ou cipreste-mexicano', classified Despacho (extrato) n.º 8497/2018, D.R. 2.ª série n.º 169, 3 September 2018. Register figures: girth 6.60 m, height 26 m, last measured 2009. SPECIES CONFLICT, unresolved and therefore flagged: ICNF records Taxodium mucronatum, while Wikipedia PT and the Junta de Freguesia de Campo de Ourique both say Taxodium distichum. The register is the classifying authority so its name is used; note that T. mucronatum is treated by some authorities as a Mexican variety of T. distichum, so the two may not be a real disagreement. AGE: the register leaves the age field empty for all three classified trees in this garden and no other source supplies one, so the 80-150 range is a wide bound from trunk size and the neighbourhood's own build-out, not a measurement. COUNT CORRECTION, worth keeping: Wikipedia PT and the parish both describe four classified trees here including a Sequoia sempervirens, but the national register holds exactly three processos, and the metro's own environmental documents refer to 'as três árvores classificadas' and '3 exemplares arbóreos classificados'. Never write four. ALIVE: photographed standing in this garden by two different Commons contributors, most recently 14 June 2024; the metro's felling list names six unclassified Celtis australis, not this tree. Photo viewed at full size before approval: the tree fills the frame in daylight, trunk and crown both readable, bandstand to the right, centre band holds the trunk so the card crop survives."
+  },
+  {
+    "id": "lis_017",
+    "name": "The Pohutukawa of the Jardim da Parada",
+    "species": "Pohutukawa (Metrosideros excelsa)",
+    "age_estimate": "unknown, not recorded in the national register",
+    "age_min": 80,
+    "age_max": 140,
+    "location": {
+      "address": "Jardim Teófilo Braga (Jardim da Parada), Rua Coelho da Rocha, 1350-075 Lisboa",
+      "latitude": 38.71783,
+      "longitude": -9.1654,
+      "neighbourhood": "Campo de Ourique"
+    },
+    "story": "Two of them stand ten metres apart at the edge of this garden and the register protects them as separate trees, which is fair enough: one measures 4.55 metres around the trunk, the other 4.9. From underneath they read as a single thing, a low tangle of grey limbs running almost horizontally out over the pavement with curtains of aerial root hanging off them, more like a tree that fell and carried on than one that stood up straight. Metrosideros excelsa comes from the coast of New Zealand's North Island, where it grips volcanic cliffs with exactly those roots. In Campo de Ourique it grips a kerb. Flowering lands in May and June here, half a year away from the December bloom that made it a Christmas tree at home, and it is not a subtle event: the crown fills with crimson stamens and almost no petal worth the name, and the pavement underneath goes red as they drop. Both trees were classified in September 2018, late for something this size, and both now sit inside the twenty metre no-work radius the metro company promised around the garden's classified trees.",
+    "verified_sources": [
+      "https://si.icnf.pt/wfs/arv_class",
+      "https://pt.wikipedia.org/wiki/Jardim_Te%C3%B3filo_Braga_(Lisboa)",
+      "https://www.metrolisboa.pt/institucional/2022/10/04/metro-de-lisboa-ira-repor-o-jardim-da-parada/"
+    ],
+    "access": "Free, public garden. A metro construction site takes part of the block until at least the end of 2026 and paths move around it; the classified trees sit inside a protected radius away from the works",
+    "transport": "Tram 25E or 28E to Campo de Ourique, then about 5 min walk",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/%C3%81rvore_%28Metros%C3%ADdero%29_Jardim_Te%C3%B3filo_Braga_em_Lisboa.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Camilla Morselli, via Wikimedia Commons",
+      "status": "approved"
+    },
+    "best_time": {
+      "months": [5, 6],
+      "label": "May and June, when the crown fills with crimson stamens",
+      "kind": "flowers"
+    },
+    "curation_status": "flagged",
+    "location_precision": "approximate",
+    "notes": "FOLDED TWINS. Two ICNF processos, AIP11065947I (38.71779,-9.16539, girth 4.55 m, height 18.7 m) and AIP11065948I (38.71787,-9.16541, girth 4.90 m, height 15 m), both classified Despacho (extrato) n.º 8497/2018, D.R. 2.ª série n.º 169, 3 September 2018, standing about 10 m apart. Shipped as one entry per the register-twin rule; AIP11065948I is recorded as a lead. The pin is the midpoint of the two surveyed points and is therefore approximate by construction, no more than 10 m from either trunk. Second source: Wikipedia PT lists 'dois Metrosideros excelsa' among this garden's classified trees, and the Junta de Freguesia's own heritage page counts 'dois Metrosídero'. AGE: the register's age field is empty for all three classified trees here and no other source gives one, so the range is a wide bound from trunk size, not a measurement. Bloom timing May to June matches the corpus's two other Iberian pohutukawas (Cadiz, two-source confirmed; Porto), which is why best_time is set. ALIVE: photographed in this garden 14 February and 14 June 2024 by a Commons contributor. Photo viewed at full size before approval: huge multi-limbed tree filling the frame in daylight, aerial roots readable, second specimen visible behind it, trunk sits in the centre band so the card crop survives."
+  },
+  {
+    "id": "lis_018",
+    "name": "The Tipuana of the Ninth of April Garden",
+    "species": "Tipu Tree (Tipuana tipu)",
+    "age_estimate": "about 145 years",
+    "age_min": 130,
+    "age_max": 155,
+    "location": {
+      "address": "Jardim 9 de Abril, Rua das Janelas Verdes, 1200-690 Lisboa",
+      "latitude": 38.7046,
+      "longitude": -9.1626,
+      "neighbourhood": "Santos, Estrela"
+    },
+    "story": "This garden is named after a defeat. On 9 April 1918 the Portuguese Expeditionary Corps was overrun at La Lys in Flanders in the course of one morning, and Lisbon put the date on a small terrace above the river. The tipuana shades most of it: twenty two metres tall, three and a fifth metres round the trunk, classified in 2001 along with two neighbours, and by the national register's arithmetic somewhere near 145 years old now. Tipuana tipu is Bolivian and Argentine, a legume that behaves like a plane tree in Mediterranean cities and gets planted everywhere for it, along whole Lisbon avenues. What it does that plane trees do not is drip. In warm months the canopy releases a fine sticky rain, honeydew from the sap-feeding insects living in it, and anyone who has parked a car under one does not do it twice. The ground itself was the walled garden of the Albertas, a Carmelite convent, before the city took it over. Two older names for the place survive in daily use because of that, Jardim das Albertas and Jardim da Rocha do Conde de Óbidos. Walk to the parapet and the Tagus opens up, container cranes and all.",
+    "verified_sources": [
+      "https://si.icnf.pt/wfs/arv_class",
+      "https://www.portaldojardim.com/pdj/2009/09/25/jardim-9-de-abril-lisboa/",
+      "https://pt.wikipedia.org/wiki/Jardim_9_de_Abril"
+    ],
+    "access": "Free, municipal garden with permanent public access. This is not the museum's own garden next door and no ticket is needed",
+    "transport": "Bus 727 or 713 stops on Rua das Janelas Verdes at the Museu de Arte Antiga, 1 min walk; from Santos station it is about 8 min uphill",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "location_precision": "confirmed",
+    "notes": "ICNF processo KNJ1/400, 'tipuana', classified Aviso n.º 15 612/2001, D.R. 2.ª série. Register figures: girth 3.20 m, height 22.2 m, age 133 at the 2015 survey, so about 144 in 2026. Second source: Portal do Jardim's page on the garden names 'Tipuana tipu, Brachychiton e Phoenix dactylifera' as the garden's árvores classificadas de interesse público, an independent confirmation of species and place. Garden verified in an earlier pass as a municipal garden with permanent public access ('jardim de acesso público permanente', Wikipedia PT), distinct from the Jardim do Museu Nacional de Arte Antiga immediately next door, which is bound to museum hours and currently under renovation. Sources conflate the two constantly; the register's lugar for all three trees is Jardim 9 de Abril. Area 3,402 m2, of which 2,373 m2 green space. Named for 9 April 1918, the Battle of La Lys. Second tipuana in the Lisbon file after lis_005, a different classified tree 1.0 km away."
+  },
+  {
+    "id": "lis_019",
+    "name": "The Date Palm of the Ninth of April Garden",
+    "species": "Date Palm (Phoenix dactylifera)",
+    "age_estimate": "about 145 years",
+    "age_min": 130,
+    "age_max": 155,
+    "location": {
+      "address": "Jardim 9 de Abril, Rua das Janelas Verdes, 1200-690 Lisboa",
+      "latitude": 38.7045,
+      "longitude": -9.1627,
+      "neighbourhood": "Santos, Estrela"
+    },
+    "story": "Lisbon's city hall calls this the tallest tree in the city and puts it at 38 metres, four metres over the triumphal arch at the bottom of the Baixa. The national register measured it in 2015 and wrote down 26.7. Both figures are published, neither has been reconciled, and standing at the foot of it you will not settle the question either, because a date palm gives the eye nothing to measure against: no branches, no taper, just a grey column of old leaf bases and then a burst of fronds a long way up. Phoenix dactylifera is a desert crop from Mesopotamia and North Africa, grown for its fruit for at least five thousand years and almost never allowed to get this tall, because an orchard keeps its palms low enough to climb and harvest. Nobody was harvesting this one. It was classified in 2001 along with the tipuana and the flame tree beside it, and the register's clock puts it near 145 years. The trunk is barely one and a half metres around. It has held all that up for a century and a half, on the lip of a terrace above the Tagus that flatters the height even further.",
+    "verified_sources": [
+      "https://si.icnf.pt/wfs/arv_class",
+      "https://www.cmjornal.pt/DataJournalism/static/arvoresdelisboa/index.html",
+      "https://www.portaldojardim.com/pdj/2009/09/25/jardim-9-de-abril-lisboa/"
+    ],
+    "access": "Free, municipal garden with permanent public access. This is not the museum's own garden next door and no ticket is needed",
+    "transport": "Bus 727 or 713 stops on Rua das Janelas Verdes at the Museu de Arte Antiga, 1 min walk; from Santos station it is about 8 min uphill",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "confirmed",
+    "notes": "ICNF processo KNJ1/402, 'tamareira', classified Aviso n.º 15 612/2001, D.R. 2.ª série. Register figures: girth 1.62 m, height 26.7 m, age 133 at the 2015 survey, so about 144 in 2026. Second source: Correio da Manhã's data feature on Lisbon's trees, which cites the Câmara Municipal de Lisboa calling this the tallest tree in the city at 38 m, taller than the 34 m Arco da Rua Augusta; Portal do Jardim independently confirms Phoenix dactylifera as one of the garden's three classified trees. HEIGHT CONFLICT, flagged and stated in the story rather than resolved: 38 m (municipality) versus 26.7 m (national register, 2015). Both are published claims, no source reconciles them, and the entry does not pick a winner. The 'tallest tree in Lisbon' claim is presented as the municipality's, not as our own, per hard rule 8. Neither claim is repeated as a superlative anywhere else in the corpus."
+  }
+]
