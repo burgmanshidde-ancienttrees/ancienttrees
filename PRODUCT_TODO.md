@@ -1,3 +1,64 @@
+## THE NIGHT-RUN QUEUE, set 2026-08-05 after the tree-walk sweep
+
+Draw the top unblocked item. Each carries its source, because the source is what
+makes the pass cheap: these are verify-and-write jobs, not search jobs. Check
+`python3 scripts/backlog.py` first so nothing already published gets "opened"
+again, and never match a place by name.
+
+**In flight in the 2026-08-05 session** (do not duplicate): Trieste, Lisbon
+deepening, Barcelona second deepening, Milan deepening.
+
+1. **Naples, deepen.** 58 register trees nearby against 12 published, and only 2
+   photos on those 12, so this is a research pass and a photo pass at once.
+   Source: Campania embeds 417 rows in its list page, 55 in the comune, each
+   linking a scheda with GPS, girth, height and a description. Clusters hard:
+   12 at Capodimonte, 9 in the Orto Botanico, 6 at Mostra d'Oltremare, 5 on
+   Piazza Vittoria. The Orto Botanico is a whole second walk on its own.
+2. **Turin, new.** The one big city on the list with real supply. Turismo Torino
+   publishes a 13.9 km route naming all 15 designated trees with species, place
+   and measured height, with a GPX download. Splits into a centre cluster and a
+   Valentino cluster, so it is two walks, not one long one.
+3. **Vienna, deepen.** 394 single trees imported today (data/registers/wien-naturdenkmale.json),
+   15 walkable clusters covering 360 of them, against 10 published. The city's
+   Baumkataster is a second department publishing planting year, girth, crown and
+   height for the same trees, which is the cheapest second source found anywhere
+   in the sweep.
+4. **Brussels, deepen.** 582 trees imported today under CC BY 4.0, 577 of them
+   inside four walkable clusters, against 10 published. Ixelles publishes three
+   real tree walks with 10 named trees each in FR/NL/EN. Girth is in METRES in
+   the source and already converted at import; do not convert twice.
+5. **Prague, deepen.** prazskestromy.cz publishes three tree-by-tree walking
+   routes with maps and on-site boards, over an official register of 196. The
+   site is all-rights-reserved: cite and verify, never copy.
+6. **Munich, new.** 117 Naturdenkmaeler covering about 200 individual trees under
+   the 2021 ordinance, with species, address, coordinates and an ownership
+   column. Filter the private parcels out per hard rule 10.
+7. **Seville, deepen.** The 2022 municipal inventory is a 36 MB PDF that pdfminer
+   reads once it is fetched whole (see the recipe in OPEN_DATA_SURVEY.md). Per
+   tree it gives WGS84 coordinates, ownership, full dendrometry, and both
+   physiological and phytosanitary condition, which is the closest thing to a
+   vitality field any register has given us.
+8. **Photo backfill, ten pages with none at all**: Krakow, Maastricht, Oslo,
+   Reykjavik, Groningen, Zurich, Arnhem, Budapest, Nijmegen, Breda. Three photos
+   per city maximum, open licence with attribution recorded, and an honest gap
+   beats a weak photo. Do not re-run a hunt CURATION.md already closed.
+9. **Zaragoza, new.** The city's own 2006 book carries 57 numbered fichas, every
+   one with GPS, girth at base and at 1.30 m, and ownership stated per tree,
+   which answers hard rule 10 row by row. Measurements are from 2004/2005 and
+   coordinates are UTM, so they need converting (scripts/shapefile_reader.py has
+   utm_to_wgs84).
+10. **Valencia and Madrid, deepen.** Valencia publishes five walking routes over
+    508 geolocated monumental trees, four of which already contain trees we
+    publish. Madrid's regional catalogue is a parsable list of 280 trees, 59 in
+    the city, and its exclusion annex doubles as a dead-tree list.
+
+**Not worth a pass, recorded so nobody spends a window finding out again:**
+Hamburg has eleven natural monuments and exactly one is a tree. Marseille's open
+data returns zero tree datasets. Bilbao has five designated specimens in all of
+Bizkaia and the flagships sit beyond the day-trip boundary. Venice's whole
+regional register is about 110 trees and the provincial ones are mainland.
+Bordeaux designates 1,763 points with no species, name or age.
+
 ## DONE 2026-08-05: Italy and Andalusia are imported
 
 Both landed in one session. `data/registers/italy-masaf.json` (5,007 entries with
