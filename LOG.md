@@ -12,7 +12,13 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 **The year chart on tree pages was drawing leaf cover, so every evergreen was a straight line.** Hidde's call: it now draws how much there is to see per month, with each moment on a species carrying a judgement (unseen, nice, striking, worth the trip). Ginkgo's invisible April flowering no longer peaks; its November gold does. The same page also stacked two curve charts making the same promise, one from best_time and one from phenology; they are one figure now. 291 tree pages get the new chart, 74 keep the old best_time curve where the species has no phenology file, and 25 say plainly that the tree looks the same all year. The build now refuses a species that records real moments and still draws a flat line.
 
-**FOR HIDDE: nothing blocks, one thing waits on your word.** Publishing the clusters is agent work and therefore the expensive half, so per your rule it has not started. The estimate and the question are in chat.
+**Six clusters published in the same session, on Hidde's go-ahead.** Bucaco opens with 6 (named after the forest people search for, not the Mealhada municipality the register files it under), Lucca with 6 in one 800 m walk inside the walls, Caserta with 7 in the Reggia's English Garden. Florence went from 10 to 15, Barcelona from 10 to 16, Naples from 10 to 12, all three deepened from their own registers rather than researched from scratch.
+
+**Four errors in already-published data, found by pointing registers at pages we had already shipped.** Naples dated a yew to 1753 from what is actually Linnaeus's authority citation in Species Plantarum, and had two different trees standing on one pin. Florence carried the same species under two common names, which would have split one species page in two. Barcelona called a ring-dated oak its oldest tree while its own register dates a Park Guell olive older; the copy now says oldest measured and names the disagreement. Celtis australis was living under three names across the city files.
+
+**Three near-misses caught before publication, all the same shape: registers have no vitality field.** Naples' monumental plane has been down since a 2022 lightning strike and is still listed. Caserta's Monterey cypress may or may not be the one the 2019 storms took, so it stayed in leads. Bucaco's Cedro de Sao Jose went the other way: two national outlets write about it in the past tense, and it is alive, shortened from 32.9 m to 14 m.
+
+**FOR HIDDE: nothing blocks.**
 
 ## 2026-08-03 — Fukuoka opens: 5 trees, the city you asked for
 
