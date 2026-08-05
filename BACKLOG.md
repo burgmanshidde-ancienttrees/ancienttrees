@@ -34,6 +34,32 @@ Cost note for whoever picks this up: the pulse alone is roughly an hour (a CSS a
 
 His impulse, from AllTrails' country pages ("dit heeft alltrails wss ook vanuit seo overweging gedaan"). The design agreed in chat: country overview pages ("Ancient trees in the Netherlands") ONLY for countries with three or more published cities (about nine today: NL, ES, IT, UK, PT, FR, JP, BE, DE), because 18 of 30 countries have a single city and a one-city country page is a duplicate with a flag on it (P3). Ingredients per page: hand-written country intro (species-page discipline, no templating), the country map with the city chooser, city photo cards, the oldest tree of the country, links to relevant collections and registers. Blueprint edits need his explicit yes; when he says "voeg het landencontract toe", write Contract G into SEO_GEO_BLUEPRINT.md with a version bump, then runs build the qualifying countries inside the coverage lane.
 
+## Collection topics, ranked by measured demand (research 2026-08-04)
+
+Google and Bing autocomplete plus Wikipedia pageviews, run because Hidde judged the existing collection titles unsearchable. He was half right: the superlative frame is where all the volume is, but the winning unit turned out to be narrower than either of us guessed. **Google completes `oldest [species] tree in [city]` for every city tested**: oldest ginkgo tree in tokyo, oldest camphor tree in osaka, oldest olive tree in lisbon, oldest cherry tree in kyoto, oldest palm tree in barcelona, oldest pear tree in dublin.
+
+The single most useful number: **Wikipedia's "List of oldest trees" draws 28,000 views a month, sixty times the Methuselah article's 453.** Demand is for the ranked list, not the record holder, which is exactly the shape a site that cannot map record holders can serve.
+
+**Build, in this order.** Each is fillable from the trees already published.
+1. The Oldest Trees in Europe You Can Actually Visit (the honest version of the unwinnable "oldest tree in Europe")
+2. The Oldest Tree in Every City We Map (aggregates 81 completing queries; internally links every question page)
+3. The Oldest Ginkgos You Can Stand Under (Ginkgo biloba is 58k Wikipedia views/month, our largest species holding at 35)
+4. The Oldest Yews of Britain and Ireland (six of eight autocompletes for "oldest yew tree" are geographies)
+5. The Oldest Olive Trees You Can Walk To (completes into portugal, crete, greece, italy, spain; unlocks the Iberian focus)
+6. The Oldest Camphor Trees of Japan (essentially no English competition; four of ours are over 1,000 years)
+7. The Oldest Trees in London, and How to Find Them (blog-tier competition, and we hold the correct answer)
+
+**Never build, and the reason.** These are the traps: real demand, impossible to answer honestly.
+- oldest tree in the world: Methuselah's location is withheld, Gran Abuelo is Chilean, Old Tjikko Swedish. We map none and never will.
+- biggest / largest / tallest tree: sequoia and redwood country, and the Park Service suppresses Hyperion's location.
+- oldest tree in Europe as a bare claim: the real claimants are wilderness, in Pollino, on Teide, in the Pindos. Hard rule 8 bites.
+- national superlatives (oldest tree in the Netherlands / UK / Spain): the record holder is usually rural and not ours.
+- ancient trees near me in the UK: the Woodland Trust has 180,000 trees to our 575. Ceding it saves a window.
+- most beautiful trees: the query is horticultural, people are buying saplings. Any title using "beautiful" imports the wrong audience.
+- trees that survived Hiroshima: strong, stable demand, and only servable if Hiroshima is ever researched.
+
+**What loses in a title:** mood and season as the noun. "Worth a November trip" and "worth a spring trip" are phrasings nobody types. Season belongs in the page, where best_time makes it a reason to go this weekend.
+
 ## Trending, the PictureThis pattern (Hidde, 2026-08-01, parked on an honest gate)
 
 His screenshots: "Trending in Nederland" (cards of what people look at now) and the "Top 50 in Nederland" ranked-list page (photo, big rank number, name, scientific name). Split decision:
