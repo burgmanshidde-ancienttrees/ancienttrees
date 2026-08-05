@@ -1,0 +1,20 @@
+- Cedro dell'Atlante | Cedrus atlantica (Endl.) Manetti ex Carrière | 700cm | 43.84406,10.51047 | Lucca
+- Cedro del Libano | Cedrus libani A.Richard | 655cm | 43.84150,10.51089 | Lucca
+- Sequoia sempreverde | Sequoia sempervirens (D. Don) Endl. | 576cm | 43.84143,10.51166 | Lucca
+- Sequoia sempreverde | Sequoia sempervirens (D. Don) Endl. | 500cm | 43.84121,10.51121 | Lucca
+- Platano comune | Platanus acerifolia (Aiton) Willd. | 488cm | 43.84538,10.49633 | Lucca
+- Platano comune | Platanus acerifolia (Aiton) Willd. | 478cm | 43.84904,10.51501 | Lucca
+- Magnolia sempreverde | Magnolia grandiflora L. | 425cm | 43.84157,10.51217 | Lucca
+- Falsa canfora | Cinnamomum glanduliferum (Wall.) Meisn. | 384cm | 43.84909,10.50558 | Lucca
+- Pino strobo, pino di Weymouth | Pinus strobus L. | 379cm | 43.84164,10.51159 | Lucca
+- Platano comune | Platanus acerifolia (Aiton) Willd. | 360cm | 43.84334,10.50986 | Lucca
+- Tiglio argentato, Tiglio pendulo | Tilia tomentosa Moench | 360cm | 43.84172,10.51110 | Lucca
+- Cipresso di Monterey | Cupressus macrocarpa Hartw. | 355cm | 43.84056,10.51105 | Lucca
+- Magnolia | Magnolia grandiflora L. | 323cm | 43.84189,10.50852 | Lucca
+- Cipresso calvo d'America, Tassodio | Taxodium distichum (L.) Rich | 315cm | 43.84146,10.51252 | Lucca
+- Pino laricio | Pinus nigra subsp. laricio Maire | 282cm | 43.84120,10.51060 | Lucca
+- Cipresso calvo d'America, Tassodio | Taxodium distichum (L.) Rich | 280cm | 43.84152,10.51235 | Lucca
+- Tasso var. fastigiata | Taxus baccata L. var. fastigiata | 260cm | 43.84116,10.51111 | Lucca
+- Bosso delle Baleari | Buxus balearica Lam | 88cm | 43.84142,10.51112 | Lucca
+- Ginco | Ginkgo biloba L. |  | 43.84179,10.51121 | Lucca
+- Falsa canfora | Cinnamomum glanduliferum (Wall.) Meisn. |  | 43.84198,10.51075 | Lucca

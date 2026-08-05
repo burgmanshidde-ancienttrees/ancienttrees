@@ -1,0 +1,254 @@
+{
+  "_note_not_a_city_file": "PROPOSED REVISION of data/cities/florence.json, which already exists and is published with 10 trees. Do not add this as a new city. Ids flo_001, flo_002 and flo_003 are carried over unchanged from the live file so no URL breaks; flo_011 to flo_014 are new. The four scattered trees on the live page (flo_004 Ippodromo, flo_005 Cascine, flo_006 Salviatino, flo_010 Villa Vogel) are 4 to 9 km from this cluster and are not part of the walk; the merge decision on whether they stay on the page is a human call, and they are listed in data/leads/firenze.json under \"off_cluster_currently_published\" rather than deleted.",
+  "city": "Florence",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Seven of Florence's monumental trees stand inside one walled garden, all within two hundred metres of each other. The Giardino dei Semplici opened in 1545 to grow medicine for the Medici and never stopped collecting: a yew planted in 1720, a cork oak from 1805, a Caucasian elm from 1827, a Mexican cypress raised from Palermo seed in 1884, a Japanese zelkova from 1891. One ticket, one afternoon, and the oldest documented trees in the city. Almost nobody walking to the Duomo goes in.",
+  "meta_description": "Seven monumental trees inside one walled garden: Florence's Giardino dei Semplici holds a 1720 yew, an 1805 cork oak and a giant Montezuma cypress.",
+  "question_meta": "Florence's oldest tree is a yew planted in 1720 in the Giardino dei Semplici, where six more monumental trees stand within 200 metres.",
+  "question_answer": "Florence's oldest documented tree is a European yew planted in 1720 by the botanist Pier Antonio Micheli, now around 306 years old. It grows in the Giardino dei Semplici, the university botanical garden a few minutes from Piazza San Marco, and its date is on record rather than estimated because Micheli kept the garden's books himself.",
+  "question_context": "Most claims about a city's oldest tree rest on girth and guesswork. Florence's does not. The Giardino dei Semplici has kept planting records since the eighteenth century, so the yew's 1720 date comes from the garden's own archive rather than from a ring count, and that same archive dates six more monumental trees inside the same enclosure. Ottaviano Targioni Tozzetti added the cork oak in 1805 and nobody has ever stripped it for cork. A Caucasian elm went in around 1827 and was cut back hard in the 1980s during a fungal outbreak, losing most of its height and keeping its enormous trunk. The Montezuma cypress was raised from seed sent by the botanical garden in Palermo in 1884 and now carries the widest trunk in the city. A Himalayan cedar appears in the books from 1880 and a Japanese zelkova from 1891. Older trees than the yew certainly grew in Tuscany, but not inside Florence and not with a date anyone can check. One thing to know before going: this garden charges admission, which is unusual for the trees on this site.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Florence?",
+      "a": "A European yew planted in 1720 by the botanist Pier Antonio Micheli, in the Giardino dei Semplici. At around 306 years it is one of the few trees in the city with a planting date on record instead of an estimate."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "You barely have to. All seven stand inside the Giardino dei Semplici, in a strip about 185 metres long. It is the tightest cluster of monumental trees on this site: one gate, one ticket, and no street crossings."
+    },
+    {
+      "q": "Do they cost anything to see?",
+      "a": "Yes. The Giardino dei Semplici is part of the University of Florence's museum system and charges an ordinary museum ticket. There is no separate charge for the trees, and no part of the walk is off limits to ticket holders."
+    },
+    {
+      "q": "Which is the biggest?",
+      "a": "The Montezuma cypress, at 6.7 metres around the trunk. It is a Mexican species grown from seed sent up from Palermo in 1884, and the garden considers it the largest living specimen in Italy."
+    }
+  ],
+  "hero_tree_id": "flo_001",
+  "oldest_tree_id": "flo_001",
+  "trees": [
+    {
+      "id": "flo_001",
+      "name": "The Micheli Yew",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "306 years",
+      "age_min": 300,
+      "age_max": 312,
+      "location": {
+        "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+        "latitude": 43.778461,
+        "longitude": 11.261449,
+        "neighbourhood": "San Marco"
+      },
+      "story": "Florence's oldest verified tree grows behind a ticket gate, in a garden older than the city's most famous museums by two centuries. Pier Antonio Micheli planted this yew in 1720, while running the Orto Botanico for Cosimo III de' Medici, and it has now outlived the Grand Duchy that employed him by more than 150 years. At around 306 years old it is Florence's most precisely dated living thing: unlike the ring-count guesswork behind most ancient trees, its planting is on record because Micheli, one of Europe's first professional botanists, kept the garden's books himself. The garden still calls it the oldest specimen it holds, and notes that it is a male tree. The trunk has thickened to nearly three and a half metres around, and its dark, dense crown still throws the kind of deep shade yews are prized and feared for; every part of the tree except the red flesh around the seed is poisonous, a fact eighteenth century physicians studying it would have known well. The Giardino dei Semplici itself opened in 1545 to grow medicinal plants for the Medici, making it one of the oldest university botanical gardens anywhere in the world, and this yew has stood in it for nearly two thirds of that entire history.",
+      "verified_sources": [
+        "https://www.sma.unifi.it/vp-363-alberi-monumentali.html",
+        "https://ilregistrodeglialberi.it/6491-tasso-giardino-dei-semplici-tasso-firenze-fi-toscana",
+        "https://www.ortobotanicoitalia.it/toscana/unifirenze/"
+      ],
+      "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+      "transport": "5 min walk from Piazza San Marco (T2 tram stop)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Sughera_e_tasso.jpg",
+        "license": "CC BY-SA 2.5",
+        "attribution": "Ilaria Camprincoli",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Carried over from the live florence.json, id unchanged. This pass added the garden's own monumental-trees page as a third source, which independently confirms the 1720 planting and the attribution to Micheli. Girth corrected from 'nearly four metres' to 'nearly three and a half': MASAF measures 344 cm, and the earlier text overstated it. MASAF 02/D612/FI/09 gives 344 cm girth and 15.0 m height.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_002",
+      "name": "The Cork Oak of the Giardino dei Semplici",
+      "species": "Cork Oak (Quercus suber)",
+      "age_estimate": "221 years",
+      "age_min": 215,
+      "age_max": 226,
+      "location": {
+        "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+        "latitude": 43.778444,
+        "longitude": 11.261303,
+        "neighbourhood": "San Marco"
+      },
+      "story": "Every commercial cork oak in Portugal and Spain gets stripped bare every nine years or so, its bark peeled for wine corks and flooring while the tree survives underneath, scarred orange until it heals. Florence's cork oak, planted in 1805 by Ottaviano Targioni Tozzetti in the same botanical garden that grew Micheli's yew, has never once been stripped, and the garden says so in its own record as though it were a point of honour. Two centuries of undisturbed growth have thickened its bark into a spongy, deeply fissured armour, and the trunk now measures four and a half metres around. Left alone for research and teaching rather than for product, it has grown one of the widest, most theatrical crowns in the collection, and at 35 metres it is the tallest thing in the garden. Targioni Tozzetti directed the Orto in the early 1800s, the third generation of a Tuscan dynasty of naturalists, and this tree was one of his additions to a collection built around teaching pharmacy students to recognise plants by sight rather than from a drawing. It stands a short walk from the yew, in a garden that has quietly kept some of the oldest documented specimens of both species in Italy, without either one ever having to earn its keep.",
+      "verified_sources": [
+        "https://www.sma.unifi.it/vp-363-alberi-monumentali.html",
+        "https://ilregistrodeglialberi.it/6490-quercia-da-sughero-firenze-fi-toscana",
+        "https://www.ortobotanicoitalia.it/toscana/unifirenze/"
+      ],
+      "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+      "transport": "5 min walk from Piazza San Marco (T2 tram stop)",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/537552381/large.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Peter Andersen, iNaturalist",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Carried over from the live florence.json, id unchanged. Coordinates snapped to the MASAF survey point (01/D612/FI/09, 43.778444/11.261303), 13 m from the previous pin. Girth and height added from MASAF: 457 cm, 35.0 m, which makes it the tallest tree in the garden. The garden's own page independently confirms the 1805 planting, Targioni Tozzetti, and that the bark was never harvested. The previous story's '400 square metres of canopy' figure had no source in this pass and was dropped.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_003",
+      "name": "The Montezuma Cypress",
+      "species": "Montezuma Cypress (Taxodium mucronatum)",
+      "age_estimate": "142 years, planted 1884",
+      "age_min": 140,
+      "age_max": 145,
+      "location": {
+        "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+        "latitude": 43.778361,
+        "longitude": 11.262556,
+        "neighbourhood": "San Marco"
+      },
+      "story": "This tree began as a packet of seed posted from Sicily. The Giardino dei Semplici raised it from material sent by the botanical garden in Palermo in 1884, and 142 years later it has the widest trunk in Florence at 6.7 metres around, which is nearly twice the girth of the yew that is more than twice its age. Taxodium mucronatum is Mexican, a riverbank cousin of the American bald cypress, and it is the national tree of Mexico; its most famous relative is the Arbol del Tule near Oaxaca, whose trunk is over 11 metres across and which may be the stoutest tree on Earth. The garden considers this one the largest living specimen of the species in Italy. It grew without incident for 130 years until a storm in September 2014 struck it directly, splitting and reshaping the crown in an afternoon, so the silhouette now carries the asymmetry of that strike rather than the tidy pyramid the species usually holds. It survived, and it is still on the register. Visitors touring the garden for the Medici era yew and the cork oak often walk straight past something that does not grow naturally anywhere within four thousand kilometres of Tuscany.",
+      "verified_sources": [
+        "https://www.sma.unifi.it/vp-363-alberi-monumentali.html",
+        "https://ilregistrodeglialberi.it/6487-cipresso-di-montezuma-firenze-fi-toscana",
+        "https://commons.wikimedia.org/wiki/File:Taxodium_mucronatum_01_by_Line1.jpg"
+      ],
+      "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+      "transport": "5 min walk from Piazza San Marco (T2 tram stop)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Taxodium_mucronatum_01_by_Line1.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Line1, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "FLAG LIFTED this pass. The live file flags this tree with a 115-145 year range because RAMI said 1884 and a Tuscany survey said 115 years. The garden's own record now independently confirms 1884 and adds the provenance (seed from the Palermo botanical garden), so two independent sources agree and 142 years can be stated. Coordinates snapped to the MASAF survey point (05/D612/FI/09), 96 m east of the previous pin. Girth 670 cm and height 21.0 m from MASAF. The 'largest in Italy' claim is the garden's own and is attributed to it rather than asserted, per hard rule 8. The 2014 lightning strike is reported by both RAMI and the garden.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_011",
+      "name": "The Caucasian Elm That Was Cut Back to Save It",
+      "species": "Caucasian Elm (Zelkova carpinifolia)",
+      "age_estimate": "about 199 years, planted 1827",
+      "age_min": 185,
+      "age_max": 200,
+      "location": {
+        "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+        "latitude": 43.77875,
+        "longitude": 11.261944,
+        "neighbourhood": "San Marco"
+      },
+      "story": "In the 1980s this tree lost roughly two thirds of its height in a single operation and it is still on the national register. The garden planted a Caucasian elm here in 1827 and it grew the way the species does, slowly, into a trunk now close to six metres around. Then a fungal outbreak arrived, named in one register as Dutch elm disease, and the answer was surgery rather than a saw at the base: the branches came off hard, and what stands today is a massive fluted grey column carrying a crown regrown out of the cuts. The national register still lists this tree at thirty metres tall. The 2021 field survey measured ten. Both numbers are honest, they simply belong to different decades, and the difference between them is the operation. Zelkova carpinifolia is not an elm, whatever everyone calls it. It is a close cousin from a small range in the Caucasus and along the southern shore of the Caspian, and it is planted across Europe precisely because it shrugs off the disease that emptied the continent of its elms. Worth thinking about while standing in front of one that needed cutting back anyway. The trunk is the thing to look at: buttressed, silver, and wildly out of proportion to everything above it.",
+      "verified_sources": [
+        "https://www.sma.unifi.it/vp-363-alberi-monumentali.html",
+        "https://ilregistrodeglialberi.it/6488-olmo-del-caucaso-firenze-fi-toscana",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+      "transport": "5 min walk from Piazza San Marco (T2 tram stop)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Zelkova_crenata_01_by_Line1.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Line1, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "New this pass, from MASAF 06/D612/FI/09. Two independent sources plus a third: the garden's own page (planted first half of the 1800s, heavily pruned in the 1980s against a fungal disease), RAMI 6488 (planted 1827, survey 14 Oct 2021, girth 5.75 m, height 10.00 m, past crown reduction for Dutch elm disease), and MASAF (girth 610 cm, height 30.0 m). REGISTER TRAP: MASAF's 30 m height predates the pruning and must not be quoted; the story uses the 2021 figure and explains the gap. Girth differs between sources (610 vs 575 cm) because they measure at different heights, so the story says 'close to six metres' rather than picking one. Sources also name the species as Zelkova crenata, an older synonym. Alive and publicly accessible on the garden ticket as of the 2021 survey.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_012",
+      "name": "The Zelkova Somebody Keeps Measuring",
+      "species": "Saw-leaf Zelkova (Zelkova serrata)",
+      "age_estimate": "135 years, planted 1891",
+      "age_min": 130,
+      "age_max": 140,
+      "location": {
+        "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+        "latitude": 43.778694,
+        "longitude": 11.260361,
+        "neighbourhood": "San Marco"
+      },
+      "story": "Somebody has put a tape around this trunk three times in forty years: 3.30 metres in 1980, 3.89 in 2001, 4.40 in 2021. Very few trees anywhere carry that kind of paper trail, and it means you can watch this one grow at roughly two and a half centimetres of girth a year without waiting around for it. The garden planted it in 1891 and it now spreads the widest crown of anything in the Giardino dei Semplici, which in a collection this old is a real claim. Zelkova serrata comes from Japan, Korea and eastern China, where it is the keyaki, the timber used for temple pillars and the bodies of taiko drums, and it is the species most often trained as a broom-form bonsai because the branching is naturally so even. At full size the same habit produces a vase: a short trunk dividing into a fan of near-equal limbs. The bark is the detail to look for. It flakes off in small rounded plates and leaves orange patches underneath, so the trunk reads as a mosaic rather than a texture. In autumn the leaves turn orange and rust before they drop.",
+      "verified_sources": [
+        "https://www.sma.unifi.it/vp-363-alberi-monumentali.html",
+        "https://ilregistrodeglialberi.it/6499-zelkova-giapponese-dellorto-botanico-zelkova-giapponese-firenze-fi-toscana",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+      "transport": "5 min walk from Piazza San Marco (T2 tram stop)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Zelkova_serrata_01_by_Line1.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Line1, via Wikimedia Commons",
+        "status": "found_needs_check"
+      },
+      "curation_status": "ai_generated",
+      "notes": "New this pass, from MASAF 04/D612/FI/09 (girth 453 cm, height 25.0 m). Age conflict resolved in favour of the garden: sma.unifi.it says planted 1891, RAMI 6499 credits it to Ottaviano Targioni Tozzetti in the early 1800s and estimates over 200 years, and a Tuscany survey says 120 years. RAMI's attribution is 86 years off the garden's own record and is almost certainly a carry-over from the cork oak, which Targioni Tozzetti really did plant in 1805. The garden's record is used and RAMI's date is not repeated. RAMI's 2021 survey (girth 4.40 m at 130 cm, height 26.0 m, health 'sufficiente') corroborates MASAF's measurements and supplies the 1980/2001/2021 growth series. PHOTO: viewed at 960 px. The tree is the subject and the mosaic bark is exactly as described, but the framing is tighter than the Cadiz standard wants and the full crown is not readable, so it is left at found_needs_check for a run that can compare it against a wider shot.",
+      "best_time": {
+        "months": [10, 11],
+        "label": "October and November, when the leaves turn orange and rust",
+        "kind": "autumn colour"
+      },
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_013",
+      "name": "The Flag-Crowned Pine",
+      "species": "Turkish Pine (Pinus brutia)",
+      "age_estimate": "over 130 years, in the garden since the late 1800s",
+      "age_min": 125,
+      "age_max": 150,
+      "location": {
+        "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+        "latitude": 43.778444,
+        "longitude": 11.261111,
+        "neighbourhood": "San Marco"
+      },
+      "story": "At 33.5 metres this is the tallest tree in the botanical garden, and the garden watches it closely because the crown has grown into a flag. Almost all the weight sits on one side of a long bare trunk, which is what happens when a tree spends a century reaching for the only gap in a crowded collection, and it is also the shape most likely to fail in a storm. The garden's own record says it needs constant monitoring, which is an unusually frank thing to publish about a tree you are proud of. This pine has been in the collection since the late 1800s and took its present position in 1922. It is the Turkish pine, though Italian sources call it pino bruzio after Calabria, and botanists have argued for a century over whether it is a species in its own right or a subspecies of the Aleppo pine; the national register still files it under Pinus halepensis. It comes from the eastern Mediterranean, from Turkey and Cyprus and the Levant, where it is the pine that colonises burnt ground first. Its needles are longer and darker than the Aleppo pine's and its cones sit almost stalkless against the branch, pointing forwards. Stand back towards the garden wall to take in the whole of it.",
+      "verified_sources": [
+        "https://www.sma.unifi.it/vp-363-alberi-monumentali.html",
+        "https://www.consiglio.regione.toscana.it/upload/crt/resoconti-aula/2439_5388.pdf",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+      "transport": "5 min walk from Piazza San Marco (T2 tram stop)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Pinus_brutia_01_by_Line1.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Line1, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "New this pass, from MASAF 03/D612/FI/09 (girth 382 cm, height 33.5 m). Second source is the garden's own page (present from the late 1800s, moved to its current position in 1922, flag-shaped crown under constant monitoring); the Regione Toscana monumental census independently gives 384 cm and 33.4 m, matching MASAF to within 2 cm and 10 cm. No source gives a planting year, so the age is stated as a floor rather than a figure, and the 1922 date is described as a repositioning rather than a planting because that is what the source says. Species naming: MASAF files it as Pinus halepensis var. brutia and the garden as Pinus halepensis subsp. brutia; published here under the canonical Pinus brutia, kept separate from the three Aleppo Pine entries already on the site because they are a different taxon. PHOTO: viewed at 960 px, whole tree in daylight against sky, trunk and flag crown both readable, survives a wide card crop. Approved.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_014",
+      "name": "The Himalayan Cedar of the Semplici",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "at least 146 years, on the garden's books from 1880",
+      "age_min": 146,
+      "age_max": 165,
+      "location": {
+        "address": "Giardino dei Semplici, Via Pier Antonio Micheli 3, 50121 Firenze",
+        "latitude": 43.778556,
+        "longitude": 11.262611,
+        "neighbourhood": "San Marco"
+      },
+      "story": "The Himalayan cedar only reached Europe in 1822, and this one was on the garden's books by 1880, which makes it an early adopter of a tree that half the continent would go on to plant in every park it built. It has had at least 146 years to make the case: four and a fifth metres round, twenty-eight metres up, with the drooping branch tips that separate a deodar from the stiffer cedars of Lebanon and the Atlas. The leading shoot nods over instead of standing straight and the outer branches hang in soft grey-green curtains, which is the quickest way to tell the three cedars apart from thirty metres off. In its own range, from Afghanistan through Kashmir to western Nepal, it grows to sixty metres on mountainsides at two thousand metres, and its wood is rot-resistant enough that Himalayan temples were built from it. Deodar comes from devadaru, the Sanskrit for timber of the gods. The Giardino dei Semplici acquired it during the decades when European botanical gardens competed for Himalayan and Mexican material, the same appetite that brought the Montezuma cypress here four years later. It is evergreen, so it looks much the same whenever you come, which is a reason to go rather than a reason to wait.",
+      "verified_sources": [
+        "https://www.sma.unifi.it/vp-363-alberi-monumentali.html",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Paid entry (Orto Botanico ticket, standard museum admission)",
+      "transport": "5 min walk from Piazza San Marco (T2 tram stop)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "New this pass, from MASAF 07/D612/FI/09 (girth 418 cm, height 28.0 m). Second source is the garden's own page, which records the tree in the collection from 1880 and describes its imposing dimensions and drooping branches. 1880 is a first-record date, not a planting date, so the age is published as a floor with a wide upper bound. PHOTO GAP IS DELIBERATE: a CC BY-SA 3.0 Commons image exists (File:Cedrus deodara 01 by Line1.jpg, same photographer and day as the other garden photos) and was downloaded and viewed at 960 px. It is a dark, backlit shot up into the crown where the tree cannot be read and the imposing dimensions are invisible. It fails the Cadiz standard on exposure and on 'crown and trunk both readable', so it was rejected rather than approved. An honest gap beats a bad photo.",
+      "location_precision": "confirmed"
+    }
+  ]
+}

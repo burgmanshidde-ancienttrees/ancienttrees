@@ -1,0 +1,20 @@
+- Cipresso di Montezuma | Taxodium mucronatum  Ten. | 670cm | 43.77836,11.26256 | Firenze
+- Olmo del Caucaso o Zelkova crenata | Zelkova carpinifolia (Pall.) K. Koch | 610cm | 43.77875,11.26194 | Firenze
+- Sughera | Quercus suber L. | 457cm | 43.77844,11.26130 | Firenze
+- Cedro del Libano | Cedrus libani A.Richard | 455cm | 43.75794,11.24942 | Firenze
+- Olmo giapponese | Zelkova serrata (Thumb.) Makino | 453cm | 43.77869,11.26036 | Firenze
+- Cedro dell'Himalaya | Cedrus deodara (D.Don) G.Don | 418cm | 43.77856,11.26261 | Firenze
+- Pino domestico | Pinus pinea L. | 412cm | 43.75783,11.24919 | Firenze
+- Bagolaro | Celtis australis L. | 407cm | 43.78261,11.27106 | Firenze
+- Bagolaro | Celtis australis L. | 397cm | 43.78239,11.27103 | Firenze
+- Cipresso di Monterey | Cupressus macrocarpa Hartw. | 388cm | 43.75866,11.24854 | Firenze
+- Pino bruzio | Pinus halepensis var. brutia (Ten) A. Henry syn Pinus brutia Ten. | 382cm | 43.77844,11.26111 | Firenze
+- Cipresso comune | Cupressus sempervirens L. | 357cm | 43.76464,11.25106 | Firenze
+- Bagolaro | Celtis australis L. | 355cm | 43.78250,11.27094 | Firenze
+- Palma da vino cilena | Jubaea chilensis (Molina) Baillon | 349cm | 43.75978,11.27931 | Firenze
+- Cipresso comune | Cupressus sempervirens L. | 346cm | 43.76266,11.26258 | Firenze
+- Tasso | Taxus baccata L. | 344cm | 43.77839,11.26144 | Firenze
+- Pino d'Aleppo | Pinus  halepensis Mill. | 323cm | 43.75778,11.25892 | Firenze
+- Robinia | Robinia pseudoacacia L. | 270cm | 43.76958,11.26228 | Firenze
+- Libocedro | Calocedrus decurrens (Torr.) Florin |  | 43.75758,11.24875 | Firenze
+- Corbezzolo | Arbutus unedo L. |  | 43.76233,11.26622 | Firenze

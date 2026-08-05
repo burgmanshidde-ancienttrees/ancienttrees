@@ -1,0 +1,211 @@
+{
+  "city": "Lucca",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Lucca keeps its best trees in a ring about eight hundred metres across, which makes this one of the shortest walks on this site. Three of the six stand in a botanical garden founded in 1820 and planted with things nobody in Tuscany had seen before: a cedar from Lebanon by way of Pisa, a Californian redwood raised almost as soon as the species reached Europe, and a ginkgo that lightning knocked down and that grew back as three trunks. The other three are a cypress on a gun platform, a cedar with a name and a date, and seven oaks on a tower roof.",
+  "meta_description": "Six remarkable trees inside Lucca's walls, all within 800 metres: seven oaks on the Guinigi tower, a redwood, and a cedar planted in 1822.",
+  "question_meta": "The oldest tree in Lucca is the Cedar of Lebanon in the botanical garden, planted in 1822 by the garden's first director and now 204 years old.",
+  "question_answer": "The oldest tree in Lucca is the Cedar of Lebanon in the Orto Botanico, planted in 1822 by Paolo Volpi, the garden's first director, which makes it 204 years old and two years younger than the garden around it. It is also one of the largest, at six and a half metres round the trunk. The seven holm oaks on top of the Torre Guinigi are the more famous trees, and the idea of planting them up there is far older, but the living oaks are undated replantings.",
+  "question_context": "Italy's national register of monumental trees records girth, height and position but carries no age field at all, so every date on this page comes from the botanical garden's own planting records rather than from the register. Those records are unusually good, because the garden was founded as a teaching collection in 1820 by Maria Luisa di Borbone, Duchess of Lucca, and its directors wrote down what they put in the ground and when. They give 1822 for both the Cedar of Lebanon and the Corsican pine, 1830 for the magnolia, around 1850 for the redwoods, 1862 for the ginkgo, 1880 for the Balearic box and 1900 for the silver lime. The Torre Guinigi is the interesting exception. A tower crowned with trees appears in Giovanni Sercambi's chronicle of Lucca in the fifteenth century, so trees have grown up there for six hundred years, but the seven holm oaks living in that brick box today have been replanted more than once and no source will say when. Outside the walls the municipality has trees that may be older still, including a Lebanon cedar at San Pancrazio reported at around 200 years, but they are not part of this walk.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Lucca?",
+      "a": "The Cedar of Lebanon in the Orto Botanico, planted in 1822 by the garden's first director and now 204 years old. The oaks on the Torre Guinigi are older as an idea and younger as trees."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "Yes, and it is a short walk. All six stand inside the city walls within about 800 metres of each other, from the botanical garden in the southeast corner to the Guinigi tower in the middle of the old town."
+    },
+    {
+      "q": "Do they cost anything to see?",
+      "a": "Three do. The botanical garden charges admission, the Guinigi tower costs 8 euro and 230 steps, and the cypress on the San Regolo bastion and the cedar at Villa Bottini are free."
+    },
+    {
+      "q": "Are there really trees on top of the Guinigi tower?",
+      "a": "Seven of them, holm oaks, growing in a walled box of earth 44 metres above the street. They are the emblem of the city and they are the reason people climb the tower."
+    }
+  ],
+  "hero_tree_id": "luc_001",
+  "oldest_tree_id": "luc_001",
+  "trees": [
+    {
+      "id": "luc_001",
+      "name": "The Cedar of Lebanon of the Orto Botanico",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "204 years, planted in 1822",
+      "age_min": 200,
+      "age_max": 210,
+      "location": {
+        "address": "Orto Botanico di Lucca, Via del Giardino Botanico 14, 55100 Lucca",
+        "latitude": 43.841497,
+        "longitude": 10.510886,
+        "neighbourhood": "Centro Storico"
+      },
+      "story": "This tree is two years younger than the garden around it. Maria Luisa di Borbone, Duchess of Lucca, founded the Orto Botanico in 1820 as a teaching collection for the city's medical school, and in 1822 the first director, Paolo Volpi, put a young cedar in the ground with Count Bernardino Orsetti. The seedling came from the botanical garden at Pisa. Two centuries later it is six and a half metres round the trunk, about twenty metres tall, and it holds its foliage in the flat horizontal plates that only an old Lebanon cedar makes, so the whole crown reads as a series of dark tiers rather than a dome. The garden calls it the patriarch and uses it as its symbol. The species itself comes from the mountains of Lebanon, Syria and southern Turkey, where the Phoenicians cut it for ships and the same forests supplied Solomon's temple, and where very little of it is left standing. Almost every specimen in Europe descends from a handful of eighteenth and nineteenth century plantings like this one. Stand at the trunk and the visitor beside you is roughly one tenth of its girth.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://luoghi.italianbotanicalheritage.com/en/lucca-botanical-garden/",
+        "https://www.luccaindiretta.it/dalla-citta/2024/09/20/sono-36-gli-alberi-monumentali-nel-territorio-del-comune-di-lucca/426398/",
+        "https://turismo.lucca.it/itinerari/gli-alberi-delle-mura-di-lucca/"
+      ],
+      "access": "Paid entry to the Orto Botanico di Lucca",
+      "transport": "About 15 min walk from Lucca station, in the southeast corner inside the walls",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Lucca%2C_Orto_Botanico%2C_Abies_cedrus.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Palickap, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Register 26/E715/LU/09 gives 655 cm girth and 20 m. The garden's own figure is 5.97 m and 22 m, and the city's walls itinerary prints 5.76 m as a diameter, which is both a different tree's girth figure and a unit error. The register measurement is used here. Planting year 1822 is stated independently by the garden and by LuccaInDiretta. Photo file is titled Abies cedrus on Commons but shows the Lebanon cedar in this garden.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "luc_002",
+      "name": "The Redwood of the Orto Botanico",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "about 176 years, planted around 1850",
+      "age_min": 170,
+      "age_max": 185,
+      "location": {
+        "address": "Orto Botanico di Lucca, Via del Giardino Botanico 14, 55100 Lucca",
+        "latitude": 43.841428,
+        "longitude": 10.511661,
+        "neighbourhood": "Centro Storico"
+      },
+      "story": "The tallest living thing inside Lucca's walls is Californian. At thirty-five metres this redwood clears every tower in the old town except the two you can climb, and it was planted around 1850, which is the detail worth pausing on. Western botanists had only described the coast redwood in 1847, and the first seed reached Europe a few years before that. A garden in a walled Tuscan city was therefore growing one within a decade of the species existing on paper. It is now five and three quarter metres round. Coast redwood is the tallest tree species on earth, and the record specimens in northern California pass a hundred and fifteen metres, so this one is a child by the standards of its own kind and will very likely still be growing in three hundred years. Put a hand on the trunk: the bark is soft, dry and fibrous, thirty centimetres deep on old trees, and it is what lets a redwood survive fires that kill everything around it. A second registered redwood stands forty metres away, a little smaller, and the garden counts a third among its nineteenth century plantings.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.luccaindiretta.it/dalla-citta/2024/09/20/sono-36-gli-alberi-monumentali-nel-territorio-del-comune-di-lucca/426398/",
+        "https://ortobotanicodilucca.it/collection/arboreto/"
+      ],
+      "access": "Paid entry to the Orto Botanico di Lucca",
+      "transport": "About 15 min walk from Lucca station, in the southeast corner inside the walls",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Lucca%2C_Orto_Botanico%2C_Sequoia_sempervirens.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Palickap, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Register 34/E715/LU/09, 576 cm girth, 35 m. The second registered redwood (31/E715/LU/09, 500 cm) stands about 40 m away and is recorded as a folded lead rather than a separate entry, since a visitor reads them as one planting. The garden's own page says three redwoods; the register lists two here. Planting date c.1850 from LuccaInDiretta; the garden dates its redwoods to the first half of the nineteenth century, so the range is left wide. The photo shows one of the garden's redwoods, not certainly this individual.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "luc_003",
+      "name": "The Three-Trunked Ginkgo",
+      "species": "Maidenhair Tree (Ginkgo biloba)",
+      "age_estimate": "about 164 years, planted in 1862",
+      "age_min": 160,
+      "age_max": 170,
+      "location": {
+        "address": "Orto Botanico di Lucca, Via del Giardino Botanico 14, 55100 Lucca",
+        "latitude": 43.841792,
+        "longitude": 10.511214,
+        "neighbourhood": "Centro Storico"
+      },
+      "story": "Lightning destroyed this tree around 1950 and it came back as three. The ginkgo planted here in 1862 was struck and lost, and what stands today is a set of shoots that rose from the surviving stump and grew into three full trunks, now twenty-six metres tall. That is why the national register, which lists a trunk girth for almost every tree it protects, leaves the figure blank for this one. There is no single trunk to measure. Ginkgo biloba is the last species of an entire order of plants, with no living relatives closer than the conifers, and fossils of nearly identical leaves come out of rock two hundred million years old. It survives what other trees do not: it was among the first things to grow back near the epicentre at Hiroshima, and the trait on display here, regenerating from a battered base, is part of the same toughness. Come in the second half of November. Ginkgo leaves turn a hard uniform yellow and then drop, often most of them within a day or two, so the tree goes from full gold to bare with a gold floor underneath it.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.luccaindiretta.it/dalla-citta/2024/09/20/sono-36-gli-alberi-monumentali-nel-territorio-del-comune-di-lucca/426398/",
+        "https://www.visittuscany.com/en/attractions/the-botanical-garden-of-lucca/"
+      ],
+      "access": "Paid entry to the Orto Botanico di Lucca",
+      "transport": "About 15 min walk from Lucca station, in the southeast corner inside the walls",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "Register 27/E715/LU/09 records height 26 m and no girth at all, which fits the three-trunk description rather than contradicting it. Planting year 1862 from LuccaInDiretta; the lightning strike around 1950 and the three trunks from the visittuscany description of the garden. Whether the tree is male or female is not recorded anywhere, so no claim is made about fruit.",
+      "best_time": {
+        "months": [11],
+        "label": "the second half of November, when it turns hard yellow and drops it all at once",
+        "kind": "autumn colour"
+      },
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "luc_004",
+      "name": "The Monterey Cypress on the San Regolo Bastion",
+      "species": "Monterey Cypress (Cupressus macrocarpa)",
+      "age_estimate": "roughly 150 years, undated",
+      "age_min": 120,
+      "age_max": 165,
+      "location": {
+        "address": "Baluardo San Regolo, Mura Urbane, 55100 Lucca",
+        "latitude": 43.840556,
+        "longitude": 10.511053,
+        "neighbourhood": "Mura Urbane"
+      },
+      "story": "In the wild this species grows in two small groves on a single stretch of Californian coast near Monterey and nowhere else on earth. This one is twenty-eight metres tall and stands on the roof of a gun platform built between 1600 and 1605 by Piero Vignarelli, on walls that were designed to stop artillery and never had to. That is the joke of Lucca's fortifications: four and a half kilometres of state of the art sixteenth century defences that were never attacked, and which the city therefore turned into a park. Maria Luisa di Borbone laid out the promenade along the top in the 1820s, and from 1860 Cesare Bicchi, who ran the botanical garden immediately below the bastion, used the walls as an extension of his collection and planted exotic conifers where cannon had stood. This cypress is his, and at three and a half metres round it is one of only three trees on the whole circuit that the national register protects. It is evergreen, so it looks the same in February as in August, and it is free to visit at any hour, which the garden below it is not.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://turismo.lucca.it/itinerari/gli-alberi-delle-mura-di-lucca/",
+        "https://www.luccaindiretta.it/dalla-citta/2024/09/20/sono-36-gli-alberi-monumentali-nel-territorio-del-comune-di-lucca/426398/"
+      ],
+      "access": "Free, on the public walk along the city walls",
+      "transport": "On the walls at the San Regolo bastion, directly above the botanical garden",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "flagged",
+      "notes": "Register 09/E715/LU/09, 355 cm girth, 28 m. Flagged on age only: no source dates this tree. The city's own walls itinerary credits the North American cypress by the bastion to Cesare Bicchi, botanical garden director from 1860, which is where the rough range comes from, so it is given as a range and not as a figure.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "luc_005",
+      "name": "The Holm Oaks on the Torre Guinigi",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "not dated, the living oaks are replantings",
+      "age_min": 50,
+      "age_max": 200,
+      "location": {
+        "address": "Torre Guinigi, Via Sant'Andrea 45, 55100 Lucca",
+        "latitude": 43.843744,
+        "longitude": 10.507044,
+        "neighbourhood": "Centro Storico"
+      },
+      "story": "Seven oaks grow forty-four metres above the street, in a brick box of earth on the roof of a medieval tower, and they are the emblem of the city. The Guinigi were Lucca's ruling family in the early fifteenth century, when Paolo Guinigi held the city as its lord, and a tower crowned with trees already appears in Giovanni Sercambi's illustrated chronicle from that period. So the idea is six hundred years old. The trees are not. Holm oaks in a container do not live like holm oaks in the ground, and the seven up there have been replaced more than once without anyone recording when, which is why this entry gives no age. What the box does is keep them small: an ordinary Quercus ilex reaches twenty metres and these are shrubs by comparison, dense, dark, evergreen, with the small hard leaves that let the species hold a Mediterranean summer. Getting there costs 8 euro and 230 steps up the inside of the tower. You come out under the canopy, with the roofs of Lucca below and the Apuan Alps behind, which is a better arrival than most trees on this site can offer.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://cultura.comune.lucca.it/torreGuinigi",
+        "https://www.luccaindiretta.it/dalla-citta/2024/09/20/sono-36-gli-alberi-monumentali-nel-territorio-del-comune-di-lucca/426398/",
+        "https://turismo.lucca.it/le-attrazioni-di-lucca/torri/torre-guinigi/"
+      ],
+      "access": "Paid entry to the Torre Guinigi, 8 euro, 230 steps and no lift",
+      "transport": "In the middle of the old town, at Via Sant'Andrea and Via Guinigi",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Top_of_Torre_Guinigi_%28Lucca%29_-_Tuscany%2C_Italy.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "Graeme Maclean, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "Register 25/E715/LU/09 lists this as an insieme omogeneo of Quercus ilex at Via Guinigi and Via Sant'Andrea, with altitude 44 m, which is the tower roof and not the street. It passes the collectible-point test as an ensemble: it is compact, it is famous for being exactly this, and there is one obvious place to stand. Flagged on age: no source dates the living trees and the range given is deliberately wide. The pin is the tower, so the trunks are 44 m above it.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "luc_006",
+      "name": "The Cedar of the Righteous at Villa Bottini",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "age_estimate": "undated, and no older than the 1840s",
+      "age_min": 100,
+      "age_max": 185,
+      "location": {
+        "address": "Villa Bottini, Via Elisa 9, 55100 Lucca",
+        "latitude": 43.844058,
+        "longitude": 10.510469,
+        "neighbourhood": "Centro Storico"
+      },
+      "story": "On 25 April 2021 this cedar was given a name. Lucca's Garden of the Righteous, in the grounds of Villa Bottini, dedicates trees to people who sheltered others during the war, and this one carries don Renzo Tambellini, an Oblate priest of the Holy Face who from the middle of 1943 turned his community's house into the hub of a network that hid Jews and partisans, and who was later given the gold medal for civil merit. Two more trees went to two more priests the same morning, an incense cedar for don Guido Staderini and a plane for don Sirio Niccolai. The tree itself is the largest registered trunk in the whole municipality: seven metres round and thirty metres tall, in the garden of a villa finished in 1581 for Bernardino Buonvisi, a silk merchant who built it to receive delegations rather than to live in. Nothing dates the cedar, though the species only reached European gardens from the Atlas mountains of Morocco and Algeria around 1840, which puts a hard ceiling on it. The garden is municipal and free, and it is 300 metres from the botanical garden gate.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.lanazione.it/lucca/cronaca/cresce-il-giardino-dei-giusti-intitolati-tre-alberi-a-villa-bottini-agogmyq2",
+        "https://www.luccaindiretta.it/dalla-citta/2024/09/20/sono-36-gli-alberi-monumentali-nel-territorio-del-comune-di-lucca/426398/",
+        "https://www.comune.lucca.it/vivere-il-comune/luoghi/villa-bottini/"
+      ],
+      "access": "Free, public garden of Villa Bottini, open during garden hours",
+      "transport": "Just inside Porta San Gervasio on Via Elisa, about 5 min walk from the botanical garden",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "flagged",
+      "notes": "Register 08/E715/LU/09, 700 cm girth, 30 m, the largest girth of the 36 register entries in the comune of Lucca. Flagged on age: no source dates it, and the 1840s ceiling is the species introduction date rather than a measurement of this tree. Species and location double-sourced by the register and by La Nazione's report of the 2021 dedication.",
+      "location_precision": "confirmed"
+    }
+  ]
+}
