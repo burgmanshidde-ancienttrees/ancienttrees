@@ -4,6 +4,22 @@ Measured 2026-07-21. The question changed halfway through, and so did the answer
 
 It started as "can open data get us to every city in the world", which assumed publishing hundreds of trees per city. Hidde rejected that the same day: ten per city is what makes the passport work, and scarcity is the mechanism rather than a limitation. See BACKLOG.md. So the surviving question is narrower and more useful: **can open data cut the dull half of a city run, finding candidates and fixing coordinates, so runs spend their time on stories?**
 
+## Japan: the Environment Ministry giant-tree database (scouted 2026-08-04, VERDICT: usable with one real caveat)
+
+`https://kyoju.biodic.go.jp/` — 巨樹・巨木林データベース, the national record of every tree in Japan over 300 cm girth at breast height, with measured girth, height, species, and location. It is the closest thing Japan has to Portugal's ICNF, and it is the spine of any cheap layer-two coverage for Japanese cities.
+
+**Licence, with the proving sentence.** The Biodiversity Centre's terms page (`https://www.biodic.go.jp/copyright/terms_of_service.html`) states that its content may be used under 「公共データ利用規約（第1.0版）」（PDL1.0）, the Public Data License 1.0, which permits commercial reuse with attribution and which CLAUDE.md already names as an acceptable register licence. Attribution must give the title, 環境省生物多様性センター, and the URL or download date; any editing or adaptation must be stated separately along with who did it.
+
+**The caveat, and it is a real one.** The same page carves out user submissions by name: 「いきものログ」及び「巨樹・巨木林データベース」ウェブサイトの投稿情報... 著作権は投稿者に帰属します. Copyright in posted content belongs to the poster. The database mixes two things: the ministry's own national survey data from 1988 and 2000, which is Centre content under PDL 1.0, and citizen reports submitted through the site since, which are not. The interface does not obviously separate them.
+
+**Working position for runs.** Use it, and use it carefully:
+- Treat measurements, species and coordinates as facts, which they are, and which carry no copyright in themselves.
+- Never copy submitted prose, observation reports or photographs from the site. Photographs in particular belong to their posters and fall outside PDL 1.0 entirely.
+- Attribute as the terms require, and record in the register file which survey or page each record came from.
+- Where a record is clearly a recent citizen report rather than survey data, treat it as a lead to verify elsewhere, not as an importable record.
+
+That is enough to build the second layer for Japanese cities at near-zero cost, which was the open question blocking the Japan plan.
+
 ## Round one: OpenStreetMap, and why it misled
 
 Trees tagged `natural=tree` + `denotation=natural_monument`, counted per city with bounding box queries against the public Overpass API.
