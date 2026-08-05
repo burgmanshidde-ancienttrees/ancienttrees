@@ -1,0 +1,470 @@
+{
+ "city": "Vienna",
+ "country": "Austria",
+ "generated": "2026-08-05",
+ "source": "Vienna Naturdenkmal register (data/registers/wien-naturdenkmale.json) joined to the city Baumkataster (data.wien.gv.at, ogdwien:BAUMKATOGD). Scope of this pass: the 50 single-tree monuments within 2.2 km of Stephansplatz. The register's other 344 single trees and 368 group designations are untouched and are not repeated here.",
+ "leads": [
+  {
+   "register_id": 3257651,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "1., Rathauspark",
+   "latitude": 48.211148,
+   "longitude": 16.359228,
+   "baumkataster": {
+    "baum_id": 147537,
+    "planted": 1873,
+    "girth_cm": 597,
+    "offset_m": 5.2
+   },
+   "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass"
+  },
+  {
+   "register_id": 3257650,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "1., Rathauspark",
+   "latitude": 48.211068,
+   "longitude": 16.359967,
+   "baumkataster": {
+    "baum_id": 147511,
+    "planted": 1873,
+    "girth_cm": 526,
+    "offset_m": 2.9
+   },
+   "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass"
+  },
+  {
+   "register_id": 3257888,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "1., Dr. Karl Lueger-Platz",
+   "latitude": 48.20761,
+   "longitude": 16.379579,
+   "baumkataster": {
+    "baum_id": 157763,
+    "planted": 1928,
+    "girth_cm": 434,
+    "offset_m": 0.0
+   },
+   "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass"
+  },
+  {
+   "register_id": 3257933,
+   "name": "Ginkgo",
+   "species": "Ginkgo biloba",
+   "place": "2., Vivariumstraße 17",
+   "latitude": 48.215053,
+   "longitude": 16.394513,
+   "baumkataster": {
+    "baum_id": 301498,
+    "planted": 1864,
+    "girth_cm": 408,
+    "offset_m": 6.9
+   },
+   "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass"
+  },
+  {
+   "register_id": 3257866,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "9., Alser Straße",
+   "latitude": 48.215321,
+   "longitude": 16.346265,
+   "baumkataster": {
+    "baum_id": 126884,
+    "planted": 1894,
+    "girth_cm": 315,
+    "offset_m": 2.0
+   },
+   "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass"
+  },
+  {
+   "register_id": 3257747,
+   "name": "Feldulme",
+   "species": "Ulmus minor",
+   "place": "7., Burggasse 39",
+   "latitude": 48.204183,
+   "longitude": 16.35179,
+   "baumkataster": {
+    "baum_id": 1323,
+    "planted": 1915,
+    "girth_cm": 290,
+    "offset_m": 0.6
+   },
+   "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass"
+  },
+  {
+   "register_id": 3257587,
+   "name": "Baumhasel",
+   "species": "Corylus colurna",
+   "place": "4., Resselpark",
+   "latitude": 48.199219,
+   "longitude": 16.369851,
+   "baumkataster": {
+    "baum_id": 208820,
+    "planted": 1900,
+    "girth_cm": 281,
+    "offset_m": 0.0
+   },
+   "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass"
+  },
+  {
+   "register_id": 3257586,
+   "name": "Baumhasel",
+   "species": "Corylus colurna",
+   "place": "4., Resselpark",
+   "latitude": 48.199122,
+   "longitude": 16.370237,
+   "baumkataster": {
+    "baum_id": 208790,
+    "planted": 1917,
+    "girth_cm": 237,
+    "offset_m": 0.0
+   },
+   "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass"
+  },
+  {
+   "register_id": 3247583,
+   "name": "Eibe",
+   "species": "Taxus baccata",
+   "place": "2., Augartenstraße 26-28",
+   "latitude": 48.222931,
+   "longitude": 16.37454,
+   "baumkataster": {
+    "baum_id": 45577,
+    "planted": 0,
+    "girth_cm": 174,
+    "offset_m": 0.1
+   },
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247584,
+   "name": "Eibe",
+   "species": "Taxus baccata",
+   "place": "2., Augartenstraße 26-28",
+   "latitude": 48.222995,
+   "longitude": 16.37443,
+   "baumkataster": {
+    "baum_id": 45578,
+    "planted": 0,
+    "girth_cm": 148,
+    "offset_m": 0.0
+   },
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257961,
+   "name": "Kugeltrompetenbaum",
+   "species": "Catalpa bignonioides \"Nana\"",
+   "place": "7., Schrankgasse 7-9",
+   "latitude": 48.20377,
+   "longitude": 16.35445,
+   "baumkataster": {
+    "baum_id": 167096,
+    "planted": 1977,
+    "girth_cm": 117,
+    "offset_m": 0.4
+   },
+   "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass"
+  },
+  {
+   "register_id": 3257962,
+   "name": "Kugeltrompetenbaum",
+   "species": "Catalpa bignonioides \"Nana\"",
+   "place": "7., Schrankgasse 7-9",
+   "latitude": 48.203709,
+   "longitude": 16.354475,
+   "baumkataster": {
+    "baum_id": 283099,
+    "planted": 2016,
+    "girth_cm": 37,
+    "offset_m": 0.8
+   },
+   "why_not_yet": "verifies fine, but off the Ring walk or a weaker specimen than the six shipped this pass"
+  },
+  {
+   "register_id": 3247699,
+   "name": "Stieleiche",
+   "species": "Quercus robur",
+   "place": "3., Grimmelshausengasse",
+   "latitude": 48.200701,
+   "longitude": 16.381997,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247711,
+   "name": "Morgenländische Platane",
+   "species": "Platanus orientalis",
+   "place": "3., Ungargasse 60",
+   "latitude": 48.19698,
+   "longitude": 16.386942,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257408,
+   "name": "Robinie",
+   "species": "Robinia pseudoacacia",
+   "place": "5., Schönbrunner Straße 20",
+   "latitude": 48.193843,
+   "longitude": 16.358557,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257591,
+   "name": "Weißer Maulbeerbaum",
+   "species": "Morus alba",
+   "place": "3., Weißgerberlände 42",
+   "latitude": 48.208525,
+   "longitude": 16.395098,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257653,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "4., Plößlgasse 15",
+   "latitude": 48.193556,
+   "longitude": 16.374728,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247676,
+   "name": "Baumhasel",
+   "species": "Corylus colurna",
+   "place": "7., Schottenfeldgasse 75A",
+   "latitude": 48.204604,
+   "longitude": 16.342303,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247677,
+   "name": "Baumhasel",
+   "species": "Corylus colurna",
+   "place": "7., Schottenfeldgasse 75A",
+   "latitude": 48.204601,
+   "longitude": 16.342354,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247678,
+   "name": "Sommerlinde",
+   "species": "Tilia platyphyllos",
+   "place": "7., Schottenfeldgasse 75A",
+   "latitude": 48.204592,
+   "longitude": 16.342741,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247596,
+   "name": "Eibe",
+   "species": "Taxus baccata",
+   "place": "3., Rennweg 12",
+   "latitude": 48.193808,
+   "longitude": 16.382355,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247597,
+   "name": "Eibe",
+   "species": "Taxus baccata",
+   "place": "3., Rennweg 12",
+   "latitude": 48.193797,
+   "longitude": 16.382512,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3247598,
+   "name": "Weißer Maulbeerbaum",
+   "species": "Morus alba",
+   "place": "3., Landstraßer Hauptstraße 4A",
+   "latitude": 48.204339,
+   "longitude": 16.385603,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257899,
+   "name": "Judasbaum",
+   "species": "Cercis siliquastrum",
+   "place": "9., Alser Straße 4",
+   "latitude": 48.217105,
+   "longitude": 16.352582,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257902,
+   "name": "Feldulme",
+   "species": "Ulmus minor",
+   "place": "4., Floragasse 5",
+   "latitude": 48.194476,
+   "longitude": 16.368988,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257913,
+   "name": "Ginkgo",
+   "species": "Ginkgo biloba",
+   "place": "8., Josefstädterstraße 17",
+   "latitude": 48.20891,
+   "longitude": 16.351792,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257916,
+   "name": "Blutbuche",
+   "species": "Fagus sylvatica Atropurpurea",
+   "place": "9., Beethovengasse 6",
+   "latitude": 48.217981,
+   "longitude": 16.357028,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257917,
+   "name": "Morgenländische Platane",
+   "species": "Platanus orientalis",
+   "place": "9., Spitalgasse 23",
+   "latitude": 48.219263,
+   "longitude": 16.351243,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257923,
+   "name": "Edelkastanie",
+   "species": "Castanea sativa",
+   "place": "8., Bennogasse 10",
+   "latitude": 48.212696,
+   "longitude": 16.342901,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257802,
+   "name": "Winterlinde",
+   "species": "Tilia cordata",
+   "place": "5., Margaretenstraße 89",
+   "latitude": 48.190016,
+   "longitude": 16.357347,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257825,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "9., Porzellangasse 48",
+   "latitude": 48.223505,
+   "longitude": 16.362218,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257827,
+   "name": "Blauglockenbaum",
+   "species": "Paulownia tomentosa",
+   "place": "9., Währinger Straße 5-7",
+   "latitude": 48.216731,
+   "longitude": 16.359008,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  },
+  {
+   "register_id": 3257859,
+   "name": "Rosskastanie",
+   "species": "Aesculus hippocastanum",
+   "place": "7., Halbgasse 8",
+   "latitude": 48.203432,
+   "longitude": 16.342233,
+   "baumkataster": null,
+   "why_not_yet": "no Baumkataster record, so no second source for age; the Baumkataster stops at private courtyards, school yards and the federal gardens"
+  }
+ ],
+ "blocked": [
+  {
+   "register_id": 3257963,
+   "name": "Gewöhnliche Platane",
+   "species": "Platanus x hispanica",
+   "place": "2., Schwarzingergasse 4(SCHULE)",
+   "latitude": 48.219316,
+   "longitude": 16.377723,
+   "baumkataster": {
+    "baum_id": 88843,
+    "planted": 0,
+    "girth_cm": 359,
+    "offset_m": 0.1
+   },
+   "reason": "school grounds, Schwarzingergasse 4 is a school and the tree stands inside its yard, not open to visitors"
+  },
+  {
+   "register_id": 3257870,
+   "name": "Schwarzer Maulbeerbaum",
+   "species": "Morus nigra",
+   "place": "6., Hirschengasse 18(SCHULE)",
+   "latitude": 48.194743,
+   "longitude": 16.347515,
+   "baumkataster": {
+    "baum_id": 76081,
+    "planted": 0,
+    "girth_cm": 252,
+    "offset_m": 1.8
+   },
+   "reason": "school grounds, Hirschengasse 18 is a school and the tree stands inside its yard, not open to visitors"
+  },
+  {
+   "register_id": 3257745,
+   "name": "Kirschlorbeer",
+   "species": "Prunus laurocerasus",
+   "place": "4., Rechte Wienzeile 25-27",
+   "latitude": 48.197411,
+   "longitude": 16.362565,
+   "baumkataster": null,
+   "reason": "a cherry laurel, a large shrub rather than a tree, in a private courtyard at Rechte Wienzeile 25-27"
+  },
+  {
+   "register_id": 3257748,
+   "name": "Götterbaum",
+   "species": "Ailanthus altissima",
+   "place": "7., Lindengasse 46",
+   "latitude": 48.199891,
+   "longitude": 16.347244,
+   "baumkataster": null,
+   "reason": "tree of heaven in a private courtyard at Lindengasse 46, and an invasive species the city elsewhere removes"
+  },
+  {
+   "register_id": 3257529,
+   "name": "Baumhasel",
+   "species": "Corylus colurna",
+   "place": "6., Windmühlgasse 28(KAMMER F.ARB.U.ANG.F.NOE.)",
+   "latitude": 48.198623,
+   "longitude": 16.355221,
+   "baumkataster": null,
+   "reason": "institutional courtyard of the Lower Austrian chamber of labour at Windmuehlgasse 28, not a public space"
+  },
+  {
+   "register_id": 3257530,
+   "name": "Baumhasel",
+   "species": "Corylus colurna",
+   "place": "6., Windmühlgasse 28(KAMMER F.ARB.U.ANG.F.NOE.)",
+   "latitude": 48.19856,
+   "longitude": 16.355108,
+   "baumkataster": null,
+   "reason": "institutional courtyard of the Lower Austrian chamber of labour at Windmuehlgasse 28, not a public space"
+  }
+ ]
+}

@@ -1,0 +1,213 @@
+{
+ "city": "Zaragoza",
+ "country": "Spain",
+ "city_slug": "zaragoza",
+ "note": "From the 2026-08-05 register-first pass on the Ayuntamiento de Zaragoza's book 'Arboles Singulares de Zaragoza' (2006, ISBN 84-8069-409-2), which carries 57 numbered per-tree fichas plus 11 arboledas, each with UTM coordinates, girth at base and at 1.30 m, heights, crown diameter, barrio, street-level location, conservation state and ownership. Parsed in full to data/registers/spain-zaragoza-arboles-singulares.json. Two things the book does not carry: any age at all, and any vitality later than 2004/2005. Its coordinates are ED50, not WGS84, and converting them naively puts every pin about 200 m northeast of the tree; the stored lat/lon are datum-corrected and the naive values are kept alongside as lat_naive_wrong so nobody repeats the mistake. Leads failed only our evidence bar, the count, or the walk; blocked can never ship as they stand.",
+ "sources": [
+  "https://www.zaragoza.es/contenidos/medioambiente/arboles_singulares.pdf",
+  "https://www.zaragoza.es/cont/paginas/normativa/anexos/anejo-3-arbolado.pdf",
+  "https://www.zaragoza.es/sede/servicio/normativa/4084"
+ ],
+ "leads": [
+  {
+   "name": "The White Poplar of Juslibol",
+   "species": "Populus alba",
+   "ficha": 35,
+   "lat": 41.688741,
+   "lng": -0.904719,
+   "status": "lead",
+   "why": "The fattest tree in the whole municipal register: 5.10 m round at 1.30 m and 5.30 m at the base, measured 2005. It stands in the riverside soto on the left bank of the Ebro at Juslibol, about 5 km north of the centre, with a second registered white poplar 20 m away. Failed on two counts, both fixable. Condition was already 'regular' in 2005 with numerous dead and broken branches, so a twenty-year-old vitality check is mandatory before it could ship. And it joins no walk: the Juslibol soto is a separate outing from the Huerva corridor this page uses. If a future pass opens a second Zaragoza cluster on the Ebro at Juslibol, this is its anchor and it is the biggest tree the city has."
+  },
+  {
+   "name": "The London Plane of the Huerva mouth",
+   "species": "Platanus x hispanica",
+   "ficha": 31,
+   "lat": 41.650126,
+   "lng": -0.854252,
+   "status": "lead",
+   "why": "The tallest tree in the register at 30 m, and 3.40 m round at 1.30 m, condition 'bueno' in 2005. It stands on public land between the Manuel Gimenez Abad bridge of the Tercer Cinturon and the railway bridge, which is exactly the problem: it is a road-and-rail margin rather than a place anyone walks to, roughly 900 m southeast of Parque Bruil with no pleasant route between. The book already noted it was short of water because the irrigation channel beside it had been altered. Keep as the candidate if the Huerva riverside path is ever made continuous."
+  },
+  {
+   "name": "The Olive of the Facultad de Medicina",
+   "species": "Olea europaea",
+   "ficha": 23,
+   "lat": 41.642191,
+   "lng": -0.90199,
+   "status": "lead",
+   "why": "A short wide olive, 4.90 m round at the base against 2.50 m at 1.30 m and only 5 m tall, condition 'muy bueno' in 2005, on the university campus behind the Facultad de Medicina and the Colegio Mayor Pedro Cerbuna. Owned by the Universidad de Zaragoza per the Ordenanza's Anejo III. Genuinely good and genuinely accessible, and it failed only on the walk: it sits about 900 m south of the Paraninfo yew, which would stretch this page's Huerva corridor into a second leg. The obvious ninth tree if Zaragoza grows, and the anchor of a campus cluster with the Tree of Heaven at the Parque Grande botanical garden entrance."
+  },
+  {
+   "name": "The Honey Locust of Calle Aznar Molina",
+   "species": "Gleditsia triacanthos",
+   "ficha": 15,
+   "lat": 41.648316,
+   "lng": -0.872179,
+   "status": "lead",
+   "why": "Squarely inside the published walk, 300 m from the Huerva poplar, condition 'bueno' in 2005, and pruned of three main branches into a flat parasol that is genuinely odd to look at. Cut for one reason only: the page already publishes a bigger and older honey locust in Parque Bruil, and two of the same species on one short walk is repetition rather than a reason to go. The cheapest addition to this city if it ever grows."
+  },
+  {
+   "name": "The Honey Locust of Calle Ramon Pignatelli",
+   "species": "Gleditsia triacanthos",
+   "ficha": 16,
+   "lat": 41.654518,
+   "lng": -0.890553,
+   "status": "lead",
+   "why": "By the entrance of the IES Ramon y Cajal opposite the bullring, condition 'bueno, dada su antiguedad' in 2005, which is the book quietly saying it is old. Same repetition problem as the Aznar Molina tree, and it sits 400 m north of the Paraninfo, off the Huerva line. Note the book also registers a whole avenue of honey locusts on this street as one of its arboledas, so this individual needs its identity pinned before it could ship."
+  },
+  {
+   "name": "The Black Poplar of Paseo de la Constitucion",
+   "species": "Populus nigra",
+   "lat": 41.647791,
+   "lng": -0.881779,
+   "status": "lead",
+   "why": "Condition 'bueno' in 2005 and directly on the walk, 400 m from the Paraninfo yew. The book's own note is the interesting part: this tree and the rest of the Paseo's arbolado grew fast because their roots reach the buried course of the Huerva, which runs underground beneath the paseo. That is a good fact and a poor entry on its own, because at 2.07 m round it is a middling tree among many similar ones on the same avenue, and identifying which one is number 16 on the ground is not something a visitor can do. Better used as a line in another tree's story, which is what this page does."
+  },
+  {
+   "name": "The Black Locust of the Huerva at Pomaron",
+   "species": "Robinia pseudoacacia",
+   "ficha": 18,
+   "lat": 41.64719,
+   "lng": -0.87702,
+   "status": "lead",
+   "why": "On the right bank of the Huerva by the Calle Pomaron bridge next to the IES Medina Albaida, owned by the Confederacion Hidrografica del Ebro. The book records 2.80 m girth, 14.50 m tall, condition 'regular' with dead branches in 2005, and notes that the river has eroded its roots into the open, which it credits for the tree's vigour as well as its risk. Two problems: black locust is not long-lived and a 'regular' rating twenty years ago is a real chance it has gone, and a bank the river is actively undercutting is where a tree disappears without anyone writing it down. Verify on the ground before shipping."
+  },
+  {
+   "name": "The Bay Laurel of the old Torrero prison",
+   "species": "Laurus nobilis",
+   "lat": 41.627784,
+   "lng": -0.887416,
+   "status": "lead",
+   "why": "A bay laurel 4.10 m round at the base and 17 m tall, which is very large for the species, on the site of the former Carcel de Torrero where it once stood in the prison's small garden courtyard. The book dedicates its opening pages to this tree as one whose survival was fought for. The history is the strongest of any tree in the register and the site is the problem: the prison was demolished and the plot redeveloped, so both the tree's survival and the current public access need confirming before anything is written. Worth a dedicated check, because if it stands it is a better story than most of what this page publishes."
+  },
+  {
+   "name": "The Tree of Heaven at the Parque Grande botanical garden",
+   "species": "Ailanthus altissima",
+   "ficha": 48,
+   "lat": 41.635015,
+   "lng": -0.89622,
+   "status": "lead",
+   "why": "Condition 'muy bueno' in 2004, 2.57 m round and 15.70 m tall, at the entrance to the botanical garden inside Parque Grande. The best-conditioned of the register's four tree of heaven entries. It anchors a real second Zaragoza cluster, Parque Grande, which holds the Mexican Cypress (ficha 1, by the Rosaleda), the Narrow-leaved Ash at the foot of the Batallador cascade (ficha 21) and two registered poplar groves. That cluster is a whole second walk and a second research pass, not an extension of this one."
+  },
+  {
+   "name": "The Stone Pine of Avenida San Juan de la Pena",
+   "species": "Pinus pinea",
+   "ficha": 28,
+   "lat": 41.664656,
+   "lng": -0.871797,
+   "status": "lead",
+   "why": "The one tree in the register with a dated age claim and a plaque: the book records that neighbours put its age at over 100 years and that a plaque dated 5 June 1998 commemorates the residents' fight that stopped it being felled. Condition was recorded as excellent. It stands in the planted median of the avenue in Arrabal, on the far side of the Ebro about 1.5 km north of Parque Bruil, so it belongs to the Arrabal riverside walk rather than to the Huerva one. Held back only because its age rests on neighbourhood testimony reported in one source, and because a second source needs to confirm the plaque still exists. Strong candidate the moment Zaragoza opens a north-bank cluster."
+  },
+  {
+   "name": "The Large-leaved Lime of Barrio Oliver",
+   "species": "Tilia platyphyllos",
+   "ficha": 53,
+   "lat": 41.650658,
+   "lng": -0.93487,
+   "status": "lead",
+   "why": "Named in the book's dedication as one of the trees saved by people who cared about it, which puts it in a very short list. 3.25 m round at 1.30 m and 12 m tall, and the only registered lime in the city. Two things stop it: condition was 'regular' in 2005 and the book says roadworks at the junction had badly affected it, so survival is a genuine question; and Barrio Oliver is 3.5 km west of the centre with nothing registered near it, so it is a lone pin rather than a walk."
+  },
+  {
+   "name": "The Field Elms of Camino de Enmedio, La Cartuja",
+   "species": "Ulmus minor",
+   "lat": 41.604558,
+   "lng": -0.838159,
+   "status": "lead",
+   "why": "Two registered field elms on the same lane in La Cartuja Baja, 2.50 m and 2.20 m round, both 'bueno' in 2005, with a registered white mulberry a short way along the same camino. Mature field elms are worth attention anywhere because Dutch elm disease removed most of them, and three registered trees on one rural lane is a genuine small cluster. La Cartuja Baja is 8 km southeast of the centre and inside the day-trip boundary by city bus. Needs a survival check, since elms are exactly the species that quietly go, and the book already flagged that the lane had recently been concreted over one of them."
+  },
+  {
+   "name": "The Holm Oak of Colegio Recarte y Ornat",
+   "species": "Quercus ilex",
+   "ficha": 7,
+   "lat": 41.643621,
+   "lng": -0.901379,
+   "status": "blocked",
+   "why": "Stands in the infant playground of a state primary school. A tree inside a school yard is not somewhere the public can walk, and sending readers to one is not something this project does."
+  },
+  {
+   "name": "The Holm Oak of Torre de la Carrasca",
+   "species": "Quercus ilex",
+   "ficha": 5,
+   "lat": null,
+   "lng": null,
+   "status": "blocked",
+   "why": "Privately owned, on the Torre de la Carrasca estate at San Gregorio (Familia Casorran per the register and the Ordenanza's Anejo III). The largest holm oak in the register at 3.60 m round and 20.5 m tall, and not ours to send anyone to. Its coordinate cannot be used either: the book prints for it the same GPS string it gives the school holm oak in Universidad barrio, several km south, so this ficha has no usable position at all."
+  },
+  {
+   "name": "The Mediterranean Cypress of Torre Genoveva",
+   "species": "Cupressus sempervirens",
+   "lat": 41.688237,
+   "lng": -0.891422,
+   "status": "blocked",
+   "why": "Privately owned, on a walled property at the entrance to Juslibol. The book records the owner's own estimate of about 300 years, which would make it one of the oldest trees in the municipality, and it is still private land."
+  },
+  {
+   "name": "The Mediterranean Cypress of Torre Lain",
+   "species": "Cupressus sempervirens",
+   "lat": 41.692415,
+   "lng": -0.989349,
+   "status": "blocked",
+   "why": "Privately owned, at Torre Lain on the Camino de Las Moreras at Garrapinillos (Familia Lain)."
+  },
+  {
+   "name": "The Honey Locust of Monzalbarba",
+   "species": "Gleditsia triacanthos",
+   "ficha": 11,
+   "lat": 41.692163,
+   "lng": -0.950124,
+   "status": "blocked",
+   "why": "Privately owned, on irrigated farmland off the Camino de Zaragoza a Monzalbarba (D. Agustin Agesta)."
+  },
+  {
+   "name": "The Cedar of Lebanon of the Misioneras convent",
+   "species": "Cedrus libani",
+   "ficha": 25,
+   "lat": 41.642177,
+   "lng": -0.8631,
+   "status": "blocked",
+   "why": "Privately owned, in the enclosed garden of the Convento de Misioneras de Nuestra Senora del Pilar y Santiago Apostol. The register and the Ordenanza both name the congregation as owner. A convent garden is not a public space and no source says visitors may enter."
+  },
+  {
+   "name": "The London Plane of the Misioneras convent",
+   "species": "Platanus x hispanica",
+   "ficha": 32,
+   "lat": 41.64186,
+   "lng": -0.863051,
+   "status": "blocked",
+   "why": "Privately owned, the same enclosed convent garden as the cedar above. 4.60 m round at the base and 27 m tall, and behind a wall."
+  },
+  {
+   "name": "The Cedar of Lebanon of Marques de la Cadena",
+   "species": "Cedrus libani",
+   "lat": 41.666148,
+   "lng": -0.871136,
+   "status": "blocked",
+   "why": "Privately owned, at the corner of Calle San Juan de la Pena and Marques de la Cadena in Arrabal. Named in the book's dedication as one of the trees saved by local pressure, which makes it a good story on someone else's land."
+  },
+  {
+   "name": "The Black Poplar of the Camino de Cantalobos",
+   "species": "Populus nigra",
+   "ficha": 41,
+   "lat": 41.633021,
+   "lng": -0.84261,
+   "status": "blocked",
+   "why": "Privately owned, in a market garden beside a shed on the Camino de Cantalobos (D. Eduardo Cenis per both the register and the Ordenanza). At 7 m round at the base it is the thickest trunk in the register, and it is in somebody's huerta."
+  },
+  {
+   "name": "The Mediterranean Hackberry of Parque Bruil, ficha 54",
+   "species": "Celtis australis",
+   "ficha": 54,
+   "lat": 41.649722,
+   "lng": -0.867366,
+   "status": "blocked",
+   "why": "Dead, and now gone entirely. This is the numbered ficha for the hackberry at the back of Parque Bruil. The tree dried out and was cut back, and in December 2017 the Ayuntamiento had the sculptor Jose Llorente carve the standing trunk and main limbs into figures of Aragonese fauna as a monument to biodiversity. The identification is certain because the city's own 2017 announcement quotes exactly this ficha's measurements, 13 m tall and a 16.30 m crown. The carved trunk was itself felled in July 2022 after insect rot made it unsafe, so there is nothing left to walk to. Two traps recorded here so nobody falls into them twice: Parque Bruil holds two registered hackberries, the book itself says so, and the survivor is the one this page publishes; and the best-looking hackberry photograph on Wikimedia Commons, File:Homenaje a la Biodiversidad Parque Bruil.jpg, is this dead carved trunk, which would have shipped had anyone approved it from its filename."
+  },
+  {
+   "name": "The registered arboledas of Zaragoza",
+   "species": "various",
+   "lat": null,
+   "lng": null,
+   "status": "blocked",
+   "why": "The book's second section registers 11 arboledas, tree groups rather than individuals: the holm oaks of the Carretera de Castellon, the honey locust avenues of Paseo Echegaray y Caballero and Calle Ramon Pignatelli, the chinaberries of Plaza San Francisco and Calle Franco y Lopez, the Canary palms around the Fuente de Neptuno in Parque Grande, three London plane groups (the Huerva between the Tercer Cinturon and the railway, the banks of the Canal Imperial, and the Paseo de los Bearneses in Parque Grande) and two poplar stands (behind the El Soto military club and around the Miguel Fleta fountain). All are stands or avenues with no single place to stand, so none is a collectible point. Kept because several contain individually remarkable trees that a later pass could single out, and because the Echegaray honey locusts are dated by the book to the 1890s."
+  }
+ ]
+}

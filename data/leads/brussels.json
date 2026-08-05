@@ -1,0 +1,201 @@
+{
+  "city": "Brussels",
+  "country": "Belgium",
+  "city_slug": "brussels",
+  "compiled": "2026-08-05",
+  "source": "heritage.brussels remarkable-tree register (582 entries, CC BY 4.0, imported to data/registers/brussels-arbres-remarquables.json), cross-read against the per-tree pages on sites.heritage.brussels and Brussels Environment's tree atlas woodwideweb.be.",
+  "context": "From the deepening pass that produced data/research/brussels-extra.json. The pass worked one cluster only: the Sablon quarter of Bruxelles-Ville, the densest point in the whole register at 45 registered trees inside a 400 metre radius. Six shipped, all in Parc d'Egmont. Everything else the pass touched is below. Leads failed only on our evidence bar, on the collectible-point test being borderline, or on the count. Blocked entries cannot ship as they stand.\n\nTwo things worth knowing before the next pass. The per-tree page on sites.heritage.brussels returns 403 to most fetchers but 200 to a plain curl with a browser user agent, and it carries an 'Etat sanitaire' health field that the exported open dataset does not, which is the only vitality check this register offers. And heritage.brussels states no licence on its photographs beyond a blanket site copyright, so the register's own images are not reusable however good they are.",
+  "leads": [
+    {
+      "register_id": "649",
+      "name": "The second Turner's Oak of Parc d'Egmont",
+      "species": "Quercus x turneri",
+      "girth_cm": 264,
+      "lat": 50.837435,
+      "lng": 4.356075,
+      "status": "lead",
+      "why": "Third thickest of its species in the region, 23 metres tall against its neighbour's 10, and on the same lawns as bru_011. Held back only because two Turner's oaks four hundred metres apart would read as one entry told twice. If Parc d'Egmont ever justifies a page of its own, this is the first addition."
+    },
+    {
+      "register_id": "646",
+      "name": "London Plane of Parc d'Egmont",
+      "species": "Platanus x hispanica",
+      "girth_cm": 367,
+      "lat": 50.83767,
+      "lng": 4.35572,
+      "status": "lead",
+      "why": "Second thickest tree in the park after the sycamore, but ranked only 98th of its species in the region, and the register's per-tree page carries no height. A good tree with nothing yet to say about it."
+    },
+    {
+      "register_id": "628",
+      "name": "Horse Chestnut of Parc d'Egmont",
+      "species": "Aesculus hippocastanum",
+      "girth_cm": 308,
+      "lat": 50.83757,
+      "lng": 4.35558,
+      "status": "lead",
+      "why": "90th of its species in the region and the only tree in the cluster whose heritage page failed to render its site block on fetch, so the site attribution is from the dataset alone. bru_010 already covers horse chestnut for Brussels."
+    },
+    {
+      "register_id": "645",
+      "name": "Oriental Plane of Parc d'Egmont",
+      "species": "Platanus orientalis",
+      "girth_cm": 272,
+      "lat": 50.83814,
+      "lng": 4.35634,
+      "status": "lead",
+      "why": "Named on the park's own information panel, 22 metres tall, 21st of its species in the region. Skipped only because bru_003, the Parc Leopold oriental plane, is the thickest of its species in the entire region and would make this one look like a repeat."
+    },
+    {
+      "register_id": "6359 / 635 / 6360 / 6361",
+      "name": "The beeches of Parc d'Egmont",
+      "species": "Fagus sylvatica",
+      "girth_cm": 285,
+      "lat": 50.837651,
+      "lng": 4.355933,
+      "status": "lead",
+      "why": "Brussels Environment's published Egmont walk stops at one beech with an enormous flared root plate and gives it register id 632, which does not exist in the 2026 open dataset at all. The four beeches that do exist in the park sit within 60 metres of the walk's coordinate and cannot be told apart from the description. Resolvable in one visit or one call to the region; not publishable until the id is settled, because a delisted id usually means a felled tree."
+    },
+    {
+      "register_id": "644",
+      "name": "The White Mulberries of the Passage de Milan gate",
+      "species": "Morus alba",
+      "girth_cm": 130,
+      "lat": 50.837489,
+      "lng": 4.35677,
+      "status": "lead",
+      "why": "Eighth thickest white mulberry in the region and a genuine story, that Belgium tried and failed to build a silk industry on this species about a century ago, but they stand as a pair flanking a gate rather than as one tree, and bru_009 already gives Brussels a mulberry. Fruit in July if the birds leave any."
+    },
+    {
+      "register_id": "638",
+      "name": "The pyramidal holly of Parc d'Egmont",
+      "species": "Ilex aquifolium 'Pyramidalis'",
+      "girth_cm": 140,
+      "lat": 50.837912,
+      "lng": 4.356373,
+      "status": "lead",
+      "why": "Second largest of its cultivar in the region and signposted on the park's own panel. A holly at 140cm girth is unusual, but it is a shrub-scale tree that will not read as a destination beside a 32 metre sycamore in the same park."
+    },
+    {
+      "register_id": "7112",
+      "name": "Kentucky Coffeetree of Parc d'Egmont",
+      "species": "Gymnocladus dioica",
+      "girth_cm": 73,
+      "lat": 50.837894,
+      "lng": 4.357281,
+      "status": "lead",
+      "why": "Fourth largest of its species in the region on a girth of only 73cm, which says how rare the species is here rather than how big this tree is. Too young to stand in front of; worth revisiting in a decade."
+    },
+    {
+      "register_id": "7111 / 7109 / 7110",
+      "name": "The 2019 additions to the Egmont inventory",
+      "species": "Sophora japonica, Fraxinus excelsior f. pendula, Gleditsia triacanthos var. inermis",
+      "girth_cm": 164,
+      "lat": 50.83777,
+      "lng": 4.35714,
+      "status": "lead",
+      "why": "Three trees surveyed in July 2019, all under 165cm, all ranked in the top thirty of their species in the region because those species are uncommon in Brussels. Real trees, thin stories, and the register gives no height for any of the three."
+    },
+    {
+      "register_id": "3426",
+      "name": "The Tree of Heaven of the Grand Sablon",
+      "species": "Ailanthus altissima",
+      "girth_cm": 342,
+      "lat": 50.840474,
+      "lng": 4.355506,
+      "status": "lead",
+      "why": "The best single lead left in this quarter and the one most worth someone's time. Ninth thickest of its species in the region, 19 metres tall with a nine metre clean trunk, standing on Brussels' antiques square, and legally protected: the most notorious invasive tree in Europe listed as a monument on the city's most expensive place. Measured in 2025, so it was certainly alive then. Held back for one reason only, that no source independent of heritage.brussels could be found for it in this pass, and our bar is two. A local paper piece on the Sablon's trees or the commune's own replanting file would close it."
+    },
+    {
+      "register_id": "3429",
+      "name": "The Turkish Hazel of the Grand Sablon",
+      "species": "Corylus colurna",
+      "girth_cm": 208,
+      "lat": 50.841,
+      "lng": 4.3557,
+      "status": "lead",
+      "why": "Eleventh of its species in the region, 17 metres tall with a 16 metre crown, recorded as fully healthy, and the register describes it as an isolated tree holding a central position in the landscape, which is exactly the collectible-point test passing. Same single-source problem as the ailanthus above. Note the register's coordinate for this one was not re-derived in this pass; take it from the dataset, not from here."
+    },
+    {
+      "register_id": "3427 / 3430",
+      "name": "Horse Chestnut and Caucasian Lime of the Grand Sablon",
+      "species": "Aesculus hippocastanum, Tilia x euchlora",
+      "girth_cm": 274,
+      "lat": 50.84046,
+      "lng": 4.35563,
+      "status": "lead",
+      "why": "Both on the square, both middling in their species rankings, both single-sourced. They would thicken a Sablon walk rather than justify one."
+    },
+    {
+      "register_id": "3423 / 3420",
+      "name": "The Silver Maple and Pagoda Tree of Place Jean Jacobs",
+      "species": "Acer saccharinum, Sophora japonica",
+      "girth_cm": 266,
+      "lat": 50.8353,
+      "lng": 4.35234,
+      "status": "lead",
+      "why": "A tiny square between the Sablon and the Palace of Justice, two registered trees, both described as holding a central position in the landscape. The silver maple's health is recorded as 'Defauts moyens', middling defects, which is the worst rating anywhere in this cluster and needs checking before it could ship. bru_008 already gives Brussels a pagoda tree."
+    },
+    {
+      "next_pass": true,
+      "name": "Where to deepen Brussels next",
+      "why": "The register's four walkable clusters hold 577 of its 582 trees, and this pass worked one corner of one of them. The three richest untouched sub-clusters, by count of registered trees within 400 metres: Parc Leopold and its slope, 41 trees, where bru_003 already stands alone and where a second and third entry would turn one pin into a walk. The Laeken and Osseghem parks in the north, 34 trees including a giant sequoia of 7.44 metres, which is the thickest tree in this export and still short of the 8.66 metre Parc de Woluwe sequoia that bru_005 already publishes, so that entry's 'largest tree in Brussels' claim survives. Worth knowing for the next pass: the 582-entry export is the LEGAL inventory only, a subset of the region's scientific inventory, and several trees brussels.json already cites, including the Woluwe sequoia at register id 2851, are absent from it. And the Uccle and Watermael belt in the south, 38 trees around 50.8103, 4.3845, which is the densest concentration of genuinely large oaks and beeches in the whole register."
+    }
+  ],
+  "blocked": [
+    {
+      "register_id": "3425",
+      "species": "Acer pseudoplatanus",
+      "locality": "Rue aux Laines 17",
+      "girth_cm": 256,
+      "latitude": 50.83831,
+      "longitude": 4.35478,
+      "reason": "The register's own environment field reads 'Arbre invisible de la voirie, en espace prive': private ground, invisible from the street. Hard rule 10."
+    },
+    {
+      "register_id": "7366",
+      "species": "Eucalyptus globulus",
+      "locality": "Rue de la Regence",
+      "girth_cm": 70,
+      "latitude": 50.83937,
+      "longitude": 4.3559,
+      "reason": "Recorded as 'en espace prive', and at 70cm girth and 6m it is a young tree in a private garden. Hard rule 10, and it would fail the bar anyway."
+    },
+    {
+      "register_id": "3428",
+      "species": "Aesculus hippocastanum",
+      "locality": "Rue des Sablons 9",
+      "girth_cm": 289,
+      "latitude": 50.84001,
+      "longitude": 4.35505,
+      "reason": "Registered against a private house number and only partly visible from the street; no evidence the ground is open to visitors."
+    },
+    {
+      "register_id": "5803",
+      "species": "Juglans regia",
+      "locality": "Rue Haute 132",
+      "girth_cm": 165,
+      "latitude": 50.83897,
+      "longitude": 4.35102,
+      "reason": "Registered against a private house number, only partly visible from the street. Same reason as above."
+    },
+    {
+      "register_id": "5854, 5852, 5857, 5862, 5855, 5861, 5864, 5851, 5867, 5868",
+      "species": "Tilia tomentosa, Acer pseudoplatanus, Aesculus hippocastanum, Acer platanoides, Tilia cordata, Ailanthus altissima, Aesculus flava",
+      "locality": "Square du Petit Sablon, Place du Petit Sablon",
+      "girth_cm": 347,
+      "latitude": 50.8395,
+      "longitude": 4.3569,
+      "reason": "Ten registered trees in the 1890 formal garden, and the register marks nearly all of them 'Plantation en alignement': they are the ranks framing the square's parterres, not individual destinations. No obvious place to stand at any one of them. Fails the collectible-point test, the same way the plane trees of La Rambla did."
+    },
+    {
+      "register_id": "3433, 3434, 3435",
+      "species": "Gleditsia triacanthos, Gleditsia triacanthos var. inermis, Tilia tomentosa",
+      "locality": "Site rue de la Regence, Rue de la Regence",
+      "girth_cm": 212,
+      "latitude": 50.8409,
+      "longitude": 4.35721,
+      "reason": "All three recorded as 'Plantation en massif', a mass planting on the street between the two Sablon squares. A group, not a point."
+    }
+  ]
+}
