@@ -3,9 +3,9 @@
   "country": "Spain",
   "status": "needs_curation",
   "intro": "Barcelona keeps its trees on two lists. The municipal Catalogue of Trees of Local Interest holds more than 200 specimens, but the Catalan government's rarer monumental designation belongs to only four trees in the whole city, all four growing in the same shaded ravine of the old botanical garden on Montjuic. Barcelona's oldest tree predates the city's own street grid: a 250-year-old holm oak now standing in a garden its neighbours spent three years fighting to save. Two more grew up inside Gaudi's Park Guell before he built around them. None of them need a ticket.",
-  "meta_description": "Barcelona ranks trees twice: 200-plus of local interest, four monumental. Meet the 250-year-old oak that predates the city grid, and fifteen more.",
+  "meta_description": "Barcelona ranks trees twice: 200-plus of local interest, four monumental. Meet the 250-year-old oak that predates the city grid, and twenty-one more.",
   "question_answer": "The oldest tree in Barcelona whose age has actually been measured is a holm oak on Carrer de l'Encarnacio in the Vila de Gracia neighbourhood, dated by dendrochronology to around 250 years old. It already appears on city maps from 1845, when Gracia was still farmland, and stands in a small garden opened to the public in 2021 after a three-year campaign to stop the site being demolished. One tree may be older: the city register dates a wild olive in Park Guell to 1771, but that figure is an estimate nobody has checked against the wood.",
-  "question_meta": "Barcelona's oldest measured tree is a 250-year-old holm oak in Gracia. Its story, its exact location, and fifteen more remarkable trees.",
+  "question_meta": "Barcelona's oldest measured tree is a 250-year-old holm oak in Gracia. Its story, its exact location, and twenty-one more remarkable trees.",
   "question_context": "The holm oak on Carrer de l'Encarnacio predates the neighbourhood that grew up around it. Gracia was a scatter of farmhouses when the tree was young, and it appears on the city's 1845 maps standing on rural land known as the Pla del Bonpa, tied to a farmhouse called Can Vidalet. Dendrochronologists, tree-ring specialists, later dated it to roughly 250 years old, making it the oldest tree in Barcelona whose age anyone has actually measured. The tree nearly did not survive to be dated: a development plan for the historic Casetes de l'Encarnacio around it triggered a three-year local campaign, and the oak was formally catalogued as a Tree of Local Interest in 2019 specifically to stop the bulldozers. The garden around it opened to the public in April 2021, though only the facades of the original houses could be saved. For grandeur over paperwork, Barcelona's biggest tree by volume is a different story entirely: a Rehder's wingnut in the botanical garden's Sot de l'Estany ravine, reaching roughly 40 metres in a hole in the ground nobody visits. Getting to the oak: Fontana station on the L3, then an eight minute walk into Vila de Gracia.",
   "faq": [
     {
@@ -188,7 +188,7 @@
       },
       "curation_status": "ai_generated",
       "notes": "Height (~40m) is the municipal catalogue's own estimate, flagged there as uncertain due to measurement difficulty in the confined ravine; reported here as an estimate rather than a precise figure. Pin corrected 2026-07-26: the previous coordinates (41.3618, 2.1587) actually sat about 830m outside the garden's real bounds, not just an imprecise entrance estimate but a genuine error. OpenStreetMap carries this exact tree from Barcelona's own protected-tree catalogue, tagged \"Arbres d'interes local de Barcelona. Jardi Botanic Historic. Sector de l'estany\", species Pterocarya x rehderiana, which names both the right garden and the right ravine sector. Confirmed on that match.",
-      "location_precision": "confirmed"
+      "location_precision": "approximate"
     },
     {
       "id": "bcn_006",
@@ -558,6 +558,210 @@
       "curation_status": "flagged",
       "notes": "MERGE BLOCKER, do not publish without a decision. The register's planting year of 1771 (register_id 99400454989, catalogue number 0117-06-96, catalogued 1996) makes this tree 255 years old, older than the 250-year holm oak that barcelona.json's intro, question_answer, question_context and first FAQ all present as the oldest tree in Barcelona. The two claims cannot both stand unqualified on the same site. The distinction the story draws is real and defensible: the oak was ring-dated by dendrochronologists, the olive carries an unsupported register estimate. But merging this tree means either rewording the oldest-tree copy to say 'the oldest tree in Barcelona whose age has actually been measured', or holding the tree back. That is a human call, not a run's. FLAGGED for the age, which is single-sourced and unmeasured; hence the deliberately wide age_min. Species field uses the canonical 'Olive (Olea europaea)' per hard rule 9 so it groups with the other 13 olives on the site; the register records it as Olea europaea var. sylvestris and the story says it is the wild form. Dimensions differ between the register (17 m, girth 2.9 m, crown 21 m) and bcnsostenible (14 m, girth 1.6 m, crown 13 m), a very wide disagreement inside one catalogue, so ranges are used and the girth is left out. Pin confirmed three ways: register 41.414909/2.154906, OSM node 4618688164, and the EXIF GPS of the Commons photograph at 41.414910/2.154910. Photo viewed directly before approval: full olive crown above a Park Guell stone wall, daylight, colour, two people in frame for scale, tree occupies the centre band.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "bcn_017",
+      "name": "The Pica-Pica Tree of the Teatre Grec",
+      "species": "Norfolk Island Hibiscus (Lagunaria patersonii)",
+      "age_estimate": "about 103 years",
+      "age_min": 100,
+      "age_max": 106,
+      "best_time": {
+        "months": [
+          6
+        ],
+        "label": "June, when the whole crown fills with thousands of pink mallow flowers",
+        "kind": "flowers"
+      },
+      "location": {
+        "address": "Jardins del Teatre Grec, Passeig de Santa Madrona 38, 08038 Barcelona",
+        "latitude": 41.3698,
+        "longitude": 2.15944,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "story": "Barcelona planted this tree for its flowers and got itching powder with them. The lagunaria is known across Catalonia as the pica-pica, the scratch-scratch, because the inside of its seed capsules is packed with fine bristles that break off into skin and stay there. The flowers are the reason anyone forgives it. Once a year the whole crown fills with thousands of pink blooms shaped like mallows, which is a strange thing to find fifteen metres up, because flowers like that normally belong to weeds on a roadside verge. The city's own assessment says no other lagunaria in Barcelona, and fewer than half a dozen have ever been planted here, has grown into anything close to this shape. It went into the ground in 1923, while the whole hillside was being rebuilt from quarry workings into gardens for the 1929 International Exposition, and it now stands to the left of the amphitheatre below the restaurant terrace with a trunk 2.4 metres round. The species comes from Norfolk Island and Lord Howe Island in the Pacific, where it grows on sea cliffs. Time the visit: the gardens shut to the public from 15 June to 7 August for the festival that fills the theatre.",
+      "verified_sources": [
+        "https://www.barcelona.cat/es/que-hacer-en-bcn/parques-y-jardines/arboles-de-interes-local/lagunaria-dels-jardins-del-teatre-grec-99400455071",
+        "https://bcnsostenible.cat/es/web/punt/lagunaria-jardins-del-teatre-grec-arbre-dinteres-local",
+        "https://www.catacultural.com/jardins-del-teatre-grec/",
+        "https://www.openstreetmap.org/node/4492855030",
+        "https://guia.barcelona.cat/es/detall/jardins-del-teatre-grec_99329085040.html"
+      ],
+      "access": "Free, public garden. Open 08.00 to 21.00 from 1 April to 31 October and 08.00 to 19.00 from 1 November to 31 March. Closed to the public entirely from 15 June to 7 August for the Grec festival.",
+      "transport": "Poble Sec (Metro L3), 10 min walk uphill, or Espanya (Metro L1/L3) and the Montjuic escalators",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Lagunaria_del_teatre_grec_P1250863.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Pere Lopez Brosa (pere prlpz), via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Municipal register (catalogue number 0010-03-93, catalogued 1993, planting year 1923) plus catacultural.com, which is independent of the city and places the tree precisely inside the garden ('a l'esquerra de l'amfiteatre, a sota del restaurant') and gives the pica-pica name and the reason for it. Pin confirmed: the register coordinate and OSM node 4492855030, which carries the same catalogue as a surveyed node tagged Lagunaria patersonia, are the same point. Dimensions differ between the two municipal renderings, 18 m tall / girth 2.4 m / crown 20 m in the register against 15 m / 2.02 m / crown 10 m on bcnsostenible; the story uses only the girth, which is the closer of the two pairs. The two renderings also give different addresses for the same tree, Passatge de Martras 26 and Passeig de Santa Madrona 38; both are entrances to the same garden. Species spelling: the register writes patersonia, the corpus canonical name is Lagunaria patersonii, used here per hard rule 9. best_time is June only, deliberately, because the flowering runs into July and the garden is shut from 15 June; a badge that lights up while the gate is locked would be a broken promise. Photo viewed directly before approval: full tree in daylight, colour, trunk and crown both readable, tree fills the frame and holds the centre band, people on a bench at the left edge for scale.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bcn_018",
+      "name": "The Bunya Pine of the Teatre Grec",
+      "species": "Bunya Pine (Araucaria bidwillii)",
+      "age_estimate": "about 106 years",
+      "age_min": 103,
+      "age_max": 109,
+      "location": {
+        "address": "Jardins del Teatre Grec, Passatge de Martras 20, 08038 Barcelona",
+        "latitude": 41.37039,
+        "longitude": 2.15927,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "story": "A bunya pine drops cones the size of a football that can weigh ten kilograms, from seventeen metres up. In Queensland, where the species is native, park keepers rope off the ground under them in season and put out warnings. Barcelona's specimen has been doing this quietly in the Teatre Grec gardens since about 1920, on the path just before the viewpoint, and the city catalogued it in 2011 as probably one of very few anywhere in town. Araucaria bidwillii is the last species left in its own section of the genus, a survivor of a lineage already ancient when the Jurassic ended, and it is built like nothing else on this hillside: a straight column with branches held out in flat symmetrical whorls, each one lined with stiff triangular leaves sharp enough to draw blood. In its homeland it reaches fifty metres. The seeds inside those cones are edible and starchy, and they are in no hurry, taking three to six months underground before anything appears above it. Look up rather than out. The crown is only about eight metres across, and it is the silhouette of the thing against the sky, all right angles where every other tree here has curves, that makes people stop on the path.",
+      "verified_sources": [
+        "https://www.barcelona.cat/en/what-to-do-in-bcn/culture/detall/arbre-d-interes-local-araucaria-d-australia-jardins-del-teatre-grec-99400455033",
+        "https://bcnsostenible.cat/es/web/punt/bunya-bunya-jardins-del-teatre-grec-arbre-dinteres-local",
+        "https://www.catacultural.com/jardins-del-teatre-grec/",
+        "https://www.openstreetmap.org/node/4506691425",
+        "https://www.inaturalist.org/observations/282020003"
+      ],
+      "access": "Free, public garden. Open 08.00 to 21.00 from 1 April to 31 October and 08.00 to 19.00 from 1 November to 31 March. Closed to the public entirely from 15 June to 7 August for the Grec festival.",
+      "transport": "Poble Sec (Metro L3), 10 min walk uphill, or Espanya (Metro L1/L3) and the Montjuic escalators",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Municipal register (catalogue number 0154-03-11, catalogued 2011, planting year 1920) plus two sources independent of it: catacultural.com, which places the tree inside the garden ('abans d'arribar al mirador'), and iNaturalist observation 282020003 from May 2025, an identified Araucaria bidwillii 12 m from this pin. Pin confirmed three ways: register 41.37038/2.15920, OSM node 4506691425 at 6 m, iNaturalist at 12 m. Dimensions differ between the municipal renderings, 17 m tall and girth 1.4 m in the register against 16 m and 1.14 m on bcnsostenible; the story quotes neither as a precise figure. The Jurassic lineage, the fifty-metre wild height, the edible seeds and the three-to-six-month germination all come from the municipal record's own species note. No photo used: the only image found in place is iNaturalist observation 282020003, which is CC BY-NC and therefore outside the licences this project accepts. Honest gap.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bcn_019",
+      "name": "The Coral Tree of the Laribal Path",
+      "species": "Coral Tree (Erythrina corallodendron)",
+      "age_estimate": "about 103 years",
+      "age_min": 100,
+      "age_max": 106,
+      "location": {
+        "address": "Path between the Jardins del Teatre Grec and the Jardins de Laribal, Passeig de Santa Madrona, 08038 Barcelona",
+        "latitude": 41.36939,
+        "longitude": 2.15861,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "story": "Barcelona cannot decide what this tree is. The city's own tree pages call it Erythrina corallodendron and say it is the only one of its kind in any garden in the city. The city's open data file calls it Erythrina falcata. The surveyor who mapped it for OpenStreetMap wrote down Erythrina lysistemon. Three names for one trunk, and all three are coral trees, a genus that flowers in blazing red spikes and has kept botanists arguing for two centuries. What nobody disputes is the tree. It stands on the path running between the Teatre Grec gardens and the Laribal gardens, planted around 1923, and it has thrown a crown twenty metres wide over a walkway barely three metres across, so the path goes underneath it rather than around. The trunk is 2.6 metres round and leans out over the slope. The city credits the placement to Jean-Claude Nicolas Forestier, the French landscape engineer who terraced this side of Montjuic for the 1929 Exposition, and notes that the tree was given an ideal spot and duly took advantage of it. Whatever it turns out to be, there is only one here.",
+      "verified_sources": [
+        "https://www.bcnsostenible.cat/es/web/punt/eritrina-jardins-del-teatre-grec-arbre-dinteres-local",
+        "https://www.catacultural.com/jardins-del-teatre-grec/",
+        "https://www.openstreetmap.org/node/4492857600",
+        "https://commons.wikimedia.org/wiki/Category:Eritrina_del_Teatre_Grec"
+      ],
+      "access": "Free. The tree stands on the public path linking the Teatre Grec gardens to the Laribal gardens. The Teatre Grec gardens themselves close from 15 June to 7 August for the festival; the Laribal side stays open.",
+      "transport": "Poble Sec (Metro L3), 12 min walk uphill, or Espanya (Metro L1/L3) and the Montjuic escalators",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Erythrina_corallodendron_als_jardins_del_Teatre_Grec_P1250860.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Pere Lopez Brosa (pere prlpz), via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "flagged",
+      "notes": "FLAGGED for the species, which is the point of the story rather than a hidden weakness. Three sources give three names: barcelona.cat and bcnsostenible (two renderings of the municipal record, catalogue number 0023-03-93, catalogued 1993) say Erythrina corallodendron; our import of the city's open data file says Erythrina falcata; OSM node 4492857600 says Erythrina lysistemon. The Commons category created for this tree is filed under corallodendron too. The species field follows the municipal record and the Commons category, which is the majority and the only one carrying a descriptive assessment, and the story states the disagreement out loud rather than picking quietly. Existence, position and age are not in doubt. Second source independent of the city: catacultural.com, which describes 'un exemplar de grans dimensions al cami que comunica els Jardins del Teatre Grec amb els Jardins Laribal' and confirms its protected status. Pin approximate: the register gives 41.36928/2.15860, OSM node 4492857600 gives 41.36939/2.15861 (12 m), bcnsostenible gives 41.36953/2.15909 (about 50 m from the register). The OSM node is used because it is the surveyed one, but three municipal-derived positions spread over 50 m is not a confirmed pin. Dimensions differ too: 20 m tall and girth 2.7 m in the register against 15 m and 2.6 m on bcnsostenible. The Forestier attribution is from the municipal assessment text. No best_time set: with the species unresolved, the flowering month cannot be stated honestly. Photo viewed directly before approval: the low wide crown over the path, trunk and main limbs readable, daylight, colour, tree fills the frame and holds the centre band. Slightly backlit but not dark.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bcn_020",
+      "name": "The Tipu Tree of Placa Carles Buigas",
+      "species": "Tipu Tree (Tipuana tipu)",
+      "age_estimate": "about 101 years",
+      "age_min": 98,
+      "age_max": 104,
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "label": "late May into June, when the crown turns orange-yellow and then drops the lot onto the paving",
+        "kind": "flowers"
+      },
+      "location": {
+        "address": "Placa de Carles Buigas 8, 08038 Barcelona",
+        "latitude": 41.37208,
+        "longitude": 2.15334,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "story": "The tipu tree is one of the commonest trees on Barcelona's streets, and this is the one the city measures the others against. Its own record calls this possibly the largest by trunk perimeter of any tipu tree it knows of in the city, at 3.3 metres round, and dates it to 1925, which puts it in the first wave of plantings that brought the species over from Bolivia and northern Argentina. The experiment worked. Tipuanas turned out to handle Barcelona's heat, its drought and its pavements better than almost anything else on offer, and the city kept planting them until they became ordinary. Anyone who parks under one in summer knows the other half of that decision: tipuanas host sap-sucking insects that rain a fine sticky mist onto whatever sits below. This one stands at the foot of Montjuic a few steps from the Magic Fountain, throwing a 23 metre crown over a square that most visitors cross on their way somewhere else without once looking up. In late May and June it turns orange-yellow with pea-shaped flowers, then drops them, and for about a week the paving is the same colour as the tree.",
+      "verified_sources": [
+        "https://guia.barcelona.cat/es/detall/tipuana-de-la-placa-carles-buigas_99400661117.html",
+        "https://www.bcnsostenible.cat/web/punt/tipuana-tipu-de-la-placa-carles-buigas",
+        "https://ajuntament.barcelona.cat/sants-montjuic/es/detall/tipuana-de-la-placa-carles-buigas_99400661117"
+      ],
+      "access": "Free, public square",
+      "transport": "Espanya (Metro L1/L3), 8 min walk up Avinguda Maria Cristina",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "FLAGGED twice. First for the age: everything traceable about the 1925 planting is a rendering of the same municipal record (register_id 99400661117), and no independent source was found. Second for the pin: the two municipal renderings disagree badly. The register and guia.barcelona give Placa de Carles Buigas 8 at 41.37208/2.15334; bcnsostenible gives Passeig de les Cascades 1 at 41.37007/2.15413, about 250 m away up the hill. Both addresses sit on the same terraced slope above Avinguda Maria Cristina and there is no OSM node for this tree to break the tie (Overpass returns only the neighbouring Aesculus of the same square, node 6924151985, which matches its own register coordinate exactly, so the register's geocoding is not systematically wrong here). The register coordinate is used because it matches the register's own address, and the precision is marked approximate. Third oddity worth recording: bcnsostenible describes the tree as 'una de les Tipuana tipu mes grans de la ciutat de Barcelona, malgrat no estar catalogada', not catalogued, while the register carries it with a register_id. The superlative in the story is deliberately hedged and species-limited per hard rule 8, so it does not collide with the girth claim already made for the Ciutadella casuarina (bcn_011). The honeydew is a well documented property of the species in Barcelona and is stated as a species trait, not as a measurement of this tree. No open-licence photograph found on Commons, iNaturalist or Flickr this pass.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bcn_021",
+      "name": "The Ash of the Sot de l'Estany",
+      "species": "Narrow-Leaved Ash (Fraxinus angustifolia)",
+      "age_estimate": "planting date never recorded",
+      "location": {
+        "address": "Sot de l'Estany, Jardi Botanic Historic, Av. dels Muntanyans, 08038 Barcelona",
+        "latitude": 41.366939,
+        "longitude": 2.151886,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "story": "Three of the four trees the Catalan government calls monumental in Barcelona are foreign rarities. This one is a narrow-leaved ash, a tree that grows along half the rivers in Spain, and it beat all of them for height. At 29 metres it is the tallest of its species measured anywhere in Catalonia according to the government's own file, and it got there by growing in a hole. The Sot de l'Estany is an abandoned quarry pit inside the historic botanical garden, cut into the flank of Montjuic, and its walls hold cool damp air well enough to sit up to four degrees below the temperature outside. Anything planted at the bottom behaves as though it were somewhere much wetter and a long way north. This ash took that microclimate and went straight up, ending with a 2.5 metre trunk under a crown only 15 metres across, the proportions of a forest tree rather than a park one. The Generalitat declared it monumental on 2 April 2025 along with three neighbours, all four standing within about thirty metres of each other at the bottom of the same pit. Nobody wrote down when it was planted, and nobody has counted its rings.",
+      "verified_sources": [
+        "https://museuciencies.cat/es/quatre-exemplars-del-jardi-botanic-historic-declarats-arbres-monumentals/",
+        "https://ca.wikipedia.org/wiki/Llista_d%27arbres_monumentals_de_Catalunya",
+        "http://parcsnaturals.gencat.cat/ca/coneixeu-nos/arbres-monumentals/am_arbres_monumentals_fitxes/barcelones/freixe-montjuic/",
+        "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest"
+      ],
+      "access": "Paid entry to the Jardi Botanic Historic",
+      "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "FLAGGED for having no age at all. The city register's planting-year field is empty and the Generalitat's file gives none either, so no age_min or age_max is set and the age_estimate says so plainly rather than inventing a range from the neighbours (the green ash beside it, bcn_006, is dated 1924). Everything else is unusually well sourced for Barcelona, because two separate authorities cover it: the city register (register_id 99400637941, catalogued 2015, 29 m tall, girth 2.5 m, crown 15 m) and the Generalitat de Catalunya, which registers it as the Freixe de Montjuic, code MA-13.931.02, at 29.0 x 2.5 x 15.4 m and declared it monumental on 2 April 2025. The tallest-in-Catalonia claim and the up-to-four-degrees microclimate figure both come from the Museu de Ciencies Naturals de Barcelona's own account of the declaration, which is the garden's operator and independent of the tree register. Pin approximate, and deliberately so: the city register gives 41.366868/2.152084 and the Generalitat gives 41.366939/2.151886, 18 m apart, and the neighbouring monumental sycamore (bcn_022) stands about 7 m from this point. An 18 m uncertainty cannot tell the two apart on the ground, so the pin gets someone into the right corner of the ravine and the garden's own labels do the rest. Photo: the Generalitat publishes File:Freixe de Montjuic.jpg on Commons under its attribution-gencat licence, but it was viewed directly and rejected. The frame is a dark shaded ravine in which an araucaria takes the foreground and no ash is identifiable, which fails the Cadiz standard on every count. Honest gap.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bcn_022",
+      "name": "The Sycamore of the Sot de l'Estany",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "planting date never recorded",
+      "location": {
+        "address": "Sot de l'Estany, Jardi Botanic Historic, Av. dels Muntanyans, 08038 Barcelona",
+        "latitude": 41.366884,
+        "longitude": 2.151851,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "story": "Thirty metres of tree on a trunk 1.38 metres round. That is the shape of something that spent its whole life climbing towards a patch of sky, and it is why this sycamore is the odd one out among Barcelona's four monumental trees. Acer pseudoplatanus is the workhorse maple of northern and central Europe, the tree that lines streets in Vienna and colonises every gap in Britain. In Barcelona it barely holds on. The summers are too long and too dry, and it is rare enough here that the Catalan government named this one monumental on 2 April 2025 partly for being ordinary somewhere else. It lives in the Sot de l'Estany, a quarry pit inside the historic botanical garden that keeps cool air the way a cellar does, several degrees below the hillside above it. That is the whole explanation. Take a northern tree, drop it into the one cold damp hole on a Mediterranean mountain, and it grows to a height it would be pleased with in Bavaria, on a trunk that stayed slender because there was never any reason to spread sideways. Nobody recorded when it went in.",
+      "verified_sources": [
+        "https://museuciencies.cat/es/quatre-exemplars-del-jardi-botanic-historic-declarats-arbres-monumentals/",
+        "https://ca.wikipedia.org/wiki/Llista_d%27arbres_monumentals_de_Catalunya",
+        "http://parcsnaturals.gencat.cat/ca/coneixeu-nos/arbres-monumentals/am_arbres_monumentals_fitxes/barcelones/platan-fals-montjuic/",
+        "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest"
+      ],
+      "access": "Paid entry to the Jardi Botanic Historic",
+      "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "FLAGGED for having no age. The city register's planting year reads 'Per determinar' and the Generalitat's file gives none, so no age_min or age_max is set. Two independent authorities cover the tree: the city register (register_id 99400637939, catalogued 2015, 30 m tall, girth 1.4 m, crown 12 m) and the Generalitat de Catalunya, which registers it as the Platan Fals de Montjuic, code MA-13.931.04, at 30.0 x 1.38 x 12.0 m, declared monumental 2 April 2025. The rarity-in-Barcelona point comes from the Museu de Ciencies Naturals account of the declaration. Pin approximate: city register 41.36677/2.152069 against the Generalitat's 41.366884/2.151851, 22 m apart, and the monumental ash (bcn_021) stands about 7 m away. See the note on bcn_021: the pin puts a visitor in the right corner of the ravine, not on the exact trunk. PHOTO PROBLEM WORTH KEEPING. The Generalitat publishes File:Platan Fals de Montjuic.jpg on Commons under attribution-gencat, sourced from its own monumental-tree file for this tree. It was viewed directly and NOT used, because the tree in the frame has pinnate compound leaves, which is an ash, not a maple; Acer pseudoplatanus has palmate lobed leaves. Either the file is mislabelled or the photographer shot the wrong trunk in a ravine where the ash stands seven metres away. Recording it rather than acting on it: the identification of the tree itself rests on two official registers, not on this photograph.",
+      "location_precision": "approximate"
     }
   ],
   "oldest_tree_id": "bcn_001"

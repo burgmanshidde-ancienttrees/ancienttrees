@@ -3,7 +3,7 @@
   "country": "Spain",
   "city_slug": "barcelona",
   "updated": "2026-08-05",
-  "note": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere. leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason.",
+  "note": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere. leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason. Extended 2026-08-05 by the second deepening pass (data/research/barcelona-extra-2.json, the Montjuic walk): ten leads and five blocked entries added from the Sants-Montjuic screen, and the Lagunaria and the Eritrina of the Teatre Grec removed from leads because they published as bcn_017 and bcn_019.",
   "leads": [
     {
       "name": "Freixe de fulla estreta del Jardi Botanic Historic",
@@ -93,26 +93,6 @@
       "why": "An avocado tree 17 m tall in a Les Corts square is a good story, but 1945 makes it 81 years, under the bar, and its 0.8 m girth is slight. 465 m from bcn_007, so it would join that walk if the age bar ever softens.",
       "register_id": 99400455082,
       "register_notes": "Public. OSM node 4506776546 confirms the position."
-    },
-    {
-      "name": "Lagunaria dels jardins del Teatre Grec",
-      "species": "Lagunaria patersonia",
-      "lat": 41.369803,
-      "lng": 2.159438,
-      "status": "lead",
-      "why": "1923, 103 years, girth 2.4 m, crown 20 m, on public ground in the Teatre Grec gardens. Held only because Montjuic already carries two entries and this pass spent its budget on Ciutadella. A good first pick for the next Montjuic pass, together with the Erythrina below, which would make a real Montjuic walk instead of two trees behind one gate.",
-      "register_id": 99400455071,
-      "register_notes": "OSM node 4492855030 confirms the position."
-    },
-    {
-      "name": "Eritrina dels jardins del Teatre Grec",
-      "species": "Erythrina falcata",
-      "lat": 41.36928,
-      "lng": 2.158602,
-      "status": "lead",
-      "why": "1923, girth 2.7 m, 20 m crown, public, and a species that flowers hard enough to carry a best_time. Same reason as the Lagunaria: saved for a Montjuic pass. Note the register's units field is empty for this entry, so check it is one tree and not a group before writing.",
-      "register_id": 99400455020,
-      "register_notes": "OSM node 4492857600 records the species as Erythrina lysistemon rather than falcata; resolve that before publishing."
     },
     {
       "name": "Huingan del carrer Joaquim Blume",
@@ -222,6 +202,100 @@
       "lng": 2.12075,
       "status": "lead",
       "why": "On the university law faculty grounds. The campus is open in practice but the register does not say so, and the entry is undated. Sits inside the Pedralbes cluster above, so resolve it with that pass."
+    },
+    {
+      "name": "Huingan del carrer Joaquim Blume",
+      "species": "Schinus longifolia (register) / Schinus polygama (OpenStreetMap)",
+      "lat": 41.37205,
+      "lng": 2.15539,
+      "status": "lead",
+      "why": "Species dispute, and it is the only thing holding this back. The city register says Schinus longifolia, an Argentine species; OSM node 4506714524, surveyed from the same catalogue, says Schinus polygamus; and huingan, the common name the city itself uses, is the Chilean name for S. polygama. With the build now failing on species naming, shipping a tree under a contested binomial is not worth it. Everything else is fine: 1916, public, on the Montjuic walk 200 m from the Teatre Grec gardens, and the municipal record calls it a botanical rarity with only one other specimen in the whole city, larger, in the Jardi d'Aclimatacio. Resolve the species with one look at the leaves in a photograph and this ships.",
+      "register_id": 99400454952,
+      "register_notes": "Girth 1.6 m, 8 m tall, crown 9 m. Public. Pin would be confirmed: register 41.37211/2.15533 and OSM node 4506714524 are 9 m apart."
+    },
+    {
+      "name": "Araucaria de l'avinguda Francesc Ferrer i Guardia",
+      "species": "Araucaria heterophylla",
+      "lat": 41.36966,
+      "lng": 2.14873,
+      "status": "lead",
+      "why": "1920 and 24 m tall, which would make it a good sixth stop on the Montjuic walk, but it has no second source of any kind. It is a recent catalogue entry with no bcnsostenible page, no guia.barcelona page, no OSM node within 400 m and an empty ownership field, so neither the age, the position nor the public access can be corroborated. Everything rests on one line in the open data file.",
+      "register_id": 99400728987,
+      "register_notes": "Girth 2 m, 24 m tall, crown 14 m. Ownership field blank."
+    },
+    {
+      "name": "Grevillea dels jardins dels Drets Humans",
+      "species": "Grevillea robusta",
+      "lat": 41.36127,
+      "lng": 2.13668,
+      "status": "lead",
+      "why": "The largest untouched single tree left in the register: girth 4.1 m and 32 m tall, on public ground. Undated, which is the only reason it is here, and it sits 1.4 km south of the botanical garden in La Marina de Port, off the Montjuic walk. A silky oak that size would carry a page on its own if a date or a second source turns up.",
+      "register_id": 99400454955,
+      "register_notes": "Crown 27 m. Ownership Public. Jardins dels Drets Humans."
+    },
+    {
+      "name": "Eritrina dels jardins Mossen Costa i Llobera",
+      "species": "Erythrina caffra",
+      "lat": 41.36958,
+      "lng": 2.17231,
+      "status": "lead",
+      "why": "Girth 3 m and a 20 m crown, public, in the free cactus garden on the sea side of Montjuic, which is a real destination in its own right. Undated in the register and no second source found this pass. The obvious anchor for a second Montjuic walk on the Miramar side, together with the Iuca filifera below.",
+      "register_id": 99400728992
+    },
+    {
+      "name": "Iuca filifera dels jardins de Mossen Costa i Llobera",
+      "species": "Yucca filifera",
+      "lat": 41.36828,
+      "lng": 2.17177,
+      "status": "lead",
+      "why": "Undated, and a yucca is a marginal call as a collectible tree. Kept because it stands beside the Erythrina caffra above in the same free garden and the pair would make that side of the hill worth a walk.",
+      "register_id": 99400761023
+    },
+    {
+      "name": "Carpi del jardi Botanic Historic",
+      "species": "Carpinus betulus",
+      "lat": 41.36701,
+      "lng": 2.15198,
+      "status": "lead",
+      "why": "1924, 20 m tall, in the same ravine as bcn_005, bcn_006, bcn_021 and bcn_022. Ownership reads Privat, which here means the museum owns the land rather than that the gate is shut, the same as bcn_006. Held purely on count: five entries in one quarry pit behind one paid gate is too many.",
+      "register_id": 99400455031,
+      "register_notes": "Girth 1.2 m, crown 13 m. Catalogued and mapped as OSM node 6924148786, 20 m from the register coordinate."
+    },
+    {
+      "name": "Alvocater del Teatre Lliure",
+      "species": "Persea americana",
+      "lat": 41.37044,
+      "lng": 2.15713,
+      "status": "lead",
+      "why": "1946, so 80 years, under the bar. An avocado tree outside a theatre on the Montjuic walk is a good story waiting for the age rule to soften. OSM node 4203274163 confirms the position.",
+      "register_id": 99400455081
+    },
+    {
+      "name": "Acacia del Japo del carrer Guardia Urbana",
+      "species": "Styphnolobium japonicum",
+      "lat": 41.37137,
+      "lng": 2.15443,
+      "status": "lead",
+      "why": "On the Montjuic walk between the Teatre Grec and Placa Carles Buigas, girth 2.3 m and 20 m tall, but the register's age field reads 'En estudi', under study. No date, no page.",
+      "register_id": 99400761024
+    },
+    {
+      "name": "Melaleuca dels jardins de Petra Kelly",
+      "species": "Melaleuca armillaris",
+      "lat": 41.36523,
+      "lng": 2.16176,
+      "status": "lead",
+      "why": "Undated, 4 m tall and a 1.88 m girth, which is a broad low shrub rather than a tree. Recorded for completeness.",
+      "register_id": 99400680104
+    },
+    {
+      "name": "Lledoner dels jardins dels Drets Humans",
+      "species": "Celtis australis",
+      "lat": 41.36007,
+      "lng": 2.13725,
+      "status": "lead",
+      "why": "Girth 2.9 m, public, undated. Sits 130 m from the Grevillea above, so the two would open a small walk in La Marina de Port if either gets a date.",
+      "register_id": 99400728989
     }
   ],
   "blocked": [
@@ -463,6 +537,51 @@
       "lng": null,
       "status": "blocked",
       "why": "Multi-unit entry on a private Pedralbes plot."
+    },
+    {
+      "name": "Bellaombres dels jardins de Miramar",
+      "species": "Phytolacca dioica",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "why": "Non-collectible point: 32 units registered as one entry.",
+      "register_id": 99400455036
+    },
+    {
+      "name": "Platans dels jardins de Can Farrero",
+      "species": "Platanus x acerifolia",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "why": "Non-collectible point: 20 units.",
+      "register_id": 99400454965
+    },
+    {
+      "name": "Washingtonies de la carretera de Miramar",
+      "species": "Washingtonia robusta",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "why": "Non-collectible point: six palms lining a road.",
+      "register_id": 99400454981
+    },
+    {
+      "name": "Washingtonies dels jardins de Can Farrero",
+      "species": "Washingtonia robusta",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "why": "Non-collectible point: four units.",
+      "register_id": 99400454988
+    },
+    {
+      "name": "Xicrandes dels Jardins de Miramar",
+      "species": "Jacaranda mimosifolia",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "why": "Non-collectible point: two units under one entry and one coordinate.",
+      "register_id": 99400728977
     }
   ]
 }
