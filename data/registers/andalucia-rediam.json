@@ -1,0 +1,6754 @@
+{
+ "source": "REDIAM, Inventario de arboles y arboledas singulares de Andalucia (Andalusia's register of singular trees)",
+ "endpoint": "https://portalrediam.cica.es/descargas/ (eight province KML files, arb_sing_<province>.kml)",
+ "licence": "CC BY 4.0",
+ "licence_proof": "The dataset's own metadata record (GeoNetwork uuid c5d37ec9-a857-42b2-a8d2-2e0d4b947a4e, 'Inventario de arboles y arboledas singulares de Andalucia') carries the licence 'Creative Commons Attribution 4.0 International Public License (CC BY 4.0)'. The Junta mixes CC BY, CC BY-NC and CC BY 3.0 across its portal, so this proof covers this dataset only.",
+ "country": "Spain",
+ "attribution": "REDIAM, Junta de Andalucia",
+ "fetched": "2026-08-05",
+ "scope": "Individual singular trees only (arb_sing_*). The companion groves layer (arbda_sing_*) is deliberately not imported: a grove is not a collectible point.",
+ "caveat": "Each entry links to an official PDF sheet with species, dimensions and history, which is the verification path. The register carries no vitality field, so whether a tree still stands is a per-tree check. The register says singular, not that it is worth the walk.",
+ "entries": [
+  {
+   "id": "rediam_502",
+   "name": "Acacia del Cortijo de Barrionuevo",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.833786,
+   "longitude": -2.935782
+  },
+  {
+   "id": "rediam_586",
+   "name": "Acerolo del Cortijo de la Balsa Alta",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_586.pdf",
+   "latitude": 37.701633,
+   "longitude": -2.093767
+  },
+  {
+   "id": "rediam_1192",
+   "name": "Acerolo del Cortijo de Las Iglesias",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1192.pdf",
+   "latitude": 37.357545,
+   "longitude": -2.419459
+  },
+  {
+   "id": "rediam_633",
+   "name": "Algarrobo de El Olivar I",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.355009,
+   "longitude": -2.253397
+  },
+  {
+   "id": "rediam_634",
+   "name": "Algarrobo de El Olivar II",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.354998,
+   "longitude": -2.252788
+  },
+  {
+   "id": "rediam_513",
+   "name": "Algarrobo del Cortijo de Cristobal el Pastor",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_513.pdf",
+   "latitude": 37.011851,
+   "longitude": -2.756516
+  },
+  {
+   "id": "rediam_832",
+   "name": "Almez de El Sache",
+   "province": "Almeria",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 37.469136,
+   "longitude": -2.409696
+  },
+  {
+   "id": "rediam_621",
+   "name": "Almez de La Florida",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.351291,
+   "longitude": -1.984735
+  },
+  {
+   "id": "rediam_1188",
+   "name": "Almez de Las Menas",
+   "province": "Almeria",
+   "criteria": "Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1188.pdf",
+   "latitude": 37.342864,
+   "longitude": -1.97382
+  },
+  {
+   "id": "rediam_851",
+   "name": "Araucaria del Cortijo de la Quesada I",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.894381,
+   "longitude": -2.429819
+  },
+  {
+   "id": "rediam_852",
+   "name": "Araucaria del Cortijo de la Quesada II",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.894401,
+   "longitude": -2.429617
+  },
+  {
+   "id": "rediam_1197",
+   "name": "Azufaifo del Haza del Almendro",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.967677,
+   "longitude": -2.099695
+  },
+  {
+   "id": "rediam_1205",
+   "name": "Castaño de Constantino",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1205.pdf",
+   "latitude": 37.03807,
+   "longitude": -2.955226
+  },
+  {
+   "id": "rediam_541",
+   "name": "Castaño de la Joya Moreno",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.025451,
+   "longitude": -2.943389
+  },
+  {
+   "id": "rediam_514",
+   "name": "Castaño de la Mendoza",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_514.pdf",
+   "latitude": 37.107983,
+   "longitude": -2.819282
+  },
+  {
+   "id": "rediam_538",
+   "name": "Castaño de la Roza",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_538.pdf",
+   "latitude": 37.044781,
+   "longitude": -2.9951
+  },
+  {
+   "id": "rediam_549",
+   "name": "Castaño de las Rosas",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.047831,
+   "longitude": -2.87024
+  },
+  {
+   "id": "rediam_537",
+   "name": "Castaño de los Laerones",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_537.pdf",
+   "latitude": 37.032871,
+   "longitude": -2.992169
+  },
+  {
+   "id": "rediam_543",
+   "name": "Castaño de los Rodriguez",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.018189,
+   "longitude": -2.959603
+  },
+  {
+   "id": "rediam_509",
+   "name": "Castaño del GR-140",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.036677,
+   "longitude": -2.999221
+  },
+  {
+   "id": "rediam_561",
+   "name": "Cedro del Vivero del Gabar",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.752661,
+   "longitude": -2.097313
+  },
+  {
+   "id": "rediam_536",
+   "name": "Cerezo del Cuco",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_536.pdf",
+   "latitude": 37.030753,
+   "longitude": -2.993635
+  },
+  {
+   "id": "rediam_640",
+   "name": "Chopo de El Marchal del Abogado",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.307287,
+   "longitude": -2.535587
+  },
+  {
+   "id": "rediam_577",
+   "name": "Chopo de la Aspilla",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_577.pdf",
+   "latitude": 37.56664,
+   "longitude": -2.326336
+  },
+  {
+   "id": "rediam_842",
+   "name": "Chopo de la Fuente de San Juan",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.260115,
+   "longitude": -2.450477
+  },
+  {
+   "id": "rediam_827",
+   "name": "Chopo de Los Claveros",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.378141,
+   "longitude": -2.505267
+  },
+  {
+   "id": "rediam_606",
+   "name": "Ciprés del Cortijo de las Viñas",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.789788,
+   "longitude": -2.15659
+  },
+  {
+   "id": "rediam_664",
+   "name": "Ciprés del Cortijo de Urrá",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.096687,
+   "longitude": -2.098333
+  },
+  {
+   "id": "rediam_662",
+   "name": "Cornicabra del Abrigo de La Mela",
+   "province": "Almeria",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 37.153047,
+   "longitude": -2.121479
+  },
+  {
+   "id": "rediam_841",
+   "name": "Cornicabra del Puente de El Valle",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_841.pdf",
+   "latitude": 37.335235,
+   "longitude": -2.555004
+  },
+  {
+   "id": "rediam_1206",
+   "name": "Drago de Los Alemanes",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 36.779014,
+   "longitude": -2.183047
+  },
+  {
+   "id": "rediam_639",
+   "name": "Encina de El Marchal del Abogado",
+   "province": "Almeria",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_639.pdf",
+   "latitude": 37.307287,
+   "longitude": -2.535587
+  },
+  {
+   "id": "rediam_607",
+   "name": "Encina de la Alqueria de Derde",
+   "province": "Almeria",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.821748,
+   "longitude": -2.162545
+  },
+  {
+   "id": "rediam_585",
+   "name": "Encina de la cañada del Cortijo de Tello",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_585.pdf",
+   "latitude": 37.836345,
+   "longitude": -2.097073
+  },
+  {
+   "id": "rediam_828",
+   "name": "Encina de la Fuente El Pino",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_828.pdf",
+   "latitude": 37.411628,
+   "longitude": -2.494785
+  },
+  {
+   "id": "rediam_848",
+   "name": "Encina de La Parra II",
+   "province": "Almeria",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 36.784555,
+   "longitude": -3.063058
+  },
+  {
+   "id": "rediam_638",
+   "name": "Encina de la Peana",
+   "province": "Almeria",
+   "criteria": "Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_638.pdf",
+   "latitude": 37.294007,
+   "longitude": -2.552983
+  },
+  {
+   "id": "rediam_1193",
+   "name": "Encina de Las Menas",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.28258,
+   "longitude": -2.511587
+  },
+  {
+   "id": "rediam_540",
+   "name": "Encina de los Machos",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.045921,
+   "longitude": -3.003814
+  },
+  {
+   "id": "rediam_681",
+   "name": "Encina de Los Malenos",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.048913,
+   "longitude": -2.697402
+  },
+  {
+   "id": "rediam_637",
+   "name": "Encina de los Trébedes",
+   "province": "Almeria",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_637.pdf",
+   "latitude": 37.295774,
+   "longitude": -2.541344
+  },
+  {
+   "id": "rediam_614",
+   "name": "Encina de Muro",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.594635,
+   "longitude": -2.088316
+  },
+  {
+   "id": "rediam_605",
+   "name": "Encina del Cortijo de Benito",
+   "province": "Almeria",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 37.663867,
+   "longitude": -2.288358
+  },
+  {
+   "id": "rediam_563",
+   "name": "Encina del Cortijo de las Cañaicas",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_563.pdf",
+   "latitude": 37.709561,
+   "longitude": -2.086774
+  },
+  {
+   "id": "rediam_826",
+   "name": "Encina del Cortijo Perigallo",
+   "province": "Almeria",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_826.pdf",
+   "latitude": 37.782579,
+   "longitude": -2.193686
+  },
+  {
+   "id": "rediam_542",
+   "name": "Encina del Sol",
+   "province": "Almeria",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_542.pdf",
+   "latitude": 37.019575,
+   "longitude": -2.940877
+  },
+  {
+   "id": "rediam_624",
+   "name": "Enebro de El Barranco de Quiles I",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.506664,
+   "longitude": -2.25769
+  },
+  {
+   "id": "rediam_625",
+   "name": "Enebro de El Barranco de Quiles II",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.506601,
+   "longitude": -2.257573
+  },
+  {
+   "id": "rediam_558",
+   "name": "Enebro de la miera de la Hoya del Carrascal",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_558.pdf",
+   "latitude": 37.778384,
+   "longitude": -2.043775
+  },
+  {
+   "id": "rediam_838",
+   "name": "Enebro de Pechina",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.348082,
+   "longitude": -2.572767
+  },
+  {
+   "id": "rediam_683",
+   "name": "Eucalipto de El Chive",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.180164,
+   "longitude": -2.07153
+  },
+  {
+   "id": "rediam_855",
+   "name": "Eucalipto del Cortijo del Hoyo",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.104574,
+   "longitude": -2.082036
+  },
+  {
+   "id": "rediam_496",
+   "name": "Falso Pimentero del Cortijo de Doña Lola",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.864013,
+   "longitude": -2.386783
+  },
+  {
+   "id": "rediam_665",
+   "name": "Falso Pimentero del Cortijo de Urrá I",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.096687,
+   "longitude": -2.098333
+  },
+  {
+   "id": "rediam_666",
+   "name": "Falso Pimentero del Cortijo de Urrá II",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.09664,
+   "longitude": -2.098579
+  },
+  {
+   "id": "rediam_853",
+   "name": "Fresno de Jalvo",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.940734,
+   "longitude": -2.469295
+  },
+  {
+   "id": "rediam_575",
+   "name": "Laurel del Cortijo del Ciruelo Bajo",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.621386,
+   "longitude": -2.189689
+  },
+  {
+   "id": "rediam_1198",
+   "name": "Lentisco de la Cortijada del Molino de la Balsa Blanca",
+   "province": "Almeria",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1198.pdf",
+   "latitude": 36.931412,
+   "longitude": -2.039255
+  },
+  {
+   "id": "rediam_657",
+   "name": "Lentisco de Los Castaños",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.149885,
+   "longitude": -2.044679
+  },
+  {
+   "id": "rediam_560",
+   "name": "Madroño de las Almohallas",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_560.pdf",
+   "latitude": 37.781063,
+   "longitude": -2.073114
+  },
+  {
+   "id": "rediam_611",
+   "name": "Majoletero del camino de la Ermita de la Virgen de la Cabeza",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.700644,
+   "longitude": -2.176583
+  },
+  {
+   "id": "rediam_587",
+   "name": "Moral del Cortijo de la Balsa Alta",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.701669,
+   "longitude": -2.093561
+  },
+  {
+   "id": "rediam_501",
+   "name": "Morera del Cortijo de la Huerta",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 36.822068,
+   "longitude": -2.860608
+  },
+  {
+   "id": "rediam_539",
+   "name": "Mostajo de Mosquera",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_539.pdf",
+   "latitude": 37.07374,
+   "longitude": -2.986706
+  },
+  {
+   "id": "rediam_612",
+   "name": "Nogal de los Alamicos",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.689227,
+   "longitude": -2.235669
+  },
+  {
+   "id": "rediam_635",
+   "name": "Olivo de la Fuente El Cañal",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.355294,
+   "longitude": -2.255499
+  },
+  {
+   "id": "rediam_565",
+   "name": "Olivo de la rambla de Erre I",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_565.pdf",
+   "latitude": 37.477904,
+   "longitude": -1.923719
+  },
+  {
+   "id": "rediam_566",
+   "name": "Olivo de la rambla de Erre II",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_566.pdf",
+   "latitude": 37.477933,
+   "longitude": -1.923637
+  },
+  {
+   "id": "rediam_567",
+   "name": "Olivo de la rambla de Fuente Amarga",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.464645,
+   "longitude": -1.94646
+  },
+  {
+   "id": "rediam_1189",
+   "name": "Olivo de la Rambla de los Llanos",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.347551,
+   "longitude": -2.101313
+  },
+  {
+   "id": "rediam_568",
+   "name": "Olivo de la Rambla Grande o de Giviley",
+   "province": "Almeria",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_568.pdf",
+   "latitude": 37.458133,
+   "longitude": -1.940451
+  },
+  {
+   "id": "rediam_616",
+   "name": "Olivo de Las Lomas",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_616.pdf",
+   "latitude": 37.41147,
+   "longitude": -2.012178
+  },
+  {
+   "id": "rediam_572",
+   "name": "Olivo de Urcal",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.469294,
+   "longitude": -1.914832
+  },
+  {
+   "id": "rediam_493",
+   "name": "Olivo del Pozo Hondo",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_493.pdf",
+   "latitude": 36.945767,
+   "longitude": -1.944035
+  },
+  {
+   "id": "rediam_615",
+   "name": "Olivo Gordo (El)",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_615.pdf",
+   "latitude": 37.399911,
+   "longitude": -1.993864
+  },
+  {
+   "id": "rediam_551",
+   "name": "Olmo de la vega del río Andarax",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_551.pdf",
+   "latitude": 36.934798,
+   "longitude": -2.458526
+  },
+  {
+   "id": "rediam_584",
+   "name": "Olmo del Cortijo de Tello",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_584.pdf",
+   "latitude": 37.8401,
+   "longitude": -2.106074
+  },
+  {
+   "id": "rediam_1200",
+   "name": "Palmera de El Playazo",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.855152,
+   "longitude": -2.008234
+  },
+  {
+   "id": "rediam_631",
+   "name": "Palmera de Gochar",
+   "province": "Almeria",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.127732,
+   "longitude": -2.138075
+  },
+  {
+   "id": "rediam_492",
+   "name": "Palmito del Cortijo de Doña Francisca",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_492.pdf",
+   "latitude": 36.86113,
+   "longitude": -2.094616
+  },
+  {
+   "id": "rediam_627",
+   "name": "Pino de la Cantera de Los Marcelinos",
+   "province": "Almeria",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 37.431939,
+   "longitude": -2.119567
+  },
+  {
+   "id": "rediam_632",
+   "name": "Pino de La Cañada",
+   "province": "Almeria",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 37.361609,
+   "longitude": -2.267493
+  },
+  {
+   "id": "rediam_636",
+   "name": "Pino de la Rambla de los Collados",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_636.pdf",
+   "latitude": 37.368797,
+   "longitude": -2.618519
+  },
+  {
+   "id": "rediam_652",
+   "name": "Pino de la Rambla de Sorbas",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.106908,
+   "longitude": -2.118586
+  },
+  {
+   "id": "rediam_823",
+   "name": "Pino de Los Chaveses",
+   "province": "Almeria",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_823.pdf",
+   "latitude": 37.626782,
+   "longitude": -2.246965
+  },
+  {
+   "id": "rediam_512",
+   "name": "Pino del Caserío de Zonzas",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.18633,
+   "longitude": -2.848799
+  },
+  {
+   "id": "rediam_564",
+   "name": "Pino del Cortijo de las Cañaicas",
+   "province": "Almeria",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_564.pdf",
+   "latitude": 37.710748,
+   "longitude": -2.08838
+  },
+  {
+   "id": "rediam_830",
+   "name": "Pino del Cortijo del Canuto",
+   "province": "Almeria",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.481782,
+   "longitude": -2.437261
+  },
+  {
+   "id": "rediam_557",
+   "name": "Pino del Cortijo del Pino (Almería)",
+   "province": "Almeria",
+   "criteria": "Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_557.pdf",
+   "latitude": 37.778875,
+   "longitude": -2.049469
+  },
+  {
+   "id": "rediam_679",
+   "name": "Pino Laricio del Collado Cabaña",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_679.pdf",
+   "latitude": 37.262437,
+   "longitude": -2.508114
+  },
+  {
+   "id": "rediam_630",
+   "name": "Pino piñonero de El Hacho",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_630.pdf",
+   "latitude": 37.250906,
+   "longitude": -1.880763
+  },
+  {
+   "id": "rediam_629",
+   "name": "Pino piñonero del Cortijo del Pino",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.476027,
+   "longitude": -1.991026
+  },
+  {
+   "id": "rediam_622",
+   "name": "Quejigo de El Marchal",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.208804,
+   "longitude": -2.016233
+  },
+  {
+   "id": "rediam_559",
+   "name": "Quejigo de la Hoya del Carrascal",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.779631,
+   "longitude": -2.043965
+  },
+  {
+   "id": "rediam_574",
+   "name": "Quejigo del Cortijo El Ciruelo del Roble",
+   "province": "Almeria",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_574.pdf",
+   "latitude": 37.624591,
+   "longitude": -2.198702
+  },
+  {
+   "id": "rediam_573",
+   "name": "Sabina albar de Chirivel",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_573.pdf",
+   "latitude": 37.664607,
+   "longitude": -2.229319
+  },
+  {
+   "id": "rediam_610",
+   "name": "Sabina del Barranco Batanero",
+   "province": "Almeria",
+   "criteria": "Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_610.pdf",
+   "latitude": 37.866625,
+   "longitude": -2.167551
+  },
+  {
+   "id": "rediam_562",
+   "name": "Sabina del Cortijo del Puerto",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_562.pdf",
+   "latitude": 37.741276,
+   "longitude": -2.100801
+  },
+  {
+   "id": "rediam_609",
+   "name": "Sabina del Mancheño",
+   "province": "Almeria",
+   "criteria": "Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_609.pdf",
+   "latitude": 37.883185,
+   "longitude": -2.133058
+  },
+  {
+   "id": "rediam_843",
+   "name": "Sabina del Ujaldón",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.343605,
+   "longitude": -2.460956
+  },
+  {
+   "id": "rediam_677",
+   "name": "Serbal de La Darga",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.286078,
+   "longitude": -2.616234
+  },
+  {
+   "id": "rediam_1196",
+   "name": "Serbal de Los Heredias",
+   "province": "Almeria",
+   "criteria": "Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1196.pdf",
+   "latitude": 37.289601,
+   "longitude": -2.446648
+  },
+  {
+   "id": "rediam_1195",
+   "name": "Serbal de Los Sapos",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.281309,
+   "longitude": -2.545837
+  },
+  {
+   "id": "rediam_578",
+   "name": "Serbal del Cortijo de Tello",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_578.pdf",
+   "latitude": 37.840105,
+   "longitude": -2.105876
+  },
+  {
+   "id": "rediam_533",
+   "name": "Serbal del Tío Paulo",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_533.pdf",
+   "latitude": 37.194846,
+   "longitude": -2.677997
+  },
+  {
+   "id": "rediam_553",
+   "name": "Taraje de la Alcazaba de Almería II",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.841142,
+   "longitude": -2.471216
+  },
+  {
+   "id": "rediam_619",
+   "name": "Taray de La Florida I",
+   "province": "Almeria",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.351291,
+   "longitude": -1.984735
+  },
+  {
+   "id": "rediam_620",
+   "name": "Taray de La Florida II",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.351291,
+   "longitude": -1.984735
+  },
+  {
+   "id": "rediam_495",
+   "name": "Taray de la Playa de los Bajos",
+   "province": "Almeria",
+   "criteria": "Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_495.pdf",
+   "latitude": 36.791075,
+   "longitude": -2.587241
+  },
+  {
+   "id": "rediam_824",
+   "name": "Taray de la Rambla de Chirivel",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.639442,
+   "longitude": -2.072051
+  },
+  {
+   "id": "rediam_613",
+   "name": "Taray del Cortijo El Río",
+   "province": "Almeria",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_613.pdf",
+   "latitude": 37.75456,
+   "longitude": -2.178437
+  },
+  {
+   "id": "rediam_811",
+   "name": "Tejo del Barranco de los Cerezos",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.074745,
+   "longitude": -2.970344
+  },
+  {
+   "id": "rediam_812",
+   "name": "Tejo del Barranco de Los Tejos I",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.083711,
+   "longitude": -2.940197
+  },
+  {
+   "id": "rediam_813",
+   "name": "Tejo del Barranco de Los Tejos II",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.080288,
+   "longitude": -2.944903
+  },
+  {
+   "id": "rediam_814",
+   "name": "Tejo del Barranco del Río Paterna I",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.066599,
+   "longitude": -2.952326
+  },
+  {
+   "id": "rediam_815",
+   "name": "Tejo del Barranco del río Paterna II",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.066599,
+   "longitude": -2.952326
+  },
+  {
+   "id": "rediam_511",
+   "name": "Tilo del Caserío de Zonzas",
+   "province": "Almeria",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_511.pdf",
+   "latitude": 37.186238,
+   "longitude": -2.849166
+  },
+  {
+   "id": "rediam_731",
+   "name": "Acebuche de Berlanguilla",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_731.pdf",
+   "latitude": 36.643221,
+   "longitude": -5.893253
+  },
+  {
+   "id": "rediam_720",
+   "name": "Acebuche de Cabeza Hortales",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.73461,
+   "longitude": -5.552739
+  },
+  {
+   "id": "rediam_774",
+   "name": "Acebuche de El Pimpollar",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_774.pdf",
+   "latitude": 36.211605,
+   "longitude": -5.509397
+  },
+  {
+   "id": "rediam_793",
+   "name": "Acebuche de La Calerilla",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_793.pdf",
+   "latitude": 36.158822,
+   "longitude": -5.657406
+  },
+  {
+   "id": "rediam_744",
+   "name": "Acebuche de la Ciudad Romana de Ocuri",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_744.pdf",
+   "latitude": 36.68724,
+   "longitude": -5.447097
+  },
+  {
+   "id": "rediam_794",
+   "name": "Acebuche de La Huesa",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_794.pdf",
+   "latitude": 36.474099,
+   "longitude": -5.521821
+  },
+  {
+   "id": "rediam_728",
+   "name": "Acebuche de los Ahijones Altos",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_728.pdf",
+   "latitude": 36.378649,
+   "longitude": -5.795242
+  },
+  {
+   "id": "rediam_726",
+   "name": "Acebuche de Los Cuquillos",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_726.pdf",
+   "latitude": 36.642324,
+   "longitude": -5.68439
+  },
+  {
+   "id": "rediam_750",
+   "name": "Acebuche del Arroyo de los Cirones",
+   "province": "Cadiz",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 36.68134,
+   "longitude": -5.461615
+  },
+  {
+   "id": "rediam_787",
+   "name": "Acebuche del Cortijo de Urate",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.080678,
+   "longitude": -5.446394
+  },
+  {
+   "id": "rediam_759",
+   "name": "Acebuche del Marqués",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Edad , Forma , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_759.pdf",
+   "latitude": 36.286213,
+   "longitude": -5.621907
+  },
+  {
+   "id": "rediam_760",
+   "name": "Agracejo de Las Hermanillas",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Forma , Edad , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_760.pdf",
+   "latitude": 36.297247,
+   "longitude": -5.589571
+  },
+  {
+   "id": "rediam_717",
+   "name": "Alcornoque de Berlanguilla",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_717.pdf",
+   "latitude": 36.64682,
+   "longitude": -5.892089
+  },
+  {
+   "id": "rediam_769",
+   "name": "Alcornoque de Chirina",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_769.pdf",
+   "latitude": 36.301218,
+   "longitude": -5.438217
+  },
+  {
+   "id": "rediam_795",
+   "name": "Alcornoque de La Huesa",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.47756,
+   "longitude": -5.517045
+  },
+  {
+   "id": "rediam_710",
+   "name": "Alcornoque de Rojitán",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_710.pdf",
+   "latitude": 36.611908,
+   "longitude": -5.592685
+  },
+  {
+   "id": "rediam_722",
+   "name": "Alcornoque del Camino de las Player",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_722.pdf",
+   "latitude": 36.781329,
+   "longitude": -5.690921
+  },
+  {
+   "id": "rediam_770",
+   "name": "Alcornoque del Cortijo de Navahermosa",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.267428,
+   "longitude": -5.494674
+  },
+  {
+   "id": "rediam_688",
+   "name": "Alcornoque El Pulpo",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_688.pdf",
+   "latitude": 36.28957,
+   "longitude": -5.900079
+  },
+  {
+   "id": "rediam_748",
+   "name": "Arce del Dornajo",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_748.pdf",
+   "latitude": 36.725048,
+   "longitude": -5.39359
+  },
+  {
+   "id": "rediam_715",
+   "name": "Chaparro Alto",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_715.pdf",
+   "latitude": 36.675625,
+   "longitude": -5.555753
+  },
+  {
+   "id": "rediam_745",
+   "name": "Chaparro de las ánimas",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_745.pdf",
+   "latitude": 36.743029,
+   "longitude": -5.33448
+  },
+  {
+   "id": "rediam_771",
+   "name": "Chaparro del Cortijo El Chapatal",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_771.pdf",
+   "latitude": 36.259088,
+   "longitude": -5.429194
+  },
+  {
+   "id": "rediam_763",
+   "name": "Chaparro del Vegerano",
+   "province": "Cadiz",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_763.pdf",
+   "latitude": 36.244144,
+   "longitude": -5.51713
+  },
+  {
+   "id": "rediam_741",
+   "name": "Coscoja híbrida de la Camilla",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_741.pdf",
+   "latitude": 36.803727,
+   "longitude": -5.401418
+  },
+  {
+   "id": "rediam_723",
+   "name": "Coscoja híbrida de Las Muñías",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_723.pdf",
+   "latitude": 36.752647,
+   "longitude": -5.543925
+  },
+  {
+   "id": "rediam_765",
+   "name": "Drago de Puente Mayorga",
+   "province": "Cadiz",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_765.pdf",
+   "latitude": 36.187071,
+   "longitude": -5.38469
+  },
+  {
+   "id": "rediam_735",
+   "name": "Encina del Llano de Palas",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_735.pdf",
+   "latitude": 36.924161,
+   "longitude": -5.462293
+  },
+  {
+   "id": "rediam_742",
+   "name": "Encina del Puerto de los Acebuches",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_742.pdf",
+   "latitude": 36.800967,
+   "longitude": -5.387899
+  },
+  {
+   "id": "rediam_746",
+   "name": "Encina La Alcahueta",
+   "province": "Cadiz",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_746.pdf",
+   "latitude": 36.717724,
+   "longitude": -5.426713
+  },
+  {
+   "id": "rediam_782",
+   "name": "Enebro de Punta Paloma I",
+   "province": "Cadiz",
+   "criteria": "Rareza , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_782.pdf",
+   "latitude": 36.065205,
+   "longitude": -5.707989
+  },
+  {
+   "id": "rediam_783",
+   "name": "Enebro de Punta Paloma II",
+   "province": "Cadiz",
+   "criteria": "Rareza , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_783.pdf",
+   "latitude": 36.065103,
+   "longitude": -5.708301
+  },
+  {
+   "id": "rediam_784",
+   "name": "Enebro de Punta Paloma III",
+   "province": "Cadiz",
+   "criteria": "Rareza , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_784.pdf",
+   "latitude": 36.064031,
+   "longitude": -5.707589
+  },
+  {
+   "id": "rediam_692",
+   "name": "Enebro del Cabo Roche",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": null,
+   "latitude": 36.298622,
+   "longitude": -6.143267
+  },
+  {
+   "id": "rediam_700",
+   "name": "Eucalipto del Pinar de la Algaida",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_700.pdf",
+   "latitude": 36.867241,
+   "longitude": -6.306373
+  },
+  {
+   "id": "rediam_780",
+   "name": "Fresno de la Menacha I",
+   "province": "Cadiz",
+   "criteria": "Forma , Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.164596,
+   "longitude": -5.475869
+  },
+  {
+   "id": "rediam_781",
+   "name": "Fresno de la Menacha II",
+   "province": "Cadiz",
+   "criteria": "Forma , Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.164577,
+   "longitude": -5.475834
+  },
+  {
+   "id": "rediam_757",
+   "name": "Fresno del Puente de la Rosca",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_757.pdf",
+   "latitude": 36.300178,
+   "longitude": -5.59512
+  },
+  {
+   "id": "rediam_754",
+   "name": "Hediondo de las Viñas",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": null,
+   "latitude": 36.689366,
+   "longitude": -5.392031
+  },
+  {
+   "id": "rediam_778",
+   "name": "Laurel de Huerta Grande",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_778.pdf",
+   "latitude": 36.079853,
+   "longitude": -5.503658
+  },
+  {
+   "id": "rediam_689",
+   "name": "Lentisco de El Porretal",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.303691,
+   "longitude": -5.726921
+  },
+  {
+   "id": "rediam_729",
+   "name": "Lentisco de la Cañada de los Sotillos",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.662133,
+   "longitude": -5.818029
+  },
+  {
+   "id": "rediam_693",
+   "name": "Lentisco de La Fuente del Gallo",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.285769,
+   "longitude": -6.096926
+  },
+  {
+   "id": "rediam_714",
+   "name": "Lentisco de la Venta de la Perdiz",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_714.pdf",
+   "latitude": 36.684685,
+   "longitude": -5.708298
+  },
+  {
+   "id": "rediam_459",
+   "name": "Lentisco de las Paletas",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_459.pdf",
+   "latitude": 37.031058,
+   "longitude": -5.447524
+  },
+  {
+   "id": "rediam_785",
+   "name": "Lentisco del Betijuelo",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_785.pdf",
+   "latitude": 36.080033,
+   "longitude": -5.720542
+  },
+  {
+   "id": "rediam_725",
+   "name": "Lentisco del Camino de la Encubierta",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": null,
+   "latitude": 36.436231,
+   "longitude": -5.458113
+  },
+  {
+   "id": "rediam_761",
+   "name": "Lentisco del Molino de La Teja",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_761.pdf",
+   "latitude": 36.274281,
+   "longitude": -5.58268
+  },
+  {
+   "id": "rediam_696",
+   "name": "Lentisco del Pinar de Coy I",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_696.pdf",
+   "latitude": 36.625848,
+   "longitude": -6.180943
+  },
+  {
+   "id": "rediam_695",
+   "name": "Lentisco del Pinar de Coy II",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_695.pdf",
+   "latitude": 36.626282,
+   "longitude": -6.180949
+  },
+  {
+   "id": "rediam_694",
+   "name": "Lentisco del Pinar de Coy III",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_694.pdf",
+   "latitude": 36.624771,
+   "longitude": -6.177056
+  },
+  {
+   "id": "rediam_739",
+   "name": "Lentisco híbrido de la Vereda del Taramal",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": null,
+   "latitude": 36.802452,
+   "longitude": -5.415262
+  },
+  {
+   "id": "rediam_796",
+   "name": "Madroño de La Huesa",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.486194,
+   "longitude": -5.531228
+  },
+  {
+   "id": "rediam_724",
+   "name": "Madroño de la Ventalleja",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_724.pdf",
+   "latitude": 36.622236,
+   "longitude": -5.488094
+  },
+  {
+   "id": "rediam_727",
+   "name": "Madroño del Rancho El Gato",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_727.pdf",
+   "latitude": 36.6468,
+   "longitude": -5.822834
+  },
+  {
+   "id": "rediam_752",
+   "name": "Mesto de Huerto Juncal",
+   "province": "Cadiz",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 36.686805,
+   "longitude": -5.364629
+  },
+  {
+   "id": "rediam_719",
+   "name": "Mesto del Encinar de Vicos",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_719.pdf",
+   "latitude": 36.67213,
+   "longitude": -5.95332
+  },
+  {
+   "id": "rediam_699",
+   "name": "Naranjo de los Osage",
+   "province": "Cadiz",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 36.358545,
+   "longitude": -6.134722
+  },
+  {
+   "id": "rediam_733",
+   "name": "Olivo de Sierra Vaquera",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.953119,
+   "longitude": -5.454153
+  },
+  {
+   "id": "rediam_786",
+   "name": "Ombú de Baelo Claudia",
+   "province": "Cadiz",
+   "criteria": "Rareza , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_786.pdf",
+   "latitude": 36.088852,
+   "longitude": -5.774296
+  },
+  {
+   "id": "rediam_713",
+   "name": "Ombú de Faín",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_713.pdf",
+   "latitude": 36.726207,
+   "longitude": -5.766297
+  },
+  {
+   "id": "rediam_779",
+   "name": "Palmito de Huerta Grande",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.079704,
+   "longitude": -5.501405
+  },
+  {
+   "id": "rediam_762",
+   "name": "Palmito del Rancho Malpica",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.235971,
+   "longitude": -5.492305
+  },
+  {
+   "id": "rediam_687",
+   "name": "Pino de Huertas del Marqués",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_687.pdf",
+   "latitude": 36.281317,
+   "longitude": -5.931526
+  },
+  {
+   "id": "rediam_702",
+   "name": "Pino de la Vereda",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": null,
+   "latitude": 36.715026,
+   "longitude": -6.428732
+  },
+  {
+   "id": "rediam_691",
+   "name": "Pino del Cruce Piña",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.320084,
+   "longitude": -6.106528
+  },
+  {
+   "id": "rediam_690",
+   "name": "Pino El Pelafraile",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_690.pdf",
+   "latitude": 36.327858,
+   "longitude": -6.105637
+  },
+  {
+   "id": "rediam_740",
+   "name": "Pinsapo de la Vereda del Taramal",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_740.pdf",
+   "latitude": 36.80315,
+   "longitude": -5.4169
+  },
+  {
+   "id": "rediam_718",
+   "name": "Piruétano de Berlanguilla",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_718.pdf",
+   "latitude": 36.64363,
+   "longitude": -5.892141
+  },
+  {
+   "id": "rediam_747",
+   "name": "Quejigo de la Casa del Dornajo",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_747.pdf",
+   "latitude": 36.726202,
+   "longitude": -5.394778
+  },
+  {
+   "id": "rediam_716",
+   "name": "Quejigo de la Majada de las Vacas",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_716.pdf",
+   "latitude": 36.676821,
+   "longitude": -5.548765
+  },
+  {
+   "id": "rediam_758",
+   "name": "Quejigo de La Nava",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_758.pdf",
+   "latitude": 36.296578,
+   "longitude": -5.603573
+  },
+  {
+   "id": "rediam_753",
+   "name": "Quejigo de Las Hermanillas",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_753.pdf",
+   "latitude": 36.770069,
+   "longitude": -5.344401
+  },
+  {
+   "id": "rediam_790",
+   "name": "Quejigo de Vegueta La Negra",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Rareza , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_790.pdf",
+   "latitude": 36.486047,
+   "longitude": -5.531644
+  },
+  {
+   "id": "rediam_743",
+   "name": "Quejigo del Higuerón de Tavizna",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.715447,
+   "longitude": -5.482288
+  },
+  {
+   "id": "rediam_734",
+   "name": "Quejigo del Llano de Palas",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_734.pdf",
+   "latitude": 36.924251,
+   "longitude": -5.462058
+  },
+  {
+   "id": "rediam_792",
+   "name": "Quejigo del Palero",
+   "province": "Cadiz",
+   "criteria": "Tamaño , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_792.pdf",
+   "latitude": 36.138924,
+   "longitude": -5.624477
+  },
+  {
+   "id": "rediam_732",
+   "name": "Taraje de Navalsalado",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_732.pdf",
+   "latitude": 36.966983,
+   "longitude": -5.312021
+  },
+  {
+   "id": "rediam_703",
+   "name": "Taraje del Puente de la Barca",
+   "province": "Cadiz",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_703.pdf",
+   "latitude": 36.649383,
+   "longitude": -5.929265
+  },
+  {
+   "id": "rediam_711",
+   "name": "Tejo de Marrufo",
+   "province": "Cadiz",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 36.557337,
+   "longitude": -5.566211
+  },
+  {
+   "id": "rediam_56",
+   "name": "Acebuche de Izcar La Baja",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_56.pdf",
+   "latitude": 37.678936,
+   "longitude": -4.392055
+  },
+  {
+   "id": "rediam_114",
+   "name": "Acebuche de Las Cuevas",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_114.pdf",
+   "latitude": 37.863806,
+   "longitude": -4.941552
+  },
+  {
+   "id": "rediam_50",
+   "name": "Acebuche de las Minas del Cerro del Corchero",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_50.pdf",
+   "latitude": 37.850987,
+   "longitude": -5.021367
+  },
+  {
+   "id": "rediam_48",
+   "name": "Acebuche del Camino de Los Toros",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_48.pdf",
+   "latitude": 37.85285,
+   "longitude": -4.998135
+  },
+  {
+   "id": "rediam_72",
+   "name": "Alcornoque de El Catalán",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_72.pdf",
+   "latitude": 38.021077,
+   "longitude": -4.996129
+  },
+  {
+   "id": "rediam_71",
+   "name": "Alcornoque de Fuente Canto",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_71.pdf",
+   "latitude": 38.192415,
+   "longitude": -5.32002
+  },
+  {
+   "id": "rediam_42",
+   "name": "Alcornoque de la Urbanización Pinar de Torrehoria",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.912983,
+   "longitude": -4.881718
+  },
+  {
+   "id": "rediam_39",
+   "name": "Algarrobo de la Loma de Los Escalones II",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 37.967364,
+   "longitude": -4.759563
+  },
+  {
+   "id": "rediam_38",
+   "name": "Algarrobo de la Loma de Los Escalones I",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_38.pdf",
+   "latitude": 37.965072,
+   "longitude": -4.758848
+  },
+  {
+   "id": "rediam_58",
+   "name": "Almendro del Sendero de las Buitreras",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_58.pdf",
+   "latitude": 37.536857,
+   "longitude": -4.29182
+  },
+  {
+   "id": "rediam_40",
+   "name": "Almez de la Campiñuela Baja",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_40.pdf",
+   "latitude": 37.917046,
+   "longitude": -4.742658
+  },
+  {
+   "id": "rediam_106",
+   "name": "Araar de Ribero de Posadas",
+   "province": "Cordoba",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.79189,
+   "longitude": -5.144902
+  },
+  {
+   "id": "rediam_104",
+   "name": "Chaparro de la Mujer",
+   "province": "Cordoba",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 37.985049,
+   "longitude": -5.11018
+  },
+  {
+   "id": "rediam_118",
+   "name": "Ciprés de la Ermita de Los Remedios",
+   "province": "Cordoba",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 37.957803,
+   "longitude": -4.551431
+  },
+  {
+   "id": "rediam_103",
+   "name": "Ciprés del Santuario de la Virgen de Luna",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_103.pdf",
+   "latitude": 38.315691,
+   "longitude": -4.738328
+  },
+  {
+   "id": "rediam_100",
+   "name": "Cornicabra del Arroyo de las Cantareras",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_100.pdf",
+   "latitude": 38.248653,
+   "longitude": -4.221397
+  },
+  {
+   "id": "rediam_138",
+   "name": "Cornicabra del Polje de La Nava",
+   "province": "Cordoba",
+   "criteria": "Forma , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_138.pdf",
+   "latitude": 37.502337,
+   "longitude": -4.375015
+  },
+  {
+   "id": "rediam_24",
+   "name": "Coscoja híbrida de Cañada Zafra",
+   "province": "Cordoba",
+   "criteria": "Rareza , Forma , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_24.pdf",
+   "latitude": 37.532265,
+   "longitude": -4.31726
+  },
+  {
+   "id": "rediam_105",
+   "name": "Coscoja híbrida de la Mata del Agua",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_105.pdf",
+   "latitude": 38.020263,
+   "longitude": -5.17109
+  },
+  {
+   "id": "rediam_80",
+   "name": "Encina de El Lote I",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_80.pdf",
+   "latitude": 38.501974,
+   "longitude": -5.059615
+  },
+  {
+   "id": "rediam_81",
+   "name": "Encina de El Lote II",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 38.499243,
+   "longitude": -5.060483
+  },
+  {
+   "id": "rediam_22",
+   "name": "Encina de El Navazuelo",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Forma , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_22.pdf",
+   "latitude": 37.485786,
+   "longitude": -4.345898
+  },
+  {
+   "id": "rediam_94",
+   "name": "Encina de la carretera Pedroche-Torrecampo I",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 38.461242,
+   "longitude": -4.719739
+  },
+  {
+   "id": "rediam_95",
+   "name": "Encina de la carretera Pedroche-Torrecampo II",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_95.pdf",
+   "latitude": 38.461269,
+   "longitude": -4.719812
+  },
+  {
+   "id": "rediam_88",
+   "name": "Encina de la Casilla de Alfonso Delgado",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.482514,
+   "longitude": -5.009029
+  },
+  {
+   "id": "rediam_93",
+   "name": "Encina de la Dehesa de las Alcantarillas",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_93.pdf",
+   "latitude": 38.571585,
+   "longitude": -5.350473
+  },
+  {
+   "id": "rediam_97",
+   "name": "Encina de la Dehesa Fernández",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 38.452054,
+   "longitude": -4.676236
+  },
+  {
+   "id": "rediam_59",
+   "name": "Encina de la Hoya del Tajo",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.497755,
+   "longitude": -4.257958
+  },
+  {
+   "id": "rediam_33",
+   "name": "Encina de las Vacas",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_33.pdf",
+   "latitude": 37.368662,
+   "longitude": -4.26761
+  },
+  {
+   "id": "rediam_96",
+   "name": "Encina de Las Viñas",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 38.445989,
+   "longitude": -4.680336
+  },
+  {
+   "id": "rediam_82",
+   "name": "Encina de los Lotes de Costerillas",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.492496,
+   "longitude": -5.031049
+  },
+  {
+   "id": "rediam_27",
+   "name": "Encina de Rute",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_27.pdf",
+   "latitude": 37.372399,
+   "longitude": -4.419562
+  },
+  {
+   "id": "rediam_83",
+   "name": "Encina de Tierra de Abajo I",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 38.42339,
+   "longitude": -4.986161
+  },
+  {
+   "id": "rediam_84",
+   "name": "Encina de Tierra de Abajo II",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 38.425115,
+   "longitude": -4.985449
+  },
+  {
+   "id": "rediam_85",
+   "name": "Encina de Tierra de Abajo III",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.42011,
+   "longitude": -4.984099
+  },
+  {
+   "id": "rediam_86",
+   "name": "Encina de Tierra de Abajo IV",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 38.421297,
+   "longitude": -4.989279
+  },
+  {
+   "id": "rediam_87",
+   "name": "Encina de Tierra de Abajo V",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Forma , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_87.pdf",
+   "latitude": 38.418636,
+   "longitude": -4.988826
+  },
+  {
+   "id": "rediam_74",
+   "name": "Encina del Camino de los Pedroches I",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 38.499298,
+   "longitude": -5.018453
+  },
+  {
+   "id": "rediam_30",
+   "name": "Encina del Acarraero",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_30.pdf",
+   "latitude": 37.341609,
+   "longitude": -4.312244
+  },
+  {
+   "id": "rediam_102",
+   "name": "Encina del Arroyo de Navalacienda",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_102.pdf",
+   "latitude": 38.458114,
+   "longitude": -4.610688
+  },
+  {
+   "id": "rediam_140",
+   "name": "Encina del Camino de Los Pedroches II",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.498786,
+   "longitude": -5.017324
+  },
+  {
+   "id": "rediam_141",
+   "name": "Encina del Camino de Los Pedroches III",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.498303,
+   "longitude": -5.016075
+  },
+  {
+   "id": "rediam_25",
+   "name": "Encina del Cerro Camorra",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_25.pdf",
+   "latitude": 37.437682,
+   "longitude": -4.392702
+  },
+  {
+   "id": "rediam_34",
+   "name": "Encina del Cortijo Bajo",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_34.pdf",
+   "latitude": 37.337249,
+   "longitude": -4.255897
+  },
+  {
+   "id": "rediam_77",
+   "name": "Encina del Cortijo de Pedroche I",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_77.pdf",
+   "latitude": 38.513848,
+   "longitude": -5.052162
+  },
+  {
+   "id": "rediam_78",
+   "name": "Encina del Cortijo de Pedroche II",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Forma , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_78.pdf",
+   "latitude": 38.514645,
+   "longitude": -5.053248
+  },
+  {
+   "id": "rediam_79",
+   "name": "Encina del Cortijo de Pedroche III",
+   "province": "Cordoba",
+   "criteria": "Edad , Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.515766,
+   "longitude": -5.064166
+  },
+  {
+   "id": "rediam_35",
+   "name": "Encina del Cortijo de Vichira",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_35.pdf",
+   "latitude": 37.376178,
+   "longitude": -4.299368
+  },
+  {
+   "id": "rediam_73",
+   "name": "Encina del Puente sobre el Río Guadamatilla",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_73.pdf",
+   "latitude": 38.492466,
+   "longitude": -5.015767
+  },
+  {
+   "id": "rediam_89",
+   "name": "Encina del Rincón Berracoso",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 38.475089,
+   "longitude": -4.999149
+  },
+  {
+   "id": "rediam_32",
+   "name": "Encina del Tejón",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_32.pdf",
+   "latitude": 37.366685,
+   "longitude": -4.261631
+  },
+  {
+   "id": "rediam_134",
+   "name": "Enebro de El Ingeniero",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_134.pdf",
+   "latitude": 37.402255,
+   "longitude": -4.511808
+  },
+  {
+   "id": "rediam_101",
+   "name": "Enebro de la Vegueta del Fresno",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_101.pdf",
+   "latitude": 38.240525,
+   "longitude": -4.218109
+  },
+  {
+   "id": "rediam_43",
+   "name": "Eucalipto de El Cerrillo",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Otros",
+   "sheet_pdf": null,
+   "latitude": 37.925685,
+   "longitude": -4.806474
+  },
+  {
+   "id": "rediam_69",
+   "name": "Eucalipto de la Fuente Agria de El Hoyo",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_69.pdf",
+   "latitude": 38.248058,
+   "longitude": -5.284357
+  },
+  {
+   "id": "rediam_107",
+   "name": "Eucalipto de la Hacienda de Nublos",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_107.pdf",
+   "latitude": 37.817773,
+   "longitude": -5.20246
+  },
+  {
+   "id": "rediam_47",
+   "name": "Eucalipto de Mezquetillas de Los Herrero",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.786017,
+   "longitude": -5.318523
+  },
+  {
+   "id": "rediam_65",
+   "name": "Fresno del Arroyo del Valle",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_65.pdf",
+   "latitude": 38.220991,
+   "longitude": -5.04713
+  },
+  {
+   "id": "rediam_64",
+   "name": "Higuera del Cortijo del Maestro",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.224929,
+   "longitude": -4.979823
+  },
+  {
+   "id": "rediam_29",
+   "name": "Lentisco de Las Capellanías I",
+   "province": "Cordoba",
+   "criteria": "Forma , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_29.pdf",
+   "latitude": 37.407945,
+   "longitude": -4.351828
+  },
+  {
+   "id": "rediam_135",
+   "name": "Lentisco de las Capellanías II",
+   "province": "Cordoba",
+   "criteria": "Forma , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_135.pdf",
+   "latitude": 37.406531,
+   "longitude": -4.351438
+  },
+  {
+   "id": "rediam_44",
+   "name": "Lentisco de San Bernardo",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_44.pdf",
+   "latitude": 37.84165,
+   "longitude": -5.281821
+  },
+  {
+   "id": "rediam_28",
+   "name": "Lentisco híbrido de Escuchagranos",
+   "province": "Cordoba",
+   "criteria": "Rareza , Forma , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_28.pdf",
+   "latitude": 37.430307,
+   "longitude": -4.3466
+  },
+  {
+   "id": "rediam_45",
+   "name": "Lentisco híbrido de San Bernardo",
+   "province": "Cordoba",
+   "criteria": "Rareza , Forma , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_45.pdf",
+   "latitude": 37.841977,
+   "longitude": -5.274469
+  },
+  {
+   "id": "rediam_26",
+   "name": "Madroño del Cortijo de la Fuente de la Gitana",
+   "province": "Cordoba",
+   "criteria": "Forma , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_26.pdf",
+   "latitude": 37.304657,
+   "longitude": -4.351914
+  },
+  {
+   "id": "rediam_98",
+   "name": "Magnolio de Mojapiés",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.084645,
+   "longitude": -4.366097
+  },
+  {
+   "id": "rediam_49",
+   "name": "Mesto de Fuenreal Alto",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Rareza , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_49.pdf",
+   "latitude": 37.849134,
+   "longitude": -5.011515
+  },
+  {
+   "id": "rediam_46",
+   "name": "Mesto de Las Cruces",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.809893,
+   "longitude": -5.240811
+  },
+  {
+   "id": "rediam_37",
+   "name": "Morera de la N-IV",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.918767,
+   "longitude": -4.69756
+  },
+  {
+   "id": "rediam_61",
+   "name": "Nogal de la Venta de las Navas",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_61.pdf",
+   "latitude": 37.417575,
+   "longitude": -4.087072
+  },
+  {
+   "id": "rediam_90",
+   "name": "Olivo de El Calvario",
+   "province": "Cordoba",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 38.420791,
+   "longitude": -5.045571
+  },
+  {
+   "id": "rediam_53",
+   "name": "Olivo de La Molina",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_53.pdf",
+   "latitude": 37.538217,
+   "longitude": -4.601551
+  },
+  {
+   "id": "rediam_57",
+   "name": "Olivo de la Vereda de las Granadas",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": null,
+   "latitude": 37.50605,
+   "longitude": -4.687249
+  },
+  {
+   "id": "rediam_62",
+   "name": "Olivo Viejo de El Baldío",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_62.pdf",
+   "latitude": 37.529888,
+   "longitude": -4.127958
+  },
+  {
+   "id": "rediam_67",
+   "name": "Olmo de la Ermita de Nuestra Señora de la Estrella",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_67.pdf",
+   "latitude": 38.159403,
+   "longitude": -5.01752
+  },
+  {
+   "id": "rediam_51",
+   "name": "Pino de Valdearenales",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.61979,
+   "longitude": -4.700952
+  },
+  {
+   "id": "rediam_60",
+   "name": "Pino del Arroyo Salado",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_60.pdf",
+   "latitude": 37.397084,
+   "longitude": -4.185861
+  },
+  {
+   "id": "rediam_41",
+   "name": "Pino del Canal del Guadalmellato",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_41.pdf",
+   "latitude": 37.903085,
+   "longitude": -4.772562
+  },
+  {
+   "id": "rediam_91",
+   "name": "Piruétano de la Sierra de Santa Eufemia",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_91.pdf",
+   "latitude": 38.607545,
+   "longitude": -4.911873
+  },
+  {
+   "id": "rediam_21",
+   "name": "Quejigo de El Navazuelo I",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_21.pdf",
+   "latitude": 37.485297,
+   "longitude": -4.345414
+  },
+  {
+   "id": "rediam_23",
+   "name": "Quejigo de El Navazuelo II",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_23.pdf",
+   "latitude": 37.485713,
+   "longitude": -4.347515
+  },
+  {
+   "id": "rediam_63",
+   "name": "Quejigo de la Peñuela",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_63.pdf",
+   "latitude": 37.397358,
+   "longitude": -4.25194
+  },
+  {
+   "id": "rediam_99",
+   "name": "Roble melojo de Santa Clotilde",
+   "province": "Cordoba",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_99.pdf",
+   "latitude": 38.216317,
+   "longitude": -4.282188
+  },
+  {
+   "id": "rediam_52",
+   "name": "Saéco de la Vereda del Cerro Macho",
+   "province": "Cordoba",
+   "criteria": "Rareza , Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.548973,
+   "longitude": -4.542751
+  },
+  {
+   "id": "rediam_31",
+   "name": "Serbo del Cortijo Severo",
+   "province": "Cordoba",
+   "criteria": "Rareza , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_31.pdf",
+   "latitude": 37.362125,
+   "longitude": -4.22593
+  },
+  {
+   "id": "rediam_55",
+   "name": "Taraje del Vado de Las Estacas",
+   "province": "Cordoba",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_55.pdf",
+   "latitude": 37.677919,
+   "longitude": -4.309785
+  },
+  {
+   "id": "rediam_169",
+   "name": "Abeto del Cortijo de El Pino",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.159901,
+   "longitude": -3.643196
+  },
+  {
+   "id": "rediam_209",
+   "name": "Acerolo de Palomeque",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_209.pdf",
+   "latitude": 37.470376,
+   "longitude": -3.651721
+  },
+  {
+   "id": "rediam_240",
+   "name": "Alcornoque de la Loma Narváez",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.2624,
+   "longitude": -3.278145
+  },
+  {
+   "id": "rediam_331",
+   "name": "Alcornoque del Barranco Pico de la Peña",
+   "province": "Granada",
+   "criteria": "Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_331.pdf",
+   "latitude": 36.941855,
+   "longitude": -3.29735
+  },
+  {
+   "id": "rediam_258",
+   "name": "Algarrobo de La Ermita",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 36.924158,
+   "longitude": -3.576208
+  },
+  {
+   "id": "rediam_313",
+   "name": "Almez de la Fuente del Portillón",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_313.pdf",
+   "latitude": 36.937018,
+   "longitude": -3.367266
+  },
+  {
+   "id": "rediam_158",
+   "name": "Almez del Molino de Santos",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_158.pdf",
+   "latitude": 37.293182,
+   "longitude": -3.881615
+  },
+  {
+   "id": "rediam_328",
+   "name": "Castaño de El Rescate",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.789747,
+   "longitude": -3.757652
+  },
+  {
+   "id": "rediam_168",
+   "name": "Castaño de Indias del Cortijo Las Cañas",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.178647,
+   "longitude": -3.700626
+  },
+  {
+   "id": "rediam_167",
+   "name": "Castaño de Indias del Cortijo Las Cañas",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.178461,
+   "longitude": -3.700577
+  },
+  {
+   "id": "rediam_330",
+   "name": "Castaño de la Alberca",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.927294,
+   "longitude": -3.319219
+  },
+  {
+   "id": "rediam_354",
+   "name": "Castaño de La vega",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 36.968364,
+   "longitude": -3.550873
+  },
+  {
+   "id": "rediam_307",
+   "name": "Castaño de Los Mellizos",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.287456,
+   "longitude": -2.813807
+  },
+  {
+   "id": "rediam_351",
+   "name": "Castaño del Cortijo El Rey",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_351.pdf",
+   "latitude": 36.972045,
+   "longitude": -3.280819
+  },
+  {
+   "id": "rediam_261",
+   "name": "Castaño del Cortijo Jurite",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 36.82278,
+   "longitude": -3.610448
+  },
+  {
+   "id": "rediam_797",
+   "name": "Castaño del Cortijo Martín",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_797.pdf",
+   "latitude": 37.286555,
+   "longitude": -3.24095
+  },
+  {
+   "id": "rediam_153",
+   "name": "Castaño del Haza del Lino",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_153.pdf",
+   "latitude": 36.815354,
+   "longitude": -3.309307
+  },
+  {
+   "id": "rediam_318",
+   "name": "Castaño del Pago de La Zubia",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_318.pdf",
+   "latitude": 37.007641,
+   "longitude": -3.070464
+  },
+  {
+   "id": "rediam_314",
+   "name": "Castaño El Abuelo",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_314.pdf",
+   "latitude": 37.130288,
+   "longitude": -3.370923
+  },
+  {
+   "id": "rediam_310",
+   "name": "Castaño Fina",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 36.942141,
+   "longitude": -3.319909
+  },
+  {
+   "id": "rediam_311",
+   "name": "Castaño Prieto",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_311.pdf",
+   "latitude": 36.942354,
+   "longitude": -3.319913
+  },
+  {
+   "id": "rediam_324",
+   "name": "Cerezo de La Paranza",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_324.pdf",
+   "latitude": 37.033682,
+   "longitude": -3.474573
+  },
+  {
+   "id": "rediam_272",
+   "name": "Chopo de La Ventica",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.668072,
+   "longitude": -2.673007
+  },
+  {
+   "id": "rediam_283",
+   "name": "Chopo del Cortijo de Maza I",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_283.pdf",
+   "latitude": 37.861398,
+   "longitude": -2.59294
+  },
+  {
+   "id": "rediam_284",
+   "name": "Chopo del Cortijo de Maza II",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_284.pdf",
+   "latitude": 37.861303,
+   "longitude": -2.593094
+  },
+  {
+   "id": "rediam_159",
+   "name": "Encina de ágreda",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_159.pdf",
+   "latitude": 37.369097,
+   "longitude": -3.898349
+  },
+  {
+   "id": "rediam_273",
+   "name": "Encina de Chacón",
+   "province": "Granada",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_273.pdf",
+   "latitude": 37.770275,
+   "longitude": -2.676118
+  },
+  {
+   "id": "rediam_251",
+   "name": "Encina de El Quejigal",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.045936,
+   "longitude": -4.027081
+  },
+  {
+   "id": "rediam_276",
+   "name": "Encina de la Altichuela",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_276.pdf",
+   "latitude": 37.456685,
+   "longitude": -2.706896
+  },
+  {
+   "id": "rediam_182",
+   "name": "Encina de la Era",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_182.pdf",
+   "latitude": 37.28982,
+   "longitude": -3.114732
+  },
+  {
+   "id": "rediam_352",
+   "name": "Encina de La Inquisición",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_352.pdf",
+   "latitude": 37.357244,
+   "longitude": -4.002573
+  },
+  {
+   "id": "rediam_156",
+   "name": "Encina de la Tía Manuela",
+   "province": "Granada",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_156.pdf",
+   "latitude": 36.832353,
+   "longitude": -3.301564
+  },
+  {
+   "id": "rediam_308",
+   "name": "Encina de la Vega de Baza",
+   "province": "Granada",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.464327,
+   "longitude": -2.760307
+  },
+  {
+   "id": "rediam_280",
+   "name": "Encina de Las Lanzas",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.945535,
+   "longitude": -2.497505
+  },
+  {
+   "id": "rediam_154",
+   "name": "Encina de las Tres Hermanas",
+   "province": "Granada",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_154.pdf",
+   "latitude": 36.836762,
+   "longitude": -3.301114
+  },
+  {
+   "id": "rediam_206",
+   "name": "Encina de Marchales",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_206.pdf",
+   "latitude": 37.435535,
+   "longitude": -3.750922
+  },
+  {
+   "id": "rediam_207",
+   "name": "Encina de Trujillos",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.455591,
+   "longitude": -3.788267
+  },
+  {
+   "id": "rediam_285",
+   "name": "Encina de Umbría Mora",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.864997,
+   "longitude": -2.684
+  },
+  {
+   "id": "rediam_350",
+   "name": "Encina de Ventorros de San José",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_350.pdf",
+   "latitude": 37.251042,
+   "longitude": -4.154373
+  },
+  {
+   "id": "rediam_248",
+   "name": "Encina del Cortijo de Los Reina",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_248.pdf",
+   "latitude": 36.946424,
+   "longitude": -4.020801
+  },
+  {
+   "id": "rediam_254",
+   "name": "Encina del Cortijo Horniceros",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_254.pdf",
+   "latitude": 37.147325,
+   "longitude": -3.970386
+  },
+  {
+   "id": "rediam_222",
+   "name": "Encina del Cortijo Manzanillo",
+   "province": "Granada",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.543892,
+   "longitude": -3.577279
+  },
+  {
+   "id": "rediam_214",
+   "name": "Encina del Cortijo Mitagalán",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.363847,
+   "longitude": -3.608117
+  },
+  {
+   "id": "rediam_160",
+   "name": "Encina del Espinar",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.333356,
+   "longitude": -3.869418
+  },
+  {
+   "id": "rediam_157",
+   "name": "Encina del Romero",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_157.pdf",
+   "latitude": 37.303106,
+   "longitude": -3.864046
+  },
+  {
+   "id": "rediam_205",
+   "name": "Encina del Rosalejo",
+   "province": "Granada",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_205.pdf",
+   "latitude": 37.394131,
+   "longitude": -3.760742
+  },
+  {
+   "id": "rediam_802",
+   "name": "Enebro del Barranco de La Tala",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_802.pdf",
+   "latitude": 37.946295,
+   "longitude": -2.667002
+  },
+  {
+   "id": "rediam_279",
+   "name": "Fresno del Camino del Rincón del Obispo",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_279.pdf",
+   "latitude": 37.927465,
+   "longitude": -2.498941
+  },
+  {
+   "id": "rediam_286",
+   "name": "Fresno del Cortijo El Doctor I",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.882431,
+   "longitude": -2.663515
+  },
+  {
+   "id": "rediam_287",
+   "name": "Fresno del Cortijo El Doctor II",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.882415,
+   "longitude": -2.6634
+  },
+  {
+   "id": "rediam_808",
+   "name": "Madroño de La Portilla",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_808.pdf",
+   "latitude": 37.822942,
+   "longitude": -2.546647
+  },
+  {
+   "id": "rediam_322",
+   "name": "Majuelo de Las Praderas",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_322.pdf",
+   "latitude": 37.026087,
+   "longitude": -3.491292
+  },
+  {
+   "id": "rediam_291",
+   "name": "Manzano del Barranco del Tornajuelo",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_291.pdf",
+   "latitude": 37.953911,
+   "longitude": -2.646639
+  },
+  {
+   "id": "rediam_178",
+   "name": "Mimbrera del Cortijo Periate",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.407818,
+   "longitude": -3.496214
+  },
+  {
+   "id": "rediam_299",
+   "name": "Moral de El Villar",
+   "province": "Granada",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 37.81559,
+   "longitude": -2.776857
+  },
+  {
+   "id": "rediam_292",
+   "name": "Mostajo de la Fuente de Los Pastores",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_292.pdf",
+   "latitude": 38.020986,
+   "longitude": -2.574099
+  },
+  {
+   "id": "rediam_312",
+   "name": "Nogal de los Cortijuelos",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.057934,
+   "longitude": -3.073466
+  },
+  {
+   "id": "rediam_282",
+   "name": "Nogal del Cortijo Umbría",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_282.pdf",
+   "latitude": 37.966359,
+   "longitude": -2.528748
+  },
+  {
+   "id": "rediam_264",
+   "name": "Olivo de García Lorca",
+   "province": "Granada",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_264.pdf",
+   "latitude": 37.244928,
+   "longitude": -3.55348
+  },
+  {
+   "id": "rediam_257",
+   "name": "Olivo de Los Caídos",
+   "province": "Granada",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 36.93817,
+   "longitude": -3.564326
+  },
+  {
+   "id": "rediam_210",
+   "name": "Olivo de Los Castellones I",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.433898,
+   "longitude": -3.631909
+  },
+  {
+   "id": "rediam_211",
+   "name": "Olivo de Los Castellones II",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.433977,
+   "longitude": -3.631746
+  },
+  {
+   "id": "rediam_269",
+   "name": "Olivo de San Torcuato",
+   "province": "Granada",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 37.388615,
+   "longitude": -3.13794
+  },
+  {
+   "id": "rediam_213",
+   "name": "Olmo del Cortijo Mitagalán",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.361951,
+   "longitude": -3.608581
+  },
+  {
+   "id": "rediam_231",
+   "name": "Pino de El Llano",
+   "province": "Granada",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_231.pdf",
+   "latitude": 37.42548,
+   "longitude": -3.095741
+  },
+  {
+   "id": "rediam_293",
+   "name": "Pino de Ferrario",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_293.pdf",
+   "latitude": 37.945453,
+   "longitude": -2.555228
+  },
+  {
+   "id": "rediam_315",
+   "name": "Pino de la Casa Forestal San Marcos",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.618635,
+   "longitude": -2.697803
+  },
+  {
+   "id": "rediam_175",
+   "name": "Pino de La Melera",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.367562,
+   "longitude": -3.427244
+  },
+  {
+   "id": "rediam_143",
+   "name": "Pino de las Cinco Ramas",
+   "province": "Granada",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_143.pdf",
+   "latitude": 36.886189,
+   "longitude": -3.769047
+  },
+  {
+   "id": "rediam_300",
+   "name": "Pino de Los Madroñales",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_300.pdf",
+   "latitude": 37.827109,
+   "longitude": -2.792012
+  },
+  {
+   "id": "rediam_193",
+   "name": "Pino de Monterrey del Posterillo",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.157764,
+   "longitude": -3.191696
+  },
+  {
+   "id": "rediam_294",
+   "name": "Pino de Santa Rita",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.819923,
+   "longitude": -2.54568
+  },
+  {
+   "id": "rediam_289",
+   "name": "Pino del Barranco del Tornajuelo I",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_289.pdf",
+   "latitude": 37.964886,
+   "longitude": -2.662273
+  },
+  {
+   "id": "rediam_290",
+   "name": "Pino del Barranco del Tornajuelo II",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.957522,
+   "longitude": -2.66297
+  },
+  {
+   "id": "rediam_270",
+   "name": "Pino del Barranco Fique",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_270.pdf",
+   "latitude": 37.661065,
+   "longitude": -2.79994
+  },
+  {
+   "id": "rediam_297",
+   "name": "Pino del Cortijo Chirimbolo",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_297.pdf",
+   "latitude": 37.816756,
+   "longitude": -2.767504
+  },
+  {
+   "id": "rediam_353",
+   "name": "Pino del Cortijo de Pitos",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 36.907833,
+   "longitude": -3.205874
+  },
+  {
+   "id": "rediam_147",
+   "name": "Pino del Cortijo El Pino",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_147.pdf",
+   "latitude": 36.930671,
+   "longitude": -3.622446
+  },
+  {
+   "id": "rediam_230",
+   "name": "Pino Grande",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_230.pdf",
+   "latitude": 37.477655,
+   "longitude": -2.939495
+  },
+  {
+   "id": "rediam_306",
+   "name": "Pino La Señora",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_306.pdf",
+   "latitude": 37.37213,
+   "longitude": -2.885687
+  },
+  {
+   "id": "rediam_265",
+   "name": "Pino Nieto",
+   "province": "Granada",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_265.pdf",
+   "latitude": 37.350509,
+   "longitude": -2.927299
+  },
+  {
+   "id": "rediam_805",
+   "name": "Pino Real",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_805.pdf",
+   "latitude": 36.787909,
+   "longitude": -3.389667
+  },
+  {
+   "id": "rediam_267",
+   "name": "Pinsapo del Vivero de Alfaguara",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.260022,
+   "longitude": -3.530154
+  },
+  {
+   "id": "rediam_226",
+   "name": "Plátano de la Cacería de Santo Domingo",
+   "province": "Granada",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_226.pdf",
+   "latitude": 37.153149,
+   "longitude": -3.576936
+  },
+  {
+   "id": "rediam_174",
+   "name": "Plátano del Cortijo Hortichuela",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_174.pdf",
+   "latitude": 37.354797,
+   "longitude": -3.459549
+  },
+  {
+   "id": "rediam_208",
+   "name": "Quejigo de Burrufete Alto",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_208.pdf",
+   "latitude": 37.447207,
+   "longitude": -3.763007
+  },
+  {
+   "id": "rediam_249",
+   "name": "Quejigo de Júrtiga",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_249.pdf",
+   "latitude": 36.99278,
+   "longitude": -4.047619
+  },
+  {
+   "id": "rediam_173",
+   "name": "Quejiigo de Los Prados",
+   "province": "Granada",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.325143,
+   "longitude": -3.607413
+  },
+  {
+   "id": "rediam_334",
+   "name": "Roble de las Balsas",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_334.pdf",
+   "latitude": 36.968749,
+   "longitude": -3.280848
+  },
+  {
+   "id": "rediam_335",
+   "name": "Roble de Los Jeromos",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_335.pdf",
+   "latitude": 36.966569,
+   "longitude": -3.27792
+  },
+  {
+   "id": "rediam_345",
+   "name": "Roble del Barranco de Los Sapos",
+   "province": "Granada",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_345.pdf",
+   "latitude": 36.970963,
+   "longitude": -3.275489
+  },
+  {
+   "id": "rediam_327",
+   "name": "Sauce de Fuente Fría",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_327.pdf",
+   "latitude": 37.019146,
+   "longitude": -3.491113
+  },
+  {
+   "id": "rediam_177",
+   "name": "Sauce llorón del Cortijo Periate",
+   "province": "Granada",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_177.pdf",
+   "latitude": 37.40775,
+   "longitude": -3.496025
+  },
+  {
+   "id": "rediam_198",
+   "name": "Serbal de Barranco Hondo",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.138118,
+   "longitude": -3.073338
+  },
+  {
+   "id": "rediam_341",
+   "name": "Serbal de Gollizno",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.344801,
+   "longitude": -3.777951
+  },
+  {
+   "id": "rediam_281",
+   "name": "Serbal del Cortijo de Juan Robles",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_281.pdf",
+   "latitude": 37.954863,
+   "longitude": -2.485487
+  },
+  {
+   "id": "rediam_799",
+   "name": "Tejo de El Camarate",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_799.pdf",
+   "latitude": 37.172983,
+   "longitude": -3.266769
+  },
+  {
+   "id": "rediam_296",
+   "name": "Tejo de Tobilla Alta",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 38.034951,
+   "longitude": -2.54219
+  },
+  {
+   "id": "rediam_303",
+   "name": "Tejo del Barranco de La Osa",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_303.pdf",
+   "latitude": 37.917404,
+   "longitude": -2.749256
+  },
+  {
+   "id": "rediam_325",
+   "name": "Tejo del Barranco del Caballo",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_325.pdf",
+   "latitude": 37.035849,
+   "longitude": -3.471515
+  },
+  {
+   "id": "rediam_336",
+   "name": "Tejo del Trevenquillo",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_336.pdf",
+   "latitude": 37.0793,
+   "longitude": -3.474867
+  },
+  {
+   "id": "rediam_170",
+   "name": "Tilo del Cortijo de El Pino I",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.159949,
+   "longitude": -3.643149
+  },
+  {
+   "id": "rediam_171",
+   "name": "Tilo del Cortijo El Pino II",
+   "province": "Granada",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_171.pdf",
+   "latitude": 37.159831,
+   "longitude": -3.642936
+  },
+  {
+   "id": "rediam_1297",
+   "name": "Acebuche de El Espinillo",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1297.pdf",
+   "latitude": 37.633388,
+   "longitude": -6.60248
+  },
+  {
+   "id": "rediam_1313",
+   "name": "Acebuche de El Galindo",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.972277,
+   "longitude": -6.601878
+  },
+  {
+   "id": "rediam_1226",
+   "name": "Acebuche de El Palomar",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1226.pdf",
+   "latitude": 37.828703,
+   "longitude": -6.646019
+  },
+  {
+   "id": "rediam_1355",
+   "name": "Acebuche de El Partido",
+   "province": "Huelva",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1355.pdf",
+   "latitude": 37.432498,
+   "longitude": -6.891599
+  },
+  {
+   "id": "rediam_1272",
+   "name": "Adelfa de El Venero",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.870906,
+   "longitude": -6.768589
+  },
+  {
+   "id": "rediam_1314",
+   "name": "Adelfa de San Rafael",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.972319,
+   "longitude": -6.602657
+  },
+  {
+   "id": "rediam_1273",
+   "name": "Alcornoque de El Brueco",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1273.pdf",
+   "latitude": 38.010942,
+   "longitude": -7.045504
+  },
+  {
+   "id": "rediam_1381",
+   "name": "Alcornoque de El Catrecito",
+   "province": "Huelva",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1381.pdf",
+   "latitude": 37.15021,
+   "longitude": -6.622027
+  },
+  {
+   "id": "rediam_1256",
+   "name": "Alcornoque de El Chaparral",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1256.pdf",
+   "latitude": 37.882933,
+   "longitude": -6.530899
+  },
+  {
+   "id": "rediam_1323",
+   "name": "Alcornoque de El Palancar",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1323.pdf",
+   "latitude": 37.931709,
+   "longitude": -6.421224
+  },
+  {
+   "id": "rediam_1244",
+   "name": "Alcornoque de El Talenque",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1244.pdf",
+   "latitude": 37.931712,
+   "longitude": -6.681612
+  },
+  {
+   "id": "rediam_1405",
+   "name": "Alcornoque de Garruchena",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1405.pdf",
+   "latitude": 37.344824,
+   "longitude": -6.464755
+  },
+  {
+   "id": "rediam_1276",
+   "name": "Alcornoque de la Corte del Romero",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1276.pdf",
+   "latitude": 37.933473,
+   "longitude": -6.870389
+  },
+  {
+   "id": "rediam_1287",
+   "name": "Alcornoque de la Dehesa de la Jineta y el Cabril",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1287.pdf",
+   "latitude": 37.972864,
+   "longitude": -6.302139
+  },
+  {
+   "id": "rediam_1247",
+   "name": "Alcornoque de la Finca La Torre",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1247.pdf",
+   "latitude": 37.994515,
+   "longitude": -6.878074
+  },
+  {
+   "id": "rediam_1277",
+   "name": "Alcornoque de La Garrapata I",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1277.pdf",
+   "latitude": 37.939255,
+   "longitude": -6.899824
+  },
+  {
+   "id": "rediam_1278",
+   "name": "Alcornoque de La Garrapata II",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1278.pdf",
+   "latitude": 37.93958,
+   "longitude": -6.899335
+  },
+  {
+   "id": "rediam_1225",
+   "name": "Alcornoque de la India",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1225.pdf",
+   "latitude": 37.821954,
+   "longitude": -6.650681
+  },
+  {
+   "id": "rediam_1246",
+   "name": "Alcornoque de la Pica",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1246.pdf",
+   "latitude": 37.955846,
+   "longitude": -6.820278
+  },
+  {
+   "id": "rediam_1242",
+   "name": "Alcornoque de la Sierra de la Virgen",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1242.pdf",
+   "latitude": 37.885199,
+   "longitude": -6.654747
+  },
+  {
+   "id": "rediam_1318",
+   "name": "Alcornoque de las Minas de Teuler",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1318.pdf",
+   "latitude": 37.927354,
+   "longitude": -6.281184
+  },
+  {
+   "id": "rediam_1347",
+   "name": "Alcornoque de Los Melos",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1347.pdf",
+   "latitude": 37.549505,
+   "longitude": -6.686394
+  },
+  {
+   "id": "rediam_1264",
+   "name": "Alcornoque de Marín",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.758758,
+   "longitude": -6.433732
+  },
+  {
+   "id": "rediam_1311",
+   "name": "Alcornoque de Navalmanzano",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1311.pdf",
+   "latitude": 37.917761,
+   "longitude": -6.632155
+  },
+  {
+   "id": "rediam_1306",
+   "name": "Alcornoque de Salobrillo",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1306.pdf",
+   "latitude": 37.435241,
+   "longitude": -6.767071
+  },
+  {
+   "id": "rediam_1227",
+   "name": "Alcornoque de San Bartolomé",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1227.pdf",
+   "latitude": 37.829207,
+   "longitude": -6.642923
+  },
+  {
+   "id": "rediam_1377",
+   "name": "Alcornoque Gigante",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1377.pdf",
+   "latitude": 37.246986,
+   "longitude": -6.426232
+  },
+  {
+   "id": "rediam_1326",
+   "name": "Algarrobo de El Tejar",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1326.pdf",
+   "latitude": 37.832743,
+   "longitude": -6.352547
+  },
+  {
+   "id": "rediam_1424",
+   "name": "Algarrobo de la Presa del Chanza",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1424.pdf",
+   "latitude": 37.555943,
+   "longitude": -7.521645
+  },
+  {
+   "id": "rediam_1370",
+   "name": "Algarrobo de Rivera Grande",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.459461,
+   "longitude": -7.449758
+  },
+  {
+   "id": "rediam_1319",
+   "name": "Almendro de Jabata",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.96687,
+   "longitude": -6.390319
+  },
+  {
+   "id": "rediam_1285",
+   "name": "Castaño Retuerto",
+   "province": "Huelva",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1285.pdf",
+   "latitude": 37.891031,
+   "longitude": -6.68528
+  },
+  {
+   "id": "rediam_1418",
+   "name": "Chaparro Gordo de La Charca",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.251709,
+   "longitude": -6.779459
+  },
+  {
+   "id": "rediam_1401",
+   "name": "Chumbera de La Chaparrita I",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.594087,
+   "longitude": -6.457878
+  },
+  {
+   "id": "rediam_1402",
+   "name": "Chumbera de La Chaparrita II",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.594022,
+   "longitude": -6.457757
+  },
+  {
+   "id": "rediam_1378",
+   "name": "Cica de la Casa Forestal Cumbres Hermosas",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.284748,
+   "longitude": -6.43898
+  },
+  {
+   "id": "rediam_1333",
+   "name": "Ciprés de la Finca Rosal de Rociana",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.323963,
+   "longitude": -6.632899
+  },
+  {
+   "id": "rediam_1348",
+   "name": "Ciprés del Huerto Caro I",
+   "province": "Huelva",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.524182,
+   "longitude": -6.690306
+  },
+  {
+   "id": "rediam_1349",
+   "name": "Ciprés del Huerto Caro II",
+   "province": "Huelva",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.524073,
+   "longitude": -6.690293
+  },
+  {
+   "id": "rediam_1374",
+   "name": "Encina de El Algarrobo",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.266468,
+   "longitude": -6.449417
+  },
+  {
+   "id": "rediam_1291",
+   "name": "Encina de La Balonguilla",
+   "province": "Huelva",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 37.838788,
+   "longitude": -6.354138
+  },
+  {
+   "id": "rediam_1230",
+   "name": "Encina de La Bujarda",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1230.pdf",
+   "latitude": 37.869135,
+   "longitude": -6.521872
+  },
+  {
+   "id": "rediam_1399",
+   "name": "Encina de La Chaparrita",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1399.pdf",
+   "latitude": 37.594133,
+   "longitude": -6.457596
+  },
+  {
+   "id": "rediam_1239",
+   "name": "Encina de la Dehesa del Carrizal",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.837471,
+   "longitude": -6.607578
+  },
+  {
+   "id": "rediam_1262",
+   "name": "Encina de la Muñoza",
+   "province": "Huelva",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 37.858842,
+   "longitude": -6.523135
+  },
+  {
+   "id": "rediam_1240",
+   "name": "Encina de la Peña de Arias Montano",
+   "province": "Huelva",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 37.877,
+   "longitude": -6.668471
+  },
+  {
+   "id": "rediam_1259",
+   "name": "Encina de Las Tapias",
+   "province": "Huelva",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.924546,
+   "longitude": -6.769173
+  },
+  {
+   "id": "rediam_1320",
+   "name": "Encina de los Llanos de la Nava I",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1320.pdf",
+   "latitude": 37.998441,
+   "longitude": -6.421826
+  },
+  {
+   "id": "rediam_1321",
+   "name": "Encina de los Llanos de la Nava II",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.997491,
+   "longitude": -6.417839
+  },
+  {
+   "id": "rediam_1274",
+   "name": "Encina de Monte Perro",
+   "province": "Huelva",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.973225,
+   "longitude": -7.112881
+  },
+  {
+   "id": "rediam_1228",
+   "name": "Encina de San Bartolomé",
+   "province": "Huelva",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 37.831127,
+   "longitude": -6.643384
+  },
+  {
+   "id": "rediam_1289",
+   "name": "Encina Dehesa de San Francisco",
+   "province": "Huelva",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1289.pdf",
+   "latitude": 37.879285,
+   "longitude": -6.226898
+  },
+  {
+   "id": "rediam_1409",
+   "name": "Encina del Cerrado del Cotillo",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1409.pdf",
+   "latitude": 37.300589,
+   "longitude": -6.346065
+  },
+  {
+   "id": "rediam_1265",
+   "name": "Encina del Jarrama",
+   "province": "Huelva",
+   "criteria": "Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1265.pdf",
+   "latitude": 37.750378,
+   "longitude": -6.429771
+  },
+  {
+   "id": "rediam_1283",
+   "name": "Encina del Mayorazgo",
+   "province": "Huelva",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 37.848582,
+   "longitude": -6.810276
+  },
+  {
+   "id": "rediam_1263",
+   "name": "Encina del Piruétano",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1263.pdf",
+   "latitude": 37.761841,
+   "longitude": -6.494725
+  },
+  {
+   "id": "rediam_1438",
+   "name": "Enebro de la Cadena",
+   "province": "Huelva",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1438.pdf",
+   "latitude": 37.954707,
+   "longitude": -6.773343
+  },
+  {
+   "id": "rediam_1433",
+   "name": "Eucalipto de Juan Domínguez",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.991389,
+   "longitude": -6.444408
+  },
+  {
+   "id": "rediam_1434",
+   "name": "Eucalipto de La Cruz",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1434.pdf",
+   "latitude": 36.974711,
+   "longitude": -6.434266
+  },
+  {
+   "id": "rediam_1372",
+   "name": "Eucalipto de La Peguera",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.200313,
+   "longitude": -6.972802
+  },
+  {
+   "id": "rediam_1432",
+   "name": "Eucalipto de la Venta del Palacio de Doñana",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1432.pdf",
+   "latitude": 36.990466,
+   "longitude": -6.444529
+  },
+  {
+   "id": "rediam_1435",
+   "name": "Eucalipto de la Veta Puntal",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.974671,
+   "longitude": -6.434173
+  },
+  {
+   "id": "rediam_1266",
+   "name": "Eucalipto de Manzano Alto",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.762709,
+   "longitude": -6.444556
+  },
+  {
+   "id": "rediam_1316",
+   "name": "Fresno de El Toril",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1316.pdf",
+   "latitude": 37.913321,
+   "longitude": -6.724658
+  },
+  {
+   "id": "rediam_1298",
+   "name": "Fresno del Odiel",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1298.pdf",
+   "latitude": 37.799082,
+   "longitude": -6.551759
+  },
+  {
+   "id": "rediam_1448",
+   "name": "Fresno del Río Múrtigas",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1448.pdf",
+   "latitude": 38.031544,
+   "longitude": -6.789348
+  },
+  {
+   "id": "rediam_1255",
+   "name": "Laurel de El Chaparral",
+   "province": "Huelva",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.883585,
+   "longitude": -6.531008
+  },
+  {
+   "id": "rediam_1420",
+   "name": "Lentisco de El Acebuchal",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.202641,
+   "longitude": -6.954119
+  },
+  {
+   "id": "rediam_1429",
+   "name": "Lentisco del Pocito Pileta",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1429.pdf",
+   "latitude": 37.201526,
+   "longitude": -6.418466
+  },
+  {
+   "id": "rediam_1284",
+   "name": "Madroño de Carcasalejos",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1284.pdf",
+   "latitude": 37.844212,
+   "longitude": -6.841627
+  },
+  {
+   "id": "rediam_1386",
+   "name": "Madroño de El Acebuche",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1386.pdf",
+   "latitude": 37.04677,
+   "longitude": -6.566004
+  },
+  {
+   "id": "rediam_1361",
+   "name": "Madroño de El Campillo I",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1361.pdf",
+   "latitude": 37.429612,
+   "longitude": -7.041691
+  },
+  {
+   "id": "rediam_1369",
+   "name": "Madroño de El Campillo II",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1369.pdf",
+   "latitude": 37.431316,
+   "longitude": -7.040805
+  },
+  {
+   "id": "rediam_1270",
+   "name": "Madroño de El Venero I",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1270.pdf",
+   "latitude": 37.871397,
+   "longitude": -6.769657
+  },
+  {
+   "id": "rediam_1271",
+   "name": "Madroño de El Venero II",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.871379,
+   "longitude": -6.769915
+  },
+  {
+   "id": "rediam_1238",
+   "name": "Madroño de La India",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1238.pdf",
+   "latitude": 37.83616,
+   "longitude": -6.582302
+  },
+  {
+   "id": "rediam_1267",
+   "name": "Madroño de Los Fontanales",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.850461,
+   "longitude": -6.443669
+  },
+  {
+   "id": "rediam_1237",
+   "name": "Madroño de Los Linarejos",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1237.pdf",
+   "latitude": 37.926388,
+   "longitude": -6.666331
+  },
+  {
+   "id": "rediam_1254",
+   "name": "Mesto de El Chaparral",
+   "province": "Huelva",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.883878,
+   "longitude": -6.531825
+  },
+  {
+   "id": "rediam_1293",
+   "name": "Mesto de La Lancha",
+   "province": "Huelva",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1293.pdf",
+   "latitude": 38.0763,
+   "longitude": -6.676159
+  },
+  {
+   "id": "rediam_1295",
+   "name": "Mesto de Las Veguillas",
+   "province": "Huelva",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.962301,
+   "longitude": -6.738505
+  },
+  {
+   "id": "rediam_1408",
+   "name": "Mesto de Torrecuadros",
+   "province": "Huelva",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.318031,
+   "longitude": -6.366924
+  },
+  {
+   "id": "rediam_1329",
+   "name": "Morera de la Dehesa Espina I",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.35131,
+   "longitude": -6.60465
+  },
+  {
+   "id": "rediam_1324",
+   "name": "Olivo de la Ermita de Zufre I",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.784186,
+   "longitude": -6.288118
+  },
+  {
+   "id": "rediam_1325",
+   "name": "Olivo de la Ermite de Zufre II",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.784442,
+   "longitude": -6.288306
+  },
+  {
+   "id": "rediam_1315",
+   "name": "Olmo de Cortelazor",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.934767,
+   "longitude": -6.624813
+  },
+  {
+   "id": "rediam_1412",
+   "name": "Pino Carabinero",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.175636,
+   "longitude": -6.796254
+  },
+  {
+   "id": "rediam_1419",
+   "name": "Pino Centenario del Parador de Mazagón",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1419.pdf",
+   "latitude": 37.113882,
+   "longitude": -6.768977
+  },
+  {
+   "id": "rediam_1415",
+   "name": "Pino Cotorra",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.25268,
+   "longitude": -6.844787
+  },
+  {
+   "id": "rediam_1390",
+   "name": "Pino de El Corchuelo",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.207861,
+   "longitude": -6.707367
+  },
+  {
+   "id": "rediam_1243",
+   "name": "Pino de la Atalaya",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1243.pdf",
+   "latitude": 37.913815,
+   "longitude": -6.710083
+  },
+  {
+   "id": "rediam_1375",
+   "name": "Pino de la Casa de El Algarrobo",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.265581,
+   "longitude": -6.439768
+  },
+  {
+   "id": "rediam_1380",
+   "name": "Pino de la Casa Forestal Cumbres Hermosas",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.284346,
+   "longitude": -6.438476
+  },
+  {
+   "id": "rediam_1360",
+   "name": "Pino de la Casa Forestal El Gato",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.245763,
+   "longitude": -7.080822
+  },
+  {
+   "id": "rediam_1411",
+   "name": "Pino de Las Balas",
+   "province": "Huelva",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.13748,
+   "longitude": -6.790546
+  },
+  {
+   "id": "rediam_1396",
+   "name": "Pino de los Mil Duros",
+   "province": "Huelva",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1396.pdf",
+   "latitude": 37.186208,
+   "longitude": -6.433158
+  },
+  {
+   "id": "rediam_1417",
+   "name": "Pino de Montemayor",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.261178,
+   "longitude": -6.812562
+  },
+  {
+   "id": "rediam_1373",
+   "name": "Pino de Puntales",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.250109,
+   "longitude": -7.023776
+  },
+  {
+   "id": "rediam_1358",
+   "name": "Pino del Campo Común de Arriba",
+   "province": "Huelva",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 37.369171,
+   "longitude": -7.226673
+  },
+  {
+   "id": "rediam_1357",
+   "name": "Pino del Cementerio Inglés",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.581332,
+   "longitude": -7.115161
+  },
+  {
+   "id": "rediam_1397",
+   "name": "Pino del Cercado Florita",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.285592,
+   "longitude": -6.389042
+  },
+  {
+   "id": "rediam_1407",
+   "name": "Pino del Cuadrejón",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.292036,
+   "longitude": -6.413117
+  },
+  {
+   "id": "rediam_1406",
+   "name": "Pino del Llano del Helechar",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.340036,
+   "longitude": -6.453242
+  },
+  {
+   "id": "rediam_1428",
+   "name": "Pino del Neguito",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.198081,
+   "longitude": -6.406364
+  },
+  {
+   "id": "rediam_1443",
+   "name": "Pino del Nudo",
+   "province": "Huelva",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1443.pdf",
+   "latitude": 36.807769,
+   "longitude": -6.351148
+  },
+  {
+   "id": "rediam_1367",
+   "name": "Pino del Valle Romero",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.298698,
+   "longitude": -7.05971
+  },
+  {
+   "id": "rediam_1414",
+   "name": "Pino Fiscal",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.207871,
+   "longitude": -6.8355
+  },
+  {
+   "id": "rediam_1416",
+   "name": "Pino Fuentepiña",
+   "province": "Huelva",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1416.pdf",
+   "latitude": 37.259376,
+   "longitude": -6.833223
+  },
+  {
+   "id": "rediam_1449",
+   "name": "Pino Gallinita",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1449.pdf",
+   "latitude": 37.437284,
+   "longitude": -7.089336
+  },
+  {
+   "id": "rediam_1427",
+   "name": "Pino Pañoño",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.22598,
+   "longitude": -6.366289
+  },
+  {
+   "id": "rediam_1332",
+   "name": "Pino Vaquero",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.2781,
+   "longitude": -6.726612
+  },
+  {
+   "id": "rediam_1410",
+   "name": "Pino Velázquez",
+   "province": "Huelva",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.144441,
+   "longitude": -6.814167
+  },
+  {
+   "id": "rediam_1279",
+   "name": "Piruétano de La Garrapata",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.93991,
+   "longitude": -6.896822
+  },
+  {
+   "id": "rediam_1446",
+   "name": "Plátano del Río Múrtigas I",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.045626,
+   "longitude": -6.801881
+  },
+  {
+   "id": "rediam_1447",
+   "name": "Plátano del Río Múrtigas II",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.045227,
+   "longitude": -6.80192
+  },
+  {
+   "id": "rediam_1241",
+   "name": "Quejigo de la Peña de Arias Montano",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1241.pdf",
+   "latitude": 37.878348,
+   "longitude": -6.66713
+  },
+  {
+   "id": "rediam_1290",
+   "name": "Quejigo de Las Raíces",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1290.pdf",
+   "latitude": 37.926023,
+   "longitude": -6.196265
+  },
+  {
+   "id": "rediam_1257",
+   "name": "Quejigo del Arroyo Mari Mateo I",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1257.pdf",
+   "latitude": 37.879773,
+   "longitude": -6.517091
+  },
+  {
+   "id": "rediam_1258",
+   "name": "Quejigo del Arroyo Mari Mateo II",
+   "province": "Huelva",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.878937,
+   "longitude": -6.515026
+  },
+  {
+   "id": "rediam_1250",
+   "name": "Quejigo del Cortijo La Torre I",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1250.pdf",
+   "latitude": 38.007557,
+   "longitude": -6.88904
+  },
+  {
+   "id": "rediam_1251",
+   "name": "Quejigo del Cortijo La Torre II",
+   "province": "Huelva",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1251.pdf",
+   "latitude": 38.007059,
+   "longitude": -6.888085
+  },
+  {
+   "id": "rediam_1400",
+   "name": "Quejigo del Puente El Chacho",
+   "province": "Huelva",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.577877,
+   "longitude": -6.401888
+  },
+  {
+   "id": "rediam_1305",
+   "name": "Roble de Pallares",
+   "province": "Huelva",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.493185,
+   "longitude": -6.833528
+  },
+  {
+   "id": "rediam_1078",
+   "name": "Abedul de la Cerrá de San Gines",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 38.076382,
+   "longitude": -2.895437
+  },
+  {
+   "id": "rediam_1027",
+   "name": "Acebuche de Las Hoyas",
+   "province": "Jaen",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1027.pdf",
+   "latitude": 37.938697,
+   "longitude": -2.991196
+  },
+  {
+   "id": "rediam_1052",
+   "name": "Acebuche del Campillo",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.274449,
+   "longitude": -3.048671
+  },
+  {
+   "id": "rediam_1051",
+   "name": "Acebuche Mano José",
+   "province": "Jaen",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 38.288984,
+   "longitude": -3.052777
+  },
+  {
+   "id": "rediam_1168",
+   "name": "álamo del Arroyo de La Yedra",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.036779,
+   "longitude": -3.453711
+  },
+  {
+   "id": "rediam_1148",
+   "name": "Alcornoque de La Azadillas",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.319596,
+   "longitude": -4.005564
+  },
+  {
+   "id": "rediam_1174",
+   "name": "Araar de Los Cañones",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.713128,
+   "longitude": -3.770889
+  },
+  {
+   "id": "rediam_1183",
+   "name": "Arrayán de la Bañizuela",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1183.pdf",
+   "latitude": 37.757372,
+   "longitude": -3.897264
+  },
+  {
+   "id": "rediam_1050",
+   "name": "Carrasca de Clotilde",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1050.pdf",
+   "latitude": 38.306832,
+   "longitude": -3.025684
+  },
+  {
+   "id": "rediam_1077",
+   "name": "Carrasca del Almedina",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1077.pdf",
+   "latitude": 38.026,
+   "longitude": -3.008069
+  },
+  {
+   "id": "rediam_1085",
+   "name": "Carrasca del Cortijo El Madroño",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.237523,
+   "longitude": -2.507422
+  },
+  {
+   "id": "rediam_1071",
+   "name": "Carrasco de Los Frailes",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1071.pdf",
+   "latitude": 38.418596,
+   "longitude": -2.593849
+  },
+  {
+   "id": "rediam_1112",
+   "name": "Castaño de la Fuente El Parral I",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.513141,
+   "longitude": -3.950194
+  },
+  {
+   "id": "rediam_1113",
+   "name": "Castaño de la Fuente El Parral II",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.513199,
+   "longitude": -3.950202
+  },
+  {
+   "id": "rediam_1020",
+   "name": "Castaño de la Yedra",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.825201,
+   "longitude": -2.910917
+  },
+  {
+   "id": "rediam_1178",
+   "name": "Castaño del Arroyo de Los Abares",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.9022,
+   "longitude": -2.92622
+  },
+  {
+   "id": "rediam_1149",
+   "name": "Castaño La Capellanía I",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 38.104772,
+   "longitude": -4.007991
+  },
+  {
+   "id": "rediam_1150",
+   "name": "Castaño La Capellanía II",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 38.104402,
+   "longitude": -4.008018
+  },
+  {
+   "id": "rediam_1122",
+   "name": "Chopo de la Fuente",
+   "province": "Jaen",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 37.778584,
+   "longitude": -3.507226
+  },
+  {
+   "id": "rediam_1092",
+   "name": "Chopo de Mata Bejid",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1092.pdf",
+   "latitude": 37.693798,
+   "longitude": -3.509997
+  },
+  {
+   "id": "rediam_1073",
+   "name": "Cornicabra de Peña Fleita",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.411477,
+   "longitude": -2.624206
+  },
+  {
+   "id": "rediam_1140",
+   "name": "Cornita de la Garganta de Valquemao",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.229819,
+   "longitude": -4.167314
+  },
+  {
+   "id": "rediam_1181",
+   "name": "Cornita de La Rajona",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1181.pdf",
+   "latitude": 37.956299,
+   "longitude": -2.92542
+  },
+  {
+   "id": "rediam_1144",
+   "name": "Cornita del Control Lugar Nuevo",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.154714,
+   "longitude": -4.021187
+  },
+  {
+   "id": "rediam_1076",
+   "name": "Cornita del Cortijo de Los Zaragoza",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1076.pdf",
+   "latitude": 37.998899,
+   "longitude": -3.009793
+  },
+  {
+   "id": "rediam_1014",
+   "name": "Cornita del Salto de los órganos I",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1014.pdf",
+   "latitude": 37.979497,
+   "longitude": -2.814908
+  },
+  {
+   "id": "rediam_1015",
+   "name": "Cornita del Salto de los órganos II",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1015.pdf",
+   "latitude": 37.979442,
+   "longitude": -2.815144
+  },
+  {
+   "id": "rediam_1105",
+   "name": "Coscoja de Cabeza Rubia",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1105.pdf",
+   "latitude": 37.980787,
+   "longitude": -2.891679
+  },
+  {
+   "id": "rediam_1048",
+   "name": "Coscoja de Las Mercedes",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1048.pdf",
+   "latitude": 38.377988,
+   "longitude": -3.038308
+  },
+  {
+   "id": "rediam_1030",
+   "name": "Coscoja Híbrida de El Segreo",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1030.pdf",
+   "latitude": 37.947567,
+   "longitude": -2.945141
+  },
+  {
+   "id": "rediam_1055",
+   "name": "Doncel del Moracho",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.427159,
+   "longitude": -2.629089
+  },
+  {
+   "id": "rediam_1145",
+   "name": "El árbol Grande",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.011013,
+   "longitude": -3.958764
+  },
+  {
+   "id": "rediam_1138",
+   "name": "Encina de la Beata",
+   "province": "Jaen",
+   "criteria": "Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1138.pdf",
+   "latitude": 37.63421,
+   "longitude": -3.848362
+  },
+  {
+   "id": "rediam_1016",
+   "name": "Encina de la Fuente El Roble",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1016.pdf",
+   "latitude": 38.063599,
+   "longitude": -2.77189
+  },
+  {
+   "id": "rediam_1162",
+   "name": "Encina de la Virgen",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 38.189337,
+   "longitude": -3.71329
+  },
+  {
+   "id": "rediam_1083",
+   "name": "Encina de Los Vilchites",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 38.018559,
+   "longitude": -2.982889
+  },
+  {
+   "id": "rediam_1124",
+   "name": "Encina de Navalayegua",
+   "province": "Jaen",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1124.pdf",
+   "latitude": 37.593551,
+   "longitude": -3.735333
+  },
+  {
+   "id": "rediam_1167",
+   "name": "Encina del Campanillo",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.046361,
+   "longitude": -3.432832
+  },
+  {
+   "id": "rediam_1128",
+   "name": "Encina del Cerro del Viento",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1128.pdf",
+   "latitude": 37.668561,
+   "longitude": -3.938909
+  },
+  {
+   "id": "rediam_1058",
+   "name": "Encina del Collao de la Cinta",
+   "province": "Jaen",
+   "criteria": "Forma",
+   "sheet_pdf": null,
+   "latitude": 38.468019,
+   "longitude": -2.795578
+  },
+  {
+   "id": "rediam_1022",
+   "name": "Encina Gorda del Cañuelo",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1022.pdf",
+   "latitude": 37.851477,
+   "longitude": -2.848814
+  },
+  {
+   "id": "rediam_1090",
+   "name": "Encina Milenaria de la Estación",
+   "province": "Jaen",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 37.666795,
+   "longitude": -3.263088
+  },
+  {
+   "id": "rediam_1053",
+   "name": "Enebro Centenario",
+   "province": "Jaen",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1053.pdf",
+   "latitude": 38.46264,
+   "longitude": -2.630581
+  },
+  {
+   "id": "rediam_1146",
+   "name": "Enebro de El Encinarejo",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1146.pdf",
+   "latitude": 38.163215,
+   "longitude": -3.994677
+  },
+  {
+   "id": "rediam_1095",
+   "name": "Enebro de La Torre Gallarín I",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1095.pdf",
+   "latitude": 37.61798,
+   "longitude": -3.528858
+  },
+  {
+   "id": "rediam_1096",
+   "name": "Enebro de La Torre Gallarín II",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1096.pdf",
+   "latitude": 37.617288,
+   "longitude": -3.53003
+  },
+  {
+   "id": "rediam_1220",
+   "name": "Enebro de Los Pastizales",
+   "province": "Jaen",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 38.418921,
+   "longitude": -3.583445
+  },
+  {
+   "id": "rediam_1221",
+   "name": "Enebro de Los Posadillas",
+   "province": "Jaen",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1221.pdf",
+   "latitude": 38.418921,
+   "longitude": -3.583445
+  },
+  {
+   "id": "rediam_1136",
+   "name": "Enebro de Parrizoso",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.613476,
+   "longitude": -3.726209
+  },
+  {
+   "id": "rediam_1170",
+   "name": "Eucalipto de Tobaruela",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.067509,
+   "longitude": -3.684685
+  },
+  {
+   "id": "rediam_1164",
+   "name": "Eucalipto del Arroyo de los Ríos",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1164.pdf",
+   "latitude": 38.198016,
+   "longitude": -3.667738
+  },
+  {
+   "id": "rediam_1172",
+   "name": "Eucalipto del Arroyo del Torrito",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1172.pdf",
+   "latitude": 38.082287,
+   "longitude": -3.603879
+  },
+  {
+   "id": "rediam_1157",
+   "name": "Eucalipto del Manzano",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.349021,
+   "longitude": -3.902939
+  },
+  {
+   "id": "rediam_1114",
+   "name": "Fresno de la Finca Almocadén",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.646365,
+   "longitude": -4.122658
+  },
+  {
+   "id": "rediam_1158",
+   "name": "Fresno de La Lancha",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.191096,
+   "longitude": -3.930127
+  },
+  {
+   "id": "rediam_1108",
+   "name": "Fresno del Cortijo de San José de Los Propios",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1108.pdf",
+   "latitude": 37.857672,
+   "longitude": -3.219017
+  },
+  {
+   "id": "rediam_1045",
+   "name": "Higuera del Arroyo Millar",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1045.pdf",
+   "latitude": 37.903227,
+   "longitude": -2.947161
+  },
+  {
+   "id": "rediam_1129",
+   "name": "La Estaca Grande",
+   "province": "Jaen",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 37.735789,
+   "longitude": -3.971077
+  },
+  {
+   "id": "rediam_1107",
+   "name": "Lentisco de El Palomar",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.958425,
+   "longitude": -2.962042
+  },
+  {
+   "id": "rediam_1037",
+   "name": "Lentisco de La Torre del Vinagre",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.013262,
+   "longitude": -2.872685
+  },
+  {
+   "id": "rediam_1049",
+   "name": "Lentisco de La Virgen",
+   "province": "Jaen",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 38.325012,
+   "longitude": -3.037959
+  },
+  {
+   "id": "rediam_1169",
+   "name": "Lentisco de Pastizales",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1169.pdf",
+   "latitude": 38.242855,
+   "longitude": -3.753542
+  },
+  {
+   "id": "rediam_1072",
+   "name": "Lentisco de Peñafleita",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1072.pdf",
+   "latitude": 38.411477,
+   "longitude": -2.624207
+  },
+  {
+   "id": "rediam_1155",
+   "name": "Lentisco de Santa Ana",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.007033,
+   "longitude": -3.846147
+  },
+  {
+   "id": "rediam_1142",
+   "name": "Lentisco del área del Jabalí",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.184778,
+   "longitude": -4.01859
+  },
+  {
+   "id": "rediam_1098",
+   "name": "Madroño de La Loma del Bellotón",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.895386,
+   "longitude": -3.027349
+  },
+  {
+   "id": "rediam_1103",
+   "name": "Madroño de Punta del Enebrillo",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1103.pdf",
+   "latitude": 37.953346,
+   "longitude": -2.870942
+  },
+  {
+   "id": "rediam_1041",
+   "name": "Majuelo de la Cabeza del Tejo",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.912461,
+   "longitude": -2.882818
+  },
+  {
+   "id": "rediam_1074",
+   "name": "Olivo Milenario",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.305503,
+   "longitude": -2.86747
+  },
+  {
+   "id": "rediam_1111",
+   "name": "Olivo de la Era de la Zarza",
+   "province": "Jaen",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1111.pdf",
+   "latitude": 37.526712,
+   "longitude": -3.959886
+  },
+  {
+   "id": "rediam_1127",
+   "name": "Olivo del Llano del Chinche",
+   "province": "Jaen",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.696396,
+   "longitude": -3.999983
+  },
+  {
+   "id": "rediam_1035",
+   "name": "Pino de Felix Rodríguez de la Fuente",
+   "province": "Jaen",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1035.pdf",
+   "latitude": 37.923172,
+   "longitude": -2.823673
+  },
+  {
+   "id": "rediam_1046",
+   "name": "Pino de la Fuente del Oso I",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1046.pdf",
+   "latitude": 37.909485,
+   "longitude": -2.941975
+  },
+  {
+   "id": "rediam_1047",
+   "name": "Pino de la Fuente del Oso II",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.908917,
+   "longitude": -2.94286
+  },
+  {
+   "id": "rediam_1042",
+   "name": "Pino de la Mala Mujer",
+   "province": "Jaen",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 37.9309,
+   "longitude": -2.86488
+  },
+  {
+   "id": "rediam_1018",
+   "name": "Pino de la Misa",
+   "province": "Jaen",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1018.pdf",
+   "latitude": 37.984835,
+   "longitude": -2.931004
+  },
+  {
+   "id": "rediam_1153",
+   "name": "Pino de la Señora",
+   "province": "Jaen",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 38.142219,
+   "longitude": -4.007522
+  },
+  {
+   "id": "rediam_1025",
+   "name": "Pino de Las Cruces",
+   "province": "Jaen",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 37.847608,
+   "longitude": -2.958961
+  },
+  {
+   "id": "rediam_1069",
+   "name": "Pino de Los Barrancos de Puentehonda",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.353216,
+   "longitude": -2.621766
+  },
+  {
+   "id": "rediam_1039",
+   "name": "Pino de Valdecuevas",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1039.pdf",
+   "latitude": 37.911781,
+   "longitude": -2.868394
+  },
+  {
+   "id": "rediam_1023",
+   "name": "Pino del Abuelo",
+   "province": "Jaen",
+   "criteria": "Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1023.pdf",
+   "latitude": 37.853902,
+   "longitude": -2.839155
+  },
+  {
+   "id": "rediam_1061",
+   "name": "Pino del Calarejo Chico",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.340467,
+   "longitude": -2.551547
+  },
+  {
+   "id": "rediam_1070",
+   "name": "Pino del Cerro de Bucentaina",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1070.pdf",
+   "latitude": 38.361657,
+   "longitude": -2.614446
+  },
+  {
+   "id": "rediam_1060",
+   "name": "Pino del Cortijo de Las Barrenqueras",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.40428,
+   "longitude": -2.564174
+  },
+  {
+   "id": "rediam_1147",
+   "name": "Pino del Km 21",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.145064,
+   "longitude": -4.008207
+  },
+  {
+   "id": "rediam_1033",
+   "name": "Pino El Galapan",
+   "province": "Jaen",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1033.pdf",
+   "latitude": 38.010608,
+   "longitude": -2.66412
+  },
+  {
+   "id": "rediam_1086",
+   "name": "Pino Laricio del Río Madera I",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.246022,
+   "longitude": -2.619616
+  },
+  {
+   "id": "rediam_1087",
+   "name": "Pino Laricio del Río Madera II",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.243965,
+   "longitude": -2.619985
+  },
+  {
+   "id": "rediam_1031",
+   "name": "Pino Pepe-Raso de la Puerta",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1031.pdf",
+   "latitude": 37.855337,
+   "longitude": -2.972424
+  },
+  {
+   "id": "rediam_1100",
+   "name": "Quejigo de Roblehermoso",
+   "province": "Jaen",
+   "criteria": "Edad",
+   "sheet_pdf": null,
+   "latitude": 37.951299,
+   "longitude": -2.867782
+  },
+  {
+   "id": "rediam_1126",
+   "name": "Quejigo del Amo",
+   "province": "Jaen",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1126.pdf",
+   "latitude": 37.596395,
+   "longitude": -3.706497
+  },
+  {
+   "id": "rediam_1135",
+   "name": "Quejigo del Amo o del Carbón",
+   "province": "Jaen",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1135.pdf",
+   "latitude": 37.594133,
+   "longitude": -3.727643
+  },
+  {
+   "id": "rediam_1029",
+   "name": "Quejigo del Lagar",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1029.pdf",
+   "latitude": 37.944411,
+   "longitude": -2.975147
+  },
+  {
+   "id": "rediam_1040",
+   "name": "Roble de la Cabeza del Tejo",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1040.pdf",
+   "latitude": 37.912461,
+   "longitude": -2.882818
+  },
+  {
+   "id": "rediam_1054",
+   "name": "Roble de la Dehesa del Oso",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.464296,
+   "longitude": -2.577073
+  },
+  {
+   "id": "rediam_1067",
+   "name": "Roble de Montesino",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.286238,
+   "longitude": -2.592615
+  },
+  {
+   "id": "rediam_1106",
+   "name": "Roble del Arroyo de la Teja",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1106.pdf",
+   "latitude": 37.965477,
+   "longitude": -2.907748
+  },
+  {
+   "id": "rediam_1059",
+   "name": "Roble del Cortijo La Tala",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1059.pdf",
+   "latitude": 38.399261,
+   "longitude": -2.693401
+  },
+  {
+   "id": "rediam_1081",
+   "name": "Sabina de La Fresnadilla I",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1081.pdf",
+   "latitude": 38.059864,
+   "longitude": -2.948308
+  },
+  {
+   "id": "rediam_1082",
+   "name": "Sabina de La Fresnadilla II",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.057286,
+   "longitude": -2.944082
+  },
+  {
+   "id": "rediam_1017",
+   "name": "Sabina de Las Lagunillas",
+   "province": "Jaen",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1017.pdf",
+   "latitude": 37.922351,
+   "longitude": -2.922062
+  },
+  {
+   "id": "rediam_1180",
+   "name": "Secuoya de la Torre del Vinagre",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 38.014911,
+   "longitude": -2.872434
+  },
+  {
+   "id": "rediam_1104",
+   "name": "Tejo del Barranco de La Iglesia",
+   "province": "Jaen",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1104.pdf",
+   "latitude": 37.955778,
+   "longitude": -2.867454
+  },
+  {
+   "id": "rediam_937",
+   "name": "Acebo de la Cañada del Pilar",
+   "province": "Malaga",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 36.674971,
+   "longitude": -5.009191
+  },
+  {
+   "id": "rediam_947",
+   "name": "Acerolo del Cortijo de Las Perdices",
+   "province": "Malaga",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_948.pdf",
+   "latitude": 37.008697,
+   "longitude": -4.64103
+  },
+  {
+   "id": "rediam_941",
+   "name": "Alcornoque de El Berrueco I",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_941.pdf",
+   "latitude": 36.61381,
+   "longitude": -5.429455
+  },
+  {
+   "id": "rediam_942",
+   "name": "Alcornoque de El Berrueco II",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_942.pdf",
+   "latitude": 36.613339,
+   "longitude": -5.429356
+  },
+  {
+   "id": "rediam_940",
+   "name": "Alcornoque de El Palero",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_940.pdf",
+   "latitude": 36.59601,
+   "longitude": -5.402971
+  },
+  {
+   "id": "rediam_1000",
+   "name": "Alcornoque de La Ventana",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1000.pdf",
+   "latitude": 36.518682,
+   "longitude": -5.593921
+  },
+  {
+   "id": "rediam_945",
+   "name": "Alcornoque de La Vereda",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_945.pdf",
+   "latitude": 36.516468,
+   "longitude": -5.59662
+  },
+  {
+   "id": "rediam_1218",
+   "name": "Alcornoque del Casarón de Los Bancales",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1218.pdf",
+   "latitude": 36.645103,
+   "longitude": -4.8981
+  },
+  {
+   "id": "rediam_972",
+   "name": "Alcornoque del Río Las Pasadas",
+   "province": "Malaga",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_972.pdf",
+   "latitude": 36.581714,
+   "longitude": -4.720211
+  },
+  {
+   "id": "rediam_905",
+   "name": "Algarrobo de Casas Viejas",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_905.pdf",
+   "latitude": 36.775182,
+   "longitude": -4.485883
+  },
+  {
+   "id": "rediam_969",
+   "name": "Algarrobo del Cortijo La Cacería",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_969.pdf",
+   "latitude": 36.751069,
+   "longitude": -4.840288
+  },
+  {
+   "id": "rediam_890",
+   "name": "Algarrobo del Cortijo Zarate I",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_890.pdf",
+   "latitude": 36.917111,
+   "longitude": -4.120959
+  },
+  {
+   "id": "rediam_891",
+   "name": "Algarrobo del Cortijo Zarate II",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_891.pdf",
+   "latitude": 36.917887,
+   "longitude": -4.121499
+  },
+  {
+   "id": "rediam_957",
+   "name": "Arce de la Peña del águila",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_957.pdf",
+   "latitude": 36.911892,
+   "longitude": -4.056646
+  },
+  {
+   "id": "rediam_946",
+   "name": "Arce de la Ruta Verde del Torcal de Antequera",
+   "province": "Malaga",
+   "criteria": "Rareza , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_946.pdf",
+   "latitude": 36.952165,
+   "longitude": -4.54901
+  },
+  {
+   "id": "rediam_985",
+   "name": "Arce del Cortijo Lifa",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_985.pdf",
+   "latitude": 36.747697,
+   "longitude": -5.025609
+  },
+  {
+   "id": "rediam_871",
+   "name": "Castaño Arena",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_871.pdf",
+   "latitude": 36.645147,
+   "longitude": -5.150335
+  },
+  {
+   "id": "rediam_956",
+   "name": "Castaño de la Carretera de Torrox",
+   "province": "Malaga",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_956.pdf",
+   "latitude": 36.796837,
+   "longitude": -3.965121
+  },
+  {
+   "id": "rediam_982",
+   "name": "Castaño de La Cruz",
+   "province": "Malaga",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_982.pdf",
+   "latitude": 36.553166,
+   "longitude": -5.200149
+  },
+  {
+   "id": "rediam_981",
+   "name": "Castaño de Los Saltarines",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_981.pdf",
+   "latitude": 36.553671,
+   "longitude": -5.205617
+  },
+  {
+   "id": "rediam_1217",
+   "name": "Castaño Macho",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1217.pdf",
+   "latitude": 36.590954,
+   "longitude": -4.827936
+  },
+  {
+   "id": "rediam_995",
+   "name": "Castaño Santo",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad , Forma , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_995.pdf",
+   "latitude": 36.613307,
+   "longitude": -5.016718
+  },
+  {
+   "id": "rediam_939",
+   "name": "Cornicabra del Cortijo de Los Núñez",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_939.pdf",
+   "latitude": 36.717377,
+   "longitude": -5.217765
+  },
+  {
+   "id": "rediam_986",
+   "name": "Encina de la Alberca",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_986.pdf",
+   "latitude": 36.852227,
+   "longitude": -5.105835
+  },
+  {
+   "id": "rediam_992",
+   "name": "Encina de Los Llanos del Zurraque",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_992.pdf",
+   "latitude": 36.709723,
+   "longitude": -5.311657
+  },
+  {
+   "id": "rediam_966",
+   "name": "Encina de Los Quinitos",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_966.pdf",
+   "latitude": 36.763283,
+   "longitude": -4.935913
+  },
+  {
+   "id": "rediam_918",
+   "name": "Encina del Cerro Mingo",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_918.pdf",
+   "latitude": 36.764689,
+   "longitude": -4.230739
+  },
+  {
+   "id": "rediam_861",
+   "name": "Encina del Vallecillo",
+   "province": "Malaga",
+   "criteria": "Tamaño , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_861.pdf",
+   "latitude": 36.65492,
+   "longitude": -5.129678
+  },
+  {
+   "id": "rediam_917",
+   "name": "Fresno del Cerro Santopitar",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_917.pdf",
+   "latitude": 36.804526,
+   "longitude": -4.290855
+  },
+  {
+   "id": "rediam_1214",
+   "name": "Hiedra del Agrasol",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1214.pdf",
+   "latitude": 36.950049,
+   "longitude": -4.553391
+  },
+  {
+   "id": "rediam_1215",
+   "name": "Hiedra del Barco",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1215.pdf",
+   "latitude": 36.949977,
+   "longitude": -4.553238
+  },
+  {
+   "id": "rediam_1213",
+   "name": "Hiedra del Macetón",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1213.pdf",
+   "latitude": 36.953074,
+   "longitude": -4.547418
+  },
+  {
+   "id": "rediam_901",
+   "name": "Laurel del Cortijo Auta",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.945545,
+   "longitude": -4.293014
+  },
+  {
+   "id": "rediam_988",
+   "name": "Lentisco del Cerro Mures",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_988.pdf",
+   "latitude": 36.758235,
+   "longitude": -5.223545
+  },
+  {
+   "id": "rediam_925",
+   "name": "Madroño de El Acebuchal",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_925.pdf",
+   "latitude": 36.796123,
+   "longitude": -4.635983
+  },
+  {
+   "id": "rediam_1007",
+   "name": "Majuelo de la Cueva del Agua",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1007.pdf",
+   "latitude": 36.732356,
+   "longitude": -4.968609
+  },
+  {
+   "id": "rediam_949",
+   "name": "Mesto del Cortijo Los Perales",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad , Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_949.pdf",
+   "latitude": 37.185973,
+   "longitude": -4.666971
+  },
+  {
+   "id": "rediam_892",
+   "name": "Mimbrera del Cortijo Las Puertas",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.945636,
+   "longitude": -4.134581
+  },
+  {
+   "id": "rediam_1201",
+   "name": "Mirto de Benefique",
+   "province": "Malaga",
+   "criteria": "Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1201.pdf",
+   "latitude": 36.826622,
+   "longitude": -4.362867
+  },
+  {
+   "id": "rediam_1203",
+   "name": "Mirto del puentecillo de Chaperas",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.826363,
+   "longitude": -4.363283
+  },
+  {
+   "id": "rediam_877",
+   "name": "Mostajo de la Cañada de La Plazoleta",
+   "province": "Malaga",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_877.pdf",
+   "latitude": 36.684077,
+   "longitude": -5.002724
+  },
+  {
+   "id": "rediam_952",
+   "name": "Nogal de El Nevazo",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_952.pdf",
+   "latitude": 36.882118,
+   "longitude": -3.952732
+  },
+  {
+   "id": "rediam_1209",
+   "name": "Olivo de Casa Santa I",
+   "province": "Malaga",
+   "criteria": "Tamaño , Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.901374,
+   "longitude": -4.47353
+  },
+  {
+   "id": "rediam_1210",
+   "name": "Olivo de Casa Santa II",
+   "province": "Malaga",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": null,
+   "latitude": 36.900965,
+   "longitude": -4.473678
+  },
+  {
+   "id": "rediam_1211",
+   "name": "Olivo de Casa Santa III",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 36.90102,
+   "longitude": -4.473651
+  },
+  {
+   "id": "rediam_902",
+   "name": "Olivo de Casaria",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_902.pdf",
+   "latitude": 36.902604,
+   "longitude": -4.456471
+  },
+  {
+   "id": "rediam_894",
+   "name": "Olivo de El Toril",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 36.928099,
+   "longitude": -4.147009
+  },
+  {
+   "id": "rediam_919",
+   "name": "Olivo de la Cañada del Cerro",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 36.741222,
+   "longitude": -4.249112
+  },
+  {
+   "id": "rediam_1212",
+   "name": "Olivo de Los Frailes",
+   "province": "Malaga",
+   "criteria": "Tamaño , Forma , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1212.pdf",
+   "latitude": 36.909861,
+   "longitude": -4.454524
+  },
+  {
+   "id": "rediam_1012",
+   "name": "Olivo de Santana",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 36.684215,
+   "longitude": -4.884211
+  },
+  {
+   "id": "rediam_912",
+   "name": "Olivo del Lagar",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 36.857306,
+   "longitude": -4.398932
+  },
+  {
+   "id": "rediam_889",
+   "name": "Olivo Parra",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_889.pdf",
+   "latitude": 36.894521,
+   "longitude": -4.131597
+  },
+  {
+   "id": "rediam_1199",
+   "name": "Olmo de Alfarnate",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1199.pdf",
+   "latitude": 36.990555,
+   "longitude": -4.278696
+  },
+  {
+   "id": "rediam_913",
+   "name": "Ombú de Jotrón",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad , Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_913.pdf",
+   "latitude": 36.827408,
+   "longitude": -4.416419
+  },
+  {
+   "id": "rediam_974",
+   "name": "Pino de El Cerezal",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_974.pdf",
+   "latitude": 36.571472,
+   "longitude": -4.862881
+  },
+  {
+   "id": "rediam_914",
+   "name": "Pino de Jotrón",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.828026,
+   "longitude": -4.416982
+  },
+  {
+   "id": "rediam_955",
+   "name": "Pino de las Tres Cruces",
+   "province": "Malaga",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_955.pdf",
+   "latitude": 36.866198,
+   "longitude": -3.927801
+  },
+  {
+   "id": "rediam_1216",
+   "name": "Pino del ángel",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 36.617945,
+   "longitude": -4.819353
+  },
+  {
+   "id": "rediam_968",
+   "name": "Pino del Cortijo La Cacería",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_968.pdf",
+   "latitude": 36.751257,
+   "longitude": -4.84007
+  },
+  {
+   "id": "rediam_973",
+   "name": "Pino del Juanar",
+   "province": "Malaga",
+   "criteria": "Forma , Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.578573,
+   "longitude": -4.884338
+  },
+  {
+   "id": "rediam_938",
+   "name": "Pinsapo de la Alcazaba",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_938.pdf",
+   "latitude": 36.676942,
+   "longitude": -5.010957
+  },
+  {
+   "id": "rediam_875",
+   "name": "Pinsapo de La Perra",
+   "province": "Malaga",
+   "criteria": "Tamaño , Forma , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_875.pdf",
+   "latitude": 36.701829,
+   "longitude": -4.978974
+  },
+  {
+   "id": "rediam_931",
+   "name": "Pinsapo de las Escaleretas",
+   "province": "Malaga",
+   "criteria": "Interés histórico cultural , Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_931.pdf",
+   "latitude": 36.66632,
+   "longitude": -5.033722
+  },
+  {
+   "id": "rediam_1003",
+   "name": "Pinsapo del Candelabro",
+   "province": "Malaga",
+   "criteria": "Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1003.pdf",
+   "latitude": 36.724121,
+   "longitude": -4.968207
+  },
+  {
+   "id": "rediam_929",
+   "name": "Pinsapo del Puntal de la Mesa",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_929.pdf",
+   "latitude": 36.663674,
+   "longitude": -5.03157
+  },
+  {
+   "id": "rediam_1005",
+   "name": "Pinsapo Moreno",
+   "province": "Malaga",
+   "criteria": "Tamaño , Forma , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1005.pdf",
+   "latitude": 36.720562,
+   "longitude": -4.982341
+  },
+  {
+   "id": "rediam_984",
+   "name": "Pinsapo Solitario",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_984.pdf",
+   "latitude": 36.745424,
+   "longitude": -5.02035
+  },
+  {
+   "id": "rediam_878",
+   "name": "Quejigo de la Cañada de La Plazoleta",
+   "province": "Malaga",
+   "criteria": "Rareza , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_878.pdf",
+   "latitude": 36.684109,
+   "longitude": -5.002107
+  },
+  {
+   "id": "rediam_998",
+   "name": "Quejigo de Puerto Oscuro I",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.509541,
+   "longitude": -5.596633
+  },
+  {
+   "id": "rediam_999",
+   "name": "Quejigo de Puerto Oscuro II",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_999.pdf",
+   "latitude": 36.510749,
+   "longitude": -5.597588
+  },
+  {
+   "id": "rediam_996",
+   "name": "Quejigo del Hoyo del Bote",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_996.pdf",
+   "latitude": 36.613629,
+   "longitude": -5.017295
+  },
+  {
+   "id": "rediam_953",
+   "name": "Roble Melojo del Nevazo",
+   "province": "Malaga",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 36.881704,
+   "longitude": -3.953462
+  },
+  {
+   "id": "rediam_1011",
+   "name": "Tejo de Froncaile",
+   "province": "Malaga",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_1011.pdf",
+   "latitude": 36.689479,
+   "longitude": -4.983123
+  },
+  {
+   "id": "rediam_906",
+   "name": "Tejo de la Raja del Cañuelo I",
+   "province": "Malaga",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_906.pdf",
+   "latitude": 36.908693,
+   "longitude": -4.059477
+  },
+  {
+   "id": "rediam_908",
+   "name": "Tejo de la Raja del Cañuelo II",
+   "province": "Malaga",
+   "criteria": "Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_908.pdf",
+   "latitude": 36.909191,
+   "longitude": -4.059538
+  },
+  {
+   "id": "rediam_678",
+   "name": "Acebuche de Casaquemada",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_678.pdf",
+   "latitude": 37.406428,
+   "longitude": -6.240576
+  },
+  {
+   "id": "rediam_478",
+   "name": "Acebuche de la Venta Alonso",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_478.pdf",
+   "latitude": 36.940357,
+   "longitude": -5.91382
+  },
+  {
+   "id": "rediam_475",
+   "name": "Acebuche de los Pinares de Aznalcázar",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_475.pdf",
+   "latitude": 37.242082,
+   "longitude": -6.199291
+  },
+  {
+   "id": "rediam_445",
+   "name": "Agracejo de La Jayona",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_445.pdf",
+   "latitude": 38.123807,
+   "longitude": -5.907255
+  },
+  {
+   "id": "rediam_356",
+   "name": "Alcornoque de El Berrocal",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_356.pdf",
+   "latitude": 37.844097,
+   "longitude": -6.045152
+  },
+  {
+   "id": "rediam_444",
+   "name": "Alcornoque de El Rincón",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Edad , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_444.pdf",
+   "latitude": 38.126844,
+   "longitude": -5.885289
+  },
+  {
+   "id": "rediam_454",
+   "name": "Alcornoque de la Casa de los Ingleses",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_454.pdf",
+   "latitude": 37.953389,
+   "longitude": -5.630615
+  },
+  {
+   "id": "rediam_411",
+   "name": "Alcornoque de la Garganta",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_411.pdf",
+   "latitude": 37.943138,
+   "longitude": -5.745621
+  },
+  {
+   "id": "rediam_473",
+   "name": "Alcornoque de Los Villares",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_473.pdf",
+   "latitude": 37.633788,
+   "longitude": -6.43604
+  },
+  {
+   "id": "rediam_463",
+   "name": "Algarrobo de la Ermita de la Virgen de Setefi",
+   "province": "Sevilla",
+   "criteria": "Edad , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_463.pdf",
+   "latitude": 37.732776,
+   "longitude": -5.480176
+  },
+  {
+   "id": "rediam_479",
+   "name": "Algarrobo de las Merras",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_479.pdf",
+   "latitude": 37.405045,
+   "longitude": -5.731235
+  },
+  {
+   "id": "rediam_367",
+   "name": "Almez de La Mina",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Rareza",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_367.pdf",
+   "latitude": 37.872327,
+   "longitude": -5.613756
+  },
+  {
+   "id": "rediam_469",
+   "name": "Castaño de la Serrana",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.995087,
+   "longitude": -5.835797
+  },
+  {
+   "id": "rediam_488",
+   "name": "Chaparro de la Vega",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Edad , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_488.pdf",
+   "latitude": 36.957663,
+   "longitude": -5.426665
+  },
+  {
+   "id": "rediam_460",
+   "name": "Coscoja Híbrida de Armijo",
+   "province": "Sevilla",
+   "criteria": "Rareza , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_460.pdf",
+   "latitude": 37.074862,
+   "longitude": -5.338864
+  },
+  {
+   "id": "rediam_468",
+   "name": "Encina de El Lobón",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_468.pdf",
+   "latitude": 37.973839,
+   "longitude": -5.792237
+  },
+  {
+   "id": "rediam_409",
+   "name": "Encina de El Sotillo",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_409.pdf",
+   "latitude": 37.954718,
+   "longitude": -5.772704
+  },
+  {
+   "id": "rediam_355",
+   "name": "Encina de la Corregidora",
+   "province": "Sevilla",
+   "criteria": "Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_355.pdf",
+   "latitude": 37.027567,
+   "longitude": -5.544767
+  },
+  {
+   "id": "rediam_446",
+   "name": "Encina de La Jayona",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 38.123207,
+   "longitude": -5.907878
+  },
+  {
+   "id": "rediam_472",
+   "name": "Encina de los Perros",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_472.pdf",
+   "latitude": 37.634424,
+   "longitude": -6.432311
+  },
+  {
+   "id": "rediam_486",
+   "name": "Encina del Descansadero de la Gargantina",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Edad , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_486.pdf",
+   "latitude": 37.984987,
+   "longitude": -5.84961
+  },
+  {
+   "id": "rediam_470",
+   "name": "Enebro de los Tohales",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_470.pdf",
+   "latitude": 37.95694,
+   "longitude": -5.929612
+  },
+  {
+   "id": "rediam_443",
+   "name": "Eucalipto de la Hacienda Torrijos I",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_443.pdf",
+   "latitude": 37.410994,
+   "longitude": -6.087779
+  },
+  {
+   "id": "rediam_442",
+   "name": "Eucalipto de la Hacienda Torrijos II",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.410859,
+   "longitude": -6.087768
+  },
+  {
+   "id": "rediam_368",
+   "name": "Eucalipto de la Huerta de Malagón I",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_368.pdf",
+   "latitude": 37.62881,
+   "longitude": -5.758446
+  },
+  {
+   "id": "rediam_369",
+   "name": "Eucalipto de la Huerta de Malagón II",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": null,
+   "latitude": 37.62853,
+   "longitude": -5.758493
+  },
+  {
+   "id": "rediam_437",
+   "name": "Eucalipto de la Huerta de Pilares",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.086884,
+   "longitude": -5.54577
+  },
+  {
+   "id": "rediam_414",
+   "name": "Eucalipto de la Pizana I",
+   "province": "Sevilla",
+   "criteria": "Forma , Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_414.pdf",
+   "latitude": 37.510732,
+   "longitude": -6.185613
+  },
+  {
+   "id": "rediam_413",
+   "name": "Eucalipto de la Pizana II",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Otros",
+   "sheet_pdf": null,
+   "latitude": 37.510814,
+   "longitude": -6.18586
+  },
+  {
+   "id": "rediam_365",
+   "name": "Eucalipto de Torre del Abad",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Otros",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_365.pdf",
+   "latitude": 37.245891,
+   "longitude": -5.727508
+  },
+  {
+   "id": "rediam_451",
+   "name": "Fresno del Molino del Corcho",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_451.pdf",
+   "latitude": 37.929606,
+   "longitude": -5.711147
+  },
+  {
+   "id": "rediam_462",
+   "name": "Higuera del Cortijo de las Monjas",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_462.pdf",
+   "latitude": 37.740949,
+   "longitude": -5.557732
+  },
+  {
+   "id": "rediam_485",
+   "name": "Laurel de la Finca El Alcornocal",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.956522,
+   "longitude": -5.768733
+  },
+  {
+   "id": "rediam_372",
+   "name": "Lentisco de El Fraile",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_372.pdf",
+   "latitude": 37.676203,
+   "longitude": -6.446849
+  },
+  {
+   "id": "rediam_361",
+   "name": "Lentisco de Hato Ratón",
+   "province": "Sevilla",
+   "criteria": "Forma , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_361.pdf",
+   "latitude": 37.167768,
+   "longitude": -6.329444
+  },
+  {
+   "id": "rediam_480",
+   "name": "Lentisco de La Buzona",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Edad , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_480.pdf",
+   "latitude": 37.507913,
+   "longitude": -5.773792
+  },
+  {
+   "id": "rediam_366",
+   "name": "Lentisco de Majadal Alto",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_366.pdf",
+   "latitude": 37.725884,
+   "longitude": -5.727899
+  },
+  {
+   "id": "rediam_412",
+   "name": "Lentisco del Arroyo Aguilar",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_412.pdf",
+   "latitude": 37.112272,
+   "longitude": -5.293286
+  },
+  {
+   "id": "rediam_357",
+   "name": "Lentisco del Llanazo",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_357.pdf",
+   "latitude": 37.244899,
+   "longitude": -6.322238
+  },
+  {
+   "id": "rediam_483",
+   "name": "Melojo de la Cañada Real del Robledo",
+   "province": "Sevilla",
+   "criteria": "Rareza",
+   "sheet_pdf": null,
+   "latitude": 37.887667,
+   "longitude": -5.607029
+  },
+  {
+   "id": "rediam_370",
+   "name": "Mesto de la Dehesa El Castillo",
+   "province": "Sevilla",
+   "criteria": "Rareza , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_370.pdf",
+   "latitude": 37.721897,
+   "longitude": -6.281392
+  },
+  {
+   "id": "rediam_489",
+   "name": "Mesto de la Loma del Arroz",
+   "province": "Sevilla",
+   "criteria": "Rareza , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_489.pdf",
+   "latitude": 36.953854,
+   "longitude": -5.428289
+  },
+  {
+   "id": "rediam_450",
+   "name": "Nogal de La Cartuja",
+   "province": "Sevilla",
+   "criteria": "Interés histórico cultural , Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.952506,
+   "longitude": -5.728091
+  },
+  {
+   "id": "rediam_464",
+   "name": "Olmo del Lagarón",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": null,
+   "latitude": 37.956633,
+   "longitude": -5.720011
+  },
+  {
+   "id": "rediam_491",
+   "name": "Ombú de la Torre de Doña María",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Rareza , Interés histórico cultural",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_491.pdf",
+   "latitude": 37.301604,
+   "longitude": -5.941557
+  },
+  {
+   "id": "rediam_363",
+   "name": "Palmito del Cortijo Las Cabezas",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_363.pdf",
+   "latitude": 37.763946,
+   "longitude": -5.721906
+  },
+  {
+   "id": "rediam_440",
+   "name": "Pino de El Lagar",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_440.pdf",
+   "latitude": 37.918197,
+   "longitude": -5.460216
+  },
+  {
+   "id": "rediam_362",
+   "name": "Pino de Hato Blanco Viejo",
+   "province": "Sevilla",
+   "criteria": "Interés histórico cultural , Otros , Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_362.pdf",
+   "latitude": 37.164945,
+   "longitude": -6.327167
+  },
+  {
+   "id": "rediam_471",
+   "name": "Pino de la Canaleja",
+   "province": "Sevilla",
+   "criteria": "Interés histórico cultural",
+   "sheet_pdf": null,
+   "latitude": 37.565829,
+   "longitude": -6.194941
+  },
+  {
+   "id": "rediam_360",
+   "name": "Pino de la Dehesa de Gatos",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_360.pdf",
+   "latitude": 37.251961,
+   "longitude": -6.330416
+  },
+  {
+   "id": "rediam_407",
+   "name": "Pino de la Venta La Sandía I",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.259574,
+   "longitude": -5.41746
+  },
+  {
+   "id": "rediam_408",
+   "name": "Pino de la Venta La Sandía II",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_408.pdf",
+   "latitude": 37.259757,
+   "longitude": -5.417319
+  },
+  {
+   "id": "rediam_410",
+   "name": "Pino de Los Pinchos Altos",
+   "province": "Sevilla",
+   "criteria": "Otros",
+   "sheet_pdf": null,
+   "latitude": 37.997298,
+   "longitude": -5.87961
+  },
+  {
+   "id": "rediam_447",
+   "name": "Pino de Trasierra",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_447.pdf",
+   "latitude": 37.912378,
+   "longitude": -5.770985
+  },
+  {
+   "id": "rediam_406",
+   "name": "Pino del Monte Armijo",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_406.pdf",
+   "latitude": 37.249237,
+   "longitude": -5.391731
+  },
+  {
+   "id": "rediam_359",
+   "name": "Pino del Pilón de la Casa del Guarda",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_359.pdf",
+   "latitude": 37.250909,
+   "longitude": -6.328987
+  },
+  {
+   "id": "rediam_477",
+   "name": "Pino del Tío Chusco",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_477.pdf",
+   "latitude": 37.200035,
+   "longitude": -6.313399
+  },
+  {
+   "id": "rediam_358",
+   "name": "Pino Enano",
+   "province": "Sevilla",
+   "criteria": "Rareza , Otros , Edad",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_358.pdf",
+   "latitude": 37.262176,
+   "longitude": -6.347507
+  },
+  {
+   "id": "rediam_482",
+   "name": "Piruétano de Navaholguín",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_482.pdf",
+   "latitude": 37.781749,
+   "longitude": -5.771388
+  },
+  {
+   "id": "rediam_455",
+   "name": "Quejigo de la Casa de los Ingleses",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": null,
+   "latitude": 37.953547,
+   "longitude": -5.62928
+  },
+  {
+   "id": "rediam_461",
+   "name": "Quejigo de la Fuemprieta",
+   "province": "Sevilla",
+   "criteria": "Tamaño",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_461.pdf",
+   "latitude": 37.023481,
+   "longitude": -5.168943
+  },
+  {
+   "id": "rediam_436",
+   "name": "Tilo de El Martinete",
+   "province": "Sevilla",
+   "criteria": "Tamaño , Rareza , Forma",
+   "sheet_pdf": "http://www.juntadeandalucia.es/medioambiente/BIO/DOC/ARB_SING/PDFs/Arb_436.pdf",
+   "latitude": 37.994312,
+   "longitude": -5.667773
+  }
+ ]
+}
