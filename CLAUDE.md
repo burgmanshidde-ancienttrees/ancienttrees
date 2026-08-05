@@ -139,6 +139,27 @@ Append what you did to `LOG.md`, newest first, in the format that file describes
 
 **An entry must be a collectible point (Hidde, 2026-07-26).** One identifiable tree, or an ensemble only when the ensemble itself is the destination: compact, famous for being exactly that, with one obvious place to stand. The Lomanstraat tunnel and the Meiji Jingu Gaien avenue pass; a thousand ordinary planes along a kilometre of La Rambla do not, there is nothing to stand at and nothing to have seen. Barcelona's bcn_008 failed this test as "The Plane Trees of La Rambla" and was replaced on 2026-07-26 with a genuinely singular tree, the Silk Tree of the Ciutadella (same id, so no URL broke). Apply the test to every future ensemble candidate.
 
+**Work from the supply side, not from a quota (Hidde, 2026-08-04: "kunnen we niet beter op de bomen focussen die goedkoop tot onze beschikking liggen en die uitwerken ipv overal verplicht 10 bomen te maken").** He is right that the expensive tree is always the ninth in a thin city, while the first five are nearly free. One correction to his framing, and then it is exactly right: cheap and dense are different axes, and optimising for the cheapest TREE would give five fine trees in five different towns and a walk nowhere. **So rank by the cheapest CLUSTER, not the cheapest tree.**
+
+The score is dense times data-rich: how many register trees sit within two kilometres of each other, multiplied by how many fields the register already fills per tree (species, name, age, girth, height), divided by the spread. A cluster of six inside 500 metres where the register gives species and age is the cheapest good city page that exists, because the state already made the selection and the research pass only has to verify and write.
+
+Run it with the clustering script; the ranking as of 2026-08-04, all Portuguese because Portugal is the only register imported in full:
+
+| Trees | Spread | Place |
+|---|---|---|
+| 29 | 0.9 km | Mealhada (Bucaco) |
+| 13 | 2.0 km | Setubal (published 2026-08-04) |
+| 14 | 3.4 km | Guimaraes |
+| 8 | 1.4 km | Viana do Castelo |
+| 6 | 0.5 km | Serpa |
+| 6 | 0.6 km | Guarda |
+| 5 | 0.1 km | Cascais |
+| 5 | 1.2 km | Pacos de Ferreira |
+
+**And the registers deepen published cities as cheaply as they open new ones**, which had not been noticed: Barcelona has 61 register trees within 3.8 km against the 10 we publish, Porto 26, Sintra 5. Adding to a city that already ranks is worth more than opening a city that does not.
+
+**What this changes about the count.** Nothing about the floor, four verified trees or no page. But a city gets the trees its cluster actually holds: Cascais is five and finished, Serpa is six and finished, and neither should be padded toward ten. The ten in the page titles was always a cap, and from here it is not even a target.
+
 **How to brief a research pass, and why the last one cost too much (2026-08-02/03).** Cordoba's research ran two and three quarter hours and came back with twelve candidates, an exhaustive list of rejects and a separate full photo sweep. Seven trees shipped. Nara's ran alongside it, was still going when the session closed, and was lost entirely, because a background agent lives in the session that started it. Both problems have the same shape: a brief that asks for everything, unbounded, with nothing written down until the end. So:
 
 - **Write findings to disk as they are found, never only at the end.** A research pass appends each verified candidate to `data/research/[city].md` as it completes it. A pass that dies halfway then leaves half a city behind instead of nothing, and the next session continues rather than restarts.
