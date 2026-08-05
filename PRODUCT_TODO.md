@@ -1,65 +1,49 @@
-## THE NIGHT-RUN QUEUE, set 2026-08-05 after the tree-walk sweep
+## THE NIGHT-RUN QUEUE, rewritten 2026-08-05 after eight passes ran
 
-Draw the top unblocked item. Each carries its source, because the source is what
-makes the pass cheap: these are verify-and-write jobs, not search jobs. Check
-`python3 scripts/backlog.py` first so nothing already published gets "opened"
-again, and never match a place by name.
+**Run `python3 scripts/backlog.py` before writing any brief.** Three passes have
+now been sent to "open" a city that was already live (Napoli, Firenze, Munich),
+every time because a queue entry said new and nobody checked. Do not trust this
+list, including this line.
 
-**In flight in the 2026-08-05 session** (do not duplicate): Trieste, Lisbon
-deepening, Barcelona second deepening, Milan deepening.
+Done in the 2026-08-05 session and not to be repeated: Trieste and Turin opened;
+Lisbon, Barcelona, Milan, Naples, Vienna, Brussels, Munich, Seville and Prague
+deepened; Zaragoza researched and deliberately held back (see CURATION.md).
 
-1. **Naples, deepen.** 58 register trees nearby against 12 published, and only 2
-   photos on those 12, so this is a research pass and a photo pass at once.
-   Source: Campania embeds 417 rows in its list page, 55 in the comune, each
-   linking a scheda with GPS, girth, height and a description. Clusters hard:
-   12 at Capodimonte, 9 in the Orto Botanico, 6 at Mostra d'Oltremare, 5 on
-   Piazza Vittoria. The Orto Botanico is a whole second walk on its own.
-2. **Turin, new.** The one big city on the list with real supply. Turismo Torino
-   publishes a 13.9 km route naming all 15 designated trees with species, place
-   and measured height, with a GPX download. Splits into a centre cluster and a
-   Valentino cluster, so it is two walks, not one long one.
-3. **Vienna, deepen.** 394 single trees imported today (data/registers/wien-naturdenkmale.json),
-   15 walkable clusters covering 360 of them, against 10 published. The city's
-   Baumkataster is a second department publishing planting year, girth, crown and
-   height for the same trees, which is the cheapest second source found anywhere
-   in the sweep.
-4. **Brussels, deepen.** 582 trees imported today under CC BY 4.0, 577 of them
-   inside four walkable clusters, against 10 published. Ixelles publishes three
-   real tree walks with 10 named trees each in FR/NL/EN. Girth is in METRES in
-   the source and already converted at import; do not convert twice.
-5. **Prague, deepen.** prazskestromy.cz publishes three tree-by-tree walking
-   routes with maps and on-site boards, over an official register of 196. The
-   site is all-rights-reserved: cite and verify, never copy.
-6. **Munich, DEEPEN, not new.** It has been live since 2026-07-25 with 10 trees
-   and 10 photos, and calling it new in this list sent a pass out to duplicate
-   it, the third time that has happened. **Run `python3 scripts/backlog.py`
-   before writing any brief; do not trust a queue entry, including this one.**
-   The work itself: 116 of the 117 monuments are parsed into
-   data/leads/munich.json already, and only 34 of them survive the filters,
-   because 51 are privately owned and 8 more are publicly owned but stand in a
-   school yard, a hospital courtyard or a council forecourt. Ownership and
-   access are different things and the ordinance records only the first. The
-   cluster worth writing is Schlosspark Nymphenburg: five clean candidates plus
-   the one we already publish, six trees in one free park inside 1.3 km, every
-   candidate already carrying a Commons image.
-7. **Seville, deepen.** The 2022 municipal inventory is a 36 MB PDF that pdfminer
-   reads once it is fetched whole (see the recipe in OPEN_DATA_SURVEY.md). Per
-   tree it gives WGS84 coordinates, ownership, full dendrometry, and both
-   physiological and phytosanitary condition, which is the closest thing to a
-   vitality field any register has given us.
-8. **Photo backfill, ten pages with none at all**: Krakow, Maastricht, Oslo,
-   Reykjavik, Groningen, Zurich, Arnhem, Budapest, Nijmegen, Breda. Three photos
-   per city maximum, open licence with attribution recorded, and an honest gap
-   beats a weak photo. Do not re-run a hunt CURATION.md already closed.
-9. **Zaragoza, new.** The city's own 2006 book carries 57 numbered fichas, every
-   one with GPS, girth at base and at 1.30 m, and ownership stated per tree,
-   which answers hard rule 10 row by row. Measurements are from 2004/2005 and
-   coordinates are UTM, so they need converting (scripts/shapefile_reader.py has
-   utm_to_wgs84).
-10. **Valencia and Madrid, deepen.** Valencia publishes five walking routes over
-    508 geolocated monumental trees, four of which already contain trees we
-    publish. Madrid's regional catalogue is a parsable list of 280 trees, 59 in
-    the city, and its exclusion annex doubles as a dead-tree list.
+1. **Photo backfill, and it is now the biggest gap on the site.** 301 of 678
+   trees carry a photo, and ten pages have none at all: Krakow, Maastricht,
+   Oslo, Reykjavik, Groningen, Zurich, Arnhem, Budapest, Nijmegen, Breda. Three
+   per city maximum. Commons is exhausted for Capodimonte, the Trieste parks and
+   the Orto Botanico di Napoli, all documented; go to iNaturalist per-observation
+   licences, Flickr filtered to CC, and Openverse instead. Note the Naples pass
+   found a real trap: an iNaturalist observation can be CC BY-NC while its photo
+   is CC BY, and the photo licence governs. Check the API, do not assume.
+2. **Valencia, deepen.** Five municipal walking routes over 508 geolocated
+   monumental trees, four of which already contain trees we publish.
+3. **Madrid, deepen.** The regional catalogue is a parsable list of 280 trees, 59
+   in the city, and its exclusion annex doubles as a dead-tree list.
+4. **Barcelona, third pass.** 118 of its 208 register trees are still untouched.
+   Pedralbes and Sarria is the largest block left, 51 trees between them.
+5. **Porto, deepen.** 41 register trees against 10 published, and the council has
+   already clustered the city into eight guided walks.
+6. **Genoa, new.** Liguria states CC BY outright, the clearest licence in Italy,
+   and 25 geolocated stops were found. Its best cluster is only four trees, so
+   check it clears the floor before committing a window.
+7. **Palermo, deepen.** 38 register trees against 8 published, but the regional
+   PDF 404s and the geoportal has a broken TLS chain, so budget time for access.
+   Verify the Piazza Marina ficus first: it was reported seriously ill in March
+   2026.
+8. **Guimaraes, Perugia, Padova, Como, Trento, Cagliari, Viana do Castelo**: the
+   remaining dense clusters in places people travel to, 8 to 14 trees each.
+
+**Vitality is now the standing risk, not coverage.** Four dead trees were caught
+this session in registers that still list them as live: a Naples plane down
+since 2022, Milan's Villa Litta plane felled in 2015 and still described in the
+present tense by the comune in June 2026, Seville's Encarnacion ficus felled
+sixteen months after its own catalogue was published, and two of nine checked
+Zaragoza entries. Only three sources anywhere carry a vitality field: Seville's
+municipal catalogue (four condition fields per tree), Piemonte's register
+(removal status inline), and Lazio's (a second sheet of removed trees). Assume
+every other register is silent on whether the tree still stands.
 
 **Not worth a pass, recorded so nobody spends a window finding out again:**
 Hamburg has eleven natural monuments and exactly one is a tree. Marseille's open

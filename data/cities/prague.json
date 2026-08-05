@@ -2,10 +2,10 @@
   "city": "Prague",
   "country": "Czech Republic",
   "status": "needs_curation",
-  "intro": "Prague protects its old trees the same way it protects buildings: since 1992, national law lets the city legally register individual specimens as pamatne stromy, memorial trees, each with its own protection order and a fineable offence for damaging one. Roughly 200 trees currently hold that status across the city. Most of what follows are London planes planted in aristocratic gardens two centuries ago, alongside a monastery ash, an island oak tamed by imperial flood engineers, and a beech that split into two trunks on a 17th century battlefield. All ten are free to visit.",
-  "meta_description": "Prague protects its old trees by law. Ten remarkable specimens, from a disputed-age plane by the Lennon Wall to a 45-metre beech on a 1620 battlefield.",
+  "intro": "Prague protects its old trees the same way it protects buildings: since 1992, national law lets the city legally register individual specimens as pamatne stromy, memorial trees, each with its own protection order and a fineable offence for damaging one. Roughly 200 trees currently hold that status across the city. Most of what follows are London planes planted in aristocratic gardens two centuries ago, alongside a monastery ash, an island oak tamed by imperial flood engineers, and a beech that split into two trunks on a 17th century battlefield. All sixteen are free to visit.",
+  "meta_description": "Prague protects its old trees by law. Sixteen remarkable specimens, from a disputed-age plane by the Lennon Wall to a 45-metre beech on a 1620 battlefield.",
   "question_answer": "The oldest tree in Prague that anyone can actually go and see is the Beethoven Plane, a London plane growing in the garden of the Grand Priory Palace on Velkoprevorske namesti in Mala Strana, estimated at somewhere between 200 and 300 years old. Its exact planting date is disputed, but its trunk, seven and a half metres around, is the thickest of any protected tree in the city, and it towers over the wall where tourists photograph the Lennon Wall without ever looking up.",
-  "question_meta": "Prague's oldest visitable tree is a 200-300 year old plane by the Lennon Wall. Where it stands, and the city's ten most remarkable trees.",
+  "question_meta": "Prague's oldest visitable tree is a 200-300 year old plane by the Lennon Wall. Where it stands, and fifteen more remarkable trees.",
   "question_context": "Prague has an older tree than this one, but nobody can visit it. Dub Karel, a 550 year old oak in a private castle park at Kolodeje, is Prague's oldest tree by a wide margin, and its own official record calls it the most massive tree in the city. The land is privately owned and closed to visitors, so per this site's rule on withheld locations it is left off the list rather than published as a destination nobody can reach. That leaves the Beethoven Plane as the oldest tree anyone can actually walk up to. It grows in the garden of the Grand Priory Palace, once the Prague seat of the Order of Malta, on Velkoprevorske namesti in Mala Strana, its trunk towering above the same wall famous today as the Lennon Wall. The romantic story, that a young Beethoven sat dreaming beneath it during his 1796 visit, does not survive contact with the calendar: he was in Prague in February, an unlikely month for garden reveries. Its real age is disputed among Czech sources, ranging from around 200 to nearly 300 years, but no other protected tree in the city comes close to its girth.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Prague's ancient trees free to visit?",
-      "a": "All ten trees on this list are free to see. They stand in public parks, city gardens and one nature reserve, and none require an admission ticket."
+      "a": "All sixteen trees on this list are free to see. They stand in public parks, city gardens and one nature reserve, and none require an admission ticket."
     },
     {
       "q": "What is a pamatny strom?",
@@ -344,6 +344,206 @@
         ],
         "label": "April, when it fills with white blossom before the leaves are fully out"
       }
+    },
+    {
+      "id": "prg_011",
+      "name": "The Oak of Dienzenhofer Gardens",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "estimated 155-165 years",
+      "age_min": 155,
+      "age_max": 170,
+      "location": {
+        "address": "Dienzenhoferovy sady, northeastern corner by V Botanice street, 150 00 Praha 5-Smichov",
+        "latitude": 50.075358,
+        "longitude": 14.408519,
+        "neighbourhood": "Smichov"
+      },
+      "story": "The street on the far side of this oak is called V Botanice, In the Botanical Garden, and there is no botanical garden. Prague's tree register calls the oak the only living reminder of the one that used to be here, which makes a 160 year old tree the last exhibit of a collection nobody can visit. It stands at the northeastern corner of Dienzenhoferovy sady, a riverside strip of grass named after Kilian Ignac Dientzenhofer, the Baroque architect who put a pavilion on this ground in 1735. Traffic now runs on three sides of it, feeding the Jirasek Bridge, and the tree has answered the way open grown oaks do, by pushing its lowest limbs sideways instead of up until the crown measured 23 metres across in 2009 against a height of only 20. Its trunk has thickened from 350 centimetres in 2004 to 393 in 2017, which is a tree still laying on wood rather than holding station. Prague protected it on 17 February 2005. Surveyors keep recording its condition as very good, which for an oak marooned on a traffic island in a European capital is a small piece of luck.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Dub_v_Dienzenhoferov%C3%BDch_sadech",
+        "https://www.prazskestromy.cz/stromy/pamatne-stromy/77-dub-letni-v-dienzenhoferovych-sadech/",
+        "https://koniklec.cz/wp-content/uploads/2020/02/mapa-sz.pdf"
+      ],
+      "access": "Free, public park (Dienzenhoferovy sady), open at all times",
+      "transport": "2 min walk from the Zborovska tram stop (lines 4, 5, 12, 15, 20), at the Jirasek Bridge end of the gardens",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Praha_5%2C_Smichov_-_Dienzenhoferovy_sady_3.jpg",
+        "license": "CC BY-SA 2.5",
+        "attribution": "Matej Batha, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Registered pamatny strom (registry 104828/12507), protected 17 February 2005. Two independent sources: the USOP-derived record (girth 350 cm in 2004, 375 in 2009, 378 in 2013; height 20 m; crown 23 m; age about 155 years as of 2018) and prazskestromy.cz, the Agentura Koniklec register (girth 378 cm in 2013, age about 160). The 2017 Koniklec printed map gives 393 cm, which is the figure used in the story as the most recent. The botanical-garden claim is the register's own and is stated as such rather than as established fact; the street name V Botanice corroborates that a garden stood here, nothing found dates it. Photo viewed at full size before approval: bright winter daylight, blue sky, the oak fills the frame with trunk and the whole spreading crown readable, and it holds the centre band of a wide card crop. It is leafless, which the Cadiz standard permits (only night shots and black-and-white are excluded) and which suits a tree whose low sideways limbs are the point. This is the same file the Czech Wikipedia article on this tree uses, so the identification is not a guess.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "prg_012",
+      "name": "The Red Oak of Shooters' Island",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "estimated 125-140 years",
+      "age_min": 120,
+      "age_max": 140,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October, when it goes scarlet weeks after the embankment limes have finished",
+        "kind": "autumn colour"
+      },
+      "location": {
+        "address": "Strelecky ostrov, central part of the northern half of the island, 110 00 Praha 1",
+        "latitude": 50.082,
+        "longitude": 14.411,
+        "neighbourhood": "Strelecky ostrov, Praha 1"
+      },
+      "story": "An American tree turns the best colour in central Prague, on an island where Bohemian archers used to practise. Strelecky ostrov, Shooters' Island, is named for the crossbow and longbow ranges that operated on it from the reign of Charles IV, and its northern half is now a lawn under big trees with the Vltava running past on both sides. The red oak in the middle of that half arrived from North America by way of the European nursery trade, and at 352 centimetres around it is the largest oak on the island and, by the city's own reckoning, the largest red oak in the centre of Prague. It was added to the register of significant trees in 2013 at an estimated 125 years, which places its planting close to the landscaping that converted a shooting ground into a public park. Red oaks do one thing better than any native Czech tree and they do it late: the leaves go scarlet and then deep rust through the second half of October, long after the limes on the embankment have given up. Thousands of people cross Most Legii directly above this tree every day. The staircase down to it is on the bridge itself.",
+      "verified_sources": [
+        "https://www.prazskestromy.cz/stromy/vyznamne-stromy/18-dub-cerveny-na-streleckem-ostrove/",
+        "https://www.praha.eu/jnp/cz/o_meste/budoucnost_mesta/projekty_menici_prahu/projekty_mestskych_casti/revitalizace_streleckeho_ostrova/",
+        "https://koniklec.cz/wp-content/uploads/2020/02/mapa-sz.pdf"
+      ],
+      "access": "Free, public park on the island, reached by the staircase and lift from Most Legii or the ramp from the Smichov bank",
+      "transport": "3 min from the Narodni divadlo tram stop (lines 2, 9, 17, 18, 22), then the stairs down from Most Legii",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Not a pamatny strom: this is a vyznamny strom, Prague's second tier, entry number 18, registered 2013, the same tier as prg_010. Girth 350 cm measured 2015 (prazskestromy) and 352 cm in the 2017 Koniklec printed map. Flagged for two reasons. First, the age is a single register estimate of about 125 years with no second assessment found, so the range here is deliberately wide. Second, the pin is approximate: no source publishes coordinates and the tree is not mapped in OpenStreetMap, so the position is triangulated from the register's own wording, the central part of the northern half of the island, which is an area roughly 60 metres across. The city portal's revitalisation page is the independent corroboration for the tree's standing and for the 2013 reopening of the island; it also records that the two largest oaks in the northern part were put forward for heritage status by the project's tree commission. No photo of this specific tree found on Commons, Openverse or iNaturalist in this pass.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "prg_013",
+      "name": "The Bonsai Ginkgo of Na Slupi",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "estimated 150-165 years",
+      "age_min": 150,
+      "age_max": 165,
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "mid-November, when the low spreading crown goes yellow and lays a circle of leaves on the grass",
+        "kind": "autumn colour"
+      },
+      "location": {
+        "address": "Botanicka zahrada Prirodovedecke fakulty UK, by the greenhouse entrance, Na Slupi 16, 128 00 Praha 2",
+        "latitude": 50.071071,
+        "longitude": 14.42013,
+        "neighbourhood": "Nove Mesto, Na Slupi"
+      },
+      "story": "A tree five metres tall with the trunk of one twice that height has been interfered with. The ginkgo by the greenhouse door in the Charles University botanical garden measures about 343 centimetres around at chest height and goes almost nowhere upward, spreading and drooping instead, and the accepted explanation is that somebody grew it in a barrel and pruned it like a bonsai for years before it was ever put in the ground. It carries its own cultivar name, 'Praga', probably descended from the weeping 'Pendula'. It went in around 1860 to 1870, which means it was standing here before the garden was laid out around it. Czech readers may know its outline without knowing the tree, because a ginkgo leaf is the emblem of Jaroslav Foglar's 1965 novel Stinadla se bouri and this specimen is the one usually credited with the idea, though the older ginkgo in Riegrovy sady has a claim too and Foglar never settled it. Prague listed it as a significant tree in 2013. In November the whole low crown turns one flat yellow and lets go inside a week, which on a tree this wide leaves a ring of leaves on the grass rather than a drift.",
+      "verified_sources": [
+        "https://www.prazskestromy.cz/stromy/vyznamne-stromy/5-jinan-dvoulalocny-v-botanicke-zahrade-uk-v-praze/",
+        "https://encyklopedie.praha2.cz/park/2011-jinan-dvoulalocny-v-botanicke-zahrade-uk",
+        "https://koniklec.cz/wp-content/uploads/2020/02/mapa-jz.pdf"
+      ],
+      "access": "Free, the outdoor garden of the university botanical garden is open daily with seasonal closing times; the greenhouses beside the tree are ticketed, the tree itself is not",
+      "transport": "5 min walk from the Botanicka zahrada tram stop (lines 6, 18, 24), or 10 min south from Karlovo namesti metro (Line B)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Vyznamny strom number 5, registered 2013, not a pamatny strom. Two independent sources: prazskestromy.cz (Agentura Koniklec) gives 340 cm measured at 80 cm above ground in 2015 and an age of about 150, and the Prague 2 district encyclopedia gives 343 cm at 1 m, a height of only 5 m, a planting date of about 1860 to 1870 and an age of 155 to 160 as of 2021. A third figure of about 130 years circulates and is the outlier, hence the range used here. Flagged on the Foglar attribution, which both sources treat as a tradition rather than a documented fact and which the district encyclopedia explicitly offers alongside a rival candidate, the older ginkgo in Riegrovy sady; the story keeps that hedge rather than dropping it. The pin is the OpenStreetMap node named for this individual tree with its cultivar, 'Jinan dvoulalocny Praga', which agrees with the register's description of the position by the greenhouse entrance. Note this is Prague's second ginkgo on the page, the first being prg_006 in Stromovka, 4.5 km north; no size or age comparison between the two is made because neither source ranks them.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "prg_014",
+      "name": "Masaryk's Lime",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "estimated over 200 years",
+      "age_min": 200,
+      "age_max": 240,
+      "location": {
+        "address": "Masarykova vyhlidka, Horni Jeleni prikop below Lumbeho zahrada, 118 00 Praha 1-Hradcany",
+        "latitude": 50.091586,
+        "longitude": 14.395116,
+        "neighbourhood": "Hradcany, Prague Castle"
+      },
+      "story": "A president picked a tree, and an architect built a terrace around it. Tomas Garrigue Masaryk, installed at Prague Castle from 1918, took to sitting on a bare rise above the Deer Moat under a lime already more than a century old, so he set Josip Plecnik, the Slovene architect he had put in charge of remaking the castle, to make the spot worth sitting in. Between 1922 and 1924 Plecnik terraced the slope in stone, planted it with vines and left the lime standing at the centre of a three quarter circle platform. Masaryk's own bench did not survive. Two stone ones now flank the tree, which the castle's own account puts at over 200 years old. Then the place disappeared: from 1948 the entire moat was a guarded military zone, shut for four decades, and it was Vaclav Havel who had it opened again, with the viewpoint restored in 1996. The trunk is the one thing the sources will not agree on, 249 centimetres in one survey and 349 in another, a gap too wide to split. The view is not in dispute. The Archbishop's Palace and the cathedral line up below you, from a bench under a tree, which is what the whole thing was built for.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Masarykova_vyhl%C3%ADdka_v_Praze",
+        "https://www.prazskestromy.cz/stromy/vyznamne-stromy/12-masarykova-lipa-na-prazskem-hrade/",
+        "https://koniklec.cz/wp-content/uploads/2020/02/mapa-sz.pdf"
+      ],
+      "access": "Free, but only when the Upper Deer Moat is open, usually April to October, roughly 10:00 to 18:00. The viewpoint itself sits inside the castle security perimeter and has been closed for stretches under different presidents; since 2021 it is reachable only from the Upper Deer Moat and not from Klarov. Check the castle's opening notices before making the walk for this tree alone.",
+      "transport": "8 min walk from the Brusnice tram stop (lines 22, 23), entering the Upper Deer Moat and climbing Plecnik's double staircase",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Vyznamny strom number 12, registered 2013. Two independent sources: the Czech Wikipedia article on the Masaryk viewpoint, which draws on the Prague Castle Administration's 1996 Plecnik monograph and describes the lime as over 200 years old standing between the two stone benches, and prazskestromy.cz, which gives about 200 years and a girth of 249 cm measured 2016. The 2017 Koniklec printed map gives 349 cm for the same tree, a 100 cm discrepancy that one of the two has to have got wrong; the story states both rather than choosing. Flagged mainly on access: the viewpoint has been alternately open and closed under successive presidents and is inside the castle security perimeter, so the access field warns rather than promises. Pin is approximate, the Nominatim node for Masarykova vyhlidka; the lime stands on the viewpoint platform, so the error is metres rather than hundreds of metres, but no per-tree coordinate is published. No usable photo of the tree found: the Commons images of this viewpoint are views out over Hradcany with the lime out of frame or backlit.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "prg_015",
+      "name": "The Elm of Ruzova Street",
+      "species": "European White Elm (Ulmus laevis)",
+      "age_estimate": "estimated 190 years",
+      "age_min": 180,
+      "age_max": 200,
+      "location": {
+        "address": "Ruzova 941/2, near Jindrisska, 110 00 Praha 1-Nove Mesto",
+        "latitude": 50.084408,
+        "longitude": 14.429358,
+        "neighbourhood": "Nove Mesto"
+      },
+      "story": "Most of Europe's big elms are dead, and this one is standing on a side street between Wenceslas Square and the main station. Dutch elm disease, a fungus carried between trees by bark beetles, went through the continent in two waves last century and removed elms so thoroughly that a mature one is now a curiosity rather than an ordinary sight. The elm at Ruzova 941/2 has lived through both waves and shows no sign of either. It is a European white elm, the species with lopsided leaves and papery seed discs that ripen in May, 23 metres tall with a trunk 335 centimetres around, growing on a scrap of ground that was a front garden before the block turned into offices and hotels. The crown fills the courtyard behind the railings and leans out over the pavement, which is where you stand to look at it. Prague gave it legal protection only on 15 April 2022, roughly 190 years into its life, having put a fence around its base the year before. Elms that shrug off the fungus are studied as possible parents for resistant stock, so this one may yet turn out to be useful as well as old.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Jilm_v_R%C5%AF%C5%BEov%C3%A9_ulici",
+        "https://www.poznatsvet.cz/cestovani/pamatny-strom-praha/"
+      ],
+      "access": "Free, visible and approachable from the public pavement on Ruzova; the small garden the tree stands in belongs to the building and is fenced, so this is a tree you look up at from the street rather than walk around",
+      "transport": "4 min walk from Hlavni nadrazi metro (Line C) or the Jindrisska tram stop (lines 3, 5, 6, 9, 14, 24)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Registered pamatny strom (registry 106429), declared 15 April 2022, one of Prague's most recent. Girth 335 cm and height 23 m measured 2022; age about 190 years; health recorded as stable, excellent to good, with excellent to slightly reduced vitality. Flagged on sourcing: the second source is a Czech popular travel article rather than an independent survey, and it plainly rests on the same register data, so this entry is effectively single-sourced on the numbers even though the tree's existence, species and position are not in doubt. It adds the point about the tree having survived grafioza, which the register record supports by implication rather than by statement. No superlative is claimed here on purpose: the 2020 Koniklec map calls the elm in Michelsky les the only memorial elm in Prague, a claim made two years before this tree was protected, and the two should not be set against each other. Photos on Commons exist under Category:Jilm v Ruzove ulici but all six were viewed and every one is a street view in which the tree is small, partly hidden by buildings and off to one side, so none passes the Cadiz standard.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "prg_016",
+      "name": "The Old Town's Only Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "estimated 165-180 years",
+      "age_min": 165,
+      "age_max": 180,
+      "location": {
+        "address": "Rasnovka, the small square in front of the city road authority building, 110 00 Praha 1-Stare Mesto",
+        "latitude": 50.092113,
+        "longitude": 14.425247,
+        "neighbourhood": "Stare Mesto, Petrska ctvrt"
+      },
+      "story": "The Old Town has exactly one legally protected oak and it grows on a corner nobody photographs. Rasnovka is a scrap of a square in the north of the Old Town behind the Convent of Saint Agnes, with the early Gothic church of the Holy Saviour on one side and the functionalist offices of the city's road authority on the other. The oak stands between them, planted around 1850, when this quarter was still mills, timber yards and river trade rather than a conservation area. It is a pedunculate oak, the ordinary Czech oak of field boundaries and village greens, doing the unusual thing of reaching 19 metres in the middle of a city block, and its trunk has gone from 299 centimetres in 2010 to 321 in 2017. Prague protected it on 24 March 2001, and the last survey found no damage worth recording. It is about six centuries younger than the church beside it and eighty years older than the office block, which is a fair summary of what it is doing there: the one living thing on the square that watched both of its neighbours turn up.",
+      "verified_sources": [
+        "https://cs.wikipedia.org/wiki/Dub_v_%C5%98%C3%A1snovce",
+        "https://www.prazskestromy.cz/stromy/pamatne-stromy/43-dub-letni-v-rasnovce/",
+        "https://koniklec.cz/wp-content/uploads/2020/02/mapa-sz.pdf"
+      ],
+      "access": "Free, small public square open at all times",
+      "transport": "4 min walk from the Dlouha trida tram stop (lines 6, 8, 15, 26), or 8 min from Namesti Republiky metro (Line B)",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Dub_letn%C3%AD_v_%C5%98%C3%A1snovce-I-05-2021-praha.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "The photonaut, via Wikimedia Commons",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "notes": "Registered pamatny strom (registry 104300/11100), protected 24 March 2001. Two independent sources agree: girth 265 cm in 2000, 299 in 2010, 309 in 2013 and 321 in the 2017 Koniklec map; height 19 m with a 16 m crown; age about 165 years as of 2016 with a planting date of about 1850; condition rated excellent in 2010 with no visible damage. The claim that this is the only protected oak in the Old Town is the register's own and is a district-level claim, so it does not collide with the city page's existing claim that the Cisarsky ostrov oak (prg_007) was the first oak in Prague to be protected. Photo viewed at full size before approval: May 2021, sunlit, blue sky, the oak occupies most of the frame with the full crown and the base of the trunk both readable, and the tree holds the centre of the image so a wide card crop keeps it. A parked car sits at the lower left and does not intrude on the centre band.",
+      "location_precision": "confirmed"
     }
   ]
 }
