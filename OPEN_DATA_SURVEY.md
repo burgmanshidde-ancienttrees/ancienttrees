@@ -243,3 +243,33 @@ four different Caserta trees, so nothing there could honestly be marked
 regional card sometimes reveals it as *insieme dei fusti*, every stem added
 together: publishing the MASAF number alone would have invented a 6.5 m trunk
 for the Reggia's sweet osmanthus.
+
+### PDFs are readable after all, and the recipe (2026-08-05)
+
+A scouting pass concluded that "tooling, not searching, is now the bottleneck":
+Seville's 390-page municipal catalogue would not open, pypdf choked on its xref,
+and the machine has no pdftotext, mutool, qpdf or ghostscript. Two of those three
+statements were wrong.
+
+`pdfminer` IS installed alongside pypdf and reads these documents fine. What
+actually failed was the download: the Seville file is 36 MB and the fetch came
+back with 19 MB and an HTTP 200, so every parser then died on a truncated xref
+rather than on a hard PDF. The recipe that works:
+
+    curl -sL -m 300 -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)" \
+      --retry 2 "$URL" -o out.pdf
+    python3 -c "from pdfminer.high_level import extract_text; print(extract_text('out.pdf'))"
+
+Check the tail before parsing: a complete PDF ends in %%EOF. A file that does not
+is a short download, not a broken document, and the fix is a longer timeout
+rather than a different library.
+
+**Seville, Inventario de Arboles Singulares de la Ciudad de Sevilla (2022),
+confirmed readable.** Its per-tree template carries species, common name, family,
+catalogue number and date, **titularidad (ownership, which answers hard rule 10
+row by row)**, Arbomap id, emplazamiento, barrio, distrito, **WGS84 coordinates**,
+full dendrometry (perimeter at 1.30 m and at base, height, height to first branch,
+crown diameters N-S and E-O, lean and its direction) and both physiological and
+phytosanitary condition. That last pair is the closest thing to a vitality field
+found in any register so far. It is a municipal document distinct from, and denser
+than, the Andalusian REDIAM catalogue already imported.
