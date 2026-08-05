@@ -1,0 +1,192 @@
+[
+  {
+    "id": "rom_011",
+    "name": "The Himalayan Cedar of the German Institute",
+    "species": "Himalayan Cedar (Cedrus deodara)",
+    "age_estimate": "100+ years, undocumented",
+    "age_min": 100,
+    "age_max": 140,
+    "location": {
+      "address": "Villa Sciarra, Istituto Italiano di Studi Germanici, Via Calandrelli 25, 00153 Roma",
+      "latitude": 41.883386,
+      "longitude": 12.464731,
+      "neighbourhood": "Monteverde / Trastevere"
+    },
+    "story": "Two official registers disagree about this trunk by nearly two metres. Italy's national list gives it as five metres around; the Lazio regional list, which is where the national one gets its Roman entries in the first place, says 3.3. Both are describing the same deodar standing beside the villa's main house, and neither has ever put a date on it. What the regional list does say is unusual: of the 65 monumental trees inside the comune of Roma, this is one of only three designated partly for architettura vegetale, vegetal architecture, the surveyor's term for a tree whose shape is itself the built object. Not its age. Not its girth. Its form. Cedrus deodara grows wild at 1,500 to 3,000 metres in the western Himalaya, where its Sanskrit name means timber of the gods and its wood built temples. This one arrived by way of a rich American's shopping habit. George Washington Wurts bought the hillside in 1902 and spent 26 years filling it with plants from wherever caught his attention, the ginkgo 130 metres downhill among them. The house behind the cedar became the Italian Institute of German Studies in 1931, three years after Wurts died, and the tree has been institutional property ever since.",
+    "verified_sources": [
+      "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+      "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295",
+      "https://abitarearoma.it/i-monumentali-alberi-di-monteverde/"
+    ],
+    "access": "Free, open access, Villa Sciarra public park",
+    "transport": "15 min walk from Trastevere, or bus to Via Dandolo / Via Calandrelli",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "notes": "Sheet 10/H501/RM/12. Existence, species and location confirmed by three sources (Lazio regional register, Roma Capitale's own monumental-tree page, abitarearoma.it). No source anywhere gives an age or planting date, so the range here is a conservative placeholder tied to the Wurts era (1902-1928), not a sourced estimate, exactly as on rom_008 and rom_009. Girth genuinely disputed between the two registers: MASAF national 500cm, Lazio regional 330cm, same sheet number and same coordinates. Height agrees at 20m. The story states the disagreement rather than picking one. Coordinates are the register's own GPS, identical in both lists; converted from the regional list's DMS (41 deg 53' 00,19\", 12 deg 27' 53,03\") they match the national decimal figure. 130m from rom_001.",
+    "location_precision": "confirmed"
+  },
+  {
+    "id": "rom_012",
+    "name": "The Podocarp of Villa Sciarra",
+    "species": "Willowleaf Podocarp (Podocarpus neriifolius)",
+    "age_estimate": "100+ years, undocumented",
+    "age_min": 100,
+    "age_max": 130,
+    "location": {
+      "address": "Viale Adolfo Leducq, Villa Sciarra, 00153 Roma",
+      "latitude": 41.88335,
+      "longitude": 12.463692,
+      "neighbourhood": "Monteverde / Trastevere"
+    },
+    "story": "Most trees earn a place on Italy's monumental register for being old or enormous. This one is on it for being strange. The Lazio survey gives its reason as a single letter, d, botanical rarity, and lists no other qualifying criterion at all: not age, not size, not landscape value. At two metres around and 18 metres tall it is a decent tree in a city full of far bigger ones, and the state protects it anyway, because there is essentially nothing else like it growing in Rome. Podocarps are a mostly southern conifer family that split off long before pines existed and never adopted the cone. Instead the seed sits on a swollen fleshy stalk that turns purple and gets eaten by birds, which is why Podocarpus neriifolius spread from the Himalayan foothills to New Guinea and why Buddhist communities planted it around temples across that whole range. Rome's own city government calls this specimen splendid and enormous. It stands on Viale Adolfo Leducq roughly 20 metres from the ginkgo, both of them bought by the same American collector in the same decade, which makes this stretch of path the most botanically improbable 50 metres in the city.",
+    "verified_sources": [
+      "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+      "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295",
+      "https://abitarearoma.it/i-monumentali-alberi-di-monteverde/"
+    ],
+    "access": "Free, open access, Villa Sciarra public park",
+    "transport": "15 min walk from Trastevere, or bus to Via Dandolo / Via Calandrelli",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "notes": "Sheet 09/H501/RM/12, 200cm girth, 18m, both registers agreeing. Sole monumentality criterion in the Lazio list is 'd) rarita botanica', which is the story's opening claim and is quoted from the register itself. No age or planting date exists in any source; range is a placeholder tied to the Wurts era, not an estimate. abitarearoma.it independently describes it as 'un raro esemplare di Podocarpo (il pino con cui i buddisti ornavano i loro templi)' and Roma Capitale's page as a 'splendid and enormous' specimen. Common name: no other city file uses Podocarpus, so 'Willowleaf Podocarp' is chosen as the nationality-neutral name per hard rule 9; if a later Podocarpus ships elsewhere it must match this. 20m from rom_001.",
+    "location_precision": "confirmed"
+  },
+  {
+    "id": "rom_013",
+    "name": "The Plane of Piazza San Cosimato",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "120+ years, undocumented",
+    "age_min": 120,
+    "age_max": 160,
+    "location": {
+      "address": "Piazza di San Cosimato, play area, 00153 Roma",
+      "latitude": 41.887222,
+      "longitude": 12.469639,
+      "neighbourhood": "Trastevere"
+    },
+    "story": "The neighbourhood had this tree scanned. Volunteers in Trastevere paid forest agronomists to run a tomography on the trunk, reading the internal soundness of the wood the way a hospital reads a body, because the tree stands directly over the square's children's play area and nobody wanted to guess. At 5.65 metres around it holds the thickest plane trunk on Rome's monumental register, thicker than the celebrated planes of Villa Borghese, and it grows not in a cardinal's garden but in a working piazza with a morning market, a football pitch's worth of parked scooters and a tenth-century church. The square was open pasture until the 1880s, the Prati di San Cosimato, grazing land outside the tight medieval lanes. When Rome became the capital and Trastevere was rebuilt, the fields became a triangular market square, and the plane either survived that or was planted into it; no document says which, and its 2013 addition to the register recorded size without age. Platanus x acerifolia is itself an accident, an eighteenth-century hybrid of the eastern and American planes that turned out to tolerate city air better than either parent. Rome planted thousands. This is the one the neighbours look after.",
+    "verified_sources": [
+      "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+      "https://www.ilmessaggero.it/roma/storie/roma_festa_alberi_trastevere-4117494.html",
+      "https://archidiap.com/opera/piazza-san-cosimato/"
+    ],
+    "access": "Free, public square, always accessible",
+    "transport": "Tram 8 to Piazza Sonnino, then 5 min walk; 10 min walk from Piazza Trilussa",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "notes": "Sheet 57/H501/RM/12, 565cm, 20m, locality given as 'Piazza San Cosimato area ludica' (the play area), which is what fixes the pin to one obvious tree in a small square. Second source is Il Messaggero's report on the neighbourhood's adoption of the tree and the stability tomography, independent of the register; archidiap's architectural study of the piazza corroborates the play area under a 'platano secolare' and the 1880s reshaping of the square. No age published anywhere. Superlative checked (hard rule 8): 565cm is the largest single plane girth among the 65 Roma register entries, ahead of Viale Jonio at 553cm; the Valle dei Platani and Fontane Oscure figures are group maxima for a different species, Platanus orientalis, so the claim is limited to plane trunks on the register and states its bounds. Bridges the Villa Sciarra walk to the Orto Botanico walk: 700m from rom_001, 600m from rom_003.",
+    "location_precision": "confirmed"
+  },
+  {
+    "id": "rom_014",
+    "name": "The Horse Chestnut of the Cordonata",
+    "species": "Horse Chestnut (Aesculus hippocastanum)",
+    "age_estimate": "100+ years, undocumented",
+    "age_min": 100,
+    "age_max": 160,
+    "location": {
+      "address": "Via delle Tre Pile, Campidoglio, 00186 Roma",
+      "latitude": 41.893403,
+      "longitude": 12.482189,
+      "neighbourhood": "Capitoline Hill"
+    },
+    "story": "A Balkan mountain tree has no business being this large on a Roman hill. Aesculus hippocastanum grows wild in a handful of ravines in the mountains of northern Greece, Albania and North Macedonia, where the summers are cool and the soil stays damp; western Europe only met it in the 1500s, through Constantinople, and planted it everywhere as an avenue tree. Rome is close to the edge of what it tolerates, which is why the city has exactly one on its monumental register and why a trunk 3.45 metres around here counts for more than the same figure would in Vienna. It stands on Via delle Tre Pile, the ramp cars take up the Capitoline, on the right-hand side of Michelangelo's Cordonata as you climb. Roma Capitale registered it for size and for landscape value, meaning the view it belongs to rather than the tree alone. Almost everyone who photographs the staircase stands in its shade to do it. Fifty metres away on the other flank of the same climb grows the ombu from Argentina, so the two flanks of Rome's most famous stair are held by a Balkan mountain tree and a South American pampas tree, and neither is Roman at all.",
+    "verified_sources": [
+      "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+      "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295",
+      "https://commons.wikimedia.org/wiki/File:Ippocastano_vetusto,_Campidoglio,_Roma.jpg"
+    ],
+    "access": "Free, public street, always accessible",
+    "transport": "3 min walk from Piazza Venezia, up Via delle Tre Pile",
+    "best_time": {
+      "months": [9, 10],
+      "label": "late September, when the conkers start dropping onto the ramp",
+      "kind": "fruit"
+    },
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Ippocastano_vetusto%2C_Campidoglio%2C_Roma.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Albarubescens, via Wikimedia Commons",
+      "status": "approved"
+    },
+    "curation_status": "flagged",
+    "notes": "Sheet 01/H501/RM/12, 345cm, 20m, criteria a) age/size and f) landscape value. Roma Capitale's own monumental-tree page names it independently and places it on the right of the Cordonata on via delle Tre Pile, which is the second source for existence and location. No age published; range is a placeholder, not an estimate. Pin: the register's DMS (41 deg 53' 36,25\", 12 deg 28' 55,88\") converts to the national list's decimal figure exactly, and two Wiki Loves Monuments Italia photographs by different contributors carry embedded GPS identical to it, so the position is independently confirmed rather than register-only. Photo downloaded at 960px and viewed directly 2026-08-05: a big horse chestnut in full green leaf against blue sky, daylight, in colour, filling the left two thirds of the frame with the Capitoline balustrade behind and a cypress at the right edge; the centre band of the image is canopy, so it survives the wide card crop. Trunk is not visible (the shot looks up from the ramp), which is the one departure from the Cadiz standard; approved anyway as the best of eight candidates, the alternatives being more distant views with the Vittoriano dominating. Only Aesculus on Rome's register. best_time set to fruit rather than the April flower candles deliberately: September is one of the two thinnest months on the season shelf and the conkers on a public stair are the more useful reason to go.",
+    "location_precision": "confirmed"
+  },
+  {
+    "id": "rom_015",
+    "name": "The Cedar Above the Lake",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "130+ years, undocumented",
+    "age_min": 120,
+    "age_max": 200,
+    "location": {
+      "address": "Viale del Lago, Giardino del Lago, Villa Borghese, 00197 Roma",
+      "latitude": 41.915147,
+      "longitude": 12.483475,
+      "neighbourhood": "Villa Borghese, Pinciano"
+    },
+    "story": "Rome's own list of monumental trees does not describe this cedar on its own. It describes it as accompanied by a monumental holm oak, and the two really do stand 70 metres apart at the same water. That phrasing is the giveaway: this tree was never meant to be looked at as a specimen. When Marcantonio IV Borghese remade the grounds in the 1780s he was buying a painting, not a collection. His architects Antonio and Mario Asprucci dug an artificial lake, put an island in it, built a small Ionic temple to Aesculapius on the island in 1786, and planted around all of it to make the view from the bank look like a landscape that had always been there. The cedar is scenery, and it is doing the job two and a half centuries later: 4.1 metres around, 22 metres tall, a flat candelabra crown leaning out over the rowing boats. Cedrus libani was the prestige tree of that generation of Roman gardens, planted in half the noble villas on this list, but most of those sit on lawns and terraces. This one has water under it, which is why it is the one people photograph.",
+    "verified_sources": [
+      "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+      "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295",
+      "https://commons.wikimedia.org/wiki/File:Cedro_del_Libano,_laghetto_di_Villa_Borghese.jpg"
+    ],
+    "access": "Free, open access, Villa Borghese",
+    "transport": "15 min walk from Metro A Spagna, via the Giardino del Lago",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Cedro_del_Libano%2C_laghetto_di_Villa_Borghese.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Albarubescens, via Wikimedia Commons",
+      "status": "approved"
+    },
+    "curation_status": "flagged",
+    "notes": "Sheet 22/H501/RM/12, 410cm, 22m. Roma Capitale's monumental-tree page names it independently and explicitly pairs it with the monumental holm oak, which is our rom_006, 70m away; that pairing is the second source and also the reason this entry exists, since it thickens an existing walk rather than adding a lonely point. No age published anywhere. The 120-200 range is a placeholder consistent with the growth-based figures the national registry calculates for comparable Roman cedars (146 years at 574cm on rom_007, about 150 at 460cm on rom_005), and the story does not state a number. Pin independently confirmed: three Commons photographs by the same Wiki Loves Monuments contributor, taken 2018, 2020 and 2022, all carry embedded GPS identical to the register coordinate to six decimals. Photo (2022) downloaded at 960px and viewed directly 2026-08-05: the whole tree in summer daylight, in colour, filling the frame above the lake basin and its iron railing, trunk and candelabra crown both readable, centre band all tree. A clean Cadiz-standard match. The 2020 file by the same author was rejected: it is a close-up of trunk and branches only. Temple of Aesculapius date (1786) and the Asprucci attribution come from the villa's standard history, not from the register.",
+    "location_precision": "confirmed"
+  },
+  {
+    "id": "rom_016",
+    "name": "The Redwood of the Pincio",
+    "species": "Coast Redwood (Sequoia sempervirens)",
+    "age_estimate": "100+ years, undocumented",
+    "age_min": 100,
+    "age_max": 160,
+    "location": {
+      "address": "Pincio, Villa Borghese, 00187 Roma",
+      "latitude": 41.911639,
+      "longitude": 12.479611,
+      "neighbourhood": "Pincio, Villa Borghese"
+    },
+    "story": "Thirty metres is a good height for a tree in Rome and a failure for this species. Sequoia sempervirens is the tallest living thing on earth, passing 110 metres in the fog belt of northern California, and it gets there by drinking the fog directly through its leaves during a rainless summer. Rome offers it a rainless summer without the fog. So the redwood on the Pincio has grown thick instead of tall, 4.2 metres around, and still ends up among the five tallest trees on the city's entire monumental register, which says more about Rome's trees than about this one. It grows on Giuseppe Valadier's terrace, laid out between 1809 and 1814 during the French occupation as a public promenade above Piazza del Popolo, at a moment when Roman gardening was swinging from clipped geometry to imported curiosities. Nobody has published when it was planted or by whom. It reached the national register late, in the batch of Roman trees added after the well-documented ones, and that entry is the only document about it that exists: species, girth, height, a coordinate. Everything else anyone tells you about this tree is a guess, including the ones that sound confident.",
+    "verified_sources": [
+      "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+    ],
+    "access": "Free, open access, Pincio gardens",
+    "transport": "10 min walk up the ramps from Piazza del Popolo, or Metro A Flaminio",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "notes": "Sheet 68/H501/RM/12, 420cm, 30m. SINGLE SOURCE, and the story says so in its last three sentences rather than hiding it: the Lazio regional register and the MASAF national register are the same designation published twice, and no municipal, press or garden-history source names this individual tree. Roma Capitale's own monumental-tree walk predates the sheets numbered above 57 and does not cover it. Published under the flagged rule because the register is an official source and the uncertainty is stated on the page; drop it if a reader disputes the tree. Superlative checked (hard rule 8): NOT the tallest on the register. Rome's register tops out at 34m (the Aleppo pine at Villa Celimontana, our rom_009), then 32m twice, then 31m, then this at 30m, so the claim is written as among the five tallest and is arithmetically true of the 65 comune entries. Precision is approximate, not confirmed: the Pincio terrace is large, the coordinate has no independent corroboration (no Commons photograph of this tree exists, geosearch and text search both empty), and the Caserta lesson says a register point with nothing to check it against is not a confirmed pin. 470m from rom_006, so it extends the Villa Borghese walk toward Piazza del Popolo rather than starting a new one.",
+    "location_precision": "approximate"
+  }
+]
