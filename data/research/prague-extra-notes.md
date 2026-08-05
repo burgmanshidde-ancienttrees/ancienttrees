@@ -29,3 +29,26 @@ The centre of Prague is register-poor; the density has to come from the vyznamne
   tiers, with girth 2017 and a significance line per tree
 - prazskestromy.cz — all rights reserved, verification only, never a copied sentence
 - botany.cz, praha.eu / district pages, cs.wikipedia article text
+
+## Result of the pass (2026-08-05)
+
+Six trees written to data/research/prague-extra.json, ids prg_011 to prg_016.
+
+| id | tree | tier | where | precision | photo |
+|---|---|---|---|---|---|
+| prg_011 | The Oak of Dienzenhofer Gardens | pamatny | ON ROUTE | confirmed | approved |
+| prg_012 | The Red Oak of Shooters' Island | vyznamny | ON ROUTE | approximate | missing |
+| prg_013 | The Bonsai Ginkgo of Na Slupi | vyznamny | 580 m south of the route start | confirmed | missing |
+| prg_014 | Masaryk's Lime | vyznamny | Prague Castle, 640 m from the Strahov ash | approximate | missing |
+| prg_015 | The Elm of Ruzova Street | pamatny | Nove Mesto second pocket | confirmed | missing |
+| prg_016 | The Old Town's Only Oak | pamatny | Stare Mesto second pocket | confirmed | approved |
+
+Density, measured:
+- published 10 spanned 6.38 km; all 16 span 6.51 km, so the city did not get more scattered
+- 13 of the 16 now sit inside a 2.90 km span in the centre
+- mean nearest neighbour across all 16 is 0.73 km; 15 of 16 have another tree within 2 km
+- the centre walk chains 9 trees in 4.15 km of straight-line hops with no gap over 0.88 km:
+  prg_013, prg_002, prg_011, prg_003, prg_010, prg_009, prg_012, prg_004, prg_001
+- prg_015 and prg_016 make a separate two-tree pocket 0.91 km apart, 1.2 km northeast of the route
+
+Photos: two approved of three allowed, both viewed at full size before approval. Four honest gaps.
