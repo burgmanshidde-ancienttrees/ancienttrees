@@ -33,8 +33,13 @@
     2,
     3
   ],
-  "fruit_label": "seed balls dangle on long stalks and stay all winter",
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "nice",
+    "colour": "nice"
+  },
   "flower_label": "flowers open with the leaves, easy to miss",
+  "fruit_label": "seed balls dangle on long stalks and stay all winter",
   "sources": [
     "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
     "https://www.treesandshrubsonline.org/"

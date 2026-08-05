@@ -29,8 +29,13 @@
     2,
     3
   ],
-  "fruit_label": "acorns drop, and a good mast year buries the ground in them",
+  "intensity": {
+    "flowers": "nice",
+    "fruit": "striking",
+    "colour": "nice"
+  },
   "flower_label": "catkins hang before the leaves are fully out",
+  "fruit_label": "acorns drop, and a good mast year buries the ground in them",
   "sources": [
     "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/",
     "https://www.treesandshrubsonline.org/"
