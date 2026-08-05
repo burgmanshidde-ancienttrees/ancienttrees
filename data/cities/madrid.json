@@ -60,7 +60,7 @@
     {
       "id": "mad_002",
       "name": "The Himalayan Cedar of the Crystal Palace",
-      "species": "Deodar Cedar (Cedrus deodara)",
+      "species": "Himalayan Cedar (Cedrus deodara)",
       "age_estimate": "about 150 years",
       "age_min": 140,
       "age_max": 160,
@@ -124,7 +124,12 @@
       "age_estimate": "about 108 years",
       "age_min": 100,
       "age_max": 115,
-      "best_time": { "months": [11], "label": "November, when the needles turn copper and drop, doubled in the pond the trees grow from" },
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when the needles turn copper and drop, doubled in the pond the trees grow from"
+      },
       "location": {
         "address": "Estanque del Palacio de Cristal, Parque del Retiro, 28009 Madrid",
         "latitude": 40.4139432,

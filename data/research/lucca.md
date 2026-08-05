@@ -61,4 +61,29 @@ are later replantings and no source dates them, so the story says so. Paid entry
 
 ### luc_006 Atlas cedar, Villa Bottini — VERIFIED
 Register 08/E715/LU/09, 700 cm girth, 30 m, 43.844058/10.510469. Thickest registered trunk in the
-comune of Lucca. Villa Bottini garden is municipal and free to enter.
+comune of Lucca. Villa Bottini garden is municipal and free to enter. Dedicated on 25 April 2021 to
+don Renzo Tambellini in Lucca's Giardino dei Giusti, alongside a Calocedrus for don Guido Staderini
+and a plane for don Sirio Niccolai (La Nazione). Undated; Cedrus atlantica only reached European
+gardens around 1840, which is the ceiling.
+
+## Outcome, 2026-08-05
+
+Six trees published to data/research/lucca.json, in walk order: Cedar of Lebanon, redwood and ginkgo
+in the Orto Botanico, Monterey cypress on the San Regolo bastion above it, Atlas cedar at Villa
+Bottini, holm oaks on the Torre Guinigi. Total walk about 800 m, entirely inside the walls.
+Three flagged (cypress and Villa Bottini cedar on age, Guinigi oaks on age).
+Three photos, all Wikimedia Commons, all viewed before approval; the ginkgo, the cypress and the
+Villa Bottini cedar have honest gaps. Everything not published is in data/leads/lucca.json:
+10 leads and 5 blocked.
+
+Renumbering note: the file order is the walk order, so the ids do not match the order in which they
+were verified above. luc_004 in the final file is the Monterey cypress, luc_005 the Guinigi oaks,
+luc_006 the Villa Bottini cedar.
+
+Corrections found along the way, worth keeping:
+- turismo.lucca.it prints the Cedar of Lebanon at "5.76 m diameter". That is a diameter/girth error AND
+  it is the sequoia's girth figure from the register. Register measurement used.
+- Ginkgo: the garden itself dates the lightning strike to the post-war years, not to 1950 exactly.
+  Earlier draft said "around 1950" on the strength of a search snippet; corrected against the garden.
+- 36 register entries for the comune against 52 monumental trees in a municipal census reported by
+  quinewslucca.it. Not reconciled. Never quote either as a count of what exists.

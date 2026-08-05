@@ -1,0 +1,205 @@
+[
+  {
+    "id": "bcn_011",
+    "name": "The Casuarina of the Cascada",
+    "species": "River She-oak (Casuarina cunninghamiana)",
+    "age_estimate": "about 130 years",
+    "age_min": 128,
+    "age_max": 135,
+    "location": {
+      "address": "Parc de la Ciutadella, in front of the Cascada, 08003 Barcelona",
+      "latitude": 41.38941,
+      "longitude": 2.187316,
+      "neighbourhood": "Sant Pere, Santa Caterina i la Ribera, Ciutat Vella"
+    },
+    "story": "Everything about this tree says pine, and none of it is true. What look like drooping grey-green needles are jointed green twigs doing the work of leaves, and the real leaves are microscopic scales in rings at each joint, visible only if you pull a strand apart. Its relatives are the oaks and the birches, with not a single conifer among them. The river she-oak went into the ground beside the Cascada around 1894, six years after the Universal Exposition turned a demolished fortress into Barcelona's first public park, and it has thickened into two trunks fused at the base that separate about 90 centimetres up. The combined perimeter passes five metres, one of the thickest trunks in the city, under a crown roughly 20 metres across; the city's own records put the height somewhere between 22 and 27 metres and cannot agree which. River she-oaks come from the riverbanks of eastern Australia, where they hold sandy banks together through flood season, and they were planted around the Mediterranean for exactly that toughness. Stand under it on a windy afternoon and the sound settles what the botany started: the hanging foliage catches wind with the same hiss a pine gives, from a tree that is nothing like one.",
+    "verified_sources": [
+      "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/casuarina-del-parc-de-la-ciutadella-99400455029",
+      "https://www.bcnsostenible.cat/es/web/punt/casuarina-cunninghamiana",
+      "https://beteve.cat/el-mati-de-barcelona-910fm/arbres-mes-singulars-parc-ciutadella/",
+      "https://commons.wikimedia.org/wiki/File:Casuarina_del_Parc_de_la_Ciutadella3.JPG"
+    ],
+    "access": "Free, public park",
+    "transport": "Arc de Triomf (Metro L1) or Ciutadella-Vila Olimpica (Metro L4), 6 min walk",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Casuarina_del_Parc_de_la_Ciutadella3.JPG",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Herodotptlomeu, via Wikimedia Commons",
+      "status": "approved"
+    },
+    "curation_status": "ai_generated",
+    "notes": "Sourced from the municipal Arbres d'interes local register (register_id 99400455029, catalogued 1994) plus an independent beteve.cat feature on the park's notable trees, which supplies the Australian origin, the not-a-conifer point and the claim that its trunk perimeter is the second largest in Barcelona. That claim is deliberately softened in the story to 'one of the thickest', per hard rule 8, because it is a different metric from the 'biggest tree' claim the city page already makes for the Sot de l'Estany wingnut and the two should not be set against each other. Height and girth differ between the register (27 m, 5.5 m) and bcnsostenible (22.5 m, 5 m); both are given as a range. Pin is the register coordinate alone, about 35 m from the Cascada monument, with no OSM node to cross-check, so precision is approximate rather than confirmed. Photo viewed directly before approval: Wiki Loves Earth Catalonia 2014 upload, full tree in daylight, trunk and crown both readable, tree occupies the centre band and survives a wide card crop.",
+    "location_precision": "approximate"
+  },
+  {
+    "id": "bcn_012",
+    "name": "The Mexican Oak of the Ciutadella",
+    "species": "Mexican White Oak (Quercus polymorpha)",
+    "age_estimate": "about 140 years",
+    "age_min": 135,
+    "age_max": 142,
+    "location": {
+      "address": "Parc de la Ciutadella, near the bandstand, Passeig de Pujades 16, 08003 Barcelona",
+      "latitude": 41.38829,
+      "longitude": 2.1868,
+      "neighbourhood": "Sant Pere, Santa Caterina i la Ribera, Ciutat Vella"
+    },
+    "story": "An oak with no lobes in its leaves, and the only one of its kind alive in Catalonia. Quercus polymorpha grows wild from Texas down through Mexico into Guatemala and Honduras, keeping leathery, plain-edged leaves for most of the year, and almost nobody in Europe plants it. Barcelona's single specimen has been leaning out over the sand of Parc de la Ciutadella since about 1887, the year the park was being rebuilt for the Universal Exposition that opened next door the following spring. It is not a big tree beside its neighbours, roughly eight metres tall with a trunk two and a half metres around, but it throws an 11 metre crown sideways from a stem that gave up on vertical decades ago and now sweeps out low enough to put a hand on. The species name means many-formed, and it was given because the leaves vary so much from tree to tree that botanists kept describing the same oak twice under different names. That is the thing to check when you find it. Hold a leaf, look for the shape every oak you know is supposed to have, and watch the family resemblance quietly fall apart in your hand.",
+    "verified_sources": [
+      "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-roure-blanc-de-mexic-parc-de-la-ciutadella-99400454956",
+      "https://bcnsostenible.cat/es/web/punt/quercus-polymorpha",
+      "https://beteve.cat/el-mati-de-barcelona-910fm/arbres-mes-singulars-parc-ciutadella/",
+      "https://www.openstreetmap.org/node/6924278485",
+      "https://commons.wikimedia.org/wiki/File:Roure_-_Ciutadella_4.JPG"
+    ],
+    "access": "Free, public park",
+    "transport": "Arc de Triomf (Metro L1) or Ciutadella-Vila Olimpica (Metro L4), 5 min walk",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Roure_-_Ciutadella_4.JPG",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Herodotptlomeu, via Wikimedia Commons",
+      "status": "approved"
+    },
+    "curation_status": "ai_generated",
+    "notes": "Municipal register (register_id 99400454956, catalogue number 0130-01-97, catalogued 1997) plus an independent beteve.cat feature, which is the source for the only-one-in-Catalonia claim and for the unlobed leaves. Pin: the register gives 41.388892, 2.186420 while OSM node 6924278485, carrying the same catalogue geocoded by address, gives 41.38829, 2.18680, 75 m apart. The Commons photograph shows the tree standing beside the park's bandstand, which supports the OSM position, so that one is used, but two municipal renderings disagreeing by 75 m is not a confirmed pin and it is marked approximate. Photo viewed directly before approval: leaning trunk fills the centre of frame, daylight, colour, crown readable, categorised on Commons under 'Roure de Mexic del parc de la Ciutadella'. Its upload path was resolved against the Commons API rather than guessed. File 3 in the same series was rejected: the bandstand takes the centre band and the tree sits at the left edge, which would not survive the card crop.",
+    "location_precision": "approximate"
+  },
+  {
+    "id": "bcn_013",
+    "name": "The Osage Orange of the Ciutadella",
+    "species": "Osage Orange (Maclura pomifera)",
+    "age_estimate": "about 113 years",
+    "age_min": 110,
+    "age_max": 116,
+    "best_time": {
+      "months": [
+        10,
+        11
+      ],
+      "label": "late October into November, when fruit the size of grapefruit drops onto the path",
+      "kind": "fruit"
+    },
+    "location": {
+      "address": "Parc de la Ciutadella, beside the lake, 08003 Barcelona",
+      "latitude": 41.38874,
+      "longitude": 2.187549,
+      "neighbourhood": "Sant Pere, Santa Caterina i la Ribera, Ciutat Vella"
+    },
+    "story": "In late autumn this tree drops what look like green brains onto the path. The fruit of the Osage orange is the size of a grapefruit, yellow-green and almost fluorescent when fresh, its surface a mass of folds and channels, and it is inedible to more or less everything alive today. The usual explanation is that it fed animals that no longer exist, ground sloths and mammoths that swallowed the fruit whole and carried the seed away, which leaves the tree serving meals nobody has ordered for ten thousand years. It comes from a small range across Texas, Arkansas and Louisiana, where its wood made the finest bows in North America and gave both the Osage nation its trade and this tree its name. Europe imported it early in the 19th century and never took to it. Barcelona's specimen went into Parc de la Ciutadella around 1913 and now carries a trunk about two and a half metres around under a crown the city measures at anywhere from 13 to 19 metres. It is deciduous, so the timing matters: come in late October or November and the fruit is lying under it, with a few hanging on into winter after the leaves have gone.",
+    "verified_sources": [
+      "https://bcnsostenible.cat/es/web/punt/maclura-pomifera",
+      "https://beteve.cat/societat/arbres-carrers-barcelona-ciutadella-poblesec/",
+      "https://www.openstreetmap.org/node/6924265087",
+      "https://www.inaturalist.org/observations/330848719"
+    ],
+    "access": "Free, public park",
+    "transport": "Arc de Triomf (Metro L1) or Ciutadella-Vila Olimpica (Metro L4), 5 min walk",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "notes": "Municipal register (register_id 99400679805, catalogue number 0039-01-93, catalogued 1993) plus an independent beteve.cat article about the species in Barcelona, which supplies the fruit description, the fact that it is not edible, and the timing: the fruit falls in late autumn with some hanging into winter. That article is the basis for best_time. Dimensions differ between the register (16 m tall, crown 19 m) and bcnsostenible (14 m, crown 13.5 m) and are given as a range. Pin confirmed on three-way agreement: register 41.388569/2.187622, OSM node 6924265087 at 19 m, and iNaturalist observation 330848719 at 12 m, the last of which is a photograph taken in the park. No photo used: the only open-licence image found in place is that iNaturalist observation, a close-up of a split fruit on the ground, which is not a portrait of the tree and fails the Cadiz standard. Honest gap. The megafauna explanation for the fruit is presented as a hypothesis, which is what it is.",
+    "location_precision": "confirmed"
+  },
+  {
+    "id": "bcn_014",
+    "name": "The Red Gum of the Placa de les Caramelles",
+    "species": "River Red Gum (Eucalyptus camaldulensis)",
+    "age_estimate": "over 100 years, city register says about 120",
+    "age_min": 105,
+    "age_max": 125,
+    "location": {
+      "address": "Placa de les Caramelles, Casa de la Caritat, 08001 Barcelona",
+      "latitude": 41.382393,
+      "longitude": 2.167705,
+      "neighbourhood": "El Raval, Ciutat Vella"
+    },
+    "story": "Close to 30 metres of Australian tree stands in the Raval, the most tightly built neighbourhood in Barcelona and close to the last place with room for anything this size. The river red gum grew up inside the walled grounds of the Casa de la Caritat, the charity house that took in the city's foundlings and destitute for a century and a half, which is the only reason there was open soil here at all. From Placa de les Caramelles you get the whole thing: a pale straight trunk about three metres around, bare for a long way up before the crown begins. Eucalyptus camaldulensis follows the seasonal rivers of inland Australia across almost the entire continent, surviving drought by shedding whole limbs and resprouting from the base, which is also why nobody sensible parks under one. The buildings around it reopened in 1994 as the CCCB arts centre, the same year the city added the tree to its catalogue. Its age is the soft part of the record. The city gives 1904, no independent source confirms it, and the city's own two published versions of the same entry differ by three metres in height and 20 centimetres in girth. Read the date as the register's best guess.",
+    "verified_sources": [
+      "https://www.barcelona.cat/es/que-hacer-en-bcn/parques-y-jardines/arboles-de-interes-local/arbre-d-interes-local-eucaliptus-de-fulla-estreta-pl-de-les-caramelles-99400455018",
+      "https://guia.barcelona.cat/es/detall/eucaliptus-vermell-de-la-placa-de-les-caramelles_99400455018.html",
+      "https://www.bcnsostenible.cat/web/punt/eucalyptus-camaldulensis",
+      "https://www.openstreetmap.org/node/6924165385",
+      "https://ca.wikipedia.org/wiki/Casa_de_la_Caritat_de_Barcelona"
+    ],
+    "access": "Free. The tree stands inside the Casa de la Caritat grounds and is seen from Placa de les Caramelles, a public square open to the street beside the CCCB.",
+    "transport": "Universitat (Metro L1/L2), 5 min walk",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "notes": "FLAGGED for a single-source age. Everything traceable about the 1904 planting year is a rendering of the same municipal record (register_id 99400455018, catalogued 1994): barcelona.cat, guia.barcelona and bcnsostenible are three faces of one catalogue, not three sources. No independent confirmation was found, and the two municipal renderings disagree with each other on the tree's size, 29 m and 3.1 m girth in the register against 26 m and 2.90 m on guia.barcelona. The story states this plainly rather than implying a firm date. Existence and species are not in doubt: the tree is catalogued, mapped, and 70 m from bcn_010. Pin confirmed: register 41.382401/2.167735 and OSM node 6924165385 at 41.382393/2.167705, three metres apart. Casa de la Caritat's identity as the present-day CCCB is from Catalan Wikipedia, independent of the tree register. No open-licence photograph of this tree was found on Commons, iNaturalist or Flickr this pass; an honest gap rather than a substitute of the courtyard.",
+    "location_precision": "confirmed"
+  },
+  {
+    "id": "bcn_015",
+    "name": "The Holm Oak of the Bacardi Gardens",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": "about 120 years",
+    "age_min": 118,
+    "age_max": 125,
+    "location": {
+      "address": "Jardins de Bacardi, Travessera de les Corts, 08028 Barcelona",
+      "latitude": 41.380142,
+      "longitude": 2.125771,
+      "neighbourhood": "La Maternitat i Sant Ramon, Les Corts"
+    },
+    "story": "This oak is the only part of a rich man's garden that was never sold, demolished or built over. The land was a farm called Can Ermengol until the Bacardi family bought it late in the 19th century and put up a manor house for Baltasar de Bacardi i Janer, with grounds laid out purely for his own recreation. The oak went in around 1904. When his granddaughter Anna Bacardi i Ribas died in 1958, her three children began breaking the estate up and selling it; the house came down for the widening of Travessera de les Corts, and in 1963 the city expropriated what was left of the garden and opened it to everyone who had never been allowed in. The oak now stands roughly 16 metres tall with a trunk just over two metres around, among palms and plane trees left from the same private planting, five minutes from the Camp Nou crowds. Holm oaks keep their small hard leaves all year and grow slowly enough that a century leaves them looking unhurried. Barcelona catalogued this one in 1994, which means it cannot be removed for any reason, and that turned out to be a useful piece of paper: in April 2026 the city approved a redesign of the whole site around it.",
+    "verified_sources": [
+      "https://www.bcnsostenible.cat/es/web/punt/alzina-jardins-de-bacardi",
+      "https://ca.wikipedia.org/wiki/Jardins_de_Bacard%C3%AD",
+      "https://carrers.barcelona/vies/jardins-de-bacardi",
+      "https://www.openstreetmap.org/node/6924087388",
+      "https://metropoliabierta.elespanol.com/vivir-en-barcelona/20260405/barcelona-transforma-jardines-bacardi-deporte-pistas-petanca-nuevos-huertos-urbanos/1003742748661_0.html"
+    ],
+    "access": "Free, public garden. The city approved a redesign of the gardens and their surroundings in April 2026, so parts of the site may be fenced for works; the oak is catalogued and cannot be removed. Check ajuntament.barcelona.cat before a special trip.",
+    "transport": "Collblanc (Metro L5/L9), 5 min walk, or Les Corts (Metro L3), 9 min walk",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "notes": "Municipal register (register_id 99400455080, catalogued 1994) for the tree, plus Catalan Wikipedia and carrers.barcelona for the estate history, which are independent of the tree catalogue and name the catalogued holm oak specifically. Dimensions differ between the register (16 m tall, crown 14 m, girth 2.1 m) and bcnsostenible (over 14 m, crown 8 m); the height is given as a rough figure and the crown is left out of the story rather than picking a side. Pin confirmed: register 41.380174/2.125790 and OSM node 6924087388 at four metres. The April 2026 renovation approval is from metropoliabierta and barnadiario; neither mentions the oak, so the story says only that the redesign was approved and the catalogue protects the tree, which is what the sources support. No open-licence photograph found this pass. 127 m from bcn_007, so Les Corts becomes a two-tree stop rather than a single pin.",
+    "location_precision": "confirmed"
+  },
+  {
+    "id": "bcn_016",
+    "name": "The Wild Olive of Park Guell",
+    "species": "Olive (Olea europaea)",
+    "age_estimate": "city register says 1771, about 255 years; not independently dated",
+    "age_min": 200,
+    "age_max": 260,
+    "location": {
+      "address": "Park Guell, east sector, Carretera del Carmel, 08024 Barcelona",
+      "latitude": 41.41491,
+      "longitude": 2.154906,
+      "neighbourhood": "Park Guell, Gracia"
+    },
+    "story": "The city's own register dates this wild olive to 1771, which would make it older than the tree Barcelona calls its oldest. That title belongs to the holm oak in Gracia at about 250 years, and the oak has something this olive does not: a dendrochronologist's count of its rings. The olive carries an approximate birth year typed into a municipal catalogue with nothing published behind it. So the honest position is that Barcelona may hold an older tree than the one it advertises, and nobody has done the work to settle it. What is not in question is the tree itself. It is an ullastre, the wild form of the olive that grows all round the Mediterranean as a low, scrubby, many-stemmed thing nobody looks at twice, and this one went up like a proper tree instead, somewhere between 14 and 17 metres with a crown spreading over 13 metres above a Park Guell retaining wall. That is why it was catalogued in 1996: not for its age, but because a species every Catalan can name had never been seen behaving like this. It was already on the hillside more than a century before Eusebi Guell bought the land.",
+    "verified_sources": [
+      "https://bcnsostenible.cat/web/punt/olea-europaea-sylvestris",
+      "https://www.openstreetmap.org/node/4618688164",
+      "https://commons.wikimedia.org/wiki/Category:Ullastre_del_Parc_G%C3%BCell",
+      "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest"
+    ],
+    "access": "Free, within Park Guell's freely accessible wooded area outside the ticketed Monumental Zone, the same caveat as bcn_002 and bcn_003",
+    "transport": "Lesseps (Metro L3), 15 min walk uphill, or bus 24 to Carretera del Carmel",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Ullastre_del_Parc_G%C3%BCell_P1500841.jpg",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Pere Lopez Brosa (pere prlpz), via Wikimedia Commons",
+      "status": "approved"
+    },
+    "curation_status": "flagged",
+    "notes": "MERGE BLOCKER, do not publish without a decision. The register's planting year of 1771 (register_id 99400454989, catalogue number 0117-06-96, catalogued 1996) makes this tree 255 years old, older than the 250-year holm oak that barcelona.json's intro, question_answer, question_context and first FAQ all present as the oldest tree in Barcelona. The two claims cannot both stand unqualified on the same site. The distinction the story draws is real and defensible: the oak was ring-dated by dendrochronologists, the olive carries an unsupported register estimate. But merging this tree means either rewording the oldest-tree copy to say 'the oldest tree in Barcelona whose age has actually been measured', or holding the tree back. That is a human call, not a run's. FLAGGED for the age, which is single-sourced and unmeasured; hence the deliberately wide age_min. Species field uses the canonical 'Olive (Olea europaea)' per hard rule 9 so it groups with the other 13 olives on the site; the register records it as Olea europaea var. sylvestris and the story says it is the wild form. Dimensions differ between the register (17 m, girth 2.9 m, crown 21 m) and bcnsostenible (14 m, girth 1.6 m, crown 13 m), a very wide disagreement inside one catalogue, so ranges are used and the girth is left out. Pin confirmed three ways: register 41.414909/2.154906, OSM node 4618688164, and the EXIF GPS of the Commons photograph at 41.414910/2.154910. Photo viewed directly before approval: full olive crown above a Park Guell stone wall, daylight, colour, two people in frame for scale, tree occupies the centre band.",
+    "location_precision": "confirmed"
+  }
+]
