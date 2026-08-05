@@ -456,7 +456,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .explore-now-chip { display: inline-block; background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 11.5px; border-radius: 999px; padding: 2px 10px; margin-left: 0.4rem; }
 .explore-map { flex: 1; min-height: 320px; }
 .pop-now { background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 10px; border-radius: 999px; padding: 1px 8px; }
-.appland { position: relative; min-height: calc(100vh - var(--header-h)); display: flex; align-items: center; justify-content: center; padding: 2.5rem 1rem; }
+.appland { position: relative; display: flex; align-items: center; justify-content: center; padding: 5rem 1rem; }
 .appland-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; filter: brightness(0.82); }
 .appland-card { position: relative; z-index: 1; background: #fff; border-radius: 24px; box-shadow: 0 18px 60px rgba(0,0,0,0.3); max-width: 62rem; width: 100%; display: grid; grid-template-columns: 1.05fr 1fr; gap: 2.5rem; padding: 2.75rem 3rem; }
 .appland-left h1 { font-size: 2.1rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.12; margin: 0.9rem 0 0.6rem; }
@@ -561,6 +561,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .mission p { font-family: var(--sans); font-size: 14.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
 .mission b { font-weight: 700; color: var(--ink); }
 .mission a, .footer-about a { color: var(--moss); }
+.footer-about p a { display: inline; margin: 0; }
 .report-line { font-size: 13px; font-weight: 300; color: var(--ink-mid); margin: 0.3rem 0 0.7rem; line-height: 1.6; }
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 62rem; margin: 0 auto; padding: 0.4rem 2rem 2.4rem; }
 .step { display: block; text-decoration: none; color: var(--ink); font-family: var(--sans); text-align: center; }
@@ -3524,26 +3525,21 @@ APPLAND_BODY = """
   <img class="appland-bg" APPLAND_SRCSET alt="">
   <div class="appland-card">
     <div class="appland-left">
-      <span class="chip gold">Coming soon</span>
-      <h1>The walk in your pocket</h1>
-      <p class="appland-sub">The website finds the trees. The app we are building is for the walk itself, and there is nothing to download yet; this page is what it will be, and how to hear it first.</p>
-      <ol class="appland-steps">
-        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><div><strong>Today:</strong> leave your email through the form, with the word "app"</div></li>
-        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="9" rx="6" ry="5"/><path d="M11.4 20h1.2l-.3-7h-.6z"/></svg></span><div><strong>Meanwhile:</strong> we build, and the site already works well on your phone</div></li>
-        <li><span class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.8 1-6.1L3.2 9.4l6.1-.9z"/></svg></span><div><strong>Launch day:</strong> you hear it first, before anyone else</div></li>
-      </ol>
+      <span class="chip gold">Not out yet</span>
+      <h1>An app for the walk itself</h1>
+      <p class="appland-sub">There is nothing to download yet. This page says what we are building and lets you leave an email if you want to know when it exists. The website already does the finding, and it works on a phone, so nothing here is waiting on the app.</p>
       <form class="waitlist" id="waitlist">
         <input type="email" id="wl-email" placeholder="you@example.com" aria-label="Your email address" required>
         <button type="submit" class="appland-cta">Keep me posted</button>
       </form>
-      <p class="waitlist-note" id="wl-note">We will email you when the app is ready.</p>
+      <p class="waitlist-note" id="wl-note">One email, when there is something to open. Nothing else.</p>
     </div>
     <div class="appland-right">
-      <h2>The app is going to include</h2>
-      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="22" r="14" fill="none" stroke="#4A6B2A" stroke-width="3"/><circle cx="24" cy="22" r="4" fill="#D9A13F"/><path d="M24 4 v6 M24 34 v6 M6 22 h6 M36 22 h6" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg></span><div><h3>The trees around you, live</h3><p>Open it anywhere and see the remarkable old trees near you, the nearest one a walk-time away.</p></div></div>
-      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="19" rx="12" ry="10" fill="#3A5222"/><circle cx="17" cy="18" r="7" fill="#4A6B2A"/><circle cx="31" cy="18" r="7" fill="#4A6B2A"/><circle cx="24" cy="11" r="7" fill="#5B7F35"/><path d="M22.9 40h2.4l-.6-13h-1.2z" fill="#6B4F33"/><circle cx="36" cy="34" r="8" fill="#D9A13F"/><path d="M32.5 34 l2.5 2.5 5 -5" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Check in at the trunk</h3><p>Stand before a tree and collect it; your collection counts in years of living history.</p></div></div>
-      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 30 a10 10 0 0 1 2 -19 a12 12 0 0 1 22 3 a8 8 0 0 1 0 16 z" fill="#ECEDE2" stroke="#4A6B2A" stroke-width="2.5"/><path d="M18 36 l-3 5 M26 36 l-3 5 M34 36 l-3 5" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg></span><div><h3>Works where wifi does not</h3><p>A whole city in your pocket before you leave the hotel; no roaming required.</p></div></div>
-      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="20" cy="18" rx="10" ry="8" fill="#D9A13F"/><circle cx="15" cy="16" r="4.5" fill="#E8BC63"/><path d="M19 36h2.4l-.6-12h-1.2z" fill="#6B4F33"/><path d="M33 10 a10 10 0 0 1 5 9 M35.5 6 a15 15 0 0 1 7 13" stroke="#D9A13F" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg></span><div><h3>The season taps you</h3><p>When a tree near you reaches its golden week, the app says so, at exactly the right moment.</p></div></div>
+      <h2>What it will do</h2>
+      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="22" r="14" fill="none" stroke="#4A6B2A" stroke-width="3"/><circle cx="24" cy="22" r="4" fill="#D9A13F"/><path d="M24 4 v6 M24 34 v6 M6 22 h6 M36 22 h6" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg></span><div><h3>The trees around you</h3><p>Open it anywhere and it shows the remarkable old trees nearby, with a walking time to the closest one.</p></div></div>
+      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="19" rx="12" ry="10" fill="#3A5222"/><circle cx="17" cy="18" r="7" fill="#4A6B2A"/><circle cx="31" cy="18" r="7" fill="#4A6B2A"/><circle cx="24" cy="11" r="7" fill="#5B7F35"/><path d="M22.9 40h2.4l-.6-13h-1.2z" fill="#6B4F33"/><circle cx="36" cy="34" r="8" fill="#D9A13F"/><path d="M32.5 34 l2.5 2.5 5 -5" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Collect the ones you have seen</h3><p>Stand in front of a tree, tick it off, and your collection grows city by city.</p></div></div>
+      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 30 a10 10 0 0 1 2 -19 a12 12 0 0 1 22 3 a8 8 0 0 1 0 16 z" fill="#ECEDE2" stroke="#4A6B2A" stroke-width="2.5"/><path d="M18 36 l-3 5 M26 36 l-3 5 M34 36 l-3 5" stroke="#4A6B2A" stroke-width="2.6" stroke-linecap="round"/></svg></span><div><h3>Works without a signal</h3><p>Download a city before you go, so the map still works when your phone has no data.</p></div></div>
+      <div class="appland-feat"><span class="feat-tile"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="20" cy="18" rx="10" ry="8" fill="#D9A13F"/><circle cx="15" cy="16" r="4.5" fill="#E8BC63"/><path d="M19 36h2.4l-.6-12h-1.2z" fill="#6B4F33"/><path d="M33 10 a10 10 0 0 1 5 9 M35.5 6 a15 15 0 0 1 7 13" stroke="#D9A13F" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg></span><div><h3>A note when a tree is at its best</h3><p>Some trees are only worth the trip in one particular month. The app can tell you when one near you is in that month.</p></div></div>
     </div>
   </div>
 </div>
