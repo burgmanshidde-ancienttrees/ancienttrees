@@ -29,6 +29,18 @@ Scott Galloway meets nature writing: direct, specific, a little vivid, never pre
 6. **Dry wit, never cute.** Humour comes from the facts themselves (a king ordering the wrong mulberry species) and from understatement ("a plaque that undersells it considerably"). No exclamation marks, no winking at the reader.
 7. **The reader is a smart friend, not a tourist.** No selling, no hype, no "you simply must". Assume curiosity, reward it with substance, and trust the reader to decide whether the detour is worth it.
 
+## Product copy is soberer than the stories (Hidde, 2026-08-04, explicit approval for this edit)
+
+The voice above governs the stories. Everything else on the site, the homepage, the asks, the buttons, the mission line, is written a notch drier still. His instruction, in his words: "a bit more Dutch, a bit less American", and "I don't want to pretend".
+
+Three rules, all from copy he rejected on the day:
+
+1. **Never claim more than is true.** "Every tree here was found, verified and placed by hand" reads well and is false: these pages are researched from sources, and several carry ranges precisely because nobody has measured them. If a sentence would embarrass us next to the data, it does not ship.
+2. **No cleverness that asks to be noticed.** "Put a tree on it" borrowed a pop lyric to be charming. A reader who stops to admire the phrasing has stopped reading about the tree. Wit belongs in the facts, per principle 6; it does not belong in a call to action.
+3. **State the thing, ask plainly, admit the state of it.** The replacement reads: we are on a mission to map every remarkable tree in the world, we could use your help, tell us if you know a good tree or spot a mistake, we work on this database every day. No adjectives, no promise about the future, and it says openly that the thing is unfinished.
+
+The test before shipping any product copy: would this sentence sound overblown read aloud to someone who already knows how small this project is? If yes, cut it back.
+
 ## Hard bans
 
 - Em dashes. Anywhere. (Project-wide hard rule.)
@@ -65,4 +77,5 @@ Reserved. Hidde delivers samples of his own writing (posts, mails, fragments, Du
 ---
 
 ## CHANGELOG
+- **v1.3 (2026-08-04):** Added "Product copy is soberer than the stories", approved by Hidde in session ("please save that in your copywriting style"). Written from two lines he rejected on the day: an untrue claim about hand-verification and a pop-lyric pun in a call to action.
 - v1.0: Initial draft distilled from CLAUDE.md style rules, the Paris run, and the 2026-07-19 quality round. Awaiting Hidde's approval.

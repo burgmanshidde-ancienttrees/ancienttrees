@@ -17,7 +17,7 @@ Written 2026-07-28 from the nine-product benchmark (AllTrails, Komoot, Wikiloc, 
 - **Map**: the find-near-me product, the homepage hero grown up.
 - **Walks**: the signature walks index (ships when the routes ship; until then the item stays hidden).
 - **In season**: demoted from the nav on 2026-07-29 (Hidde: "wordt veel te belangrijk gemaakt"). Season is a map layer (gold pins, pulse, popup badge) and a per-tree block, not a destination; /in-season stays live for search but is linked only from season contexts and the footer.
-- **Explore** (dropdown): Cities, Species, Collections, Suggest a tree: the entire acquisition layer in one hub, eBird-style. Nothing deleted, everything demoted.
+- **Explore** (dropdown): Cities, Countries, Species, Collections, Suggest a tree: the entire acquisition layer in one hub, eBird-style. Nothing deleted, everything demoted. Countries joined on 2026-08-04, after Hidde could not find the country pages that had been live and unlinked since 2026-08-01; /countries is their index and every country page is one hop from the menu.
 - **My trees**: the collection, visible logged-out as the AllTrails-style hook; becomes the account dashboard.
 
 URLs do not move. City pages stay at /[city], tree pages at /[city]/[tree]. This is re-emphasis, not migration.
@@ -25,9 +25,30 @@ URLs do not move. City pages stay at /[city], tree pages at /[city]/[tree]. This
 ## The homepage, reordered
 
 1. Hero: find trees near you (search over a rotating curated photo, AllTrails-style). Amended 2026-07-28: the map moved to /explore; Hidde's grounds, plus his own addition that a sparse world map advertises incompleteness. The show-don't-tell principle now lives in the /explore page and the verb sections, and the hero photo bank is curated for one mood: warm light, one epic tree, human scale.
-2. The four verbs as sections (find, walk, collect, season). Exists; tighten.
+2. The four verbs as sections (find, walk, collect, season), with their own visuals. Exists; tighten, never duplicate. On 2026-08-04 a second, thinner three-step band was added above it, so a visitor met the same promise twice within one screen and Hidde called the page a mess. The band was removed and this line is the reason it should never come back: if find/walk/collect needs more prominence, it is this section that moves or grows.
 3. One opinionated shelf: the flagship collection (top-10 trips) plus in-season now. Lists with an opinion are the shareable layer.
 4. A COMPACT explore directory: country-grouped city links, plain names, plus species and collections links. The current 36-card grid moves here in a fraction of the height, exactly the AllTrails "Adventure anywhere" block: present for crawlers and the determined, invisible as furniture.
+
+## The funnel, written down (2026-08-04, because it was implied everywhere and stated nowhere)
+
+Where a visitor comes in, where they should go, and what counts as arriving.
+
+    search / social  ->  tree page or city page      (85% of entries land deep, not on the homepage)
+                          |
+                          v
+                     the map, near me                (the product: what is around me)
+                          |
+                          v
+                     directions clicked              <- THE conversion. Goal 1 in one event.
+                          |
+                          v
+                     collect / the app               (the keep-verb, gated by an account later)
+
+Three things follow from this shape and are easy to forget:
+
+- **The deep page is the front door.** Most people never see the homepage, so every tree and city page has to work as a first impression on its own: it must say where it is, why it is worth the walk, and what else is nearby. The nearby-cards exist for exactly this reason.
+- **The conversion is a directions click, not a signup.** It is the only event on the site that means someone might actually stand in front of a tree, which is goal 1. Everything else is a proxy. This is why the events counter exists and why the weekly scorecard leads with directions-per-visit.
+- **The ask comes after the value, never before it.** Contribution asks belong at the bottom of a page or beside the gap they refer to, not stacked under the value proposition at the top. The 2026-08-04 homepage mistake was exactly this ordering error.
 
 ## The tree page, target anatomy (the product page Hidde asked to wireframe)
 
