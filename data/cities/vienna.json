@@ -65,7 +65,7 @@
       "age_max": 135,
       "location": {
         "address": "Stadtpark, beside the Schubert monument, 1010/1030 Wien",
-        "latitude": 48.206070,
+        "latitude": 48.20607,
         "longitude": 16.380028,
         "neighbourhood": "Innere Stadt / Landstraße border, Stadtpark"
       },
@@ -77,7 +77,9 @@
       "access": "Free, public park (Stadtpark)",
       "transport": "3 min walk from Stadtpark U-Bahn station (U4)",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "label": "November, when it turns the same uniform gold as Schönbrunn's ginkgo across town"
       },
       "photo": {
@@ -93,7 +95,7 @@
     {
       "id": "vie_003",
       "name": "The Chestnut Avenue of the Hauptallee",
-      "species": "Common Horse Chestnut (Aesculus hippocastanum)",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
       "age_estimate": "about 186 years, documented planted in 1840",
       "age_min": 181,
       "age_max": 191,
@@ -112,7 +114,9 @@
       "access": "Free, public avenue, open at all times",
       "transport": "Starts at Praterstern U-Bahn station (U1/U2), runs the length of the Prater to the Lusthaus",
       "best_time": {
-        "months": [4],
+        "months": [
+          4
+        ],
         "label": "late April, when the avenue turns white with chestnut blossom"
       },
       "photo": {
@@ -146,7 +150,10 @@
       "access": "Free, Schönbrunn park and gardens (separate attractions inside the grounds, such as the Gloriette or maze, charge admission)",
       "transport": "10 min walk from Schönbrunn U-Bahn station (U4), inside the palace park's Botanical Garden",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "label": "late October into November, when every leaf turns gold and falls within days"
       },
       "photo": {
@@ -168,8 +175,8 @@
       "age_max": 260,
       "location": {
         "address": "Rennweg 14, 1030 Wien",
-        "latitude": 48.19540,
-        "longitude": 16.38390,
+        "latitude": 48.1954,
+        "longitude": 16.3839,
         "neighbourhood": "Landstraße, 3rd district"
       },
       "story": "A memorial stone at its base calls this tree the Jacquin-Platane, but almost nobody in Vienna uses that name. Nikolaus Joseph von Jacquin planted it around 1780 as director of the university's Botanical Garden, and Wolfgang Amadeus Mozart walked past it often enough, on his way to piano lessons at Jacquin's house nearby, that the tree took his name instead. It has stood on Rennweg since before the French Revolution, and it has been protected as one of Vienna's first natural monuments since 1936, registered simply as Naturdenkmal Nr. 9. A property boundary shifted at some point in its life, and the tree now grows on the public sidewalk, just outside the fence of the Botanical Institute it once stood inside. Its trunk, roughly six metres around, has gone partially hollow with age, and Vienna's parks department now lists it as endangered. In 2009 the city closed Rennweg overnight and tested the tree's stability with rope winches, treating a quarter-millennium-old plane tree with the same seriousness as a structural inspection. It is around 245 years old now, close enough to Mozart's own lifetime that the story holds up better than most tree legends do.",
@@ -290,7 +297,7 @@
       "location": {
         "address": "Pötzleinsdorfer Schlosspark, near the main entrance, 1180 Wien",
         "latitude": 48.24197,
-        "longitude": 16.30660,
+        "longitude": 16.3066,
         "neighbourhood": "Währing, 18th district"
       },
       "story": "Every giant sequoia growing in Europe today is, at most, about 170 years old, because the species was not seen by Europeans until 1852 and not exported until 1853. That upper limit makes the two giant sequoias flanking the main entrance to Pötzleinsdorfer Schlosspark impressive for what they are not: they cannot be nearly as old as the palace park around them, which the Geymüller banking family began landscaping in 1801, decades before anyone in Europe had seen a sequoia seed. They were planted later, sometime after 1853, as one of the many exotic imports that Vienna's wealthy families competed to add to their English-style gardens once the species became available, a horticultural fashion sometimes called Wellingtonia mania. Two smaller sequoias grow between the pair near the entrance, part of the same planting. The park itself, one of Vienna's largest and least manicured, is known for long open meadows dotted with individual specimen trees rather than dense woodland, and the sequoias are its most conspicuous residents: nothing else in the park comes close to their bulk or their soft, reddish, fibrous bark. No precise planting date or trunk measurement has surfaced for this specific pair, so their age here is bounded by what is known about the species rather than stated as documented fact.",
@@ -317,7 +324,12 @@
       "age_estimate": "100+ years",
       "age_min": 90,
       "age_max": 130,
-      "best_time": { "months": [11], "label": "November, when the ginkgo half turns gold beside its evergreen sequoia neighbour" },
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when the ginkgo half turns gold beside its evergreen sequoia neighbour"
+      },
       "location": {
         "address": "Türkenschanzstraße 46, Sternwartepark, 1180 Wien",
         "latitude": 48.2344,

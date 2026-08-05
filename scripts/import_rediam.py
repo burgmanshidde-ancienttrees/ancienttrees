@@ -104,6 +104,7 @@ def main():
         "endpoint": "https://portalrediam.cica.es/descargas/ (eight province KML files, arb_sing_<province>.kml)",
         "licence": "CC BY 4.0",
         "licence_proof": "The dataset's own metadata record (GeoNetwork uuid c5d37ec9-a857-42b2-a8d2-2e0d4b947a4e, 'Inventario de arboles y arboledas singulares de Andalucia') carries the licence 'Creative Commons Attribution 4.0 International Public License (CC BY 4.0)'. The Junta mixes CC BY, CC BY-NC and CC BY 3.0 across its portal, so this proof covers this dataset only.",
+        "designation": "Arbol singular de Andalucia",
         "country": "Spain",
         "attribution": "REDIAM, Junta de Andalucia",
         "fetched": "2026-08-05",

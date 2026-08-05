@@ -47,7 +47,10 @@
       "access": "Paid entry (Real Alcázar admission ticket required)",
       "transport": "10 min walk from Puerta de Jerez tram stop (T1), inside the Real Alcázar grounds",
       "best_time": {
-        "months": [12, 1],
+        "months": [
+          12,
+          1
+        ],
         "label": "December into January, when every leaf turns uniform gold within days"
       },
       "photo": {
@@ -63,7 +66,7 @@
     {
       "id": "sev_002",
       "name": "The Ombú of La Cartuja",
-      "species": "Ombú (Phytolacca dioica)",
+      "species": "Ombu (Phytolacca dioica)",
       "age_estimate": "500 years",
       "age_min": 480,
       "age_max": 500,
@@ -141,7 +144,9 @@
       "access": "Free, public park",
       "transport": "10 min walk from Prado de San Sebastián bus/tram interchange, inside Parque de María Luisa",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "label": "November, when its needles turn rust-orange before dropping"
       },
       "photo": {
@@ -266,7 +271,10 @@
       "access": "Paid entry (Seville Cathedral admission ticket required since 1992)",
       "transport": "Inside Seville Cathedral, adjoining the Giralda tower",
       "best_time": {
-        "months": [2, 3],
+        "months": [
+          2,
+          3
+        ],
         "label": "late February into March, azahar season, when the blossom scents the whole courtyard"
       },
       "photo": {

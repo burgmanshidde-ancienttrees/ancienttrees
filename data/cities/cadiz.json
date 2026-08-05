@@ -60,7 +60,7 @@
     {
       "id": "cad_002",
       "name": "The Dragon Tree of Parque Genoves",
-      "species": "Canary Islands Dragon Tree (Dracaena draco)",
+      "species": "Dragon Tree (Dracaena draco)",
       "age_estimate": "estimated 100 to 200 years, genuinely disputed",
       "age_min": 100,
       "age_max": 200,
@@ -118,7 +118,10 @@
       "notes": "Species and 'oldest documented in Europe' claim reported independently by a Cadiz garden specialist blog and a national Spanish news outlet (okdiario), plus the Ayuntamiento de Cadiz's own news confirming a resistograph/tomography inspection and protective support structure after storm damage; the 'oldest in Europe' superlative is presented as reported/attributed rather than independently verified against a primary botanical register, per hard rule 8. Bloom timing (May-June) confirmed by two sources, qualifying for best_time. Photo found via iNaturalist observation 165921565 (CC BY 4.0, place_guess explicitly 'Parque Genoves, Cadiz') and viewed directly: a leaning multi-trunk tree with hanging aerial roots beside a stone-edged basin, its own interpretive sign visible reading 'Arbol de hierro / Metrosideros tomentosa / Myrtaceae / Nueva Zelanda', an exact species and common-name match confirmed on sight rather than caption alone. Coordinates tightened 2026-07-28 to this exact observation's own recorded GPS position (queried directly via the iNaturalist API), which sits inside Parque Genoves and about 130m from the four-tree shared park-centroid point this entry previously used; kept approximate rather than confirmed since a phone geotag next to a labelled sign is strong but not a formal survey.",
       "location_precision": "approximate",
       "best_time": {
-        "months": [5, 6],
+        "months": [
+          5,
+          6
+        ],
         "label": "May and June, when it blooms crimson"
       }
     },

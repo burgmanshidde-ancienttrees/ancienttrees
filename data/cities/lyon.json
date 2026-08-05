@@ -5,7 +5,7 @@
   "intro": "Lyon keeps a formal, published list of its remarkable trees: four carry the national Arbre Remarquable label, and one park holds the collective Ensemble Arboré Remarquable label for its whole 8,800-tree collection. That park, the Tête d'Or, exists because 19th century Lyonnais wanted a green space to rival Paris's Bois de Boulogne, and two Swiss brothers gave them one with species from four continents. What survives elsewhere is quieter: a giant chestnut in a half-wild park, a cedar on a Saône island where monks gardened for a thousand years, an oak collection planted the year before the First World War.",
   "meta_description": "Lyon labels its remarkable trees by law. Meet a pine first grown in Europe via Kew in 1856, a giant chestnut, and an island cedar monks once tended.",
   "question_answer": "Lyon has no single documented oldest tree, but its most precisely dated remarkable tree is the Pin de Bunge, also called the Pin de Napoléon, in the Parc de la Tête d'Or, planted around 1856 during the park's creation and now roughly 170 years old. It carries France's national Arbre Remarquable label and is described by the label association as having no equivalent elsewhere in the country.",
-  "question_meta": "Lyon's most precisely dated remarkable tree is an 1856 Chinese pine in Parc de la Tête d'Or. Its story, exact location, and nine more labelled trees.",
+  "question_meta": "Lyon's most precisely dated remarkable tree is an 1856 Chinese pine in Parc de la Tête d'Or. Its story, exact location, and eight more labelled trees.",
   "question_context": "Lyon is one of the few cities on this list with an actual published inventory to work from: the city government maintains a list of nationally labelled Arbres Remarquables, awarded by the A.R.B.R.E.S. association, and the Metropole publishes open data on protected trees across Greater Lyon. That inventory favours species rarity, size and documented planting circumstances over sheer age, which is why the Pin de Bunge, a Chinese species first introduced to Europe through Kew Gardens in the 19th century, anchors this list rather than an oak or a yew. It stands along the perimeter path of the Tête d'Or's arboretum, a five minute walk from the Boulevard des Belges entrance, in a park that itself holds France's Ensemble Arboré Remarquable label for the whole collection. Older individual claims exist elsewhere in the city, a cedar on the Saône island of Île Barbe where monks are documented gardening for over a thousand years, but none carry the same precisely dated planting record the Pin de Bunge does.",
   "faq": [
     {
@@ -66,7 +66,7 @@
       "location": {
         "address": "Parc de la Tête d'Or, arboretum, 69006 Lyon",
         "latitude": 45.77389,
-        "longitude": 4.85610,
+        "longitude": 4.8561,
         "neighbourhood": "6th arrondissement"
       },
       "story": "This tree's American ancestors were weapons before they were shade. Maclura pomifera is named for the Osage nation of the central United States, who prized its wood, dense, springy and rot-resistant, for war bows and arrows above almost any other timber available to them. The species reached Europe in 1823, and French growers in the south of the country initially planted it not for its odd, wrinkled, inedible fruit but as living fencing and, briefly, as a food source for silkworms before mulberry proved more practical. This specimen in the Tête d'Or's arboretum has grown into something closer to a specimen tree than a hedge: a dendrologist's survey put its girth at 3.70 metres a metre above the ground, with a trunk described as ridged and hollowed over some two metres of its height, reasonably read as the marks of a genuinely old, over-a-century specimen rather than a fast-growing recent planting. Osage orange also spreads by layering, sending down roots wherever a low branch touches soil, so what looks like one tree in a dense stand may in places be a single genetic individual repeating itself.",
@@ -93,7 +93,12 @@
       "age_estimate": "undated, mature specimen",
       "age_min": 100,
       "age_max": 168,
-      "best_time": { "months": [11], "label": "November, when its needles turn copper and drop, the one month it truly looks like the Louisiana wetlands it comes from" },
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when its needles turn copper and drop, the one month it truly looks like the Louisiana wetlands it comes from"
+      },
       "location": {
         "address": "Parc de la Tête d'Or, near the lake, 69006 Lyon",
         "latitude": 45.77565,
@@ -120,11 +125,16 @@
     {
       "id": "lyo_004",
       "name": "The Giant Chestnut of Parc de la Garde",
-      "species": "Common Horse Chestnut (Aesculus hippocastanum)",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
       "age_estimate": "undated, called a giant specimen",
       "age_min": 100,
       "age_max": 180,
-      "best_time": { "months": [5], "label": "May, when its candle-shaped flower spikes cover the canopy" },
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when its candle-shaped flower spikes cover the canopy"
+      },
       "location": {
         "address": "Parc de la Garde, 6 Rue de la Garde, 69005 Lyon",
         "latitude": 45.76073066,
@@ -156,7 +166,12 @@
       "age_estimate": "undated",
       "age_min": 80,
       "age_max": 150,
-      "best_time": { "months": [8], "label": "August, when it flowers later than almost anything else still blooming in the park" },
+      "best_time": {
+        "months": [
+          8
+        ],
+        "label": "August, when it flowers later than almost anything else still blooming in the park"
+      },
       "location": {
         "address": "Parc de Gerland, 24 Allée Pierre de Coubertin, 69007 Lyon",
         "latitude": 45.735,
@@ -299,7 +314,13 @@
       "curation_status": "flagged",
       "notes": "No documented planting date; age estimated from measured size (3.20m girth, 26m height) and the arboretum's 1857 founding period rather than a verified record.",
       "location_precision": "confirmed",
-      "best_time": { "months": [10, 11], "label": "October into November, when its leaves turn a rich butter yellow" }
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October into November, when its leaves turn a rich butter yellow"
+      }
     }
   ]
 }

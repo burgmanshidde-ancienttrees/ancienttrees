@@ -29,7 +29,7 @@
     {
       "id": "hag_001",
       "name": "The Juttepeer of Heilige Geesthofje",
-      "species": "Juttepeer Pear (Pyrus communis)",
+      "species": "European Pear (Pyrus communis)",
       "age_estimate": "about 388 years",
       "age_min": 385,
       "age_max": 390,
@@ -54,7 +54,14 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate",
-      "best_time": { "months": [9, 10], "label": "September into October, when the residents pick the pears for jelly", "kind": "fruit" }
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September into October, when the residents pick the pears for jelly",
+        "kind": "fruit"
+      }
     },
     {
       "id": "hag_002",
@@ -95,7 +102,7 @@
       "location": {
         "address": "Landgoed Clingendael, Wassenaarseweg",
         "latitude": 52.0998488,
-        "longitude": 4.3312020,
+        "longitude": 4.331202,
         "neighbourhood": "Haagse Hout"
       },
       "story": "This linden is the last member standing of a row that stopped existing as a row sometime in the last three centuries. An 18th-century drawing of Clingendael's formal gardens, laid out around 1730, shows several trained lindens planted in a disciplined line, pruned and trellised into the geometric shapes fashionable in Dutch garden design of the period. Every other tree in that row is gone; this one alone survived, and without the regular pruning that once kept it in formation, it has spent three centuries growing into a gnarled, irregular shape that looks nothing like the tidy row it escaped from. That accidental wildness turned out to matter. In 2019, Den Haag became the first Dutch municipality to formally create a veteran tree designation, a status imported from England that protects a tree's final life stage with dedicated fencing and minimal-intervention care rather than the routine pruning applied to younger specimens, and this linden was the first tree in the country to receive it. The designation recognizes exactly what makes the tree valuable now: not tidiness, but the accumulated evidence of three centuries alone, still standing on an estate that has otherwise been rebuilt and replanted around it more than once.",
@@ -141,7 +148,14 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "best_time": { "months": [9, 10], "label": "September and October, when the conkers ripen and fall", "kind": "fruit" }
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September and October, when the conkers ripen and fall",
+        "kind": "fruit"
+      }
     },
     {
       "id": "hag_005",

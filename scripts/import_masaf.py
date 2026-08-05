@@ -177,6 +177,7 @@ def main():
         "endpoint": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (21 regional .xls files)",
         "licence": "CC BY 4.0",
         "licence_proof": "The register page publishes the regional lists under CC BY 4.0; the Sicilian republication of the same data carries license_id cc-by in its portal metadata (dati.regione.sicilia.it, dataset alberi-monumentali-di-sicilia).",
+        "designation": "Albero monumentale d'Italia",
         "country": "Italy",
         "attribution": "MASAF",
         "fetched": "2026-08-05",
