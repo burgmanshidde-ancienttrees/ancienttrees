@@ -157,6 +157,25 @@ Append what you did to `LOG.md`, newest first, in the format that file describes
 
 Two more that follow from the same pass: an age in a register is the age at last measurement, so add the years since and say so; and no register anywhere carries a vitality field, so whether a tree still stands is always a per-tree check that the register cannot do for us.
 
+**Where a week of tokens actually went, measured 2026-08-04.** The first full week of agent-driven work, totalled from the agents' own reported usage:
+
+| Kind of work | Tokens | What it produced | Per unit |
+|---|---|---|---|
+| City research passes | ~620k | 32 published trees | 19k per tree |
+| Photo hunting | ~145k | 2 usable photos | 72k per photo |
+| Register scouting and import | ~460k | 1,048 known trees, plus a permanent map of what is usable per country | 0.4k per tree |
+| Demand and SEO research | ~77k | the collection strategy, reusable | n/a |
+| Wasted | ~250k | nothing | n/a |
+
+Four conclusions, and they matter more than any single research technique:
+
+1. **Scouting compounds; research does not.** Register work cost 460k once and now yields trees at near-zero forever, twenty-five times cheaper per tree than research and it keeps paying. Research costs its 19k per tree every single time. So an hour spent making the next hour cheaper beats an hour spent producing, and the instinct to "just do a city" is usually the expensive instinct.
+2. **The waste was never in the work, it was in the coordination.** Roughly a fifth of the week bought nothing, and not one of those tokens was spent badly researching: a Nara pass died when the session closed because background agents live in the session that started them, a Fukuoka pass duplicated a night run already working the same city, and a photo hunt spent 145k to approve two images. All three are orchestration failures with cheap fixes, now recorded.
+3. **Ask whether the task is judgement or retrieval before dispatching anything.** Retrieval is code and costs nothing: clustering a register, fetching a CSV, searching Commons by category. Judgement needs an agent: is this tree remarkable, does this source hold up, is this photo any good. The 72k-per-photo number is what it costs to make an agent do retrieval, and it is the single worst ratio the project has produced.
+4. **A brief's cost is set by its stopping condition, not its length.** Adding "report what you have after roughly forty minutes" did more for Setubal's cost than every other instruction combined.
+
+**Expensive work gets discussed before it starts (Hidde, 2026-08-04).** Before dispatching anything expected to run long or fan out wide, say in chat what it will cost and what it should return, and get his answer. This is his subscription and a research pass is not a free action: they run from 70k to 230k tokens each, and three in parallel is most of a working day's budget. Estimate, state it, then start. The exception is small bounded work whose cost is obviously trivial.
+
 **Speed, as a standing instruction (Hidde, 2026-08-02: "sneller zou wel beter zijn").** A run's window is the scarce resource, so spend it on finding and verifying trees, not on re-deciding things that are already decided:
 
 - **Check whether the city is already done or being done, before dispatching anything.** `data/cities/[slug].json` existing means it shipped; the queue's status field and LOG.md's newest entries say what is in flight. On 2026-08-03 a night run published Fukuoka while a session research pass was already running on it, and the two overlapped on four trees out of ten. The merge was worth more than either alone, but the duplicated hour was not.
