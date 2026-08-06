@@ -762,6 +762,314 @@
       "curation_status": "flagged",
       "notes": "FLAGGED for having no age. The city register's planting year reads 'Per determinar' and the Generalitat's file gives none, so no age_min or age_max is set. Two independent authorities cover the tree: the city register (register_id 99400637939, catalogued 2015, 30 m tall, girth 1.4 m, crown 12 m) and the Generalitat de Catalunya, which registers it as the Platan Fals de Montjuic, code MA-13.931.04, at 30.0 x 1.38 x 12.0 m, declared monumental 2 April 2025. The rarity-in-Barcelona point comes from the Museu de Ciencies Naturals account of the declaration. Pin approximate: city register 41.36677/2.152069 against the Generalitat's 41.366884/2.151851, 22 m apart, and the monumental ash (bcn_021) stands about 7 m away. See the note on bcn_021: the pin puts a visitor in the right corner of the ravine, not on the exact trunk. PHOTO PROBLEM WORTH KEEPING. The Generalitat publishes File:Platan Fals de Montjuic.jpg on Commons under attribution-gencat, sourced from its own monumental-tree file for this tree. It was viewed directly and NOT used, because the tree in the frame has pinnate compound leaves, which is an ash, not a maple; Acer pseudoplatanus has palmate lobed leaves. Either the file is mislabelled or the photographer shot the wrong trunk in a ravine where the ash stands seven metres away. Recording it rather than acting on it: the identification of the tree itself rests on two official registers, not on this photograph.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "bcn_023",
+      "name": "The Stone Pine of the Palau de Pedralbes Gardens",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "about 133 years",
+      "age_min": 130,
+      "age_max": 135,
+      "location": {
+        "address": "Jardins del Palau de Pedralbes, Avinguda Diagonal 686, Barcelona",
+        "latitude": 41.38824,
+        "longitude": 2.11599,
+        "neighbourhood": "Pedralbes, Les Corts"
+      },
+      "story": "The tree came first. This stone pine was planted in 1893 on the Can Feliu farmland that later became the Finca Guell estate, and it was already thirty years old when the property passed to the city in the 1920s and the house on it became the Barcelona residence of Alfonso XIII. When Nicolau M. Rubio i Tuduri redesigned the grounds between 1925 and 1927, he built his plan around the pine rather than the other way round: it stands alone in the meadow beside the palace, next to a sculpted female figure, holding the open space by itself. It is 24 metres tall on a trunk three and a half metres round, and Barcelona catalogued it as a Tree of Local Interest in 1993. What it has watched from that one spot: a farm turned into an estate, an estate turned into a royal residence, a king who left in 1931 when the Second Republic arrived and never came back, and a palace that has spent the decades since as a museum. Stone pines are the umbrella pines of the Mediterranean coast, built to stand in the open with all their weight carried in a flat crown, and this one has had the room to do it properly for 133 years. Most trees in this city spend their lives competing for light with a building.",
+      "verified_sources": [
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-pi-pinyer-jardins-del-palau-de-pedralbes-99400454972",
+        "https://ca.wikipedia.org/wiki/Jardins_del_Palau_de_Pedralbes",
+        "https://fontsaigua.com/2020/03/14/arbres-conjunt-darbres-dels-jardins-del-palau-de-pedralbes-de-barcelona/"
+      ],
+      "access": "Free, public garden, open daily during posted hours",
+      "transport": "Palau Reial (Metro L3), about 3-5 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_024",
+      "name": "The Himalayan Cedars of the Palau de Pedralbes Gardens",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "about 123 years",
+      "age_min": 120,
+      "age_max": 126,
+      "location": {
+        "address": "Jardins del Palau de Pedralbes, Avinguda Diagonal 686, Barcelona",
+        "latitude": 41.38807,
+        "longitude": 2.11785,
+        "neighbourhood": "Pedralbes, Les Corts"
+      },
+      "story": "Barcelona's tree register lists this as one protected item and 23 trees. The Himalayan cedars of the Palau de Pedralbes gardens went in around 1903, and when Nicolau M. Rubio i Tuduri redrew the grounds in the 1920s he worked around them: accounts of the redesign say he respected an important group of cedars already growing there, which is why a planned 20th-century garden has a stand of older conifers sitting in the middle of it. The register gives the group one coordinate, one planting year and one representative trunk figure of 3.4 metres, with the tallest reaching about 25 metres. Being straight about the shape of it: we have not measured how far those 23 trees spread. One source puts the large specimens near the garden entrance and that is where to start, but this is a group rather than a single trunk to stand at, and the distance between the first and the last of them may be longer than the word grove suggests. Cedrus deodara comes from the western Himalaya, where it grows above 1,500 metres and was cut for temple timber for centuries. Barcelona gives it no winter worth the name and it grows accordingly: drooping leader shoots, branches sweeping down nearly to the grass, and enough of them together to make the air under the canopy noticeably cooler in August.",
+      "verified_sources": [
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-cedre-de-l-himalaia-jardins-del-palau-de-pedralbes-99400455027",
+        "https://ca.wikipedia.org/wiki/Jardins_del_Palau_de_Pedralbes"
+      ],
+      "access": "Free, public garden, open daily during posted hours",
+      "transport": "Palau Reial (Metro L3), about 3-5 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_025",
+      "name": "The Barbary Thuja of the Palau de Pedralbes Gardens",
+      "species": "Barbary Thuja (Tetraclinis articulata)",
+      "age_estimate": "about 103 years",
+      "age_min": 100,
+      "age_max": 106,
+      "location": {
+        "address": "Jardins del Palau de Pedralbes, Avinguda Diagonal 686, Barcelona",
+        "latitude": 41.38697,
+        "longitude": 2.11829,
+        "neighbourhood": "Pedralbes, Les Corts"
+      },
+      "story": "There are only a handful of these in any European garden. Tetraclinis articulata, the Barbary thuja or arar, grows wild in Morocco, Tunisia, Malta and one relict pocket of southeast Spain, and it is a threatened conifer at home, which makes a century-old specimen in a Barcelona park a genuine oddity rather than an ornamental choice. It was planted here around 1923 and catalogued as a Tree of Local Interest in 1993. Its measurements depend on who took them and when. The city register gives 14 metres of height on a trunk 1.2 metres round; a Barcelona flora survey devoted to this exact tree gives 10 metres and a narrower crown. Both agree on the species, the planting year and the protected status, so the honest answer is that it stands somewhere between the two figures, and is shorter than nearly everything around it either way. Up close it does not read as a conifer at all. The foliage is jointed and scaled, flattened into small articulated sprays, and the cones are four-valved and woody, closer to a piece of hardware than to a pine cone. The resin the species bleeds is sandarac, which was the standard varnish for furniture and instruments for centuries. It is the least conspicuous tree in these gardens and the one a botanist would walk to first.",
+      "verified_sources": [
+        "https://floraornamentaldebarcelona.com/2019/09/21/flora-de-los-jardines-del-palau-de-pedralbes-10-arboles-2-alerce-africano-tetraclinis-articulata-arbol-de-interes-local/",
+        "https://bcnsostenible.cat/es/web/punt/tetraclinis-articulata",
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local (AIL catalogue, register id 99400454990)"
+      ],
+      "access": "Free, public garden, open daily during posted hours",
+      "transport": "Palau Reial (Metro L3), about 3-5 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_026",
+      "name": "The Stone Pines of the Torre Girona Gardens",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "about 122 years",
+      "age_min": 119,
+      "age_max": 125,
+      "location": {
+        "address": "Jardins de Torre Girona, Carrer de Jordi Girona 31, Barcelona (UPC Campus Nord)",
+        "latitude": 41.38909,
+        "longitude": 2.11627,
+        "neighbourhood": "Pedralbes, Les Corts"
+      },
+      "story": "A supercomputer lives in the chapel these pines grew up beside. Torre Girona was built in 1860 as the summer estate of Manuel Girona i Agrafel, banker and later mayor of Barcelona; the technical university took the grounds over a century later, built its northern campus around them, and installed the MareNostrum machine inside the estate's deconsecrated chapel, where it sits in a glass box under the vaulting. The two stone pines predate all of it. They were planted around 1904, are catalogued together by the city as a single protected item, and stand 21 metres tall on trunks 3.6 metres round. A Catalan gardens journal that surveyed this garden calls them colossal and credits them with witnessing more than a hundred years of the estate's history, which for once is not an exaggeration: they were there for the private garden, the university, the construction and the machine. The access is worth reading carefully. This was private university ground until an April 2019 agreement handed its management to the city, and it is a public park now. What we could not confirm is today's exact timetable: the hours are posted, they are seasonal and the gates close at night, so check before making a special trip late in the day.",
+      "verified_sources": [
+        "https://diarieljardi.cat/els-jardins-de-la-torre-girona-una-joia-unica-com-a-parc-forestal-dins-de-pedralbes/",
+        "https://www.upc.edu/es/sala-de-prensa/noticias/el-jardin-de-la-torre-girona-un-espacio-verde-en-remodelacion-conectado-con-el-campus-diagonal-norte"
+      ],
+      "access": "Free, public urban park (transferred from UPC university management to Barcelona City Council management under an April 2019 agreement); posted seasonal opening hours, gated at night",
+      "transport": "Palau Reial (Metro L3), about 10 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_027",
+      "name": "The Aleppo Pine of the Torre Girona Gardens",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "about 122 years",
+      "age_min": 119,
+      "age_max": 125,
+      "location": {
+        "address": "Jardins de Torre Girona, Carrer de Jordi Girona 31, Barcelona (UPC Campus Nord)",
+        "latitude": 41.38876,
+        "longitude": 2.11534,
+        "neighbourhood": "Pedralbes, Les Corts"
+      },
+      "story": "Aleppo pines are the trees that come back after fire, their cones prised open by the heat, colonising burnt Mediterranean hillsides faster than anything else growing on them. This one has spent 122 years doing the opposite: standing beside an ornamental pond in Pedralbes with water, room and nothing to compete with, reaching 23 metres, which makes it the tallest of the three protected trees in the Torre Girona gardens. It was planted around 1904 on the estate the banker Manuel Girona built in 1860, and the city catalogued it in 1994 with a trunk of 2.9 metres round. A Catalan gardens journal describes a Pinus halepensis climbing the slope beside the pond's viewpoint here, which is exactly where the register's coordinate puts it. The species is the default pine of this coastline, the one on every dry hill between Barcelona and Provence, and that is precisely what makes an old one worth the walk. In the wild an Aleppo pine rarely gets to grow into its full shape, because fire, thin soil and competition tend to take it first. Same caution as its neighbours: the garden is public and city managed since 2019, but the hours are posted and seasonal and the gates shut at night.",
+      "verified_sources": [
+        "https://diarieljardi.cat/els-jardins-de-la-torre-girona-una-joia-unica-com-a-parc-forestal-dins-de-pedralbes/",
+        "https://www.upc.edu/es/sala-de-prensa/noticias/el-jardin-de-la-torre-girona-un-espacio-verde-en-remodelacion-conectado-con-el-campus-diagonal-norte"
+      ],
+      "access": "Free, public urban park (municipally managed since the April 2019 UPC-Ajuntament agreement); posted seasonal opening hours, gated at night",
+      "transport": "Palau Reial (Metro L3), about 10 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_028",
+      "name": "The Bottle Tree of the Torre Girona Gardens",
+      "species": "Bottle Tree (Brachychiton populneus)",
+      "age_estimate": "about 122 years",
+      "age_min": 119,
+      "age_max": 125,
+      "location": {
+        "address": "Jardins de Torre Girona, Carrer de Jordi Girona 31, Barcelona (UPC Campus Nord)",
+        "latitude": 41.3889,
+        "longitude": 2.11603,
+        "neighbourhood": "Pedralbes, Les Corts"
+      },
+      "story": "The strangest tree in these gardens is the one you have to go looking for. A Catalan gardens journal that walked the Torre Girona grounds found the Brachychiton populneus halfway into the wooded part, off the obvious route, which is a fair description of how an Australian bottle tree ends up in a Barcelona park in the first place. It was planted around 1904, stands 22 metres tall and 2.5 metres round, and the city catalogued it in 1994. The name is the point: the trunk swells at the base into a bottle, storing water against drought in a way that looks slightly wrong to a European eye, like a tree drawn from memory. In its native eastern Australia the species is emergency fodder, felled for livestock when the paddocks fail. Here it has never once had to prove it. The estate around it was a banker's summer house from 1860 before the technical university built a campus on the grounds, which is why the walk to this tree goes past engineering buildings. The garden has been municipally managed since an April 2019 agreement and is genuinely open to the public, but the hours are posted, seasonal and gated after dark, and we could not confirm the current timetable, so treat a late visit as a gamble.",
+      "verified_sources": [
+        "https://diarieljardi.cat/els-jardins-de-la-torre-girona-una-joia-unica-com-a-parc-forestal-dins-de-pedralbes/",
+        "https://www.upc.edu/es/sala-de-prensa/noticias/el-jardin-de-la-torre-girona-un-espacio-verde-en-remodelacion-conectado-con-el-campus-diagonal-norte"
+      ],
+      "access": "Free, public urban park (municipally managed since the April 2019 UPC-Ajuntament agreement); posted seasonal opening hours, gated at night",
+      "transport": "Palau Reial (Metro L3), about 10 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_029",
+      "name": "The London Plane of the Vil.la Amelia Gardens",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 106 years",
+      "age_min": 103,
+      "age_max": 109,
+      "location": {
+        "address": "Jardins de la Vil.la Amelia, Carrer d'Eduardo Conde 22, Sarria, Barcelona",
+        "latitude": 41.39265,
+        "longitude": 2.12283,
+        "neighbourhood": "Sarria, Sarria-Sant Gervasi"
+      },
+      "story": "Twenty-six metres tall and 26 metres across, which is what a plane tree looks like when it has never had to compete for anything. It was planted in 1920 in what were then the private grounds of the Quinta Amelia, the estate the banker Ignasi Girona built and named for his wife, Amelia de Vilanova, and it has had open lawn around it ever since. A note on its age, because descriptions of the garden get this one wrong. Several still call it a plane of nearly 90 years, a figure copied forward from whenever it was first written down. The city register's planting year makes it 106. The garden changed a great deal more than the tree did. Barcelona took the estate over and the mansion came down; sources disagree on the year, giving 1930 in some accounts and 1969 in others, and we have not been able to settle which is right. The layout you walk through now dates from a 1970 redesign by Joaquim Casamor, the city's director of parks and gardens, who kept the mature trees and built a public garden around them. A bronze dryad, a tree nymph, by Ricard Sala stands in the central pond, which is either a coincidence or somebody's quiet joke about what the garden is actually for.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Jardines_de_Villa_Amelia",
+        "https://guia.barcelona.cat/es/detall/jardins-de-vil-la-amelia_92086011931.html"
+      ],
+      "access": "Free, public garden, wheelchair accessible",
+      "transport": "Reina Elisenda (FGC), about 8-10 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_030",
+      "name": "The White Eucalyptus of the Vil.la Amelia Gardens",
+      "species": "Tasmanian Blue Gum (Eucalyptus globulus)",
+      "age_estimate": "about 122 years",
+      "age_min": 119,
+      "age_max": 125,
+      "location": {
+        "address": "Jardins de la Vil.la Amelia, Carrer d'Eduardo Conde 22, Sarria, Barcelona",
+        "latitude": 41.39294,
+        "longitude": 2.12268,
+        "neighbourhood": "Sarria, Sarria-Sant Gervasi"
+      },
+      "story": "A trunk 5.2 metres round on a tree planted in 1904 tells you what a blue gum does when nothing stops it. Eucalyptus globulus is native to Tasmania and a strip of southern Victoria, and it was planted all over the Mediterranean from the 19th century onward for one reason: speed. Nothing else put up timber and shade that fast. Most were cut long before they got old. This one was left alone, and 122 years later it carries the thickest trunk of the protected trees in the Vil.la Amelia gardens at only 18 metres tall, wide rather than high. The bark is the thing to look at. Blue gums shed in long ribbons through the summer, leaving a smooth grey-white surface underneath that looks polished, and the strips hang off the trunk for weeks before they drop. Crush a fallen leaf and it smells like a cold remedy, which is no coincidence: this is the eucalyptus the oil is named for. It has stood here since the garden was the private Quinta Amelia, through the estate's expropriation, the demolition of the mansion and the 1970 redesign that turned the grounds into a public park. Barcelona catalogued it in 1994, and it is one of the few trees in the city that arrived from the far side of the world and outgrew the locals.",
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Jardines_de_Villa_Amelia",
+        "https://guia.barcelona.cat/es/detall/jardins-de-vil-la-amelia_92086011931.html"
+      ],
+      "access": "Free, public garden, wheelchair accessible",
+      "transport": "Reina Elisenda (FGC), about 8-10 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_031",
+      "name": "The Peruvian Pepper Tree of the Vil.la Amelia Gardens",
+      "species": "Peruvian Pepper (Schinus molle)",
+      "age_estimate": "about 103 years",
+      "age_min": 100,
+      "age_max": 106,
+      "location": {
+        "address": "Jardins de la Vil.la Amelia, Carrer d'Eduardo Conde 22, Sarria, Barcelona",
+        "latitude": 41.39218,
+        "longitude": 2.12196,
+        "neighbourhood": "Sarria, Sarria-Sant Gervasi"
+      },
+      "story": "The pink peppercorns in an expensive pepper grinder are not pepper, and this is the tree they come from. Schinus molle sits in the cashew family, unrelated to black pepper, and its hanging clusters of pink berries were the substitute that ended up named after the real thing. This one was planted around 1923 and catalogued by Barcelona in 1993, standing 12 metres tall with a trunk 2.7 metres round. Be clear about what is certain here. The city's own catalogue and a published description of the garden both confirm the species and the tree, but the planting year rests on the register alone, with nothing independent to check it against, so 103 years is the register's figure rather than a corroborated one. It is the softest tree in the Vil.la Amelia gardens. Peruvian pepper hangs its foliage in fine weeping sprays that move in any wind at all, a completely different physics from the planes and pines around it, and the berry clusters go dusty pink in autumn and hang on into winter. The species came to Spain from the Andes with the colonial trade in the 16th century, which makes it one more foreigner in a garden a banker built for his wife and the city later opened to everybody.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "fruit",
+        "label": "October and November, when the peppercorn clusters turn dusty pink and hang heavy"
+      },
+      "verified_sources": [
+        "https://es.wikipedia.org/wiki/Jardines_de_Villa_Amelia",
+        "https://guia.barcelona.cat/es/detall/jardins-de-vil-la-amelia_92086011931.html"
+      ],
+      "access": "Free, public garden, wheelchair accessible",
+      "transport": "Reina Elisenda (FGC), about 8-10 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_032",
+      "name": "The Canary Island Palms of the Vil.la Amelia Gardens",
+      "species": "Canary Island Date Palm (Phoenix canariensis)",
+      "age_estimate": "about 132 years",
+      "age_min": 129,
+      "age_max": 135,
+      "location": {
+        "address": "Jardins de la Vil.la Amelia, Carrer d'Eduardo Conde 22, Sarria, Barcelona",
+        "latitude": 41.39259,
+        "longitude": 2.12244,
+        "neighbourhood": "Sarria, Sarria-Sant Gervasi"
+      },
+      "story": "The city register counts fourteen. The garden's own chronicler counts fifteen. Either a palm has been lost since the catalogue was written, or one tree in the row is something else, and rather than quietly pick a number we would rather say which part we do not know. What is not in dispute: a double line of Canary Island date palms, planted around 1894, flanking the main avenue of the Vil.la Amelia gardens like a colonnade with a path down the middle. They stand 19 metres tall, roughly 2.3 metres round at the trunk, and Barcelona catalogued them together as a single protected item in 1994. Standing at one end and looking down the avenue is the whole point of them: one Phoenix canariensis is a palm, but 14 of them at 130 years old are architecture. The species comes from the Canary Islands and has had a hard century on the mainland, where the red palm weevil has killed date palms in large numbers since it arrived, which makes an intact avenue of century-old specimens less ordinary than it looks. These were planted while the garden was still the private Quinta Amelia. They survived the expropriation of the estate and the demolition of its mansion, and they now line a path anyone can walk for free.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September and October, when the crowns hang heavy with clusters of orange dates"
+      },
+      "verified_sources": [
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-palmera-de-canaries-jardins-de-la-vil-la-amelia-99400455052",
+        "https://diarieljardi.cat/jardins-de-la-villa-amelia/"
+      ],
+      "access": "Free, public garden, wheelchair accessible",
+      "transport": "Reina Elisenda (FGC), about 8-10 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "bcn_001"
