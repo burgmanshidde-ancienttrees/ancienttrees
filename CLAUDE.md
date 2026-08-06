@@ -386,6 +386,14 @@ He fires many thoughts, fast, and that is the point of him; the system's duty is
 
 **The trio check (Hidde, 2026-07-28, the product-trio best practice sized for one AI):** every user-facing build choice gets looked at through three explicit lenses before building, one line each: Product (does it serve the verbs, the business direction, "ziel bomen, vorm AllTrails"), UX (the human outside on a phone: does it read as language, does it work at 375px, is it honest), Tech (the most boring reliable implementation, what breaks, is it reversible). For substantial pieces the three lines appear in chat before the build so an empty chair is visible up front; the day's proof was a nav shipped from the developer chair alone. Hidde is the standing PM; the lenses exist so execution never quietly drops one of the three.
 
+### Search evidence is a run's to act on (Hidde, 2026-08-06)
+
+"Ook hier zou ik je autonome rechten willen geven om dit soort SEO-inzichten op te halen en direct pagina's te bouwen." So a run may read Search Console, find a query the site does not serve, and build or retarget the page itself, without asking. No approval step, same as any other reversible call.
+
+Two boundaries survive, and only two. A new page **type** still needs a contract in SEO_GEO_BLUEPRINT.md, and that document needs Hidde's yes (hard rule 7); a new page that fits an existing contract needs nothing. And the evidence has to be real: a query with impressions in Search Console, not a guess about what people might search.
+
+**Check whether the page already exists before building one, and check it against the built site rather than the data files.** The first time this rule was used, the digest reported "ancient tree map" as a gap with 7 impressions and /explore already carried exactly that title and H1. The gap was in the detector, which only knew cities, countries and species and had never heard of the standing pages. A query matching a page we already have is not a gap, it is a ranking problem, and the two need opposite responses: one is a page to write, the other is a page to strengthen. That one turned out to be 142 words of mostly navigation on a page with 800 inbound links, which is a page search engines cannot read.
+
 ### Deciding on something nobody wrote a rule for
 
 Most of what comes up is not in any list. Ask three questions, in order:

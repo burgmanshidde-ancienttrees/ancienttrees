@@ -455,6 +455,15 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 }
 .explore-now-chip { display: inline-block; background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 11.5px; border-radius: 999px; padding: 2px 10px; margin-left: 0.4rem; }
 .explore-map { flex: 1; min-height: 320px; }
+/* The map is the page; this sits under it, for readers and for search engines
+   that cannot read a canvas. Never above the fold. */
+.explore-prose { padding: 2rem 2rem 3rem; max-width: 48rem; font-family: var(--sans); }
+.explore-prose h2 { font-size: 1.05rem; font-weight: 750; letter-spacing: -0.01em; margin: 1.4rem 0 0.4rem; }
+.explore-prose h2:first-child { margin-top: 0; }
+.explore-prose p { font-size: 14.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; margin-bottom: 0.5rem; }
+.explore-prose a { color: var(--moss); }
+.explore-prose-more { margin-top: 1.2rem; font-size: 13.5px; }
+@media (max-width: 800px) { .explore-prose { padding: 1.5rem 1.1rem 2.5rem; } }
 .pop-now { background: #F3E4C3; color: #8A6414; font-weight: 700; font-size: 10px; border-radius: 999px; padding: 1px 8px; }
 .appland { position: relative; display: flex; align-items: center; justify-content: center; padding: 5rem 1rem; }
 .appland-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; filter: brightness(0.82); }
@@ -3888,6 +3897,44 @@ def build_explore_page(all_cities, pages, registers=None):
             "rank": _FAVES.index(e["slug"]) if e["slug"] in _FAVES else 99,
         })
     _city_rows.sort(key=lambda r: (r["rank"], -r["n"]))
+    # The map page carried 142 words, most of them navigation, and ranked at
+    # position 15 for "ancient tree map" despite an exact-match title and 800
+    # inbound links. A map with no text is a page search engines cannot read.
+    # Written from the data so the numbers cannot drift from the map itself.
+    _tree_total = sum(r["n"] for r in _city_rows)
+    _countries = sorted({e["data"].get("country", "") for e in all_cities if e["data"].get("trees")})
+    _tightest = sorted(
+        ({"city": e["data"]["city"], "slug": e["slug"], "n": len(e["data"]["trees"]),
+          "spread": max((haversine_km((a["location"]["latitude"], a["location"]["longitude"]),
+                                      (b["location"]["latitude"], b["location"]["longitude"]))
+                         for a in e["data"]["trees"] for b in e["data"]["trees"]), default=0.0)}
+         for e in all_cities if len(e["data"].get("trees") or []) >= 5),
+        key=lambda c: c["spread"])[:6]
+    _walks = ", ".join(
+        f'<a href="{c["slug"]}">{esc(c["city"])}</a> ({c["n"]} trees, {c["spread"] * 1000:.0f} m apart)'
+        if c["spread"] < 1 else
+        f'<a href="{c["slug"]}">{esc(c["city"])}</a> ({c["n"]} trees, {c["spread"]:.1f} km apart)'
+        for c in _tightest)
+    explore_prose = f"""
+  <section class="explore-prose">
+    <h2>What is on this map</h2>
+    <p>{_tree_total} trees in {len(_city_rows)} places across {len(_countries)} countries, every one
+    checked against at least two independent sources before it went on. Each pin opens a tree with its
+    age, its species, why it is worth standing in front of, and directions from where you are. Gold
+    pins are trees at their seasonal best this month.</p>
+    <h2>The tightest walks</h2>
+    <p>A map of scattered pins is a list. What makes an afternoon is trees close enough to walk
+    between, so these are the places where the whole set fits in one stroll: {_walks}.</p>
+    <h2>What is not on it, and why</h2>
+    <p>Every pin says how precise it is. A tree marked approximate means we know the park but not the
+    trunk, and the page says so rather than sending you to a spot where the tree is not. Trees on
+    private land are left off entirely, as are trees whose own register hides their position, because
+    the people who protect them have a reason. Nothing here is a bulk street-tree inventory: a tree
+    earns a pin by being remarkable, not by existing.</p>
+    <p class="explore-prose-more">Browse another way: <a href="cities">all cities</a>,
+    <a href="species">by species</a>, <a href="collections">curated collections</a>, or
+    <a href="in-season">what is at its best right now</a>.</p>
+  </section>"""
     cities_json = json.dumps(_city_rows)
     body = f"""
 <main class="explore-page">
@@ -3900,6 +3947,7 @@ def build_explore_page(all_cities, pages, registers=None):
     <aside id="ex-panel" class="ex-panel" aria-live="polite"></aside>
     <div id="map" class="explore-map"></div>
   </div>
+  {explore_prose}
 </main>
 """
     script = """

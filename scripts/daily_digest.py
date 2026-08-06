@@ -100,13 +100,23 @@ def known_terms():
     for path in glob.glob(os.path.join(ROOT, "data/species/*.json")):
         d = json.load(open(path))
         terms.add(d.get("common_name", "").lower())
+    # The standing pages, which have no data file behind them and were therefore
+    # invisible here. On 2026-08-06 this reported "ancient tree map" as a gap
+    # while /explore carried exactly that title and H1, and a session nearly
+    # built a page that already existed. A lead that names something we have is
+    # worse than no lead: it sends work at a solved problem.
+    terms.update({"ancient tree map", "tree map", "map", "explore", "collections",
+                  "species", "cities", "countries", "in season", "contribute",
+                  "suggest a tree", "about", "privacy", "app"})
     return {t for t in terms if t}
 
 
 def find_content_gap(gap_queries):
-    """The top-impression query (10d) whose text matches no known city,
-    country or species term: a standing content lead, the kind that found us
-    before we had a page for it ("albero roma")."""
+    """The top-impression query (10d) whose text matches no known city, country,
+    species or standing page: a content lead, the kind that found us before we
+    had a page for it ("albero roma"). A query that matches a page we already
+    have is not a gap, it is a ranking problem, and those two need opposite
+    responses: one is a page to write, the other is a page to strengthen."""
     terms = known_terms()
     misses = [r for r in gap_queries
               if not any(t in r["keys"][0].lower() for t in terms if len(t) > 2)]

@@ -94,8 +94,12 @@ def main():
                 failures.append(f"{rel}: homepage <title> is {m.group(1)!r}; a shelf caption once shadowed it")
 
         if rel.name in PROMISE_PAGES and rel.parent.name == "":
+            import re as _re2
             for pat in PROMISE_PATTERNS:
-                if pat in text.lower():
+                # Whole words only. A substring match reads ", every one of them"
+                # as the promise ", ever" and fails an honest sentence, which is
+                # how this rule blocked a deploy on 2026-08-06.
+                if _re2.search(r"%s\b" % _re2.escape(pat), text.lower()):
                     failures.append(f"{rel}: absolute promise {pat!r} in product copy (forever-claims rule)")
 
         if "—" in text:

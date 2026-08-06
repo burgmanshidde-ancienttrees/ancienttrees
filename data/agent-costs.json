@@ -1,0 +1,182 @@
+{
+ "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
+ "days": {
+  "2026-08-05": [
+   {
+    "target": "Napoli",
+    "kind": "research",
+    "tokens": 141859,
+    "trees": 2,
+    "note": "city was already live as Naples; found a fabricated date and a duplicated pin"
+   },
+   {
+    "target": "Bucaco",
+    "kind": "research",
+    "tokens": 151795,
+    "trees": 6,
+    "note": "new city"
+   },
+   {
+    "target": "Firenze",
+    "kind": "research",
+    "tokens": 162747,
+    "trees": 5,
+    "note": "briefed as new, was already live as Florence; pivoted to deepening"
+   },
+   {
+    "target": "Lucca",
+    "kind": "research",
+    "tokens": 155919,
+    "trees": 6,
+    "note": "new city"
+   },
+   {
+    "target": "Barcelona 1",
+    "kind": "research",
+    "tokens": 178092,
+    "trees": 6,
+    "note": "deepen"
+   },
+   {
+    "target": "Caserta",
+    "kind": "research",
+    "tokens": 166898,
+    "trees": 7,
+    "note": "new city; found Campania's per-tree cards"
+   },
+   {
+    "target": "Rome",
+    "kind": "research",
+    "tokens": 164421,
+    "trees": 6,
+    "note": "deepen; found the Lazio removed-trees sheet"
+   },
+   {
+    "target": "sweep parent",
+    "kind": "scout",
+    "tokens": 65697,
+    "trees": 0,
+    "note": "delegated to four children and stopped; produced only a header"
+   },
+   {
+    "target": "sweep germanic",
+    "kind": "scout",
+    "tokens": 99543,
+    "trees": 0,
+    "note": "6 cities"
+   },
+   {
+    "target": "sweep franco-nl",
+    "kind": "scout",
+    "tokens": 98892,
+    "trees": 0,
+    "note": "6 cities, found Paris and Brussels open data"
+   },
+   {
+    "target": "sweep italy",
+    "kind": "scout",
+    "tokens": 126082,
+    "trees": 0,
+    "note": "9 cities"
+   },
+   {
+    "target": "sweep iberia 1",
+    "kind": "scout",
+    "tokens": 132716,
+    "trees": 0,
+    "note": "8 cities"
+   },
+   {
+    "target": "sweep iberia 2",
+    "kind": "scout",
+    "tokens": 117245,
+    "trees": 0,
+    "note": "8 cities, found the Seville catalogue"
+   },
+   {
+    "target": "Trieste",
+    "kind": "research",
+    "tokens": 134971,
+    "trees": 8,
+    "note": "new city; resumed from notes after its process died"
+   },
+   {
+    "target": "Lisbon",
+    "kind": "research",
+    "tokens": 162638,
+    "trees": 7,
+    "note": "deepen; resumed from notes"
+   },
+   {
+    "target": "Milan",
+    "kind": "research",
+    "tokens": 170237,
+    "trees": 5,
+    "note": "deepen; caught a ring-dated tree felled in 2015"
+   },
+   {
+    "target": "Barcelona 2",
+    "kind": "research",
+    "tokens": 247623,
+    "trees": 6,
+    "note": "deepen; finished Montjuic"
+   },
+   {
+    "target": "Munich",
+    "kind": "research",
+    "tokens": 301877,
+    "trees": 4,
+    "note": "127k of it spent discovering the city was already live"
+   },
+   {
+    "target": "Vienna",
+    "kind": "research",
+    "tokens": 182009,
+    "trees": 6,
+    "note": "deepen; caught a 90-year date dispute in live copy"
+   },
+   {
+    "target": "Brussels",
+    "kind": "research",
+    "tokens": 204543,
+    "trees": 6,
+    "note": "deepen"
+   },
+   {
+    "target": "Naples 2",
+    "kind": "research",
+    "tokens": 170909,
+    "trees": 5,
+    "note": "deepen; Orto Botanico access objection disproved"
+   },
+   {
+    "target": "Turin",
+    "kind": "research",
+    "tokens": 173485,
+    "trees": 8,
+    "note": "new city; imported Piemonte's register"
+   },
+   {
+    "target": "Seville",
+    "kind": "research",
+    "tokens": 178736,
+    "trees": 6,
+    "note": "deepen; four vitality fields per tree"
+   },
+   {
+    "target": "Zaragoza",
+    "kind": "research",
+    "tokens": 203893,
+    "trees": 0,
+    "note": "held back: two of nine checked trees confirmed dead"
+   },
+   {
+    "target": "Prague",
+    "kind": "research",
+    "tokens": 198712,
+    "trees": 6,
+    "note": "deepen"
+   }
+  ]
+ }
+}
