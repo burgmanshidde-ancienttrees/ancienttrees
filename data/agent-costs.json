@@ -247,8 +247,8 @@
         "target": "Padova",
         "kind": "verify",
         "tokens": 156789,
-        "trees": 0,
-        "note": "chain retest. Harness number, not the pass's own estimate of 110k (it was 30 percent low). 9 verified to data/research, 0 to data/cities yet, stories still to write. Had a head start: an earlier pass on this city was interrupted and its findings were salvaged from the transcript first.",
+        "trees": 9,
+        "note": "session pass; its 9 trees were published by the night run's Padova+Barcelona write batch, so the verification itself paid off in full.",
         "wasted": 0,
         "brief_wrong": false
       },
@@ -286,6 +286,15 @@
         "tokens": 85451,
         "trees": 7,
         "note": "7 stories in one context, no web fetches needed, 3 of 7 got an honest best_time"
+      },
+      {
+        "target": "Padova (duplicate)",
+        "kind": "write",
+        "tokens": 89210,
+        "trees": 0,
+        "note": "Bought nothing. A session write pass on the same 9 verified trees the night run was already batching with Barcelona; the machine published first and this output was discarded. The session checked backlog.py at the start of the day but not again before dispatching, and a night run landed in between. Harness number: the pass self-reported 34,000.",
+        "wasted": 89210,
+        "brief_wrong": false
       }
     ]
   }
