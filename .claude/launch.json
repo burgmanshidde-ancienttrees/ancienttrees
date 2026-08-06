@@ -8,6 +8,14 @@
         "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/serve.py"
       ],
       "port": 8971
+    },
+    {
+      "name": "site-dist",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/06c6b00f-16df-4648-b3aa-4881796775b4/scratchpad/serve_dist.py"
+      ],
+      "port": 8972
     }
   ]
 }

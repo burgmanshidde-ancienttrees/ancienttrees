@@ -73,12 +73,51 @@ def main():
         s.bind(("127.0.0.1", 0))
         port = s.getsockname()[1]
 
+    # Served only by this test, never shipped: after load it measures whether
+    # the map paints over the prose section and writes the numbers into the
+    # DOM, where dump_dom can read them. Exists because the 2026-08-06 explore
+    # bug (prose added inside the fixed-height flex column, map overlapping the
+    # text) was invisible to every string check while being obvious to eyes.
+    GEOMETRY_PROBE = b"""<script>
+setTimeout(function(){
+  var m = document.getElementById('map');
+  var p = document.querySelector('.explore-prose');
+  var out = 'mapH=-1 proseOverlap=-1';
+  if (m && p) {
+    var a = m.getBoundingClientRect(), b = p.getBoundingClientRect();
+    var oy = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
+    var ox = Math.min(a.right, b.right) - Math.max(a.left, b.left);
+    var overlap = (oy > 0 && ox > 0) ? Math.round(Math.min(oy, ox)) : 0;
+    out = 'mapH=' + Math.round(a.height) + ' proseOverlap=' + overlap;
+  }
+  var d = document.createElement('div');
+  d.id = 'smoke-geometry';
+  d.textContent = out;
+  document.body.appendChild(d);
+}, 500);
+</script>"""
+
     class Quiet(SimpleHTTPRequestHandler):
         def __init__(self, *a, **kw):
             super().__init__(*a, directory=str(DIST), **kw)
 
         def log_message(self, *a):
             pass
+
+        def do_GET(self):
+            if self.path.split("?")[0].endswith("explore.html"):
+                data = (DIST / "explore.html").read_bytes()
+                if b"</body>" in data:
+                    data = data.replace(b"</body>", GEOMETRY_PROBE + b"</body>", 1)
+                else:
+                    data += GEOMETRY_PROBE
+                self.send_response(200)
+                self.send_header("Content-Type", "text/html; charset=utf-8")
+                self.send_header("Content-Length", str(len(data)))
+                self.end_headers()
+                self.wfile.write(data)
+                return
+            super().do_GET()
 
     server = ThreadingHTTPServer(("127.0.0.1", port), Quiet)
     threading.Thread(target=server.serve_forever, daemon=True).start()
@@ -103,6 +142,7 @@ def main():
             ("maplibregl-canvas", "map canvas"),
             ("exc-", "city chooser panel rendered"),
             ('class="ats-drop"', "shared search dropdown (one interaction, home and explore)"),
+            ("proseOverlap=0", "map does not paint over the prose section (2026-08-06 bug class)"),
         ]),
         (f"{base}/netherlands.html", "country page (Contract G)", [
             ("maplibregl-canvas", "country map canvas (JS ran)"),
