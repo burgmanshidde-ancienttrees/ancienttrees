@@ -94,86 +94,96 @@ are deliberately absent from the top: Contract F already gives every species its
 own page, and duplicating them as collections is the duplicate-content trap v1.1
 closed.
 
-## Ranked on DEMAND, gated on supply (re-ranked 2026-08-06 after Hidde pushed back)
+## The 50, ranked on DEMAND, with the search title written (2026-08-06)
 
-The first version of this list ranked on how many matching trees we hold today,
-and Hidde caught it: "are you sure you're not pushing it too much on the
-currently available trees, we will eventually have many more". He is right, and
-the flaw was real. Supply is a snapshot that changes every week; search demand
-for "the oldest trees you can visit" does not. Ranking on supply put two themes
-in the top ten that nobody searches for (trees brought back from abroad, 224
-trees; university trees, 85) and buried Trees Older Than 500 Years at #24
-because we only hold 40 today, when age is the single strongest query family in
-this whole subject.
+Two of Hidde's corrections are baked into this table, and both were right.
 
-So the ranking below is **demand first**, with supply demoted to a readiness
-gate. DEMAND is a reasoned tier, not a measured number: we have no keyword tool,
-and inventing volumes would be the same error as inventing a tree age. It
-reflects query families that plainly exist (age superlatives, "most beautiful",
-seasonal travel, city walks) versus ones that plainly do not (nobody types
-"trees of universities").
+**First: rank on demand, not on today's stock.** The original version sorted by
+how many matching trees we hold, which is a snapshot that changes weekly, while
+demand for "the oldest trees you can visit" does not. That error put two themes
+nobody searches for into the top ten (trees brought back from abroad, 224
+matches; university trees, 85) and buried 500-plus-year trees at 24th because we
+only hold 40 today.
 
-SHIPS AT is the honest gate: a collection needs roughly 20 real matches to pick
-6 to 12 entries without padding. "Now" means buildable today.
+**Second: write the SEARCH title now, not the pretty one.** His question, "do
+you think you saved the titles that will actually push for SEO results", landed
+on the exact trap blueprint v1.6 was written to close: editorial titles are
+strong as headings and invisible in search, because nobody types "Trees That
+Outlived Their City". Every row below therefore carries the `seo_title` in query
+shape (a number, a place, the words people type) alongside the `title` that will
+be the H1. Both go in the JSON when the collection is built; the H1 sets the
+tone once the reader has arrived.
 
-**What changes as supply grows, and it changes a lot.** Veteran-tree themes are
-the ones sitting on a spring: hollow trunks, 500+ years, ancient oaks and yews
-all multiply the moment a veteran-tree register lands (the UK's ATI would flood
-every one of them, if permission ever comes). Rank those on demand and simply
-wait.
+DEMAND is a reasoned tier, not a measured number: we have no keyword tool, and
+inventing volumes would be the same error as inventing a tree's age. SHIPS AT is
+the honest gate, roughly 20 real matches so 6 to 12 entries can be picked
+without padding.
 
-| # | Collection | Demand | Supply now | Ships at |
-|---|---|---|---|---|
-| 1 | The Oldest Trees You Can Actually Visit (500+ years) | very high | 40 | **now**, regrows forever |
-| 2 | The Best Tree Walk in [city], one per phase-1 city | very high | walks exist for 6 cities | **now** |
-| 3 | The Sacred Trees of Europe's Cities | high | 204 | **now** |
-| 4 | Trees That Survived the War | high | 227 | **now** |
-| 5 | The Great Avenues and Tree Tunnels | high (visual) | 128 | **now** |
-| 6 | Trees Planted by Famous People | high | 324 | **now** |
-| 7 | The Most Beautiful Trees We Map | high (visual) | gated on photos | at ~70% photo coverage |
-| 8 | Autumn Colour Worth the Trip | high, seasonal | 31 | **now**, publish in September |
-| 9 | Blossom Worth a Spring Trip | high, seasonal | shipped | refresh each spring |
-| 10 | Trees With a Legend or a Ghost Story | high | 62 | **now** |
-| 11 | The Giants of the Botanical Gardens | medium-high | 161 | **now** |
-| 12 | Trees of Palaces, Castles and Villas | medium-high | 160 | **now** |
-| 13 | The Thickest Trunks We Map | medium-high | 66 | **now** |
-| 14 | Trees With a Hollow You Can Stand In | medium-high | 39 | **now**, explodes with any veteran register |
-| 15 | Trees You Can Eat From | medium-high | 296 | **now** |
-| 16 | The Tallest Tree in Each City | medium | 63 | **now** |
-| 17 | Trees Older Than the Building Beside Them | medium (shareable) | ~30 | **now** |
-| 18 | Trees Among Roman Remains | medium | 55 | **now** |
-| 19 | Trees on the Old City Walls | medium | 112 | **now** |
-| 20 | Trees With a Literary Connection | medium | 56 | **now** |
-| 21 | The Cities Where Every Tree Is Walkable | medium | Cadiz, York, Padua, Porto | **now** |
-| 22 | Trees You Can Visit Without a Ticket | medium (practical) | most | **now** |
-| 23 | Where to Find Fruit in October | medium, seasonal | 32 | **now** |
-| 24 | Bare Winter Silhouettes | medium, seasonal | small | at 20 |
-| 25 | The Oldest Tree in Every Country We Map | medium | shipped | refresh |
-| 26 | Trees That Outlived Their City | medium | shipped | refresh |
-| 27 | Trees of the Monastery Gardens | medium | 50 | **now** |
-| 28 | The Cloister Trees | medium | 63 | **now** |
-| 29 | Trees That Survived a Fire | medium | 69 | **now** |
-| 30 | The Grafted, Fused and Leaning | medium | 94 | **now** |
-| 31 | Trees of the Old Graveyards | medium | 29 | **now** |
-| 32 | Trees of the Market Squares | medium | 181 | **now** |
-| 33 | Trees Beside the Water | medium-low | 78 | **now** |
-| 34 | The First of Their Species in the Country | medium-low | 13 | at 20 |
-| 35 | Trees Planted to Mark an Event | medium-low | 17 | at 20 |
-| 36 | Trees Struck by Lightning and Still Standing | medium-low | 14 | at 20, genuinely rare |
-| 37 | Trees Named After an Animal | low-medium | 78 | **now** |
-| 38 | Trees Five Minutes From a Station | low-medium (practical) | 279 | **now** |
-| 39 | Trees Brought Back From Somewhere Else | low-medium | 224 | **now**, was overranked at #9 on supply alone |
-| 40 | The Trees of the Universities | low | 85 | **now**, was overranked at #10 on supply alone |
-| 41 | Trees of the Old Hospitals and Asylums | low | 14 | at 20 |
-| 42 | Ancient Oaks Beyond Europe | high once supply exists | thin | at 20 outside Europe |
-| 43 | The Veteran Trees of Britain | very high | blocked | only if the Woodland Trust says yes |
-| 44 | Japan's Sacred Trees | high | 5 cities | at 20 |
-| 45 | The Ancient Olives of the Mediterranean | high | 31 | **now** |
-| 46 | Trees Older Than Their Country | medium (shareable) | uncounted | at 20 |
-| 47 | The Oldest Tree on Every Continent We Map | medium | thin outside Europe | when 4 continents are real |
-| 48 | Trees That Were Planted as Saplings by Someone Famous | medium | subset of #6 | build after #6 |
-| 49 | The Trees of the Great Parks (Hyde, Retiro, Bois) | medium | uncounted | **now** |
-| 50 | One Tree in Every City We Map | medium (index-like) | 90 cities | **now**, natural internal-link hub |
+**What grows on its own.** Veteran-tree themes (hollow trunks, 500-plus years,
+ancient oaks and yews) multiply the moment any veteran register lands, so they
+are ranked on demand and simply wait. Counts are from a sweep of all 742
+published trees on 2026-08-06 and are an upper bound; re-measure before building.
+
+| # | seo_title (the search title) | H1 / title (editorial) | Demand | Supply | Ships at |
+|---|---|---|---|---|---|
+| 1 | The Oldest Trees in Europe You Can Actually Visit | The Trees That Outlived Everything | very high | 40 | now |
+| 2 | The Best Tree Walk in [City]: [N] Trees, [N] km | A Walk Through [City]'s Oldest Trees | very high | 6 cities | now |
+| 3 | Ancient Trees in Europe's Churchyards and Cloisters | The Sacred Trees of Europe's Cities | high | 204 | now |
+| 4 | [N] Trees That Survived the Second World War | The Survivors | high | 227 | now |
+| 5 | Europe's Most Beautiful Tree Tunnels and Avenues | The Great Avenues | high | 128 | now |
+| 6 | Historic Trees Planted by Kings, Poets and Emperors | Trees With Famous Hands Behind Them | high | 324 | now |
+| 7 | The Most Beautiful Ancient Trees in Europe | The Ones Worth the Photograph | high | photo-gated | ~70% photos |
+| 8 | Where to See the Best Autumn Colour in Europe's Cities | Autumn Worth the Trip | high, seasonal | 31 | now, publish Sept |
+| 9 | Where to See Blossom in Europe's Cities This Spring | Blossom Worth a Spring Trip | high, seasonal | shipped | refresh |
+| 10 | Haunted Trees and Tree Legends You Can Visit | The Trees With Stories Attached | high | 62 | now |
+| 11 | The Oldest Trees in Europe's Botanical Gardens | The Giants Behind the Gate | medium-high | 161 | now |
+| 12 | Ancient Trees in Europe's Palace and Castle Gardens | Trees That Came With the Palace | medium-high | 160 | now |
+| 13 | The Thickest Tree Trunks in Europe You Can Visit | The Widest Trunks We Know | medium-high | 66 | now |
+| 14 | Hollow Ancient Trees You Can Stand Inside | Trees With Rooms Inside Them | medium-high | 39 | now, springs on a veteran register |
+| 15 | Fruit and Nut Trees You Can Forage in European Cities | The Trees You Can Eat From | medium-high | 296 | now |
+| 16 | The Tallest Tree in Each European City | The Tall Ones | medium | 63 | now |
+| 17 | Trees Older Than the Buildings Beside Them | Older Than the Stone | medium, shareable | ~30 | now |
+| 18 | Ancient Trees Growing Among Roman Ruins | Trees Among the Romans | medium | 55 | now |
+| 19 | Ancient Trees on Europe's Old City Walls | Trees on the Ramparts | medium | 112 | now |
+| 20 | Famous Trees From Literature You Can Visit | Trees in the Books | medium | 56 | now |
+| 21 | European Cities Where Every Ancient Tree Is Walkable | The Compact Cities | medium | 4 cities | now |
+| 22 | Free Ancient Trees to Visit in Europe (No Ticket) | No Ticket Needed | medium | most | now |
+| 23 | Where to Find Acorns, Chestnuts and Figs in October | The October Harvest | medium, seasonal | 32 | now |
+| 24 | Ancient Trees at Their Best in Winter | Bare and Better For It | medium, seasonal | small | at 20 |
+| 25 | The Oldest Tree in Every Country We Map | The Oldest Tree in Every Country | medium | shipped | refresh |
+| 26 | Ancient Trees That Outlived Their Own Cities | Trees That Outlived Their City | medium | shipped | refresh |
+| 27 | The Ancient Trees of Europe's Monastery Gardens | Behind the Monastery Wall | medium | 50 | now |
+| 28 | Ancient Trees in Cathedral Cloisters and Courtyards | The Cloister Trees | medium | 63 | now |
+| 29 | Ancient Trees That Survived a Fire | Trees That Came Back From Fire | medium | 69 | now |
+| 30 | Grafted, Fused and Leaning Trees You Can Visit | The Strange Shapes | medium | 94 | now |
+| 31 | Ancient Trees in Europe's Old Cemeteries | The Graveyard Trees | medium | 29 | now |
+| 32 | Ancient Trees in Europe's Market Squares | Trees in the Middle of Town | medium | 181 | now |
+| 33 | Ancient Trees Beside Rivers and Canals | Trees at the Water's Edge | medium-low | 78 | now |
+| 34 | The First Tree of Its Species in Each Country | The First of Their Kind | medium-low | 13 | at 20 |
+| 35 | Trees Planted to Mark a Coronation, Peace or Centenary | Trees Planted for a Reason | medium-low | 17 | at 20 |
+| 36 | Ancient Trees Struck by Lightning and Still Standing | Struck and Still Standing | medium-low | 14 | at 20 |
+| 37 | Ancient Trees Named After Animals | The Animal Trees | low-medium | 78 | now |
+| 38 | Ancient Trees Five Minutes From a Train Station | The Easiest Trees to Reach | low-medium | 279 | now |
+| 39 | Trees Brought to Europe From Somewhere Else | The Travellers | low-medium | 224 | now (was overranked at 9) |
+| 40 | The Ancient Trees of Europe's Universities | The College Trees | low | 85 | now (was overranked at 10) |
+| 41 | Ancient Trees in Old Hospital and Asylum Gardens | The Hospital Trees | low | 14 | at 20 |
+| 42 | Ancient Oaks Outside Europe You Can Visit | Oaks Beyond Europe | high when supply exists | thin | at 20 non-EU |
+| 43 | Britain's Ancient and Veteran Trees You Can Visit | The Veterans of Britain | very high | blocked | only if the Woodland Trust says yes |
+| 44 | Japan's Sacred Trees You Can Visit | The Trees of the Shrines | high | 5 cities | at 20 |
+| 45 | The Oldest Olive Trees in the Mediterranean | The Ancient Olives | high | 31 | now |
+| 46 | Trees Older Than the Country They Stand In | Older Than the Border | medium, shareable | uncounted | at 20 |
+| 47 | The Oldest Tree on Every Continent We Map | The Oldest on Each Continent | medium | thin outside EU | at 4 continents |
+| 48 | Trees Planted by Writers, Painters and Composers | The Artists' Trees | medium | subset of 6 | after 6 |
+| 49 | The Ancient Trees of Europe's Great City Parks | Hyde, Retiro, Bois and the Rest | medium | uncounted | now |
+| 50 | One Remarkable Tree in Every City We Map | One Tree, Every City | medium, hub | 90 cities | now, natural link hub |
+
+**Title rules these follow, from blueprint v1.6 and hard rule 8:** the seo_title
+carries a number, a place and the words people type, and stays under 60
+characters when built (several above will need trimming to fit, which is a
+build-time job). Superlatives get checked against what other pages already claim
+before publication, or softened. "[City]" and "[N]" are filled per instance for
+item 2, which is fifty pages in one row and the strongest of the lot, because
+today's walk selector made it real product rather than a claim.
 
 ## What NOT to build, and why (so it is not re-proposed)
 
