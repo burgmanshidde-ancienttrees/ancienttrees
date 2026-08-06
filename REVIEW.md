@@ -13,6 +13,80 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-06
+
+**BLOCKER** — Page `<title>` tags show a false age whenever a tree's
+`age_estimate` is phrased with a qualifier ("roughly", "about", "around",
+"over", "nearly", "approximately", "traditionally", "~") instead of a bare
+number. `age_token()` (`scripts/build_site.py:895`) extracts a number with
+`re.match(r"([\d,]+\+?)", age_estimate)`, which only matches at the START of
+the string; when it fails, the function silently falls back to `age_min`
+instead of the number the story/answer actually states, and that wrong
+number lands straight in the `<title>`, the one thing search engines quote.
+Verified live, today's own new cities first: `/zaragoza/oldest-tree.html`
+titles itself "(100 Years Old)" while the answer directly beneath it opens
+"Nobody has established it" (data/cities/zaragoza.json's own hackberry has
+no recorded age; the "100" is a stray `age_min` used only for a *range*
+inference) — the exact page whose commit message today says it "says out
+loud what it cannot confirm" instead states a false precision in its own
+title. `/padova/oldest-tree.html` titles "(400 Years Old)" while its answer
+says the Goethe Palm is "roughly 440 years old" (data/cities/padova.json
+pad_001). Same defect, pre-existing and site-wide, confirmed on pages
+untouched today: `/fukuoka/ayasugi-of-kashii-shrine.html` (a Contract A tree
+page, not just the question page) titles "1700 Year Old Tree" while its own
+visible fact block two lines down says "traditionally about 1,800 years";
+`/nara/oldest-tree.html` "(800 Years Old)" vs. its own answer "over a
+thousand years old"; `/seoul/oldest-tree.html` "(700 Years Old)" vs. "nearly
+880 years old"; `/malaga/oldest-tree.html` "(350 Years Old)" vs. "around 400
+years old"; `/groningen/oldest-tree.html` "(330 Years Old)" vs. "roughly 340
+years old". A sweep of all 91 city files found the same numeric mismatch on
+43 cities' mechanically-selected oldest tree, and the identical helper
+builds every individual tree page's own title (Contract A), so the true
+page count is larger than 43 and unmeasured. Violates P2 (the quotable
+answer must be true) and P7 (truth outranks polish) on the exact string
+Google and AI engines read first. Fix is in the helper, not per-city: parse
+the number that actually follows the qualifier word rather than falling
+back to `age_min` un-flagged.
+
+**BLOCKER** — `/genoa/oldest-tree.html` names a tree its own hand-written
+answer never calls oldest. The mechanically-chosen "oldest" (highest
+`age_max`, since `genoa.json` sets no `oldest_tree_id`) is `gnv_003`, The
+Holm Oak of San Pantaleo, and the title reads "(200 Years Old)". But the
+answer-first paragraph directly beneath it says the *only* tree in Genoa
+"with an age anybody actually recorded" is a different tree entirely, the
+European hop-hornbeam at Villa Serra (`gnv_007`, 160-170 years, sourced from
+Liguria's regional register) — San Pantaleo appears in that same paragraph
+only for an unrelated claim, "the thickest trunk in the old town." The
+build's own guard against this exact failure (`build_site.py:2818`,
+comment: "an answer naming a different tree ships a self-contradicting
+page") passed only because the word "holm" from "holm oak at San Pantaleo"
+happens to occur in that unrelated sentence, not because the answer names it
+as the city's oldest. A visitor reads a title asserting a dated answer and,
+one paragraph later, a hand-written explanation that undercuts that exact
+tree's claim to it. Violates P2/P7 the same way as the finding above, by a
+different mechanism (the guard's substring check isn't scoped to the actual
+superlative claim). Fix is data-side: set `oldest_tree_id` to `gnv_007` in
+data/cities/genoa.json, or rewrite `question_answer` to actually name and
+support San Pantaleo.
+
+**WARN** — Genoa's Villa Serra di Comago cluster is 4 of the city's 10 trees
+(40% of the page) and sits, by the page's own FAQ, "roughly thirty-five to
+fifty minutes" from the centre by public transport, in a separate comune
+(data/cities/genoa.json, FAQ "Can you walk between Genoa's remarkable
+trees?"). CLAUDE.md's day-trip boundary is "a tree within roughly 30 minutes
+by public transport of the city centre belongs on the city page" (Cork's
+Blarney example is ~30 min by the same rule). The page is honest about the
+distance and the separate comune, which clears the rule's actual test
+("never quietly presenting an out-of-town tree as standing in the city"),
+so this is not a fabrication or a broken promise. But 35-50 minutes for
+nearly half the page's trees is a real stretch past "roughly 30," on a
+larger share of one page's content than any precedent the rule cites. FOR
+HIDDE only if the 30-minute figure should be tightened into a hard number or
+explicitly widened for up-the-valley clusters like this one; not a blocker,
+since the page passes the rule as actually written.
+
+---
+
 ## 2026-08-05
 
 **BLOCKER** — `/collections/wisteria-and-blossom-worth-a-spring-trip` now
