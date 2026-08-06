@@ -4162,3 +4162,19 @@ string, which is why every pin is approximate.
 Zaragoza" catalogue, reported as 56 trees plus 15 conjuntos. No run has found
 the document yet. Inclusion in it would be the city confirming what still
 stands, which is exactly what the 2006 book cannot do.
+
+## 2026-08-06 — the 26 unchecked photos, approved on sight by Hidde
+
+They had been live for weeks with status `found_needs_check`, which reads as
+"kept back" in CLAUDE.md and in fact renders on the site. Rather than pull a
+page's only image over a risk a reader can report, they were put in front of
+Hidde as one contact sheet in the site's own card crop, and he judged them all
+good enough. Status is now `approved` across the board.
+
+Worth knowing what that approval is and is not: it is a human looking at 26
+thumbnails at once, not 26 individual verifications against the Cadiz standard.
+If one of them turns out to be the wrong tree or a bark close-up, it was
+approved on a glance and can go without ceremony. The three the reviewer was
+asked to look at hardest were the Trsteno planes at Dubrovnik (an arboretum,
+where a park view is the likely failure), the cedars of Parc Beaulieu in Geneva,
+and Florence's zelkova.
