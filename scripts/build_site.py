@@ -3530,7 +3530,7 @@ def build_country_page(intro_data, country_cities, entries_by_slug, tree_slugs,
 <main class="content-page">
   {breadcrumb_html(crumb_items, rootpath)}
   <h1>Ancient trees in {esc(disp)}</h1>
-  <p class="answer-first">{esc(first_sentence)} This page maps {total} remarkable trees across {len(country_cities)} cities in {esc(disp)}, each one verified and placed.{oldest_line}</p>
+  <p class="answer-first">{esc(first_sentence)} This page maps {total} remarkable trees across {len(country_cities)} cities in {esc(disp)}, each one researched and verified.{oldest_line}</p>
   <div class="prose-block"><p>{esc(intro_rest)}</p></div>
   <div class="map-embed"><div id="map" class="map"></div></div>
   <h2>Every mapped city in {esc(disp)}</h2>
@@ -3633,7 +3633,7 @@ def build_cities_index(published, pages, faces=None):
 <main class="content-page">
   {breadcrumb_html(crumb_items, rootpath)}
   <h1>Every city we have mapped</h1>
-  <p class="answer-first">{len(published)} cities, {total} trees, each one verified and placed. Pick a city for its trees, or open <a href="explore">the map</a> to see what is near you.</p>
+  <p class="answer-first">{len(published)} cities, {total} trees, each one researched and verified. Pick a city for its trees, or open <a href="explore">the map</a> to see what is near you.</p>
   {groups}
 </main>
 """
