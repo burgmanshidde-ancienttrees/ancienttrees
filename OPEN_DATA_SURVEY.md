@@ -229,6 +229,40 @@ licence document itself. And a search snippet got Castilla y Leon wrong twice
 now, once in each direction, which is the second time this specific register
 has been misreported by a summary rather than a source.
 
+## The UK Ancient Tree Inventory licence, read in full 2026-08-06: DISQUALIFIED as an import, permission path open
+
+The "single highest-value unanswered question" above is answered. The ATI needs
+no account to download (the open data hub serves CSV/GeoJSON/SHP in one GET,
+endpoint recorded below), but its End User Licence Agreement, published in the
+hub's own DCAT feed, prohibits exactly our use, twice over:
+
+- "The Data are available to you, free of charge, for non-commercial use only."
+  Commercial purpose "includes those profit generating activities of both
+  commercial and non-commercial organisations (including charities and
+  non-profit organisations)", so indirect and deferred gain counts, which a
+  site whose recorded destination is a premium tier cannot honestly claim to
+  lack.
+- "The Data may not be used in publicly available Internet mapping services
+  (e.g. Google Maps/Earth, Microsoft Bing Maps or Yahoo Maps) without prior
+  written permission from the Woodland Trust." We are one.
+
+Same class as the Dutch national register: disqualified outright, stays a
+lead list at most (the public ATI website can corroborate facts per tree the
+way monumentaltrees.com does under hard rule 1; no bulk extraction ever).
+
+The path the EULA itself offers: "Amendments to the terms of this agreement
+can be requested", contact ancienttreeinventory@woodlandtrust.org.uk "if you
+wish to publish The Data within the public domain". A draft permission email
+for Hidde sits in drafts/woodland-trust-permission.md; only he sends it (hard
+rule 4). Until written permission exists, no ATI data is downloaded or used.
+
+Endpoint for the day permission arrives:
+GeoJSON https://opendata-woodlandtrust.hub.arcgis.com/api/download/v1/items/9d2d13b04d654ceb9ba6e0697c1e0c29/geojson?layers=0
+ArcGIS REST https://services-eu1.arcgis.com/WIfgdJeDbrZU1cnA/arcgis/rest/services/Ancient%20Tree%20Inventory%20(ATI)/FeatureServer/0
+Attribution wording their EULA requires: "Data reproduced with the permission
+of The Woodland Trust." plus citation "Ancient Tree Inventory, Woodland Trust,
+Accessed MM/YY".
+
 ## Which countries to invest in, weighed 2026-07-21
 
 Researched at Hidde's request: national tree databases plus photo availability and other factors, ranked for the strategy (English site, travelers plus enthusiasts as the audience).
