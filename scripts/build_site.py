@@ -618,9 +618,29 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    thumb is when someone is standing in the street holding a coffee. */
 /* Compact floating card, not a full-width bar: the map and its attribution
    stay visible, and "Where am I" never collides with the map edge. */
-.route-bar { position: absolute; left: 1rem; bottom: 1.6rem; z-index: 5;
-  display: flex; gap: 0.5rem; align-items: stretch;
+/* The walks block: the picker sits directly above the directions bar, so the
+   choice and its consequence read as one control. AllTrails' convention of a
+   route card carrying distance and duration up front, sized for our one page. */
+.walks { position: absolute; left: 1rem; bottom: 1.6rem; z-index: 5;
   width: calc(100% - 2rem); max-width: 420px; }
+.walk-picker { display: flex; gap: 0.4rem; margin-bottom: 0.5rem;
+  overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.walk-picker::-webkit-scrollbar { display: none; }
+.walk-pick { flex: 0 0 auto; cursor: pointer; text-align: left;
+  background: #fff; color: var(--ink);
+  border: 1px solid var(--cream-dark); border-radius: 11px;
+  padding: 0.45rem 0.7rem; font-family: var(--sans); line-height: 1.2;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.14); }
+.walk-pick.is-on { background: var(--moss); color: #fff; border-color: var(--moss); }
+.walk-pick-name { display: block; font-size: 13.5px; font-weight: 600; }
+.walk-pick-meta { display: block; font-size: 11.5px; opacity: 0.75; margin-top: 1px; }
+.route-name { display: block; font-size: 12.5px; font-weight: 600; opacity: 0.9; }
+/* Not on the chosen walk: dimmed, never hidden. Every tree stays in the
+   document for a reader and a crawler; only the emphasis moves. */
+.pin-off { opacity: 0.35; }
+.card-off { opacity: 0.5; }
+.route-bar { position: relative; z-index: 5;
+  display: flex; gap: 0.5rem; align-items: stretch; width: 100%; }
 .route-go { flex: 1; display: flex; flex-direction: column; justify-content: center;
   background: var(--moss); color: #fff; text-decoration: none; padding: 0.7rem 1.1rem;
   border-radius: 12px; font-size: 15px; font-weight: 500; line-height: 1.25;
@@ -693,10 +713,15 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .footer-cols { flex-direction: column; gap: 1.5rem; }
   .action-row .go-btn, .action-row .seen-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
 
-  .route-bar { position: fixed; left: 0.75rem; right: 0.75rem;
+  .walks { position: fixed; left: 0.75rem; right: 0.75rem; width: auto;
     bottom: calc(0.75rem + env(safe-area-inset-bottom)); }
-  /* The fixed bar would otherwise sit on top of the last tree in the list. */
+  .route-bar { position: relative; left: auto; right: auto; bottom: auto; }
+  /* The fixed bar would otherwise sit on top of the last tree in the list.
+     Measured at 375px: the bar alone is 96px, and a walk picker above it takes
+     the block to 132px, so a city with several walks needs the extra room. */
   .panel { padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
+  .panel:has(~ .stage .walk-picker),
+  .split:has(.walk-picker) .panel { padding-bottom: calc(9.5rem + env(safe-area-inset-bottom)); }
 }
 .maplibregl-popup-content { font-family: var(--sans); font-size: 13px; padding: 0.75rem 1rem; border-radius: 4px; }
 .maplibregl-popup-content strong { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 15px; font-weight: 400; }
@@ -1254,6 +1279,130 @@ def plan_walking_route(points, budget_km=WALK_BUDGET_KM):
     }
 
 
+WALK_CLUSTER_M = 900       # two trees belong to the same walk if this close
+WALK_NAME_STOP = {"the", "of", "de", "di", "da", "del", "della", "van", "op",
+                  "and", "en", "a", "an", "in", "at", "on"}
+
+
+def _walk_clusters(points, radius_m=WALK_CLUSTER_M):
+    """Single-link clustering: trees joined when one is within radius of another.
+
+    Chosen over k-means or a fixed grid because a walk is a chain, not a blob.
+    Porto's seventeen trees run as a 1.6 km ribbon along the hill: any method
+    that wants round clusters splits it, and single-link keeps it whole."""
+    n = len(points)
+    seen, groups = set(), []
+    for i in range(n):
+        if i in seen:
+            continue
+        stack, comp = [i], []
+        while stack:
+            k = stack.pop()
+            if k in seen:
+                continue
+            seen.add(k)
+            comp.append(k)
+            for j in range(n):
+                if j not in seen and haversine_km(points[k], points[j]) * 1000 <= radius_m:
+                    stack.append(j)
+        groups.append(sorted(comp))
+    return groups
+
+
+WALK_NAME_MAX = 34
+
+
+def _area_head(area):
+    """The place name out of a neighbourhood field.
+
+    Three shapes appear in the data and all three need flattening, or one place
+    counts as several and no name ever wins a vote: a trailing clause
+    ("Parco Treves de' Bonfili, on Padua's walls"), a parenthetical that varies
+    per tree ("Orto Botanico (arboretum section)" beside plain "Orto Botanico"),
+    and a compound parish written both long and short ("Lordelo do Ouro e
+    Massarelos" beside "Massarelos")."""
+    head = str(area or "").split(",")[0]
+    head = re.sub(r"\([^)]*\)?", "", head)          # drop parentheticals, even unclosed
+    head = re.sub(r"\s+", " ", head).strip(" -/")
+    return head
+
+
+def _walk_name(members, markers):
+    """Name a walk after the place most of its trees share.
+
+    Falls back to nothing rather than inventing a name: an unnamed walk still
+    says how many trees and how far, which is the part a visitor acts on. The
+    place name is used whole, never trimmed to a word count: cutting "Lordelo
+    do Ouro e Massarelos" to four words produced "Lordelo do Ouro e"."""
+    counts = {}
+    for idx in members:
+        head = _area_head(markers[idx].get("area"))
+        if len(head) >= 3:
+            counts[head] = counts.get(head, 0) + 1
+    if not counts:
+        return ""
+    # A compound parish and its short form are one place: fold a name that is
+    # contained in a longer one into the longer, then re-vote.
+    merged = {}
+    for name, n in counts.items():
+        parent = next((o for o in counts
+                       if o != name and name.lower() in o.lower()), None)
+        merged[parent or name] = merged.get(parent or name, 0) + n
+    best, hits = max(merged.items(), key=lambda kv: (kv[1], -len(kv[0])))
+    # A plurality, with a floor, so one tree never names a walk of eight.
+    if hits < 2 or hits * 3 < len(members):
+        return ""
+    return best if len(best) <= WALK_NAME_MAX else ""
+
+
+def plan_walks(markers, budget_km=WALK_BUDGET_KM):
+    """Every honest walk in a city, not just the best one.
+
+    Hidde, 2026-08-06: a city like Rome should offer a few walks to choose
+    from, inside the one page, never as pages of their own. So each cluster
+    that holds enough trees gets its own route, and a city with one cluster
+    behaves exactly as it always did.
+
+    Returns walks sorted by tree count, longest first, each with its member
+    indexes in walking order. Returns [] when no cluster clears the bar, and
+    the page then has no route bar at all, which stays the honest answer."""
+    points = [(m["lat"], m["lng"]) for m in markers]
+    walks = []
+    for members in _walk_clusters(points):
+        if len(members) < WALK_MIN_TREES:
+            continue
+        sub = [points[i] for i in members]
+        route = plan_walking_route(sub, budget_km)
+        if not route:
+            continue
+        order = [members[i] for i in route["order"]]
+        walks.append({
+            "order": order,
+            "count": route["count"],
+            "km": route["km"],
+            "minutes": route["minutes"],
+            "name": _walk_name(order, markers),
+        })
+    walks.sort(key=lambda w: (-w["count"], w["km"]))
+    # Two walks under one name tells a visitor nothing and quietly implies the
+    # second is somewhere else. Vienna produced two "Innere Stadt" walks.
+    dupes = {w["name"] for w in walks
+             if w["name"] and sum(1 for x in walks if x["name"] == w["name"]) > 1}
+    for w in walks:
+        if w["name"] in dupes:
+            w["name"] = ""
+    return walks
+
+
+def human_duration(minutes):
+    hours, mins = divmod(int(minutes), 60)
+    if hours and mins:
+        return f"{hours}h {mins}m"
+    if hours:
+        return "1 hour" if hours == 1 else f"{hours} hours"
+    return f"{mins} min"
+
+
 def maps_route_url(ordered_points):
     """Hand the actual turn by turn navigation to the visitor's own maps app.
 
@@ -1276,12 +1425,22 @@ def maps_route_url(ordered_points):
     return url
 
 
-def city_map_script(markers, center, route=None, other_cities=None):
+def city_map_script(markers, center, route=None, other_cities=None, walks=None):
     data = json.dumps(markers)
     route_coords = json.dumps(
         [[markers[i]["lng"], markers[i]["lat"]] for i in route["order"]]
         if route and len(markers) > 1 else []
     )
+    # Every walk's line and metadata, so switching between them is a local
+    # redraw rather than a page load or a fetch.
+    walks_json = json.dumps([{
+        "coords": [[markers[i]["lng"], markers[i]["lat"]] for i in w["order"]],
+        "members": w["order"],
+        "url": w.get("url", ""),
+        "label": w.get("label", ""),
+        "name": w.get("name", ""),
+        "meta": f"about {w['km']} km, {w.get('duration', '')} on foot",
+    } for w in (walks or [])])
     # One continuous world (Hidde, 2026-07-31): zoom out far enough on any
     # city map and the OTHER cities pop in as the same green dots /explore
     # uses, each a click away. Layer capped at maxzoom 9 so a city view
@@ -1457,6 +1616,62 @@ function addWalkLayer() {{
   }});
 }}
 if (map.isStyleLoaded()) {{ addWalkLayer(); }} else {{ map.on('styledata', addWalkLayer); }}
+
+// Several walks in one city, chosen inside this page (Hidde, 2026-08-06:
+// never a page per walk). Picking one redraws the line, retargets the
+// directions button and dims the pins that are not on it. Nothing is removed
+// from the document: every tree stays in the HTML for a reader and a crawler,
+// only the emphasis moves.
+var WALKS = {walks_json};
+function drawWalk(coords) {{
+  // Guarded because map.getSource throws outright while the style is still
+  // loading, and the first selectWalk runs the moment the page does.
+  if (!map.isStyleLoaded()) {{
+    map.once('styledata', function() {{ drawWalk(coords); }});
+    return;
+  }}
+  var src = map.getSource('walk');
+  if (src) {{
+    src.setData({{ type: 'Feature', geometry: {{ type: 'LineString', coordinates: coords }} }});
+  }} else {{
+    addWalkLayer();
+  }}
+}}
+function selectWalk(idx) {{
+  var w = WALKS[idx];
+  if (!w) {{ return; }}
+  routeCoords = w.coords;
+  drawWalk(w.coords);
+  var go = document.getElementById('route-go');
+  if (go) {{ go.href = w.url; }}
+  var lab = document.getElementById('route-label');
+  if (lab) {{ lab.textContent = w.label; }}
+  var meta = document.getElementById('route-meta');
+  if (meta) {{ meta.textContent = w.meta; }}
+  var nm = document.querySelector('.route-name');
+  if (nm) {{ nm.textContent = w.name; nm.hidden = !w.name; }}
+  var on = {{}};
+  w.members.forEach(function(i) {{ on[i] = true; }});
+  pins.forEach(function(el, i) {{ el.classList.toggle('pin-off', !on[i]); }});
+  document.querySelectorAll('.tree-card').forEach(function(card, i) {{
+    card.classList.toggle('card-off', !on[i]);
+  }});
+  document.querySelectorAll('.walk-pick').forEach(function(b, i) {{
+    b.classList.toggle('is-on', i === idx);
+    b.setAttribute('aria-pressed', i === idx ? 'true' : 'false');
+  }});
+  if (w.coords.length > 1) {{
+    var bb = new maplibregl.LngLatBounds();
+    w.coords.forEach(function(c) {{ bb.extend(c); }});
+    map.fitBounds(bb, {{ padding: 70, maxZoom: 15 }});
+  }}
+}}
+document.querySelectorAll('.walk-pick').forEach(function(btn) {{
+  btn.addEventListener('click', function() {{
+    selectWalk(parseInt(btn.getAttribute('data-walk'), 10));
+  }});
+}});
+if (WALKS.length > 1) {{ selectWalk(0); }}
 
 // The passport. Which trees you have stood in front of, kept in LocalStorage on
 // your own phone. No account, no server, nothing leaves the device: that is not
@@ -2980,7 +3195,8 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
       <p class="tree-more"><a href="{slug}/{tslug}">Read more and get directions &rarr;</a></p>
     </article>"""
         markers.append({"lat": loc["latitude"], "lng": loc["longitude"], "label": str(i),
-                        "icon": species_icon(t), "name": t["name"], "id": t["id"]})
+                        "icon": species_icon(t), "name": t["name"], "id": t["id"],
+                        "area": (loc.get("neighbourhood") or "").strip()})
 
     faq = city_data.get("faq", [])
     if not faq:
@@ -3081,30 +3297,43 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
     avg_lat = sum(m["lat"] for m in markers) / len(markers)
     avg_lng = sum(m["lng"] for m in markers) / len(markers)
 
-    # The walk, worked out at build time so a phone never has to compute it.
-    route = plan_walking_route([(m["lat"], m["lng"]) for m in markers])
+    # The walks, worked out at build time so a phone never has to compute it.
+    # Several per city where the trees allow it (Hidde, 2026-08-06: walks live
+    # inside the city page, never as pages of their own).
+    walks = plan_walks(markers)
+    route = walks[0] if walks else None
     route_bar = ""
     if route:
-        route_url = maps_route_url([(markers[i]["lat"], markers[i]["lng"])
-                                    for i in route["order"]])
-        hours, mins = divmod(route["minutes"], 60)
-        if hours and mins:
-            duration = f"{hours}h {mins}m"
-        elif hours:
-            duration = "1 hour" if hours == 1 else f"{hours} hours"
-        else:
-            duration = f"{mins} min"
-        # Says which trees and how far, because someone who discovers halfway
-        # that this was never the full ten is someone we lost.
-        label = (f"Walk {route['count']} of these trees"
-                 if route["count"] < route["of"] else f"Walk all {route['count']} trees")
+        for w in walks:
+            w["url"] = maps_route_url([(markers[i]["lat"], markers[i]["lng"])
+                                       for i in w["order"]])
+            w["duration"] = human_duration(w["minutes"])
+            w["label"] = (f"Walk {w['count']} of these trees"
+                          if w["count"] < len(markers) else f"Walk all {w['count']} trees")
+        chooser = ""
+        if len(walks) > 1:
+            # Every walk is a real button in the served HTML, so the choice is
+            # visible without JavaScript and to a crawler.
+            btns = "".join(
+                f'<button type="button" class="walk-pick{" is-on" if i == 0 else ""}" '
+                f'data-walk="{i}" aria-pressed="{"true" if i == 0 else "false"}">'
+                f'<span class="walk-pick-name">{esc(w["name"] or f"Walk {i + 1}")}</span>'
+                f'<span class="walk-pick-meta">{w["count"]} trees &middot; {w["km"]} km</span>'
+                f'</button>' for i, w in enumerate(walks))
+            plural = "walks" if len(walks) > 1 else "walk"
+            chooser = (f'<div class="walk-picker" role="group" '
+                       f'aria-label="{len(walks)} {plural} in {esc(city)}">{btns}</div>')
+        first = walks[0]
+        name_bit = f'<span class="route-name">{esc(first["name"])}</span>' if first["name"] else ""
         route_bar = f"""
-    <div class="route-bar" id="walk">
-      <a class="route-go" href="{esc(route_url)}" target="_blank" rel="noopener">
-        {label}
-        <span class="route-meta">about {route['km']} km, {duration} on foot</span>
-      </a>
-      <button type="button" class="route-gps" id="gps-btn" aria-pressed="false">Where am I</button>
+    <div class="walks" id="walk">{chooser}
+      <div class="route-bar">
+        <a class="route-go" id="route-go" href="{esc(first['url'])}" target="_blank" rel="noopener">
+          {name_bit}<span id="route-label">{first['label']}</span>
+          <span class="route-meta" id="route-meta">about {first['km']} km, {first['duration']} on foot</span>
+        </a>
+        <button type="button" class="route-gps" id="gps-btn" aria-pressed="false">Where am I</button>
+      </div>
     </div>"""
 
     body = f"""
@@ -3130,7 +3359,7 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
   </div>
 </div>
 """
-    scripts = city_map_script(markers, (avg_lat, avg_lng), route, other_cities)
+    scripts = city_map_script(markers, (avg_lat, avg_lng), route, other_cities, walks)
 
     link_count = len(trees) + 1 + 1 + len(other_cities) + len(city_species_links)
     check_links(canonical, link_count, 12)
