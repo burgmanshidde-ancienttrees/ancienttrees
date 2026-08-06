@@ -2076,6 +2076,12 @@ def usable_photo(tree):
     """Return the photo dict if it has a URL, license and attribution and is
     cleared for display; otherwise None. One gate for every page type."""
     photo = tree.get("photo") or {}
+    # Three statuses, and the middle one was doing two jobs. "approved" means a
+    # run looked at the pixels. "found_needs_check" means it found something
+    # plausible and could not look, and it still renders, because Hidde's
+    # 2026-08-06 ruling is that we do not hold a page back over a risk a reader
+    # can correct. "held" is the marker that was missing: kept in the file,
+    # deliberately not published, for a photo we must not show yet.
     if (photo.get("url") and photo.get("license") and photo.get("attribution")
             and photo.get("status") in ("approved", "found_needs_check")):
         # A Commons File: page is HTML, not an image; it renders as a broken
