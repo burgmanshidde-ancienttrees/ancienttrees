@@ -279,6 +279,10 @@ def brief(arg, live):
     print_leads(slug)
     print_blocklist()
 
+    print("\nDISPATCH: paste this whole brief into the 'verify' subagent (.claude/agents/")
+    print("verify.md). That agent definition pins the model to Sonnet, so the tiering is")
+    print("mechanical: dispatching any other way is what needs a reason. Stories come")
+    print("later from the 'write-stories' agent (Opus), 15 to 20 verified trees at once.")
     print("\nSTOP CONDITION: report what you have after roughly 40 minutes; do not run to")
     print("completeness. A pass never holds a whole city back on its own judgement: it")
     print("delivers what verifies and records the rest as leads with reasons.")
