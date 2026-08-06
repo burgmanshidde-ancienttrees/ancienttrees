@@ -1,3 +1,15 @@
+## 2026-08-06 — Guimaraes opens: 4 trees, register-first, exactly at the floor
+
+Guimaraes (UNESCO World Heritage historic centre, Portugal), found via `scripts/backlog.py --new`: a 14-tree ICNF register cluster within 3.4 km, untouched by any prior session. Dispatched a bounded research pass off the register leads; full incremental record in `data/research/guimaraes.md`.
+
+**4 shipped**: the twin plane trees on the lawn below the Paco dos Duques (confirmed, ~165y), eighteen camellias across two parterres at the Palacio Vila Flor folded into one ensemble entry (confirmed, ~195y, Guimaraes' oldest and part of Portugal's own Camellia Route), three Himalayan cedars at the gates of the Atouguia municipal cemetery folded into one entry (confirmed on the one dated tree at ~115y, the other two undated), and the olive tree in the cloister of Nossa Senhora da Oliveira, carrying the city's founding miracle legend (1342) but shipped `flagged` since no source ties this specific trunk to that date and the register itself gives no age.
+
+**3 held back, all judgment calls, recorded in `data/leads/guimaraes.json`**: Casa de Margaride (an 2024 Portuguese Tree of the Year camellia among rare 18th/19th-century cultivars) and Casa da Covilha (the single oldest dated tree in the whole Guimaraes register set, 300y) are both private estates with owner-guided visits only, no standing public hours found, so held on hard rule 10 rather than guessed open. Santa Marinha da Costa (an oak beside a baroque water tank in a former monastery, now a hotel) was the research pass's own recommendation to ship, but is held back on review: the property's own material says the grounds were restored "for guests and visitors," which is suggestive but not a clear public-access statement, and the rule is leave it out when in doubt. Its register age (290y, applied across a conjunto that includes eucalyptus, a 19th-century introduction to Portugal) was unreliable regardless.
+
+**Photos**: 2 candidates found for the plane trees (Wikimedia Commons, CC BY-SA 3.0, matched pair, geotagged), but no image-rendering tooling was available this session to view the pixels, so both stay `found_needs_check` per the Cadiz rule rather than approved on a filename. Worth a look by a session that can render images.
+
+Site rebuilt (1,097 pages), all contracts validated, `scripts/qa.py` clean. `scripts/tree_index.py` re-run.
+
 ## 2026-08-03 — Nara researched, held short of the 4-tree floor: 2 verified, 5 leads recorded
 
 Same session, straight after Fukuoka. Nara is next in the Japan queue and was already known to be mid-research (a prior session's Nara pass was lost entirely when its background agent's session closed before anything was saved, per CLAUDE.md's 2026-08-03 process note). Ran a fresh, time-boxed research pass (the new process set earlier this session: ~40 min budget, ~8 candidates, findings written to `data/research/nara.md` as each was verified rather than only at the end) followed by my own direct source verification of the strongest leads.

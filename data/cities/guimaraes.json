@@ -1,0 +1,141 @@
+{
+  "city": "Guimaraes",
+  "country": "Portugal",
+  "status": "needs_curation",
+  "intro": "Guimaraes calls itself the birthplace of Portugal, but its oldest trees keep that history in a different register. Two plane trees on the lawn below the Paco dos Duques predate the palace's own 1930s reconstruction; an olive tree in the cathedral cloister marks the legend that gave the city its saint her name; eighteen camellias at the Palacio Vila Flor put Guimaraes on Portugal's own Camellia Route. Three Himalayan cedars guard the municipal cemetery. None of it is far apart: the centre, the garden and the cemetery sit inside one two-kilometre stretch of the UNESCO-listed town.",
+  "meta_description": "Guimaraes' oldest trees ring the Ducal Palace, a cathedral cloister and a camellia garden on Portugal's own Camellia Route, all inside the UNESCO old town.",
+  "question_meta": "Guimaraes' oldest tree by confirmed age is one of eighteen camellias in the Palacio Vila Flor gardens, planted around 1830.",
+  "question_answer": "Guimaraes' oldest tree, on the best evidence available, is one of the eighteen camellias in the terraced gardens of the Palacio Vila Flor, planted around 1830 and measured at roughly 195 years in Portugal's tree register. Two plane trees on the lawn below the Paco dos Duques, at about 165 years, and three Himalayan cedars at the municipal cemetery, around 115 years, are the next oldest confirmed ages on this page. An olive tree in the cloister of Nossa Senhora da Oliveira carries the city's own founding legend, a miracle dated to 1342, but no source ties this specific trunk to that year and the register itself records no age for it, so it is not the answer here.",
+  "question_context": "The camellias, the planes and the cedars all trace their ages to the same 2011 classification pass by Portugal's forestry institute, which is why they agree with each other to within a plausible margin. The camellias are worth the walk regardless of the number attached to them: Guimaraes and the wider Minho region market themselves, with reason, along a Camellia Route, and eighteen trees on one estate is a serious collection rather than a curiosity. The olive tree is the more interesting story. City tradition holds that a merchant returning from Normandy in 1342 set a crucifix beside a long-dead olive trunk in the square, and that the olive turned green again three days later, a miracle that gave the church behind it, and so this whole quarter of the city, the name Nossa Senhora da Oliveira, Our Lady of the Olive Tree. The legend is real and well documented. What cannot be verified is that today's tree is the miracle tree, so the age is left open rather than implied.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Guimaraes?",
+      "a": "One of the eighteen camellias in the gardens of the Palacio Vila Flor, planted around 1830 and about 195 years old by the national register's own measurement."
+    },
+    {
+      "q": "Can you walk between them?",
+      "a": "Mostly. The plane trees, the olive tree and the camellia garden all sit within the historic UNESCO centre and its immediate surroundings, a walk of well under two kilometres. The cedars at the municipal cemetery are a further 20 to 25 minutes on foot, or a short bus ride, and are best treated as a separate stop."
+    },
+    {
+      "q": "Do they cost anything to see?",
+      "a": "Mostly free. The plane trees, the camellia garden and the cedars all stand on open public ground. The olive tree is the one exception, reached through the cloister of the Museu de Alberto Sampaio for a one euro add-on to the museum ticket."
+    },
+    {
+      "q": "Which has the best story?",
+      "a": "The olive tree in the cloister of Nossa Senhora da Oliveira. City tradition holds a merchant set a crucifix beside its long-dead trunk in 1342 and that it turned green again three days later, a miracle that gave the church, and this whole quarter of Guimaraes, its name."
+    }
+  ],
+  "hero_tree_id": "gui_001",
+  "oldest_tree_id": "gui_003",
+  "trees": [
+    {
+      "id": "gui_001",
+      "name": "The Plane Trees of the Paco dos Duques",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 165 years",
+      "age_min": 155,
+      "age_max": 180,
+      "location": {
+        "address": "Jardins do Paco dos Duques de Braganca, Rua Conde D. Henrique, 4800-440 Guimaraes",
+        "latitude": 41.44649999,
+        "longitude": -8.291799988,
+        "neighbourhood": "Centro Historico"
+      },
+      "story": "Most of what you see is younger than what grows beneath it. Building work on the Paco dos Duques began in 1420 for Afonso, illegitimate son of King Joao I and soon to be the first Duke of Braganza, and it was never finished. The palace slid into ruin after 1616, when Guimaraes itself was handed to a Spanish nobleman, and by the nineteenth century what was left housed an infantry barracks. The building tourists photograph today, with its steep slate roofs and half-timbered galleries, is largely a 1937 to 1959 reconstruction: the regime of the Estado Novo added two full floors to the front wing and a third to the sides, remaking a shell into the national monument it wanted Guimaraes, self-styled cradle of Portugal, to have. These two plane trees on the grassy slope below the walls predate that rebuild by decades. Measured at 150 years in 2011, they were already thick-trunked when the scaffolding went up. The larger, four and a half metres round, rises twenty-nine metres; its partner a few strides away is a size smaller, twenty-two metres tall. Stand between them and look up at the palace: the trees are the only part of the view that nobody had to reconstruct.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.cm-guimaraes.pt/pages/728",
+        "https://sol.sapo.pt/artigo/105725/o-paco-dos-duques-de-braganca"
+      ],
+      "access": "Free, exterior lawn below the palace walls, outside the paid museum entrance",
+      "transport": "In the historic centre, on foot",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "found_needs_check"},
+      "curation_status": "ai_generated",
+      "notes": "Twin registration, about 20m apart; pin marks the larger tree (4.5m girth, 29m tall) over the smaller (22m tall). Age is the 2011 assessment (150y) carried forward. A CC BY-SA 3.0 photo pair exists on Wikimedia Commons (File:Q98443993.jpg, File:Q98443994.jpg, Vanbasten 23, 2021) but the pixels were not viewed this session (no image-rendering tooling available), so status stays found_needs_check per the Cadiz rule rather than approved on a filename.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gui_002",
+      "name": "The Olive Tree of Nossa Senhora da Oliveira",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "unknown, the register recorded no figure at its 2021 measurement",
+      "age_min": 100,
+      "age_max": 300,
+      "location": {
+        "address": "Claustro do Museu de Alberto Sampaio, Rua Alfredo Guimaraes, 4800-407 Guimaraes",
+        "latitude": 41.44008333,
+        "longitude": -8.292166667,
+        "neighbourhood": "Centro Historico"
+      },
+      "story": "This tree gave the city its second name. According to the legend still told here, a merchant named Pero Esteves brought a crucifix back from Normandy in 1342 and set it beside an olive tree that stood dead in the square, its trunk long dried out. Three days later, so the story goes, the olive turned green again. Guimaraes called the miracle Our Lady's, and the collegiate church behind the square has been Nossa Senhora da Oliveira, Our Lady of the Olive Tree, ever since, with an olive branch worked into the city's own coat of arms. An older layer of the same legend pushes the planting back further still, to the Visigothic king Wamba and a cutting supposedly carried from the Garden of Olives in Jerusalem. What can be said honestly is narrower: the tree growing today in the church's Romanesque cloister, two metres ninety around the trunk, is not documented as that specific plant, and Portugal's tree register, which measured it last in 2021, recorded no age at all. Whatever its years, it stands exactly where the story says it should, in the cloister that once belonged to a monastery founded by Countess Mumadona Dias in 949, on the square that gave the church, and so this whole quarter of the city, its name.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.museualbertosampaio.gov.pt/museum/spaces/cloister/?lang=en",
+        "https://pt.wikipedia.org/wiki/Igreja_de_Nossa_Senhora_da_Oliveira_(Guimar%C3%A3es)"
+      ],
+      "access": "Paid, 1 euro cloister add-on to the Museu de Alberto Sampaio ticket, Tuesday to Sunday 10:00-18:00",
+      "transport": "In the historic centre, on foot",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "flagged",
+      "notes": "The legend is well documented and independently corroborated (church history, Wikipedia, city sources), but no source ties this specific trunk to the 1342 date or the Wamba legend, and the register itself gives no age. Published on the strength of the legend and the site, with the age question left explicitly open rather than implied.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gui_003",
+      "name": "The Camellias of Palacio Vila Flor",
+      "species": "Common Camellia (Camellia japonica)",
+      "age_estimate": "about 195 years",
+      "age_min": 180,
+      "age_max": 215,
+      "location": {
+        "address": "Jardins do Palacio Vila Flor, Av. D. Afonso Henriques 701, 4810-431 Guimaraes",
+        "latitude": 41.43789999,
+        "longitude": -8.294899988,
+        "neighbourhood": "Urgezes"
+      },
+      "story": "Eighteen camellias planted across two garden terraces here have outlived the building's most fashionable era by more than a century. The register puts them at around 195 years, planted in the 1830s, decades before the palace itself was extended into the grand house whose halls now show contemporary art. Camellia japonica arrived in Europe from East Asia in the eighteenth century as a hothouse curiosity for the wealthy; by the time these were planted it had become the flower a family used to say a garden mattered. Guimaraes and the wider Minho region took to it harder than most of Portugal, which is why the area still markets itself, without much exaggeration, along a Camellia Route. The eighteen trees here split into two groups on the lower and upper parterres of a three-terrace baroque garden, laid out with box hedges, stone fountains and a view back over the city; the garden won a national landscape architecture award in 2006. Camellias flower through the coldest months, January into March, when almost nothing else in a Portuguese garden is doing anything at all, which is presumably part of why a family planted eighteen of them and not one.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.visitguimaraes.travel/descobrir/entretenimento-e-lazer/parques-de-lazer/centro-urbano/geo_artigo/jardins-do-palacio-vila-flor",
+        "https://pt.wikipedia.org/wiki/Pal%C3%A1cio_Vila_Flor_(Guimar%C3%A3es)"
+      ],
+      "access": "Free, public garden, Monday to Saturday 09:00-13:00 and 14:30-20:00, Sunday 10:00-13:00 and 15:00-19:00",
+      "transport": "About 10 min walk from the historic centre, on Av. D. Afonso Henriques",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "ai_generated",
+      "notes": "Register lists the two parterres as separate entries (8 individuals lower, 10 upper) about 30m apart in the same garden; folded into one ensemble entry the way Setubal folds twin registrations. Pin marks the lower parterre; the upper is a short walk within the same grounds.",
+      "best_time": {
+        "months": [1, 2, 3],
+        "label": "January to March, when the camellias flower and little else in the garden does",
+        "kind": "flowers"
+      },
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "gui_004",
+      "name": "The Himalayan Cedars of Atouguia Cemetery",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "about 115 years (one of the three dated; see notes)",
+      "age_min": 100,
+      "age_max": 130,
+      "location": {
+        "address": "Cemiterio Municipal da Atouguia, Creixomil, 4835 Guimaraes",
+        "latitude": 41.44399999,
+        "longitude": -8.310499988,
+        "neighbourhood": "Creixomil"
+      },
+      "story": "Three Himalayan cedars stand at the gates of Guimaraes' municipal cemetery, tall enough that they read as a landmark from the road below rather than as cemetery planting. Cedrus deodara comes from the western Himalaya, from Afghanistan through to Nepal, where it can live past a thousand years and grow to twice the height these have reached; introduced to European parks in the nineteenth century, it became one of the standard conifers for an avenue meant to impress. One of the three, in the cemetery car park, was measured at 100 years old in 2011 and classified that June, with a trunk four metres seventeen around. Its two companions at the main entrance, girths of 4.10 and 4.47 metres, were added to the classification later and were never separately dated, though their size suggests the same generation rather than a younger planting. A cedar planted at a cemetery gate a century ago was a statement about permanence, evergreen and famously long-lived, standing over a place built for the opposite. It has mostly kept the promise: all three are alive and, unlike the graves around them, still growing.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://www.labpaisagem.pt/arvoredo-classificado-de-interesse-publico-em-guimaraes/cedros-cemiterio-municipal-da-atouguia/",
+        "https://www.dn.pt/lusa/amp/guimaraes-candidata-arvores-a-classificacao-de-interesse-publico-9419548.html/"
+      ],
+      "access": "Free, public municipal cemetery, open during daytime visiting hours",
+      "transport": "About 20-25 min walk from the historic centre, or a short bus ride",
+      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "curation_status": "flagged",
+      "notes": "Pin is the one dated tree (car park, classified Aviso no. 10, 17/06/2011). The other two, at the cemetery's main entrance about 200m away, carry an identical rounded coordinate in the register (a transcription artifact, not a literal single point) and were added to the public-interest listing in a later municipal candidatura without their own age figure. All three treated as one ensemble entry since they read as a single planted group at the same gate.",
+      "location_precision": "confirmed"
+    }
+  ]
+}

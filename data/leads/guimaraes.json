@@ -1,0 +1,75 @@
+{
+  "city": "Guimaraes",
+  "country": "Portugal",
+  "city_slug": "guimaraes",
+  "compiled": "2026-08-06",
+  "source": "data/registers/portugal-icnf.json, concelho == Guimaraes (21 entries), plus web verification",
+  "context": "Register-first pass on the Guimaraes cluster. 4 entries shipped (gui_001 to gui_004) from the historic centre, Vila Flor and Atouguia sites. Everything below either failed the collectible-point test, failed the public-access bar, sits well outside the walkable cluster, or is genuinely undated and single-sourced. See data/research/guimaraes.md for the full reasoning.",
+  "leads": [
+    {
+      "name": "The Old Trees of Santa Marinha da Costa",
+      "species": "Pedunculate Oak (Quercus robur), with Atlas Cedar, Northern Red Oak, Sweet Chestnut, Mexican Cypress and Blue Gum as companions in the same classified conjunto",
+      "lat": 41.44199999,
+      "lng": -8.275499988,
+      "status": "lead",
+      "why": "The research pass's own recommendation was to ship this, and it is genuinely a strong tree: an oak beside a baroque water tank in the walled garden of a 12th-century monastery, classified public-interest since 1940. Held back on publication (not by the research pass, on review) because the site is now a hotel (Pousada de Santa Marinha) and no source found states plainly that a non-guest can walk into the grounds. The property's own botanical-guide PDF says the park was recovered as a leisure place 'for guests and visitors', which is suggestive but not a clear statement of public access, and hard rule 10 says leave it out when in doubt. Also carries an unrelated data problem: the register's 290-year age applies across all six species in the conjunto including eucalyptus, which only reached Portugal in the 19th century, so the figure cannot be taken as this oak's age even if access clears. Worth a direct call or email to the pousada to confirm access before this ships."
+    },
+    {
+      "name": "The Camellias of Casa de Margaride",
+      "species": "Camellia japonica L.; Camellia reticulata Lindl. (plus Ilex aquifolium, Taxus baccata, Chamaecyparis lawsoniana, Cupressus lusitanica in the same garden-conjunto entry)",
+      "lat": 41.45045833,
+      "lng": -8.276802778,
+      "status": "lead",
+      "why": "Genuinely remarkable: rare 18th/19th-century European camellia cultivars (Alba Plena, Variegata, Pompone, Elegans, Lavinia Maggi, the Portuguese 1889 cultivar 'Augusto Leal Gouveia Pinto'), one specimen won Portuguese Tree of the Year 2024, house and garden classified Monument of Public Interest 2012, trees classified 2022 (Despacho 837/2022). Four register rows here (cameleira, the garden-conjunto, pereira, diospireiro), all age 130 at last measurement. Held back only on access: this is a private aristocratic estate (now run as 'Villa Margaridi' rural tourism), and the garden is visited by guided tour led by the owner, announced periodically (e.g. via A Muralha, a local cultural association) rather than on standing public hours. Needs Hidde's call on whether bookable guided access clears hard rule 10 the way a paid attraction like Blarney does."
+    },
+    {
+      "name": "The Camellia of Casa da Covilha",
+      "species": "Camellia japonica L.",
+      "lat": 41.44877778,
+      "lng": -8.31525,
+      "status": "lead",
+      "why": "Register's single oldest dated tree in the whole Guimaraes set: 300 years at last measurement (2018), girth 3.6m. House and quinta (17th century, remodelled by architect Fernando Tavora in the 1970s) classified Monument of Public Interest. Same access problem as Margaride: private house in Fermentoes, guided visits organized by the family (with José Bernardo Tavora), no standing public hours found. Also 2.1km from the historic centre, a separate site rather than joining the shipped cluster."
+    },
+    {
+      "name": "The Arboretum of Casa da Ribeira",
+      "species": "Pinus strobus; Sequoia sempervirens; Cupressus lusitanica; Cedrus deodara; Quercus robur; Fagus sylvatica; Liriodendron tulipifera; Liquidambar styraciflua",
+      "lat": 41.47306667,
+      "lng": -8.340383333,
+      "status": "lead",
+      "why": "8-species conjunto arboreo, classified 2020 (Despacho 6069/2020). 5.3km from the historic centre, well outside any cluster with the shipped trees and unresearched this pass. A candidate for its own future pass rather than a Guimaraes-centre addition."
+    },
+    {
+      "name": "Stone Pine of Rua 25 de Abril, Silvares",
+      "species": "Pinus pinea L.",
+      "lat": 41.44599999,
+      "lng": -8.338699988,
+      "status": "lead",
+      "why": "Single tree on a roundabout, ~4.4km from the centre, age 100 at 2011 measurement. Unresearched, out of cluster range."
+    },
+    {
+      "name": "Stone Pine of Moreira de Conegos",
+      "species": "Pinus pinea L.",
+      "lat": 41.37616667,
+      "lng": -8.317416667,
+      "status": "lead",
+      "why": "9km south of the centre, effectively a different town. Unresearched, out of cluster range."
+    },
+    {
+      "name": "Stone Pine of Citania de Briteiros",
+      "species": "Pinus pinea L.",
+      "lat": 41.52736111,
+      "lng": -8.3165,
+      "status": "lead",
+      "why": "9.5km north, at the famous Iron Age hillfort site. Genuinely visited by tourists, but too far from the historic-centre cluster to join this city's page as researched. Worth a look as its own entry or a Braga-area cluster candidate later."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Casa da Penha arboretum",
+      "species": "78 species, 790 specimens (Diverso arvoredo)",
+      "lat": 41.4304,
+      "lng": -8.2657,
+      "reason": "Whole-forest inventory classified as a single conjunto (Despacho 3265/2019), not a collectible point: no single place to stand, nothing to have seen. Fails the ensemble test the same way La Rambla's plane trees did. The two named subsets nearby (Serra da Penha eucalipto and pseudotsuga, and the 'diverso arvoredo' of firs at Monte da Penha) are part of this same inventory and blocked for the same reason."
+    }
+  ]
+}
