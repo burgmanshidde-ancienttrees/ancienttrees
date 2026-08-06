@@ -13,10 +13,14 @@ get a permission that does not cover us.
 
 Dear Ancient Tree Inventory team,
 
-I run ancienttrees.app, a website that maps remarkable ancient trees in
-cities and writes a short researched story for each one, with the aim of
-getting people to walk to a tree and stand in front of it. Around 90 cities
-are live today, about 740 trees, each verified against at least two sources.
+I love old trees. Standing in front of something that has quietly outlived
+every generation that planted, pruned or ignored it is, for me, one of the
+best reasons to go outside at all. I built ancienttrees.app to share that
+feeling: it maps remarkable ancient trees in cities, tells each one's story
+in a few honest paragraphs, and gives people a short walk that strings a few
+together. The goal is simply to get more people outdoors, looking up at
+something old, and caring about what they find there. Around 90 cities are
+live today, about 740 trees, each verified against at least two sources.
 
 I would like to ask for written permission to use Ancient Tree Inventory data
 on the site, which your End User Licence Agreement asks me to do, since the
