@@ -1,0 +1,54 @@
+{
+ "note": "Hosts that cost a run its window, with what they actually do. Written because this knowledge existed in data/research/ two days before a pass died on it twice: a research file nobody reads at the moment it matters is not a record, it is a souvenir. Every brief must carry this list, and scripts/passcheck.py prints it.",
+ "rule": "Every fetch gets a hard timeout: curl -m 20, or timeout= on urllib. A host that hangs once goes on this list with the date. A hang is far worse than a refusal, because a refusal fails in a second and a hang burns the whole window.",
+ "hosts": {
+  "cultural.valencia.es": {
+   "behaviour": "hangs, no response at all",
+   "seen": "2026-08-06",
+   "cost": "two Valencia passes died on it, nothing written either time",
+   "workaround": "unknown; try valencia.es (302, responds fine) or the Generalitat catalogue instead"
+  },
+  "www.sevilla.org": {
+   "behaviour": "hangs, ECONNREFUSED at TCP level",
+   "seen": "2026-08-05",
+   "cost": "a Seville pass lost time before finding the mirror",
+   "workaround": "www.femas.es serves the identical municipal PDF"
+  },
+  "diario.madrid.es": {
+   "behaviour": "Akamai 403 to every user agent",
+   "seen": "2026-08-05",
+   "cost": "cheap, it fails immediately",
+   "workaround": "none found; open in a browser session or skip"
+  },
+  "barcelona.cat": {
+   "behaviour": "418 to plain fetchers",
+   "seen": "2026-08-05",
+   "cost": "cheap",
+   "workaround": "the register is already imported at data/registers/barcelona-ail.json"
+  },
+  "lyon.fr": {
+   "behaviour": "403 to plain fetching",
+   "seen": "2026-08-05",
+   "cost": "cheap",
+   "workaround": "none found"
+  },
+  "datosabiertos.jcyl.es": {
+   "behaviour": "TLS certificate verification fails",
+   "seen": "2026-08-02",
+   "cost": "cheap",
+   "workaround": "verify via datos.gob.es metadata instead"
+  },
+  "publico.pt": {
+   "behaviour": "blocks plain fetchers",
+   "seen": "2026-08-05",
+   "cost": "cheap",
+   "workaround": "none needed, it is a newspaper and a lead rather than a source"
+  },
+  "sites.heritage.brussels": {
+   "behaviour": "403 to WebFetch, 200 to curl with a browser user agent",
+   "seen": "2026-08-06",
+   "cost": "cheap once known",
+   "workaround": "curl -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'"
+  }
+ }
+}
