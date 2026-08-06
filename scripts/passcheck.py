@@ -127,6 +127,18 @@ def main():
         print(f"\n  id prefixes already in use ({len(taken)}): {' '.join(taken)}")
         print("  pick three letters that are NOT in that list.")
 
+    # Hosts that hang. A hang costs the whole window, so this prints before the
+    # brief is written rather than sitting in a research file nobody opens.
+    bl = os.path.join(ROOT, "data", "fetch-blocklist.json")
+    if os.path.exists(bl):
+        hosts = json.load(open(bl))["hosts"]
+        print("\n  HOSTS THAT COST A WINDOW (put these in the brief):")
+        for h, v in sorted(hosts.items(), key=lambda kv: 0 if "hang" in kv[1]["behaviour"] else 1):
+            mark = "!!" if "hang" in v["behaviour"] else "  "
+            print(f"   {mark} {h}: {v['behaviour']}. {v['workaround']}")
+        print("      Every fetch gets a hard timeout: curl -m 20. A hang burns the window; "
+              "a refusal costs a second.")
+
     slug = match["slug"] if match else fold(arg)
     for kind, pat in (("leads", "leads"), ("research", "research")):
         for f in sorted(glob.glob(os.path.join(ROOT, "data", pat, f"*{slug}*"))):
