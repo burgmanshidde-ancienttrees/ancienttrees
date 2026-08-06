@@ -1,0 +1,96 @@
+[
+  {
+    "id": "rom_017",
+    "name": "The Magnolia of Via Corsini",
+    "species": "Southern Magnolia (Magnolia grandiflora)",
+    "age_estimate": "roughly 275 years",
+    "age_min": 250,
+    "age_max": 300,
+    "location": {
+      "address": "Via Corsini 1, 00165 Roma",
+      "latitude": 41.89277,
+      "longitude": 12.467126,
+      "neighbourhood": "Trastevere"
+    },
+    "verified_sources": [
+      "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+      "https://ilregistrodeglialberi.it/17729-la-magnolia-dei-corsini-magnolia-roma-rm-lazio"
+    ],
+    "access": "Free, public street (Via Corsini), RAMI records it as Accessibile. Resolves the access question the leads file left open: it stands on the street at Via Corsini 1, not inside the ticketed Orto Botanico or the private Corsini gardens.",
+    "transport": "Same walk as rom_003 (Twin Planes of the Eleven Fountains), 109m away; 10 min walk from Trastevere",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Lazio regional register sheet 67/H501/RM/12, girth 290cm, height 18m, designated for age and size (criterion a). Second source is RAMI (Il Registro degli Alberi, ilregistrodeglialberi.it), a volunteer/citizen register independent of MASAF and the Lazio regional list, entry #17729, last updated 18/11/2025: gives age as calculated from a registered birth year, ~276 years (so mid-1700s planting), health status 'Buona' (good), and accessibility 'Accessibile'. RAMI's own field note: 'La Magnolia piu antica di Roma, sembra gia presente dopo la meta del XVIII sec., faceva parte del giardino dell'adiacente Palazzo Corsini come il vicino Orto Botanico' (Rome's oldest magnolia, seems to have already been present after the mid-18th century, was part of the garden of the adjacent Palazzo Corsini like the neighbouring Botanical Garden). Coordinates agree closely between the lead (41.892694, 12.467139) and RAMI (41.89277, 12.467126), under 10m apart. Story hook: oldest magnolia in Rome per RAMI, planted as part of the Corsini palace garden before the adjacent Orto Botanico existed as a public institution, now standing on the public street outside the wall. Joins the Trastevere walk (rom_003, rom_004)."
+  },
+  {
+    "id": "rom_018",
+    "name": "The Cedar of Lebanon of Villa Torlonia",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "estimated 150-200+ years, undocumented",
+    "age_min": 150,
+    "age_max": 220,
+    "location": {
+      "address": "Villa Torlonia, entrance staircase to the Palazzo Nobile (Casino Nobile), Via Nomentana, 00161 Roma",
+      "latitude": 41.915357,
+      "longitude": 12.51089,
+      "neighbourhood": "Nomentana / Villa Torlonia"
+    },
+    "verified_sources": [
+      "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+      "https://ilregistrodeglialberi.it/9269-cedro-del-libano-roma-rm-lazio",
+      "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295"
+    ],
+    "access": "Free, public park, Villa Torlonia. RAMI records it as Accessibile.",
+    "transport": "Bus to Via Nomentana / Villa Torlonia entrance, or 10 min walk from Bologna metro (Line B); 3.5km from the city centre",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Lazio regional register sheet 19/H501/RM/12 (girth 600cm, height 28m per the lead file's MASAF reading). Second and third sources: RAMI entry #9269, same AMI code 19/H501/RM/12, confirming it is the identical tree (coordinates 41.915357,12.51089, ~20m from the lead's figure, well within one park feature); and Roma Capitale's own page NWS1195295, which calls the Villa Torlonia cedar 'colossale' and 'ospita un colossale Cedro del Libano'. RAMI health status: Buona (good), last measured 21/03/2026, so alive and current within the last five months. RAMI girth reading 590cm/28m height, essentially matching the register's 600cm. No age or planting date in any source (RAMI shows 'Eta stimata: Non disponibile' because no birth year is on file, unlike the Corsini magnolia); the range given is tied to the site's documented history, not a source estimate: Giovanni Raimondo Torlonia acquired the estate in 1797, and the English-garden landscaping (with Alessandro Torlonia and landscape architect Jappelli) that would have introduced ornamental conifers like this came later in the 19th century, so a planting window of roughly 150-220 years is the honest bound, not a dated fact. RAMI's field note (attributed to Antonella Armeni via the MASAF site) describes it standing 'come un guardiano' beside the staircase to the Casino Nobile (Palazzo Nobile) designed by Valadier, its height rivaling the pink obelisk nearby, near the monumental entrance on Via Nomentana. This is the single thickest cedar on Rome's monumental register (per the leads file, thickest of any species on the register at 600cm). CAUTION cross-checked and cleared: this is NOT the dead stone pine on the Lazio removed sheet (sheet 18/H501, 'Pino domestico... Albero morto', a different species entirely, Pinus pinea not Cedrus libani, and a different sheet number). It is also a different, larger, nationally-registered tree from RAMI's separate #9270 'Cedro #2 Villa Torlonia' (no AMI code, local relevance only, girth 465cm, no coordinates on file), which is evidently a third, lesser cedar in the same park and is NOT this tree and NOT shipped. NOTE for the writer/next pass: the companion Stone Pine of Villa Torlonia (sheet 75/H501, lead file) was NOT resolved this pass and stays a lead. It could not be distinguished with confidence from the tree on the Lazio removed/dead sheet (sheet 18/H501, also a Villa Torlonia stone pine, 'Albero morto'), because no independent source (RAMI search included) could be matched to AMI code 75 specifically in the time available. Opens a new Nomentana/Villa Torlonia pocket on its own for now; a future pass adding the stone pine (once safely distinguished) or the Podocarp of Piazza Vittorio (2.4km away, rom_019 below) would round it out."
+  },
+  {
+    "id": "rom_019",
+    "name": "The Podocarp of Piazza Vittorio",
+    "species": "Willowleaf Podocarp (Podocarpus neriifolius)",
+    "age_estimate": "100+ years, undocumented",
+    "age_min": 80,
+    "age_max": 130,
+    "location": {
+      "address": "Giardino Nicola Calipari, Piazza Vittorio Emanuele II, 00185 Roma",
+      "latitude": 41.89518,
+      "longitude": 12.503242,
+      "neighbourhood": "Esquilino"
+    },
+    "verified_sources": [
+      "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+      "https://ilregistrodeglialberi.it/17726-podocarpo-di-piazza-vittorio-quercia-virgiliana-roma-rm-lazio"
+    ],
+    "access": "Free, public garden inside Piazza Vittorio Emanuele II (Giardino Nicola Calipari). RAMI records it as Accessibile.",
+    "transport": "Vittorio Emanuele metro (Line A), on the square; 1.7km from the Capitoline cluster (rom_010, rom_014)",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Lazio regional register sheet 77/H501/RM/12, girth 230cm, height 20m, designated for botanical rarity (criterion d) alone, same basis as the already-published rom_012 Podocarp of Villa Sciarra. Second source: RAMI entry #17726, same AMI code 77/H501/RM/12, coordinates 41.89518,12.503242 (within a few metres of the lead's 41.895056,12.503222), girth and height matching exactly (230cm/20m), health status Buona (good), registered/last updated 17/11/2025. RAMI's field note: 'Esemplare di rarita botanica tra i piu grandi presenti nella Capitale, e stato inserito nell'elenco degli alberi monumentali d'Italia a ottobre 2025' (a specimen of botanical rarity among the largest in the capital, added to Italy's monumental tree list in October 2025). Larger than the published Villa Sciarra podocarp (rom_012, 200cm). DATA QUIRK: RAMI's own 'common name' field for this entry misreads 'Quercia virgiliana' (a different species, Quercus virgiliana), which is plainly a template/data-entry error on their side since the scientific name field correctly reads Podocarpus neriifolius D.Don and matches the register sheet and coordinates exactly; the common name used here follows hard rule 9 and matches the name already established by rom_012, 'Willowleaf Podocarp'. No age or planting date in either source; range is an undocumented placeholder consistent with the other Rome podocarp. Stands alone, no existing Rome cluster nearby: at 1.7km from the Capitoline pair (rom_010, rom_014) and roughly 2.2km from the Villa Torlonia cedar (rom_018) it does not join either pocket cleanly, but it is the strongest single 'everything else' candidate this pass verified, and could seed a future Esquilino walk."
+  },
+  {
+    "id": "rom_020",
+    "name": "The Chir Pine of Colle Oppio",
+    "species": "Chir Pine (Pinus roxburghii)",
+    "age_estimate": "90+ years, likely planted around the garden's 1936 opening",
+    "age_min": 85,
+    "age_max": 110,
+    "location": {
+      "address": "Parco di Colle Oppio, above the Domus Aurea, 00184 Roma",
+      "latitude": 41.89363,
+      "longitude": 12.497131,
+      "neighbourhood": "Esquilino / Colosseo"
+    },
+    "verified_sources": [
+      "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+      "https://ilregistrodeglialberi.it/17727-pino-dellhimalaya-pino-dellhimalaya-roma-rm-lazio",
+      "https://www.ilmessaggero.it/roma/cronaca/roma_il_miracolo_del_pino_della_domus_aurea_rinasce_l_albero_arrivato_dall_himalaya-3589907.html"
+    ],
+    "access": "Free, public park, Parco di Colle Oppio. RAMI records it as Accessibile.",
+    "transport": "5 min walk from Colosseo metro (Line B); joins a future Celio/Colosseum walk, 1km from Villa Celimontana (rom_008, rom_009)",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "THE VITALITY QUESTION THE LEAD FLAGGED IS RESOLVED: RAMI entry #17727, same AMI code as the register (71/H501/RM/12), records health status 'Buona' (good) as of its last update 17/11/2025, i.e. alive and in good health nine months ago, materially newer evidence than the 2018 press framing that the tree was dying. Coordinates match the lead almost exactly (41.89363,12.497131 vs 41.893528,12.497111). Girth 290cm, height 20m, agreeing with the register. RAMI's field note: 'Uno dei pochi esemplari di Pino dell'Himalaya presenti a Roma, inserito nell'Elenco degli alberi monumentali d'Italia a ottobre 2025 con il criterio di rarita botanica' (one of the few Chir Pine specimens in Rome, added to Italy's monumental tree list in October 2025 for botanical rarity). Third source, Il Messaggero: the tree was brought back from the Himalaya by Giuseppe Tucci, the Tibetologist and Mussolini-era envoy, and was already standing at the 1936 inauguration of the Colle Oppio garden directly above the Domus Aurea; its roots have since grown into the nymphaeum of Ulysses and Polyphemus below. STILL WORTH A HONEST CAVEAT IN THE STORY: the Domus Aurea garden redesign has previously been framed by the press as intending to remove the tall trees directly above the ruin because of root damage, so 'alive and healthy now' is not the same as 'safe long-term'; the writer should say both things. Age: no planting record exists, but the 1936 garden inauguration is a real documented anchor the tree was already present for, so 90+ years is a reasonable floor rather than an invented figure. Species common name: 'Chir Pine' is the standard English name for Pinus roxburghii (native to the Himalayan foothills), used here as the nationality-neutral name per hard rule 9; no other city file currently carries this species. Opens a Colosseum/Celio-adjacent point roughly 1km from the existing Celimontana pair (rom_008 Cedar, rom_009 Aleppo Pine), close enough to read as the start of a second short walk rather than an isolated dot."
+  }
+]
