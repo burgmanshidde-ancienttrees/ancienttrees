@@ -6,6 +6,44 @@ on two different days stops being a note and becomes a build check**; that ratch
 has already produced four of them (count promises, species names, register licence
 blocks, flat phenology curves).
 
+## 2026-08-06
+
+`scripts/retro.py`'s own output is not usable today: this session's checkout
+is a shallow clone (2 commits of real history reachable), so its git-based
+"published trees before/after" delta reads as 0 to 735, as if every tree on
+the site shipped today. Corrected by hand from `data/agent-costs.json` and
+this session's own commits instead.
+
+This session's own passes: Barcelona verify (97,465 tokens, 10 trees),
+Padova+Barcelona write (96,417 tokens, 19 trees across two cities in one
+context), Lisbon verify (135,275 tokens, 1 tree). 329,157 tokens, 20 trees
+actually reaching a city file (Padova opened at 9, Barcelona 22 to 32, Lisbon
+19 to 20 plus one pin correction), 16,458 per tree, just over the 15k target.
+Two earlier entries in today's log (Genoa verify+write, Padova verify) predate
+this session and are not re-attributed here.
+
+**Most expensive per tree.** Lisbon: 135,275 tokens, 1 tree, 135,275 per tree.
+The brief's premise was wrong on geography (candidates it listed as
+Ajuda/Tapada da Ajuda were actually central Lisbon, so the built-in access
+worry didn't even apply) and on novelty (4 of 5 candidates were already
+resolved by a prior pass, recorded in data/leads/lisbon.json, that passcheck's
+proximity check didn't catch because none of the five sat within its 80m
+radius of a live tree despite one of them, in the end, being the same tree as
+a live one 244m away). Not pure waste: the pass surfaced and this session
+fixed a real 244m pin error on lis_005 (upgraded approximate to confirmed
+against the ICNF register's own point), which does not show up as a "tree"
+in the token accounting but is exactly the kind of fix Step 0 rung 3 exists
+for.
+
+**The Andalusia rediam register's "place" field is province, not city**,
+confirmed by checking backlog.py's own top Spain candidate (a 7-tree
+"Huelva" cluster 70km from Huelva city, named for rural farm estates) before
+dispatching anything against it. Recorded in CURATION.md rather than
+rediscovered by a future pass; the fix (checking real distance-to-city before
+trusting a register's place label) is cheap and mechanical, worth turning into
+a passcheck.py warning if this pattern shows up a second time on a different
+register.
+
 ## 2026-08-05
 
 Published trees 575 to 690 (+115), 56 commits.
