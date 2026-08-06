@@ -1,0 +1,74 @@
+{
+  "city": "Padova",
+  "country": "Italy",
+  "city_slug": "padova",
+  "researched": "2026-08-06",
+  "note": "Salvaged from a verification pass that was interrupted before it wrote anything to disk. The full recovered material is in data/research/padova-notes.md. Nothing here is verified. The blocked entries below are the useful part: each is a tree a later pass would otherwise research from scratch and reject again.",
+  "leads": [
+    {
+      "name": "Cipresso del Canova, Chiesa degli Eremitani",
+      "species": "Cupressus sempervirens",
+      "lat": 45.41023,
+      "lng": 11.88026,
+      "status": "lead",
+      "why": "In MASAF at 0.9 km from the centre and there is a book about it (Michele Armelin, 'Il cipresso del Canova agli Eremitani di Padova'), so the story is there. No source found this pass states whether the churchyard garden it stands in is open to visitors, which is a hard-rule-10 question and has to be answered before it can ship. One check, no more. Not re-checked in the 2026-08-06 verification pass (time-boxed to the two central clusters)."
+    },
+    {
+      "name": "Cedro dell'Himalaya dell'Orto Botanico",
+      "species": "Cedrus deodara",
+      "lat": 45.398776,
+      "lng": 11.881411,
+      "status": "lead",
+      "why": "RAMI id 3250. Historically significant (reportedly the first Cedrus deodara imported and cultivated in Italy, 1828, age ~198 years) and inside the same Orto Botanico cluster as pad_001-004, so verification cost would be near zero on a follow-up pass. Held back from delivery this pass because RAMI records its health as 'Pessima' (poor), which needs a second, more recent source before it can be called 'alive and worth the walk' with confidence -- RAMI's own bar is about vitality, and 'Pessima' is a genuine caution flag, not just an evidence gap. Girth ~4.2-4.5 m. Source: https://ilregistrodeglialberi.it/3250-cedro-dellhimalaya-padova-pd-veneto"
+    },
+    {
+      "name": "Criptomeria dell'Orto Botanico",
+      "species": "Cryptomeria japonica",
+      "lat": 45.399402,
+      "lng": 11.87971,
+      "status": "lead",
+      "why": "RAMI id 3249, age ~176 years (planted circa 1850), health 'Sufficiente', inside the Orto Botanico cluster. Not delivered this pass purely for time; it is a low-cost add on a follow-up pass since it needs only the same second source used for pad_002/003/004 (garden history web sources). Source: https://ilregistrodeglialberi.it/3249-criptomeria-padova-pd-veneto"
+    },
+    {
+      "name": "Ginko dell'Orto Botanico n. 2",
+      "species": "Ginkgo biloba",
+      "lat": 45.399534,
+      "lng": 11.881069,
+      "status": "lead",
+      "why": "RAMI id 14476, the companion of pad_003 (the grafted male ginkgo), also carrying a grafted female branch per RAMI's note but with no age on file. Skipped in favour of the older, better-documented n.1 (pad_003) to avoid two near-identical ginkgo entries on one page; worth considering only if the city needs to grow past its current cluster count."
+    },
+    {
+      "name": "Cedro di via Michelangelo",
+      "species": "Cedrus sp.",
+      "status": "lead",
+      "why": "RAMI gives it ~105 years and only local-level designation, and the species is recorded merely as 'Cedrus sp.' Too young and too thinly identified to clear the bar while better candidates sit in the two central clusters. Keep for a later pass that grows the city."
+    },
+    {
+      "name": "Cluster around Stra and the Riviera del Brenta",
+      "species": "several: Platanus acerifolia, Carpinus betulus, Taxodium distichum, Magnolia grandiflora, Maclura pomifera",
+      "status": "lead",
+      "why": "Six MASAF trees sitting together about 10 km east of Padova, almost certainly in a Brenta villa park. Inside the 30-minute day-trip boundary and dense enough to be its own walk, but it is a different place with a different name and belongs to a separate pass rather than padded onto a Padova page."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Sofora del Giappone, Ponte di Brenta",
+      "species": "Styphnolobium japonicum",
+      "lat": 45.422491,
+      "lng": 11.938699,
+      "reason": "RAMI records it as not accessible to the public. Hard rule 10. Note it is a different tree from the Sofora at Corte Capitaniato / Via Galileo Galilei, which is a valid candidate."
+    },
+    {
+      "name": "Platano di Prato della Valle",
+      "species": "Platanus hispanica",
+      "reason": "CONFIRMED DEAD, 2026-08-06 verification pass. padovaoggi.it ('Morto anche l'ultimo platano di Prato della Valle a Padova') reports the square's plane grove was progressively removed from 1990 for disease, and the last surviving specimen was felled in 2011; its resident owl nest was relocated to another tree in the square. MASAF still lists a 'Platano di Prato della Valle', which is the register lagging reality by well over a decade. Never ship this entry; the species itself (planes) is otherwise represented in this city by the living Parco Treves specimens (pad_006, pad_007)."
+    },
+    {
+      "name": "Tasso di Prato della Valle (RAMI id 3256)",
+      "species": "Taxus baccata",
+      "lat": 45.398119,
+      "lng": 11.880021,
+      "reason": "Despite its RAMI name, this yew does NOT stand at Prato della Valle -- RAMI's own text places it in the grounds of the Centro Ignaziano di Cultura e Formazione Antonianum (Prato della Valle 56), a Jesuit cultural and formation centre. RAMI marks it 'Accessibile' but that field only means 'reachable', not 'open to the public without restriction'; a formation centre is very plausibly appointment-only or restricted-hours access. Not verified either way this pass -- checking santantonio.org-style opening information for the Antonianum specifically is the next step before this can ship. Held out rather than delivered because of the hard-rule-10 access question, not because of any doubt about the tree itself."
+    }
+  ]
+}

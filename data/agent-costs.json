@@ -242,6 +242,15 @@
     "tokens": 95723,
     "trees": 10,
     "note": "self-reported 60,000, actually 95,723: agent estimates are not a meter, log the harness number"
+   },
+   {
+    "target": "Padova",
+    "kind": "verify",
+    "tokens": 156789,
+    "trees": 0,
+    "note": "chain retest. Harness number, not the pass's own estimate of 110k (it was 30 percent low). 9 verified to data/research, 0 to data/cities yet, stories still to write. Had a head start: an earlier pass on this city was interrupted and its findings were salvaged from the transcript first.",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

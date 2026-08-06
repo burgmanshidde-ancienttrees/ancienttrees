@@ -1,0 +1,211 @@
+[
+  {
+    "id": "pad_001",
+    "name": "The Goethe Palm",
+    "species": "European Fan Palm / Saint Peter's Palm (Chamaerops humilis)",
+    "age_estimate": "roughly 440 years",
+    "age_min": 400,
+    "age_max": 460,
+    "location": {
+      "address": "Orto Botanico di Padova, Via Orto Botanico 15, 35123 Padova",
+      "latitude": 45.399424,
+      "longitude": 11.881035,
+      "neighbourhood": "Orto Botanico (UNESCO World Heritage botanical garden, founded 1545)"
+    },
+    "verified_sources": [
+      "https://ilregistrodeglialberi.it/3248-palma-di-goethe-palma-di-san-pietro-padova-pd-veneto",
+      "Italian national register of monumental trees (MASAF), 'Palma di San Pietro', girth 4.5 m, coordinates 45.39943,11.88105 (matches RAMI to within 15 m)"
+    ],
+    "access": "Paid entry (Orto Botanico admission ticket required; exact current price not verified this pass)",
+    "transport": "~1.9 km / roughly 25-30 min walk from Padova railway station; nearest bus/tram stop not verified this pass",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "One of the first plants set in the ground when the Orto Botanico was laid out, historically dated to 1585 by the garden's own records (RAMI: 'una delle prime piante messe a dimora nel 1585 pochi anni dopo da quando fu realizzato l'Orto Botanico'). Health status 'Buona' (good) per RAMI, last updated 25/07/2026. It is a polycormic clump of roughly 25 stems, each about 50 cm in girth, kept inside a purpose-built glass enclosure (the Ortus Sphaericus / octagonal greenhouse) to protect it from frost. Named for Johann Wolfgang von Goethe, who saw it on his 1786 Italian journey and wrote about it in his botanical work on plant metamorphosis; a descriptive panel at the tree tells this story. Two register names for one tree: MASAF calls it 'Palma di San Pietro', RAMI's page title is 'Palma di Goethe / Palma di San Pietro' -- same specimen, coordinates match within 15 metres. Good story hook: a single dwarf palm credited with helping inspire Goethe's theory of plant metamorphosis."
+  },
+  {
+    "id": "pad_002",
+    "name": "The Oriental Plane of the Orto Botanico",
+    "species": "Oriental Plane (Platanus orientalis)",
+    "age_estimate": "roughly 345 years",
+    "age_min": 320,
+    "age_max": 370,
+    "location": {
+      "address": "Orto Botanico di Padova, Via Orto Botanico 15, 35123 Padova",
+      "latitude": 45.399199,
+      "longitude": 11.879813,
+      "neighbourhood": "Orto Botanico (arboretum section)"
+    },
+    "verified_sources": [
+      "https://ilregistrodeglialberi.it/3247-platano-orientale-dellorto-botanico-platano-orientale-padova-pd-veneto",
+      "Independent corroboration via web search of Italian travel/garden-history sources describing the same tree, planted 1680, hollow trunk from a lightning strike, still living (searched 2026-08-06; multiple independent Italian tourism/garden pages, titles not individually re-verified against RAMI age math but agreeing on the 1680 planting date and lightning-hollowed trunk)"
+    ],
+    "access": "Paid entry (Orto Botanico admission ticket required)",
+    "transport": "~1.9 km / roughly 25-30 min walk from Padova railway station; nearest bus/tram stop not verified this pass",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "RAMI dates planting to 1680 per the garden's own visitor leaflet, giving an age of 346 years as of the 25/07/2026 update. Species is genuinely uncommon in Italy (Platanus orientalis is only considered native in small pockets of Calabria and Sicily; almost everything called 'plane tree' elsewhere is the hybrid Platanus x hispanica/acerifolia), which is worth stating clearly so it is not confused with the common London Plane entries elsewhere in this city. Trunk is hollow from the base up after a lightning strike but the tree still leafs out normally, conduction tissue running through the outer wood. Girth 6.2 m, height ~24.8 m per RAMI's 2021 measurement. Health 'Buona'. Flagged only because the second source is a web-search corroboration of general facts rather than a second named register/document; worth a stronger citation (e.g. the university's own Orto Botanico website) before this ships if the writer wants belt and braces, but the two sources agree independently on the same distinctive facts (1680, lightning-hollowed, still alive), which is a low-fabrication-risk profile."
+  },
+  {
+    "id": "pad_003",
+    "name": "The Grafted Ginkgo of the Orto Botanico",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "roughly 275 years",
+    "age_min": 260,
+    "age_max": 290,
+    "location": {
+      "address": "Orto Botanico di Padova, Via Orto Botanico 15, 35123 Padova",
+      "latitude": 45.399344,
+      "longitude": 11.880541,
+      "neighbourhood": "Orto Botanico"
+    },
+    "verified_sources": [
+      "https://ilregistrodeglialberi.it/3251-ginkgo-padova-pd-veneto",
+      "Independent corroboration via web search of Italian/English garden-history sources describing the same 1750 planting as among the first ginkgo trees introduced to Italy (searched 2026-08-06)"
+    ],
+    "access": "Paid entry (Orto Botanico admission ticket required)",
+    "transport": "~1.9 km / roughly 25-30 min walk from Padova railway station; nearest bus/tram stop not verified this pass",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Planted 1750 as a male ginkgo, one of the first of the species brought to Italy (RAMI says possibly the first in Italy, and the second in Europe after Utrecht's 1727 tree). The genuinely good story: in the mid-19th century a female branch was grafted onto this male tree, so it is one of very few ginkgos anywhere that both sheds pollen and bears the foul-smelling fruit, on the same trunk. Health 'Sufficiente' (adequate, not great) per RAMI's 25/07/2026 update; girth ~4.0 m, height ~17-20 m. Note there is a second, younger, ungrafted-story ginkgo in the same garden ('Ginko dell'Orto Botanico n. 2', RAMI id 14476, coords 45.399534,11.881069, no age on record) which is NOT this tree and was not separately verified or delivered this pass; leave as a lead if the writer wants a second ginkgo."
+  },
+  {
+    "id": "pad_004",
+    "name": "The 1786 Magnolia of the Orto Botanico",
+    "species": "Southern Magnolia (Magnolia grandiflora)",
+    "age_estimate": "roughly 240 years",
+    "age_min": 220,
+    "age_max": 260,
+    "location": {
+      "address": "Orto Botanico di Padova, Via Orto Botanico 15, 35123 Padova",
+      "latitude": 45.399013,
+      "longitude": 11.88061,
+      "neighbourhood": "Orto Botanico (arboretum)"
+    },
+    "verified_sources": [
+      "https://ilregistrodeglialberi.it/3252-magnolia-padova-pd-veneto",
+      "Independent corroboration via web search of Italian garden-history sources citing the same 1786 planting date and describing it as among the oldest Magnolia grandiflora specimens in Europe (searched 2026-08-06)"
+    ],
+    "access": "Paid entry (Orto Botanico admission ticket required)",
+    "transport": "~1.9 km / roughly 25-30 min walk from Padova railway station; nearest bus/tram stop not verified this pass",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Planted 1786 per the garden's own visitor leaflet (cited by RAMI), one of the first Magnolia grandiflora introduced to Italy and reportedly among the oldest specimens of the species standing in Europe. Health 'Buona'. Girth measurements on file range from 2.22 m (a 2000-era document RAMI flags as needing updating) to 2.54 m (2026 remeasurement); crown spread ~13 m. IMPORTANT: do not conflate with pad_005 below (Magnolia del Santo) -- three different magnolias turn up in Padova sources with three different dates (1786 here, 1810 at the Basilica, plus a 'Magnolia del Santo' age of 216 years which is roughly consistent with 1810). Keep them as separate entries."
+  },
+  {
+    "id": "pad_005",
+    "name": "The Magnolia of the Saint",
+    "species": "Southern Magnolia (Magnolia grandiflora)",
+    "age_estimate": "roughly 215 years",
+    "age_min": 200,
+    "age_max": 230,
+    "location": {
+      "address": "Chiostro della Magnolia, Basilica di Sant'Antonio, Piazza del Santo, 35123 Padova",
+      "latitude": 45.401106,
+      "longitude": 11.880853,
+      "neighbourhood": "Piazza del Santo, adjoining the Basilica di Sant'Antonio"
+    },
+    "verified_sources": [
+      "https://ilregistrodeglialberi.it/3254-magnolia-padova-pd-veneto",
+      "MASAF national register of monumental trees, coordinates 45.40102,11.88085, girth 4.4 m (matches RAMI location within 25 m)",
+      "https://www.santantonio.org/it/content/chiostro-della-magnolia-0 (via web search 2026-08-06, confirms the cloister is named for this magnolia, planted 1810)"
+    ],
+    "access": "The cloister sits inside the Basilica's museum complex, reached on the combined museum-sites ticket (per santantonio.org: Tue-Sun 09:00-13:00 and 14:00-18:00, closed Mondays; full-price ticket quoted at EUR 10 / reduced EUR 7 as of the 2026-08-06 search, not independently re-verified at the ticket office)",
+    "transport": "~1.7 km / roughly 25 min walk from Padova railway station; nearest bus/tram stop not verified this pass",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Officially on Italy's Elenco degli Alberi Monumentali d'Italia (AMI code 01/G224/PD/05, per RAMI, Legge 10/2013 art. 7). Stands at the centre of the Chiostro della Magnolia (also called Chiostro del Capitolo), the first cloister of the Basilica di Sant'Antonio, a UNESCO-linked 13th-century pilgrimage church. Branches low from the trunk and partly rest on the ground, giving the crown a hedge-like spread. Girth 4.4-4.6 m, height ~25 m, health 'Buona'. Age (216 years, last updated 25/07/2026) is consistent with the 1810 planting date given by the Basilica's own site. Genuinely distinct tree from pad_004 (the 1786 magnolia in the Orto Botanico, 300 m away) -- do not merge."
+  },
+  {
+    "id": "pad_006",
+    "name": "The Great Plane of Parco Treves",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "roughly 155 years",
+    "age_min": 140,
+    "age_max": 170,
+    "location": {
+      "address": "Parco Treves de' Bonfili, Via Beato Pellegrino, 35137 Padova",
+      "latitude": 45.402614,
+      "longitude": 11.885085,
+      "neighbourhood": "Parco Treves de' Bonfili, on Padova's 16th-century Venetian walls"
+    },
+    "verified_sources": [
+      "https://ilregistrodeglialberi.it/14470-platano-parco-treves-n-1-platano-comune-padova-pd-veneto",
+      "MASAF national register of monumental trees, coordinates 45.40210,11.88527, girth 6.2 m (matches RAMI location within 60 m)",
+      "https://it.wikipedia.org/wiki/Parco_Treves_de'_Bonfili and artbonus.gov.it/490-parco-treves.html (via web search 2026-08-06, park history: designed by Giuseppe Jappelli 1829-35, first designed park in Padova, restored 1996-2000, under Soprintendenza protection since 1940)"
+    ],
+    "access": "Free, public park",
+    "transport": "~1.6 km / roughly 24 min walk from Padova railway station; nearest bus/tram stop not verified this pass",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "The larger of two monumental planes in Parco Treves, on Italy's national Elenco Alberi Monumentali (AMI code 06/G224/PD/05). Girth 6.37 m (2022 measurement), height ~48 m, which RAMI calls the exceptional feature. Health 'Sufficiente'. Park designed 1829-35 by Giuseppe Jappelli for the Treves de' Bonfili brothers as Padova's first landscaped public-style garden, originally a private botanical garden and one of the first in Italy; only three original structures survive (a neoclassical temple, the gardener's house, a caryatid shrine). Sits within about 60 metres of pad_007 and pad_008 below, an easy three-tree cluster inside one small park."
+  },
+  {
+    "id": "pad_007",
+    "name": "The Second Plane of Parco Treves",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "roughly 150 years (undated by the register; estimated from its companion tree)",
+    "age_min": 120,
+    "age_max": 170,
+    "location": {
+      "address": "Parco Treves de' Bonfili, Via Beato Pellegrino, 35137 Padova",
+      "latitude": 45.402189,
+      "longitude": 11.885573,
+      "neighbourhood": "Parco Treves de' Bonfili"
+    },
+    "verified_sources": [
+      "https://ilregistrodeglialberi.it/14472-platano-parco-treves-n-2-platano-comune-padova-pd-veneto",
+      "MASAF national register of monumental trees, coordinates 45.40199,11.88528, girth 5.0 m (matches RAMI location within 55 m)"
+    ],
+    "access": "Free, public park",
+    "transport": "~1.6 km / roughly 25 min walk from Padova railway station; nearest bus/tram stop not verified this pass",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Second-largest of the Parco Treves planes, also on the national Elenco Alberi Monumentali (AMI code 03/G224/PD/05). Girth 5.05 m (2022 measurement). Health 'Buona'. RAMI records no age for this specimen; flagged because age_estimate here is an inference from its companion tree (pad_006, ~156 years, same park, similar planting campaign) rather than a directly sourced figure -- state it as an estimate, not a fact, if this ships. Everything else (species, location, monumental-register status) is independently confirmed by two sources."
+  },
+  {
+    "id": "pad_008",
+    "name": "The Leaning Hackberry of Parco Treves",
+    "species": "Common Hackberry (Celtis occidentalis)",
+    "age_estimate": "not established by the register; mature/monumental by form rather than measured age",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Parco Treves de' Bonfili, Via Beato Pellegrino, 35137 Padova",
+      "latitude": 45.401686,
+      "longitude": 11.885283,
+      "neighbourhood": "Parco Treves de' Bonfili"
+    },
+    "verified_sources": [
+      "https://ilregistrodeglialberi.it/14483-bagolaro-sdraiato-del-parco-treves-bagolaro-padova-pd-veneto",
+      "MASAF national register of monumental trees, coordinates 45.40169,11.88528, girth 1.6 m (matches RAMI location within 20 m)"
+    ],
+    "access": "Free, public park",
+    "transport": "~1.7 km / roughly 26 min walk from Padova railway station; nearest bus/tram stop not verified this pass",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Called the 'bagolaro sdraiato' (leaning/reclining hackberry). On the national Elenco Alberi Monumentali (AMI code 04/G224/PD/05) not for size but for its unusual habit: RAMI's own note is that its dimensions are unremarkable for the species and it was designated for form/habit, vegetal architecture and landscape value. IMPORTANT CAVEAT: an earlier, unverified research note (data/leads/padova.json) claimed this tree was 'brought down by a storm in the 1950s and still growing horizontally' -- that specific story is NOT corroborated by the RAMI page text fetched this pass, which only speaks generally about its low, spreading form. Do not print the storm anecdote as fact unless a further source confirms it; it may be true but this pass could not verify it independently. Health 'Sufficiente'. Girth 1.6 m per MASAF."
+  },
+  {
+    "id": "pad_009",
+    "name": "The Sophoras of Piazza Capitaniato",
+    "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+    "age_estimate": "roughly 165 years",
+    "age_min": 150,
+    "age_max": 175,
+    "location": {
+      "address": "Piazza Capitaniato, 35139 Padova",
+      "latitude": 45.407987,
+      "longitude": 11.87206,
+      "neighbourhood": "Piazza Capitaniato, the University of Padova's historic Palazzo del Capitanio square"
+    },
+    "verified_sources": [
+      "https://ilregistrodeglialberi.it/14318-sofora-del-giappone-di-corte-capitaniato-n-1-sofora-del-giappone-padova-pd-veneto",
+      "https://unalberoalgiorno.blog/2018/05/13/le-sofore-di-piazza-capitaniato/ and padovaoggi.it local history coverage of Piazza Capitaniato (via web search 2026-08-06), independently dating the square's Sophora japonica trees to 1861"
+    ],
+    "access": "Free, open public square",
+    "transport": "~1.1 km / roughly 17 min walk from Padova railway station; nearest bus/tram stop not verified this pass",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "RAMI lists two Sophora japonica trees a few metres apart along the square's median axis, 'Sofora del Giappone di Corte Capitaniato n. 1' (RAMI id 14318, girth 4.6 m, age ~165y, health 'Sufficiente') and 'Sophora di Piazza Capitaniato #2' (RAMI id 14940, no age on file, health 'Buona'), only about 20 metres apart -- folded here into one entry per the register-twins rule since a visitor sees them as one planting. Independent local history sources (unalberoalgiorno.blog, a Padova botany blog; padovaoggi.it) date the square's Sophora planting to 1861, which lines up with RAMI's calculated age. Piazza Capitaniato was originally the courtyard of the 14th-century Carrarese palace (Corte Capitaniato), now the University of Padova's Palazzo del Capitanio / Liviano square -- open, public, unrestricted access. IMPORTANT: this is a DIFFERENT tree from the Sofora del Giappone at Ponte di Brenta (RAMI id 15747, coords 45.422491,11.938699), which data/leads/padova.json already correctly lists as blocked (RAMI marks it 'Non accessibile' / not accessible to the public). Do not confuse the two -- they share a species and a generic name only. Flagged because n.2's age is unconfirmed and the fold-into-one-entry judgement call should be reviewed by the writer."
+  }
+]
