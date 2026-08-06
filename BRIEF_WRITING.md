@@ -1,0 +1,61 @@
+# The writing pass rulebook
+
+A writing pass turns verified facts into publishable tree entries, 15 to 20
+trees per pass, across cities. Batching is the point: the tone calibration is
+read once and amortized over every story, which is what makes writing cost a
+few thousand tokens per tree instead of twenty.
+
+Input: one or more `data/research/<slug>-verified.json` files (arrays of tree
+objects with `verify_notes` and `verified_sources`, no `story`).
+Output: the same files with `story` and, where honest, `best_time` filled in,
+and `verify_notes` removed. You change no other field: the facts are already
+verified, and prose that contradicts a verified field is a writing error.
+
+Read TONE_OF_VOICE.md in full before the first story (it is short; Paris is the
+calibration standard). Do not read CLAUDE.md.
+
+## The story
+
+150 to 250 words. Direct, specific, slightly vivid: Scott Galloway meets nature
+writing. Lead with the most surprising fact in `verify_notes`. Include what the
+tree has witnessed historically. Where sources disagree, the story says so in
+plain words; stating a range or a dispute honestly reads better than false
+confidence.
+
+Never use: "hidden gem", "must-see", "breathtaking", "nestled". Never use em
+dashes, anywhere, in any field. No fill-in-the-city-name templating: every
+story is written from this tree's own facts.
+
+Flagged trees keep their hedged phrasing: "by that tradition", "a 1913 monument
+claims", "somewhere between". The flag is in the data; the honesty must also be
+in the prose.
+
+## best_time, only when real
+
+A tree gets `best_time` only when it has a genuine seasonal peak a visitor
+would notice on the day: blossom, autumn colour, fruit or mast underfoot, or a
+veteran's bare winter architecture. One per tree, its strongest moment:
+
+```json
+"best_time": {"months": [11], "kind": "autumn colour", "label": "late November, when the ginkgo turns gold"}
+```
+
+`kind` is one of: `flowers`, `fruit`, `autumn colour`, `catkins`,
+`fresh leaves`, `bare silhouette`. The label says what actually happens, not
+just a month. An evergreen or a tree that looks the same all year gets no
+`best_time` at all: scarcity is what makes the badge worth anything, and an
+empty field is a correct answer.
+
+## Species names
+
+One canonical common name per species, nationality-neutral, matching what other
+cities already use (Quercus robur is "Pedunculate Oak", never "English Oak";
+Platanus x acerifolia is "London Plane"). If unsure, grep data/cities/ for the
+Latin name and copy the existing common name; the build fails on one species
+under two names.
+
+## What happens after you
+
+The main session merges your output into the city files, fixes any count
+promises in existing copy, rebuilds and runs QA. You do not merge, build or
+commit. Return the filled-in cost line your brief asks for.
