@@ -21,6 +21,7 @@ exhausted AGENT hunts stands untouched.
 """
 import glob
 import json
+import math
 import os
 import re
 import sys
@@ -203,6 +204,59 @@ def inat_candidates(tree):
     return out[:6]
 
 
+WD_CACHE = os.path.join(ROOT, "data", "wikidata-tree-images.json")
+WD_RADIUS_M = 15
+_WD = []
+
+
+def haversine_m(a, b):
+    R = 6371000.0
+    p1, p2 = math.radians(a[0]), math.radians(b[0])
+    dp = p2 - p1
+    dl = math.radians(b[1] - a[1])
+    x = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * R * math.asin(math.sqrt(x))
+
+
+def wikidata_candidates(tree):
+    """The Commons photo Wikidata attaches to the tree standing at this spot.
+
+    The only source here that matches an ENTITY rather than a string: Wikidata
+    says this item is that tree and this is its picture. That is why it finds
+    Commons photographs our own text search misses, and why it needs no place
+    tokens.
+
+    15 metres, and only when exactly one candidate is in range. Both numbers are
+    measured rather than chosen: at 200 m the match count looks twice as good
+    and is largely wrong, pairing Padua's Goethe Palm with a magnolia cloister
+    in the same garden. A dense garden is precisely where this would attach the
+    wrong photograph, so an ambiguous match is dropped rather than guessed, and
+    the viewing pass still looks at the pixels afterwards."""
+    if not _WD:
+        try:
+            _WD.append(json.load(open(WD_CACHE))["trees"])
+        except Exception:
+            _WD.append([])
+            print("    no wikidata cache; run scripts/wikidata_trees.py", file=sys.stderr)
+    loc = tree["location"]
+    here = (loc["latitude"], loc["longitude"])
+    near = [w for w in _WD[0]
+            if abs(w["latitude"] - here[0]) < 0.01 and abs(w["longitude"] - here[1]) < 0.01
+            and haversine_m(here, (w["latitude"], w["longitude"])) <= WD_RADIUS_M]
+    if len(near) != 1:
+        return []
+    w = near[0]
+    try:
+        found = imageinfo([w["commons"]])
+    except Exception as e:
+        print(f"    wikidata imageinfo failed: {e}", file=sys.stderr)
+        return []
+    for f in found:
+        f["source"] = f"wikidata/{w['qid']}"
+        f["title"] = f"{w['commons']} (Wikidata {w['qid']})"
+    return found
+
+
 OPENVERSE_API = "https://api.openverse.org/v1"
 _OV_TOKEN = []
 
@@ -340,7 +394,10 @@ def candidates_for(tree, city=""):
         commons = []
     # Commons first (a named, categorized photo is the strongest identity
     # signal there is), then iNaturalist, then Openverse where both are thin.
-    return commons + inat_candidates(tree) + openverse_candidates(tree, city, places)
+    # Wikidata first: an entity-to-image link is the strongest identity signal
+    # available, stronger even than a Commons category.
+    return (wikidata_candidates(tree) + commons + inat_candidates(tree)
+            + openverse_candidates(tree, city, places))
 
 
 def main():
