@@ -203,13 +203,111 @@ def inat_candidates(tree):
     return out[:6]
 
 
+OPENVERSE_API = "https://api.openverse.org/v1"
+_OV_TOKEN = []
+
+
+def openverse_token():
+    """OAuth2 token from the credentials in the environment, fetched once.
+
+    Anonymous Openverse allows 200 requests a day and there are ~390 photo-less
+    trees, so the key is the difference between a sweep and two days of sweeps:
+    verified credentials lift it to 100/min and 10,000/day. Absent credentials
+    are not an error, the source is simply skipped, exactly like the other
+    optional secrets in this project."""
+    if _OV_TOKEN:
+        return _OV_TOKEN[0]
+    cid = os.environ.get("OPENVERSE_CLIENT_ID")
+    sec = os.environ.get("OPENVERSE_CLIENT_SECRET")
+    if not cid or not sec:
+        _OV_TOKEN.append(None)
+        return None
+    body = urllib.parse.urlencode({
+        "client_id": cid, "client_secret": sec,
+        "grant_type": "client_credentials"}).encode()
+    req = urllib.request.Request(
+        f"{OPENVERSE_API}/auth_tokens/token/", data=body,
+        headers={"Content-Type": "application/x-www-form-urlencoded",
+                 "User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=25) as r:
+            _OV_TOKEN.append(json.load(r).get("access_token"))
+    except Exception as e:
+        print(f"    openverse auth failed: {e}", file=sys.stderr)
+        _OV_TOKEN.append(None)
+    return _OV_TOKEN[0]
+
+
+def openverse_candidates(tree, city, places):
+    """Openly licensed photos from Openverse, which aggregates Flickr and more.
+
+    The third source, added 2026-08-06 because Commons and iNaturalist both came
+    back empty for Rome. Kept, but do not expect much from it: measured the day
+    it was added, it produced **0 candidates across 49 photo-less trees** in
+    Rome, Lisbon, Porto, Padua, London and Brussels.
+
+    The reason is structural and worth remembering before anyone tries a fourth
+    text-only source. Openverse has neither coordinates nor taxonomy, so text is
+    the only thing to match on, and our tree names are our own inventions: no
+    photograph anywhere is titled "The Podocarp of Villa Sciarra". Searching the
+    place instead does return plenty (65 images for Villa Sciarra) and they are
+    photographs of monuments, market stalls and bronze busts. Feeding those to a
+    viewing pass is exactly the 43k-tokens-per-photo waste the geographic filter
+    was written to stop.
+
+    It stays because a sweep costs one request per tree against a 10,000/day
+    limit, and a well-titled Flickr upload will occasionally match both a plant
+    word and a place word. It is not the answer to the photo gap."""
+    tok = openverse_token()
+    if not tok:
+        return []
+    name = str(tree.get("name") or "").replace("The ", "", 1)
+    q = urllib.parse.urlencode({
+        "q": f"{name} {city}".strip(),
+        "license": "cc0,by,by-sa",
+        "page_size": 8,
+    })
+    req = urllib.request.Request(
+        f"{OPENVERSE_API}/images/?{q}",
+        headers={"Authorization": f"Bearer {tok}", "User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=25) as r:
+            d = json.load(r)
+    except Exception as e:
+        print(f"    openverse failed: {e}", file=sys.stderr)
+        return []
+    out = []
+    plant = tree_tokens(tree)
+    for it in d.get("results", []):
+        hay = f"{it.get('title') or ''} {it.get('tags') or ''}".lower()
+        # BOTH, not either. Openverse has no coordinates and no taxonomy, so
+        # text is the only signal there is: a place query alone returns the
+        # square's market stalls and its bronze busts, and a species query alone
+        # returns that species on another continent. Requiring the plant and the
+        # place together is the only honest filter available here.
+        if not (any(p in hay for p in places) and any(t in hay for t in plant)):
+            continue
+        lic = (it.get("license") or "").upper()
+        out.append({
+            "title": f"Openverse: {it.get('title') or it.get('id')}",
+            "thumb": it.get("thumbnail") or it.get("url"),
+            "url": it.get("foreign_landing_url") or it.get("url"),
+            "licence": f"CC {lic} {it.get('license_version') or ''}".strip(),
+            "author": (it.get("creator") or "")[:120],
+            "source": f"openverse/{it.get('source')}",
+        })
+    return out[:5]
+
+
 def candidates_for(tree, city=""):
     loc = tree["location"]
     named, nearby = [], []
+    # Hoisted out of the try below: Openverse uses it too, so a Commons outage
+    # must not leave it undefined.
+    places = place_tokens(tree, city)
     try:
         d = api({"action": "query", "list": "search", "srnamespace": "6",
                  "srsearch": tree["name"], "srlimit": "10"})
-        places = place_tokens(tree, city)
         # A hit earns its place by naming the plant AND the place. Dropping
         # everything rather than falling back to unfiltered hits is deliberate:
         # an honest gap costs nothing, and nine wrong-continent candidates cost
@@ -241,8 +339,8 @@ def candidates_for(tree, city=""):
         print(f"    imageinfo failed: {e}", file=sys.stderr)
         commons = []
     # Commons first (a named, categorized photo is the strongest identity
-    # signal there is), then iNaturalist fills where Commons is thin.
-    return commons + inat_candidates(tree)
+    # signal there is), then iNaturalist, then Openverse where both are thin.
+    return commons + inat_candidates(tree) + openverse_candidates(tree, city, places)
 
 
 def main():
