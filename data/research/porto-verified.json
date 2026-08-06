@@ -1,0 +1,187 @@
+[
+  {
+    "id": "por_011",
+    "name": "The Copper Beech of FAUP",
+    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+    "age_estimate": "100+ years",
+    "age_min": 100,
+    "age_max": 150,
+    "location": {
+      "address": "Faculdade de Arquitectura da Universidade do Porto (FAUP), Via Panorâmica Edgar Cardoso, Quinta do Gólgota, Porto",
+      "latitude": 41.150475,
+      "longitude": -8.635183,
+      "neighbourhood": "Lordelo do Ouro e Massarelos"
+    },
+    "story": "Architects travel to this campus for the buildings. The tree was here first. This copper beech grows in the gardens of the Quinta do Gólgota, the old estate that became the Faculty of Architecture of the University of Porto, a short walk from the Casa Cor-de-Rosa and the Pavilhão Carlos Ramos. Álvaro Siza began remodelling the site in 1984, and what he built here is one of the addresses the Escola do Porto is known by, visited by architecture students from all over. The beech was already more than sixty years old when the first drawings were made. It measures 4.85 metres around at chest height, stands 23 metres tall and carries a crown 20 metres across, all measured in 2020, the year Portugal's forest institute classified it a tree of public interest on the city council's proposal and with the University's agreement as owner. Copper beech is the purple-leaved form of the common European beech, planted through the 19th century by estate owners who wanted something on the lawn that was not green. This one has outlived the fashion, the estate and the family that paid for both, and it now spends its days being photographed by accident, in the background of somebody's shot of a Siza wall. Campus hours, no ticket.",
+    "best_time": {
+      "months": [
+        4,
+        5
+      ],
+      "kind": "fresh leaves",
+      "label": "late April and May, when the new leaves open translucent red before darkening"
+    },
+    "verified_sources": [
+      "ICNF national register (data/registers/portugal-icnf.json, processo AIP13121881I): girth 4.85m, age_register 100, last measured 2020, lugar 'Quinta do Gólgota, Via Panorâmica Edgar Cardoso'",
+      "https://noticias.up.pt/2020/11/20/arvores-da-faup-classificadas-como-de-interesse-publico/ (Universidade do Porto news, 2020-11-20): confirms the purple beech at Quinta do Gólgota/FAUP grounds, over 100 years old, classification agreed by the owner (University of Porto), sited in the gardens near Casa Cor-de-Rosa and Pavilhão Carlos Ramos"
+    ],
+    "access": "Free. Stands on the FAUP campus (Faculty of Architecture, University of Porto), a working academic campus rather than a public park; the Álvaro Siza-designed buildings here are a recognised architecture pilgrimage site and the grounds are walkable during campus hours.",
+    "transport": "STCP bus to Rua de Entre-Quintas / Via Panorâmica Edgar Cardoso, then a short walk onto the FAUP campus.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated"
+  },
+  {
+    "id": "por_012",
+    "name": "The Camphor Tree of Via Panorâmica",
+    "species": "Camphor Tree (Cinnamomum camphora)",
+    "age_estimate": "100+ years",
+    "age_min": 100,
+    "age_max": 150,
+    "location": {
+      "address": "Via Panorâmica Edgar Cardoso (roadside, former Quinta do Gólgota), Porto",
+      "latitude": 41.1488,
+      "longitude": -8.634986,
+      "neighbourhood": "Lordelo do Ouro e Massarelos"
+    },
+    "story": "The road came second. This camphor is very probably one of the original plantings of the Quinta do Gólgota, the 19th-century estate that Via Panorâmica Edgar Cardoso was later cut through, which makes it the survivor of a garden that has otherwise gone. Porto's city council says as much on its own record for the tree. Camphor is an East Asian evergreen, grown for the aromatic crystals distilled from its wood, and it reached Porto with the estate owners who collected the world's trees the way other people collected porcelain. This one measures around four metres in circumference at chest height and six at the base, stands 21 metres tall and spreads a crown roughly 20 metres wide. There is a healed wound low on the trunk, the kind a tree closes over decades, and the council records it as stable. Everything else around it has changed: the estate broken up, a scenic road driven along the Douro bluff, the Faculty of Architecture built next door, and the plot the tree stands on now in private hands with development potential on the municipal record. That last fact decides the visit. The land is not open and there is no way up to the trunk. You look at this tree from the pavement of the public road, and that is the whole of it. At that size it is enough, because from the roadside a camphor of four metres reads as a green wall.",
+    "verified_sources": [
+      "ICNF national register (data/registers/portugal-icnf.json, processo AIP13121882I): girth 4.25m, age_register 100, last measured 2020, lugar 'Via Panorâmica Edgar Cardoso'",
+      "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/canforeira-via-panoramica-edgar-cardoso (Porto city council, Ambiente): confirms species, over 100 years old, height 21m, crown 20m, perimeter at 1.3m of 4m"
+    ],
+    "access": "Free to view from the public road. The tree itself stands on a privately owned plot beside Via Panorâmica Edgar Cardoso (a public scenic road along the Douro bluff, next to the FAUP campus); the municipal source notes the plot has development potential, so view it from the pavement rather than entering the land.",
+    "transport": "STCP bus to Via Panorâmica Edgar Cardoso / Rua de Entre-Quintas, then a short walk along the road.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged"
+  },
+  {
+    "id": "por_013",
+    "name": "The Atlas Cedar of Quinta Primo Madeira",
+    "species": "Atlas Cedar (Cedrus atlantica)",
+    "age_estimate": "100+ years",
+    "age_min": 100,
+    "age_max": 150,
+    "location": {
+      "address": "Rua do Campo Alegre, nº 877, Quinta/Casa Primo Madeira (Pólo 3 da Universidade do Porto), Porto",
+      "latitude": 41.152678,
+      "longitude": -8.639039,
+      "neighbourhood": "Lordelo do Ouro e Massarelos"
+    },
+    "story": "Three named architects have worked on this small garden, and the trees outlasted every plan. Casa Primo Madeira is a late 19th-century palacete on Rua do Campo Alegre, built for the textile industrialist Primo Monteiro Madeira, altered for him by José Marques da Silva, then bought by the University of Porto and restored between 1986 and 1988 by Fernando Távora, with the garden itself remodelled by the landscape architect Francisco Caldeira Cabral. Through all of it the Atlas cedar stayed exactly where it was. On 30 November 2004 Portugal's official gazette classified it a tree of public interest together with two neighbours on the same lawn, a tulip tree and a plane, which is a high concentration of protected trees for a garden this size. The cedar measures 4.05 metres around at chest height and stands about 20 metres tall, with a crown roughly as wide as it is high. Cedrus atlantica comes from the Atlas Mountains of Morocco and Algeria, where it is now classed as endangered in the wild while growing untroubled in park after European park, an inversion that says more about grazing and logging at home than about the tree. The house is Pólo 3 of the University today. Walk in during university hours, stand on the lawn, and all three protected trees are in sight at once.",
+    "verified_sources": [
+      "ICNF national register (data/registers/portugal-icnf.json, processo KNJ1/443): girth 4.05m, age_register 100, classified D.R. n.º281 II Série de 30/11/2004, lugar 'Jardim da Casa do Professor'",
+      "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/cedro-do-atlas-quinta-primo-madeira (Porto city council, Ambiente): same girth (4.05m at 1.3m height), height 20m, crown 20m, address Rua do Campo Alegre nº877, Quinta Primo Madeira, over 100 years old, privately owned"
+    ],
+    "access": "Free during university hours. Casa Primo Madeira is Pólo 3 of the University of Porto, a late-19th-century palacete restored 1986-88 by architect Fernando Távora with its garden remodelled by landscape architect Francisco Caldeira Cabral; it is an academic building on a walkable campus, and opened its doors to the public for Open House Porto in 2019.",
+    "transport": "STCP bus along Rua do Campo Alegre; a 10-15 minute walk from the Jardim Botânico do Porto entrance.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated"
+  },
+  {
+    "id": "por_014",
+    "name": "The Tulip Tree of Quinta Primo Madeira",
+    "species": "Tulip Tree (Liriodendron tulipifera)",
+    "age_estimate": "100+ years",
+    "age_min": 100,
+    "age_max": 150,
+    "location": {
+      "address": "Rua do Campo Alegre, nº 877, Quinta/Casa Primo Madeira (Pólo 3 da Universidade do Porto), Porto",
+      "latitude": 41.1526,
+      "longitude": -8.6394,
+      "neighbourhood": "Lordelo do Ouro e Massarelos"
+    },
+    "story": "The crown of this tulip tree is wider than the tree is tall: 23.5 metres across against 21 metres of height. That shape only happens when a tree spends a century with nothing crowding it, which is precisely what the garden of Casa Primo Madeira has given it. Its trunk measures 4.35 metres around, and it was classified a tree of public interest on 30 November 2004, in the same gazette notice as the Atlas cedar and the plane standing a few paces away. Porto has more than one enormous Liriodendron tulipifera, which regularly confuses people. The famous one grows at Casa Tait in the Jardins do Palácio de Cristal, protected since 1950 and considerably older. This is a different tree in a different garden about 750 metres away, planted during the same 19th-century wave of estate collecting that filled this hillside with species from other continents. Tulip trees are the tallest hardwoods of the eastern American forests and among the earliest of them to reach European gardens. The flowers, greenish with an orange band and genuinely tulip-shaped, open in June high in the crown where most visitors never spot them. The moment that carries across the whole garden comes later in the year, when a canopy that wide turns clear yellow all at once and then lets it go.",
+    "best_time": {
+      "months": [
+        10,
+        11
+      ],
+      "kind": "autumn colour",
+      "label": "late October into November, when the whole crown turns clear yellow at once"
+    },
+    "verified_sources": [
+      "ICNF national register (data/registers/portugal-icnf.json, processo KNJ1/444): girth 4.35m, age_register 100, classified D.R. n.º281 II Série de 30/11/2004, lugar 'Jardim da Casa do Professor'",
+      "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/tulipeiro-da-virginia-quinta-primo-madeira (Porto city council, Ambiente): same girth (4.35m at 1.3m height), height 21m, crown 23.5m, address Rua do Campo Alegre nº877, Quinta Primo Madeira, over 100 years old, privately owned"
+    ],
+    "access": "Free during university hours, same site as por_013 (Casa Primo Madeira, Pólo 3 of the University of Porto).",
+    "transport": "STCP bus along Rua do Campo Alegre; a 10-15 minute walk from the Jardim Botânico do Porto entrance.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated"
+  },
+  {
+    "id": "por_015",
+    "name": "The London Plane of Quinta Primo Madeira",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "100+ years",
+    "age_min": 100,
+    "age_max": 150,
+    "location": {
+      "address": "Rua do Campo Alegre, nº 877, Quinta/Casa Primo Madeira (Pólo 3 da Universidade do Porto), Porto",
+      "latitude": 41.1532,
+      "longitude": -8.6396,
+      "neighbourhood": "Lordelo do Ouro e Massarelos"
+    },
+    "story": "At 6.4 metres around, this plane carries one of the thickest trunks measured anywhere in Porto. It is also the shortest of the three protected trees in the garden of Casa Primo Madeira, 17 metres tall against a crown 25 metres wide, which is the profile of a tree that never had to compete for light and put its growth sideways instead. Planes are the standard street tree of half of Europe and get treated accordingly: pollarded back to knuckles every few winters, cut clear of tram wires, kept to whatever size a pavement can hold. This one was left alone behind a wall for a century, and that difference is the reason to go and look at it. Portugal's official gazette classified it a tree of public interest on 30 November 2004, in one notice with the Atlas cedar and the tulip tree on the same lawn. The house behind it was built for the textile industrialist Primo Monteiro Madeira, acquired by the University of Porto, restored by Fernando Távora in the late 1980s, and now serves as Pólo 3, an academic building on a walkable campus that opened its doors to the public for Open House Porto in 2019. Come during university hours. The three trees stand within a minute of one another.",
+    "verified_sources": [
+      "ICNF national register (data/registers/portugal-icnf.json, processo KNJ1/445): girth 6.4m, age_register 100, classified D.R. n.º281 II Série de 30/11/2004, lugar 'Jardim da Casa do Professor'",
+      "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/platano-hibrido-quinta-primo-madeira (Porto city council, Ambiente): species Platanus x acerifolia ('plátano híbrido'), address Rua do Campo Alegre nº877, Quinta Primo Madeira, over 100 years old, classified via the same 2004 gazette notice"
+    ],
+    "access": "Free during university hours, same site as por_013/por_014 (Casa Primo Madeira, Pólo 3 of the University of Porto).",
+    "transport": "STCP bus along Rua do Campo Alegre; a 10-15 minute walk from the Jardim Botânico do Porto entrance.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated"
+  },
+  {
+    "id": "por_016",
+    "name": "The Horse Chestnut of Palacete Burmester",
+    "species": "Horse Chestnut (Aesculus hippocastanum)",
+    "age_estimate": "unknown, mature (100+ years by girth)",
+    "age_min": 100,
+    "age_max": 180,
+    "location": {
+      "address": "Jardim do Palacete Burmester ('Casa dos Livros'), grounds of the Faculdade de Ciências, Universidade do Porto, Rua do Campo Alegre 1055, Porto",
+      "latitude": 41.153089,
+      "longitude": -8.640417,
+      "neighbourhood": "Lordelo do Ouro e Massarelos"
+    },
+    "story": "Every conker in Europe descends from a handful of mountain ravines in Greece and Albania, the only places the horse chestnut still grows wild, and where the species is now classed as vulnerable. Everywhere else it is a planted tree, and this is one of Porto's. It stands in the garden of the Palacete Burmester, the house the University of Porto runs as the Casa dos Livros on the Faculty of Sciences campus, and in 2020 it was classified a tree of public interest along with three neighbours on the same lawn: a Himalayan cedar, a tulip tree and a yew. Four protected trees in one small garden is somebody's collection rather than an accident. How old this one is, nobody has written down. Neither Portugal's forest register nor the city council gives it a date. The register holds a single measurement, a trunk 3.15 metres around in 2020, which on this species means well over a century and stops being useful after that. So the honest version is a tree that is protected, mature and undated, and anyone quoting a year for it is guessing. The garden sits a few hundred metres from the Jardim Botânico do Porto, close enough that its redwood, its bischofias and its cedars belong on the same afternoon.",
+    "best_time": {
+      "months": [
+        9,
+        10
+      ],
+      "kind": "fruit",
+      "label": "September and October, when the conkers ripen and drop onto the lawn"
+    },
+    "verified_sources": [
+      "ICNF national register (data/registers/portugal-icnf.json, processo AIP13121885I): girth 3.15m, last measured 2020, no age on file, lugar 'FCUP - Faculdade de Ciências da Universidade do Porto'",
+      "https://ambiente.cm-porto.pt/destaque/porto-tem-mais-21-arvores-de-interesse-publico (Porto city council, Ambiente, coverage of the 2020/2021 ICNF classification round): names four specimens classified together in the garden of Palacete Burmester on FCUP grounds: horse chestnut, Himalayan cedar, tulip tree and yew"
+    ],
+    "access": "Free/low-cost. Palacete Burmester ('Casa dos Livros') is a University of Porto cultural centre within the Faculty of Sciences' green campus, reached on the same walk through the Campo Alegre botanical grounds as the already-published Jardim Botânico do Porto cluster (por_006/007/009/010), a few hundred metres east.",
+    "transport": "STCP bus to Rua do Campo Alegre; entrance beside the Jardim Botânico do Porto.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged"
+  },
+  {
+    "id": "por_017",
+    "name": "The Yew of Palacete Burmester",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "unknown, mature (large girth for the species)",
+    "age_min": 150,
+    "age_max": 300,
+    "location": {
+      "address": "Jardim do Palacete Burmester ('Casa dos Livros'), grounds of the Faculdade de Ciências, Universidade do Porto, Rua do Campo Alegre 1055, Porto",
+      "latitude": 41.153081,
+      "longitude": -8.641461,
+      "neighbourhood": "Lordelo do Ouro e Massarelos"
+    },
+    "story": "A yew with a trunk 5.8 metres around normally comes with a documented history. This one has none. Portugal's forest register took the measurement in 2020, classified the tree, and left the age column empty; the city council's announcement lists the yew among four protected specimens in the garden of the Palacete Burmester and gives no date either. That gap is better left open than filled in. Taxus baccata thickens slowly enough that trees of this girth elsewhere in Europe are routinely dated in the several hundreds of years, so it is reasonable to think this one is old. It is not honest to print a number. Yews also make their own dating difficult by hollowing at the centre as they age, taking with them exactly the rings anyone would want to count. What can be said plainly is this: the tree stands in a small garden on the Faculty of Sciences campus of the University of Porto, beside the Casa dos Livros and a few hundred metres from the Jardim Botânico do Porto, and the species is scarce in Portugal outside the northern mountains, which makes a specimen this size in a city garden unusual. Every part of it is poisonous except the red flesh around the seed. It is evergreen, so February looks much like August, which at least settles the question of when to come.",
+    "verified_sources": [
+      "ICNF national register (data/registers/portugal-icnf.json, processo AIP13121888I): girth 5.8m, last measured 2020, no age on file, lugar 'FCUP - Faculdade de Ciências da Universidade do Porto'",
+      "https://ambiente.cm-porto.pt/destaque/porto-tem-mais-21-arvores-de-interesse-publico (Porto city council, Ambiente): confirms a yew among the four specimens classified together in the garden of Palacete Burmester on FCUP grounds"
+    ],
+    "access": "Free/low-cost, same garden as por_016 (Palacete Burmester, FCUP campus, beside the Jardim Botânico do Porto).",
+    "transport": "STCP bus to Rua do Campo Alegre; entrance beside the Jardim Botânico do Porto.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged"
+  }
+]

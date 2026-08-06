@@ -272,6 +272,20 @@
         "tokens": 135275,
         "trees": 1,
         "note": "brief premise partly wrong (candidates were central Lisbon, not Ajuda; 4 of 5 already resolved by a prior pass), but surfaced a real 244m pin error on lis_005 corrected same session"
+      },
+      {
+        "target": "Porto",
+        "kind": "verify",
+        "tokens": 124973,
+        "trees": 7,
+        "note": "three adjoining university quintas along a 720m corridor east of the existing garden cluster, one flagged private-plot-viewed-from-road access case"
+      },
+      {
+        "target": "Porto",
+        "kind": "write",
+        "tokens": 85451,
+        "trees": 7,
+        "note": "7 stories in one context, no web fetches needed, 3 of 7 got an honest best_time"
       }
     ]
   }
