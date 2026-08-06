@@ -2,6 +2,12 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-06 (session, with Hidde) — The map page painted over its own text; fixed, and the smoke test learns to see geometry
+
+Hidde spotted it live: on /explore the map floated over the prose, with the "Cities in view" panel squeezed to a sliver behind it. Cause: this morning's SEO fix (8dd906b) added the prose section INSIDE `.explore-page`, which is a fixed-height flex column sized to exactly one screen. The 548px of prose squeezed the map/panel row down to 20px, and the map's own `min-height: 320px` made it overflow straight over the text that followed. Broken on desktop since that commit; the string-based smoke test could not see it because every element existed and every script ran.
+
+Fix, verified in the browser at desktop and 375px (map 568px/321px tall, overlap 0, prose below the fold): the app part (head plus map split) now sits in its own `.explore-app` wrapper that owns the one-screen height, and the prose flows after it, under the fold, where it was always meant to be. And the ratchet: the smoke test's local server now injects a measuring script into explore.html at test time (never shipped) that writes the map/prose overlap into the DOM, and the test fails on any overlap. CI can now see this bug class; the composition walk keeps the rest.
+
 ## 2026-08-06 (session, with Hidde) — The assembly line: tokens per tree get a werkwijze instead of a wish
 
 Hidde's brief: 32,870 tokens per tree is too much, runs leave on wrong premises, findings are not read back when they matter, and over-strict rule readings (Zaragoza) burn windows. Built in session, all reversible:

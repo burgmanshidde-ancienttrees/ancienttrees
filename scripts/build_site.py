@@ -374,7 +374,12 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .section-heading { font-family: var(--sans); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 1.5rem; }
 .prose { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; max-width: 640px; margin-bottom: 2.5rem; }
 .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2px; background: var(--cream-dark); border: 1px solid var(--cream-dark); margin-bottom: 3rem; }
-.explore-page { display: flex; flex-direction: column; height: calc(100vh - var(--header-h)); margin-top: var(--header-h); }
+.explore-page { margin-top: var(--header-h); }
+/* The app part (head + split) fills exactly one screen; anything after it, like
+   the prose section, lives below the fold. The prose used to sit INSIDE the
+   fixed-height flex column, which squeezed the split to 20px and let the map's
+   own min-height paint over the text that followed. */
+.explore-app { display: flex; flex-direction: column; height: calc(100vh - var(--header-h)); }
 .explore-split { display: flex; flex: 1; min-height: 0; }
 .ex-panel { width: 360px; flex-shrink: 0; overflow-y: auto; background: #fff; border-right: 1px solid var(--cream-dark); padding: 0.9rem; }
 .exc-cityhead { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; margin: 0.2rem 0.2rem 0.8rem; }
@@ -3944,14 +3949,16 @@ def build_explore_page(all_cities, pages, registers=None):
     cities_json = json.dumps(_city_rows)
     body = f"""
 <main class="explore-page">
-  <div class="explore-head">
-    <h1>The ancient tree map</h1>
-    <p>Every tree on the site, each verified, each with its story. Zoom in to a city and pick one; gold means at its best this month.</p>
-    {search_form("explore", "ex-q", "ex-search")}
-  </div>
-  <div class="explore-split">
-    <aside id="ex-panel" class="ex-panel" aria-live="polite"></aside>
-    <div id="map" class="explore-map"></div>
+  <div class="explore-app">
+    <div class="explore-head">
+      <h1>The ancient tree map</h1>
+      <p>Every tree on the site, each verified, each with its story. Zoom in to a city and pick one; gold means at its best this month.</p>
+      {search_form("explore", "ex-q", "ex-search")}
+    </div>
+    <div class="explore-split">
+      <aside id="ex-panel" class="ex-panel" aria-live="polite"></aside>
+      <div id="map" class="explore-map"></div>
+    </div>
   </div>
   {explore_prose}
 </main>
