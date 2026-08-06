@@ -304,6 +304,15 @@
         "note": "21 images viewed, 3 approved, 11 trees keep honest gaps. Harness number; the pass self-reported 118k. 39k per approved photo, better than the recorded 72k but still bad, and the cause is measurable: photo_hunt.py matched species names globally, so Porto's 18 candidates were Metrosideros in New Zealand and Atlas cedars in Slovenia and Poland.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Rome",
+        "kind": "verify",
+        "tokens": 164316,
+        "trees": 4,
+        "note": "Deepening pass, interrupted then resumed. Survived the interruption with all 4 trees on disk because BRIEF_RESEARCH.md now says append as you go, changed this morning after Padova banked zero. Seeds a second Rome walk (rom_019/rom_020 534m apart, 964m from published rom_009). The resume added no trees: it spent its budget proving the Scipioni hackberries have no second source and documenting them as a dead end, which is cheaper than a future pass repeating it.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
