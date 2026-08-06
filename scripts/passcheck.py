@@ -447,13 +447,24 @@ def main():
     arg = " ".join(args)
     _, inflight = load_inflight()
     if want_brief:
+        # --as <who> lets the claim HOLDER print the brief for its own pass;
+        # anyone else stays refused. Found five minutes after the lock shipped,
+        # when it refused its own author the Rome brief he had just claimed.
+        as_who = None
+        if "--as" in args:
+            i = args.index("--as")
+            as_who = args[i + 1]
+            del args[i:i + 2]
+            arg = " ".join(args)
         mine = claims_for(arg, inflight)
-        if mine:
+        if mine and mine[0].get("by") != as_who:
             c = mine[0]
             print(f"\nREFUSED: no brief for {arg}. It is claimed by "
                   f"{c.get('by', '?')} ({c['kind']}, {c['age_hours']}h ago).")
             print("A brief for a claimed place is how two passes end up doing the")
-            print("same work. Pick another target, or --release it if that pass is dead.")
+            print("same work. If this claim is YOURS, rerun with --as "
+                  f"{c.get('by', '<who>')}. Otherwise pick another target, or")
+            print("--release it if you know that pass is dead.")
             return 1
         return brief(arg, live)
 
