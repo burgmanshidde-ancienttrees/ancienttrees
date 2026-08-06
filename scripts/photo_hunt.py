@@ -22,6 +22,7 @@ exhausted AGENT hunts stands untouched.
 import glob
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -144,6 +145,64 @@ def place_tokens(tree, city):
     return words
 
 
+INAT_API = "https://api.inaturalist.org/v1/observations"
+
+
+def genus_of(tree):
+    """The genus from 'European Yew (Taxus baccata)' is 'Taxus'."""
+    m = re.search(r"\(([A-Z][a-z]+)", str(tree.get("species", "")))
+    return m.group(1) if m else None
+
+
+def inat_candidates(tree):
+    """CC-licensed iNaturalist photos of the same GENUS within 120 m of the pin.
+
+    Built 2026-08-06 on Hidde's ask for a better photo answer than agent
+    hunting (measured 43-72k tokens per usable photo) after Rome proved a
+    Commons dead end: one candidate across seven photo-less trees. iNaturalist
+    observations carry per-photo licences and their own coordinates, so a hit
+    both illustrates the tree and corroborates the pin. Genus within 120 m
+    rather than species exact, because observers often stop at genus for a
+    street tree; the viewing pass still judges identity against the Cadiz
+    standard, same as every other source. Obscured locations are skipped in
+    the spirit of hard rule 10: if the observer hid the spot, respect it."""
+    genus = genus_of(tree)
+    loc = tree["location"]
+    if not genus:
+        return []
+    q = urllib.parse.urlencode({
+        "lat": loc["latitude"], "lng": loc["longitude"], "radius": 0.12,
+        "taxon_name": genus, "photo_license": "cc0,cc-by,cc-by-sa",
+        "per_page": 10, "order_by": "votes",
+    })
+    req = urllib.request.Request(f"{INAT_API}?{q}", headers={"User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            d = json.load(r)
+    except Exception as e:
+        print(f"    inaturalist failed: {e}", file=sys.stderr)
+        return []
+    out = []
+    for o in d.get("results", []):
+        if o.get("geoprivacy") in ("obscured", "private"):
+            continue
+        taxon = (o.get("taxon") or {}).get("name", "")
+        for p in o.get("photos", [])[:2]:
+            code = p.get("license_code") or ""
+            if not code.startswith("cc"):
+                continue
+            out.append({
+                "title": f"iNat obs {o.get('id')} ({taxon})",
+                "thumb": (p.get("url") or "").replace("square", "medium"),
+                "url": f"https://www.inaturalist.org/observations/{o.get('id')}",
+                "licence": code.upper().replace("CC-", "CC "),
+                "author": (p.get("attribution") or "")[:120],
+                "source": "inaturalist",
+                "obs_location": o.get("location"),
+            })
+    return out[:6]
+
+
 def candidates_for(tree, city=""):
     loc = tree["location"]
     named, nearby = [], []
@@ -177,10 +236,13 @@ def candidates_for(tree, city=""):
             seen.add(t)
             uniq.append(t)
     try:
-        return imageinfo(uniq[:12])
+        commons = imageinfo(uniq[:12])
     except Exception as e:
         print(f"    imageinfo failed: {e}", file=sys.stderr)
-        return []
+        commons = []
+    # Commons first (a named, categorized photo is the strongest identity
+    # signal there is), then iNaturalist fills where Commons is thin.
+    return commons + inat_candidates(tree)
 
 
 def main():
