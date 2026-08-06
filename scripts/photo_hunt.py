@@ -28,6 +28,19 @@ import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def _aliases():
+    """Local spelling -> English name, shared with build_site.py and
+    passcheck.py via data/city-aliases.json. Commons files Padua as Padova."""
+    try:
+        with open(os.path.join(ROOT, "data", "city-aliases.json")) as fh:
+            return json.load(fh)["aliases"]
+    except Exception:
+        return {}
+
+
+ALIAS = _aliases()
 QUEUE = os.path.join(ROOT, "data", "photo-queue.json")
 API = "https://commons.wikimedia.org/w/api.php"
 UA = "AncientTreesBot/1.0 (https://ancienttrees.app; photo candidate sweep)"
@@ -92,13 +105,58 @@ def tree_tokens(tree):
     return words | GENERIC_TREE_WORDS
 
 
-def candidates_for(tree):
+STOPWORDS = {"the", "of", "and", "at", "in", "on", "a", "an", "de", "da", "do",
+             "del", "della", "di", "el", "la", "le", "les", "van", "der", "den"}
+
+
+def place_tokens(tree, city):
+    """GEOGRAPHIC words only: the city under every spelling it might be filed
+    as, plus the proper nouns of its address and neighbourhood.
+
+    The geosearch half of this sweep is bounded by a radius. The name search was
+    not bounded by anything, so it matched species names worldwide: all nine
+    candidates for Porto's Metrosidero were Metrosideros in New Zealand, and all
+    nine for its Atlas Cedar were cedars in Slovenia, Poland and Bulgaria.
+    Eighteen candidates that could never be approved, paid for at viewing-pass
+    rates.
+
+    Words from the tree's own name are deliberately NOT used. They read as
+    distinctive and are not: "The Magnolia of the Saint" matched a magnolia in
+    Saint Louis and another beside Saint-Malo church, and "The Metrosidero of
+    the Library" matched Devonport Library in New Zealand. Only a place name
+    ties a photograph to a place."""
+    species = {w.strip("().,").lower()
+               for w in str(tree.get("species", "")).split()}
+    words = set()
+    # the city under both spellings, because Commons files Padua as Padova and
+    # Genoa as Genova; data/city-aliases.json already holds those pairs
+    for name in {city} | {k for k, v in ALIAS.items()
+                          if v.lower() == str(city).lower()}:
+        if name:
+            words.add(str(name).lower())
+    loc = tree.get("location") or {}
+    for extra in (loc.get("neighbourhood"), loc.get("address")):
+        for w in str(extra or "").lower().replace(",", " ").replace("'", " ").split():
+            w = w.strip("().,")
+            if len(w) >= 5 and w not in STOPWORDS and w not in species \
+                    and w not in GENERIC_TREE_WORDS and not w.isdigit():
+                words.add(w)
+    return words
+
+
+def candidates_for(tree, city=""):
     loc = tree["location"]
     named, nearby = [], []
     try:
         d = api({"action": "query", "list": "search", "srnamespace": "6",
                  "srsearch": tree["name"], "srlimit": "10"})
-        named = [s["title"] for s in d.get("query", {}).get("search", [])]
+        places = place_tokens(tree, city)
+        # A hit earns its place by naming the plant AND the place. Dropping
+        # everything rather than falling back to unfiltered hits is deliberate:
+        # an honest gap costs nothing, and nine wrong-continent candidates cost
+        # a viewing pass.
+        named = [s["title"] for s in d.get("query", {}).get("search", [])
+                 if any(p in s["title"].lower() for p in places)]
     except Exception as e:
         print(f"    name search failed: {e}", file=sys.stderr)
     tokens = tree_tokens(tree)
@@ -158,7 +216,7 @@ def main():
     where = f" in {', '.join(c.title() for c in cities)}" if cities else ""
     print(f"{len(todo)} photo-less trees unchecked{where}; sweeping {min(limit, len(todo))}")
     for city, tree in todo[:limit]:
-        cands = candidates_for(tree)
+        cands = candidates_for(tree, city)
         entries[tree["id"]] = {
             "city": city, "name": tree["name"],
             "checked": time.strftime("%Y-%m-%d"),
