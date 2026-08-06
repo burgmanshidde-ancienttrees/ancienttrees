@@ -339,3 +339,23 @@ della Maddalena filed under an adjoining municipality.
 
 So the corrected rule for Italy: **the age question is regional, not national, and
 it is worth one WFS call before assuming a newspaper is the only route to a date.**
+
+### Liguria has an age field, which no Italian national source does (2026-08-06)
+
+Found by the Genoa verification pass. `agriligurianet.it` carries Liguria's own
+monumental-tree register, CC BY, distinct from the national MASAF file, and it
+records an age. It dated the Villa Serra hop-hornbeam to 160-170 years, the only
+sourced age in a batch of ten where every other figure is a girth-based estimate.
+
+Running total on Italian regional registers, and the pattern is now clear enough
+to plan around: **the age question is regional, never national.** Campania
+publishes per-tree cards with ages. Piemonte publishes presumed age bands on 344
+of 391 trees plus removal status inline. Liguria publishes an age. Lazio
+publishes designation criteria and a separate sheet of removed trees. Friuli
+publishes criteria and place names but no age. Lombardia publishes nothing per
+tree, and its cities publish per-tree municipal pages instead. So the first
+question for any Italian city is not "what does MASAF say" but "what does this
+region publish", and MASAF is the index rather than the source.
+
+Not yet imported. Worth a proper scout: it would give age to Genoa, Savona,
+Imperia and La Spezia at once.

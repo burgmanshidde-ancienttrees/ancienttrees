@@ -1,0 +1,231 @@
+[
+  {
+    "id": "gnv_001",
+    "name": "The Fernleaf Beech of Palazzo Doria-Tursi",
+    "species": "Fernleaf European Beech (Fagus sylvatica 'Asplenifolia')",
+    "age_estimate": "roughly 100-180 years (girth-based estimate, no dated source)",
+    "age_min": 100,
+    "age_max": 180,
+    "location": {
+      "address": "Via Garibaldi 9, 16124 Genova (courtyard of Palazzo Doria-Tursi)",
+      "latitude": 44.411508,
+      "longitude": 8.932322,
+      "neighbourhood": "Via Garibaldi / Strada Nuova, historic centre"
+    },
+    "verified_sources": [
+      "https://cultura.gov.it (MASAF national monumental trees register, sheet 09/D969/GE/07, girth 230cm, height 21m)",
+      "https://www.genovatoday.it/cronaca/la-mappa-degli-alberi-monumentali-il-patrimonio-green-di-genova.html"
+    ],
+    "access": "Free. Stands in the courtyard of Palazzo Doria-Tursi, a Rolli palace (UNESCO) that now houses Genoa's city hall and the Strada Nuova Museums; the main courtyard and staircase are generally open to the public without a ticket during opening hours, per general sourcing on the palace. Not personally confirmed the tree itself is unobstructed from the courtyard this pass.",
+    "transport": "In the pedestrianised heart of Via Garibaldi, a few minutes' walk from Genova De Ferrari / San Giorgio",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register calls it 'faggio a foglie di asplenio', a fern-leaved cultivar of European beech, cut-leaved and lacy compared to the ordinary species; a real oddity to find inside a 16th-century palace courtyard rather than a park. GenovaToday's Dec 2023 piece on the national monumental-tree map (its sixth update) names this exact tree by location, confirming it independently of the register. No source gives a planting date or age; the 100-180yr range is a rough estimate from girth alone (diameter ~73cm) and should be treated as indicative only, not sourced. Palazzo Doria-Tursi: built 1565 for Niccolò Grimaldi, passed to the Doria family 1596, bought by the Republic of Genoa, seat of Genoa's city government since 1848 - a possible planting-era anchor (post-1848 courtyard planting) but this is inference, not a source. Worth a photo/access check before publishing: confirm the tree is visible from the public part of the courtyard."
+  },
+  {
+    "id": "gnv_002",
+    "name": "The Poet's Holm Oak of Montesignano",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": "roughly 150-300 years (girth-based estimate, no dated source)",
+    "age_min": 150,
+    "age_max": 300,
+    "location": {
+      "address": "Via Mogadiscio 10, Montesignano, Genova (near the church of San Michele Arcangelo)",
+      "latitude": 44.436214,
+      "longitude": 8.965844,
+      "neighbourhood": "Montesignano / San Desiderio, eastern hills of Genoa"
+    },
+    "verified_sources": [
+      "https://cultura.gov.it (MASAF national monumental trees register, sheet 06/D969/GE/07, girth 257cm, height 15m)",
+      "Liguria regional monumental-tree register PDF (agriligurianet.it, 'Elenco regionale degli alberi monumentali'), same sheet 06/D969/GE/07, same girth 257cm/height 15m, locality given as 'Montesignano chiesa S. Michele arcangelo', criterion 'g) valore storico, culturale, religioso'",
+      "https://www.genovatoday.it/cronaca/la-mappa-degli-alberi-monumentali-il-patrimonio-green-di-genova.html (names 'il leccio di via Mogadiscio citato dal poeta Camillo Sbarbaro')"
+    ],
+    "access": "Not confirmed this pass. Via Mogadiscio is a residential street in the Montesignano district; independent geocoding places it at roughly the same coordinates as the register (44.4389, 8.9665), and the Liguria regional listing ties the tree to the church of San Michele Arcangelo rather than a private garden, which is a good sign, but I did not find a source stating the tree stands on public ground or is visible from the street. A local civic-tech initiative is literally named 'Il Leccio di via Mogadiscio' after it (Genova Digitale ran information sessions there), which suggests it functions as a known local landmark rather than a hidden private specimen, but that is not the same as confirmed public access.",
+    "transport": "AMT bus lines 480/482, stop 'Mogadiscio 6/Giacalone', about 1 minute's walk from the stop; total time from the city centre not independently timed this pass, likely 20-30 minutes by bus",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register pitfall caught and resolved: the MASAF import (data/registers/italy-masaf.json) gives this tree's locality as 'Via Mogadiscio 10', while an older Liguria regional PDF snapshot of the SAME sheet ID (06/D969/GE/07, same girth 257cm, same height 15m) gives the locality as 'Montesignano chiesa S. Michele arcangelo'. This looked like a register conflict at first. It resolves: Via Mogadiscio is itself a street inside the Montesignano district near that church (confirmed via independent geocoding, ~44.4389/8.9665, a close match to the register coordinates) - so the two locality strings describe the same tree at two levels of specificity, not two different trees. Genoa poet and lichenologist Camillo Sbarbaro (1888-1967, author of 'Pianissimo') is reported to have referenced this specific oak; I could not find the actual line or poem title this pass, only the naming fact via GenovaToday, so the literary connection itself should be treated as a lead for the writer to verify against a primary Sbarbaro source before using as a quoted fact. Age not sourced by either register; Italy's national forestry register carries no age field for any entry, a known systemic gap, so the age range here is a rough girth estimate only."
+  },
+  {
+    "id": "gnv_003",
+    "name": "The Holm Oak of San Pantaleo",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": "roughly 200-350 years (girth-based estimate, no dated source)",
+    "age_min": 200,
+    "age_max": 350,
+    "location": {
+      "address": "Via di San Pantaleo 26, Genova, historic centre (Prè / Via Balbi area)",
+      "latitude": 44.427994,
+      "longitude": 8.942544,
+      "neighbourhood": "Prè, historic centre"
+    },
+    "verified_sources": [
+      "https://cultura.gov.it (MASAF national monumental trees register, sheet 17/D969/GE/07, girth 305cm, height 12m)"
+    ],
+    "access": "Not established this pass. No second source found describing what stands at this address or whether the tree is visible/accessible from the street.",
+    "transport": "Historic centre, within walking distance of Genova Piazza Principe / Via Balbi",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Single-sourced: only the national MASAF register was found for this entry after a genuine search (news searches for 'via San Pantaleo leccio' returned only unrelated hits about the deconsecrated Church of San Pantaleo near Staglieno cemetery, a different place in a different part of the city, which is itself worth noting as a name collision to watch for). Girth 305cm is the largest of the three centro storico holm oaks/beeches in this batch, suggesting real age, but nothing corroborates species, age or the exact address beyond the register. Do not publish as 'confirmed' precision without a second look; I have left location_precision as approximate despite having register coordinates, specifically because I could not confirm those coordinates place the tree at a publicly visible spot rather than inside a private courtyard at that address. This is the weakest-verified candidate in the batch and a good candidate to drop to leads if a future pass can't strengthen it."
+  },
+  {
+    "id": "gnv_004",
+    "name": "The Great Camphor Tree of Via Romolo Gessi",
+    "species": "Nepal Camphor Tree (Cinnamomum glanduliferum)",
+    "age_estimate": "roughly 150-250 years (girth-based estimate, no dated source)",
+    "age_min": 150,
+    "age_max": 250,
+    "location": {
+      "address": "Via Romolo Gessi 11, Genova (Cornigliano / Sampierdarena area)",
+      "latitude": 44.416297,
+      "longitude": 8.872736,
+      "neighbourhood": "Cornigliano, Medio Ponente"
+    },
+    "verified_sources": [
+      "https://cultura.gov.it (MASAF national monumental trees register, sheet 10/D969/GE/07, girth 734cm, height 24m)"
+    ],
+    "access": "Not established this pass.",
+    "transport": "Medio Ponente district, west of the centre; nearest stations around Genova Sampierdarena / Cornigliano on the Genova-Ventimiglia line",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Single-sourced: only the register was found. The girth (734cm, roughly 2.3m diameter) is exceptional for this species and far larger than the two other Cinnamomum glanduliferum specimens turned up elsewhere in this same pass (487cm at Villa Tigullio, Rapallo; 350-392cm at the two Villa Pallavicini locations), which is either a genuinely remarkable tree or a data-entry issue worth sanity-checking against a second measurement before publishing (per the register-pitfalls rule: check numbers against the physical world). I did not find a photo or independent description to confirm the number. If it verifies, it is a strong candidate on size alone; until then it should not be presented with any superlative claim (hard rule 8) and treat the girth itself as unconfirmed."
+  },
+  {
+    "id": "gnv_005",
+    "name": "The Coast Redwood of Villa Serra",
+    "species": "Coast Redwood (Sequoia sempervirens)",
+    "age_estimate": "roughly 120-170 years (girth-based estimate consistent with the park's founding era, no dated source for this individual)",
+    "age_min": 120,
+    "age_max": 170,
+    "location": {
+      "address": "Parco Storico di Villa Serra, Via Carlo Levi 2, Comago, Sant'Olcese (GE)",
+      "latitude": 44.480989,
+      "longitude": 8.922661,
+      "neighbourhood": "Comago, Sant'Olcese (Val Polcevera, Genoa metropolitan area, NOT within the comune of Genova)"
+    },
+    "verified_sources": [
+      "https://cultura.gov.it (MASAF national monumental trees register, sheet 02/I346/GE/07, girth 526cm, height 38.5m)",
+      "https://www.villaserra.it/la-natura/gli-alberi/ (park's own site, confirms Sequoia sempervirens among the park's named specimens and gives species background)"
+    ],
+    "access": "Paid/managed historic park (Consorzio Villa Serra). Opening hours: Jan-Feb 10:00-17:00, Mar-Apr 10:00-18:00, May-Aug 09:00-20:00, Sep 09:00-19:00, Oct 10:00-18:00, Nov-Dec 10:00-17:00, Monday mornings closed.",
+    "transport": "NOT in Genoa proper. Sant'Olcese/Comago is a separate comune in the Polcevera valley, roughly 9km north of Genoa's centre by road. Reachable by AMT bus lines 7, 735, 737, 738 (stop 'Comago/Scuola', 10-min walk, or 'L. Secca/Manesseno', 4-min walk), typically via a first leg to Genova Bolzaneto (train or bus) then a connecting local bus into the valley. I could not pin an exact door-to-door time this pass; it is plausibly close to or over the 30-minute day-trip threshold and should be timed properly, and labelled honestly as Sant'Olcese/Comago rather than presented as inside Genoa, per the day-trip boundary rule.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Part of a real four-tree walkable cluster: this Sequoia, the Cerro (gnv_006), the Carpino nero (gnv_007) and the Farnia (gnv_008) all sit within about 60 metres of each other inside Villa Serra's 9-hectare English park, per the register's own coordinates. This is genuinely the tightest cluster among all 14 candidates in the brief, tighter than the centro storico trio (which span 2-3.8km between each other, not really walkable as a set) and tighter than the Pegli pair. The catch is distance from central Genoa (see transport note) and that it is a different comune. Whether this counts as 'Genoa' or needs its own treatment is a call for whoever composes the city page, not settled here. Villa Serra's own site describes the park as established in the mid-19th century and reopened to the public in 1992 after restoration; the sequoia's age estimate follows from that planting era but is not independently dated for this specific tree the way the Carpino nero is (gnv_007 has an actual sourced age)."
+  },
+  {
+    "id": "gnv_006",
+    "name": "The Turkey Oak of Villa Serra",
+    "species": "Turkey Oak (Quercus cerris)",
+    "age_estimate": "roughly 120-170 years (girth-based estimate consistent with the park's founding era, no dated source for this individual)",
+    "age_min": 120,
+    "age_max": 170,
+    "location": {
+      "address": "Parco Storico di Villa Serra, Via Carlo Levi 2, Comago, Sant'Olcese (GE)",
+      "latitude": 44.481531,
+      "longitude": 8.925589,
+      "neighbourhood": "Comago, Sant'Olcese (Val Polcevera, Genoa metropolitan area, NOT within the comune of Genova)"
+    },
+    "verified_sources": [
+      "https://cultura.gov.it (MASAF national monumental trees register, sheet 01/I346/GE/07, girth 378cm, height 41m)",
+      "https://www.villaserra.it/la-natura/gli-alberi/ (park's own site, confirms Quercus cerris among the park's named specimens)"
+    ],
+    "access": "Same park as gnv_005; see that entry for hours.",
+    "transport": "Same as gnv_005.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "41m is a striking height for a Turkey Oak; part of the same 60m cluster as gnv_005, gnv_007, gnv_008. No individual age source found; estimate follows the park's founding era, same caveat as gnv_005."
+  },
+  {
+    "id": "gnv_007",
+    "name": "The European Hop-hornbeam of Villa Serra",
+    "species": "European Hop-hornbeam (Ostrya carpinifolia)",
+    "age_estimate": "roughly 160-170 years",
+    "age_min": 160,
+    "age_max": 170,
+    "location": {
+      "address": "Parco Storico di Villa Serra, Via Carlo Levi 2, Comago, Sant'Olcese (GE)",
+      "latitude": 44.481911,
+      "longitude": 8.92295,
+      "neighbourhood": "Comago, Sant'Olcese (Val Polcevera, Genoa metropolitan area, NOT within the comune of Genova)"
+    },
+    "verified_sources": [
+      "https://cultura.gov.it (MASAF national monumental trees register, sheet 05/I346/GE/07, girth 256cm, height 32m)",
+      "https://www.agriligurianet.it/en/vetrina/boschi-e-foreste/alberi-monumentali/archivio-degli-alberi-monumentali/item/7020-g6.html (Liguria regional register entry, same location and diameter 256cm, height 22m, states age 'approximately 160-170 years')"
+    ],
+    "access": "Same park as gnv_005; see that entry for hours.",
+    "transport": "Same as gnv_005.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "The strongest-verified tree in this batch: two genuinely independent official sources (national MASAF register and the separate Liguria regional monumental-trees archive), with a real sourced age (160-170 years) rather than a girth guess, the only tree in this pass with that. Note a minor height discrepancy between the two sources (32m in the national import vs 22m on the regional page); both agree on the 256cm diameter, so this is likely a data-entry variance rather than two different trees, but flag both figures rather than pick one. Part of the same 60m cluster as gnv_005, gnv_006, gnv_008. Species notes from the park's own site: wood traditionally used for tool handles, wheel spokes and grapevine stakes; regional criterion recorded for this specimen was age/size."
+  },
+  {
+    "id": "gnv_008",
+    "name": "The Pedunculate Oak of Villa Serra",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 120-170 years (girth-based estimate consistent with the park's founding era, no dated source for this individual)",
+    "age_min": 120,
+    "age_max": 170,
+    "location": {
+      "address": "Parco Storico di Villa Serra, Via Carlo Levi 2, Comago, Sant'Olcese (GE)",
+      "latitude": 44.48205,
+      "longitude": 8.923381,
+      "neighbourhood": "Comago, Sant'Olcese (Val Polcevera, Genoa metropolitan area, NOT within the comune of Genova)"
+    },
+    "verified_sources": [
+      "https://cultura.gov.it (MASAF national monumental trees register, sheet 06/I346/GE/07, girth 296cm, height 39.5m)",
+      "https://www.villaserra.it/la-natura/gli-alberi/ (park's own site, confirms Quercus robur among the park's named specimens, notes the species can live to 500 years)"
+    ],
+    "access": "Same park as gnv_005; see that entry for hours.",
+    "transport": "Same as gnv_005.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Part of the same 60m cluster as gnv_005, gnv_006, gnv_007. Pedunculate Oak is the canonical hard-rule-9 common name (never 'English Oak'). No individual age source; the park's own page notes the species is capable of reaching 500 years, which is upside for the estimate range, not evidence of this tree's actual age."
+  },
+  {
+    "id": "gnv_009",
+    "name": "The Camphor Tree of Villa Durazzo Pallavicini",
+    "species": "Camphor Tree (Cinnamomum camphora)",
+    "age_estimate": "roughly 100-180 years (girth-based estimate, consistent with the park's mid-19th-century creation, no dated source for this individual)",
+    "age_min": 100,
+    "age_max": 180,
+    "location": {
+      "address": "Parco di Villa Durazzo Pallavicini, Pegli, Genova",
+      "latitude": 44.431189,
+      "longitude": 8.817119,
+      "neighbourhood": "Pegli"
+    },
+    "verified_sources": [
+      "https://cultura.gov.it (MASAF national monumental trees register, sheet 13/D969/GE/07, girth 538cm, height 36m)",
+      "https://cultura.gov.it/luogo/parco-storico-di-villa-durazzo-pallavicini (Ministry of Culture's own page on the park, independently describes 'the monumental camphor tree alongside the Lebanon cedar positioned at the lake's edge')"
+    ],
+    "access": "Paid entry, roughly 9-13 EUR depending on day/residency. Open Tue-Fri 09:30-17:00, Sat-Sun 10:00-17:00, closed Mondays (seasonal variation likely; check villadurazzopallavicini.it before publishing). Roughly 3km of paths, 2.5 hours for the full circuit.",
+    "transport": "Pegli railway station on the Genova-Ventimiglia line, about 15 minutes by regional train from Genova Piazza Principe, short walk to the park entrance. Comfortably within Genoa and within the day-trip boundary.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Forms a genuine two-tree pocket with gnv_010 (Cedar of Lebanon): both stand together at the lake's edge per the Ministry of Culture's own description, register coordinates for the two are effectively identical (150m or so apart within the park). This is the most reliably public and well-documented location in the whole batch: a paid, actively managed historic park with an official government culture-ministry page, not just a forestry register entry. No individual age source found for the camphor specifically; the park itself dates to a mid-19th-century romantic redesign, which anchors a rough estimate. Two other register candidates at this same park (Jubaea chilensis and a second Cinnamomum glanduliferum) were only single-sourced and are recorded as leads rather than delivered."
+  },
+  {
+    "id": "gnv_010",
+    "name": "The Cedar of Lebanon of Villa Durazzo Pallavicini",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "roughly 100-180 years (girth-based estimate, consistent with the park's mid-19th-century creation, no dated source for this individual)",
+    "age_min": 100,
+    "age_max": 180,
+    "location": {
+      "address": "Parco di Villa Durazzo Pallavicini, Pegli, Genova",
+      "latitude": 44.431189,
+      "longitude": 8.817119,
+      "neighbourhood": "Pegli"
+    },
+    "verified_sources": [
+      "https://cultura.gov.it (MASAF national monumental trees register, sheet 14/D969/GE/07, girth 320cm, height 25m)",
+      "https://cultura.gov.it/luogo/parco-storico-di-villa-durazzo-pallavicini (Ministry of Culture's own page on the park, independently describes 'the monumental camphor tree alongside the Lebanon cedar positioned at the lake's edge')"
+    ],
+    "access": "Same park as gnv_009; see that entry for hours and pricing.",
+    "transport": "Same as gnv_009.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Pairs with gnv_009 at the park's lake. Note: a Liguria regional register PDF lists a separate 'Villa Pallavicini' Cedar of Lebanon in ARENZANO (a different comune roughly 20km further west), girth 350cm - a different, larger tree under a confusingly similar name, do not conflate the two. This Pegli specimen's girth (320cm) is smaller and its coordinates and the register comune ('Genova') both point clearly to Pegli, not Arenzano."
+  }
+]

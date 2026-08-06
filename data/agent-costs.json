@@ -227,6 +227,15 @@
     "wasted": 0,
     "brief_wrong": false
    }
+  ],
+  "2026-08-06": [
+   {
+    "target": "Genoa",
+    "kind": "verify",
+    "tokens": 140333,
+    "trees": 10,
+    "note": "generated brief; 10 verified, no walkable cluster inside the comune except two trees in Pegli; found Liguria's own age-bearing register"
+   }
   ]
  }
 }
