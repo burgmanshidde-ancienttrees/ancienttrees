@@ -2,6 +2,24 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-06 (session, with Hidde, evening) — Walks live inside the city page, and the phase turns to depth
+
+**Hidde set the course: depth on the demand cities over more breadth.** Rome, Lisbon and Porto, made genuinely good. The data behind his instinct, checked in session: 46 of the 56 major register-country cities are already live, the remaining broad candidates are places nobody searches for, and the only real demand signals are Rome (77 impressions, 0 clicks, position 17 for "trees in rome"), Lisbon (the only converting page) and Porto (a finished 17-tree walk with 4 photos). London was considered and dropped: no register, no Commons yield, no search signal. Recorded in CLAUDE.md rung 4 and DECISIONS.md, and the nightly prompt was brought in line with it (it still capped photos at 3 per research pass, a rule superseded that morning, and knew nothing about claiming a pass).
+
+**"Deep enough" now has a definition, so depth cannot become the new padding:** one complete walk of 4 to 8 trees inside roughly 2 km, photos on most of it, honest pins, season data. Porto is already there on trees and needs only photos.
+
+**Walks live INSIDE the city page, never as pages of their own** (his words: "I never want extra pages for extra walks"). Built and shipped the same evening. Barcelona now offers four walks to pick between (Pedralbes 10 trees 1.7 km, Montjuic 8, Sant Pere 4, Park Guell 3) and Rome two (Monteverde / Trastevere 7, Villa Borghese 4). Picking one redraws the map line, retargets the directions button, renames the bar and dims what is not on it. It dims rather than hides, so every tree stays in the served HTML for a reader and a crawler, and the buttons are real buttons so the choice survives without JavaScript. A one-cluster city renders exactly what it did before, and London still gets no walk at all. Because there is no new page type, this needed no blueprint contract and created no new URLs.
+
+**The coordination fix Hidde asked for: `data/in-flight.json` and `passcheck.py --claim`.** A pass is claimed before dispatch and released when merged; claims expire after four hours so a dead session cannot block a city, and passcheck refuses to print a brief for a claimed place. It exists because 89k tokens were lost that morning when a session write pass and a night run wrote the same nine Padova stories twenty minutes apart.
+
+**Photos: the sweep learned iNaturalist**, genus within 120 m with per-photo licences and its own coordinates, so a hit both illustrates a tree and corroborates its pin. Lisbon gained candidates on seven trees at once. **Rome came back empty from iNaturalist exactly as it had from Commons**, which settles it: Rome's trees are simply unphotographed under an open licence, and that gap now waits for a reader rather than another sweep.
+
+**Rome deepening: 4 trees verified** (rom_017 to rom_020), seeding a second walk on the Esquilino and Colle Oppio. The pass was interrupted mid-run and lost nothing, because that morning's BRIEF_RESEARCH.md change told passes to finish one tree and write it before starting the next. The same failure that cost a whole Padova pass cost nothing this time. Stories not yet written; they wait for a batch.
+
+**Not working: GitHub Pages deployment.** Every build passed QA on 1,169 pages and the deploy step has failed repeatedly since about 13:16, so the live site is still serving the morning's build and /padua is not up yet. Nine deploys fired in one hour, which is around the Pages limit, and each of my pushes triggered one. A cancelled deployment also poisons its own commit sha, so cancelling and redeploying the same sha fails instantly. The fix is a fresh sha with no stuck predecessor and far fewer pushes; this entry is that fresh sha.
+
+FOR HIDDE: nothing needs you. If the site still shows no /padua tomorrow morning, that is the Pages problem above and not the content.
+
 ## 2026-08-06 (session, with Hidde) — Two archived sessions salvaged, Padova becomes Padua, and the photo sweep stops queueing the wrong continent
 
 Hidde archived two sessions mid-run and asked what was still open. Nothing was: both had committed and pushed. One thing had died though, a verification pass on Padova that made 25 web fetches and wrote **nothing** to disk. Recovered it from the transcript into data/research/padova-notes.md and data/leads/padova.json. The finding worth keeping is not Padova: **RAMI (ilregistrodeglialberi.it) publishes per-tree ages, health and public-access flags for Italian comuni**, which the national MASAF register structurally lacks, and it proved the last plane of Prato della Valle was felled in 2011 while MASAF still lists it. BRIEF_RESEARCH.md now says to finish one tree and write it before starting the next; breadth-first is why the dead pass banked nothing.
