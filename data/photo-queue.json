@@ -1623,10 +1623,7 @@
      "licence": "CC BY 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/46944516@N00\">Pedro Ribeiro Simões</a> from "
     }
-   ],
-   "judged": "2026-08-06",
-   "outcome": "rejected",
-   "outcome_note": "Only candidate is black-and-white and shows a rope course, not the coral trees."
+   ]
   },
   "lis_007": {
    "city": "Lisbon",
@@ -1646,10 +1643,7 @@
      "licence": "CC0",
      "author": "<a href=\"//commons.wikimedia.org/wiki/User:JnpoJuwan\" class=\"mw-redirect\" title=\"User:JnpoJuwan\">JnpoJuwan</a>"
     }
-   ],
-   "judged": "2026-08-06",
-   "outcome": "rejected",
-   "outcome_note": "Only candidate shows a plane tree in the square; our tree is a ginkgo."
+   ]
   },
   "lis_010": {
    "city": "Lisbon",
@@ -1698,16 +1692,41 @@
      "licence": "CC BY-SA 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/79123642@N04\">Maria  Eklind</a>"
     }
-   ],
-   "judged": "2026-08-06",
-   "outcome": "rejected",
-   "outcome_note": "All five viewed candidates are Mouraria street and facade scenes; the rubber fig is not in any of them."
+   ]
   },
   "lis_013": {
    "city": "Lisbon",
    "name": "The Strangler Fig of Príncipe Real",
    "checked": "2026-08-06",
-   "candidates": []
+   "candidates": [
+    {
+     "title": "iNat obs 201103892 (Ficus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/354941288/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/201103892",
+     "licence": "CC BY-SA",
+     "author": "(c) Bret van Putten, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "38.7162969722,-9.148379"
+    },
+    {
+     "title": "iNat obs 201103892 (Ficus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/354941302/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/201103892",
+     "licence": "CC BY-SA",
+     "author": "(c) Bret van Putten, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "38.7162969722,-9.148379"
+    },
+    {
+     "title": "iNat obs 249882113 (Ficus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/450518584/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/249882113",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "38.7168312073,-9.1489601135"
+    }
+   ]
   },
   "lis_014": {
    "city": "Lisbon",
@@ -1734,10 +1753,7 @@
      "licence": "CC BY-SA 4.0",
      "author": "<a href=\"//commons.wikimedia.org/wiki/User:Shahadusadik\" title=\"User:Shahadusadik\">Shahadusadik</a>"
     }
-   ],
-   "judged": "2026-08-06",
-   "outcome": "rejected",
-   "outcome_note": "One candidate is an upward close-up of a bare plane canopy (wrong species), the other a street view."
+   ]
   },
   "lis_018": {
    "city": "Lisbon",
@@ -1751,10 +1767,7 @@
      "licence": "CC BY-SA 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/30047235@N03\">Peter</a>"
     }
-   ],
-   "judged": "2026-08-06",
-   "outcome": "rejected",
-   "outcome_note": "Only candidate is a silk floss blossom close-up, wrong species and wrong framing."
+   ]
   },
   "lis_019": {
    "city": "Lisbon",
@@ -1768,10 +1781,7 @@
      "licence": "CC BY-SA 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/30047235@N03\">Peter</a>"
     }
-   ],
-   "judged": "2026-08-06",
-   "outcome": "rejected",
-   "outcome_note": "Only candidate is the same silk floss blossom close-up, not a date palm."
+   ]
   },
   "lis_020": {
    "city": "Lisbon",
@@ -1890,22 +1900,67 @@
    "checked": "2026-08-06",
    "candidates": [
     {
-     "title": "File:Fallen leaves - Gingko biloba and Platanus orientalis - 2024 Pisa.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Fallen_leaves_-_Gingko_biloba_and_Platanus_orientalis_-_2024_Pisa.jpg/960px-Fallen_leaves_-_Gingko_biloba_and_Platanus_orientalis_-_2024_Pisa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Fallen_leaves_-_Gingko_biloba_and_Platanus_orientalis_-_2024_Pisa.jpg",
-     "licence": "CC BY 4.0",
-     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Harlock81\" title=\"User:Harlock81\">Harlock81</a>"
+     "title": "iNat obs 216122849 (Platanus orientalis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/382189010/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/216122849",
+     "licence": "CC BY-SA",
+     "author": "(c) lejones417, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "45.3990533333,11.8798833333"
+    },
+    {
+     "title": "iNat obs 216122849 (Platanus orientalis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/382189128/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/216122849",
+     "licence": "CC BY-SA",
+     "author": "(c) lejones417, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "45.3990533333,11.8798833333"
+    },
+    {
+     "title": "iNat obs 219713626 (Platanus orientalis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/388926641/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/219713626",
+     "licence": "CC BY-SA",
+     "author": "(c) lejones417, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "45.3989527778,11.8797111111"
+    },
+    {
+     "title": "iNat obs 219713626 (Platanus orientalis)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/388926794/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/219713626",
+     "licence": "CC BY-SA",
+     "author": "(c) lejones417, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "45.3989527778,11.8797111111"
     }
-   ],
-   "judged": "2026-08-06",
-   "outcome": "rejected",
-   "outcome_note": "Only candidate is fallen leaves photographed in Pisa, not the Padua plane."
+   ]
   },
   "pad_003": {
    "city": "Padua",
    "name": "The Grafted Ginkgo of the Orto Botanico",
    "checked": "2026-08-06",
-   "candidates": []
+   "candidates": [
+    {
+     "title": "iNat obs 216135586 (Ginkgo biloba)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/382212862/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/216135586",
+     "licence": "CC BY-SA",
+     "author": "(c) lejones417, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "45.3993866667,11.8807533333"
+    },
+    {
+     "title": "iNat obs 216135586 (Ginkgo biloba)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/382212937/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/216135586",
+     "licence": "CC BY-SA",
+     "author": "(c) lejones417, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "45.3993866667,11.8807533333"
+    }
+   ]
   },
   "pad_004": {
    "city": "Padua",
@@ -1918,11 +1973,17 @@
      "url": "https://commons.wikimedia.org/wiki/File:Orto_botanico_di_Padova_-_magnolia.jpg",
      "licence": "CC BY-SA 4.0",
      "author": "<a href=\"//commons.wikimedia.org/wiki/User:Bultro\" title=\"User:Bultro\">Bultro</a>"
+    },
+    {
+     "title": "iNat obs 204905023 (Magnoliopsida)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/362238229/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/204905023",
+     "licence": "CC0",
+     "author": "no rights reserved",
+     "source": "inaturalist",
+     "obs_location": "45.3995533,11.8807896997"
     }
-   ],
-   "judged": "2026-08-06",
-   "outcome": "rejected",
-   "outcome_note": "Only candidate is a trunk-and-roots portrait with the crown cut off; fails crown-and-trunk readability."
+   ]
   },
   "pad_005": {
    "city": "Padua",
@@ -2078,72 +2139,15 @@
    "checked": "2026-08-06",
    "candidates": [
     {
-     "title": "File:065 Cedrus Atlantica, 'Glauca', AKA Blue Atlas Cedar (1).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/9d/065_Cedrus_Atlantica%2C_%27Glauca%27%2C_AKA_Blue_Atlas_Cedar_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:065_Cedrus_Atlantica,_%27Glauca%27,_AKA_Blue_Atlas_Cedar_(1).jpg",
-     "licence": "CC0",
-     "author": "The Fun Chronicles"
-    },
-    {
-     "title": "File:066 Cedrus Atlantica, 'Glauca', AKA Blue Atlas Cedar (2).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d7/066_Cedrus_Atlantica%2C_%27Glauca%27%2C_AKA_Blue_Atlas_Cedar_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:066_Cedrus_Atlantica,_%27Glauca%27,_AKA_Blue_Atlas_Cedar_(2).jpg",
-     "licence": "CC0",
-     "author": "The Fun Chronicles"
-    },
-    {
-     "title": "File:067 Cedrus Atlantica, 'Glauca', AKA Blue Atlas Cedar (3).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/6b/067_Cedrus_Atlantica%2C_%27Glauca%27%2C_AKA_Blue_Atlas_Cedar_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:067_Cedrus_Atlantica,_%27Glauca%27,_AKA_Blue_Atlas_Cedar_(3).jpg",
-     "licence": "CC0",
-     "author": "The Fun Chronicles"
-    },
-    {
-     "title": "File:068 Cedrus Atlantica, 'Glauca', AKA Blue Atlas Cedar (4).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/0b/068_Cedrus_Atlantica%2C_%27Glauca%27%2C_AKA_Blue_Atlas_Cedar_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-     "url": "https://commons.wikimedia.org/wiki/File:068_Cedrus_Atlantica,_%27Glauca%27,_AKA_Blue_Atlas_Cedar_(4).jpg",
-     "licence": "CC0",
-     "author": "The Fun Chronicles"
-    },
-    {
-     "title": "File:2023-10-14 Botanični vrt Sežana.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/2023-10-14_Botani%C4%8Dni_vrt_Se%C5%BEana.jpg/960px-2023-10-14_Botani%C4%8Dni_vrt_Se%C5%BEana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:2023-10-14_Botani%C4%8Dni_vrt_Se%C5%BEana.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "<a href=\"//commons.wikimedia.org/wiki/User:TadejM\" title=\"User:TadejM\">TadejM</a>"
-    },
-    {
-     "title": "File:Atlas cedar - Cedrus atlantica.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Atlas_cedar_-_Cedrus_atlantica.jpg/960px-Atlas_cedar_-_Cedrus_atlantica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Atlas_cedar_-_Cedrus_atlantica.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": ""
-    },
-    {
-     "title": "File:Balchik garden 132442527 HDR.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Balchik_garden_132442527_HDR.jpg/960px-Balchik_garden_132442527_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Balchik_garden_132442527_HDR.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Pibwl\" title=\"User:Pibwl\">Michał Derela</a>"
-    },
-    {
-     "title": "File:Bonzai Blue Atlas Cedar (3889954116).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bonzai_Blue_Atlas_Cedar_%283889954116%29.jpg/960px-Bonzai_Blue_Atlas_Cedar_%283889954116%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Bonzai_Blue_Atlas_Cedar_(3889954116).jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/14405058@N08\">Ryan Somma</a> from Occoquan, "
-    },
-    {
-     "title": "File:Cedrus atlantica 'Glauca' OB Wrocław.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Cedrus_atlantica_%27Glauca%27_OB_Wroc%C5%82aw.jpg/960px-Cedrus_atlantica_%27Glauca%27_OB_Wroc%C5%82aw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Cedrus_atlantica_%27Glauca%27_OB_Wroc%C5%82aw.jpg",
-     "licence": "CC BY 4.0",
-     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Crusier\" title=\"User:Crusier\">Crusier</a>"
+     "title": "iNat obs 1454596 (Cedrus libani)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/1803084/medium.JPG",
+     "url": "https://www.inaturalist.org/observations/1454596",
+     "licence": "CC BY",
+     "author": "(c) Duarte Frade, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "41.15374,-8.642627"
     }
-   ],
-   "judged": "2026-08-06",
-   "outcome": "rejected",
-   "outcome_note": "All nine are Atlas cedars elsewhere (Sezana, Wroclaw, Balchik, unlocated series); attaching one would be a guess."
+   ]
   },
   "por_011": {
    "city": "Porto",
@@ -2229,10 +2233,7 @@
      "licence": "CC BY-SA 3.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161022003929/http://www.panoramio.com/user/6"
     }
-   ],
-   "judged": "2026-08-06",
-   "outcome": "rejected",
-   "outcome_note": "Only candidate is a Trastevere street scene with no plane tree as subject."
+   ]
   },
   "rom_016": {
    "city": "Rome",
