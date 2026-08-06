@@ -68,7 +68,15 @@ that hangs on you once: note it in your report so it joins the blocklist.
 
 Passes have died mid-run and lost everything they had not written down. Append
 each tree to the delivery file named in your brief THE MOMENT it verifies,
-valid JSON after every append. One object per tree:
+valid JSON after every append.
+
+**So work one candidate through to done before starting the next.** Researching
+all of them in parallel and writing at the end is what makes a pass worth
+nothing when it is cut off: a Padova pass died after 25 fetches across eight
+candidates and left an empty repository, while the same effort spent depth-first
+would have banked three finished trees. Finish one, append it, then move on.
+
+One object per tree:
 
 ```json
 {
