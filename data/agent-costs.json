@@ -265,6 +265,13 @@
         "tokens": 96417,
         "trees": 19,
         "note": "batched write pass across two cities, 7 of 19 got an honest best_time, both merged and published same session"
+      },
+      {
+        "target": "Lisbon",
+        "kind": "verify",
+        "tokens": 135275,
+        "trees": 1,
+        "note": "brief premise partly wrong (candidates were central Lisbon, not Ajuda; 4 of 5 already resolved by a prior pass), but surfaced a real 244m pin error on lis_005 corrected same session"
       }
     ]
   }

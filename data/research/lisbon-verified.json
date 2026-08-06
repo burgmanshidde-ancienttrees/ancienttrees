@@ -1,0 +1,41 @@
+[
+  {
+    "id": "lis_020",
+    "name": "The Tipuana of Jardim Roque Gameiro",
+    "species": "Tipu Tree (Tipuana tipu)",
+    "age_estimate": "roughly 115 years",
+    "age_min": 105,
+    "age_max": 125,
+    "location": {
+      "address": "Jardim Roque Gameiro (Jardim do Cais do Sodré), Cais do Sodré, Lisboa",
+      "latitude": 38.7058,
+      "longitude": -9.1437,
+      "neighbourhood": "Cais do Sodré, Misericórdia"
+    },
+    "verified_sources": [
+      "data/registers/portugal-icnf.json (processo KNJ1/403, D.R. n.º 298, II Série de 27/12/2001, girth 2.98m, age_register 105 at last_measured 2015)",
+      "https://pt.wikipedia.org/wiki/Jardim_Roque_Gameiro"
+    ],
+    "access": "Free, public garden beside Cais do Sodré station",
+    "transport": "Cais do Sodré station (Metro Green Line, train and ferry hub), 2 minute walk, the garden is directly adjacent",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "story": "This tree stands in the middle of a bus terminal, and that is the honest story rather than something to smooth over. The garden, popularly called Jardim do Cais do Sodre, sits exactly where the Sintra and Cascais railway lines, the Green Line metro and the Cacilhas ferry all converge, one of the first patches of green a visitor arriving into Lisbon by train or boat actually walks past. For years Carris buses ate most of the available space; a renovation under the city's 'A Square in Each Neighbourhood' programme has been handing some of it back. Through all of it, a single Tipuana tipu has kept growing at the centre, classified a Tree of Public Interest since 2001 and now roughly 115 years old, a South American species that reached Lisbon long before anyone built a transit hub around it. Its trunk runs just under three metres round. Nearby stands a bronze sculpture called Homem do Leme, the Helmsman, and an old kiosk once used as a ticket office, both easier to notice than the tree that predates them. Come between February and May and the argument for stopping gets easier: the canopy turns a burnt orange with clustered flowers, briefly outshining the buses idling underneath it.",
+    "best_time": {
+      "months": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "kind": "flowers",
+      "label": "February to May, when the canopy turns burnt orange above the bus terminal"
+    },
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  }
+]
