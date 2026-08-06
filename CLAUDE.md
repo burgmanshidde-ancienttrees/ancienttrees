@@ -460,6 +460,18 @@ That puts the weight on you, so two rules tighten:
 
 `curation_status` and the `status` field on a city stay in the data as internal signal, but they no longer gate publication and no longer show on the site.
 
+## The learning loop, coded rather than remembered (Hidde, 2026-08-06)
+
+"Kunnen we deze leercyclus coderen in onze werkwijze zodat we elke dag wat beter worden." Three mechanisms, each replacing a rule that had already failed by being a rule.
+
+1. **Before writing any research brief, run `python3 scripts/passcheck.py <place>`.** It says whether the place is already published and under what name, how many trees and photos it has, which id prefix it uses and the next free id, how many register trees sit within reach, and what a previous pass already put in leads. Three briefs went out on a false premise on 2026-08-05 (Napoli, Firenze, Munich), each time because a queue entry said new and the check that was written down twice was skipped twice. A rule that fails twice needs a mechanism, not a third writing.
+
+2. **Log every pass's cost in `data/agent-costs.json` when its report comes back**: target, kind, tokens, trees that actually reached data/cities, a one-line note, and where it applies `wasted` (tokens that bought nothing) and `brief_wrong`. An unlogged pass is a day the loop cannot learn from.
+
+3. **Run `python3 scripts/retro.py` and append the day to RETRO.md.** It prints tokens by kind, cost per tree, the three most expensive passes, and the two failure counts kept deliberately apart: tokens that bought nothing, and briefs sent on a false premise. The second is not priced, because those passes still produced work and pricing the detour would flatter neither the day nor the fix.
+
+**The ratchet, and it is the point of the whole loop: a lesson that appears on two different days stops being a note and becomes a build check.** Four already exist by that route: copy promising a tree count the city does not have, one species under two common names, a register file with no licence block, and a phenology curve that records real moments and still draws flat. When a walk or a retro finds a class of error twice, the fix ships with the check that makes it unshippable, and removing one of those checks needs Hidde.
+
 ## QA: four layers, ruled by Hidde 2026-07-29
 
 The 2026-07-29 whole-product walk found a dead check-in button on all 345 tree pages, five broken photos and seven self-contradicting pages, all live. The lesson is structural, so QA is a standing work form:

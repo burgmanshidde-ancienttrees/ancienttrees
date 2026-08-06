@@ -7,175 +7,225 @@
     "kind": "research",
     "tokens": 141859,
     "trees": 2,
-    "note": "city was already live as Naples; found a fabricated date and a duplicated pin"
+    "note": "city was already live as Naples; found a fabricated date and a duplicated pin",
+    "wasted": 0,
+    "brief_wrong": true
    },
    {
     "target": "Bucaco",
     "kind": "research",
     "tokens": 151795,
     "trees": 6,
-    "note": "new city"
+    "note": "new city",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Firenze",
     "kind": "research",
     "tokens": 162747,
     "trees": 5,
-    "note": "briefed as new, was already live as Florence; pivoted to deepening"
+    "note": "briefed as new, was already live as Florence; pivoted to deepening",
+    "wasted": 0,
+    "brief_wrong": true
    },
    {
     "target": "Lucca",
     "kind": "research",
     "tokens": 155919,
     "trees": 6,
-    "note": "new city"
+    "note": "new city",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Barcelona 1",
     "kind": "research",
     "tokens": 178092,
     "trees": 6,
-    "note": "deepen"
+    "note": "deepen",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Caserta",
     "kind": "research",
     "tokens": 166898,
     "trees": 7,
-    "note": "new city; found Campania's per-tree cards"
+    "note": "new city; found Campania's per-tree cards",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Rome",
     "kind": "research",
     "tokens": 164421,
     "trees": 6,
-    "note": "deepen; found the Lazio removed-trees sheet"
+    "note": "deepen; found the Lazio removed-trees sheet",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "sweep parent",
     "kind": "scout",
     "tokens": 65697,
     "trees": 0,
-    "note": "delegated to four children and stopped; produced only a header"
+    "note": "delegated to four children and stopped; produced only a header",
+    "wasted": 65697,
+    "brief_wrong": false
    },
    {
     "target": "sweep germanic",
     "kind": "scout",
     "tokens": 99543,
     "trees": 0,
-    "note": "6 cities"
+    "note": "6 cities",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "sweep franco-nl",
     "kind": "scout",
     "tokens": 98892,
     "trees": 0,
-    "note": "6 cities, found Paris and Brussels open data"
+    "note": "6 cities, found Paris and Brussels open data",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "sweep italy",
     "kind": "scout",
     "tokens": 126082,
     "trees": 0,
-    "note": "9 cities"
+    "note": "9 cities",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "sweep iberia 1",
     "kind": "scout",
     "tokens": 132716,
     "trees": 0,
-    "note": "8 cities"
+    "note": "8 cities",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "sweep iberia 2",
     "kind": "scout",
     "tokens": 117245,
     "trees": 0,
-    "note": "8 cities, found the Seville catalogue"
+    "note": "8 cities, found the Seville catalogue",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Trieste",
     "kind": "research",
     "tokens": 134971,
     "trees": 8,
-    "note": "new city; resumed from notes after its process died"
+    "note": "new city; resumed from notes after its process died",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Lisbon",
     "kind": "research",
     "tokens": 162638,
     "trees": 7,
-    "note": "deepen; resumed from notes"
+    "note": "deepen; resumed from notes",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Milan",
     "kind": "research",
     "tokens": 170237,
     "trees": 5,
-    "note": "deepen; caught a ring-dated tree felled in 2015"
+    "note": "deepen; caught a ring-dated tree felled in 2015",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Barcelona 2",
     "kind": "research",
     "tokens": 247623,
     "trees": 6,
-    "note": "deepen; finished Montjuic"
+    "note": "deepen; finished Montjuic",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Munich",
     "kind": "research",
     "tokens": 301877,
     "trees": 4,
-    "note": "127k of it spent discovering the city was already live"
+    "note": "127k of it spent discovering the city was already live",
+    "wasted": 0,
+    "brief_wrong": true
    },
    {
     "target": "Vienna",
     "kind": "research",
     "tokens": 182009,
     "trees": 6,
-    "note": "deepen; caught a 90-year date dispute in live copy"
+    "note": "deepen; caught a 90-year date dispute in live copy",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Brussels",
     "kind": "research",
     "tokens": 204543,
     "trees": 6,
-    "note": "deepen"
+    "note": "deepen",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Naples 2",
     "kind": "research",
     "tokens": 170909,
     "trees": 5,
-    "note": "deepen; Orto Botanico access objection disproved"
+    "note": "deepen; Orto Botanico access objection disproved",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Turin",
     "kind": "research",
     "tokens": 173485,
     "trees": 8,
-    "note": "new city; imported Piemonte's register"
+    "note": "new city; imported Piemonte's register",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Seville",
     "kind": "research",
     "tokens": 178736,
     "trees": 6,
-    "note": "deepen; four vitality fields per tree"
+    "note": "deepen; four vitality fields per tree",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Zaragoza",
     "kind": "research",
     "tokens": 203893,
     "trees": 0,
-    "note": "held back: two of nine checked trees confirmed dead"
+    "note": "held back: two of nine checked trees confirmed dead",
+    "wasted": 0,
+    "brief_wrong": false
    },
    {
     "target": "Prague",
     "kind": "research",
     "tokens": 198712,
     "trees": 6,
-    "note": "deepen"
+    "note": "deepen",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
