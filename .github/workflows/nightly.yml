@@ -83,10 +83,19 @@ jobs:
             Reader submissions outrank everything. Something published being wrong
             outranks everything below it. Otherwise the job is depth, as follows.
 
-            Coverage is the current phase, on the method Hidde approved on
-            2026-08-03 and sharpened on 2026-08-04: register first, walkable
-            clusters over counts, batched by country. The job is good city pages
-            with a walk in them, not more thin pages.
+            Depth on the demand cities is the current phase, ruled by Hidde on
+            2026-08-06 (see Step 0 rung 4 in CLAUDE.md for the full ruling and
+            the "deep enough" definition): Rome, Lisbon and Porto first, to the
+            bar of one complete walk, photos on most of it, honest pins, season
+            data. New coverage continues only where the register makes it nearly
+            free, on the method of 2026-08-03/04: register first, walkable
+            clusters over counts, batched by country. Never open a thin page
+            while a demand city sits under the depth bar.
+
+            Before dispatching or starting any pass on a place, claim it:
+            python3 scripts/passcheck.py --claim <place> --kind verify, commit
+            and push the claim, and respect a refusal. A session and a night run
+            wrote the same nine stories on 2026-08-06; the claim file is the fix.
 
             What a good city run produces, and it is one city done properly:
             - Between 8 and 10 highlighted trees for an ordinary city, and for a
@@ -97,10 +106,11 @@ jobs:
             - The walking route the page generates must actually work. Check the
               km and minutes the build prints. If the route is 20 km, the trees
               were chosen wrong, not the route.
-            - At most 3 photos per city for now. Photos measured 72k tokens each
-              last week against 20k for a whole researched tree, so they are the
-              expensive habit to break. A missing photo is an honest gap and
-              always has been.
+            - NO photo hunting inside research passes at all (assembly line
+              rule 5, 2026-08-06, superseding the old 3-per-city cap): the API
+              sweep scripts/photo_hunt.py fills data/photo-queue.json for free,
+              and a separate viewing pass judges 20 to 30 queued images in one
+              context. A missing photo is an honest gap and always has been.
             - Everything found and not shipped goes to data/leads/[city].json in
               the two kinds, leads and blocked, per CLAUDE.md. Nothing gets
               thrown away, ever. Run python3 scripts/tree_index.py afterwards so
