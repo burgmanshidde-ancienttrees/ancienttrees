@@ -84,13 +84,16 @@ jobs:
             outranks everything below it. Otherwise the job is depth, as follows.
 
             The tourist-city rollout is the current phase, ruled by Hidde late
-            on 2026-08-06 (see Step 0 rung 4 in CLAUDE.md for the full ruling):
-            ten phase-1 cities get made genuinely good, in this ease-times-
-            effect order: Barcelona and Rome first (nearly done), then Paris
-            (185 register trees), Berlin (460 Wikidata images waiting), then
-            Amsterdam and New York (thin, need a walk), then Chicago,
-            Washington DC and Boston (from-zero builds, iNaturalist is
-            strongest in the US). London is FIRST in Hidde's order but GATED
+            on 2026-08-06 and re-ordered ease-first the same night (see Step 0
+            rung 4 in CLAUDE.md for the full ruling). The working order:
+            (1) Barcelona and Rome (nearly done; Rome has 4 verified trees in
+            data/research/rome-verified.json waiting for stories and merge),
+            (2) Paris and Berlin (cheap depth: 185 register trees and 460
+            Wikidata images respectively), (3) Vienna and Edinburgh (pulled
+            forward; Edinburgh compounds UK-first), (4) Amsterdam and New
+            York, where NYC is the US demand probe: deepen it and watch Search
+            Console. Chicago, Washington DC and Boston build ONLY if NYC shows
+            a search signal; until then do not open them, (5) Dublin. London is FIRST in Hidde's order but GATED
             HARDER than before: the ATI licence was read in full on 2026-08-06
             and forbids our use outright (non-commercial only, and public
             mapping services need written permission; full verdict in

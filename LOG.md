@@ -2,6 +2,16 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-06 (session, with Hidde, night) — The go-to-market course: tourist cities, ease-first, London behind a permission gate
+
+The full arc of the evening, so tomorrow's reader has it in one place. Hidde set the tourist-city rollout (ten phase-1 cities, UK first country, Europe first continent), then re-ordered it ease-first when the numbers showed the three from-zero US builds cost roughly 4x a pulled-forward European city. **The recorded working order: Barcelona/Rome, Paris/Berlin, Vienna/Edinburgh, Amsterdam/NYC, Dublin, with Chicago/DC/Boston gated on NYC showing a search signal, and London jumping everything the day the Woodland Trust answers.** Small-city work stopped outright; Porto stays the background walk showcase.
+
+**The ATI turned out to be gated by licence, not login.** Its EULA, read in full from the open data hub's own feed: non-commercial only (defined to include indirect and deferred gain), and public internet mapping services explicitly forbidden without written permission. Same class as the Dutch register, disqualified outright, nobody downloads it. The EULA names its own door, and the permission request is drafted in drafts/woodland-trust-permission.md in Hidde's approved outreach voice (one plain sentence of his own words, the precise ask, radical honesty about the future paid tier); he sends it himself.
+
+Also tonight: the Balearics (78 trees, 48 private, CC BY) and Valencia (2,439 trees, CC BY, dots held under rule 10) and Castilla y Leon (138 trees, free-use-with-attribution) imported, Wikidata became the third photo source (18 candidates queued on photo-less trees at a measured 15 m radius), Openverse was wired in and measured at zero across 49 trees (kept, cost-free, expectations recorded), and Brussels' 582 dots came down under rule 10 when the Balearic import exposed that the map layer never checked ownership. London's stale "no photos" claim corrected: all ten approved.
+
+FOR HIDDE: one action is yours alone, sending the Woodland Trust email. Everything else runs.
+
 ## 2026-08-06 (session, with Hidde, evening) — Walks live inside the city page, and the phase turns to depth
 
 **Hidde set the course: depth on the demand cities over more breadth.** Rome, Lisbon and Porto, made genuinely good. The data behind his instinct, checked in session: 46 of the 56 major register-country cities are already live, the remaining broad candidates are places nobody searches for, and the only real demand signals are Rome (77 impressions, 0 clicks, position 17 for "trees in rome"), Lisbon (the only converting page) and Porto (a finished 17-tree walk with 4 photos). London was considered and dropped: no register, no Commons yield, no search signal. Recorded in CLAUDE.md rung 4 and DECISIONS.md, and the nightly prompt was brought in line with it (it still capped photos at 3 per research pass, a rule superseded that morning, and knew nothing about claiming a pass).
