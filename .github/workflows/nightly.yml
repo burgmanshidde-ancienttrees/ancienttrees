@@ -83,14 +83,21 @@ jobs:
             Reader submissions outrank everything. Something published being wrong
             outranks everything below it. Otherwise the job is depth, as follows.
 
-            Depth on the demand cities is the current phase, ruled by Hidde on
-            2026-08-06 (see Step 0 rung 4 in CLAUDE.md for the full ruling and
-            the "deep enough" definition): Rome, Lisbon and Porto first, to the
-            bar of one complete walk, photos on most of it, honest pins, season
-            data. New coverage continues only where the register makes it nearly
-            free, on the method of 2026-08-03/04: register first, walkable
-            clusters over counts, batched by country. Never open a thin page
-            while a demand city sits under the depth bar.
+            The tourist-city rollout is the current phase, ruled by Hidde late
+            on 2026-08-06 (see Step 0 rung 4 in CLAUDE.md for the full ruling):
+            ten phase-1 cities get made genuinely good, in this ease-times-
+            effect order: Barcelona and Rome first (nearly done), then Paris
+            (185 register trees), Berlin (460 Wikidata images waiting), then
+            Amsterdam and New York (thin, need a walk), then Chicago,
+            Washington DC and Boston (from-zero builds, iNaturalist is
+            strongest in the US). London is FIRST in Hidde's order but GATED:
+            do not research it by web sweep; wait until the Woodland Trust ATI
+            file exists in data/registers/ with a licence block, then London
+            outranks everything. Small-city work stops: no new Padua-or-Genoa-
+            class cities, no deepening of them; existing small pages stay live
+            untouched. Lisbon stays a phase-2 priority. The deep-enough bar is
+            unchanged: a complete walk, photos on most of it, honest pins,
+            season data.
 
             Before dispatching or starting any pass on a place, claim it:
             python3 scripts/passcheck.py --claim <place> --kind verify, commit
