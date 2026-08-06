@@ -2425,6 +2425,14 @@ def load_registers():
         for t in d.get("trees", []) + d.get("entries", []):
             if t.get("group"):
                 continue
+            # Hard rule 10, enforced here rather than trusted to each importer.
+            # A register that records ownership or access lets us honour it; one
+            # that records neither is handled at the file level with
+            # publish_dots, as Brussels is. Keeping the data and withholding the
+            # dot are different decisions, and only the dot can send someone to
+            # a stranger's garden.
+            if t.get("private") or t.get("access_restricted"):
+                continue
             lat, lng = t.get("latitude"), t.get("longitude")
             if lat is None or lng is None:
                 continue
