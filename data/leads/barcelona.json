@@ -2,8 +2,8 @@
   "city": "Barcelona",
   "country": "Spain",
   "city_slug": "barcelona",
-  "updated": "2026-08-05",
-  "note": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere. leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason. Extended 2026-08-05 by the second deepening pass (data/research/barcelona-extra-2.json, the Montjuic walk): ten leads and five blocked entries added from the Sants-Montjuic screen, and the Lagunaria and the Eritrina of the Teatre Grec removed from leads because they published as bcn_017 and bcn_019.",
+  "updated": "2026-08-06",
+  "note": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere. leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason. Extended 2026-08-05 by the second deepening pass (data/research/barcelona-extra-2.json, the Montjuic walk): ten leads and five blocked entries added from the Sants-Montjuic screen, and the Lagunaria and the Eritrina of the Teatre Grec removed from leads because they published as bcn_017 and bcn_019. Extended 2026-08-06 by the Barcelona deepen verification pass: the Pedralbes/Torre Girona and Vil.la Amelia clusters (bcn_023 to bcn_032) verified and delivered to data/research/barcelona-verified.json, none blocked. One incidental find (Tarongers de Louisiana, Torre Girona) added to leads, undated and unjudged for collectibility.",
   "leads": [
     {
       "name": "Freixe de fulla estreta del Jardi Botanic Historic",
@@ -296,6 +296,16 @@
       "status": "lead",
       "why": "Girth 2.9 m, public, undated. Sits 130 m from the Grevillea above, so the two would open a small walk in La Marina de Port if either gets a date.",
       "register_id": 99400728989
+    },
+    {
+      "name": "Tarongers de Louisiana dels jardins de la Torre Girona",
+      "species": "Maclura pomifera",
+      "lat": 41.388940406668134,
+      "lng": 2.1165329711269645,
+      "status": "lead",
+      "why": "Incidental find while verifying the Torre Girona cluster (2026-08-06 Barcelona deepen pass): a 14-unit register entry in the same garden as bcn_026/027/028, but the register gives no planting year and no ownership field, and no independent source was checked this pass. Also a third grove entry in one small garden alongside the pines already delivered, so it would need its own collectibility judgement before it ships.",
+      "register_id": 99400680106,
+      "register_notes": "Girth 1.9m, height 8m, crown 6m, catalogued 2021. Age Per determinar in the register."
     }
   ],
   "blocked": [
