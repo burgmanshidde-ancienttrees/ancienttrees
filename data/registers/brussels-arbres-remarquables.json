@@ -7,7 +7,7 @@
  "country": "Belgium",
  "attribution": "heritage.brussels",
  "fetched": "2026-08-05",
- "publish_dots": true,
+ "publish_dots": false,
  "scope": "A curated remarkable-tree list published by the city itself, not a bulk street-tree inventory, which our own rules forbid importing.",
  "caveat": "The register carries no vitality field, so whether a tree still stands is a per-tree check. Ages, where present, are planting years rather than estimates.",
  "entries": [
@@ -6995,5 +6995,6 @@
    "latitude": 50.86042976365012,
    "longitude": 4.351679847334702
   }
- ]
+ ],
+ "dots_held_reason": "Held back 2026-08-06 under hard rule 10. Our own scouting note records that the Brussels inventory surveys private gardens and courtyards, and the published dataset carries no ownership or access field at all (its fields are circonference, diametre_cime, firstimage, geo_point_2d, geo_shape, id_arbres_cms, nom_fr/nl/la, rarete, statuts_fr/nl, url_fr/nl). So there is no way to tell which of these 582 exact coordinates point into someone's garden, and rule 10 says leave it out when in doubt. The data stays imported and usable for research. To put the dots back, find a per-tree access or ownership signal, most likely on the sites.heritage.brussels page each entry already links to."
 }
