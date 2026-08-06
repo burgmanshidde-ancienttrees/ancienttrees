@@ -81,7 +81,13 @@ GENERIC_TREE_WORDS = {"tree", "boom", "arbre", "arbol", "árbol", "albero", "arv
 def tree_tokens(tree):
     """Words that make a nearby photo plausibly ABOUT this tree: its name and
     species, in pieces, plus generic tree words in the languages we cover."""
-    text = f"{tree['name']} {tree.get('species', '')}".lower()
+    # ONLY plant words. The tree's name carries its place ("the Millennium
+    # Ginkgo of the Stadspark", "the Historic Grounds of Zoo Antwerpen"), and
+    # feeding those into a geosearch filter lets through every photograph taken
+    # in that park or that city: the sweep queued three trams for one ginkgo and
+    # a railway station for a zoo. A geosearch hit earns its place by naming a
+    # plant, never by naming the neighbourhood.
+    text = str(tree.get("species", "")).lower()
     words = {w.strip("().,") for w in text.split() if len(w.strip("().,")) >= 4}
     return words | GENERIC_TREE_WORDS
 
