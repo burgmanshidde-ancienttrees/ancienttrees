@@ -17,7 +17,19 @@ delivery format, the actual register candidates near the place (not a count, a
 list), what an earlier pass already found or rejected, and the hosts that hang.
 A brief written by this script cannot leave on a false premise, because it is
 generated from the same data the premise would have to contradict.
+
+    python3 scripts/passcheck.py --claim Galway --kind verify   before dispatching
+    python3 scripts/passcheck.py --release Galway               when merged
+
+--claim records the pass in data/in-flight.json BEFORE it is dispatched, and
+--brief refuses a claimed place. This is the other half of the same disease:
+passcheck knew what was published, nothing knew what was in flight, and on
+2026-08-06 a session and a night run wrote the same nine Padova stories twenty
+minutes apart. Claims expire after 4 hours by themselves, so a dead session
+cannot block a city. Commit and push the claim, or the night runs cannot see
+it: the push is part of the claim.
 """
+import datetime
 import glob
 import json
 import os
@@ -190,6 +202,105 @@ def resolve(arg, live):
     return match, coord
 
 
+INFLIGHT = os.path.join(ROOT, "data", "in-flight.json")
+
+
+def _now():
+    return datetime.datetime.now(datetime.timezone.utc)
+
+
+def load_inflight():
+    """The claim file, with expired claims already dropped.
+
+    Returns (doc, live_claims). A claim older than expire_hours is ignored, so a
+    session that dies mid-pass cannot block a city forever: the worst case is
+    that the next run waits out the remainder of the window."""
+    try:
+        doc = json.load(open(INFLIGHT))
+    except Exception:
+        return {"expire_hours": 4, "claims": []}, []
+    hours = doc.get("expire_hours", 4)
+    live = []
+    for c in doc.get("claims", []):
+        try:
+            at = datetime.datetime.fromisoformat(c["claimed_at"])
+            if at.tzinfo is None:
+                at = at.replace(tzinfo=datetime.timezone.utc)
+        except Exception:
+            continue
+        age = (_now() - at).total_seconds() / 3600.0
+        if age < hours:
+            c = dict(c, age_hours=round(age, 1))
+            live.append(c)
+    return doc, live
+
+
+def save_inflight(doc, claims):
+    doc["claims"] = [{k: v for k, v in c.items() if k != "age_hours"}
+                     for c in claims]
+    with open(INFLIGHT, "w") as fh:
+        json.dump(doc, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+
+
+def claims_for(target, live):
+    key = fold(target)
+    out = []
+    for c in live:
+        ck = fold(c.get("target", ""))
+        # match either spelling: a claim on Padova blocks a pass on Padua
+        if ck == key or ALIAS.get(ck) == ALIAS.get(key, key) or \
+                ALIAS.get(ck, ck) == key or ck == ALIAS.get(key, key):
+            out.append(c)
+    return out
+
+
+def print_inflight(target, live):
+    """Print what is being worked on, loudest for the place being asked about."""
+    mine = claims_for(target, live) if target else []
+    if mine:
+        print("\n  !! ALREADY CLAIMED, DO NOT DISPATCH:")
+        for c in mine:
+            print(f"     {c['target']} ({c['kind']}) claimed by {c.get('by', '?')} "
+                  f"{c['age_hours']}h ago")
+        print("     Another run is on this right now. Pick a different target, or")
+        print("     --release it first if you know that pass is dead.")
+    others = [c for c in live if c not in mine]
+    if others:
+        print("\n  in flight elsewhere: " + ", ".join(
+            f"{c['target']}({c['kind']}, {c['age_hours']}h)" for c in others))
+
+
+def do_claim(target, kind, by):
+    doc, live = load_inflight()
+    existing = claims_for(target, live)
+    if existing:
+        c = existing[0]
+        print(f"REFUSED: {c['target']} ({c['kind']}) is already claimed by "
+              f"{c.get('by', '?')}, {c['age_hours']}h ago.")
+        print("Pick another target, or --release it if that pass is dead.")
+        return 1
+    live.append({"target": target, "kind": kind, "by": by,
+                 "claimed_at": _now().replace(microsecond=0).isoformat()})
+    save_inflight(doc, live)
+    print(f"CLAIMED {target} ({kind}) by {by}.")
+    print("Commit and push data/in-flight.json now, or the night runs cannot see it.")
+    print(f"Release it when the output is merged: "
+          f"python3 scripts/passcheck.py --release {target}")
+    return 0
+
+
+def do_release(target):
+    doc, live = load_inflight()
+    keep = [c for c in live if c not in claims_for(target, live)]
+    if len(keep) == len(live):
+        print(f"no live claim on {target} (already released, or it expired)")
+    else:
+        print(f"released {target}")
+    save_inflight(doc, keep)
+    return 0
+
+
 def print_blocklist():
     bl = os.path.join(ROOT, "data", "fetch-blocklist.json")
     if not os.path.exists(bl):
@@ -307,12 +418,43 @@ def main():
     args = sys.argv[1:]
     want_brief = "--brief" in args
     args = [a for a in args if a != "--brief"]
+    if "--claim" in args:
+        args.remove("--claim")
+        kind = "verify"
+        if "--kind" in args:
+            i = args.index("--kind")
+            kind = args[i + 1]
+            del args[i:i + 2]
+        by = os.environ.get("GITHUB_RUN_ID") and "night-run" or "session"
+        if "--by" in args:
+            i = args.index("--by")
+            by = args[i + 1]
+            del args[i:i + 2]
+        if not args:
+            print("usage: passcheck.py --claim <place> [--kind verify|write|photo] [--by who]")
+            return 1
+        return do_claim(" ".join(args), kind, by)
+    if "--release" in args:
+        args.remove("--release")
+        if not args:
+            print("usage: passcheck.py --release <place>")
+            return 1
+        return do_release(" ".join(args))
     if not args:
         print(__doc__)
         return 1
     live = cities()
     arg = " ".join(args)
+    _, inflight = load_inflight()
     if want_brief:
+        mine = claims_for(arg, inflight)
+        if mine:
+            c = mine[0]
+            print(f"\nREFUSED: no brief for {arg}. It is claimed by "
+                  f"{c.get('by', '?')} ({c['kind']}, {c['age_hours']}h ago).")
+            print("A brief for a claimed place is how two passes end up doing the")
+            print("same work. Pick another target, or --release it if that pass is dead.")
+            return 1
         return brief(arg, live)
 
     match, coord = resolve(arg, live)
@@ -335,6 +477,7 @@ def main():
         print("  pick three letters that are NOT in that list.")
         print("\n  => run with --brief for the paste-ready brief.")
 
+    print_inflight(arg, inflight)
     print_blocklist()
     slug = match["slug"] if match else fold(arg)
     for kind in ("leads", "research"):
