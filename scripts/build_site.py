@@ -2113,11 +2113,55 @@ def city_face(entry, width=400):
     return None
 
 
+def _fold_name(s):
+    s = unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "", s.lower())
+
+
+def city_aliases():
+    """Local spelling -> the English name this site publishes under.
+
+    Shared with scripts/passcheck.py so there is one table rather than two that
+    drift. See data/city-aliases.json for why the direction matters."""
+    f = DATA / "city-aliases.json"
+    if not f.exists():
+        return {}
+    return json.loads(f.read_text()).get("aliases", {})
+
+
+def check_city_names(city_list):
+    """Refuse to ship a city under its local name when English uses another.
+
+    Every page here is written in English and its readers search in English, so
+    the site says Florence and Naples. This shipped wrong twice: the brief
+    generator once translated names in the wrong direction (2026-08-06), and the
+    same day a city went live as Padova while every other Italian city on the
+    site used its English name. Per CLAUDE.md's ratchet, a lesson that lands
+    twice becomes a build check rather than a third note. Removing this check
+    needs Hidde."""
+    alias = city_aliases()
+    for entry in city_list:
+        d = entry.get("data")
+        if not d:
+            continue
+        for value, field in ((d.get("city", ""), "city name"),
+                             (entry.get("slug", ""), "slug")):
+            english = alias.get(_fold_name(value))
+            if english and _fold_name(english) != _fold_name(value):
+                ERRORS.append(
+                    f"{entry.get('slug')}: {field} is {value!r}, but this site "
+                    f"publishes in English, where it is {english.title()!r}. "
+                    f"Rename it and add the old slug to RENAMED_CITY_SLUGS so "
+                    f"the live URL keeps resolving, or remove the pair from "
+                    f"data/city-aliases.json if English really does use {value!r}.")
+
+
 def load_cities():
     city_list = json.loads((DATA / "city-list.json").read_text())["cities"]
     for entry in city_list:
         f = DATA / "cities" / f"{entry['slug']}.json"
         entry["data"] = json.loads(f.read_text()) if f.exists() else None
+    check_city_names(city_list)
     return city_list
 
 
@@ -4605,6 +4649,14 @@ REMOVED_TREE_SLUGS = [
     ("lyon", "cedar-of-ile-barbe"),  # lyo_007 pulled 2026-07-29: no source verifies the species claim, and the only garden it could plausibly stand in is the island's private residential half, explicitly non-visitable per the DIREN site classe brochure
 ]
 
+# A city published under the wrong name keeps its old URL resolving, because
+# hard rule 3 says nothing irreversible in public and a retired URL is exactly
+# that. Entries: (old_slug, new_slug). Every page under the old slug redirects:
+# the city page, its question page, and each tree.
+RENAMED_CITY_SLUGS = [
+    ("padova", "padua"),  # 2026-08-06, hours after publication: every other Italian city here uses its English name (Florence, Naples, Turin), and English readers search Padua
+]
+
 
 def build_redirects(published, pages, tree_slugs=None):
     """Old /cities/[slug]/ URLs redirect to the contract URLs, and
@@ -4629,6 +4681,34 @@ def build_redirects(published, pages, tree_slugs=None):
             pages.append((f"{city_slug}/{old_slug}.html",
                           redirect_stub(new_slug, f"{BASE_URL}/{city_slug}/{new_slug}",
                                         "Moved: this tree"), None))
+    # A city that changed name keeps every old URL alive: the city page, its
+    # question page and each of its trees.
+    by_slug = {p["slug"]: p for p in published}
+    for old_slug, new_slug in RENAMED_CITY_SLUGS:
+        p = by_slug.get(new_slug)
+        if not p:
+            continue
+        title = f"Moved: Ancient Trees in {p['city']}"
+        pages.append((f"{old_slug}.html",
+                      redirect_stub(new_slug, p["canonical"], title), None))
+        pages.append((f"{old_slug}/index.html",
+                      redirect_stub(f"../{new_slug}", p["canonical"], title), None))
+        pages.append((f"{old_slug}/oldest-tree.html",
+                      redirect_stub(f"../{new_slug}/oldest-tree",
+                                    f"{BASE_URL}/{new_slug}/oldest-tree", title), None))
+        # `published` is slimmed by this point and carries no trees, so read the
+        # city file for its ids rather than trusting the entry to hold them.
+        cf = DATA / "cities" / f"{new_slug}.json"
+        city_trees = json.loads(cf.read_text())["trees"] if cf.exists() else []
+        for t in city_trees:
+            ts = (tree_slugs or {}).get(t["id"])
+            if not ts:
+                continue
+            pages.append((f"{old_slug}/{ts}.html",
+                          redirect_stub(f"../{new_slug}/{ts}",
+                                        f"{BASE_URL}/{new_slug}/{ts}",
+                                        "Moved: this tree"), None))
+
     city_slug_by_slug = {p["slug"]: p["slug"] for p in published}
     for city_slug, old_slug in REMOVED_TREE_SLUGS:
         if city_slug not in city_slug_by_slug:

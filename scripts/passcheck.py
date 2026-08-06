@@ -34,13 +34,25 @@ NEAR_PUBLISHED_KM = 0.08  # a register entry this close to a live tree is probab
 
 # Local name to our slug, for the cases a name lookup alone would miss. Distance
 # is the real test; this only helps the first guess.
-ALIAS = {
-    "napoli": "naples", "firenze": "florence", "roma": "rome", "milano": "milan",
-    "torino": "turin", "genova": "genoa", "venezia": "venice", "lisboa": "lisbon",
-    "sevilla": "seville", "muenchen": "munich", "munchen": "munich",
-    "wien": "vienna", "praha": "prague", "bruxelles": "brussels",
-    "brussel": "brussels", "koebenhavn": "copenhagen", "lissabon": "lisbon",
-}
+def _load_aliases():
+    """Local spelling -> the English name this site publishes under.
+
+    Lives in data/city-aliases.json so the build check and this generator read
+    one table instead of two that drift: the build refuses to ship a city under
+    a local name, and this file needs the same pairs read backwards to find
+    register candidates. The inline fallback keeps passcheck working if the data
+    file is missing."""
+    try:
+        p = os.path.join(ROOT, "data", "city-aliases.json")
+        with open(p) as fh:
+            return json.load(fh)["aliases"]
+    except Exception:
+        return {"napoli": "naples", "firenze": "florence", "roma": "rome",
+                "milano": "milan", "torino": "turin", "genova": "genoa",
+                "venezia": "venice", "padova": "padua", "lisboa": "lisbon"}
+
+
+ALIAS = _load_aliases()
 
 NAME_FIELDS = ("name", "name_en", "name_pt", "name_it", "name_ja", "name_nl",
                "name_eu", "common_fr", "designation")
