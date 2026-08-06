@@ -147,6 +147,88 @@ Italy (the ~4,944-tree MASAF national list, the biggest known European prize), G
 
 **2026-08-02: RD 1495/2011 art. 8 checked and it does NOT settle the four Spanish registers.** Its own title says "para el ámbito del sector público estatal" (national/state administration only); Illes Balears, Comunitat Valenciana, Castilla y León and Navarra are all autonomous-community (regional) governments with their own separate reuse regimes, not bound by this decree. Worth one line so a future session doesn't reread it expecting the same shortcut. A search-snippet check of Castilla y León's own open-data portal found a plausible CC BY 4.0 statement on its "Términos de uso de los conjuntos de datos" page, but this project's own standard is reading the primary source directly, not inferring from a snippet (the same rule Japan's register work follows), and `datosabiertos.jcyl.es` failed TLS certificate verification on every fetch attempt this session ("unable to verify the first certificate"), so nothing from it is recorded as proven. Try again from a session whose network handles that certificate, or verify via `datos.gob.es`'s own metadata for the specific singular-trees dataset instead of the portal's own pages.
 
+## The Spanish licence sweep, 2026-08-06 (four registers, read at the primary source)
+
+Hidde asked for focus on Spain before Czech, Poland and the UK. Four regional
+registers were recorded as "download endpoint live, no licence sentence yet".
+Three are now settled and one is not. Every verdict below comes from the
+publisher's own machine-readable metadata or licence text, never from a search
+snippet, and the reason that distinction is not pedantry is in the Castilla y
+Leon entry.
+
+### Comunitat Valenciana: USABLE, CC BY
+
+`dadesobertes.gva.es` dataset "Catalogo de Arboles Monumentales y Singulares de
+la Comunitat Valenciana". Its own embedded structured data declares
+`"schema:license": "http://www.opendefinition.org/licenses/cc-by"`, and the
+visible page says "Llicencia Creative Commons Attribution". Statutory catalogue
+under Ley 4/2006.
+
+Distribution: SHP via
+`http://descargas.icv.gva.es/server_api/gdb/descarga/index.html?capas="medio_ambiente.gdb/fore_arboles_mon"&formato=Shapefile%20-%20SHP%20-%20.shp&geocat=DATO_DIRECTA_SHP`
+and WMS at `carto.icv.gva.es/arcgis/services/tm_medio_ambiente/forestal/MapServer/WmsServer`.
+No WFS is published, so this one arrives as a shapefile rather than a GeoJSON GET.
+
+### Illes Balears: USABLE, CC BY
+
+The portal moved: `catalegdades.caib.cat` now redirects to
+`intranet.caib.es/opendatacataleg`, which is why the recorded dataset URL 404s.
+Its CKAN API answers directly:
+`intranet.caib.es/opendatacataleg/api/3/action/package_search?q=arbres` returns
+one dataset, "Arbres Singulars Illes Balears", `license_title: "Creative Commons
+Attribution"`, `license_id: "cc-by"`.
+
+The data itself is a live ArcGIS service, **78 trees**, already WGS84:
+`https://ideib.caib.es/geoserveis/rest/services/public/GOIB_ArbresSingulars_IB/MapServer/0`
+Copyright text: "Servei d'Informacio Territorial de les Illes Balears (SITIBSA)".
+This is the most import-ready Spanish source left.
+
+### Castilla y Leon: USABLE FOR US, but not under the name it advertises
+
+The licence is **not** CC BY, and a search snippet said it was. datos.gob.es
+gives the machine-readable field as `https://www.jcyl.es/licencia-IGCYL-NC`,
+whose name reads as non-commercial and would disqualify it outright under our
+own rule. It does not. The licence document has two branches, and the
+commercial one is explicit:
+
+> "Se autoriza el uso comercial de la cartografia e informacion geografica,
+> entendiendo como tal el uso que conlleva aprovechamiento economico directo,
+> indirecto o diferido."
+
+Its conditions, which are real obligations and heavier than CC BY:
+attribution exactly as "(c)Junta de Castilla y Leon", visible beside the
+licensed information or anything derived from it; transformation allowed only
+where it does not distort the meaning of the data; and, in every reproduction
+or public communication, an obligation to **inform the end user that the
+material is available free of charge at jcyl.es**. Passing the data to someone
+else for their own commercial use requires them to take a new licence or
+explicitly accept these conditions.
+
+Verdict: importable, but it is the first source here that would put a
+requirement on our own pages (the free-availability notice), so the import
+should carry that notice with it rather than bolt it on later. Note also that
+`datosabiertos.jcyl.es` still fails TLS verification on plain fetches; the
+licence text above was read through a redirect from `www.jcyl.es` with a
+browser user agent.
+
+### Catalonia: STILL BLOCKED, unchanged
+
+302 monumental trees plus 4,176 monumental olives. Nothing found this pass that
+states permission: the Socrata portal `analisi.transparenciacatalunya.cat`
+returns zero hits for arbres monumentals, and the environment department
+publishes the register as per-county HTML fiches rather than a dataset with
+terms. The ISO metadata's `otherRestrictions` finding from the earlier scan
+stands. Do not import.
+
+### The finding worth carrying forward
+
+**A licence's NAME is not its terms, in either direction.** IGCYL-NC reads
+non-commercial and permits commercial use; the Dutch national register reads
+like an open register and does not. Both were only settled by reading the
+licence document itself. And a search snippet got Castilla y Leon wrong twice
+now, once in each direction, which is the second time this specific register
+has been misreported by a summary rather than a source.
+
 ## Which countries to invest in, weighed 2026-07-21
 
 Researched at Hidde's request: national tree databases plus photo availability and other factors, ranked for the strategy (English site, travelers plus enthusiasts as the audience).
