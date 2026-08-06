@@ -1031,6 +1031,14 @@
       "slug": "turin",
       "status": "published",
       "note": "One walk, Porta Nuova station to the Po, 1.94 km spread. Taken from the official 13.9 km tourist route, which is really four walks; the other three are in data/leads/turin.json. Piemonte's regional register (data/registers/piemonte-alberi-monumentali.json) carries presumed age bands and removal status, which no other Italian source does."
+    },
+    {
+      "city": "Genoa",
+      "country": "Italy",
+      "tier": 1,
+      "slug": "genoa",
+      "status": "published",
+      "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF."
     }
   ]
 }

@@ -76,7 +76,9 @@
       "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
       "transport": "15 minute walk from Leiden Centraal station",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "label": "November, when the fan-shaped leaves turn gold before dropping almost overnight",
         "kind": "autumn colour"
       },
@@ -139,7 +141,10 @@
       "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
       "transport": "15 minute walk from Leiden Centraal station",
       "best_time": {
-        "months": [5, 6],
+        "months": [
+          5,
+          6
+        ],
         "label": "late May and June, when its yellow flower chains hang from the branches",
         "kind": "flowers"
       },
@@ -155,13 +160,13 @@
     {
       "id": "lei_005",
       "name": "The Beets Beech of the Burcht",
-      "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
       "age_estimate": "about 185 years",
       "age_min": 180,
       "age_max": 190,
       "location": {
         "address": "De Burcht van Leiden, on the mound's slope",
-        "latitude": 52.1590,
+        "latitude": 52.159,
         "longitude": 4.4924,
         "neighbourhood": "Binnenstad"
       },
@@ -185,7 +190,7 @@
     {
       "id": "lei_006",
       "name": "The Groenesteeg Beech",
-      "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
       "age_estimate": "about 200 years, likely planted around the cemetery's 1813 founding",
       "age_min": 190,
       "age_max": 215,
