@@ -1,0 +1,224 @@
+[
+  {
+    "id": "mad_011",
+    "name": "The Strawberry Tree of the Plaza de la Lealtad",
+    "species": "Strawberry Tree (Arbutus unedo)",
+    "age_estimate": "over 100 years",
+    "age_min": 100,
+    "age_max": 150,
+    "location": {
+      "address": "Plaza de la Lealtad, south side facing the Ritz, 28014 Madrid",
+      "latitude": 40.4154,
+      "longitude": -3.6933,
+      "neighbourhood": "Paseo del Prado"
+    },
+    "story": "Madrid's coat of arms shows a bear reaching up into a strawberry tree, and this is the closest thing the city has to the original. It stands in the southern corner of the Plaza de la Lealtad, opposite the Ritz, propped on iron crutches installed when its own limbs grew heavy enough to threaten pulling it over. Strawberry trees are usually shrubs, three or four metres of Mediterranean scrub. This one has been allowed to grow into an actual tree for more than a century, which is why the props are needed at all. It is also why the Comunidad de Madrid added it to the singular-tree catalogue in 2015 for cultural rather than botanical significance: the emblem, made real. Historians are fairly sure the heraldic tree of 1222 was never a madrono in the first place and that the bear on the crest was reaching for something else entirely, but the city has committed. The fruit is the payoff. Through November and December it carries white bell flowers and the previous year's fruit at the same time, red warty spheres that look like lychees and taste of very little. The Latin unedo means eat only one.",
+    "best_time": {
+      "months": [11, 12],
+      "label": "November and December, when it flowers and ripens last year's fruit at once",
+      "kind": "fruit"
+    },
+    "verified_sources": [
+      "https://www.bocm.es/boletin/CM_Orden_BOCM/2015/02/04/BOCM-20150204-8.PDF",
+      "https://www.telemadrid.es/noticias/madrid/Un-paseo-bajo-la-sombra-de-los-15-Arboles-Singulares-de-Retiro-Recoletos-y-El-Prado-0-2696430333--20240811103355.html",
+      "http://elgatoporlasramas.blogspot.com/2014/11/arboles-de-madrid-madrono-de-la-plaza.html"
+    ],
+    "access": "Free, public square",
+    "transport": "Banco de Espana (Metro L2), 3 min walk",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "location_precision": "approximate",
+    "notes": "Added to the catalogue by ORDEN 68/2015 (Anexo II, Arbutus unedo, Madrid, motivo: significacion cultural). Existence and centenarian age independently confirmed by Telemadrid's August 2024 survey of the 15 singular trees of Retiro, Recoletos and the Prado, which places it in the Plaza de la Lealtad. Pin is approximate: no individually named OpenStreetMap node exists for this tree (the two 'Madrono' nodes in the Overpass extract for this area both sit inside the Retiro and are different trees), so the coordinate anchors the south side of the plaza facing the Ritz, which is where every source places it. The plaza is small and the tree is the only one on crutches, so an approximate pin still finds it."
+  },
+  {
+    "id": "mad_012",
+    "name": "The Cedar of Lebanon at the Prado",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "120-235 years (sources disagree)",
+    "age_min": 120,
+    "age_max": 235,
+    "location": {
+      "address": "Jardines del Museo del Prado, beside the Velazquez statue, Paseo del Prado, 28014 Madrid",
+      "latitude": 40.413951,
+      "longitude": -3.692794,
+      "neighbourhood": "Paseo del Prado"
+    },
+    "story": "Nobody agrees how old this cedar is, and the gap is a century. The regional catalogue and the city's tree literature give roughly 120 years. The guides to the Paseo del Prado put it at 232, which would date the planting to within a generation of Juan de Villanueva's museum building. A third account, more plausible than either, ties it to 1871, when the garden on the museum's western slope was laid out around the Velazquez statue. What is not in dispute is the shape: 26 metres tall, a crown 22 metres across and a trunk four and a half metres around, so the tree is nearly as wide as it is high, its upper branches held out in the flat horizontal plates that only old Lebanon cedars make. It stands a few steps from the museum's busiest door, and most of the several million people who pass it every year are looking at the queue. Cedrus libani is the tree of the Phoenician fleets and of Solomon's temple, reduced in its Lebanese homeland to a handful of protected groves. Madrid keeps one on the Paseo del Prado, inside the stretch of city that UNESCO inscribed in 2021.",
+    "verified_sources": [
+      "https://www.bocm.es/boletin/CM_Orden_BOCM/2015/02/04/BOCM-20150204-8.PDF",
+      "https://www.telemadrid.es/noticias/madrid/Un-paseo-bajo-la-sombra-de-los-15-Arboles-Singulares-de-Retiro-Recoletos-y-El-Prado-0-2696430333--20240811103355.html",
+      "https://www.wikidata.org/wiki/Q108653756"
+    ],
+    "access": "Free, public garden on the Paseo del Prado",
+    "transport": "Banco de Espana (Metro L2) or Estacion del Arte (Metro L1), 5 min walk",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "confirmed",
+    "notes": "Age is given as a range because the sources genuinely disagree: the singular-tree documentation says about 120 years, Telemadrid's August 2024 survey says 232, and a separate account dates the surrounding garden and its cedars to 1871. Flagged rather than resolved, per the site's honesty standard. Pin comes from the individually named OpenStreetMap node 'Cedro del Libano' carrying Wikidata Q108653756 (40.413975, -3.6927964), which agrees with the published coordinate to about three metres. More than one cedar stands in this garden; the catalogued specimen is the large one beside the Velazquez statue, which is the tree both records point at."
+  },
+  {
+    "id": "mad_013",
+    "name": "The Hackberry of the Plaza de Murillo",
+    "species": "Mediterranean Hackberry (Celtis australis)",
+    "age_estimate": "about 140 years",
+    "age_min": 130,
+    "age_max": 150,
+    "location": {
+      "address": "Plaza de Murillo, at the corner of the Museo del Prado, 28014 Madrid",
+      "latitude": 40.4128287,
+      "longitude": -3.6924632,
+      "neighbourhood": "Paseo del Prado"
+    },
+    "story": "The Plaza de Murillo, the small formal square between the Prado's south door and the gate of the Royal Botanic Garden, holds four catalogued conifers and one broadleaf that outgrew every one of them. This hackberry stands 25 metres tall, close to the recorded ceiling for the species, and is about 140 years old, which puts its planting in the decade the square took its present shape. Celtis australis is the almez, a southern European tree with a smooth grey trunk that looks poured rather than grown, and fruit the size of a pea that turns from orange to near black. Spanish villages once coppiced it for the handles of hayforks, because the young wood bends a long way before it snaps, and whole valleys in Aragon lived off that trade. It is also, unglamorously, one of the toughest street trees in existence, indifferent to drought, wind and exhaust, which is exactly why a specimen this size is still standing on an island of pavement in central Madrid. Look for its flowers in April and you will not find them; they are green and smaller than a grain of rice. Stand under it in July, when the stone outside the Prado is at forty degrees, and the reason the square was planted this way needs no explaining.",
+    "verified_sources": [
+      "https://www.bocm.es/boletin/CM_Orden_BOCM/2015/02/04/BOCM-20150204-8.PDF",
+      "https://www.telemadrid.es/noticias/madrid/Un-paseo-bajo-la-sombra-de-los-15-Arboles-Singulares-de-Retiro-Recoletos-y-El-Prado-0-2696430333--20240811103355.html",
+      "http://jardin-mundani.blogspot.com/2016/04/las-cuatro-coniferas-monumentales-de-la.html"
+    ],
+    "access": "Free, public square",
+    "transport": "Estacion del Arte (Metro L1), 4 min walk",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "location_precision": "confirmed",
+    "notes": "Catalogued by the Comunidad de Madrid as 'Almez del Paseo del Prado'; both the Ayuntamiento's Paseo del Prado material and Telemadrid's August 2024 survey place it at the Plaza de Murillo corner of the museum, give the species as Celtis australis and the age as about 140 years with a height of 25 metres. Pin is the individually named OpenStreetMap node 'Almez' tagged denotation=natural_monument at 40.4128287, -3.6924632, which matches the published coordinate exactly. It is the only hackberry at this corner."
+  },
+  {
+    "id": "mad_014",
+    "name": "The Himalayan Spruce of the Plaza de Murillo",
+    "species": "Morinda Spruce (Picea smithiana)",
+    "age_estimate": "140-235 years (sources disagree)",
+    "age_min": 140,
+    "age_max": 235,
+    "location": {
+      "address": "Plaza de Murillo, between the Prado's south facade and the Royal Botanic Garden, 28014 Madrid",
+      "latitude": 40.412581,
+      "longitude": -3.69181,
+      "neighbourhood": "Paseo del Prado"
+    },
+    "story": "Of the four conifers catalogued in the Plaza de Murillo, this is the one nobody can name. Picea smithiana grows wild between two and nearly four thousand metres up, in Afghanistan, Kashmir, Nepal and Tibet, and reached Europe in 1818 when seed arrived in Scotland. It has the longest needles of any spruce and the most extreme weeping habit in the genus: the side branches hang almost vertically off the limbs, so a mature tree looks like it is slowly melting. This one is 22 metres tall with a trunk 1.85 metres around. Its age is honestly unsettled. The city's guides say 140 years; the botanical account attached to the square claims a planting around 1790, which would make it older than the Botanic Garden's present layout and older than nearly anything else rooted along the Paseo del Prado. The species honours Sir James Edward Smith, who founded the Linnean Society and bought Linnaeus's entire collection at twenty-four. Its other name, morinda, is a Himalayan word for flower honey and refers to the resin that beads on the young cones. A high-altitude spruce is the wrong tree for a Madrid summer by every measure that matters, which is what makes it worth standing under.",
+    "verified_sources": [
+      "https://www.bocm.es/boletin/CM_Orden_BOCM/2015/02/04/BOCM-20150204-8.PDF",
+      "https://www.telemadrid.es/noticias/madrid/Un-paseo-bajo-la-sombra-de-los-15-Arboles-Singulares-de-Retiro-Recoletos-y-El-Prado-0-2696430333--20240811103355.html",
+      "https://arbolesdemadrid.wordpress.com/2009/07/14/picea-del-himalaya-plaza-murillo/"
+    ],
+    "access": "Free, public square",
+    "transport": "Estacion del Arte (Metro L1), 4 min walk",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "flagged",
+    "location_precision": "confirmed",
+    "notes": "Protected by the Comunidad de Madrid since the 1992 decree and carried through into the 2015 consolidated catalogue. Second source is Telemadrid's August 2024 survey (species, location, 22 metres, 140 years); the long-running ArbolesdeMadrid blog independently identifies the specimen and its 1992 protection. Age flagged as a range because the two figures in circulation, about 140 years and a planting around 1790, cannot both be right and neither is sourced to a core count. Pin is the OpenStreetMap node 'Picea del Himalaya' carrying Wikidata Q108653996 (40.4126313, -3.6918174), about six metres from the published coordinate. It is the only Picea smithiana in the square."
+  },
+  {
+    "id": "mad_015",
+    "name": "The Four-Trunked Silver Maple of the Cecilio Rodriguez Gardens",
+    "species": "Silver Maple (Acer saccharinum)",
+    "age_estimate": "over 100 years",
+    "age_min": 100,
+    "age_max": 130,
+    "location": {
+      "address": "Jardines de Cecilio Rodriguez, Parque del Retiro, 28009 Madrid",
+      "latitude": 40.4139598,
+      "longitude": -3.678499,
+      "neighbourhood": "Retiro"
+    },
+    "story": "This maple gave up on having one trunk early. It divides at about head height into four main stems, each carrying its share of a crown 15 metres across and 20 metres tall, a form silver maples fall into readily and gardeners usually correct. Nobody corrected this one. It stands inside the Jardines de Cecilio Rodriguez, the walled Andalusian-style garden in the south-east corner of the Retiro, laid out in the 1940s on ground first set aside in 1929 for an extension to the park's zoo. The peacocks that patrol the hedges are what came of that plan instead. Acer saccharinum is North American, a tree of the river bottoms of the eastern United States, and it takes its name from the underside of the leaf rather than from sap: turn one over and it is pale silver white, so a breeze through the crown changes the colour of the entire tree at once. It flowers before it leafs, in tight red clusters in late February, weeks before anything else in the park has woken up. The garden shuts at dusk and is one of the quietest corners of the Retiro, which for a park this busy is worth knowing about.",
+    "verified_sources": [
+      "https://www.bocm.es/boletin/CM_Orden_BOCM/2015/02/04/BOCM-20150204-8.PDF",
+      "https://www.telemadrid.es/noticias/madrid/Un-paseo-bajo-la-sombra-de-los-15-Arboles-Singulares-de-Retiro-Recoletos-y-El-Prado-0-2696430333--20240811103355.html",
+      "https://www.wikidata.org/wiki/Q108472384"
+    ],
+    "access": "Free, public park. The Cecilio Rodriguez gardens keep shorter hours than the rest of the Retiro and close at dusk",
+    "transport": "Ibiza (Metro L9), 5 min walk",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "location_precision": "confirmed",
+    "notes": "Species is Acer saccharinum, the silver maple, per the Comunidad de Madrid catalogue and the tree's own name; the OpenStreetMap node tags it 'Acer saccharum', which is a different species and is treated here as a tagging error, not a source. Existence and centenarian age confirmed independently by Telemadrid's August 2024 survey, which places it in the Cecilio Rodriguez gardens. Pin is the individually named OpenStreetMap node carrying Wikidata Q108472384 (40.4139598, -3.678499)."
+  },
+  {
+    "id": "mad_016",
+    "name": "The Tall Cedar of the Avenida del Peru",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "about 120 years",
+    "age_min": 110,
+    "age_max": 130,
+    "location": {
+      "address": "Avenida del Peru at the Plaza de Guatemala, Parque del Retiro, 28009 Madrid",
+      "latitude": 40.4173579,
+      "longitude": -3.6808949,
+      "neighbourhood": "Retiro"
+    },
+    "story": "At 33 metres this is the tallest tree on the Retiro's catalogued list, and it does not look it, because it stands at a junction of wide avenues where nothing nearby gives the eye anything to measure against. Walk up to the trunk, 3.3 metres around, and the height arrives all at once. It is a Cedar of Lebanon of about 120 years, at the meeting of the Avenida del Peru and the Plaza de Guatemala in the park's north-east, a few paces from the equestrian monument to General Martinez Campos. That statue was unveiled in 1907, when the cedar was already a young tree of perhaps twenty, watching masons set the plinth. Lebanon cedars grow through three clearly different shapes. Young ones are narrow cones, middle-aged ones broaden, and only the old ones flatten into the tiered, table-topped silhouette that ended up on the Lebanese flag. This one is midway through the second stage, still conical at the top and already spreading below. Its crown spans 11 metres against the 22 of the older cedar down at the Prado. The two of them, twenty minutes apart on foot, are the same species caught at two points in a life that can run past a thousand years.",
+    "verified_sources": [
+      "https://www.bocm.es/boletin/CM_Orden_BOCM/2015/02/04/BOCM-20150204-8.PDF",
+      "https://www.telemadrid.es/noticias/madrid/Un-paseo-bajo-la-sombra-de-los-15-Arboles-Singulares-de-Retiro-Recoletos-y-El-Prado-0-2696430333--20240811103355.html",
+      "https://www.wikidata.org/wiki/Q108653804"
+    ],
+    "access": "Free, public park",
+    "transport": "Retiro (Metro L2), 10 min walk into the park, or O'Donnell (Metro L6), 8 min",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "location_precision": "confirmed",
+    "notes": "Catalogued as 'Cedro del Parque del Retiro'. Existence and location independently confirmed by Telemadrid's August 2024 survey, which places a centenarian cedar beside the Martinez Campos monument. Pin is the individually named OpenStreetMap node carrying Wikidata Q108653804 (40.4173579, -3.6808949), about eight metres from the published coordinate. The claim that it is the tallest of the Retiro's catalogued trees is checked against the other Retiro entries in this file and their recorded heights, not asserted city-wide."
+  },
+  {
+    "id": "mad_017",
+    "name": "The Blue Gum North of the Estanque",
+    "species": "Tasmanian Blue Gum (Eucalyptus globulus)",
+    "age_estimate": "over 100 years",
+    "age_min": 100,
+    "age_max": 130,
+    "location": {
+      "address": "North of the Estanque Grande, near the Paseo de Coches, Parque del Retiro, 28009 Madrid",
+      "latitude": 40.4188707,
+      "longitude": -3.6821243,
+      "neighbourhood": "Retiro"
+    },
+    "story": "In February 2015 the Comunidad de Madrid revised its register of singular trees and published two lists side by side. One added 69 trees. The other struck 43 off, for the blunt reason that they were dead or gone, and among them was the Eucalipto del Parque del Retiro. On the same page, a different eucalyptus a few hundred metres away was written into the catalogue in its place, listed for historical significance. This is the replacement. It stands north of the Estanque Grande, near the Paseo de Coches, over 20 metres tall with a crown about as wide and a trunk you cannot get your arms halfway round. Eucalyptus globulus is Tasmanian, brought to Spain in the 1860s on the theory that it drained marshes and drove off malaria, and planted so enthusiastically across the north-west that it has become a management problem there. In a Madrid park it is simply a giant, its bark peeling away in long ribbons and its leaves smelling of a cough sweet when you crush one. The trunk carries a century of carved initials, which is why the tree writers who have followed it since the 2000s keep asking the park for a sign and a low rail.",
+    "verified_sources": [
+      "https://www.bocm.es/boletin/CM_Orden_BOCM/2015/02/04/BOCM-20150204-8.PDF",
+      "https://www.telemadrid.es/noticias/madrid/Un-paseo-bajo-la-sombra-de-los-15-Arboles-Singulares-de-Retiro-Recoletos-y-El-Prado-0-2696430333--20240811103355.html",
+      "https://arbolesdemadrid.wordpress.com/2010/04/02/eucalipt-del-retiro/"
+    ],
+    "access": "Free, public park",
+    "transport": "Retiro (Metro L2), 8 min walk",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "curation_status": "ai_generated",
+    "location_precision": "confirmed",
+    "notes": "This entry is deliberately the replacement, not the tree it replaced. ORDEN 68/2015 Anexo I strikes 'Eucalipto del Parque del Retiro' (Eucalyptus globulus, Madrid) from the catalogue as dead or gone; Anexo II of the same order adds 'Eucalipto azul del Retiro' (Madrid, motivo: significacion historica). Verified alive in August 2024 by Telemadrid's survey of the 15 singular trees of Retiro, Recoletos and the Prado. Pin agrees between the published coordinate and an OpenStreetMap node named 'Eucalipto Azul del Parque del Retiro' with species=globulus and denotation=natural_monument at 40.418848, -3.6821557, about four metres apart. A second OSM node with the same name and Wikidata Q108473045 sits roughly 60 metres south-west; treated as a duplicate record rather than a second tree, since the two published sources both point at the northern position."
+  }
+]

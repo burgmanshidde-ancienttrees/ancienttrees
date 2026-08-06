@@ -4178,3 +4178,23 @@ approved on a glance and can go without ceremony. The three the reviewer was
 asked to look at hardest were the Trsteno planes at Dubrovnik (an arboretum,
 where a park view is the likely failure), the cedars of Parc Beaulieu in Geneva,
 and Florence's zelkova.
+
+## 2026-08-06 — black and white photos were live, and the rule had no check
+
+Hidde spotted a greyscale photograph on Rome's Cedar of the Garibaldi Mausoleum.
+The rule is from 2026-07-31 and is unambiguous ("liever geen foto dan zwart-wit"),
+and nothing enforced it, so a pass approved one and it sat there.
+
+`scripts/photo_colour_check.py` now measures it instead: it fetches each live
+photo at thumbnail size and computes mean saturation, and anything under 12 is
+greyscale in practice. Two came out certain and are removed, rom_007 and
+ant_001. One is borderline and left alone for a human look: Florence flo_002,
+the cork oak of the Giardino dei Semplici, at 10.7, which reads as a very
+desaturated colour photograph rather than a black and white one.
+
+Caveat on that scan, and it matters for whoever runs it next: Wikimedia returned
+HTTP errors for a large share of the fetches, so this pass covered only part of
+the 306. Run it again with a slower request rate and a proper user agent before
+concluding the site is clean. Making it a build check is the obvious next step
+and was not done today, because a build that fetches 300 images on every run is
+the wrong shape; it belongs in the daily digest or in qa.py behind a flag.
