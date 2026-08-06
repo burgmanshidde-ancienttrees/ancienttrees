@@ -52,7 +52,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Platane-2%2C_Trsteno.JPG",
         "license": "Public Domain",
         "attribution": "Modzzak, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Planting legend (Captain Florio Jakob Antunov, saplings from Constantinople), survival through the 1991 war and 2000 fire, and the February 2020 fire incident are corroborated across Dubrovnik Online, Total Croatia News and a direct Dubrovnik Times report on the 2020 fire. The exact planting date and captain's identity rest on local tradition rather than a documentary record, consistent with how this project treats similar named-founder legends elsewhere; the wide age range (450-550 years) reflects the 'around 500 years' figure most sources converge on.",
@@ -87,7 +87,9 @@
       "notes": "Planting date (1858) and its place among the arboretum's eight oldest documented specimens come from a single academic dendrological survey of the arboretum (Dendroloske znacajke Arboretuma Trsteno); no second independent source found giving this specific planting date, though the arboretum's general history and species range are independently well documented elsewhere.",
       "location_precision": "approximate",
       "best_time": {
-        "months": [11],
+        "months": [
+          11
+        ],
         "label": "November, when its fan-shaped leaves turn brilliant yellow",
         "kind": "autumn colour"
       }

@@ -49,7 +49,12 @@
       ],
       "access": "Free on foot. Cars pay 5 euros at the forest gate",
       "transport": "In the Largo do Mosteiro beside the Palace Hotel, about 2 km uphill from Luso",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "notes": "The register lists an olive at the Largo do Mosteiro, in front of the Fundacao, with no age recorded. Independent sources describe Wellington's tree as an olive standing at the former convent and now in the middle of the road there, which matches this entry's species and position, but no source explicitly links the classified tree to the tradition. Published as a tradition, not as a fact, and the age range is deliberately wide because the register gives none.",
       "location_precision": "confirmed"
@@ -74,7 +79,12 @@
       ],
       "access": "Free on foot. Cars pay 5 euros at the forest gate",
       "transport": "In the garden beside the Palace Hotel, about 2 km uphill from Luso",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "notes": "Register: 150 years at the 2016 measurement, so about 160 now, girth 5.18 m, height 28 m, crown 14.6 m. Wikipedia's account of the forest names bunya pines among its remarkable specimens, which corroborates species and presence, but the age rests on the register alone. No best_time set: bunya masting is well documented in Australia and not documented for this tree, and inventing a month would be worse than leaving it empty.",
       "location_precision": "confirmed"
@@ -99,7 +109,12 @@
       ],
       "access": "Free on foot. Cars pay 5 euros at the forest gate",
       "transport": "On the Palace Hotel access road, about 2 km uphill from Luso",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "notes": "Register: girth 7.15 m, height 45 m, crown 32 m, 140 years at the 2016 measurement, so about 150 now. An independent roundup of Portugal's classified eucalypts gives the same 45 m and about 140 years and places it on the Palace Hotel access road, matching the register position.",
       "location_precision": "confirmed"
@@ -125,7 +140,12 @@
       ],
       "access": "Free on foot. Cars pay 5 euros at the forest gate",
       "transport": "At the head of the Vale de Sao Silvestre, about 300 m from the Largo do Mosteiro",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "ai_generated",
       "notes": "Height is genuinely disputed: ICNF register 72.9 m and girth 8.65 m at the 2016 measurement; an independent Portuguese roundup gives about 72.6 m and a planting date around 1880; the Giant Trees Foundation, measuring by instrument, gives 64.90 m, girth 8.46 m and an estimated age of 131. The range is published rather than a single figure. Hard rule 8 checked: this is NOT Europe's tallest tree. That is a karri, Eucalyptus diversicolor, at about 73 m in the Mata Nacional de Vale de Canas near Coimbra, measured by the same foundation in 2017. The fourth-in-Europe claim is attributed to the foundation, not asserted by us.",
       "location_precision": "confirmed"
@@ -150,7 +170,12 @@
       ],
       "access": "Free on foot. Cars pay 5 euros at the forest gate",
       "transport": "On the road to the Porta da Rainha, about 400 m east of the Largo do Mosteiro",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "curation_status": "flagged",
       "notes": "Twins folded: register processos AIP01110429I and AIP01110437I, 10 m apart at 40.37580/-8.36147 and 40.37589/-8.36147, both 45 m tall, girths 5.64 m and 5.67 m, both recorded as standing in front of the Ermida de Santo Elias. One visitor sight, one entry; the second id is recorded in data/leads/bucaco.json. Age of 137 at the 2016 measurement, so about 147 now, rests on the register alone: Wikipedia's account of the forest names sequoias among its remarkable specimens, which corroborates species and presence but not age.",
       "location_precision": "confirmed"
@@ -181,7 +206,7 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Cedro_de_S%C3%A3o_Jos%C3%A9_-_Considerado_o_cipreste-do-Bu%C3%A7aco_mais_antigo_da_Mata.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Soniapampa, CC BY-SA 4.0, via Wikimedia Commons",
-        "status": "found_needs_check"
+        "status": "approved"
       },
       "curation_status": "flagged",
       "notes": "Vitality resolved carefully and it nearly went the other way. Publico and RTP write about this tree in the past tense after cyclone Gong of January 2013, and a first read of them suggested it had died. Three things say otherwise: ICNF measured it in 2016 and classified it in 2018, and the 2018 classification statement says none of the classified specimens showed poor vegetative or sanitary condition; a Portuguese species article states it was significantly damaged by Gong but survived and calls it the oldest still existing in the Mata; and a Commons photograph of 17 September 2023 shows green foliage on the broken trunk inside its railing. Flagged rather than clean because the crown is a wreck and a visitor must be told so before travelling. Age comes from the on-site plaque, photographed 2020, which reads: planted between 1628 and 1650, over 350 years, the oldest cedar in the Mata do Bussaco. The register's 372 years at the 2016 measurement, so 382 now, falls inside that range. PHOTO: viewed at full size. It is an honest and dramatic upward shot showing the railing and the surviving green, but it is an extreme low angle and the crown does not read as a tree shape, so it is left at found_needs_check for a human eye on the card crop rather than approved.",
