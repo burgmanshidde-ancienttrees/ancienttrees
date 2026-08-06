@@ -130,6 +130,13 @@ def main():
     recheck = "--recheck" in sys.argv
     if "--limit" in sys.argv:
         limit = int(sys.argv[sys.argv.index("--limit") + 1])
+    # Without this the sweep works alphabetically through 393 photo-less trees,
+    # which is the wrong shape for deepening a named city: Porto publishes 17
+    # trees with 4 photos and waiting for the alphabet to reach it is not a plan.
+    cities = []
+    if "--city" in sys.argv:
+        cities = [c.strip().lower()
+                  for c in sys.argv[sys.argv.index("--city") + 1].split(",")]
 
     queue = {}
     if os.path.exists(QUEUE):
@@ -139,6 +146,8 @@ def main():
     todo = []
     for f in sorted(glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
         d = json.load(open(f))
+        if cities and d["city"].lower() not in cities:
+            continue
         for t in d.get("trees", []):
             if (t.get("photo") or {}).get("url"):
                 continue
@@ -146,7 +155,8 @@ def main():
                 continue
             todo.append((d["city"], t))
 
-    print(f"{len(todo)} photo-less trees unchecked; sweeping {min(limit, len(todo))}")
+    where = f" in {', '.join(c.title() for c in cities)}" if cities else ""
+    print(f"{len(todo)} photo-less trees unchecked{where}; sweeping {min(limit, len(todo))}")
     for city, tree in todo[:limit]:
         cands = candidates_for(tree)
         entries[tree["id"]] = {
