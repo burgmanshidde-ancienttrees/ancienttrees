@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 9933,
+ "count": 9934,
  "trees": [
   {
    "id": "ams_001",
@@ -5229,14 +5229,14 @@
    "species": "Tipu Tree (Tipuana tipu)",
    "city": "Lisbon",
    "country": "Portugal",
-   "lat": 38.7116509,
-   "lng": -9.1547827,
-   "precision": "approximate",
+   "lat": 38.7136,
+   "lng": -9.1535,
+   "precision": "confirmed",
    "age_min": 85,
    "age_max": 100,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "lis_006",
@@ -5461,6 +5461,22 @@
    "has_photo": false,
    "has_story": true,
    "sources": 3
+  },
+  {
+   "id": "lis_020",
+   "tier": "highlighted",
+   "name": "The Tipuana of Jardim Roque Gameiro",
+   "species": "Tipu Tree (Tipuana tipu)",
+   "city": "Lisbon",
+   "country": "Portugal",
+   "lat": 38.7058,
+   "lng": -9.1437,
+   "precision": "confirmed",
+   "age_min": 105,
+   "age_max": 125,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 2
   },
   {
    "id": "lju_001",

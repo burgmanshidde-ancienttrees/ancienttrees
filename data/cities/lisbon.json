@@ -3,7 +3,7 @@
   "country": "Portugal",
   "status": "needs_curation",
   "intro": "Lisbon officially records almost every notable tree in the city. Since a 2012 law, the state can formally classify select specimens as trees of public interest, and Lisbon holds more of them than any other Portuguese municipality. Its oldest are four hollow olive trees outside a hilltop chapel in Alcântara, older than the Braganza dynasty. Its strangest is a rubber fig that escaped a cracked flowerpot in Mouraria and swallowed a street. Between them sit a bleeding dragon tree, a cypress mistaken for a cedar, and the Portuguese parliament's private tipu. All but one are free to visit.",
-  "meta_description": "Lisbon's oldest trees are classified by law. Meet the 457-year-old olives of Santo Amaro, a dragon tree nobody can age, and seventeen more.",
+  "meta_description": "Lisbon's oldest trees are classified by law. Meet the 457-year-old olives of Santo Amaro, a dragon tree nobody can age, and eighteen more.",
   "question_answer": "The oldest tree in Lisbon is one of four olive trees outside the Capela de Santo Amaro in Alcântara, estimated at around 457 years old, the only trees in the city with documented ages predating the 18th century. They stand in a small hilltop garden with a well known river view, an eleven minute walk from Alcântara-Terra train station.",
   "question_meta": "The 457-year-old olive trees of Santo Amaro are Lisbon's oldest. Their exact location, how to reach them, and eighteen more remarkable trees.",
   "question_context": "Lisbon keeps its oldest trees close to its water. The four olive trees at the Capela de Santo Amaro have grown against the wall of a small circular hilltop chapel in Alcântara since sometime in the 1500s, making them roughly 457 years old by the city's own classification records, decades older than anything else on this list. The chapel itself, built in 1549, is a national monument, but the trees have outlasted several rounds of restoration to the building beside them. Their runner up in age is Lisbon's dragon tree in the Jardim Botânico da Ajuda, which was already a mature adult when transplanted into the city's first botanical garden in 1768, making it at least 258 years old. Between them, the two trees frame two very different kinds of longevity: quiet olives outside a functioning chapel, and a dramatic, half collapsed dragon tree behind paid admission and a steel prop. Getting to the olive trees is straightforward: Alcântara-Terra train station on the Cascais line, then an eleven minute walk uphill past the Miradouro de Santo Amaro, one of the better river views in the city and usually far quieter than the famous ones downtown.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Lisbon's ancient trees free to visit?",
-      "a": "Eighteen of the nineteen are free, standing in public gardens, squares and street corners. The exception is the dragon tree at the Jardim Botanico da Ajuda, which requires a botanical garden ticket, about 1 euro, free on Sunday mornings."
+      "a": "Nineteen of the twenty are free, standing in public gardens, squares and street corners. The exception is the dragon tree at the Jardim Botanico da Ajuda, which requires a botanical garden ticket, about 1 euro, free on Sunday mornings."
     },
     {
       "q": "Why does Lisbon have so many classified 'trees of public interest'?",
@@ -159,14 +159,15 @@
       "age_max": 100,
       "location": {
         "address": "Jardim de São Bento (Praça da Constituição de 1976), Rua de São Bento, 1250-093 Lisboa",
-        "latitude": 38.7116509,
-        "longitude": -9.1547827,
+        "latitude": 38.7136,
+        "longitude": -9.1535,
         "neighbourhood": "São Bento, Estrela"
       },
       "story": "Portugal's parliament keeps a South American tree on its doorstep. This tipu, planted around ninety years ago in the small triangular garden beside the Palácio de São Bento, blooms with orange flowers marked by a brownish red spot at the base of each petal, a native of Bolivia and Argentina with no historical connection to the 16th century Benedictine monastery the palace used to be. The monastery became the seat of the Portuguese parliament in 1834 after the religious orders were dissolved, and the garden beside it has since watched ministers, protesters and the occasional political crisis unfold a few dozen metres from its canopy. The tree is one of Lisbon's officially classified trees of public interest, a status shared by barely two dozen specimens across the entire city. Its timber, tipa, is prized in South America for furniture, though nobody here has any plans to cut this one down for a table. Late winter and spring bring its flowering season, when the garden's modest third of a hectare turns a startling shade of orange directly across the street from where the country's laws get written.",
       "verified_sources": [
         "https://pt.wikipedia.org/wiki/Jardim_de_S%C3%A3o_Bento",
-        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/"
+        "https://getlisbon.com/discovering/public-interest-tree-in-lisbon/",
+        "Portugal ICNF national register of classified trees, processo KNJ1/347, 'tipuana', Praca de S.Bento, girth 4.2m, age_register 96 (measured 2016)"
       ],
       "access": "Free, public garden beside the Assembleia da República",
       "transport": "2 min walk from São Bento train station (Linha de Sintra)",
@@ -177,7 +178,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           2,
@@ -187,7 +188,7 @@
         ],
         "label": "late winter into spring, when the garden turns a startling shade of orange"
       },
-      "notes": "Photo removed 2026-08-02: the approved file (Chaimite no Jardim da Praca da Constituicao de 1976) is a photograph of an armoured car parked in the garden, not of the tipu tree. Caught by Hidde on the live site. Any replacement must show the tree itself, per the Cadiz standard."
+      "notes": "Photo removed 2026-08-02: the approved file (Chaimite no Jardim da Praca da Constituicao de 1976) is a photograph of an armoured car parked in the garden, not of the tipu tree. Caught by Hidde on the live site. Any replacement must show the tree itself, per the Cadiz standard. Pin corrected 2026-08-06: the stored coordinate was an address-level geocode of the garden, 244m from ICNF's own surveyed point for the same species, age and classification at Praca de S.Bento (processo KNJ1/347); no second Tipuana tipu found anywhere else in the register near Sao Bento, so treated as the same tree and the register's coordinate adopted, upgrading the pin from approximate to confirmed. Found while verifying an unrelated Lisbon cluster; flagged for a session decision rather than acted on blind, then adopted because the register point is the only tree-level GPS either source has ever given this entry."
     },
     {
       "id": "lis_006",
@@ -648,6 +649,45 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "ICNF processo KNJ1/402, 'tamareira', classified Aviso n.º 15 612/2001, D.R. 2.ª série. Register figures: girth 1.62 m, height 26.7 m, age 133 at the 2015 survey, so about 144 in 2026. Second source: Correio da Manhã's data feature on Lisbon's trees, which cites the Câmara Municipal de Lisboa calling this the tallest tree in the city at 38 m, taller than the 34 m Arco da Rua Augusta; Portal do Jardim independently confirms Phoenix dactylifera as one of the garden's three classified trees. HEIGHT CONFLICT, flagged and stated in the story rather than resolved: 38 m (municipality) versus 26.7 m (national register, 2015). Both are published claims, no source reconciles them, and the entry does not pick a winner. The 'tallest tree in Lisbon' claim is presented as the municipality's, not as our own, per hard rule 8. Neither claim is repeated as a superlative anywhere else in the corpus."
+    },
+    {
+      "id": "lis_020",
+      "name": "The Tipuana of Jardim Roque Gameiro",
+      "species": "Tipu Tree (Tipuana tipu)",
+      "age_estimate": "roughly 115 years",
+      "age_min": 105,
+      "age_max": 125,
+      "location": {
+        "address": "Jardim Roque Gameiro (Jardim do Cais do Sodré), Cais do Sodré, Lisboa",
+        "latitude": 38.7058,
+        "longitude": -9.1437,
+        "neighbourhood": "Cais do Sodré, Misericórdia"
+      },
+      "verified_sources": [
+        "data/registers/portugal-icnf.json (processo KNJ1/403, D.R. n.º 298, II Série de 27/12/2001, girth 2.98m, age_register 105 at last_measured 2015)",
+        "https://pt.wikipedia.org/wiki/Jardim_Roque_Gameiro"
+      ],
+      "access": "Free, public garden beside Cais do Sodré station",
+      "transport": "Cais do Sodré station (Metro Green Line, train and ferry hub), 2 minute walk, the garden is directly adjacent",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This tree stands in the middle of a bus terminal, and that is the honest story rather than something to smooth over. The garden, popularly called Jardim do Cais do Sodre, sits exactly where the Sintra and Cascais railway lines, the Green Line metro and the Cacilhas ferry all converge, one of the first patches of green a visitor arriving into Lisbon by train or boat actually walks past. For years Carris buses ate most of the available space; a renovation under the city's 'A Square in Each Neighbourhood' programme has been handing some of it back. Through all of it, a single Tipuana tipu has kept growing at the centre, classified a Tree of Public Interest since 2001 and now roughly 115 years old, a South American species that reached Lisbon long before anyone built a transit hub around it. Its trunk runs just under three metres round. Nearby stands a bronze sculpture called Homem do Leme, the Helmsman, and an old kiosk once used as a ticket office, both easier to notice than the tree that predates them. Come between February and May and the argument for stopping gets easier: the canopy turns a burnt orange with clustered flowers, briefly outshining the buses idling underneath it.",
+      "best_time": {
+        "months": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "kind": "flowers",
+        "label": "February to May, when the canopy turns burnt orange above the bus terminal"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "hero_tree_id": "lis_009"
