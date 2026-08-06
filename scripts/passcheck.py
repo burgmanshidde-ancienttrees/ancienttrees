@@ -130,6 +130,25 @@ def centre_from_registers(key):
     return (lats[len(lats) // 2], lngs[len(lngs) // 2])
 
 
+def centre_from_any_name(arg):
+    """Locate a place in the registers by trying every name it might be filed
+    under. The alias map exists to turn a local name into our English slug, and
+    applying it here does the opposite of what is needed: registers file Genoa
+    as "Genova", so translating the working name into English threw the match
+    away and the brief said "no coordinates known" for a city with sixteen
+    register entries. Try the raw name, the alias, and the alias read backwards.
+    """
+    key = fold(arg)
+    reverse = {fold(v): k for k, v in ALIAS.items()}
+    for candidate in (key, fold(ALIAS.get(key, "")), fold(reverse.get(key, ""))):
+        if not candidate:
+            continue
+        centre = centre_from_registers(candidate)
+        if centre:
+            return centre
+    return None
+
+
 def resolve(arg, live):
     """Returns (match_or_None, coord_or_None). Distance is the real test."""
     coord = None
@@ -151,7 +170,7 @@ def resolve(arg, live):
         # name did not match a live city directly; try locating it via the
         # registers and distance-checking against every live city, which is how
         # Napoli/Naples-class misses get caught even without an alias entry
-        coord = centre_from_registers(key)
+        coord = centre_from_any_name(arg)
         if coord:
             near = min(live, key=lambda c: km(coord, (c["lat"], c["lng"])), default=None)
             if near and km(coord, (near["lat"], near["lng"])) <= SAME_CITY_KM:
@@ -209,7 +228,7 @@ def brief(arg, live):
         print(f"  New entries start at id {nid}. Never edit the city file; deliver to")
         print(f"  data/research/{match['slug']}-verified.json (JSON array, one object per tree).")
     else:
-        centre = coord or centre_from_registers(fold(ALIAS.get(fold(arg), fold(arg))))
+        centre = coord or centre_from_any_name(arg)
         taken = sorted({i[:3] for c in live for i in c["ids"]})
         print("STATUS: NOT published, this would be a NEW city. Floor: 4 verified trees or no page.")
         print(f"  Pick a 3-letter id prefix NOT in: {' '.join(taken)}")
