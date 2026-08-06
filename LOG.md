@@ -2,6 +2,17 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-06 (session, with Hidde) — The assembly line: tokens per tree get a werkwijze instead of a wish
+
+Hidde's brief: 32,870 tokens per tree is too much, runs leave on wrong premises, findings are not read back when they matter, and over-strict rule readings (Zaragoza) burn windows. Built in session, all reversible:
+
+- **`scripts/passcheck.py --brief <place>`**: the brief generator. Prints a paste-ready verification brief from the project's own data: live status and ids, the actual register candidates within 20 km sorted by distance (with the near-a-live-tree warning), earlier leads and blocked entries by name and reason, the hosts that hang, the stop condition and the cost-log line. Proof it was needed came free: this morning's handover listed Valencia as "source found, never done"; the generator's first run shows Valencia live with 10 trees.
+- **`BRIEF_RESEARCH.md` and `BRIEF_WRITING.md`**: the diet rulebooks. A verification pass reads two pages instead of 86KB of corpus, delivers structured facts with `verify_notes`, writes no prose and hunts no photos; a writing pass turns 15 to 20 verified trees across cities into stories in one context, tone read once.
+- **`scripts/photo_hunt.py` plus `data/photo-queue.json`**: photo retrieval by Commons API instead of by agent (measured agent cost was 72k per usable photo). Geosearch hits count only when the title mentions the tree, species or a tree word, name-search hits lead, 12 candidates max, empty results recorded so nothing is re-asked by accident. A periodic viewing pass judges the queue against the Cadiz standard; the script approves nothing.
+- **CLAUDE.md Step 1 and DECISIONS.md** carry the werkwijze: generated briefs only, verify/write split with model tiering (Sonnet verifies, the strong model writes), no pass under six expected candidates, photos out of research passes. The meter target: 15k tokens per published tree or less, read weekly from RETRO.md.
+
+FOR HIDDE: nothing blocks. The open question you asked in session (other or free AI models next to Claude) is answered in chat: not now, hard rule 5 applies, and the first week of the assembly line decides whether it is even needed.
+
 ## 2026-08-06 — Two live self-contradicting collections fixed; Guimaraes opens (4 trees, register-first)
 
 New session. `python3 scripts/visitors.py`: 121 visits, 251 page views over the last 7 days (2026-07-30 to 2026-08-05), roughly flat week over week. No reader submissions reachable this session (`SUPABASE_SERVICE_KEY` not set, `SUBMISSIONS_CSV_URL` not set, skipped silently per the rule). `gh` was unreachable all session (every call required approval and none came), so the usual stale-workflow checks were skipped rather than guessed at, same limitation prior sessions have hit.
