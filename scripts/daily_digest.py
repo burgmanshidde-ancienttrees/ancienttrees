@@ -79,7 +79,14 @@ def fetch_gsc(today):
     # needs a bigger pool to pick the highest-impression miss out of.
     gap_queries = q({"startDate": start, "endDate": end, "dimensions": ["query"],
                       "rowLimit": 25, "dataState": "all"})
-    return days, queries, pages, gap_queries
+    # Page and query crossed, which the separate pulls above cannot tell you.
+    # /rome takes 165 impressions and 2 clicks while /lisbon takes 104 and 7,
+    # and no amount of page data or query data alone says why. The pair does:
+    # a page seen a lot and clicked rarely is either ranking for the wrong
+    # question or showing the wrong snippet, and those need opposite fixes.
+    pairs = q({"startDate": start, "endDate": end, "dimensions": ["page", "query"],
+               "rowLimit": 200, "dataState": "all"})
+    return days, queries, pages, gap_queries, pairs
 
 
 def known_terms():
@@ -128,7 +135,7 @@ def find_content_gap(gap_queries):
 def gsc_section(gsc):
     if gsc is None:
         return ("Search Console: GSC_* secrets not configured; section skipped.", None)
-    days, queries, pages, gap_queries = gsc
+    days, queries, pages, gap_queries, pairs = gsc
     days = [d for d in days if d.get("impressions") or d.get("clicks")]
     if not days:
         return ("Search Console: connected, but Google returned no rows for the window.", None)
@@ -141,6 +148,26 @@ def gsc_section(gsc):
             clean_query(gap["keys"][0]), gap["impressions"], gap["position"])
         if gap else "- Content lead: none of the top 25 queries lack a matching page"
     )
+    # The pages Google shows most and visitors click least, with what those
+    # impressions are actually for. Ranked by wasted impressions rather than by
+    # volume, because that is the number a fix would move.
+    seen = {}
+    for r in pairs:
+        page, query = r["keys"][0], r["keys"][1]
+        d = seen.setdefault(page, {"imp": 0, "clicks": 0, "q": []})
+        d["imp"] += r["impressions"]
+        d["clicks"] += r["clicks"]
+        d["q"].append((r["impressions"], query, r.get("position", 0)))
+    leaks = sorted((v["imp"] - v["clicks"] * 20, p, v) for p, v in seen.items()
+                   if v["imp"] >= 20 and v["clicks"] * 100 < v["imp"] * 3)
+    leak_lines = []
+    for _, page, v in sorted(leaks, key=lambda t: -t[2]["imp"])[:3]:
+        top = "; ".join("%s (i%d, p%.0f)" % (clean_query(qq), i, pos)
+                        for i, qq, pos in sorted(v["q"], reverse=True)[:3])
+        leak_lines.append("- Seen, not clicked: %s (c%d/i%d, %.1f%%) for %s" % (
+            page.replace("https://ancienttrees.app", ""), v["clicks"], v["imp"],
+            v["clicks"] * 100.0 / max(v["imp"], 1), top))
+
     lines = [
         "Search Console (freshest day Google provides, data lags 2-3 days):",
         "- %s: %d clicks, %d impressions, avg position %.1f%s" % (
@@ -152,6 +179,7 @@ def gsc_section(gsc):
         "- Top pages (10d): " + "; ".join(
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages) if pages else "- Top pages: none",
         gap_line,
+        *leak_lines,
     ]
     return "\n".join(lines), {"clicks": latest["clicks"], "impressions": latest["impressions"],
                                "prev_clicks": prev["clicks"] if prev else 0,
