@@ -15,7 +15,7 @@ Written 2026-07-28 from the nine-product benchmark (AllTrails, Komoot, Wikiloc, 
     [logo] Map | Walks | Explore v          [My trees] [Sign in]
 
 - **Map**: the find-near-me product, the homepage hero grown up.
-- **Walks**: the signature walks index (ships when the routes ship; until then the item stays hidden).
+- **Walks**: an index of cities that have walks, never a page per walk. See the walks ruling below; until walks ship, the item stays hidden.
 - **In season**: demoted from the nav on 2026-07-29 (Hidde: "wordt veel te belangrijk gemaakt"). Season is a map layer (gold pins, pulse, popup badge) and a per-tree block, not a destination; /in-season stays live for search but is linked only from season contexts and the footer.
 - **Explore** (dropdown): Cities, Countries, Species, Collections, Suggest a tree: the entire acquisition layer in one hub, eBird-style. Nothing deleted, everything demoted. Countries joined on 2026-08-04, after Hidde could not find the country pages that had been live and unlinked since 2026-08-01; /countries is their index and every country page is one hop from the menu.
 - **My trees**: the collection, visible logged-out as the AllTrails-style hook; becomes the account dashboard.
@@ -66,7 +66,21 @@ The collect button sits above the story (Atlas Obscura's law). Logged-out it sti
 
 ## The city page, target anatomy
 
-Stays the workhorse it is. Order tightens to: map with the ten pins, then the walk banner ("Walk 7 of these trees, 4.9 km"), then the ten trees with collect buttons on each row, then explore-onward links. The question pages, species pages and collections keep feeding it from below.
+Stays the workhorse it is. Order tightens to: map with the pins, then the walks (see the ruling below), then the trees with collect buttons on each row, then explore-onward links. The question pages, species pages and collections keep feeding it from below.
+
+## Walks live INSIDE the city page. Ruled by Hidde, 2026-08-06
+
+His words, and they are a standing no rather than a preference: "I'm not asking for extra pages. I never want extra pages for extra walks." A walk is **a feature within the city page, never a page of its own.**
+
+What he does want, in his own framing: a city like Rome has its overview page and its trees, and from that one page you can pick one of perhaps three suggested walks and focus on it. So a city with many trees offers several walks, the visitor chooses one, and the page narrows to it. The trees are the permanent thing; a walk is a way of reading them.
+
+Three consequences that settle questions this project kept reopening:
+
+- **No walk contract in SEO_GEO_BLUEPRINT.md, and no walk URLs.** The blueprint work that a routes feature seemed to require does not exist, because there is no new page type. This is the cheap path, not the compromise: it needs Hidde's approval for nothing (hard rule 7 is about new page types) and it creates no indexed URLs to regret (hard rule 3).
+- **Selecting a walk must not cost the page its SEO.** The city page is the indexed asset and every tree has to stay in the served HTML. So a walk selector filters or highlights what is already on the page; it never replaces the tree list with a fetched subset, and it never hides trees from a crawler.
+- **The clustering is already done and is not a research job.** Measured 2026-08-06 across the published set: Porto is a single walk of all 17 trees across 1.6 km, Barcelona is two clean walks (10 across 0.8 km, then 8), Rome is 7 across 1.0 km plus a second of 4, Padua is 8 across 0.6 km. `scripts/cluster_register.py` and the same single-link method produce these from coordinates alone, so what a walk needs is a name, an order and a distance, not a research pass.
+
+The tree-first versus walk-first question in BACKLOG.md is unaffected: this ruling says where a walk lives, not whether the tree or the walk is the hero.
 
 ## The five deliberate deviations from AllTrails (Hidde asked "wijk ergens af?", 2026-07-28)
 
