@@ -295,6 +295,15 @@
         "note": "Bought nothing. A session write pass on the same 9 verified trees the night run was already batching with Barcelona; the machine published first and this output was discarded. The session checked backlog.py at the start of the day but not again before dispatching, and a night run landed in between. Harness number: the pass self-reported 34,000.",
         "wasted": 89210,
         "brief_wrong": false
+      },
+      {
+        "target": "photo-judge Padua/Porto/Lisbon/Rome",
+        "kind": "photo",
+        "tokens": 129333,
+        "trees": 3,
+        "note": "21 images viewed, 3 approved, 11 trees keep honest gaps. Harness number; the pass self-reported 118k. 39k per approved photo, better than the recorded 72k but still bad, and the cause is measurable: photo_hunt.py matched species names globally, so Porto's 18 candidates were Metrosideros in New Zealand and Atlas cedars in Slovenia and Poland.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
