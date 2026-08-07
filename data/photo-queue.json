@@ -336,7 +336,9 @@
      "licence": "CC BY",
      "author": "(c) Steven Bodzin, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.41463,2.1541383333"
+     "obs_location": "41.41463,2.1541383333",
+     "judged": "rejected: leaf close-up, no whole tree",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 149623535 (Ceratonia siliqua)",
@@ -345,7 +347,9 @@
      "licence": "CC BY",
      "author": "(c) Steven Bodzin, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.41463,2.1541383333"
+     "obs_location": "41.41463,2.1541383333",
+     "judged": "rejected: bark/branch close-up",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 304758351 (Ceratonia siliqua)",
@@ -354,7 +358,9 @@
      "licence": "CC BY",
      "author": "(c) 黃美滿, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.4150916667,2.1538638333"
+     "obs_location": "41.4150916667,2.1538638333",
+     "judged": "rejected: flower close-up",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 304758351 (Ceratonia siliqua)",
@@ -363,7 +369,9 @@
      "licence": "CC BY",
      "author": "(c) 黃美滿, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.4150916667,2.1538638333"
+     "obs_location": "41.4150916667,2.1538638333",
+     "judged": "rejected: seed pods amid foliage, no trunk",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 124895274 (Ceratonia siliqua)",
@@ -372,7 +380,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Ingimar, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "41.4142206765,2.152627632"
+     "obs_location": "41.4142206765,2.152627632",
+     "judged": "rejected: seed pods amid foliage, upward angle, no trunk",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 124895274 (Ceratonia siliqua)",
@@ -381,7 +391,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Ingimar, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "41.4142206765,2.152627632"
+     "obs_location": "41.4142206765,2.152627632",
+     "judged": "rejected: canopy and upper trunk from below a plaza wall, foliage dominates, crown not cleanly readable",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "Openverse: Carob's viaduct",
@@ -432,7 +444,9 @@
      "licence": "CC BY",
      "author": "(c) Clifton Ladd, C.W.B., some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.3887833333,2.1873783333"
+     "obs_location": "41.3887833333,2.1873783333",
+     "judged": "rejected: fallen fruit on the ground, tree not the subject",
+     "judged_date": "2026-08-07"
     }
    ]
   },
@@ -495,7 +509,9 @@
      "licence": "CC BY",
      "author": "(c) Marc Riera, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.3671413,2.1517911"
+     "obs_location": "41.3671413,2.1517911",
+     "judged": "rejected: backlit shot straight up into canopy against sky, no trunk visible",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 313121553 (Fraxinus pennsylvanica)",
@@ -504,9 +520,14 @@
      "licence": "CC BY",
      "author": "(c) Marc Riera, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.3671413,2.1517911"
+     "obs_location": "41.3671413,2.1517911",
+     "judged": "rejected: backlit shot straight up into canopy against sky, no trunk visible",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "rejected",
+   "outcome_note": "All candidates viewed and rejected: none show the whole tree per the Cadiz standard."
   },
   "bcn_022": {
    "city": "Barcelona",
@@ -4261,7 +4282,9 @@
      "licence": "CC BY",
      "author": "(c) Juan Cruzado Cortés, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "55.9490983333,-3.2053133333"
+     "obs_location": "55.9490983333,-3.2053133333",
+     "judged": "rejected: close view of foliage, umbrella form and trunk not shown",
+     "judged_date": "2026-08-07"
     }
    ]
   },
@@ -4500,7 +4523,9 @@
      "licence": "CC BY",
      "author": "(c) Karim Haddad, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "46.2225,6.1508333333"
+     "obs_location": "46.2225,6.1508333333",
+     "judged": "rejected: sequoia cone held in a hand, tree not the subject",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 111697559 (Sequoiadendron)",
@@ -4509,9 +4534,14 @@
      "licence": "CC BY",
      "author": "(c) Karim Haddad, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "46.2225,6.1508333333"
+     "obs_location": "46.2225,6.1508333333",
+     "judged": "rejected: foliage sprig held in a hand, tree not the subject",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "rejected",
+   "outcome_note": "All candidates viewed and rejected: none show the whole tree per the Cadiz standard."
   },
   "gen_006": {
    "city": "Geneva",
@@ -4715,9 +4745,14 @@
      "licence": "CC BY",
      "author": "(c) Andre Hosper, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "53.20425833,6.57696667"
+     "obs_location": "53.20425833,6.57696667",
+     "judged": "rejected: trunk closeup dominated by a birdhouse, other trees in frame, flat overcast light",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "rejected",
+   "outcome_note": "All candidates viewed and rejected: none show the whole tree per the Cadiz standard."
   },
   "gro_003": {
    "city": "Groningen",
@@ -4997,7 +5032,9 @@
      "licence": "CC BY-SA",
      "author": "(c) SK53, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "50.063791,19.957799"
+     "obs_location": "50.063791,19.957799",
+     "judged": "rejected: flower close-up, tree not the subject",
+     "judged_date": "2026-08-07"
     }
    ]
   },
@@ -5269,9 +5306,14 @@
      "licence": "CC BY",
      "author": "(c) Yuliana Leshchenko, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "36.7196139678,-4.4186586513"
+     "obs_location": "36.7196139678,-4.4186586513",
+     "judged": "rejected: upward shot of spiny branches and flowers, trunk and full crown not shown",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "rejected",
+   "outcome_note": "All candidates viewed and rejected: none show the whole tree per the Cadiz standard."
   },
   "mlg_006": {
    "city": "Malaga",
@@ -5381,6 +5423,10 @@
   {
    "date": "2026-08-08",
    "note": "Photo-judging pass with working egress. upload.wikimedia.org was reachable (the 2026-08-07 note was a GitHub Actions proxy block, not a dead host); it rate-limits at roughly 1 request per 3 seconds. 29 images rendered and viewed, 5 approved (ber_013, bat_002, bel_001, bel_003, bel_004). Correction to the standing brief: the 19 wikidata candidates were already judged on 2026-08-07 (12 approved, 6 rejected); only ber_013 was outstanding. Barcelona and Rome are exhausted, every remaining unjudged tree in both has zero candidates."
+  },
+  {
+   "date": "2026-08-07",
+   "note": "Photo-judging pass, scheduled routine, remote session (not GitHub Actions). upload.wikimedia.org and api.openverse.org both refused (403 on CONNECT via the environment's egress proxy), same policy block as the CI runner. inaturalist-open-data.s3.amazonaws.com was reachable, so this pass judged the 20 reachable iNaturalist candidates across 8 trees with no prior outcome (Barcelona x9 across 3 trees, Edinburgh, Geneva x2, Groningen, Krakow, Malaga): all 20 rejected, leaf/fruit/bark/hand close-ups or backlit canopy shots with no readable trunk. bcn_002, bcn_013, edi_007 and kra_003 each still carry one unreached Wikimedia or Openverse candidate and stay open rather than closed out. Four other candidates in the queue (lis_013, mad_002, mil_011, prg_012) were already judged on 2026-08-07 by an earlier pass (held/rejected); this pass checked candidate-level `judged` fields before viewing anything and left those calls untouched rather than re-judging blind."
   }
  ]
 }
