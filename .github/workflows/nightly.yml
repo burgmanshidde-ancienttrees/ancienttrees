@@ -29,7 +29,19 @@ on:
     # reach into the morning on purpose; the presence beacon pauses the chain
     # for four hours the moment he opens a session, so they yield to him
     # automatically. Recalibrate at Monday's usage glance.
-    - cron: "0 1,3,5,7,21,23 * * *"
+    # 2026-08-08, Hidde: "add 3 more for tonight". Nine knocks instead of six,
+    # every 90 minutes from 22:30 to 10:00 CEST, each still capped at 60
+    # minutes by timeout-minutes below. Arithmetic, so the next recalibration
+    # is not guesswork: six runs cost roughly 6-7% of the week per day, so nine
+    # lands near 10%, about 70% over seven days if it ran every day. It should
+    # NOT run every day at this rate. Drop back to the six-knock line below the
+    # moment the weekly limit tightens, which is the same lever pulled on
+    # 2026-07-31 when the week was being eaten in two days.
+    #     six-knock fallback:  - cron: "0 1,3,5,7,21,23 * * *"
+    - cron: "30 20,22 * * *"
+    - cron: "0 1,4,7 * * *"
+    - cron: "30 2,5,8 * * *"
+    - cron: "0 10 * * *"
   workflow_dispatch: {}
 
 permissions:
