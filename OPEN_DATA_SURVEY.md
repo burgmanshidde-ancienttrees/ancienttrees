@@ -475,3 +475,56 @@ region publish", and MASAF is the index rather than the source.
 
 Not yet imported. Worth a proper scout: it would give age to Genoa, Savona,
 Imperia and La Spezia at once.
+
+## Germany: Berlin's Naturdenkmale register, found and imported 2026-08-07 (VERDICT: usable, CC0-equivalent)
+
+CLAUDE.md's own rollout notes said "No German tree register is imported
+(fragmented per-Bundesland, no cleared licence)" as of the Berlin web-research
+pass on 2026-08-06/07 that shipped three Pfaueninsel oaks by hand. That was
+true of the district-by-district `daten.berlin.de` listings (the
+Charlottenburg-Wilmersdorf page lists only its own 38 trees) but not of the
+underlying dataset: Berlin publishes one city-wide WFS layer covering all 12
+Bezirke at once, and it was never checked because the search that finds it
+has to start from "Schutzgebiete und Schutzobjekte nach Naturschutzrecht"
+(protected areas and objects under nature-conservation law), not from
+"Baumkataster" (which is the 900,000-tree bulk street inventory, unfiltered
+and not what rule 10's semantic-filter test wants).
+
+**Dataset**: "Schutzgebiete und Schutzobjekte nach Naturschutzrecht Berlin
+(inklusive Natura 2000)", `daten.berlin.de` id
+`schutzgebiete-und-schutzobjekte-nach-naturschutzrecht-berlin-inklusive-natura-2000-wfs-c36fe3f2`.
+**Licence**, read from the dataset's own listing page: "Datenlizenz
+Deutschland - Zero - Version 2.0 (dl-de-zero-2.0)", the German public-sector
+equivalent of CC0: no attribution required, commercial use allowed, no
+conditions at all. The strongest licence this project has found for any
+register so far, ahead of even CC BY.
+
+**Endpoint**: `https://gdi.berlin.de/services/wfs/schutzgebiete`, WFS 2.0
+(note: 2.0 wants `typeNames`, not the 1.x `typeName`, and `srsName=EPSG:4326`
+on the GetFeature request returns coordinates already in lat/lon, no
+reprojection needed). Layer `schutzgebiete:a_nd`, titled "Naturdenkmale:
+Baeume und Findlinge", 708 features total: 638 tagged `nd_art: "Baum"`
+(trees) and 70 tagged `"Findling"` (protected glacial boulders, excluded).
+Fields per tree: German and Latin species name, district (Bezirk), postcode,
+a free-text place hint, the designation reason and the ordinance date. Same
+gap as Italy's MASAF: **no age field, no girth field**, only when the tree
+was legally designated, which is a different date from when it was planted
+(Vienna's Rathauspark lesson applies here too: do not treat the ordinance
+date as a planting date).
+
+Fetched in full (708 features, paginated by `startIndex`) and filtered to
+the 638 trees: `data/registers/berlin-naturdenkmale.json`. Clustered with
+`scripts/cluster_register.py`: 43 walkable clusters of 4+ within 2km,
+covering 587 of the 638 (92%), the largest being 70 trees across 3.7km
+centred near 52.5172,13.3653 (splits into 9 sub-walks). This replaces
+Berlin's only prior cluster, three Pfaueninsel oaks found by web research on
+2026-08-06/07, with a real city-wide candidate pool the same way Vienna's
+register did.
+
+Not yet cross-referenced against a second source per tree (register-only
+counts as one source per the two-layer rules; a verification pass still
+needs a second confirmation per candidate before anything ships). Worth
+checking whether Berlin's own Baumkataster (the bulk inventory, different
+department, DL-DE-BY-2.0 per its Grün Berlin listing) can supply planting
+years the way Vienna's did, matching by genus and proximity, before the next
+Berlin pass.
