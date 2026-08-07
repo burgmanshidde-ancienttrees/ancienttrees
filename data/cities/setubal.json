@@ -74,7 +74,12 @@
       ],
       "access": "Free, open public square",
       "transport": "In the historic centre, on foot",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "missing"},
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Q98444729.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Vanbasten 23, via Wikimedia Commons",
+        "status": "approved"
+      },
       "curation_status": "ai_generated",
       "notes": "The register gives 60 years at the 2015 measurement, so about 71 today. The parish records a larger girth than the register (4.06m against 3.38m), which is base against breast height rather than a disagreement.",
       "location_precision": "confirmed"
