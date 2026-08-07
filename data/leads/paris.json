@@ -32,7 +32,16 @@
       "name": "Amur Cork Tree, Square Michel-Foucault",
       "species": "Amur Cork Tree (Phellodendron amurense)",
       "place": "Square Michel-Foucault, 43 Rue des Ecoles, 75005 Paris",
-      "reason": "Not yet independently sourced or given coordinates. paris.fr's own page for the square (used to verify the neighbouring par_014 Oriental Planes entry) mentions a remarkable Amur cork tree here too, planted 1925, with a lightning scar and a trunk that balls up beneath the branches. Same tiny garden as par_014, so a future pass could verify and add it with zero new walking distance. Needs a second independent source and a precise position before it ships."
+      "reason": "Not yet independently sourced or given coordinates. paris.fr's own page for the square (used to verify the neighbouring par_014 Oriental Planes entry) mentions a remarkable Amur cork tree here too, planted 1925, with a lightning scar and a trunk that balls up beneath the branches. Same tiny garden as par_014, so a future pass could verify and add it with zero new walking distance. Needs a second independent source and a precise position before it ships. This pass searched again for a second source (WebSearch for phellodendron + square Michel-Foucault + lightning) and found none beyond generic species pages; still needs a dedicated fetch of the paris.fr equipment page or a Wikipedia France mention, which this pass's tooling could not reach (see verify pass note on egress)."
+    },
+    {
+      "name": "Saule pleureur (Weeping Willow), Quai de l'Horloge",
+      "species": "Weeping Willow (Salix babylonica)",
+      "register_girth_cm": 160,
+      "place": "Quai de l'Horloge, 75001 Paris",
+      "latitude": 48.85775,
+      "longitude": 2.3394,
+      "reason": "Register-listed as a designated remarkable tree at Quai de l'Horloge (register_id 230281), girth 160cm. Not delivered as verified because the identity and age are genuinely unclear and this looks like exactly the kind of confusion the register pitfalls warn about: web sources repeatedly conflate at least two different weeping willows on the Ile de la Cite. (1) One search result attributed to city sources gives this Quai de l'Horloge tree a planting date of 1750, which is not biologically credible for a Salix babylonica (weeping willows rarely live past 100-150 years even in ideal conditions; 276 years would be extraordinary and unprecedented for the species) and was not corroborated by a source this pass could actually open and read, only by a search-engine summary. (2) A separate, much more famous willow story belongs to Square du Vert-Galant at the western tip of the same island: sources there agree the current willow was replanted in 2009/2010, succeeding an older specimen, and is popularly (and incorrectly) called 'the oldest tree in Paris', a claim that already properly belongs to par_001. Quai de l'Horloge runs along the north side of the island near the Conciergerie, a few hundred metres east of Vert-Galant, so this may be a third, distinct tree, or a confused report of one of the other two. Do not ship until a future pass can open a primary source (paris.fr, the city's own arbresremarquablesparis dataset page with a photo, or an on-the-ground/Street View check) and pin down which willow this actually is and a credible planting date. This pass's tooling (WebFetch and curl) returned EGRESS_BLOCKED / proxy 403 for every domain attempted this session, including paris.fr, wikipedia.org and even non-Paris domains, so no primary source could be opened directly; only WebSearch's synthesized snippets were available, which is why this one stays a lead rather than a block or a ship."
     }
   ],
   "blocked": [
@@ -53,6 +62,42 @@
       "latitude": 48.85576,
       "longitude": 2.35399,
       "reason": "Very likely the SAME tree as already-published par_007 ('The Elm of Saint-Gervais', Ulmus minor, planted 1935, at 48.85536,2.3527). Same species, same tiny square (Place Saint-Gervais is a small plaza in front of one church), coordinates only ~100m apart, which is within the kind of register-coordinate imprecision the register's own caveat warns about. Blocking rather than delivering as new to avoid a duplicate entry for what a visitor would experience as one tree. If a future pass finds solid evidence this is a genuinely distinct second elm in the same small square (e.g. a park map showing two separate specimens), it can be un-blocked and re-verified."
+    },
+    {
+      "name": "Robinier faux-acacia, Square Rene Viviani (register candidate, register_id 124358)",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "register_girth_cm": 365,
+      "place": "Square Rene Viviani, 2 Rue du Fouarre, 75005 Paris",
+      "latitude": 48.852191436286596,
+      "longitude": 2.3472861870229993,
+      "reason": "This is the SAME tree as already-published par_001, the 1601 Robinier (48.85216,2.34698). Same square (the register entry uses the Rue du Fouarre frontage address rather than the Quai de Montebello one par_001 uses, but Square Rene-Viviani has only one entrance area and this is the same small garden), same species, coordinates about 23m apart, well within register coordinate imprecision for a single small square. Never ship as a second tree."
+    },
+    {
+      "name": "Orme du Caucase, Square Samuel Paty (register candidate, register_id 132479)",
+      "species": "Caucasian Elm (Zelkova carpinifolia)",
+      "register_girth_cm": 267,
+      "place": "Square Samuel Paty, 3 Place Paul Painleve, 75005 Paris",
+      "latitude": 48.84994647322495,
+      "longitude": 2.3442238573079095,
+      "reason": "This IS already-published par_013 ('The Caucasian Elm of Square Samuel Paty'), not a distinct candidate: identical coordinates to par_013's location field and the exact 267cm girth already quoted in par_013's own published story. Listed in the verification brief as a scouted register candidate but it is the same physical tree already on the site."
+    },
+    {
+      "name": "Platanes d'Orient x2, Square Michel-Foucault (register candidates, register_ids 132542/132543)",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "register_girth_cm": "415 and 470",
+      "place": "Square Michel-Foucault, 43 Rue des Ecoles, 75005 Paris",
+      "latitude": 48.84932,
+      "longitude": 2.34519,
+      "reason": "These ARE already-published par_014 ('The Oriental Planes of Square Michel-Foucault'), not new candidates: same coordinates, same two girths (415cm and 470cm) already quoted in par_014's published story, which already treats the two trunks as one entry."
+    },
+    {
+      "name": "Platane commun, Quai Saint Bernard (register candidate, register_id 298210)",
+      "species": "London Plane (Platanus x hispanica)",
+      "register_girth_cm": 380,
+      "place": "Quai Saint Bernard, 75005 Paris",
+      "latitude": 48.84929027337201,
+      "longitude": 2.35621122946564,
+      "reason": "This IS already-published par_015 ('The Plane of Quai Saint-Bernard'): identical coordinates and identical 380cm girth already quoted in par_015's published story. Not a new tree."
     }
   ]
 }

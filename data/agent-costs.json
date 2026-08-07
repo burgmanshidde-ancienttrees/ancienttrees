@@ -450,6 +450,15 @@
         "note": "Scheduled routine. Brief's item 1 (paris-verified.json) was a false premise, file doesn't exist. Item 2 (photo queue) fully exhausted: only inaturalist-open-data.s3.amazonaws.com reachable, zero of its candidates are both unjudged and reachable once tree-level judged/outcome fields are checked (not just candidate-level). Item 3: cross-referenced Berlin's already-imported Naturdenkmal register against Pfaueninsel leads, confirmed ber_011=ND 6-102/B and ber_012=ND 6-101/B (previously unconfirmed/unmatched), found exact register coordinates for the long-stuck ND 6-108/B lead (45m from ber_011), which would be the 4th tree the Pfaueninsel walk needs to clear the 4-tree floor. Did not publish it: only one source (the register) reachable this session, WebFetch/curl blocked to baumkunde.de and berlin.de (policy 403, confirmed via proxy status endpoint), so the required second source is left as a well-scoped lead for a session that can fetch.",
         "wasted": 0,
         "brief_wrong": true
+      },
+      {
+        "target": "Paris",
+        "kind": "verify",
+        "tokens": 141390,
+        "trees": 3,
+        "note": "Harness number; the pass self-reported 58000. Deepened the Latin Quarter/Marais cluster: par_016 (Twisted Beech, Square des Arenes de Lutece), par_017 (Anne Frank Chestnut, symbolic significance like par_007), par_018 (Fig of Square Georges Cain, flagged: age century-old but undated). 4 register candidates blocked as duplicates of par_001/013/014/015. Willow at Quai de l'Horloge left as a lead: two distinct Ile-de-la-Cite willows conflated in search results, one claim (1750 planting) not biologically credible for the species. WebFetch/curl fully egress-blocked this session (403 on every domain including example.com), verified via WebSearch synthesis only.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ],
     "2026-08-08": [
