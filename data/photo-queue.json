@@ -5427,6 +5427,10 @@
   {
    "date": "2026-08-07",
    "note": "Photo-judging pass, scheduled routine, remote session (not GitHub Actions). upload.wikimedia.org and api.openverse.org both refused (403 on CONNECT via the environment's egress proxy), same policy block as the CI runner. inaturalist-open-data.s3.amazonaws.com was reachable, so this pass judged the 20 reachable iNaturalist candidates across 8 trees with no prior outcome (Barcelona x9 across 3 trees, Edinburgh, Geneva x2, Groningen, Krakow, Malaga): all 20 rejected, leaf/fruit/bark/hand close-ups or backlit canopy shots with no readable trunk. bcn_002, bcn_013, edi_007 and kra_003 each still carry one unreached Wikimedia or Openverse candidate and stay open rather than closed out. Four other candidates in the queue (lis_013, mad_002, mil_011, prg_012) were already judged on 2026-08-07 by an earlier pass (held/rejected); this pass checked candidate-level `judged` fields before viewing anything and left those calls untouched rather than re-judging blind."
+  },
+  {
+   "date": "2026-08-07",
+   "note": "Photo-judging pass, scheduled routine. Checked both candidate-level `judged` and tree-level `judged`/`outcome` fields (the earlier same-day pass only checked the former, which would have re-judged ber_013 and lei_005 blind since both are already resolved at the tree level: ber_013 approved via a Wikidata/Wikimedia candidate, lei_005 rejected outright). After that correction, zero candidates in the queue are both unjudged and reachable: the only reachable host is inaturalist-open-data.s3.amazonaws.com, and every iNaturalist candidate in the queue already carries a judged verdict, at either the candidate or tree level. upload.wikimedia.org and api.openverse.org (380 and 4 unjudged candidates respectively) remain fully unreachable this session; confirmed via the agent proxy status endpoint as policy denials (403 on CONNECT), not a rate limit or transient failure. No photos judged this pass; none were available to judge."
   }
  ]
 }
