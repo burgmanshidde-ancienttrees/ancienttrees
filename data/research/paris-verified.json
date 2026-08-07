@@ -1,0 +1,73 @@
+[
+  {
+    "id": "par_013",
+    "name": "The Caucasian Elm of Square Samuel Paty",
+    "species": "Caucasian Elm (Zelkova carpinifolia)",
+    "age_estimate": "not documented for this individual; the species itself was introduced to Paris in 1782, which is context about the species, not this tree's planting date",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Square Samuel Paty, 3 Place Paul Painleve, 75005 Paris",
+      "latitude": 48.84995,
+      "longitude": 2.34422,
+      "neighbourhood": "Latin Quarter, opposite the Sorbonne, 5th arrondissement"
+    },
+    "verified_sources": [
+      "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/table/",
+      "https://paris.vivarbre.fr/orme",
+      "https://en.wikipedia.org/wiki/Square_Samuel-Paty"
+    ],
+    "access": "Free, open public square, no closure found",
+    "transport": "Cluny-La Sorbonne (Metro 10) or Maubert-Mutualite (Metro 10), 3-4 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register: girth 267cm, height 20m, register no. 132479 (Ville de Paris ODbL dataset). Independently corroborated by paris.vivarbre.fr (a specialist French tree-reference site), which cites the same register number, height and girth for this exact tree at this exact square, and adds species context: Zelkova carpinifolia is native to the Caucasus, was introduced to Europe in the 18th century and to Paris specifically in 1782, and is much less susceptible to Dutch elm disease than true elms, which is why it has survived where so many Paris elms have not. Do not present the 1782 introduction date as this individual tree's planting date, it is a species-history fact only; no source gives this specimen's own age. Square Samuel Paty (formerly Place/Square Paul Painleve) was renamed in 2021 by the Paris Council to honour Samuel Paty, the history-geography teacher murdered in 2020, per Wikipedia and the local mairie du 5e page; worth a line for the writer but keep it factual and respectful. No access restriction found."
+  },
+  {
+    "id": "par_014",
+    "name": "The Oriental Planes of Square Michel-Foucault",
+    "species": "Oriental Plane (Platanus orientalis)",
+    "age_estimate": "not documented; register gives girth only (470cm and 415cm for the two trees)",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Square Michel-Foucault, 43 Rue des Ecoles, 75005 Paris",
+      "latitude": 48.84932,
+      "longitude": 2.34519,
+      "neighbourhood": "Latin Quarter, opposite the College de France, 5th arrondissement"
+    },
+    "verified_sources": [
+      "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/table/",
+      "https://www.paris.fr/equipements/squares-auguste-mariette-pacha-et-michel-foucault-2445",
+      "https://fr.wikipedia.org/wiki/Square_Michel-Foucault"
+    ],
+    "access": "Free, open public square, no closure found",
+    "transport": "Maubert-Mutualite (Metro 10) or Cluny-La Sorbonne, 3-5 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "TWO register entries a few metres apart in the same small garden (opposite the College de France): girth 470cm at one point, 415cm a few metres away. This is NOT the classic 'twin' duplicate-registration case (different girths, genuinely two trunks), but they read as one visitable feature in a roughly 2000 sqm pocket garden, so I am delivering them as ONE entry per the collectible-point rule rather than two near-identical pages; note both register girths for the writer in case a future pass wants to split them. Existence and species corroborated independently by paris.fr's own page for the square, which lists platanes among the species covering its slopes, and by the French Wikipedia page for the square (renamed 2005 in honour of philosopher Michel Foucault, near the College de France, contains a bronze Dante statue by Jean-Paul Aube). No individual age found for either trunk; a 470cm-girth oriental plane is a genuinely large, old specimen by Paris standards (compare the Parc Monceau champion at 800cm/1814-planted, and the 605cm Parc Montsouris platane planted 1840), so 'large and old, exact age undocumented' is the honest framing, not a fabricated year. Bonus lead for a future pass: the same tiny garden also holds a remarkable Amur cork tree planted 1925 with a lightning scar and a trunk that balls up beneath the branches (per paris.fr), which is not in my candidate list but is worth flagging as a strong future candidate."
+  },
+  {
+    "id": "par_015",
+    "name": "The Plane of Quai Saint-Bernard",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "not documented for this individual specimen; the register gives girth (380cm) only",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Quai Saint-Bernard, near Jardin Tino-Rossi, 75005 Paris",
+      "latitude": 48.84929,
+      "longitude": 2.35621,
+      "neighbourhood": "Left Bank of the Seine, near the Jardin des Plantes, 5th arrondissement"
+    },
+    "verified_sources": [
+      "https://opendata.paris.fr/explore/dataset/arbresremarquablesparis/table/",
+      "https://fr.wikipedia.org/wiki/Jardin_Tino-Rossi"
+    ],
+    "access": "Free, open riverside quay and sculpture garden (Jardin Tino-Rossi), no closure found",
+    "transport": "Gare d'Austerlitz (Metro 5/10, RER C) or Jussieu (Metro 7/10), 5-8 min walk along the river",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "WEAKER VERIFICATION, flag prominently: the register places this plane tree (girth 380cm) on Quai Saint-Bernard. The French Wikipedia page for the adjoining Jardin Tino-Rossi (created 1980, open-air sculpture museum) independently confirms that the garden contains 'old plane trees that existed before the garden was created', which corroborates that old, pre-1980 plane trees genuinely stand along this stretch of quay, but does NOT individually distinguish this exact registered tree from any other old plane nearby. So existence-of-old-planes-here is corroborated by a second independent source; this SPECIFIC tree's identity is corroborated only by the register. Treat this as the thinnest of the five delivered here. No age found; a 380cm girth plane is large but this stretch of quay has several old planes, so do not claim uniqueness or a specific planting date. If the writer wants a stronger anchor, the Jardin Tino-Rossi angle (open-air sculpture museum on the Seine, planes older than the garden itself) is the honest hook."
+  }
+]
