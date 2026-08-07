@@ -366,8 +366,15 @@ def candidates_for(tree, city=""):
         # everything rather than falling back to unfiltered hits is deliberate:
         # an honest gap costs nothing, and nine wrong-continent candidates cost
         # a viewing pass.
+        plant = tree_tokens(tree)
+        # BOTH a place word and a plant word, the same bar Openverse uses.
+        # Place alone was not enough: the 2026-08-07 viewing pass paid to look
+        # at a parked Vespa, a museum sarcophagus, a concert stage and two
+        # streets of buildings, all of which named a Roman or Barcelona street
+        # correctly and contained no tree at all.
         named = [s["title"] for s in d.get("query", {}).get("search", [])
-                 if any(p in s["title"].lower() for p in places)]
+                 if any(p in s["title"].lower() for p in places)
+                 and any(t in s["title"].lower() for t in plant)]
     except Exception as e:
         print(f"    name search failed: {e}", file=sys.stderr)
     tokens = tree_tokens(tree)
