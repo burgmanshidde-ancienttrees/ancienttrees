@@ -99,16 +99,20 @@ jobs:
                afternoon. Berlin leads with 3, Rome and New York with 4. Aim
                for 6 to 8 within roughly 2 km by adding trees that JOIN the
                existing cluster, never scattered singles elsewhere in the city.
-            3. THEN SEASON DATA, which is cheap and badly behind: Rome has
-               best_time on 3 of 20, Dublin 0 of 10, Paris 3 of 13. Add
-               data/phenology/<species>.json where a species file is missing,
-               and set best_time only where the peak is real, per CLAUDE.md
-               Step 3. An empty month beats an invented one.
-            4. PHOTOS ARE PARKED for now (Hidde, 2026-08-08: "work on photos
-               later"). Keep running scripts/photo_hunt.py, which is free and
-               fills the queue, but do NOT spend a window judging: this
-               runner's egress proxy blocks upload.wikimedia.org, and judging
-               happens in Hidde's own sessions.
+            3. PHOTOS come next, and they outrank season data (Hidde,
+               2026-08-08). Runs cannot judge images, because this runner's
+               egress proxy blocks upload.wikimedia.org, so a run's whole
+               contribution here is to keep scripts/photo_hunt.py sweeping,
+               which is free and fills the queue for a session that can see.
+               Never spend a window judging.
+            4. SEASON DATA IS LAST, and do not sink time into it (Hidde,
+               2026-08-08: "don't waste too much time on finding the season of
+               the tree, it's less important than photos and we can do it
+               later"). If a species file already exists in data/phenology/,
+               setting a real best_time while writing a story is free and
+               welcome. Researching a species' phenology from scratch is not
+               worth a research window right now. An empty month still beats an
+               invented one.
 
             Order of cities within all that: Barcelona, Rome, Paris, Berlin,
             Amsterdam, New York from phase 1, then Lisbon, Vienna, Edinburgh,
