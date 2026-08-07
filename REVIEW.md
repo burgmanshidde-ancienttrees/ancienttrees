@@ -13,6 +13,81 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-07
+
+**BLOCKER** — Every Contract H park page ships without BreadcrumbList
+schema, contradicting the contract that shipped it yesterday. Contract H
+(SEO_GEO_BLUEPRINT.md v1.7, added 2026-08-06) specifies "Schema | ItemList +
+BreadcrumbList" and the built pages render a visible breadcrumb nav
+(`Home > Parks > [park name]`), but `build_park_page()`
+(`scripts/build_site.py:3722`) only appends an `ItemList` to the graph:
+`graph = site_graph() + [{"@type": "ItemList", ...}]`, with no call to
+`breadcrumb_schema()`. Every other page builder in the file calls it
+(question, city, species, country, tree, collection, in-season: 11 call
+sites at lines 3081/3181/3351/3499/3616/3806/3993/4039/4089/4143/5238).
+Verified live on all 9 published park pages: `site/dist/parks/giardini-
+montanelli-milan.html` and `site/dist/parks/york-museum-gardens.html` both
+show `WebSite`, `Organization`, `ItemList`, `ListItem` in their `@graph` and
+no `BreadcrumbList`. Violates hard rule 7 ("NEVER ship a page that doesn't
+conform to SEO_GEO_BLUEPRINT.md") and P4 (every fact visible in prose must
+also be structured data) for a page type that has existed for about 18
+hours across 9 live URLs. Fix is one line in `build_park_page()`: append
+`breadcrumb_schema(crumb_items, canonical)` to `graph`, matching every
+other page type.
+
+**BLOCKER** — `/zaragoza/oldest-tree.html` still contradicts itself after
+yesterday's fix, on the exact page that fix's own commit message named as
+the worst case. `age_token()` now correctly reads "150" out of zar_001's
+own `age_estimate` string ("Centennial, no exact figure recorded, probably
+around 150 years"), so the `<title>` reads "(150 Years Old)". But the
+city's hand-written `question_answer` (data/cities/zaragoza.json), rendered
+as the page's answer-first opening paragraph, still opens "Nobody has
+established it," then explains the best a source offers is "roughly 150 to
+180 years" for unnamed candidates and that the one tree with any public age
+claim (zar_001, the page's own mechanically-picked "oldest") only carries
+the word "centennial." A visitor reads a title asserting a specific age and,
+one paragraph later, the page's own text saying nobody knows it. Same
+defect class as yesterday's fixed BLOCKER (P2/P7: the quoted title must be
+true, and a flagged uncertainty must not be overwritten by manufactured
+precision), different mechanism: `age_token()` is now faithful to the
+individual tree's own field, but nothing checks that number against what
+the hand-written `question_answer` actually asserts about the page's
+central claim. Swept all 91 city files for the same shape (mechanically-
+picked oldest tree has a numeric age, but `question_answer` opens with
+"nobody"/"no one"/"not established"/"unknown"); Zaragoza is the only match,
+so this is narrow, not systemic. `data/cities/zaragoza.json` was not
+touched in the reviewed window, so this is a pre-existing gap that survived
+the fix rather than a new regression. Fix is data-side: either give
+zar_001 an honest range (`age_min`/`age_max` only, no bare `age_estimate`
+number) so `age_token()` has nothing false to quote, or rewrite
+`question_answer` to state the 150-180 range as the answer instead of
+opening with a flat denial the title then contradicts.
+
+**WARN** — The three new Paris trees added today (par_013-015, commit
+b7704b0) render an entire explanatory sentence as their above-the-fold age
+chip instead of a scannable fact. Contract A requires the fact block to be
+"scannable, no prose." All three trees carry a discursive `age_estimate`
+string written as a caveat sentence rather than a short label, and the
+template (`{esc(t.get('age_estimate',''))}`, same pattern used for the
+`tree-label` chip elsewhere) prints it verbatim. Verified live:
+`/paris/caucasian-elm-of-square-samuel-paty.html`'s chip row reads "not
+documented for this individual; the species itself was introduced to Paris
+in 1782, which is context about the species, not this tree's planting
+date" as one unbroken chip; `/paris/oriental-planes-of-square-michel-
+foucault.html` and `/paris/plane-of-quai-saint-bernard.html` do the same at
+shorter length ("not documented; register gives girth only (470cm and
+415cm for the two trees)", "not documented for this individual specimen;
+the register gives girth (380cm) only"). The content itself is honest and
+exactly the kind of caveat P7 wants, it just belongs in the story prose
+(where similar context already appears for these same three trees), not
+crammed into the one-line fact chip meant to be read in half a second.
+Not a BLOCKER: nothing false ships, it just reads as a wall of text where
+every other tree page on the site shows a short phrase. Three pages only
+(this run's own new trees), so likely fixable by shortening these three
+`age_estimate` fields rather than a template change.
+
+---
+
 ## 2026-08-06
 
 **BLOCKER** — Page `<title>` tags show a false age whenever a tree's
