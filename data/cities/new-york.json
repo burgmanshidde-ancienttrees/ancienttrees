@@ -2,10 +2,10 @@
   "city": "New York",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "New York City runs a government registry for this: the Parks Department's Great Trees of New York City list, started in 1985 and expanded in 2024 after a nomination drive drew more than 270 submissions. Every tree carries that designation. The five boroughs each hold at least one of the ten, deliberately: a courthouse elm and a botanical garden's tallest oak get the same paragraph as a tulip tree growing wild in a park tied to the Dutch colony's earliest land deals. Some are colonial-era survivors; one was planted so a park would have something to be famous for.",
-  "meta_description": "NYC runs an official Great Trees registry. Meet a 300-year-old Greenwich Village elm, a wild tulip tree older than the city itself, and eight more.",
+  "intro": "New York City runs a government registry for this: the Parks Department's Great Trees of New York City list, started in 1985 and expanded in 2024 after a nomination drive drew more than 270 submissions. Every tree carries that designation. The five boroughs each hold at least one, deliberately: a courthouse elm and a botanical garden's tallest oak get the same paragraph as a tulip tree growing wild in a park tied to the Dutch colony's earliest land deals. Some are colonial-era survivors; one was planted so a park would have something to be famous for.",
+  "meta_description": "NYC runs an official Great Trees registry. Meet a 300-year-old Greenwich Village elm, a wild tulip tree older than the city itself, and eleven more.",
   "question_answer": "New York City's oldest tree is very likely the Queens Giant, a tulip tree in Alley Pond Park estimated between 350 and 450 years old by different measures, old enough to predate the Dutch colony of New Amsterdam entirely. It stands in a wooded section of the park in eastern Queens, reachable on foot from the Douglaston Long Island Rail Road station.",
-  "question_meta": "NYC's oldest tree is likely the Queens Giant, a 350-450 year old tulip tree in Alley Pond Park. Its story, exact location, and nine more Great Trees.",
+  "question_meta": "NYC's oldest tree is likely the Queens Giant, a 350-450 year old tulip tree in Alley Pond Park. Its story, exact location, and twelve more Great Trees.",
   "question_context": "The Queens Giant's claim to being New York City's oldest living thing rests on measurement rather than legend. At 133.8 feet, it is the tallest carefully measured tree in the five boroughs, and tulip trees of that height in undisturbed forest are reliably centuries old; the New York City Parks Department states it is at least 368 years old, while some arborists place the range as wide as 350 to 450. Either figure puts its germination before the 1664 English takeover of New Amsterdam, and some local accounts connect trees in this stretch of Alley Pond Park to 17th century land dealings between the Dutch West India Company and the Matinecock people who lived here first, though no source ties this specific trunk to a documented transaction. What is not in question is that it has spent its entire life essentially unmanaged, growing in what is now protected forest rather than a planted garden, which is rare enough in New York that the Parks Department calls it possibly the oldest living organism in the metropolitan area. Getting there: Douglaston station on the LIRR Port Washington line, then a short walk into Alley Pond Park's wooded trails.",
   "faq": [
     {
@@ -303,7 +303,13 @@
       "age_estimate": "150-200 years",
       "age_min": 150,
       "age_max": 200,
-      "best_time": { "months": [10, 11], "label": "late October, when its leaves turn the deep oxidised red the species is named for, inside forest that predates the city around it" },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October, when its leaves turn the deep oxidised red the species is named for, inside forest that predates the city around it"
+      },
       "location": {
         "address": "New York Botanical Garden, 2900 Southern Boulevard, Bronx, NY 10458",
         "latitude": 40.861706,
@@ -334,7 +340,12 @@
       "age_estimate": "over 100 years (precise planting date unconfirmed)",
       "age_min": 100,
       "age_max": 180,
-      "best_time": { "months": [5], "label": "May, when its pink flower spikes stand out against the ordinary white-flowering chestnuts nearby" },
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when its pink flower spikes stand out against the ordinary white-flowering chestnuts nearby"
+      },
       "location": {
         "address": "Van Cortlandt House Museum, Broadway and West 246th Street, Bronx, NY 10471",
         "latitude": 40.89066221,
@@ -357,6 +368,100 @@
       "curation_status": "flagged",
       "notes": "No source gives a specific planting date; NYC Parks itself only states the tree is 'believed' to have been planted by a Van Cortlandt family member, making it 'over a century old.' Age range left wide to reflect that genuine uncertainty. Pin corrected 2026-07-29, about 72m: NYC Parks' own Great Trees page for this entry links to NYC Tree Map ID 5081918, a 42-inch DBH Aesculus x carnea (matching this story's 'trunk over three feet across') at this point. Some residual ambiguity remains honestly noted: NYC Parks' own reporting mentions three horse chestnuts on the house's east lawn, so this is specifically the one the registry tagged for this listing, not necessarily the only one a visitor might notice first.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "nyc_011",
+      "name": "The Great Elm of Central Park West",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "long-established, exact planting date undocumented",
+      "age_min": 100,
+      "age_max": 165,
+      "location": {
+        "address": "Central Park, northeast corner of Central Park West & West 77th Street, New York, NY 10024",
+        "latitude": 40.7794829,
+        "longitude": -73.9735811,
+        "neighbourhood": "Upper West Side, Manhattan"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=45",
+        "https://greatesttreesofnyc.tumblr.com/post/126561022095/american-elm-central-park-west-and-west-77th",
+        "https://www.ilovetheupperwestside.com/coolest-tree-in-nyc/",
+        "https://www.westsiderag.com/2024/10/09/parks-releases-new-map-of-citys-great-trees-eight-of-them-are-in-central-park"
+      ],
+      "access": "Free, public park",
+      "transport": "81st Street-Museum of Natural History (Metro B/C), 4 min walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Central Park once had roughly 500 American elms along its western edge. By 1985, a New York Times survey counted 23 left, and this is one of them. It stands right at the park's edge on Central Park West and 77th Street, directly across from the American Museum of Natural History, wider than it is tall: NYC Parks measures it at just under 51 feet high with a 55 foot canopy.\n\nDutch elm disease reached New York in the 1930s and worked through the city for decades, killing elms faster than anyone could replant them. This one kept standing while its neighbours came down one by one, close enough to the street that passersby now call it, without much competition, the most beautiful tree on the block.\n\nNobody has dated it precisely. What is documented is its survival: officially designated one of the city's Great Trees, standing beside a statue of Alexander von Humboldt, who spent his career cataloguing exactly this kind of specimen. No planting record narrows the guess further than a century or more, so that wide range is what the story states rather than a false precise number.\n\nWalk in from the Museum of Natural History subway stop and it is the first tree inside the park, an entrance marker planted long before anyone thought to protect it.",
+      "notes": "NYC Parks Great Trees register (id=45), corroborated by a dedicated Great Trees blog, a local Upper West Side blog, and Central Park's 2024 Great Trees map update (Westside Rag). Measures 50.84ft tall, 55ft canopy spread. No planting date found anywhere; age given as a wide, honest range rather than a false precise figure. Coordinates are the street intersection, not a surveyed trunk point, so precision is approximate.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_012",
+      "name": "The Elms on the Rocks",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "long-established, exact planting date undocumented",
+      "age_min": 100,
+      "age_max": 165,
+      "location": {
+        "address": "Rock outcrop just east of the Mall (Literary Walk), Central Park, New York, NY 10022",
+        "latitude": 40.772764,
+        "longitude": -73.971437,
+        "neighbourhood": "Central Park (Mall/Literary Walk area), Manhattan"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=38",
+        "https://www.nycgovparks.org/facilities/great-trees?id=39",
+        "https://www.untappedcities.com/guide-central-park-great-trees/"
+      ],
+      "access": "Free, public park",
+      "transport": "72nd Street (Metro B/C), 8 min walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Two American elms grow straight out of exposed bedrock east of Central Park's Mall, their roots spread flat across the rock like something poured rather than planted. NYC Parks designates them as two separate Great Trees, ids 38 and 39, but they stand close enough on the same outcrop that almost nobody visits one without the other.\n\nThe rock underneath predates both trees by a margin that makes their own age beside the point. This is Manhattan schist, some of it dated by geologists at over a billion years old, exposed here by the same nineteenth century landscaping that shaped the rest of the park. The trees carry no planting record of their own, each roughly 78 feet tall, trunks gnarled from decades of finding purchase where there is barely any soil to root in.\n\nWhat they prove is less about age than persistence. An elm in open parkland can be felled by disease or storm in a season. One growing out of solid rock has already solved a harder problem, and its awkward, rock gripping shape is the visible record of that fight.\n\nThey sit a few hundred metres from the Mall's elm allee and about 600 metres from the Ramble, an easy stop on the same walk through the park's oldest plantings.",
+      "notes": "Two American elms on the same bedrock outcrop, registered separately by NYC Parks (ids 38 and 39) but folded into one entry per the register-twin rule since a visitor sees them as one destination. No planting date for either. Coordinates are the Mall's known reference point rather than a surveyed point for the outcrop itself.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nyc_013",
+      "name": "The Elm Allee of Literary Walk",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "about 100 years (planted in the 1920s, the third planting on this site)",
+      "age_min": 95,
+      "age_max": 106,
+      "location": {
+        "address": "The Mall (Literary Walk), Central Park, New York, NY 10022",
+        "latitude": 40.772764,
+        "longitude": -73.971437,
+        "neighbourhood": "Central Park (Mall/Literary Walk), Manhattan"
+      },
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=37",
+        "https://www.centralparknyc.org/articles/american-elms-central-park-mall",
+        "https://www.untappedcities.com/guide-central-park-great-trees/"
+      ],
+      "access": "Free, public park",
+      "transport": "72nd Street (Metro B/C), 8 min walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Central Park's most photographed avenue of trees is not the original one. The Mall, also called Literary Walk, has been replanted with American elms twice before the row standing today: the first two plantings failed when foot traffic compacted the soil around the roots, and the elms there now went in during the 1920s, the third attempt, protected from the start by low fencing along the path.\n\nThat makes these trees roughly a century old, not the century and a half some press coverage implies by counting from the park's 1858 design. NYC Parks lists the grove as an official Great Tree, and it is often called the largest grove of American elms in the world, a claim the park's own conservancy states more carefully: one of the largest remaining plantations of a species that Dutch elm disease has been cutting down, city-wide, since the 1930s. Central Park still holds about 1,600 elms, several hundred on a rotating fungicide programme, and still loses 15 to 30 a year to the same disease that ended the first two plantings here by other means.\n\nWalk the Mall in full leaf and it reads as a cathedral aisle, two unbroken rows meeting overhead. Every one of them is a replacement, and every one of them is still, by the numbers, worth the trip.",
+      "notes": "NYC Parks Great Trees register (id=37), Central Park Conservancy's own article, and Untapped Cities' Great Trees guide. Age corrected from press coverage that implies an 1858 planting: the Conservancy states this is the THIRD planting on the site, installed in the 1920s after the first two failed from soil compaction. Superlative softened per hard rule 8: some sources call it the largest American elm grove in the world, the Conservancy's own wording (used here) is 'one of the largest remaining plantations'. Coordinates are the Mall's known reference point, an approximate pin for a promenade rather than one trunk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
