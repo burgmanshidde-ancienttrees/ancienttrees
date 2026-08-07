@@ -1,0 +1,44 @@
+{
+  "common_name": "Field Elm",
+  "habit": "deciduous",
+  "leaf": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "flowers": [
+    2,
+    3
+  ],
+  "fruit": [
+    3,
+    4,
+    5
+  ],
+  "colour": [
+    10,
+    11
+  ],
+  "bare": [
+    11,
+    12,
+    1,
+    2,
+    3
+  ],
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "nice",
+    "colour": "nice"
+  },
+  "flower_label": "dark red tassels on bare branches, weeks before any leaf",
+  "fruit_label": "pale green winged samaras crowd the bare twigs before the leaves open",
+  "sources": [
+    "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/field-elm/",
+    "https://www.rhs.org.uk/plants/164598/ulmus-minor/details"
+  ]
+}
