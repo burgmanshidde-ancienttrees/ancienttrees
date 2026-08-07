@@ -25,6 +25,28 @@ DIST = Path(__file__).resolve().parent.parent / "site" / "dist"
 
 BANNED_WORDS = ["hidden gem", "must-see", "breathtaking", "nestled"]
 
+# Our own rules are not the reader's business. Hidde, 2026-08-08, on finding the
+# parks index explaining its own publish gate to visitors: "Why are you saying
+# this logic? That is our logic back to the end user. They just want nice data,
+# nice parks with trees. They don't care about our specific rules."
+#
+# This is the second time the same disease shipped, after the builder-speak rule
+# that already bans narrating construction, so it is a check now rather than a
+# third note. Three shapes, all of which were live:
+#   - the publish gate as copy ("a park earns a page once we have mapped five")
+#   - the shortfall as copy ("23 parks hold three or four, not yet enough")
+#   - the roadmap as copy ("more species appear as new cities join the map")
+# What the reader wants is what IS here and why it is worth their afternoon.
+# A count is fine ("9 trees, Madrid"); the threshold behind the count is not.
+BUSINESS_RULE_PHRASES = [
+    "earns a page", "earn a page", "once we have mapped", "the site has mapped",
+    "not yet enough", "enough for a page", "a page of their own",
+    "a page of its own", "have enough mapped", "appear as new cities join",
+    "qualifies for a page", "publish gate", "we only publish",
+]
+
+
+
 # Product-copy surfaces (no editorial stories on them) may not make absolute
 # promises: the paywall rule bans forever-claims, and "Nothing else, ever"
 # still shipped twice before this gate existed. Story prose is exempt because
@@ -108,6 +130,12 @@ def main():
         for word in BANNED_WORDS:
             if word in lower:
                 failures.append(f"{rel}: banned word {word!r} in rendered text")
+        for phrase in BUSINESS_RULE_PHRASES:
+            if phrase in lower:
+                failures.append(
+                    f"{rel}: explains our own publishing rule to the reader "
+                    f"({phrase!r}). Say what is here and why it is worth the "
+                    f"visit; the threshold behind it is ours, not theirs.")
 
         for src in scan.img_srcs:
             if "/wiki/File:" in src:
