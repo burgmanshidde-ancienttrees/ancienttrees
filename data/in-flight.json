@@ -4,16 +4,10 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "Dublin",
+      "target": "Edinburgh",
       "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-07T08:06:52+00:00"
-    },
-    {
-      "target": "Berlin",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-07T08:57:26+00:00"
+      "by": "session-hidde",
+      "claimed_at": "2026-08-07T12:59:34+00:00"
     }
   ]
 }
