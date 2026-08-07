@@ -2,10 +2,10 @@
   "city": "Rome",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Rome's noble families turned trees into status symbols the way they turned villas into galleries. Cardinal Scipione Borghese's gardener planted a grove of oriental planes in the 1600s that foresters now call the oldest living trees in the city; the Pamphilj and Mattei families each planted cedars of Lebanon nearby, one per hilltop garden, as a shorthand for permanence. Rome has 65 trees registered as monumental under Italian law, more than any other city in the country. These twenty range from a poet's legendary oak to a South American ombu, and all but two are free to visit.",
-  "meta_description": "Rome's noble villas planted cedars of Lebanon as status symbols. Meet Adonis, a 425-year-old plane in Villa Borghese, and nineteen more remarkable trees.",
+  "intro": "Rome's noble families turned trees into status symbols the way they turned villas into galleries. Cardinal Scipione Borghese's gardener planted a grove of oriental planes in the 1600s that foresters now call the oldest living trees in the city; the Pamphilj and Mattei families each planted cedars of Lebanon nearby, one per hilltop garden, as a shorthand for permanence. Rome has 65 trees registered as monumental under Italian law, more than any other city in the country. These twenty-two range from a poet's legendary oak to a South American ombu, and all but two are free to visit.",
+  "meta_description": "Rome's noble villas planted cedars of Lebanon as status symbols. Meet Adonis, a 425-year-old plane in Villa Borghese, and twenty-one more remarkable trees.",
   "question_answer": "The oldest verified tree in Rome is Adonis, an oriental plane in the Valley of the Plane Trees at Villa Borghese, planted in the early 1600s by Cardinal Scipione Borghese's gardener and now around 425 years old. It stands inside Villa Borghese, a short walk from the Via Pinciana entrance.",
-  "question_meta": "Adonis, a 425-year-old oriental plane in Villa Borghese, is Rome's oldest verified tree. Its story, exact location, and nineteen more remarkable trees.",
+  "question_meta": "Adonis, a 425-year-old oriental plane in Villa Borghese, is Rome's oldest verified tree. Its story, exact location, and twenty-one more remarkable trees.",
   "question_context": "Rome has an older legend. The Quercia del Tasso on the Gianicolo is popularly said to be a thousand years old, tied to the poet Torquato Tasso, who tradition says rested in its shade before his death in 1595. No dendrologist has ever dated it, and this site treats that number as folklore rather than fact. Adonis has no such problem. Cardinal Scipione Borghese's gardener, Domenico Savini da Montepulciano, planted a row of oriental planes in the villa's private hunting park in the early 1600s, and the planting is documented well enough that Italian foresters count the survivors, nine of the original eleven, as the oldest confirmed trees in the city. Adonis is the largest of them, a hollow giant at the entrance to what is now called the Valley of the Plane Trees. In 2021 the garden cloned it from a single surviving leaf, a hedge against the fate of a neighboring oak from the same era that collapsed in 2018. Getting there: enter Villa Borghese from Via Pinciana and follow the signs for the Valle dei Platani.",
   "faq": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Rome's remarkable trees free to visit?",
-      "a": "Eighteen of the twenty on this list stand in free public parks and squares. The two inside the Orto Botanico, Rome's botanical garden, require a paid ticket."
+      "a": "Twenty of the twenty-two on this list stand in free public parks and squares. The two inside the Orto Botanico, Rome's botanical garden, require a paid ticket."
     },
     {
       "q": "How does Italy protect its monumental trees?",
@@ -653,6 +653,67 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "rom_021",
+      "name": "The Cypress of Piazza di Siena",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "roughly 235 years, planted around 1789",
+      "age_min": 200,
+      "age_max": 250,
+      "location": {
+        "address": "Piazza di Siena perimeter, Villa Borghese",
+        "latitude": 41.9137,
+        "longitude": 12.4863,
+        "neighbourhood": "Villa Borghese, Pinciano"
+      },
+      "story": "Eighteen cypresses once ringed Piazza di Siena when the arena was laid out in 1789, part of the original hedge and tree enclosure designed by architect Antonio Asprucci for what is now Rome's international horse show. Seventeen of those eighteen are gone. This one, according to the conservation group Amici di Villa Borghese, is the sole survivor, still standing along the same oval perimeter the arena has kept since the eighteenth century. Rome's own municipal history of the piazza confirms the original planting scheme, a boxwood hedge, eighteen cypresses and two pine groves, without naming which tree is the last of the batch, so the survivor claim rests on the advocacy group's word rather than a dendrologist's ring count. What isn't in dispute is the arena itself: it has hosted the Concorso Ippico Internazionale, Rome's showjumping event, every year since 1922, riders and horses circling the same green oval a two centuries old cypress has watched from the sidelines the whole time. The letter naming this tree was written in 2024 because Villa Borghese was losing historic specimens faster than anyone wanted, including a well loved pine on the nearby Pincio that was felled around the same period. This cypress is what the campaign wanted people to notice before it went the same way.",
+      "verified_sources": [
+        "https://www.carteinregola.it/o-adesso-o-mai-piu-gli-amici-di-villa-borghese-scrivono-allassessora/",
+        "https://www.comune.roma.it/web/it/notizia/piazza-siena-storia-vocazione-ovale-villa-borghese.page"
+      ],
+      "access": "Free, public park, walkway around the Piazza di Siena arena",
+      "transport": "Roughly 10-15 min walk from Spagna or Flaminio metro (Line A), inside Villa Borghese",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "The 'sole survivor of the 1789 planting' claim rests on a single advocacy letter (Amici di Villa Borghese, carteinregola.it, 2024), corroborated only for the general historical fact (18 cypresses planted 1789) by Rome's own municipal history page, not for which specific tree survived. Pin is the piazza's centre, not the individual tree, since no source identifies which cypress along the perimeter is the 1789 survivor."
+    },
+    {
+      "id": "rom_022",
+      "name": "The Hackberries of the Aranciera",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "locally described as dating from the 1600s, no dendrological confirmation",
+      "age_min": 300,
+      "age_max": 400,
+      "location": {
+        "address": "Holm oak grove (Lecceta) between the Aranciera / Museo Carlo Bilotti and the Muro Torto, Villa Borghese",
+        "latitude": 41.9134,
+        "longitude": 12.4833,
+        "neighbourhood": "Villa Borghese, Pinciano"
+      },
+      "story": "A hackberry in the holm oak wood behind the Museo Carlo Bilotti carries a nickname rather than a certificate: locals call it il bagolaro del Seicento, the hackberry of the 1600s, though nobody has run the rings to prove it. What is measured is its girth, about four metres around, matched almost exactly by a second trunk growing beside it, close enough that Italy's citizen tree registry logs them as a twinned pair rather than argue over which is which. Both stand in the Lecceta, a stretch of holm oak forest between the old citrus house, now a museum holding a de Chirico and Warhol collection, and the Muro Torto, the Aurelian era wall that has marked this edge of Rome since the third century. Villa Borghese holds roughly 350 trees and only a fraction have any official monumental status; a 2024 letter from the conservation group Amici di Villa Borghese named this hackberry as one of about 30 still waiting on the paperwork that would protect it. No source gives it exact coordinates, only a location inside the wood, so finding it means wandering the Lecceta rather than following a pin. That is true of most of Villa Borghese's older trees: the park has outlived several rounds of formal cataloguing without ever finishing one.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/9251-bagolaro-roma-rm-lazio",
+        "https://ilregistrodeglialberi.it/9252-bagolaro-roma-rm-lazio",
+        "https://www.carteinregola.it/o-adesso-o-mai-piu-gli-amici-di-villa-borghese-scrivono-allassessora/"
+      ],
+      "access": "Free, public park",
+      "transport": "Roughly 10-15 min walk from Spagna or Flaminio metro (Line A), inside Villa Borghese",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Two adjacent RAMI register entries (#9251, #9252, both ~430cm girth) folded into one entry as a twinned pair. No coordinates in any source; pin geocoded to the Museo Carlo Bilotti / Aranciera building both sources place the tree near. The 1600s age is the conservation group's own framing, not a scientific dating."
     }
   ]
 }
