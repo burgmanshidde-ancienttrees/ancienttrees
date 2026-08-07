@@ -896,7 +896,7 @@ FOOTER = """
       <a href="%%ROOTPATH%%privacy">Privacy</a>
     </div>
   </div>
-  <span class="footer-note">&copy; %%YEAR%% Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors. Photos carry their own credits and open licences.</span>
+  <span class="footer-note">&copy; %%YEAR%% Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors. Walking routes by Valhalla via FOSSGIS, on OpenStreetMap data. Photos carry their own credits and open licences.</span>
 </footer>
 """
 
@@ -1473,6 +1473,31 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
     return walks
 
 
+def load_walk_routes():
+    """Real pedestrian geometry per walk, cached by scripts/route_walks.py.
+
+    Missing file, missing key or a rejected route all fall back to the straight
+    line, which is why this never blocks a build: the routes are an enrichment,
+    not a dependency."""
+    f = DATA / "walk-routes.json"
+    if not f.exists():
+        return {}
+    return json.loads(f.read_text()).get("routes", {})
+
+
+WALK_ROUTES = None
+
+
+def walk_route_for(city_slug, tree_ids):
+    global WALK_ROUTES
+    if WALK_ROUTES is None:
+        WALK_ROUTES = load_walk_routes()
+    r = WALK_ROUTES.get(city_slug + ":" + ",".join(tree_ids))
+    if not r or r.get("rejected") or not r.get("shape"):
+        return None
+    return r
+
+
 def human_duration(minutes):
     hours, mins = divmod(int(minutes), 60)
     if hours and mins:
@@ -1513,7 +1538,8 @@ def city_map_script(markers, center, route=None, other_cities=None, walks=None):
     # Every walk's line and metadata, so switching between them is a local
     # redraw rather than a page load or a fetch.
     walks_json = json.dumps([{
-        "coords": [[markers[i]["lng"], markers[i]["lat"]] for i in w["order"]],
+        # the real pavement line when we have one, else the honest straight hint
+        "coords": w.get("shape") or [[markers[i]["lng"], markers[i]["lat"]] for i in w["order"]],
         "members": w["order"],
         "url": w.get("url", ""),
         "label": w.get("label", ""),
@@ -3555,6 +3581,14 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
         for w in walks:
             w["url"] = maps_route_url([(markers[i]["lat"], markers[i]["lng"])
                                        for i in w["order"]])
+            # A real pedestrian route where one is cached, which also makes the
+            # distance and the duration true rather than a straight line times
+            # a detour guess.
+            routed = walk_route_for(slug, [trees[i]["id"] for i in w["order"]])
+            if routed:
+                w["shape"] = routed["shape"]
+                w["km"] = routed["km"]
+                w["minutes"] = routed["minutes"]
             w["duration"] = human_duration(w["minutes"])
             w["label"] = (f"Walk {w['count']} of these trees"
                           if w["count"] < len(markers) else f"Walk all {w['count']} trees")
