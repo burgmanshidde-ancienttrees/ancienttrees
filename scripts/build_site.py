@@ -3806,13 +3806,12 @@ def build_parks_index(cards, unbuilt, published, pages):
         browse_card(f"parks/{c['slug']}", c["name"],
                     f"{c['count']} trees &middot; {c['city']}", c.get("face"))
         for c in cards)
+    # No near-miss list. Hidde, 2026-08-08: "that section doesn't add much, I
+    # would just delete that and automatically add more if we find more." He is
+    # right that a wall of parks holding three or four trees, each linked to a
+    # city page rather than to itself, gave a reader nothing they came for. The
+    # page grows on its own as parks reach the bar.
     more = ""
-    if unbuilt:
-        rows = " &middot; ".join(
-            f'{esc(nm)} (<a href="{cs}">{esc(cty)}</a>, {n} trees)'
-            for n, cty, nm, cs in unbuilt[:24])
-        more = (f'<div class="prose-block"><p>More gardens and parks with old trees '
-                f'worth finding, each on its city page: {rows}.</p></div>')
     city_links = " &middot; ".join(f'<a href="{p["slug"]}">{esc(p["city"])}</a>' for p in published[:12])
     body = f"""
 <main class="content-page">
@@ -5651,10 +5650,18 @@ def main():
         if len(ptrees) >= PARK_MIN_TREES and (cslug, name) in park_intros:
             park_cards.append(build_park_page(park_intros[(cslug, name)], entry,
                                               ptrees, tree_slugs, published, pages))
-        elif len(ptrees) >= 3:
+        elif len(ptrees) >= PARK_MIN_TREES:
+            # Qualifies on trees, has no intro yet, so it cannot ship (P3: no
+            # templated copy). The reader is no longer told about it, so the
+            # build tells US instead, or a park would wait forever unseen.
             parks_unbuilt.append((len(ptrees), entry["data"]["city"], name, cslug))
     if park_cards:
         build_parks_index(park_cards, parks_unbuilt, published, pages)
+    if parks_unbuilt:
+        print(f"\n  {len(parks_unbuilt)} park(s) have {PARK_MIN_TREES}+ trees and no intro yet "
+              f"(write data/parks/<slug>.json to publish):")
+        for n, city, name, _cs in sorted(parks_unbuilt, reverse=True):
+            print(f"    {n} trees  {city}: {name}")
 
     build_contribute_page(published, pages)
     build_privacy_page(pages)
