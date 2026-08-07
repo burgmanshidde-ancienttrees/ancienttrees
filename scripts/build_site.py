@@ -602,11 +602,11 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 
 /* Tree pins: a drawn silhouette instead of a number, so the map reads as a
    place full of trees rather than a numbered list. */
-.pin-tree { position: relative; width: 44px; height: 44px; border-radius: 50%; background: var(--cream);
+.pin-tree { position: relative; width: 34px; height: 34px; border-radius: 50%; background: var(--cream);
   border: 2px solid var(--moss); box-shadow: 0 3px 10px rgba(26,26,20,0.28); cursor: pointer;
   display: flex; align-items: center; justify-content: center;
   transition: transform 0.18s ease, box-shadow 0.18s ease; }
-.pin-tree svg { width: 28px; height: 28px; color: var(--moss); transition: color 0.18s ease; }
+.pin-tree svg { width: 21px; height: 21px; color: var(--moss); transition: color 0.18s ease; }
 .pin-tree:hover { transform: scale(1.12); box-shadow: 0 5px 16px rgba(26,26,20,0.34); }
 .pin-tree.active { background: var(--moss); transform: scale(1.2); z-index: 5; }
 .pin-tree.active svg { color: var(--cream); }
@@ -1689,9 +1689,15 @@ function addWalkLayer() {{
     data: {{ type: 'Feature', geometry: {{ type: 'LineString', coordinates: routeCoords }} }}
   }});
   map.addLayer({{
+    id: 'walk-casing', type: 'line', source: 'walk',
+    layout: {{ 'line-cap': 'round', 'line-join': 'round' }},
+    paint: {{ 'line-color': '#fff', 'line-width': 8, 'line-opacity': 0.85 }}
+  }});
+  map.addLayer({{
     id: 'walk', type: 'line', source: 'walk',
     layout: {{ 'line-cap': 'round', 'line-join': 'round' }},
-    paint: {{ 'line-color': '#3D5C1E', 'line-width': 2.5, 'line-opacity': 0.5, 'line-dasharray': [1.5, 2] }}
+    paint: {{ 'line-color': '#3D5C1E', 'line-width': 4.5, 'line-opacity': 0.95,
+              'line-dasharray': [1.4, 1.1] }}
   }});
 }}
 if (map.isStyleLoaded()) {{ addWalkLayer(); }} else {{ map.on('styledata', addWalkLayer); }}
@@ -1717,10 +1723,15 @@ function addAllWalksLayer() {{
     paint: {{ 'line-color': '#000', 'line-width': 16, 'line-opacity': 0.001 }}
   }});
   map.addLayer({{
+    id: 'walks-all-casing', type: 'line', source: 'walks-all',
+    layout: {{ 'line-cap': 'round', 'line-join': 'round' }},
+    paint: {{ 'line-color': '#fff', 'line-width': 7, 'line-opacity': 0.7 }}
+  }});
+  map.addLayer({{
     id: 'walks-all', type: 'line', source: 'walks-all',
     layout: {{ 'line-cap': 'round', 'line-join': 'round' }},
-    paint: {{ 'line-color': '#6b7280', 'line-width': 2.5, 'line-opacity': 0.5,
-              'line-dasharray': [1.5, 2] }}
+    paint: {{ 'line-color': '#4b5563', 'line-width': 3.5, 'line-opacity': 0.8,
+              'line-dasharray': [1.4, 1.1] }}
   }});
   map.on('click', 'walks-all-hit', function(e) {{
     if (e.features && e.features.length) {{ selectWalk(e.features[0].properties.idx); }}
@@ -1735,6 +1746,7 @@ function setAllWalksFilter(activeIdx) {{
   var f = activeIdx < 0 ? null : ['!=', ['get', 'idx'], activeIdx];
   map.setFilter('walks-all', f);
   map.setFilter('walks-all-hit', f);
+  if (map.getLayer('walks-all-casing')) {{ map.setFilter('walks-all-casing', f); }}
 }}
 if (map.isStyleLoaded()) {{ addAllWalksLayer(); }} else {{ map.on('styledata', addAllWalksLayer); }}
 
