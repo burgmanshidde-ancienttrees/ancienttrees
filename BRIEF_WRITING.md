@@ -7,6 +7,14 @@ few thousand tokens per tree instead of twenty.
 
 Input: one or more `data/research/<slug>-verified.json` files (arrays of tree
 objects with `verify_notes` and `verified_sources`, no `story`).
+
+**Whoever briefs you must run `python3 scripts/passcheck.py --pending` first**,
+and you should check it yourself before writing a word. A research file is not
+proof that work is outstanding: on 2026-08-08 a brief asked for seven trees
+when only three were real, because nyc_011-013 and ams_011 had already been
+written and merged that morning and nobody had deleted the stale files. If an
+id already exists in data/cities, it is finished: do not write it again, say so
+and move on. Prose written over good live copy is worse than prose not written.
 Output: the same files with `story` and, where honest, `best_time` filled in,
 and `verify_notes` removed. You change no other field: the facts are already
 verified, and prose that contradicts a verified field is a writing error.

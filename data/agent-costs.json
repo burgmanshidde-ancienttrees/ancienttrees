@@ -442,6 +442,26 @@
         "wasted": 0,
         "brief_wrong": false
       }
+    ],
+    "2026-08-08": [
+      {
+        "target": "Edinburgh",
+        "kind": "verify",
+        "tokens": 131614,
+        "trees": 3,
+        "note": "found Edinburgh's first walkable cluster: 3 RBGE trees joining edi_002/004 into a 5-tree 1.7km walk. Also found and blocked 2 dead trees (Sabal palm felled 2021, Himalayan cedar felled by Storm Eowyn 2025) that would otherwise have been strong candidates.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "Edinburgh+NYC+Amsterdam",
+        "kind": "write",
+        "tokens": 92460,
+        "trees": 3,
+        "note": "brief said 7 trees, only 3 were real. nyc_011-013 and ams_011 had already been written and merged this morning; the pass refused to write duplicates and said so instead of producing prose that would have overwritten good live copy. My brief checked research files for missing stories without checking whether those ids were already published.",
+        "wasted": 0,
+        "brief_wrong": true
+      }
     ]
   }
 }
