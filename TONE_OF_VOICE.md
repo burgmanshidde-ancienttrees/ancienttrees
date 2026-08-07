@@ -79,3 +79,33 @@ Reserved. Hidde delivers samples of his own writing (posts, mails, fragments, Du
 ## CHANGELOG
 - **v1.3 (2026-08-04):** Added "Product copy is soberer than the stories", approved by Hidde in session ("please save that in your copywriting style"). Written from two lines he rejected on the day: an untrue claim about hand-verification and a pop-lyric pun in a call to action.
 - v1.0: Initial draft distilled from CLAUDE.md style rules, the Paris run, and the 2026-07-19 quality round. Awaiting Hidde's approval.
+
+## Never explain our own rules to the reader
+
+Hidde, 2026-08-08, on finding the parks index describing its own publish gate:
+"Why are you saying this logic? That is our logic back to the end user. They
+just want nice data, nice parks with trees. They don't care about our specific
+rules."
+
+Three shapes of the same mistake, all of which were live on the site:
+
+- **The gate as copy.** "A park earns a page here once we have mapped at least
+  five of its trees." That is a rule for us. A visitor learns nothing.
+- **The shortfall as copy.** "Another 23 parks hold three or four, which is not
+  yet enough for a page of their own." Apologising for what we do not have,
+  where a reader wanted a list of parks with old trees.
+- **The roadmap as copy.** "More species appear as new cities join the map."
+  Nobody came here for our backlog.
+
+The replacement is always the same move: say what IS here and why it is worth
+their afternoon. The Retiro was a royal private garden for two hundred years,
+which is why its trees are old. Florence's garden was founded in 1545 and is
+still on its original ground. That is the same paragraph doing the reader's
+work instead of ours.
+
+A count is fine, because a count is information: "9 trees, Madrid". The
+threshold behind the count is not.
+
+This is the sibling of the builder-speak rule below, and it shipped twice
+anyway, so `scripts/qa.py` now fails the deploy on the phrases that give it
+away. Removing that check needs Hidde.

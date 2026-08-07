@@ -3757,15 +3757,14 @@ def build_parks_index(cards, unbuilt, published, pages):
         rows = " &middot; ".join(
             f'{esc(nm)} (<a href="{cs}">{esc(cty)}</a>, {n} trees)'
             for n, cty, nm, cs in unbuilt[:24])
-        more = (f'<div class="prose-block"><p>Another {len(unbuilt)} parks hold three or four '
-                f'of the trees we map, which is not yet enough for a page of their own. '
-                f'They are on their city pages: {rows}.</p></div>')
+        more = (f'<div class="prose-block"><p>More gardens and parks with old trees '
+                f'worth finding, each on its city page: {rows}.</p></div>')
     city_links = " &middot; ".join(f'<a href="{p["slug"]}">{esc(p["city"])}</a>' for p in published[:12])
     body = f"""
 <main class="content-page">
   {breadcrumb_html(crumb_items, "./")}
   <h1>Ancient Trees by Park and Garden</h1>
-  <div class="prose-block"><p>Some parks are worth an afternoon on their own, because several remarkable old trees stand within a few minutes of each other. A park earns a page here once we have mapped at least {PARK_MIN_TREES} of its trees, so every one of these is a real walk rather than a single specimen and a long way to go.</p></div>
+  <div class="prose-block"><p>Some parks are worth an afternoon on their own, because several remarkable old trees stand within a few minutes of each other. A botanical garden founded in 1545 and still on its original ground. A royal park that stayed private for two hundred years, which is why its trees are old. An English garden planted for a queen with species nobody in the country had grown before. Each of these holds enough to fill a walk.</p></div>
   {entries}
   {more}
   <p class="suggest">Or explore by city: {city_links}</p>
@@ -3802,7 +3801,7 @@ def build_species_index(species_cards, published, pages):
 <main class="content-page">
   {breadcrumb_html(crumb_items, rootpath)}
   <h1>Ancient Trees by Species</h1>
-  <div class="prose-block"><p>Cities group these trees by place; collections group them by theme. This page groups them by what they actually are. A species earns a page once the site has mapped at least three of them, so every list here has real depth rather than a lone specimen. More species appear as new cities join the map.</p></div>
+  <div class="prose-block"><p>Cities group these trees by place; collections group them by theme. This page groups them by what they actually are. A London plane in Barcelona and a London plane in Warsaw are the same tree living two different lives, and reading them side by side tells you something a city page cannot: how long the species lives, what it does in autumn, and which cities planted it when.</p></div>
   {entries}
   <p class="suggest">Or explore by city: {city_links}</p>
 </main>
@@ -4037,7 +4036,7 @@ def build_countries_index(country_cards, published, pages):
 <main class="content-page">
   {breadcrumb_html(crumb_items, rootpath)}
   <h1>Ancient trees by country</h1>
-  <p class="answer-first">{len(country_cards)} countries have enough mapped cities to have a page of their own: {total_c} cities and {total_t} trees between them. Every other country is on <a href="cities">the city list</a> while it grows.</p>
+  <p class="answer-first">{total_c} cities across {len(country_cards)} countries, {total_t} remarkable trees between them. Every country plants differently and protects differently, and it shows in what survived. Or go straight to <a href="cities">the city list</a>.</p>
   <div class="cindex-grid">{cards}</div>
 </main>
 """
