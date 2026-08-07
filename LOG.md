@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-07 — New York gets its first walkable cluster (Central Park), Edinburgh's pin gaps get an honest zero
+
+Same session as the Berlin entry below. Two more pieces of work before handing back.
+
+**Edinburgh: dispatched a precision-only pass on its 8 approximate pins (of 10 trees), the largest gap of any published lead city.** Zero upgraded. An honest result, not a wasted one: three specific dead ends are now recorded in CURATION.md (RBGE's own Garden Explorer database has 4 sweet chestnut accessions but none matches the story's named specimen; a Cedar of Lebanon candidate on iNaturalist is a single unconfirmed computer-vision species ID, too thin given this exact tree already had one past misidentification caught by an earlier pass; Craigmillar Castle's Canmore record redirects to a host that blocks fetching). A future pass should not repeat these three.
+
+**New York: this project's US demand probe, and it had zero walkable cluster** (checked directly: 900m single-link clustering on its original 10 trees produces ten singletons, no two closer than several km). Unlike Berlin, NYC Parks runs its own official "Great Trees of New York City" register, which solved this the way a European register would. Verified and published 3 trees around the existing Ramble tupelo: **the Great Elm of Central Park West** (one of 23 west-side elms left by a 1985 count, out of roughly 500 original), **the Elms on the Rocks** (two register trees folded into one entry, growing out of Manhattan schist), and **the Elm Allee of Literary Walk** (an ensemble entry for the Mall's famous elm promenade). Caught a real age myth along the way: the Mall's elms are commonly assumed to date to the park's 1858 design, but Central Park Conservancy's own material says the current row is the THIRD planting, from the 1920s. Softened a superlative per hard rule 8 ("largest grove of American elms in the world" to the Conservancy's own "one of the largest remaining plantations"). The three sit within 600m of the anchor tree, forming a real 1.4km/19min walk, confirmed in the built page's own data.
+
+Both pieces of work claimed and released via `passcheck.py`, rebuilt and QA-clean after each. Costs logged honestly in `data/agent-costs.json`, including Edinburgh's zero-yield pass.
+
+FOR HIDDE: nothing blocks.
+
 ## 2026-08-07 — Berlin gets its first walkable cluster
 
 `python3 scripts/visitors.py`: 128 visits, 243 page views over the last 7 days (2026-07-31 to 2026-08-07), roughly flat, ticking down toward today's partial day. No reader submissions (the one row in Supabase's `submissions` table is the 2026-07-31 pipeline test, already in `data/submissions-processed.json`). `gh` unreachable this session (every call blocked by the sandbox), so the usual stale-workflow checks were skipped rather than guessed at. REVIEW.md's newest entry (2026-08-06, two BLOCKERs on the `age_token()` title bug and Genoa's `oldest_tree_id`) was already fixed on disk, checked directly against `scripts/build_site.py` and `data/cities/genoa.json` rather than trusted from the file.
