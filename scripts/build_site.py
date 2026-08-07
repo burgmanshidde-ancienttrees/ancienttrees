@@ -1392,7 +1392,16 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
             "minutes": route["minutes"],
             "name": _walk_name(order, markers),
         })
-    walks.sort(key=lambda w: (-w["count"], w["km"]))
+    # Photographed trees first, then size. Sorting on size alone put Barcelona's
+    # worst walk in front: the ten Pedralbes trees are its tightest cluster and
+    # also its newest, imported from the municipal register two days before this
+    # was written, so not one of them had a photograph while a Montjuic walk with
+    # four sat hidden behind a chip. Rome had the same shape. A visitor decides
+    # from the pictures whether an afternoon is worth it, so the walk that leads
+    # is the one they can see, and every other walk is still one tap away.
+    for w in walks:
+        w["shots"] = sum(1 for i in w["order"] if markers[i].get("shot"))
+    walks.sort(key=lambda w: (-w["shots"], -w["count"], w["km"]))
     # Two walks under one name tells a visitor nothing and quietly implies the
     # second is somewhere else. Vienna produced two "Innere Stadt" walks.
     dupes = {w["name"] for w in walks
@@ -3254,7 +3263,8 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
     </article>"""
         markers.append({"lat": loc["latitude"], "lng": loc["longitude"], "label": str(i),
                         "icon": species_icon(t), "name": t["name"], "id": t["id"],
-                        "area": (loc.get("neighbourhood") or "").strip()})
+                        "area": (loc.get("neighbourhood") or "").strip(),
+                        "shot": bool(cphoto)})
 
     faq = city_data.get("faq", [])
     if not faq:
