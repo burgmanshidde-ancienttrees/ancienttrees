@@ -1,0 +1,39 @@
+{
+  "common_name": "Himalayan Cedar",
+  "habit": "evergreen",
+  "leaf": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "flowers": [
+    9,
+    10
+  ],
+  "fruit": [
+    9,
+    10,
+    11
+  ],
+  "colour": [],
+  "bare": [],
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "nice"
+  },
+  "flower_label": "male cones release pollen in early autumn, easy to miss against the needles",
+  "fruit_label": "barrel-shaped cones sit upright on the branches, pale blue-green before ripening brown",
+  "sources": [
+    "https://plants.ces.ncsu.edu/plants/cedrus-deodara/",
+    "https://pubmed.ncbi.nlm.nih.gov/12099533/"
+  ]
+}

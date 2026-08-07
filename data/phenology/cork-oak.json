@@ -1,0 +1,38 @@
+{
+  "common_name": "Cork Oak",
+  "habit": "evergreen",
+  "leaf": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "flowers": [
+    4,
+    5
+  ],
+  "fruit": [
+    10,
+    11
+  ],
+  "colour": [],
+  "bare": [],
+  "intensity": {
+    "flowers": "unseen",
+    "fruit": "nice"
+  },
+  "flower_label": "small wind-pollinated catkins, easy to miss against the evergreen crown",
+  "fruit_label": "acorns ripen and drop through autumn, a good year burying the ground under the canopy",
+  "sources": [
+    "https://www.treesandshrubsonline.org/articles/quercus/quercus-suber/",
+    "https://plants.ces.ncsu.edu/plants/quercus-suber/"
+  ]
+}

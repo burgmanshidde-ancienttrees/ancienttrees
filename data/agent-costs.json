@@ -423,6 +423,15 @@
         "note": "Added missing species phenology files for Field Elm and Caucasian Elm (data/phenology/), sourced from Woodland Trust and RHS/treesandshrubsonline. Covers par_007 and par_013 in the tight 8-tree Latin Quarter/Jardin des Plantes walk (1.52km max spread) plus 4 more Caucasian Elm trees in Florence, Madrid and Oxford, 6 trees total newly getting a season chart instead of an honest gap. Pivoted here after confirming this session cannot reach Wikimedia/iNaturalist/generic web hosts at all (gateway policy denial, not transient), which ruled out both photo judging and photo hunting; WebSearch still works and was used for sourcing.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Rome (phenology)",
+        "kind": "other",
+        "tokens": 42000,
+        "trees": 14,
+        "note": "Added the 7 missing species phenology files (Cork Oak, Aleppo Pine, Ombu, Himalayan Cedar, Willowleaf Podocarp, Southern Magnolia, Chir Pine) for Rome's tight 14-tree/2km walkable cluster (rom_001-020 area), closing its 'season data' gap toward the deep-enough bar. All 7 species now render a full season chart instead of the flat fallback; also closes the gap for 5 of Barcelona's cluster (southern-magnolia, himalayan-cedar, aleppo-pine already shared) as a side effect. Sourced via WebSearch only (treesandshrubsonline.org, RHS, NC State/Clemson/UF extension, conifers.org, PubMed) since this session's egress proxy 403s every direct fetch to Wikimedia/RHS/etc at the CONNECT level (confirmed via the proxy status endpoint, same policy denial an earlier run today found), which also ruled out photo judging (item 2 of this run's brief) since images cannot be viewed. Priority item 1 (Paris write pass) was already merged by an earlier run today. Build and qa.py both clean (1,193 pages) before commit.",
+        "wasted": 0,
+        "brief_wrong": true
       }
     ]
   }
