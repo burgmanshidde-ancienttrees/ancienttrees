@@ -5,9 +5,21 @@
   "claims": [
     {
       "target": "Edinburgh",
-      "kind": "verify",
+      "kind": "write",
       "by": "session-hidde",
-      "claimed_at": "2026-08-07T12:59:34+00:00"
+      "claimed_at": "2026-08-07T13:07:58+00:00"
+    },
+    {
+      "target": "Amsterdam",
+      "kind": "write",
+      "by": "session-hidde",
+      "claimed_at": "2026-08-07T13:07:58+00:00"
+    },
+    {
+      "target": "New York",
+      "kind": "write",
+      "by": "session-hidde",
+      "claimed_at": "2026-08-07T13:07:58+00:00"
     }
   ]
 }

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "edi_011",
+    "name": "The John Muir Grove",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "roughly 100 years",
+    "age_min": 95,
+    "age_max": 106,
+    "location": {
+      "address": "Upper Woodland Garden, Royal Botanic Garden Edinburgh, 20A Inverleith Row, Edinburgh EH3 5LR",
+      "latitude": 55.9705,
+      "longitude": -3.2165,
+      "neighbourhood": "Inverleith"
+    },
+    "verified_sources": [
+      "https://www.rbge.org.uk/venue-hire/weddings-at-the-botanics/john-muir-grove/",
+      "https://lovetravellingblog.com/2021/09/02/day-7-the-royal-botanic-garden-edinburgh/"
+    ],
+    "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
+    "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "A circle of giant redwoods (Sequoiadendron giganteum) in RBGE's Upper Woodland Garden, planted in the 1920s and now over 24m tall, forming what RBGE itself calls a 'cathedral-like atmosphere'. Renamed the John Muir Grove in 1990 to honour the Scots-born writer, explorer and conservationist who founded the US National Park system (born in Dunbar, East Lothian, so the naming is a genuine Scottish connection, not an imported one). Independently corroborated by a visitor blog (lovetravellingblog.com) describing 'magnificent tall Redwood trees' in the grove, matching RBGE's own description. This is an ensemble entry, not a single tree: it qualifies as a collectible point because it is compact, famous for being exactly that circle, and has one obvious place to stand (it is used as a wedding/ceremony venue precisely because of this). Not ancient (about a century old) but visually spectacular and historically significant, which the bar allows. Location precision: only garden-section level is confirmed (Upper Woodland Garden, RBGE's own map places it as area 14); no source gives the exact circle coordinates, so this is deliberately approximate, not a guess dressed as exact. Forms part of a walkable cluster with edi_002 (Sweet Chestnut, Pond Lawn) and edi_004 (Cedar of Lebanon, near the Glasshouses), all within RBGE's 70-acre grounds, walkable in one visit."
+  },
+  {
+    "id": "edi_012",
+    "name": "The Catacol Whitebeams of the East Gate",
+    "species": "Catacol Whitebeam (Sorbus pseudomeinichii)",
+    "age_estimate": "planted after the species' 2006 scientific description, at least a decade old",
+    "age_min": 12,
+    "age_max": 20,
+    "location": {
+      "address": "Near the East Gate Lodge coffee shop, Royal Botanic Garden Edinburgh, Inverleith Row, Edinburgh EH3 5LP",
+      "latitude": 55.9648,
+      "longitude": -3.2065,
+      "neighbourhood": "Inverleith"
+    },
+    "verified_sources": [
+      "https://stories.rbge.org.uk/archives/13616",
+      "https://en.wikipedia.org/wiki/Hedlundia_pseudomeinichii"
+    ],
+    "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
+    "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street; enter at the East Gate on Inverleith Row rather than the West Gate",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Grafted specimens of the Catacol Whitebeam (Sorbus pseudomeinichii), described as new to science only in 2006, planted 'adjacent to the coffee shop at the East Gate Lodge' per RBGE's own Botanics Stories article, which also names two other Arran-only Sorbus species planted alongside it. Until a second wild tree was found on Arran in September 2020, this was the joint-rarest tree species in the world (tied with Wood's cycad), with only ONE known wild specimen, growing in a ravine at Glen Catacol that RBGE staff themselves note could be swept away by a winter flood at any time, making the garden's grafted specimens a real conservation safeguard, not decoration. RBGE propagates it by grafting onto ordinary rowan rootstock because seed germination has had 'limited success'; a comment on the source article from an RBGE staff member (Max Coleman, the article's author) describes personally collecting berries from 'the S. pseudomeinichii near the East Gate' in autumn 2014, confirming the specimen was alive and fruiting there at least as of 2014. Corroborated independently on species facts (2006 description, Arran endemism, near-extinction status) by Wikipedia's Hedlundia pseudomeinichii article. FLAGGED because no source gives an exact planting date or age for the East Gate specimens themselves, only that grafting began after the 2006 description and the trees were established by 2014; this entry is an ensemble of several small grafted trees of one and possibly more Arran Sorbus species at one spot, not a single named specimen, so the writer should describe it as a planting rather than imply one heroic tree. Location precision approximate: 'adjacent to the East Gate Lodge coffee shop' is a specific, small, findable spot but no source gives GPS coordinates, so the pin is estimated from the garden's own visitor map rather than measured. Completes the RBGE cluster with edi_002, edi_004 and edi_011, all reachable within one visit to the Botanics; this one is nearest the East Gate entrance rather than the Woodland Garden or Pond Lawn."
+  },
+  {
+    "id": "edi_013",
+    "name": "The Handkerchief Tree by Caledonian Hall",
+    "species": "Handkerchief Tree (Davidia involucrata)",
+    "age_estimate": "roughly 95 years, accessioned by RBGE in 1928",
+    "age_min": 90,
+    "age_max": 98,
+    "location": {
+      "address": "Caledonian Hall Area, Royal Botanic Garden Edinburgh, 20A Inverleith Row, Edinburgh EH3 5LR",
+      "latitude": 55.9655,
+      "longitude": -3.2145,
+      "neighbourhood": "Inverleith"
+    },
+    "verified_sources": [
+      "https://rbge.gardenexplorer.org/taxon-5364.aspx",
+      "https://www.treesandshrubsonline.org/articles/davidia/davidia-involucrata/"
+    ],
+    "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
+    "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "RBGE's own Living Collection database (GardenExplorer) lists a Davidia involucrata specimen at location code M12, 'Caledonian Hall Area', accession number 19280013*A, provenance 'Garden'. RBGE accession numbers begin with the year of accession, so this reads as a 1928 accession, making the tree roughly 95 to 98 years old in 2026; flagged because an accession year is when the garden recorded receiving the plant, not a directly dated planting certificate, so treat the age as a strong estimate rather than a measurement (the same caution the brief applies to register ages generally). Species background from Trees and Shrubs Online (International Dendrology Society): Davidia involucrata, the handkerchief/dove tree, is native to south-west China, was one of the most sought-after ornamental tree introductions of the early 20th century, and produces large white bracts around small flower clusters in May that flutter in wind, giving rise to the common names dove tree and ghost tree. RBGE's own social media has separately featured 'this grand handkerchief tree' in the collection, consistent with a mature flowering specimen. RBGE holds multiple Davidia accessions across the garden (Chinese Hillside, Herbarium lawns, etc); this entry is specifically the Caledonian Hall Area (M12) tree, the one nearest the other three RBGE entries in this cluster and the oldest-accessioned of the group. Location precision approximate: GardenExplorer's own interactive map requires JavaScript postbacks that could not be queried directly, so the pin is estimated from the Caledonian Hall building's position on RBGE's printed visitor map, not read off the database's own coordinate field. Best time: May, when it flowers (kind: flowers)."
+  }
+]
