@@ -1689,6 +1689,48 @@ function addWalkLayer() {{
 }}
 if (map.isStyleLoaded()) {{ addWalkLayer(); }} else {{ map.on('styledata', addWalkLayer); }}
 
+// Every walk drawn faintly at once, and each one clickable, the way a maps app
+// offers you two or three greyed routes and lets you pick (Hidde, 2026-08-08).
+// Before this the city view showed one line and the others were invisible until
+// you found the chips, so a city with four walks looked like a city with one.
+// The wide transparent layer underneath is the touch target: a 2.5px dashed
+// line is not something anybody hits with a thumb.
+function addAllWalksLayer() {{
+  if (WALKS.length < 2 || map.getSource('walks-all')) {{ return; }}
+  map.addSource('walks-all', {{
+    type: 'geojson',
+    data: {{ type: 'FeatureCollection', features: WALKS.map(function(w, i) {{
+      return {{ type: 'Feature', properties: {{ idx: i }},
+               geometry: {{ type: 'LineString', coordinates: w.coords }} }};
+    }}) }}
+  }});
+  map.addLayer({{
+    id: 'walks-all-hit', type: 'line', source: 'walks-all',
+    layout: {{ 'line-cap': 'round', 'line-join': 'round' }},
+    paint: {{ 'line-color': '#000', 'line-width': 16, 'line-opacity': 0.001 }}
+  }});
+  map.addLayer({{
+    id: 'walks-all', type: 'line', source: 'walks-all',
+    layout: {{ 'line-cap': 'round', 'line-join': 'round' }},
+    paint: {{ 'line-color': '#6b7280', 'line-width': 2.5, 'line-opacity': 0.5,
+              'line-dasharray': [1.5, 2] }}
+  }});
+  map.on('click', 'walks-all-hit', function(e) {{
+    if (e.features && e.features.length) {{ selectWalk(e.features[0].properties.idx); }}
+  }});
+  map.on('mouseenter', 'walks-all-hit', function() {{ map.getCanvas().style.cursor = 'pointer'; }});
+  map.on('mouseleave', 'walks-all-hit', function() {{ map.getCanvas().style.cursor = ''; }});
+}}
+function setAllWalksFilter(activeIdx) {{
+  // Hide the grey copy of whatever is selected, so the chosen walk shows once
+  // in green rather than twice in two colours.
+  if (!map.getLayer('walks-all')) {{ return; }}
+  var f = activeIdx < 0 ? null : ['!=', ['get', 'idx'], activeIdx];
+  map.setFilter('walks-all', f);
+  map.setFilter('walks-all-hit', f);
+}}
+if (map.isStyleLoaded()) {{ addAllWalksLayer(); }} else {{ map.on('styledata', addAllWalksLayer); }}
+
 // Several walks in one city, chosen inside this page (Hidde, 2026-08-06:
 // never a page per walk). Picking one redraws the line, retargets the
 // directions button and dims the pins that are not on it. Nothing is removed
@@ -1729,6 +1771,7 @@ function selectWalk(idx) {{
   var w = WALKS[idx];
   if (!w) {{ return; }}
   activeWalk = idx;
+  setAllWalksFilter(idx);
   routeCoords = w.coords;
   drawWalk(w.coords);
   var go = document.getElementById('route-go');
@@ -1763,6 +1806,8 @@ function selectWalk(idx) {{
 var activeWalk = -1;
 function showWholeCity() {{
   activeWalk = -1;
+  setAllWalksFilter(-1);
+  drawWalk([]);
   pins.forEach(function(el) {{ el.classList.remove('pin-off'); }});
   document.querySelectorAll('.tree-card').forEach(function(card) {{
     card.classList.remove('card-off');
@@ -1779,8 +1824,14 @@ document.querySelectorAll('.walk-pick').forEach(function(btn) {{
     if (idx === activeWalk) {{ showWholeCity(); }} else {{ selectWalk(idx); }}
   }});
 }});
-// Draw the lead walk's line as a hint, without dimming or zooming to it.
-if (WALKS.length && WALKS[0].coords.length > 1) {{ drawWalk(WALKS[0].coords); }}
+// One walk: draw it, since there is nothing to choose between. Several: leave
+// the green line empty and let the grey alternatives speak, or the lead walk
+// would appear twice, once grey and once green, while no chip is selected.
+if (WALKS.length === 1 && WALKS[0].coords.length > 1) {{
+  drawWalk(WALKS[0].coords);
+}} else if (WALKS.length > 1) {{
+  drawWalk([]);
+}}
 
 // The passport. Which trees you have stood in front of, kept in LocalStorage on
 // your own phone. No account, no server, nothing leaves the device: that is not
