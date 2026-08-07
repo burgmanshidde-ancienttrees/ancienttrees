@@ -405,6 +405,15 @@
         "note": "Deepened the existing tight Plantage cluster (Hortus/Wertheimpark/Amstelveld/Rijksmuseum, 1.84km diam) with one flagged tree, the Turkish Hazel of the Hortus (ams_011, 1795 planting per Bomenstichting, single-source-lineage age). No Dutch register available (national register CC-BY-NC, disqualified); web research. 4 leads recorded (Sarphatipark plane, an unscoped Amsterdam municipal special-trees register worth a future licence check, Begijnhof, Park Frankendael). Story written directly in-session (1 tree, no separate write pass), city copy count-promises updated ten to eleven.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Paris",
+        "kind": "write",
+        "tokens": 38000,
+        "trees": 3,
+        "note": "3 stories from data/research/paris-verified.json (par_013-015: Caucasian Elm of Sq Samuel Paty, twin Oriental Planes of Sq Michel-Foucault delivered as one entry, Plane of Quai Saint-Bernard). No best_time (2 planes + zelkova, no genuine seasonal peak). All merged into paris.json (10 to 13 trees); fixed stale 'ten'/'nine more' count-promises in intro, meta_description, question_meta and 2 FAQ answers, caught by the build's own check.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

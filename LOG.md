@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-07 — Paris deepens to 13: two new Latin Quarter trees plus a two-trunk garden entry
+
+Scheduled autonomous run. `git pull` found the local `main` ref stale/diverged from `origin/main` again (same shallow-clone artefact a run hit earlier today); reset local `main` to `origin/main` before doing anything, no real history lost. `passcheck.py Paris` confirmed Paris published (10 trees) with 3 verified-but-unwritten trees waiting in `data/research/paris-verified.json`, the top item on this run's priority list. Claimed Paris for a write pass, committed and pushed the claim first.
+
+Dispatched the `write-stories` agent on the 3 verified trees (par_013-015): **the Caucasian Elm of Square Samuel Paty** (no individual age documented; the story is explicit that the 1782 Paris-introduction date is species history, not this tree's own), **the Oriental Planes of Square Michel-Foucault** (two trunks, 470cm and 415cm girth, delivered as one entry since they read as one visitable feature in a small garden), and **the Plane of Quai Saint-Bernard** (the weakest of the three: the register places a 380cm plane at this exact spot but nothing beyond the register singles it out from other old planes along the same quay, and the story says so plainly rather than claiming false certainty). All 150-250 words, no em dashes, no best_time claimed (two planes and a zelkova with no genuine seasonal peak found).
+
+Merged into `paris.json` (10 to 13 trees). par_013 and par_014 sit 100m apart and ~330m from the existing Robinier of Square Rene-Viviani, a new pocket in the Latin Quarter; par_015 sits ~600m from the existing Jardin des Plantes cluster. Fixed the city's own stale "ten"/"nine more" count-promise copy in five places, caught by the build's own count-promise check before it would have shipped a false number. Recorded one lead for a future pass: the same Michel-Foucault garden holds an Amur cork tree (paris.fr mentions it, planted 1925, lightning-scarred) not yet independently sourced or pinned.
+
+Build and `qa.py` both clean (1,193 pages). Cost logged to `data/agent-costs.json` (38,000 tokens, kind "write", 3 trees). One commit, pushed. Claim released.
+
+FOR HIDDE: nothing blocks. All three new trees ship with an honest `missing` photo status; no photo hunting this pass.
+
 ## 2026-08-07 — Amsterdam deepened to 11, and a real German register found: Berlin's Naturdenkmale, 638 trees, CC0
 
 `python3 scripts/visitors.py`: 128 visits, 243 page views over the last 7 days, roughly flat. No reader submissions (Supabase's `submissions` table has 1 row, already processed). Build and QA clean at session start, REVIEW.md's newest entry (2026-08-06, two BLOCKERs on `age_token()` titles and Genoa's `oldest_tree_id`) already fixed on disk, checked directly against `scripts/build_site.py` and the two age helpers rather than trusted from memory. `gh` needs interactive approval that never arrives here, so leaned on the GitHub API directly via `urllib` and the repo's own installation token from `git remote -v`: smoke test and today's data digest both green, fresh-eyes review last ran 20 hours ago (within the 26h window), weekly analysis last ran (and failed) 4 days ago, under the 8-day redispatch threshold, noted but not actioned. A broad fallen-tree news sweep across the tourist-rollout cities found nothing matching any published tree (an NYC storm made headlines but no source ties it to Central Park's elms specifically).
