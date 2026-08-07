@@ -796,7 +796,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <body>
 <header class="bar">
   <a href="%%ROOTPATH%%" class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
-  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%countries"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg></span>Countries</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>%%LOGIN_MENU%%</div></details>%%LOGIN%%<a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
+  <nav class="bar-links"><a href="%%ROOTPATH%%explore" class="only-desktop">Map</a><details class="nav-drop"><summary><span class="sum-desktop">Explore</span><span class="sum-mobile">Menu</span></summary><div class="nav-drop-menu"><a href="%%ROOTPATH%%explore" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>Map</a><a href="%%ROOTPATH%%cities"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>Cities</a><a href="%%ROOTPATH%%countries"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 3 2.6 15 0 18M12 3c-2.6 3-2.6 15 0 18"/></svg></span>Countries</a><a href="%%ROOTPATH%%species"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C6 10 12 4 20 4c0 8-6 14-16 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg></span>Species</a><a href="%%ROOTPATH%%parks"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M12 12c0-3.5-2.5-6-6-6 0 3.5 2.5 6 6 6z"/></svg></span>Parks</a><a href="%%ROOTPATH%%collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>Collections</a><a href="%%ROOTPATH%%contribute"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>Suggest a tree</a>%%LOGIN_MENU%%</div></details>%%LOGIN%%<a href="%%ROOTPATH%%app" class="bar-cta">Get the app</a></nav>
 </header>
 %%BODY%%
 %%FOOTER%%
@@ -2501,6 +2501,47 @@ def country_name(intro_data, capital=False):
     return f"{art.capitalize() if capital else art} {name}"
 
 
+PARK_WORDS = ("park", "garden", "jardin", "jardim", "giardin", "parc", "parco",
+              "tuin", "villa ", "orto", "botanic", "bois", "hortus", "schlosspark",
+              "stadtpark", "retiro")
+PARK_MIN_TREES = 5
+
+
+def park_key(tree):
+    """The named park a tree stands in, or None.
+
+    Read from the neighbourhood first and the address second, taking the clause
+    before the first comma and dropping parentheticals, the same flattening the
+    walk namer uses: one Orto Botanico was four different places until
+    "(arboretum section)" was stripped."""
+    loc = tree.get("location") or {}
+    for field in (loc.get("neighbourhood"), loc.get("address")):
+        head = str(field or "").split(",")[0]
+        head = re.sub(r"\([^)]*\)?", "", head)
+        head = re.sub(r"\s+", " ", head).strip(" -/")
+        if len(head) >= 4 and any(w in head.lower() for w in PARK_WORDS):
+            return head
+    return None
+
+
+def group_trees_by_park(renderable):
+    """(city_slug, park name) -> (city_entry, park, [trees]), biggest first.
+
+    A park is a place you spend an afternoon, which is why the bar is higher
+    than the species bar of three: below five trees a park page is a thin page
+    wearing a park's name, and the city page already serves it better."""
+    groups = {}
+    for entry in renderable:
+        for t in entry["data"]["trees"]:
+            if not tree_is_renderable(t):
+                continue
+            name = park_key(t)
+            if not name:
+                continue
+            groups.setdefault((entry["slug"], name), (entry, name, []))[2].append(t)
+    return groups
+
+
 def group_trees_by_species(renderable):
     """common_name -> list of (city_entry, tree), preserving city order then age."""
     groups = {}
@@ -3616,6 +3657,118 @@ def collection_face(coll, cities_by_slug):
                 if p:
                     return thumb_url(p["url"], 400)
     return None
+
+
+def load_park_intros():
+    """Hand-written park intros, the publish gate a park page shares with a
+    species page: no intro, no page, so nothing ships as templated filler (P3)."""
+    d = DATA / "parks"
+    if not d.exists():
+        return {}
+    out = {}
+    for f in sorted(d.glob("*.json")):
+        j = json.loads(f.read_text())
+        out[(j["city_slug"], j["park"])] = j
+    return out
+
+
+def build_park_page(intro, entry, trees, tree_slugs, published, pages):
+    """One park, its trees, and what makes standing in it worth an afternoon."""
+    slug = intro["slug"]
+    name = intro.get("name") or intro["park"]
+    city = entry["data"]["city"]
+    cslug = entry["slug"]
+    canonical = f"{BASE_URL}/parks/{slug}"
+    title = fit_title([intro.get("title", ""),
+                       f"Ancient Trees in {name}, {city}",
+                       f"{name}: Ancient Trees"], canonical)
+    description = intro.get("meta_description", "")
+    crumb_items = [("Home", BASE_URL), ("Parks", f"{BASE_URL}/parks"), (name, None)]
+
+    trees = sorted(trees, key=lambda t: -(t.get("age_max") or 0))
+    rows, list_elements = [], []
+    for i, t in enumerate(trees, 1):
+        tslug = tree_slugs[t["id"]]
+        list_elements.append({"@type": "ListItem", "position": i,
+                              "name": t["name"], "url": f"{BASE_URL}/{cslug}/{tslug}"})
+        ph = usable_photo(t)
+        thumb = (f'<div class="entry-thumb"><img {img_srcset(ph["url"], [300, 600], "140px")} '
+                 f'alt="{esc(t["name"])}" loading="lazy"></div>' if ph else "")
+        rows.append(f"""
+      <div class="entry{' has-thumb' if ph else ''}">
+        {thumb}
+        <div class="entry-body">
+          <h3><a href="../{cslug}/{tslug}">{esc(t['name'])}</a> <span class="tree-label">{esc(t.get('age_estimate',''))}</span></h3>
+          <p>{esc(t['species'])}. {esc(t['story'].split('. ')[0])}.</p>
+        </div>
+      </div>""")
+
+    first = intro["intro"].split(". ")[0] + "."
+    rest = intro["intro"][len(first):].lstrip()
+    rest_html = f'<div class="prose-block"><p>{esc(rest)}</p></div>' if rest else ""
+    other = [q for q in published if q["slug"] != cslug][:6]
+    other_links = " &middot; ".join(f'<a href="../{q["slug"]}">{esc(q["city"])}</a>' for q in other)
+    body = f"""
+<main class="content-page">
+  {breadcrumb_html(crumb_items, "../")}
+  <h1>Ancient Trees in {esc(name)}</h1>
+  <p class="lede">{esc(first)}</p>
+  {rest_html}
+  <p class="suggest">All {len(trees)} stand in <a href="../{cslug}">{esc(city)}</a>, which maps {len(entry['data']['trees'])} remarkable trees in total.</p>
+  {"".join(rows)}
+  <p class="suggest">More parks worth the walk: <a href="../parks">every park we map</a>. Or explore by city: {other_links}</p>
+</main>
+"""
+    graph = site_graph() + [{"@type": "ItemList", "name": f"Ancient trees in {name}",
+                             "itemListElement": list_elements}]
+    page = render_page(title, description, canonical, body, ld_script(graph),
+                       "", rootpath="../")
+    check_links(canonical, len(trees) + 2 + len(other), 8)
+    pages.append((f"parks/{slug}.html", page, canonical))
+    return {"slug": slug, "name": name, "city": city, "city_slug": cslug,
+            "count": len(trees),
+            "face": next((thumb_url(usable_photo(t)["url"], 400)
+                          for t in trees if usable_photo(t)), None)}
+
+
+def build_parks_index(cards, unbuilt, published, pages):
+    canonical = f"{BASE_URL}/parks"
+    title = fit_title(["Ancient Trees by Park and Garden",
+                       "The Parks and Gardens With the Best Trees"], canonical)
+    description = ("The parks and botanical gardens where several remarkable old trees stand "
+                   "together, from Madrid's Retiro to the oldest botanical garden in the world.")
+    crumb_items = [("Home", BASE_URL), ("Parks", None)]
+    entries = '<div class="cindex-grid">%s</div>' % "".join(
+        browse_card(f"parks/{c['slug']}", c["name"],
+                    f"{c['count']} trees &middot; {c['city']}", c.get("face"))
+        for c in cards)
+    more = ""
+    if unbuilt:
+        rows = " &middot; ".join(
+            f'{esc(nm)} (<a href="{cs}">{esc(cty)}</a>, {n} trees)'
+            for n, cty, nm, cs in unbuilt[:24])
+        more = (f'<div class="prose-block"><p>Another {len(unbuilt)} parks hold three or four '
+                f'of the trees we map, which is not yet enough for a page of their own. '
+                f'They are on their city pages: {rows}.</p></div>')
+    city_links = " &middot; ".join(f'<a href="{p["slug"]}">{esc(p["city"])}</a>' for p in published[:12])
+    body = f"""
+<main class="content-page">
+  {breadcrumb_html(crumb_items, "./")}
+  <h1>Ancient Trees by Park and Garden</h1>
+  <div class="prose-block"><p>Some parks are worth an afternoon on their own, because several remarkable old trees stand within a few minutes of each other. A park earns a page here once we have mapped at least {PARK_MIN_TREES} of its trees, so every one of these is a real walk rather than a single specimen and a long way to go.</p></div>
+  {entries}
+  {more}
+  <p class="suggest">Or explore by city: {city_links}</p>
+</main>
+"""
+    graph = site_graph() + [{"@type": "ItemList", "name": "Parks and gardens",
+                             "itemListElement": [
+                                 {"@type": "ListItem", "position": i, "name": c["name"],
+                                  "url": f"{BASE_URL}/parks/{c['slug']}"}
+                                 for i, c in enumerate(cards, 1)]}]
+    page = render_page(title, description, canonical, body, ld_script(graph), "", rootpath="./")
+    check_links(canonical, len(cards) + len(city_links.split("&middot;")), 8)
+    pages.append(("parks.html", page, canonical))
 
 
 def build_species_index(species_cards, published, pages):
@@ -5413,6 +5566,21 @@ def main():
         species_cards.append(card)
     if species_cards:
         build_species_index(species_cards, published, pages)
+
+    # Parks and gardens (Contract H): a park earns a page at PARK_MIN_TREES
+    # trees plus a hand-written intro, the same publish gate species pages use.
+    park_intros = load_park_intros()
+    park_groups = group_trees_by_park(renderable)
+    park_cards, parks_unbuilt = [], []
+    for (cslug, name), (entry, _nm, ptrees) in sorted(
+            park_groups.items(), key=lambda kv: -len(kv[1][2])):
+        if len(ptrees) >= PARK_MIN_TREES and (cslug, name) in park_intros:
+            park_cards.append(build_park_page(park_intros[(cslug, name)], entry,
+                                              ptrees, tree_slugs, published, pages))
+        elif len(ptrees) >= 3:
+            parks_unbuilt.append((len(ptrees), entry["data"]["city"], name, cslug))
+    if park_cards:
+        build_parks_index(park_cards, parks_unbuilt, published, pages)
 
     build_contribute_page(published, pages)
     build_privacy_page(pages)
