@@ -414,6 +414,15 @@
         "note": "3 stories from data/research/paris-verified.json (par_013-015: Caucasian Elm of Sq Samuel Paty, twin Oriental Planes of Sq Michel-Foucault delivered as one entry, Plane of Quai Saint-Bernard). No best_time (2 planes + zelkova, no genuine seasonal peak). All merged into paris.json (10 to 13 trees); fixed stale 'ten'/'nine more' count-promises in intro, meta_description, question_meta and 2 FAQ answers, caught by the build's own check.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Paris (phenology)",
+        "kind": "other",
+        "tokens": 45000,
+        "trees": 6,
+        "note": "Added missing species phenology files for Field Elm and Caucasian Elm (data/phenology/), sourced from Woodland Trust and RHS/treesandshrubsonline. Covers par_007 and par_013 in the tight 8-tree Latin Quarter/Jardin des Plantes walk (1.52km max spread) plus 4 more Caucasian Elm trees in Florence, Madrid and Oxford, 6 trees total newly getting a season chart instead of an honest gap. Pivoted here after confirming this session cannot reach Wikimedia/iNaturalist/generic web hosts at all (gateway policy denial, not transient), which ruled out both photo judging and photo hunting; WebSearch still works and was used for sourcing.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
