@@ -634,6 +634,13 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .walk-pick.is-on { background: var(--moss); color: #fff; border-color: var(--moss); }
 .walk-pick-name { display: block; font-size: 13.5px; font-weight: 600; }
 .walk-pick-meta { display: block; font-size: 11.5px; opacity: 0.75; margin-top: 1px; }
+.tree-noph { display: flex; gap: 1.1rem; align-items: center; margin: 0 0 1.5rem;
+  padding: 1.1rem 1.25rem; background: var(--surface); border-radius: 14px; }
+.tree-noph-art { flex-shrink: 0; width: 62px; height: 62px; color: var(--moss);
+  display: inline-flex; align-items: center; justify-content: center; opacity: 0.9; }
+.tree-noph-art svg { width: 100%; height: 100%; fill: currentColor; }
+.tree-noph figcaption { font-size: 13.5px; line-height: 1.45; color: var(--ink-mid); }
+.tree-noph figcaption b { display: block; color: var(--ink); font-size: 15px; margin-bottom: 2px; }
 .route-name { display: block; font-size: 12.5px; font-weight: 600; opacity: 0.9; }
 /* Not on the chosen walk: dimmed, never hidden. Every tree stays in the
    document for a reader and a crawler; only the emphasis moves. */
@@ -3123,6 +3130,25 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, coun
     {credit_line}
   </figure>"""
         og_image = f'\n<meta property="og:image" content="{esc(thumb_url(photo["url"], 1200))}">'
+    else:
+        # 432 of 759 trees have no open-licence photograph, and most never will:
+        # by 2026-08-08 four sources had been tried and three further lanes tested
+        # to destruction, and the conclusion was that these trees are simply not
+        # photographed by anybody under a licence we can use. So the page stops
+        # having a hole where an image belongs and gets something drawn instead,
+        # using the species silhouette the map pins already use. It is not a
+        # placeholder pretending to be a photo: it says which species this is,
+        # which is real information, and invites the one source that can still
+        # close the gap.
+        photo_html = f"""
+  <figure class="tree-noph">
+    <span class="tree-noph-art" aria-hidden="true"><svg viewBox="0 0 40 40">{species_icon(tree)}</svg></span>
+    <figcaption>
+      <b>{esc(species_common(tree))}</b>
+      <span>Nobody has published a photograph of this tree under a licence we can use.
+      <a href="../contribute">Send us yours</a> and it goes on this page with your name on it.</span>
+    </figcaption>
+  </figure>"""
 
     # Honest where it costs the visitor something: an approximate pin means
     # standing in the right park without finding the tree.
