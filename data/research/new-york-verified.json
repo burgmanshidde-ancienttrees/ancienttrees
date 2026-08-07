@@ -1,0 +1,78 @@
+[
+  {
+    "id": "nyc_011",
+    "name": "The Great Elm of Central Park West",
+    "species": "American Elm (Ulmus americana)",
+    "age_estimate": "long-established, exact planting date undocumented",
+    "age_min": 100,
+    "age_max": 165,
+    "location": {
+      "address": "Central Park, northeast corner of Central Park West & West 77th Street, New York, NY 10024",
+      "latitude": 40.7794829,
+      "longitude": -73.9735811,
+      "neighbourhood": "Upper West Side, Manhattan"
+    },
+    "verified_sources": [
+      "https://www.nycgovparks.org/facilities/great-trees?id=45",
+      "https://greatesttreesofnyc.tumblr.com/post/126561022095/american-elm-central-park-west-and-west-77th",
+      "https://www.ilovetheupperwestside.com/coolest-tree-in-nyc/",
+      "https://www.westsiderag.com/2024/10/09/parks-releases-new-map-of-citys-great-trees-eight-of-them-are-in-central-park"
+    ],
+    "access": "Free, public park",
+    "transport": "81st Street-Museum of Natural History (Metro B/C), 4 min walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Official NYC Parks 'Great Trees of New York City' register entry (id=45), independently corroborated by a dedicated Great Trees tumblr blog, a local Upper West Side blog calling it 'NYC's most beautiful tree', and Central Park's 2024 Great Trees map update (Westside Rag). NYC Parks measures it at 50.84 feet tall with a 55-foot canopy spread, wider than tall. Stands right at a park entrance, directly across Central Park West from the American Museum of Natural History, next to the Alexander von Humboldt statue. A 1985 New York Times article on the original Great Tree Search called it one of only 23 elms then remaining on the park's west side, out of roughly 500 originally planted; Dutch elm disease killed the rest starting in the 1950s. No source gives an exact planting date or age for this specific tree, hence age flagged as a range (100-165 years) rather than a stated figure; unlike the Mall elms (see nyc_013 candidate), nothing found suggests this one was replanted, but that is inference, not documentation. Coordinates are the street intersection, not a surveyed point for the trunk itself, so precision is approximate. Anchors well against nyc_002 (The Black Tupelo of the Ramble), about 500m southwest.",
+    "id_note": "Next free NYC id used per passcheck; slug and final id to be confirmed by the merging session."
+  },
+  {
+    "id": "nyc_012",
+    "name": "The Elms on the Rocks",
+    "species": "American Elm (Ulmus americana)",
+    "age_estimate": "long-established, exact planting date undocumented",
+    "age_min": 100,
+    "age_max": 165,
+    "location": {
+      "address": "Rock outcrop just east of the Mall (Literary Walk), Central Park, New York, NY 10022",
+      "latitude": 40.772764,
+      "longitude": -73.971437,
+      "neighbourhood": "Central Park (Mall/Literary Walk area), Manhattan"
+    },
+    "verified_sources": [
+      "https://www.nycgovparks.org/facilities/great-trees?id=38",
+      "https://www.nycgovparks.org/facilities/great-trees?id=39",
+      "https://www.untappedcities.com/guide-central-park-great-trees/"
+    ],
+    "access": "Free, public park",
+    "transport": "72nd Street (Metro B/C), 8 min walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two American elms, each about 78 feet tall, growing directly out of a bedrock outcrop just east of Central Park's Mall; NYC Parks' Great Trees register lists them as two separate designated entries (ids 38 and 39) but they sit metres apart on the same outcrop and read as one destination to a visitor, so folded into a single entry here per the register-twin rule (both source ids kept in verified_sources for reference). Untapped Cities' Great Trees guide independently describes the same pair: gnarled trunks, one tree's roots visibly spreading across the rock 'like hands', with the schist bedrock itself dated by geologists to 190 million-1.1 billion years old (context for the rock, not the trees). No planting date or age found for either tree in any source; age given as a wide, flagged range consistent with other undated old-growth elms in the park. Coordinates are the Mall's known reference point, not a surveyed point for the outcrop itself; visually distinctive and easy to find once at the Mall, so still a useful approximate pin. About 550-650m from nyc_002 (Black Tupelo of the Ramble) and a few hundred metres from nyc_013 (Literary Walk elm allee candidate), all walkable together.",
+    "id_note": "Next free NYC id used per passcheck; slug and final id to be confirmed by the merging session."
+  },
+  {
+    "id": "nyc_013",
+    "name": "The Elm Allee of Literary Walk",
+    "species": "American Elm (Ulmus americana)",
+    "age_estimate": "about 100 years (planted in the 1920s, the third planting on this site)",
+    "age_min": 95,
+    "age_max": 106,
+    "location": {
+      "address": "The Mall (Literary Walk), Central Park, New York, NY 10022",
+      "latitude": 40.772764,
+      "longitude": -73.971437,
+      "neighbourhood": "Central Park (Mall/Literary Walk), Manhattan"
+    },
+    "verified_sources": [
+      "https://www.nycgovparks.org/facilities/great-trees?id=37",
+      "https://www.centralparknyc.org/articles/american-elms-central-park-mall",
+      "https://www.untappedcities.com/guide-central-park-great-trees/"
+    ],
+    "access": "Free, public park",
+    "transport": "72nd Street (Metro B/C), 8 min walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Ensemble candidate, not a single tree: two flanking rows of American elms lining The Mall (also called Literary Walk), NYC Parks' own Great Trees register entry 'Grove of American Elms on Central Park Mall' (id=37). Judged against the ensemble test (Lomanstraat tunnel / Meiji Jingu Gaien avenue precedent vs. La Rambla's ordinary planes): this reads as the former, a compact (roughly 400m), globally famous, single walkable promenade with one obvious place to stand/walk, not a generic scattering. IMPORTANT AGE CORRECTION found this pass: despite framing elsewhere ('163 years of trees in Central Park') that implies these are original 1860s plantings, the Central Park Conservancy's own article states the Mall's current elms are the THIRD planting on this site, installed in the 1920s after the first two plantings failed from soil compaction by foot traffic; rough fencing was added at that time to protect roots. So age should read approximately 100 years (95-106), not 160+; flag this clearly for the writer so the older figure floating around in press coverage is not used by mistake. SUPERLATIVE CLAIM, needs softening per hard rule 8: Untapped Cities/Wikipedia call this 'the largest grove of American elms in the world,' while Central Park's own Conservancy is more conservative, calling it merely 'one of the largest remaining plantations' of American elm survivors of Dutch elm disease (the Park has ~1,600 elms total, ~600 on rotating fungicide injection, losing 15-30/year to the disease). Deliver both, use the softer Conservancy phrasing. Coordinates are the Mall's known reference point (an approximate pin for a promenade, not one trunk). About 600m from nyc_002 (Black Tupelo of the Ramble) and a short walk from nyc_012 (Elms on the Rocks) and nyc_011, forming a real walkable Central Park cluster.",
+    "id_note": "Next free NYC id used per passcheck; slug and final id to be confirmed by the merging session. Writer should weigh whether this ensemble truly clears the collectible-point bar; verify_notes lays out the case both ways."
+  }
+]

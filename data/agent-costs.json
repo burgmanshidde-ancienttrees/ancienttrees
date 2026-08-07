@@ -369,6 +369,24 @@
         "note": "Pins-only pass, trees=0 (no new trees). 0 of 8 approximate pins upgraded: RBGE Garden Explorer lists 4 Edinburgh sweet chestnut accessions, none matching the story's Pond Lawn specimen; a single iNaturalist Cedrus libani ID near edi_004 was CV-only with no research-grade consensus, too thin given this exact tree already had one past misidentification; Craigmillar's Canmore record blocked by trove.scot 403. Recorded in CURATION.md so a future pass does not repeat these three dead ends.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "New York",
+        "kind": "verify",
+        "tokens": 55000,
+        "trees": 3,
+        "note": "Central Park cluster around the existing nyc_002 (Ramble tupelo): 3 verified via NYC Parks' own Great Trees register (id=45, 38, 39, 37), all flagged (undocumented ages, approximate street/landmark pins). Corrected a press-driven age myth on the Mall elm allee (Central Park Conservancy: third planting, 1920s, not the original 1858 row) and softened a superlative per hard rule 8. Forms New York's first walkable cluster, 4 trees, 1.4km/19min, confirmed in the built page's own WALKS data. 5 more leads (a second, more northerly Central Park cluster) recorded for a future pass.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "New York",
+        "kind": "write",
+        "tokens": 8000,
+        "trees": 3,
+        "note": "Stories for nyc_011-013 written directly in the main session, merged into new-york.json (10 to 13 trees). Fixed two stale count-promises ('eight more' / 'nine more Great Trees') in NYC's own copy caught by the build's own check.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
