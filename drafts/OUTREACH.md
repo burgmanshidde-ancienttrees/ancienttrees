@@ -34,19 +34,90 @@ actually clicked) and links to the Links report for a manual read.
 | 5 | SPW Wallonie, AHREM | What the three `DOMAINE` codes mean (13,007 / 6,985 / 253), and which records are the ones their own data model says are "positionnes aleatoirement" inside an address perimeter | 20,245 trees, the richest schema found anywhere. Licence is already fine (CC BY 4.0); only rule 10 blocks it. |
 | 6 | GDOS Poland (CRFOP) | Confirmation of the data licence. Portal metadata reads CC0 but the licence-condition fields are empty and the site publishes CC BY-SA for its own content. | 117,474 tree monuments, the largest verified pool anywhere |
 
-## Tier 3: pure backlinks, no data involved
+## Tier 3: backlinks. Named targets, each with a reason to write
 
-These are people who would plausibly link to us because the site is genuinely
-useful to their audience. Send after tier 1, and only to places where a link is
-natural rather than begged for.
+Hidde, 2026-08-08: three addresses is not an outreach programme. Correct, and
+the first version of this file listed categories rather than people. The list
+below names actual organisations. Addresses marked "find" need one lookup on
+their own site; nothing here is invented, because a wrong address is worse than
+no address.
 
-| # | Who | The honest hook |
+**The principle that decides who is on this list.** A cold email asking for a
+link is spam and converts near zero. An email telling an organisation that we
+have written about THEIR trees, credited them, and linked to them is a
+different message entirely, and it is true. So every target below is somewhere
+we already feature, cite or credit. That is also why this list is finite: when
+we run out of organisations we have a real reason to write to, we stop.
+
+### 3a. The nine gardens and parks that now have their own page
+
+Each of these has a page on our site about their trees, with photographs,
+directions and their own history. That page is the email. Ask nothing except
+whether they would like to see it, and mention we link to them.
+
+| Organisation | City | Address |
 |---|---|---|
-| 7 | The botanical gardens whose trees we feature | Padua (UNESCO, and we now have a park page), Naples' Real Orto Botanico, Florence's Giardino dei Semplici, Leiden's Hortus, Porto's Jardim Botanico. Each has a page about their own trees they may want to point at. |
-| 8 | RAMI, ilregistrodeglialberi.it | The volunteer Italian register that supplied ages MASAF has never carried. We use them heavily and credit them; they are the natural first ally in Italy. |
-| 9 | City parks departments in published cities | Madrid (Retiro), York (Museum Gardens), Turin (Valentino), Brussels (Egmont). A council that already signposts its trees is a council that may link to a walk of them. |
-| 10 | Monumental-tree associations | Bomen over Leven and similar national bodies; the same audience, no commercial conflict. |
-| 11 | The local papers that already publish monumental-tree surveys | Il Piccolo (Trieste), PadovaOggi. They wrote the survey we verified against; a follow-up is a natural story. |
+| Royal Botanic Garden Edinburgh | Edinburgh | info@rbge.org.uk |
+| Real Orto Botanico di Napoli | Naples | find on ortobotanico.unina.it |
+| Giardino dei Semplici (Museo di Storia Naturale, Univ. Firenze) | Florence | find on sma.unifi.it |
+| York Museums Trust (Museum Gardens) | York | find on yorkmuseumstrust.org.uk |
+| Bruxelles Environnement (Parc d'Egmont) | Brussels | info@environnement.brussels |
+| Reggia di Caserta (Giardino Inglese) | Caserta | find on reggiadicaserta.cultura.gov.it |
+| Schloss Nymphenburg (Bayerische Schlösserverwaltung) | Munich | find on schloesser.bayern.de |
+| Parco del Valentino (Città di Torino, Verde Pubblico) | Turin | find on comune.torino.it |
+| Parque del Retiro (Ayuntamiento de Madrid) | Madrid | find on madrid.es |
+
+### 3b. The registers we cite and credit
+
+We use their data and name them on the page. Several run a "who uses our data"
+section, which is the most natural link on the internet.
+
+| Organisation | Country | Address |
+|---|---|---|
+| RAMI, Registro degli Alberi Monumentali Italiani | Italy | find on ilregistrodeglialberi.it |
+| ICNF (Arvoredo de Interesse Publico) | Portugal | find on icnf.pt |
+| Ajuntament de Barcelona, arbrat viari | Spain | find on ajuntament.barcelona.cat |
+| Stadt Wien, data.wien.gv.at | Austria | post@ma41.wien.gv.at (verify) |
+| Ville de Paris, Direction des Espaces Verts | France | find on paris.fr |
+| Senatsverwaltung Berlin (Naturdenkmale) | Germany | find on berlin.de |
+| Govern de les Illes Balears, SITIBSA | Spain | find on caib.es |
+| Generalitat Valenciana, ICV | Spain | find on icv.gva.es |
+
+### 3c. Tree organisations and societies
+
+The audience overlap is total and there is no commercial conflict.
+
+| Organisation | Country | Why they would care |
+|---|---|---|
+| Bomenstichting | NL | Also tier 1; the register ask and the link ask are one email |
+| Monumental Trees (monumentaltrees.com) | intl | Hard rule 1 forbids using their content, but a mutual link is a different thing and their community is exactly ours |
+| The Tree Register (TROBI) | UK | Champion-tree records; independent of the Woodland Trust |
+| European Tree Worker / EAC | EU | Professional arborists across our whole map |
+| Arbor Day Foundation | US | Relevant when the US cities open |
+| Ancient Yew Group | UK | We publish yews across Europe; a narrow, passionate audience |
+
+### 3d. The local papers that already ran the story
+
+Each of these published a survey of their city's monumental trees, which we
+verified against and credit. A follow-up ("a Dutch site mapped your city's
+trees and used your survey") is a real story for them, not a favour.
+
+| Paper | City | Note |
+|---|---|---|
+| Il Piccolo | Trieste | Their survey of 48 monumental trees gave us ages no register carries |
+| PadovaOggi | Padua | Their reporting confirmed the last Prato della Valle plane died in 2011 |
+| Local press in Setubal | Setubal | The parish's own tree route corroborated nine of our ten entries |
+
+### What to send them, and it is not a template
+
+One short email each, in the local language where you can, saying what the site
+is, that we have written about their trees or used their data, and that we link
+to them. Ask whether they would like to look. Do not ask for a link in the first
+email: the page itself is the ask, and an organisation that likes it will link
+without being told to.
+
+Rough order of value: 3a first (we have the strongest, most flattering hook and
+a page to show), then 3b, then 3c, then 3d.
 
 ## Rules for all of it
 
