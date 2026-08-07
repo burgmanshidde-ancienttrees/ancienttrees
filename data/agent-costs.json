@@ -432,6 +432,15 @@
         "note": "Added the 7 missing species phenology files (Cork Oak, Aleppo Pine, Ombu, Himalayan Cedar, Willowleaf Podocarp, Southern Magnolia, Chir Pine) for Rome's tight 14-tree/2km walkable cluster (rom_001-020 area), closing its 'season data' gap toward the deep-enough bar. All 7 species now render a full season chart instead of the flat fallback; also closes the gap for 5 of Barcelona's cluster (southern-magnolia, himalayan-cedar, aleppo-pine already shared) as a side effect. Sourced via WebSearch only (treesandshrubsonline.org, RHS, NC State/Clemson/UF extension, conifers.org, PubMed) since this session's egress proxy 403s every direct fetch to Wikimedia/RHS/etc at the CONNECT level (confirmed via the proxy status endpoint, same policy denial an earlier run today found), which also ruled out photo judging (item 2 of this run's brief) since images cannot be viewed. Priority item 1 (Paris write pass) was already merged by an earlier run today. Build and qa.py both clean (1,193 pages) before commit.",
         "wasted": 0,
         "brief_wrong": true
+      },
+      {
+        "target": "photo-queue",
+        "kind": "photo",
+        "tokens": 90000,
+        "trees": 0,
+        "note": "Estimate, not a harness-reported number (unavailable mid-session). Viewing pass on the scheduled routine, remote session, not GitHub Actions. Wikimedia and Openverse both refused by this environment's egress proxy (403 on CONNECT), same block as CI; only inaturalist-open-data.s3.amazonaws.com was reachable. Checked each candidate's own `judged` field before viewing anything, which caught that 13 of the 34 originally-selected candidates (lis_013, mad_002, mil_011, pad_004, por_010, prg_012, prg_014, stb_008) were already judged on 2026-08-07 by an earlier pass; left those calls untouched. Viewed and judged the 20 genuinely unjudged iNaturalist candidates across 8 trees (Barcelona x3 trees/9 images, Edinburgh, Geneva x2, Groningen, Krakow, Malaga): all 20 rejected, leaf/fruit/bark/hand close-ups or backlit canopy shots, none show the whole tree per the Cadiz standard. 0 approved. bcn_002, bcn_013, edi_007 and kra_003 still carry one unreached Wikimedia/Openverse candidate each and stay open.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

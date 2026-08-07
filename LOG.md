@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-07 — Photo-queue viewing pass: inaturalist-open-data.s3.amazonaws.com is reachable, Wikimedia/Openverse are not
+
+Scheduled autonomous run. `git pull`: local `main` was stale/diverged again (same shallow-clone artefact several runs hit today, no unique local commits, no data lost); reset to `origin/main`. `passcheck.py` briefs on Barcelona/Rome/Paris before acting.
+
+**Item 1 of the brief (Paris write pass) was already merged** by an earlier run today, par_013-015 live in `paris.json`. **Item 2 (judge the photo queue)**: this session's proxy refuses `upload.wikimedia.org` and `api.openverse.org` outright (403 on CONNECT, "policy denial"), matching what two earlier runs found today. But `inaturalist-open-data.s3.amazonaws.com` **is** reachable from this session, confirmed by fetching and viewing a test image before relying on it. Earlier runs today reported egress "fully blocked" for iNaturalist too; that was not tested per-host and was wrong for this host specifically, worth correcting since it means a photo-judging pass is not entirely dead even when Wikimedia is.
+
+Selected 17 trees still marked `photo.status: missing` with iNaturalist candidates in `data/photo-queue.json`, downloaded and viewed all 34. **Before writing any verdict, checked each candidate's own `judged` field** (learned this the hard way partway through: 4 of my early approvals turned out to be candidates an earlier pass had already judged and rejected/held on 2026-08-07, one for a reason invisible in the photo itself, Príncipe Real's fig square holds three similar trees and the photo can't be pinned to ours). Discarded those 4 calls entirely and deferred to the earlier pass. Of the 34, 14 were already judged (left untouched); the 20 genuinely new ones, across 8 trees with no prior outcome (bcn_002 x6, bcn_013 x1, bcn_021 x2, edi_007 x1, gen_005 x2, gro_002 x1, kra_003 x1, mlg_004 x1), were all rejected: leaf, fruit, bark or hand close-ups, or backlit shots straight up into canopy with no trunk. **0 approved.** bcn_021, gen_005, gro_002 and mlg_004 are now fully exhausted (top-level `outcome: rejected` set); bcn_002, bcn_013, edi_007 and kra_003 each still carry one unreached Wikimedia/Openverse candidate and stay open for a session that can reach those hosts.
+
+Build and `qa.py` both clean (1,193 pages). Cost logged to `data/agent-costs.json` (~90,000 tokens estimated, harness number unavailable mid-session, kind "photo", 0 trees). One commit, pushed. No claim taken (queue-wide work, not a single city; coordination happens via candidates' own `judged` fields, which this pass respected).
+
+FOR HIDDE: nothing blocks. One correction worth knowing: this environment's photo-judging is not all-or-nothing by host. iNaturalist works here even when Wikimedia and Openverse don't, so future runs should test each host rather than assume a prior "unreachable" note covers all three.
+
 ## 2026-08-07 — Seven missing species phenology files close Rome's season-data gap, egress still fully blocked
 
 Scheduled autonomous run. `git pull` found local `main` stale/diverged again (same shallow-clone artefact other runs hit today); reset to `origin/main`, no real history lost. Confirmed this session's egress proxy 403s every direct fetch (`upload.wikimedia.org`, `commons.wikimedia.org`, `api.inaturalist.org`, `en.wikipedia.org`, `opendata.paris.fr`, checked individually and against the proxy's own status endpoint: "gateway answered 403 to CONNECT, policy denial"), matching what an earlier run today found and confirming it is not a fluke of that one session.
