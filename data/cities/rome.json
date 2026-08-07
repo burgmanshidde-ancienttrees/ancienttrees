@@ -2,10 +2,10 @@
   "city": "Rome",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Rome's noble families turned trees into status symbols the way they turned villas into galleries. Cardinal Scipione Borghese's gardener planted a grove of oriental planes in the 1600s that foresters now call the oldest living trees in the city; the Pamphilj and Mattei families each planted cedars of Lebanon nearby, one per hilltop garden, as a shorthand for permanence. Rome has 65 trees registered as monumental under Italian law, more than any other city in the country. These sixteen range from a poet's legendary oak to a South American ombu, and all but two are free to visit.",
-  "meta_description": "Rome's noble villas planted cedars of Lebanon as status symbols. Meet Adonis, a 425-year-old plane in Villa Borghese, and fifteen more remarkable trees.",
+  "intro": "Rome's noble families turned trees into status symbols the way they turned villas into galleries. Cardinal Scipione Borghese's gardener planted a grove of oriental planes in the 1600s that foresters now call the oldest living trees in the city; the Pamphilj and Mattei families each planted cedars of Lebanon nearby, one per hilltop garden, as a shorthand for permanence. Rome has 65 trees registered as monumental under Italian law, more than any other city in the country. These twenty range from a poet's legendary oak to a South American ombu, and all but two are free to visit.",
+  "meta_description": "Rome's noble villas planted cedars of Lebanon as status symbols. Meet Adonis, a 425-year-old plane in Villa Borghese, and nineteen more remarkable trees.",
   "question_answer": "The oldest verified tree in Rome is Adonis, an oriental plane in the Valley of the Plane Trees at Villa Borghese, planted in the early 1600s by Cardinal Scipione Borghese's gardener and now around 425 years old. It stands inside Villa Borghese, a short walk from the Via Pinciana entrance.",
-  "question_meta": "Adonis, a 425-year-old oriental plane in Villa Borghese, is Rome's oldest verified tree. Its story, exact location, and fifteen more remarkable trees.",
+  "question_meta": "Adonis, a 425-year-old oriental plane in Villa Borghese, is Rome's oldest verified tree. Its story, exact location, and nineteen more remarkable trees.",
   "question_context": "Rome has an older legend. The Quercia del Tasso on the Gianicolo is popularly said to be a thousand years old, tied to the poet Torquato Tasso, who tradition says rested in its shade before his death in 1595. No dendrologist has ever dated it, and this site treats that number as folklore rather than fact. Adonis has no such problem. Cardinal Scipione Borghese's gardener, Domenico Savini da Montepulciano, planted a row of oriental planes in the villa's private hunting park in the early 1600s, and the planting is documented well enough that Italian foresters count the survivors, nine of the original eleven, as the oldest confirmed trees in the city. Adonis is the largest of them, a hollow giant at the entrance to what is now called the Valley of the Plane Trees. In 2021 the garden cloned it from a single surviving leaf, a hedge against the fate of a neighboring oak from the same era that collapsed in 2018. Getting there: enter Villa Borghese from Via Pinciana and follow the signs for the Valle dei Platani.",
   "faq": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Rome's remarkable trees free to visit?",
-      "a": "Fourteen of the sixteen on this list stand in free public parks and squares. The two inside the Orto Botanico, Rome's botanical garden, require a paid ticket."
+      "a": "Eighteen of the twenty on this list stand in free public parks and squares. The two inside the Orto Botanico, Rome's botanical garden, require a paid ticket."
     },
     {
       "q": "How does Italy protect its monumental trees?",
@@ -527,6 +527,132 @@
       "curation_status": "flagged",
       "notes": "Sheet 68/H501/RM/12, 420cm, 30m. SINGLE SOURCE, and the story says so in its last three sentences rather than hiding it: the Lazio regional register and the MASAF national register are the same designation published twice, and no municipal, press or garden-history source names this individual tree. Roma Capitale's own monumental-tree walk predates the sheets numbered above 57 and does not cover it. Published under the flagged rule because the register is an official source and the uncertainty is stated on the page; drop it if a reader disputes the tree. Superlative checked (hard rule 8): NOT the tallest on the register. Rome's register tops out at 34m (the Aleppo pine at Villa Celimontana, our rom_009), then 32m twice, then 31m, then this at 30m, so the claim is written as among the five tallest and is arithmetically true of the 65 comune entries. Precision is approximate, not confirmed: the Pincio terrace is large, the coordinate has no independent corroboration (no Commons photograph of this tree exists, geosearch and text search both empty), and the Caserta lesson says a register point with nothing to check it against is not a confirmed pin. 470m from rom_006, so it extends the Villa Borghese walk toward Piazza del Popolo rather than starting a new one.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "rom_017",
+      "name": "The Magnolia of Via Corsini",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "roughly 275 years",
+      "age_min": 250,
+      "age_max": 300,
+      "location": {
+        "address": "Via Corsini 1, 00165 Roma",
+        "latitude": 41.89277,
+        "longitude": 12.467126,
+        "neighbourhood": "Trastevere"
+      },
+      "verified_sources": [
+        "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+        "https://ilregistrodeglialberi.it/17729-la-magnolia-dei-corsini-magnolia-roma-rm-lazio"
+      ],
+      "access": "Free, public street (Via Corsini), RAMI records it as Accessibile. Resolves the access question the leads file left open: it stands on the street at Via Corsini 1, not inside the ticketed Orto Botanico or the private Corsini gardens.",
+      "transport": "Same walk as rom_003 (Twin Planes of the Eleven Fountains), 109m away; 10 min walk from Trastevere",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Rome's oldest magnolia does not stand in a garden. It stands on the pavement of Via Corsini, outside the wall of the palace whose garden it was planted for, around the middle of the eighteenth century and roughly 275 years ago. The Orto Botanico next door, the obvious home for a tree like this, only became a public institution long after it was already in the ground.\n\nSouthern magnolias had reached Europe from the American southeast only a few decades earlier, which made this one a collector's purchase rather than a street tree. It grew accordingly. The trunk measures 290 centimetres around and the crown reaches 18 metres, closer to a forest tree than to the clipped courtyard shrub the species usually settles for in Italy. Italy's monumental register lists it for age and for size, and for a magnolia that pairing is rare.\n\nWhat it has watched is mostly the boundary in front of it changing hands: a cardinal's private grounds turning into a state botanical collection, and Trastevere turning from the edge of the city into the middle of it. Surveyors looked it over in late 2025 and recorded its health as good.\n\nIn May and June it does the thing the species was imported for, opening cream-white flowers the size of a spread hand, high up and out of reach, and heavy enough with scent that most people smell it before they look up.",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "kind": "flowers",
+        "label": "May and June, when the cream-white flowers open and you smell it before you see it"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "rom_018",
+      "name": "The Cedar of Lebanon of Villa Torlonia",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "age_estimate": "estimated 150-200+ years, undocumented",
+      "age_min": 150,
+      "age_max": 220,
+      "location": {
+        "address": "Villa Torlonia, entrance staircase to the Palazzo Nobile (Casino Nobile), Via Nomentana, 00161 Roma",
+        "latitude": 41.915357,
+        "longitude": 12.51089,
+        "neighbourhood": "Nomentana / Villa Torlonia"
+      },
+      "verified_sources": [
+        "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+        "https://ilregistrodeglialberi.it/9269-cedro-del-libano-roma-rm-lazio",
+        "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295"
+      ],
+      "access": "Free, public park, Villa Torlonia. RAMI records it as Accessibile.",
+      "transport": "Bus to Via Nomentana / Villa Torlonia entrance, or 10 min walk from Bologna metro (Line B); 3.5km from the city centre",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "No cedar on Rome's monumental register is thicker than this one. Six metres around the trunk, 28 metres up, standing beside the staircase Giuseppe Valadier designed for the Casino Nobile. The surveyor who wrote its entry reached for the word guardiano.\n\nNobody knows when it was planted, and that is worth saying plainly, because the register carries a girth for it and no birth year at all. What exists instead is the estate's history. The Torlonia family bought the grounds in 1797, and the English-style landscaping that brought ornamental conifers into Roman villas came later in the nineteenth century. That puts the cedar somewhere between 150 and 220 years old, which is an inference from the garden rather than a date from a document.\n\nIts neighbours have been unusual. The park holds a pink granite obelisk the cedar now rivals for height, a mock-medieval house covered in owls, and from 1925 to 1943 Mussolini, who rented the whole estate as his private residence for a token sum. The villa was occupied, then left to fall apart for decades, then repaired and opened as a public park. The cedar came through all of it standing where it stands now. Roma Capitale's own description of the villa calls it colossal, which for once is not municipal enthusiasm. It was measured again in March 2026 and found in good health.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "rom_019",
+      "name": "The Podocarp of Piazza Vittorio",
+      "species": "Willowleaf Podocarp (Podocarpus neriifolius)",
+      "age_estimate": "100+ years, undocumented",
+      "age_min": 80,
+      "age_max": 130,
+      "location": {
+        "address": "Giardino Nicola Calipari, Piazza Vittorio Emanuele II, 00185 Roma",
+        "latitude": 41.89518,
+        "longitude": 12.503242,
+        "neighbourhood": "Esquilino"
+      },
+      "verified_sources": [
+        "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+        "https://ilregistrodeglialberi.it/17726-podocarpo-di-piazza-vittorio-quercia-virgiliana-roma-rm-lazio"
+      ],
+      "access": "Free, public garden inside Piazza Vittorio Emanuele II (Giardino Nicola Calipari). RAMI records it as Accessibile.",
+      "transport": "Vittorio Emanuele metro (Line A), on the square; 1.7km from the Capitoline cluster (rom_010, rom_014)",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Italy put this tree on its national monumental register in October 2025 for one reason: it should not be here. Podocarpus neriifolius grows wild in the forests of the Himalayan foothills and southeast Asia, and Rome holds very few of any size. This is one of the largest, 230 centimetres around and 20 metres tall, in the public garden inside Piazza Vittorio Emanuele II.\n\nIts age is not known. No planting record survives and neither register that lists it carries a date, so a century, give or take, is as precise as anyone can honestly be. The square around it was laid out in the 1880s for the new capital's civil servants, in an arcaded Turinese style that still makes this corner of Rome look imported from somewhere else, and a garden of exotic trees was exactly what that decade planted.\n\nIt has stood through the more restless version of Rome. The square's ruined fountain, the Trofei di Mario, sits a few steps away and predates it by seventeen centuries. The food market that filled the arcades for a hundred years packed up and moved around the corner in 2001. The neighbourhood became the most polyglot in the city. The podocarp, evergreen and unbothered, looks much the same in February as in August. Its health was recorded as good in November 2025.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "rom_020",
+      "name": "The Chir Pine of Colle Oppio",
+      "species": "Chir Pine (Pinus roxburghii)",
+      "age_estimate": "90+ years, likely planted around the garden's 1936 opening",
+      "age_min": 85,
+      "age_max": 110,
+      "location": {
+        "address": "Parco di Colle Oppio, above the Domus Aurea, 00184 Roma",
+        "latitude": 41.89363,
+        "longitude": 12.497131,
+        "neighbourhood": "Esquilino / Colosseo"
+      },
+      "verified_sources": [
+        "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
+        "https://ilregistrodeglialberi.it/17727-pino-dellhimalaya-pino-dellhimalaya-roma-rm-lazio",
+        "https://www.ilmessaggero.it/roma/cronaca/roma_il_miracolo_del_pino_della_domus_aurea_rinasce_l_albero_arrivato_dall_himalaya-3589907.html"
+      ],
+      "access": "Free, public park, Parco di Colle Oppio. RAMI records it as Accessibile.",
+      "transport": "5 min walk from Colosseo metro (Line B); joins a future Celio/Colosseum walk, 1km from Villa Celimontana (rom_008, rom_009)",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The roots of this pine have grown into Nero's palace. It stands on Colle Oppio directly above the Domus Aurea, and somewhere below it in the dark they have worked into the nymphaeum of Ulysses and Polyphemus.\n\nIt is not a Roman tree in any sense. The Chir Pine belongs to the Himalayan foothills, and this one was carried back from there by Giuseppe Tucci, the Tibetologist and Mussolini-era envoy who spent the 1930s travelling in Tibet and Nepal. It was already standing when the Colle Oppio garden was inaugurated in 1936, which makes it at least ninety years old and one of the very few of its species in the city. Italy's monumental register added it in October 2025 on the grounds of botanical rarity alone: 290 centimetres around, 20 metres tall.\n\nThe caveat is real and belongs in the same breath. Those roots are a genuine problem for the ruin underneath, and plans to redesign the garden above the Domus Aurea have been reported as intending to take out the tall trees over the excavation for exactly that reason. The press had already written this tree off as dying once. The register's most recent check, in late 2025, found it alive and in good health. Both things hold: it is doing well, and it is standing on ground where the archaeology has the stronger claim.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

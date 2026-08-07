@@ -4,12 +4,6 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "Rome",
-      "kind": "write",
-      "by": "night-run",
-      "claimed_at": "2026-08-07T04:42:21+00:00"
-    },
-    {
       "target": "Paris",
       "kind": "verify",
       "by": "night-run",

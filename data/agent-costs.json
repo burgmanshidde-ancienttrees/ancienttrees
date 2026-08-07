@@ -314,6 +314,17 @@
         "wasted": 0,
         "brief_wrong": false
       }
+    ],
+    "2026-08-07": [
+      {
+        "target": "Rome",
+        "kind": "write",
+        "tokens": 60000,
+        "trees": 4,
+        "note": "Stories for the 4 already-verified rom_017-020 (Magnolia of Via Corsini, Cedar of Lebanon of Villa Torlonia, Podocarp of Piazza Vittorio, Chir Pine of Colle Oppio), merged into rome.json (16 to 20 trees). rom_017 joined the Monteverde/Trastevere walk (7 to 8 trees); rom_019/rom_020 are 534m apart but under WALK_MIN_TREES, so no second walk formed yet, an honest partial step. Under the six-tree batch floor, so per-tree cost is inflated by the fixed tone-calibration read.",
+        "wasted": 0,
+        "brief_wrong": false
+      }
     ]
   }
 }
