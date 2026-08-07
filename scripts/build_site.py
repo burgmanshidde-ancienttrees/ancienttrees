@@ -4835,18 +4835,18 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
     # already rewards with the pages he is proudest of (Cadiz is the photo
     # calibration city). Reorder or swap on his word, no code beyond the list.
     #
-    # Revised 2026-08-08 on his ask to put the best cities here, and measured
-    # rather than guessed. Three left because a shelf that promises a good
-    # afternoon should not open with a city you cannot walk: Kyoto has NO walk
-    # at all (35 km apart, the exact anti-example CLAUDE.md uses), London has no
-    # walk either, and Palermo's best is three trees. All three come straight
-    # back the day they gain one, which is one edit to this list.
-    # Three arrived on the numbers: Prague has the best-photographed walk on the
-    # whole site (9 of 10 trees shot), Madrid the biggest (13 trees, 8 shot),
-    # and Florence the tightest anywhere, seven trees inside 300 metres, which
-    # beats Cadiz's 600.
-    FAVOURITE_CITIES = ["lisbon", "prague", "cadiz", "florence", "porto",
-                        "amsterdam", "madrid", "rome", "paris", "barcelona"]
+    # Revised 2026-08-08, on Hidde's rule rather than on walk quality: "the ones
+    # with most trees, most walks and highest on our go to market strategy (aka
+    # most tourist)". So the sort is tourism tier first (phase 1 of the rollout,
+    # then phase 2), then tree count, then how many walks the city offers.
+    #
+    # An earlier version of this list ranked on photo coverage and dropped
+    # London and Kyoto for having no walk. His ordering puts them back: the
+    # shelf carries the strategy, and photos come later. London leads the
+    # rollout and Kyoto is a phase-2 city, so both belong here even while their
+    # trees are too scattered to connect.
+    FAVOURITE_CITIES = ["barcelona", "rome", "paris", "berlin", "amsterdam",
+                        "london", "new-york", "lisbon", "vienna", "edinburgh"]
     by_slug = {e["slug"]: e for e in (renderable or [])}
     fav_cards = []
     for cs in FAVOURITE_CITIES:
