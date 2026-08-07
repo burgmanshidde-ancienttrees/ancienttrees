@@ -99,12 +99,22 @@ jobs:
                afternoon. Berlin leads with 3, Rome and New York with 4. Aim
                for 6 to 8 within roughly 2 km by adding trees that JOIN the
                existing cluster, never scattered singles elsewhere in the city.
-            3. PHOTOS come next, and they outrank season data (Hidde,
-               2026-08-08). Runs cannot judge images, because this runner's
-               egress proxy blocks upload.wikimedia.org, so a run's whole
-               contribution here is to keep scripts/photo_hunt.py sweeping,
-               which is free and fills the queue for a session that can see.
-               Never spend a window judging.
+            3. PHOTOS ARE A PRIORITY, not a parked item (Hidde, 2026-08-08:
+               "we do need to focus on photos"). But a run cannot judge one:
+               this runner's egress proxy blocks upload.wikimedia.org, so
+               looking at images only works in Hidde's own sessions. A run's
+               contribution is therefore the part that DOES work here, and it
+               matters more than it sounds:
+               - Run scripts/photo_hunt.py --recheck on the cities you touch,
+                 and on any city whose trees were swept before a new source was
+                 added. It is free and it fills the queue for a session.
+               - A tree with NO candidate from any of the four sources is the
+                 real bottleneck, not a tree waiting to be judged. When you add
+                 trees to a city, prefer ones that are likely to be
+                 photographed: a named specimen in a botanical garden or a
+                 famous park usually is, an unnamed street tree usually is not.
+               - Never spend a window judging, and never approve a photo you
+                 have not seen.
             4. SEASON DATA IS LAST, and do not sink time into it (Hidde,
                2026-08-08: "don't waste too much time on finding the season of
                the tree, it's less important than photos and we can do it
