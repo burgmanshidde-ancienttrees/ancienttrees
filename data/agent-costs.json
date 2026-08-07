@@ -351,6 +351,15 @@
         "note": "Stories for ber_011-013 written directly in the main session (batch too small for a dedicated write-stories dispatch), merged into berlin.json (10 to 13 trees). Forms a real 3-tree, 1.4km/19min walk on Pfaueninsel per the build's own walk planner. Fixed two stale 'ten' count-promises in Berlin's own intro/FAQ copy that the build's count-promise check caught.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "park intros",
+        "kind": "write",
+        "tokens": 22000,
+        "trees": 0,
+        "note": "6 hand-written park intros in session, no research: grounded entirely in facts already verified in the trees own stories. Took /parks from 3 pages to 9.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
