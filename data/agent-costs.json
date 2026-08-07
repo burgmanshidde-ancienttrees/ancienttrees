@@ -468,6 +468,42 @@
         "note": "Stories for par_016 (Twisted Beech, Square des Arenes de Lutece), par_017 (Anne Frank Chestnut, Jardin Anne Frank) and par_018 (Fig Tree, Square Georges Cain, flagged/undated), merged into paris.json (13 to 16 trees), extending the Latin Quarter/Marais cluster. 1 best_time set (par_016, bare silhouette Jan/Feb). Fixed a stale claim in the already-live par_007 story (\"the youngest tree on this list\") which par_017 (planted 2007) broke. Updated meta_description and question_meta count text (\"a dozen more\" to \"15 more\"). Research file deleted, now stale/merged.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "dublin",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 1,
+        "note": "Trinity College seed cluster grown to 3 (dub_005/006/011, wych elm survivor of the 1970s die-off); Oregon Maples' death date corrected on the live dub_006 story (2008 -> 2018, caught while researching)",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "berlin",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 0,
+        "note": "Pfaueninsel 4th-oak lead (ND 6-108/B) still short one independent source despite reading the primary ordinance PDF; found a new 5th-tree lead (ND 6-71/B London Plane) instead of shipping anything",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "rome",
+        "kind": "verify",
+        "tokens": 95000,
+        "trees": 2,
+        "note": "Villa Borghese cluster grown 4->6 (rom_021 cypress, rom_022 hackberries), both flagged/approximate; MASAF/Lazio register exhausted for this cluster",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "new york",
+        "kind": "verify",
+        "tokens": 45000,
+        "trees": 0,
+        "note": "Central Park cluster (Ramble/Mall/CPW) confirmed exhausted against NYC Parks' Great Trees register; only under-sourced lead found (Cedar of Lebanon near Conservatory Water)",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ],
     "2026-08-08": [

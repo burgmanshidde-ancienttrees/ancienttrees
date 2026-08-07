@@ -1,0 +1,48 @@
+{
+  "leads": [
+    {
+      "name": "Quatercentenary Oak (Tree No. 258)",
+      "species": "Sessile Oak (Quercus petraea)",
+      "location": "New Square, Trinity College Dublin, opposite House 39, roughly 100m from dub_006",
+      "reason": "Real and documented (TCD news article on the 2023 Trinity Tree Walk & Talk), provenance from Killarney National Park, planted to mark Trinity's 400th anniversary (1992), so only around 30 years old. Article itself calls it 'still very young by comparison' to a mature oak's centuries-long lifespan. Historically meaningful as a ceremonial planting but too young and too thin a story to clear the ancient-trees bar on its own. Worth revisiting in a few decades, or if a stronger historical angle turns up.",
+      "sources": ["https://www.tcd.ie/news_events/articles/2023/trinity-tree-walk--talk-event-/"]
+    },
+    {
+      "name": "Sessile Oak beside The Flatiron (Tree No. 528)",
+      "species": "Sessile Oak (Quercus petraea)",
+      "location": "Beside 'The Flatiron', Trinity College Dublin (exact building/location not confirmed)",
+      "reason": "Only source found is the same TCD Tree Walk article, which calls it 'a larger specimen' with no age, girth, or precise location given, and I could not independently confirm where 'The Flatiron' actually is on campus (not a building name that turned up in any map or heritage source I could reach). Second source and precise location both missing. Worth a second pass with access to TCD's own campus map or the 2011 'Trees of Trinity College Dublin' booklet (3rd/4th edition), which was referenced but never found online as a downloadable PDF.",
+      "sources": ["https://www.tcd.ie/news_events/articles/2023/trinity-tree-walk--talk-event-/"]
+    },
+    {
+      "name": "Giant Redwood, edge of Physics Lawn",
+      "species": "Giant Redwood / Wellingtonia (Sequoiadendron giganteum)",
+      "location": "Edge of the Physics Lawn, Trinity College Dublin main campus",
+      "reason": "TCD's own 'Tree of the Month' article explicitly describes this as a 'young specimen', distinct from a larger, older Giant Redwood at Trinity Hall in Dartry (off main campus, ~5km away and outside this cluster's 1.5km radius). The main-campus specimen is too young to be remarkable; the Dartry one is out of range for this pass.",
+      "sources": ["https://www.tcd.ie/news_events/articles/2024/trinity-tree-of-the-month---the-giant-redwood/"]
+    },
+    {
+      "name": "St Stephen's Green / Merrion Square / Iveagh Gardens specimen trees (general)",
+      "species": "various: sycamore, London plane, lime, evergreen oak, holm oak, monkey puzzle, etc.",
+      "location": "St Stephen's Green, Merrion Square Park, Iveagh Gardens, all central Dublin, all within ~1.5km of Trinity",
+      "reason": "Extensive searching (park authority pages, heritage sites, Dublin City Council parks strategy pages, newspaper coverage) turned up plenty of species lists and general claims ('sycamores were the first trees planted in the 17th century', 'ancient trees' as a vague descriptor for Merrion Square) but no SINGLE identifiable, individually notable tree with two independent sources naming it, giving its species/age, and pinning its location. None of these clear the collectible-point bar: 'the park has old sycamores' is not one tree a visitor can walk up to. Dublin City Council's Parks Strategy document has a section literally titled 'Champion and Heritage Trees' (4.10.7) that likely names specific specimens, but dublincity.ie returned HTTP 403 to WebFetch on every attempt (both the section page and the underlying PDF), so I could not read it this pass. Worth a targeted retry, ideally with direct PDF access or a browser session, specifically for that section.",
+      "sources": []
+    },
+    {
+      "name": "Oregon Maples of Library Square (both)",
+      "species": "Oregon Maple (Acer macrophyllum)",
+      "location": "Library Square, Trinity College Dublin",
+      "reason": "BLOCKED, dead. These were Trinity's oldest and most storied trees (reputed to be from David Douglas's first 1827 Oregon seed consignment to Ireland), but one collapsed overnight in June 2018 (Irish Times, Irish Examiner, BBC all covered it) and the sister tree was removed shortly after in July 2018 on safety grounds (University Times). Both replaced with ginkgo saplings. Neither survives; never publishable as a collectible entry. Note for a future pass: dub_006's own published story on the live Dublin page currently says this pair 'came down between 2008 and shortly after', which conflicts with the 2018 dates found across multiple independent 2018 news sources this pass. Worth a correction pass on dub_006's story text.",
+      "sources": [
+        "https://www.irishtimes.com/news/ireland/irish-news/tree-over-170-years-old-collapses-in-trinity-college-square-1.3517860",
+        "https://universitytimes.ie/2018/07/trinity-bids-a-final-farewell-to-the-last-oregon-maple-tree/"
+      ]
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Oregon Maples of Library Square",
+      "reason": "Dead. Both trees gone by July 2018 (one collapsed, one removed for safety). See leads entry above for detail and sources."
+    }
+  ]
+}

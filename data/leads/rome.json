@@ -129,6 +129,33 @@
       "location": { "latitude": 41.95381, "longitude": 12.53628 },
       "sources": ["MASAF / Lazio 58 and 59/H501/RM/12"],
       "why_not_published": "Two registered almonds 90m apart at Via delle Vigne Nuove 280, an address attached to the so-called Villa di Faonte. Register-only, access unverified, and a monumental almond would be a genuine curiosity, so worth checking whether the grounds are public before writing it off. Real February blossom peak if it ever ships."
+    },
+    {
+      "name": "Plane of the Galoppatoio",
+      "species": "Platanus x acerifolia (or hybrid, unconfirmed)",
+      "girth_cm": null,
+      "height_m": null,
+      "location": { "latitude": 41.9128, "longitude": 12.4830 },
+      "sources": ["https://www.carteinregola.it/o-adesso-o-mai-piu-gli-amici-di-villa-borghese-scrivono-allassessora/ (mentions a deteriorating plane at the Galoppatoio)"],
+      "why_not_published": "2026-08-07 verify pass (rom deepen, Villa Borghese cluster). The Amici di Villa Borghese letter names a plane tree at the former Galoppatoio (the old riding ground, now closed and under redevelopment) as declining, but web search turned up a confusing second thread about newly planted trees at the same site being 'dead on their feet' per municipal agronomists, per il Caffe di Roma and Il Messaggero coverage of the Galoppatoio's 2024 closure and sequester. Could not establish within this pass's window whether the 'deteriorating plane' the letter means is an old historic specimen or one of the recent plantings, nor pin coordinates. Vitality and identity both unresolved; needs a dedicated look, not a padded guess."
+    },
+    {
+      "name": "Holm oaks of Viale delle Due Piramidi",
+      "species": "Quercus ilex",
+      "girth_cm": null,
+      "height_m": null,
+      "location": { "latitude": 41.9143, "longitude": 12.4820 },
+      "sources": ["https://www.carteinregola.it/o-adesso-o-mai-piu-gli-amici-di-villa-borghese-scrivono-allassessora/ ('lecci cinquecenteschi lungo Viale delle Due Piramidi')"],
+      "why_not_published": "2026-08-07 verify pass. Described only as an avenue of 16th-century holm oaks, not a named individual; likely not a collectible point (an avenue, like the Valle dei Platani group) unless a single standout specimen can be identified. Left as a lead in case a future pass finds one tree singled out."
+    },
+    {
+      "name": "Holm oaks of the Parco dei Daini",
+      "species": "Quercus ilex",
+      "girth_cm": null,
+      "height_m": null,
+      "location": { "latitude": 41.9155, "longitude": 12.4855 },
+      "sources": ["roma2pass.it/villa-borghese/alberi/ ('Nel Parco dei Daini numerosi sono gli esemplari distribuiti in maniera ordinata')"],
+      "why_not_published": "2026-08-07 verify pass. Described as numerous holm oaks planted in an ordered layout (deer park), i.e. a planted grove rather than an individual specimen. No single named tree found. Lead only."
     }
   ],
   "blocked": [
@@ -203,6 +230,12 @@
       "species": "Quercus suber, Quercus robur, Quercus petraea, Quercus cerris, Alnus glutinosa and others",
       "sheet": "31 to 56/H501/RM/12",
       "reason": "Private and access-controlled. Castelporziano is the Presidential Estate, a working state property entered only on booked guided visits along fixed routes. A third of Rome's register sits inside it, including the 675cm cork oak that is the largest tree in the comune, and none of it can be published as a place someone walks to."
+    },
+    {
+      "name": "The most important Pine of the Pincio",
+      "species": "Pinus (species unconfirmed, likely Pinus pinea)",
+      "sheet": null,
+      "reason": "2026-08-07 verify pass (rom deepen, Villa Borghese cluster). Amici di Villa Borghese's May 2024 open letter (carteinregola.it) describes it in the past tense as already felled: 'l'abbattimento di alberi storici al Pincio, compreso il Pino piu importante della Villa, candidato alla certificazione di albero monumentale d'Italia'. DEAD/GONE per this source. Recorded so no future pass researches this specific tree from scratch; it should not be confused with rom_016 (Coast Redwood of the Pincio), which is unrelated and still standing."
     }
   ]
 }
