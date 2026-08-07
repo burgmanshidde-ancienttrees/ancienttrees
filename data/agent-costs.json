@@ -459,6 +459,15 @@
         "note": "Harness number; the pass self-reported 58000. Deepened the Latin Quarter/Marais cluster: par_016 (Twisted Beech, Square des Arenes de Lutece), par_017 (Anne Frank Chestnut, symbolic significance like par_007), par_018 (Fig of Square Georges Cain, flagged: age century-old but undated). 4 register candidates blocked as duplicates of par_001/013/014/015. Willow at Quai de l'Horloge left as a lead: two distinct Ile-de-la-Cite willows conflated in search results, one claim (1750 planting) not biologically credible for the species. WebFetch/curl fully egress-blocked this session (403 on every domain including example.com), verified via WebSearch synthesis only.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Paris",
+        "kind": "write",
+        "tokens": 27000,
+        "trees": 3,
+        "note": "Stories for par_016 (Twisted Beech, Square des Arenes de Lutece), par_017 (Anne Frank Chestnut, Jardin Anne Frank) and par_018 (Fig Tree, Square Georges Cain, flagged/undated), merged into paris.json (13 to 16 trees), extending the Latin Quarter/Marais cluster. 1 best_time set (par_016, bare silhouette Jan/Feb). Fixed a stale claim in the already-live par_007 story (\"the youngest tree on this list\") which par_017 (planted 2007) broke. Updated meta_description and question_meta count text (\"a dozen more\" to \"15 more\"). Research file deleted, now stale/merged.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ],
     "2026-08-08": [
