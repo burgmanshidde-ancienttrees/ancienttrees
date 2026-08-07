@@ -1,0 +1,29 @@
+{
+  "leads": [
+    {
+      "name": "Plane tree(s) of Sarphatipark",
+      "species": "London Plane (Platanus x acerifolia), possibly other species (weeping willow, Austrian oak, silver maple, bald cypress and dawn redwood are all documented in the park)",
+      "location_hint": "Sarphatipark, De Pijp, Amsterdam, approx. 52.3544, 4.8917",
+      "why_not_shipped": "Park opened 1885, so any original planting is only ~140 years old; monumentaltrees.com lists it as a monumental plane tree in its Amsterdam database but the page returned HTTP 403 on every fetch attempt so the specific girth/age/exact-tree location could not be pulled, and no second independent source with a specific remarkable claim (not just 'a plane tree in a park') was found in this pass. About 700m from the published ams_010 Rijksmuseum Wingnut, so genuinely inside the existing walkable cluster if a specific standout specimen can ever be confirmed. Worth a retry with a working monumentaltrees fetch or a direct approach to the municipality's Sarphatipark page (also 403'd here)."
+    },
+    {
+      "name": "Amsterdam's own 'bijzondere bomen' (special trees) municipal register, Centrum district",
+      "species": "n/a - a register, not a tree",
+      "location_hint": "maps.amsterdam.nl/bomen_bijzonder/, Centrum district list went to public consultation Feb-Mar 2025",
+      "why_not_shipped": "Not a tree candidate but a structural finding for a future register-scouting pass: distinct from the disqualified CC-BY-NC national register, this is Amsterdam's own municipal designation of special/monumental trees (public and private), published via the city's open geodata portal (maps.amsterdam.nl/open_geodata/), being rolled out district by district with Centrum done first. Could not confirm its specific open licence in this pass (amsterdam.nl and maps.amsterdam.nl returned 403/530 on every fetch attempt here, and the one PDF that loaded, Actualiseringadvies_Centrum_24_april_2024_def.pdf, exceeded the fetch tool's content-size limit). If the licence checks out this would be a genuine city-level register for the register layer, with candidates squarely inside the existing central cluster. A future pass should check the licence terms first per the register-layer rules before importing anything."
+    },
+    {
+      "name": "Begijnhof inner garden trees",
+      "species": "unknown - historically linden (leilindes) planted near the garden house image of the Virgin Mary",
+      "location_hint": "Begijnhof, Amsterdam-Centrum, approx. 52.3678, 4.8899 (about 0.8 km from the published cluster)",
+      "why_not_shipped": "Multiple searches found only general historical notes about linden planting traditions in Amsterdam's hofjes, nothing naming a specific surviving old or remarkable tree in the Begijnhof's own courtyard today. Worth a site-visit-style photo/observation source (iNaturalist, Flickr) rather than text search if pursued further."
+    },
+    {
+      "name": "Park Frankendael monumental trees (beech, oak, ash, poplar, maple)",
+      "species": "European Beech, Pedunculate Oak, Ash, Poplar, Field Maple (mixed, per monumentaltrees.com's count of 6 described trees in the park)",
+      "location_hint": "Park Frankendael, Watergraafsmeer, Amsterdam, approx. 52.3495, 4.9256",
+      "why_not_shipped": "Roughly 3-4 km from the existing published cluster, too far to join it, and would need to stand as its own second cluster. Not pursued this pass because time ran out before any individual tree in the park could be identified and verified against two sources; the monumentaltrees.com park page also returned 403. Genuinely promising for a future pass: former private estate turned park, romantic garden setting, several ivy-wrapped monumental specimens per secondary sources."
+    }
+  ],
+  "blocked": []
+}

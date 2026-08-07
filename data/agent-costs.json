@@ -396,6 +396,15 @@
         "note": "Paris write pass was already claimed by another run, so picked the photo queue instead: 24 iNaturalist candidates viewed (13 trees), 3 approved (Padua's Orto Botanico plane and ginkgo, Turin's Eridano plane), 20 rejected (mostly leaf/bark close-ups and straight-up shots), 1 held (Lisbon's Principe Real fig, ambiguous among 3 similar trees on site). 313 of 337 queued candidates unreachable because this session's egress proxy blocks upload.wikimedia.org and api.openverse.org outright, including all 18 flagged wikidata-sourced ones (17 of which turn out to already be judged by an earlier pass today; only seo_008 is genuinely still open). Nothing approved blind.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Amsterdam",
+        "kind": "verify",
+        "tokens": 55000,
+        "trees": 1,
+        "note": "Deepened the existing tight Plantage cluster (Hortus/Wertheimpark/Amstelveld/Rijksmuseum, 1.84km diam) with one flagged tree, the Turkish Hazel of the Hortus (ams_011, 1795 planting per Bomenstichting, single-source-lineage age). No Dutch register available (national register CC-BY-NC, disqualified); web research. 4 leads recorded (Sarphatipark plane, an unscoped Amsterdam municipal special-trees register worth a future licence check, Begijnhof, Park Frankendael). Story written directly in-session (1 tree, no separate write pass), city copy count-promises updated ten to eleven.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
