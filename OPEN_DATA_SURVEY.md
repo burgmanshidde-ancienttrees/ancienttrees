@@ -263,6 +263,42 @@ Attribution wording their EULA requires: "Data reproduced with the permission
 of The Woodland Trust." plus citation "Ancient Tree Inventory, Woodland Trust,
 Accessed MM/YY".
 
+## Photo sources, what was tried and what is left (2026-08-08)
+
+Four sources are wired into scripts/photo_hunt.py and their measured conversion
+is the whole story: **only identity works**.
+
+| Source | How it matches | Result |
+|---|---|---|
+| Wikidata (P18 + coordinates) | image to ENTITY, 15 m radius | 11 of 18 approved. The only source that answers "which tree is this" |
+| Wikimedia Commons | geosearch + name, place AND plant word required | works occasionally; its geosearch lane served a parked Vespa, a sarcophagus and a concert stage |
+| iNaturalist | genus within 120 m, per-photo licence | a handful; observers shoot bark and leaves, not portraits |
+| Openverse | text only | **0 across 49 trees.** No coordinates, no taxonomy |
+
+Three further lanes were tested on 2026-08-08 and all failed, so they should not
+be re-proposed without a new argument:
+
+- **Commons category traversal.** Park categories hold far more than geosearch
+  sees (132 files for the Ciutadella, 500 for RBGE) because most Commons files
+  are not geotagged. But filtering by species matches the wrong individual: it
+  paired Edinburgh's Cammo Ash with a different ash inside the Botanics, and two
+  Edinburgh sycamores with a paperbark maple. A garden holds many trees of one
+  genus and the category cannot say which is which.
+- **Per-tree Commons categories.** Famous trees sometimes have their own
+  category, which would be a true entity link. Of 14 photo-less trees, one
+  matched, and it was a tram stop.
+- **Flickr.** Dropped 2026-08-08: signup would not complete without a paid Pro
+  plan for Hidde, and spending is his call alone. Not worth pursuing for a
+  source expected to land between Openverse's zero and Wikidata's 61 percent.
+  Reopen only if a free API key becomes obtainable.
+
+**The honest conclusion.** Most of our trees are simply not photographed under
+an open licence by anybody. That is a supply fact, not a retrieval problem to
+engineer around, and 432 of 759 tree pages (57 percent) show no photograph. The
+two routes that remain are readers, which needs traffic we do not have, and
+registers with their own photo pages, which is why the Catalonia permission
+request matters for pictures as much as for trees.
+
 ## Which countries to invest in, weighed 2026-07-21
 
 Researched at Hidde's request: national tree databases plus photo availability and other factors, ranked for the strategy (English site, travelers plus enthusiasts as the audience).
