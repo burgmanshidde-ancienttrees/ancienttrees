@@ -1718,7 +1718,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Bret van Putten, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "38.7162969722,-9.148379"
+     "obs_location": "38.7162969722,-9.148379",
+     "judged": "held: good Ficus macrophylla in Praca do Principe Real, but the square holds three figs of this species and our entry is specifically the thickest of the three, so which tree this is cannot be confirmed",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 201103892 (Ficus)",
@@ -1727,7 +1729,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Bret van Putten, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "38.7162969722,-9.148379"
+     "obs_location": "38.7162969722,-9.148379",
+     "judged": "rejected: close-up of trunk and limbs, crown not readable, and the subject looks like the neighbouring cypress rather than the fig",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 249882113 (Ficus)",
@@ -1736,9 +1740,14 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "38.7168312073,-9.1489601135"
+     "obs_location": "38.7168312073,-9.1489601135",
+     "judged": "rejected: close-up of trunk and aerial roots, whole tree not readable",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "held",
+   "outcome_note": "iNat candidates 0-2 viewed. Candidate 0 is a fine Moreton Bay fig with buttress roots, but Praca do Principe Real holds three figs of this species and our entry is specifically the thickest of the three, so attaching one would be a guess: held, not approved. Candidates 1 and 2 are trunk close-ups."
   },
   "lis_014": {
    "city": "Lisbon",
@@ -1918,7 +1927,9 @@
      "licence": "CC BY-SA",
      "author": "(c) lejones417, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "45.3990533333,11.8798833333"
+     "obs_location": "45.3990533333,11.8798833333",
+     "judged": "approved",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 216122849 (Platanus orientalis)",
@@ -1927,7 +1938,9 @@
      "licence": "CC BY-SA",
      "author": "(c) lejones417, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "45.3990533333,11.8798833333"
+     "obs_location": "45.3990533333,11.8798833333",
+     "judged": "rejected: photo of the species label sign, not the tree (useful identity proof for candidate 0)",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 219713626 (Platanus orientalis)",
@@ -1936,7 +1949,9 @@
      "licence": "CC BY-SA",
      "author": "(c) lejones417, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "45.3989527778,11.8797111111"
+     "obs_location": "45.3989527778,11.8797111111",
+     "judged": "rejected: leaf close-up",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 219713626 (Platanus orientalis)",
@@ -1945,9 +1960,14 @@
      "licence": "CC BY-SA",
      "author": "(c) lejones417, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "45.3989527778,11.8797111111"
+     "obs_location": "45.3989527778,11.8797111111",
+     "judged": "rejected: young sapling, not the veteran plane",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "approved",
+   "outcome_note": "Candidate 0 approved (iNat obs 216122849): the hollow-trunked oriental plane whole inside the Orto Botanico, crown and trunk readable, overcast but properly exposed. The same observation's label photo reads PLATANO ORIENTALE A.1680, which confirms the identity. Candidates 1-3 are a sign, a leaf and a sapling."
   },
   "pad_003": {
    "city": "Padua",
@@ -1961,7 +1981,9 @@
      "licence": "CC BY-SA",
      "author": "(c) lejones417, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "45.3993866667,11.8807533333"
+     "obs_location": "45.3993866667,11.8807533333",
+     "judged": "approved",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 216135586 (Ginkgo biloba)",
@@ -1970,9 +1992,14 @@
      "licence": "CC BY-SA",
      "author": "(c) lejones417, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "45.3993866667,11.8807533333"
+     "obs_location": "45.3993866667,11.8807533333",
+     "judged": "rejected: photo of the species label sign, not the tree (useful identity proof for candidate 0)",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "approved",
+   "outcome_note": "Candidate 0 approved (iNat obs 216135586): the whole ginkgo against a grey sky, crown and trunk readable, subject unmistakable. Candidate 1 is the label photo reading GINKGO BILOBA A.1750, which confirms the identity."
   },
   "pad_004": {
    "city": "Padua",
@@ -1993,9 +2020,14 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "45.3995533,11.8807896997"
+     "obs_location": "45.3995533,11.8807896997",
+     "judged": "rejected: leaf close-up, and the foliage is not magnolia",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "rejected",
+   "outcome_note": "Only iNat candidate is a leaf close-up, and the foliage is not magnolia."
   },
   "pad_005": {
    "city": "Padua",
@@ -2157,9 +2189,14 @@
      "licence": "CC BY",
      "author": "(c) Duarte Frade, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.15374,-8.642627"
+     "obs_location": "41.15374,-8.642627",
+     "judged": "rejected: shot straight up the trunks, tree form not readable, low resolution",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "rejected",
+   "outcome_note": "iNat candidate shot straight up the trunks; tree form not readable, low resolution."
   },
   "por_011": {
    "city": "Porto",
@@ -2288,12 +2325,14 @@
      "licence": "CC BY",
      "author": "(c) Codrin Bucur, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.4464454651,-8.2917261124"
+     "obs_location": "41.4464454651,-8.2917261124",
+     "judged": "rejected: upward view into the limbs, whole tree not readable; tree already has an approved photo",
+     "judged_date": "2026-08-07"
     }
    ],
    "judged": "2026-08-07",
    "outcome": "approved",
-   "outcome_note": "Candidate 1 approved (File:Q98443994.jpg): Wikidata entity image; autumn plane with the castle behind, crown and trunk both readable."
+   "outcome_note": "Candidate 1 approved (File:Q98443994.jpg): Wikidata entity image; autumn plane with the castle behind, crown and trunk both readable. Also viewed 2026-08-07: iNat candidate 1 rejected, upward view into the limbs with the whole tree not readable; the approved Commons photo stands."
   },
   "gui_002": {
    "city": "Guimaraes",
@@ -2347,7 +2386,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Diana Fuentes, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "40.4139516667,-3.682"
+     "obs_location": "40.4139516667,-3.682",
+     "judged": "rejected: cone and foliage close-up",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 19896869 (Cedrus)",
@@ -2356,9 +2397,14 @@
      "licence": "CC BY-SA",
      "author": "(c) Diana Fuentes, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "40.4139516667,-3.682"
+     "obs_location": "40.4139516667,-3.682",
+     "judged": "rejected: distant park scene, people fill the foreground and the cedar has to be searched for",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "rejected",
+   "outcome_note": "iNat candidates are a cone close-up and a distant park scene where people fill the foreground and the cedar has to be searched for."
   },
   "mad_007": {
    "city": "Madrid",
@@ -2608,9 +2654,14 @@
      "licence": "CC BY",
      "author": "(c) Codrin Bucur, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "45.4710235596,9.1888141632"
+     "obs_location": "45.4710235596,9.1888141632",
+     "judged": "rejected: shot from under the canopy, tree form not readable",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "rejected",
+   "outcome_note": "iNat candidate shot from under the canopy; tree form not readable."
   },
   "mil_012": {
    "city": "Milan",
@@ -2682,7 +2733,9 @@
      "licence": "CC BY",
      "author": "(c) Dave Richardson, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "50.082175,14.409795"
+     "obs_location": "50.082175,14.409795",
+     "judged": "rejected: leaf close-up",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 126640697 (Quercus robur)",
@@ -2691,9 +2744,14 @@
      "licence": "CC BY",
      "author": "(c) Dave Richardson, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "50.082175,14.409795"
+     "obs_location": "50.082175,14.409795",
+     "judged": "rejected: taken from directly beneath, crown cut off at the top, tree shape not readable",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "rejected",
+   "outcome_note": "iNat candidates are a leaf close-up and a from-beneath shot with the crown cut off."
   },
   "prg_013": {
    "city": "Prague",
@@ -2729,12 +2787,14 @@
      "licence": "CC BY-SA",
      "author": "(c) Björn Sothmann, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "50.0709073976,14.4210543183"
+     "obs_location": "50.0709073976,14.4210543183",
+     "judged": "rejected: close-up of fungus on a fallen ginkgo leaf; tree already has an approved photo",
+     "judged_date": "2026-08-07"
     }
    ],
    "judged": "2026-08-07",
    "outcome": "approved",
-   "outcome_note": "Candidate 1 approved (File:Ginkgo biloba in botanical garden Na slupi (1).jpg): The gnarled ginkgo whole and centred against the Na Slupi greenhouse; no other entry nearby."
+   "outcome_note": "Candidate 1 approved (File:Ginkgo biloba in botanical garden Na slupi (1).jpg): The gnarled ginkgo whole and centred against the Na Slupi greenhouse; no other entry nearby. Also viewed 2026-08-07: iNat candidate 3 rejected, a close-up of fungus on a fallen leaf; the approved Commons photo stands."
   },
   "prg_014": {
    "city": "Prague",
@@ -2832,9 +2892,14 @@
      "licence": "CC BY",
      "author": "(c) J V, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "50.0915679,14.3950899997"
+     "obs_location": "50.0915679,14.3950899997",
+     "judged": "rejected: lime blossom close-up with the castle behind, tree not the subject",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "rejected",
+   "outcome_note": "iNat candidate is a lime blossom close-up with the castle behind; the tree is not the subject."
   },
   "prg_015": {
    "city": "Prague",
@@ -3009,7 +3074,9 @@
      "licence": "CC BY",
      "author": "(c) Vasco Henrique Oliveira Fonseca, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "38.53348828,-8.89125663"
+     "obs_location": "38.53348828,-8.89125663",
+     "judged": "rejected: hand holding a leaf against the bark, close-up",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 244119213 (Populus nigra)",
@@ -3018,7 +3085,9 @@
      "licence": "CC BY",
      "author": "(c) Vasco Henrique Oliveira Fonseca, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "38.53327974,-8.89121116"
+     "obs_location": "38.53327974,-8.89121116",
+     "judged": "rejected: fallen leaves on the ground, tree not the subject",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 246755506 (Populus nigra)",
@@ -3027,9 +3096,14 @@
      "licence": "CC BY",
      "author": "(c) Vasco Henrique Oliveira Fonseca, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "38.53273297,-8.89233388"
+     "obs_location": "38.53273297,-8.89233388",
+     "judged": "rejected: leaf close-up over cobbles",
+     "judged_date": "2026-08-07"
     }
-   ]
+   ],
+   "judged": "2026-08-07",
+   "outcome": "rejected",
+   "outcome_note": "All three iNat candidates are leaf and ground close-ups."
   },
   "stb_009": {
    "city": "Setubal",
@@ -3099,7 +3173,9 @@
      "licence": "CC BY",
      "author": "(c) Maria G, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "45.05116127,7.68619136"
+     "obs_location": "45.05116127,7.68619136",
+     "judged": "approved",
+     "judged_date": "2026-08-07"
     },
     {
      "title": "iNat obs 171964409 (Platanus)",
@@ -3108,12 +3184,14 @@
      "licence": "CC BY",
      "author": "(c) Maria G, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "45.05116127,7.68619136"
+     "obs_location": "45.05116127,7.68619136",
+     "judged": "rejected: canopy foliage close-up",
+     "judged_date": "2026-08-07"
     }
    ],
    "judged": "2026-08-07",
-   "outcome": "rejected",
-   "outcome_note": "Backlit into the sun; the tree reads as a dark silhouette."
+   "outcome": "approved",
+   "outcome_note": "Superseded on 2026-08-07: the Commons candidate stays rejected (backlit silhouette), but iNat candidate 1 (obs 171964409) is approved: the leaning plane over the Po with its massive trunk centred, sunlit and in colour. Observation sits 12 m from our confirmed pin and the next monumental plane is 374 m away, so the identity holds. Candidate 2 is canopy foliage."
   },
   "tor_007": {
    "city": "Turin",
@@ -3890,5 +3968,11 @@
    "checked": "2026-08-07",
    "candidates": []
   }
- }
+ },
+ "notes": [
+  {
+   "date": "2026-08-07",
+   "note": "Photo-judging pass. Only inaturalist-open-data.s3.amazonaws.com was reachable this run: upload.wikimedia.org and api.openverse.org are both refused by the egress proxy (403 on CONNECT), so 310 Commons candidates and all 18 wikidata ones, plus the 3 openverse ones, could not be rendered and were left unjudged rather than approved blind."
+  }
+ ]
 }
