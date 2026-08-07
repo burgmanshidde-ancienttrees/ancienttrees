@@ -173,6 +173,53 @@ def centre_from_any_name(arg):
     return None
 
 
+def pending_research():
+    """Research files holding trees that are NOT yet published.
+
+    Exists because "needs a story" is not the same question as "is not
+    published", and briefing on the first one sent a write pass after seven
+    trees on 2026-08-08 when only three were real: nyc_011-013 and ams_011 had
+    been merged into their city files that morning, and the research files were
+    stale leftovers nobody had deleted. The pass caught it and refused to write
+    duplicates, which is the only reason good live prose was not overwritten.
+
+    The published city file is the truth. A research entry whose id already
+    lives in data/cities is finished work, whatever the research file says."""
+    live = set()
+    for f in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+        for t in json.load(open(f)).get("trees", []):
+            live.add(t["id"])
+    out = []
+    for f in sorted(glob.glob(os.path.join(ROOT, "data", "research", "*-verified.json"))):
+        try:
+            rows = json.load(open(f))
+        except Exception:
+            continue
+        unpublished = [t for t in rows if t.get("id") and t["id"] not in live]
+        stale = len(rows) - len(unpublished)
+        if unpublished or stale:
+            out.append((os.path.relpath(f, ROOT), unpublished, stale))
+    return out
+
+
+def print_pending():
+    rows = pending_research()
+    if not rows:
+        print("\nNothing pending: every verified tree is published.")
+        return
+    print("\nVERIFIED BUT NOT YET PUBLISHED (brief a write pass on these, and only these):")
+    for path, unpublished, stale in rows:
+        if unpublished:
+            need = sum(1 for t in unpublished if not t.get("story"))
+            print(f"  {path}: {len(unpublished)} unpublished "
+                  f"({need} still need a story, {len(unpublished) - need} written and ready to merge)")
+            for t in unpublished[:6]:
+                print(f"      {t['id']} {str(t.get('name'))[:46]}")
+        if stale:
+            print(f"  {path}: {stale} entries ALREADY PUBLISHED, this file is stale; "
+                  f"delete it once the rest is merged")
+
+
 def resolve(arg, live):
     """Returns (match_or_None, coord_or_None). Distance is the real test."""
     coord = None
@@ -416,6 +463,9 @@ def brief(arg, live):
 
 def main():
     args = sys.argv[1:]
+    if "--pending" in args:
+        print_pending()
+        return 0
     want_brief = "--brief" in args
     args = [a for a in args if a != "--brief"]
     if "--claim" in args:

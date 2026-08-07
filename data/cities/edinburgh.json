@@ -3,7 +3,7 @@
   "country": "United Kingdom",
   "status": "needs_curation",
   "intro": "Edinburgh keeps its oldest trees behind something: a castle wall, a botanic garden fence, the gates of a private estate turned nature reserve, a royal palace's summer-only garden. The city's volcanic crags and exposed hilltops rarely let a tree grow undisturbed for centuries, so almost everything on this list survived because an institution, deliberately or by accident, built a boundary around it first. The ten range from a pair of yews that watched a queen's advisors plot against her husband to a churchyard tree that is not, genetically, the historic tree its own legend is about.",
-  "meta_description": "Edinburgh's ancient trees hide behind castle walls, botanic garden fences and estate gates. Ten verified locations, real stories, how to reach each one.",
+  "meta_description": "Edinburgh's ancient trees hide behind castle walls, botanic garden fences and estate gates. 13 verified locations, real stories, how to reach each.",
   "question_answer": "Edinburgh's oldest documented trees are the twin yews flanking the courtyard entrance to Craigmillar Castle, dated to at least 300 years old by Historic Environment Scotland, with local tradition placing them past 450 in connection with Mary, Queen of Scots' stay at the castle in 1566. They stand in the castle's inner courtyard, a short bus ride from the city centre, included in the price of admission.",
   "question_meta": "Craigmillar Castle's twin yews, at least 300 years old, tied to Mary, Queen of Scots by legend, are Edinburgh's oldest documented trees.",
   "question_context": "Yews resist dating more stubbornly than almost any other tree: their heartwood rots away as they age, so ring counts are useless and even careful girth-based estimates carry wide error bars. Historic Environment Scotland's cautious figure for the Craigmillar pair is at least 300 years, old enough on its own. The more dramatic local tradition, that they were planted to mark Mary, Queen of Scots' recuperation at the castle in 1566, would require them to be past 450, a gap of a century and a half that no one can close without harming the trees to find out. What is documented without dispute is the setting: a five-hundred-year-old ruined castle where Mary's own advisors met in 1566 to discuss removing her husband, Lord Darnley, a plot historians call the Craigmillar Bond. The nearest challenger for oldest is a good deal less certain still, an ash at Cammo Estate whose age rests entirely on the estate's 1710 founding rather than any measurement of the tree itself. Reaching Craigmillar Castle means a short bus journey from the city centre and a Historic Environment Scotland admission ticket; the yews are inside the entrance, free to see once you are through the gate.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Edinburgh's ancient trees free to visit?",
-      "a": "Eight of the ten are free, standing in public churchyards, council-run parks and nature reserves. The exceptions are the Craigmillar Castle yews and the Holyroodhouse elms, both included in a paid admission ticket."
+      "a": "Eleven of the thirteen are free, standing in public churchyards, council-run parks, nature reserves and the Royal Botanic Garden, which charges nothing to enter its grounds. The exceptions are the Craigmillar Castle yews and the Holyroodhouse elms, both included in a paid admission ticket."
     },
     {
       "q": "Why does Corstorphine's famous sycamore look so young?",
@@ -63,7 +63,12 @@
       "age_estimate": "200+ years",
       "age_min": 200,
       "age_max": 280,
-      "best_time": { "months": [10], "label": "October, when the chestnuts drop and its leaves turn gold" },
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when the chestnuts drop and its leaves turn gold"
+      },
       "location": {
         "address": "Royal Botanic Garden Edinburgh, Pond Lawn, 20A Inverleith Row, Edinburgh EH3 5LR",
         "latitude": 55.967,
@@ -273,7 +278,13 @@
       "age_estimate": "180-210 years",
       "age_min": 180,
       "age_max": 210,
-      "best_time": { "months": [10, 11], "label": "late October, when the beech turn copper" },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October, when the beech turn copper"
+      },
       "location": {
         "address": "Hermitage of Braid, Braid Road, Edinburgh EH10 6JF",
         "latitude": 55.9218,
@@ -305,7 +316,13 @@
       "age_min": 15,
       "age_max": 25,
       "label": "Young replacement",
-      "best_time": { "months": [4, 5], "label": "April and May, when the new leaves emerge bright gold" },
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "label": "April and May, when the new leaves emerge bright gold"
+      },
       "location": {
         "address": "Corstorphine Old Parish Church, Kirk Loan, Edinburgh EH12 7ST",
         "latitude": 55.9413,
@@ -328,6 +345,82 @@
       "curation_status": "flagged",
       "notes": "A candidate photo exists (Geograph, M J Richardson, CC BY-SA 2.0) but its own caption places it 'in the Royal Botanic Garden', a different corstorphinense specimen RBGE grows for conservation, not the churchyard replacement tree itself. Not used, to avoid the same misidentification error flagged in other cities' runs (e.g. Rome's Villa Torlonia, Amsterdam's Kirstenbosch photo). Exact replanting year of the current cutting not found in any source; age range is an estimate based on the 2005 death date. Pin tightened 2026-07-28 to the church's own OSM/Nominatim geocode (~110-150m from the earlier estimate), cross-checked against Historic Environment Scotland's listing for the same building; still a building point rather than a tree-specific one, so precision stays approximate.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "edi_011",
+      "name": "The John Muir Grove",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 100 years",
+      "age_min": 95,
+      "age_max": 106,
+      "location": {
+        "address": "Upper Woodland Garden, Royal Botanic Garden Edinburgh, 20A Inverleith Row, Edinburgh EH3 5LR",
+        "latitude": 55.9705,
+        "longitude": -3.2165,
+        "neighbourhood": "Inverleith"
+      },
+      "story": "A ring of Californian redwoods grows in Edinburgh, named for the Scot who helped save the Californian ones. John Muir was born in Dunbar, thirty miles down the East Lothian coast, emigrated as a boy, and spent his life arguing that America should keep its wild country rather than cut it down, work that ended in the national park system. The Royal Botanic Garden Edinburgh put his name on this grove in 1990, seventy years after the trees themselves went in.\n\nThey were planted in the 1920s in the Upper Woodland Garden and now stand over 24 metres, which for a giant sequoia is early adolescence: the species runs past 80 metres and 3,000 years on its home ground in the Sierra Nevada. What the planting got right was the arrangement. The trees form a circle, so the space they enclose is the destination rather than any single trunk, and the garden's own word for the effect, cathedral-like, is fair. Walk into the middle and stop. That is the spot, and the garden hires it out for ceremonies for exactly that reason.\n\nThe pin here is set to the Upper Woodland Garden rather than the ring itself, because no source gives coordinates for the circle. At 24 metres and rising, it is not a difficult thing to find once you are in that part of the Botanics.",
+      "verified_sources": [
+        "https://www.rbge.org.uk/venue-hire/weddings-at-the-botanics/john-muir-grove/",
+        "https://lovetravellingblog.com/2021/09/02/day-7-the-royal-botanic-garden-edinburgh/"
+      ],
+      "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
+      "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "edi_012",
+      "name": "The Catacol Whitebeams of the East Gate",
+      "species": "Catacol Whitebeam (Sorbus pseudomeinichii)",
+      "age_estimate": "planted after the species' 2006 scientific description, at least a decade old",
+      "age_min": 12,
+      "age_max": 20,
+      "location": {
+        "address": "Near the East Gate Lodge coffee shop, Royal Botanic Garden Edinburgh, Inverleith Row, Edinburgh EH3 5LP",
+        "latitude": 55.9648,
+        "longitude": -3.2065,
+        "neighbourhood": "Inverleith"
+      },
+      "story": "Until September 2020, the Catacol whitebeam was one of the rarest trees on earth: a single wild specimen, in one ravine on the Isle of Arran, tied with Wood's cycad for the title. Then a second wild tree was found. Before that, nearly everything standing between the species and extinction was a handful of grafts, and several of them grow here, beside the coffee shop at the Botanics' East Gate.\n\nThe tree was only described as new to science in 2006. Seed germination has had limited success, so the Royal Botanic Garden Edinburgh propagates it by grafting cuttings onto ordinary rowan rootstock, and one of the garden's own staff records collecting berries from the East Gate tree in autumn 2014. That date is also the honest limit of what is known about these particular specimens. No source gives them a planting date or an age. They were grafted at some point after 2006 and were established by 2014, and beyond that they are undated.\n\nThis is a planting rather than one heroic tree, with other Arran-only Sorbus species standing alongside it. Small trees, easy to walk straight past. The reason to stop is that the wild population, in a Glen Catacol ravine, could be taken out by a single winter flood, which RBGE staff say in plain words. These grafts are the insurance policy.",
+      "verified_sources": [
+        "https://stories.rbge.org.uk/archives/13616",
+        "https://en.wikipedia.org/wiki/Hedlundia_pseudomeinichii"
+      ],
+      "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
+      "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street; enter at the East Gate on Inverleith Row rather than the West Gate",
+      "location_precision": "approximate",
+      "curation_status": "flagged"
+    },
+    {
+      "id": "edi_013",
+      "name": "The Handkerchief Tree by Caledonian Hall",
+      "species": "Handkerchief Tree (Davidia involucrata)",
+      "age_estimate": "roughly 95 years, accessioned by RBGE in 1928",
+      "age_min": 90,
+      "age_max": 98,
+      "location": {
+        "address": "Caledonian Hall Area, Royal Botanic Garden Edinburgh, 20A Inverleith Row, Edinburgh EH3 5LR",
+        "latitude": 55.9655,
+        "longitude": -3.2145,
+        "neighbourhood": "Inverleith"
+      },
+      "story": "The white handkerchiefs are not flowers. Davidia involucrata produces a small, dark, unremarkable flower head and wraps it in two large white bracts, modified leaves that hang and turn in any breeze. In May a mature tree carries hundreds of them at once, which is how it collected the names handkerchief tree, dove tree and ghost tree.\n\nThis one stands in the Caledonian Hall area of the Royal Botanic Garden Edinburgh, filed in the garden's living collection database under accession number 19280013. RBGE accession numbers open with the year the plant came in, so that reads as 1928 and puts the tree at roughly 95 to 98 years old. Treat it as a strong estimate rather than a certificate: an accession year records when the garden took a plant onto its books, not the day it went into the ground, and the two can sit a season or several years apart.\n\nThe species is native to south west China and was among the most fought-over introductions of the early 20th century, when European nurseries were sending collectors across China specifically to bring it home. RBGE holds several Davidia accessions around the garden; this is the Caledonian Hall one, the oldest-accessioned of them and the nearest to the rest of this walk. Its pin comes from the building's position on the visitor map rather than a measured point.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white bracts open and the whole tree looks hung with handkerchiefs"
+      },
+      "verified_sources": [
+        "https://rbge.gardenexplorer.org/taxon-5364.aspx",
+        "https://www.treesandshrubsonline.org/articles/davidia/davidia-involucrata/"
+      ],
+      "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
+      "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
+      "location_precision": "approximate",
+      "curation_status": "flagged"
     }
   ]
 }
