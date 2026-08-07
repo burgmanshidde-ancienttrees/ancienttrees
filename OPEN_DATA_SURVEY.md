@@ -528,3 +528,47 @@ checking whether Berlin's own Baumkataster (the bulk inventory, different
 department, DL-DE-BY-2.0 per its Grün Berlin listing) can supply planting
 years the way Vienna's did, matching by genus and proximity, before the next
 Berlin pass.
+
+## Ireland: Heritage Trees of Ireland, scouted 2026-08-07, NOT imported (access-filtered, coordinates unconverted)
+
+The earlier entry above ("Lead group... Ireland... Tree Council of Ireland's
+terms are unknown") is now half-resolved. The Tree Council of Ireland's own
+Tree Register (11,000+ trees) still has no licence found. But a related,
+smaller, better-documented dataset does: **Heritage Trees of Ireland**, run
+by the same person (Aubrey Fennell) but published through the National
+Biodiversity Data Centre's Biodiversity Maps portal
+(`maps.biodiversityireland.ie/Dataset/27`), which states its licence
+directly on the dataset page: **CC BY 4.0**. 724 records, 424 sites, 143
+species, an `Age Range` band per tree (a real field this time, unlike
+Italy/Berlin), a `Category of Tree` and `Condition of tree` field.
+
+Downloaded via `/Dataset/Download?datasetId=27`, a Darwin Core Archive (zip
+containing a tab-separated `HeritageTreesOfIreland.txt`, 725 rows). Not yet
+saved to `data/registers/`, for two real reasons rather than one:
+
+1. **Coordinates are Irish Grid (`East`/`North` in metres, `Projection: OSI`),
+   not lat/lon.** Converting needs the Irish Transverse Mercator or Irish
+   Grid formula (Airy 1830 modified ellipsoid), which this environment has no
+   library for (`pyproj` is not installed, and installing a new dependency
+   needs Hidde's yes per hard rule 5). A future pass either finds a pure-
+   Python implementation to write inline (the way `scripts/photo_hunt.py`
+   avoids heavy dependencies) or converts through a web geocoding step per
+   site name instead.
+2. **The dataset's own access note applies to most rows, not a few**:
+   "Please note that most heritage trees occur on private lands and
+   permission should always be sought before entering on private property,"
+   repeated on nearly every record. Hard rule 10 excludes private land not
+   genuinely open to visitors, so this register needs a site-by-site access
+   read before anything from it ships, the same discipline Woodland Trust
+   entries already get. Checked the 37 rows whose `SiteName` contains
+   "Dublin": a real mix, some clearly public (Trinity College, National
+   Botanic Gardens, Marley Park, a public park with a Cedar of Lebanon) and
+   some clearly not (Garda Headquarters, a private hotel, a private house).
+   Filtering to Dublin plus genuinely public sites first, rather than
+   importing the file wholesale, is the right order of operations here.
+
+Worth returning to for Dublin specifically once the coordinate conversion is
+solved: the public-site subset alone (Trinity, the Botanic Gardens, Marley
+Park) already looks like a plausible small cluster, and the `Age Range`
+field would be a real second-source contribution most other registers this
+project has found cannot offer.
