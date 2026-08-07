@@ -387,6 +387,15 @@
         "note": "Stories for nyc_011-013 written directly in the main session, merged into new-york.json (10 to 13 trees). Fixed two stale count-promises ('eight more' / 'nine more Great Trees') in NYC's own copy caught by the build's own check.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "photo-queue",
+        "kind": "photo",
+        "tokens": 119638,
+        "trees": 3,
+        "note": "Paris write pass was already claimed by another run, so picked the photo queue instead: 24 iNaturalist candidates viewed (13 trees), 3 approved (Padua's Orto Botanico plane and ginkgo, Turin's Eridano plane), 20 rejected (mostly leaf/bark close-ups and straight-up shots), 1 held (Lisbon's Principe Real fig, ambiguous among 3 similar trees on site). 313 of 337 queued candidates unreachable because this session's egress proxy blocks upload.wikimedia.org and api.openverse.org outright, including all 18 flagged wikidata-sourced ones (17 of which turn out to already be judged by an earlier pass today; only seo_008 is genuinely still open). Nothing approved blind.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

@@ -2,6 +2,18 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-07 — Photo queue pass: 3 approved, and a real infrastructure blocker found
+
+Autonomous scheduled run. `git pull` found the local `main` ref stale against `origin/main` (a shallow-clone artefact, not real divergent history); reset to origin/main before doing anything. `passcheck.py Paris` showed Paris already claimed for a write pass by a night-run 3.2h ago (data/research/paris-verified.json's 3 stories, the top item on this run's priority list), so left it alone rather than duplicate work, per the in-flight courtesy lock.
+
+**Fell to the second priority: judged the photo queue.** Dispatched the `photo-judge` agent against `data/photo-queue.json`. Result: 24 iNaturalist candidates viewed directly (13 trees), **3 approved** (Padua's Orto Botanico plane, pad_002; Padua's Orto Botanico ginkgo, pad_003; Turin's Eridano-bank plane, tor_006, superseding an earlier rejected Commons candidate for the same tree), 20 rejected (mostly leaf/bark close-ups and straight-up-into-the-canopy shots, the predictable failure mode of a species-ID site), 1 held (Lisbon's Principe Real strangler fig, lis_013: a genuinely good photo but the square holds three similar figs and our entry names "the thickest of the three", so attaching it would be a guess dressed as fact, the Margaret Island pattern).
+
+**The real finding: this session's egress proxy blocks `upload.wikimedia.org` and `api.openverse.org` outright (403 on CONNECT), not just slow or flaky.** That put 313 of the queue's 337 candidates out of reach, including all 18 of the Wikidata-sourced ones this run was specifically pointed at (turned out 17 of those were already judged by an earlier pass earlier the same day; only seo_008 remains genuinely open). Nothing was approved blind; the unreachable candidates stay unjudged rather than guessed from filename or caption. If a future session hits the same wall, the fix is an allowlist entry for `upload.wikimedia.org`, not a retry.
+
+Rebuilt (1,270+ pages) and `qa.py` clean before committing. Cost logged to `data/agent-costs.json` (119,638 tokens, kind "photo", 3 photos approved). One commit, pushed.
+
+FOR HIDDE: the Wikimedia/Openverse egress block is worth a look if photo-judging passes keep landing in this environment, since it silences over 90 percent of the queue every time. Nothing else needs you.
+
 ## 2026-08-07 — New York gets its first walkable cluster (Central Park), Edinburgh's pin gaps get an honest zero
 
 Same session as the Berlin entry below. Two more pieces of work before handing back.
