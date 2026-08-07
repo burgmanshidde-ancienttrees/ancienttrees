@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 13287,
+ "count": 13289,
  "trees": [
   {
    "id": "ams_001",
@@ -9554,6 +9554,38 @@
    "precision": "confirmed",
    "age_min": 85,
    "age_max": 110,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "rom_021",
+   "tier": "highlighted",
+   "name": "The Cypress of Piazza di Siena",
+   "species": "Mediterranean Cypress (Cupressus sempervirens)",
+   "city": "Rome",
+   "country": "Italy",
+   "lat": 41.9137,
+   "lng": 12.4863,
+   "precision": "approximate",
+   "age_min": 200,
+   "age_max": 250,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 2
+  },
+  {
+   "id": "rom_022",
+   "tier": "highlighted",
+   "name": "The Hackberries of the Aranciera",
+   "species": "Mediterranean Hackberry (Celtis australis)",
+   "city": "Rome",
+   "country": "Italy",
+   "lat": 41.9134,
+   "lng": 12.4833,
+   "precision": "approximate",
+   "age_min": 300,
+   "age_max": 400,
    "has_photo": false,
    "has_story": true,
    "sources": 3
