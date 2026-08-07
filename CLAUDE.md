@@ -256,6 +256,8 @@ It lives per species in `data/phenology/[species-slug].json`, not per tree, beca
 
 A species with no file shows no calendar: an honest gap, exactly like a missing photo. 25 species covering 302 tree pages exist as of 2026-08-02; adding the rest is normal run work, oldest-species-first by tree count. Every entry needs a real source, and evergreens get an empty bare row rather than an invented one.
 
+**Priority note, Hidde 2026-08-08: season data is the lowest-priority depth item, below photos.** His words: "don't waste too much time on finding the season of the tree, it's less important than photos and we can do it later." Setting `best_time` while writing a story, from a species file that already exists, stays free and welcome. Researching a species' phenology from scratch is not worth a research window in the current phase. Everything below still governs what a `best_time` may say when one is set; none of it is loosened, it is simply not chased.
+
 **Set `best_time` when, and only when, a tree has a real seasonal peak.** Broadened by Hidde on 2026-08-02, because the first reading was too narrow: a peak is anything a visitor would notice and enjoy on the day, not only a burst of colour. Three families count:
 - **Flower, leaf and colour**: blossom, autumn colour, catkins, fresh leaves. The original reading.
 - **Fruit, nuts and mast**: acorns underfoot in October, conkers, sweet chestnuts you can gather, figs, the olive harvest, mulberries. Hidde: "deze boom heeft nog steeds vruchten, eikels, kastanjes, op een moment wat leuk is om te weergeven." Use `kind: fruit`.
