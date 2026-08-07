@@ -1364,6 +1364,56 @@ def _walk_name(members, markers):
     return best if len(best) <= WALK_NAME_MAX else ""
 
 
+WALK_SPLIT_KM = 3.0      # past this a walk stops being an afternoon and becomes a route
+WALK_MAX_OVERLAP = 0.5   # two walks may never be more than half the same trees
+
+
+def _leg_km(order, points):
+    """Walking distance along an ordered route, detour factor included."""
+    total = sum(haversine_km(points[order[i]], points[order[i + 1]])
+                for i in range(len(order) - 1))
+    return total * DETOUR_FACTOR
+
+
+def _split_route(order, points, depth=0):
+    """Cut a long route in half at its midpoint, letting the junction tree
+    belong to both halves.
+
+    Hidde, 2026-08-08, having noticed walks are built as disjoint clusters:
+    "you can use the same tree in several walks, does that open options?" It
+    opens exactly one worth having. Eighteen cities had a single walk over
+    2.5 km, Prague at 6.0 km and 79 minutes, which is a route rather than an
+    afternoon. Splitting at the middle gives two real walks that overlap only
+    where they genuinely meet, and the shared tree is honestly on both.
+
+    What it deliberately does NOT do is manufacture variety. Sharing trees
+    freely would let any city be sliced into four walks that are the same trees
+    wearing hats, which is the padding rule applied to walks instead of counts:
+    Cadiz has five trees in 600 metres and should have one walk, not four.
+    So a split happens only when a route is too long to walk in one go, and
+    only while both halves still clear WALK_MIN_TREES."""
+    km = _leg_km(order, points)
+    if depth >= 2 or km <= WALK_SPLIT_KM or len(order) < WALK_MIN_TREES * 2:
+        return [order]
+    # cut where the accumulated distance passes halfway
+    run, half, cut = 0.0, km / DETOUR_FACTOR / 2, len(order) // 2
+    for i in range(len(order) - 1):
+        run += haversine_km(points[order[i]], points[order[i + 1]])
+        if run >= half:
+            cut = i
+            break
+    cut = max(WALK_MIN_TREES - 1, min(cut, len(order) - WALK_MIN_TREES))
+    first, second = order[:cut + 1], order[cut:]   # the junction tree is in both
+    if len(first) < WALK_MIN_TREES or len(second) < WALK_MIN_TREES:
+        return [order]
+    return _split_route(first, points, depth + 1) + _split_route(second, points, depth + 1)
+
+
+def _too_similar(a, b):
+    """True when two walks are more than half the same trees."""
+    sa, sb = set(a), set(b)
+    return len(sa & sb) / min(len(sa), len(sb)) > WALK_MAX_OVERLAP
+
 def plan_walks(markers, budget_km=WALK_BUDGET_KM):
     """Every honest walk in a city, not just the best one.
 
@@ -1385,13 +1435,17 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
         if not route:
             continue
         order = [members[i] for i in route["order"]]
-        walks.append({
-            "order": order,
-            "count": route["count"],
-            "km": route["km"],
-            "minutes": route["minutes"],
-            "name": _walk_name(order, markers),
-        })
+        for leg in _split_route(order, points):
+            if any(_too_similar(leg, w["order"]) for w in walks):
+                continue
+            km = round(_leg_km(leg, points), 1)
+            walks.append({
+                "order": leg,
+                "count": len(leg),
+                "km": km,
+                "minutes": int(round(km / WALKING_KMH * 60)),
+                "name": _walk_name(leg, markers),
+            })
     # Photographed trees first, then size. Sorting on size alone put Barcelona's
     # worst walk in front: the ten Pedralbes trees are its tightest cluster and
     # also its newest, imported from the municipal register two days before this
