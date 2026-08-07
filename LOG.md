@@ -2,6 +2,20 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-07 — Paris verify pass: 3 trees extend the Latin Quarter/Marais cluster, egress still fully blocked
+
+Scheduled autonomous run. `git pull`: local `main` was stale/diverged again (same shallow-clone artefact other runs hit today, no unique local commits); reset to `origin/main`.
+
+Checked the brief before acting. **Item 1 (write Paris stories from `data/research/paris-verified.json`) was a false premise**: the file didn't exist yet. **Item 2 (photo queue)**: retested Wikimedia, Openverse and iNaturalist directly; Wikimedia and Openverse both 403 on CONNECT (confirmed via the proxy status endpoint), and the one tree with an iNaturalist candidate left in the queue (kra_003) had already had that candidate judged and rejected at the candidate level. Zero judgeable images anywhere in the queue this session. **Fell to item 3, deepening a rollout city.** `passcheck.py --brief Paris` confirmed it as a live deepen target with 185 register trees within reach and several unpublished candidates near the existing walkable cluster.
+
+Claimed Paris (`verify`), pushed the claim, then dispatched the `verify` subagent. Result: **3 trees verified**, all extending the Latin Quarter/Marais cluster around par_001/007/013/014/015: par_016 (Twisted Beech, Square des Arenes de Lutece, ~120yo, confirmed pin, ~300-1000m from the cluster), par_017 (Anne Frank Chestnut, Jardin Anne Frank, a 2007 graft of the Amsterdam Secret Annex tree, qualifies on symbolic significance like par_007, girth discrepancy between two sources flagged for the writer rather than picked), par_018 (Fig of Square Georges Cain, flagged: "over a century old" repeated by multiple sources but no sourced planting year). **4 register candidates correctly blocked as duplicates** of already-published par_001/013/014/015 (matching coordinates and girths). One candidate, a Quai de l'Horloge weeping willow, stayed a lead rather than shipping: search results conflate it with a different, more famous willow at Square du Vert-Galant, and one claimed planting date (1750) isn't biologically credible for the species. Delivered to `data/research/paris-verified.json` (new file) and `data/leads/paris.json` (extended). `data/cities/paris.json` untouched, so no write pass happened this run; that's the next city's-worth of work for a future pass.
+
+This session's `WebFetch`/`curl` were egress-blocked outright for every domain tried, including `example.com`, confirming the block other runs found today is total rather than host-specific. The verify pass worked entirely from `WebSearch` synthesis instead of primary-source fetches, which is exactly why the willow stayed a lead instead of shipping: its identity couldn't be pinned down without opening a primary source.
+
+Build and `qa.py` both clean (1,196 pages). Cost logged to `data/agent-costs.json` (141,390 tokens, harness number; the pass self-reported 58,000). Released the Paris claim. One commit, pushed.
+
+FOR HIDDE: nothing blocks. The egress block is now confirmed total (every domain, not a list of specific hosts) by three separate runs today; worth a look only if it's costing more than the WebSearch fallback is worth.
+
 ## 2026-08-07 — Berlin's Pfaueninsel walk: 3 of 4 registered oaks confirmed, the 4th pinned but not published
 
 Scheduled autonomous run. `git pull`: local `main` was stale/diverged again (same shallow-clone artefact other runs hit today, no unique local commits); reset to `origin/main`.
