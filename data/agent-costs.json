@@ -324,6 +324,15 @@
         "note": "Stories for the 4 already-verified rom_017-020 (Magnolia of Via Corsini, Cedar of Lebanon of Villa Torlonia, Podocarp of Piazza Vittorio, Chir Pine of Colle Oppio), merged into rome.json (16 to 20 trees). rom_017 joined the Monteverde/Trastevere walk (7 to 8 trees); rom_019/rom_020 are 534m apart but under WALK_MIN_TREES, so no second walk formed yet, an honest partial step. Under the six-tree batch floor, so per-tree cost is inflated by the fixed tone-calibration read.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "photo-queue",
+        "kind": "photo",
+        "tokens": 148948,
+        "trees": 11,
+        "note": "29 images viewed, 11 approved, all on trees that had no photo. Harness number; the pass self-reported 118k. 13.5k per approved photo, against 43k last time and 72k on the old agent-hunting method. The Wikidata lane converted 11 of 18 while Commons geosearch converted 0 of 11 and served a parked Vespa, a sarcophagus and a concert stage.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
