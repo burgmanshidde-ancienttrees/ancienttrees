@@ -5,6 +5,32 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+## 2026-08-06 (previous UTC day)
+
+Search Console (freshest day Google provides, data lags 2-3 days):
+- 2026-08-06: 5 clicks, 195 impressions, avg position 13.1 (day before: c0/i280)
+- Days: 07-28:c5/i197  07-29:c9/i247  07-30:c7/i251  07-31:c2/i230  08-01:c7/i253  08-02:c7/i299  08-03:c2/i260  08-04:c8/i254  08-05:c0/i280  08-06:c5/i195
+- Top queries (10d): "york museum gardens" (i4, p4); 400 year old tree (i1, p18); acient tree (i1, p40); albero roma (i1, p47); alley pond giant (i1, p28)
+- Top pages (10d): /lisbon (c5/i92); / (c3/i25); /porto (c3/i16); /app (c2/i6); /berlin/swamp-cypress-of-charlottenburg (c2/i3)
+- Content lead: 'den brandt park' has no matching page (i12, p70)
+- Seen, not clicked: /rome (c0/i69, 0.0%) for trees in rome (i20, p19); rome trees (i9, p36); trees of rome (i8, p26)
+- Seen, not clicked: /malaga (c0/i23, 0.0%) for árboles históricos de málaga (i18, p73); malaga tree (i3, p8); malaga trees (i1, p8)
+
+Web Analytics (beacon, real browsers, cookieless):
+- Days (visits/pageviews): 07-30:v10/p10  07-31:v0/p60  08-01:v10/p60  08-02:v20/p20  08-03:v10/p10  08-04:v10/p20  08-05:v20/p20  08-06:v0/p10
+- Top paths: / (70); /cadiz (20); /species/oriental-plane (10); /collections/europes-best-tree-city-trips (10); /lisbon (10)
+- Referrers: ancienttrees.app (130); (direct) (60); www.google.com (20)
+- Countries: NL (140); UA (30); ES (10); PL (10); GB (10)
+- Devices: desktop (110); mobile (100)
+- Page load (8d): p50 519000ms, p90 3411000ms
+
+Site actions (yesterday): none recorded.
+Waitlist signups (total): 4.
+
+Machine: 2 chain attempts yesterday, 2 got real work time (~93 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Conclusion:** Search is the only channel with real data and it is still small: 5 clicks and 195 impressions on Google's freshest day (day before: c0/i280). Directional at best; no strategic conclusions from these volumes.
+
 ## 2026-08-05 (previous UTC day)
 
 Search Console (freshest day Google provides, data lags 2-3 days):
