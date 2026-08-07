@@ -4834,8 +4834,19 @@ def build_homepage(published, upcoming, collections, pages, renderable=None, spe
     # shelf spot. The list is HIS to curate; this order mixes the pages search
     # already rewards with the pages he is proudest of (Cadiz is the photo
     # calibration city). Reorder or swap on his word, no code beyond the list.
-    FAVOURITE_CITIES = ["lisbon", "cadiz", "porto", "amsterdam", "kyoto",
-                        "rome", "palermo", "paris", "london", "barcelona"]
+    #
+    # Revised 2026-08-08 on his ask to put the best cities here, and measured
+    # rather than guessed. Three left because a shelf that promises a good
+    # afternoon should not open with a city you cannot walk: Kyoto has NO walk
+    # at all (35 km apart, the exact anti-example CLAUDE.md uses), London has no
+    # walk either, and Palermo's best is three trees. All three come straight
+    # back the day they gain one, which is one edit to this list.
+    # Three arrived on the numbers: Prague has the best-photographed walk on the
+    # whole site (9 of 10 trees shot), Madrid the biggest (13 trees, 8 shot),
+    # and Florence the tightest anywhere, seven trees inside 300 metres, which
+    # beats Cadiz's 600.
+    FAVOURITE_CITIES = ["lisbon", "prague", "cadiz", "florence", "porto",
+                        "amsterdam", "madrid", "rome", "paris", "barcelona"]
     by_slug = {e["slug"]: e for e in (renderable or [])}
     fav_cards = []
     for cs in FAVOURITE_CITIES:
