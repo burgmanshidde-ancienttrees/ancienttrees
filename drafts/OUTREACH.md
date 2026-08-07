@@ -134,4 +134,28 @@ a page to show), then 3b, then 3c, then 3d.
 
 ## Log
 
-Record replies here so nobody re-sends. Nothing sent yet as of 2026-08-07.
+Record sends and replies here so nobody re-sends and nobody waits on a reply
+that already came.
+
+| Date | To | Ask | Status |
+|---|---|---|---|
+| 2026-08-08 | Generalitat de Catalunya, arbresmonumentals.tes@gencat.cat | Permission to show Catalonia's monumental trees; unlocks Barcelona's trees AND its photos | **sent**, no reply yet |
+| 2026-08-08 | Woodland Trust, ancienttreeinventory@woodlandtrust.org.uk | Written permission for ATI data; unlocks London and Edinburgh | **sent**, no reply yet |
+
+Hidde's own expectation, 2026-08-08: no quick answer from either. Both are
+public bodies or a large charity, and a licence question goes to somebody's
+inbox rather than a queue. Weeks is normal, silence is not a no, and a polite
+follow-up after three or four weeks is reasonable.
+
+**What that means for the work, and it is the important half.** Barcelona and
+London are now the only two phase-1 cities whose progress depends on a reply.
+Nothing else does. So the plan does not wait: the rollout continues down the
+order (Rome, Paris, Berlin, Amsterdam, New York, Lisbon, Vienna, Edinburgh,
+Dublin), photos are judged in sessions from the queue we already have, and
+Barcelona simply sits where it is, already the deepest city on the site at 32
+trees, until somebody in Catalonia answers.
+
+Next to send, when there is a spare ten minutes: the Bomenstichting (tier 1,
+unlocks Amsterdam and twelve other Dutch cities), then the nine gardens and
+parks in tier 3a, which need no permission at all and exist purely to earn a
+link.
