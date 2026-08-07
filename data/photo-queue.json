@@ -321,25 +321,88 @@
   "bcn_001": {
    "city": "Barcelona",
    "name": "The Holm Oak of Carrer de l'Encarnacio",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_002": {
    "city": "Barcelona",
    "name": "The Carob of the Viaduct",
-   "checked": "2026-08-06",
-   "candidates": []
+   "checked": "2026-08-07",
+   "candidates": [
+    {
+     "title": "iNat obs 149623535 (Ceratonia siliqua)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/257854445/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/149623535",
+     "licence": "CC BY",
+     "author": "(c) Steven Bodzin, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "41.41463,2.1541383333"
+    },
+    {
+     "title": "iNat obs 149623535 (Ceratonia siliqua)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/257854443/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/149623535",
+     "licence": "CC BY",
+     "author": "(c) Steven Bodzin, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "41.41463,2.1541383333"
+    },
+    {
+     "title": "iNat obs 304758351 (Ceratonia siliqua)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/549429350/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/304758351",
+     "licence": "CC BY",
+     "author": "(c) 黃美滿, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "41.4150916667,2.1538638333"
+    },
+    {
+     "title": "iNat obs 304758351 (Ceratonia siliqua)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/549429389/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/304758351",
+     "licence": "CC BY",
+     "author": "(c) 黃美滿, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "41.4150916667,2.1538638333"
+    },
+    {
+     "title": "iNat obs 124895274 (Ceratonia siliqua)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/211744619/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/124895274",
+     "licence": "CC BY-SA",
+     "author": "(c) Ingimar, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "41.4142206765,2.152627632"
+    },
+    {
+     "title": "iNat obs 124895274 (Ceratonia siliqua)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/211744709/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/124895274",
+     "licence": "CC BY-SA",
+     "author": "(c) Ingimar, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "41.4142206765,2.152627632"
+    },
+    {
+     "title": "Openverse: Carob's viaduct",
+     "thumb": "https://api.openverse.org/v1/images/56cd6d3b-fb61-4eba-9f9d-75ac2f614f25/thumb/",
+     "url": "https://www.flickr.com/photos/43554380@N00/9235781472",
+     "licence": "CC BY 2.0",
+     "author": "twbuckner",
+     "source": "openverse/flickr"
+    }
+   ]
   },
   "bcn_004": {
    "city": "Barcelona",
    "name": "The Himalayan Cedar of the Labyrinth",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_008": {
    "city": "Barcelona",
    "name": "The Silk Tree of the Ciutadella",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": [
     {
      "title": "File:Barcelona - Parc de la Ciutadella - Passeig dels Tillers - View NE on Ciutadella chapel 1728 by Prosper de Verboom.jpg",
@@ -348,15 +411,12 @@
      "licence": "CC BY-SA 4.0",
      "author": "<a href=\"//commons.wikimedia.org/wiki/User:Txllxt_TxllxT\" title=\"User:Txllxt TxllxT\">Txllxt TxllxT</a>"
     }
-   ],
-   "judged": "2026-08-07",
-   "outcome": "rejected",
-   "outcome_note": "A chapel with shrubs, no tree subject."
+   ]
   },
   "bcn_013": {
    "city": "Barcelona",
    "name": "The Osage Orange of the Ciutadella",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": [
     {
      "title": "File:Maclura pomifera arbre d'interès local Parc de la Ciutadella P2080013 - Flickr - tgrauros.jpg",
@@ -364,22 +424,28 @@
      "url": "https://commons.wikimedia.org/wiki/File:Maclura_pomifera_arbre_d%27inter%C3%A8s_local_Parc_de_la_Ciutadella_P2080013_-_Flickr_-_tgrauros.jpg",
      "licence": "CC BY-SA 4.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/27439865@N05\">Teresa Grau Ros</a> from Barce"
+    },
+    {
+     "title": "iNat obs 330848719 (Maclura pomifera)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/600042336/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/330848719",
+     "licence": "CC BY",
+     "author": "(c) Clifton Ladd, C.W.B., some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "41.3887833333,2.1873783333"
     }
-   ],
-   "judged": "2026-08-07",
-   "outcome": "rejected",
-   "outcome_note": "Bare winter frame with two competing trunks; which one is the Maclura is not decidable from the image."
+   ]
   },
   "bcn_014": {
    "city": "Barcelona",
    "name": "The Red Gum of the Placa de les Caramelles",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_015": {
    "city": "Barcelona",
    "name": "The Holm Oak of the Bacardi Gardens",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": [
     {
      "title": "File:Matthew Tree al Concert per la Llibertat.jpg",
@@ -395,15 +461,12 @@
      "licence": "CC BY 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/24431382@N03\">Eric Fischer</a>"
     }
-   ],
-   "judged": "2026-08-07",
-   "outcome": "rejected",
-   "outcome_note": "Neither candidate is a tree (a concert stage screen; a street with a cleaning truck)."
+   ]
   },
   "bcn_018": {
    "city": "Barcelona",
    "name": "The Bunya Pine of the Teatre Grec",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": [
     {
      "title": "File:MAC-BCN19917 Fragment d'un sarcòfag romà. Tardoromà. s.IV dC. Marbre. Trobat a la Capella de Santa Llúcia.jpg",
@@ -412,27 +475,43 @@
      "licence": "CC BY-SA 4.0",
      "author": "<a href=\"//commons.wikimedia.org/wiki/User:Friviere\" title=\"User:Friviere\">Friviere</a>"
     }
-   ],
-   "judged": "2026-08-07",
-   "outcome": "rejected",
-   "outcome_note": "Not a tree (a museum sarcophagus fragment)."
+   ]
   },
   "bcn_020": {
    "city": "Barcelona",
    "name": "The Tipu Tree of Placa Carles Buigas",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_021": {
    "city": "Barcelona",
    "name": "The Ash of the Sot de l'Estany",
-   "checked": "2026-08-06",
-   "candidates": []
+   "checked": "2026-08-07",
+   "candidates": [
+    {
+     "title": "iNat obs 313121553 (Fraxinus pennsylvanica)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/565422242/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/313121553",
+     "licence": "CC BY",
+     "author": "(c) Marc Riera, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "41.3671413,2.1517911"
+    },
+    {
+     "title": "iNat obs 313121553 (Fraxinus pennsylvanica)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/565422277/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/313121553",
+     "licence": "CC BY",
+     "author": "(c) Marc Riera, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "41.3671413,2.1517911"
+    }
+   ]
   },
   "bcn_022": {
    "city": "Barcelona",
    "name": "The Sycamore of the Sot de l'Estany",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bat_001": {
@@ -911,61 +990,61 @@
   "bcn_023": {
    "city": "Barcelona",
    "name": "The Stone Pine of the Palau de Pedralbes Gardens",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_024": {
    "city": "Barcelona",
    "name": "The Himalayan Cedars of the Palau de Pedralbes Gardens",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_025": {
    "city": "Barcelona",
    "name": "The Barbary Thuja of the Palau de Pedralbes Gardens",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_026": {
    "city": "Barcelona",
    "name": "The Stone Pines of the Torre Girona Gardens",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_027": {
    "city": "Barcelona",
    "name": "The Aleppo Pine of the Torre Girona Gardens",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_028": {
    "city": "Barcelona",
    "name": "The Bottle Tree of the Torre Girona Gardens",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_029": {
    "city": "Barcelona",
    "name": "The London Plane of the Vil.la Amelia Gardens",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_030": {
    "city": "Barcelona",
    "name": "The White Eucalyptus of the Vil.la Amelia Gardens",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_031": {
    "city": "Barcelona",
    "name": "The Peruvian Pepper Tree of the Vil.la Amelia Gardens",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bcn_032": {
    "city": "Barcelona",
    "name": "The Canary Island Palms of the Vil.la Amelia Gardens",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "bre_003": {
@@ -2288,25 +2367,25 @@
   "rom_004": {
    "city": "Rome",
    "name": "The Cork Oak of the Orangery",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "rom_007": {
    "city": "Rome",
    "name": "The Cedar of the Garibaldi Mausoleum",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "rom_009": {
    "city": "Rome",
    "name": "The Aleppo Pine of Celimontana",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "rom_011": {
    "city": "Rome",
    "name": "The Himalayan Cedar of the German Institute",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": [
     {
      "title": "File:Cedro dell'Himalaya, Roma Capitale.jpg (Wikidata Q55741610)",
@@ -2316,21 +2395,18 @@
      "author": "<a href=\"//commons.wikimedia.org/wiki/User:Olea\" title=\"User:Olea\">Olea</a>",
      "source": "wikidata/Q55741610"
     }
-   ],
-   "judged": "2026-08-07",
-   "outcome": "rejected",
-   "outcome_note": "Distant park view from above, trunk not readable, gravel foreground."
+   ]
   },
   "rom_012": {
    "city": "Rome",
    "name": "The Podocarp of Villa Sciarra",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "rom_013": {
    "city": "Rome",
    "name": "The Plane of Piazza San Cosimato",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": [
     {
      "title": "File:Rome Street View - panoramio.jpg",
@@ -2339,15 +2415,12 @@
      "licence": "CC BY-SA 3.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161022003929/http://www.panoramio.com/user/6"
     }
-   ],
-   "judged": "2026-08-07",
-   "outcome": "rejected",
-   "outcome_note": "Not a tree (a street with parked cars)."
+   ]
   },
   "rom_016": {
    "city": "Rome",
    "name": "The Redwood of the Pincio",
-   "checked": "2026-08-06",
+   "checked": "2026-08-07",
    "candidates": []
   },
   "gui_001": {
@@ -3997,10 +4070,7 @@
      "licence": "CC BY 4.0",
      "author": "<a href=\"https://www.wikidata.org/wiki/Q47472326\" class=\"extiw\" title=\"d:Q47472326\"><span title=\"French wikimedian\">Alex"
     }
-   ],
-   "judged": "2026-08-07",
-   "outcome": "rejected",
-   "outcome_note": "Neither candidate is a tree (buildings on Via della Scala)."
+   ]
   },
   "rom_018": {
    "city": "Rome",
@@ -4026,10 +4096,7 @@
      "licence": "CC0",
      "author": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/Kavalerov\">Artem Kavalerov</a></d"
     }
-   ],
-   "judged": "2026-08-07",
-   "outcome": "rejected",
-   "outcome_note": "Not a tree (a Vespa against a wall)."
+   ]
   },
   "vie_011": {
    "city": "Vienna",
