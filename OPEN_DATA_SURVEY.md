@@ -287,10 +287,16 @@ be re-proposed without a new argument:
 - **Per-tree Commons categories.** Famous trees sometimes have their own
   category, which would be a true entity link. Of 14 photo-less trees, one
   matched, and it was a tram stop.
-- **Flickr.** Dropped 2026-08-08: signup would not complete without a paid Pro
-  plan for Hidde, and spending is his call alone. Not worth pursuing for a
-  source expected to land between Openverse's zero and Wikidata's 61 percent.
-  Reopen only if a free API key becomes obtainable.
+- **Flickr. CLOSED, and not by a workaround.** flickr.com/services/apps/create/apply
+  states it outright: "In order to mitigate abuse, API key creation is currently
+  disabled for free accounts. API key creation is available to all Flickr PRO
+  subscribers." Pro is 82 US dollars a year. A session told Hidde a free account
+  would be enough, which was wrong, and he found the wall himself. There is no
+  free API key to obtain, so this is not a "try again later" item: it is a
+  purchase decision, and purchases are Hidde's alone (hard rule 5). Do not
+  re-propose it without new evidence that the policy changed, and never nudge
+  him toward paying for a source expected to land between Openverse's zero and
+  Wikidata's 61 percent.
 
 **The honest conclusion.** Most of our trees are simply not photographed under
 an open licence by anybody. That is a supply fact, not a retrieval problem to
