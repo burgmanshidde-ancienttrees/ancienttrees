@@ -2,6 +2,20 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-07 — Paris write pass: par_016-018 published, city now 16 trees
+
+Scheduled autonomous run. `git pull`: local `main` was detached/stale again (same shallow-clone artefact other runs hit today, no unique local commits); reset to `origin/main`.
+
+`data/research/paris-verified.json` held the 3 trees an earlier run's verify pass left (par_016 Twisted Beech, par_017 Anne Frank Chestnut, par_018 Fig of Square Georges Cain, all extending the Latin Quarter/Marais cluster). Confirmed with `passcheck.py --pending` that all 3 still needed stories and none were already published. Claimed Paris (`write`), pushed the claim, dispatched the `write-stories` agent per BRIEF_WRITING.md.
+
+All 3 stories came back clean: 232-238 words each, no banned words, no em dashes, no exclamation marks. par_016 got a `best_time` (bare silhouette, Jan/Feb, its twisted architecture is invisible under summer leaf). par_018 kept its flagged, hedged phrasing (no sourced planting year exists anywhere, only repeated "over a century" claims). par_017 stated the girth discrepancy between two sources as a range rather than picking one.
+
+**Caught one thing the writing pass flagged rather than fix itself**: the already-live par_007 (Elm of Saint-Gervais, planted 1935) opened with "This is the youngest tree on this list," which par_017 (planted 2007) now makes false. Rewrote the opening line to drop the now-inaccurate claim while keeping the point about the address. Also updated `meta_description` and `question_meta`, both of which said "a dozen more" trees (accurate at 13, not at 16); now say "15 more."
+
+Merged the 3 trees into `data/cities/paris.json` (13 to 16 trees) and deleted the now-stale `data/research/paris-verified.json`. Build and `qa.py` both clean (1,199 pages). Cost logged to `data/agent-costs.json`. Released the Paris claim. One commit, pushed.
+
+FOR HIDDE: nothing blocks. Paris is at 16 trees now, all with confirmed pins.
+
 ## 2026-08-07 — Paris verify pass: 3 trees extend the Latin Quarter/Marais cluster, egress still fully blocked
 
 Scheduled autonomous run. `git pull`: local `main` was stale/diverged again (same shallow-clone artefact other runs hit today, no unique local commits); reset to `origin/main`.

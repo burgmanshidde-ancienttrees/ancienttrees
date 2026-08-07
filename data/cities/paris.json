@@ -3,9 +3,9 @@
   "country": "France",
   "status": "needs_curation",
   "intro": "Paris treats its trees as part of the civic record: the city logs every one of its 200,000 street and park trees in an open register and stamps a select few as officially remarkable. Its two oldest trees are father and son, black locusts raised four centuries ago from American seed by the royal herbalist Jean Robin and his son Vespasien, and both still flower every spring. They include the city's oldest tree, its thickest, its tallest, and an address that has held an elm since the Middle Ages. Every one is a metro ride away.",
-  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and a dozen more within a metro ride.",
+  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and 15 more within a metro ride.",
   "question_answer": "The oldest tree in Paris is the Robinier of Square Rene-Viviani, a black locust planted in 1601 by the royal herbalist Jean Robin, now around 425 years old. It stands in the Latin Quarter directly opposite Notre-Dame, three minutes on foot from Saint-Michel Notre-Dame station.",
-  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and a dozen more remarkable trees nearby.",
+  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 15 more remarkable trees nearby.",
   "question_context": "Paris is unusual among capitals in that its oldest tree has a name, a planting date and a planter. Jean Robin, herbalist to Henri IV, raised the black locust from American seed and set it in the ground in 1601, nineteen years before the Mayflower sailed. It still stands in Square Rene-Viviani opposite Notre-Dame, propped by concrete and partly hidden by ivy, and it still flowers every spring. The runner-up is its own son: in 1636 Robin's son Vespasien took a cutting and planted it in the new royal medicinal garden, now the Jardin des Plantes, where it also survives. That makes the two oldest trees in Paris a documented parent and child, four centuries old and two kilometres apart. Both are black locusts, an American species that reached Europe as a handful of seeds and was named Robinia after the family. For age with grandeur rather than paperwork, the Cedar of Jussieu from 1734 is the city's third elder. Getting there: Saint-Michel Notre-Dame station, then a three minute walk along the Seine.",
   "faq": [
     {
@@ -241,7 +241,7 @@
         "longitude": 2.3527,
         "neighbourhood": "Le Marais, 4th arrondissement"
       },
-      "story": "This is the youngest tree on this list and the oldest address. An elm has stood on this exact spot in front of the Saint-Gervais church since the Middle Ages, and for centuries it was where the neighbourhood settled its affairs. Debts were repaid under the elm on agreed days, judges heard disputes in its shade, and the phrase attendez-moi sous l'orme, wait for me under the elm, entered French as a way of saying you might be waiting a while. The medieval tree's successors appear in old engravings and even in the wrought iron balconies of the surrounding buildings, where the elm motif was worked into the metal in the 1730s. The Revolution felled the tree then standing, allegedly for cannon carriages. The current elm was planted in 1935, a young stand-in occupying one of the longest continuously treed spots in Europe. The building behind it has hosted a church since the 4th century.",
+      "story": "This elm is not particularly old. The address is: one has stood on this exact spot in front of the Saint-Gervais church since the Middle Ages, and for centuries it was where the neighbourhood settled its affairs. Debts were repaid under the elm on agreed days, judges heard disputes in its shade, and the phrase attendez-moi sous l'orme, wait for me under the elm, entered French as a way of saying you might be waiting a while. The medieval tree's successors appear in old engravings and even in the wrought iron balconies of the surrounding buildings, where the elm motif was worked into the metal in the 1730s. The Revolution felled the tree then standing, allegedly for cannon carriages. The current elm was planted in 1935, a young stand-in occupying one of the longest continuously treed spots in Europe. The building behind it has hosted a church since the 4th century.",
       "verified_sources": [
         "https://www.unjourdeplusaparis.com/en/paris-vert/arbres-remarquables-paris",
         "https://bonjourparis.com/parks-and-gardens/arbres-remarquables-where-to-find-the-great-trees-of-paris/"
@@ -445,6 +445,87 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "par_016",
+      "name": "The Twisted Beech of Square des Arenes de Lutece",
+      "species": "Twisted Beech (Fagus sylvatica 'Tortuosa')",
+      "age_estimate": "roughly 120 years",
+      "age_min": 115,
+      "age_max": 125,
+      "location": {
+        "address": "Square des Arenes de Lutece, 2 Place Emile Male, 75005 Paris",
+        "latitude": 48.84488752640651,
+        "longitude": 2.3536691631893647,
+        "neighbourhood": "Latin Quarter, next to the Roman arena, 5th arrondissement"
+      },
+      "story": "Every wild tree of this kind on earth grows in one wood near Reims. The hetre tortillard, or fau, is a twisted-branch form of the common European beech, and its only natural population is the Faux de Verzy, roughly a thousand specimens in the Champagne hills. Why they grow that way has never been settled. This one did not arrive by accident: it is a grafted specimen, planted here around 1905, a deliberate piece of botanical strangeness dropped into the Latin Quarter.\n\nThe result is a tree that reads as two different trees depending on the month. From May to October it is a low dome of dense leaf, easy to walk straight past, closer to a large shrub than to a beech. In winter the leaves go and the architecture shows: a short trunk turning back on itself, branches spiralling and bending down, some of them trailing to the ground. The city register puts its girth at 110 centimetres, modest for its age, because this form spends its growth going sideways rather than up.\n\nIts address is far better known than it is. The square was laid out around the excavated Roman arena of Lutetia, a first-century amphitheatre built for some 15,000 spectators, found again during nineteenth-century roadworks and saved in part by a campaign Victor Hugo lent his name to. The beech arrived long after that argument had been won.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are gone and the twisted, spiralling branches are the whole point"
+      },
+      "verified_sources": [
+        "https://fr.wikipedia.org/wiki/Square_des_ar%C3%A8nes_de_Lut%C3%A8ce_et_square_Capitan",
+        "https://www.paris.fr/lieux/square-des-arenes-de-lutece-et-square-capitan-1760",
+        "Ville de Paris arbres remarquables register (register_id 132669.0, girth 110cm, Square des arenes de Lutece)"
+      ],
+      "access": "Free, public square, open daily (closes in the evening per standard Paris square hours)",
+      "transport": "Jussieu (Metro 7/10) or Place Monge (Metro 7), 4-5 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "par_017",
+      "name": "The Anne Frank Chestnut",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 19 years (planted 20 June 2007)",
+      "age_min": 18,
+      "age_max": 20,
+      "location": {
+        "address": "Jardin Anne Frank, 14 Impasse Berthaud, 75003 Paris",
+        "latitude": 48.861474096762265,
+        "longitude": 2.354374705728248,
+        "neighbourhood": "Le Marais, 3rd arrondissement"
+      },
+      "story": "The tree this one was cut from no longer exists. On 20 June 2007 a young horse chestnut went into the ground in a small garden off Impasse Berthaud, grown as a graft from the chestnut behind the Secret Annex in Amsterdam, the one Anne Frank could see from the attic window and wrote about in her diary. That original was already failing when the graft was taken, hollowed by fungus and moth damage and propped up with a steel frame. In August 2010 a storm brought it down. The Paris tree had been growing for three years by then.\n\nThe Ville de Paris classes it an arbre remarquable, a register otherwise filled with giants and centenarians. This one is on it for what it stands for rather than what it measures, which the classification explicitly allows. The measurements are modest and do not entirely agree: the register records 100 centimetres around the trunk, an earlier account gives 72, and the gap is roughly what a vigorous young chestnut puts on in a decade.\n\nMayor Bertrand Delanoe planted it alongside Hans Westra, then director of the Anne Frank House. The garden opened the same year, on the grounds of the seventeenth-century Hotel de Saint-Aignan, and at its entrance are inscribed the names of the 11,000 Jewish children deported from France. Nineteen years in, it is still a slim tree with a long job ahead of it.",
+      "verified_sources": [
+        "https://www.pariszigzag.fr/insolite/balades-excursions/jardin-anne-frank-paris/",
+        "https://en.wikipedia.org/wiki/Anne_Frank_tree",
+        "https://www.hmdb.org/m.asp?m=261240",
+        "Ville de Paris arbres remarquables register (register_id 134435.0, girth 100cm, Jardin Anne Franck)"
+      ],
+      "access": "Free, public garden, open daily (standard Paris square hours)",
+      "transport": "Rambuteau (Metro 11) or Chatelet-Les Halles, 4-5 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated"
+    },
+    {
+      "id": "par_018",
+      "name": "The Fig Tree of Square Georges Cain",
+      "species": "Common Fig (Ficus carica)",
+      "age_estimate": "over a century (no exact planting date documented)",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Square Georges Cain, 8 Rue Payenne, 75003 Paris",
+        "latitude": 48.85828201412413,
+        "longitude": 2.3626526639008243,
+        "neighbourhood": "Le Marais, next to the Musee Carnavalet, 3rd arrondissement"
+      },
+      "story": "A fig has no business standing ten metres tall in the open in Paris. Ficus carica is a Mediterranean species, knocked back by hard winters and usually trained flat against a warm wall this far north, and this one carries a trunk 145 centimetres around with nothing but sky above it. That size at that exposure is most of the reason the city lists it as a remarkable tree at all.\n\nNobody wrote down when it was planted. Every account of it repeats the same undated phrase, over a hundred years old, and the register designates it without naming a year, so the honest position is that it is old and that no one recorded how old.\n\nThe ground is better documented than the tree standing on it. Square Georges Cain was laid out in 1923 as an open-air store for the Musee Carnavalet next door, and pediments, columns, carved fragments and statues pulled from demolished Paris buildings sit among the planting, including a bronze by Aristide Maillol. Before any of that, these blocks were market garden, part of the culture Sainte-Catherine that fed the medieval city.\n\nFigs are shorter-lived than almost everything else on this list and considerably less patient with frost. This one has spent decades winning that argument inside a walled square that runs warmer than the street outside, which is the quiet trick of the place and probably the reason it is still here.",
+      "verified_sources": [
+        "https://www.pariszigzag.fr/insolite/lieux-insolites/square-georges-cain-marais/",
+        "https://fr.wikipedia.org/wiki/Square_Georges-Cain",
+        "Ville de Paris arbres remarquables register (register_id 116020.0, girth 145cm, height 10m, Square Georges Cain)"
+      ],
+      "access": "Free, public square, open daily (standard Paris square hours)",
+      "transport": "Saint-Paul (Metro 1) or Chemin Vert (Metro 8), 4-6 min walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged"
     }
   ]
 }
