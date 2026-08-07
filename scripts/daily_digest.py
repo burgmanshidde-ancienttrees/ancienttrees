@@ -300,7 +300,43 @@ query($tag: String!, $since: Date!, $until: Date!) {
             "- Days (visits/pageviews): %s\n- Top paths: %s\n"
             "- Referrers: %s\n- Countries: %s\n- Devices: %s%s"
             % (trend, top, _dim(refs, "refererHost"),
-               _dim(countries, "countryName"), _dim(devices, "deviceType"), speed))
+               _dim(countries, "countryName"), _dim(devices, "deviceType"), speed)
+            + "\n\n" + referrers_section(refs))
+
+
+# Hosts that are us, or a search engine sending us traffic we already measure
+# in Search Console. Neither is a link somebody chose to give us.
+NOT_A_BACKLINK = (
+    "ancienttrees.app", "google.", "bing.", "duckduckgo.", "ecosia.",
+    "yandex.", "baidu.", "search.brave.", "startpage.", "qwant.",
+)
+
+
+def referrers_section(refs):
+    """The external referrers, which is the closest thing to a backlink report
+    we can automate.
+
+    Google's Search Console API has no links endpoint at all: the Links report
+    exists only in the web interface, confirmed 2026-08-07. So the number of
+    sites linking to us cannot be pulled here, and the digest says so and links
+    straight to the report rather than pretending otherwise.
+
+    What this line does measure is better in one way and worse in another: a
+    referrer is a link somebody actually followed, which is traffic rather than
+    an index entry, but it only sees links that get clicked."""
+    external = []
+    for r in refs or []:
+        host = (r["dimensions"].get("refererHost") or "").lower()
+        if not host or any(b in host for b in NOT_A_BACKLINK):
+            continue
+        external.append("%s (%d)" % (host, r["count"]))
+    line = "; ".join(external) if external else "none yet"
+    return ("Links and referrers:\n"
+            "- External referrers (a link somebody clicked): %s\n"
+            "- Backlink count: not automatable, Search Console's API has no links "
+            "endpoint. Read it by hand at "
+            "https://search.google.com/search-console/links?resource_id=sc-domain%%3Aancienttrees.app"
+            % line)
 
 
 def fetch_events(today):
