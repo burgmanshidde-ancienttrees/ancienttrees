@@ -88,6 +88,20 @@ This document has two layers with different lifespans. Layer 1 (Principles) shou
 | Internal links | Every entry links to its tree page; footer links to 3+ city pages |
 | Hard rule | Curated from verified tree data under the research standard: every entry script-checked (the tree exists, the claimed property holds), superlatives softened or sourced per the project's superlative rule, voice per TONE_OF_VOICE.md. Publishes without owner approval; readers are the correction layer, as everywhere. |
 
+### Contract H — Park page  `/parks/[slug]` + `/parks` index
+
+| Element | Specification |
+|---|---|
+| Title (≤60 chars) | `Ancient Trees in [Park], [City]: [N] Worth Finding`, or the hand-written `title` when present |
+| H1 | `Ancient Trees in [Park]` |
+| Body | Hand-written intro (the first sentence becomes the answer-first lede, the rest the prose block) → every mapped tree in the park, oldest first, with thumb, species and its story's opening line |
+| Schema | ItemList + BreadcrumbList |
+| Internal links | Every tree links to its tree page; links to the park's city, to `/parks`, and to 6 other cities |
+| Publish gate | **5+ mapped trees in the park AND a hand-written intro in `data/parks/[slug].json`.** Both, or no page. |
+| Hard rule | The gate is higher than the species gate of three deliberately: a park is a place you spend an afternoon, and below five trees a park page is a thin page wearing a park's name while the city page serves the reader better. Parks with 3 or 4 are named on the index in plain text, linked to their city, never given a page. |
+
+The index at `/parks` uses the same browse-card grid as `/cities` and `/species`, and sits in the Explore menu beside Species.
+
 ### Contract E — About page  `/about`
 
 Named person, short bio, why this exists, one verifiable external link (LinkedIn or equivalent). Person schema with sameAs. This page exists for entity verification as much as for readers.
@@ -134,6 +148,7 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 ---
 
 ## CHANGELOG
+- **v1.7 (2026-08-07):** Added Contract H (park page `/parks/[slug]` + `/parks` index), approved by Hidde in session ("so parks do it now"). His reasoning: parks are a browse facet visitors already think in, and the search evidence agrees, since "york museum gardens" is the site's best-performing query at position 4 and "den brandt park" surfaced with 12 impressions and no page. Publish-gated at 5 trees plus a hand-written intro, a higher bar than the species contract's three because a park page with four trees is a thin page wearing a park's name. 9 parks qualify at launch, 3 have intros and pages.
 - **v1.6 (2026-08-01):** Contract D splits the title tag from the H1, approved by Hidde in session ("de content beslissing rond collecties klinken goed doe het maar") after he judged the collection titles weak for search. The editorial titles were doing double duty: strong as headings, invisible to search, because nobody types "Trees That Outlived Their City". New optional `seo_title` per collection carries the query-shaped version; `title` stays the H1. All 12 collections got one the same day.
 - v1.3 — Contract D loses the owner-approval gate, approved by Hidde ("yes pas aan", 2026-07-27). It was the last place he sat as a mandatory quality gate, contradicting the recorded principle that the system publishes and readers correct. The risks it guarded are covered without him: entries are script-verifiable against the tree data, superlatives fall under the existing softening rule, voice under TONE_OF_VOICE.md. Collections now publish like cities do.
 - v1.2 — Removed the curation-status banner from every page type, approved by Hidde. He is not the quality gate and never will be at 1,000 trees, so promising "final human review is still in progress" was a promise nobody was going to keep. The bar is now the research standard already applied (two independent sources) plus readers as the correction layer. Two replacements: every tree page carries a visible "is something here not right?" invitation, and a tree whose pin is only approximate says so next to the directions button, because that costs the visitor a wasted walk. Uncertainty about age stays where it already was, inside the story text as a stated range (P7).
