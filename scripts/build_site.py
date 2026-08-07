@@ -918,7 +918,16 @@ def slugify(name):
 
 
 def age_token(tree):
-    m = re.match(r"([\d,]+\+?)", tree.get("age_estimate", ""))
+    """The number a page's title quotes for this tree's age.
+
+    Must be the number the age_estimate text itself states, even when a
+    qualifier ("roughly", "over", "traditionally") comes first: re.match
+    anchored the search to the start of the string, so "roughly 440 years"
+    silently fell back to age_min (a range bound never meant to be quoted
+    on its own) instead of the 440 the text actually says (fresh-eyes
+    review, 2026-08-06, found on 43 cities including a case with no title
+    number in the text at all)."""
+    m = re.search(r"(\d[\d,]*\+?)", tree.get("age_estimate", ""))
     return m.group(1) if m else str(tree.get("age_min", ""))
 
 
