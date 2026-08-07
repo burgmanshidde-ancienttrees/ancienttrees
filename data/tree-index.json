@@ -4386,7 +4386,7 @@
    "precision": "confirmed",
    "age_min": 155,
    "age_max": 180,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -6258,7 +6258,7 @@
    "precision": "confirmed",
    "age_min": 120,
    "age_max": 235,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -6290,7 +6290,7 @@
    "precision": "confirmed",
    "age_min": 140,
    "age_max": 235,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -6322,7 +6322,7 @@
    "precision": "confirmed",
    "age_min": 110,
    "age_max": 130,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -6690,7 +6690,7 @@
    "precision": "approximate",
    "age_min": 100,
    "age_max": 180,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -8898,7 +8898,7 @@
    "precision": "confirmed",
    "age_min": 150,
    "age_max": 165,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -9442,7 +9442,7 @@
    "precision": "confirmed",
    "age_min": 700,
    "age_max": 750,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -9570,7 +9570,7 @@
    "precision": "confirmed",
    "age_min": 65,
    "age_max": 80,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -10802,7 +10802,7 @@
    "precision": "confirmed",
    "age_min": 140,
    "age_max": 165,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 4
   },
@@ -10850,7 +10850,7 @@
    "precision": "approximate",
    "age_min": 200,
    "age_max": 260,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 4
   },
@@ -10882,7 +10882,7 @@
    "precision": "approximate",
    "age_min": 100,
    "age_max": 200,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 4
   },
