@@ -1,0 +1,82 @@
+{
+  "leads": [
+    {
+      "name": "Flatter-Ulme (European White Elm) at the Karpfenteich, Schlosspark Charlottenburg",
+      "species": "European White Elm (Ulmus laevis)",
+      "location": {
+        "address": "Schlosspark Charlottenburg, southeastern corner of the Karpfenteich, Spandauer Damm, Berlin",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Charlottenburg"
+      },
+      "reason": "Officially registered as Naturdenkmal 4-27/B ('Park Schloss Charlottenburg, suedoestliche Ecke Karpfenteich') per the Wikipedia-compiled Charlottenburg-Wilmersdorf Naturdenkmal list, but that is a single source with no age, girth or coordinates given. Repeated searches (German and English, SPSG tour pages, local press) found no second source describing this specific tree. White elms are increasingly rare due to Dutch elm disease, which would make an old surviving specimen genuinely notable if its age and a second source can be found. Would sit within a few hundred metres of ber_004 (the Swamp Cypress) if it verifies."
+    },
+    {
+      "name": "Echte Mispel (Medlar) at Schloss Charlottenburg, west wing",
+      "species": "Medlar (Mespilus germanica)",
+      "location": {
+        "address": "Schloss Charlottenburg, am Westfluegel des Schlosses, Berlin",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Charlottenburg"
+      },
+      "reason": "Naturdenkmal 4-28/B per the official register list, single source, no age or dimensions given. Medlars are small trees (typically under 5m) so remarkability is doubtful on size or age; the case would have to rest on rarity as a once-common, now-forgotten fruit tree plus its royal-garden setting. Needs a second source and a stronger case before it clears the qualifying bar."
+    },
+    {
+      "name": "Kirschpflaume (Cherry Plum) at Schloss Charlottenburg, west wing",
+      "species": "Cherry Plum (Prunus cerasifera)",
+      "location": {
+        "address": "Schloss Charlottenburg, am Westfluegel des Schlosses, Berlin",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Charlottenburg"
+      },
+      "reason": "Naturdenkmal 4-29/B per the official register list, single source, no age. Cherry plum is a common small ornamental/fruit tree; unclear this individual clears 'genuinely old OR visually spectacular OR historically significant' even with a second source. Lower priority than the other Charlottenburg leads."
+    },
+    {
+      "name": "Kaukasische Fluegelnuss (Caucasian Wingnut) at Lietzensee",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "location": {
+        "address": "Lietzensee, northern part, east shore, near Lietzenseeufer 5, Berlin",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Charlottenburg"
+      },
+      "reason": "Naturdenkmal 4-25/B (neu) per the official register list. A Charlottenburg-Wilmersdorf district page describes the species generally (large, multi-stemmed, golden autumn colour, planted in European parks for about 150 years) but gives no age or history for THIS specimen. Visually distinctive species, roughly 1.7km south of Schloss Charlottenburg (within walking distance of ber_004 and the other Charlottenburg leads above). Needs a second, tree-specific source (the Lietzenseepark 'Umweltpfad' info-stele apparently gives an age but its content was not accessible to this pass) and exact coordinates."
+    },
+    {
+      "name": "Platane (Plane tree) at Lietzensee",
+      "species": "London Plane (Platanus x hispanica / acerifolia)",
+      "location": {
+        "address": "Lietzensee, northern part, west shore, near Wundtstrasse 56, Berlin",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Charlottenburg"
+      },
+      "reason": "Naturdenkmal 4-26/B per the official register list. A search-engine summary of monumentaltrees.com's Berlin age-records page mentioned '218-year-old plane trees (Platanus hispanica) in the Lietzenseeparks in Charlottenburg', which would be a strong second source for age if confirmed, but this pass could not fetch monumentaltrees.com directly (HTTP 403 on every attempt) to verify that figure firsthand, read it in context, or confirm it applies to this specific registered tree rather than a different plane in the same park. Needs a direct read of that page (or an alternate route to it) plus exact coordinates before it can verify. Per hard rule 1, monumentaltrees.com may only be used for verification, never copied as the sole source."
+    },
+    {
+      "name": "Trauben-Eiche, Pfaueninsel, ca. 100m nordoestlich vom Faehranleger (ND 6-101/B)",
+      "species": "Sessile Oak (Quercus petraea)",
+      "location": {
+        "address": "Pfaueninsel, near the ferry landing, 14109 Berlin",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+      },
+      "reason": "One of four Naturdenkmal Trauben-Eichen registered on Pfaueninsel; register-only, no girth, age, or precise coordinates, and not matched to any secondary source in this pass. UPDATED 2026-08-07 (follow-up pass, ~15 min budget): tried both suggested routes and neither landed. (1) Wikimedia Commons: the only ND-tagged category on the island is still 'Naturdenkmal Trauben-Eiche - Winter-Eiche Pfaueninsel, noerdlich Wasservogelteich' (ber_013's tree, 1 file); Category:Pfaueninsel's other subcats (Pfaueninsel ferry, Gesamtanlage Pfaueninsel and its 11 sub-subcats) have no oak/Naturdenkmal content; targeted searches for 'Pfaueninsel Naturdenkmal Eiche' and 'Pfaueninsel Fahranleger Eiche' returned zero and one hit respectively, the one hit being the already-known 6-103/B photo. (2) Berlin Geoportal/FIS-Broker: fbinter.stadt-berlin.de's WFS GetCapabilities for the guessed endpoint 404s, the FIS-Broker map-viewer link 301-redirects to gdi.berlin.de/viewer/main which is a JS app with no service URL visible to a text fetch, daten.berlin.de's open-data search returns zero datasets for both 'naturdenkmale' and 'naturdenkmal', and gdi.berlin.de's geonetwork catalogue API 500s. No working WFS/open-geodata endpoint found this pass; the correct dataset slug or service path is still unknown, not merely unreachable in the fetch-blocklist sense (nothing hung, everything failed fast). Still unresolved: needs either the primary Naturdenkmal ordinance PDF (Anlage 1, Steglitz-Zehlendorf) read with real PDF text extraction rather than a summarizing fetch, or an on-site geotagged photo. Part of the same potential Pfaueninsel cluster as ber_011 and the Tuereiche if it ever verifies."
+    },
+    {
+      "name": "Trauben-Eiche, Pfaueninsel, ca. 150m nordoestlich vom Schloss (ND 6-108/B)",
+      "species": "Sessile Oak (Quercus petraea)",
+      "location": {
+        "address": "Pfaueninsel, north of the Schloss, 14109 Berlin",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+      },
+      "reason": "One of four Naturdenkmal Trauben-Eichen registered on Pfaueninsel. UPDATED 2026-08-07: ber_011 (The Great Oak of Pfaueninsel) is now believed to be ND 6-102/B rather than this one -- a distance check from Schloss Pfaueninsel's own coordinates (52.430923/13.119864) puts ber_011 about 85-90m northeast of the Schloss, close to 6-102/B's 'ca. 100m nordoestlich' description and short of this entry's 'ca. 150m'. So 6-108/B likely remains a distinct, fifth candidate tree, not yet matched to coordinates or a second source. Needs the primary Anlage-1 ordinance PDF (could not be read as text by this or the prior pass; try direct PDF text extraction rather than a summarizing web fetch) or an on-site/geotagged photo to pin down."
+    }
+  ],
+  "blocked": []
+}

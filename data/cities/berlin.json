@@ -2,10 +2,10 @@
   "city": "Berlin",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Berlin protects around 600 individual trees as Naturdenkmäler, and most of them are oaks: pedunculate oaks planted by foresters, princes and protestors across four centuries in a city that has been besieged, bombed and divided more than once. Three of the ten below stand in the Tegel Forest alone, home to the capital's record holders for oldest and thickest tree. The rest range from a Louisiana swamp cypress growing in a Prussian palace garden to an oak vandalized as a political protest against the Kaiser it was planted to honor. Most are free to see.",
+  "intro": "Berlin protects around 600 individual trees as Naturdenkmäler, and most of them are oaks: pedunculate oaks planted by foresters, princes and protestors across four centuries in a city that has been besieged, bombed and divided more than once. Three of these stand in the Tegel Forest alone, home to the capital's record holders for oldest and thickest tree. The rest range from a Louisiana swamp cypress growing in a Prussian palace garden to an oak vandalized as a political protest against the Kaiser it was planted to honor. Most are free to see.",
   "meta_description": "Berlin's ancient trees range from an 800-year oak older than the city to a Louisiana swamp cypress in a Prussian palace garden. Mostly free to visit.",
   "question_answer": "Berlin's oldest tree is Dicke Marie, a pedunculate oak in the Tegel Forest whose age is genuinely disputed: the city's forestry office estimates 800 to 900 years, while a 2021 survey by the German Dendrological Society's heritage-tree board put it at a more conservative 500 to 600. It stands on the lakeside path near Tegel harbour, a 12 to 15 minute walk from the Alt-Tegel U-Bahn station.",
-  "question_meta": "Berlin's oldest tree is a disputed 500 to 900 year old oak in the Tegel Forest. Where it stands, and the city's ten most remarkable trees.",
+  "question_meta": "Berlin's oldest tree is a disputed 500 to 900 year old oak in the Tegel Forest. Where it stands, and the city's most remarkable trees.",
   "question_context": "Two credible sources disagree on Dicke Marie's age by several centuries, which is unusual even for a tree this old: Berlin's forestry office has long cited 800 to 900 years, while the German Dendrological Society's own National Heritage Tree board reassessed it in 2021 and concluded 500 to 600 was more defensible, since internal decay makes precise dating impossible either way. This page states both rather than picking the more dramatic number. What is not disputed is the tree's identity: two Humboldt brothers, Alexander and Wilhelm, are said to have named it after their family cook around 1800, while summering nearby at Schloss Tegel, and the nickname stuck for over two centuries. On 9 July 2021 Dicke Marie became the first forest tree in Germany named a National Heritage Tree. It stands in the Tegel Forest on the northeastern tip of Tegeler See, reached on foot from the Alt-Tegel U-Bahn station via the harbour bridge and lakeside path. A short walk further into Schlosspark Tegel stands the Humboldteiche, a younger but far thicker oak that is sometimes confused for the record holder; the two are neighbours, not the same tree.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Berlin's ancient trees free to visit?",
-      "a": "Nine of the ten on this list are free, standing in public parks, forests or street corners. The one exception is the Treskow Plane, which grows inside Tierpark Berlin and requires a zoo ticket."
+      "a": "Most are free to see without a ticket. Two need paying for access: the Treskow Plane, which grows inside Tierpark Berlin and requires a zoo ticket, and the three oaks on Pfaueninsel, reached only by a short paid chain ferry (6 euros as of April 2026) since the island itself is car-free."
     },
     {
       "q": "What is a Berlin Naturdenkmal?",
@@ -123,7 +123,13 @@
       "age_estimate": "200 years",
       "age_min": 190,
       "age_max": 210,
-      "best_time": { "months": [10, 11], "label": "late October, when it drops its needles like a deciduous tree, the habit that confuses visitors expecting a conifer to stay green" },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October, when it drops its needles like a deciduous tree, the habit that confuses visitors expecting a conifer to stay green"
+      },
       "location": {
         "address": "Schlosspark Charlottenburg, Spandauer Damm, 14059 Berlin",
         "latitude": 52.52376,
@@ -176,7 +182,6 @@
       },
       "curation_status": "ai_generated",
       "notes": "Declared a Nationalerbe-Baum (National Heritage Tree) 25 September 2025, confirmed by the district's own press release and a second local news source. Location upgraded to confirmed: the national heritage-tree register's own project page (run by a TU Dresden forestry professor) gives a specific GPS reading and a walking description (750m from the S-Bahn station along the riverside promenade, 150m east of the boat landing), a roughly 460m correction from the previous general-park estimate. A second independent source agrees within 15m: a geotagged Wikimedia Commons photo of this exact tree (file title names it directly), also the photo used below.",
-
       "location_precision": "confirmed"
     },
     {
@@ -186,7 +191,14 @@
       "age_estimate": "300-400 years",
       "age_min": 300,
       "age_max": 400,
-      "best_time": { "months": [6, 7], "label": "late June, when the lime blossom scents the street", "kind": "flowering" },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "late June, when the lime blossom scents the street",
+        "kind": "flowering"
+      },
       "location": {
         "address": "Hönower Straße 13, 12623 Berlin",
         "latitude": 52.5061,
@@ -293,7 +305,10 @@
       "access": "Free (Gutspark); Schloss Britz's period rooms charge separate admission",
       "transport": "10 min walk from Parchimer Allee U-Bahn (U7), or bus 181 to Alt-Britz",
       "best_time": {
-        "months": [10, 11],
+        "months": [
+          10,
+          11
+        ],
         "label": "late October, when every leaf turns gold and drops within days"
       },
       "photo": {
@@ -335,6 +350,104 @@
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal 1-41/B. Planting year (1891) confirmed by the district's own Naturdenkmale page; species arrival in Europe (1853 seed import) is well-established botanical history, cited independently. Coordinates from the Wikipedia natural monuments list entry for this specific tree.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "ber_011",
+      "name": "The Great Oak of Pfaueninsel",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "roughly 200-400 years, undocumented",
+      "age_min": 200,
+      "age_max": 400,
+      "location": {
+        "address": "Pfaueninsel, Schlosswiese, 14109 Berlin",
+        "latitude": 52.4315,
+        "longitude": 13.1207,
+        "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+      },
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/2135-eiche_auf_der_pfaueninsel_bei_berlin/",
+        "https://www.ostdeutsches-baumarchiv.de/photosearch/traubeneiche-1-pfaueninsel-berlin",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Steglitz-Zehlendorf"
+      ],
+      "access": "Free to walk once on the island. The island itself is car-free and reached only by a short chain ferry from the Nikolskoer Weg landing (adult single ticket 6 euros as of April 2026, family ticket 12 euros); the castle interior (separate, recently reopened after 2021-2025 restoration) is a different ticket and not needed to see this tree.",
+      "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then roughly a 10-15 minute walk into the island to the Schlosswiese meadow area",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Pfaueninsel's oaks were already old when the island became a royal garden. In 1793, Friedrich Wilhelm II ordered the landscaping of this Havel island, and his court gardener kept the oak stand standing rather than clear it, because the trees were already a century old by then. This one, on the meadow near the Schloss, may be one of those originals: at 565 to 567 centimetres around, it was until recently the largest and most striking oak on the island, its short trunk splitting low into one main stem and five curving limbs.\n\nNobody has measured its age directly, so a range is the honest answer here: somewhere between 200 and 400 years, bracketed from the island's own history rather than a bore sample. What is on record is a more recent event. Surveyors who examined the tree later criticized a crown reduction carried out on it, describing the pruning as unnecessary and unprofessional work on a specimen that deserved better handling.\n\nThe island itself has stayed almost untouched since. Pfaueninsel is reachable only by a short chain ferry, has no cars, and keeps the eighteenth century pleasure-garden layout Friedrich Wilhelm II laid out around trees like this one. Peacocks still roam it, the reason for the name. Walk the meadow near the Schloss and this is the oak the Prussian court gardener chose to save.",
+      "best_time": {
+        "months": [
+          1
+        ],
+        "kind": "bare silhouette",
+        "label": "January, when the leaves are gone and the five-limbed crown structure shows plainly"
+      },
+      "notes": "Two independent tree registries (baumkunde.de Reg-Nr. 2135, Ostdeutsches Baumarchiv) record the same specimen, GPS ~10m apart, girth agreeing at 565-567cm (measured 2019). No source gives a direct age; the range is bracketed from Pfaueninsel's own history (Friedrich Wilhelm II's 1793 landscaping deliberately kept oaks that were already a century old). Likely one of Berlin's four registered Naturdenkmal oaks on the island (probably ND 6-102/B by distance from the Schloss, unconfirmed) but not matched to a specific ID number.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ber_012",
+      "name": "The Tuereiche (Door Oak) of Pfaueninsel",
+      "species": "Sessile Oak (Quercus petraea) per monumentaltrees.com; Pedunculate Oak (Quercus robur) per baumkunde.de, an unresolved species conflict",
+      "age_estimate": "roughly 250 years, undocumented",
+      "age_min": 200,
+      "age_max": 300,
+      "location": {
+        "address": "Pfaueninsel, near the Schloss, 14109 Berlin",
+        "latitude": 52.430565,
+        "longitude": 13.122087,
+        "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+      },
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/6402-tuereiche_auf_der_pfaueninsel/",
+        "https://www.monumentaltrees.com/de/deu/berlin/berlin/7113_pfaueninsel/28796/"
+      ],
+      "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg (same access as ber_011).",
+      "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then a walk into the island near the Schloss.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Somebody built a working door into this oak's trunk, and it is still there. The Tuereiche, the Door Oak, stands near the Schloss on Pfaueninsel, its 5.58 metre girth measured just once, in 2017, by a tree registry that has not been back since.\n\nTwo sources agree on its size and disagree on its species. One calls it a pedunculate oak, the other a sessile oak, working from what looks like the same underlying survey rather than two independent looks at the tree. Berlin's own list of protected trees on the island names four sessile oaks and no pedunculate ones, which tips the balance without settling it outright.\n\nIts age, about 250 years by the registry's estimate, is a guess made honestly: nobody has cored it, and the door itself, whatever its original purpose, carries no date of its own. What is certain is the island around it. Pfaueninsel became a royal retreat in 1793, and Friedrich Wilhelm II's gardeners built the new landscape around oaks that already stood there, this one very possibly among them.\n\nReach it by the same short ferry that serves the rest of the island's oaks, then walk toward the Schloss. Look for the door before you look for the tree. Most visitors do it the other way round and miss it entirely.",
+      "notes": "Two sources (baumkunde.de, monumentaltrees.com) give identical girth (5.58m) and height (8.5m) figures, which suggests one underlying survey rather than fully independent measurements; delivered flagged rather than confidently confirmed. Species is genuinely disputed between the two sources (see species field); Berlin's official register lists only sessile oaks among Pfaueninsel's four designated NDs, which weakly favours that reading without settling it. Last dated confirmation of life is from 2019.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ber_013",
+      "name": "The Pond Oak of Pfaueninsel",
+      "species": "Sessile Oak (Quercus petraea), per Berlin's official Naturdenkmal register",
+      "age_estimate": "undocumented; likely 100-300 years, inferred from the island's wider oak stand",
+      "age_min": 100,
+      "age_max": 300,
+      "location": {
+        "address": "Pfaueninsel, north of the Wasservogelteich (waterfowl pond), 14109 Berlin",
+        "latitude": 52.4338,
+        "longitude": 13.1342,
+        "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Steglitz-Zehlendorf",
+        "https://commons.wikimedia.org/wiki/File:Pfaueninsel_Oak.jpg"
+      ],
+      "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg (same access as ber_011).",
+      "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then a longer walk to the northern part of the island near the Wasservogelteich.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The most precise thing known about this oak comes from a stranger's holiday photo. In May 2024 a visitor uploaded a picture of a wide-crowned oak north of the Wasservogelteich, Pfaueninsel's waterfowl pond, and the phone's own GPS placed the tree more accurately than any register description on file.\n\nBerlin's protected-tree list already knew it existed: one of four sessile oaks on the island carrying legal Naturdenkmal status, described only by compass bearing and a rough distance from a landmark. No age is recorded anywhere, and none should be invented, though the island's oak stand generally predates the royal garden built around it from 1793.\n\nWhat the photo confirms is that the tree is alive, healthy and exactly where the register said it should be: a wide, well-formed crown branching low over the path. It sits far enough from Pfaueninsel's other two documented oaks, roughly a kilometre, that it will not fit into the same five-minute stop, but the whole island is under a kilometre long, an easy single walk that takes in all three.\n\nSame ferry, same island, further into it: past the Schloss and toward the pond, where deciduous woodland shelters some of Pfaueninsel's least visited but longest-standing residents.",
+      "notes": "Pinned via a geotagged Wikimedia Commons photo (File:Pfaueninsel_Oak.jpg, CC BY 4.0, S. Makhin, taken 2024-05-19), whose EXIF coordinates agree with Berlin's official Naturdenkmal register description (ND 6-103/B, 'north of the Wasservogelteich') to within about 10m. No age recorded by either source.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
