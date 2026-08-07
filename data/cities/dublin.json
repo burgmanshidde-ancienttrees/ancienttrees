@@ -2,10 +2,10 @@
   "city": "Dublin",
   "country": "Ireland",
   "status": "needs_curation",
-  "intro": "Dublin's remarkable trees rarely come from grand planned woodland the way London's or Madrid's do. They arrive by accident and by institution instead: a bench a plane tree slowly ate, a sequoia a visiting queen planted as a courtesy, two Georgian college squares, a windbreak oak that grew several trunks instead of one, and a scattering of Guinness family estates now open to everyone. Nine of these ten cost nothing to visit, though one keeps its gate locked for all but ten weeks a year.",
-  "meta_description": "Dublin's ancient trees range from a plane eating a park bench to a queen's own sequoia. Ten verified locations, real stories, how to reach each one.",
+  "intro": "Dublin's remarkable trees rarely come from grand planned woodland the way London's or Madrid's do. They arrive by accident and by institution instead: a bench a plane tree slowly ate, a sequoia a visiting queen planted as a courtesy, two Georgian college squares, a windbreak oak that grew several trunks instead of one, and a scattering of Guinness family estates now open to everyone. Ten of these eleven cost nothing to visit, though one keeps its gate locked for all but ten weeks a year.",
+  "meta_description": "Dublin's ancient trees range from a plane eating a park bench to a queen's own sequoia. Eleven verified locations, real stories, how to reach each one.",
   "question_answer": "Dublin's oldest tree is very likely Dean's Tree, a yew in the private garden of the Old Glebe in Newcastle, on the city's western edge, estimated at between 500 and 700 years old depending on which measure you trust. It only opens to the public for a few weeks each year, in May, June and mid-August, under Ireland's Section 482 scheme for historic properties.",
-  "question_meta": "A 500-700 year old yew in a private garden, linked by legend to Jonathan Swift, is Dublin's oldest tree. When it opens to visitors, and the full ten.",
+  "question_meta": "A 500-700 year old yew in a private garden, linked by legend to Jonathan Swift, is Dublin's oldest tree. When it opens to visitors, and the full eleven.",
   "question_context": "Ring counts are not possible without felling the tree, so estimates for the Old Glebe yew swing widely: a girth-based rule of thumb puts it past 500 years, while local tradition claims over 700. Either number makes it older than the house whose garden it now shares, built in 1710, and older than most of the city's other ancient trees. Jonathan Swift, Dean of St Patrick's Cathedral, is said to have sat beneath it while composing verse, though that pairing of an ancient tree and a famous writer is exactly the kind of story that attaches itself whether or not it happened, so treat it as folklore. The nearest challenger for oldest is a good deal younger: a pair of yews in the National Botanic Gardens, possibly planted in the 1730s to commemorate the essayist Joseph Addison, a claim the garden's own historians can't fully reconcile with its 1795 founding date. Getting there requires checking the calendar first. It is a private property that opens free to the public under Ireland's Section 482 tax relief scheme, specifically in May, all of June, and nine days in mid-August, 10am to 2pm. Turn up outside those windows and the gate stays shut.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Dublin's ancient trees free to visit?",
-      "a": "Eight of the ten are free at any time. Áras an Uachtaráin's sequoia requires a free guided tour booked on the day, and the Old Glebe's yew only opens for a few weeks a year."
+      "a": "Nine of the eleven are free at any time. Áras an Uachtaráin's sequoia requires a free guided tour booked on the day, and the Old Glebe's yew only opens for a few weeks a year."
     },
     {
       "q": "Why is there a tree eating a bench in Dublin?",
@@ -188,7 +188,7 @@
         "longitude": -6.255075,
         "neighbourhood": "Trinity College, Dublin 2"
       },
-      "story": "Two plane trees in New Square have outgrown almost everything else on Trinity's campus, and both went in around 1834, when the college was rebuilding this quadrangle. The larger of the pair has a girth over five metres, the widest trunk of any tree on college grounds by Trinity's own count. Students eating lunch on the grass beneath them are sitting under trees planted when Daniel O'Connell was a sitting MP at Westminster, decades before the Easter Rising and a full century before the Irish Free State existed. Trinity's own tree survey lists this pair among the oldest specimens left on the main campus, most of the older generation having since died or been felled, including a celebrated pair of Oregon maples in Library Square that came down between 2008 and shortly after, one suddenly and one to fungal disease. New Square sits behind the Museum Building, a short walk from the queue for the Book of Kells, and unlike that queue, it costs nothing and never has one.",
+      "story": "Two plane trees in New Square have outgrown almost everything else on Trinity's campus, and both went in around 1834, when the college was rebuilding this quadrangle. The larger of the pair has a girth over five metres, the widest trunk of any tree on college grounds by Trinity's own count. Students eating lunch on the grass beneath them are sitting under trees planted when Daniel O'Connell was a sitting MP at Westminster, decades before the Easter Rising and a full century before the Irish Free State existed. Trinity's own tree survey lists this pair among the oldest specimens left on the main campus, most of the older generation having since died or been felled, including a celebrated pair of Oregon maples in Library Square that came down in 2018, one collapsing overnight in June and the other felled weeks later once the same fungal decay was found in it. New Square sits behind the Museum Building, a short walk from the queue for the Book of Kells, and unlike that queue, it costs nothing and never has one.",
       "verified_sources": [
         "https://www.tcd.ie/estatesandfacilities/services/facilities-and-services/campus-services/landscape-maintenance/trees-of-trinity/",
         "https://trinitycollegetrees.wordpress.com/tag/trees-of-trinity-college-dublin-4th-edition/"
@@ -324,6 +324,36 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate"
+    },
+    {
+      "id": "dub_011",
+      "name": "The Last Elm of College Park",
+      "species": "Wych Elm (Ulmus glabra)",
+      "age_estimate": "unconfirmed, likely over 80 years",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "College Park, Trinity College Dublin, Dublin 2",
+        "latitude": 53.3429,
+        "longitude": -6.2543,
+        "neighbourhood": "Trinity College, Dublin 2"
+      },
+      "story": "Trinity College once had around sixty elms scattered across its grounds, and Dutch elm disease is the obvious explanation for why almost none of them are left. Trinity's own botanists checked and found no trace of the fungus in college specimens, and now suspect something duller: soil conditions doing slowly what the disease usually does fast. Whatever the cause, this wych elm in College Park is the survivor, the last of a population that once shaded most of the campus and that mostly vanished across Ireland and Britain from the 1970s onward. Nobody at Trinity has put a number on its age. It was already established enough by the 1970s to be counted among the trees dying around it, which sets a floor under its age rather than a figure: call it at least eighty years, probably more. College Park is Trinity's cricket ground rather than a garden, so the elm shares its patch of grass with match days and net practice, a five minute walk from the queue for the Book of Kells and entirely ignored by it. It is easy to miss for the same reason it survived: nobody was watching this one closely enough to notice it was different, until one day it was the only elm left standing.",
+      "verified_sources": [
+        "https://www.tcd.ie/news_events/articles/the-team-behind-trinitys-trees/",
+        "https://universitytimes.ie/2018/05/getting-to-the-root-of-trinitys-trees/"
+      ],
+      "access": "Free, campus grounds generally open to visitors during daylight hours; College Park is Trinity's cricket/sports ground, walkable around the perimeter",
+      "transport": "Luas Green Line to Trinity, or Pearse Street DART station, both a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "No planting date or documented age in either source; the tree was already established enough by the 1970s to be counted among the elms lost in that die-off, which sets a floor (80 years) rather than a real figure. Roughly 250-350m from dub_005 (Provost's Plane) and dub_006 (New Square Champion Planes), inside Trinity's existing seed cluster."
     }
   ]
 }
