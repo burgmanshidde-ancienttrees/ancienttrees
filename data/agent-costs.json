@@ -360,6 +360,15 @@
         "note": "6 hand-written park intros in session, no research: grounded entirely in facts already verified in the trees own stories. Took /parks from 3 pages to 9.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Edinburgh",
+        "kind": "verify",
+        "tokens": 45000,
+        "trees": 0,
+        "note": "Pins-only pass, trees=0 (no new trees). 0 of 8 approximate pins upgraded: RBGE Garden Explorer lists 4 Edinburgh sweet chestnut accessions, none matching the story's Pond Lawn specimen; a single iNaturalist Cedrus libani ID near edi_004 was CV-only with no research-grade consensus, too thin given this exact tree already had one past misidentification; Craigmillar's Canmore record blocked by trove.scot 403. Recorded in CURATION.md so a future pass does not repeat these three dead ends.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
