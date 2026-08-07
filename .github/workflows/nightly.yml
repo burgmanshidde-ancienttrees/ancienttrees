@@ -83,27 +83,39 @@ jobs:
             Reader submissions outrank everything. Something published being wrong
             outranks everything below it. Otherwise the job is depth, as follows.
 
-            The tourist-city rollout is the current phase, ruled by Hidde late
-            on 2026-08-06 and re-ordered ease-first the same night (see Step 0
-            rung 4 in CLAUDE.md for the full ruling). The working order:
-            (1) Barcelona and Rome (nearly done; Rome has 4 verified trees in
-            data/research/rome-verified.json waiting for stories and merge),
-            (2) Paris and Berlin (cheap depth: 185 register trees and 460
-            Wikidata images respectively), (3) Vienna and Edinburgh (pulled
-            forward; Edinburgh compounds UK-first), (4) Amsterdam and New
-            York, where NYC is the US demand probe: deepen it and watch Search
-            Console. Chicago, Washington DC and Boston build ONLY if NYC shows
-            a search signal; until then do not open them, (5) Dublin. London is FIRST in Hidde's order but GATED
-            HARDER than before: the ATI licence was read in full on 2026-08-06
-            and forbids our use outright (non-commercial only, and public
-            mapping services need written permission; full verdict in
-            OPEN_DATA_SURVEY.md). Never download or use ATI data. London waits
-            for the Woodland Trust's written permission, which Hidde requests
-            himself; do not research London by web sweep either. Small-city work stops: no new Padua-or-Genoa-
-            class cities, no deepening of them; existing small pages stay live
-            untouched. Lisbon stays a phase-2 priority. The deep-enough bar is
-            unchanged: a complete walk, photos on most of it, honest pins,
-            season data.
+            The tourist-city rollout is the current phase (CLAUDE.md Step 0
+            rung 4). Hidde re-ordered the shelf and the work on 2026-08-08 on
+            one rule: most trees, most walks, most tourist. So the job for the
+            coming runs, in this order, and photos come LATER by his explicit
+            instruction:
+
+            1. EVERY PHASE-1 CITY NEEDS A WALK. That is the product. Dublin and
+               London have none at all: their trees are too scattered to
+               connect. Dublin is fixable now and is the pattern Edinburgh just
+               proved, find one central cluster of 4 to 6 (Trinity College
+               already has two trees 260 m apart as the seed). LONDON IS GATED,
+               never research it and never touch Woodland Trust ATI data.
+            2. THEN GROW THE THIN WALKS. A lead walk of 3 or 4 trees is not an
+               afternoon. Berlin leads with 3, Rome and New York with 4. Aim
+               for 6 to 8 within roughly 2 km by adding trees that JOIN the
+               existing cluster, never scattered singles elsewhere in the city.
+            3. THEN SEASON DATA, which is cheap and badly behind: Rome has
+               best_time on 3 of 20, Dublin 0 of 10, Paris 3 of 13. Add
+               data/phenology/<species>.json where a species file is missing,
+               and set best_time only where the peak is real, per CLAUDE.md
+               Step 3. An empty month beats an invented one.
+            4. PHOTOS ARE PARKED for now (Hidde, 2026-08-08: "work on photos
+               later"). Keep running scripts/photo_hunt.py, which is free and
+               fills the queue, but do NOT spend a window judging: this
+               runner's egress proxy blocks upload.wikimedia.org, and judging
+               happens in Hidde's own sessions.
+
+            Order of cities within all that: Barcelona, Rome, Paris, Berlin,
+            Amsterdam, New York from phase 1, then Lisbon, Vienna, Edinburgh,
+            Dublin. Small-city work stops: no new Padua-or-Genoa-class cities
+            and no deepening of them; existing small pages stay live untouched.
+            Chicago, Washington DC and Boston stay closed until New York shows
+            a Search Console signal.
 
             Before dispatching or starting any pass on a place, claim it:
             python3 scripts/passcheck.py --claim <place> --kind verify, commit
