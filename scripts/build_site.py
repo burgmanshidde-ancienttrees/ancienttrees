@@ -1695,23 +1695,40 @@ if (map.isStyleLoaded()) {{ addWalkLayer(); }} else {{ map.on('styledata', addWa
 // from the document: every tree stays in the HTML for a reader and a crawler,
 // only the emphasis moves.
 var WALKS = {walks_json};
+var wantCoords = [];
 function drawWalk(coords) {{
   // Guarded because map.getSource throws outright while the style is still
-  // loading, and the first selectWalk runs the moment the page does.
-  if (!map.isStyleLoaded()) {{
-    map.once('styledata', function() {{ drawWalk(coords); }});
-    return;
-  }}
-  var src = map.getSource('walk');
+  // loading, and the first draw runs the moment the page does.
+  //
+  // The deferred branch redraws wantCoords rather than the coords captured
+  // when it was queued. Without that, the on-load hint line wins a race it
+  // should lose: it waits for styledata, the visitor picks a different walk
+  // in the meantime, and the late callback paints the first walk's line back
+  // over the chosen one. The dimming and the labels updated, the line did not.
+  wantCoords = coords;
+  // Updating an existing source is always safe, so try that FIRST and only
+  // fall back to waiting on the style. The previous order gated everything
+  // behind map.isStyleLoaded(), which stays false whenever the tile style has
+  // not finished (offline, slow connection, a blocked tile host), so switching
+  // walks silently failed to move the line while the dimming and the labels
+  // updated normally. getSource itself throws before the style exists, hence
+  // the try.
+  var src = null;
+  try {{ src = map.getSource('walk'); }} catch (e) {{ src = null; }}
   if (src) {{
     src.setData({{ type: 'Feature', geometry: {{ type: 'LineString', coordinates: coords }} }});
-  }} else {{
-    addWalkLayer();
+    return;
   }}
+  if (!map.isStyleLoaded()) {{
+    map.once('styledata', function() {{ drawWalk(wantCoords); }});
+    return;
+  }}
+  addWalkLayer();
 }}
 function selectWalk(idx) {{
   var w = WALKS[idx];
   if (!w) {{ return; }}
+  activeWalk = idx;
   routeCoords = w.coords;
   drawWalk(w.coords);
   var go = document.getElementById('route-go');
@@ -1738,12 +1755,32 @@ function selectWalk(idx) {{
     map.fitBounds(bb, {{ padding: 70, maxZoom: 15 }});
   }}
 }}
+// The city first, a walk only when asked. Hidde, 2026-08-08: "when opening a
+// city it focusses on 1 walk instead of the entire city". Selecting a walk on
+// load dimmed most of the map and zoomed into one corner before the visitor
+// had chosen anything, which hid the city they came to see. Now the page opens
+// on every tree, and picking a walk is a deliberate act the visitor can undo.
+var activeWalk = -1;
+function showWholeCity() {{
+  activeWalk = -1;
+  pins.forEach(function(el) {{ el.classList.remove('pin-off'); }});
+  document.querySelectorAll('.tree-card').forEach(function(card) {{
+    card.classList.remove('card-off');
+  }});
+  document.querySelectorAll('.walk-pick').forEach(function(b) {{
+    b.classList.remove('is-on');
+    b.setAttribute('aria-pressed', 'false');
+  }});
+  if (markers.length > 1) {{ map.fitBounds(bounds, {{ padding: 70, maxZoom: 13 }}); }}
+}}
 document.querySelectorAll('.walk-pick').forEach(function(btn) {{
   btn.addEventListener('click', function() {{
-    selectWalk(parseInt(btn.getAttribute('data-walk'), 10));
+    var idx = parseInt(btn.getAttribute('data-walk'), 10);
+    if (idx === activeWalk) {{ showWholeCity(); }} else {{ selectWalk(idx); }}
   }});
 }});
-if (WALKS.length > 1) {{ selectWalk(0); }}
+// Draw the lead walk's line as a hint, without dimming or zooming to it.
+if (WALKS.length && WALKS[0].coords.length > 1) {{ drawWalk(WALKS[0].coords); }}
 
 // The passport. Which trees you have stood in front of, kept in LocalStorage on
 // your own phone. No account, no server, nothing leaves the device: that is not
@@ -3437,8 +3474,10 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
             # Every walk is a real button in the served HTML, so the choice is
             # visible without JavaScript and to a crawler.
             btns = "".join(
-                f'<button type="button" class="walk-pick{" is-on" if i == 0 else ""}" '
-                f'data-walk="{i}" aria-pressed="{"true" if i == 0 else "false"}">'
+                # No chip starts active: the page opens on the whole city, so a
+                # highlighted chip would promise a focus that is not applied.
+                f'<button type="button" class="walk-pick" '
+                f'data-walk="{i}" aria-pressed="false">'
                 f'<span class="walk-pick-name">{esc(w["name"] or f"Walk {i + 1}")}</span>'
                 f'<span class="walk-pick-meta">{w["count"]} trees &middot; {w["km"]} km</span>'
                 f'</button>' for i, w in enumerate(walks))
