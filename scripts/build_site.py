@@ -3945,7 +3945,8 @@ def build_park_page(intro, entry, trees, tree_slugs, published, pages):
   <p class="suggest">More parks worth the walk: <a href="../parks">every park we map</a>. Or explore by city: {other_links}</p>
 </main>
 """
-    graph = site_graph() + [{"@type": "ItemList", "name": f"Ancient trees in {name}",
+    graph = site_graph() + [breadcrumb_schema(crumb_items, canonical),
+                             {"@type": "ItemList", "name": f"Ancient trees in {name}",
                              "itemListElement": list_elements}]
     page = render_page(title, description, canonical, body, ld_script(graph),
                        "", rootpath="../")
