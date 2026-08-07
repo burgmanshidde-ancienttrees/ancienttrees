@@ -121,9 +121,14 @@ jobs:
               were chosen wrong, not the route.
             - NO photo hunting inside research passes at all (assembly line
               rule 5, 2026-08-06, superseding the old 3-per-city cap): the API
-              sweep scripts/photo_hunt.py fills data/photo-queue.json for free,
-              and a separate viewing pass judges 20 to 30 queued images in one
-              context. A missing photo is an honest gap and always has been.
+              sweep scripts/photo_hunt.py fills data/photo-queue.json for free.
+              And do NOT judge the photo queue either: this runner's egress
+              proxy blocks upload.wikimedia.org and api.openverse.org outright,
+              so 313 of 337 candidates were unreachable on 2026-08-07 and a
+              whole window went on discovering that. Judging happens in Hidde's
+              own sessions, which can reach those hosts. Running the sweep is
+              still fine and still free; only the viewing is blocked here.
+              A missing photo is an honest gap and always has been.
             - Everything found and not shipped goes to data/leads/[city].json in
               the two kinds, leads and blocked, per CLAUDE.md. Nothing gets
               thrown away, ever. Run python3 scripts/tree_index.py afterwards so
