@@ -1,0 +1,52 @@
+{
+  "city": "Paris",
+  "leads": [
+    {
+      "name": "Noisetier de Byzance (Turkish Hazel), Square Jean XXIII",
+      "species": "Turkish Hazel (Corylus colurna)",
+      "register_girth_cm": 230,
+      "place": "Square Jean-XXIII, 2 Quai de l'Archeveche, 75004 Paris",
+      "latitude": 48.85278,
+      "longitude": 2.35102,
+      "reason": "Verified (species, existence, register girth/height, a France3 piece calling it the oldest hazel tree in Paris) but not currently shippable: Square Jean-XXIII has been closed to the public since September 2023 for the Notre-Dame surroundings redevelopment, expected to reopen around June 2027 (some reporting says works run to 2028). Publishing this as a walkable entry now would send a visitor to a barricaded construction site, the exact mistake hard rule 2's honesty spirit exists to prevent. Full verify_notes preserved in the pass output; re-activate once the square reopens and re-confirm the tree survived the works (a companion article reports it 'presumably not threatened', unlike the square's tamarisk, blocked below as removed)."
+    },
+    {
+      "name": "Orme pleureur (Weeping Wych Elm), Square Jean XXIII",
+      "species": "Weeping Wych Elm (Ulmus glabra 'Pendula')",
+      "register_girth_cm": 180,
+      "place": "Square Jean-XXIII, 2 Quai de l'Archeveche, 75004 Paris",
+      "latitude": 48.8521,
+      "longitude": 2.3508,
+      "reason": "Same closure as the Turkish Hazel lead above: Square Jean-XXIII shut for construction until roughly mid-2027. Also unresolved: paris.fr's own page says two weeping elms survived Dutch elm disease here, but the register carries only one entry for this species at this spot; a future pass should check for a second specimen once the square reopens."
+    },
+    {
+      "name": "Murier blanc, Square de la Tour Saint-Jacques",
+      "species": "White Mulberry (Morus alba)",
+      "register_girth_cm": 80,
+      "place": "Square de la Tour Saint-Jacques, 1 Bis Rue Saint Martin, 75004 Paris",
+      "latitude": 48.85787,
+      "longitude": 2.34812,
+      "reason": "Identity unresolved. The register lists an 80cm-girth white mulberry here. Search turned up a specifically-named white mulberry in this same square, 'Laissons-les grandir ici' ('Let them grow up here'), planted in April 2008 by the city in the presence of deputy mayor Anne Hidalgo to support the association Reseau education sans frontieres (undocumented children's schooling rights) -- a genuinely good story hook if it is the same tree, since an 18-year-old mulberry could plausibly carry an 80cm girth. But I could not confirm the register entry and the named 2008 planting are the same physical tree (the register carries no name matching 'Laissons-les grandir ici', and a paper mulberry is also reported present in the same square, so there may be two or more mulberries here). Do not publish as verified until a future pass confirms identity, e.g. via the city's per-tree PDF fact sheet (capgeo.sig.paris.fr/PdfEtImages/ArbresRemarquables/PDF/<register_id>.pdf, binary PDF, needs a tool that can read it) or an on-the-ground photo."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Tamaris de France, Square Jean XXIII",
+      "species": "Tamarix sp.",
+      "register_girth_cm": 230,
+      "place": "Square Jean XXIII, 75004 Paris",
+      "latitude": 48.85235,
+      "longitude": 2.35181,
+      "reason": "Reported removed. La Tribune de l'Art ('Abords de Notre-Dame. Les infox de la mairie de Paris (2): l'arbre remarquable coupe', published ~May 2023, https://www.latribunedelart.com/abords-de-notre-dame-les-infox-de-la-mairie-de-paris-2-l-arbre-remarquable-coupe) specifically reports this tamarisk, one of Paris's 191 officially designated remarkable trees, was cut down / omitted from the Notre-Dame surroundings redevelopment plans, noting it appeared in 2014 aerial imagery but 'le tamaris n'y est plus' (the tamarisk is no longer there) by the time of the article. The same article says the square's hazel and weeping elm were 'presumably not threatened', i.e. this removal is specific to the tamarisk, not the whole square. Never ship as a living entry; a future pass could re-check whether it was replanted once the square reopens (~2027), but treat it as dead/gone until then."
+    },
+    {
+      "name": "Orme champetre, Place Saint-Gervais (register candidate)",
+      "species": "Field Elm (Ulmus minor)",
+      "register_girth_cm": 200,
+      "place": "Place Saint-Gervais, 75004 Paris",
+      "latitude": 48.85576,
+      "longitude": 2.35399,
+      "reason": "Very likely the SAME tree as already-published par_007 ('The Elm of Saint-Gervais', Ulmus minor, planted 1935, at 48.85536,2.3527). Same species, same tiny square (Place Saint-Gervais is a small plaza in front of one church), coordinates only ~100m apart, which is within the kind of register-coordinate imprecision the register's own caveat warns about. Blocking rather than delivering as new to avoid a duplicate entry for what a visitor would experience as one tree. If a future pass finds solid evidence this is a genuinely distinct second elm in the same small square (e.g. a park map showing two separate specimens), it can be un-blocked and re-verified."
+    }
+  ]
+}
