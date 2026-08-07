@@ -49,9 +49,14 @@
       ],
       "access": "Free, exterior lawn below the palace walls, outside the paid museum entrance",
       "transport": "In the historic centre, on foot",
-      "photo": {"url": null, "license": null, "attribution": null, "status": "found_needs_check"},
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Q98443994.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Vanbasten 23, via Wikimedia Commons",
+        "status": "approved"
+      },
       "curation_status": "ai_generated",
-      "notes": "Twin registration, about 20m apart; pin marks the larger tree (4.5m girth, 29m tall) over the smaller (22m tall). Age is the 2011 assessment (150y) carried forward. A CC BY-SA 3.0 photo pair exists on Wikimedia Commons (File:Q98443993.jpg, File:Q98443994.jpg, Vanbasten 23, 2021) but the pixels were not viewed this session (no image-rendering tooling available), so status stays found_needs_check per the Cadiz rule rather than approved on a filename.",
+      "notes": "Twin registration, about 20m apart; pin marks the larger tree (4.5m girth, 29m tall) over the smaller (22m tall). Age is the 2011 assessment (150y) carried forward. A CC BY-SA 3.0 photo pair exists on Wikimedia Commons (File:Q98443993.jpg, File:Q98443994.jpg, Vanbasten 23, 2021); File:Q98443994.jpg was viewed on 2026-08-07 and approved, an autumn frame with the castle behind and crown and trunk both readable.",
       "location_precision": "confirmed"
     },
     {
