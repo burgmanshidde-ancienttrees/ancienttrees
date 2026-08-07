@@ -128,6 +128,24 @@ Site rebuilt (1,270 pages), `qa.py` clean, `tree_index.py` re-run. Claimed and r
 
 FOR HIDDE: nothing blocks. Berlin's cluster is 3 trees, one short of this phase's 4-tree walk floor; the honest gap (ND 6-101/B and five more Charlottenburg/Lietzensee leads) is recorded in `data/leads/berlin.json` for a future pass, not a decision needed from you.
 
+## 2026-08-08 (session, with Hidde) — Walks become real routes, parks become a page, and photos hit their ceiling
+
+**The walk is now the product it claimed to be.** Three changes on Hidde's own feedback, in order. Long routes split in half sharing the tree where they meet, so 18 cities with a single walk over 2.5 km became 87 walks across 60 cities with only one still that long (Prague was 6.0 km and 79 minutes, now two walks). Every walk in a city draws at once in grey and each is clickable, the Google Maps alternatives pattern, after he pointed out that Barcelona had four walks and the map showed one line. And a city page opens on the whole city rather than zooming into one corner, which was a bug I introduced by selecting a walk on load.
+
+**And the lines follow streets.** His words: "very unrealistic, straight lines from tree to tree." 84 of 87 walks now carry real pedestrian geometry from FOSSGIS's Valhalla, fetched once by scripts/route_walks.py and cached in data/walk-routes.json so no visitor's browser ever calls a routing service. Three routes rejected automatically for exceeding 2.5x the straight line, which is a path missing from OSM inside a park. The distances stopped being estimates: Padua's botanical walk was "1.1 km" and is really 1.85, Porto's was "1.6" and is 3.06, Cadiz moved 0.9 to 0.86 because it was always genuinely compact.
+
+**Parks shipped as a browse facet** (Contract H, blueprint v1.7): nine parks with 5+ trees and a hand-written intro each, in the Explore menu. 47 percent of all our trees already stand in a named park, which nobody had noticed, and a park is the cheapest solution to the clustering problem: Edinburgh's first walk came from its Botanics.
+
+**Edinburgh went from no walk to a 5-tree, 1.7 km one** inside the Royal Botanic Garden, and the pass blocked two dead trees on the way (a Sabal palm felled 2021, a cedar taken by Storm Eowyn 2025).
+
+**Photos hit their ceiling and the ceiling is supply, not effort.** Three more lanes tested to destruction: Commons category traversal matched Edinburgh's Cammo Ash to a different ash in the same garden; per-tree Commons categories exist for 1 of 14 trees and that one was a tram stop; Flickr turned out to require a paid Pro plan for an API key at all. Recorded in OPEN_DATA_SURVEY.md so nobody reopens them. The answer instead: 432 photo-less pages stopped having a hole in them and now carry the species silhouette plus one line asking the reader who walks past to send theirs. Hidde on the bar: "better nothing than a random picture of a tree to fill it up."
+
+**Two copy failures became build checks.** Public pages were explaining our own publishing rules to visitors ("a park earns a page once we have mapped five", "another 23 hold three or four, not yet enough"). qa.py now fails the deploy on those phrasings. Sixth entry on the ratchet.
+
+Nine night runs instead of six from tonight, every 90 minutes, aimed at Dublin's walk first, then growing Berlin's 3-tree and Rome's 4-tree walks.
+
+FOR HIDDE: nothing blocks. Two emails are out (Catalonia, Woodland Trust) and both are slow by nature; Barcelona's photos and London's whole rollout wait on them, nothing else does.
+
 ## 2026-08-06 (session, with Hidde, night) — The go-to-market course: tourist cities, ease-first, London behind a permission gate
 
 The full arc of the evening, so tomorrow's reader has it in one place. Hidde set the tourist-city rollout (ten phase-1 cities, UK first country, Europe first continent), then re-ordered it ease-first when the numbers showed the three from-zero US builds cost roughly 4x a pulled-forward European city. **The recorded working order: Barcelona/Rome, Paris/Berlin, Vienna/Edinburgh, Amsterdam/NYC, Dublin, with Chicago/DC/Boston gated on NYC showing a search signal, and London jumping everything the day the Woodland Trust answers.** Small-city work stopped outright; Porto stays the background walk showcase.
