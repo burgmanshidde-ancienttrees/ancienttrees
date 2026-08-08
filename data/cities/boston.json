@@ -2,9 +2,9 @@
   "city": "Boston",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Boston lost its two most famous trees long ago: the Liberty Tree to a Loyalist axe in 1775 and the Great Elm of the Common to a storm in 1876. What survived is quieter and stranger. Two English elms have flanked the Shaw Memorial since the decades around 1800, and across town the Arnold Arboretum keeps accession cards on its trees the way a library keeps catalogue entries, including a Franklinia, a species extinct in the wild since the early 1800s. The four below split into a Common and Public Garden pair and an Arboretum pair; all are free.",
+  "intro": "Boston lost its two most famous trees long ago: the Liberty Tree to a Loyalist axe in 1775 and the Great Elm of the Common to a storm in 1876. What survived is quieter and stranger. Two English elms have flanked the Shaw Memorial since around 1800, and the Arnold Arboretum keeps accession cards on its trees like a library catalogue, including a Franklinia, extinct in the wild since the early 1800s. The six below split into a Common and Public Garden pair and an Arboretum quartet that comes with accession cards; all are free.",
   "meta_description": "Boston's remarkable trees, from the elms flanking the Shaw Memorial to a tree extinct in the wild at the Arnold Arboretum. Locations, stories, sources.",
-  "question_meta": "Boston's oldest documented trees are the Shaw Memorial elms on the Common, planted between 1772 and 1812. Their story, and three more remarkable trees.",
+  "question_meta": "Boston's oldest documented trees are the Shaw Memorial elms on the Common, planted between 1772 and 1812. Their story, and five more remarkable trees.",
   "question_answer": "The oldest documented trees in Boston are the two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812. A white oak on Peters Hill in the Arnold Arboretum, core-sampled at more than 200 years, predates the Arboretum itself and may be older still.",
   "question_context": "Boston's relationship with its trees is a long ledger of documented losses, and that is precisely what makes the survivors verifiable. The Liberty Tree, the elm under which the Sons of Liberty gathered, was felled by Loyalists in August 1775 and the city has marked the spot ever since. The Great Elm of the Common, once called the city's oldest inhabitant, blew down in 1876 and was mourned in print. The Public Garden's lagoon willow, the most photographed tree in the city, collapsed as recently as July 2026. Each loss was recorded, which means each survivor stands in an unusually well-documented landscape. The Shaw Memorial elms have flanked their spot through all of it, planted in the decades around 1800 when the Common's tree-lined malls were laid out. Across town the Arnold Arboretum, founded 1872 and run by Harvard, keeps accession cards on its collection the way a library catalogues books, which is how a white oak that predates the Arboretum and a Franklinia extinct in the wild both carry paperwork most ancient trees never get.",
   "faq": [
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Boston's remarkable trees free to visit?",
-      "a": "All four are free. Two stand on Boston Common and in the Public Garden in the city centre; two stand in the Arnold Arboretum, which is open free every day and is reachable by the Orange Line to Forest Hills."
+      "a": "All six are free. Two stand on Boston Common and in the Public Garden in the city centre; four stand in the Arnold Arboretum, which is open free every day and is reachable by the Orange Line to Forest Hills."
     },
     {
       "q": "What is a Franklinia and why does Boston have one?",
@@ -148,6 +148,80 @@
       ],
       "access": "Free, public park, open dawn to dusk",
       "transport": "Arlington MBTA station (Green Line), roughly 2-3 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bos_005",
+      "name": "The Original Dawn Redwood of the Arboretum",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "roughly 77 years, grown from seed collected in Hubei, China in 1948",
+      "age_min": 75,
+      "age_max": 78,
+      "location": {
+        "address": "Arnold Arboretum of Harvard University, near the Hunnewell Visitor Center, opposite the Arborway Gate",
+        "latitude": 42.3068,
+        "longitude": -71.1202,
+        "neighbourhood": "Arborway, Arnold Arboretum, Jamaica Plain"
+      },
+      "story": "This tree grew from the seed shipment that put a fossil back into the ground. In 1948 the Arnold Arboretum took delivery of seed collected in Hubei, China, from a species that had been known to science only from fossils until living trees turned up in the interior a few years earlier. The seed was raised here, and the Arboretum's own account of what came up is worth quoting: the first of its kind to grow in North America in over two million years. The accession number is 524-48. From that lot and its siblings, dawn redwoods went out to gardens across the world, which is how a tree that was a rumour inside living memory became an ordinary sight on ordinary streets.\n\nIt stands near the Hunnewell Visitor Center, opposite the Arborway Gate, so it is the first thing worth walking to once you are through. It is also fifteen years older than the dawn redwood in the Public Garden across town, and its senior in the plainest sense: same species, same 1948 seed, one generation up.\n\nOne honest note on the record. A separately numbered 1948 accession is described elsewhere as the Arboretum's oldest dawn redwood, out along Conifer Path, and we could not establish whether that is this tree under a second label or a sibling raised from the same seed. Both came off the same shipment.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when a conifer this size turns rust orange and drops every needle it has"
+      },
+      "verified_sources": [
+        "https://arboretum.harvard.edu/plant-bios/dawn-redwood/",
+        "https://arboretum.harvard.edu/arnoldia-stories/metasequoia-glyptostroboides/"
+      ],
+      "access": "Free, public arboretum, open dawn to dusk",
+      "transport": "Forest Hills MBTA station (Orange Line), roughly 20 minute walk to the Arborway Gate and Hunnewell Visitor Center, or the 39 bus to the Arborway stop",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bos_006",
+      "name": "The Wilson Paperbark Maple",
+      "species": "Paperbark Maple (Acer griseum)",
+      "age_estimate": "roughly 119 years (collected as a wild seedling in 1907)",
+      "age_min": 118,
+      "age_max": 120,
+      "location": {
+        "address": "Arnold Arboretum of Harvard University, Maple Collection, off Meadow Road",
+        "latitude": 42.301,
+        "longitude": -71.121,
+        "neighbourhood": "Meadow Road, Arnold Arboretum, Jamaica Plain"
+      },
+      "story": "Almost every paperbark maple in America descends from two seedlings one man dug out of a Chinese wood in the autumn of 1907. The plant collector Ernest Henry Wilson found them in forest north of Yichang, in Hubei, lifted them and shipped them to the Arnold Arboretum. Both survived. This is one of the two, accession 12488, and by the Arboretum's record the pair are the first and the oldest paperbark maples on the continent and the genetic source of most of the ones planted in the country since.\n\nThe species has gone the other way at home. Acer griseum is now endangered in the wild in China, its remaining stands small and scattered, which makes a specimen tree in Jamaica Plain a piece of conservation as much as a piece of horticulture.\n\nCome in winter. The bark is what the tree is named for and it is the reason to make the walk: it lifts off the trunk in thin cinnamon and copper curls that stay attached rather than falling, and with the leaves gone and low sun on it the trunk is the whole show.\n\nOne note on the record. All of the above traces back to the Arboretum, including a published feature written out of its own history, so this is one institution's account, thorough and public, but not independently corroborated. No coordinates exist for the individual tree. The pin is the maple collection off Meadow Road, about ten minutes up from the Forest Hills gate.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are off and low winter sun catches the peeling cinnamon bark"
+      },
+      "verified_sources": [
+        "https://arboretum.harvard.edu/plant-bios/paperbark-maple/",
+        "https://artsandculture.google.com/story/the-introduction-of-paperbark-maple-to-the-united-states-the-arnold-arboretum-of-harvard-university/2wWBbqmESAfdIQ"
+      ],
+      "access": "Free, public arboretum, open dawn to dusk",
+      "transport": "Forest Hills MBTA station (Orange Line), roughly 10-12 minute walk via the Forest Hills Gate and Meadow Road",
       "photo": {
         "url": null,
         "license": null,
