@@ -3687,6 +3687,26 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
             w["duration"] = human_duration(w["minutes"])
             w["label"] = (f"Walk {w['count']} of these trees"
                           if w["count"] < len(markers) else f"Walk all {w['count']} trees")
+        # Name a combined option after the walks it actually joins. Hidde,
+        # 2026-08-08: "Both walks is wel verwarrend als er meer dan 2 walks
+        # zijn." He is right, and it was worse than the wording: Paris and
+        # Vienna show three walks beside a chip saying "Both", and a city with
+        # two split clusters would show two identical "Both walks" chips. The
+        # parts are recoverable, since a combined walk's members are exactly
+        # the union of its legs.
+        display = [w.get("name") or f"Walk {i + 1}" for i, w in enumerate(walks)]
+        for w in walks:
+            if not w.get("combined"):
+                continue
+            members = set(w["order"])
+            parts = [i for i, x in enumerate(walks)
+                     if not x.get("combined") and set(x["order"]) <= members]
+            if len(parts) < 2:
+                continue
+            joined = " + ".join(display[i] for i in parts)
+            if len(joined) > WALK_NAME_MAX:
+                joined = "Walks " + " + ".join(str(i + 1) for i in parts)
+            w["name"] = joined
         chooser = ""
         if len(walks) > 1:
             # Every walk is a real button in the served HTML, so the choice is
