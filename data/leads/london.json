@@ -1,28 +1,16 @@
 {
   "leads": [
     {
-      "name": "The Dorchester Plane",
-      "species": "London Plane (Platanus x acerifolia)",
-      "location": "Outside The Dorchester hotel, Park Lane, Mayfair, approx 51.5049, -0.1526",
-      "reason": "Genuinely verified as a 'Great Tree of London' (London Tree Forum, 1997) with real history (a BBC programme was made about it), publicly visible on the Park Lane pavement so access is fine. Held back only because it belongs to a different, Mayfair/St James's cluster (0.79 km from the Berkeley Square Plane anchor lon_004) rather than the City of London/Cheapside cluster this pass built, and this pass could not chase both anchors in one window. No source found gives a specific planting date; the hotel opened in 1931, so the tree may predate or postdate that. Worth a dedicated Mayfair pass alongside Berkeley Square."
-    },
-    {
-      "name": "The Marylebone Elm",
-      "species": "Huntingdon Elm (Ulmus x hollandica 'Vegeta')",
-      "location": "Garden of Rest, Marylebone High Street, Westminster, approx 51.5210, -0.1520",
-      "reason": "Well documented: a 'Great Tree of London', estimated ~150 years old, the last Huntingdon elm in Westminster to have escaped Dutch elm disease and to have survived the Blitz (its parish church was bombed and demolished, leaving the tree stranded outside a small Garden of Rest). Two independent sources agree on species and the disease-survivor history. Held back on distance: 1.3 km from Berkeley Square but 2.65-2.94 km from the Whitehall/Embankment trees below, so it does not sit inside one 2 km cluster with them. Would pair well with the Dorchester Plane and Green Park in a dedicated Mayfair/Marylebone cluster."
-    },
-    {
-      "name": "The Embankment Plane (Horse Guards Avenue)",
-      "species": "Oriental Plane (Platanus orientalis) or London Plane",
-      "location": "North side of Horse Guards Avenue at Victoria Embankment, Westminster, approx 51.5051, -0.1234",
-      "reason": "A 'Great Tree of London', planted 1870 as part of the first systematically tree-planted embankment scheme in the city, described in that source as one of the tallest London planes in the UK (soften per hard rule 8, this needs a second superlative check before publishing). Only one strong independent source found for the specific 1870 date and species claim; general embankment planting history corroborates the era but not the individual tree. Held back on distance from the Mayfair anchor and because a second source for the individual tree (not just the embankment scheme) was not found in this pass's window."
-    },
-    {
       "name": "The Abbey Plane",
       "species": "London Plane (Platanus x acerifolia)",
-      "location": "Near the entrance to Westminster Abbey, Broad Sanctuary, Westminster, approx 51.4995, -0.1273",
-      "reason": "A 'Great Tree of London' per Wikipedia's list ('accessible 8am-5pm'), and monumentaltrees.com independently records a London Plane close to the Abbey entrance with a measured girth of 3.98m and height 25.4m as of 2013 (verification only, not sole source). No source gives a planting date or clear age estimate, and it is unclear whether the 'Abbey Plane' of the Great Trees list is the same tree as the one monumentaltrees measured, or one of five 1850-planted planes in the Abbey's College Garden. Held back on both identity ambiguity and distance from the chosen cluster."
+      "location": "Broad Sanctuary / Dean's Yard, Westminster Abbey precinct, Westminster; Wikipedia's Great Trees of London gives tree-level coordinates 51.498972, -0.128977 for 'Broad Sanctuary'",
+      "reason": "Verify pass 2 (2026-08-08) narrowed but did not resolve the identity question flagged by pass 1. Wikipedia's Great Trees of London table (sourced to Paul Wood's 'Great Trees of London Map', Blue Crow Media, 2020) names it 'The Abbey Plane', location 'Broad Sanctuary, Westminster Abbey', species London plane, coordinates 51.498972,-0.128977, 'Accessible from 8am to 5pm', no age given. monumentaltrees.com independently describes 'London Plane close to the entrance of Westminster abbey' with girth 3.98m and height 25.4m measured 12 June 2013, verification-only per hard rule but the 'close to the entrance' description sits well with the Broad Sanctuary coordinate. HOWEVER the Wikimedia Commons file for the Wikipedia photo itself ('Abbey_Plane_(6).jpg', taken 2 July 2023, so decent alive-evidence) geolocates the shot to 'Dean's Yard' rather than Broad Sanctuary, an adjacent but distinct part of the Abbey precinct, and Westminster Abbey's own website separately describes 'two large London Plane trees' in the walled College Garden 'planted in the 1850s' with restricted public opening (regularly open to the public since 1966, not full daily street access). So three candidate locations (Broad Sanctuary streetside, Dean's Yard, walled College Garden) remain incompletely distinguished, and NO source anywhere gives a planting date or age estimate for the streetside/Dean's Yard tree specifically (the 1850s date belongs only to the walled College Garden pair, a different, less publicly accessible pair of trees). Never fabricate: do not assign this tree an age without a source. Worth a dedicated visit-based or Historic England/London Gardens Trust follow-up to pin down which physical tree is which and whether the College Garden's restricted hours count as 'genuinely open to visitors' under hard rule 10."
+    },
+    {
+      "name": "The Berkeley Plane (Wikipedia's individually-named specimen)",
+      "species": "London Plane (Platanus x acerifolia)",
+      "location": "Berkeley Square, Mayfair, coordinates 51.509465, -0.145276 per Wikipedia's Great Trees of London table",
+      "reason": "Spotted while researching lon_013-015 (verify pass 2, 2026-08-08), not chased further this pass. Wikipedia's Great Trees of London list carries a separate individually-named entry, 'The Berkeley Plane', added in the 2008 tranche, coordinates 51.509465,-0.145276, roughly 60-70m from the already-published lon_004 (The Berkeley Square Plane, 51.5102/-0.1449). lon_004 deliberately covers the square's 30+ planes as one ensemble entry ('this entry marks the square itself rather than a single trunk'). Before publishing 'The Berkeley Plane' as a distinct lon_0xx entry, a future pass needs to establish whether Wikipedia/Paul Wood's map is naming one specific, individually identifiable specimen within the square (which could stand as its own collectible point per the ensemble rule) or just duplicating the same general square that lon_004 already represents. Do not publish without resolving that distinction, to avoid two near-identical entries for the same place."
     },
     {
       "name": "Inner Temple Garden Black Mulberry",
