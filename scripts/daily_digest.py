@@ -315,8 +315,16 @@ query($tag: String!, $since: Date!, $until: Date!) {
     speed = ""
     if perf and perf[0].get("quantiles"):
         qq = perf[0]["quantiles"]
+        # Cloudflare's RUM returns page load time in MICROseconds. We printed
+        # it as milliseconds for weeks, so the dashboard read "p50 519000ms",
+        # which is eight and a half minutes and would mean the site never
+        # loads. Nobody flinched, which is the point: CLAUDE.md already tells
+        # us to sanity-check every numeric field against the physical world,
+        # and that rule was written for other people's registers rather than
+        # for our own dashboard.
         speed = "\n- Page load (8d): p50 %dms, p90 %dms" % (
-            qq.get("pageLoadTimeP50") or 0, qq.get("pageLoadTimeP90") or 0)
+            (qq.get("pageLoadTimeP50") or 0) / 1000,
+            (qq.get("pageLoadTimeP90") or 0) / 1000)
     return ("Web Analytics (beacon, real browsers, cookieless):\n"
             "- Days (visits/pageviews): %s\n- Top paths: %s\n"
             "- Referrers: %s\n- Countries: %s\n- Devices: %s%s"
