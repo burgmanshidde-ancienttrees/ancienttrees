@@ -571,7 +571,34 @@ department, DL-DE-BY-2.0 per its Grün Berlin listing) can supply planting
 years the way Vienna's did, matching by genus and proximity, before the next
 Berlin pass.
 
-## Ireland: Heritage Trees of Ireland, scouted 2026-08-07, NOT imported (access-filtered, coordinates unconverted)
+## Ireland: Heritage Trees of Ireland, coordinate conversion solved and public subset imported 2026-08-08
+
+The coordinate blocker below is resolved: `scripts/irish_grid.py` is a pure-
+Python inverse transverse Mercator implementation (Irish Grid's own Airy
+1830 modified ellipsoid and origin, no `pyproj` needed), and
+`scripts/import_ireland_heritage_trees.py` downloads the dataset and writes
+the genuinely-public subset straight to `data/registers/ireland-heritage-
+trees.json`. No Helmert datum shift is applied (TM75 to WGS84 is roughly
+50-150m depending on direction and no reprojection library exists here), so
+treat every coordinate as approximate on top of the register's own 100m
+precision; the module was checked against three entries that independently
+matched already-published, confirmed-pin Dublin trees to within 40m (Kings
+Inns plane = dub_001; two Trinity New Square planes = dub_006), which is
+good enough for "approximate", not for "confirmed".
+
+Filtered to 4 sites already known to be genuinely public (Trinity College,
+National Botanic Gardens Glasnevin, St Anne's Park, Marley Park): 16
+entries. The other roughly 700 rows (private houses, hotels, Garda HQ, RTE
+studios, streets, other counties) are deliberately NOT extracted; adding a
+new site needs an actual access check, since the dataset's own `Access`
+field is identical boilerplate on every row and carries no real per-tree
+signal. `publish_dots: false` in the register file: this is source material
+for curated-city research, not a layer-2 register import decision, which
+stays open.
+
+The original scouting note, kept for the history:
+
+### Ireland: Heritage Trees of Ireland, scouted 2026-08-07, NOT imported (access-filtered, coordinates unconverted)
 
 The earlier entry above ("Lead group... Ireland... Tree Council of Ireland's
 terms are unknown") is now half-resolved. The Tree Council of Ireland's own
