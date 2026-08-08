@@ -3,6 +3,16 @@
 // originals, iNaturalist originals, wiki File: pages as img src) depend on
 // every rendered image going through thumbUrl/imgSrcset, same as today.
 
+// The no-photo placeholder mark used in country-page city rows and every
+// browse_card() (cities/species/collections indexes, build_site.py:3868-3877,
+// 4148-4152): an honest "no photo yet" state rather than an empty grey hole.
+export const NO_PHOTO_SVG =
+  '<span class="ctry-ph ctry-noph" aria-hidden="true">' +
+  '<svg viewBox="0 0 68 64" fill="none"><ellipse cx="34" cy="24" rx="24" ry="16" fill="currentColor"/>' +
+  '<circle cx="20" cy="23" r="11" fill="currentColor"/><circle cx="48" cy="23" r="11" fill="currentColor"/>' +
+  '<circle cx="34" cy="12" r="11" fill="currentColor"/>' +
+  '<path d="M31 62 h5.6 l-1.2-16 h-3.2z" fill="currentColor"/></svg></span>';
+
 function esc(s: string): string {
   return s
     .replace(/&/g, "&amp;")

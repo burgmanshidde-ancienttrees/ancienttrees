@@ -112,6 +112,7 @@ const countries = defineCollection({
     title: z.string().optional(),
     meta_description: z.string().optional(),
     intro: z.string(),
+    register_note: z.string().optional(),
   }),
 });
 

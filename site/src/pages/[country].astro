@@ -1,0 +1,189 @@
+---
+// Contract G — Country page. Ported from build_country_page(), build_site.py:4104-4241.
+// Single-segment file route (NOT [country]/index.astro): emits {country}.html
+// directly, same reasoning as the city route. See ARCHITECTURE.md.
+import { getCollection, type CollectionEntry } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../lib/trees";
+import { COUNTRY_MIN_CITIES } from "../lib/species";
+import { usablePhoto, imgSrcset, cityFace, NO_PHOTO_SVG } from "../lib/images";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { fitTitle } from "../lib/title";
+import { mapHead, countryMapScript, countryName } from "../lib/map";
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+export async function getStaticPaths() {
+  const allCities = (await getCollection("cities")).filter(cityIsRenderable);
+  const intros = await getCollection("countries");
+  const collections = await getCollection("collectionPages");
+
+  const byCountry = new Map<string, CityEntry[]>();
+  for (const c of allCities) {
+    const key = c.data.country;
+    if (!byCountry.has(key)) byCountry.set(key, []);
+    byCountry.get(key)!.push(c);
+  }
+
+  // Guard against a country slug colliding with a city slug (build_site.py:5747-5749).
+  const citySlugs = new Set(allCities.map((c) => c.id));
+  for (const intro of intros) {
+    if (citySlugs.has(intro.data.slug)) {
+      throw new Error(`country slug ${JSON.stringify(intro.data.slug)} (${intro.data.country}) collides with a city slug (Contract G)`);
+    }
+  }
+
+  return intros
+    .filter((intro) => (byCountry.get(intro.data.country)?.length ?? 0) >= COUNTRY_MIN_CITIES)
+    .map((intro) => ({
+      params: { country: intro.data.slug },
+      props: { intro, countryCities: byCountry.get(intro.data.country)!, collections },
+    }));
+}
+
+interface Props {
+  intro: CollectionEntry<"countries">;
+  countryCities: CityEntry[];
+  collections: CollectionEntry<"collectionPages">[];
+}
+const { intro, countryCities, collections } = Astro.props as Props;
+
+const country = intro.data.country;
+const disp = countryName(intro.data);
+const canonical = `${BASE_URL}/${intro.data.slug}`;
+
+const cityStats = countryCities.map((c) => ({
+  city: c,
+  slug: c.id,
+  cityName: c.data.city,
+  count: renderableTrees(c).length,
+}));
+const total = cityStats.reduce((s, c) => s + c.count, 0);
+
+const title = fitTitle([
+  `Ancient Trees in ${disp}: ${countryCities.length} Cities to Explore`,
+  `Ancient Trees in ${disp}: ${countryCities.length} Cities`,
+  intro.data.title ?? "",
+  `Ancient Trees in ${country}`,
+]);
+const description = intro.data.meta_description ?? "";
+const crumbItems: [string, string | null][] = [
+  ["Home", BASE_URL],
+  [country, null],
+];
+
+const ranked = [...cityStats].sort((a, b) => b.count - a.count || a.cityName.localeCompare(b.cityName));
+
+// Highest lower bound wins, so a wide guess never outranks a documented age.
+let oldest: (typeof countryCities)[number]["data"]["trees"][number] | null = null;
+let oldestCityStat: (typeof cityStats)[number] | null = null;
+for (const stat of cityStats) {
+  for (const t of renderableTrees(stat.city)) {
+    const key: [number, number] = [t.age_min ?? 0, t.age_max ?? 0];
+    const curKey: [number, number] = oldest ? [oldest.age_min ?? 0, oldest.age_max ?? 0] : [-1, -1];
+    if (!oldest || key[0] > curKey[0] || (key[0] === curKey[0] && key[1] > curKey[1])) {
+      oldest = t;
+      oldestCityStat = stat;
+    }
+  }
+}
+
+const rows = ranked.map((c, i) => {
+  const face = cityFace(c.city.data, 300);
+  const ph = face
+    ? `<span class="ctry-ph"><img src="${esc(face)}" alt="" loading="lazy"></span>`
+    : NO_PHOTO_SVG;
+  const cityOldest = renderableTrees(c.city).reduce<null | (typeof c.city.data.trees)[number]>((best, t) => {
+    if (!best) return t;
+    const a: [number, number] = [t.age_min ?? 0, t.age_max ?? 0];
+    const b: [number, number] = [best.age_min ?? 0, best.age_max ?? 0];
+    return a[0] > b[0] || (a[0] === b[0] && a[1] > b[1]) ? t : best;
+  }, null);
+  let sub = `${c.count} trees`;
+  if (cityOldest) sub += ` · oldest ${cityOldest.age_estimate ?? ""}`;
+  return { i: i + 1, slug: c.slug, cityName: c.cityName, ph, sub };
+});
+
+const countrySlugSet = new Set(countryCities.map((c) => c.id));
+const relColls = collections.filter((coll) => coll.data.entries.some((e) => countrySlugSet.has(e.city_slug)));
+const collLine =
+  relColls.length > 0
+    ? `Trees from ${esc(disp)} also appear in ${relColls
+        .slice(0, 3)
+        .map((c) => `<a href="/collections/${c.data.slug}">${esc(c.data.title)}</a>`)
+        .join(" · ")}. `
+    : "";
+
+const firstSentence = intro.data.intro.split(". ")[0] + ".";
+const introRest = intro.data.intro.slice(firstSentence.length).trimStart();
+const oldestLine =
+  oldest && oldestCityStat
+    ? ` The oldest of them is ${oldest.name} in ${oldestCityStat.cityName}, at ${oldest.age_estimate ?? "an uncertain age"}.`
+    : "";
+
+const oldestTslug = oldest && oldestCityStat ? treeSlugsForCity(oldestCityStat.city)[oldest.id] : null;
+const oldestPhoto = oldest ? usablePhoto(oldest) : null;
+
+const listElements = ranked.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.cityName, url: `${BASE_URL}/${c.slug}` }));
+const graph = [
+  ...SITE_SCHEMA,
+  { "@type": "CollectionPage", name: `Ancient trees in ${disp}`, description, url: canonical },
+  { "@type": "ItemList", name: `Cities in ${disp}`, itemListElement: listElements },
+  breadcrumbSchema(crumbItems, canonical),
+];
+const headExtra = mapHead() + "\n" + ldScript(graph);
+const mapScript = countryMapScript(
+  ranked.map((c) => ({
+    slug: c.slug,
+    city: c.cityName,
+    count: c.count,
+    markers: renderableTrees(c.city).map((t) => ({ lat: t.location.latitude!, lng: t.location.longitude! })),
+  }))
+);
+---
+<Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
+  <main class="content-page">
+    <Breadcrumbs items={crumbItems} />
+    <h1>Ancient trees in {disp}</h1>
+    <p class="answer-first">
+      {firstSentence} This page maps {total} remarkable trees across {countryCities.length} cities in {disp}, each one researched and verified.{oldestLine}
+    </p>
+    <div class="prose-block"><p>{introRest}</p></div>
+    <div class="map-embed"><div id="map" class="map"></div></div>
+    <h2>Every mapped city in {disp}</h2>
+    <div class="ctry-list">
+      {rows.map((r) => (
+        <a class="ctry-row" href={`/${r.slug}`}>
+          <span class="ctry-rank">{r.i}</span>
+          <Fragment set:html={r.ph} />
+          <span class="ctry-body"><b>{r.cityName}</b><span>{r.sub}</span></span>
+          <span class="ctry-chev" aria-hidden="true">›</span>
+        </a>
+      ))}
+    </div>
+    {oldest && oldestCityStat && (
+      <Fragment>
+        <h2>The oldest tree mapped in {disp}</h2>
+        <div class={`entry${oldestPhoto ? " has-thumb" : ""}`}>
+          {oldestPhoto && oldestPhoto.url && (
+            <div class="entry-thumb">
+              <img {...imgSrcset(oldestPhoto.url, [300, 600], "140px")} alt={oldest.name} loading="lazy" />
+            </div>
+          )}
+          <div class="entry-body">
+            <h3><a href={`/${oldestCityStat.slug}/${oldestTslug}`}>{oldest.name}</a> <span class="tree-label">{oldest.age_estimate ?? ""}</span></h3>
+            <p>{oldest.location?.neighbourhood ?? ""}, {oldestCityStat.cityName}. {(oldest.story ?? "").split(". ")[0]}.</p>
+          </div>
+        </div>
+      </Fragment>
+    )}
+    {intro.data.register_note && (
+      <p class="notice">{intro.data.register_note}</p>
+    )}
+    <p class="suggest" set:html={`${collLine}See <a href="/cities">every city on the map</a>, or <a href="/explore">open the map</a> to find what is near you.`} />
+  </main>
+</Base>
+<Fragment slot="scripts" set:html={mapScript} />
