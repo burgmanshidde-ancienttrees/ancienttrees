@@ -4,16 +4,22 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "edinburgh",
+      "target": "cernobbio",
       "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-08T11:11:21+00:00"
+      "by": "session",
+      "claimed_at": "2026-08-08T15:37:37+00:00"
     },
     {
-      "target": "vienna",
+      "target": "piano di sorrento",
       "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-08T11:13:38+00:00"
+      "by": "session",
+      "claimed_at": "2026-08-08T15:37:37+00:00"
+    },
+    {
+      "target": "perugia",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-08T15:37:37+00:00"
     }
   ]
 }
