@@ -1,0 +1,134 @@
+---
+// Contract F — Species page. Ported from build_species_page(), build_site.py:3779-3857.
+import { getCollection, type CollectionEntry } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { cityIsRenderable, treeSlugsForCity, type CityEntry } from "../../lib/trees";
+import { groupTreesBySpecies, checkSpeciesNames, SPECIES_MIN_TREES, type SpeciesMember } from "../../lib/species";
+import { checkCityNames } from "../../lib/city-aliases";
+import { usablePhoto, imgSrcset } from "../../lib/images";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
+import { fitTitle } from "../../lib/title";
+import { byCityListOrder } from "../../lib/city-order";
+
+export async function getStaticPaths() {
+  const allCities = (await getCollection("cities")).filter(cityIsRenderable);
+  // Cross-cutting build-time checks (hard rule 9, the city-naming ratchet),
+  // ported from main()'s check_species_names()/check_city_names() calls,
+  // build_site.py:5712. Run here since this is one of the few page types
+  // that always loads every city; redundant with other contracts doing the
+  // same is fine, it's cheap and idempotent.
+  checkSpeciesNames(allCities);
+  checkCityNames(allCities.map((c) => ({ slug: c.id, city: c.data.city })));
+  const intros = await getCollection("species");
+  const groups = groupTreesBySpecies(allCities);
+
+  const introBySlug = new Map(intros.map((i) => [i.data.common_name, i]));
+  const published = byCityListOrder(allCities.map((c) => ({ slug: c.id, city: c.data.city })));
+
+  return [...groups.entries()]
+    .filter(([, members]) => members.length >= SPECIES_MIN_TREES)
+    .map(([common, members]) => {
+      const intro = introBySlug.get(common);
+      if (!intro) return null;
+      return { params: { slug: intro.data.slug }, props: { intro, members, published, allCities } };
+    })
+    .filter((p): p is NonNullable<typeof p> => p !== null);
+}
+
+interface Props {
+  intro: CollectionEntry<"species">;
+  members: SpeciesMember[];
+  published: { slug: string; city: string }[];
+  allCities: CityEntry[];
+}
+const { intro, members, published, allCities } = Astro.props as Props;
+
+const common = intro.data.common_name;
+const canonical = `${BASE_URL}/species/${intro.data.slug}`;
+const title = fitTitle([
+  intro.data.title ?? "",
+  `${common}: Ancient ${common}s You Can Visit`,
+  `Ancient ${common} Trees`,
+  common,
+]);
+const description = intro.data.meta_description ?? "";
+const crumbItems: [string, string | null][] = [
+  ["Home", BASE_URL],
+  ["Species", `${BASE_URL}/species`],
+  [common, null],
+];
+
+const order = new Map(published.map((p, i) => [p.slug, i]));
+const byCity = new Map<string, { city: CityEntry; trees: SpeciesMember["tree"][] }>();
+for (const { city, tree } of members) {
+  if (!byCity.has(city.id)) byCity.set(city.id, { city, trees: [] });
+  byCity.get(city.id)!.trees.push(tree);
+}
+const citySlugsOrdered = [...byCity.keys()].sort((a, b) => (order.get(a) ?? 99) - (order.get(b) ?? 99));
+
+let n = 0;
+const listElements: { "@type": string; position: number; name: string; url: string }[] = [];
+const sections = citySlugsOrdered.map((cslug) => {
+  const { city, trees: rawTrees } = byCity.get(cslug)!;
+  const trees = [...rawTrees].sort((a, b) => (b.age_max ?? 0) - (a.age_max ?? 0));
+  const tslugs = treeSlugsForCity(city);
+  const rows = trees.map((t) => {
+    n += 1;
+    listElements.push({ "@type": "ListItem", position: n, name: t.name, url: `${BASE_URL}/${cslug}/${tslugs[t.id]}` });
+    return { tree: t, slug: tslugs[t.id] };
+  });
+  return { city, cslug, rows };
+});
+
+const firstSentence = intro.data.intro.split(". ")[0] + ".";
+const introRest = intro.data.intro.slice(firstSentence.length).trimStart();
+
+const graph = [
+  ...SITE_SCHEMA,
+  { "@type": "ItemList", name: `${common} trees`, itemListElement: listElements },
+  breadcrumbSchema(crumbItems, canonical),
+];
+---
+<Base title={title} description={description} canonical={canonical} headExtra={ldScript(graph)}>
+  <main class="content-page">
+    <Breadcrumbs items={crumbItems} />
+    <h1>{common}</h1>
+    <p class="answer-first">
+      {firstSentence} This page maps every {common.toLowerCase()} on the site, {n} so far across {byCity.size} cit{byCity.size === 1 ? "y" : "ies"}.
+    </p>
+    {introRest && <div class="prose-block"><p>{introRest}</p></div>}
+    {sections.map(({ city, cslug, rows }) => (
+      <Fragment>
+        <h2><a class="sp-citylink" href={`/${cslug}`}>{city.data.city}</a></h2>
+        {rows.map(({ tree: t, slug: tslug }) => {
+          const ph = usablePhoto(t);
+          const storyFirst = (t.story ?? "").split(". ")[0];
+          return (
+            <div class={`entry${ph ? " has-thumb" : ""}`}>
+              {ph && ph.url && (
+                <div class="entry-thumb">
+                  <img {...imgSrcset(ph.url, [300, 600], "140px")} alt={t.name} loading="lazy" />
+                </div>
+              )}
+              <div class="entry-body">
+                <h3><a href={`/${cslug}/${tslug}`}>{t.name}</a> <span class="tree-label">{t.age_estimate ?? ""}</span></h3>
+                <p>{t.location?.neighbourhood ?? ""}. {storyFirst}.</p>
+              </div>
+            </div>
+          );
+        })}
+      </Fragment>
+    ))}
+    <p class="suggest">
+      Explore by city:{" "}
+      {published.map((p, i) => (
+        <Fragment>
+          {i > 0 && " · "}
+          <a href={`/${p.slug}`}>{p.city}</a>
+        </Fragment>
+      ))}
+      {" "}· or browse <a href="/species">all species</a>.
+    </p>
+  </main>
+</Base>
