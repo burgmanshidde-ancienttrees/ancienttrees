@@ -4603,21 +4603,22 @@ def build_press_page(cities, pages):
   <div class="prose-block">
     <p>Ancient Trees maps the oldest and most remarkable trees of the world's cities, one tree at a time, with sources recorded per tree. {n['trees']} trees in {n['cities']} cities across {n['countries']} countries so far, {n['species']} distinct species, {n['sourced']} of them carrying their sources on the page.</p>
 
-    <h2>The story, and where to check it</h2>
-    <p>The London plane, which we map {n['plane']} times in {n['plane_cities']} cities, is a chance hybrid of an American and an Asian parent that appeared in a nursery in the 1600s and became the default street tree of half the continent. The individual arrivals are better than the statistic: an ombu in Seville said to have come back from South America with Christopher Columbus's son around 1529, a black locust in Paris grown from seed posted out of the Appalachians in 1601, a black mulberry in London left over from a royal scheme to start a British silk industry that failed because silkworms will not eat black mulberry leaves.</p>
-    <p>The full list, with locations and sources for each tree: <a href="collections/europes-oldest-trees-are-immigrants">Europe's Oldest City Trees Are Mostly Immigrants</a>.</p>
+    <h2>Stories from the data</h2>
+    <p><strong>August 2026: Europe's oldest city trees are mostly immigrants.</strong> {n['nn']} of the {n['eu_trees']} trees we map in European cities are species that are not native to Europe, and the commonest of all, the London plane ({n['plane']} trees in {n['plane_cities']} cities), exists nowhere in the wild. The individual arrivals carry the story: an ombu in Seville said to have come back with Christopher Columbus's son around 1529, Paris's oldest tree grown from seed posted out of the Appalachians in 1601, a London mulberry left over from a royal silk scheme that failed because silkworms will not eat black mulberry leaves. <a href="collections/europes-oldest-trees-are-immigrants">The full list</a>.</p>
+    <p><strong>August 2026: which European city gives a tree lover the best single afternoon?</strong> Measured by how many remarkable trees stand within one honest walk of each other, not by how many a city has. <a href="collections/europes-best-tree-city-trips">The ranking</a>.</p>
+    <p><strong>Standing: the oldest tree in every country we map.</strong> One tree per country, each with its sources. <a href="collections/the-oldest-tree-in-every-country-we-map">The list</a>.</p>
+    <p>A local angle is one email away: for any of the {n['cities']} cities we can supply that city's own fact sheet, its oldest tree, its story and what stands within a walk.</p>
 
-    <h2>Other angles in the same data</h2>
-    <p>Which city gives the best afternoon, measured by how many remarkable trees stand within one walk of each other rather than by how many a city has: <a href="collections/europes-best-tree-city-trips">Europe's best tree city trips</a>. The oldest tree in each country we cover: <a href="collections/the-oldest-tree-in-every-country-we-map">the oldest tree in every country we map</a>. Every tree on one map: <a href="explore">explore</a>, or <a href="cities">by city</a>.</p>
-
-    <h2>Images</h2>
-    <p>{n['photos']} of the {n['trees']} trees carry a photograph under an open licence, most from Wikimedia Commons and iNaturalist. Each one records its licence and the credit that licence requires, both shown on the tree's own page. The credit has to travel with the image: a CC BY photograph published without its attribution puts the licence in breach, and that is the publisher's problem rather than the photographer's. Trees without a photograph show a drawing and say plainly that no photograph exists, because a stock picture of the species would not be a picture of that tree.</p>
+    <h2>Press kit</h2>
+    <p>Boilerplate, one paragraph: <em>Ancient Trees (ancienttrees.app) maps the most remarkable old trees of the world's cities: {n['trees']} trees in {n['cities']} cities so far, each verified against at least two independent sources or an official monument register, each with its story, its exact spot and, where trees stand close enough, a walking route past them. The project publishes openly, uses openly licensed photography with credits, and treats an honest "approximately" as better than false precision.</em></p>
+    <p>Assets, free to reuse in coverage: <a href="assets/logo.svg" download>the logo (SVG)</a> &middot; <a href="assets/press/press-tree.png">a tree page</a> &middot; <a href="assets/press/press-story.png">a data story</a>. More screenshots or a custom crop on request.</p>
+    <p>Tree photographs: {n['photos']} of the {n['trees']} trees carry a photograph under an open licence, most from Wikimedia Commons and iNaturalist. Each records its licence and required credit on the tree's own page, and the credit must travel with the image: a CC BY photograph published without attribution puts the licence in breach.</p>
 
     <h2>What this data is, and what it is not</h2>
     <p>It is a count of the trees we have published, not a census of every old tree in Europe. The map is denser where countries publish open tree registers and thinner where they do not, so coverage reflects data availability as much as it reflects trees. Ages are as sourced, and where sources disagree the tree's page says so rather than picking a winner. Locations are marked either confirmed or approximate, and the approximate ones say so next to the directions button, because sending someone to a spot where the tree is not is the one mistake this project cannot afford.</p>
 
     <h2>Getting in touch</h2>
-    <p>For the underlying data as a spreadsheet, a count for one country or one city, or anything else: <a href="{submit_link('press')}">send a message</a> and say what you need.</p>
+    <p>For the underlying data as a spreadsheet, a per-city fact sheet, extra screenshots, or anything else: <a href="{submit_link('press')}">send a message</a> and say what you need.</p>
   </div>
 </main>
 """
@@ -5621,7 +5622,9 @@ def validate_internal_links(pages):
     # account.html is written straight to DIST by build_account_page (outside
     # the pages list, deliberately out of the sitemap), but nav links to it
     # once AUTH_ENABLED is on, so the checker must know it exists.
-    valid = {"/", "/assets/style.css", "/account", "/account.html"}
+    valid = {"/", "/assets/style.css", "/account", "/account.html",
+             "/assets/logo.svg", "/assets/press/press-tree.png",
+             "/assets/press/press-story.png"}
     for relpath, _, _ in pages:
         url = "/" + relpath
         valid.add(url)
@@ -6185,6 +6188,25 @@ def main():
         shutil.rmtree(DIST)
     (DIST / "assets").mkdir(parents=True)
     (DIST / "assets" / "style.css").write_text(CSS)
+    # The press kit: the logo as a standalone downloadable file, and the
+    # screenshots captured from the live site (site/press-assets/, refreshed
+    # by hand when the design meaningfully changes).
+    (DIST / "assets" / "logo.svg").write_text(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 64">'
+        '<ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/>'
+        '<circle cx="20" cy="23" r="11" fill="#4A6B2A"/>'
+        '<circle cx="48" cy="23" r="11" fill="#4A6B2A"/>'
+        '<circle cx="34" cy="12" r="11" fill="#5B7F35"/>'
+        '<circle cx="25" cy="15" r="7" fill="#86A34D"/>'
+        '<circle cx="51" cy="14" r="3.2" fill="#D9A13F"/>'
+        '<path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 '
+        'c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 '
+        'l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg>\n')
+    press_src = ROOT / "site" / "press-assets"
+    if press_src.is_dir():
+        (DIST / "assets" / "press").mkdir(parents=True, exist_ok=True)
+        for f in press_src.glob("*.png"):
+            (DIST / "assets" / "press" / f.name).write_bytes(f.read_bytes())
     # Written here, not while the page is built: DIST is wiped and recreated
     # at this point, so anything written earlier disappears.
     if REGISTER_ASSET:
