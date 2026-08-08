@@ -1,0 +1,291 @@
+---
+// Contract C — City page. Ported from build_city_page(), build_site.py:3416-3662.
+// Single-segment file route (see ARCHITECTURE.md's routing note): emits
+// {city}.html directly, matching the current site and avoiding Astro's
+// directory-format default.
+//
+// Known gap: check_count_promises() (build_site.py:2948-2975, the regex
+// check that a city's hand-written copy doesn't still promise a stale tree
+// count after growing past its original number) is not ported. It's a
+// content-quality lint with no effect on page output, and its regex-driven
+// number-word matching was judged not worth the time against everything
+// else in this contract; flagged here rather than silently dropped.
+import { getCollection, type CollectionEntry } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../lib/trees";
+import { speciesCommon } from "../lib/species";
+import { usablePhoto, imgSrcset, creditRequired } from "../lib/images";
+import { speciesIcon } from "../lib/species-icons";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { fitTitle } from "../lib/title";
+import { submitLink } from "../lib/tree-copy";
+import { bestTimeShort } from "../lib/phenology";
+import { mapHead } from "../lib/map";
+import { planWalks, walkRouteFor, humanDuration, mapsRouteUrl, type WalkMarker, type Walk } from "../lib/walks";
+import { cityMapScript } from "../lib/city-map-script";
+import { otherCitiesFor } from "../lib/other-cities";
+import { byCityListOrder } from "../lib/city-order";
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+export async function getStaticPaths() {
+  const allCities = (await getCollection("cities")).filter(cityIsRenderable);
+  const intros = await getCollection("countries");
+  const speciesIntros = await getCollection("species");
+  const collections = await getCollection("collectionPages");
+
+  const countryPages = new Map<string, string>();
+  const byCountryCount = new Map<string, number>();
+  for (const c of allCities) byCountryCount.set(c.data.country, (byCountryCount.get(c.data.country) ?? 0) + 1);
+  for (const intro of intros) {
+    if ((byCountryCount.get(intro.data.country) ?? 0) >= 3) countryPages.set(intro.data.country, intro.data.slug);
+  }
+  const speciesPages = new Map(speciesIntros.map((i) => [i.data.common_name, i.data.slug]));
+
+  return allCities.map((city) => {
+    const intro = city.data.intro;
+    if (!intro) throw new Error(`${city.id}: city intro (60-100 words, unique) is required by Contract C`);
+    const wc = intro.split(/\s+/).filter(Boolean).length;
+    if (wc < 60 || wc > 100) throw new Error(`${city.id}: city intro is ${wc} words, Contract C requires 60-100`);
+    if (!city.data.faq || city.data.faq.length === 0) {
+      throw new Error(`${city.id}: FAQ block (3-4 real questions) is required by Contract C`);
+    }
+    return {
+      params: { city: city.id },
+      props: { city, allCities, countryPages, speciesPages, collections },
+    };
+  });
+}
+
+interface Props {
+  city: CityEntry;
+  allCities: CityEntry[];
+  countryPages: Map<string, string>;
+  speciesPages: Map<string, string>;
+  collections: CollectionEntry<"collectionPages">[];
+}
+const { city, allCities, countryPages, speciesPages, collections } = Astro.props as Props;
+
+const cityName = city.data.city;
+const country = city.data.country;
+const cslug = city.id;
+const trees = renderableTrees(city);
+const canonical = `${BASE_URL}/${cslug}`;
+const tslugs = treeSlugsForCity(city);
+
+const title = fitTitle([
+  `Ancient Trees in ${cityName}: ${trees.length} Remarkable Trees Worth Visiting`,
+  `Ancient Trees in ${cityName}: ${trees.length} Trees Worth Visiting`,
+  `Ancient Trees in ${cityName}`,
+]);
+const description =
+  city.data.meta_description ||
+  `The oldest and most remarkable trees in ${cityName}, ${country}: verified locations, real stories, and how to reach each one.`;
+const intro = city.data.intro!;
+
+const countryUrl = countryPages.has(country) ? `${BASE_URL}/${countryPages.get(country)}` : null;
+const crumbItems: [string, string | null][] = [
+  ["Home", BASE_URL],
+  [country, countryUrl],
+  [cityName, null],
+];
+
+const markers: WalkMarker[] = trees.map((t, i) => {
+  const cphoto = usablePhoto(t);
+  return {
+    lat: t.location.latitude!,
+    lng: t.location.longitude!,
+    label: String(i + 1),
+    icon: speciesIcon(t),
+    name: t.name,
+    id: t.id,
+    area: (t.location.neighbourhood ?? "").trim(),
+    shot: Boolean(cphoto),
+  };
+});
+
+const faq = city.data.faq!;
+const cityCollections = collections.filter((c) => c.data.entries.some((e) => e.city_slug === cslug));
+const coll = cityCollections[0] ?? null;
+let collLinkText: { phrase: string; verb: string } | null = null;
+if (coll) {
+  const n = coll.data.entries.filter((e) => e.city_slug === cslug).length;
+  collLinkText = { phrase: n === 1 ? "One of these trees" : `${n} of these trees`, verb: n === 1 ? "appears" : "appear" };
+}
+
+const otherCities = otherCitiesFor(cslug, allCities);
+// The visible "more cities" link list uses data/city-list.json's declared
+// order (unsorted, unlimited), matching build_city_page's other_cities
+// param directly (build_site.py:3502-3506). The favourites/tree-count rank
+// sort is a DIFFERENT list, used only by the map's zoom-out chooser overlay
+// inside cityMapScript (build_site.py:1561, "_ranked"); conflating the two
+// was a real bug caught by diffing against the real build.
+const moreCitiesList = byCityListOrder(otherCities.map((c) => ({ ...c, slug: c.slug })));
+
+const speciesHere = new Map<string, number>();
+for (const t of trees) speciesHere.set(speciesCommon(t), (speciesHere.get(speciesCommon(t)) ?? 0) + 1);
+const citySpeciesLinks = [...speciesHere.entries()]
+  .filter(([common, n]) => n >= 3 && speciesPages.has(common))
+  .map(([common]) => [common, speciesPages.get(common)!] as const);
+
+const listElements = trees.map((t, i) => ({
+  "@type": "ListItem",
+  position: i + 1,
+  name: t.name,
+  url: `${BASE_URL}/${cslug}/${tslugs[t.id]}`,
+  item: {
+    "@type": "TouristAttraction",
+    name: t.name,
+    description: (t.story ?? "").slice(0, 200),
+    geo: { "@type": "GeoCoordinates", latitude: t.location.latitude, longitude: t.location.longitude },
+  },
+}));
+const graph = [
+  ...SITE_SCHEMA,
+  { "@type": "ItemList", name: title, itemListElement: listElements },
+  { "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
+  breadcrumbSchema(crumbItems, canonical),
+];
+const headExtra = mapHead() + "\n" + ldScript(graph);
+
+const avgLat = markers.reduce((s, m) => s + m.lat, 0) / markers.length;
+const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
+
+const walks: Walk[] = planWalks(markers);
+const route = walks[0] ?? null;
+if (route) {
+  for (const w of walks) {
+    w.url = mapsRouteUrl(w.order.map((i) => [markers[i].lat, markers[i].lng]));
+    const routed = walkRouteFor(cslug, w.order.map((i) => trees[i].id));
+    if (routed) {
+      w.shape = routed.shape;
+      w.km = routed.km ?? w.km;
+      w.minutes = routed.minutes ?? w.minutes;
+    }
+    w.duration = humanDuration(w.minutes);
+    w.label = w.count < markers.length ? `Walk ${w.count} of these trees` : `Walk all ${w.count} trees`;
+  }
+}
+const firstWalk = walks[0] ?? null;
+---
+<Base title={title} description={description} canonical={canonical} headExtra={headExtra} footer={false}>
+  <div class="split">
+    <aside class="panel">
+      <div class="panel-head">
+        <Breadcrumbs items={crumbItems} />
+        <p class="eyebrow">{country}</p>
+        <h1>Ancient Trees in <em>{cityName}</em></h1>
+        <p class="lede">{intro}</p>
+        <p class="passport" id="passport" hidden>
+          <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
+          <span class="passport-total" id="passport-total"></span>
+          <button type="button" class="passport-save" id="passport-save">Save or move to another device</button>
+        </p>
+      </div>
+      {trees.map((t, i) => {
+        const cphoto = usablePhoto(t);
+        const bestTimeChip = bestTimeShort(t);
+        return (
+          <article class="tree-card" id={`tree-${i + 1}`}>
+            {cphoto && cphoto.url && (
+              <Fragment>
+                <div class="tree-card-photo">
+                  <img {...imgSrcset(cphoto.url, [500, 900], "(max-width: 800px) 100vw, 560px")} alt={t.name} loading="lazy" />
+                </div>
+                {creditRequired(cphoto.license) && <p class="tree-card-credit">Photo: {cphoto.attribution} ({cphoto.license})</p>}
+              </Fragment>
+            )}
+            <div class="tree-card-top">
+              <span class="tree-num">{i + 1}</span>
+              <h2 class="tree-name">{t.name}{t.label && <span class="tree-label">{t.label}</span>}</h2>
+            </div>
+            <p class="tree-meta" set:html={`${esc(t.species ?? "")} &middot; ${esc(t.age_estimate ?? "age unknown")} &middot; ${esc(t.location?.neighbourhood ?? "")}${bestTimeChip}`} />
+            <p class="tree-story">{t.story}</p>
+            <p class="tree-more"><a href={`/${cslug}/${tslugs[t.id]}`}>Read more and get directions →</a></p>
+          </article>
+        );
+      })}
+      <div class="panel-foot">
+        <p class="subtle-suggest"><b>We are mapping every remarkable tree in the world.</b> Know one in {cityName} we missed, or spot a mistake here? <a href={submitLink("tree")}>Tell us</a>.</p>
+        <div class="take-with-you">
+          <strong>Going there?</strong> <a href={`/${cslug}.gpx`} download>Download all {trees.length} trees</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
+        </div>
+        <h2>Frequently asked</h2>
+        <dl class="faq">
+          {faq.map((f) => (
+            <Fragment>
+              <dt>{f.q}</dt>
+              <dd>{f.a}</dd>
+            </Fragment>
+          ))}
+          <dt>More on the oldest tree</dt>
+          <dd><a href={`/${cslug}/oldest-tree`}>What is the oldest tree in {cityName}?</a> The full answer, with map and directions.</dd>
+          {citySpeciesLinks.length > 0 && (
+            <Fragment>
+              <dt>Species on this list</dt>
+              <dd>
+                {citySpeciesLinks.map(([common, spSlug], i) => (
+                  <Fragment>
+                    {i > 0 && " · "}
+                    <a href={`/species/${spSlug}`}>Every {common.toLowerCase()} on the site</a>
+                  </Fragment>
+                ))}
+              </dd>
+            </Fragment>
+          )}
+          <dt>More like this</dt>
+          <dd>
+            {coll && collLinkText ? (
+              <Fragment>{collLinkText.phrase} also {collLinkText.verb} in <a href={`/collections/${coll.data.slug}`}>{coll.data.title}</a>.</Fragment>
+            ) : (
+              <Fragment>Browse <a href="/collections">themed collections</a> of remarkable trees.</Fragment>
+            )}
+          </dd>
+          {moreCitiesList.length > 0 && (
+            <Fragment>
+              <dt>Ancient trees in more cities</dt>
+              <dd>
+                {moreCitiesList.map((c, i) => (
+                  <Fragment>
+                    {i > 0 && " · "}
+                    <a href={`/${c.slug}`}>{c.city}</a>
+                  </Fragment>
+                ))}
+              </dd>
+            </Fragment>
+          )}
+        </dl>
+        <p class="suggest">Know a tree that belongs on this list? <a href={submitLink("tree")}>Send it in</a>. Suggestions feed curation; the list itself stays editorial.</p>
+      </div>
+    </aside>
+    <div class="stage">
+      <div id="map" class="map"></div>
+      {firstWalk && (
+        <div class="walks" id="walk">
+          {walks.length > 1 && (
+            <div class="walk-picker" role="group" aria-label={`${walks.length} ${walks.length > 1 ? "walks" : "walk"} in ${cityName}`}>
+              {walks.map((w, i) => (
+                <button type="button" class="walk-pick" data-walk={i} aria-pressed="false">
+                  <span class="walk-pick-name">{w.name || `Walk ${i + 1}`}</span>
+                  <span class="walk-pick-meta">{w.count} trees · {w.km} km</span>
+                </button>
+              ))}
+            </div>
+          )}
+          <div class="route-bar">
+            <a class="route-go" id="route-go" href={firstWalk.url} target="_blank" rel="noopener">
+              {firstWalk.name && <span class="route-name">{firstWalk.name}</span>}
+              <span id="route-label">{firstWalk.label}</span>
+              <span class="route-meta" id="route-meta">about {firstWalk.km} km, {firstWalk.duration} on foot</span>
+            </a>
+            <button type="button" class="route-gps" id="gps-btn" aria-pressed="false">Where am I</button>
+          </div>
+        </div>
+      )}
+    </div>
+  </div>
+  <Fragment slot="scripts" set:html={cityMapScript(markers, [avgLat, avgLng], route, otherCities, walks)} />
+</Base>
