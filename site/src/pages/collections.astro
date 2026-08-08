@@ -1,0 +1,59 @@
+---
+// Collections index. Ported from build_collections_index(), build_site.py:4328-4379.
+// Only public (non-draft) collections feed the index, same gate build_site.py:5707
+// applies before anything else sees a collection (Contract D).
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { cityIsRenderable } from "../lib/trees";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { fitTitle } from "../lib/title";
+import { byCityListOrder } from "../lib/city-order";
+import { browseCard, collectionFace } from "../lib/browse-card";
+
+const allCities = (await getCollection("cities")).filter(cityIsRenderable);
+const citiesBySlug = new Map(allCities.map((c) => [c.id, c]));
+const allCollections = await getCollection("collectionPages");
+const collections = allCollections.filter((c) => c.data.status !== "needs_curation");
+const published = byCityListOrder(allCities.map((c) => ({ slug: c.id, city: c.data.city })));
+
+const canonical = `${BASE_URL}/collections`;
+const title = fitTitle(["Collections: Remarkable Trees by Theme"], canonical);
+const description = "Hand-curated lists that cut across cities: the oldest, the strangest, the ones worth a detour. Every entry links to a verified tree.";
+const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["Collections", null]];
+
+const cards = collections.map((c) => {
+  const nCities = new Set(c.data.entries.map((e) => e.city_slug)).size;
+  return browseCard(
+    `/collections/${c.data.slug}`,
+    c.data.title,
+    `${c.data.entries.length} trees &middot; ${nCities} cities`,
+    collectionFace(c.data.entries, citiesBySlug),
+  );
+});
+
+const graph = [
+  ...SITE_SCHEMA,
+  {
+    "@type": "ItemList",
+    name: "Collections",
+    itemListElement: collections.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.data.title, url: `${BASE_URL}/collections/${c.data.slug}` })),
+  },
+  breadcrumbSchema(crumbItems, canonical),
+];
+---
+<Base title={title} description={description} canonical={canonical} headExtra={ldScript(graph)}>
+<main class="content-page">
+  <Breadcrumbs items={crumbItems} />
+  <h1>Collections</h1>
+  <div class="prose-block"><p>Cities organise these trees by place. Collections organise them by what makes them worth the trip: age, strangeness, the stories they carry. Each one is hand-curated, and every entry links to a verified tree with its own map and directions. More collections are added as the map grows.</p></div>
+  {cards.length > 0 ? (
+    <div class="cindex-grid" set:html={cards.join("")} />
+  ) : (
+    <div class="prose-block"><p>The first collections are drafted and being reviewed. None are public yet; check back as the map grows.</p></div>
+  )}
+  <p class="suggest">Explore by city instead: {published.map((p, i) => (
+    <Fragment>{i > 0 && <Fragment set:html=" &middot; " />}<a href={`/${p.slug}`}>{p.city}</a></Fragment>
+  ))}</p>
+</main>
+</Base>

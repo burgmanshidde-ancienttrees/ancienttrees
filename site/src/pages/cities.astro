@@ -1,0 +1,71 @@
+---
+// Cities index, grouped by country. Ported from build_cities_index(),
+// build_site.py:4277-4325.
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { cityIsRenderable, renderableTrees } from "../lib/trees";
+import { cityFace } from "../lib/images";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { fitTitle } from "../lib/title";
+import { byCityListOrderEntry } from "../lib/city-order";
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+// city-list.json order, matching load_cities()/renderable (build_site.py:
+// 2579-2585): the JSON-LD ItemList below quotes `published` in this raw
+// order, only the VISIBLE grouped grid is alphabetically re-sorted.
+const allCities = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
+const published = allCities.map((c) => ({
+  slug: c.id,
+  city: c.data.city,
+  country: c.data.country,
+  count: renderableTrees(c).length,
+  face: cityFace(c.data, 400),
+}));
+
+const byCountry = new Map<string, typeof published>();
+for (const p of published) {
+  if (!byCountry.has(p.country)) byCountry.set(p.country, []);
+  byCountry.get(p.country)!.push(p);
+}
+const countryGroups = [...byCountry.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+
+function card(p: (typeof published)[number]): string {
+  const ph = p.face
+    ? `<span class="exc-ph"><img src="${esc(p.face)}" alt="" loading="lazy"></span>`
+    : '<span class="exc-ph exc-noph"></span>';
+  return `<a class="exc-card" href="/${p.slug}">${ph}<span class="exc-body"><b>${esc(p.city)}</b><span>${p.count} trees</span></span></a>`;
+}
+
+const canonical = `${BASE_URL}/cities`;
+const title = fitTitle(["Every City We Have Mapped", "Ancient Trees by City"], canonical);
+const description = "Every city on the map, by country: the remarkable old trees of each, verified, with their stories and exact spots.";
+const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["Cities", null]];
+const total = published.reduce((s, p) => s + p.count, 0);
+
+const graph = [
+  ...SITE_SCHEMA,
+  {
+    "@type": "ItemList",
+    name: "Cities",
+    itemListElement: published.map((p, i) => ({ "@type": "ListItem", position: i + 1, name: p.city, url: `${BASE_URL}/${p.slug}` })),
+  },
+  breadcrumbSchema(crumbItems, canonical),
+];
+---
+<Base title={title} description={description} canonical={canonical} headExtra={ldScript(graph)}>
+<main class="content-page">
+  <Breadcrumbs items={crumbItems} />
+  <h1>Every city we have mapped</h1>
+  <p class="answer-first">{published.length} cities, {total} trees, each one researched and verified. Pick a city for its trees, or open <a href="/explore">the map</a> to see what is near you.</p>
+  {countryGroups.map(([country, cities]) => (
+    <Fragment>
+      <h2 class="cindex-country">{country}</h2>
+      <div class="cindex-grid" set:html={[...cities].sort((a, b) => a.city.localeCompare(b.city)).map(card).join("")} />
+    </Fragment>
+  ))}
+</main>
+</Base>
