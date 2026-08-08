@@ -1,0 +1,111 @@
+---
+// Contract D — Collection page. Ported from build_collection_page(), build_site.py:3667-3746.
+import { getCollection, type CollectionEntry } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { cityIsRenderable, treeSlugsForCity, type CityEntry } from "../../lib/trees";
+import { usablePhoto, imgSrcset } from "../../lib/images";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
+import { fitTitle } from "../../lib/title";
+import { byCityListOrder } from "../../lib/city-order";
+
+export async function getStaticPaths() {
+  const allCities = (await getCollection("cities")).filter(cityIsRenderable);
+  const citiesBySlug = new Map(allCities.map((c) => [c.id, c]));
+  const collections = await getCollection("collectionPages");
+  const published = byCityListOrder(allCities.map((c) => ({ slug: c.id, city: c.data.city })));
+
+  return collections.map((coll) => ({
+    params: { slug: coll.data.slug },
+    props: { coll, citiesBySlug, published },
+  }));
+}
+
+interface Props {
+  coll: CollectionEntry<"collectionPages">;
+  citiesBySlug: Map<string, CityEntry>;
+  published: { slug: string; city: string }[];
+}
+const { coll, citiesBySlug, published } = Astro.props as Props;
+
+// Contract D: a draft (needs_curation) is built for review but never linked
+// publicly until Hidde approves (build_site.py:5703).
+const isDraft = coll.data.status === "needs_curation";
+
+const canonical = `${BASE_URL}/collections/${coll.data.slug}`;
+const title = fitTitle([coll.data.seo_title ?? "", coll.data.title]);
+const description = coll.data.meta_description ?? "";
+const crumbItems: [string, string | null][] = [
+  ["Home", BASE_URL],
+  ["Collections", `${BASE_URL}/collections`],
+  [coll.data.title, null],
+];
+
+// Group entries by city, preserving first-appearance order (matches
+// Python's dict insertion-order grouping, not the global city-list order).
+const grouped = new Map<string, typeof coll.data.entries>();
+for (const e of coll.data.entries) {
+  if (!grouped.has(e.city_slug)) grouped.set(e.city_slug, []);
+  grouped.get(e.city_slug)!.push(e);
+}
+
+let entryCount = 0;
+const listElements: { "@type": string; position: number; name: string; url: string }[] = [];
+const sections = [...grouped.entries()].map(([cslug, entries]) => {
+  const city = citiesBySlug.get(cslug)!;
+  const treesById = new Map(city.data.trees.map((t) => [t.id, t]));
+  const rows = entries.map((e) => {
+    const t = treesById.get(e.tree_id)!;
+    const tslugs = treeSlugsForCity(city);
+    entryCount += 1;
+    listElements.push({ "@type": "ListItem", position: entryCount, name: t.name, url: `${BASE_URL}/${cslug}/${tslugs[t.id]}` });
+    return { tree: t, note: e.note, slug: tslugs[t.id] };
+  });
+  return { city, cslug, rows };
+});
+
+const graph = [
+  ...SITE_SCHEMA,
+  { "@type": "ItemList", name: coll.data.title, itemListElement: listElements },
+  breadcrumbSchema(crumbItems, canonical),
+];
+const headExtra = ldScript(graph) + (isDraft ? '\n<meta name="robots" content="noindex, nofollow">' : "");
+---
+<Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
+  <main class="content-page">
+    <Breadcrumbs items={crumbItems} />
+    <h1>{coll.data.title}</h1>
+    <div class="prose-block"><p>{coll.data.intro}</p></div>
+    {sections.map(({ city, cslug, rows }) => (
+      <Fragment>
+        <h2><a class="coll-city" href={`/${cslug}`}>{city.data.city}</a></h2>
+        {rows.map(({ tree: t, note, slug: tslug }) => {
+          const ph = usablePhoto(t);
+          return (
+            <div class={`entry${ph ? " has-thumb" : ""}`}>
+              {ph && ph.url && (
+                <div class="entry-thumb">
+                  <img {...imgSrcset(ph.url, [300, 600], "140px")} alt={t.name} loading="lazy" />
+                </div>
+              )}
+              <div class="entry-body">
+                <h3><a href={`/${cslug}/${tslug}`}>{t.name}</a> <span class="tree-label">{t.age_estimate ?? ""}</span></h3>
+                <p>{note}</p>
+              </div>
+            </div>
+          );
+        })}
+        <p class="coll-citycta"><a href={`/${cslug}`}>See all {city.data.trees.length} trees in {city.data.city} on the map →</a></p>
+      </Fragment>
+    ))}
+    <p class="suggest">
+      Explore by city:{" "}
+      {published.map((p, i) => (
+        <Fragment>
+          {i > 0 && " · "}
+          <a href={`/${p.slug}`}>{p.city}</a>
+        </Fragment>
+      ))}
+    </p>
+  </main>
+</Base>
