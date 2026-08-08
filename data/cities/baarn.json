@@ -1,0 +1,210 @@
+{
+  "city": "Baarn",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "oldest_tree_id": "brn_005",
+  "intro": "Baarn is a villa village that royalty, bankers and a university all planted for their own reasons, and the trees outlasted every one of those reasons. The Cantonspark spent seven decades as Utrecht University's botanical garden, which is why a dawn redwood and a giant sequoia stand in a free village park. Kasteel Groeneveld's lanes are Staatsbosbeheer ground now, open to anyone. And in the Pekingtuin stands a red oak from around 1850 that the village likes enough to have given its own protective ring. All five are free.",
+  "meta_description": "Baarn's remarkable trees: a red oak from 1850 the village ringed in honour, exotics from a former university botanical garden, and estate veterans.",
+  "question_meta": "Baarn's best-documented old tree is the American oak of the Pekingtuin, around 1850. Its story, and four more remarkable trees a walk apart.",
+  "question_answer": "The best-documented old tree in Baarn is the American oak of the Pekingtuin, planted around 1850, with a trunk of 5.52 metres around. The copper beech by the south pond at Kasteel Groeneveld may be older still, at an estimated 150 to 200 years, but its age is inferred from girth rather than recorded.",
+  "question_context": "Baarn's trees are the residue of three different ambitions. The Pekingtuin was the garden of a vanished villa named Peking, and its red oak predates the park that formed around it; in October 2021 the municipality placed a protective ring around the trunk and invited villagers to submit inscriptions for it, which is the kind of honour most towns reserve for statues. The Cantonspark explains itself differently: from 1920 to 1987 it was Utrecht University's botanical garden, and when the university left, the exotics stayed, so a village of thirty thousand keeps a dawn redwood and a giant sequoia the way other towns keep a war memorial. Kasteel Groeneveld's tulip tree grove and copper beech belong to the estate-building era, when a good lane of trees was how you showed the neighbours you intended to stay. The ages here are honest rather than uniform: the oak's is well documented, the beech's is an estimate from girth, and each page says which is which.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Baarn?",
+      "a": "The best-documented is the American oak of the Pekingtuin, planted around 1850, with a 5.52 metre trunk. The copper beech at Kasteel Groeneveld may be older, estimated at 150 to 200 years, but that figure is inferred from girth rather than recorded."
+    },
+    {
+      "q": "Why does a village like Baarn have a sequoia and a dawn redwood?",
+      "a": "Because the Cantonspark was Utrecht University's botanical garden from 1920 to 1987. When the university withdrew, the collection's trees stayed behind in what is now a free public park, open daily."
+    },
+    {
+      "q": "Are Baarn's remarkable trees free to visit?",
+      "a": "All five are free. The Pekingtuin and Cantonspark are public parks in the village itself, and Kasteel Groeneveld is a Staatsbosbeheer estate with open grounds. Paleis Soestdijk's park, which holds more old trees, currently opens on a paid and limited basis and is not on this list."
+    },
+    {
+      "q": "What happened to the Kronkelbeuk in the Pekingtuin?",
+      "a": "The famous twisted beech that generations of Baarn children climbed no longer appears to be standing; it is recorded in our research as gone rather than listed as a tree to visit. If you know more about when and why it disappeared, the suggestion form on every page reaches us."
+    }
+  ],
+  "trees": [
+    {
+      "id": "brn_001",
+      "name": "The Cantonspark Dawn Redwood",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "roughly 78 years",
+      "age_min": 76,
+      "age_max": 80,
+      "location": {
+        "address": "Cantonspark, Abel Tasmanlaan (main entrance), Baarn",
+        "latitude": 52.2089,
+        "longitude": 5.2991,
+        "neighbourhood": "Cantonspark, former Utrecht University botanical garden"
+      },
+      "story": "Until 1941 this species existed only as a fossil. Botanists had described Metasequoia from imprints in stone and assumed it had been gone for millions of years, and then a stand of them turned up alive in central China. Seed went out to the world's botanical gardens within a few years, and Baarn got some of it. This tree germinated around 1948, which makes it one of the first generation of dawn redwoods to grow in Europe since the species disappeared from the record entirely.\n\nIt has grown fast. It measured 4.22 metres around in 2008 and 5.10 metres by 2021, and over roughly the same decade its height went from 25.4 metres to 28.2. By the standards of its own kind it is still a child.\n\nThe park explains the company it keeps. Cantonspark was laid out in 1902 as the private garden of the industrialist August Janssen, taken over by Utrecht University in 1918 as its botanical garden, and handed to the municipality as a free public park in 1987. Seven decades as a teaching collection is why a Dutch village park holds a living fossil, a giant sequoia and a pinetum.\n\nOne honest note. The most recent confirmation we could find, measurements and dated photographs, is from October 2021, and the pin marks the park rather than the exact stem.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October and November, when a conifer 28 metres tall turns rust orange and drops every needle it has"
+      },
+      "verified_sources": [
+        "https://web.archive.org/web/20230816113518/https://www.monumentaltrees.com/en/nld/utrecht/baarn/121_cantonspark/1797/",
+        "https://cantonspark.nl/index.php/het-park/park-impressies"
+      ],
+      "access": "Free, public park, open 08:00-19:00 daily",
+      "transport": "Baarn train station, roughly 15-20 minute walk; local bus to Cantonlaan/Javalaan area stops closer",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "brn_002",
+      "name": "The Cantonspark Giant Sequoia",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 100-120 years",
+      "age_min": 95,
+      "age_max": 125,
+      "location": {
+        "address": "Cantonspark, Abel Tasmanlaan (main entrance), Baarn",
+        "latitude": 52.2089,
+        "longitude": 5.2991,
+        "neighbourhood": "Cantonspark, former Utrecht University botanical garden / pinetum"
+      },
+      "story": "The tallest thing in this village park is a Californian. A giant sequoia, 5.20 metres around and roughly 34 metres tall when it was last measured in 2014, standing a fifteen minute walk from Baarn station and a long way from the Sierra Nevada, where the species survives in a scatter of groves and nowhere else in the wild.\n\nNobody wrote down when it was planted, so the age here is an estimate rather than a record. The park was laid out from 1902 for the industrialist August Janssen, passed to Utrecht University in 1918, and the university added a pinetum, a teaching collection of conifers, for its botany students. A girth of 5.20 metres fits a tree put in the ground somewhere in that window. The park's own description calls it one of the tallest and most monumental trees it has and leaves the date alone as well.\n\nWhat it has stood through is a university career and the end of one. Utrecht ran the garden until 1987, then let it go, and the municipality took it over and opened it free to anyone. The collection stayed exactly where it was and simply became a park, which is why a sequoia and a dawn redwood now share a lawn with dog walkers.\n\nTwo honest notes. The measurements above date from 2014, and the pin marks the park rather than the specimen.",
+      "verified_sources": [
+        "https://web.archive.org/web/20140829101200/http://www.monumentaltrees.com/en/nld/utrecht/baarn/121_cantonspark/",
+        "https://cantonspark.nl/index.php/het-park/park-impressies"
+      ],
+      "access": "Free, public park, open 08:00-19:00 daily",
+      "transport": "Baarn train station, roughly 15-20 minute walk; local bus to Cantonlaan/Javalaan area stops closer",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "brn_003",
+      "name": "The Tulip Tree Grove at Kasteel Groeneveld",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "roughly 110-115 years",
+      "age_min": 108,
+      "age_max": 116,
+      "location": {
+        "address": "Near the ijskelder (ice cellar), park of Kasteel Groeneveld, Groeneveld 52, Baarn",
+        "latitude": 52.2183,
+        "longitude": 5.255,
+        "neighbourhood": "Landgoed Groeneveld (Staatsbosbeheer estate), west of the castle"
+      },
+      "story": "Crowd trees together and they race each other. The tulip trees planted at Groeneveld between 1912 and 1915 went in as a grove rather than as specimens, around sixty of them standing close, and the competition for light drove them to 33 and 34 metres, among the tallest of their species recorded in the Netherlands. Their trunks are modest by comparison, between 2.7 and 3.1 metres around. They spent everything on going up.\n\nThe place to stand is the ice cellar. The estate's ijskelder, a brick chamber dug to hold winter ice through the summer, sits at the foot of the three tallest, and it now serves as a hibernation roost for bats. Above it the grove closes over your head.\n\nThere is a catch to a tulip tree this tall, and the local nature society states it plainly: the flowers, green and orange and genuinely tulip-shaped, open so high in the crown that most visitors only ever see them after they have fallen. In June, look down.\n\nThis entry is a grove, not a single stem, so come for one destination rather than one trunk. The original planting is around 113 years old; smaller trees mixed in among them are later infill, and the pin marks the ice cellar rather than any individual tree.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October and November, when sixty crowns turn clear yellow at once"
+      },
+      "verified_sources": [
+        "https://web.archive.org/web/20250817063724/https://www.monumentaltrees.com/nl/nld/utrecht/baarn/2258_kasteelgroeneveld/",
+        "https://www.ivn.nl/afdeling/eemland/natuurgebieden/groeneveld/"
+      ],
+      "access": "Free, public Staatsbosbeheer estate park; walkable outside the castle's own opening hours too",
+      "transport": "Bus from Baarn or Hilversum station to Groeneveld/Amsterdamsestraatweg stop, then short walk; no direct train station on site",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "brn_004",
+      "name": "The Copper Beech by the South Pond, Groeneveld",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "roughly 150-200 years",
+      "age_min": 140,
+      "age_max": 220,
+      "location": {
+        "address": "Near the southernmost pond, park of Kasteel Groeneveld, Groeneveld 52, Baarn",
+        "latitude": 52.217,
+        "longitude": 5.2545,
+        "neighbourhood": "Landgoed Groeneveld (Staatsbosbeheer estate)"
+      },
+      "story": "At 5.28 metres around, this is the thickest beech on the Groeneveld estate, and the number comes with an asterisk. It was measured a metre off the ground rather than at the standard 1.3 metres, almost certainly because something at chest height, a low limb or a spreading buttress, made the usual spot unmeasurable. So it is not directly comparable to the estate's other big beeches, which run from 4.00 to 5.05 metres taken properly. It is still the largest of them by a wide margin.\n\nNobody recorded when it went in, so the age above is inferred from its girth and from what was happening around it. Groeneveld's grounds were first laid out in Dutch Baroque geometry and then loosened into English landscape style through the nineteenth century, particularly after 1830, and a solitary copper beech placed for effect beside water is exactly that fashion. An open-grown beech this thick is usually put somewhere between 150 and 200 years old, which is a range and not a date.\n\nMost of the estate's beeches stand together in a copse west of the castle, competing and drawn up thin. This one has stood alone by the southernmost pond, which is why it carries the low, wide frame it does, roughly 27 metres tall and spreading. With the leaves down, that frame is the reason to walk out here in January.",
+      "best_time": {
+        "months": [
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "January and February, when the leaves are gone and the whole low, wide frame of it shows across the pond"
+      },
+      "verified_sources": [
+        "https://web.archive.org/web/20250817063724/https://www.monumentaltrees.com/nl/nld/utrecht/baarn/2258_kasteelgroeneveld/",
+        "https://www.ivn.nl/afdeling/eemland/natuurgebieden/groeneveld/"
+      ],
+      "access": "Free, public Staatsbosbeheer estate park; walkable outside the castle's own opening hours too",
+      "transport": "Bus from Baarn or Hilversum station to Groeneveld/Amsterdamsestraatweg stop, then short walk; no direct train station on site",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "brn_005",
+      "name": "The American Oak of the Pekingtuin",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "roughly 175 years",
+      "age_min": 165,
+      "age_max": 185,
+      "location": {
+        "address": "Pekingtuin, Javalaan side of the park (bounded by Stationsweg, Nijverheidstraat, Bosstraat and Javalaan), Baarn",
+        "latitude": 52.2099,
+        "longitude": 5.2915,
+        "neighbourhood": "Pekingtuin, village centre, near Baarn railway station"
+      },
+      "story": "In October 2021 the municipality of Baarn asked its residents what to write on a ring around a tree. Around twenty people sent something in. The line that won came from the poet Ewoud M. Rosenthal, submitted by his daughter, and it now runs around a steel band six metres across and twenty centimetres high, set into the grass of the Pekingtuin.\n\nThe ring is not decoration. It marks off the root plate of a northern red oak planted around 1850, now 5.52 metres around, and it is there to keep feet off the soil above the roots and to hold the fallen leaves in place so they rot down where they landed. Compacted ground is one of the quietest ways to kill an old tree, and the town decided this one was worth a fence you can read.\n\nThe species is the other half of the story. Quercus rubra comes from the eastern United States, and the Dutch call it the Amerikaanse eik. It was planted here as an exotic in a private pleasure garden decades before the villa quarter and the railway around it took their present shape, and it outlasted the garden: the Pekingtuin is now a free municipal park, five minutes on foot from Baarn station.\n\nThe pin marks the Javalaan side of the park rather than the exact stem.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October and November, when the leaves go scarlet and stay inside the ring to compost"
+      },
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Pekingtuin",
+        "https://www.baarnschecourant.nl/lokaal/overig/765077/bijzondere-boomring-geplaatst-in-baarnse-pekingtuin",
+        "https://www.oozo.nl/nieuws/baarn/2879690/bijzondere-boomring-geplaatst-in-baarnse-pekingtuin",
+        "https://groenegraf.blogspot.com/2017/09/huize-peking-huize-holland-en-huize.html"
+      ],
+      "access": "Free, publicly accessible municipal park",
+      "transport": "Baarn railway station, roughly 5-10 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    }
+  ]
+}
