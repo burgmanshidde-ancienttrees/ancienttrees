@@ -159,6 +159,32 @@ without being told to.
 Rough order of value: 3a first (we have the strongest, most flattering hook and
 a page to show), then 3b and 3f, then 3c, then 3e, then 3d.
 
+## Tier 4: press. One story, sent one desk at a time
+
+Added 2026-08-08 on Hidde's instruction ("zorg dat we de juiste content klaar
+hebben staan om persbureaus mee te benaderen"). The content now exists:
+`/collections/europes-oldest-trees-are-immigrants`, built on a finding that
+survives checking, four in ten of the ancient trees we map in European cities
+are not European species. The pitch, in English and Dutch, is
+`drafts/press-pitch.md`. Every figure regenerates with
+`python3 scripts/press_numbers.py`, and the spreadsheet a desk will ask for
+comes from the same script with `--csv`.
+
+**Not a wire service, and never a blast.** A press agency wants an exclusive or
+a wire-ready fact; a small project has neither the reach nor the news hook for
+that yet. What works at this size is one desk at a time, in this order:
+
+| Order | Who | Why them |
+|---|---|---|
+| 1 | One national outlet that runs long nature pieces | The story is a feature, not a news item, and needs 800 words to land |
+| 2 | City desks of the cities in the story | Seville, Paris, London, Palermo, Valencia, Berlin all have a named tree in it, and a local tree is a local story |
+| 3 | Tree, garden and heritage press | Smallest reach, highest hit rate, and the audience is exactly ours |
+| 4 | Only then, if one of the above ran it | A piece that already exists elsewhere is what makes a wire desk answer |
+
+Addresses are deliberately not listed yet: the right desk is a named journalist
+who has written about trees or cities recently, and that is a lookup worth
+doing per outlet at the moment of sending rather than a list that goes stale.
+
 ## Rules for all of it
 
 - **Drafts only from me, always.** He sends, from his own address.
