@@ -433,7 +433,16 @@ def main():
         for t in d.get("trees", []):
             if (t.get("photo") or {}).get("url"):
                 continue
-            if t["id"] in entries and not recheck:
+            prev = entries.get(t["id"])
+            if prev and not recheck:
+                continue
+            # A hunt marked exhausted stays exhausted, even under --recheck.
+            # Set when a viewing pass has looked at every candidate and found
+            # the source genuinely empty for this tree (par_017's nine were all
+            # OTHER cities' Anne Frank trees), so only a NEW source can close
+            # the gap and re-sweeping the same APIs buys nothing. --force
+            # overrides, for the day a new source really does appear.
+            if prev and prev.get("exhausted") and "--force" not in sys.argv:
                 continue
             todo.append((d["city"], t))
 
@@ -441,12 +450,25 @@ def main():
     print(f"{len(todo)} photo-less trees unchecked{where}; sweeping {min(limit, len(todo))}")
     for city, tree in todo[:limit]:
         cands = candidates_for(tree, city)
+        # Never clobber what a viewing pass already decided. Re-sweeping used
+        # to overwrite the whole entry, which threw away every "rejected:
+        # street scene, no tree in frame" verdict an Opus pass had paid for,
+        # and the next pass then judged the same images again. Judged
+        # candidates are kept and only genuinely new URLs are added.
+        prev = entries.get(tree["id"]) or {}
+        kept = [c for c in prev.get("candidates", []) if c.get("judged")]
+        seen = {c.get("url") or c.get("thumb") for c in kept}
+        fresh = [c for c in cands if (c.get("url") or c.get("thumb")) not in seen]
         entries[tree["id"]] = {
             "city": city, "name": tree["name"],
             "checked": time.strftime("%Y-%m-%d"),
-            "candidates": cands,
+            "candidates": kept + fresh,
         }
-        print(f"  {tree['id']}  {tree['name'][:44]:44s}  {len(cands)} candidate(s)")
+        if prev.get("exhausted"):
+            entries[tree["id"]]["exhausted"] = prev["exhausted"]
+        note = f", {len(kept)} judged kept" if kept else ""
+        print(f"  {tree['id']}  {tree['name'][:44]:44s}  "
+              f"{len(fresh)} new candidate(s){note}")
         json.dump(queue, open(QUEUE, "w"), indent=1, ensure_ascii=False)
         time.sleep(0.5)  # be polite to the API
 
