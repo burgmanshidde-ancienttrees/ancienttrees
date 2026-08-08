@@ -59,3 +59,14 @@ export function treeSlugsForCity(city: CityEntry): Record<string, string> {
   }
   return out;
 }
+
+/** Highest age_max wins, unless the city names its answer explicitly via
+ * oldest_tree_id (build_site.py:2768-2779). Amsterdam's Hortus cycad
+ * out-ages the Heimanseik but is a potted cycad, not a tree. */
+export function oldestTree(trees: Tree[], cityData?: { oldest_tree_id?: string | null }): Tree {
+  if (cityData?.oldest_tree_id) {
+    const named = trees.find((t) => t.id === cityData.oldest_tree_id);
+    if (named) return named;
+  }
+  return trees.reduce((best, t) => ((t.age_max ?? 0) > (best.age_max ?? 0) ? t : best));
+}
