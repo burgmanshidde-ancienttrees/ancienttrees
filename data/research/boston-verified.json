@@ -1,0 +1,94 @@
+[
+  {
+    "id": "bos_001",
+    "name": "The Shaw Memorial Elms",
+    "species": "English Elm (Ulmus procera)",
+    "age_estimate": "planted between 1772 and 1812, so roughly 214 to 254 years old",
+    "age_min": 214,
+    "age_max": 254,
+    "location": {
+      "address": "Boston Common, opposite 24 Beacon Street (flanking the Robert Gould Shaw Memorial, corner of Beacon and Park Streets)",
+      "latitude": 42.3575,
+      "longitude": -71.0635,
+      "neighbourhood": "Beacon Hill / Boston Common"
+    },
+    "verified_sources": [
+      "https://apps.bostonglobe.com/boston-revealed/series/shaw-elms/",
+      "https://www.universalhub.com/2020/two-oldest-trees-common (citing New England Folklore, https://newenglandfolklore.blogspot.com/2020/01/strange-old-trees-in-boston-and-beyond.html)",
+      "https://friendsofthepublicgarden.org/2020/06/17/meet-the-trees-the-elms-june-17-2020/"
+    ],
+    "access": "Free, public park (Boston Common), directly on the Freedom Trail",
+    "transport": "Park Street MBTA station (Red/Green Line), roughly 3-5 minute walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two large English elms flank Augustus Saint-Gaudens's 1897 memorial to Robert Gould Shaw and the Massachusetts 54th Regiment (the first African-American regiment in the Union Army). Believed planted by John Hancock: an 1780 document granted permission to plant elms across from Hancock's mansion when he was governor. Dated and confirmed planted 1772-1812, making them (per Boston Globe) the oldest English elms in the Western Hemisphere. The memorial was built around the trees decades later (dedicated 1897), sitting on a vault designed to protect their roots; this actually shields them from Dutch Elm Disease by restricting root space and densifying the wood. In 1927 the trees were thought near death; arborist Henry Davis began free ongoing care in the 1970s. Dramatic conservation: bricks packed inside the trunks for stability, 6-8 feet removed from the crowns in 2013, biweekly inspection, retrenchment pruning giving them a distinctive 'amputated' winter silhouette. Genetic potential estimated at 300-400 year lifespan. Species check: three sources (Boston Globe, Friends of the Public Garden's own 'Meet the Trees: The Elms', and by clear implication the Shaw memorial's own conservation history) call these English Elm (Ulmus procera); a fourth source, a 2015 'Taking Place in the Trees' blog post about the same two trees, was extracted by my fetch tool as saying 'American elms', which conflicts. Given two direct institutional sources agree on English Elm and the fourth is a single blog post I could not re-verify verbatim (possible extraction/loose-language error), treat English Elm as the better-supported answer, but the writer should know a minority source called them American Elm. FLAGGED for that species disagreement, not for existence or location, both of which are well supported. Also worth noting for the story: pruned branch wood has reportedly been made into pens sold as souvenirs."
+  },
+  {
+    "id": "bos_002",
+    "name": "The Peters Hill White Oak",
+    "species": "White Oak (Quercus alba)",
+    "age_estimate": "roughly 195 to 220 years, core-sampled in 2018 to a germination date in the early 1800s",
+    "age_min": 195,
+    "age_max": 220,
+    "location": {
+      "address": "Arnold Arboretum of Harvard University, northeast slope of Peters Hill, above the crabapple (Malus) collection",
+      "latitude": 42.2935,
+      "longitude": -71.1275,
+      "neighbourhood": "Peters Hill, Arnold Arboretum, Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://arboretum.harvard.edu/arnoldia-stories/existing-through-change-quercus-alba/ (Dosmann, Michael S. 2018. 'Existing through change: Quercus alba.' Arnoldia, 76(1): 44-45.)",
+      "https://arboretum.harvard.edu/events/2025-11-15/ (Arnold Arboretum 'Tree Mob' event page, describing it as possibly the oldest accessioned tree in the landscape)"
+    ],
+    "access": "Free, public arboretum, open dawn to dusk",
+    "transport": "Forest Hills MBTA station (Orange Line) roughly 15-20 minute walk, or bus to the Arborway/Peters Hill Gate entrance",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A white oak that predates the Arboretum itself: it grew wild on Peters Hill before the land was incorporated (first appears in an 1894 topographical survey of Peters Hill made for the City of Boston), and was only formally accessioned in 2010 (346-2010*A) as a tree 'found growing in place' rather than planted. Core sampling from the southwest stem in 2018 yielded 142 countable growth rings plus an estimated 60 more in a compromised/hollow center, putting germination in the early 1800s (roughly 200+ years before now). Double-leadered (twin stems fused near the base, visible as a seam), with crown gall swelling; height ~17.2m, spread ~28m, base diameter ~2m. Appears on a 1927 bird's-eye map of the Arboretum described poetically as 'a lone shepherd guarding an endless flock' of hawthorns, which were later replaced by the crabapple collection it now towers over. FLAGGED for two reasons: (1) both sources trace back to the Arnold Arboretum/Harvard itself (the Arnoldia journal article and the Arboretum's own event page), so despite being a rigorous scientific source (actual core sampling with ring counts, published citation), I could not find a second source independent of the institution; (2) no GPS coordinates are published for the tree itself, only 'northeast slope of Peters Hill, above the crabapple collection' so the coordinates given here are an approximate point within that general area of the Arboretum, not the tree's actual position. A future pass could get exact coordinates from the Arboretum's public plant-accession locator (arboretum.harvard.edu 'Search the Collections' with accession 346-2010*A) if it exposes coordinates."
+  },
+  {
+    "id": "bos_003",
+    "name": "The Franklin Tree of the Explorers Garden",
+    "species": "Franklin Tree (Franklinia alatamaha)",
+    "age_estimate": "roughly 121 years (accessioned as a rooted cutting in 1905)",
+    "age_min": 120,
+    "age_max": 122,
+    "location": {
+      "address": "Arnold Arboretum of Harvard University, Explorers Garden, Bussey Hill",
+      "latitude": 42.302,
+      "longitude": -71.1215,
+      "neighbourhood": "Bussey Hill, Arnold Arboretum, Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://arboretum.harvard.edu/plant-bios/franklin-tree/ (accession 2428-3*A, accessioned 1905)",
+      "https://www.treesandshrubsonline.org/articles/franklinia/franklinia-alatamaha/ (International Dendrology Society reference site, independent of Harvard; photo dated 2025-10-27 calling it 'the largest and oldest known example of Franklinia alatamaha anywhere in the world', confirming it standing and photographed recently)"
+    ],
+    "access": "Free, public arboretum, open dawn to dusk",
+    "transport": "Forest Hills MBTA station (Orange Line) roughly 15-20 minute walk, or bus to the Arborway entrance near Bussey Hill",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "Franklinia alatamaha is extinct in the wild: discovered by John Bartram in Georgia in 1765, seeds collected by his son William around 1776, and gone from its native habitat within about 50 years. Every Franklinia alive today, anywhere, descends from those Bartram seeds; the species is the sole member of its genus, in the tea family (Theaceae). The Arnold Arboretum holds accession 2428-3*A (and sibling 2428-3*B), propagated from a cutting and accessioned in 1905, sourced from Thos. Meehan & Son nursery in Pennsylvania (the lineage itself, 2428, traces to material from 1884). The Arboretum's own materials call it 'one of the oldest Franklin trees in existence'; independently, the International Dendrology Society's treesandshrubsonline.org (not a Harvard source) calls it, in an entry photographed 2025-10-27, 'the largest and oldest known example of Franklinia alatamaha anywhere in the world', which both independently corroborates the claim and confirms the tree was alive and standing as of October 2025. Blooms unusually late, cream-colored flowers alongside autumn foliage; good candidate for a best_time entry (autumn) if this ships. Location is the Explorers Garden on Bussey Hill; no street-level coordinates published, so the point given is an approximate location within that garden, not the individual plant."
+  },
+  {
+    "id": "bos_004",
+    "name": "The Dawn Redwood of the Public Garden",
+    "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+    "age_estimate": "roughly 63 years (planted 1963)",
+    "age_min": 62,
+    "age_max": 64,
+    "location": {
+      "address": "Boston Public Garden, near the Charles Street / Beacon Street corner of the Lagoon",
+      "latitude": 42.3555,
+      "longitude": -71.0715,
+      "neighbourhood": "Beacon Hill / Public Garden"
+    },
+    "verified_sources": [
+      "https://friendsofthepublicgarden.org/2020/04/14/meet-the-trees-the-dawn-redwood-april-13-2020/"
+    ],
+    "access": "Free, public park, open dawn to dusk",
+    "transport": "Arlington MBTA station (Green Line), roughly 2-3 minute walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One of four dawn redwoods in the Public Garden, planted 1963, described by Friends of the Public Garden as 'one of the most beloved trees in the Garden'; a younger 'Gold Rush' cultivar grows across the path from it. Species significance: Metasequoia was known only from fossils and presumed extinct until living specimens were found in Sichuan, China in 1944; the first seeds to leave China arrived in Jamaica Plain (i.e. at Harvard's Arnold Arboretum, a few miles from this tree) in early 1948, ahead of China's post-revolution isolation, and the Arboretum then propagated and distributed seedlings worldwide, including this one. Deciduous conifer: green needles turn bronze and drop in autumn (candidate best_time: autumn colour), fresh green flush in spring. FLAGGED: could only confirm the 1963 planting date and exact placement via the Friends of the Public Garden's own page; found no source independent of that organization for this specific specimen (general WebSearch AI summaries repeated the same fact without a distinct citation). Location is a corner of the Lagoon rather than a mapped point, so precision is approximate. A second, older dawn redwood also stands at the Boylston Street end of the Lagoon per the same source, which a future pass could verify as a separate or alternative entry."
+  }
+]
