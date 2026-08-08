@@ -1,0 +1,119 @@
+[
+  {
+    "id": "brn_001",
+    "name": "The Cantonspark Dawn Redwood",
+    "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+    "age_estimate": "roughly 78 years",
+    "age_min": 76,
+    "age_max": 80,
+    "location": {
+      "address": "Cantonspark, Abel Tasmanlaan (main entrance), Baarn",
+      "latitude": 52.2089,
+      "longitude": 5.2991,
+      "neighbourhood": "Cantonspark, former Utrecht University botanical garden"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/20230816113518/https://www.monumentaltrees.com/en/nld/utrecht/baarn/121_cantonspark/1797/",
+      "https://cantonspark.nl/index.php/het-park/park-impressies"
+    ],
+    "access": "Free, public park, open 08:00-19:00 daily",
+    "transport": "Baarn train station, roughly 15-20 minute walk; local bus to Cantonlaan/Javalaan area stops closer",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Species Metasequoia glyptostroboides ('watercipres' in Dutch), one of two large dawn redwood specimens in the Cantonspark. Cantonspark.nl's own history page (verified source 2) states both large specimens were grown from seed and are direct descendants of the first dawn redwoods found alive in China in 1941, the species having been known only from fossils before that rediscovery. monumentaltrees.com archived page (specimen id 1797, accessed via Wayback Machine since the live site returns a Cloudflare challenge to automated fetches) documents repeated girth/height measurements by named observers: 2008 girth 4.22m, 2009 4.46m, 2017 4.67m, 2021 5.10m @1.3m; height 25.40m (2011) growing to 28.20m (2021), with dated photos from 23 Oct 2021 as the most recent confirmation of life found this pass. That page states the tree was planted/germinated in 1948 (source: contributor note dated 2011, calculated 'exactly 75 years old' as of 2011... consistent with 1948 planting). Flagged because: (1) the most recent independent confirmation of life is the Oct 2021 photo/measurement, not within the last 1-2 years; (2) exact tree-level GPS coordinates were not recoverable (live site blocked, no archived page carried map data), so location is approximate to the park, not the specific specimen within it; the Pinetum/systeemtuin area is generally described as the south end of the park by the park's own historie page, though one search snippet described the pinetum as being on the west side, an internal inconsistency in secondary sources rather than in our own data. The park itself became a free public municipal park in 1987 (previously Utrecht University's botanical garden, and before that industrialist August Janssen's private 'overtuin' from 1902). Story angle: it is literally a living fossil, grown from seed collected right after the species went from 'presumed extinct' to rediscovered."
+  },
+  {
+    "id": "brn_002",
+    "name": "The Cantonspark Giant Sequoia",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "roughly 100-120 years",
+    "age_min": 95,
+    "age_max": 125,
+    "location": {
+      "address": "Cantonspark, Abel Tasmanlaan (main entrance), Baarn",
+      "latitude": 52.2089,
+      "longitude": 5.2991,
+      "neighbourhood": "Cantonspark, former Utrecht University botanical garden / pinetum"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/20140829101200/http://www.monumentaltrees.com/en/nld/utrecht/baarn/121_cantonspark/",
+      "https://cantonspark.nl/index.php/het-park/park-impressies"
+    ],
+    "access": "Free, public park, open 08:00-19:00 daily",
+    "transport": "Baarn train station, roughly 15-20 minute walk; local bus to Cantonlaan/Javalaan area stops closer",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Cantonspark.nl's own park-impressies page (source 2) names the mammoetboom as 'een van de hoogste en monumentale bomen in het park' (one of the tallest and most monumental trees in the park) but gives no planting date. monumentaltrees.com's archived index (source 1, specimen id 164, via Wayback Machine 2014 snapshot since the live site now returns a Cloudflare challenge to automated fetches) recorded girth 5.20m @1.3m and height approx. 34.00m as of 2014; a second, much smaller sequoia (id 587) also listed in the same park at ~35cm girth / ~4m height in 2014, evidently a young replacement planting, not the same tree. No individual page for id 164 was recoverable via Wayback (not archived separately), so no documented planting year was found this pass. Age range here is an ESTIMATE, not a sourced figure: the park was laid out by August Janssen from 1902 and passed to Utrecht University in 1918, which added a pinetum of conifers (per cantonspark.nl's historie page) for teaching; a girth of 5.20m by 2014 is consistent with a tree planted anywhere in that 1902-1930 window. Flagged for: (1) no directly sourced planting year or recent (last few years) confirmation of life, only the 2014 girth reading and the undated 'monumental' description; (2) location is approximate to the park only, exact specimen coordinates were not recoverable. A later pass with site access or a working monumentaltrees.com fetch should look up the individual specimen page (id 164) for a firmer date and coordinates before this ships with confident phrasing."
+  },
+  {
+    "id": "brn_003",
+    "name": "The Tulip Tree Grove at Kasteel Groeneveld",
+    "species": "Tulip Tree (Liriodendron tulipifera)",
+    "age_estimate": "roughly 110-115 years",
+    "age_min": 108,
+    "age_max": 116,
+    "location": {
+      "address": "Near the ijskelder (ice cellar), park of Kasteel Groeneveld, Groeneveld 52, Baarn",
+      "latitude": 52.2183,
+      "longitude": 5.255,
+      "neighbourhood": "Landgoed Groeneveld (Staatsbosbeheer estate), west of the castle"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/20250817063724/https://www.monumentaltrees.com/nl/nld/utrecht/baarn/2258_kasteelgroeneveld/",
+      "https://www.ivn.nl/afdeling/eemland/natuurgebieden/groeneveld/"
+    ],
+    "access": "Free, public Staatsbosbeheer estate park; walkable outside the castle's own opening hours too",
+    "transport": "Bus from Baarn or Hilversum station to Groeneveld/Amsterdamsestraatweg stop, then short walk; no direct train station on site",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "This is an ensemble entry, not a single tree: a compact, distinct grove of Liriodendron tulipifera standing together near the estate's 18th/19th-century ice cellar (ijskelder), which is itself a landmark (now a bat hibernation site per Dutch Wikipedia). monumentaltrees.com's archived Dutch-language page (source 1, accessed via Wayback Machine since the live site returns a Cloudflare challenge to plain fetches) states the park holds a group of 60 mature tulip trees planted 1912-1915, plus a further roughly 62 counting smaller/younger scattered specimens; three named specimens right by the ice cellar (ids 19452, 52185, 3422) measured 2.70-3.14m girth @1.3m and, remarkably, 33-34.2m tall, among the tallest tulip trees recorded in the Netherlands, because planting them close together in a grove pushed them to grow unusually straight and tall competing for light. ivn.nl (source 2, independent nature-society page for the Groeneveld estate) independently confirms: 'In de buurt van de ijskelder, Liriondendrons of tulpenbomen, meer dan 100 jaar oud' (near the ice cellar, tulip trees, more than 100 years old) and separately notes that because they stand grouped rather than solitary they have grown unusually large, and their tulip-shaped flowers are mostly only seen once fallen to the ground since the crown is so high. Age range derived from the 1912-1915 planting window stated by source 1 (113-114 years by 2026 for the original planting), widened slightly for uncertainty about which exact specimens near the ice cellar date to that original planting versus slightly later infill. Flagged because: (1) this is a grove/ensemble rather than one stem, and while it passes the collectibility test (compact, one obvious place to stand, famous for being exactly that combination of ice cellar plus tall grove) a later pass should double check it reads as one destination rather than a scattered planting; (2) location is approximate to 'near the ice cellar' within the estate, not individual tree GPS; (3) no dated recent (last few years) photo confirming current health was found this pass, only 2010-2021 measurement data and a 2024-dated photo of an unrelated beech on the same monumentaltrees park page (suggesting the page itself was actively maintained into 2024, indirect but reasonable evidence of currency). Story angle: a species long known in Europe only from fossils of Liriodendron survivorship, planted deliberately close together as an experiment in canopy competition, resulting in one of NL's tallest stands of the species."
+  },
+  {
+    "id": "brn_004",
+    "name": "The Copper Beech by the South Pond, Groeneveld",
+    "species": "Copper Beech (Fagus sylvatica Purpurea Group)",
+    "age_estimate": "roughly 150-200 years",
+    "age_min": 140,
+    "age_max": 220,
+    "location": {
+      "address": "Near the southernmost pond, park of Kasteel Groeneveld, Groeneveld 52, Baarn",
+      "latitude": 52.217,
+      "longitude": 5.2545,
+      "neighbourhood": "Landgoed Groeneveld (Staatsbosbeheer estate)"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/20250817063724/https://www.monumentaltrees.com/nl/nld/utrecht/baarn/2258_kasteelgroeneveld/",
+      "https://www.ivn.nl/afdeling/eemland/natuurgebieden/groeneveld/"
+    ],
+    "access": "Free, public Staatsbosbeheer estate park; walkable outside the castle's own opening hours too",
+    "transport": "Bus from Baarn or Hilversum station to Groeneveld/Amsterdamsestraatweg stop, then short walk; no direct train station on site",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Species is Fagus sylvatica Purpurea Group, the copper/red beech cultivar (Dutch: rode beuk). monumentaltrees.com's archived Dutch-language park page (source 1, id 34477, accessed via Wayback Machine since the live site now returns a Cloudflare challenge to plain fetches) records this specimen at 5.28m girth measured at 1m height (non-standard measurement height, noted on the page itself, not the usual 1.30m; likely because of a low buttressing or branch at breast height) near the estate's southernmost pond, roughly 27m tall. This is the largest-girthed of several big beeches on the same park page (others: 4.01m, 4.15m f. purpurea, 5.05m @40cm, 4.52m, 4.17m, 4.00m, mostly clustered 'in een bosje ten westen van het kasteel' / a copse west of the castle). ivn.nl (source 2) independently lists 'mooie alleenstaande rode beuken' (beautiful solitary red/copper beeches) among the estate's notable winter-viewing trees, corroborating that Groeneveld is known for standout specimen copper beeches specifically, distinct from the ordinary beech copse. Age is an ESTIMATE, not sourced: no planting date was found this pass; the park was laid out in Dutch Baroque style and remodelled to English landscape style especially after 1830 (Dutch Wikipedia), and a girth over 5m for a beech is consistent with a tree of considerable age (rule-of-thumb ranges for open-grown beech of this girth commonly cited as 150-250 years, hence the wide range given here rather than a false-precise figure). Flagged because: (1) age is inferred from girth and estate history, not a documented planting record; (2) the 1m-height girth measurement is non-standard and not directly comparable to the park's other 1.30m-height figures without adjustment, a register/measurement inconsistency worth a note rather than silent correction; (3) no recent (last few years) dated photo or observation confirming current health was found this pass, only the archived measurement table; (4) exact tree-level coordinates were not recoverable (live site blocked), so the pin is estate-approximate only, placed near the described 'southernmost pond' rather than confirmed. A later pass with working access to the live monumentaltrees.com page (per-specimen page for id 34477) or a site visit should firm up both age and pin."
+  },
+  {
+    "id": "brn_005",
+    "name": "The American Oak of the Pekingtuin",
+    "species": "Northern Red Oak (Quercus rubra)",
+    "age_estimate": "roughly 175 years",
+    "age_min": 165,
+    "age_max": 185,
+    "location": {
+      "address": "Pekingtuin, Javalaan side of the park (bounded by Stationsweg, Nijverheidstraat, Bosstraat and Javalaan), Baarn",
+      "latitude": 52.2099,
+      "longitude": 5.2915,
+      "neighbourhood": "Pekingtuin, village centre, near Baarn railway station"
+    },
+    "verified_sources": [
+      "https://nl.wikipedia.org/wiki/Pekingtuin",
+      "https://www.baarnschecourant.nl/lokaal/overig/765077/bijzondere-boomring-geplaatst-in-baarnse-pekingtuin",
+      "https://www.oozo.nl/nieuws/baarn/2879690/bijzondere-boomring-geplaatst-in-baarnse-pekingtuin",
+      "https://groenegraf.blogspot.com/2017/09/huize-peking-huize-holland-en-huize.html"
+    ],
+    "access": "Free, publicly accessible municipal park",
+    "transport": "Baarn railway station, roughly 5-10 minute walk",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "IMPORTANT CONTEXT FOR THE WRITER: this candidate was raised to priority mid-pass on a tip from Hidde (project owner, grew up in Baarn), who described the Pekingtuin as containing '1 bizar oude boom' without naming the species. Treated as a lead to verify, not a fact, per standing rule for reader/owner tips. Verification below suggests strong odds this IS that tree: it is the only tree in the Pekingtuin that the municipality itself has singled out and physically protected. Dutch Wikipedia's Pekingtuin article (source 1) states: 'De Amerikaanse eik in het park werd rond 1850 geplant en heeft een omtrek van 5,52 meter' (the American oak in the park was planted around 1850 and has a girth of 5.52 metres), i.e. Quercus rubra, called 'Amerikaanse eik' in Dutch; confirms the park is freely accessible and gives its boundaries. Sources 2 and 3, independent regional news outlets (Baarnsche Courant, the town's own paper, and Oozo.nl, a separate regional news aggregator, both dated 28 October 2021), report that the municipality installed a protective metal 'boomring' (tree ring), 6 metres in diameter and 20cm high, around 'de monumentale [Amerikaanse] eik in de Pekingtuin' specifically to stop soil compaction over its root plate and let fallen leaves compost in place, i.e. active, recent (2021) municipal tree care for this specific specimen, and confirms its location on the Javalaan side of the park. The municipality also ran a public callout for residents to submit text for the ring (about 20 responses; the chosen text was a poem line by Ewoud M. Rosenthal, submitted by his daughter), which is the kind of small-town civic moment a child growing up in Baarn plausibly remembers, matching the owner's tip. Source 4 (Geheugenvanbaarn.nl local history blog) independently confirms the Pekingtuin/plantsoen remains municipal property and is publicly accessible today, and separately documents that four OTHER, unrelated trees nearby were planted circa 1938-1947 to commemorate the births of the four Dutch princesses, each with an inscribed tile, showing the park has a habit of dated, documented tree plantings generally, distinct from this oak. Two independent sources now corroborate existence, species and recent life (Wikipedia for the botanical figures; the 2021 press coverage, itself carried by at least two outlets, for species, specific location and current care), so this is upgraded from flagged to ai_generated. What is NOT nailed down: (1) no source this pass gave GPS coordinates for the exact spot, only 'Javalaan side of the park', so location_precision stays approximate rather than confirmed; (2) monumentaltrees.com has a page for this park (id 1083) but returned a Cloudflare block live with no Wayback Machine snapshot found, so its independent girth/height measurement history could not be cross-checked this pass, a session with working access should retry it and could firm the pin further via its map data. Story angle: an American species planted in a Dutch merchant's pleasure garden decades before the villa quarter around it existed in its current form, protected by name and by ring, with a town-wide poetry callout wrapped around its roots."
+  }
+]
