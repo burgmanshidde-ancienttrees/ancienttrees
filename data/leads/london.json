@@ -1,0 +1,80 @@
+{
+  "leads": [
+    {
+      "name": "The Dorchester Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "location": "Outside The Dorchester hotel, Park Lane, Mayfair, approx 51.5049, -0.1526",
+      "reason": "Genuinely verified as a 'Great Tree of London' (London Tree Forum, 1997) with real history (a BBC programme was made about it), publicly visible on the Park Lane pavement so access is fine. Held back only because it belongs to a different, Mayfair/St James's cluster (0.79 km from the Berkeley Square Plane anchor lon_004) rather than the City of London/Cheapside cluster this pass built, and this pass could not chase both anchors in one window. No source found gives a specific planting date; the hotel opened in 1931, so the tree may predate or postdate that. Worth a dedicated Mayfair pass alongside Berkeley Square."
+    },
+    {
+      "name": "The Marylebone Elm",
+      "species": "Huntingdon Elm (Ulmus x hollandica 'Vegeta')",
+      "location": "Garden of Rest, Marylebone High Street, Westminster, approx 51.5210, -0.1520",
+      "reason": "Well documented: a 'Great Tree of London', estimated ~150 years old, the last Huntingdon elm in Westminster to have escaped Dutch elm disease and to have survived the Blitz (its parish church was bombed and demolished, leaving the tree stranded outside a small Garden of Rest). Two independent sources agree on species and the disease-survivor history. Held back on distance: 1.3 km from Berkeley Square but 2.65-2.94 km from the Whitehall/Embankment trees below, so it does not sit inside one 2 km cluster with them. Would pair well with the Dorchester Plane and Green Park in a dedicated Mayfair/Marylebone cluster."
+    },
+    {
+      "name": "The Embankment Plane (Horse Guards Avenue)",
+      "species": "Oriental Plane (Platanus orientalis) or London Plane",
+      "location": "North side of Horse Guards Avenue at Victoria Embankment, Westminster, approx 51.5051, -0.1234",
+      "reason": "A 'Great Tree of London', planted 1870 as part of the first systematically tree-planted embankment scheme in the city, described in that source as one of the tallest London planes in the UK (soften per hard rule 8, this needs a second superlative check before publishing). Only one strong independent source found for the specific 1870 date and species claim; general embankment planting history corroborates the era but not the individual tree. Held back on distance from the Mayfair anchor and because a second source for the individual tree (not just the embankment scheme) was not found in this pass's window."
+    },
+    {
+      "name": "The Abbey Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "location": "Near the entrance to Westminster Abbey, Broad Sanctuary, Westminster, approx 51.4995, -0.1273",
+      "reason": "A 'Great Tree of London' per Wikipedia's list ('accessible 8am-5pm'), and monumentaltrees.com independently records a London Plane close to the Abbey entrance with a measured girth of 3.98m and height 25.4m as of 2013 (verification only, not sole source). No source gives a planting date or clear age estimate, and it is unclear whether the 'Abbey Plane' of the Great Trees list is the same tree as the one monumentaltrees measured, or one of five 1850-planted planes in the Abbey's College Garden. Held back on both identity ambiguity and distance from the chosen cluster."
+    },
+    {
+      "name": "Inner Temple Garden Black Mulberry",
+      "species": "Black Mulberry (Morus nigra)",
+      "location": "Benchers' Walk, Inner Temple Garden, by the railings outside Paper Buildings, City of London, OS grid ref TQ 31323 80934",
+      "reason": "A real, mature, heritage-classified tree (girth 150cm, height ~10m per Morus Londinium's survey), 1.26 km from the Cheapside anchor so well within cluster range, and the garden is genuinely open to the public (12:30-3pm each weekday, per Morus Londinium; Inner Temple's own site did not confirm hours independently in this pass). Held back purely on age: no source found gives a planting date, age estimate, or even a rough century, only 'mature'. A general legend connects James I's 1608 mulberry-planting campaign to City of London legal gardens, but no source ties that specifically to this individual tree, and one academic-leaning source calls Middle Temple's nearby mulberries 'probably Victorian' despite similar legends, so guessing an age here would be fabrication. Worth revisiting with a direct enquiry to Inner Temple's garden team or the Tree Register of the British Isles (TROBI), which this pass's PDF fetch of a relevant mulberry survey could not extract text from."
+    },
+    {
+      "name": "Quaker Garden plane trees (Bunhill Fields)",
+      "species": "London Plane (Platanus x acerifolia)",
+      "location": "Quaker Gardens, between Banner Street and Chequer Street, Islington, approx 51.5265, -0.0912",
+      "reason": "1.23 km from the Cheapside anchor, within cluster range, and a genuinely public garden with real history (first Quaker burial ground, 1661-1855, George Fox among 12,000 buried here). Held back because sources actively disagree on the trees' age: the Bunhill Fields Quaker Meeting's own page says the mature planes were 'planted about 1880' (~145 years), while a Londonist piece says 'two of which may be 18th century.' At either age this reads as a mature garden rather than a genuinely ancient tree, and the disagreement was not resolved in this pass's window. Blocked from delivery on the never-pick-a-winner-silently rule; a future pass could check the London Gardens Trust's fuller site record (ISL064, returned 403 to this pass's fetchers) for a firmer date."
+    },
+    {
+      "name": "Amwell Fig, exact planting year",
+      "species": "Common Fig (Ficus carica)",
+      "location": "See lon_012 in the delivery file",
+      "reason": "Delivered flagged in this pass (see data/research/london-verified.json, lon_012); noted here so a later pass knows a second, non-paywalled independent source for its age (beyond thestreettree.substack.com, which cuts off at a paywall) would upgrade it from flagged to confirmed. The Amwell Society's own history page (amwell.org.uk/history) does not mention the fig at all despite covering the school's construction, which is itself odd and worth a direct follow-up."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Gray's Inn Catalpa (the 'Bacon tree')",
+      "reason": "The specimen popularly linked to Francis Bacon and Walter Raleigh (legend: planted circa 1608, brought from Bermuda) was 'crushed beneath an up-rooted plane tree in the hurricane of 1987' according to Parks & Gardens UK, leaving only 'a single twisted trunk' of the original; that same source is skeptical of the Bacon legend itself and notes the Walks actually hold two 18th-century catalpas rather than one 400-year-old original. A fan/enthusiast site (sirbacon.org) repeats the uncritical 400-year legend with no horticultural sourcing. Blocked because it is unclear whether a living, recognisable single tree survives the 1987 storm damage at all (the never-a-carcass rule) or whether any surviving catalpa there is the 18th-century pair rather than the legendary original, and because Gray's Inn's own official page on the Walks returned HTTP 403 to every fetch attempt in this pass, so no primary confirmation of current condition or public access hours was possible."
+    },
+    {
+      "name": "Lincoln's Inn Fields plane trees",
+      "reason": "Multiple sources repeat the vague claim that Lincoln's Inn Fields holds 'some of the first London planes planted in Britain', but none names or locates an individual tree, gives a planting date, or distinguishes an old survivor from later replacements. Not a collectible point: no obvious single tree to stand at. Blocked for lack of specificity, not for access (the Fields are a genuine public park)."
+    },
+    {
+      "name": "Postman's Park mature trees",
+      "reason": "The City of London's own official page for the park (fetched directly) describes only generic planting and the Watts memorial, with no tree named, dated or otherwise singled out. Other sources mention plane, fig, chestnut and lime trees present but not any specific individual worth a page. Blocked for lack of a documented individual specimen, not for access."
+    },
+    {
+      "name": "Guildhall Yard tree",
+      "reason": "No source found describes any specific old or notable tree at Guildhall Yard; searches returned only the Roman amphitheatre and general Guildhall history. Blocked for lack of any candidate at all."
+    },
+    {
+      "name": "Christchurch Greyfriars Church Garden trees",
+      "reason": "The garden itself was only established in 1989 and replanted in 2011; whatever grows there today cannot be more than about 37 years old. Blocked as too young for this project."
+    },
+    {
+      "name": "St Dunstan-in-the-East garden fig and vines",
+      "reason": "The famous ruin garden was only opened to the public in 1970 after the City decided in 1967 to plant the bombed-out nave; nothing growing there can be more than about 56 years old. Blocked as too young, however photogenic the ruin itself is."
+    },
+    {
+      "name": "Charterhouse Square plane trees",
+      "reason": "British History Online notes the square's current planting arrangement dates to an 1853 replanting, which could put some trees at roughly 170 years, but no source names or locates one individual tree distinctly from the rest of the square's planting. Blocked for lack of a single identifiable specimen; worth another look if a future pass can get past the generic square-history sources to an arboricultural survey."
+    },
+    {
+      "name": "Girdlers' Company garden mulberry and vine",
+      "reason": "One search snippet mentions the Girdlers' Company 'had a fine walled garden with a mulberry and a vine', past tense and unsourced beyond a fragment. City livery company gardens are generally private, members-only spaces even when the Barbican-area Barber-Surgeons' and Salters' gardens are occasionally opened for events. Blocked pending confirmation the garden and tree still exist and that public access is genuine, neither of which this pass could establish."
+    }
+  ]
+}

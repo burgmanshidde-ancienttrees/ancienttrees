@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "id": "lon_011",
+    "name": "The St Paul's Churchyard Planes",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 260 years",
+    "age_min": 230,
+    "age_max": 280,
+    "location": {
+      "address": "North Churchyard, St Paul's Cathedral, City of London EC4M 8AD",
+      "latitude": 51.5145,
+      "longitude": -0.098,
+      "neighbourhood": "City of London"
+    },
+    "verified_sources": [
+      "https://oxbowdbbc.wordpress.com/2016/09/19/st-pauls-cathedral-hidden-history-half-truths/",
+      "https://londongardenstrust.org/inventory/site-record?ID=COL096"
+    ],
+    "access": "Free, open access, public churchyard garden on the north side of St Paul's Cathedral (no ticket needed for the garden, only for the cathedral interior)",
+    "transport": "2 min walk from St Paul's station (Central Line)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Three large London planes stand on the north side of St Paul's Cathedral churchyard, in a public garden distinct from the already-published Cheapside Plane (lon_003), which stands about 400m away at the Wood Street/Cheapside corner. Source 1 (a detailed local-history blog post) states directly: 'On the north side there are three large plane trees (a fourth had to be removed after a storm in 1987). They are ancient, perhaps over 250 years old, so somebody planted them in the middle of the 18th century... Like the cathedral, they have survived the Blitz.' Source 2, the official London Parks & Gardens Trust inventory record for the churchyard (site ID COL096), independently corroborates: 'In the north are some of the oldest plane trees in the City.' The precise '250+ years' figure and the 1987-storm/fourth-tree detail come from source 1 only; source 2 corroborates the general claim (oldest plane trees in the City) but not the exact number or age. Flagged for that reason, and because this is an ensemble of three unnamed trees rather than one named specimen (compact, one obvious place to stand: the paved path along the north side of the churchyard). No individual tree-level coordinates found in any source; the location given is the churchyard garden's approximate centre on its north side. Good material for the writer: same churchyard as the cathedral that replaced Old St Paul's after the Great Fire, planted mid-18th century when the current cathedral was still relatively new, survived both the Blitz and the Great Storm of 1987 (which took the fourth tree of the original group). Distance from the Cheapside Plane anchor (lon_003): approximately 0.39 km, well within a single walk."
+  },
+  {
+    "id": "lon_012",
+    "name": "The Amwell Street Fig",
+    "species": "Common Fig (Ficus carica)",
+    "age_estimate": "roughly 195 years",
+    "age_min": 180,
+    "age_max": 200,
+    "location": {
+      "address": "Amwell Street, outside the former Clerkenwell Parochial Schools building, EC1R",
+      "latitude": 51.53,
+      "longitude": -0.1099,
+      "neighbourhood": "Clerkenwell, Islington"
+    },
+    "verified_sources": [
+      "https://thestreettree.substack.com/p/188-teaching-aid-fig",
+      "https://www.monumentaltrees.com/en/gbr/england/greaterlondon/4533_amwellstreetec1/"
+    ],
+    "access": "Free, open access, standing against a street frontage on public pavement",
+    "transport": "8 min walk from Angel station (Northern Line) or Farringdon station",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A sprawling, multi-branched, prop-supported common fig, actually more than one stem/trunk from the same rootstock, growing against the former Clerkenwell Parochial Schools building on Amwell Street. Source 1 (Paul Wood, The Street Tree, a specialist London-tree newsletter) states it 'has probably been here since the schools opened' and was 'intentionally planted in front of the Clerkenwell Parochial Schools', 'possibly, in part, to help illustrate biblical stories' (article partly paywalled; this is the quoted portion available). One source (the Amwell Society's own history page) dates the Parochial School building to 1830, not 1827 as some secondary summaries claim; treat the exact founding year as 1827-1830 and the tree's age as approximate rather than precise. Source 2, monumentaltrees.com, corroborates the tree's existence, species, exact street and general location (used for verification only, per the hard rule, not as the source of any fact stated above). FLAGGED for two reasons: (1) the age claim rests on one substantive source rather than two independent ones, since monumentaltrees only verifies existence/location, not age; (2) distance from the Cheapside Plane anchor (lon_003) is approximately 2.0 km straight-line, likely 2.3-2.5 km on foot, at or just past the edge of 'roughly 2 km' from the rest of this City of London cluster. Recommend the main session judge whether this joins the St Paul's/Cheapside walk as a short detour or is held for a separate Clerkenwell cluster. Good material for the writer: an intentionally planted fig outside a Victorian charity school, a nice human-history angle distinct from the royal-park/churchyard stories that dominate London's list, and Islington still records it as a notable street tree today."
+  }
+]
