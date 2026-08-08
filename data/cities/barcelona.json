@@ -1070,6 +1070,35 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "bcn_033",
+      "name": "The Mastic of Hort de l'Avi",
+      "species": "Mastic Tree (Pistacia lentiscus)",
+      "age_estimate": "not documented; the register lists no planting year",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Carrer del Torrent del Remei (rear access to Park Guell / Hort de l'Avi from Carrer de la Farigola), el Coll, 08023 Barcelona",
+        "latitude": 41.4159744572976,
+        "longitude": 2.149100134074295,
+        "neighbourhood": "el Coll, Gracia"
+      },
+      "story": "A mastic is supposed to stay a shrub. Pistacia lentiscus grows low and scrubby across the Mediterranean, the kind of plant nobody looks at twice, and this one never got the memo. Two of its main limbs run out nearly horizontal, thicker than a wrist, one holding itself in open air and the other simply resting on the ground, together spreading a canopy of 20 to 25 square metres from a base no wider than a doorway. That is a shrub's growth habit at a tree's scale, which is presumably why Barcelona catalogued it in 2013 as a tree of local interest rather than as landscaping.\n\nIt stands at the back entrance to Park Guell's free wooded slope, on the path in from Carrer de la Farigola, right beside Hort de l'Avi. That allotment garden opened in 1986 after a group of elderly Gracia residents asked the city for the grounds of Park Guell's demolished old caretaker's house, and residents over 65 still work it today on a lottery basis. The mastic grows at the shared access path, not inside the fenced plots, so anyone can reach it without a permit. Nobody has dated it. No source records a planting year and no dendrochronologist has measured it, so its age stays an open question rather than a number. It stands about 500 metres from the Wild Olive of Park Guell, an easy add to that same hillside walk.",
+      "verified_sources": [
+        "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest/arbre-d-interes-local-llentiscle-accessos-a-l-hort-de-l-avi-des-del-carrer-farigola-99400455063",
+        "https://bcnsostenible.cat/web/punt/llentiscle-a-lhort-de-lavi"
+      ],
+      "access": "Free. Stands right at a public access path into Park Guell's freely accessible wooded perimeter (the back entrance off Carrer de la Farigola / Carrer del Torrent del Remei), separate from both the ticketed Monumental Zone and the adjoining Hort de l'Avi allotment garden itself, which is a gated community garden for over-65 residents and not where the tree stands.",
+      "transport": "Vallcarca or Lesseps (Metro L3), roughly 15-20 min walk uphill via Carrer de la Farigola.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ],
   "oldest_tree_id": "bcn_001"
