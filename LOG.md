@@ -2,6 +2,16 @@
 
 What the autonomous runs did, newest first. One entry per run that actually changed something. Hidde reads this to catch up, and says good or bad.
 
+## 2026-08-08 — Session, part two: Amsterdam 11 to 17 on its own city register, NYC's first Central Park photo, outreach ready to send
+
+**Amsterdam grew 11 to 17, and the way it grew matters more than the count.** The verify pass scouted the lead an earlier pass left ("Amsterdam's own bijzondere bomen register") and it paid: Gemeente Amsterdam's designated-trees layer (5,827 trees, species, plant year, girth, tree-level coordinates) is explicitly licensed for commercial reuse ("U mag de dataset zowel voor niet-commerciele als commerciele doeleinden gebruiken"). Imported to data/registers/amsterdam-bijzondere-bomen.json, recorded in OPEN_DATA_SURVEY.md; the CC-BY-NC national register stays a lead list. Six new trees around Artis and the Hortus (Persian Ironwood, Coast Redwood, Twisted Catalpa, Shellbark Hickory, Turner's Oak, Ginkgo), all within 250m of the Plantage cluster, which now routes as a real second walk. Three carry source date conflicts, stated in the prose, unresolved. Two honesty calls at merge: ams_017's pin went to approximate because its own curation note hedged the exact trunk, and ams_011 (the 1795 champion Turkish Hazel) went the other way, approximate to confirmed, from the register's exact coordinate. Amsterdam's copy now says seventeen everywhere; the ratchet check caught all three stale counts.
+
+**Photo viewing pass, 30 images against Cadiz:** one approval, nyc_011's Great Elm of Central Park West (CC0, by an NYBG botanist, geocoded to the exact corner). Two hunts declared exhausted and recorded in CURATION.md so no run repeats them: dub_005 (all ten candidates are Grafton Street scenes) and par_017 (all nine are OTHER cities' Anne Frank trees). Those two gaps need a reader or the outreach lane, not another sweep.
+
+**The backlink machine is loaded.** drafts/OUTREACH.md now holds ~50 named targets; a contact scout read 24 real addresses off the organisations' own sites (4 more are form-only; provenance per address in data/research/outreach-contacts.json); drafts/backlinks-parks.md has ten send-ready drafts with addresses, in Italian, German, Spanish and French where that fits. And the reciprocity the emails claim now exists: every park page links to its official site ("Opening times and visitor information"). Milano is PEC-only (may bounce Gmail; use their form), monumentaltrees.com is Cloudflare-walled (visit the form in a browser).
+
+FOR HIDDE when you're back: the ten park emails are ready to send from drafts/backlinks-parks.md, address above each draft. Nothing else waits on you.
+
 ## 2026-08-08 — Session: Paris +8 and Vienna +3 published, weekly analysis unstuck, content-lead detector learns tree names
 
 Working session with Hidde ("run maar, we hebben nog tokens"). Ladder walked first: no submissions (no key in session), smoke green, both 2026-08-07 BLOCKERs already fixed by be60d17; finished the remaining WARN by shortening par_013-015's discursive age chips to a plain "not documented".
