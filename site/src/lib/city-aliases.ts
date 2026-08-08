@@ -1,0 +1,54 @@
+// Ported from city_aliases()/check_city_names(), build_site.py:2541-2576.
+// One lesson that landed twice (a city shipped under its local name) became
+// a build check per CLAUDE.md's ratchet; this keeps it a check here too.
+// Removing it needs Hidde, same as the Python version.
+import fs from "node:fs";
+import path from "node:path";
+import { DATA } from "./data-dir";
+
+function foldName(s: string): string {
+  return s
+    .normalize("NFKD")
+    .replace(/[^\x00-\x7F]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "");
+}
+
+/** Local spelling -> the English name this site publishes under. */
+export function cityAliases(): Record<string, string> {
+  const f = path.join(DATA, "city-aliases.json");
+  if (!fs.existsSync(f)) return {};
+  const data = JSON.parse(fs.readFileSync(f, "utf-8"));
+  return data.aliases ?? {};
+}
+
+/** Throws if any city name/slug in the given list is published under its
+ * local spelling when English uses another (e.g. shipping "Padova" instead
+ * of "Padua"). Call once at build time over every city about to render. */
+export function checkCityNames(cities: { slug: string; city: string }[]): void {
+  const alias = cityAliases();
+  const errors: string[] = [];
+  for (const entry of cities) {
+    for (const [value, field] of [
+      [entry.city, "city name"],
+      [entry.slug, "slug"],
+    ] as const) {
+      const english = alias[foldName(value)];
+      if (english && foldName(english) !== foldName(value)) {
+        errors.push(
+          `${entry.slug}: ${field} is ${JSON.stringify(value)}, but this site publishes in English, ` +
+            `where it is ${JSON.stringify(capitalize(english))}. Rename it and add the old slug to ` +
+            `RENAMED_CITY_SLUGS so the live URL keeps resolving, or remove the pair from ` +
+            `data/city-aliases.json if English really does use ${JSON.stringify(value)}.`
+        );
+      }
+    }
+  }
+  if (errors.length) {
+    throw new Error(`City naming check failed:\n${errors.join("\n")}`);
+  }
+}
+
+function capitalize(s: string): string {
+  return s.replace(/\b\w/g, (c) => c.toUpperCase());
+}

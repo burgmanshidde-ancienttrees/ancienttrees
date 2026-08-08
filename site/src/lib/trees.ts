@@ -1,0 +1,61 @@
+// Shared tree-level helpers used across contracts. Single source so
+// redirect-map.ts, parks.ts, species.ts etc. don't each carry their own
+// copy of the same logic ported from build_site.py.
+import type { CollectionEntry } from "astro:content";
+
+export type Tree = CollectionEntry<"cities">["data"]["trees"][number];
+export type CityData = CollectionEntry<"cities">["data"];
+export type CityEntry = CollectionEntry<"cities">;
+
+/** Ported verbatim from tree_is_renderable(), build_site.py:2275. */
+export function treeIsRenderable(t: Tree): boolean {
+  const loc = t.location ?? {};
+  return Boolean(t.story) && loc.latitude != null && loc.longitude != null;
+}
+
+/** Ported verbatim from slugify(), build_site.py:918. Order matters: strip
+ * quotes and a leading "the " BEFORE the NFKD/ASCII fold. */
+export function slugify(name: string): string {
+  let s = name.toLowerCase().replace(/'/g, "").replace(/’/g, "");
+  if (s.startsWith("the ")) s = s.slice(4);
+  s = s
+    .normalize("NFKD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^\x00-\x7F]/g, "");
+  s = s.replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  return s;
+}
+
+/** A city "renders" (has a page) once it has at least one renderable tree,
+ * mirroring build_city_page's actual gate (build_site.py:3423). */
+export function cityIsRenderable(city: CityEntry): boolean {
+  return city.data.trees.some(treeIsRenderable);
+}
+
+export function renderableTrees(city: CityEntry): Tree[] {
+  return city.data.trees.filter(treeIsRenderable);
+}
+
+/** Human distance between two tree locations: "350 m" or "2.1 km".
+ * Ported from haversine()/dist_label(), build_site.py:911-915,972-975. */
+export function distLabel(
+  a: { latitude: number; longitude: number },
+  b: { latitude: number; longitude: number }
+): string {
+  const toRad = (d: number) => (d * Math.PI) / 180;
+  const [lat1, lon1, lat2, lon2] = [toRad(a.latitude), toRad(a.longitude), toRad(b.latitude), toRad(b.longitude)];
+  const h = Math.sin((lat2 - lat1) / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin((lon2 - lon1) / 2) ** 2;
+  const m = 6371 * 2 * Math.asin(Math.sqrt(h)) * 1000;
+  return m < 1000 ? `${Math.round(m / 10) * 10} m` : `${(m / 1000).toFixed(1)} km`;
+}
+
+/** Every renderable tree's slug within a city, id -> slug. Mirrors the
+ * tree_slugs dict build_site.py assembles once per build (build_site.py:5719,
+ * 5754). */
+export function treeSlugsForCity(city: CityEntry): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const t of renderableTrees(city)) {
+    out[t.id] = slugify(t.name);
+  }
+  return out;
+}
