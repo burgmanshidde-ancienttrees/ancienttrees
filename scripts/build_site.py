@@ -789,6 +789,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <title>%%TITLE%%</title>
 <meta name="description" content="%%DESCRIPTION%%">
 <link rel="canonical" href="%%CANONICAL%%">
+<link rel="alternate" type="application/atom+xml" title="Ancient Trees: newest trees" href="https://ancienttrees.app/feed.xml">
 <meta property="og:title" content="%%TITLE%%">
 <meta property="og:description" content="%%DESCRIPTION%%">
 <meta property="og:type" content="%%OGTYPE%%">
@@ -5936,6 +5937,74 @@ def build_account_page():
     (DIST / "account.html").write_text(page)
 
 
+FIRST_SEEN_PATH = ROOT / "data" / "first-seen.json"
+
+
+def update_first_seen(cities):
+    """The date each tree first appeared, maintained by the build itself.
+
+    Trees carry no publication date, and a feed with invented dates is a fake
+    feed. History was backfilled once from git (2026-08-08); from here every
+    build stamps ids it has not seen with today, in the same commit that adds
+    the tree, so the record cannot drift from the data."""
+    try:
+        first = json.load(open(FIRST_SEEN_PATH))
+    except Exception:
+        first = {}
+    today = date.today().isoformat()
+    changed = False
+    for entry in cities:
+        for t in (entry.get("data") or {}).get("trees", []):
+            if t["id"] not in first:
+                first[t["id"]] = today
+                changed = True
+    if changed:
+        json.dump(dict(sorted(first.items())), open(FIRST_SEEN_PATH, "w"), indent=1)
+    return first
+
+
+def build_feed(cities, pages):
+    """/feed.xml, Atom: the newest trees, so blogs, curators and feed readers
+    can pick the site up without anyone mailing anyone (Hidde, 2026-08-08:
+    "kunnen we niet op andere manieren door blogs feeds etc worden opgepikt
+    dan handmatig mailen"). Static XML, no service, no dependency; the only
+    passive acquisition channel that exists once and works forever."""
+    first = update_first_seen(cities)
+    entries = []
+    for entry in cities:
+        data = entry.get("data") or {}
+        for t in data.get("trees", []):
+            entries.append((first.get(t["id"], "2026-07-14"), t, data, entry["slug"]))
+    entries.sort(key=lambda e: (e[0], e[1]["id"]), reverse=True)
+    items = []
+    for date, t, data, cslug in entries[:30]:
+        url = f"{BASE_URL}/{cslug}/{slugify(t['name'])}"
+        story = (t.get("story") or "").strip()
+        summary = story[:220]
+        if len(story) > 220:
+            summary = summary.rsplit(" ", 1)[0] + "..."
+        items.append(
+            f"  <entry>\n"
+            f"    <title>{esc(t['name'])}, {esc(data.get('city', ''))}</title>\n"
+            f"    <link href=\"{url}\"/>\n"
+            f"    <id>{url}</id>\n"
+            f"    <updated>{date}T12:00:00Z</updated>\n"
+            f"    <summary>{esc(summary)}</summary>\n"
+            f"  </entry>")
+    feed = (
+        '<?xml version="1.0" encoding="utf-8"?>\n'
+        '<feed xmlns="http://www.w3.org/2005/Atom">\n'
+        f'  <title>Ancient Trees: the newest remarkable trees</title>\n'
+        f'  <subtitle>The most remarkable ancient trees of the world\'s cities, '
+        f'newest first, each verified against its sources.</subtitle>\n'
+        f'  <link href="{BASE_URL}/feed.xml" rel="self"/>\n'
+        f'  <link href="{BASE_URL}"/>\n'
+        f'  <id>{BASE_URL}/feed.xml</id>\n'
+        f'  <updated>{entries[0][0] if entries else "2026-07-14"}T12:00:00Z</updated>\n'
+        + "\n".join(items) + "\n</feed>\n")
+    (DIST / "feed.xml").write_text(feed, encoding="utf-8")
+
+
 def build_sitemap(pages):
     today = date.today().isoformat()
     urls = [canonical for _, _, canonical in pages if canonical]
@@ -6148,6 +6217,7 @@ def main():
         out = DIST / relpath
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(content)
+    build_feed(cities, pages)
     build_sitemap(pages)
     # After the wipe and the sitemap on purpose: the account prototype exists
     # on disk but not in the sitemap, unlinked and noindexed (AUTH_ENABLED).
