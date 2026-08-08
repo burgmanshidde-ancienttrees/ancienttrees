@@ -5,6 +5,74 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+## Weekly analysis 2026-08-08
+
+Second weekly analysis, covering 2026-08-01 to 2026-08-07 against the prior
+week (2026-07-25 to 2026-07-31).
+
+**Scorecard**
+
+| Week ending | Impressions | Clicks | CTR | Visits (beacon) | Pageviews (beacon) | Directions/visit | App-CTA | Waitlist total | Submissions total |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-31 | 1,150 | 31 | 2.7% | 70 | 170 | n/a (not captured) | n/a (not captured) | 0 real (2 test rows) | 0 real (1 test row) |
+| 2026-08-07 | 1,762 | 36 | 2.0% | 100 | 170 | n/a (not captured) | n/a (not captured) | 4 real (LOG.md 08-06 confirms, not the test rows) | 0 real (1 test row, unchanged) |
+
+**What moved:**
+1. Impressions climbed 53% week over week (1,150 to 1,762) and clicks rose
+   modestly (31 to 36), but CTR fell from 2.7% to 2.0%: more searchers are
+   seeing the site without a matching gain in who clicks through.
+2. Beacon visits rose 43% (70 to 100) while pageviews stayed flat at 170,
+   so pages-per-visit dropped from 2.4 to 1.7: more arrivals, each looking
+   at less before leaving.
+3. The waitlist grew from 2 to 4 real signups this week, the first
+   genuine week-over-week increase since tracking began (LOG.md 08-06
+   confirms these are real Supabase rows, not the housekeeping test
+   entries); submissions stayed at 0 real all week.
+4. /rome and /malaga repeat every single day this week as the site's
+   biggest seen-not-clicked pages: /rome draws 18-24 impressions/day at
+   position ~17-20 for "trees in rome", /malaga 16-25 impressions/day at
+   position 70+ for "árboles históricos de málaga", both at 0.0% CTR
+   throughout the week.
+5. Machine chain attempts collapsed to 1-4/day this week from 24-28/day
+   the week before, consistent with Hidde's deliberate 07-31 trim to four
+   one-hour runs/day (LOG.md), though three days (08-03/04/05) ran only a
+   single attempt, below even that trimmed target.
+
+**Suggestions, ranked:**
+1. **[run]** Fix the content-lead detector's false-positive class. 'den
+   brandt park' was flagged as "no matching page" two days running
+   (i12/p70 each), but Antwerp's data/cities/antwerp.json already carries
+   "The Park Trees of Den Brandt". This is the same failure mode as the
+   already-documented 'ancient tree map' false positive against /explore
+   (CLAUDE.md, "Search evidence is a run's to act on"). Per the project's
+   own ratchet rule, a lesson that recurs becomes a build check: widen
+   the matcher to check tree/page names, not just city/country/species,
+   so real content gaps stop being buried under repeat false alarms.
+2. **[sessie]** Wire directions-click and app-cta events into the daily
+   digest / DATA.md. This is the same suggestion from the 08-02 weekly
+   analysis, still unactioned: "Site actions" has read "none recorded"
+   every day but one (a smoke-test row) all week, so the scorecard's
+   Directions/visit and App-CTA columns stay permanently n/a and the
+   funnel this analysis exists to track cannot be read.
+3. **[FOR HIDDE]** The waitlist now holds real growth (2 to 4 this week,
+   confirmed non-test by LOG.md 08-06), which already satisfies the
+   demand condition your 2026-08-14 steady-fortnight review was waiting
+   on ("whether a single waitlist signup or reader submission exists").
+   Worth knowing going into that date; no action needed from a run.
+4. **[run]** /rome and /malaga carry real, repeated impression volume at
+   0.0% CTR every day this week (Rome ranks ~17-20 for "trees in rome"
+   and related queries with no click ever landing; Malaga's Spanish
+   query sits at position 70+). Rome's photo gap is already a documented
+   dead end (LOG.md 08-06), so check instead whether these two pages
+   satisfy P2 (answer in the first two sentences) and whether their
+   titles/meta match the query wording, since these are the largest
+   un-converted signals the site currently produces.
+
+**Watch next week:** whether CTR recovers as impressions keep climbing
+(or keeps falling, which would say ranking gains aren't converting), and
+whether the waitlist's real growth continues toward the first genuine
+reader submission.
+
 ## 2026-08-07 (previous UTC day)
 
 Search Console (freshest day Google provides, data lags 2-3 days):
