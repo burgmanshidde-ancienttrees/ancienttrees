@@ -1,0 +1,10 @@
+{
+  "leads": [
+    {
+      "candidate": "Bagolaro (Celtis australis) at Via Santa Croce 297, Venezia",
+      "source": "data/registers/italy-masaf.json sheet_id 12/L736/VE/05, girth 375 cm, height 25.5 m, lat 45.435775, lon 12.319764",
+      "reason": "Only one source found. Not a match for either nearby published tree: reverse-geocodes to a pedestrian street ~300m south of the Giardini Papadopoli (ven_007) OSM polygon boundary, and ~286m from Ca' Zenobio (ven_009) across the Grand Canal in a different sestiere, so it is a standalone street tree rather than part of either existing entry. A substantial single tree (375cm girth) with real register data, worth a full research pass to find a second source (local press, city tree survey, iNaturalist) and confirm it is a genuine collectible point (street tree vs. private courtyard) before it can ship."
+    }
+  ],
+  "blocked": []
+}
