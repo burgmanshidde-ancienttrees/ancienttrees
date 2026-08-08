@@ -29,6 +29,14 @@
       "species": "Plane (Platanus x hispanica)",
       "why_a_lead": "evfaja.hu/fa/2017/varosligeti-menten-allo-evszazados-platanok describes a group/row of century-old planes (180-200 years, planted 1818-1830 as an Archduke Joseph gift) along the City Park lake shore, GPS 47.513817, 19.083098, 32m tall, 450cm trunk circumference.",
       "next_step": "BLOCKED as an entry, not a lead: the source itself frames this as 'this tree group' collectively, a row along the shoreline rather than one identifiable specimen with one obvious place to stand. Does not pass the collectible-point test. If a single stand-out tree within the row can be individually identified in a future pass, it could be reconsidered."
+    },
+    {
+      "name": "bud_006 source follow-up",
+      "why": "jozsefvaros.hu source URL redirect-loops; a working copy would firm up the Fuveszkert cherry's history."
+    },
+    {
+      "name": "bud_007 FOKERT registry",
+      "why": "FOKERT's own registry page for the Karolyi mulberry is JS-rendered and unreadable to fetchers; a browser session can read it and may upgrade the pin."
     }
   ],
   "blocked": [
