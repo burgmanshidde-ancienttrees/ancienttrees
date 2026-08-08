@@ -6,6 +6,7 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, treeSlugsForCity, type CityEntry } from "../../lib/trees";
 import { groupTreesBySpecies, checkSpeciesNames, SPECIES_MIN_TREES, type SpeciesMember } from "../../lib/species";
 import { checkCityNames } from "../../lib/city-aliases";
+import { checkPhenology } from "../../lib/phenology";
 import { usablePhoto, imgSrcset } from "../../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
@@ -20,6 +21,7 @@ export async function getStaticPaths() {
   // same is fine, it's cheap and idempotent.
   checkSpeciesNames(allCities);
   checkCityNames(allCities.map((c) => ({ slug: c.id, city: c.data.city })));
+  checkPhenology();
   const intros = await getCollection("species");
   const groups = groupTreesBySpecies(allCities);
 
