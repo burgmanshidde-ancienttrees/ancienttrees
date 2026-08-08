@@ -2963,7 +2963,11 @@ def highlight_curve(ph):
 NUMBER_WORDS = {w: n for n, w in enumerate(
     "zero one two three four five six seven eight nine ten eleven twelve thirteen "
     "fourteen fifteen sixteen seventeen eighteen nineteen twenty".split())}
-_N = "|".join(NUMBER_WORDS)
+# Digits count too, not only spelled-out words. Paris's copy said "15 more" and
+# "23 more" rather than "fifteen more"/"twenty-three more" (twenty-three has no
+# entry above anyway), and a word-only pattern let both go stale unnoticed
+# until a fresh-eyes review caught them by eye. REVIEW.md 2026-08-08.
+_N = r"\d+|" + "|".join(NUMBER_WORDS)
 # Three shapes, each deliberately narrow. A page counts other things all the
 # time ("the two trees frame two kinds of longevity", "only four trees in the
 # whole city carry the designation"), so only a phrase that can just about
@@ -3014,7 +3018,7 @@ def check_count_promises(city_data, canonical):
                 continue
             for m in rx.finditer(text):
                 word = next(g for g in m.groups() if g)
-                claims = allowed(NUMBER_WORDS[word.lower()])
+                claims = allowed(int(word) if word.isdigit() else NUMBER_WORDS[word.lower()])
                 if min(claims) < 4 or n in claims:
                     continue
                 ERRORS.append(
