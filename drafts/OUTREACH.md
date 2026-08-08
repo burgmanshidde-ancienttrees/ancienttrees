@@ -58,14 +58,14 @@ whether they would like to see it, and mention we link to them.
 | Organisation | City | Address |
 |---|---|---|
 | Royal Botanic Garden Edinburgh | Edinburgh | info@rbge.org.uk |
-| Real Orto Botanico di Napoli | Naples | find on ortobotanico.unina.it |
-| Giardino dei Semplici (Museo di Storia Naturale, Univ. Firenze) | Florence | find on sma.unifi.it |
-| York Museums Trust (Museum Gardens) | York | find on yorkmuseumstrust.org.uk |
+| Real Orto Botanico di Napoli | Naples | robnap@unina.it (site moved to ortobotaniconapoli.it) |
+| Giardino dei Semplici (Museo di Storia Naturale, Univ. Firenze) | Florence | segrmuseo@unifi.it |
+| York Museums Trust (Museum Gardens) | York | amy.cope@ymt.org.uk (PR officer) |
 | Bruxelles Environnement (Parc d'Egmont) | Brussels | info@environnement.brussels |
-| Reggia di Caserta (Giardino Inglese) | Caserta | find on reggiadicaserta.cultura.gov.it |
-| Schloss Nymphenburg (Bayerische Schlösserverwaltung) | Munich | find on schloesser.bayern.de |
-| Parco del Valentino (Città di Torino, Verde Pubblico) | Turin | find on comune.torino.it |
-| Parque del Retiro (Ayuntamiento de Madrid) | Madrid | find on madrid.es |
+| Reggia di Caserta (Giardino Inglese) | Caserta | re-ce@cultura.gov.it |
+| Schloss Nymphenburg (Bayerische Schlösserverwaltung) | Munich | presse@bsv.bayern.de |
+| Parco del Valentino (Città di Torino, Verde Pubblico) | Turin | form only: serviziweb.comune.torino.it/nuova-richiesta-itsm |
+| Parque del Retiro (Ayuntamiento de Madrid) | Madrid | parqueshistoricos@madrid.es (historic-parks unit, covers the Retiro) |
 
 ### 3b. The registers we cite and credit
 
@@ -74,12 +74,12 @@ section, which is the most natural link on the internet.
 
 | Organisation | Country | Address |
 |---|---|---|
-| RAMI, Registro degli Alberi Monumentali Italiani | Italy | find on ilregistrodeglialberi.it |
-| ICNF (Arvoredo de Interesse Publico) | Portugal | find on icnf.pt |
-| Ajuntament de Barcelona, arbrat viari | Spain | find on ajuntament.barcelona.cat |
+| RAMI, Registro degli Alberi Monumentali Italiani | Italy | Difor4@masaf.gov.it (the office the RAMI page names) |
+| ICNF (Arvoredo de Interesse Publico) | Portugal | geral@icnf.pt |
+| Ajuntament de Barcelona, arbrat viari | Spain | permisos_masu@bcn.cat (only published address of Parcs i Jardins) |
 | Stadt Wien, data.wien.gv.at | Austria | post@ma41.wien.gv.at (verify) |
-| Ville de Paris, Direction des Espaces Verts | France | find on paris.fr |
-| Senatsverwaltung Berlin (Naturdenkmale) | Germany | find on berlin.de |
+| Ville de Paris, Direction des Espaces Verts | France | form only: paris.fr/pages/contact-232 |
+| Senatsverwaltung Berlin (Naturdenkmale) | Germany | schutzgebiete@senmvku.berlin.de (the Naturdenkmale desk itself) |
 | Govern de les Illes Balears, SITIBSA | Spain | find on caib.es |
 | Generalitat Valenciana, ICV | Spain | find on icv.gva.es |
 
@@ -171,6 +171,26 @@ a page to show), then 3b and 3f, then 3c, then 3e, then 3d.
   true, it costs nothing, and it is the reciprocity that makes a link natural.
 - **Never mass-send.** Each of these is worth writing individually, and the
   moment it reads like a template it stops working and starts costing goodwill.
+
+## Addresses found 2026-08-08
+
+The contact scout read every address below off the organisation's own site
+(full detail per target in data/research/outreach-contacts.json: where it was
+found, what was form-only, what was Cloudflare-blocked). 24 of 28 have a real
+published email; 4 are form-only. Two cautions: Milano only publishes a PEC
+address (Transizioneambientale@pec.comune.milano.it), and PEC often rejects
+ordinary Gmail, so use the city's contact form if it bounces; and
+monumentaltrees.com is Cloudflare-walled, so its contact form needs a normal
+browser visit.
+
+Remaining addresses in one place: NYC Parks pressoffice@parks.nyc.gov, Porto
+geral@cm-porto.pt, Roma dipartimento.ambiente@comune.roma.it, TROBI
+membership@treeregister.org, Ancient Yew Group info@treeregister.org (same
+family), Arbor Day elennemann@arborday.org, baumkunde webmaster@baumkunde.de,
+prazskestromy prazskestromy@seznam.cz, woodwideweb
+woodwideweb.brussels@gmail.com, 100milarvores cre.porto@ucp.pt, getlisbon
+contact@getlisbon.com, unjourdeplusaparis contact@unjourdeplusaparis.com,
+bomenbieb info@bomenbieb.nl, jardinessinfronteras form-only.
 
 ## Log
 

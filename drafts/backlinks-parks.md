@@ -1,8 +1,8 @@
 # Backlink drafts, batch 1: the ten parks with their own page
 
 Written 2026-08-08. Only Hidde sends these, from his own address (hard rule 4).
-Addresses land in `data/research/outreach-contacts.json` when the contact scout
-finishes; paste them in and send. Per OUTREACH.md: the page is the ask, so no
+Addresses are filled in below (found 2026-08-08 on each organisation's own
+site; full provenance in data/research/outreach-contacts.json). Per OUTREACH.md: the page is the ask, so no
 draft below asks for a link. Each is individually written around what our page
 actually says; if a fact reads wrong, check the page before sending, not me.
 
@@ -13,6 +13,8 @@ alternatives included where the local draft is in a language he does not write.
 ---
 
 ## 1. Real Orto Botanico di Napoli (English, or forward the Italian below)
+
+**Aan:** robnap@unina.it
 
 **Subject: We wrote about your trees**
 
@@ -56,6 +58,8 @@ Hidde, Ancient Trees
 
 ## 2. Giardino dei Semplici, Firenze (Museo di Storia Naturale, UniFi)
 
+**Aan:** segrmuseo@unifi.it
+
 **Subject: The Micheli Yew has a page**
 
 Hello,
@@ -78,6 +82,8 @@ Ancient Trees, ancienttrees.app
 
 ## 3. York Museums Trust (Museum Gardens)
 
+**Aan:** amy.cope@ymt.org.uk
+
 **Subject: Six of your trees, mapped and told**
 
 Hello,
@@ -98,6 +104,8 @@ Ancient Trees, ancienttrees.app
 ---
 
 ## 4. Reggia di Caserta (Giardino Inglese)
+
+**Aan:** re-ce@cultura.gov.it
 
 **Subject: We wrote about the Giardino Inglese's trees / Gli alberi del Giardino Inglese**
 
@@ -120,6 +128,8 @@ Ancient Trees, ancienttrees.app
 ---
 
 ## 5. Bayerische Schloesserverwaltung (Schlosspark Nymphenburg)
+
+**Aan:** presse@bsv.bayern.de
 
 *(German first, they will appreciate it.)*
 
@@ -146,6 +156,8 @@ Hidde, Ancient Trees (ancienttrees.app)
 
 ## 6. Citta di Torino, Verde Pubblico (Parco del Valentino)
 
+**Aan:** via formulier: serviziweb.comune.torino.it/nuova-richiesta-itsm
+
 **Subject: Gli alberi del Valentino / The Valentino's trees**
 
 Buongiorno,
@@ -166,6 +178,8 @@ Hidde, Ancient Trees (ancienttrees.app)
 ---
 
 ## 7. Ayuntamiento de Madrid (Parque del Retiro)
+
+**Aan:** parqueshistoricos@madrid.es
 
 **Subject: Nueve arboles del Retiro, contados uno a uno**
 
@@ -188,6 +202,8 @@ Hidde, Ancient Trees (ancienttrees.app)
 
 ## 8. Sovrintendenza Capitolina / Comune di Roma (Villa Borghese)
 
+**Aan:** dipartimento.ambiente@comune.roma.it
+
 **Subject: Adonis e gli altri alberi di Villa Borghese**
 
 Buongiorno,
@@ -208,6 +224,8 @@ Hidde, Ancient Trees (ancienttrees.app)
 ---
 
 ## 9. Bruxelles Environnement (Parc d'Egmont)
+
+**Aan:** info@environnement.brussels
 
 *(This one may combine with the tier-2 data question in OUTREACH.md; if Hidde
 sends that, add one line pointing at the park page rather than a second email.)*
@@ -232,6 +250,8 @@ Hidde, Ancient Trees (ancienttrees.app)
 ---
 
 ## 10. Comune di Milano (Giardini Montanelli)
+
+**Aan:** Transizioneambientale@pec.comune.milano.it (PEC; als je Gmail bounct, gebruik het stadsformulier)
 
 **Subject: Il Sacerdote e gli altri alberi dei Giardini Montanelli**
 
