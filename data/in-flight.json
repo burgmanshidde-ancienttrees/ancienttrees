@@ -5,15 +5,15 @@
   "claims": [
     {
       "target": "boston",
-      "kind": "verify",
+      "kind": "write",
       "by": "session",
-      "claimed_at": "2026-08-08T16:54:43+00:00"
+      "claimed_at": "2026-08-08T17:05:31+00:00"
     },
     {
       "target": "washington dc",
-      "kind": "verify",
+      "kind": "write",
       "by": "session",
-      "claimed_at": "2026-08-08T16:54:43+00:00"
+      "claimed_at": "2026-08-08T17:05:31+00:00"
     }
   ]
 }
