@@ -2,18 +2,5 @@
   "note": "Who is working on what, right now. Written by scripts/passcheck.py --claim and read by every passcheck run, because coordination is where this project loses tokens, not research. On 2026-08-06 a session write pass and a night run wrote the same nine Padova stories; 89,000 tokens bought nothing. The session had checked the queue twenty minutes before dispatching, and a night run landed in between. passcheck knew what was published and had no idea what was being worked on.",
   "how": "Claim before dispatching a pass, release when its output is merged. A claim older than expire_hours is ignored and pruned automatically, so a session that dies cannot block a city forever. This is a courtesy lock, not a mutex: the night runs work from their own clone, so a claim is only visible after it is pushed. It catches collisions minutes apart, which is the kind that actually happens here, and cannot catch collisions seconds apart.",
   "expire_hours": 4,
-  "claims": [
-    {
-      "target": "boston",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-08T17:05:31+00:00"
-    },
-    {
-      "target": "washington dc",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-08T17:05:31+00:00"
-    }
-  ]
+  "claims": []
 }

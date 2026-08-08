@@ -173,6 +173,14 @@ def centre_from_any_name(arg):
     return None
 
 
+def _research_trees(loaded):
+    """A *-verified.json is an array, but one pass delivered {"trees": [...]}
+    and the pending check crashed instead of reading it. Tolerate both."""
+    if isinstance(loaded, dict):
+        return loaded.get("trees") or []
+    return loaded if isinstance(loaded, list) else []
+
+
 def pending_research():
     """Research files holding trees that are NOT yet published.
 
@@ -192,7 +200,7 @@ def pending_research():
     out = []
     for f in sorted(glob.glob(os.path.join(ROOT, "data", "research", "*-verified.json"))):
         try:
-            rows = json.load(open(f))
+            rows = _research_trees(json.load(open(f)))
         except Exception:
             continue
         unpublished = [t for t in rows if t.get("id") and t["id"] not in live]
