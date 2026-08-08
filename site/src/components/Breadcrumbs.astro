@@ -1,0 +1,25 @@
+---
+// Ported from breadcrumb_html(), build_site.py:1182-1191. Links are
+// root-absolute URLs directly (the crumb tuple's url is already the full
+// canonical, e.g. BASE_URL + "/parks"), simplifying away the %%ROOTPATH%%
+// relative-depth math the Python version needed.
+import { BASE_URL } from "../lib/schema";
+
+export interface Props {
+  items: [name: string, url: string | null][];
+}
+const { items } = Astro.props;
+
+function toPath(url: string): string {
+  if (url === BASE_URL) return "/";
+  return url.startsWith(BASE_URL) ? url.slice(BASE_URL.length) : url;
+}
+---
+<nav class="crumbs">
+  {items.map(([name, url], i) => (
+    <Fragment>
+      {i > 0 && " › "}
+      {url ? <a href={toPath(url)}>{name}</a> : <span>{name}</span>}
+    </Fragment>
+  ))}
+</nav>

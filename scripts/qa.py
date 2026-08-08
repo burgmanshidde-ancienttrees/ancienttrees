@@ -16,6 +16,7 @@ Checks, all deterministic, no network:
 
 Exit 1 on any failure, so CI fails the deploy. Run: python3 scripts/qa.py
 """
+import argparse
 import re
 import sys
 from html.parser import HTMLParser
@@ -97,6 +98,16 @@ def resolves(target: Path) -> bool:
 
 
 def main():
+    global DIST
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dist", type=Path, default=None,
+                        help="Override the dist directory (default: site/dist). "
+                             "Used during the Astro migration to check site/dist-astro "
+                             "without touching behavior against the real dist.")
+    args = parser.parse_args()
+    if args.dist:
+        DIST = args.dist
+
     failures = []
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
