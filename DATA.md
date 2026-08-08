@@ -5,6 +5,8 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+**Break in series, 2026-08-08:** all visitor numbers before this date are polluted by our own machines. The CI smoke test loads every key page in headless Chrome on each push, preview sessions served the built pages locally, and both fired the Cloudflare beacon; Hidde's own browsing was in there too. From 2026-08-08 the beacon and the events tracker only fire on ancienttrees.app itself (and Hidde's devices opt out via ?notrack=1). Expect visits and pageviews to DROP sharply at this date: that is the pollution leaving, not an audience leaving. The honest pre-cleanup baseline for real strangers is the Search Console click count, roughly 35 per week. Weekly analyses must not read this break as a trend.
+
 ## Weekly analysis 2026-08-08
 
 Second weekly analysis, covering 2026-08-01 to 2026-08-07 against the prior
