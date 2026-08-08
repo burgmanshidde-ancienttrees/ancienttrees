@@ -3,9 +3,9 @@
   "country": "Austria",
   "status": "needs_curation",
   "intro": "Vienna keeps its oldest trees on an official register: since 1936, remarkable specimens have qualified as Naturdenkmäler, natural monuments protected the same way a listed building is. That bureaucratic habit is why this city can name an exact protection date for almost every tree on this list, down to the day. The sixteen below range from a plane tree Mozart is said to have walked past on his way to piano lessons to a ginkgo planted beside a composer's statue in the city's first public park. All sixteen are free to see.",
-  "meta_description": "Vienna's ancient trees range from a Mozart-era plane to twin ginkgos a century apart. Sixteen remarkable trees, all free to visit.",
+  "meta_description": "Vienna's ancient trees range from a Mozart-era plane to twin ginkgos a century apart. Nineteen remarkable trees, all free to visit.",
   "question_answer": "The oldest tree in Vienna is a plane tree tucked into the Fähnrichhof courtyard off Singerstraße in the old town, estimated at more than 280 years old. A 1987 survey already measured its age at over 250 years, and in the centuries since it has grown around part of the iron fence from St Stephen's old cathedral graveyard, closed in the 1730s. It stands a short walk from Stephansplatz, reached through a public passage from Blutgasse.",
-  "question_meta": "Vienna's oldest tree is a 280-year-old plane hidden in a Singerstrasse courtyard. Where it stands, and fifteen more remarkable trees.",
+  "question_meta": "Vienna's oldest tree is a 280-year-old plane hidden in a Singerstrasse courtyard. Where it stands, and eighteen more remarkable trees.",
   "question_context": "Vienna's natural monument register, running since 1936, gives an exact protection date for almost every historic tree in the city, but planting dates are rarer, so ages here are mostly expert estimates rather than documented facts. The Singerstraße plane is the exception: a formal 1987 survey put its age at more than 250 years even then, which is about as close to a hard number as Vienna's tree records get, ahead of the ginkgo by the Schubert monument and the Hauptallee's chestnut avenue, both estimated rather than surveyed. It grows in the Fähnrichhof, a courtyard reached through a passage (a Durchhaus, in local terms) connecting Blutgasse and Singerstraße in the first district, a few minutes on foot from Stephansplatz. The tree's most remarkable feature is not visible: part of the iron fence that once enclosed St Stephen's Cathedral's own graveyard, closed to burials in the 1730s, is sealed inside its trunk, absorbed by decades of growth.",
   "faq": [
     {
@@ -570,6 +570,101 @@
       },
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 276, protected 16 December 1941 (Vienna monument register, register_id 3257446, 48.203669/16.379102). Baumkataster BAUM_ID 193786 at the same point to within 0.0 m: PFLANZJAHR 1860, girth 444 cm, height class 5 (21-25 m), crown class 6 (16-18 m). Note the Baumkataster still files the species under the old name Sophora japonica; the corpus canonical name is 'Japanese Pagoda Tree (Styphnolobium japonicum)', which seven other trees on the site already use. A second, much younger pagoda tree (BAUM_ID 193723, 1938, 238 cm) stands 18 m away and is not the monument. The 1860-versus-1862 point is stated as the tension it is rather than resolved, because the register's planting year is the city's own figure and no planting document has been seen. Photo viewed directly at 960x1387 before approval: daylight, colour, blue sky, the tree fills the frame from root flare to crown, the low fork clearly readable, a small white stone monument behind it for scale. Portrait format, but the tree is centred so the wide card crop still lands on trunk and lower crown.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_017",
+      "name": "The Judas Tree of the Altes AKH",
+      "species": "Judas Tree (Cercis siliquastrum)",
+      "age_estimate": "well over 100 years, possibly 18th century",
+      "age_min": 130,
+      "age_max": 240,
+      "location": {
+        "address": "Campus der Universität Wien (Altes AKH), 2nd courtyard, Alser Straße 4, 1090 Wien",
+        "latitude": 48.217105,
+        "longitude": 16.352582,
+        "neighbourhood": "Alsergrund, 9th district"
+      },
+      "story": "This tree flowers straight out of its own trunk. In spring, before a single leaf opens, Cercis siliquastrum covers itself in rosy-pink flowers barely two centimetres across, and they push out not only from the twigs but from the branches and the old wood of the trunk itself. It is a habit called cauliflory, common in the tropics and close to unknown on a street in central Europe. Its age is a genuine argument. Vienna protected it on 14 February 1995 on the grounds that it was already well over a hundred years old, which puts a hard floor of roughly 130 years under it today. Local reporting adds that it was probably planted in the eighteenth century, along with the institute buildings around it, which would make it closer to 240. Nothing settles that, so the range stays wide. Even its monument number is disputed: most sources call it Nr. 762, while the city's own 2025 press release calls it Nr. 769. The courtyard was part of one of the most modern hospitals in the world when Joseph II opened the Allgemeines Krankenhaus in 1784, on ground that had held a poorhouse since 1693. The hospital moved out and the University of Vienna took the buildings in 1998, so the second courtyard now has cafe tables around it. The tree grows as ten old stems with young shoots between them, renewing itself indefinitely as long as nobody tidies it up.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "April, when pink flowers break directly out of the bare trunk and branches"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Alsergrund (register data, register_id 3257899 in data/registers/wien-naturdenkmale.json matches this address and coordinates)",
+        "https://www.meinbezirk.at/alsergrund/c-lokales/der-judasbaum-im-alten-akh-ein-naturdenkmal_a906929",
+        "https://presse.wien.gv.at/presse/2025/08/12/die-wiener-naturdenkmaeler-besonderheiten-von-anno-dazumal (city press release, 12 Aug 2025, confirms the tree is still a live feature the city describes today)"
+      ],
+      "access": "Free, public university campus (Campus der Universität Wien, the former Altes AKH general hospital), open during campus hours; the tree stands in the second courtyard (Hof 2)",
+      "transport": "2 min walk from the Spitalgasse tram stop (Lines 5, 33)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_018",
+      "name": "The Field Elm of Burggasse",
+      "species": "Field Elm (Ulmus minor)",
+      "age_estimate": "about 111 years, planted 1915",
+      "age_min": 105,
+      "age_max": 118,
+      "location": {
+        "address": "Burggasse, green median near house number 26/39, 1070 Wien",
+        "latitude": 48.204178,
+        "longitude": 16.35179,
+        "neighbourhood": "Neubau, 7th district"
+      },
+      "story": "Europe lost most of its large elms in the second half of the twentieth century, which is reason enough to look at a field elm planted in 1915 and still standing. Ulmus minor was the species Dutch elm disease hit hardest: a fungus carried tree to tree by bark beetles that killed the great majority of Europe's mature elms from the 1960s onward. No record says this particular tree survived a particular outbreak. It simply kept going while the species around it did not. It grows on the narrow green strip down the middle of Burggasse, between the roadway and a service lane, which is an odd address for a protected natural monument and is precisely why it earned the status. Vienna's tree catalogue gives the planting year as 1915, a trunk 290 centimetres around, a height of 16 to 20 metres and a crown almost as wide as the tree is tall. The city protected it on 8 August 2006 as Naturdenkmal Nr. 794, and the decree's stated reason is plain: its size, and what it does for the character of the street. Two city departments record it at two different addresses, one calling it Burggasse 26 and the other Burggasse 39. Only one field elm appears in the whole Neubau district list, so this is one tree with two addresses. Its crown is cut back regularly for the power lines and the traffic, so expect a working street tree rather than a park specimen.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Neubau (Naturdenkmal Nr. 794, protected 8 Aug 2006)",
+        "data.wien.gv.at Baumkataster WFS, layer ogdwien:BAUMKATOGD, BAUM_ID 1323, queried directly this pass (BBOX 16.3505,48.2030,16.3530,48.2055): PFLANZJAHR 1915, STAMMUMFANG 290 cm, height class 4 (16-20 m), crown class 6 (16-18 m), point 48.204178/16.35179"
+      ],
+      "access": "Free, public street tree on a traffic median, visible and reachable at all times",
+      "transport": "5 min walk from the Kirchengasse tram stop (Line 49, recently renamed from Siebensterngasse), or 8 min from Burggasse-Stadthalle U-Bahn station (U6)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vie_019",
+      "name": "The Turkish Hazels of Resselpark",
+      "species": "Turkish Hazel (Corylus colurna)",
+      "age_estimate": "about 109 and 126 years, planted 1917 and 1900",
+      "age_min": 109,
+      "age_max": 126,
+      "location": {
+        "address": "Resselpark, opposite the main entrance of TU Wien, 1040 Wien",
+        "latitude": 48.19917,
+        "longitude": 16.370044,
+        "neighbourhood": "Wieden, 4th district"
+      },
+      "story": "Vienna protected these two trees for looking alike. Naturdenkmal Nr. 545, granted on 25 April 1972, covers a pair of Turkish hazels standing opposite the main entrance of the Technical University, and the reason recorded for the designation is their uniform growth and their appearance as a pair, not anything about either tree on its own. They are not twins. The city tree catalogue dates one to 1900 and the other to 1917, seventeen years apart, with trunks of 281 and 237 centimetres, and they stand about thirty metres from each other in the same sightline. That they grew into a matched pair regardless says something about the species. Corylus colurna is the tree-sized hazel of the Balkans, Anatolia and the Caucasus, and it builds a stubbornly regular cone on one straight trunk, which is why cities plant it along streets and why these two arrived at the same silhouette from different decades. It is also why they are the oldest trees in this small park and still look like street furniture rather than veterans. Resselpark is named for Josef Ressel, who patented a screw propeller in 1827 and watched other people make it work. It lies between the Karlsplatz and the Karlskirche, so the hazels look straight at Fischer von Erlach's dome and its two carved columns, and the Secession building is five minutes west. Both trees stand on open public ground at any hour.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Wieden (Naturdenkmal Nr. 545, protected 25 April 1972)",
+        "data.wien.gv.at Baumkataster WFS, layer ogdwien:BAUMKATOGD, queried directly this pass (BBOX 16.3690,48.1985,16.3710,48.2000): two Corylus colurna records at 48.19912/16.37024 (PFLANZJAHR 1917, STAMMUMFANG 237 cm) and 48.19922/16.36985 (PFLANZJAHR 1900, STAMMUMFANG 281 cm)"
+      ],
+      "access": "Free, public city park (Resselpark), open at all times",
+      "transport": "2 min walk from Karlsplatz U-Bahn station (U1/U2/U4)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
       "location_precision": "confirmed"
     }
   ]
