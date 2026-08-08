@@ -1,0 +1,25 @@
+[
+  {
+    "id": "per_001",
+    "name": "The Palazzo Murena Cedar",
+    "species": "Atlas Cedar (Cedrus atlantica)",
+    "age_estimate": "roughly 155 to 185 years (planted shortly after Italian Unification, circa 1861)",
+    "age_min": 155,
+    "age_max": 185,
+    "location": {
+      "address": "Piazza dell'Universita 1 (cloister of Palazzo Murena, Rectorate of the University of Perugia)",
+      "latitude": 43.116344,
+      "longitude": 12.386519,
+      "neighbourhood": "Centro Storico"
+    },
+    "verified_sources": [
+      "data/registers/italy-masaf.json (sheet 12/G478/PG/10, Comune di Perugia municipal census of monumental trees, MASAF national register, CC BY 4.0)",
+      "https://www.lanazione.it/umbria/cronaca/un-gigante-verde-veglia-su-palazzo-murena-eda0b38f"
+    ],
+    "access": "Free, inside the cloister of Palazzo Murena, seat of the University of Perugia's Rectorate; the cloister is open to the public during normal building hours.",
+    "transport": "Central Perugia, on Piazza dell'Universita just off Corso Vannucci; reachable on foot from Piazza IV Novembre in about 5 minutes, or via the Minimetro to Pincetto/Fontivegge then a short walk.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "MASAF register: girth 485cm, height 25m, at Piazza Universita - Rettorato Centrale. La Nazione (19 Sep 2021) independently measured the same cedar in Palazzo Murena's cloister at 5m trunk circumference, 30m tall, 35m crown diameter (slight measurement variance between sources, same tree, same site), estimated age 150-180 years, planted just after Italian Unification (1861) in the eclectic garden taste of the era. Survived a lightning strike, visible scars on trunk. Pruned and crown-consolidated by tree-climbing arborists (Associazione Alberi Maestri) in October 2010, after which trunk diameter grew 35cm. Health confirmed excellent by arborists Marco Rinaldi and Dr Valentin Lobis in 2020. In 2020 trumpeter Paolo Fresu and accordionist Daniele di Bonaventura performed a concert titled 'Two for Tree' twelve metres up in its canopy, for environmental awareness. Strong anecdote to lead with: a 160-year-old cedar that hosted a jazz concert in its own crown."
+  }
+]
