@@ -247,8 +247,8 @@
       "age_max": 150,
       "location": {
         "address": "Parco di Villa Groggia, Fondamenta Riformati 3161, Cannaregio, 30121 Venezia",
-        "latitude": 45.4480049,
-        "longitude": 12.3276679,
+        "latitude": 45.44794,
+        "longitude": 12.32791,
         "neighbourhood": "Sant'Alvise, Cannaregio"
       },
       "story": "Two hackberries, the species Milan nicknames spaccasassi, the stone-splitter, for roots strong enough to crack paving, line the path toward a small theatre that has outlived every building that once stood around it. The land was part of the 16th century Palazzo Donà estate, then a working orchard and garden, before the palazzo itself was demolished in 1823 for building material. Giuseppe Groggia built the villa and its romantic-style park toward the end of the 19th century, complete with artificial hills and a Neo-Gothic teatrino from around 1913, and when the family later donated the property, the city took over its upkeep. The garden today is one of the few in Venice with genuinely free, unrestricted public access, a contrast to the palace gardens elsewhere on this list that open only on schedule or by appointment. The two Celtis australis trees along its main path have no individually documented planting date, so their exact age is unverified, but their scale suggests they belong to the villa's original 19th century planting rather than a later addition.",
@@ -266,7 +266,7 @@
       },
       "curation_status": "flagged",
       "notes": "No source gives the two hackberries a specific planting date; age range is an estimate based on the villa's own late-19th-century construction. Pin corrected 2026-07-28 from a district-level estimate for Sant'Alvise (~400m off) to the park's own mapped OSM boundary centroid, a real improvement though still park-level rather than pinned to the two specific trees. 2026-07-29: three iNaturalist Celtis australis observations found right at this pin (one within about 8m), confirming the location, but all three are unlicensed or CC-BY-NC; genuine dead end on the photo specifically.",
-      "location_precision": "approximate"
+      "location_precision": "confirmed"
     },
     {
       "id": "ven_009",
