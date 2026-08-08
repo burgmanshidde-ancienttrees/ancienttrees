@@ -901,7 +901,6 @@ FOOTER = """
       <h4>Ancient Trees</h4>
       <a href="%%ROOTPATH%%app">The app</a>
       <a href="%%ROOTPATH%%contribute">Suggest a tree</a>
-      <a href="%%ROOTPATH%%press">Press</a>
       <a href="%%ROOTPATH%%privacy">Privacy</a>
     </div>
   </div>
@@ -5098,8 +5097,10 @@ def build_contribute_page(published, pages):
         <option value="city">My city's trees</option>
         <option value="correction">A correction to something on the site</option>
         <option value="privacy">A privacy request (remove what I sent in)</option>
+        <option value="press">A press enquiry</option>
       </select>
     </label>
+    <p class="sg-fine">Writing about us? The numbers, image licences and caveats live on the <a href="press">press page</a>.</p>
     <label>Which city?
       <input type="text" id="sg-city" required placeholder="Utrecht">
     </label>
