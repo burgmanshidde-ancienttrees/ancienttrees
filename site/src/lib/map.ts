@@ -8,6 +8,27 @@ export function mapHead(): string {
   return `<link rel="stylesheet" href="${MAPLIBRE_CSS}">`;
 }
 
+/** A single-pin map: the tree page's own map, ported from
+ * single_pin_script(), build_site.py:1203-1219. */
+export function singlePinScript(lat: number, lng: number, label = "1"): string {
+  return `
+<script src="${MAPLIBRE_JS}"></script>
+<script>
+var map = new maplibregl.Map({
+  container: 'map', style: '${MAP_STYLE}',
+  center: [${lng}, ${lat}], zoom: 14.5, scrollZoom: false,
+  attributionControl: { compact: true }
+});
+map.addControl(new maplibregl.NavigationControl());
+map.on('load', function() { map.resize(); });
+var el = document.createElement('div');
+el.className = 'pin';
+el.textContent = '${label}';
+new maplibregl.Marker({ element: el }).setLngLat([${lng}, ${lat}]).addTo(map);
+</script>
+`;
+}
+
 export interface CountryMapCity {
   slug: string;
   city: string;
