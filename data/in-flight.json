@@ -4,22 +4,22 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "chicago",
-      "kind": "verify",
+      "target": "boston",
+      "kind": "write",
       "by": "session",
-      "claimed_at": "2026-08-08T16:10:12+00:00"
+      "claimed_at": "2026-08-08T16:21:24+00:00"
     },
     {
       "target": "washington dc",
-      "kind": "verify",
+      "kind": "write",
       "by": "session",
-      "claimed_at": "2026-08-08T16:10:12+00:00"
+      "claimed_at": "2026-08-08T16:21:24+00:00"
     },
     {
-      "target": "boston",
-      "kind": "verify",
+      "target": "istanbul",
+      "kind": "write",
       "by": "session",
-      "claimed_at": "2026-08-08T16:10:12+00:00"
+      "claimed_at": "2026-08-08T16:21:24+00:00"
     }
   ]
 }
