@@ -2,8 +2,8 @@
   "city": "Barcelona",
   "country": "Spain",
   "city_slug": "barcelona",
-  "updated": "2026-08-06",
-  "note": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere. leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason. Extended 2026-08-05 by the second deepening pass (data/research/barcelona-extra-2.json, the Montjuic walk): ten leads and five blocked entries added from the Sants-Montjuic screen, and the Lagunaria and the Eritrina of the Teatre Grec removed from leads because they published as bcn_017 and bcn_019. Extended 2026-08-06 by the Barcelona deepen verification pass: the Pedralbes/Torre Girona and Vil.la Amelia clusters (bcn_023 to bcn_032) verified and delivered to data/research/barcelona-verified.json, none blocked. One incidental find (Tarongers de Louisiana, Torre Girona) added to leads, undated and unjudged for collectibility.",
+  "updated": "2026-08-08",
+  "note": "Screened out of data/registers/barcelona-ail.json (Ajuntament de Barcelona, Arbres d'interes local, CC BY 4.0, 208 entries) during the deepening pass that produced data/research/barcelona-extra.json. Not rendered anywhere. leads = trees that failed only on our evidence bar or on the count, and are the raw material if Barcelona grows further. blocked = trees that must never ship whatever happens later, each with its reason. Extended 2026-08-05 by the second deepening pass (data/research/barcelona-extra-2.json, the Montjuic walk): ten leads and five blocked entries added from the Sants-Montjuic screen, and the Lagunaria and the Eritrina of the Teatre Grec removed from leads because they published as bcn_017 and bcn_019. Extended 2026-08-06 by the Barcelona deepen verification pass: the Pedralbes/Torre Girona and Vil.la Amelia clusters (bcn_023 to bcn_032) verified and delivered to data/research/barcelona-verified.json, none blocked. One incidental find (Tarongers de Louisiana, Torre Girona) added to leads, undated and unjudged for collectibility. Extended 2026-08-08 by a verification pass on the five undated Gracia/Park Guell-adjacent candidates: the Llentiscle de l'Hort de l'Avi verified and delivered to data/research/barcelona-verified.json as bcn_033 (public access path into Park Guell's free wooded perimeter, second source bcnsostenible.cat). The combined four-tree lead entry below is superseded by the three entries that follow it, split out with what this pass found. Two of the remaining three moved to blocked (Ficus de Mysore, Xiprer del carrer Betlem); two stay leads with access now the open question rather than the date (Garrofer and Pebrer bord del carrer Maignon).",
   "leads": [
     {
       "name": "Freixe de fulla estreta del Jardi Botanic Historic",
@@ -147,20 +147,24 @@
       "why": "Both dated 'Per determinar' in the register, both a short walk from bcn_005 and bcn_006. Two undated trees is not a walk."
     },
     {
-      "name": "Llentiscle de l'Hort de l'Avi, Garrofer del carrer Maignon, Pebrer bord del carrer Maignon, Xiprer comu del carrer Betlem",
-      "species": "Pistacia lentiscus; Ceratonia siliqua; Schinus molle; Cupressus sempervirens",
-      "lat": null,
-      "lng": null,
+      "name": "Garrofer del carrer Maignon",
+      "species": "Ceratonia siliqua",
+      "lat": 41.41041792535541,
+      "lng": 2.152833757843457,
       "status": "lead",
-      "why": "All four sit within 450 m of the Park Guell pins and all four are dated 'Per determinar'. They are the obvious material for thickening the Gracia walk, and every one of them needs a date first."
+      "why": "Date is no longer the only open question: existence and species now have two sources (register 99400680090 plus beteve.cat's 2021 press coverage of the 40-tree AIL designation), but access is unconfirmed and leans against. The ajuntament's own description says the carob grows out of a roughly 2m wall 'that limits the internal road where cars circulate and the part of the garden at a higher level', part of an unnamed walled 'complex' at Carrer de Maignon 27. Overpass shows an underground public car park ('Parking Esperanca i Park Guell') and Hospital de l'Esperanca roughly 150m away, both consistent with an internal service road rather than a public street frontage. Femgracia's street directory lists Carrer de Maignon itself as a normal commercial street, which does not resolve whether number 27 is a private courtyard off it. A future pass should either find a description that confirms public access (or a street-view/photo showing the wall from the public pavement) or move this to blocked.",
+      "register_id": 99400680090,
+      "register_notes": "Girth 1.84m, height 7m, crown 17m. Catalogued 2021. Ownership field blank in the register import."
     },
     {
-      "name": "Ficus de Mysore del Santuari de Sant Josep de la Muntanya",
-      "species": "Ficus drupacea",
-      "lat": 41.4123,
-      "lng": 2.1494,
+      "name": "Pebrer bord del carrer Maignon",
+      "species": "Schinus molle",
+      "lat": 41.41023316885091,
+      "lng": 2.152881283257778,
       "status": "lead",
-      "why": "Undated in the register and access to the sanctuary grounds is unverified. Worth a proper look: it is sacred ground 424 m from the Park Guell cluster, and CLAUDE.md's own step 1 says that is exactly where the unlisted old trees are."
+      "why": "Same garden as the Garrofer above, 41m away, same access question and same conclusion: register plus beteve.cat's 2021 press piece give two sources for existence and species, but not for public access. Girth of 4.34m is large for the species; plausible for a mature multi-stemmed Schinus molle but worth a sanity check against a photo before shipping. Resolve alongside the Garrofer, they are one site.",
+      "register_id": 99400680097,
+      "register_notes": "Girth 4.34m, height 10m, crown 12m. Catalogued 2021. Ownership field blank in the register import."
     },
     {
       "name": "Arbres de l'amor de la placa Joanic",
@@ -592,6 +596,22 @@
       "status": "blocked",
       "why": "Non-collectible point: two units under one entry and one coordinate.",
       "register_id": 99400728977
+    },
+    {
+      "name": "Ficus de Mysore del Santuari de Sant Josep de la Muntanya",
+      "species": "Ficus drupacea",
+      "lat": 41.410399924697145,
+      "lng": 2.1533286346484655,
+      "status": "blocked",
+      "why": "Access unresolved and the site is sensitive enough that unresolved is a reason to hold rather than ship. Register (99400680086) plus beteve.cat's 2021 press piece on the 40-tree AIL designation give two sources for existence and species, so this is not an evidence problem. It is an access problem: Viquipedia describes the complex as a convent-asylum built around 'a central cloister serving as distribution nuclei', plus a church and a novices' residence, and states the site currently houses a reception centre for at-risk minors. The church itself keeps public hours (10:30-13:30, 16:30-19:00 daily per santuariosanjose.org) and the complex welcomes pilgrims, but nothing found places the ficus specifically in the public esplanade/staircase area rather than the cloister or residence, and sending readers looking for a specific tree inside a children's care facility is not a chance worth taking on an unconfirmed guess. Revisit only if a future pass gets the sanctuary's own confirmation that the tree stands in the area open to visitors."
+    },
+    {
+      "name": "Xiprer comu del carrer Betlem",
+      "species": "Cupressus sempervirens",
+      "lat": 41.40565912910181,
+      "lng": 2.153940001097059,
+      "status": "blocked",
+      "why": "Private land, not open to visitors. Register (99400680099) plus beteve.cat's 2021 press piece confirm existence and species (2.1m girth, 24m tall, catalogued 2021), but a Guia Barcelona description found in search places it explicitly 'in the front courtyard of a private four-story building' at Carrer de Betlem 55-59, alongside a plane and a tipuana. No sign this is a street tree or on any publicly accessible plot. Hard rule 10 territory: leave it out."
     }
   ]
 }
