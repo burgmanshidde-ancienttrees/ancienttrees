@@ -67,6 +67,12 @@
       "noted": "2026-08-08",
       "symptom": "Cloudflare 'Just a moment...' challenge to plain curl and to WebFetch on every /pictures/item/ and /item/ path tried (dc1027 through dc1051 range); 403 every time, no browser UA tested",
       "workaround": "tile.loc.gov (the raw PDF/image storage host, e.g. https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dcNNNN/data/dcNNNNdata.pdf) is NOT behind the same Cloudflare gate and served most HALS survey PDFs fine this pass; note those PDFs are scanned images (JBIG2) with no text layer, so they confirm a record's existence and title but cannot be read for content without OCR"
+    },
+    "nycgovparks.org": {
+      "host": "nycgovparks.org",
+      "noted": "2026-08-08",
+      "symptom": "HTTP 202 with EMPTY body to curl and WebFetch: a soft bot-block that wastes time instead of erroring",
+      "workaround": "Wayback Machine direct web.archive.org/web/<date>/ URLs (the availability API itself rate-limits)"
     }
   }
 }
