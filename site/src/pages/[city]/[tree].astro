@@ -1,0 +1,199 @@
+---
+// Contract A — Tree page. Ported from build_tree_page(), build_site.py:3127-3312.
+import { getCollection, type CollectionEntry } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../../lib/trees";
+import { speciesCommon } from "../../lib/species";
+import { usablePhoto, imgSrcset, thumbUrl, creditRequired } from "../../lib/images";
+import { speciesIcon } from "../../lib/species-icons";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
+import { fitTitle } from "../../lib/title";
+import { ageToken, metaFromStory, submitLink, locationIsApproximate } from "../../lib/tree-copy";
+import { seasonBlock } from "../../lib/phenology";
+import { mapHead, singlePinScript } from "../../lib/map";
+import { COLLECT_JS } from "../../lib/collect-js";
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+export async function getStaticPaths() {
+  const allCities = (await getCollection("cities")).filter(cityIsRenderable);
+  const intros = await getCollection("countries");
+  const speciesIntros = await getCollection("species");
+
+  const countryPages = new Map<string, string>();
+  const byCountryCount = new Map<string, number>();
+  for (const c of allCities) byCountryCount.set(c.data.country, (byCountryCount.get(c.data.country) ?? 0) + 1);
+  for (const intro of intros) {
+    if ((byCountryCount.get(intro.data.country) ?? 0) >= 3) countryPages.set(intro.data.country, intro.data.slug);
+  }
+  const speciesPages = new Map(speciesIntros.map((i) => [i.data.common_name, i.data.slug]));
+
+  const paths: { params: { city: string; tree: string }; props: any }[] = [];
+  for (const city of allCities) {
+    const trees = renderableTrees(city);
+    const tslugs = treeSlugsForCity(city);
+    for (const tree of trees) {
+      const wc = (tree.story ?? "").split(/\s+/).filter(Boolean).length;
+      if (wc < 150 || wc > 250) {
+        throw new Error(`${city.id}/${tslugs[tree.id]}: story is ${wc} words, CLAUDE.md Step 3 requires 150-250`);
+      }
+      paths.push({
+        params: { city: city.id, tree: tslugs[tree.id] },
+        props: { city, tree, allTrees: trees, countryPages, speciesPages },
+      });
+    }
+  }
+  return paths;
+}
+
+interface Props {
+  city: CityEntry;
+  tree: Tree;
+  allTrees: Tree[];
+  countryPages: Map<string, string>;
+  speciesPages: Map<string, string>;
+}
+const { city, tree, allTrees, countryPages, speciesPages } = Astro.props as Props;
+
+const cityName = city.data.city;
+const country = city.data.country;
+const cslug = city.id;
+const tslugs = treeSlugsForCity(city);
+const tslug = tslugs[tree.id];
+const loc = tree.location;
+const age = ageToken(tree);
+const canonical = `${BASE_URL}/${cslug}/${tslug}`;
+
+const title = fitTitle([
+  `${tree.name}: ${age} Year Old ${speciesCommon(tree)} in ${cityName}`,
+  `${tree.name}: ${age} Year Old Tree in ${cityName}`,
+  `${tree.name} in ${cityName}`,
+  tree.name,
+]);
+const description = metaFromStory(tree.story ?? "");
+
+// Sorted by haversine distance, matching build_tree_page's own nearby sort
+// (build_site.py:3152-3154).
+function haversineKm(a: { latitude: number; longitude: number }, b: { latitude: number; longitude: number }): number {
+  const toRad = (d: number) => (d * Math.PI) / 180;
+  const [lat1, lon1, lat2, lon2] = [toRad(a.latitude), toRad(a.longitude), toRad(b.latitude), toRad(b.longitude)];
+  const h = Math.sin((lat2 - lat1) / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin((lon2 - lon1) / 2) ** 2;
+  return 6371 * 2 * Math.asin(Math.sqrt(h));
+}
+const here = { latitude: loc.latitude!, longitude: loc.longitude! };
+const others = allTrees
+  .filter((t) => t.id !== tree.id)
+  .sort((a, b) => haversineKm(here, { latitude: a.location.latitude!, longitude: a.location.longitude! }) - haversineKm(here, { latitude: b.location.latitude!, longitude: b.location.longitude! }));
+const nearby = others.slice(0, 3);
+
+const countryUrl = countryPages.has(country) ? `${BASE_URL}/${countryPages.get(country)}` : null;
+const crumbItems: [string, string | null][] = [
+  ["Home", BASE_URL],
+  [country, countryUrl],
+  [cityName, `${BASE_URL}/${cslug}`],
+  [tree.name, null],
+];
+
+const photo = usablePhoto(tree);
+let ogImage = "";
+if (photo?.url) ogImage = `\n<meta property="og:image" content="${esc(thumbUrl(photo.url, 1200))}">`;
+
+const spCommon = speciesCommon(tree);
+const spSlug = speciesPages.get(spCommon);
+
+const seasonHtml = seasonBlock(tree, loc.latitude!);
+const isApprox = locationIsApproximate(tree);
+
+const graph = [
+  ...SITE_SCHEMA,
+  {
+    "@type": "TouristAttraction",
+    name: tree.name,
+    description: (tree.story ?? "").slice(0, 300),
+    isAccessibleForFree: (tree.access ?? "").toLowerCase().includes("free"),
+    geo: { "@type": "GeoCoordinates", latitude: loc.latitude, longitude: loc.longitude },
+  },
+  breadcrumbSchema(crumbItems, canonical),
+];
+const headExtra = mapHead() + ogImage + "\n" + ldScript(graph);
+const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS;
+---
+<Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
+  <main class="content-page">
+    <Breadcrumbs items={crumbItems} />
+    <h1>{tree.name}{tree.label && <span class="tree-label">{tree.label}</span>}</h1>
+    <p class="chip-row">
+      <span class="chip">{tree.age_estimate ?? "age unknown"}</span>
+      <span class="chip">{spCommon}</span>
+      {isApprox && <span class="chip approx">pin approximate</span>}
+    </p>
+    {photo && photo.url ? (
+      <figure class="tree-photo">
+        <img {...imgSrcset(photo.url, [700, 1100, 1600], "(max-width: 800px) 100vw, 760px")} alt={tree.name} loading="lazy" />
+        {creditRequired(photo.license) && <figcaption>Photo: {photo.attribution} ({photo.license})</figcaption>}
+      </figure>
+    ) : (
+      <figure class="tree-noph">
+        <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
+        <figcaption>
+          <b>{spCommon}</b>
+          <span>Nobody has published a photograph of this tree under a licence we can use.
+          <a href="/contribute">Send us yours</a> and it goes on this page with your name on it.</span>
+        </figcaption>
+      </figure>
+    )}
+    <div class="action-row">
+      <button class="go-btn" id="collect-btn" type="button">Collect this tree</button>
+      <a class="go-btn ghost" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
+      <a class="action-link" href={`/${cslug}#walk`}>Walk more trees in {cityName}</a>
+    </div>
+    <dialog id="collect-dialog" class="collect-dialog">
+      <h3>Keep the trees you have stood in front of</h3>
+      <p>Collecting is the game of Ancient Trees: stand in front of a tree like this one, tick it off, and your collection of old giants grows city by city. It lives in the Ancient Trees app, along with walking routes past several trees.</p>
+      <div class="collect-actions">
+        <a class="go-btn" href="/app">Get the app</a>
+        <button class="go-btn ghost" type="button" id="collect-close">Not now</button>
+      </div>
+    </dialog>
+    <div class="prose-block"><p>{tree.story}</p></div>
+    <Fragment set:html={seasonHtml} />
+    <div class="map-embed"><div id="map" class="map"></div></div>
+    <p class="go-note">The buttons above open directions and collecting. {tree.transport ?? ""}</p>
+    {isApprox && (
+      <p class="approx-note">
+        The pin marks the right spot roughly, not the tree itself. It stands here, but we have not confirmed the precise position on the ground yet.{" "}
+        <a href={submitLink("correction")}>Know exactly where it is?</a>
+      </p>
+    )}
+    <dl class="facts">
+      <dt>Species</dt><dd>{tree.species ?? ""}</dd>
+      <dt>Age estimate</dt><dd>{tree.age_estimate ?? "unknown"}</dd>
+      <dt>Location</dt><dd>{loc.address ?? ""} ({loc.neighbourhood ?? ""})</dd>
+      <dt>Access</dt><dd>{tree.access ?? ""}</dd>
+      <dt>Getting there</dt><dd>{tree.transport ?? ""}</dd>
+    </dl>
+    <h2>Trees nearby</h2>
+    <div class="near-cards">
+      {nearby.map((t) => (
+        <a class="near-card" href={`/${cslug}/${tslugs[t.id]}`}>
+          <b>{t.name}</b>
+          <span>{t.age_estimate ?? ""} · {distLabel({ latitude: loc.latitude!, longitude: loc.longitude! }, { latitude: t.location.latitude!, longitude: t.location.longitude! })} away</span>
+        </a>
+      ))}
+    </div>
+    <div class="cta">
+      Curious what else is standing in {cityName}? See <a href={`/${cslug}`}>all {allTrees.length} remarkable ancient trees in {cityName}</a> or find out <a href={`/${cslug}/oldest-tree`}>what the oldest tree in {cityName} is</a>.
+      {spSlug && <Fragment> It is a {spCommon}; see <a href={`/species/${spSlug}`}>every {spCommon.toLowerCase()} on the site</a>.</Fragment>}
+    </div>
+    <div class="report">
+      <strong>We could use your help.</strong>
+      <p class="report-line">This page was researched from a distance. If you know this tree, you know things we do not.</p>
+      <a class="report-btn" href={submitLink("correction")}>Something is wrong here</a>
+      <a class="report-btn" href={submitLink("tree")}>Suggest another tree</a>
+    </div>
+  </main>
+  <Fragment slot="scripts" set:html={scripts} />
+</Base>
