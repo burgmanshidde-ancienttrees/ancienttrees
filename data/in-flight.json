@@ -4,18 +4,6 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "paris",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-08T08:09:28+00:00"
-    },
-    {
-      "target": "barcelona",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-08T08:15:06+00:00"
-    },
-    {
       "target": "berlin",
       "kind": "verify",
       "by": "night-run-2",
@@ -44,6 +32,12 @@
       "kind": "verify",
       "by": "night-run",
       "claimed_at": "2026-08-08T11:13:38+00:00"
+    },
+    {
+      "target": "london",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-08T12:37:17+00:00"
     }
   ]
 }
