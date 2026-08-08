@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.5 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.8 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -106,6 +106,19 @@ The index at `/parks` uses the same browse-card grid as `/cities` and `/species`
 
 Named person, short bio, why this exists, one verifiable external link (LinkedIn or equivalent). Person schema with sameAs. This page exists for entity verification as much as for readers.
 
+### Contract I — Press page  `/press`
+
+| Element | Specification |
+|---|---|
+| Title (≤60 chars) | `Press and Data: Ancient Trees` |
+| H1 | `Press and data` |
+| Body | Answer-first lede stating the current headline finding (P2) → the numbers, every one of them generated → the story angles a desk can take, each with its own page → what the images are and what their licences require → what the data is and is not → how to reach us |
+| Schema | WebPage + BreadcrumbList |
+| Internal links | The collection carrying the headline finding, `/explore`, `/cities`, and the cities named in the angles |
+| Hard rule | **Not one number on this page is typed by hand.** Every figure is computed from the published tree data at build time, so the page cannot go stale between a journalist reading it and checking it. A hand-typed number here is the one failure this page cannot survive, because its entire purpose is to be checkable. |
+| Hard rule | No personal name and no contact address, per the v1.4 privacy ruling: contact runs through the existing form, exactly as the privacy page does. |
+| Hard rule | The caveats ship on the page, not on request: what the count covers, why the map is denser in some countries, and that ages are as sourced with disagreements stated. A press page that omits its own limits is the fastest way to be quoted wrongly and blamed for it. |
+
 ### Contract F — Species page  `/species/[slug]`
 
 The one browse facet: "show me every [species] on the site". Semi-automated. The entry list is generated from tree data; the intro is hand-written, which is what keeps the page off the thin-content pile.
@@ -148,6 +161,7 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 ---
 
 ## CHANGELOG
+- **v1.8 (2026-08-08):** Added Contract I (press page `/press`), approved by Hidde in session ("pers pagina is prima"). Built because the site had a press-worthy finding and nowhere to send a journalist: four in ten of the ancient trees we map in European cities are not European species. The contract's distinguishing rule is that no number on the page may be hand-typed, all of them generate from the tree data at build time, since a press page exists to be checked and a stale figure there costs more than no page at all. Carries its own caveats rather than supplying them on request.
 - **v1.7 (2026-08-07):** Added Contract H (park page `/parks/[slug]` + `/parks` index), approved by Hidde in session ("so parks do it now"). His reasoning: parks are a browse facet visitors already think in, and the search evidence agrees, since "york museum gardens" is the site's best-performing query at position 4 and "den brandt park" surfaced with 12 impressions and no page. Publish-gated at 5 trees plus a hand-written intro, a higher bar than the species contract's three because a park page with four trees is a thin page wearing a park's name. 9 parks qualify at launch, 3 have intros and pages.
 - **v1.6 (2026-08-01):** Contract D splits the title tag from the H1, approved by Hidde in session ("de content beslissing rond collecties klinken goed doe het maar") after he judged the collection titles weak for search. The editorial titles were doing double duty: strong as headings, invisible to search, because nobody types "Trees That Outlived Their City". New optional `seo_title` per collection carries the query-shaped version; `title` stays the H1. All 12 collections got one the same day.
 - v1.3 — Contract D loses the owner-approval gate, approved by Hidde ("yes pas aan", 2026-07-27). It was the last place he sat as a mandatory quality gate, contradicting the recorded principle that the system publishes and readers correct. The risks it guarded are covered without him: entries are script-verifiable against the tree data, superlatives fall under the existing softening rule, voice under TONE_OF_VOICE.md. Collections now publish like cities do.
