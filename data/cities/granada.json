@@ -29,7 +29,7 @@
     {
       "id": "gra_001",
       "name": "The Cypress of San Juan de la Cruz",
-      "species": "Mexican Cypress (Hesperocyparis lusitanica)",
+      "species": "Mexican Cypress (Cupressus lusitanica)",
       "age_estimate": "approximately 440 years",
       "age_min": 438,
       "age_max": 444,
@@ -93,7 +93,12 @@
       "age_estimate": "approximately 135 years",
       "age_min": 133,
       "age_max": 137,
-      "best_time": { "months": [11], "label": "November, when its fan-shaped leaves turn gold" },
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "November, when its fan-shaped leaves turn gold"
+      },
       "location": {
         "address": "Jardin Botanico de la Universidad de Granada, Facultad de Derecho, 18001 Granada",
         "latitude": 37.1782,
@@ -150,7 +155,7 @@
     {
       "id": "gra_005",
       "name": "The Plane Trees of the Fountain of Battles",
-      "species": "London Plane (Platanus hispanica)",
+      "species": "London Plane (Platanus x acerifolia)",
       "age_estimate": "undated, mature",
       "age_min": 80,
       "age_max": 150,
@@ -184,7 +189,12 @@
       "age_estimate": "approximately 200 years",
       "age_min": 190,
       "age_max": 210,
-      "best_time": { "months": [5], "label": "May, when its white flower clusters hang from every branch" },
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "May, when its white flower clusters hang from every branch"
+      },
       "location": {
         "address": "Plaza de los Campos 6, 18009 Granada",
         "latitude": 37.1717,
@@ -241,11 +251,17 @@
     {
       "id": "gra_008",
       "name": "The Sophora of the Parador Garden",
-      "species": "Japanese Pagoda Tree (Sophora japonica)",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
       "age_estimate": "approximately 200 years",
       "age_min": 190,
       "age_max": 210,
-      "best_time": { "months": [7, 8], "label": "July and August, when its white flower clusters open" },
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "July and August, when its white flower clusters open"
+      },
       "location": {
         "address": "Parador de Granada, Real de la Alhambra s/n, 18009 Granada",
         "latitude": 37.1758,
@@ -306,7 +322,13 @@
       "age_estimate": "planted 16th-19th century, undated individually",
       "age_min": 100,
       "age_max": 200,
-      "best_time": { "months": [4, 5], "label": "late April and early May, when the forest's chestnut blossom peaks" },
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "label": "late April and early May, when the forest's chestnut blossom peaks"
+      },
       "location": {
         "address": "Bosque de la Alhambra, Cuesta de Gomerez, 18009 Granada",
         "latitude": 37.1775,

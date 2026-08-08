@@ -3043,6 +3043,42 @@ def check_species_names(cities):
                                for c, v in sorted(commons.items()))
             ERRORS.append(f"species {latin} uses {len(commons)} common names, hard rule 9 "
                           f"allows one: {spread}")
+    # And the mirror, which the check above cannot see: ONE common name under
+    # several Latin spellings splits the same species just as badly. Found
+    # 2026-08-08 while counting species for a press story: "London Plane" was
+    # living as Platanus x acerifolia, x hispanica, acerifolia and hispanica at
+    # once, 62 trees that should be one species page and were four groups.
+    # Single-tree ensembles that deliberately name several species are exempt.
+    by_common = {}
+    for entry in sorted(cities, key=lambda e: e["slug"]):
+        slug, data = entry["slug"], entry.get("data") or {}
+        for t in data.get("trees") or []:
+            sp = t.get("species") or ""
+            m = re.search(r"\(([^)]+)\)", sp)
+            latin = m.group(1).strip() if m else ""
+            if not m or "," in latin or " and " in latin:
+                continue
+            # A cultivar, form, subspecies or variety of the same binomial is
+            # not a split, it is a legitimately finer record: York's
+            # Fagus sylvatica 'Miltonensis' belongs with Edinburgh's beech.
+            # Only a different binomial under one common name is the bug, and
+            # that is always a synonym nobody reconciled (Sophora japonica
+            # beside Styphnolobium japonicum).
+            binomial = re.split(r"\s+(?:'|f\.|subsp\.|var\.|ssp\.)", latin)[0].strip()
+            # Some parentheticals describe a place rather than name a species
+            # ("Mixed species (Napoleonic public garden)"): a binomial is a
+            # capitalised genus and a lowercase epithet, and nothing else.
+            if not re.match(r"^[A-Z][a-z]+ (x )?[a-z-]+$", binomial):
+                continue
+            common = sp[:m.start()].strip()
+            by_common.setdefault(common, {}).setdefault(binomial, []).append(slug)
+    for common, latins in sorted(by_common.items()):
+        if len(latins) > 1:
+            spread = "; ".join(f"{l!r} in {sorted(set(v))[0]}"
+                               + (" and others" if len(set(v)) > 1 else "")
+                               for l, v in sorted(latins.items()))
+            ERRORS.append(f"species {common!r} carries {len(latins)} scientific names, "
+                          f"hard rule 9 allows one: {spread}")
 
 
 def check_phenology():
