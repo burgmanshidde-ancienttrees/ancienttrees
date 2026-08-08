@@ -16,7 +16,8 @@
       "name": "Graceland Cemetery arboretum (unspecified individual specimen)",
       "species": "unknown - cemetery is a certified Morton Arboretum-affiliate arboretum of 2,000+ trees, 103+ species, including American Elm",
       "location_hint": "Graceland Cemetery, 4001 N Clark St, Uptown, Chicago, roughly 41.9556, -87.6598",
-      "why_not_shipped": "Graceland publishes its own self-guided Tree Tour maps (PDF, e.g. https://www.gracelandcemetery.org/images/Tree_Tour_II_Map_-_to_be_added_to_website.pdf) which likely name specific notable specimens, but the tour pages fetched in this pass described the collection only in aggregate, with no individual tree's age, species or exact plot called out. A future pass should open the actual Tree Tour PDF map(s) rather than the landing page; if they name specific champion or notably old trees with locations, that could produce one or more strong candidates within a 25 to 30 minute transit ride of downtown (Red Line to Sheridan or Berwyn, or Clark St bus)."
+      "why_not_shipped": "Graceland publishes its own self-guided Tree Tour maps (PDF, e.g. https://www.gracelandcemetery.org/images/Tree_Tour_II_Map_-_to_be_added_to_website.pdf) which likely name specific notable specimens, but the tour pages fetched in this pass described the collection only in aggregate, with no individual tree's age, species or exact plot called out. A future pass should open the actual Tree Tour PDF map(s) rather than the landing page; if they name specific champion or notably old trees with locations, that could produce one or more strong candidates within a 25 to 30 minute transit ride of downtown (Red Line to Sheridan or Berwyn, or Clark St bus).",
+      "update_2026_08_08": "Both PDF tour maps (Tree Tour I, 50 numbered specimens, and Tree Tour II, 50 more) were opened and read in full this pass. Both are plain species-identification walks, one example of each species numbered on a map (White Pine, Bur Oak is not even listed; the closest natives are a Northern Pin Oak, a Pin Oak, an English Oak, a Black Oak and a Swamp White Oak scattered among ornamentals like Ginkgo, Katsura and Star Magnolia). Neither map gives an age, a girth, a 'champion' or 'notable' designation, or any text distinguishing one specimen as remarkable versus another; they exist to show garden diversity, not veteran trees. Targeted searches for a named old/champion tree at Graceland (elm survivor, champion oak, historic specimen) returned nothing beyond the same aggregate 'certified arboretum, 2,000+ trees' framing. This lead is now closed unless a future pass finds a specific news piece or arborist report naming one Graceland tree with an age and a plot location; the tour maps themselves are exhausted."
     }
   ],
   "blocked": [
@@ -43,6 +44,30 @@
       "species": "mixed oak and hickory",
       "location_hint": "Dan Ryan Woods, 87th and Western, Beverly, Chicago",
       "reason": "Same as LaBagh Woods: a 60-acre closed-canopy woodland on high ground (former Blue Island), not a single collectible tree. No individual specimen identified in this pass."
+    },
+    {
+      "name": "Massacre Tree (Fort Dearborn cottonwood)",
+      "species": "Cottonwood",
+      "location_hint": "18th Street between Prairie Avenue and the lake, Chicago",
+      "reason": "DEAD since 1894. A cottonwood said to have been a sapling during the 1812 Fort Dearborn Massacre; a Chicago Tribune report of 1894-05-18 recorded it fell in a storm, was sawn in two and given to G. Pullman for his gardens. Historical-only, never a living entry."
+    },
+    {
+      "name": "Bur Oak Historical Marker tree, Spring Valley Nature Center",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "location_hint": "Schaumburg, Cook County, IL (hmdb.org marker #259980)",
+      "reason": "Not in Chicago and not within the ~30 minute day-trip boundary: Schaumburg is a far northwest suburb, well outside transit range of the city centre."
+    },
+    {
+      "name": "\"Champion\" white oak, Pioneer Woods",
+      "species": "White Oak (Quercus alba)",
+      "location_hint": "Pioneer Woods, Willow Springs, Cook County (Forest Preserve District of Cook County)",
+      "reason": "Roughly 300 years old per the Forest Preserves' resource-management director, but Willow Springs is a distant southwest suburb, well outside the ~30 minute day-trip boundary of downtown Chicago. Same exclusion applies to the Millennium Landmark Tree at Morton Arboretum in Lisle (330+ years, white oak) — genuinely one of the region's oldest trees but a different city's day trip, not Chicago's."
     }
+  ],
+  "unexplored_2026_08_08": [
+    "Illinois Big Tree Register (extension.illinois.edu/forestry/big-tree-register), an interactive ArcGIS Experience map (https://experience.arcgis.com/experience/df5e7296d76a4c8ba133c9e8adf1f85a) with GPS coordinates, species and measurements for 88 champion trees statewide, some likely within Chicago or its close suburbs. The map is a JS-only SPA; curl returns an empty shell and the underlying FeatureServer URL was not located in this pass. A future pass should find the feature-service endpoint (browser devtools network tab, or ArcGIS item search on Illinois Extension's org) and query it for entries within city limits. Champion-tree size does not equal age, so any hit still needs an independent age source before it clears the bar.",
+    "Chicago Botanic Garden (Glencoe): checked briefly, the oldest documented specimen (a white oak in McDonald Woods) is only cited as 'over 100 years old', not old enough to be a strong candidate, and Glencoe is a genuine trek from downtown (Metra Union Pacific North to Braeside, then a walk/shuttle, likely 45+ minutes door to door), so it was not pursued further this pass.",
+    "Washington Park (Olmsted, 1870): DNAinfo's 2016 'oldest tree' survey states its oaks 'predate the earliest designs for the park by Frederick Law Olmsted in 1870', but no source found in this pass names or locates an individual specimen there; TCLF's landscape page describes groves only in aggregate. Worth a dedicated look at Chicago Park District records or a site visit.",
+    "hpherald.com's 'Hyde Park Stories: Bur Oaks' article (already a verified_source for chi_002) returned HTTP 429 on WebFetch and 302 on curl in this pass; worth a retry with a delay, it may contain more detail on the Wooded Island/Jackson Park grove or other Hyde Park specimens."
   ]
 }
