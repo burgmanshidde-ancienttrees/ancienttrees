@@ -10,6 +10,22 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-08 — London opens its first walk, and ten other cities get theirs in the same move
+
+**London: 10 to 15 trees, gated no more, ATI untouched.** Hidde authorised the web-research path in session. Two passes: the first delivered a modest City pair (the ~250-year St Paul's Churchyard Planes as an ensemble, the ~1827 Amwell Street Fig) and the finding that mattered, that the real walkable cluster is Mayfair/Westminster; the second finished it: the Dorchester Plane, the Marylebone Elm (a mature elm Dutch elm disease missed, in central London, confirmed alive by an April 2026 sighting) and the 1870 Embankment Plane, all joining the published 1789 Berkeley Square Plane. The Abbey Plane stays a lead: its identity is split across three candidate trees and no source dates any of them. Every single-source date is named as such in the prose; the "tallest in Britain" claim found for the Embankment Plane was checked, unverifiable, and dropped. The Woodland Trust's ATI was not touched in any form; sources were the Great Trees of London designation, park authorities, borough pages and local history.
+
+**The walk needed one honest mechanism change, measured before built.** London's chain has 1.3-1.5 km hops and the 900 m clustering radius could not see it. Measured across all 91 cities: at 1500 m, eleven walk-less cities (London, Venice, Copenhagen, The Hague, Geneva, Ljubljana, Budapest, Bucharest, Breda, Nijmegen, Sintra) gain their FIRST walk, but Paris, Vienna, Naples and Nice would weld into blobs. So the wider radius applies only when a city would otherwise have no walk at all. Result: 72 of 91 cities carry a walk, up from 61, and no existing walk changed shape. Real pedestrian geometry routed for all twelve new walks.
+
+**Rome +2** (the Perin del Vaga holm oak with its Roman dialect nickname told honestly, the Scipioni hackberry with both disputed heights stated), stories in the same batched write pass as London's five, 7 stories for 93k tokens.
+
+**The press strategy inverted on Hidde's read.** His "ik kan me niet voorstellen dat iemand iets met dit press verhaal gaat doen" was right about the lead: a continental statistic is a slow-news-day gamble. The local angle is now the lead: `press_numbers.py --city <name>` prints a per-city fact sheet (oldest tree, story opening, photo count, seasonal hook), so every city-desk pitch is that city's own story with the immigrants finding as follow-through. Seasonal hooks become pitchable in October; late September is the send window.
+
+**Analytics cleaned at the root.** The beacon and event tracker now fire only on ancienttrees.app: CI smoke tests (headless Chrome on every push) and preview sessions were being counted as visitors. A break-in-series note sits at the top of DATA.md so Monday's analysis does not read the drop as an audience leaving. Hidde's own devices opt out per browser via /?notrack=1, once each.
+
+Also closed today: the offline-small-cities question (withdrawn after one pushback, recorded in DECISIONS.md), and the Cloudflare load-time unit bug (microseconds printed as ms, so the dashboard claimed nine-minute page loads for weeks and nobody flinched).
+
+FOR HIDDE: London is live with its first walk. Still yours alone: sending (park mails, press pitches), and visiting /?notrack=1 once per device.
+
 ## 2026-08-08 — Archive rhythm live, and a press story that survives checking
 
 **The archive rhythm Hidde asked for is running.** `scripts/archive_logs.py` moves LOG.md and CURATION.md entries older than a week into `archive/`, verbatim, nothing deleted, with a link list and a warning in each living file that absence is not evidence a hunt is new (`grep -ri "<place>" CURATION.md archive/`). Wired into the weekly-analysis workflow as a plain script step before the analyst, committing separately so a failure cannot take the analysis down. Effect: 1.6 MB to 173 KB, all 313 LOG and 369 CURATION entries preserved and counted after the move. Seven days rather than thirty because the numbers said so: at fourteen days the two files still totalled 1.4 MB, and seven matches what CLAUDE.md already says about LOG.md, "assume he has not looked in a week".
