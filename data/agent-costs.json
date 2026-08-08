@@ -572,6 +572,13 @@
         "tokens": 124728,
         "trees": 0,
         "note": "28 outreach targets: 24 published emails verified on own sites, 4 form-only; monumentaltrees.com Cloudflare-blocked, Milano PEC-only."
+      },
+      {
+        "target": "Amsterdam",
+        "kind": "verify",
+        "tokens": 205734,
+        "trees": 6,
+        "note": "Scouted and licensed the Gemeente bijzondere-bomen register (5827 trees, commercial reuse explicit, saved for reuse); 6 Artis/Hortus trees verified against it plus Bomenstichting guide PDF and oost-online.nl; 3 flagged on date conflicts; ams_011 pin upgraded approximate->confirmed from the register coordinate. Stories pending."
       }
     ]
   }

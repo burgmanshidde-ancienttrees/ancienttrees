@@ -367,8 +367,8 @@
       "age_max": 235,
       "location": {
         "address": "Hortus Botanicus Amsterdam, Plantage Middenlaan 2A, 1018 DD Amsterdam",
-        "latitude": 52.3665,
-        "longitude": 4.9086,
+        "latitude": 52.3670831,
+        "longitude": 4.9090584,
         "neighbourhood": "Plantage, Amsterdam-Centrum"
       },
       "story": "Bomenstichting, the Dutch tree foundation, calls this the oldest and thickest Turkish hazel in the Netherlands: planted in 1795, and three metres around today. That makes it two centuries younger than the Hortus itself, which has grown rare and difficult plants since 1638, but older than almost everything else standing in the garden. Turkish hazel is native to Asia Minor and the Balkans, a relative of the small hazel that produces the nuts, built at oak scale instead: pyramidal, broad-crowned, capable of forty metres. This one flowers in January, when its male catkins hang and shed pollen while the rest of the garden sits bare, a small performance almost nobody times a visit around. The 1795 planting date and the 300 centimetre girth both trace back to the tree's own record-keepers rather than an outside survey, so treat the figure as the Hortus's own claim rather than a courtroom fact. It grows a few minutes from the garden's giant cycad, itself pushing three centuries old, so two of Amsterdam's oldest living things now share the same corner of the Plantage. Entry costs a Hortus ticket, same as it always has: rare plants have never been free to see here.",
@@ -387,7 +387,7 @@
       },
       "curation_status": "flagged",
       "notes": "Planting date (1795) and girth (300cm) both trace to a single source lineage: Bomenstichting content that the national monumental-trees register entry (monumentalebomen.nl, id 1686149) appears to reuse, rather than two fully independent measurements. Species and presence in this garden are independently corroborated by NVBT (the Dutch botanical gardens association) and monumentaltrees.com. No exact in-garden coordinate found, only the Hortus street address, so pinned at the garden entrance rather than the specific specimen; location_precision is approximate for that reason. Do not present as the city's oldest tree without a citywide comparison; several other Amsterdam trees on this list are older by planting date.",
-      "location_precision": "approximate"
+      "location_precision": "confirmed"
     }
   ],
   "oldest_tree_id": "ams_001",
