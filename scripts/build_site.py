@@ -1372,6 +1372,7 @@ def _walk_name(members, markers):
 
 
 WALK_SPLIT_KM = 3.0      # past this a walk stops being an afternoon and becomes a route
+COMBINED_MAX_KM = 6.0    # up to here "Both walks" is still offered as one outing
 WALK_MAX_OVERLAP = 0.5   # two walks may never be more than half the same trees
 
 
@@ -1383,15 +1384,20 @@ def _leg_km(order, points):
 
 
 def _split_route(order, points, depth=0):
-    """Cut a long route in half at its midpoint, letting the junction tree
-    belong to both halves.
+    """Cut a long route in half at its midpoint, into two DISJOINT halves.
 
     Hidde, 2026-08-08, having noticed walks are built as disjoint clusters:
     "you can use the same tree in several walks, does that open options?" It
     opens exactly one worth having. Eighteen cities had a single walk over
     2.5 km, Prague at 6.0 km and 79 minutes, which is a route rather than an
-    afternoon. Splitting at the middle gives two real walks that overlap only
-    where they genuinely meet, and the shared tree is honestly on both.
+    afternoon. Splitting at the middle gives two real walks.
+
+    The first version let the junction tree belong to both halves. Hidde saw
+    the result on Amsterdam the same day and called it: two walks whose lines
+    are welded together at the shared tree read as ONE walk on the overview
+    map. So the halves are now disjoint, and the way to walk both is the
+    explicit "Both walks" choice plan_walks adds when the whole route is
+    still a doable afternoon.
 
     What it deliberately does NOT do is manufacture variety. Sharing trees
     freely would let any city be sliced into four walks that are the same trees
@@ -1409,8 +1415,8 @@ def _split_route(order, points, depth=0):
         if run >= half:
             cut = i
             break
-    cut = max(WALK_MIN_TREES - 1, min(cut, len(order) - WALK_MIN_TREES))
-    first, second = order[:cut + 1], order[cut:]   # the junction tree is in both
+    cut = max(WALK_MIN_TREES - 1, min(cut, len(order) - WALK_MIN_TREES - 1))
+    first, second = order[:cut + 1], order[cut + 1:]   # disjoint: no shared tree
     if len(first) < WALK_MIN_TREES or len(second) < WALK_MIN_TREES:
         return [order]
     return _split_route(first, points, depth + 1) + _split_route(second, points, depth + 1)
@@ -1433,7 +1439,7 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
     indexes in walking order. Returns [] when no cluster clears the bar, and
     the page then has no route bar at all, which stays the honest answer."""
     points = [(m["lat"], m["lng"]) for m in markers]
-    walks = []
+    walks, combined = [], []
     for members in _walk_clusters(points):
         if len(members) < WALK_MIN_TREES:
             continue
@@ -1442,9 +1448,11 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
         if not route:
             continue
         order = [members[i] for i in route["order"]]
+        kept = 0
         for leg in _split_route(order, points):
             if any(_too_similar(leg, w["order"]) for w in walks):
                 continue
+            kept += 1
             km = round(_leg_km(leg, points), 1)
             walks.append({
                 "order": leg,
@@ -1453,6 +1461,21 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
                 "minutes": int(round(km / WALKING_KMH * 60)),
                 "name": _walk_name(leg, markers),
             })
+        # A split cluster's halves are disjoint (Hidde, 2026-08-08: welded
+        # lines read as one walk on the overview). The full route survives as
+        # an explicit choice when it is still a doable afternoon, so the
+        # visitor with the whole day loses nothing.
+        if kept > 1:
+            km_full = round(_leg_km(order, points), 1)
+            if km_full <= COMBINED_MAX_KM:
+                combined.append({
+                    "order": order,
+                    "count": len(order),
+                    "km": km_full,
+                    "minutes": int(round(km_full / WALKING_KMH * 60)),
+                    "name": "Both walks" if kept == 2 else f"All {kept} walks",
+                    "combined": True,
+                })
     # Photographed trees first, then size. Sorting on size alone put Barcelona's
     # worst walk in front: the ten Pedralbes trees are its tightest cluster and
     # also its newest, imported from the municipal register two days before this
@@ -1470,6 +1493,10 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
     for w in walks:
         if w["name"] in dupes:
             w["name"] = ""
+    # The combined option rides last, after its parts, never as the lead walk.
+    for w in combined:
+        w["shots"] = sum(1 for i in w["order"] if markers[i].get("shot"))
+    walks.extend(combined)
     return walks
 
 
@@ -1545,6 +1572,7 @@ def city_map_script(markers, center, route=None, other_cities=None, walks=None):
         "label": w.get("label", ""),
         "name": w.get("name", ""),
         "meta": f"about {w['km']} km, {w.get('duration', '')} on foot",
+        "combined": bool(w.get("combined")),
     } for w in (walks or [])])
     # One continuous world (Hidde, 2026-07-31): zoom out far enough on any
     # city map and the OTHER cities pop in as the same green dots /explore
@@ -1738,10 +1766,12 @@ function addAllWalksLayer() {{
   if (WALKS.length < 2 || map.getSource('walks-all')) {{ return; }}
   map.addSource('walks-all', {{
     type: 'geojson',
+    // The combined option is the sum of lines already on the map: drawing it
+    // grey as well would double every segment, so only the real walks show.
     data: {{ type: 'FeatureCollection', features: WALKS.map(function(w, i) {{
       return {{ type: 'Feature', properties: {{ idx: i }},
                geometry: {{ type: 'LineString', coordinates: w.coords }} }};
-    }}) }}
+    }}).filter(function(f) {{ return !WALKS[f.properties.idx].combined; }}) }}
   }});
   map.addLayer({{
     id: 'walks-all-hit', type: 'line', source: 'walks-all',
@@ -1769,7 +1799,11 @@ function setAllWalksFilter(activeIdx) {{
   // Hide the grey copy of whatever is selected, so the chosen walk shows once
   // in green rather than twice in two colours.
   if (!map.getLayer('walks-all')) {{ return; }}
-  var f = activeIdx < 0 ? null : ['!=', ['get', 'idx'], activeIdx];
+  // Selecting the combined option hides every grey copy: its green line
+  // covers all of them, and grey under green reads as a third walk.
+  var f = activeIdx < 0 ? null
+        : (WALKS[activeIdx] && WALKS[activeIdx].combined) ? ['==', ['get', 'idx'], -1]
+        : ['!=', ['get', 'idx'], activeIdx];
   map.setFilter('walks-all', f);
   map.setFilter('walks-all-hit', f);
   if (map.getLayer('walks-all-casing')) {{ map.setFilter('walks-all-casing', f); }}
@@ -1861,6 +1895,20 @@ function showWholeCity() {{
     b.classList.remove('is-on');
     b.setAttribute('aria-pressed', 'false');
   }});
+  // The bar goes back to the lead walk too, or deselecting leaves it naming a
+  // walk no chip shows as chosen ("Both walks" with nothing selected).
+  var w0 = WALKS[0];
+  if (w0) {{
+    routeCoords = w0.coords;
+    var go = document.getElementById('route-go');
+    if (go) {{ go.href = w0.url; }}
+    var lab = document.getElementById('route-label');
+    if (lab) {{ lab.textContent = w0.label; }}
+    var meta = document.getElementById('route-meta');
+    if (meta) {{ meta.textContent = w0.meta; }}
+    var nm = document.querySelector('.route-name');
+    if (nm) {{ nm.textContent = w0.name; nm.hidden = !w0.name; }}
+  }}
   if (markers.length > 1) {{ map.fitBounds(bounds, {{ padding: 70, maxZoom: 13 }}); }}
 }}
 document.querySelectorAll('.walk-pick').forEach(function(btn) {{
@@ -3611,9 +3659,10 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
                 f'<span class="walk-pick-name">{esc(w["name"] or f"Walk {i + 1}")}</span>'
                 f'<span class="walk-pick-meta">{w["count"]} trees &middot; {w["km"]} km</span>'
                 f'</button>' for i, w in enumerate(walks))
-            plural = "walks" if len(walks) > 1 else "walk"
+            real = sum(1 for w in walks if not w.get("combined"))
+            plural = "walks" if real > 1 else "walk"
             chooser = (f'<div class="walk-picker" role="group" '
-                       f'aria-label="{len(walks)} {plural} in {esc(city)}">{btns}</div>')
+                       f'aria-label="{real} {plural} in {esc(city)}">{btns}</div>')
         first = walks[0]
         name_bit = f'<span class="route-name">{esc(first["name"])}</span>' if first["name"] else ""
         route_bar = f"""
