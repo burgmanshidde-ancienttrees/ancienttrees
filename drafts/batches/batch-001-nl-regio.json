@@ -1,7 +1,7 @@
 {
   "batch": "001-nl-regio",
   "note": "The five-mail Dutch regional probe (model approved by Hidde 2026-08-08). Each mail is individually written around that city's own tree, per the never-a-template rule. Addresses filled by the contact scout from the outlets' own sites; VERIFY the address column before sending. Sending: python3 scripts/outreach_send.py drafts/batches/batch-001-nl-regio.json --send, after Hidde has read these texts and said go. Success metric: one reply or placement within two weeks proves the channel; zero is also an answer.",
-  "status": "ready_for_hidde",
+  "status": "approved_by_hidde",
   "mails": [
     {
       "to": "redactie@parool.nl",
@@ -38,5 +38,6 @@
       "subject": "Hans, Grietje en de Heks: drie kastanjes van bijna vier eeuwen bij Zijpendaal",
       "body": "Beste redactie,\n\nIk breng op ancienttrees.app de oudste en bijzonderste bomen van steden in kaart, met bronnen per boom. De oudste van Arnhem zijn drie tamme kastanjes van naar schatting 370 jaar bij de ingang van Kasteel Zijpendaal, die in de volksmond Hans, Grietje en de Heks heten; de Arnhemse overlevering schrijft het planten toe aan Karel van Egmond, de laatste onafhankelijke hertog van Gelre.\n\nArnhem staat er met vier bomen op, elk met verhaal, exacte plek en bron:\n\nhttps://ancienttrees.app/arnhem\n\nMisschien iets voor een lokaal stuk. Ik lever desgewenst de data erachter; goede vrije foto's van de Arnhemse bomen ontbreken nog, dus een eigen fotograaf maakt het verhaal af.\n\nHidde\nancienttrees.app"
     }
-  ]
+  ],
+  "approved": "2026-08-08, in session: \"je mag de 5 mails sturen\""
 }

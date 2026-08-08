@@ -221,10 +221,18 @@ bomenbieb info@bomenbieb.nl, jardinessinfronteras form-only.
 ## Log
 
 Record sends and replies here so nobody re-sends and nobody waits on a reply
-that already came.
+that already came. Machine sends are also in data/outreach-sent.json, which the
+send script enforces dedup against. Batch 001 success test: one reply or
+placement within two weeks proves the channel; zero is also an answer. Follow
+up politely after three or four weeks, never sooner.
 
 | Date | To | Ask | Status |
 |---|---|---|---|
+| 2026-08-08 | Het Parool, redactie@parool.nl | Amsterdam local pitch (Heimanseik + Plantage walk), batch 001 | **sent** |
+| 2026-08-08 | DUIC, redactie@duic.nl | Utrecht local pitch (Uithof linden), batch 001 | **sent** |
+| 2026-08-08 | Brabants Dagblad, stadsredactie@bd.nl | Den Bosch local pitch (Bastion Oranje maple), batch 001 | **sent** |
+| 2026-08-08 | Haarlems Dagblad, stadsredactie@haarlemsdagblad.nl | Haarlem local pitch (Lodewijk Napoleon beech), batch 001 | **sent** |
+| 2026-08-08 | De Gelderlander, redactie@gelderlander.nl | Arnhem local pitch (De Poortwachters), batch 001 | **sent** |
 | 2026-08-08 | Generalitat de Catalunya, arbresmonumentals.tes@gencat.cat | Permission to show Catalonia's monumental trees; unlocks Barcelona's trees AND its photos | **sent**, no reply yet |
 | 2026-08-08 | Woodland Trust, ancienttreeinventory@woodlandtrust.org.uk | Written permission for ATI data; unlocks London and Edinburgh | **sent**, no reply yet |
 
