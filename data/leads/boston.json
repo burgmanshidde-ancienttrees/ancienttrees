@@ -1,0 +1,64 @@
+{
+  "leads": [
+    {
+      "candidate": "The 1835 Ginkgo near the Joy Street steps, Boston Common",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "why_a_lead": "Per Friends of the Public Garden, the first ginkgo in Boston's parks was transplanted to the Common near the Joy Street steps in 1835, already 40 feet tall at the time, moved from the estate of Mrs. Gardiner Greene (daughter of John Singleton Copley). That would make it a genuinely remarkable, historically documented tree. But the Common now has 13 ginkgos and I could not confirm this specific 1835 individual is still standing, which of the 13 it is, or a mappable location beyond 'near the Joy Street steps'. Needs a dedicated look (arborist record, Friends of the Public Garden tree inventory, or an in-person/photo check) to confirm it survives and pin it.",
+      "sources_so_far": ["https://friendsofthepublicgarden.org/2016/10/14/meet-the-trees-ginkgo-biloba/"]
+    },
+    {
+      "candidate": "The last true American Elm on the Common, Railroad Mall",
+      "species": "American Elm (Ulmus americana)",
+      "why_a_lead": "Friends of the Public Garden identifies this as 'the last true, non-hybridized, American Elm on the Common', located on Railroad Mall just west of the Visitor Information Center. Historically significant (Massachusetts state tree, once-common species nearly wiped out by Dutch Elm Disease). Failed only on evidence: single source, no age given, and I could not find independent corroboration in this pass.",
+      "sources_so_far": ["https://friendsofthepublicgarden.org/2020/06/17/meet-the-trees-the-elms-june-17-2020/"]
+    },
+    {
+      "candidate": "American Elm pair, Public Garden, east of the Marvin Goody Flagpole along Charles St.",
+      "species": "American Elm (Ulmus americana)",
+      "why_a_lead": "Described by Friends of the Public Garden as large specimens. Single source, no age given, and being a pair raises the collectible-point question (would need one obvious place to stand, which a flagpole-adjacent pair plausibly offers, but unverified).",
+      "sources_so_far": ["https://friendsofthepublicgarden.org/2020/06/17/meet-the-trees-the-elms-june-17-2020/"]
+    },
+    {
+      "candidate": "Second Dawn Redwood, Public Garden, Boylston Street end of the Lagoon",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "why_a_lead": "Friends of the Public Garden mentions a mature dawn redwood at the Boylston Street end of the Lagoon, distinct from the 1963-planted one near Charles/Beacon (delivered as bos_004). No age or further detail found; could be an alternate or additional entry once verified.",
+      "sources_so_far": ["https://friendsofthepublicgarden.org/2020/04/14/meet-the-trees-the-dawn-redwood-april-13-2020/"]
+    },
+    {
+      "candidate": "Rock Elm near the Tool Shed, Public Garden",
+      "species": "Rock Elm (Ulmus thomasii)",
+      "why_a_lead": "Called out by Friends of the Public Garden as 'the lone specimen in the three parks' (Common, Public Garden, Commonwealth Ave Mall), which makes it a genuinely singular, collectible point in principle. Single source, no age given.",
+      "sources_so_far": ["https://friendsofthepublicgarden.org/2020/06/17/meet-the-trees-the-elms-june-17-2020/"]
+    },
+    {
+      "candidate": "Mount Auburn Cemetery champion trees (28 state champions, 11 New England champions)",
+      "species": "various, unconfirmed",
+      "why_a_lead": "Mount Auburn (technically Cambridge/Watertown, not Boston proper; day-trip boundary would need checking, roughly bus+T from Harvard Sq., likely near or over the ~30 minute mark from downtown Boston) is an accredited Level III Arboretum with over 5,300 trees inventoried (1997) including 28 Massachusetts state champions and 11 New England champions, per the cemetery's own 'Champion Trees of Mount Auburn' program. I could not, in this pass, identify a single named champion tree with species, age and exact location: the cemetery's own tree-map/flyer (mountauburn.pastperfectonline.com, keyword 'Tree Map') and its 'Champion Trees of Mount Auburn' guided-walk materials likely have this and were not fetchable as plain text in the time available. Strong candidate for a dedicated follow-up pass; would need its own transit-time check against the day-trip boundary before any city-page inclusion.",
+      "sources_so_far": ["https://mountauburn.org/event/champion-trees-of-mount-auburn/", "https://mountauburn.pastperfectonline.com/bysearchterm?keyword=Tree+Map"]
+    },
+    {
+      "candidate": "Tree Boston 'Big Old Trees Program' entries (Roxbury Willow at Fort Hill, Dorchester Ginkgo at 31 Tonawanda St, Mattapan Swamp White Oak, East Boston Willow, Hyde Park Pin Oak at Fairview Cemetery)",
+      "species": "various (Salix alba, Ginkgo biloba, Quercus bicolor, Quercus palustris)",
+      "why_a_lead": "treeboston.org runs a crowd-nominated 'Big Old Trees' registry with addresses and trunk diameter (DBH) for each: Roxbury Willow (20 Fort Ave, DBH 52in), Dorchester Ginkgo (31 Tonawanda St, DBH 41.5in, height 93.7ft), Mattapan Swamp White Oak (201-211 River St), East Boston Willow (East Boston Memorial Ballpark), Hyde Park Pin Oak (45 Fairview Ave, Fairview Cemetery). None carry an age estimate or a second independent source; the registry is self-reported/nomination-based rather than professionally dated. They are also scattered across outer Boston neighbourhoods rather than forming a walkable cluster, which matters less than the evidence bar but is worth noting for city-page planning. Each would need an age source and a second confirming source before it could verify.",
+      "sources_so_far": ["https://treeboston.org/bot/"]
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "The Liberty Tree",
+      "reason": "Felled by Loyalists in 1775 during the siege of Boston; gone, only a plaque/successor marker remains. Per brief, do not resurrect as an entry."
+    },
+    {
+      "candidate": "The Great Elm of Boston Common",
+      "reason": "The Common's legendary 'Great Elm' fell/was destroyed in 1876 (Wikipedia: 'Great Elm (Boston)'); dead, historical only. Never a collectible entry."
+    },
+    {
+      "candidate": "The Public Garden lagoon weeping willow (the 'iconic' one)",
+      "reason": "Collapsed into the Public Garden lagoon on July 16, 2026, aged approximately 68 years, per Boston.com and NBC Boston. Confirmed dead as of this pass; must never ship. A second aging willow was already removed in January 2026 for rot and disease. Multiple other willows remain standing around the lagoon per Friends of the Public Garden, but none is individually identified/dated in sources found this pass, so no replacement willow entry is proposed; a future pass could look for one specifically, but given the recent die-off, verify very carefully that whichever one is chosen is confirmed alive and structurally sound as of a recent inspection."
+    },
+    {
+      "candidate": "Lacebark Elm, Public Garden (near the lagoon flagpole, eastern side)",
+      "reason": "Planted 1989, recently removed after a beetle attack and confirmed Dutch Elm Disease diagnosis, per Friends of the Public Garden's 2020 'Meet the Trees: The Elms'. Dead/removed."
+    }
+  ]
+}
