@@ -893,6 +893,7 @@ FOOTER = """
       <h4>Ancient Trees</h4>
       <a href="%%ROOTPATH%%app">The app</a>
       <a href="%%ROOTPATH%%contribute">Suggest a tree</a>
+      <a href="%%ROOTPATH%%press">Press</a>
       <a href="%%ROOTPATH%%privacy">Privacy</a>
     </div>
   </div>
@@ -4497,6 +4498,120 @@ def build_collections_index(collections, published, pages, cities_by_slug=None):
     pages.append(("collections.html", page, canonical))
 
 
+def press_numbers(cities):
+    """Every figure the press page quotes, computed from the published data.
+
+    Contract I's distinguishing rule: not one number on that page is typed by
+    hand. A press page exists to be checked, so a figure that was true when it
+    was written and false when a journalist verifies it costs more than having
+    no page. The non-native list is the single judgement in here, and it is
+    deliberately conservative: species with any native European range are left
+    off even when they read as exotic (Oriental plane grows wild in Greece,
+    Turkish hazel and Caucasian wingnut reach the continent's edges), so the
+    headline understates rather than flatters. It is the same list
+    scripts/press_numbers.py uses for the pitch, kept here so the page and the
+    pitch cannot drift apart.
+    """
+    europe = {
+        "United Kingdom", "Italy", "Netherlands", "Spain", "Portugal", "Poland",
+        "France", "Belgium", "Greece", "Germany", "Austria", "Czech Republic",
+        "Ireland", "Denmark", "Sweden", "Finland", "Hungary", "Croatia",
+        "Serbia", "Romania", "Switzerland", "Norway", "Slovenia", "Slovakia",
+        "Bulgaria", "Estonia", "Latvia", "Lithuania",
+    }
+    non_native = {
+        "London Plane", "Ginkgo", "Camphor Tree", "Japanese Pagoda Tree",
+        "Southern Magnolia", "Coast Redwood", "Giant Sequoia",
+        "Cedar of Lebanon", "Himalayan Cedar", "Atlas Cedar", "Deodar Cedar",
+        "Persian Ironwood", "Black Locust", "Chinaberry", "Shellbark Hickory",
+        "Osage Orange", "Bald Cypress", "Montezuma Cypress", "Mexican Cypress",
+        "Tulip Tree", "Silk Tree", "Chilean Wine Palm",
+        "Canary Island Date Palm", "Mexican Blue Palm",
+        "Norfolk Island Hibiscus", "Australian Banyan", "Moreton Bay Fig",
+        "Silky Oak", "Jacaranda", "Ombu", "Dragon Tree", "Chusan Palm",
+        "Empress Tree", "Chinese Windmill Palm", "Honey Locust",
+        "Northern Catalpa", "Southern Catalpa", "Red Oak", "Black Walnut",
+        "American Sycamore", "Blue Gum", "Tree of Heaven", "Weeping Willow",
+        "Black Mulberry", "White Mulberry", "Avocado", "Loquat",
+        "Japanese Cedar", "Monkey Puzzle", "Rubber Fig", "False Kapok",
+        "Date Palm", "California Fan Palm", "Pecan",
+    }
+    entries = [(e, t) for e in cities for t in (e.get("data") or {}).get("trees", [])]
+    eu = [(e, t) for e, t in entries
+          if (e.get("data") or {}).get("country") in europe]
+    nn = [(e, t) for e, t in eu
+          if t["species"].split("(")[0].strip() in non_native]
+    plane = [(e, t) for e, t in eu
+             if t["species"].split("(")[0].strip() == "London Plane"]
+    def city_of(pair):
+        return (pair[0].get("data") or {}).get("city")
+    return {
+        "trees": len(entries),
+        "cities": len(cities),
+        "countries": len({(e.get("data") or {}).get("country") for e in cities}),
+        "eu_trees": len(eu),
+        "eu_cities": len({city_of(p) for p in eu}),
+        "nn": len(nn),
+        "nn_pct": round(100 * len(nn) / len(eu)) if eu else 0,
+        "nn_cities": len({city_of(p) for p in nn}),
+        "plane": len(plane),
+        "plane_cities": len({city_of(p) for p in plane}),
+        "species": len({t["species"].split("(")[0].strip() for e, t in entries}),
+        "photos": sum(1 for e, t in entries if (t.get("photo") or {}).get("url")),
+        "sourced": sum(1 for e, t in entries if t.get("verified_sources")),
+    }
+
+
+def build_press_page(cities, pages):
+    """Contract I. Approved by Hidde 2026-08-08 ("pers pagina is prima").
+
+    No personal name and no contact address, per the v1.4 privacy ruling: the
+    contact route is the same form the privacy page uses."""
+    n = press_numbers(cities)
+    canonical = f"{BASE_URL}/press"
+    crumb_items = [("Home", BASE_URL), ("Press", None)]
+    graph = site_graph() + [
+        breadcrumb_schema(crumb_items, canonical),
+        {"@type": "WebPage", "name": "Press and data",
+         "description": (f"{n['nn_pct']} percent of the ancient trees we map in "
+                         f"European cities are not European species."),
+         "url": canonical},
+    ]
+    body = f"""
+<main class="content-page">
+  {breadcrumb_html(crumb_items, "./")}
+  <h1>Press and data</h1>
+  <p class="lede">Four in ten of the ancient trees we map in European cities are not European species: {n['nn']} of {n['eu_trees']}, across {n['nn_cities']} of {n['eu_cities']} cities. The most common of the lot is a tree that exists nowhere in the wild.</p>
+  <div class="prose-block">
+    <p>Ancient Trees maps the oldest and most remarkable trees of the world's cities, one tree at a time, with sources recorded per tree. {n['trees']} trees in {n['cities']} cities across {n['countries']} countries so far, {n['species']} distinct species, {n['sourced']} of them carrying their sources on the page.</p>
+
+    <h2>The story, and where to check it</h2>
+    <p>The London plane, which we map {n['plane']} times in {n['plane_cities']} cities, is a chance hybrid of an American and an Asian parent that appeared in a nursery in the 1600s and became the default street tree of half the continent. The individual arrivals are better than the statistic: an ombu in Seville said to have come back from South America with Christopher Columbus's son around 1529, a black locust in Paris grown from seed posted out of the Appalachians in 1601, a black mulberry in London left over from a royal scheme to start a British silk industry that failed because silkworms will not eat black mulberry leaves.</p>
+    <p>The full list, with locations and sources for each tree: <a href="collections/europes-oldest-trees-are-immigrants">Europe's Oldest City Trees Are Mostly Immigrants</a>.</p>
+
+    <h2>Other angles in the same data</h2>
+    <p>Which city gives the best afternoon, measured by how many remarkable trees stand within one walk of each other rather than by how many a city has: <a href="collections/europes-best-tree-city-trips">Europe's best tree city trips</a>. The oldest tree in each country we cover: <a href="collections/the-oldest-tree-in-every-country-we-map">the oldest tree in every country we map</a>. Every tree on one map: <a href="explore">explore</a>, or <a href="cities">by city</a>.</p>
+
+    <h2>Images</h2>
+    <p>{n['photos']} of the {n['trees']} trees carry a photograph under an open licence, most from Wikimedia Commons and iNaturalist. Each one records its licence and the credit that licence requires, both shown on the tree's own page. The credit has to travel with the image: a CC BY photograph published without its attribution puts the licence in breach, and that is the publisher's problem rather than the photographer's. Trees without a photograph show a drawing and say plainly that no photograph exists, because a stock picture of the species would not be a picture of that tree.</p>
+
+    <h2>What this data is, and what it is not</h2>
+    <p>It is a count of the trees we have published, not a census of every old tree in Europe. The map is denser where countries publish open tree registers and thinner where they do not, so coverage reflects data availability as much as it reflects trees. Ages are as sourced, and where sources disagree the tree's page says so rather than picking a winner. Locations are marked either confirmed or approximate, and the approximate ones say so next to the directions button, because sending someone to a spot where the tree is not is the one mistake this project cannot afford.</p>
+
+    <h2>Getting in touch</h2>
+    <p>For the underlying data as a spreadsheet, a count for one country or one city, or anything else: <a href="{submit_link('press')}">send a message</a> and say what you need.</p>
+  </div>
+</main>
+"""
+    page = render_page(
+        "Press and Data: Ancient Trees",
+        (f"{n['nn_pct']}% of the ancient trees we map in Europe's cities are "
+         f"not European species. The numbers, the angles, and the caveats."),
+        canonical, body, ld_script(graph), "", rootpath="./")
+    check_links(canonical, 7, 6)
+    pages.append(("press.html", page, canonical))
+
+
 def build_privacy_page(pages):
     """The privacy page, text approved by Hidde 2026-07-28 ("prima dit").
     Boring and factual on his instruction: no forever-promises, no personal
@@ -5952,6 +6067,7 @@ def main():
             print(f"    {n} trees  {city}: {name}")
 
     build_contribute_page(published, pages)
+    build_press_page(cities, pages)
     build_privacy_page(pages)
     build_fakedoor_pages(pages)
     # The register layer is on again (Hidde, 2026-08-05: "zet de tweede

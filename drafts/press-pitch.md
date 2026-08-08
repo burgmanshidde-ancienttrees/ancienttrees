@@ -40,6 +40,8 @@ failed because silkworms will not eat black mulberry leaves.
 
 The full list, with locations and sources:
 https://ancienttrees.app/collections/europes-oldest-trees-are-immigrants
+The numbers, the caveats and the image licences, all on one page:
+https://ancienttrees.app/press
 
 Happy to send the underlying data as a spreadsheet, and a good number of the
 photographs are openly licensed and reusable with attribution. If a local angle
@@ -72,6 +74,8 @@ zaad dat vanuit de Appalachen naar de hofkruidkundige werd gestuurd.
 
 De hele lijst, met locaties en bronnen:
 https://ancienttrees.app/collections/europes-oldest-trees-are-immigrants
+De cijfers, de kanttekeningen en de fotorechten op een pagina:
+https://ancienttrees.app/press
 
 Ik stuur de onderliggende data desgewenst als spreadsheet, en een flink deel
 van de foto's is vrij van rechten met bronvermelding. Voor een Nederlandse
