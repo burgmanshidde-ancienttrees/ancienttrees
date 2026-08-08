@@ -811,6 +811,12 @@ PAGE_SHELL = """<!DOCTYPE html>
 window.at = window.at || {};
 at.track = function(name, detail) {
   try {
+    // Only the real site measures. Smoke tests load these pages in headless
+    // Chrome on 127.0.0.1 on every push, and preview sessions serve them on
+    // localhost; both were being counted as visitors (found 2026-08-08 while
+    // asking why 74% of "traffic" was NL). One hostname check removes every
+    // machine visitor at the root instead of filtering them per tool.
+    if (location.hostname !== 'ancienttrees.app') { return; }
     if (localStorage.getItem('at_notrack') === '1') { return; }
     var ev = {name: String(name).slice(0, 40), path: location.pathname.slice(0, 120)};
     if (detail) { ev.detail = String(detail).slice(0, 60); }
@@ -859,6 +865,7 @@ ANALYTICS_SNIPPET = (
     "<script>\n"
     "(function() {{\n"
     "  try {{\n"
+    "    if (location.hostname !== 'ancienttrees.app') {{ return; }}\n"
     "    var p = new URLSearchParams(location.search);\n"
     "    if (p.get('notrack') === '1') {{ localStorage.setItem('at_notrack', '1'); }}\n"
     "    else if (p.get('notrack') === '0') {{ localStorage.removeItem('at_notrack'); }}\n"
