@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 13289,
+ "count": 13290,
  "trees": [
   {
    "id": "ams_001",
@@ -1154,6 +1154,22 @@
    "precision": "confirmed",
    "age_min": 129,
    "age_max": 135,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 2
+  },
+  {
+   "id": "bcn_033",
+   "tier": "highlighted",
+   "name": "The Mastic of Hort de l'Avi",
+   "species": "Mastic Tree (Pistacia lentiscus)",
+   "city": "Barcelona",
+   "country": "Spain",
+   "lat": 41.4159744572976,
+   "lng": 2.149100134074295,
+   "precision": "confirmed",
+   "age_min": null,
+   "age_max": null,
    "has_photo": false,
    "has_story": true,
    "sources": 2
@@ -217978,15 +217994,15 @@
   {
    "id": "lead_barcelona_016",
    "tier": "lead",
-   "name": "Llentiscle de l'Hort de l'Avi, Garrofer del carrer Maignon, Pebrer bord del carrer Maignon, Xiprer comu del carrer Betlem",
-   "species": "Pistacia lentiscus; Ceratonia siliqua; Schinus molle; Cupressus sempervirens",
+   "name": "Garrofer del carrer Maignon",
+   "species": "Ceratonia siliqua",
    "city": "Barcelona",
    "country": "Spain",
-   "lat": null,
-   "lng": null,
+   "lat": 41.41041792535541,
+   "lng": 2.152833757843457,
    "precision": null,
    "reason": "",
-   "note": "All four sit within 450 m of the Park Guell pins and all four are dated 'Per determinar'. They are the obvious material for thickening the Gracia walk, and every one of them needs a date first.",
+   "note": "Date is no longer the only open question: existence and species now have two sources (register 99400680090 plus beteve.cat's 2021 press coverage of the 40-tree AIL designation), but access is unconfirmed and leans against. The ajuntament's own description says the carob grows out of a roughly 2m wall 'that limits the internal road where cars circulate and the part of the garden at a higher level',",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -217994,15 +218010,15 @@
   {
    "id": "lead_barcelona_017",
    "tier": "lead",
-   "name": "Ficus de Mysore del Santuari de Sant Josep de la Muntanya",
-   "species": "Ficus drupacea",
+   "name": "Pebrer bord del carrer Maignon",
+   "species": "Schinus molle",
    "city": "Barcelona",
    "country": "Spain",
-   "lat": 41.4123,
-   "lng": 2.1494,
+   "lat": 41.41023316885091,
+   "lng": 2.152881283257778,
    "precision": null,
    "reason": "",
-   "note": "Undated in the register and access to the sanctuary grounds is unverified. Worth a proper look: it is sacred ground 424 m from the Park Guell cluster, and CLAUDE.md's own step 1 says that is exactly where the unlisted old trees are.",
+   "note": "Same garden as the Garrofer above, 41m away, same access question and same conclusion: register plus beteve.cat's 2021 press piece give two sources for existence and species, but not for public access. Girth of 4.34m is large for the species; plausible for a mature multi-stemmed Schinus molle but worth a sanity check against a photo before shipping. Resolve alongside the Garrofer, they are one sit",
    "has_photo": false,
    "has_story": false,
    "sources": 0
