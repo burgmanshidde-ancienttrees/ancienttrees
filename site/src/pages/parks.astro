@@ -1,0 +1,65 @@
+---
+// Parks index. Ported from build_parks_index(), build_site.py:3968-4003.
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { cityIsRenderable } from "../lib/trees";
+import { groupTreesByPark, PARK_MIN_TREES } from "../lib/parks";
+import { usablePhoto, thumbUrl } from "../lib/images";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { fitTitle } from "../lib/title";
+import { byCityListOrder, byCityListOrderEntry } from "../lib/city-order";
+import { browseCard } from "../lib/browse-card";
+
+// city-list.json order before grouping: group_trees_by_park() iterates
+// `renderable` (build_site.py:5816-5819), so ties in the tree-count sort
+// below break the same way Python's stable sort breaks them.
+const allCities = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
+const parkIntros = await getCollection("parks");
+const introByKey = new Map(parkIntros.map((i) => [`${i.data.city_slug} ${i.data.park}`, i]));
+const groups = groupTreesByPark(allCities);
+const published = byCityListOrder(allCities.map((c) => ({ slug: c.id, city: c.data.city })));
+
+// main()'s iteration order: qualifying groups (park_groups sorted by tree
+// count, descending) that also have a hand-written intro, build_site.py:5818-5822.
+const cards = [...groups.values()]
+  .filter((g) => g.trees.length >= PARK_MIN_TREES && introByKey.has(`${g.citySlug} ${g.parkName}`))
+  .sort((a, b) => b.trees.length - a.trees.length)
+  .map((g) => {
+    const intro = introByKey.get(`${g.citySlug} ${g.parkName}`)!;
+    const face = g.trees.map((t) => usablePhoto(t)).find((p) => p?.url);
+    return {
+      slug: intro.data.slug,
+      name: intro.data.name || intro.data.park,
+      city: g.city.data.city,
+      count: g.trees.length,
+      face: face?.url ? thumbUrl(face.url, 400) : null,
+    };
+  });
+
+const canonical = `${BASE_URL}/parks`;
+const title = fitTitle(["Ancient Trees by Park and Garden", "The Parks and Gardens With the Best Trees"], canonical);
+const description =
+  "The parks and botanical gardens where several remarkable old trees stand together, from Madrid's Retiro to the oldest botanical garden in the world.";
+const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["Parks", null]];
+
+const graph = [
+  ...SITE_SCHEMA,
+  {
+    "@type": "ItemList",
+    name: "Parks and gardens",
+    itemListElement: cards.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, url: `${BASE_URL}/parks/${c.slug}` })),
+  },
+];
+---
+<Base title={title} description={description} canonical={canonical} headExtra={ldScript(graph)}>
+<main class="content-page">
+  <Breadcrumbs items={crumbItems} />
+  <h1>Ancient Trees by Park and Garden</h1>
+  <div class="prose-block"><p>Some parks are worth an afternoon on their own, because several remarkable old trees stand within a few minutes of each other. A botanical garden founded in 1545 and still on its original ground. A royal park that stayed private for two hundred years, which is why its trees are old. An English garden planted for a queen with species nobody in the country had grown before. Each of these holds enough to fill a walk.</p></div>
+  <div class="cindex-grid" set:html={cards.map((c) => browseCard(`/parks/${c.slug}`, c.name, `${c.count} trees &middot; ${c.city}`, c.face)).join("")} />
+  <p class="suggest">Or explore by city: {published.slice(0, 12).map((p, i) => (
+    <Fragment>{i > 0 && <Fragment set:html=" &middot; " />}<a href={`/${p.slug}`}>{p.city}</a></Fragment>
+  ))}</p>
+</main>
+</Base>

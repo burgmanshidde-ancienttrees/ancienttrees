@@ -1,0 +1,69 @@
+---
+// Species index. Ported from build_species_index(), build_site.py:4006-4042.
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { cityIsRenderable } from "../lib/trees";
+import { groupTreesBySpecies, SPECIES_MIN_TREES } from "../lib/species";
+import { usablePhoto, thumbUrl } from "../lib/images";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { fitTitle } from "../lib/title";
+import { byCityListOrder, byCityListOrderEntry } from "../lib/city-order";
+import { browseCard } from "../lib/browse-card";
+
+// city-list.json order before grouping, matching group_trees_by_species()
+// walking `renderable` (build_site.py:5729): ties in the count sort below
+// break the same way Python's stable sort breaks them.
+const allCities = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
+const intros = await getCollection("species");
+const introBySlug = new Map(intros.map((i) => [i.data.common_name, i]));
+const groups = groupTreesBySpecies(allCities);
+const published = byCityListOrder(allCities.map((c) => ({ slug: c.id, city: c.data.city })));
+
+// main()'s order: qualifying species sorted by member count, descending
+// (build_site.py:5806).
+const qualifying = [...groups.entries()].filter(
+  ([common, members]) => members.length >= SPECIES_MIN_TREES && introBySlug.has(common),
+);
+qualifying.sort((a, b) => b[1].length - a[1].length);
+
+const speciesCards = qualifying.map(([common, members]) => {
+  const intro = introBySlug.get(common)!;
+  const cities = new Set(members.map((m) => m.city.id));
+  const face = members.map((m) => usablePhoto(m.tree)).find((p) => p?.url);
+  return {
+    slug: intro.data.slug,
+    common,
+    count: members.length,
+    cities: cities.size,
+    face: face?.url ? thumbUrl(face.url, 400) : null,
+  };
+});
+
+const canonical = `${BASE_URL}/species`;
+const title = fitTitle(["Ancient Trees by Species", "Browse Ancient Trees by Species"], canonical);
+const description =
+  "Browse the mapped trees by species: the London plane that lines half of Europe's streets, the wingnut Amsterdam went to court over, and more.";
+const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["Species", null]];
+
+const graph = [
+  ...SITE_SCHEMA,
+  {
+    "@type": "ItemList",
+    name: "Tree species",
+    itemListElement: speciesCards.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.common, url: `${BASE_URL}/species/${c.slug}` })),
+  },
+  breadcrumbSchema(crumbItems, canonical),
+];
+---
+<Base title={title} description={description} canonical={canonical} headExtra={ldScript(graph)}>
+<main class="content-page">
+  <Breadcrumbs items={crumbItems} />
+  <h1>Ancient Trees by Species</h1>
+  <div class="prose-block"><p>Cities group these trees by place; collections group them by theme. This page groups them by what they actually are. A London plane in Barcelona and a London plane in Warsaw are the same tree living two different lives, and reading them side by side tells you something a city page cannot: how long the species lives, what it does in autumn, and which cities planted it when.</p></div>
+  <div class="cindex-grid" set:html={speciesCards.map((c) => browseCard(`/species/${c.slug}`, c.common, `${c.count} trees &middot; ${c.cities} cities`, c.face)).join("")} />
+  <p class="suggest">Or explore by city: {published.map((p, i) => (
+    <Fragment>{i > 0 && <Fragment set:html=" &middot; " />}<a href={`/${p.slug}`}>{p.city}</a></Fragment>
+  ))}</p>
+</main>
+</Base>

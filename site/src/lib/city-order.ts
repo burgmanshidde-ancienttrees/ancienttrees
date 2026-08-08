@@ -28,3 +28,18 @@ export function byCityListOrder<T extends { slug: string }>(items: T[]): T[] {
   const index = new Map(order.map((slug, i) => [slug, i]));
   return [...items].sort((a, b) => (index.get(a.slug) ?? Infinity) - (index.get(b.slug) ?? Infinity));
 }
+
+/** Same ordering, keyed by a content-collection entry's `.id` (the city
+ * slug) instead of a `.slug` field. Needed anywhere `getCollection("cities")`
+ * output feeds a computation that depends on iteration order BEFORE any
+ * display sort is applied: load_cities() (build_site.py:2579-2585) reads
+ * city-list.json directly, so every Python list/dict built by walking
+ * `renderable` inherits that order, including ties broken by a later
+ * stable sort (e.g. build_parks_index's tree-count sort) and any raw,
+ * unsorted list a page's JSON-LD ItemList quotes (e.g. /cities's schema
+ * graph, which is NOT the alphabetically-grouped list the page displays). */
+export function byCityListOrderEntry<T extends { id: string }>(items: T[]): T[] {
+  const order = loadOrder();
+  const index = new Map(order.map((slug, i) => [slug, i]));
+  return [...items].sort((a, b) => (index.get(a.id) ?? Infinity) - (index.get(b.id) ?? Infinity));
+}
