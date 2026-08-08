@@ -3,14 +3,8 @@
 // Single-segment file route (see ARCHITECTURE.md's routing note): emits
 // {city}.html directly, matching the current site and avoiding Astro's
 // directory-format default.
-//
-// Known gap: check_count_promises() (build_site.py:2948-2975, the regex
-// check that a city's hand-written copy doesn't still promise a stale tree
-// count after growing past its original number) is not ported. It's a
-// content-quality lint with no effect on page output, and its regex-driven
-// number-word matching was judged not worth the time against everything
-// else in this contract; flagged here rather than silently dropped.
 import { getCollection, type CollectionEntry } from "astro:content";
+import { checkCountPromises } from "../lib/count-promises";
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../lib/trees";
@@ -46,6 +40,8 @@ export async function getStaticPaths() {
   const speciesPages = new Map(speciesIntros.map((i) => [i.data.common_name, i.data.slug]));
 
   return allCities.map((city) => {
+    const canonical = `${BASE_URL}/${city.id}`;
+    checkCountPromises(city.data, canonical);
     const intro = city.data.intro;
     if (!intro) throw new Error(`${city.id}: city intro (60-100 words, unique) is required by Contract C`);
     const wc = intro.split(/\s+/).filter(Boolean).length;
