@@ -159,6 +159,43 @@
       "curation_status": "flagged",
       "notes": "Kongens Have's founding (1606) and the c.1664/c.1700 planting of Kavalergangen and Damegangen are documented by the official Danish heritage agency's Trap Danmark entry and corroborated by Danish Wikipedia; both also state that virtually no original trees remain in those two avenues. The claim that Husalle's lindens are 'among the oldest in the country' comes from the same sources but without an exact planting date for that specific avenue, so the age range given here (300-360 years) reflects the garden's documented 1660s-1700s planting era generally rather than a dated record for Husalle itself. This entry represents the avenue as a whole rather than a single named tree.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "cop_005",
+      "name": "The Temple Tree of Landbohøjskolens Have",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 140-145 years",
+      "age_min": 135,
+      "age_max": 150,
+      "location": {
+        "address": "Landbohøjskolens Have (Fakultetets Fredede Have), entrance at Bülowsvej / Thorvaldsensvej, Frederiksberg",
+        "latitude": 55.679517,
+        "longitude": 12.542583,
+        "neighbourhood": "Frederiksberg C"
+      },
+      "story": "This ginkgo is male, and the female it pollinates lives on the other side of the street. The two trees have never touched. The university library, writing up the garden's own history, calls it the largest ginkgo in the collection and gives 1883 as its planting year, which would make it about 143. That date comes from that one source and nowhere else, so read it as the garden's account rather than a measured fact.\n\nIt is planted in the middle of a large stone mound, which is a strange thing to do to a tree and suits this one. Ginkgo biloba is the last surviving member of a lineage older than flowering plants, and the Danish name for it, tempeltræet, points at the temple courtyards in China and Japan where the final populations were kept alive by monks while the wild ones disappeared. The garden around it was laid out in 1858 for the Royal Veterinary and Agricultural College and has been legally protected since 1965.\n\nProtection is not immortality. The blood beech planted the year the garden opened, which the official heritage listing still describes as the thickest tree here, was felled in 2018. Nothing suggests the ginkgo has gone the same way and the species is famously hard to kill, but the newest dated confirmation we could find of this one is not recent. The garden is free and open from sunrise to sunset.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when it turns gold and drops the whole crown within a week",
+        "kind": "autumn colour"
+      },
+      "verified_sources": [
+        "https://kub.ku.dk/biblioteker/frederiksberg/landbohoejskolens-historie/life150/haven/ginka_balboa/",
+        "https://www.fredninger.dk/fredning/landbohoejskolens-have/"
+      ],
+      "access": "Free, open to the public sunrise to sunset (university garden, protected since 1965)",
+      "transport": "Frederiksberg metro station, roughly 5-8 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
     }
   ]
 }
