@@ -101,6 +101,27 @@ def known_terms():
         d = json.load(open(path))
         terms.add(d.get("city", "").lower())
         terms.add(d.get("country", "").lower())
+        # Tree pages too. On 2026-08-07/08 'den brandt park' was reported as a
+        # gap two days running while Antwerp's "The Park Trees of Den Brandt"
+        # was live: the detector knew cities, countries, species and standing
+        # pages, and had never heard of the trees themselves. Same failure
+        # class as the 'ancient tree map' false positive below, so per the
+        # ratchet it becomes code. Add each tree's full name and, for the
+        # common "The X of Y" shape, the distinctive part after the last
+        # " of ", which is what a searcher actually types.
+        # A few "of Y" tails are generic English nouns ("...Cathedral of
+        # Trees", "...Tree of Science") that would swallow almost any query;
+        # everything that generic is skipped, everything distinctive kept.
+        generic = {"trees", "tree", "science", "battles", "venus"}
+        for t in d.get("trees", []):
+            name = t.get("name", "").lower()
+            if not name:
+                continue
+            terms.add(name.removeprefix("the ").strip())
+            if " of " in name:
+                tail = name.rsplit(" of ", 1)[1].strip()
+                if tail not in generic:
+                    terms.add(tail)
     for path in glob.glob(os.path.join(ROOT, "data/countries/*.json")):
         d = json.load(open(path))
         terms.add(d.get("country", "").lower())
