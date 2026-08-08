@@ -21,3 +21,12 @@ export const CONTACT_EMAIL = "info@ancienttrees.app";
 
 export const TITLE_MAX = 60;
 export const DESC_MAX = 155;
+
+// build_site.py:85-88. Loaded from a CDN via plain <script>/<link> tags,
+// same as the current site, rather than bundled through the maplibre-gl npm
+// package: this keeps the island's behavior byte-for-byte identical to what
+// Python already ships (worker loading, CSS, version) instead of introducing
+// a bundler-mediated difference. Revisit once there's a reason to.
+export const MAPLIBRE_JS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js";
+export const MAPLIBRE_CSS = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css";
+export const MAP_STYLE = "https://tiles.openfreemap.org/styles/positron";
