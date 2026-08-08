@@ -55,6 +55,12 @@
       "noted": "2026-08-08",
       "symptom": "403 to curl and WebFetch (was reachable 2026-08-05)",
       "workaround": "Regione Lombardia press releases and Il Giorno surveys served as second sources instead"
+    },
+    "avrupaanitagaclar.com": {
+      "host": "avrupaanitagaclar.com",
+      "noted": "2026-08-08",
+      "symptom": "COMPROMISED: serves unrelated gambling content; was cited as detail-page host for Turkish register records",
+      "workaround": "never fetch or cite; use the national registry itself"
     }
   }
 }

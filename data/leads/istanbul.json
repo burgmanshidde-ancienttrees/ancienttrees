@@ -1,0 +1,41 @@
+{
+  "leads": [
+    {
+      "candidate": "Cluster of ~15+ additional individually-registered Oriental Plane, London Plane, Yew (Porsuk), Horse Chestnut (At Kestanesi) and Mediterranean Cypress trees inside/around Topkapı Palace and Gülhane Park",
+      "why_a_lead": "Turkiye's national monumental-tree registry (ArcGIS feature service turkiye_anit_agaclari, layer 0) carries 36 individually protected trees in Fatih district within roughly 2km of Sultanahmet, most clustered tightly between lat 41.008-41.014 / lon 28.978-28.985 (Topkapı Palace grounds and Gülhane Park), ages ranging 173-423 years (plus the separately-delivered 778yr specimen, ist_011). Species breakdown in this sub-cluster: mostly Doğu Çınarı/Platanus orientalis, plus a Londra Çınarı/Platanus acerifolia (OBJECTID 398, 277yr, 41.012912/28.979474), three Porsuk/Taxus baccata yews (OBJECTIDs 141/404/403, up to 314yr, 41.0137/28.9849 area), a Çitlenbik/Celtis australis hackberry pair (OBJECTIDs 409/400, 238-259yr), an At Kestanesi/Aesculus hippocastanum horse chestnut (OBJECTID 399, 173yr, 41.011526/28.978794) and an Akdeniz Servisi/Cupressus sempervirens cypress (OBJECTID 420, 365yr). Each has exact coordinates, age, height and girth in the register (one source), but none has an individuating name, photo or independent news story that a future pass has yet found, so none clears the two-independent-source bar on its own. A future pass should pick the 2-3 most distinctive (e.g. the yew, being an unusual species for the area, or the London Plane) and hunt a dedicated second source (site visit, a park-authority plaque, a fresh news search) rather than trying all ~15 at once.",
+      "register_ids": "ArcGIS turkiye_anit_agaclari OBJECTIDs 137,138,139,140,141,142,143,397,398,399,400,402,403,404,405,406,407,408,409,410,411,412,414,415,416,417,418,419,420,421 (query: bbox 28.94,40.99,28.99,41.03, all il_adi=Istanbul, ilce_adi=Fatih)",
+      "caution": "Several of these records' own 'url' field points at avrupaanitagaclar.com, which is compromised as of this pass (2026-08-08) and now serves unrelated gambling content, not tree data. Do not use it as a source. Use the anitagaclar.gov.tr / arcgis feature service fields directly instead, and treat the free-text story field on anitagaclar.gov.tr pages with suspicion (documented content-pairing bugs, e.g. a çınar's story field citing a porsuk's source URL)."
+    },
+    {
+      "candidate": "Register tree at 41.01434, 28.957055, Doğu Çınarı, 268 years (OBJECTID 434), near Süleymaniye",
+      "why_a_lead": "Roughly 1km west of the main Topkapı/Gülhane sub-cluster and about 600-900m from Süleymaniye Mosque's own coordinates; could plausibly be one of Süleymaniye külliyesi's courtyard plane trees, which multiple sources describe generically (courtyard 'shaded by historic plane trees since the 15th century', citing Evliya Çelebi) but never individually name or date. Not verified this pass: no independent source ties this specific register point to Süleymaniye by name, and the courtyard-tree sources found give no age for any single specimen there.",
+      "register_ids": "ArcGIS turkiye_anit_agaclari OBJECTID 434"
+    },
+    {
+      "candidate": "Register tree at 41.010664, 28.965437, Doğu Çınarı, 322 years (OBJECTID 413)",
+      "why_a_lead": "Sits roughly 70m from the already-published Hüseyin Avni Dede Plane (ist_003, Sahaflar Çarşısı entrance, Beyazıt), almost certainly the same physical tree recorded independently in this national registry with a different age figure (322 vs ist_003's sourced 375). Not a new entry; recorded here so a future pass does not re-discover it and mistake it for a second, separate tree at Beyazıt."
+    },
+    {
+      "candidate": "Beyazıt Mosque courtyard plane / execution-witness tree mentioned in Hürriyet's Istanbul-planes survey",
+      "why_a_lead": "Hürriyet's roundup of century-old Istanbul planes lists a 'Beyazıt Mosque courtyard plane, historic significance as execution site witness' alongside the Sahaflar Çarşısı tree. Given Beyazıt Mosque and the Sahaflar Çarşışı entrance sit metres apart on the same square, and both carry an execution-tree legend (Cellat Çınarı), this is very likely the SAME tree as ist_003 described from a slightly different angle, not confirmed as distinct this pass. Worth a five-minute check on a future pass before treating it as new."
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "Yeniçeriler Çınarı (Janissaries' Plane), Topkapı Palace First Courtyard",
+      "reason": "Dead. Confirmed by istanbulansiklopedisi.org (Istanbul Encyclopedia) and multiple Turkish news pieces: began drying after 1900, reduced to a stump by 1930, propped on a concrete support to keep the fragment from collapsing. Already reflected honestly in the Istanbul city file's own intro paragraph; must never be added as a live collectible entry."
+    },
+    {
+      "candidate": "Kanlı Çınar / Vakvak Ağacı (Bloody Plane / Vakvak Tree), Sultanahmet/Atmeydanı between Hagia Sophia and the Sultan Ahmed Mosque",
+      "reason": "Dead and gone. Historically used to hang the bodies of 30 executed officials in 1655 during a Janissary revolt; the tree dried out over the following centuries, its protective chain was removed to the City Museum, and a German Fountain (Alman Çeşmesi) now stands on the site. No living tree to point to."
+    },
+    {
+      "candidate": "Beyazıt Square mulberry tree (Dut Ağacı)",
+      "reason": "Removed on the order of Sultan Abdülhamid II after it was used for the 1876 execution of Binbaşı Çerkes Hasan Bey. Long gone, no living specimen."
+    },
+    {
+      "candidate": "Gülhane Parkı 'Ceviz Ağacı' (Nazım Hikmet's walnut tree)",
+      "reason": "Not an ancient or even old tree, and the popular legend behind it is false. Multiple Turkish fact-check outlets (Teyit, Malumatfuruş) and the Istanbul Metropolitan Municipality itself confirm the poem 'Ceviz Ağacı' was written in Balçık, Bulgaria in 1957, not under a walnut tree in Gülhane Park with Piraye. The municipality only planted an actual walnut tree in the park in 2006, after discovering there had never been one there. Fails the age and genuineness bar entirely; not a collectible ancient tree under any reading."
+    }
+  ]
+}

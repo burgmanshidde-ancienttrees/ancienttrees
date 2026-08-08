@@ -1,0 +1,25 @@
+[
+  {
+    "id": "ist_011",
+    "name": "The Topkapı Palace Courtyard Plane",
+    "species": "Oriental Plane (Platanus orientalis)",
+    "age_estimate": "roughly 700-800 years",
+    "age_min": 700,
+    "age_max": 800,
+    "location": {
+      "address": "Topkapı Sarayı, near Orta Kapu / the Second Courtyard, Cankurtaran, Fatih",
+      "latitude": 41.011639,
+      "longitude": 28.982861,
+      "neighbourhood": "Cankurtaran, Fatih"
+    },
+    "verified_sources": [
+      "https://www.anitagaclar.gov.tr/detail/dogu-cinari-platanus-orientalis/111",
+      "https://www.hurriyet.com.tr/seyahat/istanbulun-tarihine-taniklik-eden-asirlik-cinarlar-43088174"
+    ],
+    "access": "Paid entry: this tree stands inside Topkapı Palace's ticketed grounds (past Orta Kapu), so a museum ticket is required to reach it",
+    "transport": "5-10 min walk from Gülhane or Sultanahmet tram stops (T1 line)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "NOT the famous Yeniçeriler Çınarı (Janissaries' Plane) of Topkapı's FIRST courtyard that reportedly witnessed the 1453 conquest and died/dried out between 1900 and 1930 (confirmed dead via istanbulansiklopedisi.org and multiple news pieces; this is already reflected in the city file's own intro and must never be revived as a live entry). This is a DIFFERENT, still-standing specimen further inside the palace grounds. Source 1 is Turkiye's national monumental-tree registry (Tarım ve Orman Bakanlığı, anitagaclar.gov.tr / underlying ArcGIS feature service turkiye_anit_agaclari, OBJECTID 140), which records this individual Platanus orientalis at either 778 years (per the rendered HTML detail page) or 783 years (per a fresh direct query of the same underlying feature service the same day), likely a snapshot-date difference; presented here as a range rather than picking one figure. The registry's own free-text 'Ağaç Hikayesi' field for this record is boilerplate history of Topkapı Palace generally and mis-cites its source URL as a page about a Porsuk (yew), not a çınar, the same story/species content-pairing bug already documented for ist_001 elsewhere in this registry, so the narrative text itself is not trustworthy, only the structured fields (species, age, girth, coordinates, il/ilçe). The rendered HTML page also displays 'Bulunduğu İl/İlçe: İstanbul - GÖLBAŞI', which is contradictory (Gölbaşı is an Ankara district, not an Istanbul one); the underlying ArcGIS feature service itself correctly carries il_adi=İstanbul, ilce_adi=Fatih for this and all nearby records, so this looks like a front-end display bug rather than a geocoding error, but it is recorded here as a reason for caution. Source 2 corroborates existence and species only, not this exact age: Hürriyet's survey of Istanbul's centuries-old planes and other Turkish coverage describe officially protected monumental çınar trees standing today in Topkapı's first and second courtyards, especially around the Imperial Council (Divan-ı Hümayun) and Bab-ı Selam / Orta Kapu, consistent with this record's coordinates, but no independent source gives a specific number matching 778-783 for this individual tree. Because of the age uncertainty and the registry's own documented data-quality issues, this entry is flagged and location_precision is set to approximate (palace-courtyard level, not a confirmed exact trunk position); a future pass with eyes on the ground or a cleaner primary source should tighten both. Also worth noting for the fetch-blocklist: a related registry mirror domain, avrupaanitagaclar.com, which several nearby ArcGIS records cite as their detail-page URL, has been compromised/hijacked and as of this pass (2026-08-08) serves unrelated Vietnamese gambling content (a site calling itself '78win') instead of tree data; it should not be fetched or trusted as a source going forward."
+  }
+]
