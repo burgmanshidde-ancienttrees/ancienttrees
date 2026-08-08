@@ -3,13 +3,13 @@
   "ams_001": {
    "city": "Amsterdam",
    "name": "The Heimanseik",
-   "checked": "2026-08-06",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "ams_003": {
    "city": "Amsterdam",
    "name": "The Vondelpark Poplar",
-   "checked": "2026-08-06",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:2016.04 - Amsterdam urban nature photo of a naked trees in the park Vondelpark - geotagged free urban picture, in public domain Commons; photography, Fons Heijnsbroek (25687477563).jpg",
@@ -18,15 +18,12 @@
      "licence": "CC0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/104736837@N03\">Fons Heijnsbroek</a> from Ams"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Two plane trunks in the Vondelpark with a wheelie bin in front and the crowns cut off."
+   ]
   },
   "ams_008": {
    "city": "Amsterdam",
    "name": "The Amstelkade Olive Willow",
-   "checked": "2026-08-06",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Vincent van Gogh Street (4511153715).jpg",
@@ -35,10 +32,7 @@
      "licence": "CC BY 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/48783556@N08\">Daviddje</a> from Haarlem"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Vincent van Goghstraat sign on a brick wall."
+   ]
   },
   "ant_001": {
    "city": "Antwerp",
@@ -327,13 +321,13 @@
   "bcn_001": {
    "city": "Barcelona",
    "name": "The Holm Oak of Carrer de l'Encarnacio",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_002": {
    "city": "Barcelona",
    "name": "The Carob of the Viaduct",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "iNat obs 149623535 (Ceratonia siliqua)",
@@ -342,9 +336,7 @@
      "licence": "CC BY",
      "author": "(c) Steven Bodzin, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.41463,2.1541383333",
-     "judged": "rejected: leaf close-up, no whole tree",
-     "judged_date": "2026-08-07"
+     "obs_location": "41.41463,2.1541383333"
     },
     {
      "title": "iNat obs 149623535 (Ceratonia siliqua)",
@@ -353,9 +345,7 @@
      "licence": "CC BY",
      "author": "(c) Steven Bodzin, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.41463,2.1541383333",
-     "judged": "rejected: bark/branch close-up",
-     "judged_date": "2026-08-07"
+     "obs_location": "41.41463,2.1541383333"
     },
     {
      "title": "iNat obs 304758351 (Ceratonia siliqua)",
@@ -364,9 +354,7 @@
      "licence": "CC BY",
      "author": "(c) 黃美滿, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.4150916667,2.1538638333",
-     "judged": "rejected: flower close-up",
-     "judged_date": "2026-08-07"
+     "obs_location": "41.4150916667,2.1538638333"
     },
     {
      "title": "iNat obs 304758351 (Ceratonia siliqua)",
@@ -375,9 +363,7 @@
      "licence": "CC BY",
      "author": "(c) 黃美滿, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.4150916667,2.1538638333",
-     "judged": "rejected: seed pods amid foliage, no trunk",
-     "judged_date": "2026-08-07"
+     "obs_location": "41.4150916667,2.1538638333"
     },
     {
      "title": "iNat obs 124895274 (Ceratonia siliqua)",
@@ -386,9 +372,7 @@
      "licence": "CC BY-SA",
      "author": "(c) Ingimar, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "41.4142206765,2.152627632",
-     "judged": "rejected: seed pods amid foliage, upward angle, no trunk",
-     "judged_date": "2026-08-07"
+     "obs_location": "41.4142206765,2.152627632"
     },
     {
      "title": "iNat obs 124895274 (Ceratonia siliqua)",
@@ -397,33 +381,20 @@
      "licence": "CC BY-SA",
      "author": "(c) Ingimar, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "41.4142206765,2.152627632",
-     "judged": "rejected: canopy and upper trunk from below a plaza wall, foliage dominates, crown not cleanly readable",
-     "judged_date": "2026-08-07"
-    },
-    {
-     "title": "Openverse: Carob's viaduct",
-     "thumb": "https://api.openverse.org/v1/images/56cd6d3b-fb61-4eba-9f9d-75ac2f614f25/thumb/",
-     "url": "https://www.flickr.com/photos/43554380@N00/9235781472",
-     "licence": "CC BY 2.0",
-     "author": "twbuckner",
-     "source": "openverse/flickr"
+     "obs_location": "41.4142206765,2.152627632"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Three iNaturalist observations are leaf, flower and pod close-ups; the Openverse candidate is the Park Guell viaduct with tourists, no tree."
+   ]
   },
   "bcn_004": {
    "city": "Barcelona",
    "name": "The Himalayan Cedar of the Labyrinth",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_008": {
    "city": "Barcelona",
    "name": "The Silk Tree of the Ciutadella",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Barcelona - Parc de la Ciutadella - Passeig dels Tillers - View NE on Ciutadella chapel 1728 by Prosper de Verboom.jpg",
@@ -432,10 +403,7 @@
      "licence": "CC BY-SA 4.0",
      "author": "<a href=\"//commons.wikimedia.org/wiki/User:Txllxt_TxllxT\" title=\"User:Txllxt TxllxT\">Txllxt TxllxT</a>"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Only candidate is the Ciutadella chapel behind an oleander shrub, the silk tree is not in the frame."
+   ]
   },
   "bcn_013": {
    "city": "Barcelona",
@@ -468,13 +436,13 @@
   "bcn_014": {
    "city": "Barcelona",
    "name": "The Red Gum of the Placa de les Caramelles",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_015": {
    "city": "Barcelona",
    "name": "The Holm Oak of the Bacardi Gardens",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Matthew Tree al Concert per la Llibertat.jpg",
@@ -490,15 +458,12 @@
      "licence": "CC BY 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/24431382@N03\">Eric Fischer</a>"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "A concert stage screen and a street cleaning truck by the stadium, neither shows a tree."
+   ]
   },
   "bcn_018": {
    "city": "Barcelona",
    "name": "The Bunya Pine of the Teatre Grec",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:MAC-BCN19917 Fragment d'un sarcòfag romà. Tardoromà. s.IV dC. Marbre. Trobat a la Capella de Santa Llúcia.jpg",
@@ -507,21 +472,18 @@
      "licence": "CC BY-SA 4.0",
      "author": "<a href=\"//commons.wikimedia.org/wiki/User:Friviere\" title=\"User:Friviere\">Friviere</a>"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Museum photograph of a Roman sarcophagus fragment."
+   ]
   },
   "bcn_020": {
    "city": "Barcelona",
    "name": "The Tipu Tree of Placa Carles Buigas",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_021": {
    "city": "Barcelona",
    "name": "The Ash of the Sot de l'Estany",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "iNat obs 313121553 (Fraxinus pennsylvanica)",
@@ -530,9 +492,7 @@
      "licence": "CC BY",
      "author": "(c) Marc Riera, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.3671413,2.1517911",
-     "judged": "rejected: backlit shot straight up into canopy against sky, no trunk visible",
-     "judged_date": "2026-08-07"
+     "obs_location": "41.3671413,2.1517911"
     },
     {
      "title": "iNat obs 313121553 (Fraxinus pennsylvanica)",
@@ -541,19 +501,14 @@
      "licence": "CC BY",
      "author": "(c) Marc Riera, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "41.3671413,2.1517911",
-     "judged": "rejected: backlit shot straight up into canopy against sky, no trunk visible",
-     "judged_date": "2026-08-07"
+     "obs_location": "41.3671413,2.1517911"
     }
-   ],
-   "judged": "2026-08-07",
-   "outcome": "rejected",
-   "outcome_note": "All candidates viewed and rejected: none show the whole tree per the Cadiz standard."
+   ]
   },
   "bcn_022": {
    "city": "Barcelona",
    "name": "The Sycamore of the Sot de l'Estany",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bat_001": {
@@ -1032,61 +987,61 @@
   "bcn_023": {
    "city": "Barcelona",
    "name": "The Stone Pine of the Palau de Pedralbes Gardens",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_024": {
    "city": "Barcelona",
    "name": "The Himalayan Cedars of the Palau de Pedralbes Gardens",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_025": {
    "city": "Barcelona",
    "name": "The Barbary Thuja of the Palau de Pedralbes Gardens",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_026": {
    "city": "Barcelona",
    "name": "The Stone Pines of the Torre Girona Gardens",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_027": {
    "city": "Barcelona",
    "name": "The Aleppo Pine of the Torre Girona Gardens",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_028": {
    "city": "Barcelona",
    "name": "The Bottle Tree of the Torre Girona Gardens",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_029": {
    "city": "Barcelona",
    "name": "The London Plane of the Vil.la Amelia Gardens",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_030": {
    "city": "Barcelona",
    "name": "The White Eucalyptus of the Vil.la Amelia Gardens",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_031": {
    "city": "Barcelona",
    "name": "The Peruvian Pepper Tree of the Vil.la Amelia Gardens",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bcn_032": {
    "city": "Barcelona",
    "name": "The Canary Island Palms of the Vil.la Amelia Gardens",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "bre_003": {
@@ -1786,13 +1741,13 @@
   "lis_005": {
    "city": "Lisbon",
    "name": "The Tipu of Jardim de São Bento",
-   "checked": "2026-08-06",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "lis_006": {
    "city": "Lisbon",
    "name": "The Coral Trees of Jardim da Luz",
-   "checked": "2026-08-06",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Crossing between trees platforms (47995676158).jpg",
@@ -1801,38 +1756,24 @@
      "licence": "CC BY 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/46944516@N00\">Pedro Ribeiro Simões</a> from "
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Black and white adventure-park shot of a child on a rope bridge."
+   ]
   },
   "lis_007": {
    "city": "Lisbon",
    "name": "The Nettle Tree of Avenida de Berlim",
-   "checked": "2026-08-06",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "lis_008": {
    "city": "Lisbon",
    "name": "The Ginkgo of Praça Paiva Couceiro",
-   "checked": "2026-08-06",
-   "candidates": [
-    {
-     "title": "File:Plantano na Praça Paiva Couceiro, Lisboa, 2024.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Plantano_na_Pra%C3%A7a_Paiva_Couceiro%2C_Lisboa%2C_2024.jpg/960px-Plantano_na_Pra%C3%A7a_Paiva_Couceiro%2C_Lisboa%2C_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Plantano_na_Pra%C3%A7a_Paiva_Couceiro,_Lisboa,_2024.jpg",
-     "licence": "CC0",
-     "author": "<a href=\"//commons.wikimedia.org/wiki/User:JnpoJuwan\" class=\"mw-redirect\" title=\"User:JnpoJuwan\">JnpoJuwan</a>"
-    }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "The Praca Paiva Couceiro candidate is a plane tree, not the ginkgo."
+   "checked": "2026-08-08",
+   "candidates": []
   },
   "lis_010": {
    "city": "Lisbon",
    "name": "The Giant Rubber Tree of Mouraria",
-   "checked": "2026-08-06",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Street Art (2012) (33879759628).jpg",
@@ -1876,15 +1817,12 @@
      "licence": "CC BY-SA 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/79123642@N04\">Maria  Eklind</a>"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Six Lisbon street scenes: murals, shopfronts, cables and a kiosk, no rubber tree."
+   ]
   },
   "lis_013": {
    "city": "Lisbon",
    "name": "The Strangler Fig of Príncipe Real",
-   "checked": "2026-08-06",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "iNat obs 201103892 (Ficus)",
@@ -1893,9 +1831,7 @@
      "licence": "CC BY-SA",
      "author": "(c) Bret van Putten, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "38.7162969722,-9.148379",
-     "judged": "held: good Ficus macrophylla in Praca do Principe Real, but the square holds three figs of this species and our entry is specifically the thickest of the three, so which tree this is cannot be confirmed",
-     "judged_date": "2026-08-07"
+     "obs_location": "38.7162969722,-9.148379"
     },
     {
      "title": "iNat obs 201103892 (Ficus)",
@@ -1904,9 +1840,7 @@
      "licence": "CC BY-SA",
      "author": "(c) Bret van Putten, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "38.7162969722,-9.148379",
-     "judged": "rejected: close-up of trunk and limbs, crown not readable, and the subject looks like the neighbouring cypress rather than the fig",
-     "judged_date": "2026-08-07"
+     "obs_location": "38.7162969722,-9.148379"
     },
     {
      "title": "iNat obs 249882113 (Ficus)",
@@ -1915,25 +1849,20 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "38.7168312073,-9.1489601135",
-     "judged": "rejected: close-up of trunk and aerial roots, whole tree not readable",
-     "judged_date": "2026-08-07"
+     "obs_location": "38.7168312073,-9.1489601135"
     }
-   ],
-   "judged": "2026-08-07",
-   "outcome": "held",
-   "outcome_note": "iNat candidates 0-2 viewed. Candidate 0 is a fine Moreton Bay fig with buttress roots, but Praca do Principe Real holds three figs of this species and our entry is specifically the thickest of the three, so attaching one would be a guess: held, not approved. Candidates 1 and 2 are trunk close-ups."
+   ]
   },
   "lis_014": {
    "city": "Lisbon",
    "name": "The Yew of Campo Santana",
-   "checked": "2026-08-06",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "lis_015": {
    "city": "Lisbon",
    "name": "The Weeping Fig of Campo Santana",
-   "checked": "2026-08-06",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Bare London planetree (Platanus × hispanica) in winter, Campo dos Mártires da Pátria, Lisbon, Portugal julesvernex2.jpg",
@@ -1949,15 +1878,12 @@
      "licence": "CC BY-SA 4.0",
      "author": "<a href=\"//commons.wikimedia.org/wiki/User:Shahadusadik\" title=\"User:Shahadusadik\">Shahadusadik</a>"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Bare plane branches shot straight up (wrong species, no trunk) and a parked-car street view."
+   ]
   },
   "lis_018": {
    "city": "Lisbon",
    "name": "The Tipuana of the Ninth of April Garden",
-   "checked": "2026-08-06",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Silk floss tree (10313847796).jpg",
@@ -1966,15 +1892,12 @@
      "licence": "CC BY-SA 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/30047235@N03\">Peter</a>"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Silk floss flower close-up, wrong species and no whole tree."
+   ]
   },
   "lis_019": {
    "city": "Lisbon",
    "name": "The Date Palm of the Ninth of April Garden",
-   "checked": "2026-08-06",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Silk floss tree (10313847796).jpg",
@@ -1983,10 +1906,7 @@
      "licence": "CC BY-SA 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/30047235@N03\">Peter</a>"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Silk floss flower close-up, wrong species and no whole tree."
+   ]
   },
   "lis_020": {
    "city": "Lisbon",
@@ -2427,25 +2347,25 @@
   "rom_004": {
    "city": "Rome",
    "name": "The Cork Oak of the Orangery",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "rom_007": {
    "city": "Rome",
    "name": "The Cedar of the Garibaldi Mausoleum",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "rom_009": {
    "city": "Rome",
    "name": "The Aleppo Pine of Celimontana",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "rom_011": {
    "city": "Rome",
    "name": "The Himalayan Cedar of the German Institute",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Cedro dell'Himalaya, Roma Capitale.jpg (Wikidata Q55741610)",
@@ -2455,21 +2375,18 @@
      "author": "<a href=\"//commons.wikimedia.org/wiki/User:Olea\" title=\"User:Olea\">Olea</a>",
      "source": "wikidata/Q55741610"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Right tree per Wikidata coordinates, but the crown merges into the surrounding canopy, no trunk shows and the centre band crops to generic park foliage."
+   ]
   },
   "rom_012": {
    "city": "Rome",
    "name": "The Podocarp of Villa Sciarra",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "rom_013": {
    "city": "Rome",
    "name": "The Plane of Piazza San Cosimato",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Rome Street View - panoramio.jpg",
@@ -2478,15 +2395,12 @@
      "licence": "CC BY-SA 3.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161022003929/http://www.panoramio.com/user/6"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Street corner on Via San Cosimato with parked cars and a restaurant awning, no tree."
+   ]
   },
   "rom_016": {
    "city": "Rome",
    "name": "The Redwood of the Pincio",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "gui_001": {
@@ -3967,53 +3881,32 @@
   "dub_002": {
    "city": "Dublin",
    "name": "Queen Victoria's Sequoia",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "dub_003": {
    "city": "Dublin",
    "name": "Dean's Tree",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "dub_004": {
    "city": "Dublin",
    "name": "Addison's Walk",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "dub_005": {
    "city": "Dublin",
    "name": "The Provost's Plane",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
-     "title": "File:BAC Jet Provost T5 XM324 3 (53782143552).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BAC_Jet_Provost_T5_XM324_3_%2853782143552%29.jpg/960px-BAC_Jet_Provost_T5_XM324_3_%2853782143552%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:BAC_Jet_Provost_T5_XM324_3_(53782143552).jpg",
-     "licence": "CC BY 2.0",
-     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/37804979@N00\">Tony Hisgett</a> from Birmingh"
-    },
-    {
-     "title": "File:BAC Jet Provost T5 XM324 5 (53782143387).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/BAC_Jet_Provost_T5_XM324_5_%2853782143387%29.jpg/960px-BAC_Jet_Provost_T5_XM324_5_%2853782143387%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:BAC_Jet_Provost_T5_XM324_5_(53782143387).jpg",
-     "licence": "CC BY 2.0",
-     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/37804979@N00\">Tony Hisgett</a> from Birmingh"
-    },
-    {
-     "title": "File:BAC Jet Provost T5 XM324 6 (53783407819).jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/BAC_Jet_Provost_T5_XM324_6_%2853783407819%29.jpg/960px-BAC_Jet_Provost_T5_XM324_6_%2853783407819%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:BAC_Jet_Provost_T5_XM324_6_(53783407819).jpg",
-     "licence": "CC BY 2.0",
-     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/37804979@N00\">Tony Hisgett</a> from Birmingh"
-    },
-    {
-     "title": "File:Jet Provost At Devonport Airport.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Jet_Provost_At_Devonport_Airport.jpg/960px-Jet_Provost_At_Devonport_Airport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Jet_Provost_At_Devonport_Airport.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Fly45yt&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:F"
+     "title": "File:LUAS tram on Grafton Street - geograph.org.uk - 5958736.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/LUAS_tram_on_Grafton_Street_-_geograph.org.uk_-_5958736.jpg/960px-LUAS_tram_on_Grafton_Street_-_geograph.org.uk_-_5958736.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:LUAS_tram_on_Grafton_Street_-_geograph.org.uk_-_5958736.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/9181\">Alan Murray-Rust</a> <span class"
     },
     {
      "title": "File:Molly Malone Statue When it was in Grafton Street (2001) - geograph.org.uk - 6503418.jpg",
@@ -4051,11 +3944,25 @@
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/9409\">Stephen Sweeney</a>"
     },
     {
+     "title": "File:Suffolk Street, Dublin - geograph.org.uk - 4793145.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Suffolk_Street%2C_Dublin_-_geograph.org.uk_-_4793145.jpg/960px-Suffolk_Street%2C_Dublin_-_geograph.org.uk_-_4793145.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Suffolk_Street,_Dublin_-_geograph.org.uk_-_4793145.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/48731\">Ian S</a> <span class=\"mw-valig"
+    },
+    {
      "title": "File:Suffolk Street at Grafton Street, Dublin - geograph.org.uk - 4793141.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Suffolk_Street_at_Grafton_Street%2C_Dublin_-_geograph.org.uk_-_4793141.jpg/960px-Suffolk_Street_at_Grafton_Street%2C_Dublin_-_geograph.org.uk_-_4793141.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Suffolk_Street_at_Grafton_Street,_Dublin_-_geograph.org.uk_-_4793141.jpg",
      "licence": "CC BY-SA 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/48731\">Ian S</a> <span class=\"mw-valig"
+    },
+    {
+     "title": "File:Suffolk Street near the intersection with Grafton Street - geograph.org.uk - 1873115.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Suffolk_Street_near_the_intersection_with_Grafton_Street_-_geograph.org.uk_-_1873115.jpg/960px-Suffolk_Street_near_the_intersection_with_Grafton_Street_-_geograph.org.uk_-_1873115.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Suffolk_Street_near_the_intersection_with_Grafton_Street_-_geograph.org.uk_-_1873115.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/7056\">Eric Jones</a> <span class=\"mw-v"
     },
     {
      "title": "File:The Provost's House from the mouth of Suffolk Street - geograph.org.uk - 1873136.jpg",
@@ -4064,15 +3971,12 @@
      "licence": "CC BY-SA 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/7056\">Eric Jones</a> <span class=\"mw-v"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Geosearch junk: BAC Jet Provost aircraft and Molly Malone / Grafton Street views."
+   ]
   },
   "dub_007": {
    "city": "Dublin",
    "name": "The Many-Trunked Holm Oak of St Anne's Park",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:St. Anne's park - Dublin, Ireland - Black and white street photography (35399410061).jpg",
@@ -4093,7 +3997,7 @@
   "dub_010": {
    "city": "Dublin",
    "name": "The Oak Avenue of Corkagh",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "drv_002": {
@@ -4120,7 +4024,7 @@
   "rom_017": {
    "city": "Rome",
    "name": "The Magnolia of Via Corsini",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:A corner of a street in rome.jpg",
@@ -4136,27 +4040,24 @@
      "licence": "CC BY 4.0",
      "author": "<a href=\"https://www.wikidata.org/wiki/Q47472326\" class=\"extiw\" title=\"d:Q47472326\"><span title=\"French wikimedian\">Alex"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Two views of building facades on Via della Scala, ivy on walls, no magnolia."
+   ]
   },
   "rom_018": {
    "city": "Rome",
    "name": "The Cedar of Lebanon of Villa Torlonia",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "rom_019": {
    "city": "Rome",
    "name": "The Podocarp of Piazza Vittorio",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "rom_020": {
    "city": "Rome",
    "name": "The Chir Pine of Colle Oppio",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:On A Quiet Streets Of Rome (192431685).jpeg",
@@ -4165,27 +4066,24 @@
      "licence": "CC0",
      "author": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/Kavalerov\">Artem Kavalerov</a></d"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Parked Vespa against a doorway."
+   ]
   },
   "vie_011": {
    "city": "Vienna",
    "name": "The Lime of the Schönbornpark",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "vie_012": {
    "city": "Vienna",
    "name": "The Plane Outside the Grey House",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "ber_011": {
    "city": "Berlin",
    "name": "The Great Oak of Pfaueninsel",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Baumtür September 2015 - panoramio.jpg",
@@ -4194,15 +4092,12 @@
      "licence": "CC BY-SA 3.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101122239/http://www.panoramio.com/user/2"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Only candidate is the Door Oak trunk, a different Pfaueninsel tree."
+   ]
   },
   "ber_012": {
    "city": "Berlin",
    "name": "The Tuereiche (Door Oak) of Pfaueninsel",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Baumtür September 2015 - panoramio.jpg",
@@ -4211,10 +4106,7 @@
      "licence": "CC BY-SA 3.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101122239/http://www.panoramio.com/user/2"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Trunk-and-door close-up, the crown is entirely out of frame."
+   ]
   },
   "ber_013": {
    "city": "Berlin",
@@ -4297,7 +4189,7 @@
   "edi_003": {
    "city": "Edinburgh",
    "name": "The Cammo Ash",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Young tree, Cammo - geograph.org.uk - 8257079.jpg",
@@ -4306,27 +4198,24 @@
      "licence": "CC BY-SA 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/196\">Richard Webb</a> <span class=\"mw-"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "A sapling in a winter field at Cammo, distant landscape and not an ancient ash."
+   ]
   },
   "edi_004": {
    "city": "Edinburgh",
    "name": "The Cedar of Lebanon at the Botanics",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "edi_005": {
    "city": "Edinburgh",
    "name": "The Monkey Puzzles of Lauriston Castle",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "edi_007": {
    "city": "Edinburgh",
    "name": "The Camperdown Elm of St Cuthbert's",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Western edge of Princes Street Gardens - geograph.org.uk - 5216166.jpg",
@@ -4342,19 +4231,14 @@
      "licence": "CC BY",
      "author": "(c) Juan Cruzado Cortés, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "55.9490983333,-3.2053133333",
-     "judged": "rejected: close view of foliage, umbrella form and trunk not shown",
-     "judged_date": "2026-08-07"
+     "obs_location": "55.9490983333,-3.2053133333"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Row of benches in Princes Street Gardens, plus an iNaturalist elm leaf close-up."
+   ]
   },
   "edi_008": {
    "city": "Edinburgh",
    "name": "The Rockface Sycamore of Cramond",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Exposed roots of a large and old beech tree by the River Almond - geograph.org.uk - 1047409.jpg",
@@ -4363,15 +4247,12 @@
      "licence": "CC BY-SA 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/15498\">M J Richardson</a>"
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "Exposed roots of a beech by the River Almond, no crown and the wrong species."
+   ]
   },
   "edi_010": {
    "city": "Edinburgh",
    "name": "The Corstorphine Sycamore",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Corstorphine Fair Christmas Tree - geograph.org.uk - 5943008.jpg",
@@ -4387,10 +4268,7 @@
      "licence": "CC BY-SA 2.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/15498\">M J Richardson</a> <span class="
     }
-   ],
-   "judged": "2026-08-08",
-   "outcome": "rejected",
-   "outcome_note": "A memorial plaque, and the Royal Botanic Garden sycamore is a different individual from the churchyard clone we map."
+   ]
   },
   "flo_004": {
    "city": "Florence",
@@ -5504,7 +5382,7 @@
   "ams_011": {
    "city": "Amsterdam",
    "name": "The Turkish Hazel of the Hortus",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:A view in the street Plantage Muidergracht in Amsterdam, near the Hortus Botanicus; high resolution image by FotoDutch in June 2013..jpg",
@@ -5532,7 +5410,7 @@
   "edi_011": {
    "city": "Edinburgh",
    "name": "The John Muir Grove",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Edinburgh High Street and St Giles, July 2007.jpg",
@@ -5546,7 +5424,7 @@
   "edi_012": {
    "city": "Edinburgh",
    "name": "The Catacol Whitebeams of the East Gate",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Edinburgh Royal Botanic Gardens - petrified tree trunk - geograph.org.uk - 2296184.jpg",
@@ -5567,7 +5445,7 @@
   "edi_013": {
    "city": "Edinburgh",
    "name": "The Handkerchief Tree by Caledonian Hall",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "muc_014": {
@@ -6287,13 +6165,13 @@
   "par_009": {
    "city": "Paris",
    "name": "The Plane of Parc Montsouris",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "par_010": {
    "city": "Paris",
    "name": "The Sophora by the Lake",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Styphnolobium japonicum in Parc des Buttes-Chaumont Paris July 2026.jpg",
@@ -6314,19 +6192,19 @@
   "par_013": {
    "city": "Paris",
    "name": "The Caucasian Elm of Square Samuel Paty",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "par_014": {
    "city": "Paris",
    "name": "The Oriental Planes of Square Michel-Foucault",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "par_015": {
    "city": "Paris",
    "name": "The Plane of Quai Saint-Bernard",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "iNat obs 148966110 (Platanus occidentalis)",
@@ -6351,13 +6229,13 @@
   "par_016": {
    "city": "Paris",
    "name": "The Twisted Beech of Square des Arenes de Lutece",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "par_017": {
    "city": "Paris",
    "name": "The Anne Frank Chestnut",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Anne-frank-tree-yv.jpg",
@@ -6427,7 +6305,7 @@
   "par_018": {
    "city": "Paris",
    "name": "The Fig Tree of Square Georges Cain",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Enseigne de la brasserie Le Sévigné et street art (30293877518).jpg",
@@ -7143,7 +7021,7 @@
   "dub_011": {
    "city": "Dublin",
    "name": "The Last Elm of College Park",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Kildare Street Club, corner of Nassau Street and Kildare Street.jpg",
@@ -7164,13 +7042,13 @@
   "rom_021": {
    "city": "Rome",
    "name": "The Cypress of Piazza di Siena",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": []
   },
   "rom_022": {
    "city": "Rome",
    "name": "The Hackberries of the Aranciera",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "iNat obs 265836099 (Libythea celtis)",
@@ -7234,7 +7112,7 @@
   "vie_015": {
    "city": "Vienna",
    "name": "The Caucasian Wingnut of the Stadtpark",
-   "checked": "2026-08-07",
+   "checked": "2026-08-08",
    "candidates": [
     {
      "title": "File:Young linden tree, tribute to Mihai Eminescu.jpg",
