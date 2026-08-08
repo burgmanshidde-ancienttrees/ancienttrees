@@ -526,6 +526,274 @@
       "transport": "Saint-Paul (Metro 1) or Chemin Vert (Metro 8), 4-6 min walk",
       "location_precision": "confirmed",
       "curation_status": "flagged"
+    },
+    {
+      "id": "par_019",
+      "name": "The Sequoia of the Champs-Élysées Gardens",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "roughly 175 years",
+      "age_min": 165,
+      "age_max": 180,
+      "location": {
+        "address": "10 Avenue des Champs-Élysées (near allée Marcel Proust), 75008 Paris",
+        "latitude": 48.86697545795968,
+        "longitude": 2.3195152169860838,
+        "neighbourhood": "Jardins des Champs-Élysées"
+      },
+      "story": "Europe had barely met this species when the tree went into the ground. Giant sequoias reached European gardens from California in the 1850s, and the fullest account of this one dates it to 1850, which would put it among the first ever planted in Paris. That is also why the city register lists it: the designation is for its age, not its size. At 19 metres it is a sapling next to the Californian originals, where General Sherman stands over 80 metres tall. The sources do not agree on the trunk. Paris measures it at 3.6 metres around; the independent account calls it a little over three metres in diameter, which is roughly three times thicker and is almost certainly circumference mislabelled. Take the register's figure. Age is loose in the same way, given as about 165 years around 2015 by one source and about 140 by a passing mention elsewhere, so somewhere between 165 and 180 years is as far as the evidence goes. It grows in the Jardins des Champs-Elysees, the ornamental gardens laid out below the avenue, a short walk from the allee Marcel Proust. It was already a mature tree for the 1900 Exposition Universelle and for every parade that has gone up the avenue since. Its southeast side, the one facing Place de la Concorde, has begun to show signs of weakness.",
+      "verified_sources": [
+        "data/registers/paris-arbres-remarquables.json (register_id 302514)",
+        "https://onvqf.over-blog.com/2013/11/s%C3%A9quoia-g%C3%A9ant-all%C3%A9e-marcel-proust-paris-8-%C3%A9me-paris-75-a.html"
+      ],
+      "access": "Free, public garden (Jardins des Champs-Élysées), open daily",
+      "transport": "Champs-Élysées - Clemenceau (M1, M13), about 5 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "par_020",
+      "name": "The Twin Planes of Avenue Winston Churchill",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "likely over a century, exact planting date not recorded",
+      "age_min": 120,
+      "age_max": 220,
+      "location": {
+        "address": "7 Avenue Winston Churchill, 75008 Paris",
+        "latitude": 48.86519685787365,
+        "longitude": 2.3133414708850775,
+        "neighbourhood": "Jardins des Champs-Élysées"
+      },
+      "story": "A trunk five and a half metres around is a great deal of plane tree for a Paris street. Two of them stand about eleven metres apart on Avenue Winston Churchill, on the axis between the Grand Palais and the Petit Palais, and the city registers them separately: one at 5.05 metres around and 28 metres tall, the other at 5.55 metres and 30 metres. From the pavement they read as a single pair, which is how they are treated here. Neither has a planting date. The register carries none and no archive found so far supplies one, so their age is inferred from girth alone and the range stays deliberately wide: certainly more than a century, possibly close to twice that. What is datable is the ground under them. Alphand laid out these gardens for Haussmann in the 1860s, and the avenue and its two palaces were built for the Exposition Universelle of 1900. The trees either predate that construction or went in with the replanting that followed it, and no source says which. London planes take city air better than almost anything else, shedding their bark in plates rather than letting soot build up on it, which is why Paris has hundreds of thousands of them. Reaching this girth still takes a long time and a spot nobody widened a road through. These two got both.",
+      "verified_sources": [
+        "data/registers/paris-arbres-remarquables.json (register_ids 307582, 302598)",
+        "WebSearch summary of Paris tree sources describing a Platanus x hispanica in Jardins des Champs-Elysees (French-style section), 28m tall, 525cm girth, matching this pair closely"
+      ],
+      "access": "Free, public garden (Jardins des Champs-Élysées), open daily",
+      "transport": "Champs-Élysées - Clemenceau (M1, M13), about 4 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "par_021",
+      "name": "The Magnolia of Square d'Ajaccio",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "not documented; the square dates to the Alphand era (1860s-1880s)",
+      "age_min": 60,
+      "age_max": 160,
+      "location": {
+        "address": "127 Rue de Grenelle, 75007 Paris",
+        "latitude": 48.857417308456604,
+        "longitude": 2.3147251173459473,
+        "neighbourhood": "Square d'Ajaccio"
+      },
+      "story": "This tree comes from the warm swamp forests of the American southeast, and it has grown to twelve metres in a small square off the Rue de Grenelle. Southern magnolia keeps its leaves all year, thick and glossy with a rust-coloured felt underneath, and in early summer it opens cream-white flowers the width of a dinner plate, lemon-scented and gone within a couple of days. Paris put this one on its remarkable tree register at 163 centimetres around, a figure the one independent account of the square repeats exactly. Nobody has recorded its age. The square supplies the only chronological anchor: Square d'Ajaccio, formerly Square des Invalides, was laid out by Adolphe Alphand, the engineer behind most of Haussmann's parks, in the wave of small green squares cut into Paris between the 1860s and the 1880s. Whether the magnolia went in with the square or a lifetime later, no record says, which is why the estimate here is a broad one. It shares its enclosure with a plane tree forty-five metres away that is also on the register, so this is a two-tree garden and ten minutes is enough for both. Magnolia grandiflora is planted across Paris but rarely gets to stand up like this: the species is tender here, and most specimens spend their lives flattened against a warm wall.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "June and July, when the cream flowers open and scent the whole square"
+      },
+      "verified_sources": [
+        "data/registers/paris-arbres-remarquables.json (register_id 109016)",
+        "https://www.unjourdeplusaparis.com/en/paris-vert/square-dajaccio"
+      ],
+      "access": "Free, public square, open daily",
+      "transport": "Invalides (M8, M13, RER C), about 8 min walk; Varenne (M13) about 5 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "par_022",
+      "name": "The Plane of Square d'Ajaccio",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "likely over a century, since the square was laid out in the 1860s-1880s",
+      "age_min": 100,
+      "age_max": 160,
+      "location": {
+        "address": "127 Rue de Grenelle, 75007 Paris",
+        "latitude": 48.85777577334161,
+        "longitude": 2.314530473104158,
+        "neighbourhood": "Square d'Ajaccio"
+      },
+      "story": "Four metres ninety of trunk, in a square you can cross in twenty paces. The register gives this plane 490 centimetres around and 25 metres tall, and the one independent survey of Square d'Ajaccio quotes exactly the same 490, which is the kind of agreement that makes a measurement worth trusting. The two sources part company on the species. The city types it as Platanus x hispanica, the London plane, the hybrid Europe planted by the million from the eighteenth century onward. The visitor guide calls the square's planes oriental planes, which is one of that hybrid's two parents and a genuinely different tree. The city's own inventory wins here, but the disagreement is real and it is the sort of thing you can stand at the trunk and argue about. Its age is documented nowhere. The same guide calls the square's planes century-old, and the square dates from Alphand's programme of the 1860s to 1880s, so a hundred years is a floor rather than a figure. The tree has therefore watched the Rue de Grenelle become a street of ministries and embassies, with the dome of the Invalides two blocks east, while doing what old planes do: dropping bark in camouflage plates every summer and putting on another centimetre of belt. It stands forty-five metres from a southern magnolia that is also on the register, two designated trees inside one small enclosure.",
+      "verified_sources": [
+        "data/registers/paris-arbres-remarquables.json (register_id 109021)",
+        "https://www.unjourdeplusaparis.com/en/paris-vert/square-dajaccio"
+      ],
+      "access": "Free, public square, open daily",
+      "transport": "Invalides (M8, M13, RER C), about 8 min walk; Varenne (M13) about 5 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "par_023",
+      "name": "The Turkish Hazel of Square du Temple",
+      "species": "Turkish Hazel (Corylus colurna)",
+      "age_estimate": "not documented; comparable Corylus colurna elsewhere in Paris date to the 1860s-1880s",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "50 Rue de Bretagne, 75003 Paris",
+        "latitude": 48.86483749007911,
+        "longitude": 2.3606255359803257,
+        "neighbourhood": "Square du Temple - Elie-Wiesel"
+      },
+      "story": "Most people picture a hazel as a shrub they can see over. This one is sixteen metres tall with a trunk 235 centimetres around. Corylus colurna, the Turkish hazel, is the outsized relative of the nut-bearing hedge hazel, native to the Balkans, Anatolia and the Caucasus, and it grows as a single straight trunk under a tidy cone of a crown. Nineteenth-century park designers liked it for the shape, and cities still plant it because it shrugs off heat, compacted soil and bad air. Nobody wrote down when this one was planted. Paris has other Turkish hazels of similar or greater girth that do carry dates, including one in Square Maurice-Gardette recorded as 1882, so comparison puts this tree somewhere between eighty and a hundred and fifty years old, and that is as precise as the evidence gets. The ground has a heavier history than the garden suggests. This is the old Temple enclosure, the Paris headquarters of the Knights Templar, and later the prison where Louis XVI and Marie-Antoinette were held before their executions. The tower came down in 1808 and the garden that replaced it dates from the 1850s. It now holds 71 trees and 191 varieties of plant, a good share of them foreign: a ginkgo, a Japanese pagoda tree, a Caucasian wingnut, a golden rain tree and a Chinese quince, all within a few minutes of the hazel.",
+      "verified_sources": [
+        "data/registers/paris-arbres-remarquables.json (register_id 116886)",
+        "https://fr.wikipedia.org/wiki/Square_du_Temple_-_Elie-Wiesel",
+        "https://paris.vivarbre.fr/noisetier"
+      ],
+      "access": "Free, public square, open daily (closes at night per standard Paris square hours)",
+      "transport": "Temple (M3), about 3 min walk; République (M3/5/8/9/11), about 6 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "par_024",
+      "name": "The Old Hazel of Square Maurice-Gardette",
+      "species": "Turkish Hazel (Corylus colurna)",
+      "age_estimate": "roughly 145 years",
+      "age_min": 140,
+      "age_max": 148,
+      "location": {
+        "address": "8 Rue Général Blaise, 75011 Paris",
+        "latitude": 48.86185385251956,
+        "longitude": 2.379087768327219,
+        "neighbourhood": "Square Maurice-Gardette"
+      },
+      "story": "French regional television once ran a news piece written in this tree's own voice, headlined \"I am 145, stop cracking my hazelnuts and let me age in peace\". The grievance is real enough. Turkish hazel nuts are edible, they drop in quantity in early autumn, and people in Square Maurice-Gardette gather them. The two sources differ on when it started. The city register records a planting year of 1882; the broadcast piece says 1879. Three years apart, which makes it roughly 145 years old either way and, more usefully, one of the few Turkish hazels in Paris with any planting date at all. Its trunk measures 265 centimetres around and it stands twenty metres, tall enough to end the argument about hazels being shrubs. Check the bark. This species sheds it once a year in pale corky strips, closer to a birch than to anything you would expect on a nut tree, and on a trunk this size the effect is hard to miss. It shares the square with an olive, a ginkgo and a horse chestnut, none of which crowds it. One caveat on the superlative that follows this tree around. The same broadcaster has called a different Paris hazel, the one in Square Jean-XXIII behind Notre-Dame, the oldest in the city. Both claims cannot be right and nothing settles it, so this one is left as what it demonstrably is: dated, measured and unusually large.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September into October, when the nuts drop and the neighbourhood collects them"
+      },
+      "verified_sources": [
+        "data/registers/paris-arbres-remarquables.json (register_id 124914, planted 1882)",
+        "https://france3-regions.franceinfo.fr/paris-ile-de-france/paris/j-ai-145-ans-arretez-de-me-casser-les-noisettes-et-laissez-moi-vieillir-tranquillement-2981081.html",
+        "https://fr.wikipedia.org/wiki/Square_Maurice-Gardette"
+      ],
+      "access": "Free, public square, open daily",
+      "transport": "Saint-Ambroise (M9), about 5 min walk; Voltaire (M9), about 8 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "par_025",
+      "name": "The Caucasian Wingnut of Square d'Estienne d'Orves",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "roughly 164 years",
+      "age_min": 160,
+      "age_max": 168,
+      "location": {
+        "address": "1 Place d'Estienne d'Orves, 75009 Paris",
+        "latitude": 48.87668685197766,
+        "longitude": 2.331908896799536,
+        "neighbourhood": "Square d'Estienne d'Orves"
+      },
+      "story": "Come up the steps from the Trinite metro and it is right there, twenty-six metres of it, reported to be the oldest living Caucasian wingnut in France. Two independent sources give a planting date of 1862 and a trunk 3.8 metres around, and they match the city register to the centimetre, which is rarer than it should be. The claim about being the oldest in the country belongs to those sources rather than to us: no ring count has been published, and a tree dated 1862 makes it plausible without proving it. Pterocarya fraxinifolia comes from the Caucasus and northern Iran, a wetland species happy in ground too wet for most hardwoods. It gives itself away in high summer, when chains of winged green nutlets up to half a metre long hang from the branch tips, and its ash-like compound leaves can run to sixty centimetres. Left alone the species suckers from the root plate until one tree becomes a thicket of itself, which is what makes a clean single trunk of this size worth the stop. Paris gave it the Remarkable Tree label on 1 April 2017. It stands in the small square in front of the church of La Trinite, in a quarter rebuilt during Haussmann's works, so the tree and the streets around it went up together and it has been growing beside the station entrance since before the Metro existed.",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "kind": "fruit",
+        "label": "July and August, when the long seed chains hang low enough to read from the pavement"
+      },
+      "verified_sources": [
+        "data/registers/paris-arbres-remarquables.json (register_id 323350)",
+        "https://fr.wikipedia.org/wiki/Square_d'Estienne-d'Orves",
+        "https://www.paris.fr/lieux/square-d-estienne-d-orves-2472"
+      ],
+      "access": "Free, public square, open daily",
+      "transport": "Trinité - d'Estienne d'Orves (M12), about 2 min walk, the square sits right beside the station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "par_026",
+      "name": "The Chinaberry of Square Boucicaut",
+      "species": "Chinaberry (Melia azedarach)",
+      "age_estimate": "not documented; the square (created 1870) is known for many century-old specimens",
+      "age_min": 60,
+      "age_max": 150,
+      "location": {
+        "address": "1 Rue de Babylone, 75007 Paris",
+        "latitude": 48.85135747117565,
+        "longitude": 2.3251319080328345,
+        "neighbourhood": "Square Boucicaut"
+      },
+      "story": "Here is a subtropical tree holding its fruit through a Paris winter. Melia azedarach, the chinaberry, belongs to the warm belt running from India to China and is normally a Mediterranean planting; the French call it lilas de Perse, Persian lilac, for the loose sprays of small mauve star-shaped flowers it opens in summer. What happens next is the reason to note the address. Those flowers become hard pale yellow berries that stay on the bare twigs long after the leaves have gone, so the tree is at its most conspicuous in December. The berries are poisonous to people, which is worth knowing if there is a child with you. The register gives it 155 centimetres around and ten metres tall, and the independent survey of the seventh arrondissement's nine remarkable trees repeats that same 155. Neither carries a planting date, and the square's own literature says only that many of its hundred-odd trees pass a century, which is a claim about the square rather than about this tree, so its age stays open. Square Boucicaut opened in 1870 as the square du Bon-Marche, named for Aristide and Marguerite Boucicaut, whose department store still faces it: fixed prices, goods you could handle before buying, and the oldest such shop in Paris. Their garden still collects oddities, Chilean araucarias and a very rare Cunninghamia lanceolata among them. The chinaberry is the one that fruits in the cold.",
+      "best_time": {
+        "months": [
+          12,
+          1
+        ],
+        "kind": "fruit",
+        "label": "December and January, when the pale yellow berries hang on after the leaves have gone"
+      },
+      "verified_sources": [
+        "data/registers/paris-arbres-remarquables.json (register_id 118790)",
+        "https://paris.vivarbre.fr/arrondissement7",
+        "https://fr.wikipedia.org/wiki/Square_Boucicaut"
+      ],
+      "access": "Free, public square, open daily, facing the Bon Marché department store",
+      "transport": "Sèvres-Babylone (M10, M12), about 4 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
