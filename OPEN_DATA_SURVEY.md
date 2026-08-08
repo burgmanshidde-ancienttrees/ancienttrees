@@ -4,6 +4,19 @@ Measured 2026-07-21. The question changed halfway through, and so did the answer
 
 It started as "can open data get us to every city in the world", which assumed publishing hundreds of trees per city. Hidde rejected that the same day: ten per city is what makes the passport work, and scarcity is the mechanism rather than a limitation. See BACKLOG.md. So the surviving question is narrower and more useful: **can open data cut the dull half of a city run, finding candidates and fixing coordinates, so runs spend their time on stories?**
 
+## Amsterdam municipal register: usable, imported (2026-08-08)
+
+Gemeente Amsterdam publishes its designated "bijzondere bomen" layer on
+maps.amsterdam.nl (dataset 561): 5,827 trees the city itself marks as
+protected/monumental, with species, plant year, girth, crown diameter,
+owner and tree-level coordinates. Licence verified at
+maps.amsterdam.nl/open_geodata/terms.php, proving sentence: "U mag de dataset
+zowel voor niet-commerciele als commerciele doeleinden gebruiken" (commercial
+use explicitly allowed, no attribution required). Imported to
+data/registers/amsterdam-bijzondere-bomen.json with the licence block. This is
+the municipal-open-data route CLAUDE.md prefers for NL; the national
+Bomenstichting register below stays CC-BY-NC and stays a lead list only.
+
 ## Spain: the regional registers, scouted 2026-08-04
 
 Spain has no national register; every autonomous community keeps its own, and they differ in quality, licence and whether the file even downloads. Scouted for the cities we publish and the ones we might.
