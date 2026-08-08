@@ -1,0 +1,161 @@
+{
+  "city": "Boston",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Boston lost its two most famous trees long ago: the Liberty Tree to a Loyalist axe in 1775 and the Great Elm of the Common to a storm in 1876. What survived is quieter and stranger. Two English elms have flanked the Shaw Memorial since the decades around 1800, and across town the Arnold Arboretum keeps accession cards on its trees the way a library keeps catalogue entries, including a Franklinia, a species extinct in the wild since the early 1800s. The four below split into a Common and Public Garden pair and an Arboretum pair; all are free.",
+  "meta_description": "Boston's remarkable trees, from the elms flanking the Shaw Memorial to a tree extinct in the wild at the Arnold Arboretum. Locations, stories, sources.",
+  "question_meta": "Boston's oldest documented trees are the Shaw Memorial elms on the Common, planted between 1772 and 1812. Their story, and three more remarkable trees.",
+  "question_answer": "The oldest documented trees in Boston are the two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812. A white oak on Peters Hill in the Arnold Arboretum, core-sampled at more than 200 years, predates the Arboretum itself and may be older still.",
+  "question_context": "Boston's relationship with its trees is a long ledger of documented losses, and that is precisely what makes the survivors verifiable. The Liberty Tree, the elm under which the Sons of Liberty gathered, was felled by Loyalists in August 1775 and the city has marked the spot ever since. The Great Elm of the Common, once called the city's oldest inhabitant, blew down in 1876 and was mourned in print. The Public Garden's lagoon willow, the most photographed tree in the city, collapsed as recently as July 2026. Each loss was recorded, which means each survivor stands in an unusually well-documented landscape. The Shaw Memorial elms have flanked their spot through all of it, planted in the decades around 1800 when the Common's tree-lined malls were laid out. Across town the Arnold Arboretum, founded 1872 and run by Harvard, keeps accession cards on its collection the way a library catalogues books, which is how a white oak that predates the Arboretum and a Franklinia extinct in the wild both carry paperwork most ancient trees never get.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Boston?",
+      "a": "The two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812, are the oldest documented. A white oak on Peters Hill in the Arnold Arboretum was core-sampled in 2018 at more than 200 years and predates the Arboretum's 1872 founding."
+    },
+    {
+      "q": "Is the Liberty Tree still standing?",
+      "a": "No. The Liberty Tree, the elm where Boston's revolutionary protests gathered, was felled by Loyalists in August 1775. A plaque and a bas-relief mark the site at Washington and Essex Streets; no tree on this list claims its mantle."
+    },
+    {
+      "q": "Are Boston's remarkable trees free to visit?",
+      "a": "All four are free. Two stand on Boston Common and in the Public Garden in the city centre; two stand in the Arnold Arboretum, which is open free every day and is reachable by the Orange Line to Forest Hills."
+    },
+    {
+      "q": "What is a Franklinia and why does Boston have one?",
+      "a": "Franklinia alatamaha is a small flowering tree that has been extinct in the wild since the early 1800s; every living one descends from seeds collected in Georgia before then. The Arnold Arboretum's specimen, accessioned in 1905, flowers in late summer."
+    }
+  ],
+  "trees": [
+    {
+      "id": "bos_001",
+      "name": "The Shaw Memorial Elms",
+      "species": "English Elm (Ulmus procera)",
+      "age_estimate": "planted between 1772 and 1812, so roughly 214 to 254 years old",
+      "age_min": 214,
+      "age_max": 254,
+      "location": {
+        "address": "Boston Common, opposite 24 Beacon Street (flanking the Robert Gould Shaw Memorial, corner of Beacon and Park Streets)",
+        "latitude": 42.3575,
+        "longitude": -71.0635,
+        "neighbourhood": "Beacon Hill / Boston Common"
+      },
+      "story": "Augustus Saint-Gaudens's memorial to Robert Gould Shaw and the Massachusetts 54th was built around these two elms, not the other way round. The trees came first, planted somewhere between 1772 and 1812, probably under the 1780 permission to plant elms across from John Hancock's mansion while he was governor. The bronze arrived in 1897 and sits on a vault designed to spare their roots. The Boston Globe calls them the oldest English elms in the Western Hemisphere. One caveat on the species. Two institutional sources and the memorial's own conservation record call them English elm; a single minority account describes them as American elm. The weight of evidence sits with English elm, but the disagreement is real. Their survival is not luck. In 1927 they were written off as close to dead. The arborist Henry Davis began treating them free of charge in the 1970s and the care has never stopped: bricks packed inside the hollow trunks for stability, six to eight feet taken off the crowns in 2013, inspections every fortnight. That retrenchment pruning is what gives them the blunt, cut back outline they carry through winter. Even the cramped root vault helps, densifying the wood against Dutch elm disease. Prunings have been turned into pens and sold. The two of them stand where the Freedom Trail meets Beacon and Park, shading the regiment they now outlive by more than a century.",
+      "verified_sources": [
+        "https://apps.bostonglobe.com/boston-revealed/series/shaw-elms/",
+        "https://www.universalhub.com/2020/two-oldest-trees-common (citing New England Folklore, https://newenglandfolklore.blogspot.com/2020/01/strange-old-trees-in-boston-and-beyond.html)",
+        "https://friendsofthepublicgarden.org/2020/06/17/meet-the-trees-the-elms-june-17-2020/"
+      ],
+      "access": "Free, public park (Boston Common), directly on the Freedom Trail",
+      "transport": "Park Street MBTA station (Red/Green Line), roughly 3-5 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bos_002",
+      "name": "The Peters Hill White Oak",
+      "species": "White Oak (Quercus alba)",
+      "age_estimate": "roughly 195 to 220 years, core-sampled in 2018 to a germination date in the early 1800s",
+      "age_min": 195,
+      "age_max": 220,
+      "location": {
+        "address": "Arnold Arboretum of Harvard University, northeast slope of Peters Hill, above the crabapple (Malus) collection",
+        "latitude": 42.2935,
+        "longitude": -71.1275,
+        "neighbourhood": "Peters Hill, Arnold Arboretum, Jamaica Plain"
+      },
+      "story": "Harvard's Arnold Arboretum has been cataloguing plants since 1872 and did not get round to this one until 2010. It shows up on an 1894 city survey of Peters Hill, already growing wild on ground the Arboretum later absorbed, so when it was finally accessioned it went into the books as found growing in place rather than planted. It may be the oldest tree in the entire landscape. In 2018 a core taken from the southwest stem gave 142 countable rings, with perhaps 60 more lost in a hollow centre, putting germination in the early 1800s. It is double leadered, two stems fused near the base with the seam still visible, roughly 17 metres tall and spreading 28 metres over the crabapple collection below it. A 1927 bird's eye map of the Arboretum drew it as a lone shepherd guarding an endless flock, the flock at the time being hawthorns that have since been replaced. Two honest notes. Everything known about this tree comes from the Arboretum itself, rigorous work with published ring counts, but we found nothing independent of the institution. And no coordinates are published, so the pin is the northeast slope of Peters Hill above the crabapples rather than the trunk. Walk up the slope and look for the widest crown on the hill. At that spread it is not a difficult hunt.",
+      "verified_sources": [
+        "https://arboretum.harvard.edu/arnoldia-stories/existing-through-change-quercus-alba/ (Dosmann, Michael S. 2018. 'Existing through change: Quercus alba.' Arnoldia, 76(1): 44-45.)",
+        "https://arboretum.harvard.edu/events/2025-11-15/ (Arnold Arboretum 'Tree Mob' event page, describing it as possibly the oldest accessioned tree in the landscape)"
+      ],
+      "access": "Free, public arboretum, open dawn to dusk",
+      "transport": "Forest Hills MBTA station (Orange Line) roughly 15-20 minute walk, or bus to the Arborway/Peters Hill Gate entrance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bos_003",
+      "name": "The Franklin Tree of the Explorers Garden",
+      "species": "Franklin Tree (Franklinia alatamaha)",
+      "age_estimate": "roughly 121 years (accessioned as a rooted cutting in 1905)",
+      "age_min": 120,
+      "age_max": 122,
+      "location": {
+        "address": "Arnold Arboretum of Harvard University, Explorers Garden, Bussey Hill",
+        "latitude": 42.302,
+        "longitude": -71.1215,
+        "neighbourhood": "Bussey Hill, Arnold Arboretum, Jamaica Plain"
+      },
+      "story": "There is no wild Franklinia anywhere on earth and there has not been for about two hundred years. John Bartram found the species growing on a few acres beside the Altamaha River in Georgia in 1765, his son William collected seed around 1776, and within roughly fifty years the wild population was gone and never seen again. Every Franklin tree alive today, in every garden in the world, descends from that one collection. This is one of the oldest of them. The Arnold Arboretum took it in as a rooted cutting in 1905 from a Pennsylvania nursery, on a line traceable back to material from 1884. The International Dendrology Society, which has no stake in Harvard's reputation, calls it the largest and oldest known example of the species anywhere, and photographed it standing in October 2025. It is a small tree in the tea family and the only member of its genus, and it flowers on an odd schedule. Large cream white flowers with a boss of yellow stamens open late in the season, so the last of them are still out while the leaves around them are turning red. Seeing both at once on the same branch is the reason to come. It grows in the Explorers Garden on Bussey Hill. No coordinates are published for the individual plant, so the pin is the garden and the labels there take you the rest of the way.",
+      "best_time": {
+        "months": [
+          9
+        ],
+        "kind": "flowers",
+        "label": "September, when the cream flowers open while the leaves are already turning red"
+      },
+      "verified_sources": [
+        "https://arboretum.harvard.edu/plant-bios/franklin-tree/ (accession 2428-3*A, accessioned 1905)",
+        "https://www.treesandshrubsonline.org/articles/franklinia/franklinia-alatamaha/ (International Dendrology Society reference site, independent of Harvard; photo dated 2025-10-27 calling it 'the largest and oldest known example of Franklinia alatamaha anywhere in the world', confirming it standing and photographed recently)"
+      ],
+      "access": "Free, public arboretum, open dawn to dusk",
+      "transport": "Forest Hills MBTA station (Orange Line) roughly 15-20 minute walk, or bus to the Arborway entrance near Bussey Hill",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bos_004",
+      "name": "The Dawn Redwood of the Public Garden",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "roughly 63 years (planted 1963)",
+      "age_min": 62,
+      "age_max": 64,
+      "location": {
+        "address": "Boston Public Garden, near the Charles Street / Beacon Street corner of the Lagoon",
+        "latitude": 42.3555,
+        "longitude": -71.0715,
+        "neighbourhood": "Beacon Hill / Public Garden"
+      },
+      "story": "Until 1944 this species was known only from fossils and assumed to have been extinct for millions of years. Then living Metasequoia turned up in Sichuan, and in early 1948 the first seeds to leave China arrived at Harvard's Arnold Arboretum in Jamaica Plain, a few miles from where this tree stands, just ahead of the door closing on scientific exchange with China for decades. The Arboretum raised seedlings and sent them around the world. This one was planted in the Public Garden in 1963, one of four here. It is not old, and it is not pretending to be. At about 63 it earns its place on what it is rather than how long it has stood. Dawn redwood is a deciduous conifer, which most people meet for the first time in autumn, when a tree that plainly looks like a redwood turns foxy orange and drops every needle it has. The trunk is fluted and deeply hollowed under each branch, another oddity of the species, and a younger 'Gold Rush' cultivar stands across the path for comparison. One note on sourcing: the 1963 planting date and the exact placement come from the Friends of the Public Garden, whose own people care for the tree, and we found no record of this specimen independent of them.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the needles turn foxy orange and fall"
+      },
+      "verified_sources": [
+        "https://friendsofthepublicgarden.org/2020/04/14/meet-the-trees-the-dawn-redwood-april-13-2020/"
+      ],
+      "access": "Free, public park, open dawn to dusk",
+      "transport": "Arlington MBTA station (Green Line), roughly 2-3 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}
