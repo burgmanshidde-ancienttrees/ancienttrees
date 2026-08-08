@@ -1447,8 +1447,19 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
     indexes in walking order. Returns [] when no cluster clears the bar, and
     the page then has no route bar at all, which stays the honest answer."""
     points = [(m["lat"], m["lng"]) for m in markers]
+    # The chaining radius, with a fallback measured on 2026-08-08. At 900 m,
+    # 30 of 91 cities had no walk at all, and 11 of them (London, Venice,
+    # Copenhagen, The Hague among them) get their first walk at 1500 m: their
+    # trees stand 1.0-1.5 km apart, which is still an afternoon in a big
+    # city. But 1500 m globally welds Paris, Vienna, Naples and Nice's named
+    # walks into one blob each. So the wider radius applies ONLY to a city
+    # that would otherwise have no walk: cities with walks keep them exactly
+    # as they are, and a first walk beats no walk.
+    groups = _walk_clusters(points)
+    if not any(len(g) >= WALK_MIN_TREES for g in groups):
+        groups = _walk_clusters(points, radius_m=1500)
     walks, combined = [], []
-    for members in _walk_clusters(points):
+    for members in groups:
         if len(members) < WALK_MIN_TREES:
             continue
         sub = [points[i] for i in members]
