@@ -108,6 +108,46 @@ trees and used your survey") is a real story for them, not a favour.
 | PadovaOggi | Padua | Their reporting confirmed the last Prato della Valle plane died in 2011 |
 | Local press in Setubal | Setubal | The parish's own tree route corroborated nine of our ten entries |
 
+### 3e. The tree sites, blogs and communities we cite as sources
+
+Computed 2026-08-08 from `verified_sources` across all 766 published trees:
+every one of these is cited on our pages today, so the email is true on
+arrival ("we verified our [city] trees against your work and cite you").
+Citation counts included so the strongest hook goes first.
+
+| Site | Language/Country | Cited | Hook |
+|---|---|---|---|
+| baumkunde.de | DE | 11 trees, 3 cities | German tree database; we cite their records in Berlin, Munich, Vienna coverage |
+| bomenbieb.nl | NL | 8 trees, 4 cities | The Bomenstichting's own tree library; rides with the tier-1 email |
+| prazskestromy.cz | CZ | 8 trees | Prague's memorial-trees site, run by one dedicated author |
+| jardinessinfronteras.com | ES | 9 trees, 4 cities | Spanish garden-history blog, cited across four of our Spanish cities |
+| woodwideweb.be | BE | 7 trees | Belgian remarkable-trees site; exactly our audience |
+| 100milarvores.pt | PT | 7 trees | Portuguese tree-mapping project; a natural mutual link |
+| getlisbon.com | PT | 7 trees | Lisbon city blog whose tree pieces we verified against |
+| unjourdeplusaparis.com | FR | 6 trees | Paris city blog, cited on our Paris trees |
+| jardinesdelaoliva.wordpress.com | ES | 6 trees, 2 cities | Spanish garden blog |
+| hortusleiden.nl | NL | 7 trees | Hortus botanicus Leiden; their trees have our pages |
+| heritagetrees.nparks.gov.sg | SG | 7 trees | Singapore's official Heritage Trees register we cite |
+| atlasobscura.com | intl | 6 trees, 5 cities | Their entries corroborate ours; community submission is also a channel |
+| wastemagazine.es | ES | 7 trees | Spanish nature magazine |
+
+### 3f. More parks departments and registers we cite (extends 3b)
+
+| Organisation | City/Region | Cited |
+|---|---|---|
+| NYC Parks (Great Trees) | New York | 13 trees |
+| Regione Campania, foreste | Campania | 16 trees, 2 cities |
+| Regione Lazio | Rome | 10 trees |
+| Comune di Roma | Rome | 10 trees |
+| Camara Municipal do Porto, ambiente | Porto | 13 trees |
+| Uniao das Freguesias de Setubal | Setubal | 10 trees |
+| Onroerend Erfgoed | Flanders | 9 trees |
+| City of Helsinki | Helsinki | 8 trees |
+| Ville de Geneve | Geneva | 6 trees |
+| Ayuntamiento de Zaragoza | Zaragoza | 7 trees |
+| Comune di Milano | Milan | 6 trees |
+| Museo di Capodimonte | Naples | 6 trees |
+
 ### What to send them, and it is not a template
 
 One short email each, in the local language where you can, saying what the site
@@ -117,7 +157,7 @@ email: the page itself is the ask, and an organisation that likes it will link
 without being told to.
 
 Rough order of value: 3a first (we have the strongest, most flattering hook and
-a page to show), then 3b, then 3c, then 3d.
+a page to show), then 3b and 3f, then 3c, then 3e, then 3d.
 
 ## Rules for all of it
 
