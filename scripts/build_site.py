@@ -2933,7 +2933,14 @@ _PROMISE = [
     # "six of the ten trees on this list", "none of these ten need a ticket"
     (re.compile(r"\bof the\s+(%s)\s+trees?\b" % _N, re.I), lambda n: {n}, ALL_COPY),
     (re.compile(r"\b(?:these|the)\s+(%s)\s+"
-                r"(?:are|is|need|needs|were|was|stand|stands|remain|listed)\b" % _N, re.I),
+                r"(?:are|is|need|needs|were|was|stand|stands|remain|listed|below)\b" % _N, re.I),
+     lambda n: {n}, ALL_COPY),
+    # "All sixteen are free to see", "All sixteen trees on this list". Vienna
+    # grew to nineteen with both of these live in the intro and FAQ while the
+    # meta fields were caught: the second time this class slipped in one day,
+    # so per the ratchet it becomes pattern rather than vigilance. Anchored on
+    # trees/are/stand/need so "all five trunks" inside an entry stays legal.
+    (re.compile(r"\ball\s+(%s)\s+(?:trees?|are|stand|need|needs|remain)\b" % _N, re.I),
      lambda n: {n}, ALL_COPY),
 ]
 
