@@ -1,0 +1,94 @@
+[
+  {
+    "id": "nyc_014",
+    "name": "The Second Camperdown Elm of Green-Wood",
+    "species": "Camperdown Elm (Ulmus glabra 'Camperdownii')",
+    "age_estimate": "believed 19th or early 20th century planting, exact date unconfirmed",
+    "age_min": 100,
+    "age_max": 160,
+    "location": {
+      "address": "Green-Wood Cemetery, at the intersection of Garden Path and Pink Avenue, 500 25th Street, Brooklyn, NY 11232",
+      "latitude": 40.6536,
+      "longitude": -73.9913,
+      "neighbourhood": "Greenwood Heights, Brooklyn"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/12",
+      "https://yourbrooklynguide.com/green-wood-cemetery/"
+    ],
+    "access": "Free, cemetery open daily (check seasonal hours)",
+    "transport": "25th Street (Metro R), at the cemetery gate",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "NYC Parks Great Trees registry, Prop ID Bk20, designated 1985, official entry #12: species Camperdown Elm (Ulmus glabra 'Camperdownii'), located at the intersection of Garden Path and Pink Avenue inside Green-Wood Cemetery, lat 40.6536/lon -73.9913 as published by the register itself (tree-level coordinates). Fetched via Wayback Machine archive because nycgovparks.org returns HTTP 202 with an empty body to both curl and WebFetch on every direct attempt today (see report note on this host). Second source, Your Brooklyn Guide (independent travel write-up), corroborates: Green-Wood holds two rare Camperdown elms, and this one is described as the second-oldest Camperdown elm in Brooklyn, after the one in Prospect Park behind the Boathouse (our nyc_003, planted 1872). No source gives this specific tree's planting year, only that it is younger than the 1872 Prospect Park specimen and old enough to be called a Green-Wood arboretum highlight; age range left wide and honest rather than invented. Every Camperdown elm on Earth is a graft from a single 1830s Scottish mutant branch (same fact used in nyc_003's story), so this individual's age is about the graft date here, not the cultivar's origin. Distinct from nyc_003: different park, different cemetery section, genuinely a second, separate specimen tree. Register-twin check: NYC Parks lists only one Camperdown elm entry (id 12) for Green-Wood despite the cemetery holding two per Your Brooklyn Guide; only the officially registered one is delivered here, the second (unregistered, undescribed location) is not.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "nyc_015",
+    "name": "The Kansas Hawthorn of the Lily Pool",
+    "species": "Kansas Hawthorn (Crataegus coccinioides)",
+    "age_estimate": "about 114 years (planted 1912)",
+    "age_min": 112,
+    "age_max": 116,
+    "location": {
+      "address": "Brooklyn Botanic Garden, across from the Lily Pool, 990 Washington Avenue, Brooklyn, NY 11225",
+      "latitude": 40.6694,
+      "longitude": -73.9629,
+      "neighbourhood": "Prospect Heights, Brooklyn"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/20220717115552/https://www.nycgovparks.org/facilities/great-trees?id=7",
+      "https://greatesttreesofnyc.tumblr.com/post/123825669615/kansas-hawthorn-lily-pond-brooklyn-botanic-garden"
+    ],
+    "access": "Paid entry to Brooklyn Botanic Garden",
+    "transport": "Franklin Ave-Botanic Garden (Metro 2/3/4/5) or Prospect Park (B/Q/S), 5-10 min walk",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "NYC Parks Great Trees registry, Tree Code Bk13, official entry id=7 (fetched via Wayback Machine, live nycgovparks.org returns HTTP 202/empty to curl and WebFetch today): donated by the Rochester, NY Parks Department in 1912, located 'across from the Lily Pond', species Kansas Hawthorn (Crataegus coccinioides), 35.26 ft tall, 20in trunk diameter, 28ft canopy. Second source, greatesttreesofnyc.tumblr.com's dedicated post, corroborates the same planting year and location ('alongside the Lily Pond by the glass conservatory building') and adds: it is a national and New York State Champion Tree, honored by the American Forestry Association in 1985 as the largest Kansas hawthorn in the US (the species normally tops out around 20ft), and listed on New York's Big Tree Register since 2009 as one of only two champion trees in NYC. Fiery red-orange fall foliage and dark crimson fruit in October. No tree-level survey coordinates found (checked iNaturalist's API for the species near Brooklyn: no observations at BBG); coordinates given are the Garden's Washington Avenue entrance, honestly approximate rather than the specific spot by the Lily Pool.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
+    "best_time": {
+      "months": [10],
+      "label": "October, when it turns flaming red and hangs heavy with dark crimson berry-like fruit",
+      "kind": "fruit"
+    }
+  },
+  {
+    "id": "nyc_016",
+    "name": "The Caucasian Wingnut of the Rock Garden",
+    "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+    "age_estimate": "about 104 years (received 1922)",
+    "age_min": 102,
+    "age_max": 106,
+    "location": {
+      "address": "Brooklyn Botanic Garden, Flatbush Avenue side, just north of the Rock Garden, 990 Washington Avenue, Brooklyn, NY 11225",
+      "latitude": 40.6694,
+      "longitude": -73.9629,
+      "neighbourhood": "Prospect Heights, Brooklyn"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/2022/https://www.nycgovparks.org/parks/brooklyn-botanic-garden/facilities/great-trees",
+      "https://www.bbg.org/article/big_city_big_trees_caucasian_wingnut"
+    ],
+    "access": "Paid entry to Brooklyn Botanic Garden",
+    "transport": "Franklin Ave-Botanic Garden (Metro 2/3/4/5) or Prospect Park (B/Q/S), 5-10 min walk",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "NYC Parks Great Trees registry, official entry id=4 (list page fetched via Wayback Machine; live nycgovparks.org returns HTTP 202/empty today), 'On the Flatbush Avenue side of the Brooklyn Botanic Garden just north of the Rock Garden': first received from Rome in 1922, native to the Caucasus-to-Iran region, 'known for its large low limbs and for the dense mass of exposed roots growing outwards in vivid patterns from the central trunk'. Second source, BBG's own institutional article ('Big City, Big Trees'), corroborates the 1922 arrival and adds detail: trunk nearly 9 feet in diameter (NYC Parks separately measures 120in/10ft), about 60ft tall with an equally broad spread, heavy branches needing cable and pole support (a limb is propped on a crutch), and the tree is listed on the Great Trees of Long Island register too. Species brought to Europe from the Caucasus in 1782; the wingnut name comes from its winged fruit. A 1978 clone was planted separately near the newer Herb Garden, not this original specimen. No tree-level survey coordinates found; garden-section location only (Flatbush Ave side, north of Rock Garden), so pin is honestly approximate at the Garden's main entrance.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  }
+]

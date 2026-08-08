@@ -68,6 +68,29 @@
         "neighbourhood": "Central Park, Manhattan"
       },
       "reason": "2026-08-07 pass (deepening the Ramble/Mall/CPW cluster): Central Park Conservancy's own plant page for the species names one specimen at this spot ('a beautiful specimen inside the 72nd Street entrance near Conservatory Water', 40-50 feet tall) and it is the geographically closest new candidate found this pass, plausibly under 1km from nyc_002/nyc_011-013. Not delivered: only one real source describes this individual tree (the Conservancy's generic species page), it gives no planting date or age, and repeated searches (Daily Star Lebanon piece, Armchair Philately, general cedar-of-lebanon history sites) found nothing specific to this specimen beyond restating the species page. Fails the two-independent-sources-with-age bar. Worth a look for a future pass if a second source naming this exact tree turns up (a Conservancy walking-tour PDF or press piece), but currently thin, not withheld or blocked for any other reason."
+    },
+    {
+      "name": "Common Pawpaw of the Plant Family Collection, Brooklyn Botanic Garden",
+      "species": "Common Pawpaw (Asimina triloba)",
+      "location": {
+        "address": "Brooklyn Botanic Garden, Plant Family Collection, between Daffodil Hill and Oak Circle, Brooklyn, NY 11225",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Prospect Heights, Brooklyn"
+      },
+      "reason": "2026-08-08 pass (Brooklyn cluster): NYC Parks Great Trees registry, id=3, edible banana-like fruit, umbrella-like leaves, custard-apple family. Genuine sourcing conflict found and not resolved this pass: the register's own list page (fetched via Wayback Machine, 2022 capture) gives a 1932 planting date, while a separately indexed capture/summary of the individual entry (great-trees/3) gives 1923, a 9-year discrepancy in the SAME official source rather than two independent ones agreeing. No second, genuinely independent source naming this specific BBG specimen was found (Flatbush Gardener's pawpaw post describes BBG's plant offerings generally and a different, Staten Island planting, not this tree). Location is well described (between Daffodil Hill and Oak Circle) if a future pass wants to pursue it and resolve the date conflict, ideally against a fresh live fetch of nycgovparks.org once its bot-block clears.",
+      "location_precision_note": "would need a mapped point for the Plant Family Collection area, not yet found"
+    },
+    {
+      "name": "English Elm, Fort Greene Park",
+      "species": "English Elm (Ulmus procera)",
+      "location": {
+        "address": "Fort Greene Park, Brooklyn, NY 11205",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Fort Greene, Brooklyn"
+      },
+      "reason": "2026-08-08 pass: one of 17 Brooklyn trees added to the 2024 Great Trees list per Brooklyn Paper's coverage, planted during the park's original Olmsted/Vaux design. Not pursued to verification: Fort Greene Park is roughly 4-4.5km from the Prospect Park/Green-Wood/BBG cluster this pass targeted, too far to fold into the same walk. A reasonable seed for a separate, future Fort Greene/Bed-Stuy cluster alongside the Brooklyn Paper's other 2024 additions (a Bed-Stuy ginkgo at 87 MacDonough St tied to the United Order of Tents, a red oak in Saratoga Park), several of which are individually well-documented but scattered across north-central Brooklyn rather than near Prospect Park."
     }
   ],
   "blocked": [
