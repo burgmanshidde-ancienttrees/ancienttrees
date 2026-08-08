@@ -5,7 +5,7 @@
   "intro": "Valencia protects more monumental and singular trees than any other region in Spain, over 2,400 across the Comunitat Valenciana under a 2006 law, and the city maps five routes past its own share of them. Several of its most-loved trees share an oddly specific origin story: 19th century gardeners meant to plant a magnolia and grabbed a fig sapling by mistake, or a species imported because it had just become fashionable on the French Riviera. What survives from those errors and fashions includes the widest tree canopy in the city, a 400-year-old olive, and the tallest tree in the province.",
   "meta_description": "Valencia protects more monumental trees than any Spanish region. Meet El Titan, a 174-year-old fig planted by mistake, and a 400-year-old olive.",
   "question_answer": "The oldest tree in Valencia is generally cited as the olive tree of Parque de la Rambleta, in the San Marcelino neighbourhood, estimated at around 400 years old and described by the city's own monumental trees route as the oldest specimen among all five of its walking trails.",
-  "question_meta": "Valencia's oldest tree is a 400-year-old olive in Parque de la Rambleta. Its story, exact location, and nine more monumental trees across the city.",
+  "question_meta": "Valencia's oldest tree is a 400-year-old olive in Parque de la Rambleta. Its story, exact location, and fifteen more monumental trees across the city.",
   "question_context": "Valencia is unusually well documented for this kind of question: the Comunitat Valenciana keeps a legal Catálogo de Árboles Monumentales y Singulares under a 2006 regional law, now covering more than 2,400 protected trees, and the city government separately publishes five named walking and cycling routes past its own monumental specimens, complete with individual profiles. Within that system, the olive of Parque de la Rambleta is the one most consistently named as the oldest, though as with most old olives, its 400-year figure comes from general estimate rather than a ring count or documented planting record. El Titan, the city's giant Ficus macrophylla in the Jardines del Parterre, is younger by comparison at 174 years but has a firmer, more specifically documented planting date, the tradeoff between the two runs through most of this list. The park sits in the San Marcelino neighbourhood on Pio IX street, next to the city's General Cemetery, a short bus ride south of the historic centre.",
   "faq": [
     {
@@ -333,6 +333,183 @@
       "curation_status": "flagged",
       "notes": "No individual age or planting record documented; included for species rarity per the city's own official monumental trees route rather than for size or age. Location given as the university's Jardí Botanic since the route's own 'Culture Park (former hospital)' description could not be reconciled precisely with a single confirmed address during this run.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "vlc_011",
+      "name": "The Ficus of Plaza Centenar de la Ploma",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 150 to 190 years, undocumented individual planting date",
+      "age_min": 150,
+      "age_max": 190,
+      "location": {
+        "address": "Plaza Centenar de la Ploma, 46001 Valencia",
+        "latitude": 39.47814,
+        "longitude": -0.37945,
+        "neighbourhood": "El Carmen, Ciutat Vella"
+      },
+      "story": "There are two giant figs here, their canopies touching so closely they read as one crown, and only one of them lets you walk up to it. The one in the plaza is this one, and it is not the modest half. It stands 27.8 metres tall with a canopy 28 metres across and a base circumference of 15.6 metres, where aerial roots have come down and fused into secondary trunks. Ficus macrophylla in its columnar form does this, building extra legs for itself until the line between trunk and root stops being obvious.\n\nThe measurements do not fully agree. Valencia's municipal tree observatory records 7.68 metres around at chest height; the regional monumental-tree register lists 13.7 metres, almost certainly taken lower on the same fused mass. Both figures are real and neither is wrong.\n\nIts twin stands thirty metres away, inside the walled courtyard of the former Palacio de Raga, now a Generalitat residence for the elderly. Local memory holds that one to be the older of the pair, supposedly a gift from the botanist Cavanilles to Francisco Martinez de la Raga, which would put it well past two hundred years. No planting date is documented for either. Both belong to the wave of Australian figs Valencia planted from the 1850s, the same fashion that produced El Titan across town.\n\nThe plaza tree is fenced at the base to keep feet off the root plate. Everything above that is open to anyone crossing the square.",
+      "verified_sources": [
+        "https://valenciablancoynegro.blogspot.com/2023/02/dos-ficus-en-el-centro-del-barrio-del.html",
+        "data/registers/valencia-arboles-monumentales.json (Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana, official register, CC BY 4.0)"
+      ],
+      "access": "Free, public plaza. The trunk area is fenced to protect the root plate, but the tree is fully visible and approachable from the plaza.",
+      "transport": "10 min walk from Angel Guimera metro station, in the Barrio del Carmen",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vlc_012",
+      "name": "The Ficus of the Corts Valencianes",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "sources disagree: called both 'century-old' and dated to the second half of the 19th century",
+      "age_min": 100,
+      "age_max": 175,
+      "location": {
+        "address": "Palau de Benicarlo, Placa de Sant Llorenc 4, 46003 Valencia",
+        "latitude": 39.47808,
+        "longitude": -0.37439,
+        "neighbourhood": "El Carmen, Ciutat Vella"
+      },
+      "story": "One of the largest fig trees in Valencia grows in a garden you can enter twice a week, by appointment, and not at all in August. It stands in the courtyard of the Palau de Benicarlo, also known as the Palau dels Borja, which is the working seat of the Corts Valencianes, the Valencian regional parliament. The only way to stand under it is the free guided tour of the building, offered on Monday and Friday mornings and booked in advance through the parliament itself. The tour runs about an hour and spends most of it on the debating chamber rather than the garden, which is worth knowing before you go.\n\nThe tree is in the same weight class as the city's famous ones. The regional register measures its trunk at 13.6 metres around, within centimetres of El Titan in the Parterre. Its age is disputed. One account calls it simply a century old, 22 metres tall with a crown spreading more than 12 metres. Another dates its origins to the second half of the nineteenth century, which would make it something between 127 and 176. Both figures are in circulation and neither has a planting record behind it.\n\nSo this is the least casual visit on the list, and the only tree here that requires a phone call. It also spends its life inside a security perimeter, tended by a government that lists it as one of the region's monumental trees.",
+      "verified_sources": [
+        "https://www.barcelo.com/guia-turismo/en/spain/valencia/things-to-do/las-corts-valencianes/",
+        "https://arquitectosdevalencia.es/contenido/visita-de-arquitectura-corts-valencianes/",
+        "data/registers/valencia-arboles-monumentales.json (girth 13.6m)"
+      ],
+      "access": "RESTRICTED: this is the working seat of the Valencian regional parliament (Corts Valencianes), inside the Palau de Benicarlo / Palau dels Borja. The garden and ficus are visible only on a free guided tour, offered Mondays and Fridays mornings at 10:00/11:00/12:00/13:00, must be booked in advance by phone or the Corts Valencianes website, and NOT offered in August. This is not a walk-up, casual-visit tree.",
+      "transport": "10 min walk from Angel Guimera metro station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vlc_013",
+      "name": "The Ficus of the Alameditas de Serranos",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "undated; garden itself dates to 1830 but no individual planting record for this tree survives",
+      "age_min": 60,
+      "age_max": 195,
+      "location": {
+        "address": "Alameditas de Serranos, next to the Torres de Serranos, 46003 Valencia",
+        "latitude": 39.47944,
+        "longitude": -0.37552,
+        "neighbourhood": "El Carmen, Ciutat Vella"
+      },
+      "story": "This promenade was a leather-tanning ground before it was a garden. In 1830 the Baron de Herves laid out the Alameditas de Serranos as two tree-lined walks flanking the Serranos gate, on ground previously used for curing hides, and the staircases either side of the gate followed in 1837. The fig that grows there now is the smallest of Valencia's registered monumental figs, and not by a little: 6.2 metres around, against the 9.3 to 13.8 metres of the giants in the Parterre, the Glorieta and the Palacio de Raga. It is still large enough that the city had to send crews in 2022 to cut it back where its branches had grown into the traffic.\n\nNobody knows when it went in. The garden dates from 1830, which is the only firm ceiling anyone has, and no individual record for this tree survives, which is why the age range given here is as wide as it is.\n\nThere is also a contradiction worth stating rather than smoothing over. At least one survey of the Alameditas says the promenade holds nothing of particular age or botanical interest beyond an Acacia farnesiana. The regional catalogue, meanwhile, lists this fig as a protected singular tree, a legal designation under the Valencian tree law of 2006 that requires meeting specific criteria. The register is the stronger evidence. The disagreement is real all the same.\n\nIt stands at the foot of the Torres de Serranos, the old city gate.",
+      "verified_sources": [
+        "https://agroicultura.com/general/las-alameditas-de-serranos/",
+        "data/registers/valencia-arboles-monumentales.json (girth 6.2m, listed as a protected singular tree under the regional catalogue)"
+      ],
+      "access": "Free, public riverside garden promenade beside the old Turia riverbed, at the foot of the Torres de Serranos gate",
+      "transport": "15 min walk from Alameda metro station, or any bus serving the Torres de Serranos / Puente de Serranos stop",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vlc_014",
+      "name": "The First Ficus of the Glorieta",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "undated for this specific specimen; the Glorieta's ficus were planted across the 1850s-60s and sources say each has a different estimated age",
+      "age_min": 100,
+      "age_max": 175,
+      "location": {
+        "address": "Jardin de la Glorieta, next to the Palacio de Justicia, 46002 Valencia",
+        "latitude": 39.47242,
+        "longitude": -0.36974,
+        "neighbourhood": "Ciutat Vella"
+      },
+      "story": "In 1957 the Turia flood came close to putting this tree's crown under water. The Glorieta sits low beside the Palace of Justice, and the flood that permanently changed Valencia's relationship with its river ran deep enough here that the garden's giant figs were nearly submerged. All three of them came through it.\n\nThree is the number that matters. The Glorieta holds three Ficus macrophylla, catalogued individually, and this is the first of the set, with a trunk 9.7 metres around. They are not triplets: sources on the group state plainly that each of the three carries a different estimated age, and none of them assigns a figure to this one. What is agreed is the era. The planting belongs to the 1850s and 1860s, when Valencia was filling its new public gardens with Australian figs, sometimes on purpose and sometimes not.\n\nFifty-five metres away, across the street in the Parterre, stands El Titan, which went into the ground in 1852 because a gardener took a fig sapling for one of the 47 magnolias he was supposed to be planting. The same error is recorded on this side of the road, in the same batch of work, by the same hands.\n\nSo do not treat this as a lesser copy of the more famous tree. It is the other half of a walk that takes about a minute: two separately named gardens, one origin story, and four enormous figs between them.",
+      "verified_sources": [
+        "https://valenciasecreta.com/ficus-glorieta-parterre/",
+        "https://www.valenciabonita.es/2018/01/15/la-sombra-de-cuatro-grandes-ficus-de-valencia-los-historicos-ficus-del-parterre-y-la-glorieta/",
+        "data/registers/valencia-arboles-monumentales.json (girth 9.7m)"
+      ],
+      "access": "Free, public garden bordering the Palace of Justice",
+      "transport": "5 min walk from Xativa / Estacio del Nord (metro/train), same stop as El Titan (vlc_001)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vlc_015",
+      "name": "The Caucasian Elm of the Botanic Garden",
+      "species": "Caucasian Elm (Zelkova carpinifolia)",
+      "age_estimate": "undated, no planting record found",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Jardi Botanic de la Universitat de Valencia, Carrer Quart 80, 46008 Valencia",
+        "latitude": 39.47592,
+        "longitude": -0.38621,
+        "neighbourhood": "Ciutat Vella"
+      },
+      "story": "At roughly 33 metres, this is one of the tallest things growing in Valencia's botanic garden, and it belongs to a species most visitors have never heard of. Zelkova carpinifolia comes from the forests of the southern Caucasus and northern Iran. It is an elm relative that grows a short trunk and then breaks into a dense sheaf of near-vertical branches, so the crown reads more like a bundle held upright than a spreading canopy.\n\nIts trunk measures 5.3 metres around at chest height. That is the figure in the regional register, and an independent field measurement taken in April 2014 put it at 5.27 metres, which is about as close as two separate people with tape measures ever get.\n\nIts age is not recorded anywhere. The garden moved to this site, the old Huerto de Tramoieres outside the medieval wall, in 1802, which sets a ceiling and nothing more. Beyond the register entry and that one measurement, this tree has almost no paper trail: no newspaper feature, no garden monograph, no planting note. For a tree this size that is unusual, and it is better said out loud than filled in with a plausible number.\n\nIt shares the garden with the Kashmir Cypress, and one modest entrance fee covers both. In autumn the whole crown turns orange-brown, which is the species' best-known feature after its shape.",
+      "verified_sources": [
+        "data/registers/valencia-arboles-monumentales.json (girth 5.3m, listed as a protected singular tree)",
+        "https://www.monumentaltrees.com/es/esp/comunidadvalenciana/valencia/8809_jardinbotanicodelauniversidaddevalencia/17363/ (measurement cross-check only, per project rules never used as sole or primary source: independently recorded girth 5.27m at 1.30m height and height 33.10m, dated April 2014, an almost exact match to the register figure)"
+      ],
+      "access": "Paid entry to the Jardi Botanic (small fee), same garden as vlc_010",
+      "transport": "10 min walk from Angel Guimera metro station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "vlc_016",
+      "name": "The Palm of the Palacio de Pineda",
+      "species": "Canary Island Date Palm (Phoenix canariensis)",
+      "age_estimate": "undated; palace itself built 1728-1731 but no record found of when the palm was planted",
+      "age_min": 80,
+      "age_max": 250,
+      "location": {
+        "address": "Palacio de Pineda, Plaza del Carmen, 46003 Valencia",
+        "latitude": 39.47876,
+        "longitude": -0.37888,
+        "neighbourhood": "El Carmen, Ciutat Vella"
+      },
+      "story": "You can order a coffee under this one. The Palacio de Pineda was built between 1728 and 1731 for Francisco Salvador Pineda, and its walled rear courtyard, laid out as a private garden, now works as the terrace of a cafe inside a public university campus. A single Canary Island Date Palm stands at the centre of it, listed in the regional catalogue of monumental and singular trees, with tables arranged around its base.\n\nHow old it is, nobody knows. The palace has a construction date to the year and the palm has nothing at all. No planting record turned up in any source, and the catalogue entry confirms only that it is large enough and notable enough to be protected. Palms are difficult to age in any case: there are no growth rings to count, and the trunk reaches close to its final thickness early and then mostly just gets taller. Anything from eighty years to two and a half centuries is defensible here, which is a long way of saying the number is unknown.\n\nThe building has housed the Valencia seat of the UIMP, a Spanish public university, since the early 1990s, and that is the only reason the courtyard is open at all. For the two and a half centuries before that it was somebody's private garden, and this palm was standing in it while the door stayed shut.",
+      "verified_sources": [
+        "https://www.valencia-cityguide.com/es/atracciones-turisticas/monumentos/palacio-de-pineda.html",
+        "https://www.monumentalnet.org/monumento.php?r=V-250001400-VAL-PAL-PIN&seo=palacio-de-pineda-valencia-valencia-comunidad-valenciana",
+        "data/registers/valencia-arboles-monumentales.json (listed as part of the regional Catalogo de Arboles Monumentales y Singulares)"
+      ],
+      "access": "Free entry to the courtyard, which now operates as a public cafe terrace (Palau Pineda Cafe i Menjars) inside the building that houses the UIMP (Universidad Internacional Menendez Pelayo) Valencia campus. Publicly walk-in accessible during cafe hours, not a ticketed monument visit.",
+      "transport": "10 min walk from Angel Guimera metro station",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
