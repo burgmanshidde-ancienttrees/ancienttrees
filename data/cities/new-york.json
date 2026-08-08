@@ -3,9 +3,9 @@
   "country": "United States",
   "status": "needs_curation",
   "intro": "New York City runs a government registry for this: the Parks Department's Great Trees of New York City list, started in 1985 and expanded in 2024 after a nomination drive drew more than 270 submissions. Every tree carries that designation. The five boroughs each hold at least one, deliberately: a courthouse elm and a botanical garden's tallest oak get the same paragraph as a tulip tree growing wild in a park tied to the Dutch colony's earliest land deals. Some are colonial-era survivors; one was planted so a park would have something to be famous for.",
-  "meta_description": "NYC runs an official Great Trees registry. Meet a 300-year-old Greenwich Village elm, a wild tulip tree older than the city itself, and eleven more.",
+  "meta_description": "NYC runs an official Great Trees registry. Meet a 300-year-old Greenwich Village elm, a wild tulip tree older than the city itself, and fourteen more.",
   "question_answer": "New York City's oldest tree is very likely the Queens Giant, a tulip tree in Alley Pond Park estimated between 350 and 450 years old by different measures, old enough to predate the Dutch colony of New Amsterdam entirely. It stands in a wooded section of the park in eastern Queens, reachable on foot from the Douglaston Long Island Rail Road station.",
-  "question_meta": "NYC's oldest tree is likely the Queens Giant, a 350-450 year old tulip tree in Alley Pond Park. Its story, exact location, and twelve more Great Trees.",
+  "question_meta": "NYC's oldest tree is likely the Queens Giant, a 350-450 year old tulip tree in Alley Pond Park. Its story, exact location, and fifteen more Great Trees.",
   "question_context": "The Queens Giant's claim to being New York City's oldest living thing rests on measurement rather than legend. At 133.8 feet, it is the tallest carefully measured tree in the five boroughs, and tulip trees of that height in undisturbed forest are reliably centuries old; the New York City Parks Department states it is at least 368 years old, while some arborists place the range as wide as 350 to 450. Either figure puts its germination before the 1664 English takeover of New Amsterdam, and some local accounts connect trees in this stretch of Alley Pond Park to 17th century land dealings between the Dutch West India Company and the Matinecock people who lived here first, though no source ties this specific trunk to a documented transaction. What is not in question is that it has spent its entire life essentially unmanaged, growing in what is now protected forest rather than a planted garden, which is rare enough in New York that the Parks Department calls it possibly the oldest living organism in the metropolitan area. Getting there: Douglaston station on the LIRR Port Washington line, then a short walk into Alley Pond Park's wooded trails.",
   "faq": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are New York City's Great Trees free to see?",
-      "a": "Twelve of the thirteen stand in free public parks or cemeteries. The New York Botanical Garden charges general admission to its grounds, but the Thain Family Forest tree is within that same free-to-walk woodland once inside."
+      "a": "Twelve of the sixteen stand in free public parks or cemeteries. The New York Botanical Garden charges general admission to its grounds, but the Thain Family Forest tree is within that same free-to-walk woodland once inside."
     },
     {
       "q": "How does a tree become an official Great Tree of New York City?",
@@ -462,6 +462,108 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "nyc_014",
+      "name": "The Second Camperdown Elm of Green-Wood",
+      "species": "Camperdown Elm (Ulmus glabra 'Camperdownii')",
+      "age_estimate": "believed 19th or early 20th century planting, exact date unconfirmed",
+      "age_min": 100,
+      "age_max": 160,
+      "location": {
+        "address": "Green-Wood Cemetery, at the intersection of Garden Path and Pink Avenue, 500 25th Street, Brooklyn, NY 11232",
+        "latitude": 40.6536,
+        "longitude": -73.9913,
+        "neighbourhood": "Greenwood Heights, Brooklyn"
+      },
+      "story": "Brooklyn has two Camperdown elms, and genetically they are the same tree. Every Camperdown elm alive is a graft from one contorted branch found on a Scottish estate near Dundee in the 1830s, a mutation that cannot be grown from seed, so each specimen is a cutting of a cutting of that single original. The famous one stands behind the Boathouse in Prospect Park, planted in 1872. This one grows two miles south, inside Green-Wood, where Garden Path meets Pink Avenue.\n\nNobody wrote down when it went in. New York's Great Trees register named it in 1985 and recorded the species and the corner, not a date, and no later source has supplied one. What the sources do agree on is the order: this is the younger of the two, and old enough to be counted among Green-Wood's landmark trees. A precise year would have to be invented, so there is none here.\n\nThe shape carries it anyway. Camperdowns arch their limbs downward and tangle them into one another instead of reaching up, which makes a low dome you duck into rather than stand under, dark inside even at midday. Victorian day-trippers came out to this cemetery in numbers that helped make the public case for Brooklyn's parks, and they came for exactly this: a landscape with curiosities in it. Green-Wood is free and open daily, and the R train stops at the gate.",
+      "verified_sources": [
+        "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/12",
+        "https://yourbrooklynguide.com/green-wood-cemetery/"
+      ],
+      "access": "Free, cemetery open daily (check seasonal hours)",
+      "transport": "25th Street (Metro R), at the cemetery gate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "nyc_015",
+      "name": "The Kansas Hawthorn of the Lily Pool",
+      "species": "Kansas Hawthorn (Crataegus coccinioides)",
+      "age_estimate": "about 114 years (planted 1912)",
+      "age_min": 112,
+      "age_max": 116,
+      "location": {
+        "address": "Brooklyn Botanic Garden, across from the Lily Pool, 990 Washington Avenue, Brooklyn, NY 11225",
+        "latitude": 40.6694,
+        "longitude": -73.9629,
+        "neighbourhood": "Prospect Heights, Brooklyn"
+      },
+      "story": "The largest Kansas hawthorn in the United States grows in Brooklyn, and the species normally gives up at around twenty feet. This one reached 35, on a 20 inch trunk under a 28 foot crown, and in 1985 the American Forestry Association named it a national champion. New York State has carried it on its Big Tree Register since 2009 as one of only two champion trees in the five boroughs. None of that was the plan. Rochester's parks department sent it down as a gift in 1912, and it was planted across from the Lily Pool at the Brooklyn Botanic Garden, which had opened to the public only a year or so before. It has stood there through everything the garden has become since.\n\nCrataegus coccinioides is a hawthorn of the American Midwest, a thorny, unfashionable small tree that most visitors walk past for eleven months of the year. October is the exception, when the leaves go scarlet and orange and the branches hang with dark crimson haws.\n\nEntry to the Garden is paid. The pin here sits at the Washington Avenue gate rather than at the tree, because no survey has recorded its coordinates: walk to the Lily Pool by the conservatory and look for the small tree carrying an unreasonable amount of fruit.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "fruit",
+        "label": "October, when the leaves turn scarlet and the branches hang with dark crimson haws"
+      },
+      "verified_sources": [
+        "https://web.archive.org/web/20220717115552/https://www.nycgovparks.org/facilities/great-trees?id=7",
+        "https://greatesttreesofnyc.tumblr.com/post/123825669615/kansas-hawthorn-lily-pond-brooklyn-botanic-garden"
+      ],
+      "access": "Paid entry to Brooklyn Botanic Garden",
+      "transport": "Franklin Ave-Botanic Garden (Metro 2/3/4/5) or Prospect Park (B/Q/S), 5-10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nyc_016",
+      "name": "The Caucasian Wingnut of the Rock Garden",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "about 104 years (received 1922)",
+      "age_min": 102,
+      "age_max": 106,
+      "location": {
+        "address": "Brooklyn Botanic Garden, Flatbush Avenue side, just north of the Rock Garden, 990 Washington Avenue, Brooklyn, NY 11225",
+        "latitude": 40.6694,
+        "longitude": -73.9629,
+        "neighbourhood": "Prospect Heights, Brooklyn"
+      },
+      "story": "This tree came from Rome in 1922, and one of its limbs now rests on a crutch. The Caucasian wingnut on the Flatbush Avenue side of the Brooklyn Botanic Garden, just north of the Rock Garden, has grown heavy enough that the garden props and cables its lower branches to stop them tearing out of the trunk. That trunk is the argument: the Garden calls it nearly nine feet through, the city's Great Trees register measures ten, and the two figures have never been reconciled. It stands about 60 feet tall and close to as wide, with roots surfacing in long ridged patterns that run out from the base across the ground.\n\nPterocarya fraxinifolia comes from the wet forests between the Black Sea and northern Iran and reached European gardens in 1782, which is how an Italian nursery came to have one to send. The name is literal. In midsummer the tree hangs chains of small winged nutlets a foot and a half long from its branch tips, green ropes that stay up, browning, into autumn, and nothing else in the garden does anything like it. A clone of it went in near the Herb Garden in 1978, and the difference in size between the two makes the case for coming to see this one.\n\nEntry to the Garden is paid, and the pin sits at the main gate: the tree is a walk away, along the Flatbush Avenue boundary.",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "kind": "fruit",
+        "label": "July and August, when foot-and-a-half chains of winged nutlets hang from every branch tip"
+      },
+      "verified_sources": [
+        "https://web.archive.org/web/2022/https://www.nycgovparks.org/parks/brooklyn-botanic-garden/facilities/great-trees",
+        "https://www.bbg.org/article/big_city_big_trees_caucasian_wingnut"
+      ],
+      "access": "Paid entry to Brooklyn Botanic Garden",
+      "transport": "Franklin Ave-Botanic Garden (Metro 2/3/4/5) or Prospect Park (B/Q/S), 5-10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
     }
   ]
 }
