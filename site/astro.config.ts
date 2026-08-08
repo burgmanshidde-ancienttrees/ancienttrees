@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
-import sitemap from "@astrojs/sitemap";
 import redirectStubs from "./src/lib/redirect-stubs-integration.ts";
+import sitemap from "./src/lib/sitemap-integration.ts";
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,5 +23,10 @@ export default defineConfig({
   // not through Astro's own `redirects` config: that config silently
   // collapses "/padova" and "/padova/" into one file, dropping the
   // trailing-slash form. See redirect-map.ts for the full story.
-  integrations: [sitemap(), redirectStubs()],
+  //
+  // sitemap is a hand-rolled integration too, not @astrojs/sitemap: that
+  // plugin always emits sitemap-index.xml + sitemap-0.xml, but this site
+  // has always served a flat /sitemap.xml (Search Console and robots.txt
+  // are both pointed at that exact name). See sitemap-integration.ts.
+  integrations: [redirectStubs(), sitemap()],
 });
