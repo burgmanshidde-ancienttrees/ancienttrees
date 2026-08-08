@@ -127,6 +127,14 @@ export function buildRedirectStubs(): RedirectStub[] {
     canonical: `${BASE_URL}/species`,
     title: "Moved: Species",
   });
+  // /plus was a sibling fakedoor page, closed 2026-07-29 a day after going
+  // public; stays resolvable per hard rule 3. Mirrors build_site.py:4499.
+  stubs.push({
+    outputPath: "plus.html",
+    targetRelative: "./app",
+    canonical: `${BASE_URL}/app`,
+    title: "Moved: The Ancient Trees app",
+  });
 
   for (const [citySlug, oldSlug, treeId] of RENAMED_TREE_SLUGS) {
     const slugs = treeSlugsForCity(citySlug);

@@ -1,0 +1,118 @@
+---
+// Contribute page. Ported from build_contribute_page(), build_site.py:4816-4927.
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { cityIsRenderable } from "../lib/trees";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { fitTitle } from "../lib/title";
+import { submitLink } from "../lib/tree-copy";
+import { byCityListOrder } from "../lib/city-order";
+import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+
+const canonical = `${BASE_URL}/contribute`;
+const title = fitTitle(["Become Your City's Tree Guide", "Map Your City's Ancient Trees"], canonical);
+const description =
+  "Know the remarkable old trees of your city? Put them on the map. Every submission is verified against independent sources before it goes live.";
+const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["Suggest a tree", null]];
+
+const allCities = (await getCollection("cities")).filter(cityIsRenderable);
+const published = byCityListOrder(allCities.map((c) => ({ slug: c.id, city: c.data.city })));
+
+const graph = [...SITE_SCHEMA, breadcrumbSchema(crumbItems, canonical)];
+const headExtra = ldScript(graph);
+---
+<Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
+<main class="content-page">
+  <Breadcrumbs items={crumbItems} />
+  <h1>Become your city's tree guide</h1>
+  <p class="answer-first">This map is missing far more cities than it has, and the trees that matter most are the ones locals already know about. If you know your city's remarkable old trees, you can put them on the map and be credited for it.</p>
+  <div class="prose-block">
+    <p>Research from a distance finds the famous trees. It misses the one on the corner that everyone in the neighbourhood walks past, the one with the story attached, the one that is only obvious if you live there. That gap is why this page exists.</p>
+    <p>Everything sent in gets checked against independent sources, and the location gets verified, because a wrong pin is worse than a missing tree. Confirmed trees get their own page with your credit on the city. What cannot be confirmed waits instead of going live half-true. To be straight with you about what you get: your name on the city you mapped, not a login or a profile. Those may come later.</p>
+  </div>
+
+  <form id="suggest" class="suggest-form" autocomplete="off">
+    <label>What are you sending?
+      <select id="sg-kind">
+        <option value="tree">One remarkable tree</option>
+        <option value="city">My city's trees</option>
+        <option value="correction">A correction to something on the site</option>
+        <option value="privacy">A privacy request (remove what I sent in)</option>
+      </select>
+    </label>
+    <label>Which city?
+      <input type="text" id="sg-city" required placeholder="Utrecht">
+    </label>
+    <label>The tree, or trees
+      <input type="text" id="sg-tree" placeholder="The plane on the church square">
+    </label>
+    <label>Where does it stand? <span class="sg-hint">A street, a park, or a Google Maps link. The single most useful thing you can give us.</span>
+      <input type="text" id="sg-where" placeholder="Domplein, next to the cathedral entrance">
+    </label>
+    <label>Why is it remarkable?
+      <textarea id="sg-why" rows="3" placeholder="Old, huge, a story attached, or simply the tree everyone knows"></textarea>
+    </label>
+    <label>Your name, for the credit <span class="sg-hint">Optional. Shown on the city page when your tree goes live.</span>
+      <input type="text" id="sg-name" placeholder="First name is fine">
+    </label>
+    <button type="submit" class="go-btn">Send it in</button>
+    <p class="sg-note" id="sg-note"></p>
+  </form>
+
+  <h2>What helps most</h2>
+  <ul class="link-list">
+    <li><strong>Where exactly it stands.</strong> A street corner, a park entrance, or a dropped pin from Google Maps. The single most useful thing you can give us.</li>
+    <li><strong>Why it is remarkable.</strong> Old, enormous, strange, or tied to a local story.</li>
+    <li><strong>How you know.</strong> A link, a book, a plaque, or just that you grew up next to it.</li>
+    <li><strong>A photo you took yourself,</strong> if you have one. We can only publish photos that are yours to share or openly licensed.</li>
+  </ul>
+
+  <h2>Or fix something</h2>
+  <div class="prose-block">
+    <p>Spotted a wrong location, an age that looks off, or a tree that has fallen since we wrote about it? Those corrections are just as valuable. <a href={submitLink("correction")}>Send a correction</a> and say what is wrong.</p>
+  </div>
+  <p class="suggest">Cities on the map so far: {published.map((p, i) => (
+    <Fragment>{i > 0 && <Fragment set:html=" &middot; " />}<a href={`/${p.slug}`}>{p.city}</a></Fragment>
+  ))}</p>
+</main>
+<Fragment slot="scripts" set:html={`
+<script>
+(function() {
+  var f = document.getElementById('suggest'), note = document.getElementById('sg-note');
+  if (!f) return;
+  var params = new URLSearchParams(location.search);
+  var kind = params.get('kind');
+  var map = {tree: 'tree', city: 'city', home: 'city', correction: 'correction', privacy: 'privacy'};
+  if (kind && map[kind]) { document.getElementById('sg-kind').value = map[kind]; }
+  f.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var city = document.getElementById('sg-city').value.trim();
+    if (!city) return;
+    note.textContent = 'Sending...';
+    at.track('suggestion-submit');
+    fetch('${SUPABASE_URL}/rest/v1/submissions', {
+      method: 'POST',
+      headers: {'apikey': '${SUPABASE_KEY}', 'Content-Type': 'application/json', 'Prefer': 'return=minimal'},
+      body: JSON.stringify({
+        kind: document.getElementById('sg-kind').value,
+        city: city,
+        tree: document.getElementById('sg-tree').value.trim(),
+        location_hint: document.getElementById('sg-where').value.trim(),
+        why: document.getElementById('sg-why').value.trim(),
+        name: document.getElementById('sg-name').value.trim(),
+        page: document.referrer || null
+      })
+    }).then(function(r) {
+      if (r.ok) {
+        f.hidden = true;
+        note.textContent = 'Thank you. Everything sent in is verified against independent sources; confirmed trees go live with your credit.';
+      } else {
+        note.textContent = 'That did not go through. Try again in a moment.';
+      }
+    }).catch(function() { note.textContent = 'No connection. Try again in a moment.'; });
+  });
+})();
+</script>
+`} />
+</Base>

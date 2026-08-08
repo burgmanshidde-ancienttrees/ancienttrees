@@ -1,0 +1,29 @@
+---
+// Privacy page. Ported from build_privacy_page(), build_site.py:4382-4412.
+import Base from "../layouts/Base.astro";
+import { BASE_URL } from "../lib/schema";
+
+const canonical = `${BASE_URL}/privacy`;
+---
+<Base title="Privacy" description="What data Ancient Trees handles." canonical={canonical}>
+<main class="content-page">
+  <h1>Privacy</h1>
+  <div class="prose-block">
+    <p>Ancient Trees is a small independent project. This page describes what data the site handles.</p>
+    <h2>Browsing</h2>
+    <p>Every page works without an account. The site uses a cookieless visit counter (Cloudflare Web Analytics) that records aggregate page views only; it sets no cookies and cannot identify you. Map tiles load from OpenFreeMap and photos from Wikimedia Commons; those requests reach their servers the way any image on the web does.</p>
+    <h2>With an account (once sign-in opens)</h2>
+    <p>Signing in stores two things: your email address and your tree collection. The address is used for sign-in links and account service, nothing else. This data is stored with Supabase, on servers in the EU (Frankfurt).</p>
+    <p>The site also counts, anonymously, which buttons get used (for example how often a directions button is clicked). These counts contain no names, no addresses, no identifiers and no cookies; they cannot be traced to anyone.</p>
+    <p>Two forms store what you type into them, in the same EU database: the app waitlist keeps your email address, used to email you when the app is ready; a tree suggestion keeps what you wrote, including the name you optionally leave for credit. Want either removed? Use the contact address below.</p>
+    <h2>Contact</h2>
+    <p>Questions about any of this, or want something removed? <a href="/contribute?kind=privacy">Send a privacy request</a> and say what you want removed. It reaches the people who run this site, and nothing else is needed from you.</p>
+
+    <h2>Deleting</h2>
+    <p>Your account page has a delete option. It removes your email address and your collection.</p>
+    <h2>Changes</h2>
+    <p>When this page changes, the date below changes with it.</p>
+    <p><em>Last updated: 28 July 2026</em></p>
+  </div>
+</main>
+</Base>
