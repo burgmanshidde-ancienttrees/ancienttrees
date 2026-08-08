@@ -84,6 +84,24 @@ invalshoek kan ik dezelfde telling voor Nederland of voor Amsterdam maken.
 Hidde
 ancienttrees.app
 
+## The local angle, which lands more often than any of the above
+
+Hidde's own read, 2026-08-08, and it was right: a continental statistic with no
+local face is a slow-news-day gamble. What a city desk or regional paper runs
+is its own oldest tree. So the working order inverts: the local story is the
+lead, the immigrants story is what you hand a desk that already answered.
+
+`python3 scripts/press_numbers.py --city <name>` prints the fact sheet for any
+published city: its oldest tree with page link and story opening, how many
+trees carry a reusable photo, the seasonal hook if one exists, and the local
+version of the immigrants count. Write the pitch by hand from that sheet, per
+outlet, in the local language where you can. Never a template: the sheet is
+facts, the mail is yours.
+
+Timing note: the seasonal hooks (ginkgos turning gold, autumn colour) become
+pitchable in October. A local pitch sent in late September lands in exactly
+the week editors plan those pages.
+
 ## What to have ready when someone answers
 
 - **The spreadsheet.** `python3 scripts/press_numbers.py --csv` writes

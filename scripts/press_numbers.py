@@ -89,11 +89,65 @@ def base_name(species):
     return species.split("(")[0].strip()
 
 
+def city_sheet(cities, name):
+    """A localized press fact sheet: the raw material for pitching ONE city's
+    desk its own story, which lands far more often than a continental statistic.
+
+    Hidde, 2026-08-08, on the immigrants angle: "ik kan me niet voorstellen dat
+    iemand iets met dit press verhaal gaat doen". He was right about the lead:
+    a feature with no local face is a slow-news-day gamble. What local desks
+    run is their own oldest tree, so every pitch to a city desk starts from
+    this sheet instead. Facts only, no prose: the pitch stays hand-written per
+    outlet, per the never-mass-send rule in OUTREACH.md.
+    """
+    key = name.lower()
+    match = next((c for c in cities
+                  if c["city"].lower() == key or c["_slug"] == key), None)
+    if not match:
+        print(f"no published city matches {name!r}")
+        return 1
+    trees = match["trees"]
+    slug = match["_slug"]
+    print(f"PRESS FACT SHEET: {match['city']}, {match['country']}")
+    print(f"  page: https://ancienttrees.app/{slug}   trees: {len(trees)}")
+    dated = sorted((t for t in trees if t.get("age_min")),
+                   key=lambda t: -(t.get("age_min") or 0))
+    if dated:
+        t = dated[0]
+        loc = t.get("location", {})
+        print(f"\n  OLDEST: {t['name']}, {t.get('age_estimate', '?')}, "
+              f"{t['species']}")
+        print(f"    where: {loc.get('address', '')[:70]}")
+        print(f"    page:  https://ancienttrees.app/{slug}/{tree_slug(t['name'])}")
+        print(f"    story opens: {t.get('story', '')[:180]}...")
+    photos = [t for t in trees if (t.get("photo") or {}).get("url")]
+    print(f"\n  IMAGES: {len(photos)} of {len(trees)} trees have an "
+          f"openly licensed photo (licence + credit on each tree page)")
+    seasonal = [(t, t["best_time"]) for t in trees if t.get("best_time")]
+    for t, bt in seasonal[:3]:
+        months = ",".join(str(m) for m in bt.get("months", []))
+        print(f"  SEASONAL HOOK: {t['name']}: {bt.get('label', '')} "
+              f"(months {months})")
+    nn_sp = [t for t in trees
+             if t["species"].split("(")[0].strip() in NON_NATIVE]
+    if nn_sp:
+        print(f"  LOCAL IMMIGRANTS ANGLE: {len(nn_sp)} of {len(trees)} are "
+              f"non-native species")
+    print(f"\n  Every figure above regenerates from the published data; the "
+          f"pitch itself is written by hand per outlet, never a template.")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--csv", action="store_true",
                     help="also write press-trees.csv for a journalist")
+    ap.add_argument("--city", metavar="NAME",
+                    help="print a localized press fact sheet for one city")
     args = ap.parse_args()
+
+    if args.city:
+        return city_sheet(load(), args.city)
 
     cities = load()
     trees = [(c, t) for c in cities for t in c["trees"]]
