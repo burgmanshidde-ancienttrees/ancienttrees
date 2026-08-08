@@ -1,0 +1,190 @@
+[
+  {
+    "id": "par_019",
+    "name": "The Sequoia of the Champs-Élysées Gardens",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "roughly 175 years",
+    "age_min": 165,
+    "age_max": 180,
+    "location": {
+      "address": "10 Avenue des Champs-Élysées (near allée Marcel Proust), 75008 Paris",
+      "latitude": 48.86697545795968,
+      "longitude": 2.3195152169860838,
+      "neighbourhood": "Jardins des Champs-Élysées"
+    },
+    "verified_sources": [
+      "data/registers/paris-arbres-remarquables.json (register_id 302514)",
+      "https://onvqf.over-blog.com/2013/11/s%C3%A9quoia-g%C3%A9ant-all%C3%A9e-marcel-proust-paris-8-%C3%A9me-paris-75-a.html"
+    ],
+    "access": "Free, public garden (Jardins des Champs-Élysées), open daily",
+    "transport": "Champs-Élysées - Clemenceau (M1, M13), about 5 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (girth 360cm/3.6m, height 19m, register_id 302514) at Jardin des Champs-Elysees, 10 Avenue des Champs-Elysees, arr. 8. Independent source (onvqf blog, 2013/2015) places the same giant sequoia on allee Marcel Proust near Place de la Concorde, within the same garden complex (register address vs blog path name are both inside the Jardins des Champs-Elysees, not a location conflict, just different granularity). Blog says planted 1850, one of the FIRST giant sequoias planted in Paris (species only introduced to Europe in the 1850s), and that its 'remarkable tree' classification is for AGE not size, since it is modest next to California specimens like General Sherman (80m tall, 30m diameter, mentioned for contrast). Age given as ~165yrs as of the ~2015 article, i.e. roughly 176 now (2026); one other search snippet said 'about 140 years old' without a citable source, so flag the age range generously (165-180) rather than pick a winner. DISCREPANCY to flag: blog says trunk diameter 'a little over 3 metres', which is inconsistent with the register's 360cm GIRTH (=~1.15m diameter); likely the blog author meant circumference, but do not silently resolve, note both figures for the writer. Article also notes the tree 'begins to show signs of weakness' on its southeast side (facing Place de la Concorde), worth a light caveat, not a vitality alarm. A nice hook: one of the first sequoias planted in the city, from a species imported from California only a few years earlier."
+  },
+  {
+    "id": "par_020",
+    "name": "The Twin Planes of Avenue Winston Churchill",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "likely over a century, exact planting date not recorded",
+    "age_min": 120,
+    "age_max": 220,
+    "location": {
+      "address": "7 Avenue Winston Churchill, 75008 Paris",
+      "latitude": 48.86519685787365,
+      "longitude": 2.3133414708850775,
+      "neighbourhood": "Jardins des Champs-Élysées"
+    },
+    "verified_sources": [
+      "data/registers/paris-arbres-remarquables.json (register_ids 307582, 302598)",
+      "WebSearch summary of Paris tree sources describing a Platanus x hispanica in Jardins des Champs-Elysees (French-style section), 28m tall, 525cm girth, matching this pair closely"
+    ],
+    "access": "Free, public garden (Jardins des Champs-Élysées), open daily",
+    "transport": "Champs-Élysées - Clemenceau (M1, M13), about 4 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "TWIN FOLD: two register entries standing about 11m apart at the same address (7 Avenue Winston Churchill, Jardin des Champs-Elysees), register_id 307582 (girth 505cm, height 28m) and register_id 302598 (girth 555cm, height 30m). A visitor experiences these as one pair of huge street-facing planes, so folded into one entry per the twin rule; both register ids kept here for the record. 555cm girth is exceptionally large for an urban London Plane. Independent corroboration is soft: a general search result describes 'a plane tree in Jardins des Champs-Elysees, French-style section, 28m high, 525cm circumference' which sits between our two trunks' figures and is very likely one of this same pair, but I could not pin the exact source URL for that specific figure (it came from a synthesized WebSearch answer citing paris.fr/pariszigzag-type sources for the garden generally) so treat as corroborating rather than a hard second citation; flag for a future pass to find the precise primary source (e.g. the capgeo.sig.paris.fr PDF fact sheets for register_ids 307582/302598). No planting date found anywhere; age is an inference from girth only, kept broad and flagged."
+  },
+  {
+    "id": "par_021",
+    "name": "The Magnolia of Square d'Ajaccio",
+    "species": "Southern Magnolia (Magnolia grandiflora)",
+    "age_estimate": "not documented; the square dates to the Alphand era (1860s-1880s)",
+    "age_min": 60,
+    "age_max": 160,
+    "location": {
+      "address": "127 Rue de Grenelle, 75007 Paris",
+      "latitude": 48.857417308456604,
+      "longitude": 2.3147251173459473,
+      "neighbourhood": "Square d'Ajaccio"
+    },
+    "verified_sources": [
+      "data/registers/paris-arbres-remarquables.json (register_id 109016)",
+      "https://www.unjourdeplusaparis.com/en/paris-vert/square-dajaccio"
+    ],
+    "access": "Free, public square, open daily",
+    "transport": "Invalides (M8, M13, RER C), about 8 min walk; Varenne (M13) about 5 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register: girth 163cm, height 12m, register_id 109016, Square d'Ajaccio (formerly Square des Invalides), designed by Adolphe Alphand (same designer as Square Santiago-du-Chili). Independent source (unjourdeplusaparis.com travel blog) independently gives the exact same 163cm circumference for the square's magnolia, calling it fragrant, flowering each spring. No planting date anywhere; flag age as unconfirmed, note the square's Alphand-era design context (created 19th century) as the only chronological anchor. Shares the tiny square with the plane tree below (par_022), about 45m apart, a two-stop garden."
+  },
+  {
+    "id": "par_022",
+    "name": "The Plane of Square d'Ajaccio",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "likely over a century, since the square was laid out in the 1860s-1880s",
+    "age_min": 100,
+    "age_max": 160,
+    "location": {
+      "address": "127 Rue de Grenelle, 75007 Paris",
+      "latitude": 48.85777577334161,
+      "longitude": 2.314530473104158,
+      "neighbourhood": "Square d'Ajaccio"
+    },
+    "verified_sources": [
+      "data/registers/paris-arbres-remarquables.json (register_id 109021)",
+      "https://www.unjourdeplusaparis.com/en/paris-vert/square-dajaccio"
+    ],
+    "access": "Free, public square, open daily",
+    "transport": "Invalides (M8, M13, RER C), about 8 min walk; Varenne (M13) about 5 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register: girth 490cm, height 25m, register_id 109021, Square d'Ajaccio. Independent source gives the exact same 490cm circumference, describing the square's 'century-old' plane trees (that source calls them Oriental planes generically, but the register specifically types this designated one as Platanus x hispanica / London Plane; keep the register's typing as authoritative per project convention, note the discrepancy). No planting date found; age inferred only from girth and the square's Alphand-era origin, kept broad and flagged. Same square as par_021 (magnolia), about 45m apart."
+  },
+  {
+    "id": "par_023",
+    "name": "The Turkish Hazel of Square du Temple",
+    "species": "Turkish Hazel (Corylus colurna)",
+    "age_estimate": "not documented; comparable Corylus colurna elsewhere in Paris date to the 1860s-1880s",
+    "age_min": 80,
+    "age_max": 150,
+    "location": {
+      "address": "50 Rue de Bretagne, 75003 Paris",
+      "latitude": 48.86483749007911,
+      "longitude": 2.3606255359803257,
+      "neighbourhood": "Square du Temple - Elie-Wiesel"
+    },
+    "verified_sources": [
+      "data/registers/paris-arbres-remarquables.json (register_id 116886)",
+      "https://fr.wikipedia.org/wiki/Square_du_Temple_-_Elie-Wiesel",
+      "https://paris.vivarbre.fr/noisetier"
+    ],
+    "access": "Free, public square, open daily (closes at night per standard Paris square hours)",
+    "transport": "Temple (M3), about 3 min walk; République (M3/5/8/9/11), about 6 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register: girth 235cm, height 16m, register_id 116886, no planting date. Square du Temple - Elie-Wiesel (3rd arr.) holds 71 trees and 191 plant varieties including exotic species (ginkgo, Japanese pagoda tree, Caucasian wingnut, golden rain tree, Chinese quince), confirmed by Wikipedia and vivarbre.fr's Paris hazel-tree survey. One source notes the square actually holds two fine Corylus colurna specimens, but the register lists only this one at these coordinates; the second (if it exists) is not in our register data and is not delivered here. No independent source gives a planting date or age; estimate is a rough inference from girth against two other Paris Corylus colurna of similar or larger girth that ARE dated (Square Maurice Gardette, 265cm/1882 - see par_024; Square Jean-XXIII, 230cm, undated but flagged elsewhere as possibly Paris's oldest). Keep the age range wide and flagged; do not repeat any 'oldest in Paris' superlative here, that claim belongs to a different, currently-inaccessible tree (see leads)."
+  },
+  {
+    "id": "par_024",
+    "name": "The Old Hazel of Square Maurice-Gardette",
+    "species": "Turkish Hazel (Corylus colurna)",
+    "age_estimate": "roughly 145 years",
+    "age_min": 140,
+    "age_max": 148,
+    "location": {
+      "address": "8 Rue Général Blaise, 75011 Paris",
+      "latitude": 48.86185385251956,
+      "longitude": 2.379087768327219,
+      "neighbourhood": "Square Maurice-Gardette"
+    },
+    "verified_sources": [
+      "data/registers/paris-arbres-remarquables.json (register_id 124914, planted 1882)",
+      "https://france3-regions.franceinfo.fr/paris-ile-de-france/paris/j-ai-145-ans-arretez-de-me-casser-les-noisettes-et-laissez-moi-vieillir-tranquillement-2981081.html",
+      "https://fr.wikipedia.org/wiki/Square_Maurice-Gardette"
+    ],
+    "access": "Free, public square, open daily",
+    "transport": "Saint-Ambroise (M9), about 5 min walk; Voltaire (M9), about 8 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register: girth 265cm, height 20m, planted 1882, register_id 124914. France3 published a dedicated regional news piece on THIS tree, headlined in the tree's own voice: \"I'm 145, stop cracking my hazelnuts and let me age in peace\" (france3-regions, undated but recent), giving a planting year of 1879 (a 3-year discrepancy vs the register's 1882; deliver both, do not silently pick one) and height 21m (register says 20m, close enough to be rounding). Distinctive bark that exfoliates/peels in strips like a birch, once a year. Neighboured by an olive tree, a ginkgo and a horse chestnut in the same square, none of which crowd it. A France3 headline elsewhere calls a DIFFERENT Paris hazel (Square Jean-XXIII's, currently inaccessible, see leads) 'the oldest in Paris' -- two France3 pieces effectively compete for that superlative on two different trees; do not repeat either claim as fact, note the tension for the writer. This is the strongest-sourced candidate in this pass."
+  },
+  {
+    "id": "par_025",
+    "name": "The Caucasian Wingnut of Square d'Estienne d'Orves",
+    "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+    "age_estimate": "roughly 164 years",
+    "age_min": 160,
+    "age_max": 168,
+    "location": {
+      "address": "1 Place d'Estienne d'Orves, 75009 Paris",
+      "latitude": 48.87668685197766,
+      "longitude": 2.331908896799536,
+      "neighbourhood": "Square d'Estienne d'Orves"
+    },
+    "verified_sources": [
+      "data/registers/paris-arbres-remarquables.json (register_id 323350)",
+      "https://fr.wikipedia.org/wiki/Square_d'Estienne-d'Orves",
+      "https://www.paris.fr/lieux/square-d-estienne-d-orves-2472"
+    ],
+    "access": "Free, public square, open daily",
+    "transport": "Trinité - d'Estienne d'Orves (M12), about 2 min walk, the square sits right beside the station",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Register lists this species as 'Noyer du Caucase' (girth 380cm, height 26m, register_id 323350), a common French name that is technically imprecise: the species Pterocarya fraxinifolia is a wingnut, not a true walnut (Juglans), so the canonical common name used here is Caucasian Wingnut per the project's nationality-neutral naming rule. Independent sources give an EXACT match on girth (3.8m) and height (26m), plus a planting date of 1862 and a strong claim: this is reported as the oldest living Pterocarya fraxinifolia in France, labeled a Paris 'Remarkable Tree' on 1 April 2017. Tight two-source agreement on the numbers gives good confidence; the 'oldest in France' superlative is the source's claim, relay as reported rather than asserted, and it does not conflict with anything else on our own site. Right next to the Trinité - d'Estienne d'Orves metro exit, unusually convenient."
+  },
+  {
+    "id": "par_026",
+    "name": "The Chinaberry of Square Boucicaut",
+    "species": "Chinaberry (Melia azedarach)",
+    "age_estimate": "not documented; the square (created 1870) is known for many century-old specimens",
+    "age_min": 60,
+    "age_max": 150,
+    "location": {
+      "address": "1 Rue de Babylone, 75007 Paris",
+      "latitude": 48.85135747117565,
+      "longitude": 2.3251319080328345,
+      "neighbourhood": "Square Boucicaut"
+    },
+    "verified_sources": [
+      "data/registers/paris-arbres-remarquables.json (register_id 118790)",
+      "https://paris.vivarbre.fr/arrondissement7",
+      "https://fr.wikipedia.org/wiki/Square_Boucicaut"
+    ],
+    "access": "Free, public square, open daily, facing the Bon Marché department store",
+    "transport": "Sèvres-Babylone (M10, M12), about 4 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register: girth 155cm, height 10m, register_id 118790, also called Lilas de Perse (Persian Lilac) in French. Independent source (vivarbre.fr's 7th-arrondissement tree survey) gives the exact same 155cm circumference, confirming this specific specimen among the 9 remarkable trees of the 7th arrondissement. Square Boucicaut (created 1870 as square du Bon-Marché, named for department-store founders Aristide and Marguerite Boucicaut) is noted generally for rare specimens (Chilean araucarias, the very rare Cunninghamia lanceolata) and 'over one hundred trees, many exceeding 100 years', but that is a square-wide claim, not specific to this tree, so age here stays unconfirmed and flagged. An unusual, tender species for the Paris climate (Melia azedarach is subtropical/warm-temperate), itself a hook: star-shaped mauve flowers in summer, persistent pale yellow fruit clusters into winter, good autumn colour on the compound leaves. Sits opposite Le Bon Marché, Paris's oldest department store."
+  }
+]

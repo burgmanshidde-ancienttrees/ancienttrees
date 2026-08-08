@@ -42,6 +42,24 @@
       "latitude": 48.85775,
       "longitude": 2.3394,
       "reason": "Register-listed as a designated remarkable tree at Quai de l'Horloge (register_id 230281), girth 160cm. Not delivered as verified because the identity and age are genuinely unclear and this looks like exactly the kind of confusion the register pitfalls warn about: web sources repeatedly conflate at least two different weeping willows on the Ile de la Cite. (1) One search result attributed to city sources gives this Quai de l'Horloge tree a planting date of 1750, which is not biologically credible for a Salix babylonica (weeping willows rarely live past 100-150 years even in ideal conditions; 276 years would be extraordinary and unprecedented for the species) and was not corroborated by a source this pass could actually open and read, only by a search-engine summary. (2) A separate, much more famous willow story belongs to Square du Vert-Galant at the western tip of the same island: sources there agree the current willow was replanted in 2009/2010, succeeding an older specimen, and is popularly (and incorrectly) called 'the oldest tree in Paris', a claim that already properly belongs to par_001. Quai de l'Horloge runs along the north side of the island near the Conciergerie, a few hundred metres east of Vert-Galant, so this may be a third, distinct tree, or a confused report of one of the other two. Do not ship until a future pass can open a primary source (paris.fr, the city's own arbresremarquablesparis dataset page with a photo, or an on-the-ground/Street View check) and pin down which willow this actually is and a credible planting date. This pass's tooling (WebFetch and curl) returned EGRESS_BLOCKED / proxy 403 for every domain attempted this session, including paris.fr, wikipedia.org and even non-Paris domains, so no primary source could be opened directly; only WebSearch's synthesized snippets were available, which is why this one stays a lead rather than a block or a ship."
+    },
+    {
+      "name": "Mûrier commun (Common Mulberry), Jardin de l'Ecole Normale Superieure",
+      "species": "Common Mulberry (Morus sp.)",
+      "register_girth_cm": 216,
+      "place": "Jardin de l'Ecole Normale Superieure, 45 Rue d'Ulm, 75005 Paris",
+      "latitude": 48.84128,
+      "longitude": 2.34484,
+      "reason": "Register lists this as planted 1860 (166 years old), girth 216cm, register_id near these coordinates. A genuinely strong-looking candidate (only 1.6km from the existing walk) but not delivered for two reasons: (1) no second independent source found this pass, targeted searches for the ENS rue d'Ulm garden and a 1860s mulberry turned up nothing beyond general school history; (2) access is unresolved. Ecole Normale Superieure is a selective grande ecole and its inner garden/courtyard may not be open to the general public the way a city square is; a future pass needs to confirm whether this garden is genuinely visitable by any passer-by (some grandes ecoles do allow garden access on request or during open days only) before this can ship, per the private-land/restricted-access rule. Worth revisiting since the register age (1860) is unusually well documented for a French common-name register entry."
+    },
+    {
+      "name": "Cèdre à l'encens (Incense Cedar), Jardin des Champs-Élysées",
+      "species": "Incense Cedar (Calocedrus decurrens)",
+      "register_girth_cm": 210,
+      "place": "Jardin des Champs-Elysees, 41 Avenue Gabriel, 75008 Paris",
+      "latitude": 48.86857,
+      "longitude": 2.31333,
+      "reason": "Register-listed (girth 210cm, height 22m, register_id 307478) in the same garden as this pass's par_019 (sequoia) and par_020 (twin planes), so it would cost zero extra walking distance if verified. Not delivered: searches for this specific incense cedar turned up only generic species pages and one passing mention that Calocedrus specimens exist 'a few steps from the Champs-Elysees', with no age, no specific corroboration of this exact designated tree, and the paris.fr page for the garden (fetched directly) does not mention it by name. Only one source (the register) currently supports this entry, short of the two-source bar. A future pass could try the capgeo.sig.paris.fr per-tree PDF fact sheet for register_id 307478."
     }
   ],
   "blocked": [
@@ -98,6 +116,51 @@
       "latitude": 48.84929027337201,
       "longitude": 2.35621122946564,
       "reason": "This IS already-published par_015 ('The Plane of Quai Saint-Bernard'): identical coordinates and identical 380cm girth already quoted in par_015's published story. Not a new tree."
+    },
+    {
+      "name": "Marronnier d'Inde, Square (register candidate, near 48.86147,2.35437)",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "register_girth_cm": 100,
+      "place": "48.86147,2.35437, 75003/75004 area",
+      "latitude": 48.86147,
+      "longitude": 2.35437,
+      "reason": "This IS already-published par_017 ('The Anne Frank Chestnut'), not a new candidate: identical coordinates (48.861474,2.354375) to par_017's location field. Same physical tree, flagged in the brief as within 80m of a live tree; confirmed here as an exact match."
+    },
+    {
+      "name": "Figuier, Square Georges Cain (register candidate, register_id 116020)",
+      "species": "Common Fig (Ficus carica)",
+      "register_girth_cm": 145,
+      "place": "Square Georges Cain, 8 Rue Payenne, 75003 Paris",
+      "latitude": 48.85828,
+      "longitude": 2.36265,
+      "reason": "This IS already-published par_018 ('The Fig Tree of Square Georges Cain'), not a new candidate: identical coordinates (48.858282,2.362653) and identical 145cm girth already quoted in par_018's published story."
+    },
+    {
+      "name": "Hêtre tortueux, Square des Arenes de Lutece (register candidate)",
+      "species": "Twisted Beech (Fagus sylvatica 'Tortuosa')",
+      "register_girth_cm": 110,
+      "place": "Square des Arenes de Lutece area, 75005 Paris",
+      "latitude": 48.84489,
+      "longitude": 2.35367,
+      "reason": "This IS already-published par_016 ('The Twisted Beech of Square des Arenes de Lutece'), not a new candidate: identical coordinates (48.844888,2.353669) to par_016's location field. Same physical tree."
+    },
+    {
+      "name": "Chêne chevelu, Place de la République (register candidate, register_id 2017817)",
+      "species": "Turkey Oak (Quercus cerris)",
+      "register_girth_cm": 56,
+      "place": "Place de la Republique, 75010 Paris",
+      "latitude": 48.86830,
+      "longitude": 2.36319,
+      "reason": "Too young to qualify. Register gives an explicit planting date of 2017, girth only 56cm, height 7m: a 9-year-old street tree, not a genuinely old or visually spectacular specimen. Never ship as a remarkable/ancient entry; the register's own 'remarkable tree' designation here appears to be about species diversity or civic planting rather than age or stature. Not re-checked in future passes unless the register itself corrects the planting year."
+    },
+    {
+      "name": "Cèdre du Liban, Square Barye (register candidate, register_id 123805)",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "register_girth_cm": 35,
+      "place": "Square Barye, 2 Boulevard Henri IV, 75004 Paris",
+      "latitude": 48.84975,
+      "longitude": 2.36004,
+      "reason": "Too young to qualify. Register gives an explicit planting date of 2022, girth only 35cm, height 5m: a 4-year-old sapling. Never ship as a remarkable/ancient entry. Note the register mislabels the species as Cedrus atlantica under the French name 'Cedre du Liban' (Cedar of Lebanon is properly Cedrus libani, a different though related species); not relevant while the tree does not qualify by age, but worth remembering if this square is revisited."
     }
   ]
 }
