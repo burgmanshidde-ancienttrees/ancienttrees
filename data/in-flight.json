@@ -38,6 +38,18 @@
       "kind": "verify",
       "by": "session",
       "claimed_at": "2026-08-08T12:37:17+00:00"
+    },
+    {
+      "target": "london --as session",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-08T13:00:40+00:00"
+    },
+    {
+      "target": "rome --as session",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-08T13:00:40+00:00"
     }
   ]
 }
