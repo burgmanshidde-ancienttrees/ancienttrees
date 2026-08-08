@@ -13,6 +13,91 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-08
+
+**BLOCKER** — Vienna's page still says "sixteen" trees, in both visible
+prose and machine-readable schema, three trees after today's verify pass
+grew it to nineteen (commit e3014de). `data/cities/vienna.json:5`, the
+`intro` field: "The sixteen below range from a plane tree Mozart is said to
+have walked past... All sixteen are free to see." Line 17, the FAQ answer
+to "Are Vienna's ancient trees free to visit?": "All sixteen trees on this
+list are free to see." Both render live in `site/dist/vienna.html`: the
+intro paragraph under the H1, the visible FAQ `<dd>`, AND the page's own
+`FAQPage` JSON-LD (`"acceptedAnswer"` text says "All sixteen trees on this
+list are free to see" while the page lists 19 `TouristAttraction` entries
+above it). Whoever grew this city updated `meta_description` ("Nineteen
+remarkable trees") and `question_meta` ("eighteen more remarkable trees")
+correctly but missed `intro` and the FAQ, so the page contradicts its own
+schema, not just its own prose. Same defect class as the 2026-08-06
+Zaragoza BLOCKER (P2/P7: a page's central numeric claim must match what the
+page actually shows), and the ratchet condition applies: this is the
+second time in three days a tree-count field has gone stale on publish
+(see next finding). Fix is two string edits in `data/cities/vienna.json`.
+
+**BLOCKER** — Paris's meta description and question-page subtitle still
+promise "15 more" trees, eight trees after today's pass grew Paris from 16
+to 24 (should read "23 more"). `data/cities/paris.json:6`
+(`meta_description`: "Meet the 1601 Robinier... and 15 more within a metro
+ride.") and line 8 (`question_meta`: "...Its story, exact location, and 15
+more remarkable trees nearby."). Both render live: `site/dist/paris.html`'s
+`<meta name="description">` (the exact text Google would show in a search
+snippet) and `site/dist/paris/oldest-tree.html`'s subtitle. This is not the
+first time this exact field has gone stale: LOG.md's 2026-08-07 entry
+records a run explicitly catching and fixing this same phrase when Paris
+grew 13 to 16 ("both of which said 'a dozen more' trees... now say '15
+more'"). It has now gone stale a second time on the very next growth pass,
+which is the ratchet condition CLAUDE.md itself defines ("a lesson that
+appears on two different days stops being a note and becomes a build
+check"). No check in `scripts/qa.py` or `scripts/build_site.py` compares
+these copy fields' stated count against `len(trees)`; grep confirms no
+such validation exists. Recommend: either a qa.py check that greps
+`meta_description`/`question_meta` for a bare number and compares it to
+`len(trees) - 1`, or drop the exact count from these fields entirely and
+say "more remarkable trees" without a number, which is honest at any city
+size and cannot go stale.
+
+**WARN** — Five of the eight Paris trees published today ship a fact-chip
+that is a caveat sentence, not a scannable label, repeating a defect
+class fixed yesterday on three different Paris trees (par_013-015,
+REVIEW.md 2026-08-07, fixed in commit 3d97f07 today). Contract A
+(SEO_GEO_BLUEPRINT.md:49) requires the above-the-fold fact block to be
+"scannable, no prose." Verified live: `/paris/plane-of-square-dajaccio`'s
+age chip reads "likely over a century, since the square was laid out in
+the 1860s-1880s"; `/paris/turkish-hazel-of-square-du-temple` reads "not
+documented; comparable Corylus colurna elsewhere in Paris date to the
+1860s-1880s"; `/paris/chinaberry-of-square-boucicaut` reads "not
+documented; the square (created 1870) is known for many century-old
+specimens"; two more (`twin-planes-of-avenue-winston-churchill`,
+`magnolia-of-square-dajaccio`) are shorter but still full clauses rather
+than labels. Today's fix (3d97f07) shortened the three existing offenders
+to a plain "not documented" but did not touch `BRIEF_WRITING.md`, which
+still has no instruction limiting `age_estimate` to a short phrase, so the
+same write-stories pass produced the same defect on new trees the same
+day. Per the ratchet: this has now recurred, so a data-only fix will not
+hold. Recommend either a `BRIEF_WRITING.md` rule ("age_estimate is a chip
+label, not a sentence; put caveats in the story") or a qa.py length/clause
+check on `age_estimate` (e.g. flag any value containing a semicolon or
+exceeding ~40 characters).
+
+Everything else checked came back clean: both 2026-08-07 BLOCKERs (park
+BreadcrumbList, Zaragoza self-contradiction) are confirmed fixed and live;
+`qa.py` passes clean (1215 pages); no em dashes or banned words in a
+sample spanning today's new tree pages (Paris par_019-026, Vienna
+vie_017-019), the homepage, and five unrelated pages picked at random
+(Bath, Sofia redirect stub, Guimaraes, Milan, Porto, Athens, Cadiz, Rome,
+the olive species page, Venice); species common names stay canonical
+site-wide (no scientific name maps to two different common names); no
+superlative collisions found among today's "oldest in France" claims
+(Paris's cedar of Lebanon and Caucasian wingnut are each the only tree of
+their species claiming a France-wide superlative, and both explicitly
+attribute the claim to sources rather than asserting it outright, which is
+the hard-rule-8 soften-or-attribute pattern working as intended); the new
+Ireland Heritage Trees register import (781c1af) stays honest about its
+custom coordinate-conversion accuracy and ships `publish_dots: false`, so
+it is not user-facing yet.
+
+---
+
 ## 2026-08-07
 
 **BLOCKER** — Every Contract H park page ships without BreadcrumbList
