@@ -99,6 +99,13 @@ One object per tree:
 material there: the surprising fact, the history, the dispute. Facts only, no
 polished prose.
 
+`age_estimate` is a chip label, not a sentence: "roughly 400 years", "over a
+century", "not documented". Put any caveat, dispute or reasoning in
+`verify_notes` for the story to carry instead. Paris shipped five trees on
+2026-08-08 whose `age_estimate` was a full clause ("not documented;
+comparable Corylus colurna elsewhere in Paris date to the 1860s-1880s"),
+which reads as prose where the page needs a scannable fact.
+
 Candidates that fail only on evidence or count go to the `leads` list of
 `data/leads/<slug>.json` (create or extend it, keep existing entries); trees
 that must never ship (dead, private, withheld location, not a collectible
