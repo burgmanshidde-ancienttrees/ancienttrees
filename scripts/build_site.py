@@ -3941,6 +3941,14 @@ def build_park_page(intro, entry, trees, tree_slugs, published, pages):
     rest_html = f'<div class="prose-block"><p>{esc(rest)}</p></div>' if rest else ""
     other = [q for q in published if q["slug"] != cslug][:6]
     other_links = " &middot; ".join(f'<a href="../{q["slug"]}">{esc(q["city"])}</a>' for q in other)
+    # The reciprocity OUTREACH.md promises has to actually exist on the page:
+    # opening hours, tickets and closures are theirs to state, not ours.
+    official_line = ""
+    if intro.get("official_url"):
+        official_line = (
+            f'<p class="suggest">Opening times and visitor information: '
+            f'<a href="{esc(intro["official_url"])}" rel="noopener">'
+            f'{esc(intro.get("official_name") or "the official site")}</a>.</p>')
     body = f"""
 <main class="content-page">
   {breadcrumb_html(crumb_items, "../")}
@@ -3949,6 +3957,7 @@ def build_park_page(intro, entry, trees, tree_slugs, published, pages):
   {rest_html}
   <p class="suggest">All {len(trees)} stand in <a href="../{cslug}">{esc(city)}</a>, which maps {len(entry['data']['trees'])} remarkable trees in total.</p>
   {"".join(rows)}
+  {official_line}
   <p class="suggest">More parks worth the walk: <a href="../parks">every park we map</a>. Or explore by city: {other_links}</p>
 </main>
 """
