@@ -23,9 +23,12 @@ export interface Props {
   canonical: string;
   ogType?: "article" | "website";
   headExtra?: string;
+  /** City pages pass false: the split-panel/map layout has no room for the
+   * standard footer (render_page(..., footer=False), build_site.py:3659). */
+  footer?: boolean;
 }
 
-const { title, description, canonical, ogType = "article", headExtra = "" } = Astro.props;
+const { title, description, canonical, ogType = "article", headExtra = "", footer = true } = Astro.props;
 
 if (title.length > TITLE_MAX) {
   throw new Error(`${canonical}: title exceeds ${TITLE_MAX} chars (${title.length}): ${JSON.stringify(title)}`);
@@ -81,6 +84,7 @@ const year = new Date().getFullYear();
   </nav>
 </header>
 <slot />
+{footer && (
 <footer>
   <div class="footer-cols">
     <div class="footer-col footer-about">
@@ -105,6 +109,7 @@ const year = new Date().getFullYear();
   </div>
   <span class="footer-note">&copy; {year} Ancient Trees, ancienttrees.app. Map &copy; OpenFreeMap, OpenMapTiles, OpenStreetMap contributors. Walking routes by Valhalla via FOSSGIS, on OpenStreetMap data. Photos carry their own credits and open licences.</span>
 </footer>
+)}
 <script define:vars={{ SB_URL: SUPABASE_URL, SB_KEY: SUPABASE_KEY }}>
 window.at = window.at || {};
 at.track = function (name, detail) {
