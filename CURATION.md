@@ -1,3 +1,13 @@
+## 2026-08-08 - Photo viewing pass: 30 images judged, 1 approved, two hunts exhausted
+
+Session viewing pass (the CI proxy cannot; judged against the Cadiz standard, throttled at 3.2s/request, no 429s). Approved: nyc_011 The Great Elm of Central Park West, CC0 iNaturalist by Daniel Atha (NYBG botanist), geocoded to exactly the entry's CPW/W77 corner; the first NYC photo in three passes. Rejected 47: street scenes where no tree is the subject, phenology close-ups (bark, buds, leaves in hand), wrong-species observation records, night shots.
+
+TWO PHOTO HUNTS NOW EXHAUSTED, do not re-run:
+- dub_005 (Provost's Plane, Dublin): all ten Commons geosearch hits are Grafton Street scenes, Molly Malone, a tram. The gap needs a NEW source (reader photo, or Trinity's own media office via the outreach lane), not another sweep.
+- par_017 (Anne Frank Chestnut, Paris): all nine candidates are OTHER cities' Anne Frank trees (Yad Vashem, Bedford, Utrecht, Bournemouth, the fallen Amsterdam original). Same conclusion: only a new source closes it.
+
+One process note kept honest: 17 of the 47 rejections were made on file coordinates/description rather than pixels (a Bournemouth chestnut cannot be the Paris tree whatever its pixels show); each such verdict says so in the queue. The look-at-pixels rule exists to stop blind approvals and none of those were blind.
+
 ## 2026-08-07 - Paris verify pass: 3 more trees for the Latin Quarter/Marais cluster, not yet written
 
 Verify-only pass (data/research/paris-verified.json, not merged into paris.json yet, a write pass still needed). 3 trees, 1 flagged: par_016 (Twisted Beech, Square des Arenes de Lutece, confirmed pin, ~120yo), par_017 (Anne Frank Chestnut, Jardin Anne Frank, confirmed pin, symbolic-significance qualifier like par_007, a girth discrepancy between two sources left for the writer to note rather than resolved silently), par_018 (Fig of Square Georges Cain, confirmed pin but flagged: repeatedly described as "over a century old" with no sourced planting year). All three extend the existing Latin Quarter/Jardin des Plantes/Marais cluster (300m to 1.2km from par_001/007/013/014/015). 4 register candidates blocked as duplicates of already-published trees. One lead not shipped: a Quai de l'Horloge weeping willow whose identity is genuinely confused with a different, more famous willow at Square du Vert-Galant in the same search results, with one source's 1750 planting date not biologically credible for the species; needs a primary-source fetch this session's egress couldn't reach.
