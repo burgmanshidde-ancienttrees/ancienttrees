@@ -1,0 +1,25 @@
+[
+  {
+    "id": "cop_005",
+    "name": "The Temple Tree of Landbohøjskolens Have",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "roughly 140-145 years",
+    "age_min": 135,
+    "age_max": 150,
+    "location": {
+      "address": "Landbohøjskolens Have (Fakultetets Fredede Have), entrance at Bülowsvej / Thorvaldsensvej, Frederiksberg",
+      "latitude": 55.679517,
+      "longitude": 12.542583,
+      "neighbourhood": "Frederiksberg C"
+    },
+    "verified_sources": [
+      "https://kub.ku.dk/biblioteker/frederiksberg/landbohoejskolens-historie/life150/haven/ginka_balboa/",
+      "https://www.fredninger.dk/fredning/landbohoejskolens-have/"
+    ],
+    "access": "Free, open to the public sunrise to sunset (university garden, protected since 1965)",
+    "transport": "Frederiksberg metro station, roughly 5-8 minute walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "University of Copenhagen library's own historical feature (kub.ku.dk, part of a series on the garden's 150th anniversary) describes this as 'our largest ginkgo', a male specimen planted in 1883 in the middle of a large stone mound in the Faculty's Protected Garden (Fakultetets Fredede Have), part of what is now called Landbohøjskolens Have at Bülowsvej, Frederiksberg. It pollinates a separate female ginkgo across the street. The official heritage listing (fredninger.dk) independently confirms the garden's identity and that a ginkgo ('tempeltræet') is one of its notable old trees, used historically in alternative medicine, corroborating existence and species, but the 1883 planting date and 'largest ginkgo' claim rest on the single KU library source, so this is flagged rather than confirmed on age. No dated recent (post-2010) sighting was found confirming the tree is still alive, though ginkgos are exceptionally disease- and pest-resistant and nothing suggests it has been removed; a companion tree in the same garden, a blood beech planted the same year the garden opened (1858), WAS confirmed felled in 2018 by Danish Wikipedia, which is the reason this pass checked recency carefully rather than assuming survival. Coordinates given are the garden's Bülowsvej entrance (from the official heritage listing's own GPS), not a survey of the tree itself, since no source pins the ginkgo's position more precisely than 'the middle of the large stone mound'. Species and remarkable-species framing ('the world's oldest living tree species') are well established generally; the individual specimen's age is what is thin. Worth a photo-hunt and a direct enquiry to the garden (haven@plen.ku.dk) to firm up both the planting date and current status before this ships with confidence."
+  }
+]
