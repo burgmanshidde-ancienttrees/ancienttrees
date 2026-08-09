@@ -407,6 +407,34 @@ def fetch_events(today):
         line += "\nWaitlist signups (total): %s." % total
     except Exception:
         pass
+    # Registered accounts. Asked for by Hidde on 2026-08-09: sign-in went live
+    # while the digest still only counted the waitlist, so the one number that
+    # says whether anyone actually opened an account was nowhere. Accounts live
+    # in auth.users and nothing else (there is no profiles table), so this is
+    # the GoTrue admin endpoint. A COUNT and a signed-up-yesterday figure, never
+    # an address: same posture as the waitlist line above, and the same reason,
+    # which is that a count is evidence and a mailing list is a liability.
+    try:
+        acc, page, new = 0, 1, 0
+        since = (today - datetime.timedelta(days=1)).isoformat()
+        while page <= 10:                      # 10k accounts is far past any
+            req = urllib.request.Request(      # plausible number here; a cap
+                "https://caimvxiyrtifilimlkqw.supabase.co/auth/v1/admin/users"
+                "?page=%d&per_page=1000" % page,   # stops a bug from looping
+                headers={"apikey": key, "Authorization": "Bearer " + key})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                users = (json.load(r) or {}).get("users") or []
+            acc += len(users)
+            for u in users:
+                if (u.get("created_at") or "")[:10] == since:
+                    new += 1
+            if len(users) < 1000:
+                break
+            page += 1
+        line += "\nRegistered accounts (total): %d%s." % (
+            acc, ", %d new yesterday" % new if new else "")
+    except Exception as e:
+        line += "\nRegistered accounts: unreadable (%s)." % e
     return line
 
 
