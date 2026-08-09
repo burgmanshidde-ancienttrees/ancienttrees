@@ -4,30 +4,6 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "london",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-09T06:24:01+00:00"
-    },
-    {
-      "target": "chicago",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-09T06:24:01+00:00"
-    },
-    {
-      "target": "boston",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-09T06:24:01+00:00"
-    },
-    {
-      "target": "athens",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-09T06:24:01+00:00"
-    },
-    {
       "target": "new-york",
       "kind": "verify",
       "by": "night-run",
