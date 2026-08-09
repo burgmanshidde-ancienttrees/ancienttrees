@@ -190,8 +190,12 @@ doing per outlet at the moment of sending rather than a list that goes stale.
 Elke sessie kan mailen namens Hidde, en zo werkt het, blijvend:
 
 1. **De credentials staan klaar** in `~/.ancienttrees-mail.env` op zijn
-   machine (Gmail app-wachtwoord, buiten de repo). Een sessie sourcet dat
-   bestand en `scripts/outreach_send.py` doet de rest.
+   machine (Gmail app-wachtwoord, buiten de repo). Een sessie draait
+   `source ~/.ancienttrees-mail.env` (per sessie opnieuw, het bestand zelf is
+   blijvend) en `scripts/outreach_send.py` doet de rest. **Machinegebonden,
+   bewust**: een sessie die het bestand niet kan zien draait niet op Hidde's
+   Mac en hoort de sleutels NIET te krijgen; geen enkele sessie vraagt hem
+   ooit het wachtwoord in een chat te plakken.
 2. **Het mandaat-patroon**: de sessie schrijft of toont de batch, Hidde leest
    en zegt "verstuur" (of "goedgekeurd"), de sessie zet de batch-status om en
    verstuurt waar hij bij is. Dat ene woord per batch is geen bureaucratie
