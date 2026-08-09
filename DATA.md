@@ -7,14 +7,40 @@ standing rule, 2026-07-27).
 
 ## 2026-08-08 (previous UTC day)
 
+**Today: a waitlist arrived yesterday (5 total); an account was opened yesterday (3 total).**
+
+**Did the product happen**
+- app-cta:     0 yesterday, last never
+- collect:     0 yesterday, last never
+- directions:  0 yesterday, last never
+- share:       0 yesterday, last never
+- smoke-test:  0 yesterday, last 8 days ago
+- walk-start:  0 yesterday, last never
+- Waitlist:    5 total, newest yesterday
+- Submissions: 1 total, newest 9 days ago
+- Accounts:    3 total, newest yesterday
+
+**The funnel, as rates**
+- Seen to clicked: 2.2% (74 of 3311) vs 0.9% the fortnight before
+- Pages per visit: 1.6 (44 visits, 72 pageviews since 2026-08-08)
+- Visits that did something: 0.0% (0 actions on 44 visits)
+
+**Where demand is going to waste**
+
 Search Console (freshest day Google provides, data lags 2-3 days):
-- 2026-08-09: 1 clicks, 5 impressions, avg position 6.6 (day before: c5/i191)
-- Days: 07-30:c7/i251  07-31:c2/i230  08-01:c7/i253  08-02:c7/i299  08-03:c2/i260  08-04:c8/i254  08-05:c0/i280  08-06:c7/i215  08-07:c5/i226  08-08:c5/i191  08-09:c1/i5
+- 2026-08-09: 1 clicks, 5 impressions, avg position 6.6 (day before: c5/i192)
+- Days: 07-30:c7/i251  07-31:c2/i230  08-01:c7/i253  08-02:c7/i299  08-03:c2/i260  08-04:c8/i254  08-05:c0/i280  08-06:c7/i215  08-07:c5/i226  08-08:c5/i192  08-09:c1/i5
 - Top queries (10d): oldest tree in lisbon (i5, p11); "york museum gardens" (i4, p4); 400 year old tree (i1, p18); acient tree (i1, p40); alley pond giant (i1, p28)
 - Top pages (10d): /lisbon (c4/i89); / (c3/i25); /kyoto (c3/i48); /amsterdam (c2/i133); /app (c2/i9)
 - Content lead: '400 year old tree' has no matching page (i1, p18)
 - Seen, not clicked: /rome (c0/i61, 0.0%) for trees in rome (i18, p18); trees of rome (i8, p26); rome trees (i8, p36)
 - Seen, not clicked: /malaga (c0/i24, 0.0%) for árboles históricos de málaga (i19, p73); malaga tree (i3, p8); malaga trees (i1, p8)
+
+**Who they are**
+Audience, 28 days of search (78 clicks, 3681 impressions):
+- Countries: usa c14/i790; gbr c7/i437; nld c7/i162; bel c5/i95; can c5/i92
+- Devices: MOBILE c56/i2050; DESKTOP c22/i1597; TABLET c0/i34
+- Landing pages: /lisbon c8/i150; / c4/i47; /porto c4/i29; /amsterdam c3/i227; /kyoto c3/i76
 
 Web Analytics (beacon, real browsers, cookieless):
 - Days (visits/pageviews): 08-01:v10/p60  08-02:v20/p20  08-03:v10/p10  08-04:v10/p20  08-05:v20/p20  08-06:v0/p10  08-07:v30/p30  08-08:v70/p120
@@ -28,25 +54,9 @@ Links and referrers:
 - External referrers (a link somebody clicked): none yet
 - Backlink count: not automatable, Search Console's API has no links endpoint. Read it by hand at https://search.google.com/search-console/links?resource_id=sc-domain%3Aancienttrees.app
 
-Audience, 28 days of search (78 clicks, 3680 impressions):
-- Countries: usa c14/i790; gbr c7/i437; nld c7/i162; bel c5/i95; can c5/i92
-- Devices: MOBILE c56/i2050; DESKTOP c22/i1596; TABLET c0/i34
-- Landing pages: /lisbon c8/i150; / c4/i47; /porto c4/i29; /amsterdam c3/i227; /kyoto c3/i76
-- Search language (top 100 named queries, crude match, most clicks are in queries Google withholds): English 56q c1/i116; unclassified 39q c0/i81; Spanish 2q c0/i4; French 1q c0/i2; Italian 1q c0/i1; Dutch 1q c0/i1
-On the site since 2026-08-08 (44 visits, 72 pageviews, 1.6 pages per visit):
-- Countries: PT 27; NL 22; US 5; JP 5; IE 4
-- Devices: desktop 55; mobile 17
-- Browsers: Chrome 47; ChromeMobile 15; ChromeHeadless 6; MobileSafari 2
-- Arrived via: (direct) 37; ancienttrees.app 28; www.google.com 6; zscaler-blocked.dpgmedia.n 1
-- Opened: /porto 14; /app 9; /naples 5; / 3; /amsterdam 2; /explore 2; /lyon 1; /rome/cedar-of-the-belvede 1
-
-Site actions (yesterday): none recorded.
-Waitlist signups (total): 5.
-Registered accounts (total): 3, 1 new yesterday.
-
 Machine: 9 chain attempts yesterday, 9 got real work time (~152 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
 
-**Conclusion:** Search is the only channel with real data and it is still small: 1 clicks and 5 impressions on Google's freshest day (day before: c5/i191). Directional at best; no strategic conclusions from these volumes.
+**Conclusion:** Search is the only channel with real data and it is still small: 1 clicks and 5 impressions on Google's freshest day (day before: c5/i192). Directional at best; no strategic conclusions from these volumes.
 
 ## Weekly analysis 2026-08-08
 
