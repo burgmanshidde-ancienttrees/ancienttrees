@@ -10,6 +10,26 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-09 (middag en avond) - Distributie wordt de lens, en de eerste twaalf mails zijn weg
+
+Een lange sessie met Hidde die de koers heeft verlegd. De aanleiding was een meting, niet een idee: over 28 dagen nam de hele site 78 kliks op 3.680 vertoningen, terwijl Rome, onze diepste pagina met 24 bomen, 61 vertoningen en nul kliks kreeg en Porto met 4 kliks op 29 vertoningen 14 procent doorklik haalde. Diepte produceert geen bezoekers, positie wel, en die hebben we alleen waar de concurrentie dun is.
+
+**Vastgelegd in CLAUDE.md**: "Reason from distribution first" als staande lens, Porto en Lissabon bovenaan de wachtrij, en hard rule 5 aangescherpt op Hidde's woord dat gereedschap geen afhankelijkheid is (de grens is of een lezer het ooit tegenkomt).
+
+**De diagnose die alles verklaart.** Search Console: 437 pagina's geïndexeerd, 349 niet, waarvan 346 "gevonden maar niet gecrawld" en **nul** "gecrawld en afgewezen". Google heeft dus geen enkele pagina van ons op kwaliteit afgewezen; hij haalt tweederde simpelweg niet op. Dat is crawlbudget bij een domein van twee weken oud zonder één menselijke link. Ahrefs bevestigde de andere helft: 298 verwijzende domeinen, allemaal als spam gemarkeerd, allemaal nofollow, allemaal uit een SEO-linknetwerk dat nieuwe registraties afvangt. Het aantal backlinks is dus nooit nul geweest en als maat waardeloos; de meter is Domain Rating en verwijzende domeinen boven DR 10, waarvan we er nul hebben.
+
+**Twaalf mails verstuurd naar Portugese organisaties** (batch 002-pt), in Hidde's frame: een compliment, waar de site voor is, en dan de vraag om foto's en om de boom die we gemist hebben. Geen woord over publiciteit, want dat is precies wat het kapot zou maken. Elke mail noemt hun eigen bomen en welke daarvan wij zonder foto publiceren. Twaalf in plaats van de hele lijst van 158, omdat de tekst onbewezen is en je bij dezelfde organisatie geen tweede eerste indruk krijgt. De lijst zelf is nieuw: **177 contacten, 158 met een adres dat op de eigen site van de organisatie is teruggevonden**, met de vindplaats erbij en niets geraden.
+
+**SEO-basisfouten die aan de buitenkant zaten.** De favicon was een data-URI, die Google niet als eigen bron kan ophalen, dus stond er een grijze wereldbol in de zoekresultaten naast concurrenten met hun eigen merk. og:site_name ontbrak overal, vandaar "ancienttrees.app" in plaats van "Ancient Trees". Geen enkele pagina behalve een boompagina had een og:image, dus elke gedeelde link was een kale tekstblok. Een dode link serveerde GitHub Pages' eigen 404. Alles gerepareerd en live geverifieerd.
+
+**En twee dingen die echte kliks kosten.** 377 van de 893 boomomschrijvingen waren korter dan 110 tekens, sommige 19, omdat de generator stopte zodra de volgende zin niet meer paste; die tekst is de hele klikbeslissing. Nu geen enkele onder de 110, mediaan van 122 naar 151. En MapLibre werd op elke kaartpagina blokkerend geladen vanaf unpkg.com terwijl onze eigen server in 33 tot 158 milliseconden antwoordt; dat is nu defer plus init op DOMContentLoaded, geverifieerd op een telefoon.
+
+**De digest is herbouwd als hiërarchie in plaats van een verzameling**, in de volgorde waarin een slecht getal morgen iets verandert: is het product gebeurd (met dagen-sinds per actie, want een dagelijkse nul leest niemand na week twee), dan de trechter als percentages, dan de vraag die we verspillen, dan wie ze zijn, dan voorraad en machine. Bovenaan één oordeelsregel die zegt wanneer niets je aandacht nodig heeft. Hij telt nu ook geregistreerde accounts: drie, waarvan één die dag.
+
+**Dertien bomen erbij** in Berlijn (15 naar 18, eerste echte tweede wandeling), Wenen (19 naar 22), Amsterdam (17 naar 20, Wertheimpark sluit de centrale wandeling) en Washington DC (10 naar 14).
+
+**FOR HIDDE:** de eerste echte link is het enige dat de crawlwachtrij in beweging brengt en het is het enige dat ik niet kan doen. De twaalf Portugese mails zijn de eerste poging; augustus is daar een stille maand, dus nul antwoord deze week zegt niets en nul over drie weken wel. Daarna staat er nog een besluit open dat we vandaag bewust hebben uitgesteld: een post in één kleine community, om eindelijk te meten of iemand op een routebeschrijving klikt. Dat getal staat sinds de start op nul.
+
 ## 2026-08-09 — Afternoon: 13 stories land across four cities, the Wikidata harvest banks 1,185 candidates, and the site is Astro now
 
 **The publish wave**: London 23, Istanbul 14, Boston 10, Budapest 12, Chicago 6, Copenhagen 13, all live and verified on production. The stories carry the day's honesty highlights: the Inner Temple mulberry with its two-and-a-half-hour weekday window, the Gülhane pair completing Istanbul's central walk, the Longfellow linden with its NPS fair-to-poor condition in the prose, and Budapest's black walnut telling its own decline openly.
