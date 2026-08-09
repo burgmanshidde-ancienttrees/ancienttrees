@@ -1,0 +1,48 @@
+[
+  {
+    "id": "ber_014",
+    "name": "The Ferry Landing Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "not documented, register-listed only",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Pfaueninselchaussee 100, west of the Wirtshaus zur Pfaueninsel, 14109 Berlin (mainland side, at the ferry landing, not on the island itself)",
+      "latitude": 52.428433,
+      "longitude": 13.121932,
+      "neighbourhood": "Pfaueninsel ferry landing, Steglitz-Zehlendorf"
+    },
+    "verified_sources": [
+      "data/registers/berlin-naturdenkmale.json (register_id 6-71/B, CC0/DL-DE-Zero 2.0)",
+      "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf (official Naturdenkmal designation ordinance; same underlying government source as the register JSON above, so this counts as ONE source, not two)"
+    ],
+    "access": "Free, and no ferry ticket required to see this tree: Pfaueninselchaussee 100 is the address of the Wirtshaus zur Pfaueninsel restaurant and the ferry dock complex on the MAINLAND side of the crossing (confirmed via ADAC Maps and pfaueninsel.de: parking is at the nearby Nikolskoer Weg lot, and bus 218 terminates here, all on the mainland before the ferry). This is different from ber_011-013, which stand on the island and require the paid ferry. Not yet confirmed on the ground whether the tree stands on public verge/road or inside the restaurant's grounds; a future pass or reader should check.",
+    "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then under 5 minutes on foot to the ferry landing area; the tree stands just west of the Wirtshaus zur Pfaueninsel restaurant, before the ferry crossing.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Berlin Naturdenkmal register_id 6-71/B, designated 1993-03-02, reason given as 'Schoenheit, landeskundliche Gruende' (beauty / regional-historical significance) rather than age or rarity, so its case rests on visual form and its position at the historic Pfaueninsel crossing point rather than a documented age. LOCATION FINDING (new this pass, worth flagging to the writer): the register places this tree at the Pfaueninselchaussee 100 address, which independent web sources (ADAC Maps ferry-dock listing, pfaueninsel.de's own Anfahrt page) confirm is the MAINLAND side of the ferry crossing, not the island. That means, if it holds up on the ground, this tree could be seen for free without buying a ferry ticket, unlike the three published Pfaueninsel oaks (ber_011-013), and could be the easiest, cheapest stop in the cluster, worth leading with in the story. SOURCING: only one source found despite two access routes (the imported register JSON and the original berlin.de ordinance PDF), because both trace to the same district designation act; this pass and two prior passes (2026-08-07, 2026-08-08, logged in data/leads/berlin.json) searched baumkunde.de (site search and direct URL guesses), monumentaltrees.com (blocked, HTTP 403 on every attempt, both direct and via reader proxy), SPSG's own Pfaueninsel materials, and general web search for a tree-specific second source; none found. Commons geosearch within 250m of the coordinates returned zero results, so no dated photo confirms current vitality either. General context for the 'alive' question: Pfaueninsel-wide storm damage is documented (February 2022: 45 trees uprooted/windthrown, 25 crown breakages island-wide; storm 'Ziros', June 2025: one further tree lost), but no source names this specific tree as among the losses, so treat as likely standing but unconfirmed. Species per hard rule 9 convention: London Plane (Platanus x acerifolia), matching the canonical name already used elsewhere on the site for this species."
+  },
+  {
+    "id": "ber_015",
+    "name": "The Cut-Leaf Oak of Pfaueninsel",
+    "species": "Sessile Oak, cut-leaf variety (Quercus petraea var. laciniata)",
+    "age_estimate": "not documented, register-listed only",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Pfaueninsel, roughly 150m northeast of the Schloss, 14109 Berlin",
+      "latitude": 52.431763,
+      "longitude": 13.121202,
+      "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+    },
+    "verified_sources": [
+      "data/registers/berlin-naturdenkmale.json (register_id 6-108/B, CC0/DL-DE-Zero 2.0)",
+      "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf (official Naturdenkmal designation ordinance, read via r.jina.ai text-extraction proxy by a prior pass since the PDF's font encoding defeats direct text extraction; same underlying government source as the register JSON above, so this counts as ONE source, not two)"
+    ],
+    "access": "Free to walk once on the island, reached only by the chain ferry from the Nikolskoer Weg landing (same access and ticket as ber_011-013: adult single 6 euros, family 12 euros as of April 2026).",
+    "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then roughly a 10-15 minute walk into the island to the area northeast of the Schloss, close to ber_011 (The Great Oak, about 45m away).",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Berlin Naturdenkmal register_id 6-108/B, designated 1993-03-02, reason given as 'Seltenheit' (rarity), for the specific variety recorded in the ordinance text as 'Quercus petraea var. laciniata (Lam.) C. Vicioso' (a cut-leaf / dissected-leaf Sessile Oak variety, German 'Geschlitzblaettrige Trauben-Eiche'), which is what makes the designation about rarity rather than age or size. DISTINCTNESS CHECK (the specific job of this pass): this entry sits only about 45m from the already-published ber_011 (The Great Oak of Pfaueninsel, register 6-102/B), close enough that a prior pass flagged the risk of it being the same tree described twice. Evidence found that they are genuinely two separate, individually distinguishable trees rather than a register duplicate: the baumkunde.de entry that matches ber_011's exact coordinates (baumregister #2135, 'Eiche auf der Pfaueninsel') explicitly describes an ordinary crown with NO mention of a cut-leaf/dissected form, while the government ordinance specifically and separately designates 6-108/B for its rare cut-leaf variety at a distinct set of coordinates 45m away. A normal Sessile Oak and a cut-leaf variety of the same species standing 45m apart are two different trees, not one tree registered twice; recommend the writer describe them as a genuine pair (\"an oak and its stranger cousin, forty metres apart\") if that reads well. SOURCING: single source only, despite two access routes to the ordinance (register JSON, ordinance PDF), because both trace to the same Bezirksamt Steglitz-Zehlendorf designation act. This pass and two prior passes searched baumkunde.de, ostdeutsches-baumarchiv.de, monumentaltrees.com (blocked, HTTP 403), and SPSG/Wikipedia Pfaueninsel materials for a tree-specific second source describing 6-108/B by its cut-leaf feature; none found (the two baumkunde.de entries that exist for Pfaueninsel oaks both match ber_011 and ber_012 instead). Commons geosearch within 100m of the coordinates returned zero results, so no dated photo confirms current vitality. General context: island-wide storm damage is documented (Feb 2022: 45 trees uprooted/windthrown, 25 crown breaks; storm 'Ziros' June 2025: one further tree lost) with no source naming this tree specifically as lost or surviving, so treat as likely standing but unconfirmed. No age given anywhere; the designation criterion is rarity of the variety, not age, so do not infer an age from the nearby oaks' 200-400 year estimates, which rest on a different reasoning (general island oak stand age)."
+  }
+]

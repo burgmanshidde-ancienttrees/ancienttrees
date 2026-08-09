@@ -126,6 +126,12 @@ def main():
 
         if "—" in text:
             failures.append(f"{rel}: em dash in rendered text (hard rule 3)")
+        # A tree with no numeric age (age_min/age_max null, age_estimate with
+        # no digit) once made age_token() fall back to the literal string
+        # "None", shipping live as "<title>...: None Year Old Tree in City"
+        # on three published pages before this check existed (2026-08-09).
+        if "None Year" in text:
+            failures.append(f"{rel}: literal 'None Year' in rendered text, an undated tree's age fell back to None")
         lower = text.lower()
         for word in BANNED_WORDS:
             if word in lower:
