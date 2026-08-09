@@ -427,6 +427,33 @@ def print_archived_notes(slug, place):
         print(f"  ...and more: grep -ri \"{place}\" CURATION.md LOG.md archive/")
 
 
+def print_wikidata(slug):
+    """The CC0 Wikidata candidates harvested by scripts/wikidata_harvest.py.
+    Banked 2026-08-09 (1,185 candidates, 660 with images) and wired here the
+    same day, because a feed nothing reads is not a feed. Sitelinked articles
+    are where second sources live; an image link is a photo candidate."""
+    try:
+        d = json.load(open(os.path.join(ROOT, "data", "research",
+                                        "wikidata-candidates.json")))
+    except Exception:
+        return
+    block = d.get("cities", {}).get(slug)
+    if not block:
+        return
+    fresh = [c for c in block.get("candidates", []) if not c.get("probably_ours")]
+    if not fresh:
+        return
+    print(f"\nWIKIDATA CANDIDATES (CC0, harvested {block.get('harvested')}): "
+          f"{len(fresh)} not already ours; discovery AND corroboration feed.")
+    for c in fresh[:12]:
+        img = "img" if c.get("image") else "no-img"
+        des = f"  [{c['designation']}]" if c.get("designation") else ""
+        print(f"  {c['qid']}  {c.get('label','?')[:52]:<54} "
+              f"({c['latitude']:.5f},{c['longitude']:.5f}) {img}{des}")
+    if len(fresh) > 12:
+        print(f"  ...and {len(fresh)-12} more in data/research/wikidata-candidates.json")
+
+
 def print_leads(slug):
     for kind in ("leads", "research"):
         for f in sorted(glob.glob(os.path.join(ROOT, "data", kind, f"*{slug}*"))):
@@ -513,6 +540,7 @@ def brief(arg, live):
         print("  research from zero and budget accordingly.")
 
     print_leads(slug)
+    print_wikidata(slug)
     print_archived_notes(slug, match["city"] if match else arg)
     print_blocklist()
 

@@ -1,7 +1,8 @@
 # Show HN draft, plus the comment answers
 
-Written 2026-08-08, approved in principle by Hidde ("klinkt prima"). Only he
-posts it, from his own Hacker News account (hard rule 4; and HN culture
+Written 2026-08-08, approved in principle by Hidde ("klinkt prima"); his HN
+account exists since 2026-08-09 (his step 2 that day). Only he posts it, from
+that account (hard rule 4; and HN culture
 expects the maker personally in the comments).
 
 **What Show HN is, in one paragraph.** Hacker News (news.ycombinator.com) is
@@ -86,6 +87,18 @@ same two-source bar. Tell me what is wrong and it gets fixed the same day."
 **"Why only cities?"** "Because the promise is a walk, not an expedition: the
 site is built around standing in front of a tree within an afternoon of where
 you already are. Remote giants are a different, also lovely, product."
+
+
+## The Tuesday-morning pre-flight (the session runs this before he posts)
+
+1. Refresh every number in the post against the live data (tree and city
+   counts move daily; run scripts/press_numbers.py and update the title and
+   first comment).
+2. Production check: homepage, map, two flagship cities, one tree page, all
+   loading clean; latest smoke run green.
+3. Test the suggestion form end to end once, because submissions are the win
+   the post explicitly asks for.
+4. Confirm the analytics break note stands so the spike measures clean.
 
 ## After it runs
 
