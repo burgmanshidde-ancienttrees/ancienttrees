@@ -368,155 +368,175 @@ def referrers_section(refs):
             % line)
 
 
-def fetch_events(today):
-    """Anonymous action counts from the site's own events table (Supabase,
-    insert-only from the site; read here with the service key). Absent key or
-    table: one quiet line, never an error."""
+SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
+
+# Anything a block thinks should reach Hidde today. The verdict line at the top
+# of the entry is built from this, and an empty list is the good case and says
+# so in words. Without it the report has no front door: fifteen true blocks and
+# no statement of which one, if any, is today's.
+ATTENTION = []
+
+
+def _supa(path, key, timeout=30):
+    req = urllib.request.Request(SUPA + path, headers={
+        "apikey": key, "Authorization": "Bearer " + key})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return json.load(r), dict(r.headers)
+
+
+def _days_since(iso, today):
+    """Whole days between an ISO timestamp and today, or None."""
+    if not iso:
+        return None
+    try:
+        d = datetime.date.fromisoformat(str(iso)[:10])
+    except ValueError:
+        return None
+    return (today - d).days
+
+
+def _ago(n):
+    if n is None:
+        return "never"
+    if n == 0:
+        return "today"
+    if n == 1:
+        return "yesterday"
+    return "%d days ago" % n
+
+
+def product_section(today):
+    """Block 1, and the only block that answers goal 1.
+
+    Restructured 2026-08-09 with Hidde on the hierarchy question. Every other
+    number here is upstream of this one: search brings people, pages hold
+    them, and none of it counts until somebody actually sets out for a tree.
+
+    The design choice that matters is "days since", not the count. At these
+    volumes a daily count of zero prints the same thing every morning and
+    stops being read by the second week, while "31 days since anyone opened
+    directions" is a number that grows and gets harder to look away from."""
     key = os.environ.get("SUPABASE_SERVICE_KEY")
     if not key:
-        return None
-    since = (today - datetime.timedelta(days=1)).isoformat()
-    url = ("https://caimvxiyrtifilimlkqw.supabase.co/rest/v1/events"
-           "?select=name&created_at=gte.%sT00:00:00Z&created_at=lt.%sT00:00:00Z"
-           % (since, today.isoformat()))
-    req = urllib.request.Request(url, headers={
-        "apikey": key, "Authorization": "Bearer " + key})
+        return "Did the product happen: Supabase key absent, cannot say."
+    out = ["**Did the product happen**"]
+
+    # Every action we record, with yesterday's count and how long since the
+    # last one of each kind. 800 rows covers months at current volume.
     try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            rows = json.load(r)
+        rows, _ = _supa("/rest/v1/events?select=name,created_at"
+                        "&order=created_at.desc&limit=800", key)
     except Exception as e:
-        return "Site actions: events table unreadable (%s)." % e
-    if not rows:
-        line = "Site actions (yesterday): none recorded."
-    else:
-        counts = {}
-        for row in rows:
-            counts[row["name"]] = counts.get(row["name"], 0) + 1
-        line = "Site actions (yesterday): " + "; ".join(
-            "%s %d" % (k, v) for k, v in sorted(counts.items(), key=lambda kv: -kv[1]))
-    # Waitlist total: a fortnight-review criterion (2026-08-14, "whether a
-    # single waitlist signup exists"), so the digest states it daily. Count
-    # only, never the addresses.
+        rows = None
+        out.append("- Actions: events table unreadable (%s)" % str(e)[:70])
+    if rows is not None:
+        yday = (today - datetime.timedelta(days=1)).isoformat()
+        counts, last = {}, {}
+        for r in rows:
+            n = r.get("name") or "?"
+            if str(r.get("created_at"))[:10] == yday:
+                counts[n] = counts.get(n, 0) + 1
+            if n not in last:
+                last[n] = r.get("created_at")
+        # Named explicitly so an action that has NEVER fired still gets a line.
+        # A missing row is the loudest signal here and an empty dict hides it.
+        for name in ("directions", "collect", "walk-start", "app-cta", "share"):
+            last.setdefault(name, None)
+        for name in sorted(last, key=lambda k: (-counts.get(k, 0), k)):
+            out.append("- %-12s %d yesterday, last %s" % (
+                name + ":", counts.get(name, 0), _ago(_days_since(last[name], today))))
+
+    for label, path in (("Waitlist", "/rest/v1/waitlist"),
+                        ("Submissions", "/rest/v1/submissions")):
+        try:
+            head, hd = _supa(path + "?select=id&limit=1", key)
+            _, hd2 = _supa(path + "?select=id", key)
+            newest, _ = _supa(path + "?select=created_at&order=created_at.desc&limit=1", key)
+            total = len(hd2) if isinstance(hd2, list) else 0
+        except Exception as e:
+            out.append("- %s: unreadable (%s)" % (label, str(e)[:60]))
+            continue
+        try:
+            allrows, _ = _supa(path + "?select=created_at", key)
+            total = len(allrows)
+            newest_at = max((r.get("created_at") or "" for r in allrows), default=None)
+        except Exception:
+            newest_at = None
+        since = _days_since(newest_at, today)
+        if since is not None and since <= 1:
+            ATTENTION.append("a %s arrived %s (%d total)"
+                             % (label.rstrip("s").lower(), _ago(since), total))
+        out.append("- %-12s %d total, newest %s" % (
+            label + ":", total, _ago(since)))
+
     try:
-        req = urllib.request.Request(
-            "https://caimvxiyrtifilimlkqw.supabase.co/rest/v1/waitlist?select=id",
-            headers={"apikey": key, "Authorization": "Bearer " + key,
-                     "Prefer": "count=exact", "Range": "0-0"})
-        with urllib.request.urlopen(req, timeout=30) as r:
-            total = (r.headers.get("Content-Range") or "/0").split("/")[-1]
-        line += "\nWaitlist signups (total): %s." % total
-    except Exception:
-        pass
-    # Registered accounts. Asked for by Hidde on 2026-08-09: sign-in went live
-    # while the digest still only counted the waitlist, so the one number that
-    # says whether anyone actually opened an account was nowhere. Accounts live
-    # in auth.users and nothing else (there is no profiles table), so this is
-    # the GoTrue admin endpoint. A COUNT and a signed-up-yesterday figure, never
-    # an address: same posture as the waitlist line above, and the same reason,
-    # which is that a count is evidence and a mailing list is a liability.
-    try:
-        acc, page, new = 0, 1, 0
-        since = (today - datetime.timedelta(days=1)).isoformat()
-        while page <= 10:                      # 10k accounts is far past any
-            req = urllib.request.Request(      # plausible number here; a cap
-                "https://caimvxiyrtifilimlkqw.supabase.co/auth/v1/admin/users"
-                "?page=%d&per_page=1000" % page,   # stops a bug from looping
-                headers={"apikey": key, "Authorization": "Bearer " + key})
-            with urllib.request.urlopen(req, timeout=30) as r:
-                users = (json.load(r) or {}).get("users") or []
+        acc, newest_at, page = 0, None, 1
+        while page <= 10:
+            users, _ = _supa("/auth/v1/admin/users?page=%d&per_page=1000" % page, key)
+            users = (users or {}).get("users") or []
             acc += len(users)
             for u in users:
-                if (u.get("created_at") or "")[:10] == since:
-                    new += 1
+                c = u.get("created_at")
+                if c and (newest_at is None or c > newest_at):
+                    newest_at = c
             if len(users) < 1000:
                 break
             page += 1
-        line += "\nRegistered accounts (total): %d%s." % (
-            acc, ", %d new yesterday" % new if new else "")
+        since = _days_since(newest_at, today)
+        if since is not None and since <= 1:
+            ATTENTION.append("an account was opened %s (%d total)" % (_ago(since), acc))
+        out.append("- %-12s %d total, newest %s" % ("Accounts:", acc, _ago(since)))
     except Exception as e:
-        line += "\nRegistered accounts: unreadable (%s)." % e
-    return line
+        out.append("- Accounts: unreadable (%s)" % str(e)[:60])
+    return "\n".join(out)
 
 
-def audience_section(today, cf_token):
-    """Who they are, over 28 days: country, device, search language, landing
-    page, and how they arrived. Volume answers 'how many', this answers 'who',
-    and the two need different windows: a day is enough for a click count and
-    far too little for an audience, so this one deliberately looks back 28 days
-    while everything above it reports yesterday.
+def funnel_section(today, cf_token):
+    """Block 2: the same journey as rates rather than levels.
 
-    Every line carries its denominator. At the volumes this site currently
-    sees, a ranked list without one reads as knowledge and is arithmetic on
-    single digits."""
+    Levels tell you how big yesterday was; rates tell you which step is
+    leaking, and those need opposite work. 78 clicks and 0 actions is a
+    fact you cannot act on. "2.1% of people who see us click, 1.6 pages per
+    visit, 0% of visits do anything" points at one step.
+
+    Two weeks against the two before, because a day of this is noise."""
     import audience as A
+    rows = []
 
-    out = []
+    def rate(a, b):
+        return (100.0 * a / b) if b else 0.0
+
     q = A.gsc_client(today)
-    if q is None:
-        out.append("Audience: Search Console secrets absent.")
-    else:
-        countries = q(["country"], 8)
-        devices = q(["device"], 5)
-        pages = q(["page"], 8)
-        queries = q(["query"], 100)
-        # Totals come from an undimensioned query, never from summing a top-N
-        # list: the first version of this line added up the top 8 countries and
-        # printed the result as the site total, which understated it by a third.
-        totals = q([], 1)
-        tc = totals[0]["clicks"] if totals else 0
-        ti = totals[0]["impressions"] if totals else 0
-        out.append("Audience, 28 days of search (%d clicks, %d impressions):" % (tc, ti))
-
-        def line(label, rows, n=5):
-            bits = []
-            for r in rows[:n]:
-                k = (r["keys"][0] or "?").replace("https://ancienttrees.app", "") or "/"
-                bits.append("%s c%d/i%d" % (k, r["clicks"], r["impressions"]))
-            return "- %s: %s" % (label, "; ".join(bits) if bits else "none")
-
-        out.append(line("Countries", countries))
-        out.append(line("Devices", devices))
-        out.append(line("Landing pages", pages))
-
-        langs = {}
-        for r in queries:
-            a = langs.setdefault(A.classify(r["keys"][0]), {"c": 0, "i": 0, "n": 0})
-            a["c"] += r["clicks"]; a["i"] += r["impressions"]; a["n"] += 1
-        ranked = sorted(langs.items(), key=lambda kv: -kv[1]["i"])
-        # Directional only, and the reason is Google's, not ours: query-level
-        # data omits rare queries for privacy, so most of the clicks above
-        # never appear in any query row. Read the shape, never the totals.
-        out.append("- Search language (top %d named queries, crude match, most clicks "
-                   "are in queries Google withholds): %s" % (
-            len(queries), "; ".join("%s %dq c%d/i%d" % (k, v["n"], v["c"], v["i"])
-                                    for k, v in ranked)))
-
+    if q is not None:
+        def window(d0, d1):
+            r = q([], 1, {"startDate": (today - datetime.timedelta(days=d0)).isoformat(),
+                          "endDate": (today - datetime.timedelta(days=d1)).isoformat()})
+            return (r[0]["clicks"], r[0]["impressions"]) if r else (0, 0)
+        c1, i1 = window(14, 0)
+        c0, i0 = window(28, 14)
+        rows.append("- Seen to clicked: %.1f%% (%d of %d) vs %.1f%% the fortnight before"
+                    % (rate(c1, i1), c1, i1, rate(c0, i0)))
     if cf_token:
         try:
             a, since = A.rum(cf_token, today)
-        except Exception as e:
+        except Exception:
             a = None
-            out.append("- On-site beacon: unreadable (%s)" % str(e)[:80])
         if a:
             days = a.get("days") or []
             pv = sum(d["count"] for d in days)
             vis = sum(d["sum"]["visits"] for d in days)
-
-            def dim(rows, key, n=5):
-                bits = []
-                for r in (rows or [])[:n]:
-                    v = r["dimensions"].get(key) or "(direct)"
-                    bits.append("%s %d" % (str(v)[:26], r["count"]))
-                return "; ".join(bits) if bits else "none"
-
-            out.append("On the site since %s (%d visits, %d pageviews, %.1f pages per visit):"
-                       % (since, vis, pv, (pv / vis) if vis else 0))
-            out.append("- Countries: " + dim(a.get("countries"), "countryName"))
-            out.append("- Devices: " + dim(a.get("devices"), "deviceType", 4))
-            out.append("- Browsers: " + dim(a.get("browsers"), "userAgentBrowser", 4))
-            out.append("- Arrived via: " + dim(a.get("refs"), "refererHost"))
-            out.append("- Opened: " + dim(a.get("paths"), "requestPath", 8))
-    return "\n".join(out)
+            rows.append("- Pages per visit: %.1f (%d visits, %d pageviews since %s)"
+                        % ((pv / vis) if vis else 0, vis, pv, since))
+            key = os.environ.get("SUPABASE_SERVICE_KEY")
+            if key and vis:
+                try:
+                    ev, _ = _supa("/rest/v1/events?select=id&created_at=gte.%sT00:00:00Z"
+                                  % since, key)
+                    rows.append("- Visits that did something: %.1f%% (%d actions on %d visits)"
+                                % (rate(len(ev), vis), len(ev), vis))
+                except Exception:
+                    pass
+    return "**The funnel, as rates**\n" + ("\n".join(rows) if rows else "- no data")
 
 
 def fetch_machine(today):
@@ -573,6 +593,7 @@ def fetch_machine(today):
         except Exception:
             quiet.append(label + " (status unreadable)")
     if quiet:
+        ATTENTION.append("scheduled workflows silent past their slot: " + "; ".join(quiet))
         line += ("\nWATCHDOG: scheduled workflows silent past their slot: "
                  + "; ".join(quiet) + ". Kick with `gh workflow run <file>` and "
                  "treat a repeat as rung 2.")
@@ -647,12 +668,22 @@ def build_entry(days, today, gsc_text):
        y_uniq, b_uniq, delta(y_uniq, b_uniq),
        y_req, trend, top_line)
 
+    # The front door. Most mornings the honest answer is that nothing here
+    # needs him, and saying so plainly is what keeps the report readable on
+    # the mornings when something does.
+    verdict = ("**Today: nothing here needs you.** The blocks below are the "
+               "standing picture."
+               if not ATTENTION else
+               "**Today: " + "; ".join(ATTENTION) + ".**")
+
     return """## %s (previous UTC day)
+
+%s
 
 %s%s
 
 **Conclusion:** %s
-""" % (yday.isoformat(), zone_block, gsc_text, conclusion)
+""" % (yday.isoformat(), verdict, zone_block, gsc_text, conclusion)
 
 
 def main():
@@ -690,37 +721,45 @@ def main():
         print("SKIP: Cloudflare fetch failed: %s" % e)
         return 1
 
+    # The hierarchy, agreed with Hidde 2026-08-09. The old entry was a
+    # collection: fifteen true things in the order they happened to be
+    # written. The order below is the order in which a bad number changes
+    # what we do tomorrow, and anything that has not changed a decision in a
+    # fortnight should be demoted out of it rather than kept for tidiness.
+    #
+    #   1. did the product happen        goal 1, the only block that is the point
+    #   2. the funnel, as rates          which step leaks, which levels cannot say
+    #   3. demand we are wasting         a work queue, not a report
+    #   4. who they are                  slow-moving, three lines daily, full on Mondays
+    #   5. supply and machine            it matters, it rarely changes the day
+    blocks = []
+
+    def block(fn, *a):
+        try:
+            t = fn(*a)
+            if t:
+                blocks.append(t)
+        except Exception as e:
+            blocks.append("%s: failed today (%s)." % (fn.__name__, str(e)[:90]))
+
+    block(product_section, today)
+    block(funnel_section, today, token)
+
     gsc_latest = None
     try:
         gsc_text, gsc_latest = gsc_section(fetch_gsc(today))
-    except Exception as e:  # GSC failure must never kill the Cloudflare half
-        gsc_text = "Search Console: fetch failed today (%s); numbers resume tomorrow." % e
-
-    try:
-        gsc_text += "\n\n" + fetch_rum(token, today)
+        blocks.append("**Where demand is going to waste**\n\n" + gsc_text)
     except Exception as e:
-        gsc_text += "\n\nWeb Analytics (beacon): fetch failed today (%s)." % e
+        blocks.append("Search Console: fetch failed today (%s); numbers resume tomorrow." % e)
 
-    # The audience cut. Hidde, 2026-08-09: "ik heb nog steeds niet het gevoel
-    # dat ik echt analyse heb van onze gebruikers." The lines above are volume,
-    # which is the right thing daily and says nothing about who these people
-    # are. This is a 28-day cut by country, device, language and landing page,
-    # and it lives inside the digest rather than in a file of its own, because
-    # a separate report is a report nobody opens.
-    try:
-        gsc_text += "\n\n" + audience_section(today, token)
-    except Exception as e:
-        gsc_text += "\n\nAudience: fetch failed today (%s)." % e
+    # Monday gets the full audience cut, every other day gets the three lines
+    # that can actually move. A 28-day window barely differs from yesterday's
+    # 28-day window, and printing it in full daily buries the blocks above it.
+    block(audience_section, today, token, today.weekday() != 0)
 
-    try:
-        ev = fetch_events(today)
-        if ev:
-            gsc_text += "\n\n" + ev
-        m = fetch_machine(today)
-        if m:
-            gsc_text += "\n\n" + m
-    except Exception as e:
-        gsc_text += "\n\nMachine utilization: fetch failed today (%s)." % e
+    block(fetch_rum, token, today)
+    block(fetch_machine, today)
+    gsc_text = "\n\n".join(blocks)
 
     entry = build_entry(days, today, gsc_text)
     # While the CF zone is dormant (domain not proxied), its zeros must not drive
