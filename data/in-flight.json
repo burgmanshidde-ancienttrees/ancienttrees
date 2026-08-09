@@ -32,6 +32,12 @@
       "kind": "verify",
       "by": "night-run",
       "claimed_at": "2026-08-09T10:26:22+00:00"
+    },
+    {
+      "target": "chicago",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-09T12:01:25+00:00"
     }
   ]
 }
