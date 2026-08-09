@@ -1,0 +1,37 @@
+---
+// Without this file a dead link on our own domain serves GitHub Pages' own
+// "Page not found" page, which is what ancienttrees.app did until 2026-08-09:
+// someone following a stale link landed on GitHub's branding, with no way
+// back to the trees. A 404 still returns 404 (GitHub Pages serves this file
+// with that status), so nothing here asks to be indexed.
+import Base from "../layouts/Base.astro";
+import { BASE_URL } from "../lib/site-config";
+
+const title = "Page not found";
+const description = "That page is not here. The map and the city list are, though.";
+---
+<Base
+  title={title}
+  description={description}
+  canonical={`${BASE_URL}/404`}
+  ogType="website"
+  headExtra={'<meta name="robots" content="noindex">'}
+>
+  <main class="content-page">
+    <h1>That page is not here</h1>
+    <p>
+      The link may be old, or we may have moved something. Nothing is lost: every tree
+      on the site is reachable from the map or the city list.
+    </p>
+    <p>
+      <a href="/explore">Open the map</a> &middot;
+      <a href="/cities">All cities</a> &middot;
+      <a href="/in-season">What is at its best right now</a> &middot;
+      <a href="/">Home</a>
+    </p>
+    <p>
+      If you followed a link from somewhere and it should have worked,
+      <a href="/contribute">tell us</a> and we will fix it.
+    </p>
+  </main>
+</Base>
