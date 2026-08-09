@@ -1,0 +1,54 @@
+[
+  {
+    "id": "bos_007",
+    "name": "The Larz Anderson Hinoki Cypress",
+    "species": "Hinoki Cypress bonsai (Chamaecyparis obtusa)",
+    "age_estimate": "roughly 289 years (started 1737)",
+    "age_min": 288,
+    "age_max": 290,
+    "location": {
+      "address": "Bonsai and Penjing Pavilion, Dana Greenhouses, Arnold Arboretum of Harvard University, 1050 Centre Street",
+      "latitude": 42.3031491,
+      "longitude": -71.1243292,
+      "neighbourhood": "Dana Greenhouses, Arnold Arboretum, Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://en.wikipedia.org/wiki/Larz_Anderson_Bonsai_Collection (citing Larz Anderson's own records: 'the oldest of these Hinoki Cypress was started in 1737')",
+      "https://www.wbur.org/news/2026/04/23/boston-arnold-arboretum-bonsai-trees-spring (WBUR News, 2026-04-23, independent of the Arboretum, confirms the '289-year-old hinoki cypress' on display this season and quotes curator Chris Copeland calling it one of the oldest cultivated bonsai in North America, second only to three at the Brooklyn Botanic Garden)",
+      "https://jamaicaplainnews.com/2024/04/16/nearly-three-centuries-old-bonsai-cypress-lives-at-arnold-arboretum/666645 (Jamaica Plain News, 2024-04-16, local outlet independent of the Arboretum, corroborates the 1737 origin and confirms it alive and maintained by bonsai master Jun Imabayashi)"
+    ],
+    "access": "Free, public arboretum. The bonsai itself is on view only mid-April through late October at the Bonsai and Penjing Pavilion, and staff rotate roughly 30 trees through the display every two to three weeks, so this specific specimen is not guaranteed to be out on any given visit; the pavilion posts what is currently on view.",
+    "transport": "Forest Hills MBTA station (Orange Line), roughly 10 minute walk to the Centre Street Gate, then a further 5 minute walk to the Dana Greenhouses",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Bought to America by Larz Anderson, a Harvard graduate and US ambassador to Japan, who purchased it from the Yokohama Nursery Company around 1913 along with roughly 39 other bonsai and shipped them to his Brookline estate. It sat on his terraces for 24 years; after Larz and Isabel Anderson died (1937, 1948) the collection went to the Arnold Arboretum, which built the Bonsai and Penjing Pavilion to house it. By Anderson's own records the oldest of the surviving hinoki cypresses in the collection (seven of the original purchase remain, ranging 145 to roughly 270+ years at the time of a 2006 Arnoldia piece) started life in 1737, making this one of the oldest documented bonsai in North America, second only to three specimens at the Brooklyn Botanic Garden per the Arboretum's own curator. As of the 2026 season it is confirmed alive and back on rotation. Honest caveat: the 1737 date traces to Anderson's own records as the root source (repeated by Wikipedia, the Arboretum's Arnoldia article, and independently by WBUR and Jamaica Plain News in recent years), so the age is one lineage of evidence rather than two fully independent datings; treat as institutional record plus independent recent-alive confirmation, not two unrelated dating methods. A 2017 clone of the same original tree is displayed alongside it, useful for the story: ancient original beside its own cutting. This is a container tree in a display pavilion, not a landscape tree, which is unusual for this project; it clears 'genuinely old' and 'historically significant' by a wide margin and is a single obvious point to stand at (the pavilion), but it is worth Hidde's eyes on whether a potted bonsai fits the site's promise of standing under something epic and old versus looking down into a pot. Flagging for that reason rather than a sourcing gap."
+  },
+  {
+    "id": "bos_008",
+    "name": "The Sapporo Katsuras",
+    "species": "Katsura (Cercidiphyllum japonicum)",
+    "age_estimate": "roughly 148 years (seed arrived 1878)",
+    "age_min": 147,
+    "age_max": 149,
+    "location": {
+      "address": "Arnold Arboretum of Harvard University, along Meadow Road",
+      "latitude": 42.3005,
+      "longitude": -71.1215,
+      "neighbourhood": "Meadow Road, Arnold Arboretum, Jamaica Plain"
+    },
+    "verified_sources": [
+      "https://arboretum.harvard.edu/plant-bios/katsura/ (accessions 882*A and 882*B, seed from Professor W. S. Clark, arrived 1878)",
+      "https://arboretum.harvard.edu/arnoldia-stories/katsura-in-winter (Arnoldia, confirms both trees living 'along Meadow Road', describes their winter bark and persistent seed follicles firsthand)"
+    ],
+    "access": "Free, public arboretum, open dawn to dusk",
+    "transport": "Forest Hills MBTA station (Orange Line), roughly 15-20 minute walk via the Forest Hills Gate to Meadow Road, or the Arborway entrance",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "William S. Clark, president of Massachusetts Agricultural College (and the source of the 'Boys, be ambitious' quote), traveled to Japan in 1876 to help found Sapporo Agricultural College, now Hokkaido University. He collected katsura seed locally and sent an allotment to his friend Charles Sprague Sargent, the Arnold Arboretum's first director; it arrived in 1878, six years after the Arboretum itself was founded. The resulting two trees, accessions 882*A and 882*B, are the oldest katsuras in the Arboretum's collection of 35 living specimens and among the oldest documented katsuras in North America. They stand along Meadow Road, both multi-stemmed and each showing the species' distinctive silvery-gray bark peeling in narrow rectangular sheets through winter, with curved seed follicles that persist on the female tree into midwinter before releasing winged seed on the wind. Sargent visited Hokkaido himself in 1892 and wrote of katsura as a defining tree of the island's moist lowland woods, so the Meadow Road pair also mark the start of what became a long institutional relationship between the Arboretum and Japanese botany, the same relationship that later brought Wilson's expeditions and the dawn redwood introduction. Honest caveat: both sources are Arboretum-authored (a plant-bio page and an Arnoldia magazine piece), so this is thorough institutional documentation rather than two independent institutions; no outside news or academic source confirming these two specific accessions was found this pass. The Arnoldia piece, written by a visiting researcher rather than Arboretum staff, does independently confirm they are alive and describes seeing them in person, which is the strongest 'alive now' evidence available. In autumn the fallen leaves smell distinctly of burnt sugar or cotton candy, a well-known katsura trait worth naming in the story.",
+    "best_time": {
+      "months": [10],
+      "kind": "autumn colour",
+      "label": "October, when the falling leaves turn apricot gold and smell of burnt sugar"
+    }
+  }
+]
