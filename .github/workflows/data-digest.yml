@@ -6,7 +6,12 @@ on:
     # exists before Hidde's morning. The nightly research runs read DATA.md
     # for their own conclusions; this workflow only produces the numbers.
     - cron: "15 5 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rewrite today's entry even if it already exists"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -31,7 +36,7 @@ jobs:
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
-        run: python3 scripts/daily_digest.py
+        run: python3 scripts/daily_digest.py ${{ inputs.force && '--force' || '' }}
 
       - name: Commit if there is a new entry
         run: |
