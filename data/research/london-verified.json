@@ -1,0 +1,26 @@
+[
+  {
+    "id": "lon_020",
+    "name": "The Inner Temple Mulberry",
+    "species": "Black Mulberry (Morus nigra)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Benchers' Walk, Inner Temple Garden, by the railings outside Paper Buildings, City of London EC4Y",
+      "latitude": 51.5112,
+      "longitude": -0.1086,
+      "neighbourhood": "Temple, City of London"
+    },
+    "verified_sources": [
+      "https://www.moruslondinium.org/map/inner-temple-garden",
+      "https://www.innertemple.org.uk/estate-garden/the-inner-temple-garden/the-garden/history-of-the-garden/"
+    ],
+    "access": "Public, open weekdays 12:30pm-3:00pm only (not full daily access)",
+    "transport": "Temple station, 4 minute walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Existence and species confirmed by two independent sources: Morus Londinium's Inner Temple survey (heritage/notable mulberry, girth 150cm, height 10m, by the railings of Benchers' Walk outside Paper Buildings) and the Inner Temple's own official garden-history page, which names the black mulberry as one of the survivors of the garden's 'ancient orchard' alongside a large-fruiting walnut and a quince, i.e. the Inner Temple itself frames it as historic rather than ornamental planting. No source gives a planting date or age; black mulberries are notoriously hard to age and can live 200-400+ years, but that is not a substitute for a source, so age_estimate is left undocumented rather than guessed. Coordinates are the garden's approximate centre near Benchers' Walk, not a tree-level pin, hence approximate. Access is real but restricted to a 2.5 hour weekday window, worth stating plainly rather than implying casual walk-up access. This tree sits about 250m from the already-published lon_019 (The Fountain Court Mulberries, Temple) and forms a natural pair/cluster point for a City/Temple walk alongside lon_003 (Cheapside Plane) and lon_011 (St Paul's Churchyard Planes), both roughly 1.2-1.4km away.",
+    "leads_resolved": "Inner Temple Garden Black Mulberry"
+  }
+]

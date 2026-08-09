@@ -1,0 +1,74 @@
+{
+  "city": "Copenhagen",
+  "trees": [
+    {
+      "id": "cop_011",
+      "name": "The Honey Locust of Assistens",
+      "species": "Honey Locust (Gleditsia triacanthos)",
+      "age_estimate": "at least 85 years, likely older",
+      "age_min": 90,
+      "age_max": 150,
+      "location": {
+        "address": "Assistens Kirkegård, Section E (near the middle of the section), Nørrebro, Copenhagen",
+        "latitude": 55.69206,
+        "longitude": 12.55086,
+        "neighbourhood": "Nørrebro"
+      },
+      "verified_sources": [
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1476",
+        "https://www.dendron.dk/aarsskrift/docs/6.pdf"
+      ],
+      "access": "Free, open access; Assistens Kirkegård functions as both cemetery and public park, open 07:00-22:00 in summer and 07:00-19:00 in winter",
+      "transport": "Nørrebros Runddel metro station (M3 Cityringen), roughly 10 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Two independent sources 78 years apart, both placing a Gleditsia triacanthos (Tretorn/Honey Locust) in the SAME section (E) of Assistens Kirkegård: (1) the Danish Dendrological Society's 2019 GPS-verified register entry (Individual_ID=1476), alive and healthy, height 16m, circumference 1.18m, measured 1.3m up, noted for its few bark-thorns sitting 2.5-3m up the trunk; (2) the Society's own 1952 yearbook article by Jens Ostergaard, a nationwide survey of Gleditsia triacanthos in Danish gardens, which lists entry no. 6 as 'Assistens Kirkegaard, E 106', observed 1949 at 12.0m tall growing on a former rampart (Tidl. voldanlaeg) with clay loam soil, and states the tree was ALREADY written up by Henry E. Nielsen in a 1941 magazine feature 'Smukke Traeer' (Gartner-Tidende). So the same specimen (or its direct predecessor in the same spot) is documented continuously from at least 1941 through 1949 to 2019, a growth from 12m to 16m over 70 years, which is a plausible trajectory for the species. Age range here is conservative: known and locally notable since 1941 (85 years before this pass), so a planting some decades before that is likely, hence the wider ceiling. Honey Locust is an uncommon species for Danish gardens (Ostergaard's whole article exists because it was rare enough to be worth cataloguing nationally, only 35 garden sites known in Denmark at the time), which is part of what makes this specimen collectible. Folds in the leads-file entry for 'Tretorn' (dendron ID 1476) which can be removed from leads."
+    },
+    {
+      "id": "cop_012",
+      "name": "The Pacifier Tree",
+      "species": "Common Hornbeam (Carpinus betulus)",
+      "age_estimate": "not documented",
+      "age_min": 25,
+      "age_max": 80,
+      "location": {
+        "address": "Frederiksberg Have, Frederiksberg",
+        "latitude": 55.67649,
+        "longitude": 12.52796,
+        "neighbourhood": "Frederiksberg"
+      },
+      "verified_sources": [
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=842",
+        "https://frederiksbergliv.dk/frederiksberg/suttetraeet-hoestes-en-gang-om-aaret-faa-hele-historien-om-det-beroemte-trae-og-om-hvad-der-sker-med-alle-sutterne"
+      ],
+      "access": "Free, open access; Frederiksberg Have is a public park, protected (fredet) under Danish nature conservation law",
+      "transport": "Frederiksberg Alle metro station (M1/M2/M3), roughly 10-12 minute walk via Frederiksberg Runddel, the garden's main entrance",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Named and registered specifically as 'Suttetraeet' (the pacifier tree) by the Danish Dendrological Society (Individual_ID=842, GPS-verified 12-10-2016), a hornbeam in Frederiksberg Have that is the site of a well-known Danish tradition: parents hang their children's used pacifiers on it, a custom the local outlet frederiksbergliv.dk independently confirms has run since 2004 with an annual harvest every November (full article text was behind a 503 on this pass; the confirmed facts come from the visible headline/teaser plus the register). This is a genuinely singular, famous, easy-to-find collectible point, but qualifies on cultural significance rather than age: the register entry carries NO height, circumference or age data at all, unlike every other Assistens/Frederiksberg register entry in this file, so nothing here should be read as measured. Age range given is a rough, honestly-labelled guess for an established garden hornbeam sturdy enough to have carried a public tradition since 2004, not a figure from any source. curation_status flagged for this reason; the writer should lead with the tradition, not a false age claim. A second Avnbøg entry (Individual_ID=841) sits nearby in the same leads group and was not chased this pass."
+    },
+    {
+      "id": "cop_013",
+      "name": "The Sky-Reacher of Assistens",
+      "species": "Tree of Heaven (Ailanthus altissima)",
+      "age_estimate": "not documented",
+      "age_min": 60,
+      "age_max": 120,
+      "location": {
+        "address": "Assistens Kirkegård, Section F (north field, near Nørrebrogade/the station area), Nørrebro, Copenhagen",
+        "latitude": 55.69296,
+        "longitude": 12.55018,
+        "neighbourhood": "Nørrebro"
+      },
+      "verified_sources": [
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1474",
+        "https://bennyfriisgunno.dk/assistens/planter.htm"
+      ],
+      "access": "Free, open access; Assistens Kirkegård functions as both cemetery and public park, open 07:00-22:00 in summer and 07:00-19:00 in winter",
+      "transport": "Nørrebros Runddel metro station (M3 Cityringen), roughly 5-7 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "The Danish name Skyraekker ('sky-reacher') is a distinctive one, and it is the tallest/largest-girth exotic tree the Danish Dendrological Society registered in the whole cemetery: 15.5m tall, 4.01m circumference, GPS-verified 26-11-2019 (Individual_ID=1474). Independent corroboration: Dagmar Maria Hoenisch's dedicated survey of Assistens Kirkegaard's plantings (bennyfriisgunno.dk, a cand.scient-authored overview of the cemetery's notable trees) names 'Skyraekker' by its Danish name among a short list of the cemetery's exotic trees worth visiting, alongside other species independently matched to register entries in this file (duetrae/handkerchief tree, tempeltrae/ginkgo). Only one Ailanthus is registered at Assistens, so the match is unambiguous, though this second source gives no location detail of its own, only confirms the species stands somewhere in the cemetery. FLAGGED for vitality: the 2019 register logged it 'levende, svag' (alive but weak) with severe bark scraping at the root on the west side, and that observation is now roughly seven years old; nothing found this pass updates it. Age is not documented anywhere; the range given is a rough inference from girth only, not a sourced figure. A future pass or reader should re-check this tree's condition before it ships without caveat."
+    }
+  ]
+}
