@@ -185,6 +185,27 @@ Addresses are deliberately not listed yet: the right desk is a named journalist
 who has written about trees or cities recently, and that is a lookup worth
 doing per outlet at the moment of sending rather than a list that goes stale.
 
+## De verzendmachine is blijvend (vastgelegd 2026-08-09 op Hidde's verzoek)
+
+Elke sessie kan mailen namens Hidde, en zo werkt het, blijvend:
+
+1. **De credentials staan klaar** in `~/.ancienttrees-mail.env` op zijn
+   machine (Gmail app-wachtwoord, buiten de repo). Een sessie sourcet dat
+   bestand en `scripts/outreach_send.py` doet de rest.
+2. **Het mandaat-patroon**: de sessie schrijft of toont de batch, Hidde leest
+   en zegt "verstuur" (of "goedgekeurd"), de sessie zet de batch-status om en
+   verstuurt waar hij bij is. Dat ene woord per batch is geen bureaucratie
+   maar het ontwerp: de mails dragen zijn naam, dus hij heeft de tekst gezien
+   (hard rule 4). Proven flow: batch 001, 2026-08-08, vijf mails.
+3. **De vangrails zitten in de code** en gelden voor elke sessie: geen
+   verzending zonder status `approved_by_hidde`, nooit tweemaal hetzelfde
+   adres (data/outreach-sent.json), maximaal tien per dag, elke verzending
+   gelogd in dit bestand.
+4. **Wat een sessie nooit doet**: versturen zonder zijn woord voor die batch,
+   en de nachtruns versturen helemaal niets. Wil Hidde ooit volautomatisch
+   (zonder tekst-inzage per batch), dan is dat een expliciete nieuwe
+   beslissing en wisselt de ondertekening naar "Ancient Trees".
+
 ## Rules for all of it
 
 - **Drafts only from me, always.** He sends, from his own address.
