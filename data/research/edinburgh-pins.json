@@ -1,0 +1,107 @@
+[
+  {
+    "id": "edi_001",
+    "latitude": 55.9259,
+    "longitude": -3.1406,
+    "new_precision": "approximate",
+    "evidence": "Could not improve. Craigmillar Castle is managed by Historic Environment Scotland, not Edinburgh Council; queried the council's own Trees open-data FeatureServer (services-eu1.arcgis.com/.../Trees/FeatureServer/41) for Site LIKE '%Craigmillar%' (644 features returned, all 'Craigmillar Castle Park', the surrounding country park) and for CommonName LIKE '%Yew%' citywide (13 records) -- no Taxus baccata entries at Craigmillar at all, confirming the castle's own walled courtyard is outside the council register's coverage. Did not check HES's Canmore database for a courtyard site plan within the time window; that is the next lead for a future pass, not attempted here. Pin stays at the castle building footprint, honestly short of courtyard-specific."
+  },
+  {
+    "id": "edi_002",
+    "latitude": 55.967,
+    "longitude": -3.213,
+    "new_precision": "approximate",
+    "evidence": "Could not improve, but negative evidence gathered. Queried RBGE's Catalogue of the Living Collections (data.rbge.org.uk) and GardenExplorer (rbge.gardenexplorer.org/taxon-3191.aspx) for Castanea sativa: the Edinburgh-garden accession beds on record are C02 (Lawn to North of Copse), H26, K01 (Herbarium Lawns, Castanea bed) and R71 (Rock Garden, North Lawn) -- no 'Pond Lawn' accession exists among them. This is consistent with the story's own claim that this specific veteran tree predates the garden's 1820 move and was never formally accessioned, so no RBGE database record exists to pin it more tightly than the area name (Pond Lawn) already used. Area-level pin remains the honest ceiling."
+  },
+  {
+    "id": "edi_003",
+    "latitude": 55.959261,
+    "longitude": -3.3252321,
+    "new_precision": "confirmed",
+    "evidence": "No change; already confirmed by a prior pass. FLAG FOR THE MAIN SESSION: the existing entry's own notes state this coordinate was upgraded to confirmed on 2026-07-30 using a direct query against the Woodland Trust's Ancient Tree Inventory ArcGIS FeatureServer (record 102509). This brief marks the Woodland Trust ATI as absolutely off-limits pending written permission (non-commercial licence, public mapping forbidden without it). I have not touched, re-queried or re-cited Woodland Trust data this pass, and did not alter this entry, but the pre-existing 'confirmed' status of edi_003 rests on a source the project can no longer use going forward. Worth a decision in session: whether the already-published pin needs a source substitution or stands as grandfathered fact-checking done before the restriction."
+  },
+  {
+    "id": "edi_004",
+    "latitude": 55.9665,
+    "longitude": -3.2095,
+    "new_precision": "approximate",
+    "evidence": "Could not improve within the time window. Searched RBGE's GardenExplorer for Cedrus libani; results only surfaced Cedrus deodara (Himalayan Cedar, a different RBGE tree, already blocked as dead per data/leads/edinburgh.json). The Living Collections catalogue's own name-search form is an ASP.NET postback form that does not return results to a plain GET/curl request, so a full search was not completed. Area-level pin near the Glasshouses remains the honest ceiling; a future session with a real browser could search the form directly."
+  },
+  {
+    "id": "edi_005",
+    "latitude": 55.971688,
+    "longitude": -3.277751,
+    "new_precision": "confirmed",
+    "evidence": "No change; already confirmed by a prior pass via the City of Edinburgh Council's own Trees FeatureServer (an open OGL dataset, not Woodland Trust), converting OSGB36 eastings/northings for the five Lauriston Castle Araucaria araucana records. This source is clean of the ATI restriction. No further action taken."
+  },
+  {
+    "id": "edi_006",
+    "latitude": 55.9529,
+    "longitude": -3.1719,
+    "new_precision": "approximate",
+    "evidence": "Could not improve. The Palace of Holyroodhouse garden is Crown property (Royal Collection Trust), not council land: queried the Edinburgh Council Trees FeatureServer for Site LIKE '%Holyrood%' and got 8 records, all on Holyrood Road or Holyrood Park Road/Playing Fields, i.e. public roadside trees outside the palace walls, none inside the 10-acre private garden itself. No RBGE angle applies since this is not an RBGE site. No published plan of the garden's tree positions was found. Garden-level pin remains the honest ceiling; genuinely estate-level, not a gap that more searching in this session would likely close."
+  },
+  {
+    "id": "edi_007",
+    "latitude": 55.9496,
+    "longitude": -3.2051,
+    "new_precision": "approximate",
+    "evidence": "Could not improve. Edinburgh Council Trees FeatureServer's only 'Cuthbert' match is 'St Cuthberts RC Primary School' (61 records), a different, unrelated St Cuthbert's site, not the C of S church at Lothian Road -- churchyard trees on church land are outside the council's own-estate register. Queried OSM/Overpass for natural=tree nodes within 400m of the church (via lz4.overpass-api.de, a working mirror after overpass-api.de and overpass.kumi.systems both failed/timed out and overpass.osm.ch returned an apparently stale empty dataset): found generic Bing-bulk-imported tree points with no species or name tags anywhere nearby, so no way to identify which node, if any, is the Camperdown elm without guessing. Building-level pin (church geocode) remains the honest ceiling."
+  },
+  {
+    "id": "edi_008",
+    "latitude": 55.977,
+    "longitude": -3.3,
+    "new_precision": "approximate",
+    "evidence": "Could not improve within the time window. Edinburgh Council Trees FeatureServer returned 222 records for Site LIKE '%Cramond%', split across 'Cramond Vale' and 'Cramond Primary School' clusters, but cross-referencing which single record (if any) is the specific rock-ledge sycamore on the River Almond Walkway foreshore was not completed before the stop condition. Left as approximate rather than guessing; a future pass could narrow by Easting/Northing against the walkway's own path geometry."
+  },
+  {
+    "id": "edi_009",
+    "latitude": 55.9218,
+    "longitude": -3.203,
+    "new_precision": "approximate",
+    "evidence": "Genuinely not improvable, and that is the correct answer rather than a gap: this entry is an ensemble claim about the reserve's tree cover generally (per its own notes), not one dated individual specimen, so no single coordinate would be honest regardless of data quality. Confirmed the reserve is heavily wooded: Edinburgh Council Trees FeatureServer returns 1109 records for Site LIKE '%Hermitage%' ('Hermitage Of Braid & Blackford Hill'), dominated by Fagus sylvatica and Acer pseudoplatanus at Middle Aged/Mature growth stages, consistent with the story. No single-point upgrade applies to an ensemble entry."
+  },
+  {
+    "id": "edi_010",
+    "latitude": 55.9413,
+    "longitude": -3.2817,
+    "new_precision": "approximate",
+    "evidence": "Could not improve, and this is the specific case the brief flagged as likely confirmable, so recording why it was not: queried OSM/Overpass (lz4.overpass-api.de) for natural=tree within 400-500m of Corstorphine Old Parish Church, Kirk Loan (55.9413,-3.2817, cross-checked against Nominatim). Found 1458 tree nodes in the area, but every one is an untagged Bing-bulk-import point (natural=tree, denotation=urban only) with no species, genus or name tag -- there is no tagged 'Corstorphine Sycamore' node to find. Picking one of the 1458 anonymous points as 'the' tree would be fabricated precision, so this stays at the church-level geocode. Edinburgh Council Trees FeatureServer's only 'Corstorphine' match is 'Corstorphine Hill Cemetery' (2000 records), a different site entirely, confirming church-land trees are outside that register too."
+  },
+  {
+    "id": "edi_011",
+    "latitude": 55.9705,
+    "longitude": -3.2165,
+    "new_precision": "approximate",
+    "evidence": "Could not improve within the time window. RBGE GardenExplorer's Sequoiadendron giganteum location list (rbge.gardenexplorer.org/taxon-17257.aspx) runs to 109 entries across 6 pages, and the first page (20 entries) is entirely Dawyck-garden beds (V03-V45 codes); the Edinburgh/Upper Woodland Garden entries, if present, are on a later page reached only via an ASP.NET JS postback that plain curl cannot follow. Ran out of window before completing pagination. Area-level pin (Upper Woodland Garden) remains the honest ceiling; a future session with a real browser could page through and find the Woodland Garden bed code."
+  },
+  {
+    "id": "edi_012",
+    "latitude": 55.9648,
+    "longitude": -3.2065,
+    "new_precision": "approximate",
+    "evidence": "Could not improve within the time window. Did not locate a working RBGE GardenExplorer taxon page for Sorbus pseudomeinichii / Hedlundia pseudomeinichii this pass (site search and a direct search.aspx query both failed to surface a taxon id). Left as approximate at the East Gate Lodge area-level pin already in the file; a future pass should try the ASP.NET search form directly in a browser session rather than curl."
+  },
+  {
+    "id": "edi_013",
+    "latitude": 55.9655,
+    "longitude": -3.2145,
+    "new_precision": "approximate",
+    "evidence": "Evidence strengthened, precision unchanged. RBGE's own GardenExplorer (rbge.gardenexplorer.org/taxon-5364.aspx) lists this tree's accession 19280013*A at bed M12, 'Caledonian Hall Area - Edinburgh', independently corroborating the story's stated location from RBGE's official accession-location database rather than only the tree-sponsorship page already cited. This is a genuine second, more granular RBGE source, but no bed-boundary coordinate for M12 was available from this database via a plain fetch (the interactive garden map is a JS-driven ASP.NET control, not a coordinate API), so moving the pin would mean inventing a tighter point rather than using a verified one. Kept approximate per the rule against faking precision; flagging the bed code (M12) so a future pass with map access can finish the job."
+  },
+  {
+    "id": "edi_014",
+    "latitude": 55.9668,
+    "longitude": -3.211,
+    "new_precision": "approximate",
+    "evidence": "Evidence strengthened, precision unchanged. RBGE's GardenExplorer (rbge.gardenexplorer.org/taxon-11093.aspx) confirms the specific Chinese Hillside individual named in the story, accession 19480054*H, sits at bed H19, 'Chinese Hillside - Edinburgh' -- narrowing from 'somewhere on Chinese Hillside' (5 scattered specimens from the same 1948 seed lot exist across the garden) to a single named bed. The brief allows a bed-level pin to count as confirmed when the record is that precise; I chose not to apply that here because I have no coordinate for bed H19 itself, only its name, and moving the existing lat/long without a verified point would be guessing dressed as confirmation. Recording the bed code (H19) so a future pass with access to RBGE's garden map (rbge.org.uk/media/cw3bwbtw/tree-map.pdf or the interactive map.aspx) can place a real coordinate and upgrade honestly."
+  },
+  {
+    "id": "edi_015",
+    "latitude": 55.9662,
+    "longitude": -3.2095,
+    "new_precision": "approximate",
+    "evidence": "Not re-investigated this pass beyond what the file already records (bed E46 via RBGE's adoption map, accession SABE 1317, from a prior pass). Ran out of window before searching GardenExplorer for Sorbus/Griffitharia hemsleyi to cross-check the bed code against the Chinese Hillside cluster the way edi_013 and edi_014 were. No change made; worth a quick follow-up given the pattern that worked twice above."
+  }
+]

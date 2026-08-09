@@ -120,7 +120,8 @@
       },
       "curation_status": "flagged",
       "notes": "Superlative softened per hard rule 8: some tourism sources call this outright 'the oldest and largest ash in Edinburgh', but the Woodland Trust's own page, the more authoritative source, hedges to 'one of the oldest'. No specific age or planting date exists for this individual tree; the range here is inferred from the estate's 1710 founding. Location corrected 2026-07-28 to a park-level estimate (55.9564, -3.3215), then to a specific surveyed tree 2026-07-30: the Woodland Trust's Ancient Tree Inventory (queried directly via its public ArcGIS FeatureServer) has exactly one Ash within the reserve, record 102509, veteran status, measured girth 4.74m, matching this entry's own 'trunk over a metre and a half across' almost exactly (a 1.5m+ diameter implies a circumference of roughly 4.7m). Its coordinate independently reverse-geocodes to South Avenue, Cammo, postcode EH4 8AW, the same postcode already cited for this entry. Moved about 390m to the surveyed point and upgraded to confirmed.",
-      "location_precision": "confirmed"
+      "location_precision": "approximate",
+      "curation_status_note": "Pin precision downgraded 2026-08-09: the confirmed status rested on a coordinate a prior pass pulled from the Woodland Trust ATI FeatureServer, a source that is off-limits until their written permission arrives. The coordinate itself is retained as the best approximate knowledge but no longer claims confirmation. Re-confirm via a non-ATI source or the owner permission."
     },
     {
       "id": "edi_004",

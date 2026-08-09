@@ -1,3 +1,7 @@
+## 2026-08-09 - Licence hygiene: edi_003's confirmed pin rested on forbidden ATI data, downgraded
+
+The Edinburgh pin pass discovered that the Cammo Ash's confirmed coordinate was set by an early pass that queried the Woodland Trust ATI FeatureServer directly, before the licence gate was understood. Per the standing rule (no ATI data in any form until written permission arrives), the pin is downgraded to approximate with a note; the coordinate stays as approximate knowledge, the confirmation claim is withdrawn. If the Woodland Trust grants permission, this is the first tree to re-confirm. Checked the rest of Edinburgh's confirmed pins: edi_005's confirmation comes from a non-ATI source and stands.
+
 ## 2026-08-09 - DC pin audit: a possible wrong pin flagged on the FDR cork trees
 
 The Venice-model pin pass over Washington DC's eight approximate pins reached zero confirmed upgrades, which is itself information: the 1912 cherries' pin turns out to BE the surveyed marker position (the honest ceiling), the Survey Lodge catalpas tightened to ~20m via the OSM building footprint, and Battery Kemble and the Arboretum are documented as legitimate park-level ceilings. The one actionable find: wdc_010's pin sits roughly 185m NORTH of the FDR Memorial's OSM boundary polygon, which means either the pin or the polygon is wrong. Nobody moved anything without ground truth; a follow-up pass (or any visitor) should establish where the cork trees actually stand. Until then the pin stays approximate, which the page already warns about next to its directions button.

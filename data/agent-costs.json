@@ -880,6 +880,34 @@
           "tokens": 115607,
           "trees": 0,
           "note": "Pin pass: 0 of 8 reached confirmed but all 8 now documented; the 1912-cherries pin proven to be the surveyed marker position (honest ceiling); wdc_008 tightened to ~20m; wdc_010 FDR cork trees pin flagged as possibly 185m outside the memorial grounds, follow-up recorded."
+        },
+        {
+          "target": "Copenhagen",
+          "kind": "verify",
+          "tokens": 169851,
+          "trees": 5,
+          "note": "dendron.dk mined: 5 two-sourced trees with tree-level GPS across Assistens Kirkegard and Frederiksberg Have; Copenhagen jumps to 10 and meets the norm; 9 more single-sourced leads banked."
+        },
+        {
+          "target": "Edinburgh",
+          "kind": "verify",
+          "tokens": 158946,
+          "trees": 0,
+          "note": "Pin pass: 0 of 13 upgraded but all documented (2 gained named-bed evidence awaiting coordinates); surfaced that edi_003's confirmed pin rested on forbidden ATI data, now downgraded; lz4.overpass-api.de recorded as the working Overpass mirror."
+        },
+        {
+          "target": "Baarn",
+          "kind": "verify",
+          "tokens": 162030,
+          "trees": 0,
+          "note": "Second-source hunt via RCE, Delpher, cantonspark.nl, IVN: honest zero; RCE structurally omits individual plantings (recorded); the Groeneveld front oak turns out to be an oak GROUP (avenue rows), a collectibility concern flagged; the unlock remains the owner's field panels."
+        },
+        {
+          "target": "Baarn aerial",
+          "kind": "verify",
+          "tokens": 2000,
+          "trees": 0,
+          "note": "Session-direct: PDOK aerial shows the Pekingtuin oak's 2021 ring; pin CONFIRMED at 52.20956,5.29203, standing in the latest annual survey. Hidde's satellite idea, formalized into BRIEF_RESEARCH.md the same hour."
         }
       ]
     }
