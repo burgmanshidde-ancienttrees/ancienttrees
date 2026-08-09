@@ -8,7 +8,8 @@
 // cards in the current production site — the passport/check-in wiring
 // below is real and ported faithfully, but nothing currently triggers it.
 // Confirmed by grep: no template anywhere emits `class="seen-btn"`.
-import { MAPLIBRE_JS, MAP_STYLE } from "./site-config";
+import { MAP_STYLE } from "./site-config";
+import { mapScript } from "./map";
 import { kmLabel } from "./walks";
 import type { WalkMarker, Walk } from "./walks";
 
@@ -56,9 +57,7 @@ export function cityMapScript(
     ranked.map((c) => ({ url: c.slug, city: c.city, country: c.country, n: c.n, ph: c.ph, lat: c.lat, lng: c.lng }))
   );
 
-  return `
-<script src="${MAPLIBRE_JS}"></script>
-<script>
+  return mapScript(`
 var markers = ${data};
 var map = new maplibregl.Map({
   container: 'map',
@@ -495,6 +494,5 @@ if (gpsBtn && navigator.geolocation) {
 } else if (gpsBtn) {
   gpsBtn.hidden = true;
 }
-</script>
-`;
+`);
 }
