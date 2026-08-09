@@ -279,3 +279,14 @@ biggest paid venues (Kew, Artis, Hortus Amsterdam, Topkapi, Brooklyn Botanic
 Garden) via Tiqets, with rel="sponsored" and a visible one-line disclosure,
 never a detour from a free thing to a paid one. The partner account is
 Hidde's to create (accounts and money are his alone, hard rules 1-2/5).
+
+## De embedbare stadskaart: het structurele backlinkmechanisme (sessie 2026-08-09)
+
+Uit het linkbuilding-gesprek: de schaalbare linkmachine is niet mailen maar
+een embed-knop per stadskaart ("zet de oude-bomenkaart van [stad] op je
+site"), iframe met "Powered by Ancient Trees" eronder. Elke reisblogger of
+buurtsite die hem plaatst is een passieve link. Klein om te bouwen (een
+/embed/[stad]-route plus knipcode op de stadspagina), maar bewust geparkeerd
+tijdens de oogstweek; bouwen wanneer de eerste kanalen gelopen hebben. Nog
+niet door Hidde bekrachtigd als bouwopdracht.
+
