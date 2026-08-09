@@ -62,8 +62,10 @@ const canonical = `${BASE_URL}/${cslug}/oldest-tree`;
 const question = `What is the oldest tree in ${cityName}?`;
 
 const title = fitTitle([
-  `What Is the Oldest Tree in ${cityName}? (${old.name}, ${age} Years)`,
-  `What Is the Oldest Tree in ${cityName}? (${age} Years Old)`,
+  ...(age ? [
+    `What Is the Oldest Tree in ${cityName}? (${old.name}, ${age} Years)`,
+    `What Is the Oldest Tree in ${cityName}? (${age} Years Old)`,
+  ] : []),
   `What Is the Oldest Tree in ${cityName}?`,
 ]);
 const answer = city.data.question_answer!;

@@ -48,6 +48,7 @@ const year = new Date().getFullYear();
 <title>{title}</title>
 <meta name="description" content={description}>
 <link rel="canonical" href={canonical}>
+<link rel="alternate" type="application/atom+xml" title="Ancient Trees: newest trees" href="https://ancienttrees.app/feed.xml">
 <meta property="og:title" content={title}>
 <meta property="og:description" content={description}>
 <meta property="og:type" content={ogType}>
@@ -114,6 +115,12 @@ const year = new Date().getFullYear();
 window.at = window.at || {};
 at.track = function (name, detail) {
   try {
+    // Only the real site measures. Smoke tests load these pages in headless
+    // Chrome on 127.0.0.1 on every push, and preview sessions serve them on
+    // localhost; both were being counted as visitors (found 2026-08-08 while
+    // asking why 74% of "traffic" was NL). One hostname check removes every
+    // machine visitor at the root instead of filtering them per tool.
+    if (location.hostname !== "ancienttrees.app") { return; }
     if (localStorage.getItem("at_notrack") === "1") { return; }
     var ev = { name: String(name).slice(0, 40), path: location.pathname.slice(0, 120) };
     if (detail) { ev.detail = String(detail).slice(0, 60); }
@@ -136,6 +143,7 @@ document.addEventListener("click", function (e) {
   <script define:vars={{ token: ANALYTICS_TOKEN }}>
     (function () {
       try {
+        if (location.hostname !== "ancienttrees.app") { return; }
         var p = new URLSearchParams(location.search);
         if (p.get("notrack") === "1") { localStorage.setItem("at_notrack", "1"); }
         else if (p.get("notrack") === "0") { localStorage.removeItem("at_notrack"); }

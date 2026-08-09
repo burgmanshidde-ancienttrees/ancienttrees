@@ -9,6 +9,7 @@
 // below is real and ported faithfully, but nothing currently triggers it.
 // Confirmed by grep: no template anywhere emits `class="seen-btn"`.
 import { MAPLIBRE_JS, MAP_STYLE } from "./site-config";
+import { kmLabel } from "./walks";
 import type { WalkMarker, Walk } from "./walks";
 
 export interface OtherCity {
@@ -38,7 +39,8 @@ export function cityMapScript(
       url: w.url ?? "",
       label: w.label ?? "",
       name: w.name ?? "",
-      meta: `about ${w.km} km, ${w.duration ?? ""} on foot`,
+      meta: `about ${kmLabel(w.km)} km, ${w.duration ?? ""} on foot`,
+      combined: Boolean(w.combined),
     }))
   );
   const otherCitiesJson = JSON.stringify({
@@ -206,10 +208,12 @@ function addAllWalksLayer() {
   if (WALKS.length < 2 || map.getSource('walks-all')) { return; }
   map.addSource('walks-all', {
     type: 'geojson',
+    // The combined option is the sum of lines already on the map: drawing it
+    // grey as well would double every segment, so only the real walks show.
     data: { type: 'FeatureCollection', features: WALKS.map(function(w, i) {
       return { type: 'Feature', properties: { idx: i },
                geometry: { type: 'LineString', coordinates: w.coords } };
-    }) }
+    }).filter(function(f) { return !WALKS[f.properties.idx].combined; }) }
   });
   map.addLayer({
     id: 'walks-all-hit', type: 'line', source: 'walks-all',
@@ -234,8 +238,14 @@ function addAllWalksLayer() {
   map.on('mouseleave', 'walks-all-hit', function() { map.getCanvas().style.cursor = ''; });
 }
 function setAllWalksFilter(activeIdx) {
+  // Hide the grey copy of whatever is selected, so the chosen walk shows once
+  // in green rather than twice in two colours.
   if (!map.getLayer('walks-all')) { return; }
-  var f = activeIdx < 0 ? null : ['!=', ['get', 'idx'], activeIdx];
+  // Selecting the combined option hides every grey copy: its green line
+  // covers all of them, and grey under green reads as a third walk.
+  var f = activeIdx < 0 ? null
+        : (WALKS[activeIdx] && WALKS[activeIdx].combined) ? ['==', ['get', 'idx'], -1]
+        : ['!=', ['get', 'idx'], activeIdx];
   map.setFilter('walks-all', f);
   map.setFilter('walks-all-hit', f);
   if (map.getLayer('walks-all-casing')) { map.setFilter('walks-all-casing', f); }
@@ -302,6 +312,20 @@ function showWholeCity() {
     b.classList.remove('is-on');
     b.setAttribute('aria-pressed', 'false');
   });
+  // The bar goes back to the lead walk too, or deselecting leaves it naming a
+  // walk no chip shows as chosen ("Both walks" with nothing selected).
+  var w0 = WALKS[0];
+  if (w0) {
+    routeCoords = w0.coords;
+    var go = document.getElementById('route-go');
+    if (go) { go.href = w0.url; }
+    var lab = document.getElementById('route-label');
+    if (lab) { lab.textContent = w0.label; }
+    var meta = document.getElementById('route-meta');
+    if (meta) { meta.textContent = w0.meta; }
+    var nm = document.querySelector('.route-name');
+    if (nm) { nm.textContent = w0.name; nm.hidden = !w0.name; }
+  }
   if (markers.length > 1) { map.fitBounds(bounds, { padding: 70, maxZoom: 13 }); }
 }
 document.querySelectorAll('.walk-pick').forEach(function(btn) {

@@ -12,7 +12,12 @@ const NUMBER_WORDS: Record<string, number> = Object.fromEntries(
     .split(" ")
     .map((w, n) => [w, n]),
 );
-const N = Object.keys(NUMBER_WORDS).join("|");
+// Digits count too, not only spelled-out words. Paris's copy said "15 more"
+// and "23 more" rather than "fifteen more"/"twenty-three more" (twenty-three
+// has no entry above anyway), and a word-only pattern let both go stale
+// unnoticed until a fresh-eyes review caught them by eye (build_site.py,
+// origin/main 0fc4993, REVIEW.md 2026-08-08).
+const N = `\\d+|${Object.keys(NUMBER_WORDS).join("|")}`;
 
 const SUMMARY = new Set(["meta_description", "question_meta"]);
 const ALL_COPY = new Set(["intro", "meta_description", "question_meta", "question_answer", "question_context", "faq"]);
@@ -80,7 +85,7 @@ export function checkCountPromises(cityData: CountPromiseCity, canonical: string
       let m: RegExpExecArray | null;
       while ((m = rx.exec(text))) {
         const word = m[1].toLowerCase();
-        const claims = allowed(NUMBER_WORDS[word]);
+        const claims = allowed(/^\d+$/.test(word) ? parseInt(word, 10) : NUMBER_WORDS[word]);
         const minClaim = Math.min(...claims);
         if (minClaim < 4 || claims.has(n)) continue;
         const claimsStr = [...claims].sort((a, b) => a - b).join("/");

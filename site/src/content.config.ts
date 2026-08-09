@@ -88,6 +88,8 @@ const parks = defineCollection({
     title: z.string().optional(),
     meta_description: z.string().optional(),
     intro: z.string(),
+    official_name: z.string().optional(),
+    official_url: z.string().optional(),
   }),
 });
 
