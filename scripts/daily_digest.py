@@ -133,7 +133,7 @@ def known_terms():
     # while /explore carried exactly that title and H1, and a session nearly
     # built a page that already existed. A lead that names something we have is
     # worse than no lead: it sends work at a solved problem.
-    terms.update({"ancient tree map", "tree map", "map", "explore", "collections",
+    terms.update({"ancient tree map", "ancient trees", "ancient tree", "tree map", "map", "explore", "collections",
                   "species", "cities", "countries", "in season", "contribute",
                   "suggest a tree", "about", "privacy", "app"})
     return {t for t in terms if t}
