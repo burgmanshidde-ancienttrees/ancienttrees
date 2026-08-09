@@ -2,15 +2,15 @@
   "city": "Boston",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Boston lost its two most famous trees long ago: the Liberty Tree to a Loyalist axe in 1775 and the Great Elm of the Common to a storm in 1876. What survived is quieter and stranger. Two English elms have flanked the Shaw Memorial since around 1800, and the Arnold Arboretum keeps accession cards on its trees like a library catalogue, including a Franklinia, extinct in the wild since the early 1800s. The six below split into a Common and Public Garden pair and an Arboretum quartet that comes with accession cards; all are free.",
+  "intro": "Boston lost its two most famous trees long ago: the Liberty Tree to a Loyalist axe in 1775 and the Great Elm of the Common to a storm in 1876. What survived is stranger. Two English elms have flanked the Shaw Memorial since around 1800, and the Arnold Arboretum keeps accession cards on its trees like a library catalogue, including a Franklinia, extinct in the wild since the early 1800s. The eight below split into a Common and Public Garden pair and an Arboretum six that comes with accession cards, including a bonsai begun in 1737; all are free.",
   "meta_description": "Boston's remarkable trees, from the elms flanking the Shaw Memorial to a tree extinct in the wild at the Arnold Arboretum. Locations, stories, sources.",
-  "question_meta": "Boston's oldest documented trees are the Shaw Memorial elms on the Common, planted between 1772 and 1812. Their story, and five more remarkable trees.",
-  "question_answer": "The oldest documented trees in Boston are the two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812. A white oak on Peters Hill in the Arnold Arboretum, core-sampled at more than 200 years, predates the Arboretum itself and may be older still.",
+  "question_meta": "Boston's oldest documented trees are the Shaw Memorial elms on the Common, planted between 1772 and 1812. Their story, and seven more remarkable trees.",
+  "question_answer": "The oldest documented landscape trees in Boston are the two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812. The oldest living thing on this list is older still and fits on a table: the Larz Anderson Hinoki Cypress at the Arnold Arboretum, a bonsai begun in 1737.",
   "question_context": "Boston's relationship with its trees is a long ledger of documented losses, and that is precisely what makes the survivors verifiable. The Liberty Tree, the elm under which the Sons of Liberty gathered, was felled by Loyalists in August 1775 and the city has marked the spot ever since. The Great Elm of the Common, once called the city's oldest inhabitant, blew down in 1876 and was mourned in print. The Public Garden's lagoon willow, the most photographed tree in the city, collapsed as recently as July 2026. Each loss was recorded, which means each survivor stands in an unusually well-documented landscape. The Shaw Memorial elms have flanked their spot through all of it, planted in the decades around 1800 when the Common's tree-lined malls were laid out. Across town the Arnold Arboretum, founded 1872 and run by Harvard, keeps accession cards on its collection the way a library catalogues books, which is how a white oak that predates the Arboretum and a Franklinia extinct in the wild both carry paperwork most ancient trees never get.",
   "faq": [
     {
       "q": "What is the oldest tree in Boston?",
-      "a": "The two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812, are the oldest documented. A white oak on Peters Hill in the Arnold Arboretum was core-sampled in 2018 at more than 200 years and predates the Arboretum's 1872 founding."
+      "a": "The two English Elms flanking the Shaw Memorial on Boston Common, planted between 1772 and 1812, are the oldest documented trees growing in Boston ground. The oldest living thing on the list is the Larz Anderson Hinoki Cypress at the Arnold Arboretum, a bonsai begun in Japan in 1737."
     },
     {
       "q": "Is the Liberty Tree still standing?",
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Boston's remarkable trees free to visit?",
-      "a": "All six are free. Two stand on Boston Common and in the Public Garden in the city centre; four stand in the Arnold Arboretum, which is open free every day and is reachable by the Orange Line to Forest Hills."
+      "a": "All eight are free. Two stand on Boston Common and in the Public Garden in the city centre; six stand in the Arnold Arboretum, which is open free every day and is reachable by the Orange Line to Forest Hills."
     },
     {
       "q": "What is a Franklinia and why does Boston have one?",
@@ -230,6 +230,73 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "bos_007",
+      "name": "The Larz Anderson Hinoki Cypress",
+      "species": "Hinoki Cypress bonsai (Chamaecyparis obtusa)",
+      "age_estimate": "roughly 289 years (started 1737)",
+      "age_min": 288,
+      "age_max": 290,
+      "location": {
+        "address": "Bonsai and Penjing Pavilion, Dana Greenhouses, Arnold Arboretum of Harvard University, 1050 Centre Street",
+        "latitude": 42.3031491,
+        "longitude": -71.1243292,
+        "neighbourhood": "Dana Greenhouses, Arnold Arboretum, Jamaica Plain"
+      },
+      "story": "This tree is 289 years old and it fits on a table. It was started in 1737, when Boston was still a colonial port, and it has spent every one of those years in a pot, watered and pruned by somebody, without a gap. Larz Anderson, a Harvard graduate and American ambassador to Japan, bought it from the Yokohama Nursery Company around 1913 with roughly 39 other bonsai and shipped the lot home to his estate in Brookline, where it stood on his terraces for 24 years. After he and his wife Isabel died, the collection passed to the Arnold Arboretum, which eventually built a pavilion to house it. A cutting taken in 2017 is displayed beside it, the same tree at nine years old and at 289. Two things to know before you go. The 1737 date comes from Anderson's own records rather than from any independent dating, so it is one careful line of evidence repeated by everyone since, not two. And the pavilion rotates around 30 trees through its display every two or three weeks from mid April to late October, so this particular one is not guaranteed to be out on the day you arrive; the pavilion posts what is currently on view. It is ten minutes on foot from Forest Hills, and the Arboretum around it is worth the trip whatever is in the display that week.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Larz_Anderson_Bonsai_Collection (citing Larz Anderson's own records: 'the oldest of these Hinoki Cypress was started in 1737')",
+        "https://www.wbur.org/news/2026/04/23/boston-arnold-arboretum-bonsai-trees-spring (WBUR News, 2026-04-23, independent of the Arboretum, confirms the '289-year-old hinoki cypress' on display this season and quotes curator Chris Copeland calling it one of the oldest cultivated bonsai in North America, second only to three at the Brooklyn Botanic Garden)",
+        "https://jamaicaplainnews.com/2024/04/16/nearly-three-centuries-old-bonsai-cypress-lives-at-arnold-arboretum/666645 (Jamaica Plain News, 2024-04-16, local outlet independent of the Arboretum, corroborates the 1737 origin and confirms it alive and maintained by bonsai master Jun Imabayashi)"
+      ],
+      "access": "Free, public arboretum. The bonsai itself is on view only mid-April through late October at the Bonsai and Penjing Pavilion, and staff rotate roughly 30 trees through the display every two to three weeks, so this specific specimen is not guaranteed to be out on any given visit; the pavilion posts what is currently on view.",
+      "transport": "Forest Hills MBTA station (Orange Line), roughly 10 minute walk to the Centre Street Gate, then a further 5 minute walk to the Dana Greenhouses",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bos_008",
+      "name": "The Sapporo Katsuras",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "roughly 148 years (seed arrived 1878)",
+      "age_min": 147,
+      "age_max": 149,
+      "location": {
+        "address": "Arnold Arboretum of Harvard University, along Meadow Road",
+        "latitude": 42.3005,
+        "longitude": -71.1215,
+        "neighbourhood": "Meadow Road, Arnold Arboretum, Jamaica Plain"
+      },
+      "story": "These two trees began as seed in a packet posted from Sapporo. William S. Clark, president of Massachusetts Agricultural College and the man who left his Japanese students the parting line \"Boys, be ambitious\", went to Hokkaido in 1876 to help found what is now Hokkaido University. He collected katsura seed there and sent a share to his friend Charles Sprague Sargent, the Arnold Arboretum's first director. It arrived in 1878, six years after the Arboretum itself existed at all, and the two multi stemmed trees on Meadow Road are what grew from it. They are the oldest katsuras in a collection of 35 and among the oldest documented anywhere in North America. Come in October. Katsura leaves turn apricot and gold, and as they fall and dry they give off a smell most people read as burnt sugar or candy floss; you often catch it before you find the tree. Winter is worth a different look, the silvery grey bark peeling away in narrow rectangular sheets and curved seed follicles hanging on into the cold before the wind takes the seed. Sargent went to Hokkaido himself in 1892 and wrote about katsura as a defining tree of the island's wet lowland woods. One note on sourcing: both accounts here are the Arboretum's own, a plant record and an Arnoldia article rather than two unconnected institutions, though the article's author visited and describes both trees alive and in health.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the falling leaves turn apricot gold and smell of burnt sugar"
+      },
+      "verified_sources": [
+        "https://arboretum.harvard.edu/plant-bios/katsura/ (accessions 882*A and 882*B, seed from Professor W. S. Clark, arrived 1878)",
+        "https://arboretum.harvard.edu/arnoldia-stories/katsura-in-winter (Arnoldia, confirms both trees living 'along Meadow Road', describes their winter bark and persistent seed follicles firsthand)"
+      ],
+      "access": "Free, public arboretum, open dawn to dusk",
+      "transport": "Forest Hills MBTA station (Orange Line), roughly 15-20 minute walk via the Forest Hills Gate to Meadow Road, or the Arborway entrance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
     }
-  ]
+  ],
+  "oldest_tree_id": "bos_001"
 }
