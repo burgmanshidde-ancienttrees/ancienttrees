@@ -587,9 +587,21 @@ def main():
     if os.path.exists(DATA_MD):
         with open(DATA_MD) as f:
             existing = f.read()
+    # --force rewrites today's entry instead of refusing. Added 2026-08-09,
+    # when a new number (registered accounts) shipped after the morning's
+    # entry had already been written and there was no way to see it before
+    # the next day. The old entry is replaced, never appended twice.
+    force = "--force" in sys.argv
     if yesterday_header in existing:
-        print("Entry for %s already present, nothing to do" % yday)
-        return 0
+        if not force:
+            print("Entry for %s already present, nothing to do" % yday)
+            return 0
+        start = existing.index(yesterday_header)
+        nxt = existing.find("\n## ", start + 1)
+        existing = existing[:start] + (existing[nxt + 1:] if nxt != -1 else "")
+        with open(DATA_MD, "w") as f:
+            f.write(existing)
+        print("Entry for %s replaced (--force)" % yday)
 
     try:
         days = fetch_cloudflare(token, today)
