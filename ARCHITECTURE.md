@@ -220,14 +220,29 @@ that page type:
 4. **Port redirects last**, since correctness there is only checkable by
    walking every entry in `RENAMED_CITY_SLUGS`/`RENAMED_TREE_SLUGS` and
    confirming the stub still resolves.
-5. **Cut `deploy.yml` over** from `python3 scripts/build_site.py` to the
-   Astro build once every contract passes `qa.py` + `smoke_test.py` against
-   its own output, in one commit, so there's a single clear rollback point.
+5. **Cut every workflow that reads `site/dist` as the real build over**,
+   in one commit, once every contract passes `qa.py` + `smoke_test.py`
+   against Astro's own output. That's three workflows, not one:
+   `deploy.yml` (the artifact that ships), `smoke.yml` (must exercise what
+   actually deploys, not a retired renderer) and `review.yml` (the
+   fresh-eyes reviewer inspects "the BUILT product in site/dist", which
+   must be the real one). `nightly.yml` runs `build_site.py` too, but only
+   as the research agent's own self-check that a data edit still builds;
+   it produces no artifact and needs no change here. One commit keeps a
+   single clear rollback point and avoids a half-cutover where smoke tests
+   one generator's output while deploy ships the other's.
 6. **Delete the Python rendering code** (`render_page` down) only after a
    full deploy cycle has run clean from Astro. Keep everything above that
    line (data loading helpers already superseded by Astro's content layer)
    deletable at the same time; nothing in the research pipeline calls into
-   `build_site.py`.
+   `build_site.py` for the actual deploy. One thing does still call it,
+   though not as a deploy dependency: `nightly.yml`'s research-agent prompt
+   runs `python3 scripts/build_site.py` as its own self-check that a data
+   edit still builds, and its `allowedTools` only grants `Bash(git:*)` and
+   `Bash(python3:*)`, so it cannot run `npx astro build` as a replacement.
+   Deleting the Python renderer without first updating that prompt (and its
+   allowed tools) leaves the nightly chain instructed to run a script that
+   no longer exists. Do that update in the same pass as step 6, not after.
 
 Each step ships independently and is reversible (`deploy.yml` still points
 at the Python build until step 5), consistent with the "can Hidde undo it"

@@ -23,14 +23,28 @@ jobs:
   review:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    env:
+      ASTRO_TELEMETRY_DISABLED: "1"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+
       - name: Build site
-        run: python3 scripts/build_site.py
+        working-directory: site
+        run: npx astro build
 
       - name: Review the last day with fresh eyes
         uses: anthropics/claude-code-action@v1
