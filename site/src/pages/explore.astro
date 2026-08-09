@@ -1,0 +1,151 @@
+---
+// One map, every tree (PRODUCT_IA follow-up, 2026-07-28). Ported from
+// build_explore_page(), build_site.py:4505-4813. GeoJSON circle layers with
+// native clustering: fast at 341 trees and at 3,000. Trees whose best_time
+// includes the build month render gold, the season made visible. The nav
+// item "Map" points here; the homepage hero stays the front door.
+//
+// The register layer (CLAUDE.md, approved 2026-07-29/30) renders as a
+// second, visually quieter source: small hollow grey dots, no clustering,
+// no link out since these carry no own page - see registers.ts and
+// assets/registers.json.ts, fetched client-side rather than inlined here.
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import { cityIsRenderable, slugify, type CityEntry } from "../lib/trees";
+import { cityFace } from "../lib/images";
+import { mapHead, exploreMapScript, type ExploreTreeFeature, type ExploreCityRow } from "../lib/map";
+import { haversineKm } from "../lib/walks";
+import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
+import { BASE_URL } from "../lib/schema";
+import { byCityListOrderEntry } from "../lib/city-order";
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+// city-list.json order before any of the three stable sorts below (city
+// rows by rank/count, tightest-walks by spread): main() always walks
+// `renderable` in that order first (build_site.py:5721-5726).
+const allCities = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
+
+const month = new Date().getMonth() + 1;
+const features: ExploreTreeFeature[] = [];
+for (const entry of allCities) {
+  const cslug = entry.id;
+  for (const t of entry.data.trees) {
+    const loc = t.location;
+    features.push({
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [loc.longitude ?? null, loc.latitude ?? null] },
+      properties: {
+        name: t.name,
+        url: `${cslug}/${slugify(t.name)}`,
+        cs: cslug,
+        city: entry.data.city,
+        age: t.age_estimate ?? "",
+        now: (t.best_time?.months?.includes(month) ? 1 : 0) as 0 | 1,
+      },
+    });
+  }
+}
+
+// The panel's city cards need a face and a rank: hero photo per the Cadiz
+// standard where set, favourites first (the homepage list), then tree
+// count. No counts in the page copy itself (Hidde, 2026-07-29): "je moet
+// nadenken dat alles wat je maakt ooit gaat bestaan uit miljoenen bomen."
+const FAVES = ["lisbon", "cadiz", "porto", "amsterdam", "kyoto", "rome", "palermo", "paris", "london", "barcelona"];
+const cityRows: ExploreCityRow[] = allCities
+  .filter((e) => e.data.trees.length > 0)
+  .map((e) => {
+    const trees = e.data.trees;
+    return {
+      city: e.data.city,
+      url: e.id,
+      country: e.data.country,
+      n: trees.length,
+      lat: trees.reduce((s, t) => s + (t.location.latitude ?? 0), 0) / trees.length,
+      lng: trees.reduce((s, t) => s + (t.location.longitude ?? 0), 0) / trees.length,
+      ph: cityFace(e.data, 400),
+      rank: FAVES.includes(e.id) ? FAVES.indexOf(e.id) : 99,
+    };
+  })
+  .sort((a, b) => a.rank - b.rank || b.n - a.n);
+
+const treeTotal = cityRows.reduce((s, r) => s + r.n, 0);
+const countries = [...new Set(allCities.filter((e) => e.data.trees.length > 0).map((e) => e.data.country))].sort((a, b) =>
+  a.localeCompare(b),
+);
+
+const tightest = allCities
+  .filter((e) => e.data.trees.length >= 5)
+  .map((e) => {
+    const trees = e.data.trees;
+    let spread = 0;
+    for (const a of trees) {
+      for (const b of trees) {
+        const d = haversineKm(
+          [a.location.latitude ?? 0, a.location.longitude ?? 0],
+          [b.location.latitude ?? 0, b.location.longitude ?? 0],
+        );
+        if (d > spread) spread = d;
+      }
+    }
+    return { city: e.data.city, slug: e.id, n: trees.length, spread };
+  })
+  .sort((a, b) => a.spread - b.spread)
+  .slice(0, 6);
+
+const walksHtml = tightest
+  .map((c) =>
+    c.spread < 1
+      ? `<a href="/${c.slug}">${esc(c.city)}</a> (${c.n} trees, ${Math.round(c.spread * 1000)} m apart)`
+      : `<a href="/${c.slug}">${esc(c.city)}</a> (${c.n} trees, ${c.spread.toFixed(1)} km apart)`,
+  )
+  .join(", ");
+
+const exploreProse = `
+  <section class="explore-prose">
+    <h2>What is on this map</h2>
+    <p>${treeTotal} trees in ${cityRows.length} places across ${countries.length} countries, every one
+    checked against at least two independent sources before it went on. Each pin opens a tree with its
+    age, its species, why it is worth standing in front of, and directions from where you are. Gold
+    pins are trees at their seasonal best this month.</p>
+    <h2>The tightest walks</h2>
+    <p>A map of scattered pins is a list. What makes an afternoon is trees close enough to walk
+    between, so these are the places where the whole set fits in one stroll: ${walksHtml}.</p>
+    <h2>What is not on it, and why</h2>
+    <p>Every pin says how precise it is. A tree marked approximate means we know the park but not the
+    trunk, and the page says so rather than sending you to a spot where the tree is not. Trees on
+    private land are left off entirely, as are trees whose own register hides their position, because
+    the people who protect them have a reason. Nothing here is a bulk street-tree inventory: a tree
+    earns a pin by being remarkable, not by existing.</p>
+    <p class="explore-prose-more">Browse another way: <a href="/cities">all cities</a>,
+    <a href="/species">by species</a>, <a href="/collections">curated collections</a>, or
+    <a href="/in-season">what is at its best right now</a>.</p>
+  </section>`;
+
+const canonical = `${BASE_URL}/explore`;
+const title = "Ancient Tree Map: every remarkable old tree, one map";
+const description = "The interactive map of every verified ancient tree on the site, with the ones at their seasonal best highlighted.";
+
+const searchFormHtml = searchForm("explore", "ex-q", "ex-search");
+const mapScript = exploreMapScript(features, cityRows);
+const scripts = mapScript + SEARCH_WIDGET_JS;
+---
+<Base title={title} description={description} canonical={canonical} headExtra={mapHead()}>
+<main class="explore-page">
+  <div class="explore-app">
+    <div class="explore-head">
+      <h1>The ancient tree map</h1>
+      <p>Every tree on the site, each verified, each with its story. Zoom in to a city and pick one; gold means at its best this month.</p>
+      <Fragment set:html={searchFormHtml} />
+    </div>
+    <div class="explore-split">
+      <aside id="ex-panel" class="ex-panel" aria-live="polite"></aside>
+      <div id="map" class="explore-map"></div>
+    </div>
+  </div>
+  <Fragment set:html={exploreProse} />
+</main>
+<Fragment slot="scripts" set:html={scripts} />
+</Base>
