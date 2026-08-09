@@ -1,15 +1,15 @@
 {
   "leads": [
     {
-      "name": "Flatter-Ulme (European White Elm) at the Karpfenteich, Schlosspark Charlottenburg",
+      "name": "[RESOLVED 2026-08-09, delivered as ber_018] Flatter-Ulme (European White Elm) at the Karpfenteich, Schlosspark Charlottenburg",
       "species": "European White Elm (Ulmus laevis)",
       "location": {
         "address": "Schlosspark Charlottenburg, southeastern corner of the Karpfenteich, Spandauer Damm, Berlin",
-        "latitude": null,
-        "longitude": null,
+        "latitude": 52.524056,
+        "longitude": 13.295944,
         "neighbourhood": "Charlottenburg"
       },
-      "reason": "Officially registered as Naturdenkmal 4-27/B ('Park Schloss Charlottenburg, suedoestliche Ecke Karpfenteich') per the Wikipedia-compiled Charlottenburg-Wilmersdorf Naturdenkmal list, but that is a single source with no age, girth or coordinates given. Repeated searches (German and English, SPSG tour pages, local press) found no second source describing this specific tree. White elms are increasingly rare due to Dutch elm disease, which would make an old surviving specimen genuinely notable if its age and a second source can be found. Would sit within a few hundred metres of ber_004 (the Swamp Cypress) if it verifies."
+      "reason": "RESOLVED this pass: monumentaltrees.com specimen '20545' ('Rundweg am Karpfenteich', Schlosses Charlottenburg castle garden) has a GPS pin (52.52403,13.29591) about 3m from the register point (4-27/B, 52.524056,13.295944), confirming the same tree. Girth 4.85-4.88m at 1.3m (2015-2020), height 21.50m. Delivered flagged rather than clean because no source, register or monumentaltrees, gives an age for this individual; age_estimate is honestly 'not documented'. See data/research/berlin-verified.json ber_018."
     },
     {
       "name": "Echte Mispel (Medlar) at Schloss Charlottenburg, west wing",
@@ -20,7 +20,7 @@
         "longitude": null,
         "neighbourhood": "Charlottenburg"
       },
-      "reason": "Naturdenkmal 4-28/B per the official register list, single source, no age or dimensions given. Medlars are small trees (typically under 5m) so remarkability is doubtful on size or age; the case would have to rest on rarity as a once-common, now-forgotten fruit tree plus its royal-garden setting. Needs a second source and a stronger case before it clears the qualifying bar."
+      "reason": "Naturdenkmal 4-28/B per the official register list, single source, no age or dimensions given. Medlars are small trees (typically under 5m) so remarkability is doubtful on size or age; the case would have to rest on rarity as a once-common, now-forgotten fruit tree plus its royal-garden setting. Needs a second source and a stronger case before it clears the qualifying bar. CHECKED AGAIN 2026-08-09: not in monumentaltrees.com's 12-tree Schlosses Charlottenburg garden list, still no second source found. Still a lead."
     },
     {
       "name": "Kirschpflaume (Cherry Plum) at Schloss Charlottenburg, west wing",
@@ -31,7 +31,7 @@
         "longitude": null,
         "neighbourhood": "Charlottenburg"
       },
-      "reason": "Naturdenkmal 4-29/B per the official register list, single source, no age. Cherry plum is a common small ornamental/fruit tree; unclear this individual clears 'genuinely old OR visually spectacular OR historically significant' even with a second source. Lower priority than the other Charlottenburg leads."
+      "reason": "Naturdenkmal 4-29/B per the official register list, single source, no age. Cherry plum is a common small ornamental/fruit tree; unclear this individual clears 'genuinely old OR visually spectacular OR historically significant' even with a second source. Lower priority than the other Charlottenburg leads. CHECKED AGAIN 2026-08-09: not in monumentaltrees.com's Schlosses Charlottenburg garden list. Wikimedia Commons has a photo category for this exact tree (Category:Naturdenkmal Kirschpflaume - Myrobalane Park Schloss Charlottenburg) with 15 photos dated June 2024, confirming it is alive and photographed recently, but the category is built from the same register designation, not an independent source of facts, so it does not clear the two-source bar on its own. Still a lead, now with recent alive-evidence noted for whoever picks it up next."
     },
     {
       "name": "Kaukasische Fluegelnuss (Caucasian Wingnut) at Lietzensee",

@@ -438,6 +438,79 @@ def fetch_events(today):
     return line
 
 
+def audience_section(today, cf_token):
+    """Who they are, over 28 days: country, device, search language, landing
+    page, and how they arrived. Volume answers 'how many', this answers 'who',
+    and the two need different windows: a day is enough for a click count and
+    far too little for an audience, so this one deliberately looks back 28 days
+    while everything above it reports yesterday.
+
+    Every line carries its denominator. At the volumes this site currently
+    sees, a ranked list without one reads as knowledge and is arithmetic on
+    single digits."""
+    import audience as A
+
+    out = []
+    q = A.gsc_client(today)
+    if q is None:
+        out.append("Audience: Search Console secrets absent.")
+    else:
+        countries = q(["country"], 8)
+        devices = q(["device"], 5)
+        pages = q(["page"], 8)
+        queries = q(["query"], 100)
+        ti = sum(r["impressions"] for r in countries)
+        tc = sum(r["clicks"] for r in countries)
+        out.append("Audience, 28 days of search (%d clicks, %d impressions):" % (tc, ti))
+
+        def line(label, rows, n=5):
+            bits = []
+            for r in rows[:n]:
+                k = (r["keys"][0] or "?").replace("https://ancienttrees.app", "") or "/"
+                bits.append("%s c%d/i%d" % (k, r["clicks"], r["impressions"]))
+            return "- %s: %s" % (label, "; ".join(bits) if bits else "none")
+
+        out.append(line("Countries", countries))
+        out.append(line("Devices", devices))
+        out.append(line("Landing pages", pages))
+
+        langs = {}
+        for r in queries:
+            a = langs.setdefault(A.classify(r["keys"][0]), {"c": 0, "i": 0, "n": 0})
+            a["c"] += r["clicks"]; a["i"] += r["impressions"]; a["n"] += 1
+        ranked = sorted(langs.items(), key=lambda kv: -kv[1]["i"])
+        out.append("- Search language (top %d queries, crude keyword match): %s" % (
+            len(queries), "; ".join("%s %dq c%d/i%d" % (k, v["n"], v["c"], v["i"])
+                                    for k, v in ranked)))
+
+    if cf_token:
+        try:
+            a, since = A.rum(cf_token, today)
+        except Exception as e:
+            a = None
+            out.append("- On-site beacon: unreadable (%s)" % str(e)[:80])
+        if a:
+            days = a.get("days") or []
+            pv = sum(d["count"] for d in days)
+            vis = sum(d["sum"]["visits"] for d in days)
+
+            def dim(rows, key, n=5):
+                bits = []
+                for r in (rows or [])[:n]:
+                    v = r["dimensions"].get(key) or "(direct)"
+                    bits.append("%s %d" % (str(v)[:26], r["count"]))
+                return "; ".join(bits) if bits else "none"
+
+            out.append("On the site since %s (%d visits, %d pageviews, %.1f pages per visit):"
+                       % (since, vis, pv, (pv / vis) if vis else 0))
+            out.append("- Countries: " + dim(a.get("countries"), "countryName"))
+            out.append("- Devices: " + dim(a.get("devices"), "deviceType", 4))
+            out.append("- Browsers: " + dim(a.get("browsers"), "userAgentBrowser", 4))
+            out.append("- Arrived via: " + dim(a.get("refs"), "refererHost"))
+            out.append("- Opened: " + dim(a.get("paths"), "requestPath", 8))
+    return "\n".join(out)
+
+
 def fetch_machine(today):
     """Chain utilization from the GitHub Actions API: attempts vs runs that got
     real work time. Answers Hidde's standing question (2026-07-28) whether his
@@ -619,6 +692,17 @@ def main():
         gsc_text += "\n\n" + fetch_rum(token, today)
     except Exception as e:
         gsc_text += "\n\nWeb Analytics (beacon): fetch failed today (%s)." % e
+
+    # The audience cut. Hidde, 2026-08-09: "ik heb nog steeds niet het gevoel
+    # dat ik echt analyse heb van onze gebruikers." The lines above are volume,
+    # which is the right thing daily and says nothing about who these people
+    # are. This is a 28-day cut by country, device, language and landing page,
+    # and it lives inside the digest rather than in a file of its own, because
+    # a separate report is a report nobody opens.
+    try:
+        gsc_text += "\n\n" + audience_section(today, token)
+    except Exception as e:
+        gsc_text += "\n\nAudience: fetch failed today (%s)." % e
 
     try:
         ev = fetch_events(today)

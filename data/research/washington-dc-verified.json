@@ -23,5 +23,28 @@
     "curation_status": "flagged",
     "location_precision": "approximate",
     "verify_notes": "Documented by the Historic American Landscape Survey's Witness Tree Protection Program (HALS record dc1036, Library of Congress; www.loc.gov blocks automated fetch with a Cloudflare challenge but the record's existence and title are confirmed via search and via the raw tile.loc.gov PDF, which downloaded successfully this pass at https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dc1036/data/dc1036data.pdf though it is a scanned image with no extractable text). Independently measured by Casey Trees' DC big-tree survey: 235in circumference, 74.84in DBH, ~110ft tall, ~100ft+ crown spread. SOURCE CONFLICT, not resolved: Friends of Montrose Park and Our Trees (both apparently citing an earlier Casey Trees survey) call it 'the second largest tree in the District, and the largest tulip poplar currently surveyed'; Casey Trees' own 2023 article ranks it 5th largest in DC by circumference/DBH, behind two willow oaks and a chestnut oak. Deliver both readings rather than pick a winner. NO source gives a specific age; tulip poplars generally live 200-250 years, exceptionally to 300, so a tree this large (comparable in DBH to the #1-4 ranked oaks, which the project's other entries put at 150-250 years) plausibly reads as at least a century old but the age range here is a size-based inference, not a documented figure, hence flagged. Visible from Lovers Lane as it descends toward Dumbarton Oaks Park, so it pairs naturally with a Dumbarton Oaks Park walk if that cluster pans out. Park is free and always open; the tree itself was not individually pinned (no tree-level coordinate found), so location_precision stays approximate at the NW corner of the park."
+  },
+  {
+    "id": "wdc_012",
+    "name": "Frederick Douglass's Magnolias at Cedar Hill",
+    "species": "Southern Magnolia (Magnolia grandiflora)",
+    "age_estimate": "roughly 145 years",
+    "age_min": 144,
+    "age_max": 149,
+    "location": {
+      "address": "Cedar Hill, Frederick Douglass National Historic Site, 1411 W Street SE, Washington, DC 20020 (east of the residence, outside Douglass's study window)",
+      "latitude": 38.86339,
+      "longitude": -76.98517,
+      "neighbourhood": "Anacostia"
+    },
+    "verified_sources": [
+      "https://caseytrees.org/2026/02/frederick-douglass-and-the-nature-at-cedar-hill/",
+      "https://www.tclf.org/frederick-douglass-national-historic-site"
+    ],
+    "access": "Free grounds access; the house tour that passes closest to the trees needs a free timed ticket (recreation.gov, small booking fee) or first-come at the visitor centre",
+    "transport": "Anacostia; roughly 15-20 min walk from Anacostia Metro (Green line), or a short ride on the B2 bus to the site",
+    "curation_status": "flagged",
+    "location_precision": "approximate",
+    "verify_notes": "A pair of Southern Magnolias, oral history says planted by Frederick Douglass himself between 1877 and 1882 as a gift to his wife Anna, standing right outside his study window at Cedar Hill, his home from 1877 until his death in 1895. Casey Trees (Feb 2026, on-site) confirms both still standing today, calling it 'perhaps Douglass's most famous addition to his property.' TCLF's Cultural Landscape Foundation page independently corroborates two magnolias east of the residence dating to the late 19th century, still present, though it does not repeat the planting story or the specific 1877-1882 window/Anna detail, which rests on Casey Trees alone (oral history, not a written record) so the anecdote itself is flagged even though the trees' existence and species are double-sourced. Age calculated from the 1877-1882 planting window against today's date (2026), so roughly 144-149 years; a real, sourced range rather than a size-based guess. NPS's own Cedar Hill nature article did not mention the magnolias specifically when checked this pass (nps.gov/articles/cedar-hill-frederick-douglass-rustic-sanctuary.htm loaded fine, no Cloudflare issue, it simply doesn't cover them). Rejected pairing candidate: the White Oak (HALS dc1028, described elsewhere as the largest tree remaining from Douglass's own time) could NOT be confirmed as still standing by name this pass either, TCLF only confirms oaks generally present on the knoll; leaving it in leads. Location: no tree-level coordinate published; pin set at the historic house's mapped building centroid (OSM), which is accurate to roughly the building footprint since the trees stand immediately beside it. The pair reads as one collectible point, a matched gift planted together and always described as a pair, not two separate entries. This is a standalone Anacostia cluster, roughly 20-25 min from downtown DC, not joinable to a Mall or Georgetown walk."
   }
 ]

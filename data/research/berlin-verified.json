@@ -1,0 +1,71 @@
+[
+  {
+    "id": "ber_016",
+    "name": "The Lietzensee Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 220 years",
+    "age_min": 205,
+    "age_max": 235,
+    "location": {
+      "address": "Lietzenseepark, north shore near Wundtstrasse 56, 14057 Berlin",
+      "latitude": 52.5075,
+      "longitude": 13.28676,
+      "neighbourhood": "Charlottenburg, Charlottenburg-Wilmersdorf"
+    },
+    "verified_sources": [
+      "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+      "https://www.monumentaltrees.com/en/deu/berlin/berlin/10978_lietzenseeparks/21543/"
+    ],
+    "access": "Free, public park (Lietzenseepark)",
+    "transport": "Sophie-Charlotte-Platz or Kaiserdamm (U2), about 10-12 minutes' walk",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Officially designated Naturdenkmal 4-26/B (Berlin register, berlin-naturdenkmale.json), register coordinates 52.507524,13.28676. Independently corroborated by monumentaltrees.com specimen '21543' at Lietzenseeparks, whose own GPS pin (52.50750,13.28677) sits within about 3 metres of the register point, confirming this is the same physical tree, not a different plane in the same park (the park holds several documented planes). monumentaltrees dates it to 1807 (219 years old at the Aug 2020 measurement, so roughly 225-226 by 2026; treat as an estimate, not a precise felling-ring count) and records repeated girth measurements: 6.00m (2015), 6.14m (2020), 6.43m (2025) at 1.3m height, height 22m (2025 laser measurement, up from an earlier 17.5m reading in 2020, likely a measurement-method difference rather than real growth). By girth this is the 6th-thickest tree recorded anywhere in Berlin on monumentaltrees.com. Alive and photographed as recently as 31 May 2025. Register gives no age or girth of its own; designation reason not itemised beyond the general Naturdenkmal listing. Would pair with the Caucasian Wingnut (ber_017) about 170m away on the same shore, and with ber_004 (Swamp Cypress, Schlosspark Charlottenburg) roughly 1.8km northwest, forming Berlin's second walkable cluster."
+  },
+  {
+    "id": "ber_017",
+    "name": "The Lietzensee Wingnut",
+    "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+    "age_estimate": "roughly 100 years",
+    "age_min": 90,
+    "age_max": 110,
+    "location": {
+      "address": "Lietzenseepark, northeast section near Lietzenseeufer 5, 14057 Berlin",
+      "latitude": 52.50785,
+      "longitude": 13.290788,
+      "neighbourhood": "Charlottenburg, Charlottenburg-Wilmersdorf"
+    },
+    "verified_sources": [
+      "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+      "https://www.monumentaltrees.com/en/deu/berlin/berlin/10978_lietzenseeparks/21539/"
+    ],
+    "access": "Free, public park (Lietzenseepark)",
+    "transport": "Sophie-Charlotte-Platz or Kaiserdamm (U2), about 10-12 minutes' walk",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Officially designated Naturdenkmal 4-25/B (neu) (Berlin register, berlin-naturdenkmale.json), register coordinates 52.50785,13.290788. Independently corroborated by monumentaltrees.com specimen '21539' at Lietzenseeparks, GPS pin 52.50793,13.29076, about 9m from the register point, well within normal GPS tolerance for the same multi-stemmed tree. monumentaltrees dates planting to 1927 (99 years old at the Aug 2020 measurement, so roughly 105-106 by 2026) with a girth of about 5.94m measured at ground level (0m) rather than the usual 1.3m, because the tree forks into multiple trunks near the base, which the source itself flags as why the girth reads large for the tree's age. Height not recorded. This is honestly a modest age for this project's usual bar; it qualifies on visual distinctiveness rather than antiquity: Pterocarya fraxinifolia is rare in Berlin (only 5 specimens logged citywide on monumentaltrees) and this individual's multi-stem base and size are the notable feature, not its years. Photographed 29 June 2015; no more recent photo found this pass, so 'alive now' rests on the register listing plus the 2015 photo rather than a fresh sighting. Sits about 170m from the Lietzensee Plane (ber_016) on the same shore path."
+  },
+  {
+    "id": "ber_018",
+    "name": "The Karpfenteich Elm",
+    "species": "European White Elm (Ulmus laevis)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Schlosspark Charlottenburg, southeastern corner of the Karpfenteich, Spandauer Damm, 14059 Berlin",
+      "latitude": 52.524056,
+      "longitude": 13.295944,
+      "neighbourhood": "Charlottenburg, Charlottenburg-Wilmersdorf"
+    },
+    "verified_sources": [
+      "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+      "https://www.monumentaltrees.com/en/deu/berlin/berlin/8696_schlossescharlottenburg/20545/"
+    ],
+    "access": "Free, public park (Schlosspark Charlottenburg)",
+    "transport": "Richard-Wagner-Platz (U7) or Sophie-Charlotte-Platz (U2), about 12-15 minutes' walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Officially designated Naturdenkmal 4-27/B (Berlin register, berlin-naturdenkmale.json), register coordinates 52.524056,13.295944, 'suedoestliche Ecke Karpfenteich'. This is the lead an earlier pass logged in data/leads/berlin.json and could not close for want of a second source; this pass found one. monumentaltrees.com specimen '20545', catalogued on the Karpfenteich circular path ('Rundweg am Karpfenteich') in the Schlosses Charlottenburg castle garden, has a GPS pin (52.52403,13.29591) about 3m from the register point, confirming the same tree. Girth 4.85m (2015) to 4.88m (2020) at 1.3m height, height 21.50m (laser, July 2020), essentially no growth over 5 years (0.6cm/year), consistent with a mature, slow-growing specimen. FLAGGED because monumentaltrees gives no planting year or age estimate for this individual (unlike the plane and the Treptower Park elm, both of which carry dated estimates), and the register carries no age either, so age_estimate is honestly 'not documented' rather than guessed. Species is rare and worth the page regardless: European White Elm is uncommon in Berlin plantings and vulnerable to Dutch elm disease, so a mature surviving specimen of this girth is notable on rarity and size alone. Photographed 26 Feb 2015 and 6 Jul 2020; no fresher photo found this pass. About 100m from ber_004 (Swamp Cypress) inside the same Schlosspark Charlottenburg grounds, and the western anchor of the Charlottenburg-to-Lietzensee walk with ber_016 and ber_017."
+  }
+]
