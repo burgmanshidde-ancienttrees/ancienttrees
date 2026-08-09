@@ -3,9 +3,9 @@
   "country": "Portugal",
   "status": "needs_curation",
   "intro": "Lisbon officially records almost every notable tree in the city. Since a 2012 law, the state can formally classify select specimens as trees of public interest, and Lisbon holds more of them than any other Portuguese municipality. Its oldest are four hollow olive trees outside a hilltop chapel in Alcântara, older than the Braganza dynasty. Its strangest is a rubber fig that escaped a cracked flowerpot in Mouraria and swallowed a street. Between them sit a bleeding dragon tree, a cypress mistaken for a cedar, and the Portuguese parliament's private tipu. All but one are free to visit.",
-  "meta_description": "Lisbon's oldest trees are classified by law. Meet the 457-year-old olives of Santo Amaro, a dragon tree nobody can age, and eighteen more.",
+  "meta_description": "Lisbon's oldest trees are classified by law. Meet the 457-year-old olives of Santo Amaro, a dragon tree nobody can age, and nineteen more.",
   "question_answer": "The oldest tree in Lisbon is one of four olive trees outside the Capela de Santo Amaro in Alcântara, estimated at around 457 years old, the only trees in the city with documented ages predating the 18th century. They stand in a small hilltop garden with a well known river view, an eleven minute walk from Alcântara-Terra train station.",
-  "question_meta": "The 457-year-old olive trees of Santo Amaro are Lisbon's oldest. Their exact location, how to reach them, and eighteen more remarkable trees.",
+  "question_meta": "The 457-year-old olive trees of Santo Amaro are Lisbon's oldest. Their exact location, how to reach them, and nineteen more remarkable trees.",
   "question_context": "Lisbon keeps its oldest trees close to its water. The four olive trees at the Capela de Santo Amaro have grown against the wall of a small circular hilltop chapel in Alcântara since sometime in the 1500s, making them roughly 457 years old by the city's own classification records, decades older than anything else on this list. The chapel itself, built in 1549, is a national monument, but the trees have outlasted several rounds of restoration to the building beside them. Their runner up in age is Lisbon's dragon tree in the Jardim Botânico da Ajuda, which was already a mature adult when transplanted into the city's first botanical garden in 1768, making it at least 258 years old. Between them, the two trees frame two very different kinds of longevity: quiet olives outside a functioning chapel, and a dramatic, half collapsed dragon tree behind paid admission and a steel prop. Getting to the olive trees is straightforward: Alcântara-Terra train station on the Cascais line, then an eleven minute walk uphill past the Miradouro de Santo Amaro, one of the better river views in the city and usually far quieter than the famous ones downtown.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Lisbon's ancient trees free to visit?",
-      "a": "Nineteen of the twenty are free, standing in public gardens, squares and street corners. The exception is the dragon tree at the Jardim Botanico da Ajuda, which requires a botanical garden ticket, about 1 euro, free on Sunday mornings."
+      "a": "Twenty of the twenty-one are free, standing in public gardens, squares and street corners. The exception is the dragon tree at the Jardim Botanico da Ajuda, which requires a botanical garden ticket, about 1 euro, free on Sunday mornings."
     },
     {
       "q": "Why does Lisbon have so many classified 'trees of public interest'?",
@@ -688,6 +688,36 @@
         "attribution": "Yair Haklai, via Wikimedia Commons",
         "status": "approved"
       }
+    },
+    {
+      "id": "lis_021",
+      "name": "The Tipuana of Praça São João Bosco",
+      "species": "Tipu Tree (Tipuana tipu)",
+      "age_estimate": "roughly 115 years",
+      "age_min": 110,
+      "age_max": 125,
+      "location": {
+        "address": "Jardim da Parada dos Prazeres, Praça São João Bosco, 1350-297 Lisboa",
+        "latitude": 38.7149058,
+        "longitude": -9.169781701,
+        "neighbourhood": "Estrela"
+      },
+      "verified_sources": [
+        "data/registers/portugal-icnf.json (processo AIP11066049I, classified Despacho (extrato) n.º 782/2019, Diário da República 2.ª série n.º 13, 18 January 2019, girth 3.42m, height 23.5m, crown 34m, age_register 100 at last_measured 2010)",
+        "https://www.jf-estrela.pt/eventos-e-noticias/noticias/46-poda_de_arvore_tipuana_tipu_na_praca_sao_joao_bosco"
+      ],
+      "access": "Free, public garden and traffic circle, open at all hours",
+      "transport": "Tram 25E to Campo de Ourique / Prazeres, then about a 5 minute walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A tree with a thirty four metre crown grows in the middle of a traffic circle, and by 2018 that crown had become the problem. City arborists and technicians from Portugal's nature institute came out that March to relieve the load: selective limb removal, canopy thinning, cuts meant to let wind pass through rather than push against it, the kind of surgery a tree this size needs to keep standing over a road. The garden that holds it, seven thousand square metres wrapped around a statue of Don Bosco raised in 1988, forms the roundabout that carries traffic between Campo de Ourique and the Prazeres district, directly across from Lisbon's second largest cemetery. The national register measured the tipu's trunk at 100 years old back in 2010, putting it past its first century now, a South American import from the subtropical lowlands of Bolivia and Argentina. It earned legal protection as a tree of public interest in January 2019, one of a few dozen trees in Lisbon to hold that status. Its trunk runs 3.4 metres round, modest next to the spread it throws overhead. Late spring dusts the roundabout's lawns orange when it flowers. Cars circle it a thousand times a day; almost none of the drivers know what they are driving around.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "ICNF processo AIP11066049I, Tipuana tipu, Praça São João Bosco / Jardim da Parada dos Prazeres, classified Despacho (extrato) n.º 782/2019, Diário da República 2.ª série n.º 13, 18 January 2019. Register figures: girth 3.42 m, height 23.5 m, crown 34 m, last measured 2010 at age 100 (register-only figure; AGE FLAGGED, no independent age source found). Second source for existence, species and status: Junta de Freguesia da Estrela's own news article on a March 2018 structural pruning of this exact tree, carried out with ICNF oversight. THIS IS A DIFFERENT GARDEN from lis_016/lis_017's 'Jardim da Parada' (Jardim Teofilo Braga, the Campo de Ourique barracks parade ground, roughly 500 m north): this one is Jardim da Parada dos Prazeres, a 7,000 sqm roundabout garden around the Sao Joao Bosco statue (inaugurated 1988), facing the Prazeres Cemetery, straddling Campo de Ourique and Estrela parishes (register lists freguesia as Estrela). Confirmed as a separate location by web search before naming, given the corpus already flags this exact 'two gardens share a nickname' risk on lis_016. Distance to the nearest existing published tree (lis_017, the Pohutukawa) is about 500 m, inside the walk radius: joins the Estrela cluster (lis_005, lis_011, lis_012, lis_016, lis_017) as its sixth tree."
     }
   ],
   "hero_tree_id": "lis_009"

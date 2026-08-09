@@ -1,7 +1,7 @@
 {
   "city": "Lisbon",
   "country": "Portugal",
-  "updated": "2026-08-05",
+  "updated": "2026-08-09",
   "about": "Trees found while researching Lisbon that are not published. 'leads' failed only on our evidence bar, on the count, or on being folded into a shipped entry; they are the raw material if Lisbon grows. 'blocked' must never ship, each with its one-line reason. Register figures are ICNF's: girth and height in METRES, and age_register is the age at last_measured, not today.",
   "leads": [
     {
@@ -366,23 +366,20 @@
       "note": "Classified by ICNF, not researched further in this pass. Needs an independent second source, a vitality check and an access check before it could ship."
     },
     {
-      "processo": "AIP11066049I",
-      "name_pt": "tipuana",
-      "species": "Tipuana tipu (Benth.) Kuntze",
+      "processo": "KNJ1/279, KNJ1/280",
+      "name_pt": "lódão-bastardo - A / B",
+      "species": "Celtis australis L.",
       "tipo": "Árvore isolada",
-      "place": "Praça São João Bosco",
-      "freguesia": "Estrela",
-      "latitude": 38.7149058,
-      "longitude": -9.169781701,
-      "age_register": 100,
-      "last_measured": 2010,
-      "girth_m": 3.42,
-      "height_m": 23.5,
-      "classified": "Despacho (extrato) n.º 782/2019, Diário da República, 2.ª série - n.º 13- 18 de janeiro de 2019",
-      "nearest_published_m": 500,
-      "nearest_published_id": "lis_017",
+      "place": "Rua do O Século - Quintal do n.º 79",
+      "freguesia": "Misericórdia",
+      "latitude": 38.71288,
+      "longitude": -9.1481,
+      "age_register": 150,
+      "girth_m": 3.8,
+      "nearest_published_m": 730,
+      "nearest_published_id": "lis_003",
       "source": "ICNF, Arvoredo de Interesse Publico (CC BY 4.0)",
-      "note": "Classified by ICNF, not researched further in this pass. Needs an independent second source, a vitality check and an access check before it could ship."
+      "note": "Register-twin pair, ~15 m apart, both 150-year Celtis australis, close enough to join the Campo Santana / Príncipe Real cluster. Held back on access, not evidence: 'Quintal do n.º 79' reads as a private residential back garden, not a public passage, and no source checked this pass establishes public entry. Worth a second look if Lisbon grows further and someone can confirm access."
     },
     {
       "processo": "KNJ1/347",
