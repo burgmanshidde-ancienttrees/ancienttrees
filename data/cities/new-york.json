@@ -3,9 +3,9 @@
   "country": "United States",
   "status": "needs_curation",
   "intro": "New York City runs a government registry for this: the Parks Department's Great Trees of New York City list, started in 1985 and expanded in 2024 after a nomination drive drew more than 270 submissions. Every tree carries that designation. The five boroughs each hold at least one, deliberately: a courthouse elm and a botanical garden's tallest oak get the same paragraph as a tulip tree growing wild in a park tied to the Dutch colony's earliest land deals. Some are colonial-era survivors; one was planted so a park would have something to be famous for.",
-  "meta_description": "NYC runs an official Great Trees registry. Meet a 300-year-old Greenwich Village elm, a wild tulip tree older than the city itself, and eighteen more.",
+  "meta_description": "NYC runs an official Great Trees registry. Meet a 300-year-old Greenwich Village elm, a wild tulip tree older than the city itself, and nineteen more.",
   "question_answer": "New York City's oldest tree is very likely the Queens Giant, a tulip tree in Alley Pond Park estimated between 350 and 450 years old by different measures, old enough to predate the Dutch colony of New Amsterdam entirely. It stands in a wooded section of the park in eastern Queens, reachable on foot from the Douglaston Long Island Rail Road station.",
-  "question_meta": "NYC's oldest tree is likely the Queens Giant, a 350-450 year old tulip tree in Alley Pond Park. Its story, exact location, and eighteen more Great Trees.",
+  "question_meta": "NYC's oldest tree is likely the Queens Giant, a 350-450 year old tulip tree in Alley Pond Park. Its story, exact location, and nineteen more Great Trees.",
   "question_context": "The Queens Giant's claim to being New York City's oldest living thing rests on measurement rather than legend. At 133.8 feet, it is the tallest carefully measured tree in the five boroughs, and tulip trees of that height in undisturbed forest are reliably centuries old; the New York City Parks Department states it is at least 368 years old, while some arborists place the range as wide as 350 to 450. Either figure puts its germination before the 1664 English takeover of New Amsterdam, and some local accounts connect trees in this stretch of Alley Pond Park to 17th century land dealings between the Dutch West India Company and the Matinecock people who lived here first, though no source ties this specific trunk to a documented transaction. What is not in question is that it has spent its entire life essentially unmanaged, growing in what is now protected forest rather than a planted garden, which is rare enough in New York that the Parks Department calls it possibly the oldest living organism in the metropolitan area. Getting there: Douglaston station on the LIRR Port Washington line, then a short walk into Alley Pond Park's wooded trails.",
   "faq": [
     {
@@ -580,7 +580,11 @@
       },
       "story": "Central Park's own Conservancy calls this a single cedar of Lebanon. A blogger who found the same spot in 2016 counted several, growing together as a small grove, both describing the identical trees just inside the park's 72nd Street entrance, behind the information kiosk near Conservatory Water. Nobody has resolved the discrepancy, and this project would rather say so than guess. What both sources agree on is the plaque at the base, dedicating the planting for grandchildren, a gift from patrons Linda and Mort Janklow, and the species itself: Cedrus libani, the tree on Lebanon's flag and, in the older stories, the timber said to have built Solomon's Temple. It is evergreen where almost everything else in this part of Central Park is not, a pyramidal, blue green shape that holds its form across every season rather than only one. Its cones grow upright on the branch instead of hanging, ripening through autumn into rows that look, from a distance, like eggs balanced along each limb. No planting date survives for this grove; a 2016 estimate guesses a few decades old for Central Park's cedars generally, honest but not a measurement of this specific planting. Conservatory Water sits a five minute walk from three of this walk's other trees, the closest addition this cluster has had.",
       "best_time": {
-        "months": [9, 10, 11],
+        "months": [
+          9,
+          10,
+          11
+        ],
         "kind": "fruit",
         "label": "September to November, when upright cones sit on the branches like rows of eggs"
       },
@@ -690,7 +694,9 @@
         "status": "missing"
       },
       "best_time": {
-        "months": [4],
+        "months": [
+          4
+        ],
         "kind": "flowers",
         "label": "mid-April, usually a week or two before the Reservoir's Kwanzan cherries across the water"
       },
