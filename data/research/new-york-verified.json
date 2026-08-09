@@ -1,0 +1,25 @@
+[
+  {
+    "id": "nyc_017",
+    "name": "The Cedar of Lebanon Grove near Conservatory Water",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "a few decades",
+    "age_min": 30,
+    "age_max": 60,
+    "location": {
+      "address": "Inside the 72nd Street entrance to Central Park, near Conservatory Water, on the east side just north behind the information kiosk, Manhattan",
+      "latitude": 40.77418,
+      "longitude": -73.96747,
+      "neighbourhood": "Central Park, Manhattan"
+    },
+    "verified_sources": [
+      "https://www.centralparknyc.org/plants/cedar-of-lebanon",
+      "https://www.gardenindelight.com/coast-coast-cedar-lebanon/"
+    ],
+    "access": "Free, publicly accessible (Central Park, open daily)",
+    "transport": "Q train to 72nd Street (Second Avenue), about 10 minute walk west into the park via the 72nd Street/Fifth Avenue entrance",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources describe evergreen Cedar of Lebanon trees at the same spot: inside the 72nd Street park entrance, near Conservatory Water, on the east side just north behind the information kiosk. Central Park Conservancy's own plant page (centralparknyc.org/plants/cedar-of-lebanon) describes it as 'a beautiful specimen' (singular), 40-50 feet tall and 20-30 feet wide, pyramidal form, distinctive upright waxy cones that shed winged seeds like dried artichoke leaves. An independent blog post (gardenindelight.com, 2016, 'Coast-to-Coast Cedar of Lebanon') instead describes 'several cedar of Lebanon... in a small grove' at the identical location, marking it with a dedication plaque reading it was placed 'for grandchildren' by patrons Linda and Mort Janklow. UNRESOLVED DISCREPANCY: one source calls it a single specimen, the other a small grove of several trees; both agree on species and exact site. Deliver as a grove/ensemble to be safe, since the plaque gives one obvious place to stand. No confirmed planting date for this specimen or grove. The 2016 gardenindelight piece guesses Central Park's cedars generally are 'likely just a few decades old', which is a general park-wide estimate, not dated evidence for this particular tree(s) - age range here is a rough inference only, not a documented figure, and should read as 'not precisely documented' rather than a hard fact. Remarkable for: being the species on the Lebanese flag, an evergreen conifer standing out year-round in a mostly deciduous park, and reportedly a gathering/photo spot for NYC's Lebanese community (per a Daily Star Lebanon piece that could not be fetched directly, HTTP 403; not used as a source, noted for a future pass with browser access). Coordinates given are Conservatory Water's own published center point (Wikipedia infobox, sourced), not a tree-level GPS fix; the grove sits close to, not exactly on, that point. Distance-checked against the existing Ramble/Mall/CPW cluster: roughly 540m to nyc_002 (Black Tupelo), 370m to nyc_012/nyc_013 (Mall elms), 780m to nyc_011 (Great Elm of CPW), so it comfortably joins the same walk."
+  }
+]

@@ -28,6 +28,16 @@ Continued the same session (rung 4, growing the phase-1 rollout's thinnest walks
 
 Ran `photo_hunt.py --recheck` on Berlin: 4 trees picked up a candidate each (ber_011, ber_012, ber_014, ber_015), queued for a future viewing pass. `tree_index.py` rebuilt. Build and `qa.py` clean (1,287 pages). Cost: 55k tokens, 2 trees, logged.
 
+## 2026-08-09 — New York's Central Park walk grows to 5
+
+Third city this session, same rung: growing the phase-1 rollout's thinnest walks. New York's Ramble/Mall/CPW cluster was 4 trees; the leads file already held a strong candidate a prior pass had found but not delivered, the Cedar of Lebanon near Conservatory Water, undelivered only because it had one source.
+
+**Found a genuine second source and shipped it.** A 2016 garden blog corroborates Central Park Conservancy's own plant page for the same spot, adding a dedication-plaque detail, though the two sources disagree on whether it is a single specimen or a small grove; delivered as **nyc_017**, flagged, the disagreement stated rather than resolved by picking one. Distance-checked at 370-780m from the existing cluster, the closest addition this walk has had. Walk grows 4 to 5 trees, 1.7km, 23 minutes. Along the way, confirmed and blocked two dead ends: the Shakespeare Garden mulberry (blew down in a 2006 storm, never replaced) and the Strawberry Fields grove (a whole planting, not one collectible point). The Reservoir/97th Street/Evodia leads stay on file as a possible future second, more northerly cluster; still too far from this one.
+
+Ran `photo_hunt.py --recheck` on New York: nyc_014 and nyc_017 each picked up new candidates, five more photo-less trees had queued candidates re-judged as still kept from an earlier sweep. `tree_index.py` rebuilt. Build and `qa.py` clean (1,288 pages). Cost: 95k tokens, 1 tree, logged.
+
+Three cities deepened this session (Edinburgh, Berlin, New York), one live bug found and fixed along the way (a "None Year Old" title defect affecting three other published pages). Continuing to the next thin walk.
+
 ## 2026-08-08 — Postscript: Baarn, the owner's hometown, opens with five
 
 Off-focus and explicitly his call. Five trees: the Cantonspark's dawn redwood (germinated from the 1948 seed distribution that followed the species' living discovery) and giant sequoia, both explained by the park's decades as Utrecht University's botanical garden; Groeneveld's tulip tree grove and copper beech (age honestly inferred, measured at the wrong height and saying so); and the anchor, the American Oak of the Pekingtuin, ~1850, 5.52 m, around which the village placed a protective ring in October 2021 and asked residents what to inscribe on it. Hidde pointed at that tree himself mid-pass ("daar staat 1 bizar oude boom") and his tip was treated exactly like a reader submission: verified independently against the register description and two local news accounts before it was believed. The Kronkelbeuk, the twisted beech generations of Baarn children climbed, appears to be gone and is blocked, with a FAQ line inviting villagers who know more. The village gets a 3-tree walk, Cantonspark to Pekingtuin. One mechanism lesson banked: a new city that never passes through the queue is invisible to the build until it is added to city-list.json, which cost one confused rebuild tonight.

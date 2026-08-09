@@ -5750,25 +5750,25 @@
   "nyc_002": {
    "city": "New York",
    "name": "The Black Tupelo of the Ramble",
-   "checked": "2026-08-07",
+   "checked": "2026-08-09",
    "candidates": []
   },
   "nyc_006": {
    "city": "New York",
    "name": "The Manchurian Linden of Kissena Park",
-   "checked": "2026-08-07",
+   "checked": "2026-08-09",
    "candidates": []
   },
   "nyc_007": {
    "city": "New York",
    "name": "The Clove Lakes Colossus",
-   "checked": "2026-08-07",
+   "checked": "2026-08-09",
    "candidates": []
   },
   "nyc_008": {
    "city": "New York",
    "name": "The Yew of Hero Park",
-   "checked": "2026-08-07",
+   "checked": "2026-08-09",
    "candidates": [
     {
      "title": "File:Marching Up Bay Street (195053483).jpeg",
@@ -5793,7 +5793,7 @@
   "nyc_009": {
    "city": "New York",
    "name": "The Red Oak of the Thain Family Forest",
-   "checked": "2026-08-07",
+   "checked": "2026-08-09",
    "candidates": [
     {
      "title": "File:Orchid on a tree.jpg",
@@ -5875,7 +5875,7 @@
   "nyc_010": {
    "city": "New York",
    "name": "The Red Horse Chestnut of Van Cortlandt House",
-   "checked": "2026-08-07",
+   "checked": "2026-08-09",
    "candidates": [
     {
      "title": "iNat obs 335735331 (Aesculus hippocastanum)",
@@ -5997,7 +5997,7 @@
   "nyc_012": {
    "city": "New York",
    "name": "The Elms on the Rocks",
-   "checked": "2026-08-07",
+   "checked": "2026-08-09",
    "candidates": [
     {
      "title": "iNat obs 289320150 (Ulmus)",
@@ -6059,7 +6059,7 @@
   "nyc_013": {
    "city": "New York",
    "name": "The Elm Allee of Literary Walk",
-   "checked": "2026-08-07",
+   "checked": "2026-08-09",
    "candidates": [
     {
      "title": "iNat obs 289320150 (Ulmus)",
@@ -9404,7 +9404,7 @@
   "nyc_014": {
    "city": "New York",
    "name": "The Second Camperdown Elm of Green-Wood",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": [
     {
      "title": "File:Great egret in a tree (84326).jpg",
@@ -9439,13 +9439,13 @@
   "nyc_015": {
    "city": "New York",
    "name": "The Kansas Hawthorn of the Lily Pool",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": []
   },
   "nyc_016": {
    "city": "New York",
    "name": "The Caucasian Wingnut of the Rock Garden",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": []
   },
   "rom_023": {
@@ -9741,6 +9741,31 @@
      "url": "https://commons.wikimedia.org/wiki/File:Baumt%C3%BCr_September_2015_-_panoramio.jpg",
      "licence": "CC BY-SA 3.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101122239/http://www.panoramio.com/user/2"
+    }
+   ]
+  },
+  "nyc_017": {
+   "city": "New York",
+   "name": "The Cedar of Lebanon Grove near Conservatory Water",
+   "checked": "2026-08-09",
+   "candidates": [
+    {
+     "title": "iNat obs 267623733 (Cedrus atlantica)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/480965295/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/267623733",
+     "licence": "CC BY",
+     "author": "(c) Sinéad Tuttle-Lerner, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.7750295015,-73.9670305349"
+    },
+    {
+     "title": "iNat obs 267623733 (Cedrus atlantica)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/480965337/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/267623733",
+     "licence": "CC BY",
+     "author": "(c) Sinéad Tuttle-Lerner, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "40.7750295015,-73.9670305349"
     }
    ]
   }

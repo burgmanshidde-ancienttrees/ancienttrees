@@ -59,17 +59,6 @@
       "reason": "Prospect Park Alliance and the Old Growth Forest Network both describe the Midwood/Ravine as Brooklyn's last old-growth upland forest and its oldest trees, dominated by tulip trees around the Midwood and oaks/tulip trees/sweetgums around the Ravine. This pass could not find any INDIVIDUALLY named or singled-out specimen tree within this area (unlike, say, the Camperdown Elm, nyc_003, which already anchors Prospect Park) -- every source describes the forest as a whole, which reads as 'a whole wood' rather than one collectible point per the ensemble test. Not pursued further. A future pass with more time could search Prospect Park Alliance's own tree-tour PDFs or press coverage of specific champion specimens (e.g. a named oldest oak) inside the Ravine/Midwood, which would be a strong Camperdown Elm-adjacent cluster if found."
     },
     {
-      "name": "Cedar of Lebanon near Conservatory Water (72nd Street entrance)",
-      "species": "Cedar of Lebanon (Cedrus libani)",
-      "location": {
-        "address": "Inside the 72nd Street entrance to Central Park, near Conservatory Water",
-        "latitude": null,
-        "longitude": null,
-        "neighbourhood": "Central Park, Manhattan"
-      },
-      "reason": "2026-08-07 pass (deepening the Ramble/Mall/CPW cluster): Central Park Conservancy's own plant page for the species names one specimen at this spot ('a beautiful specimen inside the 72nd Street entrance near Conservatory Water', 40-50 feet tall) and it is the geographically closest new candidate found this pass, plausibly under 1km from nyc_002/nyc_011-013. Not delivered: only one real source describes this individual tree (the Conservancy's generic species page), it gives no planting date or age, and repeated searches (Daily Star Lebanon piece, Armchair Philately, general cedar-of-lebanon history sites) found nothing specific to this specimen beyond restating the species page. Fails the two-independent-sources-with-age bar. Worth a look for a future pass if a second source naming this exact tree turns up (a Conservancy walking-tour PDF or press piece), but currently thin, not withheld or blocked for any other reason."
-    },
-    {
       "name": "Common Pawpaw of the Plant Family Collection, Brooklyn Botanic Garden",
       "species": "Common Pawpaw (Asimina triloba)",
       "location": {
@@ -94,6 +83,28 @@
     }
   ],
   "blocked": [
+    {
+      "name": "The Shakespeare Garden Mulberry",
+      "species": "Mulberry (Morus sp.), formerly said to be white mulberry (Morus alba)",
+      "location": {
+        "address": "Shakespeare Garden, between Belvedere Castle, the Delacorte Theater and the Swedish Cottage, Central Park, New York",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Central Park, Manhattan"
+      },
+      "reason": "2026-08-09 pass (deepening the Ramble/Mall/CPW cluster, distance-checked as close to nyc_011): DEAD, confirmed by two independent sources. centralpark.com and ilovetheupperwestside.com both state the garden's mulberry, long claimed (disputedly) to be a graft of the mulberry Shakespeare planted at New Place, Stratford-on-Avon in 1602, blew down in a 2006 summer storm and was removed; neither source, nor the Central Park Conservancy's own current Shakespeare Garden article, mentions a replacement planting. Not a living tree today; must never ship as an entry per the never-dead-tree rule. (One tangential source, friendsofshakespearegarden.org, describes a currently-standing mulberry, but on checking it is about a different Shakespeare Garden in Ellis Park, not Central Park's, and does not apply here.) Blocked outright, not a leads/evidence gap."
+    },
+    {
+      "name": "Strawberry Fields elm grove and white pines",
+      "species": "American Elm (Ulmus americana) grove; White Pine (Pinus strobus), six trees",
+      "location": {
+        "address": "Strawberry Fields, Central Park, near West 72nd Street, New York",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Central Park, Manhattan"
+      },
+      "reason": "2026-08-09 pass: Strawberry Fields is shaded by a grove of American elms with six white pines (the park's largest of that species) at the bottom of the hill, per Central Park sources. Geographically close to the cluster (near West 72nd Street/CPW) but every source describes the plantings collectively, with no individual specimen singled out by name, age or history the way nyc_002 or nyc_011 are. Reads as 'a whole grove', not one collectible point with an obvious place to stand. Blocked as not a single collectible point unless a future pass finds one named specimen within it."
+    },
     {
       "name": "Arthur Ross Pinetum",
       "species": "Mixed conifers, 17 species",
