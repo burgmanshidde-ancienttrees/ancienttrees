@@ -77,5 +77,28 @@
     "transport": "Metra Union Pacific Northwest Line to Norwood Park station, about 22 minutes from Ogilvie Transportation Center downtown, then a short walk",
     "location_precision": "approximate",
     "curation_status": "flagged"
+  },
+  {
+    "id": "chi_004",
+    "name": "The Champion Boxelder of Edgebrook",
+    "species": "Boxelder (Acer negundo)",
+    "age_estimate": "not documented",
+    "age_min": 60,
+    "age_max": 100,
+    "location": {
+      "address": "Edgebrook Golf Course, 6100 N Central Ave, Chicago, IL 60646 (Forest Preserves of Cook County)",
+      "latitude": 41.98862,
+      "longitude": -87.7684695,
+      "neighbourhood": "Forest Glen / Edgebrook"
+    },
+    "verified_sources": [
+      "https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0/query?where=Common_name=%27boxelder%27&outFields=*&f=json",
+      "https://extension.illinois.edu/forestry/big-tree-register"
+    ],
+    "access": "Public 18-hole golf course, Forest Preserves of Cook County; a green fee is generally needed to walk the course itself, and whether the tree is visible from a public perimeter trail was not confirmed this pass",
+    "transport": "Metra Milwaukee District North Line to Edgebrook station, the last stop still inside Chicago city limits, roughly 30 minutes from Chicago Union Station, then about a 15 to 20 minute walk east on Devon/Central Ave to the golf course entrance",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Illinois Big Tree Register (University of Illinois Extension; ArcGIS item df5e7296d76a4c8ba133c9e8adf1f85a, \"IBTR Web Map 2026\"; FeatureServer IBTR_masterfile, ObjectId 205) ranks this boxelder Illinois' #1 (state champion) of its species by point score: circumference 9.03 ft (34.5 in DBH), height 55 ft, spread 35.5 ft, Total_Points 172.3, ahead of the #2 boxelder in Shawnee National Forest, Pope County (167 points, last measured 2023). Listed/measured 2026 (this year) with a dated field photo, so alive-now is well supported. ONLY ONE SOURCE FOUND: the register itself. Searched Chicago Sun-Times (2025-03-09 big-trees feature), the Illinois Extension news release on the register, and the Forest Preserves of Cook County Champion Tree Register page; none name this specimen, likely because the crown is very recent. Flag stands until a second source turns up. No age field exists anywhere in the register (a known limitation); age_min/age_max above is a rough size-based bracket only, not a core sample or documented figure, treat as directional. The surprise worth leading with: boxelder is usually dismissed as a short-lived, weedy \"trash tree\" that rarely gets large; this one is large enough to be the state's biggest known specimen. Nominators per the register: Troy Showerman, Kimberly Kalosky. Edgebrook is the Forest Glen neighbourhood at Chicago's northwest edge; the Edgebrook Metra stop is explicitly the last stop still within city limits outbound on the MD-N line, so this is in-town but right at the edge of the ~30 minute transit boundary. Feature service for future passes: https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0 (query with geometry envelope + f=json + outFields=*; no reliable county-to-city-limits mapping, so filter by lat/long against Chicago's actual boundary, not the County field). Within the Chicago-area bbox (41.6-42.05 lat, -87.95 to -87.5 lon) the ONLY other register entry with an address actually inside Chicago city limits is a red pine (Pinus resinosa) at Indian Boundary Golf Course, 8600 W Forest Preserve Ave, Chicago 60634 (lat 41.939135, long -87.844832, circumference 6.8 ft, height 64 ft) -- unranked this pass, worth checking next. Every other Cook/DuPage County entry found sits in a suburb (Homewood-Flossmoor, Lemont/Sag Bridge, Palos Hills/Moraine Valley, South Holland/Sand Ridge, Tinley Park, Oak Brook) outside the day-trip boundary. Searching the Location field for Chicago park names (Jackson, Lincoln, Washington, Humboldt, Garfield, Douglas, Grant, Millennium, literal \"Chicago\") returned zero hits statewide."
   }
 ]

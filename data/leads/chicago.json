@@ -2,8 +2,8 @@
   "city": "Chicago",
   "country": "USA",
   "city_slug": "chicago",
-  "updated": "2026-08-08",
-  "note": "First verification pass on Chicago, web research from zero (no register). Delivered 3 verified candidates to data/research/chicago-verified.json (chi_001 to chi_003), below the 4-tree floor for a page. leads = trees that failed only on our evidence bar or on the count, raw material for a future pass. blocked = trees that must never ship whatever happens later, each with its reason.",
+  "updated": "2026-08-09",
+  "note": "First verification pass on Chicago, web research from zero (no register). Delivered 3 verified candidates to data/research/chicago-verified.json (chi_001 to chi_003), below the 4-tree floor for a page. leads = trees that failed only on our evidence bar or on the count, raw material for a future pass. blocked = trees that must never ship whatever happens later, each with its reason. 2026-08-09 pass: found the Illinois Big Tree Register feature-service endpoint and delivered chi_004 (Champion Boxelder, Edgebrook Golf Course) to data/research/chicago-verified.json, bringing Chicago to 4 verified trees, the floor for a page.",
   "leads": [
     {
       "name": "University of Chicago Main Quadrangle bur oak / black oak stand",
@@ -18,6 +18,12 @@
       "location_hint": "Graceland Cemetery, 4001 N Clark St, Uptown, Chicago, roughly 41.9556, -87.6598",
       "why_not_shipped": "Graceland publishes its own self-guided Tree Tour maps (PDF, e.g. https://www.gracelandcemetery.org/images/Tree_Tour_II_Map_-_to_be_added_to_website.pdf) which likely name specific notable specimens, but the tour pages fetched in this pass described the collection only in aggregate, with no individual tree's age, species or exact plot called out. A future pass should open the actual Tree Tour PDF map(s) rather than the landing page; if they name specific champion or notably old trees with locations, that could produce one or more strong candidates within a 25 to 30 minute transit ride of downtown (Red Line to Sheridan or Berwyn, or Clark St bus).",
       "update_2026_08_08": "Both PDF tour maps (Tree Tour I, 50 numbered specimens, and Tree Tour II, 50 more) were opened and read in full this pass. Both are plain species-identification walks, one example of each species numbered on a map (White Pine, Bur Oak is not even listed; the closest natives are a Northern Pin Oak, a Pin Oak, an English Oak, a Black Oak and a Swamp White Oak scattered among ornamentals like Ginkgo, Katsura and Star Magnolia). Neither map gives an age, a girth, a 'champion' or 'notable' designation, or any text distinguishing one specimen as remarkable versus another; they exist to show garden diversity, not veteran trees. Targeted searches for a named old/champion tree at Graceland (elm survivor, champion oak, historic specimen) returned nothing beyond the same aggregate 'certified arboretum, 2,000+ trees' framing. This lead is now closed unless a future pass finds a specific news piece or arborist report naming one Graceland tree with an age and a plot location; the tour maps themselves are exhausted."
+    },
+    {
+      "name": "Red pine, Indian Boundary Golf Course",
+      "species": "Red Pine (Pinus resinosa)",
+      "location_hint": "Indian Boundary Golf Course, 8600 W Forest Preserve Ave, Chicago, IL 60634 (Forest Preserves of Cook County), roughly 41.939135, -87.844832",
+      "why_not_shipped": "Found 2026-08-09 via the Illinois Big Tree Register feature service (see resolved_2026_08_09 below), the only OTHER register entry in the Chicago-area bbox with an address actually inside Chicago city limits (Forest Preserve Ave address is Chicago, not a suburb). Circumference 6.8 ft, height 64 ft, listed/measured 2026. Not yet checked this pass: its Total_Points ranking among Illinois red pines (state champion or not), whether it clears the two-source bar, an honest access description for a Cook County golf course, and a precise walk time from the nearest Blue Line or Metra stop. Red pine is non-native to Illinois and likely planted rather than wild, which does not disqualify it but is worth noting for the story."
     }
   ],
   "blocked": [
@@ -65,9 +71,11 @@
     }
   ],
   "unexplored_2026_08_08": [
-    "Illinois Big Tree Register (extension.illinois.edu/forestry/big-tree-register), an interactive ArcGIS Experience map (https://experience.arcgis.com/experience/df5e7296d76a4c8ba133c9e8adf1f85a) with GPS coordinates, species and measurements for 88 champion trees statewide, some likely within Chicago or its close suburbs. The map is a JS-only SPA; curl returns an empty shell and the underlying FeatureServer URL was not located in this pass. A future pass should find the feature-service endpoint (browser devtools network tab, or ArcGIS item search on Illinois Extension's org) and query it for entries within city limits. Champion-tree size does not equal age, so any hit still needs an independent age source before it clears the bar.",
     "Chicago Botanic Garden (Glencoe): checked briefly, the oldest documented specimen (a white oak in McDonald Woods) is only cited as 'over 100 years old', not old enough to be a strong candidate, and Glencoe is a genuine trek from downtown (Metra Union Pacific North to Braeside, then a walk/shuttle, likely 45+ minutes door to door), so it was not pursued further this pass.",
     "Washington Park (Olmsted, 1870): DNAinfo's 2016 'oldest tree' survey states its oaks 'predate the earliest designs for the park by Frederick Law Olmsted in 1870', but no source found in this pass names or locates an individual specimen there; TCLF's landscape page describes groves only in aggregate. Worth a dedicated look at Chicago Park District records or a site visit.",
     "hpherald.com's 'Hyde Park Stories: Bur Oaks' article (already a verified_source for chi_002) returned HTTP 429 on WebFetch and 302 on curl in this pass; worth a retry with a delay, it may contain more detail on the Wooded Island/Jackson Park grove or other Hyde Park specimens."
-  ]
+  ],
+  "resolved_2026_08_09": {
+    "illinois_big_tree_register_feature_service": "The Experience Builder app at https://experience.arcgis.com/experience/df5e7296d76a4c8ba133c9e8adf1f85a is item df5e7296d76a4c8ba133c9e8adf1f85a on arcgis.com (\"IBTR Web Map 2026\", owner cwevans1, org GL0fWlNkwysZaKeV = University of Illinois Extension). Its config (arcgis.com/sharing/rest/content/items/<id>/data?f=json) names the underlying layer as https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0 (capability: Query only). Query with GET params geometry=<envelope>&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&f=json (or where=Common_name=... / County=...). Fields include Common_name, Species, County, Location (free-text, no address), Year_listed_Last_measured, Diameter_at_breast_height__in__, Circumference__ft__, Height__ft__, Spread__ft__, Total_Points (ranking score), pic_url (temporary signed S3 URL, expires), Lat/Long. No age field exists in this register at all. The County field does NOT reliably indicate Chicago city limits (Cook County is mostly suburbs); filter by lat/long against the actual city boundary instead. Never re-hunt this endpoint; query it directly next time."
+  }
 }
