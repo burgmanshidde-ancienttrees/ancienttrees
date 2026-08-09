@@ -8,6 +8,30 @@
       "kind": "verify",
       "by": "night-run",
       "claimed_at": "2026-08-09T10:26:22+00:00"
+    },
+    {
+      "target": "berlin",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-09T13:02:34+00:00"
+    },
+    {
+      "target": "vienna",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-09T13:02:34+00:00"
+    },
+    {
+      "target": "amsterdam",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-09T13:02:34+00:00"
+    },
+    {
+      "target": "washington-dc",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-09T13:02:34+00:00"
     }
   ]
 }
