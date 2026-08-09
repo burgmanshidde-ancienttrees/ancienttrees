@@ -28,11 +28,11 @@ Links and referrers:
 - External referrers (a link somebody clicked): none yet
 - Backlink count: not automatable, Search Console's API has no links endpoint. Read it by hand at https://search.google.com/search-console/links?resource_id=sc-domain%3Aancienttrees.app
 
-Audience, 28 days of search (53 clicks, 2038 impressions):
+Audience, 28 days of search (78 clicks, 3680 impressions):
 - Countries: usa c14/i790; gbr c7/i437; nld c7/i162; bel c5/i95; can c5/i92
 - Devices: MOBILE c56/i2050; DESKTOP c22/i1596; TABLET c0/i34
 - Landing pages: /lisbon c8/i150; / c4/i47; /porto c4/i29; /amsterdam c3/i227; /kyoto c3/i76
-- Search language (top 100 queries, crude keyword match): English 56q c1/i116; unclassified 39q c0/i81; Spanish 2q c0/i4; French 1q c0/i2; Italian 1q c0/i1; Dutch 1q c0/i1
+- Search language (top 100 named queries, crude match, most clicks are in queries Google withholds): English 56q c1/i116; unclassified 39q c0/i81; Spanish 2q c0/i4; French 1q c0/i2; Italian 1q c0/i1; Dutch 1q c0/i1
 On the site since 2026-08-08 (44 visits, 72 pageviews, 1.6 pages per visit):
 - Countries: PT 27; NL 22; US 5; JP 5; IE 4
 - Devices: desktop 55; mobile 17
