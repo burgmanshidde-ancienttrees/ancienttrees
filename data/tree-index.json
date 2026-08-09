@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 19263,
+ "count": 19264,
  "trees": [
   {
    "id": "ams_001",
@@ -6131,6 +6131,22 @@
    "age_min": 105,
    "age_max": 125,
    "has_photo": true,
+   "has_story": true,
+   "sources": 2
+  },
+  {
+   "id": "lis_021",
+   "tier": "highlighted",
+   "name": "The Tipuana of Praça São João Bosco",
+   "species": "Tipu Tree (Tipuana tipu)",
+   "city": "Lisbon",
+   "country": "Portugal",
+   "lat": 38.7149058,
+   "lng": -9.169781701,
+   "precision": "confirmed",
+   "age_min": 110,
+   "age_max": 125,
+   "has_photo": false,
    "has_story": true,
    "sources": 2
   },
