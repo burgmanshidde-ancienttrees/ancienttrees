@@ -196,6 +196,166 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "cop_006",
+      "name": "The Handkerchief Tree of Assistens",
+      "species": "Handkerchief Tree (Davidia involucrata)",
+      "age_estimate": "not documented",
+      "age_min": 40,
+      "age_max": 100,
+      "location": {
+        "address": "Assistens Kirkegård, Section A, near the northeast corner (Nørrebrogade / Kapelvej), Nørrebro, Copenhagen",
+        "latitude": 55.69067,
+        "longitude": 12.55392,
+        "neighbourhood": "Nørrebro"
+      },
+      "story": "What looks like flowers on this tree are leaves. For roughly two weeks in May the handkerchief tree hangs hundreds of paired white bracts through its crown, each pair a modified leaf wrapped around a small dark ball of actual flower, and Danish names it better than English does: duetræ, the dove tree. Davidia involucrata grows wild in the mountains of western China and reached Western cultivation only in 1904, through the plant hunter Ernest Wilson. It is still an uncommon thing to find in Denmark, and this one is multi-stemmed, so in May the bracts come at you from several directions at once.\n\nNobody wrote down when it was planted. The Danish Dendrological Society surveyed Assistens in November 2019, put a GPS point on this tree, measured 1.4 metres around its stems and recorded it alive and healthy. That is the honest limit of what is known here: a girth, not an age. The range on this page is inferred from that measurement and from how recently the species arrived in Danish gardens, not read off any record.\n\nIt stands in section A of a cemetery Copenhagen treats as a park. People run, read and eat their lunch here, a few hundred metres from the graves of Hans Christian Andersen and Søren Kierkegaard.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the bracts open and the Danish name for it, dove tree, makes sense"
+      },
+      "verified_sources": [
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1468",
+        "https://bennyfriisgunno.dk/assistens/planter.htm"
+      ],
+      "access": "Free, open access; Assistens Kirkegård functions as both cemetery and public park, open 07:00-22:00 in summer and 07:00-19:00 in winter",
+      "transport": "Nørrebros Runddel metro station (M3 Cityringen), roughly 5-7 minute walk; the station sits at the cemetery's northeastern corner, close to this tree",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "cop_007",
+      "name": "The Weeping Beech of Assistens",
+      "species": "Weeping Beech (Fagus sylvatica f. pendula)",
+      "age_estimate": "not documented",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Assistens Kirkegård, Section B, just right of the entrance from Kapelvej, Nørrebro, Copenhagen",
+        "latitude": 55.68963,
+        "longitude": 12.55299,
+        "neighbourhood": "Nørrebro"
+      },
+      "story": "Every weeping beech is a graft, and on this one the join is in plain sight. About a metre up the trunk there is a visible union where a cutting of the pendulous form was fixed onto ordinary beech rootstock, and the surveyor who measured the tree in November 2019 noted that the grafted top is now putting on wood faster than the stock beneath it, so the trunk steps outward where the two meet. Look for that step before you look at the curtain.\n\nThe same survey recorded something less comfortable: a large wound at the base of the trunk. The tree was logged as alive, 3.29 metres round and 15 metres tall, but it is a healthy crown standing over an open injury, which is worth knowing rather than glossing over.\n\nWeeping beech became a Danish cemetery fashion in the nineteenth century under the name sørgebøg, mourning beech, planted to hang over a grave the way a mourner leans over it. No planting date survives for this one. The 80 to 150 years on this page is worked back from the girth, not counted.\n\nIt stands in section B, just right of the Kapelvej entrance, which makes it the first serious tree most visitors to Assistens Kirkegård walk straight past.",
+      "verified_sources": [
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1467",
+        "https://bennyfriisgunno.dk/assistens/planter.htm"
+      ],
+      "access": "Free, open access; Assistens Kirkegård functions as both cemetery and public park, open 07:00-22:00 in summer and 07:00-19:00 in winter",
+      "transport": "Nørrebros Runddel metro station (M3 Cityringen) or the Kapelvej main entrance, roughly 5-10 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "cop_008",
+      "name": "The Great Maple of Assistens",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "not documented",
+      "age_min": 100,
+      "age_max": 180,
+      "location": {
+        "address": "Assistens Kirkegård, Section C, roughly 10m southwest of the section's centre, Nørrebro, Copenhagen",
+        "latitude": 55.69151,
+        "longitude": 12.5519,
+        "neighbourhood": "Nørrebro"
+      },
+      "story": "The thickest tree at Assistens is also the least exotic species in it. At 4.19 metres round, this sycamore out-measures every tree the Danish Dendrological Society registered inside these walls, including the rarities people actually come to see, and it does it as a common European maple that seeds itself into any gap it can find. Twenty-two and a half metres tall, one trunk to about two metres up and then a fork into two, alive and healthy at the November 2019 survey, rated regionally noteworthy.\n\nAssistens was not built for strolling. It opened in 1757 outside the city ramparts as an overflow burial ground, taking the dead that Copenhagen's crowded parish churchyards could no longer hold, and the famous names arrived later. The city then grew out past it, Nørrebro packed in around it, and the place slowly turned into what it is now: a walled park with graves in it, where on a warm afternoon the living comfortably outnumber the mourners.\n\nNo planting date exists for this maple, and the 100 to 180 years given here is inferred from its girth rather than counted. What is certain is the measurement, taken with GPS in the field, and that nothing else registered in this cemetery is thicker. Section C, a little southwest of the section's centre.",
+      "verified_sources": [
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1477",
+        "https://bennyfriisgunno.dk/assistens/planter.htm"
+      ],
+      "access": "Free, open access; Assistens Kirkegård functions as both cemetery and public park, open 07:00-22:00 in summer and 07:00-19:00 in winter",
+      "transport": "Nørrebros Runddel metro station (M3 Cityringen), roughly 10 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "cop_009",
+      "name": "The Beech by the Boat Trip",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "not documented",
+      "age_min": 120,
+      "age_max": 220,
+      "location": {
+        "address": "Frederiksberg Have, beside the Bådfarten (rowing-boat rental/canal boat trip), Frederiksberg",
+        "latitude": 55.67369,
+        "longitude": 12.52694,
+        "neighbourhood": "Frederiksberg"
+      },
+      "story": "This beech is registered under the name of a boat trip. Danish dendrologists filed it as Bøgen ved Bådfarten, the beech by the boat trip, which makes it the easiest tree on this list to find: walk to the jetty in Frederiksberg Have where the flat-bottomed boats set off around the canals, and the tree is the big one standing over you. Its trunk is 4.68 metres round and 1.49 metres across, measured in October 2016 and recorded alive.\n\nThe water it stands beside is the reason the garden looks the way it does. Frederiksberg Have began around 1700 as a Baroque layout of straight lines below the royal palace, then was redrawn between 1798 and 1804 into a romantic landscape of winding canals, islands and staged views, which is the fashion this beech grew up inside. The garden is protected under Danish conservation law and free to walk into.\n\nIts age is not documented anywhere. The 120 to 220 years here comes from girth alone, and the garden's own heritage listing is careful on the point: the trees it names as three centuries old are the lindens on Mathildehøj, not this beech. Only one tree in our Copenhagen list carries a thicker trunk, and it is a short walk away in the same garden.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October, when the copper leaves come down onto the canal below it"
+      },
+      "verified_sources": [
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=837",
+        "https://www.fredninger.dk/wp-content/uploads/2016/11/Frederiksberg_Have.pdf"
+      ],
+      "access": "Free, open access; Frederiksberg Have is a public park, protected (fredet) under Danish nature conservation law",
+      "transport": "Frederiksberg Allé metro station (M1/M2/M3), roughly 10-12 minute walk via Frederiksberg Runddel, the garden's main entrance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "cop_010",
+      "name": "The Pedunculate Oak of Frederiksberg Have",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": 130,
+      "age_max": 250,
+      "location": {
+        "address": "Frederiksberg Have, Frederiksberg",
+        "latitude": 55.67627,
+        "longitude": 12.52081,
+        "neighbourhood": "Frederiksberg"
+      },
+      "story": "This oak has no recorded birthday, but the garden gives it a ceiling. Frederiksberg Have was laid out as royal ground around 1700 and rebuilt between 1798 and 1804 into the romantic landscape park it still is, so whatever the tree's exact age, it cannot be older than the garden that had to exist before anyone planted in it. What was measured rather than guessed: 4.95 metres round, 28.8 metres tall, 1.58 metres through, surveyed by the Danish Dendrological Society in October 2016 and rated municipally noteworthy. That is the thickest trunk in our Copenhagen list.\n\nThe 130 to 250 years on this page is arithmetic on that girth against how fast a parkland oak puts on wood, not a date from any record, and it should be read as the wide guess it is. A pedunculate oak growing in the open with room on every side thickens faster than one shut into a wood, which is exactly the situation here, and one reason the upper end of that range is probably generous.\n\nThe garden around it is public, protected and busy: lawns, canals, the palace up on its hill, boats in summer. The oak has watched the whole thing turn from a royal retreat into the city's back garden.",
+      "verified_sources": [
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=839",
+        "https://www.fredninger.dk/wp-content/uploads/2016/11/Frederiksberg_Have.pdf"
+      ],
+      "access": "Free, open access; Frederiksberg Have is a public park, protected (fredet) under Danish nature conservation law",
+      "transport": "Frederiksberg Alle metro station (M1/M2/M3), roughly 10-15 minute walk via Frederiksberg Runddel, the garden's main entrance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
