@@ -8702,31 +8702,481 @@
    "city": "Baarn",
    "name": "The Cantonspark Dawn Redwood",
    "checked": "2026-08-09",
-   "candidates": []
+   "candidates": [
+    {
+     "title": "File:Cantonspark2.Baarn.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Cantonspark2.Baarn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ACantonspark2.Baarn.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "China Crisis",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Pond landscape; the feathery deciduous conifer left of centre may well be the dawn redwood but it is a small element in a wide scene, the trunk is screened by grasses, and nothing in the file confirms which conifer it is",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Overzicht park met vijver - Baarn - 20404674 - RCE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Overzicht_park_met_vijver_-_Baarn_-_20404674_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3AOverzicht_park_met_vijver_-_Baarn_-_20404674_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "IJsbrand Heins",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Same conifer by the pond in a 2002 monument-survey frame, photographed as a park overview; tree not the subject and identity unconfirmed",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Cantonspark1.Baarn.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Cantonspark1.Baarn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ACantonspark1.Baarn.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "China Crisis",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Lawn, rose bed and stone balustrade, no conifer in frame",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Overzicht park - Baarn - 20404673 - RCE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Overzicht_park_-_Baarn_-_20404673_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3AOverzicht_park_-_Baarn_-_20404673_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "IJsbrand Heins",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Lawn and pergola, distant tree line only",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn Cantonspark 26.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Baarn_Cantonspark_26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Cantonspark_26.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Tulp8",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Sculpture in the pond with the wintertuin behind it",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:NurseryGarden.Cantonspark.Baarn.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/91/NurseryGarden.Cantonspark.Baarn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ANurseryGarden.Cantonspark.Baarn.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "China Crisis",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Rose garden and village rooftops",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Bridge.Cantonspark.Baarn.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Bridge.Cantonspark.Baarn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABridge.Cantonspark.Baarn.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "China Crisis",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. The park's stone footbridge",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn Cantonspark Fontein 27.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Baarn_Cantonspark_Fontein_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Cantonspark_Fontein_27.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Tulp8",
+     "source": "commons",
+     "judged": "not viewed: file is the park fountain by its own description, no tree subject",
+     "judged_date": "2026-08-09"
+    }
+   ],
+   "exhausted": "2026-08-09: whole Cantonspark lane swept (category, geosearch, Dutch-term search, Openverse). 20 files exist for the park and they photograph the wintertuin, the colonnade, the cupid, the fountain and the bridge. Two frames (Cantonspark2, RCE 20404674) do show a feathery conifer by the pond that is plausibly this tree, but in both it is a small element in a park view and no source names it, so approving would be a guess. Needs a new source or a reader photo, not another Commons sweep."
   },
   "brn_002": {
    "city": "Baarn",
    "name": "The Cantonspark Giant Sequoia",
    "checked": "2026-08-09",
-   "candidates": []
+   "candidates": [
+    {
+     "title": "File:Cantonspark2.Baarn.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Cantonspark2.Baarn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ACantonspark2.Baarn.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "China Crisis",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. No giant sequoia anywhere in frame; the only large conifer is a feathery deciduous one",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Overzicht park met vijver - Baarn - 20404674 - RCE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Overzicht_park_met_vijver_-_Baarn_-_20404674_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3AOverzicht_park_met_vijver_-_Baarn_-_20404674_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "IJsbrand Heins",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Park overview, no sequoia in frame",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Overzicht park - Baarn - 20404673 - RCE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Overzicht_park_-_Baarn_-_20404673_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3AOverzicht_park_-_Baarn_-_20404673_-_RCE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "IJsbrand Heins",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Park overview, no sequoia in frame",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Cantonspark1.Baarn.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Cantonspark1.Baarn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ACantonspark1.Baarn.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "China Crisis",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. No sequoia in frame",
+     "judged_date": "2026-08-09"
+    }
+   ],
+   "exhausted": "2026-08-09: no photograph of a giant sequoia at Cantonspark exists on Commons, Openverse or Flickr under an open licence. Searches for sequoia Baarn, mammoetboom Baarn and mammoetboom Cantonspark all return zero. The park's own 20 files never point a camera at the pinetum."
   },
   "brn_003": {
    "city": "Baarn",
    "name": "The Tulip Tree Grove at Kasteel Groeneveld",
    "checked": "2026-08-09",
-   "candidates": []
+   "candidates": [
+    {
+     "title": "File:Baarn Kasteel Groeneveld tulpenboom 94.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Baarn_Kasteel_Groeneveld_tulpenboom_94.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Kasteel_Groeneveld_tulpenboom_94.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Atsje",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. The only file on Commons naming a tulip tree at Groeneveld, and it is an autumn pond scene with a steel sculpture in front; the golden crown behind merges with its neighbours, no single crown and trunk readable, and the description places it behind the castle rather than at the ice cellar grove",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn - Kasteel Groeneveld - IJskelder Walk 6 - In the back IJskelder.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/68/Baarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_6_-_In_the_back_IJskelder.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_6_-_In_the_back_IJskelder.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Bare-season path through beech trunks, no tulip tree and no subject tree",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn - Kasteel Groeneveld - IJskelder Walk 4.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/03/Baarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_4.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Woodland path, beech trunks at the frame edges",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn - Kasteel Groeneveld - IJskelder Walk 5 - In the back Ossenstal.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/40/Baarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_5_-_In_the_back_Ossenstal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_5_-_In_the_back_Ossenstal.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Stream and meadow with a farmhouse",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn - Kasteel Groeneveld - IJskelder Walk 7.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/98/Baarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_7.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Pond view, trunk at the right edge only",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn - Kasteel Groeneveld - IJskelder Walk 8.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Baarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_8.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Pond with a beech at the right edge, crown cut off",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn - Kasteel Groeneveld - IJskelder Walk 9.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Baarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_9.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. A line of bare beeches across a lawn, no single subject",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn Groeneveld ijskelder.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Baarn_Groeneveld_ijskelder.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Groeneveld_ijskelder.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Atsje",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. The ice cellar door in rhododendrons, no tree",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Iiskelder Groeneveld Baarn 98.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Iiskelder_Groeneveld_Baarn_98.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3AIiskelder_Groeneveld_Baarn_98.JPG",
+     "licence": "Public domain",
+     "author": "Swarte Kees at fy.wikipedia",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. The ice cellar entrance, no tree",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn - Ravensteinselaan - Landgoed Groeneveld 2 - View on IJskelder.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Baarn_-_Ravensteinselaan_-_Landgoed_Groeneveld_2_-_View_on_IJskelder.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_-_Ravensteinselaan_-_Landgoed_Groeneveld_2_-_View_on_IJskelder.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Woodland slope, no subject tree",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn, in park bij Kasteel Groeneveld IMG 0555 2019-07-24 16.06.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Baarn%2C_in_park_bij_Kasteel_Groeneveld_IMG_0555_2019-07-24_16.06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn%2C_in_park_bij_Kasteel_Groeneveld_IMG_0555_2019-07-24_16.06.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Michielverbeek",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Rhododendron tunnel",
+     "judged_date": "2026-08-09"
+    }
+   ],
+   "exhausted": "2026-08-09: the 9-frame IJskelder Walk series by Txllxt is the closest thing to coverage of this grove and it photographs the walk, not the trees; the one file that names a tulip tree is a pond composition with a sculpture. A tulip tree grove is also the hardest of the five to shoot to the standard, since 33-metre trunks in a stand never give a readable crown from below."
   },
   "brn_004": {
    "city": "Baarn",
    "name": "The Copper Beech by the South Pond, Groeneveld",
    "checked": "2026-08-09",
-   "candidates": []
+   "candidates": [
+    {
+     "title": "File:Baarn - Kasteel Groeneveld - IJskelder Walk 8.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Baarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_-_Kasteel_Groeneveld_-_IJskelder_Walk_8.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. A big beech stands at the right edge by the water but the crown is out of frame and nothing places it at the south pond",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn - Landgoed Groeneveld - View South.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Baarn_-_Landgoed_Groeneveld_-_View_South.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_-_Landgoed_Groeneveld_-_View_South.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Bare-season pond view, no subject tree",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn - Landgoed Groeneveld - View SE.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/47/Baarn_-_Landgoed_Groeneveld_-_View_SE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_-_Landgoed_Groeneveld_-_View_SE.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Txllxt TxllxT",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Pond and bench, trunks at both edges",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn Kasteel Groeneveld 93.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Baarn_Kasteel_Groeneveld_93.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Kasteel_Groeneveld_93.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Atsje",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Autumn pond scene, no subject tree",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn Kasteel Groeneveld 95.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Baarn_Kasteel_Groeneveld_95.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Kasteel_Groeneveld_95.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Atsje",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Autumn pond scene, no subject tree",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn Kasteel Groeneveld 99.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Baarn_Kasteel_Groeneveld_99.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Kasteel_Groeneveld_99.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Atsje",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Autumn watercourse, no subject tree",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn Kasteel Groeneveld 07.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/39/Baarn_Kasteel_Groeneveld_07.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Kasteel_Groeneveld_07.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Atsje",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Autumn avenue of oaks",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn Kasteel Groeneveld 08.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Baarn_Kasteel_Groeneveld_08.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Kasteel_Groeneveld_08.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Atsje",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Copse of beeches seen across a meadow, far too distant",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn Kasteel Groeneveld richting Wijnberg 06.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Baarn_Kasteel_Groeneveld_richting_Wijnberg_06.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Kasteel_Groeneveld_richting_Wijnberg_06.JPG",
+     "licence": "CC BY-SA 4.0",
+     "author": "Atsje",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Beech trunk at the left edge, meadow",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Groeneveld park.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Groeneveld_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3AGroeneveld_park.jpg",
+     "licence": "CC BY-SA 3.0 nl",
+     "author": "Peter van der Wielen",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. The castle facade with trees framing the edges",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:A single soul at the end of the avenue of life, crying for mankind. - Flickr - Mister.Tee.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/45/A_single_soul_at_the_end_of_the_avenue_of_life%2C_crying_for_mankind._-_Flickr_-_Mister.Tee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3AA_single_soul_at_the_end_of_the_avenue_of_life%2C_crying_for_mankind._-_Flickr_-_Mister.Tee.jpg",
+     "licence": "CC BY 2.0",
+     "author": "Greg Tee from Amsterdam, The Netherlands",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. An avenue, and heavily desaturated to a near-sepia treatment, which the standard rules out",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "Vijver op Groeneveld",
+     "thumb": "https://live.staticflickr.com/7025/6456267137_4cee92daa7_b.jpg",
+     "url": "https://www.flickr.com/photos/31392863@N04/6456267137",
+     "licence": "CC BY 2.0",
+     "author": "ednl",
+     "source": "flickr",
+     "judged": "rejected: viewed as pixels. Moat reflection, no subject tree",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "Winter trees",
+     "thumb": "https://live.staticflickr.com/3550/3334047310_df09065afa_b.jpg",
+     "url": "https://www.flickr.com/photos/31392863@N04/3334047310",
+     "licence": "CC BY 2.0",
+     "author": "ednl",
+     "source": "flickr",
+     "judged": "rejected: viewed as pixels. Cleared woodland with pines, not the pond and not a copper beech",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "Beukenlaan in avondzon",
+     "thumb": "https://live.staticflickr.com/6101/6292298602_17020f94e4_b.jpg",
+     "url": "https://www.flickr.com/photos/31392863@N04/6292298602",
+     "licence": "CC BY 2.0",
+     "author": "ednl",
+     "source": "flickr",
+     "judged": "rejected: viewed as pixels. Backlit beech avenue, no single subject",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "Op een bruggetje in de herfst",
+     "thumb": "https://live.staticflickr.com/6094/6298463841_81dd2f9ae6_b.jpg",
+     "url": "https://www.flickr.com/photos/31392863@N04/6298463841",
+     "licence": "CC BY 2.0",
+     "author": "ednl",
+     "source": "flickr",
+     "judged": "rejected: viewed as pixels. Backlit water scene",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "Kasteel Groeneveld in de spiegel",
+     "thumb": "https://live.staticflickr.com/7034/6456281231_5895fdfd69_b.jpg",
+     "url": "https://www.flickr.com/photos/31392863@N04/6456281231",
+     "licence": "CC BY 2.0",
+     "author": "ednl",
+     "source": "flickr",
+     "judged": "rejected: viewed as pixels. The castle mirrored in the moat",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "Boomstronk naast het wandelpad achter Kasteel Groeneveld",
+     "thumb": "https://live.staticflickr.com/4104/5072015774_fc3cbb9df1_b.jpg",
+     "url": "https://www.flickr.com/photos/31392863@N04/5072015774",
+     "licence": "CC BY 2.0",
+     "author": "ednl",
+     "source": "flickr",
+     "judged": "rejected: viewed as pixels. A freshly cut stump, and a stump is never an entry photo",
+     "judged_date": "2026-08-09"
+    }
+   ],
+   "exhausted": "2026-08-09: Groeneveld is well photographed and never for its individual trees. Nothing in Commons, Openverse or Flickr shows a solitary purple-leaved beech beside the southernmost pond, and every pondside beech in frame is green-leaved or unidentifiable, so even the near misses would be a guess about which tree."
   },
   "brn_005": {
    "city": "Baarn",
    "name": "The American Oak of the Pekingtuin",
    "checked": "2026-08-09",
-   "candidates": []
+   "candidates": [
+    {
+     "title": "File:Baarn Pekingtuin.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/60/Baarn_Pekingtuin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Pekingtuin.JPG",
+     "licence": "CC0",
+     "author": "Atsje",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. A genuinely characterful veteran with a burred bole and long twisting limbs stands at the left edge, but its habit reads as the twisted beech rather than a red oak, the park's bandstand fills the centre band so it fails the card crop, and the file names only the park",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn Pekingpark.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Baarn_Pekingpark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Pekingpark.jpg",
+     "licence": "CC0",
+     "author": "Atsje",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. Villa street with birches, not the park",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn Muziektent Pekingtuin.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/65/Baarn_Muziektent_Pekingtuin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Muziektent_Pekingtuin.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Tulp8",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. The bandstand",
+     "judged_date": "2026-08-09"
+    },
+    {
+     "title": "File:Baarn Quatre Bras.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/96/Baarn_Quatre_Bras.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+     "url": "https://commons.wikimedia.org/wiki/File%3ABaarn_Quatre_Bras.JPG",
+     "licence": "CC0",
+     "author": "Atsje",
+     "source": "commons",
+     "judged": "rejected: viewed as pixels. A villa beside the park",
+     "judged_date": "2026-08-09"
+    }
+   ],
+   "exhausted": "2026-08-09: no photograph of the ringed American oak exists under an open licence. Searches for Amerikaanse eik Baarn, boomring Pekingtuin and monumentale boom Baarn all return zero, and the 2021 ring itself, which would make the tree instantly identifiable, is on no open-licensed image. This is the best UGC target of the five: the tree is five minutes from the station and the ring names it."
   },
   "bud_006": {
    "city": "Budapest",
@@ -9959,6 +10409,10 @@
    "date": "2026-08-08",
    "note": "Photo-judging pass on the top-25 rollout cities (Paris, Rome, Amsterdam, Barcelona, Seville, Edinburgh, Budapest, Athens). 35 images downloaded and viewed as pixels, throttled to one request every 3.2 seconds with no rate limiting. One approved: par_010, the Sophora by the Lake in the Parc des Buttes-Chaumont, a CC BY 4.0 photograph whose own GPS lands 22 m from our pin and which carries the city's 'Sophora remarquable' panel in frame. 83 candidates across 32 trees are now judged and 31 of those trees are closed out as exhausted. The dominant failure is that the Commons geosearch and iNaturalist lanes for these cities return proximity, not subject: street corners, a Vespa, a museum sarcophagus, a giant chessboard, a concert portrait of a man named Matthew Tree, and phenology close-ups of leaves, pods and flower spikes. Two near misses worth recording: edi_010's Corstorphine Sycamore photograph is excellent but is the Royal Botanic Garden specimen, a different individual 8 km from our churchyard pin, and rom_011's Villa Sciarra cedar is the correct tree shot from above the crown with no trunk visible. Athens ath_010's eleven candidates are one Ameriki Square series; four were viewed and the series closed on that evidence."
   },
-  "2026-08-08 US federal-source sweep (photo-judge): HALS/Library of Congress witness-tree documentation (HALS DC-6 bur oak, DC-7 Jefferson elm, DC-9 botanic garden elm) is public domain and identity-perfect, but it is black and white large-format archival photography and therefore fails the Cadiz standard; do not re-hunt it. Architect of the Capitol imagery is disqualified by AOC's own non-commercial terms ('educational, scholarly, news or personal purposes'), whatever the Flickr 'United States Government Work' tag says. NPS npgallery uploads on Commons photograph memorials and buildings, not individual trees."
+  "2026-08-08 US federal-source sweep (photo-judge): HALS/Library of Congress witness-tree documentation (HALS DC-6 bur oak, DC-7 Jefferson elm, DC-9 botanic garden elm) is public domain and identity-perfect, but it is black and white large-format archival photography and therefore fails the Cadiz standard; do not re-hunt it. Architect of the Capitol imagery is disqualified by AOC's own non-commercial terms ('educational, scholarly, news or personal purposes'), whatever the Flickr 'United States Government Work' tag says. NPS npgallery uploads on Commons photograph memorials and buildings, not individual trees.",
+  {
+   "date": "2026-08-09",
+   "note": "Baarn viewing pass, manual Dutch-term hunt after the API sweep returned zero candidates for all five trees. Swept Commons categories (Cantonspark, Kasteel Groeneveld and its Gardens/Icehouse subcategories, Parks in Baarn, Nature of Baarn), Commons geosearch on all three sites, 25 Dutch and English Commons searches, Openverse across five terms, and iNaturalist within 5 km. 40 images rendered and viewed as pixels: 34 Commons, 6 Flickr CC BY. Zero approvals. iNaturalist is a dead end for Baarn: every observation of Metasequoia, Sequoiadendron, Quercus rubra, Fagus sylvatica and Liriodendron in range is CC BY-NC or unlicensed. The pattern across all five trees is the same, these parks are photographed as places (wintertuin, colonnade, ice cellar, castle facade, moat) and never as trees."
+  }
  ]
 }
