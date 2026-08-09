@@ -142,3 +142,22 @@ IGN; Spain: PNOA; Denmark and others have equivalents); then Esri World
 Imagery (check the capture-date metadata per tile area). Google Maps/Earth
 tiles are ToS-restricted for automated fetching: do not scrape them.
 Always cite the imagery source and its capture vintage in the evidence.
+
+## monumentaltrees.com as a verification source (codified 2026-08-09, Hidde's push)
+
+Hard rule 1 forbids their content (photos, text, bulk data) and explicitly
+permits fact verification. In practice that means three allowed uses:
+1. **Second source**: a tree found elsewhere (register, news, institution) may
+   be corroborated by its monumentaltrees record for existence, species,
+   location and measurements. Never the sole source, and never the discovery
+   engine: we find trees elsewhere, they may confirm them.
+2. **Photo identity**: LOOK at their photos to confirm which tree a candidate
+   image shows. Never republish or download their imagery.
+3. **Names and measurements as cross-checks.**
+
+Two hard edges: their server 403s automated fetches, deliberately, so this is
+measured single-page browser-session work, never bulk scraping; and wholesale
+extraction of their database is forbidden by their disclaimer and by EU
+database right, whatever the technical route. The long play is Hidde's
+outreach mail to the site's owner (OUTREACH.md tier 3c), which can turn the
+grey edge into a partnership.
