@@ -1,41 +1,6 @@
 {
   "leads": [
     {
-      "name": "London Plane at the Reservoir (Bridle Path near East 96th Street)",
-      "species": "London Plane (Platanus x acerifolia)",
-      "location": {
-        "address": "Bridle Path, east side of the Jacqueline Kennedy Onassis Reservoir, near East 96th Street, Central Park, New York",
-        "latitude": null,
-        "longitude": null,
-        "neighbourhood": "Central Park, Manhattan"
-      },
-      "reason": "NYC Parks Great Trees register: 95.94 feet tall, trunk diameter over 5 feet, possibly planted when the Reservoir was excavated in 1862, called Central Park's oldest tree by Untapped Cities. A strong standalone candidate (two sources: NYC Parks register + Untapped Cities guide) but not pursued to full verification this pass because it sits roughly 1.9km from the nyc_002 (Ramble)/nyc_011-013 cluster this pass was built around, too far to fold into the same walk. Worth a follow-up pass anchored at the Reservoir/96th St instead, possibly paired with the nearby Yoshino Cherries and East 97th St elm below."
-    },
-    {
-      "name": "Yoshino Cherries at the Reservoir (east side, near East 87th Street)",
-      "species": "Yoshino Cherry (Prunus x yedoensis)",
-      "location": {
-        "address": "East side of the Jacqueline Kennedy Onassis Reservoir, near East 87th Street, Central Park, New York",
-        "latitude": null,
-        "longitude": null,
-        "neighbourhood": "Central Park, Manhattan"
-      },
-      "reason": "NYC Parks Great Trees register: part of Japan's 1912 gift of cherry trees to the United States, distinct from the Kwanzan cherries on the reservoir's west side, blooms mid-April. An ensemble candidate similar in kind to the Mall elm allee (nyc_013 in the verified batch), but roughly 1.1-1.2km from the nyc_002 Ramble anchor, stretching the cluster further than the three delivered this pass. Not pursued to full verification for time; a real candidate for a second, more northerly Central Park cluster together with the Reservoir London Plane and East 97th St elm above/below.",
-      "location_precision_note": "would need a mapped reference point for 'east side near 87th St', not yet found"
-    },
-    {
-      "name": "American Elm at East 97th Street entrance",
-      "species": "American Elm (Ulmus americana)",
-      "location": {
-        "address": "Near the East 97th Street entrance, Central Park, New York",
-        "latitude": null,
-        "longitude": null,
-        "neighbourhood": "Central Park, Manhattan"
-      },
-      "reason": "NYC Parks Great Trees register (id=46): 94.3 feet tall with an 80-foot canopy, dates to the 1800s per NYC Parks, survived Dutch elm disease and 'major superstorms', described as the northernmost Great Tree in the park. Two sources exist (NYC Parks register + Westside Rag/Untapped Cities coverage) but, like the Reservoir trees above, it sits well over 1.5km from the Ramble cluster this pass focused on. Good candidate for the same northerly follow-up cluster.",
-      "location_precision_note": "no mapped point found yet"
-    },
-    {
       "name": "Evodia by Heckscher Playground",
       "species": "Evodia / Korean Bee-Bee Tree (Tetradium daniellii)",
       "location": {
@@ -44,7 +9,7 @@
         "longitude": null,
         "neighbourhood": "Central Park (south end), Manhattan"
       },
-      "reason": "NYC Parks Great Trees register (id=44): 77.9 feet tall, native to China/Korea, distinctive leaning trunk and fern-like leaves, called 'the hardest NYC Great Tree to track down.' Well documented (register + dedicated tumblr post) but sits at the opposite (south) end of the park from the Ramble/Mall cluster, roughly 2km+ away. A fine standalone tree or seed for a future south-park cluster (with the West Drive area), not part of this pass's cluster.",
+      "reason": "NYC Parks Great Trees register (id=44): 77.9 feet tall, native to China/Korea, distinctive leaning trunk and fern-like leaves, called 'the hardest NYC Great Tree to track down.' Well documented (register + dedicated tumblr post) but sits at the opposite (south) end of the park from both the Ramble/Mall cluster and the Reservoir cluster now delivered as nyc_018-020. 2026-08-09 pass distance-checked it against the Reservoir cluster specifically (not just the Ramble): Heckscher Playground is roughly 40.7676,-73.9788 by estimate (no exact geocode found), versus nyc_020 (Yoshino Cherries, E87th St) at 40.7819,-73.9585, a gap of roughly 2.3km. Confirmed too far to fold into either existing walk; stays a fine standalone tree or seed for a future south-park cluster (with the West Drive area).",
       "location_precision_note": "no mapped point found yet"
     },
     {
