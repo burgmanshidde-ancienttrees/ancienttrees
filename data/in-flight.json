@@ -11,27 +11,27 @@
     },
     {
       "target": "berlin",
-      "kind": "verify",
+      "kind": "write",
       "by": "session",
-      "claimed_at": "2026-08-09T13:02:34+00:00"
+      "claimed_at": "2026-08-09T13:23:51+00:00"
     },
     {
       "target": "vienna",
-      "kind": "verify",
+      "kind": "write",
       "by": "session",
-      "claimed_at": "2026-08-09T13:02:34+00:00"
+      "claimed_at": "2026-08-09T13:23:51+00:00"
     },
     {
       "target": "amsterdam",
-      "kind": "verify",
+      "kind": "write",
       "by": "session",
-      "claimed_at": "2026-08-09T13:02:34+00:00"
+      "claimed_at": "2026-08-09T13:23:51+00:00"
     },
     {
       "target": "washington-dc",
-      "kind": "verify",
+      "kind": "write",
       "by": "session",
-      "claimed_at": "2026-08-09T13:02:34+00:00"
+      "claimed_at": "2026-08-09T13:23:51+00:00"
     }
   ]
 }
