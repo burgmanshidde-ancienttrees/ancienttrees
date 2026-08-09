@@ -158,6 +158,14 @@ document.addEventListener("click", function (e) {
     (function () {
       try {
         if (location.hostname !== "ancienttrees.app") { return; }
+        // Automated browsers are not an audience. The hostname gate above
+        // already keeps CI out (the smoke test renders 127.0.0.1), but six
+        // headless pageviews still showed up in the beacon on 2026-08-09, so
+        // something automated is loading the live site: our own research
+        // agents' browser sessions, a checker, a bot that does not spoof.
+        // navigator.webdriver is the standard flag every automation tool sets,
+        // and one polluted number is worse than a missing one.
+        if (navigator.webdriver) { return; }
         var p = new URLSearchParams(location.search);
         if (p.get("notrack") === "1") { localStorage.setItem("at_notrack", "1"); }
         else if (p.get("notrack") === "0") { localStorage.removeItem("at_notrack"); }
