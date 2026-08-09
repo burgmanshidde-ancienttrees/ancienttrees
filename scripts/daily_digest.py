@@ -539,6 +539,89 @@ def funnel_section(today, cf_token):
     return "**The funnel, as rates**\n" + ("\n".join(rows) if rows else "- no data")
 
 
+def audience_section(today, cf_token, short=False):
+    """Who they are, over 28 days: country, device, search language, landing
+    page, and how they arrived. Volume answers 'how many', this answers 'who',
+    and the two need different windows: a day is enough for a click count and
+    far too little for an audience, so this one deliberately looks back 28 days
+    while everything above it reports yesterday.
+
+    Every line carries its denominator. At the volumes this site currently
+    sees, a ranked list without one reads as knowledge and is arithmetic on
+    single digits."""
+    import audience as A
+
+    out = ["**Who they are**" + ("" if short else " (full cut, Mondays)")]
+    q = A.gsc_client(today)
+    if q is None:
+        out.append("Audience: Search Console secrets absent.")
+    else:
+        countries = q(["country"], 8)
+        devices = q(["device"], 5)
+        pages = q(["page"], 8)
+        queries = q(["query"], 100)
+        # Totals come from an undimensioned query, never from summing a top-N
+        # list: the first version of this line added up the top 8 countries and
+        # printed the result as the site total, which understated it by a third.
+        totals = q([], 1)
+        tc = totals[0]["clicks"] if totals else 0
+        ti = totals[0]["impressions"] if totals else 0
+        out.append("Audience, 28 days of search (%d clicks, %d impressions):" % (tc, ti))
+
+        def line(label, rows, n=5):
+            bits = []
+            for r in rows[:n]:
+                k = (r["keys"][0] or "?").replace("https://ancienttrees.app", "") or "/"
+                bits.append("%s c%d/i%d" % (k, r["clicks"], r["impressions"]))
+            return "- %s: %s" % (label, "; ".join(bits) if bits else "none")
+
+        out.append(line("Countries", countries))
+        out.append(line("Devices", devices))
+        out.append(line("Landing pages", pages))
+        if short:
+            return "\n".join(out)
+
+        langs = {}
+        for r in queries:
+            a = langs.setdefault(A.classify(r["keys"][0]), {"c": 0, "i": 0, "n": 0})
+            a["c"] += r["clicks"]; a["i"] += r["impressions"]; a["n"] += 1
+        ranked = sorted(langs.items(), key=lambda kv: -kv[1]["i"])
+        # Directional only, and the reason is Google's, not ours: query-level
+        # data omits rare queries for privacy, so most of the clicks above
+        # never appear in any query row. Read the shape, never the totals.
+        out.append("- Search language (top %d named queries, crude match, most clicks "
+                   "are in queries Google withholds): %s" % (
+            len(queries), "; ".join("%s %dq c%d/i%d" % (k, v["n"], v["c"], v["i"])
+                                    for k, v in ranked)))
+
+    if cf_token:
+        try:
+            a, since = A.rum(cf_token, today)
+        except Exception as e:
+            a = None
+            out.append("- On-site beacon: unreadable (%s)" % str(e)[:80])
+        if a:
+            days = a.get("days") or []
+            pv = sum(d["count"] for d in days)
+            vis = sum(d["sum"]["visits"] for d in days)
+
+            def dim(rows, key, n=5):
+                bits = []
+                for r in (rows or [])[:n]:
+                    v = r["dimensions"].get(key) or "(direct)"
+                    bits.append("%s %d" % (str(v)[:26], r["count"]))
+                return "; ".join(bits) if bits else "none"
+
+            out.append("On the site since %s (%d visits, %d pageviews, %.1f pages per visit):"
+                       % (since, vis, pv, (pv / vis) if vis else 0))
+            out.append("- Countries: " + dim(a.get("countries"), "countryName"))
+            out.append("- Devices: " + dim(a.get("devices"), "deviceType", 4))
+            out.append("- Browsers: " + dim(a.get("browsers"), "userAgentBrowser", 4))
+            out.append("- Arrived via: " + dim(a.get("refs"), "refererHost"))
+            out.append("- Opened: " + dim(a.get("paths"), "requestPath", 8))
+    return "\n".join(out)
+
+
 def fetch_machine(today):
     """Chain utilization from the GitHub Actions API: attempts vs runs that got
     real work time. Answers Hidde's standing question (2026-07-28) whether his
