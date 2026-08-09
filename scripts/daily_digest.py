@@ -459,8 +459,12 @@ def audience_section(today, cf_token):
         devices = q(["device"], 5)
         pages = q(["page"], 8)
         queries = q(["query"], 100)
-        ti = sum(r["impressions"] for r in countries)
-        tc = sum(r["clicks"] for r in countries)
+        # Totals come from an undimensioned query, never from summing a top-N
+        # list: the first version of this line added up the top 8 countries and
+        # printed the result as the site total, which understated it by a third.
+        totals = q([], 1)
+        tc = totals[0]["clicks"] if totals else 0
+        ti = totals[0]["impressions"] if totals else 0
         out.append("Audience, 28 days of search (%d clicks, %d impressions):" % (tc, ti))
 
         def line(label, rows, n=5):
@@ -479,7 +483,11 @@ def audience_section(today, cf_token):
             a = langs.setdefault(A.classify(r["keys"][0]), {"c": 0, "i": 0, "n": 0})
             a["c"] += r["clicks"]; a["i"] += r["impressions"]; a["n"] += 1
         ranked = sorted(langs.items(), key=lambda kv: -kv[1]["i"])
-        out.append("- Search language (top %d queries, crude keyword match): %s" % (
+        # Directional only, and the reason is Google's, not ours: query-level
+        # data omits rare queries for privacy, so most of the clicks above
+        # never appear in any query row. Read the shape, never the totals.
+        out.append("- Search language (top %d named queries, crude match, most clicks "
+                   "are in queries Google withholds): %s" % (
             len(queries), "; ".join("%s %dq c%d/i%d" % (k, v["n"], v["c"], v["i"])
                                     for k, v in ranked)))
 
