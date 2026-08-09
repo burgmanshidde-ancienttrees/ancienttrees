@@ -199,8 +199,20 @@ Elke sessie kan mailen namens Hidde, en zo werkt het, blijvend:
    (hard rule 4). Proven flow: batch 001, 2026-08-08, vijf mails.
 3. **De vangrails zitten in de code** en gelden voor elke sessie: geen
    verzending zonder status `approved_by_hidde`, nooit tweemaal hetzelfde
-   adres (data/outreach-sent.json), maximaal tien per dag, elke verzending
-   gelogd in dit bestand.
+   adres (data/outreach-sent.json), een dagcap, elke verzending gelogd in dit
+   bestand.
+
+   **De dagcap ging op 2026-08-09 van tien naar veertig**, op Hidde's woord:
+   "vergeet mijn script we mogen zoveel mensen mailen als we zelf bedenken dat
+   goed is". Hij is bewust een getal gebleven en niet oneindig, en de reden is
+   niet voorzichtigheid maar zijn eigen postvak: deze mails gaan vanaf zijn
+   adres, en een uitbarsting koude mail die bounct of als spam wordt gemarkeerd
+   beschadigt de reputatie van het domein. Daarna belandt zijn eigen post ook
+   in spamfolders, en dat is traag te herstellen en onzichtbaar tot het al
+   gebeurd is. De cap houdt een bug tegen die dezelfde lijst vijftig keer
+   mailt; hij houdt Hidde niet tegen. Wil een sessie er meer, dan zet ze
+   `OUTREACH_DAILY_CAP` voor die run, wat een bewuste handeling is in plaats
+   van een vergissing.
 4. **Wat een sessie nooit doet**: versturen zonder zijn woord voor die batch,
    en de nachtruns versturen helemaal niets. Wil Hidde ooit volautomatisch
    (zonder tekst-inzage per batch), dan is dat een expliciete nieuwe

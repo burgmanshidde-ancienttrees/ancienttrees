@@ -10,7 +10,15 @@ guardrails are not etiquette but code:
   file's status is "approved_by_hidde" (he flips it, or says so in session).
 - An address that was ever mailed before is refused (data/outreach-sent.json),
   so nobody is double-mailed by a re-run or a second session.
-- Hard cap of 10 sends per UTC day, so a bug cannot blast.
+- A daily cap, raised from 10 to 40 by Hidde on 2026-08-09 ("we mogen zoveel
+  mensen mailen als we zelf bedenken dat goed is"). It stays a number rather
+  than becoming unlimited for one reason that is not caution: this sends from
+  his own mailbox, and a burst of cold mail that bounces or gets marked as
+  spam damages the domain's sending reputation, after which his OWN mail
+  (waitlist, replies, anything he writes later) starts landing in spam
+  folders. That is slow to undo and invisible until it has happened. Forty a
+  day from a young domain is already assertive; the cap's job is to stop a
+  bug from blasting the same list fifty times, not to stop him.
 - A mail with an empty "to" is skipped with a warning, never guessed.
 - Every send is appended to data/outreach-sent.json AND printed for the
   OUTREACH.md log.
@@ -37,7 +45,7 @@ from email.utils import formataddr, parseaddr
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SENT_PATH = os.path.join(ROOT, "data", "outreach-sent.json")
-DAILY_CAP = 10
+DAILY_CAP = int(os.environ.get("OUTREACH_DAILY_CAP", "40"))
 
 
 def load_sent():
