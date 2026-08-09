@@ -1,17 +1,378 @@
 ---
+// Homepage. Ported from build_homepage(), build_site.py:4932-5240.
+//
+// Two things `live_cards`/`soon_cards` (build_site.py:4981-4994) were: dead
+// code. Computed in Python and never referenced by the body template -
+// verified by grepping the whole file for both names. Not ported here for
+// the same reason: matching real production output means matching what it
+// actually renders, not what an unused variable suggests it might.
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import { cityIsRenderable, renderableTrees, slugify, type CityEntry } from "../lib/trees";
+import { usablePhoto, imgSrcset, imgSrcsetAttrs } from "../lib/images";
+import { speciesCommon } from "../lib/species";
+import { seasonKind } from "../lib/phenology";
+import { ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
+import { byCityListOrderEntry } from "../lib/city-order";
+import { SPECIES_ICONS } from "../lib/species-icons";
+import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
 
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+function icon(k: string): string {
+  return `<svg viewBox="0 0 40 40" fill="currentColor" aria-hidden="true">${SPECIES_ICONS[k]}</svg>`;
+}
+
+// HERO_PHOTOS[0], build_site.py:80-83.
+const HERO_PHOTO_URL = "https://images.unsplash.com/photo-1422393682802-921122338109?q=80&w=2400&auto=format&fit=crop";
+
+const canonical = `${BASE_URL}/`;
+const title = "Ancient Trees: remarkable old trees near you, mapped";
+const description =
+  "Find the remarkable old trees around you. Ten per city, each verified, each with its story, its exact spot and directions from where you stand.";
+
+// city-list.json order before any sort, matching `renderable` in main()
+// (build_site.py:5721-5726): every sort below is Python's stable sort over
+// that walk order, so a tie (dozens of cities share a tree count) breaks
+// the same way only if the pre-sort order matches.
+const renderable = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
+const published = renderable.map((c) => ({ slug: c.id, city: c.data.city, country: c.data.country, count: renderableTrees(c).length }));
+
+const allCollections = await getCollection("collectionPages");
+const collections = allCollections.filter((c) => c.data.status !== "needs_curation");
+
+const speciesIntros = await getCollection("species");
+const speciesGroups = new Map<string, number>();
+for (const c of renderable) {
+  for (const t of renderableTrees(c)) {
+    const common = speciesCommon(t);
+    speciesGroups.set(common, (speciesGroups.get(common) ?? 0) + 1);
+  }
+}
+const SPECIES_MIN_TREES = 3;
+const introByCommon = new Map(speciesIntros.map((i) => [i.data.common_name, i]));
+const qualifying = [...speciesGroups.keys()].filter((c) => (speciesGroups.get(c) ?? 0) >= SPECIES_MIN_TREES && introByCommon.has(c));
+const speciesSlugs = [...qualifying].map((common) => [common, slugify(common)] as [string, string]).sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
+
+// --- Directory block (the four-column "anywhere" grid) ---
+const rankedCities = [...published].sort((a, b) => b.count - a.count);
+const citiesCol = rankedCities.slice(0, 9).map((p) => `<a href="/${p.slug}">${esc(p.city)}</a>`).join("");
+const moreCitiesHtml = rankedCities.slice(9, 19).map((p) => `<a href="/${p.slug}">${esc(p.city)}</a>`).join("");
+const speciesCol =
+  speciesSlugs.map(([cn, sl]) => `<a href="/species/${sl}">${esc(cn)}</a>`).join("") +
+  '<a class="dir-morelink" href="/species">All species</a>';
+const collCol =
+  collections.slice(0, 9).map((c) => `<a href="/collections/${esc(c.data.slug)}">${esc(c.data.title)}</a>`).join("") +
+  '<a class="dir-morelink" href="/collections">All collections</a>';
+
+// Unfiltered trees (entry.data.trees, not renderableTrees), matching the
+// same pre-existing Python quirk kept in search-index.json.ts: build_site.py
+// 4960-4964 walks `entry["data"]["trees"]` directly.
+const oldest: { ageMax: number; name: string; citySlug: string; treeSlug: string }[] = [];
+for (const entry of renderable) {
+  for (const t of entry.data.trees) {
+    if (t.age_max) oldest.push({ ageMax: t.age_max, name: t.name, citySlug: entry.id, treeSlug: slugify(t.name) });
+  }
+}
+oldest.sort((a, b) => b.ageMax - a.ageMax);
+const treesCol = oldest.slice(0, 10).map((o) => `<a href="/${o.citySlug}/${o.treeSlug}">${esc(o.name)}</a>`).join("");
+
+const moreBlock = moreCitiesHtml
+  ? `<span id="more-cities" hidden>${moreCitiesHtml}</span>` +
+    '<button type="button" class="dir-morelink dir-morebtn" id="more-cities-btn">Show 10 more</button>' +
+    `<a class="dir-morelink" href="/cities">All ${published.length} cities</a>`
+  : `<a class="dir-morelink" href="/cities">All ${published.length} cities</a>`;
+const directoryHtml =
+  '<div class="dir-cols">' +
+  `<div class="dir-group"><h3>Top cities</h3>${citiesCol}${moreBlock}</div>` +
+  `<div class="dir-group"><h3>Collections</h3>${collCol}</div>` +
+  `<div class="dir-group"><h3>Oldest trees</h3>${treesCol}</div>` +
+  `<div class="dir-group"><h3>Top species</h3>${speciesCol}</div>` +
+  "</div>";
+
+// --- Tree of the month / "at their best right now" shelf ---
+const month = new Date().getMonth() + 1;
+const KIND_VERB: Record<string, string> = {
+  flowers: "blooming",
+  catkins: "blooming",
+  fruit: "fruiting",
+  "autumn colour": "turning",
+  "fresh leaves": "unfurling",
+};
+interface SeasonCandidate {
+  entry: CityEntry;
+  tree: CityEntry["data"]["trees"][number];
+  bt: { months?: number[]; label?: string; kind?: string };
+  photo: { url: string };
+}
+const candidates: SeasonCandidate[] = [];
+for (const entry of renderable) {
+  for (const t of entry.data.trees) {
+    const bt = t.best_time;
+    const ph = usablePhoto(t);
+    if (bt?.months?.includes(month) && ph?.url) {
+      candidates.push({ entry, tree: t, bt, photo: { url: ph.url } });
+    }
+  }
+}
+function seasonCard(c: SeasonCandidate): string {
+  return (
+    `<a class="shelf-card" href="/${c.entry.id}/${slugify(c.tree.name)}">` +
+    `<span class="shelf-ph"><img ${imgSrcsetAttrs(c.photo.url, [400, 800], "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy">` +
+    `<span class="shelf-now">at its best now</span></span>` +
+    `<b>${esc(c.tree.name)}</b>` +
+    `<span class="shelf-meta">${esc(c.entry.data.city)} &middot; ${esc(c.bt.label ?? "")}</span></a>`
+  );
+}
+let seasonShelf = "";
+if (candidates.length >= 2) {
+  const bySpecies = new Map<string, SeasonCandidate[]>();
+  for (const c of candidates) {
+    const key = speciesCommon(c.tree);
+    if (!bySpecies.has(key)) bySpecies.set(key, []);
+    bySpecies.get(key)!.push(c);
+  }
+  let dominant = "";
+  let group: SeasonCandidate[] = [];
+  for (const [k, v] of bySpecies) {
+    if (v.length > group.length) {
+      dominant = k;
+      group = v;
+    }
+  }
+  let shelfTitle = "At their best right now";
+  let picked = candidates;
+  if (group.length >= 2) {
+    const kinds = group.map((c) => seasonKind(c.bt));
+    const kind = kinds.find((k) => k) ?? "";
+    const verb = KIND_VERB[kind];
+    const short = dominant.split(" ").at(-1)!.toLowerCase();
+    if (verb) {
+      shelfTitle = `Tree of the month: the ${verb} ${esc(short)}`;
+      picked = group;
+    }
+  }
+  seasonShelf =
+    `<section class="shelf"><div class="shelf-head"><h2>${shelfTitle}</h2>` +
+    '<a href="/in-season">See everything in season</a></div>' +
+    `<div class="shelf-row">${picked.slice(0, 4).map(seasonCard).join("")}</div></section>`;
+}
+
+// --- Our favourite tree cities shelf ---
+const FAVOURITE_CITIES = ["barcelona", "rome", "paris", "berlin", "amsterdam", "london", "new-york", "lisbon", "vienna", "edinburgh"];
+const bySlug = new Map(renderable.map((e) => [e.id, e]));
+const favCards: string[] = [];
+for (const cs of FAVOURITE_CITIES) {
+  const e = bySlug.get(cs);
+  if (!e) continue;
+  let photo: { url: string } | null = null;
+  const hero = e.data.hero_tree_id;
+  if (hero) {
+    const t = e.data.trees.find((t) => t.id === hero);
+    if (t) {
+      const p = usablePhoto(t);
+      if (p?.url) photo = { url: p.url };
+    }
+  }
+  if (!photo) {
+    for (const t of e.data.trees) {
+      const p = usablePhoto(t);
+      if (p?.url) {
+        photo = { url: p.url };
+        break;
+      }
+    }
+  }
+  if (!photo) continue;
+  favCards.push(
+    `<a class="shelf-card" href="/${cs}">` +
+      `<span class="shelf-ph"><img ${imgSrcsetAttrs(photo.url, [400, 800], "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
+      `<b>${esc(e.data.city)}</b>` +
+      `<span class="shelf-meta">${e.data.trees.length} trees &middot; ${esc(e.data.country)}</span></a>`,
+  );
+}
+const favShelf =
+  favCards.length >= 4
+    ? '<section class="shelf"><div class="shelf-head"><h2>Our favourite tree cities</h2>' +
+      '<a href="/cities">All cities</a></div>' +
+      `<div class="shelf-row shelf-row-wide">${favCards.slice(0, 10).join("")}</div></section>`
+    : "";
+
+// --- Collections shelf ---
+const treeById = new Map<string, { entry: CityEntry; tree: CityEntry["data"]["trees"][number] }>();
+for (const entry of renderable) {
+  for (const t of entry.data.trees) treeById.set(t.id, { entry, tree: t });
+}
+const collCards: string[] = [];
+const shelfPhotosUsed = new Set<string>();
+for (const c of collections) {
+  let photo: string | null = null;
+  for (const e of c.data.entries) {
+    const pair = treeById.get(e.tree_id);
+    const p = pair ? usablePhoto(pair.tree) : null;
+    if (p?.url && !shelfPhotosUsed.has(p.url)) {
+      photo = p.url;
+      break;
+    }
+  }
+  if (!photo) continue;
+  shelfPhotosUsed.add(photo);
+  const nCities = new Set(c.data.entries.map((e) => e.city_slug)).size;
+  collCards.push(
+    `<a class="shelf-card" href="/collections/${esc(c.data.slug)}">` +
+      `<span class="shelf-ph"><img ${imgSrcsetAttrs(photo, [400, 800], "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
+      `<b>${esc(c.data.title)}</b>` +
+      `<span class="shelf-meta">${c.data.entries.length} trees &middot; ${nCities} cities</span></a>`,
+  );
+}
+const collShelf =
+  collCards.length > 0
+    ? '<section class="shelf"><div class="shelf-head"><h2>Collections</h2>' +
+      '<a href="/collections">All collections</a></div>' +
+      `<div class="shelf-row">${collCards.slice(0, 4).join("")}</div></section>`
+    : "";
+
+// --- The four static home-act illustrations ---
+const findPin1 = icon("plane");
+const findPin2 = icon("wingnut");
+const findPin3 = icon("broadleaf");
+const walkPin1 = icon("oak");
+const walkPin2 = icon("plane");
+const walkPin3 = icon("ginkgo");
+const walkPin4 = icon("yew");
+const radarIcon1 = icon("ginkgo");
+const radarIcon2 = icon("ginkgo");
+const radarIcon3 = icon("wisteria");
+const radarMonthVals = [0, 0, 0, 0.5, 0.5, 0, 0.5, 0.5, 0, 0.5, 1, 0];
+const radarMonths = radarMonthVals.map((v) => `<span class="${v === 1 ? "on" : v === 0.5 ? "half" : ""}"></span>`).join("");
+const lit = ["oak", "plane", "ginkgo", "yew", "cedar", "olive"];
+const dim = ["pine", "cypress", "fig", "wisteria"];
+const collectedSpecies = [...lit, ...dim]
+  .map((k) => `<span class="sp${lit.includes(k) ? "" : " dim"}">${icon(k)}${k === "ginkgo" ? '<span class="sp-name">Ginkgo</span>' : ""}</span>`)
+  .join("");
+
+const graph = SITE_SCHEMA;
+const headExtra = ldScript(graph);
+const heroImg = imgSrcset(HERO_PHOTO_URL, [1200, 2000, 2800], "100vw");
+const scripts = `
+<script>
+var moreBtn = document.getElementById('more-cities-btn');
+if (moreBtn) {
+  moreBtn.addEventListener('click', function() {
+    document.getElementById('more-cities').hidden = false;
+    moreBtn.remove();
+  });
+}
+</script>
+` + SEARCH_WIDGET_JS;
 ---
+<Base title={title} description={description} canonical={canonical} ogType="website" headExtra={headExtra}>
+<div class="home-hero poster">
+  <img class="hero-bg" id="hero-bg" {...heroImg} alt="">
+  <div class="hero-scrim"></div>
+  <div class="hero-center">
+    <h1>Trees worth the walk, <em>wherever you are</em>.</h1>
+    <Fragment set:html={searchForm("home", "city-q", "hero-search poster-search", true)} />
+    <p class="hero-links">
+      <a class="hero-link" href="/explore">Explore trees near you</a>
+    </p>
+  </div>
+</div>
+<section class="hero-sub">
+  <p>For people who love being outside. See the remarkable old trees near you, walk a few of them in an afternoon with the story of why each is worth it, and tick off the ones you have stood in front of. Every tree free to explore.</p>
+</section>
+<Fragment set:html={favShelf} />
+<section class="home-acts">
+  <div class="home-act">
+    <div class="home-act-copy">
+      <span class="home-act-verb">Find</span>
+      <h2>The trees near you, right now.</h2>
+      <p>The map finds the remarkable old trees closest to where you are standing, and points you at the nearest one with a walk time and directions to your phone.</p>
+    </div>
+    <figure class="home-act-visual hav-card">
+      <svg class="scene" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M-10 80 L410 60" stroke="#E2DFD2" stroke-width="14"/>
+        <path d="M-10 190 L410 210" stroke="#E2DFD2" stroke-width="18"/>
+        <path d="M120 -10 L100 310" stroke="#E2DFD2" stroke-width="12"/>
+        <path d="M300 -10 L330 310" stroke="#E2DFD2" stroke-width="14"/>
+        <path d="M150 95 Q 220 70 290 110 Q 310 170 240 185 Q 160 195 145 150 Z" fill="#E4EAD5"/>
+        <path d="M-10 250 Q 120 235 410 265 L410 310 L-10 310 Z" fill="#DCE7EF"/>
+      </svg>
+      <span class="map-pin" style="left:30%;top:28%"><Fragment set:html={findPin1} /></span>
+      <span class="map-pin" style="left:63%;top:44%"><Fragment set:html={findPin2} /></span>
+      <span class="map-pin" style="left:44%;top:74%"><Fragment set:html={findPin3} /></span>
+      <span class="map-pin me" style="left:52%;top:58%"></span>
+      <figcaption class="hav-chip"><span class="hav-dot"></span>
+        <span><strong>Nearest to you</strong>The Wertheimpark Wingnut &middot; 6 min walk</span></figcaption>
+    </figure>
+  </div>
+  <div class="home-act">
+    <div class="home-act-copy">
+      <span class="home-act-verb">Walk</span>
+      <h2>A route past the ones worth seeing.</h2>
+      <p>Only the most remarkable, linked into one walk you can do in an afternoon, each with its story and the month it is at its most spectacular, so you know when to go.</p>
+    </div>
+    <figure class="home-act-visual hav-card">
+      <svg class="scene" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M-10 120 L410 100" stroke="#E2DFD2" stroke-width="16"/>
+        <path d="M200 -10 L190 310" stroke="#E2DFD2" stroke-width="12"/>
+        <path d="M40 200 Q 140 240 300 215 Q 380 200 420 230" stroke="#E2DFD2" stroke-width="14" fill="none"/>
+        <path d="M250 40 Q 340 30 380 80 Q 370 140 290 130 Q 240 110 250 40 Z" fill="#E4EAD5"/>
+        <path d="M76 234 C 120 200 96 150 150 132 C 210 112 232 150 268 96 C 290 62 320 70 340 84"
+          stroke="#3D5C1E" stroke-width="3.5" fill="none" stroke-dasharray="1 9" stroke-linecap="round"/>
+      </svg>
+      <span class="map-pin" style="left:19%;top:78%"><Fragment set:html={walkPin1} /><span class="n">1</span></span>
+      <span class="map-pin" style="left:37.5%;top:44%"><Fragment set:html={walkPin2} /><span class="n">2</span></span>
+      <span class="map-pin" style="left:67%;top:32%"><Fragment set:html={walkPin3} /><span class="n">3</span></span>
+      <span class="map-pin" style="left:85%;top:28%"><Fragment set:html={walkPin4} /><span class="n">4</span></span>
+      <figcaption class="hav-chip"><span><strong>Afternoon walk</strong>4 trees &middot; 5.2 km &middot; about 1h 10m</span></figcaption>
+    </figure>
+  </div>
+  <div class="home-act">
+    <div class="home-act-copy">
+      <span class="home-act-verb">Season</span>
+      <h2>See them at their best.</h2>
+      <p>Every tree has a moment: the ginkgo's golden week, ten days of blossom, a month of catkins. The radar shows what is at its best around you right now, so you go at exactly the right time.</p>
+    </div>
+    <div class="home-act-visual season-card">
+      <h5 class="season-now">At their best in November</h5>
+      <div class="sr-row"><span class="sp"><Fragment set:html={radarIcon1} /></span><span class="sr-body"><b>The Zenpukuji Ginkgo</b><i>turning deep gold</i></span><span class="hav-badge-inline">now</span></div>
+      <div class="sr-row"><span class="sp"><Fragment set:html={radarIcon2} /></span><span class="sr-body"><b>Meiji Jingu Gaien Avenue</b><i>the whole street gold</i></span><span class="hav-badge-inline">now</span></div>
+      <div class="sr-row dim"><span class="sp dim"><Fragment set:html={radarIcon3} /></span><span class="sr-body"><b>Kameido Tenjin Wisteria</b><i>hanging in flower</i></span><span class="sr-when">May</span></div>
+      <div class="sr-months"><Fragment set:html={radarMonths} /></div>
+      <p class="sr-link"><a href="/in-season">See what is at its best this month &rarr;</a></p>
+    </div>
+  </div>
+  <div class="home-act">
+    <div class="home-act-copy">
+      <span class="home-act-verb">Collect</span>
+      <h2>Tick off the ones you have stood in front of.</h2>
+      <p>Check in at the tree and watch your collection grow: trees, cities, species. Rarer and older trees count for more, and badges for a finished city are on their way.</p>
+    </div>
+    <div class="home-act-visual" style="background:none;border:none;box-shadow:none;padding:0">
+      <div class="hav-phone"><div class="hav-screen">
+        <h4>Your trees</h4>
+        <div class="stat-row">
+          <div class="stat"><b>23</b><span>trees</span></div>
+          <div class="stat alt"><b>6</b><span>cities</span></div>
+          <div class="stat"><b>2000</b><span>oldest, yrs</span></div>
+        </div>
+        <h5>Collected species</h5>
+        <div class="sp-grid"><Fragment set:html={collectedSpecies} /></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+<Fragment set:html={seasonShelf} />
+<Fragment set:html={collShelf} />
+<main class="page">
+  <h2 class="section-heading" id="cities">Ancient trees anywhere</h2>
+  <Fragment set:html={directoryHtml} />
+  <div class="mission">
+    <p>We are on a mission to map every remarkable tree in the world, and we could use your help. If you know a good tree, or want to map a whole city, <a href="/contribute">tell us about it</a>. If you spot a mistake, tell us that too. We work on this database every day.</p>
+  </div>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+</main>
+<Fragment slot="scripts" set:html={scripts} />
+</Base>
