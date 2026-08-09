@@ -90,7 +90,7 @@ The audience overlap is total and there is no commercial conflict.
 | Organisation | Country | Why they would care |
 |---|---|---|
 | Bomenstichting | NL | Also tier 1; the register ask and the link ask are one email |
-| Monumental Trees (monumentaltrees.com) | intl | Hard rule 1 forbids using their content, but a mutual link is a different thing and their community is exactly ours |
+| ~~Monumental Trees~~ | intl | **DO NOT SEND (Hidde, 2026-08-09): we are their direct competitor** ("using it is miserable, that is the entire opening", COMPETITION.md). We currently operate quietly within the fact-verification zone their own disclaimer permits, needing nobody's permission; a mail invites them to look at us and close that zone. Nothing to win, our best verification channel to lose. Revisit only from strength, or never. |
 | The Tree Register (TROBI) | UK | Champion-tree records; independent of the Woodland Trust |
 | European Tree Worker / EAC | EU | Professional arborists across our whole map |
 | Arbor Day Foundation | US | Relevant when the US cities open |
