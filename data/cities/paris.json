@@ -3,9 +3,9 @@
   "country": "France",
   "status": "needs_curation",
   "intro": "Paris treats its trees as part of the civic record: the city logs every one of its 200,000 street and park trees in an open register and stamps a select few as officially remarkable. Its two oldest trees are father and son, black locusts raised four centuries ago from American seed by the royal herbalist Jean Robin and his son Vespasien, and both still flower every spring. They include the city's oldest tree, its thickest, its tallest, and an address that has held an elm since the Middle Ages. Every one is a metro ride away.",
-  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and 23 more within a metro ride.",
+  "meta_description": "Paris logs its remarkable trees like monuments. Meet the 1601 Robinier, planted by the king's herbalist, and 24 more within a metro ride.",
   "question_answer": "The oldest tree in Paris is the Robinier of Square Rene-Viviani, a black locust planted in 1601 by the royal herbalist Jean Robin, now around 425 years old. It stands in the Latin Quarter directly opposite Notre-Dame, three minutes on foot from Saint-Michel Notre-Dame station.",
-  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 23 more remarkable trees nearby.",
+  "question_meta": "The 1601 Robinier of Square Rene-Viviani is the oldest tree in Paris. Its story, exact location, and 24 more remarkable trees nearby.",
   "question_context": "Paris is unusual among capitals in that its oldest tree has a name, a planting date and a planter. Jean Robin, herbalist to Henri IV, raised the black locust from American seed and set it in the ground in 1601, nineteen years before the Mayflower sailed. It still stands in Square Rene-Viviani opposite Notre-Dame, propped by concrete and partly hidden by ivy, and it still flowers every spring. The runner-up is its own son: in 1636 Robin's son Vespasien took a cutting and planted it in the new royal medicinal garden, now the Jardin des Plantes, where it also survives. That makes the two oldest trees in Paris a documented parent and child, four centuries old and two kilometres apart. Both are black locusts, an American species that reached Europe as a handful of seeds and was named Robinia after the family. For age with grandeur rather than paperwork, the Cedar of Jussieu from 1734 is the city's third elder. Getting there: Saint-Michel Notre-Dame station, then a three minute walk along the Seine.",
   "faq": [
     {
@@ -794,6 +794,35 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "par_027",
+      "name": "The Amur Cork Tree of Square Michel-Foucault",
+      "species": "Amur Cork Tree (Phellodendron amurense)",
+      "age_estimate": "about 100 years (planted 1925)",
+      "age_min": 100,
+      "age_max": 101,
+      "location": {
+        "address": "Square Michel-Foucault / Square Auguste-Mariette-Pacha, 43 Rue des Ecoles, 75005 Paris",
+        "latitude": 48.84932,
+        "longitude": 2.34519,
+        "neighbourhood": "Latin Quarter, opposite the Collège de France, 5th arrondissement"
+      },
+      "story": "Paris classifies this Amur cork tree as one of its remarkable trees, and it carries proof of a rough century outdoors: a lightning scar runs down the trunk. It shares its small pocket garden, opposite the Collège de France in the Latin Quarter, with the two Oriental planes already listed here, though almost nobody looks past those two to notice it. Phellodendron amurense is a startling find in a French square, native to the river valleys of northeastern China and the Russian Far East, grown there and studied for a thick, corky, deeply furrowed bark long before anyone planted it for how it looks. This one went into the ground in 1925, and the city's own record has it at 14 metres tall with a trunk 1.8 metres round as of 2011, a girth built less by height than by branching low and wide, so the trunk balls up beneath the crown instead of running straight. Compound leaves shaped like an ash tree's turn a hard yellow every autumn. The measurement is now fifteen years old and the tree has kept growing since, and this pass found only the city's own account of it, so the numbers are given as recorded rather than confirmed twice over. Still worth the two extra steps past the planes: not every French square holds a tree from the Amur river valley with a lightning strike already behind it.",
+      "verified_sources": [
+        "https://www.paris.fr/equipements/squares-auguste-mariette-pacha-et-michel-foucault-2445 (city's own page for this square, names the phellodendron, 1925 planting and lightning scar)",
+        "https://fr.wikipedia.org/wiki/Square_Auguste-Mariette-Pacha (14m/1.80m circumference, 2011; its own footnote cites paris.fr's 'Les arbres remarquables' page, so this is the same underlying city source read twice, not a second independent one)"
+      ],
+      "access": "Free, public square, open daily (24/24 in the checked period), dogs permitted on leash",
+      "transport": "Maubert-Mutualité (M10) or Cluny-La Sorbonne (M10), 3-5 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
     }
   ]
 }
