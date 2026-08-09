@@ -2,7 +2,7 @@
   {
     "id": "bos_009",
     "name": "The Longfellow Linden",
-    "species": "Littleleaf Linden (Tilia cordata)",
+    "species": "Small-leaved Lime (Tilia cordata)",
     "age_estimate": "roughly 220 years",
     "age_min": 200,
     "age_max": 230,
@@ -12,6 +12,15 @@
       "longitude": -71.1211,
       "neighbourhood": "Cambridge (within the day-trip boundary of Boston, roughly 20-25 minutes via Red Line to Harvard Square then a short walk)"
     },
+    "story": "In the summer of 1844 Henry Wadsworth Longfellow came home to find that workmen had \"lopped away the long low branches of my Linden tree, misunderstanding my directions\", and he wrote it up in his journal as a small catastrophe. The tree outlived him. It went into the ground around 1800 to 1810, planted by Andrew Craigie, who owned the Brattle Street estate before the poet came to it in 1843, and it stands on the East Lawn of a house that had served as George Washington's headquarters during the siege of Boston a generation before the linden existed. Fanny Longfellow wrote in 1843 of wanting \"a linden avenue in which my poet intends to pace in his old age\". This is the only tree of that avenue still standing. By 1846 he was describing her reading Heine underneath it. The National Park Service puts it at 82 feet, against roughly 60 for the species, with a trunk 84 inches through, and rates its condition fair to poor: the trunk cavity is filled, cables carry the branches, heavy pruning comes round every five years. Since the early 2000s the park has been growing a genetically identical cutting against the day it goes. The grounds are free and open in daylight; only the house tours are ticketed.",
+    "best_time": {
+      "months": [
+        6,
+        7
+      ],
+      "kind": "flowers",
+      "label": "late June into July, when the lime flowers and the whole East Lawn smells of it"
+    },
     "verified_sources": [
       "https://www.nps.gov/articles/000/long-littleleaf-linden-plant-story.htm",
       "https://designingtheparksoclp.wordpress.com/2020/09/04/if-plants-could-speak-a-tour-of-historic-plantings-at-the-longfellow-house-washingtons-headquarters-national-historic-site/",
@@ -19,9 +28,8 @@
     ],
     "access": "Free; National Historic Site grounds are open to the public daily during daylight hours (house tours are separately ticketed but the East Lawn where the tree stands is publicly accessible)",
     "transport": "MBTA Red Line to Harvard Square, then about 8-10 minutes on foot down Brattle Street",
-    "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "Planted around 1800-1810 by Andrew Craigie, who owned the estate before Henry Wadsworth Longfellow acquired it in 1843; NPS dates it to 'approximately 200 years' as of its plant-story writeup (source undated but recent), and a 2018 Cambridge tree blog independently calls it '200+ years old, 110 feet high'. Longfellow himself wrote about the tree in his journal: distraught in summer 1844 when workmen 'lopped away the long low branches of my Linden tree, misunderstanding my directions' ('O day of woe! My walk on the Eastern piazza is desecrated!'), and by 1846 describing his wife Fanny reading Heine's poetry beneath its branches. Fanny Longfellow wrote in 1843 of hoping for 'a linden avenue in which my poet intends to pace in his old age & compose under its shade' -- this surviving tree is the only one of that planned avenue left. Stands on the East Lawn beside the house. Alive today but condition rated 'fair to poor' by NPS: a filled trunk cavity and cables stabilize branches; NPS runs a 5-year heavy-pruning maintenance cycle and started a propagation program in the early 2000s to grow a genetically identical successor for eventual succession, which is itself evidence the park considers the original tree at end-of-life risk but currently standing and actively maintained, not dead. Measurements per NPS: 82 feet tall (species average is ~60 ft), 84 inches DBH, 40 ft canopy spread. Location set to 'approximate': coordinates given are for the historic site/house itself (105 Brattle St), not a surveyed tree-level GPS point; the tree stands on the East Lawn adjacent to the house, which anyone visiting the grounds will find easily, but I could not confirm an exact lat/long for the trunk itself. Two of the three sources cited (NPS interpretive article, and a landscape-preservation blog affiliated with the NPS Olmsted Center) both trace back to National Park Service documentation of the site; the third (Empty Mass Ave, an independent Cambridge blog) is genuinely independent and corroborates age, height and 'alive today' status. Flagging curation_status because the two NPS-linked sources are not fully independent of each other, even though the facts are consistent and well documented (the National Park Service's own Cultural Landscape Report for this site exists as a fourth, more technical source but is a scanned PDF with no extractable text in the time available this pass)."
+    "location_precision": "approximate"
   },
   {
     "id": "bos_010",
@@ -36,6 +44,14 @@
       "longitude": -71.1047,
       "neighbourhood": "Cambridge, Mid-Cambridge/University Park (within the day-trip boundary; on the Red Line corridor)"
     },
+    "story": "This is Cambridge's only living Historic Landmark, and it was made one in 1985 to stop a building. A developer's plans for the site would have taken a third of the copper beech's crown and finished it off, so about thirty neighbours formed a group called the Friends of the Beech Tree and petitioned the city; the Historical Commission designated the tree itself, the legal instrument normally reserved for buildings. The Harvard Crimson, reporting from the October 1985 hearing, called it 203 years old, which puts its planting around 1782 and makes it roughly 240 now. That figure carries more weight than the biography printed around it in the same article, which has Henry O. Houghton serving as mayor decades before he founded the Riverside Press. A 2018 local survey of Cambridge trees offers a looser \"planted 150+ years ago\", a lower bound rather than a contradiction. Houghton planted three beeches on his family estate here. This is the one left. MIT bought the property in the 1970s and took down the buildings, and the tree stayed, which is how a private estate specimen ended up standing on a public sidewalk on Massachusetts Avenue between Central and Harvard. Most of Boston's notable trees sit inside curated collections. This one you walk past on the way to the bus.",
+    "best_time": {
+      "months": [
+        5
+      ],
+      "kind": "fresh leaves",
+      "label": "May, when the new leaves open translucent red before they darken to purple-black"
+    },
     "verified_sources": [
       "https://www.thecrimson.com/article/1985/10/22/tree-to-be-landmark-pharvard-students/",
       "https://emptymassave.wordpress.com/2018/06/07/famous-trees-of-cambridge/",
@@ -43,8 +59,7 @@
     ],
     "access": "Free; stands beside a public sidewalk on Massachusetts Avenue, fully visible and reachable at any time",
     "transport": "MBTA Red Line to Central Square, then about 8 minutes on foot along Mass Ave toward Harvard Square",
-    "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "Cambridge's only living Historic Landmark, designated by the Cambridge Historical Commission in 1985 specifically to save this tree: a developer's planned office building would have destroyed a third of its crown and killed it outright, and a resident group called 'Friends of the Beech Tree' (about 30 people) petitioned the city to intervene. The Harvard Crimson, reporting live on the October 1985 landmark hearing, gives the tree's age at that time as '203-year-old', which would place planting around 1782 (note: the same Crimson piece states Henry Houghton 'served as mayor in 1782', which is almost certainly a transcription/OCR slip for a later 19th-century mayoral term, since Houghton founded Houghton Mifflin/Riverside Press decades later; the planting-year math from the stated age is more reliable than that specific biographical detail, so age_min/max is centered on the 203-year 1985 figure carried forward to 2026, i.e. roughly 244 years, rounded to 'roughly 240 years'). A 2018 independent Cambridge tree blog (Empty Mass Ave) separately describes it as 'planted 150+ years ago', a looser, rounder estimate that is a lower bound rather than a contradiction (150+ is consistent with 240). Species is copper/purple beech, a cultivar of European beech. It is the sole survivor of three beech trees Henry O. Houghton originally planted on his family estate; the estate's buildings were demolished when MIT acquired the property in the 1970s, but the tree itself was spared and later legally protected. The Cambridge Historical Commission's own landmark designation report (official government record) exists as a fourth source at the URL above but is a scanned image PDF with no extractable text layer in the time available this pass (note for the fetch-blocklist: cambridgema.gov landmark-report PDFs under /historicalcommission/pdf/Landmark_reports/ are scanned images, no OCR text layer). Location set to 'approximate': address and neighbourhood are well documented (1000-1008 Mass Ave, across from where the Orson Welles Cinema once stood, now University Park), but I do not have a surveyed tree-level GPS point, only a street-address-level location. Flagging curation_status for the same reason as bos_009: strong facts, but the numeric age comes from a single 1985 newspaper figure rather than two fully independent measurements, even though a second source (Empty Mass Ave) and the fact of an official 1985 government landmark designation both corroborate that this is a genuinely old, well-documented, legally protected individual tree."
+    "location_precision": "approximate"
   }
 ]

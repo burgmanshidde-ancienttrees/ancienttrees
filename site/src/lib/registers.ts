@@ -43,6 +43,16 @@ interface RawEntry {
   designation?: string;
 }
 
+/** Whether the register layer reaches the map at all. OFF since 2026-08-09
+ * on Hidde's instruction: "we bewaren ze in de database maar voorlopig nog
+ * geen nut". The data keeps being scouted, licence-checked and imported,
+ * because that work compounds and is the cheapest tree supply this project
+ * has; what stops is showing thousands of unverified grey dots to a visitor
+ * who came to be told which tree is worth the walk. Nothing is deleted, no
+ * URL is retired (these dots never had pages), and flipping this back to
+ * true restores the layer exactly as it was. */
+export const REGISTER_LAYER_ON = false;
+
 /** Every register dot the map may show. Throws (the ratchet: CLAUDE.md's
  * "a register file with no licence block" - a lesson that hit twice, now a
  * build check) on a register file that isn't the wrapper object carrying

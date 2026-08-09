@@ -3,10 +3,15 @@
 // thing on the page, loaded before the map the visitor actually came for.
 // Ported from the REGISTER_ASSET block in build_explore_page(),
 // build_site.py:4537-4550.
-import { loadRegisters } from "../../lib/registers";
+import { loadRegisters, REGISTER_LAYER_ON } from "../../lib/registers";
 
 export async function GET() {
-  const registers = loadRegisters();
+  // The switch is here rather than in the map script so the layer goes dark
+  // at the source: with it off this endpoint serves an empty collection, the
+  // map's own `if (!data.features.length) return` takes over, and no register
+  // coordinate is published at all. loadRegisters() still runs in the build's
+  // other callers, so the licence check that guards this data keeps firing.
+  const registers = REGISTER_LAYER_ON ? loadRegisters() : [];
   const features = registers.map((r) => ({
     type: "Feature",
     geometry: {
