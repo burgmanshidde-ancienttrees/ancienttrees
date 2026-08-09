@@ -5,6 +5,36 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+## 2026-08-08 (previous UTC day)
+
+Search Console (freshest day Google provides, data lags 2-3 days):
+- 2026-08-08: 4 clicks, 169 impressions, avg position 10.3 (day before: c5/i226)
+- Days: 07-30:c7/i251  07-31:c2/i230  08-01:c7/i253  08-02:c7/i299  08-03:c2/i260  08-04:c8/i254  08-05:c0/i280  08-06:c7/i215  08-07:c5/i226  08-08:c4/i169
+- Top queries (10d): oldest tree in lisbon (i5, p11); "york museum gardens" (i4, p4); 400 year old tree (i1, p18); acient tree (i1, p40); alley pond giant (i1, p28)
+- Top pages (10d): /lisbon (c4/i89); / (c3/i23); /amsterdam (c2/i132); /app (c2/i7); /berlin/swamp-cypress-of-charlottenburg (c2/i3)
+- Content lead: 'ancient trees' has no matching page (i3, p40)
+- Seen, not clicked: /rome (c0/i61, 0.0%) for trees in rome (i18, p18); trees of rome (i8, p26); rome trees (i8, p36)
+- Seen, not clicked: /malaga (c0/i24, 0.0%) for árboles históricos de málaga (i19, p73); malaga tree (i3, p8); malaga trees (i1, p8)
+
+Web Analytics (beacon, real browsers, cookieless):
+- Days (visits/pageviews): 08-01:v10/p60  08-02:v20/p20  08-03:v10/p10  08-04:v10/p20  08-05:v20/p20  08-06:v0/p10  08-07:v30/p30  08-08:v70/p120
+- Top paths: / (60); /app (40); /porto (30); /explore (10); /lisbon (10)
+- Referrers: (direct) (130); ancienttrees.app (120); www.google.com (40)
+- Countries: NL (130); US (40); PT (30); UA (20); DE (20)
+- Devices: desktop (160); mobile (130)
+- Page load (8d): p50 931ms, p90 5169ms
+
+Links and referrers:
+- External referrers (a link somebody clicked): none yet
+- Backlink count: not automatable, Search Console's API has no links endpoint. Read it by hand at https://search.google.com/search-console/links?resource_id=sc-domain%3Aancienttrees.app
+
+Site actions (yesterday): none recorded.
+Waitlist signups (total): 5.
+
+Machine: 9 chain attempts yesterday, 9 got real work time (~152 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Conclusion:** Search is the only channel with real data and it is still small: 4 clicks and 169 impressions on Google's freshest day (day before: c5/i226). Directional at best; no strategic conclusions from these volumes.
+
 **Break in series, 2026-08-08:** all visitor numbers before this date are polluted by our own machines. The CI smoke test loads every key page in headless Chrome on each push, preview sessions served the built pages locally, and both fired the Cloudflare beacon; Hidde's own browsing was in there too. From 2026-08-08 the beacon and the events tracker only fire on ancienttrees.app itself (and Hidde's devices opt out via ?notrack=1). Expect visits and pageviews to DROP sharply at this date: that is the pollution leaving, not an audience leaving. The honest pre-cleanup baseline for real strangers is the Search Console click count, roughly 35 per week. Weekly analyses must not read this break as a trend.
 
 ## Weekly analysis 2026-08-08
