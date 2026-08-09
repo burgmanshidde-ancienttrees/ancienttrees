@@ -263,8 +263,28 @@ send script enforces dedup against. Batch 001 success test: one reply or
 placement within two weeks proves the channel; zero is also an answer. Follow
 up politely after three or four weeks, never sooner.
 
+
+**Batch 002-pt, 2026-08-09.** Twelve mails, Portugal only, in Hidde's frame: a
+compliment, what the site is for, then an ask for photographs and for the tree we
+missed. Not one word about coverage or a link. Deliberately a test batch of twelve
+rather than the whole list: the text is unproven and there is no second first
+impression with the same organisation. If a reply comes, the reply is where a link
+may arise naturally, after we have used their help and credited them.
+
 | Date | To | Ask | Status |
 |---|---|---|---|
+| 2026-08-09 | Fundação Mata do Buçaco, gabpresidencia@fmb.pt | Photos + missed trees, all 6 Buçaco trees theirs, 5 without a photo, batch 002-pt | **sent** |
+| 2026-08-09 | Parques de Sintra, info@parquesdesintra.pt | Photos + corrections, Pena and Monserrate, the Monserrate pohutukawa has none, batch 002-pt | **sent** |
+| 2026-08-09 | Jardim Botânico do Porto, jardimbotanico@mhnc.up.pt | Photos + corrections, 5 Porto trees inside their garden, batch 002-pt | **sent** |
+| 2026-08-09 | Jardim Botânico da Ajuda, botanicoajuda@isa.ulisboa.pt | Photos + the Ajuda dragon tree's age, which only they can settle, batch 002-pt | **sent** |
+| 2026-08-09 | Dias com árvores (blog), dias.com.arvores@sapo.pt | Which Porto tree are we missing; closest thing in Portugal to what we do, batch 002-pt | **sent** |
+| 2026-08-09 | Quercus Núcleo do Porto, porto@quercus.pt | Photos, 12 of our 17 Porto trees have none, batch 002-pt | **sent** |
+| 2026-08-09 | Porto Ambiente, geral@portoambiente.pt | Photos, Palácio de Cristal gardens they maintain, batch 002-pt | **sent** |
+| 2026-08-09 | Quinta da Regaleira, info.regaleira@cultursintra.pt | Which tree inside their walls deserves a place; we publish none, batch 002-pt | **sent** |
+| 2026-08-09 | Paço dos Duques, geral@pacoduques.pt | Photos + what Guimarães is missing; 4 trees feels thin for that city, batch 002-pt | **sent** |
+| 2026-08-09 | Junta de Freguesia da Estrela, geral@jf-estrela.pt | Photos, 6 Lisbon trees in their parish, batch 002-pt | **sent** |
+| 2026-08-09 | Amigos do Jardim Botânico de Lisboa, amigosdobotanico@gmail.com | Which Lisbon tree are we missing; they run tree walks there, batch 002-pt | **sent** |
+| 2026-08-09 | Sociedade Portuguesa de Botânica, spbotanica@gmail.com | Confirm two species identifications we are unsure of, batch 002-pt | **sent** |
 | 2026-08-08 | Het Parool, redactie@parool.nl | Amsterdam local pitch (Heimanseik + Plantage walk), batch 001 | **sent** |
 | 2026-08-08 | DUIC, redactie@duic.nl | Utrecht local pitch (Uithof linden), batch 001 | **sent** |
 | 2026-08-08 | Brabants Dagblad, stadsredactie@bd.nl | Den Bosch local pitch (Bastion Oranje maple), batch 001 | **sent** |
