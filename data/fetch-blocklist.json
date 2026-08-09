@@ -109,6 +109,12 @@
       "noted": "2026-08-09",
       "symptom": "403 to curl even with a browser user agent",
       "workaround": "none found this pass; tile.loc.gov raw PDF storage remains the working route to HALS record content (see www.loc.gov entry)"
+    },
+    "www.up.pt": {
+      "host": "www.up.pt",
+      "noted": "2026-08-09",
+      "symptom": "hangs: no response at all, burns the full 20s timeout on /jardimbotanico/ (other up.pt subdomains are fine)",
+      "workaround": "mhnc.up.pt serves the Jardim Botanico do Porto pages and its /pt/contactos/ page carries the addresses (jardimbotanico@mhnc.up.pt); jardimbotanico.up.pt itself fails fast with a TLS/DNS error, which is cheap rather than harmful"
     }
   }
 }
