@@ -79,6 +79,12 @@
       "noted": "2026-08-09",
       "symptom": "Cloudflare 'Just a moment' challenge to curl and WebFetch",
       "workaround": "Wayback snapshots, as the DC pass used"
+    },
+    "monumentaltrees.com": {
+      "host": "monumentaltrees.com",
+      "noted": "2026-08-09",
+      "symptom": "403 to curl (was fetchable earlier)",
+      "workaround": "browser session for fact verification only; hard rule 1 forbids content reuse anyway"
     }
   }
 }
