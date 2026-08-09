@@ -4,8 +4,17 @@ import { getCollection } from "astro:content";
 import { cityIsRenderable, renderableTrees } from "../lib/trees";
 import { BASE_URL } from "../lib/schema";
 
+// Matches Python's shared esc() = html.escape(str(s), quote=True), which
+// this file reuses unchanged for its GPX text content: escaping the
+// apostrophe isn't required by XML there, but Python's single general-
+// purpose escaper does it everywhere regardless, so this must too.
 function esc(s: string): string {
-  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#x27;");
 }
 
 export async function getStaticPaths() {
