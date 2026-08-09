@@ -1,3 +1,19 @@
+## 2026-08-09 - Baarn wacht op de veldcheck van de eigenaar (het staande protocol)
+
+Hidde loopt de Baarn-route deze week na als eerste grondwaarheid-audit van de
+pijplijn. Wat zijn wandeling kan opleveren, vastgelegd zodat een run of sessie
+het herkent als het binnenkomt: (1) per boom pin/toegang/verhaal-tegen-de-
+werkelijkheid, elke afwijking is kalibratie voor 870+ bomen die dezelfde
+pijplijn maakte; (2) foto's van informatiebordjes bij Groeneveld en het
+Cantonspark tellen als de tweede bron die de tien wachtende kandidaten
+ontgrendelt (Staatsbosbeheer/parkbordjes zijn bronnen); (3) eigen foto's van
+de vijf bomen via het formulier lossen het gedocumenteerde fotogat op (veertig
+open kandidaten bekeken, nul bruikbaar; het gat is bezoekersvormig); (4) de
+Groeneveld-vooreik heeft naast een bron ook een verzamelpunt-oordeel nodig
+(het is een eikengroep in driehoeksverband). Zijn identiteitsoordelen tellen
+als lezersinzending-bewijs, zoals bij de tulpenbomenfoto die zo Baarns eerste
+beeld werd.
+
 ## 2026-08-09 - Paris's Latin Quarter walk grows 6 to 7 trees, 24 to 25 published
 
 Added par_027, the Amur Cork Tree of Square Michel-Foucault, delivered as a lead in data/leads/paris.json ("same tiny garden as par_014, so a future pass could verify and add it with zero new walking distance"). Fetched paris.fr's own equipment page for the square directly (confirms 1925 planting, a lightning scar, and that the two named squares share one 24/7-open pocket garden) and French Wikipedia's Square Auguste-Mariette-Pacha article (14m tall, 1.80m circumference as of 2011). Checked whether these count as two independent sources per the register-pitfalls discipline: they do not, Wikipedia's own footnote cites the same paris.fr "Les arbres remarquables" page for its measurements, and a direct query of the structured opendata.paris.fr register confirms this tree has no entry there at all. Shipped anyway, single-source and flagged, per CLAUDE.md Step 2's explicit allowance, with the non-independence stated plainly in verified_sources rather than dressed up as two sources. No exact GPS pin found for the tree within the garden, so it reuses par_014's coordinates and ships location_precision: approximate. The Latin Quarter walk (formerly "Jardin des Plantes") grows 6 to 7 trees, still 2.9km. meta_description and question_meta updated from "23 more" to "24 more" (the exact stale-count bug class REVIEW.md flagged twice this week on Paris and Vienna). No photo candidate found on the first sweep; honest gap. Build and qa.py both green (1112/1325 pages).
