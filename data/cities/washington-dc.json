@@ -2,9 +2,9 @@
   "city": "Washington DC",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Washington is a planned city, and its remarkable trees were planned with it, which means they come with paperwork most cities can only envy. The National Park Service keeps a register of witness trees, individuals that stood through history, and the Architect of the Capitol records plantings to the year. The ten below run from the two original 1912 cherry trees that started the Tidal Basin tradition to a bur oak older than the memorial it shades. Eight sit on or near the Mall and Capitol grounds, one walk apart; all ten are free.",
+  "intro": "Washington is a planned city, and its remarkable trees were planned with it, which means they come with paperwork most cities can only envy. The National Park Service keeps a register of witness trees, individuals that stood through history, and the Architect of the Capitol records plantings to the year. The fourteen below run from the two original 1912 cherry trees that started the Tidal Basin tradition to a bur oak older than the memorial it shades. Nine sit on or near the Mall and Capitol grounds, one walk apart; all fourteen are free.",
   "meta_description": "Washington DC's remarkable trees keep federal paperwork: the two original 1912 Tidal Basin cherries, a bur oak at the Grant Memorial, and more, mapped.",
-  "question_meta": "The oldest documented tree in Washington DC is the Grant Memorial Bur Oak on the Capitol grounds. Its story, and nine more remarkable trees nearby.",
+  "question_meta": "The oldest documented tree in Washington DC is the Grant Memorial Bur Oak on the Capitol grounds. Its story, and thirteen more remarkable trees nearby.",
   "question_answer": "The oldest documented tree in central Washington DC is the Grant Memorial Bur Oak in Union Square, at the foot of the Capitol, which predates the memorial landscape laid out around it. The city's biggest tree, and possibly its oldest overall, is the champion chestnut oak in Battery Kemble Park.",
   "question_context": "Age and documentation are different things in Washington, and the distinction shapes this whole list. Most cities on this site guess at their oldest tree from girth and legend; Washington can often simply look it up. The Architect of the Capitol has recorded plantings on the Capitol grounds since the Olmsted landscape was laid out, which is how the Grant Memorial Bur Oak's seniority over its own memorial is a matter of record rather than estimate. The National Park Service goes further and keeps a formal register of witness trees, individuals that stood through documented history, from the mulberry that predates the Washington Monument's completion to the elm whose cuttings became the disease-resistant Jefferson cultivar planted across the country. Even the champion chestnut oak in Battery Kemble Park, the city's largest tree, carries an official co-champion designation with measurements behind it. None of these trees rivals a European yew for age. What they offer instead is certainty, and for a project built on verification, a 150-year-old tree with a planting ledger can be a better tree than a 500-year-old one with a story.",
   "faq": [
@@ -331,6 +331,149 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "wdc_011",
+      "name": "The Montrose Park Tulip Poplar",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "not documented; among DC's largest tulip poplars",
+      "age_min": 120,
+      "age_max": 250,
+      "location": {
+        "address": "Montrose Park, R Street NW between 30th and 31st Street NW, Georgetown, Washington, DC 20007 (northwest corner of the park, on the slope near Lovers Lane, descending toward Dumbarton Oaks Park)",
+        "latitude": 38.9158,
+        "longitude": -77.0621,
+        "neighbourhood": "Georgetown"
+      },
+      "story": "Two websites call this the second largest tree in Washington. Casey Trees, whose volunteers did the measuring, ranks it fifth. Their survey put it at 235 inches around and roughly 110 feet tall with a crown spreading about a hundred feet, behind two willow oaks and the chestnut oak out at Battery Kemble that holds a national co-championship. What both readings agree on is narrower and still worth the hill: no bigger tulip poplar has turned up in the District's surveys.\n\nNobody has dated it. The Historic American Landscape Survey recorded it under its witness tree program, which is a heritage listing rather than a birth certificate, and neither that record nor Casey Trees puts a year on the tree. Tulip poplars rarely pass 250 years and a trunk this thick is not the work of a few decades, but any age you see attached to this tree, here or anywhere, is arithmetic from its girth rather than a measurement.\n\nIt grows on the slope in the northwest corner of Montrose Park, where Lovers Lane starts dropping toward Dumbarton Oaks Park, so the beech grove walk begins more or less at its feet. No tree level coordinate is published anywhere, so the pin is the corner of the park and the last stretch is done by eye. At 235 inches around, that is not a hard search.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when a hundred feet of crown turns clear yellow over Lovers Lane"
+      },
+      "verified_sources": [
+        "https://www.montroseparkdc.org/tulip-poplar",
+        "https://www.our-trees.com/washington-dc/project-one-ephnc-3kehd-49bf3",
+        "https://caseytrees.org/2023/08/and-the-largest-tree-is/",
+        "https://www.loc.gov/item/dc1036/"
+      ],
+      "access": "Free, public NPS-adjacent city park, open daylight hours",
+      "transport": "Georgetown; no Metro station in the neighbourhood, roughly 20-25 min walk from Dupont Circle or Rosslyn Metro, or DC Circulator bus to Wisconsin Ave/M St then a 15 min walk uphill",
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wdc_012",
+      "name": "Frederick Douglass's Magnolias at Cedar Hill",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "roughly 145 years",
+      "age_min": 144,
+      "age_max": 149,
+      "location": {
+        "address": "Cedar Hill, Frederick Douglass National Historic Site, 1411 W Street SE, Washington, DC 20020 (east of the residence, outside Douglass's study window)",
+        "latitude": 38.86339,
+        "longitude": -76.98517,
+        "neighbourhood": "Anacostia"
+      },
+      "story": "Frederick Douglass planted these two magnolias for his wife, or so his household always said. The window the tradition gives runs from 1877, when he bought Cedar Hill and moved his family up onto the Anacostia ridge, to 1882, when Anna Murray Douglass died. There is no receipt, no diary entry and no nursery record. The story comes down through the family and the site rather than on paper, which is how most of what is known about any house's garden survives. Casey Trees, on the grounds in February 2026, found both trees still standing outside the window of his study.\n\nThat study is the reason to come. Douglass worked here for the last eighteen years of his life, through his term as US Marshal for the District and his appointment as minister to Haiti, and the view out of it was these two trees. Southern magnolias hold their leaves all year, so they were green outside that window in every season he wrote at it.\n\nThe Cultural Landscape Foundation records two magnolias east of the residence dating to the late nineteenth century, which puts the pair itself beyond dispute even where the planting story rests on memory.\n\nThe grounds are free to walk. The house tour that brings you closest runs on timed tickets, booked in advance or picked up at the visitor centre.",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "kind": "flowers",
+        "label": "May and June, when the cream flowers open outside the study window"
+      },
+      "verified_sources": [
+        "https://caseytrees.org/2026/02/frederick-douglass-and-the-nature-at-cedar-hill/",
+        "https://www.tclf.org/frederick-douglass-national-historic-site"
+      ],
+      "access": "Free grounds access; the house tour that passes closest to the trees needs a free timed ticket (recreation.gov, small booking fee) or first-come at the visitor centre",
+      "transport": "Anacostia; roughly 15-20 min walk from Anacostia Metro (Green line), or a short ride on the B2 bus to the site",
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wdc_013",
+      "name": "The Olmsted Tuliptree, Capitol Grounds",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "roughly 135-150 years",
+      "age_min": 132,
+      "age_max": 152,
+      "location": {
+        "address": "U.S. Capitol Grounds, Capitol Square, along Northeast Drive, across from the Russell Senate Office Building, Washington, DC 20510",
+        "latitude": 38.892,
+        "longitude": -77.0065,
+        "neighbourhood": "Capitol Hill"
+      },
+      "story": "Frederick Law Olmsted planted more than 1,050 trees on the Capitol grounds and about 45 of them are still alive. This is the largest of the three tulip trees among the survivors. His General Plan for the grounds dates from 1874 and the planting ran on into the 1890s, so the tree is somewhere between about 130 and 150 years old, dated by the works rather than by the wood.\n\nIt stands in Capitol Square along Northeast Drive, across from the Russell Senate Office Building, which is worth noticing because the building is the younger of the two. Russell opened in 1909, decades after the tree went into ground Olmsted had already landscaped. He was not decorating: his argument was that the Capitol looked smaller than it deserved on its bare hill, and the terraces and plantings were his answer to that, an architectural case made in trees.\n\nA tuliptree of this age is an unlikely thing to find on ground worked over as often as this. Terraces, a subway, an underground visitor centre, security lines and a century and a half of ceremonies have gone in around it, and it is among the few living things on the 274 acre campus that predate almost all of them.\n\nNo tree level coordinate is published. The Architect of the Capitol names the drive and the building it faces, which is enough to find it on foot in a few minutes.",
+      "verified_sources": [
+        "http://web.archive.org/web/20260513104614/https://www.aoc.gov/explore-capitol-campus/features/olmsted-tuliptree",
+        "https://www.forestryjournal.co.uk/features/forestry-journal-features/25020246.untold-story-us-capitol-grounds-arboretum/"
+      ],
+      "access": "Free, always-open public federal grounds (Capitol Square)",
+      "transport": "Capitol Hill; roughly 8-10 min walk from Union Station or Capitol South Metro",
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "wdc_014",
+      "name": "The Dumbarton Oaks Beech Grove",
+      "species": "American Beech (Fagus grandifolia)",
+      "age_estimate": "not documented; predates the park's 1920s-30s design",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Dumbarton Oaks Park, near the Lovers' Lane entrance gate, northeast corner of the park, Georgetown, Washington, DC 20007",
+        "latitude": 38.9152,
+        "longitude": -77.0616,
+        "neighbourhood": "Georgetown"
+      },
+      "story": "Beatrix Farrand did not plant these beeches. When she laid out the park below Dumbarton Oaks around 1930, the American beech grove at the Lovers' Lane gate was already standing and already old enough to be worth keeping, so she designed around it and made it the way in. Two acres of smooth grey trunks is what you walk through before the park proper starts.\n\nNobody has dated them. American beech is slow, and a grove substantial enough for a landscape architect to build an entrance around in 1930 had to have been there well before her, but there is no ring count and no planting record, so anything more precise than that would be invented.\n\nThe grove carries a survey number, HALS DC-13, filed at the Library of Congress under the same witness tree program that recorded the tulip poplar up the hill in Montrose Park. It has also had a hard century. When the Dumbarton Oaks Park Conservancy started work in 2012, this grove was the first thing it took on, clearing invasive growth and rebuilding the way water moves down the slope, and that work is still running.\n\nOne thing to sort out before you go: this park is free, open and run by the Park Service. The formal gardens next door, on the same estate's old ground, charge admission and are a different visit entirely.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when two acres of beech turn copper at once"
+      },
+      "verified_sources": [
+        "https://www.loc.gov/pictures/item/dc1039/",
+        "https://www.tclf.org/sites/default/files/microsites/landslide2023/locations/dumbartonoakspark.html",
+        "https://dopark.org/restoration/the-signature-project/",
+        "https://en.wikipedia.org/wiki/Dumbarton_Oaks_Park"
+      ],
+      "access": "Free, always-open NPS-administered public park (Dumbarton Oaks Park, distinct from the adjacent paid-entry Dumbarton Oaks Garden/museum, same estate's former grounds)",
+      "transport": "Georgetown; roughly 20-25 min walk from Dupont Circle or Rosslyn Metro; enter via the Lovers' Lane gate off R Street, a few minutes downhill from the Montrose Park Tulip Poplar (wdc_011)",
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

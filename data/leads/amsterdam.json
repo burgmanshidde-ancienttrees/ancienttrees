@@ -53,6 +53,24 @@
       "species": "Ulmus hollandica 'Vegeta' (Huntingdon elm, a cultivar bred for Dutch elm disease resistance)",
       "location_hint": "register_id 343361 at 52.3635601,4.8811503 (girth 204cm) and register_id 343235 at 52.3635962,4.8810925 (girth 194cm), planted 1960, 5.6m apart, Vondelpark entrance area",
       "why_not_shipped": "A genuine planted PAIR by spacing and matching plant year/girth, same test as the 1863 planes, and the cultivar has a real story (bred specifically for elm disease resistance in a country that lost most of its elms to it). But only 66 years old and roughly 2m girth, modest by this project's usual bar, and same problem as the trio above: no second independent source found this pass naming this specific pair (inhetvondelpark.nl's category lists mention elms in the park generally, circa 1960 in 'various locations', not this pair specifically). Register-only. Lower priority than the trio above since the trees themselves are less visually remarkable; keeping as a lead in case a future pass finds the Vegeta-cultivar angle worth a dedicated search (Dutch elm disease history pieces sometimes name specific surviving specimens)."
+    },
+    {
+      "name": "'IJzeren Hein' (Iron Hein), the named wingnut of Wertheimpark, next to the Auschwitz monument",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "location_hint": "Wertheimpark, beside the 1977 Nooit Meer Auschwitz monument by Jan Wolkers, approx 52.367,4.908. Two register candidates sit 100-140m from ams_004's own pin: register_id 341854 (52.36770,4.90810, girth 479cm, plant year 1900) and register_id 341868 (52.36790,4.90899, girth 507cm, plant year 1900), both Pterocarya fraxinifolia, status Beschermwaardige houtopstand, owner Gemeente",
+      "why_not_shipped": "VERIFIED 2026-08-09 as a real, well-documented named tree (buurtorganisatie1018.nl: nicknamed 'IJzeren Hein', planted 1860, girth 'bijna vier meter', decayed badly in the 1970s and was saved with iron anchors bolted through the trunk, ranked 9th in a local arborists' top-ten of Amsterdam's most monumental trees) but NOT delivered this pass because it could not be cleanly separated from the already-published ams_004 (The Wertheimpark Wingnut). Both register wingnuts near Wertheimpark give plant year 1900 and girth 479/507cm, neither matching Iron Hein's reported 1860 planting and ~390cm girth; both sit 100m+ from ams_004's own 'confirmed' pin, so ams_004's pin itself is probably not tree-level precise despite its status field. Three unresolved possibilities: Iron Hein IS ams_004 under an imprecise pin (most likely, since ams_004's own story already describes a very similar wingnut at this same park), Iron Hein is one of the two register entries and ams_004 is the other, or Iron Hein is a distinct fourth tree the register missed. A future pass should either (a) get an exact tree-level fix on ams_004 via a working monumentaltrees.com browser session or a geolocated Wikimedia/iNaturalist photo showing the iron anchor scars, which would settle which register id is which, or (b) treat this purely as an upgrade opportunity for ams_004's story (the iron-anchor restoration is a much better anecdote than what ams_004 currently carries) rather than as a new tree."
+    },
+    {
+      "name": "Copper Beech of Artis (Bruine beuk)",
+      "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+      "location_hint": "register_id N1765, 52.36561,4.91495, Artis Park, owner Artis, status Beschermwaardige houtopstand, plant year 1855, girth 440cm",
+      "why_not_shipped": "Genuinely old (171 years) and large (440cm), inside Artis on the same paid-entry basis as the already-published ams_001/012/013, close to that cluster (roughly 300-400m from the Heimanseik). Not shipped this pass for lack of a second source: the register is the only one found. The oost-online.nl article that supplied a second source for ams_001/012/013 (Jan de Jong's tour of Artis's trees) does not mention this beech by name. Worth a dedicated Artis-specific search (their own app or on-site signage sometimes names 'favourite tree' specimens) before delivering."
+    },
+    {
+      "name": "Wych Elm 'Exoniensis' of Artis (Pluimiep)",
+      "species": "Wych Elm 'Exoniensis' (Ulmus glabra 'Exoniensis')",
+      "location_hint": "register_id N5644, 52.36723,4.91451, Artis Park, owner Artis, status Beschermwaardige houtopstand, plant year 1880, girth 437cm",
+      "why_not_shipped": "Same situation as the copper beech above: register-only, no second source found this pass. Notably large for the cultivar (a narrow, columnar form not usually associated with a 437cm girth), which would be a strong hook if a second source can confirm it, since an unusually large specimen of a normally narrow cultivar is a genuine visual surprise. Worth checking Artis's own website/app for a named-tree page, the way the Heimanseik has one."
     }
   ],
   "blocked": [
@@ -67,6 +85,12 @@
       "species": "Taxodium distichum (bald cypress)",
       "location_hint": "register_ids 503356, 503357, 503358, 503359, 503360, 503361, 503362, 503363, 503364, 503365, clustered within about 15m of each other near 52.3635,4.8799, Vondelpark entrance area",
       "reason": "BLOCKED as an ensemble. Verified 2026-08-09: 8-10 same-species, same-year (1948) trees within a very tight 15m radius, clearly a planted grove rather than individual specimens, girths 149-234cm (modest, 78 years old). Note this is a DIFFERENT bald cypress group from the one search results describe along the Van Eeghenvijver ('moerascipressen ouder dan 100 jaar, van omstreeks 1912'), which is elsewhere in the park and not checked this pass. No individual standout found in this particular 1948 grove."
+    },
+    {
+      "name": "J.W. van Overloopplantsoen plane trees, Plantage Muidergracht",
+      "species": "London Plane (Platanus x hispanica), roughly 39 trees per public description",
+      "location_hint": "J.W. van Overloopplantsoen, Plantage Muidergracht, approx 52.365,4.912, about 350-400m from the Wertheimpark/Hortus/Artis cluster",
+      "reason": "CHECKED 2026-08-09: public descriptions (deplantage.amsterdam, Yelp) describe 'the first nine trees' of a grassy strip plus 'the other 30 trees' that suffered root damage during sewer works, reading as a planted avenue of roughly 39 plane trees rather than individual specimens. BLOCKED as an ensemble under the same test already applied to the Vondelpark plane avenue and bald cypress grove, unless a future pass finds one tree singled out by name or measurement."
     }
   ]
 }

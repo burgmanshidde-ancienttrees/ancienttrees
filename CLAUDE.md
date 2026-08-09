@@ -356,6 +356,24 @@ Note what that does and does not imply. It does not mean polish before coverage:
 
 Read that as a floor, not as a reason to stop and polish. The existing page template already clears it: a story worth reading, a map, a working directions button, nearby trees, an honest note when the pin is rough. Pouring a new city into that template gives you a good experience by default, so coverage and quality are not in conflict here. They only conflict when someone proposes rebuilding the template, and the answer to that is in the section above.
 
+### Reason from distribution first (Hidde, 2026-08-09)
+
+**The binding constraint on this project is not supply, it is distribution, and every decision about what to work on gets made through that lens until the numbers say otherwise.** His words: "we hebben volgens mij een distributie probleem."
+
+The measurement behind it, so this is a finding and not a mood. In the 28 days to 2026-08-09 the whole site took 78 clicks on 3,680 impressions, with zero external referrers and no backlinks at all. Rome, the deepest page on the site at 24 trees, took 61 impressions and **zero** clicks. Lisbon, with fewer trees, took 8 clicks. Porto, which appears in no phase of the rollout, took 4 more. Two of 95 cities produced 15 percent of every click. Meanwhile supply sits idle by the thousand: 555 registered Portuguese trees, 511 register clusters, leads files in every city.
+
+Read those two facts together and the conclusion is unavoidable. **Depth does not produce visitors. Position does, and we hold position only where the competition is thin.** We rank second for a small Dutch town's oldest tree and nowhere for Rome's, because everybody writes about Rome and nobody writes about Baarn. A page nobody can find is not a rough version of a page people find; it is a different thing, and doing it beautifully does not change that.
+
+What this changes about how a run decides, in order:
+
+- **Before doing the work, say what will bring anyone to it.** For a city that means two things together, never one: real demand (`python3 scripts/demand.py`, English Wikipedia pageviews as the proxy, validated against our own Search Console impressions) AND a reason to believe we can rank, which usually means nobody else has written the page. Big and contested loses to medium and empty.
+- **Work that gives somebody a reason to link to us outranks work that adds another page nobody links to.** Zero backlinks is the ceiling under every ranking on this site, and no amount of trees lifts it.
+- **Depth is for pages that already get impressions.** Deepening a page with demand is compounding; deepening a page with none is the most expensive way to do nothing. Search Console says which is which, and a run may act on that alone (see "Search evidence is a run's to act on").
+- **Measure output in impressions and clicks, not in trees published.** A week that added 40 trees and no visibility was a week of inventory, and inventory is not progress here.
+- **Most distribution actions need Hidde**, because a run never writes as him (hard rule 4). So a run's half of this is building the thing worth linking to and leaving the draft ready; the sending is his.
+
+Two limits, both firm. This changes the ORDER of work and never the standard: the never-cuttable list, the hard rules and the research bar are untouched, and a distribution argument is never a reason to publish something thinner or less honest. And it expires on evidence, like everything else here: the day backlinks exist and pages rank on their merits, supply becomes the constraint again and this section should be rewritten rather than obeyed out of habit.
+
 ### Ship rough, ship wide, fix later
 
 This project is unproven. Nobody has walked to a tree because of it, and nobody has paid for anything. Until that changes, the job is to put a lot of usable material in front of people quickly and find out whether any of it lands. Polish is what you do to something people already use.

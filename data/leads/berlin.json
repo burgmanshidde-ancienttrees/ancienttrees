@@ -34,26 +34,48 @@
       "reason": "Naturdenkmal 4-29/B per the official register list, single source, no age. Cherry plum is a common small ornamental/fruit tree; unclear this individual clears 'genuinely old OR visually spectacular OR historically significant' even with a second source. Lower priority than the other Charlottenburg leads. CHECKED AGAIN 2026-08-09: not in monumentaltrees.com's Schlosses Charlottenburg garden list. Wikimedia Commons has a photo category for this exact tree (Category:Naturdenkmal Kirschpflaume - Myrobalane Park Schloss Charlottenburg) with 15 photos dated June 2024, confirming it is alive and photographed recently, but the category is built from the same register designation, not an independent source of facts, so it does not clear the two-source bar on its own. Still a lead, now with recent alive-evidence noted for whoever picks it up next."
     },
     {
-      "name": "Kaukasische Fluegelnuss (Caucasian Wingnut) at Lietzensee",
+      "name": "[RESOLVED 2026-08-09, delivered as ber_017] Kaukasische Fluegelnuss (Caucasian Wingnut) at Lietzensee",
       "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
       "location": {
         "address": "Lietzensee, northern part, east shore, near Lietzenseeufer 5, Berlin",
-        "latitude": null,
-        "longitude": null,
+        "latitude": 52.50785,
+        "longitude": 13.290788,
         "neighbourhood": "Charlottenburg"
       },
-      "reason": "Naturdenkmal 4-25/B (neu) per the official register list. A Charlottenburg-Wilmersdorf district page describes the species generally (large, multi-stemmed, golden autumn colour, planted in European parks for about 150 years) but gives no age or history for THIS specimen. Visually distinctive species, roughly 1.7km south of Schloss Charlottenburg (within walking distance of ber_004 and the other Charlottenburg leads above). Needs a second, tree-specific source (the Lietzenseepark 'Umweltpfad' info-stele apparently gives an age but its content was not accessible to this pass) and exact coordinates."
+      "reason": "RESOLVED this pass: monumentaltrees.com specimen '21539' at Lietzenseeparks has a GPS pin (52.50793,13.29076) about 9m from the register point (4-25/B, 52.50785,13.290788), confirming the same tree, planted 1927 (99y at the 2020 measurement), girth ~5.94m measured at ground level due to multiple trunks. See data/research/berlin-verified.json ber_017. Delivered honestly modest on age; qualifies on rarity and multi-stem size instead."
     },
     {
-      "name": "Platane (Plane tree) at Lietzensee",
+      "name": "[RESOLVED 2026-08-09, delivered as ber_016] Platane (Plane tree) at Lietzensee",
       "species": "London Plane (Platanus x hispanica / acerifolia)",
       "location": {
         "address": "Lietzensee, northern part, west shore, near Wundtstrasse 56, Berlin",
-        "latitude": null,
-        "longitude": null,
+        "latitude": 52.5075,
+        "longitude": 13.28676,
         "neighbourhood": "Charlottenburg"
       },
-      "reason": "Naturdenkmal 4-26/B per the official register list. A search-engine summary of monumentaltrees.com's Berlin age-records page mentioned '218-year-old plane trees (Platanus hispanica) in the Lietzenseeparks in Charlottenburg', which would be a strong second source for age if confirmed, but this pass could not fetch monumentaltrees.com directly (HTTP 403 on every attempt) to verify that figure firsthand, read it in context, or confirm it applies to this specific registered tree rather than a different plane in the same park. Needs a direct read of that page (or an alternate route to it) plus exact coordinates before it can verify. Per hard rule 1, monumentaltrees.com may only be used for verification, never copied as the sole source."
+      "reason": "RESOLVED this pass: reached monumentaltrees.com directly via a browser session (no 403 this time; the earlier block may have been transient or Cloudflare-related). Specimen '21543' at Lietzenseeparks has a GPS pin (52.50750,13.28677) about 3m from the register point (4-26/B, 52.5075,13.28676), confirming this is the SAME tree the age-record page's '219 years, 1807' figure refers to, not a different plane in the same park (the park has at least 3 documented London Planes). Girth grew 6.00m to 6.43m 2015-2025, height 22m; 6th-thickest tree in Berlin by girth on monumentaltrees. See data/research/berlin-verified.json ber_016."
+    },
+    {
+      "name": "Stiel-Eiche (Pedunculate Oak) at Fuerstenbrunner Weg 30 (ND 4-2/B)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "location": {
+        "address": "Fuerstenbrunner Weg 30, Berlin",
+        "latitude": 52.521591,
+        "longitude": 13.280905,
+        "neighbourhood": "Charlottenburg"
+      },
+      "reason": "NEW this pass (2026-08-09), found querying the register within 2.5km of ber_004. Register is the only source found: the Charlottenburg-Wilmersdorf Naturdenkmal list, berlingeschichte.de's street-history page and monumentaltrees.com's Berlin index were all checked and none names this specific tree (monumentaltrees has no Fuerstenbrunner Weg location at all). About 0.95km from ber_004 and the Karpfenteich elm (ber_018), so it would extend the Charlottenburg cluster if a second source turns up. Common species, so remarkability rests on age/girth once found. Worth a look via baumkunde.de site search or a Charlottenburg-Wilmersdorf district press piece next pass."
+    },
+    {
+      "name": "Haenge-Buche (Weeping Beech) at Ulmenallee 4 (ND 4-12/B) and Rot-Buche at Eichenallee 6 (ND 4-40/B)",
+      "species": "Weeping Beech (Fagus sylvatica var. pendula) and Common Beech (Fagus sylvatica)",
+      "location": {
+        "address": "Ulmenallee 4 and Eichenallee 6, Berlin",
+        "latitude": 52.515989,
+        "longitude": 13.275587,
+        "neighbourhood": "Charlottenburg"
+      },
+      "reason": "NEW this pass (2026-08-09), found querying the register within 2.5km of ber_004 (1.55km and 1.66km away respectively, about 400m apart from each other, both between ber_004/ber_018 and the Lietzensee cluster geographically though not directly on the walking line). Not checked beyond the register this pass; time ran out. A weeping beech is visually distinctive (the 'always cuttable last, never chase alone' kind of candidate that is worth a quick look) and would be a strong addition to the Charlottenburg walk if a second source and exact coordinates confirm it. Try monumentaltrees.com's Berlin location index and baumkunde.de next pass."
     },
     {
       "name": "Blutbuche (Copper Beech) at Villa Dr. Fraenkel, Kladow (ND 5-56/B)",

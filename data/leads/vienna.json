@@ -408,6 +408,46 @@
         "offset_m": 2.0
       },
       "why_not_yet": "folded into vie_015. The monument register carries one entry for this point; the Baumkataster carries three stems of the same 1921 planting within five metres, which is what a Caucasian wingnut does to itself by suckering. Recorded here so a later pass does not re-propose them as separate trees."
+    },
+    {
+      "register_id": 3247636,
+      "name": "Morgenländische Platane",
+      "species": "Platanus orientalis",
+      "place": "13., Auhofstraße 11A",
+      "latitude": 48.187186,
+      "longitude": 16.295324,
+      "baumkataster": null,
+      "why_not_yet": "Species conflict found this pass (verify session, 2026-08-09): the Vienna Naturdenkmal register lists this as Platanus orientalis, but monumentaltrees.com has a dedicated page for a plane at the near-identical address 'Auhofstraße 11' (https://www.monumentaltrees.com/de/aut/wien/hietzing/15159_auhofstrae11/, browser session, verification use only) recording it as Platanus x hispanica (a different, hybrid species), girth ~4m, height ~27m, measured 26 Jan 2017. The 1949 Natur und Land survey (Naturdenkmal Nr. 178, https://www.zobodat.at/pdf/nat-land_1949_11_0199-0202.pdf p.201) just says 'Platane' with no species qualifier, so it does not resolve the conflict. Possibly two different trees at 11 vs 11A, possibly one tree misidentified by one source. No Baumkataster match found within 20m either (nearest match at 17.9m was a Rosskastanie, wrong species entirely, so likely a private courtyard tree the city inventory does not cover). Needs a pass with a mapped/photographed visit to resolve before shipping; do not silently pick a species."
+    },
+    {
+      "register_id": 3247640,
+      "name": "Platane",
+      "species": "Platanus x hybrida",
+      "place": "13., Dommayergasse 7",
+      "latitude": 48.18783,
+      "longitude": 16.299149,
+      "baumkataster": null,
+      "why_not_yet": "Naturdenkmal Nr. 182 (1949 Natur und Land survey, no destruction note, so it survived WWII). No Baumkataster match (nearest live match at 31m was a 2020-planted Tilia, unrelated). Dommayergasse is a short street near the well-known Cafe Dommayer restaurant block in Hietzing; whether this specific tree stands on public street frontage or inside a restaurant/building courtyard was not established this pass. Leave for a pass that can check access before shipping."
+    },
+    {
+      "register_id": null,
+      "name": "Four Platanus entries, Meiereistraße 3",
+      "species": "Platanus (unspecified)",
+      "place": "2., Meiereistraße 3, near the Prater/Hauptallee",
+      "latitude": 48.2088,
+      "longitude": 16.4175,
+      "baumkataster": null,
+      "why_not_yet": "register_ids 3257979, 3257980, 3257981, 3257982, all within about 35m of each other and about 430-460m from the published vie_003 (Chestnut Avenue of the Hauptallee). Not individually checked for access this pass (ran out of window): Meiereistraße hosts a restaurant/dairy building (a 'Meierei') near the Prater, so this could be a public streetside row or a restaurant courtyard. A genuine four-tree micro-cluster worth a dedicated look, since it would sit close enough to extend a Prater-area walk alongside vie_003."
+    },
+    {
+      "register_id": null,
+      "name": "Pötzleinsdorf-area single trees near vie_009 (Riesenmammutbaum, Schwarzkiefer x4, Feldahorn), within 900m",
+      "species": "various",
+      "place": "18./19. district, Khevenhüllerstraße, Franz-Barwig-Weg, Glanzinggasse, Wilbrandtgasse, Hackenbergweg",
+      "latitude": null,
+      "longitude": null,
+      "baumkataster": null,
+      "why_not_yet": "Checked this pass (verify session, 2026-08-09) as a possible third cluster around the published vie_009 (Giant Sequoias of Pötzleinsdorfer Schlosspark). All addresses found (Khevenhuellerstrasse, Franz-Barwig-Weg, Glanzinggasse, Wilbrandtgasse, Hackenbergweg) read as private villa streets in this part of Doebling/Waehring, typical of Vienna's 18th/19th-district garden-villa belt; none checked individually for public access, but the pattern strongly suggests private gardens rather than a walkable public cluster. Not pursued further given the time budget; a future pass could still check each address before writing this off completely."
     }
   ],
   "blocked": [
@@ -520,6 +560,16 @@
       "longitude": 16.382512,
       "baumkataster": null,
       "reason": "Same site as register_id 3247596 (European Patent Office grounds, Rennweg 12), same access finding: confirmed restricted, not open to the public. See that entry."
+    },
+    {
+      "register_id": 3247637,
+      "name": "Japanischer Schnurbaum",
+      "species": "Styphnolobium japonicum (Sophora japonica)",
+      "place": "13., Schönbrunn, Botanischer Garten",
+      "latitude": 48.184434,
+      "longitude": 16.301375,
+      "baumkataster": null,
+      "reason": "BLOCKED, verify pass 2026-08-09 (depth pass, Schönbrunn cluster): Naturdenkmal Nr. 179. Anonym, 'Verzeichnis der Wiener Naturdenkmale (Fortsetzung)', Natur und Land 1949, Vol. 11, p.201 (https://www.zobodat.at/pdf/nat-land_1949_11_0199-0202.pdf) states explicitly: 'durch Kriegsereignisse vernichtet' (destroyed by war events). The LIVE city Naturdenkmal WFS layer (data.wien.gv.at, ogdwien:NATDENKMALPKTOGD) still carries this register_id as an active designation at this coordinate in 2026, which means the city's own current 'official' register contains at least one stale entry for a tree confirmed destroyed 80+ years ago, unless it was replanted and nobody has updated the record either way. No modern source (searched this pass) confirms a living tree at this spot today. Never ship without a dated modern confirmation (photo, observation, Bundesgärten record) that a Sophora japonica genuinely stands here now. Worth flagging generally: a Naturdenkmal register_id existing in the live layer is not by itself proof of life, contrary to how it reads at a glance. Its two neighbours 12-30m away (Stieleiche ND180, Eibe ND181) carry no such destruction note in the same 1949 document and were verified and delivered this pass as vie_021 and vie_022."
     }
   ]
 }

@@ -91,6 +91,24 @@
       "noted": "2026-08-09",
       "symptom": "DNS resolution fails outright (ENOTFOUND / could not resolve host) to both curl and WebFetch; not a block, genuinely unreachable from this sandbox",
       "workaround": "WebSearch's own page-reading still surfaces usable extracted facts from individual pages (used successfully this pass for Istanbul's Gulhane Park trees, konusanagac.com/ozel-agac/*); a session with different network access may be able to fetch it directly"
+    },
+    "www.aoc.gov": {
+      "host": "www.aoc.gov",
+      "noted": "2026-08-09",
+      "symptom": "403 to curl (plain and browser UA) and to WebFetch on every /explore-capitol-campus/features/ and /blog/ path tried; not a Cloudflare interstitial, a flat 403",
+      "workaround": "Wayback Machine snapshots (web.archive.org/web/<date>/https://www.aoc.gov/...) load fine via curl with a browser UA and are recent (May-July 2026 snapshots available); WebFetch itself refuses web.archive.org URLs outright ('unable to fetch'), so use curl + local HTML/text parsing for archive.org fetches, not WebFetch"
+    },
+    "olmsted.org": {
+      "host": "olmsted.org",
+      "noted": "2026-08-09",
+      "symptom": "Cloudflare 'Just a moment' / bot-check redirect loop to curl (with or without browser UA)",
+      "workaround": "Wayback Machine snapshot worked fine via curl; note its content on the Capitol trees page is explicitly 'republished with permission from the Architect of the Capitol', i.e. NOT an independent source from aoc.gov even though the domain differs"
+    },
+    "loc.getarchive.net": {
+      "host": "loc.getarchive.net",
+      "noted": "2026-08-09",
+      "symptom": "403 to curl even with a browser user agent",
+      "workaround": "none found this pass; tile.loc.gov raw PDF storage remains the working route to HALS record content (see www.loc.gov entry)"
     }
   }
 }
