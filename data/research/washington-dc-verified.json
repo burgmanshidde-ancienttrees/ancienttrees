@@ -1,0 +1,27 @@
+[
+  {
+    "id": "wdc_011",
+    "name": "The Montrose Park Tulip Poplar",
+    "species": "Tulip Poplar (Liriodendron tulipifera)",
+    "age_estimate": "not documented; among DC's largest tulip poplars",
+    "age_min": 120,
+    "age_max": 250,
+    "location": {
+      "address": "Montrose Park, R Street NW between 30th and 31st Street NW, Georgetown, Washington, DC 20007 (northwest corner of the park, on the slope near Lovers Lane, descending toward Dumbarton Oaks Park)",
+      "latitude": 38.9158,
+      "longitude": -77.0621,
+      "neighbourhood": "Georgetown"
+    },
+    "verified_sources": [
+      "https://www.montroseparkdc.org/tulip-poplar",
+      "https://www.our-trees.com/washington-dc/project-one-ephnc-3kehd-49bf3",
+      "https://caseytrees.org/2023/08/and-the-largest-tree-is/",
+      "https://www.loc.gov/item/dc1036/"
+    ],
+    "access": "Free, public NPS-adjacent city park, open daylight hours",
+    "transport": "Georgetown; no Metro station in the neighbourhood, roughly 20-25 min walk from Dupont Circle or Rosslyn Metro, or DC Circulator bus to Wisconsin Ave/M St then a 15 min walk uphill",
+    "curation_status": "flagged",
+    "location_precision": "approximate",
+    "verify_notes": "Documented by the Historic American Landscape Survey's Witness Tree Protection Program (HALS record dc1036, Library of Congress; www.loc.gov blocks automated fetch with a Cloudflare challenge but the record's existence and title are confirmed via search and via the raw tile.loc.gov PDF, which downloaded successfully this pass at https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dc1036/data/dc1036data.pdf though it is a scanned image with no extractable text). Independently measured by Casey Trees' DC big-tree survey: 235in circumference, 74.84in DBH, ~110ft tall, ~100ft+ crown spread. SOURCE CONFLICT, not resolved: Friends of Montrose Park and Our Trees (both apparently citing an earlier Casey Trees survey) call it 'the second largest tree in the District, and the largest tulip poplar currently surveyed'; Casey Trees' own 2023 article ranks it 5th largest in DC by circumference/DBH, behind two willow oaks and a chestnut oak. Deliver both readings rather than pick a winner. NO source gives a specific age; tulip poplars generally live 200-250 years, exceptionally to 300, so a tree this large (comparable in DBH to the #1-4 ranked oaks, which the project's other entries put at 150-250 years) plausibly reads as at least a century old but the age range here is a size-based inference, not a documented figure, hence flagged. Visible from Lovers Lane as it descends toward Dumbarton Oaks Park, so it pairs naturally with a Dumbarton Oaks Park walk if that cluster pans out. Park is free and always open; the tree itself was not individually pinned (no tree-level coordinate found), so location_precision stays approximate at the NW corner of the park."
+  }
+]

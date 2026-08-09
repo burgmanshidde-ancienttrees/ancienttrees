@@ -401,7 +401,10 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .appland-feat h3 { font-size: 14.5px; font-weight: 800; margin-bottom: 0.15rem; }
 .appland-feat p { font-size: 12.5px; color: var(--ink-mid); line-height: 1.5; }
 @media (max-width: 800px) {
-  .appland { padding: 1rem 0.6rem; }
+  /* The header is position:fixed, so every top-level page container has to
+     reserve its height. This one did not, and on a phone the card's top
+     (the 'Coming soon' chip) sat underneath the bar. */
+  .appland { padding: calc(var(--header-h) + 1rem) 0.6rem 1rem; }
   .appland-card { grid-template-columns: 1fr; padding: 1.6rem 1.3rem; gap: 1.4rem; border-radius: 20px; }
   .appland-left h1 { font-size: 1.6rem; }
 }
