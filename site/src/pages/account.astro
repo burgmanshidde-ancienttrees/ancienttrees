@@ -1,0 +1,208 @@
+---
+// The sign-in flow: email in, check-your-inbox with masked address and a
+// resend cooldown, an expired-link recovery, and the signed-in shell that
+// shows the visitor's real on-device collection. Ported from
+// build_account_page(), build_site.py:5487-5685. Kept noindexed and out of
+// the sitemap (sitemap-integration.ts excludes any noindexed page by
+// content, matching Python's "write straight to disk, skip the pages list"
+// trick) - this is still a prototype even with AUTH_ENABLED true.
+import Base from "../layouts/Base.astro";
+import { BASE_URL } from "../lib/schema";
+import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+
+const canonical = `${BASE_URL}/account`;
+---
+<Base
+  title="Sign in to Ancient Trees"
+  description="Keep your tree collection on every device."
+  canonical={canonical}
+  headExtra='<meta name="robots" content="noindex, nofollow">'
+>
+<main class="content-page account-page">
+
+  <section id="st-signin" class="acct-card">
+    <p class="hero-kicker">Your tree collection</p>
+    <h1>Sign in to keep it <em>everywhere</em>.</h1>
+    <p class="acct-sub">One email, no password. We send you a sign-in link; your collected trees follow you to any device.</p>
+    <form id="acct-form" class="hero-search" autocomplete="email">
+      <input type="email" id="acct-email" placeholder="you@example.com" aria-label="Email address" required>
+      <button type="submit" class="go-btn">Email me a sign-in link</button>
+    </form>
+    <p class="acct-fine">We store only your email address, for sign-in links and nothing else, and you can delete your account at any time. <a href="/privacy">Privacy</a></p>
+  </section>
+
+  <section id="st-sent" class="acct-card" hidden>
+    <h1>Check your <em>inbox</em>.</h1>
+    <p class="acct-sub">We sent a sign-in link to <strong id="sent-to"></strong>. It works once and expires in 15 minutes.</p>
+    <p class="acct-actions">
+      <button type="button" id="resend" class="go-btn ghost" disabled>Resend (<span id="cool">30</span>)</button>
+      <button type="button" id="change" class="acct-link">Use a different address</button>
+    </p>
+  </section>
+
+  <section id="st-expired" class="acct-card" hidden>
+    <h1>That link has <em>expired</em>.</h1>
+    <p class="acct-sub">Links work once and briefly, to keep your account safe. One tap gets you a fresh one.</p>
+    <p class="acct-actions"><button type="button" id="re-expired" class="go-btn">Send a new link</button></p>
+  </section>
+
+  <section id="st-in" class="acct-card" hidden>
+    <p class="hero-kicker">Signed in</p>
+    <h1>Your <em>trees</em>.</h1>
+    <p class="acct-sub"><strong id="in-email"></strong></p>
+    <div class="stat-row">
+      <div class="stat"><b id="n-trees">0</b><span>trees</span></div>
+      <div class="stat alt"><b id="n-cities">0</b><span>cities</span></div>
+    </div>
+    <p class="acct-sub" id="in-note">Your collected trees are saved on this device. The app brings them to all your devices.</p>
+    <p class="acct-actions"><button type="button" id="signout" class="acct-link">Sign out</button></p>
+    <p class="acct-actions"><button type="button" id="del-acct" class="acct-link danger">Delete my account</button></p>
+  </section>
+</main>
+<Fragment slot="scripts" set:html={`
+<script>
+(function() {
+  var SB = "${SUPABASE_URL}";
+  var KEY = "${SUPABASE_KEY}";
+  var states = ["st-signin", "st-sent", "st-expired", "st-in"];
+  function show(id) {
+    states.forEach(function(x) { document.getElementById(x).hidden = (x !== id); });
+  }
+  function mask(e) {
+    var at = e.indexOf("@");
+    if (at < 2) return e;
+    return e[0] + "•••" + e.slice(at - 1);
+  }
+  var lastEmail = "";
+  function sendLink(email, done) {
+    fetch(SB + "/auth/v1/otp?redirect_to=" + encodeURIComponent(location.origin + location.pathname), {
+      method: "POST",
+      headers: { "apikey": KEY, "Content-Type": "application/json" },
+      body: JSON.stringify({ email: email, create_user: true })
+    }).then(function(r) { done(r.ok); }).catch(function() { done(false); });
+  }
+  var cooldown = null;
+  function startCooldown() {
+    var btn = document.getElementById("resend"), n = 30;
+    btn.disabled = true;
+    clearInterval(cooldown);
+    cooldown = setInterval(function() {
+      n--; document.getElementById("cool").textContent = n;
+      if (n <= 0) { clearInterval(cooldown); btn.disabled = false; btn.textContent = "Resend link"; }
+    }, 1000);
+  }
+  function localStats() {
+    try {
+      var seen = JSON.parse(localStorage.getItem("ancienttrees_seen")) || [];
+      document.getElementById("n-trees").textContent = seen.length;
+      var cities = {};
+      seen.forEach(function(id) { cities[id.slice(0, 3)] = 1; });
+      document.getElementById("n-cities").textContent = Object.keys(cities).length;
+    } catch (e) {}
+  }
+  function signedIn(session) {
+    try { localStorage.setItem("ancienttrees_session", JSON.stringify(session)); } catch (e) {}
+    fetch(SB + "/auth/v1/user", { headers: { "apikey": KEY, "Authorization": "Bearer " + session.access_token } })
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(u) {
+        if (u && u.email) document.getElementById("in-email").textContent = u.email;
+      })
+      .catch(function() {});
+    localStats();
+    show("st-in");
+  }
+  function parseHash() {
+    var h = {};
+    location.hash.slice(1).split("&").forEach(function(kv) {
+      var p = kv.split("=");
+      if (p[0]) h[decodeURIComponent(p[0])] = decodeURIComponent(p[1] || "");
+    });
+    return h;
+  }
+  var h = parseHash();
+  if (h.access_token) {
+    history.replaceState(null, "", location.pathname);
+    signedIn({
+      access_token: h.access_token,
+      refresh_token: h.refresh_token || "",
+      expires_at: Math.floor(Date.now() / 1000) + parseInt(h.expires_in || "3600", 10)
+    });
+  } else if (h.error_code === "otp_expired" || h.error === "access_denied") {
+    history.replaceState(null, "", location.pathname);
+    show("st-expired");
+  } else {
+    try {
+      var s = JSON.parse(localStorage.getItem("ancienttrees_session"));
+      if (s && s.expires_at > Date.now() / 1000) signedIn(s);
+    } catch (e) {}
+  }
+  document.getElementById("acct-form").addEventListener("submit", function(ev) {
+    ev.preventDefault();
+    var e = document.getElementById("acct-email").value.trim();
+    if (!e) return;
+    lastEmail = e;
+    sendLink(e, function(ok) {
+      if (ok) {
+        document.getElementById("sent-to").textContent = mask(e);
+        show("st-sent"); startCooldown();
+      } else {
+        document.getElementById("acct-email").setCustomValidity("That did not work; try again in a minute.");
+        document.getElementById("acct-form").reportValidity();
+        setTimeout(function() { document.getElementById("acct-email").setCustomValidity(""); }, 3000);
+      }
+    });
+  });
+  document.getElementById("change").addEventListener("click", function() { show("st-signin"); });
+  document.getElementById("resend").addEventListener("click", function() {
+    if (lastEmail) sendLink(lastEmail, function() {});
+    startCooldown();
+  });
+  document.getElementById("re-expired").addEventListener("click", function() {
+    if (lastEmail) { sendLink(lastEmail, function() {}); document.getElementById("sent-to").textContent = mask(lastEmail); }
+    show(lastEmail ? "st-sent" : "st-signin"); if (lastEmail) startCooldown();
+  });
+  document.getElementById("signout").addEventListener("click", function() {
+    try {
+      var s = JSON.parse(localStorage.getItem("ancienttrees_session"));
+      if (s) fetch(SB + "/auth/v1/logout", { method: "POST",
+        headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } }).catch(function() {});
+    } catch (e) {}
+    try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
+    show("st-signin");
+  });
+  // Account deletion: calls the delete_user() SECURITY DEFINER function in
+  // Supabase (runs as owner, deletes auth.users row for auth.uid() only).
+  // Two clicks on purpose; no dialog dependency. The on-device collection in
+  // ancienttrees_seen is deliberately left alone: it was never on the server.
+  var delBtn = document.getElementById("del-acct");
+  var delArmed = false;
+  delBtn.addEventListener("click", function() {
+    if (!delArmed) {
+      delArmed = true;
+      delBtn.textContent = "This permanently deletes your account and email. Click again to confirm.";
+      return;
+    }
+    var s = null;
+    try { s = JSON.parse(localStorage.getItem("ancienttrees_session")); } catch (e) {}
+    if (!s) { show("st-signin"); return; }
+    fetch(SB + "/rest/v1/rpc/delete_user", { method: "POST",
+      headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token,
+                 "Content-Type": "application/json" }, body: "{}" })
+      .then(function(r) {
+        if (r.ok) {
+          try { localStorage.removeItem("ancienttrees_session"); } catch (e) {}
+          delArmed = false;
+          delBtn.textContent = "Delete my account";
+          show("st-signin");
+        } else {
+          delBtn.textContent = "Deletion failed. Try again, or email us via the privacy page.";
+        }
+      })
+      .catch(function() {
+        delBtn.textContent = "Deletion failed (network). Try again.";
+      });
+  });
+})();
+</script>
+`} />
+</Base>

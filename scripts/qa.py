@@ -106,7 +106,13 @@ def main():
                              "without touching behavior against the real dist.")
     args = parser.parse_args()
     if args.dist:
-        DIST = args.dist
+        # Must be absolute: the orphan check below resolves() every link
+        # target before comparing it against `pages`, so a relative DIST
+        # (exactly what --dist's own help text recommends, e.g. "site/
+        # dist-astro") made every one of those comparisons compare a
+        # relative Path against an absolute one, silently orphaning every
+        # non-excluded page in the build.
+        DIST = args.dist.resolve()
 
     failures = []
     pages = sorted(DIST.rglob("*.html"))
