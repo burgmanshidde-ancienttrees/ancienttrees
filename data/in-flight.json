@@ -26,6 +26,18 @@
       "kind": "write",
       "by": "session",
       "claimed_at": "2026-08-09T06:24:01+00:00"
+    },
+    {
+      "target": "new-york",
+      "kind": "verify",
+      "by": "night-run",
+      "claimed_at": "2026-08-09T06:11:13+00:00"
+    },
+    {
+      "target": "amsterdam",
+      "kind": "verify",
+      "by": "night-run",
+      "claimed_at": "2026-08-09T06:14:00+00:00"
     }
   ]
 }

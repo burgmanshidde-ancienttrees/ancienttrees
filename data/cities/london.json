@@ -14,7 +14,7 @@
     },
     {
       "q": "Are London's ancient trees free to visit?",
-      "a": "Fourteen of the fifteen trees on this list are free: they stand in public parks, streets, churchyards and squares. The exception is the Old Lions of Kew, which need a Kew Gardens ticket."
+      "a": "Fourteen of the nineteen trees on this list are free: they stand in public parks, streets, churchyards and squares. The exception is the Old Lions of Kew, which need a Kew Gardens ticket."
     },
     {
       "q": "Why does London have so many ancient trees?",
@@ -501,6 +501,133 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "lon_016",
+      "name": "The Great Plane of Brunswick Square",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 230 years",
+      "age_min": 220,
+      "age_max": 240,
+      "location": {
+        "address": "Brunswick Square Gardens, Bloomsbury, London WC1N 1AF",
+        "latitude": 51.5242,
+        "longitude": -0.1219,
+        "neighbourhood": "Bloomsbury"
+      },
+      "story": "This plane was planted for orphans. Brunswick Square Gardens was laid out in 1796 as green space for the children of the Foundling Hospital, and this tree is reckoned to date from that laying out, which makes it around 230 years old. Only the planes of Berkeley Square, put in seven years earlier, are commonly held to be older among the planes of central London. It has stood through everything Bloomsbury became: the Hospital selling up and moving out of London in the 1920s, its buildings coming down, the square rebuilt around the gap, the Blitz, and the concrete decks of the Brunswick Centre arriving to the west in the 1970s. The institution it was planted to shade is gone. The tree is not. In 2008 it was named one of the ten Great Trees of London, and it has since been given its own information board in the square, which is a quiet way of saying the neighbourhood knows what it has. Photographs taken in spring 2026 show it in full health. Neither source that agrees on the 1796 planting records a girth or a height, so there are no measurements to quote here, only the thing itself: a very large plane in a small square five minutes from Russell Square station, free and open, with the Foundling Museum on the far side telling the rest of the story.",
+      "verified_sources": [
+        "https://bloomsburysquares.com/2020/12/01/the-great-plane-brunswick-square/",
+        "https://www.andrewwhitehead.net/blog/the-great-plane-of-bloomsbury",
+        "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+      ],
+      "access": "Free, open public garden square",
+      "transport": "5 min walk from Russell Square station (Piccadilly Line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lon_017",
+      "name": "The Valence Park Holm Oak",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "disputed, roughly 150 to 350 years",
+      "age_min": 150,
+      "age_max": 350,
+      "location": {
+        "address": "Valence Park, next to the moat at Valence House, Becontree, Dagenham, London RM8 3HT",
+        "latitude": 51.5581,
+        "longitude": 0.135,
+        "neighbourhood": "Becontree, Barking and Dagenham"
+      },
+      "story": "The October 1987 storm brought down some 15 million trees across southern England and left this one untouched. Its low, heavily buttressed frame is credited for that: a holm oak that grows outward rather than upward gives the wind nothing to lean on. Roughly ten years later it was added to the Great Trees of London list. How old it is depends on which source you take, and the two do not agree. The Barking and Dagenham Post, quoting the borough's own heritage education officer, credits the Mertinn family, German immigrants who had made their money in jewellery and bought the estate in the early 1700s, with planting it to make their grounds look grander. That would put it close to 350 years. The London Gardens Trust's survey record for the site is more clinical and dates the grounds' holm oak and yew only to the nineteenth century, which would make it under 225. Both agree on what stands there: one of the most impressive holm oaks in London, beside the moat of Valence House, a medieval manor that is now the borough's museum. One practical note. The moat enclosure immediately beside the tree was closed for restoration work due to finish in spring 2026, so whether you can currently get right up to the trunk is unconfirmed. The park around it stays open, and the pin here is park level rather than surveyed.",
+      "verified_sources": [
+        "https://www.barkinganddagenhampost.co.uk/lifestyle/20941529.not-even-great-storm-87-move-old-oak/",
+        "https://londongardenstrust.org/conservation/inventory/site-record/?ID=BAD024",
+        "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+      ],
+      "access": "Free, public park; the moat enclosure immediately beside the oak was closed for restoration works stated (2026) to complete by spring 2026, so current accessibility right up to the trunk is unconfirmed as of this pass, though the wider park stays open",
+      "transport": "Becontree station (District Line) then bus 62 to Becontree Avenue/Valence Avenue, or Chadwell Heath rail station, roughly 20-25 min walk or a short bus ride either way",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "lon_018",
+      "name": "The Ravenscourt Park Baobab Plane",
+      "species": "London Plane, Baobab Group (Platanus x hispanica)",
+      "age_estimate": "roughly 100 to 200 years, exact age unknown",
+      "age_min": 100,
+      "age_max": 225,
+      "location": {
+        "address": "South of the lower grassy area, near the elm avenue, Ravenscourt Park, Hammersmith, London W6",
+        "latitude": 51.4967,
+        "longitude": -0.2386,
+        "neighbourhood": "Hammersmith"
+      },
+      "story": "A virus is the best explanation anyone has for the shape of this tree. It carries a swollen, knobbled trunk under a crown far too small for it, the signature of the rare Baobab group of London plane, a form believed to come from viral infection rather than ordinary growth. Few are known; the closest comparable specimens grow in Canterbury. Nobody can say how old it is, and the sources sit far apart. A specialist plane blog puts its planting somewhere in the nineteenth century, so 150 to 225 years. A local tree firm reckons closer to 100, while allowing it might date to 1812, when the park was the private estate of George Scott. The same firm repeats a story that a wartime bomb damaged the tree and that the regrowth explains its shape; no other source carries it, so treat that as local legend until one does. What is documented is stranger. The arborist Richard Moore took cuttings from this exact tree. Two of six rooted and now grow at a sculpture park in Dorset, still far too young to show whether the swelling travels with the cutting or belongs only to the parent. It is one of two Great Trees of London inside Ravenscourt Park, standing south of the lower grassy area near the elm avenue, five minutes from the District Line station, and it is unmistakable once you are in front of it.",
+      "verified_sources": [
+        "http://elmparadise.blogspot.com/2017/05/the-baobab-planes-of-canterbury.html",
+        "https://www.graftingardeners.co.uk/ravenscourt-park-trees/",
+        "https://www.treesandshrubsonline.org/articles/platanus/platanus-x-hispanica/",
+        "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+      ],
+      "access": "Free, open public park",
+      "transport": "5 min walk from Ravenscourt Park station (District Line)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "lon_019",
+      "name": "The Fountain Court Mulberries",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "roughly 130 to 140 years",
+      "age_min": 129,
+      "age_max": 139,
+      "location": {
+        "address": "Fountain Court, Middle Temple, London EC4Y 9DH",
+        "latitude": 51.5121,
+        "longitude": -0.1109,
+        "neighbourhood": "Temple, City of London / Westminster border"
+      },
+      "story": "Two black mulberries lean on wooden crutches either side of a fountain that has been running since 1681. They were planted for a queen's jubilee and the sources cannot agree which one. Middle Temple's own archive dates them to 1897 and Victoria's Diamond Jubilee. An independent mulberry history gives 20 June 1887, her Golden Jubilee, and adds that the planting was marked with a dinner in Middle Temple Hall. Ten years apart, both plausible, neither picked here: call the trees roughly 130 to 140 years old. Four went in together and only these two are left, the other pair removed in the 1970s. Black mulberry ages like this, going crooked and heavy limbed early, propping itself on whatever it is given, and fruiting hard regardless. Fountain Court is a small enclosed square between Middle Temple Hall and the gardens that run down toward the river, a working courtyard of the legal quarter rather than a park, and one of the quietest corners in the City. Access is real but narrow. The court and garden open to the public on weekdays, roughly 12:30 to 3pm, not on bank holidays, entered through the Garden Room off Middle Temple Lane, and they close in high winds or for private functions. Turn up inside that window and both trees are there, one on each side of the water.",
+      "best_time": {
+        "months": [
+          8
+        ],
+        "kind": "fruit",
+        "label": "August, when the black mulberries ripen and drop"
+      },
+      "verified_sources": [
+        "https://www.middletemple.org.uk/archive/archive-month/january-2022-muse-poets-and-resort-birds-%E2%80%93-many-faces-middle-temple-fountain",
+        "https://sandrasgardenblog.wordpress.com/2019/03/29/mulberries-for-a-queen/"
+      ],
+      "access": "Genuinely public but restricted hours: Middle Temple's garden and Fountain Court are open to the public on weekdays roughly 12:30-3pm, excluding bank holidays, entered via the Garden Room off Middle Temple Lane; occasionally closed for high winds or private functions",
+      "transport": "5 min walk from Temple station (Circle, District Lines)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
     }
   ]
 }
