@@ -18,6 +18,7 @@ Pages and assertions, deliberately few and stable:
 Run: python3 scripts/smoke_test.py   (needs Chrome or Chromium on PATH)
 Exit 1 on any failure; CI treats that as the site being broken (rung 2).
 """
+import argparse
 import re
 import shutil
 import socket
@@ -54,6 +55,20 @@ def dump_dom(chrome, url):
 
 
 def main():
+    global DIST
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dist", type=Path, default=None,
+                        help="Override the dist directory (default: site/dist). "
+                             "Used during the Astro migration to check site/dist-astro "
+                             "without touching behavior against the real dist.")
+    args = parser.parse_args()
+    if args.dist:
+        # Resolve to absolute: qa.py's --dist shipped this same flag with a
+        # relative-path bug (a comparison elsewhere assumed DIST was
+        # absolute and silently broke), so this file resolves() up front
+        # rather than repeat that mistake.
+        DIST = args.dist.resolve()
+
     chrome = find_chrome()
     if not chrome:
         print("SMOKE: no Chrome/Chromium found; cannot run. "
