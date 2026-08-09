@@ -4,12 +4,6 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "amsterdam",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-09T06:14:00+00:00"
-    },
-    {
       "target": "london",
       "kind": "write",
       "by": "session",
@@ -32,12 +26,6 @@
       "kind": "write",
       "by": "session",
       "claimed_at": "2026-08-09T08:02:21+00:00"
-    },
-    {
-      "target": "new-york",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-09T10:11:17+00:00"
     }
   ]
 }

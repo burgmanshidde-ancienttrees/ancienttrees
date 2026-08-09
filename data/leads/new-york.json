@@ -36,6 +36,18 @@
       "location_precision_note": "would need a mapped point for the Plant Family Collection area, not yet found"
     },
     {
+      "name": "Camperdown Elm, East Green (near East 72nd Street Playground)",
+      "species": "Camperdown Elm (Ulmus glabra 'Camperdownii')",
+      "location": {
+        "address": "East Green, across the path from the East 72nd Street Playground, Central Park, New York",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Central Park (East Green, near 72nd St / Fifth Ave), Manhattan"
+      },
+      "reason": "2026-08-09 pass (deepening the Ramble/Mall/CPW cluster): a second Camperdown elm exists in Central Park itself, distinct from the already-published Prospect Park specimen (nyc_003, planted 1872, 154 years old). Confirmed to exist via Central Park Conservancy's own plant page (centralparknyc.org/plants/camperdown-elm) and independently corroborated by an Alamy stock-photo record captioned 'Camperdown Elm (Ulmus Glabra Camperdownii) on East Green in Central Park'. Not pursued to verification: no source gives a planting date, and one blog account (a Conservancy volunteer's account of a circa-2000 visit) describes it as 'still a very small young tree' at that time, implying a planting in the 1990s and a current age of roughly 25-35 years rather than anything approaching ancient. That makes it thin on both counts the bar cares about (age undocumented, and what can be inferred suggests it is not remarkable for age) and its only real hook, the species' dramatic weeping form, duplicates the far better documented and far older Prospect Park tree's story angle. Would need a firmer planting date and a stronger case for why THIS specimen (not just the cultivar) is worth the walk before it clears the bar. Location: East Green sits well within the existing cluster's reach (roughly 700m-1km from nyc_012/013's Mall location and nyc_017's Cedar of Lebanon Grove), so distance is not the obstacle here, quality of the record is.",
+      "location_precision_note": "no mapped point found yet; East Green is a small area near Fifth Avenue and East 72nd Street"
+    },
+    {
       "name": "English Elm, Fort Greene Park",
       "species": "English Elm (Ulmus procera)",
       "location": {
