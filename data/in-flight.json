@@ -4,40 +4,10 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "berlin",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-09T13:23:51+00:00"
-    },
-    {
-      "target": "vienna",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-09T13:23:51+00:00"
-    },
-    {
-      "target": "amsterdam",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-09T13:23:51+00:00"
-    },
-    {
-      "target": "washington-dc",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-09T13:23:51+00:00"
-    },
-    {
-      "target": "lisbon",
+      "target": "barcelona",
       "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-09T14:27:27+00:00"
-    },
-    {
-      "target": "porto",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-09T14:27:27+00:00"
+      "by": "night-run",
+      "claimed_at": "2026-08-09T22:04:50+00:00"
     }
   ]
 }
