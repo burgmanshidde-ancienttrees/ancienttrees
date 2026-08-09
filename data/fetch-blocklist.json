@@ -83,8 +83,14 @@
     "monumentaltrees.com": {
       "host": "monumentaltrees.com",
       "noted": "2026-08-09",
-      "symptom": "403 to curl (was fetchable earlier)",
-      "workaround": "browser session for fact verification only; hard rule 1 forbids content reuse anyway"
+      "symptom": "403 to curl (was fetchable earlier); a browser session gets a Cloudflare 'Just a moment' interstitial first but clears it on its own within about 5 seconds",
+      "workaround": "browser session for fact verification only, wait a few seconds after navigating; hard rule 1 forbids content reuse anyway"
+    },
+    "konusanagac.com": {
+      "host": "konusanagac.com",
+      "noted": "2026-08-09",
+      "symptom": "DNS resolution fails outright (ENOTFOUND / could not resolve host) to both curl and WebFetch; not a block, genuinely unreachable from this sandbox",
+      "workaround": "WebSearch's own page-reading still surfaces usable extracted facts from individual pages (used successfully this pass for Istanbul's Gulhane Park trees, konusanagac.com/ozel-agac/*); a session with different network access may be able to fetch it directly"
     }
   }
 }

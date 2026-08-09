@@ -59,6 +59,18 @@
       "species": "various",
       "why_a_lead": "Checked again this pass with fresh searches for a single named, individually locatable specimen at either cemetery. Mount Auburn: the 'Champion Trees of Mount Auburn' event page still names no individual tree, species or location, only that 'some of the Massachusetts Champions' are on the grounds; the cemetery's own tree-map database (mountauburn.pastperfectonline.com) was not reachable as a searchable list in the time available. Forest Hills Cemetery (in Jamaica Plain, actually within Boston city limits, so it would clear the day-trip question that Mount Auburn does not): general sources describe 'an unusual collection of large specimen trees, some introduced by the Arnold Arboretum' including cherry, sugar and Japanese maple, umbrella pine and weeping hemlock, but nothing names a single tree with location or age. Both stay leads until a dedicated fetch of the actual tree-map/inventory tools turns up one specific, pinnable specimen.",
       "sources_so_far": ["https://mountauburn.org/event/champion-trees-of-mount-auburn/", "https://en.wikipedia.org/wiki/Forest_Hills_Cemetery"]
+    },
+    {
+      "candidate": "The Washington Elm successor sapling, Cambridge Common",
+      "species": "American Elm (Ulmus americana), unconfirmed",
+      "why_a_lead": "The original Washington Elm (Garden St / Mason St junction, where Washington supposedly took command of the Continental Army in 1775) died and was removed in 1923; a bronze marker set flush in the pavement is all that is confirmed to remain there (per History Cambridge's dedicated 'Washington Elm Debate Rages On' article, fetched in full this pass). A general web search snippet separately claimed 'a sapling of the iconic elm was planted in the Common by Vice President Charles Dawes on April 19, 1925, and that tree is the one that stands in Cambridge Common today', but the History Cambridge article itself, which covers the same 1925 sesquicentennial commemoration in detail, describes only a parade and the bronze plaque, concluding 'now nothing remains'. Genuinely contradictory between a search-engine summary and the dedicated primary source; not resolved this pass. If a Dawes sapling was in fact planted in 1925 and survives, it would be a ~101-year-old tree and a strong day-trip-boundary-clearing (Cambridge Common is central, no transit issue) candidate under the living-succession precedent. Needs a dedicated look at Cambridge Common's own tree inventory or the Cambridge Historical Commission before shipping either way.",
+      "sources_so_far": ["https://historycambridge.org/articles/washington-elm-debate-rages-on-fact-or-legend/", "https://historycambridge.org/articles/washington-elm/"]
+    },
+    {
+      "candidate": "Historic maidenhair (ginkgo) tree, Boston Public Garden, referenced in a 2026-08-06 WGBH digital-mural piece",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "why_a_lead": "A recent (2026-08-06) WGBH Foundation piece on artist Laurie Kaplowitz's collage work mentions using leaves from 'the historic maidenhair tree in the Boston Public Garden', but gives no age, exact location or other identifying detail, and does not resolve whether this is the same 1835 Common ginkgo already tracked above (note that one is on the Common, this one is explicitly placed in the Public Garden, a different park, so they may be two different trees entirely). Logged as a fresh clue for whoever next works this lead rather than acted on; not enough to pin or verify this pass.",
+      "sources_so_far": ["https://www.wgbh.org/foundation/digital-mural/2026-08-06/thursday-august-6"]
     }
   ],
   "blocked": [

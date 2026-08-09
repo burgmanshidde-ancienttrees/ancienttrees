@@ -46,5 +46,29 @@
     "curation_status": "flagged",
     "verify_notes": "Same corroboration pattern as ist_012, about 40m away in the same park: the national registry (OBJECTID 400) records height 23m, trunk diameter 145cm, age 259 years; IBB's Konusan Agaclar project publishes a dedicated page for this specific tree with matching 23m/145cm figures and says it has stood in Gulhane Park 'since 1759'. 1759 + 259 = 2018, again pointing to a shared circa-2018 survey rather than two fully independent field measurements, so flagged for that reason even though the two sources do not conflict. Adding roughly 8 years gives ~265-267 today. Celtis australis (nettle/hackberry) is a genuinely long-lived, sturdy species in Mediterranean/Anatolian settings, so an age in the 250-300 year range is physically plausible, unlike some of the registry's plane-tree age claims elsewhere. Third of the walkable Gulhane cluster: roughly 40m from ist_012 (Gulhane London Plane), about 500m from the Taslı Cinar (ist_004), about 300m from the Topkapi Palace Courtyard Plane (ist_011).",
     "photo": {"url": null, "license": null, "attribution": null, "status": "missing"}
+  },
+  {
+    "id": "ist_014",
+    "name": "The Topkapı Palace Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "roughly 310-320 years",
+    "age_min": 300,
+    "age_max": 330,
+    "location": {
+      "address": "Topkapı Palace, Fourth Courtyard area, Cankurtaran, Fatih, Istanbul",
+      "latitude": 41.013694,
+      "longitude": 28.984917,
+      "neighbourhood": "Topkapı Palace, Cankurtaran, Fatih"
+    },
+    "verified_sources": [
+      "https://services5.arcgis.com/26ObnytmBZ58Wbj8/arcgis/rest/services/turkiye_anit_agaclari/FeatureServer/0/query?where=OBJECTID=141&outFields=*&f=json (Turkiye Anit Agaclari national monumental-tree registry, OBJECTID 141: Porsuk/Taxus baccata, 314 yrs, govde_capi 103cm, boy 13m, tepe_capi 12m)",
+      "https://www.monumentaltrees.com/en/tur/marmararegion/istanbul/2138_topkapipalace/ (independent crowdsourced database; lists exactly 3 European Yew (Taxus baccata) specimens individually measured in Topkapi Palace's 4th courtyard, girths 3.26m and 3.09m at 1.30m plus one unmeasured, photos dated 6 December 2014)"
+    ],
+    "access": "Paid entry (Topkapi Palace Museum ticket covers the inner courtyards, including the 4th courtyard/Tulip Garden area)",
+    "transport": "Gulhane tram stop (T1 line), then roughly 10-15 minute walk through the palace grounds to the 4th courtyard",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Species and general location (Topkapi Palace's 4th courtyard) are corroborated by two genuinely separate sources: Turkiye's national monumental-tree registry (OBJECTID 141, individually surveyed coordinates, age 314 years, trunk diameter 103cm, crown 12m, height 13m) and monumentaltrees.com's independent field survey, which lists exactly 3 European Yew specimens in that same courtyard with their own girth measurements (3.26m and 3.09m circumference at breast height, matching a trunk in the 100+cm-diameter range) and dated photos from December 2014, confirming they were alive and standing then. The registry's own detail page (anitagaclar.gov.tr/detail/porsuk--taxus-baccata/112, same underlying government database as the ArcGIS layer so not counted as a second independent source) repeats the same trunk/crown/height figures almost exactly but gives age as 310 rather than 314, a minor internal drift between two views of the same record, and lists the district as 'GOLBASI' rather than Fatih, which is a clear data-entry error since its own descriptive text is explicitly about Topkapi Sarayi; flagging this as a register data-quality issue worth knowing about rather than a location problem, since the coordinates and the prose both independently point at Topkapi. Picked the oldest (314yr) of the three registered yews in this courtyard as the entry; the other two (OBJECTIDs 403, 404) are close by and go to leads rather than being folded in, since they read as separate individual specimens rather than one visitor-facing point. Not clean-confirmed because the most recent direct alive-evidence found this pass (monumentaltrees photos) dates to 2014, about 12 years old; no fresher sighting found in this pass. Fourth stop in the Topkapi/Gulhane cluster: about 550m from ist_012/ist_013 in Gulhane Park, inside the same palace grounds as the already-published Topkapi Palace Courtyard Plane (ist_011).",
+    "photo": {"url": null, "license": null, "attribution": null, "status": "missing"}
   }
 ]
