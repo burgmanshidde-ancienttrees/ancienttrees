@@ -789,6 +789,13 @@
           "tokens": 95000,
           "trees": 2,
           "note": "RBGE cluster deepened 5 to 7 trees (1948 dawn redwood, champion Sorbus hemsleyi); picked up a claim the prior session left unfinished."
+        },
+        {
+          "target": "Berlin",
+          "kind": "verify",
+          "tokens": 55000,
+          "trees": 2,
+          "note": "Pfaueninsel walk deepened 3 to 5 trees (queried the imported register directly for candidates near the cluster, not city centre); found and fixed a live None-Year-Old title bug affecting 3 other published pages along the way."
         }
       ]
     }

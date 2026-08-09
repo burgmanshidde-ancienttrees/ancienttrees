@@ -943,7 +943,10 @@ def age_token(tree):
     review, 2026-08-06, found on 43 cities including a case with no title
     number in the text at all)."""
     m = re.search(r"(\d[\d,]*\+?)", tree.get("age_estimate", ""))
-    return m.group(1) if m else str(tree.get("age_min", ""))
+    if m:
+        return m.group(1)
+    age_min = tree.get("age_min")
+    return str(age_min) if age_min else None
 
 
 def species_common(tree):
@@ -3244,12 +3247,13 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, coun
     canonical = f"{BASE_URL}/{cslug}/{tslug}"
     rootpath = "../"
 
-    title = fit_title([
-        f"{tree['name']}: {age} Year Old {species_common(tree)} in {city}",
-        f"{tree['name']}: {age} Year Old Tree in {city}",
-        f"{tree['name']} in {city}",
-        tree["name"],
-    ], canonical)
+    title_candidates = []
+    if age:
+        title_candidates.append(f"{tree['name']}: {age} Year Old {species_common(tree)} in {city}")
+        title_candidates.append(f"{tree['name']}: {age} Year Old Tree in {city}")
+    title_candidates.append(f"{tree['name']} in {city}")
+    title_candidates.append(tree["name"])
+    title = fit_title(title_candidates, canonical)
     description = meta_from_story(tree["story"])
     story_wc = len(tree["story"].split())
     if not (150 <= story_wc <= 250):
@@ -3436,11 +3440,12 @@ def build_question_page(city_entry, collections, pages, country_pages=None):
     rootpath = "../"
     question = f"What is the oldest tree in {city}?"
 
-    title = fit_title([
-        f"What Is the Oldest Tree in {city}? ({old['name']}, {age} Years)",
-        f"What Is the Oldest Tree in {city}? ({age} Years Old)",
-        f"What Is the Oldest Tree in {city}?",
-    ], canonical)
+    title_candidates = []
+    if age:
+        title_candidates.append(f"What Is the Oldest Tree in {city}? ({old['name']}, {age} Years)")
+        title_candidates.append(f"What Is the Oldest Tree in {city}? ({age} Years Old)")
+    title_candidates.append(f"What Is the Oldest Tree in {city}?")
+    title = fit_title(title_candidates, canonical)
     description = city_data.get("question_meta") or city_data.get("question_answer", "")[:DESC_MAX]
     answer = city_data.get("question_answer", "")
     context = city_data.get("question_context", "")
