@@ -3,9 +3,9 @@
   "country": "United States",
   "status": "needs_curation",
   "intro": "New York City runs a government registry for this: the Parks Department's Great Trees of New York City list, started in 1985 and expanded in 2024 after a nomination drive drew more than 270 submissions. Every tree carries that designation. The five boroughs each hold at least one, deliberately: a courthouse elm and a botanical garden's tallest oak get the same paragraph as a tulip tree growing wild in a park tied to the Dutch colony's earliest land deals. Some are colonial-era survivors; one was planted so a park would have something to be famous for.",
-  "meta_description": "NYC runs an official Great Trees registry. Meet a 300-year-old Greenwich Village elm, a wild tulip tree older than the city itself, and fifteen more.",
+  "meta_description": "NYC runs an official Great Trees registry. Meet a 300-year-old Greenwich Village elm, a wild tulip tree older than the city itself, and eighteen more.",
   "question_answer": "New York City's oldest tree is very likely the Queens Giant, a tulip tree in Alley Pond Park estimated between 350 and 450 years old by different measures, old enough to predate the Dutch colony of New Amsterdam entirely. It stands in a wooded section of the park in eastern Queens, reachable on foot from the Douglaston Long Island Rail Road station.",
-  "question_meta": "NYC's oldest tree is likely the Queens Giant, a 350-450 year old tulip tree in Alley Pond Park. Its story, exact location, and fifteen more Great Trees.",
+  "question_meta": "NYC's oldest tree is likely the Queens Giant, a 350-450 year old tulip tree in Alley Pond Park. Its story, exact location, and eighteen more Great Trees.",
   "question_context": "The Queens Giant's claim to being New York City's oldest living thing rests on measurement rather than legend. At 133.8 feet, it is the tallest carefully measured tree in the five boroughs, and tulip trees of that height in undisturbed forest are reliably centuries old; the New York City Parks Department states it is at least 368 years old, while some arborists place the range as wide as 350 to 450. Either figure puts its germination before the 1664 English takeover of New Amsterdam, and some local accounts connect trees in this stretch of Alley Pond Park to 17th century land dealings between the Dutch West India Company and the Matinecock people who lived here first, though no source ties this specific trunk to a documented transaction. What is not in question is that it has spent its entire life essentially unmanaged, growing in what is now protected forest rather than a planted garden, which is rare enough in New York that the Parks Department calls it possibly the oldest living organism in the metropolitan area. Getting there: Douglaston station on the LIRR Port Washington line, then a short walk into Alley Pond Park's wooded trails.",
   "faq": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are New York City's Great Trees free to see?",
-      "a": "Thirteen of the seventeen stand in free public parks or cemeteries. The New York Botanical Garden charges general admission to its grounds, but the Thain Family Forest tree is within that same free-to-walk woodland once inside."
+      "a": "Sixteen of the twenty stand in free public parks or cemeteries. The New York Botanical Garden charges general admission to its grounds, but the Thain Family Forest tree is within that same free-to-walk woodland once inside."
     },
     {
       "q": "How does a tree become an official Great Tree of New York City?",
@@ -598,6 +598,104 @@
       },
       "curation_status": "flagged",
       "notes": "Two independent sources describe evergreen Cedar of Lebanon trees at the same spot, but disagree on count: Central Park Conservancy's own plant page describes 'a beautiful specimen' (singular); gardenindelight.com (2016) describes 'several... in a small grove' at the identical location, with the same dedication plaque. Delivered as a grove/ensemble since the plaque gives one obvious place to stand, per the collectible-point rule. No confirmed planting date; age range is a rough inference from a 2016 blog guess about the park's cedars generally, not a documented figure for this planting, hence the 'not documented' chip label. Coordinates are Conservatory Water's own published centre point (Wikipedia), not a tree-level GPS fix; distance-checked against the existing cluster: roughly 540m to nyc_002, 370m to nyc_012/013, 780m to nyc_011, comfortably within the same walk.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nyc_018",
+      "name": "The American Elm at the East 97th Street Entrance",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "not documented, dates to the 1800s",
+      "age_min": 130,
+      "age_max": 226,
+      "location": {
+        "address": "Central Park, at the East 97th Street entrance, roughly 500 feet west of Fifth Avenue, New York, NY 10029",
+        "latitude": 40.7886,
+        "longitude": -73.9598,
+        "neighbourhood": "Central Park, Manhattan"
+      },
+      "story": "Most of New York's elms are gone. Dutch elm disease arrived in the 1930s and by the postwar decades had killed the overwhelming majority of the American elms that once shaded nearly every street in the city, a loss so total that Central Park's surviving giants now register as minor miracles rather than ordinary trees. This one stands at the park's East 97th Street entrance, its northernmost officially designated Great Tree, an eighty foot canopy spread wide enough to be one of the broadest in the entire register, and a trunk the tree guides describe, not unkindly, as looking like an old witch, its serpentine branches twisting rather than reaching straight up. Nobody recorded when it was planted; city records only say the 1800s, a stretch of a century or more that leaves its exact age an open question. What is documented is what it survived: the fungus that erased its species from most of the city, and, per the park's own account, the storms that have since taken out other Central Park trees around it. New York designated it a Great Tree in 1985, one of the original class, decades before the citywide relaunch that added scores more in 2024. Walk in from Fifth Avenue at 97th Street and it is the first thing waiting.",
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=46",
+        "https://untappedcities.com/2020/09/10/guide-central-park-great-trees/7/",
+        "https://www.westsiderag.com/2024/10/09/parks-releases-new-map-of-citys-great-trees-eight-of-them-are-in-central-park"
+      ],
+      "access": "Free, public park, right at a park entrance path",
+      "transport": "4/5/6 train to 96th Street/Lexington Avenue, about 10-12 minute walk east and north to the East 97th Street entrance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "NYC Parks 'Great Trees of NYC' register (id=46, designated 1985): 94.3 ft tall, 68-inch trunk diameter, 80 ft canopy. Untapped Cities' Great Trees guide independently corroborates the same measurements and calls it the northernmost Great Tree in the park. Westside Rag's 2024-10-09 coverage of the citywide relaunch independently lists the same tree at 94 ft near the East 97th Street entrance. AGE: no source gives a planting year, both that address it say only 'dates to the 1800s' (127-226 years as of 2026), flagged for imprecision rather than disagreement. COORDINATES: nycgovparks.org returns HTTP 405 to direct fetch and web.archive.org was unreachable this pass; coordinates are a good-faith estimate from a geocoded reference point (2 East 90th Street / Engineers' Gate, cross-checked against Nominatim's own East 96th Street result, landing within about 60m), marked approximate rather than tree-level confirmed. DISTANCE: about 170m from nyc_019, 750m from nyc_020, forming a genuine second walk roughly 1.1-1.15km from the existing Ramble/Mall/CPW cluster.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nyc_019",
+      "name": "The London Plane of the Reservoir",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented, possibly planted around 1862",
+      "age_min": 100,
+      "age_max": 164,
+      "location": {
+        "address": "Bridle Path on the east side of the Jacqueline Kennedy Onassis Reservoir, near East 96th Street, Central Park, New York, NY 10029",
+        "latitude": 40.7879,
+        "longitude": -73.958,
+        "neighbourhood": "Central Park, Manhattan"
+      },
+      "story": "A tree with more than one trunk is hard to age by the usual rule of thumb, and that uncertainty is most of this one's story. The London plane on the Bridle Path near East 96th Street rises just over ninety six feet from a base that splits into multiple trunks fused so thoroughly that its combined diameter tops five feet, bark mottled in patches of green, tan and grey that one NYC Parks writer compared to an impressionist canvas. The claim attached to it, that it was planted around 1862 when the Reservoir beside it was first excavated, comes from one nature writer's educated guess rather than any planting record, which makes 'possibly the oldest tree in Central Park' a title worth repeating with the word possibly intact. A rival candidate exists across the park: a black tupelo in the Ramble that one book on the city's great trees dates to 1858, four years earlier, an argument nobody has settled because neither tree came with a receipt. What is not in dispute is the setting. The Reservoir's running path carries thousands of people past this trunk every week, most looking at the water and the skyline reflected in it rather than down at the multi-trunked plane that has, by the most generous reading, watched the water since before the Civil War.",
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees?id=43",
+        "https://untappedcities.com/2020/09/10/guide-central-park-great-trees/7/",
+        "https://ephemeralnewyork.wordpress.com/2026/05/18/is-this-towering-london-plane-the-oldest-tree-in-central-park/"
+      ],
+      "access": "Free, public park, beside the Reservoir's public running/bridle path",
+      "transport": "6 train to 96th Street, about 10 minute walk west into the park to the Reservoir's Bridle Path",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "NYC Parks 'Great Trees of NYC' register (id=43): multi-trunked London plane, Bridle Path near the East 96th Street entrance, northeast corner of the Reservoir, 95.94 ft tall, trunk diameter over 5 ft owing to multiple trunks. Untapped Cities independently corroborates the same tree and measurements, citing nature writer Dennis Burton's claim it was 'possibly planted when the Reservoir was dug' in 1862. A 2026-05-18 Ephemeral New York piece independently repeats the same 1862 dating and measurements, while noting a competing claim that nyc_002 (Black Tupelo of the Ramble) may date to 1858 instead, a dispute between two OTHER trees, not evidence against this one. AGE: 'possibly planted' 1862 is explicitly one writer's guess, not a documented planting record, hence 'not documented' in the chip and flagged status. COORDINATES: same nycgovparks.org access problem as nyc_018; estimate built from the Reservoir's published Wikipedia centroid projected to its northeast corner per the register's own 'near East 96th Street, east side' description, cross-checked against a Nominatim anchor landing within about 60m. Marked approximate. DISTANCE: about 170m from nyc_018, 670m from nyc_020, part of the same second walk.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "nyc_020",
+      "name": "The Yoshino Cherries of the Reservoir",
+      "species": "Yoshino Cherry (Prunus x yedoensis)",
+      "age_estimate": "not documented; the planting traces to a 1912 gift from Japan",
+      "age_min": 20,
+      "age_max": 114,
+      "location": {
+        "address": "East side of the Jacqueline Kennedy Onassis Reservoir, near East 87th Street, Central Park, New York, NY 10128",
+        "latitude": 40.7819,
+        "longitude": -73.9585,
+        "neighbourhood": "Central Park, Manhattan"
+      },
+      "story": "Everyone knows Washington's cherry trees came from Japan in 1912. Fewer know New York got a gift the same year: a planting of Yoshino cherries along the Reservoir's east side, sent alongside the 3,020 trees that went to the Tidal Basin and somehow left out of the story that made the capital famous for its blossoms. Thirty five trees stand there today, city designated as a single Great Tree entry rather than thirty five separate ones, which is the honest way to register a planting nobody experiences tree by tree. They bloom white shading to pale pink each April, usually a week or two before the Reservoir's showier Kwanzan cherries on the opposite bank, and the flowers carry a faint almond scent the plum colored Kwanzans do not. Here is the part no one advertises: Yoshino cherries rarely live past sixty years even with good care, and nothing in the historical record says whether the trees blooming today grew from the original 1912 shipment or replaced it at some point since, the way Washington's own planting has been replanted in stages for a century. So the honest claim is not that these particular trunks are old. It is that this exact stretch of path has carried the same seasonal show, on the same imported species, since Woodrow Wilson's first year in the White House.",
+      "verified_sources": [
+        "https://www.nycgovparks.org/facilities/great-trees/42",
+        "https://untappedcities.com/2020/09/10/guide-central-park-great-trees/7/",
+        "https://www.westsiderag.com/2024/10/09/parks-releases-new-map-of-citys-great-trees-eight-of-them-are-in-central-park"
+      ],
+      "access": "Free, public park, beside the Reservoir's public running path",
+      "transport": "4/5/6 train to 86th Street, about 10-12 minute walk west into the park to the Reservoir's east side",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [4],
+        "kind": "flowers",
+        "label": "mid-April, usually a week or two before the Reservoir's Kwanzan cherries across the water"
+      },
+      "curation_status": "flagged",
+      "notes": "ENSEMBLE, judged against the collectible-point rule the way nyc_013 (the Mall elm allee) was judged: NYC Parks register (id=42) designates this as ONE 'Great Tree' entry, not many. Untapped Cities independently describes '35 Yoshino cherries... on the east side of the Reservoir', part of the 1912 gift distinct from Washington DC's Tidal Basin planting the same year. Westside Rag's 2024 coverage independently lists '28-foot Yoshino Cherries' at the same location. AGE / OPEN QUESTION: sources agree the SITE traces to 1912 (114 years in 2026), but Yoshino cherries often live only 30-60 years, and no source confirms whether today's 35 trees are original plantings or later replacements, the way DC's Tidal Basin cherries are a mix of survivors and generations of replacements. The honest claim is 'this planting traces to 1912', not 'these are 114-year-old trees'; age range reflects that uncertainty. COORDINATES: same nycgovparks.org access problem as nyc_018/019; estimate built from a Nominatim anchor projected 3 blocks south to East 87th Street, cross-checked within about 60m. Marked approximate. DISTANCE: about 670m from nyc_019, 750m from nyc_018. All three sit within roughly 900m of each other, forming a genuine second walk (about 750m end to end) roughly 1.1-1.15km from the existing Ramble/Mall/CPW cluster.",
       "location_precision": "approximate"
     }
   ]
