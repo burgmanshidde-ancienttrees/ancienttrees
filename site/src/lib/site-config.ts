@@ -21,6 +21,14 @@ export const CONTACT_EMAIL = "info@ancienttrees.app";
 
 export const TITLE_MAX = 60;
 export const DESC_MAX = 155;
+// The floor a generated description should reach before it is allowed to stop
+// on a sentence boundary. Google renders roughly 155 characters and that text
+// is the entire click decision; anything much under 110 is both flagged by
+// audit tools and, more to the point, leaves reason-to-go unread. 120 sits
+// deliberately above that flag so a description clears it rather than grazing
+// it. Only metaFromStory uses this: hand-written city and question copy is
+// already comfortably long and is not padded to a number.
+export const DESC_MIN = 120;
 
 // build_site.py:85-88. Loaded from a CDN via plain <script>/<link> tags,
 // same as the current site, rather than bundled through the maplibre-gl npm

@@ -1,5 +1,5 @@
 // Small text-derivation helpers ported from build_site.py:927-961, 2433-2437, 2782-2789.
-import { DESC_MAX } from "./site-config";
+import { DESC_MAX, DESC_MIN } from "./site-config";
 import type { Tree } from "./trees";
 
 /** The number a page's title quotes for this tree's age: the figure the
@@ -25,14 +25,25 @@ export function metaFromStory(story: string): string {
   const sentences = story.split(/(?<=[.!?]) /);
   let out = "";
   for (const s of sentences) {
-    if (out && out.length + 1 + s.length > DESC_MAX) break;
-    out = (out + " " + s).trim();
-    if (out.length > DESC_MAX) {
-      const cut = out.slice(0, DESC_MAX - 1);
-      const lastSpace = cut.lastIndexOf(" ");
-      out = (lastSpace > -1 ? cut.slice(0, lastSpace) : cut).replace(/[,.;:]+$/, "") + "…";
-      break;
+    const candidate = out ? out + " " + s : s;
+    if (candidate.length <= DESC_MAX) {
+      out = candidate;
+      continue;
     }
+    // The next sentence does not fit whole. Stopping here was the original
+    // behaviour and it left a third of the snippet empty: an opening sentence
+    // of 90 characters followed by an 80-character one produced a 90-character
+    // description against a 155 limit, and 377 of 893 tree pages sat under 110
+    // characters on 2026-08-09, some as short as 19. Google shows roughly 155,
+    // and what it shows is the whole of the click decision, so unused room is
+    // unread reason to go. Below DESC_MIN we take the clause and cut it on a
+    // word boundary; at or above it we stop clean, because a whole sentence
+    // reads better than a trailing ellipsis when there is already enough.
+    if (out.length >= DESC_MIN) break;
+    const cut = candidate.slice(0, DESC_MAX - 1);
+    const lastSpace = cut.lastIndexOf(" ");
+    out = (lastSpace > -1 ? cut.slice(0, lastSpace) : cut).replace(/[,.;:]+$/, "") + "…";
+    break;
   }
   return out;
 }
