@@ -5,7 +5,7 @@
   "oldest_tree_id": "chi_003",
   "intro": "Chicago is a young city on old prairie, and its remarkable trees are the prairie's survivors: bur oaks that stood here before the city had a name. One shaded the Midway while the 1893 World's Fair was built around it, a grove on Wooded Island survived the same fair's landscaping, and a savanna remnant in a Norwood Park cemetery may be older than the United States. The famous zoo oak fell in 2023, which makes the ones still standing worth the trip. All four are free.",
   "meta_description": "Chicago's remarkable trees are prairie survivors: bur oaks older than the city, from the Midway to Wooded Island, plus a state champion. Mapped.",
-  "question_meta": "Chicago's oldest trees are the bur oaks of Union Ridge Cemetery, estimated at 325 to 375 years. Their story, and three more remarkable trees.",
+  "question_meta": "Chicago's oldest trees are the bur oaks of Union Ridge Cemetery, estimated at 325 to 375 years. Their story, and five more remarkable trees.",
   "question_answer": "Chicago's oldest known trees are the bur oaks of the Union Ridge Cemetery savanna in Norwood Park, estimated by one expert survey at 325 to 375 years, older than the United States. The most storied is the bur oak on the Midway Plaisance in Hyde Park, which stood before the 1893 World's Fair was laid out around it.",
   "question_context": "Chicago's relationship with old trees is mostly a story of what the prairie kept. The city itself is young, incorporated in 1837, and it burned in 1871, so almost nothing planted stands out for age. What survives is what was already here: bur oaks, the prairie's fire-resistant veterans, in the few corners the city never quite got around to flattening. The best known of them, the bur oak at Lincoln Park Zoo that generations called Chicago's oldest tree, was cut down in May 2023 after it died, which quietly promoted the others. The Midway oak in Hyde Park carries a genuine dispute, one university account says it was planted for the 1893 fair, others say the fair was built around it, and its page gives both versions. The Union Ridge savanna's ages rest on a single expert's estimate and say so. That honesty matters here more than in most cities, because the register Illinois keeps for its champion trees records size, not age, and a champion is not automatically ancient.",
   "faq": [
@@ -152,6 +152,65 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "chi_005",
+      "name": "The Champion Red Pine of Indian Boundary",
+      "species": "Red Pine (Pinus resinosa)",
+      "age_estimate": "not documented",
+      "age_min": 50,
+      "age_max": 100,
+      "location": {
+        "address": "Indian Boundary Golf Course, 8600 W Forest Preserve Ave, Chicago, IL 60634 (Forest Preserves of Cook County)",
+        "latitude": 41.939135,
+        "longitude": -87.844832,
+        "neighbourhood": "Dunning"
+      },
+      "story": "This is the state champion red pine of Illinois, and it holds the title partly for want of competition. The Illinois Big Tree Register lists exactly one red pine anywhere in the state, and this is the one, standing on the Indian Boundary golf course on Chicago's northwest side. Its 153.52 points come from a trunk 6.8 feet around, a height of 64 feet and a crown spreading 31.5 feet, measured and listed in 2026, which doubles as the freshest evidence that it is alive and thriving. Nobody has dated it. Red pine is a northern species, well outside its natural range down here, so this is a planted tree rather than a relic of anything, and the register carries no age field for any entry. Any figure attached to this tree is worked backwards from its trunk rather than measured, and should be read that way. What is documented is the size, and for Pinus resinosa the giveaway is the needles: paired, three to six inches long, snapping cleanly in half when you bend one. Access is the honest problem. Indian Boundary is a public 18 hole course run by the Forest Preserves of Cook County, so walking the fairways generally means paying a green fee, and whether the tree can be seen or reached from outside the course was not established. Ask at the clubhouse before planning the trip.",
+      "verified_sources": [
+        "https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0/query?where=Common_name%3D%27red+pine%27&outFields=*&f=json",
+        "https://extension.illinois.edu/forestry/big-tree-register",
+        "https://fpdcc.com/nature/champion-tree-register/"
+      ],
+      "access": "Public 18-hole golf course, Forest Preserves of Cook County; a green fee is generally needed to walk the course itself, and whether the tree is visible from a public perimeter path was not confirmed this pass",
+      "transport": "Metra Milwaukee District West Line to River Grove or Elmwood Park, roughly 20 minutes from Chicago Union Station; or CTA/Pace bus along Forest Preserve Dr/Cumberland Ave. Exact walk time from the nearest stop to the tree was not verified this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "chi_006",
+      "name": "The Kenilworth Witness Oak",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "roughly 230 to 300 years, sources disagree",
+      "age_min": 230,
+      "age_max": 300,
+      "location": {
+        "address": "427 N Kenilworth Ave, Oak Park, IL 60302 (village parkway, Hemingway District)",
+        "latitude": 41.8939531,
+        "longitude": -87.7980237,
+        "neighbourhood": "Oak Park (day trip from Chicago, not within city limits)"
+      },
+      "story": "Local history holds that this bur oak was a witness tree, a landmark the Potawatomi used to find the route back to the Des Plaines River after a hunt. Oak Park's own paper, the Wednesday Journal, reported that reading in 2014 along with the claim that it is the oldest parkway tree in the village. Its age depends on which article you open. The 2014 survey puts it at about 230 years. A 2011 piece in the same paper, written when Openlands and the Morton Arboretum gathered its acorns for a historic oak propagation project, calls it three centuries old. That is a gap of seventy years, nobody has resolved it, and both figures stand here rather than one being quietly chosen. There is a harder caveat. No source has confirmed this tree alive since that 2014 article. In October 2025 another Oak Park heritage bur oak of the same generation, over on Forest Avenue, was removed after disease took it. That was a different tree at a different address, but the cohort is visibly failing, so go expecting an oak and not a guarantee. It stands on the parkway, the village-owned strip between sidewalk and street, in front of a private house on North Kenilworth Avenue in the Hemingway district. Public ground, so stay on the pavement. Oak Park is not Chicago but the suburb immediately west, 20 to 25 minutes from the Loop on the Green Line.",
+      "verified_sources": [
+        "https://www.oakpark.com/2014/08/12/the-old-growth-oaks-we-hold-so-dear/",
+        "https://www.oakpark.com/2011/05/25/propagating-oak-parks-historic-oaks/"
+      ],
+      "access": "Free, public parkway tree (the strip of village-owned land between sidewalk and street), viewable from the public right of way; it fronts a private residence so stay on the parkway/sidewalk",
+      "transport": "CTA Green Line to Oak Park Ave station, roughly 20 to 25 minutes from the Loop, then about a 10 minute walk north; alternatively Metra Union Pacific West Line to Oak Park station",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

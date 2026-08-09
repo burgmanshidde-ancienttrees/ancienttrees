@@ -12,15 +12,22 @@
       "longitude": -0.1086,
       "neighbourhood": "Temple, City of London"
     },
+    "story": "The Inner Temple's garden opens to the public for two and a half hours on weekday afternoons, and this tree is a fair reason to time the visit. A black mulberry stands by the railings of Benchers' Walk, outside Paper Buildings, its trunk about a metre and a half around and ten metres of crown above it. The Inner Temple's own history of the garden names it as one of the survivors of an old orchard, alongside a large-fruiting walnut and a quince, which is the institution itself calling this inherited planting rather than decoration. What no source will say is how old it is. There is no planting date anywhere, and black mulberries are among the hardest trees to age: they rot hollow early, lean until they need propping, and root wherever a low branch touches soil, so the trunk stops being a record of anything. This entry carries no age for that reason rather than a guess. The ground is famous for a scene that never happened here. Shakespeare set the plucking of the red and white roses, and with it the start of the Wars of the Roses, in the Temple garden; the tree is centuries younger than the fiction. Two hundred and fifty metres across the lane, Middle Temple's mulberries at Fountain Court at least have a disputed planting date to argue over. This one does not even have that.",
+    "best_time": {
+      "months": [
+        8
+      ],
+      "kind": "fruit",
+      "label": "August, when the mulberries ripen and stain whatever is underneath them"
+    },
     "verified_sources": [
       "https://www.moruslondinium.org/map/inner-temple-garden",
       "https://www.innertemple.org.uk/estate-garden/the-inner-temple-garden/the-garden/history-of-the-garden/"
     ],
     "access": "Public, open weekdays 12:30pm-3:00pm only (not full daily access)",
     "transport": "Temple station, 4 minute walk",
-    "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "Existence and species confirmed by two independent sources: Morus Londinium's Inner Temple survey (heritage/notable mulberry, girth 150cm, height 10m, by the railings of Benchers' Walk outside Paper Buildings) and the Inner Temple's own official garden-history page, which names the black mulberry as one of the survivors of the garden's 'ancient orchard' alongside a large-fruiting walnut and a quince, i.e. the Inner Temple itself frames it as historic rather than ornamental planting. No source gives a planting date or age; black mulberries are notoriously hard to age and can live 200-400+ years, but that is not a substitute for a source, so age_estimate is left undocumented rather than guessed. Coordinates are the garden's approximate centre near Benchers' Walk, not a tree-level pin, hence approximate. Access is real but restricted to a 2.5 hour weekday window, worth stating plainly rather than implying casual walk-up access. This tree sits about 250m from the already-published lon_019 (The Fountain Court Mulberries, Temple) and forms a natural pair/cluster point for a City/Temple walk alongside lon_003 (Cheapside Plane) and lon_011 (St Paul's Churchyard Planes), both roughly 1.2-1.4km away.",
+    "location_precision": "approximate",
     "leads_resolved": "Inner Temple Garden Black Mulberry"
   },
   {
@@ -36,15 +43,22 @@
       "longitude": -0.0864,
       "neighbourhood": "City of London"
     },
+    "story": "This is the only Japanese pagoda tree in the City of London, on the City of London's own account of its gardens, and a City business paper's tour of Finsbury Circus says the same. The species comes from China and flowers cream in August, when almost nothing else does, which is a useful habit in a garden ringed by offices where lunch happens outdoors. Both sources tie the tree to the garden's original 1815 layout by George Dance the Younger, and neither produces a planting record, so the age here is circumstantial: roughly two centuries, inferred from the design rather than read off a document. Treat it as a range rather than a birthday. It has come through the most disruptive stretch of its life. Finsbury Circus lost most of its surface to Crossrail works for over a decade, then closed in 2023 for the first full renovation of the gardens in more than a hundred years and reopened in May 2025. The gardens are small, 2.2 hectares, so finding it takes a minute. Half a kilometre south, the Cheapside Plane is the only Great Tree of London still standing inside the Square Mile, and Kew's Old Lions include pagoda trees of roughly the same generation in a botanical collection. This one has spent its two hundred years in the middle of the banking district instead.",
+    "best_time": {
+      "months": [
+        8
+      ],
+      "kind": "flowers",
+      "label": "August, when it flowers cream-white and almost nothing else in London does"
+    },
     "verified_sources": [
       "https://www.cityoflondon.gov.uk/things-to-do/city-gardens/find-a-garden/finsbury-circus-gardens",
       "https://www.cityam.com/inside-finsbury-circus-gardens-the-citys-biggest-green-space/"
     ],
     "access": "Free, public garden, standard park hours",
     "transport": "Moorgate station, 3 minute walk; Liverpool Street station, 6 minute walk",
-    "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "Existence confirmed as currently standing by the City of London's own official garden page (fetched directly, live copy, present tense): 'The present garden was originally laid out in 1815 to a design by George Dance the Younger. It's well known for its mature London plane trees and fine Japanese Pagoda tree - the only one in the City.' This is the only Japanese Pagoda tree in the City of London per that source. CityAM's feature independently corroborates: 'the City of London's only Japanese Pagoda tree', part of the 1815 redesign. Age is inferential, not a direct planting record: both sources associate the pagoda tree with the 1815 Dance redesign but neither states it was planted that exact year, so age_estimate is given as a range (roughly 200 years) rather than a precise figure, and this should read as circumstantial dating in the story. SURVIVAL CONFIRMED: Finsbury Circus Gardens underwent a major Crossrail-era renovation, closed 2023, reopened May 2025 ('the first major renovation in over 100 years'). The City of London's OWN page, fetched fresh via curl (not cached), describes the pagoda tree in the present tense as a current feature of the garden, which resolves the previous pass's open question about whether it survived the works. Location is garden-level (Finsbury Circus Gardens centre), not a tree-level pin, hence approximate; the garden is compact (2.2 hectares) so a visitor can find it without difficulty. Sits about 0.55km from lon_003 (The Cheapside Plane) and roughly 1.1km from lon_011 (St Paul's Churchyard Planes), extending the City of London cluster north.",
+    "location_precision": "approximate",
     "leads_resolved": "Finsbury Circus Japanese Pagoda Tree"
   },
   {
@@ -60,15 +74,15 @@
       "longitude": -0.0912,
       "neighbourhood": "Bunhill, Islington"
     },
+    "story": "George Fox, who founded the Quakers, was buried on this ground in 1691, and the plane trees standing over it are nowhere near old enough to have seen it. The burial ground took Quaker dead from 1661 until 1855, and the space became a public recreation ground in 1965, laid out inside the Banner Street estate with the trees left in place. Their age is genuinely disputed. Bunhill Fields Quaker Meeting's own account of the garden says the mature London planes here were planted about 1880, which makes them roughly 145 years old. A local record drawing on the London Gardens Trust inventory describes three notable planes, two of which may date from the 18th century, which would make them a century older and among the oldest planes in London. The two claims have not been reconciled, and this page follows the Meeting's own figure because it is the institution's own history, while saying plainly that the bigger claim is out there. It is worth not confusing this with the celebrated burial ground next door. Bunhill Fields holds Blake, Defoe and Bunyan and gets the visitors; the Quaker ground is a separate, quieter square of grass and trees between Banner Street and Chequer Street, six minutes from Old Street. The Amwell Street Fig is about 1.4 kilometres west if you want to make an afternoon of it.",
     "verified_sources": [
       "https://bunhillquakers.org.uk/garden/",
       "https://squaremilehealthwalks.wordpress.com/2017/07/18/quaker-gardens/"
     ],
     "access": "Free, public recreation ground (laid out 1965 within the GLC Banner Street estate), entered from Banner Street or Chequer Street",
     "transport": "Old Street station, 6 minute walk",
-    "location_precision": "approximate",
     "curation_status": "flagged",
-    "verify_notes": "Existence and species confirmed by two independent sources. Bunhill Fields Quaker Meeting's own site (bunhillquakers.org.uk/garden/) states the garden holds 'several mature London Plane trees planted about 1880' (roughly 145 years). A second source, a local health-walks blog citing the London Gardens Trust inventory record, describes '3 notable plane trees, two of which may be C18th' (roughly 250+ years), which would make them considerably older. SOURCES CONFLICT ON AGE and this pass could not resolve it: the fuller London Gardens Trust inventory record (ISL064) that would likely settle this returned HTTP 403 to every fetch attempt, same as the previous pass. Delivering with the Quaker Meeting's own figure (1880) as the primary age_estimate because it is the site's own institutional history rather than a secondhand blog claim, but this is stated, not silently chosen: a future pass should try ISL064 via a browser session or Wayback Machine to adjudicate. The garden sits on the site of the historic Quaker burial ground (1661-1855) where George Fox, founder of the Religious Society of Friends, was buried in 1691; the trees themselves postdate the burial ground's closure. This is a genuinely public, signposted park (not the adjacent, larger Bunhill Fields Burial Ground, which is a separate already-blocked entry). Sits about 1.4km from lon_012 (The Amwell Street Fig, Clerkenwell), extending that cluster.",
+    "location_precision": "approximate",
     "leads_resolved": "Quaker Garden plane trees (Bunhill Fields)"
   },
   {
@@ -84,15 +98,15 @@
       "longitude": -0.237089,
       "neighbourhood": "Hammersmith"
     },
+    "story": "Tree of heaven is the species councils spend money removing. This one has a plaque. The circular green plaque at its foot calls it one of the largest examples of the species in the country and one of the Great Trees of London, and the Tree Register's champion database carries it too, with at least one account calling it the tallest of its kind in Britain. Nobody gives it an age, and that absence is the interesting part. Ailanthus altissima arrived in Britain from China in the 18th century, spreads by seed and suckers, and is usually treated as short-lived, rarely making it much past fifty years. Something this size therefore breaks the pattern for its own species, and since no source anywhere offers a planting date, this entry gives no age rather than inventing one. It qualifies on size and status, not on years. One park, two Great Trees of London. The Ravenscourt Park Baobab Plane, with its swollen virus-knobbled trunk, stands about 150 metres away in the same park, which means Hammersmith now offers two Great Trees of London within a two minute walk of each other, near the sports area and the playground, five minutes from Ravenscourt Park station. The coordinates here come from the Great Trees map and are tree-level, so the pin lands on the trunk.",
     "verified_sources": [
       "https://en.wikipedia.org/wiki/Great_Trees_of_London",
       "https://londontreesblog.wordpress.com/2014/12/21/tree-of-heaven/"
     ],
     "access": "Free, open public park",
     "transport": "5 min walk from Ravenscourt Park station (District Line)",
-    "location_precision": "confirmed",
     "curation_status": "flagged",
-    "verify_notes": "Existence, species and its 'largest of its kind' status confirmed by two independent sources. Wikipedia's Great Trees of London table (sourced to Paul Wood's Great Trees of London Map, Blue Crow Media 2020) lists it at tree-level coordinates 51.496330,-0.237089, describing it as 'one of the largest trees of heaven in Britain'. Independently, londontreesblog.wordpress.com describes the on-site circular green plaque itself, which reads 'one of the largest examples of this tree species in the country and one of the Great Trees of London'; a third source, graftingardeners.co.uk, calls it 'the tallest tree of its kind in the country' and says it appears in the Royal Forestry Society/Tree Register's Champion Tree database. No source anywhere gives a planting date or age estimate, only size superlatives, and the species is normally short-lived (londontreesblog cites 'rarely lives more than 50 years'), which makes any age guess unsafe. Never fabricate: age_estimate is left undocumented rather than guessed; the entry qualifies on the visually-spectacular / historically-significant test instead of age. This is genuinely a cheap cluster addition: the coordinate sits about 150m from the already-published lon_018 (The Ravenscourt Park Baobab Plane, 51.4967/-0.2386, also a Great Trees of London entry in the same park), so this pass effectively doubles Ravenscourt Park's collectible point without any new travel for a visitor.",
+    "location_precision": "confirmed",
     "leads_resolved": "Ravenscourt Park Tree of Heaven"
   }
 ]

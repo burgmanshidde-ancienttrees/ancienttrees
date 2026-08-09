@@ -5,7 +5,7 @@
   "intro": "No European capital does ancient trees quite like London. Its oldest oaks survive largely thanks to royal appetite: kings walled off huge hunting parks for their deer, and the trees inside were left to grow old while the countryside around them was cleared. The city even gave its name to the London plane, the soot-proof hybrid that lines its streets. These fifteen range from a churchyard yew older than Londinium itself to a plane tree once valued at three quarters of a million pounds, and all but one are free to visit.",
   "meta_description": "London's ancient trees hide in royal parks and churchyards. Start with the Totteridge Yew, alive since before the Romans built Londinium.",
   "question_answer": "The oldest tree in London is the Totteridge Yew, a European yew in St Andrew's churchyard in Totteridge, North London, estimated at between 1,000 and 2,000 years old. It is the oldest living thing in the city, and it stands a 15 minute walk from Totteridge and Whetstone station on the Northern Line.",
-  "question_meta": "The Totteridge Yew, up to 2,000 years old, is London's oldest tree. Where it stands, how to reach it, and the full ten of the city's ancient trees.",
+  "question_meta": "The Totteridge Yew, up to 2,000 years old, is London's oldest tree. Where it stands, how to reach it, and twenty-two more of the city's ancient trees.",
   "question_context": "Ring counting does not work on ancient yews because their heartwood rots away, so estimates for the Totteridge Yew run from 1,000 to 2,000 years. Even the cautious low end makes it older than any building in London, and the high end means it was already a substantial tree when the Romans founded Londinium. It stands in the churchyard of St Andrew's in Totteridge, a village long since swallowed by North London, and the 13th century church beside it is the newcomer on the plot: the tree predates it by centuries at minimum. The district's Hundred Court once met in its shade, which tells you how long it has been the local landmark. London's runners-up are oaks rather than yews: Richmond Park and Greenwich Park hold hollow pollards in the 700 to 900 year range, survivors of the royal hunting grounds. But for sheer age, nothing in the capital touches the yew. Getting there is simple: Totteridge and Whetstone station on the Northern Line, then a 15 minute walk through the old village.",
   "faq": [
     {
@@ -628,6 +628,136 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate"
+    },
+    {
+      "id": "lon_020",
+      "name": "The Inner Temple Mulberry",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Benchers' Walk, Inner Temple Garden, by the railings outside Paper Buildings, City of London EC4Y",
+        "latitude": 51.5112,
+        "longitude": -0.1086,
+        "neighbourhood": "Temple, City of London"
+      },
+      "story": "The Inner Temple's garden opens to the public for two and a half hours on weekday afternoons, and this tree is a fair reason to time the visit. A black mulberry stands by the railings of Benchers' Walk, outside Paper Buildings, its trunk about a metre and a half around and ten metres of crown above it. The Inner Temple's own history of the garden names it as one of the survivors of an old orchard, alongside a large-fruiting walnut and a quince, which is the institution itself calling this inherited planting rather than decoration. What no source will say is how old it is. There is no planting date anywhere, and black mulberries are among the hardest trees to age: they rot hollow early, lean until they need propping, and root wherever a low branch touches soil, so the trunk stops being a record of anything. This entry carries no age for that reason rather than a guess. The ground is famous for a scene that never happened here. Shakespeare set the plucking of the red and white roses, and with it the start of the Wars of the Roses, in the Temple garden; the tree is centuries younger than the fiction. Two hundred and fifty metres across the lane, Middle Temple's mulberries at Fountain Court at least have a disputed planting date to argue over. This one does not even have that.",
+      "best_time": {
+        "months": [
+          8
+        ],
+        "kind": "fruit",
+        "label": "August, when the mulberries ripen and stain whatever is underneath them"
+      },
+      "verified_sources": [
+        "https://www.moruslondinium.org/map/inner-temple-garden",
+        "https://www.innertemple.org.uk/estate-garden/the-inner-temple-garden/the-garden/history-of-the-garden/"
+      ],
+      "access": "Public, open weekdays 12:30pm-3:00pm only (not full daily access)",
+      "transport": "Temple station, 4 minute walk",
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lon_021",
+      "name": "The Finsbury Circus Pagoda Tree",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 180,
+      "age_max": 220,
+      "location": {
+        "address": "Finsbury Circus Gardens, City of London EC2M",
+        "latitude": 51.5179,
+        "longitude": -0.0864,
+        "neighbourhood": "City of London"
+      },
+      "story": "This is the only Japanese pagoda tree in the City of London, on the City of London's own account of its gardens, and a City business paper's tour of Finsbury Circus says the same. The species comes from China and flowers cream in August, when almost nothing else does, which is a useful habit in a garden ringed by offices where lunch happens outdoors. Both sources tie the tree to the garden's original 1815 layout by George Dance the Younger, and neither produces a planting record, so the age here is circumstantial: roughly two centuries, inferred from the design rather than read off a document. Treat it as a range rather than a birthday. It has come through the most disruptive stretch of its life. Finsbury Circus lost most of its surface to Crossrail works for over a decade, then closed in 2023 for the first full renovation of the gardens in more than a hundred years and reopened in May 2025. The gardens are small, 2.2 hectares, so finding it takes a minute. Half a kilometre south, the Cheapside Plane is the only Great Tree of London still standing inside the Square Mile, and Kew's Old Lions include pagoda trees of roughly the same generation in a botanical collection. This one has spent its two hundred years in the middle of the banking district instead.",
+      "best_time": {
+        "months": [
+          8
+        ],
+        "kind": "flowers",
+        "label": "August, when it flowers cream-white and almost nothing else in London does"
+      },
+      "verified_sources": [
+        "https://www.cityoflondon.gov.uk/things-to-do/city-gardens/find-a-garden/finsbury-circus-gardens",
+        "https://www.cityam.com/inside-finsbury-circus-gardens-the-citys-biggest-green-space/"
+      ],
+      "access": "Free, public garden, standard park hours",
+      "transport": "Moorgate station, 3 minute walk; Liverpool Street station, 6 minute walk",
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lon_022",
+      "name": "The Quaker Garden Planes",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 145 years",
+      "age_min": 140,
+      "age_max": 150,
+      "location": {
+        "address": "Quaker Gardens, between Banner Street and Chequer Street, Islington EC1Y",
+        "latitude": 51.5265,
+        "longitude": -0.0912,
+        "neighbourhood": "Bunhill, Islington"
+      },
+      "story": "George Fox, who founded the Quakers, was buried on this ground in 1691, and the plane trees standing over it are nowhere near old enough to have seen it. The burial ground took Quaker dead from 1661 until 1855, and the space became a public recreation ground in 1965, laid out inside the Banner Street estate with the trees left in place. Their age is genuinely disputed. Bunhill Fields Quaker Meeting's own account of the garden says the mature London planes here were planted about 1880, which makes them roughly 145 years old. A local record drawing on the London Gardens Trust inventory describes three notable planes, two of which may date from the 18th century, which would make them a century older and among the oldest planes in London. The two claims have not been reconciled, and this page follows the Meeting's own figure because it is the institution's own history, while saying plainly that the bigger claim is out there. It is worth not confusing this with the celebrated burial ground next door. Bunhill Fields holds Blake, Defoe and Bunyan and gets the visitors; the Quaker ground is a separate, quieter square of grass and trees between Banner Street and Chequer Street, six minutes from Old Street. The Amwell Street Fig is about 1.4 kilometres west if you want to make an afternoon of it.",
+      "verified_sources": [
+        "https://bunhillquakers.org.uk/garden/",
+        "https://squaremilehealthwalks.wordpress.com/2017/07/18/quaker-gardens/"
+      ],
+      "access": "Free, public recreation ground (laid out 1965 within the GLC Banner Street estate), entered from Banner Street or Chequer Street",
+      "transport": "Old Street station, 6 minute walk",
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lon_023",
+      "name": "The Ravenscourt Park Tree of Heaven",
+      "species": "Tree of Heaven (Ailanthus altissima)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Near the sports area and children's playground, Ravenscourt Park, Hammersmith W6",
+        "latitude": 51.49633,
+        "longitude": -0.237089,
+        "neighbourhood": "Hammersmith"
+      },
+      "story": "Tree of heaven is the species councils spend money removing. This one has a plaque. The circular green plaque at its foot calls it one of the largest examples of the species in the country and one of the Great Trees of London, and the Tree Register's champion database carries it too, with at least one account calling it the tallest of its kind in Britain. Nobody gives it an age, and that absence is the interesting part. Ailanthus altissima arrived in Britain from China in the 18th century, spreads by seed and suckers, and is usually treated as short-lived, rarely making it much past fifty years. Something this size therefore breaks the pattern for its own species, and since no source anywhere offers a planting date, this entry gives no age rather than inventing one. It qualifies on size and status, not on years. It is also the cheapest addition to a walk on this whole list. The Ravenscourt Park Baobab Plane, with its swollen virus-knobbled trunk, stands about 150 metres away in the same park, which means Hammersmith now offers two Great Trees of London within a two minute walk of each other, near the sports area and the playground, five minutes from Ravenscourt Park station. The coordinates here come from the Great Trees map and are tree-level, so the pin lands on the trunk.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+        "https://londontreesblog.wordpress.com/2014/12/21/tree-of-heaven/"
+      ],
+      "access": "Free, open public park",
+      "transport": "5 min walk from Ravenscourt Park station (District Line)",
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

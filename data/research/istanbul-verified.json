@@ -12,21 +12,26 @@
       "longitude": 28.979474,
       "neighbourhood": "Gülhane Park, Cankurtaran, Fatih"
     },
+    "story": "A London plane cannot be much older than about 350 years, because the hybrid did not exist before roughly 1670. This one, at about 285, comfortably fits, which is not true of every tree the Turkish registry files under that name. Two of Istanbul's own registered giants carry the same label at ages that would make the hybrid older than itself; here the arithmetic works, and the identification is plausible rather than proven. Turkey's national monumental tree registry records it at 33 metres tall with a trunk 170 centimetres across and an age of 277 years. Istanbul's metropolitan municipality publishes its own page for this exact tree, with identical measurements, saying it has stood in Gülhane Park since 1741. The two numbers add up to 2018, so both trace to one survey rather than two independent measurements. Two official bodies, one field visit, worth knowing. For most of its life nobody could walk past it. Gülhane was the outer garden of Topkapı Palace, court ground rather than public space, until it opened in 1912 as Istanbul's first public park. The tree was already 170 years old by then. It stands about 40 metres from a registered nettle tree of similar age, 350 metres from the Topkapı courtyard plane and 550 metres from the Taşlı Çınar, which makes this the tightest cluster on Istanbul's list.",
     "verified_sources": [
       "https://services5.arcgis.com/26ObnytmBZ58Wbj8/arcgis/rest/services/turkiye_anit_agaclari/FeatureServer/0/query?where=OBJECTID=398&outFields=*&f=json (Turkiye Anit Agaclari national monumental-tree registry, OBJECTID 398)",
       "https://www.konusanagac.com/ozel-agac/83/londra-cinari-gulhane-parki-platanus-acerifolia.html (Istanbul Metropolitan Municipality Parks, Gardens and Green Areas Dept., 'Konusan Agaclar' individually-named-tree project)"
     ],
     "access": "Free, inside Gulhane Park (open daily, standard park hours, no ticket)",
     "transport": "Gulhane tram stop (T1 line) at the park's Sarayburnu-side gate, immediate walk",
-    "location_precision": "confirmed",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
     "curation_status": "flagged",
-    "verify_notes": "Two official sources agree closely: the national ArcGIS registry (turkiye_anit_agaclari, OBJECTID 398) records height 33m, trunk diameter 170cm, age 277 years; IBB's own Konusan Agaclar municipal project publishes a dedicated page for this exact tree with the identical 33m/170cm figures and states it has stood in Gulhane Park 'since 1741'. 1741 + 277 = 2018, so both figures trace to the same circa-2018 survey rather than being fully independent re-measurements; still two separately published official sources (national registry + Istanbul Metropolitan Municipality) agreeing on species, size and location, which is stronger than either alone. Adding roughly 8 years since that survey gives ~285 today. Flagged rather than clean-confirmed only because I could not find a fully independent (non-shared-survey) third source in this pass. Species caution: the registry's Turkish-name-to-Latin pairing 'Londra Cinari/Platanus acerifolia' has been shown elsewhere in this city's own data (ist_001, ist_002) to be misapplied to Oriental Planes far too old to be the London Plane hybrid (which only originated c.1670, capping a real specimen near 350 years). This tree's age of roughly 285 years is well within that cap, so the London Plane identification is plausible here, unlike those older cases; not proven by a photo or independent botanical ID, so keep flagged. Part of a genuine walkable cluster: sits about 550m from the already-published Taslı Cinar (ist_004) and about 350m from the Topkapi Palace Courtyard Plane (ist_011), all inside Gulhane Park/Topkapi grounds.",
-    "photo": {"url": null, "license": null, "attribution": null, "status": "missing"}
+    "location_precision": "confirmed"
   },
   {
     "id": "ist_013",
     "name": "The Gülhane Nettle Tree",
-    "species": "European Nettle Tree (Celtis australis)",
+    "species": "Mediterranean Hackberry (Celtis australis)",
     "age_estimate": "roughly 265 years",
     "age_min": 250,
     "age_max": 280,
@@ -36,16 +41,21 @@
       "longitude": 28.979952,
       "neighbourhood": "Gülhane Park, Cankurtaran, Fatih"
     },
+    "story": "Istanbul protects this tree by name, which is unusual for a species most cities treat as background. The Mediterranean hackberry, çitlembik in Turkish, normally gets planted for shade and forgotten. This one is 23 metres tall with a trunk 145 centimetres across, and it holds a place on Turkey's national monumental tree registry at an age of 259 years, with the city's own municipal tree project publishing a page for it saying it has stood in Gülhane Park since 1759. Those two figures resolve to the same year, 2018, so the national register and the city are reporting one survey between them rather than two separate measurements. That is worth stating. What makes the number credible anyway is the species: Celtis australis is a tough, long-lived tree in Anatolian conditions, so 265 years is physically ordinary for it, which is more than can be said for some of the plane ages in the same register. It stands roughly 40 metres from the registered London plane in the same park, and the pair are the reason to come. Gülhane was Topkapı's outer palace garden and stayed closed to the public until 1912, so this tree spent its first century and a half inside a court garden and its last hundred years among people eating simit under it. The Topkapı courtyard plane is 300 metres away.",
     "verified_sources": [
       "https://services5.arcgis.com/26ObnytmBZ58Wbj8/arcgis/rest/services/turkiye_anit_agaclari/FeatureServer/0/query?where=OBJECTID=400&outFields=*&f=json (Turkiye Anit Agaclari national monumental-tree registry, OBJECTID 400)",
       "https://www.konusanagac.com/ozel-agac/81/citlenbik-gulhane-parki-celtis-australis.html (Istanbul Metropolitan Municipality Parks, Gardens and Green Areas Dept., 'Konusan Agaclar' individually-named-tree project)"
     ],
     "access": "Free, inside Gulhane Park (open daily, standard park hours, no ticket)",
     "transport": "Gulhane tram stop (T1 line) at the park's Sarayburnu-side gate, short walk within the park",
-    "location_precision": "confirmed",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
     "curation_status": "flagged",
-    "verify_notes": "Same corroboration pattern as ist_012, about 40m away in the same park: the national registry (OBJECTID 400) records height 23m, trunk diameter 145cm, age 259 years; IBB's Konusan Agaclar project publishes a dedicated page for this specific tree with matching 23m/145cm figures and says it has stood in Gulhane Park 'since 1759'. 1759 + 259 = 2018, again pointing to a shared circa-2018 survey rather than two fully independent field measurements, so flagged for that reason even though the two sources do not conflict. Adding roughly 8 years gives ~265-267 today. Celtis australis (nettle/hackberry) is a genuinely long-lived, sturdy species in Mediterranean/Anatolian settings, so an age in the 250-300 year range is physically plausible, unlike some of the registry's plane-tree age claims elsewhere. Third of the walkable Gulhane cluster: roughly 40m from ist_012 (Gulhane London Plane), about 500m from the Taslı Cinar (ist_004), about 300m from the Topkapi Palace Courtyard Plane (ist_011).",
-    "photo": {"url": null, "license": null, "attribution": null, "status": "missing"}
+    "location_precision": "confirmed"
   },
   {
     "id": "ist_014",
@@ -60,15 +70,20 @@
       "longitude": 28.984917,
       "neighbourhood": "Topkapı Palace, Cankurtaran, Fatih"
     },
+    "story": "For a yew, three centuries is early middle age. This one, in the Fourth Courtyard of Topkapı Palace, is registered at 314 years, 13 metres tall with a trunk 103 centimetres across and a crown 12 metres wide, which by the standards of a species that can run to millennia makes it a young adult with a long career ahead. The government record has quirks worth naming. Two views of the same database give the age as 314 and 310, a four-year drift, and one of them files the tree under a district hundreds of kilometres away in Ankara province while its own description talks about Topkapı, which is a clerical slip rather than a doubt about where the tree is. Separately, an independent field survey measured three yews in this courtyard, two of them 3.26 and 3.09 metres around, and photographed them in December 2014. That is the freshest direct evidence of them standing that this entry rests on, and it is now twelve years old. Unlike the other trees on this list, it costs money. The Fourth Courtyard was the sultan's private terrace garden, above the Golden Horn beside the Baghdad Kiosk that Murad IV built in 1639, and reaching it needs a Topkapı Palace museum ticket. The free trees of Gülhane Park are 550 metres downhill.",
     "verified_sources": [
       "https://services5.arcgis.com/26ObnytmBZ58Wbj8/arcgis/rest/services/turkiye_anit_agaclari/FeatureServer/0/query?where=OBJECTID=141&outFields=*&f=json (Turkiye Anit Agaclari national monumental-tree registry, OBJECTID 141: Porsuk/Taxus baccata, 314 yrs, govde_capi 103cm, boy 13m, tepe_capi 12m)",
       "https://www.monumentaltrees.com/en/tur/marmararegion/istanbul/2138_topkapipalace/ (independent crowdsourced database; lists exactly 3 European Yew (Taxus baccata) specimens individually measured in Topkapi Palace's 4th courtyard, girths 3.26m and 3.09m at 1.30m plus one unmeasured, photos dated 6 December 2014)"
     ],
     "access": "Paid entry (Topkapi Palace Museum ticket covers the inner courtyards, including the 4th courtyard/Tulip Garden area)",
     "transport": "Gulhane tram stop (T1 line), then roughly 10-15 minute walk through the palace grounds to the 4th courtyard",
-    "location_precision": "confirmed",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    },
     "curation_status": "flagged",
-    "verify_notes": "Species and general location (Topkapi Palace's 4th courtyard) are corroborated by two genuinely separate sources: Turkiye's national monumental-tree registry (OBJECTID 141, individually surveyed coordinates, age 314 years, trunk diameter 103cm, crown 12m, height 13m) and monumentaltrees.com's independent field survey, which lists exactly 3 European Yew specimens in that same courtyard with their own girth measurements (3.26m and 3.09m circumference at breast height, matching a trunk in the 100+cm-diameter range) and dated photos from December 2014, confirming they were alive and standing then. The registry's own detail page (anitagaclar.gov.tr/detail/porsuk--taxus-baccata/112, same underlying government database as the ArcGIS layer so not counted as a second independent source) repeats the same trunk/crown/height figures almost exactly but gives age as 310 rather than 314, a minor internal drift between two views of the same record, and lists the district as 'GOLBASI' rather than Fatih, which is a clear data-entry error since its own descriptive text is explicitly about Topkapi Sarayi; flagging this as a register data-quality issue worth knowing about rather than a location problem, since the coordinates and the prose both independently point at Topkapi. Picked the oldest (314yr) of the three registered yews in this courtyard as the entry; the other two (OBJECTIDs 403, 404) are close by and go to leads rather than being folded in, since they read as separate individual specimens rather than one visitor-facing point. Not clean-confirmed because the most recent direct alive-evidence found this pass (monumentaltrees photos) dates to 2014, about 12 years old; no fresher sighting found in this pass. Fourth stop in the Topkapi/Gulhane cluster: about 550m from ist_012/ist_013 in Gulhane Park, inside the same palace grounds as the already-published Topkapi Palace Courtyard Plane (ist_011).",
-    "photo": {"url": null, "license": null, "attribution": null, "status": "missing"}
+    "location_precision": "confirmed"
   }
 ]
