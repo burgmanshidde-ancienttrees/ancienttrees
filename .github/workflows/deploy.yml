@@ -17,12 +17,29 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ASTRO_TELEMETRY_DISABLED: "1"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+
+      # working-directory matters beyond convention: data-dir.ts resolves
+      # ../data from process.cwd(), so astro build must run with site/ as
+      # cwd or every content-collection read breaks.
       - name: Build site
-        run: python3 scripts/build_site.py
+        working-directory: site
+        run: npx astro build
 
       - name: QA the built site
         run: python3 scripts/qa.py

@@ -7,11 +7,13 @@ import sitemap from "./src/lib/sitemap-integration.ts";
 export default defineConfig({
   site: "https://ancienttrees.app",
   output: "static",
-  // Separate from Python's site/dist (scripts/build_site.py's DIST) during
-  // the parallel-run migration period, per ARCHITECTURE.md's rollout plan:
-  // the two generators must never write the same directory, or one silently
-  // clobbers the other's output, as happened once while testing this.
-  outDir: "./dist-astro",
+  // Cut over per ARCHITECTURE.md's rollout plan step 5: this now writes the
+  // same directory Python's build_site.py used to (scripts/build_site.py's
+  // DIST), since deploy.yml/smoke.yml/review.yml all read site/dist as the
+  // real, deployed artifact. During the parallel-run migration period this
+  // pointed at ./dist-astro instead, so the two generators' outputs could be
+  // diffed side by side without one clobbering the other.
+  outDir: "./dist",
   // Astro's default (directory format) would emit london/index.html for the
   // city page and force a trailing-slash canonical; the current site is
   // file-format throughout (london.html), and GitHub Pages would 301 the

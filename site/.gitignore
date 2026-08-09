@@ -1,7 +1,5 @@
 # build output
 dist/
-# temporary parallel-run output during the Astro migration (ARCHITECTURE.md)
-dist-astro/
 # generated types
 .astro/
 
