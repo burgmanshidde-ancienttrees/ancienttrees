@@ -2,8 +2,8 @@
   "city": "Dublin",
   "country": "Ireland",
   "status": "needs_curation",
-  "intro": "Dublin's remarkable trees rarely come from grand planned woodland the way London's or Madrid's do. They arrive by accident and by institution instead: a bench a plane tree slowly ate, a sequoia a visiting queen planted as a courtesy, two Georgian college squares, a windbreak oak that grew several trunks instead of one, and a scattering of Guinness family estates now open to everyone. Ten of these eleven cost nothing to visit, though one keeps its gate locked for all but ten weeks a year.",
-  "meta_description": "Dublin's ancient trees range from a plane eating a park bench to a queen's own sequoia. Eleven verified locations, real stories, how to reach each one.",
+  "intro": "Dublin's remarkable trees rarely come from grand planned woodland the way London's or Madrid's do. They arrive by accident and by institution instead: a bench a plane tree slowly ate, a sequoia a visiting queen planted as a courtesy, two Georgian college squares, a windbreak oak that grew several trunks instead of one, a cluster of botanic garden specimens gathered from three continents, and a scattering of Guinness family estates now open to everyone. Sixteen of these seventeen cost nothing to visit, though one keeps its gate locked for all but ten weeks a year.",
+  "meta_description": "Dublin's ancient trees range from a plane eating a park bench to a queen's own sequoia. Seventeen verified locations, real stories, how to reach each one.",
   "question_answer": "Dublin's oldest tree is very likely Dean's Tree, a yew in the private garden of the Old Glebe in Newcastle, on the city's western edge, estimated at between 500 and 700 years old depending on which measure you trust. It only opens to the public for a few weeks each year, in May, June and mid-August, under Ireland's Section 482 scheme for historic properties.",
   "question_meta": "A 500-700 year old yew in a private garden, linked by legend to Jonathan Swift, is Dublin's oldest tree. When it opens to visitors, and the full eleven.",
   "question_context": "Ring counts are not possible without felling the tree, so estimates for the Old Glebe yew swing widely: a girth-based rule of thumb puts it past 500 years, while local tradition claims over 700. Either number makes it older than the house whose garden it now shares, built in 1710, and older than most of the city's other ancient trees. Jonathan Swift, Dean of St Patrick's Cathedral, is said to have sat beneath it while composing verse, though that pairing of an ancient tree and a famous writer is exactly the kind of story that attaches itself whether or not it happened, so treat it as folklore. The nearest challenger for oldest is a good deal younger: a pair of yews in the National Botanic Gardens, possibly planted in the 1730s to commemorate the essayist Joseph Addison, a claim the garden's own historians can't fully reconcile with its 1795 founding date. Getting there requires checking the calendar first. It is a private property that opens free to the public under Ireland's Section 482 tax relief scheme, specifically in May, all of June, and nine days in mid-August, 10am to 2pm. Turn up outside those windows and the gate stays shut.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Dublin's ancient trees free to visit?",
-      "a": "Nine of the eleven are free at any time. Áras an Uachtaráin's sequoia requires a free guided tour booked on the day, and the Old Glebe's yew only opens for a few weeks a year."
+      "a": "Fifteen of the seventeen are free at any time. Áras an Uachtaráin's sequoia requires a free guided tour booked on the day, and the Old Glebe's yew only opens for a few weeks a year."
     },
     {
       "q": "Why is there a tree eating a bench in Dublin?",
@@ -354,6 +354,183 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "No planting date or documented age in either source; the tree was already established enough by the 1970s to be counted among the elms lost in that die-off, which sets a floor (80 years) rather than a real figure. Roughly 250-350m from dub_005 (Provost's Plane) and dub_006 (New Square Champion Planes), inside Trinity's existing seed cluster."
+    },
+    {
+      "id": "dub_012",
+      "name": "The Glasnevin Atlas Cedar",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "age_estimate": "roughly 120-165 years",
+      "age_min": 117,
+      "age_max": 167,
+      "location": {
+        "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+        "latitude": 53.3731,
+        "longitude": -6.27295,
+        "neighbourhood": "Glasnevin"
+      },
+      "story": "The Atlas Mountains cedar growing in Glasnevin is safer here than at home. Cedrus atlantica is native to a narrow band of mountains in Morocco and Algeria, and the IUCN now lists the species as Endangered in the wild, squeezed by drought, logging and a warming climate its native range cannot easily outrun. This specimen in the National Botanic Gardens has none of those problems, recorded by the Tree Council of Ireland's 2009 heritage survey among the garden's Exceptional Specimen Trees, likely somewhere between 120 and 165 years old by now. No second source describes this individual tree, so treat the age as a register estimate rather than a measured fact, honest as far as it goes. What the survey does record is form: a maiden tree, grown straight from seed rather than grafted, its blue green needles held in dense, upswept clusters along near-horizontal branches, the shape that made this species and its blue foliage varieties a favourite of formal Victorian planting schemes across Europe. Somewhere on a mountainside a few thousand kilometres south, its wild relatives are losing ground season by season. This one, planted decades before anyone worried about that, just keeps growing. It stands close to the Botanic Gardens' yew avenue, Addison's Walk, on the same afternoon's walk.",
+      "verified_sources": [
+        "GBIF/National Biodiversity Data Centre, Heritage Trees of Ireland dataset (Aubrey Fennell field survey for the Tree Council of Ireland, CC BY 4.0), record_key 107, https://maps.biodiversityireland.ie/Dataset/27"
+      ],
+      "access": "Free, open daily except 25 December",
+      "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Part of a 6-tree National Botanic Gardens cluster around dub_004 (Addison's Walk), all within 200m of each other and the register's own Aubrey Fennell 2009 field survey (Heritage Trees of Ireland, GBIF, CC BY 4.0), designated 'Exceptional specimen trees'. Single source (register only); age band recorded at the 2009 survey (100-150 years) with roughly 17 years added and stated as a round range. Register coordinates converted from Irish Grid, checked accurate to within ~40m elsewhere in the dataset."
+    },
+    {
+      "id": "dub_013",
+      "name": "The Glasnevin Dawn Redwood",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "roughly 65-115 years",
+      "age_min": 67,
+      "age_max": 117,
+      "location": {
+        "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+        "latitude": 53.37401,
+        "longitude": -6.27276,
+        "neighbourhood": "Glasnevin"
+      },
+      "story": "Until 1941, botanists knew the dawn redwood only from fossils, certain a conifer that shed its needles every winter had gone extinct millions of years earlier. Then living trees turned up in a valley in Sichuan, China, and seed from the first Western collecting expeditions went out to major botanic gardens worldwide by the late 1940s, ending the species' presumed extinction in real time rather than in a museum case. Glasnevin's specimen sits in that plausible window: the Tree Council of Ireland's 2009 heritage survey puts it at 50 to 100 years old then, which works out to roughly 65 to 115 now, consistent with descent from that original wave of seed, though no source confirms this exact tree's planting date or lineage. Metasequoia glyptostroboides is deciduous, unlike almost every other conifer, its feathery needles turning a rusty bronze each autumn before dropping, a habit that startles visitors expecting a fir or a pine to stay green all winter. It is a single-source find, register only, an honest gap rather than a padded one. Find it in the National Botanic Gardens, a short walk from Addison's Walk's yew avenue and this cluster's other exceptional specimens, one of the closest things botany has to a resurrection story growing quietly in a Dublin garden bed.",
+      "verified_sources": [
+        "GBIF/National Biodiversity Data Centre, Heritage Trees of Ireland dataset (Aubrey Fennell field survey for the Tree Council of Ireland, CC BY 4.0), record_key 356, https://maps.biodiversityireland.ie/Dataset/27"
+      ],
+      "access": "Free, open daily except 25 December",
+      "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Part of the same Glasnevin cluster as dub_004/012, 115m from dub_004. Single source (register only); age band recorded at the 2009 survey (50-100 years) with roughly 17 years added. Same coordinate-conversion caveat as the rest of the cluster."
+    },
+    {
+      "id": "dub_014",
+      "name": "The Glasnevin Caucasian Elm",
+      "species": "Caucasian Elm (Zelkova carpinifolia)",
+      "age_estimate": "roughly 165-215 years",
+      "age_min": 167,
+      "age_max": 217,
+      "location": {
+        "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+        "latitude": 53.3714,
+        "longitude": -6.27107,
+        "neighbourhood": "Glasnevin"
+      },
+      "story": "A nurseryman in County Offaly once took cuttings from this exact tree and started selling clones of it. Zelkova carpinifolia 'Glasnevin' is a named cultivar, propagated by Jan Ravensberg from material taken off this specific specimen in the National Botanic Gardens, one of the more unusual honours a single tree in Dublin has received: not just admired, but copied and put into commercial circulation under its own place name. The species itself, the Caucasian elm, comes from the mountains between the Black Sea and the Caspian, and grows into a distinctive multi-stemmed, upright vase shape rather than the single trunk most elms produce, its bark smooth grey brown until age begins to plate it. Unlike Ireland's native elms, decimated by Dutch elm disease through the twentieth century, Zelkova carpinifolia carries strong natural resistance to the fungus, part of why old specimens like this one still stand where true elms mostly do not. The Tree Council of Ireland's 2009 heritage survey puts it at 150 to 200 years old then, roughly 165 to 215 now, the oldest of the garden's newly catalogued specimens, though no source gives a firm planting date. Autumn turns it a rich copper before the leaves drop. It stands 200 metres from Addison's Walk, well within the same visit.",
+      "verified_sources": [
+        "GBIF/National Biodiversity Data Centre, Heritage Trees of Ireland dataset (Aubrey Fennell field survey for the Tree Council of Ireland, CC BY 4.0), record_key 730, https://maps.biodiversityireland.ie/Dataset/27",
+        "https://www.treesandshrubsonline.org/articles/zelkova/zelkova-carpinifolia/"
+      ],
+      "access": "Free, open daily except 25 December",
+      "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Two sources: the register, and Trees and Shrubs Online (International Dendrology Society), which independently confirms a Zelkova carpinifolia 'Glasnevin' cultivar was named after and propagated from this exact tree. Age is register-only (no second source dates it), so flagged. 200m from dub_004."
+    },
+    {
+      "id": "dub_015",
+      "name": "The Glasnevin Swamp Cypress",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "roughly 120-165 years",
+      "age_min": 117,
+      "age_max": 167,
+      "location": {
+        "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+        "latitude": 53.3743,
+        "longitude": -6.27275,
+        "neighbourhood": "Glasnevin"
+      },
+      "story": "A tree built for Louisiana swampland grows in a Dublin botanic garden, and it still remembers where it came from. Taxodium distichum, the swamp or bald cypress, is native to the flooded river bottoms of the southeastern United States, and where its roots sit in standing water it grows knobby woody projections called pneumatophores, or knees, that rise above the waterline, thought to help the tree breathe in waterlogged ground. Whether this particular Glasnevin specimen stands wet enough to show them is not confirmed by any source found, an honest gap rather than an invented detail. What the Tree Council of Ireland's 2009 heritage survey does confirm is the tree itself: one of the garden's Exceptional Specimen Trees, in the 100 to 150 year age band then, roughly 120 to 165 now. Like the dawn redwood elsewhere in this same cluster, it is a conifer that behaves like a deciduous tree, dropping its feathery needles each winter rather than holding them evergreen, a trait that confuses visitors twice in the same afternoon if they walk both trees back to back. No second source names this specific tree, so the age stands as a register estimate rather than a settled fact. It shares this corner of the National Botanic Gardens with the Atlas Cedar and Addison's Walk, all reachable on the same short walk.",
+      "verified_sources": [
+        "GBIF/National Biodiversity Data Centre, Heritage Trees of Ireland dataset (Aubrey Fennell field survey for the Tree Council of Ireland, CC BY 4.0), record_key 577, https://maps.biodiversityireland.ie/Dataset/27"
+      ],
+      "access": "Free, open daily except 25 December",
+      "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Part of the same Glasnevin cluster, 146m from dub_004. Single source (register only); age band recorded at the 2009 survey (100-150 years) with roughly 17 years added."
+    },
+    {
+      "id": "dub_016",
+      "name": "Ireland's Largest Tree of Heaven",
+      "species": "Tree of Heaven (Ailanthus altissima)",
+      "age_estimate": "disputed: register says 120-165 years, species norms suggest closer to 70-100",
+      "age_min": 70,
+      "age_max": 167,
+      "location": {
+        "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+        "latitude": 53.37229,
+        "longitude": -6.26984,
+        "neighbourhood": "Glasnevin"
+      },
+      "story": "The largest Ailanthus altissima in Ireland stands framed between two Victorian glasshouses in Dublin, and nobody agrees on how old it actually is. Trees and Shrubs Online, the standard international dendrology reference, records it plainly as the country's largest specimen of the species, 17 metres tall with a trunk over a metre thick, shaped well enough that one garden writer has called it among the most elegant of its kind anywhere in Ireland or Britain. The disagreement is about age. The Tree Council of Ireland's 2009 heritage survey bands it at 100 to 150 years, which would put it past 160 now, but Ailanthus altissima is naturally short lived and fast growing, a species where seventy years already counts as a good age in the wild. Both figures are given here rather than one being quietly dropped: either a sheltered, cared-for botanic garden specimen has simply outlived what the species usually manages on a roadside or waste ground, which is plausible, or the register's band runs generous. What is not disputed is the position, framing the view toward the Palm House and Curvilinear Range, the garden's twin 19th century glasshouses, and the species itself, native to China, notorious elsewhere as an aggressive street weed but planted here deliberately, long before anyone thought of it that way.",
+      "verified_sources": [
+        "GBIF/National Biodiversity Data Centre, Heritage Trees of Ireland dataset (Aubrey Fennell field survey for the Tree Council of Ireland, CC BY 4.0), record_key 58, https://maps.biodiversityireland.ie/Dataset/27",
+        "https://www.treesandshrubsonline.org/articles/ailanthus/ailanthus-altissima/"
+      ],
+      "access": "Free, open daily except 25 December",
+      "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Two sources agree on existence, species and superlative (largest Ailanthus in Ireland, per Trees and Shrubs Online, an independent dendrology reference, so the claim per hard rule 8 is theirs, not ours); age genuinely disputed between the register's 2009 band (100-150 years, +17 now) and general species lore that Ailanthus rarely reaches old age. Both figures stated rather than one silently picked, per Step 2's conflict rule. 179m from dub_004."
+    },
+    {
+      "id": "dub_017",
+      "name": "The Glasnevin Hybrid Strawberry Tree",
+      "species": "Hybrid Strawberry Tree (Arbutus x andrachnoides)",
+      "age_estimate": "roughly 120-165 years",
+      "age_min": 117,
+      "age_max": 167,
+      "location": {
+        "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+        "latitude": 53.37245,
+        "longitude": -6.27075,
+        "neighbourhood": "Glasnevin"
+      },
+      "story": "Peel back the bark on this tree and you find a second colour underneath. Arbutus x andrachnoides is a naturally occurring hybrid from the Mediterranean, a cross between the familiar strawberry tree and the smooth-barked Greek and Cypriot Arbutus andrachne, and it inherits the more dramatic parent's habit: chestnut brown outer bark that peels away in curling strips to reveal a glossy, copper red layer beneath, a colour show that has nothing to do with flowers or leaves. The Tree Council of Ireland's 2009 heritage survey lists a specimen of this hybrid among the National Botanic Gardens' Exceptional Specimen Trees, aged 100 to 150 years then, roughly 120 to 165 now. A dendrology reference, Trees and Shrubs Online, independently photographed a specimen of the same species at Glasnevin in 2017, evidence the hybrid grows and was recently alive in these gardens, though it cannot be fully confirmed that the photographed tree and the register's tree are one and the same rather than two separate plantings nearby. Treat the connection as likely, not certain. Either way, this is the weaker-evidenced tree in this corner of the gardens, worth visiting for the bark alone: run a hand along the trunk in late summer, after the old layer has started to curl, and the colour underneath is the reason to stop.",
+      "verified_sources": [
+        "GBIF/National Biodiversity Data Centre, Heritage Trees of Ireland dataset (Aubrey Fennell field survey for the Tree Council of Ireland, CC BY 4.0), record_key 74, https://maps.biodiversityireland.ie/Dataset/27",
+        "https://www.treesandshrubsonline.org/articles/arbutus/arbutus-x-andrachnoides/"
+      ],
+      "access": "Free, open daily except 25 December",
+      "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Two sources, weaker corroboration than the rest of the cluster: the register, and a Trees and Shrubs Online photo captioned 'Glasnevin, Dublin, October 2017' for the same species, likely but not certainly the same individual tree. 117m from dub_004. Do not confuse with Arbutus unedo 'Quercifolia', a different Glasnevin specimen with its own separately-sourced measurement."
     }
   ]
 }

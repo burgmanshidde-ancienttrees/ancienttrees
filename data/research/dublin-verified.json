@@ -1,0 +1,137 @@
+[
+  {
+    "id": "dub_012",
+    "name": "The Glasnevin Atlas Cedar",
+    "species": "Atlas Cedar (Cedrus atlantica)",
+    "age_estimate": "roughly 120-165 years",
+    "age_min": 117,
+    "age_max": 167,
+    "location": {
+      "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+      "latitude": 53.3731,
+      "longitude": -6.27295,
+      "neighbourhood": "Glasnevin"
+    },
+    "verified_sources": [
+      "GBIF/National Biodiversity Data Centre, Heritage Trees of Ireland dataset (Aubrey Fennell field survey for the Tree Council of Ireland, CC BY 4.0), record_key 107, https://maps.biodiversityireland.ie/Dataset/27"
+    ],
+    "access": "Free, open daily except 25 December",
+    "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Part of the same 6-tree National Botanic Gardens 'Exceptional specimen trees' cluster as dub_004 (Addison's Walk yew), all within 200m of each other and roughly 48m from dub_004 itself. Designated 'Exceptional specimen trees' category, tree form 'Maiden' (a single-stemmed tree grown from seed, not coppiced or grafted onto a different form), condition not recorded. Age band at the 25/10/2009 survey date was 100-150 years; roughly 17 years have passed since, giving 117-167 years now, stated here as a round range. Atlas Cedar (native to the Atlas Mountains of Morocco/Algeria) is IUCN-listed Endangered in the wild due to climate change and logging pressure, which the story could use: a garden specimen like this now represents a species under real threat at home. I could not find a second, independent source (Trees and Shrubs Online's Cedrus atlantica article, general web search, Tree Register of Ireland search) naming or describing this specific Glasnevin specimen; the article only confirms Ireland/UK grow tall examples of the Glauca group generally, with no Glasnevin-specific record. SINGLE SOURCE (the register) for existence, species and age: flagged per Step 2. iNaturalist/Commons geosearch not completed for this specific tree in the time available this pass; worth a photo-hunt pass checking iNaturalist observations near 53.3731,-6.27295. Register coordinates for this whole dataset are converted from Irish Grid via an unverified-datum transform, independently checked accurate to within 40m against three known points elsewhere in the dataset (per data/registers/ireland-heritage-trees.json's own caveat) -- treat the pin as good but not survey-grade."
+  },
+  {
+    "id": "dub_013",
+    "name": "The Glasnevin Dawn Redwood",
+    "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+    "age_estimate": "roughly 65-115 years",
+    "age_min": 67,
+    "age_max": 117,
+    "location": {
+      "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+      "latitude": 53.37401,
+      "longitude": -6.27276,
+      "neighbourhood": "Glasnevin"
+    },
+    "verified_sources": [
+      "GBIF/National Biodiversity Data Centre, Heritage Trees of Ireland dataset (Aubrey Fennell field survey for the Tree Council of Ireland, CC BY 4.0), record_key 356, https://maps.biodiversityireland.ie/Dataset/27"
+    ],
+    "access": "Free, open daily except 25 December",
+    "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Part of the same National Botanic Gardens 'Exceptional specimen trees' cluster as dub_004, 115m away. Designated category 'Exceptional specimen trees', tree form 'Maiden'. Age band at the 2009 survey was 50-100 years, so a 2009 planting-implied date of roughly 1909-1959; add ~17 years to get 67-117 now. Genuinely remarkable species angle for the story: Metasequoia glyptostroboides was known only from fossils until a living population was found in Sichuan, China in 1941, making it a 'living fossil' and one of the great botanical rediscovery stories of the 20th century; seed from the original Chinese collecting expeditions was distributed to major botanic gardens worldwide from the late 1940s, so a specimen in this age band at Glasnevin is plausibly grown from that first wave of seed, though I found no source confirming Glasnevin's specific planting date or seed lot. It is a deciduous conifer (loses its needles in winter, unusual and visually striking). I found no second, independent source naming or describing this specific Glasnevin tree: general searches turned up Trinity College Dublin's own (different, smaller, campus) Dawn Redwood and Headfort's champion specimen, neither of which is this tree. SINGLE SOURCE (the register) for existence, species and age: flagged per Step 2, worth a targeted iNaturalist/Commons photo search next pass. Same coordinate-conversion caveat as the rest of this cluster: register pin checked accurate to within ~40m elsewhere in the dataset, treat as good but not survey-grade."
+  },
+  {
+    "id": "dub_014",
+    "name": "The Glasnevin Caucasian Elm",
+    "species": "Caucasian Elm (Zelkova carpinifolia)",
+    "age_estimate": "roughly 165-215 years",
+    "age_min": 167,
+    "age_max": 217,
+    "location": {
+      "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+      "latitude": 53.3714,
+      "longitude": -6.27107,
+      "neighbourhood": "Glasnevin"
+    },
+    "verified_sources": [
+      "GBIF/National Biodiversity Data Centre, Heritage Trees of Ireland dataset (Aubrey Fennell field survey for the Tree Council of Ireland, CC BY 4.0), record_key 730, https://maps.biodiversityireland.ie/Dataset/27",
+      "Trees and Shrubs Online (International Dendrology Society), Zelkova carpinifolia article, https://www.treesandshrubsonline.org/articles/zelkova/zelkova-carpinifolia/"
+    ],
+    "access": "Free, open daily except 25 December",
+    "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "The strongest second source in this batch. Trees and Shrubs Online (the standard dendrology reference, run by the International Dendrology Society) records that a cultivar was named Zelkova carpinifolia 'Glasnevin' after a specific tree growing at the National Botanic Garden of Ireland, Glasnevin: nurseryman Jan Ravensberg of Co. Offaly propagated plants from cuttings taken off this exact tree. The source gives no description of the clone itself beyond the naming, and no planting date, but it independently confirms a specific, named, propagated-from Zelkova carpinifolia stands at Glasnevin, distinct from the general species being merely present in the collection. Register age band at the 2009 survey was 150-200 years (the oldest band of the six candidates in this cluster), giving roughly 167-217 years now; if the 'Glasnevin' cultivar naming happened some years before 2009 (unconfirmed date), the tree could be at the older end. Species notes for the story: Zelkova carpinifolia is the Caucasian elm, native to the Caucasus and northern Iran, valued for a distinctive multi-stemmed goblet/vase shape and rich copper autumn colour; unlike true elms it has strong resistance to Dutch elm disease, which is part of why old specimens like this survive where native elms have not. Flagged only because age is register-only (no second source gives a date or size); existence and species are corroborated by the two independent sources above. 200m from dub_004, well within the cluster's ~2km walk radius."
+  },
+  {
+    "id": "dub_015",
+    "name": "The Glasnevin Swamp Cypress",
+    "species": "Swamp Cypress (Taxodium distichum)",
+    "age_estimate": "roughly 120-165 years",
+    "age_min": 117,
+    "age_max": 167,
+    "location": {
+      "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+      "latitude": 53.3743,
+      "longitude": -6.27275,
+      "neighbourhood": "Glasnevin"
+    },
+    "verified_sources": [
+      "GBIF/National Biodiversity Data Centre, Heritage Trees of Ireland dataset (Aubrey Fennell field survey for the Tree Council of Ireland, CC BY 4.0), record_key 577, https://maps.biodiversityireland.ie/Dataset/27"
+    ],
+    "access": "Free, open daily except 25 December",
+    "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Part of the same cluster, 146m from dub_004. Designated 'Exceptional specimen trees', tree form 'Maiden'. Age band at 2009 survey was 100-150 years, giving 117-167 now. Species angle for the story: Taxodium distichum is a deciduous conifer native to the swamps of the southeastern United States, one of the few conifers that drops its needles in winter, and in wet ground develops distinctive knobby root growths called pneumatophores or 'knees' that rise above the waterline; whether this specific Glasnevin specimen stands near enough water to show them is unconfirmed. Given the gardens' bog garden feature (confirmed to exist by Wikipedia and the gardens' own general description, but not tied to this specific tree by any source I found), a wet-ground planting is plausible but not verified. I found no second source describing this specific specimen despite searching Trees and Shrubs Online's Taxodium distichum article directly (it mentions only a different Irish Taxodium at Fota, Co. Cork, not Glasnevin) and general web search. SINGLE SOURCE (the register): flagged per Step 2. Same coordinate-conversion caveat as the rest of the cluster applies."
+  },
+  {
+    "id": "dub_016",
+    "name": "Ireland's Largest Tree of Heaven",
+    "species": "Tree of Heaven (Ailanthus altissima)",
+    "age_estimate": "disputed, see notes",
+    "age_min": 70,
+    "age_max": 167,
+    "location": {
+      "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+      "latitude": 53.37229,
+      "longitude": -6.26984,
+      "neighbourhood": "Glasnevin"
+    },
+    "verified_sources": [
+      "GBIF/National Biodiversity Data Centre, Heritage Trees of Ireland dataset (Aubrey Fennell field survey for the Tree Council of Ireland, CC BY 4.0), record_key 58, https://maps.biodiversityireland.ie/Dataset/27",
+      "Trees and Shrubs Online (International Dendrology Society), Ailanthus altissima article, https://www.treesandshrubsonline.org/articles/ailanthus/ailanthus-altissima/"
+    ],
+    "access": "Free, open daily except 25 December",
+    "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Not a weedy volunteer: Trees and Shrubs Online (the standard dendrology reference) states plainly this is 'the largest Ailanthus in Ireland, 17m tall and with a trunk 1.17m thick at one metre up', grown under the old name A. giraldii var. duclouxii (a historical Chinese-collection name now folded into A. altissima as a synonym per Geerinck 1990; treat as the same species, not a separate taxon). A second, independent source (a gardening substack, 'The Street Tree' #48, thestreettree.substack.com) independently calls it 'one of the most shapely trees of its species in Ireland or Britain' and notes it frames the twin glasshouses (Palm House and Curvilinear Range); this source could not be fetched in full this pass (403 to the fetch tool) so is used only for the corroborating description already surfaced in search, not quoted at length. GENUINE AGE DISAGREEMENT, not silently resolved: the register's 2009 survey places it in the 100-150 year band (117-167 now), but Ailanthus altissima is a naturally short-lived, fast-growing species; the same substack source states general species lore that 'a tree in its seventies is an elderly example of this species'. Both figures are given here (age_min/age_max widened to 70-167 to span both) rather than picking one: either the register's band is generous for a well-sited, cared-for botanic-garden specimen (plausible, since cultivated specimens away from urban stress often outlive typical roadside/waste-ground examples of this species), or the age band is simply wrong for this species. Flag this explicitly for the writer rather than stating a confident age. Existence and species are well corroborated by two independent, credible sources; it is the age band specifically that is in question, and per Step 2 both figures are recorded rather than either being silently dropped. 179m from dub_004."
+  },
+  {
+    "id": "dub_017",
+    "name": "The Glasnevin Hybrid Strawberry Tree",
+    "species": "Hybrid Strawberry Tree (Arbutus x andrachnoides)",
+    "age_estimate": "roughly 120-165 years",
+    "age_min": 117,
+    "age_max": 167,
+    "location": {
+      "address": "National Botanic Gardens, Botanic Road, Glasnevin, Dublin 9, D09 VY63",
+      "latitude": 53.37245,
+      "longitude": -6.27075,
+      "neighbourhood": "Glasnevin"
+    },
+    "verified_sources": [
+      "GBIF/National Biodiversity Data Centre, Heritage Trees of Ireland dataset (Aubrey Fennell field survey for the Tree Council of Ireland, CC BY 4.0), record_key 74, https://maps.biodiversityireland.ie/Dataset/27",
+      "Trees and Shrubs Online (International Dendrology Society), Arbutus x andrachnoides article, photo captioned 'Glasnevin, Dublin, October 2017', https://www.treesandshrubsonline.org/articles/arbutus/arbutus-x-andrachnoides/"
+    ],
+    "access": "Free, open daily except 25 December",
+    "transport": "Bus routes 9 and 140 from the city centre, or a 20 min walk from Phibsborough",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Weaker candidate, delivered per brief's 'secondary if time allows'. Register: species given as 'Arbutus unedo x andrachne = A. x andrachnoides', category 'Exceptional specimen trees', age band 100-150 years at 2009 survey (117-167 now), 117m from dub_004. Second source: Trees and Shrubs Online's dedicated article for this hybrid includes a photograph explicitly captioned as taken at Glasnevin, Dublin in October 2017, by Julian Sutton, confirming the species is present and was alive and photographed 8 years after the register survey; the article gives no size, age or planting-date detail beyond the caption, and I cannot be certain the photographed individual is the SAME tree as record_key 74 rather than a different specimen elsewhere in the gardens (only one is recorded in this register subset, so it is the likely match, but this is inference not confirmation). Caution: do not confuse with Arbutus unedo 'Quercifolia' (a different, straight-species cultivar), which has its own separately-sourced 7.8m-tall 1974 Glasnevin measurement in Trees and Shrubs Online's Arbutus unedo article; that measurement belongs to a different tree and must not be attached to this one. Species notes for the story: this naturally occurring Mediterranean hybrid (Greek isles, western Turkey, cross of A. unedo and A. andrachne) is prized for chestnut-brown, peeling bark revealing glossy copper-red new bark beneath, arguably its main visual draw."
+  }
+]
