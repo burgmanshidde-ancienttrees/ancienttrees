@@ -24,12 +24,49 @@
     {
       "candidate": "Farragut Square Ginkgo (HALS DC-?, dc1030) and a Japanese Pagoda Tree also referenced near Farragut Square (dc1029, unconfirmed title)",
       "why_a_lead": "Two more HALS-documented trees found by number this pass but not investigated: Farragut Square is downtown DC, not near the Mall/Capitol walk this pass prioritised, so would need its own small downtown cluster to be worth researching. www.loc.gov blocks direct viewing (Cloudflare); the tile.loc.gov PDFs for dc1029 and dc1030 downloaded fine (73KB and 62KB respectively) but are scanned images with no extractable text this pass could read."
+    },
+    {
+      "candidate": "Bur Oak and White Oak originals, U.S. Capitol Grounds (Olmsted 1874 plantings, same cohort as the verified wdc_013 Olmsted Tuliptree)",
+      "why_a_lead": "The Architect of the Capitol's own species table (via Olmsted Network's republished blog, olmsted.org/blog/2024/08/29/the-capitols-original-olmsted-trees, checked this pass) lists 3 surviving original Bur Oak (Quercus macrocarpa) and 2 White Oak (Quercus alba) from the same 1874-1892 Olmsted planting as the verified tulip tree, same age range (roughly 130-150 years) by definition. No individual AOC feature page (like /features/olmsted-tuliptree) was found for these species this pass; aoc.gov's general /features/trees directory page loaded via Wayback but its tree links appear to be JS-rendered and did not resolve in a plain HTML fetch. A future pass should try aoc.gov's site search or the visitthecapitol.gov/apps/grounds/trees/ interactive map (untried this pass, may be JS-heavy too) to find their exact locations, or search 'AOC Bur Oak Capitol Grounds' / 'AOC White Oak Capitol Grounds' directly for dedicated feature pages that may exist under different slugs."
+    },
+    {
+      "candidate": "Congressional Cemetery, Capitol Hill/SE DC - 'an oak tree near the chapel'",
+      "why_a_lead": "Mentioned in passing in general cemetery writeups (search this pass) as an old oak near the chapel with local folklore ('never stops shaking its leaves'), but no source found gives species confirmation beyond 'oak', no age, no HALS or register record, and no second source. The cemetery itself (35 acres, founded 1807, National Historic Landmark) is a plausible old-tree site given its age and would be worth a dedicated pass, but this specific tree does not clear the bar as found."
+    },
+    {
+      "candidate": "Monkey Puzzle Tree (Araucaria araucana), roughly 31st and R St NW, Georgetown, near the Dumbarton Oaks entrance",
+      "why_a_lead": "Confirmed via search (YouTube videos, a 2010 Georgetown Metropolitan tree-week roundup context) as a real, locally famous specimen 'in the front yard of a private house about a block west of the entrance to Dumbarton Oaks.' NOT pursued to verification: it stands on private residential land, viewable only from the public sidewalk rather than a tree a visitor can walk up to, which sits in the grey zone of hard rule 10 (private land, not genuinely 'open to visitors' in the stand-at-the-trunk sense this project uses elsewhere). Left unverified and unpublished rather than risk it; a future pass could resolve the judgement call by finding the exact address and confirming how much of the tree is genuinely visible/photographable from the public right-of-way."
+    },
+    {
+      "candidate": "Dumbarton Oaks Park (the free NPS-adjacent public park, not the private Harvard-run garden) veteran trees",
+      "why_a_lead": "RESOLVED this pass (the fourth attempt, first one to succeed): the American Beech Grove, HALS DC-13, verified and delivered as wdc_014 in data/research/washington-dc-verified.json. What broke the three prior failures was fetching the managing organizations' own site sections directly (TCLF's dedicated Dumbarton Oaks Park page, dopark.org's Signature Project restoration page) rather than a generic web sweep, per this pass's brief. STILL OPEN: no INDIVIDUAL named veteran specimen beyond the grove itself was found (e.g. a single named champion oak inside the park); doaks.org's own Green Garden page (checked again this pass, unchanged from prior passes) confirms the adjacent PRIVATE garden's old oaks were removed decades ago and replaced in 1928 and 2018, too young and on the paid/private side anyway. A future pass could try NPS Rock Creek Park's own tree inventory (untried directly, only its general unit pages returned 404 this pass at /rocr/learn/historyculture/dumbarton-oaks-park.htm and /rocr/planyourvisit/dumbartonoakspark.htm, so the right NPS URL slug is still unknown) for individual specimens beyond the grove."
+    },
+    {
+      "candidate": "The White Oaks of the Tennis Court Garden, Tudor Place, 1644 31st Street NW, Georgetown",
+      "why_a_lead": "Checked this pass per the brief (Tudor Place priority 3): TCLF's Tudor Place page (independent nonprofit source) states 'In the northeast corner of the property, the Tennis Court Garden lies secluded behind a screen of white pine trees and shrubs and is framed by 200-year-old white oaks.' This is a SINGLE source for that specific claim and current living status is uncertain: Tudor Place's own site (tudorplace.org/garden/) describes a 'family of witness trees' on the estate but names only one specifically, 'the Great White Oak', which FELL in 2019 (rings counted at ~160 years) near the East Lawn tennis matches, not explicitly the same feature as TCLF's 'Tennis Court Garden'. It is unclear whether TCLF's plural 'white oaks' are a different, still-standing group, or whether TCLF's page (undated on the copy fetched) is simply stale and describing the now-fallen tree. NOT delivered: single source for the specific still-standing claim, real ambiguity about whether it duplicates the confirmed-dead Great White Oak, and paid-entry access (garden hours Tue-Sun) not yet weighed. A future pass should contact Tudor Place directly or find a second, dated source (photo, recent press) confirming which oaks, if any, still frame the Tennis Court Garden today.",
+      "location_note": "1644 31st Street NW, Washington DC 20007. Garden is paid entry (self-guided visits Feb-Dec, Tue-Sat 10am-4pm, Sun noon-4pm per tudorplace.org)."
+    },
+    {
+      "candidate": "Oak Hill Cemetery, 3001 R Street NW, Georgetown, old trees generally",
+      "why_a_lead": "Checked this pass per the brief (priority 2): general web search returned only a passing, unsourced claim ('Oak Hill has some of the oldest trees in the District of Columbia... not cut down during the Civil War') with no named individual specimen, no species, no age. oakhillcemeterydc.org's own site (fetched directly this pass) has no historic-tree content at all, only a modern 'Memorial Tree Program' for burial plantings, unrelated to old/remarkable trees. No TCLF entry found for Oak Hill Cemetery specifically in the time available. Not pursued further: no named candidate to verify against two sources. A future pass would need to start from a different source entirely, e.g. the cemetery's own published historic preservation plan or a dedicated DC tree survey, since neither the cemetery's own site nor general search names a specific tree."
     }
   ],
   "blocked": [
     {
+      "candidate": "The Great White Oak, Tudor Place, Georgetown (near the East Lawn / tennis matches)",
+      "reason": "DEAD, confirmed by Tudor Place's own site (tudorplace.org/garden/, current page, checked this pass): 'the Great White Oak fell in 2019. When its rings were counted it was approximately 160 years old.' Do not re-research as a live candidate; the property's other, possibly-distinct 'Tennis Court Garden' white oaks (TCLF-sourced, single source, status unclear) remain a separate open lead above, not this same blocked tree."
+    },
+    {
       "candidate": "District of Columbia War Memorial tree plantings (dogwood, holly, magnolia, elm, pine, crabapple, 1931-39)",
       "reason": "Not a collectible point: a mixed-species memorial landscape planting, not one identifiable tree or a compact named ensemble with one obvious place to stand. No individual specimen is named or dated by either source found (NPS 'Silent Sentinels' article; National Park Trust blog does not mention it at all)."
+    },
+    {
+      "candidate": "Maryland Liberty Tree, U.S. Capitol Grounds (Capitol Square, N.E.)",
+      "reason": "Checked this pass via AOC's own feature page (Wayback snapshot): planted 1978 as a Liberty Tree seedling, replanted 2001, roughly 48 years old. Well short of this project's remarkable-age bar and not visually distinctive; the name commemorates a colonial-era 'Liberty Tree' at St John's College Annapolis, not this tree's own age. Do not re-research."
+    },
+    {
+      "candidate": "Various 1970s-2020s commemorative trees on the Capitol Grounds (Idaho Federation of Women's Clubs Tree 1975, South Carolina Forestry Association Tree 1981, Senator Edward Zorinsky Tree 1987, Donnald Anderson Tree 1998, Senator Chuck Grassley Tree 2024, etc.)",
+      "reason": "AOC documents dozens of these individually plaqued commemorative plantings on Capitol Square; all found this pass are too young (decades, not centuries) for the remarkable-age bar and are one of many similar plaques rather than a singular destination. Only the ~45 surviving ORIGINAL Olmsted-era (1874-1892) plantings are worth pursuing as candidates; verify by checking the planting year against 1874-1892 before researching further."
     }
   ]
 }
