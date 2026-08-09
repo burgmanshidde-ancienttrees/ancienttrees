@@ -2,8 +2,8 @@
   "city": "Edinburgh",
   "country": "United Kingdom",
   "status": "needs_curation",
-  "intro": "Edinburgh keeps its oldest trees behind something: a castle wall, a botanic garden fence, the gates of a private estate turned nature reserve, a royal palace's summer-only garden. The city's volcanic crags and exposed hilltops rarely let a tree grow undisturbed for centuries, so almost everything on this list survived because an institution, deliberately or by accident, built a boundary around it first. The ten range from a pair of yews that watched a queen's advisors plot against her husband to a churchyard tree that is not, genetically, the historic tree its own legend is about.",
-  "meta_description": "Edinburgh's ancient trees hide behind castle walls, botanic garden fences and estate gates. 13 verified locations, real stories, how to reach each.",
+  "intro": "Edinburgh keeps its oldest trees behind something: a castle wall, a botanic garden fence, the gates of a private estate turned nature reserve, a royal palace's summer-only garden. The city's volcanic crags and exposed hilltops rarely let a tree grow undisturbed for centuries, so almost everything on this list survived because an institution, deliberately or by accident, built a boundary around it first. The fifteen range from a pair of yews that watched a queen's advisors plot against her husband to a churchyard tree that is not, genetically, the historic tree its own legend is about.",
+  "meta_description": "Edinburgh's ancient trees hide behind castle walls, botanic garden fences and estate gates. 15 verified locations, real stories, how to reach each.",
   "question_answer": "Edinburgh's oldest documented trees are the twin yews flanking the courtyard entrance to Craigmillar Castle, dated to at least 300 years old by Historic Environment Scotland, with local tradition placing them past 450 in connection with Mary, Queen of Scots' stay at the castle in 1566. They stand in the castle's inner courtyard, a short bus ride from the city centre, included in the price of admission.",
   "question_meta": "Craigmillar Castle's twin yews, at least 300 years old, tied to Mary, Queen of Scots by legend, are Edinburgh's oldest documented trees.",
   "question_context": "Yews resist dating more stubbornly than almost any other tree: their heartwood rots away as they age, so ring counts are useless and even careful girth-based estimates carry wide error bars. Historic Environment Scotland's cautious figure for the Craigmillar pair is at least 300 years, old enough on its own. The more dramatic local tradition, that they were planted to mark Mary, Queen of Scots' recuperation at the castle in 1566, would require them to be past 450, a gap of a century and a half that no one can close without harming the trees to find out. What is documented without dispute is the setting: a five-hundred-year-old ruined castle where Mary's own advisors met in 1566 to discuss removing her husband, Lord Darnley, a plot historians call the Craigmillar Bond. The nearest challenger for oldest is a good deal less certain still, an ash at Cammo Estate whose age rests entirely on the estate's 1710 founding rather than any measurement of the tree itself. Reaching Craigmillar Castle means a short bus journey from the city centre and a Historic Environment Scotland admission ticket; the yews are inside the entrance, free to see once you are through the gate.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Edinburgh's ancient trees free to visit?",
-      "a": "Eleven of the thirteen are free, standing in public churchyards, council-run parks, nature reserves and the Royal Botanic Garden, which charges nothing to enter its grounds. The exceptions are the Craigmillar Castle yews and the Holyroodhouse elms, both included in a paid admission ticket."
+      "a": "Thirteen of the fifteen are free, standing in public churchyards, council-run parks, nature reserves and the Royal Botanic Garden, which charges nothing to enter its grounds. The exceptions are the Craigmillar Castle yews and the Holyroodhouse elms, both included in a paid admission ticket."
     },
     {
       "q": "Why does Corstorphine's famous sycamore look so young?",
@@ -421,6 +421,66 @@
       "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
       "location_precision": "approximate",
       "curation_status": "flagged"
+    },
+    {
+      "id": "edi_014",
+      "name": "The 1948 Dawn Redwood of the Chinese Hillside",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "roughly 75 years",
+      "age_min": 70,
+      "age_max": 80,
+      "location": {
+        "address": "Chinese Hillside, Royal Botanic Garden Edinburgh, 20A Inverleith Row, Edinburgh EH3 5LR",
+        "latitude": 55.9668,
+        "longitude": -3.211,
+        "neighbourhood": "Inverleith"
+      },
+      "story": "Until 1944, the dawn redwood was known only as a fossil, a conifer botanists assumed had died out millions of years ago. Then a Chinese forestry official spotted an unfamiliar deciduous conifer growing near a village in central China, and by 1948 the find had become one of the great botanical events of the century: the Arnold Arboretum in Boston organised a seed-collecting expedition to the same valley and mailed packets of Metasequoia glyptostroboides seed to institutions worldwide, ending a species' presumed extinction in a single shipment. The Royal Botanic Garden Edinburgh was among the recipients, and five specimens grown from that original 1948 consignment still stand scattered through the garden today, sharing one accession number and one origin story. This is the one on the Chinese Hillside, a short walk from the garden's other Inverleith trees. A dawn redwood grows fast for a conifer, which is why this one is barely 75 years old and already substantial, deciduous unlike almost every relative it has, its needles turning rust orange before dropping each autumn. It is not RBGE's oldest tree by a long way. It is one of the closest things botany has to a resurrection story, planted the decade the species seemed impossible.",
+      "verified_sources": [
+        "https://rbge.gardenexplorer.org/taxon-11093.aspx",
+        "https://www.treesandshrubsonline.org/articles/metasequoia/metasequoia-glyptostroboides/"
+      ],
+      "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
+      "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "RBGE's Garden Explorer living-collection database lists five specimens tracing to the same 1948 wild-collected seed accession (19480054), scattered across the garden; this entry is the Chinese Hillside individual (accession suffix *H), chosen because it sits closest to the rest of this Inverleith cluster. No planting date, girth or height is recorded for this specific specimen, only the 1948 seed-collection date, so age is estimated from seed arrival rather than a measured planting. No dated recent photo or news item confirms this exact specimen is alive today; the Garden Explorer entry is part of RBGE's actively maintained catalogue but that is not dated field evidence, so this ships flagged rather than confirmed. A future pass or a visitor could confirm which physical tree on the Chinese Hillside carries RBGE's own signage for this accession.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "edi_015",
+      "name": "The Champion Whitebeam of the Botanics",
+      "species": "Hemsley's Whitebeam (Sorbus hemsleyi)",
+      "age_estimate": "roughly 45 years",
+      "age_min": 40,
+      "age_max": 50,
+      "location": {
+        "address": "Royal Botanic Garden Edinburgh, bed E46, near the Chinese Hillside, 20A Inverleith Row, Edinburgh EH3 5LR",
+        "latitude": 55.9662,
+        "longitude": -3.2095,
+        "neighbourhood": "Inverleith"
+      },
+      "story": "Sorbus hemsleyi is a whitebeam from central China, rare enough in cultivation that the Tree Register of the British Isles lists a single UK and Ireland champion for the species by trunk girth, and it grows here, a few paces from the garden's other rare whitebeam, the Catacol whitebeam saved from extinction by grafting cuttings onto rowan rootstock. This tree came from seed collected under accession SABE 1317 and went into the ground in 1981, a young tree by the Botanics' standards, not yet fifty, in a collection that includes trees planted two centuries earlier. What it lacks in age it makes up in rarity: whitebeams hybridise and speciate readily, throwing up dozens of narrow endemics found on a single hillside or gorge, and Sorbus hemsleyi's presence here, thriving enough in an August 2023 photograph to still hold its champion title, belongs to the same conservation instinct behind the garden's Catacol grafts a short walk away. It carries white flowers in spring and orange red berries by autumn, ordinary whitebeam fare, but the specific tree, its girth on record with Britain's tree registry, is what makes it worth finding. Free to see, in the same eastern corner of the garden as the John Muir Grove and the Handkerchief Tree.",
+      "verified_sources": [
+        "https://www.treesandshrubsonline.org/articles/griffitharia/griffitharia-hemsleyi/",
+        "https://www.treeregister.org/map/site?s=286"
+      ],
+      "access": "Free, Royal Botanic Garden Edinburgh (garden free, glasshouses paid and currently closed for restoration)",
+      "transport": "Bus to Inverleith Row, or 25 min walk from Princes Street",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "UK & Ireland champion for girth per the Tree Register of the British Isles, corroborated independently by Trees and Shrubs Online (International Dendrology Society), which carries a dated August 2023 photo captioned 'in good health'. Planted 1981 from accession SABE 1317/19810835*B. Species carries two valid names in the literature, Sorbus hemsleyi and the more recent Griffitharia hemsleyi; this project keeps the Sorbus genus name for consistency with its other whitebeam entries (e.g. edi_012's Sorbus pseudomeinichii). Location is approximate: known by RBGE's own adoption-map bed code (E46) rather than a GPS-surveyed point.",
+      "location_precision": "approximate"
     }
   ]
 }
