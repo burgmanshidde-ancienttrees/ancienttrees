@@ -4,34 +4,10 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "new york",
+      "target": "edinburgh",
       "kind": "verify",
       "by": "night-run",
-      "claimed_at": "2026-08-08T22:03:14+00:00"
-    },
-    {
-      "target": "dublin",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-08T22:05:01+00:00"
-    },
-    {
-      "target": "Berlin",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-09T00:01:15+00:00"
-    },
-    {
-      "target": "Vienna",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-09T00:02:19+00:00"
-    },
-    {
-      "target": "Edinburgh",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-09T00:03:47+00:00"
+      "claimed_at": "2026-08-09T04:53:48+00:00"
     }
   ]
 }
