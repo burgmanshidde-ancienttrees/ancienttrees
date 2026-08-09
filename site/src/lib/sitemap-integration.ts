@@ -60,7 +60,12 @@ function walk(dir: string): string[] {
 
 function canonicalFor(relPath: string): string {
   const posixRel = relPath.split(path.sep).join("/");
-  if (posixRel === "index.html") return BASE_URL;
+  // Python's build_sitemap() appends BASE_URL + "/" for the homepage
+  // specifically (build_site.py:5256); every other page has no trailing
+  // slash. Matched here rather than "fixed", since the canonical tag on
+  // the page itself already agrees with this and Search Console is
+  // registered against the trailing-slash form.
+  if (posixRel === "index.html") return `${BASE_URL}/`;
   if (posixRel.endsWith("/index.html")) return `${BASE_URL}/${posixRel.slice(0, -"/index.html".length)}`;
   return `${BASE_URL}/${posixRel.slice(0, -".html".length)}`;
 }
