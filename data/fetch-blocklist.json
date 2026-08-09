@@ -73,6 +73,12 @@
       "noted": "2026-08-08",
       "symptom": "HTTP 202 with EMPTY body to curl and WebFetch: a soft bot-block that wastes time instead of erroring",
       "workaround": "Wayback Machine direct web.archive.org/web/<date>/ URLs (the availability API itself rate-limits)"
+    },
+    "hmdb.org": {
+      "host": "hmdb.org",
+      "noted": "2026-08-09",
+      "symptom": "Cloudflare 'Just a moment' challenge to curl and WebFetch",
+      "workaround": "Wayback snapshots, as the DC pass used"
     }
   }
 }

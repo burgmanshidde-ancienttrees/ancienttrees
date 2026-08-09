@@ -25,6 +25,18 @@
       "reason": "1.23 km from the Cheapside anchor, within cluster range, and a genuinely public garden with real history (first Quaker burial ground, 1661-1855, George Fox among 12,000 buried here). Held back because sources actively disagree on the trees' age: the Bunhill Fields Quaker Meeting's own page says the mature planes were 'planted about 1880' (~145 years), while a Londonist piece says 'two of which may be 18th century.' At either age this reads as a mature garden rather than a genuinely ancient tree, and the disagreement was not resolved in this pass's window. Blocked from delivery on the never-pick-a-winner-silently rule; a future pass could check the London Gardens Trust's fuller site record (ISL064, returned 403 to this pass's fetchers) for a firmer date."
     },
     {
+      "name": "Finsbury Circus Japanese Pagoda Tree",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "location": "Finsbury Circus Gardens, City of London, EC2M",
+      "reason": "Verify pass 3 (2026-08-09). Described by multiple tourism-style sources (cityam.com, gardensoflondon.co.uk) as the City of London's only Japanese Pagoda tree and part of the gardens' 1815 redesign by George Dance the Younger, which would make it roughly 210 years old, but no source states a planting date or age directly, only that it belongs to that period generally. More importantly, Finsbury Circus Gardens underwent a major Crossrail-era redevelopment and reopened in May 2025 after 'the first major renovation in over 100 years'; no source found confirms this specific tree survived that work or gives its post-reopening condition. Held back on both counts: unconfirmed age and unconfirmed current survival. A future pass should check the City of London's own Finsbury Circus project pages or a 2025 press photo set for the pagoda tree specifically before researching further."
+    },
+    {
+      "name": "Ravenscourt Park Tree of Heaven",
+      "species": "Tree of Heaven (Ailanthus altissima)",
+      "location": "Near the sports area/children's playground, Ravenscourt Park, Hammersmith, coordinates roughly 51.4964, -0.2372 per Wikipedia's Great Trees of London table",
+      "reason": "Verify pass 3 (2026-08-09). A genuine Great Tree of London (London Tree Forum/Esso plaque on site) and reportedly one of the largest/tallest examples of its species in Britain, which would qualify it as historically/visually significant even without a striking age. But despite three sources checked (londontreesblog.wordpress.com, graftingardeners.co.uk, general web search) none gives any planting date or age estimate, only size superlatives, and the species is generally short-lived (rarely over 50 years) which makes an unsupported age guess especially risky. Never fabricate: held back entirely on missing age rather than guessing. Worth a direct enquiry to the Friends of Ravenscourt Park, who published a tree map in 2020 and might hold a planting record."
+    },
+    {
       "name": "Amwell Fig, exact planting year",
       "species": "Common Fig (Ficus carica)",
       "location": "See lon_012 in the delivery file",
@@ -32,6 +44,14 @@
     }
   ],
   "blocked": [
+    {
+      "name": "The Hardy Tree, St Pancras Old Church",
+      "reason": "Verify pass 3 (2026-08-09), CHECK ALIVE requested by the brief before any research: the ash tree collapsed in the early hours of 27 December 2022 after a long fungal infection, and Camden Council felled it for safety. Widely reported (BBC, ianvisits.co.uk, Londonist). The ring of gravestones stacked at its base survives and a new tree has been planted nearby, but the tree itself is dead. Never ships as an entry per the living-trees rule; never re-research."
+    },
+    {
+      "name": "Bunhill Fields Burial Ground plane trees (the avenues, distinct from the Quaker Gardens lead above)",
+      "reason": "Verify pass 3 (2026-08-09). Two independent sources (bowleswyer.co.uk, gardenvisit.com/Historic England summary) agree the burial ground's roughly 130 plane trees were planted as avenues across the whole site from the 1870s, after it became public land in 1867, so the age (roughly 150 years) is not in question. Blocked instead on the collectible-point rule: the trees line the paths as scattered avenue planting over the entire multi-acre burial ground (alongside Blake, Bunyan and Defoe's graves), not a compact cluster with one obvious place to stand, the same failure as the already-blocked Lincoln's Inn Fields entry. If a future pass can identify one specific named or individually distinguished plane within the site (e.g. one directly over the Blake or Bunyan memorial), that would pass the test where the avenue as a whole does not."
+    },
     {
       "name": "Gray's Inn Catalpa (the 'Bacon tree')",
       "reason": "The specimen popularly linked to Francis Bacon and Walter Raleigh (legend: planted circa 1608, brought from Bermuda) was 'crushed beneath an up-rooted plane tree in the hurricane of 1987' according to Parks & Gardens UK, leaving only 'a single twisted trunk' of the original; that same source is skeptical of the Bacon legend itself and notes the Walks actually hold two 18th-century catalpas rather than one 400-year-old original. A fan/enthusiast site (sirbacon.org) repeats the uncritical 400-year legend with no horticultural sourcing. Blocked because it is unclear whether a living, recognisable single tree survives the 1987 storm damage at all (the never-a-carcass rule) or whether any surviving catalpa there is the 18th-century pair rather than the legendary original, and because Gray's Inn's own official page on the Walks returned HTTP 403 to every fetch attempt in this pass, so no primary confirmation of current condition or public access hours was possible."
