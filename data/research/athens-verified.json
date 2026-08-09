@@ -1,0 +1,48 @@
+[
+  {
+    "id": "ath_011",
+    "name": "The Washingtonia Palms of the National Garden Entrance",
+    "species": "California Fan Palm (Washingtonia filifera)",
+    "age_estimate": "widely stated as 150+ years; the specific origin story is likely inaccurate",
+    "age_min": 100,
+    "age_max": 150,
+    "location": {
+      "address": "Main entrance on Vasilissis Amalias Avenue, National Garden of Athens, Athens 10557",
+      "latitude": 37.9724165,
+      "longitude": 23.7352601,
+      "neighbourhood": "Syntagma, west boundary of the National Garden on Vasilissis Amalias Avenue"
+    },
+    "access": "Free, National Garden of Athens, open daily",
+    "transport": "Syntagma metro station (Lines 2 and 3), 5-10 min walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "A row (popularly '12 palms') of tall California fan palms (Washingtonia filifera) forms a monumental allee at the National Garden's central gate on Vasilissis Amalias Avenue, described consistently across many tourism sources (discovergreece.com, globalgardenlab.com, EGHN's official garden page, and Greek-language sources including newsbeast.gr and oneman.gr) as roughly 25m tall and the garden's most photographed historic planting. EXISTENCE AND SPECIES are solid: EGHN's own page on the garden (an international garden-heritage body, already used as ath_005's second source) independently names the Washingtonia allee at the central entrance as one of the garden's 'typical examples of historic planting'.\n\nAGE AND ORIGIN STORY ARE IN GENUINE DOUBT, and this is the fact the story needs to handle honestly. Nearly every source (English and Greek, tourism and otherwise) repeats that Queen Amalia personally planted these palms when she founded the garden in 1838-1840. That is very likely impossible: Washingtonia filifera was not collected for European cultivation until seeds reached a Belgian nursery around 1876 (Drude, 1876), and the genus was only formally named in 1879 by Wendland from those Belgian-grown plants (sourced from Arizona). Amalia was deposed and left Greece in 1862, fourteen-plus years before the species is documented as reaching European cultivation at all. So either (a) the palms were added to the garden well after Amalia's time, most likely in the last two decades of the 19th century or early 20th century once the species became available, and the 'Amalia planted them' detail is a folk conflation with her well-documented general founding of the garden, or (b) an earlier, undocumented introduction route existed that no source describes. No academic or municipal source (checked: green-athens.gr, the official Athens municipal green-space company's own National Garden page, has a species catalogue but gives no planting date for any individual specimen, including this one) resolves this. Delivering flagged rather than rejecting outright, per the same logic already applied to ath_002's disputed 2,500-year olive claim: the tree and its visual spectacle are real and independently confirmed, only the specific age/origin claim is doubtful, and the doubt itself (a widely repeated but chronologically impossible legend) is worth telling honestly rather than either asserting it or silently dropping a genuinely remarkable, single, easy-to-find collectible point. age_min/age_max given as a conservative honest bracket (a mature 25m Washingtonia filifera implies decades of growth;60-100+ years is achievable in good conditions, so 100-150 is a reasonable ceiling without claiming the debunked 1838 date) rather than asserting either the popular 180-year figure or an unfounded shorter one.\n\nCOLLECTIBLE POINT: passes. It is a single, compact, famous allee at one obvious place to stand (the central gate), not a scattered ensemble like the garden's Zappeion plane avenue or Filopappou woodland.\n\nLOCATION: approximate. The National Garden's own polygon centroid (Nominatim, relation 11505137) is 37.9735816,23.7377926 with bounding box lat 37.9713395-37.9758133, lon 23.7346302-23.7403043; the entrance gate itself sits on the west boundary (Vasilissis Amalias Avenue side). Overpass (both overpass-api.de and the kumi.systems mirror) was unreachable for repeated gate/entrance node queries this pass (connection timeouts, likely rate-limited after many earlier successful queries), so the exact gate node could not be confirmed. Coordinates given are a boundary-level estimate on the Amalias Avenue side, not a surveyed gate position; a future pass with working Overpass access should query barrier=gate or entrance=* nodes around the garden polygon to tighten this to gate-level precision.\n\nPIN UPDATE (Overpass recovered mid-pass after earlier timeouts): queried barrier=gate nodes within 500m of the garden's Nominatim polygon centroid. Found gate node 7813656400 at 37.9724165,23.7352601 on the west boundary facing Vasilissis Amalias Avenue (maxwidth:physical 3.8m, consistent with a principal entrance rather than a narrow side gate; compare node 7813657555 at 37.9739746,23.7355594, also on the west boundary but untagged for width, and node 7813656163 at 37.9719821,23.7376672, no width tag). Moved the pin to 7813656400 as the best-supported candidate for the main Amalias Avenue gate. Still approximate: OSM's gate tags do not distinguish which specific gate carries the palm allee, so this is 'a documented gate on the right boundary', not a confirmed match to the palms themselves.",
+    "verified_sources": [
+      "https://www.eghn.org/en/national-garden-athens/",
+      "https://globalgardenlab.com/2018/11/10/national-garden-athens-an-ancient-urban-retreat/"
+    ]
+  },
+  {
+    "id": "ath_012",
+    "name": "The Plane Tree of Platanos Square",
+    "species": "Oriental Plane (Platanus orientalis)",
+    "age_estimate": "at least a century; called 'centuries-old' by local tradition, no institutional dating found",
+    "age_min": 90,
+    "age_max": 150,
+    "location": {
+      "address": "Small square at Diogenous 4, Plaka, just north of the Roman Agora entrance, Athens 10556",
+      "latitude": 37.9742823,
+      "longitude": 23.7278834,
+      "neighbourhood": "Plaka"
+    },
+    "access": "Free, public square (a working taverna, O Platanos, places its own tables in the same square, but the square itself is open)",
+    "transport": "Monastiraki metro station (Lines 1, 3), 5 min walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A large plane tree shades a small named square (locally 'Platanos Square', platanos being Greek for plane tree) at Diogenous 4 in Plaka, immediately north of the Roman Agora's entrance. The taverna O Platanos, open at the same spot since 1932/1933 and once the meeting place of painters Pericles Byzantios and Pavlos Kalligas and sculptor Fokion Rokos in the 1920s (Henry Miller and Patrick Leigh Fermor both wrote about eating there), took its name from the tree, not the other way round.\n\nEXISTENCE, roughly a real tree, not a defunct namesake: confirmed independently across multiple sources describing the square today (greekgastronomyguide.gr's two listings, hospitalitystories.com, and a Tripadvisor review literally titled 'See you at the Plane Tree!'), all describing a large, currently-shading plane tree over the square/tables, not a historical reference to one that used to be there. One source (an earlier greekgastronomyguide.gr page) described the pergola's shade as coming from tangled 'mulberry' foliage rather than the plane tree; given every other source, including ones focused specifically on the tree, describes a plane tree, this reads as one page's imprecision (mulberries may grow alongside it) rather than a real conflict, but flagging it here so a future pass or photo can settle it definitively.\n\nSPECIES: Platanus orientalis, the Oriental Plane, matching the canonical naming already used for ath_007 and ath_009 in this city file (hard rule 9). No source gives the scientific name directly, but 'platanos' unqualified in Greek default the same way at those two other entries.\n\nAGE: undocumented by any institution. Every source calls it 'centuries-old' or 'large' without a figure. The taverna has operated under it since 1932-33, meaning the tree was already large and distinctive enough to name a business after by then, which sets a soft floor; the honest range given (90-150 years) reflects that floor plus the 'centuries-old' folk description, without asserting a precise figure neither source supports.\n\nCOLLECTIBLE POINT: passes. One specific, named, small square with one identifiable tree, at one address, distinct from Zappeion's mixed avenue (ath_007) and Kefalari's spread-out district ensemble (ath_009).\n\nLOCATION: confirmed. Cross-checked two ways: Nominatim resolves Diogenous street itself in Plaka near Monastiraki/Roman Agora; Overpass independently returns a restaurant POI named exactly 'Platanos'/'Πλάτανος' (node 1308000564, last checked by an OSM contributor 2024-10-23) at 37.9742823,23.7278834, matching the address and description from every source. This is restaurant-level, not measured-crown-level, precision, but the restaurant and the tree occupy the same small square by every account, so it is tree-level in practice.",
+    "verified_sources": [
+      "https://www.greekgastronomyguide.gr/en/item/taverna-o-platanos-plaka-athens/",
+      "https://www.hospitalitystories.com/stories/dining-museum-neighbourhood-ancient-greek-gods"
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "leads": [
+    {
+      "candidate": "Sequoia sempervirens (California Redwood), National Garden of Athens",
+      "reason": "Official source exists (green-athens.gr, the municipal green-space company Metropolitiko Prasino A.E.'s own digital plant catalogue for the National Garden) confirming the species grows there, but the page gives no planting date, age, height or specific location for the Athens specimen, only general species biology. A future pass could re-check green-athens.gr's catalogue (site index at https://green-athens.gr/ethnikos-kipos/) for other individually documented old specimens if the catalogue is expanded, or contact the company directly for planting records."
+    },
+    {
+      "candidate": "Notable Trees survey of Athens (Flagpole 'Notable Trees of Athens to Love and Protect', 2026-04-22)",
+      "reason": "Turned up in a register search but is a Flagpole (Athens, Georgia, USA alt-weekly) article about Athens, Georgia, not Athens, Greece. Recorded so a future pass does not re-click it expecting Greek content."
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "Trees of Kaisariani Monastery (general ensemble)",
+      "reason": "Re-confirmed this pass, no new individual specimen found. Already ruled a collectible-point test failure by Hidde on 2026-08-01 (ath_010 was replaced because of this) and searched again this pass (Kallirrhoe spring history, monastery vegetation): sources describe 'pine trees, cypresses, firs, poplars, plane trees and oaks' across the monastery's botanical garden generally, no individual tree named, aged or singled out. Do not re-research as an ensemble; only worth revisiting if a source ever names one specific tree there."
+    },
+    {
+      "candidate": "The 1953 plane tree of the Ancient Agora (planted where Demosthenes' statue stood)",
+      "reason": "Real and documented (ASCSA's own account of the 1950s Agora landscaping), but only about 73 years old and explicitly a mid-20th-century commemorative planting, not a genuinely old or historically witnessing tree itself (its significance is about the spot it references, not its own age). Does not clear the bar."
+    },
+    {
+      "candidate": "Pnyx Hill olive grove",
+      "reason": "An ensemble of unnamed olives, pines, cypresses and eucalyptus lining the paths up to the ancient assembly site, same shape as the already-published Filopappou olive woodland (ath_008) and the same reasoning applies: no individual specimen is named, aged or located by any source found. Would need a source naming one specific tree to qualify."
+    },
+    {
+      "candidate": "Aristotle's Lyceum archaeological park (olive, cypress and pomegranate plantings)",
+      "reason": "The circular walking path is deliberately planted with olive, cypress and pomegranate to evoke Aristotle's own habits, but this is explicitly a modern educational planting at a site only opened to the public in 2014, not inherited ancient trees. Not remarkable on its own terms; the archaeology is the draw, not the plants."
+    },
+    {
+      "candidate": "The other seven trees of the Acropolis (a lone pine 'for shade for security staff', six more cypresses beyond the two by the Parthenon)",
+      "reason": "Sourced from thegreekherbalist.com's 'Eight Trees Growing on the Acropolis'. No ages given for any of them; the pine is explicitly described as a modern amenity planting, and the cypresses read as ornamental site planting rather than individually remarkable or historically significant specimens distinct from the already-published Sacred Olive (ath_001). Would need an age or a specific historical claim tied to one individual tree to qualify."
+    }
+  ]
+}
