@@ -1793,13 +1793,13 @@
   "lis_005": {
    "city": "Lisbon",
    "name": "The Tipu of Jardim de São Bento",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": []
   },
   "lis_006": {
    "city": "Lisbon",
    "name": "The Coral Trees of Jardim da Luz",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": [
     {
      "title": "File:Crossing between trees platforms (47995676158).jpg",
@@ -1813,19 +1813,19 @@
   "lis_007": {
    "city": "Lisbon",
    "name": "The Nettle Tree of Avenida de Berlim",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": []
   },
   "lis_008": {
    "city": "Lisbon",
    "name": "The Ginkgo of Praça Paiva Couceiro",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": []
   },
   "lis_010": {
    "city": "Lisbon",
    "name": "The Giant Rubber Tree of Mouraria",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": [
     {
      "title": "File:Street Art (2012) (33879759628).jpg",
@@ -1874,7 +1874,7 @@
   "lis_013": {
    "city": "Lisbon",
    "name": "The Strangler Fig of Príncipe Real",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": [
     {
      "title": "iNat obs 201103892 (Ficus)",
@@ -1908,13 +1908,13 @@
   "lis_014": {
    "city": "Lisbon",
    "name": "The Yew of Campo Santana",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": []
   },
   "lis_015": {
    "city": "Lisbon",
    "name": "The Weeping Fig of Campo Santana",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": [
     {
      "title": "File:Bare London planetree (Platanus × hispanica) in winter, Campo dos Mártires da Pátria, Lisbon, Portugal julesvernex2.jpg",
@@ -1935,7 +1935,7 @@
   "lis_018": {
    "city": "Lisbon",
    "name": "The Tipuana of the Ninth of April Garden",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": [
     {
      "title": "File:Silk floss tree (10313847796).jpg",
@@ -1949,7 +1949,7 @@
   "lis_019": {
    "city": "Lisbon",
    "name": "The Date Palm of the Ninth of April Garden",
-   "checked": "2026-08-08",
+   "checked": "2026-08-09",
    "candidates": [
     {
      "title": "File:Silk floss tree (10313847796).jpg",
@@ -10876,6 +10876,32 @@
      "obs_location": "51.5125846159,-0.1119919494"
     }
    ]
+  },
+  "cop_011": {
+   "city": "Copenhagen",
+   "name": "The Honey Locust of Assistens",
+   "checked": "2026-08-09",
+   "candidates": []
+  },
+  "cop_012": {
+   "city": "Copenhagen",
+   "name": "The Pacifier Tree",
+   "checked": "2026-08-09",
+   "candidates": [
+    {
+     "title": "File:Pacifier Tree - Østre Anlæg - Copenhagen - DSC07336.JPG",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Pacifier_Tree_-_%C3%98stre_Anl%C3%A6g_-_Copenhagen_-_DSC07336.JPG/960px-Pacifier_Tree_-_%C3%98stre_Anl%C3%A6g_-_Copenhagen_-_DSC07336.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pacifier_Tree_-_%C3%98stre_Anl%C3%A6g_-_Copenhagen_-_DSC07336.JPG",
+     "licence": "CC0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Daderot\" title=\"User:Daderot\">Daderot</a>"
+    }
+   ]
+  },
+  "cop_013": {
+   "city": "Copenhagen",
+   "name": "The Sky-Reacher of Assistens",
+   "checked": "2026-08-09",
+   "candidates": []
   }
  },
  "notes": [
