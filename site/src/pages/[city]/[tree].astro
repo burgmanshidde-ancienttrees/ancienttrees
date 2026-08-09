@@ -68,8 +68,10 @@ const age = ageToken(tree);
 const canonical = `${BASE_URL}/${cslug}/${tslug}`;
 
 const title = fitTitle([
-  `${tree.name}: ${age} Year Old ${speciesCommon(tree)} in ${cityName}`,
-  `${tree.name}: ${age} Year Old Tree in ${cityName}`,
+  ...(age ? [
+    `${tree.name}: ${age} Year Old ${speciesCommon(tree)} in ${cityName}`,
+    `${tree.name}: ${age} Year Old Tree in ${cityName}`,
+  ] : []),
   `${tree.name} in ${cityName}`,
   tree.name,
 ]);

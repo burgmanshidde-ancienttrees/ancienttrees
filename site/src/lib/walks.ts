@@ -12,8 +12,9 @@ const WALKING_KMH = 4.5;
 const WALK_BUDGET_KM = 6.0;
 const WALK_MIN_TREES = 3;
 const WALK_CLUSTER_M = 900;
-const WALK_NAME_MAX = 34;
+export const WALK_NAME_MAX = 34;
 const WALK_SPLIT_KM = 3.0;
+const COMBINED_MAX_KM = 6.0; // up to here "Both walks" is still offered as one outing
 const WALK_MAX_OVERLAP = 0.5;
 
 type LatLng = [number, number];
@@ -40,6 +41,7 @@ export interface Walk {
   shape?: [number, number][];
   duration?: string;
   label?: string;
+  combined?: boolean;
 }
 
 export function haversineKm(a: LatLng, b: LatLng): number {
@@ -82,7 +84,17 @@ function planWalkingRoute(points: LatLng[], budgetKm = WALK_BUDGET_KM): { order:
       current = nxt;
     }
     if (order.length < WALK_MIN_TREES) continue;
-    if (!best || order.length > best[0].length || (order.length === best[0].length && total < best[1])) {
+    // An exact tie (a route and its mirror image, same edges summed in
+    // opposite order) sums to bit-identical totals in Python's math library
+    // but not always in JS's, off by ~1e-13 km of pure floating-point noise.
+    // Untreated, that flips which direction wins an otherwise-genuine tie,
+    // which then misses data/walk-routes.json's cache key (built from the
+    // tree-id order Python picked) and silently falls back to a straight-
+    // line estimate instead of the real routed distance. The epsilon is
+    // nanometre-scale: far above the observed noise floor, far below any
+    // distance difference that should ever decide a real tie.
+    const strictlyShorter = total < best?.[1] - 1e-9;
+    if (!best || order.length > best[0].length || (order.length === best[0].length && strictlyShorter)) {
       best = [order, total];
     }
   }
@@ -159,8 +171,13 @@ function legKm(order: number[], points: LatLng[]): number {
   return total * DETOUR_FACTOR;
 }
 
-/** Cut a long route in half at its midpoint, letting the junction tree
- * belong to both halves, when a route is too long to walk in one go. */
+/** Cut a long route in half at its midpoint, into two DISJOINT halves, when
+ * a route is too long to walk in one go. The first version let the junction
+ * tree belong to both halves; Hidde saw the result on Amsterdam and called
+ * it: two walks whose lines are welded together at the shared tree read as
+ * ONE walk on the overview map (2026-08-08). So the halves are now disjoint,
+ * and the way to walk both is the explicit "Both walks" choice planWalks
+ * adds when the whole route is still a doable afternoon. */
 function splitRoute(order: number[], points: LatLng[], depth = 0): number[][] {
   const km = legKm(order, points);
   if (depth >= 2 || km <= WALK_SPLIT_KM || order.length < WALK_MIN_TREES * 2) return [order];
@@ -174,9 +191,9 @@ function splitRoute(order: number[], points: LatLng[], depth = 0): number[][] {
       break;
     }
   }
-  cut = Math.max(WALK_MIN_TREES - 1, Math.min(cut, order.length - WALK_MIN_TREES));
+  cut = Math.max(WALK_MIN_TREES - 1, Math.min(cut, order.length - WALK_MIN_TREES - 1));
   const first = order.slice(0, cut + 1);
-  const second = order.slice(cut);
+  const second = order.slice(cut + 1); // disjoint: no shared tree
   if (first.length < WALK_MIN_TREES || second.length < WALK_MIN_TREES) return [order];
   return [...splitRoute(first, points, depth + 1), ...splitRoute(second, points, depth + 1)];
 }
@@ -191,15 +208,28 @@ function tooSimilar(a: number[], b: number[]): boolean {
 /** Every honest walk in a city, not just the best one. */
 export function planWalks(markers: WalkMarker[], budgetKm = WALK_BUDGET_KM): Walk[] {
   const points: LatLng[] = markers.map((m) => [m.lat, m.lng]);
+  // The chaining radius, with a fallback measured on 2026-08-08. At 900 m,
+  // 30 of 91 cities had no walk at all, and 11 of them (London, Venice,
+  // Copenhagen, The Hague among them) get their first walk at 1500 m: their
+  // trees stand 1.0-1.5 km apart, which is still an afternoon in a big
+  // city. But 1500 m globally welds Paris, Vienna, Naples and Nice's named
+  // walks into one blob each. So the wider radius applies ONLY to a city
+  // that would otherwise have no walk: cities with walks keep them exactly
+  // as they are, and a first walk beats no walk.
+  let groups = walkClusters(points);
+  if (!groups.some((g) => g.length >= WALK_MIN_TREES)) groups = walkClusters(points, 1500);
   const walks: Walk[] = [];
-  for (const members of walkClusters(points)) {
+  const combined: Walk[] = [];
+  for (const members of groups) {
     if (members.length < WALK_MIN_TREES) continue;
     const sub = members.map((i) => points[i]);
     const route = planWalkingRoute(sub, budgetKm);
     if (!route) continue;
     const order = route.order.map((i) => members[i]);
+    let kept = 0;
     for (const leg of splitRoute(order, points)) {
       if (walks.some((w) => tooSimilar(leg, w.order))) continue;
+      kept++;
       const km = Math.round(legKm(leg, points) * 10) / 10;
       walks.push({
         order: leg,
@@ -209,13 +239,39 @@ export function planWalks(markers: WalkMarker[], budgetKm = WALK_BUDGET_KM): Wal
         name: walkName(leg, markers),
       });
     }
+    // A split cluster's halves are disjoint (Hidde, 2026-08-08: welded
+    // lines read as one walk on the overview). The full route survives as
+    // an explicit choice when it is still a doable afternoon, so the
+    // visitor with the whole day loses nothing.
+    if (kept > 1) {
+      const kmFull = Math.round(legKm(order, points) * 10) / 10;
+      if (kmFull <= COMBINED_MAX_KM) {
+        combined.push({
+          order,
+          count: order.length,
+          km: kmFull,
+          minutes: Math.round((kmFull / WALKING_KMH) * 60),
+          name: kept === 2 ? "Both walks" : `All ${kept} walks`,
+          combined: true,
+        });
+      }
+    }
   }
+  // Photographed trees first, then size. Sorting on size alone put Barcelona's
+  // worst walk in front: the ten Pedralbes trees are its tightest cluster and
+  // also its newest, so not one of them had a photograph while a Montjuic
+  // walk with four sat hidden behind a chip. A visitor decides from the
+  // pictures whether an afternoon is worth it, so the walk that leads is the
+  // one they can see, and every other walk is still one tap away.
   for (const w of walks) w.shots = w.order.filter((i) => markers[i].shot).length;
   walks.sort((a, b) => (b.shots ?? 0) - (a.shots ?? 0) || b.count - a.count || a.km - b.km);
   const nameCounts = new Map<string, number>();
   for (const w of walks) if (w.name) nameCounts.set(w.name, (nameCounts.get(w.name) ?? 0) + 1);
   const dupes = new Set([...nameCounts.entries()].filter(([, n]) => n > 1).map(([name]) => name));
   for (const w of walks) if (dupes.has(w.name)) w.name = "";
+  // The combined option rides last, after its parts, never as the lead walk.
+  for (const w of combined) w.shots = w.order.filter((i) => markers[i].shot).length;
+  walks.push(...combined);
   return walks;
 }
 
@@ -243,12 +299,41 @@ function loadWalkRoutes(): Record<string, WalkRoute> {
 }
 
 /** Real pedestrian geometry per walk, cached by scripts/route_walks.py.
- * Missing file/key or a rejected route falls back to the straight line. */
+ * Missing file/key or a rejected route falls back to the straight line.
+ *
+ * Also tries the reversed tree-id order before giving up. The cache key is
+ * the exact order plan_walking_route's nearest-neighbour search picked for
+ * a cluster, and that search sometimes has to break a genuine tie between
+ * a route and its exact mirror image (same edges, opposite direction) by
+ * whichever total is fractionally smaller. That fraction is femtometre-
+ * scale floating-point noise, not a real distance, and JS and Python's
+ * math libraries don't produce identical noise for the same inputs, so the
+ * two languages can pick opposite directions for the same walk. A walking
+ * route and its reverse are the same physical path either way (same km,
+ * same minutes, and the drawn line looks identical regardless of which end
+ * of the polyline coordinates start from), so falling back to the reversed
+ * key recovers the real routed distance instead of silently degrading to a
+ * straight-line estimate over an arbitrary tie-break disagreement. */
 export function walkRouteFor(citySlug: string, treeIds: string[]): WalkRoute | null {
   const routes = loadWalkRoutes();
-  const r = routes[`${citySlug}:${treeIds.join(",")}`];
+  let r = routes[`${citySlug}:${treeIds.join(",")}`];
+  if (!r) r = routes[`${citySlug}:${[...treeIds].reverse().join(",")}`];
   if (!r || r.rejected || !r.shape) return null;
   return r;
+}
+
+/** Match Python's implicit float formatting for a walk's km figure: every
+ * km value there is a Python float (either round(x, 1), or read straight
+ * from data/walk-routes.json's "km": 0.0-style fields), and str(float)
+ * always shows at least one decimal, even for a whole number (str(2.0) ==
+ * "2.0"). JS numbers have no separate float type and drop the trailing
+ * zero, which showed up as a real page-text diff against the Python build
+ * (Krakow's degenerate 0.0 km walk rendering as "0 km"). Only whole numbers
+ * need help: JS's default number-to-string already matches Python's str()
+ * for the general case, since both use the shortest round-trip decimal for
+ * an IEEE 754 double. */
+export function kmLabel(km: number): string {
+  return Number.isInteger(km) ? km.toFixed(1) : String(km);
 }
 
 export function humanDuration(minutes: number): string {

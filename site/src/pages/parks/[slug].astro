@@ -101,6 +101,14 @@ const graph = [...SITE_SCHEMA, breadcrumbSchema(crumbItems, canonical), { "@type
         </div>
       );
     })}
+    {intro.data.official_url && (
+      // The reciprocity OUTREACH.md promises has to actually exist on the
+      // page: opening hours, tickets and closures are theirs to state, not
+      // ours. Ported from build_park_page(), origin/main 7f02499.
+      <p class="suggest">
+        Opening times and visitor information: <a href={intro.data.official_url} rel="noopener">{intro.data.official_name || "the official site"}</a>.
+      </p>
+    )}
     <p class="suggest">
       More parks worth the walk: <a href="/parks">every park we map</a>. Or explore by city:{" "}
       {otherCities.map((q, i) => (

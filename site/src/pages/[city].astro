@@ -16,7 +16,7 @@ import { fitTitle } from "../lib/title";
 import { submitLink } from "../lib/tree-copy";
 import { bestTimeShort } from "../lib/phenology";
 import { mapHead } from "../lib/map";
-import { planWalks, walkRouteFor, humanDuration, mapsRouteUrl, type WalkMarker, type Walk } from "../lib/walks";
+import { planWalks, walkRouteFor, humanDuration, mapsRouteUrl, kmLabel, WALK_NAME_MAX, type WalkMarker, type Walk } from "../lib/walks";
 import { cityMapScript } from "../lib/city-map-script";
 import { otherCitiesFor } from "../lib/other-cities";
 import { byCityListOrder } from "../lib/city-order";
@@ -164,6 +164,25 @@ if (route) {
     w.duration = humanDuration(w.minutes);
     w.label = w.count < markers.length ? `Walk ${w.count} of these trees` : `Walk all ${w.count} trees`;
   }
+  // Name a combined option after the walks it actually joins. Hidde,
+  // 2026-08-08: "Both walks is wel verwarrend als er meer dan 2 walks
+  // zijn." He is right, and it was worse than the wording: a city with two
+  // split clusters would show two identical "Both walks" chips. The parts
+  // are recoverable, since a combined walk's members are exactly the union
+  // of its legs.
+  const display = walks.map((w, i) => w.name || `Walk ${i + 1}`);
+  for (const w of walks) {
+    if (!w.combined) continue;
+    const members = new Set(w.order);
+    const parts = walks
+      .map((x, i) => [x, i] as const)
+      .filter(([x]) => !x.combined && x.order.every((m) => members.has(m)))
+      .map(([, i]) => i);
+    if (parts.length < 2) continue;
+    let joined = parts.map((i) => display[i]).join(" + ");
+    if (joined.length > WALK_NAME_MAX) joined = "Walks " + parts.map((i) => String(i + 1)).join(" + ");
+    w.name = joined;
+  }
 }
 const firstWalk = walks[0] ?? null;
 ---
@@ -262,11 +281,11 @@ const firstWalk = walks[0] ?? null;
       {firstWalk && (
         <div class="walks" id="walk">
           {walks.length > 1 && (
-            <div class="walk-picker" role="group" aria-label={`${walks.length} ${walks.length > 1 ? "walks" : "walk"} in ${cityName}`}>
+            <div class="walk-picker" role="group" aria-label={`${walks.filter((w) => !w.combined).length} ${walks.filter((w) => !w.combined).length > 1 ? "walks" : "walk"} in ${cityName}`}>
               {walks.map((w, i) => (
                 <button type="button" class="walk-pick" data-walk={i} aria-pressed="false">
                   <span class="walk-pick-name">{w.name || `Walk ${i + 1}`}</span>
-                  <span class="walk-pick-meta">{w.count} trees · {w.km} km</span>
+                  <span class="walk-pick-meta">{w.count} trees · {kmLabel(w.km)} km</span>
                 </button>
               ))}
             </div>
@@ -275,7 +294,7 @@ const firstWalk = walks[0] ?? null;
             <a class="route-go" id="route-go" href={firstWalk.url} target="_blank" rel="noopener">
               {firstWalk.name && <span class="route-name">{firstWalk.name}</span>}
               <span id="route-label">{firstWalk.label}</span>
-              <span class="route-meta" id="route-meta">about {firstWalk.km} km, {firstWalk.duration} on foot</span>
+              <span class="route-meta" id="route-meta">about {kmLabel(firstWalk.km)} km, {firstWalk.duration} on foot</span>
             </a>
             <button type="button" class="route-gps" id="gps-btn" aria-pressed="false">Where am I</button>
           </div>

@@ -4,21 +4,19 @@ import type { Tree } from "./trees";
 
 /** The number a page's title quotes for this tree's age: the figure the
  * age_estimate text itself states, even when a qualifier ("roughly", "over",
- * "traditionally") comes first. Falls back to age_min, string-coerced the
- * way Python's `str(tree.get("age_min", ""))` does: an explicit JSON `null`
- * (age_min present but unknown, e.g. barcelona's Mastic of Hort de l'Avi)
- * stringifies to the literal word "None" rather than an empty string, since
- * dict.get only applies its default when the key is absent, not when the
- * key's value is None. Matching that quirk, not fixing it here, is what
- * keeps this page's title byte-identical with the indexed production page;
- * the ugly title itself is a pre-existing content bug, out of scope for
- * this migration. */
-export function ageToken(tree: Tree): string {
+ * "traditionally") comes first. Falls back to age_min, or null when neither
+ * source gives a real number, matching build_site.py's post-2026-08-09
+ * age_token() (origin/main 2d7ffbc): `age_min = tree.get("age_min"); return
+ * str(age_min) if age_min else None`. Callers must guard on this being
+ * truthy before building a "N Year Old" title candidate — the earlier
+ * version of both this function and its callers had no such guard, which is
+ * how three published pages shipped with the literal text "None Year Old
+ * Tree" when age_min was explicitly null (an f-string interpolating Python's
+ * None object). Fixed at the source now, not papered over in the title. */
+export function ageToken(tree: Tree): string | null {
   const m = (tree.age_estimate ?? "").match(/(\d[\d,]*\+?)/);
   if (m) return m[1];
-  if (tree.age_min === undefined) return "";
-  if (tree.age_min === null) return "None";
-  return String(tree.age_min);
+  return tree.age_min ? String(tree.age_min) : null;
 }
 
 /** Build a meta description from the story's opening sentences, max
@@ -41,7 +39,7 @@ export function metaFromStory(story: string): string {
 
 /** Every contribution button points at our own form, carrying what the
  * visitor was doing so the form preselects it. */
-export function submitLink(kind: "city" | "tree" | "correction"): string {
+export function submitLink(kind: "city" | "tree" | "correction" | "press"): string {
   return `/contribute?kind=${kind}`;
 }
 
