@@ -4,16 +4,36 @@
 // through the bundled npm package (see site-config.ts's note on MAPLIBRE_JS).
 import { MAPLIBRE_JS, MAPLIBRE_CSS, MAP_STYLE } from "./site-config";
 
+/** MapLibre, loaded without blocking the page.
+ *
+ * Until 2026-08-09 every page with a map carried a plain
+ * `<script src="unpkg.com/maplibre-gl...">`, which stops the parser dead
+ * while a few hundred kilobytes come down from a host that is not ours, on a
+ * fresh DNS lookup and TLS handshake. Our own server answers in 33 to 158
+ * milliseconds, so that download was most of what a visitor waited for, and
+ * 72 percent of our search clicks arrive on a phone.
+ *
+ * `defer` fixes it without changing behaviour: the browser fetches in
+ * parallel, executes after parsing, and deferred external scripts run in
+ * document order strictly before DOMContentLoaded. So the init below, moved
+ * into a DOMContentLoaded listener, is guaranteed to find `maplibregl`
+ * defined. That guarantee is the whole reason this is a wrapper rather than
+ * an IntersectionObserver: lazy-until-visible would be faster still and
+ * would also stop the map ever building in a headless render, which is what
+ * the smoke test checks. */
+export function mapScript(body: string): string {
+  return `\n<script defer src="${MAPLIBRE_JS}"></script>\n<script>\n` +
+    `document.addEventListener("DOMContentLoaded", function () {\n${body}\n});\n</script>\n`;
+}
+
 export function mapHead(): string {
-  return `<link rel="stylesheet" href="${MAPLIBRE_CSS}">`;
+  return `<link rel="preconnect" href="https://unpkg.com" crossorigin>\n<link rel="stylesheet" href="${MAPLIBRE_CSS}">`;
 }
 
 /** A single-pin map: the tree page's own map, ported from
  * single_pin_script(), build_site.py:1203-1219. */
 export function singlePinScript(lat: number, lng: number, label = "1"): string {
-  return `
-<script src="${MAPLIBRE_JS}"></script>
-<script>
+  return mapScript(`
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [${lng}, ${lat}], zoom: 14.5, scrollZoom: false,
@@ -25,8 +45,7 @@ var el = document.createElement('div');
 el.className = 'pin';
 el.textContent = '${label}';
 new maplibregl.Marker({ element: el }).setLngLat([${lng}, ${lat}]).addTo(map);
-</script>
-`;
+`);
 }
 
 export interface CountryMapCity {
@@ -52,9 +71,7 @@ export function countryMapScript(cities: CountryMapCity[]): string {
       properties: { slug: c.slug, city: c.city, n: String(c.count) },
     })),
   };
-  return `
-<script src="${MAPLIBRE_JS}"></script>
-<script>
+  return mapScript(`
 var CITIES = ${JSON.stringify(data)};
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
@@ -89,8 +106,7 @@ map.on('load', function() {
   map.on('mouseenter', 'city-dot', function() { map.getCanvas().style.cursor = 'pointer'; });
   map.on('mouseleave', 'city-dot', function() { map.getCanvas().style.cursor = ''; });
 });
-</script>
-`;
+`);
 }
 
 export interface ExploreTreeFeature {
@@ -119,7 +135,7 @@ export function exploreMapScript(features: ExploreTreeFeature[], cities: Explore
   const geojson = JSON.stringify({ type: "FeatureCollection", features });
   const citiesJson = JSON.stringify(cities);
   return (
-    `<script src="${MAPLIBRE_JS}"></script>\n<script>\n` +
+    mapScript(
     `
 var DATA = ${geojson};
 var CITIES = ${citiesJson};
@@ -284,8 +300,7 @@ renderPanel();
   }
   requestAnimationFrame(pulse);
 })(0);
-` +
-    "\n</script>"
+`)
   );
 }
 
