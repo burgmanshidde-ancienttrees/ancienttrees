@@ -154,13 +154,20 @@ const walks: Walk[] = planWalks(markers);
 const route = walks[0] ?? null;
 if (route) {
   for (const w of walks) {
-    w.url = mapsRouteUrl(w.order.map((i) => [markers[i].lat, markers[i].lng]));
     const routed = walkRouteFor(cslug, w.order.map((i) => trees[i].id));
     if (routed) {
+      // A cache hit via the reversed-order fallback means OUR nearest-
+      // neighbour tie-break picked the opposite direction from whatever
+      // scripts/route_walks.py recorded. Reverse w.order to match before
+      // deriving anything from it (the maps URL below, and this walk's
+      // "members" in the map-script payload), or the directions link would
+      // swap origin and destination relative to the real page.
+      if (routed.reversed) w.order = [...w.order].reverse();
       w.shape = routed.shape;
       w.km = routed.km ?? w.km;
       w.minutes = routed.minutes ?? w.minutes;
     }
+    w.url = mapsRouteUrl(w.order.map((i) => [markers[i].lat, markers[i].lng]));
     w.duration = humanDuration(w.minutes);
     w.label = w.count < markers.length ? `Walk ${w.count} of these trees` : `Walk all ${w.count} trees`;
   }

@@ -282,6 +282,14 @@ interface WalkRoute {
   km?: number;
   minutes?: number;
   rejected?: boolean;
+  /** Set only on the object this module returns, never stored in the cache
+   * file itself: true when the hit came from the reversed-order fallback
+   * key, so the caller knows to reverse its own walk order (and therefore
+   * its members list and its Google Maps directions URL) to stay
+   * consistent with the direction this cached route was actually recorded
+   * in. The shape/km/minutes need no such correction, a walking route and
+   * its mirror cover the same physical path either way. */
+  reversed?: boolean;
 }
 
 let cachedRoutes: Record<string, WalkRoute> | null = null;
@@ -317,9 +325,13 @@ function loadWalkRoutes(): Record<string, WalkRoute> {
 export function walkRouteFor(citySlug: string, treeIds: string[]): WalkRoute | null {
   const routes = loadWalkRoutes();
   let r = routes[`${citySlug}:${treeIds.join(",")}`];
-  if (!r) r = routes[`${citySlug}:${[...treeIds].reverse().join(",")}`];
+  let reversed = false;
+  if (!r) {
+    r = routes[`${citySlug}:${[...treeIds].reverse().join(",")}`];
+    reversed = true;
+  }
   if (!r || r.rejected || !r.shape) return null;
-  return r;
+  return reversed ? { ...r, reversed: true } : r;
 }
 
 /** Match Python's implicit float formatting for a walk's km figure: every
