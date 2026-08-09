@@ -186,6 +186,109 @@
       "curation_status": "flagged",
       "notes": "The distinction between the original 'Het Testver' plane (died c.1935) and this successor tree (war-damaged and regrown after January 1945, renamed 'Hetvezer' in tribute) is documented in detail and consistently across pestbuda.hu's dedicated feature and szeretlekmagyarorszag.hu's independent piece; kept the two trees clearly separate in the story to avoid the same original-versus-successor conflation this project has caught in other cities. Coordinates are Palatinus Strand's general location, not a surveyed point for the tree itself.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "bud_006",
+      "name": "The Old St Lucie Cherry of the Fuveszkert",
+      "species": "St Lucie Cherry (Prunus mahaleb)",
+      "age_estimate": "around 250 years",
+      "age_min": 230,
+      "age_max": 270,
+      "location": {
+        "address": "ELTE Fuveszkert (botanical garden), roughly 80 metres along the main path from the entrance at Illes utca 25, Jozsefvaros",
+        "latitude": 47.4845,
+        "longitude": 19.0842,
+        "neighbourhood": "Jozsefvaros"
+      },
+      "story": "The St Lucie cherry is usually a shrub. Six metres is a good one. This tree is 11.2 metres tall, with a trunk 339 centimetres around and a crown twelve metres wide, which is extraordinary for a species that normally grows out of a dry limestone slope at the edge of a wood. Hungarians call it sajmeggy. Nobody expects one to reach the size of an oak.\n\nIt also got here first. ELTE's Fuveszkert is Hungary's oldest botanical garden, founded in 1771, but it only reached this ground in 1847, when the university bought the ten hectare Festetics castle garden with the backing of Palatine Archduke Joseph. Before the Festetics family took the property in 1798 it belonged to Marton Szeleczky, an imperial loyalist, and the cherry was already standing on his private estate. The garden was laid out around it rather than planted with it. At roughly 250 years old it has watched a nobleman's grounds turn into a scientific collection and then into a place anyone can buy a ticket to, without ever moving.\n\nIt stands alone beside the main path, about eighty metres in from the Illes utca gate, on level ground you can reach with a pushchair or a wheelchair. Our pin is the garden rather than the tree, so look for the solitary one with the wide low crown.",
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "label": "April into May, when the whole crown flowers white and fragrant",
+        "kind": "flowers"
+      },
+      "verified_sources": [
+        "https://pestbuda.hu/cikk/20220126_a_magyar_ertektarba_kerult_az_elte_fuveszkertje",
+        "https://www.termeszetjaro.hu/hu/poi/noevenyvilag/boelcs-fa-a-sajmeggy-a-budapesti-elte-fueveszkertben/803010291/"
+      ],
+      "access": "Paid entry, ELTE Fuveszkert botanical garden. Adult ticket 2200 Ft (2026 pricing), open daily 9:00-17:00 in main season (ticket office closes 16:30); hours vary by season, check before visiting",
+      "transport": "M3 metro to Nagyvarad ter, then roughly 5-10 minute walk through Orczy-kert to the garden entrance on Illes utca",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bud_007",
+      "name": "The Count's Mulberry of Karolyi Garden",
+      "species": "White Mulberry (Morus alba)",
+      "age_estimate": "roughly 230-250 years",
+      "age_min": 220,
+      "age_max": 260,
+      "location": {
+        "address": "Karolyi kert (Karolyi Garden), beside the perimeter wall near the Ferenczy Istvan utca entrance gate, Belvaros, Budapest V. kerulet",
+        "latitude": 47.4923,
+        "longitude": 19.0595,
+        "neighbourhood": "Belvaros-Lipotvaros"
+      },
+      "story": "It takes two adults with their arms spread to get around this trunk, and nobody knows who planted it. The two candidates sit half a century apart. Count Antal Karolyi bought the palace next door in 1768 and rebuilt the garden in the baroque manner soon after, which would make the mulberry a tree of the late 1700s. A later Karolyi, Gyorgy, modernised the same garden in the 1830s. Both sources that describe it say plainly that the planting date is unknown and neither picks a side, so somewhere between 230 and 250 years is the working figure rather than a fact.\n\nWhat it stood through is better documented. In 1795 the palace held its reception for the newly installed Palatine Joseph, and in 1800 a name day ball for Alexandra Pavlovna, both of them spilling out into this garden. In 1838 the Danube came into Pest and the palace took in hundreds of families whose houses had dissolved in the water. After the 1848 revolution failed, General Haynau ran his headquarters from the same building, and the garden outside went on being a garden.\n\nIt is probably the oldest white mulberry in Hungary. Safety pruning has left it blunter than it was, which is the price of keeping a heavy old tree standing in a park full of children. Look along the perimeter wall near the Ferenczy Istvan utca gate. In June and July the fruit drops and stains the path.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June into July, when the mulberries ripen and drop",
+        "kind": "fruit"
+      },
+      "verified_sources": [
+        "https://pestbuda.hu/cikk/2018113_a_grof_ur_eperfaja",
+        "https://welovebudapest.com/toplista/2019/09/02/5-budapesti-famatuzsalem-amely-elkepeszto-dolgokat-lathatott-mar-a-varos-multjabol/"
+      ],
+      "access": "Free, open access, Karolyi kert (public park in central Budapest), opens 8:00 daily, closes at sunset (seasonal)",
+      "transport": "Ferenciek tere metro (M3), roughly 7 minute walk; also close to Astoria (M2) and Kalvin ter (M3/M4)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "bud_008",
+      "name": "The Old Acacia of Szechenyi Square",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "documented as 227 years (planted 1789), though disputed; possibly considerably younger",
+      "age_min": 120,
+      "age_max": 227,
+      "location": {
+        "address": "Szechenyi Istvan ter, on the traffic island near the Buda-side approach to the Chain Bridge, Budapest V. kerulet",
+        "latitude": 47.500083,
+        "longitude": 19.0471,
+        "neighbourhood": "Belvaros-Lipotvaros"
+      },
+      "story": "This tree is celebrated for being 227 years old, and a historian has taken that number apart with photographs. The popular account, carried by Az Ev Faja when the tree was nominated in 2015, has it planted in 1789, the year the Bastille fell, as the last survivor of a Danube side avenue laid out in the 1780s. That would make it older than the Chain Bridge beside it, older than the Academy of Sciences and older than the Gresham Palace.\n\nThen Zsofia Viczian went through the pictures. Photographs and postcards of the square from before 1867 show no tree at this spot, only the mound of earth raised for a coronation. Gyorgy Klosz photographed the place in 1875 and cart drivers are standing where the trunk was supposedly already growing. The tree first appears as a substantial thing in a postcard from the 1930s, which would put it nearer 120 or 150 years. Both accounts are in print and neither has given way.\n\nWhatever its age, it is a wreck kept upright by attention. The trunk leans hard, about four metres around and only six metres tall, propped since the 1980s on wooden supports set on iron beams, cushioned where they meet the bark. A large branch died in that decade and took its counterweight with it. It came through the war and nine renamings of the square. It stands on a paved traffic island, so you cross a road to reach it.",
+      "verified_sources": [
+        "https://evfaja.hu/fa/2015/budapest-legoregebb-akacfaja",
+        "https://pestbuda.hu/cikk/20160225_a_pesti_mohikan_akac_a_lanchidnal"
+      ],
+      "access": "Free, open access, but stands on a traffic island on Szechenyi Istvan ter surrounded by roads; reached on foot via pedestrian crossings only, not a park setting",
+      "transport": "Close to Deak Ferenc ter and the Buda-side approach to the Chain Bridge; several city bus and tram routes serve Szechenyi Istvan ter directly",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

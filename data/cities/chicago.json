@@ -1,0 +1,157 @@
+{
+  "city": "Chicago",
+  "country": "United States",
+  "status": "needs_curation",
+  "oldest_tree_id": "chi_003",
+  "intro": "Chicago is a young city on old prairie, and its remarkable trees are the prairie's survivors: bur oaks that stood here before the city had a name. One shaded the Midway while the 1893 World's Fair was built around it, a grove on Wooded Island survived the same fair's landscaping, and a savanna remnant in a Norwood Park cemetery may be older than the United States. The famous zoo oak fell in 2023, which makes the ones still standing worth the trip. All four are free.",
+  "meta_description": "Chicago's remarkable trees are prairie survivors: bur oaks older than the city, from the Midway to Wooded Island, plus a state champion. Mapped.",
+  "question_meta": "Chicago's oldest trees are the bur oaks of Union Ridge Cemetery, estimated at 325 to 375 years. Their story, and three more remarkable trees.",
+  "question_answer": "Chicago's oldest known trees are the bur oaks of the Union Ridge Cemetery savanna in Norwood Park, estimated by one expert survey at 325 to 375 years, older than the United States. The most storied is the bur oak on the Midway Plaisance in Hyde Park, which stood before the 1893 World's Fair was laid out around it.",
+  "question_context": "Chicago's relationship with old trees is mostly a story of what the prairie kept. The city itself is young, incorporated in 1837, and it burned in 1871, so almost nothing planted stands out for age. What survives is what was already here: bur oaks, the prairie's fire-resistant veterans, in the few corners the city never quite got around to flattening. The best known of them, the bur oak at Lincoln Park Zoo that generations called Chicago's oldest tree, was cut down in May 2023 after it died, which quietly promoted the others. The Midway oak in Hyde Park carries a genuine dispute, one university account says it was planted for the 1893 fair, others say the fair was built around it, and its page gives both versions. The Union Ridge savanna's ages rest on a single expert's estimate and say so. That honesty matters here more than in most cities, because the register Illinois keeps for its champion trees records size, not age, and a champion is not automatically ancient.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Chicago?",
+      "a": "The bur oaks of the Union Ridge Cemetery savanna in Norwood Park, estimated at 325 to 375 years by the one expert survey that dated them. The estimate is diameter-based rather than core-based, and the page says so."
+    },
+    {
+      "q": "What happened to the famous oak at Lincoln Park Zoo?",
+      "a": "The bur oak that was long called Chicago's oldest tree died and was cut down in May 2023. It is not on this list; the trees that are, are the ones you can still stand under."
+    },
+    {
+      "q": "Are Chicago's remarkable trees free to visit?",
+      "a": "All four are free. The Midway oak and the Wooded Island grove stand in public parks, Union Ridge is a cemetery open in daylight hours, and the champion boxelder stands on a public golf course, best seen by asking at the clubhouse rather than crossing the fairways."
+    },
+    {
+      "q": "Why are they almost all bur oaks?",
+      "a": "Because the bur oak is the prairie's survivor: thick corky bark made it the one tree that shrugged off the prairie fires that cleared everything else. What was here before Chicago was mostly bur oak savanna, so what outlived Chicago's building is too."
+    }
+  ],
+  "trees": [
+    {
+      "id": "chi_001",
+      "name": "The Bur Oak on the Midway",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "roughly 250 to 300+ years",
+      "age_min": 230,
+      "age_max": 320,
+      "location": {
+        "address": "Midway Plaisance at Ellis Avenue, Hyde Park, Chicago, IL",
+        "latitude": 41.7889,
+        "longitude": -87.6014,
+        "neighbourhood": "Hyde Park"
+      },
+      "story": "When the Midway Plaisance was cleared and regraded for the 1893 World's Fair, one tree was left standing, and this is it. By then it was already substantial enough that the ecologist Henry Cowles used it in his 1901 textbook as the example of its kind. Accounts of the fair place it behind the Sitting Bull's Cabin exhibit and the ostrich farm concession, neither of which lasted the year. Sources disagree on how it got here, and it is worth stating both. The University of Chicago Magazine quotes a campus environment official describing it as ostensibly planted as part of a Native American exhibit during the fair itself. The better supported account, from the Hyde Park historian Gary Ossewaarde, from Cowles in 1901 and from a local history record of a 2024 trunk measurement, has it standing long before 1893 and deliberately spared. That measurement reportedly ran past the largest bur oak on the Morton Arboretum's own growth reference chart, which would push it beyond the 250 or so years usually quoted. Bur oak is the tree of the prairie edge in this part of Illinois, corky barked enough to survive the fires that kept the grassland open. This one is the last of that landscape left on the Midway. It stands near Ellis Avenue, in front of the university hospital, on a pin that is close rather than surveyed.",
+      "verified_sources": [
+        "https://www.dnainfo.com/chicago/20160718/hyde-park/whats-oldest-tree-chicago-experts-are-stumped/",
+        "https://trishmorse.blogspot.com/2020/11/the-bur-oak-on-midway.html",
+        "https://mag.uchicago.edu/university-news/money-trees"
+      ],
+      "access": "Free, public park path along the Midway Plaisance",
+      "transport": "Metra Electric District to 59th St/University of Chicago station, about 22 minutes from Millennium Station downtown, then a short walk to Ellis Ave and the Midway",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "chi_002",
+      "name": "The Bur Oak Grove of Wooded Island",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "the grove's oldest survivors are roughly 200 to 300 years",
+      "age_min": 200,
+      "age_max": 300,
+      "location": {
+        "address": "Wooded Island, Jackson Park, south end near the Clarence Darrow Bridge and Osaka Garden (6200 S. Cornell Ave area), Chicago, IL",
+        "latitude": 41.7838,
+        "longitude": -87.581,
+        "neighbourhood": "Jackson Park / Hyde Park"
+      },
+      "story": "One of these oaks blew down around 2016, and its rings were counted back to roughly 1730. It had been standing for nearly three centuries when it fell. The ones still up are of the same generation: DNAinfo reported 250 year old bur oaks across the island, with a red oak of about 150 among them. Wooded Island is the part of the 1893 World's Fair that was deliberately left alone. Frederick Law Olmsted kept buildings off it entirely while the Court of Honor went up in white plaster to the south, and fair era painters kept turning their backs on the architecture to paint these oaks instead. The island sits on an undisturbed sand ridge, which is why the soil under the trees was never scraped and rebuilt the way the rest of Jackson Park was. In 2016 the Army Corps of Engineers spent 8.1 million dollars restoring the habitat here and wrote the old bur oaks into the plan, along with roughly 120 bur oak saplings that had seeded themselves around their parents. An oak stand actually reproducing inside a city is a rare thing to stand in. The place to stand is the path just south of the Osaka Garden, looking into the south end of the island, where the grove reads as one thing rather than as scattered trees.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September and October, when the big fringed bur oak acorns come down"
+      },
+      "verified_sources": [
+        "https://www.dnainfo.com/chicago/20161017/hyde-park/wooded-island-jackson-park-habitat-restoration-million-columbian-exposition/",
+        "https://www.hpherald.com/evening_digest/hyde-park-stories-bur-oaks/article_e7d80b04-2032-4d3b-832a-fddec6fc547f.html",
+        "https://openlands.org/places/jackson-park-2/"
+      ],
+      "access": "Free, public park, Chicago Park District (Wooded Island / Osaka Garden)",
+      "transport": "Metra Electric District to 59th St/University of Chicago station, about 22 minutes from downtown, then roughly a 15 to 20 minute walk east across Jackson Park to Wooded Island; or CTA bus to the Museum of Science and Industry and cross the Clarence Darrow Bridge",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "chi_003",
+      "name": "The Bur Oak Savanna of Union Ridge Cemetery",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "the oldest estimated at 325 to 375 years, based on trunk size",
+      "age_min": 300,
+      "age_max": 375,
+      "location": {
+        "address": "Union Ridge Cemetery, 6700 W Higgins Ave, Chicago, IL 60656",
+        "latitude": 41.9722,
+        "longitude": -87.8156,
+        "neighbourhood": "Norwood Park"
+      },
+      "story": "The oldest oak in this grove has been estimated at 325 to 375 years, which would make it roughly two centuries older than the city around it. It was already a mature prairie tree when Chicago was a portage and a fort. The figure comes from Scott Carlini, quoted in a 2016 hunt for the city's oldest tree, and it is based on trunk diameter rather than a ring core, so treat it as directional. We found no second independent estimate, which is why this entry stays flagged. What is solid is the setting. Union Ridge took its first burial in 1841 and is described by the Norwood Park Historical Society as the oldest continuously operating cemetery in Chicago. The ground was open prairie before it was platted, and what stands here is a genuine relict bur oak savanna: widely spaced, heavy limbed trees with daylight between them, which is what oaks look like when they grow up in grassland rather than in forest. Bur oak's thick corky bark let it survive the fires that kept that prairie open, and the graves that arrived in 1841 put an end to both the fires and the plough. It is a working cemetery, so come during posted visiting hours and behave like a guest. The pin is the entrance; the old section and its oaks are inside the grounds.",
+      "verified_sources": [
+        "https://www.dnainfo.com/chicago/20160829/norwood-park/is-chicagos-oldest-tree-rooted-citys-oldest-operating-cemetery/",
+        "https://unionridgecemetery.org/our-story"
+      ],
+      "access": "Free, cemetery grounds open to visitors during posted hours",
+      "transport": "Metra Union Pacific Northwest Line to Norwood Park station, about 22 minutes from Ogilvie Transportation Center downtown, then a short walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "chi_004",
+      "name": "The Champion Boxelder of Edgebrook",
+      "species": "Box Elder (Acer negundo)",
+      "age_estimate": "not documented",
+      "age_min": 60,
+      "age_max": 100,
+      "location": {
+        "address": "Edgebrook Golf Course, 6100 N Central Ave, Chicago, IL 60646 (Forest Preserves of Cook County)",
+        "latitude": 41.98862,
+        "longitude": -87.7684695,
+        "neighbourhood": "Forest Glen / Edgebrook"
+      },
+      "story": "Boxelder is the tree nobody wants. It seeds itself into alleys and back lots, drops limbs, hosts the boxelder bugs that get into houses in autumn, and is generally written off as a weed that never lives long enough to get big. This one is the biggest known in Illinois. The state's Big Tree Register, run by University of Illinois Extension, ranks it champion of its species: just over nine feet around the trunk, 55 feet tall, a crown spreading 35 feet, and 172.3 points on the register's scoring formula, ahead of the runner up down in Shawnee National Forest at the far southern end of the state. It was measured and listed in 2026 with a dated photograph, so it is standing now. One honesty note, and it is the reason this entry is flagged: the register is the only source we could find on it. The Sun-Times feature on the state's big trees, the Extension's own announcement and the Forest Preserves champion list all fail to mention it, most likely because the title is very new. No Illinois register carries an age field either, so nobody has dated this tree and we are not going to guess at it. Visiting is a golf question. It stands on Edgebrook Golf Course, a public course run by the Forest Preserves of Cook County, which normally means a green fee to walk the fairways, and whether it can be seen from the perimeter is unconfirmed.",
+      "verified_sources": [
+        "https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0/query?where=Common_name=%27boxelder%27&outFields=*&f=json",
+        "https://extension.illinois.edu/forestry/big-tree-register"
+      ],
+      "access": "Public 18-hole golf course, Forest Preserves of Cook County; a green fee is generally needed to walk the course itself, and whether the tree is visible from a public perimeter trail was not confirmed this pass",
+      "transport": "Metra Milwaukee District North Line to Edgebrook station, the last stop still inside Chicago city limits, roughly 30 minutes from Chicago Union Station, then about a 15 to 20 minute walk east on Devon/Central Ave to the golf course entrance",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    }
+  ]
+}

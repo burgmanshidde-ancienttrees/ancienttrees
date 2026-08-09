@@ -58,14 +58,14 @@ whether they would like to see it, and mention we link to them.
 | Organisation | City | Address |
 |---|---|---|
 | Royal Botanic Garden Edinburgh | Edinburgh | info@rbge.org.uk |
-| Real Orto Botanico di Napoli | Naples | find on ortobotanico.unina.it |
-| Giardino dei Semplici (Museo di Storia Naturale, Univ. Firenze) | Florence | find on sma.unifi.it |
-| York Museums Trust (Museum Gardens) | York | find on yorkmuseumstrust.org.uk |
+| Real Orto Botanico di Napoli | Naples | robnap@unina.it (site moved to ortobotaniconapoli.it) |
+| Giardino dei Semplici (Museo di Storia Naturale, Univ. Firenze) | Florence | segrmuseo@unifi.it |
+| York Museums Trust (Museum Gardens) | York | amy.cope@ymt.org.uk (PR officer) |
 | Bruxelles Environnement (Parc d'Egmont) | Brussels | info@environnement.brussels |
-| Reggia di Caserta (Giardino Inglese) | Caserta | find on reggiadicaserta.cultura.gov.it |
-| Schloss Nymphenburg (Bayerische Schlösserverwaltung) | Munich | find on schloesser.bayern.de |
-| Parco del Valentino (Città di Torino, Verde Pubblico) | Turin | find on comune.torino.it |
-| Parque del Retiro (Ayuntamiento de Madrid) | Madrid | find on madrid.es |
+| Reggia di Caserta (Giardino Inglese) | Caserta | re-ce@cultura.gov.it |
+| Schloss Nymphenburg (Bayerische Schlösserverwaltung) | Munich | presse@bsv.bayern.de |
+| Parco del Valentino (Città di Torino, Verde Pubblico) | Turin | form only: serviziweb.comune.torino.it/nuova-richiesta-itsm |
+| Parque del Retiro (Ayuntamiento de Madrid) | Madrid | parqueshistoricos@madrid.es (historic-parks unit, covers the Retiro) |
 
 ### 3b. The registers we cite and credit
 
@@ -74,12 +74,12 @@ section, which is the most natural link on the internet.
 
 | Organisation | Country | Address |
 |---|---|---|
-| RAMI, Registro degli Alberi Monumentali Italiani | Italy | find on ilregistrodeglialberi.it |
-| ICNF (Arvoredo de Interesse Publico) | Portugal | find on icnf.pt |
-| Ajuntament de Barcelona, arbrat viari | Spain | find on ajuntament.barcelona.cat |
+| RAMI, Registro degli Alberi Monumentali Italiani | Italy | Difor4@masaf.gov.it (the office the RAMI page names) |
+| ICNF (Arvoredo de Interesse Publico) | Portugal | geral@icnf.pt |
+| Ajuntament de Barcelona, arbrat viari | Spain | permisos_masu@bcn.cat (only published address of Parcs i Jardins) |
 | Stadt Wien, data.wien.gv.at | Austria | post@ma41.wien.gv.at (verify) |
-| Ville de Paris, Direction des Espaces Verts | France | find on paris.fr |
-| Senatsverwaltung Berlin (Naturdenkmale) | Germany | find on berlin.de |
+| Ville de Paris, Direction des Espaces Verts | France | form only: paris.fr/pages/contact-232 |
+| Senatsverwaltung Berlin (Naturdenkmale) | Germany | schutzgebiete@senmvku.berlin.de (the Naturdenkmale desk itself) |
 | Govern de les Illes Balears, SITIBSA | Spain | find on caib.es |
 | Generalitat Valenciana, ICV | Spain | find on icv.gva.es |
 
@@ -90,7 +90,7 @@ The audience overlap is total and there is no commercial conflict.
 | Organisation | Country | Why they would care |
 |---|---|---|
 | Bomenstichting | NL | Also tier 1; the register ask and the link ask are one email |
-| Monumental Trees (monumentaltrees.com) | intl | Hard rule 1 forbids using their content, but a mutual link is a different thing and their community is exactly ours |
+| ~~Monumental Trees~~ | intl | **DO NOT SEND (Hidde, 2026-08-09): we are their direct competitor** ("using it is miserable, that is the entire opening", COMPETITION.md). We currently operate quietly within the fact-verification zone their own disclaimer permits, needing nobody's permission; a mail invites them to look at us and close that zone. Nothing to win, our best verification channel to lose. Revisit only from strength, or never. |
 | The Tree Register (TROBI) | UK | Champion-tree records; independent of the Woodland Trust |
 | European Tree Worker / EAC | EU | Professional arborists across our whole map |
 | Arbor Day Foundation | US | Relevant when the US cities open |
@@ -159,6 +159,32 @@ without being told to.
 Rough order of value: 3a first (we have the strongest, most flattering hook and
 a page to show), then 3b and 3f, then 3c, then 3e, then 3d.
 
+## Tier 4: press. One story, sent one desk at a time
+
+Added 2026-08-08 on Hidde's instruction ("zorg dat we de juiste content klaar
+hebben staan om persbureaus mee te benaderen"). The content now exists:
+`/collections/europes-oldest-trees-are-immigrants`, built on a finding that
+survives checking, four in ten of the ancient trees we map in European cities
+are not European species. The pitch, in English and Dutch, is
+`drafts/press-pitch.md`. Every figure regenerates with
+`python3 scripts/press_numbers.py`, and the spreadsheet a desk will ask for
+comes from the same script with `--csv`.
+
+**Not a wire service, and never a blast.** A press agency wants an exclusive or
+a wire-ready fact; a small project has neither the reach nor the news hook for
+that yet. What works at this size is one desk at a time, in this order:
+
+| Order | Who | Why them |
+|---|---|---|
+| 1 | One national outlet that runs long nature pieces | The story is a feature, not a news item, and needs 800 words to land |
+| 2 | City desks of the cities in the story | Seville, Paris, London, Palermo, Valencia, Berlin all have a named tree in it, and a local tree is a local story |
+| 3 | Tree, garden and heritage press | Smallest reach, highest hit rate, and the audience is exactly ours |
+| 4 | Only then, if one of the above ran it | A piece that already exists elsewhere is what makes a wire desk answer |
+
+Addresses are deliberately not listed yet: the right desk is a named journalist
+who has written about trees or cities recently, and that is a lookup worth
+doing per outlet at the moment of sending rather than a list that goes stale.
+
 ## Rules for all of it
 
 - **Drafts only from me, always.** He sends, from his own address.
@@ -172,13 +198,41 @@ a page to show), then 3b and 3f, then 3c, then 3e, then 3d.
 - **Never mass-send.** Each of these is worth writing individually, and the
   moment it reads like a template it stops working and starts costing goodwill.
 
+## Addresses found 2026-08-08
+
+The contact scout read every address below off the organisation's own site
+(full detail per target in data/research/outreach-contacts.json: where it was
+found, what was form-only, what was Cloudflare-blocked). 24 of 28 have a real
+published email; 4 are form-only. Two cautions: Milano only publishes a PEC
+address (Transizioneambientale@pec.comune.milano.it), and PEC often rejects
+ordinary Gmail, so use the city's contact form if it bounces; and
+monumentaltrees.com is Cloudflare-walled, so its contact form needs a normal
+browser visit.
+
+Remaining addresses in one place: NYC Parks pressoffice@parks.nyc.gov, Porto
+geral@cm-porto.pt, Roma dipartimento.ambiente@comune.roma.it, TROBI
+membership@treeregister.org, Ancient Yew Group info@treeregister.org (same
+family), Arbor Day elennemann@arborday.org, baumkunde webmaster@baumkunde.de,
+prazskestromy prazskestromy@seznam.cz, woodwideweb
+woodwideweb.brussels@gmail.com, 100milarvores cre.porto@ucp.pt, getlisbon
+contact@getlisbon.com, unjourdeplusaparis contact@unjourdeplusaparis.com,
+bomenbieb info@bomenbieb.nl, jardinessinfronteras form-only.
+
 ## Log
 
 Record sends and replies here so nobody re-sends and nobody waits on a reply
-that already came.
+that already came. Machine sends are also in data/outreach-sent.json, which the
+send script enforces dedup against. Batch 001 success test: one reply or
+placement within two weeks proves the channel; zero is also an answer. Follow
+up politely after three or four weeks, never sooner.
 
 | Date | To | Ask | Status |
 |---|---|---|---|
+| 2026-08-08 | Het Parool, redactie@parool.nl | Amsterdam local pitch (Heimanseik + Plantage walk), batch 001 | **sent** |
+| 2026-08-08 | DUIC, redactie@duic.nl | Utrecht local pitch (Uithof linden), batch 001 | **sent** |
+| 2026-08-08 | Brabants Dagblad, stadsredactie@bd.nl | Den Bosch local pitch (Bastion Oranje maple), batch 001 | **sent** |
+| 2026-08-08 | Haarlems Dagblad, stadsredactie@haarlemsdagblad.nl | Haarlem local pitch (Lodewijk Napoleon beech), batch 001 | **sent** |
+| 2026-08-08 | De Gelderlander, redactie@gelderlander.nl | Arnhem local pitch (De Poortwachters), batch 001 | **sent** |
 | 2026-08-08 | Generalitat de Catalunya, arbresmonumentals.tes@gencat.cat | Permission to show Catalonia's monumental trees; unlocks Barcelona's trees AND its photos | **sent**, no reply yet |
 | 2026-08-08 | Woodland Trust, ancienttreeinventory@woodlandtrust.org.uk | Written permission for ATI data; unlocks London and Edinburgh | **sent**, no reply yet |
 

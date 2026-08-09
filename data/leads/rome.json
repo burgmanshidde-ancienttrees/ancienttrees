@@ -1,18 +1,9 @@
 {
   "city": "Rome",
   "country": "Italy",
-  "researched": "2026-08-05",
+  "researched": "2026-08-05, updated 2026-08-08 (deepen verify pass)",
   "note": "Source pool is the 65 entries for comune di Roma in the MASAF national register, cross-read against the Lazio regional register (https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx, Nov 2025), which is the richer of the two: it carries the monumentality criteria per tree, a NOTE column, and a second sheet of trees REMOVED from the list with the reason. Six trees were published from this pass as rom_011 to rom_016, thickening the Villa Sciarra, Trastevere, Capitoline and Villa Borghese walks. Everything else is here. Do not quote 65 as a count of monumental trees in Rome: it is a count of register entries, six of them are 'insieme omogeneo' groups rather than single trees, and 22 of them stand inside a closed presidential estate. Rome's own municipal page NWS1195295 narrates only about 20 of them, the batch registered up to 2018; sheets numbered 57 and above have no municipal narrative at all, which is why several entries below are stuck at one source.",
   "leads": [
-    {
-      "name": "Cedar of Lebanon of Villa Torlonia",
-      "species": "Cedrus libani",
-      "girth_cm": 600,
-      "height_m": 28,
-      "location": { "latitude": 41.915203, "longitude": 12.510978 },
-      "sources": ["MASAF / Lazio 19/H501/RM/12", "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295"],
-      "why_not_published": "Strongest single unpublished tree in Rome: the thickest cedar on the city's register at six metres around, standing by the obelisk in a free public park, and Roma Capitale's own page calls it colossal. Two sources exist, so it clears the evidence bar. Held back only on clustering: Villa Torlonia is 3.5km from the centre and would open a new walk rather than thicken an existing one. It pairs naturally with the stone pine below, so the two should ship together as a Nomentana cluster."
-    },
     {
       "name": "Stone Pine of Villa Torlonia",
       "species": "Pinus pinea",
@@ -20,25 +11,7 @@
       "height_m": 32,
       "location": { "latitude": 41.912472, "longitude": 12.513417 },
       "sources": ["MASAF / Lazio 75/H501/RM/12"],
-      "why_not_published": "Second tallest tree on Rome's register and a textbook umbrella pine, but register-only: sheet 75 postdates the municipal narrative page. Note that a different Villa Torlonia stone pine, sheet 18, is on the Lazio REMOVED list as dead, so any pass shipping this one must be explicit about which is which."
-    },
-    {
-      "name": "Chir Pine of Colle Oppio",
-      "species": "Pinus roxburghii",
-      "girth_cm": 290,
-      "height_m": 20,
-      "location": { "latitude": 41.893528, "longitude": 12.497111 },
-      "sources": ["MASAF / Lazio 71/H501/RM/12", "https://www.ilmessaggero.it/roma/cronaca/roma_il_miracolo_del_pino_della_domus_aurea_rinasce_l_albero_arrivato_dall_himalaya-3589907.html"],
-      "why_not_published": "The best story in the Roman register and the one that needs feet on the ground. Il Messaggero reports the tree was brought back from the Himalaya by Giuseppe Tucci, the Tibetologist and Mussolini's envoy, and was already standing at the 1936 inauguration of the Colle Oppio garden directly above the Domus Aurea; its roots then began crushing the nymphaeum of Ulysses and Polyphemus below, and the paper's own framing is that the giant was destined to die and was propagated so its offspring could survive it. VITALITY UNRESOLVED. It is still on the Lazio active list as of November 2025, which is real evidence it stands, but the register's removal sheet lags reality and the Domus Aurea garden redesign explicitly involves removing the tall trees above the ruin. Registered for botanical rarity alone. Worth a run of its own to settle: it would thicken the Celio and Colosseum walk, 1km from Villa Celimontana."
-    },
-    {
-      "name": "Mediterranean Hackberry of the Parco degli Scipioni",
-      "species": "Celtis australis",
-      "girth_cm": 401,
-      "height_m": 20,
-      "location": { "latitude": 41.876611, "longitude": 12.501361 },
-      "sources": ["MASAF / Lazio 66/H501/RM/12"],
-      "why_not_published": "Register-only, no second source found. Public park off Via di Porta Latina, open 7am to sunset, laid out in 1929 by Raffaele de Vico around the Tomb of the Scipios and the columbarium of Pomponius Hylas. Pairs with the hackberry below, 120m away, so the two would make a small real cluster 1.2km from Villa Celimontana. CHECKED 2026-08-06 (2nd verify pass): RAMI (ilregistrodeglialberi.it) has no entry matching sheets 65 or 66/H501/RM/12 or this location; its only 'bagolaro' entries (#9251, #9252) are a different pair in Villa Borghese near the Museo Bilotti, not this park. APGI's own PDF on the park (apgi.it garden database, id 1311) and turismoroma.it/oggiroma.it park pages describe the park's history and general planting (pines, cypresses, laurel, myrtle along the Scipio tomb ramps) but name no individual bagolaro. A WebSearch summary claimed a quoted description of 'a majestic nettle tree... one of the most important specimens in the park' but this text does NOT appear on any of the pages it cited when fetched directly; treat that claim as a search-engine fabrication, not a source, and do not requote it. Genuinely a dead end on the second-source hunt for now; still register-only."
+      "why_not_published": "Second tallest tree on Rome's register and a textbook umbrella pine, but register-only: sheet 75 postdates the municipal narrative page. Note that a different Villa Torlonia stone pine, sheet 18, is on the Lazio REMOVED list as dead, so any pass shipping this one must be explicit about which is which. VITALITY RISK RAISED, 2026-08-08 (rom deepen verify pass): press coverage found this pass shows Villa Torlonia's whole tree stock under active safety felling. Il Messaggero/La Capitale (11 Dec 2025) report 19 trees felled after a stability survey rated them 'classe di cedimento D' (highest risk), including 4 Pinus pinea; RomaToday/La Capitale describe further urgent fellings continuing into 2026 (5 more trees in March 2026, though that batch was palms, an Aleppo pine and a Judas tree, not stone pines). None of the coverage found names which specific stone pines were among the 4 felled in December. The Lazio Nov 2025 xlsx (which is our source for this lead) still listed sheet 75 as active, i.e. before the December felling, so the register cannot settle this either way. Given the confirmed sibling already dead (sheet 18) and 4 more stone pines felled in the same park weeks after our register snapshot, this tree should NOT ship without a specific, dated confirmation that sheet 75 itself is still standing. Not blocked (not confirmed dead), but do not verify from the register alone; needs a targeted post-December-2025 check, ideally the Lazio register's next update or a dated photo/observation."
     },
     {
       "name": "Mediterranean Hackberry of the Mura Latine",
@@ -47,16 +20,7 @@
       "height_m": 20,
       "location": { "latitude": 41.876361, "longitude": 12.502667 },
       "sources": ["MASAF / Lazio 65/H501/RM/12"],
-      "why_not_published": "Register-only. Larger of the pair, registered for size and for particular form and bearing, standing against the Aurelian wall at the corner of Via Latina."
-    },
-    {
-      "name": "Southern Magnolia of Via Corsini",
-      "species": "Magnolia grandiflora",
-      "girth_cm": 290,
-      "height_m": 18,
-      "location": { "latitude": 41.892694, "longitude": 12.467139 },
-      "sources": ["MASAF / Lazio 67/H501/RM/12"],
-      "why_not_published": "Register-only, and access unresolved. The address, Via Corsini at Largo Cristina di Svezia, is shared by the Orto Botanico entrance and the Palazzo Corsini gardens of the Accademia dei Lincei; the botanical garden's own monumental-tree page does not list a Magnolia grandiflora, so it may stand in the Corsini grounds or on the street rather than inside the ticketed garden. 109m from rom_003, so it would be a cheap win for the Trastevere walk once someone establishes which side of the wall it is on."
+      "why_not_published": "Register-only. Larger of the pair, registered for size and for particular form and bearing, standing against the Aurelian wall at the corner of Via Latina. CHECKED AGAIN 2026-08-08 (rom deepen verify pass): its twin 120m away (sheet 66, Parco degli Scipioni) now has a second source and shipped as rom_024; this one still does not. The Parco Regionale dell'Appia Antica's own 'alberi di pregio' catalogue (parcoappiaantica.it/il-territorio/alberi-di-pregio-appia-antica/), which independently corroborated the Scipioni tree, lists 13 named trees of value across the whole regional park and does not include a second bagolaro at the Mura Latine/Via Latina corner. RAMI (ilregistrodeglialberi.it) site search returns no matching entry. Genuinely still register-only; do not fold it into rom_024 as a pair since only one of the two is independently corroborated, and folding would overstate what is known about this one."
     },
     {
       "name": "Mexican Blue Palm of Villa Sciarra",
@@ -65,25 +29,17 @@
       "height_m": 20,
       "location": { "latitude": 41.8835, "longitude": 12.464806 },
       "sources": ["MASAF / Lazio 74/H501/RM/12"],
-      "why_not_published": "Register-only, listed for botanical rarity alone. Would make Villa Sciarra a four-tree walk with rom_001, rom_011 and rom_012. Needs one independent source naming this individual palm; general descriptions of the villa's palms are not enough to fix which one."
+      "why_not_published": "Register-only, listed for botanical rarity alone. Would make Villa Sciarra a four-tree walk with rom_001, rom_011 and rom_012. Needs one independent source naming this individual palm; general descriptions of the villa's palms are not enough to fix which one. CHECKED AGAIN 2026-08-08 (rom deepen verify pass): comune.roma.it's own monumental-tree narrative page (NWS1195295) covers Villa Sciarra's Ginkgo and Podocarpus but names no palm there; general Brahea armata gardening pages and the Villa Sciarra Wikipedia disambiguation page have nothing on this specific tree. Still a dead end on the second-source hunt.",
+      "second_source_attempts_2026-08-08": true
     },
     {
-      "name": "Willowleaf Podocarp of the Giardini Nicola Calipari",
-      "species": "Podocarpus neriifolius",
-      "girth_cm": 230,
-      "height_m": 20,
-      "location": { "latitude": 41.895056, "longitude": 12.503222 },
-      "sources": ["MASAF / Lazio 77/H501/RM/12"],
-      "why_not_published": "Register-only, botanical rarity alone. Larger than the Villa Sciarra podocarp we published. Public garden inside Piazza Vittorio Emanuele II, 1.7km from the Capitoline, so it would extend an Esquilino walk that does not exist yet."
-    },
-    {
-      "name": "Holm Oak of Piazza Perin del Vaga",
-      "species": "Quercus ilex",
-      "girth_cm": 280,
-      "height_m": null,
-      "location": { "latitude": 41.92514, "longitude": 12.46469 },
-      "sources": ["MASAF / Lazio 63/H501/RM/12"],
-      "why_not_published": "Register-only. Unusual among Roman entries in being listed for form and bearing plus historical, cultural or religious value rather than size, which suggests a local story worth finding. Della Vittoria district, isolated from every existing cluster. SECOND SOURCE NOW FOUND, 2026-08-06 (2nd verify pass): RAMI entry #17724, 'Tutta Roma' (ilregistrodeglialberi.it/17724-tutta-roma-leccio-roma-rm-lazio), same AMI code 63/H501/RM/12, coordinates 41.925194,12.464699 (matches this lead within metres), health 'Buona', age calculated at ~126 years (so present since roughly 1900), accessibility 'Accessibile'. RAMI's field note explains the local nickname: children who climbed it used to shout 'Anvedi da quassu se vede tutta Roma' (look, from up here you can see all of Rome), and it was already standing around 1919. This is now a ready-to-ship candidate for a future pass (two independent sources, confirmed coordinates, a genuine story), just not part of this pass's Colle Oppio/Esquilino pocket brief so left unshipped rather than researched further out of scope."
+      "name": "Pino dell'Himalaya (second Chir Pine), sheet 70",
+      "species": "Pinus roxburghii",
+      "girth_cm": 297,
+      "height_m": 18,
+      "location": { "latitude": 41.884611, "longitude": 12.5235 },
+      "sources": ["MASAF / Lazio 70/H501/RM/12"],
+      "why_not_published": "NEW, spotted 2026-08-08 (rom deepen verify pass) while cross-checking the register against published pins; not previously in this leads file and not part of this pass's briefed candidate list, so left entirely unresearched. Distinct from the published Chir Pine of Colle Oppio (rom_020, sheet 71/H501/RM/12, 41.893528,12.497111): this is a second, separate Pinus roxburghii roughly 2.7km further east/southeast, near no currently published cluster. Needs a from-scratch look: what site it stands on, whether public, and a second source."
     },
     {
       "name": "Black Poplar of Via Conca d'Oro",
@@ -128,7 +84,7 @@
       "height_m": null,
       "location": { "latitude": 41.95381, "longitude": 12.53628 },
       "sources": ["MASAF / Lazio 58 and 59/H501/RM/12"],
-      "why_not_published": "Two registered almonds 90m apart at Via delle Vigne Nuove 280, an address attached to the so-called Villa di Faonte. Register-only, access unverified, and a monumental almond would be a genuine curiosity, so worth checking whether the grounds are public before writing it off. Real February blossom peak if it ever ships."
+      "why_not_published": "Two registered almonds 90m apart at Via delle Vigne Nuove 280, an address attached to the so-called Villa di Faonte. Register-only, access unverified, and a monumental almond would be a genuine curiosity, so worth checking whether the grounds are public before writing it off. Real February blossom peak if it ever ships. CHECKED 2026-08-08 (rom deepen verify pass): RomaToday reports the Villa di Faonte archaeological park itself reopened to the public after ten years closed ('Villa di Faonte, dopo dieci anni apre il parco: restano sbarrati i casali'), access from Via delle Vigne Nuove and Via del Passo del Turchino, which is encouraging on general access but does not confirm the two specific almond trees are inside the reopened area rather than on an adjacent closed plot, and no second source names the trees themselves. Still needs a dedicated look, not part of this pass's briefed cluster."
     },
     {
       "name": "Plane of the Galoppatoio",

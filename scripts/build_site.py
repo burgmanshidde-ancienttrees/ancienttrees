@@ -789,6 +789,7 @@ PAGE_SHELL = """<!DOCTYPE html>
 <title>%%TITLE%%</title>
 <meta name="description" content="%%DESCRIPTION%%">
 <link rel="canonical" href="%%CANONICAL%%">
+<link rel="alternate" type="application/atom+xml" title="Ancient Trees: newest trees" href="https://ancienttrees.app/feed.xml">
 <meta property="og:title" content="%%TITLE%%">
 <meta property="og:description" content="%%DESCRIPTION%%">
 <meta property="og:type" content="%%OGTYPE%%">
@@ -811,6 +812,12 @@ PAGE_SHELL = """<!DOCTYPE html>
 window.at = window.at || {};
 at.track = function(name, detail) {
   try {
+    // Only the real site measures. Smoke tests load these pages in headless
+    // Chrome on 127.0.0.1 on every push, and preview sessions serve them on
+    // localhost; both were being counted as visitors (found 2026-08-08 while
+    // asking why 74% of "traffic" was NL). One hostname check removes every
+    // machine visitor at the root instead of filtering them per tool.
+    if (location.hostname !== 'ancienttrees.app') { return; }
     if (localStorage.getItem('at_notrack') === '1') { return; }
     var ev = {name: String(name).slice(0, 40), path: location.pathname.slice(0, 120)};
     if (detail) { ev.detail = String(detail).slice(0, 60); }
@@ -859,6 +866,7 @@ ANALYTICS_SNIPPET = (
     "<script>\n"
     "(function() {{\n"
     "  try {{\n"
+    "    if (location.hostname !== 'ancienttrees.app') {{ return; }}\n"
     "    var p = new URLSearchParams(location.search);\n"
     "    if (p.get('notrack') === '1') {{ localStorage.setItem('at_notrack', '1'); }}\n"
     "    else if (p.get('notrack') === '0') {{ localStorage.removeItem('at_notrack'); }}\n"
@@ -935,7 +943,10 @@ def age_token(tree):
     review, 2026-08-06, found on 43 cities including a case with no title
     number in the text at all)."""
     m = re.search(r"(\d[\d,]*\+?)", tree.get("age_estimate", ""))
-    return m.group(1) if m else str(tree.get("age_min", ""))
+    if m:
+        return m.group(1)
+    age_min = tree.get("age_min")
+    return str(age_min) if age_min else None
 
 
 def species_common(tree):
@@ -1372,6 +1383,7 @@ def _walk_name(members, markers):
 
 
 WALK_SPLIT_KM = 3.0      # past this a walk stops being an afternoon and becomes a route
+COMBINED_MAX_KM = 6.0    # up to here "Both walks" is still offered as one outing
 WALK_MAX_OVERLAP = 0.5   # two walks may never be more than half the same trees
 
 
@@ -1383,15 +1395,20 @@ def _leg_km(order, points):
 
 
 def _split_route(order, points, depth=0):
-    """Cut a long route in half at its midpoint, letting the junction tree
-    belong to both halves.
+    """Cut a long route in half at its midpoint, into two DISJOINT halves.
 
     Hidde, 2026-08-08, having noticed walks are built as disjoint clusters:
     "you can use the same tree in several walks, does that open options?" It
     opens exactly one worth having. Eighteen cities had a single walk over
     2.5 km, Prague at 6.0 km and 79 minutes, which is a route rather than an
-    afternoon. Splitting at the middle gives two real walks that overlap only
-    where they genuinely meet, and the shared tree is honestly on both.
+    afternoon. Splitting at the middle gives two real walks.
+
+    The first version let the junction tree belong to both halves. Hidde saw
+    the result on Amsterdam the same day and called it: two walks whose lines
+    are welded together at the shared tree read as ONE walk on the overview
+    map. So the halves are now disjoint, and the way to walk both is the
+    explicit "Both walks" choice plan_walks adds when the whole route is
+    still a doable afternoon.
 
     What it deliberately does NOT do is manufacture variety. Sharing trees
     freely would let any city be sliced into four walks that are the same trees
@@ -1409,8 +1426,8 @@ def _split_route(order, points, depth=0):
         if run >= half:
             cut = i
             break
-    cut = max(WALK_MIN_TREES - 1, min(cut, len(order) - WALK_MIN_TREES))
-    first, second = order[:cut + 1], order[cut:]   # the junction tree is in both
+    cut = max(WALK_MIN_TREES - 1, min(cut, len(order) - WALK_MIN_TREES - 1))
+    first, second = order[:cut + 1], order[cut + 1:]   # disjoint: no shared tree
     if len(first) < WALK_MIN_TREES or len(second) < WALK_MIN_TREES:
         return [order]
     return _split_route(first, points, depth + 1) + _split_route(second, points, depth + 1)
@@ -1433,8 +1450,19 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
     indexes in walking order. Returns [] when no cluster clears the bar, and
     the page then has no route bar at all, which stays the honest answer."""
     points = [(m["lat"], m["lng"]) for m in markers]
-    walks = []
-    for members in _walk_clusters(points):
+    # The chaining radius, with a fallback measured on 2026-08-08. At 900 m,
+    # 30 of 91 cities had no walk at all, and 11 of them (London, Venice,
+    # Copenhagen, The Hague among them) get their first walk at 1500 m: their
+    # trees stand 1.0-1.5 km apart, which is still an afternoon in a big
+    # city. But 1500 m globally welds Paris, Vienna, Naples and Nice's named
+    # walks into one blob each. So the wider radius applies ONLY to a city
+    # that would otherwise have no walk: cities with walks keep them exactly
+    # as they are, and a first walk beats no walk.
+    groups = _walk_clusters(points)
+    if not any(len(g) >= WALK_MIN_TREES for g in groups):
+        groups = _walk_clusters(points, radius_m=1500)
+    walks, combined = [], []
+    for members in groups:
         if len(members) < WALK_MIN_TREES:
             continue
         sub = [points[i] for i in members]
@@ -1442,9 +1470,11 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
         if not route:
             continue
         order = [members[i] for i in route["order"]]
+        kept = 0
         for leg in _split_route(order, points):
             if any(_too_similar(leg, w["order"]) for w in walks):
                 continue
+            kept += 1
             km = round(_leg_km(leg, points), 1)
             walks.append({
                 "order": leg,
@@ -1453,6 +1483,21 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
                 "minutes": int(round(km / WALKING_KMH * 60)),
                 "name": _walk_name(leg, markers),
             })
+        # A split cluster's halves are disjoint (Hidde, 2026-08-08: welded
+        # lines read as one walk on the overview). The full route survives as
+        # an explicit choice when it is still a doable afternoon, so the
+        # visitor with the whole day loses nothing.
+        if kept > 1:
+            km_full = round(_leg_km(order, points), 1)
+            if km_full <= COMBINED_MAX_KM:
+                combined.append({
+                    "order": order,
+                    "count": len(order),
+                    "km": km_full,
+                    "minutes": int(round(km_full / WALKING_KMH * 60)),
+                    "name": "Both walks" if kept == 2 else f"All {kept} walks",
+                    "combined": True,
+                })
     # Photographed trees first, then size. Sorting on size alone put Barcelona's
     # worst walk in front: the ten Pedralbes trees are its tightest cluster and
     # also its newest, imported from the municipal register two days before this
@@ -1470,6 +1515,10 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
     for w in walks:
         if w["name"] in dupes:
             w["name"] = ""
+    # The combined option rides last, after its parts, never as the lead walk.
+    for w in combined:
+        w["shots"] = sum(1 for i in w["order"] if markers[i].get("shot"))
+    walks.extend(combined)
     return walks
 
 
@@ -1545,6 +1594,7 @@ def city_map_script(markers, center, route=None, other_cities=None, walks=None):
         "label": w.get("label", ""),
         "name": w.get("name", ""),
         "meta": f"about {w['km']} km, {w.get('duration', '')} on foot",
+        "combined": bool(w.get("combined")),
     } for w in (walks or [])])
     # One continuous world (Hidde, 2026-07-31): zoom out far enough on any
     # city map and the OTHER cities pop in as the same green dots /explore
@@ -1738,10 +1788,12 @@ function addAllWalksLayer() {{
   if (WALKS.length < 2 || map.getSource('walks-all')) {{ return; }}
   map.addSource('walks-all', {{
     type: 'geojson',
+    // The combined option is the sum of lines already on the map: drawing it
+    // grey as well would double every segment, so only the real walks show.
     data: {{ type: 'FeatureCollection', features: WALKS.map(function(w, i) {{
       return {{ type: 'Feature', properties: {{ idx: i }},
                geometry: {{ type: 'LineString', coordinates: w.coords }} }};
-    }}) }}
+    }}).filter(function(f) {{ return !WALKS[f.properties.idx].combined; }}) }}
   }});
   map.addLayer({{
     id: 'walks-all-hit', type: 'line', source: 'walks-all',
@@ -1769,7 +1821,11 @@ function setAllWalksFilter(activeIdx) {{
   // Hide the grey copy of whatever is selected, so the chosen walk shows once
   // in green rather than twice in two colours.
   if (!map.getLayer('walks-all')) {{ return; }}
-  var f = activeIdx < 0 ? null : ['!=', ['get', 'idx'], activeIdx];
+  // Selecting the combined option hides every grey copy: its green line
+  // covers all of them, and grey under green reads as a third walk.
+  var f = activeIdx < 0 ? null
+        : (WALKS[activeIdx] && WALKS[activeIdx].combined) ? ['==', ['get', 'idx'], -1]
+        : ['!=', ['get', 'idx'], activeIdx];
   map.setFilter('walks-all', f);
   map.setFilter('walks-all-hit', f);
   if (map.getLayer('walks-all-casing')) {{ map.setFilter('walks-all-casing', f); }}
@@ -1861,6 +1917,20 @@ function showWholeCity() {{
     b.classList.remove('is-on');
     b.setAttribute('aria-pressed', 'false');
   }});
+  // The bar goes back to the lead walk too, or deselecting leaves it naming a
+  // walk no chip shows as chosen ("Both walks" with nothing selected).
+  var w0 = WALKS[0];
+  if (w0) {{
+    routeCoords = w0.coords;
+    var go = document.getElementById('route-go');
+    if (go) {{ go.href = w0.url; }}
+    var lab = document.getElementById('route-label');
+    if (lab) {{ lab.textContent = w0.label; }}
+    var meta = document.getElementById('route-meta');
+    if (meta) {{ meta.textContent = w0.meta; }}
+    var nm = document.querySelector('.route-name');
+    if (nm) {{ nm.textContent = w0.name; nm.hidden = !w0.name; }}
+  }}
   if (markers.length > 1) {{ map.fitBounds(bounds, {{ padding: 70, maxZoom: 13 }}); }}
 }}
 document.querySelectorAll('.walk-pick').forEach(function(btn) {{
@@ -2915,7 +2985,11 @@ def highlight_curve(ph):
 NUMBER_WORDS = {w: n for n, w in enumerate(
     "zero one two three four five six seven eight nine ten eleven twelve thirteen "
     "fourteen fifteen sixteen seventeen eighteen nineteen twenty".split())}
-_N = "|".join(NUMBER_WORDS)
+# Digits count too, not only spelled-out words. Paris's copy said "15 more" and
+# "23 more" rather than "fifteen more"/"twenty-three more" (twenty-three has no
+# entry above anyway), and a word-only pattern let both go stale unnoticed
+# until a fresh-eyes review caught them by eye. REVIEW.md 2026-08-08.
+_N = r"\d+|" + "|".join(NUMBER_WORDS)
 # Three shapes, each deliberately narrow. A page counts other things all the
 # time ("the two trees frame two kinds of longevity", "only four trees in the
 # whole city carry the designation"), so only a phrase that can just about
@@ -2966,7 +3040,7 @@ def check_count_promises(city_data, canonical):
                 continue
             for m in rx.finditer(text):
                 word = next(g for g in m.groups() if g)
-                claims = allowed(NUMBER_WORDS[word.lower()])
+                claims = allowed(int(word) if word.isdigit() else NUMBER_WORDS[word.lower()])
                 if min(claims) < 4 or n in claims:
                     continue
                 ERRORS.append(
@@ -2995,6 +3069,42 @@ def check_species_names(cities):
                                for c, v in sorted(commons.items()))
             ERRORS.append(f"species {latin} uses {len(commons)} common names, hard rule 9 "
                           f"allows one: {spread}")
+    # And the mirror, which the check above cannot see: ONE common name under
+    # several Latin spellings splits the same species just as badly. Found
+    # 2026-08-08 while counting species for a press story: "London Plane" was
+    # living as Platanus x acerifolia, x hispanica, acerifolia and hispanica at
+    # once, 62 trees that should be one species page and were four groups.
+    # Single-tree ensembles that deliberately name several species are exempt.
+    by_common = {}
+    for entry in sorted(cities, key=lambda e: e["slug"]):
+        slug, data = entry["slug"], entry.get("data") or {}
+        for t in data.get("trees") or []:
+            sp = t.get("species") or ""
+            m = re.search(r"\(([^)]+)\)", sp)
+            latin = m.group(1).strip() if m else ""
+            if not m or "," in latin or " and " in latin:
+                continue
+            # A cultivar, form, subspecies or variety of the same binomial is
+            # not a split, it is a legitimately finer record: York's
+            # Fagus sylvatica 'Miltonensis' belongs with Edinburgh's beech.
+            # Only a different binomial under one common name is the bug, and
+            # that is always a synonym nobody reconciled (Sophora japonica
+            # beside Styphnolobium japonicum).
+            binomial = re.split(r"\s+(?:'|f\.|subsp\.|var\.|ssp\.)", latin)[0].strip()
+            # Some parentheticals describe a place rather than name a species
+            # ("Mixed species (Napoleonic public garden)"): a binomial is a
+            # capitalised genus and a lowercase epithet, and nothing else.
+            if not re.match(r"^[A-Z][a-z]+ (x )?[a-z-]+$", binomial):
+                continue
+            common = sp[:m.start()].strip()
+            by_common.setdefault(common, {}).setdefault(binomial, []).append(slug)
+    for common, latins in sorted(by_common.items()):
+        if len(latins) > 1:
+            spread = "; ".join(f"{l!r} in {sorted(set(v))[0]}"
+                               + (" and others" if len(set(v)) > 1 else "")
+                               for l, v in sorted(latins.items()))
+            ERRORS.append(f"species {common!r} carries {len(latins)} scientific names, "
+                          f"hard rule 9 allows one: {spread}")
 
 
 def check_phenology():
@@ -3137,12 +3247,13 @@ def build_tree_page(city_entry, tree, all_trees, pages, species_pages=None, coun
     canonical = f"{BASE_URL}/{cslug}/{tslug}"
     rootpath = "../"
 
-    title = fit_title([
-        f"{tree['name']}: {age} Year Old {species_common(tree)} in {city}",
-        f"{tree['name']}: {age} Year Old Tree in {city}",
-        f"{tree['name']} in {city}",
-        tree["name"],
-    ], canonical)
+    title_candidates = []
+    if age:
+        title_candidates.append(f"{tree['name']}: {age} Year Old {species_common(tree)} in {city}")
+        title_candidates.append(f"{tree['name']}: {age} Year Old Tree in {city}")
+    title_candidates.append(f"{tree['name']} in {city}")
+    title_candidates.append(tree["name"])
+    title = fit_title(title_candidates, canonical)
     description = meta_from_story(tree["story"])
     story_wc = len(tree["story"].split())
     if not (150 <= story_wc <= 250):
@@ -3329,11 +3440,12 @@ def build_question_page(city_entry, collections, pages, country_pages=None):
     rootpath = "../"
     question = f"What is the oldest tree in {city}?"
 
-    title = fit_title([
-        f"What Is the Oldest Tree in {city}? ({old['name']}, {age} Years)",
-        f"What Is the Oldest Tree in {city}? ({age} Years Old)",
-        f"What Is the Oldest Tree in {city}?",
-    ], canonical)
+    title_candidates = []
+    if age:
+        title_candidates.append(f"What Is the Oldest Tree in {city}? ({old['name']}, {age} Years)")
+        title_candidates.append(f"What Is the Oldest Tree in {city}? ({age} Years Old)")
+    title_candidates.append(f"What Is the Oldest Tree in {city}?")
+    title = fit_title(title_candidates, canonical)
     description = city_data.get("question_meta") or city_data.get("question_answer", "")[:DESC_MAX]
     answer = city_data.get("question_answer", "")
     context = city_data.get("question_context", "")
@@ -3599,6 +3711,26 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
             w["duration"] = human_duration(w["minutes"])
             w["label"] = (f"Walk {w['count']} of these trees"
                           if w["count"] < len(markers) else f"Walk all {w['count']} trees")
+        # Name a combined option after the walks it actually joins. Hidde,
+        # 2026-08-08: "Both walks is wel verwarrend als er meer dan 2 walks
+        # zijn." He is right, and it was worse than the wording: Paris and
+        # Vienna show three walks beside a chip saying "Both", and a city with
+        # two split clusters would show two identical "Both walks" chips. The
+        # parts are recoverable, since a combined walk's members are exactly
+        # the union of its legs.
+        display = [w.get("name") or f"Walk {i + 1}" for i, w in enumerate(walks)]
+        for w in walks:
+            if not w.get("combined"):
+                continue
+            members = set(w["order"])
+            parts = [i for i, x in enumerate(walks)
+                     if not x.get("combined") and set(x["order"]) <= members]
+            if len(parts) < 2:
+                continue
+            joined = " + ".join(display[i] for i in parts)
+            if len(joined) > WALK_NAME_MAX:
+                joined = "Walks " + " + ".join(str(i + 1) for i in parts)
+            w["name"] = joined
         chooser = ""
         if len(walks) > 1:
             # Every walk is a real button in the served HTML, so the choice is
@@ -3611,9 +3743,10 @@ def build_city_page(entry, tree_slugs, collections, pages, other_cities=(), spec
                 f'<span class="walk-pick-name">{esc(w["name"] or f"Walk {i + 1}")}</span>'
                 f'<span class="walk-pick-meta">{w["count"]} trees &middot; {w["km"]} km</span>'
                 f'</button>' for i, w in enumerate(walks))
-            plural = "walks" if len(walks) > 1 else "walk"
+            real = sum(1 for w in walks if not w.get("combined"))
+            plural = "walks" if real > 1 else "walk"
             chooser = (f'<div class="walk-picker" role="group" '
-                       f'aria-label="{len(walks)} {plural} in {esc(city)}">{btns}</div>')
+                       f'aria-label="{real} {plural} in {esc(city)}">{btns}</div>')
         first = walks[0]
         name_bit = f'<span class="route-name">{esc(first["name"])}</span>' if first["name"] else ""
         route_bar = f"""
@@ -3941,6 +4074,14 @@ def build_park_page(intro, entry, trees, tree_slugs, published, pages):
     rest_html = f'<div class="prose-block"><p>{esc(rest)}</p></div>' if rest else ""
     other = [q for q in published if q["slug"] != cslug][:6]
     other_links = " &middot; ".join(f'<a href="../{q["slug"]}">{esc(q["city"])}</a>' for q in other)
+    # The reciprocity OUTREACH.md promises has to actually exist on the page:
+    # opening hours, tickets and closures are theirs to state, not ours.
+    official_line = ""
+    if intro.get("official_url"):
+        official_line = (
+            f'<p class="suggest">Opening times and visitor information: '
+            f'<a href="{esc(intro["official_url"])}" rel="noopener">'
+            f'{esc(intro.get("official_name") or "the official site")}</a>.</p>')
     body = f"""
 <main class="content-page">
   {breadcrumb_html(crumb_items, "../")}
@@ -3949,6 +4090,7 @@ def build_park_page(intro, entry, trees, tree_slugs, published, pages):
   {rest_html}
   <p class="suggest">All {len(trees)} stand in <a href="../{cslug}">{esc(city)}</a>, which maps {len(entry['data']['trees'])} remarkable trees in total.</p>
   {"".join(rows)}
+  {official_line}
   <p class="suggest">More parks worth the walk: <a href="../parks">every park we map</a>. Or explore by city: {other_links}</p>
 </main>
 """
@@ -4377,6 +4519,121 @@ def build_collections_index(collections, published, pages, cities_by_slug=None):
     head_extra = ld_script(graph)
     page = render_page(title, description, canonical, body, head_extra, "", rootpath)
     pages.append(("collections.html", page, canonical))
+
+
+def press_numbers(cities):
+    """Every figure the press page quotes, computed from the published data.
+
+    Contract I's distinguishing rule: not one number on that page is typed by
+    hand. A press page exists to be checked, so a figure that was true when it
+    was written and false when a journalist verifies it costs more than having
+    no page. The non-native list is the single judgement in here, and it is
+    deliberately conservative: species with any native European range are left
+    off even when they read as exotic (Oriental plane grows wild in Greece,
+    Turkish hazel and Caucasian wingnut reach the continent's edges), so the
+    headline understates rather than flatters. It is the same list
+    scripts/press_numbers.py uses for the pitch, kept here so the page and the
+    pitch cannot drift apart.
+    """
+    europe = {
+        "United Kingdom", "Italy", "Netherlands", "Spain", "Portugal", "Poland",
+        "France", "Belgium", "Greece", "Germany", "Austria", "Czech Republic",
+        "Ireland", "Denmark", "Sweden", "Finland", "Hungary", "Croatia",
+        "Serbia", "Romania", "Switzerland", "Norway", "Slovenia", "Slovakia",
+        "Bulgaria", "Estonia", "Latvia", "Lithuania",
+    }
+    non_native = {
+        "London Plane", "Ginkgo", "Camphor Tree", "Japanese Pagoda Tree",
+        "Southern Magnolia", "Coast Redwood", "Giant Sequoia",
+        "Cedar of Lebanon", "Himalayan Cedar", "Atlas Cedar", "Deodar Cedar",
+        "Persian Ironwood", "Black Locust", "Chinaberry", "Shellbark Hickory",
+        "Osage Orange", "Bald Cypress", "Montezuma Cypress", "Mexican Cypress",
+        "Tulip Tree", "Silk Tree", "Chilean Wine Palm",
+        "Canary Island Date Palm", "Mexican Blue Palm",
+        "Norfolk Island Hibiscus", "Australian Banyan", "Moreton Bay Fig",
+        "Silky Oak", "Jacaranda", "Ombu", "Dragon Tree", "Chusan Palm",
+        "Empress Tree", "Chinese Windmill Palm", "Honey Locust",
+        "Northern Catalpa", "Southern Catalpa", "Red Oak", "Black Walnut",
+        "American Sycamore", "Blue Gum", "Tree of Heaven", "Weeping Willow",
+        "Black Mulberry", "White Mulberry", "Avocado", "Loquat",
+        "Japanese Cedar", "Monkey Puzzle", "Rubber Fig", "False Kapok",
+        "Date Palm", "California Fan Palm", "Pecan",
+    }
+    entries = [(e, t) for e in cities for t in (e.get("data") or {}).get("trees", [])]
+    eu = [(e, t) for e, t in entries
+          if (e.get("data") or {}).get("country") in europe]
+    nn = [(e, t) for e, t in eu
+          if t["species"].split("(")[0].strip() in non_native]
+    plane = [(e, t) for e, t in eu
+             if t["species"].split("(")[0].strip() == "London Plane"]
+    def city_of(pair):
+        return (pair[0].get("data") or {}).get("city")
+    return {
+        "trees": len(entries),
+        "cities": len(cities),
+        "countries": len({(e.get("data") or {}).get("country") for e in cities}),
+        "eu_trees": len(eu),
+        "eu_cities": len({city_of(p) for p in eu}),
+        "nn": len(nn),
+        "nn_pct": round(100 * len(nn) / len(eu)) if eu else 0,
+        "nn_cities": len({city_of(p) for p in nn}),
+        "plane": len(plane),
+        "plane_cities": len({city_of(p) for p in plane}),
+        "species": len({t["species"].split("(")[0].strip() for e, t in entries}),
+        "photos": sum(1 for e, t in entries if (t.get("photo") or {}).get("url")),
+        "sourced": sum(1 for e, t in entries if t.get("verified_sources")),
+    }
+
+
+def build_press_page(cities, pages):
+    """Contract I. Approved by Hidde 2026-08-08 ("pers pagina is prima").
+
+    No personal name and no contact address, per the v1.4 privacy ruling: the
+    contact route is the same form the privacy page uses."""
+    n = press_numbers(cities)
+    canonical = f"{BASE_URL}/press"
+    crumb_items = [("Home", BASE_URL), ("Press", None)]
+    graph = site_graph() + [
+        breadcrumb_schema(crumb_items, canonical),
+        {"@type": "WebPage", "name": "Press and data",
+         "description": (f"{n['nn_pct']} percent of the ancient trees we map in "
+                         f"European cities are not European species."),
+         "url": canonical},
+    ]
+    body = f"""
+<main class="content-page">
+  {breadcrumb_html(crumb_items, "./")}
+  <h1>Press and data</h1>
+  <p class="lede">Four in ten of the ancient trees we map in European cities are not European species: {n['nn']} of {n['eu_trees']}, across {n['nn_cities']} of {n['eu_cities']} cities. The most common of the lot is a tree that exists nowhere in the wild.</p>
+  <div class="prose-block">
+    <p>Ancient Trees maps the oldest and most remarkable trees of the world's cities, one tree at a time, with sources recorded per tree. {n['trees']} trees in {n['cities']} cities across {n['countries']} countries so far, {n['species']} distinct species, {n['sourced']} of them carrying their sources on the page.</p>
+
+    <h2>Stories from the data</h2>
+    <p><strong>August 2026: Europe's oldest city trees are mostly immigrants.</strong> {n['nn']} of the {n['eu_trees']} trees we map in European cities are species that are not native to Europe, and the commonest of all, the London plane ({n['plane']} trees in {n['plane_cities']} cities), exists nowhere in the wild. The individual arrivals carry the story: an ombu in Seville said to have come back with Christopher Columbus's son around 1529, Paris's oldest tree grown from seed posted out of the Appalachians in 1601, a London mulberry left over from a royal silk scheme that failed because silkworms will not eat black mulberry leaves. <a href="collections/europes-oldest-trees-are-immigrants">The full list</a>.</p>
+    <p><strong>August 2026: which European city gives a tree lover the best single afternoon?</strong> Measured by how many remarkable trees stand within one honest walk of each other, not by how many a city has. <a href="collections/europes-best-tree-city-trips">The ranking</a>.</p>
+    <p><strong>Standing: the oldest tree in every country we map.</strong> One tree per country, each with its sources. <a href="collections/the-oldest-tree-in-every-country-we-map">The list</a>.</p>
+    <p>A local angle is one email away: for any of the {n['cities']} cities we can supply that city's own fact sheet, its oldest tree, its story and what stands within a walk.</p>
+
+    <h2>Press kit</h2>
+    <p>Boilerplate, one paragraph: <em>Ancient Trees (ancienttrees.app) maps the most remarkable old trees of the world's cities: {n['trees']} trees in {n['cities']} cities so far, each verified against at least two independent sources or an official monument register, each with its story, its exact spot and, where trees stand close enough, a walking route past them. The project publishes openly, uses openly licensed photography with credits, and treats an honest "approximately" as better than false precision.</em></p>
+    <p>Assets, free to reuse in coverage: <a href="assets/logo.svg" download>the logo (SVG)</a> &middot; <a href="assets/press/press-tree.png">a tree page</a> &middot; <a href="assets/press/press-story.png">a data story</a>. More screenshots or a custom crop on request.</p>
+    <p>Tree photographs: {n['photos']} of the {n['trees']} trees carry a photograph under an open licence, most from Wikimedia Commons and iNaturalist. Each records its licence and required credit on the tree's own page, and the credit must travel with the image: a CC BY photograph published without attribution puts the licence in breach.</p>
+
+    <h2>What this data is, and what it is not</h2>
+    <p>It is a count of the trees we have published, not a census of every old tree in Europe. The map is denser where countries publish open tree registers and thinner where they do not, so coverage reflects data availability as much as it reflects trees. Ages are as sourced, and where sources disagree the tree's page says so rather than picking a winner. Locations are marked either confirmed or approximate, and the approximate ones say so next to the directions button, because sending someone to a spot where the tree is not is the one mistake this project cannot afford.</p>
+
+    <h2>Getting in touch</h2>
+    <p>For the underlying data as a spreadsheet, a per-city fact sheet, extra screenshots, or anything else: <a href="{submit_link('press')}">send a message</a> and say what you need.</p>
+  </div>
+</main>
+"""
+    page = render_page(
+        "Press and Data: Ancient Trees",
+        (f"{n['nn_pct']}% of the ancient trees we map in Europe's cities are "
+         f"not European species. The numbers, the angles, and the caveats."),
+        canonical, body, ld_script(graph), "", rootpath="./")
+    check_links(canonical, 7, 6)
+    pages.append(("press.html", page, canonical))
 
 
 def build_privacy_page(pages):
@@ -4846,8 +5103,10 @@ def build_contribute_page(published, pages):
         <option value="city">My city's trees</option>
         <option value="correction">A correction to something on the site</option>
         <option value="privacy">A privacy request (remove what I sent in)</option>
+        <option value="press">A press enquiry</option>
       </select>
     </label>
+    <p class="sg-fine">Writing about us? The numbers, image licences and caveats live on the <a href="press">press page</a>.</p>
     <label>Which city?
       <input type="text" id="sg-city" required placeholder="Utrecht">
     </label>
@@ -5368,7 +5627,9 @@ def validate_internal_links(pages):
     # account.html is written straight to DIST by build_account_page (outside
     # the pages list, deliberately out of the sitemap), but nav links to it
     # once AUTH_ENABLED is on, so the checker must know it exists.
-    valid = {"/", "/assets/style.css", "/account", "/account.html"}
+    valid = {"/", "/assets/style.css", "/account", "/account.html",
+             "/assets/logo.svg", "/assets/press/press-tree.png",
+             "/assets/press/press-story.png"}
     for relpath, _, _ in pages:
         url = "/" + relpath
         valid.add(url)
@@ -5685,6 +5946,74 @@ def build_account_page():
     (DIST / "account.html").write_text(page)
 
 
+FIRST_SEEN_PATH = ROOT / "data" / "first-seen.json"
+
+
+def update_first_seen(cities):
+    """The date each tree first appeared, maintained by the build itself.
+
+    Trees carry no publication date, and a feed with invented dates is a fake
+    feed. History was backfilled once from git (2026-08-08); from here every
+    build stamps ids it has not seen with today, in the same commit that adds
+    the tree, so the record cannot drift from the data."""
+    try:
+        first = json.load(open(FIRST_SEEN_PATH))
+    except Exception:
+        first = {}
+    today = date.today().isoformat()
+    changed = False
+    for entry in cities:
+        for t in (entry.get("data") or {}).get("trees", []):
+            if t["id"] not in first:
+                first[t["id"]] = today
+                changed = True
+    if changed:
+        json.dump(dict(sorted(first.items())), open(FIRST_SEEN_PATH, "w"), indent=1)
+    return first
+
+
+def build_feed(cities, pages):
+    """/feed.xml, Atom: the newest trees, so blogs, curators and feed readers
+    can pick the site up without anyone mailing anyone (Hidde, 2026-08-08:
+    "kunnen we niet op andere manieren door blogs feeds etc worden opgepikt
+    dan handmatig mailen"). Static XML, no service, no dependency; the only
+    passive acquisition channel that exists once and works forever."""
+    first = update_first_seen(cities)
+    entries = []
+    for entry in cities:
+        data = entry.get("data") or {}
+        for t in data.get("trees", []):
+            entries.append((first.get(t["id"], "2026-07-14"), t, data, entry["slug"]))
+    entries.sort(key=lambda e: (e[0], e[1]["id"]), reverse=True)
+    items = []
+    for date, t, data, cslug in entries[:30]:
+        url = f"{BASE_URL}/{cslug}/{slugify(t['name'])}"
+        story = (t.get("story") or "").strip()
+        summary = story[:220]
+        if len(story) > 220:
+            summary = summary.rsplit(" ", 1)[0] + "..."
+        items.append(
+            f"  <entry>\n"
+            f"    <title>{esc(t['name'])}, {esc(data.get('city', ''))}</title>\n"
+            f"    <link href=\"{url}\"/>\n"
+            f"    <id>{url}</id>\n"
+            f"    <updated>{date}T12:00:00Z</updated>\n"
+            f"    <summary>{esc(summary)}</summary>\n"
+            f"  </entry>")
+    feed = (
+        '<?xml version="1.0" encoding="utf-8"?>\n'
+        '<feed xmlns="http://www.w3.org/2005/Atom">\n'
+        f'  <title>Ancient Trees: the newest remarkable trees</title>\n'
+        f'  <subtitle>The most remarkable ancient trees of the world\'s cities, '
+        f'newest first, each verified against its sources.</subtitle>\n'
+        f'  <link href="{BASE_URL}/feed.xml" rel="self"/>\n'
+        f'  <link href="{BASE_URL}"/>\n'
+        f'  <id>{BASE_URL}/feed.xml</id>\n'
+        f'  <updated>{entries[0][0] if entries else "2026-07-14"}T12:00:00Z</updated>\n'
+        + "\n".join(items) + "\n</feed>\n")
+    (DIST / "feed.xml").write_text(feed, encoding="utf-8")
+
+
 def build_sitemap(pages):
     today = date.today().isoformat()
     urls = [canonical for _, _, canonical in pages if canonical]
@@ -5834,6 +6163,7 @@ def main():
             print(f"    {n} trees  {city}: {name}")
 
     build_contribute_page(published, pages)
+    build_press_page(cities, pages)
     build_privacy_page(pages)
     build_fakedoor_pages(pages)
     # The register layer is on again (Hidde, 2026-08-05: "zet de tweede
@@ -5863,6 +6193,25 @@ def main():
         shutil.rmtree(DIST)
     (DIST / "assets").mkdir(parents=True)
     (DIST / "assets" / "style.css").write_text(CSS)
+    # The press kit: the logo as a standalone downloadable file, and the
+    # screenshots captured from the live site (site/press-assets/, refreshed
+    # by hand when the design meaningfully changes).
+    (DIST / "assets" / "logo.svg").write_text(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 64">'
+        '<ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/>'
+        '<circle cx="20" cy="23" r="11" fill="#4A6B2A"/>'
+        '<circle cx="48" cy="23" r="11" fill="#4A6B2A"/>'
+        '<circle cx="34" cy="12" r="11" fill="#5B7F35"/>'
+        '<circle cx="25" cy="15" r="7" fill="#86A34D"/>'
+        '<circle cx="51" cy="14" r="3.2" fill="#D9A13F"/>'
+        '<path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 '
+        'c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 '
+        'l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg>\n')
+    press_src = ROOT / "site" / "press-assets"
+    if press_src.is_dir():
+        (DIST / "assets" / "press").mkdir(parents=True, exist_ok=True)
+        for f in press_src.glob("*.png"):
+            (DIST / "assets" / "press" / f.name).write_bytes(f.read_bytes())
     # Written here, not while the page is built: DIST is wiped and recreated
     # at this point, so anything written earlier disappears.
     if REGISTER_ASSET:
@@ -5896,6 +6245,7 @@ def main():
         out = DIST / relpath
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(content)
+    build_feed(cities, pages)
     build_sitemap(pages)
     # After the wipe and the sitemap on purpose: the account prototype exists
     # on disk but not in the sitemap, unlinked and noindexed (AUTH_ENABLED).

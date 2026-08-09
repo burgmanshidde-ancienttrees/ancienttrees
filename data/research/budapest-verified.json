@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bud_009",
+    "name": "The Plane Tree of Dobrentei Square",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 115 years",
+    "age_min": 105,
+    "age_max": 120,
+    "location": {
+      "address": "Dobrentei ter, corner nearest Rudas Gyogyfurdo, Buda bridgehead of Erzsebet hid, Budapest I. kerulet",
+      "latitude": 47.4909,
+      "longitude": 19.0453,
+      "neighbourhood": "Taban / Viziváros, Buda Castle district"
+    },
+    "verified_sources": [
+      "https://pestbuda.hu/cikk/20180123_zold_budapest_erzsebet_ket_platanja_i_resz",
+      "https://pestbuda.hu/cikk/20180127_erzsebet_ket_platanja_ii_resz",
+      "https://fokert.budapestikozmuvek.hu/platan-a-dobrentei-teren-i-keruletnevezetes-fak"
+    ],
+    "access": "Free, standing in a public square",
+    "transport": "Dobrentei ter tram stop (lines 19/41) or a 5 minute walk from Rudas Gyogyfurdo, on foot",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources agree: pestbuda.hu's two-part 2018 history piece (journalism, uses period photographs from 1907-1910s to date the tree) and FOKERT (Budapest's official parks company), which lists it on its own 'nevezetes fak' (notable trees) register page (fokert.budapestikozmuvek.hu/platan-a-dobrentei-teren). FOKERT page is JS-rendered and could not be fetched in full this pass (same technical issue already logged for bud_007); its content was read via search-engine cache/snippet, which independently gave matching figures (trunk circumference over 4 metres, height about 20 metres, at least 115 years old), so treated as a genuine second source rather than a re-read of pestbuda. Locally protected since 2011 under Budavari (District I) municipal ordinance 16/2011 (VI.24), with a commemorative plaque at the trunk. Species Platanus x acerifolia, first documented in photographs from 1907-1910s. Witnessed: the 1945 destruction of Erzsebet hid (stood amid the ruins), the bridge's 1964 postwar reconstruction, and decades of Castle District change; a long-running restaurant called 'Platan' took its name from the tree and set tables in its shade. Two plane trees stand at this bridgehead per pestbuda (the other south of the bridgehead beside Rudas furdo itself, undocumented trunk size); this entry covers only the Dobrentei ter specimen, the better-documented and officially protected one, to keep the entry a single collectible point. location_precision is approximate because sources give the square and corner ('nearest Rudas fejeye') but no tree-level coordinate or register pin; flagged only for that reason, not for any doubt about identity, age or survival. Forms a tight cluster with bud_002 (Pagoda Tree of Buda Castle, ~350m) and bud_004 (Taban Mulberry, ~600m)."
+  }
+]

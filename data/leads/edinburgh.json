@@ -1,5 +1,30 @@
 {
-  "leads": [],
+  "leads": [
+    {
+      "name": "The Monkey Puzzle of the Botanics (bed E24)",
+      "reason": "Female Araucaria araucana, roughly 90 years old, coning annually, at RBGE adoption bed E24 (near the Chinese Hillside/pond area, close to the two new candidates delivered this pass). Only one source found despite a real search: RBGE's own tree-sponsorship page (rbge.org.uk/support-us/celebrate-life/adopt-a-tree/tree-sponsorship-gallery/monkey-puzzle/) plus RBGE's own tree-adoption map (rbge.org.uk/media/cw3bwbtw/tree-map.pdf) confirming bed E24 = Monkey Puzzle. Both are RBGE's own channel, not independent of each other. No second, independent source (news, TROBI, Trees and Shrubs Online) turned up despite several searches. Needs a second source before it can verify. Also check: the RBGE Facebook post 'Monkey puzzle trees... have only been in the UK since 1795' may carry more specifics if fetchable in a session (Facebook did not render for this pass)."
+    },
+    {
+      "name": "Coast Redwoods of the Upper Woodland Garden (near John Muir Grove)",
+      "reason": "Four Sequoia sempervirens near the already-published John Muir Grove (edi_011), per redwoodworld.co.uk (an enthusiast survey site, 2004/2007 visit notes): roughly 20m tall, one measured at 2m circumference. The same source describes them as 'overgrown at the base and rather untidy', which cuts against the Cadiz/collectible-point bar (visually spectacular or a compelling single point to stand). No RBGE-official or second source found. Weak candidate, only worth revisiting if a stronger source turns up describing them more specifically."
+    },
+    {
+      "name": "The Stone Gate Palm of the World of Palms Glasshouse (Trachycarpus princeps)",
+      "reason": "Species-level story is good (discovered clinging to limestone cliffs on China's Salween River gorge, named 1999, said to be the tallest Trachycarpus princeps in cultivation outside China) but only one source (RBGE's own Botanics Stories blog, stories.rbge.org.uk/archives/4743) and no individual planting date, age or size for the Edinburgh specimen. Indoor glasshouse specimen, paid entry. Needs age/size data and a second source."
+    },
+    {
+      "name": "The Chusan Palm of the World of Palms Glasshouse Trail (Trachycarpus fortunei)",
+      "reason": "Species is historically notable (first hardy palm brought to Britain by RBGE-trained plant hunter Robert Fortune) but the only source (stories.rbge.org.uk/archives/5118) is species-level with no individual specimen age, size or precise location. Needs individual-specimen data."
+    },
+    {
+      "name": "Wollemi Pines of RBGE (Wollemia nobilis, planted 2024)",
+      "reason": "Six critically endangered 'living dinosaur' Wollemi pines ceremonially planted at RBGE in 2024/25 as part of a global 34-garden conservation metacollection (rbge.org.uk press release, Scotsman coverage). Historically and conservation-wise significant, but far too young/small right now to be a walk-worth-it collectible (saplings, not yet visually established). Revisit in a few years once they have grown in; for now they fail the 'genuinely old OR visually spectacular' bar on the ground, even though the story is real."
+    },
+    {
+      "name": "RBGE's Hiroshima Ginkgo trees (planted 2015)",
+      "reason": "Three Ginkgo biloba grown from seed of a Hiroshima survivor tree, planted at RBGE around 2015 as part of the Mayors for Peace project (edinburghnews.scotsman.com, rbge.org.uk press release). Real story but only about 10 years old and not yet an individually striking specimen. Revisit once mature; note for a future pass rather than blocked."
+    }
+  ],
   "blocked": [
     {
       "name": "The Sabal Palm of the RBGE Glasshouses (oldest living plant at RBGE)",

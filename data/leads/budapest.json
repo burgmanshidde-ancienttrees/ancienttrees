@@ -1,0 +1,48 @@
+{
+  "leads": [
+    {
+      "name": "The Hos platan (Hero Plane) of Varosliget",
+      "species": "Plane (Platanus x hispanica), likely acerifolia",
+      "why_a_lead": "A single, specific plane tree in Varosliget nominated by the Ligetvedok (park-defender activists) for the 2016 Az Ev Faja contest, winning a special 'Hos Fa' (Hero Tree) award; evfaja.hu/scoreboard/2016 gives a specific GPS point (47.510432, 19.085797), ~200 years old, 30m tall, 5.7m trunk circumference, a genuinely distinct single specimen (not the separate 180-200y row of planes along the lake shore at 47.513817, 19.083098, ~390m away, which is an avenue/group and blocked separately below). REJECTED THIS PASS on an alive-now risk: multiple 2020/2023 Hungarian news sources (pestisracok.hu, index.hu, mandiner.hu, metropol.hu) report that the Ligetvedok's own camp caught fire on 26 March 2020 in the 'central area' of Varosliget, badly burning a '100+ year old plane tree' (60% of the trunk circumference burned to 4.5-5m height), which died over the following years and was felled in late 2023/2024, with a new sapling planted in its place. No source explicitly confirms or denies that the felled tree IS the 2016 Hos platan, but the coincidence (same activist group, same park, same rough age, both framed as a plane the Ligetvedok were protecting) is too close to ignore. Publishing this as alive without resolving the identity question risks shipping a dead tree.",
+      "next_step": "A future pass should try to pin down the exact felled tree's location (none of the fire/felling articles give coordinates) against the evfaja.hu GPS point for the Hos platan, or find a post-2020 photo/status update of the Hos platan specifically. If they are confirmed to be different trees, the Hos platan (47.510432, 19.085797) becomes a strong candidate: single tree, precise GPS from source, good story (hero-tree award, Liget Budapest development controversy)."
+    },
+    {
+      "name": "The linden (hars) of Gazda utca, Hidegkut",
+      "species": "Linden (Tilia sp.)",
+      "why_a_lead": "Cited by enbudapestem.hu's '10 oldest trees of Budapest' listicle as possibly the city's single oldest tree, 250-500 years old, in Pesthidegkut (Budapest II. kerulet).",
+      "next_step": "Not pursued further this pass: the source describes it standing in the courtyard/garden of a private house. If it turns out to be visible or accessible from the street, it could be verified properly; if it is genuinely on private grounds with no public access, it is a hard rule 10 block, not a lead. Needs an access check before any further research time is spent."
+    },
+    {
+      "name": "The plane trees at the Buda approach to Elizabeth Bridge (Erzsebet-hid)",
+      "species": "Plane (platan)",
+      "why_a_lead": "welovebudapest.com's '5 famatuzsalem' listicle describes plane trees on both sides of the Buda bridgehead of Erzsebet-hid, over 100 years old, planted when the bridge was built in the early 20th century, survived wars and redevelopment.",
+      "next_step": "Described as trees (plural) on both sides of the bridgehead, i.e. likely two or more separate specimens rather than one collectible point; would need to identify whether one specific tree stands out, or whether this reads as an ensemble compact enough to qualify (a single bridgehead with 'one obvious place to stand' might pass the ensemble test, similar to the Seven Chieftains precedent). Not verified this pass for lack of time."
+    },
+    {
+      "name": "Kerepesi Cemetery (Fiumei uti sirkert) veteran trees",
+      "species": "unknown, mixed",
+      "why_a_lead": "The brief flagged Kerepesi Cemetery's arboretum-like planting (56 hectares, described repeatedly as resembling an arboretum) as promising ground. Searched for a specific named/dated veteran tree within the cemetery; found only general descriptions of 'rich vegetation' and no individually documented old tree with age or species given.",
+      "next_step": "A future pass could try the cemetery's own management body (Nemzeti Orokseg Intezete, which runs fiumeiutisirkert.nori.gov.hu) directly, or search for a dendrological survey of the cemetery specifically, rather than general history searches which surface only the notable graves."
+    },
+    {
+      "name": "The historic plane trees along Varosliget lake (Varosligeti-to)",
+      "species": "Plane (Platanus x hispanica)",
+      "why_a_lead": "evfaja.hu/fa/2017/varosligeti-menten-allo-evszazados-platanok describes a group/row of century-old planes (180-200 years, planted 1818-1830 as an Archduke Joseph gift) along the City Park lake shore, GPS 47.513817, 19.083098, 32m tall, 450cm trunk circumference.",
+      "next_step": "BLOCKED as an entry, not a lead: the source itself frames this as 'this tree group' collectively, a row along the shoreline rather than one identifiable specimen with one obvious place to stand. Does not pass the collectible-point test. If a single stand-out tree within the row can be individually identified in a future pass, it could be reconsidered."
+    },
+    {
+      "name": "bud_006 source follow-up",
+      "why": "jozsefvaros.hu source URL redirect-loops; a working copy would firm up the Fuveszkert cherry's history."
+    },
+    {
+      "name": "bud_007 FOKERT registry",
+      "why": "FOKERT's own registry page for the Karolyi mulberry is JS-rendered and unreadable to fetchers; a browser session can read it and may upgrade the pin."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "The historic plane trees along Varosliget lake (Varosligeti-to)",
+      "reason": "Not a single collectible point: source describes a row/group of planes along the lake shore collectively, no single specimen distinguished. See leads entry above for the same finding recorded in more detail; duplicated here per the blocked/leads split."
+    }
+  ]
+}

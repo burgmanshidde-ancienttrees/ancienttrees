@@ -21,21 +21,6 @@
       "why_not_published": "Verifies on two sources and has a genuinely good story (the comune retells the folk name Arcidiavolo and the legend that Lucifer carried the species to earth in his claws, which is why the leaves are hooked). Held back only because it stands alone: 4.7 km northwest of the Duomo, 2.5 km from the Villa Litta pair, so it joins no walk. Access also needs a sentence of care, since the villa is a lived-in residential community and the comune's own wording is that one may enter the gate 'with the discretion owed to an inhabited place'. Pick this up if Milan ever wants a northwestern point."
     },
     {
-      "name": "Il platano di Piazza Sant'Ambrogio",
-      "species": "Platanus x acerifolia",
-      "girth_cm": 420,
-      "height_m": 34,
-      "location": {
-        "latitude": 45.463431,
-        "longitude": 9.175503,
-        "address": "Piazza Sant'Ambrogio / Largo Caduti Milanesi per la Patria"
-      },
-      "sources": [
-        "MASAF national register, Milano, Piazza Sant'Ambrogio"
-      ],
-      "why_not_published": "Single-sourced. It would be the best-placed tree in this batch, on the square of a basilica founded in 379 and 1.2 km from Parco Sempione, but it is not on the comune's list of 13 (the ground is basilica and Universita Cattolica land, not municipal park), and searching in Italian for a monumental plane on that square returns nothing beyond the register row. Needs a second source: the Basilica di Sant'Ambrogio's own publications, the Universita Cattolica campus material, or the regional decree text behind the designation."
-    },
-    {
       "name": "Il platano di Viale Montesanto 4/6",
       "species": "Platanus x acerifolia",
       "girth_cm": 525,
@@ -75,7 +60,7 @@
       "sources": [
         "MASAF national register, Giardini Indro Montanelli (625 cm / 28 m at 45.473889, 9.200833 and 475 cm / 34 m at 45.474389, 9.203111)"
       ],
-      "why_not_published": "Single-sourced and unnamed. The comune publishes pages for only three Montanelli trees plus the bald cypress and the hackberry; these two are register rows with no municipal page, no name and no story, and the gardens already carry five of our entries. Raw material for a later depth pass, not page-worthy on their own."
+      "why_not_published": "Single-sourced and unnamed. The comune publishes pages for only three Montanelli trees plus the bald cypress and the hackberry; these two are register rows with no municipal page, no name and no story, and the gardens already carry five of our entries. Raw material for a later depth pass, not page-worthy on their own. UPDATE 2026-08-08 verify pass: the 475cm/34m entry (45.474389,9.203111) now has a second source (Il Giorno, ilgiorno.it/milano/cronaca/alberi-monumentali-1.7590565, verbatim confirms a second 34m plane at Giardini Montanelli via Palestro) and has been promoted and delivered as mil_018 in data/research/milan-verified.json. The other row, 625cm/28m at (45.473889,9.200833), is STILL single-sourced (MASAF only); comune.milano.it is now returning 403 to every fetch (curl and WebFetch alike), so the comune-page route the earlier pass used to find second sources is currently closed. Remains a lead until a second source turns up."
     },
     {
       "name": "Il platano di Piazzale Libia",
@@ -90,20 +75,6 @@
         "MASAF national register, Milano, Piazzale Libia"
       ],
       "why_not_published": "Single-sourced and unnamed, and 1 km east of the Porta Romana cluster on a large traffic circle. Would need a second source and a reason to walk there."
-    },
-    {
-      "name": "The Parco Sempione plane on Viale Cervantes",
-      "species": "Platanus x acerifolia",
-      "girth_cm": 390,
-      "height_m": 33,
-      "location": {
-        "latitude": 45.473056,
-        "longitude": 9.176667
-      },
-      "sources": [
-        "MASAF national register, Milano, Viale Cervantes - Parco Sempione"
-      ],
-      "why_not_published": "Single-sourced and the smallest registered plane in central Milan. This is the whole reason Parco Sempione did not become a second walk this pass: apart from the wingnut we already publish (mil_010), the park holds exactly one more register entry, and it is an unnamed 3.9 m plane. The park's labelled botanical trail names 31 plants but is a species guide with no individual ages or measurements, so it cannot supply a second source either."
     },
     {
       "name": "Milan's other Villa Litta planes",
@@ -127,6 +98,20 @@
         "MASAF national register, comuni of Cinisello Balsamo, Pioltello, Bollate, Vimodrone"
       ],
       "why_not_published": "Outside the day-trip boundary as walks, but on the record: a 495 cm hackberry in Vicolo Cornelio and a 445 cm hackberry plus a magnolia in the park of Villa Ghirlanda at Cinisello Balsamo (9 to 10 km), a hackberry-and-yew group in Piazza Giovanni XXIII at Pioltello (11 km), a 400 cm black poplar in Bollate, a magnolia at Villa Torri in Vimodrone. Candidate pool if Milan ever grows a second page or a Lombardy collection."
+    },
+    {
+      "name": "Il platano di Viale Vittorio Veneto 3",
+      "species": "Platanus x acerifolia",
+      "girth_cm": 570,
+      "height_m": 36,
+      "location": {
+        "latitude": 45.475,
+        "longitude": 9.204167
+      },
+      "sources": [
+        "MASAF national register, Milano, Viale Vittorio Veneto 3"
+      ],
+      "why_not_published": "CAUTION added 2026-08-08 verify pass, not resolved either way: still single-sourced (as the original 2026-08-05 pass found), and a genuine dead-tree risk has now surfaced. Urbanfile (blog.urbanfile.org/2018/07/10/milano-porta-venezia-rimosso-lalbero-ormai-secco-da-oltre-due-anni/, 10 July 2018) reports a large plane tree on Viale Vittorio Veneto near Porta Venezia that dried out completely by 2016 and was removed on 8 July 2018, trunk 'circa tre metri di circonferenza' (about 3 m girth), standing in the tram-line median. The register's tree is a different size (570 cm girth, nearly double), so this is very likely a DIFFERENT specimen still standing at house number 3, but the article gives no exact address to rule it out cleanly. Do not publish without either (a) a second source confirming this specific 570 cm tree is alive, or (b) ruling out that it is the felled one. A future pass should check satellite imagery or a recent street-level photo of Viale Vittorio Veneto 3 before doing anything else with this candidate."
     }
   ],
   "blocked": [
@@ -184,6 +169,14 @@
         "milan.json FAQ, researched in an earlier pass"
       ],
       "reason": "Fallen. The red oak known as the Quercia di Montale came down in October 2019 in heavy rain and its trunk was left in place. Already handled honestly in the city page's FAQ; listed here so nobody re-researches it as a candidate."
+    },
+    {
+      "name": "40 m Himalayan Cedar, Viale Cervantes, Parco Sempione (RAMI candidate, not MASAF)",
+      "species": "Cedrus deodara",
+      "sources": [
+        "https://ilregistrodeglialberi.it/2279-cedro-parco-sempione-cedro-milano-mi-lombardia (RAMI, crowd-sourced, Oct 2021 survey: girth 380 cm, height 40 m, health 'Buona')"
+      ],
+      "reason": "NOT blocked outright, filed here as a flagged lead rather than a dead end: RAMI is a citizen/collaborative registry, not an official government register, so on its own it does not meet the two-independent-sources bar and it is not in our licensed MASAF import. No second source was found this pass. Separately, a 2019 MilanoToday user report (milanotoday.it/social/segnalazioni/abbattuto-albero-himalaya-sempione.html, 13 Nov 2019) describes a healthy Himalayan cedar felled in Parco Sempione and says 'non è il primo' (not the first); since RAMI's survey is dated Oct 2021, two years later, it is probably a different, still-living cedar, but this has not been confirmed. If a height of 40 m holds up, this would be one of the tallest trees in Milan and worth a dedicated look: try the comune's own Parco Sempione tree-walk PDF (yesmilano.it/system/files/itinerario/allegati/3752/12104/Parco%20Sempione-percorsi%20alberi-guida.pdf, not yet fetched this pass) as a possible second source."
     }
   ]
 }

@@ -99,6 +99,13 @@ One object per tree:
 material there: the surprising fact, the history, the dispute. Facts only, no
 polished prose.
 
+`age_estimate` is a chip label, not a sentence: "roughly 400 years", "over a
+century", "not documented". Put any caveat, dispute or reasoning in
+`verify_notes` for the story to carry instead. Paris shipped five trees on
+2026-08-08 whose `age_estimate` was a full clause ("not documented;
+comparable Corylus colurna elsewhere in Paris date to the 1860s-1880s"),
+which reads as prose where the page needs a scannable fact.
+
 Candidates that fail only on evidence or count go to the `leads` list of
 `data/leads/<slug>.json` (create or extend it, keep existing entries); trees
 that must never ship (dead, private, withheld location, not a collectible
@@ -110,3 +117,47 @@ Report what you have after roughly 40 minutes; do not run to completeness.
 Never hold a whole city back on your own judgement: deliver what verifies,
 record the rest. With your report, return the filled-in cost line your brief
 asks for (your total token usage), so the daily retro can price the pass.
+
+## Aerial imagery as evidence (standing tool, Hidde's idea, 2026-08-09)
+
+Openly licensed aerial imagery is a legitimate source for three things, and
+only three:
+1. **Position**, when the tree is individually identifiable: a distinctive
+   crown (the only evergreen giant in a bare winter park), a documented
+   structure at the trunk (Baarn's Pekingtuin oak was CONFIRMED because its
+   ~6m protective ring is visible in the national aerial survey), a lone tree
+   in a plaza. "A big crown roughly where the park is" identifies nothing.
+2. **Continued presence**, when the imagery is DATED and recent: a standing
+   crown in this year's national survey is real evidence; undated commercial
+   basemaps prove nothing about today.
+3. **Absence**: a stump or bare gap where a documented large crown should be
+   is a strong death signal worth chasing in news sources.
+
+What imagery can NEVER do: species, age, or "alive today" from undated or
+stale layers. It is one source among the two, never both.
+
+Where to look, in order: national open orthophoto programmes, which are dated
+and licensed (Netherlands: PDOK Actueel_orthoHR WMS, 7.5cm, yearly; France:
+IGN; Spain: PNOA; Denmark and others have equivalents); then Esri World
+Imagery (check the capture-date metadata per tile area). Google Maps/Earth
+tiles are ToS-restricted for automated fetching: do not scrape them.
+Always cite the imagery source and its capture vintage in the evidence.
+
+## monumentaltrees.com as a verification source (codified 2026-08-09, Hidde's push)
+
+Hard rule 1 forbids their content (photos, text, bulk data) and explicitly
+permits fact verification. In practice that means three allowed uses:
+1. **Second source**: a tree found elsewhere (register, news, institution) may
+   be corroborated by its monumentaltrees record for existence, species,
+   location and measurements. Never the sole source, and never the discovery
+   engine: we find trees elsewhere, they may confirm them.
+2. **Photo identity**: LOOK at their photos to confirm which tree a candidate
+   image shows. Never republish or download their imagery.
+3. **Names and measurements as cross-checks.**
+
+Two hard edges: their server 403s automated fetches, deliberately, so this is
+measured single-page browser-session work, never bulk scraping; and wholesale
+extraction of their database is forbidden by their disclaimer and by EU
+database right, whatever the technical route. The long play is Hidde's
+outreach mail to the site's owner (OUTREACH.md tier 3c), which can turn the
+grey edge into a partnership.

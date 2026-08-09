@@ -1,0 +1,100 @@
+{
+  "city": "Copenhagen",
+  "leads": [
+    {
+      "name": "Golden Weeping Ash (Guldhængeask), Landbohøjskolens Have",
+      "species": "Golden Weeping Ash (Fraxinus excelsior 'Aurea Pendula')",
+      "location_hint": "South Garden (Sydhaven), facing Bülowsvej, Landbohøjskolens Have, Frederiksberg",
+      "reason": "Single-sourced: only kub.ku.dk's 2008 historical feature ('De gamle traeer i fakultetets have') describes it, ~150 years old at time of writing (so ~168 now), 4 m tall. No independent second source found for age or survival, and no other outlet mentions it by name. Also modest and unspectacular in stature ('despite modest size, has endured'), so it may not clear the visually-spectacular/historically-significant bar even if a second source turns up. Worth a direct query to the garden."
+    },
+    {
+      "name": "Silver Linden double tree, Landbohøjskolens Have",
+      "species": "Silver Linden (Tilia tomentosa), planted as a pair grown together",
+      "location_hint": "just inside the garden from Flisehaven, Landbohøjskolens Have, Frederiksberg",
+      "reason": "Only the same single kub.ku.dk 2008 article describes it; no age given, no second source, no coordinates beyond a vague garden-internal reference."
+    },
+    {
+      "name": "Zelkova group (4 trees grown together), Landbohøjskolens Have",
+      "species": "Zelkova (Zelkova sp.)",
+      "location_hint": "facing Bülowsvej, Landbohøjskolens Have, Frederiksberg",
+      "reason": "Same single source, described as 'fragile'; also a multi-trunk cluster rather than one collectible point, and no age or health status beyond 'fragile' found."
+    },
+    {
+      "name": "Wingnut (vingevalnød / Pterocarya) at Allégade, Frederiksberg",
+      "species": "Wingnut, likely Pterocarya fraxinifolia",
+      "location_hint": "park area near Allégade, Frederiksberg (exact spot not found)",
+      "reason": "Cited by frederiksberg.dk-linked search summaries as 'approximately 200 years old, one of the municipality's oldest trees' but the source page that stated this could not be located directly (404 on the most likely URL); no second independent source, no coordinates, no confirmation the tree still stands. Needs a fresh search for the current frederiksberg.dk page or a call to the municipality's tree register."
+    },
+    {
+      "name": "Lindens of Frederiksberg Slot garden",
+      "species": "Lime/linden (Tilia sp.)",
+      "location_hint": "Frederiksberg Slot grounds, Frederiksberg",
+      "reason": "Described in passing by search summaries as 'the state's 300-year-old linden trees at Frederiksberg Slot', Denmark's oldest trees on Frederiksberg, but no primary source found describing them individually. Access is a real problem: the palace now houses the Army Officers' School (Haerens Officerskole) and is open for guided tours only about ten days a year (last Saturday of the month, per migogkbh.dk), so even if verified this would ship as 'restricted' access at best, not a casual walk-up. Needs a Slots- og Kulturstyrelsen or Forsvaret source with real detail before pursuing further."
+    },
+    {
+      "name": "Giant plane tree, Assistens Kirkegaard",
+      "species": "London Plane or Oriental Plane (Platanus sp., not confirmed)",
+      "location_hint": "on a lawn somewhere in Assistens Kirkegaard, Norrebro",
+      "reason": "Multiple thin search-summary mentions of 'a preserved giant plane tree, possibly Denmark's largest' at Assistens Kirkegaard, also referenced as having 'iconic tree' status under Copenhagen's tree designation programme, but every page actually fetched this pass (kk.dk cemetery page, storyhunt.io guide) turned out to contain no tree detail at all when read directly, only the search engine's own AI summary asserted it. This is a real, promising lead (the cemetery is 500m-1km from the existing Botanisk Have/Kongens Have cluster, and holds Andersen's and Kierkegaard's graves) but needs a primary source located and fetched directly, not just a search summary, before verification. Do not treat the 'possibly Denmark's largest' claim as sourced; it was never traced to an origin this pass. UPDATE 2026-08-09: worked dendron.dk's full Assistens register (12 entries, IDs 1467-1478) this pass; no Platanus entry exists there. If this tree is real it is not in the Danish Dendrological Society's survey, so the lead still needs a different primary source (a Kobenhavns Kommune tree register or a direct site visit), not another web sweep."
+    },
+    {
+      "name": "Kastellet ramparts trees (elm, linden, horse chestnut)",
+      "species": "mixed: elm, linden, horse chestnut, various fruit trees",
+      "location_hint": "the star-shaped rampart of Kastellet, Copenhagen",
+      "reason": "Well documented that Kastellet's ramparts were deliberately planted with these species from 1663 onward (root systems to bind the earthworks, timber reserve, sightline-blocking), per fredninger.dk and hovedstadshistorie.dk, and the fortification itself is intact and highly walkable, directly adjacent to the existing Kongens Have/Botanisk Have cluster. But this is a planting programme across an entire rampart, not one identifiable tree, so no single specimen could be pulled out from what this pass read. Needs either a specific named/measured veteran tree (a Danish Dendrological Society register entry, as with Thorvaldsen's Robinia, would solve this in one fetch) or a site visit/photo survey to pick one out.",
+      "note_for_ensemble_test": "Even at its best this is closer to 'a fortification planted with trees' than one collectible point; would need one genuinely standout specimen, not the rampart as a whole."
+    },
+    {
+      "name": "Copenhagen 'evighedstraeer' (eternity trees) designation",
+      "species": "unspecified, designated per-tree by the municipality",
+      "location_hint": "municipal nature areas only, e.g. Utterslev Mose; not city parks or gardens",
+      "reason": "Real, verified municipal programme (Koebenhavns Kommune Traepolitik, adopted 2016; criteria PDF read this pass: tree must be over 100 years old, beech >150, oak >200, diameter >1m, or carry major biological/historic/aesthetic value; ~50 eternity trees expected citywide) but the source material found is policy and committee minutes, not a published list of the actual designated trees with names or coordinates. Also structurally off the city's core walkable cluster: eternity trees are designated ONLY in municipal nature areas (Utterslev Mose, Amager Faelled, Vestvolden etc.), which sit well outside the Kongens Have/Botanisk Have/Slotsholmen spine and would need their own day-trip framing per the 30-minute rule. Needs the municipality's actual GIS layer or published tree list, not the policy document, before this goes anywhere."
+    },
+    {
+      "name": "cop_005 date confirmation route",
+      "why": "haven@plen.ku.dk (the university garden) is the named route to firm up the 1883 date and current status of the Temple Tree ginkgo."
+    },
+    {
+      "name": "Magnolie, Sølvløn, Gul fyr, Vortebirk, Nøddetaks (Japanese Nutmeg-yew), Assistens Kirkegård",
+      "species": "mixed (Magnolia sp.; Acer saccharinum, Silver Maple; Pinus ponderosa, Ponderosa Pine; Betula pendula, Silver Birch; Torreya nucifera, Japanese Nutmeg-yew)",
+      "location_hint": "all within Assistens Kirkegård, GPS given per-tree by dendron.dk (Individual_ID 1478, 1473, 1472, 1469, 1475)",
+      "reason": "All five are in the Danish Dendrological Society's register (Hans Erik Lund, 26-11-2019, GPS-verified, all alive/healthy) but no second independent source was found for any of them in this or the prior pass, and none stood out as more remarkable than the Assistens trees that did clear the bar. UPDATE 2026-08-09: the sixth tree in this group, Tretorn (Honey Locust, Individual_ID=1476), DID clear the bar this pass via a 1952 Danish Dendrological Society yearbook article (dendron.dk/aarsskrift/docs/6.pdf) that independently places a Gleditsia triacanthos in the same section (E) of Assistens, documented since 1941; shipped as cop_011, removed from this group. Also checked this pass: Torreya nucifera's species ID was tested against a Danish gardening source claiming only Torreya californica reliably survives outdoors in Denmark, but no source was found that actually names a Torreya at Assistens as californica rather than nucifera, so this is circumstantial doubt, not a conflicting second source; still a lead, not blocked."
+    },
+    {
+      "name": "Frederiksberg Have remainder: Navr, Ær (x2) (dendron.dk Individual_ID 836, 838, 840)",
+      "species": "mixed (Acer campestre, Field Maple; Acer pseudoplatanus x2, Sycamore Maple)",
+      "location_hint": "all within Frederiksberg Have, GPS given per-tree by dendron.dk",
+      "reason": "Danish Dendrological Society register only (Hans Erik Lund, 12-10-2016, all alive), smaller girths than the two Frederiksberg Have trees delivered earlier (cop_009 the beech, cop_010 the oak). No second independent source chased this pass given the time budget. UPDATE 2026-08-09: the two Avnbøg (hornbeam) entries in this original group are no longer both leads. Individual_ID=842 is 'Suttetraeet', the pacifier tree, a well-known Copenhagen tradition (annual pacifier harvest since 2004, per frederiksbergliv.dk) independently confirming the register; shipped as cop_012, flagged because the register carries no age or girth data for it at all. Individual_ID=841, the other hornbeam, was not chased and remains a lead."
+    },
+    {
+      "name": "Avnbøg (Hornbeam), Frederiksberg Have (dendron.dk Individual_ID=841)",
+      "species": "Common Hornbeam (Carpinus betulus)",
+      "location_hint": "Frederiksberg Have, GPS given by dendron.dk",
+      "reason": "Register only, not chased this pass; distinct from Individual_ID=842 ('Suttetraeet', shipped as cop_012)."
+    },
+    {
+      "name": "Knudebøgen (Copper Beech), Assistens Kirkegård afd. A (dendron.dk Individual_ID=1470)",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "location_hint": "Assistens Kirkegård, NW corner of section A, near the wall between A and B+C, GPS 55.69106 12.55339 per dendron.dk",
+      "reason": "UPDATE 2026-08-09: re-checked this pass with targeted web searches ('Assistens Kirkegård kobberbøg/knudebøg/blodbøg', photo/deformation terms); still no second independent source. bennyfriisgunno.dk's detailed Assistens planting survey, which DID corroborate three other register trees this pass, does not name a copper beech among its listed species. Genuinely striking (severe graft-site deformation) but single-sourced; still a lead."
+    },
+    {
+      "name": "Ceder (true cedar, Cedrus sp.), Assistens Kirkegård afd. A/B border (dendron.dk Individual_ID=1471)",
+      "species": "Cedar (Cedrus sp., species not specified by the register)",
+      "location_hint": "Assistens Kirkegård, 60m from Nørrebrogade, 10m from the wall between afd. A and B+C, GPS 55.69076 12.55274",
+      "reason": "Register data pulled this pass: 2.52m circumference, 16.5m tall, alive/healthy 2019, 'flot stamme' (handsome trunk), no cones autumn 2019 despite heavy seed-set in most other species that year. Species conflict UNRESOLVED: bennyfriisgunno.dk separately describes a 'Flodceder' (river cedar, almost certainly Thuja plicata / Western Redcedar rather than a true Cedrus) standing next to the Monkey Puzzle Tree in section A; per BRIEF_RESEARCH.md this is a fundamental disagreement (different genus, not just a naming variant), so per the brief's own rule this stays a lead rather than shipping flagged. Needs a site-specific photo or a register correction before either merging or separating these as two trees."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Blodbøg (blood/copper beech), Landbohøjskolens Have",
+      "species": "Copper Beech (Fagus sylvatica 'Purpurea')",
+      "reason": "CONFIRMED DEAD. Planted 1858 when the garden was founded (its oldest tree, 5 m circumference, described by fredninger.dk's older snapshot as the garden's thickest tree), but Danish Wikipedia's Landbohojskolens Have entry states plainly it 'blev faeldet i 2018 grundet svampeangreb, men traeets hovedstamme staar stadig tilbage' (was felled in 2018 due to fungal infection; only the main trunk stump remains). Never ship as a living entry. Recorded here so no future pass re-verifies it from the older, now-stale fredninger.dk description alone."
+    },
+    {
+      "name": "Bispebjerg Kirsebaeralle (Cherry Blossom Avenue), Bispebjerg Kirkegaard",
+      "species": "Japanese flowering cherry (Prunus sp., likely Prunus serrulata / yedoensis cultivars)",
+      "reason": "Genuinely famous (up to 150,000 visitors at peak bloom per tourism sources) and would be an easy sell, but it is a long avenue of many individual cherry trees along a cemetery path, not one collectible point or a compact famous ensemble with a single obvious place to stand; the trees themselves are also ordinary-aged flowering cherries (an ornamental planting), not ancient or individually remarkable specimens. Blocked under BRIEF_RESEARCH.md's explicit rule that 'an avenue or a whole wood is blocked', on the same logic as La Rambla's plane trees. Judged honestly per the brief's instruction, not defaulted."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+ "note": "Every outreach mail ever sent by the machine, so no address is ever mailed twice without a human deciding to. Appended by scripts/outreach_send.py.",
+ "sent": [
+  {
+   "date": "2026-08-08",
+   "to": "redactie@parool.nl",
+   "outlet": "Het Parool (Amsterdam)",
+   "subject": "De oudste boom van Amsterdam staat in Artis, en er is nu een wandeling langs",
+   "batch": "001-nl-regio"
+  },
+  {
+   "date": "2026-08-08",
+   "to": "redactie@duic.nl",
+   "outlet": "DUIC (Utrecht)",
+   "subject": "De oudste boom van Utrecht overleefde het hele boerenlandschap om zich heen",
+   "batch": "001-nl-regio"
+  },
+  {
+   "date": "2026-08-08",
+   "to": "stadsredactie@bd.nl",
+   "outlet": "Brabants Dagblad, editie Den Bosch",
+   "subject": "Op Bastion Oranje groeit een boom boven op de vestingmuur van 1634",
+   "batch": "001-nl-regio"
+  },
+  {
+   "date": "2026-08-08",
+   "to": "stadsredactie@haarlemsdagblad.nl",
+   "outlet": "Haarlems Dagblad",
+   "subject": "De beuk waar koning Lodewijk Napoleon zijn monogram in kerfde staat er nog",
+   "batch": "001-nl-regio"
+  },
+  {
+   "date": "2026-08-08",
+   "to": "redactie@gelderlander.nl",
+   "outlet": "De Gelderlander, editie Arnhem",
+   "subject": "Hans, Grietje en de Heks: drie kastanjes van bijna vier eeuwen bij Zijpendaal",
+   "batch": "001-nl-regio"
+  }
+ ]
+}

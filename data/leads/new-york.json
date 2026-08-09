@@ -1,41 +1,6 @@
 {
   "leads": [
     {
-      "name": "London Plane at the Reservoir (Bridle Path near East 96th Street)",
-      "species": "London Plane (Platanus x acerifolia)",
-      "location": {
-        "address": "Bridle Path, east side of the Jacqueline Kennedy Onassis Reservoir, near East 96th Street, Central Park, New York",
-        "latitude": null,
-        "longitude": null,
-        "neighbourhood": "Central Park, Manhattan"
-      },
-      "reason": "NYC Parks Great Trees register: 95.94 feet tall, trunk diameter over 5 feet, possibly planted when the Reservoir was excavated in 1862, called Central Park's oldest tree by Untapped Cities. A strong standalone candidate (two sources: NYC Parks register + Untapped Cities guide) but not pursued to full verification this pass because it sits roughly 1.9km from the nyc_002 (Ramble)/nyc_011-013 cluster this pass was built around, too far to fold into the same walk. Worth a follow-up pass anchored at the Reservoir/96th St instead, possibly paired with the nearby Yoshino Cherries and East 97th St elm below."
-    },
-    {
-      "name": "Yoshino Cherries at the Reservoir (east side, near East 87th Street)",
-      "species": "Yoshino Cherry (Prunus x yedoensis)",
-      "location": {
-        "address": "East side of the Jacqueline Kennedy Onassis Reservoir, near East 87th Street, Central Park, New York",
-        "latitude": null,
-        "longitude": null,
-        "neighbourhood": "Central Park, Manhattan"
-      },
-      "reason": "NYC Parks Great Trees register: part of Japan's 1912 gift of cherry trees to the United States, distinct from the Kwanzan cherries on the reservoir's west side, blooms mid-April. An ensemble candidate similar in kind to the Mall elm allee (nyc_013 in the verified batch), but roughly 1.1-1.2km from the nyc_002 Ramble anchor, stretching the cluster further than the three delivered this pass. Not pursued to full verification for time; a real candidate for a second, more northerly Central Park cluster together with the Reservoir London Plane and East 97th St elm above/below.",
-      "location_precision_note": "would need a mapped reference point for 'east side near 87th St', not yet found"
-    },
-    {
-      "name": "American Elm at East 97th Street entrance",
-      "species": "American Elm (Ulmus americana)",
-      "location": {
-        "address": "Near the East 97th Street entrance, Central Park, New York",
-        "latitude": null,
-        "longitude": null,
-        "neighbourhood": "Central Park, Manhattan"
-      },
-      "reason": "NYC Parks Great Trees register (id=46): 94.3 feet tall with an 80-foot canopy, dates to the 1800s per NYC Parks, survived Dutch elm disease and 'major superstorms', described as the northernmost Great Tree in the park. Two sources exist (NYC Parks register + Westside Rag/Untapped Cities coverage) but, like the Reservoir trees above, it sits well over 1.5km from the Ramble cluster this pass focused on. Good candidate for the same northerly follow-up cluster.",
-      "location_precision_note": "no mapped point found yet"
-    },
-    {
       "name": "Evodia by Heckscher Playground",
       "species": "Evodia / Korean Bee-Bee Tree (Tetradium daniellii)",
       "location": {
@@ -44,7 +9,7 @@
         "longitude": null,
         "neighbourhood": "Central Park (south end), Manhattan"
       },
-      "reason": "NYC Parks Great Trees register (id=44): 77.9 feet tall, native to China/Korea, distinctive leaning trunk and fern-like leaves, called 'the hardest NYC Great Tree to track down.' Well documented (register + dedicated tumblr post) but sits at the opposite (south) end of the park from the Ramble/Mall cluster, roughly 2km+ away. A fine standalone tree or seed for a future south-park cluster (with the West Drive area), not part of this pass's cluster.",
+      "reason": "NYC Parks Great Trees register (id=44): 77.9 feet tall, native to China/Korea, distinctive leaning trunk and fern-like leaves, called 'the hardest NYC Great Tree to track down.' Well documented (register + dedicated tumblr post) but sits at the opposite (south) end of the park from both the Ramble/Mall cluster and the Reservoir cluster now delivered as nyc_018-020. 2026-08-09 pass distance-checked it against the Reservoir cluster specifically (not just the Ramble): Heckscher Playground is roughly 40.7676,-73.9788 by estimate (no exact geocode found), versus nyc_020 (Yoshino Cherries, E87th St) at 40.7819,-73.9585, a gap of roughly 2.3km. Confirmed too far to fold into either existing walk; stays a fine standalone tree or seed for a future south-park cluster (with the West Drive area).",
       "location_precision_note": "no mapped point found yet"
     },
     {
@@ -59,18 +24,52 @@
       "reason": "Prospect Park Alliance and the Old Growth Forest Network both describe the Midwood/Ravine as Brooklyn's last old-growth upland forest and its oldest trees, dominated by tulip trees around the Midwood and oaks/tulip trees/sweetgums around the Ravine. This pass could not find any INDIVIDUALLY named or singled-out specimen tree within this area (unlike, say, the Camperdown Elm, nyc_003, which already anchors Prospect Park) -- every source describes the forest as a whole, which reads as 'a whole wood' rather than one collectible point per the ensemble test. Not pursued further. A future pass with more time could search Prospect Park Alliance's own tree-tour PDFs or press coverage of specific champion specimens (e.g. a named oldest oak) inside the Ravine/Midwood, which would be a strong Camperdown Elm-adjacent cluster if found."
     },
     {
-      "name": "Cedar of Lebanon near Conservatory Water (72nd Street entrance)",
-      "species": "Cedar of Lebanon (Cedrus libani)",
+      "name": "Common Pawpaw of the Plant Family Collection, Brooklyn Botanic Garden",
+      "species": "Common Pawpaw (Asimina triloba)",
       "location": {
-        "address": "Inside the 72nd Street entrance to Central Park, near Conservatory Water",
+        "address": "Brooklyn Botanic Garden, Plant Family Collection, between Daffodil Hill and Oak Circle, Brooklyn, NY 11225",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Prospect Heights, Brooklyn"
+      },
+      "reason": "2026-08-08 pass (Brooklyn cluster): NYC Parks Great Trees registry, id=3, edible banana-like fruit, umbrella-like leaves, custard-apple family. Genuine sourcing conflict found and not resolved this pass: the register's own list page (fetched via Wayback Machine, 2022 capture) gives a 1932 planting date, while a separately indexed capture/summary of the individual entry (great-trees/3) gives 1923, a 9-year discrepancy in the SAME official source rather than two independent ones agreeing. No second, genuinely independent source naming this specific BBG specimen was found (Flatbush Gardener's pawpaw post describes BBG's plant offerings generally and a different, Staten Island planting, not this tree). Location is well described (between Daffodil Hill and Oak Circle) if a future pass wants to pursue it and resolve the date conflict, ideally against a fresh live fetch of nycgovparks.org once its bot-block clears.",
+      "location_precision_note": "would need a mapped point for the Plant Family Collection area, not yet found"
+    },
+    {
+      "name": "English Elm, Fort Greene Park",
+      "species": "English Elm (Ulmus procera)",
+      "location": {
+        "address": "Fort Greene Park, Brooklyn, NY 11205",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Fort Greene, Brooklyn"
+      },
+      "reason": "2026-08-08 pass: one of 17 Brooklyn trees added to the 2024 Great Trees list per Brooklyn Paper's coverage, planted during the park's original Olmsted/Vaux design. Not pursued to verification: Fort Greene Park is roughly 4-4.5km from the Prospect Park/Green-Wood/BBG cluster this pass targeted, too far to fold into the same walk. A reasonable seed for a separate, future Fort Greene/Bed-Stuy cluster alongside the Brooklyn Paper's other 2024 additions (a Bed-Stuy ginkgo at 87 MacDonough St tied to the United Order of Tents, a red oak in Saratoga Park), several of which are individually well-documented but scattered across north-central Brooklyn rather than near Prospect Park."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "The Shakespeare Garden Mulberry",
+      "species": "Mulberry (Morus sp.), formerly said to be white mulberry (Morus alba)",
+      "location": {
+        "address": "Shakespeare Garden, between Belvedere Castle, the Delacorte Theater and the Swedish Cottage, Central Park, New York",
         "latitude": null,
         "longitude": null,
         "neighbourhood": "Central Park, Manhattan"
       },
-      "reason": "2026-08-07 pass (deepening the Ramble/Mall/CPW cluster): Central Park Conservancy's own plant page for the species names one specimen at this spot ('a beautiful specimen inside the 72nd Street entrance near Conservatory Water', 40-50 feet tall) and it is the geographically closest new candidate found this pass, plausibly under 1km from nyc_002/nyc_011-013. Not delivered: only one real source describes this individual tree (the Conservancy's generic species page), it gives no planting date or age, and repeated searches (Daily Star Lebanon piece, Armchair Philately, general cedar-of-lebanon history sites) found nothing specific to this specimen beyond restating the species page. Fails the two-independent-sources-with-age bar. Worth a look for a future pass if a second source naming this exact tree turns up (a Conservancy walking-tour PDF or press piece), but currently thin, not withheld or blocked for any other reason."
-    }
-  ],
-  "blocked": [
+      "reason": "2026-08-09 pass (deepening the Ramble/Mall/CPW cluster, distance-checked as close to nyc_011): DEAD, confirmed by two independent sources. centralpark.com and ilovetheupperwestside.com both state the garden's mulberry, long claimed (disputedly) to be a graft of the mulberry Shakespeare planted at New Place, Stratford-on-Avon in 1602, blew down in a 2006 summer storm and was removed; neither source, nor the Central Park Conservancy's own current Shakespeare Garden article, mentions a replacement planting. Not a living tree today; must never ship as an entry per the never-dead-tree rule. (One tangential source, friendsofshakespearegarden.org, describes a currently-standing mulberry, but on checking it is about a different Shakespeare Garden in Ellis Park, not Central Park's, and does not apply here.) Blocked outright, not a leads/evidence gap."
+    },
+    {
+      "name": "Strawberry Fields elm grove and white pines",
+      "species": "American Elm (Ulmus americana) grove; White Pine (Pinus strobus), six trees",
+      "location": {
+        "address": "Strawberry Fields, Central Park, near West 72nd Street, New York",
+        "latitude": null,
+        "longitude": null,
+        "neighbourhood": "Central Park, Manhattan"
+      },
+      "reason": "2026-08-09 pass: Strawberry Fields is shaded by a grove of American elms with six white pines (the park's largest of that species) at the bottom of the hill, per Central Park sources. Geographically close to the cluster (near West 72nd Street/CPW) but every source describes the plantings collectively, with no individual specimen singled out by name, age or history the way nyc_002 or nyc_011 are. Reads as 'a whole grove', not one collectible point with an obvious place to stand. Blocked as not a single collectible point unless a future pass finds one named specimen within it."
+    },
     {
       "name": "Arthur Ross Pinetum",
       "species": "Mixed conifers, 17 species",

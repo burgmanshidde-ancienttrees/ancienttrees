@@ -133,7 +133,7 @@ def known_terms():
     # while /explore carried exactly that title and H1, and a session nearly
     # built a page that already existed. A lead that names something we have is
     # worse than no lead: it sends work at a solved problem.
-    terms.update({"ancient tree map", "tree map", "map", "explore", "collections",
+    terms.update({"ancient tree map", "ancient trees", "ancient tree", "tree map", "map", "explore", "collections",
                   "species", "cities", "countries", "in season", "contribute",
                   "suggest a tree", "about", "privacy", "app"})
     return {t for t in terms if t}
@@ -315,8 +315,16 @@ query($tag: String!, $since: Date!, $until: Date!) {
     speed = ""
     if perf and perf[0].get("quantiles"):
         qq = perf[0]["quantiles"]
+        # Cloudflare's RUM returns page load time in MICROseconds. We printed
+        # it as milliseconds for weeks, so the dashboard read "p50 519000ms",
+        # which is eight and a half minutes and would mean the site never
+        # loads. Nobody flinched, which is the point: CLAUDE.md already tells
+        # us to sanity-check every numeric field against the physical world,
+        # and that rule was written for other people's registers rather than
+        # for our own dashboard.
         speed = "\n- Page load (8d): p50 %dms, p90 %dms" % (
-            qq.get("pageLoadTimeP50") or 0, qq.get("pageLoadTimeP90") or 0)
+            (qq.get("pageLoadTimeP50") or 0) / 1000,
+            (qq.get("pageLoadTimeP90") or 0) / 1000)
     return ("Web Analytics (beacon, real browsers, cookieless):\n"
             "- Days (visits/pageviews): %s\n- Top paths: %s\n"
             "- Referrers: %s\n- Countries: %s\n- Devices: %s%s"
