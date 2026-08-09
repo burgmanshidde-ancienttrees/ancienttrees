@@ -1,0 +1,58 @@
+[
+  {
+    "id": "wdc_002",
+    "latitude": 38.886836,
+    "longitude": -77.041264,
+    "new_precision": "approximate",
+    "evidence": "Could not improve; marker-level is the honest ceiling. Wayback snapshot of the HMDB marker page (web.archive.org/web/20230508020239/https://www.hmdb.org/m.asp?m=215, hmdb.org itself is Cloudflare-walled) gives the marker's own surveyed position as 38 53.21'N, 77 2.476'W, which converts to 38.886933,-77.041267, i.e. the exact coordinate already on file (diff <10m, rounding). The archived page states in its own words: 'This marker has been replaced by another marker nearby' and the marker text itself reads 'You are standing near two of the most important cherry trees,' i.e. even the marker's own copy places it near the trees, not at them. No source this pass gives tree-trunk coordinates distinct from the marker. The existing pin is already at the best documented position (the original marker's surveyed spot); the replacement marker's own position was not found. Stays approximate, correctly."
+  },
+  {
+    "id": "wdc_003",
+    "latitude": 38.930203,
+    "longitude": -77.094111,
+    "new_precision": "approximate",
+    "evidence": "Could not improve; park-level is the honest ceiling, as the brief anticipated. Re-checked all three cited sources (Washingtonian, City Cast DC, VA Tech Dendro/National Register of Champion Trees) for a tree-specific coordinate or in-park description (e.g. 'near the north gate,' 'by the ridge trail'): none is given in any of the three, only park name and circumference. Battery Kemble Park is roughly 24 acres of wooded hillside with multiple trails; no OSM node tags an individual tree here. Attempted a satellite look to spot a crown of this size (24ft 3in / ~7.4m circumference implies a very large canopy that might stand out) but Google Maps required a cookie-consent flow that hung the browser session; not pursued further given the time budget. Recommend a future pass with working satellite/aerial access try again, since a tree this size may genuinely be spottable from imagery."
+  },
+  {
+    "id": "wdc_004",
+    "latitude": 38.889,
+    "longitude": -77.0273,
+    "new_precision": "approximate",
+    "evidence": "Could not improve past road-frontage precision. OSM/Nominatim places the Freer Gallery of Art building at 38.8881222,-77.0276002 (footprint roughly 38.8878-38.8884 lat x -77.0278 to -77.0269 lon). The existing pin sits about 25m N/NE of that footprint, on the Mall side, consistent with the story's 'across Jefferson Drive from the Freer Gallery.' This corroborates the pin's plausibility but does not reach tree-level precision: the HALS DC-7 survey sheet (tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dc1033/data/dc1033data.pdf, fetched fine, 20s timeout not hit) is a scanned JBIG2 image with no extractable text layer and no OCR tool available this pass, so its caption could not be read beyond what an earlier pass already transcribed ('across Jefferson Drive from the Freer Gallery'). That frontage runs roughly 150m, wider than a single-tree fix. Stays approximate."
+  },
+  {
+    "id": "wdc_005",
+    "latitude": 38.888,
+    "longitude": -77.0367,
+    "new_precision": "approximate",
+    "evidence": "Could not improve past arc-level precision. OSM/Nominatim places the Washington Monument centroid at 38.8894754,-77.0352426. The existing pin sits about 170m SW of the monument, which matches the story's own description of the propped mulberry standing 'at roughly seven o'clock on the circular path' (7 o'clock = south-southwest on a clock face read with 12 as north). This corroborates the pin's compass direction but the circular walking path is roughly 300m around, so 'seven o'clock' narrows to a 30-40m arc rather than a fixed point, and neither cited source (Washington Post 2019, Dirt Americana 2023) gives a coordinate or a finer landmark (e.g. distance from a specific path junction). Stays approximate."
+  },
+  {
+    "id": "wdc_007",
+    "latitude": 38.9112,
+    "longitude": -76.9705,
+    "new_precision": "approximate",
+    "evidence": "Could not improve; grounds-level is the honest ceiling, as the brief anticipated (comparable case to Battery Kemble). Re-checked the sole cited source (Casey Trees, Aug 2023): it names Arboretum staff present at the measurement (Kevin Conrad, Sue Greeley) but gives no in-grounds location, only 'the National Arboretum.' The U.S. National Arboretum spans about 180 acres across many named collections; no second source found this pass to narrow it. Did not find a National Arboretum visitor map or collections index in the time available. Stays approximate; a future pass could try contacting/searching Friends of the National Arboretum or the Arboretum's own collections database (BG-BASE or similar) if public."
+  },
+  {
+    "id": "wdc_008",
+    "latitude": 38.888164,
+    "longitude": -77.037444,
+    "new_precision": "approximate",
+    "evidence": "Meaningfully tightened but held at approximate per the confirmed-bar rule (building/shrine-level knowledge stays approximate without a tree-specific coordinate or satellite-visible crown). OSM/Nominatim resolves 'Survey Lodge Ranger Station' to a mapped building footprint: centroid 38.8881370,-77.0374167, bounding box approx 38.88805-38.88827 lat x -77.03755 to -77.03730 lon, i.e. a small building roughly 25m x 20m. The existing pin sits within about 3m of that centroid. The story places the catalpas 'between the lodge's front door and the road,' a gap of at most a few metres beside this precisely mapped small structure, which is materially tighter than a park-level pin (effective uncertainty now well under 20m rather than 'somewhere on the Monument grounds'). Attempted to go further and spot the individual tree crowns via satellite imagery to reach a true confirmed reading, but Google Maps required a cookie-consent flow that hung the browser session; not completed this pass. Recommend a future pass with working satellite access finish this one first, it is the closest of the eight to confirmed."
+  },
+  {
+    "id": "wdc_009",
+    "latitude": 38.8898,
+    "longitude": -77.0469,
+    "new_precision": "approximate",
+    "evidence": "Could not improve past this reading, though it is corroborated. OSM/Nominatim places the Vietnam Women's Memorial at 38.8905467,-77.0469857 (way centroid). The existing pin sits about 82m south of it, consistent with the story's 'cross the grass south of the memorial to the next pathway; the circle of trees is immediately there.' Neither cited source (NPS 'Silent Sentinels,' National Park Trust blog) gives the circle's own coordinates, a tree count, or a diameter. A ring of mature willow oaks might well be visible as a distinctive circular canopy pattern on satellite imagery, which would let a future pass genuinely confirm this one, but Google Maps required a cookie-consent flow that hung the browser session this pass; not completed. Stays approximate."
+  },
+  {
+    "id": "wdc_010",
+    "latitude": 38.8859,
+    "longitude": -77.0432,
+    "new_precision": "approximate",
+    "evidence": "COULD NOT CONFIRM, AND A POSSIBLE PIN CONCERN FOUND, flagging rather than silently leaving it. OSM's mapped boundary for the Franklin Delano Roosevelt Memorial (relation search resolved to way 471998865, the top Nominatim match for 'Franklin Delano Roosevelt Memorial') is a 21-point polygon spanning lat 38.8824-38.8842, lon -77.0446 to -77.0411. The EXISTING PIN (38.8859,-77.0432) sits roughly 185m NORTH of that polygon's northernmost point (38.88424), i.e. outside the OSM-mapped memorial grounds entirely. This does not necessarily mean the pin is wrong: the OSM way may simply not capture the memorial's full extent (e.g. only the sculpture-garden core, not an approach walk), and the FDR Memorial's real footprint along the Tidal Basin is known to run long. Tried to resolve which by finding the memorial's 'Room Three' (Third Term/WWII room) specifically, since the story cites it as the landmark: nps.gov/frde/planyourvisit/four-rooms.htm returned 404, and the Wikipedia FDR Memorial article did not yield the four rooms' north-south order in the time available. Not resolved this pass. RECOMMEND a dedicated follow-up before this pin is ever tightened further: check it against an actual FDR Memorial site map or the NPS frde park pages (fetched fine this pass, just not the right URL) to confirm which room is 'Room Three' and whether the current pin actually falls within the memorial's grounds at all. Precision stays approximate; do not mark confirmed on this evidence."
+  }
+]
