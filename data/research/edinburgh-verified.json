@@ -1,0 +1,49 @@
+[
+  {
+    "id": "edi_014",
+    "name": "The 1948 Dawn Redwood of the Chinese Hillside",
+    "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+    "age_estimate": "roughly 75 years",
+    "age_min": 70,
+    "age_max": 80,
+    "location": {
+      "address": "Royal Botanic Garden Edinburgh, Chinese Hillside area (near the ponds, east of the John Muir Grove), Inverleith",
+      "latitude": 55.9668,
+      "longitude": -3.2110,
+      "neighbourhood": "Inverleith"
+    },
+    "verified_sources": [
+      "https://rbge.gardenexplorer.org/taxon-11093.aspx",
+      "https://www.treesandshrubsonline.org/articles/metasequoia/metasequoia-glyptostroboides/"
+    ],
+    "access": "Free (RBGE outdoor garden, no entry charge)",
+    "transport": "Same as rest of RBGE cluster: Inverleith area, roughly 25-30 min walk or short bus ride from city centre",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Genuinely historic tree, not old in years but historically remarkable: Metasequoia glyptostroboides (dawn redwood) was known only from fossils until living trees were found in central China in 1944-45. Seed was collected under the famous Arnold Arboretum-organised expedition and distributed worldwide in late 1947/early 1948; Trees and Shrubs Online (International Dendrology Society, independent source) confirms RBGE and Kew were among the direct recipients of this original seed consignment, the moment a 'living fossil' species re-entered cultivation outside China. RBGE's own Garden Explorer living-collection database (rbge.gardenexplorer.org, official RBGE source, counts as source 1) lists FIVE living specimens all tracing to that same original wild-collected accession 19480054, scattered across the garden: B10/3 Conifer Grove (*A), K08 Metasequoia bed (*B), L07 Pond Lawn (*C), M21 Conifer Walk East (*D), H19 Chinese Hillside (*H). IMPORTANT CAVEAT: this is not one single tree but five separate specimens sharing one historic origin. I have picked the Chinese Hillside individual (accession 19480054*H) as the candidate to write up and pin, because Chinese Hillside is a well-known, publicly-signposted feature of the garden closest to the already-published cluster (John Muir Grove, Catacol Whitebeams, Handkerchief Tree all sit within a few hundred metres). No planting date, girth or height is recorded for this specific specimen in Garden Explorer, only the 1948 wild-collection accession date, so age is estimated from seed collection to now (roughly 75-80 years, likely planted out a few years after the 1948 seed arrived, once seedlings were established) rather than a confirmed planting date. No dated recent photo or news item confirms this exact H19 specimen is alive today (flagging on the 'alive now' bar); the Garden Explorer entry is part of RBGE's actively maintained living collection catalogue, which is decent but not dated evidence. A future pass or the writer should ideally confirm on RBGE's public map/signage which physical tree visitors actually see labelled as the historic dawn redwood, since RBGE also runs public tours mentioning 'the garden's original dawn redwood' informally. Location coordinates given are approximate, placed within the Chinese Hillside/pond area based on the RBGE tree-adoption map layout, not a GPS-confirmed pin."
+  },
+  {
+    "id": "edi_015",
+    "name": "The Champion Whitebeam of the Botanics",
+    "species": "Hemsley's Whitebeam (Sorbus hemsleyi, syn. Griffitharia hemsleyi)",
+    "age_estimate": "roughly 45 years",
+    "age_min": 40,
+    "age_max": 50,
+    "location": {
+      "address": "Royal Botanic Garden Edinburgh, adoption bed E46, near the Chinese Hillside/pond area, close to the Monkey Puzzle (E24), Inverleith",
+      "latitude": 55.9662,
+      "longitude": -3.2095,
+      "neighbourhood": "Inverleith"
+    },
+    "verified_sources": [
+      "https://www.treesandshrubsonline.org/articles/griffitharia/griffitharia-hemsleyi/",
+      "https://www.treeregister.org/map/site?s=286",
+      "https://www.rbge.org.uk/media/cw3bwbtw/tree-map.pdf"
+    ],
+    "access": "Free (RBGE outdoor garden, no entry charge)",
+    "transport": "Same as rest of RBGE cluster: Inverleith area, roughly 25-30 min walk or short bus ride from city centre",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "The UK & Ireland CHAMPION (by girth) for Sorbus hemsleyi, a rare whitebeam relative from China, planted at RBGE from accession SABE 1317 / 19810835*B in 1981, so roughly 45 years old. Two independent sources agree: Trees and Shrubs Online (International Dendrology Society, run independently of RBGE) carries a detailed page with dated photographs from 2009-2023, explicitly captioning the Edinburgh tree as the 'UK & Ireland champion for girth' and noting it was 'in good health' in an August 2023 photo, which is solid recent alive evidence. The Tree Register of the British Isles (TROBI, treeregister.org) independently lists a champion Sorbus hemsleyi at this RBGE site (their site listing surfaced it via a 'Champion Sorbus hemsleyi' photo caption). RBGE's own public tree-adoption map/list (rbge.org.uk, official source, labels the specimen 'Griffitharia Hemsleyi' at bed E46) confirms it is one of the garden's signature adoptable trees, sited close to the Monkey Puzzle (E24) and the other candidates explored this pass, in the same eastern/Chinese-Hillside cluster as the already-published John Muir Grove, Catacol Whitebeams and Handkerchief Tree. RBGE is internationally known for its rare Sorbus conservation work (the wider whitebeam/Sorbus story ties directly into the already-published Catacol Whitebeams entry, edi_012), so this is a good thematic companion. Species note for the writer: sources use both 'Sorbus hemsleyi' and 'Griffitharia hemsleyi' for the same plant (a recent reclassification); per the one-canonical-name rule pick whichever this project already uses elsewhere, or default to Sorbus hemsleyi as the more widely recognised name. Location is approximate: I know the bed code (E46) and its rough position on RBGE's own schematic map relative to other beds, but not a GPS-confirmed pin, so coordinates given are an estimate within that area only."
+  }
+]
