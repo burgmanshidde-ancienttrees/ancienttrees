@@ -1,0 +1,336 @@
+{
+  "city": "Washington DC",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Washington is a planned city, and its remarkable trees were planned with it, which means they come with paperwork most cities can only envy. The National Park Service keeps a register of witness trees, individuals that stood through history, and the Architect of the Capitol records plantings to the year. The ten below run from the two original 1912 cherry trees that started the Tidal Basin tradition to a bur oak older than the memorial it shades. Eight sit on or near the Mall and Capitol grounds, one walk apart; all ten are free.",
+  "meta_description": "Washington DC's remarkable trees keep federal paperwork: the two original 1912 Tidal Basin cherries, a bur oak at the Grant Memorial, and more, mapped.",
+  "question_meta": "The oldest documented tree in Washington DC is the Grant Memorial Bur Oak on the Capitol grounds. Its story, and nine more remarkable trees nearby.",
+  "question_answer": "The oldest documented tree in central Washington DC is the Grant Memorial Bur Oak in Union Square, at the foot of the Capitol, which predates the memorial landscape laid out around it. The city's biggest tree, and possibly its oldest overall, is the champion chestnut oak in Battery Kemble Park.",
+  "question_context": "Age and documentation are different things in Washington, and the distinction shapes this whole list. Most cities on this site guess at their oldest tree from girth and legend; Washington can often simply look it up. The Architect of the Capitol has recorded plantings on the Capitol grounds since the Olmsted landscape was laid out, which is how the Grant Memorial Bur Oak's seniority over its own memorial is a matter of record rather than estimate. The National Park Service goes further and keeps a formal register of witness trees, individuals that stood through documented history, from the mulberry that predates the Washington Monument's completion to the elm whose cuttings became the disease-resistant Jefferson cultivar planted across the country. Even the champion chestnut oak in Battery Kemble Park, the city's largest tree, carries an official co-champion designation with measurements behind it. None of these trees rivals a European yew for age. What they offer instead is certainty, and for a project built on verification, a 150-year-old tree with a planting ledger can be a better tree than a 500-year-old one with a story.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Washington DC?",
+      "a": "The oldest documented tree in the centre is the Grant Memorial Bur Oak in Union Square on the Capitol grounds. The largest, and possibly older still, is the champion chestnut oak in Battery Kemble Park in the city's northwest."
+    },
+    {
+      "q": "Are the original 1912 cherry trees still alive?",
+      "a": "Yes. The two Yoshino cherries planted on 27 March 1912 by First Lady Helen Taft and Viscountess Chinda still stand near the Tidal Basin's north edge, marked by a plaque, among the thousands of younger trees the annual festival celebrates."
+    },
+    {
+      "q": "Are Washington DC's remarkable trees free to visit?",
+      "a": "All ten on this list are free. Eight stand on public federal ground on or near the National Mall and Capitol grounds; the champion chestnut oak stands in Battery Kemble Park, a free city park in the northwest."
+    },
+    {
+      "q": "When should I visit the Tidal Basin cherries?",
+      "a": "Late March to early April, when they flower. The peak shifts with the year; the two original 1912 trees flower with the rest."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wdc_001",
+      "name": "The Grant Memorial Bur Oak",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "age_estimate": "roughly 175 years, possibly older",
+      "age_min": 150,
+      "age_max": 250,
+      "location": {
+        "address": "Union Square, U.S. Capitol Grounds, southeast of the Ulysses S. Grant Memorial, along 1st St, Washington, DC",
+        "latitude": 38.889389,
+        "longitude": -77.012626,
+        "neighbourhood": "Capitol Hill / National Mall (Union Square)"
+      },
+      "story": "In the 1930s Frederick Law Olmsted Jr. cleared about 250 trees out of Union Square and transplanted 41 more. This bur oak he left exactly where it was. It has grown on this spot since at least 1850, when the United States Botanic Garden moved its greenhouse collections onto this ground, which makes it one of the very few trees on the Capitol campus that predates the twentieth century redesign of everything around it. The Architect of the Capitol puts it at 150 to 175 years. The National Park Service witness tree survey is more careful and says the true age is simply unknown, noting only that aerial photographs taken at the Grant Memorial's dedication in April 1922 already show a large, well developed tree. Read 175 years as a floor rather than a figure. What it has outlived: the demolition of the old Botanic Garden buildings in 1930, Olmsted's redesign of the square, and the 1971 installation of the Capitol Reflecting Pool, which took out most of the trees that were still standing. When surveyed in November 2006 it measured 125 feet tall, with an 85 foot crown and a trunk 165 inches around, the largest bur oak recorded in Washington. Bur oaks can approach a thousand years and are not considered mature until 200 or 300. By the standards of its own species, this giant is still young.",
+      "verified_sources": [
+        "https://www.aoc.gov/explore-capitol-campus/features/grant-memorial-bur-oak (Architect of the Capitol, official page, age 150-175 years, botanical name confirmed, coordinates via embedded map link)",
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dc1032/data/dc1032data.pdf (Library of Congress, Historic American Landscapes Survey HALS No. DC-6, NPS Witness Tree Protection Program, 2006, Jonathan Pliska, Landscape Architectural Historian)"
+      ],
+      "access": "Free, fully public. Stands on open U.S. Capitol Grounds parkland (Union Square), no restriction, viewable and approachable year-round.",
+      "transport": "On the National Mall side of the Capitol grounds; roughly 10-15 min walk from Capitol South or Union Station Metro (both serve multiple lines).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "wdc_002",
+      "name": "The First Cherry Trees of the Tidal Basin",
+      "species": "Yoshino Cherry (Prunus x yedoensis)",
+      "age_estimate": "roughly 114 years",
+      "age_min": 110,
+      "age_max": 118,
+      "location": {
+        "address": "Northern bank of the Tidal Basin, near Independence Avenue SW and West Basin Drive SW, roughly 125 feet south of Independence Avenue, Washington, DC",
+        "latitude": 38.886836,
+        "longitude": -77.041264,
+        "neighbourhood": "Tidal Basin / West Potomac Park"
+      },
+      "story": "Two trees started everything the Tidal Basin is now known for. On 27 March 1912 First Lady Helen Herron Taft and Viscountess Chinda, wife of the Japanese ambassador, each planted a Yoshino cherry on the north bank, the first two of a gift of more than 3,000 from Tokyo. Around a hundred of that original planting are thought to survive. These two are the ones you can actually pick out, marked by a bronze plaque at their base. They are old for what they are. Yoshino cherries in cultivation usually manage 50 to 100 years, and these are past 114, which is why the Park Service treats their survival as a story rather than a footnote. They were rooted here before the Lincoln Memorial was finished, before the Jefferson Memorial went up across the water, and before the festival that now walks well over a million people past them every spring. One honest note on the pin. The coordinates come from the surveyed position of the commemorative marker rather than from the trunks, and the marker itself has since been replaced by another one nearby, so expect to hunt for the plaque along a short stretch of path roughly 125 feet south of Independence Avenue. The trees are within a stone's throw of it.",
+      "best_time": {
+        "months": [
+          4
+        ],
+        "kind": "flowers",
+        "label": "early April, when the whole basin comes into bloom for about a week"
+      },
+      "verified_sources": [
+        "https://www.nps.gov/subjects/cherryblossom/history-of-the-cherry-trees.htm (National Park Service, official Cherry Blossom Festival history page)",
+        "https://www.hmdb.org/m.asp?m=215 (Historical Marker Database, \"The 1912 Cherry Tree Plantings\" marker text and surveyed GPS position, photographed on site 2006)"
+      ],
+      "access": "Free, fully public. Stand on open NPS parkland along the Tidal Basin path, walkable any time.",
+      "transport": "About a 15-20 min walk from Smithsonian Metro (Blue/Orange/Silver) via the Mall, or shorter from a Tidal Basin paddleboat-dock parking area; no direct Metro stop.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "wdc_003",
+      "name": "The Battery Kemble Chestnut Oak",
+      "species": "Chestnut Oak (Quercus montana)",
+      "age_estimate": "over 165 years, likely pre-dating the Civil War",
+      "age_min": 165,
+      "age_max": 250,
+      "location": {
+        "address": "Battery Kemble Park, 3035 Chain Bridge Rd NW, Washington, DC (park spans Chain Bridge Rd to 49th St, between Nebraska Ave and MacArthur Blvd)",
+        "latitude": 38.930203,
+        "longitude": -77.094111,
+        "neighbourhood": "Palisades"
+      },
+      "story": "The largest tree in Washington may owe its size to having been cut down. In 1861 the Union Army built Battery Kemble on this hill to defend the capital from the west, and the standard practice at the city's earthworks was to clear the ground for a field of fire, felling trees about five feet above the soil. Chestnut oak, unusually among oaks, resprouts readily from a cut stump. This tree's low, wide, multi stemmed form is exactly what that produces, which is why every account says it was around before the Civil War instead of giving it a planting date. The measurements do the rest of the talking. Casey Trees' volunteer big tree survey crowned it the city's largest known tree in 2023, at 24 feet 3 inches around, and American Forests lists it as a national co-champion, meaning no bigger chestnut oak has been recorded anywhere in the United States. Take the 165 years as a floor: the root system under those stems could be considerably older than the trunks standing on it. It grows in a quiet neighbourhood park in the Palisades rather than downtown, and no source publishes coordinates for the tree itself. The pin is the park, so the last stretch is done on foot and by eye. At that circumference, you will know it when you reach it.",
+      "verified_sources": [
+        "https://washingtonian.com/2023/08/10/this-tree-was-just-crowned-dcs-biggest/ (Washingtonian, Aug 2023, reporting Casey Trees' citizen-science big-tree contest result)",
+        "https://dc.citycast.fm/urban-almanac/this-is-dc-s-biggest-tree (City Cast DC, Aug 2023, independent report of the same Casey Trees contest, corroborating circumference and pre-Civil War age claim)",
+        "https://dendro.cnre.vt.edu/remarkabletree/detail.cfm?AutofieldforPrimaryKey=2344 (Virginia Tech Remarkable Trees of VA & DC database, National Register of Champion Trees co-champion listing, 2013, 407 points)"
+      ],
+      "access": "Free, fully public NPS park (part of the Civil War Defenses of Washington / Rock Creek Park system), open trails and lawn, no restriction on viewing.",
+      "transport": "No direct Metro; roughly 20-25 min from Foggy Bottom or Tenleytown Metro by bus/car. A neighbourhood park in the Palisades, not a downtown walk-up.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "wdc_004",
+      "name": "The National Mall Jefferson Elm",
+      "species": "American Elm (Ulmus americana 'Jefferson')",
+      "age_estimate": "roughly 91 years",
+      "age_min": 88,
+      "age_max": 93,
+      "location": {
+        "address": "National Mall, across Jefferson Drive SW from the Freer Gallery of Art (National Museum of Asian Art), near 12th St SW, Washington, DC",
+        "latitude": 38.889,
+        "longitude": -77.0273,
+        "neighbourhood": "National Mall"
+      },
+      "story": "Every 'Jefferson' elm planted in the United States is a cutting taken from this tree. It went into the ground around 1935, one of roughly 600 American elms set in four rows to frame the Mall's central green, and by rights it should have died with the rest. Dutch elm disease reached the Mall in 1950 and had killed more than 200 of that planting by 1994. In the early 1990s the Park Service pathologist Horace Wester noticed that tree number 3-487 leafed out earlier than its neighbours and held its leaves longer. A decade of testing by the Park Service, the National Arboretum and Michigan State confirmed genuine resistance to the disease. DNA work then found something stranger: the tree is triploid, carrying 42 chromosomes where an American elm carries 56, which appears to explain both the resistance and the strong U shaped branch unions that keep it from splitting in storms. In February 2005 cuttings went out to commercial nurseries as the 'Jefferson' cultivar, named for the drive it stands beside. It is neither the oldest nor the biggest tree in this city, and it may be the most consequential, because American elms are going back into streets across the country on the strength of its genetics. The survey that recorded it placed it across Jefferson Drive from the Freer Gallery without giving a coordinate, so this pin is close rather than exact.",
+      "verified_sources": [
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dc1033/data/dc1033data.pdf (Library of Congress, Historic American Landscapes Survey HALS No. DC-7, NPS Witness Tree Protection Program, Jonathan Pliska, 2006)",
+        "https://caseytrees.org/2011/01/jefferson-american-elm/ (Casey Trees, 2011, independent profile of the same original tree and its clone programme)"
+      ],
+      "access": "Free, fully public. Stands in the open lawn of the National Mall, one of the most visited public spaces in the US, no restriction.",
+      "transport": "On the National Mall; about 10 min walk from Smithsonian Metro station (Blue/Orange/Silver).",
+      "photo": {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/435602016/large.jpeg",
+        "license": "CC BY 4.0",
+        "attribution": "Katy Swiere, via iNaturalist",
+        "status": "approved"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "wdc_005",
+      "name": "The Washington Monument Witness Mulberry",
+      "species": "White Mulberry (Morus alba)",
+      "age_estimate": "roughly 130-140 years",
+      "age_min": 115,
+      "age_max": 145,
+      "location": {
+        "address": "Washington Monument grounds, on the circular walking path southwest of the monument, National Mall, Washington, DC",
+        "latitude": 38.888,
+        "longitude": -77.0367,
+        "neighbourhood": "National Mall (Washington Monument grounds)"
+      },
+      "story": "This tree fell over in May 2019 and the Park Service refused to remove it. Days of rain had saturated the ground on the Washington Monument lawn, the main buttress root snapped, and the larger of two old white mulberries here went down. Instead of cutting it up, arborists raised the trunk back by about ten degrees, enough to encourage new feeder roots without tearing what was left of the root plate, and built it a steel crutch. It has been standing nearly horizontal on that prop ever since, living on roughly 60 percent of its roots. Its neighbour, the shorter of the pair, leans hard and is crutched too, and is in better condition. Both are recorded by the Park Service witness tree programme as part of the landscape planted after the monument was completed in 1885, probably in the 1890s, which puts them somewhere around 130 to 140 years old. Be clear about what this is. It is not a grand tree and it is not a pretty one. It is a public agency visibly refusing to give up on something that history happened around, propped in plain sight at roughly seven o'clock on the circular path. And it is fragile: the most recent confirmation of its condition we have found dates from December 2023, so that is the last time anyone we can cite looked at it.",
+      "verified_sources": [
+        "https://www.washingtonpost.com/local/an-aged-tree-witness-to-history-falls-near-the-washington-monument/2019/05/15/12b12576-7676-11e9-b7ae-390de4259661_story.html (Washington Post, 15 May 2019, on the fall and NPS rescue effort)",
+        "https://dirtamericana.com/2023/12/white-mulberry-witness-trees-washington-monument/ (Dirt Americana, Dec 2023, on-site follow-up describing current propped, tilted condition of both surviving trees)"
+      ],
+      "access": "Free, fully public. Stands on open NPS parkland on the Washington Monument grounds, directly on a paved circular path, unrestricted viewing.",
+      "transport": "About 10-12 min walk from Smithsonian Metro station (Blue/Orange/Silver).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "wdc_006",
+      "name": "The Botanic Garden Elm",
+      "species": "Caucasian Elm (Zelkova carpinifolia)",
+      "age_estimate": "roughly 175 years, possibly older",
+      "age_min": 150,
+      "age_max": 250,
+      "location": {
+        "address": "Union Square, U.S. Capitol Grounds, southwest grass panel, Washington, DC",
+        "latitude": 38.888717,
+        "longitude": -77.014886,
+        "neighbourhood": "Capitol Hill / National Mall (Union Square)"
+      },
+      "story": "When Union Square was rebuilt in the 1930s, five Caucasian elms survived the clearance. Four were dug up and transplanted. This one was left exactly where it grew, which is why it matters more than the other four. It has stood on this spot since around 1850, when the United States Botanic Garden moved its greenhouse collections here, some of them gathered on the Wilkes Expedition of 1838 to 1842. Zelkova carpinifolia comes from the mountains of the Caucasus and northern Iran and is still an uncommon tree in American planting. This one is almost certainly among the largest in the country, though it will never appear in the national register of champion trees, which tracks native species only. The Park Service survey calls it the most historically significant tree remaining in Union Square, because it is the one that combines all three things: planted in the Botanic Garden's own period, never moved, and genuinely rare. Its position saved it twice. Sitting at the far southwest edge, well outside the central vista Frederick Law Olmsted Jr. was carving, it escaped the 1930s clearance that took 250 trees, then escaped again in 1971 when the Capitol Reflecting Pool went in and destroyed most of what remained. The Architect of the Capitol puts it at 150 to 175 years. The Grant Memorial bur oak, from the same original planting, stands about 350 metres away across the same square.",
+      "verified_sources": [
+        "https://www.aoc.gov/explore-capitol-campus/features/botanic-garden-elm (Architect of the Capitol, official page, age 150-175 years, coordinates via embedded map link)",
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dc1035/data/dc1035data.pdf (Library of Congress, Historic American Landscapes Survey HALS No. DC-9, NPS Witness Tree Protection Program, Jonathan Pliska, 2006)"
+      ],
+      "access": "Free, fully public. Stands on open U.S. Capitol Grounds parkland (Union Square), unrestricted viewing, about 350m from the Grant Memorial Bur Oak (wdc_001) in the same square.",
+      "transport": "Same as the Grant Memorial Bur Oak: roughly 10-15 min walk from Capitol South or Union Station Metro.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "wdc_007",
+      "name": "The Arboretum Willow Oak",
+      "species": "Willow Oak (Quercus phellos)",
+      "age_estimate": "rumoured to date to the Civil War era, confirmed fully grown by the 1940s",
+      "age_min": 90,
+      "age_max": 160,
+      "location": {
+        "address": "U.S. National Arboretum, 3501 New York Avenue NE, Washington, DC (exact tree location within the grounds not confirmed this pass; ask arboretum staff or check with Friends of the National Arboretum)",
+        "latitude": 38.9112,
+        "longitude": -76.9705,
+        "neighbourhood": "Mahan / National Arboretum, Northeast DC"
+      },
+      "story": "The second largest tree in Washington is dying, and the people who measured it said so out loud. When Casey Trees brought its 2023 big tree survey to the National Arboretum, this willow oak came in at 287 inches around, beaten by a matter of inches only by the chestnut oak at Battery Kemble. Standing under it, the Arboretum's own arborist put the other half of the story just as plainly: this tree is near the end of its life. The 2012 derecho tore into it, carpenter worms were treated in 2015, and it has been decaying and taking storm damage ever since. Staff are not removing it. They trim the rotting limbs to keep visitors safe and go on buying it time, which is a decision about what an old tree is worth rather than a horticultural one.\n\nIts age is folklore. Casey Trees repeats a local story tracing it to the Civil War, but the earliest hard evidence anyone cites is a 1940s photograph showing it already grown and visibly smaller than it is now. Ninety years is the floor, 160 the hopeful ceiling.\n\nTwo honest notes before you go. Nobody publishes where inside the grounds it stands, so the pin is the Arboretum and the last stretch is a question for staff. And the most recent confirmation of its condition we can cite is August 2023, before the storms of the summers since. If you find it changed, or gone, tell us.",
+      "verified_sources": [
+        "https://caseytrees.org/2023/08/and-the-largest-tree-is/ (Casey Trees, Aug 2023, on-site measurement visit with National Arboretum staff Kevin Conrad (Supervisory Horticulturalist) and Sue Greeley (Arborist and Wildlife Manager); circumference 287in, DBH 91.40in, second-largest tree measured in the whole 2023 DC big-tree contest behind only the Battery Kemble chestnut oak (wdc_003)"
+      ],
+      "access": "Free. U.S. National Arboretum, open to the public daily (check usna.usda.gov for current hours), no admission fee.",
+      "transport": "No Metro station on site. Roughly 16 min by WMATA bus from downtown (checked by an earlier pass: Massachusetts Ave NE + 1st St NE to 21st Pl NE + Maryland Ave NE) or DC Streetcar from Union Station plus a short walk/bus leg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "age_min_note": "Casey Trees says local legend traces it to the Civil War (1861-65, so 160+ years), but the earliest hard evidence they cite is a 1940s photograph showing it already fully grown but visibly smaller than today. Treat 90-160 as the honest range: at least mid-20th-century, possibly older, unconfirmed beyond the photo."
+    },
+    {
+      "id": "wdc_008",
+      "name": "The Survey Lodge Catalpas",
+      "species": "Catalpa (Catalpa sp.)",
+      "age_estimate": "roughly 124 years",
+      "age_min": 110,
+      "age_max": 130,
+      "location": {
+        "address": "In front of the Survey Lodge Ranger Station, on the oval path southwest of the Washington Monument, National Mall, Washington, DC (between the lodge's front door and the road, per National Park Trust's own visiting directions)",
+        "latitude": 38.888164,
+        "longitude": -77.037444,
+        "neighbourhood": "National Mall (Washington Monument grounds)"
+      },
+      "story": "The small stone building these catalpas flank was made out of the Washington Monument's leftovers. Survey Lodge went up in 1889 from marble and granite spare from the monument itself, and housed the boiler that drove the first elevator to the top. The trees came about thirteen years later, part of an oval carriage road lined with fir, pine, crape myrtle and catalpa that was in place by 1902. They stand where a visitor walks straight into them, between the lodge's front door and the road, which is why the Park Service lists them among the trees on this ground worth protecting rather than treating them as ordinary shade.\n\nThe date is not perfectly settled, and the two accounts of it do not pretend otherwise. The National Park Trust says flatly that they were planted in 1902. The Park Service is more careful and says only that they could date from the turn of the century planting. Either reading puts them here through the 1930s, when the monument beside them shut for its first major restoration and the ground was dug over around their roots.\n\nNobody has settled the species either. Northern and southern catalpa both grow in Washington and neither source says which these are, so you can work on it yourself in June: the northern carries fewer, larger flowers, the southern more of them and smaller. Both hang the same long seed pods afterwards.\n\nThe lodge is a ranger office and closed. The trees are not.",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "kind": "flowers",
+        "label": "late May into June, when the catalpas open white orchid-shaped flowers by the thousand"
+      },
+      "verified_sources": [
+        "https://www.nps.gov/articles/silent-sentinels-of-storied-landscapes.htm (National Park Service, 'Silent Sentinels of Storied Landscapes', part of the 2006 HALS Witness Tree Protection Program write-up; describes catalpas northwest and southeast of Survey Lodge, possibly from the road-lining planting recorded by 1902, part of the same 24-tree survey that produced wdc_001/004/006)",
+        "https://parktrust.org/blog/youve-heard-of-the-witness-protection-program-but-have-you-heard-of-the-witness-tree-protection-program/ (National Park Trust blog, independent write-up of the same HALS programme, states the catalpas 'were planted in 1902' and gives on-site finding directions: 'right between the front door and the road')"
+      ],
+      "access": "Free, fully public. Stand in the open on NPS parkland right by the Survey Lodge Ranger Station building (itself closed to the public, used as an NPS office), on the walking paths southwest of the Washington Monument.",
+      "transport": "About 10-12 min walk from Smithsonian Metro station (Blue/Orange/Silver), same approach as the nearby Washington Monument Witness Mulberry (wdc_005), roughly 250m away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "wdc_009",
+      "name": "The Willow Oak Circle",
+      "species": "Willow Oak (Quercus phellos)",
+      "age_estimate": "at least 45 years, possibly around a century",
+      "age_min": 45,
+      "age_max": 105,
+      "location": {
+        "address": "South of the Vietnam Women's Memorial, Constitution Gardens, National Mall, Washington, DC (cross the grass south of the memorial to the next pathway; the circle of trees is immediately there)",
+        "latitude": 38.8898,
+        "longitude": -77.0469,
+        "neighbourhood": "National Mall / Constitution Gardens"
+      },
+      "story": "Nobody can say whether these trees are a century old or fifty, and both answers come from the same two sources. Cross the grass south of the Vietnam Women's Memorial to the next path and you end up standing inside a tight ring of willow oaks without having meant to. That is the whole experience of the place, and both the Park Service and the National Park Trust describe visitors arriving in it by accident.\n\nThe two theories run like this. One says the circle was planted in the 1920s to ring a picnic clearing, which would make the trees about a hundred. The other says they went in during the 1970s rebuilding of Constitution Gardens, done for the Bicentennial in 1976, which would make them about fifty. Neither source picks a side, and neither will we, so the age here is a range wide enough to hold two entirely different stories.\n\nWhat the circle has watched is not in doubt. It was already standing when the Vietnam Veterans Memorial was dedicated just south of it in 1982, and when the Women's Memorial was added in 1993. Willow oaks are the workhorse of the National Mall, planted here by the thousand along avenues and lawns. These are the ones somebody arranged into a shape on purpose.\n\nNeither source counts them, incidentally. Go and count them.",
+      "verified_sources": [
+        "https://www.nps.gov/articles/silent-sentinels-of-storied-landscapes.htm (National Park Service, 'Silent Sentinels of Storied Landscapes', on the same 2006 HALS Witness Tree Protection Program as wdc_001/004/006/008)",
+        "https://parktrust.org/blog/youve-heard-of-the-witness-protection-program-but-have-you-heard-of-the-witness-tree-protection-program/ (National Park Trust blog, independent write-up confirming the circle's existence, location and the same two competing planting theories, plus finding directions: 'you will find yourself accidentally standing amidst quite a large, tight circle of oak trees')"
+      ],
+      "access": "Free, fully public. Stands in the open on NPS parkland (Constitution Gardens / West Potomac Park) just south of the Vietnam Women's Memorial, no restriction.",
+      "transport": "About 10 min walk from Foggy Bottom-GWU Metro (Blue/Orange/Silver) or a similar walk from the Lincoln Memorial end of the Mall.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "wdc_010",
+      "name": "The Cork Trees of the FDR Memorial",
+      "species": "Amur Cork Tree (Phellodendron amurense)",
+      "age_estimate": "at least 80 years as of the original 2006 HALS survey, so roughly 100 years now",
+      "age_min": 90,
+      "age_max": 110,
+      "location": {
+        "address": "Franklin Delano Roosevelt Memorial, between Room Three (the Third Term / WWII room) and the Tidal Basin waterfront, West Potomac Park, Washington, DC",
+        "latitude": 38.8859,
+        "longitude": -77.0432,
+        "neighbourhood": "Tidal Basin / West Potomac Park (FDR Memorial)"
+      },
+      "story": "In 1962 the National Park Service went looking for a record of who planted these trees and found that nobody had written it down. The letter noting the gap survives. Rather than treat an unrecorded planting as an accident to be tidied away, the Service kept them on the grounds that they were, in its own words, very attractive old trees. That is the entire provenance of a small stand of Amur cork trees growing on ground where almost everything else has a paper trail.\n\nThey were here long before the memorial they now sit inside. The Franklin Delano Roosevelt Memorial was dedicated in 1997 and its landscape was laid out around plantings left from an older scenic drive along the Tidal Basin. A sign beside the trees calls them eighty years old, which would put the planting somewhere around the 1930s, but the sign's own date is not known, so read eighty as a minimum and roughly a century as the working figure.\n\nYou will recognise them by their manners rather than their height. Amur cork trees throw heavy, low, sprawling limbs, and these have let theirs down onto the ground, which is why the Park Service has put up two signs asking people not to climb them. The bark is thick and deeply corky, which is where the species gets its name.\n\nWalk past the visitor centre restrooms and follow the waterfront path between Room Three and the water.",
+      "verified_sources": [
+        "https://www.nps.gov/articles/silent-sentinels-of-storied-landscapes.htm (National Park Service, 'Silent Sentinels of Storied Landscapes', same 2006 HALS Witness Tree Protection Program; states 'several Amur cork trees between room three of the FDR Memorial and the Tidal Basin with a sign stating the trees are 80 years old')",
+        "https://parktrust.org/blog/youve-heard-of-the-witness-protection-program-but-have-you-heard-of-the-witness-tree-protection-program/ (National Park Trust blog, independent corroboration, adds the detail that a 1962 NPS letter recorded no planting record for these trees and staff chose to keep them anyway for being 'very attractive old trees'; finding directions: past the visitor center restrooms, along the waterfront path, look for trees with limbs resting on the ground and two signs asking visitors not to climb them)"
+      ],
+      "access": "Free, fully public. Stand in the open on NPS parkland within the FDR Memorial (no admission fee, open 24 hours, staffed during the day), directly on the waterfront path.",
+      "transport": "About 10-15 min walk from Smithsonian Metro station (Blue/Orange/Silver) along the Tidal Basin path, close to the two 1912 cherry trees (wdc_002).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    }
+  ]
+}

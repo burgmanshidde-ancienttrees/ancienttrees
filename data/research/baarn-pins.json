@@ -1,0 +1,37 @@
+[
+  {
+    "id": "brn_001",
+    "latitude": 52.2091,
+    "longitude": 5.2988,
+    "new_precision": "approximate",
+    "evidence": "Cantonspark's own Rijksmonumenten page (cantonspark.nl/index.php/het-park/rijksmonumenten, text adapted from a Baarnsche Courant 2019-07-29 article) states the pinetum sits on the west side of the park ('Aan de westzijde is een pinetum gelegen met bakstenen muurtjes'), west of the central fountain circle and wintertuin. The previous coordinate (52.2089, 5.2991) is the park's Wikidata/Wikipedia centroid (wgCoordinates on nl.wikipedia.org/wiki/Cantonspark: 52.208889, 5.299147), not a tree position, and was shared identically with brn_002. OSM has no individually tagged Metasequoia/Sequoiadendron node in Cantonspark (checked via Overpass, only 3 unrelated tagged trees exist in the park). ArcGIS World Imagery aerial tiles (zoom 19, leaf-off/winter pass) were fetched and stitched for the park; they show a distinct cluster of mature trees west of the fountain circle, consistent with the described pinetum, with the Dawn Redwood (deciduous, per its own page text 'drops every needle') appearing bare/leafless like its neighbours in this winter image rather than as a distinguishable dark evergreen crown. Because the individual trunk cannot be told apart from neighbouring bare deciduous crowns in a winter aerial image, this stays approximate: moved off the whole-park centroid and into the actual pinetum cluster the park's own document describes, not claimed as the exact stem. Could not improve to tree-level confidence this pass; a ground visit or a summer (leaf-on) aerial pass distinguishing species by canopy texture would be the next step."
+  },
+  {
+    "id": "brn_002",
+    "latitude": 52.2091,
+    "longitude": 5.2993,
+    "new_precision": "approximate",
+    "evidence": "Same west-side-pinetum documentation as brn_001 (cantonspark.nl Rijksmonumenten page). Unlike the dawn redwood, the giant sequoia (Sequoiadendron giganteum) is evergreen and, at ~34 m (2014 measurement), by far the tallest specimen in the Cantonspark pinetum collection (next tallest recorded was the dawn redwood at 28.2 m in 2021; the rest of the pinetum list tops out at 27.4 m). On the ArcGIS World Imagery winter aerial tiles, one dense dark-green conical evergreen crown with a markedly long shadow stands out clearly against the surrounding bare deciduous canopy near the fountain-circle path, roughly 25-30 m from brn_001's position, matching a stand-out mature conifer of the height and character the register describes. This is legitimate imagery evidence (an unmistakable evergreen crown, height and shadow consistent with the tallest tree in the collection) rather than a guess, but it is still one photograph interpreted without a ground survey or a park map naming this exact tree, so it stays approximate, not confirmed. Coordinates given are for that specific crown, distinct from brn_001's coordinate (the two entries no longer share an identical pin). Previous coordinate was the same whole-park centroid as brn_001."
+  },
+  {
+    "id": "brn_003",
+    "latitude": 52.2172524,
+    "longitude": 5.2604507,
+    "new_precision": "confirmed",
+    "evidence": "The entry's own text says 'the pin marks the ice cellar rather than any individual tree' (this is a grove entry, not a single stem), so the ice cellar IS the collectible point. OSM carries an exact, named POI for it: node 8109282210, tags man_made=ice_house, name=IJskelder, wikidata=Q17463288, wikipedia=nl:IJskelder van kasteel Groeneveld, at 52.2172524, 5.2604507 (fetched via Overpass, 2026-08-09). This is a mapped historic structure with its own Wikipedia/Wikidata entry, not an inferred position. The previous coordinate (52.2183, 5.255) was roughly 380-400 m away from the actual ice cellar (about 115 m north, 300+ m west), i.e. the old pin was not at the described landmark at all. Upgraded to confirmed because the pin now sits exactly on the named, verifiably-mapped structure the story text uses as its 'stand here' point."
+  },
+  {
+    "id": "brn_004",
+    "latitude": null,
+    "longitude": null,
+    "new_precision": "could_not_improve",
+    "evidence": "Not one of the three trees named in this pass's brief (brn_001/brn_002/brn_005); checked briefly given time remaining. OSM has many unnamed natural=water ways around Kasteel Groeneveld (the estate's moat/canal system, fetched via Overpass) but no single feature labelled 'south pond', so 'the southernmost pond' cannot be picked out with confidence from tags alone. The nearest named landmark, the IJskelder (used for brn_003), sits at 52.21725, 5.26045; the current brn_004 coordinate (52.217, 5.2545) is about 350 m west of it and west of the main water-feature cluster (which centres closer to lon 5.256-5.258), which is suggestive but not conclusive that the pin should move east. Left unchanged this pass rather than guess; a next pass should walk the estate's own trail map or check Staatsbosbeheer's Groeneveld page for a named 'zuidelijke vijver' before moving this pin."
+  },
+  {
+    "id": "brn_005",
+    "latitude": 52.2095,
+    "longitude": 5.2918,
+    "new_precision": "approximate",
+    "evidence": "OSM's Pekingtuin polygon (fetched via Overpass) spans roughly lat 52.2091-52.2107, lon 5.2899-5.2933, centroid ~52.2098/5.2916, which is essentially where the previous pin (52.2099, 5.2915) already sat: a park-centroid pin, not a Javalaan-side one. Javalaan itself (also fetched via Overpass) runs along the park's south edge. Moved the pin south, from the centroid toward the Javalaan-adjacent third of the park, while staying inside the mapped park polygon and clear of the buildings visible there on ArcGIS World Imagery aerial tiles. Could not locate the actual protective steel ring (reported as about 6 m across, 20 cm high) in the aerial imagery; at this resolution a ring that size is at or below what is reliably visible, and the two news sources describing its placement (Baarnsche Courant, Oozo.nl) could not be fetched in full text this pass (Baarnsche Courant returned HTTP 403 to curl; Oozo.nl's article body loads via JavaScript and was not present in the static HTML). So this remains approximate, shifted toward the sourced 'Javalaan side' rather than left at the whole-garden centroid, but not claimed as the exact trunk."
+  }
+]

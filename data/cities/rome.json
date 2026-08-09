@@ -714,6 +714,64 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Two adjacent RAMI register entries (#9251, #9252, both ~430cm girth) folded into one entry as a twinned pair. No coordinates in any source; pin geocoded to the Museo Carlo Bilotti / Aranciera building both sources place the tree near. The 1600s age is the conservation group's own framing, not a scientific dating."
+    },
+    {
+      "id": "rom_023",
+      "name": "The Holm Oak of Piazza Perin del Vaga",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "roughly 125 years",
+      "age_min": 110,
+      "age_max": 135,
+      "location": {
+        "address": "Piazza Perin del Vaga, Della Vittoria/Flaminio district",
+        "latitude": 41.925194,
+        "longitude": 12.464699,
+        "neighbourhood": "Della Vittoria (RAMI's own field note says quartiere Flaminio; the piazza sits on the boundary, so give both if the writer wants to hedge)"
+      },
+      "story": "The children who climbed this holm oak gave it its name. From the top they would shout \"Anvedi da quassù se vede tutta Roma\", Roman dialect for look, from up here you can see the whole of Rome, and the tree has been Tutta Roma ever since. They were doing it around 1919, so the oak was already climbable then; the register's own reckoning puts its planting at about 1900.\n\nThat shout is now on file. When Italy added the tree to its national list of monumental trees in 2025, the criteria included historical and cultural value alongside form and bearing, which is unusual in Rome, where most entries are listed for size alone. And this is not a giant: 2.80 metres around the trunk, 18 metres tall, measured in November 2025 and found in good health.\n\nIt stands in Piazza Perin del Vaga, a residential square in Della Vittoria on the edge of Flaminio, north of the centre near the Tiber and a fair way from anything a visitor would otherwise be walking to. Which is more or less the point of it. Nobody built a monument here. A tree went into the ground around the turn of the last century, a generation of local children went up it, one of them said something worth repeating, and a hundred years later the Italian state wrote it down.",
+      "verified_sources": [
+        "MASAF national register / Lazio regional register, sheet 63/H501/RM/12 (girth 280 cm, height 18 m, criteria: form and bearing; historical, cultural or religious value)",
+        "https://ilregistrodeglialberi.it/17724-tutta-roma-leccio-roma-rm-lazio (RAMI entry #17724, AMI code 63/H501/RM/12 matches the register sheet exactly; coordinates 41.925194,12.464699 match to the metre; girth 2.80 m and height 18.00 m match; registered 17/11/2025; health 'Buona'; accessibility 'Accessibile'; estimated age ~126 years calculated from the registered birth year, i.e. planted around 1900)"
+      ],
+      "access": "Free, public piazza, no restrictions",
+      "transport": "In the residential Della Vittoria/Flaminio district, roughly 15-20 minutes' walk from Piazzale Flaminio or Lepanto (Metro A)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "rom_024",
+      "name": "The Hackberry of the Parco degli Scipioni",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "roughly 100 years",
+      "age_min": 90,
+      "age_max": 120,
+      "location": {
+        "address": "Parco degli Scipioni, Via di Porta Latina 16",
+        "latitude": 41.876611,
+        "longitude": 12.501361,
+        "neighbourhood": "Via Appia / Porta Latina, near the Aurelian Walls"
+      },
+      "story": "Two official surveys measured this hackberry and agreed on its waist to within a centimetre: four metres around. They do not agree on its height. Italy's national monumental tree register records 20 metres. The Appia Antica park authority, in its own catalogue of notable trees, says 15. Both figures are current, neither has been withdrawn, and there is no way from here to tell which tape was right, so take the tree as somewhere between the two.\n\nIt is about a hundred years old, which makes it younger than nearly everything around it. The Parco degli Scipioni is laid out over the tomb of the Scipios, burial vault of the family that produced the general who beat Hannibal, with the columbarium of Pomponius Hylas a few steps away and the Aurelian Walls along the edge. The park in its present form is the work of Raffaele de Vico, who designed it around 1929, and this hackberry went in as part of that design: a piece of 20th century landscaping now the largest living thing in a park built on third century BC ground.\n\nThe park authority calls it one of its most important specimens, for its size, its bearing and the balance of its crown, and rates its health as good.\n\nA second hackberry, slightly stouter, stands about a hundred metres off against the Aurelian wall itself. It is on the register too. So far nobody else has written it down.",
+      "verified_sources": [
+        "MASAF national register / Lazio regional register, sheet 66/H501/RM/12 (girth 401 cm, height 20 m)",
+        "https://www.parcoappiaantica.it/il-territorio/alberi-di-pregio-appia-antica/ (Parco Regionale dell'Appia Antica's own 'alberi di pregio' catalogue: Parco degli Scipioni, Via di Porta Latina 16, height 15 m, circumference 400 cm, estimated age ~100 years, stato fitosanitario Buono; described as integrated into Raffaele de Vico's 1931 landscape design and as one of the park's most important specimens for its dimensions, bearing and balanced canopy)"
+      ],
+      "access": "Free, public park within the Parco Regionale dell'Appia Antica, standard park hours (roughly 7am to sunset)",
+      "transport": "Entrance at Via di Porta Latina 16, near Porta Latina in the Aurelian Walls; roughly 20-25 minutes' walk from Circo Massimo (Metro B), or reachable by bus along Via Appia Antica",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

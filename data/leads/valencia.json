@@ -1,0 +1,35 @@
+{
+  "leads": [
+    {
+      "name": "Arbre botella del Botanic II",
+      "species_register": "Brachychiton populneus",
+      "latitude": 39.47613,
+      "longitude": -0.38616,
+      "girth_m": 2.9,
+      "reason": "Only one source found this pass: the official register itself. No independent article, garden-authority page or Wikipedia entry specific to this individual specimen turned up. Species-name ambiguity noted: the Jardi Botanic's own public catalogue page found in this pass describes a 'arbol botella' / Brachychiton DISCOLOR (not populneus) in the same garden, and both species share the Spanish common name 'arbol botella' (bottle tree), so it is unclear whether the register's populneus ID for this exact specimen is correct or whether the web description refers to a different bottle tree in the garden. Needs either a second independent source for this specific register point, or an in-person/photo check of the trunk and leaf shape to resolve the species question before this can be delivered as verified."
+    },
+    {
+      "name": "Caquier de Virginia del Botanic I (Diospyros virginiana)",
+      "species_register": "Diospyros virginiana",
+      "latitude": 39.47605,
+      "longitude": -0.38625,
+      "girth_m": 2.2,
+      "reason": "Not researched this pass (out of the steered priority list of named giants); register candidate only, in the same Botanic Garden cluster as vlc_015/vlc_016 candidates. Worth a future look given it sits inside a cluster already being deepened."
+    },
+    {
+      "name": "39 unnamed register palms and small ficus within 0.4-0.8 km of the city centre",
+      "species_register": "mostly Phoenix dactylifera, Washingtonia robusta/filifera, Phoenix canariensis, 0.8-2.4m girth",
+      "reason": "Not individually evaluated this pass, per steering to prioritise named giants over the dozens of unnamed street/park palms in the register. A register listing as 'protected' is not by itself a reason to include; most of these are ordinary street or park palms rather than collectible destinations. Several sit within 80m of already-published trees (vlc_001, vlc_006/007/008/009 area) and were deliberately skipped rather than risk near-duplicate entries. Worth a pass only if a future city review specifically wants to grow Valencia past its current count and needs fresh candidates."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Ficus del Palacio de Raga (interior)",
+      "species_register": "Ficus macrophylla",
+      "latitude": 39.47795,
+      "longitude": -0.37952,
+      "girth_m": 9.3,
+      "reason": "PRIVATE LAND, not open to visitors. Stands inside the walled courtyard of the former Palacio de Raga, which today is a Generalitat Valenciana residencia (RPM Palau de Raga), a social-services care home and day centre for the elderly, not a museum or venue with public opening hours. Local legend holds it is the older and larger of the two Raga-area ficus (a supposed gift from botanist Cavanilles, which if true would put it over 200 years old), but it cannot be visited and its location is inside a residential care facility, which this project does not publish per hard rule 10. The PUBLIC tree 30m away in the same plaza is delivered as vlc_011; do not confuse the two."
+    }
+  ]
+}

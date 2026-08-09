@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Berlin's ancient trees free to visit?",
-      "a": "Most are free to see without a ticket. Two need paying for access: the Treskow Plane, which grows inside Tierpark Berlin and requires a zoo ticket, and the three oaks on Pfaueninsel, reached only by a short paid chain ferry (6 euros as of April 2026) since the island itself is car-free."
+      "a": "Most are free to see without a ticket. Two locations need paying for access: the Treskow Plane, which grows inside Tierpark Berlin and requires a zoo ticket, and the four oaks on Pfaueninsel, reached only by a short paid chain ferry (6 euros as of April 2026) since the island itself is car-free. A fifth Pfaueninsel-area tree, a London plane by the ferry dock, stands on the free mainland side and needs no ticket at all."
     },
     {
       "q": "What is a Berlin Naturdenkmal?",
@@ -448,6 +448,64 @@
         "attribution": "S.Makhin, CC BY 4.0, via Wikimedia Commons",
         "status": "approved"
       }
+    },
+    {
+      "id": "ber_014",
+      "name": "The Ferry Landing Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented, register-listed only",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Pfaueninselchaussee 100, west of the Wirtshaus zur Pfaueninsel, 14109 Berlin",
+        "latitude": 52.428433,
+        "longitude": 13.121932,
+        "neighbourhood": "Pfaueninsel ferry landing, Steglitz-Zehlendorf"
+      },
+      "story": "Three of Pfaueninsel's protected oaks require a ferry ticket. This plane tree does not. Berlin's Naturdenkmal register lists it at Pfaueninselchaussee 100, the address of the Wirtshaus zur Pfaueninsel, the old inn that has stood at the mainland ferry dock since long before the chain ferry became the island's only public access. The oaks across the water needed the eighteenth century royal garden that grew up around them to survive this long; this plane needed nothing more than the road leading to the crossing point, protected for its beauty and its tie to the place rather than for age or rarity, the reason the district gives on its own designation record. No planting date survives, and no second source beyond the government ordinance has turned up despite real searching, an honest gap rather than an invented history. What makes it worth including anyway is the position: anyone heading for the Pfaueninsel oaks passes directly beside it, on the free side of the water, before they have paid for anything at all. See this one on the way in, whether or not the ferry crossing that follows fits the day.",
+      "verified_sources": [
+        "data/registers/berlin-naturdenkmale.json (register_id 6-71/B, DL-DE-Zero 2.0)"
+      ],
+      "access": "Free, and no ferry ticket required: this tree stands on the mainland side of the crossing, by the Wirtshaus zur Pfaueninsel restaurant and ferry dock, unlike ber_011-013 and ber_015 which stand on the island itself and need a paid ferry.",
+      "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then under 5 minutes on foot to the ferry landing area",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Berlin Naturdenkmal register_id 6-71/B, designated 1993-03-02, reason given as 'Schoenheit, landeskundliche Gruende' (beauty, regional-historical significance), not age or rarity, so no age is claimed. Only one source found: the register (and the underlying berlin.de ordinance PDF, which is the same government designation read twice, not a second independent source). Two verify passes searched baumkunde.de and monumentaltrees.com (403-blocked) for a tree-specific second source; none found. Commons geosearch within 250m returned nothing, so no dated photo confirms current vitality; treat as likely standing but unconfirmed. Location finding worth keeping: the register address (Pfaueninselchaussee 100) is confirmed via ADAC Maps and pfaueninsel.de as the mainland ferry-dock side, not the island, so this tree is free to see without a ferry ticket.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "ber_015",
+      "name": "The Cut-Leaf Oak of Pfaueninsel",
+      "species": "Sessile Oak, cut-leaf variety (Quercus petraea var. laciniata)",
+      "age_estimate": "not documented, register-listed only",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Pfaueninsel, roughly 150m northeast of the Schloss, 14109 Berlin",
+        "latitude": 52.431763,
+        "longitude": 13.121202,
+        "neighbourhood": "Pfaueninsel, Steglitz-Zehlendorf"
+      },
+      "story": "Forty five metres from Pfaueninsel's Great Oak stands a second, stranger oak that Berlin protects for an entirely different reason. Where its famous neighbour earned Naturdenkmal status for size and disputed age, this one is registered for rarity alone: a cut-leaf sessile oak, Quercus petraea var. laciniata, a naturally occurring variety with deeply dissected, almost fern-like foliage instead of the plain oval leaf every other oak on the island carries. The two trees stand close enough that a visitor could assume the register was describing the same tree twice. It is not. The government ordinance that protects both lists them under separate numbers, at separate coordinates, for separate reasons, one for its bulk, the other purely because its leaf shape almost never occurs in the wild. No age is recorded for this one at all, since rarity rather than antiquity is the whole case for protecting it, and no source beyond the designation record itself has been found describing this specific tree. Find the Great Oak first, then look forty five metres further for its odd, deeply cut cousin, the rarer of the two despite standing in its more famous neighbour's shadow.",
+      "verified_sources": [
+        "data/registers/berlin-naturdenkmale.json (register_id 6-108/B, DL-DE-Zero 2.0)"
+      ],
+      "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg (same access as ber_011-013).",
+      "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then roughly 10-15 minutes into the island to the area northeast of the Schloss, close to ber_011.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "Berlin Naturdenkmal register_id 6-108/B, designated 1993-03-02, reason 'Seltenheit' (rarity) for the cut-leaf variety specifically ('Geschlitzblaettrige Trauben-Eiche' in the ordinance text). Distinctness confirmed against the already-published ber_011 (45m away, register 6-102/B): baumkunde.de's entry for ber_011's exact coordinates describes an ordinary crown with no cut-leaf note, while the ordinance separately and specifically designates 6-108/B for its dissected foliage at a distinct coordinate, so these are two real trees, not one register duplicate. Only one source found (the register/ordinance, one government designation read two ways, not two independent sources); two verify passes searched baumkunde.de, ostdeutsches-baumarchiv.de and monumentaltrees.com (403-blocked) without finding a tree-specific second source. Commons geosearch within 100m returned nothing, so no dated photo confirms current vitality; treat as likely standing but unconfirmed.",
+      "location_precision": "confirmed"
     }
   ]
 }

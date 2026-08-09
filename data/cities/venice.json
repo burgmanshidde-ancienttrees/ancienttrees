@@ -5,7 +5,7 @@
   "intro": "Venice's historic islands are built on water and packed with stone, leaving almost nowhere for a tree to grow old by accident. Every remarkable tree here survives because someone deliberately made room for it: Napoleon's engineers draining marshland for a public garden in 1810, Armenian monks building a monastery garden from 1717, a cemetery planted with cypress the year it opened. The oldest trees hide on islands and behind garden walls rather than lining streets, and the closest thing to a forest stands on the mainland in Mestre. Venice's green history is told in gardens and avenues, not single record-holders.",
   "meta_description": "Venice has almost no room for old trees to grow by accident. Meet the cypresses, cedars and garden trees planted deliberately on its islands since 1717.",
   "question_answer": "Venice has no single, individually dated oldest tree the way some cities do. Its best-documented old plantings are the trees of the Giardini della Biennale (the Napoleonic Gardens) in Castello, laid out by Giannantonio Selva for the garden's 1810 opening, which makes some of its lindens, hackberries and plane trees up to around 216 years old, though no individual specimen there has been separately measured or aged.",
-  "question_meta": "Venice's oldest documented trees grow in the 1810 Napoleonic Gardens. Why the city has no single record-holder, and ten remarkable trees worth the walk.",
+  "question_meta": "Venice's oldest documented trees grow in the 1810 Napoleonic Gardens. Why the city has no single record-holder, and eleven remarkable trees worth the walk.",
   "question_context": "Ring counts and growth-based estimates work poorly in Venice's own record because almost nothing here has been measured the way a monumental tree in Milan or Rome has. What the city does have is documented planting and construction dates for the gardens themselves: the Giardini della Biennale (Castello) laid out in 1810, the cemetery island of San Michele completed in 1813, San Lazzaro degli Armeni's monastery garden begun in 1717. Those dates set an upper bound on how old any tree standing there today could be, but they are not proof that any single tree dates back that far, since replanting is common and mostly undocumented. That gap between a garden's founding date and an individual tree's real age is stated honestly across every entry on this list rather than smoothed into a false precision. The Giardini della Biennale is reachable on foot from the Giardini vaporetto stop (lines 1, 4.1, 4.2), a few minutes from the Biennale's own entrance on Riva dei Sette Martiri.",
   "faq": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Venice's remarkable trees free to visit?",
-      "a": "Most are. Seven of the ten stand in free public parks and gardens. San Lazzaro degli Armeni charges a small fee for its guided tour, San Francesco del Deserto asks for a donation and requires a private boat, and Ca' Zenobio's garden is open mainly during scheduled exhibitions."
+      "a": "Most are. Seven of the eleven stand in free public parks and gardens. San Lazzaro degli Armeni charges a small fee for its guided tour, San Francesco del Deserto asks for a donation and requires a private boat, and Ca' Zenobio's garden is open mainly during scheduled exhibitions."
     },
     {
       "q": "Where can I see trees in the Venice lagoon islands rather than the main city?",
@@ -247,8 +247,8 @@
       "age_max": 150,
       "location": {
         "address": "Parco di Villa Groggia, Fondamenta Riformati 3161, Cannaregio, 30121 Venezia",
-        "latitude": 45.4480049,
-        "longitude": 12.3276679,
+        "latitude": 45.44794,
+        "longitude": 12.32791,
         "neighbourhood": "Sant'Alvise, Cannaregio"
       },
       "story": "Two hackberries, the species Milan nicknames spaccasassi, the stone-splitter, for roots strong enough to crack paving, line the path toward a small theatre that has outlived every building that once stood around it. The land was part of the 16th century Palazzo Donà estate, then a working orchard and garden, before the palazzo itself was demolished in 1823 for building material. Giuseppe Groggia built the villa and its romantic-style park toward the end of the 19th century, complete with artificial hills and a Neo-Gothic teatrino from around 1913, and when the family later donated the property, the city took over its upkeep. The garden today is one of the few in Venice with genuinely free, unrestricted public access, a contrast to the palace gardens elsewhere on this list that open only on schedule or by appointment. The two Celtis australis trees along its main path have no individually documented planting date, so their exact age is unverified, but their scale suggests they belong to the villa's original 19th century planting rather than a later addition.",
@@ -266,7 +266,7 @@
       },
       "curation_status": "flagged",
       "notes": "No source gives the two hackberries a specific planting date; age range is an estimate based on the villa's own late-19th-century construction. Pin corrected 2026-07-28 from a district-level estimate for Sant'Alvise (~400m off) to the park's own mapped OSM boundary centroid, a real improvement though still park-level rather than pinned to the two specific trees. 2026-07-29: three iNaturalist Celtis australis observations found right at this pin (one within about 8m), confirming the location, but all three are unlicensed or CC-BY-NC; genuine dead end on the photo specifically.",
-      "location_precision": "approximate"
+      "location_precision": "confirmed"
     },
     {
       "id": "ven_009",
@@ -327,6 +327,35 @@
       "curation_status": "flagged",
       "notes": "No source dates or measures an individual tree at the fort; description as 'secolare' (century-old) is consistent across sources but unspecific. 2026-07-30: the 2026-07-29 lead resolved. Viewed the 50-file \"Baia Baia del Forte\" series (Category:Forte Marghera, CC0, all by the same photographer/day) directly rather than relying on filenames alone. Photo 13 shows a genuine mature tree on the fort's grassy grounds beside the water, consistent with the story's description; used it since this entry describes the ensemble of century-old grounds trees rather than one named specimen, so no single-tree identity risk applies the way it would for a named tree. The \"Entrada al Forte Marghera\" series (also viewed, sampled) was building/entrance shots throughout, no trees; not used.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "ven_011",
+      "name": "The Palm of San Servolo",
+      "species": "Cretan Date Palm (Phoenix theophrasti)",
+      "age_estimate": "not individually dated; described as one of the island's 'very ancient trees'",
+      "age_min": 80,
+      "age_max": 150,
+      "location": {
+        "address": "Isola di San Servolo, 30124 Venezia",
+        "latitude": 45.419783,
+        "longitude": 12.355597,
+        "neighbourhood": "San Servolo"
+      },
+      "story": "Step off the boat at San Servolo and a palm is the first thing to meet you. The Italian garden heritage association describes it in exactly those terms, a palm that welcomes visitors as soon as they disembark, and the national register's point for this tree sits by the landing. It stands 10.5 metres tall with a trunk 188 centimetres around, and it is counted among the oldest things growing on the island.\n\nIts name contradicts itself, and the contradiction is in the official record. The register calls it palma delle Canarie, the Canary palm, the tree anyone would recognise from a seafront promenade. In the same entry it gives the scientific name Phoenix theophrasti, which is a different plant: the Cretan date palm, which survives in the wild in a few dozen ravines and beaches on Crete and the Turkish coast and nowhere near the Canaries. Either Venice has an unusual specimen on its hands or someone wrote a familiar Italian name beside the wrong Latin. We have left it as the state records it rather than quietly picking a side, and the tree itself will not settle the argument for you.\n\nThe island spent generations as Venice's asylum, and the museum of that history is still open on its own ticket. The park around it costs nothing. The olive of San Servolo stands 184 metres away, which puts two old trees within a short walk of the same jetty.",
+      "verified_sources": [
+        "data/registers/italy-masaf.json (sheet_id 01/L736/VE/05, comune Venezia, locality Isola San Servolo, girth 188 cm, height 10.5 m)",
+        "https://www.apgi.it/giardino/parco-isola-di-san-servolo/"
+      ],
+      "access": "Free, public park; separate paid ticket for the Museo del Manicomio",
+      "transport": "Vaporetto line 20 from San Zaccaria, about 10 minutes",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ],
   "oldest_tree_id": "ven_001"

@@ -1,0 +1,35 @@
+{
+  "leads": [
+    {
+      "candidate": "Willow Oak, U.S. National Arboretum",
+      "why_a_lead": "VERIFIED this pass and delivered as wdc_007 (flagged: single source, and a serious health flag: per Casey Trees' 2023 on-site visit with Arboretum staff, the tree is described as 'near the end of its life' after 2012 derecho damage and 2015 borer treatment). Exact in-grounds coordinates still not found; delivered at park-level precision. Leaving this note so a future pass does not re-research it, only re-confirms health and finds the exact spot."
+    },
+    {
+      "candidate": "Dumbarton Oaks / Dumbarton Oaks Park veteran trees, and the Montrose Park Tulip Poplar (HALS DC-?, tile.loc.gov/.../dc1036), Georgetown",
+      "why_a_lead": "Unchanged from the prior pass for Dumbarton Oaks itself (still not surfaced by open web search; would need doaks.org library-archives plant lists directly). NEW this pass: the Montrose Park Tulip Poplar is confirmed as a distinct, separate HALS witness tree record (dc1036, 'Montrose Park Tulip Poplar, Montrose Park, clearing in northwest corner, Washington, DC') found via web search of the HALS numbering sequence, but www.loc.gov blocks curl/WebFetch with a Cloudflare challenge and the tile.loc.gov PDF for dc1036 returned 403 this pass (unlike dc1027/1028/1029/1030/1034/1039/1040 which returned the PDF fine), so its content is still unverified. Montrose Park is a free, fully public NPS-adjacent Georgetown park directly next to Dumbarton Oaks Park, so the two would form a natural second Georgetown cluster if both pan out. A future pass should retry the dc1036 PDF (transient 403s happened on this host) and search for the tulip poplar by name plus a second source."
+    },
+    {
+      "candidate": "Andrew Jackson Magnolia(s), White House South Portico",
+      "why_a_lead": "UPDATED this pass via the National Park Trust blog (parktrust.org, independent second source, corroborates the NPS 'Silent Sentinels' article): confirms one tree was radically cut back in 2018 due to age/decline (not fully removed in 2017 as an earlier pass understood); the blog states 'still reportedly there today' as of its own (recent, copyright 2026) writing, having watched 39 presidencies, with a seedling from the original standing by for eventual succession. This resolves part of the earlier open question about which of the two trees survives, but the access question is UNCHANGED and still blocking: the White House South Lawn is not general public access, and this pass still could not confirm whether the tree is visible from the public Ellipse/E Street or only from inside ticketed tours. Needs an access check before it could ever ship, per hard rule 10 on withheld/restricted locations."
+    },
+    {
+      "candidate": "1910 Japanese Flowering Cherry Trees, East Potomac Golf Course (HALS DC-8, tile.loc.gov/.../dc1034)",
+      "why_a_lead": "Same 2006 HALS Witness Tree Protection Program as wdc_001/004/006/008/009/010. This pass downloaded the HALS PDF (tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dc1034/data/dc1034data.pdf, 342KB) but it is a scanned image (JBIG2) with no extractable text and no OCR tool available this pass, so its documented health flag ('hollow condition of most principal branches consistent with past insect infestation', per the LOC item title/metadata found via web search) could not be verified in detail or dated. Also an ensemble ('cherry trees', plural, at a golf course, not one obvious standing point) that needs a collectible-point judgement call. A future pass with OCR/PDF-reading capability, or a session that can view www.loc.gov/pictures/item/dc1034 directly (blocked by Cloudflare to curl and WebFetch this pass, tile.loc.gov PDF host works fine), should resolve both the health question and whether this counts as one collectible point."
+    },
+    {
+      "candidate": "Frederick Douglass White Oak, Cedar Hill (HALS DC-?, tile.loc.gov/.../dc1028, 'Frederick Douglass White Oak, 1411 West Street SE, Northeast of front porch')",
+      "why_a_lead": "Strong candidate on paper: single named tree, NPS-owned National Historic Site (Frederick Douglass NHS, Cedar Hill, Anacostia), part of the same HALS programme, described elsewhere as the largest tree remaining from Douglass's own time on the property. NOT pursued to verification this pass for two reasons: (1) time budget went to the Mall/Tidal Basin cluster per this pass's brief, since Cedar Hill is a separate site in Anacostia, SE DC, roughly 20-25 min from downtown, that would not join the existing wdc_002/004/005 walk; (2) this pass could not find a source confirming the specific named witness tree is still standing as opposed to oaks in general still being present on the knoll (TCLF's Cultural Landscape Foundation page, https://www.tclf.org/frederick-douglass-national-historic-site, confirms 'the knoll is dominated by lawn and crowned with numerous specimen trees, including oak, hickory, and cedar' plus two 19th-century magnolias east of the residence, but does not name the HALS witness tree specifically; a Feb 2026 Casey Trees article on Cedar Hill, https://caseytrees.org/2026/02/frederick-douglass-and-the-nature-at-cedar-hill/, confirms oaks are still present and that Casey Trees/NPS have an active tree-planting partnership there, but likewise does not name this specific tree). A future pass should search NPS frdo park pages directly, or a HALS DC number lookup, for a tree-specific recent confirmation before verifying. Good candidate for a future 'second DC cluster' (Anacostia/Cedar Hill) alongside the two 19th-century magnolias noted by TCLF, which are themselves unresearched leads.",
+      "location_note": "1411 W Street SE, Washington, DC; Frederick Douglass National Historic Site, free, NPS-operated (though the house itself requires a timed tour, the grounds are generally open)."
+    },
+    {
+      "candidate": "Farragut Square Ginkgo (HALS DC-?, dc1030) and a Japanese Pagoda Tree also referenced near Farragut Square (dc1029, unconfirmed title)",
+      "why_a_lead": "Two more HALS-documented trees found by number this pass but not investigated: Farragut Square is downtown DC, not near the Mall/Capitol walk this pass prioritised, so would need its own small downtown cluster to be worth researching. www.loc.gov blocks direct viewing (Cloudflare); the tile.loc.gov PDFs for dc1029 and dc1030 downloaded fine (73KB and 62KB respectively) but are scanned images with no extractable text this pass could read."
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "District of Columbia War Memorial tree plantings (dogwood, holly, magnolia, elm, pine, crabapple, 1931-39)",
+      "reason": "Not a collectible point: a mixed-species memorial landscape planting, not one identifiable tree or a compact named ensemble with one obvious place to stand. No individual specimen is named or dated by either source found (NPS 'Silent Sentinels' article; National Park Trust blog does not mention it at all)."
+    }
+  ]
+}

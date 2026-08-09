@@ -1,0 +1,81 @@
+{
+  "city": "Chicago",
+  "country": "USA",
+  "city_slug": "chicago",
+  "updated": "2026-08-09",
+  "note": "First verification pass on Chicago, web research from zero (no register). Delivered 3 verified candidates to data/research/chicago-verified.json (chi_001 to chi_003), below the 4-tree floor for a page. leads = trees that failed only on our evidence bar or on the count, raw material for a future pass. blocked = trees that must never ship whatever happens later, each with its reason. 2026-08-09 pass: found the Illinois Big Tree Register feature-service endpoint and delivered chi_004 (Champion Boxelder, Edgebrook Golf Course) to data/research/chicago-verified.json, bringing Chicago to 4 verified trees, the floor for a page.",
+  "leads": [
+    {
+      "name": "University of Chicago Main Quadrangle bur oak / black oak stand",
+      "species": "Bur Oak (Quercus macrocarpa) and Black Oak (Quercus velutina), mixed stand",
+      "location_hint": "Humanities Quadrangle and Social Sciences Quadrangle, University of Chicago main campus, Hyde Park, roughly 41.789, -87.5997",
+      "why_not_shipped": "Two native oak stands predate the University (founded 1890) and were deliberately preserved by trustee Judge Daniel Shorey when the quadrangles were laid out; a Chicago Maroon student column (2019) and a University of Chicago Magazine piece both confirm old oaks still stand in the quads today, and a University Facilities article (paywalled behind the intranet.uchicago.edu React app, could not be fetched by curl or WebFetch in this pass, both redirected to a JS-only shell) reportedly discusses the stand's history in more depth per search-engine summaries only, which is not something to trust without reading the source directly. No confirmed age figure or exact single-tree location was found that would clear the two-source bar for a specific collectible point; the sources describe a stand/cluster across two quads, not one tree with one place to stand. Worth a dedicated pass: visit or find the facilities.uchicago.edu article through a cached/archived copy, or contact UChicago Facilities (contact was named in secondary coverage: Richard Bumstead, associate director of campus environment) to pin an exact specimen and age.",
+      "update_2026_08_08": "The intranet source was read in a browser session: it quotes Goodspeed's History of the University of Chicago. Key passage: 'Judge Shorey was also the principle advocate for preserving the existing oaks on campus - oaks that in many cases predate the University.' Also: in the University's first year the western side was 'flat, but dry and covered with young oaks', so the preserved oaks were YOUNG in 1892, putting them at roughly 140-170 years now, not ancient. History is now double-sourced; what still fails is the collectible-point rule: every source describes a stand across two quadrangles, no single tree with one place to stand. Only a source naming one individual tree reopens this."
+    },
+    {
+      "name": "Graceland Cemetery arboretum (unspecified individual specimen)",
+      "species": "unknown - cemetery is a certified Morton Arboretum-affiliate arboretum of 2,000+ trees, 103+ species, including American Elm",
+      "location_hint": "Graceland Cemetery, 4001 N Clark St, Uptown, Chicago, roughly 41.9556, -87.6598",
+      "why_not_shipped": "Graceland publishes its own self-guided Tree Tour maps (PDF, e.g. https://www.gracelandcemetery.org/images/Tree_Tour_II_Map_-_to_be_added_to_website.pdf) which likely name specific notable specimens, but the tour pages fetched in this pass described the collection only in aggregate, with no individual tree's age, species or exact plot called out. A future pass should open the actual Tree Tour PDF map(s) rather than the landing page; if they name specific champion or notably old trees with locations, that could produce one or more strong candidates within a 25 to 30 minute transit ride of downtown (Red Line to Sheridan or Berwyn, or Clark St bus).",
+      "update_2026_08_08": "Both PDF tour maps (Tree Tour I, 50 numbered specimens, and Tree Tour II, 50 more) were opened and read in full this pass. Both are plain species-identification walks, one example of each species numbered on a map (White Pine, Bur Oak is not even listed; the closest natives are a Northern Pin Oak, a Pin Oak, an English Oak, a Black Oak and a Swamp White Oak scattered among ornamentals like Ginkgo, Katsura and Star Magnolia). Neither map gives an age, a girth, a 'champion' or 'notable' designation, or any text distinguishing one specimen as remarkable versus another; they exist to show garden diversity, not veteran trees. Targeted searches for a named old/champion tree at Graceland (elm survivor, champion oak, historic specimen) returned nothing beyond the same aggregate 'certified arboretum, 2,000+ trees' framing. This lead is now closed unless a future pass finds a specific news piece or arborist report naming one Graceland tree with an age and a plot location; the tour maps themselves are exhausted."
+    },
+    {
+      "name": "Red pine, Indian Boundary Golf Course",
+      "species": "Red Pine (Pinus resinosa)",
+      "location_hint": "Indian Boundary Golf Course, 8600 W Forest Preserve Ave, Chicago, IL 60634 (Forest Preserves of Cook County), roughly 41.939135, -87.844832",
+      "why_not_shipped": "Found 2026-08-09 via the Illinois Big Tree Register feature service (see resolved_2026_08_09 below), the only OTHER register entry in the Chicago-area bbox with an address actually inside Chicago city limits (Forest Preserve Ave address is Chicago, not a suburb). Circumference 6.8 ft, height 64 ft, listed/measured 2026. Not yet checked this pass: its Total_Points ranking among Illinois red pines (state champion or not), whether it clears the two-source bar, an honest access description for a Cook County golf course, and a precise walk time from the nearest Blue Line or Metra stop. Red pine is non-native to Illinois and likely planted rather than wild, which does not disqualify it but is worth noting for the story."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Bur Oak, Lincoln Park Zoo South Lawn",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "location_hint": "Lincoln Park Zoo, South Lawn, Chicago",
+      "reason": "DEAD. This was Chicago's best-known candidate for oldest tree (estimated 250-300 years, predating the city and the USA), but it was removed by crane and chainsaw crews on 2023-05-02 after reaching the end of its life cycle; confirmed by Block Club Chicago, WTTW, NPR and Smithsonian Magazine, all archived. 36 scions were grafted at the Morton Arboretum to preserve its genetics, but the tree itself is gone. Never ship as a living entry."
+    },
+    {
+      "name": "Birdhouse Oak, Lincoln Park (near Farm in the Zoo)",
+      "species": "Oak (species unspecified in source), century-old",
+      "location_hint": "1911 N Stockton Dr, Lincoln Park, Chicago, across from the Farm in the Zoo",
+      "reason": "Source (Block Club Chicago, 2022) describes it explicitly as a 'dying oak tree' that was given a second life as a public-art bird sanctuary with 190 birdhouses attached, i.e. a snag/dying specimen rather than a living, thriving tree. Fails the 'alive now' bar as reported; would need a fresh 2025/2026 check to see whether it is still standing and whether calling it 'alive' would be honest, or whether it is functionally a dead-tree art installation (which the project's dead-tree rule excludes as a collectible entry regardless of fame)."
+    },
+    {
+      "name": "LaBagh Woods old-growth oak/hickory woodland",
+      "species": "mixed: swamp white oak, red oak, bur oak, hickory, maple",
+      "location_hint": "LaBagh Woods, Foster Ave near North Cicero Ave, Albany Park/North Park, Chicago",
+      "reason": "Not a collectible point: sources describe a whole closed-canopy woodland along the North Branch of the Chicago River, no single named or individually distinguished tree identified. Would need a specific standout specimen located first."
+    },
+    {
+      "name": "Dan Ryan Woods old-growth oak/hickory woodland",
+      "species": "mixed oak and hickory",
+      "location_hint": "Dan Ryan Woods, 87th and Western, Beverly, Chicago",
+      "reason": "Same as LaBagh Woods: a 60-acre closed-canopy woodland on high ground (former Blue Island), not a single collectible tree. No individual specimen identified in this pass."
+    },
+    {
+      "name": "Massacre Tree (Fort Dearborn cottonwood)",
+      "species": "Cottonwood",
+      "location_hint": "18th Street between Prairie Avenue and the lake, Chicago",
+      "reason": "DEAD since 1894. A cottonwood said to have been a sapling during the 1812 Fort Dearborn Massacre; a Chicago Tribune report of 1894-05-18 recorded it fell in a storm, was sawn in two and given to G. Pullman for his gardens. Historical-only, never a living entry."
+    },
+    {
+      "name": "Bur Oak Historical Marker tree, Spring Valley Nature Center",
+      "species": "Bur Oak (Quercus macrocarpa)",
+      "location_hint": "Schaumburg, Cook County, IL (hmdb.org marker #259980)",
+      "reason": "Not in Chicago and not within the ~30 minute day-trip boundary: Schaumburg is a far northwest suburb, well outside transit range of the city centre."
+    },
+    {
+      "name": "\"Champion\" white oak, Pioneer Woods",
+      "species": "White Oak (Quercus alba)",
+      "location_hint": "Pioneer Woods, Willow Springs, Cook County (Forest Preserve District of Cook County)",
+      "reason": "Roughly 300 years old per the Forest Preserves' resource-management director, but Willow Springs is a distant southwest suburb, well outside the ~30 minute day-trip boundary of downtown Chicago. Same exclusion applies to the Millennium Landmark Tree at Morton Arboretum in Lisle (330+ years, white oak) — genuinely one of the region's oldest trees but a different city's day trip, not Chicago's."
+    }
+  ],
+  "unexplored_2026_08_08": [
+    "Chicago Botanic Garden (Glencoe): checked briefly, the oldest documented specimen (a white oak in McDonald Woods) is only cited as 'over 100 years old', not old enough to be a strong candidate, and Glencoe is a genuine trek from downtown (Metra Union Pacific North to Braeside, then a walk/shuttle, likely 45+ minutes door to door), so it was not pursued further this pass.",
+    "Washington Park (Olmsted, 1870): DNAinfo's 2016 'oldest tree' survey states its oaks 'predate the earliest designs for the park by Frederick Law Olmsted in 1870', but no source found in this pass names or locates an individual specimen there; TCLF's landscape page describes groves only in aggregate. Worth a dedicated look at Chicago Park District records or a site visit.",
+    "hpherald.com's 'Hyde Park Stories: Bur Oaks' article (already a verified_source for chi_002) returned HTTP 429 on WebFetch and 302 on curl in this pass; worth a retry with a delay, it may contain more detail on the Wooded Island/Jackson Park grove or other Hyde Park specimens."
+  ],
+  "resolved_2026_08_09": {
+    "illinois_big_tree_register_feature_service": "The Experience Builder app at https://experience.arcgis.com/experience/df5e7296d76a4c8ba133c9e8adf1f85a is item df5e7296d76a4c8ba133c9e8adf1f85a on arcgis.com (\"IBTR Web Map 2026\", owner cwevans1, org GL0fWlNkwysZaKeV = University of Illinois Extension). Its config (arcgis.com/sharing/rest/content/items/<id>/data?f=json) names the underlying layer as https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0 (capability: Query only). Query with GET params geometry=<envelope>&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&f=json (or where=Common_name=... / County=...). Fields include Common_name, Species, County, Location (free-text, no address), Year_listed_Last_measured, Diameter_at_breast_height__in__, Circumference__ft__, Height__ft__, Spread__ft__, Total_Points (ranking score), pic_url (temporary signed S3 URL, expires), Lat/Long. No age field exists in this register at all. The County field does NOT reliably indicate Chicago city limits (Cook County is mostly suburbs); filter by lat/long against the actual city boundary instead. Never re-hunt this endpoint; query it directly next time."
+  }
+}

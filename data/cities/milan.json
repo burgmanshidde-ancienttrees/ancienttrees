@@ -3,9 +3,9 @@
   "country": "Italy",
   "status": "needs_curation",
   "intro": "Milan's remarkable trees are rarely medieval; the city rebuilt itself too many times, and around itself even more, for old wood to survive by accident. What lasted here did so because an institution kept records (a university's ginkgo pair, brought from China in 1775), a neighbourhood organised (a paulownia a Brera committee saved from a car park in 2016), or a park changed its job entirely (a horse-racing track that became a school for sick children in 1919 and kept its oaks). Fifteen trees, and almost every one owes its survival to a specific human decision.",
-  "meta_description": "Milan's fifteen remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
+  "meta_description": "Milan's eighteen remarkable trees, from a 1775 ginkgo pair to a plane tree a Brera committee saved from demolition in 2016.",
   "question_answer": "Milan's oldest tree is one of a pair of ginkgo trees in the Orto Botanico di Brera, planted in 1775 when the garden's founders imported them directly from China. Both are now around 250 years old and grow a few steps from the garden's 18th-century greenhouse on Via Brera 28.",
-  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775. Its story, plus fourteen more trees.",
+  "question_meta": "Milan's oldest tree is a 250-year-old ginkgo pair at the Orto Botanico di Brera, planted from Chinese seed in 1775. Its story, plus seventeen more trees.",
   "question_context": "Milan has never been an easy city for an old tree to survive in. Wars, plague and relentless nineteenth and twentieth century redevelopment levelled most of what predates them, so almost nothing on this list is medieval. The one clear exception is the university's own ginkgo biloba pair, a male and a female planted together in 1775 when Abbot Fulgenzio Vitman was building the Orto Botanico di Brera for Empress Maria Theresa's new medical faculty, importing seed directly from China less than two decades after the species had reached Europe at all. Italy's monumental tree registry calculates their age from growth data at 235 years, a little short of the 251 years a straight planting-date count would give; this page states both rather than picking one, since the gap is exactly the kind of rounding error that comes from measuring a slow grower by two different methods. Either way, they are Milan's oldest trees by a wide margin over anything else here, and the garden marked their joint 250th anniversary with a public conference in March 2026.",
   "faq": [
     {
@@ -66,7 +66,7 @@
     {
       "id": "mil_002",
       "name": "Platano di Indro",
-      "species": "London Plane (Platanus x hispanica)",
+      "species": "London Plane (Platanus x acerifolia)",
       "age_estimate": "age undocumented, likely 100-240 years",
       "age_min": 100,
       "age_max": 240,
@@ -310,7 +310,7 @@
     {
       "id": "mil_009",
       "name": "La Pianta di Affori",
-      "species": "London Plane (Platanus x hispanica)",
+      "species": "London Plane (Platanus x acerifolia)",
       "age_estimate": "187 years by dendrochronological analysis; local tradition claims over 250",
       "age_min": 187,
       "age_max": 260,
@@ -416,7 +416,7 @@
     {
       "id": "mil_012",
       "name": "Il Platano della Biodiversita",
-      "species": "London Plane (Platanus x hispanica)",
+      "species": "London Plane (Platanus x acerifolia)",
       "age_estimate": "age undocumented, likely 100-180 years",
       "age_min": 100,
       "age_max": 180,
@@ -483,7 +483,7 @@
     {
       "id": "mil_014",
       "name": "Il Platano del Giardino Bazlen",
-      "species": "London Plane (Platanus x hispanica)",
+      "species": "London Plane (Platanus x acerifolia)",
       "age_estimate": "age undocumented, likely 120-200 years",
       "age_min": 120,
       "age_max": 200,
@@ -513,7 +513,7 @@
     {
       "id": "mil_015",
       "name": "Il Platano Siamese di Villa Litta",
-      "species": "London Plane (Platanus x hispanica)",
+      "species": "London Plane (Platanus x acerifolia)",
       "age_estimate": "age undocumented, planted with the villa's 18th-century park",
       "age_min": 180,
       "age_max": 250,
@@ -547,6 +547,93 @@
       "curation_status": "flagged",
       "notes": "Existence, species, form and condition from the Comune di Milano's own monumental-tree page (VTA 9595, height 34 m, two fused trunks, cabled, described as at the end of its biological cycle) and the national MASAF register, which lists two surviving Villa Litta planes of 43 m and 38 m plus two further entries in the same park. Local history source milanoaffori.it independently confirms that plane trees planted in the second half of the 1700s still stand in this park. No source publishes an age for this specific tree, so the range is estimated from the park's own planting era, not measured. Coordinates: the comune's map point and the nearest register point differ by about 70 m, hence approximate. IMPORTANT: this is NOT the felled 1773 plane. That tree stood on the villa's south-east side until 2015 and its trunk section is displayed indoors; see data/leads/milan.json, blocked. Counted as ONE collectible point rather than two trees because the fusion is what the designation and the nickname are about, and there is one obvious place to stand. Photos: two CC BY-SA 4.0 Commons images of a Villa Litta plane exist (Platano comune a02.jpg and a03.jpg, Alberto Panzani, 2018), but both are geotagged at 45.515147, 9.166122, about 230 m from this tree and exactly on a different register entry, so neither can be used here.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "mil_016",
+      "name": "Il Platano di Piazza Sant'Ambrogio",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "age undocumented, likely 100-180 years",
+      "age_min": 100,
+      "age_max": 180,
+      "location": {
+        "address": "Piazza Sant'Ambrogio / Largo Caduti Milanesi per la Patria, 20123 Milano",
+        "latitude": 45.463431,
+        "longitude": 9.175503,
+        "neighbourhood": "Sant'Ambrogio"
+      },
+      "story": "This plane tree joined Italy's national register of monumental trees in November 2025, which makes it one of the newest protected trees in the country and one of the taller ones in Milan. It stands 34 metres on a trunk 4.2 metres around, in the square in front of the Basilica di Sant'Ambrogio. Regione Lombardia announced it in a batch of 48 new entries that took the region's total to 476 recognised specimens.\n\nIts age has never been published. Italy's national register carries girth and height and no field for years, and no city document or newspaper survey has filled the gap, so the only honest handle is size. A London Plane of this girth in Milan is usually somewhere in its second century, and the range given here is exactly that: an estimate read off a tape measure, not a record.\n\nWhat it stands over is dated to the year. The basilica behind it was founded in 379 by Ambrose himself, and the low brick building with two unequal towers that you see today is the eleventh and twelfth-century replacement. Against that clock the tree is a newcomer. Against any other it is old.\n\nIt is also the tree most often photographed by accident in this city, sitting in the background of everybody's picture of the church, while being the reason the square has any shade at all.",
+      "verified_sources": [
+        "MASAF national register, sheet 52/F205/MI/03, Milano, Piazza Sant'Ambrogio - Largo Caduti Milanesi per La Patria (Platanus acerifolia, girth 420 cm, height 34 m)",
+        "https://www.lombardiaspeciale.regione.lombardia.it/wps/portal/LS/?urile=wcm:path:/lspeciale/news/2025/11-+novembre/nws-lombardia-alberi-monumentali/nws-lombardia-alberi-monumentali (Regione Lombardia press page, 18 Nov 2025, naming this plane among 48 new entries to the national monumental-tree list, alongside the Viale Cervantes plane and the Brera ginkgo group)"
+      ],
+      "access": "Free, public square outside the Basilica di Sant'Ambrogio",
+      "transport": "2 min walk from Sant'Ambrogio (M2)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mil_017",
+      "name": "Il Platano di Viale Cervantes",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "age undocumented, likely 90-160 years",
+      "age_min": 90,
+      "age_max": 160,
+      "location": {
+        "address": "Viale Cervantes, Parco Sempione, 20154 Milano",
+        "latitude": 45.473056,
+        "longitude": 9.176667,
+        "neighbourhood": "Sempione"
+      },
+      "story": "Parco Sempione is the most walked park in Milan, and this tree only entered the national register of monumental trees in November 2025. It stands on Viale Cervantes at 33 metres, on a trunk 3.9 metres around, one of 48 Lombard trees designated in a single announcement that took the region past 476 protected specimens.\n\nIts age is not on record. Italy's register lists girth and height and leaves the years blank, and no local survey has ever dated this one, so the two numbers on the tape are the only figures that describe it honestly: 390 centimetres around, 33 metres up. Everything past that is inference from size, and inference is the right word for it.\n\nWhere it stands is more interesting than what it measures. Viale Cervantes runs through the park between the Castello Sforzesco at one end and the Arco della Pace at the other, which makes it a route rather than a destination, and almost everyone on it is going somewhere else. The same avenue carries the Caucasian Wingnut that bends out low over the park's pond, close enough that the two are a single short walk. Between them they make this stretch the part of Sempione worth slowing down for, which is not how most people use it. It is 33 metres of reason to stop.",
+      "verified_sources": [
+        "MASAF national register, sheet 53/F205/MI/03, Milano, Viale Cervantes - Parco Sempione (Platanus acerifolia, girth 390 cm, height 33 m)",
+        "https://www.lombardiaspeciale.regione.lombardia.it/wps/portal/LS/?urile=wcm:path:/lspeciale/news/2025/11-+novembre/nws-lombardia-alberi-monumentali/nws-lombardia-alberi-monumentali (Regione Lombardia press page, 18 Nov 2025, naming this plane among the same batch of 48 new entries)"
+      ],
+      "access": "Free, public park (Parco Sempione, opening hours vary by season)",
+      "transport": "8 min walk from Cadorna (M1/M2) or Arco della Pace tram stop",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "mil_018",
+      "name": "Il Platano dei 34 Metri ai Giardini Montanelli",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "age undocumented, likely 110-190 years",
+      "age_min": 110,
+      "age_max": 190,
+      "location": {
+        "address": "Giardini Pubblici Indro Montanelli, Via Palestro, 20121 Milano",
+        "latitude": 45.474389,
+        "longitude": 9.203111,
+        "neighbourhood": "Porta Venezia"
+      },
+      "story": "Depending on which document you trust, this is either one of the two tallest trees in Milan or simply one of the taller ones. Il Giorno's survey of the city's monumental trees calls 34 metres the greatest height reached by any plant in Milan and names two plane trees that get there, one at Villa Litta and this one, off via Palestro. Italy's national register separately lists a Villa Litta plane at 43 metres. The title is contested, and that is worth saying rather than picking a side.\n\nThe measurement of this tree is not contested: 475 centimetres around the trunk, 34 metres tall. Its age is blank. The national register has no field for years and no newspaper or municipal file has dated it, so girth and height are the only honest numbers here.\n\nIt is also not the famous tree in these gardens. That is the plane with the 8.36-metre trunk, dated to 239 years, which grew outwards into five limbs instead of upwards. This one did the opposite. It has a second registered plane nearby at 32 metres, plus a bald cypress, a Mediterranean hackberry and a Caucasian wingnut: six register-listed monumental trees inside one set of railings, in a park first laid out in 1784.\n\nNobody stops for this one, because in company like that, being the tallest is not conspicuous. Look up rather than at the trunk.",
+      "verified_sources": [
+        "MASAF national register, sheet 11/F205/MI/03, Giardini Indro Montanelli - Corso Venezia (Platanus acerifolia, girth 475 cm, height 34 m)",
+        "https://www.ilgiorno.it/milano/cronaca/alberi-monumentali-1.7590565 (Il Giorno, 'Verde, sono 17 gli alberi monumentali a Milano', quoting verbatim: 'un altro platano, anche in questo caso ai Giardini Montanelli di via Palestro' reaching the same 34-metre height as the Villa Litta plane, described as the tallest plant height in the city)"
+      ],
+      "access": "Free, public park (opening hours vary by season)",
+      "transport": "5 min walk from Palestro (M1) or Porta Venezia (M1)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ],
   "oldest_tree_id": "mil_004"

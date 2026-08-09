@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ven_008",
+    "latitude": 45.44794,
+    "longitude": 12.32791,
+    "new_precision": "confirmed",
+    "evidence": "iNaturalist obs 238085667 (2024-08-26, taxon Celtis australis, casual/cultivated grade consistent with a planted park specimen) is geotagged 20m from the prior park-centroid pin, right on Villa Groggia's main path where the story places the two hackberries; pin tightened to the observation point."
+  },
+  {
+    "id": "ven_001",
+    "latitude": 45.42917,
+    "longitude": 12.35694,
+    "new_precision": "approximate",
+    "evidence": "Checked, could not improve: entry covers 100+ tree species across the whole Giardini della Biennale ensemble, no source dates, measures or maps any single specimen; no register entry exists for this park; pin is the park's own centroid and that is the honest ceiling for an ensemble entry."
+  },
+  {
+    "id": "ven_002",
+    "latitude": 45.4466494,
+    "longitude": 12.3456381,
+    "new_precision": "approximate",
+    "evidence": "Checked, could not improve: one iNaturalist Cupressus sempervirens observation (id 228590748, 2024-07-11) sits ~180m from the pin, inside the 400m+ span of San Michele cemetery, which only confirms cypress grows somewhere on the island, not which tree. No MASAF register entry exists for this comune location. Ensemble entry ('the cypresses that ring it'), stays park-level honest."
+  },
+  {
+    "id": "ven_003",
+    "latitude": 45.411979,
+    "longitude": 12.361422,
+    "new_precision": "approximate",
+    "evidence": "Checked, could not improve: San Lazzaro degli Armeni is a guided-tour-only monastery island with no MASAF register entry and no geotagged Cedrus libani observations found (iNaturalist/Commons both empty, consistent with the 2026-07-29 note). No source gives the three 2008-planted cedars' exact spot inside the garden."
+  },
+  {
+    "id": "ven_004",
+    "latitude": 45.4731,
+    "longitude": 12.4169,
+    "new_precision": "approximate",
+    "evidence": "Checked, could not improve: the entry describes a ring of cypress around the entire island perimeter, not one tree, so island-centroid is the honest and correct precision for a ring-shaped ensemble. No register or observation data exists for this island."
+  },
+  {
+    "id": "ven_005",
+    "latitude": 45.4343794,
+    "longitude": 12.3747016,
+    "new_precision": "approximate",
+    "evidence": "Checked, could not improve: no MASAF register entry for Isola della Certosa and an iNaturalist search for Populus nigra within 400m returned zero results. Sources describe the poplar only as standing 'in the middle of' the island's wood, no mappable point."
+  },
+  {
+    "id": "ven_006",
+    "latitude": 45.418666,
+    "longitude": 12.357338,
+    "new_precision": "approximate",
+    "evidence": "Checked, could not improve for the olive specifically: one iNaturalist Olea europaea observation (id 264482728, 2025-03-08, CC-BY-NC) sits ~180m away, plausibly across the garden rather than at this tree. The MASAF register entry on this island (sheet 01/L736/VE/05, 45.419783,12.355597) is a different species, a Canary/Cretan palm, not the olive; it corroborates the garden but does not pin the olive itself. Verified separately below as a new candidate."
+  },
+  {
+    "id": "ven_007",
+    "latitude": 45.43851,
+    "longitude": 12.32068,
+    "new_precision": "approximate",
+    "evidence": "Checked, could not improve: the nearest MASAF register tree (Celtis australis, sheet 12/L736/VE/05, Via Santa Croce 297) reverse-geocodes to a pedestrian street ~300m south of the Giardini Papadopoli OSM polygon (which spans 45.4379-45.4390N), outside the garden's own boundary, so it is a different, standalone street tree rather than a match for this ensemble entry. No individual tree in the garden itself is dated or mapped."
+  },
+  {
+    "id": "ven_009",
+    "latitude": 45.433318,
+    "longitude": 12.3208574,
+    "new_precision": "approximate",
+    "evidence": "Checked, could not improve: the same Via Santa Croce 297 register tree sits ~286m away, across the Grand Canal in a different sestiere (Santa Croce vs Dorsoduro), not a match. Ca' Zenobio's garden is a private ensemble planting with no individual tree dated or mapped; pin stays at the building/garden's own OSM relation centroid."
+  },
+  {
+    "id": "ven_010",
+    "latitude": 45.47387,
+    "longitude": 12.26314,
+    "new_precision": "approximate",
+    "evidence": "Checked, could not improve: entry describes century-old trees scattered across the fort's parade grounds and ramparts, not one specimen. The nearby MASAF register entries (Forte Gazzera, Parco Villa Ceresa, Parco Villa Querini) are all a different fort/park roughly 3-5km away, not Forte Marghera itself, so no register match exists."
+  }
+]

@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Athens' ancient trees free to visit?",
-      "a": "Eight of the ten are free. The exceptions are the Acropolis's sacred olive, included in the standard Acropolis ticket, and Kaisariani Monastery, which charges a small entry fee."
+      "a": "Eight of the twelve are free. The exceptions are the Acropolis's sacred olive, included in the standard Acropolis ticket, and Kaisariani Monastery, which charges a small entry fee."
     },
     {
       "q": "Why does Athens have so few truly ancient trees compared to other European capitals?",
@@ -127,8 +127,8 @@
       "age_max": 1500,
       "location": {
         "address": "Plateia Megalis tou Genous Scholis, Leoforos Vasilissis Sofias, Athens 11521",
-        "latitude": 37.9764,
-        "longitude": 23.7513,
+        "latitude": 37.9767384,
+        "longitude": 23.7494454,
         "neighbourhood": "Opposite Evangelismos Hospital, near the Hilton"
       },
       "story": "In December 2015, a construction crew dug up an entire mature olive tree in the village of Elaionas, in the hills above Aigio, and drove it more than 200 kilometres to a traffic island in central Athens. The tree wasn't being rescued from age or disease. It stood inside the corridor cleared for a new railway line, and Greece's rail construction authority, ERGOSE, had committed to relocating rather than felling the older olives caught in its path, part of a program that has since moved more than 500 trees out of expropriation zones since 2013. The Agricultural University of Athens assessed this particular specimen at up to fifteen centuries old before the move, old enough to have already been ancient when the Byzantine Empire ruled from Constantinople. It survived the truck journey and a complete change of soil, climate and neighbours, and now stands on a traffic island opposite Evangelismos Hospital, a few steps from the Hilton, doing exactly what it always did: producing shade and, most years, olives. Nothing about its current setting hints at the story behind it. It is easy to walk past a well-kept municipal olive tree without a second look, which is roughly what most passersby here do. The square is unstaffed and open at all hours, a two minute walk from Evangelismos metro station.",
@@ -334,6 +334,64 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "ath_011",
+      "name": "The Washingtonia Palms of the National Garden Entrance",
+      "species": "California Fan Palm (Washingtonia filifera)",
+      "age_estimate": "widely stated as 150+ years; the specific origin story is likely inaccurate",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Main entrance on Vasilissis Amalias Avenue, National Garden of Athens, Athens 10557",
+        "latitude": 37.9724165,
+        "longitude": 23.7352601,
+        "neighbourhood": "Syntagma, west boundary of the National Garden on Vasilissis Amalias Avenue"
+      },
+      "story": "Everyone will tell you Queen Amalia planted these palms herself. The dates do not allow it. Amalia laid out the National Garden between 1838 and 1840, pulling in plants from wherever she could reach, and she was deposed and left Greece for good in 1862. The California fan palm, Washingtonia filifera, did not reach European cultivation until seed arrived at a Belgian nursery around 1876, and the genus was not formally named until 1879, from those Belgian grown plants. That is fourteen years after her exile at the earliest. So the row almost certainly went in later, once the species could be had at all, and her name attached itself the way a founder's name attaches to everything in a garden she founded. None of which makes the palms less worth walking to. Twelve of them, around 25 metres tall, stand in line at the garden's central gate on Vasilissis Amalias Avenue, bare trunked above the traffic of Syntagma, and the European garden heritage network lists them among the garden's defining historic plantings. They are the most photographed planting inside it. Their real age nobody has published: a Washingtonia of that height means many decades of growth, so 100 to 150 years is an honest bracket rather than a measurement. The pin is a documented gate on the correct side of the garden, not a surveyed position on the palms themselves.",
+      "verified_sources": [
+        "https://www.eghn.org/en/national-garden-athens/",
+        "https://globalgardenlab.com/2018/11/10/national-garden-athens-an-ancient-urban-retreat/"
+      ],
+      "access": "Free, National Garden of Athens, open daily",
+      "transport": "Syntagma metro station (Lines 2 and 3), 5-10 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "ath_012",
+      "name": "The Plane Tree of Platanos Square",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "at least a century; called 'centuries-old' by local tradition, no institutional dating found",
+      "age_min": 90,
+      "age_max": 150,
+      "location": {
+        "address": "Small square at Diogenous 4, Plaka, just north of the Roman Agora entrance, Athens 10556",
+        "latitude": 37.9742823,
+        "longitude": 23.7278834,
+        "neighbourhood": "Plaka"
+      },
+      "story": "The taverna took its name from the tree, not the other way round. O Platanos has served under this plane at Diogenous 4 since 1932, and the small Plaka square it stands in is called Platanos, plane tree, because that is what people navigated by. In the 1920s the painters Pericles Byzantios and Pavlos Kalligas and the sculptor Fokion Rokos met in its shade; Henry Miller and Patrick Leigh Fermor both wrote about eating here. Nobody has dated the tree. Local tradition calls it centuries old and every source repeats that phrase without a number, so we are not going to invent one. What can be said is that by 1932 it was already large and distinctive enough for a business to name itself after it, which puts a floor under it: upward of a century is the honest reading, and the rest is tradition. It stands a minute north of the entrance to the Roman Agora, which is a strange thing to sit and think about, because the plane is the tree of Greek public life. It is what Socrates and Phaedrus lie under by the Ilissos in Plato's dialogue, arguing through the heat of the afternoon. This one shades a square where people still argue over lunch. The tables belong to the taverna. The square and the shade do not.",
+      "verified_sources": [
+        "https://www.greekgastronomyguide.gr/en/item/taverna-o-platanos-plaka-athens/",
+        "https://www.hospitalitystories.com/stories/dining-museum-neighbourhood-ancient-greek-gods"
+      ],
+      "access": "Free, public square (a working taverna, O Platanos, places its own tables in the same square, but the square itself is open)",
+      "transport": "Monastiraki metro station (Lines 1, 3), 5 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }

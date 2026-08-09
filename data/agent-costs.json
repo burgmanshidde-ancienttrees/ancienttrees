@@ -558,7 +558,372 @@
         "tokens": 105255,
         "trees": 11,
         "note": "11 stories in one context, 221-246 words each; 5 best_time set honestly, 6 left empty; all recorded source conflicts kept in the prose."
+      },
+      {
+        "target": "photo-queue",
+        "kind": "photo",
+        "tokens": 120164,
+        "trees": 1,
+        "note": "30 images viewed across Dublin, Paris, New York; 1 approved (nyc_011 CC0 iNaturalist, geocoded to the exact corner); dub_005 and par_017 exhausted, recorded in CURATION.md."
+      },
+      {
+        "target": "outreach-contacts",
+        "kind": "scout",
+        "tokens": 124728,
+        "trees": 0,
+        "note": "28 outreach targets: 24 published emails verified on own sites, 4 form-only; monumentaltrees.com Cloudflare-blocked, Milano PEC-only."
+      },
+      {
+        "target": "Amsterdam",
+        "kind": "verify",
+        "tokens": 205734,
+        "trees": 6,
+        "note": "Scouted and licensed the Gemeente bijzondere-bomen register (5827 trees, commercial reuse explicit, saved for reuse); 6 Artis/Hortus trees verified against it plus Bomenstichting guide PDF and oost-online.nl; 3 flagged on date conflicts; ams_011 pin upgraded approximate->confirmed from the register coordinate. Stories pending."
+      },
+      {
+        "target": "Amsterdam",
+        "kind": "write",
+        "tokens": 101931,
+        "trees": 6,
+        "note": "6 Artis/Hortus stories in one context; all 3 recorded date conflicts kept unresolved in the prose; ams_017 pin honestly downgraded to approximate at merge (its own curation note hedged the spot)."
+      },
+      {
+        "target": "Rome",
+        "kind": "verify",
+        "tokens": 136341,
+        "trees": 2,
+        "note": "Most briefed leads were already published (leads file was stale, 4 entries pruned); 2 solidly double-sourced trees delivered (Piazza Perin del Vaga holm oak, Scipioni hackberry); real vitality risk found on the Torlonia stone pine (active safety felling) so it did not ship."
+      },
+      {
+        "target": "London",
+        "kind": "verify",
+        "tokens": 164334,
+        "trees": 2,
+        "note": "First non-ATI central pass: City cluster delivers 2 (St Paul's Churchyard Planes, Amwell Street Fig), both honestly flagged; the real walkable cluster is Mayfair/Westminster, 4 well-documented Great Trees of London leads recorded for a follow-up pass. ATI untouched.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "London",
+        "kind": "verify",
+        "tokens": 139901,
+        "trees": 3,
+        "note": "Pass 2 delivers the Mayfair/Westminster chain: Dorchester Plane, Marylebone Elm (alive per an April 2026 sighting), Embankment Plane, joining lon_004. Abbey Plane held: identity split across three candidate trees, no age source. ATI untouched.",
+        "wasted": 0,
+        "brief_wrong": false
+      },
+      {
+        "target": "London+Rome",
+        "kind": "write",
+        "tokens": 92872,
+        "trees": 7,
+        "note": "7 stories in one context; every London single-source caveat carried in the prose, the Embankment 'tallest in Britain' superlative named as unchecked and dropped; 1 honest best_time of 7."
+      },
+      {
+        "target": "nl-press-contacts",
+        "kind": "scout",
+        "tokens": 88907,
+        "trees": 0,
+        "note": "5/5 NL tip addresses found on the outlets' own pages; Haarlems Dagblad via a 2024 Wayback snapshot, flagged for a manual check before sending."
+      },
+      {
+        "target": "Valencia",
+        "kind": "verify",
+        "tokens": 138404,
+        "trees": 6,
+        "note": "6 named register giants verified (Corts ficus flagged hard on tour-only access, Glorieta I flagged as 55m from El Titan), Palacio de Raga interior blocked as private care home (rule 10); cultural.valencia.es never fetched. Stories pending."
+      },
+      {
+        "target": "Milan",
+        "kind": "verify",
+        "tokens": 145846,
+        "trees": 3,
+        "note": "3 single-sourced register leads upgraded to verified via the Nov-2025 Regione Lombardia press release and an Il Giorno survey; all three join Montanelli/Sempione clusters; comune.milano.it now 403s, blocklisted. Stories pending."
+      },
+      {
+        "target": "Valencia+Milan",
+        "kind": "write",
+        "tokens": 99887,
+        "trees": 9,
+        "note": "9 stories in one context; vlc_012's tour-only access is the story's first sentence, vlc_014 relates itself to El Titan 55m away, zero best_time set and all honestly empty; writer self-caught a hard-rule-9 species split (Caucasian Zelkova -> Caucasian Elm)."
+      },
+      {
+        "target": "Istanbul",
+        "kind": "verify",
+        "tokens": 142432,
+        "trees": 1,
+        "note": "1 verified (Topkapi courtyard plane, ~700-800y, flagged+approximate); the real find is that ist_003/ist_004 already anchor a central pair so one tree completes the first walk; four Sultanahmet legend trees confirmed dead or fabricated and blocked; avrupaanitagaclar.com compromised, blocklisted. Story pending."
+      },
+      {
+        "target": "photo-queue",
+        "kind": "photo",
+        "tokens": 137521,
+        "trees": 1,
+        "note": "35 images viewed across 8 rollout cities; 1 approved (par_010 Buttes-Chaumont sophora, GPS 22m from pin, interpretive panel visible in the set); 82 rejected; 31 trees flagged exhausted: the Commons/iNat sweep is DONE for Paris, Rome, Amsterdam, Barcelona, Seville, Edinburgh, Budapest, Athens; remaining gaps need Flickr CC, municipal sources or readers."
+      },
+      {
+        "target": "Boston",
+        "kind": "verify",
+        "tokens": 144072,
+        "trees": 4,
+        "note": "NEW city clears the floor: Shaw Memorial elms (1772-1812), Peters Hill white oak (cored ~200y), the extinct-in-the-wild Franklinia (accessioned 1905, alive per IDS Oct 2025), Public Garden dawn redwood; the famous lagoon willow caught as collapsed July 2026 and blocked. Stories pending."
+      },
+      {
+        "target": "Washington DC",
+        "kind": "verify",
+        "tokens": 199547,
+        "trees": 6,
+        "note": "NEW city, 6 verified: HALS-documented Union Square pair (Grant Memorial bur oak + Botanic Garden zelkova, both confirmed pins), the original 1912 Tidal Basin cherries, the Jefferson Elm cultivar parent, the champion chestnut oak, one flagged fallen-but-alive witness mulberry; ~18 more HALS witness trees queued as leads. Stories pending."
+      },
+      {
+        "target": "DC+Boston+Chicago+Istanbul",
+        "kind": "write",
+        "tokens": 104714,
+        "trees": 14,
+        "note": "14 stories in one context; the propped witness mulberry, the 1893-fair conflict and the registry's data faults all live in the prose; Chicago's 3 written and parked until tree 4 opens the city; wdc_006 species self-normalized to Caucasian Elm."
+      },
+      {
+        "target": "Chicago",
+        "kind": "verify",
+        "tokens": 123704,
+        "trees": 0,
+        "note": "Fourth-tree hunt: every open lead checked to a documented dead end (Graceland's tour maps are species walks with no ages; Massacre Tree dead since 1894; Lincoln Park's other famous oak dying-as-art); city stays honestly below the floor. One real avenue left: the Illinois Big Tree Register ArcGIS endpoint."
+      },
+      {
+        "target": "Washington DC",
+        "kind": "verify",
+        "tokens": 158427,
+        "trees": 4,
+        "note": "Deepen to 10: Survey Lodge catalpas, Willow Oak Circle (age genuinely unresolved, both theories delivered), FDR cork trees (documented 1962 no-planting-record letter), Arboretum willow oak flagged hard (arborist called it near end of life, last confirmed Aug 2023). www.loc.gov blocklisted, tile.loc.gov workaround recorded."
+      },
+      {
+        "target": "Boston",
+        "kind": "verify",
+        "tokens": 156589,
+        "trees": 2,
+        "note": "Deepen: the original 1948 Hubei-seed dawn redwood and Wilson's 1907 paperbark maple, accession-dated; Common elm and ginkgo leads honestly left unverified (no age source anywhere); Mount Auburn sits on the 30-min boundary and its famous beech turned out to be a 2008 regraft, too young."
+      },
+      {
+        "target": "DC+Boston deepen",
+        "kind": "write",
+        "tokens": 98813,
+        "trees": 6,
+        "note": "Final 6 stories; the near-end-of-life willow oak published per the Zaragoza doctrine with its Aug 2023 date and a reader invitation in the prose; wdc_008 species cleaned to Catalpa sp.; passcheck --pending hardened against dict-shaped research files."
+      },
+      {
+        "target": "Venice",
+        "kind": "verify",
+        "tokens": 118479,
+        "trees": 1,
+        "note": "Pin-honesty pass: all 10 approximate pins checked; 9 are LEGITIMATELY approximate (ensembles and gardens where park-level is the honest ceiling) with reasons recorded, 1 upgraded to confirmed via a 20m iNaturalist geotag; San Servolo palm verified as ven_011 with a register name-oddity flagged for the writer."
+      },
+      {
+        "target": "Copenhagen",
+        "kind": "verify",
+        "tokens": 140238,
+        "trees": 1,
+        "note": "1 flagged ginkgo (1883); the fredninger.dk blood beech caught as felled 2018 while the heritage page still calls it alive; Bispebjerg cherry avenue blocked as non-compact ensemble; 7 leads with dendron.dk as the richest next vein. Central Copenhagen is genuinely thin online."
+      },
+      {
+        "target": "facebook-groups",
+        "kind": "scout",
+        "tokens": 115676,
+        "trees": 0,
+        "note": "9 of 10 groups verified with public sources (NL x3, EN x3, IT/DE x2, 1 explicit do-not-post); counts from snippets and press, two honestly unknown; delivered to data/research/facebook-groups.md."
+      },
+      {
+        "target": "Budapest",
+        "kind": "verify",
+        "tokens": 139162,
+        "trees": 3,
+        "note": "3 verified: Fuveszkert cherry (~250y, predates Hungary's oldest botanical garden), Karolyi mulberry, Szechenyi acacia with the age dispute honestly recorded (1789 legend vs photo-evidence ~120-150y); Varosliget hero plane rejected on alive-now risk (likely the 2020 campfire casualty). Budapest reaches the 8-tree norm."
+      },
+      {
+        "target": "Budapest+Copenhagen+Venice",
+        "kind": "write",
+        "tokens": 93387,
+        "trees": 5,
+        "note": "Final 5 stories of the day; bud_008's age dispute IS the story, cop_005 carries its dated confirmation and the dead-companion contrast, ven_011 renamed to the neutral Palm of San Servolo with the register's own species contradiction stated."
+      },
+      {
+        "target": "us-photos",
+        "kind": "photo",
+        "tokens": 238892,
+        "trees": 1,
+        "note": "16 US trees judged on pixels: 1 approved (Jefferson Elm, identity confirmed against its HALS reference sightline), 1 held (Boston elm, may be one of FOUR old Common elms); the federal PD angle documented as closed: HALS is black-and-white archival, AOC terms are non-commercial."
+      },
+      {
+        "target": "New York",
+        "kind": "verify",
+        "tokens": 145318,
+        "trees": 3,
+        "note": "Brooklyn opens: Green-Wood's second Camperdown elm (registry-confirmed pin), BBG's champion Kansas hawthorn (1912) and Caucasian wingnut (1922); nycgovparks.org soft-blocks (202/empty) and is blocklisted with the Wayback workaround. Stories pending."
+      },
+      {
+        "target": "New York",
+        "kind": "write",
+        "tokens": 85644,
+        "trees": 3,
+        "note": "3 Brooklyn stories; the two Camperdowns told as grafts of one Dundee original, the champion hawthorn against its species ceiling, the wingnut's trunk disagreement kept in the prose. NYC at 16."
+      },
+      {
+        "target": "Baarn",
+        "kind": "verify",
+        "tokens": 167769,
+        "trees": 5,
+        "note": "Hidde's hometown, his explicit off-focus call: 5 verified (Cantonspark dawn redwood + sequoia, Groeneveld tulip grove + copper beech, and the Pekingtuin American oak his tip pointed at, independently confirmed via 2021 Baarnsche Courant coverage of its protective ring); the Kronkelbeuk blocked as gone; Drakensteyn blocked as royal private land."
+      },
+      {
+        "target": "Baarn",
+        "kind": "write",
+        "tokens": 87239,
+        "trees": 5,
+        "note": "Five Baarn stories; the Pekingtuin ring ceremony leads the anchor story, the beech's 1m-height girth caveat and both undated ages hedged in prose; Baarn opens with a 3-tree village walk (Cantonspark to Pekingtuin)."
       }
-    ]
+    ],
+    "2026-08-09": {
+      "runs": [
+        {
+          "target": "Edinburgh",
+          "kind": "verify",
+          "tokens": 95000,
+          "trees": 2,
+          "note": "RBGE cluster deepened 5 to 7 trees (1948 dawn redwood, champion Sorbus hemsleyi); picked up a claim the prior session left unfinished."
+        },
+        {
+          "target": "Berlin",
+          "kind": "verify",
+          "tokens": 55000,
+          "trees": 2,
+          "note": "Pfaueninsel walk deepened 3 to 5 trees (queried the imported register directly for candidates near the cluster, not city centre); found and fixed a live None-Year-Old title bug affecting 3 other published pages along the way."
+        },
+        {
+          "target": "New York",
+          "kind": "verify",
+          "tokens": 95000,
+          "trees": 1,
+          "note": "Central Park walk deepened 4 to 5 trees: delivered the Cedar of Lebanon Grove near Conservatory Water (nyc_017, flagged, single-vs-grove source discrepancy stated honestly), closest addition yet to the Ramble/Mall/CPW cluster; confirmed the Shakespeare Garden mulberry dead and blocked it."
+        },
+        {
+          "target": "Dublin",
+          "kind": "verify",
+          "tokens": 85000,
+          "trees": 6,
+          "note": "National Botanic Gardens cluster: 6 register trees (dawn redwood, Atlas cedar, Caucasian elm, bald cypress, Ailanthus, hybrid Arbutus) delivered around the existing dub_004 yew avenue, all within 200m. New second walk (7 trees, 0.7km/9min); Trinity walk unchanged at 3. Park page written to unblock the 5+ tree park-page gate."
+        },
+        {
+          "target": "Lisbon",
+          "kind": "verify",
+          "tokens": 40000,
+          "trees": 1,
+          "note": "Estrela walk deepened 5 to 6 trees: delivered the Tipuana of Praca Sao Joao Bosco (lis_021, register plus a parish-council pruning article, age flagged single-source), 500m from lis_017 in a genuinely separate garden confusingly also nicknamed 'Parada'. Held back a register-twin pair of 150-year Celtis australis on access grounds (private-looking 'Quintal' address), moved to leads."
+        },
+        {
+          "target": "London",
+          "kind": "verify",
+          "tokens": 147727,
+          "trees": 4,
+          "note": "Flagship depth: Brunswick Square Plane (~1796), Valence Park Holm Oak, Ravenscourt Baobab Plane, Fountain Court Mulberries (jubilee dispute kept); Hardy Tree confirmed dead (felled Dec 2022) and blocked. Stories pending."
+        },
+        {
+          "target": "Chicago",
+          "kind": "verify",
+          "tokens": 123708,
+          "trees": 1,
+          "note": "IBTR ArcGIS endpoint cracked and recorded; chi_004 state-champion Edgebrook boxelder, flagged single-source; Chicago reaches the 4-tree floor."
+        },
+        {
+          "target": "Boston",
+          "kind": "verify",
+          "tokens": 133634,
+          "trees": 2,
+          "note": "1737 Larz Anderson hinoki bonsai (potted, rotation caveat, cycad precedent) and 1878 Sapporo katsuras; Boston at 8, now 6/8 Arboretum, rebalance flagged."
+        },
+        {
+          "target": "Athens",
+          "kind": "verify",
+          "tokens": 189956,
+          "trees": 2,
+          "note": "8/8 pins resolved (1 tightened to the named square, 6 honest ensemble ceilings documented); 2 new trees incl. the Washingtonia palms whose Amalia legend is chronologically impossible and ships AS legend; Overpass timeouts noted."
+        },
+        {
+          "target": "New York",
+          "kind": "verify",
+          "tokens": 109000,
+          "trees": 3,
+          "note": "Reservoir cluster verified (elm, plane, cherries), a genuine second walk 750m end to end, 1.1km from the Ramble cluster; wrote stories and shipped nyc_018-020, wrote the Central Park park-page intro to clear the 7-tree park gate."
+        },
+        {
+          "target": "london+chicago+boston+athens",
+          "kind": "write",
+          "tokens": 98115,
+          "trees": 9,
+          "note": "Nine stories in one context; the 289-year table-top bonsai opener, the impossible Amalia legend told as legend with its arithmetic, two jubilee years and two holm-oak datings kept unresolved. Chicago OPENS at the floor."
+        },
+        {
+          "target": "Baarn",
+          "kind": "verify",
+          "tokens": 185743,
+          "trees": 0,
+          "note": "Calibration pins: the ice-cellar pin was 380-400m off and is now confirmed on the mapped POI; sequoia/dawn redwood moved off the shared park centroid into the pinetum via winter satellite imagery, honestly still approximate; no new trees cleared two sources, per-lead gaps documented for the owner's local knowledge."
+        },
+        {
+          "target": "baarn-photos",
+          "kind": "photo",
+          "tokens": 207503,
+          "trees": 0,
+          "note": "Manual Dutch-term hunt after the zero-candidate API sweep: 40 images viewed as pixels, 0 approved (parks photographed as places, never as trees), all five exhausted with reasons; iNaturalist around Baarn is entirely NC-licensed. The gap is UGC-shaped: the ringed Pekingtuin oak is the most identifiable submission target on the whole site."
+        },
+        {
+          "target": "Washington DC",
+          "kind": "verify",
+          "tokens": 115607,
+          "trees": 0,
+          "note": "Pin pass: 0 of 8 reached confirmed but all 8 now documented; the 1912-cherries pin proven to be the surveyed marker position (honest ceiling); wdc_008 tightened to ~20m; wdc_010 FDR cork trees pin flagged as possibly 185m outside the memorial grounds, follow-up recorded."
+        },
+        {
+          "target": "Copenhagen",
+          "kind": "verify",
+          "tokens": 169851,
+          "trees": 5,
+          "note": "dendron.dk mined: 5 two-sourced trees with tree-level GPS across Assistens Kirkegard and Frederiksberg Have; Copenhagen jumps to 10 and meets the norm; 9 more single-sourced leads banked."
+        },
+        {
+          "target": "Edinburgh",
+          "kind": "verify",
+          "tokens": 158946,
+          "trees": 0,
+          "note": "Pin pass: 0 of 13 upgraded but all documented (2 gained named-bed evidence awaiting coordinates); surfaced that edi_003's confirmed pin rested on forbidden ATI data, now downgraded; lz4.overpass-api.de recorded as the working Overpass mirror."
+        },
+        {
+          "target": "Baarn",
+          "kind": "verify",
+          "tokens": 162030,
+          "trees": 0,
+          "note": "Second-source hunt via RCE, Delpher, cantonspark.nl, IVN: honest zero; RCE structurally omits individual plantings (recorded); the Groeneveld front oak turns out to be an oak GROUP (avenue rows), a collectibility concern flagged; the unlock remains the owner's field panels."
+        },
+        {
+          "target": "Baarn aerial",
+          "kind": "verify",
+          "tokens": 2000,
+          "trees": 0,
+          "note": "Session-direct: PDOK aerial shows the Pekingtuin oak's 2021 ring; pin CONFIRMED at 52.20956,5.29203, standing in the latest annual survey. Hidde's satellite idea, formalized into BRIEF_RESEARCH.md the same hour."
+        },
+        {
+          "target": "Copenhagen",
+          "kind": "write",
+          "tokens": 91968,
+          "trees": 5,
+          "note": "5 Assistens/Frederiksberg stories; every age honestly 'not documented' with girth as the measure; Copenhagen reaches 10 and gains the Assistens walk; writer self-caught the Sycamore naming split."
+        },
+        {
+          "target": "Copenhagen",
+          "kind": "verify",
+          "tokens": 189980,
+          "trees": 3,
+          "note": "MT-test verdict: fully Cloudflare-walled even to polite single fetches, written off as an automated channel; the real find is the Danish Dendrological Society's YEARBOOK archive (1952 PDF corroborates the honey locust to 1941). 3 shipped (incl. the Pacifier Tree), 6 stay leads."
+        }
+      ]
+    }
   }
 }

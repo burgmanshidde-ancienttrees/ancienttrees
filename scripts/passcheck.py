@@ -173,6 +173,14 @@ def centre_from_any_name(arg):
     return None
 
 
+def _research_trees(loaded):
+    """A *-verified.json is an array, but one pass delivered {"trees": [...]}
+    and the pending check crashed instead of reading it. Tolerate both."""
+    if isinstance(loaded, dict):
+        return loaded.get("trees") or []
+    return loaded if isinstance(loaded, list) else []
+
+
 def pending_research():
     """Research files holding trees that are NOT yet published.
 
@@ -192,7 +200,7 @@ def pending_research():
     out = []
     for f in sorted(glob.glob(os.path.join(ROOT, "data", "research", "*-verified.json"))):
         try:
-            rows = json.load(open(f))
+            rows = _research_trees(json.load(open(f)))
         except Exception:
             continue
         unpublished = [t for t in rows if t.get("id") and t["id"] not in live]
@@ -354,11 +362,69 @@ def print_blocklist():
         return
     hosts = json.load(open(bl))["hosts"]
     print("\nHOSTS THAT COST A WINDOW (they are why every fetch gets a hard timeout):")
-    for h, v in sorted(hosts.items(), key=lambda kv: 0 if "hang" in kv[1]["behaviour"] else 1):
-        mark = "!!" if "hang" in v["behaviour"] else "  "
-        print(f" {mark} {h}: {v['behaviour']}. {v['workaround']}")
+    # Two entry schemas exist (the original behaviour/cost/seen fields, and a
+    # 2026-08-08 addition using host/noted/symptom); normalize rather than
+    # pick one, since a third addition should not break this a second time.
+    def desc(v):
+        return v.get("behaviour") or v.get("symptom") or ""
+    for h, v in sorted(hosts.items(), key=lambda kv: 0 if "hang" in desc(kv[1]) else 1):
+        d = desc(v)
+        mark = "!!" if "hang" in d else "  "
+        print(f" {mark} {h}: {d}. {v['workaround']}")
     print("    Every fetch: curl -m 20 (or timeout= on urllib). A hang burns the "
           "window; a refusal costs a second.")
+
+
+def print_archived_notes(slug, place):
+    """What CURATION.md and LOG.md already said about this place, including
+    what has since moved to archive/.
+
+    Hidde, 2026-08-08: "we willen geen bruikbare kennis verwijderen, we moeten
+    slim oordelen wat weg kan en niet." Archiving moves nothing out of
+    existence, but a file nothing reads is lost in practice, and telling runs
+    to remember to grep is exactly the kind of rule this project has watched
+    fail twice. So the grep runs here, automatically, at the one moment the
+    knowledge matters: the brief. Age decides what moves; relevance decides
+    what surfaces.
+    """
+    import re
+    needles = {place.lower(), slug.replace("-", " ").lower()}
+    hits = []
+    files = [os.path.join(ROOT, f) for f in ("CURATION.md", "LOG.md")]
+    files += sorted(glob.glob(os.path.join(ROOT, "archive", "*.md")))
+    for f in files:
+        if not os.path.exists(f):
+            continue
+        rel = os.path.relpath(f, ROOT)
+        heading = ""
+        for line in open(f, encoding="utf-8", errors="ignore"):
+            if line.startswith("## "):
+                heading = line[3:].strip()
+                continue
+            low = line.lower()
+            # Word boundaries, or "cork" matches "Amur cork tree" and the
+            # brief fills with noise the reader learns to skip.
+            if any(re.search(r"\b" + re.escape(n) + r"\b", low)
+                   for n in needles if len(n) > 3):
+                snippet = re.sub(r"\s+", " ", line).strip()
+                hits.append((rel, heading, snippet[:150]))
+    if not hits:
+        return
+    print(f"\nALREADY WRITTEN ABOUT {place.upper()} (newest first, "
+          f"{len(hits)} mention(s); read before repeating a hunt):")
+    seen = set()
+    shown = 0
+    for rel, heading, snippet in hits:
+        if heading in seen:
+            continue
+        seen.add(heading)
+        print(f"  [{rel}] {heading}")
+        print(f"      {snippet}")
+        shown += 1
+        if shown >= 6:
+            break
+    if len(seen) > shown:
+        print(f"  ...and more: grep -ri \"{place}\" CURATION.md LOG.md archive/")
 
 
 def print_leads(slug):
@@ -447,6 +513,7 @@ def brief(arg, live):
         print("  research from zero and budget accordingly.")
 
     print_leads(slug)
+    print_archived_notes(slug, match["city"] if match else arg)
     print_blocklist()
 
     print("\nDISPATCH: paste this whole brief into the 'verify' subagent (.claude/agents/")
