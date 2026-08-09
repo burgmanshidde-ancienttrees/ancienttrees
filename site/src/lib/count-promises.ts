@@ -8,16 +8,32 @@
 // Venice, Lyon, Den Bosch) after being widened - this is an active check,
 // not a dead one, and CLAUDE.md's ratchet says removing it needs Hidde.
 const NUMBER_WORDS: Record<string, number> = Object.fromEntries(
-  "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty"
+  ("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen " +
+    "sixteen seventeen eighteen nineteen twenty twenty-one twenty-two twenty-three twenty-four " +
+    "twenty-five twenty-six twenty-seven twenty-eight twenty-nine thirty")
     .split(" ")
     .map((w, n) => [w, n]),
 );
 // Digits count too, not only spelled-out words. Paris's copy said "15 more"
-// and "23 more" rather than "fifteen more"/"twenty-three more" (twenty-three
-// has no entry above anyway), and a word-only pattern let both go stale
-// unnoticed until a fresh-eyes review caught them by eye (build_site.py,
-// origin/main 0fc4993, REVIEW.md 2026-08-08).
-const N = `\\d+|${Object.keys(NUMBER_WORDS).join("|")}`;
+// and "23 more" rather than "fifteen more"/"twenty-three more", and a
+// word-only pattern let both go stale unnoticed until a fresh-eyes review
+// caught them by eye (build_site.py, origin/main 0fc4993, REVIEW.md
+// 2026-08-08).
+//
+// The compound words above, and the lookbehind below, close a hole the other
+// way. A hyphen is a word boundary, so "twenty-three more" used to match the
+// bare "three more" pattern, and a city with 24 trees whose copy correctly
+// said "twenty-three more" failed the build for a promise it never made.
+// Rome hit this the day it passed twenty. Longest-first ordering matters
+// too: JS alternation takes the first branch that matches, so "twenty-three"
+// has to be offered before "three" or the compound never wins.
+const N = [
+  "\\d+",
+  ...Object.keys(NUMBER_WORDS).sort((a, b) => b.length - a.length),
+].join("|");
+// Not preceded by a word character or a hyphen: the tail of a compound
+// number is never a count of its own.
+const NOT_MID_WORD = "(?<![\\w-])";
 
 const SUMMARY = new Set(["meta_description", "question_meta"]);
 const ALL_COPY = new Set(["intro", "meta_description", "question_meta", "question_answer", "question_context", "faq"]);
@@ -35,15 +51,15 @@ interface PromisePattern {
 // a build.
 const PROMISE: PromisePattern[] = [
   // "Naples's ten most remarkable trees"
-  { rx: new RegExp(`\\b(${N})\\s+(?:most|remarkable)\\b`, "gi"), allowed: (n) => new Set([n]), scope: ALL_COPY },
+  { rx: new RegExp(`${NOT_MID_WORD}(${N})\\s+(?:most|remarkable)\\b`, "gi"), allowed: (n) => new Set([n]), scope: ALL_COPY },
   // "its story, and nine more". One or two trees are named before it. Only
   // in the two summary fields: in body prose "five more planted by the
   // residents" is Bath counting the five planes inside a single entry.
-  { rx: new RegExp(`\\b(${N})\\s+more\\b`, "gi"), allowed: (n) => new Set([n + 1, n + 2]), scope: SUMMARY },
+  { rx: new RegExp(`${NOT_MID_WORD}(${N})\\s+more\\b`, "gi"), allowed: (n) => new Set([n + 1, n + 2]), scope: SUMMARY },
   // "six of the ten trees on this list", "none of these ten need a ticket"
-  { rx: new RegExp(`\\bof the\\s+(${N})\\s+trees?\\b`, "gi"), allowed: (n) => new Set([n]), scope: ALL_COPY },
+  { rx: new RegExp(`\\bof the\\s+${NOT_MID_WORD}(${N})\\s+trees?\\b`, "gi"), allowed: (n) => new Set([n]), scope: ALL_COPY },
   {
-    rx: new RegExp(`\\b(?:these|the)\\s+(${N})\\s+(?:are|is|need|needs|were|was|stand|stands|remain|listed|below)\\b`, "gi"),
+    rx: new RegExp(`\\b(?:these|the)\\s+${NOT_MID_WORD}(${N})\\s+(?:are|is|need|needs|were|was|stand|stands|remain|listed|below)\\b`, "gi"),
     allowed: (n) => new Set([n]),
     scope: ALL_COPY,
   },
@@ -53,7 +69,7 @@ const PROMISE: PromisePattern[] = [
   // so per the ratchet it becomes pattern rather than vigilance. Anchored on
   // trees/are/stand/need so "all five trunks" inside an entry stays legal.
   {
-    rx: new RegExp(`\\ball\\s+(${N})\\s+(?:trees?|are|stand|need|needs|remain)\\b`, "gi"),
+    rx: new RegExp(`\\ball\\s+${NOT_MID_WORD}(${N})\\s+(?:trees?|are|stand|need|needs|remain)\\b`, "gi"),
     allowed: (n) => new Set([n]),
     scope: ALL_COPY,
   },
