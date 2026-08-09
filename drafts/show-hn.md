@@ -71,8 +71,8 @@ registers publish. Nothing here is a secret being exposed."
 **"What's the business model?"** Honest, per the recorded no-forever-promises
 rule: "Nothing is paid today. The content (every tree, story, location) stays
 free and indexable; if it ever earns money it will be convenience features on
-top, an app, offline maps, that kind of thing. No ads, no tracking, no selling
-data, that part is not changing."
+top, an app, offline maps, that kind of thing. Today there are no ads, no
+tracking beyond an anonymous counter, and no selling of data."
 
 **"Why isn't the data open / where's the API?"** "The underlying registers I
 import are open data and credited per tree. Whether to publish our own merged

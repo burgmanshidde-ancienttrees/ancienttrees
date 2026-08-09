@@ -262,3 +262,20 @@ Three flat vector directions (tree rings, oak roundel, ginkgo leaf) were propose
 Painterly per-species icons instead of the current shared silhouettes. Six of Lisbon's ten trees still share one broadleaf shape.
 
 **Needs Hidde:** yes, it is taste work and he asked to do it together.
+
+## Affiliate ticket links: parked with a trigger (Hidde, 2026-08-09)
+
+Hidde proposed ticket-affiliate links on paid-entry trees ("we zouden ze ook
+gewoon kunnen toevoegen en een affiliate linkje"), thought it through in
+session and parked it ("akkoord over de affiliate strategie"). The reasoning,
+so no run relitigates: at current traffic the revenue rounds to zero (5-8%
+commission on a fraction of ~40 weekly visitors), while the trust cost lands
+exactly in the week the Show HN shot and the press mails trade on the site's
+no-ads cleanliness. Building it later costs the same as building it now.
+
+TRIGGER to revisit: structurally above ~1,000 visits/week, or after the
+HN/press wave settles (September at the earliest). Then: a pilot on the five
+biggest paid venues (Kew, Artis, Hortus Amsterdam, Topkapi, Brooklyn Botanic
+Garden) via Tiqets, with rel="sponsored" and a visible one-line disclosure,
+never a detour from a free thing to a paid one. The partner account is
+Hidde's to create (accounts and money are his alone, hard rules 1-2/5).
