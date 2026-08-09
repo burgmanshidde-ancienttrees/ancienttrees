@@ -1,0 +1,173 @@
+{
+ "note": "Wikidata (CC0) individual-tree candidates per city, harvested by scripts/wikidata_harvest.py. Discovery and corroboration feed for verify passes; sitelinked Wikipedia articles are where second sources live.",
+ "cities": {
+  "amsterdam": {
+   "harvested": "2026-08-09",
+   "candidates": []
+  },
+  "baarn": {
+   "harvested": "2026-08-09",
+   "candidates": [
+    {
+     "qid": "Q21083505",
+     "label": "Monumental London plane on the Schimmelpenninckstraat, Amersfoort (NL)",
+     "latitude": 52.159669444,
+     "longitude": 5.385802777,
+     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20141029%20PlataanSchimmelpenninckstr%2002.jpg",
+     "designation": null,
+     "sitelinks": 2,
+     "near_published_m": 8062,
+     "probably_ours": false
+    },
+    {
+     "qid": "Q17191502",
+     "label": "Wilhelminalinde",
+     "latitude": 52.186844,
+     "longitude": 5.293811,
+     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soest%20Wilhelminalinde%208.JPG",
+     "designation": "municipal monument in the Netherlands",
+     "sitelinks": 1,
+     "near_published_m": 2498,
+     "probably_ours": false
+    },
+    {
+     "qid": "Q120531450",
+     "label": "Grensbeuk aan de Appelweg",
+     "latitude": 52.128801,
+     "longitude": 5.360471,
+     "image": null,
+     "designation": null,
+     "sitelinks": 0,
+     "near_published_m": 9855,
+     "probably_ours": false
+    }
+   ]
+  },
+  "london": {
+   "harvested": "2026-08-09",
+   "candidates": [
+    {
+     "qid": "Q134376041",
+     "label": "Fuck Tree",
+     "latitude": 51.564844,
+     "longitude": -0.1863602,
+     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fuck%20tree%20May%202025.jpg",
+     "designation": null,
+     "sitelinks": 8,
+     "near_published_m": 5344,
+     "probably_ours": false
+    },
+    {
+     "qid": "Q60793167",
+     "label": "Bethnal Green mulberry tree",
+     "latitude": 51.532716666,
+     "longitude": -0.049555555,
+     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Detail%20of%20black%20mulberry%20tree%20%28Morus%20nigra%29%20in%20the%20grounds%20of%20the%20former%20London%20Chest%20Hospital%2001.jpg",
+     "designation": null,
+     "sitelinks": 2,
+     "near_published_m": 3587,
+     "probably_ours": false
+    },
+    {
+     "qid": "Q60793167",
+     "label": "Bethnal Green mulberry tree",
+     "latitude": 51.532716666,
+     "longitude": -0.049555555,
+     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Detail%20of%20black%20mulberry%20tree%20%28Morus%20nigra%29%20in%20the%20grounds%20of%20the%20former%20London%20Chest%20Hospital%2002.jpg",
+     "designation": null,
+     "sitelinks": 2,
+     "near_published_m": 3587,
+     "probably_ours": false
+    },
+    {
+     "qid": "Q30512326",
+     "label": "Fulham Palace Oak",
+     "latitude": 51.4695076,
+     "longitude": -0.2148912,
+     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fulham%20Palace%20Oak%20%282%29.jpg",
+     "designation": null,
+     "sitelinks": 1,
+     "near_published_m": 103,
+     "probably_ours": false
+    },
+    {
+     "qid": "Q138661317",
+     "label": "Wood Street plane tree",
+     "latitude": 51.5144001,
+     "longitude": -0.0948418,
+     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cheapside%20plane%20tree.jpg",
+     "designation": null,
+     "sitelinks": 1,
+     "near_published_m": 158,
+     "probably_ours": false
+    },
+    {
+     "qid": "Q126427051",
+     "label": "Kew Gardens Pagoda tree",
+     "latitude": 51.481838746,
+     "longitude": -0.291793033,
+     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/At%20Royal%20Botanic%20Gardens%2C%20Kew%202024%20056.jpg",
+     "designation": null,
+     "sitelinks": 1,
+     "near_published_m": 437,
+     "probably_ours": false
+    },
+    {
+     "qid": "Q138662900",
+     "label": "Charing Cross station forecourt Oak",
+     "latitude": 51.50851,
+     "longitude": -0.12533,
+     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/At%20London%202025%20378.jpg",
+     "designation": null,
+     "sitelinks": 1,
+     "near_published_m": 437,
+     "probably_ours": false
+    },
+    {
+     "qid": "Q115933929",
+     "label": "Hardy Tree",
+     "latitude": 51.535111111,
+     "longitude": -0.12975,
+     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2780theHardyTreeOldStPancrasChurchyard.jpg",
+     "designation": null,
+     "sitelinks": 1,
+     "near_published_m": 1329,
+     "probably_ours": false
+    },
+    {
+     "qid": "Q140133759",
+     "label": "Hardy Tree",
+     "latitude": 51.535142,
+     "longitude": -0.129713,
+     "image": null,
+     "designation": null,
+     "sitelinks": 1,
+     "near_published_m": 1331,
+     "probably_ours": false
+    },
+    {
+     "qid": "Q104536473",
+     "label": "Happy Man Tree",
+     "latitude": 51.572083333,
+     "longitude": -0.090166666,
+     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Happy%20Man%20Tree%2C%20Hackney%2C%20London%2C%20England%20%28August%202020%29.png",
+     "designation": null,
+     "sitelinks": 1,
+     "near_published_m": 4874,
+     "probably_ours": false
+    },
+    {
+     "qid": "Q120400850",
+     "label": "Peace, tree sculpture",
+     "latitude": 51.4964,
+     "longitude": -0.1078,
+     "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tree%20Sculpture%20for%20Peace%20carved%20by%20Morganico%20-%2052745485622.jpg",
+     "designation": null,
+     "sitelinks": 0,
+     "near_published_m": 1421,
+     "probably_ours": false
+    }
+   ]
+  }
+ }
+}

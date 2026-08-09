@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ist_012",
+    "name": "The Gülhane London Plane",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 285 years",
+    "age_min": 270,
+    "age_max": 300,
+    "location": {
+      "address": "Gülhane Park, Cankurtaran, Fatih, Istanbul",
+      "latitude": 41.012912,
+      "longitude": 28.979474,
+      "neighbourhood": "Gülhane Park, Cankurtaran, Fatih"
+    },
+    "verified_sources": [
+      "https://services5.arcgis.com/26ObnytmBZ58Wbj8/arcgis/rest/services/turkiye_anit_agaclari/FeatureServer/0/query?where=OBJECTID=398&outFields=*&f=json (Turkiye Anit Agaclari national monumental-tree registry, OBJECTID 398)",
+      "https://www.konusanagac.com/ozel-agac/83/londra-cinari-gulhane-parki-platanus-acerifolia.html (Istanbul Metropolitan Municipality Parks, Gardens and Green Areas Dept., 'Konusan Agaclar' individually-named-tree project)"
+    ],
+    "access": "Free, inside Gulhane Park (open daily, standard park hours, no ticket)",
+    "transport": "Gulhane tram stop (T1 line) at the park's Sarayburnu-side gate, immediate walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two official sources agree closely: the national ArcGIS registry (turkiye_anit_agaclari, OBJECTID 398) records height 33m, trunk diameter 170cm, age 277 years; IBB's own Konusan Agaclar municipal project publishes a dedicated page for this exact tree with the identical 33m/170cm figures and states it has stood in Gulhane Park 'since 1741'. 1741 + 277 = 2018, so both figures trace to the same circa-2018 survey rather than being fully independent re-measurements; still two separately published official sources (national registry + Istanbul Metropolitan Municipality) agreeing on species, size and location, which is stronger than either alone. Adding roughly 8 years since that survey gives ~285 today. Flagged rather than clean-confirmed only because I could not find a fully independent (non-shared-survey) third source in this pass. Species caution: the registry's Turkish-name-to-Latin pairing 'Londra Cinari/Platanus acerifolia' has been shown elsewhere in this city's own data (ist_001, ist_002) to be misapplied to Oriental Planes far too old to be the London Plane hybrid (which only originated c.1670, capping a real specimen near 350 years). This tree's age of roughly 285 years is well within that cap, so the London Plane identification is plausible here, unlike those older cases; not proven by a photo or independent botanical ID, so keep flagged. Part of a genuine walkable cluster: sits about 550m from the already-published Taslı Cinar (ist_004) and about 350m from the Topkapi Palace Courtyard Plane (ist_011), all inside Gulhane Park/Topkapi grounds.",
+    "photo": {"url": null, "license": null, "attribution": null, "status": "missing"}
+  },
+  {
+    "id": "ist_013",
+    "name": "The Gülhane Nettle Tree",
+    "species": "European Nettle Tree (Celtis australis)",
+    "age_estimate": "roughly 265 years",
+    "age_min": 250,
+    "age_max": 280,
+    "location": {
+      "address": "Gülhane Park, Cankurtaran, Fatih, Istanbul",
+      "latitude": 41.012756,
+      "longitude": 28.979952,
+      "neighbourhood": "Gülhane Park, Cankurtaran, Fatih"
+    },
+    "verified_sources": [
+      "https://services5.arcgis.com/26ObnytmBZ58Wbj8/arcgis/rest/services/turkiye_anit_agaclari/FeatureServer/0/query?where=OBJECTID=400&outFields=*&f=json (Turkiye Anit Agaclari national monumental-tree registry, OBJECTID 400)",
+      "https://www.konusanagac.com/ozel-agac/81/citlenbik-gulhane-parki-celtis-australis.html (Istanbul Metropolitan Municipality Parks, Gardens and Green Areas Dept., 'Konusan Agaclar' individually-named-tree project)"
+    ],
+    "access": "Free, inside Gulhane Park (open daily, standard park hours, no ticket)",
+    "transport": "Gulhane tram stop (T1 line) at the park's Sarayburnu-side gate, short walk within the park",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Same corroboration pattern as ist_012, about 40m away in the same park: the national registry (OBJECTID 400) records height 23m, trunk diameter 145cm, age 259 years; IBB's Konusan Agaclar project publishes a dedicated page for this specific tree with matching 23m/145cm figures and says it has stood in Gulhane Park 'since 1759'. 1759 + 259 = 2018, again pointing to a shared circa-2018 survey rather than two fully independent field measurements, so flagged for that reason even though the two sources do not conflict. Adding roughly 8 years gives ~265-267 today. Celtis australis (nettle/hackberry) is a genuinely long-lived, sturdy species in Mediterranean/Anatolian settings, so an age in the 250-300 year range is physically plausible, unlike some of the registry's plane-tree age claims elsewhere. Third of the walkable Gulhane cluster: roughly 40m from ist_012 (Gulhane London Plane), about 500m from the Taslı Cinar (ist_004), about 300m from the Topkapi Palace Courtyard Plane (ist_011).",
+    "photo": {"url": null, "license": null, "attribution": null, "status": "missing"}
+  }
+]
