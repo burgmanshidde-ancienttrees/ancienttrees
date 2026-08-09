@@ -796,6 +796,13 @@
           "tokens": 55000,
           "trees": 2,
           "note": "Pfaueninsel walk deepened 3 to 5 trees (queried the imported register directly for candidates near the cluster, not city centre); found and fixed a live None-Year-Old title bug affecting 3 other published pages along the way."
+        },
+        {
+          "target": "New York",
+          "kind": "verify",
+          "tokens": 95000,
+          "trees": 1,
+          "note": "Central Park walk deepened 4 to 5 trees: delivered the Cedar of Lebanon Grove near Conservatory Water (nyc_017, flagged, single-vs-grove source discrepancy stated honestly), closest addition yet to the Ramble/Mall/CPW cluster; confirmed the Shakespeare Garden mulberry dead and blocked it."
         }
       ]
     }

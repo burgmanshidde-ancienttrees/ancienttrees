@@ -8279,6 +8279,22 @@
    "sources": 2
   },
   {
+   "id": "nyc_017",
+   "tier": "highlighted",
+   "name": "The Cedar of Lebanon Grove near Conservatory Water",
+   "species": "Cedar of Lebanon (Cedrus libani)",
+   "city": "New York",
+   "country": "United States",
+   "lat": 40.77418,
+   "lng": -73.96747,
+   "precision": "approximate",
+   "age_min": 30,
+   "age_max": 60,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 2
+  },
+  {
    "id": "nce_001",
    "tier": "highlighted",
    "name": "The Olive Grove of the Cimiez Monastery Garden",
@@ -323469,22 +323485,6 @@
   {
    "id": "lead_unknown_006",
    "tier": "lead",
-   "name": "Cedar of Lebanon near Conservatory Water (72nd Street entrance)",
-   "species": "Cedar of Lebanon (Cedrus libani)",
-   "city": "",
-   "country": "",
-   "lat": null,
-   "lng": null,
-   "precision": null,
-   "reason": "",
-   "note": "",
-   "has_photo": false,
-   "has_story": false,
-   "sources": 0
-  },
-  {
-   "id": "lead_unknown_007",
-   "tier": "lead",
    "name": "Common Pawpaw of the Plant Family Collection, Brooklyn Botanic Garden",
    "species": "Common Pawpaw (Asimina triloba)",
    "city": "",
@@ -323499,7 +323499,7 @@
    "sources": 0
   },
   {
-   "id": "lead_unknown_008",
+   "id": "lead_unknown_007",
    "tier": "lead",
    "name": "English Elm, Fort Greene Park",
    "species": "English Elm (Ulmus procera)",
