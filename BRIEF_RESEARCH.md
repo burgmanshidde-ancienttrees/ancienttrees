@@ -117,3 +117,28 @@ Report what you have after roughly 40 minutes; do not run to completeness.
 Never hold a whole city back on your own judgement: deliver what verifies,
 record the rest. With your report, return the filled-in cost line your brief
 asks for (your total token usage), so the daily retro can price the pass.
+
+## Aerial imagery as evidence (standing tool, Hidde's idea, 2026-08-09)
+
+Openly licensed aerial imagery is a legitimate source for three things, and
+only three:
+1. **Position**, when the tree is individually identifiable: a distinctive
+   crown (the only evergreen giant in a bare winter park), a documented
+   structure at the trunk (Baarn's Pekingtuin oak was CONFIRMED because its
+   ~6m protective ring is visible in the national aerial survey), a lone tree
+   in a plaza. "A big crown roughly where the park is" identifies nothing.
+2. **Continued presence**, when the imagery is DATED and recent: a standing
+   crown in this year's national survey is real evidence; undated commercial
+   basemaps prove nothing about today.
+3. **Absence**: a stump or bare gap where a documented large crown should be
+   is a strong death signal worth chasing in news sources.
+
+What imagery can NEVER do: species, age, or "alive today" from undated or
+stale layers. It is one source among the two, never both.
+
+Where to look, in order: national open orthophoto programmes, which are dated
+and licensed (Netherlands: PDOK Actueel_orthoHR WMS, 7.5cm, yearly; France:
+IGN; Spain: PNOA; Denmark and others have equivalents); then Esri World
+Imagery (check the capture-date metadata per tile area). Google Maps/Earth
+tiles are ToS-restricted for automated fetching: do not scrape them.
+Always cite the imagery source and its capture vintage in the evidence.

@@ -35,7 +35,7 @@
       "name": "Giant plane tree, Assistens Kirkegaard",
       "species": "London Plane or Oriental Plane (Platanus sp., not confirmed)",
       "location_hint": "on a lawn somewhere in Assistens Kirkegaard, Norrebro",
-      "reason": "Multiple thin search-summary mentions of 'a preserved giant plane tree, possibly Denmark's largest' at Assistens Kirkegaard, also referenced as having 'iconic tree' status under Copenhagen's tree designation programme, but every page actually fetched this pass (kk.dk cemetery page, storyhunt.io guide) turned out to contain no tree detail at all when read directly, only the search engine's own AI summary asserted it. This is a real, promising lead (the cemetery is 500m-1km from the existing Botanisk Have/Kongens Have cluster, and holds Andersen's and Kierkegaard's graves) but needs a primary source located and fetched directly, not just a search summary, before verification. Do not treat the 'possibly Denmark's largest' claim as sourced; it was never traced to an origin this pass."
+      "reason": "Multiple thin search-summary mentions of 'a preserved giant plane tree, possibly Denmark's largest' at Assistens Kirkegaard, also referenced as having 'iconic tree' status under Copenhagen's tree designation programme, but every page actually fetched this pass (kk.dk cemetery page, storyhunt.io guide) turned out to contain no tree detail at all when read directly, only the search engine's own AI summary asserted it. This is a real, promising lead (the cemetery is 500m-1km from the existing Botanisk Have/Kongens Have cluster, and holds Andersen's and Kierkegaard's graves) but needs a primary source located and fetched directly, not just a search summary, before verification. Do not treat the 'possibly Denmark's largest' claim as sourced; it was never traced to an origin this pass. UPDATE 2026-08-09: worked dendron.dk's full Assistens register (12 entries, IDs 1467-1478) this pass; no Platanus entry exists there. If this tree is real it is not in the Danish Dendrological Society's survey, so the lead still needs a different primary source (a Kobenhavns Kommune tree register or a direct site visit), not another web sweep."
     },
     {
       "name": "Kastellet ramparts trees (elm, linden, horse chestnut)",
@@ -53,6 +53,36 @@
     {
       "name": "cop_005 date confirmation route",
       "why": "haven@plen.ku.dk (the university garden) is the named route to firm up the 1883 date and current status of the Temple Tree ginkgo."
+    },
+    {
+      "name": "Knudebøgen (Copper Beech), Assistens Kirkegård afd. A (dendron.dk Individual_ID=1470)",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "location_hint": "Assistens Kirkegård, NW corner of section A, near the wall between A and B+C, GPS 55.69106 12.55339 per dendron.dk",
+      "reason": "Danish Dendrological Society register only (Hans Erik Lund, 26-11-2019: alive, 3.45m circumference, 'voldsomme deformationer ved det oprindelige podested' / severe deformation at the original graft site). No second independent source found this pass despite searching web, fredninger.dk, trap.lex.dk and bennyfriisgunno.dk/assistens/planter.htm (which covers Assistens plantings in detail but does not mention a copper beech). Single-sourced, otherwise a strong candidate (visually striking graft deformation)."
+    },
+    {
+      "name": "Ceder (true cedar, Cedrus sp.), Assistens Kirkegård afd. A/B border (dendron.dk Individual_ID=1471)",
+      "species": "Cedar (Cedrus sp., species not specified by the register)",
+      "location_hint": "Assistens Kirkegård, 60m from Nørrebrogade, 10m from the wall between afd. A and B+C, GPS 55.69076 12.55274",
+      "reason": "Register only (2.52m circumference, alive/healthy, 2019). bennyfriisgunno.dk separately describes a 'Flodceder' (identified there as Thuja plicata / Western Redcedar, not a true Cedrus) near the Monkey Puzzle Tree in section A, which may or may not be this same specimen; the species names conflict (true cedar vs. redcedar) so this pass did not treat it as a confirmed second source rather than risk merging two different trees. Needs a site-specific check before either verifying or discarding the Thuja-cedar as a separate entry."
+    },
+    {
+      "name": "Skyrækker (Tree of Heaven), Assistens Kirkegård afd. F (dendron.dk Individual_ID=1474)",
+      "species": "Tree of Heaven (Ailanthus altissima)",
+      "location_hint": "Assistens Kirkegård, roughly centre of section F's north field, near Nørrebrogade/the station area, GPS 55.69296 12.55018",
+      "reason": "Register (2019) rates it 'levende, svag' (alive but weak) with 'kraftig barkafskrabning ved roden' (severe bark scraping at the root), despite being the tallest/largest-girth exotic in the Assistens cluster (15.5m, 4.01m circumference) and carrying the evocative Danish name Skyrækker ('sky-reacher'). bennyfriisgunno.dk lists Skyrækker among the cemetery's notable exotic trees in passing but gives no location detail to confirm it is this specific specimen. Held back on the weak-vitality flag and thin second source rather than published; worth a fresh vitality check before use."
+    },
+    {
+      "name": "Magnolie, Sølvløn, Gul fyr, Vortebirk, Tretorn, Nøddetaks (Japanese Nutmeg-yew), Assistens Kirkegård",
+      "species": "mixed (Magnolia sp.; Acer saccharinum, Silver Maple; Pinus ponderosa, Ponderosa Pine; Betula pendula, Silver Birch; Gleditsia triacanthos, Honey Locust; Torreya nucifera, Japanese Nutmeg-yew)",
+      "location_hint": "all within Assistens Kirkegård, GPS given per-tree by dendron.dk (Individual_ID 1478, 1473, 1472, 1469, 1476, 1475)",
+      "reason": "All six are in the Danish Dendrological Society's register (Hans Erik Lund, 26-11-2019, GPS-verified, all alive/healthy) but no second independent source was found for any of them this pass, and none stood out as more remarkable than the three Assistens trees that did clear the bar (cop_006 to cop_008). Kept as leads rather than chased individually given the 40-minute window; the register entries alone are enough for a future pass to pick up quickly."
+    },
+    {
+      "name": "Frederiksberg Have remainder: Navr, Ær (x2), Avnbøg (Suttetræet) (dendron.dk Individual_ID 836, 838, 840, 841, 842)",
+      "species": "mixed (Acer campestre, Field Maple; Acer pseudoplatanus x2, Sycamore Maple; Carpinus betulus x2, Hornbeam, one nicknamed 'Suttetræet')",
+      "location_hint": "all within Frederiksberg Have, GPS given per-tree by dendron.dk",
+      "reason": "Danish Dendrological Society register only (Hans Erik Lund, 12-10-2016, all alive), smaller girths than the two Frederiksberg Have trees delivered this pass (cop_009 the beech, cop_010 the oak). Same general corroboration available (fredninger.dk's Frederiksberg Have guide confirms hornbeam and maple as garden species) but not chased individually given the time budget. A future pass could extend this cluster past two trees using the same method."
     }
   ],
   "blocked": [
