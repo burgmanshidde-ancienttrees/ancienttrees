@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ath_004",
+    "latitude": 37.9767384,
+    "longitude": 23.7494454,
+    "new_precision": "approximate",
+    "evidence": "Improved, still approximate. The city file's pin (37.9764,23.7513) was an estimate; the actual named square is mapped in OSM as a distinct polygon, 'Πλατεία Μεγάλης του Γένους Σχολής' (way 132626748, Wikidata Q81033801), centroid 37.9767384,23.7494454, about 170m from the old pin. Moved to the documented square. Stays approximate rather than confirmed: no tree node is individually mapped inside the square (checked, 80m radius, zero natural=tree nodes returned by Overpass), and the Commons photo used on this entry (A_fifteen_centuries_old,_olive_tree_in_Athens.jpg) carries no embedded coordinates. This is square-level precision backed by a named, sourced polygon, not tree-level."
+  },
+  {
+    "id": "ath_010",
+    "latitude": 38.0028739,
+    "longitude": 23.735224,
+    "new_precision": "approximate",
+    "evidence": "Could not improve beyond the existing pin; verified it is already the best achievable. The Greek Tree Registry's own listing gives the address as 'Ι. Δροσοπούλου 103 (μεταξύ Λέλας Καραγιάννη και Θάσου)' (Iasonos Drosopoulou 103, between Lela Karagianni and Thassou streets), fetched directly from filoiparkon.org's live registry table. Reverse-geocoding the existing pin (Nominatim) confirms it sits exactly on building 103, Ioannou Drosopoulou street, matching the registry address precisely. Overpass search for natural=tree nodes within 100m returned zero results, so no individually mapped tree node exists to tighten further. The tree stands on the pavement outside a specific building, which is genuinely street-address precision, not tree-crown precision; without a geotagged photo or satellite-visible crown check this is the honest ceiling. Stays approximate."
+  },
+  {
+    "id": "ath_003",
+    "latitude": 37.991368,
+    "longitude": 23.708381,
+    "new_precision": "approximate",
+    "evidence": "Could not improve. Akadimia Platonos Archaeological Park spans multiple excavated building foundations (gymnasium, peristyle house, etc.) across several thousand square metres. No source found (oliveoiltimes.com is JS-rendered and unreadable via plain fetch; platosacademy.org gives site history, not an in-park position) states where inside the park the regrown olive stands relative to the ruins. A prior pass already tightened this to the park's own geocoded boundary via Nominatim (from a cruder ~360m-off estimate) and correctly declined to use a differently-located 'Plato's olive tree' Greek Wikipedia entry for a separate legend site at Sacred Way 89-91. That reasoning still holds. Park-level is the honest ceiling without a site visit or a source that names the tree's position within the ruins."
+  },
+  {
+    "id": "ath_005",
+    "latitude": 37.9744,
+    "longitude": 23.7367,
+    "new_precision": "approximate",
+    "evidence": "Could not improve. The National Garden of Athens covers roughly 15.5 hectares of paths; the only two sources for this tree (an Athens Nature Journal blog post and the European Garden Heritage Network's general garden page) describe it only as being 'among the garden's quieter paths, away from the pond and small zoo', with no path name, section name or coordinate. Queried Overpass for natural=tree nodes within 350m tagged as ilex/holm oak specifically: 116 unnamed tree nodes returned, none carrying a species or taxon tag distinguishing an individual holm oak from any other broadleaved tree in the garden, so there is no way to identify which node (if any) is this specific specimen. Garden-level is the honest ceiling; a future pass could improve this only by finding a National Garden path map or plant inventory that names this individual tree's location, which was not found this pass."
+  },
+  {
+    "id": "ath_006",
+    "latitude": 37.9631,
+    "longitude": 23.7351,
+    "new_precision": "approximate",
+    "evidence": "Legitimately approximate, not a gap to chase further. This is an ensemble entry by design (\"the cypresses around its edges\"), not one tree: the story and verify_notes both say no individual specimen has a published age or position. The First Cemetery covers about 24 hectares. Noted for the record: the Commons photo actually used on this entry carries a geotag (37.9647, 23.7355, the entrance pavilion) about 180m from the current pin, but moving to that point would misrepresent an edge-planted ensemble as if it were one identifiable tree at the gate, which is not what the entry describes. Leaving the pin at its existing representative point inside the grounds is the more honest choice for an ensemble than anchoring on the entrance photo."
+  },
+  {
+    "id": "ath_007",
+    "latitude": 37.9698,
+    "longitude": 23.7364,
+    "new_precision": "approximate",
+    "evidence": "Legitimately approximate. Explicitly a mixed-generation avenue of near-200 planted trees across the whole Zappeion Gardens, per the entry's own story and notes ('most of the original 1857 trees have since been replaced'). No source names or locates an individual specimen. Garden-level is the correct and final precision for this entry; there is no single tree to pin more tightly, and treating one arbitrary tree in the avenue as 'the' pin would misrepresent the entry."
+  },
+  {
+    "id": "ath_008",
+    "latitude": 37.9701,
+    "longitude": 23.7196,
+    "new_precision": "approximate",
+    "evidence": "Legitimately approximate. The entry is explicitly the whole Pikionis-designed olive woodland across Filopappou Hill, hundreds of trees planted 1954-1957 across the hillside, already reasoned in the existing notes as 'the same reasoning as Kew's Old Lions'. No individual tree is named or measured in either source (documenta14.de, tarn.studio). Hill-level is correct; there is no single collectible point to tighten toward without contradicting what the entry itself describes."
+  },
+  {
+    "id": "ath_009",
+    "latitude": 38.0745,
+    "longitude": 23.8191,
+    "new_precision": "approximate",
+    "evidence": "Legitimately approximate. The entry describes plane trees 'shading the square and its surrounding streets', an ensemble spanning Kefalari Square and adjoining roads in Kifisia, not one dateable or locatable specimen; both sources (athensattica.com, travel.gr) describe the district generally rather than an individual tree. Tried to tighten to a named square polygon via Overpass (search for 'Κεφαλάρι'/'Kefalari' within 2km) and via Nominatim; Overpass main instance was unreachable this pass (repeated connection timeouts after several successful earlier queries, likely rate-limited) and Nominatim returned no matching square feature, only an unrelated charging-station POI. The existing coordinate is a reasonable square-area estimate; square/street-ensemble level is the honest ceiling for this entry regardless, since it describes multiple trees over multiple streets."
+  }
+]
