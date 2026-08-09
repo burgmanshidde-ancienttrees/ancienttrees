@@ -10,6 +10,18 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-09 — Afternoon: 13 stories land across four cities, the Wikidata harvest banks 1,185 candidates, and the site is Astro now
+
+**The publish wave**: London 23, Istanbul 14, Boston 10, Budapest 12, Chicago 6, Copenhagen 13, all live and verified on production. The stories carry the day's honesty highlights: the Inner Temple mulberry with its two-and-a-half-hour weekday window, the Gülhane pair completing Istanbul's central walk, the Longfellow linden with its NPS fair-to-poor condition in the prose, and Budapest's black walnut telling its own decline openly.
+
+**The token-economy reflection became machinery.** Hidde's satellite idea confirmed the Pekingtuin oak from the air (its 2021 ring visible in PDOK's open national survey) and is now a standing tool in BRIEF_RESEARCH.md. His monumentaltrees push got its honest verdict: fully Cloudflare-walled, written off as an automated channel, do-not-mail as a competitor; but the search for alternatives surfaced the Danish Dendrological Society's YEARBOOK archive, which corroborated a tree back to 1941, and the dendro-society playbook is now the recorded pattern for five more countries. And the new `scripts/wikidata_harvest.py` swept all 93 cities via SPARQL at zero AI tokens: **1,318 CC0 tree items, 1,185 new to us, 660 with images**, Berlin (289), Prague (206) and Barcelona (184) the richest. Every future verify pass starts from a pre-loaded candidate list instead of a blank search box.
+
+**The site is Astro now.** The chain workers migrated the renderer and deleted build_site.py mid-day ("Delete the Python renderer now that Astro's deploy cycle is clean"); the ratchet checks survived the port, immediately caught real count-copy staleness across seven cities, and a shared-checkout race between this session and the chain produced an hour of whack-a-mole that ended with two structural fixes: the count-check learned compound numbers ("twenty-three more" no longer matches as "three more"), and a preflight now runs the cheap contract checks before any build. Deploys are green.
+
+**Affiliate: parked with a trigger** (Hidde's call after thinking it through): revisit above ~1,000 visits/week or after the HN/press wave, then a Tiqets pilot on five paid venues with visible disclosure. The Show HN no-ads line stopped promising forever the same hour.
+
+FOR HIDDE: Baarn awaits your field walk (five trees, one now air-confirmed, one with its first photo, thanks to your own identity call on the tulip grove). The mail batch is out, HN is Tuesday, and the machine now has 1,185 pre-vetted candidates to chew through.
+
 ## 2026-08-09 - Fifteen trees across five top-25 cities, and the register layer goes dark
 
 Depth pass on the tourist rollout, five cities deepened in one batch: London 19 to 23, Istanbul 11 to 14, Budapest 8 to 12, Boston 8 to 10, Chicago 4 to 6. Five verification passes ran in parallel, one batched writing pass turned all fifteen into stories in a single context, which is the assembly line working as designed: 62k tokens for fifteen stories against roughly five times that if each city had been written on its own.
