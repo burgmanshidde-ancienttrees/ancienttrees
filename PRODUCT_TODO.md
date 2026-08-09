@@ -137,7 +137,7 @@ DONE 2026-08-01 (built in session, with eyes): Build build_country_page() per Co
 
 The queue a run may draw from when every content rung in CLAUDE.md Step 0 is satisfied. Rules of this lane, and they are strict because a CI run cannot see the page it changes:
 
-- Only reversible work. Every item must leave `python3 scripts/build_site.py` passing with all contracts validated.
+- Only reversible work. Every item must leave `(cd site && npx astro build)` passing with all contracts validated (the Python renderer this once meant, build_site.py, was deleted 2026-08-09).
 - Every item carries a **done when** that a blind run can verify with build output, grep, or a script, not with eyes.
 - No visual-taste work here: no logo, icon art, layout aesthetics or colour changes. Those need a session with eyes (Hidde's, or a browser-equipped session). No hard-list items, ever: no accounts, payments, dependencies, brand, blueprint or tone-of-voice edits.
 - One item per pass, finished and committed before the next. Log in LOG.md. When judgement wobbles, the mandate's three questions decide.

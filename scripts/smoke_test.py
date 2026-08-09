@@ -75,7 +75,7 @@ def main():
               "In CI this is a real failure, locally install Chrome.")
         return 1
     if not (DIST / "index.html").exists():
-        print(f"SMOKE: no build under {DIST}, run build_site.py first")
+        print(f"SMOKE: no build under {DIST}, run (cd site && npx astro build) first")
         return 1
 
     # pick a served city and tree page from what the build produced
