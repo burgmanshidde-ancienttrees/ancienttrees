@@ -34,7 +34,7 @@ import subprocess
 import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import build_site as B  # noqa: E402
+import walk_planning as B  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "data", "walk-routes.json")

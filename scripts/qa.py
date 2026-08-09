@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Post-build QA over site/dist. Runs on every deploy, after build_site.py.
+"""Post-build QA over site/dist. Runs on every deploy, after the Astro build
+(site/, npx astro build; the Python renderer this once followed, build_site.py,
+was deleted 2026-08-09 once the Astro cutover ran a clean deploy cycle).
 
-build_site.py validates what it is ABOUT to write (contracts, lengths,
-script hygiene); this script validates what actually landed on disk, the
-way a browser will meet it. The split matters: build checks catch what the
+The Astro build validates what it is ABOUT to write (contracts, lengths,
+script hygiene, as build-time errors thrown from site/src/lib's ratchet
+checks); this script validates what actually landed on disk, the way a
+browser will meet it. The split matters: build checks catch what the
 generator knows about, this catches what it forgot it was generating.
 
 Checks, all deterministic, no network:
@@ -117,7 +120,7 @@ def main():
     failures = []
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
-        print(f"QA: no pages found under {DIST}, run build_site.py first")
+        print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")
         return 1
 
     for page in pages:

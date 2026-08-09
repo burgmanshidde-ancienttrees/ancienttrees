@@ -231,22 +231,30 @@ that page type:
    it produces no artifact and needs no change here. One commit keeps a
    single clear rollback point and avoids a half-cutover where smoke tests
    one generator's output while deploy ships the other's.
-6. **Delete the Python rendering code** (`render_page` down) only after a
-   full deploy cycle has run clean from Astro. Keep everything above that
-   line (data loading helpers already superseded by Astro's content layer)
-   deletable at the same time; nothing in the research pipeline calls into
-   `build_site.py` for the actual deploy. One thing does still call it,
-   though not as a deploy dependency: `nightly.yml`'s research-agent prompt
-   runs `python3 scripts/build_site.py` as its own self-check that a data
-   edit still builds, and its `allowedTools` only grants `Bash(git:*)` and
-   `Bash(python3:*)`, so it cannot run `npx astro build` as a replacement.
-   Deleting the Python renderer without first updating that prompt (and its
-   allowed tools) leaves the nightly chain instructed to run a script that
-   no longer exists. Do that update in the same pass as step 6, not after.
+6. **Delete the Python rendering code, done 2026-08-09.** `scripts/build_site.py`
+   is gone. Its claim above (nothing in the research pipeline calls into it)
+   turned out to be wrong for one case, found by grepping every script for
+   `import build_site` before deleting rather than trusting the sentence:
+   `scripts/route_walks.py` used `load_cities()` and `plan_walks()` (and
+   their dependencies) to work out which walks need a real routed distance
+   cached in `data/walk-routes.json`, which has nothing to do with page
+   rendering and every reason to survive. That code moved verbatim into
+   `scripts/walk_planning.py`, a new standalone module with no Astro/render
+   dependency; `route_walks.py` now imports from there instead. Nothing else
+   had a real import, only comments in `site/src/` citing
+   `build_site.py:<line>` as where a piece of TS was ported from, which stay
+   as historical provenance (resolvable via git history) rather than being
+   rewritten. `nightly.yml`'s research-agent prompt and `allowedTools`
+   (needed `Bash(npm:*)`/`Bash(npx:*)`, previously only `Bash(git:*)` and
+   `Bash(python3:*)`) were updated in the same commit as the deletion, per
+   the warning this step used to carry: its self-check now runs
+   `(cd site && npm ci && npx astro build)` instead of the Python script.
 
-Each step ships independently and is reversible (`deploy.yml` still points
-at the Python build until step 5), consistent with the "can Hidde undo it"
-test in CLAUDE.md's mandate.
+Each step shipped independently and was reversible until this one (`deploy.yml`
+still pointed at the Python build until step 5's commit); step 6 is the point
+past which reverting means restoring a deleted file from git history rather
+than flipping a config value back, consistent with hard rule 3 treating deleted
+code as recoverable-but-not-costless.
 
 ## Open decisions
 

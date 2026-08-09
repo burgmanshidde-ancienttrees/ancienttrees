@@ -66,6 +66,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # The night run's own self-check builds via Astro now (npx astro
+      # build), and site/package.json demands Node >=22.12 - Vite treats
+      # that floor as a hard failure, not a warning. Without this, the
+      # first run after the Python renderer's deletion fails at its own
+      # self-check on whatever Node the runner image happens to ship.
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
       - name: Run the research workflow from CLAUDE.md
         uses: anthropics/claude-code-action@v1
         env:
@@ -188,8 +200,14 @@ jobs:
             Whatever the work turns out to be: verify against two independent
             sources, follow TONE_OF_VOICE.md and SEO_GEO_BLUEPRINT.md, set
             location_precision on every tree you touch, run
-            python3 scripts/build_site.py to confirm the site still builds and every
-            contract validates, then commit, append to LOG.md, and push.
+            (cd site && npm ci && npx astro build) to confirm the site still
+            builds and every contract validates, then commit, append to
+            LOG.md, and push. The renderer is Astro now (site/), not
+            build_site.py: that file no longer exists, having been deleted
+            once deploy.yml's cutover ran a clean cycle (ARCHITECTURE.md's
+            rollout plan, step 6). scripts/walk_planning.py still holds the
+            city-loading and walk-planning code scripts/route_walks.py
+            needs; nothing else survived the deletion.
 
             Respect every hard rule in CLAUDE.md, including the mandate: the two
             ranked goals, the three question test for anything nobody wrote a rule
@@ -222,7 +240,7 @@ jobs:
               those hours, do not exit: wait for the rolling window to reopen
               and keep working through the night.
           claude_args: |
-            --allowedTools "Bash(git:*),Bash(python3:*),Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+            --allowedTools "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
 
       # Continuous mode. GitHub fires the schedule only a handful of times a day
       # for this repo, so most open usage windows go unused. When a token is
