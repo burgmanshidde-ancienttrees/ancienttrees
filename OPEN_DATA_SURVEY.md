@@ -117,7 +117,7 @@ The register layer (two-layer model, DECISIONS.md 2026-07-29) needs sources that
 **Prefecture detail (verified by download):**
 - **Tokyo: the best source found anywhere so far, now imported (2026-07-30).** 文化財一覧 CSV, licence field literally CC-BY-4.0 (confirmed via the catalog's own `package_show` API, `license_id: CC-BY-4.0`). 248 rows, 35 天然記念物, WITH populated 緯度/経度 columns (all 35). Shift_JIS encoding. **Two access notes for whoever touches this next**: the dataset's own HTML page (catalog.data.metro.tokyo.lg.jp/dataset/...) is behind an AWS WAF bot-challenge and returns empty to a plain fetch; the CKAN API (`/api/3/action/package_show?id=...`) is not, and gave clean JSON including the direct CSV url (`www.opendata.metro.tokyo.lg.jp/suisyoudataset/130001_cultural_property.csv`, note the `www.` and the domain rename from the plain `opendata.metro.tokyo.lg.jp` this file previously recorded, which no longer resolves). **Built `data/registers/tokyo.json`, 28 trees**, filtered from the 35 Natural Monument rows: 3 excluded as non-tree geological designations (a limestone cave, a limestone-outcrop area, a rock dike), 4 more excluded per hard rule 10 because the register's own owner field names a private individual and this dataset doesn't independently confirm public access (left out rather than guessed at, the same "when in doubt, leave it out" discipline layer 1 uses). All 28 kept entries are owned by a religious corporation, a school, a ward/town government or the Metropolitan government itself. Every entry `location_precision: approximate` (register coordinates are institution/address-level, e.g. two trees at the same temple share one lat/long, not individually surveyed). Municipal 保存樹木 CSVs (Mitaka, Suginami, Chofu) also CC BY, not yet imported. **Wired into the explore map the same day**: a second, unclustered GeoJSON source renders as small hollow grey dots (visually quieter than the curated green/gold trees on purpose), each popup stating the required "From the official register, not yet verified by us." label verbatim, no link out (no own page exists). Areas and the designation label were machine-translated to English for the popup (`area_en` added per entry after catching one address-parsing bug: a naive regex first mis-cut 東村山市/Higashimurayama to 東村, fixed before shipping). Confirmed via the built HTML: all 28 register features present in `explore.html`'s embedded GeoJSON, `python3 scripts/qa.py` and `python3 scripts/smoke_test.py` (headless Chrome, asserts the MapLibre canvas actually renders) both green.
 - **Nara: CC BY list, no coordinates.** 県指定文化財一覧 XLSX (pref.nara.lg.jp), 715 properties, 64 天然記念物, town-level addresses only; prefecture deliberately withholds coordinates (same grounds as its P32 opt-out). Treat as a lead list: geocode only what is clearly public and signposted, per hard rule 10. Nara City's own CSV is name-only, near-useless.
-- **Kyoto: effectively no itemized open data.** The prefectural cultural-property DB lives inside a GIS with no export and no open licence (all-rights-reserved by default); Kyoto City's portal has zero cultural-property datasets. Kyoto register data = verification-only source, like monumentaltrees.
+- **Kyoto: effectively no itemized open data.** The prefectural cultural-property DB lives inside a GIS with no export and no open licence (all-rights-reserved by default); Kyoto City's portal has zero cultural-property datasets. Kyoto register data = verification-only source, like monumentaltrees. **Extended and confirmed 2026-08-10 against a specific, much better source than the prefectural DB: Kyoto City's own 区民の誇りの木 register, 901 designated trees across all 11 wards, DISQUALIFIED on licence. Full verdict and proving sentence below, "Kyoto City's 区民の誇りの木".**
 - **Tokyo's municipal 保存樹木/保護指定樹木 CSVs (Mitaka, Suginami), checked by download 2026-07-30: dead ends, a different shape than the national source.** These are a separate, standardized Tokyo-wide template (found via the same CKAN catalog, confirmed CC-BY-4.0), but the template itself doesn't carry what the register layer needs, not a licence or access problem this time. **Mitaka** (`t132047d2024000003`, CSV at `city.mitaka.lg.jp/c_service/111/attached/attach_111873_1.csv`): 90+ individual rows with a per-tree ID and species, but 緯度/経度 (lat/long) and every address field below city-name level are blank for every row checked, no coordinates to import at any precision. **Suginami** (`t131156d2024000003`, CSV at `opendata.metro.tokyo.lg.jp/suginami/131156_suginamiku_hogoshiteijumoku.csv`): worse still, no per-tree ID at all, just a deduplicated list of species names present somewhere in the ward with a designation-status column reading "不明" (unknown) throughout, a species tally rather than individual tree records. Suginami's separate "公園樹木" (park trees) dataset, which sounded more promising since park trees are unambiguously public, turned out to be served through a dynamic wagmap.jp portal endpoint that returns 404 to both a plain fetch and WebFetch, not a static CSV; unresolved rather than confirmed dead, worth a retry with different tooling. **Chofu has no matching dataset in this catalog at all** (a `樹木` search against its organization id, t132080, returns zero results); the 2026-07-30 entry above that flagged it alongside Mitaka/Suginami as "also CC BY, not yet imported" was not itself verified by download and should be treated as superseded by this entry. Net: this specific "municipal 保存樹木 CSV" lead does not extend Tokyo's register beyond the 28 trees already imported; a future pass should not re-fetch these same three files expecting coordinates to appear. If Tokyo's register layer grows further, the more promising untried thread is still the national kunishitei/kyoju.biodic backbone below, not more municipal preservation-tree lists.
 - **The "worth a retry" threads left open above, both closed for real 2026-07-30 (same session, later pass).** Queried the Tokyo CKAN catalog's own `package_search` API for every 保護指定樹木 dataset site-wide (not just Mitaka/Suginami/Chofu): it returns 20+ municipalities on the identical standardized template, Setagaya, Chiyoda, Sumida, Toshima, Katsushika, Fuchu, Kunitachi and more, all CC-BY-4.0. Downloaded and checked six of the largest directly (Setagaya 2,895 rows, Toshima 310, Sumida 160, Katsushika 53, Chiyoda 3, plus Mitaka/Suginami already known): every single one has the 緯度/経度 columns present in the header but blank on every row, and the 画像 (image) column empty on every row too, across all six. This generalizes cleanly: the shared template itself structurally omits coordinates and images citywide, not a per-ward gap worth checking ward by ward. **The 公園樹木 (park trees) dataset's separate wagmap.jp portal endpoint was also retried directly this session (both the generic `/suginami/OpenData` listing and the specific `OpenDataDetail?lid=1500&mids=107` resource URL the catalog API itself returns): both 404, confirming the earlier finding rather than reversing it.** Net: this whole family of Tokyo municipal designated-tree CSVs, roughly 20 files, is now confirmed closed; a future register-layer pass should not re-open it, and should go straight to the national kunishitei/kyoju.biodic backbone if it wants to grow Tokyo's register further.
 - **Kyushu/Hokuriku (Ishikawa, Fukuoka, Miyazaki, Kagoshima), scouted 2026-07-30: all four dead ends at the sub-national level, same shape as Kyoto.** Checked both the prefecture and the major city (Kanazawa, Fukuoka, Miyazaki, Kagoshima) in every case, via each area's BODIK ODCS open-data catalog plus its own dedicated cultural-properties site, searching for 天然記念物/巨樹/巨木/名木. None has a downloadable, coordinate-bearing, openly-licensed dataset:
@@ -127,6 +127,95 @@ The register layer (two-layer model, DECISIONS.md 2026-07-29) needs sources that
   - **Kagoshima: plain HTML list; the source itself disclaims currency.** The prefectural board of education's list has no CSV or coordinates, "All Rights Reserved," and the page states outright it does not maintain current information about the monuments, pointing back to individual owners/managers. BODIK catalogs return zero results.
   
   Net: none of the four adds an import candidate; the backbone stays exactly the two national sources above. Treat all four as scouted and closed, same as Kyoto, not "not yet scouted."
+
+## Kyoto City's 区民の誇りの木 (Pride Trees), scouted 2026-08-10: VERDICT DISQUALIFIED on licence
+
+The best-shaped Japanese municipal tree register found so far, and we cannot
+import it. Worth recording in full because the source is genuinely good, the
+temptation to use it will recur, and the "no" is unambiguous.
+
+**What the register is.** 区民の誇りの木 ("trees the ward's residents are proud
+of") is a Kyoto City Construction Bureau (建設局) programme, **not** a Kamigyo
+Ward one: it runs across **all eleven wards** and holds **901 designated trees**,
+numbered in one contiguous citywide sequence. Per-ward, from the id blocks in
+the citywide list: Kita 1-85 (85), **Kamigyo 86-195 (110)**, Sakyo 196-296 (101),
+Nakagyo 297-364 (68), Higashiyama 365-422 (58), Yamashina 423-492 (70), Shimogyo
+493-570 (78), Minami 571-640 (70), Ukyo 641-744 (104), Nishikyo 745-825 (81),
+Fushimi 826-901 (76).
+
+Distribution is a single citywide PDF, `hokorinoki_ichiran_all_2.pdf`
+(1.29 MB, downloads clean, ends in %%EOF, reads fine with pdfminer):
+`https://www.city.kyoto.lg.jp/kensetu/cmsfiles/contents/0000114/114296/hokorinoki_ichiran_all_2.pdf`
+Programme index: `https://www.city.kyoto.lg.jp/kensetu/page/0000019145.html`;
+per-ward index pages under `/kensetu/page/` (Kamigyo's areas A-F at 0000021581
+and 0000021583); the per-tree pages a verification pass found sit under
+`/kamigyo/page/` (e.g. 0000012431, 0000012402, 0000012315, 0000012542).
+
+Columns per tree: 整理番号, 行政区名, エリア (a walk-sized area letter A-F,
+which is a clustering hint the register hands over for free), 番号, 樹種
+(species, katakana), 所在地 (the temple/shrine/park it stands in), 所在地住所
+(address), 樹高 (height, m), 幹周 (girth, m), 科 (family), 分類, 単・群の別
+(single tree vs group, i.e. the collectible-point test pre-answered), その他指定等
+(other designations). **No coordinates and no age field anywhere in the file**
+(緯度/経度/座標/樹齢 all absent), the same two gaps as MASAF and Berlin.
+
+**The licence, read at the primary source and quoted verbatim.** Kyoto City's
+著作権・リンク等 page, `https://www.city.kyoto.lg.jp/main/site_policy/0000000005.html`
+(updated 2026-07-02):
+
+> 「京都市のホームページ「京都市情報館」に掲載している内容（文章、写真、イラストなど）に関する著作権は、原則として京都市に帰属します。」
+>
+> 「当ホームページの内容について、「私的使用のための複製」や「引用」など著作権法上認められた場合を除き、無断で複製・転用することはできません。」
+
+Translation: "Copyright in the content published on Kyoto City's website
+'Kyoto City Information Hall' (text, photographs, illustrations and so on)
+belongs in principle to the City of Kyoto." And: "The content of this website
+may not be reproduced or repurposed without permission, except where copyright
+law allows, such as reproduction for private use or quotation."
+
+That is the whole verdict. No named open licence, no 政府標準利用規約 anywhere on
+the page, no CC, no 二次利用 clause, and the page footer carries
+"(c) City of Kyoto. All rights reserved." An explicit prohibition on 複製・転用
+is stronger than the merely-ambiguous case the Agency for Cultural Affairs
+presents above: this one does not need a judgement call.
+
+**The open-data exception was checked and does not apply.** Kyoto City runs a
+real open data portal, `data.city.kyoto.lg.jp`, whose 京都市オープンデータ利用規約
+（第３版）is per-dataset Creative Commons ("本サイトで公開しているデータは、著作権者
+である京都市が、クリエイティブ・コモンズ・ライセンス等のライセンスのもとで提供して
+います。ライセンスはデータセット毎に付与しています"), and which would have been
+usable had the register been on it. It is not: `search.php?keyword=誇りの木`
+returns zero datasets, as do 樹木 and みどり. Note the portal offers all six CC
+variants including the three NC ones, so even a future dataset there needs its
+own per-dataset licence read rather than an assumption. Two access notes for
+whoever returns: the `/kiyaku` URL that search engines still surface is a 404,
+the terms live at `contents.php?category=0`; and the portal's search is
+`search.php?keyword=<urlencoded>`, not `/search?keyword=`.
+
+**What this source still is, and it is not nothing.** Exactly what the earlier
+Kyoto bullet said, now with a much better document behind it: a
+verification-only source under the same discipline as monumentaltrees.com
+(hard rule 1). A per-tree page or the citywide PDF can confirm that a specific
+tree is officially designated, and confirm its species, height and girth, one
+tree at a time, as one of the two independent sources a curated entry needs.
+What it can never be: a register file in `data/registers/`, a bulk import, or a
+layer-2 dot source. No `kyoto-kamigyo-pride-trees.json` was written, deliberately.
+
+**The path that exists, if Kyoto ever becomes worth it.** The programme sits
+with 建設局 (Construction Bureau) and the ward offices; the open data portal is
+run by a different unit (総合企画局デジタル化戦略推進室 情報統計・データ利活用推進担当,
+075-222-3216) which already publishes under CC. Asking that unit to publish the
+existing 誇りの木 list as an open dataset is a plausible request and a cheap one,
+since the file already exists in tabular form. It is a Hidde-sends-it item like
+the Woodland Trust letter (hard rule 4), and it is not worth drafting until
+Kyoto is worth 901 trees to us, which today it is not.
+
+**The finding worth carrying forward.** A Japanese city having an open data
+portal tells you nothing about whether a given municipal dataset is on it.
+Kyoto's portal is real, CC-based and well run, and the city's single best tree
+register is not in it: it sits on the ordinary CMS under blanket all-rights-
+reserved. Check the portal for the specific dataset before assuming a portal's
+licence covers a document found elsewhere on the same municipality's site.
 
 
 ## The licence-led country scan, 2026-07-30 (verified by download and licence text)
