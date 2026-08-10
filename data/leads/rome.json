@@ -9,8 +9,13 @@
       "species": "Pinus pinea",
       "girth_cm": 410,
       "height_m": 32,
-      "location": { "latitude": 41.912472, "longitude": 12.513417 },
-      "sources": ["MASAF / Lazio 75/H501/RM/12"],
+      "location": {
+        "latitude": 41.912472,
+        "longitude": 12.513417
+      },
+      "sources": [
+        "MASAF / Lazio 75/H501/RM/12"
+      ],
       "why_not_published": "Second tallest tree on Rome's register and a textbook umbrella pine, but register-only: sheet 75 postdates the municipal narrative page. Note that a different Villa Torlonia stone pine, sheet 18, is on the Lazio REMOVED list as dead, so any pass shipping this one must be explicit about which is which. VITALITY RISK RAISED, 2026-08-08 (rom deepen verify pass): press coverage found this pass shows Villa Torlonia's whole tree stock under active safety felling. Il Messaggero/La Capitale (11 Dec 2025) report 19 trees felled after a stability survey rated them 'classe di cedimento D' (highest risk), including 4 Pinus pinea; RomaToday/La Capitale describe further urgent fellings continuing into 2026 (5 more trees in March 2026, though that batch was palms, an Aleppo pine and a Judas tree, not stone pines). None of the coverage found names which specific stone pines were among the 4 felled in December. The Lazio Nov 2025 xlsx (which is our source for this lead) still listed sheet 75 as active, i.e. before the December felling, so the register cannot settle this either way. Given the confirmed sibling already dead (sheet 18) and 4 more stone pines felled in the same park weeks after our register snapshot, this tree should NOT ship without a specific, dated confirmation that sheet 75 itself is still standing. Not blocked (not confirmed dead), but do not verify from the register alone; needs a targeted post-December-2025 check, ideally the Lazio register's next update or a dated photo/observation."
     },
     {
@@ -18,8 +23,13 @@
       "species": "Celtis australis",
       "girth_cm": 414,
       "height_m": 20,
-      "location": { "latitude": 41.876361, "longitude": 12.502667 },
-      "sources": ["MASAF / Lazio 65/H501/RM/12"],
+      "location": {
+        "latitude": 41.876361,
+        "longitude": 12.502667
+      },
+      "sources": [
+        "MASAF / Lazio 65/H501/RM/12"
+      ],
       "why_not_published": "Register-only. Larger of the pair, registered for size and for particular form and bearing, standing against the Aurelian wall at the corner of Via Latina. CHECKED AGAIN 2026-08-08 (rom deepen verify pass): its twin 120m away (sheet 66, Parco degli Scipioni) now has a second source and shipped as rom_024; this one still does not. The Parco Regionale dell'Appia Antica's own 'alberi di pregio' catalogue (parcoappiaantica.it/il-territorio/alberi-di-pregio-appia-antica/), which independently corroborated the Scipioni tree, lists 13 named trees of value across the whole regional park and does not include a second bagolaro at the Mura Latine/Via Latina corner. RAMI (ilregistrodeglialberi.it) site search returns no matching entry. Genuinely still register-only; do not fold it into rom_024 as a pair since only one of the two is independently corroborated, and folding would overstate what is known about this one."
     },
     {
@@ -27,8 +37,13 @@
       "species": "Brahea armata",
       "girth_cm": 294,
       "height_m": 20,
-      "location": { "latitude": 41.8835, "longitude": 12.464806 },
-      "sources": ["MASAF / Lazio 74/H501/RM/12"],
+      "location": {
+        "latitude": 41.8835,
+        "longitude": 12.464806
+      },
+      "sources": [
+        "MASAF / Lazio 74/H501/RM/12"
+      ],
       "why_not_published": "Register-only, listed for botanical rarity alone. Would make Villa Sciarra a four-tree walk with rom_001, rom_011 and rom_012. Needs one independent source naming this individual palm; general descriptions of the villa's palms are not enough to fix which one. CHECKED AGAIN 2026-08-08 (rom deepen verify pass): comune.roma.it's own monumental-tree narrative page (NWS1195295) covers Villa Sciarra's Ginkgo and Podocarpus but names no palm there; general Brahea armata gardening pages and the Villa Sciarra Wikipedia disambiguation page have nothing on this specific tree. Still a dead end on the second-source hunt.",
       "second_source_attempts_2026-08-08": true
     },
@@ -37,17 +52,27 @@
       "species": "Pinus roxburghii",
       "girth_cm": 297,
       "height_m": 18,
-      "location": { "latitude": 41.884611, "longitude": 12.5235 },
-      "sources": ["MASAF / Lazio 70/H501/RM/12"],
-      "why_not_published": "NEW, spotted 2026-08-08 (rom deepen verify pass) while cross-checking the register against published pins; not previously in this leads file and not part of this pass's briefed candidate list, so left entirely unresearched. Distinct from the published Chir Pine of Colle Oppio (rom_020, sheet 71/H501/RM/12, 41.893528,12.497111): this is a second, separate Pinus roxburghii roughly 2.7km further east/southeast, near no currently published cluster. Needs a from-scratch look: what site it stands on, whether public, and a second source."
+      "location": {
+        "latitude": 41.884611,
+        "longitude": 12.5235
+      },
+      "sources": [
+        "MASAF / Lazio 70/H501/RM/12"
+      ],
+      "why_not_published": "NEW, spotted 2026-08-08 (rom deepen verify pass) while cross-checking the register against published pins; not previously in this leads file and not part of this pass's briefed candidate list, so left entirely unresearched. Distinct from the published Chir Pine of Colle Oppio (rom_020, sheet 71/H501/RM/12, 41.893528,12.497111): this is a second, separate Pinus roxburghii roughly 2.7km further east/southeast, near no currently published cluster. Needs a from-scratch look: what site it stands on, whether public, and a second source. CHECKED AGAIN 2026-08-10 (rom deepen verify pass, pin-fix + cluster-tightening brief): a claimed twin relationship to the published Colle Oppio Chir Pine (rom_020), both attributed to Raffaele De Vico, surfaced repeatedly in web search but could not be corroborated by direct fetch of any of the pages the search cited (Wikipedia IT Villa Fiorelli, sovraintendenzaroma.it Villa Fiorelli page, innamoratidiroma.it Colle Oppio piece); none of the three mention a pine, a twin, or De Vico plus a specific tree. Still register-only. No second source found this pass either."
     },
     {
       "name": "Black Poplar of Via Conca d'Oro",
       "species": "Populus nigra",
       "girth_cm": 405,
       "height_m": null,
-      "location": { "latitude": 41.94131, "longitude": 12.52233 },
-      "sources": ["MASAF / Lazio 62/H501/RM/12"],
+      "location": {
+        "latitude": 41.94131,
+        "longitude": 12.52233
+      },
+      "sources": [
+        "MASAF / Lazio 62/H501/RM/12"
+      ],
       "why_not_published": "Register-only, street corner in Montesacro, no cluster. Black poplars are short-lived and split; vitality would need checking before any pass."
     },
     {
@@ -55,8 +80,14 @@
       "species": "Platanus x acerifolia",
       "girth_cm": 553,
       "height_m": 32,
-      "location": { "latitude": 41.94526, "longitude": 12.53335 },
-      "sources": ["MASAF / Lazio 17/H501/RM/12", "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295"],
+      "location": {
+        "latitude": 41.94526,
+        "longitude": 12.53335
+      },
+      "sources": [
+        "MASAF / Lazio 17/H501/RM/12",
+        "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295"
+      ],
       "why_not_published": "Two sources, clears the bar, but it is a street-corner tree in Montesacro 6km out with nothing near it. Second thickest plane on the register after our rom_013."
     },
     {
@@ -64,8 +95,13 @@
       "species": "Populus nigra",
       "girth_cm": 620,
       "height_m": null,
-      "location": { "latitude": 41.77442, "longitude": 12.43147 },
-      "sources": ["MASAF / Lazio 60/H501/RM/12"],
+      "location": {
+        "latitude": 41.77442,
+        "longitude": 12.43147
+      },
+      "sources": [
+        "MASAF / Lazio 60/H501/RM/12"
+      ],
       "why_not_published": "Third thickest trunk on the Roma register, but the Lazio register's own NOTE says it was burned in a fire in 2025 and asserts its monumental character is unaffected. That is the register's judgement of a tree that caught fire eight months ago, not a vitality check. Far south of the city besides. Needs eyes before it can ever ship."
     },
     {
@@ -73,8 +109,13 @@
       "species": "Quercus ilex",
       "girth_cm": 360,
       "height_m": null,
-      "location": { "latitude": 41.75303, "longitude": 12.43077 },
-      "sources": ["MASAF / Lazio 72/H501/RM/12"],
+      "location": {
+        "latitude": 41.75303,
+        "longitude": 12.43077
+      },
+      "sources": [
+        "MASAF / Lazio 72/H501/RM/12"
+      ],
       "why_not_published": "Register-only. Piazza della Rocca at Ostia Antica, registered for size and for historical value. Roughly 40 minutes by train from the centre, so it fails the 30-minute day-trip boundary for a Rome page and belongs to an Ostia page if one is ever made."
     },
     {
@@ -82,8 +123,13 @@
       "species": "Prunus dulcis",
       "girth_cm": 360,
       "height_m": null,
-      "location": { "latitude": 41.95381, "longitude": 12.53628 },
-      "sources": ["MASAF / Lazio 58 and 59/H501/RM/12"],
+      "location": {
+        "latitude": 41.95381,
+        "longitude": 12.53628
+      },
+      "sources": [
+        "MASAF / Lazio 58 and 59/H501/RM/12"
+      ],
       "why_not_published": "Two registered almonds 90m apart at Via delle Vigne Nuove 280, an address attached to the so-called Villa di Faonte. Register-only, access unverified, and a monumental almond would be a genuine curiosity, so worth checking whether the grounds are public before writing it off. Real February blossom peak if it ever ships. CHECKED 2026-08-08 (rom deepen verify pass): RomaToday reports the Villa di Faonte archaeological park itself reopened to the public after ten years closed ('Villa di Faonte, dopo dieci anni apre il parco: restano sbarrati i casali'), access from Via delle Vigne Nuove and Via del Passo del Turchino, which is encouraging on general access but does not confirm the two specific almond trees are inside the reopened area rather than on an adjacent closed plot, and no second source names the trees themselves. Still needs a dedicated look, not part of this pass's briefed cluster."
     },
     {
@@ -91,8 +137,13 @@
       "species": "Platanus x acerifolia (or hybrid, unconfirmed)",
       "girth_cm": null,
       "height_m": null,
-      "location": { "latitude": 41.9128, "longitude": 12.4830 },
-      "sources": ["https://www.carteinregola.it/o-adesso-o-mai-piu-gli-amici-di-villa-borghese-scrivono-allassessora/ (mentions a deteriorating plane at the Galoppatoio)"],
+      "location": {
+        "latitude": 41.9128,
+        "longitude": 12.483
+      },
+      "sources": [
+        "https://www.carteinregola.it/o-adesso-o-mai-piu-gli-amici-di-villa-borghese-scrivono-allassessora/ (mentions a deteriorating plane at the Galoppatoio)"
+      ],
       "why_not_published": "2026-08-07 verify pass (rom deepen, Villa Borghese cluster). The Amici di Villa Borghese letter names a plane tree at the former Galoppatoio (the old riding ground, now closed and under redevelopment) as declining, but web search turned up a confusing second thread about newly planted trees at the same site being 'dead on their feet' per municipal agronomists, per il Caffe di Roma and Il Messaggero coverage of the Galoppatoio's 2024 closure and sequester. Could not establish within this pass's window whether the 'deteriorating plane' the letter means is an old historic specimen or one of the recent plantings, nor pin coordinates. Vitality and identity both unresolved; needs a dedicated look, not a padded guess."
     },
     {
@@ -100,8 +151,13 @@
       "species": "Quercus ilex",
       "girth_cm": null,
       "height_m": null,
-      "location": { "latitude": 41.9143, "longitude": 12.4820 },
-      "sources": ["https://www.carteinregola.it/o-adesso-o-mai-piu-gli-amici-di-villa-borghese-scrivono-allassessora/ ('lecci cinquecenteschi lungo Viale delle Due Piramidi')"],
+      "location": {
+        "latitude": 41.9143,
+        "longitude": 12.482
+      },
+      "sources": [
+        "https://www.carteinregola.it/o-adesso-o-mai-piu-gli-amici-di-villa-borghese-scrivono-allassessora/ ('lecci cinquecenteschi lungo Viale delle Due Piramidi')"
+      ],
       "why_not_published": "2026-08-07 verify pass. Described only as an avenue of 16th-century holm oaks, not a named individual; likely not a collectible point (an avenue, like the Valle dei Platani group) unless a single standout specimen can be identified. Left as a lead in case a future pass finds one tree singled out."
     },
     {
@@ -109,8 +165,13 @@
       "species": "Quercus ilex",
       "girth_cm": null,
       "height_m": null,
-      "location": { "latitude": 41.9155, "longitude": 12.4855 },
-      "sources": ["roma2pass.it/villa-borghese/alberi/ ('Nel Parco dei Daini numerosi sono gli esemplari distribuiti in maniera ordinata')"],
+      "location": {
+        "latitude": 41.9155,
+        "longitude": 12.4855
+      },
+      "sources": [
+        "roma2pass.it/villa-borghese/alberi/ ('Nel Parco dei Daini numerosi sono gli esemplari distribuiti in maniera ordinata')"
+      ],
       "why_not_published": "2026-08-07 verify pass. Described as numerous holm oaks planted in an ordered layout (deer park), i.e. a planted grove rather than an individual specimen. No single named tree found. Lead only."
     }
   ],

@@ -1007,6 +1007,15 @@
           "note": "Full CC0 Wikidata sweep across all 93 cities via SPARQL (script, zero AI tokens): candidates with coordinates, images and sitelinks per city in data/research/wikidata-candidates.json; feed for every future verify pass."
         }
       ]
-    }
+    },
+    "2026-08-10": [
+      {
+        "target": "rome",
+        "kind": "verify",
+        "tokens": 196425,
+        "trees": 0,
+        "note": "0 new trees (register within reach already mined by prior passes); rom_016 pin upgraded approximate->confirmed via Lazio GIS coordinate plus dated aerial imagery; rom_021/rom_022 checked and honestly left approximate; Lazio removals-sheet cross-check against all 24 published trees found no dead tree live"
+      }
+    ]
   }
 }
