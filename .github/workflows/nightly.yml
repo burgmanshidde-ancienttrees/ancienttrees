@@ -239,9 +239,34 @@ jobs:
               your commit and exit so his conversations get the room. Outside
               those hours, do not exit: wait for the rolling window to reopen
               and keep working through the night.
+          # Widened 2026-08-10 after six consecutive runs produced nothing but
+          # a claim commit. The runs were not dying on the usage limit, which
+          # was the standing assumption: they ended cleanly (is_error false,
+          # subtype success) with permission_denials_count of 17 in eight
+          # minutes. The old list allowed git, python3, npm, npx and cd, and
+          # denied everything else, which is exactly the shape of the damage.
+          # Claiming a city worked (passcheck is python3, the commit is git);
+          # every step after it was refused.
+          #
+          # Three additions, each required by a workflow CLAUDE.md already
+          # mandates and none of them optional:
+          #   Task        the verification and writing passes of Step 1's
+          #               assembly line. Without it a night run cannot
+          #               dispatch a single agent, so the entire researching
+          #               half of its own instructions was unreachable.
+          #   gh run/     Step 0 rung 2 tells a run to check the smoke test
+          #   gh workflow and redispatch stale scheduled workflows. Scoped to
+          #               these two verbs rather than gh:*, which would also
+          #               grant repo and release deletion to an unattended
+          #               job. LOG.md has been recording "gh needs an approval
+          #               that never resolves" as an environment quirk for
+          #               days; it was this list all along.
+          #   curl        source fetching with the hard timeouts CLAUDE.md
+          #               requires (curl -m 20), plus the register downloads.
+          # The read-only file utilities are the ordinary shell a research
+          # pass needs to look at what it just wrote.
           claude_args: |
-            --allowedTools "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
-
+            --allowedTools "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Task,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
       # Continuous mode. GitHub fires the schedule only a handful of times a day
       # for this repo, so most open usage windows go unused. When a token is
       # present this step re-dispatches the workflow at the end of every run, so
