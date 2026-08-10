@@ -13,7 +13,71 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
-## 2026-08-10
+## 2026-08-10 (second pass, ~10:45 UTC, covering commits since this morning's review at 08:30 UTC)
+
+This morning's BLOCKER (`ageToken()`) and WARN (nightly permissions) are both
+fixed, verified in the rebuilt `site/dist` and in the corrected workflow file;
+see the confirmations under each below rather than restating them as new
+findings.
+
+**WARN, FOR HIDDE** — The outreach mail system now live-sends real email under
+Hidde's name at meaningful volume (batch 003, 12 mails, and batch 004, 28
+mails, both today, both `data/outreach-sent.json`-logged with status
+`approved_by_hidde`), and it contradicts CLAUDE.md hard rule 4 as written:
+"Never speak as Hidde, never contact anyone as him. No emails... under his
+name." Batch 004's own bodies open "Mein Name ist Hidde" and are dispatched by
+`scripts/outreach_send.py` over SMTP once a batch's status is flipped to
+`approved_by_hidde`, i.e. the session performs the send action itself, not
+Hidde in his own mail client. `drafts/OUTREACH.md`'s own "De verzendmachine is
+blijvend" section documents this as a deliberate 2026-08-08/09 design (a
+per-batch approval word from Hidde, machine-bound credentials, a daily cap)
+and the send commits are authored under the `Hidde` git identity, so this
+reads like a real, considered exception he made in session rather than a run
+overstepping. But the hard list is explicit that these five items "stay
+closed no matter how well they score" and changing one is his call, said out
+loud — and CLAUDE.md's own hard rule 4 text has not been amended, and
+DECISIONS.md carries no entry recording this exception, so a run reading only
+the canonical corpus (as instructed in Step 0) would reasonably conclude this
+entire subsystem is forbidden. This is exactly the "test every incoming
+thought against the recorded picture... the contradiction must be said out
+loud" case CLAUDE.md itself describes. Flagging FOR HIDDE rather than as a
+defect: either amend hard rule 4 in CLAUDE.md to state the mandate-pattern
+exception (his call, hard rule 7-adjacent territory since it's editing
+CLAUDE.md itself isn't gated the same way, but the hard list item is), or add
+the decision to DECISIONS.md so the corpus stops contradicting the live
+system. Structural note, not a mitigation of the above but relevant to blast
+radius: `.github/workflows/nightly.yml` has no reference to `OUTREACH_SMTP_*`
+or `outreach_send.py`, and the credentials live only in a file on Hidde's own
+machine, so unattended night runs cannot trigger a send today.
+
+**NOTE** — Confirms this morning's BLOCKER is fixed: `9e06275` rewrote
+`ageToken()` to prefer a number inside the tree's own `age_min`/`age_max`
+range, verified live in the rebuilt `site/dist` — `boston.html`'s title now
+reads "Oldest 214 Years" (was "1772"), `boston/shaw-memorial-elms.html` reads
+"214 Year Old" (was "1772"), and `rome/hackberries-of-the-aranciera.html`
+reads "300 Year Old" (was "1600"), all three now inside their tree's own
+data range. Also confirms this morning's WARN is fixed: `8b6fa3f` restored an
+enumerated `allowedTools` list in `nightly.yml` in place of the same-day
+"allow Bash, deny six things" inversion, with a stated (and correct) argument
+that neither list was ever a sandbox given `Bash(python3:*)`.
+
+**NOTE** — Swept the four new country pages (`italy.json`, `poland.json`,
+`france.json`, on top of the UK one from a prior session) against their
+source city data: Italy's Goethe/Padua palm claim, Poland's Henryk Oak and
+Warsaw's Dąb Mieszko I details, and France's 1601 Robinier all check out
+against `data/cities/*.json` verbatim, no fabrication. Confirmed reachable
+from `/countries` and linked in the built site (the class of bug that left
+country pages live-but-unlinked for three days on 2026-08-04), and `qa.py`
+passed per the commit's own claim.
+
+**NOTE** — Spot-checked a further sample of built pages (`lisbon.html`,
+`edinburgh.html`, `dublin.html`, `kyoto.html`, `es/malaga.html`, two species
+pages, one collection page) plus a site-wide grep for em dashes and the
+TONE_OF_VOICE.md hard-banned words across all of `site/dist`: clean.
+
+---
+
+## 2026-08-10 (first pass, 08:30 UTC)
 
 **BLOCKER** — `ageToken()` (`site/src/lib/tree-copy.ts:16-20`) extracts the
 FIRST number in a tree's `age_estimate` string, and for any tree whose
