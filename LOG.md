@@ -10,6 +10,18 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-10 - El experimento español: Malaga compleet onder /es/, in de opzet die schaalt
+
+Hidde's besluit, boven mijn eerdere bezwaar dat hij expliciet terzijde schoof ("staar je niet zo blind op die wachtrij"): een paar Spaanse pagina's als markttest, gebouwd zodat het blijft werken als er meer talen komen. De wachtrij-zorg is genoteerd en losgelaten; de positieverbetering van 17 naar 10 in negen dagen steunt zijn lezing dat die zichzelf oplost.
+
+De test is Malaga, volledig: stadspagina, vraagpagina op /es/malaga/arbol-mas-antiguo (de frase die een Spaanstalige echt zoekt, geen Engels padsegment), en tien boompagina's. Malaga omdat het de enige stad is met gemeten Spaanse vraag: "arboles historicos de malaga", 20 vertoningen op positie 74, nul kliks op onze Engelse pagina. Dat is ook de meetlat, vastgelegd in blueprint v1.10 (Contract J, door Hidde in sessie goedgekeurd): beweegt /es/malaga binnen vier weken na indexering op die zoekopdracht, dan werkt het en openen we meer; zo niet, dan weten we dat ook.
+
+De opzet, want die was de helft van zijn vraag. Taalsubmap plus wederzijdse hreflang met x-default naar het Engels, de industriestandaard die naar meer talen schaalt zonder verbouwing. De vertaling is een OVERLAY (data/i18n/es/malaga.json) met alleen tekst: elke coordinaat, foto, licentie en wandeling blijft in het ene canonieke stadsbestand, dus een pin die in het Engels wordt gecorrigeerd is overal gecorrigeerd. De build weigert als de Engelse stad groeit voorbij zijn vertaling, zodat een overlay nooit stil veroudert. Het Spaans is met de hand geschreven op dezelfde maten als het Engels (intro 91 woorden, verhalen 181 tot 229, geen em dashes); het accent-incident van gisteren is de reden dat machinaal patchen in het contract verboden staat.
+
+Eerlijk benoemd als bewuste grens van de test: de site-chrome (navigatie, footer), de kaartpopups en het seizoensblok blijven Engels. Verdient de test een tweede taal, dan worden die contractwerk in plaats van stille schuld.
+
+Live geverifieerd op desktop en 375px: kaart bouwt, pins staan, wandelbalk in het Spaans, hreflang in beide richtingen identiek, /es/malaga in de sitemap (12 URL's), taalwissel zichtbaar op beide kanten. Build en smoke in een keer groen.
+
 ## 2026-08-09 (middag en avond) - Distributie wordt de lens, en de eerste twaalf mails zijn weg
 
 Een lange sessie met Hidde die de koers heeft verlegd. De aanleiding was een meting, niet een idee: over 28 dagen nam de hele site 78 kliks op 3.680 vertoningen, terwijl Rome, onze diepste pagina met 24 bomen, 61 vertoningen en nul kliks kreeg en Porto met 4 kliks op 29 vertoningen 14 procent doorklik haalde. Diepte produceert geen bezoekers, positie wel, en die hebben we alleen waar de concurrentie dun is.
