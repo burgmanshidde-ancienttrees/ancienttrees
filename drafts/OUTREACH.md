@@ -222,6 +222,30 @@ Elke sessie kan mailen namens Hidde, en zo werkt het, blijvend:
    (zonder tekst-inzage per batch), dan is dat een expliciete nieuwe
    beslissing en wisselt de ondertekening naar "Ancient Trees".
 
+## The opening line (Hidde, 2026-08-10)
+
+**Open with a plain compliment and nothing else.** He read batch 003 and called
+the openings AI-generated. The offending shape was a compliment with an
+analytical justification bolted on:
+
+> Your yearbook archive is the reason several Copenhagen trees on our site could
+> be published rather than left as rumours. For a city with no single
+> monumental-tree register, a society that has been recording measurements for
+> decades is the only continuous source there is.
+
+His instruction, verbatim: **"Just open with - i love your ... tree!"**
+
+So the first line names their actual tree or place and says he likes it, in the
+words a person would use over a fence. No thesis, no "which is interesting
+because", no explaining why the compliment is deserved. Every fact, number and
+piece of reasoning waits until after the ask. An opening that justifies itself
+reads as machine-written, because explaining a compliment is exactly what a
+machine does when it tries to sound sincere.
+
+Batches 002 and 003 went out before this was recorded, so 24 mails carry the old
+opening. Nothing to do about those; from batch 004 the first line is one plain
+sentence.
+
 ## Rules for all of it
 
 - **Drafts only from me, always.** He sends, from his own address.
