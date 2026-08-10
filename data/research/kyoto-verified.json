@@ -1,0 +1,95 @@
+[
+  {
+    "id": "kyo_011",
+    "name": "The Hackberry of Demizu-guchi",
+    "species": "Chinese Hackberry (Celtis sinensis)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Near Demizu-guchi entrance, Kyoto Gyoen National Garden",
+      "latitude": 35.0195,
+      "longitude": 135.7593,
+      "neighbourhood": "Kyoto Gyoen (Imperial Palace Park), Kamigyo-ku"
+    },
+    "verified_sources": [
+      "https://www.city.kyoto.lg.jp/kamigyo/page/0000012431.html",
+      "https://www.env.go.jp/garden/kyotogyoen/2_guide/map3_demizu.html"
+    ],
+    "access": "Free. Kyoto Gyoen National Garden (the public park surrounding the Imperial Palace) is open to the public year-round, dawn to dusk.",
+    "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 10 minute walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Officially designated a Kamigyo Ward 'Pride Tree' (kuminno hokori no ki), catalogued at 22.5m height, 32.9m branch spread and a 4.98m trunk girth, one of the largest hackberries recorded in the ward's own register (source 1). The Ministry of Environment's own description of Kyoto Gyoen independently confirms the park holds 200+ giant trees including hackberry, zelkova and camphor specimens grown since the park's 1877 restructuring (source 2), but does not name this individual tree, so this counts as general corroboration rather than a second dedicated source. No age figure exists in either source; the ward register records dimensions only, never age. Flagged for that reason, not for doubt about the tree's existence or species. For scale: Munakata Shrine's camphor (kyo_006), roughly 500m south inside the same park, is separately reported (Japanese-language sources) as Gyoen's single oldest and largest tree at 600-800 years, which suggests this hackberry, while exceptionally large for its species, is probably not in that class of age. Coordinates are a gate-area estimate from the park's boundary streets (Karasuma-dori runs the west side), not a GPS fix on the trunk; mark location_precision honestly as approximate. Demizu-guchi is a pedestrian entrance on the park's west side, a few hundred metres north of Shimotachiuri-gomon and close to Munakata Shrine, so this tree and kyo_006 form the southwest anchor of a walkable cluster inside the park."
+  },
+  {
+    "id": "kyo_012",
+    "name": "The Zelkova of Ishiyakushi Gate",
+    "species": "Japanese Zelkova (Zelkova serrata)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Near Ishiyakushi-gomon gate, Kyoto Gyoen National Garden",
+      "latitude": 35.025,
+      "longitude": 135.7663,
+      "neighbourhood": "Kyoto Gyoen (Imperial Palace Park), Kamigyo-ku"
+    },
+    "verified_sources": [
+      "https://www.city.kyoto.lg.jp/kamigyo/page/0000012402.html",
+      "https://www.env.go.jp/garden/kyotogyoen/2_guide/map.html"
+    ],
+    "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
+    "transport": "Imadegawa Station (Kyoto Municipal Subway Karasuma Line), roughly 12 minute walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Officially designated a Kamigyo Ward 'Pride Tree', catalogued at 22.0m height, 29.6m branch spread and a 4.29m trunk girth, an exceptionally large zelkova by the ward's own measurements (source 1). As with kyo_011, the Ministry of Environment's general description of Gyoen's giant-tree population corroborates that specimens of this scale exist in the park but does not name this individual tree (source 2, general corroboration only). No age is given anywhere; flagged for that reason. Ishiyakushi-gomon is one of the nine historic gates on the park's east wall (Teramachi-dori side), in the northern section of that wall. Distance to the Demizu/Munakata cluster on the west side is roughly 1.1km, still comfortably inside a single walkable loop of the park. Coordinates are a gate-position estimate, not a GPS fix on the trunk; approximate precision stated honestly."
+  },
+  {
+    "id": "kyo_013",
+    "name": "The Hackberry of Nashinoki Shrine",
+    "species": "Chinese Hackberry (Celtis sinensis)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Nashinoki Shrine, Teramachi Hirokoji-agaru, Someden-cho, Kamigyo-ku",
+      "latitude": 35.025,
+      "longitude": 135.767361,
+      "neighbourhood": "Teramachi, Kamigyo-ku (immediately east of Kyoto Gyoen)"
+    },
+    "verified_sources": [
+      "https://www.city.kyoto.lg.jp/kamigyo/page/0000012315.html",
+      "https://ja.wikipedia.org/wiki/梨木神社"
+    ],
+    "access": "Free to enter the shrine precinct.",
+    "transport": "Keihan Marutamachi Station, roughly 8 minute walk",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Kamigyo Ward's official 'Pride Tree' register records this hackberry at 21.0m height, 19.4m branch spread and a 3.72m trunk girth (source 1). Wikipedia independently confirms the shrine's identity, founding (1885, dedicated to Meiji-era statesman Sanjo Sanetomi) and precise coordinates, but its tree content covers only a katsura known locally as the 'Tree of Love' and does not mention the hackberry (source 2, corroborates the site, not this specific tree). So this is effectively single-sourced for the tree itself; flagged for that reason. No age given anywhere. Nashinoki Shrine sits on Teramachi-dori immediately outside Kyoto Gyoen's east wall, about 850m from Munakata Shrine (kyo_006) and well inside a single walking loop with the rest of this cluster. Coordinates are the shrine's own (confirmed, shrine-level), not a GPS fix on the specific tree within the grounds, hence approximate."
+  },
+  {
+    "id": "kyo_014",
+    "name": "The Grand Ginkgo of Goo Shrine",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "several hundred years",
+    "age_min": 200,
+    "age_max": 500,
+    "location": {
+      "address": "Goo Shrine (Gooh Jinja), Karasuma-dori Shimo-Nagaracho-shita, Sakura-tsurumarucho, Kamigyo-ku",
+      "latitude": 35.02222,
+      "longitude": 135.75861,
+      "neighbourhood": "Karasuma, Kamigyo-ku (immediately west of Kyoto Gyoen)"
+    },
+    "verified_sources": [
+      "https://www.city.kyoto.lg.jp/kamigyo/page/0000012542.html",
+      "https://tabiiro.jp/leisure/s/216563-kyoto-goou-jinja/",
+      "https://ja.wikipedia.org/wiki/護王神社"
+    ],
+    "access": "Free to enter the shrine precinct.",
+    "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 5 minute walk",
+    "location_precision": "approximate",
+    "curation_status": "ai_generated",
+    "verify_notes": "Two independent sources agree this is a genuinely old, notable tree: Kamigyo Ward's official register catalogues it at 25.0m height, 16.3m branch spread and a 3.18m trunk girth, the largest of six sizeable ginkgos on the shrine grounds (source 1); a Kyoto tourism/travel description (tabiiro.jp) independently states the shrine holds several large ginkgos 'several hundred years old', the biggest standing north of the main hall and separately designated a Kamigyo Ward pride tree (source 2), which is a real but imprecise age claim, not a measured figure, hence the wide age_min/age_max band. Wikipedia confirms the shrine's identity and coordinates but names only a quince (karin) as its notable tree, not the ginkgo (used for location only, source 3). Goo Shrine (dedicated to Wake no Kiyomaro, popular with visitors seeking help with legs and feet, its guardian animal is the wild boar rather than the usual fox or dog) sits on Karasuma-dori directly across from Kyoto Gyoen's west wall, about 360m from Munakata Shrine (kyo_006) and the closest of this whole cluster to a subway station. Coordinates are the shrine's own (confirmed via Wikipedia); precision marked approximate because the exact tree position within the grounds ('north of the honden') is not itself GPS-fixed."
+  }
+]
