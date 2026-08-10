@@ -16,6 +16,25 @@ standing rule, 2026-07-27).
 - share:       0 yesterday, last never
 - smoke-test:  0 yesterday, last 9 days ago
 - walk-start:  0 yesterday, last never
+
+| Day | Accounts | Waitlist | Submissions |
+|---|---:|---:|---:|
+| 07-27 | 0 | 0 | 0 |
+| 07-28 | 2 | 0 | 0 |
+| 07-29 | 0 | 0 | 0 |
+| 07-30 | 0 | 0 | 0 |
+| 07-31 | 0 | 2 | 1 |
+| 08-01 | 0 | 0 | 0 |
+| 08-02 | 0 | 0 | 0 |
+| 08-03 | 0 | 0 | 0 |
+| 08-04 | 0 | 1 | 0 |
+| 08-05 | 0 | 0 | 0 |
+| 08-06 | 0 | 0 | 0 |
+| 08-07 | 0 | 1 | 0 |
+| 08-08 | 1 | 1 | 0 |
+| 08-09 | 0 | 0 | 0 |
+| 08-10 | 0 | 0 | 0 |
+| **14 days** | **3** | **5** | **1** |
 - Waitlist:    5 total, newest 2 days ago
 - Submissions: 1 total, newest 10 days ago
 - Accounts:    3 total, newest 2 days ago
@@ -27,8 +46,7 @@ standing rule, 2026-07-27).
 
 **Where demand is going to waste**
 
-Search Console (freshest day Google provides, data lags 2-3 days):
-- 2026-08-09: 6 clicks, 235 impressions, avg position 10.8 (day before: c7/i194)
+Search Console, the last 10 days Google will give us (its data lags 2-3 days, so the newest row is never yesterday). Position is an average across every query, so it dips whenever we start ranking for something new:
 
 | Day | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
@@ -82,9 +100,7 @@ Counts are bucketed to the nearest ten by Cloudflare; read the window, not the d
 - Devices: desktop (180); mobile (70)
 - Page load (8d): p50 1019ms, p90 5169ms
 
-Links and referrers:
-- External referrers (a link somebody clicked): none yet
-- Backlink count: not automatable, Search Console's API has no links endpoint. Read it by hand at https://search.google.com/search-console/links?resource_id=sc-domain%3Aancienttrees.app
+Links: external referrers (a link somebody actually clicked): none yet
 
 Machine: 6 chain attempts yesterday, 5 got real work time (~221 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
 
