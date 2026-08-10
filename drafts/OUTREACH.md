@@ -336,8 +336,48 @@ six cities: Boston 10 of 10 missing, Budapest 12 of 12, Copenhagen 13 of 13, Chi
 viewing passes that judged 35 candidates and approved none. So these go to the people who
 hold the trees. Budapest has no verified contact yet and is the obvious hole in this batch.
 
+
+**Batch 004, 2026-08-10.** Twenty-eight mails, the first in the voice Hidde settled that
+afternoon: subject asks for help, opening says we found the tree online and think it is
+remarkable. Templated rather than hand-written, which is a real cost and the honest trade
+at this size: twelve are worth writing by hand, a hundred and thirty are not, and the
+alternative to a template is not sending. It earns its keep by naming each recipient's own
+trees and their own photograph gap, and by writing in their language with their city's own
+name. Two defects were caught in the dry run and fixed before sending: the German mails
+said 'Vienna' instead of 'Wien', and the ownership matcher told Schloss Schoenbrunn it
+owned the sequoias of Poetzleinsdorfer Schlosspark because 'schloss' appears in both. Only
+why_them is trusted for ownership now. 106 contacts remain; the daily cap is 40.
+
 | Date | To | Ask | Status |
 |---|---|---|---|
+| 2026-08-10 | Schloss Schönbrunn Kultur- und Betriebsges.m.b.H., info@schoenbrunn.at | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Österreichische Bundesgärten (Bundesgärten Wien, Sch, office@bundesgaerten.at | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Stiftung Preußische Schlösser und Gärten Berlin-Bran, generaldirektion@spsg.de | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Conservatoire et Jardin botaniques de la Ville de Ge, info.jbg@geneve.ch | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Trees New York, info@treesny.org | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | American Forests, info@americanforests.org | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Schloss- und Gartenverwaltung Nymphenburg (Bayerisch, sgvnymphenburg@bsv.bayern.de | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Gartenverwaltung Englischer Garten (Bayerische Schlö, gvenglischergarten@bsv.bayern.de | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Baureferat Gartenbau, Landeshauptstadt München, Gartenbau@muenchen.de | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | MA 42 Wiener Stadtgärten, post@ma42.wien.gv.at | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Grün Berlin GmbH, service@gruen-berlin.de | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Schutzgemeinschaft Deutscher Wald (SDW), Bundesverba, info@sdw.de | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Kuratorium Baum des Jahres / Dr. Silvius Wodarz Stif, info@baum-des-jahres.de | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | City of Boston Parks and Recreation Department, parks@boston.gov | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Svenska Trädföreningen (Swedish Arboricultural Assoc, info@tradforeningen.org | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Bymiljøetaten, Oslo kommune (Oslo Agency for Urban E, postmottak@bym.oslo.kommune.no | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Vereinigung Schweizerischer Stadtgärtnereien und Gar, info@vssg.ch | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Baumkunde.de, webmaster@baumkunde.de | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Baumportal.de (Jowaca), nature@jowaca.de | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Suomen luonnonsuojeluliiton Uudenmaan piiri (Finnish, uusimaa@sll.fi | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Museu de Ciencies Naturals de Barcelona (Jardi Botan, museuciencies@bcn.cat | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Institut Botanic de Barcelona (IBB, CSIC-CMCNB), infoibb@ibb.csic.es | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Reggia di Caserta, re-ce@cultura.gov.it | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Museo e Real Bosco di Capodimonte, mu-cap@cultura.gov.it | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Orto Botanico di Roma (Sapienza Universita di Roma), info-ortobotanico@uniroma1.it | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | RAMI - Il Registro degli Alberi Monumentali d'Italia, info@ilregistrodeglialberi.it | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Istituto Italiano di Studi Germanici (Villa Sciarra), lupoli@studigermanici.it | Photos, corrections, the tree we missed, batch 004 | **sent** |
+| 2026-08-10 | Musei in Comune Roma (Sovrintendenza Capitolina, Vil, info@museiincomuneroma.it | Photos, corrections, the tree we missed, batch 004 | **sent** |
 | 2026-08-10 | Arnold Arboretum, arbweb@arnarb.harvard.edu | Photos + accession records; 6 of Boston's 10 trees are theirs, all 10 photo-less, batch 003-photo-gap | **sent** |
 | 2026-08-10 | Friends of the Public Garden, info@friendsofthepublicgarden.org | Photos + which of the Common's four old elms is which, batch 003-photo-gap | **sent** |
 | 2026-08-10 | Central Park Conservancy, press@centralparknyc.org | Photos; 8 of our 20 New York trees are in the Park, 15 without an image, batch 003-photo-gap | **sent** |
