@@ -398,6 +398,15 @@ def referrers_section(refs):
 
 SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
 
+# Row 1 of the submissions table is our own pipeline test from 2026-07-31, made
+# when the form was wired up. The digest counted it as a reader submission for
+# ten days, so "Submissions: 1" read as somebody having sent us a tree when the
+# true figure is zero. Same class of error as the beacon counting our own CI
+# until 2026-08-08: a number that includes us flatters us, and the fortnight
+# review's own criterion is literally "whether a single reader submission
+# exists". Excluded by id rather than by guessing at content.
+TEST_SUBMISSION_IDS = {1}
+
 # Anything a block thinks should reach Hidde today. The verdict line at the top
 # of the entry is built from this, and an empty list is the good case and says
 # so in words. Without it the report has no front door: fifteen true blocks and
@@ -483,9 +492,11 @@ def product_section(today):
         since = today - datetime.timedelta(days=14)
         series = {}
         for label, path in (("waitlist", "/rest/v1/waitlist?select=created_at"),
-                            ("submissions", "/rest/v1/submissions?select=created_at")):
+                            ("submissions", "/rest/v1/submissions?select=id,created_at")):
             rows_, _ = _supa(path, key)
             for r in rows_:
+                if label == "submissions" and r.get("id") in TEST_SUBMISSION_IDS:
+                    continue
                 d = str(r.get("created_at"))[:10]
                 series.setdefault(d, {})[label] = series.setdefault(d, {}).get(label, 0) + 1
         users, _ = _supa("/auth/v1/admin/users?page=1&per_page=1000", key)
@@ -521,7 +532,9 @@ def product_section(today):
             out.append("- %s: unreadable (%s)" % (label, str(e)[:60]))
             continue
         try:
-            allrows, _ = _supa(path + "?select=created_at", key)
+            allrows, _ = _supa(path + "?select=id,created_at", key)
+            if label == "Submissions":
+                allrows = [r for r in allrows if r.get("id") not in TEST_SUBMISSION_IDS]
             total = len(allrows)
             newest_at = max((r.get("created_at") or "" for r in allrows), default=None)
         except Exception:
