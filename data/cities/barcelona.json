@@ -3,9 +3,9 @@
   "country": "Spain",
   "status": "needs_curation",
   "intro": "Barcelona keeps its trees on two lists. The municipal Catalogue of Trees of Local Interest holds more than 200 specimens, but the Catalan government's rarer monumental designation belongs to only four trees in the whole city, all four growing in the same shaded ravine of the old botanical garden on Montjuic. Barcelona's oldest tree predates the city's own street grid: a 250-year-old holm oak now standing in a garden its neighbours spent three years fighting to save. Two more grew up inside Gaudi's Park Guell before he built around them. None of them need a ticket.",
-  "meta_description": "Barcelona ranks trees twice: 200-plus of local interest, four monumental. Meet the 250-year-old oak that predates the city grid, and 32 more.",
+  "meta_description": "Barcelona ranks trees twice: 200-plus of local interest, four monumental. Meet the 250-year-old oak that predates the city grid, and 45 more.",
   "question_answer": "The oldest tree in Barcelona whose age has actually been measured is a holm oak on Carrer de l'Encarnacio in the Vila de Gracia neighbourhood, dated by dendrochronology to around 250 years old. It already appears on city maps from 1845, when Gracia was still farmland, and stands in a small garden opened to the public in 2021 after a three-year campaign to stop the site being demolished. One tree may be older: the city register dates a wild olive in Park Guell to 1771, but that figure is an estimate nobody has checked against the wood.",
-  "question_meta": "Barcelona's oldest measured tree is a 250-year-old holm oak in Gracia. Its story, its exact location, and 32 more remarkable trees.",
+  "question_meta": "Barcelona's oldest measured tree is a 250-year-old holm oak in Gracia. Its story, its exact location, and 45 more remarkable trees.",
   "question_context": "The holm oak on Carrer de l'Encarnacio predates the neighbourhood that grew up around it. Gracia was a scatter of farmhouses when the tree was young, and it appears on the city's 1845 maps standing on rural land known as the Pla del Bonpa, tied to a farmhouse called Can Vidalet. Dendrochronologists, tree-ring specialists, later dated it to roughly 250 years old, making it the oldest tree in Barcelona whose age anyone has actually measured. The tree nearly did not survive to be dated: a development plan for the historic Casetes de l'Encarnacio around it triggered a three-year local campaign, and the oak was formally catalogued as a Tree of Local Interest in 2019 specifically to stop the bulldozers. The garden around it opened to the public in April 2021, though only the facades of the original houses could be saved. For grandeur over paperwork, Barcelona's biggest tree by volume is a different story entirely: a Rehder's wingnut in the botanical garden's Sot de l'Estany ravine, reaching roughly 40 metres in a hole in the ground nobody visits. Getting to the oak: Fontana station on the L3, then an eight minute walk into Vila de Gracia.",
   "faq": [
     {
@@ -1099,6 +1099,437 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "bcn_034",
+      "research_id": "bcn_013",
+      "name": "The Camphor Tree of the Historic Botanical Garden",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "about 93 years",
+      "age_min": 90,
+      "age_max": 95,
+      "planted": "1933",
+      "girth_cm": 440,
+      "location": {
+        "address": "Jardi Botanic Historic, Sector de la Masia, Av. dels Muntanyans, 08038 Barcelona",
+        "latitude": 41.36716,
+        "longitude": 2.15338,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "story": "This camphor tree is nearly twice as wide as it is tall. The city register puts its crown at 27 metres across and its height at only 15, the proportions of a tree that never had to compete for light and spread sideways instead, and its trunk measures 4.4 metres around. Camphor is what the wood smells of when it is cut, and for most of the twentieth century it was what mothballs and chest rubs were made from, distilled from chipped Cinnamomum camphora shipped out of Taiwan and Japan until the chemists worked out how to make it synthetically. Barcelona's tree was planted in 1933 in the Sector de la Masia of the old botanical garden on Montjuic, a collection laid out on ground reworked for the 1929 International Exposition. It has stood there through the war that broke out three years later, the decades afterwards when the garden was left to go half wild, and the opening of the new botanical garden further up the slope in 1999, which is what turned this one into the historic garden rather than simply the garden. The city catalogued it as a Tree of Local Interest in 1993. The land belongs to the science museum rather than the council, which is a matter of paperwork rather than a locked gate.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Paid entry to the Jardi Botanic Historic, free on set days each week",
+      "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_035",
+      "research_id": "bcn_014",
+      "name": "The Black Locust of the Ciutadella",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "not dated; the register's age column reads '100 anys' rather than a year",
+      "age_min": null,
+      "age_max": null,
+      "planted": null,
+      "girth_cm": 430,
+      "location": {
+        "address": "Parc de la Ciutadella, parterre between Passeig de Joaquim Renart and the Cascada, 08003 Barcelona",
+        "latitude": 41.388178,
+        "longitude": 2.186597,
+        "neighbourhood": "Sant Pere, Santa Caterina i la Ribera, Ciutat Vella"
+      },
+      "story": "A trunk of 4.3 metres on a tree only 12 metres tall makes this the stoutest black locust in Barcelona and the only one the city has ever put on its register. Black locusts usually run up thin and fast and then fall over. This one went sideways and stayed, and it grows in the parterre between the Passeig de Joaquim Renart and the Cascada, the monumental fountain a young Gaudi worked on as a student assistant. How old it is nobody has established. The register's age column holds the words '100 anys' where a planting year should be, which is somebody's estimate written into the wrong box rather than a date anyone has checked, and the tree was only catalogued in 2024. What is certain is the ground it stands on. The park is 1888 work, laid out for the Universal Exposition on the cleared site of the Bourbon citadel that Barcelona spent 150 years resenting and then demolished. The species itself was one of the first American trees to reach Europe, planted in Paris around 1601 by Jean Robin, the royal gardener it is named after. In late spring the crown fills with white pea flowers heavy enough to hang and strong enough to smell before you have found the tree.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Free, public park",
+      "transport": "Arc de Triomf (Metro L1) or Ciutadella-Vila Olimpica (Metro L4), 5-8 min walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "kind": "flowers",
+        "label": "late April into May, when the whole crown hangs with white pea flowers you can smell from the path"
+      }
+    },
+    {
+      "id": "bcn_036",
+      "research_id": "bcn_015",
+      "name": "The London Plane of the Ciutadella",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "planting date never recorded",
+      "age_min": null,
+      "age_max": null,
+      "planted": null,
+      "girth_cm": 360,
+      "location": {
+        "address": "Parc de la Ciutadella, between the lake and the zoo fence, 08003 Barcelona",
+        "latitude": 41.388756,
+        "longitude": 2.187429,
+        "neighbourhood": "Sant Pere, Santa Caterina i la Ribera, Ciutat Vella"
+      },
+      "story": "The city register lists 273 plane trees under a single entry for the Rambles. This is one of the few it catalogued on its own. The London plane is the default tree of Barcelona's streets, planted by the hundred and cut back to knuckles every winter, which is exactly what makes an unpruned one worth walking to. This tree stands between the Ciutadella lake and the zoo fence, carrying a 3.6 metre trunk under a crown 24 metres across and 25 metres tall, very nearly as wide as it is high. That shape is simply what a plane does when nobody interferes. Its age is honestly unknown: the register took all the measurements and left the planting year blank, no other source dates it, and it went onto the list in 2021 on size alone. The park around it opened in 1888 for the Universal Exposition and most of the big trees in it date from that work or the decades just after, which puts this one somewhere above a century without proving anything. The species is an accident to begin with, a hybrid of the American and oriental planes that turned up in a seventeenth century garden and proved able to shrug off soot, drought and compacted roots better than either parent.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Free, public park",
+      "transport": "Arc de Triomf (Metro L1) or Ciutadella-Vila Olimpica (Metro L4), 5-8 min walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_037",
+      "research_id": "bcn_016",
+      "name": "The Japanese Cheesewood of the Ciutadella",
+      "species": "Japanese Cheesewood (Pittosporum tobira)",
+      "age_estimate": "not documented; the register lists no planting year",
+      "age_min": null,
+      "age_max": null,
+      "planted": null,
+      "girth_cm": 155,
+      "location": {
+        "address": "Parc de la Ciutadella, in front of the Glorieta de la Transsexual Sonia, 08003 Barcelona",
+        "latitude": 41.387625,
+        "longitude": 2.186243,
+        "neighbourhood": "Sant Pere, Santa Caterina i la Ribera, Ciutat Vella"
+      },
+      "story": "This is a hedge that got away. Pittosporum tobira is the standard clipped shrub of Mediterranean car parks and hotel forecourts, usually held below waist height and almost never allowed a single trunk at all. This one has a trunk 1.55 metres around and a crown six metres wide, which is why the city added it to the register of trees of local interest in 2017, the only one of its species on that list. The register does not even record a height for it, an omission that says something about how unexpected the entry is. It grows in the Parc de la Ciutadella in front of the Glorieta de la Transsexual Sonia, the park's old bandstand, which the city renamed for a woman killed there and which is now one of Barcelona's memorials to violence against trans people. The tree is the quiet part of that corner. In spring it carries small cream flowers that smell of orange blossom strongly enough to reach the path, which is where the plant's other name, mock orange, comes from. Nobody has dated it. Pittosporum thickens slowly enough that a trunk this size suggests decades rather than years, but the register gives no planting year and no second source offers one.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Free, public park",
+      "transport": "Arc de Triomf (Metro L1) or Ciutadella-Vila Olimpica (Metro L4), 5-8 min walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_038",
+      "research_id": "bcn_017",
+      "name": "The Norfolk Island Pine of the Casa de la Misericordia",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "age_estimate": "planting date never recorded",
+      "age_min": null,
+      "age_max": null,
+      "planted": null,
+      "girth_cm": 150,
+      "location": {
+        "address": "Casa de la Misericordia, Carrer d'Elisabets 24, 08001 Barcelona",
+        "latitude": 41.383534,
+        "longitude": 2.168782,
+        "neighbourhood": "El Raval, Ciutat Vella"
+      },
+      "story": "A tree from a Pacific island eight kilometres long stands 27 metres over one of the most densely built neighbourhoods in Europe. The Norfolk Island pine in the courtyard of the Casa de la Misericordia is the tallest thing in this part of the Raval, visible above the rooftops long before you find the doorway on Carrer d'Elisabets. Its trunk is a modest 1.5 metres around, because the species grows like a mast rather than a barrel, throwing out whorls of branches in tidy tiers and going straight up. That was precisely the appeal when Cook reached Norfolk Island in 1774 and reported the trees as a supply of masts for the Royal Navy. The timber turned out too brittle and the scheme came to nothing, which is roughly how the species ended up as an ornamental instead, planted in warm coastal cities from Sydney to here. The courtyard it stands in was a foundling house and orphanage, and the four fan palms beside it went in around 1904. The pine itself has no recorded planting date at all and joined the city register in 2016 on its size. The yard is now a public passage with a bookshop and a cafe in it, which makes this one of the easiest large trees in Barcelona to walk to.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Free to enter the courtyard from Carrer Elisabets or via La Central bookshop; the cafe itself is paid",
+      "transport": "Catalunya (Metro L1/L3), 6 min walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_039",
+      "research_id": "bcn_018",
+      "name": "The Oriental Plane of Placa de la Universitat",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "age_estimate": "about 93 years",
+      "age_min": 90,
+      "age_max": 95,
+      "planted": "1933",
+      "girth_cm": 200,
+      "location": {
+        "address": "Placa de la Universitat, 08007 Barcelona",
+        "latitude": 41.386361,
+        "longitude": 2.164063,
+        "neighbourhood": "L'Antiga Esquerra de l'Eixample, Eixample"
+      },
+      "story": "Every plane tree on the streets around this one is a hybrid. This is one of the parents. The city register carries eleven separate entries for London planes and exactly one for Platanus orientalis, the eastern species that crossed with the American plane in some seventeenth century garden to produce the tree that now lines most of the Eixample. The difference shows in the leaf, cut far more deeply into narrow lobes, and in the habit, which is lower and looser than the hybrid's. The register dates this one to 1933 and puts it at 18 metres with a two metre trunk under a crown almost as wide as the tree is tall. It was planted during the Second Republic, three years before the war, on the square in front of the university's main building, and it has spent its entire life on one of the busiest crossings in the city: trams first, then traffic, then the demonstrations that a university square inevitably collects. The species is the plane of Greek and Persian writing, the tree Herodotus has Xerxes stopping to decorate with gold on the march west. This one gets exhaust fumes and shade duty, and handles them about as well.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Free, public square",
+      "transport": "Universitat (Metro L1/L2), on the square itself",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_040",
+      "research_id": "bcn_019",
+      "name": "The Avocado of Placa de Can Bruixa",
+      "species": "Avocado (Persea americana)",
+      "age_estimate": "about 81 years",
+      "age_min": 78,
+      "age_max": 83,
+      "planted": "1945",
+      "girth_cm": 80,
+      "location": {
+        "address": "Placa de Can Bruixa, 08028 Barcelona",
+        "latitude": 41.383571,
+        "longitude": 2.130811,
+        "neighbourhood": "Les Corts"
+      },
+      "story": "There is an avocado tree 17 metres tall growing in a square in Les Corts. Persea americana is a Central American species that Europe imports by the container and almost never plants, because it wants heat, water and no frost, and because a tree grown from a stone takes a decade or more to fruit and then usually disappoints whoever planted it. This one went into the ground in 1945 and has not moved since, on Placa de Can Bruixa, in a district Barcelona had annexed from its own village only in 1897. Its trunk is slight at 80 centimetres around, and the height is the surprising part: an avocado that nobody prunes for picking simply goes up, which is why commercial groves keep theirs cut low and wide. The city catalogued it as a Tree of Local Interest in 2003. It stands about 500 metres from the magnolia in the old Maternity Gardens, which makes the pair a comfortable half hour on foot through a part of the city that almost no visitor reaches. Whether it sets fruit in a given year depends on the winter it has just had, and when it does the crop is well above head height and staying there.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Free, public square",
+      "transport": "Les Corts (Metro L3), 6 min walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_041",
+      "research_id": "bcn_020",
+      "name": "The Pepper Tree of Carrer Joaquim Blume",
+      "species": "Longleaf Pepper Tree (Schinus longifolia)",
+      "age_estimate": "about 110 years",
+      "age_min": 107,
+      "age_max": 112,
+      "planted": "1916",
+      "girth_cm": 160,
+      "location": {
+        "address": "Carrer de Joaquim Blume, 08038 Barcelona",
+        "latitude": 41.37205,
+        "longitude": 2.15539,
+        "neighbourhood": "El Poble-sec, Sants-Montjuic"
+      },
+      "story": "Nobody quite agrees what this tree is. The city register files it as Schinus longifolia, an Argentine and Uruguayan species. The mappers at OpenStreetMap have it down as Schinus polygama, the Chilean huingan, and the Catalan name the register itself uses for the tree, huingan, belongs to that second one. The two are close relatives in the cashew family, both small, tough, drought-hardy South American trees, and separating them takes a look at the leaves and the thorns rather than a look at the label. So the species stays an open question here. The date does not. It was planted in 1916, which makes it older than most of the street around it and one of the oldest trees in Poble-sec, and the city catalogued it in 1996. It is a small thing by the standards of this list: eight metres tall, a 1.6 metre trunk, a crown about as wide as the tree is high, standing at the foot of Montjuic. The hill above it was torn up and rebuilt twice in its lifetime, for the 1929 International Exposition and again for the 1992 Olympics, and the street kept its tree through both. The genus is the one that gives pink peppercorns, though this is not the species in the grinder.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Free, public street",
+      "transport": "Poble Sec (Metro L3), 7 min walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_042",
+      "research_id": "bcn_021",
+      "name": "The Osage Orange of Carrer Maria Montessori",
+      "species": "Osage Orange (Maclura pomifera)",
+      "age_estimate": "about 78 years",
+      "age_min": 75,
+      "age_max": 80,
+      "planted": "1948",
+      "girth_cm": 140,
+      "location": {
+        "address": "Carrer de Maria Montessori, 08038 Barcelona",
+        "latitude": 41.370731,
+        "longitude": 2.155415,
+        "neighbourhood": "El Poble-sec, Sants-Montjuic"
+      },
+      "story": "Before barbed wire, this tree was the fence. Osage orange grows dense, thorny and fast, and through the 1850s American farmers planted it in hedge lines across the prairie states to make a barrier that livestock would not push through: horse high, bull strong and hog tight, as the sales pitch went. Barbed wire arrived in the 1870s and ended the trade within a decade, by which point the species had already been shipped to Europe as a curiosity and largely ignored. Barcelona has two on its register and this is the younger of them, planted in 1948 on Carrer Maria Montessori below Montjuic, with a 1.4 metre trunk, 12 metres of height and a crown 15 metres across that is wider than the tree is tall. Its counterpart down in the Parc de la Ciutadella went into the ground 35 years earlier and is the thicker tree; this one has the better spread. The city catalogued it in 1998. What both share is the fruit, a heavy green sphere the size of a grapefruit with a surface like folded brain, which drops in autumn and is eaten by nothing that currently exists. It stands a few minutes' walk from the pepper tree on Carrer Joaquim Blume.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Free, public street",
+      "transport": "Poble Sec (Metro L3), 8 min walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_043",
+      "research_id": "bcn_022",
+      "name": "The Horse Chestnut of Placa Carles Buigas",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "about 89 years",
+      "age_min": 86,
+      "age_max": 91,
+      "planted": "1937",
+      "girth_cm": 190,
+      "location": {
+        "address": "Placa de Carles Buigas, 08038 Barcelona",
+        "latitude": 41.36966043273172,
+        "longitude": 2.1487269980118926,
+        "neighbourhood": "El Poble-sec, Sants-Montjuic"
+      },
+      "story": "Barcelona's register of trees of local interest runs past two hundred entries and contains exactly one horse chestnut. This is it, and the date on it is 1937, which was not a good year to be planting anything in this city. The air raids on Barcelona ran through that year and the next, and the hill directly above the square held anti-aircraft positions. The tree went in anyway and now stands 20 metres tall with a trunk 1.9 metres around, a decent size for a species that does not really belong at this latitude. Aesculus hippocastanum comes from a few mountain valleys in the Balkans, wants cool damp summers, and tends to sulk in Mediterranean cities, going brown at the edges by August in a hard year. This one has managed 89 seasons of it. It shares Placa de Carles Buigas with a tipu tree that is also on the register, so the two are one stop rather than two, on the walk up from Espanya towards the Montjuic gardens. The conkers are why the tree travelled so far beyond its native range in the first place and why generations of children knew it by name: shiny, useless, and briefly the most valuable object in a schoolyard.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Free, public square",
+      "transport": "Espanya (Metro L1/L3), 8 min walk up Avinguda Maria Cristina",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_044",
+      "research_id": "bcn_023",
+      "name": "The Jujube of the Jardins Joan Maragall",
+      "species": "Jujube (Ziziphus jujuba)",
+      "age_estimate": "about 68 years",
+      "age_min": 65,
+      "age_max": 70,
+      "planted": "1958",
+      "girth_cm": 160,
+      "location": {
+        "address": "Jardins Joan Maragall, Av. dels Muntanyans 2, 08038 Barcelona",
+        "latitude": 41.36753,
+        "longitude": 2.15644,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "story": "This garden opens two days a week, which is most of the reason almost nobody has seen the tree in it. The Jardins Joan Maragall surround the Palauet Albeniz, a small neoclassical pavilion built for the 1929 International Exposition and kept ever since as the residence the Spanish royal family uses when it is in Barcelona. The public is let in at weekends. The jujube standing there was planted in 1958, reaches 10 metres with a 1.6 metre trunk and a crown 12 metres across, and was catalogued as a tree of local interest in 1998. Ziziphus jujuba has been cultivated in China for something like four thousand years, which makes it one of the oldest orchard trees on earth, and it reached the Mediterranean early enough that the Romans were already growing it. The fruit is the size of an olive and turns from green to a deep red brown. Fresh it tastes like a slightly floury apple; dried and wrinkled it tastes like a date, which is where the English name Chinese date came from. It is a thorny, slow, obstinate tree that will grow in poor dry ground, and it is planted here purely as an ornamental. Check the opening days: on a weekday the gate is as close as you get.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Free, but the gardens open at weekends only. Check the current hours before going.",
+      "transport": "Espanya (Metro L1/L3), 15 min walk up Montjuic, or bus 55 to Estadi Olimpic",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bcn_045",
+      "research_id": "bcn_024",
+      "name": "The Ginkgo of the Jardins de Mossen Cinto Verdaguer",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "about 68 years",
+      "age_min": 65,
+      "age_max": 70,
+      "planted": "1958",
+      "girth_cm": 140,
+      "location": {
+        "address": "Jardins de Mossen Cinto Verdaguer, Av. de Miramar, 08038 Barcelona",
+        "latitude": 41.367376,
+        "longitude": 2.164573,
+        "neighbourhood": "Montjuic, Sants-Montjuic"
+      },
+      "story": "The ginkgo has no living relatives. Not a rare genus inside a large family: the entire order it belongs to died out except for this one species, and fossil leaves from 200 million years ago are close enough to the modern ones that a botanist can match them by eye. It survived in a handful of Chinese temple groves and was carried out from there first by monks and then by European collectors. Barcelona's is a young example, planted in 1958 in the Jardins de Mossen Cinto Verdaguer on the Montjuic hillside, now 17 metres tall with a crown nearly as wide and a trunk 1.4 metres around. The garden it stands in is the city's bulb garden, terraced and best known for its tulips and narcissi in spring and its water lilies in summer, which leaves the ginkgo the autumn entirely to itself. That is the month worth coming for. The leaves turn from green to a flat butter yellow over about a fortnight, then drop almost all at once, often within a single still day, leaving a gold circle on the ground that is the entire point of the tree. The city catalogued it in 1998. The gardens are free and open daily.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Free, public garden, open daily",
+      "transport": "Paral.lel (Metro L2/L3) then the Montjuic funicular, 5 min walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the whole crown turns butter gold and then drops in a day or two"
+      }
+    },
+    {
+      "id": "bcn_046",
+      "research_id": "bcn_027",
+      "name": "The Judas Tree of Placa Joanic",
+      "species": "Judas Tree (Cercis siliquastrum)",
+      "age_estimate": "about 70 years",
+      "age_min": 67,
+      "age_max": 72,
+      "planted": "1956",
+      "girth_cm": 180,
+      "location": {
+        "address": "Placa de Joanic, 08012 Barcelona",
+        "latitude": 41.40563249016595,
+        "longitude": 2.1622600198868445,
+        "neighbourhood": "La Vila de Gracia, Gracia"
+      },
+      "story": "This tree is twice as wide as it is tall. Five metres of height, a crown ten metres across and a trunk 1.8 metres around, the proportions of something that decided early to spread rather than climb. It is a Judas tree, and the Catalan name on the city register, arbre de l'amor, is a good deal kinder than the English one. The English name comes from the story that Judas hanged himself from a Cercis and its white flowers turned red with shame; the likelier explanation is that arbre de Judee, tree of Judea, got misheard somewhere along the way, Judea being a place it genuinely grows wild. What the tree does in April accounts for both names. The flowers break straight out of the bark, off the old wood of the branches and the trunk itself, before a single leaf has opened, so the whole frame of the tree turns magenta for a fortnight and then greens over as if nothing happened. This one was planted in 1956 on Placa de Joanic and catalogued in 1996. It stands about 330 metres from the holm oak on Carrer de l'Encarnacio, the oldest measured tree in Barcelona, which makes the two of them a short and unusually good walk through the middle of Gracia.",
+      "verified_sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+      ],
+      "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+      "access": "Free, public square",
+      "transport": "Joanic (Metro L4), on the square itself",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "bcn_001"
