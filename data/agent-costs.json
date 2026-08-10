@@ -1034,6 +1034,14 @@
         "tokens": 124675,
         "trees": 0,
         "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
+      },
+      {
+        "target": "barcelona",
+        "kind": "write",
+        "tokens": 154675,
+        "trees": 13,
+        "note": "First batch of unblocked leads. Brief premise WRONG: I generated ids from a stale 10-tree assumption without running passcheck, and bcn_011-028 were all live trees; the agent matched by coordinate, refused to merge and banked 13 stories under free ids instead, preventing an 18-tree overwrite of indexed URLs. 3 inputs already published, 2 correctly unwritable (composite pin, unresolved access under hard rule 10).",
+        "brief_wrong": true
       }
     ]
   }
