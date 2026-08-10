@@ -14,9 +14,31 @@ import type { Tree } from "./trees";
  * Tree" when age_min was explicitly null (an f-string interpolating Python's
  * None object). Fixed at the source now, not papered over in the title. */
 export function ageToken(tree: Tree): string | null {
-  const m = (tree.age_estimate ?? "").match(/(\d[\d,]*\+?)/);
-  if (m) return m[1];
-  return tree.age_min ? String(tree.age_min) : null;
+  // Every number in the sentence, not just the first, and then the one that
+  // is actually an AGE. Taking the first match shipped a planting year as an
+  // age on 70 trees across 30 cities: Boston's Shaw Memorial Elms read "1772
+  // Year Old English Elm" from the string "planted between 1772 and 1812, so
+  // roughly 214 to 254 years old", and Rome's hackberries read "1600 Year
+  // Old" for a tree its own data puts at 300-400. Caught by the fresh-eyes
+  // reviewer on 2026-08-10, live, and made louder that morning when the city
+  // page titles started quoting this same function.
+  //
+  // age_min/age_max are the tree's own bounds and are the arbiter: prefer a
+  // number from the sentence that falls inside them, fall back to age_min
+  // when the sentence offers no such number, and only trust the raw first
+  // match when the tree carries no range at all.
+  const nums = [...(tree.age_estimate ?? "").matchAll(/(\d[\d,]*\+?)/g)].map((m) => m[1]);
+  const lo = tree.age_min ?? null;
+  const hi = tree.age_max ?? null;
+  if (lo || hi) {
+    const inRange = nums.find((n) => {
+      const v = parseInt(n.replace(/[,+]/g, ""), 10);
+      return (!lo || v >= lo) && (!hi || v <= hi);
+    });
+    if (inRange) return inRange;
+    return lo ? String(lo) : hi ? String(hi) : null;
+  }
+  return nums[0] ?? null;
 }
 
 /** Build a meta description from the story's opening sentences, max
