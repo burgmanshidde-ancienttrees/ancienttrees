@@ -387,6 +387,12 @@ This project is unproven. Nobody has walked to a tree because of it, and nobody 
 
 Two lists, and the difference between them is the whole idea.
 
+**The one field that carries the product is location (Hidde, 2026-08-10).** His words: "location is the only real important part about a tree. It may be dead, wrong photo, or wrong age. These things can be adjusted. We want to strive for good data but 95% to start with is fine." This ranks the fields, which nothing here had done: a wrong age is an edit, a wrong photo is a swap, a tree that turns out to have died is a removal, and all three are things a reader can tell us and we can fix in minutes. A wrong location is different in kind, because the person is already standing in the wrong place and the promise is broken before any correction can reach them. It is the same reasoning as hard rule 2 ("a wrong location kills user trust permanently"), now stated as a priority rather than only as a prohibition.
+
+So: 95 percent is the shipping standard, not 100, and the missing 5 percent should fall on the adjustable fields rather than on the pin. Chase pin quality; let age, photo and the rest be corrected later by readers, who are the correction layer everywhere else on this site.
+
+Two things this does NOT license, and both matter because the sentence is easy to over-read in the other direction. It is a tolerance for ERROR, not permission to publish what we already know to be wrong: a tree known to be dead still never ships, and one reported dead is still checked and removed the same day (his own "we doen niet aan dode bomen" stands). And it never loosens the location rules themselves, which run the opposite way: precision stays optional, honesty about precision stays absolute, and hard rule 10 on withheld and private locations is untouched. Read plainly, this raises the bar on pins by lowering it everywhere else.
+
 **Always cuttable, without discussion:**
 - Precision. An approximate pin that says so is a finished first version.
 - A documented age. Missing or approximate is fine and needs no apology; see Step 2. Only inventing one is forbidden.
