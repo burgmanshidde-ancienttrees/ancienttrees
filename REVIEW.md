@@ -13,6 +13,111 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-10
+
+**BLOCKER** — `ageToken()` (`site/src/lib/tree-copy.ts:16-20`) extracts the
+FIRST number in a tree's `age_estimate` string, and for any tree whose
+sentence leads with a calendar year before stating the actual age, that
+year ships live as the tree's age. Verified on the built site in three
+independent places, since today's city-title change (e630a27) newly reuses
+this same function for a fourth: `site/dist/boston.html`'s `<title>` reads
+"Ancient Trees in Boston: 10 to See, Oldest 1772 Years"; the question page
+`site/dist/boston/oldest-tree.html`'s `<title>` reads "What Is the Oldest
+Tree in Boston? (1772 Years Old)"; the tree page
+`site/dist/boston/shaw-memorial-elms.html`'s `<title>` reads "The Shaw
+Memorial Elms: 1772 Year Old English Elm in Boston". The tree's own data
+(`data/cities/boston.json`, bos_001) gives `age_min: 214, age_max: 254`
+from the string "planted between 1772 and 1812, so roughly 214 to 254
+years old"; the regex grabbed the planting year instead of the age. This
+is not a one-off: swept every city file for the same shape (a leading
+number in `age_estimate` outside the tree's own `age_min`/`age_max`
+range) and it hits **75 trees across at least 30 cities**, confirmed live
+on a second sample, `site/dist/rome/hackberries-of-the-aranciera.html`'s
+title reads "1600 Year Old Tree in Rome" for a tree whose own data says
+300-400 years and whose story explicitly states "no dendrological
+confirmation", and a third,
+`site/dist/naples/camphor-of-the-royal-orchard.html` reads "19 Year Old
+Tree in Naples" for a tree estimated at 190-225 years (the string said
+"19th century"). Direction is not consistent: some come out absurdly old
+(1600, 1772, 1810, 2010), others absurdly young (7, 16, 18, 19, 20). This
+is a straightforward hard-rule-2 violation ("NEVER fabricate tree facts")
+at scale, live in the exact field (the title tag) most likely to be seen
+and indexed, and it directly undermines today's own city-title change,
+whose entire point was to put a true, specific age in front of a searcher.
+Full list of affected `(city, tree_id)` pairs available by re-running the
+sweep; fix is in `ageToken()` itself (prefer `age_min`/`age_max` over
+parsing prose, falling back to the regex only when neither is set) rather
+than editing 75 data files.
+
+**WARN** — The nightly workflow's tool allowlist was inverted today
+(commits 010598c, 1aa2f81) from an enumerated allowlist to `Bash` (all of
+it) plus a five-entry `disallowedTools` denylist
+(`Bash(rm:*),Bash(sudo:*),Bash(gh repo:*),Bash(gh secret:*),Bash(gh
+auth:*),Bash(gh api -X DELETE:*)`). The commit's own stated rationale is
+sound (the old allowlist blocked the workflow's own build step and the
+prior list's security value was already undermined by `Bash(git:*)`
+permitting a force-push), but the replacement denylist is a prefix match
+on literal command names and does not catch the equivalent destructive
+actions available through the same shell it now grants in full: `find .
+-delete`, `git clean -fdx`, `git reset --hard`, `python3 -c
+"import os,shutil; ..."`, or piping to `rm` via `xargs` all bypass every
+one of the five denied prefixes. This is an unattended, scheduled job
+that also holds `WebFetch`/`WebSearch` and therefore ingests untrusted
+web content into the same context that now has near-unrestricted `Bash`,
+which is exactly the shape where a prompt-injected page could turn "read
+this source" into a destructive command the denylist does not name. Not
+a page defect and nothing has gone wrong yet, but it is a same-day,
+unreviewed widening of what an unattended process can do against hard
+rule 3 ("nothing irreversible in public"), and worth Hidde's eyes rather
+than assuming the five-line denylist does what its commit message claims.
+
+**NOTE** (Malaga /es/ test, Contract J, ef110f6) — Checked thoroughly and
+found clean: reciprocal hreflang on both `/malaga` and `/es/malaga` plus
+`x-default`, visible "en español" link on the English page, `html
+lang="es"`, canonical self-referencing, intro at 91 words (inside the
+60-100 contract band), all ten stories 181-229 words (inside 150-250), no
+em dashes anywhere in the eleven rendered Spanish pages, and the English
+Malaga page's own title correctly picked up today's age-hook format
+without the ageToken bug above (400 is both the true age and the first
+number in "unos 400 años", so this city happens not to trigger it).
+
+**Monday corpus audit** (CLAUDE.md, PRINCIPLES.md, PRODUCT_IA.md,
+BACKLOG.md, GO_TO_MARKET.md, DECISIONS.md), suggestions only:
+
+- **NOTE** — `TONE_OF_VOICE.md:2` still reads "Version 1.0 (draft, awaiting
+  Hidde's approval)" while the file's own changelog records three
+  subsequent approved edits, the latest "v1.3 (2026-08-04)... approved by
+  Hidde in session." The header contradicts the document beneath it.
+  Suggest bumping the header to "Version 1.3" and dropping "draft,
+  awaiting approval."
+- **NOTE** — `BACKLOG.md`'s "Country pages, Contract G: proposed
+  2026-07-31, WAITS ON HIDDE'S YES" entry (line 33) is fully executed and
+  stale: Contract G was approved and added to SEO_GEO_BLUEPRINT.md that
+  same day (v1.5, confirmed in the blueprint's own changelog and in
+  DECISIONS.md), and CLAUDE.md already describes the renderer as "live
+  since 2026-08-01." No run can still act on this entry as written.
+  Suggest deleting it or moving the approval to DECISIONS.md.
+- **NOTE** — `BACKLOG.md`'s "Let runs read the visitor numbers" entry
+  (line 186) says "A run cannot currently see Cloudflare analytics... that
+  is a new secret and a new third-party dependency," with the trigger
+  "measurable traffic in Cloudflare." This has already been built:
+  `scripts/daily_digest.py` reads `CLOUDFLARE_ANALYTICS_TOKEN` via the
+  GraphQL API today, and DATA.md's daily entry already prints the beacon
+  numbers this item describes as not yet possible. Suggest removing the
+  entry or marking it done with a pointer to daily_digest.py.
+- **NOTE** — `CLAUDE.md`'s country-page paragraph (Step 0 rung 4) says
+  "Waiting with three or more cities right now: United Kingdom, Italy,
+  Spain, Poland, France, Portugal, Japan." Spain, Portugal and Japan are
+  no longer waiting: all three have live country pages
+  (`data/countries/{spain,portugal,japan}.json`, confirmed built at
+  `site/dist/{spain,portugal,japan}.html`). The sentence is a stale
+  snapshot from before those shipped, and also predates
+  `data/countries/united-states.json`, which now exists too. Suggest
+  refreshing the waiting list or generating it at digest time so it
+  cannot go stale again.
+
+---
+
 ## 2026-08-08
 
 **BLOCKER** — Vienna's page still says "sixteen" trees, in both visible
