@@ -1,3 +1,7 @@
+## 2026-08-10 - Berlin's Charlottenburg/Lietzensee cluster: documented, and why it isn't a walk yet
+
+ber_016 (Lietzensee Plane), ber_017 (Lietzensee Wingnut) and ber_018 (Karpfenteich Elm, Schlosspark Charlottenburg) were verified and merged into data/cities/berlin.json by a night run whose LOG.md entry was never finished (a permission-list bug broke builds right around then; see LOG.md 2026-08-10). Logging the gap now since the data was already live. `plan_walks()` confirms these four Charlottenburg-area trees (with the already-published ber_004 Swamp Cypress) do not form a computed walk: Lietzensee's pair sits 170m apart, the palace-park pair sits 66m apart, but the two pairs are 1.9km apart, just past the 900m walk-clustering radius, so each pair alone is one tree short of the 3-tree floor. Two register-only leads in the same palace garden (Echte Mispel and Kirschpflaume, both "Eigenart, landeskundliche Gründe" designations, no age, no second source found across three separate checks now) were judged too marginal to ship just to force a third tree into the cluster. Stays an honest gap: Berlin has two real destinations in the same corner of the city, Lietzensee and Schlosspark Charlottenburg, about a 25 minute walk apart, but no single page walk connects them yet.
+
 ## 2026-08-09 - Baarn wacht op de veldcheck van de eigenaar (het staande protocol)
 
 Hidde loopt de Baarn-route deze week na als eerste grondwaarheid-audit van de
