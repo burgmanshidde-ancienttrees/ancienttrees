@@ -1,0 +1,48 @@
+{
+  "note": "The closed list of reasons a tree may NOT go live. Hidde ruled it on 2026-08-10 after three separate over-strictness corrections in one session: a missing age, a modest girth and being ninth in line had each been used to hold trees back, and none of them is a reason. His words: 'can you never ever stop a tree from going live if you're not sure about the size, it doesn't matter at all if you are wrong.'",
+  "how": "This file is data so that no run has to remember the list, and so that adding to it is a visible change rather than a judgement made in a research pass. scripts/leads.py classifies every lead against it and passcheck's brief prints the result. Adding a reason here needs Hidde.",
+  "fail_open": true,
+  "fail_open_note": "THE IMPORTANT PART. A lead whose reason matches nothing here is treated as PUBLISHABLE, never as blocked. The old default was the opposite and it buried 142 already-researched trees behind reasons that were never valid, at roughly 19k tokens each to find them in the first place. When in doubt, a tree ships flagged; the reader is the correction layer.",
+  "blocking": [
+    {
+      "id": "dead",
+      "label": "dead or gone",
+      "why": "The product is standing in front of something alive. A dead entry makes the years-counter lie.",
+      "patterns": ["\\bdead\\b", "felled", "no longer standing", "\\bdied\\b", "\\bstump\\b", "has gone"]
+    },
+    {
+      "id": "private",
+      "label": "private land or access-restricted",
+      "why": "Hard rule 10. Never send anyone to a locked gate or someone's garden.",
+      "patterns": ["private", "restricted", "not open to", "permission to visit", "closed to the public"]
+    },
+    {
+      "id": "withheld",
+      "label": "location deliberately withheld by its source",
+      "why": "Hard rule 10. People who know the tree hid it to protect it; we do not undo that.",
+      "patterns": ["withheld", "obscured", "location hidden", "blurred"]
+    },
+    {
+      "id": "not_one_tree",
+      "label": "not a single collectible point",
+      "why": "Hidde, 2026-07-26 and confirmed 2026-08-10. An avenue has nothing to stand at and nothing to have seen.",
+      "patterns": ["avenue", "\\bgroup\\b", "ensemble", "row of", "whole wood", "not a single point"]
+    },
+    {
+      "id": "unplaceable",
+      "label": "no location at all",
+      "why": "Location is the one field that cannot be corrected after someone has already walked to the wrong place (Hidde, 2026-08-10). Note the narrowness: an APPROXIMATE pin that says it is approximate does NOT block. Only a tree we cannot place at all does.",
+      "patterns": ["no coordinate", "cannot place", "location unclear", "exact spot unknown"]
+    }
+  ],
+  "never_blocking": [
+    "no age, or an uncertain or approximate age",
+    "modest girth, height or spread; not the biggest in its park",
+    "a judgement that it is not remarkable enough",
+    "only one source (Step 2 says publish it flagged, with a note)",
+    "no photograph",
+    "an approximate pin, as long as it is labelled approximate",
+    "the city already has ten, or this was ninth in line",
+    "nobody got round to researching it further"
+  ]
+}
