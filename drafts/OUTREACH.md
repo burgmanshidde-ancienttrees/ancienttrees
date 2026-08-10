@@ -246,6 +246,26 @@ Batches 002 and 003 went out before this was recorded, so 24 mails carry the old
 opening. Nothing to do about those; from batch 004 the first line is one plain
 sentence.
 
+## The subject line (Hidde, 2026-08-10)
+
+Same move as the opening: from "look what I know about you" to "I need your
+help". His instruction: **"Can you help me with building ancienttrees.app or
+something."**
+
+So the subject asks for help in plain words rather than announcing a finding.
+What it replaces:
+
+| Sent in batch 003 | From batch 004 |
+|---|---|
+| Six of the ten Boston trees we publish are yours, and none has a photograph | Can you help me with ancienttrees.app? Your Arboretum trees |
+| Your yearbook archive is why Copenhagen has a page at all | Can you help me with ancienttrees.app? Copenhagen's old trees |
+
+The trade-off, recorded rather than argued: a bare "Can you help me with
+ancienttrees.app?" is the most human and the least openable, because a parks
+officer with three hundred unread mails cannot tell whether it concerns him.
+Three or four words naming his own tree or city fix that without costing the
+tone. If Hidde prefers it bare, it goes bare: it carries his name.
+
 ## Rules for all of it
 
 - **Drafts only from me, always.** He sends, from his own address.
