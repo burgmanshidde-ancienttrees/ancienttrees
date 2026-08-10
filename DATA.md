@@ -5,6 +5,85 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+## Weekly analysis 2026-08-10
+
+Third weekly analysis, covering 2026-08-03 to 2026-08-09 against the prior
+week (2026-07-27 to 2026-08-02), using the latest-settled Search Console
+figure for each date (GSC revises up for 2-3 days after the "freshest day"
+reading, so same-day numbers understate).
+
+**Scorecard**
+
+| Week ending | Impressions | Clicks | CTR | Visits (beacon) | Pageviews (beacon) | Directions/visit | App-CTA | Waitlist total | Submissions total |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-31 | 1,150 | 31 | 2.7% | 70 | 170 | n/a (not captured) | n/a (not captured) | 0 real (2 test rows) | 0 real (1 test row) |
+| 2026-08-07 | 1,762 | 36 | 2.0% | 100 | 170 | n/a (not captured) | n/a (not captured) | 4 real | 0 real (1 test row) |
+| 2026-08-09 | 1,680 | 35 | 2.1% | 150 | 230 | n/a (not captured) | n/a (not captured) | 5 real | 0 real |
+
+**What moved:**
+1. Impressions held flat week over week (1,682 to 1,680, settled 7-day
+   totals) but clicks slipped again (45 to 35), pulling CTR from 2.7% to
+   2.1%: this is the second straight week CTR has fallen while impressions
+   stayed level or grew, the opposite of what ranking gains should produce.
+2. Beacon visits rose 67% (90 to 150), almost entirely on one day
+   (08-08: 70 visits/120 pageviews, the week's biggest by far), while
+   total pageviews stayed flat (230 to 230): pages-per-visit nearly halved,
+   2.6 to 1.5, so more people arrived and each looked at less.
+3. Waitlist grew 2 to 5 (+3 real signups this week) and 3 real accounts
+   now exist (first tracked in the 08-09 digest, all recent); both are
+   small but repeated, non-test growth, which is the demand condition
+   GO_TO_MARKET.md's Phase 1 trigger names.
+4. /rome and /malaga's 0.0% CTR pattern (flagged in last week's analysis)
+   continued all week on real volume (Rome c0/i50-77/day, Malaga
+   c0/i21-25/day), until Wednesday, when Malaga got a direct fix: a
+   dedicated Spanish-language page (/es/malaga) targeting the exact query
+   it was failing on. Rome's equivalent diagnostic, suggested last week,
+   is still not logged as done.
+5. Distribution became the site's explicit strategic lens this week
+   (CLAUDE.md's "Reason from distribution first," added 2026-08-09):
+   twelve outreach emails went out to Portuguese organisations, the
+   project's first ever, alongside real SEO-basics fixes (a proper
+   favicon, og:site_name, og:image on non-tree pages, deferred MapLibre
+   loading) diagnosed from Search Console's own crawl-coverage data.
+
+**Suggestions, ranked:**
+1. **[run]** Do for Rome what was just done for Malaga. Rome has taken
+   0 clicks on 50-77 daily impressions for "trees in rome" (~pos 17-20)
+   every day this week, the same shape Malaga had before Wednesday's
+   /es/malaga fix. Last week's analysis already suggested checking P2
+   (answer-first) and title/meta wording against the query; nothing in
+   LOG.md this week shows that check happened. Rome is the site's
+   deepest page (24 trees) earning zero conversion, the largest
+   un-actioned signal on the site two weeks running.
+2. **[sessie]** Wire directions-click and app-cta events into the daily
+   digest. Third consecutive weekly analysis raising this (08-02, 08-08,
+   now): both columns have read "n/a" or "none recorded" every single day
+   since tracking began. GO_TO_MARKET.md's Phase 1 test is explicitly
+   "does anyone click the walking route or the check-in" and that
+   question currently cannot be answered from any data this project
+   collects.
+3. **[run]** Diagnose the 08-08 traffic spike (70 visits/120 pageviews,
+   the week's outlier by 2-7x) rather than let it pass as noise: check
+   Cloudflare's referrer/landing-page breakdown for that specific day
+   against what shipped that day (the SEO fixes, or something else).
+   Pages-per-visit nearly halved this week; knowing whether the spike
+   was one-time or a new baseline changes how that number should read.
+4. **[run]** Track "árboles históricos de málaga" position weekly from
+   here, since blueprint v1.10 Contract J ties /es/malaga's fate to it
+   directly: move within four weeks of indexing and the experiment opens
+   more Spanish pages, stay flat and it does not. This week's baseline,
+   pre-launch: position 70+, 0 clicks on the English /malaga page.
+5. **[FOR HIDDE]** Waitlist and accounts both show small real growth
+   again this week (waitlist 2 to 5, accounts 0 to 3), arriving four days
+   before your 2026-08-14 steady-fortnight review. Worth having in hand
+   going in; no action needed from a run.
+
+**Watch next week:** whether the favicon/og-tag/MapLibre fixes and the
+Malaga ES launch move CTR or position at all, and whether the twelve
+Portuguese outreach emails produce a single reply, referring domain, or
+photo, the first real test of whether the new distribution lens converts
+to anything measurable.
+
 ## 2026-08-09 (previous UTC day)
 
 **Today: nothing here needs you.** The blocks below are the standing picture.
