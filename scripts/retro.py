@@ -55,6 +55,12 @@ def day_bounds(day):
 def report(day):
     costs = json.load(open(COSTS)) if os.path.exists(COSTS) else {"days": {}}
     rows = costs.get("days", {}).get(day, [])
+    # A day was once written as {"runs": [...]} instead of a list, and iterating
+    # a dict yields its keys, so 31 passes and 3.8M tokens went unreported.
+    # Accept both shapes and ignore anything that is not a pass record.
+    if isinstance(rows, dict):
+        rows = rows.get("runs") or rows.get("passes") or []
+    rows = [r for r in rows if isinstance(r, dict)]
     first, last = day_bounds(day)
     before = trees_at(first) if first else 0
     after = trees_at(last) if last else before
@@ -69,21 +75,42 @@ def report(day):
                     "and an unlogged pass is a day the loop cannot learn from."]
         return "\n".join(out)
 
-    research = [r for r in rows if r["kind"] == "research"]
-    scout = [r for r in rows if r["kind"] == "scout"]
-    r_tok = sum(r["tokens"] for r in research)
-    r_trees = sum(r["trees"] for r in research)
-    s_tok = sum(r["tokens"] for r in scout)
+    # PUBLISHING kinds are the ones that put a tree on the site. A verify pass
+    # feeds a write pass, so counting its trees again would count the same tree
+    # twice; its tokens are still part of what that tree cost.
+    #
+    # This used to read `kind == "research"` only. On 2026-08-06 the assembly
+    # line split a pass into verify and write and "research" stopped being
+    # emitted, so from that day this meter divided by zero trees and printed
+    # nothing, while the real cost per tree went from 37k to 122k. The one
+    # number CLAUDE.md says to watch was blind for the four days it mattered
+    # most. Hence: derive the buckets from the data, never from a hardcoded kind.
+    PUBLISHING = ("write", "research")
+    published = [r for r in rows if r["kind"] in PUBLISHING]
+    p_trees = sum(r["trees"] for r in published)
+    total_tok = sum(r["tokens"] for r in rows)
 
-    out += ["", "| kind | passes | tokens | trees | per tree |", "|---|---|---|---|---|"]
-    if research:
-        out.append(f"| research | {len(research)} | {r_tok:,} | {r_trees} | "
-                   f"{r_tok // max(r_trees, 1):,} |")
-    if scout:
-        out.append(f"| scouting | {len(scout)} | {s_tok:,} | 0 | n/a |")
-    out.append(f"| **total** | {len(rows)} | {sum(r['tokens'] for r in rows):,} | {r_trees} | |")
+    out += ["", "| kind | passes | tokens | trees published | share |",
+            "|---|---|---|---|---|"]
+    for kind in sorted({r["kind"] for r in rows}):
+        krows = [r for r in rows if r["kind"] == kind]
+        ktok = sum(r["tokens"] for r in krows)
+        ktrees = sum(r["trees"] for r in krows) if kind in PUBLISHING else 0
+        shown = str(ktrees) if kind in PUBLISHING else "n/a (feeds a write pass)"
+        out.append(f"| {kind} | {len(krows)} | {ktok:,} | {shown} | "
+                   f"{ktok * 100 // max(total_tok, 1)}% |")
+    out.append(f"| **total** | {len(rows)} | {total_tok:,} | **{p_trees}** | |")
 
-    dear = sorted(research, key=lambda r: -(r["tokens"] / max(r["trees"], 1)))[:3]
+    if p_trees:
+        out += ["", f"**{total_tok // p_trees:,} tokens per published tree** "
+                    f"(every token the day spent, divided by the trees that "
+                    f"actually reached the site). The target is 15,000."]
+    else:
+        out += ["", f"**{total_tok:,} tokens, no tree published.** A whole day of "
+                    f"spend with nothing on the site is the loudest signal this "
+                    f"file can give."]
+
+    dear = sorted(rows, key=lambda r: -(r["tokens"] / max(r["trees"], 1)))[:3]
     out += ["", "**Most expensive per tree.** The tail is where the lesson usually is."]
     for r in dear:
         per = f"{r['tokens'] // r['trees']:,} each" if r["trees"] else "nothing shipped"

@@ -6,6 +6,56 @@ on two different days stops being a note and becomes a build check**; that ratch
 has already produced four of them (count promises, species names, register licence
 blocks, flat phenology curves).
 
+
+## 2026-08-09
+
+Published trees 829 to 893 (+64), 122 commits.
+
+| kind | passes | tokens | trees published | share |
+|---|---|---|---|---|
+| photo | 3 | 449,535 | n/a (feeds a write pass) | 11% |
+| scout | 1 | 0 | n/a (feeds a write pass) | 0% |
+| verify | 23 | 2,937,506 | n/a (feeds a write pass) | 76% |
+| write | 4 | 432,500 | 42 | 11% |
+| **total** | 31 | 3,819,541 | **42** | |
+
+**90,941 tokens per published tree** (every token the day spent, divided by the trees that actually reached the site). The target is 15,000.
+
+**Most expensive per tree.** The tail is where the lesson usually is.
+- baarn-photos: 207,503 tokens, 0 trees, nothing shipped. Manual Dutch-term hunt after the zero-candidate API sweep: 40 images viewed as pixels, 0 approved (parks photographed as places, never as trees), all five exhausted with reasons; iNaturalist around Baarn is entirely NC-licensed. The gap is UGC-shaped: the ringed Pekingtuin oak is the most identifiable submission target on the whole site.
+- Baarn: 185,743 tokens, 0 trees, nothing shipped. Calibration pins: the ice-cellar pin was 380-400m off and is now confirmed on the mapped POI; sequoia/dawn redwood moved off the shared park centroid into the pinetum via winter satellite imagery, honestly still approximate; no new trees cleared two sources, per-lead gaps documented for the owner's local knowledge.
+- Baarn: 162,030 tokens, 0 trees, nothing shipped. Second-source hunt via RCE, Delpher, cantonspark.nl, IVN: honest zero; RCE structurally omits individual plantings (recorded); the Groeneveld front oak turns out to be an oak GROUP (avenue rows), a collectibility concern flagged; the unlock remains the owner's field panels.
+
+## 2026-08-10
+
+Published trees 893 to 897 (+4), 48 commits.
+
+| kind | passes | tokens | trees published | share |
+|---|---|---|---|---|
+| verify | 2 | 359,257 | n/a (feeds a write pass) | 73% |
+| write | 1 | 127,479 | 4 | 26% |
+| **total** | 3 | 486,736 | **4** | |
+
+**121,684 tokens per published tree** (every token the day spent, divided by the trees that actually reached the site). The target is 15,000.
+
+**Most expensive per tree.** The tail is where the lesson usually is.
+- rome: 196,425 tokens, 0 trees, nothing shipped. 0 new trees (register within reach already mined by prior passes); rom_016 pin upgraded approximate->confirmed via Lazio GIS coordinate plus dated aerial imagery; rom_021/rom_022 checked and honestly left approximate; Lazio removals-sheet cross-check against all 24 published trees found no dead tree live
+- kyoto: 162,832 tokens, 4 trees, 40,708 each. Kyoto Gyoen district cluster: 4 new trees around kyo_006 inside 1.1 km, fixing the 35 km spread; 3 ceremonial replanted specimens (Sakon-no-Sakura planted 1998, Ukon-no-Tachibana, Kurumagaeshi-zakura) correctly rejected to leads; found the Kamigyo Ward 'Pride Trees' municipal register, uncatalogued here
+- kyoto: 127,479 tokens, 4 trees, 31,869 each. 4 stories for the Gyoen cluster; also reconciled a Zelkova serrata species-name collision with Seoul/Florence and fixed 2 stale FAQ answers plus 2 count promises. Small batch (4, under the 6 floor) by design: they were the only verified-unwritten trees anywhere. ~21k/tree, the fixed-cost penalty the doctrine predicts for a 4-tree pass.
+
+**The lesson of 2026-08-10, and it is a build check rather than a note.** This
+meter was blind. It bucketed passes on `kind == "research"`, a kind the
+assembly line stopped emitting on 2026-08-06, so for four days it divided by
+zero trees and printed nothing while the real cost per published tree went from
+37k to 122k. A whole day, 2026-08-09, was additionally invisible because it had
+been written as `{"runs": [...]}` instead of a list: 31 passes and 3.8M tokens
+that no retro ever saw. Both are fixed in scripts/retro.py, which now derives
+its buckets from the data instead of a hardcoded kind and accepts either shape.
+The general form, worth more than either fix: **a metric that reads a hardcoded
+category silently reports success when the categories change underneath it.**
+The number CLAUDE.md tells us to watch weekly was the last number to notice
+that anything was wrong.
+
 ## 2026-08-06
 
 `scripts/retro.py`'s own output is not usable today: this session's checkout
