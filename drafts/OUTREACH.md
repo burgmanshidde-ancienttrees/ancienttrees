@@ -233,14 +233,26 @@ analytical justification bolted on:
 > monumental-tree register, a society that has been recording measurements for
 > decades is the only continuous source there is.
 
-His instruction, verbatim: **"Just open with - i love your ... tree!"**
+His instruction, verbatim: **"Just open with - i love your ... tree!"**, then
+sharpened the same day into the line to actually use:
 
-So the first line names their actual tree or place and says he likes it, in the
-words a person would use over a fence. No thesis, no "which is interesting
-because", no explaining why the compliment is deserved. Every fact, number and
-piece of reasoning waits until after the ask. An opening that justifies itself
-reads as machine-written, because explaining a compliment is exactly what a
-machine does when it tries to sound sincere.
+> **I found this tree of yours online and think it's a remarkable tree! My name
+> is Hidde...**
+
+No thesis, no "which is interesting because", no explaining why the compliment
+is deserved. Every fact, number and piece of reasoning waits until after the
+ask. An opening that justifies itself reads as machine-written, because
+explaining a compliment is exactly what a machine does when it tries to sound
+sincere.
+
+And his version does something mine did not: it is **honest about how we know
+the tree**. "The elms flanking the Shaw Memorial are among the very few of that
+generation still standing" implies a familiarity we do not have; we researched
+it from a distance and have never stood in front of it. "I found this tree of
+yours online" says exactly what happened, which is also what every tree page
+already tells readers at the bottom ("This page was researched from a
+distance"). Writing to the one person who HAS stood in front of it, pretending
+otherwise is both dishonest and transparent.
 
 Batches 002 and 003 went out before this was recorded, so 24 mails carry the old
 opening. Nothing to do about those; from batch 004 the first line is one plain
