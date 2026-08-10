@@ -14,6 +14,15 @@ your actual answer to her question. Nothing is hidden by the change: what you
 would be doing is identical, it is just not announced with the word a
 conservation charity is most likely to flinch at.
 
+**And "never for the tree records themselves" is gone, which was my error to
+make twice.** Pricing is yours and undecided, and I had written a permanent
+commitment about it to a named third party who could later hold you to it. Note
+it is already in the first mail you sent ("not for access to the tree data
+itself"), so repeating it here bought nothing and only hardened it. What
+remains says what would be paid without promising what never will be. If you
+ever do want a line like that in writing, it should be because you decided the
+pricing, not because a draft needed a reassuring clause.
+
 Facts checked 2026-08-10: 95 cities, 893 trees, 8 UK cities, 68 UK trees.
 
 ---
@@ -30,8 +39,8 @@ are 95 cities and 893 trees live right now, 8 of those cities in the UK.
 
 I am building this as a private individual, with no institution behind it and
 no outside funding. The site combines official registers, automated checking
-and input from readers. A paid tier is possible later for things like routes
-and offline maps, never for the tree records themselves.
+and input from readers. It is free to use today, and a paid tier is possible
+later for things like routes and offline maps.
 
 Keeping records current is largely automated on my side, so it is far less of a
 burden than it would once have been. Trees do die. I can have the site follow
