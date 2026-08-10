@@ -23,7 +23,7 @@ standing rule, 2026-07-27).
 | 07-28 | 2 | 0 | 0 |
 | 07-29 | 0 | 0 | 0 |
 | 07-30 | 0 | 0 | 0 |
-| 07-31 | 0 | 2 | 1 |
+| 07-31 | 0 | 2 | 0 |
 | 08-01 | 0 | 0 | 0 |
 | 08-02 | 0 | 0 | 0 |
 | 08-03 | 0 | 0 | 0 |
@@ -34,13 +34,13 @@ standing rule, 2026-07-27).
 | 08-08 | 1 | 1 | 0 |
 | 08-09 | 0 | 0 | 0 |
 | 08-10 | 0 | 0 | 0 |
-| **14 days** | **3** | **5** | **1** |
+| **14 days** | **3** | **5** | **0** |
 - Waitlist:    5 total, newest 2 days ago
-- Submissions: 1 total, newest 10 days ago
+- Submissions: 0 total, newest never
 - Accounts:    3 total, newest 2 days ago
 
 **The funnel, as rates**
-- Seen to clicked: 2.4% (80 of 3346) vs 1.7% the fortnight before
+- Seen to clicked: 2.4% (80 of 3362) vs 1.7% the fortnight before
 - Pages per visit: 1.4 (72 visits, 104 pageviews since 2026-08-08)
 - Visits that did something: 0.0% (0 actions on 72 visits)
 
@@ -59,20 +59,20 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | 08-06 | 7 | 215 | 3.3% | 13.4 |
 | 08-07 | 5 | 226 | 2.2% | 9.7 |
 | 08-08 | 7 | 194 | 3.6% | 10.0 |
-| 08-09 | 6 | 235 | 2.6% | 10.8 |
-| **window** | **51** | **2446** | **2.1%** | |
+| 08-09 | 6 | 251 | 2.4% | 11.0 |
+| **window** | **51** | **2462** | **2.1%** | |
 - Top queries (10d): oldest tree in lisbon (i3, p10); "york museum gardens" (i4, p4); 1800 trees (i1, p19); 400 year old tree (i1, p18); alley pond giant (i1, p28)
 - Top pages (10d): / (c3/i23); /kyoto (c3/i46); /app (c2/i9); /berlin/swamp-cypress-of-charlottenburg (c2/i3); /lisbon (c2/i76)
 - Content lead: '1800 trees' has no matching page (i1, p19)
 - Seen, not clicked: /rome (c0/i50, 0.0%) for trees in rome (i16, p19); trees of rome (i8, p26); rome tree (i4, p50)
-- Seen, not clicked: /malaga (c0/i24, 0.0%) for árboles históricos de málaga (i20, p74); malaga tree (i2, p8); malaga trees (i1, p8)
+- Seen, not clicked: /malaga (c0/i25, 0.0%) for árboles históricos de málaga (i20, p74); malaga tree (i3, p6); malaga trees (i1, p8)
 
 **Who they are** (full cut, Mondays)
-Audience, 28 days of search (85 clicks, 3913 impressions):
-- Countries: usa c14/i823; gbr c9/i471; nld c8/i178; deu c6/i175; bel c5/i104
-- Devices: MOBILE c61/i2209; DESKTOP c24/i1665; TABLET c0/i39
-- Landing pages: /lisbon c8/i153; / c4/i47; /porto c4/i33; /amsterdam c3/i237; /kyoto c3/i79
-- Search language (top 100 named queries, crude match, most clicks are in queries Google withholds): English 57q c1/i117; unclassified 38q c0/i76; Spanish 2q c0/i4; French 1q c0/i2; Italian 1q c0/i1; Dutch 1q c0/i1
+Audience, 28 days of search (85 clicks, 3929 impressions):
+- Countries: usa c14/i832; gbr c9/i471; nld c8/i179; deu c6/i175; bel c5/i104
+- Devices: MOBILE c61/i2212; DESKTOP c24/i1678; TABLET c0/i39
+- Landing pages: /lisbon c8/i153; / c4/i47; /porto c4/i33; /amsterdam c3/i238; /kyoto c3/i79
+- Search language (top 100 named queries, crude match, most clicks are in queries Google withholds): English 57q c1/i118; unclassified 38q c0/i76; Spanish 2q c0/i4; French 1q c0/i2; Italian 1q c0/i1; Dutch 1q c0/i1
 On the site since 2026-08-08 (72 visits, 104 pageviews, 1.4 pages per visit):
 - Countries: NL 29; PT 27; US 13; IE 11; DE 5
 - Devices: desktop 75; mobile 29
@@ -104,7 +104,7 @@ Links: external referrers (a link somebody actually clicked): none yet
 
 Machine: 6 chain attempts yesterday, 5 got real work time (~221 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
 
-**Conclusion:** Search is the only channel with real data and it is still small: 6 clicks and 235 impressions on Google's freshest day (day before: c7/i194). Directional at best; no strategic conclusions from these volumes.
+**Conclusion:** Search is the only channel with real data and it is still small: 6 clicks and 251 impressions on Google's freshest day (day before: c7/i194). Directional at best; no strategic conclusions from these volumes.
 
 ## 2026-08-08 (previous UTC day)
 
