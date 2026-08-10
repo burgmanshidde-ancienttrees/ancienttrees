@@ -162,7 +162,24 @@ def gsc_section(gsc):
         return ("Search Console: connected, but Google returned no rows for the window.", None)
     latest = days[-1]
     prev = days[-2] if len(days) > 1 else None
-    trend = "  ".join("%s:c%d/i%d" % (d["keys"][0][5:], d["clicks"], d["impressions"]) for d in days)
+    # A markdown table, not a run-on line. Hidde, 2026-08-10: "ik wil duidelijke
+    # website en search console getallen in een tabel". The old shape packed ten
+    # days into "07-31:c2/i230  08-01:c7/i253 ..." which is technically complete
+    # and unreadable, so nobody read it. CTR is computed here because it is the
+    # column that actually says whether a day was good: impressions move with
+    # Google's mood, the ratio moves with our titles and snippets.
+    rows = ["| Day | Clicks | Impressions | CTR | Position |",
+            "|---|---:|---:|---:|---:|"]
+    for d in days:
+        imp = d["impressions"] or 0
+        rows.append("| %s | %d | %d | %.1f%% | %.1f |" % (
+            d["keys"][0][5:], d["clicks"], imp,
+            (100.0 * d["clicks"] / imp) if imp else 0.0, d.get("position", 0)))
+    tc = sum(d["clicks"] for d in days)
+    ti = sum(d["impressions"] or 0 for d in days)
+    rows.append("| **window** | **%d** | **%d** | **%.1f%%** | |" % (
+        tc, ti, (100.0 * tc / ti) if ti else 0.0))
+    trend = "\n" + "\n".join(rows)
     gap = find_content_gap(gap_queries)
     gap_line = (
         "- Content lead: %r has no matching page (i%d, p%.0f)" % (
@@ -194,7 +211,7 @@ def gsc_section(gsc):
         "- %s: %d clicks, %d impressions, avg position %.1f%s" % (
             latest["keys"][0], latest["clicks"], latest["impressions"], latest["position"],
             (" (day before: c%d/i%d)" % (prev["clicks"], prev["impressions"])) if prev else ""),
-        "- Days: %s" % trend,
+        "%s" % trend,
         "- Top queries (10d): " + "; ".join(
             "%s (i%d, p%.0f)" % (clean_query(r["keys"][0]), r["impressions"], r["position"]) for r in queries) if queries else "- Top queries: none",
         "- Top pages (10d): " + "; ".join(
@@ -301,7 +318,19 @@ query($tag: String!, $since: Date!, $until: Date!) {
     devices = acct[0].get("devices") or []
     if not days:
         return "Web Analytics (beacon): live since 2026-07-27, no visits recorded yet."
-    trend = "  ".join("%s:v%d/p%d" % (d["dimensions"]["date"][5:], d["sum"]["visits"], d["count"]) for d in days)
+    # Same table treatment as the search rows, plus the warning that belongs
+    # beside every one of these numbers: Cloudflare's beacon buckets counts to
+    # the nearest ten, so "10 visits" is anywhere from 5 to 14 and "0" is not
+    # zero. At our volume that makes the per-day column decorative and the
+    # window total the only figure worth reading. Search Console does not
+    # round, which is why it, and not this, is the series to steer by.
+    rows = ["| Day | Visits | Pageviews |", "|---|---:|---:|"]
+    for d in days:
+        rows.append("| %s | %d | %d |" % (
+            d["dimensions"]["date"][5:], d["sum"]["visits"], d["count"]))
+    rows.append("| **window** | **%d** | **%d** |" % (
+        sum(d["sum"]["visits"] for d in days), sum(d["count"] for d in days)))
+    trend = "\n" + "\n".join(rows)
     top = "; ".join("%s (%d)" % (p["dimensions"]["requestPath"], p["count"]) for p in paths)
     def _dim(rows, key, skip=("", None)):
         out = []
@@ -326,7 +355,7 @@ query($tag: String!, $since: Date!, $until: Date!) {
             (qq.get("pageLoadTimeP50") or 0) / 1000,
             (qq.get("pageLoadTimeP90") or 0) / 1000)
     return ("Web Analytics (beacon, real browsers, cookieless):\n"
-            "- Days (visits/pageviews): %s\n- Top paths: %s\n"
+            "Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.\n%s\n- Top paths: %s\n"
             "- Referrers: %s\n- Countries: %s\n- Devices: %s%s"
             % (trend, top, _dim(refs, "refererHost"),
                _dim(countries, "countryName"), _dim(devices, "deviceType"), speed)
