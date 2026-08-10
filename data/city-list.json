@@ -1,1060 +1,1581 @@
 {
-  "updated": "2026-07-20",
-  "note": "Queue principle settled 2026-07-26 after three pulls the same day: English-searching footfall times tree-oldness. UK dense first (travelers AND resident enthusiasts AND the best register), then Ireland, then the remaining European traveler capitals (Budapest, Krakow, Copenhagen, Stockholm, and on), then the Netherlands (locals search Dutch; revives on Dutch pages or local seeding). Future reorder suggestions get tested against this principle instead of restarting the debate.",
-  "cities": [
-    {
-      "city": "Guimaraes",
-      "country": "Portugal",
-      "tier": 2,
-      "slug": "guimaraes",
-      "status": "needs_curation",
-      "note": "ICNF cluster: 14 registered trees within 3.4 km of the UNESCO historic centre, 4 published (planes at the Paco dos Duques, the cloister olive, the Vila Flor camellias, the Atouguia cemetery cedars). Casa de Margaride and Casa da Covilha have genuinely strong trees held back on uncertain private-estate access; Santa Marinha da Costa held back as a hotel with no clear public-access statement. All three, plus the rest of the register, in data/leads/guimaraes.json."
-    },
-    {
-      "city": "Fukuoka",
-      "country": "Japan",
-      "tier": 1,
-      "slug": "fukuoka",
-      "status": "needs_curation",
-      "note": "Hidde, 2026-08-02: he is travelling there, so this one is worth doing properly and soon. Search order per Step 1: name the shrine and temple precincts first (Kushida-jinja and its ginkgo, Sumiyoshi-jinja, Shofuku-ji, Tochoji, Ohori Park, Maizuru Park and the castle ruins, Rakusuien, Atago-jinja), then the national Natural Monument register, then the generic sweep. Note the CURATION.md entry closing Fukuoka is about the REGISTER LAYER only (no openly licensed prefectural dataset), which says nothing about whether the city has remarkable trees to curate."
-    },
-    {
-      "city": "Amsterdam",
-      "country": "Netherlands",
-      "tier": 1,
-      "slug": "amsterdam",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Lisbon",
-      "country": "Portugal",
-      "tier": 1,
-      "slug": "lisbon",
-      "status": "needs_curation"
-    },
-    {
-      "city": "London",
-      "country": "United Kingdom",
-      "tier": 1,
-      "slug": "london",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Paris",
-      "country": "France",
-      "tier": 1,
-      "slug": "paris",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Rome",
-      "country": "Italy",
-      "tier": 1,
-      "slug": "rome",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "tier": 1,
-      "slug": "tokyo",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Istanbul",
-      "country": "Turkey",
-      "tier": 1,
-      "slug": "istanbul",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Barcelona",
-      "country": "Spain",
-      "tier": 1,
-      "slug": "barcelona",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Kyoto",
-      "country": "Japan",
-      "tier": 1,
-      "slug": "kyoto",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Madrid",
-      "country": "Spain",
-      "tier": 1,
-      "slug": "madrid",
-      "status": "needs_curation"
-    },
-    {
-      "city": "New York",
-      "country": "United States",
-      "tier": 1,
-      "slug": "new-york",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Dublin",
-      "country": "Ireland",
-      "tier": 2,
-      "slug": "dublin",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Edinburgh",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "edinburgh",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Brussels",
-      "country": "Belgium",
-      "tier": 2,
-      "slug": "brussels",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Antwerp",
-      "country": "Belgium",
-      "tier": 4,
-      "slug": "antwerp",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Vienna",
-      "country": "Austria",
-      "tier": 1,
-      "slug": "vienna",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Prague",
-      "country": "Czech Republic",
-      "tier": 1,
-      "slug": "prague",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Berlin",
-      "country": "Germany",
-      "tier": 1,
-      "slug": "berlin",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Seville",
-      "country": "Spain",
-      "tier": 1,
-      "slug": "seville",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Porto",
-      "country": "Portugal",
-      "tier": 1,
-      "slug": "porto",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Athens",
-      "country": "Greece",
-      "tier": 1,
-      "slug": "athens",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Florence",
-      "country": "Italy",
-      "tier": 1,
-      "slug": "florence",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Milan",
-      "country": "Italy",
-      "tier": 2,
-      "slug": "milan",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Venice",
-      "country": "Italy",
-      "tier": 2,
-      "slug": "venice",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Munich",
-      "country": "Germany",
-      "tier": 2,
-      "slug": "munich",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Nice",
-      "country": "France",
-      "tier": 2,
-      "slug": "nice",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Lyon",
-      "country": "France",
-      "tier": 2,
-      "slug": "lyon",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Valencia",
-      "country": "Spain",
-      "tier": 2,
-      "slug": "valencia",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Malaga",
-      "country": "Spain",
-      "tier": 2,
-      "slug": "malaga",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Granada",
-      "country": "Spain",
-      "tier": 2,
-      "slug": "granada",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Naples",
-      "country": "Italy",
-      "tier": 2,
-      "slug": "naples",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Bologna",
-      "country": "Italy",
-      "tier": 2,
-      "slug": "bologna",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Verona",
-      "country": "Italy",
-      "tier": 2,
-      "slug": "verona",
-      "status": "needs_curation"
-    },
-    {
-      "city": "York",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "york",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Bath",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "bath",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Oxford",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "oxford",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Cambridge",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "cambridge",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Bristol",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "bristol",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Glasgow",
-      "country": "United Kingdom",
-      "tier": 2,
-      "slug": "glasgow",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Cork",
-      "country": "Ireland",
-      "tier": 2,
-      "slug": "cork",
-      "status": "published"
-    },
-    {
-      "city": "Galway",
-      "country": "Ireland",
-      "tier": 2,
-      "slug": "galway",
-      "status": "pending",
-      "note": "Hidde, 2026-08-02: publish it (\"wat mij betreft mag je galway gewoon online zetten we hebben ze toch\"). The run held it back because Coole Park is 50-70 min by bus, outside the ~30 min day-trip boundary; he widened the boundary for this case. Ship with the true travel time stated in transport, never rounded down. Prior research is in CURATION.md 2026-07-30 and the 2026-08-02 run entry."
-    },
-    {
-      "city": "Budapest",
-      "country": "Hungary",
-      "tier": 2,
-      "slug": "budapest",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Krakow",
-      "country": "Poland",
-      "tier": 2,
-      "slug": "krakow",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Copenhagen",
-      "country": "Denmark",
-      "tier": 2,
-      "slug": "copenhagen",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Stockholm",
-      "country": "Sweden",
-      "tier": 2,
-      "slug": "stockholm",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Dubrovnik",
-      "country": "Croatia",
-      "tier": 4,
-      "slug": "dubrovnik",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Zurich",
-      "country": "Switzerland",
-      "tier": 2,
-      "slug": "zurich",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Oslo",
-      "country": "Norway",
-      "tier": 4,
-      "slug": "oslo",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Helsinki",
-      "country": "Finland",
-      "tier": 4,
-      "slug": "helsinki",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "tier": 2,
-      "slug": "geneva",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Warsaw",
-      "country": "Poland",
-      "tier": 4,
-      "slug": "warsaw",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Zagreb",
-      "country": "Croatia",
-      "tier": 4,
-      "slug": "zagreb",
-      "status": "pending"
-    },
-    {
-      "city": "Utrecht",
-      "country": "Netherlands",
-      "tier": 2,
-      "slug": "utrecht",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Rotterdam",
-      "country": "Netherlands",
-      "tier": 2,
-      "slug": "rotterdam",
-      "status": "needs_curation"
-    },
-    {
-      "city": "The Hague",
-      "country": "Netherlands",
-      "tier": 2,
-      "slug": "the-hague",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Haarlem",
-      "country": "Netherlands",
-      "tier": 2,
-      "slug": "haarlem",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Groningen",
-      "country": "Netherlands",
-      "tier": 2,
-      "slug": "groningen",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Leiden",
-      "country": "Netherlands",
-      "tier": 2,
-      "slug": "leiden",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Delft",
-      "country": "Netherlands",
-      "tier": 2,
-      "slug": "delft",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Maastricht",
-      "country": "Netherlands",
-      "tier": 2,
-      "slug": "maastricht",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Nijmegen",
-      "country": "Netherlands",
-      "tier": 2,
-      "slug": "nijmegen",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Breda",
-      "country": "Netherlands",
-      "tier": 2,
-      "slug": "breda",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Den Bosch",
-      "country": "Netherlands",
-      "tier": 2,
-      "slug": "den-bosch",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Arnhem",
-      "country": "Netherlands",
-      "tier": 2,
-      "slug": "arnhem",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Palermo",
-      "country": "Italy",
-      "tier": 2,
-      "slug": "palermo",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Thessaloniki",
-      "country": "Greece",
-      "tier": 4,
-      "slug": "thessaloniki",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Gdansk",
-      "country": "Poland",
-      "tier": 4,
-      "slug": "gdansk",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Ljubljana",
-      "country": "Slovenia",
-      "tier": 4,
-      "slug": "ljubljana",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Split",
-      "country": "Croatia",
-      "tier": 4,
-      "slug": "split",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Belgrade",
-      "country": "Serbia",
-      "tier": 4,
-      "slug": "belgrade",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Bucharest",
-      "country": "Romania",
-      "tier": 4,
-      "slug": "bucharest",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Sofia",
-      "country": "Bulgaria",
-      "tier": 4,
-      "slug": "sofia",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Reykjavik",
-      "country": "Iceland",
-      "tier": 4,
-      "slug": "reykjavik",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Singapore",
-      "country": "Singapore",
-      "tier": 1,
-      "slug": "singapore",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Bangkok",
-      "country": "Thailand",
-      "tier": 1,
-      "slug": "bangkok",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Dubai",
-      "country": "United Arab Emirates",
-      "tier": 2,
-      "slug": "dubai",
-      "status": "pending"
-    },
-    {
-      "city": "Hong Kong",
-      "country": "China",
-      "tier": 2,
-      "slug": "hong-kong",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Seoul",
-      "country": "South Korea",
-      "tier": 2,
-      "slug": "seoul",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Osaka",
-      "country": "Japan",
-      "tier": 2,
-      "slug": "osaka",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Kuala Lumpur",
-      "country": "Malaysia",
-      "tier": 3,
-      "slug": "kuala-lumpur",
-      "status": "pending"
-    },
-    {
-      "city": "Taipei",
-      "country": "Taiwan",
-      "tier": 3,
-      "slug": "taipei",
-      "status": "pending"
-    },
-    {
-      "city": "Shanghai",
-      "country": "China",
-      "tier": 3,
-      "slug": "shanghai",
-      "status": "pending"
-    },
-    {
-      "city": "Beijing",
-      "country": "China",
-      "tier": 3,
-      "slug": "beijing",
-      "status": "pending"
-    },
-    {
-      "city": "Delhi",
-      "country": "India",
-      "tier": 3,
-      "slug": "delhi",
-      "status": "pending"
-    },
-    {
-      "city": "Mumbai",
-      "country": "India",
-      "tier": 3,
-      "slug": "mumbai",
-      "status": "pending"
-    },
-    {
-      "city": "Agra",
-      "country": "India",
-      "tier": 3,
-      "slug": "agra",
-      "status": "pending"
-    },
-    {
-      "city": "Jaipur",
-      "country": "India",
-      "tier": 3,
-      "slug": "jaipur",
-      "status": "pending"
-    },
-    {
-      "city": "Cairo",
-      "country": "Egypt",
-      "tier": 3,
-      "slug": "cairo",
-      "status": "pending"
-    },
-    {
-      "city": "Marrakech",
-      "country": "Morocco",
-      "tier": 3,
-      "slug": "marrakech",
-      "status": "pending"
-    },
-    {
-      "city": "Cape Town",
-      "country": "South Africa",
-      "tier": 3,
-      "slug": "cape-town",
-      "status": "pending"
-    },
-    {
-      "city": "Mexico City",
-      "country": "Mexico",
-      "tier": 3,
-      "slug": "mexico-city",
-      "status": "pending"
-    },
-    {
-      "city": "Buenos Aires",
-      "country": "Argentina",
-      "tier": 3,
-      "slug": "buenos-aires",
-      "status": "pending"
-    },
-    {
-      "city": "Rio de Janeiro",
-      "country": "Brazil",
-      "tier": 3,
-      "slug": "rio-de-janeiro",
-      "status": "pending"
-    },
-    {
-      "city": "Sao Paulo",
-      "country": "Brazil",
-      "tier": 3,
-      "slug": "sao-paulo",
-      "status": "pending"
-    },
-    {
-      "city": "Lima",
-      "country": "Peru",
-      "tier": 3,
-      "slug": "lima",
-      "status": "pending"
-    },
-    {
-      "city": "Bogota",
-      "country": "Colombia",
-      "tier": 3,
-      "slug": "bogota",
-      "status": "pending"
-    },
-    {
-      "city": "Santiago",
-      "country": "Chile",
-      "tier": 3,
-      "slug": "santiago",
-      "status": "pending"
-    },
-    {
-      "city": "Toronto",
-      "country": "Canada",
-      "tier": 3,
-      "slug": "toronto",
-      "status": "pending"
-    },
-    {
-      "city": "Vancouver",
-      "country": "Canada",
-      "tier": 3,
-      "slug": "vancouver",
-      "status": "pending"
-    },
-    {
-      "city": "Montreal",
-      "country": "Canada",
-      "tier": 3,
-      "slug": "montreal",
-      "status": "pending"
-    },
-    {
-      "city": "Los Angeles",
-      "country": "United States",
-      "tier": 3,
-      "slug": "los-angeles",
-      "status": "pending"
-    },
-    {
-      "city": "San Francisco",
-      "country": "United States",
-      "tier": 3,
-      "slug": "san-francisco",
-      "status": "pending"
-    },
-    {
-      "city": "Chicago",
-      "country": "United States",
-      "tier": 3,
-      "slug": "chicago",
-      "status": "pending"
-    },
-    {
-      "city": "Miami",
-      "country": "United States",
-      "tier": 3,
-      "slug": "miami",
-      "status": "pending"
-    },
-    {
-      "city": "Washington DC",
-      "country": "United States",
-      "tier": 4,
-      "slug": "washington-dc",
-      "status": "pending"
-    },
-    {
-      "city": "Boston",
-      "country": "United States",
-      "tier": 4,
-      "slug": "boston",
-      "status": "pending"
-    },
-    {
-      "city": "New Orleans",
-      "country": "United States",
-      "tier": 4,
-      "slug": "new-orleans",
-      "status": "pending"
-    },
-    {
-      "city": "Philadelphia",
-      "country": "United States",
-      "tier": 4,
-      "slug": "philadelphia",
-      "status": "pending"
-    },
-    {
-      "city": "Seattle",
-      "country": "United States",
-      "tier": 4,
-      "slug": "seattle",
-      "status": "pending"
-    },
-    {
-      "city": "Sydney",
-      "country": "Australia",
-      "tier": 4,
-      "slug": "sydney",
-      "status": "pending"
-    },
-    {
-      "city": "Melbourne",
-      "country": "Australia",
-      "tier": 4,
-      "slug": "melbourne",
-      "status": "pending"
-    },
-    {
-      "city": "Auckland",
-      "country": "New Zealand",
-      "tier": 4,
-      "slug": "auckland",
-      "status": "pending"
-    },
-    {
-      "city": "Denpasar",
-      "country": "Indonesia",
-      "tier": 4,
-      "slug": "denpasar",
-      "status": "pending"
-    },
-    {
-      "city": "Jakarta",
-      "country": "Indonesia",
-      "tier": 4,
-      "slug": "jakarta",
-      "status": "pending"
-    },
-    {
-      "city": "Ho Chi Minh City",
-      "country": "Vietnam",
-      "tier": 4,
-      "slug": "ho-chi-minh-city",
-      "status": "pending"
-    },
-    {
-      "city": "Hanoi",
-      "country": "Vietnam",
-      "tier": 4,
-      "slug": "hanoi",
-      "status": "pending"
-    },
-    {
-      "city": "Phuket",
-      "country": "Thailand",
-      "tier": 4,
-      "slug": "phuket",
-      "status": "pending"
-    },
-    {
-      "city": "Chiang Mai",
-      "country": "Thailand",
-      "tier": 4,
-      "slug": "chiang-mai",
-      "status": "pending"
-    },
-    {
-      "city": "Manila",
-      "country": "Philippines",
-      "tier": 4,
-      "slug": "manila",
-      "status": "pending"
-    },
-    {
-      "city": "Tel Aviv",
-      "country": "Israel",
-      "tier": 4,
-      "slug": "tel-aviv",
-      "status": "pending"
-    },
-    {
-      "city": "Cadiz",
-      "country": "Spain",
-      "tier": 2,
-      "slug": "cadiz",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Sintra",
-      "country": "Portugal",
-      "tier": 2,
-      "slug": "sintra",
-      "status": "needs_curation"
-    },
-    {
-      "city": "Nara",
-      "country": "Japan",
-      "tier": 2,
-      "slug": "nara",
-      "status": "published"
-    },
-    {
-      "city": "Kobe",
-      "country": "Japan",
-      "tier": 2,
-      "slug": "kobe",
-      "status": "pending"
-    },
-    {
-      "city": "Kamakura",
-      "country": "Japan",
-      "tier": 2,
-      "slug": "kamakura",
-      "status": "pending"
-    },
-    {
-      "city": "Kanazawa",
-      "country": "Japan",
-      "tier": 2,
-      "slug": "kanazawa",
-      "status": "pending"
-    },
-    {
-      "city": "Hiroshima",
-      "country": "Japan",
-      "tier": 2,
-      "slug": "hiroshima",
-      "status": "pending"
-    },
-    {
-      "city": "Nagoya",
-      "country": "Japan",
-      "tier": 2,
-      "slug": "nagoya",
-      "status": "pending"
-    },
-    {
-      "city": "Cordoba",
-      "country": "Spain",
-      "tier": 2,
-      "slug": "cordoba",
-      "status": "published"
-    },
-    {
-      "city": "Bilbao",
-      "country": "Spain",
-      "tier": 2,
-      "slug": "bilbao",
-      "status": "pending"
-    },
-    {
-      "city": "Toledo",
-      "country": "Spain",
-      "tier": 2,
-      "slug": "toledo",
-      "status": "pending"
-    },
-    {
-      "city": "Salamanca",
-      "country": "Spain",
-      "tier": 2,
-      "slug": "salamanca",
-      "status": "pending"
-    },
-    {
-      "city": "Santiago de Compostela",
-      "country": "Spain",
-      "tier": 2,
-      "slug": "santiago-de-compostela",
-      "status": "pending"
-    },
-    {
-      "city": "Zaragoza",
-      "country": "Spain",
-      "tier": 2,
-      "slug": "zaragoza",
-      "status": "pending"
-    },
-    {
-      "city": "San Sebastian",
-      "country": "Spain",
-      "tier": 2,
-      "slug": "san-sebastian",
-      "status": "pending"
-    },
-    {
-      "city": "Coimbra",
-      "country": "Portugal",
-      "tier": 2,
-      "slug": "coimbra",
-      "status": "pending"
-    },
-    {
-      "city": "Braga",
-      "country": "Portugal",
-      "tier": 2,
-      "slug": "braga",
-      "status": "pending"
-    },
-    {
-      "city": "Funchal",
-      "country": "Portugal",
-      "tier": 2,
-      "slug": "funchal",
-      "status": "pending"
-    },
-    {
-      "city": "Setubal",
-      "country": "Portugal",
-      "tier": 2,
-      "slug": "setubal",
-      "status": "published"
-    },
-    {
-      "city": "Bucaco",
-      "country": "Portugal",
-      "tier": 2,
-      "slug": "bucaco",
-      "status": "published",
-      "note": "Not a city: the walled Mata Nacional do Bucaco inside the concelho of Mealhada, freguesia of Luso. Named for the place a visitor actually goes and searches for. 29 ICNF-classified trees inside 900 metres, 6 published, the rest in data/leads/bucaco.json."
-    },
-    {
-      "city": "Lucca",
-      "country": "Italy",
-      "tier": 2,
-      "slug": "lucca",
-      "status": "published",
-      "note": "MASAF cluster: 20 registered trees inside 1.6 km, 6 published as one walk of about 800 m entirely inside the walls. Rest in data/leads/lucca.json."
-    },
-    {
-      "city": "Caserta",
-      "country": "Italy",
-      "tier": 2,
-      "slug": "caserta",
-      "status": "published",
-      "note": "MASAF cluster in the Reggia's English Garden: 41 registered trees within 3 km, 7 published, six of them within 200 m. Campania's regional register (agricoltura.regione.campania.it/foreste/monum/scheda_NNN.html) supplied the ages MASAF lacks."
-    },
-    {
-      "city": "Trieste",
-      "country": "Italy",
-      "tier": 2,
-      "slug": "trieste",
-      "status": "published",
-      "note": "Densest cluster in the Italian register: 34 designated trees in two groups, one of them 12 within 300 m. Published as two walks 8 km apart (Miramare park and the city centre), which the FAQ says plainly. Rest in data/leads/trieste.json."
-    },
-    {
-      "city": "Turin",
-      "country": "Italy",
-      "tier": 1,
-      "slug": "turin",
-      "status": "published",
-      "note": "One walk, Porta Nuova station to the Po, 1.94 km spread. Taken from the official 13.9 km tourist route, which is really four walks; the other three are in data/leads/turin.json. Piemonte's regional register (data/registers/piemonte-alberi-monumentali.json) carries presumed age bands and removal status, which no other Italian source does."
-    },
-    {
-      "city": "Genoa",
-      "country": "Italy",
-      "tier": 1,
-      "slug": "genoa",
-      "status": "published",
-      "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF."
-    },
-    {
-      "city": "Padua",
-      "country": "Italy",
-      "tier": 2,
-      "slug": "padua",
-      "status": "needs_curation",
-      "note": "Salvaged from an interrupted verification pass (RAMI, ilregistrodeglialberi.it, filled the age/health/access gap MASAF lacks). 9 trees inside a 1.25 km walk: four in the 1545 Orto Botanico (the Goethe Palm, an Oriental Plane, a grafted Ginkgo, a 1786 Magnolia), a magnolia in the Sant Antonio basilica cloister, two planes and a leaning hackberry in Parco Treves, and a folded twin-tree Sophora entry in Piazza Capitaniato. Full detail in data/research/padova-notes.md and data/leads/padova.json. Renamed from Padova to Padua 2026-08-06, hours after publication, to match the English exonym every other Italian city here uses; old URLs redirect."
-    },
-    {
-      "city": "Baarn",
-      "country": "Netherlands",
-      "tier": 3,
-      "slug": "baarn",
-      "status": "needs_curation",
-      "note": "Off-focus, opened 2026-08-08 on Hidde's explicit call (his hometown). Cantonspark ex-botanical garden + Groeneveld + the Pekingtuin oak he pointed at himself."
-    }
-  ]
+ "note": "The single queue, reconciled 2026-08-10 after Hidde pointed out that time keeps going to the wrong cities. It was going to the wrong cities because there were two lists and they disagreed: rollout-25.json opened with London, this file opened with Guimaraes and Fukuoka, and CLAUDE.md Step 0 tells every run to read THIS one. Ranks 1-25 are now exactly rollout-25.json's order, confirmed by Hidde 2026-08-08. Ranks 26 and beyond are sorted by measured demand (English Wikipedia pageviews over 90 days, scripts/demand.py) rather than by a second hand-made guess, because the first hand-made guess is what put Bucaco, at 132 views against London's 718,291, near the top of a queue. Status is derived from data/cities/ rather than maintained by hand: 85 of 95 live cities were still marked needs_curation here.",
+ "queues": {
+  "top-25": "Hidde's confirmed rollout, in his order. Nothing outranks these except reader submissions and a broken site.",
+  "next": "ranks 26-100, ordered by measured demand",
+  "bench": "beyond 100, kept for the record"
+ },
+ "cities": [
+  {
+   "city": "London",
+   "country": "United Kingdom",
+   "tier": 1,
+   "slug": "london",
+   "status": "published",
+   "rank": 1,
+   "queue": "top-25",
+   "trees": 23
+  },
+  {
+   "city": "Paris",
+   "country": "France",
+   "tier": 1,
+   "slug": "paris",
+   "status": "published",
+   "rank": 2,
+   "queue": "top-25",
+   "trees": 25
+  },
+  {
+   "city": "New York",
+   "country": "United States",
+   "tier": 1,
+   "slug": "new-york",
+   "status": "published",
+   "rank": 3,
+   "queue": "top-25",
+   "trees": 20
+  },
+  {
+   "city": "Rome",
+   "country": "Italy",
+   "tier": 1,
+   "slug": "rome",
+   "status": "published",
+   "rank": 4,
+   "queue": "top-25",
+   "trees": 24
+  },
+  {
+   "city": "Amsterdam",
+   "country": "Netherlands",
+   "tier": 1,
+   "slug": "amsterdam",
+   "status": "published",
+   "rank": 5,
+   "queue": "top-25",
+   "trees": 20
+  },
+  {
+   "city": "Barcelona",
+   "country": "Spain",
+   "tier": 1,
+   "slug": "barcelona",
+   "status": "published",
+   "rank": 6,
+   "queue": "top-25",
+   "trees": 33
+  },
+  {
+   "city": "Berlin",
+   "country": "Germany",
+   "tier": 1,
+   "slug": "berlin",
+   "status": "published",
+   "rank": 7,
+   "queue": "top-25",
+   "trees": 18
+  },
+  {
+   "city": "Chicago",
+   "country": "United States",
+   "tier": 3,
+   "slug": "chicago",
+   "status": "published",
+   "rank": 8,
+   "queue": "top-25",
+   "trees": 6
+  },
+  {
+   "city": "Washington DC",
+   "country": "United States",
+   "tier": 4,
+   "slug": "washington-dc",
+   "status": "published",
+   "rank": 9,
+   "queue": "top-25",
+   "trees": 14
+  },
+  {
+   "city": "Boston",
+   "country": "United States",
+   "tier": 4,
+   "slug": "boston",
+   "status": "published",
+   "rank": 10,
+   "queue": "top-25",
+   "trees": 10
+  },
+  {
+   "city": "Vienna",
+   "country": "Austria",
+   "tier": 1,
+   "slug": "vienna",
+   "status": "published",
+   "rank": 11,
+   "queue": "top-25",
+   "trees": 22
+  },
+  {
+   "city": "Edinburgh",
+   "country": "United Kingdom",
+   "tier": 2,
+   "slug": "edinburgh",
+   "status": "published",
+   "rank": 12,
+   "queue": "top-25",
+   "trees": 15
+  },
+  {
+   "city": "Dublin",
+   "country": "Ireland",
+   "tier": 2,
+   "slug": "dublin",
+   "status": "published",
+   "rank": 13,
+   "queue": "top-25",
+   "trees": 17
+  },
+  {
+   "city": "Madrid",
+   "country": "Spain",
+   "tier": 1,
+   "slug": "madrid",
+   "status": "published",
+   "rank": 14,
+   "queue": "top-25",
+   "trees": 17
+  },
+  {
+   "city": "Lisbon",
+   "country": "Portugal",
+   "tier": 1,
+   "slug": "lisbon",
+   "status": "published",
+   "rank": 15,
+   "queue": "top-25",
+   "trees": 21
+  },
+  {
+   "city": "Prague",
+   "country": "Czech Republic",
+   "tier": 1,
+   "slug": "prague",
+   "status": "published",
+   "rank": 16,
+   "queue": "top-25",
+   "trees": 16
+  },
+  {
+   "city": "Florence",
+   "country": "Italy",
+   "tier": 1,
+   "slug": "florence",
+   "status": "published",
+   "rank": 17,
+   "queue": "top-25",
+   "trees": 15
+  },
+  {
+   "city": "Venice",
+   "country": "Italy",
+   "tier": 2,
+   "slug": "venice",
+   "status": "published",
+   "rank": 18,
+   "queue": "top-25",
+   "trees": 11
+  },
+  {
+   "city": "Munich",
+   "country": "Germany",
+   "tier": 2,
+   "slug": "munich",
+   "status": "published",
+   "rank": 19,
+   "queue": "top-25",
+   "trees": 14
+  },
+  {
+   "city": "Milan",
+   "country": "Italy",
+   "tier": 2,
+   "slug": "milan",
+   "status": "published",
+   "rank": 20,
+   "queue": "top-25",
+   "trees": 18
+  },
+  {
+   "city": "Istanbul",
+   "country": "Turkey",
+   "tier": 1,
+   "slug": "istanbul",
+   "status": "published",
+   "rank": 21,
+   "queue": "top-25",
+   "trees": 14
+  },
+  {
+   "city": "Athens",
+   "country": "Greece",
+   "tier": 1,
+   "slug": "athens",
+   "status": "published",
+   "rank": 22,
+   "queue": "top-25",
+   "trees": 12
+  },
+  {
+   "city": "Budapest",
+   "country": "Hungary",
+   "tier": 2,
+   "slug": "budapest",
+   "status": "published",
+   "rank": 23,
+   "queue": "top-25",
+   "trees": 12
+  },
+  {
+   "city": "Seville",
+   "country": "Spain",
+   "tier": 1,
+   "slug": "seville",
+   "status": "published",
+   "rank": 24,
+   "queue": "top-25",
+   "trees": 16
+  },
+  {
+   "city": "Copenhagen",
+   "country": "Denmark",
+   "tier": 2,
+   "slug": "copenhagen",
+   "status": "published",
+   "rank": 25,
+   "queue": "top-25",
+   "trees": 13
+  },
+  {
+   "city": "Singapore",
+   "country": "Singapore",
+   "tier": 1,
+   "slug": "singapore",
+   "status": "published",
+   "rank": 26,
+   "queue": "next",
+   "demand_views_90d": 967821,
+   "trees": 7
+  },
+  {
+   "city": "Hong Kong",
+   "country": "China",
+   "tier": 2,
+   "slug": "hong-kong",
+   "status": "published",
+   "rank": 27,
+   "queue": "next",
+   "demand_views_90d": 689212,
+   "trees": 6
+  },
+  {
+   "city": "Tokyo",
+   "country": "Japan",
+   "tier": 1,
+   "slug": "tokyo",
+   "status": "published",
+   "rank": 28,
+   "queue": "next",
+   "demand_views_90d": 394702,
+   "trees": 10
+  },
+  {
+   "city": "Glasgow",
+   "country": "United Kingdom",
+   "tier": 2,
+   "slug": "glasgow",
+   "status": "published",
+   "rank": 29,
+   "queue": "next",
+   "demand_views_90d": 253705,
+   "trees": 4
+  },
+  {
+   "city": "The Hague",
+   "country": "Netherlands",
+   "tier": 2,
+   "slug": "the-hague",
+   "status": "published",
+   "rank": 30,
+   "queue": "next",
+   "demand_views_90d": 236723,
+   "trees": 5
+  },
+  {
+   "city": "Bangkok",
+   "country": "Thailand",
+   "tier": 1,
+   "slug": "bangkok",
+   "status": "published",
+   "rank": 31,
+   "queue": "next",
+   "demand_views_90d": 222206,
+   "trees": 5
+  },
+  {
+   "city": "Seoul",
+   "country": "South Korea",
+   "tier": 2,
+   "slug": "seoul",
+   "status": "published",
+   "rank": 32,
+   "queue": "next",
+   "demand_views_90d": 206265,
+   "trees": 8
+  },
+  {
+   "city": "Naples",
+   "country": "Italy",
+   "tier": 2,
+   "slug": "naples",
+   "status": "published",
+   "rank": 33,
+   "queue": "next",
+   "demand_views_90d": 198913,
+   "trees": 17
+  },
+  {
+   "city": "Warsaw",
+   "country": "Poland",
+   "tier": 4,
+   "slug": "warsaw",
+   "status": "published",
+   "rank": 34,
+   "queue": "next",
+   "demand_views_90d": 197929,
+   "trees": 5
+  },
+  {
+   "city": "Stockholm",
+   "country": "Sweden",
+   "tier": 2,
+   "slug": "stockholm",
+   "status": "published",
+   "rank": 35,
+   "queue": "next",
+   "demand_views_90d": 188184,
+   "trees": 4
+  },
+  {
+   "city": "Oslo",
+   "country": "Norway",
+   "tier": 4,
+   "slug": "oslo",
+   "status": "published",
+   "rank": 36,
+   "queue": "next",
+   "demand_views_90d": 181113,
+   "trees": 4
+  },
+  {
+   "city": "Thessaloniki",
+   "country": "Greece",
+   "tier": 4,
+   "slug": "thessaloniki",
+   "status": "published",
+   "rank": 37,
+   "queue": "next",
+   "demand_views_90d": 180145,
+   "trees": 4
+  },
+  {
+   "city": "Belgrade",
+   "country": "Serbia",
+   "tier": 4,
+   "slug": "belgrade",
+   "status": "published",
+   "rank": 38,
+   "queue": "next",
+   "demand_views_90d": 178116,
+   "trees": 4
+  },
+  {
+   "city": "Brussels",
+   "country": "Belgium",
+   "tier": 2,
+   "slug": "brussels",
+   "status": "published",
+   "rank": 39,
+   "queue": "next",
+   "demand_views_90d": 176863,
+   "trees": 16
+  },
+  {
+   "city": "Funchal",
+   "country": "Portugal",
+   "tier": 2,
+   "slug": "funchal",
+   "status": "pending",
+   "rank": 40,
+   "queue": "next",
+   "demand_views_90d": 174351
+  },
+  {
+   "city": "Reykjavik",
+   "country": "Iceland",
+   "tier": 4,
+   "slug": "reykjavik",
+   "status": "published",
+   "rank": 41,
+   "queue": "next",
+   "demand_views_90d": 166789,
+   "trees": 4
+  },
+  {
+   "city": "Bristol",
+   "country": "United Kingdom",
+   "tier": 2,
+   "slug": "bristol",
+   "status": "published",
+   "rank": 42,
+   "queue": "next",
+   "demand_views_90d": 163983,
+   "trees": 5
+  },
+  {
+   "city": "Osaka",
+   "country": "Japan",
+   "tier": 2,
+   "slug": "osaka",
+   "status": "published",
+   "rank": 43,
+   "queue": "next",
+   "demand_views_90d": 163112,
+   "trees": 4
+  },
+  {
+   "city": "Geneva",
+   "country": "Switzerland",
+   "tier": 2,
+   "slug": "geneva",
+   "status": "published",
+   "rank": 44,
+   "queue": "next",
+   "demand_views_90d": 162269,
+   "trees": 6
+  },
+  {
+   "city": "Valencia",
+   "country": "Spain",
+   "tier": 2,
+   "slug": "valencia",
+   "status": "published",
+   "rank": 45,
+   "queue": "next",
+   "demand_views_90d": 162209,
+   "trees": 16
+  },
+  {
+   "city": "Helsinki",
+   "country": "Finland",
+   "tier": 4,
+   "slug": "helsinki",
+   "status": "published",
+   "rank": 46,
+   "queue": "next",
+   "demand_views_90d": 148908,
+   "trees": 8
+  },
+  {
+   "city": "Turin",
+   "country": "Italy",
+   "tier": 1,
+   "slug": "turin",
+   "status": "published",
+   "note": "One walk, Porta Nuova station to the Po, 1.94 km spread. Taken from the official 13.9 km tourist route, which is really four walks; the other three are in data/leads/turin.json. Piemonte's regional register (data/registers/piemonte-alberi-monumentali.json) carries presumed age bands and removal status, which no other Italian source does.",
+   "rank": 47,
+   "queue": "next",
+   "demand_views_90d": 147456,
+   "trees": 8
+  },
+  {
+   "city": "Bologna",
+   "country": "Italy",
+   "tier": 2,
+   "slug": "bologna",
+   "status": "published",
+   "rank": 48,
+   "queue": "next",
+   "demand_views_90d": 146161,
+   "trees": 10
+  },
+  {
+   "city": "Genoa",
+   "country": "Italy",
+   "tier": 1,
+   "slug": "genoa",
+   "status": "published",
+   "note": "First city through the split pipeline (generated brief, verify pass on Sonnet, writing pass). Three pockets, not one walk; the page says so. Liguria's own register carries an age field, unlike MASAF.",
+   "rank": 49,
+   "queue": "next",
+   "demand_views_90d": 145206,
+   "trees": 10
+  },
+  {
+   "city": "Bath",
+   "country": "United Kingdom",
+   "tier": 2,
+   "slug": "bath",
+   "status": "published",
+   "rank": 50,
+   "queue": "next",
+   "demand_views_90d": 144950,
+   "trees": 5
+  },
+  {
+   "city": "Kyoto",
+   "country": "Japan",
+   "tier": 1,
+   "slug": "kyoto",
+   "status": "published",
+   "rank": 51,
+   "queue": "next",
+   "demand_views_90d": 142353,
+   "trees": 10
+  },
+  {
+   "city": "Krakow",
+   "country": "Poland",
+   "tier": 2,
+   "slug": "krakow",
+   "status": "published",
+   "rank": 52,
+   "queue": "next",
+   "demand_views_90d": 140824,
+   "trees": 4
+  },
+  {
+   "city": "Zurich",
+   "country": "Switzerland",
+   "tier": 2,
+   "slug": "zurich",
+   "status": "published",
+   "rank": 53,
+   "queue": "next",
+   "demand_views_90d": 140788,
+   "trees": 4
+  },
+  {
+   "city": "Sofia",
+   "country": "Bulgaria",
+   "tier": 4,
+   "slug": "sofia",
+   "status": "published",
+   "rank": 54,
+   "queue": "next",
+   "demand_views_90d": 138710,
+   "trees": 4
+  },
+  {
+   "city": "Lyon",
+   "country": "France",
+   "tier": 2,
+   "slug": "lyon",
+   "status": "published",
+   "rank": 55,
+   "queue": "next",
+   "demand_views_90d": 136951,
+   "trees": 9
+  },
+  {
+   "city": "Nice",
+   "country": "France",
+   "tier": 2,
+   "slug": "nice",
+   "status": "published",
+   "rank": 56,
+   "queue": "next",
+   "demand_views_90d": 136877,
+   "trees": 10
+  },
+  {
+   "city": "Bucharest",
+   "country": "Romania",
+   "tier": 4,
+   "slug": "bucharest",
+   "status": "published",
+   "rank": 57,
+   "queue": "next",
+   "demand_views_90d": 136836,
+   "trees": 4
+  },
+  {
+   "city": "Split",
+   "country": "Croatia",
+   "tier": 4,
+   "slug": "split",
+   "status": "published",
+   "rank": 58,
+   "queue": "next",
+   "demand_views_90d": 132399,
+   "trees": 4
+  },
+  {
+   "city": "Antwerp",
+   "country": "Belgium",
+   "tier": 4,
+   "slug": "antwerp",
+   "status": "published",
+   "rank": 59,
+   "queue": "next",
+   "demand_views_90d": 128289,
+   "trees": 10
+  },
+  {
+   "city": "Ljubljana",
+   "country": "Slovenia",
+   "tier": 4,
+   "slug": "ljubljana",
+   "status": "published",
+   "rank": 60,
+   "queue": "next",
+   "demand_views_90d": 125046,
+   "trees": 4
+  },
+  {
+   "city": "Palermo",
+   "country": "Italy",
+   "tier": 2,
+   "slug": "palermo",
+   "status": "published",
+   "rank": 61,
+   "queue": "next",
+   "demand_views_90d": 124310,
+   "trees": 8
+  },
+  {
+   "city": "Porto",
+   "country": "Portugal",
+   "tier": 1,
+   "slug": "porto",
+   "status": "published",
+   "rank": 62,
+   "queue": "next",
+   "demand_views_90d": 120415,
+   "trees": 17
+  },
+  {
+   "city": "Dubrovnik",
+   "country": "Croatia",
+   "tier": 4,
+   "slug": "dubrovnik",
+   "status": "published",
+   "rank": 63,
+   "queue": "next",
+   "demand_views_90d": 119586,
+   "trees": 4
+  },
+  {
+   "city": "York",
+   "country": "United Kingdom",
+   "tier": 2,
+   "slug": "york",
+   "status": "published",
+   "rank": 64,
+   "queue": "next",
+   "demand_views_90d": 118066,
+   "trees": 6
+  },
+  {
+   "city": "Malaga",
+   "country": "Spain",
+   "tier": 2,
+   "slug": "malaga",
+   "status": "published",
+   "rank": 65,
+   "queue": "next",
+   "demand_views_90d": 117780,
+   "trees": 10
+  },
+  {
+   "city": "Trieste",
+   "country": "Italy",
+   "tier": 2,
+   "slug": "trieste",
+   "status": "published",
+   "note": "Densest cluster in the Italian register: 34 designated trees in two groups, one of them 12 within 300 m. Published as two walks 8 km apart (Miramare park and the city centre), which the FAQ says plainly. Rest in data/leads/trieste.json.",
+   "rank": 66,
+   "queue": "next",
+   "demand_views_90d": 117233,
+   "trees": 8
+  },
+  {
+   "city": "Oxford",
+   "country": "United Kingdom",
+   "tier": 2,
+   "slug": "oxford",
+   "status": "published",
+   "rank": 67,
+   "queue": "next",
+   "demand_views_90d": 111583,
+   "trees": 5
+  },
+  {
+   "city": "Rotterdam",
+   "country": "Netherlands",
+   "tier": 2,
+   "slug": "rotterdam",
+   "status": "published",
+   "rank": 68,
+   "queue": "next",
+   "demand_views_90d": 104938,
+   "trees": 5
+  },
+  {
+   "city": "Cork",
+   "country": "Ireland",
+   "tier": 2,
+   "slug": "cork",
+   "status": "published",
+   "rank": 69,
+   "queue": "next",
+   "demand_views_90d": 101405,
+   "trees": 5
+  },
+  {
+   "city": "Cambridge",
+   "country": "United Kingdom",
+   "tier": 2,
+   "slug": "cambridge",
+   "status": "published",
+   "rank": 70,
+   "queue": "next",
+   "demand_views_90d": 97974,
+   "trees": 5
+  },
+  {
+   "city": "Zaragoza",
+   "country": "Spain",
+   "tier": 2,
+   "slug": "zaragoza",
+   "status": "published",
+   "rank": 71,
+   "queue": "next",
+   "demand_views_90d": 87580,
+   "trees": 4
+  },
+  {
+   "city": "Granada",
+   "country": "Spain",
+   "tier": 2,
+   "slug": "granada",
+   "status": "published",
+   "rank": 72,
+   "queue": "next",
+   "demand_views_90d": 86361,
+   "trees": 10
+  },
+  {
+   "city": "Cadiz",
+   "country": "Spain",
+   "tier": 2,
+   "slug": "cadiz",
+   "status": "published",
+   "rank": 73,
+   "queue": "next",
+   "demand_views_90d": 79226,
+   "trees": 5
+  },
+  {
+   "city": "Verona",
+   "country": "Italy",
+   "tier": 2,
+   "slug": "verona",
+   "status": "published",
+   "rank": 74,
+   "queue": "next",
+   "demand_views_90d": 77646,
+   "trees": 8
+  },
+  {
+   "city": "Fukuoka",
+   "country": "Japan",
+   "tier": 1,
+   "slug": "fukuoka",
+   "status": "published",
+   "note": "Hidde, 2026-08-02: he is travelling there, so this one is worth doing properly and soon. Search order per Step 1: name the shrine and temple precincts first (Kushida-jinja and its ginkgo, Sumiyoshi-jinja, Shofuku-ji, Tochoji, Ohori Park, Maizuru Park and the castle ruins, Rakusuien, Atago-jinja), then the national Natural Monument register, then the generic sweep. Note the CURATION.md entry closing Fukuoka is about the REGISTER LAYER only (no openly licensed prefectural dataset), which says nothing about whether the city has remarkable trees to curate.",
+   "rank": 75,
+   "queue": "next",
+   "demand_views_90d": 77485,
+   "trees": 11
+  },
+  {
+   "city": "Cordoba",
+   "country": "Spain",
+   "tier": 2,
+   "slug": "cordoba",
+   "status": "published",
+   "rank": 76,
+   "queue": "next",
+   "demand_views_90d": 74675,
+   "trees": 7
+  },
+  {
+   "city": "Utrecht",
+   "country": "Netherlands",
+   "tier": 2,
+   "slug": "utrecht",
+   "status": "published",
+   "rank": 77,
+   "queue": "next",
+   "demand_views_90d": 67963,
+   "trees": 5
+  },
+  {
+   "city": "Padua",
+   "country": "Italy",
+   "tier": 2,
+   "slug": "padua",
+   "status": "published",
+   "note": "Salvaged from an interrupted verification pass (RAMI, ilregistrodeglialberi.it, filled the age/health/access gap MASAF lacks). 9 trees inside a 1.25 km walk: four in the 1545 Orto Botanico (the Goethe Palm, an Oriental Plane, a grafted Ginkgo, a 1786 Magnolia), a magnolia in the Sant Antonio basilica cloister, two planes and a leaning hackberry in Parco Treves, and a folded twin-tree Sophora entry in Piazza Capitaniato. Full detail in data/research/padova-notes.md and data/leads/padova.json. Renamed from Padova to Padua 2026-08-06, hours after publication, to match the English exonym every other Italian city here uses; old URLs redirect.",
+   "rank": 78,
+   "queue": "next",
+   "demand_views_90d": 54592,
+   "trees": 9
+  },
+  {
+   "city": "Lucca",
+   "country": "Italy",
+   "tier": 2,
+   "slug": "lucca",
+   "status": "published",
+   "note": "MASAF cluster: 20 registered trees inside 1.6 km, 6 published as one walk of about 800 m entirely inside the walls. Rest in data/leads/lucca.json.",
+   "rank": 79,
+   "queue": "next",
+   "demand_views_90d": 52271,
+   "trees": 6
+  },
+  {
+   "city": "Maastricht",
+   "country": "Netherlands",
+   "tier": 2,
+   "slug": "maastricht",
+   "status": "published",
+   "rank": 80,
+   "queue": "next",
+   "demand_views_90d": 47763,
+   "trees": 5
+  },
+  {
+   "city": "Sintra",
+   "country": "Portugal",
+   "tier": 2,
+   "slug": "sintra",
+   "status": "published",
+   "rank": 81,
+   "queue": "next",
+   "demand_views_90d": 46889,
+   "trees": 5
+  },
+  {
+   "city": "Nijmegen",
+   "country": "Netherlands",
+   "tier": 2,
+   "slug": "nijmegen",
+   "status": "published",
+   "rank": 82,
+   "queue": "next",
+   "demand_views_90d": 42338,
+   "trees": 5
+  },
+  {
+   "city": "Den Bosch",
+   "country": "Netherlands",
+   "tier": 2,
+   "slug": "den-bosch",
+   "status": "published",
+   "rank": 83,
+   "queue": "next",
+   "demand_views_90d": 39682,
+   "trees": 4
+  },
+  {
+   "city": "Breda",
+   "country": "Netherlands",
+   "tier": 2,
+   "slug": "breda",
+   "status": "published",
+   "rank": 84,
+   "queue": "next",
+   "demand_views_90d": 36579,
+   "trees": 4
+  },
+  {
+   "city": "Coimbra",
+   "country": "Portugal",
+   "tier": 2,
+   "slug": "coimbra",
+   "status": "pending",
+   "rank": 85,
+   "queue": "next",
+   "demand_views_90d": 34962
+  },
+  {
+   "city": "Braga",
+   "country": "Portugal",
+   "tier": 2,
+   "slug": "braga",
+   "status": "pending",
+   "rank": 86,
+   "queue": "next",
+   "demand_views_90d": 34522
+  },
+  {
+   "city": "Haarlem",
+   "country": "Netherlands",
+   "tier": 2,
+   "slug": "haarlem",
+   "status": "published",
+   "rank": 87,
+   "queue": "next",
+   "demand_views_90d": 33960,
+   "trees": 4
+  },
+  {
+   "city": "Leiden",
+   "country": "Netherlands",
+   "tier": 2,
+   "slug": "leiden",
+   "status": "published",
+   "rank": 88,
+   "queue": "next",
+   "demand_views_90d": 33227,
+   "trees": 6
+  },
+  {
+   "city": "Arnhem",
+   "country": "Netherlands",
+   "tier": 2,
+   "slug": "arnhem",
+   "status": "published",
+   "rank": 89,
+   "queue": "next",
+   "demand_views_90d": 31478,
+   "trees": 4
+  },
+  {
+   "city": "Groningen",
+   "country": "Netherlands",
+   "tier": 2,
+   "slug": "groningen",
+   "status": "published",
+   "rank": 90,
+   "queue": "next",
+   "demand_views_90d": 31401,
+   "trees": 5
+  },
+  {
+   "city": "Delft",
+   "country": "Netherlands",
+   "tier": 2,
+   "slug": "delft",
+   "status": "published",
+   "rank": 91,
+   "queue": "next",
+   "demand_views_90d": 31293,
+   "trees": 4
+  },
+  {
+   "city": "Guimaraes",
+   "country": "Portugal",
+   "tier": 2,
+   "slug": "guimaraes",
+   "status": "published",
+   "note": "ICNF cluster: 14 registered trees within 3.4 km of the UNESCO historic centre, 4 published (planes at the Paco dos Duques, the cloister olive, the Vila Flor camellias, the Atouguia cemetery cedars). Casa de Margaride and Casa da Covilha have genuinely strong trees held back on uncertain private-estate access; Santa Marinha da Costa held back as a hotel with no clear public-access statement. All three, plus the rest of the register, in data/leads/guimaraes.json.",
+   "rank": 92,
+   "queue": "next",
+   "demand_views_90d": 26203,
+   "trees": 4
+  },
+  {
+   "city": "Setubal",
+   "country": "Portugal",
+   "tier": 2,
+   "slug": "setubal",
+   "status": "published",
+   "rank": 93,
+   "queue": "next",
+   "demand_views_90d": 22582,
+   "trees": 10
+  },
+  {
+   "city": "Caserta",
+   "country": "Italy",
+   "tier": 2,
+   "slug": "caserta",
+   "status": "published",
+   "note": "MASAF cluster in the Reggia's English Garden: 41 registered trees within 3 km, 7 published, six of them within 200 m. Campania's regional register (agricoltura.regione.campania.it/foreste/monum/scheda_NNN.html) supplied the ages MASAF lacks.",
+   "rank": 94,
+   "queue": "next",
+   "demand_views_90d": 14783,
+   "trees": 7
+  },
+  {
+   "city": "Nara",
+   "country": "Japan",
+   "tier": 2,
+   "slug": "nara",
+   "status": "published",
+   "rank": 95,
+   "queue": "next",
+   "demand_views_90d": 7556,
+   "trees": 9
+  },
+  {
+   "city": "Gdansk",
+   "country": "Poland",
+   "tier": 4,
+   "slug": "gdansk",
+   "status": "published",
+   "rank": 96,
+   "queue": "next",
+   "demand_views_90d": 4908,
+   "trees": 4
+  },
+  {
+   "city": "Baarn",
+   "country": "Netherlands",
+   "tier": 3,
+   "slug": "baarn",
+   "status": "published",
+   "note": "Off-focus, opened 2026-08-08 on Hidde's explicit call (his hometown). Cantonspark ex-botanical garden + Groeneveld + the Pekingtuin oak he pointed at himself.",
+   "rank": 97,
+   "queue": "next",
+   "demand_views_90d": 2502,
+   "trees": 5
+  },
+  {
+   "city": "Bucaco",
+   "country": "Portugal",
+   "tier": 2,
+   "slug": "bucaco",
+   "status": "published",
+   "note": "Not a city: the walled Mata Nacional do Bucaco inside the concelho of Mealhada, freguesia of Luso. Named for the place a visitor actually goes and searches for. 29 ICNF-classified trees inside 900 metres, 6 published, the rest in data/leads/bucaco.json.",
+   "rank": 98,
+   "queue": "next",
+   "demand_views_90d": 132,
+   "trees": 6
+  },
+  {
+   "city": "Galway",
+   "country": "Ireland",
+   "tier": 2,
+   "slug": "galway",
+   "status": "pending",
+   "note": "Hidde, 2026-08-02: publish it (\"wat mij betreft mag je galway gewoon online zetten we hebben ze toch\"). The run held it back because Coole Park is 50-70 min by bus, outside the ~30 min day-trip boundary; he widened the boundary for this case. Ship with the true travel time stated in transport, never rounded down. Prior research is in CURATION.md 2026-07-30 and the 2026-08-02 run entry.",
+   "rank": 99,
+   "queue": "next",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Zagreb",
+   "country": "Croatia",
+   "tier": 4,
+   "slug": "zagreb",
+   "status": "pending",
+   "rank": 100,
+   "queue": "next",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Dubai",
+   "country": "United Arab Emirates",
+   "tier": 2,
+   "slug": "dubai",
+   "status": "pending",
+   "rank": 101,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Kuala Lumpur",
+   "country": "Malaysia",
+   "tier": 3,
+   "slug": "kuala-lumpur",
+   "status": "pending",
+   "rank": 102,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Taipei",
+   "country": "Taiwan",
+   "tier": 3,
+   "slug": "taipei",
+   "status": "pending",
+   "rank": 103,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Shanghai",
+   "country": "China",
+   "tier": 3,
+   "slug": "shanghai",
+   "status": "pending",
+   "rank": 104,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Beijing",
+   "country": "China",
+   "tier": 3,
+   "slug": "beijing",
+   "status": "pending",
+   "rank": 105,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Delhi",
+   "country": "India",
+   "tier": 3,
+   "slug": "delhi",
+   "status": "pending",
+   "rank": 106,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Mumbai",
+   "country": "India",
+   "tier": 3,
+   "slug": "mumbai",
+   "status": "pending",
+   "rank": 107,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Agra",
+   "country": "India",
+   "tier": 3,
+   "slug": "agra",
+   "status": "pending",
+   "rank": 108,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Jaipur",
+   "country": "India",
+   "tier": 3,
+   "slug": "jaipur",
+   "status": "pending",
+   "rank": 109,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Cairo",
+   "country": "Egypt",
+   "tier": 3,
+   "slug": "cairo",
+   "status": "pending",
+   "rank": 110,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Marrakech",
+   "country": "Morocco",
+   "tier": 3,
+   "slug": "marrakech",
+   "status": "pending",
+   "rank": 111,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Cape Town",
+   "country": "South Africa",
+   "tier": 3,
+   "slug": "cape-town",
+   "status": "pending",
+   "rank": 112,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Mexico City",
+   "country": "Mexico",
+   "tier": 3,
+   "slug": "mexico-city",
+   "status": "pending",
+   "rank": 113,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Buenos Aires",
+   "country": "Argentina",
+   "tier": 3,
+   "slug": "buenos-aires",
+   "status": "pending",
+   "rank": 114,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Rio de Janeiro",
+   "country": "Brazil",
+   "tier": 3,
+   "slug": "rio-de-janeiro",
+   "status": "pending",
+   "rank": 115,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Sao Paulo",
+   "country": "Brazil",
+   "tier": 3,
+   "slug": "sao-paulo",
+   "status": "pending",
+   "rank": 116,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Lima",
+   "country": "Peru",
+   "tier": 3,
+   "slug": "lima",
+   "status": "pending",
+   "rank": 117,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Bogota",
+   "country": "Colombia",
+   "tier": 3,
+   "slug": "bogota",
+   "status": "pending",
+   "rank": 118,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Santiago",
+   "country": "Chile",
+   "tier": 3,
+   "slug": "santiago",
+   "status": "pending",
+   "rank": 119,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Toronto",
+   "country": "Canada",
+   "tier": 3,
+   "slug": "toronto",
+   "status": "pending",
+   "rank": 120,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Vancouver",
+   "country": "Canada",
+   "tier": 3,
+   "slug": "vancouver",
+   "status": "pending",
+   "rank": 121,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Montreal",
+   "country": "Canada",
+   "tier": 3,
+   "slug": "montreal",
+   "status": "pending",
+   "rank": 122,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Los Angeles",
+   "country": "United States",
+   "tier": 3,
+   "slug": "los-angeles",
+   "status": "pending",
+   "rank": 123,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "San Francisco",
+   "country": "United States",
+   "tier": 3,
+   "slug": "san-francisco",
+   "status": "pending",
+   "rank": 124,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Miami",
+   "country": "United States",
+   "tier": 3,
+   "slug": "miami",
+   "status": "pending",
+   "rank": 125,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "New Orleans",
+   "country": "United States",
+   "tier": 4,
+   "slug": "new-orleans",
+   "status": "pending",
+   "rank": 126,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Philadelphia",
+   "country": "United States",
+   "tier": 4,
+   "slug": "philadelphia",
+   "status": "pending",
+   "rank": 127,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Seattle",
+   "country": "United States",
+   "tier": 4,
+   "slug": "seattle",
+   "status": "pending",
+   "rank": 128,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Sydney",
+   "country": "Australia",
+   "tier": 4,
+   "slug": "sydney",
+   "status": "pending",
+   "rank": 129,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Melbourne",
+   "country": "Australia",
+   "tier": 4,
+   "slug": "melbourne",
+   "status": "pending",
+   "rank": 130,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Auckland",
+   "country": "New Zealand",
+   "tier": 4,
+   "slug": "auckland",
+   "status": "pending",
+   "rank": 131,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Denpasar",
+   "country": "Indonesia",
+   "tier": 4,
+   "slug": "denpasar",
+   "status": "pending",
+   "rank": 132,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Jakarta",
+   "country": "Indonesia",
+   "tier": 4,
+   "slug": "jakarta",
+   "status": "pending",
+   "rank": 133,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Ho Chi Minh City",
+   "country": "Vietnam",
+   "tier": 4,
+   "slug": "ho-chi-minh-city",
+   "status": "pending",
+   "rank": 134,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Hanoi",
+   "country": "Vietnam",
+   "tier": 4,
+   "slug": "hanoi",
+   "status": "pending",
+   "rank": 135,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Phuket",
+   "country": "Thailand",
+   "tier": 4,
+   "slug": "phuket",
+   "status": "pending",
+   "rank": 136,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Chiang Mai",
+   "country": "Thailand",
+   "tier": 4,
+   "slug": "chiang-mai",
+   "status": "pending",
+   "rank": 137,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Manila",
+   "country": "Philippines",
+   "tier": 4,
+   "slug": "manila",
+   "status": "pending",
+   "rank": 138,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Tel Aviv",
+   "country": "Israel",
+   "tier": 4,
+   "slug": "tel-aviv",
+   "status": "pending",
+   "rank": 139,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Kobe",
+   "country": "Japan",
+   "tier": 2,
+   "slug": "kobe",
+   "status": "pending",
+   "rank": 140,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Kamakura",
+   "country": "Japan",
+   "tier": 2,
+   "slug": "kamakura",
+   "status": "pending",
+   "rank": 141,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Kanazawa",
+   "country": "Japan",
+   "tier": 2,
+   "slug": "kanazawa",
+   "status": "pending",
+   "rank": 142,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Hiroshima",
+   "country": "Japan",
+   "tier": 2,
+   "slug": "hiroshima",
+   "status": "pending",
+   "rank": 143,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Nagoya",
+   "country": "Japan",
+   "tier": 2,
+   "slug": "nagoya",
+   "status": "pending",
+   "rank": 144,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Bilbao",
+   "country": "Spain",
+   "tier": 2,
+   "slug": "bilbao",
+   "status": "pending",
+   "rank": 145,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Toledo",
+   "country": "Spain",
+   "tier": 2,
+   "slug": "toledo",
+   "status": "pending",
+   "rank": 146,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Salamanca",
+   "country": "Spain",
+   "tier": 2,
+   "slug": "salamanca",
+   "status": "pending",
+   "rank": 147,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "Santiago de Compostela",
+   "country": "Spain",
+   "tier": 2,
+   "slug": "santiago-de-compostela",
+   "status": "pending",
+   "rank": 148,
+   "queue": "bench",
+   "demand_views_90d": null
+  },
+  {
+   "city": "San Sebastian",
+   "country": "Spain",
+   "tier": 2,
+   "slug": "san-sebastian",
+   "status": "pending",
+   "rank": 149,
+   "queue": "bench",
+   "demand_views_90d": null
+  }
+ ]
 }
