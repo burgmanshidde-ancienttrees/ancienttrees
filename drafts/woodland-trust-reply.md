@@ -1,8 +1,8 @@
 # FOR HIDDE: draft reply to Kate Lewthwaite, Ancient Tree Inventory
 
 Third attempt. Your opening kept verbatim, and the humble-brag paragraph
-replaced with your framing: registers plus AI plus readers, and the offer to
-follow their register directly.
+replaced with your framing: a method rather than a list of what you lack, and
+the offer to follow their register directly.
 
 That offer is the strongest thing in the mail. Her worry is a stale copy, and
 following her source is the exact opposite of a copy, so it belongs where it
