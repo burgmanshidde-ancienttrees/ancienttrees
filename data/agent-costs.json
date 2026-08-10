@@ -1015,6 +1015,13 @@
         "tokens": 196425,
         "trees": 0,
         "note": "0 new trees (register within reach already mined by prior passes); rom_016 pin upgraded approximate->confirmed via Lazio GIS coordinate plus dated aerial imagery; rom_021/rom_022 checked and honestly left approximate; Lazio removals-sheet cross-check against all 24 published trees found no dead tree live"
+      },
+      {
+        "target": "kyoto",
+        "kind": "verify",
+        "tokens": 162832,
+        "trees": 4,
+        "note": "Kyoto Gyoen district cluster: 4 new trees around kyo_006 inside 1.1 km, fixing the 35 km spread; 3 ceremonial replanted specimens (Sakon-no-Sakura planted 1998, Ukon-no-Tachibana, Kurumagaeshi-zakura) correctly rejected to leads; found the Kamigyo Ward 'Pride Trees' municipal register, uncatalogued here"
       }
     ]
   }
