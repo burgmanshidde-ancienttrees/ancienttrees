@@ -276,21 +276,55 @@ def pending_research():
     duplicates, which is the only reason good live prose was not overwritten.
 
     The published city file is the truth. A research entry whose id already
-    lives in data/cities is finished work, whatever the research file says."""
-    live = set()
+    lives in data/cities is finished work, whatever the research file says.
+
+    UNLESS the id is a collision rather than a match, which is the case this
+    check got badly wrong on 2026-08-10. A batch was prepared with ids starting
+    at bcn_011 from a stale assumption that Barcelona held ten trees; it held
+    33, so all eighteen ids belonged to different live trees. Matching on id
+    alone, this function reported the whole file as published and told the pass
+    to delete it. Thirteen unwritten trees would have gone, and merging as
+    briefed would have overwritten eighteen indexed URLs.
+
+    So an id match is only believed when the coordinates agree. Same tree, same
+    place; a research entry sitting hundreds of metres from the live tree whose
+    id it claims is a collision, and it is reported loudly rather than silently
+    counted as done. This is the same rule the register and lead matching
+    already follow: position cannot be fooled by a label."""
+    live, live_pt = set(), {}
     for f in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
         for t in json.load(open(f)).get("trees", []):
             live.add(t["id"])
+            loc = t.get("location") or {}
+            if loc.get("latitude") is not None:
+                live_pt[t["id"]] = (loc["latitude"], loc["longitude"])
+
+    def same_tree(t):
+        """Is this research entry really the live tree that holds its id?"""
+        pt = live_pt.get(t["id"])
+        loc = t.get("location") or {}
+        if not pt or loc.get("latitude") is None:
+            return True          # cannot tell; trust the id, as before
+        return km(pt, (loc["latitude"], loc["longitude"])) <= 0.15
+
     out = []
     for f in sorted(glob.glob(os.path.join(ROOT, "data", "research", "*-verified.json"))):
         try:
             rows = _research_trees(json.load(open(f)))
         except Exception:
             continue
-        unpublished = [t for t in rows if t.get("id") and t["id"] not in live]
-        stale = len(rows) - len(unpublished)
-        if unpublished or stale:
-            out.append((os.path.relpath(f, ROOT), unpublished, stale))
+        unpublished, stale, collisions = [], 0, []
+        for t in rows:
+            if not t.get("id"):
+                continue
+            if t["id"] not in live:
+                unpublished.append(t)
+            elif same_tree(t):
+                stale += 1
+            else:
+                collisions.append(t)
+        if unpublished or stale or collisions:
+            out.append((os.path.relpath(f, ROOT), unpublished, stale, collisions))
     return out
 
 
@@ -300,12 +334,20 @@ def print_pending():
         print("\nNothing pending: every verified tree is published.")
         return
     print("\nVERIFIED BUT NOT YET PUBLISHED (brief a write pass on these, and only these):")
-    for path, unpublished, stale in rows:
+    for path, unpublished, stale, collisions in rows:
         if unpublished:
             need = sum(1 for t in unpublished if not t.get("story"))
             print(f"  {path}: {len(unpublished)} unpublished "
                   f"({need} still need a story, {len(unpublished) - need} written and ready to merge)")
             for t in unpublished[:6]:
+                print(f"      {t['id']} {str(t.get('name'))[:46]}")
+        if collisions:
+            print(f"  !! {path}: {len(collisions)} entries claim an id that belongs to a "
+                  f"DIFFERENT live tree.")
+            print(f"     These are NOT published and this file is NOT stale. Merging as-is "
+                  f"would overwrite live, indexed trees (hard rule 3).")
+            print(f"     Reassign them to free ids before writing or merging:")
+            for t in collisions[:8]:
                 print(f"      {t['id']} {str(t.get('name'))[:46]}")
         if stale:
             print(f"  {path}: {stale} entries ALREADY PUBLISHED, this file is stale; "
