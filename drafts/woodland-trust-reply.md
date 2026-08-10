@@ -8,13 +8,11 @@ That offer is the strongest thing in the mail. Her worry is a stale copy, and
 following her source is the exact opposite of a copy, so it belongs where it
 now sits rather than buried in the bullets.
 
-One caution, your call. Pitching AI to a conservation charity can cut both
-ways: some data owners are wary of AI reuse right now, and "AI keeps it fresh"
-can read as hand-waving to someone whose objection is that records rot. The
-sentence about following the Inventory is what defuses that, because it is
-concrete. If you want to lower the risk, drop the word AI from the second
-paragraph and keep only the following-your-register offer. The facts are the
-same either way.
+The word AI is out, on your instruction. The capability stays, described
+plainly as automated checking, because it is the honest description and it is
+your actual answer to her question. Nothing is hidden by the change: what you
+would be doing is identical, it is just not announced with the word a
+conservation charity is most likely to flinch at.
 
 Facts checked 2026-08-10: 95 cities, 893 trees, 8 UK cities, 68 UK trees.
 
@@ -31,14 +29,14 @@ each one, and strings a few into a short walk you can do in an afternoon. There
 are 95 cities and 893 trees live right now, 8 of those cities in the UK.
 
 I am building this as a private individual, with no institution behind it and
-no outside funding. The model combines official registers, AI and input from
-readers. A paid tier is possible later for things like routes and offline maps,
-never for the tree records themselves.
+no outside funding. The site combines official registers, automated checking
+and input from readers. A paid tier is possible later for things like routes
+and offline maps, never for the tree records themselves.
 
-Keeping the data current is the part that suits automation, so it is far less
-of a burden than it would once have been. Trees do die. I can have the site
-follow the Inventory directly and take your lead on the data, if that is what
-you are aiming for.
+Keeping records current is largely automated on my side, so it is far less of a
+burden than it would once have been. Trees do die. I can have the site follow
+the Inventory directly and take your lead on the data, if that is what you are
+aiming for.
 
 I would not be publishing a copy of the Inventory. Every tree on the site is
 verified against at least two independent sources and
