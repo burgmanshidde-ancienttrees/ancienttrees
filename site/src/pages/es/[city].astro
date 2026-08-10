@@ -1,0 +1,199 @@
+---
+// Spanish city page: the /es/ half of the Malaga translation test
+// (2026-08-10, Hidde's direction). Structurally a sibling of ../[city].astro
+// with Spanish chrome hardcoded the same way the English template hardcodes
+// English; the translated text comes from data/i18n/es/<slug>.json and
+// everything factual (coordinates, photos, walks) from the one canonical
+// city file. When a second language arrives, the shared skeleton gets
+// extracted; two copies is the honest cost of a test, ten copies would be a
+// maintenance bug.
+//
+// Known limits, deliberate for the test: the site chrome (nav, footer) and
+// the map popups stay English, and the season block is omitted because its
+// generated labels are English. If the test earns a second language, those
+// become the next work, not silent debt.
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../../lib/trees";
+import { usablePhoto, imgSrcset, creditRequired } from "../../lib/images";
+import { speciesIcon } from "../../lib/species-icons";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
+import { mapHead } from "../../lib/map";
+import { planWalks, walkRouteFor, mapsRouteUrl, kmLabel, type WalkMarker, type Walk } from "../../lib/walks";
+import { cityMapScript } from "../../lib/city-map-script";
+import { translatedCities, cityTranslation, hreflangLinks, QUESTION_SLUG, type CityTranslation } from "../../lib/i18n";
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+export async function getStaticPaths() {
+  const allCities = (await getCollection("cities")).filter(cityIsRenderable);
+  return translatedCities("es").map((slug) => {
+    const city = allCities.find((c) => c.id === slug);
+    if (!city) throw new Error(`data/i18n/es/${slug}.json has no matching English city file`);
+    const tr = cityTranslation("es", slug)!;
+    const trees = renderableTrees(city);
+    // The overlay must cover every rendered tree: a Spanish page silently
+    // falling back to an English story would look like sloppiness, and a
+    // missing id would mean the English city grew after the translation.
+    for (const t of trees) {
+      if (!tr.trees[t.id]) throw new Error(`es/${slug}: no translation for ${t.id}; the English city grew past the overlay`);
+    }
+    const iw = tr.intro.split(/\s+/).filter(Boolean).length;
+    if (iw < 60 || iw > 100) throw new Error(`es/${slug}: intro is ${iw} words, Contract C requires 60-100`);
+    return { params: { city: slug }, props: { city, tr } };
+  });
+}
+
+interface Props {
+  city: CityEntry;
+  tr: CityTranslation;
+}
+const { city, tr } = Astro.props as Props;
+
+const cslug = city.id;
+const trees = renderableTrees(city);
+const tslugs = treeSlugsForCity(city);
+const canonical = `${BASE_URL}/es/${cslug}`;
+
+const markers: WalkMarker[] = trees.map((t, i) => ({
+  lat: t.location.latitude!,
+  lng: t.location.longitude!,
+  label: String(i + 1),
+  icon: speciesIcon(t),
+  name: tr.trees[t.id].name,
+  id: t.id,
+  area: (t.location.neighbourhood ?? "").trim(),
+  shot: Boolean(usablePhoto(t)),
+}));
+
+const crumbItems: [string, string | null][] = [
+  ["Inicio", BASE_URL],
+  [tr.city, null],
+];
+
+const listElements = trees.map((t, i) => ({
+  "@type": "ListItem",
+  position: i + 1,
+  name: tr.trees[t.id].name,
+  url: `${BASE_URL}/es/${cslug}/${tslugs[t.id]}`,
+  item: {
+    "@type": "TouristAttraction",
+    name: tr.trees[t.id].name,
+    description: tr.trees[t.id].story.slice(0, 200),
+    geo: { "@type": "GeoCoordinates", latitude: t.location.latitude, longitude: t.location.longitude },
+  },
+}));
+const graph = [
+  ...SITE_SCHEMA,
+  { "@type": "ItemList", name: tr.title, itemListElement: listElements },
+  { "@type": "FAQPage", mainEntity: tr.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
+  breadcrumbSchema(crumbItems, canonical),
+];
+const headExtra = mapHead() + "\n" + hreflangLinks("es", `/${cslug}`, `/es/${cslug}`) + "\n" + ldScript(graph);
+
+const avgLat = markers.reduce((s, m) => s + m.lat, 0) / markers.length;
+const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
+
+function esDuration(minutes: number): string {
+  const h = Math.floor(minutes / 60);
+  const m = Math.round(minutes) % 60;
+  if (h && m) return `${h} h ${m} min`;
+  if (h) return h === 1 ? "1 hora" : `${h} horas`;
+  return `${m} min`;
+}
+
+const walks: Walk[] = planWalks(markers);
+const route = walks[0] ?? null;
+if (route) {
+  for (const w of walks) {
+    const routed = walkRouteFor(cslug, w.order.map((i) => trees[i].id));
+    if (routed) {
+      if (routed.reversed) w.order = [...w.order].reverse();
+      w.shape = routed.shape;
+      w.km = routed.km ?? w.km;
+      w.minutes = routed.minutes ?? w.minutes;
+    }
+    w.url = mapsRouteUrl(w.order.map((i) => [markers[i].lat, markers[i].lng]));
+    w.duration = esDuration(w.minutes);
+    w.label = w.count < markers.length ? `Recorre ${w.count} de estos árboles` : `Recorre los ${w.count} árboles`;
+  }
+}
+const firstWalk = walks[0] ?? null;
+const qslug = QUESTION_SLUG.es;
+---
+<Base title={tr.title} description={tr.meta_description} canonical={canonical} headExtra={headExtra} footer={false} lang="es">
+  <div class="split">
+    <aside class="panel">
+      <div class="panel-head">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Inicio</a> › <span>{tr.city}</span></nav>
+        <p class="eyebrow">España</p>
+        <h1>Árboles históricos de <em>{tr.city}</em></h1>
+        <p class="lede">{tr.intro}</p>
+        <p class="lang-alt">This page also exists <a href={`/${cslug}`}>in English</a>.</p>
+        <p class="passport" id="passport" hidden>
+          <strong><span id="passport-count">0</span> de {trees.length}</strong> visitados en {tr.city}
+          <span class="passport-total" id="passport-total"></span>
+          <button type="button" class="passport-save" id="passport-save">Guardar o pasar a otro dispositivo</button>
+        </p>
+      </div>
+      {trees.map((t, i) => {
+        const cphoto = usablePhoto(t);
+        const x = tr.trees[t.id];
+        return (
+          <article class="tree-card" id={`tree-${i + 1}`}>
+            {cphoto && cphoto.url && (
+              <Fragment>
+                <div class="tree-card-photo">
+                  <img {...imgSrcset(cphoto.url, [500, 900], "(max-width: 800px) 100vw, 560px")} alt={x.name} loading="lazy" />
+                </div>
+                {creditRequired(cphoto.license) && <p class="tree-card-credit">Foto: {cphoto.attribution} ({cphoto.license})</p>}
+              </Fragment>
+            )}
+            <div class="tree-card-top">
+              <span class="tree-num">{i + 1}</span>
+              <h2 class="tree-name">{x.name}</h2>
+            </div>
+            <p class="tree-meta" set:html={`${esc(x.species)} &middot; ${esc(x.age_estimate)} &middot; ${esc(t.location?.neighbourhood ?? "")}`} />
+            <p class="tree-story">{x.story}</p>
+            <p class="tree-more"><a href={`/es/${cslug}/${tslugs[t.id]}`}>Leer más y cómo llegar →</a></p>
+          </article>
+        );
+      })}
+      <div class="panel-foot">
+        <p class="subtle-suggest"><b>Estamos cartografiando todos los árboles singulares del mundo.</b> ¿Conoces uno en {tr.city} que nos falte, o ves aquí un error? <a href="/contribute?kind=tree">Cuéntanoslo</a>.</p>
+        <div class="take-with-you">
+          <strong>¿Vas a ir?</strong> <a href={`/${cslug}.gpx`} download>Descarga los {trees.length} árboles</a> como archivo de mapa y ábrelo en Google Maps, Organic Maps o cualquier aplicación de senderismo. Funciona sin conexión.
+        </div>
+        <h2>Preguntas frecuentes</h2>
+        <dl class="faq">
+          {tr.faq.map((f) => (
+            <Fragment>
+              <dt>{f.q}</dt>
+              <dd>{f.a}</dd>
+            </Fragment>
+          ))}
+          <dt>Más sobre el árbol más antiguo</dt>
+          <dd><a href={`/es/${cslug}/${qslug}`}>¿Cuál es el árbol más antiguo de {tr.city}?</a> La respuesta completa, con mapa y cómo llegar.</dd>
+        </dl>
+        <p class="suggest">¿Conoces un árbol que merezca estar en esta lista? <a href="/contribute?kind=tree">Envíanoslo</a>.</p>
+      </div>
+    </aside>
+    <div class="stage">
+      <div id="map" class="map"></div>
+      {firstWalk && (
+        <div class="walks" id="walk">
+          <div class="route-bar">
+            <a class="route-go" id="route-go" href={firstWalk.url} target="_blank" rel="noopener">
+              <span id="route-label">{firstWalk.label}</span>
+              <span class="route-meta" id="route-meta">unos {kmLabel(firstWalk.km)} km, {firstWalk.duration} a pie</span>
+            </a>
+            <button type="button" class="route-gps" id="gps-btn" aria-pressed="false">Dónde estoy</button>
+          </div>
+        </div>
+      )}
+    </div>
+  </div>
+  <Fragment slot="scripts" set:html={cityMapScript(markers, [avgLat, avgLng], route, [], walks)} />
+</Base>

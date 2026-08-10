@@ -1,0 +1,83 @@
+---
+// Spanish question page: the /es/ counterpart of /{city}/oldest-tree, at the
+// path a Spanish speaker would actually search. Same P2 discipline as the
+// English contract: the answer in the first two sentences, then context.
+import { getCollection } from "astro:content";
+import Base from "../../../layouts/Base.astro";
+import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry, type Tree } from "../../../lib/trees";
+import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../../lib/schema";
+import { mapHead, singlePinScript } from "../../../lib/map";
+import { translatedCities, cityTranslation, hreflangLinks, type CityTranslation } from "../../../lib/i18n";
+
+export async function getStaticPaths() {
+  const allCities = (await getCollection("cities")).filter(cityIsRenderable);
+  return translatedCities("es").map((slug) => {
+    const city = allCities.find((c) => c.id === slug);
+    if (!city) throw new Error(`data/i18n/es/${slug}.json has no matching English city file`);
+    const tr = cityTranslation("es", slug)!;
+    return { params: { city: slug }, props: { city, tr } };
+  });
+}
+
+interface Props {
+  city: CityEntry;
+  tr: CityTranslation;
+}
+const { city, tr } = Astro.props as Props;
+
+const cslug = city.id;
+const trees = renderableTrees(city);
+const tslugs = treeSlugsForCity(city);
+const canonical = `${BASE_URL}/es/${cslug}/arbol-mas-antiguo`;
+
+// Same derivation as the English question page: an explicit oldest_tree_id
+// wins; otherwise the highest documented age_max.
+const pinned = (city.data as any).oldest_tree_id as string | undefined;
+let oldest: Tree = trees[0];
+if (pinned) {
+  oldest = trees.find((t) => t.id === pinned) ?? trees[0];
+} else {
+  for (const t of trees) if ((t.age_max ?? 0) > (oldest.age_max ?? 0)) oldest = t;
+}
+const ox = tr.trees[oldest.id];
+
+const crumbItems: [string, string | null][] = [
+  ["Inicio", BASE_URL],
+  [tr.city, `${BASE_URL}/es/${cslug}`],
+  ["El árbol más antiguo", null],
+];
+
+const graph = [
+  ...SITE_SCHEMA,
+  {
+    "@type": "FAQPage",
+    mainEntity: [{ "@type": "Question", name: tr.question_title, acceptedAnswer: { "@type": "Answer", text: tr.question_answer } }],
+  },
+  breadcrumbSchema(crumbItems, canonical),
+];
+const headExtra = mapHead() + "\n" + hreflangLinks("es", `/${cslug}/oldest-tree`, `/es/${cslug}/arbol-mas-antiguo`) + "\n" + ldScript(graph);
+const scripts = singlePinScript(oldest.location.latitude!, oldest.location.longitude!);
+---
+<Base title={tr.question_title} description={tr.question_meta} canonical={canonical} headExtra={headExtra} lang="es">
+  <main class="content-page">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Inicio</a> › <a href={`/es/${cslug}`}>{tr.city}</a> › <span>El árbol más antiguo</span></nav>
+    <h1>¿Cuál es el árbol más antiguo de {tr.city}?</h1>
+    <p class="lede">{tr.question_answer}</p>
+    <div class="map-embed"><div id="map" class="map"></div></div>
+    <div class="prose-block"><p>{tr.question_context}</p></div>
+    <div class="action-row">
+      <a class="go-btn" href={`/es/${cslug}/${tslugs[oldest.id]}`}>La historia completa de este árbol</a>
+      <a class="go-btn ghost" href={`https://www.google.com/maps/dir/?api=1&destination=${oldest.location.latitude},${oldest.location.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
+    </div>
+    <div class="cta">
+      {tr.city} tiene más árboles que merecen la visita: <a href={`/es/${cslug}`}>los {trees.length} árboles singulares de {tr.city}</a>, con un recorrido a pie que pasa por varios de ellos.
+    </div>
+    <div class="report">
+      <strong>¿Sabes más que nosotros?</strong>
+      <p class="report-line">Si conoces un árbol más antiguo en {tr.city}, o ves aquí un error, dínoslo y lo corregimos.</p>
+      <a class="report-btn" href="/contribute?kind=correction">Aquí hay algo mal</a>
+      <a class="report-btn" href="/contribute?kind=tree">Sugerir otro árbol</a>
+    </div>
+  </main>
+  <Fragment slot="scripts" set:html={scripts} />
+</Base>
