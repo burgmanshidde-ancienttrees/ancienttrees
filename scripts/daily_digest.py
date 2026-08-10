@@ -207,10 +207,9 @@ def gsc_section(gsc):
             v["clicks"] * 100.0 / max(v["imp"], 1), top))
 
     lines = [
-        "Search Console (freshest day Google provides, data lags 2-3 days):",
-        "- %s: %d clicks, %d impressions, avg position %.1f%s" % (
-            latest["keys"][0], latest["clicks"], latest["impressions"], latest["position"],
-            (" (day before: c%d/i%d)" % (prev["clicks"], prev["impressions"])) if prev else ""),
+        "Search Console, the last 10 days Google will give us (its data lags 2-3 days,"
+        " so the newest row is never yesterday). Position is an average across every"
+        " query, so it dips whenever we start ranking for something new:",
         "%s" % trend,
         "- Top queries (10d): " + "; ".join(
             "%s (i%d, p%.0f)" % (clean_query(r["keys"][0]), r["impressions"], r["position"]) for r in queries) if queries else "- Top queries: none",
@@ -389,12 +388,12 @@ def referrers_section(refs):
             continue
         external.append("%s (%d)" % (host, r["count"]))
     line = "; ".join(external) if external else "none yet"
-    return ("Links and referrers:\n"
-            "- External referrers (a link somebody clicked): %s\n"
-            "- Backlink count: not automatable, Search Console's API has no links "
-            "endpoint. Read it by hand at "
-            "https://search.google.com/search-console/links?resource_id=sc-domain%%3Aancienttrees.app"
-            % line)
+    # The standing "read your backlinks by hand" instruction that used to sit
+    # here was printed identically every morning for a fortnight, which is the
+    # definition of a line nobody reads. Ahrefs Webmaster Tools answers it now,
+    # and the honest state as of 2026-08-09 is that our 298 referring domains
+    # are a spam network, every one nofollow, so the count is not the metric.
+    return "Links: external referrers (a link somebody actually clicked): %s" % line
 
 
 SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
@@ -474,6 +473,42 @@ def product_section(today):
         for name in sorted(last, key=lambda k: (-counts.get(k, 0), k)):
             out.append("- %-12s %d yesterday, last %s" % (
                 name + ":", counts.get(name, 0), _ago(_days_since(last[name], today))))
+
+    # Sign-ups over time, not just a running total. Hidde, 2026-08-10: he wants
+    # the registrations in the numbers he reads. A total answers "how many" and
+    # hides the only thing worth knowing at this size, which is whether anything
+    # arrived this week. Fourteen days, and a column that is entirely zeros is
+    # itself the finding rather than a formatting problem.
+    try:
+        since = today - datetime.timedelta(days=14)
+        series = {}
+        for label, path in (("waitlist", "/rest/v1/waitlist?select=created_at"),
+                            ("submissions", "/rest/v1/submissions?select=created_at")):
+            rows_, _ = _supa(path, key)
+            for r in rows_:
+                d = str(r.get("created_at"))[:10]
+                series.setdefault(d, {})[label] = series.setdefault(d, {}).get(label, 0) + 1
+        users, _ = _supa("/auth/v1/admin/users?page=1&per_page=1000", key)
+        for u in ((users or {}).get("users") or []):
+            d = str(u.get("created_at"))[:10]
+            series.setdefault(d, {})["accounts"] = series.setdefault(d, {}).get("accounts", 0) + 1
+        days_ = [(since + datetime.timedelta(days=i)).isoformat() for i in range(15)]
+        if any(series.get(d) for d in days_):
+            out.append("")
+            out.append("| Day | Accounts | Waitlist | Submissions |")
+            out.append("|---|---:|---:|---:|")
+            for d in days_:
+                v = series.get(d, {})
+                out.append("| %s | %d | %d | %d |" % (
+                    d[5:], v.get("accounts", 0), v.get("waitlist", 0), v.get("submissions", 0)))
+            tot = {k: sum(v.get(k, 0) for d, v in series.items() if d in days_)
+                   for k in ("accounts", "waitlist", "submissions")}
+            out.append("| **14 days** | **%d** | **%d** | **%d** |" % (
+                tot["accounts"], tot["waitlist"], tot["submissions"]))
+        else:
+            out.append("- Nothing signed up, joined the waitlist or was submitted in 14 days.")
+    except Exception as e:
+        out.append("- Sign-up series unreadable (%s)" % str(e)[:60])
 
     for label, path in (("Waitlist", "/rest/v1/waitlist"),
                         ("Submissions", "/rest/v1/submissions")):
