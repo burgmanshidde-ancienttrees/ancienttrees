@@ -200,8 +200,12 @@ jobs:
             Whatever the work turns out to be: verify against two independent
             sources, follow TONE_OF_VOICE.md and SEO_GEO_BLUEPRINT.md, set
             location_precision on every tree you touch, run
-            (cd site && npm ci && npx astro build) to confirm the site still
-            builds and every contract validates, then commit, append to
+            `npm --prefix site ci` then `npm --prefix site run build` to
+            confirm the site still builds and every contract validates (both
+            start with npm on purpose: a parenthesised subshell like
+            `(cd site && ...)` matches no entry on the tool allowlist and is
+            what silently stopped every night run for a day), then commit,
+            append to
             LOG.md, and push. The renderer is Astro now (site/), not
             build_site.py: that file no longer exists, having been deleted
             once deploy.yml's cutover ran a clean cycle (ARCHITECTURE.md's
@@ -239,37 +243,40 @@ jobs:
               your commit and exit so his conversations get the room. Outside
               those hours, do not exit: wait for the rolling window to reopen
               and keep working through the night.
-          # Permissions, rewritten 2026-08-10 after seven runs in a row produced
-          # nothing but claim commits. Two wrong diagnoses came first and both
-          # are worth recording, because each looked convincing:
+          # Permissions. This landed in three moves in one morning and the
+          # middle one was wrong, so the reasoning is written out.
           #
-          #   "the usage limit is killing them" - no. The runs ended cleanly,
-          #   is_error false, 77 and 92 turns, several dollars spent.
+          # The symptom: seven runs in a row committed a claim and nothing
+          # else. Not the usage limit (they ended cleanly, 77-92 turns, real
+          # money spent) and not a missing Task tool alone (adding it left the
+          # denial count at exactly 17). The cause was that this workflow's own
+          # prompt told the run to verify with `(cd site && npm ci && npx astro
+          # build)`, a string beginning with a parenthesis, which matches no
+          # Bash(cmd:*) prefix on any list however long. No build, so no
+          # verification, so nothing publishable. The prompt above now says
+          # `npm --prefix site ci` and `npm --prefix site run build`, which
+          # match, and that is the actual fix.
           #
-          #   "Task is missing from the allowlist" - true, and adding it changed
-          #   nothing. The denial count stayed at exactly 17.
+          # For a few hours this was instead "allow Bash, deny six things".
+          # The fresh-eyes reviewer flagged that the same morning and was
+          # right: a prefix denylist does not catch `find . -delete`,
+          # `git clean -fdx`, `git reset --hard` or `python3 -c "shutil..."`,
+          # and this is an unattended job holding WebFetch, so untrusted page
+          # content reaches a context with a shell. Enumerated it is, then.
           #
-          # The actual cause is the shape of the allowlist against the shape of
-          # the commands. This workflow's own prompt tells the run to verify its
-          # work with `(cd site && npm ci && npx astro build)`. That string
-          # starts with a parenthesis, so it matches no Bash(cmd:*) prefix on any
-          # list, however long. The run cannot build, therefore cannot verify,
-          # therefore will not publish, and spends its window claiming cities it
-          # then abandons. The timing is exact: the last night run to publish a
-          # tree was 2026-08-09 10:21 UTC, minutes before the Astro migration
-          # replaced the Python renderer and with it the build command.
-          #
-          # So the list is inverted: allow Bash and name the things that must
-          # never happen, instead of enumerating the things that may. The
-          # security argument for the old shape does not survive contact with
-          # what this job already holds: Bash(git:*) permits a force-push and
-          # Write permits rewriting any file in the repository. Denying `sed`
-          # while allowing `git push --force` was theatre. What is genuinely
-          # worth denying is destruction and credential access, and those are
-          # named below.
+          # Three additions to the original list, each demanded by a workflow
+          # CLAUDE.md already mandates: Task (Step 1's verification and writing
+          # passes, without which the assembly line is unreachable from the
+          # machine meant to run it), curl (source fetching with the required
+          # hard timeouts), and gh scoped to run/workflow only (Step 0 rung 2's
+          # smoke-test check and stale-workflow redispatch). The denylist stays
+          # as a second layer, not as the boundary: `Bash(python3:*)` has always
+          # been arbitrary code execution, so neither list was ever a sandbox.
+          # What actually bounds this job is that its token reaches one repo and
+          # everything it does is in git history.
           claude_args: |
-            --allowedTools "Bash,Task,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
-            --disallowedTools "Bash(rm:*),Bash(sudo:*),Bash(gh repo:*),Bash(gh secret:*),Bash(gh auth:*),Bash(gh api -X DELETE:*)"
+            --allowedTools "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Task,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+            --disallowedTools "Bash(rm:*),Bash(sudo:*),Bash(gh repo:*),Bash(gh secret:*),Bash(gh auth:*),Bash(git clean:*),Bash(git reset --hard:*),Bash(find:* -delete)"
       # Continuous mode. GitHub fires the schedule only a handful of times a day
       # for this repo, so most open usage windows go unused. When a token is
       # present this step re-dispatches the workflow at the end of every run, so
