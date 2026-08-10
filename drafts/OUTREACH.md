@@ -271,8 +271,29 @@ rather than the whole list: the text is unproven and there is no second first
 impression with the same organisation. If a reply comes, the reply is where a link
 may arise naturally, after we have used their help and credited them.
 
+
+**Batch 003-photo-gap, 2026-08-10.** Twelve mails, chosen by the measured gap rather
+than by list order. That morning's count showed the top-25 essentially complete on tree
+count (only Chicago short, by four) and 94 photographs short, with the whole shortfall in
+six cities: Boston 10 of 10 missing, Budapest 12 of 12, Copenhagen 13 of 13, Chicago 6 of
+6, Washington DC 13 of 14, New York 15 of 20. Commons has nothing for these, proven by two
+viewing passes that judged 35 candidates and approved none. So these go to the people who
+hold the trees. Budapest has no verified contact yet and is the obvious hole in this batch.
+
 | Date | To | Ask | Status |
 |---|---|---|---|
+| 2026-08-10 | Arnold Arboretum, arbweb@arnarb.harvard.edu | Photos + accession records; 6 of Boston's 10 trees are theirs, all 10 photo-less, batch 003-photo-gap | **sent** |
+| 2026-08-10 | Friends of the Public Garden, info@friendsofthepublicgarden.org | Photos + which of the Common's four old elms is which, batch 003-photo-gap | **sent** |
+| 2026-08-10 | Central Park Conservancy, press@centralparknyc.org | Photos; 8 of our 20 New York trees are in the Park, 15 without an image, batch 003-photo-gap | **sent** |
+| 2026-08-10 | Green-Wood Cemetery, info@green-wood.com | Photos of the sassafras pair + what we missed on their grounds, batch 003-photo-gap | **sent** |
+| 2026-08-10 | Brooklyn Botanic Garden, visitorservices@bbg.org | Photos of the Kansas hawthorn + which of their veterans we missed, batch 003-photo-gap | **sent** |
+| 2026-08-10 | Casey Trees, conservation@caseytrees.org | Photos; 13 of our 14 Washington trees have none, and they measure champions, batch 003-photo-gap | **sent** |
+| 2026-08-10 | Rock Creek Conservancy, info@rockcreekconservancy.org | Photos of Montrose Park and Dumbarton Oaks Park, batch 003-photo-gap | **sent** |
+| 2026-08-10 | Dumbarton Oaks Park Conservancy, info@dopark.org | Photos of the beech grove + is the grove's story right, batch 003-photo-gap | **sent** |
+| 2026-08-10 | The Morton Arboretum, trees@mortonarb.org | Which Chicago trees are we missing; six is fewer than any other big city, batch 003-photo-gap | **sent** |
+| 2026-08-10 | Chicago Park District, play@chicagoparkdistrict.com | Photos of the Wooded Island oaks + which park veterans we missed, batch 003-photo-gap | **sent** |
+| 2026-08-10 | Dansk Dendrologisk Forening, formand@dendron.dk | Which Copenhagen tree are we missing; their yearbook already corroborated ours, batch 003-photo-gap | **sent** |
+| 2026-08-10 | Statens Naturhistoriske Museum, snm@snm.ku.dk | Photos + the Palm House cycad's real age from their accession records, batch 003-photo-gap | **sent** |
 | 2026-08-09 | Fundação Mata do Buçaco, gabpresidencia@fmb.pt | Photos + missed trees, all 6 Buçaco trees theirs, 5 without a photo, batch 002-pt | **sent** |
 | 2026-08-09 | Parques de Sintra, info@parquesdesintra.pt | Photos + corrections, Pena and Monserrate, the Monserrate pohutukawa has none, batch 002-pt | **sent** |
 | 2026-08-09 | Jardim Botânico do Porto, jardimbotanico@mhnc.up.pt | Photos + corrections, 5 Porto trees inside their garden, batch 002-pt | **sent** |
