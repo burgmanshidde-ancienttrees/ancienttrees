@@ -29,7 +29,20 @@ standing rule, 2026-07-27).
 
 Search Console (freshest day Google provides, data lags 2-3 days):
 - 2026-08-09: 6 clicks, 235 impressions, avg position 10.8 (day before: c7/i194)
-- Days: 07-31:c2/i230  08-01:c7/i253  08-02:c7/i299  08-03:c2/i260  08-04:c8/i254  08-05:c0/i280  08-06:c7/i215  08-07:c5/i226  08-08:c7/i194  08-09:c6/i235
+
+| Day | Clicks | Impressions | CTR | Position |
+|---|---:|---:|---:|---:|
+| 07-31 | 2 | 230 | 0.9% | 16.9 |
+| 08-01 | 7 | 253 | 2.8% | 15.1 |
+| 08-02 | 7 | 299 | 2.3% | 15.5 |
+| 08-03 | 2 | 260 | 0.8% | 12.7 |
+| 08-04 | 8 | 254 | 3.1% | 11.1 |
+| 08-05 | 0 | 280 | 0.0% | 14.1 |
+| 08-06 | 7 | 215 | 3.3% | 13.4 |
+| 08-07 | 5 | 226 | 2.2% | 9.7 |
+| 08-08 | 7 | 194 | 3.6% | 10.0 |
+| 08-09 | 6 | 235 | 2.6% | 10.8 |
+| **window** | **51** | **2446** | **2.1%** | |
 - Top queries (10d): oldest tree in lisbon (i3, p10); "york museum gardens" (i4, p4); 1800 trees (i1, p19); 400 year old tree (i1, p18); alley pond giant (i1, p28)
 - Top pages (10d): / (c3/i23); /kyoto (c3/i46); /app (c2/i9); /berlin/swamp-cypress-of-charlottenburg (c2/i3); /lisbon (c2/i76)
 - Content lead: '1800 trees' has no matching page (i1, p19)
@@ -50,7 +63,19 @@ On the site since 2026-08-08 (72 visits, 104 pageviews, 1.4 pages per visit):
 - Opened: /porto 15; /app 12; / 10; /naples 5; /amsterdam 4; /porto/tulip-tree-of-casa- 2; /lisbon 2; /porto/magnolia-of-casa-ta 2
 
 Web Analytics (beacon, real browsers, cookieless):
-- Days (visits/pageviews): 08-02:v20/p20  08-03:v10/p10  08-04:v10/p20  08-05:v20/p20  08-06:v0/p10  08-07:v30/p30  08-08:v70/p120  08-09:v10/p20
+Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.
+
+| Day | Visits | Pageviews |
+|---|---:|---:|
+| 08-02 | 20 | 20 |
+| 08-03 | 10 | 10 |
+| 08-04 | 10 | 20 |
+| 08-05 | 20 | 20 |
+| 08-06 | 0 | 10 |
+| 08-07 | 30 | 30 |
+| 08-08 | 70 | 120 |
+| 08-09 | 10 | 20 |
+| **window** | **170** | **250** |
 - Top paths: / (40); /app (40); /porto (30); /lisbon (10); /species/oriental-plane (10)
 - Referrers: (direct) (130); ancienttrees.app (80); www.google.com (40)
 - Countries: NL (80); US (50); PT (30); UA (20); DE (20)
