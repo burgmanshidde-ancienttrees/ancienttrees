@@ -241,6 +241,10 @@ For each candidate tree, cross-reference at least 2 independent sources for:
 - Exact location (GPS coordinates)
 If sources conflict or only one source exists, include the tree but set `curation_status: "flagged"` with a note explaining the uncertainty.
 
+**A missing age is fine, and so is an approximate one (Hidde, 2026-08-10: "not having the age is fine, or approximate is fine, stop being so anal about these details").** This is the same correction he made about dead trees on 2026-08-06 and about `best_time` on 2026-08-02, so treat it as the settled pattern rather than a one-off: a gap in a nice-to-have field is not a reason to hold a tree back, to hedge the prose into mush, or to write paragraphs of apology about it. A tree with a spectacular 33-metre crown and no recorded age is a good entry. Leave `age_estimate` empty or state the range loosely, flag it, and move on.
+
+What does NOT loosen, because it is the honesty rule rather than a completeness rule: never invent an age to fill the field, and never sharpen a vague one ("several hundred years") into a precise one. Empty beats invented, exactly as with `best_time` and photos. The line is fabrication, not incompleteness.
+
 ### Step 3 — Write the stories
 150-250 words per tree (the Paris run of 2026-07-15 sets the standard; anything over 250 words gets shortened). Style rules:
 - Direct, specific, slightly vivid. Scott Galloway meets nature writing.
@@ -385,6 +389,7 @@ Two lists, and the difference between them is the whole idea.
 
 **Always cuttable, without discussion:**
 - Precision. An approximate pin that says so is a finished first version.
+- A documented age. Missing or approximate is fine and needs no apology; see Step 2. Only inventing one is forbidden.
 - Photo coverage. Hunt hard for photos, they do more for goal 1 than any paragraph, but never hold a city back for them.
 - Completeness. Eight good trees ship. The ninth can come later.
 - Consistency and polish across pages, matching styles, tidy edge cases.
