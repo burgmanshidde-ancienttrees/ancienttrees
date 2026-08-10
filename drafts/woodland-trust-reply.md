@@ -14,6 +14,14 @@ your actual answer to her question. Nothing is hidden by the change: what you
 would be doing is identical, it is just not announced with the word a
 conservation charity is most likely to flinch at.
 
+**The two-independent-sources pitch is gone, on your instruction, and you were
+right twice over.** Your own doctrine already says one official register counts
+as the source, so offering to verify the ATI against something else implies
+their record needs checking, in a letter asking them for it. And it answered a
+question she did not ask: her worry is that records go stale, not that they are
+wrong on the day. What is left speaks to freshness, which is the actual
+objection.
+
 **And "never for the tree records themselves" is gone, which was my error to
 make twice.** Pricing is yours and undecided, and I had written a permanent
 commitment about it to a named third party who could later hold you to it. Note
@@ -47,16 +55,12 @@ burden than it would once have been. Trees do die. I can have the site follow
 the Inventory directly and take your lead on the data, if that is what you are
 aiming for.
 
-I would not be publishing a copy of the Inventory. Every tree on the site is
-verified against at least two independent sources and
-gets its own written story. An ATI record would be one of those sources and the
-start of a search, not the end of it. For London that means a handful of trees,
-not the inventory.
+I would not be publishing a copy of the Inventory. For London it would be a
+handful of trees, each with its own written story, rather than a mirror of your
+data.
 
 What I would commit to:
 
-- Nothing goes live unverified. I check that a tree is still standing, and
-  where exactly, before publishing it.
 - Dead trees come off the site rather than into an archive. Every tree page
   asks readers to report problems, and anything reported gone gets checked and
   taken down the same day.

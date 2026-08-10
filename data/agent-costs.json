@@ -1027,6 +1027,13 @@
         "tokens": 127479,
         "trees": 4,
         "note": "4 stories for the Gyoen cluster; also reconciled a Zelkova serrata species-name collision with Seoul/Florence and fixed 2 stale FAQ answers plus 2 count promises. Small batch (4, under the 6 floor) by design: they were the only verified-unwritten trees anywhere. ~21k/tree, the fixed-cost penalty the doctrine predicts for a 4-tree pass."
+      },
+      {
+        "target": "kyoto-kamigyo-register",
+        "kind": "scout",
+        "tokens": 124675,
+        "trees": 0,
+        "note": "Kyoto 区民の誇りの木 register DISQUALIFIED: city site policy explicitly forbids 複製・転用 and the dataset is not on Kyoto's CC open-data portal. Corrected two premises: it is a citywide scheme (901 trees, 11 wards, Kamigyo 110), not a Kamigyo one, and it carries neither coordinates nor age, so it would not have fixed Kyoto's pins even if licensed. A door closed permanently for 125k."
       }
     ]
   }
