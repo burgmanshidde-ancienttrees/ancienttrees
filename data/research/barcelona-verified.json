@@ -1,0 +1,488 @@
+[
+  {
+    "id": "bcn_011",
+    "name": "Freixe de fulla estreta del Jardi Botanic Historic",
+    "species": "Fraxinus angustifolia",
+    "location": {
+      "latitude": 41.366868,
+      "longitude": 2.152084,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "Count, not quality. This and the Acer below are the two remaining trees of the four the Catalan government declared monumental in April 2025, all four in the Sot de l'Estany ravine. We already publish the other two (bcn_005, bcn_006) and the city intro already tells the reader there are four. Adding both would put four of sixteen Barcelona entries inside one ravine behind one paid gate. Strong can",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_012",
+    "name": "Fals platan del Jardi Botanic Historic",
+    "species": "Acer pseudoplatanus",
+    "location": {
+      "latitude": 41.36677,
+      "longitude": 2.152069,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "Same as above: the fourth monumental tree of the Sot de l'Estany, held back on count rather than merit. Register gives no planting year ('Per determinar'), so it would ship flagged.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_013",
+    "name": "Camforer del Jardi Botanic Historic",
+    "species": "Cinnamomum camphora",
+    "location": {
+      "latitude": 41.36716,
+      "longitude": 2.15338,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "1933, so 93 years, and a third entry inside the same paid garden. Ownership reads 'Privat' but that is the museum owning the land, not a closed gate, the same as bcn_006. Held on count and age, not access.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_014",
+    "name": "Robinia del parc de la Ciutadella",
+    "species": "Robinia pseudoacacia",
+    "location": {
+      "latitude": 41.388178,
+      "longitude": 2.186597,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "A 4.3 m trunk perimeter, which is large for a black locust, but the register's age field reads '100 anys' rather than a year, so there is no date to verify and no second source was found. Catalogued only in 2024, so press coverage may follow.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_015",
+    "name": "Platan del parc de la Ciutadella",
+    "species": "Platanus x acerifolia",
+    "location": {
+      "latitude": 41.388756,
+      "longitude": 2.187429,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "3.6 m girth and a 24 m crown, the biggest plane in the park, but the register carries no planting year at all and no second source dates it.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_016",
+    "name": "Pitospor de la Ciutadella",
+    "species": "Pittosporum tobira",
+    "location": {
+      "latitude": 41.387625,
+      "longitude": 2.186243,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "No planting year, no recorded height, and a 1.55 m girth on a species that is usually a shrub. Interesting as a curiosity, thin as a page.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_017",
+    "name": "Araucaria de la casa de la Misericordia",
+    "species": "Araucaria heterophylla",
+    "location": {
+      "latitude": 41.383534,
+      "longitude": 2.168782,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "27 m tall in the same courtyard as bcn_010, but the register gives no planting year and no independent source was found. It would also be a second entry on one small Raval courtyard.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_018",
+    "name": "Platan oriental de la Universitat",
+    "species": "Platanus orientalis",
+    "location": {
+      "latitude": 41.386361,
+      "longitude": 2.164063,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "1933, so 93 years, on a square rather than in a garden. A true Platanus orientalis rather than the usual London plane hybrid is genuinely uncommon in Spanish cities and this is worth a second look when Barcelona next grows. Would extend the Raval walk east to Placa de la Universitat.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_019",
+    "name": "Alvocater de la placa de Can Bruixa",
+    "species": "Persea americana",
+    "location": {
+      "latitude": 41.383571,
+      "longitude": 2.130811,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "An avocado tree 17 m tall in a Les Corts square is a good story, but 1945 makes it 81 years, under the bar, and its 0.8 m girth is slight. 465 m from bcn_007, so it would join that walk if the age bar ever softens.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_020",
+    "name": "Huingan del carrer Joaquim Blume",
+    "species": "Schinus longifolia",
+    "location": {
+      "latitude": 41.37205,
+      "longitude": 2.15539,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "1916, public, but a street tree with no second source found and little to say beyond the species.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_021",
+    "name": "Taronger de Louisiana del carrer Maria Montessori",
+    "species": "Maclura pomifera",
+    "location": {
+      "latitude": 41.370731,
+      "longitude": 2.155415,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "1948, 78 years. The same species as bcn_013 and younger; Barcelona does not need two Osage oranges.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_022",
+    "name": "Castanyer bord de la placa Carles Buigas",
+    "species": "Aesculus hippocastanum",
+    "location": {
+      "latitude": 41.37,
+      "longitude": 2.1497,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "1937, 89 years, under the bar.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_023",
+    "name": "Ginjoler dels jardins Joan Maragall",
+    "species": "Ziziphus jujuba",
+    "location": {
+      "latitude": 41.36753,
+      "longitude": 2.15644,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "1958, 68 years, well under the bar, and the Joan Maragall gardens open only at weekends.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_024",
+    "name": "Ginkgo dels jardins de Mossen Cinto Verdaguer",
+    "species": "Ginkgo biloba",
+    "location": {
+      "latitude": 41.367376,
+      "longitude": 2.164573,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "1958, 68 years. Would carry an excellent autumn best_time if the age bar ever softened for a species this distinctive.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_025",
+    "name": "Molle del jardi d'Aclimatacio and Eucaliptus tuart del jardi d'Aclimatacio",
+    "species": "Schinus longifolia; Eucalyptus gomphocephala",
+    "location": {
+      "latitude": 41.3663,
+      "longitude": 2.1512,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "Both dated 'Per determinar' in the register, both a short walk from bcn_005 and bcn_006. Two undated trees is not a walk.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_026",
+    "name": "Pebrer bord del carrer Maignon",
+    "species": "Schinus molle",
+    "location": {
+      "latitude": 41.41023316885091,
+      "longitude": 2.152881283257778,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "Same garden as the Garrofer above, 41m away, same access question and same conclusion: register plus beteve.cat's 2021 press piece give two sources for existence and species, but not for public access. Girth of 4.34m is large for the species; plausible for a mature multi-stemmed Schinus molle but worth a sanity check against a photo before shipping. Resolve alongside the Garrofer, they are one sit",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_027",
+    "name": "Arbres de l'amor de la placa Joanic",
+    "species": "Cercis siliquastrum",
+    "location": {
+      "latitude": 41.4046,
+      "longitude": 2.1615,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "1956, 70 years. A Judas tree's April flowering would make a strong best_time, and it is 330 m from bcn_001, but it is too young.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  },
+  {
+    "id": "bcn_028",
+    "name": "The Pedralbes cluster: Jardins del Palau Reial de Pedralbes and Jardins de la Torre Girona",
+    "species": "Pinus pinea; Cedrus deodara; Tetraclinis articulata; Brachychiton populneus; Maclura pomifera; Pinus halepensis",
+    "location": {
+      "latitude": 41.3886,
+      "longitude": 2.1163,
+      "address": "",
+      "neighbourhood": ""
+    },
+    "location_precision": "approximate",
+    "verified_sources": [
+      "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+    ],
+    "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
+    "girth_cm": null,
+    "planted": null,
+    "age_estimate": null,
+    "curation_status": "flagged",
+    "verify_notes": "Not evaluated in this pass, and recorded here because it is the strongest untouched cluster in the city. Eight register entries lie inside 400 m of each other across the Palau Reial gardens, the Torre Girona gardens and the Pavellons Guell with Gaudi's dragon gate, all in one walk, 1.2 km west of bcn_007. A future pass should take this as a single unit rather than tree by tree, and must check the ",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  }
+]
