@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.9 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.10 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -153,6 +153,38 @@ The mid-tier of the pyramid (tree → city → country), added v1.5 on Hidde's i
 | URL | Root-level country slug (`/netherlands`, `/united-kingdom`). Never a prefix path; collision with city slugs is prevented at build time (build fails on a clash). |
 
 ---
+
+### Contract J — Translated city set  `/es/[city]` (v1.10, test scope)
+
+Approved by Hidde in session 2026-08-10 ("wat als we een paar spaanse paginas
+maken en testen of het werkt? maar wel een opzet doen die op de lange termijn
+werkt"). One city translated end to end as a market test, inside the structure
+that scales if it works.
+
+- **URL shape:** language subdirectory. `/es/{city}`, `/es/{city}/{tree-slug}`
+  (tree slugs stay identical to English), `/es/{city}/arbol-mas-antiguo` for
+  the question page (the searched phrase, not an English path segment).
+- **hreflang is reciprocal or it is nothing.** Every translated page and its
+  English pair each carry `hreflang` links to both versions plus `x-default`
+  pointing at English. The English city page also carries one visible link to
+  the Spanish version, which doubles as the qa.py inbound-link guarantee.
+- **Translation is an overlay, never a fork.** `data/i18n/{lang}/{slug}.json`
+  holds translated text only (names, stories, intro, question set, FAQ,
+  access/transport lines, Spanish common species names). Coordinates, photos,
+  licences, walks and every future correction live solely in the canonical
+  city file. The build fails if the overlay misses a tree the English city
+  has, so a city cannot grow past its translation silently.
+- **Same bars, same numbers:** intro 60-100 words, stories 150-250, title max
+  60, descriptions max 155, no em dashes, answer-first on the question page.
+  Hand-written in the target language; mechanically patched text is forbidden
+  (the 2026-08-09 accent incident is the reason this sentence exists).
+- **Known limits of the test, deliberate:** site chrome (nav, footer), map
+  popups and the season block stay English. If the test earns a second
+  language or a wider rollout, those become contract items, not silent debt.
+- **The test's measure, recorded so the page is judged by it:** Malaga was
+  chosen because "árboles históricos de málaga" showed 20 impressions at
+  position 74 with our English page. The question is whether `/es/malaga`
+  moves on that query within four weeks of indexing.
 
 ## MEASUREMENT CONTRACT (what proves this blueprint works)
 

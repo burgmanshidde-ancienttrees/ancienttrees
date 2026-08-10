@@ -20,6 +20,7 @@ import { planWalks, walkRouteFor, humanDuration, mapsRouteUrl, kmLabel, WALK_NAM
 import { cityMapScript } from "../lib/city-map-script";
 import { otherCitiesFor } from "../lib/other-cities";
 import { byCityListOrder } from "../lib/city-order";
+import { cityTranslation, hreflangLinks } from "../lib/i18n";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -145,7 +146,12 @@ const graph = [
   { "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
   breadcrumbSchema(crumbItems, canonical),
 ];
-const headExtra = mapHead() + "\n" + ldScript(graph);
+// When a translation of this city exists, both language versions must name
+// each other (hreflang is only honoured when reciprocal), and the visitor
+// gets a visible way across, which is also what keeps the /es/ page from
+// being an orphan under qa.py's inbound-link rule.
+const esTr = cityTranslation("es", cslug);
+const headExtra = mapHead() + (esTr ? "\n" + hreflangLinks("es", `/${cslug}`, `/es/${cslug}`) : "") + "\n" + ldScript(graph);
 
 const avgLat = markers.reduce((s, m) => s + m.lat, 0) / markers.length;
 const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
@@ -201,6 +207,7 @@ const firstWalk = walks[0] ?? null;
         <p class="eyebrow">{country}</p>
         <h1>Ancient Trees in <em>{cityName}</em></h1>
         <p class="lede">{intro}</p>
+        {esTr && <p class="lang-alt">Esta página también está disponible <a href={`/es/${cslug}`}>en español</a>.</p>}
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
           <span class="passport-total" id="passport-total"></span>

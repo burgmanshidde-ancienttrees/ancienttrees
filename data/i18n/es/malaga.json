@@ -1,0 +1,112 @@
+{
+ "_note": "Spanish overlay for the Malaga test, hand-written 2026-08-10 on Hidde's direction ('wat als we een paar spaanse paginas maken en testen of het werkt'). One city, full set: city page, question page, ten tree pages, under /es/ with hreflang pairing. The measurement: does /es/malaga move on 'árboles históricos de málaga' (i20, p74, zero clicks) within four weeks. European Spanish, no em dashes, faithful to the English facts; never machine-patched (the accent disaster of 2026-08-09 is the standing warning).",
+ "city": "Málaga",
+ "title": "Árboles históricos de Málaga: 10 ejemplares singulares",
+ "meta_description": "Los diez árboles más singulares de Málaga, de un olivo de 400 años a un ficus junto a una obra de Picasso. Historias, ubicaciones y cómo llegar.",
+ "intro": "Los árboles más notables de Málaga rara vez vienen del monte. Casi todos los de esta lista llegaron como importación, accidente o rescate: un ficus confundido con una magnolia, un olivo desenterrado entero en un pueblo vecino, un aguacate plantado hace siglo y medio cuando nadie en España cultivaba aún la fruta para venderla. La propia ciudad se sumó en 2022 a un programa europeo de placas para señalar diez de ellos, y esta lista bebe de esa selección oficial, completada con el jardín botánico que colecciona ejemplares desmesurados desde 1855.",
+ "question_title": "¿Cuál es el árbol más antiguo de Málaga? (400 años)",
+ "question_meta": "El árbol más antiguo de Málaga: un olivo de unos 400 años en La Concepción, trasladado entero desde Vélez-Málaga. Su historia, dónde está y nueve más.",
+ "question_answer": "El árbol más antiguo documentado de Málaga es el olivo del Jardín Botánico-Histórico La Concepción, estimado en unos 400 años y trasladado entero desde Vélez-Málaga. Crece en la colección de flora mediterránea del jardín, de pago, en el norte de la ciudad y accesible en autobús desde el centro.",
+ "question_context": "Málaga no tiene un único registro de árboles dominante como otras ciudades. Su fuente más sólida es un programa municipal de 2022, dentro del proyecto europeo TreeTags y del programa internacional Tree Cities of the World, que colocó placas en diez ejemplares repartidos por la ciudad, elegidos por su tamaño, edad o ubicación singulares. Aparte, el Jardín Botánico-Histórico La Concepción, una finca privada abierta al público y declarada jardín histórico en 1943, mantiene su propio registro de una docena de árboles desmesurados heredados de más de un siglo de coleccionismo. Dentro de ese conjunto, el olivo de La Concepción es el que con más consistencia se describe como el más viejo de la ciudad, sobre la base de una estimación de unos 400 años dada por el propio jardín, aunque, como con casi todos los olivos veteranos, la cifra es una estimación general y no un recuento de anillos. El jardín está en el borde norte de la ciudad, es de pago (la entrada es económica) y se llega en autobús desde el centro.",
+ "faq": [
+  {
+   "q": "¿Cuál es el árbol más antiguo de Málaga?",
+   "a": "El olivo del Jardín Botánico-Histórico La Concepción, estimado en unos 400 años y trasladado entero desde Vélez-Málaga. Crece en la colección de flora mediterránea del jardín, un recinto de pago al norte del centro."
+  },
+  {
+   "q": "¿Qué es el programa de placas de Málaga?",
+   "a": "Un programa municipal de 2022, parte del proyecto europeo TreeTags y de la iniciativa internacional Tree Cities of the World, que colocó placas identificativas en diez árboles de Málaga elegidos por su tamaño, edad o ubicación. Seis de los diez árboles de esta lista llevan una de esas placas."
+  },
+  {
+   "q": "¿Es gratis ver los árboles singulares de Málaga?",
+   "a": "La mayoría sí: están en parques, jardines y calles públicas. Dos excepciones: los árboles del Jardín Botánico-Histórico La Concepción requieren una entrada económica, y el aguacate del colegio de Churriana está en un centro escolar en activo y se visita con cita previa, no libremente."
+  },
+  {
+   "q": "¿Por qué tantos árboles viejos de Málaga no son autóctonos?",
+   "a": "La mayoría llegó con la moda y el comercio de los siglos XIX y XX: propietarios de fincas y jardineros municipales plantaban especies de Australia, Sudamérica y Asia porque acababan de estar disponibles, no porque crezcan silvestres en Andalucía. La única encina autóctona de esta lista destaca precisamente por ser la excepción."
+  }
+ ],
+ "strings_note": "Per-tree fields below: name, species (Spanish common name, same Latin), age_estimate, access, transport, story.",
+ "trees": {
+  "mlg_001": {
+   "name": "El olivo trasplantado de La Concepción",
+   "species": "Olivo (Olea europaea)",
+   "age_estimate": "unos 400 años",
+   "access": "Entrada de pago, Jardín Botánico-Histórico La Concepción",
+   "transport": "Autobús desde el centro hasta la entrada del jardín, Camino del Jardín Botánico",
+   "story": "Este olivo no creció donde hoy está. Lo desenterraron entero en Vélez-Málaga, a unos 40 km por la costa, y lo trasladaron a la colección de flora mediterránea del Jardín Botánico-Histórico La Concepción, donde ha seguido creciendo como si nada hubiera pasado. El jardín nació en 1855, obra de los marqueses de Casa Loring sobre una antigua finca agrícola, ampliado después por la familia Echevarría-Echevarrieta antes de su declaración como jardín histórico en 1943, pero este olivo es anterior a todo eso por siglos: la estimación del propio jardín le atribuye unos 400 años, con un perímetro de tronco de 3,30 metros que acumula anillos de crecimiento que nadie ha contado directamente, porque talar un árbol vivo para comprobarlo arruinaría el sentido de la cosa. Los olivos se resisten a la datación precisa como casi todos los árboles muy viejos: se ahuecan y rebrotan desde su propia base a lo largo de los siglos, así que cualquier cifra es una estimación y no una medición. Lo que sí es seguro es el trasplante, una hazaña considerable para un ejemplar de este tamaño, hecha para traer uno de los olivos más viejos de la región a una colección creada precisamente para reunir árboles demasiado notables como para dejarlos donde estaban."
+  },
+  "mlg_002": {
+   "name": "Los ficus de la Alameda Principal",
+   "species": "Laurel de Indias (Ficus microcarpa)",
+   "age_estimate": "unos 150 años",
+   "access": "Gratuito, calle pública",
+   "transport": "Estación de metro Málaga Centro-Alameda, o 5 minutos a pie desde la plaza de la Marina",
+   "story": "El paseo central de Málaga ha tenido tres arbolados distintos en sus 240 años de historia, y los árboles que hoy lo cubren iban a ser provisionales. La Alameda se trazó en 1783 con álamos blancos, que dieron nombre a la calle, sustituidos más tarde por naranjos y adelfas. Estos salieron a su vez en 1876, cuando la reforma del arquitecto Joaquín Rucoba trajo ficus de gran porte procedentes de la India, Ficus microcarpa, conocidos aquí como laurel de Indias. Nadie esperaba que los recién llegados acabaran definiendo la calle, pero 150 años después sus copas anchas, aplanadas por el viento, forman un techo verde continuo sobre el tráfico, tan denso que los malagueños siguen contando la sombra de la Alameda entre los lugares más frescos del centro en pleno agosto. Veintitrés de los ejemplares adultos originales sobreviven hoy junto a reposiciones más jóvenes, y cuando Málaga construyó el metro bajo la Alameda en 2018 y 2019, las obras se diseñaron expresamente para proteger sus raíces, quitando carriles de tráfico antes que excavar junto a los troncos. Sigue siendo uno de los pocos paisajes urbanos del siglo XIX en España donde lo que todos recuerdan es la elección accidental, no la planeada."
+  },
+  "mlg_003": {
+   "name": "El Barrilito",
+   "species": "Palo borracho (Ceiba chodatii)",
+   "age_estimate": "sin datar, adulto",
+   "access": "Gratuito, jardín público",
+   "transport": "5 minutos a pie desde la plaza de la Marina",
+   "story": "Quien pasa junto a este árbol lo llama por su apodo y no por su especie: El Barrilito, por un tronco tan hinchado que parece menos madera que algo inflado. Ceiba chodatii almacena agua en ese tronco para sobrevivir a la estación seca de su Sudamérica natal, y este ejemplar ha llevado la adaptación más lejos que casi ninguno: medido en abril de 2022 en 5,86 metros de perímetro a la altura del pecho, una cifra que los aficionados locales consideran posiblemente la mayor de su especie en España y en la Europa continental, una afirmación que ningún registro nacional ha zanjado. Crece en los Jardines de Alfonso Canales, un pequeño jardín formal entre la calle Vendeja y la plaza de la Marina que lleva el nombre del poeta malagueño, junto al que se instaló un busto de bronce de Canales en 2007. Durante años el árbol estuvo tras una valla protectora, retirada en 2009, y hoy comparte la plaza con unos bancos rojos de un proyecto de arte público, una pareja extraña pero adecuada para un árbol cuyo atractivo entero es lo raro que resulta. En 2022 el Ayuntamiento lo señaló como uno de los diez árboles singulares de la ciudad dentro de una campaña europea, uno de los seis de esta lista que llevan esa placa."
+  },
+  "mlg_004": {
+   "name": "El palo borracho de Cortina del Muelle",
+   "species": "Palo borracho (Ceiba speciosa)",
+   "age_estimate": "sin datar, adulto",
+   "access": "Gratuito, calle pública",
+   "transport": "5 minutos a pie desde la Catedral de Málaga",
+   "story": "Este árbol sobrevivió a una obra convirtiéndose en parte de la obra. Cuando se remodelaron las calles alrededor de la Catedral hace aproximadamente una década, casi todo lo que estorbaba desapareció. Esta Ceiba speciosa, una especie sudamericana emparentada con el Barrilito del otro lado del centro pero distinguible por su corteza más espinosa y sus flores rosadas más pálidas, no: los ingenieros levantaron un parterre elevado alrededor de su base, integrando un árbol de 23 metros en la calle terminada en lugar de retirarlo. El resultado es una pieza extraña de mobiliario urbano, un anillo de piedra elevado en una calle peatonal histórica con un árbol tropical de porte considerable creciendo justo en el medio, a unos pasos de la catedral que da a Cortina del Muelle su tránsito constante. Málaga lo señaló en 2022 como uno de los diez árboles singulares de su programa de placas, citando su altura y su conservación inusualmente deliberada como motivos de la distinción. No sobrevive fecha de plantación ni edad individual para este ejemplar, y aquí se deja honestamente sin datar antes que adivinarla."
+  },
+  "mlg_005": {
+   "name": "El ficus de los Jardines de Picasso",
+   "species": "Ficus de la Bahía de Moreton (Ficus macrophylla)",
+   "age_estimate": "más de 100 años",
+   "access": "Gratuito, jardín público",
+   "transport": "10 minutos a pie desde la estación Málaga Centro-Alameda",
+   "story": "Este ficus es anterior por décadas al jardín construido a su alrededor. Los Jardines de Picasso se abrieron en 1981, trazados en un patrón simétrico de pétalos para conmemorar el centenario del nacimiento del pintor en la ciudad, pero sus dos Ficus macrophylla más viejos ya eran árboles adultos cuando el suelo bajo ellos se ajardinó formalmente, con raíces aéreas para entonces tan gruesas que se alzaban casi un metro sobre la tierra. El propio programa municipal de placas describe la pareja como centenaria y entre las mayores de su especie en Europa, una afirmación que se ofrece aquí con la misma cautela que este sitio aplica a cualquier superlativo no confirmado por un registro independiente. Entre los dos árboles se alza Siextasis, una escultura del artista malagueño Miguel Ortiz Berrocal, conocido por sus bronces desmontables que se separan en decenas de piezas encajadas, colocada como homenaje del jardín a Picasso. El conjunto da a los Jardines de Picasso una distinción curiosa: un jardín público donde los árboles son más viejos que el arte dedicado al pintor más famoso de la ciudad, y ambos estaban allí antes de que el jardín tuviera nombre."
+  },
+  "mlg_006": {
+   "name": "El almez de la Casita de los Cipreses",
+   "species": "Almez (Celtis australis)",
+   "age_estimate": "unos 200 años",
+   "access": "Entrada de pago, Jardín Botánico-Histórico La Concepción",
+   "transport": "Autobús desde el centro hasta la entrada del jardín, Camino del Jardín Botánico",
+   "story": "La madera de almez era tan barata y corriente que durante siglos a nadie se le ocurrió plantarlo por su aspecto: se usaba para duelas de barril, bastones, cañas de pescar y aperos, y los niños usaban sus pequeñas bayas oscuras como munición de cerbatana, el tipo de árbol valorado por su utilidad y no admirado por su tamaño. Este, en La Concepción, creció más allá de todo eso. Junto a un edificio que el jardín llama la Casita de los Cipreses, mide hoy unos 24 metros con un tronco de 3,72 metros de perímetro, dimensiones que el registro del propio jardín y un blog independiente de historia del arbolado describen como probablemente el almez más grande y mejor conservado de la provincia de Málaga. Celtis australis puede vivir seiscientos años en buenas condiciones, lo que deja a este ejemplar, con unos dos siglos estimados, cómodamente lejos del techo de su especie. Crece dentro de una colección botánica reunida desde 1855 precisamente para juntar árboles demasiado grandes o raros para encontrarlos en otra parte, y junto a las especies llegadas de fuera más vistosas del jardín, palmeras y ficus de tres continentes, esta especie útil y sin glamur se defiende por pura escala."
+  },
+  "mlg_007": {
+   "name": "La araucaria más alta de la provincia",
+   "species": "Araucaria de Norfolk (Araucaria heterophylla)",
+   "age_estimate": "unos 200 años",
+   "access": "Entrada de pago, Jardín Botánico-Histórico La Concepción",
+   "transport": "Autobús desde el centro hasta la entrada del jardín, Camino del Jardín Botánico",
+   "story": "Araucaria heterophylla crece en la Tierra desde el Triásico, hace más de 200 millones de años, tiempo suficiente para haber compartido el planeta con los primeros dinosaurios, aunque el ejemplar junto a la cascada de La Concepción es una llegada bastante más reciente. Nativa de una sola isla pequeña del Pacífico, a unos 1.600 km al este de Australia, la especie se puso de moda en los jardines de Málaga a mediados del siglo XIX, cuando el tráfico marítimo y el coleccionismo botánico de la época colonial pusieron especies antes inalcanzables al alcance de cualquiera con tierra y dinero. Esta lleva creciendo desde entonces cerca de dos siglos, lo suficiente para alcanzar 46 metros, la araucaria confirmada más alta de la provincia de Málaga según el registro del propio jardín. Su forma es la razón de que la especie fuera moda: ramas dispuestas en pisos perfectamente regulares alrededor de un tronco único y recto, con una simetría que parece más diseñada que crecida, tanto en ejemplares jóvenes como viejos. Los barcos usaron troncos de araucarias emparentadas como mástiles mayores, un uso práctico que este ejemplar ornamental, en tierra firme junto a una cascada de jardín, no verá nunca."
+  },
+  "mlg_008": {
+   "name": "La encina del Parque de Málaga",
+   "species": "Encina (Quercus ilex)",
+   "age_estimate": "sin datar, adulta",
+   "access": "Gratuito, parque público",
+   "transport": "5 minutos a pie desde la plaza de la Marina",
+   "story": "Casi todo lo notable del arbolado de Málaga llegó de otra parte: Australia, Sudamérica, la India, el Himalaya. Esta encina no. Quercus ilex es el árbol del bosque andaluz autóctono, la especie que dominaría las colinas de esta costa si siglos de cultivo, pastoreo y construcción no hubieran despejado la mayor parte, y su presencia en el Parque de Málaga se lee menos como una elección de jardinería que como un recordatorio de lo que había aquí antes del parque. El propio parque solo existe porque la Málaga del siglo XIX ganó terreno al mar: se construyó sobre una franja de litoral antes ocupada por la explanada de un fuerte y se llenó con especies de cinco continentes cuando la ley de 1896 impulsada por Cánovas del Castillo abrió el camino. En medio de esa colección deliberadamente exótica, palmeras, dragos, ficus, jacarandas, esta encina destaca por ser corriente en el mejor sentido: 19 metros de altura, 0,9 metros de diámetro de tronco, nada especial en cualquier otro punto de Andalucía y discretamente notable aquí por ser el único árbol de la lista municipal de singulares de 2022 que pertenece de verdad a esta costa."
+  },
+  "mlg_009": {
+   "name": "La caña fístula del Parque de Málaga",
+   "species": "Caña fístula (Peltophorum dubium)",
+   "age_estimate": "sin datar, adulta",
+   "access": "Gratuito, parque público",
+   "transport": "5 minutos a pie desde la plaza de la Marina",
+   "story": "El Parque de Málaga reúne unas 300 especies de árboles en sus 3,3 hectáreas, una densidad buscada a propósito cuando se ajardinó sobre terreno ganado al puerto a comienzos del siglo XX, y Peltophorum dubium es una de sus rarezas auténticas, una especie sudamericana tan poco común en el cultivo español que la campaña municipal de placas de 2022 la señaló precisamente por infrecuente, no por su tamaño ni su edad. En sus Argentina, Brasil, Paraguay y Uruguay natales se la conoce como caña fístula, apreciada por su madera duradera y por los ramilletes de flores amarillas que produce en las riberas húmedas que prefiere. El ejemplar de Málaga se ha adaptado a condiciones bastante más secas que las de su región de origen, con 13 metros de altura y medio metro de tronco, dimensiones modestas junto a los ficus y araucarias gigantes del parque pero suficientes para ganarse su propia placa identificativa bajo el mismo programa europeo que señaló al Barrilito y a la ceiba de Cortina del Muelle. Es una pequeña prueba de la ambición original del parque: no un simple espacio verde, sino una colección viva reunida de cinco continentes y todavía capaz, más de un siglo después, de sorprender a quien cree saber cómo es un parque de ciudad español."
+  },
+  "mlg_010": {
+   "name": "El aguacate del colegio Ciudad de Jaén",
+   "species": "Aguacate (Persea americana)",
+   "age_estimate": "más de 150 años",
+   "access": "Acceso restringido: colegio en activo, visitas solo con cita previa",
+   "transport": "Autobús a Churriana, calle Torremolinos",
+   "story": "Málaga y la vecina Granada producen hoy nueve de cada diez aguacates que se venden en España, una industria cuyas raíces llevan a Churriana, un distrito del suroeste de la ciudad más conocido hoy por el aeropuerto que por haber iniciado un cultivo nacional. Los primeros aguacates llegaron a esta costa a mediados del siglo XIX, traídos por viajeros con lazos con Cuba y las Américas y plantados primero como curiosidades en fincas privadas, no como negocio. Este árbol, que crece en el patio de un colegio público en activo, es uno de los supervivientes de aquella primera época: el Ayuntamiento lo señaló en 2022 como uno de los diez árboles singulares de la ciudad y lo describe como uno de los primeros ejemplares de aguacate traídos a Málaga, con más de 150 años y todavía unos 11 metros de altura dentro de un pequeño muro protector. La asociación de madres y padres del colegio tomó su nombre directamente del árbol, llamándose AMPA Aguacate, y generaciones de escolares de Churriana han comido a su sombra décadas antes de que el aguacate se convirtiera en el cultivo que hoy define la agricultura de la región. No está abierto al público: visitarlo pasa por contactar con el colegio y concertar una hora, una limitación honesta para un árbol que por lo demás tiene una de las mejores historias de esta lista."
+  }
+ }
+}

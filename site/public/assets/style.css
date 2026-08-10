@@ -688,3 +688,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .page { padding: 2rem 1.5rem; }
 
 }
+
+/* Language switch line on translated city pairs (the Malaga /es/ test). */
+.lang-alt { font-size: 13px; color: var(--ink-light); margin: 0.35rem 0 0; }
+.lang-alt a { color: var(--moss); }

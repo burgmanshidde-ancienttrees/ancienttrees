@@ -26,9 +26,14 @@ export interface Props {
   /** City pages pass false: the split-panel/map layout has no room for the
    * standard footer (render_page(..., footer=False), build_site.py:3659). */
   footer?: boolean;
+  /** Page language for the html lang attribute. Translated pages (/es/...)
+   * pass their own; everything else stays English. The chrome this layout
+   * renders (nav, footer) is English either way, which is a known limit of
+   * the translation test, not an oversight. */
+  lang?: string;
 }
 
-const { title, description, canonical, ogType = "article", headExtra = "", footer = true } = Astro.props;
+const { title, description, canonical, ogType = "article", headExtra = "", footer = true, lang = "en" } = Astro.props;
 
 if (title.length > TITLE_MAX) {
   throw new Error(`${canonical}: title exceeds ${TITLE_MAX} chars (${title.length}): ${JSON.stringify(title)}`);
@@ -40,7 +45,7 @@ if (description.length > DESC_MAX) {
 const year = new Date().getFullYear();
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

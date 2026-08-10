@@ -13,6 +13,7 @@ import { ageToken, metaFromStory, submitLink, locationIsApproximate } from "../.
 import { seasonBlock } from "../../lib/phenology";
 import { mapHead, singlePinScript } from "../../lib/map";
 import { COLLECT_JS } from "../../lib/collect-js";
+import { cityTranslation, hreflangLinks } from "../../lib/i18n";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -120,7 +121,8 @@ const graph = [
   },
   breadcrumbSchema(crumbItems, canonical),
 ];
-const headExtra = mapHead() + ogImage + "\n" + ldScript(graph);
+const esTr = cityTranslation("es", cslug);
+const headExtra = mapHead() + ogImage + (esTr && esTr.trees[tree.id] ? "\n" + hreflangLinks("es", `/${cslug}/${tslug}`, `/es/${cslug}/${tslug}`) : "") + "\n" + ldScript(graph);
 const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
