@@ -43,6 +43,7 @@ from cluster_register import km  # noqa: E402
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SAME_CITY_KM = 20.0
 NEAR_PUBLISHED_KM = 0.08  # a register entry this close to a live tree is probably that tree
+LEAD_MATCH_KM = 0.025     # ...and this close to a recorded lead is probably that lead
 
 # Local name to our slug, for the cases a name lookup alone would miss. Distance
 # is the real test; this only helps the first guess.
@@ -141,6 +142,89 @@ def candidates_near(lat, lng, radius=SAME_CITY_KM):
             e["dist"] = d
             out.append(e)
     return sorted(out, key=lambda e: e["dist"])
+
+
+_MINED = None
+
+
+def mined_points():
+    """Every tree an earlier pass already judged, with its coordinate and verdict.
+
+    passcheck deduped register candidates against PUBLISHED trees only, so a tree
+    a previous pass had already rejected came back in the next brief looking
+    fresh. That is not theoretical: the Rome pass of 2026-08-10 spent its whole
+    window rediscovering, by hand, that all 38 of its "candidates within 20 km"
+    were already leads or blocked entries, and shipped nothing. The join was left
+    to the agent to do by NAME, which the project's own rule forbids everywhere
+    else, because registers and our own files spell the same tree differently.
+
+    Matching is by coordinate, like the published check, so no spelling can fool
+    it. Entries without a coordinate (roughly a third) cannot be matched this way
+    and stay listed in the leads section below, unchanged.
+    """
+    global _MINED
+    if _MINED is not None:
+        return _MINED
+    out = []
+    for f in sorted(glob.glob(os.path.join(ROOT, "data", "leads", "*.json"))):
+        try:
+            d = json.load(open(f, encoding="utf-8"))
+        except Exception:
+            continue
+        if not isinstance(d, dict):
+            continue
+        for kind in ("leads", "blocked"):
+            for e in (d.get(kind) or []):
+                if not isinstance(e, dict):
+                    continue
+                loc = e.get("location") if isinstance(e.get("location"), dict) else e
+                lat = loc.get("latitude", loc.get("lat"))
+                lng = loc.get("longitude", loc.get("lng"))
+                if lat is None or lng is None:
+                    continue
+                why = (e.get("why_not_published") or e.get("reason")
+                       or e.get("why") or e.get("status") or "")
+                out.append({"lat": float(lat), "lng": float(lng), "kind": kind,
+                            "name": e.get("name", "?"), "why": why,
+                            "species": e.get("species", ""),
+                            "file": os.path.basename(f)})
+    _MINED = out
+    return out
+
+
+def _genus(species):
+    """First word of a botanical name, lowercased. The cheapest species guard
+    there is, and enough: Cedrus is not Brahea."""
+    if not species:
+        return ""
+    s = re.sub(r"[^A-Za-z ]", " ", str(species)).strip().lower().split()
+    return s[0] if s else ""
+
+
+def already_judged(lat, lng, species=None):
+    """The lead or blocked entry at this spot, or None. Nearest wins.
+
+    Two guards against a false match, which is the dangerous direction here: a
+    wrong hit HIDES a real candidate, while a miss only costs the pass a second
+    look. First, the radius is far tighter than the published-tree check (25 m
+    against 80 m), because a lead and a register row describing the same tree
+    usually come from the same survey and agree closely, while distinct trees in
+    a dense park sit tens of metres apart. Second, when both sides name a
+    species and the genus differs, it is not the same tree whatever the distance
+    says. Both were written after a Himalayan Cedar matched a Mexican Blue Palm
+    80 m away in Villa Sciarra.
+    """
+    g = _genus(species)
+    hits = []
+    for m in mined_points():
+        d = km((lat, lng), (m["lat"], m["lng"]))
+        if d > LEAD_MATCH_KM:
+            continue
+        mg = _genus(m.get("species"))
+        if g and mg and g != mg:
+            continue
+        hits.append((d, m))
+    return min(hits, key=lambda h: h[0])[1] if hits else None
 
 
 def centre_from_registers(key):
@@ -508,14 +592,28 @@ def brief(arg, live):
     if centre:
         cands = candidates_near(*centre)
         pub_pts = match["points"] if match else []
-        shown = cands[:40]
+        for e in cands:
+            e["_pub"] = any(km((e["lat"], e["lng"]), p) <= NEAR_PUBLISHED_KM
+                            for p in pub_pts)
+            e["_judged"] = (None if e["_pub"]
+                            else already_judged(e["lat"], e["lng"], e.get("species")))
+        unmined = [e for e in cands if not e["_pub"] and not e["_judged"]]
+        shown = unmined[:40] + [e for e in cands if e["_pub"] or e["_judged"]][:12]
+        shown = sorted(shown, key=lambda e: e["dist"])
         print(f"\nCANDIDATES from official registers, licence already verified "
               f"({len(cands)} within {SAME_CITY_KM:.0f} km of {centre[0]:.4f},{centre[1]:.4f}):")
+        print(f"  UNMINED, i.e. not published and not already judged by an earlier pass: "
+              f"{len(unmined)} of {len(cands)}.")
+        if cands and not unmined:
+            print("  Every register tree within reach is already published or already")
+            print("  recorded as a lead or blocked. There is no register work left here:")
+            print("  new trees would have to come from web research, and a pass that")
+            print("  hunts this register again will spend its window confirming that.")
         if not cands:
             print("  none: no imported register covers this area. Verification here is")
             print("  web research; scout the register first if one exists (OPEN_DATA_SURVEY.md).")
         for e in shown:
-            already = any(km((e["lat"], e["lng"]), p) <= NEAR_PUBLISHED_KM for p in pub_pts)
+            already = e["_pub"]
             bits = [f"{e['dist']:4.1f} km", e["name"] or "(unnamed)"]
             if e["species"]:
                 bits.append(e["species"])
@@ -528,6 +626,11 @@ def brief(arg, live):
             line = "  " + "  ".join(str(b) for b in bits)
             if already:
                 line += "  << within 80 m of a live tree: probably already published, check first"
+            elif e["_judged"]:
+                j = e["_judged"]
+                tag = "BLOCKED" if j["kind"] == "blocked" else "already a lead"
+                line += (f"\n        << {tag} by an earlier pass ({j['file']}): "
+                         f"{j['why'][:150]}")
             print(line)
         if len(cands) > len(shown):
             print(f"  ...and {len(cands) - len(shown)} more; run passcheck again with a "
