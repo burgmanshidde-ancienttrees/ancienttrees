@@ -16,6 +16,14 @@ Four things in his mail, and the reply answers all four in one line each:
 4. He assumes you live in Berlin and gently notes you have not stood in front
    of your own city's trees. Answering that honestly also answers question 1.
 
+Your line about connecting the world's registers sits right after the
+not-just-Berlin answer, because it is the reason it is not just Berlin, and
+because he had already said he wants to hunt his own register's overlaps in our
+cities. It reframes the whole exchange: his register becomes part of something
+rather than a thing being asked for. That also makes it the natural opening for
+a bigger request later; do not make that request now, when he has only just
+offered links.
+
 The ask is now Münster, ten trees, and we build the page. That is a real
 commitment, and a cheap one: the floor for a new city is four verified trees,
 so ten leads from a register moderator is more than enough. Two things to know
@@ -37,6 +45,8 @@ Subject: Re: Können Sie mir mit ancienttrees.app helfen? Berlin
 Hallo Wolfgang,
 
 nein, nicht nur Berlin! Aktuell stehen 95 Städte online, in ganz Europa und darüber hinaus, und es kommen laufend neue dazu. Berlin stand nur im Betreff, weil ich Sie wegen der Berliner Bäume angeschrieben hatte. Münster ist übrigens noch nicht dabei.
+
+Die Idee dahinter ist genau das, was Sie beschreiben: die Baumregister der Welt miteinander zu verknüpfen, damit jemand in einer fremden Stadt die alten Bäume dort findet und hingeht. Sie wollen in unseren Städten nach Schnittmengen mit Ihrem Register suchen, und genau dafür ist es gebaut.
 
 Und Sie sehen das richtig: ich wohne in den Niederlanden und habe vor den Berliner Bäumen tatsächlich noch nicht gestanden. Das ist mir bewusst und nagt auch ein bisschen.
 
