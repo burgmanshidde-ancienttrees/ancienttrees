@@ -29,6 +29,18 @@ Four failure modes, all recorded, all mine:
    him to.
 4. PROCESS-PITCHING. Nobody outside this project cares how we verify. Say what
    they get.
+
+What it CANNOT check is the positive half, which is where his own drafts win,
+so read this before writing rather than only after. A mail of his GIVES before
+it asks: a concrete personal detail ("ik woon in baarn een klein stadje vlakbij
+amsterdam", not "in the Netherlands"), a criticism turned into an intention
+rather than guilt ("kom ze graag eens bekijken"), the reason behind a
+limitation instead of an apology for it ("vandaar dat ik met hoofdsteden
+begin"), and only then the asks, numbered out loud ("op twee manieren"),
+phrased generically enough that nobody is put on the spot ("is er een duits
+register" rather than "may we have yours"), with the payoff inside the ask
+("dan kan ik die stad morgen toevoegen"). Both calibration mails are in
+memory under outreach-email-voice.
 """
 import glob
 import re
