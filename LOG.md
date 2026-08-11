@@ -18,6 +18,16 @@ next one. He is out of tokens for today and asked that everything be left ready.
 Read this before Step 0's ladder; the items below already sit on their proper
 rungs.
 
+**0. If Wolfgang Schürmann sends his ten Münster trees, that is the day's work.**
+Baumkunde.de's register moderator was asked on 2026-08-11 for ten trees in his
+own city, with the offer that we build the page from them and credit him. If
+that list arrives it outranks everything below: a named list from a register
+moderator is the cheapest new city this project has ever had, and Münster is
+currently in no city file and not even in the 149-entry queue. Germany would go
+from two cities to three. The floor is unchanged, four verified trees, and each
+one still needs its own check, so the page carries what holds up rather than
+all ten automatically. Credit him with `submitted_by` per Step 0b.
+
 **1. Reader tips and replies (rung 1, outranks everything).**
 Four replies are drafted and waiting for HIM to send; a run never sends them.
 `drafts/reply-rock-creek.md` (his own wording, the calibration for all future
