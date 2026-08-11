@@ -337,7 +337,9 @@ The old channel (a `SUBMISSIONS_CSV_URL` constant, a published-CSV Google Sheet,
 For each new submission:
 1. Treat it as a research lead, never as fact. A submitter saying a tree is 500 years old is a claim to verify, not a source.
 2. Apply the exact same bar as your own research: two independent sources for existence, species and age, and a location you can place precisely. The hard rules still apply in full, especially "never fabricate" and "photos need a verified open licence".
-3. If it verifies: write the story in the tone of voice, add it to the right city file, and credit the submitter by the name they gave (`"submitted_by"` on the tree). If the city does not exist yet, create it as a new city file with the submitted trees, and set its status to `needs_curation`.
+3. If it verifies: write the story in the tone of voice and add it to the right city file. **Never put the sender's name on the site.** Ruled by Hidde 2026-08-11 ("privacy technisch echt een no go... ookal is het via formulier niet meer doen nooit") after a run rendered a submitter's name on a tree page. It applies whatever the channel: an email is obviously not consent, and a name typed into our own form is not consent either, because people fill a field without expecting to be published and a name plus a city plus a tree they visit is personal data we have no business exposing. Thank them privately instead; that is what keeps a contributor coming back. If the city does not exist yet, create it as a new city file with the submitted trees, and set its status to `needs_curation`.
+
+   The `submitted_by` field survives in the schema so older files still validate, and nothing renders it. Do not write new ones. Photograph credits are a different thing and stay: a CC BY licence obliges us to name the photographer, and they chose that licence knowing it.
 4. If it does not verify: do not publish it. Record it in CURATION.md under the submission's city with what is missing, so Hidde or a later run can pick it up.
 5. Either way, append the row id to `data/submissions-processed.json` so it is never handled twice, and note the outcome in CURATION.md.
 

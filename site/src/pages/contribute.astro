@@ -26,10 +26,10 @@ const headExtra = ldScript(graph);
 <main class="content-page">
   <Breadcrumbs items={crumbItems} />
   <h1>Become your city's tree guide</h1>
-  <p class="answer-first">This map is missing far more cities than it has, and the trees that matter most are the ones locals already know about. If you know your city's remarkable old trees, you can put them on the map and be credited for it.</p>
+  <p class="answer-first">This map is missing far more cities than it has, and the trees that matter most are the ones locals already know about. If you know your city's remarkable old trees, you can put them on the map.</p>
   <div class="prose-block">
     <p>Research from a distance finds the famous trees. It misses the one on the corner that everyone in the neighbourhood walks past, the one with the story attached, the one that is only obvious if you live there. That gap is why this page exists.</p>
-    <p>Everything sent in gets checked against independent sources, and the location gets verified, because a wrong pin is worse than a missing tree. Confirmed trees get their own page with your credit on the city. What cannot be confirmed waits instead of going live half-true. To be straight with you about what you get: your name on the city you mapped, not a login or a profile. Those may come later.</p>
+    <p>Everything sent in gets checked against independent sources, and the location gets verified, because a wrong pin is worse than a missing tree. Confirmed trees get their own page. What cannot be confirmed waits instead of going live half-true. We do not publish your name anywhere on the site, and we do not need it to accept a tree.</p>
   </div>
 
   <form id="suggest" class="suggest-form" autocomplete="off">
@@ -55,7 +55,7 @@ const headExtra = ldScript(graph);
     <label>Why is it remarkable?
       <textarea id="sg-why" rows="3" placeholder="Old, huge, a story attached, or simply the tree everyone knows"></textarea>
     </label>
-    <label>Your name, for the credit <span class="sg-hint">Optional. Shown on the city page when your tree goes live.</span>
+    <label>Your name <span class="sg-hint">Optional, and only so we can write back. Never shown on the site.</span>
       <input type="text" id="sg-name" placeholder="First name is fine">
     </label>
     <button type="submit" class="go-btn">Send it in</button>

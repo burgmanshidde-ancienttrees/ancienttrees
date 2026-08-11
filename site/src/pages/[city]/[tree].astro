@@ -146,7 +146,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS;
         <figcaption>
           <b>{spCommon}</b>
           <span>Nobody has published a photograph of this tree under a licence we can use.
-          <a href="/contribute">Send us yours</a> and it goes on this page with your name on it.</span>
+          <a href="/contribute">Send us yours</a> and it goes on this page.</span>
         </figcaption>
       </figure>
     )}
@@ -164,9 +164,6 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS;
       </div>
     </dialog>
     <div class="prose-block"><p>{tree.story}</p></div>
-    {tree.submitted_by && (
-      <p class="submitted-by">This tree is on the map because <b>{tree.submitted_by}</b> wrote in and told us about it. <a href="/contribute">Know one we have missed?</a></p>
-    )}
     <Fragment set:html={seasonHtml} />
     <div class="map-embed"><div id="map" class="map"></div></div>
     <p class="go-note">The buttons above open directions and collecting. {tree.transport ?? ""}</p>
