@@ -59,6 +59,39 @@ Deep enough, per Hidde 2026-08-08, unchanged: at least one complete walk of 4
 to 8 trees inside roughly 2 km, photographs on most of that walk, honest pins
 (labelled honestly, NOT confirmed), season data where it is real.
 
+## Ready to run: Lisbon and Porto from the ICNF register
+
+Parked 2026-08-11 at Hidde's request ("ik heb momenteel niet de tokens om
+Portugal aan te vullen, kun je het opslaan als to do voor morgen"). The
+expensive half is the writing; the free half is already done and on disk.
+
+**The measurement.** The ICNF register holds 555 trees with coordinates under
+CC BY 4.0. Seventy-seven of them are trees we already publish. **478 are
+unused**, and they sit where we already win: 44 in Lisboa, 21 in Porto, the two
+best-converting pages on the site.
+
+**The candidates are generated and waiting** in
+`data/research/portugal-register-candidates.json`: every entry carries species,
+age, girth, height and a surveyed coordinate straight from the register, so a
+pass does no discovery at all. Lisbon has 24 of 44 fully populated, Porto 15 of
+21. New ids start at `lis_022` and `por_019`.
+
+**What the pass still has to do,** because the register cannot: confirm each
+tree is alive, and confirm the public can actually reach it. Hard rule 10 is
+the live risk here, not a theoretical one: Porto's 300-year tulip tree on Rua
+Joao de Deus stands in a school yard and must not ship. Register ages are the
+age at last measurement, so add the years since and say so.
+
+**Cost.** Yesterday's 18-tree Barcelona batch ran at 11.9k tokens per published
+tree, the cheapest the project has measured. Thirty trees across the two cities
+is therefore roughly 360k, in two batches of about fifteen, one per city, so
+each pass amortises one city's context.
+
+**Why this outranks opening a new city.** Every added tree is its own page on a
+precise, uncontested query, and measured CTR on tree pages runs 12 to 50
+percent against about 1 percent on big-city pages. The three-walk cap does not
+block it: the cap limits walks presented, not trees published.
+
 ## The order
 
 Work top-down. Reader submissions and a broken site still outrank everything.
