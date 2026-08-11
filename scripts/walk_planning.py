@@ -19,6 +19,7 @@ this file and walks.ts drift apart; keep them in step.
 """
 import json
 import math
+import math
 import re
 import unicodedata
 from pathlib import Path
@@ -284,6 +285,13 @@ def _split_route(order, points, depth=0):
     return _split_route(first, points, depth + 1) + _split_route(second, points, depth + 1)
 
 
+
+def _centroid(order, markers):
+    """Mean position of a walk's trees, for telling two same-named walks apart."""
+    lats = [markers[i]["lat"] for i in order]
+    lngs = [markers[i]["lng"] for i in order]
+    return (sum(lats) / len(lats), sum(lngs) / len(lngs))
+
 def _too_similar(a, b):
     """True when two walks are more than half the same trees."""
     sa, sb = set(a), set(b)
@@ -362,11 +370,43 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
     walks.sort(key=lambda w: (-w["shots"], -w["count"], w["km"]))
     # Two walks under one name tells a visitor nothing and quietly implies the
     # second is somewhere else. Vienna produced two "Innere Stadt" walks.
-    dupes = {w["name"] for w in walks
-             if w["name"] and sum(1 for x in walks if x["name"] == w["name"]) > 1}
+    #
+    # Blanking both was the first fix and it was too blunt, because the commonest
+    # cause is not coincidence but a split: a route over WALK_SPLIT_KM is cut in
+    # half, both halves sit in the same place, so both get that place's name and
+    # both then lost it. Barcelona shipped "Walk 2" and "Walk 3" for the two
+    # halves of Montjuic, which is a number where a name should be, and you
+    # cannot choose between things that have no names.
+    #
+    # So disambiguate by where they actually are before giving up. Two walks in
+    # one place differ along some axis; say which, using the dominant one, and
+    # fall back to blanking only when even that cannot separate them.
+    by_name = {}
     for w in walks:
-        if w["name"] in dupes:
-            w["name"] = ""
+        if w["name"]:
+            by_name.setdefault(w["name"], []).append(w)
+    for name, group in by_name.items():
+        if len(group) < 2:
+            continue
+        cents = [_centroid(w["order"], markers) for w in group]
+        lats = [c[0] for c in cents]
+        lngs = [c[1] for c in cents]
+        spread_ns = max(lats) - min(lats)
+        spread_ew = (max(lngs) - min(lngs)) * math.cos(math.radians(sum(lats) / len(lats)))
+        mid_lat, mid_lng = sum(lats) / len(lats), sum(lngs) / len(lngs)
+        for w, (la, lo) in zip(group, cents):
+            if spread_ew >= spread_ns and spread_ew > 0:
+                w["name"] = f"{name} {'east' if lo >= mid_lng else 'west'}"
+            elif spread_ns > 0:
+                w["name"] = f"{name} {'north' if la >= mid_lat else 'south'}"
+            else:
+                w["name"] = ""
+        # If the axis put two walks under the same label anyway, nobody is
+        # helped by a wrong distinction: drop back to no name.
+        labels = [w["name"] for w in group]
+        for w in group:
+            if labels.count(w["name"]) > 1:
+                w["name"] = ""
     # The combined option rides last, after its parts, never as the lead walk.
     for w in combined:
         w["shots"] = sum(1 for i in w["order"] if markers[i].get("shot"))
