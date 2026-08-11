@@ -37,11 +37,17 @@ import sys
 BODY_SPLIT = re.compile(r"^---\s*$", re.M)
 
 CHECKS = [
-    ("GROVELLING", [
-        r"\bsorry\b", r"\bapolog", r"\bmy (?:mistake|error|apologies)\b",
-        r"I should not have", r"I shouldn't have", r"thanks for the correction",
-        r"thank you for correcting", r"my bad", r"I was wrong to",
-        r"forgive me", r"I hope (?:you don't mind|this is ok|that's alright)",
+    # NOT an apology ban. Hidde rewrote a reply himself on 2026-08-11 and it
+    # opens "Thanks for your reply - and sorry for the wrong assumption." One
+    # short sorry inside a sentence is human and he uses it. My first version of
+    # this check flagged his own writing, which is how I learned I had
+    # overcorrected: what he struck was three apologies stacked, plus narrating
+    # my own error back at the reader. So flag the SELF-NARRATION always, and
+    # the stacking only past one.
+    ("SELF-NARRATING THE ERROR", [
+        r"I should not have", r"I shouldn't have", r"I was wrong to",
+        r"\bmy (?:mistake|error|bad)\b", r"forgive me",
+        r"I hope (?:you don't mind|this is ok|that's alright)",
         r"if (?:that's|that is) (?:ok|alright|acceptable)",
         r"I'd be (?:very )?grateful", r"I would be (?:very )?grateful",
     ]),
@@ -78,6 +84,12 @@ def check(path):
                 line = body[:m.start()].count("\n") + 1
                 snippet = body.splitlines()[line - 1].strip()
                 hits.append((label, m.group(0), snippet[:96]))
+    # Stacked apologies: one is fine, two is a posture.
+    sorries = re.findall(r"\bsorry\b|\bapolog\w*|thanks for the correction|"
+                         r"thank you for correcting", body, re.I)
+    if len(sorries) > 1:
+        hits.append(("STACKED APOLOGIES", ", ".join(sorries),
+                     f"{len(sorries)} in one mail; keep one, cut the rest"))
     if "—" in body or "–" in body:
         hits.append(("EM DASH", "—", "hard rule 3: never, anywhere"))
     return hits
