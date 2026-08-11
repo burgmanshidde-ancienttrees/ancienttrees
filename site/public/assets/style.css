@@ -38,6 +38,12 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
    and map twice": .nav-drop-menu a outranks a bare .only-mobile, so the
    hide has to be scoped to the same depth or it silently loses. */
 .nav-drop-menu a.only-mobile { display: none; }
+/* Map is the product, not a way to explore it (PRODUCT_IA: the map and trees
+   near you lead everywhere; cities, species and collections are acquisition).
+   It used to sit in the bar on desktop and drop into the Explore menu on
+   mobile, which buried the one thing people came for on the platform where
+   72% of our visitors are. It is now a persistent bar item at every width. */
+.bar-links a.bar-map { font-weight: 700; color: var(--ink); }
 .nav-drop summary .sum-mobile { display: none; }
 .bar-links a.bar-cta:hover { background: var(--moss); color: #fff; }
 .city-card.soon:hover { opacity: 1; border-top-color: var(--moss); }
@@ -174,6 +180,7 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
   .only-desktop { display: none !important; }
   .only-mobile { display: block; }
   .nav-drop-menu a.only-mobile { display: flex; }
+  .bar-links a.bar-map { font-size: 13px; padding: 0.35rem 0.2rem; }
   .nav-drop { margin-left: 0; }
   .nav-drop summary { font-size: 13px; padding: 0.35rem 0.2rem; }
   .nav-drop summary .sum-desktop { display: none; }
@@ -621,6 +628,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .only-desktop { display: none !important; }
   .only-mobile { display: block; }
   .nav-drop-menu a.only-mobile { display: flex; }
+  .bar-links a.bar-map { font-size: 13px; padding: 0.35rem 0.2rem; }
   .nav-drop { margin-left: 0; }
   .nav-drop summary { font-size: 13px; padding: 0.35rem 0.2rem; }
   .nav-drop summary .sum-desktop { display: none; }
@@ -651,6 +659,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .only-desktop { display: none !important; }
   .only-mobile { display: block; }
   .nav-drop-menu a.only-mobile { display: flex; }
+  .bar-links a.bar-map { font-size: 13px; padding: 0.35rem 0.2rem; }
   .nav-drop { margin-left: 0; }
   .nav-drop summary { font-size: 13px; padding: 0.35rem 0.2rem; }
   .nav-drop summary .sum-desktop { display: none; }
