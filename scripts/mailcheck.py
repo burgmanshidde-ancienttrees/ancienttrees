@@ -39,8 +39,8 @@ limitation instead of an apology for it ("vandaar dat ik met hoofdsteden
 begin"), and only then the asks, numbered out loud ("op twee manieren"),
 phrased generically enough that nobody is put on the spot ("is er een duits
 register" rather than "may we have yours"), with the payoff inside the ask
-("dan kan ik die stad morgen toevoegen"). Both calibration mails are in
-memory under outreach-email-voice.
+("dan kan ik die stad morgen toevoegen"). His own mails are collected verbatim in drafts/HIS_VOICE.md; read those
+rather than rules about them, and imitate by proximity.
 """
 import glob
 import re
