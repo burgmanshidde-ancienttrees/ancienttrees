@@ -427,3 +427,36 @@ Next to send, when there is a spare ten minutes: the Bomenstichting (tier 1,
 unlocks Amsterdam and twelve other Dutch cities), then the nine gardens and
 parks in tier 3a, which need no permission at all and exist purely to earn a
 link.
+
+## Never tell an organisation the trees are theirs unless they own the ground
+
+Added 2026-08-10, after Jon Pattee of Rock Creek Conservancy replied to batch
+003: "those trees are not 'ours' nor do we have photos."
+
+Montrose Park and Dumbarton Oaks Park are National Park Service ground. Rock
+Creek Conservancy is a partner and advocate, not the landowner. Our own contact
+research had it right, describing "the Rock Creek Park unit they work across",
+and the composed mail escalated that into "two of them are in ground you look
+after". The hedge was lost between the research and the sentence, which is the
+failure to design against: a careful note becomes a confident claim when
+somebody rewrites it for tone.
+
+Three rules:
+
+1. **A possessive claim needs a landowner.** An arboretum, a cemetery, a
+   botanic garden, a university, a palace estate: these own their trees and
+   "six of them are yours" is correct and was correct in the same batch. A
+   conservancy, a friends-of group, a society or an association usually does
+   not own anything. Contacts now carry `owns_the_trees`; when it is false or
+   missing, the mail may not use yours, your trees, or ground you look after.
+2. **Ask a friends-of group the question it can actually answer**, which is
+   local knowledge: what is missing from the list, and what have we got wrong.
+   Never open by asking them for photographs of trees they do not hold.
+3. **Check whether a more specific partner exists before writing.** Dumbarton
+   Oaks Park has its own conservancy, and it was already in our contact file,
+   unmailed. We wrote to the neighbouring charity instead.
+
+The useful thing this bounce surfaced: the landowner in Washington is the
+National Park Service, and photographs by US federal employees are public
+domain. Thirteen of our fourteen Washington trees have no image, so NPS is the
+real photo route there, not the friends groups.
