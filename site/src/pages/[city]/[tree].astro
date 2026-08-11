@@ -5,7 +5,7 @@ import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../../lib/trees";
 import { speciesCommon } from "../../lib/species";
-import { usablePhoto, imgSrcset, thumbUrl, creditRequired } from "../../lib/images";
+import { usablePhoto, imgSrcset, thumbUrl, creditRequired, metaImageUrls, ogImageUrl } from "../../lib/images";
 import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
@@ -102,7 +102,7 @@ const crumbItems: [string, string | null][] = [
 
 const photo = usablePhoto(tree);
 let ogImage = "";
-if (photo?.url) ogImage = `\n<meta property="og:image" content="${esc(thumbUrl(photo.url, 1200))}">`;
+if (photo?.url) ogImage = `\n<meta property="og:image" content="${esc(ogImageUrl(photo.url))}">`;
 
 const spCommon = speciesCommon(tree);
 const spSlug = speciesPages.get(spCommon);
@@ -117,6 +117,7 @@ const graph = [
     name: tree.name,
     description: (tree.story ?? "").slice(0, 300),
     isAccessibleForFree: (tree.access ?? "").toLowerCase().includes("free"),
+    ...(photo?.url ? { image: metaImageUrls(photo.url) } : {}),
     geo: { "@type": "GeoCoordinates", latitude: loc.latitude, longitude: loc.longitude },
   },
   breadcrumbSchema(crumbItems, canonical),

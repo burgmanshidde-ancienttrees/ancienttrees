@@ -9,7 +9,7 @@ import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, oldestTree, type CityEntry } from "../lib/trees";
 import { speciesCommon } from "../lib/species";
-import { usablePhoto, imgSrcset, creditRequired } from "../lib/images";
+import { usablePhoto, imgSrcset, creditRequired, metaImageUrls, ogImageUrl } from "../lib/images";
 import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
@@ -149,21 +149,35 @@ const citySpeciesLinks = [...speciesHere.entries()]
   .filter(([common, n]) => n >= 3 && speciesPages.has(common))
   .map(([common]) => [common, speciesPages.get(common)!] as const);
 
-const listElements = trees.map((t, i) => ({
-  "@type": "ListItem",
-  position: i + 1,
-  name: t.name,
-  url: `${BASE_URL}/${cslug}/${tslugs[t.id]}`,
-  item: {
-    "@type": "TouristAttraction",
+const listElements = trees.map((t, i) => {
+  const p = usablePhoto(t);
+  return {
+    "@type": "ListItem",
+    position: i + 1,
     name: t.name,
-    description: (t.story ?? "").slice(0, 200),
-    geo: { "@type": "GeoCoordinates", latitude: t.location.latitude, longitude: t.location.longitude },
-  },
-}));
+    url: `${BASE_URL}/${cslug}/${tslugs[t.id]}`,
+    item: {
+      "@type": "TouristAttraction",
+      name: t.name,
+      description: (t.story ?? "").slice(0, 200),
+      ...(p?.url ? { image: metaImageUrls(p.url) } : {}),
+      geo: { "@type": "GeoCoordinates", latitude: t.location.latitude, longitude: t.location.longitude },
+    },
+  };
+});
+// The page's own face: whichever tree photo the city cards already use. Google
+// picks a result thumbnail from the page, and with neither og:image nor a
+// schema image it was falling back to our logo on 94 of 95 city pages.
+const facePhotoUrl = (() => {
+  const hero = city.data.hero_tree_id ? trees.find((t) => t.id === city.data.hero_tree_id) : undefined;
+  const p = (hero && usablePhoto(hero)) || trees.map((t) => usablePhoto(t)).find(Boolean);
+  return p?.url ?? null;
+})();
+const cityOgImage = facePhotoUrl ? `\n<meta property="og:image" content="${esc(ogImageUrl(facePhotoUrl))}">` : "";
 const graph = [
   ...SITE_SCHEMA,
-  { "@type": "ItemList", name: title, itemListElement: listElements },
+  { "@type": "ItemList", name: title, itemListElement: listElements,
+    ...(facePhotoUrl ? { image: metaImageUrls(facePhotoUrl) } : {}) },
   { "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
   breadcrumbSchema(crumbItems, canonical),
 ];
@@ -172,7 +186,7 @@ const graph = [
 // gets a visible way across, which is also what keeps the /es/ page from
 // being an orphan under qa.py's inbound-link rule.
 const esTr = cityTranslation("es", cslug);
-const headExtra = mapHead() + (esTr ? "\n" + hreflangLinks("es", `/${cslug}`, `/es/${cslug}`) : "") + "\n" + ldScript(graph);
+const headExtra = mapHead() + cityOgImage + (esTr ? "\n" + hreflangLinks("es", `/${cslug}`, `/es/${cslug}`) : "") + "\n" + ldScript(graph);
 
 const avgLat = markers.reduce((s, m) => s + m.lat, 0) / markers.length;
 const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
