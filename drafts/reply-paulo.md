@@ -4,16 +4,22 @@ Your content, in Portuguese. He wrote to us in Portuguese, and replying in his
 own language is worth more here than in most threads: he runs a twenty-year
 Portuguese tree blog and he is our first ever submitter.
 
+Rewritten closer to your own Dutch, which was warmer and blunter than my first
+attempt. What I had wrong: I opened the photo question with a justifying clause
+("a question, which may be easier than searching your archive"), which is the
+self-explaining ask you keep cutting; and I ended on "Toda a ajuda conta",
+which is correct Portuguese and flat, where you wrote "dus alle hulp is
+welkom". Yours has exclamation marks and short sentences. Mine was composed.
+
 Since you cannot check Portuguese, here is exactly what it says in English:
 
-  Good afternoon Paulo, thank you for your message. I added the tree straight
-  away: [link]. One question, which may be easier than searching your archive:
-  the two posts you sent have photographs of the ginkgo in them. May we use one
-  on the page? No rush at all with the photos, the end of August is fine. I look forward to
-  your other comments, and if you find more trees missing, or have suggestions
-  for other Portuguese cities, I would be glad to hear them. I am at the start
-  of the work of connecting all the registers to each other, and I hope to add
-  every city in time. All help counts.
+  Hello Paulo, thank you very much for your message! I added the tree straight
+  away, see here: [link]. There are photographs of the ginkgo in your two
+  posts. May we use one on the page? No rush with the rest. I look forward to
+  your other comments, and if you find more trees missing, or have tips for
+  other Portuguese cities, I would love to know. I am at the beginning of my
+  work of connecting all the registers to each other, and I hope to add every
+  city. So all help is welcome!
 
 Two additions to your draft. The photos, because that is what he actually
 apologised for. And the direct ask for the blog photographs, which is the point
@@ -38,16 +44,16 @@ Subject: Re: Ginkgo biloba do Parque das Virtudes
 
 ---
 
-Boa tarde Paulo,
+Olá Paulo,
 
-Muito obrigado pela sua mensagem. Acrescentei a árvore imediatamente:
+muito obrigado pela sua mensagem! Acrescentei já a árvore, veja aqui:
 https://ancienttrees.app/porto/ginkgo-of-the-jardim-das-virtudes
 
-Uma pergunta, que talvez seja mais fácil do que procurar no arquivo: nas duas publicações que me enviou há fotografias da Ginkgo. Podemos usar uma delas na página?
+Nas suas duas publicações há fotografias da Ginkgo. Podemos usar uma na página?
 
-Sem pressa nenhuma com as outras fotos, o final de Agosto está óptimo. Fico a aguardar os seus comentários, e se encontrar mais árvores em falta, ou tiver sugestões para outras cidades portuguesas, diga.
+Sem pressa com as restantes. Fico a aguardar os seus outros comentários, e se encontrar mais árvores em falta, ou tiver dicas para outras cidades portuguesas, gostava muito de saber.
 
-Estou no início do trabalho de ligar todos os registos uns aos outros, e espero acrescentar todas as cidades com o tempo. Toda a ajuda conta.
+Estou no início do meu trabalho de ligar todos os registos uns aos outros, e espero acrescentar todas as cidades. Por isso toda a ajuda é bem-vinda!
 
 Cumprimentos,
 Hidde
