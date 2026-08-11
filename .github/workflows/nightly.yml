@@ -148,9 +148,9 @@ jobs:
                worth a research window right now. An empty month still beats an
                invented one.
 
-            Order of cities within all that: Barcelona, Rome, Paris, Berlin,
-            Amsterdam, New York from phase 1, then Lisbon, Vienna, Edinburgh,
-            Dublin. Small-city work stops: no new Padua-or-Genoa-class cities
+            Order of cities: work top-down through CITY_QUEUE.md, which is
+            the single list and the single order. Do not use any city order
+            remembered from this prompt or from CLAUDE.md. Small-city work stops: no new Padua-or-Genoa-class cities
             and no deepening of them; existing small pages stay live untouched.
             Chicago, Washington DC and Boston stay closed until New York shows
             a Search Console signal.
@@ -193,8 +193,8 @@ jobs:
             python3 scripts/cluster_register.py on a register to get the walkable
             groups before deciding which trees a city gets.
 
-            Current focus countries, in order: Spain, Japan, Portugal. Italy is
-            next after those three. Do not start a city that already has a file
+            There are no focus countries any more; CITY_QUEUE.md scores places
+            individually and its order already reflects supply and demand. Do not start a city that already has a file
             in data/cities or that LOG.md shows in flight.
 
             Whatever the work turns out to be: verify against two independent
