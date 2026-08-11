@@ -14,7 +14,6 @@ const WALK_MIN_TREES = 3;
 const WALK_CLUSTER_M = 900;
 export const WALK_NAME_MAX = 34;
 const WALK_SPLIT_KM = 3.0;
-const COMBINED_MAX_KM = 6.0; // up to here "Both walks" is still offered as one outing
 const WALK_MAX_OVERLAP = 0.5;
 
 type LatLng = [number, number];
@@ -219,7 +218,6 @@ export function planWalks(markers: WalkMarker[], budgetKm = WALK_BUDGET_KM): Wal
   let groups = walkClusters(points);
   if (!groups.some((g) => g.length >= WALK_MIN_TREES)) groups = walkClusters(points, 1500);
   const walks: Walk[] = [];
-  const combined: Walk[] = [];
   for (const members of groups) {
     if (members.length < WALK_MIN_TREES) continue;
     const sub = members.map((i) => points[i]);
@@ -243,26 +241,14 @@ export function planWalks(markers: WalkMarker[], budgetKm = WALK_BUDGET_KM): Wal
     // lines read as one walk on the overview). The full route survives as
     // an explicit choice when it is still a doable afternoon, so the
     // visitor with the whole day loses nothing.
-    if (kept > 1) {
-      const kmFull = Math.round(legKm(order, points) * 10) / 10;
-      if (kmFull <= COMBINED_MAX_KM) {
-        combined.push({
-          order,
-          count: order.length,
-          km: kmFull,
-          minutes: Math.round((kmFull / WALKING_KMH) * 60),
-          name: kept === 2 ? "Both walks" : `All ${kept} walks`,
-          combined: true,
-        });
-      }
-    }
-  }
-  // Photographed trees first, then size. Sorting on size alone put Barcelona's
-  // worst walk in front: the ten Pedralbes trees are its tightest cluster and
-  // also its newest, so not one of them had a photograph while a Montjuic
-  // walk with four sat hidden behind a chip. A visitor decides from the
-  // pictures whether an afternoon is worth it, so the walk that leads is the
-  // one they can see, and every other walk is still one tap away.
+    // NO COMBINED "BOTH WALKS" OPTION. Removed 2026-08-11. It was the longest
+    // thing on every page and it contradicted the split that had just been
+    // made: Porto offered all 18 trees over 4.0 km, Barcelona 14 over 3.5,
+    // Lisbon 11 over 4.5. It could never have been realistic by construction:
+    // the chip only appears when a route was split, and a route is only split
+    // above WALK_SPLIT_KM, so it is always longer than the distance we call
+    // too long for an afternoon. Mirrors scripts/walk_planning.py.
+
   for (const w of walks) w.shots = w.order.filter((i) => markers[i].shot).length;
   walks.sort((a, b) => (b.shots ?? 0) - (a.shots ?? 0) || b.count - a.count || a.km - b.km);
   // Two walks under one name tells a visitor nothing. Blanking both was the
@@ -297,9 +283,6 @@ export function planWalks(markers: WalkMarker[], budgetKm = WALK_BUDGET_KM): Wal
     const labels = group.map((w) => w.name);
     for (const w of group) if (labels.filter((l) => l === w.name).length > 1) w.name = "";
   }
-  // The combined option rides last, after its parts, never as the lead walk.
-  for (const w of combined) w.shots = w.order.filter((i) => markers[i].shot).length;
-  walks.push(...combined);
   return walks;
 }
 

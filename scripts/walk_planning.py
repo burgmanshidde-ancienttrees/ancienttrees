@@ -235,7 +235,6 @@ def _walk_name(members, markers):
 
 
 WALK_SPLIT_KM = 3.0      # past this a walk stops being an afternoon and becomes a route
-COMBINED_MAX_KM = 6.0    # up to here "Both walks" is still offered as one outing
 WALK_MAX_OVERLAP = 0.5   # two walks may never be more than half the same trees
 
 
@@ -343,21 +342,21 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
                 "minutes": int(round(km / WALKING_KMH * 60)),
                 "name": _walk_name(leg, markers),
             })
-        # A split cluster's halves are disjoint (Hidde, 2026-08-08: welded
-        # lines read as one walk on the overview). The full route survives as
-        # an explicit choice when it is still a doable afternoon, so the
-        # visitor with the whole day loses nothing.
-        if kept > 1:
-            km_full = round(_leg_km(order, points), 1)
-            if km_full <= COMBINED_MAX_KM:
-                combined.append({
-                    "order": order,
-                    "count": len(order),
-                    "km": km_full,
-                    "minutes": int(round(km_full / WALKING_KMH * 60)),
-                    "name": "Both walks" if kept == 2 else f"All {kept} walks",
-                    "combined": True,
-                })
+        # NO COMBINED "BOTH WALKS" OPTION. Removed 2026-08-11.
+        #
+        # It was added on 2026-08-08 so a visitor with the whole day did not
+        # lose the full route when a cluster got split. In practice it was the
+        # longest thing on every page and it contradicted the split that had
+        # just been made: Porto offered all 18 of its trees over 4.0 km,
+        # Barcelona 14 over 3.5, Lisbon 11 over 4.5. Hidde, shown those three:
+        # "die te lange lijkt me niet realistisch toch?"
+        #
+        # And it could never have been realistic, by construction rather than
+        # by accident: the chip only appears when a route was split, a route is
+        # only split above WALK_SPLIT_KM, so the combined option is ALWAYS
+        # longer than the distance we ourselves call too long for an afternoon.
+        # Anyone re-adding it should fix that contradiction first.
+
     # Photographed trees first, then size. Sorting on size alone put Barcelona's
     # worst walk in front: the ten Pedralbes trees are its tightest cluster and
     # also its newest, imported from the municipal register two days before this
@@ -408,7 +407,4 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
             if labels.count(w["name"]) > 1:
                 w["name"] = ""
     # The combined option rides last, after its parts, never as the lead walk.
-    for w in combined:
-        w["shots"] = sum(1 for i in w["order"] if markers[i].get("shot"))
-    walks.extend(combined)
     return walks
