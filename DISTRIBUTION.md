@@ -2,6 +2,8 @@
 
 Written 2026-07-21. The site has had essentially none, and every funnel improvement below step 1 multiplies zero.
 
+**Snapshot warning:** every specific number below (city count, tree count, photo count) is a 2026-07-21 figure and is now stale; the site has grown well past it. Refresh the numbers in any draft before sending it. The strategy and the post templates are the reusable part.
+
 ## The honest situation
 
 The domain is new. Search will not send meaningful traffic for three to six months no matter what anyone does, because that is how long a new site takes to earn trust for queries like "oldest tree in Paris". So traffic in the next weeks comes from exactly one thing: telling people it exists.
