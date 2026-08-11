@@ -51,6 +51,51 @@ export function thumbUrl(url: string, width: number): string {
   return url;
 }
 
+/** Image urls for METADATA only: og:image and schema.org `image`. Never for an
+ * `<img>` tag, which must keep going through imgSrcset (qa.py enforces that,
+ * and it only inspects img tags, which is why pointing metadata at a bigger
+ * file is safe).
+ *
+ * Why this exists (2026-08-11). Hidde noticed that of 95 city pages only
+ * /lisbon showed a tree photograph in Google's results and every other page
+ * showed our generic logo. Two causes: city pages never set og:image from
+ * their own photo, so they fell back to og-default.png, and NO page declared
+ * `image` in its structured data at all, leaving Google to guess. A thumbnail
+ * beside a result moves click-through more than any title rewrite, and this
+ * site's whole problem is click-through.
+ *
+ * Returns largest-first, because Google takes the first usable one and wants
+ * at least 1200px wide for a prominent image. Wikimedia only serves fixed
+ * thumbnail buckets up to 960, so the original is included for the crawler
+ * (fetched once, by a robot) while og:image keeps to 960 (fetched by social
+ * scrapers, some of which cap around 5MB).
+ */
+export function metaImageUrls(url: string): string[] {
+  const out: string[] = [];
+  const big = thumbUrl(url, 960);
+  if (url.includes("upload.wikimedia.org/wikipedia/commons/") && url.includes("/thumb/")) {
+    // A thumb url points at .../thumb/a/ab/Name.jpg/500px-Name.jpg; the
+    // original is that path with the /thumb/ segment and last part removed.
+    const [head, tail] = splitOnce(url, "/wikipedia/commons/thumb/");
+    const parts = tail.split("/");
+    if (parts.length >= 3) out.push(`${head}/wikipedia/commons/${parts.slice(0, -1).join("/")}`);
+  } else if (url.includes("upload.wikimedia.org/wikipedia/commons/")) {
+    out.push(url);
+  }
+  const iNat = url.match(
+    /^(https:\/\/(?:static\.inaturalist\.org|inaturalist-open-data\.s3\.amazonaws\.com)\/photos\/[^/]+\/)(original|large|medium)(\.[A-Za-z]+)(.*)$/
+  );
+  if (iNat) out.push(`${iNat[1]}original${iNat[3]}${iNat[4]}`);
+  if (!out.includes(big)) out.push(big);
+  return [...new Set(out)];
+}
+
+/** The single url to hand a social scraper: big enough to render as a card,
+ * small enough that nobody refuses to fetch it. */
+export function ogImageUrl(url: string): string {
+  return thumbUrl(url, 960);
+}
+
 function splitOnce(s: string, sep: string): [string, string] {
   const i = s.indexOf(sep);
   if (i === -1) return [s, ""];
