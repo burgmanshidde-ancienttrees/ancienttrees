@@ -567,7 +567,15 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .route-name { display: block; font-size: 12.5px; font-weight: 600; opacity: 0.9; }
 /* Not on the chosen walk: dimmed, never hidden. Every tree stays in the
    document for a reader and a crawler; only the emphasis moves. */
-.pin-off { opacity: 0.35; }
+/* !important is load-bearing here, not laziness: MapLibre writes
+   `opacity: 1` as an INLINE style on every marker element, and inline beats
+   any stylesheet rule, so this dimming silently never applied from the day the
+   pins became MapLibre markers. Measured 2026-08-11: 38 of Barcelona's 46 pins
+   carried .pin-off and every one computed to opacity 1, which left the walk
+   colour of a thin dashed line as the only thing telling two walks apart.
+   Greyscale as well as fade, because a cream pin at low opacity on a near-white
+   map loses brightness but keeps its shape. */
+.pin-off { opacity: 0.3 !important; filter: grayscale(0.9); }
 .card-off { opacity: 0.5; }
 .route-bar { position: relative; z-index: 5;
   display: flex; gap: 0.5rem; align-items: stretch; width: 100%; }

@@ -227,7 +227,7 @@ function addAllWalksLayer() {
   map.addLayer({
     id: 'walks-all', type: 'line', source: 'walks-all',
     layout: { 'line-cap': 'round', 'line-join': 'round' },
-    paint: { 'line-color': '#4b5563', 'line-width': 3.5, 'line-opacity': 0.8,
+    paint: { 'line-color': '#4b5563', 'line-width': 3, 'line-opacity': 0.3,
               'line-dasharray': [1.4, 1.1] }
   });
   map.on('click', 'walks-all-hit', function(e) {
