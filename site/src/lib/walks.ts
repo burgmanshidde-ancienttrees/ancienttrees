@@ -237,10 +237,9 @@ export function planWalks(markers: WalkMarker[], budgetKm = WALK_BUDGET_KM): Wal
         name: walkName(leg, markers),
       });
     }
-    // A split cluster's halves are disjoint (Hidde, 2026-08-08: welded
-    // lines read as one walk on the overview). The full route survives as
-    // an explicit choice when it is still a doable afternoon, so the
-    // visitor with the whole day loses nothing.
+    // A split cluster's halves are disjoint (Hidde, 2026-08-08: welded lines
+    // read as one walk on the overview map).
+    //
     // NO COMBINED "BOTH WALKS" OPTION. Removed 2026-08-11. It was the longest
     // thing on every page and it contradicted the split that had just been
     // made: Porto offered all 18 trees over 4.0 km, Barcelona 14 over 3.5,
@@ -248,6 +247,7 @@ export function planWalks(markers: WalkMarker[], budgetKm = WALK_BUDGET_KM): Wal
     // the chip only appears when a route was split, and a route is only split
     // above WALK_SPLIT_KM, so it is always longer than the distance we call
     // too long for an afternoon. Mirrors scripts/walk_planning.py.
+  }
 
   for (const w of walks) w.shots = w.order.filter((i) => markers[i].shot).length;
   walks.sort((a, b) => (b.shots ?? 0) - (a.shots ?? 0) || b.count - a.count || a.km - b.km);
