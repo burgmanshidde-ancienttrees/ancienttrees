@@ -460,3 +460,30 @@ The useful thing this bounce surfaced: the landowner in Washington is the
 National Park Service, and photographs by US federal employees are public
 domain. Thirteen of our fourteen Washington trees have no image, so NPS is the
 real photo route there, not the friends groups.
+
+## Confirm who manages THAT park, not the city-wide agency
+
+Second bounce of the same shape in two days, so this is a check rather than a
+note. On 2026-08-11 Grün Berlin's Servicecenter replied to batch 004: Treptower
+Park is managed by the Straßen- und Grünflächenamt of Bezirk Treptow-Köpenick,
+not by them. On 2026-08-10 Rock Creek Conservancy replied to batch 003 saying
+the trees were not theirs, because that ground belongs to the National Park
+Service.
+
+Both times we picked the plausible umbrella body rather than the actual manager,
+and both times the mail then told them the tree was theirs. Grün Berlin does run
+many Berlin parks, and Rock Creek Conservancy does work along Rock Creek, so
+neither pick was stupid. It was just unchecked.
+
+**The check, before any mail naming a specific park or garden:** find who
+manages that named site, not who manages parks in that city. In Germany the
+answer is usually the Bezirk or Gemeinde, not the state-level agency. In the US
+it is often the National Park Service or a city parks department rather than the
+friends group. One search on the park's own name settles it.
+
+**And the opener needs a variant, which is a Hidde decision.** The approved
+German line, "Ich bin online auf diesen Baum von Ihnen gestoßen", and the
+English "I found this tree of yours online", both assert ownership in the first
+sentence. That is right for an arboretum, a botanic garden or a cemetery, and
+wrong for everyone else. Until there is a non-owner variant, the same mistake
+will keep shipping in the first line of every mail.

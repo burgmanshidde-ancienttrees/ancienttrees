@@ -217,7 +217,10 @@
     "source_url": "https://www.gruen-berlin.de/impressum",
     "language": "de",
     "why_them": "They run Berlin's large public green sites and would know the current condition of the Great Elm of Treptower Park (ber_005), an elm-disease survivor we publish with an approximate pin.",
-    "our_page": "https://ancienttrees.app/city/berlin/"
+    "our_page": "https://ancienttrees.app/city/berlin/",
+    "owns_the_trees": false,
+    "do_not_mail_again": true,
+    "ownership_note": "WRONG BODY for Treptower Park. Grün Berlin replied on 2026-08-11: Treptower Park is managed by the Straßen- und Grünflächenamt of Bezirk Treptow-Köpenick, not by them. Grün Berlin does manage other Berlin parks, so they are not a dead contact in general, but never write to them about Treptower Park (ber_005, The Great Elm) again."
   },
   {
     "org": "Schutzgemeinschaft Deutscher Wald (SDW), Bundesverband",
@@ -410,5 +413,17 @@
     "language": "fi",
     "why_them": "The Helsinki region branch campaigns on protected natural monuments, which is what the King's Oak at the Pitkäkoski rapids (hel_001) and the Meilahti Ancient Pine by the Bronze Age burial cairn (hel_006) are, and both are photo gaps on our eight-tree Helsinki page.",
     "our_page": "https://ancienttrees.app/city/helsinki/"
+  },
+  {
+    "org": "Bezirksamt Treptow-Köpenick, Straßen- und Grünflächenamt",
+    "city": "Berlin",
+    "country": "Germany",
+    "email": null,
+    "email_status": "NOT YET FOUND. berlin.de renders contact details client-side and neither the Grünflächen page nor the office landing page exposed an address to curl. Find it before this goes in a batch; do not guess an address.",
+    "found_at": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruen/",
+    "owns_the_trees": true,
+    "why_them": "They manage Treptower Park, home of ber_005 (The Great Elm). Referred to us by Grün Berlin's Servicecenter on 2026-08-11 after we wrote to the wrong body.",
+    "ask": "ber_005 already has an approved photograph, so the photo ask is weaker here. Lead with the correction-and-omission question: is anything on our Berlin page wrong, and which tree in Treptow-Köpenick have we missed.",
+    "queued_for": "next batch"
   }
 ]
