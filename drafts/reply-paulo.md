@@ -7,15 +7,26 @@ Portuguese tree blog and he is our first ever submitter.
 Since you cannot check Portuguese, here is exactly what it says in English:
 
   Good afternoon Paulo, thank you for your message. I added the tree straight
-  away: [link]. No rush at all with the photos, the end of August is fine. I look forward to
+  away: [link]. One question, which may be easier than searching your archive:
+  the two posts you sent have photographs of the ginkgo in them. May we use one
+  on the page? No rush at all with the photos, the end of August is fine. I look forward to
   your other comments, and if you find more trees missing, or have suggestions
   for other Portuguese cities, I would be glad to hear them. I am at the start
   of the work of connecting all the registers to each other, and I hope to add
   every city in time. All help counts.
 
-One addition to your draft, cuttable: I mentioned the photos, because that was
-the thing he actually apologised for and skipping it would read as not having
-noticed.
+Two additions to your draft. The photos, because that is what he actually
+apologised for. And the direct ask for the blog photographs, which is the point
+of this reply: his two posts carry pictures of the ginkgo, and a photo already
+online is something he can approve today, where his own archive means waiting
+until September.
+
+Why we did not simply take them: the blog carries no licence anywhere, checked
+on every usual term, so hard rule 4 forbids it. I had also drafted a question
+about who to credit, since the 2004 post says "Fotos: manueladlramos-0412" and
+our contact record lists the blog as Paulo V. Araujo and Maria P. Carvalho.
+Hidde cut it: his yes is enough. If it comes, credit the blog, Dias com
+Arvores, with the post url.
 
 His name is NOT on the page and must never be. I had put it there this
 afternoon and Hidde struck it: a private email is not consent to be published,
@@ -32,7 +43,9 @@ Boa tarde Paulo,
 Muito obrigado pela sua mensagem. Acrescentei a árvore imediatamente:
 https://ancienttrees.app/porto/ginkgo-of-the-jardim-das-virtudes
 
-Sem pressa nenhuma com as fotos, o final de Agosto está óptimo. Fico a aguardar os seus outros comentários, e se encontrar mais árvores em falta, ou tiver sugestões para outras cidades portuguesas, diga.
+Uma pergunta, que talvez seja mais fácil do que procurar no arquivo: nas duas publicações que me enviou há fotografias da Ginkgo. Podemos usar uma delas na página?
+
+Sem pressa nenhuma com as outras fotos, o final de Agosto está óptimo. Fico a aguardar os seus comentários, e se encontrar mais árvores em falta, ou tiver sugestões para outras cidades portuguesas, diga.
 
 Estou no início do trabalho de ligar todos os registos uns aos outros, e espero acrescentar todas as cidades com o tempo. Toda a ajuda conta.
 
