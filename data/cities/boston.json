@@ -51,10 +51,11 @@
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/644130068/large.jpg",
         "license": "CC0",
         "attribution": "Karen McCabe (umamimomma), via iNaturalist",
-        "status": "held"
+        "status": "approved"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "notes": "Photo verified 2026-08-11: iNaturalist observation 352989499, Ulmus americana, Boston Common, 33 m from our pin, photo 644130068 licensed CC0 (no rights reserved). Viewed before approval: single elm filling the frame, trunk and crown readable, spring daylight, burred base clearly visible. Was held with no recorded reason; the hold does not survive the coordinate check."
     },
     {
       "id": "bos_002",
