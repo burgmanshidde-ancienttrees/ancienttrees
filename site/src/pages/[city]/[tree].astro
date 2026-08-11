@@ -164,6 +164,9 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS;
       </div>
     </dialog>
     <div class="prose-block"><p>{tree.story}</p></div>
+    {tree.submitted_by && (
+      <p class="submitted-by">This tree is on the map because <b>{tree.submitted_by}</b> wrote in and told us about it. <a href="/contribute">Know one we have missed?</a></p>
+    )}
     <Fragment set:html={seasonHtml} />
     <div class="map-embed"><div id="map" class="map"></div></div>
     <p class="go-note">The buttons above open directions and collecting. {tree.transport ?? ""}</p>

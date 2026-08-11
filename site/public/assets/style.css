@@ -622,6 +622,15 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   border-width: 0 1.5px 1.5px 0; transform: rotate(45deg); }
 .pin-tree.seen { color: var(--moss); }
 .pin-tree.seen .pin-rank { background: var(--moss); color: #fff; }
+/* The submitter's credit. CLAUDE.md Step 0b has said since July that a verified
+   submission is credited by the name the sender gave, and the field existed in
+   the schema from the start, but nothing ever rendered it: Paulo Araujo's
+   ginkgo was the first submission this site received and his name appeared
+   nowhere on it. A contributor who cannot see their own credit does not become
+   a returning one. */
+.submitted-by { margin-top: 0.9rem; font-size: 14px; color: var(--ink-mid);
+  border-left: 3px solid var(--moss); padding: 0.35rem 0 0.35rem 0.8rem; }
+.submitted-by b { color: var(--ink); }
 .passport { margin-top: 0.9rem; font-size: 13px; color: var(--ink-mid);
   background: var(--moss-light); border-radius: 6px; padding: 0.6rem 0.85rem; }
 .passport strong { color: var(--moss); font-weight: 600; }
