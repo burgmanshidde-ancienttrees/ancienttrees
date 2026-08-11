@@ -259,6 +259,21 @@ export function planWalks(markers: WalkMarker[], budgetKm = WALK_BUDGET_KM): Wal
   // no names. So separate them by where they are, and blank only if even that
   // cannot tell them apart. Mirrors _walk_name/plan_walks in
   // scripts/walk_planning.py; the two must stay in step.
+  // Collapse a name that CONTAINS another walk's name onto the shorter one.
+  // Porto had "Lordelo do Ouro e Massarelos" beside "Massarelos" (a merged
+  // civil parish next to one of its halves) and Vienna "Innere Stadt /
+  // Landstrasse border" beside "Innere Stadt". Measured 2026-08-11: the only
+  // two such cases in 95 cities. Collapsing turns them into ordinary
+  // duplicates, which the compass rule below then names short and
+  // recognisably, which is the standard Hidde asked for.
+  for (const w of walks) {
+    if (!w.name) continue;
+    const shorter = walks
+      .filter((o) => o.name && o.name !== w.name && w.name.toLowerCase().includes(o.name.toLowerCase()))
+      .map((o) => o.name);
+    if (shorter.length) w.name = shorter.reduce((a, b) => (b.length < a.length ? b : a));
+  }
+
   const byName = new Map<string, Walk[]>();
   for (const w of walks) if (w.name) (byName.get(w.name) ?? byName.set(w.name, []).get(w.name)!).push(w);
   for (const [name, group] of byName) {

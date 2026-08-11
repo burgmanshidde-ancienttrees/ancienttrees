@@ -380,6 +380,25 @@ def plan_walks(markers, budget_km=WALK_BUDGET_KM):
     # So disambiguate by where they actually are before giving up. Two walks in
     # one place differ along some axis; say which, using the dominant one, and
     # fall back to blanking only when even that cannot separate them.
+    # Before grouping, collapse a name that CONTAINS another walk's name onto
+    # the shorter one. Two shapes produce this and both read badly: a merged
+    # civil parish beside one of its halves (Porto: "Lordelo do Ouro e
+    # Massarelos" next to "Massarelos") and a border description beside the
+    # district itself (Vienna: "Innere Stadt / Landstrasse border" next to
+    # "Innere Stadt"). Measured 2026-08-11: those are the only two in 95 cities.
+    # Collapsing makes them ordinary duplicates, which the compass rule below
+    # then turns into two short recognisable names, which is the Barcelona
+    # property Hidde asked to standardise on: a walk should be named something
+    # you could say to a taxi driver.
+    for w in walks:
+        if not w["name"]:
+            continue
+        shorter = [o["name"] for o in walks
+                   if o["name"] and o["name"] != w["name"]
+                   and o["name"].lower() in w["name"].lower()]
+        if shorter:
+            w["name"] = min(shorter, key=len)
+
     by_name = {}
     for w in walks:
         if w["name"]:
