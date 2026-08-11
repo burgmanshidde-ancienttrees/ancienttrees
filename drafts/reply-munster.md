@@ -16,6 +16,15 @@ Four things in his mail, and the reply answers all four in one line each:
 4. He assumes you live in Berlin and gently notes you have not stood in front
    of your own city's trees. Answering that honestly also answers question 1.
 
+The ask is now Münster, ten trees, and we build the page. That is a real
+commitment, and a cheap one: the floor for a new city is four verified trees,
+so ten leads from a register moderator is more than enough. Two things to know
+before you send it. Each tree still needs its own check, so the page will carry
+the ones that hold up rather than all ten automatically. And crediting him by
+name is already how this project handles submissions (`submitted_by` on the
+tree), which is also what turns somebody into a returning contributor rather
+than a one-off.
+
 Not included: any defence of the Kaisereiche. He says it would not meet their
 criteria; those are their criteria, our sources hold, and arguing it wins
 nothing.
@@ -31,7 +40,9 @@ nein, nicht nur Berlin! Aktuell stehen 95 Städte online, in ganz Europa und dar
 
 Und Sie sehen das richtig: ich wohne in den Niederlanden und habe vor den Berliner Bäumen tatsächlich noch nicht gestanden. Das ist mir bewusst und nagt auch ein bisschen.
 
-Ihr Vorschlag mit den Links: sehr gerne, machen wir. Und wenn die Schnittmenge größer ist als die zwei Bäume aus meiner Mail, würde ich die gerne kennen. Ebenso jeden Baum in Münster oder einer anderen deutschen Stadt, den Sie für sehenswert halten: was Sie mir schicken, nehme ich auf.
+Ihr Vorschlag mit den Links: sehr gerne, machen wir.
+
+Und ein Angebot zurück: schicken Sie mir zehn schöne Bäume in Münster, und ich baue daraus die Münster-Seite. Mit Ihrer Nennung, wenn Sie möchten. Die größere Schnittmenge in Berlin würde ich auch gerne kennen.
 
 Viele Grüße,
 Hidde
