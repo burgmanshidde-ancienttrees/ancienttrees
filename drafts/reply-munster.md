@@ -1,31 +1,37 @@
-# FOR HIDDE: reply about Münster (sender to be confirmed)
+# FOR HIDDE: reply to Wolfgang Schürmann (Baumkunde.de, writes from Münster)
 
-You did not paste his mail, so I cannot say who he is or which register sits
-behind him. What I can rule out: Münster appears in none of our contacts, in no
-city page and not even in the 149-entry queue. The two German contacts that are
-register or community people rather than garden offices are Baumkunde.de
-(Wolfgang, Klaus and Christian, who all replied from that thread) and
-Baumportal.de / Jowaca, nature@jowaca.de. My guess is one of those two, and a
-guess is all it is. Paste the mail and I will tune the opening.
+Same Wolfgang as the earlier thread. Münster is where he lives, so the register
+behind him is Baumkunde.de, and my Baumportal guess was wrong.
 
-Germany is thin for us on purpose rather than by oversight: we publish Berlin
-and Munich only, which is worth saying plainly since he is asking about a city
-we have never touched.
+Four things in his mail, and the reply answers all four in one line each:
 
-The content is yours, from your own message: we are still building, cities keep
-arriving, and anything he has (a register, data, or just tips) goes live. No
-argument attached, one ask, his register.
+1. He asks whether the project is only for Berlin. That is our own subject line
+   doing it, and it is the misunderstanding worth clearing first.
+2. He says the overlap with their register is bigger than the two trees we
+   named, which is an offer of data we do not have.
+3. He proposes linking to their recorded trees instead of supplying photos.
+   Worth knowing before you accept: a link from us to them gives us nothing in
+   search terms. It costs almost nothing, gives a reader a real second source,
+   and it is what he offered, so I would say yes plainly.
+4. He assumes you live in Berlin and gently notes you have not stood in front
+   of your own city's trees. Answering that honestly also answers question 1.
 
-To: (his address)
-Subject: Re: Können Sie mir mit ancienttrees.app helfen?
+Not included: any defence of the Kaisereiche. He says it would not meet their
+criteria; those are their criteria, our sources hold, and arguing it wins
+nothing.
+
+To: webmaster@baumkunde.de (Wolfgang Schürmann)
+Subject: Re: Können Sie mir mit ancienttrees.app helfen? Berlin
 
 ---
 
-Hallo,
+Hallo Wolfgang,
 
-danke für die Rückmeldung! Wir sind noch im Aufbau: 95 Städte stehen online, es kommen laufend neue dazu, und Münster wird irgendwann auch dabei sein.
+nein, nicht nur Berlin! Aktuell stehen 95 Städte online, in ganz Europa und darüber hinaus, und es kommen laufend neue dazu. Berlin stand nur im Betreff, weil ich Sie wegen der Berliner Bäume angeschrieben hatte. Münster ist übrigens noch nicht dabei.
 
-Falls Sie Daten über Bäume haben, ein Register, oder einfach Tipps für Münster oder eine andere deutsche Stadt: sehr gerne. Was Sie mir schicken, nehme ich auf und setze es live.
+Und Sie sehen das richtig: ich wohne in den Niederlanden und habe vor den Berliner Bäumen tatsächlich noch nicht gestanden. Das ist mir bewusst und nagt auch ein bisschen.
+
+Ihr Vorschlag mit den Links: sehr gerne, machen wir. Und wenn die Schnittmenge größer ist als die zwei Bäume aus meiner Mail, würde ich die gerne kennen. Ebenso jeden Baum in Münster oder einer anderen deutschen Stadt, den Sie für sehenswert halten: was Sie mir schicken, nehme ich auf.
 
 Viele Grüße,
 Hidde
