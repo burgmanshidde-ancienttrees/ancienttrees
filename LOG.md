@@ -11,6 +11,64 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-11 - HANDOVER: what is queued for the next session
+
+Written at the end of a long working session with Hidde, for whoever opens the
+next one. He is out of tokens for today and asked that everything be left ready.
+Read this before Step 0's ladder; the items below already sit on their proper
+rungs.
+
+**1. Reader tips and replies (rung 1, outranks everything).**
+Four replies are drafted and waiting for HIM to send; a run never sends them.
+`drafts/reply-rock-creek.md` (his own wording, the calibration for all future
+replies), `drafts/reply-baumkunde.md`, `drafts/reply-gruen-berlin.md`,
+`drafts/woodland-trust-reply.md`.
+
+Jon Pattee of Rock Creek Conservancy answered our tree question with "several
+lovely ones in the park in front of the White House", which is Lafayette Square
+in President's Park, and we publish nothing there. Recorded in
+`data/leads/washington-dc.json` with what it needs and one trap (the Jackson
+Magnolia stood on White House grounds and was removed in 2025, so it fails the
+living-tree rule). It is NPS ground, so federal photographs are public domain,
+which is the standing answer to Washington's photo gap: 13 of 14 DC trees have
+none.
+
+**2. Portugal, the biggest cheap win (rung 4, CITY_QUEUE.md).**
+The ICNF register holds 555 trees under CC BY 4.0 and 478 are unused, 44 of
+them in Lisboa and 21 in Porto, which are ranks 1 and 2 on the queue and the
+two best-converting pages on the site. Candidates are already generated in
+`data/research/portugal-register-candidates.json`, fully populated from the
+register, so a pass does no discovery. Roughly 360k tokens for about 30 trees
+at yesterday's measured rate. What the register cannot do and the pass must:
+confirm each tree is alive and publicly reachable. Porto's 300-year tulip tree
+on Rua Joao de Deus stands in a school yard and must not ship.
+
+**3. Two batches ready to write, no research needed.**
+`data/research/kyoto-gyoen-ready.json` (5 trees, kyo_015 to kyo_019) and the
+remaining 13 ready Barcelona leads, both already unblocked by the 2026-08-10
+ruling that only the hard rules and an unstatable location stop a tree. Run
+`python3 scripts/leads.py` for the full picture: 299 leads are publishable now
+and need only a story.
+
+**4. The walk rule is NOT settled, and do not apply the obvious version.**
+Hidde ruled: cap kilometres, no cap on tree count, minimum four trees. I
+measured what that does before shipping it and it makes things worse. Setting
+WALK_BUDGET_KM to 2.5 and WALK_MIN_TREES to 4 leaves Barcelona's 14-tree 3.5 km
+chip standing, leaves Porto's 18 at 4.0 km and Lisbon's 11 at 4.5 km, and takes
+Rome from 2 walks to 4, because the long options come from COMBINED_MAX_KM
+(the "Both walks" chip) rather than from the budget, and a smaller budget
+splits clusters into MORE walks. **The real knob is the combined chip.** Take
+that to Hidde before changing any constant.
+
+Done today and live: Barcelona to 46 trees, Porto to 18 with the first
+reader-submitted tree (the Rainha das Virtudes), Boston's first photograph,
+Kyoto's Gyoen cluster, CITY_QUEUE.md as the single city list, blueprint v1.11
+(og:image and schema image on every page), the walk-name fix (Montjuic west and
+east instead of Walk 2 and Walk 3), pin dimming that actually dims, and
+`scripts/mailcheck.py`, which must be run on every draft mail before saving.
+
+FOR HIDDE: four replies wait on you. Nothing else needs you.
+
 ## 2026-08-11 - Corpus pruning: two dead planning docs deleted, two stale BACKLOG.md entries removed
 
 Session, at Hidde's request ("we have a huge number of MD files, let's prune and compact"). Not a research run; a corpus cleanup, all approved in session before touching anything.
