@@ -53,6 +53,10 @@ export const treeSchema = z.object({
   label: z.string().optional(),
   notes: z.string().optional(),
   best_time: bestTimeSchema,
+  // Kept only so old files still validate. NEVER render this and never write a
+  // new one: Hidde, 2026-08-11, "privacy technisch echt een no go... ookal is
+  // het via formulier niet meer doen nooit". A person's name is not ours to
+  // publish, whatever channel it arrived through.
   submitted_by: z.string().optional(),
 });
 
