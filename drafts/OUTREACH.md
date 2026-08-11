@@ -487,3 +487,28 @@ English "I found this tree of yours online", both assert ownership in the first
 sentence. That is right for an arboretum, a botanic garden or a cemetery, and
 wrong for everyone else. Until there is a non-owner variant, the same mistake
 will keep shipping in the first line of every mail.
+
+## Every thread ends with one open question about a tree
+
+Standing rule from Hidde, 2026-08-11, after a morning of three replies of which
+two were a flat no on what we asked.
+
+Photographs, data and research can all be refused. Knowing a good tree cannot.
+So whatever the mail says and whatever came back, the last line invites a tree,
+in one sentence, never as the reason for writing.
+
+- English: "Just as one tree fan to another, if you have any suggestions for
+  cool trees that could be on the map I'd love to hear them and add them."
+- German: "Und falls Ihnen unterwegs ein Baum einfällt, der auf die Karte
+  gehört: immer her damit."
+
+It costs them nothing, it is the one expertise they certainly have, and it is
+the only ask that leaves a thread open after a no. A photograph fills one gap;
+a tip is a tree we could never have found, from somebody who stands near it.
+
+Two limits. It goes last and stays one sentence, or a no on the main request
+takes it down with it. And when somebody has already volunteered, phrase it as
+an invitation rather than an addition to their task list: Wolfgang Schürmann
+had just taken the job on, so "falls Ihnen unterwegs ein Baum einfällt" widens
+what he might return with, where a list of what would help most would have read
+as chasing him on the day he said yes.
