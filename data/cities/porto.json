@@ -3,9 +3,9 @@
   "country": "Portugal",
   "status": "needs_curation",
   "intro": "Porto's grandest trees mostly arrived with 19th-century British port wine families, who filled their quintas with tulip trees, magnolias and southern hemisphere exotics their money could import but Porto's own climate had to accept. Two gardens hold much of what is worth seeing, the Jardins do Palácio de Cristal and the Jardim Botânico do Porto. A short walk east adds three University of Porto quintas, the same collector's habit continued on academic ground. Porto also calls itself the City of Camellias, and means it literally.",
-  "meta_description": "Porto's remarkable trees range from a 250-year tulip tree to three of Portugal's oldest Bischofia trees, across two gardens and three university quintas.",
+  "meta_description": "Porto's remarkable trees range from a 250-year tulip tree to a 35-metre ginkgo that turns gold in December, across two gardens and three university quintas.",
   "question_answer": "Porto's oldest documented tree is a Virginia tulip tree (Liriodendron tulipifera) beside Casa Tait in the Jardins do Palácio de Cristal, more than 250 years old and one of the first individual trees Portugal placed under legal protection, in 1950. It stands inside the free public gardens off Rua de D. Manuel II, a short walk from the Palácio de Cristal pavilion.",
-  "question_meta": "Porto's oldest tree is a 250-year tulip tree at Casa Tait, protected since 1950. Where it stands, and the city's most remarkable trees.",
+  "question_meta": "Porto's oldest tree is a 250-year tulip tree at Casa Tait, protected since 1950. Where it stands, and the city's seventeen other remarkable trees.",
   "question_context": "The tulip tree beside Casa Tait has the strongest documented age claim in Porto: it was already mature enough to warrant individual legal protection when Portugal formalised its tree of public interest classification in 1950, and both the city council's own parks department and independent garden historians place its age at over 250 years. That makes it older than the Palácio de Cristal gardens built around it, which German landscape architect Émile David laid out in the 1860s, and older than the original glass-and-iron exhibition palace itself, demolished in 1951 and replaced with the domed arena that stands there now. Casa Tait, the mansion beside the tree, took its name from a family of British port wine merchants whose 19th-century wealth shaped much of what grows in this corner of the garden, tulip trees, magnolias and camellias among them. A second, taller tulip tree grows nearby without the same formal protection status, and should not be confused with the older, classified specimen the question above refers to.",
   "faq": [
     {
@@ -579,6 +579,45 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "por_018",
+      "name": "The Ginkgo of the Jardim das Virtudes",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "around 220 years",
+      "age_min": 200,
+      "age_max": 240,
+      "location": {
+        "address": "Jardim das Virtudes, Passeio das Virtudes, Porto",
+        "latitude": 41.14529999,
+        "longitude": -8.619199988,
+        "neighbourhood": "Vitória, above the Douro"
+      },
+      "story": "Portugal's tree register lists this ginkgo at 35.5 metres, which makes it taller than almost anything else growing in central Porto, and the people who have watched it longest call it the Rainha das Virtudes, the Queen of the Virtudes. It stands in the Jardim das Virtudes, on the terraced slope above the Douro, where the ground falls away steeply enough that you see the whole crown at once from below rather than craning up through it. The register put its age at roughly 200 years when it was measured in 2004, and recorded a trunk 4.3 metres around and a crown spreading 17 metres. It was formally declared a tree of public interest in January 2005.\n\nGinkgo biloba is the last surviving member of an order of plants that was widespread when dinosaurs were, and it survives in cultivation largely because temple gardeners in China and Japan kept planting it long after it had all but vanished in the wild. What that lineage does in Porto is turn, hard, in the first week of December. Portuguese tree-watchers have documented it going gold in the same few days two years running, and the display lasts about a week before the leaves drop more or less at once. Come in late November or early December, or come another time and see a very large tree.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://dias-com-arvores.blogspot.com/2005/12/alerta-amarelo.html",
+        "https://dias-com-arvores.blogspot.com/2004/12/golden-time-ginkgo.html"
+      ],
+      "access": "Free. The Jardim das Virtudes is a public garden, open daily.",
+      "transport": "Sao Bento station, roughly a 10 minute walk",
+      "best_time": {
+        "months": [
+          12
+        ],
+        "kind": "autumn colour",
+        "label": "the first week of December, when it goes gold and drops within the week"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "submitted_by": "Paulo Araujo",
+      "notes": "Reader submission, 2026-08-11. Confirmed in the ICNF national register as processo KNJ1/451, Ginkgo biloba, Jardim das Virtudes, classified D.R. n.o 6, II Serie de 10/01/2005, 200 years at the 2004 measurement, girth 4.3 m, height 35.5 m, crown 17 m. Register coordinate used directly, hence confirmed. The Dias com Arvores blog calls it by far the largest of its species in the country and possibly in Europe; that superlative is NOT repeated on the page under hard rule 8, since no survey settles it. Its December colour is documented there on 06/12/2004 and 05/12/2005."
     }
   ],
   "hero_tree_id": "por_008",
