@@ -62,6 +62,20 @@ CHECKS = [
         r"\balways (?:be )?free\b", r"\bnever for\b", r"\bwill never\b",
         r"\bforever\b",
     ]),
+    # Third time in two days that a careful research note became a possessive
+    # claim in the composed mail, and the third time the recipient corrected it.
+    # Rock Creek ("ground you look after": it is Park Service land). Grün Berlin
+    # ("einer davon ist Ihrer": Treptower Park is the Bezirk's). Baumkunde
+    # ("2 davon sind Ihre"), where the note actually said these two trees lack a
+    # photo on OUR page, and Klaus checked their register and found the
+    # Kaisereiche was never in it, only a Kaiserulme. So: any sentence claiming
+    # the trees belong to the reader has to be justified against
+    # `owns_the_trees` in the contact file before it is sent.
+    ("POSSESSIVE CLAIM (check owns_the_trees)", [
+        r"davon (?:sind|ist) Ihre?r?", r"\b(?:are|is) yours\b",
+        r"tree of yours", r"Baum von Ihnen", r"Bäume von Ihnen",
+        r"your trees\b", r"ground you look after", r"in your care",
+    ]),
     ("PROCESS-PITCHING", [
         r"two independent sources", r"\bwe verify\b", r"\bour (?:process|method|workflow)\b",
         r"\bcross-referenc", r"\bevery tree is (?:checked|verified)\b",
