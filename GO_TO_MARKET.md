@@ -93,7 +93,7 @@ He weighed the ranked list himself and ruled on each. These stand until he chang
 
 **The resulting division of labour, which is now the strategy in one line: the machine makes the database better and the SEO work; Hidde does design and the app's functionality.** Clean lanes, no gates between them.
 
-## The Japan wave, decided 2026-07-27
+## The Japan wave, decided 2026-07-27 (superseded 2026-07-30: Japan lost its priority and deadline, see CLAUDE.md Step 0 rung 4 and DECISIONS.md; kept below as the reasoning trail, not as live direction)
 
 Hidde's call, made in session, with the discipline the 2026-07-26 standard demands: coverage order changes only on evidence, so here is what this decision rests on and what still has to be checked before a single Japanese city gets built.
 

@@ -30,10 +30,6 @@ Cost note for whoever picks this up: the pulse alone is roughly an hour (a CSS a
 
 **Trigger:** the icon/pin design pass, or Hidde saying go. Not before the Japan-wave deadline work (2026-08-22) unless he explicitly bumps it.
 
-## Country pages, Contract G: proposed 2026-07-31, WAITS ON HIDDE'S YES (hard rule 7)
-
-His impulse, from AllTrails' country pages ("dit heeft alltrails wss ook vanuit seo overweging gedaan"). The design agreed in chat: country overview pages ("Ancient trees in the Netherlands") ONLY for countries with three or more published cities (about nine today: NL, ES, IT, UK, PT, FR, JP, BE, DE), because 18 of 30 countries have a single city and a one-city country page is a duplicate with a flag on it (P3). Ingredients per page: hand-written country intro (species-page discipline, no templating), the country map with the city chooser, city photo cards, the oldest tree of the country, links to relevant collections and registers. Blueprint edits need his explicit yes; when he says "voeg het landencontract toe", write Contract G into SEO_GEO_BLUEPRINT.md with a version bump, then runs build the qualifying countries inside the coverage lane.
-
 ## Collection topics, ranked by measured demand (research 2026-08-04)
 
 Google and Bing autocomplete plus Wikipedia pageviews, run because Hidde judged the existing collection titles unsearchable. He was half right: the superlative frame is where all the volume is, but the winning unit turned out to be narrower than either of us guessed. **Google completes `oldest [species] tree in [city]` for every city tested**: oldest ginkgo tree in tokyo, oldest camphor tree in osaka, oldest olive tree in lisbon, oldest cherry tree in kyoto, oldest palm tree in barcelona, oldest pear tree in dublin.
@@ -182,16 +178,6 @@ The reasoning, so it does not have to be re-argued: world cities and collections
 Hidde's read 2026-07-26: collections may be the best SEO value per page, and they are nearly free, since a new collection recombines already-researched trees. First two (ancient oaks, November ginkgos) live since 2026-07-27. Since blueprint v1.3 they publish without owner approval, under the research standard with script-checked entries.
 
 **Trigger:** none; the slate lives in PRODUCT_TODO.md.
-
-## Let runs read the visitor numbers
-
-A run cannot currently see Cloudflare analytics: the numbers need Hidde's login, and reading them would mean putting a Cloudflare API token in the repo or the GitHub environment. That is a new secret that can leak and a new third-party dependency (hard rule 5), and it puts a first crack in the deliberate separation that keeps visitor and personal data on Hidde's side rather than a run's. Worth it later, not now: today the number is almost certainly zero, so a run would add a key and a dependency to read a nought.
-
-Value when it fires: a run sees traffic starting for itself and can flag in LOG.md "real visitors now, time for the next step" instead of Hidde checking the dashboard by hand. That is the missing signal the whole project is waiting on.
-
-**Trigger:** measurable traffic in Cloudflare, and Hidde not wanting to watch it by hand. Recorded 2026-07-21 at his request.
-
-**Needs Hidde:** yes. It is his Cloudflare account and his call whether a run should hold a key to it.
 
 ## A keepsake of the collection, the Polarsteps move
 

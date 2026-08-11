@@ -1,5 +1,5 @@
 # TONE_OF_VOICE.md, Ancient Trees
-Version 1.0 (draft, awaiting Hidde's approval). Owner: Hidde.
+Version 1.4. Owner: Hidde.
 
 Every story, intro, FAQ answer and page text follows this document. Changes require Hidde's explicit approval and a version bump with changelog entry. The Paris run of 2026-07-15 is the calibration standard: when in doubt, sound like Paris.
 
@@ -77,8 +77,10 @@ Reserved. Hidde delivers samples of his own writing (posts, mails, fragments, Du
 ---
 
 ## CHANGELOG
+- **v1.4 (2026-08-08):** Added "Never explain our own rules to the reader", approved by Hidde in session on finding the parks index describing its own publish gate to visitors ("that is our logic back to the end user... they don't care about our specific rules"). Backfilled 2026-08-11: this entry existed in the document but was missing from the changelog.
 - **v1.3 (2026-08-04):** Added "Product copy is soberer than the stories", approved by Hidde in session ("please save that in your copywriting style"). Written from two lines he rejected on the day: an untrue claim about hand-verification and a pop-lyric pun in a call to action.
-- v1.0: Initial draft distilled from CLAUDE.md style rules, the Paris run, and the 2026-07-19 quality round. Awaiting Hidde's approval.
+- **v1.1 (2026-07-31):** Added "No builder-speak toward the visitor", approved by Hidde in session after an account page said "Sign-in is real and stores only your email address" ("keep up appearances, facade until test"). Backfilled 2026-08-11: this entry existed in the document but was missing from the changelog.
+- v1.0: Initial draft distilled from CLAUDE.md style rules, the Paris run, and the 2026-07-19 quality round.
 
 ## Never explain our own rules to the reader
 
