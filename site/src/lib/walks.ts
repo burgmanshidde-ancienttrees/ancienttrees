@@ -265,10 +265,38 @@ export function planWalks(markers: WalkMarker[], budgetKm = WALK_BUDGET_KM): Wal
   // one they can see, and every other walk is still one tap away.
   for (const w of walks) w.shots = w.order.filter((i) => markers[i].shot).length;
   walks.sort((a, b) => (b.shots ?? 0) - (a.shots ?? 0) || b.count - a.count || a.km - b.km);
-  const nameCounts = new Map<string, number>();
-  for (const w of walks) if (w.name) nameCounts.set(w.name, (nameCounts.get(w.name) ?? 0) + 1);
-  const dupes = new Set([...nameCounts.entries()].filter(([, n]) => n > 1).map(([name]) => name));
-  for (const w of walks) if (dupes.has(w.name)) w.name = "";
+  // Two walks under one name tells a visitor nothing. Blanking both was the
+  // first fix and it was too blunt: the commonest cause is a split, where a
+  // route over WALK_SPLIT_KM is cut in half, both halves sit in the same place
+  // and so both lose the name of it. Barcelona shipped "Walk 2" and "Walk 3"
+  // for the two halves of Montjuic, and you cannot choose between things with
+  // no names. So separate them by where they are, and blank only if even that
+  // cannot tell them apart. Mirrors _walk_name/plan_walks in
+  // scripts/walk_planning.py; the two must stay in step.
+  const byName = new Map<string, Walk[]>();
+  for (const w of walks) if (w.name) (byName.get(w.name) ?? byName.set(w.name, []).get(w.name)!).push(w);
+  for (const [name, group] of byName) {
+    if (group.length < 2) continue;
+    const cents = group.map((w) => {
+      const la = w.order.reduce((s, i) => s + markers[i].lat, 0) / w.order.length;
+      const lo = w.order.reduce((s, i) => s + markers[i].lng, 0) / w.order.length;
+      return [la, lo] as const;
+    });
+    const lats = cents.map((c) => c[0]);
+    const lngs = cents.map((c) => c[1]);
+    const midLat = lats.reduce((a, b) => a + b, 0) / lats.length;
+    const midLng = lngs.reduce((a, b) => a + b, 0) / lngs.length;
+    const spreadNS = Math.max(...lats) - Math.min(...lats);
+    const spreadEW = (Math.max(...lngs) - Math.min(...lngs)) * Math.cos((midLat * Math.PI) / 180);
+    group.forEach((w, i) => {
+      const [la, lo] = cents[i];
+      if (spreadEW >= spreadNS && spreadEW > 0) w.name = `${name} ${lo >= midLng ? "east" : "west"}`;
+      else if (spreadNS > 0) w.name = `${name} ${la >= midLat ? "north" : "south"}`;
+      else w.name = "";
+    });
+    const labels = group.map((w) => w.name);
+    for (const w of group) if (labels.filter((l) => l === w.name).length > 1) w.name = "";
+  }
   // The combined option rides last, after its parts, never as the lead walk.
   for (const w of combined) w.shots = w.order.filter((i) => markers[i].shot).length;
   walks.push(...combined);
