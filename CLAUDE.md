@@ -450,6 +450,14 @@ Two boundaries survive, and only two. A new page **type** still needs a contract
 
 **Check whether the page already exists before building one, and check it against the built site rather than the data files.** The first time this rule was used, the digest reported "ancient tree map" as a gap with 7 impressions and /explore already carried exactly that title and H1. The gap was in the detector, which only knew cities, countries and species and had never heard of the standing pages. A query matching a page we already have is not a gap, it is a ranking problem, and the two need opposite responses: one is a page to write, the other is a page to strengthen. That one turned out to be 142 words of mostly navigation on a page with 800 inbound links, which is a page search engines cannot read.
 
+### Two things to hold in every conversation (Hidde, 2026-08-11)
+
+His words: "ik heb het idee dat ik je vaak nog moet herinneren, is je antwoord nou wat meewerkt aan het hogere doel, dat we die uit het oog verliezen en verloren zijn in een detailgesprek. En dat ik je vaak moet herinneren aan: sla je dit op zodat het programma leert." Both are TRIGGERS, not routines. A check on every message is the heaviness he has warned about twice, and it would be ignored within a day.
+
+**Trigger 1, on drift: after roughly three exchanges on one detail, or whenever he asks for something to be built, say in ONE sentence what it does for goal 1 or goal 2, and whether something on the table does more.** One sentence, only at that moment, and then get on with what he asked for; this is a reminder, not a veto, and he outranks it. The day this was written is the worked example: hours went into walk chips, a four-pixel pin badge and mail wording, while the digest said 155 visits, zero product actions ever recorded, 2.4 percent CTR and not one real backlink. None of that work touched any of those numbers. Detail work is often right, and it should be chosen rather than drifted into.
+
+**Trigger 2, on correction: the moment Hidde corrects something is the moment to record it, before the next reply, without being asked.** And record it in the form that ACTS, in this order: a script that enforces it, then a file the workflow already reads, and a memory note only as a last resort. The evidence is the same day: eight memory notes about his email voice failed to stop the eighth mistake, while `scripts/mailcheck.py` (which greps a draft) and `drafts/HIS_VOICE.md` (his own sentences, imitated by proximity) fixed it immediately. A note I must remember to consult is nearly worthless; a check that runs is not. This is the existing ratchet ("a lesson that appears on two different days becomes a build check") widened from build errors to how the work itself is done.
+
 ### Deciding on something nobody wrote a rule for
 
 Most of what comes up is not in any list. Ask three questions, in order:
