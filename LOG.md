@@ -39,6 +39,60 @@ FOR HIDDE: nothing blocks. The WARN in REVIEW.md's newest entry (Porto's permiss
 
 **Bologna's register held one real addition.** A grey walnut, the only Juglans cinerea on Italy's entire national monumental-trees register, sits about 230m from the already-published Botanical Garden ginkgo (bol_007), both inside the university's Orto Botanico. Two independent sources (a Bologna news outlet and a tourism guide, both citing the garden's curator and a professor running a named five-year conservation project since February 2025) confirm it's alive now, in active care for age-related decline rather than dead, and give consistent facts. Shipped as bol_011, girth stated as a range since the register (420cm) and the press (471cm) disagree and neither was picked as a winner. This crosses the walk-forming threshold for the first time: Montagnola, the ginkgo and the walnut now form a second Bologna walk, 3 trees, 1.1km, 15 minutes, alongside the existing piazza cluster. A second register entry (a 545cm Cedar of Atlas at Villa delle Rose) is genuine but stands roughly 2km from anything else, so it's recorded as a lead in a new `data/leads/bologna.json` rather than shipped as a lone addition. Fixed a stale "ten most" in the meta_description once the tree count passed ten. Build and `qa.py` both green, 1421 pages. Ran `photo_hunt.py --recheck` and `tree_index.py` on both cities. Committed and pushed.
 
+## 2026-08-12 (session) - The weekly reflection, and the machine stops carrying a phase it was told to drop
+
+**Hidde cancelled the 2026-08-14 review.** "Zet die geplande evaluatie uit je
+hoofd en bestand, we kunnen gewoon door, ik heb genoeg bevestiging om door te
+gaan." The steady fortnight's fifty-fifty split ends with it and no new review
+date replaces it. The course he confirmed instead, in his words "eens met
+register hoek en alleen verdieping wanneer de moeite", is written into CLAUDE.md
+Step 0 as two rules: supply from the cheap end (write the ~300 READY leads
+first, then register-backed verify only, then import a new register, and no
+from-zero web research on a city without his ask), and depth only on pages
+Search Console shows impressions for. His own framing of the phases stands
+above it: phase 1 is traction, people and data.
+
+**What the reflection found, since it is the reason for the ruling.** Supply
+doubled in a week, 81 cities to 95 and roughly 440 trees to 934, and demand did
+not move: 66 clicks on 2,796 impressions in ten days, zero product actions
+ever, five waitlist signups, no real backlink. Cost per published tree ran at
+33k against a 15k target, with the worst days at 91k and 122k. The tail is
+where it went: Baarn took three passes and 556k tokens for zero trees, pin
+passes on Washington and Edinburgh 275k for zero upgrades, the photo lane 449k
+for zero approvals on 08-09. All of it honest work on pages nobody can find.
+The week's real wins came from people: Paulo's ginkgo photograph, the
+Baumkunde moderator, and the Brabants Dagblad journalist whose complaint
+produced `how_to_recognise`.
+
+**Den Bosch needed no writing pass after all.** The handover queued seven
+storyless trees as the first job; a night run had already written them and
+pushed while this session was reading the numbers. Checked before dispatching,
+which is the whole point of the claim file, and it saved about 130k tokens. The
+city stands at 11 trees, every one with a story and a field mark.
+
+**The night run was still executing a phase that had been dead for six days.**
+Its prompt carried the 2026-08-06 tourist-city rollout: walks first, photos a
+priority, small cities stopped, three US cities closed. CITY_QUEUE.md named
+"the order embedded in nightly.yml" as one of the six orders it killed on
+08-11, and nobody opened the YAML. Fixed, and then fixed properly: the first
+attempt wrote the new course into the prompt, which is the same duplication
+that caused the bug, so the course now lives only in CLAUDE.md and the prompt
+carries only what is true of that runner. `check_no_strategy_in_workflows` in
+scripts/qa.py is the seventh build check and fails the deploy on a workflow
+prompt that declares a phase; verified against the real pre-fix file, which it
+catches five ways.
+
+**And the chain has been lying since 2026-07-31.** Self-chaining was switched
+off that day for eating the week in two, but the disabling left the presence
+beacon check and a 10-to-30-minute sleep running before an `exit 0` that sat one
+line above the dispatch it suppressed. So every night run ended by sleeping for
+nothing, the beacon it consulted could not affect anything, and CLAUDE.md's
+capacity doctrine has said "runs chain themselves around the clock" for twelve
+days while nine cron knocks were the only trigger. The step is four honest lines
+now and the doctrine says what actually fires. FOR HIDDE, and it is the one item
+here that needs him: turning the chain back on is your usage window, not a run's
+call. Say the word and it goes back to the version from before c034207.
+
 ## 2026-08-12 - Portugal's register lands 21 trees, and a journalist finds the hole the pins never covered
 
 **OPEN WORK, first thing for the next session.** Den Bosch's seven new trees
