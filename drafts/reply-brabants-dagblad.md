@@ -1,53 +1,42 @@
-# FOR HIDDE: reply to the Brabants Dagblad journalist
+# FOR HIDDE: reply to Roel, Brabants Dagblad
 
-The follow-up you asked for on 2026-08-12, in the shape you named: I looked
-deeper, this is what it is based on, I had it searched further, this is what
-came out, what do you think. You said to wait until the work was actually live.
-It is: Den Bosch went from 4 trees to 11 this morning, and all eleven carry the
-recognition line his second objection produced.
+Your own draft, rendered. Three changes and nothing else:
 
-He is Roel (you told me, 2026-08-12). First name only in the salutation, which
-is where a name belongs; it goes nowhere near the site, per the standing rule.
+1. **Capitals, per your correction of 2026-08-12.** My previous version was all
+   lower case because `drafts/HIS_VOICE.md` told me to imitate that; that line
+   is struck and `mailcheck.py` now flags a draft written that way.
+2. **Your open question answered: "welke register?"** It is the municipality's
+   own tree register, 1,907 protected trees published with species, girth,
+   height, age and owner per tree. That is the strongest possible answer to
+   Roel's first objection, because it is his own city's data and he can check
+   any line of it himself. Filtered to municipal ground and living trees it left
+   209 candidates, which is why Den Bosch could go from 4 to 11 in a morning.
+3. **One sentence I added, and you can strike it.** The line saying every tree
+   now tells you how to recognise it. It is there because that was Roel's
+   second objection, the one that changed the product, and your draft did not
+   mention it.
 
-His two objections and what the mail answers with:
+What I left out on purpose, since you cut it: the photographer ask from your
+first mail. All eleven Den Bosch trees still have no photograph, so if you want
+it back, one line does it: "En als er toch een fotograaf langs Bastion Oranje
+of de Casinotuin fietst, dan maakt dat de pagina's een stuk beter."
 
-1. **It looked early-stage and unvalidated.** The answer is not a promise, it is
-   a source: the eleven trees come from the municipality's own register of 1,907
-   protected trees, which carries species, girth, height, age, owner and
-   vitality per tree. That is his own city's data, and he can check any line of
-   it. Filtered to municipal ground and living trees over 250 cm girth it leaves
-   209 candidates, which is why Den Bosch could nearly triple in a morning.
-2. **He walked to a tree and could not tell which trunk was ours.** That is the
-   one that changed the product. Every tree on the site can now carry a plain
-   sentence saying what you look at when you are standing there, and Den Bosch's
-   eleven all have one. The maple he walked to is the worked example: 427 cm
-   round against its neighbour's 317 cm, and the neighbour's register id is in
-   the sentence so he can look it up himself.
+URL fetched, returns 200.
 
-Both URLs fetched, both 200. The photographer ask from your first mail is still
-open and still true: all eleven Den Bosch trees have no photograph.
-
-To: stadsredactie@bd.nl (or his own address if he wrote from it)
+To: stadsredactie@bd.nl (or Roel's own address if he wrote from it)
 Subject: Re: Op Bastion Oranje groeit een boom boven op de vestingmuur van 1634
 
 ---
 
-Beste Roel,
+Hoi Roel,
 
-dank voor je eerlijke reactie, daar had ik wat aan. ik ben er dieper ingedoken.
+Ik ben er nog even ingedoken. De informatie over de bomen komt uit het bomenregister van de gemeente zelf: 1.907 beschermde bomen, met soort, stamomtrek, hoogte, leeftijd en eigenaar erbij.
 
-waar het op gebaseerd is: het bomenregister van de gemeente zelf, 1.907 beschermde bomen met soort, stamomtrek, hoogte, leeftijd, eigenaar en vitaliteit per boom. daar heb ik Den Bosch mee laten uitzoeken. de stad staat er nu met elf bomen op in plaats van vier:
+Ik heb het nog verder laten onderzoeken en inmiddels staan er 11 bomen online. Bij elke boom staat nu ook hoe je hem herkent als je ervoor staat, want dat was precies jouw punt.
 
 https://ancienttrees.app/den-bosch
 
-je tweede punt vond ik het beste punt. je stond bij de boom en kon niet zien welke het was. dat lag aan ons, want een kaartprikker zegt waar en niet welke. elke boom heeft nu een regel die zegt waar je naar kijkt als je er staat. bij jouw esdoorn op Bastion Oranje: het is de dikste van de twee, 427 cm rond tegen 317 cm, en de kleinere staat 30 meter naar het noordwesten (registernummer G-0287, dus je kunt het zelf nakijken).
+Ben benieuwd wat je ervan vindt.
 
-https://ancienttrees.app/den-bosch/norway-maple-of-bastion-oranje
-
-wat vind je ervan?
-
-en de vraag uit mijn vorige mail staat nog steeds: van alle elf Bossche bomen heb ik geen enkele goede foto. mocht er een fotograaf toch langs Bastion Oranje of de Casinotuin fietsen, dan maakt dat de pagina's een stuk beter.
-
-groet,
+Dank en we houden contact,
 Hidde
-ancienttrees.app
