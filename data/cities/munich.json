@@ -2,10 +2,10 @@
   "city": "Munich",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Munich protects its remarkable trees by law and number: a 2021 city ordinance registers 117 Naturdenkmäler covering 200 trees, each legally protected the way a listed building would be. That bureaucratic precision sits oddly with their origins: planted by a royal count's landscape garden, grown wild in a monastery orchard, set in the ground by twelve thousand schoolchildren celebrating a war's end. Two of the fourteen below carry rival claims to being the city's single oldest tree, and neither is settled. Munich has not tried to force the point.",
+  "intro": "Munich protects its remarkable trees by law and number: a 2021 city ordinance registers 117 Naturdenkmäler covering 200 trees, each legally protected the way a listed building would be. That bureaucratic precision sits oddly with their origins: planted by a royal count's landscape garden, grown wild in a monastery orchard, set in the ground by twelve thousand schoolchildren celebrating a war's end. Two of the trees below carry rival claims to being the city's single oldest tree, and neither is settled. Munich has not tried to force the point.",
   "meta_description": "Munich protects 200 trees by city ordinance. Meet a 600-year-old oak, a hollow linden painted by an artist, and eight rare hackberries on a ring road.",
   "question_answer": "Munich has no single agreed oldest tree: two different trees carry the claim from different sources. The Krüner Eiche, a pedunculate oak in Sendling-Westpark, is cited by a district citizen assembly as roughly 600 years old, which would date it to the 1420s. The Röth-Linde in Moosach, a winter linden, is separately described by local press as the city's oldest tree at 300 to 350 years. The two claims have never been reconciled against each other.",
-  "question_meta": "Munich has two rival claims to its oldest tree, a 600-year-old oak and a 300-plus-year-old linden. Both, and thirteen more protected trees, explained.",
+  "question_meta": "Munich has two rival claims to its oldest tree, a 600-year-old oak and a 300-plus-year-old linden. Both, and the city's other protected trees, explained.",
   "question_context": "Munich's own tally is the most precise starting point any city on this list has offered: a 2021 ordinance names 117 protected Naturdenkmäler covering 200 individual trees across the city, each with a case made for rarity, size, beauty or historical association. Age is a different matter. Ring counts require felling a tree, so every age here comes from growth models, historical association or simple local reputation, not a verified count. The Krüner Eiche's roughly 600-year figure comes from a 2017 Sendling-Westpark district citizen assembly document arguing for the oak's preservation; the Röth-Linde's 300 to 350 year figure, and its billing as Munich's oldest tree, comes from a dedicated local news feature and the tree's own German Wikipedia page. Both are treated here as the honest, sourced claims they are rather than resolved into one winner. The Krüner Eiche stands at Krüner Platz in Sendling-Westpark, an eight minute walk from Harras U-Bahn station.",
   "faq": [
     {
@@ -22,7 +22,7 @@
     },
     {
       "q": "Are Munich's remarkable trees free to see?",
-      "a": "Yes. All fourteen stand in public parks, squares and streets with no entry fee, though the Nymphenburg palace grounds around one of them charge for the palace interior itself."
+      "a": "Yes. They all stand in public parks, squares and streets with no entry fee, though the Nymphenburg palace grounds around one of them charge for the palace interior itself."
     }
   ],
   "trees": [
@@ -491,6 +491,214 @@
       "curation_status": "flagged",
       "notes": "Age undated and no second source beyond the ordinance itself, so flagged. The 120-200 range is bracketed from the cultivar's introduction date and Sckell's 1799-1823 landscaping, not measured; baumkunde.de has no entry for this tree. Photo deliberately left missing rather than filled. Three candidates exist on Wikimedia Commons and all three were checked: the register-linked 'Haengebuche im Schlosspark Nymphenburg.jpg' was viewed directly at 1280px and fails the Cadiz standard, being a close-up shot looking up into the canopy with no trunk base, no whole-tree shape and no sense of scale, plus a painted red heart on one limb; the other two ('Unter der Haengebuche', 'Laub der Haengebuche') are by the same photographer and are respectively an under-canopy and a foliage close-up, failing the same way. An honest gap beats a mediocre photo. Worth re-hunting when someone photographs this tree whole.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "muc_015",
+      "name": "Copper Beech (Fagus sylvatica f. purpurea) at Schlosspark Nymphenburg",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 48.15403,
+        "longitude": 11.49411,
+        "neighbourhood": ""
+      },
+      "story": "Munich protects this beech partly for the building beside it. The ordinance that lists it gives as its reason: solitary tree, important connection with the Badenburg.\n\nThe Badenburg is the bathing pavilion at the far end of Schlosspark Nymphenburg, finished in 1721 for Elector Max Emanuel, and it holds a heated indoor pool that was an extraordinary thing to own in the early eighteenth century. The beech stands in that composition, alone, with space around it, which is the only way a beech ever grows a crown like this one. In a wood it would be a straight pole with its leaves fifteen metres up, competing for light it cannot reach.\n\nCopper beech is not a species but a mutation of the ordinary green one, a purple sport that appeared in German forests centuries ago and has been propagated by gardeners ever since. Nearly every copper beech in Europe descends from a handful of those accidents. The colour is at its most extreme in spring, almost black-red on new growth, and settles to a dark bronze by August.\n\nMunich's ordinance does something most registers do not, which is state why each tree is protected. What it does not do is record an age or a girth, so this tree is legally attested, free to walk up to, and undated.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "muc_016",
+      "name": "Large-leaved Lime (Tilia platyphyllos) at Schlosspark Nymphenburg",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 48.15455,
+        "longitude": 11.49324,
+        "neighbourhood": ""
+      },
+      "story": "The legal document protecting this lime describes it, in German officialese, as bizarre.\n\nThe full reason recorded in Munich's ordinance is bizarre and gnarled growth, conspicuous appearance, which is unusually candid for a statutory instrument. Large-leaved lime invites that sort of remark. It tolerates being cut back harder than almost any other European tree and sprouts again from wherever the saw went, so an old one that has been pruned, storm-broken and repaired across a couple of centuries ends up with a shape no nursery would sell you. Central European villages used to exploit exactly that habit, training limes into layered platforms for dancing and for holding court.\n\nIt grows in Schlosspark Nymphenburg on public ground, free to walk up to. What the ordinance does not give is an age or a girth, because Munich's list records the reason for protection rather than the dimensions, and no dated source for this particular tree was found. Take the shape as the point and the date as unknown.\n\nLarge-leaved lime flowers about a fortnight before the other European limes, in June rather than July, and the undersides of its leaves are softly furred. Those two things separate it from the small-leaved limes elsewhere in the city faster than any measurement will.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "muc_017",
+      "name": "Fern-leaved Beech (Fagus sylvatica f. asplenifolia) at Schlosspark Nymphenburg",
+      "species": "Fern-leaved Beech (Fagus sylvatica f. asplenifolia)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 48.15528,
+        "longitude": 11.50042,
+        "neighbourhood": ""
+      },
+      "story": "Look up into this beech and you may find three different leaf shapes on one tree.\n\nFern-leaved beech is a cut-leaved form of the common beech, and its foliage is famously unstable. Some shoots carry threadlike leaves barely wider than a pine needle, some carry deeply lobed ones, and some revert outright to the plain oval leaf of an ordinary beech. A branch that reverts stays reverted, so the older the tree, the more mixed the crown becomes.\n\nMunich's ordinance protects it as a mighty, very beautiful and rare solitary specimen in a good position at a prominent spot, which is a register's way of saying somebody sited this tree deliberately and was right. It stands on open ground in Schlosspark Nymphenburg, free to walk up to.\n\nThe gap in its record is time. The ordinance lists neither a planting date nor a girth and no independent dating turned up, so the tree is legally attested and undated. Cut-leaved beeches were a nineteenth-century fashion in German landscape parks, which makes a nineteenth-century planting the obvious guess, and a guess is all it is.\n\nIn autumn the fine leaves turn the same copper as any other beech, and being thin they go translucent when the sun is behind them, which is worth walking round the tree for.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "muc_018",
+      "name": "Weeping Beech (Fagus sylvatica f. pendula) at Schlosspark Nymphenburg",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 48.15755,
+        "longitude": 11.49961,
+        "neighbourhood": ""
+      },
+      "story": "The reason Munich gives for protecting this beech is that its residents are attached to it.\n\nThe ordinance's wording is dominant tree in a historic garden, of special significance for the citizens of Munich, which is a rare thing to find in a legal list: a civic judgement instead of a measurement. Nobody has published an age to go with it, because the city's list records why a tree is protected and not how old it is.\n\nIt stands in Schlosspark Nymphenburg, the park Friedrich Ludwig von Sckell recast as an English landscape garden from 1804, pulling out the clipped French geometry in favour of lawns, water and single trees placed to be looked at. Sckell shaped the Englischer Garten across town as well, and a weeping beech given a lawn of its own is precisely the sort of object his kind of park was built around.\n\nWeeping beech grows down rather than up. The branches arch out and then hang, and where the tips touch soil they can root and start again, so an old one closes into a domed room with the trunk standing in the middle of it. The leaves outside are ordinary beech leaves. The space underneath is not, and children tend to find it several minutes before the adults do.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "muc_019",
+      "name": "White Ash (Fraxinus americana) at Grünanlage Maximiliansplatz",
+      "species": "White Ash (Fraxinus americana)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 48.1416146,
+        "longitude": 11.5700298,
+        "neighbourhood": ""
+      },
+      "story": "There is an American ash on a square in central Munich, and the city's own ordinance calls the species rare here.\n\nFraxinus americana is the wood a classic baseball bat is turned from, straight-grained, light and good at absorbing shock. In Europe it is a park curiosity rather than a forest tree, which is why Munich's protection order gives as its reason: dominant tree with an interesting growth form, rare in Munich. It stands in the green strip at Maximiliansplatz, in the middle of the city, free to walk up to.\n\nAshes have become a heavier thing to look at over the past two decades. A fungus called ash dieback has been working through Europe's native ash since the 1990s and has killed a large share of it, while the American species is under siege at home from the emerald ash borer, a beetle that has taken tens of millions of trees across North America. A big ash of any species with its crown in good order is no longer an ordinary sight.\n\nIts age is simply unknown: the city's list records why a tree is protected and not when it was planted, and no dated source was found. Ash comes into leaf later and drops earlier than most of what surrounds it, so it spends more of the year bare than its neighbours do.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "muc_020",
+      "name": "Large-leaved Lime (Tilia platyphyllos) at Englischer Garten",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 48.17295,
+        "longitude": 11.61225,
+        "neighbourhood": ""
+      },
+      "story": "This lime is already drawn on a plan of the park from 1807, which makes it one of very few trees in Munich with a paper trail.\n\nMunich's protection ordinance says so in as many words: historic lime, already present in plans from the year 1807. Read that as a floor rather than an age. A tree worth drawing was not a sapling, so it was standing when Bavaria was a kingdom barely a year old and when the Englischer Garten itself was under twenty years into its existence. The park had been laid out from 1789 on the orders of Elector Karl Theodor, at the urging of Benjamin Thompson, and was unusual in Europe for being open to everyone rather than to a court.\n\nWhat the tree has watched since is the whole modern history of the city, from the first generation of Müncheners allowed to walk in a royal park to whoever is crossing the meadow this afternoon.\n\nBeyond that 1807 drawing there is no age and no girth on record, so anything more precise would be invention. Large-leaved lime flowers in June, ahead of the other European limes, and an old one like this holds a broad, heavy, slightly lopsided crown that reads as a single dome from right across the grass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "muc_021",
+      "name": "European Beech (Fagus sylvatica) at Flaucheranlagen",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 48.11029,
+        "longitude": 11.55908,
+        "neighbourhood": ""
+      },
+      "story": "Munich's ordinance calls this one of the mightiest beeches in the city and notes that it carries branches almost to the ground.\n\nThe second half of that is the part to hold on to. A beech grown in a wood loses its lower limbs to shade and ends up a smooth grey column with all its leaves fifteen metres overhead. A beech grown in the open keeps everything, and the crown comes down in a skirt you have to duck under to reach the trunk. This one has had the room to do it, in the Flaucher, the belt of riverside park along the Isar in the south of the city where Munich goes to swim and grill through the summer.\n\nThe river beside it is not the one it grew up with. Straightened and walled in the nineteenth century, the stretch through the city was rebuilt between 2000 and 2011, the concrete lifted out and gravel banks let back in, so the beech now stands over a braided river rather than a channel.\n\nThe city's list gives the reason for protection and no dimensions, so there is no published age or girth. From late October the whole crown turns copper and holds it for weeks, and beech is stubborn about letting go: the young growth keeps its dead leaves all winter.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when a crown this size turns the whole clearing copper"
+      },
+      "verified_sources": [],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "muc_022",
+      "name": "Small-leaved Lime (Tilia cordata) at Englischer Garten",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 48.15355,
+        "longitude": 11.59526,
+        "neighbourhood": ""
+      },
+      "story": "For centuries in this part of Europe, a village's justice was handed down under a lime.\n\nThe Gerichtslinde, the court lime, was a real institution: a broad tree on the square with benches beneath it, where the local court sat in the open because everybody could then see and hear what had been decided. Small-leaved lime was usually the tree chosen, because it lives long, takes heavy pruning and builds exactly that kind of wide, shading crown. Munich protects this one for its trunk, which the ordinance describes as having rarity value in the city on account of its form and its girth. It stands on open ground in the Englischer Garten.\n\nThat girth is never given a number. The city's list says why a tree is protected and stops there, so the trunk that earned this tree its protection has no published measurement and no date beside it.\n\nSmall-leaved lime flowers later than any other European lime, in late June and July, once most of the summer's blossom is over. The flowers themselves are small, greenish and easy to walk past. You will not walk past the sound, because the whole crown fills with bees, and the scent reaches you a good twenty metres before the tree does.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when it flowers late for a lime and the crown fills with bees"
+      },
+      "verified_sources": [],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
     }
   ]
 }
