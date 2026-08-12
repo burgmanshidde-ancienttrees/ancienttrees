@@ -2,10 +2,10 @@
   "city": "Prague",
   "country": "Czech Republic",
   "status": "needs_curation",
-  "intro": "Prague protects its old trees the same way it protects buildings: since 1992, national law lets the city legally register individual specimens as pamatne stromy, memorial trees, each with its own protection order and a fineable offence for damaging one. Roughly 200 trees currently hold that status across the city. Most of what follows are London planes planted in aristocratic gardens two centuries ago, alongside a monastery ash, an island oak tamed by imperial flood engineers, and a beech that split into two trunks on a 17th century battlefield. All sixteen are free to visit.",
-  "meta_description": "Prague protects its old trees by law. Sixteen remarkable specimens, from a disputed-age plane by the Lennon Wall to a 45-metre beech on a 1620 battlefield.",
+  "intro": "Prague protects its old trees the same way it protects buildings: since 1992, national law lets the city legally register individual specimens as pamatne stromy, memorial trees, each with its own protection order and a fineable offence for damaging one. Roughly 200 trees currently hold that status across the city. Most of what follows are London planes planted in aristocratic gardens two centuries ago, alongside a monastery ash, an island oak tamed by imperial flood engineers, and a beech that split into two trunks on a 17th century battlefield. All of them are free to visit.",
+  "meta_description": "Prague protects its old trees by law. Seventeen remarkable trees, from a disputed-age plane by the Lennon Wall to a 45-metre beech on a 1620 battlefield.",
   "question_answer": "The oldest tree in Prague that anyone can actually go and see is the Beethoven Plane, a London plane growing in the garden of the Grand Priory Palace on Velkoprevorske namesti in Mala Strana, estimated at somewhere between 200 and 300 years old. Its exact planting date is disputed, but its trunk, seven and a half metres around, is the thickest of any protected tree in the city, and it towers over the wall where tourists photograph the Lennon Wall without ever looking up.",
-  "question_meta": "Prague's oldest visitable tree is a 200-300 year old plane by the Lennon Wall. Where it stands, and fifteen more remarkable trees.",
+  "question_meta": "Prague's oldest visitable tree is a 200-300 year old plane by the Lennon Wall. Where it stands, and sixteen more remarkable trees.",
   "question_context": "Prague has an older tree than this one, but nobody can visit it. Dub Karel, a 550 year old oak in a private castle park at Kolodeje, is Prague's oldest tree by a wide margin, and its own official record calls it the most massive tree in the city. The land is privately owned and closed to visitors, so per this site's rule on withheld locations it is left off the list rather than published as a destination nobody can reach. That leaves the Beethoven Plane as the oldest tree anyone can actually walk up to. It grows in the garden of the Grand Priory Palace, once the Prague seat of the Order of Malta, on Velkoprevorske namesti in Mala Strana, its trunk towering above the same wall famous today as the Lennon Wall. The romantic story, that a young Beethoven sat dreaming beneath it during his 1796 visit, does not survive contact with the calendar: he was in Prague in February, an unlikely month for garden reveries. Its real age is disputed among Czech sources, ranging from around 200 to nearly 300 years, but no other protected tree in the city comes close to its girth.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Prague's ancient trees free to visit?",
-      "a": "All sixteen trees on this list are free to see. They stand in public parks, city gardens and one nature reserve, and none require an admission ticket."
+      "a": "Every tree on this list are free to see. They stand in public parks, city gardens and one nature reserve, and none require an admission ticket."
     },
     {
       "q": "What is a pamatny strom?",
@@ -544,6 +544,30 @@
       "curation_status": "ai_generated",
       "notes": "Registered pamatny strom (registry 104300/11100), protected 24 March 2001. Two independent sources agree: girth 265 cm in 2000, 299 in 2010, 309 in 2013 and 321 in the 2017 Koniklec map; height 19 m with a 16 m crown; age about 165 years as of 2016 with a planting date of about 1850; condition rated excellent in 2010 with no visible damage. The claim that this is the only protected oak in the Old Town is the register's own and is a district-level claim, so it does not collide with the city page's existing claim that the Cisarsky ostrov oak (prg_007) was the first oak in Prague to be protected. Photo viewed at full size before approval: May 2021, sunlit, blue sky, the oak occupies most of the frame with the full crown and the base of the trunk both readable, and the tree holds the centre of the image so a wide card crop keeps it. A parked car sits at the lower left and does not intrude on the centre band.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "prg_017",
+      "name": "Platan u kostela sv. Klimenta (Nove Mlyny)",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 50.091824,
+        "longitude": 14.4285499,
+        "neighbourhood": ""
+      },
+      "story": "The London plane is an accident. It did not exist before the seventeenth century, when an oriental plane and an American one crossed somewhere in a European garden and produced a tree that turned out to be almost impossible to kill in a city.\n\nThat accident is why planes line so many European streets, and why one of them stands on the corner of Nové Mlýny and Klimentská, opposite the church of St Clement, in the quiet Petrská quarter a couple of streets back from the Vltava. Prague's register of protected trees measured its trunk at 342 centimetres in 2017, and it has been adding to that figure ever since, because planes grow quickly. The register's note claims nothing grander than what it is: a locally dominant tree, above the average of its kind in size and age, protected on that basis. No planting date has been published, and that single entry is the whole of the evidence.\n\nPlane bark is why the species won the nineteenth century. It sheds in plates instead of thickening, carrying off a year of soot and grime with it, which kept planes alive in industrial cities that killed nearly everything else. The shedding leaves the familiar camouflage of cream, olive and grey, and it shows best in winter, when there is nothing on the branches to distract from it.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
     }
   ]
 }

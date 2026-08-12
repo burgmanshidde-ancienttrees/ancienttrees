@@ -3,7 +3,7 @@
   "country": "Italy",
   "status": "needs_curation",
   "intro": "Florence's old trees split between two origins. The Giardino dei Semplici, a botanical garden founded in 1545 to grow medicine for the Medici, holds the city's oldest documented trees: a yew planted in 1720, a cork oak from 1805, still growing where their directors put them. Almost everything else dates from one decade, the 1860s and 70s, when Florence briefly served as capital of unified Italy and architect Giuseppe Poggi carved new parks and viewpoints across the hills above the Arno. Both eras still stand, mostly overlooked by the millions who come only for the Duomo.",
-  "meta_description": "Florence's fifteen remarkable trees, from a 1720 botanical-garden yew to the tree nobody notices at Piazzale Michelangelo.",
+  "meta_description": "Florence's remarkable trees, from a 1720 botanical-garden yew to the tree nobody notices at Piazzale Michelangelo.",
   "question_answer": "Florence's oldest documented tree is a European yew in the Giardino dei Semplici botanical garden, planted in 1720 by the botanist Pier Antonio Micheli and now around 306 years old. It stands a short walk from Piazza San Marco, behind the entrance ticket of one of the world's oldest university botanical gardens.",
   "question_meta": "Florence's oldest tree is a 306-year-old yew planted in 1720 in the Giardino dei Semplici. Where it stands, plus the city's other remarkable trees.",
   "question_context": "Most claims about a city's oldest tree rest on estimated girth rather than any documented planting date, which is what makes the Giardino dei Semplici's yew unusual: its 1720 planting is on record because Pier Antonio Micheli, the botanist who added it, ran the garden's own books at the time. That gives Florence something rarer than an old tree: a tree whose age nobody has to guess at. It grows in the Giardino dei Semplici, a walled botanical garden on Via Pier Antonio Micheli near Piazza San Marco, founded in 1545 by Cosimo I de' Medici to grow medicinal plants and now among the oldest university botanical gardens still operating anywhere. A ticket is required, unlike most of the trees on this list. Nearby grows a cork oak planted less than a century later, in 1805, and a Mexican cypress added in 1884 that has since grown the widest trunk of any tree in the city. All three have spent their entire lives within a few hundred metres of one another, tended by a sequence of directors rather than left to grow wild, which is exactly why their ages are known instead of estimated.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Florence's remarkable trees free to visit?",
-      "a": "Seven of the fifteen are free: the two Parco delle Cascine entries, the Bobolino, Salviatino, Piazzale Michelangelo, Villa Vogel and the incense cedar by the Bobolino gate all charge nothing. The other eight stand inside two paid gardens, the Giardino dei Semplici botanical garden and the Boboli Gardens, both ordinary museum-style tickets rather than anything specific to the trees."
+      "a": "Seven of them are free: the two Parco delle Cascine entries, the Bobolino, Salviatino, Piazzale Michelangelo, Villa Vogel and the incense cedar by the Bobolino gate all charge nothing. The other eight stand inside two paid gardens, the Giardino dei Semplici botanical garden and the Boboli Gardens, both ordinary museum-style tickets rather than anything specific to the trees."
     },
     {
       "q": "Why are so few of Florence's remarkable trees medieval or older?",
@@ -496,6 +496,188 @@
       "curation_status": "flagged",
       "notes": "MASAF 11/D612/FI/09. Chosen specifically to thicken an existing walk: it stands about 45 m from the live flo_007 (Cedar of the Bobolino) and roughly 600 m from flo_008, so it costs a visitor nothing to add. RAMI 6484 gives girth 5.40 m at 130 cm, height 15.00 m, health 'good', accessibility 'accessible', survey 14 Oct 2021, GPS 43.757674/11.248871, and records both nicknames. The comune's own parks page independently confirms the tree ('cedro dell'incenso', on the left of the central bed) and dates the garden to Poggi, 1865-1877. FLAGGED FOR AGE: no source gives this tree an age. RAMI records 'not available'. The range published here is inferred from the garden's construction dates and is stated as undocumented in the age_estimate field, matching how the live flo_007 and flo_008 handle the same problem. A figure of 1850 plus or minus 20 circulates on monumentaltrees.com; per hard rule 1 that was used only to check that the inference is not absurd, and it is not cited or relied on. Species naming: no Calocedrus entry exists elsewhere on the site, so 'Incense Cedar' is set as the canonical form here in preference to the national 'California Incense-cedar'. Photo: no open-licence image found in the one Commons pass run for this city; the photo budget for this pass was already spent on the three garden trees.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "flo_016",
+      "name": "The Stone Pine of the Bobolino",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 43.757833,
+        "longitude": 11.249194,
+        "neighbourhood": ""
+      },
+      "story": "Stone pines are known for their width, not their height. This one is 31.5 metres tall.\n\nThe umbrella pine gives the Italian skyline its flat-topped silhouette, and it usually does that from a bare trunk of ten or fifteen metres. The Bobolino pine has gone up as well as out, with a trunk of 412 centimetres around, standing on the Oltrarno hillside among the villas and small parks that cover the slope south of the river. Two other protected trees stand within fifty metres of it, so getting to all three costs nothing more than turning around.\n\nOne caution about those numbers. The national register of monumental trees is the only source that records this pine, and the city's own list and the local press coverage both trace back to that same designation, so the measurements are one reading repeated rather than three that agree. No age has ever been published for it.\n\nA stone pine carries cones that take three years to ripen, which means the ground beneath it holds cones at every stage at once, green and closed, grey and opening, and spent. The nuts inside are pinoli, the ones that go into pesto, and prising them out of the shell is why they cost what they cost.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [
+        "MASAF 14/D612/FI/09"
+      ],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "flo_017",
+      "name": "The Monterey Cypress of the Giardino Simone Weil",
+      "species": "Monterey Cypress (Cupressus macrocarpa)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 43.758658,
+        "longitude": 11.248544,
+        "neighbourhood": ""
+      },
+      "story": "In the wild this species grows on two small headlands in California and nowhere else on earth. There is one of it on a Florentine hillside.\n\nCupressus macrocarpa survives naturally at Cypress Point and Point Lobos near Monterey, a couple of miles of wind-flattened trees on the Pacific coast. Move it away from that coast and it behaves like a different plant: it grows fast, spreads wide and reaches sizes it never manages at home, which is how it ended up in gardens from New Zealand to Tuscany. This one has a trunk of 388 centimetres and stands 18.5 metres, dark and broad-crowned, in a free public garden a hundred metres or so from the Bobolino trees.\n\nWhat is not known about it is the interesting part. The national register of monumental trees carries the species, the girth and the height, and nothing else. No age, no planting date, no record of who put it there, and no independent source was found to corroborate any of it. A Monterey cypress of this size in Italy is most likely a nineteenth-century garden planting, from the decades when the species had just reached Europe and every serious garden wanted one. That is inference rather than evidence, and it is worth knowing which of the two you are being handed.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [
+        "MASAF 15/D612/FI/09"
+      ],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "flo_018",
+      "name": "The Cypress of the Monte alle Croci Steps",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 43.762661,
+        "longitude": 11.262575,
+        "neighbourhood": ""
+      },
+      "story": "This cypress grows beside a staircase, on the pilgrim climb from the river up to San Miniato al Monte.\n\nThe Via del Monte alle Croci is the stepped route that leaves Piazza Poggi and works up the hill to the basilica, which has held the highest ground in Florence since the eleventh century. Mediterranean cypress lines approaches like that all over Tuscany, planted for its narrow dark column and for a habit of outliving whoever planted it. This one is 21.5 metres tall with a trunk of 346 centimetres, which is heavy for a species that usually stays slim, and it stands about 250 metres from Piazzale Michelangelo, so the walk between the two takes no detour at all.\n\nNobody has published an age for it. The national register of monumental trees lists it and the comune republishes that listing, which is one source rather than two, and neither carries a date. What can be said is that a cypress puts on girth slowly, and that a trunk this size is not the work of a few decades.\n\nCupressus sempervirens means always green, and it is. The tree looks in January exactly as it looks in July, which is part of why this hillside reads the same in every season and why the climb is as good in winter.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [
+        "MASAF 19/D612/FI/09"
+      ],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "flo_019",
+      "name": "The Aleppo Pine of Via Giramondino",
+      "species": "Aleppo Pine (Pinus halepensis)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 43.757781,
+        "longitude": 11.258919,
+        "neighbourhood": ""
+      },
+      "story": "An Aleppo pine keeps its cones sealed on the branch for years and opens them with heat, so the fire that kills the tree sows the next generation.\n\nThat is a strategy built for a hot, dry, fire-prone coast, and it is why Pinus halepensis covers so much of the western Mediterranean while barely appearing in the Syrian city it was named after. In Florence it is a planted tree rather than a wild one. This one stands on Viale Galileo, part of the ring of hillside boulevards Giuseppe Poggi cut in the 1860s, when Florence was briefly the capital of Italy and rebuilt itself for the job. Its trunk measures 323 centimetres and it reaches 22.5 metres, the slightest of the protected trees on this stretch, though it is also the one you walk past whether you meant to or not: it sits roughly midway between the Bobolino and Piazzale Michelangelo.\n\nThe evidence behind it is thin and worth saying so. Only the national register of monumental trees records it, with the comune reprinting that entry, so there is one source and no age.\n\nTo tell it from the stone pines on the same walk, look at the bark high up, where an Aleppo pine goes pale grey with orange showing in the fissures, and at the needles, which are finer and a lighter green.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [
+        "MASAF 17/D612/FI/09"
+      ],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "flo_020",
+      "name": "The Strawberry Tree of the Giardino dell'Iris",
+      "species": "Strawberry Tree (Arbutus unedo)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 43.762333,
+        "longitude": 11.266222,
+        "neighbourhood": ""
+      },
+      "story": "The strawberry tree flowers and ripens fruit at the same time, so in autumn it hangs white bells and red fruit on the same branch.\n\nArbutus unedo is usually a shrub you can see over the top of. This one is eight metres tall and grows in the iris garden beside Piazzale Michelangelo. Its entry on the national register of monumental trees records that height and leaves the girth column empty, and no age has been published anywhere, so what is known about it is a species, a spot and eight metres. Pliny gave it the second half of its name, unedo, from unum edo, I eat only one, which remains a fair review. The fruit looks like a lychee crossed with a raspberry and tastes of very little.\n\nTiming matters more here than for most trees on this list, and not in the tree's favour. The garden opens for only a few weeks each spring, around the iris flowering it was made for, so the autumn moment when the arbutus does its trick usually falls when the gate is shut. Go for the irises, find the strawberry tree while you are inside, and take the fruit on trust.\n\nIts record rests on one register entry that the comune republishes, which is one source rather than two.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [
+        "MASAF 18/D612/FI/09"
+      ],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "flo_021",
+      "name": "The Chilean Wine Palm of Villa di Rusciano",
+      "species": "Chilean Wine Palm (Jubaea chilensis)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 43.759778,
+        "longitude": 11.279306,
+        "neighbourhood": ""
+      },
+      "story": "This palm was very nearly harvested out of existence for its sap, which was boiled down into a honey. Getting the sap meant felling the tree.\n\nJubaea chilensis carries one of the thickest trunks in the palm family, a grey column more than a metre across, and it grows slowly enough that a tapped tree meant a century of growth spent on a single harvest of palm honey. Chile's wild population collapsed under that trade and now survives in a few protected valleys. The species is also among the hardiest palms there is, which is how it reached Italian villa gardens in the nineteenth century: a palm that could take a frost was worth a great deal to anyone laying out an exotic garden in a climate that kills most of them.\n\nThis one measures 349 centimetres around and stands 15.5 metres, in the park of a municipal villa east of the centre. Its record is a single line, the national listing of monumental trees with the city republishing the same entry, and it carries no age and no planting date.\n\nIt sits well east of the hillside trees and makes its own errand rather than joining a walk. Whether that is worth an afternoon depends on how many palms with a trunk like a stone column you have stood next to.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [
+        "MASAF 22/D612/FI/09"
+      ],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
+    },
+    {
+      "id": "flo_022",
+      "name": "The Cypress of Villa della Petraia",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "",
+      "location": {
+        "address": "",
+        "latitude": 43.820278,
+        "longitude": 11.244639,
+        "neighbourhood": ""
+      },
+      "story": "Only one trunk on Florence's register of monumental trees is thicker than this cypress, and it belongs to a Montezuma cypress.\n\nAt 580 centimetres around, this is not the slim dark exclamation mark that Mediterranean cypress usually makes in a Tuscan view. It is a heavy old tree, and it stands in the garden of Villa della Petraia, a Medici villa about five kilometres north of the centre, open to visitors and listed by UNESCO with the other Medici villas and gardens. The Medici bought the estate in the sixteenth century and rebuilt it, and the terraced garden the cypress grows in came out of that work.\n\nThe evidence is one entry deep. The national register carries the species and the girth, the comune reprints it, and neither publishes an age, so a tree of obvious antiquity has no date attached to it at all. It has the trunk of something that has been standing a very long time, and nobody has written down how long.\n\nCypress wood barely rots, which is why it was used for chests, doors and coffins, and why old cypresses tend to stay structurally sound long after other species have hollowed out. That is the quiet advantage behind most of the very old cypresses in Italy, this one included.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "access": "",
+      "verified_sources": [
+        "MASAF 10/D612/FI/09"
+      ],
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "transport": ""
     }
   ]
 }
