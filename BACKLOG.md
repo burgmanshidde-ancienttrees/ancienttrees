@@ -74,7 +74,7 @@ Buildable spec, so 15 August can start cold: on /explore, add a side panel; on `
 
 Sharpenings from the co-think, same day: (1) the continuous experience lives on /explore ONLY; static city pages stay untouched as SEO landing and reading surfaces, so the interaction costs zero Google positions. (2) City cards are editorial: viewport decides candidates, curation decides order and photo, and the one-photo-per-city asset is held to the Cadiz standard (this doubles as the city-hero-photo item on the improvement list). (3) A country-level middle zoom shows that country's cities; when the register layer grows, the division is fixed: panel always shows layer 1 (curated, photos), the map shows both layers. (4) Mobile is a bottom sheet, not a side panel. (5) Weight is the main risk: photos via Wikimedia thumbnail URLs plus lazy loading, and the tree/city panel switch needs hysteresis around the zoom threshold. Proposed at the review as THE next build phase: it is the iOS app's core screen worn on the web.
 
-Status: parked until the 2026-08-14 review per the steady fortnight; a run may not build it.
+Status: still parked. The 2026-08-14 review it waited for was cancelled by Hidde on 2026-08-12 (course continues without a gate), so unparking this is now an ordinary decision: it is phase-2-shaped feature work and needs his explicit yes, per the two-phases filter. A run may not build it.
 
 ## More than ten per city, for the routes? (Hidde, 2026-07-30, parked to the same checkpoint)
 
