@@ -73,7 +73,15 @@ def fetch_gsc(today):
     end = today.isoformat()
     days = q({"startDate": start, "endDate": end, "dimensions": ["date"], "dataState": "all"})
     queries = q({"startDate": start, "endDate": end, "dimensions": ["query"], "rowLimit": 5, "dataState": "all"})
-    pages = q({"startDate": start, "endDate": end, "dimensions": ["page"], "rowLimit": 5, "dataState": "all"})
+    # 200, not 5. The five best pages tell you where the wins are; the depth
+    # rule (CLAUDE.md, 2026-08-12: photos, pins and best_time only on pages
+    # with impressions) needs the opposite question answered, which is whether
+    # a given page has ANY demand. With a top-5 pull a run asking "does Vienna
+    # get impressions" could not tell, and the honest default under a rule like
+    # that is to do nothing. The night run holds no Search Console credentials
+    # (they live in this workflow and weekly-analysis only), so this file is
+    # the only place it can read the answer.
+    pages = q({"startDate": start, "endDate": end, "dimensions": ["page"], "rowLimit": 200, "dataState": "all"})
     # Wider pull for the content-gap line below: the top 5 by clicks are
     # almost always queries we already rank for, so finding one with no page
     # needs a bigger pool to pick the highest-impression miss out of.
@@ -153,6 +161,40 @@ def find_content_gap(gap_queries):
     return max(misses, key=lambda r: r["impressions"])
 
 
+def demand_lines(pages):
+    """Every page with real demand, as a table, so the depth rule has a list.
+
+    CLAUDE.md sends photo, pin and best_time work only to pages Search Console
+    shows impressions for. That rule needs a roster rather than a top five, and
+    a run cannot query Search Console itself. Threshold at 10 impressions over
+    the ten-day window: below that a page is one person scrolling past, and
+    treating it as demand would make the rule mean nothing. Cities only, since
+    depth work is per city; a tree page's impressions count toward its city."""
+    if not pages:
+        return []
+    by_city = {}
+    for r in pages:
+        path = r["keys"][0].replace("https://ancienttrees.app", "").strip("/")
+        if not path:
+            continue
+        city = path.split("/")[0]
+        if city in ("app", "explore", "cities", "contribute", "privacy", "account",
+                    "species", "collections", "countries", "parks"):
+            continue
+        c, i = by_city.get(city, (0, 0))
+        by_city[city] = (c + r["clicks"], i + r["impressions"])
+    rows = sorted(((c, v[0], v[1]) for c, v in by_city.items()),
+                  key=lambda x: -x[2])
+    rows = [r for r in rows if r[2] >= 10]
+    if not rows:
+        return ["", "**Depth is allowed on:** no city cleared 10 impressions this window."]
+    out = ["", "**Depth is allowed on these cities** (10+ impressions in the window;"
+               " photos, pins and best_time go here and nowhere else):", "",
+           "| City | Clicks | Impressions |", "|---|---:|---:|"]
+    out += ["| %s | %d | %d |" % (c, cl, im) for c, cl, im in rows]
+    return out
+
+
 def gsc_section(gsc):
     if gsc is None:
         return ("Search Console: GSC_* secrets not configured; section skipped.", None)
@@ -214,8 +256,9 @@ def gsc_section(gsc):
         "- Top queries (10d): " + "; ".join(
             "%s (i%d, p%.0f)" % (clean_query(r["keys"][0]), r["impressions"], r["position"]) for r in queries) if queries else "- Top queries: none",
         "- Top pages (10d): " + "; ".join(
-            "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages) if pages else "- Top pages: none",
+            "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages[:5]) if pages else "- Top pages: none",
         gap_line,
+        *demand_lines(pages),
         *leak_lines,
     ]
     return "\n".join(lines), {"clicks": latest["clicks"], "impressions": latest["impressions"],
