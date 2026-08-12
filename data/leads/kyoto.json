@@ -1,100 +1,123 @@
 {
-  "leads": [
-    {
-      "name": "Sakon-no-Sakura, Kyoto Imperial Palace (Shishinden)",
-      "species": "Yamazakura, likely (Prunus jamasakura)",
-      "location": {
-        "latitude": 35.02397,
-        "longitude": 135.76197,
-        "neighbourhood": "Shishinden courtyard, Kyoto Imperial Palace, Kamigyo-ku"
-      },
-      "reason": "Fails the genuinely-old bar, not a count or evidence problem: this is a ceremonial specimen that has been replanted in the same spot repeatedly since the Heian period whenever the previous tree died or the palace burned and was rebuilt. The Kunaicho's own tree page (kyoto-gosho.kunaicho.go.jp/en/tree/4E1) and Japanese-language sources agree the current cherry was planted in 1998, making it roughly 28 years old as of 2026, not an ancient tree. Historically significant as a site and a tradition (first written record of a storm felling its predecessor dates to 874 CE), genuinely photogenic, but the living specimen itself does not clear the bar. Could work as an illustration of the site's history inside another tree's story, never as its own collectible entry.",
-      "sources": [
-        "https://kyoto-gosho.kunaicho.go.jp/en/tree/4E1",
-        "https://ja.wikipedia.org/wiki/左近桜"
-      ]
-    },
-    {
-      "name": "Ukon-no-Tachibana, Kyoto Imperial Palace (Shishinden)",
-      "species": "Tachibana citrus (Citrus tachibana)",
-      "location": {
-        "latitude": 35.02397,
-        "longitude": 135.76231,
-        "neighbourhood": "Shishinden courtyard, Kyoto Imperial Palace, Kamigyo-ku"
-      },
-      "reason": "Same problem as Sakon-no-Sakura: a ceremonial specimen replanted repeatedly through history whenever it died or the palace was rebuilt elsewhere, most recently referenced as replanted circa 959 CE in tradition but with no continuous individual tree since. Kunaicho's own page (tree/4E2) and Japanese sources describe it as symbolically eternal (the tachibana is evergreen, chosen precisely to represent permanence) rather than physically ancient. Fails the genuinely-old bar for the same reason as its paired cherry.",
-      "sources": [
-        "https://kyoto-gosho.kunaicho.go.jp/en/tree/4E2",
-        "https://ja.wikipedia.org/wiki/右近橘"
-      ]
-    },
-    {
-      "name": "Kurumagaeshi-zakura (the carriage-turning cherry), Kyoto Gyoen",
-      "species": "Cherry, mixed single and double flowering on one tree (Prunus sp.)",
-      "location": {
-        "latitude": 35.018,
-        "longitude": 135.7593,
-        "neighbourhood": "Near Seiho-mon gate, Kyoto Gyoen, Kamigyo-ku"
-      },
-      "reason": "Good story (Emperor Go-Mizunoo, r. 1611-1629, reportedly turned his carriage around to look at it again) but the current tree is a post-WWII graft propagated by nurseryman Sano Toujiro from shoots of the original, so it is at most about 80 years old, not the tree the legend describes. Fails the genuinely-old bar. Worth keeping as a lead in case a future pass finds an older confirmed specimen or the story is wanted as colour in a neighbouring tree's write-up.",
-      "sources": [
-        "https://rakutabi.kyo2.jp/e464533.html"
-      ]
-    },
-    {
-      "name": "Chinkapin oak (Sudajii) of Omiya Gate, Kyoto Gyoen",
-      "species": "Sudajii / Japanese chinkapin oak (Castanopsis sieboldii)",
-      "location": {
-        "latitude": 35.017,
-        "longitude": 135.7605,
-        "neighbourhood": "Near Omiya-gomon, south side of Kyoto Gyoen, Kamigyo-ku"
-      },
-      "reason": "Genuine Kamigyo Ward 'Pride Tree' (designated Oct 2008), 14.6m height, 2.78m girth, but single-sourced (the ward register only) with no age given and a moderate girth compared to this cluster's stronger candidates. Sits inside the same Gyoen cluster as kyo_006/011/012, so worth a second source hunt before it ships.",
-      "sources": ["https://www.city.kyoto.lg.jp/kamigyo/page/0000012424.html"]
-    },
-    {
-      "name": "Camphor of Shimodachiuri Gate, Kyoto Gyoen",
-      "species": "Camphor (Cinnamomum camphora)",
-      "location": {
-        "latitude": 35.018,
-        "longitude": 135.7593,
-        "neighbourhood": "Near Shimodachiuri-gomon, west side of Kyoto Gyoen, Kamigyo-ku"
-      },
-      "reason": "Kamigyo Ward 'Pride Tree', but modest for a camphor (12.3m height, 2.76m girth, well under Munakata Shrine's camphor a short walk away). Single-sourced, no age given. Same cluster, low priority relative to kyo_011/012/013/014.",
-      "sources": ["https://www.city.kyoto.lg.jp/kamigyo/page/0000012432.html"]
-    },
-    {
-      "name": "Ginkgo of Inui Gate, Kyoto Gyoen",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "location": {
-        "latitude": 35.028,
-        "longitude": 135.7595,
-        "neighbourhood": "Near Inui-gomon, northwest corner of Kyoto Gyoen, Kamigyo-ku"
-      },
-      "reason": "Kamigyo Ward 'Pride Tree', 19.5m height, 3.15m girth. Single-sourced, no age given, and geographically the far corner of the park (northwest), roughly 1.5-1.8km from the Demizu/Munakata anchor, which stretches the cluster rather than tightening it. Keep as a lead for a possible second Gyoen loop rather than folding into this walk.",
-      "sources": ["https://www.city.kyoto.lg.jp/kamigyo/page/0000012404.html"]
-    },
-    {
-      "name": "Mukuroji (soapberry) of Manosaka entrance, Kyoto Gyoen",
-      "species": "Mukuroji / soapberry (Sapindus mukorossi)",
-      "location": {
-        "latitude": 35.0225,
-        "longitude": 135.766,
-        "neighbourhood": "Near Manosaka-guchi, east side of Kyoto Gyoen, Kamigyo-ku"
-      },
-      "reason": "Kamigyo Ward 'Pride Tree', but the smallest of the group checked this pass (12.5m height, 2.14m girth). Single-sourced, no age. Lowest priority of the Gyoen leads.",
-      "sources": ["https://www.city.kyoto.lg.jp/kamigyo/page/0000012438.html"]
-    },
-    {
-      "name": "遂龍松 (Yuryu-matsu / Reclining Dragon Pine), Zenko-ji, Nishikyo-ku",
-      "species": "Japanese White Pine (Pinus parviflora)",
-      "location": {
-        "latitude": 34.93843,
-        "longitude": 135.64493,
-        "neighbourhood": "Zenko-ji, Oharano, Nishikyo-ku"
-      },
-      "reason": "Register candidate (japan-bunkacho.json) within 80m of already-published kyo_001 'The Reclining Dragon Pine', which is also a National Natural Monument pine at Zenko-ji with the same Japanese name. Almost certainly the same tree already on the site. Not re-verified or re-published; recorded here so a future pass does not re-research it from a register hit alone. Check kyo_001's exact coordinates and sources before assuming this is a genuinely separate specimen."
-    }
-  ],
-  "blocked": []
+ "leads": [
+  {
+   "name": "Sakon-no-Sakura, Kyoto Imperial Palace (Shishinden)",
+   "species": "Yamazakura, likely (Prunus jamasakura)",
+   "location": {
+    "latitude": 35.02397,
+    "longitude": 135.76197,
+    "neighbourhood": "Shishinden courtyard, Kyoto Imperial Palace, Kamigyo-ku"
+   },
+   "reason": "Fails the genuinely-old bar, not a count or evidence problem: this is a ceremonial specimen that has been replanted in the same spot repeatedly since the Heian period whenever the previous tree died or the palace burned and was rebuilt. The Kunaicho's own tree page (kyoto-gosho.kunaicho.go.jp/en/tree/4E1) and Japanese-language sources agree the current cherry was planted in 1998, making it roughly 28 years old as of 2026, not an ancient tree. Historically significant as a site and a tradition (first written record of a storm felling its predecessor dates to 874 CE), genuinely photogenic, but the living specimen itself does not clear the bar. Could work as an illustration of the site's history inside another tree's story, never as its own collectible entry.",
+   "sources": [
+    "https://kyoto-gosho.kunaicho.go.jp/en/tree/4E1",
+    "https://ja.wikipedia.org/wiki/左近桜"
+   ]
+  },
+  {
+   "name": "Ukon-no-Tachibana, Kyoto Imperial Palace (Shishinden)",
+   "species": "Tachibana citrus (Citrus tachibana)",
+   "location": {
+    "latitude": 35.02397,
+    "longitude": 135.76231,
+    "neighbourhood": "Shishinden courtyard, Kyoto Imperial Palace, Kamigyo-ku"
+   },
+   "reason": "Same problem as Sakon-no-Sakura: a ceremonial specimen replanted repeatedly through history whenever it died or the palace was rebuilt elsewhere, most recently referenced as replanted circa 959 CE in tradition but with no continuous individual tree since. Kunaicho's own page (tree/4E2) and Japanese sources describe it as symbolically eternal (the tachibana is evergreen, chosen precisely to represent permanence) rather than physically ancient. Fails the genuinely-old bar for the same reason as its paired cherry.",
+   "sources": [
+    "https://kyoto-gosho.kunaicho.go.jp/en/tree/4E2",
+    "https://ja.wikipedia.org/wiki/右近橘"
+   ]
+  },
+  {
+   "name": "Kurumagaeshi-zakura (the carriage-turning cherry), Kyoto Gyoen",
+   "species": "Cherry, mixed single and double flowering on one tree (Prunus sp.)",
+   "location": {
+    "latitude": 35.018,
+    "longitude": 135.7593,
+    "neighbourhood": "Near Seiho-mon gate, Kyoto Gyoen, Kamigyo-ku"
+   },
+   "reason": "Good story (Emperor Go-Mizunoo, r. 1611-1629, reportedly turned his carriage around to look at it again) but the current tree is a post-WWII graft propagated by nurseryman Sano Toujiro from shoots of the original, so it is at most about 80 years old, not the tree the legend describes. Fails the genuinely-old bar. Worth keeping as a lead in case a future pass finds an older confirmed specimen or the story is wanted as colour in a neighbouring tree's write-up.",
+   "sources": [
+    "https://rakutabi.kyo2.jp/e464533.html"
+   ]
+  },
+  {
+   "name": "Chinkapin oak (Sudajii) of Omiya Gate, Kyoto Gyoen",
+   "species": "Sudajii / Japanese chinkapin oak (Castanopsis sieboldii)",
+   "location": {
+    "latitude": 35.017,
+    "longitude": 135.7605,
+    "neighbourhood": "Near Omiya-gomon, south side of Kyoto Gyoen, Kamigyo-ku"
+   },
+   "reason": "Genuine Kamigyo Ward 'Pride Tree' (designated Oct 2008), 14.6m height, 2.78m girth, but single-sourced (the ward register only) with no age given and a moderate girth compared to this cluster's stronger candidates. Sits inside the same Gyoen cluster as kyo_006/011/012, so worth a second source hunt before it ships.",
+   "sources": [
+    "https://www.city.kyoto.lg.jp/kamigyo/page/0000012424.html"
+   ]
+  },
+  {
+   "name": "Camphor of Shimodachiuri Gate, Kyoto Gyoen",
+   "species": "Camphor (Cinnamomum camphora)",
+   "location": {
+    "latitude": 35.018,
+    "longitude": 135.7593,
+    "neighbourhood": "Near Shimodachiuri-gomon, west side of Kyoto Gyoen, Kamigyo-ku"
+   },
+   "reason": "Kamigyo Ward 'Pride Tree', but modest for a camphor (12.3m height, 2.76m girth, well under Munakata Shrine's camphor a short walk away). Single-sourced, no age given. Same cluster, low priority relative to kyo_011/012/013/014.",
+   "sources": [
+    "https://www.city.kyoto.lg.jp/kamigyo/page/0000012432.html"
+   ]
+  },
+  {
+   "name": "Ginkgo of Inui Gate, Kyoto Gyoen",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "location": {
+    "latitude": 35.028,
+    "longitude": 135.7595,
+    "neighbourhood": "Near Inui-gomon, northwest corner of Kyoto Gyoen, Kamigyo-ku"
+   },
+   "reason": "Kamigyo Ward 'Pride Tree', 19.5m height, 3.15m girth. Single-sourced, no age given, and geographically the far corner of the park (northwest), roughly 1.5-1.8km from the Demizu/Munakata anchor, which stretches the cluster rather than tightening it. Keep as a lead for a possible second Gyoen loop rather than folding into this walk.",
+   "sources": [
+    "https://www.city.kyoto.lg.jp/kamigyo/page/0000012404.html"
+   ]
+  },
+  {
+   "name": "Mukuroji (soapberry) of Manosaka entrance, Kyoto Gyoen",
+   "species": "Mukuroji / soapberry (Sapindus mukorossi)",
+   "location": {
+    "latitude": 35.0225,
+    "longitude": 135.766,
+    "neighbourhood": "Near Manosaka-guchi, east side of Kyoto Gyoen, Kamigyo-ku"
+   },
+   "reason": "Kamigyo Ward 'Pride Tree', but the smallest of the group checked this pass (12.5m height, 2.14m girth). Single-sourced, no age. Lowest priority of the Gyoen leads.",
+   "sources": [
+    "https://www.city.kyoto.lg.jp/kamigyo/page/0000012438.html"
+   ]
+  },
+  {
+   "name": "遂龍松 (Yuryu-matsu / Reclining Dragon Pine), Zenko-ji, Nishikyo-ku",
+   "species": "Japanese White Pine (Pinus parviflora)",
+   "location": {
+    "latitude": 34.93843,
+    "longitude": 135.64493,
+    "neighbourhood": "Zenko-ji, Oharano, Nishikyo-ku"
+   },
+   "reason": "Register candidate (japan-bunkacho.json) within 80m of already-published kyo_001 'The Reclining Dragon Pine', which is also a National Natural Monument pine at Zenko-ji with the same Japanese name. Almost certainly the same tree already on the site. Not re-verified or re-published; recorded here so a future pass does not re-research it from a register hit alone. Check kyo_001's exact coordinates and sources before assuming this is a genuinely separate specimen."
+  },
+  {
+   "name": "Kurumagaeshi-zakura (the carriage-turning cherry), Kyoto Gyoen",
+   "reason": "Story written and ready, HELD 2026-08-12 on coordinates: it carries exactly the same lat/lng as the Shimodachiuri Gate camphor, and they stand at different gates of Kyoto Gyoen. Publishing two trees on one point is the failure a Brabants Dagblad journalist hit at Bastion Oranje the same week. Needs one surveyed coordinate each, then both ship. Note the tree is a post-war graft from the original, so the carriage-turn legend belongs to its parent.",
+   "story_ready": true
+  },
+  {
+   "name": "Camphor of Shimodachiuri Gate, Kyoto Gyoen",
+   "reason": "Story written and ready, HELD 2026-08-12 for the same reason: identical coordinates to the Kurumagaeshi cherry. Species corrected to the corpus's canonical 'Camphor Tree (Cinnamomum camphora)' when it ships.",
+   "story_ready": true
+  }
+ ],
+ "blocked": [
+  {
+   "name": "遂龍松 (Yuryu-matsu / Reclining Dragon Pine), Zenko-ji, Nishikyo-ku",
+   "reason": "DUPLICATE of published kyo_001, The Reclining Dragon Pine: 17 m away, same species, same address at Yoshimine-dera in Oharano. The register glyphs 遂龍松 are an OCR slip for 遊龍松, 'playing dragon', which is what kyo_001's own story already calls it, and the file's 'Zenko-ji' is an alternate reading of 善峯寺. Never publish; it would put one tree on the site twice."
+  }
+ ]
 }
