@@ -1,0 +1,25 @@
+[
+  {
+    "id": "rom_025",
+    "name": "The Plane of Viale Jonio",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Viale Jonio, Montesacro, 00141 Roma",
+      "latitude": 41.94526,
+      "longitude": 12.53335,
+      "neighbourhood": "Montesacro"
+    },
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF/Lazio register 17/H501/RM/12)",
+      "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295"
+    ],
+    "access": "Free, on a public street",
+    "transport": "Montesacro, north Rome; Metro B1 Conca d'Oro, then a short walk, or bus along Via Nomentana",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "A street-corner London plane in Montesacro, 553cm girth and 32m tall, the second-thickest plane on Rome's monumental tree register after the already-published rom_013. Two independent sources: the national MASAF/Lazio register and a Comune di Roma press notice. Stands about 6km north of the historic centre, within the roughly 30-minute public-transport day-trip boundary via Metro B1."
+  }
+]
