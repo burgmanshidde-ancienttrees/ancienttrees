@@ -2,10 +2,10 @@
   "city": "Kyoto",
   "country": "Japan",
   "status": "needs_curation",
-  "intro": "Kyoto's most remarkable trees rarely stand alone in a park. They grow inside temple gardens and shrine precincts, shaped for centuries by monks, gardeners and shoguns who treated a living pine as seriously as any building. One was a shogun's bonsai before it was a tree. A camphor was planted in 1160 by order of a retired emperor and still grows where his workers put it. These are cultivated monuments, not wild survivors. The exception is Kyoto Gyoen, the walled park around the Imperial Palace, where five of them stand within 1.1 kilometres and make one afternoon on foot.",
-  "meta_description": "Kyoto's oldest trees stand in temple gardens and shrine precincts. A shogun's 600-year bonsai pine, an emperor's 1160 camphor, and fourteen more.",
+  "intro": "Kyoto's remarkable trees rarely stand alone. They grow inside temple gardens and shrine precincts, shaped for centuries by monks, gardeners and shoguns who treated a living pine as seriously as any building. One was a shogun's bonsai before it was a tree. A camphor was planted in 1160 by imperial order and still grows where his workers put it. These are cultivated monuments, not wild survivors. The exception is Kyoto Gyoen, the walled park around the Imperial Palace, where nine grow inside or beside its walls, close enough to walk in two clusters of about a kilometre each.",
+  "meta_description": "Kyoto's oldest trees stand in temple gardens and shrine precincts. A shogun's 600-year bonsai pine, an emperor's 1160 camphor, and sixteen more.",
   "question_answer": "Kyoto's oldest tree with a documented planting date is the great camphor of Imakumano Shrine, planted in 1160 on the order of the retired emperor Go-Shirakawa, who had it brought from the Kumano shrines in Wakayama. It is roughly 866 years old and still grows in the shrine's grounds in Higashiyama Ward, a two minute walk from Sennyuji-michi bus stop.",
-  "question_meta": "Kyoto's oldest documented tree is an 866-year-old camphor planted in 1160 by imperial order. Its story, exact location, and fifteen more remarkable trees.",
+  "question_meta": "Kyoto's oldest documented tree is an 866-year-old camphor planted in 1160 by imperial order. Its story, exact location, and 17 more remarkable trees.",
   "question_context": "The camphor at Imakumano Shrine has a planting date most ancient trees never get: 1160, the year the retired emperor Go-Shirakawa founded the shrine as a branch of the Kumano sanctuaries in Wakayama, and reportedly had this tree brought north with the transplant. Camphor trees are native to warmer parts of Japan and Kumano's coast fits that range better than inland Kyoto, which makes the tree itself a small piece of evidence for the transplant story, not just a legend attached after the fact. It has grown since into a trunk 6.58 metres around and a canopy spreading 23.5 metres east to west, a size camphors, among Japan's longest lived broadleaf trees, take centuries to reach. A deeper claim exists in the hills northwest of the city: a cedar in the Katanami river headwaters said to be 1,200 years old, tied to the same forests that supplied timber for the original Heian-kyo palace. That tree's age is harder to confirm and needs prior arrangement with the city to visit, which is why the documented camphor answers this question instead. Getting to Imakumano Shrine: Keihan Bus to Sennyuji-michi from Kyoto Station, then a two minute walk.",
   "faq": [
     {
@@ -14,11 +14,11 @@
     },
     {
       "q": "Where is the best place to see old trees in Kyoto?",
-      "a": "Kyoto Gyoen, the park around the old Imperial Palace. Three trees on this list grow inside its walls and two more stand immediately outside them, all within about 1.1 kilometres, which makes it the one place in the city where several can be seen on a single walk. Everywhere else they are spread thin across working temples and shrines: Kinkaku-ji, Yoshimine-dera, Daigo-ji and Nishi Honganji each hold one."
+      "a": "Kyoto Gyoen, the park around the old Imperial Palace. Seven trees on this list grow inside its walls and two more stand immediately beside them, close enough to cover in two walks of about a kilometre each, which makes it the one place in the city where several can be seen in an afternoon. Everywhere else they are spread thin across working temples and shrines: Kinkaku-ji, Yoshimine-dera, Daigo-ji and Nishi Honganji each hold one."
     },
     {
       "q": "Are Kyoto's remarkable trees free to see?",
-      "a": "Most are. Nine of the sixteen stand in free precincts: Kyoto Gyoen, Nashinoki Shrine, Goo Shrine, Nishi Honganji, Imakumano Shrine, Kamigamo Shrine and Maruyama Park. Four stand inside temples that charge general admission, not a tree-specific fee. The cedar in the Katanami headwaters needs prior arrangement with the city and a guide."
+      "a": "Most are. Thirteen of the eighteen stand in free precincts: Kyoto Gyoen, Nashinoki Shrine, Goo Shrine, Nishi Honganji, Imakumano Shrine, Kamigamo Shrine and Maruyama Park. Four stand inside temples that charge general admission, not a tree-specific fee. The cedar in the Katanami headwaters needs prior arrangement with the city and a guide."
     },
     {
       "q": "Did any of Kyoto's remarkable trees start life as a bonsai?",
@@ -507,6 +507,8 @@
       "verified_sources": [
         "https://www.city.kyoto.lg.jp/kamigyo/page/0000012424.html"
       ],
+      "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
+      "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 3 minute walk",
       "photo": {
         "url": null,
         "license": null,
@@ -537,6 +539,68 @@
       "verified_sources": [
         "https://www.city.kyoto.lg.jp/kamigyo/page/0000012404.html"
       ],
+      "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
+      "transport": "Imadegawa Station (Kyoto Municipal Subway Karasuma Line), roughly 3 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kyo_015",
+      "name": "The Carriage-Turning Cherry of Kyoto Gyoen",
+      "species": "Cherry, mixed single and double flowering on one tree (Prunus sp.)",
+      "age_estimate": "roughly 80 years",
+      "age_min": 70,
+      "age_max": 90,
+      "location": {
+        "latitude": 35.0258332,
+        "longitude": 135.7610189,
+        "address": "",
+        "neighbourhood": "Southwest of Seisho-mon gate, Kyoto Gyoen, Kamigyo-ku"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [4],
+        "kind": "flowers",
+        "label": "early April, when single and double blossom open together on one crown"
+      },
+      "story": "The tree that stopped an emperor's carriage is not the tree standing here now. Kurumagaeshi-zakura means the carriage turned back, and the name comes from a tradition that Emperor Go-Mizunoo, who reigned from 1611 to 1629, had already passed this cherry when he ordered his carriage brought round for a second look. That is a story told about the tree rather than anything recorded in his reign, and it is worth saying which of the two it is.\n\nThe cherry standing southwest of Seisho-mon gate today is not that tree either. The original went, and after the war the Kyoto nurseryman Sano Toujiro raised its replacement from shoots cut off it, so what grows here is roughly eighty years old and genetically the same cherry, in the same place, on its second run.\n\nGo in April and the reason to stop has nothing to do with emperors. Single and double flowers open together on the same crown, the flat five petals of a wild cherry beside the crowded rosettes of a cultivated one, all on one tree. Kyoto Gyoen has been public ground since the court left for Tokyo in 1877, and this corner of it puts the cherry within a kilometre of the hackberry at Demizu-guchi and the camphor at Munakata Shrine.",
+      "verified_sources": [
+        "https://rakutabi.kyo2.jp/e464533.html"
+      ],
+      "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
+      "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 15 minute walk",
+      "notes": "Coordinate is Seisho-mon gate itself (verified via OSM/Nominatim, 35.0258332/135.7610189), not a GPS fix on the trunk: a web search independently confirms the tree stands 'southwest of Seisho-mon' (車返桜は京都御苑の清所門南西に位置), so this is a gate-area estimate in the same honest style as kyo_011's Demizu-guchi pin, not the tree's exact trunk. Previously HELD 2026-08-12 on a placeholder coordinate identical to kyo_017's; resolved this pass by looking up each gate's real position rather than guessing.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kyo_017",
+      "name": "Camphor of Shimodachiuri Gate, Kyoto Gyoen",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "location": {
+        "latitude": 35.0195774,
+        "longitude": 135.7595584,
+        "address": "",
+        "neighbourhood": "Near Shimodachiuri-gomon, west side of Kyoto Gyoen, Kamigyo-ku"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Early cinema ran on this species. Camphor crystals, steam-distilled from the wood and leaves of Cinnamomum camphora, were what made celluloid film stock and photographic plates flexible enough to use, and for decades Japan and its colonies supplied most of the world's camphor, until the chemical industry worked out how to make it from turpentine instead. The trees that fed that trade came down by the forest. This one did not.\n\nIt grows just inside Shimodachiuri-gomon, a gate in the west wall of Kyoto Gyoen, and Kamigyo Ward lists it among its pride trees at 12.3 metres tall with a trunk 2.76 metres around. Its age appears nowhere. That ward register is the only document naming this tree, and it records dimensions rather than years.\n\nCamphors are evergreen, so this is the same tree in February as in July: dense, dark, heavily leaved, and smelling of a medicine cabinet if you crush a leaf between your fingers. It is not the biggest camphor in this park. The one at Munakata Shrine, a short walk away, is far larger and several centuries older, and this is the tree most people go straight past on their way to it. Which is a decent argument for looking up on the way.",
+      "verified_sources": [
+        "https://www.city.kyoto.lg.jp/kamigyo/page/0000012432.html"
+      ],
+      "access": "Free. Kyoto Gyoen National Garden is open to the public year-round, dawn to dusk.",
+      "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 5 minute walk",
+      "notes": "Coordinate is Shimodachiuri-gomon gate itself, verified via OSM/Nominatim (35.0195774/135.7595584, tagged as the gate building), matching the story's own 'grows just inside Shimodachiuri-gomon'. Gate-area estimate, not a GPS fix on the trunk, same honest style as kyo_011's Demizu-guchi pin. Previously HELD 2026-08-12 on a placeholder coordinate identical to kyo_015's; resolved this pass. Note this gate sits only ~25m from kyo_011's own coordinate despite both trees' stories describing them as being a short walk apart in the same southwest corner; kyo_011's own pin (already published, location_precision approximate) may itself be imprecise, worth a future pass rather than touched here without stronger evidence.",
       "photo": {
         "url": null,
         "license": null,
