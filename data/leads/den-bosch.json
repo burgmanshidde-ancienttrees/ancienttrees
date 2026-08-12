@@ -1,0 +1,77 @@
+{
+  "leads": [
+    {
+      "ref": "G-0415",
+      "species": "Quercus robur (Pedunculate Oak)",
+      "girth_cm": 421,
+      "age": "120",
+      "lat": 51.676147,
+      "lng": 5.324756,
+      "reason": "Part of a tight 5-tree cluster (G-0415, G-0416, G-0421, G-0414, G-0418) within 83m of each other, roughly 1.3km south of the published Den Bosch trees, well clear of a 40-minute window. Would be a genuine second walk per cluster doctrine, but three Quercus robur oaks (this, G-0416, G-0421) sit within meters of one another, exactly the confusability risk this pass exists to fix for dbo_002, and doing it justice needs a dedicated pass with real time to distinguish them (girth, position, aerial imagery), not a rushed add-on. Not verified this pass; count/time failure, not an evidence failure."
+    },
+    {
+      "ref": "G-0421",
+      "species": "Quercus robur (Pedunculate Oak)",
+      "girth_cm": 392,
+      "age": "120",
+      "lat": 51.675714,
+      "lng": 5.324779,
+      "reason": "Same south oak cluster as G-0415. See that entry's reason. Within meters of G-0415 and G-0416, both also Quercus robur; needs careful individual distinguishing in a dedicated future pass."
+    },
+    {
+      "ref": "G-0416",
+      "species": "Quercus robur (Pedunculate Oak)",
+      "girth_cm": 352,
+      "age": "120",
+      "lat": 51.67622,
+      "lng": 5.324585,
+      "reason": "Same south oak cluster. The third Quercus robur of the three within a few metres of each other; needs a dedicated pass to distinguish safely rather than risk another dbo_002."
+    },
+    {
+      "ref": "G-0414",
+      "species": "Platanus x hispanica (London Plane)",
+      "girth_cm": 361,
+      "age": "100",
+      "lat": 51.676096,
+      "lng": 5.324609,
+      "reason": "Same south oak cluster (the plane among the oaks). Not verified this pass; would complete the south walk alongside G-0415/G-0416/G-0421/G-0418 in a dedicated future pass."
+    },
+    {
+      "ref": "G-0418",
+      "species": "Populus x canadensis (Canadian Poplar)",
+      "girth_cm": 418,
+      "age": "85",
+      "lat": 51.676152,
+      "lng": 5.325767,
+      "reason": "Same south oak cluster (the poplar among the oaks). Not verified this pass; would complete the south walk in a dedicated future pass."
+    },
+    {
+      "ref": "G-0501",
+      "species": "Fagus sylvatica (Common Beech)",
+      "girth_cm": 531,
+      "age": "150",
+      "lat": 51.68732,
+      "lng": 5.316851,
+      "reason": "Reverse-geocodes to Hekellaan/Bazeldonk, a residential district distinct from Casinotuin (checked live via Nominatim: 'Bazeldonk' quarter, not 'Binnenstad'), roughly 500m-600m from the Casinotuin/Sint Janskerkhof cluster chosen this pass, near what appears to be a sports pitch rather than the historic rampart parkland the rest of the city's trees stand in. Not thematically or geographically part of this pass's walk; a large girth (531cm, the second-biggest in the 209-candidate pool) makes it worth a dedicated look in a future pass focused on the Bazeldonk area specifically."
+    },
+    {
+      "ref": "G-0482",
+      "species": "Tilia tomentosa (Silver Lime)",
+      "girth_cm": 515,
+      "age": "150",
+      "lat": 51.686922,
+      "lng": 5.316201,
+      "reason": "Same Bazeldonk-area group as G-0501 (reverse-geocodes to Limietlaan, tagged as a sports pitch by OpenStreetMap). See that entry's reason."
+    },
+    {
+      "ref": "G-0502",
+      "species": "Platanus x hispanica (London Plane)",
+      "girth_cm": 512,
+      "age": "150",
+      "lat": 51.687709,
+      "lng": 5.317192,
+      "reason": "Same Bazeldonk-area group (Van Veldekekade). See G-0501's reason."
+    }
+  ],
+  "blocked": []
+}
