@@ -20,27 +20,35 @@ which city, which country, published or not. Order lives in one place.
 
 THE TARGET COLUMN, and the reasoning, because a number without one is a wish.
 
-Hidde's sketch: easy and good supply means a big city may run to about 50 like
-Barcelona; hard to find means leave it; 20 to 30 is a fine first version; past
-50 is too much except perhaps for a Tokyo. The measurement that turns that into
-a rule is supply, and it is far more lopsided than anyone guessed: of 95 live
-cities, 71 have fewer than 10 register trees within 5 km and only 9 have 50 or
-more. For three quarters of the map there is no decision to make, because there
-is nothing cheap to add. The target therefore falls out of what a city can
-actually reach:
+Hidde, 2026-08-12: "ik denk dat we veel beter een hoop steden met 10-25 bomen
+en dan later verdiepen." So the target is a first-version ceiling of 25, not a
+per-city ambition scaled by how much supply happens to sit nearby.
+
+This is the SECOND version of this column, and the first one is worth recording
+because it was wrong in a way that looked reasonable. It banded the target by
+supply (register trees within 5 km plus ready leads) and gave 50 to cities with
+200+ supply AND measured demand, 30 otherwise. That produced Vienna 50 and
+Barcelona 30: two cities with comparable supply, opposite targets, decided by
+whether Search Console had spoken rather than by anything about their trees.
+Barcelona is the one he had called the mega city and it already publishes 46.
+He spotted it in one line: "maar waarom in godsnaam 50 doel bij wenen".
+
+The deeper fault: register count measures how EASY trees are to find, never how
+GOOD they are. Amsterdam's 4,993 is a municipal inventory, not 4,993 trees that
+clear our bar. Scaling ambition by it confused cheap with worth doing.
 
     supply = register trees within 5 km + leads already ready to write
 
     supply < 10    no target. The city gets whatever verifies, which is
                    usually 4 to 10, and Cadiz at 5 proves that is not a
                    failure. Adding here costs full research per tree.
-    supply 10-49   20. One good afternoon plus a second walk.
-    supply 50-199  30. Two or three walks, comfortably.
-    supply 200+    50 where demand is measured, 30 where it is not. Cheap
-                   supply is not a reason to build a page nobody opens.
+    supply >= 10   25. The first-version ceiling, the same for every city,
+                   because breadth is the phase and a good afternoon does not
+                   scale with a city's population.
 
-Past 50 is a session decision with Hidde, never a run's, and the only plausible
-candidates are true metropolises.
+Past 25 is deepening, not a target: a later decision, taken on a city that has
+shown demand, and taken with Hidde. A city already past it (Barcelona at 46) is
+finished, not over budget.
 
 What the target is NOT: a quota to fill. The bar per tree does not move, padding
 stays forbidden, and a city that runs out of trees that clear the bar is
@@ -63,8 +71,15 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE = os.path.join(ROOT, "CITY_QUEUE.md")
 LIST = os.path.join(ROOT, "data", "city-list.json")
-ROW = re.compile(r"^\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|\s*([\d.]+)\s*\|\s*([\d,\-]+)\s*\|"
-                 r"\s*([\d\-]+)\s*\|\s*([\d\-]+)\s*\|\s*([\d\-]+)\s*\|\s*([^|]+?)\s*\|")
+# A data row is any table line whose first cell is a rank. Parsed by SPLITTING
+# rather than by a full-shape regex, because the first version pinned the old
+# eight-column layout: after this script added `walks` and `target` the pattern
+# still matched the first eight cells, so `basis` captured the register count
+# and every row's "measured" was overwritten with a number on the next run. A
+# generator that corrupts its own output on the second run is worse than no
+# generator, so the parser now reads the two columns it must preserve (score,
+# demand) from the front and `basis` from the END, where it always sits.
+ROW = re.compile(r"^\|\s*\d+\s*\|")
 
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import walk_planning as B          # noqa: E402
@@ -98,14 +113,12 @@ def near(pts, lat, lng, km=5.0):
     return sum(1 for a, b in pts if abs(a - lat) < dlat and abs(b - lng) < dlng)
 
 
-def target_for(supply, measured):
-    if supply < 10:
-        return None
-    if supply < 50:
-        return 20
-    if supply < 200:
-        return 30
-    return 50 if measured else 30
+def target_for(supply, measured=None):
+    """One ceiling for everyone who has anything to work with. `measured` is
+    accepted and ignored: it decided the old 50-versus-30 split, and keeping the
+    parameter means callers do not have to change while the reason it existed is
+    recorded in the docstring above."""
+    return 25 if supply >= 10 else None
 
 
 def measure(pts):
@@ -148,21 +161,22 @@ def measure(pts):
 def rebuild_table(live):
     with open(QUEUE, encoding="utf-8") as fh:
         text = fh.read()
-    lines, out, seen = text.split("\n"), [], []
-    for line in lines:
-        m = ROW.match(line)
-        if not m:
+    out, seen = [], []
+    for line in text.split("\n"):
+        if not ROW.match(line):
             out.append(line)
             continue
-        rank, city, score, demand, _, _, _, basis = m.groups()
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        rank, city, score, demand = cells[0], cells[1], cells[2], cells[3]
+        basis = cells[-1]
         info = live.get(city.lower())
         if info:
             supply = info["register"] + info["ready"]
-            tgt = target_for(supply, basis.startswith("measured"))
-            trees, photos, reg = info["trees"], info["photos"], info["register"]
-            walks = info["walks"]
+            tgt = target_for(supply)
+            trees, photos, reg, walks = (info["trees"], info["photos"],
+                                          info["register"], info["walks"])
         else:
-            supply = tgt = None
+            tgt = None
             trees = photos = reg = walks = 0
         seen.append(city.lower())
         out.append("| %s | %s | %s | %s | %s | %s | %s | %s | %s | %s |" % (
@@ -170,9 +184,8 @@ def rebuild_table(live):
             trees or "-", photos or "-", walks or "-", reg or "-",
             tgt or "-", basis))
     text = "\n".join(out)
-    header_old = "| # | city | score | demand | trees | photos | register | basis |"
-    header_new = "| # | city | score | demand | trees | photos | walks | register | target | basis |"
-    text = text.replace(header_old, header_new)
+    text = text.replace("| # | city | score | demand | trees | photos | register | basis |",
+                        "| # | city | score | demand | trees | photos | walks | register | target | basis |")
     text = text.replace("|---|---|---:|---:|---:|---:|---:|---|",
                         "|---|---|---:|---:|---:|---:|---:|---:|---:|---|")
     with open(QUEUE, "w", encoding="utf-8") as fh:
