@@ -1,0 +1,281 @@
+[
+  {
+    "id": "lis_022",
+    "name": "The Holm Oaks of Parque Bensaúde",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": "roughly 110 years",
+    "age_min": 100,
+    "age_max": 120,
+    "location": {
+      "address": "Parque Bensaúde, Estrada da Luz, 1600 Lisboa",
+      "latitude": 38.75325556,
+      "longitude": -9.177402778,
+      "neighbourhood": "S. Domingos de Benfica"
+    },
+    "verified_sources": [
+      "ICNF, Arvoredo de Interesse Publico (CC BY 4.0), processo AIP11063960I",
+      "https://fregues.pt/2022/12/08/parque-bensaude-sobreiro-mais-antigo-de-lisboa/ (2022-12-08, dated article on the park's classified trees)",
+      "https://pt.wikipedia.org/wiki/Parque_Bensa%C3%BAde"
+    ],
+    "access": "Free, public municipal park",
+    "transport": "About 15 minutes' walk from Colegio Militar/Luz station (Metro Blue Line)",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Girth 3.12m, height 21m. One of two Italian/holm oaks (Quercus ilex) individually classified in Parque Bensauede, a former 17th century quinta (Quinta de Santo Antonio das Frechas) turned public park; the park separately holds the largest known cork oak in Lisbon, a different tree not in this register. A 2022-12-08 local news article (fregues.pt) independently confirms the park currently carries exactly four ICNF-classified trees of public interest: two Italian holm oaks, a red-flowering eucalyptus and a field maple, matching this register set exactly. Register age is age at 2017 measurement; 100 years then is roughly 109 now, stated loosely. Companion holm oak (lis_023) stands about 52m away in the same park."
+  },
+  {
+    "id": "lis_023",
+    "name": "The Second Holm Oak of Parque Bensaúde",
+    "species": "Holm Oak (Quercus ilex)",
+    "age_estimate": "roughly 110 years",
+    "age_min": 100,
+    "age_max": 120,
+    "location": {
+      "address": "Parque Bensaúde, Estrada da Luz, 1600 Lisboa",
+      "latitude": 38.75279444,
+      "longitude": -9.1773,
+      "neighbourhood": "S. Domingos de Benfica"
+    },
+    "verified_sources": [
+      "ICNF, Arvoredo de Interesse Publico (CC BY 4.0), processo AIP11063961I",
+      "https://fregues.pt/2022/12/08/parque-bensaude-sobreiro-mais-antigo-de-lisboa/ (2022-12-08)",
+      "https://pt.wikipedia.org/wiki/Parque_Bensa%C3%BAde"
+    ],
+    "access": "Free, public municipal park",
+    "transport": "About 15 minutes' walk from Colegio Militar/Luz station (Metro Blue Line)",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Girth 1.72m, height 17m, noticeably slimmer than its companion (lis_022, girth 3.12m) though registered the same age, 52m away in the same park. Same corroborating 2022 article and same classification decree (D.R. n.4197, 2004) as lis_022; writer should decide whether these two read better as one combined entry ('the holm oaks of Parque Bensaude') or two separate stops on the same short walk, alongside the eucalypt and field maple 40-90m further west."
+  },
+  {
+    "id": "lis_024",
+    "name": "The Red-Flowering Eucalyptus of Parque Bensaúde",
+    "species": "Red-flowering Gum (Corymbia ficifolia)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Parque Bensaúde, Estrada da Luz, 1600 Lisboa",
+      "latitude": 38.7532,
+      "longitude": -9.177838889,
+      "neighbourhood": "S. Domingos de Benfica"
+    },
+    "verified_sources": [
+      "ICNF, Arvoredo de Interesse Publico (CC BY 4.0), processo AIP11063962I",
+      "https://fregues.pt/2022/12/08/parque-bensaude-sobreiro-mais-antigo-de-lisboa/ (2022-12-08)"
+    ],
+    "access": "Free, public municipal park",
+    "transport": "About 15 minutes' walk from Colegio Militar/Luz station (Metro Blue Line)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Girth 1.45m, height 7m, the smallest of the park's four classified trees. Register carries no age field for this one. Species is a red-flowering gum from Western Australia, chosen for its scarlet summer flowers rather than size or antiquity; classified 2004 alongside the other three Parque Bensaude trees in this batch. Flagged only because the age field is empty, not because existence or species is in doubt: the 2022 article independently names 'a red-flowering eucalyptus' among the park's four ICNF trees, matching this record exactly."
+  },
+  {
+    "id": "lis_025",
+    "name": "The Field Maple of Parque Bensaúde",
+    "species": "Field Maple (Acer campestre)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Parque Bensaúde, Estrada da Luz, 1600 Lisboa",
+      "latitude": 38.75266389,
+      "longitude": -9.177947222,
+      "neighbourhood": "S. Domingos de Benfica"
+    },
+    "verified_sources": [
+      "ICNF, Arvoredo de Interesse Publico (CC BY 4.0), processo AIP11063963I",
+      "https://fregues.pt/2022/12/08/parque-bensaude-sobreiro-mais-antigo-de-lisboa/ (2022-12-08)"
+    ],
+    "access": "Free, public municipal park",
+    "transport": "About 15 minutes' walk from Colegio Militar/Luz station (Metro Blue Line)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Girth 3.5m (unusually thick for a field maple, a species that rarely grows this large), height 13.5m. No age in the register. The fourth and last of the four ICNF-classified trees confirmed to still stand in Parque Bensaude by the 2022 fregues.pt article. Sits about 20-90m from the other three (lis_022 through lis_024), all walkable together inside the park."
+  },
+  {
+    "id": "lis_026",
+    "name": "The Paperbark of Jardim Constantino",
+    "species": "Prickly Paperbark (Melaleuca styphelioides)",
+    "age_estimate": "roughly 115 years",
+    "age_min": 105,
+    "age_max": 125,
+    "location": {
+      "address": "Jardim Constantino, Rua Passos Manuel, 1150 Lisboa",
+      "latitude": 38.7307513,
+      "longitude": -9.137159755,
+      "neighbourhood": "Arroios"
+    },
+    "verified_sources": [
+      "ICNF, Arvoredo de Interesse Publico (CC BY 4.0), processo AIP11065641I",
+      "https://pt.wikipedia.org/wiki/Jardim_Constantino"
+    ],
+    "access": "Free, public garden",
+    "transport": "Short walk from Arroios or Anjos station (Metro Green Line)",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Girth 1.58m, height 18m, crown 11m. Portuguese Wikipedia's Jardim Constantino article independently describes this exact tree as 'a Melaleuca styphelioides Smith, known as the paperbark tree, unique in Lisbon,' classified as of public interest in 1996. Jardim Constantino is a small (0.28 ha) public garden inaugurated 1889 in Arroios, named for florist Constantino Jose Marques de Sampaio e Melo, with a lake, playground and a Prometheus statue. Register age is at 2017 measurement (107), roughly 116 now. Its companion Moreton Bay fig (lis_027) grows a few metres away in the same small garden, so this reads as one short stop rather than two separate walks."
+  },
+  {
+    "id": "lis_027",
+    "name": "The Moreton Bay Fig of Jardim Constantino",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "roughly 115 years",
+    "age_min": 105,
+    "age_max": 125,
+    "location": {
+      "address": "Jardim Constantino, Rua Passos Manuel, 1150 Lisboa",
+      "latitude": 38.73129999,
+      "longitude": -9.13709999,
+      "neighbourhood": "Arroios"
+    },
+    "verified_sources": [
+      "ICNF, Arvoredo de Interesse Publico (CC BY 4.0), processo AIP11065640I",
+      "https://pt.wikipedia.org/wiki/Jardim_Constantino"
+    ],
+    "access": "Free, public garden",
+    "transport": "Short walk from Arroios or Anjos station (Metro Green Line)",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Girth 2.33m, height 24m, wide crown (register 26m). Confirmed independently by the Jardim Constantino Wikipedia article as one of the garden's two trees of public interest, classified 1947 (older classification date than the melaleuca's 1996). Register age is at 2017 measurement (107), roughly 116 now. Stands a few metres from lis_026 (the paperbark) in the same small Arroios garden; not the same species as any published Lisbon fig, so no duplication risk with the Principe Real or Baia de Moreton figs already live."
+  },
+  {
+    "id": "lis_028",
+    "name": "The Belas-Sombras of Jardim António Feijó",
+    "species": "Ombu (Phytolacca dioica)",
+    "age_estimate": "roughly 115 years",
+    "age_min": 105,
+    "age_max": 125,
+    "location": {
+      "address": "Jardim Antonio Feijo, Largo do Intendente area, 1100 Lisboa",
+      "latitude": 38.72432013,
+      "longitude": -9.134371121,
+      "neighbourhood": "Arroios"
+    },
+    "verified_sources": [
+      "ICNF, Arvoredo de Interesse Publico (CC BY 4.0), processos AIP11065606I and AIP11065605I",
+      "https://pt.wikipedia.org/wiki/Jardim_Ant%C3%B3nio_Feij%C3%B3",
+      "https://informacoeseservicos.lisboa.pt/contactos/diretorio-da-cidade/jardim-antonio-feijo-jardim-dos-anjos"
+    ],
+    "access": "Free, public garden",
+    "transport": "Short walk from Arroios or Anjos station (Metro Green Line)",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "TWO register entries folded into one collectible entry, per the Setubal-twin rule: 'the two specimens of Phytolacca dioica L., commonly known as bela-sombra, standing in Jardim Antonio Feijo next to the parish church of Nossa Senhora dos Anjos' (this exact phrasing appears in the classification record cited by Portuguese sources), classified since 1947 and reclassified 2018. The two trees stand about 30m apart (SE corner and NE top of the garden). Girths 10.45m and 10.4m, heights 17.6m and 16.4m, essentially twin-sized. Jardim Antonio Feijo, also called Jardim dos Anjos, is a public garden surrounding the Igreja de Nossa Senhora dos Anjos (inaugurated 1911) in Arroios. Register age is at 2015 measurement (105), roughly 116 now. Location pin set to the SE tree; the NE one stands about 30m to the north inside the same small garden."
+  },
+  {
+    "id": "lis_029",
+    "name": "The Bela-Sombra of Praça António Sardinha",
+    "species": "Ombu (Phytolacca dioica)",
+    "age_estimate": "roughly 115 years",
+    "age_min": 105,
+    "age_max": 125,
+    "location": {
+      "address": "Praca Antonio Sardinha, 1170 Lisboa",
+      "latitude": 38.72589632,
+      "longitude": -9.129391582,
+      "neighbourhood": "Penha de Franca"
+    },
+    "verified_sources": [
+      "ICNF, Arvoredo de Interesse Publico (CC BY 4.0), processo KNJ1/350",
+      "https://www.jf-penhafranca.pt/noticias/176-requalificacao-da-praca-antonio-sardinha"
+    ],
+    "access": "Free, public square",
+    "transport": "Short walk from Arroios station (Metro Green Line) or Penha de Franca bus routes",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Girth 10.9m, height 16.2m, crown nearly 21m: a genuinely huge single-trunk bela-sombra. The Penha de Franca parish's own account of the square's 2023 requalification independently describes 'a century-old Bela Sombra tree, named for its large size, with roots resembling trunks converging into a single one' standing in this exact square next to a primary school, matching the register entry's location, species and rough age. Classified 2000. Register age is at 2015 measurement (105), roughly 116 now. Distinct tree from lis_028's pair (598m away) and from any other published bela-sombra."
+  },
+  {
+    "id": "lis_030",
+    "name": "The Dragon Tree of Quinta Conde dos Arcos",
+    "species": "Dragon Tree (Dracaena draco)",
+    "age_estimate": "roughly 215 years",
+    "age_min": 200,
+    "age_max": 235,
+    "location": {
+      "address": "Parque Urbano da Quinta Conde dos Arcos, Alameda D. Afonso Henriques area, Olivais, Lisboa",
+      "latitude": 38.77191111,
+      "longitude": -9.109313889,
+      "neighbourhood": "Olivais"
+    },
+    "verified_sources": [
+      "ICNF, Arvoredo de Interesse Publico (CC BY 4.0), processo KNJ1/323",
+      "https://olivais.pt/visite-a-quinta-do-conde-dos-arcos/ (Junta de Freguesia de Olivais)",
+      "https://www.lisboa.pt/atualidade/noticias/detalhe/parque-urbano-da-quinta-conde-dos-arcos"
+    ],
+    "access": "Free, public urban park (three gates, open roughly 6:30am to 8-10pm depending on season)",
+    "transport": "In Olivais; nearest metro is Encarnacao or Bela Vista (Red Line), roughly 15-20 minutes' walk",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Girth 4.75m, height 6.2m, wide crown (13.9m). Quinta Conde dos Arcos was expropriated by the Lisbon council in 1940 and reopened as a 9-hectare urban park; the Olivais parish council's own visitor page names this dragon tree specifically as the park's ICNF tree of public interest among 28 species that can be seen there, some with guided walks (free, by registration, held on set dates through the year). Register age is at 2010 measurement (200), roughly 216 now. The park also hosts the Municipal Gardening School in its old palace building."
+  },
+  {
+    "id": "lis_031",
+    "name": "The Plane Tree of Hospital Pulido Valente",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "over 350 years",
+    "age_min": 340,
+    "age_max": 390,
+    "location": {
+      "address": "Hospital Pulido Valente, Alameda das Linhas de Torres 117, 1769-001 Lisboa",
+      "latitude": 38.76529999,
+      "longitude": -9.15869999,
+      "neighbourhood": "Lumiar"
+    },
+    "verified_sources": [
+      "ICNF, Arvoredo de Interesse Publico (CC BY 4.0), processo KNJ1/064",
+      "the book 'Arvores da Cidade' (cited via press coverage), which independently gives the same tree as 364 years old, 30m tall with a 33m crown, standing in front of the Edificio D. Carlos and used as a venue for hospital anniversary events"
+    ],
+    "access": "Free, grounds of a public NHS hospital (Hospital Pulido Valente, part of ULS Santa Maria); the tree stands in the open forecourt of Edificio D. Carlos, visible without entering clinical areas, but visitors should behave as hospital guests",
+    "transport": "Near Hospital Pulido Valente / Lumiar (Metro Yellow Line, short walk)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Girth 5.85m, height 28m, crown 37m. Register age 364 at 2015 measurement (so roughly 375 now) is corroborated almost exactly by an independent source, the book Arvores da Cidade, which separately gives 364 years and near-identical height/crown figures for what is unmistakably the same tree at the same hospital. This would make it easily the oldest documented plane tree in the Lisbon file and one of the oldest in the whole corpus, which is exactly the kind of outlier register age BRIEF_RESEARCH.md says to flag rather than quietly accept: two sources agree, but neither is a scientific dating, both trace back to the same municipal classification record from 1945. Classified since 1945, among the oldest classification dates in the Lisbon register. Flagging for the writer to state the age plainly as a register/book figure rather than a certainty. Access is genuine but institutional: it is a working public hospital, not a park, so the story should say so honestly."
+  },
+  {
+    "id": "lis_032",
+    "name": "The Plane Tree of Travessa do Arco da Torre",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 165 years",
+    "age_min": 155,
+    "age_max": 180,
+    "location": {
+      "address": "Travessa do Arco da Torre, 1400 Lisboa (Belem, near Avenida da Torre de Belem)",
+      "latitude": 38.69399859,
+      "longitude": -9.21599353,
+      "neighbourhood": "Belem"
+    },
+    "verified_sources": [
+      "ICNF, Arvoredo de Interesse Publico (CC BY 4.0), processo AIP11065842I",
+      "general Lisbon tree-registry coverage independently giving the same location, species and approximate age (about 150 years) for this street's classified plane tree"
+    ],
+    "access": "Free, public street",
+    "transport": "Short walk from Belem or Restelo, served by tram 15E and several bus routes along Avenida da India",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Girth 3.75m, height 29m, crown nearly 27.5m, a genuinely large street tree. Travessa do Arco da Torre runs parallel to Avenida da Torre de Belem in the Belem waterfront district, near the Torre de Belem and Largo da Princesa. Classified 2000. Register age is at 2010 measurement (150), roughly 166 now, consistent with independent coverage calling it approximately 150 years old. Standard street tree in a public right of way, no access concern."
+  },
+  {
+    "id": "lis_033",
+    "name": "The Monterey Cypress of Parque do Caramão da Ajuda",
+    "species": "Monterey Cypress (Cupressus macrocarpa)",
+    "age_estimate": "roughly 95 years",
+    "age_min": 85,
+    "age_max": 105,
+    "location": {
+      "address": "Parque do Caramao da Ajuda, Belem, 1300 Lisboa",
+      "latitude": 38.70939999,
+      "longitude": -9.20659999,
+      "neighbourhood": "Ajuda/Belem"
+    },
+    "verified_sources": [
+      "ICNF, Arvoredo de Interesse Publico (CC BY 4.0), processo KNJ1/375"
+    ],
+    "access": "Free, public park",
+    "transport": "In Belem/Ajuda, reachable by bus along Calcada da Ajuda; no metro station nearby",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Girth 3.9m, height 18.5m, crown 17m. Named cipreste-da-california in the register (Portuguese common name for Cupressus macrocarpa, Monterey Cypress; not to be confused with cipreste-do-buscaco, Cupressus lusitanica, a different species also in the Lisbon register). Parque do Caramao da Ajuda is a public park in Belem/Ajuda, distinct from the neighbouring Tapada da Ajuda. Flagging because only the register itself was found this pass; no independent second source naming this specific tree turned up in the time available, so existence is register-only for now. Classified 2000. Register age is at 2015 measurement (85), roughly 96 now. A future pass with more time, or a park-visit photo, would close this gap."
+  }
+]

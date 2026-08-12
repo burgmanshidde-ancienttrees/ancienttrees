@@ -1,6 +1,36 @@
 {
   "leads": [
     {
+      "name_pt": "metrosídero (33 e 55)",
+      "species": "New Zealand Christmas Tree (Metrosideros excelsa)",
+      "location": {
+        "address": "Avenida de Montevideu, Porto (two points: near Castelo do Queijo, and Jardim do Homem do Leme)",
+        "latitude": 41.16589999,
+        "longitude": -8.687699988
+      },
+      "reason": "Register entries (ICNF processos KNJ3/045 girth 3.85m age 77, and KNJ3/046 girth unrecorded age 50), both tipo 'Alameda' about 550m apart along Avenida de Montevideu. Not researched further this pass: unclear whether each is a genuine standalone collectible point or part of a longer roadside planting, and no independent source was checked. Worth a closer look, ideally with a site photo or streetview check."
+    },
+    {
+      "name_pt": "yulan",
+      "species": "Yulan Magnolia (Magnolia denudata)",
+      "location": {
+        "address": "Rua de São Vicente, Porto",
+        "latitude": 41.177164,
+        "longitude": -8.629603
+      },
+      "reason": "Register entry (ICNF processo AIP131211131I) has a corrupted or implausible age field: age_register 16 but last_measured recorded as '45', which is not a valid year (register pitfall: a field holding something other than what its name says). A 4m girth on a 16-year-old magnolia is also physically implausible. Needs the ICNF source record checked directly to establish the real age before this can be verified, and needs an access check for a street-tree location on Rua de São Vicente."
+    },
+    {
+      "name_pt": "podocarpo-de-madeira-amarela",
+      "species": "African Fern Pine (Afrocarpus falcatus)",
+      "location": {
+        "address": "Palácio do Freixo (Pestana Pousada), Estrada Nacional 108, Porto",
+        "latitude": 41.14255555,
+        "longitude": -8.575166662
+      },
+      "reason": "Register entry (ICNF processo AIP13120359I, no age or measurements recorded). The palace is now a 5-star hotel/pousada, and 5.1km from the city centre, so both public access to the 10,000 sqm gardens for non-guests and the 30-minute transport-time rule need confirming before this can ship. Not researched further this pass for time."
+    },
+    {
       "name_pt": "cedro-do-himalaia",
       "species": "Himalayan Cedar (Cedrus deodara)",
       "location": {
@@ -22,6 +52,46 @@
     }
   ],
   "blocked": [
+    {
+      "name_pt": "tulipeiro-da-virgínia (Escola Municipal João de Deus)",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "location": {
+        "address": "Escola Municipal João de Deus, R. João de Deus, 399, Porto",
+        "latitude": 41.16174976,
+        "longitude": -8.638243735
+      },
+      "reason": "Register entry (ICNF processo KNJ1/009, girth 8.8m, age recorded 300 at last measurement 2006, one of Porto's oldest classified trees) stands in the yard of an operating municipal primary school. No source found confirming public visiting access to a working school's grounds, and none is expected. Blocked under hard rule 10. This is NOT the same tree as the Casa Allen tulipeiro (por_020, different processo, different address); do not confuse the two."
+    },
+    {
+      "name_pt": "tulipeiro-da-virgínia ou árvore-do-ponto / cedro-do-atlas (Ordem dos Médicos)",
+      "species": "Tulip Tree (Liriodendron tulipifera) and Atlas Cedar (Cedrus atlantica)",
+      "location": {
+        "address": "Jardim da Secção Regional Norte, Ordem dos Médicos, Rua Delfim Maia, Porto",
+        "latitude": 41.17259999,
+        "longitude": -8.610699988
+      },
+      "reason": "Register entries (ICNF processos KNJ1/612 tulipeiro girth 4.3m age 100, and KNJ1/611 cedro-do-atlas girth 3.4m age 100, both classified 2011) stand in the private garden of the medical association's regional headquarters. The Ordem's Centro de Cultura e Congressos next door hosts public cultural events, but no source found confirms the garden itself, as opposed to the event spaces, is open for casual visits. Same shape of problem as the already-blocked CCDR-N camphor tree below; left out per hard rule 10 until public garden access is confirmed."
+    },
+    {
+      "name_pt": "araucária-de-norfolk (28)",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "location": {
+        "address": "Jardim do Passeio Alegre, Porto",
+        "latitude": 41.14819999,
+        "longitude": -8.670699988
+      },
+      "reason": "Register entry (ICNF processo KNJ3/047, tipo 'Conjunto arbóreo') covers roughly three dozen Norfolk Araucaria specimens scattered through the 41,000 sqm Jardim do Passeio Alegre. Not a collectible point: there is no single obvious place to stand, unlike the compact Alameda dos Plátanos (por_026) or the seven fan palms (por_024) in the same city. Fails the ensemble test the way Barcelona's La Rambla plane trees did."
+    },
+    {
+      "name_pt": "palmeira-das-canárias (63)",
+      "species": "Canary Island Date Palm (Phoenix canariensis)",
+      "location": {
+        "address": "Jardim do Passeio Alegre, Porto",
+        "latitude": 41.14749999,
+        "longitude": -8.669799988
+      },
+      "reason": "Register entry (ICNF processo KNJ3/048, tipo 'Alameda') covers 63 Canary palm specimens across the same 41,000 sqm garden as the Norfolk araucaria set above. Same failure: an avenue spread across a large park rather than one destination. Blocked for the same reason, not for lack of remarkableness."
+    },
     {
       "name_pt": "canforeira",
       "species": "Camphor Tree (Cinnamomum camphora)",
