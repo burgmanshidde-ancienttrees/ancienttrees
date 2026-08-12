@@ -1,0 +1,98 @@
+[
+  {
+    "id": "dbo_005",
+    "name": "The Chestnut, Plane and Copper Beech of Casinotuin",
+    "species": "Horse Chestnut, London Plane and Copper Beech (Aesculus hippocastanum, Platanus x hispanica, Fagus sylvatica 'Atropunicea')",
+    "age_estimate": "roughly 100 to 120 years, one undated",
+    "age_min": 90,
+    "age_max": 130,
+    "location": {
+      "address": "Casinotuin, 's-Hertogenbosch",
+      "latitude": 51.685738,
+      "longitude": 5.309978,
+      "neighbourhood": "Binnenstad Oost"
+    },
+    "verified_sources": [
+      "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10",
+      "https://www.bossche-encyclopedie.nl/overig/natuurgebieden/casinotuin.htm",
+      "https://www.straatbeeld.nl/nieuws/monumentale-bomen-onderdeel-bossche-stadswalzone"
+    ],
+    "access": "Free, public park",
+    "transport": "'s-Hertogenbosch railway station, then about a 15 to 20 minute walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "how_to_recognise": "Three different species stand within about 120 metres of each other around Casinotuin's paths: the horse chestnut has the roughest, most deeply grooved bark; the plane's bark flakes off in pale patches and it is the healthiest-rated of the three; the copper beech is the one with wine-dark, almost black-red leaves, unmistakable against the green of the other two.",
+    "verify_notes": "Three separately registered monumental trees within roughly 120m of each other in Casinotuin, a bowl-shaped garden along Den Bosch's former ramparts, part of the same Stadswalzone rampart-conversion project that also produced Bastion Oranje's park (dbo_002) and the redesigned Bastion Baselaar. Per mtdls.nl's own project page, Casinotuin sits directly beyond Bastion Baselaar on the city's rampart walking route, described as holding 'het indrukwekkende, historische bomenbestand' (the impressive historic tree stock). Bossche Encyclopedie's own page on Casinotuin independently states the garden holds century-old maple, chestnut, brown/copper beech (one dated to 1830), oak and weeping beech, corroborating this trio's species mix as a real, known feature of the garden, though it does not name these three specific register entries. G-0225 Aesculus hippocastanum: girth 402cm, height 24m, age 100y, vitality Verminderd. G-0497 Platanus x hispanica: girth 480cm, height 24m, age 120y, vitality Normaal, the healthiest of the three. G-0219 Fagus sylvatica 'Atropunicea': girth 433cm, height 24m; its register age field reads '0', a corrupted/blank value per the known register pitfall (a wrong or missing figure in the age column), not a real age of zero. Age_estimate above reflects this: the chestnut and plane have real register ages, the beech does not. All three re-verified directly against the live municipal GIS endpoint on 2026-08-12, matching the pre-filtered candidates file exactly (species, girth, height, vitality, EIGENAAR=Gemeente all confirmed). PDOK aerial imagery (Actueel_ortho25, current national orthophoto) shows a well-used park with paths and visible pedestrians on the day of capture, confirming a genuine, accessible public garden rather than a restricted space, and shows the bowl-shaped grove of large tree crowns matching the garden's description. Girth comparison: chestnut 402cm, plane 480cm (largest), beech 433cm."
+  },
+  {
+    "id": "dbo_006",
+    "name": "The Plane and Horse Chestnut of Sint Janskerkhof",
+    "species": "London Plane and Horse Chestnut (Platanus x hispanica, Aesculus hippocastanum)",
+    "age_estimate": "roughly 110 to 170 years",
+    "age_min": 100,
+    "age_max": 180,
+    "location": {
+      "address": "Sint Janskerkhof, in the old churchyard beside the cathedral, 's-Hertogenbosch",
+      "latitude": 51.687901,
+      "longitude": 5.309439,
+      "neighbourhood": "Binnenstad Oost"
+    },
+    "verified_sources": [
+      "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10",
+      "https://www.erfgoedshertogenbosch.nl/verhalen/1000-graven-onderzocht-in-een-overvolle-stad"
+    ],
+    "access": "Free, public churchyard garden beside the cathedral; a quiet spot, easy to miss from the street",
+    "transport": "'s-Hertogenbosch railway station, then about a 12-minute walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "how_to_recognise": "The plane is unmistakably the bigger of the two: over six metres round (612cm) against the chestnut's under four (377cm), and its pale, flaking bark looks nothing like the chestnut's dark, deeply grooved trunk. Both stand together in the small green space right behind the cathedral's apse, about 25 metres apart.",
+    "verify_notes": "Two monumental trees about 25 metres apart on Sint Janskerkhof, the street immediately behind ('s Hertogenbosch's cathedral, on what was the cathedral's own churchyard and burial ground until the 19th century (erfgoedshertogenbosch.nl documents an archaeological excavation of roughly 1000 graves here, mostly dated 1750-1858, independent confirmation that this is a real, historically named public site rather than a private courtyard, though the article is about the site's history, not these specific trees). G-0693 Platanus x hispanica: girth 612cm, the single largest girth of any tree in the 209-candidate register pool checked this pass, height 20m, age 170y, vitality Verminderd. G-0696 Aesculus hippocastanum: girth 377cm, height 21m, age 110y, vitality Verminderd. Both re-verified directly against the live municipal GIS endpoint on 2026-08-12, matching the candidates file exactly, EIGENAAR=Gemeente confirmed for both (public land, not a private garden, despite sitting between private houses). PDOK aerial imagery (Actueel_ortho25, current) shows a large, clearly living tree crown filling a green enclosure directly against the cathedral's apse, with a second, smaller crown nearby, confirming both are alive and the setting is a real green space rather than rooftop or courtyard guesswork. No independent second source naming these two specific trees was found in the time available; single-sourced beyond the register and the imagery, hence flagged. Worth a photo-hunt and a second on-the-ground source in a future pass given the exceptional girth of G-0693."
+  },
+  {
+    "id": "dbo_007",
+    "name": "The Giant Sequoia of Uilenburg",
+    "species": "Giant Sequoia (Sequoiadendron giganteum)",
+    "age_estimate": "roughly 80 years",
+    "age_min": 70,
+    "age_max": 90,
+    "location": {
+      "address": "Uilenburg, along the canal, 's-Hertogenbosch",
+      "latitude": 51.687234,
+      "longitude": 5.299254,
+      "neighbourhood": "Binnenstad Centrum"
+    },
+    "verified_sources": [
+      "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10"
+    ],
+    "access": "Free, public canal-side path",
+    "transport": "'s-Hertogenbosch railway station, then about a 10-minute walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "how_to_recognise": "It is the only conifer among the canal-side trees on Uilenburg: look for the single cone-shaped evergreen crown among the rounded deciduous canopies along the water. Nothing else nearby looks like it.",
+    "verify_notes": "The only Sequoiadendron giganteum among the register candidates checked this pass, girth 314cm, height 32m, age 80y, vitality Verminderd. Giant sequoias are non-native 19th-century-onward ornamental plantings in the Netherlands and are known for unusually fast early growth, so an 80-year-old specimen at 314cm girth and 32m is plausible, not anomalous, and itself a notable fact (a giant redwood reaching that size in under a century). Re-verified directly against the live municipal GIS endpoint on 2026-08-12, matching the candidates file exactly, EIGENAAR=Gemeente confirmed. PDOK aerial imagery (Actueel_ortho25, current) shows a line of canal-side trees and a garden path at this location, consistent with a public rampart/canal-edge planting; could not visually confirm the conifer crown shape from that resolution with full confidence, so this is treated as position/context evidence only, not species or alive confirmation, per the aerial-imagery rules. No independent second source specifically naming this tree was found in the time available; general searches for a sequoia or mammoetboom in 's-Hertogenbosch/Uilenburg returned nothing about this specimen, an honest gap rather than a contradiction. Single-sourced beyond the register, hence flagged. A good candidate for a photo hunt: a mammoetboom this size in a Dutch city centre is visually striking and easy to identify even for a non-expert."
+  },
+  {
+    "id": "dbo_001",
+    "update_only": true,
+    "how_to_recognise": "It stands alone against the old city wall on Parklaan; the nearest other registered veteran tree in the municipal database is over 150 metres away, so there is nothing nearby to confuse it for.",
+    "correction": null
+  },
+  {
+    "id": "dbo_002",
+    "update_only": true,
+    "how_to_recognise": "The thicker of the two maples on the bastion: this one measures over four metres round (427cm) against the other's just over three (317cm), re-confirmed against the live municipal register on 2026-08-12. It also stands nearer the road side of the bastion; the smaller maple (register id G-0287) grows about 30 metres to the northwest, closer to the moat's water edge, per both trees' registered GPS coordinates (39m apart in total) cross-checked against aerial imagery showing the moat on that side.",
+    "correction": null
+  },
+  {
+    "id": "dbo_003",
+    "update_only": true,
+    "how_to_recognise": "Three different species within forty metres of each other: the plane has the largest girth of the three (402cm) and pale, flaking bark; the lime (352cm) is the one with the densest, roundest canopy; the silver maple (361cm) is the giveaway by its leaves, which flash silvery-white on the underside in the wind, unlike the other two.",
+    "correction": null
+  },
+  {
+    "id": "dbo_004",
+    "update_only": true,
+    "how_to_recognise": "It stands in the tree line along the park's eastern edge nearest the houses, not inside the deliberately planted circle of ornamental poplars visible in the open middle of the Zuiderpark lawn (confirmed by comparing the tree's registered coordinate against the circle's position in current aerial imagery); that ring dates from the park's 1993-1999 redesign, decades after this tree was already grown.",
+    "correction": null
+  }
+]
