@@ -40,6 +40,23 @@ def reason_text(entry):
                     ("why_not_published", "reason", "why", "status", "note"))
 
 
+# A lead that has already shipped is not a lead. Found 2026-08-12 while sizing
+# a write pass: Berlin showed 7 READY of which 4 read "[RESOLVED 2026-08-09,
+# delivered as ber_018]" in their NAME, with `why` empty, so neither the
+# blocking rules (which read `why`) nor the readiness check (which reads name,
+# species and position, all present) could see it. A brief built on that number
+# would have re-written four live stories, which is the 2026-08-08 error again.
+# Seven leads across four cities were affected. The marker is searched across
+# the whole entry, because the run that resolved one wrote it wherever it was
+# standing: in the name, in a note, in `status`.
+DONE = re.compile(r"\bresolved\b|\bdelivered as\b|\balready published\b|"
+                  r"\bpromoted\b|\bshipped as\b", re.I)
+
+
+def is_done(entry):
+    return bool(DONE.search(json.dumps(entry, ensure_ascii=False)))
+
+
 def classify(entry, blocking):
     """Return the blocking rule this lead trips, or None.
 
@@ -96,8 +113,11 @@ def main():
 
     r = rules()
     blocking = r["blocking"]
-    ready, needs, blocked = [], [], []
+    ready, needs, blocked, done = [], [], [], []
     for city, e in load(a.city):
+        if is_done(e):
+            done.append((city, e))
+            continue
         rule = classify(e, blocking)
         if rule:
             blocked.append((city, e, rule))
@@ -105,9 +125,11 @@ def main():
         miss = readiness(e)
         (ready if not miss else needs).append((city, e, miss))
 
-    total = len(ready) + len(needs) + len(blocked)
+    total = len(ready) + len(needs) + len(blocked) + len(done)
     print(f"\n{total} leads. Fail-open: anything not matching data/block-reasons.json ships.\n")
     print(f"  {len(ready):4d}  READY: publishable now, needs only a story written")
+    if done:
+        print(f"  {len(done):4d}  DONE: already published, kept as a record")
     print(f"  {len(needs):4d}  NEARLY: unblocked, but missing a field a story needs")
     print(f"  {len(blocked):4d}  BLOCKED: genuinely cannot ship")
 
