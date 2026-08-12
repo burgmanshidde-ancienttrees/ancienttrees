@@ -100,6 +100,47 @@ def resolves(target: Path) -> bool:
     return False
 
 
+# The only check here that looks at the repository rather than at site/dist,
+# and it earns the exception the way every other ratchet check did: the same
+# error shipped twice.
+#
+# A workflow prompt that declares the current phase goes stale invisibly,
+# because the corpus gets edited in session and the YAML does not. On
+# 2026-08-11 CITY_QUEUE.md was written to kill six competing city orders and
+# named "the order embedded in nightly.yml" as one of them; that order was
+# still sitting in the prompt, still being executed, on 2026-08-12, six days
+# after the phase it encoded had been replaced. Two copies of a course means
+# the one nobody edits wins.
+#
+# So: strategy lives in CLAUDE.md and CITY_QUEUE.md. A workflow prompt may
+# carry mechanics (how to claim a pass, which build command matches the tool
+# allowlist, what this runner's proxy blocks) and must not carry a phase, a
+# priority order or a city work list. The patterns below are the SHAPE of that
+# error rather than a word list, so an honest mechanic sentence passes.
+STRATEGY_IN_WORKFLOW = [
+    "is the current phase", "the current phase is", "the job for the coming runs",
+    "phase-1 city", "phase 1 city", "stays closed until", "stay closed until",
+    "work stops: no new", "in this order, and photos",
+]
+
+
+def check_no_strategy_in_workflows():
+    out = []
+    wf = Path(__file__).resolve().parent.parent / ".github" / "workflows"
+    if not wf.is_dir():
+        return out
+    for path in sorted(wf.glob("*.yml")):
+        low = path.read_text(encoding="utf-8").lower()
+        for pat in STRATEGY_IN_WORKFLOW:
+            if pat in low:
+                out.append(
+                    f".github/workflows/{path.name}: declares strategy ({pat!r}). "
+                    "A phase or city order in a workflow prompt goes stale invisibly; "
+                    "put it in CLAUDE.md or CITY_QUEUE.md and point at it."
+                )
+    return out
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -218,6 +259,8 @@ def main():
         if 'http-equiv="refresh"' in text or "noindex" in text:
             continue
         failures.append(f"{page.relative_to(DIST)}: orphan, no page on the site links to it")
+
+    failures += check_no_strategy_in_workflows()
 
     if failures:
         print(f"QA FAILED: {len(failures)} problem(s) in {len(pages)} pages")

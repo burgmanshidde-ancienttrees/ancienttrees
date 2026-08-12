@@ -107,58 +107,31 @@ jobs:
             Reader submissions outrank everything. Something published being wrong
             outranks everything below it.
 
-            THE COURSE, ruled by Hidde on 2026-08-12, replacing the tourist-city
-            rollout this prompt used to carry (his words: "eens met register hoek
-            en alleen verdieping wanneer de moeite"). The rollout order, the
-            walks-first list and the photos-are-a-priority instruction that stood
-            here are all superseded; do not reconstruct them from memory. Two
-            rules decide what a run does with its window:
+            WHAT KIND OF WORK, and this prompt deliberately does not say. Read
+            CLAUDE.md's "The course after the fortnight" paragraph in Step 0 and
+            follow it; it holds the two rules (supply from the cheap end, depth
+            only where there is demand) and it is the ONLY place they live.
+            This prompt used to restate the phase as well, which is exactly how
+            the superseded 2026-08-06 tourist-city rollout was still being
+            executed here six days after CITY_QUEUE.md replaced it: two copies of
+            a course means the one nobody edits wins. So strategy lives in
+            CLAUDE.md and CITY_QUEUE.md, and this prompt carries only what is
+            true of THIS RUNNER and nothing else knows.
 
-            1. SUPPLY COMES FROM THE CHEAP END, and the cheap end is measured
-               rather than guessed. In order of what to try:
-               - WRITE WHAT IS ALREADY VERIFIED. Run python3 scripts/leads.py.
-                 Roughly 300 leads are READY: publishable now, needing only a
-                 story. A write pass costs about 12k tokens per tree, the only
-                 stage of the assembly line under the 15k target, and the verify
-                 work in front of it is already paid for. Batch 15 to 20 trees
-                 across cities into ONE writing pass per BRIEF_WRITING.md.
-                 Prefer cities CITY_QUEUE.md ranks high, but a full batch of
-                 mixed cities beats a thin batch of the right ones.
-               - THEN REGISTER-BACKED VERIFY. A verify pass is dispatched only
-                 when the trees already have a register entry, a Wikidata
-                 candidate or equivalent hard data behind them, so the pass only
-                 has to confirm alive and publicly reachable. That is what made
-                 Lisbon and Porto cost almost nothing on 2026-08-12; register
-                 work has measured at 0.4k per tree against 46k for verify
-                 without one. See OPEN_DATA_SURVEY.md for cleared registers, and
-                 run python3 scripts/cluster_register.py for the walkable groups
-                 before deciding which trees a city gets.
-               - THEN IMPORT A NEW REGISTER. Scouting compounds and research
-                 does not. A cleared register makes every later city in that
-                 country nearly free, so an hour spent making the next hour
-                 cheaper beats an hour spent producing. Den Bosch is the pattern
-                 for the Netherlands: a municipal ArcGIS endpoint carrying
-                 species, girth, age, owner and vitality, which answers hard
-                 rule 10 from the data itself.
-               - FROM-ZERO WEB RESEARCH ON A CITY IS OFF unless Hidde asks for
-                 that city by name. Measured: 556k tokens on Baarn for zero
-                 trees, 46k per tree where it does work.
-
-            2. DEPTH ONLY WHERE THERE IS DEMAND. Photos, pin upgrades and
-               best_time are dispatched only on pages Search Console actually
-               shows impressions for. Read DATA.md's newest entry for which
-               pages those are; Lisbon, Porto, Prague, Vienna and Kyoto were the
-               list on 2026-08-12. Depth on a page with no impressions is the
-               most expensive way to do nothing: 275k tokens of pin passes on
-               Washington and Edinburgh produced zero upgrades. What stays free
-               and welcome anywhere: python3 scripts/photo_hunt.py --recheck on
-               cities you touch (an API sweep, costs nothing, fills the queue for
-               one of Hidde's sessions), and setting a real best_time from a
-               species file that already exists while writing a story. What a run
-               still never does: judge or approve a photo. This runner's egress
-               proxy blocks upload.wikimedia.org and api.openverse.org, so
-               viewing only works in Hidde's own sessions, and a photo is never
-               approved unseen.
+            Runner facts, which are the reason this prompt exists at all:
+            - NEVER judge or approve a photo here. This runner's egress proxy
+              blocks upload.wikimedia.org and api.openverse.org, so 313 of 337
+              candidates were unreachable on 2026-08-07 and a whole window went
+              on discovering that. Viewing works only in Hidde's own sessions.
+              Running the free API sweep (scripts/photo_hunt.py --recheck) is
+              fine here and fills the queue for one of those sessions.
+            - Verify with `npm --prefix site ci` then `npm --prefix site run
+              build`. Both start with npm on purpose: a parenthesised subshell
+              like `(cd site && ...)` matches no entry on the tool allowlist and
+              is what silently stopped every night run for a day.
+            - Every fetch gets a hard timeout (`curl -m 20`). A host that hangs
+              costs the whole window; data/fetch-blocklist.json lists the known
+              ones and passcheck.py prints it.
 
             LOG WHAT THE PASS COST, in the same commit as its output: append to
             data/agent-costs.json under today's date with target, kind (verify,
@@ -191,8 +164,8 @@ jobs:
               were chosen wrong, not the route.
             - NO photo hunting inside research passes at all (assembly line
               rule 5, 2026-08-06, superseding the old 3-per-city cap). The free
-              API sweep and the never-judge-here rule are stated under THE
-              COURSE above; a missing photo is an honest gap and always has been.
+              API sweep and the never-judge-here rule are under Runner facts
+              above; a missing photo is an honest gap and always has been.
             - Everything found and not shipped goes to data/leads/[city].json in
               the two kinds, leads and blocked, per CLAUDE.md. Nothing gets
               thrown away, ever. Run python3 scripts/tree_index.py afterwards so
