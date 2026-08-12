@@ -81,11 +81,52 @@ def check_city(path):
     return out
 
 
+RECOGNISE_MAX = 240
+# Hidde, 2026-08-12, seeing the field on all eleven Den Bosch trees: "kun je deze
+# which one is it functie weghalen, hij is alleen in den bosch, dit zou logisch
+# om dieper te doen bij specifiek bomen die moeilijk te vinden zijn. niet bij
+# elke in den bosch." Two failures at once. It was on every tree in the city
+# including ones standing alone with nothing to confuse them for, and the longest
+# ran to 499 characters of method: a register id, a re-confirmation date, GPS
+# coordinates and an aerial-imagery cross-check. That is our working shown to a
+# reader who asked which trunk to walk to, which is the builder-speak rule
+# arriving in a new field.
+#
+# So the field is for trees a visitor genuinely cannot pick out: near-identical
+# neighbours of the same species, close enough that the pin cannot settle it.
+# One plain sentence about what you SEE. Never the evidence behind it.
+RECOGNISE_METHOD = [
+    r"register id", r"registered GPS", r"aerial imagery", r"cross-check",
+    r"re-confirmed", r"\bper both\b", r"\b20\d\d-\d\d-\d\d\b",
+    r"municipal register", r"coordinates",
+]
+
+
+def check_recognise(slug, d):
+    out = []
+    for tree in d.get("trees") or []:
+        v = (tree.get("how_to_recognise") or "").strip()
+        if not v:
+            continue
+        if len(v) > RECOGNISE_MAX:
+            out.append("%s: %s how_to_recognise is %d chars, the limit is %d. "
+                       "One plain sentence about what you see."
+                       % (slug, tree.get("id"), len(v), RECOGNISE_MAX))
+        for pat in RECOGNISE_METHOD:
+            if re.search(pat, v, re.I):
+                out.append("%s: %s how_to_recognise shows our method (%s). "
+                           "The reader wants the tree, not the evidence."
+                           % (slug, tree.get("id"), pat))
+    return out
+
+
 def main():
     problems = []
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
+        with open(p, encoding='utf-8') as fh:
+            problems += check_recognise(os.path.basename(p)[:-5], json.load(fh))
     for line in problems:
         print("FAIL " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))
