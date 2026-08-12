@@ -69,6 +69,7 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SOURCE = os.path.join(ROOT, "data", "city-queue.json")
 QUEUE = os.path.join(ROOT, "CITY_QUEUE.md")
 LIST = os.path.join(ROOT, "data", "city-list.json")
 # A data row is any table line whose first cell is a rank. Parsed by SPLITTING
@@ -158,39 +159,58 @@ def measure(pts):
     return out
 
 
-def rebuild_table(live):
-    with open(QUEUE, encoding="utf-8") as fh:
-        text = fh.read()
-    out, seen = [], []
-    for line in text.split("\n"):
-        if not ROW.match(line):
-            out.append(line)
-            continue
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        rank, city, score, demand = cells[0], cells[1], cells[2], cells[3]
-        basis = cells[-1]
-        info = live.get(city.lower())
+def load_source():
+    with open(SOURCE, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def enrich(doc, live):
+    """Write the measured columns into the source file itself, so the numbers a
+    human reads and the numbers a script computes are the same object."""
+    for c in doc["cities"]:
+        info = live.get(c["city"].lower())
         if info:
             supply = info["register"] + info["ready"]
-            tgt = target_for(supply)
-            trees, photos, reg, walks = (info["trees"], info["photos"],
-                                          info["register"], info["walks"])
+            c.update(status="published", trees=info["trees"], photos=info["photos"],
+                     walks=info["walks"], register=info["register"],
+                     ready=info["ready"], supply=supply, target=target_for(supply))
         else:
-            tgt = None
-            trees = photos = reg = walks = 0
-        seen.append(city.lower())
-        out.append("| %s | %s | %s | %s | %s | %s | %s | %s | %s | %s |" % (
-            rank, city, score, demand,
-            trees or "-", photos or "-", walks or "-", reg or "-",
-            tgt or "-", basis))
-    text = "\n".join(out)
-    text = text.replace("| # | city | score | demand | trees | photos | register | basis |",
-                        "| # | city | score | demand | trees | photos | walks | register | target | basis |")
-    text = text.replace("|---|---|---:|---:|---:|---:|---:|---|",
-                        "|---|---|---:|---:|---:|---:|---:|---:|---:|---|")
+            c.update(status="pending", trees=0, photos=0, walks=0,
+                     register=0, ready=0, supply=0, target=None)
+    doc["cities"].sort(key=lambda c: (c["rank"] is None, c["rank"] or 0, c["city"]))
+    with open(SOURCE, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, ensure_ascii=False, indent=1)
+    return doc
+
+
+def rebuild_table(doc):
+    """Render CITY_QUEUE.md's table FROM the source file.
+
+    It used to be the other way round: the markdown table was the source and
+    this script regex-parsed it. That is how the first version corrupted every
+    row's `basis` when the layout gained two columns. A rendered table cannot
+    drift from the data it is rendered from."""
+    with open(QUEUE, encoding="utf-8") as fh:
+        text = fh.read()
+    head = "| # | city | score | demand | trees | photos | walks | register | target | basis |"
+    sep = "|---|---|---:|---:|---:|---:|---:|---:|---:|---|"
+    body = []
+    for c in doc["cities"]:
+        if c["rank"] is None:
+            continue
+        body.append("| %d | %s | %s | %s | %s | %s | %s | %s | %s | %s |" % (
+            c["rank"], c["city"],
+            ("%.2f" % c["score"]) if c.get("score") is not None else "-",
+            ("{:,}".format(c["demand"])) if c.get("demand") else "-",
+            c["trees"] or "-", c["photos"] or "-", c["walks"] or "-",
+            c["register"] or "-", c["target"] or "-", c["basis"]))
+    table = "\n".join([head, sep] + body)
+    start = text.index(head) if head in text else text.index("| # | city |")
+    end = text.index("\n\n", start)
+    text = text[:start] + table + text[end:]
     with open(QUEUE, "w", encoding="utf-8") as fh:
         fh.write(text)
-    return seen
+    return [c["city"].lower() for c in doc["cities"] if c["rank"]]
 
 
 def rebuild_list(live, order):
@@ -250,13 +270,17 @@ def main():
 
     pts = register_points()
     live = measure(pts)
-    order = rebuild_table(live)
+    doc = enrich(load_source(), live)
+    order = rebuild_table(doc)
     n = rebuild_list(live, order)
-    banded = [i for i in live.values() if target_for(i["register"] + i["ready"], True)]
+    banded = [c for c in doc["cities"] if c.get("target")]
     print("%d register points, %d live cities measured" % (len(pts), len(live)))
-    print("%d rows in CITY_QUEUE.md, %d entries in city-list.json" % (len(order), n))
-    print("%d cities have supply for a target; %d are supply-starved and get none"
-          % (len(banded), len(live) - len(banded)))
+    print("data/city-queue.json: %d cities, %d ranked (the source)"
+          % (len(doc["cities"]), len(order)))
+    print("rendered: %d rows in CITY_QUEUE.md, %d entries in city-list.json"
+          % (len(order), n))
+    print("%d cities carry a target of 25; the rest get whatever verifies"
+          % len(banded))
     return 0
 
 
