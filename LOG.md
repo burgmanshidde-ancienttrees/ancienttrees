@@ -11,6 +11,66 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-12 - Portugal's register lands 21 trees, and a journalist finds the hole the pins never covered
+
+**OPEN WORK, first thing for the next session.** Den Bosch's seven new trees
+(dbo_005 to dbo_011) are verified and sitting in
+`data/research/den-bosch-verified.json` with NO STORIES: the write pass was
+stopped mid-flight. Everything else about them is done, including their
+`how_to_recognise` lines, so this is one writing pass and nothing more. The
+city file is claimed in `data/in-flight.json`; release it when they land.
+
+**And a mail is owed.** A journalist at the Brabants Dagblad mailed Hidde on
+2026-08-12. He was interested and put off by two things: how early-stage and
+unvalidated the data looked, and that he walked to one of our Den Bosch trees
+and could not tell which trunk was ours, because several similar ones stand
+there. Hidde asked for a follow-up in the shape of "I looked deeper, here is
+what it is based on, I had it searched further, here is what came out, what do
+you think", and told me to wait until the work was actually live. Six of the
+seven pieces are live; the seven stories are the last. Read
+drafts/HIS_VOICE.md before drafting and run scripts/mailcheck.py on it.
+
+**What his second objection produced, and it is the most useful feedback this
+project has had.** `location_precision` answers WHERE and cannot answer WHICH,
+and a pin exact to the metre is useless among five similar trunks. Every tree
+can now carry `how_to_recognise`: one plain sentence naming what you look at
+when you are standing there. It renders above the story and on the city card.
+Den Bosch's four live trees have theirs; the Bastion Oranje maple now says it
+is the thicker of the two at 427cm against the other's 317cm, with the
+neighbour's register id so he can check it himself. "It stands alone, nothing
+near it" is a good value and often the true one.
+
+**Portugal, the batch the previous handover queued.** Lisbon 21 to 33, Porto 18
+to 27, all from the ICNF register, which already held species, age, girth,
+height and a surveyed coordinate, so the passes only had to confirm alive and
+publicly reachable. Nine blocked on access: a guesthouse, a school, a private
+office complex, an institutional garden, and two Passeio Alegre plantings that
+fail the collectible-point test the way La Rambla did. The trap the handover
+warned about was navigated rather than tripped: Porto has two tulipeiro
+entries, only one is the school yard, and the other ships.
+
+**Den Bosch's supply, worth knowing for any Dutch city.** The municipality
+publishes 1,907 protected trees through an ArcGIS endpoint carrying species,
+girth, age, height AND two fields registers almost never have: `EIGENAAR`
+(owner, so hard rule 10 is answered by the data) and `VITALITEIT`. Filtered to
+municipal ground, alive, girth over 250cm and not already published, it leaves
+209 candidates, in `data/research/den-bosch-register-candidates.json`.
+
+**Two lessons, both mine, both about trusting the wrong thing.**
+
+A handover note is not the file. LOG.md said two batches were "ready to write,
+no research needed", and I dispatched on that sentence. The Kyoto file's own
+`verify_notes` deferred all five trees, one of them sits 10 km outside the park
+it was said to be in, and that one is a duplicate of a tree we already publish,
+17 m away, whose register glyphs are an OCR slip for the name our own story
+uses. The writing pass caught it. Two of the five shipped, two are held on a
+shared coordinate, one is blocked for good.
+
+A delegating agent's child may still be running. A Den Bosch pass reported that
+it had dispatched a subagent and stopped; I called it wasted and re-dispatched.
+Both then delivered, roughly 340k tokens for overlapping work. The second was
+better and is what shipped, but the waste was mine.
+
 ## 2026-08-11 - HANDOVER: what is queued for the next session
 
 Written at the end of a long working session with Hidde, for whoever opens the
