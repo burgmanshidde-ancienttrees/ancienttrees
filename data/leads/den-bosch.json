@@ -1,22 +1,13 @@
 {
   "leads": [
     {
-      "ref": "G-0415",
-      "species": "Quercus robur (Pedunculate Oak)",
-      "girth_cm": 421,
-      "age": "120",
-      "lat": 51.676147,
-      "lng": 5.324756,
-      "reason": "Part of a tight 5-tree cluster (G-0415, G-0416, G-0421, G-0414, G-0418) within 83m of each other, roughly 1.3km south of the published Den Bosch trees, well clear of a 40-minute window. Would be a genuine second walk per cluster doctrine, but three Quercus robur oaks (this, G-0416, G-0421) sit within meters of one another, exactly the confusability risk this pass exists to fix for dbo_002, and doing it justice needs a dedicated pass with real time to distinguish them (girth, position, aerial imagery), not a rushed add-on. Not verified this pass; count/time failure, not an evidence failure."
-    },
-    {
       "ref": "G-0421",
       "species": "Quercus robur (Pedunculate Oak)",
       "girth_cm": 392,
       "age": "120",
       "lat": 51.675714,
       "lng": 5.324779,
-      "reason": "Same south oak cluster as G-0415. See that entry's reason. Within meters of G-0415 and G-0416, both also Quercus robur; needs careful individual distinguishing in a dedicated future pass."
+      "reason": "UPDATED this pass: this and G-0416 are the two smaller of a three-oak group at Pettelaarse Schans; the largest, G-0415 (421cm), now ships as dbo_010 with an honest flagged how_to_recognise (the group is genuinely hard to tell apart by eye). This one sits 48m from G-0415, close enough that adding it too would recreate the exact dbo_002 confusion problem this pass exists to fix. Leave for a dedicated future pass with time for aerial imagery or an on-site check, not a rushed second oak."
     },
     {
       "ref": "G-0416",
@@ -25,7 +16,7 @@
       "age": "120",
       "lat": 51.67622,
       "lng": 5.324585,
-      "reason": "Same south oak cluster. The third Quercus robur of the three within a few metres of each other; needs a dedicated pass to distinguish safely rather than risk another dbo_002."
+      "reason": "UPDATED this pass: third and smallest of the Pettelaarse Schans oak trio, 14m from G-0415 (now dbo_010). Same reasoning as G-0421: too close to the shipped oak to add safely without a dedicated distinguishing pass."
     },
     {
       "ref": "G-0414",
@@ -34,16 +25,7 @@
       "age": "100",
       "lat": 51.676096,
       "lng": 5.324609,
-      "reason": "Same south oak cluster (the plane among the oaks). Not verified this pass; would complete the south walk alongside G-0415/G-0416/G-0421/G-0418 in a dedicated future pass."
-    },
-    {
-      "ref": "G-0418",
-      "species": "Populus x canadensis (Canadian Poplar)",
-      "girth_cm": 418,
-      "age": "85",
-      "lat": 51.676152,
-      "lng": 5.325767,
-      "reason": "Same south oak cluster (the poplar among the oaks). Not verified this pass; would complete the south walk in a dedicated future pass."
+      "reason": "UPDATED this pass: the plane among the Pettelaarse Schans oaks, 12m from G-0415 (dbo_010). Not shipped this pass to keep the new Pettelaarse Schans addition to two clean, easily-told-apart trees (dbo_010 oak, dbo_011 poplar); a genuinely good candidate for a future pass, no confusability problem of its own since it is the only plane in the group."
     },
     {
       "ref": "G-0501",
@@ -52,7 +34,8 @@
       "age": "150",
       "lat": 51.68732,
       "lng": 5.316851,
-      "reason": "Reverse-geocodes to Hekellaan/Bazeldonk, a residential district distinct from Casinotuin (checked live via Nominatim: 'Bazeldonk' quarter, not 'Binnenstad'), roughly 500m-600m from the Casinotuin/Sint Janskerkhof cluster chosen this pass, near what appears to be a sports pitch rather than the historic rampart parkland the rest of the city's trees stand in. Not thematically or geographically part of this pass's walk; a large girth (531cm, the second-biggest in the 209-candidate pool) makes it worth a dedicated look in a future pass focused on the Bazeldonk area specifically."
+      "reason": "Reverse-geocodes to Hekellaan/Bazeldonk, a residential district distinct from Casinotuin (checked live via Nominatim: 'Bazeldonk' quarter, not 'Binnenstad'), roughly 500-600m from the Casinotuin/Sint Janskerkhof cluster chosen this pass, near what appears to be a sports pitch rather than the historic rampart parkland the rest of the city's trees stand in. Still not shipped this pass for the same reason: joining a dense, walkable core (dbo_005/006/007/008/009, all within ~300m) beats reaching 500m further for a bigger girth alone. Largest girth in the whole 209-candidate pool (531cm, second only to dbo_005's 612cm); worth a dedicated Bazeldonk-area look in a future pass.",
+      "note": "carried over unshipped from an earlier pass on this file"
     },
     {
       "ref": "G-0482",
@@ -61,7 +44,8 @@
       "age": "150",
       "lat": 51.686922,
       "lng": 5.316201,
-      "reason": "Same Bazeldonk-area group as G-0501 (reverse-geocodes to Limietlaan, tagged as a sports pitch by OpenStreetMap). See that entry's reason."
+      "reason": "Same Bazeldonk-area group as G-0501 (reverse-geocodes to Limietlaan, tagged as a sports pitch by OpenStreetMap). See that entry's reason.",
+      "note": "carried over unshipped from an earlier pass on this file"
     },
     {
       "ref": "G-0502",
@@ -70,8 +54,51 @@
       "age": "150",
       "lat": 51.687709,
       "lng": 5.317192,
-      "reason": "Same Bazeldonk-area group (Van Veldekekade). See G-0501's reason."
+      "reason": "Same Bazeldonk-area group (Van Veldekekade). See G-0501's reason.",
+      "note": "carried over unshipped from an earlier pass on this file"
+    },
+    {
+      "ref": "G-0224 / G-0226 / G-0227 / G-0233 / G-0240 / G-0223",
+      "species": "Aesculus hippocastanum (Horse Chestnut)",
+      "girth_cm": "283 to 345",
+      "age": "100",
+      "lat": 51.686,
+      "lng": 5.3095,
+      "reason": "The rest of the small horse-chestnut grove in Casinotuin that dbo_007 (G-0225, 402cm, the biggest of the group) was picked from. Not shipped individually: adding more of the same species within the same 60m would make dbo_007's already-flagged confusability worse, not better. Left as leads rather than blocked; a future pass with time for individual plaques or a site visit could differentiate them properly."
+    },
+    {
+      "ref": "G-0220",
+      "species": "Fagus sylvatica 'Pendula' (Weeping Beech)",
+      "girth_cm": 264,
+      "age": "90",
+      "lat": 51.68555,
+      "lng": 5.309195,
+      "reason": "Stands 13m from dbo_006 (the copper beech, G-0219) and is genuinely easy to tell apart from it (drooping weeping form vs upright copper-leaved crown, and a clear girth gap), so not a confusability risk, but smaller and less remarkable than dbo_006; left as a lead rather than shipped to keep this pass's new-tree count to what the brief asked for (6-8)."
+    },
+    {
+      "ref": "G-1603",
+      "species": "Pterocarya fraxinifolia (Caucasian Wingnut)",
+      "girth_cm": 267,
+      "age": "90",
+      "lat": 51.68564,
+      "lng": 5.31121,
+      "reason": "An unusual species (wingnut, catkins in long chains) near the Casinotuin/Hekellaan cluster, close to dbo_008. Below the girth of the trees shipped this pass and no second source found beyond the register; a genuinely interesting future candidate, not evidence-blocked, just not prioritised this pass."
+    },
+    {
+      "ref": "G-0406",
+      "species": "Corylus colurna (Turkish Hazel)",
+      "girth_cm": 251,
+      "age": "80",
+      "lat": 51.68545,
+      "lng": 5.310311,
+      "reason": "Smallest-girth candidate looked at in the Casinotuin core cluster, near dbo_007 and dbo_008. Not shipped: smallest of the group and no second source beyond the register found this pass."
     }
   ],
-  "blocked": []
+  "blocked": [
+    {
+      "ref": "no ref (boomenbosch.nl mention, no register id found)",
+      "species": "Aesculus hippocastanum (Horse Chestnut)",
+      "reason": "boomenbosch.nl (Boom en Bosch) records a monumental horse chestnut that fell over ('Monumentale kastanje omgevallen') at the corner of Casinotuin and Nachtegaalslaantje. Checked this against dbo_007 (G-0225) and the other Casinotuin chestnut leads above by live register vitality: all read 'Verminderd' (reduced), not dead or removed, so this fallen tree does not appear to be any candidate considered this pass. Recorded here so a future pass does not accidentally verify a chestnut at that corner without checking it is not this known-dead one first."
+    }
+  ]
 }
