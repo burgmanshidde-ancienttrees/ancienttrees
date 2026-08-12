@@ -163,6 +163,9 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS;
         <button class="go-btn ghost" type="button" id="collect-close">Not now</button>
       </div>
     </dialog>
+    {tree.how_to_recognise && (
+      <p class="which-one"><b>Which one is it?</b> {tree.how_to_recognise}</p>
+    )}
     <div class="prose-block"><p>{tree.story}</p></div>
     <Fragment set:html={seasonHtml} />
     <div class="map-embed"><div id="map" class="map"></div></div>

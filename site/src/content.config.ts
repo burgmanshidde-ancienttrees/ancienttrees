@@ -50,6 +50,30 @@ export const treeSchema = z.object({
   photo: photoSchema,
   curation_status: z.enum(["ai_generated", "hidde_approved", "flagged"]).optional(),
   location_precision: z.enum(["confirmed", "approximate"]).optional(),
+  /** Which tree it is, once you are standing there. One plain sentence.
+   *
+   * Added 2026-08-12 after a journalist at the Brabants Dagblad walked to the
+   * Norway Maple of Bastion Oranje and could not tell which tree it was,
+   * because several similar ones stand on the same rampart. Our own story on
+   * that page already said a second, younger Norway maple grows beside it. We
+   * knew and the page still sent him to a spot without telling him what to
+   * look at, and his trust in the whole site dropped, which is the correct
+   * response.
+   *
+   * location_precision does not cover this and cannot: it answers WHERE, and
+   * this answers WHICH. A pin can be exact to the metre and still useless
+   * among five similar trunks. Both are honesty fields and they fail
+   * separately.
+   *
+   * What belongs here: the thing you look at. Relative size against its
+   * neighbours, position against a gate, path, bench or building, a fork or
+   * lean, a plaque. "It stands alone, there is nothing else near it" is a
+   * good value and often the true one. What never belongs here: praise, the
+   * species, directions to the spot, or an invented feature. Where a tree
+   * genuinely cannot be told apart, say so here rather than leave it empty,
+   * because a visitor deserves to know that before the walk rather than
+   * after. */
+  how_to_recognise: z.string().optional(),
   label: z.string().optional(),
   notes: z.string().optional(),
   best_time: bestTimeSchema,
