@@ -5,6 +5,100 @@ workflow. Numbers are for the previous UTC day. While volume is tiny the
 conclusion says so plainly; noise is never narrated as trend (Hidde's
 standing rule, 2026-07-27).
 
+## 2026-08-11 (previous UTC day)
+
+**Today: nothing here needs you.** The blocks below are the standing picture.
+
+**Did the product happen**
+- app-cta:     0 yesterday, last never
+- collect:     0 yesterday, last never
+- directions:  0 yesterday, last never
+- share:       0 yesterday, last never
+- smoke-test:  0 yesterday, last 11 days ago
+- walk-start:  0 yesterday, last never
+
+| Day | Accounts | Waitlist | Submissions |
+|---|---:|---:|---:|
+| 07-29 | 0 | 0 | 0 |
+| 07-30 | 0 | 0 | 0 |
+| 07-31 | 0 | 2 | 0 |
+| 08-01 | 0 | 0 | 0 |
+| 08-02 | 0 | 0 | 0 |
+| 08-03 | 0 | 0 | 0 |
+| 08-04 | 0 | 1 | 0 |
+| 08-05 | 0 | 0 | 0 |
+| 08-06 | 0 | 0 | 0 |
+| 08-07 | 0 | 1 | 0 |
+| 08-08 | 1 | 1 | 0 |
+| 08-09 | 0 | 0 | 0 |
+| 08-10 | 0 | 0 | 0 |
+| 08-11 | 0 | 0 | 0 |
+| 08-12 | 0 | 0 | 0 |
+| **14 days** | **1** | **5** | **0** |
+- Waitlist:    5 total, newest 4 days ago
+- Submissions: 0 total, newest never
+- Accounts:    3 total, newest 4 days ago
+
+**The funnel, as rates**
+- Seen to clicked: 2.4% (91 of 3776) vs 2.2% the fortnight before
+- Pages per visit: 1.5 (196 visits, 289 pageviews since 2026-08-08)
+- Visits that did something: 0.0% (0 actions on 196 visits)
+
+**Where demand is going to waste**
+
+Search Console, the last 10 days Google will give us (its data lags 2-3 days, so the newest row is never yesterday). Position is an average across every query, so it dips whenever we start ranking for something new:
+
+| Day | Clicks | Impressions | CTR | Position |
+|---|---:|---:|---:|---:|
+| 08-02 | 7 | 299 | 2.3% | 15.5 |
+| 08-03 | 2 | 260 | 0.8% | 12.7 |
+| 08-04 | 8 | 254 | 3.1% | 11.1 |
+| 08-05 | 0 | 280 | 0.0% | 14.1 |
+| 08-06 | 7 | 215 | 3.3% | 13.4 |
+| 08-07 | 5 | 226 | 2.2% | 9.7 |
+| 08-08 | 7 | 194 | 3.6% | 10.0 |
+| 08-09 | 6 | 305 | 2.0% | 11.8 |
+| 08-10 | 16 | 394 | 4.1% | 13.5 |
+| 08-11 | 8 | 369 | 2.2% | 11.6 |
+| **window** | **66** | **2796** | **2.4%** | |
+- Top queries (10d): oldest tree in lisbon (i3, p10); "oldest of its species" ginkgo park (i2, p6); 1800 trees (i1, p19); 400 year old tree (i1, p18); a tree in naples (i3, p9)
+- Top pages (10d): / (c4/i30); /app (c4/i14); /prague (c4/i64); /kyoto (c3/i46); /porto (c3/i25)
+- Content lead: '1800 trees' has no matching page (i1, p19)
+- Seen, not clicked: /rome (c0/i57, 0.0%) for trees in rome (i14, p27); rome tree (i9, p54); trees of rome (i5, p20)
+- Seen, not clicked: /malaga (c0/i20, 0.0%) for árboles históricos de málaga (i19, p74); malaga tree (i1, p4)
+
+**Who they are**
+Audience, 28 days of search (109 clicks, 4745 impressions):
+- Countries: usa c18/i1016; deu c10/i197; gbr c10/i587; nld c8/i246; prt c7/i129
+- Devices: MOBILE c74/i2638; DESKTOP c35/i2064; TABLET c0/i43
+- Landing pages: /lisbon c8/i165; / c6/i57; /porto c5/i36; /prague c5/i99; /vienna c5/i102
+
+Web Analytics (beacon, real browsers, cookieless):
+Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.
+
+| Day | Visits | Pageviews |
+|---|---:|---:|
+| 08-04 | 10 | 20 |
+| 08-05 | 20 | 20 |
+| 08-06 | 0 | 10 |
+| 08-07 | 30 | 30 |
+| 08-08 | 70 | 120 |
+| 08-09 | 10 | 20 |
+| 08-10 | 150 | 170 |
+| 08-11 | 40 | 50 |
+| **window** | **330** | **440** |
+- Top paths: /app (50); /porto (50); / (30); /boston (20); /prague (20)
+- Referrers: (direct) (230); ancienttrees.app (110); www.google.com (90); zscaler-blocked.dpgmedia.net (10)
+- Countries: NL (140); US (90); DE (70); PT (50); CH (20)
+- Devices: desktop (330); mobile (110)
+- Page load (8d): p50 885ms, p90 7177ms
+
+Links: external referrers (a link somebody actually clicked): zscaler-blocked.dpgmedia.net (10)
+
+Machine: 7 chain attempts yesterday, 4 got real work time (~40 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Conclusion:** Search is the only channel with real data and it is still small: 8 clicks and 369 impressions on Google's freshest day (day before: c16/i394). Directional at best; no strategic conclusions from these volumes.
+
 ## 2026-08-10 (previous UTC day)
 
 **Today: nothing here needs you.** The blocks below are the standing picture.
