@@ -42,7 +42,7 @@ Ancient Trees, ancienttrees.app
 
 Buongiorno,
 
-gestisco un piccolo sito che mappa gli alberi storici delle citta europee, e
+Gestisco un piccolo sito che mappa gli alberi storici delle citta europee, e
 alcune delle mie pagine preferite riguardano i vostri.
 
 Abbiamo dedicato una pagina a cinque alberi del Real Orto Botanico, tra cui il
@@ -137,7 +137,7 @@ Ancient Trees, ancienttrees.app
 
 Guten Tag,
 
-ich betreibe eine kleine Website, die bemerkenswerte alte Baeume in
+Ich betreibe eine kleine Website, die bemerkenswerte alte Baeume in
 europaeischen Staedten kartiert. Fuenf Baeume unserer Muenchen-Liste stehen im
 Schlosspark Nymphenburg, darunter die Eiche am Doerfchen und die Blutbuche an
 der Badenburg.
@@ -162,7 +162,7 @@ Hidde, Ancient Trees (ancienttrees.app)
 
 Buongiorno,
 
-gestisco un piccolo sito che mappa gli alberi monumentali delle citta europee.
+Gestisco un piccolo sito che mappa gli alberi monumentali delle citta europee.
 Cinque alberi della nostra lista di Torino stanno nel Parco del Valentino, dal
 bagolaro alla quercia dietro il Castello.
 
@@ -185,7 +185,7 @@ Hidde, Ancient Trees (ancienttrees.app)
 
 Buenos dias,
 
-llevo una pequena web que mapea los arboles singulares de las ciudades
+Llevo una pequena web que mapea los arboles singulares de las ciudades
 europeas. Nueve arboles de nuestra lista de Madrid estan en el Retiro,
 empezando por el ahuehuete del Parterre, probablemente el arbol mas viejo de
 la ciudad.
@@ -208,7 +208,7 @@ Hidde, Ancient Trees (ancienttrees.app)
 
 Buongiorno,
 
-gestisco un piccolo sito che mappa gli alberi storici delle citta europee. Sei
+Gestisco un piccolo sito che mappa gli alberi storici delle citta europee. Sei
 alberi della nostra lista di Roma stanno a Villa Borghese, a cominciare da
 Adonis, il platano di quattro secoli che i forestali chiamano il piu vecchio
 della citta.
@@ -234,7 +234,7 @@ sends that, add one line pointing at the park page rather than a second email.)*
 
 Bonjour,
 
-je tiens un petit site qui cartographie les arbres remarquables des villes
+Je tiens un petit site qui cartographie les arbres remarquables des villes
 europeennes. Six arbres de notre liste bruxelloise se trouvent au Parc
 d'Egmont, du chene de Turner au ginkgo.
 
@@ -257,7 +257,7 @@ Hidde, Ancient Trees (ancienttrees.app)
 
 Buongiorno,
 
-gestisco un piccolo sito che mappa gli alberi monumentali delle citta europee.
+Gestisco un piccolo sito che mappa gli alberi monumentali delle citta europee.
 Cinque alberi della nostra lista di Milano stanno nei Giardini Montanelli,
 compreso Il Sacerdote e il platano di Indro.
 

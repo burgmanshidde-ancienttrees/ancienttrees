@@ -118,7 +118,50 @@ def check(path):
                      f"{len(sorries)} in one mail; keep one, cut the rest"))
     if "—" in body or "–" in body:
         hits.append(("EM DASH", "—", "hard rule 3: never, anywhere"))
+    # Only a real letter gets the capitals check: a file with no --- separator
+    # is a reference or template collection, and HIS_VOICE.md exists precisely
+    # to quote his own lower-case chat messages verbatim.
+    if BODY_SPLIT.search(text):
+        hits += lowercase_hits(body)
     return hits
+
+
+def lowercase_hits(body):
+    """A mail that opens in lower case. Hidde, 2026-08-12: "waarom gebruik je
+    geen hoofdletters, kun je dat vanaf nu doen als elk fatsoenlijk persoon."
+
+    My fault came from HIS_VOICE.md, which listed "lower case openings" as a
+    trait to imitate. It read his chat typing as his letter voice. He types fast
+    to me; a letter under his name to a journalist or a city office is his
+    shopfront. So this flags sentence starts, not stylistic lower case inside a
+    line, and it tolerates one because a signature or a stray line should not
+    fail a mail on its own.
+
+    A sentence start is the first word of a paragraph, or the word after a full
+    stop, question mark or exclamation mark. NOT the first word of every line:
+    the first version of this check counted wrapped lines, so a normal
+    paragraph broken at 80 characters failed on its own continuations and every
+    reference file in drafts/ lit up. Deliberately blind to urls, list markers
+    and anything starting with a digit, which is where the rest of the false
+    positives live."""
+    starts, bad = [], []
+    for para in re.split(r"\n\s*\n", body):
+        para = " ".join(l.strip() for l in para.strip().split("\n"))
+        if not para or para.startswith(("http", "-", "*", ">", "|")) or para[0].isdigit():
+            continue
+        starts.append(para)
+        starts += [s for s in re.split(r"(?<=[.!?])\s+", para)[1:] if s]
+    for s in starts:
+        w = s.split()[0] if s.split() else ""
+        if not w or not w[0].isalpha() or not w[0].islower():
+            continue
+        if w.lower().startswith(("ancienttrees", "http", "www")):
+            continue
+        bad.append(s[:60])
+    if len(bad) > 1:
+        return [("LOWER-CASE SENTENCES", "%d sentence(s)" % len(bad),
+                 "%s ... capitals, per his 2026-08-12 ruling" % bad[0])]
+    return []
 
 
 def main():

@@ -58,12 +58,24 @@ right**. Every draft of mine has been too long; adding is easier than cutting.
 
 ## What is audibly true of all four
 
-Short sentences, often run together. Lower case openings. Exclamation marks
-where he means them. Contractions and typos, because he is typing, not
-composing. He gives something before he asks: where he lives, what he has
-already done, why he starts with capitals. An ask is one sentence with no
-justification attached, and often carries its payoff ("dan kan ik die stad
-morgen toevoegen!"). He closes warmly and briefly.
+Short sentences, often run together. Exclamation marks where he means them.
+Contractions and typos, because he is typing, not composing. He gives something
+before he asks: where he lives, what he has already done, why he starts with
+capitals. An ask is one sentence with no justification attached, and often
+carries its payoff ("dan kan ik die stad morgen toevoegen!"). He closes warmly
+and briefly.
+
+**Capitals, ruled 2026-08-12: "waarom gebruik je geen hoofdletters, kun je dat
+vanaf nu doen als elk fatsoenlijk persoon".** This paragraph used to open with
+"Lower case openings" as a trait to copy, and that was the wrong lesson pulled
+from the right evidence. He types quickly to ME, in chat, where lower case is
+speed. A letter going out under his name to a journalist, a register moderator
+or a city office is not that; it is his shopfront, and a mail that opens
+"hoi roel, ik ben er nog even ingedoken" reads as careless rather than warm.
+So: sentences start with a capital, names and places carry theirs, and
+`mailcheck.py` fails a draft body that does not. Everything else here stands.
+Copy the shortness, the directness, the giving-before-asking, and his typos in
+the sense of unfussy phrasing, never in the sense of leaving a mail unpolished.
 
 And what is absent: no sentence that announces what the next sentence will do,
 no apology beyond a single inline sorry, no explanation of how the site works,
