@@ -359,7 +359,19 @@ Two goals, deliberately ranked.
 
 **2. Earn money.** Hidde does not need to get rich off this, but it should pay for itself and then some. (The "few thousand euro a month" figure that used to stand here was called loose talk by Hidde himself on 2026-07-26, GO_TO_MARKET.md "the revenue arithmetic: parked"; treat the amount as undecided, the direction as real.)
 
-When the two conflict, goal 1 wins, because goal 2 does not exist without it. Nobody subscribes to a map that sent them to the wrong place.
+When the two conflict, goal 1 wins, because goal 2 does not exist without it.
+
+**The two phases, named by Hidde 2026-08-12. Phase 1 is traction on the website: collecting people and data. Phase 2 is the app and monetisation.** We are in phase 1 and there is no date on the switch; evidence moves it, not the calendar.
+
+This is the sharpest filter the project has, because it turns the drift trigger from a philosophical question into an answerable one. **Does this piece of work collect people, collect data, or win traction?** If none of the three, it is phase 2 and it waits, however good it is.
+
+- **People** are readers, contributors, correspondents, the waitlist: anyone who might send a tree, a photograph or a link. The outreach threads are phase 1 work of the highest kind, because a reply is a person.
+- **Data** is trees, registers, photographs, coordinates. A register import is phase 1; so is a reader's tip.
+- **Traction** is impressions, clicks, and somebody linking to us. Measured in DATA.md, never in trees published.
+
+What this does NOT change: hard rules 1 and 2 stay shut. Accounts and payment are phase 2 by definition, and the recorded sequence in "Where this is going" is unchanged, so nothing here reopens them. The four verbs stay the product; phase 1 is how the product gets an audience, not a different product.
+
+The honest use of it is on our own work. On 2026-08-11 hours went into walk chips, a pin badge and mail wording. The mails were phase 1 and were the right call. The chips and the badge were neither people, nor data, nor traction. Nobody subscribes to a map that sent them to the wrong place.
 
 Note what that does and does not imply. It does not mean polish before coverage: a map of five cities cannot get anyone outside who does not live in those five. It means never lying about what you have. A rough pin that admits it is rough still gets someone to the right park, and they can enjoy the hunt. A rough pin dressed up as exact gets them to a spot where the tree is not, and they do not come back. Build wide, label honestly.
 
