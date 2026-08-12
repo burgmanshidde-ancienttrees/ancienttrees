@@ -267,6 +267,7 @@ const firstWalk = walks[0] ?? null;
               <h2 class="tree-name">{t.name}{t.label && <span class="tree-label">{t.label}</span>}</h2>
             </div>
             <p class="tree-meta" set:html={`${esc(t.species ?? "")} &middot; ${esc(t.age_estimate ?? "age unknown")} &middot; ${esc(t.location?.neighbourhood ?? "")}${bestTimeChip}`} />
+            {t.how_to_recognise && <p class="which-one"><b>Which one is it?</b> {t.how_to_recognise}</p>}
             <p class="tree-story">{t.story}</p>
             <p class="tree-more"><a href={`/${cslug}/${tslugs[t.id]}`}>Read more and get directions →</a></p>
           </article>

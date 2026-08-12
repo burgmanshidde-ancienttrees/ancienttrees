@@ -715,3 +715,12 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 /* Language switch line on translated city pairs (the Malaga /es/ test). */
 .lang-alt { font-size: 13px; color: var(--ink-light); margin: 0.35rem 0 0; }
 .lang-alt a { color: var(--moss); }
+
+/* "Which one is it?" — the field mark that tells a visitor which trunk is the
+   one, added 2026-08-12 after a journalist stood in front of the right spot
+   and could not tell. Styled as a practical note rather than prose: it is
+   read standing up, on a phone, with the tree in view. */
+.which-one { font-size: 13.5px; line-height: 1.5; color: var(--ink); background: var(--cream);
+             border-left: 3px solid var(--moss); border-radius: 0 8px 8px 0;
+             padding: 0.6rem 0.9rem; margin: 0 0 1rem; }
+.which-one b { color: var(--moss); }
