@@ -253,7 +253,28 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true",
                     help="exit 1 if city-list.json still carries an ordering field")
+    ap.add_argument("--next", action="store_true",
+                    help="print the cities below target, in queue order: what to work on")
     a = ap.parse_args()
+
+    if a.next:
+        # So a run does not have to reason out where to work, and so it stops.
+        # Hidde, 2026-08-12: "zodat ze niet teveel doorgraven in 1 stad."
+        doc = load_source()
+        gap = [c for c in doc["cities"]
+               if c.get("rank") and c.get("target") and c.get("trees", 0) < c["target"]]
+        gap.sort(key=lambda c: c["rank"])
+        print("BELOW TARGET, in queue order. Take the top one you can move cheaply,")
+        print("stop at the target, and leave the rest as leads.\n")
+        print("  #  city             now  gap  ready  register")
+        for c in gap:
+            print("%3d  %-16s %4d %4d %6d %9d" % (
+                c["rank"], c["city"][:16], c["trees"],
+                c["target"] - c["trees"], c.get("ready", 0), c.get("register", 0)))
+        print("\n%d cities, %d trees to go. Cities with no target get whatever"
+              % (len(gap), sum(c["target"] - c["trees"] for c in gap)))
+        print("verifies and are not chased.")
+        return 0
 
     if a.check:
         with open(LIST, encoding="utf-8") as fh:

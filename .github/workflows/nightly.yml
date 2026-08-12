@@ -143,10 +143,15 @@ jobs:
             a note saying so, rather than leaving the day empty: an empty day and
             a quiet day look identical in RETRO.md otherwise.
 
-            Order of cities: work top-down through CITY_QUEUE.md, which is the
-            single list and the single order. Do not use any city order
-            remembered from this prompt or from CLAUDE.md. LONDON IS GATED:
-            never research it and never touch Woodland Trust ATI data.
+            Order of cities: run `python3 scripts/city_queue.py --next`. It
+            prints the cities below their tree target in queue order, with the
+            gap and what supply is already on disk, from data/city-queue.json,
+            which is the source file for both the order and the target. Take the
+            top one you can move cheaply and STOP AT THE TARGET: leftover
+            candidates stay leads. Do not use any city order remembered from
+            this prompt or from CLAUDE.md, and do not deepen a city that has no
+            target. LONDON IS GATED: never research it and never touch Woodland
+            Trust ATI data.
 
             Before dispatching or starting any pass on a place, claim it:
             python3 scripts/passcheck.py --claim <place> --kind verify, commit
