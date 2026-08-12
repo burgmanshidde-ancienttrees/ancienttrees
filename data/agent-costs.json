@@ -1058,6 +1058,13 @@
         "tokens": 0,
         "trees": 2,
         "note": "Session work (not a dispatched agent), so no separate token line; folded into the same session as den-bosch. Resolved two HELD trees (kyo_015, kyo_017) stuck on an identical placeholder coordinate by geocoding their named gates via free Nominatim/OSM lookups (retrieval, not judgement, cost nothing) rather than a research pass. Also fixed missing access/transport on two already-live trees (kyo_016/018) and refreshed stale intro/meta/FAQ counts (16 to 18 trees) that would otherwise have repeated the Netherlands-country-page stale-count BLOCKER class a second time in one session."
+      },
+      {
+        "target": "bologna",
+        "kind": "verify",
+        "tokens": 0,
+        "trees": 1,
+        "note": "Session work, no separate dispatched pass. One register-backed tree (grey walnut, Juglans cinerea) shipped as bol_011 after WebSearch/WebFetch corroboration from two independent press sources citing university staff; joins bol_007 to cross the 3-tree walk minimum for the first time in Bologna. A second candidate (Cedar of Atlas, Villa delle Rose) checked and recorded as a lead instead of shipped, too far from any cluster. Also checked Rome's leftover register candidates: one (Quercia del Tasso, via Wikidata) confirmed dead and blocked before it could ship as a live entry; the other three confirmed already-blocked (San Sisto nursery). Rome: 0 shipped, register confirmed exhausted rather than merely unattended."
       }
     ]
   }
