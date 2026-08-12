@@ -4,24 +4,6 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "lisbon",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-12T10:38:42+00:00"
-    },
-    {
-      "target": "porto",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-12T10:38:42+00:00"
-    },
-    {
-      "target": "kyoto",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-12T10:38:42+00:00"
-    },
-    {
       "target": "den-bosch",
       "kind": "verify",
       "by": "session",
