@@ -44,16 +44,45 @@ evidence in this order:
 
 The floor is unchanged: four verified trees or no page.
 
-**A city is finished at three walks.** That is the smart max, and it is a cap on
-walks rather than on trees, because the walk is the product and the tree count
-never was. A walk is 4 to 8 stops averaging at least 3 stops per kilometre;
-below that density it is a hike, and Cadiz reads better at 5 trees in 0.9 km
-than Barcelona does at 46 trees across 8 walks.
+**The `target` column is the answer, and it is computed rather than chosen**
+(`python3 scripts/city_queue.py`). Hidde set the shape on 2026-08-12: easy and
+good supply means a big city may run to about 50 like Barcelona, hard to find
+means leave it, 20 to 30 is a fine first version, and past 50 is too much except
+perhaps for a Tokyo. What turns that into a rule is supply, and supply is far
+more lopsided than anyone guessed. Of 95 live cities, **68 have almost nothing
+cheap within reach and 27 do.** For two thirds of the map there is no decision
+to make.
 
-Trees beyond the three walks are not deleted and not refused. They stay live,
-on the map, collectible, listed below the walks. Nothing here re-opens the
-question of whether a tree may be published: per the 2026-08-10 ruling, only
-the hard rules and an unstatable location can stop that.
+    supply = register trees within 5 km + leads already ready to write
+
+| supply | target | what it means |
+|---|---:|---|
+| under 10 | none | the city gets whatever verifies, usually 4 to 10 |
+| 10 to 49 | 20 | one good afternoon plus a second walk |
+| 50 to 199 | 30 | two or three walks, comfortably |
+| 200+, demand measured | 50 | Amsterdam, Vienna, Barcelona class |
+| 200+, no demand yet | 30 | cheap supply is not a reason to build a page nobody opens |
+
+Past 50 is a session decision with Hidde, never a run's.
+
+**Three things the target is not.** It is not a quota: the bar per tree does not
+move, padding stays forbidden, and a city that runs out of trees clearing the
+bar is finished below its target. It is not a floor: a city over its target
+(Rome publishes 24 against 20) is finished, and nothing is ever removed to meet
+a number. And a dash is not missing data, it is the answer: no cheap supply, so
+no push, which is exactly why Prague sits third on demand with no target.
+
+**This replaces "a city is finished at three walks" as the stopping rule**, on
+his 2026-08-12 ruling. The three-walk line survives where it was always right,
+which is what the PAGE leads with: a reader gets the best three walks, and trees
+beyond them stay published, on the map, collectible, listed below. Barcelona's
+46 trees across 7 walks was never wrong as data, only as presentation. A walk is
+still 4 to 8 stops averaging at least 3 stops per kilometre; below that density
+it is a hike, and Cadiz still reads better at 5 trees in 0.9 km than Barcelona
+does at 46.
+
+Nothing here re-opens whether a tree may be published: per the 2026-08-10
+ruling, only the hard rules and an unstatable location can stop that.
 
 Deep enough, per Hidde 2026-08-08, unchanged: at least one complete walk of 4
 to 8 trees inside roughly 2 km, photographs on most of that walk, honest pins
@@ -96,108 +125,108 @@ block it: the cap limits walks presented, not trees published.
 
 Work top-down. Reader submissions and a broken site still outrank everything.
 
-| # | city | score | demand | trees | photos | register | basis |
-|---|---|---:|---:|---:|---:|---:|---|
-| 1 | Lisbon | 7.99 | 201,877 | 21 | 10 | 104 | measured |
-| 2 | Porto | 5.00 | 120,415 | 17 | 4 | 46 | measured |
-| 3 | Prague | 4.00 | 303,350 | 16 | 13 | - | measured |
-| 4 | Vienna | 3.99 | 283,090 | 22 | 13 | 394 | measured |
-| 5 | Amsterdam | 3.00 | 294,030 | 20 | 7 | 5827 | measured |
-| 6 | Kyoto | 3.00 | 142,353 | 14 | 8 | 1 | measured |
-| 7 | New York | 2.81 | 1,124,326 | 20 | 5 | - | published, never ranked |
-| 8 | Singapore | 2.42 | 967,821 | 7 | 3 | - | published, never ranked |
-| 9 | Galway | 2.20 | 88,162 | 0 | 0 | - | predicted (thin competition) |
-| 10 | Nagoya | 2.09 | 83,437 | 0 | 0 | - | predicted (thin competition) |
-| 11 | Jaipur | 2.06 | 82,569 | 0 | 0 | - | predicted (thin competition) |
-| 12 | Rome | 2.01 | 358,876 | 24 | 9 | 38 | measured |
-| 13 | Bologna | 2.00 | 146,161 | 10 | 8 | 17 | measured |
-| 14 | Cadiz | 2.00 | 79,226 | 5 | 4 | 3 | measured |
-| 15 | London | 1.80 | 718,291 | 23 | 10 | - | published, never ranked |
-| 16 | Agra | 1.77 | 70,904 | 0 | 0 | - | predicted (thin competition) |
-| 17 | Hong Kong | 1.72 | 689,212 | 6 | 2 | - | published, never ranked |
-| 18 | Chiang Mai | 1.66 | 66,541 | 0 | 0 | - | predicted (thin competition) |
-| 19 | Washington DC | 1.52 | 606,731 | 14 | 1 | - | published, never ranked |
-| 20 | Kobe | 1.37 | 54,798 | 0 | 0 | - | predicted (thin competition) |
-| 21 | Paris | 1.31 | 524,268 | 25 | 9 | 185 | published, never ranked |
-| 22 | Chicago | 1.21 | 485,769 | 6 | 0 | - | published, never ranked |
-| 23 | Salamanca | 1.20 | 47,897 | 0 | 0 | - | predicted (thin competition) |
-| 24 | Berlin | 1.03 | 412,181 | 18 | 11 | 597 | published, never ranked |
-| 25 | Athens | 1.01 | 235,429 | 12 | 6 | - | measured |
-| 26 | Tokyo | 0.99 | 394,702 | 10 | 8 | 15 | published, never ranked |
-| 27 | Boston | 0.96 | 385,902 | 10 | 1 | - | published, never ranked |
-| 28 | Barcelona | 0.87 | 346,477 | 46 | 12 | 208 | published, never ranked |
-| 29 | Coimbra | 0.87 | 34,962 | 0 | 0 | - | predicted (thin competition) |
-| 30 | Braga | 0.86 | 34,522 | 0 | 0 | - | predicted (thin competition) |
-| 31 | Kamakura | 0.84 | 33,492 | 0 | 0 | - | predicted (thin competition) |
-| 32 | Istanbul | 0.83 | 333,027 | 14 | 4 | - | published, never ranked |
-| 33 | Edinburgh | 0.73 | 292,981 | 15 | 4 | - | published, never ranked |
-| 34 | Budapest | 0.71 | 283,807 | 12 | 1 | - | published, never ranked |
-| 35 | Madrid | 0.69 | 274,553 | 17 | 10 | - | published, never ranked |
-| 36 | Denpasar | 0.69 | 27,679 | 0 | 0 | - | predicted (thin competition) |
-| 37 | Venice | 0.67 | 267,527 | 11 | 6 | 29 | published, never ranked |
-| 38 | Kanazawa | 0.64 | 25,778 | 0 | 0 | - | predicted (thin competition) |
-| 39 | Glasgow | 0.63 | 253,705 | 4 | 2 | - | published, never ranked |
-| 40 | Dublin | 0.60 | 240,850 | 17 | 4 | 16 | published, never ranked |
-| 41 | The Hague | 0.59 | 236,723 | 5 | 1 | - | published, never ranked |
-| 42 | Munich | 0.56 | 224,067 | 14 | 13 | - | published, never ranked |
-| 43 | Bangkok | 0.56 | 222,206 | 5 | 0 | - | published, never ranked |
-| 44 | Copenhagen | 0.55 | 218,621 | 13 | 0 | - | published, never ranked |
-| 45 | Milan | 0.53 | 212,705 | 18 | 9 | 72 | published, never ranked |
-| 46 | Seoul | 0.52 | 206,265 | 8 | 5 | - | published, never ranked |
-| 47 | Naples | 0.50 | 198,913 | 17 | 3 | 69 | published, never ranked |
-| 48 | Warsaw | 0.49 | 197,929 | 5 | 3 | - | published, never ranked |
-| 49 | Stockholm | 0.47 | 188,184 | 4 | 3 | - | published, never ranked |
-| 50 | Florence | 0.46 | 184,099 | 15 | 7 | 37 | published, never ranked |
-| 51 | Oslo | 0.45 | 181,113 | 4 | 0 | - | published, never ranked |
-| 52 | Thessaloniki | 0.45 | 180,145 | 4 | 0 | - | published, never ranked |
-| 53 | Belgrade | 0.45 | 178,116 | 4 | 4 | - | published, never ranked |
-| 54 | Brussels | 0.44 | 176,863 | 16 | 4 | 582 | published, never ranked |
-| 55 | Seville | 0.43 | 170,545 | 16 | 6 | 3 | published, never ranked |
-| 56 | Reykjavik | 0.42 | 166,789 | 4 | 0 | - | published, never ranked |
-| 57 | Bristol | 0.41 | 163,983 | 5 | 1 | - | published, never ranked |
-| 58 | Osaka | 0.41 | 163,112 | 4 | 1 | 2 | published, never ranked |
-| 59 | Geneva | 0.41 | 162,269 | 6 | 4 | - | published, never ranked |
-| 60 | Valencia | 0.41 | 162,209 | 16 | 2 | 448 | published, never ranked |
-| 61 | Helsinki | 0.37 | 148,908 | 8 | 1 | - | published, never ranked |
-| 62 | Turin | 0.37 | 147,456 | 8 | 7 | 98 | published, never ranked |
-| 63 | Genoa | 0.36 | 145,206 | 10 | 0 | 32 | published, never ranked |
-| 64 | Bath | 0.36 | 144,950 | 5 | 1 | - | published, never ranked |
-| 65 | Krakow | 0.35 | 140,824 | 4 | 3 | - | published, never ranked |
-| 66 | Zurich | 0.35 | 140,788 | 4 | 0 | - | published, never ranked |
-| 67 | Sofia | 0.35 | 138,710 | 4 | 1 | - | published, never ranked |
-| 68 | Lyon | 0.34 | 136,951 | 9 | 3 | - | published, never ranked |
-| 69 | Nice | 0.34 | 136,877 | 10 | 8 | - | published, never ranked |
-| 70 | Bucharest | 0.34 | 136,836 | 4 | 0 | - | published, never ranked |
-| 71 | Split | 0.33 | 132,399 | 4 | 0 | - | published, never ranked |
-| 72 | Antwerp | 0.32 | 128,289 | 10 | 4 | - | published, never ranked |
-| 73 | Ljubljana | 0.31 | 125,046 | 4 | 0 | - | published, never ranked |
-| 74 | Palermo | 0.31 | 124,310 | 8 | 7 | 42 | published, never ranked |
-| 75 | Dubrovnik | 0.30 | 119,586 | 4 | 1 | - | published, never ranked |
-| 76 | York | 0.30 | 118,066 | 6 | 2 | - | published, never ranked |
-| 77 | Malaga | 0.29 | 117,780 | 10 | 5 | 14 | published, never ranked |
-| 78 | Trieste | 0.29 | 117,233 | 8 | 0 | 53 | published, never ranked |
-| 79 | Oxford | 0.28 | 111,583 | 5 | 1 | - | published, never ranked |
-| 80 | Rotterdam | 0.26 | 104,938 | 5 | 0 | - | published, never ranked |
-| 81 | Cork | 0.25 | 101,405 | 5 | 2 | - | published, never ranked |
-| 82 | Cambridge | 0.24 | 97,974 | 5 | 2 | - | published, never ranked |
-| 83 | Zaragoza | 0.22 | 87,580 | 4 | 0 | 1 | published, never ranked |
-| 84 | Granada | 0.22 | 86,361 | 10 | 3 | 14 | published, never ranked |
-| 85 | Verona | 0.19 | 77,646 | 8 | 4 | 12 | published, never ranked |
-| 86 | Fukuoka | 0.19 | 77,485 | 11 | 7 | 4 | published, never ranked |
-| 87 | Cordoba | 0.19 | 74,675 | 7 | 2 | 9 | published, never ranked |
-| 88 | Utrecht | 0.17 | 67,963 | 5 | 4 | - | published, never ranked |
-| 89 | Padua | 0.14 | 54,592 | 9 | 4 | 22 | published, never ranked |
-| 90 | Phuket | 0.14 | 5,487 | 0 | 0 | - | predicted (thin competition) |
-| 91 | Lucca | 0.13 | 52,271 | 6 | 3 | 39 | published, never ranked |
-| 92 | Maastricht | 0.12 | 47,763 | 5 | 0 | - | published, never ranked |
-| 93 | Sintra | 0.12 | 46,889 | 5 | 3 | 49 | published, never ranked |
-| 94 | Nijmegen | 0.11 | 42,338 | 5 | 0 | - | published, never ranked |
-| 95 | Den Bosch | 0.10 | 39,682 | 4 | 0 | - | published, never ranked |
-| 96 | Breda | 0.09 | 36,579 | 4 | 0 | - | published, never ranked |
-| 97 | Haarlem | 0.08 | 33,960 | 4 | 0 | 4952 | published, never ranked |
-| 98 | Leiden | 0.08 | 33,227 | 6 | 4 | - | published, never ranked |
-| 99 | Arnhem | 0.08 | 31,478 | 4 | 0 | - | published, never ranked |
-| 100 | Groningen | 0.08 | 31,401 | 5 | 0 | - | published, never ranked |
+| # | city | score | demand | trees | photos | walks | register | target | basis |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| 1 | Lisbon | 7.99 | 201,877 | 33 | 10 | 3 | 66 | 30 | measured |
+| 2 | Porto | 5.00 | 120,415 | 27 | 5 | 2 | 40 | 20 | measured |
+| 3 | Prague | 4.00 | 303,350 | 17 | 13 | 3 | - | - | measured |
+| 4 | Vienna | 3.99 | 283,090 | 22 | 13 | 4 | 377 | 50 | measured |
+| 5 | Amsterdam | 3.00 | 294,030 | 20 | 7 | 2 | 4993 | 50 | measured |
+| 6 | Kyoto | 3.00 | 142,353 | 18 | 8 | 2 | - | - | measured |
+| 7 | New York | 2.81 | 1,124,326 | 20 | 5 | 2 | - | - | published, never ranked |
+| 8 | Singapore | 2.42 | 967,821 | 7 | 3 | 1 | - | - | published, never ranked |
+| 9 | Galway | 2.20 | 88,162 | - | - | - | - | - | predicted (thin competition) |
+| 10 | Nagoya | 2.09 | 83,437 | - | - | - | - | - | predicted (thin competition) |
+| 11 | Jaipur | 2.06 | 82,569 | - | - | - | - | - | predicted (thin competition) |
+| 12 | Rome | 2.01 | 358,876 | 24 | 9 | 2 | 32 | 20 | measured |
+| 13 | Bologna | 2.00 | 146,161 | 11 | 8 | 2 | 8 | - | measured |
+| 14 | Cadiz | 2.00 | 79,226 | 5 | 4 | 1 | - | - | measured |
+| 15 | London | 1.80 | 718,291 | 23 | 10 | 1 | - | - | published, never ranked |
+| 16 | Agra | 1.77 | 70,904 | - | - | - | - | - | predicted (thin competition) |
+| 17 | Hong Kong | 1.72 | 689,212 | 6 | 2 | - | - | - | published, never ranked |
+| 18 | Chiang Mai | 1.66 | 66,541 | - | - | - | - | - | predicted (thin competition) |
+| 19 | Washington DC | 1.52 | 606,731 | 14 | 1 | 2 | - | - | published, never ranked |
+| 20 | Kobe | 1.37 | 54,798 | - | - | - | - | - | predicted (thin competition) |
+| 21 | Paris | 1.31 | 524,268 | 25 | 9 | 3 | 128 | 30 | published, never ranked |
+| 22 | Chicago | 1.21 | 485,769 | 6 | - | - | - | - | published, never ranked |
+| 23 | Salamanca | 1.20 | 47,897 | - | - | - | - | - | predicted (thin competition) |
+| 24 | Berlin | 1.03 | 412,181 | 18 | 11 | 1 | 114 | 30 | published, never ranked |
+| 25 | Athens | 1.01 | 235,429 | 12 | 6 | 2 | - | - | measured |
+| 26 | Tokyo | 0.99 | 394,702 | 10 | 8 | - | 7 | - | published, never ranked |
+| 27 | Boston | 0.96 | 385,902 | 10 | 1 | 1 | - | - | published, never ranked |
+| 28 | Barcelona | 0.87 | 346,477 | 46 | 12 | 7 | 183 | 30 | published, never ranked |
+| 29 | Coimbra | 0.87 | 34,962 | - | - | - | - | - | predicted (thin competition) |
+| 30 | Braga | 0.86 | 34,522 | - | - | - | - | - | predicted (thin competition) |
+| 31 | Kamakura | 0.84 | 33,492 | - | - | - | - | - | predicted (thin competition) |
+| 32 | Istanbul | 0.83 | 333,027 | 14 | 4 | 1 | - | - | published, never ranked |
+| 33 | Edinburgh | 0.73 | 292,981 | 15 | 4 | 1 | - | - | published, never ranked |
+| 34 | Budapest | 0.71 | 283,807 | 12 | 1 | 3 | - | - | published, never ranked |
+| 35 | Madrid | 0.69 | 274,553 | 17 | 10 | 2 | - | - | published, never ranked |
+| 36 | Denpasar | 0.69 | 27,679 | - | - | - | - | - | predicted (thin competition) |
+| 37 | Venice | 0.67 | 267,527 | 11 | 6 | 1 | 4 | - | published, never ranked |
+| 38 | Kanazawa | 0.64 | 25,778 | - | - | - | - | - | predicted (thin competition) |
+| 39 | Glasgow | 0.63 | 253,705 | 4 | 2 | - | - | - | published, never ranked |
+| 40 | Dublin | 0.60 | 240,850 | 17 | 4 | 2 | 12 | 20 | published, never ranked |
+| 41 | The Hague | 0.59 | 236,723 | 5 | 1 | 1 | - | - | published, never ranked |
+| 42 | Munich | 0.56 | 224,067 | 22 | 13 | 3 | - | 20 | published, never ranked |
+| 43 | Bangkok | 0.56 | 222,206 | 5 | - | 1 | - | - | published, never ranked |
+| 44 | Copenhagen | 0.55 | 218,621 | 13 | - | 2 | - | - | published, never ranked |
+| 45 | Milan | 0.53 | 212,705 | 18 | 9 | 2 | 25 | 20 | published, never ranked |
+| 46 | Seoul | 0.52 | 206,265 | 8 | 5 | 1 | - | - | published, never ranked |
+| 47 | Naples | 0.50 | 198,913 | 17 | 3 | 2 | 46 | 20 | published, never ranked |
+| 48 | Warsaw | 0.49 | 197,929 | 5 | 3 | - | - | - | published, never ranked |
+| 49 | Stockholm | 0.47 | 188,184 | 4 | 3 | - | - | - | published, never ranked |
+| 50 | Florence | 0.46 | 184,099 | 22 | 7 | 3 | 27 | 20 | published, never ranked |
+| 51 | Oslo | 0.45 | 181,113 | 4 | - | - | - | - | published, never ranked |
+| 52 | Thessaloniki | 0.45 | 180,145 | 4 | - | 1 | - | - | published, never ranked |
+| 53 | Belgrade | 0.45 | 178,116 | 4 | 4 | - | - | - | published, never ranked |
+| 54 | Brussels | 0.44 | 176,863 | 16 | 4 | 1 | 371 | 30 | published, never ranked |
+| 55 | Seville | 0.43 | 170,545 | 16 | 6 | 2 | - | 20 | published, never ranked |
+| 56 | Reykjavik | 0.42 | 166,789 | 4 | - | 1 | - | - | published, never ranked |
+| 57 | Bristol | 0.41 | 163,983 | 5 | 1 | - | - | - | published, never ranked |
+| 58 | Osaka | 0.41 | 163,112 | 4 | 1 | - | - | - | published, never ranked |
+| 59 | Geneva | 0.41 | 162,269 | 6 | 4 | 1 | - | - | published, never ranked |
+| 60 | Valencia | 0.41 | 162,209 | 16 | 2 | 2 | 347 | 30 | published, never ranked |
+| 61 | Helsinki | 0.37 | 148,908 | 8 | 1 | - | - | - | published, never ranked |
+| 62 | Turin | 0.37 | 147,456 | 8 | 7 | 2 | 32 | 20 | published, never ranked |
+| 63 | Genoa | 0.36 | 145,206 | 10 | - | 1 | 11 | 20 | published, never ranked |
+| 64 | Bath | 0.36 | 144,950 | 5 | 1 | 1 | - | - | published, never ranked |
+| 65 | Krakow | 0.35 | 140,824 | 4 | 3 | 1 | - | - | published, never ranked |
+| 66 | Zurich | 0.35 | 140,788 | 4 | - | - | - | - | published, never ranked |
+| 67 | Sofia | 0.35 | 138,710 | 4 | 1 | - | - | - | published, never ranked |
+| 68 | Lyon | 0.34 | 136,951 | 9 | 3 | 1 | - | - | published, never ranked |
+| 69 | Nice | 0.34 | 136,877 | 10 | 8 | 2 | - | - | published, never ranked |
+| 70 | Bucharest | 0.34 | 136,836 | 4 | - | 1 | - | - | published, never ranked |
+| 71 | Split | 0.33 | 132,399 | 4 | - | 1 | - | - | published, never ranked |
+| 72 | Antwerp | 0.32 | 128,289 | 10 | 4 | 1 | - | - | published, never ranked |
+| 73 | Ljubljana | 0.31 | 125,046 | 4 | - | 1 | - | - | published, never ranked |
+| 74 | Palermo | 0.31 | 124,310 | 8 | 7 | 2 | 45 | 20 | published, never ranked |
+| 75 | Dubrovnik | 0.30 | 119,586 | 4 | 1 | 1 | - | - | published, never ranked |
+| 76 | York | 0.30 | 118,066 | 6 | 2 | 1 | - | - | published, never ranked |
+| 77 | Malaga | 0.29 | 117,780 | 10 | 5 | 2 | - | - | published, never ranked |
+| 78 | Trieste | 0.29 | 117,233 | 8 | - | 2 | 43 | 20 | published, never ranked |
+| 79 | Oxford | 0.28 | 111,583 | 5 | 1 | 1 | - | - | published, never ranked |
+| 80 | Rotterdam | 0.26 | 104,938 | 5 | - | 1 | - | - | published, never ranked |
+| 81 | Cork | 0.25 | 101,405 | 5 | 2 | - | - | - | published, never ranked |
+| 82 | Cambridge | 0.24 | 97,974 | 5 | 2 | 1 | - | - | published, never ranked |
+| 83 | Zaragoza | 0.22 | 87,580 | 4 | - | 1 | - | - | published, never ranked |
+| 84 | Granada | 0.22 | 86,361 | 10 | 3 | 2 | 4 | - | published, never ranked |
+| 85 | Verona | 0.19 | 77,646 | 8 | 4 | 2 | 3 | - | published, never ranked |
+| 86 | Fukuoka | 0.19 | 77,485 | 11 | 7 | 1 | 1 | - | published, never ranked |
+| 87 | Cordoba | 0.19 | 74,675 | 7 | 2 | 2 | 3 | 20 | published, never ranked |
+| 88 | Utrecht | 0.17 | 67,963 | 5 | 4 | 1 | - | - | published, never ranked |
+| 89 | Padua | 0.14 | 54,592 | 9 | 4 | 1 | 12 | 20 | published, never ranked |
+| 90 | Phuket | 0.14 | 5,487 | - | - | - | - | - | predicted (thin competition) |
+| 91 | Lucca | 0.13 | 52,271 | 6 | 3 | 1 | 27 | 20 | published, never ranked |
+| 92 | Maastricht | 0.12 | 47,763 | 5 | - | - | - | - | published, never ranked |
+| 93 | Sintra | 0.12 | 46,889 | 5 | 3 | 1 | 6 | - | published, never ranked |
+| 94 | Nijmegen | 0.11 | 42,338 | 5 | - | 1 | - | - | published, never ranked |
+| 95 | Den Bosch | 0.10 | 39,682 | 11 | - | 1 | - | - | published, never ranked |
+| 96 | Breda | 0.09 | 36,579 | 4 | - | 1 | - | - | published, never ranked |
+| 97 | Haarlem | 0.08 | 33,960 | 4 | - | - | - | - | published, never ranked |
+| 98 | Leiden | 0.08 | 33,227 | 6 | 4 | 1 | - | - | published, never ranked |
+| 99 | Arnhem | 0.08 | 31,478 | 4 | - | - | - | - | published, never ranked |
+| 100 | Groningen | 0.08 | 31,401 | 5 | - | 1 | - | - | published, never ranked |
 
 ## What this replaces
 
