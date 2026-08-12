@@ -136,6 +136,16 @@ block it: the cap limits walks presented, not trees published.
 
 Work top-down. Reader submissions and a broken site still outrank everything.
 
+**The source is `data/city-queue.json`, not this table.** Hidde asked for one
+source file carrying the priority of the 100 cities and the tree target per city
+(2026-08-12), and this is the rendering of it. Everything measurable in the row
+(trees, photos, walks, register, target) is recomputed by
+`python3 scripts/city_queue.py` and written into the json first; `score`,
+`demand` and `basis` are the session-decided columns and live there too.
+`data/city-list.json` is generated from the same source as the inventory the
+site and scripts read. Editing a row here by hand makes a second source again,
+so qa.py fails the deploy when the table and the json disagree.
+
 | # | city | score | demand | trees | photos | walks | register | target | basis |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
 | 1 | Lisbon | 7.99 | 201,877 | 33 | 10 | 3 | 66 | 25 | measured |

@@ -93,7 +93,7 @@ Each run, do exactly this, in order:
 
 ### Step 0 — Read state and pick the work
 
-Read `/data/city-list.json` and the published city files, then take the first item on this ladder that applies. Do one thing per run and do it properly; a half-researched city is worse than none.
+Read `/data/city-queue.json` (the source file: every city's rank, score, tree target and measured state) and the published city files, then take the first item on this ladder that applies. Do one thing per run and do it properly; a half-researched city is worse than none.
 
 1. **Unprocessed submissions** (see Step 0b). Someone cared enough to send something, that outranks everything.
 2. **The site is broken.** Build fails, a link is dead, a page violates a contract, the latest Smoke test workflow run is red, or REVIEW.md's newest entry holds a BLOCKER. Fix it before adding anything new. Same rung: if the Weekly analysis workflow has not run in 8+ days, dispatch it; and if the Data digest or Fresh-eyes review workflow has not run in 26+ hours (`gh run list --workflow=<file> -L 1`), dispatch it with `gh workflow run` — GitHub drops schedules silently, and the digest's own watchdog cannot report a digest that never ran.
