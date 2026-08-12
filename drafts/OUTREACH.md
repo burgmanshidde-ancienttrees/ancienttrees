@@ -33,6 +33,14 @@ actually clicked) and links to the Links report for a manual read.
 | 4 | Bruxelles Environnement / opendata.bruxelles.be | Whether they can tell us which of the 582 remarkable trees stand on private ground. Their dataset carries no ownership field, which is why we took the map dots down under hard rule 10. | Restores 582 dots and makes Brussels publishable |
 | 5 | SPW Wallonie, AHREM | What the three `DOMAINE` codes mean (13,007 / 6,985 / 253), and which records are the ones their own data model says are "positionnes aleatoirement" inside an address perimeter | 20,245 trees, the richest schema found anywhere. Licence is already fine (CC BY 4.0); only rule 10 blocks it. |
 | 6 | GDOS Poland (CRFOP) | Confirmation of the data licence. Portal metadata reads CC0 but the licence-condition fields are empty and the site publishes CC BY-SA for its own content. | 117,474 tree monuments, the largest verified pool anywhere |
+| 7 | Dipartimento Tutela Ambientale, Roma Capitale | Which of the two near-identical hackberries in the Lecceta at Villa Borghese is the one the citizen registry logs (we hold coordinates and a 4 m girth, they hold the ground). Contacts page: comune.roma.it/web/it/dipartimento-tutela-ambientale-uffici-e-contatti.page | Turns rom_022 from "one of two similar trunks" into a tree somebody can find. They manage the green around the Aranciera and Museo Bilotti, so they are also the right address for anything else in Villa Borghese. |
+| 8 | Ufficio Ville, Sovrintendenza Capitolina | The historic villas' own tree knowledge: Borghese, Torlonia, Celimontana, Doria Pamphilj and Sciarra all carry trees we publish. Contacts page: comune.roma.it/web/it/sovrintendenza-capitolina-uffici-e-contatti.page | Rome is our deepest page (24 trees) and takes zero clicks; a municipal link is worth more here than a 25th tree. |
+
+**Both Rome offices came from the Sovrintendenza's own reply of 2026-08-12**,
+which answered our question about two trees and named these two as the
+competent offices. That reply is a warm thread, not a cold approach: the
+first move is `drafts/reply-roma-sovrintendenza.md`, and only if it stalls do
+these become separate letters.
 
 ## Tier 3: backlinks. Named targets, each with a reason to write
 
