@@ -44,42 +44,53 @@ evidence in this order:
 
 The floor is unchanged: four verified trees or no page.
 
-**The `target` column is the answer, and it is computed rather than chosen**
-(`python3 scripts/city_queue.py`). Hidde set the shape on 2026-08-12: easy and
-good supply means a big city may run to about 50 like Barcelona, hard to find
-means leave it, 20 to 30 is a fine first version, and past 50 is too much except
-perhaps for a Tokyo. What turns that into a rule is supply, and supply is far
-more lopsided than anyone guessed. Of 95 live cities, **68 have almost nothing
-cheap within reach and 27 do.** For two thirds of the map there is no decision
-to make.
+**A lot of cities at 10 to 25 trees, and deepen later.** Hidde, 2026-08-12:
+"ik denk dat we veel beter een hoop steden met 10-25 bomen en dan later
+verdiepen." So the `target` column is one ceiling for everyone who has something
+to work with, and it is 25. Breadth is the phase, and a good afternoon does not
+scale with a city's population.
 
     supply = register trees within 5 km + leads already ready to write
 
 | supply | target | what it means |
 |---|---:|---|
 | under 10 | none | the city gets whatever verifies, usually 4 to 10 |
-| 10 to 49 | 20 | one good afternoon plus a second walk |
-| 50 to 199 | 30 | two or three walks, comfortably |
-| 200+, demand measured | 50 | Amsterdam, Vienna, Barcelona class |
-| 200+, no demand yet | 30 | cheap supply is not a reason to build a page nobody opens |
+| 10 or more | 25 | the first-version ceiling, the same everywhere |
 
-Past 50 is a session decision with Hidde, never a run's.
+Of 95 live cities, 68 have almost nothing cheap within reach and 27 do, so for
+two thirds of the map the count is settled by what exists rather than by
+ambition. Regenerate with `python3 scripts/city_queue.py`.
 
-**Three things the target is not.** It is not a quota: the bar per tree does not
-move, padding stays forbidden, and a city that runs out of trees clearing the
-bar is finished below its target. It is not a floor: a city over its target
-(Rome publishes 24 against 20) is finished, and nothing is ever removed to meet
-a number. And a dash is not missing data, it is the answer: no cheap supply, so
-no push, which is exactly why Prague sits third on demand with no target.
+**Past 25 is deepening, not a target.** It is a later decision, taken on a city
+that has actually shown demand, and taken with Hidde. A city already past it is
+finished rather than over budget: Barcelona publishes 46 and nothing is ever
+removed to meet a number.
 
-**This replaces "a city is finished at three walks" as the stopping rule**, on
-his 2026-08-12 ruling. The three-walk line survives where it was always right,
-which is what the PAGE leads with: a reader gets the best three walks, and trees
-beyond them stay published, on the map, collectible, listed below. Barcelona's
-46 trees across 7 walks was never wrong as data, only as presentation. A walk is
-still 4 to 8 stops averaging at least 3 stops per kilometre; below that density
-it is a hike, and Cadiz still reads better at 5 trees in 0.9 km than Barcelona
-does at 46.
+**The first version of this column was wrong, and the record is kept because the
+mistake is instructive.** It banded the target by how much supply sat nearby and
+handed 50 to cities with 200+ supply and measured demand, 30 to the rest. That
+gave Vienna 50 and Barcelona 30: comparable supply, opposite targets, decided by
+whether Search Console had spoken rather than by anything about their trees, and
+Barcelona is the city he had called the mega city. His reply was one line:
+"maar waarom in godsnaam 50 doel bij wenen". The fault underneath is worth
+remembering whenever a number gets scaled by a register count: **a register
+measures how EASY trees are to find, never how GOOD they are.** Amsterdam's
+4,993 nearby entries are a municipal inventory, not 4,993 trees that clear our
+bar.
+
+**Three things the target is not.** Not a quota: the bar per tree does not move
+and padding stays forbidden, so a city that runs out of trees clearing the bar
+is finished below its target. Not a floor. And a dash is not missing data, it is
+the answer: no cheap supply, so no push, which is why Prague sits third on
+demand with no target.
+
+**This replaces "a city is finished at three walks" as the stopping rule.** The
+three-walk line survives where it was always right, which is what the PAGE leads
+with: a reader gets the best three walks, and trees beyond them stay published,
+on the map, collectible, listed below. Barcelona's 46 across 7 walks was never
+wrong as data, only as presentation. A walk is still 4 to 8 stops averaging at
+least 3 stops per kilometre; below that it is a hike, and Cadiz still reads
+better at 5 trees in 0.9 km than Barcelona does at 46.
 
 Nothing here re-opens whether a tree may be published: per the 2026-08-10
 ruling, only the hard rules and an unstatable location can stop that.
@@ -127,18 +138,18 @@ Work top-down. Reader submissions and a broken site still outrank everything.
 
 | # | city | score | demand | trees | photos | walks | register | target | basis |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
-| 1 | Lisbon | 7.99 | 201,877 | 33 | 10 | 3 | 66 | 30 | measured |
-| 2 | Porto | 5.00 | 120,415 | 27 | 5 | 2 | 40 | 20 | measured |
+| 1 | Lisbon | 7.99 | 201,877 | 33 | 10 | 3 | 66 | 25 | measured |
+| 2 | Porto | 5.00 | 120,415 | 27 | 5 | 2 | 40 | 25 | measured |
 | 3 | Prague | 4.00 | 303,350 | 17 | 13 | 3 | - | - | measured |
-| 4 | Vienna | 3.99 | 283,090 | 22 | 13 | 4 | 377 | 50 | measured |
-| 5 | Amsterdam | 3.00 | 294,030 | 20 | 7 | 2 | 4993 | 50 | measured |
+| 4 | Vienna | 3.99 | 283,090 | 22 | 13 | 4 | 377 | 25 | measured |
+| 5 | Amsterdam | 3.00 | 294,030 | 20 | 7 | 2 | 4993 | 25 | measured |
 | 6 | Kyoto | 3.00 | 142,353 | 18 | 8 | 2 | - | - | measured |
 | 7 | New York | 2.81 | 1,124,326 | 20 | 5 | 2 | - | - | published, never ranked |
 | 8 | Singapore | 2.42 | 967,821 | 7 | 3 | 1 | - | - | published, never ranked |
 | 9 | Galway | 2.20 | 88,162 | - | - | - | - | - | predicted (thin competition) |
 | 10 | Nagoya | 2.09 | 83,437 | - | - | - | - | - | predicted (thin competition) |
 | 11 | Jaipur | 2.06 | 82,569 | - | - | - | - | - | predicted (thin competition) |
-| 12 | Rome | 2.01 | 358,876 | 24 | 9 | 2 | 32 | 20 | measured |
+| 12 | Rome | 2.01 | 358,876 | 24 | 9 | 2 | 32 | 25 | measured |
 | 13 | Bologna | 2.00 | 146,161 | 11 | 8 | 2 | 8 | - | measured |
 | 14 | Cadiz | 2.00 | 79,226 | 5 | 4 | 1 | - | - | measured |
 | 15 | London | 1.80 | 718,291 | 23 | 10 | 1 | - | - | published, never ranked |
@@ -147,14 +158,14 @@ Work top-down. Reader submissions and a broken site still outrank everything.
 | 18 | Chiang Mai | 1.66 | 66,541 | - | - | - | - | - | predicted (thin competition) |
 | 19 | Washington DC | 1.52 | 606,731 | 14 | 1 | 2 | - | - | published, never ranked |
 | 20 | Kobe | 1.37 | 54,798 | - | - | - | - | - | predicted (thin competition) |
-| 21 | Paris | 1.31 | 524,268 | 25 | 9 | 3 | 128 | 30 | published, never ranked |
+| 21 | Paris | 1.31 | 524,268 | 25 | 9 | 3 | 128 | 25 | published, never ranked |
 | 22 | Chicago | 1.21 | 485,769 | 6 | - | - | - | - | published, never ranked |
 | 23 | Salamanca | 1.20 | 47,897 | - | - | - | - | - | predicted (thin competition) |
-| 24 | Berlin | 1.03 | 412,181 | 18 | 11 | 1 | 114 | 30 | published, never ranked |
+| 24 | Berlin | 1.03 | 412,181 | 18 | 11 | 1 | 114 | 25 | published, never ranked |
 | 25 | Athens | 1.01 | 235,429 | 12 | 6 | 2 | - | - | measured |
 | 26 | Tokyo | 0.99 | 394,702 | 10 | 8 | - | 7 | - | published, never ranked |
 | 27 | Boston | 0.96 | 385,902 | 10 | 1 | 1 | - | - | published, never ranked |
-| 28 | Barcelona | 0.87 | 346,477 | 46 | 12 | 7 | 183 | 30 | published, never ranked |
+| 28 | Barcelona | 0.87 | 346,477 | 46 | 12 | 7 | 183 | 25 | published, never ranked |
 | 29 | Coimbra | 0.87 | 34,962 | - | - | - | - | - | predicted (thin competition) |
 | 30 | Braga | 0.86 | 34,522 | - | - | - | - | - | predicted (thin competition) |
 | 31 | Kamakura | 0.84 | 33,492 | - | - | - | - | - | predicted (thin competition) |
@@ -166,30 +177,30 @@ Work top-down. Reader submissions and a broken site still outrank everything.
 | 37 | Venice | 0.67 | 267,527 | 11 | 6 | 1 | 4 | - | published, never ranked |
 | 38 | Kanazawa | 0.64 | 25,778 | - | - | - | - | - | predicted (thin competition) |
 | 39 | Glasgow | 0.63 | 253,705 | 4 | 2 | - | - | - | published, never ranked |
-| 40 | Dublin | 0.60 | 240,850 | 17 | 4 | 2 | 12 | 20 | published, never ranked |
+| 40 | Dublin | 0.60 | 240,850 | 17 | 4 | 2 | 12 | 25 | published, never ranked |
 | 41 | The Hague | 0.59 | 236,723 | 5 | 1 | 1 | - | - | published, never ranked |
-| 42 | Munich | 0.56 | 224,067 | 22 | 13 | 3 | - | 20 | published, never ranked |
+| 42 | Munich | 0.56 | 224,067 | 22 | 13 | 3 | - | 25 | published, never ranked |
 | 43 | Bangkok | 0.56 | 222,206 | 5 | - | 1 | - | - | published, never ranked |
 | 44 | Copenhagen | 0.55 | 218,621 | 13 | - | 2 | - | - | published, never ranked |
-| 45 | Milan | 0.53 | 212,705 | 18 | 9 | 2 | 25 | 20 | published, never ranked |
+| 45 | Milan | 0.53 | 212,705 | 18 | 9 | 2 | 25 | 25 | published, never ranked |
 | 46 | Seoul | 0.52 | 206,265 | 8 | 5 | 1 | - | - | published, never ranked |
-| 47 | Naples | 0.50 | 198,913 | 17 | 3 | 2 | 46 | 20 | published, never ranked |
+| 47 | Naples | 0.50 | 198,913 | 17 | 3 | 2 | 46 | 25 | published, never ranked |
 | 48 | Warsaw | 0.49 | 197,929 | 5 | 3 | - | - | - | published, never ranked |
 | 49 | Stockholm | 0.47 | 188,184 | 4 | 3 | - | - | - | published, never ranked |
-| 50 | Florence | 0.46 | 184,099 | 22 | 7 | 3 | 27 | 20 | published, never ranked |
+| 50 | Florence | 0.46 | 184,099 | 22 | 7 | 3 | 27 | 25 | published, never ranked |
 | 51 | Oslo | 0.45 | 181,113 | 4 | - | - | - | - | published, never ranked |
 | 52 | Thessaloniki | 0.45 | 180,145 | 4 | - | 1 | - | - | published, never ranked |
 | 53 | Belgrade | 0.45 | 178,116 | 4 | 4 | - | - | - | published, never ranked |
-| 54 | Brussels | 0.44 | 176,863 | 16 | 4 | 1 | 371 | 30 | published, never ranked |
-| 55 | Seville | 0.43 | 170,545 | 16 | 6 | 2 | - | 20 | published, never ranked |
+| 54 | Brussels | 0.44 | 176,863 | 16 | 4 | 1 | 371 | 25 | published, never ranked |
+| 55 | Seville | 0.43 | 170,545 | 16 | 6 | 2 | - | 25 | published, never ranked |
 | 56 | Reykjavik | 0.42 | 166,789 | 4 | - | 1 | - | - | published, never ranked |
 | 57 | Bristol | 0.41 | 163,983 | 5 | 1 | - | - | - | published, never ranked |
 | 58 | Osaka | 0.41 | 163,112 | 4 | 1 | - | - | - | published, never ranked |
 | 59 | Geneva | 0.41 | 162,269 | 6 | 4 | 1 | - | - | published, never ranked |
-| 60 | Valencia | 0.41 | 162,209 | 16 | 2 | 2 | 347 | 30 | published, never ranked |
+| 60 | Valencia | 0.41 | 162,209 | 16 | 2 | 2 | 347 | 25 | published, never ranked |
 | 61 | Helsinki | 0.37 | 148,908 | 8 | 1 | - | - | - | published, never ranked |
-| 62 | Turin | 0.37 | 147,456 | 8 | 7 | 2 | 32 | 20 | published, never ranked |
-| 63 | Genoa | 0.36 | 145,206 | 10 | - | 1 | 11 | 20 | published, never ranked |
+| 62 | Turin | 0.37 | 147,456 | 8 | 7 | 2 | 32 | 25 | published, never ranked |
+| 63 | Genoa | 0.36 | 145,206 | 10 | - | 1 | 11 | 25 | published, never ranked |
 | 64 | Bath | 0.36 | 144,950 | 5 | 1 | 1 | - | - | published, never ranked |
 | 65 | Krakow | 0.35 | 140,824 | 4 | 3 | 1 | - | - | published, never ranked |
 | 66 | Zurich | 0.35 | 140,788 | 4 | - | - | - | - | published, never ranked |
@@ -200,11 +211,11 @@ Work top-down. Reader submissions and a broken site still outrank everything.
 | 71 | Split | 0.33 | 132,399 | 4 | - | 1 | - | - | published, never ranked |
 | 72 | Antwerp | 0.32 | 128,289 | 10 | 4 | 1 | - | - | published, never ranked |
 | 73 | Ljubljana | 0.31 | 125,046 | 4 | - | 1 | - | - | published, never ranked |
-| 74 | Palermo | 0.31 | 124,310 | 8 | 7 | 2 | 45 | 20 | published, never ranked |
+| 74 | Palermo | 0.31 | 124,310 | 8 | 7 | 2 | 45 | 25 | published, never ranked |
 | 75 | Dubrovnik | 0.30 | 119,586 | 4 | 1 | 1 | - | - | published, never ranked |
 | 76 | York | 0.30 | 118,066 | 6 | 2 | 1 | - | - | published, never ranked |
 | 77 | Malaga | 0.29 | 117,780 | 10 | 5 | 2 | - | - | published, never ranked |
-| 78 | Trieste | 0.29 | 117,233 | 8 | - | 2 | 43 | 20 | published, never ranked |
+| 78 | Trieste | 0.29 | 117,233 | 8 | - | 2 | 43 | 25 | published, never ranked |
 | 79 | Oxford | 0.28 | 111,583 | 5 | 1 | 1 | - | - | published, never ranked |
 | 80 | Rotterdam | 0.26 | 104,938 | 5 | - | 1 | - | - | published, never ranked |
 | 81 | Cork | 0.25 | 101,405 | 5 | 2 | - | - | - | published, never ranked |
@@ -213,11 +224,11 @@ Work top-down. Reader submissions and a broken site still outrank everything.
 | 84 | Granada | 0.22 | 86,361 | 10 | 3 | 2 | 4 | - | published, never ranked |
 | 85 | Verona | 0.19 | 77,646 | 8 | 4 | 2 | 3 | - | published, never ranked |
 | 86 | Fukuoka | 0.19 | 77,485 | 11 | 7 | 1 | 1 | - | published, never ranked |
-| 87 | Cordoba | 0.19 | 74,675 | 7 | 2 | 2 | 3 | 20 | published, never ranked |
+| 87 | Cordoba | 0.19 | 74,675 | 7 | 2 | 2 | 3 | 25 | published, never ranked |
 | 88 | Utrecht | 0.17 | 67,963 | 5 | 4 | 1 | - | - | published, never ranked |
-| 89 | Padua | 0.14 | 54,592 | 9 | 4 | 1 | 12 | 20 | published, never ranked |
+| 89 | Padua | 0.14 | 54,592 | 9 | 4 | 1 | 12 | 25 | published, never ranked |
 | 90 | Phuket | 0.14 | 5,487 | - | - | - | - | - | predicted (thin competition) |
-| 91 | Lucca | 0.13 | 52,271 | 6 | 3 | 1 | 27 | 20 | published, never ranked |
+| 91 | Lucca | 0.13 | 52,271 | 6 | 3 | 1 | 27 | 25 | published, never ranked |
 | 92 | Maastricht | 0.12 | 47,763 | 5 | - | - | - | - | published, never ranked |
 | 93 | Sintra | 0.12 | 46,889 | 5 | 3 | 1 | 6 | - | published, never ranked |
 | 94 | Nijmegen | 0.11 | 42,338 | 5 | - | 1 | - | - | published, never ranked |
