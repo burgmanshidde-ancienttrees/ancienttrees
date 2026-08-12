@@ -39,6 +39,46 @@ FOR HIDDE: nothing blocks. The WARN in REVIEW.md's newest entry (Porto's permiss
 
 **Bologna's register held one real addition.** A grey walnut, the only Juglans cinerea on Italy's entire national monumental-trees register, sits about 230m from the already-published Botanical Garden ginkgo (bol_007), both inside the university's Orto Botanico. Two independent sources (a Bologna news outlet and a tourism guide, both citing the garden's curator and a professor running a named five-year conservation project since February 2025) confirm it's alive now, in active care for age-related decline rather than dead, and give consistent facts. Shipped as bol_011, girth stated as a range since the register (420cm) and the press (471cm) disagree and neither was picked as a winner. This crosses the walk-forming threshold for the first time: Montagnola, the ginkgo and the walnut now form a second Bologna walk, 3 trees, 1.1km, 15 minutes, alongside the existing piazza cluster. A second register entry (a 545cm Cedar of Atlas at Villa delle Rose) is genuine but stands roughly 2km from anything else, so it's recorded as a lead in a new `data/leads/bologna.json` rather than shipped as a lone addition. Fixed a stale "ten most" in the meta_description once the tree count passed ten. Build and `qa.py` both green, 1421 pages. Ran `photo_hunt.py --recheck` and `tree_index.py` on both cities. Committed and pushed.
 
+## 2026-08-12 (session, second half) - Florence, Munich and Prague finished at three walks
+
+**16 trees written and live**, one batched writing pass across three cities.
+Florence 15 to 22, Munich 14 to 22, Prague 16 to 17. Each city now plans exactly
+three walks, which is CITY_QUEUE.md's definition of a finished city: Florence
+0.3/1.0/1.2 km, Munich 1.2/1.0/0.7, Prague 2.4/2.7/1.4.
+
+**Why these three and not the fuller piles.** Hidde's correction: the READY leads
+would have gone to Vienna (37 waiting) and Barcelona (31), which are already past
+the three-walk cap at 4 and 7. So the leads were scored by walks gained rather
+than by count, and Munich's eight are the smallest set that reaches a third walk.
+The other 26 Munich leads stay leads. Cost 113,965 tokens for 16 trees, 7,123
+each, against the 15k target.
+
+**Every new tree ships approximate, flagged and photoless**, because one register
+each is what the evidence is: MASAF for Florence, the 2021 Bavarian
+Naturdenkmal ordinance for Munich, a pamatny strom record for Prague. The
+Florence stories say outright that the comune's list and the press coverage
+republish the same designation, so they are one source and not two.
+
+**Refused: flo_023**, a research note carrying three species and three RAMI ids
+at one garden coordinate. Nothing to stand in front of, so it stays a lead.
+
+**Three of my own errors, caught by checks rather than by me.** The Munich trees
+went in under their register descriptions ("Copper Beech (Fagus sylvatica f.
+purpurea) at Schlosspark Nymphenburg"), which made a 69-character title and the
+build refused it; renamed, longest title now 56. Seven Florence species and one
+in Prague arrived as bare Latin and would have split from the corpus under hard
+rule 9. Eight count promises across the three cities went stale, caught by
+preflight.
+
+**And a real bug in the meter: scripts/leads.py counted published trees as
+READY.** Berlin showed 7, of which 4 read "[RESOLVED 2026-08-09, delivered as
+ber_018]" in their name with an empty `why`, so the blocking rules (which read
+`why`) and the readiness check (which reads name, species and position, all
+present) both missed them. A brief built on that number re-writes live stories,
+which is the 2026-08-08 error again. leads.py has a DONE bucket now, searched
+across the whole entry. 30 leads moved; honest READY count is 287. It changed
+this decision: Berlin fell out of the batch.
+
 ## 2026-08-12 (session) - The weekly reflection, and the machine stops carrying a phase it was told to drop
 
 **Hidde cancelled the 2026-08-14 review.** "Zet die geplande evaluatie uit je
