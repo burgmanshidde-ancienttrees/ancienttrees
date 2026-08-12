@@ -1043,6 +1043,22 @@
         "note": "First batch of unblocked leads. Brief premise WRONG: I generated ids from a stale 10-tree assumption without running passcheck, and bcn_011-028 were all live trees; the agent matched by coordinate, refused to merge and banked 13 stories under free ids instead, preventing an 18-tree overwrite of indexed URLs. 3 inputs already published, 2 correctly unwritable (composite pin, unresolved access under hard rule 10).",
         "brief_wrong": true
       }
+    ],
+    "2026-08-12": [
+      {
+        "target": "den-bosch",
+        "kind": "write",
+        "tokens": 91441,
+        "trees": 7,
+        "note": "7 stories for the two new Den Bosch clusters (Sint Janskerkhof/Casinotuin, Pettelaarse Schans), merged into a live 4-tree city file as pure insertion; verified facts were already on disk from a prior verify pass. Session then fixed 3 issues before shipping: two how_to_recognise fields leaked internal process labels into visitor-facing text, two transport fields read as an instruction to us, and two trees used a scientific-name synonym (Platanus x hispanica) that would have failed the site's one-Latin-name-per-common-name build check against the other 79 London Planes. Also updated intro/meta_description/question fields, since the new oldest tree (170yr plane) supersedes the old answer (120yr maple) and the stale copy would have repeated the Netherlands-country-page BLOCKER class from REVIEW.md 2026-08-02."
+      },
+      {
+        "target": "kyoto",
+        "kind": "verify",
+        "tokens": 0,
+        "trees": 2,
+        "note": "Session work (not a dispatched agent), so no separate token line; folded into the same session as den-bosch. Resolved two HELD trees (kyo_015, kyo_017) stuck on an identical placeholder coordinate by geocoding their named gates via free Nominatim/OSM lookups (retrieval, not judgement, cost nothing) rather than a research pass. Also fixed missing access/transport on two already-live trees (kyo_016/018) and refreshed stale intro/meta/FAQ counts (16 to 18 trees) that would otherwise have repeated the Netherlands-country-page stale-count BLOCKER class a second time in one session."
+      }
     ]
   }
 }

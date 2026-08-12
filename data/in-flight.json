@@ -4,12 +4,6 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "den-bosch",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-12T10:43:00+00:00"
-    },
-    {
       "target": "prague",
       "kind": "verify",
       "by": "night-run",
