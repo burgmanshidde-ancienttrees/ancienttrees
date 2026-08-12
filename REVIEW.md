@@ -13,6 +13,70 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-12
+
+No review ran on 2026-08-11, so this pass covers roughly 44 hours of commits
+(since 2026-08-10's second pass) rather than the usual 24: the mail-outreach
+thread, the Paulo/Porto submission, the walks fixes, and this morning's
+CLAUDE.md and DATA.md changes.
+
+**WARN, FOR HIDDE** — Porto's ginkgo tree page (`/porto/ginkgo-of-the-jardim-das-virtudes`,
+data in `data/cities/porto.json`, por_008, live since `7a79497`) ships a photo
+whose licence field reads "Used with the photographer's written permission,
+by email 2026-08-11", sourced from a third-party blog (`photos1.blogger.com`,
+hotlinked directly in `<img src>`, `og:image` and the page's schema `image`).
+This is not an open licence. CLAUDE.md's Step 4 is explicit and unqualified:
+"Search Wikimedia Commons and other openly-licensed sources (CC0, CC-BY,
+CC-BY-SA only)... NEVER use photos from monumentaltrees.com, Google Maps, or
+any source without a clear open license," and hard rule 4 says "Photos must
+have verified open licenses with attribution recorded" with no permission
+carve-out anywhere in the corpus. `drafts/reply-paulo.md` shows this was a
+real, considered call Hidde made in session ("Hidde cut it: his yes is
+enough," after the run had correctly flagged the blog as unlicensed), not a
+run overstepping, so this reads as the same shape as the 2026-08-10 outreach
+finding: a genuine exception he made that the corpus text does not yet
+reflect. Hard rule 4 sits on the closed "hard list" whose header says these
+five items "stay closed no matter how well they score," so a future run
+reading only CLAUDE.md would reasonably conclude this photo should never have
+shipped, and would have no way to know a one-off permission grant is
+different from a standing policy change (is this one photo, or does
+"permission" now join the accepted licence list generally?). Flagging FOR
+HIDDE rather than as a defect: either record this as a scoped exception (one
+photo, one permission, not a new licence category) in DECISIONS.md, or amend
+CLAUDE.md if permission-based photos are meant to be usable more broadly.
+
+**NOTE** — On the good side, the same commit correctly enforces the adjacent,
+harder-won rule: `1107a1e` ("Never publish a submitter's name") removed
+`submitted_by` rendering from `[tree].astro`, the CSS credit block and the
+promise-of-credit copy on `/contribute` and the no-photo caption, and swept
+Paulo's name out of `porto.json`'s own `notes` field in favour of "the sender
+is recorded off-site and is NOT named here." Verified: no occurrence of
+"Paulo" or "Araújo" anywhere in `site/dist` (checked the whole built tree,
+including `search-index.json` and both sitemaps). The photo credit correctly
+points at the publication ("Dias com Arvores") rather than a person, per the
+2026-08-11 ruling.
+
+**NOTE** — Walk-name collapsing (`30c816c`) works as intended on the one live
+example: Porto's two walks, one running through the area labelled "Massarelos"
+and the other through "Lordelo do Ouro e Massarelos," render as "Massarelos
+east" / "Massarelos west" rather than as awkward near-duplicates. The area
+labels themselves (used for tree metadata, not walk names) correctly keep the
+full parish name.
+
+**NOTE** — DATA.md's digest (`bcaf696`) is already table-formatted throughout
+(funnel rates, Search Console, audience, Web Analytics all render as
+Markdown tables with at most two sentences of prose per block), consistent
+with the same-morning CLAUDE.md instruction (`7e9af63`) to report digests in
+tables rather than prose.
+
+**NOTE** — Spot-checked five further built pages (`berlin.html`,
+`collections.html`, `fukuoka.html`, `italy.html`, `munich.html`) plus a
+site-wide grep for em dashes and TONE_OF_VOICE.md's banned words across all
+of `site/dist`: clean. No builder-speak or rule-explaining-to-the-reader
+phrasing found on the sample.
+
+---
+
 ## 2026-08-10 (second pass, ~10:45 UTC, covering commits since this morning's review at 08:30 UTC)
 
 This morning's BLOCKER (`ageToken()`) and WARN (nightly permissions) are both
