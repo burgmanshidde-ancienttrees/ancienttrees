@@ -4,28 +4,22 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "prague",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-12T10:43:49+00:00"
-    },
-    {
-      "target": "vienna",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-12T10:43:49+00:00"
-    },
-    {
-      "target": "amsterdam",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-12T11:31:32+00:00"
-    },
-    {
-      "target": "venice",
-      "kind": "verify",
+      "target": "florence",
+      "kind": "write",
       "by": "session",
-      "claimed_at": "2026-08-12T13:05:27+00:00"
+      "claimed_at": "2026-08-12T18:24:50+00:00"
+    },
+    {
+      "target": "prague",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-12T18:24:50+00:00"
+    },
+    {
+      "target": "munich",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-12T18:24:50+00:00"
     }
   ]
 }
