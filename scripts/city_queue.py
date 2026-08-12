@@ -114,12 +114,22 @@ def near(pts, lat, lng, km=5.0):
     return sum(1 for a, b in pts if abs(a - lat) < dlat and abs(b - lng) < dlng)
 
 
-def target_for(supply, measured=None):
-    """One ceiling for everyone who has anything to work with. `measured` is
-    accepted and ignored: it decided the old 50-versus-30 split, and keeping the
-    parameter means callers do not have to change while the reason it existed is
-    recorded in the docstring above."""
-    return 25 if supply >= 10 else None
+def target_for(supply, measured=False):
+    """Two stages, ruled by Hidde 2026-08-12: "is het niet beter om overal eerst
+    minstens 10 bomen te doen en dan te verdiepen wanneer we google search
+    confirmatie krijgen."
+
+    So 10 everywhere, and 25 only once Search Console has actually spoken for
+    that city. `measured` is the queue's own `basis` column saying exactly that.
+    It replaces a flat 25 for everyone (his own previous line, an hour earlier),
+    and before that a supply-banded 20/30/50 that gave Vienna 50 and Barcelona
+    30 for no reason to do with trees. This version needs no supply input at all,
+    which is why `supply` is now unused: the question is not how much is lying
+    around, it is whether anyone has arrived.
+
+    Less than the target is fine and expected where the trees are genuinely hard
+    to find. The floor stays four verified trees or no page."""
+    return 25 if measured else 10
 
 
 def measure(pts):
@@ -173,10 +183,12 @@ def enrich(doc, live):
             supply = info["register"] + info["ready"]
             c.update(status="published", trees=info["trees"], photos=info["photos"],
                      walks=info["walks"], register=info["register"],
-                     ready=info["ready"], supply=supply, target=target_for(supply))
+                     ready=info["ready"], supply=supply,
+                     target=target_for(supply, c["basis"].startswith("measured")))
         else:
             c.update(status="pending", trees=0, photos=0, walks=0,
-                     register=0, ready=0, supply=0, target=None)
+                     register=0, ready=0, supply=0,
+                     target=target_for(0, c["basis"].startswith("measured")))
     doc["cities"].sort(key=lambda c: (c["rank"] is None, c["rank"] or 0, c["city"]))
     with open(SOURCE, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, ensure_ascii=False, indent=1)
@@ -294,14 +306,15 @@ def main():
     doc = enrich(load_source(), live)
     order = rebuild_table(doc)
     n = rebuild_list(live, order)
-    banded = [c for c in doc["cities"] if c.get("target")]
+    deep = [c for c in doc["cities"] if c.get("target") == 25]
     print("%d register points, %d live cities measured" % (len(pts), len(live)))
     print("data/city-queue.json: %d cities, %d ranked (the source)"
           % (len(doc["cities"]), len(order)))
     print("rendered: %d rows in CITY_QUEUE.md, %d entries in city-list.json"
           % (len(order), n))
-    print("%d cities carry a target of 25; the rest get whatever verifies"
-          % len(banded))
+    print("%d cities are confirmed by Search Console and carry the 25 target; "
+          "%d carry the 10 first-version target"
+          % (len(deep), len(doc["cities"]) - len(deep)))
     return 0
 
 
