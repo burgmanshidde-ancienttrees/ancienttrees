@@ -1,0 +1,216 @@
+[
+  {
+    "id": "por_019",
+    "name": "The Bunya-Bunya of Jardim da Cordoaria",
+    "species": "Bunya Pine (Araucaria bidwillii)",
+    "age_estimate": "roughly 155 years",
+    "age_min": 145,
+    "age_max": 160,
+    "location": {
+      "address": "Jardim da Cordoaria (Jardim de João Chagas), Porto",
+      "latitude": 41.14595304,
+      "longitude": -8.616813246,
+      "neighbourhood": "Cedofeita / Vitória, central Porto"
+    },
+    "verified_sources": [
+      "data/registers/portugal-icnf.json (processo KNJ1/450, classified D.R. n.º 6, II Série de 10/01/2005)",
+      "https://antiarboricida.wordpress.com/arvores-cidade/espacos-verdes/a-arauca%CC%81ria-do-jardim-da-cordoaria/",
+      "https://commons.wikimedia.org/wiki/Category:Arauc%C3%A1ria_no_Jardim_da_Cordoaria"
+    ],
+    "access": "Free, public municipal garden, open daily",
+    "transport": "Central Porto, adjacent to the Faculty of Law; roughly 10 minutes on foot from São Bento station, several STCP bus routes stop at Cordoaria",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Individually identifiable: 'the tallest tree in this garden, perhaps one of the tallest in the city,' planted 1867-1869 per local tree-history blogs. Register (last measured 2004): girth 3.6m PAP, height ~40m, age recorded as 130 (i.e. ~152 today after adding 22 years). Independent planting-date sources put it slightly older, ~157-159 years today; both figures are close and the range above covers them. Girth and height figures match exactly between the register and the independent blog source (3.6m PAP, ~40m height). Wikimedia Commons category has a photo dated 2025, confirming the tree stands today. Classified as Árvore de Interesse Público since 2005 alongside the Alameda dos Plátanos in the same garden (see por_026)."
+  },
+  {
+    "id": "por_020",
+    "name": "The Tulip Tree of Casa Allen",
+    "species": "Tulip Tree (Liriodendron tulipifera)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Jardins da Casa Allen (Casa das Artes), Rua Rúben A, 210, Porto",
+      "latitude": 41.15602778,
+      "longitude": -8.642911111,
+      "neighbourhood": "Lordelo do Ouro e Massarelos"
+    },
+    "verified_sources": [
+      "data/registers/portugal-icnf.json (processo AIP131218113I, classified 2021)",
+      "https://www.porto.pt/pt/noticia/tulipeiro-dos-jardins-da-casa-allen-vai-ser-arvore-de-interesse-publico",
+      "https://www.publico.pt/2021/08/24/local/noticia/magnifico-tulipeiro-casa-artes-porto-vai-arvore-interesse-publico-1975142",
+      "https://culturanorte.gov.pt/patrimonio/casa-das-artes/"
+    ],
+    "access": "Free, public building and gardens run by the Direção Regional de Cultura do Norte; guided garden visits offered alongside the exhibition spaces",
+    "transport": "In the Massarelos district, walking distance from Palácio de Cristal and the Marquês metro/tram area",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Casa Allen (a 1920s residence, architect José Marques da Silva) is now Casa das Artes, a public cultural venue of the Direção Regional de Cultura do Norte with posted visiting hours (Mon 14:30-18:30; Tue-Fri 10:00-12:15 and 14:30-18:30; Sat 14:30-20:45; Sun 14:30-18:45) and guided visits to the building and gardens, so the garden is genuinely open, not private grounds. This is the tree that must NOT be confused with the disqualified school tulip tree on Rua João de Deus (see blocked list): different processo, different address, different specimen. Girth conflict: register gives 5.24m girth (measured 2015); the 2021 news coverage of the classification gives 7.75m 'perímetro na base' (base perimeter). Height (31m) and crown diameter (29m) match exactly between both sources, so the girth figures likely reflect different measurement points (breast height vs. base) rather than a real disagreement, but flagging per the two-source rule since the numbers differ. No age is recorded anywhere; leave the field empty rather than guess."
+  },
+  {
+    "id": "por_021",
+    "name": "The Magnolia Ring of Jardim de São Lázaro",
+    "species": "Southern Magnolia (Magnolia grandiflora)",
+    "age_estimate": "roughly 120 years",
+    "age_min": 110,
+    "age_max": 130,
+    "location": {
+      "address": "Jardim de São Lázaro, around the lake, Porto",
+      "latitude": 41.14589999,
+      "longitude": -8.602599988,
+      "neighbourhood": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória"
+    },
+    "verified_sources": [
+      "data/registers/portugal-icnf.json (processo KNJ3/051, classified D.R. n.º 6, II Série de 10/01/2005)",
+      "https://observador.pt/2026/01/07/classificada-como-de-interesse-publico-maior-e-mais-antiga-magnolia-do-porto/ (title/snippet confirms a distinct, recently-classified magnolia story for Porto, Jan 2026)",
+      "https://invictadeazulebranco.pt/jardim-de-s-lazaro-porto/"
+    ],
+    "access": "Free, public garden, Porto's oldest (opened 1834)",
+    "transport": "Central Porto, close to Praça da Batalha and the Bolhão/São Bento area, well served by STCP buses",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "A set of 12 Magnolia grandiflora specimens planted around the lake in Porto's first public garden (1834), classified as a group of public interest since 2005. Register (last measured 2004): girth 2.6m, height 15.75m, age recorded as 100 (~122 today after adding 22 years). This is a compact, single-destination ensemble: one lake, one loop path, all 12 trees visible together, so it qualifies as one collectible point rather than a scattered avenue. Note there is a SEPARATE, larger magnolia set at Jardim de Arca d'Água (see por_025); the two must not be merged, they are 2.7km apart."
+  },
+  {
+    "id": "por_022",
+    "name": "The Camellias of Largo da Igreja de Paranhos",
+    "species": "Camellia (Camellia japonica)",
+    "age_estimate": "roughly 220 years",
+    "age_min": 200,
+    "age_max": 240,
+    "location": {
+      "address": "Largo da Igreja de Paranhos, in front of the Igreja de São Veríssimo de Paranhos, Porto",
+      "latitude": 41.17299999,
+      "longitude": -8.604599988,
+      "neighbourhood": "Paranhos"
+    },
+    "verified_sources": [
+      "data/registers/portugal-icnf.json (processos KNJ1/221 and KNJ1/222, classified D.R. n.º 35, II Série de 11/02/1992)"
+    ],
+    "access": "Free, public church square (largo), open at all times",
+    "transport": "Paranhos, near the Faculty of Science campus; served by Porto metro Line D/Combatentes area buses",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register twins: two Camellia japonica specimens (cameleira A and cameleira B), metres apart at the same address, classified together in 1992, folded into one entry here. Register (last measured 2006): girths 1.15m and 1.25m, heights 6.2m and 6.5m, crown 10.3m each, age recorded as 200 for both (~220 today after adding 20 years). The Largo is a genuine public square in front of the parish church (address confirmed independently: 'Largo Igreja de Paranhos, 53'), so access is not in question. FLAGGED because I could not find a second independent source (news article, blog, or photo) describing these two specific camellias; only the register itself confirms species, age and existence. Porto brands itself the 'Cidade das Camélias' and has many other well-documented old camellias, so the claim is plausible, but a reader correction or a future pass finding a second source would resolve the flag."
+  },
+  {
+    "id": "por_023",
+    "name": "The Metrosideros of Passeio Alegre",
+    "species": "New Zealand Christmas Tree (Metrosideros excelsa)",
+    "age_estimate": "roughly 90 years",
+    "age_min": 80,
+    "age_max": 100,
+    "location": {
+      "address": "Jardim do Passeio Alegre, Rua do Passeio Alegre, Porto",
+      "latitude": 41.14874999,
+      "longitude": -8.672699988,
+      "neighbourhood": "Aldoar, Foz do Douro e Nevogilde"
+    },
+    "verified_sources": [
+      "data/registers/portugal-icnf.json (processos KNJ1/448 and KNJ1/449, classified D.R. n.º 6, II Série de 10/01/2005)",
+      "https://ambiente.cm-porto.pt/arvores-de-interesse-publico/metrosideros-jardim-do-passeio-alegre",
+      "https://dias-com-arvores.blogspot.com/2005/01/rvores-classificadas-do-porto.html"
+    ],
+    "access": "Free, public riverside garden in Foz do Douro",
+    "transport": "Foz do Douro, near the Douro river mouth; served by tram line 1 and STCP buses along Rua do Passeio Alegre",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Register twins about 11 metres apart, folded into one entry: two isolated Metrosideros excelsa specimens classified together in 2005. Register (last measured 2004): girths 3.15m and 2.62m, height 7m both, age recorded as 70 both (~92 today after adding 22 years). The municipal ambiente.cm-porto.pt page independently corroborates: 'two isolated examples,' estimated age 'over 80 years,' average base perimeter 2.88m, height 7m, average canopy 12.75m, classified 10 January 2005 (D.R. Series II No. 6). Strong two-source agreement on species, count, age and measurements."
+  },
+  {
+    "id": "por_024",
+    "name": "The Seven Fan Palms of Palácio de Cristal",
+    "species": "Mexican Fan Palm (Washingtonia robusta)",
+    "age_estimate": "roughly 160 years",
+    "age_min": 150,
+    "age_max": 165,
+    "location": {
+      "address": "Jardins do Palácio de Cristal, Porto",
+      "latitude": 41.14588703,
+      "longitude": -8.626141897,
+      "neighbourhood": "Lordelo do Ouro e Massarelos"
+    },
+    "verified_sources": [
+      "data/registers/portugal-icnf.json (processo AIP13121857C, classified D.R. n.º 60, II Série de 26/03/2019)",
+      "https://www.100milarvores.pt/2021/10/jardins-do-palacio-de-cristal-regresse-a-expo-de-1865.html",
+      "https://ambiente.cm-porto.pt/parques-e-jardins/jardins-do-palacio-de-cristal"
+    ],
+    "access": "Free, public garden, one of Porto's most visited green spaces",
+    "transport": "Central Porto; several STCP bus routes and a short walk from Casa da Música metro station",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Seven Washingtonia robusta specimens standing together along the Avenida das Tílias, described independently as 'seven magnificent fan palms from Mexico, elegant and very tall, at almost 25 metres in height,' tied to the garden's 1865 Expo-era planting, which puts them at roughly the same age the register implies (register: age 150 at last measurement in 2015, so ~161 today; planting-era estimate ~161 today too). This is a compact, well-known feature within the larger Palácio de Cristal gardens (which already publish por_008, the Himalayan Cedar), so it qualifies as one destination rather than a scattered avenue. FLAGGED because the register record itself carries no girth, height or crown data (all null) for this entry; the measurements above come only from the independent source, not the register, so technically only one source supplies the physical description even though two sources agree the palms exist and roughly how old they are."
+  },
+  {
+    "id": "por_025",
+    "name": "The Magnolias of Jardim de Arca d'Água",
+    "species": "Southern Magnolia (Magnolia grandiflora)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Jardim de Arca d'Água, Praça de 9 de Abril, Porto",
+      "latitude": 41.17142222,
+      "longitude": -8.611952778,
+      "neighbourhood": "Paranhos"
+    },
+    "verified_sources": [
+      "data/registers/portugal-icnf.json (processo AIP13121083C, last measured 2020)",
+      "https://www.timeout.pt/porto/pt/atraccoes/jardim-de-arca-dagua",
+      "https://www.visitar-porto.com/en/what-to-see/gardens-parks/jardim-arca-d-agua.html"
+    ],
+    "access": "Free, public municipal garden with playground, lake and bandstand",
+    "transport": "Paranhos, close to the Asprela / hospital and university cluster; served by Porto metro Line D and STCP buses",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Independent sources describe 13 Magnolia grandiflora specimens in this 22,000 sqm garden (opened 1928), classified as a set of public interest in 2021, alongside 96 plane trees and 57 camellias that are NOT classified. Register gives one representative coordinate and a girth of 2.43m for the entry but no age. Marked location_precision approximate rather than confirmed: the register coordinate is a single point standing in for a set of 13 trees scattered through a 22,000 sqm garden, and I could not confirm exactly where within the garden the magnolias cluster (unlike por_021's São Lázaro magnolias, which are specifically 'around the lake'). A future pass with a site photo or a more detailed municipal map could sharpen this to confirmed and note the actual gathering point."
+  },
+  {
+    "id": "por_026",
+    "name": "The Alameda dos Plátanos of Jardim da Cordoaria",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "roughly 160 years",
+    "age_min": 150,
+    "age_max": 165,
+    "location": {
+      "address": "Jardim da Cordoaria (Jardim de João Chagas), Porto",
+      "latitude": 41.14559999,
+      "longitude": -8.617099988,
+      "neighbourhood": "Cedofeita / Vitória, central Porto"
+    },
+    "verified_sources": [
+      "data/registers/portugal-icnf.json (processo KNJ3/050, classified D.R. n.º 6, II Série de 10/01/2005)",
+      "https://commons.wikimedia.org/wiki/Category:Alameda_dos_Pl%C3%A1tanos_(Porto)",
+      "https://dias-com-arvores.blogspot.com/2005/01/rvores-classificadas-do-porto.html"
+    ],
+    "access": "Free, public municipal garden, open daily",
+    "transport": "Central Porto, adjacent to the Faculty of Law; roughly 10 minutes on foot from São Bento station",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "37 plane trees (Platanus x acerifolia) forming a named, defined avenue, the Alameda dos Plátanos, inside the compact Jardim da Cordoaria (classified alongside the garden's araucaria, see por_019). Wikimedia Commons describes it as creating 'a natural tunnel effect through dense foliage, forming an atmospheric passageway,' i.e. a single, walkable, photogenic destination rather than a scattered street planting, which is why it qualifies as one collectible point despite being 37 trees (compare the Barcelona La Rambla precedent, which failed this test because there was no one place to stand; this passes because the tunnel IS the one place to stand, like Amsterdam's Lomanstraat). Register (last measured 2004): girth 5.4m, height 19m, age recorded as 140 (~162 today). Independent source: 'more than 150 years old' and height 'approximately 19 metres', which matches the register height figure exactly."
+  },
+  {
+    "id": "por_027",
+    "name": "The Tulip Trees of Praça Pedro Nunes",
+    "species": "Tulip Tree (Liriodendron tulipifera)",
+    "age_estimate": "roughly 100 years",
+    "age_min": 90,
+    "age_max": 110,
+    "location": {
+      "address": "Praça Pedro Nunes, next to the former Liceu D. Manuel II, Porto",
+      "latitude": 41.15589999,
+      "longitude": -8.623499988,
+      "neighbourhood": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória"
+    },
+    "verified_sources": [
+      "data/registers/portugal-icnf.json (processo KNJ3/049, classified D.R. n.º 6, II Série de 10/01/2005)",
+      "https://dias-com-arvores.blogspot.com/2005/01/rvores-classificadas-do-porto.html"
+    ],
+    "access": "Free, public square",
+    "transport": "Central Porto, near the Faculty of Engineering / Rivoli area, walkable from Trindade and Bolhão metro stations",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Four Liriodendron tulipifera specimens ('conjunto arbóreo') growing together in the small, compact Praça Pedro Nunes next to the former Liceu D. Manuel II building, classified as a group of public interest in 2005. Register (last measured 2004): girth 3.6m, height 22m, crown 17m, age recorded as 80 (~102 today after adding 22 years). One small square, four trees, one obvious place to stand, so it passes the collectible-ensemble test. FLAGGED because only the register and one 2005 tree-blog survey (dias-com-arvores) corroborate this group; no news article or dated recent photo was found confirming the trees are still standing today, so treat the alive-now confidence as thinner than the other entries in this batch."
+  }
+]
