@@ -9,6 +9,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-13 - Porto's ginkgo photo: the grant is in writing, and the OTHER post's photos are not his
+
+Paulo Araújo answered in writing that we may use the ginkgo photograph, with one caveat that had to be checked rather than assumed: only that photo on the page is his, the other text and its photographs are not. He has written about this tree twice, so the caveat lands exactly on us.
+
+- **Live and covered.** `photos1.blogger.com/img/291/1346/480/Ginkgo-amarela.jpg` (por_018) is the lead image of the post "Alerta amarelo", 5 December 2005, published by Paulo Araújo, and the only photo credit on that page is "Fotos: © Paulo V. Araújo". Fetched and read directly. His yes covers this photo, which is the one already on the page.
+- **Never usable, do not re-hunt.** The other post about the same tree, "Golden time - Ginkgo" (December 2004), credits its photographs "Fotos: manueladlramos-0412". Those belong to a third person who has granted nothing. A future photo pass looking for a better ginkgo image will find them first, because they are the prettier set; they stay off the site regardless.
+
+DECISIONS.md's 2026-08-11 entry stands unchanged: one photo, one permission, not a new licence category, and every other photo on the site still needs a verified open licence.
+
 ## 2026-08-13 - Munich: fixed four trees published twice under different ids
 
 Found while looking for cheap-end write work (`scripts/leads.py --ready`): Munich's
