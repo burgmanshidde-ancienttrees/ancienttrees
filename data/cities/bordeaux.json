@@ -2,9 +2,9 @@
   "city": "Bordeaux",
   "country": "France",
   "status": "needs_curation",
-  "intro": "Bordeaux does not gather its best trees in one place, so this page holds three short walks rather than one route. Two stand on the same lawn in the Jardin Public, a pecan and a ginkgo. Three more sit within 150 metres of each other in the Parc Bordelais, including a Kentucky coffeetree over 130 years old and a black locust whose measurements make no ordinary sense. The third pair, out at Chantegrillon, includes a black poplar 741 centimetres round that carries a national remarkable-tree label from 2012.",
-  "meta_description": "Eight remarkable trees in Bordeaux, in three short walks: a 741cm black poplar, a pecan, and a black locust whose shape nobody has explained.",
-  "question_meta": "Bordeaux's biggest tree is the black poplar of Chante-Grillon, 741 centimetres round. Where it stands, plus seven more.",
+  "intro": "Bordeaux does not gather its best trees in one place, so this page holds four short walks rather than one route. A pecan and a ginkgo share a lawn in the Jardin Public. Three more sit within 150 metres of each other in the Parc Bordelais, including a black locust whose measurements make no ordinary sense. At Chantegrillon stands a black poplar 741 centimetres round, labelled a national remarkable tree in 2012. The fourth walk is furthest out, in Merignac: Parc de Bourran, a wine estate turned public park, with a giant sequoia and a 32-metre Himalayan cedar.",
+  "meta_description": "Ten remarkable trees in Bordeaux, in four short walks: a 741cm black poplar, a pecan, a black locust, and a giant sequoia in a former wine estate.",
+  "question_meta": "Bordeaux's biggest tree is the black poplar of Chante-Grillon, 741 centimetres round. Where it stands, plus nine more.",
   "question_answer": "The largest tree in Bordeaux's own register is the black poplar at Parc Chantegrillon, measured at 741 centimetres round the trunk, which makes it the thickest trunk in the city's remarkable-tree list. It carries an Arbre Remarquable de France label awarded in 2012 and stands in a free public park. Its age is not recorded anywhere: Bordeaux's register gives girth, height and crown but leaves the age field empty on almost every entry, so this page says how thick a tree is rather than how old.",
   "question_context": "Bordeaux publishes its entire tree inventory, over eighty thousand trees, and flags a small number as patrimonial or remarkable. Only that flagged subset is used here, and even inside it the designation is a decision rather than a measurement: some flagged trees are young, and one is a sapling. The register carries a life-status field and, separately, a felling date, and the two do not agree with each other. Seven trees still marked alive carry a date of removal, one of them felled in June 2025, because the register updates the date and not the status. Those are excluded, and every tree here was checked again for whether it is standing. Fifty-two further candidates are absent for a different reason: the flagged subset is full of trees in school and creche grounds, especially in Merignac, and a tree behind a school gate is not one a visitor can go and see. Where the register and a second source disagree on a measurement, both figures appear in that tree's own story.",
   "faq": [
@@ -14,11 +14,11 @@
     },
     {
       "q": "Are Bordeaux's remarkable trees free to visit?",
-      "a": "The ones on this page are. Bordeaux's register also flags trees inside schools and nurseries, and those are deliberately not here, because a visitor cannot reach them."
+      "a": "Yes. Every tree on this page stands in a public park or on a public square, and none of them charges entry."
     },
     {
       "q": "Can I see them in one walk?",
-      "a": "Not in one. They form three short walks: the Jardin Public, the Parc Bordelais, and Parc Chantegrillon, each with two or three trees close together."
+      "a": "Not in one. They form four short walks: the Jardin Public, the Parc Bordelais, Parc Chantegrillon, and Parc de Bourran out in Merignac, each with two or three trees close together."
     }
   ],
   "hero_tree_id": "bdx_001",
@@ -275,6 +275,66 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "bdx_009",
+      "name": "The Giant Sequoia of Parc de Bourran",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parc de Bourran, Avenue du Parc de Bourran, Merignac",
+        "latitude": 44.8376988,
+        "longitude": -0.6341554,
+        "neighbourhood": "Merignac, about 5 km west of central Bordeaux"
+      },
+      "story": "A Californian giant sequoia with a trunk close to six metres round stands in what used to be a Bordeaux wine estate. The metropolitan register measures it at 597 centimetres and 24 metres tall, which makes it the heaviest trunk on this page after the Chante-Grillon poplar.\n\nThe ground explains the tree. Parc de Bourran was a vineyard belonging to Bordeaux parliamentary families, and in 1768 it was bought by Francois-Armand de Saige, a wine merchant rich enough to control everything from the grape to the shipment, and mayor of Bordeaux in 1791. In 1775 he had an ice house dug into the limestone here, described at the time as the largest in France, and its vaulted cellars still sit under the lawn. The park you walk through now was laid out later by the landscape architect Louis Le Breton, and the whole thing, park and chateau together, was listed as a monument historique in 1992.\n\nSequoiadendron only reached Europe in the 1850s, so however large this one looks it cannot be older than that, and nobody has published a planting date. The register records its size and says nothing about its age, and neither does this page.\n\nThe park belongs to the city of Merignac and is free to walk into.",
+      "verified_sources": [
+        "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records (Bordeaux Metropole, patrimoine arbore, entry gid 200663: Sequoiadendron giganteum, girth 597cm, height 24m, crown 12m, site Parc de Bourran, recorded alive with no felling date)",
+        "https://fr.wikipedia.org/wiki/Parc_de_Bourran (the estate's history, the 1775 ice house, Louis Le Breton's design, and the 1992 monument historique listing)"
+      ],
+      "access": "Free. Municipal park, open daily.",
+      "transport": "Merignac, about 5 km west of the centre. Tram A runs out this way from central Bordeaux, roughly twenty minutes, then a few minutes on foot to the park entrance.",
+      "how_to_recognise": "The heaviest conifer trunk in the park, deeply furrowed and reddish, on the lawn between the chateau and the water. The other big conifers here are a bald cypress and a coast redwood, both slimmer.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bdx_010",
+      "name": "The Himalayan Cedar of Parc de Bourran",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parc de Bourran, eastern side, Merignac",
+        "latitude": 44.8383372,
+        "longitude": -0.628462,
+        "neighbourhood": "Merignac, about 5 km west of central Bordeaux"
+      },
+      "story": "At 32 metres, this deodar is the tallest tree the Bordeaux register records in Parc de Bourran, and its crown spreads twenty metres across. The trunk measures 534 centimetres round.\n\nCedrus deodara comes from the western Himalaya, where it is a timber tree of the high valleys, and it arrived in European gardens in the 1830s. Nineteenth-century landscape designers used it exactly as it is used here: one enormous evergreen, placed where its shape can be read from a distance across open ground. The park was laid out by Louis Le Breton on the remains of a wine estate, and its planting is a catalogue of what a wealthy nineteenth-century garden could get hold of, with a giant sequoia, a coast redwood, a dawn redwood and a bald cypress standing within a few hundred metres of this cedar.\n\nThe register gives no age for it and no planting date exists, so this page does not offer one. What can be said is that the park's design and its exotic conifers belong to the same period, and the deodar is the largest of them.\n\nPark and chateau were listed as a monument historique in 1992. The park is free and belongs to Merignac.",
+      "verified_sources": [
+        "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records (Bordeaux Metropole, patrimoine arbore, entry gid 201027: Cedrus deodara, girth 534cm, height 32m, crown 20m, site Parc de Bourran, recorded alive with no felling date)",
+        "https://fr.wikipedia.org/wiki/Parc_de_Bourran (the park's design by Louis Le Breton and its 1992 monument historique listing)"
+      ],
+      "access": "Free. Municipal park, open daily.",
+      "transport": "Merignac, about 5 km west of the centre. Tram A runs out this way from central Bordeaux, roughly twenty minutes, then a few minutes on foot to the park entrance.",
+      "how_to_recognise": "The tallest tree on the park's eastern side, an evergreen with layered, slightly drooping branch tips and a single straight trunk. The drooping leader is what separates a deodar from the other cedars.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed"
     }
   ]
 }
