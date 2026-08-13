@@ -1,0 +1,67 @@
+{
+  "city": "Bergamo",
+  "country": "Italy",
+  "city_slug": "bergamo",
+  "note": "Candidates from the MASAF/Lombardia register that did not ship this pass. Kept per the nothing-is-thrown-away rule.",
+  "leads": [
+    {
+      "name": "Horse Chestnut of Viale delle Rimembranze, Torre Boldone",
+      "species": "Aesculus hippocastanum",
+      "lat": 45.716928,
+      "lng": 9.705642,
+      "status": "lead",
+      "why": "Register sheet 01/L251/BG/03, girth 391cm, height 27m. Publicly documented as Torre Boldone's 'last surviving monumental tree' after another was illegally felled. An agronomist assessed it as declining in 2017; the comune then illegally pollarded it ('heavy pruning without any authorisation', reducing height by roughly a third) in January 2018, and a large limb failed and fell in June 2021 (Araberara, 4 June 2021), the last dated confirmation found. No source since 2021 confirms current health, and the register's girth/height figures may predate the 2018 pollarding. Worth a fresh check (recent local press or a photo) before shipping; isolated from the other candidates (nearest is Seriate, 2.5km away) so it does not join a walk on its own."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Japanese Pagoda Tree of Villa Ambiveri",
+      "species": "Styphnolobium japonicum",
+      "lat": 45.684458,
+      "lng": 9.724714,
+      "reason": "Register sheet 12/I628/BG/03, girth 380cm/32m. Villa Ambiveri (Via Tasca 36, Seriate) is privately owned by the Fondazione Centro Studi Russia Cristiana since 1958; only its library keeps regular public hours (Tue-Fri, 9:00-12:30), and the English-style garden containing the tree is described as opening only occasionally for special events. Not genuinely open to visitors under hard rule 10."
+    },
+    {
+      "name": "Cedar of Lebanon ensemble, Villa Ambiveri",
+      "species": "Cedrus libani (insieme omogeneo)",
+      "lat": 45.683889,
+      "lng": 9.724167,
+      "reason": "Register sheet 13/I628/BG/03. Same private grounds as the Villa Ambiveri pagoda tree above; blocked for the same access reason."
+    },
+    {
+      "name": "Hackberry ensemble, Villa Ambiveri",
+      "species": "Celtis australis (insieme omogeneo)",
+      "lat": 45.684178,
+      "lng": 9.725214,
+      "reason": "Register sheet 14/I628/BG/03. Same private grounds as the Villa Ambiveri pagoda tree above; blocked for the same access reason."
+    },
+    {
+      "name": "London Plane of Ospedale Bolognini",
+      "species": "Platanus x acerifolia",
+      "lat": 45.683575,
+      "lng": 9.718389,
+      "reason": "Register sheet 08/I628/BG/03, girth 465cm/33.5m. Confirmed to exist in a 'healing garden' near the hospital's surgery pavilion, but no source found confirms the garden is open to casual visitors rather than patients and staff of the ASST Bergamo Est hospital campus. When in doubt, leave it out per hard rule 10; worth a direct check with the hospital if this city is revisited."
+    },
+    {
+      "name": "Mediterranean Cypress at Giacomo Venezian 59, Seriate",
+      "species": "Cupressus sempervirens",
+      "lat": 45.68925,
+      "lng": 9.721817,
+      "reason": "Register sheet 04/I628/BG/03, girth 315cm/22m. A residential street address with no park or institution named; reads as a private garden. Not shipped."
+    },
+    {
+      "name": "Cypress avenue, Viale Lombardia (fronte cimitero), Seriate",
+      "species": "Cupressus sempervirens (insieme omogeneo)",
+      "lat": 45.686656,
+      "lng": 9.726397,
+      "reason": "Register sheet 02/I628/BG/03. An avenue of cypresses along a road facing the cemetery, not a single collectible point. Blocked as an avenue per the hard rules, not for access."
+    },
+    {
+      "name": "Pyramidal yew avenue, Viale Lombardia (fronte cimitero), Seriate",
+      "species": "Taxus baccata var. pyramidalis (insieme omogeneo)",
+      "lat": 45.686511,
+      "lng": 9.726033,
+      "reason": "Register sheet 03/I628/BG/03. Same avenue as the cypress line above; blocked as a non-collectible avenue."
+    }
+  ]
+}

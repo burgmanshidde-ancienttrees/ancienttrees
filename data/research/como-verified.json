@@ -1,0 +1,196 @@
+[
+  {
+    "id": "com_001",
+    "name": "The Cedar of Villa Olmo",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "about 200 years",
+    "age_min": 190,
+    "age_max": 220,
+    "location": {
+      "address": "Parco di Villa Olmo, Via Simone Cantoni 1, 22100 Como CO, Italy",
+      "latitude": 45.818783,
+      "longitude": 9.064717,
+      "neighbourhood": "Villa Olmo, lakefront (Via Borgovico)"
+    },
+    "location_precision": "confirmed",
+    "access": "Free, public park (Comune di Como), open daily during park hours",
+    "transport": "Como Nord Lago station, then roughly 25-30 min on foot north along the Via Borgovico lakefront promenade, or a local bus toward Villa Olmo",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 01/C933/CO/03",
+      "https://www.comune.como.it/novita/Il-cedro-del-Libano-del-Parco-di-Villa-Olmo-vince-il-contest-di-Regione-Lombardia/",
+      "https://comozero.it/attualita/parco-di-villa-olmo-spuntano-paletti-e-corteccia-intorno-allo-storico-cedro/ (31 Jul 2026)",
+      "https://www.ascuoladaglialberi.net/provincia-di-como/",
+      "https://ilregistrodeglialberi.it/italia/lombardia/como/como (RAMI register, 'Cedro di Villa Olmo', ~197 years, rated of national importance)"
+    ],
+    "curation_status": "ai_generated",
+    "verify_notes": "Largest-girthed tree in this Como batch (register girth 820cm/~8m, height 25m), with several branches forking low from the base rather than a single clean trunk. Voted Regione Lombardia's 'Tree of the Year 2024' (announced by the Comune di Como 22 Nov 2024) for its history, setting and the memories tied to it. ascuoladaglialberi.net independently records the same girth and height and dates it to roughly 200 years; RAMI's register gives ~197 years and national importance, a close three-way match. Alive and actively tended right now: a 31 July 2026 ComoZero article describes protective staking and a bark wrap recently installed around the trunk, calls it a 'centenario cedro del Libano' that has sheltered generations of children playing in its shade, and earlier reporting notes it has survived storm and lightning damage (major branches broken in 2016 and again the following year). Stands in the public park behind Villa Olmo, Como's main city park (about 5 hectares, roughly 780 trees), on the lakefront promenade that continues north past Villa del Grumello to Villa Geno."
+  },
+  {
+    "id": "com_002",
+    "name": "The Himalayan Cedar of Villa Geno",
+    "species": "Himalayan Cedar (Cedrus deodara)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Villa Geno, Viale Geno, 22100 Como CO, Italy",
+      "latitude": 45.822589,
+      "longitude": 9.078181,
+      "neighbourhood": "Villa Geno, lakefront promenade"
+    },
+    "location_precision": "confirmed",
+    "access": "Free, public park and lakeside promenade; the Comune di Como has owned Villa Geno's villa, park and walk since 1911",
+    "transport": "roughly 15 min on foot from Como Nord Lago station, north along the Viale Geno lakefront promenade",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 05/C933/CO/03",
+      "https://www.in-lombardia.it/en/tourism-in-lombardy/tourism-como/cedars-villa-geno",
+      "https://www.ascuoladaglialberi.net/provincia-di-como/",
+      "https://ilregistrodeglialberi.it (RAMI, 'Il Maggiore di Viale Geno')"
+    ],
+    "curation_status": "ai_generated",
+    "verify_notes": "One of two large Himalayan cedars marking the end of Como's Viale Geno lakeside promenade, a well-known and heavily-walked spot. Regione Lombardia's own tourism site gives the pair's girths as 5.80m and 4.30m; this register entry (5.60m) is presumably the larger of the two, matching the name 'Il Maggiore' (the greater one) under which it appears in the RAMI register. The cedars stand over a shaded clearing beside a lakeside fountain whose jet reaches over 40m. Villa Geno began as an 18th-century estate, passed to the Cornaggia family in 1850 (rebuilt by architect James Tazzini), then to the municipality in 1911, including the villa, park and promenade."
+  },
+  {
+    "id": "com_003",
+    "name": "The Sycamore of Villa Geno",
+    "species": "American Sycamore (Platanus occidentalis)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Villa Geno 14, Viale Geno, 22100 Como CO, Italy",
+      "latitude": 45.824292,
+      "longitude": 9.0791,
+      "neighbourhood": "Villa Geno, lakefront promenade"
+    },
+    "location_precision": "confirmed",
+    "access": "Free, public park and lakeside promenade (Comune di Como)",
+    "transport": "roughly 15 min on foot from Como Nord Lago station, north along the Viale Geno lakefront promenade",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 04/C933/CO/03",
+      "https://www.ascuoladaglialberi.net/provincia-di-como/"
+    ],
+    "curation_status": "ai_generated",
+    "verify_notes": "Height (33m) and girth (5.5m) recorded independently by ascuoladaglialberi.net match the register figures (550cm/33m) closely. Stands among the cedars and ginkgoes of the Villa Geno clearing on Como's public lakefront promenade, a few dozen metres from com_002 and com_004."
+  },
+  {
+    "id": "com_004",
+    "name": "The Ginkgo of Villa Geno",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "about a century",
+    "age_min": 90,
+    "age_max": 120,
+    "location": {
+      "address": "Viale Geno, 22100 Como CO, Italy",
+      "latitude": 45.82245,
+      "longitude": 9.078231,
+      "neighbourhood": "Villa Geno, lakefront promenade"
+    },
+    "location_precision": "confirmed",
+    "access": "Free, public park and lakeside promenade (Comune di Como)",
+    "transport": "roughly 15 min on foot from Como Nord Lago station, north along the Viale Geno lakefront promenade",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 06/C933/CO/03",
+      "https://www.ascuoladaglialberi.net/provincia-di-como/ ('Male Ginkgo Biloba, centennial, girth ~3m, height 20m')"
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "ascuoladaglialberi.net calls this a male, roughly century-old ginkgo, girth about 3m and height 20m; close to but not an exact match on girth against the register's 312cm, so flagged for that small discrepancy rather than stated as settled fact. Stands in the same shaded promenade clearing as the two cedars (com_002, com_003), one of several trees the regional tourism board calls monumental at Villa Geno."
+  },
+  {
+    "id": "com_005",
+    "name": "The Cedar of Villa del Grumello",
+    "species": "Cedar of Lebanon (Cedrus libani)",
+    "age_estimate": "roughly 155 years",
+    "age_min": 145,
+    "age_max": 165,
+    "location": {
+      "address": "Villa del Grumello, Via per Cernobbio 11, 22100 Como CO, Italy",
+      "latitude": 45.822831,
+      "longitude": 9.067217,
+      "neighbourhood": "Villa del Grumello, lakefront (between Villa Olmo and Villa Geno)"
+    },
+    "location_precision": "confirmed",
+    "access": "Free entry Sundays 10:00-19:00 (plus an evening aperitivo slot to 21:00); from April 2026 also open Monday-Friday 9:00-17:00 and Sunday 9:00-18:00, closed Saturdays. Part of the 'Kilometer of Knowledge' pedestrian path linking Villa Olmo, Villa del Grumello and Villa Sucota.",
+    "transport": "roughly 20 min on foot from Como Nord Lago station along Via Borgovico, between Villa Olmo and Villa Geno",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 12/C933/CO/03",
+      "https://www.villadelgrumello.it/ (official site)",
+      "https://www.ascuoladaglialberi.net/provincia-di-como/",
+      "https://ilregistrodeglialberi.it (RAMI, 'Cedro del Grumello', ~156 years, rated of national importance)"
+    ],
+    "curation_status": "ai_generated",
+    "verify_notes": "Stands in front of the villa; register girth 595cm matches ascuoladaglialberi.net's roughly 6m almost exactly. RAMI's register independently dates it to roughly 156 years and rates it of national importance. The 4-hectare park also holds pines, redwoods, a leaning camphor tree and a botanical garden dedicated to Pliny the Elder, but is not open every day of the week, see access field."
+  },
+  {
+    "id": "com_006",
+    "name": "The Ginkgo of Villa del Grumello",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "roughly 145 years",
+    "age_min": 135,
+    "age_max": 155,
+    "location": {
+      "address": "Villa del Grumello, Via per Cernobbio 11, 22100 Como CO, Italy",
+      "latitude": 45.821944,
+      "longitude": 9.065278,
+      "neighbourhood": "Villa del Grumello"
+    },
+    "location_precision": "confirmed",
+    "access": "Same schedule as the Villa del Grumello cedar (com_005): free Sundays 10:00-19:00, and Mon-Fri 9:00-17:00 plus Sun 9:00-18:00 from April 2026, closed Saturdays",
+    "transport": "roughly 20 min on foot from Como Nord Lago station along Via Borgovico, between Villa Olmo and Villa Geno",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 19/C933/CO/03",
+      "https://www.ascuoladaglialberi.net/provincia-di-como/ ('beautiful Ginkgo near the greenhouses, girth 4m')",
+      "https://ilregistrodeglialberi.it (RAMI, 'Ginkgo del Grumello', ~146 years)"
+    ],
+    "curation_status": "ai_generated",
+    "verify_notes": "Stands near the villa's greenhouses; register girth 390cm is close to ascuoladaglialberi's roughly 4m. RAMI independently dates it to roughly 146 years, a close match to the Grumello cedar's own age (com_005), suggesting the pair were planted around the same period of the park's history."
+  },
+  {
+    "id": "com_007",
+    "name": "The Magnolia of Villa del Grumello",
+    "species": "Southern Magnolia (Magnolia grandiflora)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Villa del Grumello, Via per Cernobbio 11, 22100 Como CO, Italy",
+      "latitude": 45.823342,
+      "longitude": 9.067217,
+      "neighbourhood": "Villa del Grumello"
+    },
+    "location_precision": "confirmed",
+    "access": "Same schedule as the Villa del Grumello cedar (com_005): free Sundays 10:00-19:00, and Mon-Fri 9:00-17:00 plus Sun 9:00-18:00 from April 2026, closed Saturdays",
+    "transport": "roughly 20 min on foot from Como Nord Lago station along Via Borgovico, between Villa Olmo and Villa Geno",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 13/C933/CO/03",
+      "https://www.villadelgrumello.it/ (lists magnolias among the park's centuries-old trees)",
+      "https://ilregistrodeglialberi.it (RAMI, 'Magnolia di Villa Grumello')"
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "Existence and species confirmed by both the villa's own site and the independent RAMI register, but neither gives a girth or age to cross-check against the register's 330cm, so flagged as thinner corroboration than the other two Grumello trees (com_005, com_006). Stands in the same park."
+  },
+  {
+    "id": "com_008",
+    "name": "The Plane Tree of Museo Giovio",
+    "species": "American Sycamore (Platanus occidentalis)",
+    "age_estimate": "roughly 225 years",
+    "age_min": 215,
+    "age_max": 235,
+    "location": {
+      "address": "Piazza Medaglie d'Oro 1, 22100 Como CO, Italy (courtyard of the Museo Archeologico Paolo Giovio)",
+      "latitude": 45.808864,
+      "longitude": 9.086811,
+      "neighbourhood": "Citta Murata, historic centre"
+    },
+    "location_precision": "confirmed",
+    "access": "Inside the courtyard of the Musei Civici di Como / Museo Archeologico Paolo Giovio; entry likely follows museum hours and admission rather than being freely open from the piazza. A search this pass found the museum's exhibition halls reported closed for maintenance; confirm current opening status before sending anyone.",
+    "transport": "central Como, a short walk from Como San Giovanni or Como Nord Lago stations, just off Piazza Cavour",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 03/C933/CO/03",
+      "https://www.ascuoladaglialberi.net/provincia-di-como/ ('Museo Giovio courtyard, unsurpassed for dimensions, beauty and location, girth over 7m, height 32m')",
+      "https://ilregistrodeglialberi.it (RAMI, 'Platano Museo Giovio', ~226 years, rated of national importance)"
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "SPECIES DISAGREEMENT, state it plainly: the MASAF national register records this tree as Platanus occidentalis (American Sycamore), while the independent RAMI register calls it 'Platanus hispanica', a synonym of Platanus x acerifolia (London Plane); delivered here under the national register's binomial since that is our primary source, but a writer should not assert either species with false confidence. Girth (over 7m/710cm) and height (32m) agree closely across all three sources; RAMI dates it to roughly 226 years, the oldest of the shipped Como trees and rated of national importance. Sits in the courtyard of Palazzo Giovio, home since 1897 to Como's archaeological museum, overlooking Piazza Medaglie d'Oro. ACCESS IS THE WEAK POINT of this entry, unlike the other Como trees which stand in freely open parks: confirm the museum's current opening status and whether the courtyard can be seen without a ticket before this ships without a caveat."
+  }
+]

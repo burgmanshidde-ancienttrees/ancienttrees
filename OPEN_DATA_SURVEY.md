@@ -743,3 +743,374 @@ solved: the public-site subset alone (Trinity, the Botanic Gardens, Marley
 Park) already looks like a plausible small cluster, and the `Age Range`
 field would be a real second-source contribution most other registers this
 project has found cannot offer.
+
+## The English-speaking block scouted: United States, Australia, Canada, New Zealand, United Kingdom (2026-08-13)
+
+Register scouting pass against the 32 cities in the top-250 sprint list with no
+register yet: US 12, Australia 6, Canada 4, New Zealand 4, UK 10. Licence-led,
+per this file's standing method: fetch, quote the licence sentence verbatim,
+verdict, import only when clearly usable. ~40 minutes of fetching; most of the
+five countries are scouted rather than exhausted. The UK Ancient Tree
+Inventory verdict above (DISQUALIFIED, permission path open) was not
+revisited; this pass looked for what exists besides it.
+
+### USABLE, imported
+
+**City of Portland, Oregon: Heritage Trees.** `data/registers/portland-heritage-trees.json`.
+Endpoint: `https://opendata.arcgis.com/datasets/db48b717d0174906b95f028c83c09dd0_26.geojson`
+(ArcGIS item `db48b717d0174906b95f028c83c09dd0`, layer 26). 463 records, 429
+live and 34 formally delisted (kept separately as `blocked_delisted`, never to
+ship). Licence: item metadata `licenseInfo` reads verbatim `"CC-BY-SA"` (a
+ShareAlike clause sits on top of the usual attribution one, noted in the
+file's licence block). Coordinates are per-tree (`LAT`/`LON`). Designation is
+real: Portland's Heritage Tree ordinance, City Forester nominates annually for
+age, size, type, historical association or horticultural value, so this
+passes the semantic filter cleanly, it is not a street-tree inventory. Best
+vitality signal seen in any register this project has imported: `Delist_Date`,
+`Delist_Ordinance` and `Delist_Reason` are populated for the 34 removed trees,
+so "currently listed" is at least a supporting signal here, though not a
+substitute for the normal alive-now check on the survivors. Caveat: units are
+not labelled on the service (HEIGHT/SPREAD read as feet, DIAMETER as inches,
+CIRCUMF as feet, inferred from internal consistency, not certain); and
+`Ownership` varies from "Right Of Way" to "Private, Front Yard", so hard rule
+10 needs a per-tree check before anything ships. **Covers Portland**, one of
+the 32.
+
+### USABLE, licence proven, import deferred (species locked behind per-tree PDFs)
+
+**City of Hobart: Significant Tree Register.** ArcGIS item
+`9b31f3f6acb14bb2a5869b5e17707155`, layer 1 (points) at
+`https://services1.arcgis.com/NHqdsnvwfSTg42I8/arcgis/rest/services/ENVIRON_Significant_Tree_Locations/FeatureServer/1`.
+460 point features, CC BY 4.0 per the item's own `licenseInfo`: "This work is
+licensed under a Creative Commons Attribution 4.0 International License."
+Genuinely a designated register (Significant Tree Register under the Hobart
+planning scheme), passes the semantic filter. Coordinates are per-tree
+(EPSG:28355, reprojects cleanly to WGS84 via `outSR=4326`). The catch: species,
+name and reasons for significance are NOT in the bulk feed, only a
+`Data_Sheet_URL` per tree pointing at an individual PDF (~3.6 MB each, image-
+heavy, text extractable only via a font-encoding workaround: the embedded
+text layer is shifted by a non-standard glyph mapping, confirmed decodable
+with a simple offset but not with standard `pdftotext`, which is not
+installed in this environment anyway). Fetching 460 of these is not a
+scouting-budget task. No vitality field. **Not imported this pass.** A future
+pass should pull `Data_Sheet_URL` sheets only for whichever cluster a Hobart
+city pass actually wants (4-8 trees), not the full register.
+
+### Scouted, inconclusive, needs a follow-up pass rather than a verdict
+
+**Auckland Council: Notable Trees Overlay.** The dataset exists on
+`data-aucklandcouncil.opendata.arcgis.com` and Schedule 10 of the Auckland
+Unitary Plan is a genuine statutory notable-tree list (semantic filter would
+pass). But the only feature-service instance this pass could resolve by ID
+was `Notable_Trees_Overlay_ProposedPlanChange`
+(`https://services1.arcgis.com/n4yPwebTjJCmXB6W/arcgis/rest/services/Notable_Trees_Overlay_ProposedPlanChange/FeatureServer`),
+whose licence text is explicit and disqualifying: "you are not permitted to
+copy or republish any substantial amount of the information from this viewer
+without the prior written consent of Auckland Council." That is the Plan
+Change 78 variant specifically, not necessarily the operative Schedule 10
+layer, but this pass could not locate the operative layer's own ArcGIS item ID
+in the time available (the dataset landing page is JS-rendered and did not
+yield it to a plain fetch). **Verdict: not-recommended on the version found;
+the operative layer needs a session with a real browser to resolve, not
+another plain fetch.**
+
+**New Zealand Notable Trees Trust register**
+(`register.notabletrees.org.nz`) exists and redirects (301) but was not
+scouted for licence terms this pass; NZ district-plan notable-tree schedules
+(Auckland, Wellington, Christchurch each have one per the statutory
+mechanism) were named but not individually fetched. Unscanned.
+
+### Not-recommended, with why
+
+**Seattle**: the only open dataset found is SDOT Trees, the full public
+right-of-way street-tree inventory (condition, species, size, maintenance
+responsibility for every street tree). That is exactly the shape the semantic
+filter forbids. No distinct "Exceptional Trees" open-data layer surfaced in
+this pass, only the ordinance concept; Seattle's Exceptional Tree list may
+exist as a PDF or map rather than an open dataset. Not recommended on what
+was found; worth one more targeted search naming the ordinance PDF directly.
+
+**San Francisco**: same shape problem. DataSF's only tree dataset found is
+the Street Tree List (~125,000 public trees, all of them, via
+`data.sfgov.org/City-Infrastructure/Street-Tree-List/tkzw-k3nq`). No
+"Landmark Trees" subset or designation flag was found in this pass. Not
+recommended on what was found.
+
+**City of Melbourne**: `trees-with-species-and-dimensions-urban-forest` on
+`data.melbourne.vic.gov.au` (Opendatasoft platform, CC BY per its own licence
+field) is again the full municipal inventory (80,000+ trees), not the
+Exceptional Tree Register the city adopted in 2021. That register's own page
+(`melbourne.vic.gov.au/exceptional-tree-register`) describes it as covering
+privately-owned trees nominated for protection; it did not surface as a
+separate downloadable dataset in this pass, only as a webpage. Not
+recommended on what was found; the register itself is worth a direct fetch of
+that page next time rather than the open-data portal.
+
+**United Kingdom, Tree Preservation Orders generally**: not fetched this
+pass, on reasoning rather than a checked example. A TPO is a legal
+protection applied to a tree (or woodland) a council judges worth protecting
+from felling, and councils apply them broadly, to ordinary garden and street
+trees as much as to remarkable ones; TPO status alone does not say a tree is
+old, spectacular or historically significant the way a "heritage" or
+"significant tree register" designation does. Importing a TPO layer wholesale
+would very likely fail the semantic filter the same way a street-tree
+inventory does, just for a legal reason instead of a maintenance one. This is
+a reasoned expectation, not a verdict backed by a checked licence, and it
+should not be treated as exhausting the UK. It does NOT touch the London/ATI
+question, which stays as ruled above.
+
+### Named but not reached this pass (unscanned, not verdicts)
+
+City of Sydney (a genuine "register of significant trees" was found by
+name, 2,450 trees, 10-year review just completed 2025, but its data lives
+behind an interactive map at `trees.cityofsydney.nsw.gov.au` rather than a
+found API endpoint; worth a direct follow-up), Brisbane (Significant
+Landscape Tree overlay exists on `data.brisbane.qld.gov.au`, part of the
+statutory City Plan rather than a curated register, needs a semantic-filter
+judgement call not made this pass), Adelaide (Significant Tree is a state
+Development Act / Planning Code designation administered by individual
+councils, e.g. Adelaide, Burnside, Prospect, Unley, each apparently with its
+own list; fragmented, not one fetch), Perth, Toronto, Vancouver (recalled by
+general knowledge as having had a Significant Tree Register program, not
+checked this pass), Montreal (`ville.montreal.qc.ca/siteofficieldumontroyal/arbres-remarquables`
+reads as a page about Mont Royal's own remarkable trees rather than an open
+dataset; `donnees.montreal.ca` carries only the full public-tree inventory
+under a similar semantic-filter problem), Quebec City, Wellington,
+Christchurch, Queenstown, Los Angeles, San Diego, Philadelphia, Charleston,
+Savannah, Austin, New Orleans, Chicago, Liverpool, Belfast, Manchester,
+Brighton, Inverness, Canterbury, Stratford-upon-Avon, Stirling, Windsor,
+Glasgow.
+
+### Coverage of the 32-city list after this pass
+
+Only **Portland** gained an imported register. Hobart and Auckland are
+scouted with a concrete path to finish (Hobart: budget a per-tree PDF fetch
+pass for a chosen cluster; Auckland: redo the ID lookup in a browser session).
+The other 29 cities are unchanged. The clear lesson for whoever picks this up
+next: government-published, semantically-filtered "significant/heritage/
+notable tree" registers are much rarer as clean open-data endpoints in this
+block than the brief's optimism suggested; most of what surfaces first in a
+search is either the full street-tree inventory (forbidden by the semantic
+filter) or a webpage/PDF rather than an API. The wins, when they exist, look
+like Portland: a named ordinance, a dedicated ArcGIS item separate from the
+street-tree layer, and an explicit `licenseInfo` field on the item metadata
+worth checking directly via `arcgis.com/sharing/rest/content/items/<id>?f=json`
+rather than trusting a portal's about-page prose.
+
+### Fetch blocklist addition
+
+`www.portlandmaps.com` (the `/od/rest/services/...` REST path specifically):
+hangs, no response at all, burned the full 20s timeout twice this pass. The
+`opendata.arcgis.com/datasets/<item>_<layer>.geojson` redirect route (which
+lands on `hub.arcgis.com/api/download/v1/items/...`) works fine and was used
+instead. Added to `data/fetch-blocklist.json`.
+
+### Cost
+
+Token usage for this pass: approximately 78,000 tokens (research and fetching
+only; no prose written beyond this survey entry and the register file, no
+photos hunted).
+
+## Germany: per-Bundesland scout of the 14 register-less sprint cities, 2026-08-13
+
+Register scouting pass, licence-led, triggered by CLAUDE.md's sprint list
+naming 14 German cities with no register behind them (Cologne, Hamburg,
+Nuremberg, Frankfurt, Dresden, Leipzig, Stuttgart, Heidelberg, Trier,
+Regensburg, Potsdam, Bamberg, Freiburg, Rothenburg ob der Tauber). Berlin's
+Naturdenkmale WFS (2026-08-07, above) is the proof of shape: search for
+"Schutzgebiete und Schutzobjekte nach Naturschutzrecht", not "Baumkataster",
+because German states hang their ND (Naturdenkmal) layer off the nature-
+conservation Schutzgebiete service, alongside Naturschutzgebiete and the
+other INSPIRE Protected Sites categories, not off the municipal tree
+inventory. That pattern held for two more Laender out of nine checked and
+failed for the rest, cleanly enough to be worth recording as the finding
+itself: **whether a Land publishes ND as open data is not correlated with
+whether it has an open Schutzgebiete WFS at all** (NRW, Hessen and
+Brandenburg all have a fine, open, INSPIRE-conformant Schutzgebiete WFS;
+none of the three includes Naturdenkmal as a feature type in it, only the
+handful of INSPIRE-mandated categories: FFH, Vogelschutz/SPA, Landschafts-
+schutzgebiet, Naturschutzgebiet, Nationalpark, Naturpark, Biosphaerenreservat,
+Ramsar. ND sits below the INSPIRE reporting threshold, so a Land only
+publishes it if someone chose to on top of the minimum, and most have not.)
+
+### Bayern: usable, CC BY 4.0. Covers Nuremberg, Regensburg, Bamberg AND Rothenburg ob der Tauber at once
+
+**Dataset**: "Naturdenkmale, punktfoermig" (point-shaped nature monuments),
+layer `natur_wfsschutzgebiete:naturdenkmal_punktfoermig` on the Bayerisches
+Landesamt fuer Umwelt (LfU)'s "Schutzgebiete des Naturschutzes" WFS.
+**Endpoint**: `https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=natur_wfsschutzgebiete:naturdenkmal_punktfoermig&srsName=EPSG:4326`
+(WFS 2.0, ArcGIS-backed, paginate with `count`/`startIndex`; native storage
+CRS is EPSG:25832/UTM32N, so `srsName=EPSG:4326` is required or coordinates
+come back as UTM metres). **Licence**, quoted verbatim from the live
+GetCapabilities `ows:Fees` element: "Der Datensatz/Dienst steht unter der
+Lizenz: Creative Commons Namensnennung 4.0 International (CC BY 4.0). Die
+Namensnennung des Bayerischen Landesamtes fuer Umwelt als Rechteinhaber hat
+in folgender Weise zu erfolgen: 'Datenquelle: Bayerisches Landesamt fuer
+Umwelt, www.lfu.bayern.de'." Clean commercial-compatible CC BY, same tier as
+Berlin's DL-DE-Zero.
+
+**4,860 features statewide**, fetched in full (paginated, 5 requests of
+1,000). Fields, confirmed via DescribeFeatureType: `webgisid`, `ID` (e.g.
+`ND-07157`), `NAME` (free text, often names the species and place: "ND Nr.
+26 Platane in der Gruebelstrasse", sometimes just "Naturdenkmal Eiche" with
+no place hint), `STATUS` (a legal-designation flag, "aktuell" on 4,858 of
+4,860 and "einstweilig sichergestellt" on 2; **not** a vitality field, same
+gap as everywhere else), and geometry. No species field, no age field: this
+is the thinnest register found yet, even thinner than Berlin's, a pure
+lead-and-coordinate list. 311 of 4,860 features carry more than one point in
+their own geometry (a MultiPoint), the same twin/group pattern as Berlin and
+Setubal, flagged per entry as `point_count` for a verification pass to fold
+or split deliberately.
+
+**City coverage, within-2km-of-centre counts (walkability, not existence):**
+
+| City | Within 2km | Within 15km | Note |
+|---|---|---|---|
+| Nuremberg | 17 | 97 | The Kontumazgarten/Hallerwiese cluster: 17 trees inside 2km, several 100-200m apart (planes, red beeches, limes). Genuinely walkable, Cadiz-density. |
+| Regensburg | 1 | 19 | Thin at the centre (1: "Naturdenkmal Kastanien am Gries", 1.16km out); the rest spread 3-15km into the surrounding Landkreis. |
+| Bamberg | 0 | 36 | Nothing within 2km of the historic centre; nearest cluster starts ~2.1km out. Worth checking the old town itself (Domberg, Hain park) by the normal search order, since the ND layer clearly missed the UNESCO centre. |
+| Rothenburg ob der Tauber | 4 | 23 | Small real cluster, nearest 0.72km out (limes, spruces, a pear tree). |
+
+Saved to `data/registers/bayern-naturdenkmale.json`.
+
+### Hamburg: usable, DL-DE-BY 2.0, but tiny (2 tree candidates state-wide)
+
+**Dataset**: `de.hh.up:nr_f_naturdenkmal`, one feature type inside Hamburg's
+city-wide Schutzgebiete WFS. **Endpoint**:
+`https://geodienste.hamburg.de/HH_WFS_Schutzgebiete?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&typeNames=de.hh.up:nr_f_naturdenkmal&srsName=EPSG:4326`.
+**Licence**, quoted verbatim from the live GetCapabilities `ows:Fees`
+element: "Datenlizenz Deutschland Namensnennung 2.0, Quellenvermerk: Freie
+und Hansestadt Hamburg, Behoerde fuer Umwelt und Energie." Open,
+commercial-compatible, same family as Berlin and NRW.
+
+Fetched in full: only **12 features exist in the entire category**, and the
+semantic filter kills 10 of them outright, because Hamburg's Naturdenkmal
+designation covers ponds, moors, a clay pit and a canal alongside trees
+("Papenbrack", "Kiebitzmoor", "Sievertsche Tongrube" at 10.5 hectares,
+"Poppenbuettler Graben"), sized 0.17 to 10.5 ha. Exactly **2 are trees**,
+both under 0.005 ha and identifiable by size alone before reading the name:
+"Alter Schwede" (a well-known old oak) and "Eibe am Neulaender Deich" (a
+yew). No species field structurally (species has to come from the name or
+external verification), no age field, geometry is a small polygon around
+the crown rather than a point (treat as `approximate` unless corroborated).
+Below the "no pass under six candidates" floor by itself: these are two free
+leads for whenever a Hamburg pass runs with proper web-search sourcing
+(Planten un Blomen, Stadtpark, the Alster parks), not a register that alone
+justifies opening Hamburg. Hamburg's separate Strassenbaumkataster (the
+street-tree cadastre also surfaced this search) is a full bulk inventory
+and fails the semantic filter outright, same as any Baumkataster.
+
+Saved to `data/registers/hamburg-naturdenkmale.json`.
+
+### Baden-Wuerttemberg: blocked, non-commercial-equivalent licence
+
+LUBW (Landesanstalt fuer Umwelt Baden-Wuerttemberg) publishes "Naturdenkmal
+Einzelgebilde (END)" as a WFS
+(`https://rips-gdi.lubw.baden-wuerttemberg.de/arcgis/services/wfs/Naturdenkmal_Einzelgebilde/MapServer/WFSServer`,
+confirmed reachable, feature type
+`Naturdenkmal_Einzelgebilde:Naturdenkmal_Einzelgebilde`), which would have
+covered Stuttgart, Heidelberg and Freiburg at once had it cleared licence.
+It does not. The WFS's own `ows:Fees`/`ows:AccessConstraints` are empty, but
+the dataset is governed by LUBW's separate "Nutzungsvereinbarung fuer Daten
+des UIS" (terms of use for the Umweltinformationssystem), which explicitly
+**prohibits building a database with commercial use or resale intent**, and
+which an OpenStreetMap community thread
+(`community.openstreetmap.org/t/nutzungsvereinbarung-lubw-kompatibel-mit-osm`)
+independently confirmed is incompatible with OSM's own licence for the same
+reason. This is the DL-DE/BY-NC-equivalent case OPEN_DATA_SURVEY.md's rule
+already names as disqualifying. VERDICT: blocked. **Not imported.**
+
+### Sachsen: not-recommended, no point-level ND layer published
+
+Sachsen's Schutzgebiete WFS
+(`https://luis.sachsen.de/arcgis/services/natur/schutzgebiete/MapServer/WFSServer`)
+carries a clean open licence (`ows:Fees`: "Datenlizenz Deutschland 2.0 -
+Variante mit Namensnennung", DL-DE-BY 2.0) and would have covered Dresden
+and Leipzig at once, but the only Naturdenkmal-family feature type it
+exposes is `schutzgebiete:Flaechennaturdenkmaeler` (areal nature monuments,
+a different legal category to the point-level ND that Berlin, Bayern and
+Hamburg publish). Sampled it directly: the first entries are "Gruendelteich"
+(a pond) and "Suedostufer des Brettmuehlenteiches" (a lakeshore), polygon
+geometries with `FLAECHE`/`UMFANG` (area/perimeter) fields, no species or
+tree-specific field at all. A public web search independently confirmed
+"linear and point-shaped natural monuments are not displayed in the main
+WFS service for protected areas in Saxony." VERDICT: not-recommended as a
+tree source; the FND layer is water bodies and geology, and no separate
+point layer for individual Naturdenkmal trees was found published open. Not
+imported. A future pass could still check Dresden's and Leipzig's own
+municipal open-data portals directly (the Berlin lesson: district-level
+publication sometimes exists where the Land-level one does not).
+
+### Hessen, NRW, Brandenburg: not-recommended, no ND feature type in the open Schutzgebiete WFS
+
+All three have real, reachable, cleanly-licensed INSPIRE Protected Sites
+WFS services, checked directly against their GetCapabilities:
+
+- **Hessen** (`https://geodienste-umwelt.hessen.de/arcgis/services/inspire/schutzgebiete/MapServer/WFSServer`,
+  would cover Frankfurt): 8 feature types, all INSPIRE-minimum categories
+  (Biosphaerenreservat, FFH, LSG, Nationales Naturmonument, Nationalpark,
+  Naturpark, NSG, Vogelschutzgebiete). No Naturdenkmal.
+- **NRW** (`https://www.wfs.nrw.de/umwelt/wfs_nw_inspire-schutzgebiete`,
+  would cover Cologne): licence is DL-DE-Zero 2.0, the strongest tier, and
+  the service works cleanly, but again only the 9 INSPIRE-minimum categories
+  (FFH, VSG, WG, LSG, NSG, NP, NTP, NWZ, RAM). No Naturdenkmal. (An earlier,
+  wrong guess at the NRW endpoint, `open.nrw/dataset/ccbfb8e5...`, turned out
+  to be Naturschutzgebiete only, a different and non-semantic-filtered
+  dataset; recorded here so a future pass does not re-fetch it expecting ND.)
+- **Brandenburg** (`https://inspire.brandenburg.de/services/schutzg_wfs`,
+  would cover Potsdam): 14 feature types (NSG, LSG, EZV, BE, NatP, BR, NP,
+  FFH, SPA, each with an `_mz` metadata variant), no Naturdenkmal, and the
+  licence line itself is weaker than the other Laender's ("Nutzung erfolgt
+  derzeit kostenfrei unter Beachtung des Urheberrechts", i.e. free of charge
+  subject to copyright, not a named open licence), so even a future ND layer
+  here would need its own licence check before import.
+
+None imported. Confirms the finding above: ND is not an INSPIRE-mandated
+category, and whether a Land publishes it beyond the minimum has to be
+checked per Land, not assumed from "they have an open WFS."
+
+### Rheinland-Pfalz: not resolved this pass, would cover Trier
+
+LANIS (the nature-conservation geoportal, `naturschutz.rlp.de`) visibly
+serves a "naturdenkmal_point" map layer in its own web viewer (seen in a
+`kartendienste_naturschutz` viewer URL carrying
+`layers=naturdenkmal_polygon,naturdenkmal_point`), so the data almost
+certainly exists. The two WFS endpoint guesses tried this pass
+(`geodaten.naturschutz.rlp.de/mapbender/php/wfs.php`,
+`map1.naturschutz.rlp.de/service_lanis/mod_wfs/wfs_getmap.php`) both 404'd;
+neither hung (no addition to the fetch-blocklist needed). An OpenStreetMap
+community thread on LANIS licensing found a mixed picture: some layers
+carry ODbL 1.0 (commercial-compatible with share-alike obligations) per
+their own metadata, others (the base cartography) carry only DL-DE/BY 2.0,
+and the thread's explicit advice is to check each layer's own metadata
+rather than assume one licence for the whole service. Worth a dedicated
+follow-up pass with more time to find the live WFS endpoint and read the ND
+layer's specific licence from its GetCapabilities, since Trier is only one
+city and the search cost so far has been small. **Not imported, not
+blocked**, genuinely unresolved.
+
+### Summary: coverage gained this pass
+
+| City | Bundesland | Register found | Trees available |
+|---|---|---|---|
+| Nuremberg | Bayern | Bayern ND (usable) | 17 within 2km, 97 within 15km |
+| Regensburg | Bayern | Bayern ND (usable) | 1 within 2km, 19 within 15km |
+| Bamberg | Bayern | Bayern ND (usable) | 0 within 2km, 36 within 15km |
+| Rothenburg ob der Tauber | Bayern | Bayern ND (usable) | 4 within 2km, 23 within 15km |
+| Hamburg | Hamburg | Hamburg ND (usable) | 2 state-wide (thin) |
+| Cologne | NRW | none found | 0 |
+| Frankfurt | Hessen | none found | 0 |
+| Dresden | Sachsen | none found (FND is areal-only) | 0 |
+| Leipzig | Sachsen | none found (FND is areal-only) | 0 |
+| Stuttgart | Baden-Wuerttemberg | found, blocked (NC-equivalent licence) | 0 |
+| Heidelberg | Baden-Wuerttemberg | found, blocked (NC-equivalent licence) | 0 |
+| Freiburg | Baden-Wuerttemberg | found, blocked (NC-equivalent licence) | 0 |
+| Trier | Rheinland-Pfalz | likely exists, unresolved | 0 |
+| Potsdam | Brandenburg | none found | 0 |
+
+Five of fourteen cities gained a usable register this pass (four Bavarian
+cities at once from one import, plus Hamburg thinly); five states checked
+came back empty or blocked. Two files added: `data/registers/bayern-
+naturdenkmale.json` (4,860 entries statewide) and `data/registers/hamburg-
+naturdenkmale.json` (12 entries, 2 usable). No host hung (nothing added to
+`data/fetch-blocklist.json`); the RLP endpoints 404'd cleanly.

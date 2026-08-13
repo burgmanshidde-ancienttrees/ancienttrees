@@ -83,15 +83,15 @@
     },
     {
       "target": "bergamo",
-      "kind": "verify",
+      "kind": "write",
       "by": "session",
-      "claimed_at": "2026-08-13T07:20:34+00:00"
+      "claimed_at": "2026-08-13T07:32:25+00:00"
     },
     {
       "target": "perugia",
-      "kind": "verify",
+      "kind": "write",
       "by": "session",
-      "claimed_at": "2026-08-13T07:20:34+00:00"
+      "claimed_at": "2026-08-13T07:32:25+00:00"
     }
   ]
 }

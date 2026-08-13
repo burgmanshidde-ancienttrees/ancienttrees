@@ -1,0 +1,167 @@
+[
+  {
+    "id": "tre_001",
+    "name": "The Plane Tree of Via Santa Croce",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "about 190 years",
+    "age_min": 185,
+    "age_max": 195,
+    "location": {
+      "address": "Giardino Martino Martini, Via Santa Croce, 38122 Trento TN, Italy",
+      "latitude": 46.063097,
+      "longitude": 11.123758,
+      "neighbourhood": "Santa Croce, city centre"
+    },
+    "location_precision": "confirmed",
+    "access": "Free, public garden (Comune di Trento)",
+    "transport": "roughly 10 min on foot from Trento station, in the historic centre",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 15/L378/TN/22",
+      "https://www.giornaletrentino.it/cronaca/trento/a-trento-18-alberi-monumentali-c-e-anche-un-platano-del-1835-in-via-santa-croce-1.3725451",
+      "https://www.ansa.it/trentino/notizie/2024/03/11/a-trento-18-alberi-monumentali-tra-cui-una-pianta-del-1835_77d93f34-7783-48fd-948c-01e7c2c26900.html",
+      "https://www.ildolomiti.it/societa/2024/dal-cedro-dellhimalaya-al-ciliegio-selvatico-18-alberi-monumentali-a-trento-e-altri-10-candidati-per-diventarlo-il-piu-antico-del-1835-ogni-pianta-e-un-mondo-e-una-storia"
+    ],
+    "curation_status": "ai_generated",
+    "verify_notes": "The oldest of Trento's officially designated monumental trees. Three independent 2024 local-press pieces (Trentino/Giornale di Trento, ANSA, il Dolomiti) all give a planting date of 1835, framed as having 'witnessed nearly two centuries of Trentine history.' Trento's list of 18 monumental trees was formalised around 2023-2024, with 13 added to the national AMI (Alberi Monumentali d'Italia) register that year. Stands in the small Giardino Martino Martini public garden."
+  },
+  {
+    "id": "tre_002",
+    "name": "The Black Poplar of Largo Pigarelli",
+    "species": "Black Poplar (Populus nigra)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Giardino di Largo Pigarelli, 38122 Trento TN, Italy",
+      "latitude": 46.065947,
+      "longitude": 11.125322,
+      "neighbourhood": "city centre, near the station"
+    },
+    "location_precision": "confirmed",
+    "access": "Free, public garden (Comune di Trento, listed in its official park/garden directory)",
+    "transport": "roughly 10 min on foot from Trento station",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 13/L378/TN/22",
+      "comune.trento.it garden directory entry for Giardino largo Pigarelli",
+      "2024 local press (ANSA, il Dolomiti) coverage of Trento's 18 monumental trees, which names a black poplar at Largo Pigarelli among them"
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "Named among Trento's 18 monumental trees in 2024 local press, but no source found this pass gives this tree's age or an independent girth to check against the register's 570cm, so flagged for that gap rather than an outright species/existence doubt. A public municipal garden in the city centre, an easy add to a walk with the Via Santa Croce plane and the Piazza Dante garden."
+  },
+  {
+    "id": "tre_003",
+    "name": "The Plane Tree of Via Vannetti",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Via Vannetti 28, 38122 Trento TN, Italy",
+      "latitude": 46.072644,
+      "longitude": 11.121414,
+      "neighbourhood": "Piazza Dante / city centre, next to the station"
+    },
+    "location_precision": "confirmed",
+    "access": "Public street frontage next to the Piazza Dante garden; free",
+    "transport": "roughly 5 min on foot from Trento station",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 19/L378/TN/22",
+      "comune.trento.it, Giardino di Piazza Dante page, which describes 'monumentali platani e noci di primo impianto' among the adjoining garden's original 19th-century planting"
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "Sits at the edge of the Piazza Dante garden. The comune's own page for that garden describes monumental plane trees and walnuts from the original planting without naming this specific tree by address, so treated as corroborating context rather than a precise independent match; flagged for that reason. Pairs naturally with the Piazza Dante elm (tre_004), a few steps away."
+  },
+  {
+    "id": "tre_004",
+    "name": "The Elm of Piazza Dante",
+    "species": "Wych Elm (Ulmus glabra)",
+    "age_estimate": "at least a century",
+    "age_min": 100,
+    "age_max": null,
+    "location": {
+      "address": "Giardino di Piazza Dante, 38122 Trento TN, Italy",
+      "latitude": 46.071975,
+      "longitude": 11.121175,
+      "neighbourhood": "Piazza Dante / city centre, next to the station"
+    },
+    "location_precision": "confirmed",
+    "access": "Free, public garden; comune.trento.it describes it as 'il primo giardino pubblico di Trento' (Trento's first public garden)",
+    "transport": "immediately next to Trento's main railway station",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 22/L378/TN/22",
+      "https://www.comune.trento.it/Vivere-il-comune/Luoghi/Giardino-di-Piazza-Dante ('i tassi e l'olmo secolari sul lato nord', the centuries-old yews and elm on the north side)"
+    ],
+    "curation_status": "ai_generated",
+    "verify_notes": "The Comune di Trento's own page for the garden calls this elm 'secolare' (centuries-old), standing on the garden's north side alongside equally old yews. The garden was laid out in 1879 by engineer Annibale Apollonio on land reclaimed when the Adige was diverted for the railway (1854-58), and is described as Trento's first public garden; restored since 2007, it now hosts a children's library in a restored Art Nouveau pavilion. Directly opposite Trento's main railway station, the easiest tree in the city to reach."
+  },
+  {
+    "id": "tre_005",
+    "name": "The Elm of Maso Ginocchio",
+    "species": "Field Elm (Ulmus minor)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Giardino di Maso Ginocchio, Via Giusti, 38122 Trento TN, Italy",
+      "latitude": 46.058939,
+      "longitude": 11.118175,
+      "neighbourhood": "San Giuseppe-Santa Chiara"
+    },
+    "location_precision": "confirmed",
+    "access": "Free, public garden (Comune di Trento), with entrances from Via Veneto, Via G. Giusti and Via Monte Baldo",
+    "transport": "roughly 15-20 min on foot south of the centre",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 23/L378/TN/22",
+      "https://ilregistrodeglialberi.it/17959-olmo-campestre-trento-tn-trentino-alto-adige (RAMI register entry for the Maso Ginocchio field elm)"
+    ],
+    "curation_status": "ai_generated",
+    "verify_notes": "A survivor: the RAMI register notes it has lived through Dutch elm disease, the fungal epidemic that has killed most of Europe's mature elms since the 1930s by blocking the tree's vascular system, while most other elms nearby did not. RAMI describes it as tucked in a corner of the garden but imposing once found, with a girth already above the monumental threshold (register: 393cm); no age or height recorded by either source. The garden itself is a public municipal park (about 3.6 hectares) in the San Giuseppe-Santa Chiara district, with a play area and a small animal enclosure; one 2016 local-press piece described it as under-maintained at the time, a comment on upkeep rather than access."
+  },
+  {
+    "id": "tre_006",
+    "name": "The Cedar of Parco Gocciadoro",
+    "species": "Himalayan Cedar (Cedrus deodara)",
+    "age_estimate": "roughly 165 years",
+    "age_min": 155,
+    "age_max": 175,
+    "location": {
+      "address": "Parco di Gocciadoro, Via Hermann Gmeiner 25, 38121 Trento TN, Italy",
+      "latitude": 46.058706,
+      "longitude": 11.138469,
+      "neighbourhood": "Gocciadoro"
+    },
+    "location_precision": "confirmed",
+    "access": "Free, public park (Comune di Trento)",
+    "transport": "roughly 25-30 min on foot east of the centre, or local bus to the Gocciadoro area",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 09/L378/TN/22",
+      "https://www.ildolomiti.it/societa/2024/dal-cedro-dellhimalaya-al-ciliegio-selvatico-18-alberi-monumentali-a-trento-e-altri-10-candidati-per-diventarlo-il-piu-antico-del-1835-ogni-pianta-e-un-mondo-e-una-storia (cedar in Parco Gocciadoro planted around the time of Italian Unification, ~1861, the city's second-oldest monumental tree)"
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "Local press (il Dolomiti, 2024) dates a cedar in Parco Gocciadoro to roughly the 1861 Italian Unification, calling it the second-oldest of Trento's monumental trees after the 1835 Via Santa Croce plane (tre_001). The same article credits the park with a separate, taller Liriodendron (35m, the tallest monumental tree in the city, not part of this register batch), which means the park holds more than one monumental specimen; the article gives no girth to cross-check against this register entry (525cm) and does not pin the cedar's exact spot within the park, so flagged pending a tighter match. A well-known public city park regardless."
+  },
+  {
+    "id": "tre_007",
+    "name": "The Chestnut of Sardagna",
+    "species": "Sweet Chestnut (Castanea sativa)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Loc. Castagnara, Sardagna, 38121 Trento TN, Italy",
+      "latitude": 46.062369,
+      "longitude": 11.089225,
+      "neighbourhood": "Sardagna (across the Adige, reached by cable car)"
+    },
+    "location_precision": "approximate",
+    "access": "Free, public hillside area on the Sentiero dei Castagni (Chestnut Trail), reached via the Funivia Trento-Sardagna cable car or by road",
+    "transport": "Funivia Trento-Sardagna cable car (about 4 minutes, 200m to 600m elevation) from the city centre, then a walk on the marked Sentiero dei Castagni",
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 20/L378/TN/22",
+      "https://www.ildolomiti.it/societa/2025/la-castagna-e-il-marrone-di-sardagna-ottengono-il-marchio-deco-una-festa-per-celebrare-il-riconoscimento-e-il-nuovo-sentiero-dei-castagni",
+      "https://secolo-trentino.com/2025/10/13/castagna-di-sardagna-evento-2025/"
+    ],
+    "curation_status": "flagged",
+    "verify_notes": "Register locality 'Castagnara' sits within Sardagna's chestnut grove, a hillside area above Trento reached by cable car that was made into a waymarked trail in 2025 (Sentiero dei Castagni, with the Trento-Sopramonte forestry authority and the Sardagna district), and whose chestnuts won a De.Co. (denominazione comunale) local-product mark the same year. Local coverage names other individual chestnuts in the area by their own nicknames (Castegnar della Lasta; another that famously stopped a runaway bus in January 1949), but no source found this pass confirms this specific register-mapped tree is one of the named ones, hence approximate rather than confirmed precision and flagged. Worth the trip for the cable car and hillside setting on its own merits even if the exact tree's fame is less certain than the city-centre entries."
+  }
+]

@@ -1,0 +1,153 @@
+{
+  "source": "Freie und Hansestadt Hamburg, Behoerde fuer Umwelt und Energie: Naturdenkmale (nr_f_naturdenkmal layer of the Schutzgebiete WFS)",
+  "endpoint": "https://geodienste.hamburg.de/HH_WFS_Schutzgebiete?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&typeNames=de.hh.up:nr_f_naturdenkmal&srsName=EPSG:4326",
+  "licence": "Datenlizenz Deutschland Namensnennung 2.0 (DL-DE-BY 2.0)",
+  "licence_proof": "The WFS GetCapabilities response (ows:Fees element) states verbatim: 'Datenlizenz Deutschland Namensnennung 2.0, Quellenvermerk: Freie und Hansestadt Hamburg, Behoerde fuer Umwelt und Energie' (fetched from the live GetCapabilities response, 2026-08-13).",
+  "designation": "Naturdenkmal (Freie und Hansestadt Hamburg), layer de.hh.up:nr_f_naturdenkmal within the city's Schutzgebiete WFS",
+  "country": "Germany",
+  "attribution": "Freie und Hansestadt Hamburg, Behoerde fuer Umwelt und Energie (required by DL-DE-BY 2.0)",
+  "fetched": "2026-08-13",
+  "publish_dots": true,
+  "scope": "ALL 12 features in Hamburg's entire Naturdenkmal layer, fetched in full (no pagination needed, the whole city-wide category is only 12 entries). Filtered NONE out at import time; the semantic filter (collectible individual trees vs ponds/moors/geological features) is recorded per entry via 'hektar' and 'feature_text' for a verification pass to apply, since only 2 of the 12 are trees.",
+  "caveat": "Hamburg's Naturdenkmal category is overwhelmingly NOT trees: of 12 entries, 10 are ponds, moors, a clay pit and a canal ('Papenbrack', 'Kiebitzmoor', 'Sievertsche Tongrube', 'Poppenbuettler Graben' etc, 0.17 to 10.5 hectares each), which fail the semantic filter for a collectible tree point outright and must not be imported as tree candidates. Only 2 are genuinely individual trees, both under 0.005 ha: 'Alter Schwede' (a well-known old oak, HH-1011/gebietsnummer 3) and 'Eibe am Neulaender Deich' (a yew). Geometry is a small POLYGON around the tree/crown, not a single point coordinate: a verification pass should compute the centroid or read the polygon's extent as the trunk position, and treat the resulting precision as 'approximate' unless corroborated by a second, tree-level source. No species field (species must come from the name/feature_text or external verification), no age field, no vitality field: 'Alter Schwede' literally means 'Old Swede' and is a nickname, not evidence of age by itself. 'verordnung' is the ordinance date (1936 for Papenbrack), same planting-date trap as Berlin/Bayern: it is when the tree was DECLARED protected, not planted.",
+  "city_coverage": {
+    "Hamburg": {
+      "tree_candidates": 2,
+      "note": "Thin: only 'Alter Schwede' and 'Eibe am Neulaender Deich' pass the semantic filter out of the whole state-wide Naturdenkmal layer. Below the 'no pass under six candidates' floor on its own; useful as two free leads for whenever a Hamburg pass runs with other sourcing (e.g. Alster park trees, Stadtpark, Planten un Blomen found by the normal search order), not as a register that carries a Hamburg city page by itself. Hamburg's separate Strassenbaumkataster (street tree cadastre) is a full municipal inventory and fails the semantic filter outright per BRIEF_RESEARCH.md/CLAUDE.md's standing rule against bulk imports."
+    }
+  },
+  "entries": [
+    {
+      "register_id": "HH-1011",
+      "name": "Papenbrack",
+      "gebietsname": "ND Papenbrack",
+      "schutzstatus": "ND",
+      "hektar": 0.7042,
+      "verordnung_date": "24.11.1936",
+      "feature_text": "Das Alter der Bracks in Wilhelmsburg ist unbekannt. Auf der Kurhannoverschen Landesaufnahme von 1772 ist es bereits eingezeichnet.",
+      "info_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/themen/naturschutz/naturdenkmale-52292",
+      "geometry_note": "areal (polygon), not a point coordinate; see caveat"
+    },
+    {
+      "register_id": "HH-1013",
+      "name": "Kiebitzmoor",
+      "gebietsname": "ND Kiebitzmoor",
+      "schutzstatus": "ND",
+      "hektar": 1.6064,
+      "verordnung_date": "30.12.2014",
+      "feature_text": "Kleines Restmoor mit besonderer Eigenart und Schönheit",
+      "info_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/themen/naturschutz/naturdenkmale-52292",
+      "geometry_note": "areal (polygon), not a point coordinate; see caveat"
+    },
+    {
+      "register_id": "HH-1002",
+      "name": "Garten de L'Aigles",
+      "gebietsname": "ND Garten de L'Aigles",
+      "schutzstatus": "ND",
+      "hektar": 0.1709,
+      "verordnung_date": "04.02.1997",
+      "feature_text": "Alma de l'Aigle - Erzieherin und Gärtnerin aus Liebe. Ein Teil des Gartens ihres Elternhauses aus dem 19. Jahrhundert besteht bis heute und ist als Naturdenkmal unter Schutz gestellt.",
+      "info_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/themen/naturschutz/naturdenkmale-52292",
+      "geometry_note": "areal (polygon), not a point coordinate; see caveat"
+    },
+    {
+      "register_id": "HH-1006",
+      "name": "Sievertsche Tongrube",
+      "gebietsname": "ND Sievertsche Tongrube",
+      "schutzstatus": "ND",
+      "hektar": 10.5124,
+      "verordnung_date": "11.02.1986",
+      "feature_text": "Die Teiche entstanden durch den Betrieb einer Ziegelei, die Ende der 1950er Jahre stillgelegt wurde.",
+      "info_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/themen/naturschutz/naturdenkmale-52292",
+      "geometry_note": "areal (polygon), not a point coordinate; see caveat"
+    },
+    {
+      "register_id": "HH-1004",
+      "name": "Timmermoor",
+      "gebietsname": "ND Timmermoor",
+      "schutzstatus": "ND",
+      "hektar": 2.2426,
+      "verordnung_date": "04.02.1986",
+      "feature_text": "Der Moorteich soll vor rund 20.000 Jahren wührend der letzten Eiszeit entstanden sein.",
+      "info_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/themen/naturschutz/naturdenkmale-52292",
+      "geometry_note": "areal (polygon), not a point coordinate; see caveat"
+    },
+    {
+      "register_id": "HH-1005",
+      "name": "Uhlenbuschbracks",
+      "gebietsname": "ND Uhlenbuschbracks",
+      "schutzstatus": "ND",
+      "hektar": 0.3972,
+      "verordnung_date": "24.11.1936",
+      "feature_text": "Das Entstehungsdatum der Uhlenbuschbracks ist unbekannt. Auf einer Karte von 1777 sind sie bereits in ihrer heutigen Form eingezeichnet.",
+      "info_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/themen/naturschutz/naturdenkmale-52292",
+      "geometry_note": "areal (polygon), not a point coordinate; see caveat"
+    },
+    {
+      "register_id": "HH-1012",
+      "name": "Alter Schwede",
+      "gebietsname": "ND Alter Schwede",
+      "schutzstatus": "ND",
+      "hektar": 0.0031,
+      "verordnung_date": "03.04.2001",
+      "feature_text": "Dieser große Findling wurde 1999 bei Baggerarbeiten in der Fahrrinne der Elbe gefunden, geborgen und auf den Strand versetzt.",
+      "info_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/themen/naturschutz/naturdenkmale-52292",
+      "geometry_note": "areal (polygon), not a point coordinate; see caveat"
+    },
+    {
+      "register_id": "HH-1001",
+      "name": "Eibe am Neuländer Deich",
+      "gebietsname": "ND Eibe am Neuländer Deich",
+      "schutzstatus": "ND",
+      "hektar": 0.0042,
+      "verordnung_date": "03.11.1936",
+      "feature_text": "Die Eibe wird auf ein Alter von 800 bis 1.000 Jahre geschützt.",
+      "info_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/themen/naturschutz/naturdenkmale-52292",
+      "geometry_note": "areal (polygon), not a point coordinate; see caveat"
+    },
+    {
+      "register_id": "HH-1008",
+      "name": "Poppenbüttler Graben",
+      "gebietsname": "ND Poppenbüttler Graben",
+      "schutzstatus": "ND",
+      "hektar": 4.0861,
+      "verordnung_date": "07.06.1988",
+      "feature_text": "Zum Teil ist der Poppenbüttler Graben der Grenzgraben zu Schleswig-Holstein. Auf Hamburger Gebiet steht ein Teil unter Schutz.",
+      "info_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/themen/naturschutz/naturdenkmale-52292",
+      "geometry_note": "areal (polygon), not a point coordinate; see caveat"
+    },
+    {
+      "register_id": "HH-1009",
+      "name": "Gutsbrack",
+      "gebietsname": "ND Gutsbrack",
+      "schutzstatus": "ND",
+      "hektar": 1.1176,
+      "verordnung_date": "28.06.1988",
+      "feature_text": "Das Gutsbrack geht auf einen Schleusenbruch bei der Petriflut am 22. Februar 1651 zurück. Seine heutige Ausdehnung erfuhr es in der Markusflut am 7. Oktober 1756, als hier der Deich zum zweiten Mal brach.",
+      "info_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/themen/naturschutz/naturdenkmale-52292",
+      "geometry_note": "areal (polygon), not a point coordinate; see caveat"
+    },
+    {
+      "register_id": "HH-1010",
+      "name": "Callabrack",
+      "gebietsname": "ND Callabrack",
+      "schutzstatus": "ND",
+      "hektar": 0.4804,
+      "verordnung_date": "24.11.1936",
+      "feature_text": "Das Alter der Bracks in Wilhelmsburg ist unbekannt. Auf der Kurhannoverschen Landesaufnahme von 1772 sind sie bereits eingezeichnet.",
+      "info_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/themen/naturschutz/naturdenkmale-52292",
+      "geometry_note": "areal (polygon), not a point coordinate; see caveat"
+    },
+    {
+      "register_id": "HH-1005",
+      "name": "Uhlenbuschbracks",
+      "gebietsname": "ND Uhlenbuschbracks",
+      "schutzstatus": "ND",
+      "hektar": 0.1847,
+      "verordnung_date": "24.11.1936",
+      "feature_text": "Das Entstehungsdatum der Uhlenbuschbracks ist unbekannt. Auf einer Karte von 1777 sind sie bereits in ihrer heutigen Form eingezeichnet.",
+      "info_url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bukea/themen/naturschutz/naturdenkmale-52292",
+      "geometry_note": "areal (polygon), not a point coordinate; see caveat"
+    }
+  ]
+}

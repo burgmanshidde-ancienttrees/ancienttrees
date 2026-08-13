@@ -1,0 +1,61 @@
+{
+  "city": "Como",
+  "country": "Italy",
+  "city_slug": "como",
+  "note": "From the 2026-08-13 verification pass on the MASAF register candidates in data/research/como-register-candidates.json. 8 trees shipped to data/research/como-verified.json (a lakefront cluster: Villa Olmo, Villa Geno x3, Villa del Grumello x3, plus the Museo Giovio plane in the historic centre). Everything below either failed the collectible-point/access bar outright (blocked) or was not fully researched in the ~40 minute window (leads).",
+  "leads": [
+    {
+      "name": "The Plane Tree of Via Baserga",
+      "species": "American Sycamore (Platanus occidentalis)",
+      "lat": 45.784389,
+      "lng": 9.093667,
+      "why_a_lead": "Existence confirmed by both the MASAF register (sheet 21/C933/CO/03, girth 490cm) and the independent RAMI register ('Platano via Baserga'), which also lists a separate hornbeam (Carpinus betulus) at the same address not in our register batch. But the locality is a specific street number (Via Baserga 39) rather than a named park or piazza, and this pass did not confirm whether the tree stands on public street frontage or inside a private garden. 3.68km from centre, a separate southern cluster rather than part of the lakefront walk.",
+      "next_step": "Check satellite imagery or a street-level source (Google Street View is fine to look at, just not to scrape) for whether the tree is visible from the public street, then treat as confirmed access if so."
+    },
+    {
+      "name": "The Plane Tree of Piazza Camerlata",
+      "species": "London Plane (Platanus x acerifolia) per MASAF, or Platanus hispanica per RAMI, same naming disagreement as com_008",
+      "lat": 45.790253,
+      "lng": 9.085039,
+      "why_a_lead": "Existence confirmed by both MASAF (sheet 08/C933/CO/03, girth 430cm, the smallest girth in this batch) and RAMI ('Platano Piazza Camerlata'). Piazza Camerlata is a genuine public square (best known for its 1935/1960 Cattaneo-Radice fountain, starting point for the Baradello castle walk), so access is very likely fine, but no age or independent size source was found this pass and it was not otherwise researched. 2.94km from the lakefront cluster.",
+      "next_step": "A local press search ('platano storico Camerlata') or the comune's own tree register may give an age; otherwise ships fine on register + public-square access alone."
+    },
+    {
+      "name": "The Horse Chestnut of Quarcino",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "lat": 45.836567,
+      "lng": 9.04225,
+      "why_a_lead": "Existence confirmed by MASAF (sheet 09/C933/CO/03, girth 335cm) and RAMI ('Ippocastano di Quarcino'); a Wikimedia Commons category for the small 10th-century Romanesque church of Santi Filippo e Giacomo in Quarcino includes a photo labelled 'secular horse chestnut' near the church. Church grounds are usually publicly walkable in Italy but this pass found no source stating so explicitly for this specific churchyard. 3.88km from the lakefront cluster, a different neighbourhood (Quarcino/Sagnino, western hills).",
+      "next_step": "Confirm the tree stands in the open churchyard rather than an adjoining private garden, e.g. via the Wikimedia Commons photo itself or a local parish page."
+    },
+    {
+      "name": "The Beech of Villa Roccolo, Grandate",
+      "species": "European Beech (Fagus sylvatica)",
+      "lat": 45.7793,
+      "lng": 9.058711,
+      "why_a_lead": "MASAF register sheet 01/E139/CO/03, girth 400cm. Not researched this pass: different comune (Grandate, 4.57km from Como centre), no time left in the window."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "The Plane Tree of Villa Saporiti (also the Magnolia and Strawberry Tree at the same site)",
+      "species": "American Sycamore (Platanus occidentalis), Southern Magnolia (Magnolia grandiflora), Strawberry Tree (Arbutus unedo)",
+      "reason": "Register sheets 03/C933/CO/03 (girth 642cm), 18/C933/CO/03 (magnolia, 228cm) and 14/C933/CO/03 (arbutus, no girth recorded). Villa Saporiti's park is the working office grounds of the Province of Como (laprovinciadicomo.it), in exclusive use of administrators and staff; access for others is only via scheduled guided visits authorised by the institution, not a place a visitor can walk in. Restricted access, hard rule 10."
+    },
+    {
+      "name": "The Plane Trees of Villa Erba, Cernobbio",
+      "species": "London Plane (Platanus x acerifolia)",
+      "reason": "Register sheets 01/C520, 02/C520, 03/C520, 04/C520 and 05/C520/CO/03, all recorded as 'Insieme omogeneo di Platanus acerifolia' (a homogeneous stand/avenue of plane trees), not one identifiable tree or a compact ensemble with a single obvious place to stand: fails the collectible-point test. ascuoladaglialberi.net also notes Villa Erba, Luchino Visconti's former residence, has only 'limited public access during events' since it now operates primarily as a conference and exhibition venue. Double reason: not a collectible point, and access is event-gated rather than open."
+    },
+    {
+      "name": "The Atlas Cedar of Istituto Ugo Foscolo",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "reason": "Register sheet 07/C933/CO/03, girth 520cm, locality 'Istituto Ugo Foscolo - Via Borgovico 193'. Stands on the grounds of an active school; no evidence of public access found or expected. Private/restricted institution, hard rule 10."
+    },
+    {
+      "name": "The Stone Pines of Villa del Grumello",
+      "species": "Stone Pine (Pinus pinea)",
+      "reason": "Register sheet 17/C933/CO/03, 'Insieme omogeneo di Pinus pinea', same address as the shipped Grumello cedar/ginkgo/magnolia. A homogeneous group planting rather than one identifiable tree: fails the collectible-point test, even though the park itself (com_005-007) is open."
+    }
+  ]
+}
