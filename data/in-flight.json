@@ -16,18 +16,6 @@
       "claimed_at": "2026-08-13T10:46:04+00:00"
     },
     {
-      "target": "bordeaux",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-13T11:37:08+00:00"
-    },
-    {
-      "target": "strasbourg",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-13T11:37:08+00:00"
-    },
-    {
       "target": "trento",
       "kind": "verify",
       "by": "night-run",
@@ -50,6 +38,18 @@
       "kind": "verify",
       "by": "night-run",
       "claimed_at": "2026-08-13T11:50:15+00:00"
+    },
+    {
+      "target": "bordeaux",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-13T12:05:00+00:00"
+    },
+    {
+      "target": "strasbourg",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-13T12:05:00+00:00"
     }
   ]
 }
