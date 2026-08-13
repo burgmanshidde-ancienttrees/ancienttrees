@@ -46,6 +46,20 @@ def _aliases():
 
 ALIAS = _aliases()
 QUEUE = os.path.join(ROOT, "data", "photo-queue.json")
+# Bump this whenever the MATCHING rules change (which titles count as a hit),
+# and every negative recorded under an older number is asked again on the next
+# sweep, exhausted ones included.
+#
+# Why it exists (2026-08-13). A viewing pass marks a tree `exhausted` when every
+# candidate it was shown was unusable, and the script then refuses to re-ask,
+# even under --recheck. That is right when the source really is empty and
+# catastrophic when our own filter was hiding the answer: "tree" is a substring
+# of "street", so street signs came in while the tree's own nickname was thrown
+# out, and 58 trees were written off on a sample nobody could have judged
+# correctly. Tested after the fix on eight of them: seven produced candidates
+# the old filter had never shown. A verdict about the world, drawn from a tool,
+# is only as old as the tool.
+SWEEP_VERSION = 2
 API = "https://commons.wikimedia.org/w/api.php"
 UA = "AncientTreesBot/1.0 (https://ancienttrees.app; photo candidate sweep)"
 OK_LICENCE = ("cc0", "cc by", "cc-by", "public domain", "pdm", "attribution")
@@ -560,7 +574,7 @@ def main():
             if (t.get("photo") or {}).get("url"):
                 continue
             prev = entries.get(t["id"])
-            if prev and not recheck:
+            if prev and not recheck and prev.get("sweep") == SWEEP_VERSION:
                 continue
             # A hunt marked exhausted stays exhausted, even under --recheck.
             # Set when a viewing pass has looked at every candidate and found
@@ -568,7 +582,8 @@ def main():
             # OTHER cities' Anne Frank trees), so only a NEW source can close
             # the gap and re-sweeping the same APIs buys nothing. --force
             # overrides, for the day a new source really does appear.
-            if prev and prev.get("exhausted") and "--force" not in sys.argv:
+            if prev and prev.get("exhausted") and "--force" not in sys.argv \
+                    and prev.get("sweep") == SWEEP_VERSION:
                 continue
             todo.append((d["city"], t))
 
@@ -588,6 +603,7 @@ def main():
         entries[tree["id"]] = {
             "city": city, "name": tree["name"],
             "checked": time.strftime("%Y-%m-%d"),
+            "sweep": SWEEP_VERSION,
             "candidates": kept + fresh,
         }
         if prev.get("exhausted"):
