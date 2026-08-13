@@ -55,6 +55,16 @@ GONE = re.compile(
     r"\bno longer (?:present|standing|exists)\b|\btree (?:is )?dead\b|\bdied\b",
     re.I,
 )
+# Prose that talks about removal while describing a tree that is still there.
+# Every one of these was a real false positive on Portland's register, and each
+# would have deleted a living tree: a rescue story, a health note, and an
+# orchard remnant described as the last one remaining.
+SURVIVED = re.compile(
+    r"\bsaved\b|\bspared\b|\breprieve\b|\bcondemned\b|\bthreatened\b|"
+    r"\bwas to be\b|\blast remaining\b|\bonly (?:one|tree|elm|remaining)\b|"
+    r"\bstill (?:stands|standing)\b|\bdead ?wood\b",
+    re.I,
+)
 # Fields that assert the tree is fine.
 ALIVE_VALUES = {"vivant", "alive", "aktuell", "live", "good", "healthy", "standing"}
 # Fields whose mere presence means the tree is gone.
@@ -84,7 +94,7 @@ def check(path):
         gone_field = [k for k in GONE_FIELDS if r.get(k)]
         gone_text = [k for k, v in r.items()
                      if isinstance(v, str) and k not in ("species", "common_name", "name")
-                     and GONE.search(v)]
+                     and GONE.search(v) and not SURVIVED.search(v)]
         if (gone_field or gone_text) and r.get("publishable") is not False:
             out.append((r.get("name") or r.get("common_name") or r.get("species") or "?",
                         (alive[0] + "=" + r[alive[0]]) if alive else "no status field",
