@@ -3,8 +3,8 @@
   "country": "Italy",
   "status": "needs_curation",
   "intro": "Palermo grows one species obsessively. Ficus macrophylla, the Moreton Bay fig, arrived from Australia in the 19th century and found a climate it liked even better than home, filling the city's villas and squares with trees whose aerial roots thicken into trunks of their own. The most famous, in Piazza Marina, is currently fighting a fungal infection that has cost it half its canopy. Its own parent tree still thrives quietly in the Botanical Garden nearby. Between the two: a fig turned into a murdered judge's memorial, two rare dragon trees, and a palm avenue inside Italy's first public garden.",
-  "meta_description": "Palermo's eight most remarkable trees: a fungus-fighting giant fig, its own 180-year-old parent, and a mafia judge's living memorial.",
-  "question_meta": "Palermo's oldest tree is a 181-year-old fig in the Orto Botanico, parent to the more famous giant in Piazza Marina. Its story and seven more trees.",
+  "meta_description": "Palermo's ten most remarkable trees: a fungus-fighting giant fig, its own 180-year-old parent, and a mafia judge's living memorial.",
+  "question_meta": "Palermo's oldest tree is a 181-year-old fig in the Orto Botanico, parent to the more famous giant in Piazza Marina. Its story and nine more trees.",
   "question_answer": "Palermo's oldest tree is the Ficus macrophylla of the Orto Botanico, planted in 1845 and now about 181 years old, its canopy measured at roughly 3,000 square metres, reportedly the largest of any tree in Europe. It grows inside the city's botanical garden, a short walk from the historic centre.",
   "question_context": "Palermo's fig population is unusually well documented because most of it traces back to a handful of 19th century plantings, several still identifiable today. The Orto Botanico's own specimen, planted in 1845, is the oldest and best studied: 180 years of growth have built a canopy now measured at roughly 3,000 square metres, reportedly the largest of any tree in Europe, held up by 44 secondary trunks that grow down from the branches as aerial roots. Its more famous descendant in Piazza Marina, grown from a cutting taken off this tree in the 1860s, is currently fighting a fungal infection that has cost it half its own canopy. A third fig outside the home of murdered judge Giovanni Falcone is younger still, planted only decades ago, but carries its own civic weight as a memorial renewed every year on the anniversary of his 1992 killing. The botanical garden charges standard entry; Piazza Marina, a short walk away, is free.",
   "faq": [
@@ -273,6 +273,66 @@
       "curation_status": "flagged",
       "notes": "Location taken directly from Italy's official AMI national monumental-trees register ('Palme messicane', Villa Giulia), confirmed. Treated as a compact ensemble entry (the entrance avenue itself, a single obvious place to stand) rather than the whole garden, the same pattern that passed Amsterdam's Lomanstraat tunnel and Tokyo's Meiji Jingu Gaien avenue, and the reasoning that failed Barcelona's old La Rambla entry. History (first-public-garden claim, Goethe visit, sundial and fountain) corroborated by Italian Wikipedia; the RAMI registry independently corroborates the palm avenue itself but also registers it as a grouped entry, consistent with treating it as an avenue rather than a single specimen. Exact planting date for the 19th century expansion not established in sources found, presented as a wide honest range. Photo viewed directly: an unmistakable palm-lined avenue with visitors walking beneath it, matching the story exactly.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "pal_009",
+      "name": "The Fig of Villa Malfitano",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "approximately 138 years",
+      "age_min": 136,
+      "age_max": 140,
+      "location": {
+        "address": "Villa Malfitano Whitaker, Via Dante 167, 90141 Palermo",
+        "latitude": 38.122858,
+        "longitude": 13.341453,
+        "neighbourhood": "Libertà"
+      },
+      "story": "When Delia Whitaker was buried, her funeral carriage was asked to stop under this tree. She was the last of the family to live at Villa Malfitano, and she had spent her life pausing beneath this fig, a daily habit the household knew well enough to build into the day she left the house for the last time. The tree was planted in 1888 by her father, Joseph Whitaker, known in the family as Pip, in the years he was stocking the grounds with plants gathered from well outside Sicily. It is the specimen closest to the house, and it grows the way the species does when nothing crowds it, long horizontal branches running out parallel to the ground rather than climbing, until the tree reads as a low green ceiling instead of a column. Italy's national register of monumental trees measures its trunk system at twenty-one metres around. The Italian gardens association, which keeps its own record of this place, describes it as second in size only to the famous specimen in Palermo's botanical garden, a comparison worth reporting as theirs rather than repeating as ours, since the city's big figs are measured by different people using different methods. The garden is free to walk. Only the villa's interior charges, and only for a guided tour.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.apgi.it/giardino/villa-malfitano-whitaker/",
+        "https://www.verdeinsiemeweb.com/2015/11/il-giardino-di-villa-malfitano-palermo.html"
+      ],
+      "access": "Free garden access; the villa's interior requires a paid guided tour",
+      "transport": "20 min walk from Piazza Politeama, entrance on Via Dante",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "pal_010",
+      "name": "The Fig of Villa Tasca",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "not documented, likely dating to the garden's Romantic-era expansion from 1855",
+      "age_min": 100,
+      "age_max": 171,
+      "location": {
+        "address": "Parco di Villa Tasca, Viale Regione Siciliana Sud Est 397, 90135 Palermo",
+        "latitude": 38.099142,
+        "longitude": 13.327022,
+        "neighbourhood": "Villa Tasca / Passo di Rigano"
+      },
+      "story": "Italy's national register of monumental trees puts this fig's trunk system at twenty-seven metres around and the tree itself at thirty metres tall. Resist doing anything with that number. Palermo's big figs are measured in different ways by different people, some on the original trunk and some on the whole colonnade of secondary trunks and aerial roots that a Ficus macrophylla eventually becomes, and the botanical garden's giant is usually described by the area of its canopy rather than by any girth at all. So the defensible statement is the register's own measurement, not a ranking. What the tree does in the garden is easier to describe. It stands over the Lago dei Cigni, the swan lake in the grounds of Villa Tasca, and one Italian garden survey puts it plainly: the sprawling fig dominates half the lake with its permanent shade. Nobody has published a planting date. The garden was remade in the Romantic style from 1855 by Lucio Tasca and extended again from 1870 with English landscape additions, which is the period this tree most plausibly belongs to, and that is as far as the evidence runs. The grounds reopened to the public as the Parco di Villa Tasca in 2020. Entry is ticketed, it sits out on the ring road toward Monreale rather than in the historic centre, and the hours are worth confirming before you go.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://www.grey-panthers.it/speciale/speciali/giardini-italia-scoperta-natura/palermo-villa-tasca/",
+        "https://www.turismo.it/idee-di-viaggio/natura-outdoor/villa-tasca-piante-tropicali-e-romanticismo-siciliano-id-20657/"
+      ],
+      "access": "Paid entry, Parco di Villa Tasca (day ticket around 4 euros per grandigiardini.it 2026 pricing; an annual pass is also sold). Sources disagree on hours: the park's own listed general hours run Tuesday-Sunday from mid-afternoon into the evening, while a garden feature (grey-panthers.it) describes the historic Romantic garden itself as visited Tuesday-Sunday by reservation/group booking. Confirm current opening hours and whether the fig's part of the grounds needs a booked visit before publishing a specific time.",
+      "transport": "On Viale Regione Siciliana, the ring road toward Monreale; not walkable from the historic centre, reachable by bus or car",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

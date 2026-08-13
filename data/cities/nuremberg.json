@@ -1,0 +1,342 @@
+{
+  "city": "Nuremberg",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Nine of Nuremberg's ten protected trees stand within about a kilometre of the old town, and six of those share a single park of under two hectares. The Kontumazgarten takes its name from a quarantine station, and it now holds planes, beeches and a chestnut protected individually by city ordinance. The tenth, a lime in the Stadtpark with a trunk eight metres round, is the best documented of the lot and reckoned at around four hundred years.",
+  "meta_description": "Ten protected trees in Nuremberg, nine of them in one walk: a 400-year lime, six in a former quarantine garden, and beeches on the Hallerwiese.",
+  "question_meta": "Nuremberg's oldest tree is the Stadtpark lime, roughly 400 years old with a trunk eight metres round. Where it stands, plus nine more.",
+  "question_answer": "The oldest tree in Nuremberg is the large-leaved lime in the Stadtpark, reckoned at around four hundred years with a trunk about eight metres round, which makes it both the oldest and the thickest tree on this page. It stands in a free public park about fifteen minutes' walk from the Kontumazgarten cluster. It is also the best documented: two independent sources describe it, where most of the city's protected trees rest on the ordinance alone.",
+  "question_context": "Nuremberg protects individual trees by city ordinance rather than through a state heritage list, and the Bavarian register that carries them gives a number, a German name and a coordinate, with no species column, no girth and no age. So the species on this page were established from the city's own 2020 ordinance and from local sources, and several are identified at genus level or inferred from the tree's German name rather than confirmed outright; each of those says so in its own story. The same thinness cuts the other way too. Cross-checking the state layer against the current city ordinance turned up two protected trees that the state still lists as current and that the ordinance no longer carries, both at addresses where German sources record monuments lost to fungal infection. Those are absent here. Four more are on private ground, one is a seventy-nine tree avenue with nowhere to stand, and two are in institutional courtyards.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Nuremberg?",
+      "a": "The large-leaved lime in the Stadtpark, reckoned at about four hundred years with a trunk eight metres round. It is free to visit."
+    },
+    {
+      "q": "Can I see Nuremberg's protected trees in one walk?",
+      "a": "Nine of the ten, yes. Six stand in the Kontumazgarten and three on the Hallerwiese, all within about a kilometre of the centre. The Stadtpark lime is a further fifteen minutes on foot."
+    },
+    {
+      "q": "Are they free to visit?",
+      "a": "Yes. Every tree on this page stands in a public park or a public street with no entry fee. Protected trees on private ground are deliberately not listed here."
+    }
+  ],
+  "hero_tree_id": "nbg_010",
+  "oldest_tree_id": "nbg_010",
+  "trees": [
+    {
+      "id": "nbg_001",
+      "name": "The Gnarled Lime of Hallerwiese",
+      "species": "Lime (Tilia sp.)",
+      "age_estimate": "around 350 years",
+      "age_min": 300,
+      "age_max": 400,
+      "location": {
+        "address": "Hallerwiese park, St. Johannis",
+        "latitude": 49.4553066,
+        "longitude": 11.06805803,
+        "neighbourhood": "St. Johannis"
+      },
+      "story": "Lightning has struck this lime and a storm has taken pieces off it, and it is still putting on growth. Nuremberg's own survey of the city's oldest trees describes it as a gnarled linden of roughly three hundred and fifty years at the southern end of the Hallerwiese, damaged and healthy at the same time, which is a fair summary of what that many centuries do to something that cannot move. It is protected as ND-5 on the city's 2020 natural monument ordinance. What nobody has settled is which lime it is. German parks of this period were planted with three of them almost interchangeably, summer lime, winter lime and the hybrid between the two, and no source identifies this one, so it stays a lime and goes no further. Three hundred and fifty years covers most of what happened to Nuremberg. The tree was already mature while the city was still a free imperial city answering to nobody but the emperor, and it was well over a century old when that ended in 1806 and Nuremberg was handed to Bavaria, bankrupt and stripped of its independence. Two large planes stand on the green immediately behind it, planted at close to the same time. The meadow is free and open, roughly fifteen minutes on foot from the Hauptmarkt.",
+      "verified_sources": [
+        "https://www.nuernberg.de/imperia/md/umweltamt/dokumente/natur_landschaft/liste_der_naturdenkmaeler_2020.pdf",
+        "https://www.nordbayern.de/nuernberg/400-jahre-und-gesund-das-sind-nurnbergs-alteste-baume-1.9659342"
+      ],
+      "access": "Free, public city park (Hallerwiese, St. Johannis district)",
+      "transport": "Short walk (roughly 15-20 min) from Nuremberg Altstadt/Hauptmarkt; specific tram/bus stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nbg_002",
+      "name": "The First Plane of Hallerwiese",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 320,
+      "location": {
+        "address": "Hallerwiese park, St. Johannis",
+        "latitude": 49.45551086,
+        "longitude": 11.06801831,
+        "neighbourhood": "St. Johannis"
+      },
+      "story": "The London plane is not much older than this tree. The hybrid turned up in European gardens some time in the seventeenth century, a cross between an American and an Oriental plane that nobody set out to make, and Nuremberg's survey of its oldest trees puts this one and its neighbour at over three hundred years, which places the pair within a couple of generations of the hybrid's own beginning. Both stand on the green behind the old gnarled lime, planted at close to the same moment, and both carry their own entry on the city's 2020 natural monument ordinance, this one as ND-4. The register lists them separately. The newspaper survey describes them as a pair and does not tell them apart, which is why this page does not pretend to either. What is not in question is the size. Planes put on girth faster than limes and then hold it, and three centuries on the Hallerwiese have given these two the heavy trunks that make the species recognisable from the far end of a park, bark flaking off in jigsaw plates to leave a camouflage of cream, olive and grey underneath. It is the one large tree that looks different every year in the same way. Free and open, about fifteen minutes on foot from the Hauptmarkt.",
+      "verified_sources": [
+        "https://www.nuernberg.de/imperia/md/umweltamt/dokumente/natur_landschaft/liste_der_naturdenkmaeler_2020.pdf",
+        "https://www.nordbayern.de/nuernberg/400-jahre-und-gesund-das-sind-nurnbergs-alteste-baume-1.9659342"
+      ],
+      "access": "Free, public city park (Hallerwiese, St. Johannis district)",
+      "transport": "Short walk (roughly 15-20 min) from Nuremberg Altstadt/Hauptmarkt; specific tram/bus stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nbg_003",
+      "name": "The Second Plane of Hallerwiese",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 320,
+      "location": {
+        "address": "Hallerwiese park, St. Johannis",
+        "latitude": 49.45540332,
+        "longitude": 11.0684507,
+        "neighbourhood": "St. Johannis"
+      },
+      "story": "City foresters plant planes because they are difficult to kill, and this one has had the chance to prove it. It is the second of the two large planes on the Hallerwiese, protected as ND-3, standing about forty metres from its twin and, by the city's own reckoning, over three hundred years old. Planes tolerate compacted soil, road salt, drought and smoke better than almost any other large broadleaf, which is why they line boulevards across Europe, and why this pair was still standing after the night of 2 January 1945, when an RAF raid destroyed roughly nine tenths of Nuremberg's old town on the far side of the Pegnitz. The medieval centre was rebuilt over the following decades from photographs and salvaged stone. The trees needed nothing. Nuremberg's own survey of its oldest trees treats the two planes as a pair and never separates them, while the ordinance gives each its own number, so this page keeps them as two entries while admitting they are one sight. Walk to the gnarled lime first, which is the oldest thing on the meadow, and the planes stand on the green immediately behind it. All three are within a minute of each other, free and open, about fifteen minutes on foot from the Hauptmarkt.",
+      "verified_sources": [
+        "https://www.nuernberg.de/imperia/md/umweltamt/dokumente/natur_landschaft/liste_der_naturdenkmaeler_2020.pdf",
+        "https://www.nordbayern.de/nuernberg/400-jahre-und-gesund-das-sind-nurnbergs-alteste-baume-1.9659342"
+      ],
+      "access": "Free, public city park (Hallerwiese, St. Johannis district)",
+      "transport": "Short walk (roughly 15-20 min) from Nuremberg Altstadt/Hauptmarkt; specific tram/bus stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nbg_004",
+      "name": "The Chestnut of Kontumazgarten",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Kontumazgarten, Kleinweidenmühle",
+        "latitude": 49.4549583,
+        "longitude": 11.06690368,
+        "neighbourhood": "Kleinweidenmühle"
+      },
+      "story": "This park was a quarantine station. Kontumaz is the old German word for it, and the ground here is where Nuremberg held arriving travellers and goods until the city was satisfied they carried nothing worse than themselves. It is a lawn and a playground now, and this chestnut is protected on it as ND-6 under the city's 2020 natural monument ordinance. The ordinance calls it Kastanie and leaves it there, chestnut, without saying which kind. In a planted German municipal park an unqualified Kastanie is almost always the horse chestnut rather than the sweet chestnut, so that is what this page records, on inference rather than on anyone's botanical word. No source gives it an age either. What the register does confirm is that in 2020 the city still counted it worth protecting by name, which is the most recent thing anyone has published about this tree. Come in May. Horse chestnuts flower by putting up hundreds of white candles at once, upright over the entire crown, and a mature one doing that above a children's playground is the best ten days this park has all year. By late September it is dropping conkers in spiny green cases that split open on the ground, which is the other reason children have always known this species better than adults do.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when it puts up hundreds of white candles over the playground"
+      },
+      "verified_sources": [
+        "https://www.nuernberg.de/imperia/md/umweltamt/dokumente/natur_landschaft/liste_der_naturdenkmaeler_2020.pdf",
+        "https://de.wikipedia.org/wiki/Kontumazgarten"
+      ],
+      "access": "Free, public city park (Kontumazgarten, Kleinweidenmühle district), has a playground",
+      "transport": "Short walk (roughly 15-20 min) from Nuremberg Altstadt/Hauptmarkt; specific tram/bus stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nbg_005",
+      "name": "The Founders' Plane of Kontumazgarten",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Kontumazgarten, Kleinweidenmühle",
+        "latitude": 49.45492367,
+        "longitude": 11.06767979,
+        "neighbourhood": "Kleinweidenmühle"
+      },
+      "story": "Six individually protected trees stand on 1.7 hectares here, which is a great deal of legal attention for one small park. Kontumazgarten is a lawn, a playground and some old trees, and the city's 2020 natural monument ordinance lists ND-6 through ND-11 inside it: a chestnut, two beeches and three planes, each with its own number and its own protection. This is the first of the planes, ND-7. A Naturdenkmal is not a plaque. It is a legal designation under German conservation law that attaches to a single named object rather than to an area, and it makes cutting, damaging or altering the tree an offence, which is why a municipal park gets redesigned around a tree rather than through it. The ordinance is also the only source. It gives the species and the position and stops: no age, no girth, no description, and no article or survey names this plane on its own. So what is documented is the city's own judgement, repeated six times over in one small green, that this particular set of trees was worth writing into law. The six sit within about a hundred and fifty metres of each other, which makes the park a single stop rather than six errands. Free, open, with a playground, about fifteen minutes from the old town.",
+      "verified_sources": [
+        "https://www.nuernberg.de/imperia/md/umweltamt/dokumente/natur_landschaft/liste_der_naturdenkmaeler_2020.pdf",
+        "https://de.wikipedia.org/wiki/Kontumazgarten"
+      ],
+      "access": "Free, public city park (Kontumazgarten, Kleinweidenmühle district), has a playground",
+      "transport": "Short walk (roughly 15-20 min) from Nuremberg Altstadt/Hauptmarkt; specific tram/bus stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nbg_006",
+      "name": "The First Beech of Kontumazgarten",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Kontumazgarten, Kleinweidenmühle",
+        "latitude": 49.45444343,
+        "longitude": 11.06718686,
+        "neighbourhood": "Kleinweidenmühle"
+      },
+      "story": "Almost nothing grows under a beech, and the tree is doing that on purpose. European beech holds its leaves in dense overlapping layers that let very little light reach the ground, so the soil beneath a mature one is usually bare and brown, which is why beech woods feel like rooms rather than thickets. This is the first of two beeches protected inside the Kontumazgarten, listed as ND-8 on Nuremberg's 2020 natural monument ordinance. The city recorded it and stopped there. No age, no measurements, no description, and no independent source names it, so the honest position is that it is old enough for a city to protect by name and nobody has published a number. The bark is the way to read a beech: it keeps a smooth grey skin for its whole life, so unlike an oak it hides nothing, and every scar, carving and old wound stays legible for decades. Come in late October or November. Beech is the best autumn tree in central Europe by some margin, turning through yellow into copper and russet and holding the colour for weeks, and young beeches keep their dead leaves right through winter instead of dropping them. The park is free, open and has a playground, about fifteen minutes on foot from Nuremberg's old town.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October and November, when it turns copper and holds it"
+      },
+      "verified_sources": [
+        "https://www.nuernberg.de/imperia/md/umweltamt/dokumente/natur_landschaft/liste_der_naturdenkmaeler_2020.pdf",
+        "https://de.wikipedia.org/wiki/Kontumazgarten"
+      ],
+      "access": "Free, public city park (Kontumazgarten, Kleinweidenmühle district), has a playground",
+      "transport": "Short walk (roughly 15-20 min) from Nuremberg Altstadt/Hauptmarkt; specific tram/bus stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nbg_007",
+      "name": "The Close Plane of Kontumazgarten",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Kontumazgarten, Kleinweidenmühle",
+        "latitude": 49.45439775,
+        "longitude": 11.06804386,
+        "neighbourhood": "Kleinweidenmühle"
+      },
+      "story": "These two planes stand five metres apart and the law counts them as separate monuments. ND-9 and ND-10 on Nuremberg's 2020 natural monument ordinance each have their own register number, their own coordinate and their own protection, and anyone walking into the Kontumazgarten will see one pair of trees. That gap between how a register sees a park and how a person sees it is worth knowing before you go hunting for ten separate trees in this city. This is ND-9, the closer of the two to the lawn. Neither has an age on record, neither has been measured in any published source, and no article names either of them individually, so what exists is the city's designation and the trees themselves. Planes grown this close do something worth looking up at: instead of two round crowns they build one shared canopy, each leaning away from the other's shade until the pair spreads wider than either would have alone, while the trunks stay straight because neither has room to lean into the gap. The join is directly overhead if you stand between them. Treat the two as one stop rather than two. Free, open, with a playground beside them, about fifteen minutes on foot from the old town.",
+      "verified_sources": [
+        "https://www.nuernberg.de/imperia/md/umweltamt/dokumente/natur_landschaft/liste_der_naturdenkmaeler_2020.pdf",
+        "https://de.wikipedia.org/wiki/Kontumazgarten"
+      ],
+      "access": "Free, public city park (Kontumazgarten, Kleinweidenmühle district), has a playground",
+      "transport": "Short walk (roughly 15-20 min) from Nuremberg Altstadt/Hauptmarkt; specific tram/bus stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nbg_008",
+      "name": "The Paired Plane of Kontumazgarten",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Kontumazgarten, Kleinweidenmühle",
+        "latitude": 49.45443874,
+        "longitude": 11.06805204,
+        "neighbourhood": "Kleinweidenmühle"
+      },
+      "story": "Germany protects individual trees the way other countries protect buildings. A Naturdenkmal is a legal designation that attaches to one named object rather than to a landscape, and Nuremberg's 2020 ordinance runs to dozens of them, each with a number, a location and a species. This plane is ND-10. It stands about five metres from ND-9, its near neighbour, the two of them effectively one sight carrying two entries in law. The ordinance is also the only thing ever written about it. No age, no girth, no height, nothing beyond the species and a point on the map, and no survey or article names it on its own. That is thin, and it is better said than dressed up: the reason to walk over here is the park as a whole, six protected trees in one small green, not this individual plane's biography. What a plane does give you is scale without the wait. The species grows faster than almost any other large broadleaf that also lives a long time, which is exactly why nineteenth century park designers reached for it so often, and why three of the six protected trees in this park are planes rather than anything slower. Free and open, with a playground, about fifteen minutes on foot from the old town.",
+      "verified_sources": [
+        "https://www.nuernberg.de/imperia/md/umweltamt/dokumente/natur_landschaft/liste_der_naturdenkmaeler_2020.pdf",
+        "https://de.wikipedia.org/wiki/Kontumazgarten"
+      ],
+      "access": "Free, public city park (Kontumazgarten, Kleinweidenmühle district), has a playground",
+      "transport": "Short walk (roughly 15-20 min) from Nuremberg Altstadt/Hauptmarkt; specific tram/bus stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nbg_009",
+      "name": "The Second Beech of Kontumazgarten",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Kontumazgarten, Kleinweidenmühle",
+        "latitude": 49.4546617,
+        "longitude": 11.06780131,
+        "neighbourhood": "Kleinweidenmühle"
+      },
+      "story": "Two trees in this park would be here without anyone's help, and both of them are beeches. European beech is the natural dominant of central Germany: left alone, most of Franconia would return to beech forest within a couple of centuries, shading out nearly everything else. The horse chestnut in this park came from the Balkans and the three planes are a garden hybrid that did not exist before the seventeenth century, which leaves this beech and its neighbour as the locals. It is ND-11 on Nuremberg's 2020 natural monument ordinance, the last of the six protected trees in the Kontumazgarten. As with the rest of them the register is the entire file: species, position, protection, and no age, measurement or description anywhere. Beech also suffers in cities, which is the other half of why an old one in a small urban park earns a listing. It has shallow roots, thin bark that scalds in full sun, and little tolerance for compacted ground or drought, all of which a public lawn supplies in quantity. Late October and November is the time to come, when it turns copper and holds it, and the ground underneath fills with beech mast, small triangular nuts in prickly husks that were fed to pigs for centuries before anyone thought of a park.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October and November, when the mast drops and the crown turns russet"
+      },
+      "verified_sources": [
+        "https://www.nuernberg.de/imperia/md/umweltamt/dokumente/natur_landschaft/liste_der_naturdenkmaeler_2020.pdf",
+        "https://de.wikipedia.org/wiki/Kontumazgarten"
+      ],
+      "access": "Free, public city park (Kontumazgarten, Kleinweidenmühle district), has a playground",
+      "transport": "Short walk (roughly 15-20 min) from Nuremberg Altstadt/Hauptmarkt; specific tram/bus stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "nbg_010",
+      "name": "The Old Lime of Stadtpark",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "around 400 years",
+      "age_min": 350,
+      "age_max": 450,
+      "location": {
+        "address": "Stadtpark, northeast of the Stadtparkweiher pond, south of the Schiller monument",
+        "latitude": 49.46495016,
+        "longitude": 11.09301158,
+        "neighbourhood": "Gärten bei Wöhrd"
+      },
+      "story": "The sign at the foot of this tree and the botanists who have looked at its leaves do not agree on what it is. The sign says Winterlinde, small-leaved lime. An independent German tree register assessed the leaf hairiness and concluded large-leaved lime, which is what this page records, with the disagreement left standing rather than quietly resolved. Everything else about it is settled and considerable. Nuremberg's own survey of its oldest trees calls this one of the strongest and oldest in the city, roughly four hundred years old with a trunk about eight metres around, growing in the Stadtpark just south of the Schiller monument and northeast of the pond. It is the best documented old tree in Nuremberg: two independent sources plus the 2020 natural monument ordinance, where it sits as ND-38. Four hundred years puts its first decades inside the Thirty Years War, which emptied and impoverished Franconia and cost Nuremberg a large part of its population to famine and plague while the armies moved around it. It was a sapling then, on ground that was not yet a park. The park was laid out around it much later. The N1 bus stops at Stadtpark, and the walk from the Hauptbahnhof takes about fifteen minutes.",
+      "verified_sources": [
+        "https://www.nuernberg.de/imperia/md/umweltamt/dokumente/natur_landschaft/liste_der_naturdenkmaeler_2020.pdf",
+        "https://www.nordbayern.de/nuernberg/400-jahre-und-gesund-das-sind-nurnbergs-alteste-baume-1.9659342",
+        "https://www.baumkunde.de/baumregister/2753-sommer_linde_im_stadtpark_nuernberg/"
+      ],
+      "access": "Free, public city park (Stadtpark)",
+      "transport": "'Stadtpark' bus stop (line N1); roughly 15-20 min walk from Nuremberg Hauptbahnhof",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -23,7 +23,7 @@
     },
     {
       "q": "Are Hong Kong's old trees free to visit?",
-      "a": "Yes, all six trees on this list stand on public land, streets, parks and village playgrounds, with no admission charge. Two, in Sha Lo Wan and Lai Chi Wo, take a ferry or a hike to reach."
+      "a": "Yes, all ten trees on this list stand on public land, streets, parks and village playgrounds, with no admission charge. Two, in Sha Lo Wan and Lai Chi Wo, take a ferry or a hike to reach."
     }
   ],
   "trees": [
@@ -208,6 +208,121 @@
       "curation_status": "flagged",
       "notes": "WWII branch-loss story and village history corroborated across two independent sources (EJ Insight news article, 360Cities panorama caption); village settlement date and rural-revival programme also appear on Hong Kong Tourism Board's own Lai Chi Wo page. No source gives a specific planting date or age for the tree itself, so age_min/age_max left at 0 rather than guessed, per the honesty rule (same convention as Singapore's undated heritage-register entries). Existence, species and exact location confirmed via the government's own Old and Valuable Trees register (OVTNo AFCD/LK/009, TR no. AFCD/N/00002, 'Lai Chi Wo, Sha Tau Kok', condition notes: asymmetric canopy, minor cavity, moderate decay), coordinates converted from its HK1980 Grid reference (844630/842966) as described in hkg_001's notes.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "hkg_007",
+      "name": "The Stonewall Fig of Ka Wai Man Road",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Ka Wai Man Road Garden, Kennedy Town",
+        "latitude": 22.281838,
+        "longitude": 114.124996,
+        "neighbourhood": "Kennedy Town"
+      },
+      "story": "Hong Kong's government files this tree under two categories at once, and the second is the interesting half. The Old and Valuable Trees register lists it as OVT and SWT together, Old and Valuable Tree and Stonewall Tree, and the department responsible for it is not the one that runs the city's parks. It is the Architectural Services Department, which looks after government masonry. The whole story sits in that administrative detail: this fig is maintained by the people who maintain walls, because a wall is what it grows out of. The measurements are serious. A trunk 1.8 metres through, seventeen metres tall, a crown spreading twenty-four metres, and an inspection record noting three separate leans, one growing toward the light, one a response to load, and one the tree corrected by itself, which is what decades of pushing out of vertical stonework and rebalancing looks like written down. No age has ever been published for it. It sits above Ka Wai Man Road in Kennedy Town, a hundred metres from the Forbes Street wall, so it extends that walk rather than repeating it. One caveat to carry along. This corner of Kennedy Town has been an active redevelopment site since late 2022, and although the register inspected the tree in March 2023, after the work started, check the garden is open before making the trip for this tree alone.",
+      "verified_sources": [
+        "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html",
+        "https://www.cahk.org.hk/en/work/97/"
+      ],
+      "access": "Free, public garden, viewable at any time",
+      "transport": "Short walk from MTR Kennedy Town station Exit C, one street over from the Forbes Street stone wall trees (hkg_002)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hkg_008",
+      "name": "The Banyan of King George V Park",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "King George V Memorial Park, Canton Road, Jordan, Kowloon",
+        "latitude": 22.305511,
+        "longitude": 114.167684,
+        "neighbourhood": "Jordan, Yau Tsim Mong"
+      },
+      "story": "This park opened in June 1941 and was a rubbish dump by Christmas. King George V Memorial Park in Jordan was finished late, its opening on 11 June delayed because the governor was ill, and six months later Hong Kong fell to the Japanese and the new park was put to other use for the duration. The Urban Council rebuilt it after the war, added three Chinese-styled kiosks and reopened it on 21 March 1954, then extended it westward in the 1970s when Canton Road was realigned, and redesigned it again in the 1990s after the airport programme reclaimed the land beyond it. Through four versions of the park, this fig has stayed put. The government's tree register gives it a trunk 1.8 metres through, thirteen metres tall, an eighteen metre crown and normal vigour at its last inspection in November 2022. It gives no age, and no other source names the tree individually, so its years are undocumented. One thing to get right before setting off: Hong Kong has two parks named after King George V. This is the Kowloon one, on Canton Road in Jordan, a couple of minutes further on from the King Banyan of Kowloon Park. The other is across the harbour in Sai Ying Pun, with its own trees and its own history.",
+      "verified_sources": [
+        "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html",
+        "https://en.wikipedia.org/wiki/King_George_V_Memorial_Park,_Kowloon"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "Short walk from MTR Jordan station, or from the northern end of Kowloon Park via Canton Road",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hkg_009",
+      "name": "The Camphor of Kowloon Park Drive",
+      "species": "Camphor Tree (Cinnamomum camphora)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Kowloon Park Drive Children's Playground, Kowloon Park, Tsim Sha Tsui",
+        "latitude": 22.298115,
+        "longitude": 114.16953,
+        "neighbourhood": "Tsim Sha Tsui, Kowloon Park"
+      },
+      "story": "The three camphors already on this page stand behind villages, kept for centuries as feng shui trees. This one stands beside a children's playground, and it is thicker than any of them. Two metres of trunk diameter, sixteen metres tall, a twenty metre crown and normal vigour at its last inspection in October 2022, at the southern end of Kowloon Park near the aviary, which puts it a ten minute walk from the King Banyan at the far end of the same park. Camphor was an industrial commodity long before it was a park tree. The wood and leaves are distilled for camphor itself, and before synthetics took over, that substance was the essential plasticiser for celluloid, which meant photographic film, and a stabiliser for smokeless powder, which meant ammunition. The two together made camphor a strategic material worth controlling, most of the world's supply came out of Taiwan and Japan under state monopoly, and the trees were felled to get it. So a large old camphor is not a neutral object in this part of the world. It is a tree that was worth more cut down than standing and did not get cut. No age is recorded for this one, and a second, smaller camphor stands in the same playground. Crush a fallen leaf and the smell settles the identification instantly.",
+      "verified_sources": [
+        "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "10-15 min walk from MTR Tsim Sha Tsui station, within Kowloon Park via Kowloon Park Drive, at the southern end of the park from the King Banyan (hkg_001)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hkg_010",
+      "name": "The Banyan of Nathan Road",
+      "species": "Indian Laurel Fig (Ficus microcarpa)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Park Lane Shopper's Boulevard, Nathan Road, opposite St Andrew's Church, Tsim Sha Tsui",
+        "latitude": 22.302052,
+        "longitude": 114.17176,
+        "neighbourhood": "Tsim Sha Tsui"
+      },
+      "story": "The government's inspection of this tree reads like a description of the street it is on. Compacted soil. Cable and brace support fitted. More than seventy-five percent of the ground under its crown built over or paved. Overall risk moderate, vigour normal, which together describe a large healthy tree living in conditions no tree would choose. It stands on the Park Lane Shopper's Boulevard stretch of Nathan Road, the Golden Mile, with a trunk 2.07 metres through, nineteen metres tall and a crown spreading twenty-two metres over one of Hong Kong's busiest shopping streets. Directly opposite is St Andrew's Church, built between 1904 and 1906 in Victorian Gothic on a small rise above the road, Kowloon's oldest Anglican church and a gift to the community from Paul Chater, the Armenian-born businessman who co-founded Hong Kong Land and paid for a good deal of what the colony became. So the view is a banyan against English stonework, on a street that now sells watches and phones. The register gives no age for the tree, and no independent source names it, so what is documented is its size and its condition. It is a six or seven minute walk from the King Banyan in Kowloon Park, which makes it the easy last stop of that walk rather than a trip of its own.",
+      "verified_sources": [
+        "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html",
+        "https://en.wikipedia.org/wiki/St_Andrew%27s_Church,_Kowloon"
+      ],
+      "access": "Free, public street, viewable at any time",
+      "transport": "A few minutes' walk from MTR Tsim Sha Tsui station Exit A1, on Nathan Road's Park Lane Shopper's Boulevard stretch",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
