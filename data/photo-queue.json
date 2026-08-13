@@ -4495,7 +4495,8 @@
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Maestoso_e_monumentale_albero_di_Canfora_nel_giardino_del_Parco.jpg/960px-Maestoso_e_monumentale_albero_di_Canfora_nel_giardino_del_Parco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
      "url": "https://commons.wikimedia.org/wiki/File:Maestoso_e_monumentale_albero_di_Canfora_nel_giardino_del_Parco.jpg",
      "licence": "CC BY-SA 4.0",
-     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Graziella_taibi&amp;action=edit&amp;redlink=1\" class=\"new\" title"
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Graziella_taibi&amp;action=edit&amp;redlink=1\" class=\"new\" title",
+     "judged": "approved 2026-08-13: viewed. Camphor trunk and limbs from below, unmistakably the subject. The file page names Villa Durazzo-Pallavicini, sits in that park's Commons category and carries coordinates in the park, so identity is settled by three independent things, not by the filename alone."
     }
    ]
   },
@@ -6962,7 +6963,8 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "64.1474764492,-21.9419533677"
+     "obs_location": "64.1474764492,-21.9419533677",
+     "judged": "rejected 2026-08-13: viewed. A hand holding a twig."
     },
     {
      "title": "iNat obs 34381075 (Scandosorbus intermedia)",
@@ -6971,7 +6973,8 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "64.1474764492,-21.9419533677"
+     "obs_location": "64.1474764492,-21.9419533677",
+     "judged": "rejected 2026-08-13: viewed. A hand holding a twig."
     }
    ]
   },
@@ -7461,7 +7464,8 @@
      "licence": "CC BY",
      "author": "(c) Flora_DUMO, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "43.5100255997,16.4411903997"
+     "obs_location": "43.5100255997,16.4411903997",
+     "judged": "rejected 2026-08-13: viewed. Close-up of foliage and fruit against the trunk, not a photograph of the tree."
     },
     {
      "title": "iNat obs 104803865 (Ginkgo biloba)",
@@ -7470,7 +7474,8 @@
      "licence": "CC BY",
      "author": "(c) Flora_DUMO, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "43.5100122553,16.4411980339"
+     "obs_location": "43.5100122553,16.4411980339",
+     "judged": "rejected 2026-08-13: viewed. Close-up of foliage and fruit against the trunk, not a photograph of the tree."
     },
     {
      "title": "iNat obs 186204261 (Ginkgo biloba)",
@@ -7479,7 +7484,8 @@
      "licence": "CC BY",
      "author": "(c) Flora_DUMO, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "43.5100502526,16.4411778159"
+     "obs_location": "43.5100502526,16.4411778159",
+     "judged": "rejected 2026-08-13: viewed. Close-up of foliage and fruit against the trunk, not a photograph of the tree."
     }
    ]
   },
@@ -7629,7 +7635,7 @@
   "tri_001": {
    "city": "Trieste",
    "name": "The Redwood of Miramare",
-   "checked": "2026-08-10",
+   "checked": "2026-08-13",
    "candidates": [
     {
      "title": "File:\"Sua Altezza\"Sequoia - panoramio.jpg",
@@ -7637,31 +7643,62 @@
      "url": "https://commons.wikimedia.org/wiki/File:%22Sua_Altezza%22Sequoia_-_panoramio.jpg",
      "licence": "CC BY-SA 3.0",
      "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161021054610/http://www.panoramio.com/user/2"
+    },
+    {
+     "title": "File:Castello di Miramare (Trieste) (7).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Castello_di_Miramare_%28Trieste%29_%287%29.jpg/960px-Castello_di_Miramare_%28Trieste%29_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Castello_di_Miramare_(Trieste)_(7).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Lahcim_n\" title=\"User:Lahcim n\"><b>Michał Bulsa</b></a>"
     }
    ]
   },
   "tri_002": {
    "city": "Trieste",
    "name": "The Monterey Cypress of Miramare",
-   "checked": "2026-08-10",
-   "candidates": []
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Castello di Miramare (Trieste) (7).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Castello_di_Miramare_%28Trieste%29_%287%29.jpg/960px-Castello_di_Miramare_%28Trieste%29_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Castello_di_Miramare_(Trieste)_(7).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Lahcim_n\" title=\"User:Lahcim n\"><b>Michał Bulsa</b></a>"
+    }
+   ]
   },
   "tri_003": {
    "city": "Trieste",
    "name": "The Ghost Pine of Miramare",
-   "checked": "2026-08-10",
-   "candidates": []
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Castello di Miramare (Trieste) (7).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Castello_di_Miramare_%28Trieste%29_%287%29.jpg/960px-Castello_di_Miramare_%28Trieste%29_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Castello_di_Miramare_(Trieste)_(7).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Lahcim_n\" title=\"User:Lahcim n\"><b>Michał Bulsa</b></a>"
+    }
+   ]
   },
   "tri_004": {
    "city": "Trieste",
    "name": "The Greek Strawberry Tree of Miramare",
-   "checked": "2026-08-10",
-   "candidates": []
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Castello di Miramare (Trieste) (7).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Castello_di_Miramare_%28Trieste%29_%287%29.jpg/960px-Castello_di_Miramare_%28Trieste%29_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Castello_di_Miramare_(Trieste)_(7).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Lahcim_n\" title=\"User:Lahcim n\"><b>Michał Bulsa</b></a>"
+    }
+   ]
   },
   "tri_005": {
    "city": "Trieste",
    "name": "The Great Plane of the Giardino Pubblico",
-   "checked": "2026-08-10",
+   "checked": "2026-08-13",
    "candidates": [
     {
      "title": "iNat obs 76141846 (Platanus × hispanica)",
@@ -7670,15 +7707,23 @@
      "licence": "CC BY",
      "author": "(c) Andrea Adelfio, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "45.6539964544,13.7846026942"
+     "obs_location": "45.6539964544,13.7846026942",
+     "judged": "approved 2026-08-13: viewed. The trunk with its enormous burl, which is what this tree is known for, in the garden, daylight. Crown not in frame, so replace it when a fuller one turns up."
     }
    ]
   },
   "tri_006": {
    "city": "Trieste",
    "name": "The Twin Horse Chestnuts of the Giardino Pubblico",
-   "checked": "2026-08-10",
+   "checked": "2026-08-13",
    "candidates": [
+    {
+     "title": "File:Chestnuts listed building, Takeley, Uttlesford.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Chestnuts_listed_building%2C_Takeley%2C_Uttlesford.jpg/960px-Chestnuts_listed_building%2C_Takeley%2C_Uttlesford.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Chestnuts_listed_building,_Takeley,_Uttlesford.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:The_Rambling_Man\" title=\"User:The Rambling Man\">The Rambling Man</a>"
+    },
     {
      "title": "iNat obs 341693074 (Aesculus hippocastanum)",
      "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/622093638/medium.jpg",
@@ -7702,14 +7747,50 @@
   "tri_007": {
    "city": "Trieste",
    "name": "The Valonia Oak of the Giardino Pubblico",
-   "checked": "2026-08-10",
+   "checked": "2026-08-13",
    "candidates": []
   },
   "tri_008": {
    "city": "Trieste",
    "name": "The Plane of the Boschetto Roundabout",
-   "checked": "2026-08-10",
-   "candidates": []
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Myojinbashi Takamori side roundabout 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Myojinbashi_Takamori_side_roundabout_01.jpg/960px-Myojinbashi_Takamori_side_roundabout_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Myojinbashi_Takamori_side_roundabout_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Mhidehiro&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User"
+    },
+    {
+     "title": "File:Roundabout, Asuogyaman (P1100013).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Roundabout%2C_Asuogyaman_%28P1100013%29.jpg/960px-Roundabout%2C_Asuogyaman_%28P1100013%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roundabout,_Asuogyaman_(P1100013).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:MB-one\" title=\"User:MB-one\">Matti Blume</a>"
+    },
+    {
+     "title": "File:Roundabout, Nairobi (20250805-P1048882).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Roundabout%2C_Nairobi_%2820250805-P1048882%29.jpg/960px-Roundabout%2C_Nairobi_%2820250805-P1048882%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roundabout,_Nairobi_(20250805-P1048882).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:MB-one\" title=\"User:MB-one\">Matti Blume</a>"
+    },
+    {
+     "title": "File:Roundabout - Splash Screen.png",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Roundabout_-_Splash_Screen.png/960px-Roundabout_-_Splash_Screen.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roundabout_-_Splash_Screen.png",
+     "licence": "CC BY 3.0",
+     "author": "No Goblin"
+    },
+    {
+     "title": "File:Roundabout interchange.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Roundabout_interchange.jpg/960px-Roundabout_interchange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roundabout_interchange.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:PetarM\" title=\"User:PetarM\">Petar Milošević</a>"
+    }
+   ]
   },
   "utr_004": {
    "city": "Utrecht",
@@ -8073,85 +8154,127 @@
   "zar_001": {
    "city": "Zaragoza",
    "name": "The Almez of Parque Bruil",
-   "checked": "2026-08-10",
+   "checked": "2026-08-13",
    "candidates": []
   },
   "zar_002": {
    "city": "Zaragoza",
    "name": "The Holm Oak of Parque Bruil",
-   "checked": "2026-08-10",
+   "checked": "2026-08-13",
    "candidates": []
   },
   "zar_003": {
    "city": "Zaragoza",
    "name": "The London Plane of Calle Asalto",
-   "checked": "2026-08-10",
+   "checked": "2026-08-13",
    "candidates": []
   },
   "zar_004": {
    "city": "Zaragoza",
    "name": "The Yew of the Paraninfo",
-   "checked": "2026-08-10",
+   "checked": "2026-08-13",
    "candidates": []
   },
   "zur_001": {
    "city": "Zurich",
    "name": "The 1780 Planes of Platzspitz",
-   "checked": "2026-08-10",
-   "candidates": [
-    {
-     "title": "File:Platzspitzpark - Wilhelm Baumgartner 2011-08-08 14-45-40.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Platzspitzpark_-_Wilhelm_Baumgartner_2011-08-08_14-45-40.jpg/960px-Platzspitzpark_-_Wilhelm_Baumgartner_2011-08-08_14-45-40.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Platzspitzpark_-_Wilhelm_Baumgartner_2011-08-08_14-45-40.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Roland_zh\" title=\"User:Roland zh\">Roland zh</a>"
-    },
-    {
-     "title": "File:Street Parade 2008 028.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Street_Parade_2008_028.jpg/960px-Street_Parade_2008_028.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Street_Parade_2008_028.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/65933351@N00\">BYTE RIDER</a> from Zurich, Sw"
-    },
-    {
-     "title": "File:Street Parade 2008 029.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Street_Parade_2008_029.jpg/960px-Street_Parade_2008_029.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Street_Parade_2008_029.jpg",
-     "licence": "CC BY-SA 2.0",
-     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/65933351@N00\">BYTE RIDER</a> from Zurich, Sw"
-    },
-    {
-     "title": "File:Zürich - Platzspitzpark Wilhelm Baumgartner IMG 1240.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Z%C3%BCrich_-_Platzspitzpark_Wilhelm_Baumgartner_IMG_1240.jpg/960px-Z%C3%BCrich_-_Platzspitzpark_Wilhelm_Baumgartner_IMG_1240.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Z%C3%BCrich_-_Platzspitzpark_Wilhelm_Baumgartner_IMG_1240.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Roland_zh\" title=\"User:Roland zh\">Roland zh</a>"
-    }
-   ]
+   "checked": "2026-08-13",
+   "candidates": []
   },
   "zur_002": {
    "city": "Zurich",
    "name": "Alfred Escher's Giant Sequoia",
-   "checked": "2026-08-10",
+   "checked": "2026-08-13",
    "candidates": []
   },
   "zur_003": {
    "city": "Zurich",
    "name": "The Lindens of Lindenhof",
-   "checked": "2026-08-10",
-   "candidates": []
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Limmat View from Lindenhof hill, Zurich (Ank Kumar) 05.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Limmat_View_from_Lindenhof_hill%2C_Zurich_%28Ank_Kumar%29_05.jpg/960px-Limmat_View_from_Lindenhof_hill%2C_Zurich_%28Ank_Kumar%29_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Limmat_View_from_Lindenhof_hill,_Zurich_(Ank_Kumar)_05.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ank_gsx\" title=\"User:Ank gsx\">Ank kumar </a>"
+    },
+    {
+     "title": "File:Limmat View from Lindenhof hill, Zurich (Ank Kumar) 06.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Limmat_View_from_Lindenhof_hill%2C_Zurich_%28Ank_Kumar%29_06.jpg/960px-Limmat_View_from_Lindenhof_hill%2C_Zurich_%28Ank_Kumar%29_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Limmat_View_from_Lindenhof_hill,_Zurich_(Ank_Kumar)_06.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ank_gsx\" title=\"User:Ank gsx\">Ank kumar </a>"
+    },
+    {
+     "title": "File:Limmat View from Lindenhof hill, Zurich (Ank Kumar) 08.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Limmat_View_from_Lindenhof_hill%2C_Zurich_%28Ank_Kumar%29_08.jpg/960px-Limmat_View_from_Lindenhof_hill%2C_Zurich_%28Ank_Kumar%29_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Limmat_View_from_Lindenhof_hill,_Zurich_(Ank_Kumar)_08.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ank_gsx\" title=\"User:Ank gsx\">Ank kumar </a>"
+    },
+    {
+     "title": "File:Limmat View from Lindenhof hill, Zurich (Ank Kumar) 10.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Limmat_View_from_Lindenhof_hill%2C_Zurich_%28Ank_Kumar%29_10.jpg/960px-Limmat_View_from_Lindenhof_hill%2C_Zurich_%28Ank_Kumar%29_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Limmat_View_from_Lindenhof_hill,_Zurich_(Ank_Kumar)_10.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ank_gsx\" title=\"User:Ank gsx\">Ank kumar </a>"
+    },
+    {
+     "title": "File:Lindenhof Hill, Zurich, 20250330 1227 7917.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Lindenhof_Hill%2C_Zurich%2C_20250330_1227_7917.jpg/960px-Lindenhof_Hill%2C_Zurich%2C_20250330_1227_7917.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lindenhof_Hill,_Zurich,_20250330_1227_7917.jpg",
+     "licence": "CC BY 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Jakubhal\" title=\"User:Jakubhal\">Jakub Hałun</a>"
+    },
+    {
+     "title": "File:Lindenhof Square and Hill, Zurich (Ank Kumar) 02.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Lindenhof_Square_and_Hill%2C_Zurich_%28Ank_Kumar%29_02.jpg/960px-Lindenhof_Square_and_Hill%2C_Zurich_%28Ank_Kumar%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lindenhof_Square_and_Hill,_Zurich_(Ank_Kumar)_02.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ank_gsx\" title=\"User:Ank gsx\">Ank Kumar</a>"
+    },
+    {
+     "title": "File:Lindenhof Square and Hill, Zurich (Ank Kumar) 03.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Lindenhof_Square_and_Hill%2C_Zurich_%28Ank_Kumar%29_03.jpg/960px-Lindenhof_Square_and_Hill%2C_Zurich_%28Ank_Kumar%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lindenhof_Square_and_Hill,_Zurich_(Ank_Kumar)_03.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ank_gsx\" title=\"User:Ank gsx\">Ank Kumar</a>"
+    },
+    {
+     "title": "File:Lindenhof Square and Hill, Zurich (Ank Kumar) 04.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Lindenhof_Square_and_Hill%2C_Zurich_%28Ank_Kumar%29_04.jpg/960px-Lindenhof_Square_and_Hill%2C_Zurich_%28Ank_Kumar%29_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lindenhof_Square_and_Hill,_Zurich_(Ank_Kumar)_04.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ank_gsx\" title=\"User:Ank gsx\">Ank Kumar</a>"
+    },
+    {
+     "title": "File:Lindenhof Square and Hill, Zurich (Ank Kumar) 05.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Lindenhof_Square_and_Hill%2C_Zurich_%28Ank_Kumar%29_05.jpg/960px-Lindenhof_Square_and_Hill%2C_Zurich_%28Ank_Kumar%29_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Lindenhof_Square_and_Hill,_Zurich_(Ank_Kumar)_05.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ank_gsx\" title=\"User:Ank gsx\">Ank Kumar</a>"
+    }
+   ]
   },
   "zur_004": {
    "city": "Zurich",
    "name": "The Mammutbaum of Hohlstrasse",
-   "checked": "2026-08-10",
+   "checked": "2026-08-13",
    "candidates": [
     {
-     "title": "File:Baumann und Frey empaquete.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Baumann_und_Frey_empaquete.jpg/960px-Baumann_und_Frey_empaquete.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:Baumann_und_Frey_empaquete.jpg",
-     "licence": "CC BY-SA 3.0",
-     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Port(u*o)s\" title=\"User:Port(u*o)s\">Port(u*o)s</a>"
+     "title": "File:Dülmen, Vorpark, Mammutbaum -- 2015 -- 5290.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/D%C3%BClmen%2C_Vorpark%2C_Mammutbaum_--_2015_--_5290.jpg/960px-D%C3%BClmen%2C_Vorpark%2C_Mammutbaum_--_2015_--_5290.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Vorpark,_Mammutbaum_--_2015_--_5290.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<bdi><a href=\"https://www.wikidata.org/wiki/Q34788025\" class=\"extiw\" title=\"d:Q34788025\"><span title=\"German photographe"
+    },
+    {
+     "title": "File:Dülmen, Vorpark, Mammutbaum -- 2015 -- 5294.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/D%C3%BClmen%2C_Vorpark%2C_Mammutbaum_--_2015_--_5294.jpg/960px-D%C3%BClmen%2C_Vorpark%2C_Mammutbaum_--_2015_--_5294.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Vorpark,_Mammutbaum_--_2015_--_5294.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<bdi><a href=\"https://www.wikidata.org/wiki/Q34788025\" class=\"extiw\" title=\"d:Q34788025\"><span title=\"German photographe"
     }
    ]
   },
@@ -14323,7 +14446,8 @@
      "licence": "CC BY",
      "author": "(c) Jerry Kensler, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "45.52900359,-122.72361756"
+     "obs_location": "45.52900359,-122.72361756",
+     "judged": "approved 2026-08-13: viewed. The full trunk with its interpretive plaque in frame, in forest, daylight. Trunk-focused rather than a whole-tree portrait, so replace it when a better one turns up."
     },
     {
      "title": "iNat obs 135215118 (Pseudotsuga menziesii menziesii)",
@@ -14501,7 +14625,8 @@
      "licence": "CC BY-SA",
      "author": "(c) Micha Baum, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "48.5808712894,7.738974611"
+     "obs_location": "48.5808712894,7.738974611",
+     "judged": "approved 2026-08-13: viewed. The plane spreading over the terrace, crown and trunk both readable, in leaf, daylight."
     },
     {
      "title": "iNat obs 310619929 (Platanus mexicana)",
@@ -14624,7 +14749,15 @@
    "city": "Trento",
    "name": "The Black Poplar of Largo Pigarelli",
    "checked": "2026-08-13",
-   "candidates": []
+   "candidates": [
+    {
+     "title": "File:Trento - Fontana largo Pigarelli.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Trento_-_Fontana_largo_Pigarelli.jpg/960px-Trento_-_Fontana_largo_Pigarelli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Trento_-_Fontana_largo_Pigarelli.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Syrio\" title=\"User:Syrio\">Syrio</a>"
+    }
+   ]
   },
   "tre_003": {
    "city": "Trento",
@@ -14666,7 +14799,15 @@
    "city": "Trento",
    "name": "The Cedar of Parco Gocciadoro",
    "checked": "2026-08-13",
-   "candidates": []
+   "candidates": [
+    {
+     "title": "File:Trento, capitello parco Gocciadoro.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Trento%2C_capitello_parco_Gocciadoro.jpg/960px-Trento%2C_capitello_parco_Gocciadoro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Trento,_capitello_parco_Gocciadoro.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Syrio\" title=\"User:Syrio\">Syrio</a>"
+    }
+   ]
   },
   "bol_008": {
    "city": "Bologna",
@@ -15225,7 +15366,8 @@
      "licence": "CC BY",
      "author": "(c) Karim Haddad, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "43.5927777778,1.4508333333"
+     "obs_location": "43.5927777778,1.4508333333",
+     "judged": "rejected 2026-08-13: viewed. Two oak leaves lying on the ground. No tree in the frame."
     },
     {
      "title": "iNat obs 143420947 (Quercus robur)",
@@ -15234,7 +15376,8 @@
      "licence": "CC BY",
      "author": "(c) Karim Haddad, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "43.5927777778,1.4508333333"
+     "obs_location": "43.5927777778,1.4508333333",
+     "judged": "rejected 2026-08-13: viewed. Two oak leaves lying on the ground. No tree in the frame."
     },
     {
      "title": "iNat obs 143389774 (Quercus rubra)",
@@ -15243,7 +15386,8 @@
      "licence": "CC BY",
      "author": "(c) Karim Haddad, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "43.5941666667,1.4513888889"
+     "obs_location": "43.5941666667,1.4513888889",
+     "judged": "rejected 2026-08-13: viewed. Two oak leaves lying on the ground. No tree in the frame."
     },
     {
      "title": "iNat obs 143389774 (Quercus rubra)",
@@ -15252,7 +15396,8 @@
      "licence": "CC BY",
      "author": "(c) Karim Haddad, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "43.5941666667,1.4513888889"
+     "obs_location": "43.5941666667,1.4513888889",
+     "judged": "rejected 2026-08-13: viewed. Two oak leaves lying on the ground. No tree in the frame."
     },
     {
      "title": "iNat obs 143390175 (Quercus cerris)",
@@ -15261,7 +15406,8 @@
      "licence": "CC BY",
      "author": "(c) Karim Haddad, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "43.5936111111,1.4519444444"
+     "obs_location": "43.5936111111,1.4519444444",
+     "judged": "rejected 2026-08-13: viewed. Two oak leaves lying on the ground. No tree in the frame."
     },
     {
      "title": "iNat obs 143390175 (Quercus cerris)",
@@ -15270,7 +15416,8 @@
      "licence": "CC BY",
      "author": "(c) Karim Haddad, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "43.5936111111,1.4519444444"
+     "obs_location": "43.5936111111,1.4519444444",
+     "judged": "rejected 2026-08-13: viewed. Two oak leaves lying on the ground. No tree in the frame."
     }
    ]
   },
@@ -15421,6 +15568,129 @@
   "tls_007": {
    "city": "Toulouse",
    "name": "The Judas Tree of Fer a Cheval",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "tls_008": {
+   "city": "Toulouse",
+   "name": "The Second Plane of Fer a Cheval",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "tre_007": {
+   "city": "Trento",
+   "name": "The Chestnut of Sardagna",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Trento Sardagna 1.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Trento_Sardagna_1.jpg/960px-Trento_Sardagna_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Trento_Sardagna_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Andrzej_O\" title=\"User:Andrzej O\">Andrzej Otrębski</a>"
+    }
+   ]
+  },
+  "zar_005": {
+   "city": "Zaragoza",
+   "name": "The Olive of the Facultad de Medicina",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:2019 Buenos Aires - Estación Facultad de Derecho.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/2019_Buenos_Aires_-_Estaci%C3%B3n_Facultad_de_Derecho.jpg/960px-2019_Buenos_Aires_-_Estaci%C3%B3n_Facultad_de_Derecho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2019_Buenos_Aires_-_Estaci%C3%B3n_Facultad_de_Derecho.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Pedro_Felipe\" title=\"User:Pedro Felipe\">Felipe Restrepo Acosta</a>"
+    },
+    {
+     "title": "File:2019 Buenos Aires - Subte Facultad de Derecho.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/2019_Buenos_Aires_-_Subte_Facultad_de_Derecho.jpg/960px-2019_Buenos_Aires_-_Subte_Facultad_de_Derecho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:2019_Buenos_Aires_-_Subte_Facultad_de_Derecho.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Pedro_Felipe\" title=\"User:Pedro Felipe\">Felipe Restrepo Acosta</a>"
+    },
+    {
+     "title": "File:Corredores del edifico nuevo de medicina.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Corredores_del_edifico_nuevo_de_medicina.jpg/960px-Corredores_del_edifico_nuevo_de_medicina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Corredores_del_edifico_nuevo_de_medicina.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Oliver,Quisbert,Balderrama&amp;action=edit&amp;redlink=1\" class="
+    },
+    {
+     "title": "File:Edificio Lycee Francais - Facultad de Artes.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Edificio_Lycee_Francais_-_Facultad_de_Artes.jpg/960px-Edificio_Lycee_Francais_-_Facultad_de_Artes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Edificio_Lycee_Francais_-_Facultad_de_Artes.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:JacobinoWunsh\" title=\"User:JacobinoWunsh\">JacobinoWunsh</a>"
+    },
+    {
+     "title": "File:Esculturas Facultad de Medicina, Universidad de Buenos Aires, calle Paraguay.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Esculturas_Facultad_de_Medicina%2C_Universidad_de_Buenos_Aires%2C_calle_Paraguay.jpg/960px-Esculturas_Facultad_de_Medicina%2C_Universidad_de_Buenos_Aires%2C_calle_Paraguay.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Esculturas_Facultad_de_Medicina,_Universidad_de_Buenos_Aires,_calle_Paraguay.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Roberto_Fiadone\" title=\"User:Roberto Fiadone\">Roberto Fiadone</a>"
+    },
+    {
+     "title": "File:Exterior Facultad CCINF.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Exterior_Facultad_CCINF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+     "url": "https://commons.wikimedia.org/wiki/File:Exterior_Facultad_CCINF.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Plumafina&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User"
+    },
+    {
+     "title": "File:Facultad de Ciencias (UNAM).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Facultad_de_Ciencias_%28UNAM%29.jpg/960px-Facultad_de_Ciencias_%28UNAM%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Facultad_de_Ciencias_(UNAM).jpg",
+     "licence": "CC BY 2.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/20605823@N00\">Ivan Hernández</a>"
+    },
+    {
+     "title": "File:Facultad de Derecho 12.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Facultad_de_Derecho_12.jpg/960px-Facultad_de_Derecho_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Facultad_de_Derecho_12.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Pitxiquin\" title=\"User:Pitxiquin\">Pitxiquin</a>"
+    },
+    {
+     "title": "File:Facultad de Medicina UBA.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facultad_de_Medicina_UBA.jpg/960px-Facultad_de_Medicina_UBA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Facultad_de_Medicina_UBA.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Facultad de Medicina UBA"
+    },
+    {
+     "title": "File:Medicina (Pescia), panorama 01.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Medicina_%28Pescia%29%2C_panorama_01.jpg/960px-Medicina_%28Pescia%29%2C_panorama_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Medicina_(Pescia),_panorama_01.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Mongolo1984\" title=\"User:Mongolo1984\">Mongolo1984</a>"
+    },
+    {
+     "title": "File:Torre dell’Orologio, Medicina 2.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Torre_dell%E2%80%99Orologio%2C_Medicina_2.jpg/960px-Torre_dell%E2%80%99Orologio%2C_Medicina_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Torre_dell%E2%80%99Orologio,_Medicina_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Mongolo1984\" title=\"User:Mongolo1984\">Mongolo1984</a>"
+    },
+    {
+     "title": "File:Vista de rana de medicina.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Vista_de_rana_de_medicina.jpg/960px-Vista_de_rana_de_medicina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Vista_de_rana_de_medicina.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Oliver,Quisbert,Balderrama&amp;action=edit&amp;redlink=1\" class="
+    }
+   ]
+  },
+  "zar_006": {
+   "city": "Zaragoza",
+   "name": "The Honey Locust of Calle Aznar Molina",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "zar_007": {
+   "city": "Zaragoza",
+   "name": "The Tree of Heaven of the Jardin Botanico",
    "checked": "2026-08-13",
    "candidates": []
   }
