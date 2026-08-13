@@ -36,6 +36,13 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PARK_MIN_TREES = 5          # mirrors site/src/lib/parks.ts
 SPECIES_MIN_TREES = 3       # below this a species page lists too little to be a page
+# A country page needs three cities before it renders (COUNTRY_MIN_CITIES in
+# site/src/lib/species.ts). Reporting a one-city country as a gap sends a pass
+# to write prose that cannot appear: nine of the ten country intros written on
+# 2026-08-13 are correct, complete and invisible, waiting on a third city. So a
+# country counts as a gap only once it can actually render, and the ones below
+# the line are reported separately as waiting on coverage rather than on words.
+COUNTRY_MIN_CITIES = 3
 PARKISH = re.compile(r"park|garden|jardin|giardin|jardim|parc|villa|orto|arboret", re.I)
 
 
@@ -74,17 +81,43 @@ def written(kind, key="slug"):
     return out
 
 
+def written_parks():
+    """Parks are matched by (city_slug, park name), which is what
+    site/src/pages/parks/[slug].astro actually keys on. The first version of
+    this script guessed a slug instead and reported York Museum Gardens and the
+    Giardini Montanelli as missing while both pages were live; a writing pass
+    caught it and refused to create the duplicates. Match on the key the site
+    uses, never on a name you reconstruct."""
+    out = set()
+    for path in glob.glob(os.path.join(ROOT, "data", "parks", "*.json")):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except (OSError, ValueError):
+            continue
+        if d.get("city_slug") and d.get("park"):
+            out.add((d["city_slug"], d["park"].strip().lower()))
+    return out
+
+
 def gaps():
     species, countries, parks = corpus()
     have_sp = written("species")
     have_co = written("countries", "slug")
-    have_pk = written("parks")
+    have_pk = written_parks()
     sp = [(n, s) for s, n in species.items()
           if n >= SPECIES_MIN_TREES and slugify(s) not in have_sp]
+    cities_per = collections.Counter()
+    for path in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        if d.get("trees"):
+            cities_per[d.get("country", "")] += 1
     co = [(n, c) for c, n in countries.items()
-          if c and n > 0 and slugify(c) not in have_co]
+          if c and n > 0 and slugify(c) not in have_co
+          and cities_per[c] >= COUNTRY_MIN_CITIES]
     pk = [(n, city, park) for (city, park), n in parks.items()
-          if n >= PARK_MIN_TREES and f"{slugify(park)}-{slugify(city)}" not in have_pk]
+          if n >= PARK_MIN_TREES and (slugify(city), park.strip().lower()) not in have_pk]
     sp.sort(reverse=True)
     co.sort(reverse=True)
     pk.sort(reverse=True)
