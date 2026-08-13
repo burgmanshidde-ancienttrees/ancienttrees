@@ -269,10 +269,10 @@
       "access": "Free, public cemetery",
       "transport": "Bus to Certosa, or 20 min walk from Porta Saragozza",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Tomba_di_Giosu%C3%A8_Carducci_nella_Certosa_di_Bologna.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Emilio2005, via Wikimedia Commons",
-        "status": "approved"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "flagged",
       "notes": "Carducci's burial location and the Certosa's own history corroborated across two independent sources. No individual age or planting date documented for the specific cypress; presented as a broad mature estimate. Photo verified directly: shows Carducci's named tomb flanked by tall columnar cypresses, a clear match to the described setting. Pin corrected by about 550m 2026-07-27: the prior coordinate was just the cemetery's main-gate address, not the grave itself, inside a 30-hectare complex. Moved to the tomb's own Wikidata-sourced coordinate (rank \"preferred\", cross-referenced to an OSM node named `Tomba di Giosue Carducci`), which this entry's own already-cited sources describe the cypress as standing directly over; the cypress itself isn't independently geotagged, but its position relative to the tomb was already an established, sourced fact before this pass.",
