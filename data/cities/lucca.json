@@ -2,8 +2,8 @@
   "city": "Lucca",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Lucca keeps its best trees inside a ring eight hundred metres across, which makes this one of the shortest walks on this site. Three of the six stand in a botanical garden founded in 1820 and planted with things nobody in Tuscany had seen: a cedar from Lebanon by way of Pisa, a Californian redwood raised almost as soon as the species reached Europe, and a ginkgo that lightning knocked down and that grew back as three. The other three are a cypress on a gun platform, a cedar with a name, and seven oaks on a tower roof.",
-  "meta_description": "Six remarkable trees inside Lucca's walls, all within 800 metres: seven oaks on the Guinigi tower, a redwood, and a cedar planted in 1822.",
+  "intro": "Lucca keeps its best trees inside a ring eight hundred metres across, which makes this one of the shortest walks on this site. Three of the trees stand in a botanical garden founded in 1820 and planted with things nobody in Tuscany had seen: a cedar from Lebanon by way of Pisa, a Californian redwood raised almost as soon as the species reached Europe, and a ginkgo that lightning knocked down and that grew back as three. The other three are a cypress on a gun platform, a cedar with a name, and seven oaks on a tower roof.",
+  "meta_description": "Ten remarkable trees inside Lucca's walls, all within 800 metres: seven oaks on the Guinigi tower, a redwood, and a cedar planted in 1822.",
   "question_meta": "The oldest tree in Lucca is the Cedar of Lebanon in the botanical garden, planted in 1822 by the garden's first director and now 204 years old.",
   "question_answer": "The oldest tree in Lucca is the Cedar of Lebanon in the Orto Botanico, planted in 1822 by Paolo Volpi, the garden's first director, which makes it 204 years old and two years younger than the garden around it. It is also one of the largest, at six and a half metres round the trunk. The seven holm oaks on top of the Torre Guinigi are the more famous trees, and the idea of planting them up there is far older, but the living oaks are undated replantings.",
   "question_context": "Italy's national register of monumental trees records girth, height and position but carries no age field at all, so every date on this page comes from the botanical garden's own planting records rather than from the register. Those records are unusually good, because the garden was founded as a teaching collection in 1820 by Maria Luisa di Borbone, Duchess of Lucca, and its directors wrote down what they put in the ground and when. They give 1822 for both the Cedar of Lebanon and the Corsican pine, 1830 for the magnolia, around 1850 for the redwoods, 1862 for the ginkgo, 1880 for the Balearic box and 1900 for the silver lime. The Torre Guinigi is the interesting exception. A tower crowned with trees appears in Giovanni Sercambi's chronicle of Lucca in the fifteenth century, so trees have grown up there for six hundred years, but the seven holm oaks living in that brick box today have been replanted more than once and no source will say when. Outside the walls the municipality has trees that may be older still, including a Lebanon cedar at San Pancrazio reported at around 200 years, but they are not part of this walk.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "Yes, and it is a short walk. All six stand inside the city walls within about 800 metres of each other, from the botanical garden in the southeast corner to the Guinigi tower in the middle of the old town."
+      "a": "Yes, and it is a short walk. They all stand inside the city walls within about 800 metres of each other, from the botanical garden in the southeast corner to the Guinigi tower in the middle of the old town."
     },
     {
       "q": "Do they cost anything to see?",
@@ -223,6 +223,127 @@
       "curation_status": "flagged",
       "notes": "Register 08/E715/LU/09, 700 cm girth, 30 m, the largest girth of the 36 register entries in the comune of Lucca. Flagged on age: no source dates it, and the 1840s ceiling is the species introduction date rather than a measurement of this tree. Species and location double-sourced by the register and by La Nazione's report of the 2021 dedication.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "luc_007",
+      "name": "The Corsican Pine of the Orto Botanico",
+      "species": "Corsican Pine (Pinus nigra subsp. laricio)",
+      "age_estimate": "about 200 years",
+      "age_min": 195,
+      "age_max": 205,
+      "location": {
+        "address": "Orto Botanico di Lucca, Via del Giardino Botanico, Lucca",
+        "latitude": 43.841197,
+        "longitude": 10.510603,
+        "neighbourhood": "Centro Storico, Orto Botanico"
+      },
+      "story": "The garden has two oldest trees and only one of them is famous. Lucca's Orto Botanico put its Cedar of Lebanon in the ground in 1822 and this Corsican pine in the same season, two years after Maria Luisa di Borbone founded the place as a teaching collection, which makes them joint founders. The cedar became the garden's symbol and its patriarch. The pine just grew: thirty and a half metres now, two metres eighty-two round the trunk.\n\nPinus nigra subsp. laricio is the Corsican and Calabrian form of the black pine, and it is the tall, straight one. It sends up a single clean stem with the branches in loose whorls, and it was cut for ships' masts for exactly that reason, under Genoese rule and then French. In a walled garden in Tuscany it has had no wind to fight and no neighbours to race, and it has gone straight up anyway, because that is what the tree does.\n\nTwo sources carry the 1822 date, the national monumental tree register and the local paper's 2024 survey of the thirty-six monumental trees in the comune, which is more than most of the trees on this page can claim. It is inside the garden, which charges admission, and it is a two-minute walk from the cedar, the redwood and the three-trunked ginkgo. Most visitors walk past it to photograph the cedar.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (register 29/E715/LU/09)",
+        "https://www.luccaindiretta.it/dalla-citta/2024/09/20/sono-36-gli-alberi-monumentali-nel-territorio-del-comune-di-lucca/426398/"
+      ],
+      "access": "Paid entry, Orto Botanico di Lucca",
+      "transport": "Inside the city walls, Centro Storico; walking distance from Piazza Napoleone",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "luc_008",
+      "name": "The Magnolia of Via dell'Orto Botanico",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Via dell'Orto Botanico, Lucca",
+        "latitude": 43.841886,
+        "longitude": 10.508522,
+        "neighbourhood": "Centro Storico, Orto Botanico"
+      },
+      "story": "Three metres twenty-three round the trunk and twenty-four metres tall, which is a great deal of magnolia. Magnolia grandiflora usually settles for half that in a European garden and does much of its growing sideways. This one stands on the street outside the botanical garden's wall, so unlike almost everything else on this walk it costs nothing and is never shut.\n\nIt appears on the national monumental tree register and nowhere else. No planting date, no plaque, no local article: one line in a register, and the tree. The garden a few metres away dates its own founding trees precisely, to 1820 and 1822, which makes the silence about a magnolia this size just outside its wall a small mystery. Inventing a year for it would not solve that.\n\nThe species comes from the American southeast, Florida up through the Carolinas, and reached European gardens in the eighteenth century, where it became the choice for anyone who wanted evergreen leaves the size of a hand. They are dark, stiff and polished on top and rust-brown and felted underneath, so the whole crown changes colour when wind gets into it.\n\nThen in May and June it flowers, cream-white and up to thirty centimetres across, a few at a time over several weeks rather than all at once, and on a still evening the street smells of lemon.",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "kind": "flowers",
+        "label": "May and June, when the flowers open up to thirty centimetres across and the street smells of lemon"
+      },
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (register 01/E715/LU/09)"
+      ],
+      "access": "Free, on a public street",
+      "transport": "Inside the city walls, Centro Storico; walking distance from Piazza Napoleone, just outside the botanical garden",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "luc_009",
+      "name": "The Plane of Via del Fosso",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Via del Fosso, Lucca",
+        "latitude": 43.843336,
+        "longitude": 10.509858,
+        "neighbourhood": "Centro Storico, Via del Fosso canal street"
+      },
+      "story": "Via del Fosso has a canal running down the middle of it, open to the sky, and this plane grows on the bank. That is most of the explanation for a trunk three metres sixty round and a crown thirty metres up. A London plane with permanent water at its roots and a straight open corridor of light above the channel has nothing to compete for.\n\nThe fosso is a working watercourse, not an ornament. It was cut to bring water into Lucca for mills and workshops, it runs down the eastern side of the walled city on the line of an older moat, which is what the name means, and it still runs. The street it makes is one of the quietest inside the walls and it is the natural route between the botanical garden at one end and Villa Bottini at the other, so this tree is on the walk whether or not you went looking for it.\n\nThe national monumental tree register lists it and gives the measurements. It does not give an age, and nothing else published names this individual tree. Planes are hard to read by eye in any case: put one somewhere it likes, as this one plainly is, and it will build a trunk several times faster than an oak on the same street would.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (register 02/E715/LU/09)"
+      ],
+      "access": "Free, on a public street",
+      "transport": "Inside the city walls, Centro Storico; on the canal street between the Orto Botanico and Villa Bottini",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "luc_010",
+      "name": "The Nepal Camphor of Via Barsanti e Matteucci",
+      "species": "Nepal Camphor Tree (Cinnamomum glanduliferum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Via Barsanti e Matteucci, Lucca",
+        "latitude": 43.849092,
+        "longitude": 10.505578,
+        "neighbourhood": "San Marco, outside the city walls"
+      },
+      "story": "A Himalayan tree on a street named after an engine. Eugenio Barsanti and Felice Matteucci patented their internal combustion engine in 1854, working between Lucca and Florence, and the city gave them this road. The largest thing standing on it is a Cinnamomum glanduliferum from the forests of Nepal, northern India and southern China: three metres eighty-four round the trunk, twenty-four metres tall.\n\nIt is the bigger of the two in the city. The other grows inside the Orto Botanico, planted in 1888 and recorded as such. This one, out in San Marco north of the walls, has a girth a third larger and nothing behind it but a line in the national monumental tree register. No planting date, no owner, no article. That is the usual fate of a big tree on an ordinary street.\n\nThe leaves carry camphor oils, which is where both names come from; the species is a close relative of the true camphor tree and the wood was used the same way. It is evergreen, so February looks much like July, and the leaves have a pale, almost blue-grey underside that flickers when the wind turns them over.\n\nIt is a nine hundred metre walk from the botanical garden cluster, and it is outside the walls, which is the whole reason it is not better known.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (register 11/E715/LU/09)"
+      ],
+      "access": "Free, on a public street",
+      "transport": "San Marco district, north of the walls; roughly 900m walk from the Orto Botanico cluster",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

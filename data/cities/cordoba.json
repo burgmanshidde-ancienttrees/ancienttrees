@@ -261,6 +261,90 @@
         "kind": "flowers"
       },
       "location_precision": "confirmed"
+    },
+    {
+      "id": "cdb_008",
+      "name": "The Cypress of the Alcazar Entrance",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "age_estimate": "about 77 years",
+      "age_min": 72,
+      "age_max": 82,
+      "location": {
+        "address": "Outside the entrance, Alcazar de los Reyes Cristianos, Cordoba",
+        "latitude": 37.87711,
+        "longitude": -4.781352,
+        "neighbourhood": "Centro Historico"
+      },
+      "story": "Twenty-six and a half metres tall on a crown three and a half metres wide. That is a proportion closer to a lamp post than a tree, and it is what a Mediterranean cypress does when it is left to grow the way it wants: straight up, in one dark column, branches held so tight to the trunk that the whole thing reads as a single line.\n\nIt stands outside the ticket gate of the Alcazar de los Reyes Cristianos, which means it costs nothing to see. Everything else here is behind the wall and behind a turnstile: the long pools, the clipped hedges, the fortress Alfonso XI built in 1328, where Ferdinand and Isabella later held court and where the Inquisition ran its tribunal for three centuries. The cypress is the one thing the city left on the outside.\n\nIt is also young. Cordoba's catalogue of singular trees put it at about seventy-seven years when it was surveyed, and a register age is always the age on the day somebody wrote it down, so add whatever has passed since. That catalogue is the only source describing this tree at all. Cypresses run to several centuries, which makes this one barely started, and it is on the list anyway because of the shape rather than the years. Stand at the base and look up the column: there is almost nothing between you and the top of it.",
+      "verified_sources": [
+        "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf"
+      ],
+      "access": "Free, outside the Alcazar's ticket gate",
+      "transport": "Centro Historico, next to the Alcazar; short walk from the Mezquita-Catedral",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cdb_009",
+      "name": "The Siberian Elm of the Alcazar",
+      "species": "Siberian Elm (Ulmus pumila)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Alcazar de los Reyes Cristianos, Cordoba",
+        "latitude": 37.875429,
+        "longitude": -4.782149,
+        "neighbourhood": "Centro Historico"
+      },
+      "story": "A Siberian elm is not supposed to reach twenty-seven metres. The species rarely passes fifteen, which is part of why it was planted across Spain in such numbers during the twentieth century: fast, cheap, indifferent to drought and poor soil, resistant to the Dutch elm disease that was destroying the country's field elms, and modest enough not to become a problem later. This one ignored the brief.\n\nIt grows inside the gardens of the Alcazar de los Reyes Cristianos, among the long water channels and clipped hedges laid out below the fortress, where nearly everything else is kept to a shape. The elm was allowed to run. Cordoba's catalogue of singular trees records its height and its species and nothing about its age, and no other source names it, so how it got here and when is simply not documented.\n\nReaching it costs money for most of the year, since the Alcazar charges admission, though on summer mornings the gardens are free. That is a real difference from the cypress standing outside the same gate, and worth knowing before you plan the walk.\n\nUlmus pumila comes from the steppe of northern China, Mongolia and eastern Siberia, ground where trees stay short because the wind and the drought keep them there. Give it Andalusian irrigation and a garden that never let it go without, and it turns into this.",
+      "verified_sources": [
+        "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf"
+      ],
+      "access": "Paid entry (Alcazar gardens); free on summer mornings",
+      "transport": "Centro Historico, inside the Alcazar gardens; short walk from the Mezquita-Catedral",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "cdb_010",
+      "name": "The Himalayan Cedar of Plaza del Cardenal Toledo",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "about 102 years",
+      "age_min": 97,
+      "age_max": 107,
+      "location": {
+        "address": "Plaza del Cardenal Toledo, Cordoba",
+        "latitude": 37.886662,
+        "longitude": -4.777057,
+        "neighbourhood": "Centro Historico"
+      },
+      "story": "The square was arranged around the tree. Plaza del Cardenal Toledo got its garden in 1945, and this deodar was already standing, so the paths and the benches went where the cedar allowed them. It remains effectively the only tree on the square, twenty-two and a half metres of it, which on a small plaza north of the Mezquita means it is also the roof.\n\nCordoba's catalogue of singular trees put it at about a hundred and two years old at survey, which is a floor rather than a figure, since it has gone on growing since somebody wrote that down. The catalogue is also the only source that says anything about this tree. Nothing else names it, which is ordinary for a square cedar and worth saying plainly rather than dressing up.\n\nCedrus deodara comes from the western Himalaya, from Afghanistan through Kashmir into Nepal, where it is a timber tree of high mountain forest and where the Sanskrit name means the wood of the gods. In Andalusia it is an ornamental, planted through the late nineteenth and early twentieth centuries into gardens and new squares, and it does well as long as it is watered. The habit gives it away from a distance: a straight leader, branches sweeping down and out, every shoot tip drooping, so the whole tree looks like it is leaning slightly towards you.",
+      "verified_sources": [
+        "https://www.cordoba.es/sites/default/files/PDF/Servicios/medio-ambiente/arboles-singulares-de-la-ciudad-de-cordoba/arboles-singulares-de-cordoba.pdf"
+      ],
+      "access": "Free, on a public square",
+      "transport": "Centro Historico; short walk north of the Mezquita-Catedral",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "cdb_001"

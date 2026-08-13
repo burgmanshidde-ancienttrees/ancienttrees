@@ -5,7 +5,7 @@
   "intro": "Bologna's oldest trees mostly answer to the same two centuries: Napoleon's brief but consequential redesign of the city's public spaces after 1805, and the private estates of 19th century Bolognese families who filled their gardens with imported cedars and ginkgos as a mark of taste. A porticoed city famous for hiding its sky rarely gets credit for its trees, but nine of Italy's official monumental specimens grow within its walls, more than in most Italian cities its size, scattered from a public cemetery to a hospital garden to a poet's tomb.",
   "meta_description": "Bologna's most remarkable trees, from Napoleonic-era planes in a public park to a cypress standing over poet Giosue Carducci's own grave.",
   "question_answer": "Bologna's oldest precisely dated tree is one of the monumental plane trees of the Parco della Montagnola, planted around 1820 during Giovanni Battista Martinetti's Napoleonic-era redesign of the city's first public park, making it roughly 206 years old. It stands free to visit in the historic centre, a short walk from Via Indipendenza.",
-  "question_meta": "Bologna's oldest tree is a roughly 206-year-old plane in Parco della Montagnola, planted in the Napoleonic-era redesign. Its story and nine more trees.",
+  "question_meta": "Bologna's oldest tree is a roughly 206-year-old plane in Parco della Montagnola, planted in the Napoleonic-era redesign. Its story and ten more trees.",
   "question_context": "Bologna's monumental trees are documented through Italy's national register (the Alberi Monumentali d'Italia list, created under a 2013 law) and the Emilia-Romagna region's own parallel catalogue, together covering eight specimens within the city itself. Among those, the oldest with a precisely traceable planting is one of the large plane trees in the Parco della Montagnola, the city's first public park, laid out from 1805 under instructions passed down through Napoleonic administration and redesigned by the architect Giovanni Battista Martinetti. Several of the park's planes from that era survive today with trunks exceeding four metres around, roughly matching the age of a second Montagnola-era plane now standing alone in Piazza Minghetti a short walk away. A coast redwood in the Giardini Margherita, planted decades later as part of that park's own 19th century landscaping, is not far behind in size but carries no comparably precise date. The Montagnola park is free and open daily, a few minutes' walk from Bologna Centrale station.",
   "faq": [
     {
@@ -368,6 +368,34 @@
       "curation_status": "flagged",
       "notes": "Surfaced 2026-08-12 via the italy-masaf.json register (sheet Via Irnerio, name_it 'Noce grigio'), coordinate ~230m from the already-published bol_007 ginkgo, both inside the same Orto Botanico. Two independent press sources (Sestopotere, a Bologna news site, and Visitupbologna, an independent tourism guide) both citing university staff (curator Umberto Mossetti, professor Alberto Minelli) corroborate the tree's existence, species, 32m height and the ongoing conservation project, confirming it is alive now (an 'irreversible aging phase' under active five-year monitoring to preserve it, not a dead tree). GIRTH DISCREPANCY, stated honestly rather than resolved: the region's register gives 420cm, the two press sources both give approximately 471cm (independently matching each other, likely both citing the same university figure, distinct from the register's own survey). No age or planting date found anywhere. Access/transport copied from bol_007 for consistency, same location.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "bol_012",
+      "name": "The Atlas Cedar of Villa delle Rose",
+      "species": "Atlas Cedar (Cedrus atlantica)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Villa delle Rose, Via Saragozza 228/230, Bologna",
+        "latitude": 44.489817,
+        "longitude": 11.314267,
+        "neighbourhood": "Saragozza"
+      },
+      "story": "Five metres forty-five around the trunk, thirty-two metres tall, and it grows in the garden of an art gallery. Villa delle Rose stands on Via Saragozza, the long road running out of the city towards the portico that climbs to San Luca, and the villa is now one of the two homes of Bologna's Galleria d'Arte Moderna. Its gardens are free to walk into, but they keep the gallery's hours rather than a park's, so this is a tree with an opening time.\n\nThe cedar is the largest thing in them. Cedrus atlantica comes from the Atlas Mountains of Morocco and Algeria, cold forest on thin soil above a thousand metres, where the remaining stands are shrinking and the species is now listed as endangered in its own range. In a walled Bolognese garden it has had none of that difficulty, and the size shows. It carries the flat, slightly ascending plates of foliage that a cedar only makes when it has been given room, so the crown reads as a stack of dark tiers.\n\nNothing dates it. The national monumental tree register carries the girth and the height and no age at all, and no second source names it, so the honest answer is that it is large enough to be protected and nobody has published a number. Bologna's two other registered cedars are both deodars, up on the hills south of the centre. This one you can reach on a bus.",
+      "verified_sources": [
+        "data/registers/italy-masaf.json (sheet 05/A944/BO/08, CC BY 4.0)"
+      ],
+      "access": "Free public gardens, gallery hours (Galleria d'Arte Moderna, Villa delle Rose)",
+      "transport": "Via Saragozza; bus 13 or a walk up from Porta Saragozza",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

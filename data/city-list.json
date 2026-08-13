@@ -19,7 +19,7 @@
    "country": "Austria",
    "slug": "vienna",
    "status": "published",
-   "trees": 22
+   "trees": 25
   },
   {
    "city": "Los Angeles",
@@ -256,7 +256,7 @@
    "country": "Italy",
    "slug": "rome",
    "status": "published",
-   "trees": 24
+   "trees": 25
   },
   {
    "city": "San Francisco",
@@ -694,7 +694,7 @@
    "status": "published",
    "note": "One walk, Porta Nuova station to the Po, 1.94 km spread. Taken from the official 13.9 km tourist route, which is really four walks; the other three are in data/leads/turin.json. Piemonte's regional register (data/registers/piemonte-alberi-monumentali.json) carries presumed age bands and removal status, which no other Italian source does.",
    "demand_views_90d": 147456,
-   "trees": 8
+   "trees": 10
   },
   {
    "city": "Edinburgh",
@@ -814,7 +814,7 @@
    "slug": "bologna",
    "status": "published",
    "demand_views_90d": 146161,
-   "trees": 11
+   "trees": 12
   },
   {
    "city": "Reykjavik",
@@ -862,7 +862,7 @@
    "slug": "zaragoza",
    "status": "published",
    "demand_views_90d": 87580,
-   "trees": 4
+   "trees": 7
   },
   {
    "city": "Bath",
@@ -918,7 +918,7 @@
    "slug": "cordoba",
    "status": "published",
    "demand_views_90d": 74675,
-   "trees": 7
+   "trees": 10
   },
   {
    "city": "Split",
@@ -984,7 +984,7 @@
    "status": "published",
    "note": "MASAF cluster: 20 registered trees inside 1.6 km, 6 published as one walk of about 800 m entirely inside the walls. Rest in data/leads/lucca.json.",
    "demand_views_90d": 52271,
-   "trees": 6
+   "trees": 10
   },
   {
    "city": "Utrecht",
