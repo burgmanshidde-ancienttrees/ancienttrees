@@ -1,0 +1,296 @@
+{
+  "city": "Strasbourg",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Six of Strasbourg's registered trees sit inside a loop of about 1.2 kilometres through the old town and the Neustadt, which makes this an afternoon rather than an expedition. Among them is a plane in the Parc du Contades that Alsace's regional register dates to the 1730s, and a plane on the Quai de la Bruche that the city says was planted in 1667, which cannot be true of its species and turns out to have a better explanation. Two more stand in the Parc de l'Orangerie, and a pair marks an old gate out at the Meinau.",
+  "meta_description": "Nine remarkable trees in Strasbourg: a plane dated to the 1730s, two ginkgos on Place de la Republique, and a legend that does not survive botany.",
+  "question_meta": "Strasbourg's oldest tree is the great plane of the Parc du Contades, dated to the 1730s by Alsace's regional register. Plus eight more.",
+  "question_answer": "The oldest tree in Strasbourg with a date behind it is the great plane in the Parc du Contades, which the Collectivite europeenne d'Alsace dates to the 1730s, making it close to three hundred years old. It stands in a free public park north of the old town. A plane on the Quai de la Bruche is locally said to be older still, planted in 1667, but that cannot be true of a London plane, a hybrid that did not exist in Europe at the time; the likely truth, that it succeeded an earlier walnut on the same spot, is in that tree's own story.",
+  "question_context": "Strasbourg's remarkable-tree list gives a name, an address, a short French description and a coordinate, and no girth, no height and no age at all. That shapes this page: most entries here carry no measurement and no birthday, and where a date exists it comes from Alsace's separate regional register or from local press rather than from the city. Thirteen further entries were left off, most of them alignments, meaning avenues, which have no single place to stand and so fail the test this site applies to every ensemble. Three entries here do cover more than one trunk, and each says so in its first sentence. Several trees rest on the city register alone, with no journalist or historian having written about them, and their stories say that plainly rather than inventing a past. One further caution belongs here rather than in a footnote: the city's own list is a planning inventory, so an entry proves a tree is protected and not that anyone has studied it. Where a second source exists it is named in that tree's story, and where none does, the story says the register is all there is.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Strasbourg?",
+      "a": "The great plane of the Parc du Contades, dated to the 1730s by Alsace's regional register. A plane on the Quai de la Bruche claims 1667, but that date cannot belong to its species."
+    },
+    {
+      "q": "Are Strasbourg's remarkable trees free to visit?",
+      "a": "Yes, all nine stand on public squares, streets and parks with no entry fee. The Parc de l'Orangerie and the Parc du Contades are open city parks."
+    },
+    {
+      "q": "Can I see them in one walk?",
+      "a": "Six of the nine, in about 1.2 kilometres through the old town and the Neustadt. Two more are together in the Parc de l'Orangerie, and the Meinau pair is 3.7 kilometres south."
+    }
+  ],
+  "hero_tree_id": "stg_003",
+  "oldest_tree_id": "stg_003",
+  "trees": [
+    {
+      "id": "stg_001",
+      "name": "The Ginkgos of Place de la République",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "over a century, planted late 1800s to early 1900s",
+      "age_min": 115,
+      "age_max": 145,
+      "location": {
+        "address": "Place de la République, 67000 Strasbourg",
+        "latitude": 48.5871065,
+        "longitude": 7.7535838,
+        "neighbourhood": "Neustadt"
+      },
+      "verified_sources": [
+        "https://www.strasbourg.eu/lieu/-/entity/id/684110/ginkgos-biloba-place-de-la-republique",
+        "https://france3-regions.franceinfo.fr/grand-est/bas-rhin/strasbourg-0/strasbourg-le-ginkgo-biloba-de-la-place-de-la-republique-n-est-pas-sacre-arbre-de-l-annee-2420851.html",
+        "https://pokaa.fr/2019/07/28/histoire-darbre-la-complainte-du-gingkos-biloba-place-de-la-republique/"
+      ],
+      "access": "Free, public square (Place de la République, central Strasbourg)",
+      "transport": "Tram B, C, E or F, Republique stop, right at the square",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two ginkgos face each other across Place de la Republique, each more than 470 centimetres around, and Strasbourg tells a story about how they arrived: a gift from the emperor of Japan to the German Kaiser. Local reporting cannot say which Kaiser, Wilhelm I or Wilhelm II, and no document has ever been produced, so the gift belongs to the city's oral tradition rather than to its archives. The setting is not in doubt. The square was built as Kaiserplatz and finished in 1887, the ceremonial heart of the Neustadt, the new German quarter laid out after the annexation of Alsace in 1871. The trees went in between then and the early 1900s. They have stood through the return to France in 1918, the German annexation of 1940, the liberation of 1944, and the raising of the war memorial at the square's centre, a mother holding two dying sons, one in French uniform and one in German. In 2021 one of the pair reached the final of France's Arbre de l'Annee and did not win, which is also the most recent dated confirmation that both are alive and healthy. Nobody has counted their rings, so their age is inferred from the square around them. Ginkgo has a reputation for surviving whatever is thrown at it. It suits this square better than whoever planted them can have known.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when both crowns turn butter gold and drop within days of each other"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "stg_002",
+      "name": "The Spy's Gate Planes of the Meinau",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Place de la Meinau / Parc Schulmeister, 67100 Strasbourg",
+        "latitude": 48.551126,
+        "longitude": 7.7569222,
+        "neighbourhood": "Meinau"
+      },
+      "verified_sources": [
+        "https://www.strasbourg.eu/lieu/-/entity/id/684098/platanes-commun-place-de-la-meinau",
+        "https://fr.wikipedia.org/wiki/Parc_Schulmeister",
+        "https://www.kuriocity.fr/strasbourg-disparu-2-le-chateau-de-la-meinau-de-schulmeister/"
+      ],
+      "access": "Free, public park (Parc Schulmeister, the current 7-hectare park created in 1971 on the former estate)",
+      "transport": "Tram A, Schluthfeld or Rome stop, short walk; several bus lines also serve the Meinau district",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Napoleon's spymaster bought a meadow here in 1806 and called it Meine Aue, my meadow. The name stuck to the whole district, which is why a Strasbourg suburb is called the Meinau. Charles-Louis Schulmeister, who had talked his way into the Austrian high command and fed it false information before Austerlitz, built a chateau on the ground in 1807 and 1808. Two plane trees stood at its gate. Everything else went. Schulmeister lost the estate in 1836, ruined. The chateau became a sugar refinery and was pulled down in 1873 after the city bought the land. The grounds opened as a public park in 1934 and were rebuilt into the seven hectares of Parc Schulmeister in 1971. The two planes are what is left of the entrance, still standing as a pair on the same spot. Whether they were Schulmeister's own planting or arrived with one of the later landscapings, no source says, so the pair carries no date. What is documented is the site: the city's register lists the trees, and the chateau's story is told the same way by local historians and by the park's own record. This one is a trip rather than a stop, 3.7 kilometres south of the old town and a tram ride out. Go for the story as much as for the trunks, then walk the park, which is one of the quieter big green spaces in Strasbourg.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "stg_003",
+      "name": "The Great Plane of Parc du Contades",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 290 years",
+      "age_min": 270,
+      "age_max": 300,
+      "location": {
+        "address": "Parc du Contades, 20 avenue de la Paix, 67000 Strasbourg",
+        "latitude": 48.5910065,
+        "longitude": 7.7579132,
+        "neighbourhood": "Neustadt, Parc du Contades"
+      },
+      "verified_sources": [
+        "https://www.strasbourg.eu/lieu/-/entity/id/684116/platane-commun-parc-du-contades",
+        "https://www.alsace.eu/arbres-remarquables/arbre-remarquable/arbre-368/Platane%20remarquable%20a%20Strasbourg/ (Collectivite europeenne d'Alsace remarkable-trees register, entry 368; site itself hangs to automated fetch, now on data/fetch-blocklist.json, so this citation is via a WebSearch-extracted snippet rather than a direct read)"
+      ],
+      "access": "Free, public park (Parc du Contades, Strasbourg's oldest public park, laid out from 1764)",
+      "transport": "Tram B or E, Faubourg-de-Pierre or Broglie stop, short walk; also served by several bus lines",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Alsace's regional register dates this plane to the 1730s, which would make it older than the park it stands in. The Parc du Contades was laid out from 1764 as a promenade for the Marshal de Contades, then military governor of Alsace, and it is Strasbourg's oldest public park. If the register is right, the tree was already thirty years old when the first paths were drawn around it. That date comes from the Collectivite europeenne d'Alsace, a body entirely separate from the city's own remarkable-tree list, which is what gives it weight. Its page could not be read directly, only through a search extract, so treat the 1730s as a strong claim rather than a settled one. The height is disputed in the ordinary way. The city says 40 metres. Other listings say 43, and one says nearly 45. Take 40 and upwards, and accept that nobody has recently gone up it with a tape. On the register's dating, this tree stood through the creation of the park around it, the Revolution that turned a marshal's promenade into public ground, the German annexation of 1871 that built the Neustadt right up against it, and two wars in which the city changed hands. It sits at the centre of the park and cannot be walked past without noticing.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "stg_004",
+      "name": "The Plane of the Fish Market Square",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Place du marché aux poissons, 67000 Strasbourg",
+        "latitude": 48.5804518,
+        "longitude": 7.7521689,
+        "neighbourhood": "Grande Île (old town)"
+      },
+      "verified_sources": [
+        "https://www.strasbourg.eu/lieu/-/entity/sig/1105_ENV_287/platane-commun-place-du-marche-aux-poissons"
+      ],
+      "access": "Free, public square in Strasbourg's Grande Ile old town (UNESCO World Heritage historic centre)",
+      "transport": "Tram A, B, C, D, E or F, Homme de Fer or Langstross-Grand'Rue stop, short walk through the old town",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A trunk five metres around is a park tree's measurement. This one is standing on paving in the middle of a medieval city, in a corner of the Place du marche aux poissons, where fish were sold beside the Ill for centuries before the trade moved indoors. The Grande Ile is Strasbourg's original island city and has been a UNESCO World Heritage site since 1988, the first entire city centre to be listed. Almost nothing grows large here because almost nothing has room to. Paving, cellars and the foundations of the surrounding houses leave very little soil, which is what makes a girth of over 500 centimetres the fact worth reporting about this tree. Somebody made room for it, and successive administrations have left it alone. The city's own register is the only source that describes it. No newspaper has profiled it and no association has labelled it, so a municipal listing and a measurement are what is on record, and no more than that. It works as a five-minute stop rather than a destination. The cathedral is three minutes east, the Petite France quarter about ten minutes west along the water, and the square itself has the Historical Museum on one side and the river on the other, which makes this the rare old-town tree you can photograph with something other than a wall behind it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "stg_005",
+      "name": "The Old Plane of Quai de la Bruche",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Quai de la Bruche, 67000 Strasbourg",
+        "latitude": 48.5808277,
+        "longitude": 7.738986,
+        "neighbourhood": "Petite France"
+      },
+      "verified_sources": [
+        "https://www.strasbourg.eu/lieu/-/entity/id/684100/platane-commun-quai-de-la-bruche",
+        "https://pokaa.fr/2019/07/13/histoire-darbre-assez-papote-voyons-ce-que-le-platane-de-la-petite-france-a-a-raconter/"
+      ],
+      "access": "Free, public quayside in the Petite France quarter, shading a well-known cafe terrace",
+      "transport": "Tram A, B, C, D, E or F, Homme de Fer or Faubourg-National stop, short walk into Petite France",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Postcards and travel listings will tell you this plane tree was planted in 1667. It was not, and the reason is botanical rather than archival: the London plane is a hybrid of the oriental and American planes that only appeared in Europe during the 18th century. In 1667 the tree did not exist as a kind of tree anywhere on the continent. Something old did stand here, though. The quay was called the Wasserzoll until the Revolution, after the water toll charged on goods entering Strasbourg by river, and that toll was collected, in the register's own phrasing, in the shade of the ancient tree still standing on the spot. A local history of the quay identifies the older tree as an enormous walnut that failed to survive the hard winter of 1704 and had to be felled. The plane, it says, is its authentic successor. So the honest version: an ancient tree marked this corner of the Petite France by the 1660s, and today's plane, roughly 450 centimetres in girth and one of the oldest street trees in Strasbourg, is very probably the replacement rather than the survivor. Even the city's register hedges, saying only that this is perhaps that tree. It now shades a cafe terrace on the quay, which is a demotion from tax collection and a considerable improvement.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "stg_006",
+      "name": "The Great Beech of Parc de l'Orangerie",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parc de l'Orangerie, Avenue de l'Europe, 67000 Strasbourg",
+        "latitude": 48.5939225,
+        "longitude": 7.774792,
+        "neighbourhood": "Parc de l'Orangerie"
+      },
+      "verified_sources": [
+        "https://www.strasbourg.eu/lieu/-/entity/id/684108/hetre-commun-parc-de-l-orangerie",
+        "https://www.strasbourg.eu/arbres-remarquables"
+      ],
+      "access": "Free, public park (Parc de l'Orangerie, Strasbourg's oldest and grandest public park, laid out in 1692)",
+      "transport": "Tram E, Droits de l'Homme stop, short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Strasbourg's oldest park is full of beeches and the register singles out one of them: more than four metres around the trunk, with a crown the city calls exceptionally well developed. In a beech that combination is unusual. A forest beech grows tall and narrow, and only spreads like this when it has had open ground and no competition for a very long time. The Parc de l'Orangerie gave it exactly that. The park was laid out in 1692 for the governor of Alsace, which makes it older than almost every French public garden that was not royal, and it was rebuilt as an English landscape park in the 1800s, the moment when planting fashion changed from avenues to single specimen trees standing alone. The pavilion at its centre carries the Empress Josephine's name. The same grounds now hold a zoo, a lake, a stork colony and the grandest green space in the city. No age has been published for this beech and no journalist has written about it, so its dimensions are all anyone has recorded. European beech has thin, smooth bark that carves easily and scars permanently, which is why the old ones in busy parks end up covered in initials. Look down as well. On a beech this size the roots run over the surface like cables.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "stg_007",
+      "name": "The Copper Beech of Place de l'Université",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Place de l'Universite, 67000 Strasbourg",
+        "latitude": 48.5843312,
+        "longitude": 7.7616393,
+        "neighbourhood": "Neustadt, University quarter"
+      },
+      "verified_sources": [
+        "https://www.strasbourg.eu/lieu/-/entity/id/684154/hetre-pourpre-place-de-l-universite",
+        "https://www.strasbourg.eu/arbres-remarquables"
+      ],
+      "access": "Free, public square in front of the University of Strasbourg's Palais Universitaire",
+      "transport": "Tram B or E, Universite stop, right at the square",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Purple-leaved beeches are a mutation that gardeners decided to keep. Copper beech is the same species as the green European beech, one that occasionally throws a seedling whose leaves carry so much red pigment that the green underneath barely shows, and the European ones descend from a handful of such accidents found in German and Swiss forests from the 1600s onward. Nurseries have propagated them ever since for exactly this job: one dark tree in a formal civic square. This one is 26 metres tall with a trunk over 330 centimetres around, among the largest specimens on the city's list. It stands on Place de l'Universite in front of the Palais Universitaire, the enormous neo-Renaissance block the German administration put up in the 1880s when it rebuilt Strasbourg's university as a showpiece of imperial science. The tree belongs to that project, in a square designed as its forecourt. Since then the university has been German, French, German again and French again, evacuated wholesale to Clermont-Ferrand during the Second World War, and put back together. The beech stayed. No age is on record, and the city's register is the only source describing it. In late spring the new leaves are almost translucent red before they darken. By high summer the crown is dense enough to leave the ground beneath it nearly bare.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "stg_008",
+      "name": "The Rabin Memorial Cedar",
+      "species": "Atlas Cedar (Cedrus atlantica 'Glauca')",
+      "age_estimate": "planted 25 May 1996",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "1 parc de l'Etoile, 67076 Strasbourg (grounds of the Centre administratif)",
+        "latitude": 48.5732076,
+        "longitude": 7.7505439,
+        "neighbourhood": "Parc de l'Etoile"
+      },
+      "verified_sources": [
+        "https://www.strasbourg.eu/lieu/-/entity/sig/1164_ENV_346/cedre-bleu-centre-administratif"
+      ],
+      "access": "Free, outdoor grounds of a public municipal building (Centre administratif de l'Eurometropole), open during the building's public hours; a real destination rather than a park, so check the centre is open (Mon-Fri 8am-5:30pm, Sat 8am-12:30pm) before visiting",
+      "transport": "Tram B or F, or bus, toward the Centre administratif / Etoile area",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This tree has a birthday: 25 May 1996. Strasbourg planted a blue Atlas cedar that day in memory of Yitzhak Rabin, the Israeli prime minister shot dead six months earlier by an opponent of the Oslo accords, at the end of a peace rally in Tel Aviv. Ancient trees are almost always dated by estimate. This one carries a date, which makes it both the easiest age in the city to state and the youngest entry here: thirty years, planted by a municipality that wanted a living object rather than a plaque. Cedrus atlantica comes from the Atlas Mountains of Morocco and Algeria, where it reaches 40 metres. The Glauca cultivar planted here is selected for needles so grey-blue they read as metallic in flat light, and it holds them all year, so there is no season when this tree is not doing its one visual trick. The city's own register is the only source recording the memorial, which is thin for a fact this specific, though a dated planting is the kind of thing a municipality keeps rather than invents. It grows in the grounds of the Eurometropole's administrative centre rather than in a park, an unglamorous address for a memorial, and that makes one practical detail matter: the grounds follow the building's hours, weekdays and Saturday mornings. Go on a working day. The cedar is outdoors and free to walk up to.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "stg_009",
+      "name": "The Layering Thuja of Parc de l'Orangerie",
+      "species": "Western Red Cedar (Thuja plicata)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parc de l'Orangerie, Avenue de l'Europe, 67000 Strasbourg",
+        "latitude": 48.5922045,
+        "longitude": 7.7723409,
+        "neighbourhood": "Parc de l'Orangerie"
+      },
+      "verified_sources": [
+        "https://www.strasbourg.eu/lieu/-/entity/id/684104/thuya-geant-parc-de-l-orangerie",
+        "https://www.strasbourg.eu/arbres-remarquables"
+      ],
+      "access": "Free, public park (Parc de l'Orangerie)",
+      "transport": "Tram E, Droits de l'Homme stop, short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This tree is quietly making copies of itself. Its lowest branches have bent to the ground, rooted where they touch it and sent up new stems, a process called layering that turns one trunk into a small colony over a few decades. It is the same trick that keeps some ancient yews going indefinitely, and it is rare to see in a public park, because ground-level branches are usually the first thing a maintenance crew takes off. Thuja plicata comes from the Pacific Northwest, the rainforest strip running from northern California to Alaska, where it reaches 60 metres and where the coastal peoples built canoes, longhouses and woven bark clothing out of it. Almost every one in Europe was planted, most of them as hedging, which makes a full-sized specimen doing what the species does in the wild worth the few extra minutes inside the Parc de l'Orangerie. Crush a leaf spray between your fingers as you pass. Western red cedar smells strongly of pineapple, and unlike most conifer scents it stays on your hands. No age is recorded and the city's register is the only source describing it, so the layering and the dimensions are what there is. The great beech of the same park stands a few minutes away, which makes the pair a short walk rather than two separate trips.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
