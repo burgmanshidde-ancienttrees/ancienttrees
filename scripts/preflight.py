@@ -171,8 +171,54 @@ def check_id_prefixes():
     return out
 
 
+# A pin a pin pass could not confirm must not become "confirmed" later without
+# NEW evidence. Added 2026-08-13, after Baarn's brn_005. The pin pass wrote in
+# data/research/baarn-pins.json that the tree's marker "could not be located in
+# the aerial imagery" and left it approximate. A later pass set it to confirmed
+# citing that same aerial survey, and the pin turned out to sit 60 metres off,
+# on a different tree. Nothing was fabricated at any step: an earlier finding of
+# our own simply sat in a file nobody re-read. So the file reads itself now.
+# New evidence is a real thing (a site visit, a register coordinate, Wikidata,
+# OSM, a fresh aerial check), named in the tree's own sources.
+PIN_NEW_EVIDENCE = re.compile(
+    r"on-site|site visit|photograph|register|geoproxy|arcgis|wikidata|inaturalist"
+    r"|overpass|openstreetmap|\bosm\b|pdok|luchtfoto|aerial|geoportal|gis\b", re.I)
+
+
+def check_pin_upgrades():
+    pins = {}
+    for path in sorted(glob.glob("data/research/*-pins.json")):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except (ValueError, OSError):
+            continue
+        rows = d if isinstance(d, list) else (d.get("pins") or d.get("trees") or [])
+        for r in rows:
+            if isinstance(r, dict) and r.get("id"):
+                pins[r["id"]] = (os.path.basename(path), r.get("new_precision"))
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for tree in d.get("trees") or []:
+            prev = pins.get(tree.get("id"))
+            if not prev or prev[1] != "approximate":
+                continue
+            if tree.get("location_precision") != "confirmed":
+                continue
+            if not PIN_NEW_EVIDENCE.search(" ".join(tree.get("verified_sources") or [])):
+                out.append(
+                    "%s: %s is marked confirmed, but %s recorded this pin as approximate "
+                    "and no source names new evidence (a site visit, a register or Wikidata "
+                    "coordinate, OSM, a fresh aerial check). Say where the certainty came "
+                    "from, or leave it approximate."
+                    % (os.path.basename(path)[:-5], tree.get("id"), prev[0]))
+    return out
+
+
 def main():
-    problems = check_id_prefixes()
+    problems = check_id_prefixes() + check_pin_upgrades()
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)
