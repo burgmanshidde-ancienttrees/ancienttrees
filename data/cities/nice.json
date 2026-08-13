@@ -77,10 +77,10 @@
       "access": "Free, open daily",
       "transport": "Bus lines 15, 17, 20, 22 to Monastère de Cimiez stop",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Tombe_Henri_Matisse_Nice.jpg",
-        "license": "CC BY-SA 3.0",
-        "attribution": "Jajabis, via Wikimedia Commons",
-        "status": "approved"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "flagged",
       "notes": "No source gives this specific olive tree a documented age; described consistently as old, not newly planted, but treated here as an unverified estimate. Photo viewed directly: shows the grave slab itself, engraved 'Henri Matisse 1869-1954, Amelie Matisse-Parayre 1872-1958', an exact identity match, with tree canopy visible directly overhead. Approved.",
@@ -287,10 +287,10 @@
       "access": "Free, open daily",
       "transport": "Bus line 14 to Mont Boron, or 30 min walk from Nice Port",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Mont_Boron%2C_Nice_%2820260619-IMG_3714%29.jpg",
-        "license": "CC BY-SA 2.0+",
-        "attribution": "Matti Blume, via Wikimedia Commons",
-        "status": "approved"
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       },
       "curation_status": "flagged",
       "notes": "Presented as an ensemble tied to Demontzey's documented 1862 reforestation campaign; no individual pine is identified as an original 1862 survivor in the sources checked. Photo viewed directly: shows a viewpoint at Fort de Mont Alban, on the same ridge as Mont Boron, framed by mature evergreen trees consistent with the forest's Aleppo pine and olive cover. Approved as a genuine illustration of the forested hilltop.",
@@ -325,7 +325,14 @@
       "curation_status": "flagged",
       "notes": "No individual age documented; listed by the regional 'arbres remarquables' registry (ANNAM) with precise coordinates, which is why this entry alone is marked confirmed rather than approximate.",
       "location_precision": "confirmed",
-      "best_time": { "months": [10, 11, 12], "label": "October into December, when it flowers and ripens last year's strawberry-red fruit at the same time" }
+      "best_time": {
+        "months": [
+          10,
+          11,
+          12
+        ],
+        "label": "October into December, when it flowers and ripens last year's strawberry-red fruit at the same time"
+      }
     }
   ]
 }
