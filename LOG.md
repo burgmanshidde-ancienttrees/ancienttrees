@@ -11,6 +11,18 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-13 - Searching for famous trees instead of for our own names, and Bordeaux reaches ten
+
+Hidde's idea, and it was the right one: "what if you just search famous tree amsterdam. and you then find some, identify which one it is and use it." Commons turns out to keep `Category:Famous trees by country`, 82 countries deep, with one category PER NAMED TREE underneath. `scripts/famous_trees.py` walks it, matches by coordinate first and by name second, and reports both halves: photographs for trees we hold, and famous trees we do not map at all.
+
+**The yield is the opposite of what I expected, and the honest number matters.** Photographs for our existing photo-less trees: effectively zero. Leads: **841 famous trees across 30 countries, every one with photographs and most with coordinates** (Japan 184, Germany 109, Poland 66, France 62, United States 60). 27 of them sit inside a city we already publish, which makes those the cheapest additions available anywhere: named, photographed, pinned, in a city with a page. Several of the American ones are historical markers for trees that fell in 1775 or 1876 and must never ship.
+
+**The name fallback earned its own rule.** Across all 30 countries it produced four matches and all four were different trees: "Washington Oak" to Washington DC's monument witness tree, "White Oak, Wernersville PA" to Boston's Peters Hill oak, Brookline's Olmsted Elm to a tulip tree in DC. It now prints and never writes; only a coordinate match queues anything, and the 46 candidates it had already queued were removed. Same lesson as this morning's photo filter, which is starting to look like the house rule: a shared word is a suggestion, a coordinate is evidence.
+
+**Bordeaux went from 8 to 10** on the queue's own advice (gap of 2, 185 register entries available). Both new trees stand in Parc de Bourran in Merignac, a wine estate turned free municipal park about twenty minutes out on tram A: a giant sequoia at 597cm and 24m, and a Himalayan cedar at 534cm and 32m, the tallest tree the register records there. Neither carries an age, because the register has none, so neither page claims one. The city copy went from three walks to four, forced by the build check, which refused the page while the text still said eight trees.
+
+Also today, both live: country pages now list the species that grow there under the species index's own family headings, and the parks index groups by country instead of one flat grid.
+
 ## 2026-08-13 - One photo per city: 34 empty cities down to 27, and the sweep learns to read
 
 Hidde's ask, from looking at the Netherlands page and its grid of grey cards: at least one photograph per city as a minimum. Measured 34 cities with none. Three defects found in `photo_hunt.py` and fixed before sweeping, each one measured rather than guessed.
