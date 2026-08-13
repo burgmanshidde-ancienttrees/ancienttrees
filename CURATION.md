@@ -9,6 +9,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-13 - Baarn's Pekingtuin oak: the ring belongs to a different tree, and the pin was on the wrong one
+
+Ground truth from Hidde, who walked into the Pekingtuin on 2026-08-11 and photographed what is actually there. Two true facts had been welded into one false claim, which is the error this file exists for.
+
+- **What was right.** Dutch Wikipedia's line stands and his photograph agrees with it: an Amerikaanse eik planted around 1850, 5.52 metres round, in a free municipal park five minutes from Baarn station. The 2021 poetry ring is real, and so is the poem by Ewoud M. Rosenthal.
+- **What was wrong, and it is the location.** Our story said the ring marks off THIS oak's root plate, and the pin (52.20956, 5.29203) sat at the ring. The ring stands around a smaller tree with dark purple foliage, and the oak stands about 60 metres east at 52.209694, 5.292861. No source ever connected the two; the connection was our own inference from a news article about the ring plus a Wikipedia sentence about the oak. A reader following the old pin would have arrived at a modest tree in a steel circle and concluded we had never been there.
+- **How it got a confirmed pin.** `data/research/baarn-pins.json` (the pin pass) states plainly that the ring could NOT be located in aerial imagery at that resolution and left the pin approximate. A later pass upgraded it to confirmed citing PDOK aerial imagery in which "the ~6m 2021 protective ring is individually visible around the standing tree". That is a claim built on exactly the evidence a previous pass had recorded as unavailable, and it is the mechanism worth remembering: our own earlier finding was in the file and nothing made anyone read it.
+
+Fixed: pin moved to the oak and now genuinely confirmed, story rewritten to describe the oak and to place the ring honestly on its own tree, `how_to_recognise` added because the two trees are the one pair in this park anybody could confuse, and the entry now carries the project's first owner-supplied photograph (site/public/photos/, credited to Ancient Trees rather than to a person, per PRINCIPLES #10).
+
 ## 2026-08-13 - Porto's ginkgo photo: the grant is in writing, and the OTHER post's photos are not his
 
 Paulo Araújo answered in writing that we may use the ginkgo photograph, with one caveat that had to be checked rather than assumed: only that photo on the page is his, the other text and its photographs are not. He has written about this tree twice, so the caveat lands exactly on us.
