@@ -1,0 +1,91 @@
+{
+  "leads": [
+    {
+      "register_id": "ND-05054",
+      "name": "ND Nr. 28 Rotbuche im Cramer Klett Park",
+      "reason": "Clears the bar (public district park, open to visitors since 1931; still on the city's 2020 official Naturdenkmal ordinance) but not researched to shipping depth this pass, to stay within the 8-10 target for Nuremberg. Confirmed alive: appears on the 2020 ordinance, three years after a different Cramer-Klett-Park beech (a Blutbuche, likely the delisted ND-27, see blocked) is documented as dead from fungal infection, and ND-28/29 are still listed. Species European Beech (Fagus sylvatica, Rotbuche). Single-sourced beyond register/ordinance; no individual age or description found this pass.",
+      "latitude": 49.454806,
+      "longitude": 11.0904672
+    },
+    {
+      "register_id": "ND-05055",
+      "name": "ND Nr. 29 Rotbuche im Kramer Klett Park",
+      "reason": "Same park, same status as ND-05054 above: clears the bar, deprioritised for time this pass. European Beech (Fagus sylvatica). Public district park confirmed open since 1931.",
+      "latitude": 49.45495662,
+      "longitude": 11.08978906
+    },
+    {
+      "register_id": "ND-06873",
+      "name": "ND Nr. 39 Eiche in der Ziegelsteinstr.77",
+      "reason": "Species not established this pass (Eiche = oak, but Quercus robur vs Quercus petraea unconfirmed for this specific tree). Also see blocked: official ordinance describes it as 'Eiche im Vorgarten' (front garden), which is a private-land access question as much as a species one; kept here rather than blocked because a future pass with a direct source could resolve both."
+    },
+    {
+      "register_id": "ND-06875",
+      "name": "ND Nr. 41 Eiche Bierweg 26",
+      "reason": "Species not established (oak, exact species unconfirmed). See blocked for the access finding (private property, 'Grundstück Bierweg 26' per the city ordinance)."
+    },
+    {
+      "register_id": "ND-06876",
+      "name": "ND Nr. 42 Linde Stahlstr. 26",
+      "reason": "Species not established (lime, exact species unconfirmed; also a street-number discrepancy between the register, Stahlstr. 26, and the city ordinance, Stahlstraße 6, unresolved this pass). See blocked for the access finding (private property)."
+    },
+    {
+      "register_id": "ND-06877",
+      "name": "ND Nr. 43 Eiche Marloffsteiner Str. 80",
+      "reason": "Species not established (oak, exact species unconfirmed). See blocked for the access finding (private property)."
+    },
+    {
+      "register_group": "Plathersberg oaks",
+      "register_ids": ["ND-05029", "ND-05030", "ND-05033", "ND-05034", "ND-05035", "ND-05036", "ND-05039", "ND-05041", "ND-05046", "ND-05047"],
+      "name": "Ten oaks, ND Nr. 12-21, Grünanlage Platnersberg, Erlenstegen",
+      "reason": "Not individually researched this pass: about 4.2-4.3 km from centre, outside the roughly 2 km walk radius this pass focused on (Kontumazgarten/Hallerwiese/Stadtpark). Officially in a public green space (Grünanlage Platnersberg per the city ordinance, Erlenstegen district), not private, so access looks fine on paper, but which individual oak is which within the ten is unresolved. A local survey (nordbayern.de) names one famous specimen in this area, the 'Bäreneiche' (Bear Oak) near the Bärenbrunnen fountain, roughly 350 years old, 28m tall, 20m crown, 6.8m girth: that could anchor a second Nuremberg walk/cluster in Erlenstegen if a future pass wants to pursue it, but none of these ten ND numbers has been matched to the Bäreneiche specifically yet."
+    }
+  ],
+  "blocked": [
+    {
+      "register_id": "ND-05053",
+      "name": "ND Nr. 27 Rotbuche im Cramer Klett Park",
+      "reason": "Likely dead. Missing from the city's own 2020 official Naturdenkmal ordinance (which lists ND 26, then jumps to 28), while the Bavaria state layer still marks it 'aktuell' (a designation-status field, not proof of life). German Wikipedia's Naturdenkmal list page states outright that a Blutbuche (copper beech) in Cramer-Klett-Park died from fungal infestation (Pilzbefall) and was delisted; ND-27 being absent from the post-death 2020 ordinance while ND-28 and ND-29 (the other two Cramer-Klett-Park beeches) remain listed lines up with ND-27 being that dead, removed tree. Never ships per the hard rule against publishing a tree known to be dead."
+    },
+    {
+      "register_id": "ND-05048",
+      "name": "ND Nr. 22 Blutbuche am Laufer Tor",
+      "reason": "Likely dead/delisted. ND-22 is missing from the city's 2020 official ordinance (list runs ND 12-21 then jumps to 23), the same signature as the confirmed-dead ND-27 above. German Wikipedia's dead-tree note names 'eine Rotbuche am Laufer Schlagturm' (a European beech at the Laufer Schlagturm tower) as one of two Naturdenkmale that died of fungal infection; Laufer Tor and Laufer Schlagturm are the same historic gate complex, though the species name in that note (Rotbuche) does not exactly match this candidate's register name (Blutbuche) - a copper-beech cultivar of the same species. Given the location match and the ND-number gap, treat as the same dead tree until a source proves otherwise; never ships per the hard rule against publishing a tree known to be dead."
+    },
+    {
+      "register_id": "ND-06874",
+      "name": "ND Nr. 40 zweireihige Platanenallee am Prinzregentenufer",
+      "reason": "Not a single collectible point: the official ordinance describes it as a two-row plane avenue (Platanenallee, zweireihig) along the south side of Prinzregentenufer, and the register's own point_count is 79 trees. An avenue is explicitly blocked by the collectible-point rule unless the avenue itself is the destination with one obvious place to stand; this is a riverside street of trees rather than a compact, famous ensemble, so it fails that test."
+    },
+    {
+      "register_id": "ND-05052",
+      "name": "ND Nr. 26 Platane in der Grübelstraße",
+      "reason": "Access: the official city ordinance describes this as 'Platane im Innenhof des Hauses Grübelstraße' - a plane tree in the inner courtyard OF THE HOUSE, i.e. a private residential courtyard, not a publicly accessible space. No source found indicating public access to this courtyard."
+    },
+    {
+      "register_id": "ND-05056",
+      "name": "ND Nr. 30 Platane in der Hirtsvogelstraße",
+      "reason": "Access: the official ordinance names this 'Platane im Innenhof \"Rädda Barnen\" in der Hirsvogelstraße' - a courtyard belonging to a Rädda Barnen (Save the Children) building, most likely a children's facility. No evidence found that this courtyard is open to general visitors; treated as restricted/institutional access."
+    },
+    {
+      "register_id": "ND-06873",
+      "name": "ND Nr. 39 Eiche in der Ziegelsteinstr.77",
+      "reason": "Access: official ordinance describes it as 'Eiche im Vorgarten' (oak in the front garden) of a private residential property. Kept as a lead too for the unresolved species question, but never ships on private land not genuinely open to visitors."
+    },
+    {
+      "register_id": "ND-06875",
+      "name": "ND Nr. 41 Eiche Bierweg 26",
+      "reason": "Access: official ordinance describes it as 'Eiche auf dem Grundstück Bierweg 26' - on a private property. Private land, not open to visitors."
+    },
+    {
+      "register_id": "ND-06876",
+      "name": "ND Nr. 42 Linde Stahlstr. 26",
+      "reason": "Access: official ordinance describes it as 'Linde auf dem Grundstück Stahlstraße 6' - on a private property. Private land, not open to visitors."
+    },
+    {
+      "register_id": "ND-06877",
+      "name": "ND Nr. 43 Eiche Marloffsteiner Str. 80",
+      "reason": "Access: official ordinance describes it as 'Eiche auf dem Grundstück Marloffsteiner Straße 80' - on a private property. Private land, not open to visitors."
+    }
+  ]
+}

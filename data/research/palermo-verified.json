@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pal_009",
+    "name": "The Fig of Villa Malfitano",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "approximately 138 years",
+    "age_min": 136,
+    "age_max": 140,
+    "location": {
+      "address": "Villa Malfitano Whitaker, Via Dante 167, 90141 Palermo",
+      "latitude": 38.122858,
+      "longitude": 13.341453,
+      "neighbourhood": "Libertà"
+    },
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+      "https://www.apgi.it/giardino/villa-malfitano-whitaker/",
+      "https://www.verdeinsiemeweb.com/2015/11/il-giardino-di-villa-malfitano-palermo.html"
+    ],
+    "access": "Free garden access; the villa's interior requires a paid guided tour",
+    "transport": "20 min walk from Piazza Politeama, entrance on Via Dante",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Location and girth (2100cm) taken directly from Italy's official AMI/MASAF national monumental-trees register, locality 'Villa Malfitano Whitaker', a distinct sheet from the register's dragon tree (already published as pal_004) and yucca entries at the same address, 152m from pal_004's own coordinate, well outside the 80m duplicate radius but the same garden and easily the same walk. Planting date (1888) and the tree's identity as 'the specimen closest to the house' with 'long branches spreading parallel to the ground' independently corroborated by two sources: APGI (Associazione Parchi e Giardini Italiani)'s own garden page, and verdeinsiemeweb.com's 2015 feature on the garden, which both name the same 1888 planting by 'Pip', the family nickname for Joseph 'Pip' Whitaker who built the villa. Subspecies given as Ficus macrophylla subsp. columnaris in both secondary sources; kept as the same common species used elsewhere on the page (Moreton Bay Fig) per hard rule 9, subspecies detail left for the writer to use if useful. Strong anecdote for the story: verdeinsiemeweb.com records that at the funeral of Delia Whitaker, the last family member to live in the villa, her funeral carriage was asked to pause beneath this fig's canopy, honouring a daily ritual she kept throughout her life; this is a genuinely good lead sentence. Second only in size to the Orto Botanico's giant (already pal_003) per APGI's own description ('in dimensioni, seconda solo al celebre esemplare dell'Orto Botanico'), which the writer should treat as a comparative claim from a named source rather than restate as our own superlative, consistent with how pal_001/pal_003's competing size claims are already handled on this page. Photo not hunted this pass per the brief (verification only); a photo search would be worthwhile given the Cadiz-standard candidates already found for pal_004 at the same address."
+  },
+  {
+    "id": "pal_010",
+    "name": "The Fig of Villa Tasca",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "not documented, likely dating to the garden's Romantic-era expansion from 1855",
+    "age_min": 100,
+    "age_max": 171,
+    "location": {
+      "address": "Parco di Villa Tasca, Viale Regione Siciliana Sud Est 397, 90135 Palermo",
+      "latitude": 38.099142,
+      "longitude": 13.327022,
+      "neighbourhood": "Villa Tasca / Passo di Rigano"
+    },
+    "verified_sources": [
+      "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+      "https://www.grey-panthers.it/speciale/speciali/giardini-italia-scoperta-natura/palermo-villa-tasca/",
+      "https://www.turismo.it/idee-di-viaggio/natura-outdoor/villa-tasca-piante-tropicali-e-romanticismo-siciliano-id-20657/"
+    ],
+    "access": "Paid entry, Parco di Villa Tasca (day ticket around 4 euros per grandigiardini.it 2026 pricing; an annual pass is also sold). Sources disagree on hours: the park's own listed general hours run Tuesday-Sunday from mid-afternoon into the evening, while a garden feature (grey-panthers.it) describes the historic Romantic garden itself as visited Tuesday-Sunday by reservation/group booking. Confirm current opening hours and whether the fig's part of the grounds needs a booked visit before publishing a specific time.",
+    "transport": "On Viale Regione Siciliana, the ring road toward Monreale; not walkable from the historic centre, reachable by bus or car",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "The single largest girth of any tree candidate scouted this pass: 2730cm (27.3m) per Italy's official AMI/MASAF national monumental-trees register, locality 'Villa Tasca - Viale Regione Siciliana', height 30m. That is larger by raw trunk girth than either figure already disputed for the Piazza Marina fig (pal_001, 20-36m depending on measurement method) and than the Orto Botanico giant's story (pal_003, which leads on canopy AREA rather than trunk girth, so the two claims measure different things and do not directly conflict). FLAG FOR THE WRITER under hard rule 8: do not add a 'largest in Palermo' or 'largest trunk' superlative for this tree without first re-checking it against pal_001 and pal_003's existing claims in the same page; the honest, defensible fact is the register's own measured girth, not a city-wide superlative this pass did not have time to fully adjudicate. Existence and description independently corroborated by two sources: grey-panthers.it ('il tentacolare fico magnolioide domina con la sua ombra perenne meta del lago', describing the tree as dominating half of the garden's 'Lago dei Cigni'/Swan Lake) and turismo.it, which covers the garden's history (16th century villa, the garden remade into an 'irregular' Romantic-style garden from 1855 by Lucio Tasca, expanded further from 1870 with English landscape-style additions). No source gives a specific planting date for the fig itself, so age is a wide, honestly flagged estimate anchored to the documented 1855 garden remake rather than invented; do not sharpen it. Public access confirmed: the villa's grounds reopened as 'Parco di Villa Tasca', a public agri-cultural park, in 2020 after a period of restricted access, per contemporary local press (Giornale di Sicilia, palermotoday.it) found in the same search pass; current-year ticket pricing confirmed directly from grandigiardini.it. Genuinely a new locality rather than a walk-extension of any published Palermo tree (2.9km from the nearest one, pal_007), so this entry stands on its own merits as one of the most remarkable fig specimens found in the register rather than for joining an existing cluster. Photo not hunted this pass per the brief."
+  }
+]

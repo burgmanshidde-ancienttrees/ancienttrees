@@ -1,0 +1,71 @@
+[
+  {
+    "id": "hob_008",
+    "name": "The Chir Pine of the Botanical Gardens",
+    "species": "Chir Pine (Pinus roxburghii)",
+    "age_estimate": "not documented",
+    "age_min": 0,
+    "age_max": 0,
+    "location": {
+      "address": "Royal Tasmanian Botanical Gardens, 11 Lower Domain Road, Hobart",
+      "latitude": -42.866028,
+      "longitude": 147.330266,
+      "neighbourhood": "Queens Domain"
+    },
+    "verified_sources": [
+      "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/35d1de03d4c84185a5b03872f9c44318/data",
+      "https://gardens.tas.gov.au/"
+    ],
+    "access": "Free, public botanical garden, open daily 8am-5pm (Apr-Sep) or 8am-6.30pm (Oct-Mar), gold-coin donation encouraged, no compulsory entry fee",
+    "transport": "Royal Tasmanian Botanical Gardens, Queens Domain, short drive or bus from Hobart CBD; free parking near the gates",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "City of Hobart Significant Tree Register ref L6, '11 Lower Domain Road, Royal Tasmanian Botanical Gardens'. Named on the datasheet as Pinus roxburghii, 'Longleaved Indian Pine' (the more standard common name in English is Chir Pine, used here per hard rule 9's nationality-neutral naming instinct). Register lists THREE significance categories at once, the maximum density seen among the Gardens candidates this pass: CATEGORY 1 (outstanding aesthetic significance), CATEGORY 2 (outstanding dimensions in height, trunk circumference or canopy spread), and CATEGORY 3 (very old or venerable). That matches the multi-category strength of the already-published giant sequoias (hob_007) and kauri (hob_006). Datasheet's second page carries only a locator aerial photo with an arrow pinpointing the exact tree among the Gardens' pinetum, no numeric age/height/girth text field, which is why age is left undocumented rather than estimated. The Gardens' own site and general coverage (gardens.tas.gov.au; the Gardens' history material describes the Pinetum as 'one of the most significant collections of conifers in the southern hemisphere', many specimens dating to the 19th century plantings) corroborates the collection's context but not this specific tree's individual facts, so this stays a single-source-for-specifics entry, flagged accordingly, the same pattern already used for hob_003/hob_004/hob_006 in this city file. Species is native to the Himalayan foothills (Pakistan through Nepal), a very long way from a Tasmanian pinetum, continuing the collection's established theme (Douglas fir, kauri, sequoia) of 19th century foresters testing which northern-hemisphere or subtropical timber trees would take to Hobart's climate. Coordinates come directly from the register's own point (not converted; already in WGS84 lat/lon in the source data), and the datasheet's aerial locator image places the tree specifically within the Gardens' pinetum area a short walk from the entrance, consistent with confirmed tree-level precision. No open-licensed photo hunted this pass per the brief (verification only)."
+  },
+  {
+    "id": "hob_009",
+    "name": "The English Oak of the Botanical Gardens",
+    "species": "English Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "age_min": 0,
+    "age_max": 0,
+    "location": {
+      "address": "Royal Tasmanian Botanical Gardens, 11 Lower Domain Road, Hobart",
+      "latitude": -42.865696,
+      "longitude": 147.330342,
+      "neighbourhood": "Queens Domain"
+    },
+    "verified_sources": [
+      "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/2bdd933097a544df88c96a424d408abc/data",
+      "https://gardens.tas.gov.au/"
+    ],
+    "access": "Free, public botanical garden, open daily 8am-5pm (Apr-Sep) or 8am-6.30pm (Oct-Mar), gold-coin donation encouraged, no compulsory entry fee",
+    "transport": "Royal Tasmanian Botanical Gardens, Queens Domain, short drive or bus from Hobart CBD; free parking near the gates",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "City of Hobart Significant Tree Register ref L25, '11 Lower Domain Road, Royal Tasmanian Botanical Gardens', species Quercus robur, English Oak. THREE significance categories: CATEGORY 1 (outstanding aesthetic significance), a category for trees that are an important part of a historic site/garden/park/town, and a category for trees that occur in a unique location or context and so provide a contribution to the landscape. No numeric age/height/girth given on the datasheet, page 2 is only a locator aerial photo with an arrow pinpointing this specific tree near the Gardens' main house/greenhouse complex. IMPORTANT DISAMBIGUATION for the writer: a web search surfaced a DIFFERENT National Trust (trusttrees.org.au) listing, 'Royal_Tasmanian_Botanical_Gardens_Lower_Domain_Road_2', for a Quercus robur at the same Gardens address said to be about 60 years old, in poor condition, and carrying 'an association with Sir Winston Churchill'. The Gardens hold multiple separate English Oak specimens (trusttrees.org.au lists several Quercus at this address under different reference numbers), and this pass could NOT confirm the Churchill-associated oak is the same physical tree as register ref L25 (no shared coordinates or cross-reference exists between the two sources). Do not attach the Churchill story to this entry without independently confirming the two records describe the same tree; it may belong to a different oak in the same collection. Ships on the City of Hobart register's own three-category significance alone, flagged as single-source for the individual tree's specifics, consistent with hob_003/hob_004/hob_006's pattern in this file. No open-licensed photo hunted this pass per the brief."
+  },
+  {
+    "id": "hob_010",
+    "name": "The Spotted Gum of the Botanical Gardens",
+    "species": "Spotted Gum (Corymbia maculata)",
+    "age_estimate": "not documented",
+    "age_min": 0,
+    "age_max": 0,
+    "location": {
+      "address": "Royal Tasmanian Botanical Gardens, 11 Lower Domain Road, Hobart",
+      "latitude": -42.862144,
+      "longitude": 147.32852,
+      "neighbourhood": "Queens Domain"
+    },
+    "verified_sources": [
+      "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/b7db5bc9b5e54d03bce5b34826298422/data",
+      "https://gardens.tas.gov.au/"
+    ],
+    "access": "Free, public botanical garden, open daily 8am-5pm (Apr-Sep) or 8am-6.30pm (Oct-Mar), gold-coin donation encouraged, no compulsory entry fee",
+    "transport": "Royal Tasmanian Botanical Gardens, Queens Domain, short drive or bus from Hobart CBD; free parking near the gates",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "City of Hobart Significant Tree Register ref L22, '11 Lower Domain Road, Royal Tasmanian Botanical Gardens'. Datasheet names it Corymbia maculata, Spotted Gum, 'previously known as Eucalyptus maculata'. THREE significance categories: CATEGORY 1 (outstanding aesthetic significance), CATEGORY 2 (outstanding dimensions in height, trunk circumference or canopy spread), and a category for trees that are an important part of a historic site/garden/park/town. No numeric age/height on the datasheet itself (page 2 is a locator aerial photo only), so age left undocumented. Worth flagging for the writer as the one genuinely native-Australian entry among Hobart's published trees: every other tree on the current page (Douglas fir, kauri, sequoias, holm oak, dawn redwoods, Norfolk Island pine, Bhutan cypress) is an introduced exotic, while Corymbia maculata is itself a mainland-Australian native (coastal New South Wales and southern Queensland) that does not grow wild in Tasmania either, so it is 'native to the country, not the island', a small but real distinction worth making honestly rather than calling it a native Tasmanian tree. Its smooth, dappled, patch-shedding bark (the source of 'spotted') is a strong visual hook. Single-source for individual specifics (the register), corroborated only generically by the Gardens' own description of its historic 19th/20th century exotic-specimen plantings; flagged accordingly, same pattern as hob_003/hob_004/hob_006/hob_008/hob_009. No open-licensed photo hunted this pass per the brief. Considered Eucalyptus cladocalyx (Sugar Gum, register ref L23, also three categories, 395m from hob_007) as an alternative; left as a lead in favour of the Spotted Gum's more distinctive bark and story hook, not because anything is wrong with it."
+  }
+]

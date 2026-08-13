@@ -25,9 +25,19 @@
     },
     {
       "note": "hellohobart.com.au (Feb 2025) mentions 'heritage-listed Giant Sequoia trees in St David's Park' as iconic Hobart trees, distinct from both the Government House sequoia and the Royal Tasmanian Botanical Gardens pair already shipped in hobart-verified.json. No matching Sequoiadendron entry found in the 452-row register-candidates file within 5km of the centre for St David's Park specifically (coordinates approx -42.8861, 147.3289). Possibly the article is imprecise about location (confusing St David's Park with the Cathedral or RTBG), or the trees are registered under a different name/address not matched by this search. Worth a targeted look if a future pass has time."
+    },
+    {
+      "objectid": 84,
+      "species": "Eucalyptus cladocalyx (Sugar Gum)",
+      "reason": "City of Hobart Significant Tree Register ref L23, '11 Lower Domain Road, Royal Tasmanian Botanical Gardens', 395m from hob_007. Register gives it the same three-category strength as the Spotted Gum that shipped as hob_010 (aesthetic, outstanding dimensions, historic site/garden/park). A perfectly good candidate, not blocked on any fact; simply not chosen this pass because a city topping up by a small fixed number should not ship two very similar native-eucalypt Gardens specimens in one pass when only one slot was available for that role. Next in line if the page ever wants a second native entry."
     }
   ],
   "blocked": [
+    {
+      "objectid": 1344,
+      "species": "Quercus robur, 43 trees (English Oak avenue)",
+      "reason": "City of Hobart Significant Tree Register ref 94, '7 Lower Domain Road, Queens Domain', PDF datasheet read directly (unlike the garbled-font L-series sheets, this one extracted cleanly). Genuinely remarkable on the facts: planted 1843 by Lt. Governor Eardley-Wilmot as an avenue drive across the Domain, called 'one of the earliest surviving documented avenues in Australia', hits SIX significance categories (aesthetic, dimensions, age/venerable, historic person, historic site, and a catch-all for one oak that fell and kept growing at 45 degrees). BLOCKED for two independent reasons, either one sufficient alone: (1) the address, '7 Lower Domain Road, Queens Domain', is identical to the address already recorded for objectid 1331 (the Government House Giant Sequoia) below, which that entry describes as Crown land forming part of the restricted Government House viceregal estate; this avenue was not independently re-verified as standing on the public part of the Domain rather than the Government House grounds, and the source text itself says the avenue was 'planted as an avenue from the Domain to the water's edge', which is consistent with running past or through the estate rather than being safely outside it. (2) Even setting access aside, a 43-tree avenue spanning from the Domain to the waterline reads as the La Rambla case in the collectible-point rule (a long run of ordinary trees with no single obvious place to stand) rather than the compact, famous-for-being-exactly-that ensemble that passed Amsterdam's Lomanstraat tunnel or Tokyo's Meiji Jingu Gaien avenue. Do not ship without first confirming public, non-viceregal access to the specific stretch, and even then treat it as an ensemble entry rather than assuming the whole 43-tree run qualifies."
+    },
     {
       "objectid": 1331,
       "species": "Sequoiadendron giganteum (Giant Sequoia)",
