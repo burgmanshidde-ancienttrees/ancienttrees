@@ -1,0 +1,21 @@
+[
+  {
+    "id": "prg_018",
+    "species": "London Plane (Platanus x acerifolia)",
+    "name_hint": "Plane at the Church of St Clement, Nove Mlyny",
+    "location": {
+      "address": "Corner of Nove Mlyny and Klimentska, opposite the Church of St Clement, Petrska quarter, Prague",
+      "latitude": 50.091824,
+      "longitude": 14.4285499,
+      "neighbourhood": "Petrska ctvrt, Prague 1"
+    },
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "access": "Free, public street",
+    "transport": "",
+    "verify_notes": "Pamatny strom (memorial/protected tree), 342 cm girth measured in 2017, on the corner of Nove Mlyny and Klimentska opposite the Church of St Clement. Stands about 250 metres from the already published Rasnovka oak (prg_016), a genuine two-tree pocket in the Petrska quarter. Register-only source; its note describes it only as a locally dominant tree of above-average size and age, no specific age given, so leave age_estimate empty rather than invent one.",
+    "verified_sources": [
+      "Pamatny strom register, Prague, Nove Mlyny/Klimentska entry, 2017 measurement"
+    ]
+  }
+]
