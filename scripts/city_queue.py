@@ -18,47 +18,16 @@ which city, which country, published or not. Order lives in one place.
     python3 scripts/city_queue.py            # rewrite both
     python3 scripts/city_queue.py --check    # exit 1 if either is stale
 
-THE TARGET COLUMN, and the reasoning, because a number without one is a wish.
+THE TARGET COLUMN lives in CITY_QUEUE.md, not here.
 
-Hidde, 2026-08-12: "ik denk dat we veel beter een hoop steden met 10-25 bomen
-en dan later verdiepen." So the target is a first-version ceiling of 25, not a
-per-city ambition scaled by how much supply happens to sit nearby.
+Ruled by Hidde 2026-08-12: ten trees everywhere first, twenty-five once Search
+Console confirms a city. `target_for()` below is the whole implementation and
+carries the reasoning; the rule, its two superseded versions and why they were
+wrong are written once in CITY_QUEUE.md's "How far to take a city" section.
 
-This is the SECOND version of this column, and the first one is worth recording
-because it was wrong in a way that looked reasonable. It banded the target by
-supply (register trees within 5 km plus ready leads) and gave 50 to cities with
-200+ supply AND measured demand, 30 otherwise. That produced Vienna 50 and
-Barcelona 30: two cities with comparable supply, opposite targets, decided by
-whether Search Console had spoken rather than by anything about their trees.
-Barcelona is the one he had called the mega city and it already publishes 46.
-He spotted it in one line: "maar waarom in godsnaam 50 doel bij wenen".
-
-The deeper fault: register count measures how EASY trees are to find, never how
-GOOD they are. Amsterdam's 4,993 is a municipal inventory, not 4,993 trees that
-clear our bar. Scaling ambition by it confused cheap with worth doing.
-
-    supply = register trees within 5 km + leads already ready to write
-
-    supply < 10    no target. The city gets whatever verifies, which is
-                   usually 4 to 10, and Cadiz at 5 proves that is not a
-                   failure. Adding here costs full research per tree.
-    supply >= 10   25. The first-version ceiling, the same for every city,
-                   because breadth is the phase and a good afternoon does not
-                   scale with a city's population.
-
-Past 25 is deepening, not a target: a later decision, taken on a city that has
-shown demand, and taken with Hidde. A city already past it (Barcelona at 46) is
-finished, not over budget.
-
-What the target is NOT: a quota to fill. The bar per tree does not move, padding
-stays forbidden, and a city that runs out of trees that clear the bar is
-finished below its target. It is a ceiling on ambition, not a floor on effort.
-
-This replaces "a city is finished at three walks" as the stopping rule. The
-three-walk line survives where it was always right, which is what the PAGE
-leads with: a reader gets the best three walks, and trees beyond them are still
-published, still on the map, still collectible, listed below. Barcelona's 46 in
-7 walks was never wrong as data, only as presentation.
+This docstring used to restate the rule in full, and within the hour it was
+describing the previous version while the code did something else, which is the
+same two-copies disease this script exists to cure for the city order.
 """
 import argparse
 import glob
