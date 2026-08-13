@@ -23,6 +23,23 @@ of de Casinotuin fietst, dan maakt dat de pagina's een stuk beter."
 
 URL fetched, returns 200.
 
+**Re-checked 2026-08-13, because you had not sent it yet and one line in it was
+not true any more.** All 11 trees are live with their stories, so that claim
+holds. The recognition claim did not: six of the eleven (dbo_001, 003, 005, 006,
+008, 009) had no `how_to_recognise` line at all, which means the mail would have
+told the one reader who has already walked to a Den Bosch tree and failed to
+find it that the problem was fixed, in a way he could disprove in two clicks.
+Written for all six before this note, from what their own stories and the
+register already say rather than from anything new: the plane at Sint
+Janskerkhof by its six-metre trunk on the Choorstraat corner, the Casinotuin
+beech by its dark red crown against the weeping beech thirteen metres away, the
+silver maple by its leaves turning over white along the water, and so on. All
+eleven carry one now, `preflight.py` clean across 105 cities. The mail as
+written is true as of today.
+
+Still true and still yours to add or leave: all 11 Den Bosch trees have no
+photograph.
+
 To: stadsredactie@bd.nl (or Roel's own address if he wrote from it)
 Subject: Re: Op Bastion Oranje groeit een boom boven op de vestingmuur van 1634
 
