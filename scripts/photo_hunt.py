@@ -336,7 +336,8 @@ def openverse_candidates(tree, city, places):
         # square's market stalls and its bronze busts, and a species query alone
         # returns that species on another continent. Requiring the plant and the
         # place together is the only honest filter available here.
-        if not (any(p in hay for p in places) and any(t in hay for t in plant)):
+        if not (any(mentions(hay, p) for p in places)
+                and any(mentions(hay, t) for t in plant)):
             continue
         lic = (it.get("license") or "").upper()
         out.append({
@@ -348,6 +349,82 @@ def openverse_candidates(tree, city, places):
             "source": f"openverse/{it.get('source')}",
         })
     return out[:5]
+
+
+# Common nouns that look distinctive because they are long, and are not. A
+# name token only earns the standalone lane below if it is a proper noun
+# nobody else's photograph would carry by accident.
+NOT_DISTINCTIVE = {
+    "cathedral", "monastery", "cemetery", "botanical", "botanic", "gardens",
+    "garden", "memorial", "monument", "avenue", "boulevard", "entrance",
+    "hospital", "university", "railway", "station", "quarter", "district",
+    "riverside", "waterfront", "churchyard", "courtyard", "esplanade",
+    "promenade", "vineyard", "orchard", "playground", "graveyard", "arboretum",
+    "millennium", "centenary", "historic", "ancient", "veteran", "twisted",
+    "gnarled", "hollow", "weeping", "giant", "grande", "grand",
+}
+
+# Titles that are near-certainly not a photograph of a tree, even when the
+# words line up. All observed in the queue on 2026-08-13: street signs and a
+# street light matched their square's name, and the viewing pass would have
+# paid to look at each one.
+JUNK_TITLE = re.compile(
+    r"street sign|straatnaambord|naambord|signpost|street light|straatlantaarn"
+    r"|logo|coat of arms|wapen van|kaart |\bmap\b|plattegrond|schild|plaque",
+    re.I)
+
+
+def name_tokens(tree):
+    """The one-word proper nouns in a tree's own name, if it has any.
+
+    Why this lane exists (2026-08-13). Den Bosch's Weichselboom had zero
+    candidates after a full sweep, and one search on the word "Weichselboom"
+    found a CC BY photograph of exactly that tree, name plate in frame. The
+    file was reached by the existing name search and then DISCARDED, because a
+    hit had to name both a plant and a place and the title is simply
+    "Weichselboom (3000295248).jpg": no place in it at all.
+
+    That both-words rule is right for a name we constructed ("The Magnolia of
+    the Saint" really does match a magnolia in Saint Louis), and wrong for a
+    name the world already uses. A single long proper noun is different in kind:
+    nobody titles an unrelated photograph "Weichselboom", "Willemslinde" or
+    "Olifantsiep". So a token of eight characters or more that is not a species
+    word, not a generic tree word and not one of the long common nouns above
+    stands on its own, and a title carrying it counts as a hit without needing a
+    place word too.
+
+    One more cut, measured the same hour: a token that ALSO appears in the
+    tree's address is a street or park name, not a nickname, and Dutch towns
+    share those wholesale. "Parklaan" standing alone returned a Parklaan in
+    Groningen, Amstelveen, Rotterdam, Haarlem and Sittard. So an address word
+    goes back to needing a place word beside it, and only a name the address
+    does not contain stands alone.
+    """
+    species = {w.strip("().,").lower()
+               for w in str(tree.get("species", "")).split()}
+    loc = tree.get("location") or {}
+    addr = f"{loc.get('address') or ''} {loc.get('neighbourhood') or ''}".lower()
+    solo, place_like = set(), set()
+    for raw in str(tree.get("name") or "").replace("'", " ").split():
+        w = raw.strip("().,").lower()
+        if len(w) < 8 or w in STOPWORDS or w in species \
+                or w in GENERIC_TREE_WORDS or w in NOT_DISTINCTIVE or w.isdigit():
+            continue
+        (place_like if w in addr else solo).add(w)
+    return solo, place_like
+
+
+def mentions(hay, token):
+    """Does this title actually contain that word?
+
+    Substring matching cost us a viewing pass on 2026-08-13: "tree" is inside
+    "street", so every street sign, street light and streetcorner within 250 m
+    of a pin counted as a photograph of a tree. Anchoring the END of the token
+    to a word boundary fixes that ("tree" in "street" is followed by a t, so it
+    fails) while keeping the compounds that matter here, because Dutch and
+    German glue the plant word on the end: Kastanjeboom, Lindeboom,
+    Kastanienbaum all still match boom and baum."""
+    return re.search(re.escape(token) + r"\b", hay) is not None
 
 
 def candidates_for(tree, city=""):
@@ -369,9 +446,51 @@ def candidates_for(tree, city=""):
         # at a parked Vespa, a museum sarcophagus, a concert stage and two
         # streets of buildings, all of which named a Roman or Barcelona street
         # correctly and contained no tree at all.
+        # A distinctive one-word name stands on its own; everything else still
+        # has to name a plant AND a place. See name_tokens() for why.
+        solo, place_like = name_tokens(tree)
+
+        # A street name proves nothing on its own: Parklaan standing alone
+        # returned a Parklaan in Groningen, Amstelveen, Rotterdam, Haarlem and
+        # Sittard. It has to be the street AND the city, so the city words are
+        # kept apart from the rest of the place words here.
+        city_words = {str(city).lower()} | {k.lower() for k, v in ALIAS.items()
+                                            if v.lower() == str(city).lower()}
+        # A city often signs itself with a name our own city field never uses:
+        # Den Bosch files its photographs under 's-Hertogenbosch, which is in
+        # every address and in no alias table. The last comma-separated part of
+        # the address is that name, so it counts as a city word too. Without
+        # this the street-name lane threw away "Casinotuin 's-Hertogenbosch.jpg",
+        # which is the tree's own garden, correctly named, in the right town.
+        tail = str((tree.get("location") or {}).get("address") or "").split(",")[-1]
+        for w in tail.lower().replace("'", " ").replace("-", " ").split():
+            w = w.strip("().,")
+            if len(w) >= 5 and w not in STOPWORDS:
+                city_words.add(w)
+
+        def keeps(title):
+            t = title.lower()
+            if any(mentions(t, r) for r in solo):
+                return True                      # a nickname nobody else uses
+            in_city = any(mentions(t, c) for c in city_words)
+            if in_city and any(mentions(t, r) for r in place_like):
+                return True                      # a street name, in the right city
+            return (any(mentions(t, p) for p in places)
+                    and any(mentions(t, w) for w in plant))
+
         named = [s["title"] for s in d.get("query", {}).get("search", [])
-                 if any(p in s["title"].lower() for p in places)
-                 and any(t in s["title"].lower() for t in plant)]
+                 if keeps(s["title"])]
+        # A second query per distinctive token, because searching the whole
+        # constructed name ranks the file we want below the species' own photos.
+        for token in sorted(solo | place_like)[:2]:
+            try:
+                d2 = api({"action": "query", "list": "search", "srnamespace": "6",
+                          "srsearch": token, "srlimit": "8"})
+            except Exception as e:
+                print(f"    token search failed: {e}", file=sys.stderr)
+                continue
+            named += [s["title"] for s in d2.get("query", {}).get("search", [])
+                      if token in s["title"].lower() and keeps(s["title"])]
     except Exception as e:
         print(f"    name search failed: {e}", file=sys.stderr)
     tokens = tree_tokens(tree)
@@ -383,11 +502,13 @@ def candidates_for(tree, city=""):
         # entirely; a geosearch hit only counts if its title mentions the tree,
         # its species, or a tree word at all
         nearby = [g["title"] for g in d.get("query", {}).get("geosearch", [])
-                  if any(tok in g["title"].lower() for tok in tokens)]
+                  if any(mentions(g["title"].lower(), tok) for tok in tokens)]
     except Exception as e:
         print(f"    geosearch failed: {e}", file=sys.stderr)
     seen, uniq = set(), []
     for t in named + nearby:  # name hits first: they are the strongest signal
+        if JUNK_TITLE.search(t):
+            continue
         if t not in seen and t.lower().endswith((".jpg", ".jpeg", ".png", ".webp")):
             seen.add(t)
             uniq.append(t)
