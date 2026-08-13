@@ -1041,14 +1041,9 @@ def promote(pages):
         city["score"] = round(float(clicks), 2) if clicks else 0.25
         if was != city["score"]:
             moved.append((city["city"], was, city["score"]))
-    ranked = sorted([c for c in doc["cities"] if c.get("score") is not None],
-                    key=lambda c: (-c["score"], c["city"]))
-    for n, c in enumerate(ranked, 1):
-        c["rank"] = n
-    for c in doc["cities"]:
-        if c.get("score") is None:
-            c["rank"] = None
-    doc["cities"].sort(key=lambda c: (c["rank"] is None, c["rank"] or 0, c["city"]))
+    # Ranks are NOT assigned here: scripts/city_queue.py owns ranking (score
+    # times the ease factor) and the digest workflow runs it immediately after
+    # this. Assigning ranks here too would be the two-copies disease again.
     with open(src, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, ensure_ascii=False, indent=1)
     print("promote: %d cities rescored from measured demand" % len(moved))

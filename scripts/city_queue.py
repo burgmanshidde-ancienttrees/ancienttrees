@@ -148,6 +148,25 @@ def load_source():
         return json.load(fh)
 
 
+# Countries whose register story makes a city cheap to open or deepen, per
+# OPEN_DATA_SURVEY.md's verdicts: a usable national register (Portugal ICNF,
+# Italy MASAF, Japan's giant-tree db, Ireland's heritage trees), Spain's
+# regional patchwork (mostly imported), or a proven municipal pattern
+# (Netherlands: Den Bosch and Amsterdam both ship from city ArcGIS). City-
+# scoped imports (Berlin, Vienna, Paris, Brussels) deliberately do NOT clear
+# their whole country; those cities score through nearby register points.
+REGISTER_COUNTRIES = {"Portugal", "Italy", "Japan", "Ireland", "Spain", "Netherlands"}
+
+
+def ease_for(country, supply):
+    """1.0 to 2.0. Hidde, 2026-08-13: "steden met registers en dus makkelijk
+    aanpak prioriteren... potentie qua toerisme + bewezen google prestatie +
+    gemak in opstellen". The boundary that keeps this honest, from the Vienna-50
+    mistake the same week: ease multiplies the ORDER of work, never the target,
+    because a register measures how easy trees are to find, not how good."""
+    return 1.0 + (0.5 if country in REGISTER_COUNTRIES else 0.0) + 0.5 * min(supply, 25) / 25
+
+
 def enrich(doc, live):
     """Write the measured columns into the source file itself, so the numbers a
     human reads and the numbers a script computes are the same object."""
@@ -160,9 +179,19 @@ def enrich(doc, live):
                      ready=info["ready"], supply=supply,
                      target=target_for(c.get("demand"), c["basis"].startswith("measured")))
         else:
+            supply = 0
             c.update(status="pending", trees=0, photos=0, walks=0,
                      register=0, ready=0, supply=0,
                      target=target_for(c.get("demand"), c["basis"].startswith("measured")))
+        c["ease"] = round(ease_for(c.get("country", ""), supply), 2)
+        c["work_score"] = round((c.get("score") or 0) * c["ease"], 2)
+    ranked = sorted([c for c in doc["cities"] if c.get("score") is not None],
+                    key=lambda c: (-c["work_score"], c["city"]))
+    for n, c in enumerate(ranked, 1):
+        c["rank"] = n
+    for c in doc["cities"]:
+        if c.get("score") is None:
+            c["rank"] = None
     doc["cities"].sort(key=lambda c: (c["rank"] is None, c["rank"] or 0, c["city"]))
     with open(SOURCE, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, ensure_ascii=False, indent=1)
