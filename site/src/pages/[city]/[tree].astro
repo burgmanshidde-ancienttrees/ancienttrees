@@ -4,6 +4,7 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../../lib/trees";
+import { haversineKm } from "../../lib/walks";
 import { speciesCommon } from "../../lib/species";
 import { usablePhoto, imgSrcset, thumbUrl, creditRequired, metaImageUrls, ogImageUrl } from "../../lib/images";
 import { speciesIcon } from "../../lib/species-icons";
@@ -80,16 +81,13 @@ const description = metaFromStory(tree.story ?? "");
 
 // Sorted by haversine distance, matching build_tree_page's own nearby sort
 // (build_site.py:3152-3154).
-function haversineKm(a: { latitude: number; longitude: number }, b: { latitude: number; longitude: number }): number {
-  const toRad = (d: number) => (d * Math.PI) / 180;
-  const [lat1, lon1, lat2, lon2] = [toRad(a.latitude), toRad(a.longitude), toRad(b.latitude), toRad(b.longitude)];
-  const h = Math.sin((lat2 - lat1) / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin((lon2 - lon1) / 2) ** 2;
-  return 6371 * 2 * Math.asin(Math.sqrt(h));
+function kmBetween(a: { latitude: number; longitude: number }, b: { latitude: number; longitude: number }): number {
+  return haversineKm([a.latitude, a.longitude], [b.latitude, b.longitude]);
 }
 const here = { latitude: loc.latitude!, longitude: loc.longitude! };
 const others = allTrees
   .filter((t) => t.id !== tree.id)
-  .sort((a, b) => haversineKm(here, { latitude: a.location.latitude!, longitude: a.location.longitude! }) - haversineKm(here, { latitude: b.location.latitude!, longitude: b.location.longitude! }));
+  .sort((a, b) => kmBetween(here, { latitude: a.location.latitude!, longitude: a.location.longitude! }) - kmBetween(here, { latitude: b.location.latitude!, longitude: b.location.longitude! }));
 const nearby = others.slice(0, 3);
 
 const countryUrl = countryPages.has(country) ? `${BASE_URL}/${countryPages.get(country)}` : null;
