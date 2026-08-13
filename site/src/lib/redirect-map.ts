@@ -46,6 +46,7 @@ const RENAMED_TREE_SLUGS: [string, string, string][] = [
   ["rome", "quercia-del-tasso", "rom_001"],
   ["berlin", "bellevue-oak", "ber_006"],
   ["athens", "trees-of-kaisariani-monastery", "ath_010"],
+  ["prague", "platan-u-kostela-sv-klimenta-nove-mlyny", "prg_017"],
 ];
 
 // A tree pulled outright, no replacement. Mirrors REMOVED_TREE_SLUGS,

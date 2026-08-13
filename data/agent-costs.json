@@ -1247,6 +1247,24 @@
         "note": "session work, not agent-dispatched, so tokens not separately tracked here; found and fixed 8 duplicate-lead entries (4 live double-published trees muc_015-018, 4 stale unresolved leads for muc_019/020/021/022), removed the 4 live duplicates with a redirect, merged their photo-queue candidates into the surviving ids, marked all 8 source leads DONE",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "Munich",
+        "kind": "write",
+        "tokens": 102689,
+        "trees": 11,
+        "note": "11 Munich Naturdenkmal stories, all single-sourced and undated, honesty about the missing date carried in every story per the muc_011-014 pattern; 6 best_time from species knowledge, 5 left empty; 4 species strings normalised to corpus canon; caught and refused a 12th tree (prg_018) as a duplicate of already-live prg_017, same coords and same 2017 girth measurement",
+        "wasted": 0,
+        "brief_wrong": true
+      },
+      {
+        "target": "Munich transport lookup",
+        "kind": "scout",
+        "tokens": 0,
+        "trees": 0,
+        "note": "session work: Overpass API lookups (free, read-only) for nearest transit stop per new Munich tree, to avoid the blank Getting there row that shipped for kyo_016/018 on 2026-08-11",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
