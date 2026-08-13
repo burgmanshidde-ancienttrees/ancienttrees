@@ -33,6 +33,27 @@
   },
   {
    "rank": 2,
+   "city": "Kyoto",
+   "country": "Japan",
+   "slug": "kyoto",
+   "score": 5.0,
+   "demand": 142353,
+   "basis": "measured",
+   "status": "published",
+   "trees": 18,
+   "photos": 8,
+   "walks": 2,
+   "register": 0,
+   "ready": 1,
+   "supply": 1,
+   "target": 20,
+   "impressions_10d": 43,
+   "clicks_10d": 5,
+   "ease": 1.52,
+   "work_score": 7.6
+  },
+  {
+   "rank": 3,
    "city": "Vienna",
    "country": "Austria",
    "slug": "vienna",
@@ -47,13 +68,13 @@
    "ready": 37,
    "supply": 412,
    "target": 20,
-   "impressions_10d": 67,
+   "impressions_10d": 68,
    "clicks_10d": 5,
    "ease": 1.5,
    "work_score": 7.5
   },
   {
-   "rank": 3,
+   "rank": 4,
    "city": "Los Angeles",
    "country": "United States",
    "slug": "los-angeles",
@@ -74,7 +95,7 @@
    "work_score": 7.19
   },
   {
-   "rank": 4,
+   "rank": 5,
    "city": "Portland",
    "country": "United States",
    "slug": "portland",
@@ -91,10 +112,12 @@
    "target": 10,
    "ease": 1.5,
    "work_score": 7.17,
-   "article": "Portland, Oregon"
+   "article": "Portland, Oregon",
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
-   "rank": 5,
+   "rank": 6,
    "city": "Funchal",
    "country": "Portugal",
    "slug": "funchal",
@@ -115,7 +138,7 @@
    "work_score": 6.54
   },
   {
-   "rank": 6,
+   "rank": 7,
    "city": "Sintra",
    "country": "Portugal",
    "slug": "sintra",
@@ -136,7 +159,7 @@
    "work_score": 6.48
   },
   {
-   "rank": 7,
+   "rank": 8,
    "city": "Rio de Janeiro",
    "country": "Brazil",
    "slug": "rio-de-janeiro",
@@ -157,7 +180,7 @@
    "work_score": 6.15
   },
   {
-   "rank": 8,
+   "rank": 9,
    "city": "Miami",
    "country": "United States",
    "slug": "miami",
@@ -178,7 +201,7 @@
    "work_score": 6.13
   },
   {
-   "rank": 9,
+   "rank": 10,
    "city": "Mexico City",
    "country": "Mexico",
    "slug": "mexico-city",
@@ -199,7 +222,7 @@
    "work_score": 6.12
   },
   {
-   "rank": 10,
+   "rank": 11,
    "city": "Shanghai",
    "country": "China",
    "slug": "shanghai",
@@ -220,27 +243,6 @@
    "work_score": 6.1
   },
   {
-   "rank": 11,
-   "city": "Kyoto",
-   "country": "Japan",
-   "slug": "kyoto",
-   "score": 4.0,
-   "demand": 142353,
-   "basis": "measured",
-   "status": "published",
-   "trees": 18,
-   "photos": 8,
-   "walks": 2,
-   "register": 0,
-   "ready": 1,
-   "supply": 1,
-   "target": 20,
-   "impressions_10d": 40,
-   "clicks_10d": 4,
-   "ease": 1.52,
-   "work_score": 6.08
-  },
-  {
    "rank": 12,
    "city": "Nuremberg",
    "country": "Germany",
@@ -257,7 +259,9 @@
    "supply": 39,
    "target": 10,
    "ease": 1.5,
-   "work_score": 6.06
+   "work_score": 6.06,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 13,
@@ -275,7 +279,7 @@
    "ready": 0,
    "supply": 66,
    "target": 20,
-   "impressions_10d": 66,
+   "impressions_10d": 70,
    "clicks_10d": 3,
    "ease": 2.0,
    "work_score": 6.0
@@ -296,7 +300,7 @@
    "ready": 0,
    "supply": 44,
    "target": 20,
-   "impressions_10d": 167,
+   "impressions_10d": 175,
    "clicks_10d": 3,
    "ease": 2.0,
    "work_score": 6.0
@@ -317,7 +321,7 @@
    "ready": 0,
    "supply": 0,
    "target": 30,
-   "impressions_10d": 85,
+   "impressions_10d": 91,
    "clicks_10d": 6,
    "ease": 1.0,
    "work_score": 6.0
@@ -402,7 +406,9 @@
    "supply": 185,
    "target": 10,
    "ease": 1.5,
-   "work_score": 5.87
+   "work_score": 5.87,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 20,
@@ -421,7 +427,9 @@
    "supply": 66,
    "target": 10,
    "ease": 1.5,
-   "work_score": 5.8
+   "work_score": 5.8,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 21,
@@ -461,7 +469,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 5.46
+   "work_score": 5.46,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 23,
@@ -502,7 +512,9 @@
    "target": 10,
    "ease": 1.0,
    "work_score": 4.99,
-   "article": "Austin, Texas"
+   "article": "Austin, Texas",
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 25,
@@ -563,7 +575,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 4.93
+   "work_score": 4.93,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 28,
@@ -603,7 +617,9 @@
    "supply": 1,
    "target": 10,
    "ease": 1.52,
-   "work_score": 4.86
+   "work_score": 4.86,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 30,
@@ -643,7 +659,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 4.8
+   "work_score": 4.8,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 32,
@@ -683,7 +701,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 4.78
+   "work_score": 4.78,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 34,
@@ -702,7 +722,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 4.73
+   "work_score": 4.73,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 35,
@@ -721,7 +743,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 4.55
+   "work_score": 4.55,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 36,
@@ -740,7 +764,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 4.51
+   "work_score": 4.51,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 37,
@@ -759,7 +785,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 4.51
+   "work_score": 4.51,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 38,
@@ -883,7 +911,9 @@
    "supply": 33,
    "target": 10,
    "ease": 1.5,
-   "work_score": 4.23
+   "work_score": 4.23,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 44,
@@ -923,7 +953,9 @@
    "supply": 28,
    "target": 10,
    "ease": 2.0,
-   "work_score": 4.14
+   "work_score": 4.14,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 46,
@@ -942,7 +974,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 4.07
+   "work_score": 4.07,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 47,
@@ -960,7 +994,7 @@
    "ready": 0,
    "supply": 5239,
    "target": 20,
-   "impressions_10d": 176,
+   "impressions_10d": 177,
    "clicks_10d": 2,
    "ease": 2.0,
    "work_score": 4.0
@@ -981,7 +1015,7 @@
    "ready": 31,
    "supply": 214,
    "target": 30,
-   "impressions_10d": 90,
+   "impressions_10d": 94,
    "clicks_10d": 2,
    "ease": 2.0,
    "work_score": 4.0
@@ -1002,7 +1036,7 @@
    "ready": 7,
    "supply": 39,
    "target": 30,
-   "impressions_10d": 131,
+   "impressions_10d": 140,
    "clicks_10d": 2,
    "ease": 2.0,
    "work_score": 4.0
@@ -1025,7 +1059,9 @@
    "target": 10,
    "ease": 1.0,
    "work_score": 3.9,
-   "article": "Charleston, South Carolina"
+   "article": "Charleston, South Carolina",
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 51,
@@ -1065,7 +1101,9 @@
    "supply": 44,
    "target": 10,
    "ease": 2.0,
-   "work_score": 3.88
+   "work_score": 3.88,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 53,
@@ -1084,7 +1122,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 3.85
+   "work_score": 3.85,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 54,
@@ -1146,7 +1186,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.76
+   "work_score": 3.76,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 57,
@@ -1270,7 +1312,9 @@
    "supply": 8,
    "target": 10,
    "ease": 1.66,
-   "work_score": 3.49
+   "work_score": 3.49,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 63,
@@ -1289,7 +1333,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.48
+   "work_score": 3.48,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 64,
@@ -1308,7 +1354,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.48
+   "work_score": 3.48,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 65,
@@ -1348,7 +1396,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.42
+   "work_score": 3.42,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 67,
@@ -1367,7 +1417,9 @@
    "supply": 4,
    "target": 10,
    "ease": 1.58,
-   "work_score": 3.41
+   "work_score": 3.41,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 68,
@@ -1407,7 +1459,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.4
+   "work_score": 3.4,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 70,
@@ -1426,7 +1480,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 3.39
+   "work_score": 3.39,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 71,
@@ -1445,7 +1501,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 3.33
+   "work_score": 3.33,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 72,
@@ -1485,7 +1543,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.31
+   "work_score": 3.31,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 74,
@@ -1504,7 +1564,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.3
+   "work_score": 3.3,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 75,
@@ -1565,7 +1627,9 @@
    "supply": 1,
    "target": 10,
    "ease": 1.52,
-   "work_score": 3.28
+   "work_score": 3.28,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 78,
@@ -1585,7 +1649,9 @@
    "target": 10,
    "ease": 1.0,
    "work_score": 3.2,
-   "article": "Savannah, Georgia"
+   "article": "Savannah, Georgia",
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 79,
@@ -1625,7 +1691,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.18
+   "work_score": 3.18,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 81,
@@ -1644,7 +1712,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.12
+   "work_score": 3.12,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 82,
@@ -1663,7 +1733,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.11
+   "work_score": 3.11,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 83,
@@ -1682,7 +1754,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.1
+   "work_score": 3.1,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 84,
@@ -1722,7 +1796,9 @@
    "supply": 455,
    "target": 10,
    "ease": 1.5,
-   "work_score": 3.06
+   "work_score": 3.06,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 86,
@@ -1741,7 +1817,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.03
+   "work_score": 3.03,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 87,
@@ -1760,7 +1838,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 3.0
+   "work_score": 3.0,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 88,
@@ -1842,7 +1922,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.85
+   "work_score": 2.85,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 92,
@@ -1861,7 +1943,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.84
+   "work_score": 2.84,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 93,
@@ -1880,7 +1964,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.83
+   "work_score": 2.83,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 94,
@@ -1899,7 +1985,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.82
+   "work_score": 2.82,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 95,
@@ -1917,8 +2005,8 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
+   "impressions_10d": 3,
+   "clicks_10d": 1,
    "ease": 1.0,
    "work_score": 2.81
   },
@@ -1961,7 +2049,9 @@
    "supply": 24,
    "target": 10,
    "ease": 1.98,
-   "work_score": 2.79
+   "work_score": 2.79,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 98,
@@ -2002,7 +2092,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.72
+   "work_score": 2.72,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 100,
@@ -2021,7 +2113,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.72
+   "work_score": 2.72,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 101,
@@ -2040,7 +2134,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.68
+   "work_score": 2.68,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 102,
@@ -2059,7 +2155,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.67
+   "work_score": 2.67,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 103,
@@ -2078,7 +2176,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.65
+   "work_score": 2.65,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 104,
@@ -2097,7 +2197,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.62
+   "work_score": 2.62,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 105,
@@ -2116,7 +2218,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.6
+   "work_score": 2.6,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 106,
@@ -2134,8 +2238,8 @@
    "ready": 0,
    "supply": 505,
    "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
+   "impressions_10d": 4,
+   "clicks_10d": 1,
    "ease": 1.5,
    "work_score": 2.58,
    "article": "Central, Hong Kong"
@@ -2157,7 +2261,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 2.52
+   "work_score": 2.52,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 108,
@@ -2176,7 +2282,9 @@
    "supply": 17,
    "target": 10,
    "ease": 1.84,
-   "work_score": 2.43
+   "work_score": 2.43,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 109,
@@ -2195,7 +2303,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.37
+   "work_score": 2.37,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 110,
@@ -2214,7 +2324,9 @@
    "supply": 5,
    "target": 10,
    "ease": 1.6,
-   "work_score": 2.34
+   "work_score": 2.34,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 111,
@@ -2233,7 +2345,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.32
+   "work_score": 2.32,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 112,
@@ -2252,7 +2366,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.3
+   "work_score": 2.3,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 113,
@@ -2271,7 +2387,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.27
+   "work_score": 2.27,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 114,
@@ -2290,7 +2408,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.19
+   "work_score": 2.19,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 115,
@@ -2309,7 +2429,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 2.16
+   "work_score": 2.16,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 116,
@@ -2328,7 +2450,9 @@
    "supply": 9,
    "target": 10,
    "ease": 1.68,
-   "work_score": 2.15
+   "work_score": 2.15,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 117,
@@ -2347,7 +2471,9 @@
    "supply": 25,
    "target": 10,
    "ease": 2.0,
-   "work_score": 2.12
+   "work_score": 2.12,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 118,
@@ -2366,7 +2492,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.11
+   "work_score": 2.11,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 119,
@@ -2385,7 +2513,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 2.08
+   "work_score": 2.08,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 120,
@@ -2404,7 +2534,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.07
+   "work_score": 2.07,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 121,
@@ -2423,7 +2555,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.07
+   "work_score": 2.07,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 122,
@@ -2484,7 +2618,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 2.01
+   "work_score": 2.01,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 125,
@@ -2503,7 +2639,9 @@
    "supply": 3,
    "target": 10,
    "ease": 1.56,
-   "work_score": 2.01
+   "work_score": 2.01,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 126,
@@ -2542,8 +2680,8 @@
    "ready": 3,
    "supply": 132,
    "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
+   "impressions_10d": 3,
+   "clicks_10d": 2,
    "ease": 1.5,
    "work_score": 1.97
   },
@@ -2564,7 +2702,9 @@
    "supply": 1,
    "target": 10,
    "ease": 1.52,
-   "work_score": 1.96
+   "work_score": 1.96,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 129,
@@ -2583,7 +2723,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 1.95
+   "work_score": 1.95,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 130,
@@ -2602,7 +2744,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 1.92
+   "work_score": 1.92,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 131,
@@ -2621,7 +2765,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.9
+   "work_score": 1.9,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 132,
@@ -2640,7 +2786,9 @@
    "supply": 1,
    "target": 10,
    "ease": 1.02,
-   "work_score": 1.85
+   "work_score": 1.85,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 133,
@@ -2659,7 +2807,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.84
+   "work_score": 1.84,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 134,
@@ -2678,7 +2828,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.82
+   "work_score": 1.82,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 135,
@@ -2739,7 +2891,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.79
+   "work_score": 1.79,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 138,
@@ -2779,7 +2933,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.77
+   "work_score": 1.77,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 140,
@@ -2799,7 +2955,9 @@
    "target": 10,
    "ease": 1.0,
    "work_score": 1.75,
-   "article": "İzmir"
+   "article": "İzmir",
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 141,
@@ -2817,7 +2975,7 @@
    "ready": 0,
    "supply": 12,
    "target": 20,
-   "impressions_10d": 83,
+   "impressions_10d": 57,
    "clicks_10d": 1,
    "ease": 1.74,
    "work_score": 1.74
@@ -2839,7 +2997,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.73
+   "work_score": 1.73,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 143,
@@ -2858,7 +3018,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.71
+   "work_score": 1.71,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 144,
@@ -2877,7 +3039,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.71
+   "work_score": 1.71,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 145,
@@ -2896,7 +3060,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.69
+   "work_score": 1.69,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 146,
@@ -2936,7 +3102,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.66
+   "work_score": 1.66,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 148,
@@ -2955,7 +3123,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.66
+   "work_score": 1.66,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 149,
@@ -2974,7 +3144,9 @@
    "supply": 7,
    "target": 10,
    "ease": 1.64,
-   "work_score": 1.66
+   "work_score": 1.66,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 150,
@@ -2993,7 +3165,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.64
+   "work_score": 1.64,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 151,
@@ -3012,10 +3186,33 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.64
+   "work_score": 1.64,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 152,
+   "city": "Tokyo",
+   "country": "Japan",
+   "slug": "tokyo",
+   "score": 1.0,
+   "demand": 394702,
+   "basis": "measured",
+   "status": "published",
+   "trees": 10,
+   "photos": 8,
+   "walks": 0,
+   "register": 7,
+   "ready": 0,
+   "supply": 7,
+   "target": 30,
+   "impressions_10d": 24,
+   "clicks_10d": 1,
+   "ease": 1.64,
+   "work_score": 1.64
+  },
+  {
+   "rank": 153,
    "city": "Cartagena",
    "country": "Colombia",
    "slug": "cartagena",
@@ -3031,10 +3228,12 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.63
+   "work_score": 1.63,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
-   "rank": 153,
+   "rank": 154,
    "city": "Luxembourg City",
    "country": "Luxembourg",
    "slug": "luxembourg-city",
@@ -3050,28 +3249,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.62
-  },
-  {
-   "rank": 154,
-   "city": "Tokyo",
-   "country": "Japan",
-   "slug": "tokyo",
-   "score": 0.99,
-   "demand": 394702,
-   "basis": "published, never ranked",
-   "status": "published",
-   "trees": 10,
-   "photos": 8,
-   "walks": 0,
-   "register": 7,
-   "ready": 0,
-   "supply": 7,
-   "target": 10,
+   "work_score": 1.62,
    "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.64,
-   "work_score": 1.62
+   "clicks_10d": 0
   },
   {
    "rank": 155,
@@ -3090,7 +3270,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.61
+   "work_score": 1.61,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 156,
@@ -3109,7 +3291,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.61
+   "work_score": 1.61,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 157,
@@ -3128,7 +3312,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.6
+   "work_score": 1.6,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 158,
@@ -3147,7 +3333,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.6
+   "work_score": 1.6,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 159,
@@ -3166,7 +3354,9 @@
    "supply": 12,
    "target": 10,
    "ease": 1.24,
-   "work_score": 1.6
+   "work_score": 1.6,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 160,
@@ -3185,7 +3375,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.59
+   "work_score": 1.59,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 161,
@@ -3224,7 +3416,7 @@
    "ready": 3,
    "supply": 198,
    "target": 30,
-   "impressions_10d": 32,
+   "impressions_10d": 34,
    "clicks_10d": 1,
    "ease": 1.5,
    "work_score": 1.5
@@ -3245,7 +3437,7 @@
    "ready": 12,
    "supply": 448,
    "target": 20,
-   "impressions_10d": 48,
+   "impressions_10d": 51,
    "clicks_10d": 1,
    "ease": 1.5,
    "work_score": 1.5
@@ -3266,7 +3458,7 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 43,
+   "impressions_10d": 47,
    "clicks_10d": 1,
    "ease": 1.5,
    "work_score": 1.5
@@ -3288,7 +3480,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 1.5
+   "work_score": 1.5,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 166,
@@ -3307,7 +3501,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.47
+   "work_score": 1.47,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 167,
@@ -3347,7 +3543,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.42
+   "work_score": 1.42,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 169,
@@ -3387,7 +3585,9 @@
    "supply": 2,
    "target": 10,
    "ease": 1.04,
-   "work_score": 1.35
+   "work_score": 1.35,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 171,
@@ -3406,7 +3606,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.34
+   "work_score": 1.34,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 172,
@@ -3425,7 +3627,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.33
+   "work_score": 1.33,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 173,
@@ -3444,7 +3648,9 @@
    "supply": 5,
    "target": 10,
    "ease": 1.6,
-   "work_score": 1.33
+   "work_score": 1.33,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 174,
@@ -3463,7 +3669,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.32
+   "work_score": 1.32,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 175,
@@ -3503,7 +3711,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 1.29
+   "work_score": 1.29,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 177,
@@ -3523,7 +3733,9 @@
    "target": 10,
    "ease": 1.5,
    "work_score": 1.29,
-   "article": "Lagos, Portugal"
+   "article": "Lagos, Portugal",
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 178,
@@ -3563,7 +3775,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.22
+   "work_score": 1.22,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 180,
@@ -3582,7 +3796,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 1.22
+   "work_score": 1.22,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 181,
@@ -3600,7 +3816,7 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 0,
+   "impressions_10d": 2,
    "clicks_10d": 0,
    "ease": 1.0,
    "work_score": 1.21
@@ -3622,7 +3838,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.18
+   "work_score": 1.18,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 183,
@@ -3641,7 +3859,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.18
+   "work_score": 1.18,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 184,
@@ -3681,7 +3901,9 @@
    "supply": 1,
    "target": 10,
    "ease": 1.52,
-   "work_score": 1.17
+   "work_score": 1.17,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 186,
@@ -3700,7 +3922,9 @@
    "supply": 8,
    "target": 10,
    "ease": 1.16,
-   "work_score": 1.16
+   "work_score": 1.16,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 187,
@@ -3719,7 +3943,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 1.14
+   "work_score": 1.14,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 188,
@@ -3738,7 +3964,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.14
+   "work_score": 1.14,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 189,
@@ -3757,7 +3985,9 @@
    "supply": 7,
    "target": 10,
    "ease": 1.64,
-   "work_score": 1.13
+   "work_score": 1.13,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 190,
@@ -3776,7 +4006,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.09
+   "work_score": 1.09,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 191,
@@ -3795,7 +4027,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.09
+   "work_score": 1.09,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 192,
@@ -3814,7 +4048,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.09
+   "work_score": 1.09,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 193,
@@ -3833,7 +4069,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 1.08
+   "work_score": 1.08,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 194,
@@ -3915,7 +4153,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 1.02
+   "work_score": 1.02,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 198,
@@ -3954,7 +4194,7 @@
    "ready": 0,
    "supply": 0,
    "target": 20,
-   "impressions_10d": 28,
+   "impressions_10d": 31,
    "clicks_10d": 1,
    "ease": 1.0,
    "work_score": 1.0
@@ -4040,7 +4280,9 @@
    "target": 10,
    "ease": 1.52,
    "work_score": 0.93,
-   "article": "Naha"
+   "article": "Naha",
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 204,
@@ -4080,7 +4322,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.92
+   "work_score": 0.92,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 206,
@@ -4099,7 +4343,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.9
+   "work_score": 0.9,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 207,
@@ -4139,7 +4385,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.87
+   "work_score": 0.87,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 209,
@@ -4158,7 +4406,9 @@
    "supply": 10,
    "target": 10,
    "ease": 1.2,
-   "work_score": 0.86
+   "work_score": 0.86,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 210,
@@ -4177,7 +4427,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.85
+   "work_score": 0.85,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 211,
@@ -4239,7 +4491,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.78
+   "work_score": 0.78,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 214,
@@ -4258,7 +4512,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.76
+   "work_score": 0.76,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 215,
@@ -4277,7 +4533,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.76
+   "work_score": 0.76,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 216,
@@ -4295,7 +4553,7 @@
    "ready": 33,
    "supply": 84,
    "target": 10,
-   "impressions_10d": 0,
+   "impressions_10d": 4,
    "clicks_10d": 0,
    "ease": 2.0,
    "work_score": 0.74
@@ -4359,7 +4617,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.72
+   "work_score": 0.72,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 220,
@@ -4378,7 +4638,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.72
+   "work_score": 0.72,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 221,
@@ -4397,7 +4659,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.71
+   "work_score": 0.71,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 222,
@@ -4416,7 +4680,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 0.69
+   "work_score": 0.69,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 223,
@@ -4498,7 +4764,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.62
+   "work_score": 0.62,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 227,
@@ -4517,7 +4785,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.61
+   "work_score": 0.61,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 228,
@@ -4557,7 +4827,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.6
+   "work_score": 0.6,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 230,
@@ -4576,7 +4848,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 0.58
+   "work_score": 0.58,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 231,
@@ -4594,8 +4868,8 @@
    "ready": 0,
    "supply": 43,
    "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
+   "impressions_10d": 2,
+   "clicks_10d": 1,
    "ease": 2.0,
    "work_score": 0.58
   },
@@ -4616,7 +4890,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 0.57
+   "work_score": 0.57,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 233,
@@ -4634,8 +4910,8 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
+   "impressions_10d": 9,
+   "clicks_10d": 1,
    "ease": 1.0,
    "work_score": 0.56
   },
@@ -4655,7 +4931,7 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 0,
+   "impressions_10d": 5,
    "clicks_10d": 0,
    "ease": 1.0,
    "work_score": 0.55
@@ -4677,7 +4953,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.52
+   "work_score": 0.52,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 236,
@@ -4759,7 +5037,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 0.46
+   "work_score": 0.46,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 240,
@@ -4834,7 +5114,7 @@
    "basis": "measured",
    "status": "published",
    "trees": 12,
-   "photos": 8,
+   "photos": 7,
    "walks": 2,
    "register": 9,
    "ready": 1,
@@ -4925,7 +5205,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.39
+   "work_score": 0.39,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 248,
@@ -4943,7 +5225,7 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 0,
+   "impressions_10d": 3,
    "clicks_10d": 0,
    "ease": 1.5,
    "work_score": 0.38
@@ -5111,7 +5393,7 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 0,
+   "impressions_10d": 1,
    "clicks_10d": 0,
    "ease": 1.0,
    "work_score": 0.34
@@ -5132,8 +5414,8 @@
    "ready": 11,
    "supply": 14,
    "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
+   "impressions_10d": 7,
+   "clicks_10d": 1,
    "ease": 1.78,
    "work_score": 0.34,
    "article": "Córdoba, Spain"
@@ -5155,7 +5437,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.33
+   "work_score": 0.33,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 259,
@@ -5257,8 +5541,8 @@
    "ready": 0,
    "supply": 3,
    "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
+   "impressions_10d": 2,
+   "clicks_10d": 1,
    "ease": 1.56,
    "work_score": 0.3
   },
@@ -5363,7 +5647,7 @@
    "ready": 0,
    "supply": 0,
    "target": 20,
-   "impressions_10d": 44,
+   "impressions_10d": 45,
    "clicks_10d": 0,
    "ease": 1.0,
    "work_score": 0.25
@@ -5384,7 +5668,7 @@
    "ready": 0,
    "supply": 0,
    "target": 20,
-   "impressions_10d": 44,
+   "impressions_10d": 45,
    "clicks_10d": 0,
    "ease": 1.0,
    "work_score": 0.25
@@ -5405,7 +5689,7 @@
    "ready": 0,
    "supply": 0,
    "target": 20,
-   "impressions_10d": 11,
+   "impressions_10d": 16,
    "clicks_10d": 0,
    "ease": 1.0,
    "work_score": 0.25
@@ -5426,7 +5710,7 @@
    "ready": 0,
    "supply": 0,
    "target": 30,
-   "impressions_10d": 38,
+   "impressions_10d": 44,
    "clicks_10d": 0,
    "ease": 1.0,
    "work_score": 0.25,
@@ -5448,7 +5732,7 @@
    "ready": 0,
    "supply": 0,
    "target": 20,
-   "impressions_10d": 23,
+   "impressions_10d": 25,
    "clicks_10d": 0,
    "ease": 1.0,
    "work_score": 0.25
@@ -5490,7 +5774,7 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 29,
+   "impressions_10d": 32,
    "clicks_10d": 0,
    "ease": 1.0,
    "work_score": 0.25,
@@ -5513,7 +5797,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 0.24
+   "work_score": 0.24,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 276,
@@ -5552,8 +5838,8 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
+   "impressions_10d": 6,
+   "clicks_10d": 1,
    "ease": 1.5,
    "work_score": 0.18
   },
@@ -5594,7 +5880,7 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 0,
+   "impressions_10d": 1,
    "clicks_10d": 0,
    "ease": 1.5,
    "work_score": 0.15
@@ -5615,7 +5901,7 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 0,
+   "impressions_10d": 4,
    "clicks_10d": 0,
    "ease": 1.5,
    "work_score": 0.14
@@ -5678,8 +5964,8 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
+   "impressions_10d": 4,
+   "clicks_10d": 2,
    "ease": 1.0,
    "work_score": 0.12
   },
@@ -5699,8 +5985,8 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
+   "impressions_10d": 5,
+   "clicks_10d": 1,
    "ease": 1.5,
    "work_score": 0.12
   },
@@ -5783,8 +6069,8 @@
    "ready": 0,
    "supply": 0,
    "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
+   "impressions_10d": 2,
+   "clicks_10d": 1,
    "ease": 1.5,
    "work_score": 0.09
   },
@@ -5805,7 +6091,9 @@
    "supply": 0,
    "target": 10,
    "ease": 1.5,
-   "work_score": 0.08
+   "work_score": 0.08,
+   "impressions_10d": 0,
+   "clicks_10d": 0
   },
   {
    "rank": 290,
@@ -5886,7 +6174,7 @@
    "ready": 11,
    "supply": 40,
    "target": 10,
-   "impressions_10d": 0,
+   "impressions_10d": 3,
    "clicks_10d": 0,
    "ease": 2.0,
    "work_score": 0.0

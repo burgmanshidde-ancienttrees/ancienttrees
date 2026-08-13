@@ -40,7 +40,7 @@ standing rule, 2026-07-27).
 - Accounts:    3 total, newest 5 days ago
 
 **The funnel, as rates**
-- Seen to clicked: 2.3% (89 of 3906) vs 2.3% the fortnight before
+- Seen to clicked: 2.2% (91 of 4078) vs 2.3% the fortnight before
 - Pages per visit: 1.5 (217 visits, 325 pageviews since 2026-08-08)
 - Visits that did something: 0.0% (0 actions on 217 visits)
 
@@ -59,51 +59,53 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | 08-09 | 6 | 305 | 2.0% | 11.8 |
 | 08-10 | 16 | 394 | 4.1% | 13.5 |
 | 08-11 | 8 | 415 | 1.9% | 12.9 |
-| 08-12 | 7 | 330 | 2.1% | 16.1 |
-| **window** | **66** | **2873** | **2.3%** | |
+| 08-12 | 9 | 434 | 2.1% | 19.2 |
+| 08-13 | 0 | 68 | 0.0% | 9.1 |
+| **window** | **68** | **3045** | **2.2%** | |
 - Top queries (10d): oldest tree in lisbon (i3, p10); "oldest of its species" ginkgo park (i2, p6); 1800 trees (i1, p19); 400 year old tree (i1, p18); a tree in naples (i3, p9)
-- Top pages (10d): / (c4/i31); /app (c4/i14); /prague (c4/i72); /kyoto (c3/i38); /porto (c3/i24)
+- Top pages (10d): / (c4/i31); /app (c4/i14); /kyoto (c4/i41); /prague (c4/i78); /porto (c3/i24)
 - Content lead: 'belgian tree' has no matching page (i6, p58)
 
 **Depth is allowed on these cities** (10+ impressions in the window; photos, pins and best_time go here and nowhere else):
 
 | City | Clicks | Impressions |
 |---|---:|---:|
-| amsterdam | 2 | 176 |
-| palermo | 3 | 167 |
-| rome | 2 | 131 |
-| barcelona | 2 | 90 |
-| prague | 6 | 85 |
-| dublin | 1 | 83 |
-| vienna | 5 | 67 |
-| lisbon | 3 | 66 |
+| amsterdam | 2 | 177 |
+| palermo | 3 | 175 |
+| rome | 2 | 140 |
+| barcelona | 2 | 94 |
+| prague | 6 | 91 |
+| lisbon | 3 | 70 |
+| vienna | 5 | 68 |
 | munich | 2 | 59 |
+| dublin | 1 | 57 |
 | bologna | 0 | 55 |
-| brussels | 1 | 48 |
-| antwerp | 0 | 44 |
-| athens | 0 | 44 |
-| cadiz | 1 | 43 |
-| kyoto | 4 | 40 |
+| brussels | 1 | 51 |
+| cadiz | 1 | 47 |
+| antwerp | 0 | 45 |
+| athens | 0 | 45 |
+| boston | 0 | 44 |
+| kyoto | 5 | 43 |
 | nice | 3 | 40 |
-| boston | 0 | 38 |
-| berlin | 1 | 32 |
-| cambridge | 0 | 29 |
-| lyon | 1 | 28 |
+| berlin | 1 | 34 |
+| cambridge | 0 | 32 |
+| lyon | 1 | 31 |
 | seville | 1 | 27 |
 | porto | 4 | 26 |
-| bristol | 0 | 23 |
+| bristol | 0 | 25 |
+| tokyo | 1 | 24 |
 | budapest | 0 | 22 |
 | sintra | 4 | 20 |
+| belgrade | 0 | 16 |
 | dubrovnik | 1 | 11 |
-| belgrade | 0 | 11 |
-- Seen, not clicked: /rome (c0/i48, 0.0%) for trees in rome (i15, p22); rome tree (i8, p56); trees of rome italy (i3, p48)
+- Seen, not clicked: /rome (c0/i49, 0.0%) for trees in rome (i16, p24); rome tree (i8, p56); trees of rome italy (i3, p48)
 - Seen, not clicked: /malaga (c0/i21, 0.0%) for árboles históricos de málaga (i20, p74); malaga tree (i1, p4)
 
 **Who they are**
-Audience, 28 days of search (116 clicks, 5122 impressions):
-- Countries: usa c18/i1095; gbr c11/i639; deu c10/i216; nld c8/i269; prt c8/i138
-- Devices: MOBILE c79/i2829; DESKTOP c37/i2246; TABLET c0/i47
-- Landing pages: /lisbon c8/i172; / c6/i61; /porto c5/i36; /prague c5/i113; /vienna c5/i108
+Audience, 28 days of search (118 clicks, 5294 impressions):
+- Countries: usa c20/i1148; gbr c11/i648; deu c10/i218; nld c8/i275; prt c8/i141
+- Devices: MOBILE c81/i2894; DESKTOP c37/i2350; TABLET c0/i50
+- Landing pages: /lisbon c8/i176; / c6/i61; /kyoto c5/i95; /porto c5/i36; /prague c5/i119
 
 Web Analytics (beacon, real browsers, cookieless):
 Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.
@@ -129,7 +131,7 @@ Links: external referrers (a link somebody actually clicked): zscaler-blocked.dp
 
 Machine: 7 chain attempts yesterday, 7 got real work time (~92 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
 
-**Conclusion:** Search is the only channel with real data and it is still small: 7 clicks and 330 impressions on Google's freshest day (day before: c8/i415). Directional at best; no strategic conclusions from these volumes.
+**Conclusion:** Search is the only channel with real data and it is still small: 0 clicks and 68 impressions on Google's freshest day (day before: c9/i434). Directional at best; no strategic conclusions from these volumes.
 
 ## 2026-08-11 (previous UTC day)
 
