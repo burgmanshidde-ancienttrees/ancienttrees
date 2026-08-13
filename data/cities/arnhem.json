@@ -48,15 +48,17 @@
       "access": "Free, public park, open daily",
       "transport": "Gulden Bodem park, north Arnhem; about a 30 minute walk from Arnhem Centraal station, or a short bus ride toward Alteveer",
       "best_time": {
-        "months": [7],
+        "months": [
+          7
+        ],
         "label": "July, when the chestnuts hang cream-coloured catkins the length of a hand",
         "kind": "catkins"
       },
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Imposant_Chessnuttrees_%22Adam_and_Eve%22_near_Castle_Zypendaal_-_panoramio.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "Henk Monster, via Wikimedia Commons",
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed"
