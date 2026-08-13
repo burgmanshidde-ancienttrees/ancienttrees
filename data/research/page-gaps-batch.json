@@ -1,1614 +1,1998 @@
 {
  "species": [
   {
-   "species": "Himalayan Cedar (Cedrus deodara)",
-   "slug": "himalayan-cedar",
-   "count": 18,
+   "species": "Large-leaved Lime (Tilia platyphyllos)",
+   "slug": "large-leaved-lime",
+   "count": 7,
    "cities": [
-    "Barcelona",
-    "Bergamo",
-    "Bologna",
-    "Como",
-    "Cordoba",
-    "Florence",
-    "Guimaraes",
-    "Madrid",
-    "Perugia",
-    "Porto",
-    "Rome",
-    "Trento",
-    "Verona"
-   ],
-   "examples": [
-    {
-     "city": "Bergamo",
-     "name": "The Giant Cedar of Pedrengo",
-     "age": "planted late 19th century, roughly 130 years",
-     "story_opening": "This cedar has its own lightning conductor. It stands alone in the middle of the lawn in a small public park i"
-    },
-    {
-     "city": "Bergamo",
-     "name": "The Himalayan Cedar of Villa Piccinelli",
-     "age": "",
-     "story_opening": "The merchants who owned this garden brought plants back from Asia, Africa and the Americas, and built a Morocc"
-    },
-    {
-     "city": "Guimaraes",
-     "name": "The Himalayan Cedars of Atouguia Cemetery",
-     "age": "about 115 years (one of the three dated; see notes)",
-     "story_opening": "Three Himalayan cedars stand at the gates of Guimaraes' municipal cemetery, tall enough that they read as a la"
-    },
-    {
-     "city": "Florence",
-     "name": "The Cedar Above Pegasus",
-     "age": "age undocumented, likely under 160 years",
-     "story_opening": "Florence's public symbol has stood next to this cedar since 1865, and almost nobody visiting climbs high enoug"
-    },
-    {
-     "city": "Florence",
-     "name": "The Himalayan Cedar of the Semplici",
-     "age": "at least 146 years, on the garden's books from 1880",
-     "story_opening": "The Himalayan cedar only reached Europe in 1822, and this one was on the garden's books by 1880, which makes i"
-    },
-    {
-     "city": "Rome",
-     "name": "The Himalayan Cedar of the German Institute",
-     "age": "100+ years, undocumented",
-     "story_opening": "Two official registers disagree about this trunk by nearly two metres. Italy's national list gives it as five "
-    }
-   ]
-  },
-  {
-   "species": "Horse Chestnut (Aesculus hippocastanum)",
-   "slug": "horse-chestnut",
-   "count": 17,
-   "cities": [
-    "Barcelona",
+    "Antwerp",
     "Brussels",
-    "Den Bosch",
-    "Geneva",
-    "Granada",
-    "Lyon",
     "Munich",
-    "Nijmegen",
     "Nuremberg",
-    "Paris",
-    "Porto",
-    "Rome",
-    "The Hague",
-    "Trieste",
+    "Prague",
     "Vienna"
    ],
    "examples": [
     {
      "city": "Nuremberg",
-     "name": "The Chestnut of Kontumazgarten",
-     "age": "",
-     "story_opening": "This park was a quarantine station. Kontumaz is the old German word for it, and the ground here is where Nurem"
+     "name": "The Old Lime of Stadtpark",
+     "age": "around 400 years",
+     "story_opening": "The sign at the foot of this tree and the botanists who have looked at its leaves do not agree on what it is. The sign says Winter"
     },
     {
      "city": "Vienna",
-     "name": "The Chestnut Avenue of the Hauptallee",
-     "age": "about 186 years, documented planted in 1840",
-     "story_opening": "Vienna's grandest avenue is older than the trees that define it by two centuries. The Hauptallee was cut throu"
+     "name": "The Lime of the Schönbornpark",
+     "age": "187 years, planted 1839 by the city's tree register",
+     "story_opening": "Vienna's tree registry lists nearly nine hundred trees in the eighth district and gives this one a girth of 489 centimetres, which"
     },
     {
-     "city": "Trieste",
-     "name": "The Twin Horse Chestnuts of the Giardino Pubblico",
-     "age": "about 170 years, planted with the garden from 1854",
-     "story_opening": "Two horse chestnuts stand thirty metres apart in this garden and the register measured both at exactly 335 cen"
+     "city": "Antwerp",
+     "name": "The Summer Linden of Rivierenhof",
+     "age": "unknown, protected since 2010",
+     "story_opening": "A single linden tree earned government protection in 2010 not for its species, which is common, but for exactly where it stands: i"
     },
     {
-     "city": "Den Bosch",
-     "name": "The Horse Chestnut of Casinotuin",
-     "age": "roughly 100 years",
-     "story_opening": "Five horse chestnuts stand within sixty metres of each other along this stretch of the Casinotuin, and this is"
+     "city": "Prague",
+     "name": "Masaryk's Lime",
+     "age": "estimated over 200 years",
+     "story_opening": "A president picked a tree, and an architect built a terrace around it. Tomas Garrigue Masaryk, installed at Prague Castle from 191"
     },
     {
-     "city": "Geneva",
-     "name": "The Official Chestnut Tree",
-     "age": "about 11 years (the tradition dates to 1818)",
-     "story_opening": "Geneva has kept an unbroken written record of a chestnut tree's first spring leaf since 1818, one of the oldes"
+     "city": "Brussels",
+     "name": "The Kasterlinde",
+     "age": "200+ years",
+     "story_opening": "A single lime tree marks the exact spot where three Brussels communes meet, and it has been doing the job since at least 1777, whe"
     },
     {
-     "city": "Lyon",
-     "name": "The Giant Chestnut of Parc de la Garde",
-     "age": "undated, called a giant specimen",
-     "story_opening": "Most visitors to this park come for the wildness rather than any single tree, but the chestnut at its centre i"
+     "city": "Munich",
+     "name": "The Leaning Lime of the Badenburger See",
+     "age": "undated in the city register; a tree-recorders' database estimates roughly 180 years",
+     "story_opening": "Munich protects this lime, in law, for being strange looking. The reason recorded in the city's natural monument ordinance is biza"
     }
    ]
   },
   {
-   "species": "Mediterranean Hackberry (Celtis australis)",
-   "slug": "mediterranean-hackberry",
-   "count": 16,
+   "species": "Bald Cypress (Taxodium distichum)",
+   "slug": "bald-cypress",
+   "count": 7,
    "cities": [
-    "Istanbul",
-    "Lisbon",
+    "Bergamo",
+    "Berlin",
+    "Dublin",
+    "Lyon",
     "Madrid",
-    "Malaga",
     "Milan",
-    "Munich",
-    "Perugia",
-    "Rome",
-    "Seville",
-    "Toulouse",
-    "Turin",
-    "Venice",
-    "Zaragoza"
+    "Seville"
+   ],
+   "examples": [
+    {
+     "city": "Bergamo",
+     "name": "The Bald Cypresses of Parco Marenzi",
+     "age": "over 200 years",
+     "story_opening": "These two are American swamp trees, and they have been standing in a walled Bergamo garden for more than two centuries. Bald cypre"
+    },
+    {
+     "city": "Milan",
+     "name": "Il Sacerdote",
+     "age": "approximately 156 years",
+     "story_opening": "For years, gardeners in Porta Venezia's park called this tree a metasequoia and had the genus wrong before anyone checked properly"
+    },
+    {
+     "city": "Lyon",
+     "name": "The Bald Cypress of the Tête d'Or",
+     "age": "undated, mature specimen",
+     "story_opening": "This tree grows as though it remembers the Louisiana wetlands its species comes from, even landlocked in a Lyon park more than eig"
+    },
+    {
+     "city": "Seville",
+     "name": "The Cypress of the Glorieta de Bécquer",
+     "age": "160 years",
+     "story_opening": "Seville built a monument to its most famous Romantic poet around a tree that had nothing to do with him. The bald cypress at the c"
+    },
+    {
+     "city": "Dublin",
+     "name": "The Glasnevin Swamp Cypress",
+     "age": "roughly 120-165 years",
+     "story_opening": "A tree built for Louisiana swampland grows in a Dublin botanic garden, and it still remembers where it came from. Taxodium distich"
+    },
+    {
+     "city": "Berlin",
+     "name": "The Swamp Cypress of Charlottenburg",
+     "age": "200 years",
+     "story_opening": "A swamp tree from the American South has spent two centuries in a Prussian palace garden. This bald cypress, native to the flooded"
+    }
+   ]
+  },
+  {
+   "species": "Sweet Chestnut (Castanea sativa)",
+   "slug": "sweet-chestnut",
+   "count": 6,
+   "cities": [
+    "Arnhem",
+    "Bristol",
+    "Edinburgh",
+    "London",
+    "Maastricht",
+    "Trento"
+   ],
+   "examples": [
+    {
+     "city": "Bristol",
+     "name": "The Sweet Chestnut of Ashton Park",
+     "age": "600 years",
+     "story_opening": "Sweet Chestnuts spiral as they age, their bark twisting around the trunk in a pattern that gets more pronounced with every passing"
+    },
+    {
+     "city": "London",
+     "name": "The Sweet Chestnut of Greenwich Park",
+     "age": "365 years",
+     "story_opening": "Charles II wanted Versailles and settled for Greenwich instead. After taking the throne in 1660, he ordered grand formal avenues c"
+    },
+    {
+     "city": "Maastricht",
+     "name": "The Sweet Chestnut of Molenweg",
+     "age": "disputed, likely 250-275 years",
+     "story_opening": "Nobody can say exactly when this tree was planted, and the people who study it are refreshingly honest about that. Standing beside"
+    },
+    {
+     "city": "Edinburgh",
+     "name": "The Sweet Chestnut of the Botanics",
+     "age": "200+ years",
+     "story_opening": "The oldest tree in Edinburgh's Royal Botanic Garden was already growing here before the garden was. When the Botanics relocated to"
+    },
+    {
+     "city": "Arnhem",
+     "name": "De Poortwachters",
+     "age": "~370 years",
+     "story_opening": "Locals call them Hans, Gretel and the Witch, and Arnhem's storytellers like to credit Karel van Egmond, the last independent Duke "
+    },
+    {
+     "city": "Trento",
+     "name": "The Chestnut of Sardagna",
+     "age": "",
+     "story_opening": "Somewhere in this chestnut grove above Trento stands a tree that stopped a runaway bus in January 1949. Local accounts name it, al"
+    }
+   ]
+  },
+  {
+   "species": "Northern Red Oak (Quercus rubra)",
+   "slug": "northern-red-oak",
+   "count": 6,
+   "cities": [
+    "Baarn",
+    "Brussels",
+    "Milan",
+    "New York",
+    "Prague"
    ],
    "examples": [
     {
      "city": "Milan",
-     "name": "Bagolaro dei Giardini Montanelli",
-     "age": "approximately 164 years",
-     "story_opening": "Milan calls this species spaccasassi, the stone-splitter, for roots strong enough to crack paving, and this ha"
+     "name": "La Quercia Rossa di Piazza XXIV Maggio",
+     "age": "approximately 131 years",
+     "story_opening": "This oak was already growing in an American nursery when Milan was still deciding what to do with the site of one of its six histo"
     },
     {
-     "city": "Malaga",
-     "name": "The Hackberry of the Cypress Cottage",
-     "age": "approximately 200 years",
-     "story_opening": "Hackberry wood was cheap and ordinary enough that for centuries nobody thought to plant it for looks: it went "
+     "city": "Milan",
+     "name": "La Quercia Rossa del Trotter",
+     "age": "approximately 85 years",
+     "story_opening": "This oak grows on a horse-racing track that stopped racing a century ago and became a school instead. Parco Trotter takes its name"
     },
     {
-     "city": "Istanbul",
-     "name": "The Gülhane Nettle Tree",
-     "age": "roughly 265 years",
-     "story_opening": "Istanbul protects this tree by name, which is unusual for a species most cities treat as background. The Medit"
+     "city": "Prague",
+     "name": "The Red Oak of Shooters' Island",
+     "age": "estimated 125-140 years",
+     "story_opening": "An American tree turns the best colour in central Prague, on an island where Bohemian archers used to practise. Strelecky ostrov, "
     },
     {
-     "city": "Rome",
-     "name": "The Hackberries of the Aranciera",
-     "age": "locally described as dating from the 1600s, no dendrological confirmation",
-     "story_opening": "A hackberry in the holm oak wood behind the Museo Carlo Bilotti carries a nickname rather than a certificate: "
+     "city": "Baarn",
+     "name": "The American Oak of the Pekingtuin",
+     "age": "roughly 175 years",
+     "story_opening": "In October 2021 the municipality of Baarn asked its residents what to write on a ring around a tree. Around twenty people sent som"
     },
     {
-     "city": "Rome",
-     "name": "The Hackberry of the Parco degli Scipioni",
-     "age": "roughly 100 years",
-     "story_opening": "Two official surveys measured this hackberry and agreed on its waist to within a centimetre: four metres aroun"
+     "city": "Brussels",
+     "name": "The Red Oak of Parc d'Egmont",
+     "age": "around 120 years",
+     "story_opening": "Brussels Environment's own walking route through this park gives up on describing this tree and simply says that in autumn you wil"
     },
     {
-     "city": "Lisbon",
-     "name": "The Nettle Tree of Avenida de Berlim",
-     "age": "86 years",
-     "story_opening": "One tree remembers the farms that used to be here. Before Lisbon's eastward expansion in the 1940s and 1950s p"
+     "city": "New York",
+     "name": "The Red Oak of the Thain Family Forest",
+     "age": "150-200 years",
+     "story_opening": "This oak grows in the middle of the Spicebush Trail inside the Thain Family Forest, a 50 acre stretch of the New York Botanical Ga"
     }
    ]
   },
   {
-   "species": "Southern Magnolia (Magnolia grandiflora)",
-   "slug": "southern-magnolia",
-   "count": 13,
+   "species": "Dragon Tree (Dracaena draco)",
+   "slug": "dragon-tree",
+   "count": 6,
+   "cities": [
+    "Cadiz",
+    "Lisbon",
+    "Palermo"
+   ],
+   "examples": [
+    {
+     "city": "Cadiz",
+     "name": "The Dragon Tree of Parque Genoves",
+     "age": "estimated 100 to 200 years, genuinely disputed",
+     "story_opening": "Cadiz used to have two famous dragon trees, then a storm took the roof off the wrong one. The Drago del Tinte, growing in a former"
+    },
+    {
+     "city": "Lisbon",
+     "name": "The Ajuda Dragon Tree",
+     "age": "250-400 years",
+     "story_opening": "Cut into its bark and this tree bleeds red. The resin of Dracaena draco oxidizes into a dark crimson sap once prized across Europe"
+    },
+    {
+     "city": "Lisbon",
+     "name": "The Dragon Tree of the Estrela Garden",
+     "age": "unknown, planted after the garden opened in 1852",
+     "story_opening": "Nobody can tell you how old this tree is, and that is a property of the species rather than a gap in the paperwork. A dragon tree "
+    },
+    {
+     "city": "Lisbon",
+     "name": "The Dragon Tree of Quinta Conde dos Arcos",
+     "age": "roughly 215 years",
+     "story_opening": "This dragon tree is more than twice as wide as it is tall: 6.2 metres of height under a crown almost 14 metres across, on a trunk "
+    },
+    {
+     "city": "Palermo",
+     "name": "The Dragon Tree of Villa Malfitano",
+     "age": "approximately 140 years",
+     "story_opening": "This tree bleeds, or its close relatives do: cut into a dragon tree's bark and the sap that runs out is dark red, sold for centuri"
+    },
+    {
+     "city": "Palermo",
+     "name": "The Dragon Tree of the Palazzina Cinese",
+     "age": "approximately 136 years",
+     "story_opening": "A Bourbon king built a Chinese pavilion in Sicily, and the dragon tree standing in front of it has outlasted every reason he had f"
+    }
+   ]
+  },
+  {
+   "species": "Common Lime (Tilia x europaea)",
+   "slug": "common-lime",
+   "count": 6,
+   "cities": [
+    "Antwerp",
+    "Groningen",
+    "Helsinki",
+    "The Hague",
+    "Utrecht"
+   ],
+   "examples": [
+    {
+     "city": "Antwerp",
+     "name": "The Peace Tree of the Grote Markt",
+     "age": "under 35 years",
+     "story_opening": "The youngest tree on this list stands in the middle of the oldest square. On 3 September 1994, the city planted a small linden on "
+    },
+    {
+     "city": "Helsinki",
+     "name": "The Tullisaari Lime",
+     "age": "150-250 years",
+     "story_opening": "Finland's thickest park lime grows on an island in Helsinki's own harbour, in a manor garden most visitors reach by accident on th"
+    },
+    {
+     "city": "Groningen",
+     "name": "The Linden of De Rollen",
+     "age": "about 340 years",
+     "story_opening": "Groningen's oldest tree grows exactly where the national heritage register says it should: in front of the farmhouse at De Rollen,"
+    },
+    {
+     "city": "Utrecht",
+     "name": "The Uithof Linden",
+     "age": "about 275 years",
+     "story_opening": "This linden has outlived the entire farming landscape it was planted into. It went into the ground around 1750 on the south side o"
+    },
+    {
+     "city": "Utrecht",
+     "name": "Onder de Linden",
+     "age": "about 190 years",
+     "story_opening": "The southern stretch of the Nieuwegracht has been called Onder de Linden, literally under the lindens, since at least the 17th cen"
+    },
+    {
+     "city": "The Hague",
+     "name": "The Veteran Linden of Clingendael",
+     "age": "about 290 years",
+     "story_opening": "This linden is the last member standing of a row that stopped existing as a row sometime in the last three centuries. An 18th-cent"
+    }
+   ]
+  },
+  {
+   "species": "Wych Elm (Ulmus glabra)",
+   "slug": "wych-elm",
+   "count": 5,
+   "cities": [
+    "Dublin",
+    "Munich",
+    "Stockholm",
+    "Toulouse",
+    "Trento"
+   ],
+   "examples": [
+    {
+     "city": "Stockholm",
+     "name": "The Elms of Kungstradgarden",
+     "age": "160-205 years",
+     "story_opening": "On the night of 12 May 1971, a small crowd of Stockholmers climbed into these elms and refused to come down, stopping city workers"
+    },
+    {
+     "city": "Dublin",
+     "name": "The Last Elm of College Park",
+     "age": "unconfirmed, likely over 80 years",
+     "story_opening": "Trinity College once had around sixty elms scattered across its grounds, and Dutch elm disease is the obvious explanation for why "
+    },
+    {
+     "city": "Toulouse",
+     "name": "The Wych Elm by the Grand Rond",
+     "age": "",
+     "story_opening": "A big elm in western Europe is unusual enough to be the story. Dutch elm disease, a fungus carried between trees by bark beetles, "
+    },
+    {
+     "city": "Munich",
+     "name": "The Wych Elm of Maximiliansplatz",
+     "age": "undated, large specimens rare in the city due to Dutch elm disease",
+     "story_opening": "Almost every elm this size that once grew in Munich is gone, and that absence is the entire reason this one is protected. Dutch el"
+    },
+    {
+     "city": "Trento",
+     "name": "The Elm of Piazza Dante",
+     "age": "at least a century",
+     "story_opening": "Step off a train at Trento and the walk to a centuries-old elm takes under two minutes. The Giardino di Piazza Dante faces the sta"
+    }
+   ]
+  },
+  {
+   "species": "Turkish Hazel (Corylus colurna)",
+   "slug": "turkish-hazel",
+   "count": 5,
+   "cities": [
+    "Amsterdam",
+    "Bucharest",
+    "Paris",
+    "Vienna"
+   ],
+   "examples": [
+    {
+     "city": "Vienna",
+     "name": "The Turkish Hazels of Resselpark",
+     "age": "about 109 and 126 years, planted 1917 and 1900",
+     "story_opening": "Vienna protected these two trees for looking alike. Naturdenkmal Nr. 545, granted on 25 April 1972, covers a pair of Turkish hazel"
+    },
+    {
+     "city": "Amsterdam",
+     "name": "The Turkish Hazel of the Hortus",
+     "age": "roughly 230 years",
+     "story_opening": "Bomenstichting, the Dutch tree foundation, calls this the oldest and thickest Turkish hazel in the Netherlands: planted in 1795, a"
+    },
+    {
+     "city": "Paris",
+     "name": "The Turkish Hazel of Square du Temple",
+     "age": "not documented",
+     "story_opening": "Most people picture a hazel as a shrub they can see over. This one is sixteen metres tall with a trunk 235 centimetres around. Cor"
+    },
+    {
+     "city": "Paris",
+     "name": "The Old Hazel of Square Maurice-Gardette",
+     "age": "roughly 145 years",
+     "story_opening": "French regional television once ran a news piece written in this tree's own voice, headlined \"I am 145, stop cracking my hazelnuts"
+    },
+    {
+     "city": "Bucharest",
+     "name": "The Turkish Hazel of Cișmigiu",
+     "age": "undocumented, likely 19th-century planting",
+     "story_opening": "Romania has only two officially protected specimens of Corylus colurna, the Turkish hazel, and one of them grows inside Cișmigiu, "
+    }
+   ]
+  },
+  {
+   "species": "Tipu Tree (Tipuana tipu)",
+   "slug": "tipu-tree",
+   "count": 5,
    "cities": [
     "Barcelona",
-    "Bordeaux",
-    "Como",
-    "Lucca",
-    "Padua",
-    "Paris",
+    "Lisbon"
+   ],
+   "examples": [
+    {
+     "city": "Lisbon",
+     "name": "The Tipu of Jardim de São Bento",
+     "age": "90 years",
+     "story_opening": "Portugal's parliament keeps a South American tree on its doorstep. This tipu, planted around ninety years ago in the small triangu"
+    },
+    {
+     "city": "Lisbon",
+     "name": "The Tipuana of the Ninth of April Garden",
+     "age": "about 145 years",
+     "story_opening": "This garden is named after a defeat. On 9 April 1918 the Portuguese Expeditionary Corps was overrun at La Lys in Flanders in the c"
+    },
+    {
+     "city": "Lisbon",
+     "name": "The Tipuana of Jardim Roque Gameiro",
+     "age": "roughly 115 years",
+     "story_opening": "This tree stands in the middle of a bus terminal, and that is the honest story rather than something to smooth over. The garden, p"
+    },
+    {
+     "city": "Lisbon",
+     "name": "The Tipuana of Praça São João Bosco",
+     "age": "roughly 115 years",
+     "story_opening": "A tree with a thirty four metre crown grows in the middle of a traffic circle, and by 2018 that crown had become the problem. City"
+    },
+    {
+     "city": "Barcelona",
+     "name": "The Tipu Tree of Placa Carles Buigas",
+     "age": "about 101 years",
+     "story_opening": "The tipu tree is one of the commonest trees on Barcelona's streets, and this is the one the city measures the others against. Its "
+    }
+   ]
+  },
+  {
+   "species": "Pohutukawa (Metrosideros excelsa)",
+   "slug": "pohutukawa",
+   "count": 5,
+   "cities": [
+    "Cadiz",
+    "Lisbon",
     "Porto",
+    "Sintra"
+   ],
+   "examples": [
+    {
+     "city": "Cadiz",
+     "name": "The Pohutukawa of Parque Genoves",
+     "age": "reported as over a century, exact planting date undocumented",
+     "story_opening": "A tree from the opposite side of the planet turns part of Cadiz crimson every early summer. This Metrosideros excelsa, a pohutukaw"
+    },
+    {
+     "city": "Lisbon",
+     "name": "The Pohutukawa of the Jardim da Parada",
+     "age": "unknown, not recorded in the national register",
+     "story_opening": "Two of them stand ten metres apart at the edge of this garden and the register protects them as separate trees, which is fair enou"
+    },
+    {
+     "city": "Porto",
+     "name": "The Metrosidero of the Library",
+     "age": "roughly 160 years",
+     "story_opening": "New Zealand's Christmas tree has adapted well to a country that celebrates the holiday in December for entirely unrelated reasons."
+    },
+    {
+     "city": "Porto",
+     "name": "The Metrosideros of Passeio Alegre",
+     "age": "roughly 90 years",
+     "story_opening": "Two of these stand eleven metres apart on the grass at Passeio Alegre, and neither is much taller than a house. Seven metres of he"
+    },
+    {
+     "city": "Sintra",
+     "name": "The Pohutukawa of Monserrate",
+     "age": "genuinely uncertain, estimated between 175 and 275 years",
+     "story_opening": "New Zealand's Christmas tree blooms scarlet in Portugal in early summer instead, six months off its native schedule and a hemisphe"
+    }
+   ]
+  },
+  {
+   "species": "Norfolk Island Pine (Araucaria heterophylla)",
+   "slug": "norfolk-island-pine",
+   "count": 5,
+   "cities": [
+    "Barcelona",
+    "Hobart",
+    "Malaga",
+    "Setubal",
+    "Sintra"
+   ],
+   "examples": [
+    {
+     "city": "Hobart",
+     "name": "The Norfolk Island Pine of Ingle Hall",
+     "age": "not documented",
+     "story_opening": "Asked in 2025 to name his favourite tree in Hobart, the owner of the New Town Station Nursery picked this one, and his reason was "
+    },
+    {
+     "city": "Setubal",
+     "name": "The Six Araucarias of Largo Jose Afonso",
+     "age": "about 107 years",
+     "story_opening": "Six trees stand in a ring around one old circular stone tank with a fountain at its middle, and at twenty-six metres they are the "
+    },
+    {
+     "city": "Malaga",
+     "name": "The Tallest Araucaria in the Province",
+     "age": "approximately 200 years",
+     "story_opening": "Araucaria heterophylla has been growing on earth since the Triassic, more than 200 million years, long enough to have shared the p"
+    },
+    {
+     "city": "Sintra",
+     "name": "The Araucaria of Monserrate",
+     "age": "approximately 160 to 180 years",
+     "story_opening": "The tallest tree in one of Portugal's most exotic gardens came from an island most of its visitors couldn't place on a map. Franci"
+    },
+    {
+     "city": "Barcelona",
+     "name": "The Norfolk Island Pine of the Casa de la Misericordia",
+     "age": "planting date never recorded",
+     "story_opening": "A tree from a Pacific island eight kilometres long stands 27 metres over one of the most densely built neighbourhoods in Europe. T"
+    }
+   ]
+  },
+  {
+   "species": "Mexican Fan Palm (Washingtonia robusta)",
+   "slug": "mexican-fan-palm",
+   "count": 5,
+   "cities": [
+    "Granada",
+    "Palermo",
+    "Porto",
+    "Valencia"
+   ],
+   "examples": [
+    {
+     "city": "Palermo",
+     "name": "The Palm Avenue of Villa Giulia",
+     "age": "undated, planted in a 19th century garden expansion",
+     "story_opening": "Villa Giulia opened in 1778, which makes it, by most accounts, Italy's first public garden, decades before Rome, Florence or Milan"
+    },
+    {
+     "city": "Porto",
+     "name": "The Seven Fan Palms of Palácio de Cristal",
+     "age": "roughly 160 years",
+     "story_opening": "The building these palms were planted for was demolished in 1951. The palms are still standing.\n\nSeven Mexican fan palms line the "
+    },
+    {
+     "city": "Granada",
+     "name": "The Palms of the Archbishop's Palace",
+     "age": "approximately 100 years",
+     "story_opening": "Four Mexican fan palms tower over Plaza de Gracia, planted in 1923 the year construction finished on the Palacio de los Yanguas, t"
+    },
+    {
+     "city": "Valencia",
+     "name": "La Mas Delgada del Paseo",
+     "age": "early 20th century planting",
+     "story_opening": "A gardener's mistake left this palm standing taller and thinner than every other one around it. When Jardines del Real, also known"
+    },
+    {
+     "city": "Valencia",
+     "name": "The Palm of Vicente Peris",
+     "age": "approximately 100 years",
+     "story_opening": "This palm survived being in the way twice, first of traffic and then of a demolition crew, thanks to one head gardener's refusal t"
+    }
+   ]
+  },
+  {
+   "species": "Cork Oak (Quercus suber)",
+   "slug": "cork-oak",
+   "count": 5,
+   "cities": [
+    "Bucaco",
+    "Caserta",
+    "Florence",
     "Rome",
-    "Seville",
+    "Sintra"
+   ],
+   "examples": [
+    {
+     "city": "Florence",
+     "name": "The Cork Oak of the Giardino dei Semplici",
+     "age": "221 years",
+     "story_opening": "Every commercial cork oak in Portugal and Spain gets stripped bare every nine years or so, its bark peeled for wine corks and floo"
+    },
+    {
+     "city": "Rome",
+     "name": "The Cork Oak of the Orangery",
+     "age": "226 years",
+     "story_opening": "This cork oak has been measured twice in three years, and it grew in the interval: 5.00 meters around in October 2021, 5.30 meters"
+    },
+    {
+     "city": "Caserta",
+     "name": "The Cork Oak of the Palco",
+     "age": "over 150 years",
+     "story_opening": "This is the one tree on the walk you can put a hand on and be surprised. Cork oak grows an outer bark up to thirty centimetres thi"
+    },
+    {
+     "city": "Bucaco",
+     "name": "The Cork Oak of the Lago Grande",
+     "age": "not recorded",
+     "story_opening": "Portugal's national tree gets one entry in a forest built to show off everything else. Quercus suber, the cork oak, is the species"
+    },
+    {
+     "city": "Sintra",
+     "name": "The Fern Cork Oak of Quinta do Relógio",
+     "age": "more than 300 years, Portugal's own register puts it at 350",
+     "story_opening": "Ferns grow straight out of this oak's bark, which is where its name comes from: Sobreira dos Fetos, the Fern Cork Oak. Portugal's "
+    }
+   ]
+  },
+  {
+   "species": "Bur Oak (Quercus macrocarpa)",
+   "slug": "bur-oak",
+   "count": 5,
+   "cities": [
+    "Chicago",
     "Washington DC"
    ],
    "examples": [
     {
      "city": "Washington DC",
-     "name": "Frederick Douglass's Magnolias at Cedar Hill",
-     "age": "roughly 145 years",
-     "story_opening": "Frederick Douglass planted these two magnolias for his wife, or so his household always said. The window the t"
+     "name": "The Grant Memorial Bur Oak",
+     "age": "roughly 175 years, possibly older",
+     "story_opening": "In the 1930s Frederick Law Olmsted Jr. cleared about 250 trees out of Union Square and transplanted 41 more. This bur oak he left "
+    },
+    {
+     "city": "Chicago",
+     "name": "The Bur Oak on the Midway",
+     "age": "roughly 250 to 300+ years",
+     "story_opening": "When the Midway Plaisance was cleared and regraded for the 1893 World's Fair, one tree was left standing, and this is it. By then "
+    },
+    {
+     "city": "Chicago",
+     "name": "The Bur Oak Grove of Wooded Island",
+     "age": "the grove's oldest survivors are roughly 200 to 300 years",
+     "story_opening": "One of these oaks blew down around 2016, and its rings were counted back to roughly 1730. It had been standing for nearly three ce"
+    },
+    {
+     "city": "Chicago",
+     "name": "The Bur Oak Savanna of Union Ridge Cemetery",
+     "age": "the oldest estimated at 325 to 375 years, based on trunk size",
+     "story_opening": "The oldest oak in this grove has been estimated at 325 to 375 years, which would make it roughly two centuries older than the city"
+    },
+    {
+     "city": "Chicago",
+     "name": "The Kenilworth Witness Oak",
+     "age": "roughly 230 to 300 years, sources disagree",
+     "story_opening": "Local history holds that this bur oak was a witness tree, a landmark the Potawatomi used to find the route back to the Des Plaines"
+    }
+   ]
+  },
+  {
+   "species": "Bodhi Tree (Ficus religiosa)",
+   "slug": "bodhi-tree",
+   "count": 5,
+   "cities": [
+    "Bangkok",
+    "Singapore"
+   ],
+   "examples": [
+    {
+     "city": "Singapore",
+     "name": "The Bodhi Tree of Pearl's Hill",
+     "age": "not documented",
+     "story_opening": "Singapore's first prison stood on this hill, and so did its first hospital for the poor. The Bodhi tree at the top of Pearl's Hill"
+    },
+    {
+     "city": "Bangkok",
+     "name": "The Bodhi Tree of Wat Saket",
+     "age": "planted 1818, about 208 years",
+     "story_opening": "Two monks left Bangkok on a mission from King Rama II and came back three years later with tree cuttings instead of relics. In 181"
+    },
+    {
+     "city": "Bangkok",
+     "name": "The Bodhi Tree of Wat Phra Kaew",
+     "age": "planted 1864, about 162 years",
+     "story_opening": "Inside the single most photographed temple complex in Thailand grows a tree that gets photographed by almost nobody. King Rama IV "
+    },
+    {
+     "city": "Bangkok",
+     "name": "The Bodhi Tree of Wat Benchamabophit",
+     "age": "planted 1900, about 126 years",
+     "story_opening": "When Thailand received its first-ever direct cutting from the actual Bodhi tree at Bodh Gaya in 1891, King Chulalongkorn did not p"
+    },
+    {
+     "city": "Bangkok",
+     "name": "Lan Pho, the Bodhi Tree of Thammasat University",
+     "age": "at least 90 years, exact planting date undocumented",
+     "story_opening": "A single tree on a university lawn became the starting point for the protest that ended a Thai dictatorship. On 6 October 1973, st"
+    }
+   ]
+  },
+  {
+   "species": "Aleppo Pine (Pinus halepensis)",
+   "slug": "aleppo-pine",
+   "count": 5,
+   "cities": [
+    "Barcelona",
+    "Florence",
+    "Madrid",
+    "Nice",
+    "Rome"
+   ],
+   "examples": [
+    {
+     "city": "Florence",
+     "name": "The Aleppo Pine of Via Giramondino",
+     "age": "",
+     "story_opening": "An Aleppo pine keeps its cones sealed on the branch for years and opens them with heat, so the fire that kills the tree sows the n"
     },
     {
      "city": "Rome",
-     "name": "The Magnolia of Via Corsini",
-     "age": "roughly 275 years",
-     "story_opening": "Rome's oldest magnolia does not stand in a garden. It stands on the pavement of Via Corsini, outside the wall "
+     "name": "The Aleppo Pine of Celimontana",
+     "age": "100+ years, undocumented",
+     "story_opening": "Villa Celimontana keeps two of Rome's officially monumental trees within a few meters of each other, and this Aleppo pine is the m"
     },
     {
-     "city": "Lucca",
-     "name": "The Magnolia of Via dell'Orto Botanico",
-     "age": "not documented",
-     "story_opening": "Three metres twenty-three round the trunk and twenty-four metres tall, which is a great deal of magnolia. Magn"
+     "city": "Nice",
+     "name": "The Aleppo Pine Forest of Mont Boron",
+     "age": "undated, reforestation began 1862",
+     "story_opening": "This entire forest exists because a 19th century engineer refused to give up on bare rock. When Nice became French in 1860, the su"
     },
     {
-     "city": "Paris",
-     "name": "The Magnolia of Square d'Ajaccio",
-     "age": "not documented",
-     "story_opening": "This tree comes from the warm swamp forests of the American southeast, and it has grown to twelve metres in a "
+     "city": "Madrid",
+     "name": "The Aleppo Pine of Campo del Moro",
+     "age": "about 150 years",
+     "story_opening": "This pine grows in the gardens spread beneath the Royal Palace's western facade, a formal landscape that took its current shape on"
     },
     {
-     "city": "Seville",
-     "name": "The Magnolia of the Cathedral",
-     "age": "about 85 years",
-     "story_opening": "The best evidence for this tree's age is photographs it does not appear in. Shots taken from the Teatro Colise"
-    },
-    {
-     "city": "Porto",
-     "name": "The Magnolia of Casa Tait",
-     "age": "roughly 205 years",
-     "story_opening": "The base of this southern magnolia measures more than six metres around, thick enough that it would take sever"
+     "city": "Barcelona",
+     "name": "The Aleppo Pine of the Torre Girona Gardens",
+     "age": "about 122 years",
+     "story_opening": "Aleppo pines are the trees that come back after fire, their cones prised open by the heat, colonising burnt Mediterranean hillside"
     }
    ]
   },
   {
-   "species": "European Beech (Fagus sylvatica)",
-   "slug": "european-beech",
-   "count": 13,
+   "species": "Weeping Higan Cherry (Prunus subhirtella)",
+   "slug": "weeping-higan-cherry",
+   "count": 4,
    "cities": [
-    "Copenhagen",
-    "Edinburgh",
-    "Gdansk",
-    "Haarlem",
-    "Maastricht",
-    "Munich",
-    "Nijmegen",
-    "Nuremberg",
-    "Prague",
-    "Strasbourg"
+    "Kyoto",
+    "Nara"
    ],
    "examples": [
     {
-     "city": "Nuremberg",
-     "name": "The First Beech of Kontumazgarten",
-     "age": "",
-     "story_opening": "Almost nothing grows under a beech, and the tree is doing that on purpose. European beech holds its leaves in "
+     "city": "Kyoto",
+     "name": "The Weeping Cherry of Gion",
+     "age": "75-90 years (second-generation tree; sources disagree on the exact figure)",
+     "story_opening": "The tree everyone photographs at Maruyama Park is not the tree that made the spot famous. The original weeping cherry, a single wh"
     },
     {
-     "city": "Nuremberg",
-     "name": "The Second Beech of Kontumazgarten",
-     "age": "",
-     "story_opening": "Two trees in this park would be here without anyone's help, and both of them are beeches. European beech is th"
+     "city": "Kyoto",
+     "name": "The Taiko Weeping Cherry of Daigo-ji",
+     "age": "about 150-170 years (not the tree Hideyoshi saw)",
+     "story_opening": "In the spring of 1598, months before his death, the warlord Toyotomi Hideyoshi staged one of the most extravagant cherry blossom p"
     },
     {
-     "city": "Haarlem",
-     "name": "The Lodewijk Napoleon Beech",
-     "age": "over 230 years",
-     "story_opening": "A lonely, exiled king passed the time by carving his own royal monogram into a beech tree, and two centuries l"
+     "city": "Kyoto",
+     "name": "The Emperor's Gift Cherry of Kamigamo",
+     "age": "about 160-180 years",
+     "story_opening": "This weeping cherry began its life somewhere inside the Kyoto Imperial Palace grounds before Emperor Komei, who reigned from 1846 "
     },
     {
-     "city": "Gdansk",
-     "name": "The Beech of Ludolfino",
-     "age": "~180 years",
-     "story_opening": "An opera singer's wife gave her name to this park, and this beech has outgrown every owner who has held it sin"
-    },
-    {
-     "city": "Prague",
-     "name": "The Twin Beech of Hvezda",
-     "age": "estimated 230 years",
-     "story_opening": "One of the two tallest trees on this page stands on a 17th century battlefield and splits into two trunks a fe"
-    },
-    {
-     "city": "Maastricht",
-     "name": "The Three Oldest Beeches of Stadspark",
-     "age": "about 160 years",
-     "story_opening": "Stadspark's own marked walking route names these three beeches, standing together partway along the Jeker, as "
+     "city": "Nara",
+     "name": "The First Cherry of Nara",
+     "age": "about 100 years",
+     "story_opening": "Nara's spring officially starts at this tree. The weeping cherry standing beside the approach to Himuro Shrine opens before any ot"
     }
    ]
   },
   {
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "slug": "copper-beech",
-   "count": 13,
+   "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+   "slug": "weeping-beech",
+   "count": 4,
    "cities": [
-    "Antwerp",
-    "Baarn",
-    "Boston",
-    "Brussels",
-    "Haarlem",
+    "Copenhagen",
     "Leiden",
-    "Munich",
-    "Portland",
-    "Porto",
-    "Rotterdam",
-    "Strasbourg"
+    "Munich"
    ],
    "examples": [
     {
-     "city": "Portland",
-     "name": "The Watson Beech",
-     "age": "roughly 135 years",
-     "story_opening": "Portland State University knocked down a Victorian mansion to build its library, then laid out the front lawn "
-    },
-    {
-     "city": "Haarlem",
-     "name": "The Kenaupark Red Beech",
-     "age": "not documented, likely about 150 years",
-     "story_opening": "This copper beech stands in front of a 19th-century villa with the kind of theatrical, deep purple-red canopy "
-    },
-    {
      "city": "Leiden",
-     "name": "The Beets Beech of the Burcht",
+     "name": "The Weeping Beech of the Hortus",
      "age": "about 185 years",
-     "story_opening": "This tree is named after a student who wrote one of the Netherlands' best-loved books while it was still young"
+     "story_opening": "An Englishman gave this tree its first paper trail. George Loddiges, a London nurseryman whose own family ran one of Europe's grea"
     },
     {
-     "city": "Leiden",
-     "name": "The Groenesteeg Beech",
-     "age": "about 200 years, likely planted around the cemetery's 1813 founding",
-     "story_opening": "Two beech varieties grafted together, growing at different rates for two centuries, is why this one looks noth"
-    },
-    {
-     "city": "Antwerp",
-     "name": "The Copper Beech of Sint-Willibrorduskerk",
-     "age": "196-237 years",
-     "story_opening": "Nobody can say for certain which revolution this tree commemorates, only that it commemorates one. Standing 21"
-    },
-    {
-     "city": "Baarn",
-     "name": "The Copper Beech by the South Pond, Groeneveld",
-     "age": "roughly 150-200 years",
-     "story_opening": "At 5.28 metres around, this is the thickest beech on the Groeneveld estate, and the number comes with an aster"
-    }
-   ]
-  },
-  {
-   "species": "Small-leaved Lime (Tilia cordata)",
-   "slug": "small-leaved-lime",
-   "count": 12,
-   "cities": [
-    "Berlin",
-    "Boston",
-    "Copenhagen",
-    "Delft",
-    "Ljubljana",
-    "Munich",
-    "Oslo",
-    "Warsaw",
-    "York",
-    "Zurich"
-   ],
-   "examples": [
-    {
-     "city": "Warsaw",
-     "name": "Sowinski's Linden",
-     "age": "about 190 years",
-     "story_opening": "This linden grows on top of a grave that never received a body. General Jozef Sowinski lost a leg fighting Nap"
-    },
-    {
-     "city": "Oslo",
-     "name": "The Linden Alley of Dronningparken",
-     "age": "around 240 years",
-     "story_opening": "Before Oslo's Royal Palace existed, this stretch of ground was Sommerro, a meadow the mayor Christian Henrik S"
-    },
-    {
-     "city": "Zurich",
-     "name": "The Lindens of Lindenhof",
-     "age": "55-165 years, several planting generations",
-     "story_opening": "Zurich's history is often said to begin on this hilltop, a Roman customs post and later a Carolingian imperial"
-    },
-    {
-     "city": "Ljubljana",
-     "name": "The Furmanska Lipa (Carter's Linden)",
-     "age": "400 years",
-     "story_opening": "Carters bound between Vienna and Trieste used to stop under this linden to buy hay for their horses, and the t"
-    },
-    {
-     "city": "Ljubljana",
-     "name": "The Marmontova Lipa",
-     "age": "~216 years",
-     "story_opening": "This linden and the garden around it were planted the same year, and both were named for the same brief, forei"
-    },
-    {
-     "city": "Berlin",
-     "name": "The Mahlsdorf Village Lime",
-     "age": "300-400 years",
-     "story_opening": "In 2021 Berlin's district register dropped two of Mahlsdorf's protected trees, a Balkan horse chestnut and a b"
-    }
-   ]
-  },
-  {
-   "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
-   "slug": "japanese-pagoda-tree",
-   "count": 12,
-   "cities": [
-    "Bergamo",
-    "Brussels",
-    "Budapest",
-    "Granada",
-    "London",
-    "Lyon",
-    "Munich",
-    "Padua",
-    "Paris",
-    "Seoul",
-    "Vienna"
-   ],
-   "examples": [
-    {
-     "city": "Budapest",
-     "name": "The Pagoda Tree of Buda Castle",
-     "age": "230-250 years",
-     "story_opening": "By the time Franz Joseph became emperor, this tree had already outlived the reason anyone remembered planting "
-    },
-    {
-     "city": "Bergamo",
-     "name": "The Pagoda Trees of Villa Piccinelli",
-     "age": "",
-     "story_opening": "Local press calls this the most renowned of Seriate's seven registered monumental trees, and it is not a tree."
-    },
-    {
-     "city": "Vienna",
-     "name": "The Pagoda Tree of the Stadtpark",
-     "age": "166 years, planted 1860 by the city's tree register",
-     "story_opening": "Vienna's tree catalogue dates this one to 1860, and the Stadtpark did not open until August 1862. Whichever wa"
-    },
-    {
-     "city": "Seoul",
-     "name": "The Jogyesa Pagoda Tree",
-     "age": "about 400 to 450 years",
-     "story_opening": "Every year on Buddha's Birthday, thousands of paper lanterns get strung through this tree's canopy until the e"
-    },
-    {
-     "city": "Lyon",
-     "name": "The Japanese Pagoda Tree of Parc de Gerland",
+     "city": "Munich",
+     "name": "The Weeping Beech of the Schwanenbrücke",
      "age": "undated",
-     "story_opening": "Gerland is one of Lyon's newer large parks by name, built out on former industrial and marshland south of the "
+     "story_opening": "Munich protects this beech partly because people are fond of it. The reason entered in the city's natural monument ordinance is th"
     },
+    {
+     "city": "Munich",
+     "name": "The Weeping Beech of Situlistraße",
+     "age": "",
+     "story_opening": "By the city's own reckoning this is the largest weeping beech standing in Munich. The 2021 natural monument ordinance says so in i"
+    },
+    {
+     "city": "Copenhagen",
+     "name": "The Weeping Beech of Assistens",
+     "age": "not documented",
+     "story_opening": "Every weeping beech is a graft, and on this one the join is in plain sight. About a metre up the trunk there is a visible union wh"
+    }
+   ]
+  },
+  {
+   "species": "Tree of Heaven (Ailanthus altissima)",
+   "slug": "tree-of-heaven",
+   "count": 4,
+   "cities": [
+    "Copenhagen",
+    "Dublin",
+    "London",
+    "Zaragoza"
+   ],
+   "examples": [
     {
      "city": "London",
-     "name": "The Old Lions of Kew",
-     "age": "250+ years",
-     "story_opening": "John Smith, Kew Gardens' first curator, gave five of its oldest trees a nickname that stuck: the Old Lions, ve"
+     "name": "The Ravenscourt Park Tree of Heaven",
+     "age": "not documented",
+     "story_opening": "Tree of heaven is the species councils spend money removing. This one has a plaque. The circular green plaque at its foot calls it"
+    },
+    {
+     "city": "Dublin",
+     "name": "Ireland's Largest Tree of Heaven",
+     "age": "disputed: register says 120-165 years, species norms suggest closer to 70-100",
+     "story_opening": "The largest Ailanthus altissima in Ireland stands framed between two Victorian glasshouses in Dublin, and nobody agrees on how old"
+    },
+    {
+     "city": "Copenhagen",
+     "name": "The Sky-Reacher of Assistens",
+     "age": "not documented",
+     "story_opening": "Skyrækker, the Danish name for this species, means sky-reacher. At 15.5 metres this one does not out-top the big beeches and maple"
+    },
+    {
+     "city": "Zaragoza",
+     "name": "The Tree of Heaven of the Jardin Botanico",
+     "age": "not documented",
+     "story_opening": "Zaragoza protects, as a singular tree, a specimen of the species European cities spend the most money trying to get rid of. Ailant"
     }
    ]
   },
   {
-   "species": "Coast Redwood (Sequoia sempervirens)",
-   "slug": "coast-redwood",
-   "count": 12,
+   "species": "Tasmanian Blue Gum (Eucalyptus globulus)",
+   "slug": "tasmanian-blue-gum",
+   "count": 4,
    "cities": [
-    "Amsterdam",
-    "Bath",
-    "Bologna",
-    "Bordeaux",
+    "Barcelona",
     "Bucaco",
-    "Caserta",
-    "Genoa",
-    "Granada",
+    "Madrid",
+    "Naples"
+   ],
+   "examples": [
+    {
+     "city": "Naples",
+     "name": "The Blue Gum of the Botanical Garden",
+     "age": "more than 100 years, undated precisely",
+     "story_opening": "Thirty metres, which makes this the tallest tree the registers record inside the garden, and the reason it stands here at all is a"
+    },
+    {
+     "city": "Bucaco",
+     "name": "The Blue Gum on the Hotel Road",
+     "age": "about 150 years",
+     "story_opening": "Seven metres and fifteen centimetres around the trunk, which is more than any other tree on this page and more than most trees in "
+    },
+    {
+     "city": "Madrid",
+     "name": "The Blue Gum North of the Estanque",
+     "age": "over 100 years",
+     "story_opening": "In February 2015 the Comunidad de Madrid revised its register of singular trees and published two lists side by side. One added 69"
+    },
+    {
+     "city": "Barcelona",
+     "name": "The White Eucalyptus of the Vil.la Amelia Gardens",
+     "age": "about 122 years",
+     "story_opening": "A trunk 5.2 metres round on a tree planted in 1904 tells you what a blue gum does when nothing stops it. Eucalyptus globulus is na"
+    }
+   ]
+  },
+  {
+   "species": "Strawberry Tree (Arbutus unedo)",
+   "slug": "strawberry-tree",
+   "count": 4,
+   "cities": [
+    "Bergamo",
+    "Florence",
+    "Madrid",
+    "Nice"
+   ],
+   "examples": [
+    {
+     "city": "Bergamo",
+     "name": "The Strawberry Tree of Via alla Rocca",
+     "age": "",
+     "story_opening": "Most strawberry trees are shrubs you can see over the top of. This one is 16 metres tall with a trunk 355 centimetres round, which"
+    },
+    {
+     "city": "Florence",
+     "name": "The Strawberry Tree of the Giardino dell'Iris",
+     "age": "",
+     "story_opening": "The strawberry tree flowers and ripens fruit at the same time, so in autumn it hangs white bells and red fruit on the same branch."
+    },
+    {
+     "city": "Nice",
+     "name": "The Strawberry Tree of Château de Crémat",
+     "age": "undated",
+     "story_opening": "This tree grows on a wine estate whose owners kept rebuilding the same hillside into ever grander versions of itself. Antoine Mari"
+    },
+    {
+     "city": "Madrid",
+     "name": "The Strawberry Tree of the Plaza de la Lealtad",
+     "age": "over 100 years",
+     "story_opening": "Madrid's coat of arms shows a bear reaching up into a strawberry tree, and this is the closest thing the city has to the original."
+    }
+   ]
+  },
+  {
+   "species": "Silk Floss Tree (Ceiba speciosa)",
+   "slug": "silk-floss-tree",
+   "count": 4,
+   "cities": [
+    "Cadiz",
+    "Lisbon",
+    "Malaga",
+    "Naples"
+   ],
+   "examples": [
+    {
+     "city": "Cadiz",
+     "name": "The Floss Silk Tree of Parque Genoves",
+     "age": "undated",
+     "story_opening": "Its name translates as the drunken stick, and one look at the trunk explains why. Ceiba speciosa, a floss silk tree from Argentina"
+    },
+    {
+     "city": "Malaga",
+     "name": "The Floss Silk Tree of Cortina del Muelle",
+     "age": "undated, mature",
+     "story_opening": "This tree survived a construction project by becoming part of the construction. When the streets around Malaga Cathedral were remo"
+    },
+    {
+     "city": "Lisbon",
+     "name": "The Paineira of Jardim Alfredo Keil",
+     "age": "100+ years (ensemble classified 2017)",
+     "story_opening": "Every October this tree turns a small garden pink. The silk floss tree in Jardim Alfredo Keil is one of six individually classifie"
+    },
+    {
+     "city": "Naples",
+     "name": "The False Kapok of the Botanical Garden",
+     "age": "more than 100 years, undated precisely",
+     "story_opening": "Naples has 53 entries on Italy's national monumental register and this one has the widest trunk of the lot. What you actually walk"
+    }
+   ]
+  },
+  {
+   "species": "Osage Orange (Maclura pomifera)",
+   "slug": "osage-orange",
+   "count": 4,
+   "cities": [
+    "Barcelona",
+    "Lyon",
+    "Toulouse"
+   ],
+   "examples": [
+    {
+     "city": "Lyon",
+     "name": "The Osage Orange of the Tête d'Or",
+     "age": "over 100 years",
+     "story_opening": "This tree's American ancestors were weapons before they were shade. Maclura pomifera is named for the Osage nation of the central "
+    },
+    {
+     "city": "Barcelona",
+     "name": "The Osage Orange of the Ciutadella",
+     "age": "about 113 years",
+     "story_opening": "In late autumn this tree drops what look like green brains onto the path. The fruit of the Osage orange is the size of a grapefrui"
+    },
+    {
+     "city": "Barcelona",
+     "name": "The Osage Orange of Carrer Maria Montessori",
+     "age": "about 78 years",
+     "story_opening": "Before barbed wire, this tree was the fence. Osage orange grows dense, thorny and fast, and through the 1850s American farmers pla"
+    },
+    {
+     "city": "Toulouse",
+     "name": "The Osage Orange of the Grand Rond",
+     "age": "",
+     "story_opening": "This tree drops fruit that nothing alive is meant to eat. The Osage orange produces heavy green spheres the size of a grapefruit, "
+    }
+   ]
+  },
+  {
+   "species": "Montezuma Cypress (Taxodium mucronatum)",
+   "slug": "montezuma-cypress",
+   "count": 4,
+   "cities": [
+    "Florence",
+    "Lisbon",
+    "Madrid",
+    "Naples"
+   ],
+   "examples": [
+    {
+     "city": "Florence",
+     "name": "The Montezuma Cypress",
+     "age": "approximately 140 years",
+     "story_opening": "Nothing else in Florence comes from Mexico, has a trunk seven metres around, and survived being struck by lightning barely a decad"
+    },
+    {
+     "city": "Lisbon",
+     "name": "The Taxodium of the Jardim da Parada",
+     "age": "unknown, not recorded in the national register",
+     "story_opening": "Six and a half metres around the trunk and twenty six metres up, this is the largest tree in a garden that fills one whole city bl"
+    },
+    {
+     "city": "Naples",
+     "name": "The Montezuma Cypress of the Garden of the Princes",
+     "age": "19th century, undated precisely",
+     "story_opening": "Nicknamed the Tree of Thule after Mexico's own famous, vastly older specimen of the same species, this cypress was among the first"
+    },
+    {
+     "city": "Madrid",
+     "name": "The Ahuehuete of the Parterre",
+     "age": "200-390 years (age genuinely disputed between sources)",
+     "story_opening": "This tree carries two stories about its own birth that cannot both be true. The popular version, repeated in guidebooks and on the"
+    }
+   ]
+  },
+  {
+   "species": "Monterey Cypress (Cupressus macrocarpa)",
+   "slug": "monterey-cypress",
+   "count": 4,
+   "cities": [
+    "Florence",
+    "Lisbon",
     "Lucca",
-    "Porto",
-    "Rome",
     "Trieste"
    ],
    "examples": [
     {
      "city": "Trieste",
-     "name": "The Redwood of Miramare",
+     "name": "The Monterey Cypress of Miramare",
      "age": "about 170 years, planted after 1856",
-     "story_opening": "The man who planted this tree was shot by a firing squad in Mexico eleven years later. Archduke Maximilian of "
-    },
-    {
-     "city": "Amsterdam",
-     "name": "The Coast Redwood of Artis",
-     "age": "roughly 106 years",
-     "story_opening": "The tallest tree species on earth has a specimen standing beside a planetarium in central Amsterdam. Coast red"
-    },
-    {
-     "city": "Rome",
-     "name": "The Redwood of the Pincio",
-     "age": "100+ years, undocumented",
-     "story_opening": "Thirty metres is a good height for a tree in Rome and a failure for this species. Sequoia sempervirens is the "
-    },
-    {
-     "city": "Caserta",
-     "name": "The Coast Redwood of the English Garden",
-     "age": "over 150 years",
-     "story_opening": "Redwoods do not usually reach four and a half metres of trunk this fast. On the fog-fed Pacific coast where Se"
-    },
-    {
-     "city": "Lucca",
-     "name": "The Redwood of the Orto Botanico",
-     "age": "about 176 years, planted around 1850",
-     "story_opening": "The tallest living thing inside Lucca's walls is Californian. At thirty-five metres this redwood clears every "
-    },
-    {
-     "city": "Porto",
-     "name": "The Coast Redwood of the Botanical Garden",
-     "age": "unknown",
-     "story_opening": "The tallest tree species on Earth has a foothold in a four-hectare university garden in Porto, and it's alread"
-    }
-   ]
-  },
-  {
-   "species": "Tulip Tree (Liriodendron tulipifera)",
-   "slug": "tulip-tree",
-   "count": 11,
-   "cities": [
-    "Baarn",
-    "Brussels",
-    "Leiden",
-    "New York",
-    "Porto",
-    "Washington DC"
-   ],
-   "examples": [
-    {
-     "city": "Washington DC",
-     "name": "The Montrose Park Tulip Poplar",
-     "age": "not documented; among DC's largest tulip poplars",
-     "story_opening": "Two websites call this the second largest tree in Washington. Casey Trees, whose volunteers did the measuring,"
-    },
-    {
-     "city": "Washington DC",
-     "name": "The Olmsted Tuliptree, Capitol Grounds",
-     "age": "roughly 135-150 years",
-     "story_opening": "Frederick Law Olmsted planted more than 1,050 trees on the Capitol grounds and about 45 of them are still aliv"
-    },
-    {
-     "city": "Leiden",
-     "name": "The Tulip Tree of Boerhaave",
-     "age": "about 310 years",
-     "story_opening": "This tree exists because a London apothecary put a Virginia seed in the post. On 1 October 1716, botanist Isaa"
-    },
-    {
-     "city": "Baarn",
-     "name": "The Tulip Tree Grove at Kasteel Groeneveld",
-     "age": "roughly 110-115 years",
-     "story_opening": "Crowd trees together and they race each other. The tulip trees planted at Groeneveld between 1912 and 1915 wen"
-    },
-    {
-     "city": "Porto",
-     "name": "The Tulip Tree of Casa Tait",
-     "age": "250+ years",
-     "story_opening": "This American tulip tree became one of Portugal's first individually protected trees in 1950, a legal status m"
-    },
-    {
-     "city": "Porto",
-     "name": "The Tulip Tree of Quinta Primo Madeira",
-     "age": "100+ years",
-     "story_opening": "The crown of this tulip tree is wider than the tree is tall: 23.5 metres across against 21 metres of height. T"
-    }
-   ]
-  },
-  {
-   "species": "Atlas Cedar (Cedrus atlantica)",
-   "slug": "atlas-cedar",
-   "count": 11,
-   "cities": [
-    "Bergamo",
-    "Bologna",
-    "Dublin",
-    "Granada",
-    "Lucca",
-    "Lyon",
-    "Madrid",
-    "Perugia",
-    "Porto"
-   ],
-   "examples": [
-    {
-     "city": "Bergamo",
-     "name": "The Atlas Cedar of Parco Caprotti",
-     "age": "",
-     "story_opening": "Bergamo's own green space writers call Parco Caprotti perhaps the least known park in the lower town, which is"
-    },
-    {
-     "city": "Lyon",
-     "name": "The Atlas Cedar of Parc de la Chapelle",
-     "age": "locally claimed at 500 years, botanically disputed",
-     "story_opening": "This cedar is effectively the reason the park around it exists in its current shape: much of Parc de la Chapel"
-    },
-    {
-     "city": "Lucca",
-     "name": "The Cedar of the Righteous at Villa Bottini",
-     "age": "undated, and no older than the 1840s",
-     "story_opening": "On 25 April 2021 this cedar was given a name. Lucca's Garden of the Righteous, in the grounds of Villa Bottini"
-    },
-    {
-     "city": "Porto",
-     "name": "The Atlas Cedar of the Botanical Garden",
-     "age": "unknown",
-     "story_opening": "Of the three cedar species growing in this collection, the Atlas cedar is the one a local garden writer single"
-    },
-    {
-     "city": "Porto",
-     "name": "The Atlas Cedar of Quinta Primo Madeira",
-     "age": "100+ years",
-     "story_opening": "Three named architects have worked on this small garden, and the trees outlasted every plan. Casa Primo Madeir"
-    },
-    {
-     "city": "Perugia",
-     "name": "The Palazzo Murena Cedar",
-     "age": "roughly 155 to 185 years (planted circa 1861)",
-     "story_opening": "In 2020 a trumpeter and an accordionist played a concert twelve metres up in this tree. Paolo Fresu and Daniel"
-    }
-   ]
-  },
-  {
-   "species": "White Mulberry (Morus alba)",
-   "slug": "white-mulberry",
-   "count": 10,
-   "cities": [
-    "Bergamo",
-    "Bucharest",
-    "Budapest",
-    "Copenhagen",
-    "Oxford",
-    "Sofia",
-    "Split",
-    "Verona",
-    "Washington DC"
-   ],
-   "examples": [
-    {
-     "city": "Budapest",
-     "name": "The Taban Mulberry",
-     "age": "200-300 years",
-     "story_opening": "Popular legend says Ottoman occupiers planted this mulberry during their century and a half ruling Buda, which"
-    },
-    {
-     "city": "Budapest",
-     "name": "The Count's Mulberry of Karolyi Garden",
-     "age": "roughly 230-250 years",
-     "story_opening": "It takes two adults with their arms spread to get around this trunk, and nobody knows who planted it. The two "
-    },
-    {
-     "city": "Bergamo",
-     "name": "The Silk Mulberries of Giardino Paul Harris",
-     "age": "",
-     "story_opening": "These three trees were planted as machinery. White mulberry leaf is the only thing a silkworm will eat, and fo"
-    },
-    {
-     "city": "Washington DC",
-     "name": "The Washington Monument Witness Mulberry",
-     "age": "roughly 130-140 years",
-     "story_opening": "This tree fell over in May 2019 and the Park Service refused to remove it. Days of rain had saturated the grou"
-    },
-    {
-     "city": "Bucharest",
-     "name": "The Dudul din Batiștei (White Mulberry of Batiștei)",
-     "age": "200-300+ years",
-     "story_opening": "According to a story carved onto a plaque in its own church porch, a boy named Manciu once told Prince Constan"
-    },
-    {
-     "city": "Verona",
-     "name": "The Historic Collection of Parco delle Colombare",
-     "age": "undated, mature",
-     "story_opening": "A large mulberry anchors what remains of a private estate's tree collection, one of the oldest specimens docum"
-    }
-   ]
-  },
-  {
-   "species": "Caucasian Elm (Zelkova carpinifolia)",
-   "slug": "caucasian-elm",
-   "count": 10,
-   "cities": [
-    "Bordeaux",
-    "Dublin",
-    "Florence",
-    "Madrid",
-    "Oxford",
-    "Paris",
-    "Turin",
-    "Valencia",
-    "Washington DC"
-   ],
-   "examples": [
-    {
-     "city": "Washington DC",
-     "name": "The Botanic Garden Elm",
-     "age": "roughly 175 years, possibly older",
-     "story_opening": "When Union Square was rebuilt in the 1930s, five Caucasian elms survived the clearance. Four were dug up and t"
+     "story_opening": "In the wild this species survives in two groves on the California coast, together covering less than a square kilometre, and it is"
     },
     {
      "city": "Florence",
-     "name": "The Caucasian Elm That Was Cut Back to Save It",
-     "age": "about 199 years, planted 1827",
-     "story_opening": "In the 1980s this tree lost roughly two thirds of its height in a single operation, and it is still on the nat"
+     "name": "The Monterey Cypress of the Giardino Simone Weil",
+     "age": "",
+     "story_opening": "In the wild this species grows on two small headlands in California and nowhere else on earth. There is one of it on a Florentine "
     },
     {
-     "city": "Paris",
-     "name": "The Caucasian Elm of Avenue Foch",
-     "age": "175 years",
-     "story_opening": "The grandest avenue in Paris keeps its most interesting tree off the main carriageway. Avenue Foch, 120 metres"
+     "city": "Lisbon",
+     "name": "The Monterey Cypress of Parque do Caramão da Ajuda",
+     "age": "roughly 95 years",
+     "story_opening": "Monterey cypress has one of the smallest natural ranges of any conifer: two headlands on the California coast near Monterey, a few"
     },
     {
-     "city": "Paris",
-     "name": "The Caucasian Elm of Square Samuel Paty",
-     "age": "not documented",
-     "story_opening": "Paris lost most of its elms to a fungus, and this one survived by not quite being an elm. Zelkova carpinifolia"
-    },
-    {
-     "city": "Oxford",
-     "name": "The Caucasian Elm of North Walk",
-     "age": "150 years",
-     "story_opening": "Oxford's University Parks hold nine trees recognised as national champions, the tallest or largest recorded ex"
-    },
-    {
-     "city": "Dublin",
-     "name": "The Glasnevin Caucasian Elm",
-     "age": "roughly 165-215 years",
-     "story_opening": "A nurseryman in County Offaly once took cuttings from this exact tree and started selling clones of it. Zelkov"
+     "city": "Lucca",
+     "name": "The Monterey Cypress on the San Regolo Bastion",
+     "age": "roughly 150 years, undated",
+     "story_opening": "In the wild this species grows in two small groves on a single stretch of Californian coast near Monterey and nowhere else on eart"
     }
    ]
   },
   {
-   "species": "Black Locust (Robinia pseudoacacia)",
-   "slug": "black-locust",
-   "count": 10,
+   "species": "Mexican Cypress (Cupressus lusitanica)",
+   "slug": "mexican-cypress",
+   "count": 4,
    "cities": [
-    "Antwerp",
-    "Barcelona",
-    "Bordeaux",
-    "Budapest",
-    "Copenhagen",
+    "Bucaco",
     "Granada",
-    "Krakow",
-    "Paris"
+    "Lisbon"
    ],
    "examples": [
     {
-     "city": "Budapest",
-     "name": "The Old Acacia of Erzsebet Square",
-     "age": "150-165 years",
-     "story_opening": "A 1960s survey by Budapest's own parks department already described this black locust as over a hundred years "
+     "city": "Lisbon",
+     "name": "The Cypress of Príncipe Real",
+     "age": "150+ years",
+     "story_opening": "Lisbon's first legally protected tree is not a cedar at all. Everyone calls it the cedro-do-Buçaco, but the tree presiding over Pr"
     },
     {
-     "city": "Budapest",
-     "name": "The Old Acacia of Szechenyi Square",
-     "age": "documented as 227 years (planted 1789), though disputed; possibly considerably younger",
-     "story_opening": "This tree is celebrated for being 227 years old, and a historian has taken that number apart with photographs."
+     "city": "Granada",
+     "name": "The Cypress of San Juan de la Cruz",
+     "age": "approximately 440 years",
+     "story_opening": "This cypress is not native to Spain, or even to the continent it is usually associated with. Hesperocyparis lusitanica, despite it"
     },
     {
-     "city": "Antwerp",
-     "name": "The Black Locust of Hertoghepark",
-     "age": "unknown, national champion",
-     "story_opening": "The thickest black locust tree recorded anywhere in Belgium grows in a small city park hemmed in by three Antw"
+     "city": "Bucaco",
+     "name": "The Cedro de Sao Jose",
+     "age": "about 380 years",
+     "story_opening": "This tree is the reason a Mexican cypress is named after Portugal. When Philip Miller described the species in 1768 he was working"
     },
     {
-     "city": "Paris",
-     "name": "The Robinier of Square Rene-Viviani",
-     "age": "425 years",
-     "story_opening": "The oldest tree in Paris was planted in 1601, before the Mayflower sailed. Jean Robin, herbalist to King Henri"
-    },
-    {
-     "city": "Paris",
-     "name": "The Second Robinier",
-     "age": "390 years",
-     "story_opening": "Paris's second oldest tree is the son of its oldest. In 1636 Vespasien Robin, botanist to the king and son of "
-    },
-    {
-     "city": "Krakow",
-     "name": "Poland's Oldest Black Locust",
-     "age": "239 years",
-     "story_opening": "Black locusts are not supposed to be rare in Poland. The species arrived from North America in the 18th centur"
+     "city": "Bucaco",
+     "name": "The Cedro-do-Bucaco of the First Fall",
+     "age": "about 310 years",
+     "story_opening": "Stop at the wrong shrine and you might miss it: this cypress stands beside the station on the Via Sacra that marks Christ's first "
     }
    ]
   },
   {
-   "species": "Sycamore (Acer pseudoplatanus)",
-   "slug": "sycamore",
-   "count": 8,
+   "species": "Judas Tree (Cercis siliquastrum)",
+   "slug": "judas-tree",
+   "count": 4,
    "cities": [
     "Barcelona",
-    "Brussels",
-    "Copenhagen",
-    "Dublin",
-    "Edinburgh",
-    "Glasgow",
-    "Nijmegen",
-    "Reykjavik"
+    "Cordoba",
+    "Toulouse",
+    "Vienna"
    ],
    "examples": [
     {
-     "city": "Reykjavik",
-     "name": "The City Hall Maple",
-     "age": "~108 years",
-     "story_opening": "In 1918, the year the Act of Union made Iceland a sovereign state in union with Denmark, a sycamore maple went"
+     "city": "Vienna",
+     "name": "The Judas Tree of the Altes AKH",
+     "age": "well over 100 years, possibly 18th century",
+     "story_opening": "This tree flowers straight out of its own trunk. In spring, before a single leaf opens, Cercis siliquastrum covers itself in rosy-"
     },
     {
-     "city": "Glasgow",
-     "name": "The Darnley Sycamore",
-     "age": "450-500 years",
-     "story_opening": "For an oak or a yew, 450 years would be middle age. For a sycamore, a fast-growing species that rarely lives p"
+     "city": "Cordoba",
+     "name": "The Judas Tree of the San Rafael Cemetery",
+     "age": "undated, the largest of its species in the province",
+     "story_opening": "A tree that flowers straight out of its own bark, standing at the gate of a cemetery. Judas trees do not put their blossom on new "
     },
     {
-     "city": "Brussels",
-     "name": "The Great Sycamore of Parc d'Egmont",
-     "age": "120-190 years",
-     "story_opening": "Nobody plants a sycamore on purpose any more. It seeds itself into gutters and railway banks across Europe, gr"
+     "city": "Barcelona",
+     "name": "The Judas Tree of Placa Joanic",
+     "age": "about 70 years",
+     "story_opening": "This tree is twice as wide as it is tall. Five metres of height, a crown ten metres across and a trunk 1.8 metres around, the prop"
+    },
+    {
+     "city": "Toulouse",
+     "name": "The Judas Tree of Fer a Cheval",
+     "age": "",
+     "story_opening": "The flowers on this tree come straight out of the bark. Judas trees are cauliflorous, meaning the blossom breaks directly from the"
+    }
+   ]
+  },
+  {
+   "species": "European White Elm (Ulmus laevis)",
+   "slug": "european-white-elm",
+   "count": 4,
+   "cities": [
+    "Berlin",
+    "Munich",
+    "Prague"
+   ],
+   "examples": [
+    {
+     "city": "Prague",
+     "name": "The Elm of Ruzova Street",
+     "age": "estimated 190 years",
+     "story_opening": "Most of Europe's big elms are dead, and this one is standing on a side street between Wenceslas Square and the main station. Dutch"
+    },
+    {
+     "city": "Berlin",
+     "name": "The Great Elm of Treptower Park",
+     "age": "250 years",
+     "story_opening": "The newest tree on Germany's national heritage register has its roots in a river. This European white elm, standing directly on th"
+    },
+    {
+     "city": "Berlin",
+     "name": "The Karpfenteich Elm",
+     "age": "not documented",
+     "story_opening": "Nobody knows how old this elm is, and that is the honest answer rather than a gap waiting to be filled. Berlin protects it as natu"
+    },
+    {
+     "city": "Munich",
+     "name": "The Twin Elms of the Englischer Garten",
+     "age": "undated, described as the oldest elms in the city",
+     "story_opening": "Munich's own natural monument register makes a specific, checkable claim about these two trees: no older elms are known anywhere i"
+    }
+   ]
+  },
+  {
+   "species": "European Pear (Pyrus communis)",
+   "slug": "european-pear",
+   "count": 4,
+   "cities": [
+    "Helsinki",
+    "Prague",
+    "The Hague",
+    "Warsaw"
+   ],
+   "examples": [
+    {
+     "city": "Warsaw",
+     "name": "Ciechomski's Pear",
+     "age": "disputed, possibly younger than the 1870 legend claims",
+     "story_opening": "A pear tree is a strange choice for a memorial, which is exactly why this one has stayed interesting long after the man it suppose"
+    },
+    {
+     "city": "Prague",
+     "name": "Neruda's Pear Tree",
+     "age": "estimated 190 years",
+     "story_opening": "This pear tree remembers a poet's birthplace that no longer exists. Jan Neruda, the 19th century writer whose name now marks Pragu"
+    },
+    {
+     "city": "Helsinki",
+     "name": "The Herttoniemi Pear Tree",
+     "age": "150-220 years",
+     "story_opening": "The last fruit tree standing in a manor garden that once grew many is also, by several accounts, the oldest and tallest pear tree "
+    },
+    {
+     "city": "The Hague",
+     "name": "The Juttepeer of Heilige Geesthofje",
+     "age": "about 388 years",
+     "story_opening": "Elderly women living in this almshouse have been making jelly from this pear tree's fruit since at least the 17th century, and the"
+    }
+   ]
+  },
+  {
+   "species": "European Ash (Fraxinus excelsior)",
+   "slug": "european-ash",
+   "count": 4,
+   "cities": [
+    "Edinburgh",
+    "Gdansk",
+    "Munich",
+    "Prague"
+   ],
+   "examples": [
+    {
+     "city": "Gdansk",
+     "name": "The Ash of the Royal Rifle Factory",
+     "age": "~280 years",
+     "story_opening": "This ash tree is older than the gun factory that grew up around it. The Prussian state's Royal Rifle Factory moved onto this stret"
+    },
+    {
+     "city": "Prague",
+     "name": "The Ash of Strahov Garden",
+     "age": "estimated 210-230 years",
+     "story_opening": "The tallest single trunk on this page grows in the one corner of Strahov Monastery the monks decided to share. This ash reaches 37"
     },
     {
      "city": "Edinburgh",
-     "name": "The Rockface Sycamore of Cramond",
-     "age": "unknown, mature",
-     "story_opening": "At the start of the River Almond Walkway in Cramond, a sycamore grows sideways out of solid rock instead of up"
+     "name": "The Cammo Ash",
+     "age": "250-320 years",
+     "story_opening": "One of the oldest ash trees in Edinburgh grows in a park with no house left standing in it. Cammo Estate was laid out from 1710 by"
     },
     {
-     "city": "Nijmegen",
-     "name": "The Sycamore of Valkhofpark",
-     "age": "145 years",
-     "story_opening": "Nijmegen's most recent Tree of the Year grows on ground that has been fought over since the Romans. Valkhofpar"
-    },
-    {
-     "city": "Dublin",
-     "name": "The Great Sycamore of Farmleigh",
-     "age": "220 years",
-     "story_opening": "The oldest tree on the Farmleigh estate predates the Guinness family who made the place famous by about a cent"
-    }
-   ]
-  },
-  {
-   "species": "Stone Pine (Pinus pinea)",
-   "slug": "stone-pine",
-   "count": 8,
-   "cities": [
-    "Barcelona",
-    "Florence",
-    "Istanbul",
-    "Madrid",
-    "Naples",
-    "Setubal"
-   ],
-   "examples": [
-    {
-     "city": "Setubal",
-     "name": "The Stone Pines of Rua Henri Perron",
-     "age": "about 117 years",
-     "story_opening": "These two were here before the street was. The parish describes the stone pines on this road as survivors of t"
-    },
-    {
-     "city": "Florence",
-     "name": "The Pine of Villa Vogel",
-     "age": "age undocumented",
-     "story_opening": "Florence's Renaissance gardens get all the attention; this pine grows in a very different kind of park. The Pa"
-    },
-    {
-     "city": "Florence",
-     "name": "The Stone Pine of the Bobolino",
+     "city": "Munich",
+     "name": "The Ash of Leinthalerstraße",
      "age": "",
-     "story_opening": "Stone pines are known for their width, not their height. This one is 31.5 metres tall.\n\nThe umbrella pine give"
-    },
-    {
-     "city": "Istanbul",
-     "name": "The Ata Fıstık Çamı",
-     "age": "397 years",
-     "story_opening": "The tree that gave a hill its name is not originally from this hill. Küçük Çamlıca, Istanbul's best known view"
-    },
-    {
-     "city": "Naples",
-     "name": "The Pine of Posillipo",
-     "age": "planted 1995",
-     "story_opening": "For roughly a century, one pine tree on a hillside above Mergellina was arguably the single most photographed "
-    },
-    {
-     "city": "Madrid",
-     "name": "The Stone Pine of the Priest's House",
-     "age": "about 230 years",
-     "story_opening": "This stone pine grows half hidden among shrubs near a small hermitage called the Casa del Cura, the priest's h"
+     "story_opening": "Munich's ordinance gives three words for why this tree is protected: extrem ausladende Krone, an extremely wide-spreading crown. N"
     }
    ]
   },
   {
-   "species": "Indian Laurel Fig (Ficus microcarpa)",
-   "slug": "indian-laurel-fig",
-   "count": 8,
+   "species": "Douglas Fir (Pseudotsuga menziesii)",
+   "slug": "douglas-fir",
+   "count": 4,
    "cities": [
-    "Hong Kong",
-    "Malaga",
-    "Seville"
-   ],
-   "examples": [
-    {
-     "city": "Malaga",
-     "name": "The Ficus Avenue of the Alameda Principal",
-     "age": "approximately 150 years",
-     "story_opening": "Malaga's central promenade has had three different trees in its 240-year history, and the ones standing today "
-    },
-    {
-     "city": "Seville",
-     "name": "The Ficus of the Pila del Pato",
-     "age": "about 80 years",
-     "story_opening": "A residents' association liked this tree enough to put it on their letterhead. The Indian laurel fig on the Pl"
-    },
-    {
-     "city": "Hong Kong",
-     "name": "The King Banyan of Kowloon Park",
-     "age": "about 400 years (recognised as Hong Kong's largest urban tree in 1997)",
-     "story_opening": "A third of this banyan's trunk came down in a 2007 typhoon, and what remains is still recognised as Hong Kong'"
-    },
-    {
-     "city": "Hong Kong",
-     "name": "The Stone Wall Trees of Forbes Street",
-     "age": "wall dates to the 1890s; several trees individually over 100 years",
-     "story_opening": "When engineers first drew up plans to extend the MTR through Kennedy Town, a wall of nearly thirty banyan tree"
-    },
-    {
-     "city": "Hong Kong",
-     "name": "The Kam Tin Tree House",
-     "age": "the banyan is over 100 years old; the stone ruin it engulfs is late Ming dynasty",
-     "story_opening": "Nobody agrees on what this stone house was originally for, a temple, a study hall, a family residence, but eve"
-    },
-    {
-     "city": "Hong Kong",
-     "name": "The Stonewall Fig of Ka Wai Man Road",
-     "age": "not documented",
-     "story_opening": "Hong Kong's government files this tree under two categories at once, and the second is the interesting half. T"
-    }
-   ]
-  },
-  {
-   "species": "Dawn Redwood (Metasequoia glyptostroboides)",
-   "slug": "dawn-redwood",
-   "count": 8,
-   "cities": [
-    "Baarn",
-    "Boston",
-    "Delft",
-    "Dublin",
-    "Edinburgh",
+    "Brussels",
+    "Caserta",
     "Hobart",
     "Portland"
    ],
    "examples": [
     {
      "city": "Hobart",
-     "name": "The Dawn Redwoods of Elizabeth Street",
-     "age": "not documented",
-     "story_opening": "Until 1941 this species was known only from fossils. Botanists had described Metasequoia from imprints in ston"
+     "name": "The Douglas Fir of the Botanical Gardens",
+     "age": "about 130 years",
+     "story_opening": "This tree is older than Australia. It went into the Royal Tasmanian Botanical Gardens in 1894, seven years before the colonies fed"
     },
     {
      "city": "Portland",
-     "name": "The Hoyt Dawn Redwood",
-     "age": "about 78 years",
-     "story_opening": "Until 1944 the dawn redwood was a fossil. Botanists knew Metasequoia only from imprints in stone and assumed i"
+     "name": "The Balch Creek Fir",
+     "age": "",
+     "story_opening": "This Douglas fir is 74 metres tall. Nothing else in Portland comes close.\n\nThe city register measures it at 243 feet, or 74.1 metr"
     },
     {
-     "city": "Baarn",
-     "name": "The Cantonspark Dawn Redwood",
-     "age": "roughly 78 years",
-     "story_opening": "Until 1941 this species existed only as a fossil. Botanists had described Metasequoia from imprints in stone a"
+     "city": "Caserta",
+     "name": "The Douglas Fir of the English Garden",
+     "age": "the register says about 200 years, which is the outer edge of possible",
+     "story_opening": "At forty metres, only one other tree in Caserta's register stands as tall, and this one's stated age does not quite work. The Camp"
     },
     {
-     "city": "Edinburgh",
-     "name": "The 1948 Dawn Redwood of the Chinese Hillside",
-     "age": "roughly 75 years",
-     "story_opening": "Until 1944, the dawn redwood was known only as a fossil, a conifer botanists assumed had died out millions of "
-    },
-    {
-     "city": "Dublin",
-     "name": "The Glasnevin Dawn Redwood",
-     "age": "roughly 65-115 years",
-     "story_opening": "Until 1941, botanists knew the dawn redwood only from fossils, certain a conifer that shed its needles every w"
-    },
-    {
-     "city": "Boston",
-     "name": "The Dawn Redwood of the Public Garden",
-     "age": "roughly 63 years (planted 1963)",
-     "story_opening": "Until 1944 this species was known only from fossils and assumed to have been extinct for millions of years. Th"
+     "city": "Brussels",
+     "name": "The Douglas Fir of the Hippodrome",
+     "age": "up to 150 years",
+     "story_opening": "The tallest tree in Brussels grows on what used to be a racecourse. This Douglas fir, standing 33 metres, took root sometime after"
     }
    ]
   },
   {
-   "species": "Black Mulberry (Morus nigra)",
-   "slug": "black-mulberry",
-   "count": 8,
+   "species": "Common Camellia (Camellia japonica)",
+   "slug": "common-camellia",
+   "count": 4,
    "cities": [
-    "Antwerp",
-    "Breda",
-    "Brussels",
-    "Cambridge",
-    "London"
+    "Guimaraes",
+    "Nara",
+    "Porto"
    ],
    "examples": [
     {
-     "city": "Breda",
-     "name": "The Mulberries of Nieuwe Veste",
-     "age": "245 years",
-     "story_opening": "A library was built around these trees rather than the other way round. Three black mulberries have grown in t"
+     "city": "Guimaraes",
+     "name": "The Camellias of Palacio Vila Flor",
+     "age": "about 195 years",
+     "story_opening": "Eighteen camellias planted across two garden terraces here have outlived the building's most fashionable era by more than a centur"
     },
     {
-     "city": "Antwerp",
-     "name": "The Black Mulberry of Hertoghepark",
-     "age": "unknown, national champion",
-     "story_opening": "Sharing Hertoghepark with Belgium's thickest black locust is a much smaller record holder: a black mulberry me"
+     "city": "Porto",
+     "name": "The Camellias of Casa Tait",
+     "age": "100+ years",
+     "story_opening": "Porto calls itself the City of Camellias, and the oldest proof of that claim is a set of hedges, not a single tree. More than sixt"
     },
     {
-     "city": "London",
-     "name": "The Mulberry of Charlton House",
-     "age": "400 years",
-     "story_opening": "James I wanted Britain to grow its own silk, and in 1608 he ordered mulberry trees planted across the country "
+     "city": "Porto",
+     "name": "The Camellias of Largo da Igreja de Paranhos",
+     "age": "roughly 220 years",
+     "story_opening": "Most people picture a camellia as a shrub in a pot. These two are six and a half metres tall with crowns ten metres across, and th"
     },
     {
-     "city": "London",
-     "name": "The Evelyn Mulberry",
-     "age": "300+ years",
-     "story_opening": "John Evelyn's garden at Sayes Court was one of the most celebrated in 17th century England, laid out by a writ"
-    },
-    {
-     "city": "London",
-     "name": "The Fountain Court Mulberries",
-     "age": "roughly 130 to 140 years",
-     "story_opening": "Two black mulberries lean on wooden crutches either side of a fountain that has been running since 1681. They "
-    },
-    {
-     "city": "London",
-     "name": "The Inner Temple Mulberry",
-     "age": "not documented",
-     "story_opening": "The Inner Temple's garden opens to the public for two and a half hours on weekday afternoons, and this tree is"
+     "city": "Nara",
+     "name": "The Five-Colour Camellia of Byakugo-ji",
+     "age": "about 400 years",
+     "story_opening": "One tree, five colours, and it does not drop its flowers the way a camellia is supposed to. This four hundred year old camellia op"
     }
    ]
   },
   {
-   "species": "Ombu (Phytolacca dioica)",
-   "slug": "ombu",
-   "count": 7,
+   "species": "Canary Island Date Palm (Phoenix canariensis)",
+   "slug": "canary-island-date-palm",
+   "count": 4,
    "cities": [
     "Barcelona",
-    "Cadiz",
-    "Lisbon",
-    "Rome",
-    "Seville"
+    "Nice",
+    "Valencia"
    ],
    "examples": [
     {
-     "city": "Cadiz",
-     "name": "The Ombu of Parque Genoves",
-     "age": "undated, cannot be aged by growth rings",
-     "story_opening": "This tree cannot be aged the normal way, because it does not grow the annual rings that make dating a trunk po"
+     "city": "Nice",
+     "name": "The First Canary Island Date Palm of France",
+     "age": "planted 1864",
+     "story_opening": "Every Phoenix canariensis lining a promenade or a hotel driveway anywhere in France arguably traces back to one estate on Nice's e"
     },
     {
-     "city": "Rome",
-     "name": "The Fitolacca of the Capitoline",
-     "age": "115 years",
-     "story_opening": "Rome's most improbable street tree is originally from the Argentine pampas, and it owes its spot on the Capito"
+     "city": "Barcelona",
+     "name": "The Canary Island Palms of the Vil.la Amelia Gardens",
+     "age": "about 132 years",
+     "story_opening": "The city register counts fourteen. The garden's own chronicler counts fifteen. Either a palm has been lost since the catalogue was"
     },
     {
-     "city": "Lisbon",
-     "name": "The Ombú of Largo do Limoeiro",
-     "age": "100+ years",
-     "story_opening": "The square is named after a lemon tree that is long gone. What replaced it as the local landmark is an ombú, a"
+     "city": "Valencia",
+     "name": "Los Tres Amigos",
+     "age": "approximately 100 years",
+     "story_opening": "Three palms standing together at the entrance to a single street have become a landmark specific enough to have lent their nicknam"
     },
     {
-     "city": "Lisbon",
-     "name": "The Belas-Sombras of Jardim António Feijó",
-     "age": "roughly 115 years",
-     "story_opening": "The two fattest trunks in this garden are not really wood. Phytolacca dioica, the bela-sombra, is a giant herb"
-    },
-    {
-     "city": "Lisbon",
-     "name": "The Bela-Sombra of Praça António Sardinha",
-     "age": "roughly 115 years",
-     "story_opening": "The roots of this one come out of the ground looking like more trunks. The parish council's own account of Pra"
-    },
-    {
-     "city": "Seville",
-     "name": "The Ombú of La Cartuja",
-     "age": "500 years",
-     "story_opening": "This ombú, a soft-wooded relative of spinach that grows to the size of an oak, is said to have come from seeds"
-    }
-   ]
-  }
- ],
- "countries": [
-  {
-   "country": "Germany",
-   "slug": "germany",
-   "trees": 57,
-   "cities": [
-    "Berlin",
-    "Munich",
-    "Nuremberg"
-   ],
-   "examples": [
-    {
-     "city": "Nuremberg",
-     "name": "The Gnarled Lime of Hallerwiese",
-     "age": "around 350 years"
-    },
-    {
-     "city": "Nuremberg",
-     "name": "The First Plane of Hallerwiese",
-     "age": "over 300 years"
-    },
-    {
-     "city": "Nuremberg",
-     "name": "The Second Plane of Hallerwiese",
-     "age": "over 300 years"
-    },
-    {
-     "city": "Nuremberg",
-     "name": "The Chestnut of Kontumazgarten",
-     "age": ""
-    },
-    {
-     "city": "Nuremberg",
-     "name": "The Founders' Plane of Kontumazgarten",
-     "age": ""
-    },
-    {
-     "city": "Nuremberg",
-     "name": "The First Beech of Kontumazgarten",
-     "age": ""
-    },
-    {
-     "city": "Nuremberg",
-     "name": "The Close Plane of Kontumazgarten",
-     "age": ""
-    },
-    {
-     "city": "Nuremberg",
-     "name": "The Paired Plane of Kontumazgarten",
-     "age": ""
+     "city": "Valencia",
+     "name": "The Palm of the Palacio de Pineda",
+     "age": "undated; palace itself built 1728-1731 but no record found of when the palm was planted",
+     "story_opening": "You can order a coffee under this one. The Palacio de Pineda was built between 1728 and 1731 for Francisco Salvador Pineda, and it"
     }
    ]
   },
   {
-   "country": "Belgium",
-   "slug": "belgium",
-   "trees": 26,
+   "species": "Canadian Poplar (Populus x canadensis)",
+   "slug": "canadian-poplar",
+   "count": 4,
    "cities": [
     "Antwerp",
-    "Brussels"
+    "Arnhem",
+    "Den Bosch",
+    "Warsaw"
    ],
    "examples": [
     {
-     "city": "Antwerp",
-     "name": "The Copper Beech of Sint-Willibrorduskerk",
-     "age": "196-237 years"
+     "city": "Den Bosch",
+     "name": "The Poplar of Pettelaarse Schans",
+     "age": "roughly 85 years",
+     "story_opening": "If the register's count holds, this poplar was planted around 1941, which puts it in the ground under German occupation and makes "
     },
     {
-     "city": "Antwerp",
-     "name": "The Summer Linden of Rivierenhof",
-     "age": "unknown, protected since 2010"
-    },
-    {
-     "city": "Antwerp",
-     "name": "The Black Locust of Hertoghepark",
-     "age": "unknown, national champion"
-    },
-    {
-     "city": "Antwerp",
-     "name": "The Black Mulberry of Hertoghepark",
-     "age": "unknown, national champion"
-    },
-    {
-     "city": "Antwerp",
-     "name": "The Cut-Leaved Horse Chestnut of Middelheim",
-     "age": "unknown, mature"
+     "city": "Warsaw",
+     "name": "The Poplar of the Defenders",
+     "age": "about 99 years",
+     "story_opening": "A mass grave was reportedly dug beneath this tree in August 1944, according to testimony from survivors of the transit camp that o"
     },
     {
      "city": "Antwerp",
      "name": "The Canadian Poplar of Eric Sasselaan",
-     "age": "unknown, fast-grown"
+     "age": "unknown, fast-grown",
+     "story_opening": "At 35 metres, this Canadian poplar is among the tallest trees recorded anywhere in Antwerp, its trunk clear of branches for a full"
     },
     {
-     "city": "Antwerp",
-     "name": "The Peace Tree of the Grote Markt",
-     "age": "under 35 years"
-    },
-    {
-     "city": "Antwerp",
-     "name": "The Park Trees of Den Brandt",
-     "age": "undated, old growth"
+     "city": "Arnhem",
+     "name": "The Poplar of Lauwersgrachtpark",
+     "age": "~250 years",
+     "story_opening": "The Netherlands' oldest poplar grows behind a concert hall, on the last stretch of canal Arnhem never filled in. Most of the city'"
     }
    ]
   },
   {
-   "country": "Austria",
-   "slug": "austria",
-   "trees": 25,
+   "species": "Black Poplar (Populus nigra)",
+   "slug": "black-poplar",
+   "count": 4,
    "cities": [
+    "Bordeaux",
+    "Setubal",
+    "Trento",
+    "Venice"
+   ],
+   "examples": [
+    {
+     "city": "Setubal",
+     "name": "The Poplars by Bocage's School",
+     "age": "about 97 years",
+     "story_opening": "Two black poplars of twenty-five metres stand beside the Escola Secundaria du Bocage, which is named for Manuel Maria Barbosa du B"
+    },
+    {
+     "city": "Bordeaux",
+     "name": "The Black Poplar of Chante-Grillon",
+     "age": "",
+     "story_opening": "No tree in Bordeaux's remarkable-tree register has a bigger waistline than this one: 741 centimetres around, three trunks fused ne"
+    },
+    {
+     "city": "Venice",
+     "name": "The Black Poplar of the Certosa",
+     "age": "undated, described as one of the island's largest specimens",
+     "story_opening": "This poplar stands alone in the middle of what is effectively an accidental nature reserve. The Certosa takes its name from a Cart"
+    },
+    {
+     "city": "Trento",
+     "name": "The Black Poplar of Largo Pigarelli",
+     "age": "",
+     "story_opening": "A black poplar with a trunk of 570 centimetres is a rarer thing than it sounds. Populus nigra is one of Europe's most threatened n"
+    }
+   ]
+  },
+  {
+   "species": "American Elm (Ulmus americana)",
+   "slug": "american-elm",
+   "count": 4,
+   "cities": [
+    "New York"
+   ],
+   "examples": [
+    {
+     "city": "New York",
+     "name": "The Great Elm of Central Park West",
+     "age": "long-established, exact planting date undocumented",
+     "story_opening": "Central Park once had roughly 500 American elms along its western edge. By 1985, a New York Times survey counted 23 left, and this"
+    },
+    {
+     "city": "New York",
+     "name": "The Elms on the Rocks",
+     "age": "long-established, exact planting date undocumented",
+     "story_opening": "Two American elms grow straight out of exposed bedrock east of Central Park's Mall, their roots spread flat across the rock like s"
+    },
+    {
+     "city": "New York",
+     "name": "The Elm Allee of Literary Walk",
+     "age": "about 100 years (planted in the 1920s, the third planting on this site)",
+     "story_opening": "Central Park's most photographed avenue of trees is not the original one. The Mall, also called Literary Walk, has been replanted "
+    },
+    {
+     "city": "New York",
+     "name": "The American Elm at the East 97th Street Entrance",
+     "age": "not documented, dates to the 1800s",
+     "story_opening": "Most of New York's elms are gone. Dutch elm disease arrived in the 1930s and by the postwar decades had killed the overwhelming ma"
+    }
+   ]
+  },
+  {
+   "species": "Western Red Cedar (Thuja plicata)",
+   "slug": "western-red-cedar",
+   "count": 3,
+   "cities": [
+    "Cork",
+    "Sintra",
+    "Strasbourg"
+   ],
+   "examples": [
+    {
+     "city": "Cork",
+     "name": "The Great Western Red Cedar of Blarney",
+     "age": "planted in the early 1900s",
+     "story_opening": "The estate calls this the most photographed tree in its gardens, which is a serious claim on grounds that also hold a medieval yew"
+    },
+    {
+     "city": "Sintra",
+     "name": "The Walking Tree of Pena",
+     "age": "approximately 150 years",
+     "story_opening": "This tree has spent a century and a half slowly relocating itself. Planted not long after King Ferdinand II began building his Rom"
+    },
+    {
+     "city": "Strasbourg",
+     "name": "The Layering Thuja of Parc de l'Orangerie",
+     "age": "",
+     "story_opening": "This tree is quietly making copies of itself. Its lowest branches have bent to the ground, rooted where they touch it and sent up "
+    }
+   ]
+  },
+  {
+   "species": "Southern Catalpa (Catalpa bignonioides)",
+   "slug": "southern-catalpa",
+   "count": 3,
+   "cities": [
+    "Amsterdam",
+    "Breda",
+    "Milan"
+   ],
+   "examples": [
+    {
+     "city": "Breda",
+     "name": "The Trumpet Tree of Wilhelminapark",
+     "age": "120 years",
+     "story_opening": "This catalpa grew sideways instead of up, and Breda decided to help it keep doing so. It leans out over the pond in Wilhelminapark"
+    },
+    {
+     "city": "Amsterdam",
+     "name": "The Twisted Catalpa of the Hortus",
+     "age": "roughly 116 years",
+     "story_opening": "The trunk turns as it rises, a slow corkscrew that the national guide to Amsterdam's monumental trees singles out as the reason to"
+    },
+    {
+     "city": "Milan",
+     "name": "La Catalpa della Guastalla",
+     "age": "approximately 136 years",
+     "story_opening": "Milan's oldest public garden, laid out in 1555 for a countess who did not live to see it finished, keeps its strangest tree behind"
+    }
+   ]
+  },
+  {
+   "species": "Saw-leaf Zelkova (Zelkova serrata)",
+   "slug": "saw-leaf-zelkova",
+   "count": 3,
+   "cities": [
+    "Florence",
+    "Kyoto",
+    "Seoul"
+   ],
+   "examples": [
+    {
+     "city": "Seoul",
+     "name": "The Hwayang-dong Zelkova",
+     "age": "about 700 years",
+     "story_opening": "A queen once caught her breath under this tree while fleeing a mutiny. In 1882, soldiers enraged over unpaid wages and foreign fav"
+    },
+    {
+     "city": "Florence",
+     "name": "The Zelkova Somebody Keeps Measuring",
+     "age": "135 years, planted 1891",
+     "story_opening": "Somebody has put a tape around this trunk three times in forty years: 3.30 metres in 1980, 3.89 in 2001, 4.40 in 2021. Very few tr"
+    },
+    {
+     "city": "Kyoto",
+     "name": "The Zelkova of Ishiyakushi Gate",
+     "age": "not documented",
+     "story_opening": "Keyaki, the Japanese name for this species, is the timber temple carpenters and drum makers reach for first, which is one reason v"
+    }
+   ]
+  },
+  {
+   "species": "Rubber Fig (Ficus elastica)",
+   "slug": "rubber-fig",
+   "count": 3,
+   "cities": [
+    "Athens",
+    "Lisbon",
+    "Seville"
+   ],
+   "examples": [
+    {
+     "city": "Lisbon",
+     "name": "The Giant Rubber Tree of Mouraria",
+     "age": "20-40 years, exact age unknown",
+     "story_opening": "Nobody knows how this tree got here, and that is most of its appeal. A rubber fig now towers some six metres over a narrow street "
+    },
+    {
+     "city": "Athens",
+     "name": "The Rubber Fig of Drosopoulou Street",
+     "age": "age undocumented, exceptional size for a species usually grown as a houseplant",
+     "story_opening": "Most people know Ficus elastica as a houseplant that tops out against a ceiling. On Drosopoulou Street in Kypseli it has done some"
+    },
+    {
+     "city": "Seville",
+     "name": "The Ficus of the Altozano",
+     "age": "54 years",
+     "story_opening": "Triana's landmark tree began as a pot plant. The city kept large containerised specimens for dressing streets and squares during c"
+    }
+   ]
+  },
+  {
+   "species": "River Red Gum (Eucalyptus camaldulensis)",
+   "slug": "river-red-gum",
+   "count": 3,
+   "cities": [
+    "Barcelona",
+    "Seville",
+    "Valencia"
+   ],
+   "examples": [
+    {
+     "city": "Seville",
+     "name": "El Gran Capitán",
+     "age": "100 years",
+     "story_opening": "Seville's tallest tree is also one of its least visited, despite standing in the middle of the historic centre. This river red gum"
+    },
+    {
+     "city": "Barcelona",
+     "name": "The Red Gum of the Placa de les Caramelles",
+     "age": "over 100 years, city register says about 120",
+     "story_opening": "Close to 30 metres of Australian tree stands in the Raval, the most tightly built neighbourhood in Barcelona and close to the last"
+    },
+    {
+     "city": "Valencia",
+     "name": "The Eucalyptus of Benimamet",
+     "age": "80-100 years",
+     "story_opening": "At just over 41 metres tall, this eucalyptus is the tallest tree in the province of Valencia and the fourth tallest recorded anywh"
+    }
+   ]
+  },
+  {
+   "species": "Japanese White Pine (Pinus parviflora)",
+   "slug": "japanese-white-pine",
+   "count": 3,
+   "cities": [
+    "Kyoto"
+   ],
+   "examples": [
+    {
+     "city": "Kyoto",
+     "name": "The Reclining Dragon Pine",
+     "age": "over 600 years",
+     "story_opening": "This pine grows sideways, not up. Standing above the stone steps between Yoshimine-dera's main hall and its pagoda, the tree's tru"
+    },
+    {
+     "city": "Kyoto",
+     "name": "The Land Boat Pine",
+     "age": "about 600 years",
+     "story_opening": "Ashikaga Yoshimitsu, the shogun who built the Golden Pavilion, once kept this tree as a bonsai in a pot. Sometime after Yoshimitsu"
+    },
+    {
+     "city": "Kyoto",
+     "name": "The Five-Needle Pine of Hosen-in",
+     "age": "about 700 years",
+     "story_opening": "Visitors to this small temple in the Ohara valley sit on red felt cushions in a wooden hall and look at the garden through the fra"
+    }
+   ]
+  },
+  {
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "slug": "japanese-cedar",
+   "count": 3,
+   "cities": [
+    "Fukuoka",
+    "Kyoto",
+    "Nara"
+   ],
+   "examples": [
+    {
+     "city": "Fukuoka",
+     "name": "The Ayasugi of Kashii Shrine",
+     "age": "traditionally about 1,800 years",
+     "story_opening": "Legend says this cedar started as a twig. Empress Jingu, returning from a campaign on the Korean peninsula in the third century, i"
+    },
+    {
+     "city": "Kyoto",
+     "name": "The Heian Cedar of Katanami",
+     "age": "about 1,200 years",
+     "story_opening": "Deep in the forested headwaters of the Katanami River, in Kyoto's rural northern hills, stands a cedar said to have been alive whe"
+    },
+    {
+     "city": "Nara",
+     "name": "The Great Cedar of Kasuga Taisha",
+     "age": "between 800 and 1,000 years",
+     "story_opening": "There is a picture scroll, donated to this shrine in 1309, in which this cedar appears as a sapling. Seven centuries later it is r"
+    }
+   ]
+  },
+  {
+   "species": "Honey Locust (Gleditsia triacanthos)",
+   "slug": "honey-locust",
+   "count": 3,
+   "cities": [
+    "Copenhagen",
+    "Florence",
+    "Zaragoza"
+   ],
+   "examples": [
+    {
+     "city": "Florence",
+     "name": "The Honey Locust of Salviatino",
+     "age": "age undocumented",
+     "story_opening": "Florence has two trees popularly linked to Judas, and this is the one people picture wrong. The tree usually called Albero di Giud"
+    },
+    {
+     "city": "Copenhagen",
+     "name": "The Honey Locust of Assistens",
+     "age": "at least 85 years, likely older",
+     "story_opening": "Someone has been keeping notes on this tree since 1941. That year a Danish gardening magazine ran a feature on beautiful trees and"
+    },
+    {
+     "city": "Zaragoza",
+     "name": "The Honey Locust of Calle Aznar Molina",
+     "age": "not documented",
+     "story_opening": "Somebody took three main branches out of this tree and it became a parasol. The honey locust on Calle Aznar Molina now carries a f"
+    }
+   ]
+  },
+  {
+   "species": "Handkerchief Tree (Davidia involucrata)",
+   "slug": "handkerchief-tree",
+   "count": 3,
+   "cities": [
+    "Copenhagen",
+    "Edinburgh",
+    "Utrecht"
+   ],
+   "examples": [
+    {
+     "city": "Edinburgh",
+     "name": "The Handkerchief Tree by Caledonian Hall",
+     "age": "roughly 95 years, accessioned by RBGE in 1928",
+     "story_opening": "The white handkerchiefs are not flowers. Davidia involucrata produces a small, dark, unremarkable flower head and wraps it in two "
+    },
+    {
+     "city": "Utrecht",
+     "name": "The Handkerchief Tree of the Oude Hortus",
+     "age": "not documented",
+     "story_opening": "For about ten days every May, this tree looks like it is covered in hundreds of small white handkerchiefs, or according to the alt"
+    },
+    {
+     "city": "Copenhagen",
+     "name": "The Handkerchief Tree of Assistens",
+     "age": "not documented",
+     "story_opening": "What looks like flowers on this tree are leaves. For roughly two weeks in May the handkerchief tree hangs hundreds of paired white"
+    }
+   ]
+  },
+  {
+   "species": "Field Elm (Ulmus minor)",
+   "slug": "field-elm",
+   "count": 3,
+   "cities": [
+    "Paris",
+    "Trento",
     "Vienna"
    ],
    "examples": [
     {
      "city": "Vienna",
-     "name": "The Cemetery Plane of Singerstraße",
-     "age": "290 years"
+     "name": "The Field Elm of Burggasse",
+     "age": "about 111 years, planted 1915",
+     "story_opening": "Europe lost most of its large elms in the second half of the twentieth century, which is reason enough to look at a field elm plan"
     },
     {
-     "city": "Vienna",
-     "name": "The Ginkgo of the Schubert Monument",
-     "age": "125 years"
+     "city": "Paris",
+     "name": "The Elm of Saint-Gervais",
+     "age": "90 years (site planted since the Middle Ages)",
+     "story_opening": "This elm is not particularly old. The address is: one has stood on this exact spot in front of the Saint-Gervais church since the "
     },
     {
-     "city": "Vienna",
-     "name": "The Chestnut Avenue of the Hauptallee",
-     "age": "about 186 years, documented planted in 1840"
-    },
-    {
-     "city": "Vienna",
-     "name": "The Ginkgo of Schönbrunn",
-     "age": "245 years"
-    },
-    {
-     "city": "Vienna",
-     "name": "The Mozart-Platane",
-     "age": "245 years"
-    },
-    {
-     "city": "Vienna",
-     "name": "The Founding Plane of Rathauspark",
-     "age": "disputed: 1783 by tradition, 1876 in the city register"
-    },
-    {
-     "city": "Vienna",
-     "name": "The Sisi-Platane of Volksgarten",
-     "age": "200+ years"
-    },
-    {
-     "city": "Vienna",
-     "name": "The Oak of the Sulzwiese",
-     "age": "estimated 150-250 years"
+     "city": "Trento",
+     "name": "The Elm of Maso Ginocchio",
+     "age": "",
+     "story_opening": "Europe lost most of its mature elms inside a single lifetime, and this one is still standing. Dutch elm disease is a fungus carrie"
     }
    ]
   },
   {
-   "country": "Ireland",
-   "slug": "ireland",
-   "trees": 22,
+   "species": "Fern-leaved Beech (Fagus sylvatica f. asplenifolia)",
+   "slug": "fern-leaved-beech",
+   "count": 3,
    "cities": [
-    "Cork",
-    "Dublin"
+    "Genoa",
+    "Munich"
    ],
    "examples": [
     {
-     "city": "Cork",
-     "name": "The Witch's Yew",
-     "age": "more than 600 years"
+     "city": "Munich",
+     "name": "The Fern-leaved Beech",
+     "age": "undated",
+     "story_opening": "Most of the Englischer Garten's protected trees are old because they survived. This one is protected because it barely exists anyw"
     },
     {
-     "city": "Cork",
-     "name": "The Great Western Red Cedar of Blarney",
-     "age": "planted in the early 1900s"
+     "city": "Munich",
+     "name": "The Fern-leaved Beech of the Amalienburg",
+     "age": "undated in the city register; a tree-recorders' database estimates roughly 180 years",
+     "story_opening": "No fern-leaved beech anywhere is much more than two centuries old, because the tree did not exist before about 1804. It is a culti"
     },
     {
-     "city": "Cork",
-     "name": "The Boole Library Redwoods",
-     "age": "approximately 150 years"
-    },
-    {
-     "city": "Cork",
-     "name": "The Monterey Pine at the Gates",
-     "age": "planted around 1929"
-    },
-    {
-     "city": "Cork",
-     "name": "The 1870 Magnolia of Fota",
-     "age": "planted in 1870"
-    },
-    {
-     "city": "Dublin",
-     "name": "The Hungry Tree",
-     "age": "100 years"
-    },
-    {
-     "city": "Dublin",
-     "name": "Queen Victoria's Sequoia",
-     "age": "165 years"
-    },
-    {
-     "city": "Dublin",
-     "name": "Dean's Tree",
-     "age": "600 years"
+     "city": "Genoa",
+     "name": "The Fernleaf Beech of Palazzo Doria-Tursi",
+     "age": "roughly 100-180 years (girth-based estimate, no dated source)",
+     "story_opening": "Genoa's city hall has a beech in its courtyard, and its leaves are wrong. This is Fagus sylvatica 'Asplenifolia', a cut-leaved spo"
     }
    ]
   },
   {
-   "country": "Czech Republic",
-   "slug": "czech-republic",
-   "trees": 17,
+   "species": "English Elm (Ulmus procera)",
+   "slug": "english-elm",
+   "count": 3,
    "cities": [
-    "Prague"
+    "Boston",
+    "New York",
+    "Portland"
    ],
    "examples": [
     {
-     "city": "Prague",
-     "name": "The Beethoven Plane",
-     "age": "estimated 200-300 years"
+     "city": "Portland",
+     "name": "The Storm Elm",
+     "age": "about 125 years",
+     "story_opening": "The Columbus Day Storm of 1962 flattened roughly 15 billion board feet of Pacific Northwest timber and gusted to 116mph over Portl"
     },
     {
-     "city": "Prague",
-     "name": "The Plane of Karlovo namesti",
-     "age": "estimated 160-190 years"
+     "city": "Boston",
+     "name": "The Shaw Memorial Elms",
+     "age": "planted between 1772 and 1812, so roughly 214 to 254 years old",
+     "story_opening": "Augustus Saint-Gaudens's memorial to Robert Gould Shaw and the Massachusetts 54th was built around these two elms, not the other w"
     },
     {
-     "city": "Prague",
-     "name": "The Plane of Kinsky Garden",
-     "age": "estimated 180-200 years"
-    },
-    {
-     "city": "Prague",
-     "name": "The Plane of Kampa",
-     "age": "213 years"
-    },
-    {
-     "city": "Prague",
-     "name": "The Twin Beech of Hvezda",
-     "age": "estimated 230 years"
-    },
-    {
-     "city": "Prague",
-     "name": "The Ginkgo of Stromovka",
-     "age": "estimated 140-220 years"
-    },
-    {
-     "city": "Prague",
-     "name": "The Oak of Cisarsky ostrov",
-     "age": "estimated 190-200 years"
-    },
-    {
-     "city": "Prague",
-     "name": "The Ash of Strahov Garden",
-     "age": "estimated 210-230 years"
+     "city": "New York",
+     "name": "The Hangman's Elm",
+     "age": "300-346 years (age estimates vary)",
+     "story_opening": "This elm is one of the oldest living things on Manhattan Island, and almost everything colorful ever said about it is unproven. It"
     }
    ]
   },
   {
-   "country": "Greece",
-   "slug": "greece",
-   "trees": 16,
+   "species": "Camperdown Elm (Ulmus glabra 'Camperdownii')",
+   "slug": "camperdown-elm",
+   "count": 3,
+   "cities": [
+    "Edinburgh",
+    "New York"
+   ],
+   "examples": [
+    {
+     "city": "Edinburgh",
+     "name": "The Camperdown Elm of St Cuthbert's",
+     "age": "80-150 years",
+     "story_opening": "A tree with no straight branches grows by the main door of St Cuthbert's Church, one of the oldest parish sites in Edinburgh even "
+    },
+    {
+     "city": "New York",
+     "name": "The Camperdown Elm",
+     "age": "about 154 years",
+     "story_opening": "Every Camperdown elm on Earth is a clone, and this one is among the oldest. The cultivar began in the 1830s when a gardener for th"
+    },
+    {
+     "city": "New York",
+     "name": "The Second Camperdown Elm of Green-Wood",
+     "age": "believed 19th or early 20th century planting, exact date unconfirmed",
+     "story_opening": "Brooklyn has two Camperdown elms, and genetically they are the same tree. Every Camperdown elm alive is a graft from one contorted"
+    }
+   ]
+  },
+  {
+   "species": "California Fan Palm (Washingtonia filifera)",
+   "slug": "california-fan-palm",
+   "count": 3,
    "cities": [
     "Athens",
-    "Thessaloniki"
+    "Barcelona",
+    "Nice"
    ],
    "examples": [
     {
      "city": "Athens",
-     "name": "The Sacred Olive Tree of the Acropolis",
-     "age": "70-110 years (current wood); mythologised lineage to 480 BC"
+     "name": "The Washingtonia Palms of the National Garden Entrance",
+     "age": "widely stated as 150+ years; the specific origin story is likely inaccurate",
+     "story_opening": "Everyone will tell you Queen Amalia planted these palms herself. The dates do not allow it. Amalia laid out the National Garden be"
     },
     {
-     "city": "Athens",
-     "name": "The Olive Tree of Pisistratus",
-     "age": "300-2,500 years (disputed)"
+     "city": "Nice",
+     "name": "The Washingtonia Palms of Villa Masséna",
+     "age": "undated, garden opened to the public in 1921",
+     "story_opening": "A Belle Époque prince's winter garden became one of Nice's most formal public spaces almost by accident of inheritance. Prince Vic"
     },
     {
-     "city": "Athens",
-     "name": "The Regrown Olive of Plato's Academy",
-     "age": "under 50 years (regrowth)"
-    },
-    {
-     "city": "Athens",
-     "name": "The Transplanted Olive of Megali tou Genous Scholis",
-     "age": "up to 1,500 years (Agricultural University of Athens assessment)"
-    },
-    {
-     "city": "Athens",
-     "name": "The Holm Oak of the National Garden",
-     "age": "150+ years"
-    },
-    {
-     "city": "Athens",
-     "name": "The Cypresses of the First Cemetery of Athens",
-     "age": "165-190 years"
-    },
-    {
-     "city": "Athens",
-     "name": "The Plane Trees of Zappeion",
-     "age": "60-165 years, mixed generations"
-    },
-    {
-     "city": "Athens",
-     "name": "The Olive Woodland of Filopappou Hill",
-     "age": "roughly 70 years"
+     "city": "Barcelona",
+     "name": "The Palms of Casa de la Misericordia",
+     "age": "about 120 years",
+     "story_opening": "Four palm trees have stood in the courtyard of a former orphanage for over a century, planted around 1904 when the building still "
     }
    ]
   },
   {
-   "country": "Turkey",
-   "slug": "turkey",
-   "trees": 14,
+   "species": "Bunya Pine (Araucaria bidwillii)",
+   "slug": "bunya-pine",
+   "count": 3,
    "cities": [
-    "Istanbul"
+    "Barcelona",
+    "Bucaco",
+    "Porto"
    ],
    "examples": [
     {
-     "city": "Istanbul",
-     "name": "The Oldest Plane of Bahçeköy",
-     "age": "1,300-1,400 years"
+     "city": "Porto",
+     "name": "The Bunya-Bunya of Jardim da Cordoaria",
+     "age": "roughly 155 years",
+     "story_opening": "The tallest thing in the Jardim da Cordoaria is Australian. The bunya pine here runs to roughly 40 metres, a dark dome standing cl"
     },
     {
-     "city": "Istanbul",
-     "name": "The Ahtapot Çınar",
-     "age": "up to 580 years"
+     "city": "Bucaco",
+     "name": "The Bunya Pine by the Palace Hotel",
+     "age": "about 160 years",
+     "story_opening": "Do not stand under this one in a bad year. The bunya pine makes the heaviest cone of any conifer on earth, up to ten kilograms, ro"
     },
     {
-     "city": "Istanbul",
-     "name": "The Hüseyin Avni Dede Plane",
-     "age": "375 years"
-    },
-    {
-     "city": "Istanbul",
-     "name": "The Taşlı Çınar",
-     "age": "446 years"
-    },
-    {
-     "city": "Istanbul",
-     "name": "The Çengelköy Plane",
-     "age": "roughly 180 years"
-    },
-    {
-     "city": "Istanbul",
-     "name": "The Cypresses of Karacaahmet",
-     "age": "440+ years (planting tradition; individual trees unconfirmed)"
-    },
-    {
-     "city": "Istanbul",
-     "name": "The Ata Fıstık Çamı",
-     "age": "397 years"
-    },
-    {
-     "city": "Istanbul",
-     "name": "The Florya Mastic Tree",
-     "age": "roughly 500 years"
+     "city": "Barcelona",
+     "name": "The Bunya Pine of the Teatre Grec",
+     "age": "about 106 years",
+     "story_opening": "A bunya pine drops cones the size of a football that can weigh ten kilograms, from seventeen metres up. In Queensland, where the s"
     }
    ]
   },
   {
-   "country": "Denmark",
-   "slug": "denmark",
-   "trees": 13,
+   "species": "Black Walnut (Juglans nigra)",
+   "slug": "black-walnut",
+   "count": 3,
    "cities": [
-    "Copenhagen"
+    "Budapest",
+    "Portland",
+    "Split"
    ],
    "examples": [
     {
-     "city": "Copenhagen",
-     "name": "The Mulberry of Proviantgarden",
-     "age": "350-420 years"
+     "city": "Budapest",
+     "name": "The Black Walnut of the Franciscan Ruins",
+     "age": "roughly 219 years",
+     "story_opening": "Budapest's biggest black walnut is also the frailest tree on this list, and both facts come from the same survey. FŐKERT, the city"
     },
     {
-     "city": "Copenhagen",
-     "name": "The Ancient Cycad of the Palm House",
-     "age": "around 184 years"
+     "city": "Portland",
+     "name": "The Kamm Walnut",
+     "age": "roughly 145 years",
+     "story_opening": "A fourteen-acre estate has been reduced to a single walnut on a school lawn. This is it.\n\nJacob Kamm was a Swiss immigrant who eng"
     },
     {
-     "city": "Copenhagen",
-     "name": "Thorvaldsen's Robinia",
-     "age": "around 185 years"
-    },
-    {
-     "city": "Copenhagen",
-     "name": "The Husalle Lindens",
-     "age": "around 300-360 years"
-    },
-    {
-     "city": "Copenhagen",
-     "name": "The Temple Tree of Landbohøjskolens Have",
-     "age": "roughly 140-145 years"
-    },
-    {
-     "city": "Copenhagen",
-     "name": "The Handkerchief Tree of Assistens",
-     "age": "not documented"
-    },
-    {
-     "city": "Copenhagen",
-     "name": "The Weeping Beech of Assistens",
-     "age": "not documented"
-    },
-    {
-     "city": "Copenhagen",
-     "name": "The Great Maple of Assistens",
-     "age": "not documented"
+     "city": "Split",
+     "name": "The Black Walnut of Đardin",
+     "age": "100+ years (undocumented)",
+     "story_opening": "The black walnut growing in Đardin, Split's 19th-century public garden by the Golden Gate, is not a Mediterranean tree at all. Jug"
     }
    ]
   },
   {
-   "country": "Hungary",
-   "slug": "hungary",
-   "trees": 12,
+   "species": "Amur Cork Tree (Phellodendron amurense)",
+   "slug": "amur-cork-tree",
+   "count": 3,
    "cities": [
-    "Budapest"
+    "Munich",
+    "Paris",
+    "Washington DC"
    ],
    "examples": [
     {
-     "city": "Budapest",
-     "name": "The Tree of Science",
-     "age": "around 203 years"
+     "city": "Washington DC",
+     "name": "The Cork Trees of the FDR Memorial",
+     "age": "at least 80 years as of the original 2006 HALS survey, so roughly 100 years now",
+     "story_opening": "In 1962 the National Park Service went looking for a record of who planted these trees and found that nobody had written it down. "
     },
     {
-     "city": "Budapest",
-     "name": "The Pagoda Tree of Buda Castle",
-     "age": "230-250 years"
+     "city": "Paris",
+     "name": "The Amur Cork Tree of Square Michel-Foucault",
+     "age": "about 100 years (planted 1925)",
+     "story_opening": "Paris classifies this Amur cork tree as one of its remarkable trees, and it carries proof of a rough century outdoors: a lightning"
     },
     {
-     "city": "Budapest",
-     "name": "The Old Acacia of Erzsebet Square",
-     "age": "150-165 years"
-    },
-    {
-     "city": "Budapest",
-     "name": "The Taban Mulberry",
-     "age": "200-300 years"
-    },
-    {
-     "city": "Budapest",
-     "name": "The Seven Chieftains Plane",
-     "age": "around 80 years"
-    },
-    {
-     "city": "Budapest",
-     "name": "The Old St Lucie Cherry of the Fuveszkert",
-     "age": "around 250 years"
-    },
-    {
-     "city": "Budapest",
-     "name": "The Count's Mulberry of Karolyi Garden",
-     "age": "roughly 230-250 years"
-    },
-    {
-     "city": "Budapest",
-     "name": "The Old Acacia of Szechenyi Square",
-     "age": "documented as 227 years (planted 1789), though disputed; possibly considerably younger"
+     "city": "Munich",
+     "name": "The Amur Cork Tree of the Luitpoldpark",
+     "age": "",
+     "story_opening": "You can press a thumb into this tree and the bark gives. The Amur cork tree carries a thick, soft, deeply ridged corky layer that "
     }
    ]
   },
   {
-   "country": "Switzerland",
-   "slug": "switzerland",
-   "trees": 10,
+   "species": "American Sycamore (Platanus occidentalis)",
+   "slug": "american-sycamore",
+   "count": 3,
    "cities": [
-    "Geneva",
-    "Zurich"
+    "Como",
+    "Ljubljana"
    ],
    "examples": [
     {
-     "city": "Geneva",
-     "name": "The Official Chestnut Tree",
-     "age": "about 11 years (the tradition dates to 1818)"
+     "city": "Ljubljana",
+     "name": "The Elder Plane of Streliska",
+     "age": "~280 years",
+     "story_opening": "Two trees are all that is left of an avenue that once ran from the foot of Ljubljana Castle to the start of the road toward Dolenj"
     },
     {
-     "city": "Geneva",
-     "name": "The Cedars of Parc Beaulieu",
-     "age": "about 290 years"
+     "city": "Ljubljana",
+     "name": "The Corner Plane of Streliska and Strossmayerjeva",
+     "age": "~280 years",
+     "story_opening": "A short walk from its twin on Streliska ulica stands the second survivor of Ljubljana's vanished plane-tree avenue, rooted exactly"
     },
     {
-     "city": "Geneva",
-     "name": "The Grange Cedar",
-     "age": "200-225 years"
-    },
-    {
-     "city": "Geneva",
-     "name": "The Botanical Garden Plane Trees",
-     "age": "at least 298 years"
-    },
-    {
-     "city": "Geneva",
-     "name": "The Sequoia Grove of Parc Barton",
-     "age": "150-170 years"
-    },
-    {
-     "city": "Geneva",
-     "name": "The Place du Cirque Plane",
-     "age": "about 120 years"
-    },
-    {
-     "city": "Zurich",
-     "name": "The 1780 Planes of Platzspitz",
-     "age": "around 246 years"
-    },
-    {
-     "city": "Zurich",
-     "name": "Alfred Escher's Giant Sequoia",
-     "age": "over 165 years"
+     "city": "Como",
+     "name": "The Sycamore of Villa Geno",
+     "age": "",
+     "story_opening": "At thirty three metres this is the tallest tree on Como's lakefront walk, and the only American on it. Platanus occidentalis is th"
     }
    ]
-  }
- ],
- "parks": [
-  {
-   "city": "Barcelona",
-   "park": "Parc de la Ciutadella",
-   "trees": 7
-  },
-  {
-   "city": "York",
-   "park": "York Museum Gardens",
-   "trees": 6
-  },
-  {
-   "city": "Milan",
-   "park": "Giardini Pubblici Indro Montanelli",
-   "trees": 6
-  },
-  {
-   "city": "Hobart",
-   "park": "Royal Tasmanian Botanical Gardens",
-   "trees": 6
   }
  ]
 }
