@@ -11,6 +11,20 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-13 - One photo per city: 34 empty cities down to 27, and the sweep learns to read
+
+Hidde's ask, from looking at the Netherlands page and its grid of grey cards: at least one photograph per city as a minimum. Measured 34 cities with none. Three defects found in `photo_hunt.py` and fixed before sweeping, each one measured rather than guessed.
+
+1. **`tree` is inside `street`.** Substring matching meant every street sign, street light and streetcorner within 250 metres of a pin counted as a photograph of a tree, which is where the queue's street signs and its "Strange random Dutch dude" came from. Matching now anchors the end of the word, which still catches the compounds that carry the plant word in Dutch and German (Kastanjeboom, Lindeboom, Kastanienbaum).
+2. **A tree's own nickname was thrown away.** A hit had to name a plant AND a place, and the Weichselboom file is titled "Weichselboom" with no place in it, so the sweep found the right photograph and discarded it. A long proper noun the tree's address does not contain now stands alone and gets its own query.
+3. **A street name is not a place.** "Parklaan" alone returns a Parklaan in Groningen, Amstelveen, Rotterdam, Haarlem and Sittard, so an address word now needs the city beside it, and the city word is read from the address too, because Den Bosch files its photographs under 's-Hertogenbosch and no alias table has that.
+
+Swept all 33 remaining cities with `--recheck` (779 trees in the queue, 349 with at least one open-licence candidate), then judged in session, because a viewing pass cannot run in CI. Landed: Den Bosch (the Weichselboom, name plate in frame), Como (Villa Geno's Himalayan cedar, Villa Olmo's cedar), Trento (the Via Vannetti plane in full autumn colour, the best of the batch), Genoa (Villa Durazzo-Pallavicini's camphor, identity settled by the file's own description, its Commons category and its coordinates rather than by the filename), Portland, Strasbourg, Trieste. Rejected and recorded so nobody looks twice: two oak leaves on the ground for Toulouse, a foliage close-up for Split, a hand holding a twig for Reykjavik.
+
+Also fixed at the root: Commons files its Artist field as HTML and the sweep truncated it at 120 characters WITH the markup, so a half-closed link tag reached a photo credit on the live Genoa page. Stripped before truncation now.
+
+27 cities still have no photograph, 8 of them Dutch. The candidates are on the shelf; what they need is eyes, which means a session rather than a night run.
+
 ## 2026-08-13 - Baarn's oak fixed from the ground, and the photo lane's real bottleneck named
 
 Hidde walked into the Pekingtuin and photographed it, which settled a question no aerial tile could. Our entry had welded two true facts into one false claim: Wikipedia's American oak (1850, 5.52m round) and a news story about a 2021 poetry ring, published as if the ring were around the oak. It is not. The ring stands around a smaller purple-leaved tree, the oak is 60 metres east, and our pin sat at the ring, marked confirmed. Fixed: pin at 52.209694, 5.292861, story rewritten, `how_to_recognise` added for the one pair in that park anybody could confuse, and the site's first owner-supplied photograph now lives at `site/public/photos/`, credited to Ancient Trees rather than to a person. Detail and the how-it-happened in CURATION.md.
