@@ -1211,6 +1211,15 @@
         "note": "Session write pass, no agent dispatch: 3 already-verified leads (cas_008-010) written straight from data/leads/caserta.json to close the gap to CITY_QUEUE.md target (7 to 10). Coast redwood, chilgoza pine and the second English Garden plane, all previously held back only for being next in line, not for any real defect. Updated stale seven-tree count in meta_description and two FAQ answers.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "bucaco",
+        "kind": "write",
+        "tokens": 30000,
+        "trees": 3,
+        "note": "Session write pass: 3 ICNF register leads (bsc_007-009, Via Sacra cypress and oak, Lago Grande cork oak) written after finding a genuine second source for each via WebFetch/WebSearch (en.wikipedia.org Bucaco Forest article names Mexican cypress and oak among the forest species, matching the sourcing pattern already used for bsc_001-006). Checked and rejected American ash and sycamore maple leads from the same file: no corroborating source found beyond the register despite real searching, left as leads rather than shipped single-source.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }

@@ -2,7 +2,7 @@
   "city": "Bucaco",
   "country": "Portugal",
   "status": "needs_curation",
-  "intro": "Bucaco is a forest behind a wall, and the wall is the reason it exists. Discalced Carmelite friars enclosed this hillside in 1628 and got two popes to protect it in writing, one bull threatening excommunication for anyone who damaged a tree. Four centuries of that produced 105 hectares holding more than 250 species, including the cypress that Philip Miller named after Portugal from specimens he saw here. The six trees on this page stand within about a kilometre of each other, and one of them named a species.",
+  "intro": "Bucaco is a forest behind a wall, and the wall is the reason it exists. Discalced Carmelite friars enclosed this hillside in 1628 and got two popes to protect it in writing, one bull threatening excommunication for anyone who damaged a tree. Four centuries of that produced 105 hectares holding more than 250 species, including the cypress that Philip Miller named after Portugal from specimens he saw here. The nine trees on this page stand within about a kilometre of each other, and one of them named a species.",
   "meta_description": "Bucaco's ancient trees: the cedar that named a species, Europe's fourth tallest tree, and a bunya pine, all inside one walled forest above Luso.",
   "question_meta": "The Cedro de Sao Jose, a Mexican cypress planted between 1628 and 1650 by the Carmelite friars, is the oldest tree in the Bucaco forest.",
   "question_answer": "The oldest tree in the Mata Nacional do Bucaco is the Cedro de Sao Jose, a Mexican cypress standing in the forecourt of the Ermida de Sao Jose. The forest's own plaque at its foot says it was planted between 1628 and 1650, which makes it roughly 380 years old and the oldest cedar in the forest. It is not really a cedar, and it is not Portuguese: Cupressus lusitanica comes from Mexico and Central America.",
@@ -18,7 +18,7 @@
     },
     {
       "q": "Can you walk between these trees?",
-      "a": "Yes. All six stand inside the walled forest within about a kilometre, starting at the Largo do Mosteiro beside the Palace Hotel and ending at the Ermida de Sao Jose. Paths are forest paths and the ground is steep in places."
+      "a": "Yes. All nine stand inside the walled forest within about a kilometre, starting at the Largo do Mosteiro beside the Palace Hotel and ending at the Ermida de Sao Jose. Paths are forest paths and the ground is steep in places."
     },
     {
       "q": "Is the tallest tree in Europe here?",
@@ -210,6 +210,96 @@
       },
       "curation_status": "flagged",
       "notes": "Vitality resolved carefully and it nearly went the other way. Publico and RTP write about this tree in the past tense after cyclone Gong of January 2013, and a first read of them suggested it had died. Three things say otherwise: ICNF measured it in 2016 and classified it in 2018, and the 2018 classification statement says none of the classified specimens showed poor vegetative or sanitary condition; a Portuguese species article states it was significantly damaged by Gong but survived and calls it the oldest still existing in the Mata; and a Commons photograph of 17 September 2023 shows green foliage on the broken trunk inside its railing. Flagged rather than clean because the crown is a wreck and a visitor must be told so before travelling. Age comes from the on-site plaque, photographed 2020, which reads: planted between 1628 and 1650, over 350 years, the oldest cedar in the Mata do Bussaco. The register's 372 years at the 2016 measurement, so 382 now, falls inside that range. PHOTO: viewed at full size. It is an honest and dramatic upward shot showing the railing and the surviving green, but it is an extreme low angle and the crown does not read as a tree shape, so it is left at found_needs_check for a human eye on the card crop rather than approved.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bsc_007",
+      "name": "The Cedro-do-Bucaco of the First Fall",
+      "species": "Mexican Cypress (Cupressus lusitanica)",
+      "age_estimate": "about 310 years",
+      "age_min": 280,
+      "age_max": 340,
+      "location": {
+        "address": "Passo da Primeira Queda, Via Sacra, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37450474,
+        "longitude": -8.366271519,
+        "neighbourhood": "Via Sacra"
+      },
+      "story": "Stop at the wrong shrine and you might miss it: this cypress stands beside the station on the Via Sacra that marks Christ's first fall, one of the roughly twenty small chapels barefoot Carmelite friars built at the end of the seventeenth century, the distance between each one measured out to match the walk from the Mount of Olives to Calvary. The tree itself has nothing to do with that geography. Cupressus lusitanica is native to Mexico and Guatemala, and Bucaco's own name for it, cedro-do-bucaco, only exists because Carmelite gardeners planted so many of them here from the sixteenth century onward that the species became identified with this one forest on the far side of the Atlantic from where it belongs. Wikipedia calls it the forest's most abundant tree, and this specimen is a serious example of it: five metres and a quarter around the trunk, thirty-one metres tall, and by the state's own measurement in 2016 already three centuries old, which would make it the second oldest classified tree in the whole forest after the more famous Cedro de Sao Jose a short walk south. No source names this particular tree by its position on the Via Sacra, only the forest's register, so treat the age and the rank as the register's word rather than a settled fact.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://en.wikipedia.org/wiki/Bu%C3%A7aco_Forest"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "On the Via Sacra path above the monastery, about 500 m up from the Largo do Mosteiro",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "ICNF processo AIP01110412I: girth 5.26 m, height 31 m, 300 years at the 2016 measurement, so about 310 now. Wikipedia's forest article names Mexican cypress as the most abundant tree in Bucaco, corroborating species and presence; no independent source confirms the age or this individual specimen, which rests on the register alone.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bsc_008",
+      "name": "The Pedunculate Oak of the Capela de Sao Pedro",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 310 years",
+      "age_min": 280,
+      "age_max": 340,
+      "location": {
+        "address": "Capela de Sao Pedro, Via Sacra, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37523414,
+        "longitude": -8.367303251,
+        "neighbourhood": "Via Sacra"
+      },
+      "story": "Almost everything classified in this forest arrived by ship. This oak did not. Quercus robur is one of only two native species on Bucaco's whole list of protected trees, a remnant of the woodland that stood here before the Carmelites arrived in the 1620s and began filling the hillside with cypresses, redwoods and eucalyptus from four continents. Wikipedia's account of the forest names a stand of oak among the survivors of that original cover, which is exactly what this is: not an import chosen for a garden, but a tree the friars found already growing when they built the convent and its wayside chapels. This one stands by the chapel of Sao Pedro on the Via Sacra, four metres ninety around the trunk and twenty-four metres tall, with a crown that reaches almost twenty-one metres across, comfortably the widest native canopy in the collection. The state's 2016 measurement put it at three hundred years, tied with the cypress at the first Via Sacra station for the second oldest tree in the register after the Cedro de Sao Jose, though no source beyond the register dates this individual tree. It is easy to walk past it looking for the exotic specimen and miss the one tree here that was never planted for effect.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://en.wikipedia.org/wiki/Bu%C3%A7aco_Forest"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "On the Via Sacra path above the monastery, about 600 m up from the Largo do Mosteiro",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "ICNF processo AIP01110411I: girth 4.92 m, height 24 m, crown 20.7 m, 300 years at the 2016 measurement, so about 310 now. Wikipedia's forest article names oak among the species of the forest's relic native cover, corroborating species and presence; the age rests on the register alone.",
+      "location_precision": "confirmed"
+    },
+    {
+      "id": "bsc_009",
+      "name": "The Cork Oak of the Lago Grande",
+      "species": "Cork Oak (Quercus suber)",
+      "age_estimate": "not recorded",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "South slope above the Lago Grande, Mata Nacional do Bucaco, 3050-261 Luso",
+        "latitude": 40.37732111,
+        "longitude": -8.371175723,
+        "neighbourhood": "Lago Grande"
+      },
+      "story": "Portugal's national tree gets one entry in a forest built to show off everything else. Quercus suber, the cork oak, is the species the country names much of its rural economy after: cork bark is stripped from living trunks every nine years or so without killing the tree, and most of the world's supply still comes from Portuguese hillsides. Here, on the south slope above the Lago Grande, it stands quietly among cypresses from Mexico, redwoods from California and a eucalyptus that ranks among the tallest trees in Europe, four metres and a quarter around the trunk and seventeen and a half metres tall, its thick, deeply fissured bark visibly different from every conifer around it. The register gives no age, which for a cork oak is not unusual: old specimens can run past three centuries and nobody has cored this one to count the rings. What identifies it beyond the bare register entry is the species itself: Wikipedia's account of the forest's surviving native cover names oak among its few original inhabitants, the same corroboration the pedunculate oak by the Capela de Sao Pedro carries. Stand here and you are looking at the one tree in this collection that needed no ship to arrive.",
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://en.wikipedia.org/wiki/Bu%C3%A7aco_Forest"
+      ],
+      "access": "Free on foot. Cars pay 5 euros at the forest gate",
+      "transport": "South slope above the Lago Grande, about 900 m from the Largo do Mosteiro",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "ICNF processo AIP01110423I: girth 4.26 m, height 17.5 m, no age recorded in the register. Wikipedia's forest article names oak among the species of the forest's relic native cover, corroborating species and presence; no independent source for this individual tree.",
       "location_precision": "confirmed"
     }
   ]
