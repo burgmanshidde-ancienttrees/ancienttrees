@@ -9,7 +9,7 @@
  "fetched": "2026-08-13",
  "publish_dots": true,
  "scope": "IMPORTANT: the source dataset is the metropole's FULL tree inventory (80,025 records), which our own rule forbids importing wholesale. This file holds ONLY the 227 records the register itself tags statut_patrimonial=REMARQUABLE_SYMBOLIQUE, a genuine semantic designation the city applies per tree, not a bulk import. Of the 227, 142 stand in Bordeaux commune itself, 75 in Mérignac, and the rest scattered across Bassens, Bègles, Gradignan, Le Haillan and Ambarès-et-Lagrave (all Bordeaux Métropole communes, so within the metro's own reach). A separate 171 records carry CLASSE_COMME_MONUMENT_OU_SITE_PLU (132 overlapping with REMARQUABLE_SYMBOLIQUE, 39 standalone); the 39 standalone ones were left out of this import as a weaker signal (a planning-document classification rather than a remarkable designation) and are worth a second look.",
- "caveat": "status_life ('statut' field, VIVANT/SOUCHE) is the closest thing to a vitality field this register has: 221 of the 227 are VIVANT (alive), 6 are SOUCHE (stump) and must never ship. 'vigueur' (vigour: ELEVEE/MOYENNE/FAIBLE) is null for most of this subset so cannot be relied on. age_approximatif and circonference_tronc are frequently null in this subset (many entries have only species, site and coordinates); treat presence of a number as a lead to verify, not a publishable fact on its own. girth/diameter fields are already in centimetres per the field name and a spot check against known Bordeaux trees, unlike the Portugal register's metres trap, but sanity-check per record before trusting one.",
+ "caveat": "status_life ('statut' field, VIVANT/SOUCHE) is the closest thing to a vitality field this register has: 221 of the 227 are VIVANT (alive), 6 are SOUCHE (stump) and must never ship. 'vigueur' (vigour: ELEVEE/MOYENNE/FAIBLE) is null for most of this subset so cannot be relied on. age_approximatif and circonference_tronc are frequently null in this subset (many entries have only species, site and coordinates); treat presence of a number as a lead to verify, not a publishable fact on its own. girth/diameter fields are already in centimetres per the field name and a spot check against known Bordeaux trees, unlike the Portugal register's metres trap, but sanity-check per record before trusting one. CORRECTED ON REVIEW 2026-08-13: status_life is NOT sufficient. Seven entries carry a date_disparition (one as recent as 2024-12-11, Merignac's ginkgo) while status_life still reads VIVANT, so the felling date is the real vitality signal and status_life lags it. Every row now carries `publishable`; only true rows may be considered, and a run must still confirm the tree stands.",
  "entries": [
   {
    "gid": 153383,
@@ -32,7 +32,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8464324,
-   "longitude": -0.656704
+   "longitude": -0.656704,
+   "publishable": true
   },
   {
    "gid": 154397,
@@ -55,7 +56,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8531318,
-   "longitude": -0.639286
+   "longitude": -0.639286,
+   "publishable": true
   },
   {
    "gid": 154377,
@@ -78,7 +80,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8211542,
-   "longitude": -0.6160321
+   "longitude": -0.6160321,
+   "publishable": true
   },
   {
    "gid": 154378,
@@ -101,7 +104,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8212531,
-   "longitude": -0.6160534
+   "longitude": -0.6160534,
+   "publishable": true
   },
   {
    "gid": 154022,
@@ -124,7 +128,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8448354,
-   "longitude": -0.6547245
+   "longitude": -0.6547245,
+   "publishable": true
   },
   {
    "gid": 153973,
@@ -147,7 +152,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8444846,
-   "longitude": -0.6556993
+   "longitude": -0.6556993,
+   "publishable": true
   },
   {
    "gid": 155020,
@@ -170,7 +176,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8251322,
-   "longitude": -0.644696
+   "longitude": -0.644696,
+   "publishable": true
   },
   {
    "gid": 154390,
@@ -193,7 +200,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8480934,
-   "longitude": -0.6523152
+   "longitude": -0.6523152,
+   "publishable": true
   },
   {
    "gid": 177995,
@@ -216,7 +224,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8521567,
-   "longitude": -0.6491002
+   "longitude": -0.6491002,
+   "publishable": true
   },
   {
    "gid": 92653,
@@ -239,7 +248,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8226696,
-   "longitude": -0.6231909
+   "longitude": -0.6231909,
+   "publishable": true
   },
   {
    "gid": 101082,
@@ -262,7 +272,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8441497,
-   "longitude": -0.6388996
+   "longitude": -0.6388996,
+   "publishable": true
   },
   {
    "gid": 4600,
@@ -285,7 +296,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8496091,
-   "longitude": -0.5767224
+   "longitude": -0.5767224,
+   "publishable": true
   },
   {
    "gid": 200679,
@@ -308,7 +320,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8373485,
-   "longitude": -0.6335451
+   "longitude": -0.6335451,
+   "publishable": true
   },
   {
    "gid": 178504,
@@ -331,7 +344,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8380173,
-   "longitude": -0.6363928
+   "longitude": -0.6363928,
+   "publishable": true
   },
   {
    "gid": 178505,
@@ -354,7 +368,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8380408,
-   "longitude": -0.636472
+   "longitude": -0.636472,
+   "publishable": true
   },
   {
    "gid": 178507,
@@ -377,7 +392,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8381734,
-   "longitude": -0.6364986
+   "longitude": -0.6364986,
+   "publishable": true
   },
   {
    "gid": 201428,
@@ -400,7 +416,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8387472,
-   "longitude": -0.6342546
+   "longitude": -0.6342546,
+   "publishable": true
   },
   {
    "gid": 200995,
@@ -423,7 +440,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8375242,
-   "longitude": -0.6316515
+   "longitude": -0.6316515,
+   "publishable": true
   },
   {
    "gid": 154489,
@@ -446,7 +464,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8251533,
-   "longitude": -0.6343452
+   "longitude": -0.6343452,
+   "publishable": true
   },
   {
    "gid": 105287,
@@ -469,7 +488,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.9031086,
-   "longitude": -0.5256133
+   "longitude": -0.5256133,
+   "publishable": true
   },
   {
    "gid": 199778,
@@ -492,7 +512,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.835243,
-   "longitude": -0.6289067
+   "longitude": -0.6289067,
+   "publishable": true
   },
   {
    "gid": 94306,
@@ -515,7 +536,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8515789,
-   "longitude": -0.6447387
+   "longitude": -0.6447387,
+   "publishable": true
   },
   {
    "gid": 101769,
@@ -538,7 +560,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8444111,
-   "longitude": -0.6534434
+   "longitude": -0.6534434,
+   "publishable": true
   },
   {
    "gid": 96403,
@@ -561,7 +584,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8365343,
-   "longitude": -0.6414871
+   "longitude": -0.6414871,
+   "publishable": true
   },
   {
    "gid": 96667,
@@ -584,7 +608,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8394972,
-   "longitude": -0.6532951
+   "longitude": -0.6532951,
+   "publishable": true
   },
   {
    "gid": 101080,
@@ -607,7 +632,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8211956,
-   "longitude": -0.6166718
+   "longitude": -0.6166718,
+   "publishable": true
   },
   {
    "gid": 98088,
@@ -630,7 +656,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8241812,
-   "longitude": -0.6270471
+   "longitude": -0.6270471,
+   "publishable": true
   },
   {
    "gid": 153968,
@@ -653,7 +680,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8455258,
-   "longitude": -0.6564544
+   "longitude": -0.6564544,
+   "publishable": true
   },
   {
    "gid": 87954,
@@ -676,7 +704,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.7983291,
-   "longitude": -0.5590953
+   "longitude": -0.5590953,
+   "publishable": true
   },
   {
    "gid": 154379,
@@ -699,7 +728,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8210692,
-   "longitude": -0.6167288
+   "longitude": -0.6167288,
+   "publishable": true
   },
   {
    "gid": 1242,
@@ -722,7 +752,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8407837,
-   "longitude": -0.5807258
+   "longitude": -0.5807258,
+   "publishable": true
   },
   {
    "gid": 13093,
@@ -745,7 +776,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8741766,
-   "longitude": -0.6703925
+   "longitude": -0.6703925,
+   "publishable": true
   },
   {
    "gid": 201048,
@@ -768,7 +800,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.838294,
-   "longitude": -0.6299838
+   "longitude": -0.6299838,
+   "publishable": true
   },
   {
    "gid": 154019,
@@ -791,7 +824,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8447961,
-   "longitude": -0.6543996
+   "longitude": -0.6543996,
+   "publishable": true
   },
   {
    "gid": 177691,
@@ -814,7 +848,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8512187,
-   "longitude": -0.6467768
+   "longitude": -0.6467768,
+   "publishable": true
   },
   {
    "gid": 177996,
@@ -837,7 +872,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8521209,
-   "longitude": -0.6489747
+   "longitude": -0.6489747,
+   "publishable": true
   },
   {
    "gid": 177627,
@@ -860,7 +896,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8419824,
-   "longitude": -0.6615959
+   "longitude": -0.6615959,
+   "publishable": true
   },
   {
    "gid": 178038,
@@ -883,7 +920,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.852557,
-   "longitude": -0.650498
+   "longitude": -0.650498,
+   "publishable": true
   },
   {
    "gid": 26219,
@@ -906,7 +944,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8543913,
-   "longitude": -0.5857681
+   "longitude": -0.5857681,
+   "publishable": true
   },
   {
    "gid": 99157,
@@ -929,7 +968,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8161856,
-   "longitude": -0.6370687
+   "longitude": -0.6370687,
+   "publishable": true
   },
   {
    "gid": 101076,
@@ -952,7 +992,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8211302,
-   "longitude": -0.6165712
+   "longitude": -0.6165712,
+   "publishable": true
   },
   {
    "gid": 41876,
@@ -975,7 +1016,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8457239,
-   "longitude": -0.5396678
+   "longitude": -0.5396678,
+   "publishable": true
   },
   {
    "gid": 49709,
@@ -998,7 +1040,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8446691,
-   "longitude": -0.5595988
+   "longitude": -0.5595988,
+   "publishable": true
   },
   {
    "gid": 201381,
@@ -1021,7 +1064,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8386089,
-   "longitude": -0.6341032
+   "longitude": -0.6341032,
+   "publishable": true
   },
   {
    "gid": 199621,
@@ -1044,7 +1088,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8370344,
-   "longitude": -0.6279068
+   "longitude": -0.6279068,
+   "publishable": true
   },
   {
    "gid": 42766,
@@ -1067,7 +1112,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.7778139,
-   "longitude": -0.6145955
+   "longitude": -0.6145955,
+   "publishable": true
   },
   {
    "gid": 200719,
@@ -1090,7 +1136,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8370038,
-   "longitude": -0.6333457
+   "longitude": -0.6333457,
+   "publishable": true
   },
   {
    "gid": 200663,
@@ -1113,7 +1160,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8376988,
-   "longitude": -0.6341554
+   "longitude": -0.6341554,
+   "publishable": true
   },
   {
    "gid": 104803,
@@ -1136,7 +1184,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.9375097,
-   "longitude": -0.4994151
+   "longitude": -0.4994151,
+   "publishable": true
   },
   {
    "gid": 177626,
@@ -1159,7 +1208,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8419844,
-   "longitude": -0.6615738
+   "longitude": -0.6615738,
+   "publishable": true
   },
   {
    "gid": 154369,
@@ -1182,7 +1232,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.838252,
-   "longitude": -0.6286882
+   "longitude": -0.6286882,
+   "publishable": true
   },
   {
    "gid": 154382,
@@ -1205,7 +1256,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8198966,
-   "longitude": -0.6176982
+   "longitude": -0.6176982,
+   "publishable": true
   },
   {
    "gid": 155592,
@@ -1228,7 +1280,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.933969,
-   "longitude": -0.5125227
+   "longitude": -0.5125227,
+   "publishable": true
   },
   {
    "gid": 154389,
@@ -1251,7 +1304,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8463944,
-   "longitude": -0.65314
+   "longitude": -0.65314,
+   "publishable": true
   },
   {
    "gid": 101063,
@@ -1274,7 +1328,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8162861,
-   "longitude": -0.6365991
+   "longitude": -0.6365991,
+   "publishable": true
   },
   {
    "gid": 154383,
@@ -1297,7 +1352,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8225855,
-   "longitude": -0.6502606
+   "longitude": -0.6502606,
+   "publishable": true
   },
   {
    "gid": 154392,
@@ -1320,7 +1376,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8525555,
-   "longitude": -0.651434
+   "longitude": -0.651434,
+   "publishable": true
   },
   {
    "gid": 154490,
@@ -1343,7 +1400,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8251334,
-   "longitude": -0.6317701
+   "longitude": -0.6317701,
+   "publishable": true
   },
   {
    "gid": 154491,
@@ -1366,7 +1424,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8180249,
-   "longitude": -0.6606713
+   "longitude": -0.6606713,
+   "publishable": true
   },
   {
    "gid": 147751,
@@ -1389,7 +1448,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.9352217,
-   "longitude": -0.4702559
+   "longitude": -0.4702559,
+   "publishable": true
   },
   {
    "gid": 200584,
@@ -1412,7 +1472,9 @@
    "date_disparition": "2024-12-11",
    "cause_disparition": null,
    "latitude": 44.8374801,
-   "longitude": -0.6343194
+   "longitude": -0.6343194,
+   "publishable": false,
+   "publishable_note": "date_disparition is set, so this tree is GONE whatever status_life says. Six SOUCHE stumps were already excluded on import; these seven were not, because the register leaves status_life on VIVANT after felling."
   },
   {
    "gid": 178738,
@@ -1435,7 +1497,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.817838,
-   "longitude": -0.6372052
+   "longitude": -0.6372052,
+   "publishable": true
   },
   {
    "gid": 201027,
@@ -1458,7 +1521,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8383372,
-   "longitude": -0.628462
+   "longitude": -0.628462,
+   "publishable": true
   },
   {
    "gid": 178503,
@@ -1481,7 +1545,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8377553,
-   "longitude": -0.6359186
+   "longitude": -0.6359186,
+   "publishable": true
   },
   {
    "gid": 201212,
@@ -1504,7 +1569,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8381558,
-   "longitude": -0.6285855
+   "longitude": -0.6285855,
+   "publishable": true
   },
   {
    "gid": 95568,
@@ -1527,7 +1593,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8414263,
-   "longitude": -0.6575331
+   "longitude": -0.6575331,
+   "publishable": true
   },
   {
    "gid": 97876,
@@ -1550,7 +1617,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8288317,
-   "longitude": -0.6473677
+   "longitude": -0.6473677,
+   "publishable": true
   },
   {
    "gid": 97001,
@@ -1573,7 +1641,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8388897,
-   "longitude": -0.6533596
+   "longitude": -0.6533596,
+   "publishable": true
   },
   {
    "gid": 101083,
@@ -1596,7 +1665,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8250826,
-   "longitude": -0.6632102
+   "longitude": -0.6632102,
+   "publishable": true
   },
   {
    "gid": 177994,
@@ -1619,7 +1689,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8520347,
-   "longitude": -0.6491096
+   "longitude": -0.6491096,
+   "publishable": true
   },
   {
    "gid": 200359,
@@ -1642,7 +1713,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8366485,
-   "longitude": -0.6308968
+   "longitude": -0.6308968,
+   "publishable": true
   },
   {
    "gid": 29709,
@@ -1665,7 +1737,9 @@
    "date_disparition": "2021-02-11",
    "cause_disparition": "ETAT_MECANIQUE",
    "latitude": 44.8633733,
-   "longitude": -0.5632269
+   "longitude": -0.5632269,
+   "publishable": false,
+   "publishable_note": "date_disparition is set, so this tree is GONE whatever status_life says. Six SOUCHE stumps were already excluded on import; these seven were not, because the register leaves status_life on VIVANT after felling."
   },
   {
    "gid": 11817,
@@ -1688,7 +1762,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8760312,
-   "longitude": -0.5432373
+   "longitude": -0.5432373,
+   "publishable": true
   },
   {
    "gid": 13316,
@@ -1711,7 +1786,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8436464,
-   "longitude": -0.627284
+   "longitude": -0.627284,
+   "publishable": true
   },
   {
    "gid": 154342,
@@ -1734,7 +1810,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8444904,
-   "longitude": -0.6551303
+   "longitude": -0.6551303,
+   "publishable": true
   },
   {
    "gid": 155019,
@@ -1757,7 +1834,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8440377,
-   "longitude": -0.6652942
+   "longitude": -0.6652942,
+   "publishable": true
   },
   {
    "gid": 154396,
@@ -1780,7 +1858,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8482307,
-   "longitude": -0.6513361
+   "longitude": -0.6513361,
+   "publishable": true
   },
   {
    "gid": 177922,
@@ -1803,7 +1882,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8522575,
-   "longitude": -0.6479896
+   "longitude": -0.6479896,
+   "publishable": true
   },
   {
    "gid": 178506,
@@ -1826,7 +1906,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8381094,
-   "longitude": -0.6364567
+   "longitude": -0.6364567,
+   "publishable": true
   },
   {
    "gid": 154482,
@@ -1849,7 +1930,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8484004,
-   "longitude": -0.6511857
+   "longitude": -0.6511857,
+   "publishable": true
   },
   {
    "gid": 154381,
@@ -1872,7 +1954,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8202796,
-   "longitude": -0.6158894
+   "longitude": -0.6158894,
+   "publishable": true
   },
   {
    "gid": 154391,
@@ -1895,7 +1978,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8498821,
-   "longitude": -0.6508618
+   "longitude": -0.6508618,
+   "publishable": true
   },
   {
    "gid": 154395,
@@ -1918,7 +2002,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8487641,
-   "longitude": -0.6509758
+   "longitude": -0.6509758,
+   "publishable": true
   },
   {
    "gid": 154376,
@@ -1941,7 +2026,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8256102,
-   "longitude": -0.6396578
+   "longitude": -0.6396578,
+   "publishable": true
   },
   {
    "gid": 154380,
@@ -1964,7 +2050,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8206155,
-   "longitude": -0.6164905
+   "longitude": -0.6164905,
+   "publishable": true
   },
   {
    "gid": 155593,
@@ -1987,7 +2074,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.933868,
-   "longitude": -0.5125719
+   "longitude": -0.5125719,
+   "publishable": true
   },
   {
    "gid": 153962,
@@ -2010,7 +2098,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8442284,
-   "longitude": -0.6576605
+   "longitude": -0.6576605,
+   "publishable": true
   },
   {
    "gid": 153964,
@@ -2033,7 +2122,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8454634,
-   "longitude": -0.6565014
+   "longitude": -0.6565014,
+   "publishable": true
   },
   {
    "gid": 154107,
@@ -2056,7 +2146,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8449221,
-   "longitude": -0.6559947
+   "longitude": -0.6559947,
+   "publishable": true
   },
   {
    "gid": 153683,
@@ -2079,7 +2170,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8447506,
-   "longitude": -0.6564176
+   "longitude": -0.6564176,
+   "publishable": true
   },
   {
    "gid": 153969,
@@ -2102,7 +2194,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8452567,
-   "longitude": -0.6562119
+   "longitude": -0.6562119,
+   "publishable": true
   },
   {
    "gid": 28939,
@@ -2125,7 +2218,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8509118,
-   "longitude": -0.6143839
+   "longitude": -0.6143839,
+   "publishable": true
   },
   {
    "gid": 31855,
@@ -2148,7 +2242,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8562661,
-   "longitude": -0.5798225
+   "longitude": -0.5798225,
+   "publishable": true
   },
   {
    "gid": 1241,
@@ -2171,7 +2266,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8413799,
-   "longitude": -0.5804656
+   "longitude": -0.5804656,
+   "publishable": true
   },
   {
    "gid": 6909,
@@ -2194,7 +2290,9 @@
    "date_disparition": "2024-04-18",
    "cause_disparition": "ETAT_MECANIQUE",
    "latitude": 44.8606056,
-   "longitude": -0.5829726
+   "longitude": -0.5829726,
+   "publishable": false,
+   "publishable_note": "date_disparition is set, so this tree is GONE whatever status_life says. Six SOUCHE stumps were already excluded on import; these seven were not, because the register leaves status_life on VIVANT after felling."
   },
   {
    "gid": 8858,
@@ -2217,7 +2315,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8550582,
-   "longitude": -0.6237942
+   "longitude": -0.6237942,
+   "publishable": true
   },
   {
    "gid": 8869,
@@ -2240,7 +2339,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8458749,
-   "longitude": -0.6134512
+   "longitude": -0.6134512,
+   "publishable": true
   },
   {
    "gid": 5357,
@@ -2263,7 +2363,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8516872,
-   "longitude": -0.6111811
+   "longitude": -0.6111811,
+   "publishable": true
   },
   {
    "gid": 8988,
@@ -2286,7 +2387,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8423727,
-   "longitude": -0.6053118
+   "longitude": -0.6053118,
+   "publishable": true
   },
   {
    "gid": 9196,
@@ -2309,7 +2411,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.855513,
-   "longitude": -0.6236189
+   "longitude": -0.6236189,
+   "publishable": true
   },
   {
    "gid": 9552,
@@ -2332,7 +2435,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8330386,
-   "longitude": -0.6103455
+   "longitude": -0.6103455,
+   "publishable": true
   },
   {
    "gid": 9465,
@@ -2355,7 +2459,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8227553,
-   "longitude": -0.6001993
+   "longitude": -0.6001993,
+   "publishable": true
   },
   {
    "gid": 3401,
@@ -2378,7 +2483,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8526083,
-   "longitude": -0.6042438
+   "longitude": -0.6042438,
+   "publishable": true
   },
   {
    "gid": 3928,
@@ -2401,7 +2507,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8540772,
-   "longitude": -0.6035277
+   "longitude": -0.6035277,
+   "publishable": true
   },
   {
    "gid": 3389,
@@ -2424,7 +2531,9 @@
    "date_disparition": "2020-03-24",
    "cause_disparition": "ETAT_MECANIQUE",
    "latitude": 44.8531379,
-   "longitude": -0.6042511
+   "longitude": -0.6042511,
+   "publishable": false,
+   "publishable_note": "date_disparition is set, so this tree is GONE whatever status_life says. Six SOUCHE stumps were already excluded on import; these seven were not, because the register leaves status_life on VIVANT after felling."
   },
   {
    "gid": 10738,
@@ -2447,7 +2556,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8314555,
-   "longitude": -0.5616065
+   "longitude": -0.5616065,
+   "publishable": true
   },
   {
    "gid": 8799,
@@ -2470,7 +2580,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8599221,
-   "longitude": -0.5615921
+   "longitude": -0.5615921,
+   "publishable": true
   },
   {
    "gid": 32051,
@@ -2493,7 +2604,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8378582,
-   "longitude": -0.5899297
+   "longitude": -0.5899297,
+   "publishable": true
   },
   {
    "gid": 9188,
@@ -2516,7 +2628,9 @@
    "date_disparition": "2025-06-13",
    "cause_disparition": "ACCIDENT_CLIMATIQUE_VENTS",
    "latitude": 44.8423742,
-   "longitude": -0.605346
+   "longitude": -0.605346,
+   "publishable": false,
+   "publishable_note": "date_disparition is set, so this tree is GONE whatever status_life says. Six SOUCHE stumps were already excluded on import; these seven were not, because the register leaves status_life on VIVANT after felling."
   },
   {
    "gid": 7933,
@@ -2539,7 +2653,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.844935,
-   "longitude": -0.5414338
+   "longitude": -0.5414338,
+   "publishable": true
   },
   {
    "gid": 9253,
@@ -2562,7 +2677,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8483866,
-   "longitude": -0.6008925
+   "longitude": -0.6008925,
+   "publishable": true
   },
   {
    "gid": 9072,
@@ -2585,7 +2701,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8568865,
-   "longitude": -0.6170035
+   "longitude": -0.6170035,
+   "publishable": true
   },
   {
    "gid": 18602,
@@ -2608,7 +2725,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8437193,
-   "longitude": -0.5864566
+   "longitude": -0.5864566,
+   "publishable": true
   },
   {
    "gid": 7938,
@@ -2631,7 +2749,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.844808,
-   "longitude": -0.5414688
+   "longitude": -0.5414688,
+   "publishable": true
   },
   {
    "gid": 7939,
@@ -2654,7 +2773,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8453991,
-   "longitude": -0.5413056
+   "longitude": -0.5413056,
+   "publishable": true
   },
   {
    "gid": 8509,
@@ -2677,7 +2797,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8160053,
-   "longitude": -0.5553415
+   "longitude": -0.5553415,
+   "publishable": true
   },
   {
    "gid": 13335,
@@ -2700,7 +2821,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8432115,
-   "longitude": -0.6255819
+   "longitude": -0.6255819,
+   "publishable": true
   },
   {
    "gid": 19542,
@@ -2723,7 +2845,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8479303,
-   "longitude": -0.5833911
+   "longitude": -0.5833911,
+   "publishable": true
   },
   {
    "gid": 18603,
@@ -2746,7 +2869,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8436195,
-   "longitude": -0.5863973
+   "longitude": -0.5863973,
+   "publishable": true
   },
   {
    "gid": 19075,
@@ -2769,7 +2893,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8436641,
-   "longitude": -0.5866618
+   "longitude": -0.5866618,
+   "publishable": true
   },
   {
    "gid": 29656,
@@ -2792,7 +2917,9 @@
    "date_disparition": "2020-05-04",
    "cause_disparition": "ACCIDENT_CLIMATIQUE_AUTRE",
    "latitude": 44.8632872,
-   "longitude": -0.5637421
+   "longitude": -0.5637421,
+   "publishable": false,
+   "publishable_note": "date_disparition is set, so this tree is GONE whatever status_life says. Six SOUCHE stumps were already excluded on import; these seven were not, because the register leaves status_life on VIVANT after felling."
   },
   {
    "gid": 29701,
@@ -2815,7 +2942,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8631138,
-   "longitude": -0.5634448
+   "longitude": -0.5634448,
+   "publishable": true
   },
   {
    "gid": 41918,
@@ -2838,7 +2966,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8809845,
-   "longitude": -0.5495133
+   "longitude": -0.5495133,
+   "publishable": true
   },
   {
    "gid": 30349,
@@ -2861,7 +2990,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8443105,
-   "longitude": -0.5427797
+   "longitude": -0.5427797,
+   "publishable": true
   },
   {
    "gid": 7291,
@@ -2884,7 +3014,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8603768,
-   "longitude": -0.5841417
+   "longitude": -0.5841417,
+   "publishable": true
   },
   {
    "gid": 7306,
@@ -2907,7 +3038,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8606565,
-   "longitude": -0.5830149
+   "longitude": -0.5830149,
+   "publishable": true
   },
   {
    "gid": 12803,
@@ -2930,7 +3062,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8484821,
-   "longitude": -0.540175
+   "longitude": -0.540175,
+   "publishable": true
   },
   {
    "gid": 11967,
@@ -2953,7 +3086,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8736833,
-   "longitude": -0.5494456
+   "longitude": -0.5494456,
+   "publishable": true
   },
   {
    "gid": 7943,
@@ -2976,7 +3110,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8449993,
-   "longitude": -0.541416
+   "longitude": -0.541416,
+   "publishable": true
   },
   {
    "gid": 5056,
@@ -2999,7 +3134,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8572482,
-   "longitude": -0.5794473
+   "longitude": -0.5794473,
+   "publishable": true
   },
   {
    "gid": 8828,
@@ -3022,7 +3158,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8730763,
-   "longitude": -0.5705682
+   "longitude": -0.5705682,
+   "publishable": true
   },
   {
    "gid": 9124,
@@ -3045,7 +3182,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8574465,
-   "longitude": -0.6165778
+   "longitude": -0.6165778,
+   "publishable": true
   },
   {
    "gid": 8609,
@@ -3068,7 +3206,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8616573,
-   "longitude": -0.5800075
+   "longitude": -0.5800075,
+   "publishable": true
   },
   {
    "gid": 7940,
@@ -3091,7 +3230,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8453329,
-   "longitude": -0.5413238
+   "longitude": -0.5413238,
+   "publishable": true
   },
   {
    "gid": 7944,
@@ -3114,7 +3254,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8450638,
-   "longitude": -0.5413982
+   "longitude": -0.5413982,
+   "publishable": true
   },
   {
    "gid": 10981,
@@ -3137,7 +3278,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8155213,
-   "longitude": -0.5644287
+   "longitude": -0.5644287,
+   "publishable": true
   },
   {
    "gid": 9282,
@@ -3160,7 +3302,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.855633,
-   "longitude": -0.6249069
+   "longitude": -0.6249069,
+   "publishable": true
   },
   {
    "gid": 4856,
@@ -3183,7 +3326,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8491451,
-   "longitude": -0.5783609
+   "longitude": -0.5783609,
+   "publishable": true
   },
   {
    "gid": 5530,
@@ -3206,7 +3350,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8650461,
-   "longitude": -0.6243189
+   "longitude": -0.6243189,
+   "publishable": true
   },
   {
    "gid": 6563,
@@ -3229,7 +3374,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8602172,
-   "longitude": -0.5842232
+   "longitude": -0.5842232,
+   "publishable": true
   },
   {
    "gid": 4324,
@@ -3252,7 +3398,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8531818,
-   "longitude": -0.6039063
+   "longitude": -0.6039063,
+   "publishable": true
   },
   {
    "gid": 8462,
@@ -3275,7 +3422,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8556325,
-   "longitude": -0.6249805
+   "longitude": -0.6249805,
+   "publishable": true
   },
   {
    "gid": 9438,
@@ -3298,7 +3446,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.825952,
-   "longitude": -0.5967685
+   "longitude": -0.5967685,
+   "publishable": true
   },
   {
    "gid": 13215,
@@ -3321,7 +3470,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8283006,
-   "longitude": -0.599335
+   "longitude": -0.599335,
+   "publishable": true
   },
   {
    "gid": 9550,
@@ -3344,7 +3494,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8329395,
-   "longitude": -0.6101428
+   "longitude": -0.6101428,
+   "publishable": true
   },
   {
    "gid": 8754,
@@ -3367,7 +3518,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.844678,
-   "longitude": -0.5866634
+   "longitude": -0.5866634,
+   "publishable": true
   },
   {
    "gid": 9554,
@@ -3390,7 +3542,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8329676,
-   "longitude": -0.6103698
+   "longitude": -0.6103698,
+   "publishable": true
   },
   {
    "gid": 13311,
@@ -3413,7 +3566,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8664916,
-   "longitude": -0.5693505
+   "longitude": -0.5693505,
+   "publishable": true
   },
   {
    "gid": 10721,
@@ -3436,7 +3590,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8314017,
-   "longitude": -0.5614439
+   "longitude": -0.5614439,
+   "publishable": true
   },
   {
    "gid": 10724,
@@ -3459,7 +3614,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.831438,
-   "longitude": -0.5615525
+   "longitude": -0.5615525,
+   "publishable": true
   },
   {
    "gid": 8604,
@@ -3482,7 +3638,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8615976,
-   "longitude": -0.5801306
+   "longitude": -0.5801306,
+   "publishable": true
   },
   {
    "gid": 8783,
@@ -3505,7 +3662,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8601248,
-   "longitude": -0.561804
+   "longitude": -0.561804,
+   "publishable": true
   },
   {
    "gid": 9320,
@@ -3528,7 +3686,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8305267,
-   "longitude": -0.5633246
+   "longitude": -0.5633246,
+   "publishable": true
   },
   {
    "gid": 7948,
@@ -3551,7 +3710,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8458757,
-   "longitude": -0.5411739
+   "longitude": -0.5411739,
+   "publishable": true
   },
   {
    "gid": 7947,
@@ -3574,7 +3734,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8454644,
-   "longitude": -0.5412876
+   "longitude": -0.5412876,
+   "publishable": true
   },
   {
    "gid": 8450,
@@ -3597,7 +3758,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.85839,
-   "longitude": -0.5802681
+   "longitude": -0.5802681,
+   "publishable": true
   },
   {
    "gid": 7945,
@@ -3620,7 +3782,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8446174,
-   "longitude": -0.5415215
+   "longitude": -0.5415215,
+   "publishable": true
   },
   {
    "gid": 7946,
@@ -3643,7 +3806,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8447427,
-   "longitude": -0.5414868
+   "longitude": -0.5414868,
+   "publishable": true
   },
   {
    "gid": 8608,
@@ -3666,7 +3830,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8617206,
-   "longitude": -0.5798777
+   "longitude": -0.5798777,
+   "publishable": true
   },
   {
    "gid": 11978,
@@ -3689,7 +3854,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8737942,
-   "longitude": -0.5494023
+   "longitude": -0.5494023,
+   "publishable": true
   },
   {
    "gid": 22171,
@@ -3712,7 +3878,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8528942,
-   "longitude": -0.6009954
+   "longitude": -0.6009954,
+   "publishable": true
   },
   {
    "gid": 18601,
@@ -3735,7 +3902,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.843586,
-   "longitude": -0.5865725
+   "longitude": -0.5865725,
+   "publishable": true
   },
   {
    "gid": 29755,
@@ -3758,7 +3926,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8631833,
-   "longitude": -0.5634202
+   "longitude": -0.5634202,
+   "publishable": true
   },
   {
    "gid": 30178,
@@ -3781,7 +3950,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8587126,
-   "longitude": -0.5807588
+   "longitude": -0.5807588,
+   "publishable": true
   },
   {
    "gid": 30620,
@@ -3804,7 +3974,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8305086,
-   "longitude": -0.559957
+   "longitude": -0.559957,
+   "publishable": true
   },
   {
    "gid": 8807,
@@ -3827,7 +3998,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.860075,
-   "longitude": -0.5617503
+   "longitude": -0.5617503,
+   "publishable": true
   },
   {
    "gid": 13333,
@@ -3850,7 +4022,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8432618,
-   "longitude": -0.6255697
+   "longitude": -0.6255697,
+   "publishable": true
   },
   {
    "gid": 28600,
@@ -3873,7 +4046,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8794879,
-   "longitude": -0.5465949
+   "longitude": -0.5465949,
+   "publishable": true
   },
   {
    "gid": 29760,
@@ -3896,7 +4070,9 @@
    "date_disparition": "2020-05-04",
    "cause_disparition": "ACCIDENT_CLIMATIQUE_AUTRE",
    "latitude": 44.8633025,
-   "longitude": -0.5637454
+   "longitude": -0.5637454,
+   "publishable": false,
+   "publishable_note": "date_disparition is set, so this tree is GONE whatever status_life says. Six SOUCHE stumps were already excluded on import; these seven were not, because the register leaves status_life on VIVANT after felling."
   },
   {
    "gid": 8527,
@@ -3919,7 +4095,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8748025,
-   "longitude": -0.5533333
+   "longitude": -0.5533333,
+   "publishable": true
   },
   {
    "gid": 7934,
@@ -3942,7 +4119,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8458033,
-   "longitude": -0.5411941
+   "longitude": -0.5411941,
+   "publishable": true
   },
   {
    "gid": 7935,
@@ -3965,7 +4143,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8452005,
-   "longitude": -0.5413605
+   "longitude": -0.5413605,
+   "publishable": true
   },
   {
    "gid": 8614,
@@ -3988,7 +4167,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8586363,
-   "longitude": -0.580418
+   "longitude": -0.580418,
+   "publishable": true
   },
   {
    "gid": 8618,
@@ -4011,7 +4191,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8587105,
-   "longitude": -0.5806412
+   "longitude": -0.5806412,
+   "publishable": true
   },
   {
    "gid": 8620,
@@ -4034,7 +4215,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8584928,
-   "longitude": -0.5802925
+   "longitude": -0.5802925,
+   "publishable": true
   },
   {
    "gid": 41917,
@@ -4057,7 +4239,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8809536,
-   "longitude": -0.5495958
+   "longitude": -0.5495958,
+   "publishable": true
   },
   {
    "gid": 12831,
@@ -4080,7 +4263,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8474956,
-   "longitude": -0.5393471
+   "longitude": -0.5393471,
+   "publishable": true
   },
   {
    "gid": 13180,
@@ -4103,7 +4287,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.828305,
-   "longitude": -0.5992996
+   "longitude": -0.5992996,
+   "publishable": true
   },
   {
    "gid": 9549,
@@ -4126,7 +4311,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8329374,
-   "longitude": -0.6102155
+   "longitude": -0.6102155,
+   "publishable": true
   },
   {
    "gid": 11982,
@@ -4149,7 +4335,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8738496,
-   "longitude": -0.5493808
+   "longitude": -0.5493808,
+   "publishable": true
   },
   {
    "gid": 16033,
@@ -4172,7 +4359,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8368733,
-   "longitude": -0.5952679
+   "longitude": -0.5952679,
+   "publishable": true
   },
   {
    "gid": 16395,
@@ -4195,7 +4383,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8542287,
-   "longitude": -0.5984767
+   "longitude": -0.5984767,
+   "publishable": true
   },
   {
    "gid": 19539,
@@ -4218,7 +4407,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8481057,
-   "longitude": -0.5832174
+   "longitude": -0.5832174,
+   "publishable": true
   },
   {
    "gid": 19540,
@@ -4241,7 +4431,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8480304,
-   "longitude": -0.5831241
+   "longitude": -0.5831241,
+   "publishable": true
   },
   {
    "gid": 29714,
@@ -4264,7 +4455,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8632831,
-   "longitude": -0.5637049
+   "longitude": -0.5637049,
+   "publishable": true
   },
   {
    "gid": 29708,
@@ -4287,7 +4479,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8630877,
-   "longitude": -0.5634347
+   "longitude": -0.5634347,
+   "publishable": true
   },
   {
    "gid": 13083,
@@ -4310,7 +4503,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.874109,
-   "longitude": -0.670018
+   "longitude": -0.670018,
+   "publishable": true
   },
   {
    "gid": 28573,
@@ -4333,7 +4527,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8794476,
-   "longitude": -0.5464487
+   "longitude": -0.5464487,
+   "publishable": true
   },
   {
    "gid": 88433,
@@ -4356,7 +4551,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8152359,
-   "longitude": -0.5454727
+   "longitude": -0.5454727,
+   "publishable": true
   },
   {
    "gid": 6324,
@@ -4379,7 +4575,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8565778,
-   "longitude": -0.578745
+   "longitude": -0.578745,
+   "publishable": true
   },
   {
    "gid": 8082,
@@ -4402,7 +4599,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.842671,
-   "longitude": -0.5457208
+   "longitude": -0.5457208,
+   "publishable": true
   },
   {
    "gid": 6679,
@@ -4425,7 +4623,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8586296,
-   "longitude": -0.5810002
+   "longitude": -0.5810002,
+   "publishable": true
   },
   {
    "gid": 8789,
@@ -4448,7 +4647,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8600272,
-   "longitude": -0.5617007
+   "longitude": -0.5617007,
+   "publishable": true
   },
   {
    "gid": 7936,
@@ -4471,7 +4671,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8448706,
-   "longitude": -0.5414515
+   "longitude": -0.5414515,
+   "publishable": true
   },
   {
    "gid": 8817,
@@ -4494,7 +4695,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8598689,
-   "longitude": -0.561539
+   "longitude": -0.561539,
+   "publishable": true
   },
   {
    "gid": 8513,
@@ -4517,7 +4719,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8729523,
-   "longitude": -0.5705555
+   "longitude": -0.5705555,
+   "publishable": true
   },
   {
    "gid": 8613,
@@ -4540,7 +4743,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8585614,
-   "longitude": -0.5803466
+   "longitude": -0.5803466,
+   "publishable": true
   },
   {
    "gid": 8774,
@@ -4563,7 +4767,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8599746,
-   "longitude": -0.561647
+   "longitude": -0.561647,
+   "publishable": true
   },
   {
    "gid": 19538,
@@ -4586,7 +4791,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8479067,
-   "longitude": -0.5833362
+   "longitude": -0.5833362,
+   "publishable": true
   },
   {
    "gid": 11974,
@@ -4609,7 +4815,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8737388,
-   "longitude": -0.549424
+   "longitude": -0.549424,
+   "publishable": true
   },
   {
    "gid": 20136,
@@ -4632,7 +4839,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8271414,
-   "longitude": -0.5819867
+   "longitude": -0.5819867,
+   "publishable": true
   },
   {
    "gid": 5046,
@@ -4655,7 +4863,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8649719,
-   "longitude": -0.624306
+   "longitude": -0.624306,
+   "publishable": true
   },
   {
    "gid": 4611,
@@ -4678,7 +4887,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.849381,
-   "longitude": -0.5762241
+   "longitude": -0.5762241,
+   "publishable": true
   },
   {
    "gid": 4732,
@@ -4701,7 +4911,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8485641,
-   "longitude": -0.5792597
+   "longitude": -0.5792597,
+   "publishable": true
   },
   {
    "gid": 6086,
@@ -4724,7 +4935,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8541313,
-   "longitude": -0.5836915
+   "longitude": -0.5836915,
+   "publishable": true
   },
   {
    "gid": 28614,
@@ -4747,7 +4959,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8795639,
-   "longitude": -0.5464973
+   "longitude": -0.5464973,
+   "publishable": true
   },
   {
    "gid": 29773,
@@ -4770,7 +4983,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8631061,
-   "longitude": -0.5634634
+   "longitude": -0.5634634,
+   "publishable": true
   },
   {
    "gid": 35449,
@@ -4793,7 +5007,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8207497,
-   "longitude": -0.6023065
+   "longitude": -0.6023065,
+   "publishable": true
   },
   {
    "gid": 7941,
@@ -4816,7 +5031,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8455323,
-   "longitude": -0.5412688
+   "longitude": -0.5412688,
+   "publishable": true
   },
   {
    "gid": 8501,
@@ -4839,7 +5055,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8730108,
-   "longitude": -0.5705616
+   "longitude": -0.5705616,
+   "publishable": true
   },
   {
    "gid": 8603,
@@ -4862,7 +5079,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8617982,
-   "longitude": -0.5799029
+   "longitude": -0.5799029,
+   "publishable": true
   },
   {
    "gid": 8605,
@@ -4885,7 +5103,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8614106,
-   "longitude": -0.5805429
+   "longitude": -0.5805429,
+   "publishable": true
   },
   {
    "gid": 7942,
@@ -4908,7 +5127,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8457362,
-   "longitude": -0.5412126
+   "longitude": -0.5412126,
+   "publishable": true
   },
   {
    "gid": 8512,
@@ -4931,7 +5151,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8731401,
-   "longitude": -0.5705748
+   "longitude": -0.5705748,
+   "publishable": true
   },
   {
    "gid": 19541,
@@ -4954,7 +5175,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8480718,
-   "longitude": -0.5831736
+   "longitude": -0.5831736,
+   "publishable": true
   },
   {
    "gid": 9112,
@@ -4977,7 +5199,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8558907,
-   "longitude": -0.6237017
+   "longitude": -0.6237017,
+   "publishable": true
   },
   {
    "gid": 7937,
@@ -5000,7 +5223,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8451343,
-   "longitude": -0.5413788
+   "longitude": -0.5413788,
+   "publishable": true
   },
   {
    "gid": 8962,
@@ -5023,7 +5247,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8559267,
-   "longitude": -0.6236794
+   "longitude": -0.6236794,
+   "publishable": true
   },
   {
    "gid": 8983,
@@ -5046,7 +5271,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8549894,
-   "longitude": -0.6238448
+   "longitude": -0.6238448,
+   "publishable": true
   },
   {
    "gid": 9555,
@@ -5069,7 +5295,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8329541,
-   "longitude": -0.610306
+   "longitude": -0.610306,
+   "publishable": true
   },
   {
    "gid": 8424,
@@ -5092,7 +5319,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8728886,
-   "longitude": -0.5705489
+   "longitude": -0.5705489,
+   "publishable": true
   },
   {
    "gid": 9293,
@@ -5115,7 +5343,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8508267,
-   "longitude": -0.6152354
+   "longitude": -0.6152354,
+   "publishable": true
   },
   {
    "gid": 9551,
@@ -5138,7 +5367,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8329111,
-   "longitude": -0.6100553
+   "longitude": -0.6100553,
+   "publishable": true
   },
   {
    "gid": 10717,
@@ -5161,7 +5391,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8313805,
-   "longitude": -0.5613769
+   "longitude": -0.5613769,
+   "publishable": true
   },
   {
    "gid": 10719,
@@ -5184,7 +5415,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8313235,
-   "longitude": -0.5615103
+   "longitude": -0.5615103,
+   "publishable": true
   },
   {
    "gid": 6067,
@@ -5207,7 +5439,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8566333,
-   "longitude": -0.5788595
+   "longitude": -0.5788595,
+   "publishable": true
   },
   {
    "gid": 28595,
@@ -5230,7 +5463,8 @@
    "date_disparition": null,
    "cause_disparition": null,
    "latitude": 44.8795148,
-   "longitude": -0.5463871
+   "longitude": -0.5463871,
+   "publishable": true
   }
  ]
 }

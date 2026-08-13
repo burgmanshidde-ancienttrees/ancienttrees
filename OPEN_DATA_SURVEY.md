@@ -1149,3 +1149,27 @@ came back empty or blocked. Two files added: `data/registers/bayern-
 naturdenkmale.json` (4,860 entries statewide) and `data/registers/hamburg-
 naturdenkmale.json` (12 entries, 2 usable). No host hung (nothing added to
 `data/fetch-blocklist.json`); the RLP endpoints 404'd cleanly.
+
+
+### Correction to the France sweep, made on review the same day (2026-08-13)
+
+Bordeaux's import shipped with `status_life` named as its vitality field and six
+SOUCHE stumps excluded. That was not enough. **Seven further entries carry a
+`date_disparition` while `status_life` still reads VIVANT**, the most recent
+being Merignac's ginkgo felled on 2024-12-11 and one from 2025-06-13. The
+register updates the felling date but does not update the life status, so the
+date is the real signal and the status lags it, sometimes by years.
+
+Every row now carries `publishable`, false for the six stumps and the seven
+felled trees, 220 true. **The general form, worth applying to every register
+from here: when a source has two fields that could each answer "is it alive",
+check them against each other rather than picking one.** Catalonia taught us to
+look for a vitality field at all; Bordeaux teaches that finding one is not the
+end of the check.
+
+Two more things this subset gets wrong, recorded so a verify pass does not
+inherit them as facts: eight entries have a girth under one metre, one of them a
+JEUNE (young) tree at 63 cm, so the city's REMARQUABLE flag is a designation
+rather than a statement about age or size; and `age_approx` and `vigueur` are
+null on most rows, so a number there is a lead to verify and never a publishable
+fact on its own.
