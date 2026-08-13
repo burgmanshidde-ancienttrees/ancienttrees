@@ -19,13 +19,16 @@ this file and walks.ts drift apart; keep them in step.
 """
 import json
 import math
-import math
 import re
+import sys
 import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
+
+sys.path.insert(0, str(ROOT / "scripts"))
+from geo import km as haversine_km  # noqa: E402
 
 ERRORS = []
 
@@ -80,15 +83,6 @@ def load_cities():
         entry["data"] = json.loads(f.read_text()) if f.exists() else None
     check_city_names(city_list)
     return city_list
-
-
-def haversine_km(a, b):
-    """Straight line distance between two (lat, lng) points, in kilometres."""
-    lat1, lng1 = math.radians(a[0]), math.radians(a[1])
-    lat2, lng2 = math.radians(b[0]), math.radians(b[1])
-    h = (math.sin((lat2 - lat1) / 2) ** 2
-         + math.cos(lat1) * math.cos(lat2) * math.sin((lng2 - lng1) / 2) ** 2)
-    return 2 * 6371.0 * math.asin(math.sqrt(h))
 
 
 # Streets do not run in straight lines, so the crow-flies total always
