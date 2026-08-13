@@ -1,0 +1,42 @@
+{
+  "leads": [
+    {
+      "objectid": 19,
+      "species": "Cedrus atlantica 'Glauca' (Atlas Blue Cedar)",
+      "reason": "City of Hobart Significant Tree Register ref B17, '71 Brooker Avenue, Domain House Site, on southern boundary of the site'. Category 3 (very old or venerable): 'listed by Gordon Paulin, Hobart Domain Educational Site Conservation Study - arboricultural Study, 1993, Volume 3 for its age', plus historic-site and local significance. No numeric age given. Domain House is the former High School of Hobart / early University of Tasmania building, now a University of Tasmania / TasTAFE campus (nursing and midwifery per current use). Public access to the grounds is not confirmed: the site appears in Open House Hobart's special-event listing (implying it is not routinely open), and no source found confirms daily public access to the grounds around the building. Holding back on access grounds per hard rule 10 ('when in doubt, leave it out') rather than shipping an unconfirmed access claim. Worth a direct check with UTAS/TasTAFE on normal opening hours."
+    },
+    {
+      "objectid": 10,
+      "species": "Quercus robur (English Oak)",
+      "reason": "Same Domain House Site cluster as above (ref B8, near the Graphics Building). Register gives a specific age: 'approximately 100 years old', outstanding canopy spread, listed in the 1993 Gordon Paulin arboricultural study as a 'feature'. Good candidate on the facts; blocked on the same unconfirmed-access basis as the Atlas Blue Cedar above. Same site, same access question, worth resolving together."
+    },
+    {
+      "objectid": 49,
+      "species": "Abies numidica (Algerian Fir)",
+      "reason": "Same Domain House Site cluster (ref B7). No significance narrative extracted beyond the address and species. Same unconfirmed-access issue as the two entries above."
+    },
+    {
+      "objectid": 1249,
+      "species": "Eucalyptus globulus (Tasmanian Blue Gum)",
+      "reason": "City of Hobart Significant Tree Register ref S24, '20 Sandy Bay Road (St David's Park), Hobart'. Register itself says this tree 'is a replacement for a remnant blue gum, and is the only large eucalypt in the park' (Category 5, park/landscape significance only, no aesthetic or dimension category). No age given; likely a relatively young replacement planting rather than a genuinely old specimen. Single-sourced (register only); searched for a second source on this specific tree and found none. Publicly accessible (St David's Park is a free public park) so this is purely an evidence-thinness lead, not an access problem: could ship if a writer/session wants a modest native-species entry, but it did not clear the bar for this pass given the 'replacement tree' caveat and lack of any outstanding-dimension or age claim."
+    },
+    {
+      "note": "Other Domain House Site conifers in the register (Abies pinsapo B14, Araucaria bidwillii B12, Pinus wallichiana B10/B20, Cedrus deodara B9, Casaurina obesa B23/B24, Lauris nobilis B16, Cedrus atlantica B15 and others clustered around objectids 1-26 near -42.8765,147.3305) were not individually fetched this pass; they sit in the same unconfirmed-access Domain House cluster as the three leads above and should be resolved as a batch once access is confirmed."
+    },
+    {
+      "note": "hellohobart.com.au (Feb 2025) mentions 'heritage-listed Giant Sequoia trees in St David's Park' as iconic Hobart trees, distinct from both the Government House sequoia and the Royal Tasmanian Botanical Gardens pair already shipped in hobart-verified.json. No matching Sequoiadendron entry found in the 452-row register-candidates file within 5km of the centre for St David's Park specifically (coordinates approx -42.8861, 147.3289). Possibly the article is imprecise about location (confusing St David's Park with the Cathedral or RTBG), or the trees are registered under a different name/address not matched by this search. Worth a targeted look if a future pass has time."
+    }
+  ],
+  "blocked": [
+    {
+      "objectid": 1331,
+      "species": "Sequoiadendron giganteum (Giant Sequoia)",
+      "reason": "City of Hobart Significant Tree Register ref B2, '7 Lower Domain Road, Queens Domain', on Crown land forming part of the Government House estate: 'located adjacent to the main entrance courtyard... highly visible as one approaches on the entrance drive'. Estimated planting 1860-1880; in 1921 its height was almost level with the clock tower. A genuinely remarkable tree, but Government House Tasmania's grounds are open to the public only on specific Open Days (typically November) or via pre-arranged official tours; day-to-day access is restricted (viceregal residence). Blocked under hard rule 10: not genuinely open to visitors. Do not confuse with the different pair of Giant Sequoias at 11 Lower Domain Road inside the Royal Tasmanian Botanical Gardens (freely open daily), which shipped as hob_007."
+    },
+    {
+      "objectid": 1212,
+      "species": "Aesculus hippocastanum (Horse Chestnut)",
+      "reason": "City of Hobart Significant Tree Register ref H4, '164 Harrington Street (St Mary's College)'. Register: aesthetically striking in flower, very large in height and canopy spread, over 100 years old, 'a landmark tree in the local area, which has very few mature trees'. Genuinely strong candidate on the facts, but the tree stands within St Mary's College, a private girls' school; the grounds are not open to the public. Visible from Harrington Street but hard rule 10 requires the tree itself be on land genuinely open to visitors, not merely visible from a public footpath. Blocked rather than shipped with a 'view from the street' caveat."
+    }
+  ]
+}

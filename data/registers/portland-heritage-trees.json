@@ -4965,7 +4965,7 @@
    "longitude": -122.69570608,
    "rule10": "public",
    "publishable": false,
-   "publishable_note": "the register's own status says removed"
+   "publishable_note": "delisted in 2000 when the owner refused nomination, so the register no longer designates it: the semantic filter, not a death"
   },
   {
    "objectid": 259,
@@ -8360,8 +8360,9 @@
    "latitude": 45.57147216,
    "longitude": -122.69566737,
    "rule10": "public",
-   "publishable": true,
-   "check_alive": true
+   "publishable": false,
+   "check_alive": true,
+   "publishable_note": "delisted in 2000 when the owner refused nomination, so the register no longer designates it: the semantic filter, not a death"
   },
   {
    "objectid": 439,
