@@ -50,7 +50,18 @@ const RENAMED_TREE_SLUGS: [string, string, string][] = [
 
 // A tree pulled outright, no replacement. Mirrors REMOVED_TREE_SLUGS,
 // build_site.py:5290.
-const REMOVED_TREE_SLUGS: [string, string][] = [["lyon", "cedar-of-ile-barbe"]];
+// muc_015-018 (2026-08-13): a writing pass on 2026-08-12 re-wrote four
+// Schlosspark Nymphenburg register entries that were already published as
+// muc_011-014, giving the same four physical trees two ids and two pages
+// each. The earlier ids (with address/age/best_time filled in) survive;
+// these four newer, thinner duplicates were removed from data/cities/munich.json.
+const REMOVED_TREE_SLUGS: [string, string][] = [
+  ["lyon", "cedar-of-ile-barbe"],
+  ["munich", "copper-beech-of-nymphenburg"],
+  ["munich", "nymphenburg-lime"],
+  ["munich", "fern-leaved-beech-of-nymphenburg"],
+  ["munich", "weeping-beech-of-nymphenburg"],
+];
 
 // Ported verbatim from slugify(), build_site.py:918. Order matters: strip
 // quotes and a leading "the " BEFORE the NFKD/ASCII fold, same as the Python.

@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 26767,
+ "count": 26763,
  "trees": [
   {
    "id": "ams_001",
@@ -9829,70 +9829,6 @@
    "has_photo": false,
    "has_story": true,
    "sources": 2
-  },
-  {
-   "id": "muc_015",
-   "tier": "highlighted",
-   "name": "The Copper Beech of Nymphenburg",
-   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-   "city": "Munich",
-   "country": "Germany",
-   "lat": 48.15403,
-   "lng": 11.49411,
-   "precision": "approximate",
-   "age_min": null,
-   "age_max": null,
-   "has_photo": false,
-   "has_story": true,
-   "sources": 0
-  },
-  {
-   "id": "muc_016",
-   "tier": "highlighted",
-   "name": "The Nymphenburg Lime",
-   "species": "Large-leaved Lime (Tilia platyphyllos)",
-   "city": "Munich",
-   "country": "Germany",
-   "lat": 48.15455,
-   "lng": 11.49324,
-   "precision": "approximate",
-   "age_min": null,
-   "age_max": null,
-   "has_photo": false,
-   "has_story": true,
-   "sources": 0
-  },
-  {
-   "id": "muc_017",
-   "tier": "highlighted",
-   "name": "The Fern-leaved Beech of Nymphenburg",
-   "species": "Fern-leaved Beech (Fagus sylvatica f. asplenifolia)",
-   "city": "Munich",
-   "country": "Germany",
-   "lat": 48.15528,
-   "lng": 11.50042,
-   "precision": "approximate",
-   "age_min": null,
-   "age_max": null,
-   "has_photo": false,
-   "has_story": true,
-   "sources": 0
-  },
-  {
-   "id": "muc_018",
-   "tier": "highlighted",
-   "name": "The Weeping Beech of Nymphenburg",
-   "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
-   "city": "Munich",
-   "country": "Germany",
-   "lat": 48.15755,
-   "lng": 11.49961,
-   "precision": "approximate",
-   "age_min": null,
-   "age_max": null,
-   "has_photo": false,
-   "has_story": true,
-   "sources": 0
   },
   {
    "id": "muc_019",
@@ -448293,7 +448229,7 @@
    "lng": 11.5700298,
    "precision": null,
    "reason": "",
-   "note": "Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Dominanter Baum mit einer interessanten Wuchsform, selten in München.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. Existence, species and location are solid and legally attested;",
+   "note": "[RESOLVED 2026-08-13, delivered as muc_019] Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Dominanter Baum mit einer interessanten Wuchsform, selten in München.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. Existence, species ",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -448389,7 +448325,7 @@
    "lng": 11.55908,
    "precision": null,
    "reason": "",
-   "note": "Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Mächtiger, dominanter Solitärbaum mit weit ausladender Krone, Beastung fast bis zum Boden, mit die mächtigste Buche im Stadtgebiet.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. E",
+   "note": "[RESOLVED 2026-08-13, delivered as muc_021] Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Mächtiger, dominanter Solitärbaum mit weit ausladender Krone, Beastung fast bis zum Boden, mit die mächtigste Buche im Stadtgebiet.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees ",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -448437,7 +448373,7 @@
    "lng": 11.49411,
    "precision": null,
    "reason": "",
-   "note": "Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Solitärbaum, wichtiger Zusammenhang mit der Badenburg.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. Existence, species and location are solid and legally attested; a date needs l",
+   "note": "[RESOLVED 2026-08-13, delivered as muc_011] Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Solitärbaum, wichtiger Zusammenhang mit der Badenburg.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. Existence, species and location ar",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -448453,7 +448389,7 @@
    "lng": 11.49324,
    "precision": null,
    "reason": "",
-   "note": "Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Bizarrer und knorriger Wuchs, auffälliges Erscheinungsbild.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. Existence, species and location are solid and legally attested; a date ne",
+   "note": "[RESOLVED 2026-08-13, delivered as muc_012] Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Bizarrer und knorriger Wuchs, auffälliges Erscheinungsbild.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. Existence, species and locati",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -448469,7 +448405,7 @@
    "lng": 11.50042,
    "precision": null,
    "reason": "",
-   "note": "Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Mächtiges, sehr schönes und seltenes Solitärexemplar, guter Standort an markanter Stelle.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. Existence, species and location are solid a",
+   "note": "[RESOLVED 2026-08-13, delivered as muc_013] Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Mächtiges, sehr schönes und seltenes Solitärexemplar, guter Standort an markanter Stelle.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city.",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -448485,7 +448421,7 @@
    "lng": 11.49961,
    "precision": null,
    "reason": "",
-   "note": "Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Dominanter Baum in einem historischen Garten, besondere Bedeutung für Münchner Bürger.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. Existence, species and location are solid and ",
+   "note": "[RESOLVED 2026-08-13, delivered as muc_014] Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Dominanter Baum in einem historischen Garten, besondere Bedeutung für Münchner Bürger.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. Ex",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -448565,7 +448501,7 @@
    "lng": 11.59526,
    "precision": null,
    "reason": "",
-   "note": "Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Markanter Solitärbaum, der aufgrund seiner Stammausbildung und seines Stammumfangs im Stadtgebiet Seltenheitswert besitzt.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. Existence,",
+   "note": "[RESOLVED 2026-08-13, delivered as muc_022] Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Markanter Solitärbaum, der aufgrund seiner Stammausbildung und seines Stammumfangs im Stadtgebiet Seltenheitswert besitzt.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list cove",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -448613,7 +448549,7 @@
    "lng": 11.61225,
    "precision": null,
    "reason": "",
-   "note": "Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Historische Linde, ist in Plänen aus dem Jahr 1807 schon vorhanden.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. Existence, species and location are solid and legally attested; a",
+   "note": "[RESOLVED 2026-08-13, delivered as muc_020] Legally protected single tree on public land, free to walk up to. The ordinance's stated protection reason is: \"Historische Linde, ist in Plänen aus dem Jahr 1807 schon vorhanden.\". Failed our bar only on age: Munich's ordinance carries no age or girth column, and the Bavarian notable-trees list covers just one tree inside the city. Existence, species an",
    "has_photo": false,
    "has_story": false,
    "sources": 0
