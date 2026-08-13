@@ -1,0 +1,191 @@
+{
+ "leads": [
+  {
+   "register_objectid": 100,
+   "common_name": "American elm",
+   "address": "675 NW 21ST AVE",
+   "reason": "Register note 'Grove of 3' with no removal flag on this specific record, BUT two other register rows at essentially the same address (704 NW 21st Ave, objectids 85 Dutch elm and 170 English elm) explicitly say their grove of 3 was removed in 2013. Could not resolve in this pass whether this row is a surviving member of a different, nearby grove or a stale duplicate entry for the same removed trees. Needs a direct check against the current portland.gov Heritage Tree database or a street-level photo before shipping or blocking."
+  },
+  {
+   "register_objectid": 27,
+   "common_name": "Dutch elm",
+   "address": "704 NW 21ST AVE",
+   "reason": "Same ambiguity as objectid 100: described as 'east tree in a row of three Elms' at an address where two other register rows (85, 170) explicitly record a 2013 removal of a grove of 3. Needs direct current-status confirmation before shipping or blocking."
+  },
+  {
+   "register_objectid": 311,
+   "common_name": "Japanese red pine",
+   "address": "110 NE 39TH AVE",
+   "reason": "Paired Heritage Pine at the same address as objectid 193, which the register explicitly marks dead/removed 2016. This row (311) carries no removal note itself, but was not independently checked this pass; confirm before shipping."
+  },
+  {
+   "register_objectid": 147,
+   "common_name": "Yellow bellflower apple",
+   "address": "4700-4799 SW Campbell Ct",
+   "reason": "Not selected for this pass: isolated in Hillsdale, 4.1km from centre, well outside the walkable cluster this pass focused on. Register describes it as 'over 160 years old... great historical significance, being an Oregon State Heritage Tree and recognized by the Home Orchard Society', possibly the last tree of an 1847 orchard planted by Gideon Tibbetts. Strong candidate for a future depth pass on Portland; not evidence-rejected, just not chosen for the initial 10."
+  },
+  {
+   "register_objectid": 396,
+   "common_name": "London planetree",
+   "address": "3967 N. Overlook Blvd.",
+   "neighbourhood": "Overlook pocket park",
+   "reason": "One of three Heritage London Planetrees (396, 314, 321) in a small pocket park; a genuine compact ensemble like the Eliot Hawthorns, but 3.5km north of the downtown cluster this pass prioritised. Good candidate for a future 'Overlook' mini-walk together with the Northern Red Oak at nearby Patton Square (por-list did not include either)."
+  },
+  {
+   "register_objectid": 314,
+   "common_name": "London planetree",
+   "address": "3967 N. Overlook Blvd.",
+   "neighbourhood": "Overlook pocket park",
+   "reason": "See objectid 396, same pocket-park ensemble."
+  },
+  {
+   "register_objectid": 321,
+   "common_name": "London planetree",
+   "address": "3967 N. Overlook Blvd.",
+   "neighbourhood": "Overlook pocket park",
+   "reason": "See objectid 396, same pocket-park ensemble."
+  },
+  {
+   "register_objectid": 323,
+   "common_name": "Northern red oak",
+   "address": "5340 N INTERSTATE AVE",
+   "neighbourhood": "Patton Square Park, Overlook",
+   "reason": "CONFIRMED ALIVE AND CURRENT: this exact tree (Patton Square Park, 5340 N Interstate Ave) is one of the 12 trees NEWLY designated as a City Heritage Tree in the City of Portland's 2026 ordinance (https://www.portland.gov/council/documents/ordinance/2026-heritage-trees), so its live status is unusually well confirmed. Not selected for the 10 only because it sits 4.6km from the downtown cluster, isolated from the other Overlook candidates' immediate area by about 1km. Strong candidate for a future Overlook-area walk."
+  },
+  {
+   "register_objectid": 384,
+   "common_name": "Coast redwood",
+   "address": "701 NW CULPEPPER TER",
+   "neighbourhood": "Hillside Park",
+   "reason": "Solid singular-giant candidate (Portland Parks & Rec, Hillside Park) not chosen only to keep this pass to 10; no second source checked yet."
+  },
+  {
+   "register_objectid": 252,
+   "common_name": "Douglas-fir",
+   "address": "2525 SW MONTGOMERY DR",
+   "neighbourhood": "Southwest Hills",
+   "reason": "Second-largest Douglas-fir candidate in the set (133ft), not chosen in favour of the larger, better-documented Macleay Park tree (por_009); no second source checked yet."
+  },
+  {
+   "register_objectid": 175,
+   "common_name": "Oregon white oak",
+   "address": "Heritage Tree Park, SW Lane & SW Corbett",
+   "neighbourhood": "South Portland ('the Corbett Oak')",
+   "reason": "Named tree in a park literally called Heritage Tree Park; not chosen this pass for time, no second source checked yet. Good candidate for a South Portland cluster with the Copper Beech and Shagbark Hickory at nearby Lair Hill Park (objectids 130, 343)."
+  },
+  {
+   "register_objectid": 130,
+   "common_name": "Copper beech",
+   "address": "2909 SW 2ND AVE",
+   "neighbourhood": "Lair Hill Park, South Portland",
+   "reason": "A second Copper Beech candidate (Lair Hill Park); not chosen this pass, could anchor a future South Portland cluster with objectids 175 and 343."
+  },
+  {
+   "register_objectid": 343,
+   "common_name": "Shagbark hickory",
+   "address": "3037 SW 2ND AVE",
+   "neighbourhood": "Lair Hill Park, South Portland",
+   "reason": "See objectid 130, same potential South Portland cluster."
+  },
+  {
+   "register_objectid": 73,
+   "common_name": "Douglas-fir",
+   "address": "SE 20th & Morrison St., Lone Fir Cemetery",
+   "neighbourhood": "Buckman",
+   "reason": "Named as the tree that inspired the Lone Fir Cemetery's name, per the register's own note; a strong story candidate not checked against a second source this pass."
+  },
+  {
+   "register_objectid": 445,
+   "common_name": "Incense cedar",
+   "address": "SE 20th & Morrison, Lone Fir Cemetery",
+   "neighbourhood": "Buckman",
+   "reason": "Companion candidate to objectid 73 in the same cemetery; not checked this pass."
+  },
+  {
+   "register_objectid": null,
+   "common_name": "remaining ~90 candidates",
+   "address": "various",
+   "reason": "Not individually vetted this pass; time-boxed per BRIEF_RESEARCH.md. All 120 raw candidates remain available in data/research/portland-register-candidates.json for a future pass. Priorities for next time: the Overlook ensemble/Patton Square area (see leads above), the South Portland/Lair Hill cluster, and Lone Fir Cemetery."
+  }
+ ],
+ "blocked": [
+  {
+   "register_objectid": 19,
+   "common_name": "Silver maple",
+   "address": "3605 NE 18TH AVE",
+   "reason": "DEAD/REMOVED: Removed 11/30/2011 (per register's own note)"
+  },
+  {
+   "register_objectid": 351,
+   "common_name": "Northern catalpa",
+   "address": "2425 NE 23RD AVE",
+   "reason": "DEAD/REMOVED: Removed June 2007 (per register's own note)"
+  },
+  {
+   "register_objectid": 293,
+   "common_name": "Bigleaf maple",
+   "address": "2831-2833 NE DAVIS ST",
+   "reason": "DEAD/REMOVED: Removed 6/17/2015 by Ordinance 187198 (per register's own note)"
+  },
+  {
+   "register_objectid": 85,
+   "common_name": "Dutch elm",
+   "address": "704 NW 21ST AVE",
+   "reason": "DEAD/REMOVED: Removed 2013, then again 6/17/2015 by Ordinance 187198 (per register's own note); one of a grove of 3, see leads for the other two objectids at this address"
+  },
+  {
+   "register_objectid": 170,
+   "common_name": "English elm",
+   "address": "704 NW 21ST AVE",
+   "reason": "DEAD/REMOVED: Removed 2013 (per register's own note); one of a grove of 3, see leads for the other two objectids at this address"
+  },
+  {
+   "register_objectid": 215,
+   "common_name": "Madrone",
+   "address": "2435 N Wygant St",
+   "reason": "DEAD/REMOVED: Blew down in the March 15 2015 windstorm, removed 6/17/2015 by Ordinance 187198 (per register's own note)"
+  },
+  {
+   "register_objectid": 6,
+   "common_name": "Bigleaf linden",
+   "address": "2343 NW IRVING ST",
+   "reason": "DEAD/REMOVED: Removed 2009 (per register's own note)"
+  },
+  {
+   "register_objectid": 37,
+   "common_name": "American elm",
+   "address": "625-635 NW 21ST AVE",
+   "reason": "DEAD/REMOVED: Fell over May 2013 (per register's own note); part of a grove of 3, see leads for the other two objectids at this address"
+  },
+  {
+   "register_objectid": 202,
+   "common_name": "Spanish chestnut",
+   "address": "3435 SW HOOD AVE",
+   "reason": "DEAD/REMOVED: Removed due to advanced root decay (per register's own note)"
+  },
+  {
+   "register_objectid": 16,
+   "common_name": "Swamp white oak",
+   "address": "(no address given)",
+   "reason": "DEAD/REMOVED: Removed September 2011 (per register's own note)"
+  },
+  {
+   "register_objectid": 193,
+   "common_name": "Japanese red pine",
+   "address": "110 NE 39TH AVE",
+   "reason": "DEAD/REMOVED: Dead, removed 2016 (per register's own note); the paired pine at the same address, objectid 311, was NOT flagged dead in its own notes and was not otherwise checked this pass, see leads"
+  },
+  {
+   "register_objectid": 301,
+   "common_name": "American elm ('The Burrell Elm')",
+   "address": "1111 SW 10th Ave",
+   "reason": "DEAD/REMOVED: named explicitly in the City of Portland's 2026 Heritage Tree ordinance (https://www.portland.gov/council/documents/ordinance/2026-heritage-trees) as one of 14 trees having their Heritage Tree designation removed because the tree is 'dead, dying or have been removed'. This tree has a rich, well-documented history (planted c.1875 by Martin and Rosetta Burrell, per the official 'Stumptown to Treetown' field guide) but is confirmed no longer standing as of the 2026 ordinance, which postdates today's register import. Do not ship."
+  },
+  {
+   "register_objectid": 335,
+   "common_name": "Gravenstein apple",
+   "address": "4017 SE 9th Ave",
+   "reason": "DEAD/REMOVED: named explicitly in the City of Portland's 2026 Heritage Tree ordinance (https://www.portland.gov/council/documents/ordinance/2026-heritage-trees) as one of 14 trees having their Heritage Tree designation removed because the tree is 'dead, dying or have been removed'. Register described it as 'possibly the last remaining tree' of an 1847 orchard; confirmed no longer standing as of the 2026 ordinance, which postdates today's register import. Do not ship."
+  }
+ ]
+}
