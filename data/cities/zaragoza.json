@@ -2,7 +2,7 @@
   "city": "Zaragoza",
   "country": "Spain",
   "status": "needs_curation",
-  "intro": "Zaragoza's trees are unusually well documented and unusually undated. The city catalogued 57 singular trees in 2006 and measured every one, girth at the base, girth at chest height, height and crown, and recorded no ages at all. Four of them make a walk of under two kilometres along the buried course of the river Huerva, from a park that was a banker's private garden until 1959 to a university building of 1893. Two of the four stand in that one park.",
+  "intro": "Zaragoza's trees are unusually well documented and unusually undated. The city catalogued 57 singular trees in 2006 and measured every one, girth at the base, girth at chest height, height and crown, and recorded no ages at all. Four of them make a walk of under two kilometres along the buried course of the river Huerva, from a park that was a banker's private garden until 1959 to a university building of 1893. Two of the trees stand in that one park.",
   "meta_description": "Zaragoza catalogued 57 singular trees and recorded no ages at all. Four of them make a two-kilometre walk along the buried river Huerva.",
   "question_meta": "Zaragoza's catalogue measures girth and height, never age. The closest answer: the Almez of Parque Bruil, roughly 150 years old on one word, centennial.",
   "question_answer": "The closest Zaragoza can offer is the Almez of Parque Bruil, a hackberry put at roughly 150 years old, though nobody has actually measured that: it is the only tree in the city with any public age claim attached to it at all, and the claim itself is just the word centennial. The reason is unusually specific: the Ayuntamiento's catalogue of the city's 57 singular trees measures every one of them, girth, height, crown spread, and dates none of them. The best-supported candidates all stand in Parque Bruil, on ground that was laid out as private gardens after Juan Bruil bought the estate in 1842, which would put them at roughly 150 to 180 years, the range the 150 figure is drawn from.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "Yes. The four run a little under two kilometres from Parque Bruil in the Tenerias quarter west to the Paraninfo on Plaza Basilio Paraiso, roughly following the course of the Huerva, which runs buried under the Paseo de la Constitucion for the last stretch. Two of the four are in Parque Bruil itself, a couple of hundred metres apart."
+      "a": "Yes. The four run a little under two kilometres from Parque Bruil in the Tenerias quarter west to the Paraninfo on Plaza Basilio Paraiso, roughly following the course of the Huerva, which runs buried under the Paseo de la Constitucion for the last stretch. Two of they all are in Parque Bruil itself, a couple of hundred metres apart."
     },
     {
       "q": "Which is the one that was on television?",
@@ -158,6 +158,93 @@
       "curation_status": "flagged",
       "notes": "FLAGGED ON VITALITY, ON SOURCES AND ON ACCESS. Ficha 52: girth 1.20 m at 1.30 m, 1.30 m at base, 13 m tall, condition 'bueno' in 2005, owner Universidad de Zaragoza per the Ordenanza's Anejo III. No source of any date confirms the yew still stands; the building is exhaustively documented and none of that documentation mentions its trees. THE BOTANICAL GARDEN CLAIM DOES NOT CHECK OUT AS THE BOOK STATES IT, which is why the story calls it tradition rather than fact: the historic Jardin Botanico de Zaragoza was founded in 1796 in the Huerta de Santa Catalina entered from Calle San Miguel 30, not on this plot, and was wrecked in the Sitios; the garden in Parque Grande is a separate 20th century one inaugurated in 1927. The 2006 book's own wording is 'quiza supervivientes', perhaps survivors. ACCESS UNRESOLVED: it could not be established whether the recinto is freely walkable or whether the yews stand in an internal courtyard. That must be settled before publication, because the access line as written promises less than a visitor needs to know. Both catalogue sources are the same document in two forms. Coordinate is datum-corrected from ED50.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "zar_005",
+      "name": "The Olive of the Facultad de Medicina",
+      "species": "Olive (Olea europaea)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Campus Universidad de Zaragoza, behind the Facultad de Medicina",
+        "latitude": 41.642191,
+        "longitude": -0.90199,
+        "neighbourhood": "Campus San Francisco"
+      },
+      "story": "Four metres ninety around at the ground and two metres fifty at chest height, on a tree only five metres tall. That is an olive doing what olives do: pouring everything into a fluted, folded, half-hollow base while the crown stays low enough to pick from a short ladder.\n\nIt grows on the University of Zaragoza's San Francisco campus, behind the Facultad de Medicina and the Colegio Mayor Pedro Cerbuna, on ground the city's own ordinance lists as university property rather than municipal. Zaragoza's catalogue of singular trees rated its condition very good when it was surveyed in 2005, and that catalogue is the only source that describes it.\n\nNobody has dated it, and with an olive nobody easily could. The heartwood rots out of the middle of an old olive and what survives is a ring of living wood that splits into separate strands, so there are no rings left to count and the tree can renew itself from the base more or less indefinitely. Estimates for olives of this shape run from two hundred years to well over a thousand, and a number picked out of that range would be a guess wearing a decimal point.\n\nWhat the girth does say is that the tree is almost certainly older than the campus around it. This edge of Zaragoza was farmland before the faculties arrived, and an olive that wide was somebody's crop long before it was a specimen.",
+      "verified_sources": [
+        "https://www.zaragoza.es/contenidos/medioambiente/arboles_singulares.pdf",
+        "https://www.zaragoza.es/cont/paginas/normativa/anexos/anejo-3-arbolado.pdf"
+      ],
+      "access": "Free, on the public university campus",
+      "transport": "Campus San Francisco; tram or bus to Plaza San Francisco, short walk",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "zar_006",
+      "name": "The Honey Locust of Calle Aznar Molina",
+      "species": "Honey Locust (Gleditsia triacanthos)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Calle Aznar Molina, Zaragoza",
+        "latitude": 41.648316,
+        "longitude": -0.872179,
+        "neighbourhood": "Tenerias, Casco Historico"
+      },
+      "story": "Somebody took three main branches out of this tree and it became a parasol. The honey locust on Calle Aznar Molina now carries a flat, wide, almost horizontal crown on a short trunk, a shape no honey locust arrives at by itself, and it makes this one of the strangest-looking protected trees in Zaragoza. The city's catalogue records the pruning as plain fact and rated the tree's condition good when it was surveyed in 2005.\n\nGleditsia triacanthos is North American, from the Mississippi basin, and in its wild form it is armed: branched thorns up to fifteen centimetres long growing straight out of the trunk and the older wood, generally read as a defence against browsing animals that no longer exist on that continent. Street plantings are usually the thornless kind, chosen for the fine doubled leaves that cast a light, moving shade and fall small enough that nobody has to rake them.\n\nIt stands in Tenerias, the old tanners' quarter on the edge of the historic centre, three hundred metres from the trees of Parque Bruil, so it joins that walk without a detour. The catalogue is the only source that names it, and it records no age for it.\n\nStand directly underneath and look up. The flat crown against the sky is the entire point of this tree.",
+      "verified_sources": [
+        "https://www.zaragoza.es/contenidos/medioambiente/arboles_singulares.pdf",
+        "https://www.zaragoza.es/cont/paginas/normativa/anexos/anejo-3-arbolado.pdf"
+      ],
+      "access": "Free, on a public street",
+      "transport": "Casco Historico, near Parque Bruil; a short walk from the already-published Parque Bruil trees",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "zar_007",
+      "name": "The Tree of Heaven of the Jardin Botanico",
+      "species": "Tree of Heaven (Ailanthus altissima)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Jardin Botanico, Parque Grande Jose Antonio Labordeta, Zaragoza",
+        "latitude": 41.635015,
+        "longitude": -0.89622,
+        "neighbourhood": "Parque Grande"
+      },
+      "story": "Zaragoza protects, as a singular tree, a specimen of the species European cities spend the most money trying to get rid of. Ailanthus altissima was sent to Europe from Beijing by a Jesuit missionary in 1751 and planted as a fast curiosity and a possible host for silkworms. It escaped. It now takes over railway sidings, demolition plots and riverbanks across southern Europe, resprouts from any cut root, releases a compound that suppresses the plants around it, and sits on the European Union's list of invasive species of concern.\n\nThis one earned its place by being the best of its kind here. Of the four tree of heaven specimens on the city's register, this is the one rated in very good condition at the 2004 survey: two metres fifty-seven around, fifteen metres seventy tall, standing at the entrance to the botanical garden inside the Parque Grande.\n\nIt is a handsome tree when something keeps it in order. The leaves are pinnate and can reach a metre in length, very large for anything hardy in Europe, and in a good summer the female trees hang thick with papery winged seeds that turn from green to a dull red before they go brown.\n\nThe catalogue is the only source describing this tree, and it gives no age. What it gives instead is a judgement, and the judgement is that of four candidates this was the one worth keeping.",
+      "verified_sources": [
+        "https://www.zaragoza.es/contenidos/medioambiente/arboles_singulares.pdf",
+        "https://www.zaragoza.es/cont/paginas/normativa/anexos/anejo-3-arbolado.pdf"
+      ],
+      "access": "Free, public park",
+      "transport": "Parque Grande; tram to Parque Grande stop, short walk to the botanical garden entrance",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ],
   "not_ready_to_publish": "DO NOT MOVE THIS TO data/cities/ AS IT STANDS. Four trees is the floor and this file holds four, but only zar_001 has dated proof of life. The 2006 catalogue this city was built from is not a list of living trees: the arborist Ismael Sanz is quoted saying that by 2012 nearly half of it had already disappeared or was in poor condition, and two of the four trees checked on 2026-08-05 were confirmed dead, including one that had already been written into this file. What each tree still needs is in its own notes field. The cheapest way to unblock the city is the 2019 'Arbol Singular Urbano de Zaragoza' catalogue, reported as 56 trees plus 15 conjuntos, which would be the city confirming what still stands; no run has yet found that document."

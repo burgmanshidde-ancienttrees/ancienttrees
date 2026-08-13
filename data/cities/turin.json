@@ -10,7 +10,7 @@
   "faq": [
     {
       "q": "What is the oldest tree in Turin?",
-      "a": "Probably the plane in Parco della Tesoriera, over 200 years old and 3.6 km west of this walk. Of the eight trees here, three sit in the register's oldest band: the two Valentino planes at the Eridano and the Fontana dei Dodici Mesi, and the oak behind the Castello del Valentino."
+      "a": "Probably the plane in Parco della Tesoriera, over 200 years old and 3.6 km west of this walk. Of the trees here here, three sit in the register's oldest band: the two Valentino planes at the Eridano and the Fontana dei Dodici Mesi, and the oak behind the Castello del Valentino."
     },
     {
       "q": "Can you walk between them?",
@@ -18,7 +18,7 @@
     },
     {
       "q": "Do any of them cost anything?",
-      "a": "No. All eight stand in public gardens and parks that are free and open, and the regional register lists every one of them as publicly owned. Parco del Valentino, which holds five of the eight, has no gates."
+      "a": "No. They all stand in public gardens and parks that are free and open, and the regional register lists every one of them as publicly owned. Parco del Valentino, which holds five of the eight, has no gates."
     },
     {
       "q": "Why are so many of Turin's monumental trees plane trees?",
@@ -298,6 +298,72 @@
       "curation_status": "ai_generated",
       "notes": "Regional register card 010/L219/TO/01: 550 cm girth, 40 m, crown 32 m, age band over 200, publicly owned. Tallest and widest-crowned of the fourteen Turin register trees. Turismo Torino's route and both press lists give 39.5 m for the same tree at the Fontana 12 mesi, so the half metre is a rounding difference between the tourist board and the register rather than a conflict. Commons has 'Platano comune Parco del Valentino.jpg' under CC BY-SA 4.0, not yet viewed and not yet matched to this individual; this pass hit its three-photo limit first.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "tor_009",
+      "name": "The Grandfather Plane of Parco della Tesoriera",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": null,
+      "location": {
+        "address": "Parco della Tesoriera, Corso Francia, Torino",
+        "latitude": 45.07588,
+        "longitude": 7.63816,
+        "neighbourhood": "Parco della Tesoriera, Pozzo Strada"
+      },
+      "story": "Turin calls it il nonno, the grandfather, and at six metres sixty-five around it holds the widest trunk on the city's monumental tree register. The crown spreads twenty-five metres against a height of twenty-eight, which in a park this size means the tree is most of the view.\n\nThe park was a private estate before it was a park. Aymo Ferrero di Cocconato, treasurer general to the Duke of Savoy, had the villa at its centre built in 1715, and the name Tesoriera comes from that office rather than from any family. The villa now holds the city's music library, so on a summer afternoon there is usually something being practised behind the windows while the plane does the shading outside.\n\nThe register gives the age as over two hundred years, which is a band rather than a date. This is also the tree most often named when anyone in Turin is asked which is the oldest in the city. That claim is not settled anywhere and this page will not settle it either. What is documented is the girth, and nothing else in Turin comes close to it.\n\nIt is three and a half kilometres west of the trees in the centre, out along Corso Francia, so it is a trip of its own rather than an extension of the walk through the Giardini Cavour and the Valentino. Tram 3 or 9 puts you at the gate.",
+      "verified_sources": [
+        "data/registers/piemonte-alberi-monumentali.json (register_id 001/L219/TO/01, CC BY 4.0)",
+        "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/"
+      ],
+      "access": "Free, public park",
+      "transport": "Corso Francia, Pozzo Strada; tram 3 or 9, short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tor_010",
+      "name": "The Caucasian Elm of the Giardini Reali",
+      "species": "Caucasian Elm (Zelkova carpinifolia)",
+      "age_estimate": "100 to 200 years",
+      "age_min": 100,
+      "age_max": 200,
+      "location": {
+        "address": "Giardini Reali Inferiori, Piazza Castello, Torino",
+        "latitude": 45.0726,
+        "longitude": 7.68916,
+        "neighbourhood": "Centro, Giardini Reali"
+      },
+      "story": "This tree is protected for being unusual rather than for being large. Zelkova carpinifolia grows wild in a narrow band of forest in the Caucasus and northern Iran, it is uncommon in Italian gardens, and Piedmont's register lists it on exactly that ground: botanical rarity. The trunk is three metres fifty around and short, and out of it comes the shape the species is known for, dozens of near-vertical stems rising together, so the whole tree reads as a vase rather than a dome.\n\nIts height is an open question. The regional register measures twenty-four metres. A published walking route through Turin's monumental trees says twenty-seven. Nobody has reconciled the two, and that gap is what happens when one figure is taken with an instrument and the other by eye. The register's age band is equally wide, a hundred to two hundred years.\n\nIt grows in the Giardini Reali Inferiori, the lower royal gardens beside the Palazzo Reale, ground that belonged to the House of Savoy until the monarchy ended in 1946. The gardens were laid out for a court that wanted rarities, which is a large part of why a Caucasian tree is standing in the middle of Turin at all.\n\nIn late autumn the whole crown turns orange-brown, and after the shape that is the moment the species is known for.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the whole crown turns orange-brown"
+      },
+      "verified_sources": [
+        "data/registers/piemonte-alberi-monumentali.json (register_id 005/L219/TO/01, CC BY 4.0)",
+        "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/"
+      ],
+      "access": "Free, public gardens",
+      "transport": "Piazza Castello, central Torino; multiple tram and bus lines to Piazza Castello, short walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

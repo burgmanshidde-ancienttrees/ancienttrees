@@ -1075,6 +1075,17 @@
     "wasted": 0,
     "brief_wrong": false
    }
+  ],
+  "2026-08-13": [
+   {
+    "target": "8 cities (bol/cdb/luc/prg/rom/tor/vie/zar)",
+    "kind": "write",
+    "tokens": 139085,
+    "trees": 17,
+    "note": "17 stories across 8 cities from the night run's register-backed assembly; refused prg_018 as a coordinate-exact duplicate of live prg_017, whose empty fields were folded full from the register data instead; 2 species names and 2 tree names fixed before the build could refuse them",
+    "wasted": 0,
+    "brief_wrong": false
+   }
   ]
  }
 }

@@ -772,6 +772,35 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "rom_025",
+      "name": "The Plane of Viale Jonio",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Viale Jonio, Montesacro, 00141 Roma",
+        "latitude": 41.94526,
+        "longitude": 12.53335,
+        "neighbourhood": "Montesacro"
+      },
+      "story": "Rome's second-thickest registered plane does not grow in a villa garden. It stands on Viale Jonio in Montesacro, six kilometres north of the centre, on a road with traffic lights and a bus lane, and it measures five metres fifty-three around with thirty-two metres above it. Only the plane on Piazza San Cosimato in Trastevere beats it, and that one has the advantage of a famous square.\n\nMontesacro was farmland until the 1920s, when Rome laid out the Citta Giardino Aniene on the far side of the river Aniene: low houses, gardens, planted avenues, a whole quarter designed at once for people pushed out of the centre. The avenues came with trees. This is what one of them looks like after a century in which the houses around it were steadily replaced by apartment blocks and the tree was not.\n\nTwo sources record it, the national monumental register through the Lazio list and a notice from the Comune di Roma itself. Neither gives an age. The suburb's own dates suggest a tree that went in with the streets, but no document says so, so it stays a suggestion.\n\nMetro B1 to Conca d'Oro leaves a short walk. It is a long way from anything else a visitor to Rome is doing that day, and it is a genuinely enormous tree.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF/Lazio register 17/H501/RM/12)",
+        "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295"
+      ],
+      "access": "Free, on a public street",
+      "transport": "Montesacro, north Rome; Metro B1 Conca d'Oro, then a short walk, or bus along Via Nomentana",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
