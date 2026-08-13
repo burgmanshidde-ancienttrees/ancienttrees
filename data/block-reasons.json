@@ -8,13 +8,13 @@
       "id": "dead",
       "label": "dead or gone",
       "why": "The product is standing in front of something alive. A dead entry makes the years-counter lie.",
-      "patterns": ["\\bdead\\b", "felled", "no longer standing", "\\bdied\\b", "\\bstump\\b", "has gone"]
+      "patterns": ["\\bdead\\b", "felled", "no longer standing", "\\bdied\\b", "\\bstump\\b", "has gone", "\\bfell\\b", "\\bfallen\\b", "toppled", "blew down"]
     },
     {
       "id": "private",
       "label": "private land or access-restricted",
       "why": "Hard rule 10. Never send anyone to a locked gate or someone's garden.",
-      "patterns": ["private", "restricted", "not open to", "permission to visit", "closed to the public"]
+      "patterns": ["private", "restricted", "not open to", "permission to visit", "closed to the public", "infant playground", "primary school playground"]
     },
     {
       "id": "withheld",
