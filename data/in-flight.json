@@ -4,54 +4,6 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "Prague",
-      "kind": "write",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T05:23:07+00:00"
-    },
-    {
-      "target": "Vienna",
-      "kind": "write",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T05:23:07+00:00"
-    },
-    {
-      "target": "Rome",
-      "kind": "write",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T05:23:08+00:00"
-    },
-    {
-      "target": "Bologna",
-      "kind": "write",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T05:23:08+00:00"
-    },
-    {
-      "target": "Turin",
-      "kind": "write",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T05:23:09+00:00"
-    },
-    {
-      "target": "Zaragoza",
-      "kind": "write",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T05:23:09+00:00"
-    },
-    {
-      "target": "Cordoba",
-      "kind": "write",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T05:23:09+00:00"
-    },
-    {
-      "target": "Lucca",
-      "kind": "write",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T05:23:10+00:00"
-    },
-    {
       "target": "Palermo",
       "kind": "verify",
       "by": "night-run",
@@ -86,6 +38,54 @@
       "kind": "verify",
       "by": "night-run",
       "claimed_at": "2026-08-13T06:10:29+00:00"
+    },
+    {
+      "target": "prague",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-13T06:56:49+00:00"
+    },
+    {
+      "target": "vienna",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-13T06:56:49+00:00"
+    },
+    {
+      "target": "rome",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-13T06:56:49+00:00"
+    },
+    {
+      "target": "bologna",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-13T06:56:49+00:00"
+    },
+    {
+      "target": "turin",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-13T06:56:49+00:00"
+    },
+    {
+      "target": "zaragoza",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-13T06:56:49+00:00"
+    },
+    {
+      "target": "cordoba",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-13T06:56:49+00:00"
+    },
+    {
+      "target": "lucca",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-13T06:56:50+00:00"
     }
   ]
 }
