@@ -4,18 +4,6 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "Trieste",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T06:09:01+00:00"
-    },
-    {
-      "target": "Amsterdam",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T06:10:29+00:00"
-    },
-    {
       "target": "caserta",
       "kind": "verify",
       "by": "night-run",
@@ -44,6 +32,12 @@
       "kind": "verify",
       "by": "session",
       "claimed_at": "2026-08-13T07:20:34+00:00"
+    },
+    {
+      "target": "como",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-13T10:18:33+00:00"
     }
   ]
 }
