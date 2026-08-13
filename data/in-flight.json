@@ -86,6 +86,30 @@
       "kind": "write",
       "by": "session",
       "claimed_at": "2026-08-13T06:56:50+00:00"
+    },
+    {
+      "target": "caserta",
+      "kind": "write",
+      "by": "night-run",
+      "claimed_at": "2026-08-13T07:08:10+00:00"
+    },
+    {
+      "target": "nara",
+      "kind": "write",
+      "by": "night-run",
+      "claimed_at": "2026-08-13T07:08:10+00:00"
+    },
+    {
+      "target": "guimaraes",
+      "kind": "write",
+      "by": "night-run",
+      "claimed_at": "2026-08-13T07:08:10+00:00"
+    },
+    {
+      "target": "seville",
+      "kind": "write",
+      "by": "night-run",
+      "claimed_at": "2026-08-13T07:08:10+00:00"
     }
   ]
 }
