@@ -342,6 +342,15 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .ats-empty a { color: var(--moss); }
 /* Country page: the ranked-list form (Hidde, 2026-08-01, the PictureThis
    Top-50 pattern): rank numeral, photo, name, one honest sub-line, chevron. */
+/* Country page species clusters (2026-08-13). Rows rather than the species
+   index's card grid: a country carries 30-90 species and 90 cards would bury
+   the city list this page exists for. */
+.ctry-species { margin: 0.5rem 0 2rem; }
+.ctry-species-row { font-size: 14px; line-height: 1.9; margin: 0 0 0.6rem; color: var(--ink-light); }
+.ctry-species-row b { display: block; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--moss); margin-bottom: 0.15rem; }
+.ctry-species-row a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--cream-dark); }
+.ctry-species-row a:hover { border-bottom-color: var(--moss); }
+.ctry-species-n { font-size: 12px; color: var(--ink-light); }
 .ctry-list { margin: 0.5rem 0 2rem; }
 .ctry-row { display: flex; align-items: center; gap: 0.9rem; padding: 0.7rem 0.2rem; border-bottom: 1px solid var(--cream-dark); text-decoration: none; color: var(--ink); }
 .ctry-row:last-child { border-bottom: none; }
