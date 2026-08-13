@@ -1,0 +1,791 @@
+{
+ "leads": [
+  {
+   "gid": 31855,
+   "species": "Populus nigra",
+   "reason": "Populus nigra ('Peuplier noir'), girth 650.0cm, height 20m, site 'Laboratoire IPL' (Grand Parc-Chartrons), gid 31855, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written). Caution: 'Laboratoire' suggests an institutional/lab site; confirm public access before verifying."
+  },
+  {
+   "gid": 26219,
+   "species": "Taxodium distichum",
+   "reason": "Taxodium distichum ('Cyprès chauve'), girth 606.0cm, height 30m, site 'PR_Lisière' (Grand Parc-Chartrons), gid 26219, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 200663,
+   "species": "Sequoiadendron giganteum",
+   "reason": "Sequoiadendron giganteum ('Séquoia de Californie'), girth 597.0cm, height 24m, site 'Parc de Bourran' (Parc du Bourran), gid 200663, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 201027,
+   "species": "Cedrus deodara",
+   "reason": "Cedrus deodara ('Cèdre de l'Himalaya'), girth 534.0cm, height 32m, site 'Parc de Bourran' (Parc du Bourran), gid 201027, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 200359,
+   "species": "Quercus robur",
+   "reason": "Quercus robur ('Chêne pédonculé'), girth 393.0cm, height 22m, site 'Parc de Bourran' (Parc du Bourran), gid 200359, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 101082,
+   "species": "Quercus suber",
+   "reason": "Quercus suber ('Chêne-liège'), girth 377.0cm, height 18m, site 'Stade du Jard' (Nouveau Secteur), gid 101082, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written). Caution: 'Stade' sites may be a fenced sports ground with restricted hours; confirm public access before verifying."
+  },
+  {
+   "gid": 87954,
+   "species": "Pinus pinea",
+   "reason": "Pinus pinea ('Pin parasol'), girth 355.0cm, height 25m, site 'Parc De Lestang' (Bègles), gid 87954, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 199621,
+   "species": "Taxodium distichum",
+   "reason": "Taxodium distichum ('Cyprès chauve'), girth 352.0cm, height 30m, site 'Parc de Bourran' (Parc du Bourran), gid 199621, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 13316,
+   "species": "Populus nigra",
+   "reason": "Populus nigra ('Peuplier noir'), girth 349.0cm, height 20m, site 'Stade André Maginot_B' (Caudéran-Saint Augustin), gid 13316, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written). Caution: 'Stade' sites may be a fenced sports ground with restricted hours; confirm public access before verifying."
+  },
+  {
+   "gid": 10738,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 346.0cm, height 20m, site 'Square Jean Vauthier' (Bordeaux Sud-Nansouty Saint Genès), gid 10738, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 4856,
+   "species": "Melia azedarach",
+   "reason": "Melia azedarach ('Margousier'), girth 342.0cm, height 22m, site 'JP_Espaces centraux' (Jardin Public), gid 4856, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 16033,
+   "species": "Cedrus deodara",
+   "reason": "Cedrus deodara ('Cèdre de l'Himalaya'), girth 336.0cm, height 23m, site 'Cimetière de la Chartreuse' (Caudéran-Saint Augustin), gid 16033, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 30349,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 330.0cm, height 28m, site 'Docteur Yersin_A (rue)' (Bastide-Bordeaux Maritime), gid 30349, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7291,
+   "species": "Cedrus deodara",
+   "reason": "Cedrus deodara ('Cèdre de l'Himalaya'), girth 317.0cm, height 21m, site 'Parc du Grand Parc' (Grand Parc-Chartrons), gid 7291, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 41876,
+   "species": "Quercus palustris",
+   "reason": "Quercus palustris ('Chêne des marais'), girth 311.0cm, height 21m, site 'Jardin de la Cité Blanche' (Bastide-Bordeaux Maritime), gid 41876, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 5530,
+   "species": "Quercus robur 'Fastigiata' (Syn. 'Pyramidalis')",
+   "reason": "Quercus robur 'Fastigiata' (Syn. 'Pyramidalis') ('Chêne pédonculé fastigié'), girth 308.0cm, height 23m, site 'des Pins Francs (rue)' (Caudéran-Saint Augustin), gid 5530, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 13311,
+   "species": "Quercus rubra",
+   "reason": "Quercus rubra ('Chêne rouge d'Amérique'), girth 289.0cm, height 28m, site 'Groupe scolaire Alfred Daney' (Bastide-Bordeaux Maritime), gid 13311, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 10719,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 289.0cm, height 20m, site 'Square Jean Vauthier' (Bordeaux Sud-Nansouty Saint Genès), gid 10719, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 16395,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 286.0cm, height 25m, site 'Placette du Bocage' (Caudéran-Saint Augustin), gid 16395, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 12803,
+   "species": "Quercus palustris",
+   "reason": "Quercus palustris ('Chêne des marais'), girth 283.0cm, height 21m, site 'Stade Galin' (Bastide-Bordeaux Maritime), gid 12803, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written). Caution: 'Stade' sites may be a fenced sports ground with restricted hours; confirm public access before verifying."
+  },
+  {
+   "gid": 6086,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 276.0cm, height 25m, site 'Ferdinand de Lesseps (rue)' (Grand Parc-Chartrons), gid 6086, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 28939,
+   "species": "Morus alba",
+   "reason": "Morus alba ('Mûrier blanc'), girth 273.0cm, height 10m, site 'Square Samuel Paty' (Caudéran-Saint Augustin), gid 28939, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7306,
+   "species": "Populus alba",
+   "reason": "Populus alba ('Peuplier blanc'), girth 273.0cm, height 18m, site 'Parc du Grand Parc' (Grand Parc-Chartrons), gid 7306, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 10981,
+   "species": "Tilia cordata",
+   "reason": "Tilia cordata ('Tilleul à petites feuilles'), girth 267.0cm, height 17m, site 'Renée Seilhan (place)' (Bordeaux Sud-Nansouty Saint Genès), gid 10981, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 200719,
+   "species": "Quercus imbricaria",
+   "reason": "Quercus imbricaria ('Chêne à feuilles de laurier'), girth 264.0cm, height 21m, site 'Parc de Bourran' (Parc du Bourran), gid 200719, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 8450,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 261.0cm, height 26m, site 'Chemin Prémeynard' (Grand Parc-Chartrons), gid 8450, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 4611,
+   "species": "Magnolia grandiflora",
+   "reason": "Magnolia grandiflora ('Magnolia à grandes fleurs'), girth 261.0cm, height 26m, site 'JP_Espaces centraux' (Jardin Public), gid 4611, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 13215,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 242.0cm, height 16m, site 'Stade Municipal Chaban Delmas (annexe)' (Caudéran-Saint Augustin), gid 13215, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written). Caution: 'Stade' sites may be a fenced sports ground with restricted hours; confirm public access before verifying."
+  },
+  {
+   "gid": 11967,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 239.0cm, height 24m, site 'Square Marjolaine' (Bastide-Bordeaux Maritime), gid 11967, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 201048,
+   "species": "Metasequoia glyptostroboides",
+   "reason": "Metasequoia glyptostroboides ('Métaséquoia glyptostroboides'), girth 236.0cm, height 22m, site 'Parc de Bourran' (Parc du Bourran), gid 201048, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7945,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 236.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7945, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 5357,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 232.0cm, height 18m, site 'Dauphine (place)' (Caudéran-Saint Augustin), gid 5357, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 88433,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 232.0cm, height 20m, site 'Groupe Scolaire Maternelle Saint Maurice' (Bègles), gid 88433, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 1242,
+   "species": "Magnolia grandiflora",
+   "reason": "Magnolia grandiflora ('Magnolia à grandes fleurs'), girth 229.0cm, height 16m, site 'Gambetta (place)' (Hypercentre Métropolitain), gid 1242, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 13180,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 229.0cm, height 16m, site 'Stade Municipal Chaban Delmas (annexe)' (Caudéran-Saint Augustin), gid 13180, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written). Caution: 'Stade' sites may be a fenced sports ground with restricted hours; confirm public access before verifying."
+  },
+  {
+   "gid": 19541,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 229.0cm, height 18m, site 'Ruines du Palais Gallien' (Hypercentre Métropolitain), gid 19541, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 19542,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 226.0cm, height 20m, site 'Ruines du Palais Gallien' (Hypercentre Métropolitain), gid 19542, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 35449,
+   "species": "Quercus robur",
+   "reason": "Quercus robur ('Chêne pédonculé'), girth 226.0cm, height 20m, site 'Collectif de la Piraterie' (Caudéran-Saint Augustin), gid 35449, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 19540,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 220.0cm, height 17m, site 'Ruines du Palais Gallien' (Hypercentre Métropolitain), gid 19540, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 29708,
+   "species": "Sequoia sempervirens",
+   "reason": "Sequoia sempervirens ('Séquoia toujours vert'), girth 220.0cm, height 22m, site 'Parc Chantegrillon' (Bastide-Bordeaux Maritime), gid 29708, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 5056,
+   "species": "Liquidambar styraciflua",
+   "reason": "Liquidambar styraciflua ('Copalme d'Amérique'), girth 214.0cm, height 30m, site 'Salle des fêtes du Grand Parc' (Grand Parc-Chartrons), gid 5056, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 18603,
+   "species": "Tilia tomentosa",
+   "reason": "Tilia tomentosa ('Tilleul argenté'), girth 210.0cm, height 17m, site 'Lucien Victor Meunier (place)' (Hypercentre Métropolitain), gid 18603, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 6067,
+   "species": "Liquidambar styraciflua",
+   "reason": "Liquidambar styraciflua ('Copalme d'Amérique'), girth 210.0cm, height 32m, site 'Salle des fêtes du Grand Parc' (Grand Parc-Chartrons), gid 6067, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 6324,
+   "species": "Liquidambar styraciflua",
+   "reason": "Liquidambar styraciflua ('Copalme d'Amérique'), girth 207.0cm, height 30m, site 'Salle des fêtes du Grand Parc' (Grand Parc-Chartrons), gid 6324, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7948,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 204.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7948, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 19539,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 204.0cm, height 17m, site 'Ruines du Palais Gallien' (Hypercentre Métropolitain), gid 19539, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 8082,
+   "species": "Celtis occidentalis",
+   "reason": "Celtis occidentalis ('Micocoulier de Virginie'), girth 204.0cm, height 16m, site 'Gymnase Jean Dauguet' (Bastide-Bordeaux Maritime), gid 8082, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 19075,
+   "species": "Tilia tomentosa",
+   "reason": "Tilia tomentosa ('Tilleul argenté'), girth 201.0cm, height 17m, site 'Lucien Victor Meunier (place)' (Hypercentre Métropolitain), gid 19075, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 5046,
+   "species": "Quercus robur",
+   "reason": "Quercus robur ('Chêne pédonculé'), girth 198.0cm, height 19m, site 'des Pins Francs (rue)' (Caudéran-Saint Augustin), gid 5046, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 19538,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 195.0cm, height 18m, site 'Ruines du Palais Gallien' (Hypercentre Métropolitain), gid 19538, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 200679,
+   "species": "Quercus imbricaria",
+   "reason": "Quercus imbricaria ('Chêne à feuilles de laurier'), girth 192.0cm, height 21m, site 'Parc de Bourran' (Parc du Bourran), gid 200679, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7940,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 188.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7940, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7947,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 188.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7947, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7946,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 188.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7946, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 30178,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 188.0cm, height 20m, site 'de l'Europe (place)' (Grand Parc-Chartrons), gid 30178, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 13333,
+   "species": "Quercus robur",
+   "reason": "Quercus robur ('Chêne pédonculé'), girth 188.0cm, height 14m, site 'Stade André Maginot_B' (Caudéran-Saint Augustin), gid 13333, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written). Caution: 'Stade' sites may be a fenced sports ground with restricted hours; confirm public access before verifying."
+  },
+  {
+   "gid": 200995,
+   "species": "Zelkova carpinifolia",
+   "reason": "Zelkova carpinifolia ('Faux Orme de Sibérie'), girth 185.0cm, height 24m, site 'Parc de Bourran' (Parc du Bourran), gid 200995, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 6563,
+   "species": "Cedrus deodara",
+   "reason": "Cedrus deodara ('Cèdre de l'Himalaya'), girth 185.0cm, height 19m, site 'Parc du Grand Parc' (Grand Parc-Chartrons), gid 6563, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 11978,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 176.0cm, height 23m, site 'Square Marjolaine' (Bastide-Bordeaux Maritime), gid 11978, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 18601,
+   "species": "Tilia tomentosa",
+   "reason": "Tilia tomentosa ('Tilleul argenté'), girth 176.0cm, height 14m, site 'Lucien Victor Meunier (place)' (Hypercentre Métropolitain), gid 18601, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 11982,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 176.0cm, height 24m, site 'Square Marjolaine' (Bastide-Bordeaux Maritime), gid 11982, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 6679,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 176.0cm, height 20m, site 'de Luze_A (cours)' (Grand Parc-Chartrons), gid 6679, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7943,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 173.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7943, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7934,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 173.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7934, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 12831,
+   "species": "Tilia tomentosa",
+   "reason": "Tilia tomentosa ('Tilleul argenté'), girth 173.0cm, height 9m, site 'Stade Galin' (Bastide-Bordeaux Maritime), gid 12831, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written). Caution: 'Stade' sites may be a fenced sports ground with restricted hours; confirm public access before verifying."
+  },
+  {
+   "gid": 7936,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 173.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7936, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7942,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 173.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7942, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7937,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 173.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7937, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 20136,
+   "species": "Tilia platyphyllos",
+   "reason": "Tilia platyphyllos ('Tilleul à grandes feuilles'), girth 170.0cm, height 20m, site 'Locaux de la CFDT_Chateau Théodore Gardère' (Bordeaux Sud-Nansouty Saint Genès), gid 20136, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 201381,
+   "species": "Pinus sylvestris",
+   "reason": "Pinus sylvestris ('Pin sylvestre'), girth 167.0cm, height 23m, site 'Parc Victor Schoelcher' (Parc du Bourran), gid 201381, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7933,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 157.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7933, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7944,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 157.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7944, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7941,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 157.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7941, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7938,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 141.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7938, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7935,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 141.0cm, height 21m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7935, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 11974,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 141.0cm, height 21m, site 'Square Marjolaine' (Bastide-Bordeaux Maritime), gid 11974, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 10721,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 138.0cm, height 20m, site 'Square Jean Vauthier' (Bordeaux Sud-Nansouty Saint Genès), gid 10721, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 10717,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 135.0cm, height 20m, site 'Square Jean Vauthier' (Bordeaux Sud-Nansouty Saint Genès), gid 10717, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 18602,
+   "species": "Tilia tomentosa",
+   "reason": "Tilia tomentosa ('Tilleul argenté'), girth 126.0cm, height 14m, site 'Lucien Victor Meunier (place)' (Hypercentre Métropolitain), gid 18602, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 29701,
+   "species": "Sequoia sempervirens",
+   "reason": "Sequoia sempervirens ('Séquoia toujours vert'), girth 126.0cm, height 20m, site 'Parc Chantegrillon' (Bastide-Bordeaux Maritime), gid 29701, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 11817,
+   "species": "Quercus ilex",
+   "reason": "Quercus ilex ('Chêne vert'), girth 119.0cm, height 14m, site 'Parc du Port de la Lune' (Réserves écologiques des Barails), gid 11817, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 201212,
+   "species": "Celtis occidentalis",
+   "reason": "Celtis occidentalis ('Micocoulier de Virginie'), girth 116.0cm, height 14m, site 'Parc de Bourran' (Parc du Bourran), gid 201212, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 13335,
+   "species": "Quercus robur",
+   "reason": "Quercus robur ('Chêne pédonculé'), girth 116.0cm, height 10m, site 'Stade André Maginot_B' (Caudéran-Saint Augustin), gid 13335, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written). Caution: 'Stade' sites may be a fenced sports ground with restricted hours; confirm public access before verifying."
+  },
+  {
+   "gid": 199778,
+   "species": "Fagus sylvatica",
+   "reason": "Fagus sylvatica ('Hêtre commun'), girth 107.0cm, height 15m, site 'Parc de Bourran' (Parc du Bourran), gid 199778, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 10724,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 97.0cm, height 20m, site 'Square Jean Vauthier' (Bordeaux Sud-Nansouty Saint Genès), gid 10724, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 22171,
+   "species": "Tilia tomentosa 'Pendula'",
+   "reason": "Tilia tomentosa 'Pendula' ('Tilleul argenté 'Pendula''), girth 94.0cm, height 14m, site 'PB_Espaces centraux' (Parc Bordelais), gid 22171, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 201428,
+   "species": "Diospyros lotus",
+   "reason": "Diospyros lotus ('Plaqueminier d'Europe'), girth 82.0cm, height 15m, site 'Parc Victor Schoelcher' (Parc du Bourran), gid 201428, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 49709,
+   "species": "Acacia rubida",
+   "reason": "Acacia rubida ('Acacia à tige rouge'), girth 53.0cm, height 5m, site 'Jardin Botanique rive droite' (Jardin Botanique), gid 49709, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 7939,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 31.0cm, height 6m, site 'du Recteur Thamin (rue)' (Bastide-Bordeaux Maritime), gid 7939, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 154397,
+   "species": "Quercus suber",
+   "reason": "Quercus suber ('Chêne-liège'), girth Nonecm, height Nonem, site '' (Nouveau Secteur), gid 154397, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 154377,
+   "species": "Quercus robur",
+   "reason": "Quercus robur ('Chêne pédonculé'), girth Nonecm, height Nonem, site 'Parc de TENET' (Parc du Bourran), gid 154377, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 154378,
+   "species": "Carpinus betulus",
+   "reason": "Carpinus betulus ('Charme commun'), girth Nonecm, height Nonem, site 'Parc de TENET' (Parc du Bourran), gid 154378, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 92653,
+   "species": "Pinus pinea",
+   "reason": "Pinus pinea ('Pin parasol'), girth Nonecm, height Nonem, site '' (Parc du Bourran), gid 92653, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 154489,
+   "species": "Quercus robur",
+   "reason": "Quercus robur ('Chêne pédonculé'), girth Nonecm, height Nonem, site '' (Parc du Bourran), gid 154489, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 96403,
+   "species": "Maclura pomifera",
+   "reason": "Maclura pomifera ('Oranger des Osages'), girth Nonecm, height Nonem, site '' (Secteur Centre Ville Vivier), gid 96403, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 101080,
+   "species": "Sequoiadendron giganteum",
+   "reason": "Sequoiadendron giganteum ('Séquoia de Californie'), girth Nonecm, height Nonem, site 'Parc de TENET' (Parc du Bourran), gid 101080, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 98088,
+   "species": "Quercus robur",
+   "reason": "Quercus robur ('Chêne pédonculé'), girth Nonecm, height Nonem, site '' (Parc du Bourran), gid 98088, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 154379,
+   "species": "Celtis occidentalis",
+   "reason": "Celtis occidentalis ('Micocoulier de Virginie'), girth Nonecm, height Nonem, site 'Parc de TENET' (Parc du Bourran), gid 154379, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 101076,
+   "species": "Sequoiadendron giganteum",
+   "reason": "Sequoiadendron giganteum ('Séquoia de Californie'), girth Nonecm, height Nonem, site 'Parc de TENET' (Parc du Bourran), gid 101076, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 154369,
+   "species": "Sequoia sempervirens",
+   "reason": "Sequoia sempervirens ('Séquoia toujours vert'), girth Nonecm, height Nonem, site 'Parc de Bourran' (Parc du Bourran), gid 154369, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 154382,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth Nonecm, height Nonem, site 'Parc de TENET' (Parc du Bourran), gid 154382, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 154490,
+   "species": "Populus tremula",
+   "reason": "Populus tremula ('Tremble'), girth Nonecm, height Nonem, site '' (Parc du Bourran), gid 154490, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 154381,
+   "species": "Taxodium distichum",
+   "reason": "Taxodium distichum ('Cyprès chauve'), girth Nonecm, height Nonem, site 'Parc de TENET' (Parc du Bourran), gid 154381, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 154376,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth Nonecm, height Nonem, site '' (Secteur Sud), gid 154376, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  },
+  {
+   "gid": 154380,
+   "species": "Cedrus sp.",
+   "reason": "Cedrus sp. ('Cèdre'), girth Nonecm, height Nonem, site 'Parc de TENET' (Parc du Bourran), gid 154380, register bordeaux-metropole-remarquables. Not verified this pass (register candidate only, not yet cross-sourced or written)."
+  }
+ ],
+ "blocked": [
+  {
+   "gid": 178504,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 490.0cm, height 33m, site 'Ecole primaire de Bourran' (Parc du Bourran), gid 178504, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 178507,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 408.0cm, height 33m, site 'Ecole primaire de Bourran' (Parc du Bourran), gid 178507, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 178505,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 405.0cm, height 33m, site 'Ecole primaire de Bourran' (Parc du Bourran), gid 178505, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 178503,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 393.0cm, height 30m, site 'Ecole primaire de Bourran' (Parc du Bourran), gid 178503, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8983,
+   "species": "Platanus occidentalis",
+   "reason": "Platanus occidentalis ('Platane d'Amérique'), girth 368.0cm, height 34m, site 'Ecole Elémentaire Stéhélin' (Caudéran-Saint Augustin), gid 8983, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9465,
+   "species": "Cedrus libani",
+   "reason": "Cedrus libani ('Cèdre du Liban'), girth 355.0cm, height 21m, site 'Ecole Elémentaire Loucheur' (Caudéran-Saint Augustin), gid 9465, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8962,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 339.0cm, height 27m, site 'Ecole Maternelle Stéhélin' (Caudéran-Saint Augustin), gid 8962, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9196,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 317.0cm, height 32m, site 'Ecole Maternelle Stéhélin' (Caudéran-Saint Augustin), gid 9196, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8462,
+   "species": "Quercus suber",
+   "reason": "Quercus suber ('Chêne-liège'), girth 295.0cm, height 17m, site 'Ecole Elémentaire Stéhélin' (Caudéran-Saint Augustin), gid 8462, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 32051,
+   "species": "Ginkgo biloba",
+   "reason": "Ginkgo biloba ('Arbre aux quarante écus'), girth 289.0cm, height 19m, site 'Parking privé Espace Saint Bruno' (Hypercentre Métropolitain), gid 32051, register bordeaux-metropole-remarquables. BLOCKED: sited on a named private facility ('parking privé' / private grounds), access not confirmed public."
+  },
+  {
+   "gid": 9124,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 289.0cm, height 27m, site 'Ecole Maternelle Paul Doumer' (Caudéran-Saint Augustin), gid 9124, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9112,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 289.0cm, height 33m, site 'Ecole Maternelle Stéhélin' (Caudéran-Saint Augustin), gid 9112, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8858,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 286.0cm, height 31m, site 'Ecole Elémentaire Stéhélin' (Caudéran-Saint Augustin), gid 8858, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8869,
+   "species": "Magnolia grandiflora",
+   "reason": "Magnolia grandiflora ('Magnolia à grandes fleurs'), girth 283.0cm, height 13m, site 'Crèche Armand Faulat' (Caudéran-Saint Augustin), gid 8869, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8603,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 283.0cm, height 30m, site 'Ecole Maternelle Albert Schweitzer' (Grand Parc-Chartrons), gid 8603, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9320,
+   "species": "Quercus rubra",
+   "reason": "Quercus rubra ('Chêne rouge d'Amérique'), girth 273.0cm, height 19m, site 'Ecole Maternelle Noviciat' (Bordeaux Sud-Nansouty Saint Genès), gid 9320, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 178506,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 251.0cm, height 33m, site 'Ecole primaire de Bourran' (Parc du Bourran), gid 178506, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9438,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 251.0cm, height 16m, site 'Ecole Maternelle Béchade' (Caudéran-Saint Augustin), gid 9438, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8509,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 239.0cm, height 24m, site 'Ecole Elémentaire Carle Vernet' (Bordeaux Sud-Nansouty Saint Genès), gid 8509, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8783,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 239.0cm, height 14m, site 'Ecole Maternelle Joséphine' (Bastide-Bordeaux Maritime), gid 8783, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8424,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 239.0cm, height 29m, site 'Ecole Maternelle Gisèle Halimi (ex Lac II)' (Bastide-Bordeaux Maritime), gid 8424, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8774,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 236.0cm, height 11m, site 'Ecole Maternelle Joséphine' (Bastide-Bordeaux Maritime), gid 8774, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9552,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 232.0cm, height 26m, site 'Ecole Elémentaire Flornoy' (Caudéran-Saint Augustin), gid 9552, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8620,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 226.0cm, height 26m, site 'Ecole Maternelle Condorcet' (Grand Parc-Chartrons), gid 8620, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8614,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 223.0cm, height 27m, site 'Ecole Maternelle Condorcet' (Grand Parc-Chartrons), gid 8614, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8513,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 220.0cm, height 29m, site 'Ecole Maternelle Gisèle Halimi (ex Lac II)' (Bastide-Bordeaux Maritime), gid 8513, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 30620,
+   "species": "Magnolia grandiflora",
+   "reason": "Magnolia grandiflora ('Magnolia à grandes fleurs'), girth 217.0cm, height 17m, site 'Ecole d'Enseignement Supérieur d'Art de Bordeaux' (Berges Urbaines-Promenade Corajoud), gid 30620, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9550,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 214.0cm, height 26m, site 'Ecole Elémentaire Flornoy' (Caudéran-Saint Augustin), gid 9550, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9551,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 214.0cm, height 26m, site 'Ecole Elémentaire Flornoy' (Caudéran-Saint Augustin), gid 9551, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8754,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 210.0cm, height 19m, site 'Ecole Elémentaire Albert Barraud' (Hypercentre Métropolitain), gid 8754, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8608,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 210.0cm, height 30m, site 'Ecole Maternelle Albert Schweitzer' (Grand Parc-Chartrons), gid 8608, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8527,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 210.0cm, height 12m, site 'Ecole Elémentaire Charles Martin' (Bastide-Bordeaux Maritime), gid 8527, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8613,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 210.0cm, height 27m, site 'Ecole Maternelle Condorcet' (Grand Parc-Chartrons), gid 8613, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8828,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 207.0cm, height 29m, site 'Ecole Maternelle Gisèle Halimi (ex Lac II)' (Bastide-Bordeaux Maritime), gid 8828, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8789,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 204.0cm, height 12m, site 'Ecole Maternelle Joséphine' (Bastide-Bordeaux Maritime), gid 8789, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9293,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 204.0cm, height 13m, site 'Ecole Maternelle Paul Lapie' (Caudéran-Saint Augustin), gid 9293, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9253,
+   "species": "Aesculus hippocastanum",
+   "reason": "Aesculus hippocastanum ('Marronnier d'Inde'), girth 201.0cm, height 14m, site 'Ecole Maternelle Jean Cocteau' (Caudéran-Saint Augustin), gid 9253, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8807,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 201.0cm, height 13m, site 'Ecole Maternelle Joséphine' (Bastide-Bordeaux Maritime), gid 8807, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8618,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 201.0cm, height 26m, site 'Ecole Maternelle Condorcet' (Grand Parc-Chartrons), gid 8618, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8512,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 201.0cm, height 29m, site 'Ecole Maternelle Gisèle Halimi (ex Lac II)' (Bastide-Bordeaux Maritime), gid 8512, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9555,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 201.0cm, height 26m, site 'Ecole Elémentaire Flornoy' (Caudéran-Saint Augustin), gid 9555, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9554,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 192.0cm, height 26m, site 'Ecole Elémentaire Flornoy' (Caudéran-Saint Augustin), gid 9554, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8817,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 185.0cm, height 11m, site 'Ecole Maternelle Joséphine' (Bastide-Bordeaux Maritime), gid 8817, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8799,
+   "species": "Celtis australis",
+   "reason": "Celtis australis ('Micocoulier d'Europe'), girth 182.0cm, height 12m, site 'Ecole Maternelle Joséphine' (Bastide-Bordeaux Maritime), gid 8799, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8988,
+   "species": "Acer buergerianum",
+   "reason": "Acer buergerianum ('Erable trifide'), girth 176.0cm, height 13m, site 'Ecole Maternelle Jules Ferry' (Caudéran-Saint Augustin), gid 8988, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8605,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 176.0cm, height 23m, site 'Ecole Maternelle Albert Schweitzer' (Grand Parc-Chartrons), gid 8605, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9282,
+   "species": "Tilia x europaea 'Euchlora'",
+   "reason": "Tilia x europaea 'Euchlora' ('Tilleul de Crimée'), girth 173.0cm, height 15m, site 'Ecole Elémentaire Stéhélin' (Caudéran-Saint Augustin), gid 9282, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8604,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 157.0cm, height 16m, site 'Ecole Maternelle Albert Schweitzer' (Grand Parc-Chartrons), gid 8604, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9549,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 145.0cm, height 26m, site 'Ecole Elémentaire Flornoy' (Caudéran-Saint Augustin), gid 9549, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 9072,
+   "species": "Fraxinus excelsior",
+   "reason": "Fraxinus excelsior ('Frêne commun'), girth 119.0cm, height 12m, site 'Ecole Elémentaire Paul Doumer' (Caudéran-Saint Augustin), gid 9072, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8501,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 113.0cm, height 32m, site 'Ecole Maternelle Gisèle Halimi (ex Lac II)' (Bastide-Bordeaux Maritime), gid 8501, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  },
+  {
+   "gid": 8609,
+   "species": "Platanus x hispanica",
+   "reason": "Platanus x hispanica ('Platane commun'), girth 101.0cm, height 17m, site 'Ecole Maternelle Albert Schweitzer' (Grand Parc-Chartrons), gid 8609, register bordeaux-metropole-remarquables. BLOCKED: on school/creche/college grounds, not genuinely open to casual visitors. Leave out per hard rule 10 unless a future pass confirms public access (e.g. a schoolyard tree visible from a public path)."
+  }
+ ]
+}
