@@ -133,6 +133,18 @@ jobs:
               costs the whole window; data/fetch-blocklist.json lists the known
               ones and passcheck.py prints it.
 
+            APPEND TO LOG.md BEFORE YOU EXIT, always, and above all when you
+            shipped nothing. Two or three sentences: which rung you picked, which
+            city and why, what you actually did, and where it stopped. A run that
+            ends with only a claim commit and no log entry is invisible: on
+            2026-08-13 a run correctly picked Como off the queue, claimed it,
+            spent 54 turns and produced nothing else, and nobody could tell from
+            the repository whether it had failed, been blocked or simply been
+            cut off. Hidde reads LOG.md cold, so "I tried X, it stopped at Y" is
+            worth more to him than silence. If a tool call was refused, say which
+            command; the workflow log does not record that and you are the only
+            witness.
+
             LOG WHAT THE PASS COST, in the same commit as its output: append to
             data/agent-costs.json under today's date with target, kind (verify,
             write, photo, scout), tokens, trees that actually reached
@@ -273,8 +285,18 @@ jobs:
           # been arbitrary code execution, so neither list was ever a sandbox.
           # What actually bounds this job is that its token reaches one repo and
           # everything it does is in git history.
+          #
+          # Widened 2026-08-13, after a manually started run logged eight
+          # permission denials in five minutes and produced one claim commit.
+          # The additions are text and file plumbing every other pass here uses
+          # freely: sed, awk, echo, jq, cut, tr, date, basename, dirname, cp, mv,
+          # test. None of them widens what this job can reach, because
+          # Bash(python3:*) has always been arbitrary code execution and the
+          # boundary was never the list. Deliberately still absent: xargs and any
+          # shell that takes a command string, because those turn one allowed
+          # entry into all of them. The denylist below is unchanged.
           claude_args: |
-            --allowedTools "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Task,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+            --allowedTools "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Bash(sed:*),Bash(awk:*),Bash(echo:*),Bash(jq:*),Bash(cut:*),Bash(tr:*),Bash(date:*),Bash(basename:*),Bash(dirname:*),Bash(cp:*),Bash(mv:*),Bash(test:*),Task,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
             --disallowedTools "Bash(rm:*),Bash(sudo:*),Bash(gh repo:*),Bash(gh secret:*),Bash(gh auth:*),Bash(git clean:*),Bash(git reset --hard:*),Bash(find:* -delete)"
       # Continuous mode. GitHub fires the schedule only a handful of times a day
       # for this repo, so most open usage windows go unused. When a token is
