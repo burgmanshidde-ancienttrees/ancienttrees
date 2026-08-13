@@ -4,52 +4,58 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "Vienna",
-      "kind": "write",
-      "by": "night-run-2026-08-12",
-      "claimed_at": "2026-08-12T22:33:13+00:00"
-    },
-    {
       "target": "Prague",
       "kind": "write",
-      "by": "night-run-2026-08-12",
-      "claimed_at": "2026-08-12T22:33:13+00:00"
+      "by": "night-run",
+      "claimed_at": "2026-08-13T05:23:07+00:00"
+    },
+    {
+      "target": "Vienna",
+      "kind": "write",
+      "by": "night-run",
+      "claimed_at": "2026-08-13T05:23:07+00:00"
+    },
+    {
+      "target": "Kyoto",
+      "kind": "write",
+      "by": "night-run",
+      "claimed_at": "2026-08-13T05:23:07+00:00"
     },
     {
       "target": "Rome",
       "kind": "write",
-      "by": "night-run-2026-08-12",
-      "claimed_at": "2026-08-12T22:33:13+00:00"
+      "by": "night-run",
+      "claimed_at": "2026-08-13T05:23:08+00:00"
     },
     {
       "target": "Bologna",
       "kind": "write",
-      "by": "night-run-2026-08-12",
-      "claimed_at": "2026-08-12T22:33:13+00:00"
+      "by": "night-run",
+      "claimed_at": "2026-08-13T05:23:08+00:00"
     },
     {
       "target": "Turin",
       "kind": "write",
-      "by": "night-run-2026-08-12",
-      "claimed_at": "2026-08-12T22:33:13+00:00"
+      "by": "night-run",
+      "claimed_at": "2026-08-13T05:23:09+00:00"
     },
     {
       "target": "Zaragoza",
       "kind": "write",
-      "by": "night-run-2026-08-12",
-      "claimed_at": "2026-08-12T22:33:13+00:00"
+      "by": "night-run",
+      "claimed_at": "2026-08-13T05:23:09+00:00"
     },
     {
       "target": "Cordoba",
       "kind": "write",
-      "by": "night-run-2026-08-12",
-      "claimed_at": "2026-08-12T22:33:13+00:00"
+      "by": "night-run",
+      "claimed_at": "2026-08-13T05:23:09+00:00"
     },
     {
       "target": "Lucca",
       "kind": "write",
-      "by": "night-run-2026-08-12",
-      "claimed_at": "2026-08-12T22:33:13+00:00"
+      "by": "night-run",
+      "claimed_at": "2026-08-13T05:23:10+00:00"
     }
   ]
 }
