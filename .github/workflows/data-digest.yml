@@ -47,11 +47,23 @@ jobs:
       - name: Re-rank the queue from the new numbers
         run: python3 scripts/city_queue.py
 
+      # The staging shelf stocks itself here, not only inside Claude runs.
+      # Hidde, 2026-08-13: "er gaan weken zijn dat ik er helemaal niet ben."
+      # A Claude run dies the moment the usage window closes, which is exactly
+      # when nobody is around to notice an empty shelf; this workflow costs
+      # zero tokens and fires daily regardless. prepare.py is deterministic
+      # (register rows within 5 km, dedup annotations, live tree counts), so
+      # there is nothing for a model to decide.
+      - name: Stock the staging shelf
+        run: python3 scripts/prepare.py
+
       - name: Commit if there is a new entry
         run: |
           git config user.name "burgmanshidde-ancienttrees"
           git config user.email "304936064+burgmanshidde-ancienttrees@users.noreply.github.com"
-          git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md
+          git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md \
+            data/city-coords.json data/research/*-register-candidates.json 2>/dev/null || \
+            git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md data/city-coords.json
           if git diff --cached --quiet; then
             echo "No new entry today."
           else
