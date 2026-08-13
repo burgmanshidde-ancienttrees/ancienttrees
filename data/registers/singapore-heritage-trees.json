@@ -1,0 +1,2563 @@
+{
+ "source": "NParks (National Parks Board), Heritage Trees Scheme",
+ "endpoint": "https://api-open.data.gov.sg/v1/public/api/datasets/d_644ff187b6d14d6316f47284a4a6c81f/poll-download (signed S3 URL returning a GeoJSON, dataset id d_644ff187b6d14d6316f47284a4a6c81f, data.gov.sg dataset \"Heritage Trees\")",
+ "licence": "Singapore Open Data Licence version 1.0",
+ "licence_proof": "You can use, access, download, copy, distribute, transmit, modify and adapt the datasets, or any derived analyses or applications, whether commercially or non-commercially. (https://data.gov.sg/open-data-licence) Attribution required: a conspicuous notice acknowledging the source of the datasets and including a link to the most recent version of this Licence.",
+ "designation": "Heritage Tree (Heritage Trees Scheme, gazetted by NParks: mature trees of girth over 5 metres and historical, social, cultural, aesthetic, botanical or educational value; each gets lightning protection and English signage)",
+ "attribution": "National Parks Board (NParks), data.gov.sg",
+ "fetched": "2026-08-13",
+ "scope": "Complete national Heritage Trees dataset, 255 gazetted trees across Singapore (mainland and offshore islands, including Pulau Ubin). This is the semantic-filtered heritage subset, not the full Trees.sg island-wide inventory, which fails our semantic filter.",
+ "caveat": "No age, girth, height or vitality field in the dataset: NParks records the heritage designation and a short common-name-plus-location description only. A per-tree girth figure (all heritage trees exceed 5m by definition of the scheme) and any age must come from the NParks page linked in nparks_url or other sources, never invented here. Two Chek Jawa Mangrove Apples are registered a few metres apart as separate trees (left/right of House No. 1); check on the ground or via imagery whether a city pass should treat them as a register twin or as two distinct collectible points before publishing both. location_text is NParks own free-text description, not a street address; several trees are on Pulau Ubin, an island reached by bare-boat ferry from Changi Point, which is well outside the 30-minute day-trip boundary and should not be presented as within Singapore city unless the transport time is stated honestly.",
+ "entries": [
+  {
+   "ht_id": "HT 2007-163",
+   "species_latin": "Sonneratia alba J. Smith",
+   "common_name": "Mangrove Apple",
+   "location_text": "Pulau Ubin, near Chek Jawa, from House No. 1 on the left",
+   "latitude": 1.40734,
+   "longitude": 103.988526,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2007-163/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2007-162",
+   "species_latin": "Sonneratia alba J. Smith",
+   "common_name": "Mangrove Apple",
+   "location_text": "Pulau Ubin, near Chek Jawa,  from House No. 1 on the right",
+   "latitude": 1.407361,
+   "longitude": 103.988292,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2007-162/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-224",
+   "species_latin": "Dalbergia oliveri",
+   "common_name": "Black Rosewood",
+   "location_text": "Fort Canning Park, Fort Green",
+   "latitude": 1.295294,
+   "longitude": 103.847633,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-224/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-246",
+   "species_latin": "Hopea odorata Roxb.",
+   "common_name": "Chengal Pasir",
+   "location_text": "Singapore Botanic Gardens, Lawn XA",
+   "latitude": 1.315958,
+   "longitude": 103.815409,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-246/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-234",
+   "species_latin": "Tectona grandis L.f.",
+   "common_name": "Teak",
+   "location_text": "Singapore Botanic Gardens, along Office Ring Road, Botany Centre",
+   "latitude": 1.308249,
+   "longitude": 103.817993,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-234/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2020-313",
+   "species_latin": "Sandoricum koetjape (Burm. f.) Merr.",
+   "common_name": "Santol",
+   "location_text": "Clemenceau Ave North, near lamp-post No. 8, opposite Blk 100 Cavenagh House",
+   "latitude": 1.307571,
+   "longitude": 103.840031,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2020-313/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2016-276",
+   "species_latin": "Swietenia macrophylla King",
+   "common_name": "Broad-leafed Mahogany",
+   "location_text": "Tanglin Rd near Hse No 287",
+   "latitude": 1.302929,
+   "longitude": 103.821128,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2016-276/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2005-134",
+   "species_latin": "Ceiba pentandra (L.) Gaertn.",
+   "common_name": "Kapok Tree",
+   "location_text": "Seah Im Road, at far end of public carpark",
+   "latitude": 1.268674,
+   "longitude": 103.817351,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2005-134/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-12",
+   "species_latin": "Artocarpus elasticus Reinw. ex Blume",
+   "common_name": "Terap",
+   "location_text": "Fort Canning Park, along 14th Century Walk of History",
+   "latitude": 1.292552,
+   "longitude": 103.846332,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-12/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-125",
+   "species_latin": "Terminalia subspathulata King",
+   "common_name": "Medang Salah",
+   "location_text": "Changi, Loyang Avenue near junction with Halton Road",
+   "latitude": 1.387642,
+   "longitude": 103.980477,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-125/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-124",
+   "species_latin": "Terminalia subspathulata King",
+   "common_name": "Medang Salah",
+   "location_text": "Changi, Loyang Avenue near junction with Halton Road",
+   "latitude": 1.387701,
+   "longitude": 103.98094,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-124/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-243",
+   "species_latin": "Koompassia malaccensis Maing. ex Benth.",
+   "common_name": "Kempas",
+   "location_text": "Singapore Botanic Gardens, LXA",
+   "latitude": 1.315524,
+   "longitude": 103.815074,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-243/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2007-161",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.40963,
+   "longitude": 103.870898,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2007-161/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-205",
+   "species_latin": "Ficus crassiramea subsp. crassiramea (Miq.) Miq.",
+   "common_name": "Collared Fig",
+   "location_text": "Pulau Ubin, along Ketam bike trail, near Pipit Hut",
+   "latitude": 1.41248,
+   "longitude": 103.94369,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-205/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2017-290",
+   "species_latin": "Terminalia catappa L.",
+   "common_name": "Sea Almond",
+   "location_text": "Singapore Botanic Gardens, EG8 (future ethno-botany garden)",
+   "latitude": 1.320149,
+   "longitude": 103.816293,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2017-290/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2023-325",
+   "species_latin": "Dipterocarpus oblongifolius Blume",
+   "common_name": "Neram",
+   "location_text": "",
+   "latitude": 1.309205,
+   "longitude": 103.817329,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2023-325/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-188",
+   "species_latin": "Alstonia angustiloba Miq.",
+   "common_name": "Common Pulai",
+   "location_text": "Singapore Botanic Gardens, National Orchid Garden",
+   "latitude": 1.314164,
+   "longitude": 103.813992,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-188/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-101",
+   "species_latin": "Pterocarpus indicus Willd.",
+   "common_name": "Angsana",
+   "location_text": "",
+   "latitude": 1.279101,
+   "longitude": 103.836593,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-101/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-99",
+   "species_latin": "Pterocarpus indicus Willd.",
+   "common_name": "Angsana",
+   "location_text": "Pender Road, within grounds of the Danish Seamen's Mission",
+   "latitude": 1.273071,
+   "longitude": 103.815097,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-99/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2005-145",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Everton Road, top of the slope opposite Block 10 multi-storey carpark",
+   "latitude": 1.274199,
+   "longitude": 103.838377,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2005-145/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-107",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Rain Tree",
+   "location_text": "Top of the slope at junction of Spottiswoode Park Road and",
+   "latitude": 1.273637,
+   "longitude": 103.838461,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-107/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-37",
+   "species_latin": "Alstonia angustiloba Miq.",
+   "common_name": "Common Pulai",
+   "location_text": "Pulau Ubin, Jalan Durian after Pekakak Hut, former Kampong Melayu",
+   "latitude": 1.40801,
+   "longitude": 103.985455,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-37/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-79",
+   "species_latin": "Ficus superba Miq.",
+   "common_name": "Sea Fig",
+   "location_text": "",
+   "latitude": 1.342378,
+   "longitude": 103.683683,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-79/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-86",
+   "species_latin": "Mangifera caesia Jack",
+   "common_name": "Binjai",
+   "location_text": "",
+   "latitude": 1.337192,
+   "longitude": 103.787708,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-86/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-106",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Rain Tree",
+   "location_text": "",
+   "latitude": 1.324083,
+   "longitude": 103.815744,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-106/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-117",
+   "species_latin": "Sloetia elongata (Miq.) Koord.",
+   "common_name": "Tempinis",
+   "location_text": "",
+   "latitude": 1.218045,
+   "longitude": 103.848252,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-117/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2005-130",
+   "species_latin": "Alstonia angustiloba Miq.",
+   "common_name": "Common Pulai",
+   "location_text": "",
+   "latitude": 1.254151,
+   "longitude": 103.815662,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2005-130/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2005-139",
+   "species_latin": "Litsea elliptica Blume",
+   "common_name": "Medang",
+   "location_text": "",
+   "latitude": 1.248636,
+   "longitude": 103.831282,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2005-139/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2005-142",
+   "species_latin": "Peltophorum pterocarpum (DC.) Backer ex K.Heyne",
+   "common_name": "Yellow Flame",
+   "location_text": "",
+   "latitude": 1.32485,
+   "longitude": 103.84782,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2005-142/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2005-146",
+   "species_latin": "Swietenia macrophylla King",
+   "common_name": "Broad-leafed Mahogany",
+   "location_text": "",
+   "latitude": 1.41484,
+   "longitude": 103.86242,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2005-146/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2005-149",
+   "species_latin": "Swietenia macrophylla King",
+   "common_name": "Broad-leafed Mahogany",
+   "location_text": "",
+   "latitude": 1.41523,
+   "longitude": 103.86221,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2005-149/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2007-152",
+   "species_latin": "Ceiba pentandra (L.) Gaertn.",
+   "common_name": "Kapok Tree",
+   "location_text": "",
+   "latitude": 1.4047,
+   "longitude": 103.79334,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2007-152/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2007-153",
+   "species_latin": "Ceiba pentandra (L.) Gaertn.",
+   "common_name": "Kapok Tree",
+   "location_text": "",
+   "latitude": 1.40337,
+   "longitude": 103.79399,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2007-153/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2007-155",
+   "species_latin": "Ficus kerkhovenii Valeton",
+   "common_name": "Johor Fig",
+   "location_text": "",
+   "latitude": 1.25019,
+   "longitude": 103.823554,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2007-155/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2007-159",
+   "species_latin": "Pterocarpus indicus Willd.",
+   "common_name": "Angsana",
+   "location_text": "",
+   "latitude": 1.284599,
+   "longitude": 103.793536,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2007-159/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2008-164",
+   "species_latin": "Pithecellobium dulce",
+   "common_name": "Madras Thorn",
+   "location_text": "",
+   "latitude": 1.337402,
+   "longitude": 103.801923,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2008-164/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2008-169",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Rain Tree",
+   "location_text": "",
+   "latitude": 1.309277,
+   "longitude": 103.848016,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2008-169/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2009-175",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Rain Tree",
+   "location_text": "",
+   "latitude": 1.288137,
+   "longitude": 103.82503,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2009-175/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2010-177",
+   "species_latin": "Ficus drupacea Thunb.",
+   "common_name": "Brown Woolly Fig",
+   "location_text": "",
+   "latitude": 1.30744,
+   "longitude": 103.7816,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2010-177/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2010-178",
+   "species_latin": "Ficus drupacea Thunb.",
+   "common_name": "Brown Woolly Fig",
+   "location_text": "",
+   "latitude": 1.30764,
+   "longitude": 103.78186,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2010-178/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2010-179",
+   "species_latin": "Ficus drupacea Thunb.",
+   "common_name": "Brown Woolly Fig",
+   "location_text": "",
+   "latitude": 1.30767,
+   "longitude": 103.78159,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2010-179/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2010-180",
+   "species_latin": "Ficus drupacea Thunb.",
+   "common_name": "Brown Woolly Fig",
+   "location_text": "",
+   "latitude": 1.30771,
+   "longitude": 103.78154,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2010-180/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2010-181",
+   "species_latin": "Ficus elastica Roxb. ex Hornem.",
+   "common_name": "Indian Rubber Tree",
+   "location_text": "",
+   "latitude": 1.29643,
+   "longitude": 103.84914,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2010-181/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2010-182",
+   "species_latin": "Khaya nyasica",
+   "common_name": "Red Mahogany",
+   "location_text": "",
+   "latitude": 1.33395,
+   "longitude": 103.84465,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2010-182/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-225",
+   "species_latin": "Ficus religiosa L.",
+   "common_name": "Bodhi Tree",
+   "location_text": "",
+   "latitude": 1.324223,
+   "longitude": 103.860868,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-225/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-226",
+   "species_latin": "Margaritaria indica (Dalzell) Airy Shaw",
+   "common_name": "蓝子木",
+   "location_text": "",
+   "latitude": 1.30701,
+   "longitude": 103.772119,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-226/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2019-300",
+   "species_latin": "Azadirachta indica A. Juss.",
+   "common_name": "Neem Tree",
+   "location_text": "",
+   "latitude": 1.220731,
+   "longitude": 103.847892,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2019-300/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2016-275",
+   "species_latin": "Pithecellobium dulce",
+   "common_name": "Madras Thorn",
+   "location_text": "Marine Parade Rd Park / Playground",
+   "latitude": 1.305593,
+   "longitude": 103.909245,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2016-275/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2018-292",
+   "species_latin": "Chukrasia tabularis",
+   "common_name": "Chittagong Wood",
+   "location_text": "Hooper Rd Playground, near House No 21A",
+   "latitude": 1.312077,
+   "longitude": 103.843129,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2018-292/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-203",
+   "species_latin": "Ficus elastica Roxb. ex Hornem.",
+   "common_name": "Indian Rubber Tree",
+   "location_text": "Duxton Plain Park, near Pinnacle block 1D",
+   "latitude": 1.27708,
+   "longitude": 103.842238,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-203/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2019-303",
+   "species_latin": "Ficus kerkhovenii Valeton",
+   "common_name": "Johor Fig",
+   "location_text": "",
+   "latitude": 1.24928,
+   "longitude": 103.82532,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2019-303/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2020-314",
+   "species_latin": "Syzygium conglomeratum (Duthie) I.M.Turner",
+   "common_name": "Selembat",
+   "location_text": "",
+   "latitude": 1.40269,
+   "longitude": 103.78786,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2020-314/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-45",
+   "species_latin": "Buchanania arborescens (Blume) Blume",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.389394,
+   "longitude": 103.974176,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-45/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-73",
+   "species_latin": "Ficus stricta (Miq.) Miq.",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.391764,
+   "longitude": 103.98193,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-73/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-72",
+   "species_latin": "Ficus stricta (Miq.) Miq.",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.39155,
+   "longitude": 103.98189,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-72/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2022-320",
+   "species_latin": "Alstonia angustiloba Miq.",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.37008,
+   "longitude": 103.81284,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2022-320/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-116",
+   "species_latin": "Sloetia elongata (Miq.) Koord.",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.390126,
+   "longitude": 103.974717,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-116/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2023-324",
+   "species_latin": "Bhesa robusta (Roxb.) Ding Hou",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.25663,
+   "longitude": 103.81622,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2023-324/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2018-294",
+   "species_latin": "Hevea brasiliensis (Willd. ex A.Juss.) Müll.Arg.",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.436633,
+   "longitude": 103.780208,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2018-294/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-110",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.324162,
+   "longitude": 103.846146,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-110/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-15",
+   "species_latin": "Khaya nyasica",
+   "common_name": "Red Mahogany",
+   "location_text": "Guillemard Road Open Space",
+   "latitude": 1.314681,
+   "longitude": 103.89244,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-15/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2007-154",
+   "species_latin": "Durio zibethinus L.",
+   "common_name": "Durian Kampong",
+   "location_text": "Pulau Ubin, in forested knoll off Jalan Batu Ubin behind cemetery grounds",
+   "latitude": 1.407298,
+   "longitude": 103.966414,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2007-154/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2021-318",
+   "species_latin": "Calophyllum inophyllum L.",
+   "common_name": "Penaga Laut",
+   "location_text": "East Coast Park Area F, Bedok Jetty",
+   "latitude": 1.308273,
+   "longitude": 103.940978,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2021-318/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2018-299",
+   "species_latin": "Canarium vulgare Leenh.",
+   "common_name": "Chinese Olive",
+   "location_text": "Singapore Botanic Gardens, Tyersall Learning Forest (Canarium Pond area)",
+   "latitude": 1.310134,
+   "longitude": 103.813155,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2018-299/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-40",
+   "species_latin": "Alstonia angustiloba Miq.",
+   "common_name": "Common Pulai",
+   "location_text": "",
+   "latitude": 1.248214,
+   "longitude": 103.833926,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-40/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-58",
+   "species_latin": "Cyrtophyllum fragrans (Roxb.) DC.",
+   "common_name": "Tembusu",
+   "location_text": "",
+   "latitude": 1.253681,
+   "longitude": 103.817107,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-58/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-44",
+   "species_latin": "Bhesa robusta (Roxb.) Ding Hou",
+   "common_name": "Red-Flowered Malayan Spindle Tree",
+   "location_text": "",
+   "latitude": 1.24754,
+   "longitude": 103.83514,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-44/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-62",
+   "species_latin": "Ficus kerkhovenii Valeton",
+   "common_name": "Johor Fig",
+   "location_text": "",
+   "latitude": 1.247522,
+   "longitude": 103.828041,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-62/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-67",
+   "species_latin": "Ficus kerkhovenii Valeton",
+   "common_name": "Johor Fig",
+   "location_text": "",
+   "latitude": 1.247516,
+   "longitude": 103.827011,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-67/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-81",
+   "species_latin": "Garcinia celebica L.",
+   "common_name": "Seashore Mangosteen",
+   "location_text": "",
+   "latitude": 1.25228,
+   "longitude": 103.82504,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-81/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-80",
+   "species_latin": "Ficus vasculosa Wall. ex Miq.",
+   "common_name": "White Fig",
+   "location_text": "",
+   "latitude": 1.24833,
+   "longitude": 103.83597,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-80/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-94",
+   "species_latin": "Palaquium obovatum var. obovatum (Griff.) Engl.",
+   "common_name": "Nyatoh Puteh",
+   "location_text": "",
+   "latitude": 1.255089,
+   "longitude": 103.817256,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-94/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-95",
+   "species_latin": "Parkia speciosa Hassk.",
+   "common_name": "Petai",
+   "location_text": "",
+   "latitude": 1.252185,
+   "longitude": 103.822486,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-95/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-100",
+   "species_latin": "Pterocarpus indicus Willd.",
+   "common_name": "Angsana",
+   "location_text": "",
+   "latitude": 1.250464,
+   "longitude": 103.824661,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-100/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-93",
+   "species_latin": "Mimusops elengi L.",
+   "common_name": "Tanjong Tree",
+   "location_text": "",
+   "latitude": 1.254371,
+   "longitude": 103.817977,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-93/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-120",
+   "species_latin": "Swietenia macrophylla King",
+   "common_name": "Broad-leafed Mahogany",
+   "location_text": "",
+   "latitude": 1.254485,
+   "longitude": 103.817604,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-120/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-121",
+   "species_latin": "Swietenia macrophylla King",
+   "common_name": "Broad-leafed Mahogany",
+   "location_text": "",
+   "latitude": 1.254919,
+   "longitude": 103.817757,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-121/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-129",
+   "species_latin": "Swietenia macrophylla King",
+   "common_name": "Broad-leafed Mahogany",
+   "location_text": "",
+   "latitude": 1.254854,
+   "longitude": 103.817795,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-129/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-98",
+   "species_latin": "Pterocarpus indicus Willd.",
+   "common_name": "Angsana",
+   "location_text": "",
+   "latitude": 1.257793,
+   "longitude": 103.810647,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-98/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-126",
+   "species_latin": "Vitex pinnata",
+   "common_name": "Leban",
+   "location_text": "",
+   "latitude": 1.254343,
+   "longitude": 103.817906,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-126/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-206",
+   "species_latin": "Ficus stricta (Miq.) Miq.",
+   "common_name": "",
+   "location_text": "Pulau Ubin, roadside, right side of Jalan Noordin toward NPCC campsite, along fence",
+   "latitude": 1.41652,
+   "longitude": 103.9669,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-206/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-87",
+   "species_latin": "Mangifera caesia Jack",
+   "common_name": "Binjai",
+   "location_text": "",
+   "latitude": 1.303108,
+   "longitude": 103.841824,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-87/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-25",
+   "species_latin": "Terminalia subspathulata King",
+   "common_name": "Jelawai Jaha",
+   "location_text": "Singapore Botanic Gardens, at Lower Ring Road and Liane Road junction",
+   "latitude": 1.311119,
+   "longitude": 103.816247,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-25/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-245",
+   "species_latin": "Rubroshorea pauciflora (King) P.S.Ashton & J.Heck.",
+   "common_name": "Nemesu",
+   "location_text": "Singapore Botanic Gardens, Rainforest",
+   "latitude": 1.311044,
+   "longitude": 103.816894,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-245/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2019-307",
+   "species_latin": "Sterculia foetida L.",
+   "common_name": "Hazel Sterculia",
+   "location_text": "Singapore Botanic Gardens, National Orchid Garden Nursery",
+   "latitude": 1.313152,
+   "longitude": 103.813643,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2019-307/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2005-141",
+   "species_latin": "Parkia timoriana (DC.) Merr.",
+   "common_name": "Petai Kerayong",
+   "location_text": "",
+   "latitude": 1.273089,
+   "longitude": 103.815374,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2005-141/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-259",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.289596,
+   "longitude": 103.853155,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-259/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-255",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Rain Tree",
+   "location_text": "Connaught Drive",
+   "latitude": 1.290151,
+   "longitude": 103.853428,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-255/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-257",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Rain Tree",
+   "location_text": "Connaught Drive",
+   "latitude": 1.289791,
+   "longitude": 103.853251,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-257/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-258",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Rain Tree",
+   "location_text": "Connaught Drive",
+   "latitude": 1.28967,
+   "longitude": 103.853194,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-258/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-256",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.290071,
+   "longitude": 103.853387,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-256/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2024-328",
+   "species_latin": "Alstonia angustiloba Miq.",
+   "common_name": "Common Pulai",
+   "location_text": "",
+   "latitude": 1.3456,
+   "longitude": 103.786884,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2024-328/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-19",
+   "species_latin": "Adenanthera pavonina L.",
+   "common_name": "Saga",
+   "location_text": "Singapore Botanic Gardens, near Lady on a Hammock sculpture",
+   "latitude": 1.309895,
+   "longitude": 103.817059,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-19/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-113",
+   "species_latin": "Richetia gibbosa (Brandis) P.S.Ashton & J.Heck.",
+   "common_name": "Damar Hitam Gajah",
+   "location_text": "Changi, Netheravon Road near Bus Stop B06",
+   "latitude": 1.390935,
+   "longitude": 103.979727,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-113/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-03",
+   "species_latin": "Pterocarpus indicus Willd.",
+   "common_name": "Sena",
+   "location_text": "Upper Serangoon Road, near Woodleigh Park",
+   "latitude": 1.33522,
+   "longitude": 103.870071,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-03/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2008-171",
+   "species_latin": "Ceiba pentandra (L.) Gaertn.",
+   "common_name": "Kapok Tree",
+   "location_text": "Singapore Botanic Gardens, beside Holttum Hall",
+   "latitude": 1.308499,
+   "longitude": 103.817444,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2008-171/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-235",
+   "species_latin": "Artocarpus elasticus Reinw. ex Blume",
+   "common_name": "Getah Terup",
+   "location_text": "Fort Canning Park, near Raffles Terrace",
+   "latitude": 1.291659,
+   "longitude": 103.846986,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-235/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-55",
+   "species_latin": "Cyrtophyllum fragrans (Roxb.) DC.",
+   "common_name": "Tembusu Hutan",
+   "location_text": "Maida Vale, in front of House No. 13 (Seletar Aerospace Park)",
+   "latitude": 1.405311,
+   "longitude": 103.870354,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-55/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-103",
+   "species_latin": "Pterocarpus indicus Willd.",
+   "common_name": "Angsana",
+   "location_text": "Woodlands Road, in front of Woodlands Fire Station",
+   "latitude": 1.430932,
+   "longitude": 103.76189,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-103/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-08",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Rain Tree",
+   "location_text": "Fort Canning Park, near Bond Terrace",
+   "latitude": 1.293986,
+   "longitude": 103.847532,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-08/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-07",
+   "species_latin": "Pithecellobium dulce",
+   "common_name": "Madras Thorn",
+   "location_text": "Fort Canning Park, along path beside Service Reservoir",
+   "latitude": 1.293744,
+   "longitude": 103.845797,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-07/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-11",
+   "species_latin": "Enterolobium cyclocarpum",
+   "common_name": "Earpod Tree",
+   "location_text": "Fort Canning Park, along path behind the Fort Wall and The Legends",
+   "latitude": 1.295169,
+   "longitude": 103.845046,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-11/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-17",
+   "species_latin": "Parkia timoriana (DC.) Merr.",
+   "common_name": "Petai Kerayong",
+   "location_text": "Mount Faber, on slope near Marina Deck",
+   "latitude": 1.269829,
+   "longitude": 103.821968,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-17/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-18",
+   "species_latin": "Ficus religiosa L.",
+   "common_name": "Bodhi Tree",
+   "location_text": "Pearl's Hill City Park hilltop, near Service Reservoir gate",
+   "latitude": 1.284623,
+   "longitude": 103.839284,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-18/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2008-168",
+   "species_latin": "Ficus superba Miq.",
+   "common_name": "Sea Fig",
+   "location_text": "Junction of Bedok Rd and Upper Changi Rd junction, East Village Car-park (former Changi Complex)",
+   "latitude": 1.33212,
+   "longitude": 103.946273,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2008-168/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2009-174",
+   "species_latin": "Ficus kurzii King",
+   "common_name": "Burmese Banyan",
+   "location_text": "No. 162 Mount Pleasant Road, gateway",
+   "latitude": 1.332443,
+   "longitude": 103.830983,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2009-174/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-186",
+   "species_latin": "Pseudalbizzia niopoides var. niopoides (Spruce ex Benth.) E.J.M.Koenen & Duno",
+   "common_name": "Kungkur",
+   "location_text": "Singapore Botanic Gardens Lawn E",
+   "latitude": 1.308644,
+   "longitude": 103.816494,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-186/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-187",
+   "species_latin": "Alstonia angustiloba Miq.",
+   "common_name": "Common Pulai",
+   "location_text": "Singapore Botanic Gardens, Burkill Drive Way",
+   "latitude": 1.311551,
+   "longitude": 103.813585,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-187/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2010-183",
+   "species_latin": "Alstonia pneumatophora Backer ex den Berger",
+   "common_name": "Marsh Pulai",
+   "location_text": "Singapore Botanic Gardens, Lawn H",
+   "latitude": 1.308967,
+   "longitude": 103.816094,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2010-183/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-22",
+   "species_latin": "Adinobotrys atropurpureus (Wall.) Dunn",
+   "common_name": "Tulang Daing",
+   "location_text": "Singapore Botanic Gardens, behind Swan Lake",
+   "latitude": 1.307417,
+   "longitude": 103.815673,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-22/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-191",
+   "species_latin": "Dacrycarpus imbricatus (Blume) de Laub.",
+   "common_name": "Jamuju",
+   "location_text": "Singapore Botanic Gardens, Lawn H beside HT Alstonia pneumatophora",
+   "latitude": 1.308927,
+   "longitude": 103.816038,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-191/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-192",
+   "species_latin": "Dryobalanops aromatica C.F. Gaertn.",
+   "common_name": "Kapur",
+   "location_text": "Singapore Botanic Gardens, Lawn E",
+   "latitude": 1.307963,
+   "longitude": 103.816802,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-192/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-194",
+   "species_latin": "Dryobalanops aromatica C.F. Gaertn.",
+   "common_name": "Kapur",
+   "location_text": "Singapore Botanic Gardens, Lawn H",
+   "latitude": 1.309267,
+   "longitude": 103.816067,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-194/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-26",
+   "species_latin": "Cyrtophyllum fragrans (Roxb.) DC.",
+   "common_name": "Tembusu",
+   "location_text": "Singapore Botanic Gardens, at Lawn E",
+   "latitude": 1.308546,
+   "longitude": 103.816791,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-26/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2005-138",
+   "species_latin": "Inocarpus fagifer",
+   "common_name": "Tahiti Chestnut",
+   "location_text": "Singapore Botanic Gardens, behind Jacob Ballas Children's Garden Carpark",
+   "latitude": 1.320322,
+   "longitude": 103.817294,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2005-138/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2011-185",
+   "species_latin": "Lecythis pisonis Cambess",
+   "common_name": "Monkey Pot Tree",
+   "location_text": "Singapore Botanic Gardens, Lawn E.",
+   "latitude": 1.308082,
+   "longitude": 103.816428,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2011-185/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-198",
+   "species_latin": "Palaquium obovatum var. obovatum (Griff.) Engl.",
+   "common_name": "Nyatoh Puteh",
+   "location_text": "Singapore Botanic Gardens, behind Raffles Building",
+   "latitude": 1.316583,
+   "longitude": 103.817757,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-198/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-201",
+   "species_latin": "Podocarpus neriifolius D. Don",
+   "common_name": "Mountain Teak",
+   "location_text": "Singapore Botanic Gardens, Lawn B",
+   "latitude": 1.307557,
+   "longitude": 103.816787,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-201/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-210",
+   "species_latin": "Alangium ridleyi King",
+   "common_name": "Mentulang Daun Lebar",
+   "location_text": "Singapore Botanic Gardens Lawn H",
+   "latitude": 1.309339,
+   "longitude": 103.815334,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-210/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-211",
+   "species_latin": "Antidesma bunius",
+   "common_name": "Chinese Laurel",
+   "location_text": "Singapore Botanic Gardens Lawn H",
+   "latitude": 1.309605,
+   "longitude": 103.815645,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-211/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-213",
+   "species_latin": "Kigelia africana (Lam.) Benth.",
+   "common_name": "Sausage Tree",
+   "location_text": "Singapore Botanic Gardens, Lawn H",
+   "latitude": 1.309575,
+   "longitude": 103.815894,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-213/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-214",
+   "species_latin": "Lecythis pisonis Cambess",
+   "common_name": "Monkey Pot Tree",
+   "location_text": "Singapore Botanic Gardens, Lawn H",
+   "latitude": 1.310151,
+   "longitude": 103.815575,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-214/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-215",
+   "species_latin": "Lecythis pisonis Cambess",
+   "common_name": "Monkey Pot Tree",
+   "location_text": "Singapore Botanic Gardens, Lawn H (with signboard)",
+   "latitude": 1.310009,
+   "longitude": 103.815615,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-215/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-218",
+   "species_latin": "Anthoshorea roxburghii (G.Don) P.S.Ashton & J.Heck.",
+   "common_name": "Temak",
+   "location_text": "Singapore Botanic Gardens, Lawn B",
+   "latitude": 1.307094,
+   "longitude": 103.817608,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-218/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-219",
+   "species_latin": "Stereospermum fimbriatum",
+   "common_name": "Snake Tree",
+   "location_text": "Singapore Botanic Gardens, Lawn B",
+   "latitude": 1.307121,
+   "longitude": 103.817135,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-219/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-236",
+   "species_latin": "Ceiba pentandra (L.) Gaertn.",
+   "common_name": "Kapok Tree",
+   "location_text": "Fort Canning Park",
+   "latitude": 1.293967,
+   "longitude": 103.845774,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-236/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-232",
+   "species_latin": "Pangium edule",
+   "common_name": "Kepayang",
+   "location_text": "Singapore Botanic Gardens, Lawn H",
+   "latitude": 1.30988,
+   "longitude": 103.815757,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-232/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-230",
+   "species_latin": "Couroupita guianensis Aubl.",
+   "common_name": "Cannon Ball Tree",
+   "location_text": "Singapore Botanic Gardens, Ginger Gardens, behind waterfall",
+   "latitude": 1.311043,
+   "longitude": 103.815417,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-230/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-229",
+   "species_latin": "Cola gigantea A.Chev.",
+   "common_name": "Giant Cola",
+   "location_text": "Singapore Botanic Gardens, Orchid Plaza",
+   "latitude": 1.311599,
+   "longitude": 103.815242,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-229/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-88",
+   "species_latin": "Mangifera caesia Jack",
+   "common_name": "Binjai",
+   "location_text": "Jalan Naung, behind House No. 70",
+   "latitude": 1.369238,
+   "longitude": 103.89225,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-88/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-240",
+   "species_latin": "Mangifera pentandra Hook.f.",
+   "common_name": "Pauh Damar",
+   "location_text": "Singapore Botanic Gardens, Lawn F",
+   "latitude": 1.30975,
+   "longitude": 103.815757,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-240/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-241",
+   "species_latin": "Swietenia mahagoni (L.) Jacq.",
+   "common_name": "West Indian Mahogany",
+   "location_text": "Singapore Botanic Gardens, Lawn R",
+   "latitude": 1.311504,
+   "longitude": 103.814801,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-241/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-247",
+   "species_latin": "Nauclea orientalis",
+   "common_name": "Bangkal",
+   "location_text": "Singapore Botanic Gardens, EG14",
+   "latitude": 1.319911,
+   "longitude": 103.815447,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-247/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-272",
+   "species_latin": "Myristica fragrans Houtt.",
+   "common_name": "Nutmeg",
+   "location_text": "Singapore Botanic Gardens - LXJ - Central Core",
+   "latitude": 1.318712,
+   "longitude": 103.815757,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-272/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-71",
+   "species_latin": "Ficus stricta (Miq.) Miq.",
+   "common_name": "",
+   "location_text": "Pulau Ubin, at granite outcrop near Police Post",
+   "latitude": 1.403484,
+   "longitude": 103.973468,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-71/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2007-158",
+   "species_latin": "Pterocarpus indicus Willd.",
+   "common_name": "Angsana",
+   "location_text": "Junction of Canterbury Road and Berkshire Road, on sloping ground, Alexandra Park",
+   "latitude": 1.280734,
+   "longitude": 103.798116,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2007-158/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-49",
+   "species_latin": "Dipterocarpus sublamellatus Foxw.",
+   "common_name": "Keruing Kerut",
+   "location_text": "Changi, Cranwell Road near junction with Loyang Avenue",
+   "latitude": 1.38754,
+   "longitude": 103.980058,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-49/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2016-284",
+   "species_latin": "Ficus superba Miq.",
+   "common_name": "Sea Fig",
+   "location_text": "Bedok Rise S/L, near fence; footpath",
+   "latitude": 1.325839,
+   "longitude": 103.946161,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2016-284/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2016-280",
+   "species_latin": "Koompassia malaccensis Maing. ex Benth.",
+   "common_name": "Kempas",
+   "location_text": "Singapore Botanic Gardens, nr Botany Ctr, Lawn O",
+   "latitude": 1.310508,
+   "longitude": 103.817405,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2016-280/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2016-281",
+   "species_latin": "Adina eurhyncha (Miq.) Å.Krüger & Löfstrand",
+   "common_name": "",
+   "location_text": "Singapore Botanic Gardens, Rainforest near NParks HQ",
+   "latitude": 1.31424,
+   "longitude": 103.815936,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2016-281/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2023-326",
+   "species_latin": "Lagerstroemia loudonii Teijsm. & Binn.",
+   "common_name": "Thai Bungor",
+   "location_text": "",
+   "latitude": 1.308135,
+   "longitude": 103.815412,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2023-326/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2017-291",
+   "species_latin": "Gnetum gnemon L.",
+   "common_name": "Belinjau",
+   "location_text": "",
+   "latitude": 1.319154,
+   "longitude": 103.815692,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2017-291/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2020-312",
+   "species_latin": "Mangifera indica L.",
+   "common_name": "Mango",
+   "location_text": "Kranji Close/Kranji Road State Land (opposite junction)",
+   "latitude": 1.429544,
+   "longitude": 103.756481,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2020-312/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2023-323",
+   "species_latin": "Adenanthera malayana subsp. malayana Kosterm.",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.314243,
+   "longitude": 103.810346,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2023-323/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-216",
+   "species_latin": "Palaquium obovatum var. obovatum (Griff.) Engl.",
+   "common_name": "Nyatoh Puteh",
+   "location_text": "Singapore Botanic Gardens, along Evolution Garden Walk",
+   "latitude": 1.316933,
+   "longitude": 103.816221,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-216/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-65",
+   "species_latin": "Ficus kerkhovenii Valeton",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.391298,
+   "longitude": 103.975851,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-65/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2018-298",
+   "species_latin": "Libidibia ferrea (Mart. ex Tul.) L. P. Queiroz",
+   "common_name": "Brazilian Ironwood",
+   "location_text": "Mount Emily Park",
+   "latitude": 1.304307,
+   "longitude": 103.84801,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2018-298/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2016-274",
+   "species_latin": "Mangifera indica L.",
+   "common_name": "Mango",
+   "location_text": "Chay Yan St State Land",
+   "latitude": 1.282573,
+   "longitude": 103.831207,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2016-274/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-14",
+   "species_latin": "Khaya nyasica",
+   "common_name": "East African Mahogany",
+   "location_text": "Guillemard Road Open Space",
+   "latitude": 1.314754,
+   "longitude": 103.892461,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-14/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2017-288",
+   "species_latin": "Podocarpus polystachyus R.Br. ex Endl.",
+   "common_name": "Big-leaved Podocarp",
+   "location_text": "Sembawang Park, next to Beaulieu House",
+   "latitude": 1.463314,
+   "longitude": 103.83716,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2017-288/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-109",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Holland Road, near junction with Belmont Road",
+   "latitude": 1.312843,
+   "longitude": 103.798729,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-109/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-97",
+   "species_latin": "Pentadesma butyracea Sabine",
+   "common_name": "African Butter Tree",
+   "location_text": "Singapore Botanic Gardens, behind Block 5",
+   "latitude": 1.317091,
+   "longitude": 103.817061,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-97/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-189",
+   "species_latin": "Barringtonia asiatica (L.) Kurtz",
+   "common_name": "Putat Laut",
+   "location_text": "Singapore Botanic Gardens, Healing Garden",
+   "latitude": 1.317537,
+   "longitude": 103.817056,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-189/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2011-184",
+   "species_latin": "Ficus kurzii King",
+   "common_name": "Burmese Banyan",
+   "location_text": "Singapore Botanic Gardens, Lawn A. Next to Swan Lake",
+   "latitude": 1.306992,
+   "longitude": 103.816355,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2011-184/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-212",
+   "species_latin": "Khaya senegalensis (Desr.) A. Juss.",
+   "common_name": "Senegal Mahogany",
+   "location_text": "Singapore Botanic Gardens, Lawn B",
+   "latitude": 1.307076,
+   "longitude": 103.816779,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-212/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2019-301",
+   "species_latin": "Erythrophleum suaveolens (Guill. & Perr.) Brenan",
+   "common_name": "Ordeal Tree",
+   "location_text": "Singapore Botanic Gardens, National Orchid Garden Nursery",
+   "latitude": 1.313671,
+   "longitude": 103.813934,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2019-301/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-269",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.291572,
+   "longitude": 103.854328,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-269/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-249",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.291474,
+   "longitude": 103.854065,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-249/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-248",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.291561,
+   "longitude": 103.854121,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-248/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2007-160",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Upper Bukit Timah Road, in open space opposite Gombak Drive. UppBTRd junction with Cashew Rd.",
+   "latitude": 1.370791,
+   "longitude": 103.76382,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2007-160/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2016-283",
+   "species_latin": "Adansonia digitata L.",
+   "common_name": "Baobab",
+   "location_text": "Singapore Botanic Gardens, Melati Gate, near Cluny Pk Rd",
+   "latitude": 1.320918,
+   "longitude": 103.814539,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2016-283/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-195",
+   "species_latin": "Ficus kerkhovenii Valeton",
+   "common_name": "Johor Fig",
+   "location_text": "Singapore Botanic Gardens Jungle, tag #8",
+   "latitude": 1.312857,
+   "longitude": 103.815868,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-195/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-01",
+   "species_latin": "Ceiba pentandra (L.) Gaertn.",
+   "common_name": "Kapok Tree",
+   "location_text": "Braddell Road, at Toa Payoh North Flyover Traffic Island",
+   "latitude": 1.343807,
+   "longitude": 103.853443,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-01/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-108",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Rain Tree",
+   "location_text": "Istana Ground",
+   "latitude": 1.306681,
+   "longitude": 103.845866,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-108/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-261",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.289317,
+   "longitude": 103.853013,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-261/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-264",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.289644,
+   "longitude": 103.853383,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-264/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-253",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Rain Tree",
+   "location_text": "Connaught Drive",
+   "latitude": 1.291204,
+   "longitude": 103.853928,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-253/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-266",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.290509,
+   "longitude": 103.853804,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-266/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-265",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.290077,
+   "longitude": 103.853592,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-265/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-263",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.289584,
+   "longitude": 103.853358,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-263/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-254",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.291121,
+   "longitude": 103.853883,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-254/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-251",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.291291,
+   "longitude": 103.853971,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-251/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-252",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.291246,
+   "longitude": 103.853951,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-252/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-250",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.291357,
+   "longitude": 103.853997,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-250/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2018-297",
+   "species_latin": "Dimocarpus longan Lour.",
+   "common_name": "Mata Kuching",
+   "location_text": "Sembawang Pk, near Shelter J, off Toilet 2 & Fitness Corner",
+   "latitude": 1.460473,
+   "longitude": 103.836565,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2018-297/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-197",
+   "species_latin": "Horsfieldia irya (Gaertn.) Warb.",
+   "common_name": "Pianggu",
+   "location_text": "Singapore Botanic Gardens, Lawn XG",
+   "latitude": 1.316081,
+   "longitude": 103.81691,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-197/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-208",
+   "species_latin": "Parishia insignis",
+   "common_name": "Red Dhup",
+   "location_text": "Hindhede Nature Park, Bt Timah Nature Reserve, along South View Path",
+   "latitude": 1.348692,
+   "longitude": 103.777483,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-208/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-102",
+   "species_latin": "Pterocarpus indicus Willd.",
+   "common_name": "Sena",
+   "location_text": "Jalan Rumbia, near junction with Oxley Rise",
+   "latitude": 1.296556,
+   "longitude": 103.843046,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-102/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-64",
+   "species_latin": "Ficus kerkhovenii Valeton",
+   "common_name": "Johor Fig",
+   "location_text": "Pulau Ubin, within National Police Cadet Corps camp site",
+   "latitude": 1.41845,
+   "longitude": 103.972775,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-64/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-36",
+   "species_latin": "Alstonia angustiloba Miq.",
+   "common_name": "Pulai",
+   "location_text": "Royal Road end, on slope behind House No. 7, (MSS Alexandra Park)",
+   "latitude": 1.281281,
+   "longitude": 103.797567,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-36/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2020-316",
+   "species_latin": "Terminalia catappa L.",
+   "common_name": "Ketapang",
+   "location_text": "Pasir Panjang Food Centre (near PPJ MRT Station)",
+   "latitude": 1.275251,
+   "longitude": 103.792374,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2020-316/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2017-289",
+   "species_latin": "Couroupita guianensis Aubl.",
+   "common_name": "Cannon Ball Tree",
+   "location_text": "Tanglin Rd; 2nd Tree from gate of Hse. No. 249",
+   "latitude": 1.303671,
+   "longitude": 103.821907,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2017-289/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2018-295",
+   "species_latin": "Tamarindus indica L.",
+   "common_name": "Asam",
+   "location_text": "Istana, near Nursery car-park",
+   "latitude": 1.305812,
+   "longitude": 103.841782,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2018-295/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-239",
+   "species_latin": "Dyera costulata (Miq.) Hook.f.",
+   "common_name": "Jelutong",
+   "location_text": "Singapore Botanic Gardens, Lawn S",
+   "latitude": 1.31107,
+   "longitude": 103.815881,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-239/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-27",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Rain Tree",
+   "location_text": "Singapore Botanic Gardens, outside Visitor Centre pick-up/drop-off point",
+   "latitude": 1.315148,
+   "longitude": 103.816567,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-27/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2020-308",
+   "species_latin": "Ceiba pentandra (L.) Gaertn.",
+   "common_name": "Kapok Tree",
+   "location_text": "Jalan Kilang Barat, near Block 1001 Bukit Merah Lane 3 (Railway Corridor)",
+   "latitude": 1.284178,
+   "longitude": 103.80715,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2020-308/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-52",
+   "species_latin": "Erythroxylum cuneatum (Miq.) Kurz",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.390817,
+   "longitude": 103.977443,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-52/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-223",
+   "species_latin": "Artocarpus elasticus Reinw. ex Blume",
+   "common_name": "Terap",
+   "location_text": "Fort Canning Park, Fort Green, near Canning Rise L/P 11F",
+   "latitude": 1.296003,
+   "longitude": 103.848079,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-223/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2018-293",
+   "species_latin": "Cratoxylum cochinchinense (Lour.) Blume",
+   "common_name": "Yellow Cow Wood",
+   "location_text": "Telok Blangah Green, near Shelter, Meeting Point 1, Carpark 2",
+   "latitude": 1.277959,
+   "longitude": 103.813069,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2018-293/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2017-286",
+   "species_latin": "Swietenia macrophylla King",
+   "common_name": "Broad-leafed Mahogany",
+   "location_text": "Seletar Aerospace Drive, after Bus-stop No. 5",
+   "latitude": 1.406358,
+   "longitude": 103.866756,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2017-286/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-119",
+   "species_latin": "Swietenia macrophylla King",
+   "common_name": "American Mahogany",
+   "location_text": "Seletar Airbase, Aerospace Drive near Lamp post 64, Seletar Aerospace Park",
+   "latitude": 1.406371,
+   "longitude": 103.867083,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-119/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-118",
+   "species_latin": "Swietenia macrophylla King",
+   "common_name": "American Mahogany",
+   "location_text": "Seletar Airbase, Aerospace Drive near Lamp post 62, Seletar Aerospace Park",
+   "latitude": 1.406111,
+   "longitude": 103.866546,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-118/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2017-287",
+   "species_latin": "Libidibia ferrea (Mart. ex Tul.) L. P. Queiroz",
+   "common_name": "Brazilian Ironwood",
+   "location_text": "Esplanade Park",
+   "latitude": 1.289747,
+   "longitude": 103.853636,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2017-287/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2016-282",
+   "species_latin": "Sterculia foetida L.",
+   "common_name": "Hazel Sterculia",
+   "location_text": "Singapore Botanic Gardens, outside Plant Resource Ctr",
+   "latitude": 1.321926,
+   "longitude": 103.816992,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2016-282/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2005-144",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Jalan Hang Jebat, in front of Block 109",
+   "latitude": 1.290423,
+   "longitude": 103.796614,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2005-144/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2019-302",
+   "species_latin": "Ficus caulocarpa (Miq.) Miq.",
+   "common_name": "Stem-fruited Fig",
+   "location_text": "No 3 Winchester Road (off), near Pasir Panjang Nursery fence",
+   "latitude": 1.283397,
+   "longitude": 103.795284,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2019-302/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-111",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Kim Yam Road Stateland, beside Gambier Court condominium",
+   "latitude": 1.292633,
+   "longitude": 103.840112,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-111/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2007-156",
+   "species_latin": "Ficus religiosa L.",
+   "common_name": "Sacred Fig Tree",
+   "location_text": "Canterbury Road, on Stateland near Lamp Post 14",
+   "latitude": 1.281647,
+   "longitude": 103.796684,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2007-156/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-207",
+   "species_latin": "Ficus stricta (Miq.) Miq.",
+   "common_name": "",
+   "location_text": "Pulau Ubin, forest, left side of Jalan Noordin toward NPCC campsite, along fence",
+   "latitude": 1.41536,
+   "longitude": 103.96737,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-207/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2020-317",
+   "species_latin": "Cratoxylum maingayi Dyer",
+   "common_name": "Derum",
+   "location_text": "Bukit Timah Nature Reserve, Quarry Road near SingTel Tower",
+   "latitude": 1.351955,
+   "longitude": 103.776489,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2020-317/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-16",
+   "species_latin": "Khaya nyasica",
+   "common_name": "East African Mahogany",
+   "location_text": "Guillemard Road Open Space",
+   "latitude": 1.314722,
+   "longitude": 103.89238,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-16/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-128",
+   "species_latin": "Syzygium syzygioides (Miq.) Merr. & L.M. Perry",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.390486,
+   "longitude": 103.975958,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-128/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2019-305",
+   "species_latin": "Murraya paniculata (L.) Jack",
+   "common_name": "Orange Jasmine",
+   "location_text": "",
+   "latitude": 1.38988,
+   "longitude": 103.97423,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2019-305/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2013-204",
+   "species_latin": "Ficus benghalensis L.",
+   "common_name": "Banyan Tree",
+   "location_text": "Within Tiong Bahru Park",
+   "latitude": 1.28798,
+   "longitude": 103.824379,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2013-204/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-222",
+   "species_latin": "Alstonia angustifolia Miq.",
+   "common_name": "Red-leaved Pulai",
+   "location_text": "Mount Faber, along Marang trail",
+   "latitude": 1.268109,
+   "longitude": 103.821179,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-222/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-57",
+   "species_latin": "Cyrtophyllum fragrans (Roxb.) DC.",
+   "common_name": "Tembusu Hutan",
+   "location_text": "Lagos Circle, in front of House No. 208",
+   "latitude": 1.454181,
+   "longitude": 103.82884,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-57/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-60",
+   "species_latin": "Cyrtophyllum fragrans (Roxb.) DC.",
+   "common_name": "Tembusu Hutan",
+   "location_text": "Lagos Circle, in front of House No. 206",
+   "latitude": 1.45469,
+   "longitude": 103.829423,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-60/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-78",
+   "species_latin": "Ficus superba Miq.",
+   "common_name": "Sea Fig",
+   "location_text": "At Bedok Food Centre Car Park, opposite Eastwood Centre",
+   "latitude": 1.320886,
+   "longitude": 103.955221,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-78/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-227",
+   "species_latin": "Mangifera foetida Lour.",
+   "common_name": "Bacang",
+   "location_text": "Canning Rise, opposite lamp-post 7",
+   "latitude": 1.29497,
+   "longitude": 103.84834,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-227/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2020-309",
+   "species_latin": "Cratoxylum formosum (Jack) Dyer",
+   "common_name": "Pink Mempat",
+   "location_text": "Nim Crescent Open Space",
+   "latitude": 1.382639,
+   "longitude": 103.866694,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2020-309/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-196",
+   "species_latin": "Heritiera elata Ridl.",
+   "common_name": "Mengkulang",
+   "location_text": "Singapore Botanic Gardens, Lawn O, near HT Kapok Tree",
+   "latitude": 1.31095,
+   "longitude": 103.816728,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-196/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2012-193",
+   "species_latin": "Dryobalanops aromatica C.F. Gaertn.",
+   "common_name": "Kapur",
+   "location_text": "Singapore Botanic Gardens, Lawn O, near HT Kapok Tree",
+   "latitude": 1.310784,
+   "longitude": 103.816461,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2012-193/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-28",
+   "species_latin": "Tamarindus indica L.",
+   "common_name": "Asam",
+   "location_text": "Surin Avenue Park",
+   "latitude": 1.355669,
+   "longitude": 103.884282,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-28/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2007-173",
+   "species_latin": "Alstonia scholaris (L.) R. Br.",
+   "common_name": "Indian Pulai",
+   "location_text": "Temenggong Road, on Stateland opposite House No. 22 (gated, Year 2013) - walking access to HT via Marang Road.",
+   "latitude": 1.267567,
+   "longitude": 103.822144,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2007-173/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2005-137",
+   "species_latin": "Ficus kerkhovenii Valeton",
+   "common_name": "Johor Fig",
+   "location_text": "Changi, Andover Road near Fairy Point Chalet 7",
+   "latitude": 1.390506,
+   "longitude": 103.974326,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2005-137/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2018-296",
+   "species_latin": "Murraya paniculata (L.) Jack",
+   "common_name": "Orange Jasmine",
+   "location_text": "",
+   "latitude": 1.3899,
+   "longitude": 103.97425,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2018-296/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-31",
+   "species_latin": "Maranthes corymbosa Blume",
+   "common_name": "Sea Beam",
+   "location_text": "Canning Rise, near pedestrian underpass",
+   "latitude": 1.294772,
+   "longitude": 103.848291,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-31/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-221",
+   "species_latin": "Ficus caulocarpa (Miq.) Miq.",
+   "common_name": "Stem-fruited Fig",
+   "location_text": "Changi, Hendon Road, opposite No. 35",
+   "latitude": 1.388639,
+   "longitude": 103.980049,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-221/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2024-329",
+   "species_latin": "Ficus elastica Roxb. ex Hornem.",
+   "common_name": "Indian Rubber Tree",
+   "location_text": "",
+   "latitude": 1.276959,
+   "longitude": 103.827605,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2024-329/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-89",
+   "species_latin": "Mangifera caesia Jack",
+   "common_name": "Binjai",
+   "location_text": "Spottiswoode Park Road, opposite Spottiswoode Apartments",
+   "latitude": 1.274818,
+   "longitude": 103.837002,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-89/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-90",
+   "species_latin": "Mangifera foetida Lour.",
+   "common_name": "Horse Mango",
+   "location_text": "MacRitchie Reservoir Park, near Public Utilities Board office",
+   "latitude": 1.341342,
+   "longitude": 103.832927,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-90/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2008-167",
+   "species_latin": "Ceiba pentandra (L.) Gaertn.",
+   "common_name": "Silk Cotton Tree",
+   "location_text": "Upper Seletar Reservoir Park, near golf course",
+   "latitude": 1.401416,
+   "longitude": 103.807663,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2008-167/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2010-176",
+   "species_latin": "Erythrophleum suaveolens (Guill. & Perr.) Brenan",
+   "common_name": "Ordeal Tree",
+   "location_text": "Upper Seletar Reservoir Park, on slope behind carpark along Mandai Rd.",
+   "latitude": 1.405399,
+   "longitude": 103.808113,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2010-176/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2016-279",
+   "species_latin": "Artocarpus elasticus Reinw. ex Blume",
+   "common_name": "Terap",
+   "location_text": "Fort Canning Pk, beh. Blk 2, R Val Rd",
+   "latitude": 1.29257,
+   "longitude": 103.845869,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2016-279/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-04",
+   "species_latin": "Pithecellobium dulce",
+   "common_name": "Madras Thorn",
+   "location_text": "Fort Canning Park, along path beside Service Reservoir",
+   "latitude": 1.292933,
+   "longitude": 103.846428,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-04/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2003-115",
+   "species_latin": "Sindora × changiensis",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.3889,
+   "longitude": 103.976973,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-115/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2015-267",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Connaught Drive",
+   "latitude": 1.290989,
+   "longitude": 103.854027,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-267/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2019-304",
+   "species_latin": "Mimusops elengi L.",
+   "common_name": "Tanjong Tree",
+   "location_text": "Block 137 Lor Ah Soo, Hougang Ave 1",
+   "latitude": 1.348686,
+   "longitude": 103.886307,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2019-304/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2022-321",
+   "species_latin": "Cratoxylum formosum (Jack) Dyer",
+   "common_name": "Derum",
+   "location_text": "",
+   "latitude": 1.30064,
+   "longitude": 103.912825,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2022-321/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-231",
+   "species_latin": "Hymenaea courbaril",
+   "common_name": "West Indian Locust Tree",
+   "location_text": "Singapore Botanic Gardens, Corner House Lawn",
+   "latitude": 1.315539,
+   "longitude": 103.815677,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-231/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2014-228",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Pukul Lima",
+   "location_text": "Fort Canning Park, Parit Singapura",
+   "latitude": 1.29196,
+   "longitude": 103.848048,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2014-228/",
+   "last_updated": "20250818152419"
+  },
+  {
+   "ht_id": "HT 2001-06",
+   "species_latin": "Pithecellobium dulce",
+   "common_name": "Manila Tamarind",
+   "location_text": "Fort Canning Park, along path beside Service Reservoir",
+   "latitude": 1.293254,
+   "longitude": 103.846261,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-06/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2001-05",
+   "species_latin": "Pithecellobium dulce",
+   "common_name": "Manila Tamarind",
+   "location_text": "Fort Canning Park, along path beside Service Reservoir",
+   "latitude": 1.293335,
+   "longitude": 103.846032,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-05/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2022-322",
+   "species_latin": "Terminalia subspathulata King",
+   "common_name": "",
+   "location_text": "",
+   "latitude": 1.438678,
+   "longitude": 103.733254,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2022-322/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2010-1003",
+   "species_latin": "Ficus drupacea Thunb.",
+   "common_name": "Brown Woolly Fig",
+   "location_text": "",
+   "latitude": 1.30744,
+   "longitude": 103.7816,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2010-1003/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2001-20",
+   "species_latin": "Calophyllum inophyllum L.",
+   "common_name": "Penaga Laut",
+   "location_text": "Singapore Botanic Gardens, near Botany Centre Auditorium",
+   "latitude": 1.308163,
+   "longitude": 103.81816,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-20/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2015-270",
+   "species_latin": "Samanea saman (Jacq.) Merr.",
+   "common_name": "Rain Tree",
+   "location_text": "Singapore Botanic Gardens, Lawn G",
+   "latitude": 1.309972,
+   "longitude": 103.815039,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2015-270/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2021-319",
+   "species_latin": "Mangifera indica L.",
+   "common_name": "Mango",
+   "location_text": "",
+   "latitude": 1.304675,
+   "longitude": 103.847313,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2021-319/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2019-306",
+   "species_latin": "Peltophorum pterocarpum (DC.) Backer ex K.Heyne",
+   "common_name": "Yellow Flame",
+   "location_text": "Mount Emily Park, near Upp Wilkie Rd round-about",
+   "latitude": 1.304069,
+   "longitude": 103.848251,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2019-306/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2001-02",
+   "species_latin": "Litchi chinensis Sonn.",
+   "common_name": "Litchee",
+   "location_text": "Mount Rosie Road, opposite House No. 11J",
+   "latitude": 1.322587,
+   "longitude": 103.835999,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-02/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2008-166",
+   "species_latin": "Ceiba pentandra (L.) Gaertn.",
+   "common_name": "Kapok Tree",
+   "location_text": "Upper Seletar Reservoir Park, behind toilet blocks (near Rocket Tower)",
+   "latitude": 1.400119,
+   "longitude": 103.806869,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2008-166/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2008-170",
+   "species_latin": "Tamarindus indica L.",
+   "common_name": "Tamarind",
+   "location_text": "Fullerton Road, entrance to The Fullerton Waterboat House garden",
+   "latitude": 1.287175,
+   "longitude": 103.853361,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2008-170/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-53",
+   "species_latin": "Eucalyptus deglupta",
+   "common_name": "Mindanao Gum",
+   "location_text": "Katong Park",
+   "latitude": 1.296959,
+   "longitude": 103.88686,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-53/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2023-01001",
+   "species_latin": "Tabebuia rosea (Bertol.) DC.",
+   "common_name": "Trumpet Tree",
+   "location_text": "",
+   "latitude": 1.332917,
+   "longitude": 103.782093,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2023-01001/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2023-01000",
+   "species_latin": "Juniperus chinensis",
+   "common_name": "Chinese Juniper",
+   "location_text": "",
+   "latitude": 1.389325,
+   "longitude": 103.839767,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2023-01000/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2001-30",
+   "species_latin": "Maranthes corymbosa Blume",
+   "common_name": "Merbatu",
+   "location_text": "",
+   "latitude": 1.295198,
+   "longitude": 103.848472,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2001-30/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-39",
+   "species_latin": "Alstonia angustiloba Miq.",
+   "common_name": "Common Pulai",
+   "location_text": "",
+   "latitude": 1.221877,
+   "longitude": 103.844267,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-39/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-46",
+   "species_latin": "Calophyllum inophyllum L.",
+   "common_name": "Penaga Laut",
+   "location_text": "",
+   "latitude": 1.27967,
+   "longitude": 103.793873,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-46/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-54",
+   "species_latin": "Cyrtophyllum fragrans (Roxb.) DC.",
+   "common_name": "Tembusu",
+   "location_text": "",
+   "latitude": 1.455174,
+   "longitude": 103.830528,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-54/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-59",
+   "species_latin": "Cyrtophyllum fragrans (Roxb.) DC.",
+   "common_name": "Tembusu",
+   "location_text": "",
+   "latitude": 1.220678,
+   "longitude": 103.845492,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-59/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-69",
+   "species_latin": "Ficus religiosa L.",
+   "common_name": "Bodhi Tree",
+   "location_text": "",
+   "latitude": 1.278168,
+   "longitude": 103.841431,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-69/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-74",
+   "species_latin": "Ficus superba Miq.",
+   "common_name": "Sea Fig",
+   "location_text": "",
+   "latitude": 1.219777,
+   "longitude": 103.84859,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-74/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-75",
+   "species_latin": "Ficus superba Miq.",
+   "common_name": "Sea Fig",
+   "location_text": "",
+   "latitude": 1.218652,
+   "longitude": 103.847638,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-75/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-76",
+   "species_latin": "Ficus superba Miq.",
+   "common_name": "Sea Fig",
+   "location_text": "",
+   "latitude": 1.221089,
+   "longitude": 103.845243,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-76/",
+   "last_updated": "20250818152418"
+  },
+  {
+   "ht_id": "HT 2003-77",
+   "species_latin": "Ficus superba Miq.",
+   "common_name": "Sea Fig",
+   "location_text": "",
+   "latitude": 1.221261,
+   "longitude": 103.845483,
+   "nparks_url": "https://heritagetrees.nparks.gov.sg/ht-2003-77/",
+   "last_updated": "20250818152418"
+  }
+ ]
+}
