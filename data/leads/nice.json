@@ -1,0 +1,40 @@
+{
+  "leads": [
+    {
+      "candidate": "Moreton Bay Fig (Ficus macrophylla) at La Coulée Verte / Promenade du Paillon, Nice",
+      "reason": "Individually measured on monumentaltrees.com: girth 5.80m at 1.30m height, measured 2023-07-07 by user francescogiovannetti, photo shows a genuinely large mature specimen with dramatic buttress roots in a formal garden setting (https://www.monumentaltrees.com/en/map/fra/alpesmaritimes/nice/33666_lacouleverte/62093/). Not used as a repair candidate for nce_003 (Jardin Albert 1er) because La Coulee Verte / Promenade du Paillon is a separate, newer (2013) landscaped corridor by Michel Pena that runs past, but is not identical to, the historic 1851 Jardin Albert 1er; could not confirm within the pass window whether this specific tree stands inside Jardin Albert 1er's own boundary or in an adjoining segment of the Coulee Verte. Worth a follow-up pass: get exact coordinates (monumentaltrees map tiles did not render for this browser session) and check against Jardin Albert 1er's boundary, or treat as its own new entry candidate for a future Nice depth pass, since a 5.80m girth fig is a strong candidate regardless of which garden it falls in."
+    },
+    {
+      "candidate": "Caroubiers de la Villa Imari (Ceratonia siliqua x2), Nice",
+      "reason": "Listed on ANNAM (asnatnic.fr/les-arbres-remarquables-des-alpes-maritimes/) at 43.685931, 7.219930, labelled 'arbre remarquable'. BLOCKED: source states 'Jardin prive' with no visite-possible note (unlike the Chateau de Cremat arbousier entry, which explicitly says 'visite possible'), so access could not be confirmed as genuinely open to visitors. Do not use without confirming public access."
+    },
+    {
+      "candidate": "Genevrier cade (Juniperus oxycedrus), Nice",
+      "reason": "Listed on ANNAM at 43.71655, 7.302324, 'bel individu de taille imposante', 3/5 stars. Location is roughly 2.3km north-northeast of Mont Boron's own coordinates (43.6949, 7.3106), not on the same hill, and no park/site name given in the source beyond the coordinate. Not used as a Mont Boron replacement because it is not documented as being on Mont Boron; worth checking in a future pass with a mapped location to see what site it actually falls in."
+    }
+  ],
+  "blocked": [
+    {
+      "id_context": "nce_009 (The Aleppo Pine Forest of Mont Boron)",
+      "reason": "Could not find any individually identified, named or measured pine (or other tree) within the Parc Forestier du Mont Boron in the A.R.B.R.E.S. national remarkable-tree database, the ANNAM Alpes-Maritimes list, the regional Inventaire General du Patrimoine Culturel dossier (dossiersinventaire.maregionsud.fr/dossier/IA06002949), or general web search for 'plus vieux pin' / 'arbre remarquable' at Mont Boron. The site itself is a 57-hectare reforested hillside with 11km of marked trails, which is a whole forest, not a collectible point: there is no single obvious place to stand. Recommend replacing the entry with a genuinely singular tree elsewhere in Nice, or removing it from the ten-tree list (the id must be kept per the never-delete rule; a future pass needs to either find a real specimen or the owner needs to decide how to handle a repair-pass id with no honest replacement)."
+    },
+    {
+      "id_context": "nce_004 (The Olive and Pine Grove of Colline du Chateau)",
+      "reason": "Same result: no individually named or measured tree found in the ANNAM list, the regional heritage dossier (IA06003110), the city's own Colline du Chateau page, or general search for a remarkable olive/pine there. The park is 19.3 hectares with 3km of paths, a whole hillside containing the cemetery (nce_005), the fortress ruins and a viewpoint, not a single destination with one tree or one obvious place to stand. Recommend the same as above: needs either a real single-tree replacement from a future pass or an owner decision."
+    },
+    {
+      "id_context": "nce_006 (The Palms of the Promenade des Anglais)",
+      "reason": "No individual palm from the 1862/1868 plantings is documented as still standing in any source checked (artplastoc.blogspot.com's own detailed history, jardinsdefrance.org, general search). The promenade is kilometres long, which is the exact La Rambla failure case named in the collectibility rule: nothing to stand at, nothing to have seen at one spot. It is also substantially redundant with nce_007 (Washingtonia palms of Villa Massena, a compact garden ensemble that already passes) and nce_008 (the First Canary Island Date Palm of France at Parc Vigier, an individually documented tree), which already carry Nice's palm history. Recommend dropping this entry's ensemble framing; a future pass would need either a single named/dated palm or should consider retiring the id's content in favour of an unrelated singular tree, which is an owner-level call given the never-delete rule."
+    },
+    {
+      "id_context": "nce_003 (The Founding Trees of Jardin Albert 1er)",
+      "reason": "No individually named, dated or measured tree found within Jardin Albert 1er itself (French Wikipedia's own detailed article on the garden names no individual specimen; provence7.com, nicecitymag.fr and parcsetjardins.fr likewise only give the collective 1851 planting list). The garden is a fairly ordinary 3-hectare municipal garden with mixed 19th-century plantings; unlike the Cimiez monastery garden it is not obviously 'famous for being exactly that', it reads as a nice old park rather than a singular destination. A large-girth Moreton Bay Fig (5.80m, see leads above) exists nearby at La Coulee Verte/Promenade du Paillon, which historically absorbed part of the Jardin Albert 1er site in 2013, but could not be confirmed within this pass as standing inside the garden's own boundary. Recommend a follow-up pass resolve that fig's exact location before deciding whether it can replace this entry."
+    }
+  ],
+  "uncertain": [
+    {
+      "id_context": "nce_005 (The Cypresses of the Cimetiere du Chateau)",
+      "finding": "Not confidently resolved either way. In favour of passing as an ensemble: the cemetery is genuinely compact (14,000 sq m / 1.4 hectares per French Wikipedia and multiple sources), it is a single bounded, named destination, and the previous pass's photo review (already in the city file's notes) confirms cypresses are visibly standing among the graves today. Against: a detailed historical source on the cemetery (artplastoc.blogspot.com/2021/02/1176-nice-petite-histoire-du-cimetiere.html) shows that the famous 'line of cypresses visible from the north/sea' in old photographs actually stood in an adjacent, separate plot (the Cimetiere des Cessolines, La Providence), not inside the Cimetiere du Chateau itself, and that most of those specific cypresses had already disappeared by 1876; the French Wikipedia article on the cemetery does not mention cypresses at all. So the 'dark, vertical silhouette from the sea' framing in the current story may overstate or misattribute the historical cypress cover, even though present-day cypresses do exist inside the cemetery per the photo. No individually named cypress was found in ANNAM, A.R.B.R.E.S. or general search. Recommend a future pass either (a) tone down the historical cypress claim to what the sources actually support and keep this as an ensemble entry (a walled, terraced 1.4ha cemetery is a defensible 'compact, famous for being exactly that' case on its own merits, independent of the cypress-silhouette claim), or (b) look for a single named cypress. Not repaired in this pass because I could not reach a confident verdict within the time box."
+    }
+  ]
+}
