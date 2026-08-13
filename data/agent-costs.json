@@ -1085,6 +1085,42 @@
     "note": "17 stories across 8 cities from the night run's register-backed assembly; refused prg_018 as a coordinate-exact duplicate of live prg_017, whose empty fields were folded full from the register data instead; 2 species names and 2 tree names fixed before the build could refuse them",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "bergamo+perugia",
+    "kind": "verify",
+    "tokens": 173736,
+    "trees": 15,
+    "note": "two new Italian cities from MASAF plus the regional lists; 8 blocked on access, 8 leads; pgi_006 pin corrected to approximate on merge",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "como+trento",
+    "kind": "verify",
+    "tokens": 185553,
+    "trees": 15,
+    "note": "two new Italian cities; 16 blocked (school grounds, province offices, plane avenues); com_008 held on museum access",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "germany-registers",
+    "kind": "scout",
+    "tokens": 168898,
+    "trees": 0,
+    "note": "Bayern imported (4,860 points, CC BY 4.0) but marked LEAD LIST: no species, girth or vitality field. Hamburg 12 rows, 2 usable. Baden-Wuerttemberg blocked on a non-commercial Nutzungsvereinbarung. Finding: Naturdenkmal is not INSPIRE-mandated, so a clean Schutzgebiete WFS says nothing about ND",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "anglophone-registers",
+    "kind": "scout",
+    "tokens": 144987,
+    "trees": 0,
+    "note": "Portland imported (429) then rule-10 filtered: 169 of 429 stand on private ground, 215 public, 45 unknown. Hobart usable but locked behind per-tree PDFs. Auckland disqualified on a no-republish clause. Seattle/SF/Melbourne are full street inventories",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
