@@ -122,7 +122,10 @@ const speciesCount = new Map<string, { count: number; sci: string }>();
 for (const stat of cityStats) {
   for (const t of renderableTrees(stat.city)) {
     const common = speciesCommon(t);
-    if (!common) continue;
+    // A combined name ("London Plane, Large-leaved Lime and Silver Maple") is
+    // one ENTRY covering several species, not a species. It belongs on the city
+    // page and reads as nonsense in a species list.
+    if (!common || common.includes(",") || / and /.test(common)) continue;
     const cur = speciesCount.get(common) ?? { count: 0, sci: speciesScientific(t.species ?? "") };
     cur.count += 1;
     speciesCount.set(common, cur);
