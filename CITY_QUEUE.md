@@ -182,7 +182,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 54 | Auckland | 3.80 | 152,056 | - | - | - | - | 10 | predicted (thin competition) |
 | 55 | Vancouver | 3.80 | 351,552 | - | - | - | - | 10 | predicted (thin competition) |
 | 56 | Frankfurt | 3.76 | 150,379 | - | - | - | - | 10 | predicted (thin competition) |
-| 57 | Singapore | 2.42 | 967,821 | 7 | 3 | 1 | 165 | 10 | published, never ranked |
+| 57 | Singapore | 2.42 | 967,821 | 10 | 3 | 1 | 165 | 10 | published, never ranked |
 | 58 | Dubai | 3.61 | 334,167 | - | - | - | - | 10 | predicted (thin competition) |
 | 59 | Buenos Aires | 3.60 | 333,331 | - | - | - | - | 10 | predicted (thin competition) |
 | 60 | Taipei | 3.58 | 143,193 | - | - | - | - | 10 | predicted (thin competition) |
@@ -210,7 +210,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 82 | Quebec City | 3.11 | 124,358 | - | - | - | - | 10 | predicted (thin competition) |
 | 83 | Wroclaw | 3.10 | 123,894 | - | - | - | - | 10 | predicted (thin competition) |
 | 84 | Zagreb | 3.07 | 122,890 | - | - | - | - | 10 | predicted (thin competition) |
-| 85 | Hobart | 2.04 | 81,734 | - | - | - | 455 | 10 | predicted (thin competition) |
+| 85 | Hobart | 2.04 | 81,734 | 7 | - | 2 | 455 | 10 | predicted (thin competition) |
 | 86 | Leipzig | 3.03 | 121,319 | - | - | - | - | 10 | predicted (thin competition) |
 | 87 | Gothenburg | 3.00 | 119,991 | - | - | - | - | 10 | predicted (thin competition) |
 | 88 | Munich | 2.00 | 224,067 | 22 | 13 | 3 | 74 | 20 | measured |

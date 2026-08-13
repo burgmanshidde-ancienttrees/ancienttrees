@@ -1193,6 +1193,15 @@
     "note": "10 stories opening Portland. Refused to merge on its own initiative: all ten ids collided with live Porto trees. Also corrected two false premises in my brief (the height record and the best_time rule) and fixed a species that would have split English Elm across two Latin names",
     "wasted": 0,
     "brief_wrong": true
+   },
+   {
+    "target": "hobart+singapore",
+    "kind": "write",
+    "tokens": 112470,
+    "trees": 10,
+    "note": "Hobart opened with 7, Singapore to 10. No best_time on any of the ten and the reason is honest: only two species have a phenology file and both are evergreen with nothing above 'nice'. Flagged Singapore's intro as stale on merge, which it was",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

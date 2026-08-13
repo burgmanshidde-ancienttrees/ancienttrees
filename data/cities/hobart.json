@@ -1,0 +1,230 @@
+{
+  "city": "Hobart",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "Hobart's significant trees split neatly into two short loops. Four stand on city streets within about 650 metres, including a Norfolk Island pine of the species whose brittle masts disappointed Cook's crew and three dawn redwoods of a tree known only from fossils until 1941. The other three are inside the Royal Tasmanian Botanical Gardens, founded in 1818 and the second oldest in Australia, where a Douglas fir planted in 1894 is older than the country it stands in.",
+  "meta_description": "Seven significant trees in Hobart: dawn redwoods known only as fossils until 1941, and a Douglas fir older than Australia itself.",
+  "question_meta": "Hobart's oldest dated tree is the pair of giant sequoias planted in 1879 at the Botanical Gardens entrance. Where they stand, plus five more.",
+  "question_answer": "The oldest trees in Hobart with a documented date are the two giant sequoias on the entrance drive of the Royal Tasmanian Botanical Gardens, planted in 1879 and so 147 years old, which for a species that lives past three thousand years is barely a start. The National Trust confirms the date. The Douglas fir deeper in the same gardens follows at 1894. Both are free to visit inside the gardens, which open daily and keep seasonal hours.",
+  "question_context": "Hobart's City Significant Tree Register is a planning instrument rather than a heritage list, which shapes what can be said here. It records species, a per-tree coordinate and a planning reference, and it gives a reason for listing rather than an age, so most of these trees carry no date at all and this page leaves those blank instead of estimating. Two entries cover more than one trunk, because the register itself groups them as a single significance record: three dawn redwoods about twenty metres apart on Elizabeth Street, and a pair of sequoias at the gardens. Where a date does exist it comes from the National Trust rather than the register. Two further register trees are absent on purpose: one sits in the grounds of Government House, open only on scheduled days, and one in a private school. Where a tree's condition is disputed between assessments, as at the cathedral, the disagreement is in that tree's own story rather than resolved quietly.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Hobart?",
+      "a": "The two giant sequoias at the Royal Tasmanian Botanical Gardens entrance, planted in 1879 and confirmed by the National Trust. The Douglas fir in the same gardens follows at 1894."
+    },
+    {
+      "q": "Are Hobart's significant trees free to visit?",
+      "a": "Yes. Four stand on public streets and are visible at any hour; the other three are in the Royal Tasmanian Botanical Gardens, which charges no admission but keeps seasonal opening hours."
+    },
+    {
+      "q": "Can I see them in one walk?",
+      "a": "In two short ones. Four sit within about 650 metres in the city centre, and three inside the botanical gardens about 1.6 kilometres away, a loop of roughly 200 metres once you are there."
+    }
+  ],
+  "hero_tree_id": "hob_007",
+  "oldest_tree_id": "hob_007",
+  "trees": [
+    {
+      "id": "hob_001",
+      "name": "The Holm Oak of St David's Cathedral",
+      "species": "Holm Oak (Quercus ilex)",
+      "age_estimate": "roughly a century, unconfirmed",
+      "age_min": 100,
+      "age_max": 120,
+      "location": {
+        "address": "St David's Cathedral, corner of Murray and Macquarie Streets, Hobart",
+        "latitude": -42.883809,
+        "longitude": 147.328337,
+        "neighbourhood": "Hobart CBD"
+      },
+      "story": "Hobart has been raising this oak's replacements from its own acorns since 2020, which tells you how the original is doing. It stands on the corner of Murray and Macquarie Streets outside St David's Cathedral, at what the National Trust calls the finest colonial intersection in Australia: four corners of nineteenth-century sandstone, and one evergreen oak holding down the fourth. The City of Hobart's significant tree register lists it twice over, once for outstanding aesthetic significance and once for outstanding dimensions. When the National Trust measured it in March 2014 it was 16 metres tall with a two-metre girth and a condition rating of Good. By September 2023 the city's own arborists reported that it had been in decline for some years despite everything maintenance could do. Photographs from that month show it standing and in leaf, with one seedling of its own germinated in 2020 growing on beside it and several more saplings raised from its acorns. Its age is the part nobody can prove. The story people tell in Hobart is that it grew from an acorn brought back from Gallipoli after 1915 and planted for the men who did not come back, which would put it a little over a century old. No document supports that. The size fits, the tradition is real, the paperwork is missing, and the propagation programme is the city covering itself either way.",
+      "verified_sources": [
+        "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/ae39b0b7b3e94638bb3ae5df27e9d03a/data",
+        "https://ourcitycanopy.com.au/safeguarding-the-holm-oak/",
+        "https://www.trusttrees.org.au/tree/TAS/Hobart/St_DavidS_Cathedral_Murray_Strret"
+      ],
+      "access": "Free, public street corner outside the cathedral, always visible",
+      "transport": "Central Hobart CBD, walkable from anywhere in the city centre",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hob_002",
+      "name": "The Dawn Redwoods of Elizabeth Street",
+      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "81 Elizabeth Street, road reserve in front of the former Commonwealth Bank building, Hobart",
+        "latitude": -42.8811,
+        "longitude": 147.3269,
+        "neighbourhood": "Hobart CBD"
+      },
+      "story": "Until 1941 this species was known only from fossils. Botanists had described Metasequoia from imprints in stone and filed it under extinct, and then living trees turned up in a valley in Hubei province, China. Every dawn redwood outside that valley descends from seed collected there in 1947 and posted around the world, which makes the three on the road reserve outside 81 Elizabeth Street the great-grandchildren of a botanical resurrection. There are three of them, within about twenty metres of each other in front of the former Commonwealth Bank building, and the City of Hobart's significant tree register treats them as a single record rather than three, because the group is the point. Its reasoning is unusually direct: the trees together provide a striking aesthetic in a sparsely vegetated part of the city, and they are locally very recognisable. Stand at the kerb and you get all three at once. That register is also all there is. No other source names these trees, and no planting date is recorded anywhere, so their age is genuinely unknown, with one hard ceiling: nobody outside China could have planted one before 1947. Dawn redwood is one of the few conifers that sheds its needles, so the trio go coppery and then bare through a Tasmanian winter and come back feathery green in spring, which for a fossil is a reasonable annual performance.",
+      "verified_sources": [
+        "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/74ee044d75bc4842be84cdcf0b621dd9/data"
+      ],
+      "access": "Free, public road reserve/footpath, always visible",
+      "transport": "Central Hobart CBD, on Elizabeth Street near the Elizabeth/Collins Street corner",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hob_003",
+      "name": "The Norfolk Island Pine of Ingle Hall",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "89-93 Macquarie Street, outside Ingle Hall at the corner of Macquarie and Argyle Streets, Hobart",
+        "latitude": -42.882031,
+        "longitude": 147.330875,
+        "neighbourhood": "Hobart CBD"
+      },
+      "story": "Asked in 2025 to name his favourite tree in Hobart, the owner of the New Town Station Nursery picked this one, and his reason was that it never changes much. Norfolk Island pines grow slowly and hold their shape, a stack of horizontal branch tiers running up a near-perfect vertical, and this one has kept its corner of Macquarie and Argyle Streets while the buildings around it got taller. The City of Hobart's register singles out its trunk: it forks into two co-dominant leaders, which on most conifers reads as a fault and on this one reads as character. It stands outside Ingle Hall, one of the oldest Georgian buildings in the city, now part of the University of Tasmania's Conservatorium of Music, so on a good day the tree comes with a soundtrack. The species is native to one small island in the Pacific, 1,400 km off the Australian east coast. Cook's crew, arriving there in 1774, looked at those dead-straight trunks and saw masts for the Royal Navy; the timber turned out to be too brittle for the job. As ornamental trees for windy southern ports they have done considerably better, and Hobart is about as far south as a port gets. No planting date was ever recorded, so nobody can tell you how old it is.",
+      "verified_sources": [
+        "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/0ad4226f41b3412681208b481a027004/data",
+        "https://hellohobart.com.au/2025/02/celebrating-new-town-station-nursery/"
+      ],
+      "access": "Free, public street corner, always visible",
+      "transport": "Central Hobart CBD, corner of Macquarie and Argyle Streets",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hob_004",
+      "name": "The Bhutan Cypress of Brisbane Street",
+      "species": "Bhutan Cypress (Cupressus torulosa)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "67 Brisbane Street, Hobart",
+        "latitude": -42.87895,
+        "longitude": 147.323915,
+        "neighbourhood": "Hobart CBD"
+      },
+      "story": "This tree is on Hobart's significant tree register for one stated reason: its loss would be detrimental to the community. Not size, not age, not rarity. The Bhutan cypress at 67 Brisbane Street earned its place as a shape, a dark green cone running straight up out of the footpath, holding a vertical line on a street that otherwise runs horizontal. It is a long way from home. Cupressus torulosa grows wild in the dry inner valleys of the Himalaya, through northern India, Nepal and Bhutan, at altitudes that hand it thin air, hard sun and freezing nights, and across that range it is the tree planted around temples and monasteries. It is uncommon as a street tree in Australia, so the reason to walk past is simply that you are unlikely to meet another one on the way. The register carries no age for it and no measurements, and no other source names it at all. What you get is the council's judgement and your own eyes, which is honest ground for a tree whose whole case rests on how it looks from the pavement. It makes the smallest claim of any tree on this list and the claim holds: a Himalayan conifer, on an ordinary Hobart street, that a city looked at and decided it would rather not lose.",
+      "verified_sources": [
+        "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/01111fc4ba2f48629fa91c551813612b/data"
+      ],
+      "access": "Free, public streetscape",
+      "transport": "Central Hobart CBD, on Brisbane Street",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hob_005",
+      "name": "The Douglas Fir of the Botanical Gardens",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "about 130 years",
+      "age_min": 128,
+      "age_max": 134,
+      "location": {
+        "address": "Royal Tasmanian Botanical Gardens, 11 Lower Domain Road, Hobart",
+        "latitude": -42.865823,
+        "longitude": 147.329294,
+        "neighbourhood": "Queens Domain"
+      },
+      "story": "This tree is older than Australia. It went into the Royal Tasmanian Botanical Gardens in 1894, seven years before the colonies federated into a country, and it has been growing on the same ground ever since. The National Trust measured it in March 2014 at 30 metres tall with a trunk a metre through, and rated its condition Excellent, which for a North American conifer half a world from the Pacific Northwest is a good result. It stands in the Gardens' conifer collection, laid out mostly in the nineteenth century and described by the Gardens themselves as one of the most significant of its kind in the Southern Hemisphere. The Gardens were founded in 1818 and are the second oldest in Australia, and the planting logic of the period is still legible on the ground: rows of northern timber trees brought south to find out whether they would take. This one took. Douglas fir is the great timber tree of the American west, the species that framed most of the twentieth century's houses there, and it is normally met in a plantation, packed tight and pruned by its neighbours. Here it is a specimen with room around it, lower branches kept, the whole shape visible from the path. Entry is free, and the gates are open daily from 8am, closing at 5pm between April and September and at 6.30pm from October to March.",
+      "verified_sources": [
+        "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/68380f3e553f4642b59f6a486f0dca33/data",
+        "https://trusttrees.org.au/tree/TAS/Hobart/Royal_Tasmanian_Botanical_Gardens_Lower_Domain_Road_22"
+      ],
+      "access": "Free, public botanical garden, open daily 8am-5pm (Apr-Sep) or 8am-6.30pm (Oct-Mar), gold-coin donation encouraged, no compulsory entry fee",
+      "transport": "Royal Tasmanian Botanical Gardens, Queens Domain, short drive or bus from Hobart CBD; free parking near the gates",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hob_006",
+      "name": "The Queensland Kauri of the Botanical Gardens",
+      "species": "Queensland Kauri (Agathis robusta)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Royal Tasmanian Botanical Gardens, 11 Lower Domain Road, Hobart",
+        "latitude": -42.865503,
+        "longitude": 147.328963,
+        "neighbourhood": "Queens Domain"
+      },
+      "story": "This tree is listed under four separate headings on Hobart's significant tree register: aesthetic significance, outstanding dimensions, venerable age, and rarity. Every other tree on this list carries one or two. The Queensland kauri stands 39 metres in the Royal Tasmanian Botanical Gardens, measured by the National Trust in March 2014 and rated Excellent, and it has been on the Trust's books since December 1994. The oddity is where it is. Agathis robusta is a rainforest tree from coastal Queensland and the Atherton Tableland, warm and wet by temperament, and Hobart sits at 42 degrees south with frost, wind off the Southern Ocean and a winter Queensland has never heard of. It ought to be sulking. Instead it is one of the tallest things in the garden. Kauri are among the longest-lived conifers on earth, and they grow a clean columnar trunk that runs branchless for a long way before the crown starts, which is precisely why the timber was cut out of Australian and New Zealand forests so quickly in the nineteenth century: a kauri log is almost all usable wood. Nobody recorded when this one was planted. The register calls it venerable and gives no number, and neither does the National Trust. The Gardens charge nothing to enter, opening at 8am daily and closing at 5pm from April to September, 6.30pm through the warmer half of the year.",
+      "verified_sources": [
+        "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/536d17f1338a4e76b90e55ab7b9c1a2f/data",
+        "https://trusttrees.org.au/tree/TAS/Hobart/Royal_Tasmanian_Botanical_Gardens_Lower_Domain_Road_50"
+      ],
+      "access": "Free, public botanical garden, open daily 8am-5pm (Apr-Sep) or 8am-6.30pm (Oct-Mar), gold-coin donation encouraged, no compulsory entry fee",
+      "transport": "Royal Tasmanian Botanical Gardens, Queens Domain, short drive or bus from Hobart CBD; free parking near the gates",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hob_007",
+      "name": "The Giant Sequoias of the Botanical Gardens",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "about 147 years",
+      "age_min": 145,
+      "age_max": 149,
+      "location": {
+        "address": "Royal Tasmanian Botanical Gardens, entrance drive, 11 Lower Domain Road, Hobart",
+        "latitude": -42.86542,
+        "longitude": 147.328846,
+        "neighbourhood": "Queens Domain"
+      },
+      "story": "There are two of them, they went in together in 1879, and they still mark the entrance drive of the Royal Tasmanian Botanical Gardens. The National Trust measured the pair in March 2014 at 36 metres tall with trunks two metres through and rated them Excellent. At 147 years old they are barely started: giant sequoias routinely pass 2,000 years, and the largest living one in California is reckoned at over two millennia. Hobart's register still lists them under a nineteenth-century name, Big Tree or Wellingtonia, which is a fossil of an old argument. When seed first reached Britain in 1853 the species was named Wellingtonia gigantea after the recently dead Duke of Wellington. American botanists objected and countered with Washingtonia. The fight was not settled until 1939, when the tree finally got the neutral name it carries now, and seed had reached Tasmania well before that, which is roughly when these two went into the ground. They are the first trees you pass coming through the gates, which is the standard Victorian use for a species that gardeners of the period regarded as the largest living thing anyone had heard of. They have another eighteen centuries to make good on it. There is no admission charge; the gates open at 8am daily and close at 5pm from April to September, 6.30pm from October to March.",
+      "verified_sources": [
+        "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/d2385a6246c74c18839ee35c772398f5/data",
+        "https://trusttrees.org.au/tree/TAS/Hobart/Royal_Tasmanian_Botanical_Gardens_Lower_Domain_Road_26"
+      ],
+      "access": "Free, public botanical garden, open daily 8am-5pm (Apr-Sep) or 8am-6.30pm (Oct-Mar), gold-coin donation encouraged, no compulsory entry fee",
+      "transport": "Royal Tasmanian Botanical Gardens, Queens Domain, short drive or bus from Hobart CBD; free parking near the gates",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
