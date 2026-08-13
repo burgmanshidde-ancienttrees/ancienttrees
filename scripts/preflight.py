@@ -81,6 +81,32 @@ def check_city(path):
     return out
 
 
+# Contract B, mirrored from site/src/pages/[city]/oldest-tree.astro. Added
+# 2026-08-13 after four new cities went out with a 46-word question_context and
+# the deploy went red on the first one: preflight checked the intro's word range
+# and the description's length and had never looked at this field, so the whole
+# point of running it before pushing was lost. Same mirror rule as the rest of
+# this file: the Astro build is the authority and this only moves the finding-out
+# earlier.
+CONTEXT_MIN, CONTEXT_MAX = 150, 200
+
+
+def check_contract_b(slug, d):
+    out = []
+    if not (d.get("trees") or []):
+        return out
+    answer = (d.get("question_answer") or "").strip()
+    context = (d.get("question_context") or "").strip()
+    if not answer or not context:
+        out.append("%s: question_answer and question_context must both be written (Contract B)" % slug)
+        return out
+    wc = len(context.split())
+    if wc < CONTEXT_MIN or wc > CONTEXT_MAX:
+        out.append("%s: question_context is %d words, Contract B requires %d-%d"
+                   % (slug, wc, CONTEXT_MIN, CONTEXT_MAX))
+    return out
+
+
 RECOGNISE_MAX = 240
 # Hidde, 2026-08-12, seeing the field on all eleven Den Bosch trees: "kun je deze
 # which one is it functie weghalen, hij is alleen in den bosch, dit zou logisch
@@ -127,6 +153,8 @@ def main():
         problems += check_city(p)
         with open(p, encoding='utf-8') as fh:
             problems += check_recognise(os.path.basename(p)[:-5], json.load(fh))
+        with open(p, encoding='utf-8') as fh2:
+            problems += check_contract_b(os.path.basename(p)[:-5], json.load(fh2))
     for line in problems:
         print("FAIL " + line)
     print("preflight: %d cities checked, %d problems" % (len(files), len(problems)))

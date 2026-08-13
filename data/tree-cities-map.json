@@ -1,0 +1,523 @@
+{
+  "note": "Scouting pass, 2026-08-13: which of our queue cities are certified Tree Cities of the World (FAO/Arbor Day). Certification requires an internally maintained tree inventory as one of five standards, so the certified list is a proxy population for 'cities that plausibly hold a tree register nobody has looked for'. This file records the CROSS-REFERENCE and a ten-city SPOT CHECK for an actually published, openly licensed dataset. Nothing here has been imported; see OPEN_DATA_SURVEY.md 2026-08-13 entry for method and full verdict.",
+  "source": {
+    "what": "Tree Cities of the World Communities, the live feature layer behind the official directory map",
+    "how_obtained": "treecitiesoftheworld.org's /directory.cfm embeds an ArcGIS Dashboards app (item 2ec8fbfbbcc84fa8ae5469bc8a5816c1) whose map widget reads a Web Map (item 0488b10d65484fd78c9749146908c97e) pointing at this feature service layer",
+    "service_url": "https://services8.arcgis.com/1WIA3UeOTguiTsKg/arcgis/rest/services/Tree_Cities_of_the_World_Communities/FeatureServer/0",
+    "record_count": 285,
+    "countries_represented": 24,
+    "fetched": "2026-08-13",
+    "caveat": "This is the CURRENT live roster as rendered on the public map (all 285 records carry ApplicationStatus/ApplicationCycleId/ApplicationTypeId = 0 and ApplicationYear = 2025), not a historical log of every city ever certified. It is presumed complete for 'currently recognised' but was not cross-checked against FAO's own published PDF list."
+  },
+  "matching_method": "Normalized city+country string match (accent-stripped, lowercased, common prefixes like 'City of' stripped) between the TCW 'City'/'Country' fields and data/city-queue.json's 'city'/'country' fields. Matches were then hand-reviewed against the TCW 'MemberName' field, because MemberName is sometimes a different municipality than the City label the map displays it under (see 'name_caveat' on affected entries below).",
+  "summary": {
+    "queue_cities_total": 293,
+    "queue_cities_register_less": 227,
+    "matched_certified_tree_cities": 29,
+    "matched_and_register_less": 22,
+    "matched_with_name_caveat": 7
+  },
+  "matches": [
+    {
+      "city": "Rio de Janeiro",
+      "country": "Brazil",
+      "slug": "rio-de-janeiro",
+      "rank": 6,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Rio de Janeiro"
+      ],
+      "tcw_years_awarded": [
+        1
+      ],
+      "name_caveat": null,
+      "register": {
+        "url": "not found this pass; general portals are dados.gov.br, dadosabertos.rj.gov.br, and DATA.RIO (carioca.rio)",
+        "licence": null,
+        "verdict": "unknown",
+        "note": "Individually tombado (heritage-listed) tree groups are described in municipal heritage-preservation text (e.g. Rua Haddock Lobo's 70 goiabeiras) but no single machine-readable tree-level dataset was located in this pass's time budget."
+      }
+    },
+    {
+      "city": "Miami",
+      "country": "United States",
+      "slug": "miami",
+      "rank": 7,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Palmetto Bay"
+      ],
+      "tcw_years_awarded": [
+        1
+      ],
+      "name_caveat": "TCW's 'Miami' pin is actually Palmetto Bay, a separate incorporated village in Miami-Dade, not the City of Miami.",
+      "register": {
+        "url": "none found",
+        "licence": null,
+        "verdict": "internal-only or none found",
+        "note": "CAVEAT: the TCW record matching our queue's 'Miami' is actually 'Palmetto Bay', a separate incorporated village in Miami-Dade County, not the City of Miami. Florida's statewide Champion Tree Register (fdacs.gov) exists but is a state programme, not a Miami city register."
+      }
+    },
+    {
+      "city": "Belfast",
+      "country": "United Kingdom",
+      "slug": "belfast",
+      "rank": 26,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Belfast"
+      ],
+      "tcw_years_awarded": [
+        3
+      ],
+      "name_caveat": null,
+      "register": {
+        "url": "none found",
+        "licence": null,
+        "verdict": "none found",
+        "note": "No Belfast-specific municipal register located. UK-wide Woodland Trust Ancient Tree Inventory covers Belfast entries but is a crowd-sourced UK national layer, not a city dataset. A Country Living / heritage-org campaign was calling for a NI-wide register to be created, implying one does not yet exist."
+      }
+    },
+    {
+      "city": "Portland",
+      "country": "United States",
+      "slug": "portland",
+      "rank": 33,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Portland"
+      ],
+      "tcw_years_awarded": [
+        3
+      ],
+      "name_caveat": null,
+      "register": {
+        "url": "https://gis-pdx.opendata.arcgis.com/datasets/heritage-trees",
+        "licence": "Org-level ArcGIS Open Data page tags the portal 'CC-BY-SA'; the item's own licenseInfo field is empty, so the specific per-dataset terms still need reading on the item's terms-of-use page before import.",
+        "verdict": "published, licence needs final confirmation",
+        "note": "300+ points, trunk locations, City of Portland Bureau of Parks and Recreation. Live service is at portlandmaps.com/od/rest/... which HANGS (already in fetch-blocklist.json); use the gis-pdx.opendata.arcgis.com item/download route instead."
+      }
+    },
+    {
+      "city": "Toronto",
+      "country": "Canada",
+      "slug": "toronto",
+      "rank": 39,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Toronto"
+      ],
+      "tcw_years_awarded": [
+        7
+      ],
+      "name_caveat": null,
+      "register": {
+        "url": "none found at city level; province-wide lead at forestscanada.ca/en/program/heritage-tree",
+        "licence": null,
+        "verdict": "none found",
+        "note": "City of Toronto Open Data's tree datasets cover street trees generally (inventory/maintenance), not a heritage/notable subset. The Heritage Tree Program is Ontario-wide (Forests Ontario / Forests Canada), nomination-based, not confirmed as a downloadable geodataset."
+      }
+    },
+    {
+      "city": "Barcelona",
+      "country": "Spain",
+      "slug": "barcelona",
+      "rank": 48,
+      "current_trees": 46,
+      "current_register_trees_within_reach": 183,
+      "tcw_member_names": [
+        "Barcelona Metropolitan Area"
+      ],
+      "tcw_years_awarded": [
+        6
+      ],
+      "name_caveat": "Certified member is 'Barcelona Metropolitan Area' (AMB, 36 municipalities), not the City of Barcelona individually."
+    },
+    {
+      "city": "Auckland",
+      "country": "New Zealand",
+      "slug": "auckland",
+      "rank": 54,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Auckland"
+      ],
+      "tcw_years_awarded": [
+        7
+      ],
+      "name_caveat": null,
+      "register": {
+        "url": "https://data-aucklandcouncil.opendata.arcgis.com/datasets/notable-trees-overlay",
+        "licence": "Org-level ArcGIS Open Data page tags the portal 'CC-BY-SA'; same caveat as Portland, item-level licence text not read this pass.",
+        "verdict": "published, licence needs final confirmation",
+        "note": "Notable Trees Overlay from the Auckland Unitary Plan Schedule 10, legally scheduled trees with addresses."
+      }
+    },
+    {
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "slug": "buenos-aires",
+      "rank": 59,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Ciudad Autónoma de Buenos Aires"
+      ],
+      "tcw_years_awarded": [
+        4
+      ],
+      "name_caveat": "'Ciudad Autónoma de Buenos Aires' is Buenos Aires city's own formal name, not a different place; flagged only because it doesn't string-match, not a real discrepancy.",
+      "register": {
+        "url": "https://data.buenosaires.gob.ar (packages 'arbolado-publico-lineal' and 'arbolado-espacios-verdes'); narrative list at buenosaires.gob.ar/arbopedia/arboles-historicos-y-notables",
+        "licence": "The two general tree-inventory CKAN packages are CC-BY-2.5-AR (confirmed via package_search API, license_title field). Whether the specific 639-specimen 'historicos y notables' catalogue is a filtered export of these or a separate, differently-licensed file was not confirmed this pass.",
+        "verdict": "partially published, needs a follow-up pass to find the notable-trees-specific export",
+        "note": "639 registered specimens (78 historic, 561 notable) per Ordinance 20.745, first catalogued 1962."
+      }
+    },
+    {
+      "city": "Adelaide",
+      "country": "Australia",
+      "slug": "adelaide",
+      "rank": 63,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "City of Onkaparinga"
+      ],
+      "tcw_years_awarded": [
+        2
+      ],
+      "name_caveat": "TCW's 'Adelaide' pin is actually City of Onkaparinga, a separate outer-metro council, not the City of Adelaide.",
+      "register": {
+        "url": "data.sa.gov.au (street trees only); regulatory list under PlanSA's Significant and Regulated Trees overlay",
+        "licence": null,
+        "verdict": "none found as open data; regulatory list only",
+        "note": "CAVEAT: the TCW record matching our queue's 'Adelaide' is actually 'City of Onkaparinga', a separate outer-metro council, not the City of Adelaide. South Australia's Significant Trees framework is a planning-code overlay (National Trust classification tiers), not confirmed as a single open downloadable dataset."
+      }
+    },
+    {
+      "city": "Mumbai",
+      "country": "India",
+      "slug": "mumbai",
+      "rank": 65,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Mumbai"
+      ],
+      "tcw_years_awarded": [
+        5
+      ],
+      "name_caveat": null,
+      "register": {
+        "url": "none published",
+        "licence": null,
+        "verdict": "internal-only, not yet published",
+        "note": "BMC's first-ever heritage tree survey was reported as in progress as of the most recent coverage found; no evidence a finished list has been released."
+      }
+    },
+    {
+      "city": "New York",
+      "country": "United States",
+      "slug": "new-york",
+      "rank": 94,
+      "current_trees": 20,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "New York"
+      ],
+      "tcw_years_awarded": [
+        3
+      ],
+      "name_caveat": null,
+      "register": {
+        "url": "https://www.nycgovparks.org/facilities/great-trees (fetch blocked, see fetch-blocklist.json: nycgovparks.org returns HTTP 202 empty body)",
+        "licence": null,
+        "verdict": "lead only, not confirmed downloadable",
+        "note": "'Great Trees of New York City', 120 curated trees (61 added 2026, first update since 1985) is a curated list, not obviously a geodata export. NYC's general Open Data street-tree census is a different, much larger dataset that does not itself mark the Great Trees subset. Already have 20 trees published for New York with no register currently on file."
+      }
+    },
+    {
+      "city": "Santiago",
+      "country": "Chile",
+      "slug": "santiago",
+      "rank": 95,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Vitacura"
+      ],
+      "tcw_years_awarded": [
+        6
+      ],
+      "name_caveat": "TCW's 'Santiago' pin is actually Vitacura, a separate comuna within Greater Santiago, not central Santiago."
+    },
+    {
+      "city": "Christchurch",
+      "country": "New Zealand",
+      "slug": "christchurch",
+      "rank": 103,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Christchurch"
+      ],
+      "tcw_years_awarded": [
+        1
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Malmo",
+      "country": "Sweden",
+      "slug": "malmo",
+      "rank": 104,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Malmö"
+      ],
+      "tcw_years_awarded": [
+        6
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Matera",
+      "country": "Italy",
+      "slug": "matera",
+      "rank": 105,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Matera"
+      ],
+      "tcw_years_awarded": [
+        1
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Bergamo",
+      "country": "Italy",
+      "slug": "bergamo",
+      "rank": 106,
+      "current_trees": 7,
+      "current_register_trees_within_reach": 17,
+      "tcw_member_names": [
+        "Bergamo"
+      ],
+      "tcw_years_awarded": [
+        1
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Modena",
+      "country": "Italy",
+      "slug": "modena",
+      "rank": 124,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 3,
+      "tcw_member_names": [
+        "Modena"
+      ],
+      "tcw_years_awarded": [
+        6
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Salamanca",
+      "country": "Spain",
+      "slug": "salamanca",
+      "rank": 134,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 1,
+      "tcw_member_names": [
+        "Salamanca"
+      ],
+      "tcw_years_awarded": [
+        2
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "London",
+      "country": "United Kingdom",
+      "slug": "london",
+      "rank": 135,
+      "current_trees": 23,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Islington",
+        "London Borough Of Redbridge",
+        "London Borough of Camden"
+      ],
+      "tcw_years_awarded": [
+        7,
+        6,
+        3
+      ],
+      "name_caveat": "Certified members are individual boroughs (Islington, London Borough Of Redbridge, London Borough of Camden), not London as a whole; most London boroughs are NOT certified."
+    },
+    {
+      "city": "Ferrara",
+      "country": "Italy",
+      "slug": "ferrara",
+      "rank": 189,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 7,
+      "tcw_member_names": [
+        "Ferrara"
+      ],
+      "tcw_years_awarded": [
+        1
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Merida",
+      "country": "Mexico",
+      "slug": "merida",
+      "rank": 191,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Mérida"
+      ],
+      "tcw_years_awarded": [
+        7
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Madrid",
+      "country": "Spain",
+      "slug": "madrid",
+      "rank": 196,
+      "current_trees": 17,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Madrid",
+        "POZUELO DE ALARCÓN"
+      ],
+      "tcw_years_awarded": [
+        1,
+        7
+      ],
+      "name_caveat": "One record ('Madrid') is a clean match; a second ('POZUELO DE ALARCÓN') is a separate municipality mislabeled under City='MADRID' in TCW's own data and should not be read as Madrid certification."
+    },
+    {
+      "city": "Valencia",
+      "country": "Spain",
+      "slug": "valencia",
+      "rank": 212,
+      "current_trees": 16,
+      "current_register_trees_within_reach": 347,
+      "tcw_member_names": [
+        "Valencia"
+      ],
+      "tcw_years_awarded": [
+        3
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Turin",
+      "country": "Italy",
+      "slug": "turin",
+      "rank": 217,
+      "current_trees": 10,
+      "current_register_trees_within_reach": 30,
+      "tcw_member_names": [
+        "Turin"
+      ],
+      "tcw_years_awarded": [
+        5
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Edinburgh",
+      "country": "United Kingdom",
+      "slug": "edinburgh",
+      "rank": 218,
+      "current_trees": 15,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Edinburgh"
+      ],
+      "tcw_years_awarded": [
+        3
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Stockholm",
+      "country": "Sweden",
+      "slug": "stockholm",
+      "rank": 238,
+      "current_trees": 4,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Stockholm"
+      ],
+      "tcw_years_awarded": [
+        4
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Malaga",
+      "country": "Spain",
+      "slug": "malaga",
+      "rank": 242,
+      "current_trees": 10,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Málaga"
+      ],
+      "tcw_years_awarded": [
+        3
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Ljubljana",
+      "country": "Slovenia",
+      "slug": "ljubljana",
+      "rank": 260,
+      "current_trees": 4,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "Ljubljana"
+      ],
+      "tcw_years_awarded": [
+        7
+      ],
+      "name_caveat": null
+    },
+    {
+      "city": "Sao Paulo",
+      "country": "Brazil",
+      "slug": "sao-paulo",
+      "rank": 291,
+      "current_trees": 0,
+      "current_register_trees_within_reach": 0,
+      "tcw_member_names": [
+        "São Paulo"
+      ],
+      "tcw_years_awarded": [
+        5
+      ],
+      "name_caveat": null
+    }
+  ]
+}
