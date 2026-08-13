@@ -294,8 +294,9 @@ def main():
             print("%3d  %-16s %4d %4d %6d %9d" % (
                 c["rank"], c["city"][:16], c.get("trees", 0),
                 10 - c.get("trees", 0), c.get("ready", 0), c.get("register", 0)))
-        print("\nSTAGE 2, deepening, ONLY after stage 1 has nothing cheap left:")
-        print("Google-confirmed cities climbing to their size target.\n")
+        print("\nSTAGE 2, deepening: PAUSED while any ranked city above can still")
+        print("be moved to 10 cheaply (Hidde, 2026-08-13: breadth over depth in")
+        print("the whole top 250). Listed only so the later work stays visible.\n")
         print("  #  city             now target  ready  register")
         for c in s2:
             print("%3d  %-16s %4d %6d %6d %9d" % (

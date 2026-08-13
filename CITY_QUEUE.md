@@ -48,10 +48,13 @@ The floor is unchanged: four verified trees or no page.
 four lines.** Goal of phase 1: as many people to the website as possible, which
 means as many pages as high in Google as possible. Therefore:
 
-1. **The sprint: every top-100 city to 10 trees, as fast as possible.** A page
+1. **The sprint: every ranked city to 10 trees, as fast as possible, and
+   nothing deepens while it runs** (Hidde, 2026-08-13: "ik zou ook voorrang
+   willen geven in deze top 250 tot de 10 brengen en niet verdiepen"). A page
    must exist before Google can judge it, so breadth to 10 outranks every
-   deepening everywhere. `python3 scripts/city_queue.py --next` prints this
-   stage first.
+   deepening everywhere: stage 2 work is dispatched only when stage 1 has
+   nothing left that can be moved cheaply. `python3 scripts/city_queue.py
+   --next` prints the sprint first and says so.
 2. **Then deepen only what Google confirms**, up the staircase by city size:
 
    | size (demand proxy) | target |
