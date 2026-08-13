@@ -327,6 +327,17 @@ send script enforces dedup against. Batch 001 success test: one reply or
 placement within two weeks proves the channel; zero is also an answer. Follow
 up politely after three or four weeks, never sooner.
 
+**Batch 001 passed its own test, and not the way it was aimed (2026-08-12).**
+DUIC did not run the Utrecht pitch. Else Marie Vonk forwarded it to Oud-Utrecht,
+the city's historical society, where Piet van Dijck took it up for the series
+"Op pad met Oud-Utrecht", planned for the first half of 2027. Two things worth
+carrying into the next press batch. A local paper's editor forwarding a mail to
+the people who actually write about the city is a better outcome than a filler
+piece, so a pitch to a regional desk should be written so it survives being
+passed on, which this one was: it named one tree, one date and one link. And a
+placement can land nine months out, which means the press lane is measured over
+quarters and cannot be judged on a fortnight of Search Console.
+
 
 **Batch 002-pt, 2026-08-09.** Twelve mails, Portugal only, in Hidde's frame: a
 compliment, what the site is for, then an ask for photographs and for the tree we
@@ -411,7 +422,7 @@ why_them is trusted for ownership now. 106 contacts remain; the daily cap is 40.
 | 2026-08-09 | Amigos do Jardim Botânico de Lisboa, amigosdobotanico@gmail.com | Which Lisbon tree are we missing; they run tree walks there, batch 002-pt | **sent** |
 | 2026-08-09 | Sociedade Portuguesa de Botânica, spbotanica@gmail.com | Confirm two species identifications we are unsure of, batch 002-pt | **sent** |
 | 2026-08-08 | Het Parool, redactie@parool.nl | Amsterdam local pitch (Heimanseik + Plantage walk), batch 001 | **sent** |
-| 2026-08-08 | DUIC, redactie@duic.nl | Utrecht local pitch (Uithof linden), batch 001 | **sent** |
+| 2026-08-08 | DUIC, redactie@duic.nl | Utrecht local pitch (Uithof linden), batch 001 | **sent**, forwarded by DUIC to Oud-Utrecht; Piet van Dijck replied 2026-08-12 that he is writing it up for "Op pad met Oud-Utrecht", planned first half of 2027. Reply drafted: drafts/reply-oud-utrecht.md |
 | 2026-08-08 | Brabants Dagblad, stadsredactie@bd.nl | Den Bosch local pitch (Bastion Oranje maple), batch 001 | **sent** |
 | 2026-08-08 | Haarlems Dagblad, stadsredactie@haarlemsdagblad.nl | Haarlem local pitch (Lodewijk Napoleon beech), batch 001 | **sent** |
 | 2026-08-08 | De Gelderlander, redactie@gelderlander.nl | Arnhem local pitch (De Poortwachters), batch 001 | **sent** |
