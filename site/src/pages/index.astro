@@ -59,9 +59,15 @@ const speciesSlugs = [...qualifying].map((common) => [common, slugify(common)] a
 const rankedCities = [...published].sort((a, b) => b.count - a.count);
 const citiesCol = rankedCities.slice(0, 9).map((p) => `<a href="/${p.slug}">${esc(p.city)}</a>`).join("");
 const moreCitiesHtml = rankedCities.slice(9, 19).map((p) => `<a href="/${p.slug}">${esc(p.city)}</a>`).join("");
+// Ten, like every other column in this block. It used to print every
+// qualifying species, which was 30 when the site had 13 species pages and
+// would have been 84 the moment the catch-up batch landed: one column three
+// times the height of its neighbours, with the footer's own bottom edge
+// somewhere below the fold. Hidde, 2026-08-13: "it would make sense to cut off
+// the footer at about the same height."
 const speciesCol =
-  speciesSlugs.map(([cn, sl]) => `<a href="/species/${sl}">${esc(cn)}</a>`).join("") +
-  '<a class="dir-morelink" href="/species">All species</a>';
+  speciesSlugs.slice(0, 10).map(([cn, sl]) => `<a href="/species/${sl}">${esc(cn)}</a>`).join("") +
+  `<a class="dir-morelink" href="/species">All ${speciesSlugs.length} species</a>`;
 const collCol =
   collections.slice(0, 9).map((c) => `<a href="/collections/${esc(c.data.slug)}">${esc(c.data.title)}</a>`).join("") +
   '<a class="dir-morelink" href="/collections">All collections</a>';
