@@ -949,8 +949,10 @@ def main():
     block(funnel_section, today, token)
 
     gsc_latest = None
+    gsc_data = None
     try:
-        gsc_text, gsc_latest = gsc_section(fetch_gsc(today))
+        gsc_data = fetch_gsc(today)
+        gsc_text, gsc_latest = gsc_section(gsc_data)
         blocks.append("**Where demand is going to waste**\n\n" + gsc_text)
     except Exception as e:
         blocks.append("Search Console: fetch failed today (%s); numbers resume tomorrow." % e)
@@ -986,7 +988,10 @@ def main():
     with open(DATA_MD, "w") as f:
         f.write(PREAMBLE + "\n" + entry + body)
     print("Wrote digest entry to DATA.md")
-    promote(gsc[2] if gsc else None)
+    # gsc_data, not a name that only existed inside gsc_section's argument:
+    # the first version referenced `gsc`, which is undefined in this scope, and
+    # the NameError hid in the force-rewrite path until a --force test hit it.
+    promote(gsc_data[2] if gsc_data else None)
     return 0
 
 
