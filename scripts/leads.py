@@ -57,6 +57,46 @@ def is_done(entry):
     return bool(DONE.search(json.dumps(entry, ensure_ascii=False)))
 
 
+# Found 2026-08-13 while writing a Munich batch: the DONE marker above only
+# catches a lead that SOMEONE remembered to annotate after shipping it. Munich's
+# own leads file held four entries for Schlosspark Nymphenburg trees that had
+# already been published twice, under two different ids (muc_011-014, then
+# muc_015-018 from a second pass that never checked), with no marker either
+# time, plus four more that matched already-published trees under different
+# names. A coordinate match doesn't need anyone to remember anything: if a
+# lead's own position is within ~11m (4 decimal places) of a tree the city file
+# already ships, the lead is done whether or not its text says so.
+_CITY_COORD_CACHE = {}
+
+
+def _city_coords(city_slug):
+    if city_slug in _CITY_COORD_CACHE:
+        return _CITY_COORD_CACHE[city_slug]
+    path = os.path.join(ROOT, "data", "cities", f"{city_slug}.json")
+    coords = {}
+    try:
+        d = json.load(open(path, encoding="utf-8"))
+        for t in d.get("trees", []):
+            loc = t.get("location", {})
+            lat, lng = loc.get("latitude"), loc.get("longitude")
+            if lat is not None and lng is not None:
+                coords[(round(lat, 4), round(lng, 4))] = t["id"]
+    except Exception:
+        pass
+    _CITY_COORD_CACHE[city_slug] = coords
+    return coords
+
+
+def published_match(city_slug, entry):
+    """The id of an already-published tree at this lead's own coordinates, or None."""
+    loc = entry.get("location") if isinstance(entry.get("location"), dict) else entry
+    lat = loc.get("latitude", loc.get("lat"))
+    lng = loc.get("longitude", loc.get("lng"))
+    if lat is None or lng is None:
+        return None
+    return _city_coords(city_slug).get((round(lat, 4), round(lng, 4)))
+
+
 def classify(entry, blocking):
     """Return the blocking rule this lead trips, or None.
 
@@ -114,9 +154,15 @@ def main():
     r = rules()
     blocking = r["blocking"]
     ready, needs, blocked, done = [], [], [], []
+    matched = 0
     for city, e in load(a.city):
         if is_done(e):
             done.append((city, e))
+            continue
+        match = published_match(city, e)
+        if match:
+            done.append((city, e))
+            matched += 1
             continue
         rule = classify(e, blocking)
         if rule:
@@ -129,7 +175,8 @@ def main():
     print(f"\n{total} leads. Fail-open: anything not matching data/block-reasons.json ships.\n")
     print(f"  {len(ready):4d}  READY: publishable now, needs only a story written")
     if done:
-        print(f"  {len(done):4d}  DONE: already published, kept as a record")
+        extra = f" ({matched} caught only by coordinate match, no marker)" if matched else ""
+        print(f"  {len(done):4d}  DONE: already published, kept as a record{extra}")
     print(f"  {len(needs):4d}  NEARLY: unblocked, but missing a field a story needs")
     print(f"  {len(blocked):4d}  BLOCKED: genuinely cannot ship")
 
