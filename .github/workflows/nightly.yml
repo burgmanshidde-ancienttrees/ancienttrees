@@ -145,6 +145,19 @@ jobs:
             command; the workflow log does not record that and you are the only
             witness.
 
+            PAGE GAPS ARE PART OF THE WORK, not a separate project. Run
+            `python3 scripts/pagegaps.py` in every run. It prints the species,
+            country and park pages the data has earned and nobody has written,
+            biggest first, and every one of them is an entry from Google that
+            does not exist while its trees do. Writing an intro is small, cheap
+            and entirely inside the assembly line: batch several into one pass
+            per the writing brief, exactly as you would batch tree stories. The
+            rule that governs them, and it is the only one that matters here:
+            each intro is written from that subject's own trees, never from a
+            pattern, because thirty identical paragraphs are worse than none.
+            Prefer a gap with many trees behind it, and treat opening a new city
+            as also opening its country page if that country has none.
+
             LOG WHAT THE PASS COST, in the same commit as its output: append to
             data/agent-costs.json under today's date with target, kind (verify,
             write, photo, scout), tokens, trees that actually reached
