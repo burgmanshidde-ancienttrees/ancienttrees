@@ -25,18 +25,14 @@ import glob
 import heapq
 import json
 import math
+import os
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from geo import km  # noqa: E402
 
 FLOOR = 4          # fewer than this and a place earns no page (CLAUDE.md)
 CEILING = 8        # more than this is a second walk, not a longer one
-
-
-def km(a, b):
-    r, p = 6371.0, math.pi / 180
-    dlat, dlon = (b[0] - a[0]) * p, (b[1] - a[1]) * p
-    x = (math.sin(dlat / 2) ** 2
-         + math.cos(a[0] * p) * math.cos(b[0] * p) * math.sin(dlon / 2) ** 2)
-    return 2 * r * math.asin(math.sqrt(x))
 
 
 def load(path):

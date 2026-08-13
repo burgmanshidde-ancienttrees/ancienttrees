@@ -2,6 +2,7 @@
 // redirect-map.ts, parks.ts, species.ts etc. don't each carry their own
 // copy of the same logic ported from build_site.py.
 import type { CollectionEntry } from "astro:content";
+import { haversineKm } from "./walks";
 
 export type Tree = CollectionEntry<"cities">["data"]["trees"][number];
 export type CityData = CollectionEntry<"cities">["data"];
@@ -42,10 +43,7 @@ export function distLabel(
   a: { latitude: number; longitude: number },
   b: { latitude: number; longitude: number }
 ): string {
-  const toRad = (d: number) => (d * Math.PI) / 180;
-  const [lat1, lon1, lat2, lon2] = [toRad(a.latitude), toRad(a.longitude), toRad(b.latitude), toRad(b.longitude)];
-  const h = Math.sin((lat2 - lat1) / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin((lon2 - lon1) / 2) ** 2;
-  const m = 6371 * 2 * Math.asin(Math.sqrt(h)) * 1000;
+  const m = haversineKm([a.latitude, a.longitude], [b.latitude, b.longitude]) * 1000;
   return m < 1000 ? `${Math.round(m / 10) * 10} m` : `${(m / 1000).toFixed(1)} km`;
 }
 

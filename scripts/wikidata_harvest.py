@@ -23,7 +23,6 @@ Run: python3 scripts/wikidata_harvest.py [slug ...]   (no args = all cities)
 """
 import glob
 import json
-import math
 import os
 import sys
 import time
@@ -31,6 +30,10 @@ import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+sys.path.insert(0, os.path.join(ROOT, "scripts"))
+from geo import km  # noqa: E402
+
 OUT = os.path.join(ROOT, "data", "research", "wikidata-candidates.json")
 ENDPOINT = "https://query.wikidata.org/sparql"
 UA = "AncientTreesHarvester/1.0 (ancienttrees.app; research; contact via site form)"
@@ -56,12 +59,7 @@ LIMIT 300
 
 
 def haversine_m(a, b):
-    R = 6371000.0
-    p = math.pi / 180
-    x = (math.sin((b[0] - a[0]) * p / 2) ** 2
-         + math.cos(a[0] * p) * math.cos(b[0] * p)
-         * math.sin((b[1] - a[1]) * p / 2) ** 2)
-    return 2 * R * math.asin(math.sqrt(x))
+    return km(a, b) * 1000
 
 
 def parse_point(wkt):

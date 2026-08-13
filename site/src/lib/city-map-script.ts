@@ -8,6 +8,14 @@
 // cards in the current production site — the passport/check-in wiring
 // below is real and ported faithfully, but nothing currently triggers it.
 // Confirmed by grep: no template anywhere emits `class="seen-btn"`.
+//
+// Below, cityMapScript() returns its whole body as a template literal that
+// ships verbatim as an inline <script> (see mapScript() in ./map): no
+// bundler or module graph reaches that text. That's why metresBetween(),
+// defined inside the template, can't import haversineKm from ./walks the
+// way this file's own build-time code does above: it is the one unavoidable
+// duplicate of the haversine formula in the codebase. Keep it in step with
+// walks.ts::haversineKm and geo.py::km by hand if either changes.
 import { MAP_STYLE } from "./site-config";
 import { mapScript } from "./map";
 import { kmLabel } from "./walks";

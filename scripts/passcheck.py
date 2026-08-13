@@ -38,7 +38,7 @@ import sys
 import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from cluster_register import km  # noqa: E402
+from geo import km  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SAME_CITY_KM = 20.0
