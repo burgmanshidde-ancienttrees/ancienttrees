@@ -12722,6 +12722,423 @@
    "name": "The Corsican Pine of the Orto Botanico",
    "checked": "2026-08-13",
    "candidates": []
+  },
+  "luc_008": {
+   "city": "Lucca",
+   "name": "The Magnolia of Via dell'Orto Botanico",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "luc_009": {
+   "city": "Lucca",
+   "name": "The Plane of Via del Fosso",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "luc_010": {
+   "city": "Lucca",
+   "name": "The Nepal Camphor of Via Barsanti e Matteucci",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "pgi_001": {
+   "city": "Perugia",
+   "name": "The Palazzo Murena Cedar",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "pgi_002": {
+   "city": "Perugia",
+   "name": "The Atlas Cedar of Piazza Italia",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "pgi_003": {
+   "city": "Perugia",
+   "name": "The Cedar of Lebanon at Porta Pesa",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "pgi_004": {
+   "city": "Perugia",
+   "name": "The Cedar of Lebanon at Croce Rossa",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "pgi_005": {
+   "city": "Perugia",
+   "name": "The Hackberry of Via Fiume",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "pgi_006": {
+   "city": "Perugia",
+   "name": "The Holm Oaks of Giardini del Frontone",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "pgi_007": {
+   "city": "Perugia",
+   "name": "The Himalayan Cedar of the Cimitero Monumentale",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "pgi_008": {
+   "city": "Perugia",
+   "name": "The Cypress of Parco della Cuparella",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "ptl_001": {
+   "city": "Portland",
+   "name": "The Watson Beech",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "ptl_002": {
+   "city": "Portland",
+   "name": "The Farrell Planetree",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "ptl_003": {
+   "city": "Portland",
+   "name": "The Eliot Hawthorns",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "ptl_004": {
+   "city": "Portland",
+   "name": "The Kamm Walnut",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "ptl_005": {
+   "city": "Portland",
+   "name": "The Miller Pine",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "ptl_006": {
+   "city": "Portland",
+   "name": "The Rockey Elm",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Maple tree (Japanese Garden, Portland).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Maple_tree_%28Japanese_Garden%2C_Portland%29.jpg/960px-Maple_tree_%28Japanese_Garden%2C_Portland%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Maple_tree_(Japanese_Garden,_Portland).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "stu_spivack"
+    }
+   ]
+  },
+  "ptl_007": {
+   "city": "Portland",
+   "name": "The Storm Elm",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Maple tree (Japanese Garden, Portland).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Maple_tree_%28Japanese_Garden%2C_Portland%29.jpg/960px-Maple_tree_%28Japanese_Garden%2C_Portland%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Maple_tree_(Japanese_Garden,_Portland).jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "stu_spivack"
+    }
+   ]
+  },
+  "ptl_008": {
+   "city": "Portland",
+   "name": "The Patton Road Sequoia",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "ptl_009": {
+   "city": "Portland",
+   "name": "The Balch Creek Fir",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "iNat obs 135215118 (Pseudotsuga menziesii menziesii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/230591035/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/135215118",
+     "licence": "CC BY",
+     "author": "(c) Jerry Kensler, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "45.52900359,-122.72361756"
+    },
+    {
+     "title": "iNat obs 135215118 (Pseudotsuga menziesii menziesii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/230591046/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/135215118",
+     "licence": "CC BY",
+     "author": "(c) Jerry Kensler, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "45.52900359,-122.72361756"
+    },
+    {
+     "title": "iNat obs 132184379 (Pseudotsuga menziesii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/225063115/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/132184379",
+     "licence": "CC BY",
+     "author": "(c) Rosie Steinberg, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "45.5291444444,-122.7231444444"
+    },
+    {
+     "title": "iNat obs 132184379 (Pseudotsuga menziesii)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/225063170/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/132184379",
+     "licence": "CC BY",
+     "author": "(c) Rosie Steinberg, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "45.5291444444,-122.7231444444"
+    }
+   ]
+  },
+  "ptl_010": {
+   "city": "Portland",
+   "name": "The Hoyt Dawn Redwood",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Pdx washpark hoytarboretum dawnredwoodwinter.jpeg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Pdx_washpark_hoytarboretum_dawnredwoodwinter.jpeg/960px-Pdx_washpark_hoytarboretum_dawnredwoodwinter.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Pdx_washpark_hoytarboretum_dawnredwoodwinter.jpeg",
+     "licence": "CC BY-SA 3.0",
+     "author": "<a href=\"https://en.wikipedia.org/wiki/user:EncMstr\" class=\"extiw\" title=\"w:user:EncMstr\">EncMstr</a>"
+    }
+   ]
+  },
+  "rom_025": {
+   "city": "Rome",
+   "name": "The Plane of Viale Jonio",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "sgp_008": {
+   "city": "Singapore",
+   "name": "The Bodhi Tree of Pearl's Hill",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "sgp_009": {
+   "city": "Singapore",
+   "name": "The Banyan of Tiong Bahru Park",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "sgp_010": {
+   "city": "Singapore",
+   "name": "The Earpod Tree of Fort Canning",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Singapore-Street Vendor 1973-74-WUS08155.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Singapore-Street_Vendor_1973-74-WUS08155.jpg/960px-Singapore-Street_Vendor_1973-74-WUS08155.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Singapore-Street_Vendor_1973-74-WUS08155.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Rainer_Halama\" title=\"User:Rainer Halama\">Rainer Halama</a>"
+    }
+   ]
+  },
+  "stg_001": {
+   "city": "Strasbourg",
+   "name": "The Ginkgos of Place de la République",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "iNat obs 322430518 (Ginkgo biloba)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/583283619/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/322430518",
+     "licence": "CC BY",
+     "author": "(c) Daniel Cahen, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.5870633167,7.7547583167"
+    },
+    {
+     "title": "iNat obs 345556118 (Ginkgo biloba)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/629757452/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/345556118",
+     "licence": "CC BY",
+     "author": "(c) Daniel Cahen, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.5870783333,7.7550016667"
+    },
+    {
+     "title": "iNat obs 345556118 (Ginkgo biloba)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/629757465/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/345556118",
+     "licence": "CC BY",
+     "author": "(c) Daniel Cahen, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.5870783333,7.7550016667"
+    },
+    {
+     "title": "iNat obs 197788685 (Ginkgo biloba)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/348446534/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/197788685",
+     "licence": "CC BY",
+     "author": "(c) Antoine MARNAT, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.587135834,7.7535464242"
+    }
+   ]
+  },
+  "stg_002": {
+   "city": "Strasbourg",
+   "name": "The Spy's Gate Planes of the Meinau",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "stg_003": {
+   "city": "Strasbourg",
+   "name": "The Great Plane of Parc du Contades",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "stg_004": {
+   "city": "Strasbourg",
+   "name": "The Plane of the Fish Market Square",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "stg_005": {
+   "city": "Strasbourg",
+   "name": "The Old Plane of Quai de la Bruche",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "iNat obs 134050304 (Platanus × hispanica)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/228427600/medium.jpeg",
+     "url": "https://www.inaturalist.org/observations/134050304",
+     "licence": "CC BY-SA",
+     "author": "(c) Micha Baum, some rights reserved (CC BY-SA)",
+     "source": "inaturalist",
+     "obs_location": "48.5808712894,7.738974611"
+    },
+    {
+     "title": "iNat obs 310619929 (Platanus mexicana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/560625618/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/310619929",
+     "licence": "CC BY",
+     "author": "(c) Paul Mero, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.5808000787,7.7389554942"
+    },
+    {
+     "title": "iNat obs 310619929 (Platanus mexicana)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/560625651/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/310619929",
+     "licence": "CC BY",
+     "author": "(c) Paul Mero, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.5808000787,7.7389554942"
+    },
+    {
+     "title": "iNat obs 330748159 (Platanus)",
+     "thumb": "https://inaturalist-open-data.s3.amazonaws.com/photos/599841995/medium.jpg",
+     "url": "https://www.inaturalist.org/observations/330748159",
+     "licence": "CC BY",
+     "author": "(c) Dan Killam, some rights reserved (CC BY)",
+     "source": "inaturalist",
+     "obs_location": "48.5808176,7.7389239997"
+    }
+   ]
+  },
+  "stg_006": {
+   "city": "Strasbourg",
+   "name": "The Great Beech of Parc de l'Orangerie",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "stg_007": {
+   "city": "Strasbourg",
+   "name": "The Copper Beech of Place de l'Université",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Le marbre à l'honneur - Palais universitaire -7 (49817710601).jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Le_marbre_%C3%A0_l%27honneur_-_Palais_universitaire_-7_%2849817710601%29.jpg/960px-Le_marbre_%C3%A0_l%27honneur_-_Palais_universitaire_-7_%2849817710601%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Le_marbre_%C3%A0_l%27honneur_-_Palais_universitaire_-7_(49817710601).jpg",
+     "licence": "CC0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/147161025@N05\">Valentin R.</a> from France"
+    }
+   ]
+  },
+  "stg_008": {
+   "city": "Strasbourg",
+   "name": "The Rabin Memorial Cedar",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "stg_009": {
+   "city": "Strasbourg",
+   "name": "The Layering Thuja of Parc de l'Orangerie",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:May France Cite Strasbourg Ville d'Alsace - Alsace magic Elsaß Photography 2014 Entree - Palais de l'Europe - panoramio.jpg",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/May_France_Cite_Strasbourg_Ville_d%27Alsace_-_Alsace_magic_Elsa%C3%9F_Photography_2014_Entree_-_Palais_de_l%27Europe_-_panoramio.jpg/960px-May_France_Cite_Strasbourg_Ville_d%27Alsace_-_Alsace_magic_Elsa%C3%9F_Photography_2014_Entree_-_Palais_de_l%27Europe_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:May_France_Cite_Strasbourg_Ville_d%27Alsace_-_Alsace_magic_Elsa%C3%9F_Photography_2014_Entree_-_Palais_de_l%27Europe_-_panoramio.jpg",
+     "licence": "CC BY 3.0",
+     "author": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161028115133/http://www.panoramio.com/user/7"
+    }
+   ]
+  },
+  "tre_001": {
+   "city": "Trento",
+   "name": "The Plane Tree of Via Santa Croce",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "tre_002": {
+   "city": "Trento",
+   "name": "The Black Poplar of Largo Pigarelli",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "tre_003": {
+   "city": "Trento",
+   "name": "The Plane Tree of Via Vannetti",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Platano comune monumentale (Vannetti 28) (90653).jpg (Wikidata Q138033691)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Platano_comune_monumentale_%28Vannetti_28%29_%2890653%29.jpg/960px-Platano_comune_monumentale_%28Vannetti_28%29_%2890653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Platano_comune_monumentale_(Vannetti_28)_(90653).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ivanbranco\" title=\"User:Ivanbranco\">Ivanbranco</a>",
+     "source": "wikidata/Q138033691"
+    }
+   ]
+  },
+  "tre_004": {
+   "city": "Trento",
+   "name": "The Elm of Piazza Dante",
+   "checked": "2026-08-13",
+   "candidates": [
+    {
+     "title": "File:Olmo montano monumentale (Trento) (95279).jpg (Wikidata Q138031413)",
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Olmo_montano_monumentale_%28Trento%29_%2895279%29.jpg/960px-Olmo_montano_monumentale_%28Trento%29_%2895279%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Olmo_montano_monumentale_(Trento)_(95279).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "<a href=\"//commons.wikimedia.org/wiki/User:Ivanbranco\" title=\"User:Ivanbranco\">Ivanbranco</a>",
+     "source": "wikidata/Q138031413"
+    }
+   ]
+  },
+  "tre_005": {
+   "city": "Trento",
+   "name": "The Elm of Maso Ginocchio",
+   "checked": "2026-08-13",
+   "candidates": []
+  },
+  "tre_006": {
+   "city": "Trento",
+   "name": "The Cedar of Parco Gocciadoro",
+   "checked": "2026-08-13",
+   "candidates": []
   }
  },
  "notes": [
