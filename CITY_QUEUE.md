@@ -150,9 +150,9 @@ so qa.py fails the deploy when the table and the json disagree.
 | 22 | Delhi | 4.95 | 225,133 | - | - | - | - | 10 | predicted (thin competition) |
 | 23 | Belfast | 4.93 | 224,315 | - | - | - | - | 10 | predicted (thin competition) |
 | 24 | Hiroshima | 3.24 | 129,791 | - | - | - | - | 10 | predicted (thin competition) |
-| 25 | Ho Chi Minh City | 4.85 | 193,859 | - | - | - | - | 10 | predicted (thin competition) |
-| 26 | Cologne | 4.80 | 191,812 | - | - | - | - | 10 | predicted (thin competition) |
-| 27 | Pamplona | 3.20 | 128,065 | - | - | - | - | 10 | predicted (thin competition) |
+| 25 | Pamplona | 3.20 | 128,065 | - | - | - | 1 | 10 | predicted (thin competition) |
+| 26 | Ho Chi Minh City | 4.85 | 193,859 | - | - | - | - | 10 | predicted (thin competition) |
+| 27 | Cologne | 4.80 | 191,812 | - | - | - | - | 10 | predicted (thin competition) |
 | 28 | Kuala Lumpur | 4.79 | 191,800 | - | - | - | - | 10 | predicted (thin competition) |
 | 29 | Hamburg | 4.78 | 191,221 | - | - | - | - | 10 | predicted (thin competition) |
 | 30 | Portland | 4.78 | 217,222 | - | - | - | - | 10 | predicted (thin competition) |
@@ -167,52 +167,52 @@ so qa.py fails the deploy when the table and the json disagree.
 | 39 | Seattle | 4.31 | 398,724 | - | - | - | - | 10 | predicted (thin competition) |
 | 40 | Manila | 4.17 | 166,894 | - | - | - | - | 10 | predicted (thin competition) |
 | 41 | Brisbane | 4.07 | 162,602 | - | - | - | - | 10 | predicted (thin competition) |
-| 42 | Nuremberg | 4.04 | 161,614 | - | - | - | - | 10 | predicted (thin competition) |
-| 43 | Amsterdam | 2.00 | 294,030 | 20 | 7 | 2 | 4993 | 20 | measured |
-| 44 | Barcelona | 2.00 | 346,477 | 46 | 12 | 7 | 183 | 30 | measured |
-| 45 | Rome | 2.00 | 358,876 | 25 | 9 | 2 | 32 | 30 | measured |
-| 46 | Bordeaux | 3.91 | 156,201 | - | - | - | - | 10 | predicted (thin competition) |
-| 47 | Charleston | 3.90 | 155,987 | - | - | - | - | 10 | predicted (thin competition) |
-| 48 | San Francisco | 3.90 | 361,111 | - | - | - | - | 10 | predicted (thin competition) |
-| 49 | Strasbourg | 3.87 | 154,700 | - | - | - | - | 10 | predicted (thin competition) |
-| 50 | Syracuse | 2.57 | 102,833 | - | - | - | - | 10 | predicted (thin competition) |
-| 51 | Auckland | 3.80 | 152,056 | - | - | - | - | 10 | predicted (thin competition) |
-| 52 | Vancouver | 3.80 | 351,552 | - | - | - | - | 10 | predicted (thin competition) |
-| 53 | Frankfurt | 3.76 | 150,379 | - | - | - | - | 10 | predicted (thin competition) |
-| 54 | Dubai | 3.61 | 334,167 | - | - | - | - | 10 | predicted (thin competition) |
-| 55 | Buenos Aires | 3.60 | 333,331 | - | - | - | - | 10 | predicted (thin competition) |
-| 56 | Taipei | 3.58 | 143,193 | - | - | - | - | 10 | predicted (thin competition) |
-| 57 | Santiago de Compostela | 2.34 | 93,477 | - | - | - | - | 10 | predicted (thin competition) |
-| 58 | Adelaide | 3.48 | 139,166 | - | - | - | - | 10 | predicted (thin competition) |
-| 59 | Corfu | 3.48 | 139,334 | - | - | - | - | 10 | predicted (thin competition) |
-| 60 | Mumbai | 3.45 | 319,236 | - | - | - | - | 10 | predicted (thin competition) |
-| 61 | Manchester | 3.42 | 316,438 | - | - | - | - | 10 | predicted (thin competition) |
-| 62 | Montreal | 3.41 | 315,322 | - | - | - | - | 10 | predicted (thin competition) |
-| 63 | Jerusalem | 3.40 | 314,788 | - | - | - | - | 10 | predicted (thin competition) |
-| 64 | Limerick | 2.26 | 90,379 | - | - | - | - | 10 | predicted (thin competition) |
-| 65 | Sapporo | 2.22 | 88,633 | - | - | - | - | 10 | predicted (thin competition) |
-| 66 | Lima | 3.32 | 132,792 | - | - | - | - | 10 | predicted (thin competition) |
-| 67 | Wellington | 3.31 | 132,267 | - | - | - | - | 10 | predicted (thin competition) |
-| 68 | Bratislava | 3.30 | 132,162 | - | - | - | - | 10 | predicted (thin competition) |
-| 69 | Galway | 2.20 | 88,162 | - | - | - | - | 10 | predicted (thin competition) |
-| 70 | Sydney | 3.30 | 305,304 | - | - | - | - | 10 | predicted (thin competition) |
-| 71 | Bari | 2.16 | 86,456 | - | - | - | - | 10 | predicted (thin competition) |
-| 72 | Ravenna | 2.16 | 86,471 | - | - | - | - | 10 | predicted (thin competition) |
-| 73 | Savannah | 3.20 | 128,162 | - | - | - | - | 10 | predicted (thin competition) |
-| 74 | Rhodes | 3.18 | 127,205 | - | - | - | - | 10 | predicted (thin competition) |
-| 75 | Palma de Mallorca | 2.10 | 84,075 | - | - | - | - | 10 | predicted (thin competition) |
-| 76 | Nagoya | 2.09 | 83,437 | - | - | - | - | 10 | predicted (thin competition) |
-| 77 | Tallinn | 3.12 | 124,888 | - | - | - | - | 10 | predicted (thin competition) |
-| 78 | Quebec City | 3.11 | 124,358 | - | - | - | - | 10 | predicted (thin competition) |
-| 79 | Como | 2.07 | 82,645 | - | - | - | - | 10 | predicted (thin competition) |
-| 80 | Wroclaw | 3.10 | 123,894 | - | - | - | - | 10 | predicted (thin competition) |
-| 81 | Zagreb | 3.07 | 122,890 | - | - | - | - | 10 | predicted (thin competition) |
-| 82 | Leipzig | 3.03 | 121,319 | - | - | - | - | 10 | predicted (thin competition) |
-| 83 | Gothenburg | 3.00 | 119,991 | - | - | - | - | 10 | predicted (thin competition) |
-| 84 | Munich | 2.00 | 224,067 | 22 | 13 | 3 | - | 20 | measured |
-| 85 | Nice | 3.00 | 136,877 | 10 | 8 | 2 | - | 20 | measured |
-| 86 | Hanoi | 2.93 | 117,396 | - | - | - | - | 10 | predicted (thin competition) |
-| 87 | Alicante | 1.94 | 77,454 | - | - | - | - | 10 | predicted (thin competition) |
+| 42 | Como | 2.07 | 82,645 | - | - | - | 23 | 10 | predicted (thin competition) |
+| 43 | Nuremberg | 4.04 | 161,614 | - | - | - | - | 10 | predicted (thin competition) |
+| 44 | Amsterdam | 2.00 | 294,030 | 20 | 7 | 2 | 4993 | 20 | measured |
+| 45 | Barcelona | 2.00 | 346,477 | 46 | 12 | 7 | 183 | 30 | measured |
+| 46 | Rome | 2.00 | 358,876 | 25 | 9 | 2 | 32 | 30 | measured |
+| 47 | Bordeaux | 3.91 | 156,201 | - | - | - | - | 10 | predicted (thin competition) |
+| 48 | Charleston | 3.90 | 155,987 | - | - | - | - | 10 | predicted (thin competition) |
+| 49 | San Francisco | 3.90 | 361,111 | - | - | - | - | 10 | predicted (thin competition) |
+| 50 | Alicante | 1.94 | 77,454 | - | - | - | 44 | 10 | predicted (thin competition) |
+| 51 | Strasbourg | 3.87 | 154,700 | - | - | - | - | 10 | predicted (thin competition) |
+| 52 | Syracuse | 2.57 | 102,833 | - | - | - | - | 10 | predicted (thin competition) |
+| 53 | Auckland | 3.80 | 152,056 | - | - | - | - | 10 | predicted (thin competition) |
+| 54 | Vancouver | 3.80 | 351,552 | - | - | - | - | 10 | predicted (thin competition) |
+| 55 | Frankfurt | 3.76 | 150,379 | - | - | - | - | 10 | predicted (thin competition) |
+| 56 | Dubai | 3.61 | 334,167 | - | - | - | - | 10 | predicted (thin competition) |
+| 57 | Buenos Aires | 3.60 | 333,331 | - | - | - | - | 10 | predicted (thin competition) |
+| 58 | Taipei | 3.58 | 143,193 | - | - | - | - | 10 | predicted (thin competition) |
+| 59 | Santiago de Compostela | 2.34 | 93,477 | - | - | - | - | 10 | predicted (thin competition) |
+| 60 | Palma de Mallorca | 2.10 | 84,075 | - | - | - | 8 | 10 | predicted (thin competition) |
+| 61 | Adelaide | 3.48 | 139,166 | - | - | - | - | 10 | predicted (thin competition) |
+| 62 | Corfu | 3.48 | 139,334 | - | - | - | - | 10 | predicted (thin competition) |
+| 63 | Mumbai | 3.45 | 319,236 | - | - | - | - | 10 | predicted (thin competition) |
+| 64 | Manchester | 3.42 | 316,438 | - | - | - | - | 10 | predicted (thin competition) |
+| 65 | Bari | 2.16 | 86,456 | - | - | - | 4 | 10 | predicted (thin competition) |
+| 66 | Montreal | 3.41 | 315,322 | - | - | - | - | 10 | predicted (thin competition) |
+| 67 | Jerusalem | 3.40 | 314,788 | - | - | - | - | 10 | predicted (thin competition) |
+| 68 | Limerick | 2.26 | 90,379 | - | - | - | - | 10 | predicted (thin competition) |
+| 69 | Sapporo | 2.22 | 88,633 | - | - | - | - | 10 | predicted (thin competition) |
+| 70 | Lima | 3.32 | 132,792 | - | - | - | - | 10 | predicted (thin competition) |
+| 71 | Wellington | 3.31 | 132,267 | - | - | - | - | 10 | predicted (thin competition) |
+| 72 | Bratislava | 3.30 | 132,162 | - | - | - | - | 10 | predicted (thin competition) |
+| 73 | Galway | 2.20 | 88,162 | - | - | - | - | 10 | predicted (thin competition) |
+| 74 | Sydney | 3.30 | 305,304 | - | - | - | - | 10 | predicted (thin competition) |
+| 75 | Ravenna | 2.16 | 86,471 | - | - | - | 1 | 10 | predicted (thin competition) |
+| 76 | Savannah | 3.20 | 128,162 | - | - | - | - | 10 | predicted (thin competition) |
+| 77 | Nagoya | 2.09 | 83,437 | - | - | - | 1 | 10 | predicted (thin competition) |
+| 78 | Rhodes | 3.18 | 127,205 | - | - | - | - | 10 | predicted (thin competition) |
+| 79 | Tallinn | 3.12 | 124,888 | - | - | - | - | 10 | predicted (thin competition) |
+| 80 | Quebec City | 3.11 | 124,358 | - | - | - | - | 10 | predicted (thin competition) |
+| 81 | Wroclaw | 3.10 | 123,894 | - | - | - | - | 10 | predicted (thin competition) |
+| 82 | Zagreb | 3.07 | 122,890 | - | - | - | - | 10 | predicted (thin competition) |
+| 83 | Leipzig | 3.03 | 121,319 | - | - | - | - | 10 | predicted (thin competition) |
+| 84 | Gothenburg | 3.00 | 119,991 | - | - | - | - | 10 | predicted (thin competition) |
+| 85 | Munich | 2.00 | 224,067 | 22 | 13 | 3 | - | 20 | measured |
+| 86 | Nice | 3.00 | 136,877 | 10 | 8 | 2 | - | 20 | measured |
+| 87 | Hanoi | 2.93 | 117,396 | - | - | - | - | 10 | predicted (thin competition) |
 | 88 | Brighton | 2.85 | 114,108 | - | - | - | - | 10 | predicted (thin competition) |
 | 89 | Dresden | 2.84 | 113,624 | - | - | - | - | 10 | predicted (thin competition) |
 | 90 | Vilnius | 2.83 | 113,188 | - | - | - | - | 10 | predicted (thin competition) |
@@ -226,100 +226,100 @@ so qa.py fails the deploy when the table and the json disagree.
 | 98 | Salzburg | 2.68 | 107,243 | - | - | - | - | 10 | predicted (thin competition) |
 | 99 | Bruges | 2.67 | 106,902 | - | - | - | - | 10 | predicted (thin competition) |
 | 100 | Basel | 2.65 | 105,838 | - | - | - | - | 10 | predicted (thin competition) |
-| 101 | Christchurch | 2.62 | 104,874 | - | - | - | - | 10 | predicted (thin competition) |
-| 102 | Malmo | 2.60 | 103,940 | - | - | - | - | 10 | predicted (thin competition) |
-| 103 | Matera | 1.68 | 67,033 | - | - | - | - | 10 | predicted (thin competition) |
-| 104 | Singapore | 2.42 | 967,821 | 7 | 3 | 1 | - | 10 | published, never ranked |
-| 105 | Busan | 2.37 | 94,737 | - | - | - | - | 10 | predicted (thin competition) |
-| 106 | Freiburg | 2.32 | 92,752 | - | - | - | - | 10 | predicted (thin competition) |
-| 107 | Inverness | 2.30 | 92,195 | - | - | - | - | 10 | predicted (thin competition) |
-| 108 | Bern | 2.27 | 90,627 | - | - | - | - | 10 | predicted (thin competition) |
-| 109 | Catania | 1.46 | 58,252 | - | - | - | - | 10 | predicted (thin competition) |
-| 110 | Cusco | 2.19 | 87,732 | - | - | - | - | 10 | predicted (thin competition) |
-| 111 | Siena | 1.44 | 57,436 | - | - | - | - | 10 | predicted (thin competition) |
-| 112 | Trento | 1.41 | 56,455 | - | - | - | - | 10 | predicted (thin competition) |
-| 113 | Valletta | 2.11 | 84,342 | - | - | - | - | 10 | predicted (thin competition) |
-| 114 | Faro | 1.39 | 55,645 | - | - | - | - | 10 | predicted (thin competition) |
-| 115 | Bergen | 2.07 | 82,940 | - | - | - | - | 10 | predicted (thin competition) |
-| 116 | Ghent | 2.07 | 82,757 | - | - | - | - | 10 | predicted (thin competition) |
-| 117 | Jaipur | 2.06 | 82,569 | - | - | - | - | 10 | predicted (thin competition) |
-| 118 | Kobe | 1.37 | 54,798 | - | - | - | - | 10 | predicted (thin competition) |
-| 119 | Hobart | 2.04 | 81,734 | - | - | - | - | 10 | predicted (thin competition) |
-| 120 | Colombo | 2.01 | 80,386 | - | - | - | - | 10 | predicted (thin competition) |
-| 121 | Seville | 1.00 | 170,545 | 16 | 6 | 2 | - | 20 | measured |
-| 122 | Bergamo | 1.32 | 52,933 | - | - | - | - | 10 | predicted (thin competition) |
-| 123 | Paris | 1.31 | 524,268 | 25 | 9 | 3 | 128 | 10 | published, never ranked |
-| 124 | Pisa | 1.30 | 52,174 | - | - | - | - | 10 | predicted (thin competition) |
-| 125 | Modena | 1.29 | 51,698 | - | - | - | - | 10 | predicted (thin competition) |
-| 126 | Ronda | 1.29 | 51,510 | - | - | - | - | 10 | predicted (thin competition) |
-| 127 | Cagliari | 1.28 | 51,351 | - | - | - | - | 10 | predicted (thin competition) |
-| 128 | Girona | 1.28 | 51,072 | - | - | - | - | 10 | predicted (thin competition) |
-| 129 | Heidelberg | 1.90 | 75,837 | - | - | - | - | 10 | predicted (thin competition) |
-| 130 | Lille | 1.84 | 73,435 | - | - | - | - | 10 | predicted (thin competition) |
-| 131 | Oaxaca | 1.82 | 72,955 | - | - | - | - | 10 | predicted (thin competition) |
-| 132 | Rouen | 1.81 | 72,334 | - | - | - | - | 10 | predicted (thin competition) |
-| 133 | London | 1.80 | 718,291 | 23 | 10 | 1 | - | 10 | published, never ranked |
-| 134 | Salamanca | 1.20 | 47,897 | - | - | - | - | 10 | predicted (thin competition) |
-| 135 | Zadar | 1.79 | 71,549 | - | - | - | - | 10 | predicted (thin competition) |
-| 136 | Agra | 1.77 | 70,904 | - | - | - | - | 10 | predicted (thin competition) |
-| 137 | Antalya | 1.77 | 70,688 | - | - | - | - | 10 | predicted (thin competition) |
-| 138 | Izmir | 1.75 | 69,826 | - | - | - | - | 10 | predicted (thin competition) |
-| 139 | Dublin | 1.00 | 240,850 | 17 | 4 | 2 | 12 | 20 | measured |
-| 140 | Trier | 1.73 | 69,369 | - | - | - | - | 10 | predicted (thin competition) |
-| 141 | Hong Kong | 1.72 | 689,212 | 6 | 2 | - | - | 10 | published, never ranked |
-| 142 | Lausanne | 1.71 | 68,242 | - | - | - | - | 10 | predicted (thin competition) |
-| 143 | Stratford-upon-Avon | 1.71 | 68,555 | - | - | - | - | 10 | predicted (thin competition) |
-| 144 | Nantes | 1.69 | 67,689 | - | - | - | - | 10 | predicted (thin competition) |
-| 145 | Chiang Mai | 1.66 | 66,541 | - | - | - | - | 10 | predicted (thin competition) |
-| 146 | Heraklion | 1.66 | 66,359 | - | - | - | - | 10 | predicted (thin competition) |
-| 147 | Lucerne | 1.66 | 66,356 | - | - | - | - | 10 | predicted (thin competition) |
-| 148 | Graz | 1.64 | 65,717 | - | - | - | - | 10 | predicted (thin competition) |
-| 149 | Poznan | 1.64 | 65,666 | - | - | - | - | 10 | predicted (thin competition) |
-| 150 | Cartagena | 1.63 | 65,066 | - | - | - | - | 10 | predicted (thin competition) |
-| 151 | Luxembourg City | 1.62 | 64,851 | - | - | - | - | 10 | predicted (thin competition) |
-| 152 | Tokyo | 0.99 | 394,702 | 10 | 8 | - | 7 | 10 | published, never ranked |
-| 153 | Aix-en-Provence | 1.61 | 64,524 | - | - | - | - | 10 | predicted (thin competition) |
-| 154 | Montpellier | 1.61 | 64,238 | - | - | - | - | 10 | predicted (thin competition) |
-| 155 | Avignon | 1.60 | 64,047 | - | - | - | - | 10 | predicted (thin competition) |
-| 156 | Mostar | 1.60 | 63,907 | - | - | - | - | 10 | predicted (thin competition) |
-| 157 | Brno | 1.59 | 63,714 | - | - | - | - | 10 | predicted (thin competition) |
-| 158 | Perugia | 1.06 | 42,572 | - | - | - | - | 10 | predicted (thin competition) |
-| 159 | Parma | 1.01 | 40,425 | - | - | - | - | 10 | predicted (thin competition) |
-| 160 | Washington DC | 1.52 | 606,731 | 14 | 1 | 2 | - | 10 | published, never ranked |
-| 161 | Berlin | 1.00 | 412,181 | 18 | 11 | 1 | 114 | 30 | measured |
-| 162 | Brussels | 1.00 | 176,863 | 16 | 4 | 1 | 371 | 20 | measured |
-| 163 | Cadiz | 1.00 | 79,226 | 5 | 4 | 1 | - | 10 | measured |
-| 164 | Sorrento | 1.00 | 40,049 | - | - | - | - | 10 | predicted (thin competition) |
-| 165 | Innsbruck | 1.47 | 58,742 | - | - | - | - | 10 | predicted (thin competition) |
-| 166 | Annecy | 1.42 | 56,859 | - | - | - | - | 10 | predicted (thin competition) |
-| 167 | Fes | 1.34 | 53,696 | - | - | - | - | 10 | predicted (thin competition) |
-| 168 | Canterbury | 1.33 | 53,301 | - | - | - | - | 10 | predicted (thin competition) |
-| 169 | Aarhus | 1.32 | 52,722 | - | - | - | - | 10 | predicted (thin competition) |
-| 170 | Guimaraes | 0.66 | 26,203 | 4 | 1 | 1 | 19 | 10 | predicted (thin competition) |
-| 171 | Coimbra | 0.87 | 34,962 | - | - | - | - | 10 | predicted (thin competition) |
-| 172 | Regensburg | 1.30 | 51,930 | - | - | - | - | 10 | predicted (thin competition) |
-| 173 | Braga | 0.86 | 34,522 | - | - | - | - | 10 | predicted (thin competition) |
-| 174 | Kilkenny | 0.86 | 34,550 | - | - | - | - | 10 | predicted (thin competition) |
-| 175 | Lagos | 0.86 | 34,452 | - | - | - | - | 10 | predicted (thin competition) |
-| 176 | Potsdam | 1.29 | 51,727 | - | - | - | - | 10 | predicted (thin competition) |
-| 177 | Kamakura | 0.84 | 33,492 | - | - | - | - | 10 | predicted (thin competition) |
-| 178 | Taormina | 0.83 | 33,169 | - | - | - | - | 10 | predicted (thin competition) |
+| 101 | Trento | 1.41 | 56,455 | - | - | - | 19 | 10 | predicted (thin competition) |
+| 102 | Christchurch | 2.62 | 104,874 | - | - | - | - | 10 | predicted (thin competition) |
+| 103 | Malmo | 2.60 | 103,940 | - | - | - | - | 10 | predicted (thin competition) |
+| 104 | Matera | 1.68 | 67,033 | - | - | - | - | 10 | predicted (thin competition) |
+| 105 | Bergamo | 1.32 | 52,933 | - | - | - | 17 | 10 | predicted (thin competition) |
+| 106 | Singapore | 2.42 | 967,821 | 7 | 3 | 1 | - | 10 | published, never ranked |
+| 107 | Busan | 2.37 | 94,737 | - | - | - | - | 10 | predicted (thin competition) |
+| 108 | Catania | 1.46 | 58,252 | - | - | - | 5 | 10 | predicted (thin competition) |
+| 109 | Freiburg | 2.32 | 92,752 | - | - | - | - | 10 | predicted (thin competition) |
+| 110 | Inverness | 2.30 | 92,195 | - | - | - | - | 10 | predicted (thin competition) |
+| 111 | Bern | 2.27 | 90,627 | - | - | - | - | 10 | predicted (thin competition) |
+| 112 | Cusco | 2.19 | 87,732 | - | - | - | - | 10 | predicted (thin competition) |
+| 113 | Siena | 1.44 | 57,436 | - | - | - | - | 10 | predicted (thin competition) |
+| 114 | Cagliari | 1.28 | 51,351 | - | - | - | 9 | 10 | predicted (thin competition) |
+| 115 | Valletta | 2.11 | 84,342 | - | - | - | - | 10 | predicted (thin competition) |
+| 116 | Faro | 1.39 | 55,645 | - | - | - | - | 10 | predicted (thin competition) |
+| 117 | Bergen | 2.07 | 82,940 | - | - | - | - | 10 | predicted (thin competition) |
+| 118 | Ghent | 2.07 | 82,757 | - | - | - | - | 10 | predicted (thin competition) |
+| 119 | Jaipur | 2.06 | 82,569 | - | - | - | - | 10 | predicted (thin competition) |
+| 120 | Kobe | 1.37 | 54,798 | - | - | - | - | 10 | predicted (thin competition) |
+| 121 | Hobart | 2.04 | 81,734 | - | - | - | - | 10 | predicted (thin competition) |
+| 122 | Colombo | 2.01 | 80,386 | - | - | - | - | 10 | predicted (thin competition) |
+| 123 | Modena | 1.29 | 51,698 | - | - | - | 3 | 10 | predicted (thin competition) |
+| 124 | Seville | 1.00 | 170,545 | 16 | 6 | 2 | - | 20 | measured |
+| 125 | Perugia | 1.06 | 42,572 | - | - | - | 19 | 10 | predicted (thin competition) |
+| 126 | Paris | 1.31 | 524,268 | 25 | 9 | 3 | 128 | 10 | published, never ranked |
+| 127 | Ronda | 1.29 | 51,510 | - | - | - | 1 | 10 | predicted (thin competition) |
+| 128 | Pisa | 1.30 | 52,174 | - | - | - | - | 10 | predicted (thin competition) |
+| 129 | Girona | 1.28 | 51,072 | - | - | - | - | 10 | predicted (thin competition) |
+| 130 | Heidelberg | 1.90 | 75,837 | - | - | - | - | 10 | predicted (thin competition) |
+| 131 | Lille | 1.84 | 73,435 | - | - | - | - | 10 | predicted (thin competition) |
+| 132 | Oaxaca | 1.82 | 72,955 | - | - | - | - | 10 | predicted (thin competition) |
+| 133 | Salamanca | 1.20 | 47,897 | - | - | - | 1 | 10 | predicted (thin competition) |
+| 134 | Rouen | 1.81 | 72,334 | - | - | - | - | 10 | predicted (thin competition) |
+| 135 | London | 1.80 | 718,291 | 23 | 10 | 1 | - | 10 | published, never ranked |
+| 136 | Zadar | 1.79 | 71,549 | - | - | - | - | 10 | predicted (thin competition) |
+| 137 | Agra | 1.77 | 70,904 | - | - | - | - | 10 | predicted (thin competition) |
+| 138 | Antalya | 1.77 | 70,688 | - | - | - | - | 10 | predicted (thin competition) |
+| 139 | Izmir | 1.75 | 69,826 | - | - | - | - | 10 | predicted (thin competition) |
+| 140 | Dublin | 1.00 | 240,850 | 17 | 4 | 2 | 12 | 20 | measured |
+| 141 | Trier | 1.73 | 69,369 | - | - | - | - | 10 | predicted (thin competition) |
+| 142 | Hong Kong | 1.72 | 689,212 | 6 | 2 | - | - | 10 | published, never ranked |
+| 143 | Lausanne | 1.71 | 68,242 | - | - | - | - | 10 | predicted (thin competition) |
+| 144 | Stratford-upon-Avon | 1.71 | 68,555 | - | - | - | - | 10 | predicted (thin competition) |
+| 145 | Nantes | 1.69 | 67,689 | - | - | - | - | 10 | predicted (thin competition) |
+| 146 | Chiang Mai | 1.66 | 66,541 | - | - | - | - | 10 | predicted (thin competition) |
+| 147 | Heraklion | 1.66 | 66,359 | - | - | - | - | 10 | predicted (thin competition) |
+| 148 | Lucerne | 1.66 | 66,356 | - | - | - | - | 10 | predicted (thin competition) |
+| 149 | Parma | 1.01 | 40,425 | - | - | - | 7 | 10 | predicted (thin competition) |
+| 150 | Graz | 1.64 | 65,717 | - | - | - | - | 10 | predicted (thin competition) |
+| 151 | Poznan | 1.64 | 65,666 | - | - | - | - | 10 | predicted (thin competition) |
+| 152 | Cartagena | 1.63 | 65,066 | - | - | - | - | 10 | predicted (thin competition) |
+| 153 | Luxembourg City | 1.62 | 64,851 | - | - | - | - | 10 | predicted (thin competition) |
+| 154 | Tokyo | 0.99 | 394,702 | 10 | 8 | - | 7 | 10 | published, never ranked |
+| 155 | Aix-en-Provence | 1.61 | 64,524 | - | - | - | - | 10 | predicted (thin competition) |
+| 156 | Montpellier | 1.61 | 64,238 | - | - | - | - | 10 | predicted (thin competition) |
+| 157 | Avignon | 1.60 | 64,047 | - | - | - | - | 10 | predicted (thin competition) |
+| 158 | Mostar | 1.60 | 63,907 | - | - | - | - | 10 | predicted (thin competition) |
+| 159 | Potsdam | 1.29 | 51,727 | - | - | - | 12 | 10 | predicted (thin competition) |
+| 160 | Brno | 1.59 | 63,714 | - | - | - | - | 10 | predicted (thin competition) |
+| 161 | Washington DC | 1.52 | 606,731 | 14 | 1 | 2 | - | 10 | published, never ranked |
+| 162 | Berlin | 1.00 | 412,181 | 18 | 11 | 1 | 114 | 30 | measured |
+| 163 | Brussels | 1.00 | 176,863 | 16 | 4 | 1 | 371 | 20 | measured |
+| 164 | Cadiz | 1.00 | 79,226 | 5 | 4 | 1 | - | 10 | measured |
+| 165 | Sorrento | 1.00 | 40,049 | - | - | - | - | 10 | predicted (thin competition) |
+| 166 | Innsbruck | 1.47 | 58,742 | - | - | - | - | 10 | predicted (thin competition) |
+| 167 | Braga | 0.86 | 34,522 | - | - | - | 8 | 10 | predicted (thin competition) |
+| 168 | Annecy | 1.42 | 56,859 | - | - | - | - | 10 | predicted (thin competition) |
+| 169 | Coimbra | 0.87 | 34,962 | - | - | - | 5 | 10 | predicted (thin competition) |
+| 170 | Fes | 1.34 | 53,696 | - | - | - | - | 10 | predicted (thin competition) |
+| 171 | Canterbury | 1.33 | 53,301 | - | - | - | - | 10 | predicted (thin competition) |
+| 172 | Taormina | 0.83 | 33,169 | - | - | - | 5 | 10 | predicted (thin competition) |
+| 173 | Aarhus | 1.32 | 52,722 | - | - | - | - | 10 | predicted (thin competition) |
+| 174 | Guimaraes | 0.66 | 26,203 | 4 | 1 | 1 | 19 | 10 | predicted (thin competition) |
+| 175 | Regensburg | 1.30 | 51,930 | - | - | - | - | 10 | predicted (thin competition) |
+| 176 | Kilkenny | 0.86 | 34,550 | - | - | - | - | 10 | predicted (thin competition) |
+| 177 | Lagos | 0.86 | 34,452 | - | - | - | - | 10 | predicted (thin competition) |
+| 178 | Kamakura | 0.84 | 33,492 | - | - | - | - | 10 | predicted (thin competition) |
 | 179 | Kotor | 1.22 | 48,982 | - | - | - | - | 10 | predicted (thin competition) |
 | 180 | Tarragona | 0.81 | 32,396 | - | - | - | - | 10 | predicted (thin competition) |
 | 181 | Chicago | 1.21 | 485,769 | 6 | - | - | - | 10 | published, never ranked |
 | 182 | Chania | 1.18 | 47,379 | - | - | - | - | 10 | predicted (thin competition) |
 | 183 | Hallstatt | 1.18 | 47,271 | - | - | - | - | 10 | predicted (thin competition) |
 | 184 | Delft | 0.78 | 31,293 | 4 | - | 1 | - | 10 | predicted (thin competition) |
-| 185 | Segovia | 0.77 | 30,968 | - | - | - | - | 10 | predicted (thin competition) |
+| 185 | Segovia | 0.77 | 30,968 | - | - | - | 1 | 10 | predicted (thin competition) |
 | 186 | Assisi | 0.76 | 30,278 | - | - | - | - | 10 | predicted (thin competition) |
 | 187 | Colmar | 1.14 | 45,517 | - | - | - | - | 10 | predicted (thin competition) |
-| 188 | Dijon | 1.09 | 43,526 | - | - | - | - | 10 | predicted (thin competition) |
-| 189 | Merida | 1.09 | 43,735 | - | - | - | - | 10 | predicted (thin competition) |
-| 190 | Stirling | 1.09 | 43,558 | - | - | - | - | 10 | predicted (thin competition) |
-| 191 | Killarney | 0.72 | 28,763 | - | - | - | - | 10 | predicted (thin competition) |
-| 192 | Milan | 0.53 | 212,705 | 18 | 9 | 2 | 25 | 10 | published, never ranked |
-| 193 | Venice | 0.67 | 267,527 | 11 | 6 | 1 | 4 | 10 | published, never ranked |
-| 194 | Ferrara | 0.69 | 27,490 | - | - | - | - | 10 | predicted (thin competition) |
+| 188 | Ferrara | 0.69 | 27,490 | - | - | - | 7 | 10 | predicted (thin competition) |
+| 189 | Dijon | 1.09 | 43,526 | - | - | - | - | 10 | predicted (thin competition) |
+| 190 | Merida | 1.09 | 43,735 | - | - | - | - | 10 | predicted (thin competition) |
+| 191 | Stirling | 1.09 | 43,558 | - | - | - | - | 10 | predicted (thin competition) |
+| 192 | Killarney | 0.72 | 28,763 | - | - | - | - | 10 | predicted (thin competition) |
+| 193 | Milan | 0.53 | 212,705 | 18 | 9 | 2 | 25 | 10 | published, never ranked |
+| 194 | Venice | 0.67 | 267,527 | 11 | 6 | 1 | 4 | 10 | published, never ranked |
 | 195 | Madrid | 0.69 | 274,553 | 17 | 10 | 2 | - | 10 | published, never ranked |
 | 196 | Leuven | 1.02 | 40,645 | - | - | - | - | 10 | predicted (thin competition) |
 | 197 | Dubrovnik | 1.00 | 119,586 | 4 | 1 | 1 | - | 20 | measured |
@@ -327,9 +327,9 @@ so qa.py fails the deploy when the table and the json disagree.
 | 199 | Naples | 0.50 | 198,913 | 17 | 3 | 2 | 46 | 10 | published, never ranked |
 | 200 | Rothenburg ob der Tauber | 1.00 | 39,879 | - | - | - | - | 10 | predicted (thin competition) |
 | 201 | Setubal | 0.56 | 22,582 | 10 | 1 | 2 | 13 | 10 | predicted (thin competition) |
-| 202 | Kanazawa | 0.64 | 25,778 | - | - | - | - | 10 | predicted (thin competition) |
-| 203 | Florence | 0.46 | 184,099 | 22 | 7 | 3 | 27 | 10 | published, never ranked |
-| 204 | Naha | 0.61 | 24,466 | - | - | - | - | 10 | predicted (thin competition) |
+| 202 | Kanazawa | 0.64 | 25,778 | - | - | - | 2 | 10 | predicted (thin competition) |
+| 203 | Naha | 0.61 | 24,466 | - | - | - | 1 | 10 | predicted (thin competition) |
+| 204 | Florence | 0.46 | 184,099 | 22 | 7 | 3 | 27 | 10 | published, never ranked |
 | 205 | Queenstown | 0.92 | 36,672 | - | - | - | - | 10 | predicted (thin competition) |
 | 206 | George Town | 0.90 | 36,080 | - | - | - | - | 10 | predicted (thin competition) |
 | 207 | The Hague | 0.59 | 236,723 | 5 | 1 | 1 | - | 10 | published, never ranked |

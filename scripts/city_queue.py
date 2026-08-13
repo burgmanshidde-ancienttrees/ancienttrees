@@ -36,6 +36,8 @@ import math
 import os
 import re
 import sys
+import urllib.parse
+import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SOURCE = os.path.join(ROOT, "data", "city-queue.json")
@@ -54,6 +56,50 @@ ROW = re.compile(r"^\|\s*\d+\s*\|")
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import walk_planning as B          # noqa: E402
 import leads as L                  # noqa: E402
+
+
+
+UA = "AncientTrees/1.0 (https://ancienttrees.app; tree mapping project)"
+COORD_CACHE = os.path.join(ROOT, "data", "city-coords.json")
+
+
+def city_coords(city, article=None):
+    """Lat/lon for a city we do not publish yet, from Wikipedia's own API.
+
+    Written 2026-08-13, when the sprint list said 54 of 60 cheap cities needed a
+    scout. It was a measurement artefact: `near()` counts register points around
+    the mean position of a city's PUBLISHED trees, so an unpublished city had no
+    centre and scored zero register supply by construction. Pisa, Siena, Bergamo
+    and every other unopened Italian city read as expensive while MASAF holds
+    5,007 trees. Cached on disk; one fetch per city, ever."""
+    try:
+        with open(COORD_CACHE, encoding="utf-8") as fh:
+            cache = json.load(fh)
+    except (OSError, ValueError):
+        cache = {}
+    key = city
+    if key in cache:
+        v = cache[key]
+        return tuple(v) if v else None
+    q = urllib.parse.urlencode({"action": "query", "prop": "coordinates",
+                                "titles": article or city, "format": "json",
+                                "formatversion": "2"})
+    out = None
+    try:
+        req = urllib.request.Request("https://en.wikipedia.org/w/api.php?" + q,
+                                     headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            d = json.load(r)
+        for page in d.get("query", {}).get("pages", []):
+            c = (page.get("coordinates") or [{}])[0]
+            if c.get("lat") is not None:
+                out = (c["lat"], c["lon"])
+    except Exception:
+        out = None
+    cache[key] = list(out) if out else None
+    with open(COORD_CACHE, "w", encoding="utf-8") as fh:
+        json.dump(cache, fh, ensure_ascii=False, indent=1, sort_keys=True)
+    return out
 
 
 def register_points():
@@ -167,6 +213,9 @@ def ease_for(country, supply):
     return 1.0 + (0.5 if country in REGISTER_COUNTRIES else 0.0) + 0.5 * min(supply, 25) / 25
 
 
+PTS = []
+
+
 def enrich(doc, live):
     """Write the measured columns into the source file itself, so the numbers a
     human reads and the numbers a script computes are the same object."""
@@ -179,9 +228,13 @@ def enrich(doc, live):
                      ready=info["ready"], supply=supply,
                      target=target_for(c.get("demand"), c["basis"].startswith("measured")))
         else:
-            supply = 0
+            # An unpublished city still has register supply around it; it just
+            # has no trees to average a centre from. Look the city itself up.
+            pos = city_coords(c["city"], c.get("article"))
+            reg = near(PTS, pos[0], pos[1]) if pos else 0
+            supply = reg
             c.update(status="pending", trees=0, photos=0, walks=0,
-                     register=0, ready=0, supply=0,
+                     register=reg, ready=0, supply=reg,
                      target=target_for(c.get("demand"), c["basis"].startswith("measured")))
         c["ease"] = round(ease_for(c.get("country", ""), supply), 2)
         c["work_score"] = round((c.get("score") or 0) * c["ease"], 2)
@@ -321,6 +374,7 @@ def main():
         return 0
 
     pts = register_points()
+    globals()['PTS'] = pts
     live = measure(pts)
     doc = enrich(load_source(), live)
     order = rebuild_table(doc)

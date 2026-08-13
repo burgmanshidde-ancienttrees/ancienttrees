@@ -510,6 +510,25 @@
   },
   {
    "rank": 25,
+   "city": "Pamplona",
+   "country": "Spain",
+   "slug": "pamplona",
+   "score": 3.2,
+   "demand": 128065,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 1,
+   "ready": 0,
+   "supply": 1,
+   "target": 10,
+   "ease": 1.52,
+   "work_score": 4.86
+  },
+  {
+   "rank": 26,
    "city": "Ho Chi Minh City",
    "country": "Vietnam",
    "slug": "ho-chi-minh-city",
@@ -530,7 +549,7 @@
    "work_score": 4.85
   },
   {
-   "rank": 26,
+   "rank": 27,
    "city": "Cologne",
    "country": "Germany",
    "slug": "cologne",
@@ -546,25 +565,6 @@
    "supply": 0,
    "target": 10,
    "ease": 1.0,
-   "work_score": 4.8
-  },
-  {
-   "rank": 27,
-   "city": "Pamplona",
-   "country": "Spain",
-   "slug": "pamplona",
-   "score": 3.2,
-   "demand": 128065,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
    "work_score": 4.8
   },
   {
@@ -849,6 +849,25 @@
   },
   {
    "rank": 42,
+   "city": "Como",
+   "country": "Italy",
+   "slug": "como",
+   "score": 2.07,
+   "demand": 82645,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 23,
+   "ready": 0,
+   "supply": 23,
+   "target": 10,
+   "ease": 1.96,
+   "work_score": 4.06
+  },
+  {
+   "rank": 43,
    "city": "Nuremberg",
    "country": "Germany",
    "slug": "nuremberg",
@@ -867,7 +886,7 @@
    "work_score": 4.04
   },
   {
-   "rank": 43,
+   "rank": 44,
    "city": "Amsterdam",
    "country": "Netherlands",
    "slug": "amsterdam",
@@ -888,7 +907,7 @@
    "work_score": 4.0
   },
   {
-   "rank": 44,
+   "rank": 45,
    "city": "Barcelona",
    "country": "Spain",
    "slug": "barcelona",
@@ -909,7 +928,7 @@
    "work_score": 4.0
   },
   {
-   "rank": 45,
+   "rank": 46,
    "city": "Rome",
    "country": "Italy",
    "slug": "rome",
@@ -930,7 +949,7 @@
    "work_score": 4.0
   },
   {
-   "rank": 46,
+   "rank": 47,
    "city": "Bordeaux",
    "country": "France",
    "slug": "bordeaux",
@@ -949,7 +968,7 @@
    "work_score": 3.91
   },
   {
-   "rank": 47,
+   "rank": 48,
    "city": "Charleston",
    "country": "United States",
    "slug": "charleston",
@@ -968,7 +987,7 @@
    "work_score": 3.9
   },
   {
-   "rank": 48,
+   "rank": 49,
    "city": "San Francisco",
    "country": "United States",
    "slug": "san-francisco",
@@ -989,7 +1008,26 @@
    "work_score": 3.9
   },
   {
-   "rank": 49,
+   "rank": 50,
+   "city": "Alicante",
+   "country": "Spain",
+   "slug": "alicante",
+   "score": 1.94,
+   "demand": 77454,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 44,
+   "ready": 0,
+   "supply": 44,
+   "target": 10,
+   "ease": 2.0,
+   "work_score": 3.88
+  },
+  {
+   "rank": 51,
    "city": "Strasbourg",
    "country": "France",
    "slug": "strasbourg",
@@ -1008,7 +1046,7 @@
    "work_score": 3.87
   },
   {
-   "rank": 50,
+   "rank": 52,
    "city": "Syracuse",
    "country": "Italy",
    "slug": "syracuse",
@@ -1027,7 +1065,7 @@
    "work_score": 3.85
   },
   {
-   "rank": 51,
+   "rank": 53,
    "city": "Auckland",
    "country": "New Zealand",
    "slug": "auckland",
@@ -1048,7 +1086,7 @@
    "work_score": 3.8
   },
   {
-   "rank": 52,
+   "rank": 54,
    "city": "Vancouver",
    "country": "Canada",
    "slug": "vancouver",
@@ -1069,7 +1107,7 @@
    "work_score": 3.8
   },
   {
-   "rank": 53,
+   "rank": 55,
    "city": "Frankfurt",
    "country": "Germany",
    "slug": "frankfurt",
@@ -1088,7 +1126,7 @@
    "work_score": 3.76
   },
   {
-   "rank": 54,
+   "rank": 56,
    "city": "Dubai",
    "country": "United Arab Emirates",
    "slug": "dubai",
@@ -1109,7 +1147,7 @@
    "work_score": 3.61
   },
   {
-   "rank": 55,
+   "rank": 57,
    "city": "Buenos Aires",
    "country": "Argentina",
    "slug": "buenos-aires",
@@ -1130,7 +1168,7 @@
    "work_score": 3.6
   },
   {
-   "rank": 56,
+   "rank": 58,
    "city": "Taipei",
    "country": "Taiwan",
    "slug": "taipei",
@@ -1151,7 +1189,7 @@
    "work_score": 3.58
   },
   {
-   "rank": 57,
+   "rank": 59,
    "city": "Santiago de Compostela",
    "country": "Spain",
    "slug": "santiago-de-compostela",
@@ -1172,7 +1210,26 @@
    "work_score": 3.51
   },
   {
-   "rank": 58,
+   "rank": 60,
+   "city": "Palma de Mallorca",
+   "country": "Spain",
+   "slug": "palma-de-mallorca",
+   "score": 2.1,
+   "demand": 84075,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 8,
+   "ready": 0,
+   "supply": 8,
+   "target": 10,
+   "ease": 1.66,
+   "work_score": 3.49
+  },
+  {
+   "rank": 61,
    "city": "Adelaide",
    "country": "Australia",
    "slug": "adelaide",
@@ -1191,7 +1248,7 @@
    "work_score": 3.48
   },
   {
-   "rank": 59,
+   "rank": 62,
    "city": "Corfu",
    "country": "Greece",
    "slug": "corfu",
@@ -1210,7 +1267,7 @@
    "work_score": 3.48
   },
   {
-   "rank": 60,
+   "rank": 63,
    "city": "Mumbai",
    "country": "India",
    "slug": "mumbai",
@@ -1231,7 +1288,7 @@
    "work_score": 3.45
   },
   {
-   "rank": 61,
+   "rank": 64,
    "city": "Manchester",
    "country": "United Kingdom",
    "slug": "manchester",
@@ -1250,7 +1307,26 @@
    "work_score": 3.42
   },
   {
-   "rank": 62,
+   "rank": 65,
+   "city": "Bari",
+   "country": "Italy",
+   "slug": "bari",
+   "score": 2.16,
+   "demand": 86456,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 4,
+   "ready": 0,
+   "supply": 4,
+   "target": 10,
+   "ease": 1.58,
+   "work_score": 3.41
+  },
+  {
+   "rank": 66,
    "city": "Montreal",
    "country": "Canada",
    "slug": "montreal",
@@ -1271,7 +1347,7 @@
    "work_score": 3.41
   },
   {
-   "rank": 63,
+   "rank": 67,
    "city": "Jerusalem",
    "country": "Israel",
    "slug": "jerusalem",
@@ -1290,7 +1366,7 @@
    "work_score": 3.4
   },
   {
-   "rank": 64,
+   "rank": 68,
    "city": "Limerick",
    "country": "Ireland",
    "slug": "limerick",
@@ -1309,7 +1385,7 @@
    "work_score": 3.39
   },
   {
-   "rank": 65,
+   "rank": 69,
    "city": "Sapporo",
    "country": "Japan",
    "slug": "sapporo",
@@ -1328,7 +1404,7 @@
    "work_score": 3.33
   },
   {
-   "rank": 66,
+   "rank": 70,
    "city": "Lima",
    "country": "Peru",
    "slug": "lima",
@@ -1349,7 +1425,7 @@
    "work_score": 3.32
   },
   {
-   "rank": 67,
+   "rank": 71,
    "city": "Wellington",
    "country": "New Zealand",
    "slug": "wellington",
@@ -1368,7 +1444,7 @@
    "work_score": 3.31
   },
   {
-   "rank": 68,
+   "rank": 72,
    "city": "Bratislava",
    "country": "Slovakia",
    "slug": "bratislava",
@@ -1387,7 +1463,7 @@
    "work_score": 3.3
   },
   {
-   "rank": 69,
+   "rank": 73,
    "city": "Galway",
    "country": "Ireland",
    "slug": "galway",
@@ -1408,7 +1484,7 @@
    "work_score": 3.3
   },
   {
-   "rank": 70,
+   "rank": 74,
    "city": "Sydney",
    "country": "Australia",
    "slug": "sydney",
@@ -1429,26 +1505,7 @@
    "work_score": 3.3
   },
   {
-   "rank": 71,
-   "city": "Bari",
-   "country": "Italy",
-   "slug": "bari",
-   "score": 2.16,
-   "demand": 86456,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 3.24
-  },
-  {
-   "rank": 72,
+   "rank": 75,
    "city": "Ravenna",
    "country": "Italy",
    "slug": "ravenna",
@@ -1459,15 +1516,15 @@
    "trees": 0,
    "photos": 0,
    "walks": 0,
-   "register": 0,
+   "register": 1,
    "ready": 0,
-   "supply": 0,
+   "supply": 1,
    "target": 10,
-   "ease": 1.5,
-   "work_score": 3.24
+   "ease": 1.52,
+   "work_score": 3.28
   },
   {
-   "rank": 73,
+   "rank": 76,
    "city": "Savannah",
    "country": "United States",
    "slug": "savannah",
@@ -1486,7 +1543,28 @@
    "work_score": 3.2
   },
   {
-   "rank": 74,
+   "rank": 77,
+   "city": "Nagoya",
+   "country": "Japan",
+   "slug": "nagoya",
+   "score": 2.09,
+   "demand": 83437,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 1,
+   "ready": 0,
+   "supply": 1,
+   "target": 10,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "ease": 1.52,
+   "work_score": 3.18
+  },
+  {
+   "rank": 78,
    "city": "Rhodes",
    "country": "Greece",
    "slug": "rhodes",
@@ -1505,47 +1583,7 @@
    "work_score": 3.18
   },
   {
-   "rank": 75,
-   "city": "Palma de Mallorca",
-   "country": "Spain",
-   "slug": "palma-de-mallorca",
-   "score": 2.1,
-   "demand": 84075,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 3.15
-  },
-  {
-   "rank": 76,
-   "city": "Nagoya",
-   "country": "Japan",
-   "slug": "nagoya",
-   "score": 2.09,
-   "demand": 83437,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.5,
-   "work_score": 3.13
-  },
-  {
-   "rank": 77,
+   "rank": 79,
    "city": "Tallinn",
    "country": "Estonia",
    "slug": "tallinn",
@@ -1564,7 +1602,7 @@
    "work_score": 3.12
   },
   {
-   "rank": 78,
+   "rank": 80,
    "city": "Quebec City",
    "country": "Canada",
    "slug": "quebec-city",
@@ -1583,26 +1621,7 @@
    "work_score": 3.11
   },
   {
-   "rank": 79,
-   "city": "Como",
-   "country": "Italy",
-   "slug": "como",
-   "score": 2.07,
-   "demand": 82645,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 3.1
-  },
-  {
-   "rank": 80,
+   "rank": 81,
    "city": "Wroclaw",
    "country": "Poland",
    "slug": "wroclaw",
@@ -1621,7 +1640,7 @@
    "work_score": 3.1
   },
   {
-   "rank": 81,
+   "rank": 82,
    "city": "Zagreb",
    "country": "Croatia",
    "slug": "zagreb",
@@ -1642,7 +1661,7 @@
    "work_score": 3.07
   },
   {
-   "rank": 82,
+   "rank": 83,
    "city": "Leipzig",
    "country": "Germany",
    "slug": "leipzig",
@@ -1661,7 +1680,7 @@
    "work_score": 3.03
   },
   {
-   "rank": 83,
+   "rank": 84,
    "city": "Gothenburg",
    "country": "Sweden",
    "slug": "gothenburg",
@@ -1680,7 +1699,7 @@
    "work_score": 3.0
   },
   {
-   "rank": 84,
+   "rank": 85,
    "city": "Munich",
    "country": "Germany",
    "slug": "munich",
@@ -1701,7 +1720,7 @@
    "work_score": 3.0
   },
   {
-   "rank": 85,
+   "rank": 86,
    "city": "Nice",
    "country": "France",
    "slug": "nice",
@@ -1722,7 +1741,7 @@
    "work_score": 3.0
   },
   {
-   "rank": 86,
+   "rank": 87,
    "city": "Hanoi",
    "country": "Vietnam",
    "slug": "hanoi",
@@ -1741,25 +1760,6 @@
    "clicks_10d": 0,
    "ease": 1.0,
    "work_score": 2.93
-  },
-  {
-   "rank": 87,
-   "city": "Alicante",
-   "country": "Spain",
-   "slug": "alicante",
-   "score": 1.94,
-   "demand": 77454,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 2.91
   },
   {
    "rank": 88,
@@ -2016,6 +2016,25 @@
   },
   {
    "rank": 101,
+   "city": "Trento",
+   "country": "Italy",
+   "slug": "trento",
+   "score": 1.41,
+   "demand": 56455,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 19,
+   "ready": 0,
+   "supply": 19,
+   "target": 10,
+   "ease": 1.88,
+   "work_score": 2.65
+  },
+  {
+   "rank": 102,
    "city": "Christchurch",
    "country": "New Zealand",
    "slug": "christchurch",
@@ -2034,7 +2053,7 @@
    "work_score": 2.62
   },
   {
-   "rank": 102,
+   "rank": 103,
    "city": "Malmo",
    "country": "Sweden",
    "slug": "malmo",
@@ -2053,7 +2072,7 @@
    "work_score": 2.6
   },
   {
-   "rank": 103,
+   "rank": 104,
    "city": "Matera",
    "country": "Italy",
    "slug": "matera",
@@ -2072,7 +2091,26 @@
    "work_score": 2.52
   },
   {
-   "rank": 104,
+   "rank": 105,
+   "city": "Bergamo",
+   "country": "Italy",
+   "slug": "bergamo",
+   "score": 1.32,
+   "demand": 52933,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 17,
+   "ready": 0,
+   "supply": 17,
+   "target": 10,
+   "ease": 1.84,
+   "work_score": 2.43
+  },
+  {
+   "rank": 106,
    "city": "Singapore",
    "country": "Singapore",
    "slug": "singapore",
@@ -2093,7 +2131,7 @@
    "work_score": 2.42
   },
   {
-   "rank": 105,
+   "rank": 107,
    "city": "Busan",
    "country": "South Korea",
    "slug": "busan",
@@ -2112,7 +2150,26 @@
    "work_score": 2.37
   },
   {
-   "rank": 106,
+   "rank": 108,
+   "city": "Catania",
+   "country": "Italy",
+   "slug": "catania",
+   "score": 1.46,
+   "demand": 58252,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 5,
+   "ready": 0,
+   "supply": 5,
+   "target": 10,
+   "ease": 1.6,
+   "work_score": 2.34
+  },
+  {
+   "rank": 109,
    "city": "Freiburg",
    "country": "Germany",
    "slug": "freiburg",
@@ -2131,7 +2188,7 @@
    "work_score": 2.32
   },
   {
-   "rank": 107,
+   "rank": 110,
    "city": "Inverness",
    "country": "United Kingdom",
    "slug": "inverness",
@@ -2150,7 +2207,7 @@
    "work_score": 2.3
   },
   {
-   "rank": 108,
+   "rank": 111,
    "city": "Bern",
    "country": "Switzerland",
    "slug": "bern",
@@ -2169,26 +2226,7 @@
    "work_score": 2.27
   },
   {
-   "rank": 109,
-   "city": "Catania",
-   "country": "Italy",
-   "slug": "catania",
-   "score": 1.46,
-   "demand": 58252,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 2.19
-  },
-  {
-   "rank": 110,
+   "rank": 112,
    "city": "Cusco",
    "country": "Peru",
    "slug": "cusco",
@@ -2207,7 +2245,7 @@
    "work_score": 2.19
   },
   {
-   "rank": 111,
+   "rank": 113,
    "city": "Siena",
    "country": "Italy",
    "slug": "siena",
@@ -2226,26 +2264,26 @@
    "work_score": 2.16
   },
   {
-   "rank": 112,
-   "city": "Trento",
+   "rank": 114,
+   "city": "Cagliari",
    "country": "Italy",
-   "slug": "trento",
-   "score": 1.41,
-   "demand": 56455,
+   "slug": "cagliari",
+   "score": 1.28,
+   "demand": 51351,
    "basis": "predicted (thin competition)",
    "status": "pending",
    "trees": 0,
    "photos": 0,
    "walks": 0,
-   "register": 0,
+   "register": 9,
    "ready": 0,
-   "supply": 0,
+   "supply": 9,
    "target": 10,
-   "ease": 1.5,
-   "work_score": 2.11
+   "ease": 1.68,
+   "work_score": 2.15
   },
   {
-   "rank": 113,
+   "rank": 115,
    "city": "Valletta",
    "country": "Malta",
    "slug": "valletta",
@@ -2264,7 +2302,7 @@
    "work_score": 2.11
   },
   {
-   "rank": 114,
+   "rank": 116,
    "city": "Faro",
    "country": "Portugal",
    "slug": "faro",
@@ -2283,7 +2321,7 @@
    "work_score": 2.08
   },
   {
-   "rank": 115,
+   "rank": 117,
    "city": "Bergen",
    "country": "Norway",
    "slug": "bergen",
@@ -2302,7 +2340,7 @@
    "work_score": 2.07
   },
   {
-   "rank": 116,
+   "rank": 118,
    "city": "Ghent",
    "country": "Belgium",
    "slug": "ghent",
@@ -2321,7 +2359,7 @@
    "work_score": 2.07
   },
   {
-   "rank": 117,
+   "rank": 119,
    "city": "Jaipur",
    "country": "India",
    "slug": "jaipur",
@@ -2342,7 +2380,7 @@
    "work_score": 2.06
   },
   {
-   "rank": 118,
+   "rank": 120,
    "city": "Kobe",
    "country": "Japan",
    "slug": "kobe",
@@ -2363,7 +2401,7 @@
    "work_score": 2.06
   },
   {
-   "rank": 119,
+   "rank": 121,
    "city": "Hobart",
    "country": "Australia",
    "slug": "hobart",
@@ -2382,7 +2420,7 @@
    "work_score": 2.04
   },
   {
-   "rank": 120,
+   "rank": 122,
    "city": "Colombo",
    "country": "Sri Lanka",
    "slug": "colombo",
@@ -2401,7 +2439,26 @@
    "work_score": 2.01
   },
   {
-   "rank": 121,
+   "rank": 123,
+   "city": "Modena",
+   "country": "Italy",
+   "slug": "modena",
+   "score": 1.29,
+   "demand": 51698,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 3,
+   "ready": 0,
+   "supply": 3,
+   "target": 10,
+   "ease": 1.56,
+   "work_score": 2.01
+  },
+  {
+   "rank": 124,
    "city": "Seville",
    "country": "Spain",
    "slug": "seville",
@@ -2422,26 +2479,26 @@
    "work_score": 2.0
   },
   {
-   "rank": 122,
-   "city": "Bergamo",
+   "rank": 125,
+   "city": "Perugia",
    "country": "Italy",
-   "slug": "bergamo",
-   "score": 1.32,
-   "demand": 52933,
+   "slug": "perugia",
+   "score": 1.06,
+   "demand": 42572,
    "basis": "predicted (thin competition)",
    "status": "pending",
    "trees": 0,
    "photos": 0,
    "walks": 0,
-   "register": 0,
+   "register": 19,
    "ready": 0,
-   "supply": 0,
+   "supply": 19,
    "target": 10,
-   "ease": 1.5,
-   "work_score": 1.98
+   "ease": 1.88,
+   "work_score": 1.99
   },
   {
-   "rank": 123,
+   "rank": 126,
    "city": "Paris",
    "country": "France",
    "slug": "paris",
@@ -2462,7 +2519,26 @@
    "work_score": 1.97
   },
   {
-   "rank": 124,
+   "rank": 127,
+   "city": "Ronda",
+   "country": "Spain",
+   "slug": "ronda",
+   "score": 1.29,
+   "demand": 51510,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 1,
+   "ready": 0,
+   "supply": 1,
+   "target": 10,
+   "ease": 1.52,
+   "work_score": 1.96
+  },
+  {
+   "rank": 128,
    "city": "Pisa",
    "country": "Italy",
    "slug": "pisa",
@@ -2481,64 +2557,7 @@
    "work_score": 1.95
   },
   {
-   "rank": 125,
-   "city": "Modena",
-   "country": "Italy",
-   "slug": "modena",
-   "score": 1.29,
-   "demand": 51698,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 1.94
-  },
-  {
-   "rank": 126,
-   "city": "Ronda",
-   "country": "Spain",
-   "slug": "ronda",
-   "score": 1.29,
-   "demand": 51510,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 1.94
-  },
-  {
-   "rank": 127,
-   "city": "Cagliari",
-   "country": "Italy",
-   "slug": "cagliari",
-   "score": 1.28,
-   "demand": 51351,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 1.92
-  },
-  {
-   "rank": 128,
+   "rank": 129,
    "city": "Girona",
    "country": "Spain",
    "slug": "girona",
@@ -2557,7 +2576,7 @@
    "work_score": 1.92
   },
   {
-   "rank": 129,
+   "rank": 130,
    "city": "Heidelberg",
    "country": "Germany",
    "slug": "heidelberg",
@@ -2576,7 +2595,7 @@
    "work_score": 1.9
   },
   {
-   "rank": 130,
+   "rank": 131,
    "city": "Lille",
    "country": "France",
    "slug": "lille",
@@ -2595,7 +2614,7 @@
    "work_score": 1.84
   },
   {
-   "rank": 131,
+   "rank": 132,
    "city": "Oaxaca",
    "country": "Mexico",
    "slug": "oaxaca",
@@ -2614,7 +2633,28 @@
    "work_score": 1.82
   },
   {
-   "rank": 132,
+   "rank": 133,
+   "city": "Salamanca",
+   "country": "Spain",
+   "slug": "salamanca",
+   "score": 1.2,
+   "demand": 47897,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 1,
+   "ready": 0,
+   "supply": 1,
+   "target": 10,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "ease": 1.52,
+   "work_score": 1.82
+  },
+  {
+   "rank": 134,
    "city": "Rouen",
    "country": "France",
    "slug": "rouen",
@@ -2633,7 +2673,7 @@
    "work_score": 1.81
   },
   {
-   "rank": 133,
+   "rank": 135,
    "city": "London",
    "country": "United Kingdom",
    "slug": "london",
@@ -2654,28 +2694,7 @@
    "work_score": 1.8
   },
   {
-   "rank": 134,
-   "city": "Salamanca",
-   "country": "Spain",
-   "slug": "salamanca",
-   "score": 1.2,
-   "demand": 47897,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.5,
-   "work_score": 1.8
-  },
-  {
-   "rank": 135,
+   "rank": 136,
    "city": "Zadar",
    "country": "Croatia",
    "slug": "zadar",
@@ -2694,7 +2713,7 @@
    "work_score": 1.79
   },
   {
-   "rank": 136,
+   "rank": 137,
    "city": "Agra",
    "country": "India",
    "slug": "agra",
@@ -2715,7 +2734,7 @@
    "work_score": 1.77
   },
   {
-   "rank": 137,
+   "rank": 138,
    "city": "Antalya",
    "country": "Turkey",
    "slug": "antalya",
@@ -2734,7 +2753,7 @@
    "work_score": 1.77
   },
   {
-   "rank": 138,
+   "rank": 139,
    "city": "Izmir",
    "country": "Turkey",
    "slug": "izmir",
@@ -2753,7 +2772,7 @@
    "work_score": 1.75
   },
   {
-   "rank": 139,
+   "rank": 140,
    "city": "Dublin",
    "country": "Ireland",
    "slug": "dublin",
@@ -2774,7 +2793,7 @@
    "work_score": 1.74
   },
   {
-   "rank": 140,
+   "rank": 141,
    "city": "Trier",
    "country": "Germany",
    "slug": "trier",
@@ -2793,7 +2812,7 @@
    "work_score": 1.73
   },
   {
-   "rank": 141,
+   "rank": 142,
    "city": "Hong Kong",
    "country": "China",
    "slug": "hong-kong",
@@ -2814,7 +2833,7 @@
    "work_score": 1.72
   },
   {
-   "rank": 142,
+   "rank": 143,
    "city": "Lausanne",
    "country": "Switzerland",
    "slug": "lausanne",
@@ -2833,7 +2852,7 @@
    "work_score": 1.71
   },
   {
-   "rank": 143,
+   "rank": 144,
    "city": "Stratford-upon-Avon",
    "country": "United Kingdom",
    "slug": "stratford-upon-avon",
@@ -2852,7 +2871,7 @@
    "work_score": 1.71
   },
   {
-   "rank": 144,
+   "rank": 145,
    "city": "Nantes",
    "country": "France",
    "slug": "nantes",
@@ -2871,7 +2890,7 @@
    "work_score": 1.69
   },
   {
-   "rank": 145,
+   "rank": 146,
    "city": "Chiang Mai",
    "country": "Thailand",
    "slug": "chiang-mai",
@@ -2892,7 +2911,7 @@
    "work_score": 1.66
   },
   {
-   "rank": 146,
+   "rank": 147,
    "city": "Heraklion",
    "country": "Greece",
    "slug": "heraklion",
@@ -2911,7 +2930,7 @@
    "work_score": 1.66
   },
   {
-   "rank": 147,
+   "rank": 148,
    "city": "Lucerne",
    "country": "Switzerland",
    "slug": "lucerne",
@@ -2930,7 +2949,26 @@
    "work_score": 1.66
   },
   {
-   "rank": 148,
+   "rank": 149,
+   "city": "Parma",
+   "country": "Italy",
+   "slug": "parma",
+   "score": 1.01,
+   "demand": 40425,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 7,
+   "ready": 0,
+   "supply": 7,
+   "target": 10,
+   "ease": 1.64,
+   "work_score": 1.66
+  },
+  {
+   "rank": 150,
    "city": "Graz",
    "country": "Austria",
    "slug": "graz",
@@ -2949,7 +2987,7 @@
    "work_score": 1.64
   },
   {
-   "rank": 149,
+   "rank": 151,
    "city": "Poznan",
    "country": "Poland",
    "slug": "poznan",
@@ -2968,7 +3006,7 @@
    "work_score": 1.64
   },
   {
-   "rank": 150,
+   "rank": 152,
    "city": "Cartagena",
    "country": "Colombia",
    "slug": "cartagena",
@@ -2987,7 +3025,7 @@
    "work_score": 1.63
   },
   {
-   "rank": 151,
+   "rank": 153,
    "city": "Luxembourg City",
    "country": "Luxembourg",
    "slug": "luxembourg-city",
@@ -3006,7 +3044,7 @@
    "work_score": 1.62
   },
   {
-   "rank": 152,
+   "rank": 154,
    "city": "Tokyo",
    "country": "Japan",
    "slug": "tokyo",
@@ -3027,7 +3065,7 @@
    "work_score": 1.62
   },
   {
-   "rank": 153,
+   "rank": 155,
    "city": "Aix-en-Provence",
    "country": "France",
    "slug": "aix-en-provence",
@@ -3046,7 +3084,7 @@
    "work_score": 1.61
   },
   {
-   "rank": 154,
+   "rank": 156,
    "city": "Montpellier",
    "country": "France",
    "slug": "montpellier",
@@ -3065,7 +3103,7 @@
    "work_score": 1.61
   },
   {
-   "rank": 155,
+   "rank": 157,
    "city": "Avignon",
    "country": "France",
    "slug": "avignon",
@@ -3084,7 +3122,7 @@
    "work_score": 1.6
   },
   {
-   "rank": 156,
+   "rank": 158,
    "city": "Mostar",
    "country": "Bosnia and Herzegovina",
    "slug": "mostar",
@@ -3103,7 +3141,26 @@
    "work_score": 1.6
   },
   {
-   "rank": 157,
+   "rank": 159,
+   "city": "Potsdam",
+   "country": "Germany",
+   "slug": "potsdam",
+   "score": 1.29,
+   "demand": 51727,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 12,
+   "ready": 0,
+   "supply": 12,
+   "target": 10,
+   "ease": 1.24,
+   "work_score": 1.6
+  },
+  {
+   "rank": 160,
    "city": "Brno",
    "country": "Czech Republic",
    "slug": "brno",
@@ -3122,45 +3179,7 @@
    "work_score": 1.59
   },
   {
-   "rank": 158,
-   "city": "Perugia",
-   "country": "Italy",
-   "slug": "perugia",
-   "score": 1.06,
-   "demand": 42572,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 1.59
-  },
-  {
-   "rank": 159,
-   "city": "Parma",
-   "country": "Italy",
-   "slug": "parma",
-   "score": 1.01,
-   "demand": 40425,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 1.52
-  },
-  {
-   "rank": 160,
+   "rank": 161,
    "city": "Washington DC",
    "country": "United States",
    "slug": "washington-dc",
@@ -3181,7 +3200,7 @@
    "work_score": 1.52
   },
   {
-   "rank": 161,
+   "rank": 162,
    "city": "Berlin",
    "country": "Germany",
    "slug": "berlin",
@@ -3202,7 +3221,7 @@
    "work_score": 1.5
   },
   {
-   "rank": 162,
+   "rank": 163,
    "city": "Brussels",
    "country": "Belgium",
    "slug": "brussels",
@@ -3223,7 +3242,7 @@
    "work_score": 1.5
   },
   {
-   "rank": 163,
+   "rank": 164,
    "city": "Cadiz",
    "country": "Spain",
    "slug": "cadiz",
@@ -3244,7 +3263,7 @@
    "work_score": 1.5
   },
   {
-   "rank": 164,
+   "rank": 165,
    "city": "Sorrento",
    "country": "Italy",
    "slug": "sorrento",
@@ -3263,7 +3282,7 @@
    "work_score": 1.5
   },
   {
-   "rank": 165,
+   "rank": 166,
    "city": "Innsbruck",
    "country": "Austria",
    "slug": "innsbruck",
@@ -3282,7 +3301,28 @@
    "work_score": 1.47
   },
   {
-   "rank": 166,
+   "rank": 167,
+   "city": "Braga",
+   "country": "Portugal",
+   "slug": "braga",
+   "score": 0.86,
+   "demand": 34522,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 8,
+   "ready": 0,
+   "supply": 8,
+   "target": 10,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "ease": 1.66,
+   "work_score": 1.43
+  },
+  {
+   "rank": 168,
    "city": "Annecy",
    "country": "France",
    "slug": "annecy",
@@ -3301,7 +3341,28 @@
    "work_score": 1.42
   },
   {
-   "rank": 167,
+   "rank": 169,
+   "city": "Coimbra",
+   "country": "Portugal",
+   "slug": "coimbra",
+   "score": 0.87,
+   "demand": 34962,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 5,
+   "ready": 0,
+   "supply": 5,
+   "target": 10,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "ease": 1.6,
+   "work_score": 1.39
+  },
+  {
+   "rank": 170,
    "city": "Fes",
    "country": "Morocco",
    "slug": "fes",
@@ -3320,7 +3381,7 @@
    "work_score": 1.34
   },
   {
-   "rank": 168,
+   "rank": 171,
    "city": "Canterbury",
    "country": "United Kingdom",
    "slug": "canterbury",
@@ -3339,7 +3400,26 @@
    "work_score": 1.33
   },
   {
-   "rank": 169,
+   "rank": 172,
+   "city": "Taormina",
+   "country": "Italy",
+   "slug": "taormina",
+   "score": 0.83,
+   "demand": 33169,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 5,
+   "ready": 0,
+   "supply": 5,
+   "target": 10,
+   "ease": 1.6,
+   "work_score": 1.33
+  },
+  {
+   "rank": 173,
    "city": "Aarhus",
    "country": "Denmark",
    "slug": "aarhus",
@@ -3358,7 +3438,7 @@
    "work_score": 1.32
   },
   {
-   "rank": 170,
+   "rank": 174,
    "city": "Guimaraes",
    "country": "Portugal",
    "slug": "guimaraes",
@@ -3379,28 +3459,7 @@
    "work_score": 1.31
   },
   {
-   "rank": 171,
-   "city": "Coimbra",
-   "country": "Portugal",
-   "slug": "coimbra",
-   "score": 0.87,
-   "demand": 34962,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.5,
-   "work_score": 1.3
-  },
-  {
-   "rank": 172,
+   "rank": 175,
    "city": "Regensburg",
    "country": "Germany",
    "slug": "regensburg",
@@ -3419,28 +3478,7 @@
    "work_score": 1.3
   },
   {
-   "rank": 173,
-   "city": "Braga",
-   "country": "Portugal",
-   "slug": "braga",
-   "score": 0.86,
-   "demand": 34522,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "ease": 1.5,
-   "work_score": 1.29
-  },
-  {
-   "rank": 174,
+   "rank": 176,
    "city": "Kilkenny",
    "country": "Ireland",
    "slug": "kilkenny",
@@ -3459,7 +3497,7 @@
    "work_score": 1.29
   },
   {
-   "rank": 175,
+   "rank": 177,
    "city": "Lagos",
    "country": "Portugal",
    "slug": "lagos",
@@ -3478,26 +3516,7 @@
    "work_score": 1.29
   },
   {
-   "rank": 176,
-   "city": "Potsdam",
-   "country": "Germany",
-   "slug": "potsdam",
-   "score": 1.29,
-   "demand": 51727,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.0,
-   "work_score": 1.29
-  },
-  {
-   "rank": 177,
+   "rank": 178,
    "city": "Kamakura",
    "country": "Japan",
    "slug": "kamakura",
@@ -3516,25 +3535,6 @@
    "clicks_10d": 0,
    "ease": 1.5,
    "work_score": 1.26
-  },
-  {
-   "rank": 178,
-   "city": "Taormina",
-   "country": "Italy",
-   "slug": "taormina",
-   "score": 0.83,
-   "demand": 33169,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 1.24
   },
   {
    "rank": 179,
@@ -3666,12 +3666,12 @@
    "trees": 0,
    "photos": 0,
    "walks": 0,
-   "register": 0,
+   "register": 1,
    "ready": 0,
-   "supply": 0,
+   "supply": 1,
    "target": 10,
-   "ease": 1.5,
-   "work_score": 1.16
+   "ease": 1.52,
+   "work_score": 1.17
   },
   {
    "rank": 186,
@@ -3713,6 +3713,25 @@
   },
   {
    "rank": 188,
+   "city": "Ferrara",
+   "country": "Italy",
+   "slug": "ferrara",
+   "score": 0.69,
+   "demand": 27490,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 7,
+   "ready": 0,
+   "supply": 7,
+   "target": 10,
+   "ease": 1.64,
+   "work_score": 1.13
+  },
+  {
+   "rank": 189,
    "city": "Dijon",
    "country": "France",
    "slug": "dijon",
@@ -3731,7 +3750,7 @@
    "work_score": 1.09
   },
   {
-   "rank": 189,
+   "rank": 190,
    "city": "Merida",
    "country": "Mexico",
    "slug": "merida",
@@ -3750,7 +3769,7 @@
    "work_score": 1.09
   },
   {
-   "rank": 190,
+   "rank": 191,
    "city": "Stirling",
    "country": "United Kingdom",
    "slug": "stirling",
@@ -3769,7 +3788,7 @@
    "work_score": 1.09
   },
   {
-   "rank": 191,
+   "rank": 192,
    "city": "Killarney",
    "country": "Ireland",
    "slug": "killarney",
@@ -3788,7 +3807,7 @@
    "work_score": 1.08
   },
   {
-   "rank": 192,
+   "rank": 193,
    "city": "Milan",
    "country": "Italy",
    "slug": "milan",
@@ -3809,7 +3828,7 @@
    "work_score": 1.06
   },
   {
-   "rank": 193,
+   "rank": 194,
    "city": "Venice",
    "country": "Italy",
    "slug": "venice",
@@ -3828,25 +3847,6 @@
    "clicks_10d": 0,
    "ease": 1.58,
    "work_score": 1.06
-  },
-  {
-   "rank": 194,
-   "city": "Ferrara",
-   "country": "Italy",
-   "slug": "ferrara",
-   "score": 0.69,
-   "demand": 27490,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
-   "work_score": 1.03
   },
   {
    "rank": 195,
@@ -4003,17 +4003,36 @@
    "trees": 0,
    "photos": 0,
    "walks": 0,
-   "register": 0,
+   "register": 2,
    "ready": 0,
-   "supply": 0,
+   "supply": 2,
    "target": 10,
    "impressions_10d": 0,
    "clicks_10d": 0,
-   "ease": 1.5,
-   "work_score": 0.96
+   "ease": 1.54,
+   "work_score": 0.99
   },
   {
    "rank": 203,
+   "city": "Naha",
+   "country": "Japan",
+   "slug": "naha",
+   "score": 0.61,
+   "demand": 24466,
+   "basis": "predicted (thin competition)",
+   "status": "pending",
+   "trees": 0,
+   "photos": 0,
+   "walks": 0,
+   "register": 1,
+   "ready": 0,
+   "supply": 1,
+   "target": 10,
+   "ease": 1.52,
+   "work_score": 0.93
+  },
+  {
+   "rank": 204,
    "city": "Florence",
    "country": "Italy",
    "slug": "florence",
@@ -4031,25 +4050,6 @@
    "impressions_10d": 0,
    "clicks_10d": 0,
    "ease": 2.0,
-   "work_score": 0.92
-  },
-  {
-   "rank": 204,
-   "city": "Naha",
-   "country": "Japan",
-   "slug": "naha",
-   "score": 0.61,
-   "demand": 24466,
-   "basis": "predicted (thin competition)",
-   "status": "pending",
-   "trees": 0,
-   "photos": 0,
-   "walks": 0,
-   "register": 0,
-   "ready": 0,
-   "supply": 0,
-   "target": 10,
-   "ease": 1.5,
    "work_score": 0.92
   },
   {
