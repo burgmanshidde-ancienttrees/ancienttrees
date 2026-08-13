@@ -13,6 +13,51 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-13
+
+Reviewed the last 24 hours: Portland goes live (10 heritage trees), Hobart
+goes live (7 significant trees), Singapore grows from 7 to 10, the
+`preflight.py` id-prefix collision check, and the `registercheck.py`
+survival-story fix. No BLOCKER, no WARN.
+
+**NOTE** — The Portland launch (`8860db9`) is the standing example of a
+near-miss caught cleanly. A write pass generated ten trees numbered
+`por_001`-`por_010`, which is Porto's live prefix; merging would have
+silently overwritten ten indexed Porto trees (hard rule 3). The pass refused
+to merge its own output, and the same commit adds `check_id_prefixes()` to
+`scripts/preflight.py`, verified against a staged collision. Checked the
+live data: `ptl_*` (Portland) and `por_*` (Porto) are now distinct, both
+cities intact in `data/cities/`.
+
+**NOTE** — Spot-checked all three new/grown cities (Hobart, Portland,
+Singapore) against the hard rules and the honesty rules in CLAUDE.md Step
+0/2/4, plus a random sample of five older pages (Athens, Cadiz, Florence,
+Krakow, Nijmegen). Clean throughout: no em dashes or banned words anywhere
+in `site/dist` (checked site-wide), all titles/meta descriptions within
+contract limits, every tree's `access` field respects private land (Portland
+excludes the ~40% of register trees on private yards outright; `ptl_004`
+explicitly tells the visitor to stay at the street corner rather than cross
+onto school grounds), all photo licences on the three Singapore approved
+photos carry CC BY/BY-SA plus attribution, and every missing-photo tree
+renders the honest "Nobody has published a photograph of this tree under a
+licence we can use" line rather than a substitute image. Two entries are
+worth naming as good examples of the honesty rules actually working: the
+Tiong Bahru banyan (`sgp_009`, 22.8m girth reached in "under sixty years")
+is written as speed rather than age with "ancient" kept out of the copy, and
+Portland's Balch Creek Fir (74.1m) claims only "nothing else in Portland
+comes close" on its own page, no site-wide or regional superlative, which
+checked out: it is the tallest tree actually published on the site (the
+80m figure elsewhere on the site is a citation of California's General
+Sherman for comparison, not one of our own trees).
+
+**NOTE** — Singapore's rewritten intro (`e233f37`) was checked against the
+tree list for accuracy rather than taken on faith: it claims five trees
+cluster on Fort Canning, and the data confirms exactly five (`sgp_002`,
+`sgp_003`, `sgp_004`, `sgp_005`, `sgp_010`) share that neighbourhood; the
+"reachable only by boat" line matches `sgp_007` at Chek Jawa on Pulau Ubin.
+
+---
+
 ## 2026-08-12
 
 No review ran on 2026-08-11, so this pass covers roughly 44 hours of commits
