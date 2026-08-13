@@ -1173,3 +1173,240 @@ JEUNE (young) tree at 63 cm, so the city's REMARQUABLE flag is a designation
 rather than a statement about age or size; and `age_approx` and `vigueur` are
 null on most rows, so a number there is a lead to verify and never a publishable
 fact on its own.
+
+## Singapore and Hong Kong: two named statutory registers scouted, both usable, 2026-08-13
+
+Reason for the pass: both cities are already live on the site (Singapore 7
+trees, Hong Kong 6) with only 5 to 7 km of real spread between their existing
+trees, both administrations publish in English, and neither had ever been
+checked against its own named register. Semantic filter and vitality-first
+checks applied per BRIEF_RESEARCH.md.
+
+### Singapore: NParks Heritage Trees Scheme, USABLE, imported
+
+- **Source**: National Parks Board (NParks), the Heritage Trees Scheme. Mature
+  trees of girth over 5 metres with historical, social, cultural, aesthetic,
+  botanical or educational value are gazetted, fitted with lightning
+  protection and given English signage. This is the semantic-filtered subset;
+  the separate Trees.sg island-wide inventory (every tree NParks manages) was
+  checked and correctly excluded, it is a bulk inventory, not a designation.
+- **Exact fetch**: the dataset lives on data.gov.sg as "Heritage Trees"
+  (`https://data.gov.sg/datasets/d_644ff187b6d14d6316f47284a4a6c81f/view`).
+  data.gov.sg serves files through a two-step signed-URL API rather than a
+  static link: `GET
+  https://api-open.data.gov.sg/v1/public/api/datasets/d_644ff187b6d14d6316f47284a4a6c81f/poll-download`
+  returns a time-limited S3 URL for `HeritageTrees.geojson`; that URL must be
+  fetched immediately after, curl -m 20 on both legs.
+- **255 trees, coordinates per-tree** (Point geometry, WGS84), covering
+  mainland Singapore plus offshore islands (Pulau Ubin carries several).
+- **Licence**: Singapore Open Data Licence version 1.0. Proving sentence,
+  verbatim from `https://data.gov.sg/open-data-licence`: "You can use,
+  access, download, copy, distribute, transmit, modify and adapt the
+  datasets, or any derived analyses or applications, whether commercially or
+  non-commercially." Attribution required, a conspicuous notice naming the
+  source and linking the licence version; no non-commercial restriction, so
+  no disqualification.
+- **Vitality/last-surveyed field: absent.** No age, girth, height or
+  condition field of any kind, only a scientific name, a common-name-plus-
+  location free-text description, an HT id, and a link to the tree's own
+  NParks page (which may carry more detail per tree but was not bulk-fetched
+  this pass). Consistent with "no register has a vitality field"; every
+  tree pulled from here still needs its own alive-now check.
+- **Sanity check**: nothing numeric to sanity-check against the physical
+  world (no girth or age columns), so this pitfall does not apply here. One
+  finding worth a verify pass's attention: HT 2007-162 and HT 2007-163 are
+  two Mangrove Apples registered separately, metres apart, "from House No. 1
+  on the left" and "on the right" of the same spot on Pulau Ubin, the
+  register-twin pattern BRIEF_RESEARCH.md names explicitly.
+- **Verdict: USABLE, imported** to
+  `data/registers/singapore-heritage-trees.json` (255 entries).
+- **Within 5 km of the city centre** (Raffles Place / Downtown Core,
+  1.2833, 103.8333): **163 of 255**. Worth dispatching a verify pass; several
+  candidates already overlap our own published cluster at Fort Canning Park
+  (three of our seven published trees sit inside Fort Canning, and the
+  register lists further Fort Canning heritage trees beyond those three).
+
+### Hong Kong: Register of Old and Valuable Trees (OVT) and Stonewall Trees (SWT), USABLE, imported
+
+- **Source**: Development Bureau, Greening, Landscape and Tree Management
+  Section. Registration criteria: DBH >= 1.0 m, OR height >= 25 m, OR crown
+  spread >= 25 m, OR rarity, OR estimated age > 100 years, OR outstanding
+  cultural/historical/social value, so this is a designation, not a bulk
+  inventory, and a separate `Type` field distinguishes OVT from the
+  masonry-wall Stonewall Trees (SWT) the brief asked to check for
+  specifically; 14 entries carry `OVT & SWT`.
+- **Exact fetch**: the data.gov.hk listing
+  (`https://data.gov.hk/en-data/dataset/hk-devb-ovt-ovt-and-stonewall`)
+  points only at a CSDI Portal viewer URL with no direct file link and the
+  CSDI REST API demanded a token on a plain fetch; the working route was
+  found via the mirror on Esri's Hong Kong open-data hub, ArcGIS Hub's own
+  DCAT feed
+  (`https://opendata.esrichina.hk/api/feed/dcat-us/1.1.json`, 19 MB, one
+  fetch), which lists the underlying ArcGIS FeatureServer directly:
+  `GET
+  https://services3.arcgis.com/6j1KwZfY2fZrfNMR/arcgis/rest/services/Information_on_Old_and_Valuable_Trees_and_Stonewall_Trees_in_Hong_Kong/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=geojson`.
+  Plain `opendata.esrichina.hk/datasets/<id>.geojson` 403s (fast, not a
+  hang, no blocklist entry needed); the FeatureServer query above is the
+  route that works.
+- **713 trees, coordinates per-tree** (Point, requested in WGS84 via
+  `outSR=4326`; the service's native SR is Web Mercator).
+- **Licence**: DATA.GOV.HK Terms and Conditions of Use (the Hong Kong SAR
+  Government's PSI terms, which the dataset inherits from the portal since
+  the CSDI resource carries none of its own). Proving sentence, verbatim
+  from `https://data.gov.hk/en/terms-and-conditions`: "You are allowed to
+  browse, download, distribute, reproduce, hyperlink to, and print the Data
+  for both commercial and non-commercial purposes on a free-of-charge
+  basis," with attribution required ("you shall identify clearly the source
+  of the Data and acknowledge the Government and the Relevant
+  Organisations' ownership... and shall also give proper attribution to the
+  Government, the Relevant Organisations and DATA.GOV.HK"). No
+  non-commercial restriction found, no disqualification.
+- **Vitality/last-surveyed field: no explicit alive/dead field, but the
+  closest thing any register has offered yet.** `Last_Inspection_Date`
+  (700 of 713 dated 2022 or 2023) and `Condition_EN`, a pipe-separated bag
+  of standard arborist observations (vigor rating, lean, wind exposure,
+  pruning history, overall risk rating). 15 of 713 entries mention "Dead
+  branches" specifically, a partial-dieback observation, never a
+  whole-tree-dead flag; none of the 713 current rows describe the tree
+  itself as dead, felled or removed.
+- **The cross-check the brief asked for, applied**: this register has no
+  second field that could contradict a first the way Bordeaux's
+  `date_disparition` contradicted `status_life`, because it carries only
+  one signal (inspection date plus free-text condition), not two competing
+  status fields. What it does instead, and what a verify pass must know:
+  **the department removes a tree from this register once it is felled or
+  fails**, per the Development Bureau's own public record of periodic
+  removals. So an OVT number appearing here is not itself proof of life
+  today, it is proof the tree had not yet been struck off as of this
+  fetch (2026-08-13); `last_inspection_date` is the real evidence, and it
+  is an inspection date, never a same-day fact.
+- **Sanity check, and it resolved a real units question**: `DBH` has no
+  unit in its field name. Median across all 713 is 1006, clustered
+  tightly around the registration threshold criterion of DBH >= 1.0 m,
+  which only makes sense if the field is millimetres (1006 mm = 1.006 m).
+  Recorded as `dbh_mm` in the import accordingly. Range 110 mm (11 cm, a
+  tree presumably qualifying on height, crown spread, rarity or cultural
+  value rather than girth) to 7710 mm on a Ficus microcarpa, a banyan
+  whose aerial-root/buttress mass produces a DBH figure a simple round
+  trunk never would, not an error.
+- **Verdict: USABLE, imported** to `data/registers/hongkong-ovt.json`
+  (713 entries).
+- **Within 5 km of the city centre** (Central, 22.2793, 114.1628): **494
+  of 713**. Within 5 km of Kowloon Park, where three of our six published
+  Hong Kong trees already sit: **473**. Either centre clears the bar for a
+  verify pass by a wide margin; the register also carries an entry close
+  to our published King Camphor of Sha Lo Wan (hkg_005, register id
+  AFCD/KS/005, roughly 250 m from our recorded pin, a register-vs-our-pin
+  discrepancy worth a verify pass's attention rather than a scouting
+  pass's guess).
+
+### Fetch discipline this pass
+
+No host hung; nothing added to `data/fetch-blocklist.json`. Two dead ends
+worth recording so a future pass does not retry them: `data.gov.hk`'s own
+CKAN `resource_show` API returns only a link to the CSDI Portal viewer, not
+a data file, for this dataset; and `portal.csdi.gov.hk/server/rest/services`
+returns `{"error":{"code":499,"message":"Token Required"}}` on a plain
+fetch, both fast failures rather than hangs.
+
+### Cost
+
+One pass, roughly 60k tokens (web search plus fetch discovery plus two
+register imports plus this write-up). No photo hunting, no prose beyond
+this survey entry, per BRIEF_RESEARCH.md's rules for a verification/scouting
+pass.
+
+## Tree Cities of the World as a register-discovery proxy (scouted 2026-08-13)
+
+**The question:** 227 of our 293 queue cities have no register within reach
+(`register` is 0 or absent in `data/city-queue.json`), and for those the only
+route on file is from-zero web research, measured elsewhere in this project at
+over 500k tokens per city for zero trees. Tree Cities of the World (FAO +
+Arbor Day Foundation) certifies a city only if it meets five standards, one of
+which is maintaining an up-to-date inventory of its tree resource. So the
+certified list is, in effect, a list of cities self-attesting they hold a tree
+inventory, which makes it a cheap way to find candidates for a register hunt
+worth actually running.
+
+**How the certified list was obtained, as data rather than press coverage.**
+treecitiesoftheworld.org's `/directory.cfm` embeds an ArcGIS Dashboards app
+(item `2ec8fbfbbcc84fa8ae5469bc8a5816c1`), whose map widget reads a Web Map
+(item `0488b10d65484fd78c9749146908c97e`) pointing at the feature layer
+`https://services8.arcgis.com/1WIA3UeOTguiTsKg/arcgis/rest/services/Tree_Cities_of_the_World_Communities/FeatureServer/0`.
+Queried directly (`/query?where=1=1&outFields=...&f=json`) it returns 285
+records across 24 countries with no paging needed (`maxRecordCount` 2000).
+This is the live current roster the public map renders, not a historical log
+of every city ever certified (all 285 rows carry `ApplicationYear=2025`,
+`ApplicationStatus=0`); it was not cross-checked against FAO's own PDF list,
+so treat it as "currently recognised as best represented by their own map,"
+not as a definitive historical count.
+
+**The cross-reference**, matched on normalized city+country strings (accents
+stripped, "City of" prefixes stripped) against `data/city-queue.json`, hand-
+reviewed against the TCW `MemberName` field because the map's `City` label
+sometimes names a different municipality than the certified member:
+
+| | |
+|---|---|
+| Queue cities total | 293 |
+| Queue cities with no register within reach | 227 |
+| Matched certified Tree Cities | 29 |
+| Matched AND register-less | 22 |
+| Matches carrying a name caveat (see below) | 7 |
+
+**The answer to the question that matters: of 227 register-less queue
+cities, 22 (about 10%) are certified Tree Cities of the World, and of the ten
+highest-priority ones spot-checked for an actually published register, two
+(Portland, Auckland) have one, one (Buenos Aires) is a partial yes, and seven
+came back empty or unconfirmed.** That is not a strong enough hit rate to
+treat certification alone as a green light to dispatch a register-import
+pass; it is a real signal worth checking on a specific city before a from-
+zero web research pass, not a filter to run blindly across the other 205 or
+so certified-but-unchecked cities.
+
+**Seven matches carry a name caveat, worth its own note because it very
+nearly produced a false positive the same way "Lagos" once did.** The map's
+`City` field is sometimes the nearest big city rather than the certified
+member's own name: our "Miami" match is actually Palmetto Bay (a separate
+Miami-Dade village), our "Adelaide" match is actually City of Onkaparinga (a
+separate outer-metro council), our "Santiago" match is actually Vitacura (a
+separate comuna), our "Barcelona" match is the Barcelona Metropolitan Area
+(36 municipalities, not the city alone) and our "London" match is three
+individual boroughs (Camden, Redbridge, Islington), not London city-wide.
+Madrid has one clean record and one mislabeled Pozuelo de Alarcón record
+under `City="MADRID"`. Buenos Aires's caveat is spurious (Ciudad Autónoma de
+Buenos Aires is the city's own formal name). **Read `MemberName`, never just
+`City`, before treating a TCW pin as certifying the place we think it does.**
+
+**The ten-city spot check** (queue order, lowest rank first, no import
+performed): full detail and URLs are in `data/tree-cities-map.json`.
+
+| Rank | City | Verdict |
+|---|---|---|
+| 6 | Rio de Janeiro | unknown; no single machine-readable dataset found in the time budget, only general open-data portals |
+| 7 | Miami | none found (and the TCW match is Palmetto Bay, not Miami) |
+| 26 | Belfast | none found; UK-wide Woodland Trust layer only, not a city dataset |
+| 33 | Portland | **published**, gis-pdx.opendata.arcgis.com "Heritage Trees", 300+ points; org-level licence tag CC-BY-SA, item-level licence text not yet read |
+| 39 | Toronto | none found at city level; Ontario-wide nomination programme only |
+| 54 | Auckland | **published**, Auckland Council "Notable Trees Overlay" (legally scheduled trees, Unitary Plan Schedule 10); org-level licence tag CC-BY-SA, item-level licence text not yet read |
+| 58 | Buenos Aires | partial: general "arbolado" datasets on data.buenosaires.gob.ar confirmed CC-BY-2.5-AR via the CKAN API, but the specific 639-specimen historic/notable catalogue's own export/licence not confirmed |
+| 62 | Adelaide | none found as open data (and the TCW match is City of Onkaparinga, not Adelaide); a Significant Trees framework exists but as a planning-code overlay, not a confirmed downloadable dataset |
+| 64 | Mumbai | internal-only; BMC's first heritage-tree survey was reported still in progress, no released list found |
+| 93 | New York | lead only; "Great Trees of New York City" (120 curated trees) is not confirmed as a geodata export, and nycgovparks.org itself soft-blocks fetches (see fetch-blocklist.json) |
+
+**What this means for how a run should use TCW certification going
+forward.** It is a real, free, zero-cost-to-check signal (this whole
+cross-reference cost one feature-service query and no scraping), so checking
+it before a from-zero web research pass on any queue city costs nothing and
+sometimes saves the whole 500k-token dead end. But it is a lead, not a
+licence: two of ten promising checks needed real digging past the FAO badge
+to find an actual open dataset, and even those two still need their
+item-level ArcGIS licence text read (not just the org-level tag) before
+anything gets imported. The other ~205 certified-but-unchecked queue cities
+in `data/tree-cities-map.json`'s full match list (minus the 22 register-less
+ones already flagged, minus the 10 checked here) are unscouted and should be
+checked individually, city by city, rather than assumed.
+
+No host hung this pass (nothing added to `data/fetch-blocklist.json`); the
+known `nycgovparks.org` and `portlandmaps.com` entries already there were
+both encountered again and both behaved exactly as documented.
