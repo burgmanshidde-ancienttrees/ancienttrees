@@ -1,0 +1,41 @@
+{
+  "pin_corrections_needed": [
+    {
+      "tree_id": "hkg_005",
+      "issue": "The published pin for hkg_005 (The King Camphor of Sha Lo Wan) sits roughly 303 metres from the government register's own coordinate for the same tree. Published: 22.285321, 113.900627. Register (AFCD/KS/005, tr_no AFCD/IS/00001, 'Sha Lo Wan Tsuen, Lantau (The slope next to the school)', in data/registers/hongkong-ovt.json, dbh 2200mm, height 19m): 22.283796, 113.903071. Both describe the identical tree by name and location text ('the slope next to Sha Lo Wan School'), so this is a coordinate discrepancy on the same tree, not two different trees. hkg_005's own notes in hong-kong.json say its coordinates were 'converted from its HK1980 Grid reference (808051/816127)' using a manual Transverse Mercator inverse transform implemented and self-checked in an earlier session (see hkg_001's notes for the method). The data/registers/hongkong-ovt.json entries carry latitude/longitude directly, no grid conversion needed, which is very likely a direct WGS84 field the AFCD register itself provides. CONCLUSION: the register's direct lat/lon (22.283796, 113.903071) is more likely correct than the earlier session's manually converted point, because it skips a conversion step that is a known source of error (the HK1980 Grid to WGS84 transform is exactly the kind of arithmetic that is easy to get subtly wrong, and this project's own notes on hkg_001 describe that transform as self-implemented and self-checked rather than independently verified). This pass did NOT edit hong-kong.json (verification passes do not edit city files); recorded here for a pin-correction pass to action. Recommend re-deriving hkg_001 through hkg_004 and hkg_006's coordinates the same way, from data/registers/hongkong-ovt.json's direct lat/lon fields where a matching ovt_no exists, and comparing each against the currently published pin before trusting the manual grid conversion for any of them."
+    }
+  ],
+  "leads": [
+    {
+      "ovt_no": "LCSD YTM/41",
+      "species": "Ficus microcarpa, Granville Square",
+      "reason": "dbh 2200mm, height 23m, 1068m from hkg_001. A prominent Tsim Sha Tsui East shopping-district location, not chosen this pass in favour of the closer Nathan Road specimen (hkg_010, 502m) and Kowloon Park camphor (hkg_009); no known problem, just not needed to reach this pass's count of 4."
+    },
+    {
+      "ovt_no": "LCSD YTM/40",
+      "species": "Ficus microcarpa, Signal Hill Garden",
+      "reason": "dbh 1950mm, 1084m from hkg_001. Signal Hill Garden is home to the historic Blackhead Point Tower (a Grade I time-ball tower), which would give this tree a strong companion landmark; not researched further this pass purely for time, not for any known problem. Worth a look on a future Hong Kong pass."
+    },
+    {
+      "ovt_no": "ARCHSD YTM/13",
+      "species": "Cinnamomum camphora, Kowloon Park Drive Children's Playground (second, smaller camphor)",
+      "reason": "dbh 1350mm, standing in the same playground as the published hkg_009 (dbh 2000mm). Left as a lead rather than shipped alongside it to avoid two near-identical entries from one playground."
+    },
+    {
+      "ovt_no": "HKP WCH/1",
+      "species": "Ficus elastica, Leighton Road, Post Office Recreation Club, Wan Chai",
+      "reason": "dbh 5000mm, height 25m, crown spread 50m, the single largest-girth OVT candidate found in the whole register this pass, tied with Lugard Road's Ficus elastica. On private Hong Kong Post recreation club land rather than open parkland; public access not confirmed this pass. Worth checking hard rule 10 access before researching further, given the size alone makes it a strong candidate if genuinely open."
+    },
+    {
+      "ovt_no": null,
+      "species": "Ficus elastica, Lugard Road (Hong Kong Trail) near No.28",
+      "reason": "dbh 5000mm, height 25m, on the Peak's Hong Kong Trail, 1933m from the nearest published tree (hkg_002). A completely separate cluster (the Peak) from anything currently on the page; not researched this pass for time, not for any known problem. Worth its own look as a possible new Hong Kong cluster (Victoria Peak) on a future pass."
+    },
+    {
+      "ovt_no": "LCSD CW/103",
+      "species": "Ficus virens, Hong Kong Park, outside the perimeter wall of the Tai Chi Garden",
+      "reason": "dbh 2710mm, height 20m, crown spread 34m, the largest candidate in the Central district, 3143m from hkg_001 and roughly 3km from the Forbes Street/Ka Wai Man Road cluster. The brief specifically asked whether any stonewall or notable trees sit 'within reach of the existing Kowloon Park cluster or Central'; this is the strongest Central candidate found, but at 3+ km from every currently published tree it would need to anchor a wholly new 'Central' cluster rather than extend an existing walk, which this topping-up pass (needing only 4 trees) did not have room for. Strong candidate for a future Hong Kong deepening pass built around Hong Kong Park / Central specifically."
+    }
+  ],
+  "blocked": []
+}
