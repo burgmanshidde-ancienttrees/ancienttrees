@@ -175,37 +175,37 @@
       "age_min": 165,
       "age_max": 185,
       "location": {
-        "address": "Pekingtuin, Javalaan side of the park (bounded by Stationsweg, Nijverheidstraat, Bosstraat and Javalaan), Baarn",
-        "latitude": 52.20956,
-        "longitude": 5.29203,
+        "address": "Pekingtuin, on the lawn near the Javalaan side, Baarn",
+        "latitude": 52.209694,
+        "longitude": 5.292861,
         "neighbourhood": "Pekingtuin, village centre, near Baarn railway station"
       },
-      "story": "In October 2021 the municipality of Baarn asked its residents what to write on a ring around a tree. Around twenty people sent something in. The line that won came from the poet Ewoud M. Rosenthal, submitted by his daughter, and it now runs around a steel band six metres across and twenty centimetres high, set into the grass of the Pekingtuin.\n\nThe ring is not decoration. It marks off the root plate of a northern red oak planted around 1850, now 5.52 metres around, and it is there to keep feet off the soil above the roots and to hold the fallen leaves in place so they rot down where they landed. Compacted ground is one of the quietest ways to kill an old tree, and the town decided this one was worth a fence you can read.\n\nThe species is the other half of the story. Quercus rubra comes from the eastern United States, and the Dutch call it the Amerikaanse eik. It was planted here as an exotic in a private pleasure garden decades before the villa quarter and the railway around it took their present shape, and it outlasted the garden: the Pekingtuin is now a free municipal park, five minutes on foot from Baarn station.\n\nThe pin marks the Javalaan side of the park rather than the exact stem.",
+      "story": "Planted around 1850 and now 5.52 metres around, the American oak of the Pekingtuin is the heaviest trunk in Baarn's village centre, and it stands five minutes from the railway station in a park that costs nothing to enter.\n\nQuercus rubra comes from the eastern United States, and the Dutch call it the Amerikaanse eik. This one went into the ground as an exotic in the private grounds of Villa Peking, decades before the railway and the villa quarter around it took their present shape. What is left of that garden is the park: a wide lawn carrying very large trees, most of them oaks, with a bandstand from 1948 at one end. The Torenlaan that ends at the villa was laid out in the 18th century as a sight line to the tower of the Pauluskerk, so the ground this tree stands on was already being composed as a view a century before anybody planted it.\n\nThe park's best known feature belongs to a different tree. About sixty metres west, a smaller one stands inside a corten steel ring carrying a line by the poet Ewoud M. Rosenthal, set into the grass in 2021 to keep feet off the roots. The oak has no ring around it. It is simply the biggest thing on the lawn.",
       "best_time": {
         "months": [
           10,
           11
         ],
         "kind": "autumn colour",
-        "label": "late October and November, when the leaves go scarlet and stay inside the ring to compost"
+        "label": "late October and November, when a red oak's leaves turn scarlet"
       },
       "verified_sources": [
-        "https://nl.wikipedia.org/wiki/Pekingtuin",
-        "https://www.baarnschecourant.nl/lokaal/overig/765077/bijzondere-boomring-geplaatst-in-baarnse-pekingtuin",
-        "https://www.oozo.nl/nieuws/baarn/2879690/bijzondere-boomring-geplaatst-in-baarnse-pekingtuin",
+        "https://nl.wikipedia.org/wiki/Pekingtuin (the Amerikaanse eik in the park, planted around 1850, girth 5.52m; park freely accessible)",
+        "https://www.baarnschecourant.nl/lokaal/overig/765077/bijzondere-boomring-geplaatst-in-baarnse-pekingtuin (the 2021 poetry ring, which stands around a different tree in the same park)",
         "https://groenegraf.blogspot.com/2017/09/huize-peking-huize-holland-en-huize.html",
-        "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (PDOK Actueel_orthoHR: the ~6m 2021 protective ring is individually visible around the standing tree in the most recent national aerial survey)"
+        "On-site check 2026-08-11: the oak photographed and its position taken at 52.209694, 5.292861; the ringed tree stands about 60m west"
       ],
       "access": "Free, publicly accessible municipal park",
       "transport": "Baarn railway station, roughly 5-10 minute walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://ancienttrees.app/photos/brn_005-pekingtuin-oak.jpg",
+        "license": "Ancient Trees, own photograph (2026-08-11)",
+        "attribution": "Ancient Trees",
+        "status": "approved"
       },
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "how_to_recognise": "The very large oak standing alone on the lawn, with a trunk over five metres round. Not the smaller tree inside the steel ring with the poem on it, which stands about sixty metres west."
     }
   ]
 }
