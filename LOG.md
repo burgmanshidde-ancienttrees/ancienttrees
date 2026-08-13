@@ -11,6 +11,12 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-13 - The Brabants Dagblad mail was about to claim something Den Bosch had not done
+
+Hidde said he never followed up with Roel. Checked the draft against the live site before handing it back rather than trusting it, and the check earned its keep: the mail says every tree now tells you how to recognise it when you are standing there, which was Roel's own complaint, and six of the eleven trees (dbo_001, 003, 005, 006, 008, 009) carried no `how_to_recognise` line at all. Sending that to the one reader who has walked to a Den Bosch tree and could not tell which trunk was ours would have been disprovable in two clicks.
+
+Written for all six, from what their own stories and the municipal register already say rather than from anything new: the Sint Janskerkhof plane by its six-metre trunk on the Choorstraat corner, the Casinotuin copper beech by its dark red crown against the weeping beech thirteen metres off, the silver maple by leaves that turn over white along the Oude Dieze, the Hekellaan plane as the only plane at that park entrance, the Bastion Vught entry as three trees rather than one, the Weichselboom as the tree rooted into the old city wall. All eleven carry one now; `preflight.py` clean across 105 cities. `drafts/reply-brabants-dagblad.md` is true as written and still needs Hidde to send it.
+
 ## 2026-08-13 - Paulo's yes in writing, and a Braga ginkgo off the shelf of his own comments
 
 Hidde forwarded Paulo Araújo's reply: we may use the ginkgo photograph, he likes the story, and he picks the conversation back up at the end of August. His caveat needed checking rather than believing, because he has written about this tree twice: only one of the two posts carries photographs that are his. Fetched both. The photo already live (por_018) is the lead image of "Alerta amarelo", 5 December 2005, credited "Fotos: © Paulo V. Araújo", so his grant covers exactly what we publish. The 2004 post's ginkgo photographs are credited to a third person and are now recorded in CURATION.md as permanently off limits, because they are the prettier set and the next photo pass would find them first.
