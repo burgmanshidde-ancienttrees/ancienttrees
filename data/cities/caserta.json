@@ -3,7 +3,7 @@
   "country": "Italy",
   "status": "needs_curation",
   "intro": "Caserta's remarkable trees are all in one place, and it is not the town. In 1786 Maria Carolina had 23 hectares at the top of the royal park turned into the first landscape garden in Italy, and John Andrew Graefer filled it with species nobody in Campania had seen. What survives is a walk of a few hundred metres past a cedar seven and three quarter metres round, a Douglas fir of forty metres, a plane that grew sideways, and a yew that was already old when it was carried in.",
-  "meta_description": "Seven monumental trees inside the English Garden of the Reggia di Caserta: a cedar 7.75 m round, a 40 m Douglas fir, and a yew older than the garden.",
+  "meta_description": "Ten monumental trees inside the English Garden of the Reggia di Caserta: a cedar 7.75 m round, a 40 m Douglas fir, and a yew older than the garden.",
   "question_meta": "Caserta's oldest tree is almost certainly the yew at the Bath of Venus, already mature when it was set in place in the 1790s.",
   "question_answer": "Caserta's oldest tree is almost certainly the European yew at the Bath of Venus, in the English Garden of the Reggia. The Campania regional register calls it one of the patriarchs of the garden and records that it was already a mature tree when it was put in place at the garden's creation in the 1790s, which puts it comfortably past 250 years even though the age field on the same record says only 150. The Douglas fir and the camphor tree a few hundred metres downhill are each given about 200 years, and no tree in Caserta has been dated by counting rings.",
   "question_context": "Every age on this page comes from one place, the Campania regional register of monumental trees, and every age on it is an eta presunta, an estimate. The national MASAF register lists the same trees with the same girths and heights but carries no age field at all, so the two agree on what stands where and only one of them says how old it is. That matters more here than in most cities, because almost nothing in this garden is native and almost nothing was planted before 1786. Maria Carolina commissioned the garden that year on the advice of Sir William Hamilton, the British ambassador in Naples, and John Andrew Graefer, the gardener sent to build it, spent a decade collecting exotics from Capri, Salento and Palermo. Under Giovanni Gussone and Nicola Terracciano it later became a working botanical garden. So most of these trees are between 150 and 240 years old, and where a register says 200 it means the first planting rather than a measurement. The park also loses trees in storms, most recently a monumental Monterey cypress in December 2019, so treat any single specimen as something to check before a long trip.",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Do you have to pay to see them?",
-      "a": "Yes. All seven stand inside the English Garden of the Reggia di Caserta, which is covered by the combined Royal Park and English Garden ticket, 9 euro plus a 1 euro online fee. A 3 euro park-only ticket exists but excludes the English Garden. Closed Tuesdays."
+      "a": "Yes. All ten stand inside the English Garden of the Reggia di Caserta, which is covered by the combined Royal Park and English Garden ticket, 9 euro plus a 1 euro online fee. A 3 euro park-only ticket exists but excludes the English Garden. Closed Tuesdays."
     },
     {
       "q": "Can you walk between them?",
-      "a": "Easily, once you are there. Six of the seven sit within about 200 metres of each other in the flat southern part of the English Garden that the royal gardeners called the Palco, and the yew is 500 metres further up. Getting to the garden is the long part: it is roughly 2.5 km from the palace gate along the main axis, or take the electric shuttle."
+      "a": "Easily, once you are there. Nine of the ten sit within about 200 metres of each other in the flat southern part of the English Garden that the royal gardeners called the Palco, and the yew is 500 metres further up. Getting to the garden is the long part: it is roughly 2.5 km from the palace gate along the main axis, or take the electric shuttle."
     },
     {
       "q": "Which is the strangest?",
@@ -253,6 +253,96 @@
       },
       "curation_status": "ai_generated",
       "notes": "MASAF sheet 23/B963/CE/15 (420 cm, 28 m) and Campania scheda 218 agree on measurements and coordinate. The scattered smaller cork oaks are stated by the regional card, not inferred. Age is 'over 150 years' from the regional register only.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cas_008",
+      "name": "The Coast Redwood of the English Garden",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "over 150 years",
+      "age_min": 150,
+      "age_max": 240,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09334,
+        "longitude": 14.33028,
+        "neighbourhood": "Giardino Inglese"
+      },
+      "story": "Redwoods do not usually reach four and a half metres of trunk this fast. On the fog-fed Pacific coast where Sequoia sempervirens is native, that girth marks a tree several centuries old; this one did it in about a hundred and fifty years, on the far side of the planet from northern California. The Campania forestry register does not date it by ring count. It reasons the age instead: past 4.69 metres around the trunk the species already clears the regional threshold for monumental status, and the tree went into the ground with the rest of the English Garden's plantings, so a century and a half follows from the garden's own history rather than a direct measurement. Twenty-six metres up, little about the tree reads as Mediterranean. The bark is the giveaway: deep, spongy, fissured red-brown, built to shrug off fire in a climate this garden has never had to test it against. Coast redwood is one of the tallest living things on the planet and one of the newer arrivals in this eighteenth-century garden, added long after the original 1786 layout that John Graefer designed for Queen Maria Carolina. It shares no relation with anything else on this list, which is exactly the point of a garden built to hold one of everything.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_217.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "MASAF sheet 22/B963/CE/15 and Campania scheda 217 agree on 469 cm girth and 26 m height; both sit on the shared garden centroid coordinate rather than a tree-specific fix.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cas_009",
+      "name": "The Chilgoza Pine of the English Garden",
+      "species": "Chilgoza Pine (Pinus gerardiana)",
+      "age_estimate": "about 150 years",
+      "age_min": 130,
+      "age_max": 200,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09376,
+        "longitude": 14.32996,
+        "neighbourhood": "Giardino Inglese"
+      },
+      "story": "Two trees in Caserta's monumental register share the title of tallest, and this pine is one of them: forty metres, tied with the Douglas fir a short walk away. Pinus gerardiana is a strange choice for a European garden. It grows wild only in the dry inner valleys of the north-west Himalaya, across Pakistan, Afghanistan and northern India, where its seeds, chilgoza pine nuts, are a real harvested crop rather than a curiosity, sold by weight in markets from Kabul to Delhi. Almost nothing else in cultivated Europe reaches this size; most specimens outside the species' native range stay ornamental and modest. This one has a girth of three metres ten, respectable rather than remarkable next to the garden's giant cedars and redwoods, and the height is the whole story: whoever planted it, sometime in the century and a half the register credits it with, gave it the room and the time to do something the species rarely gets to do this far from the mountains it comes from. The needles grow in bundles of three, unusually long, and the cones take two full years to ripen the seeds inside them. Nobody has recorded checking whether it still fruits this far from home, but if it does, autumn is when to look.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_267.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "MASAF sheet 40/B963/CE/15 and Campania scheda 267 agree on 310 cm girth and 40 m height, tying it with cas_004's Douglas fir for the tallest tree in the Caserta register.",
+      "location_precision": "approximate"
+    },
+    {
+      "id": "cas_010",
+      "name": "The Second Plane of the English Garden",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "over 150 years",
+      "age_min": 150,
+      "age_max": 240,
+      "location": {
+        "address": "Giardino Inglese, Reggia di Caserta, Viale Douhet 2/a, 81100 Caserta",
+        "latitude": 41.09266,
+        "longitude": 14.33058,
+        "neighbourhood": "Giardino Inglese"
+      },
+      "story": "Caserta's monumental register credits only one tree in the entire city with a wider trunk than this one, the cedar of Lebanon at the far end of the same garden. This plane measures seven metres twenty around, which makes it the widest broadleaf tree the register has found anywhere in Caserta, plane, oak or otherwise. Platanus x acerifolia lines half of Europe's boulevards as a pollarded street tree kept small on purpose; nothing gets this wide doing that job. This one has had the opposite treatment since the English Garden's layout went in for Queen Maria Carolina in 1786: room, undisturbed roots, and nobody ever cutting it back. Twenty-five metres tall, in the lower stretch of the garden closest to the palace, the section finished first and given the longest run of any part of the grounds to grow into itself. It carries none of the low, sinuous branching that makes its garden-mate near the entrance famous for its shape. This one went straight up and simply kept getting wider, plain in form and enormous in scale, a different argument for the same species.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_271.html"
+      ],
+      "access": "Paid. Inside the English Garden of the Reggia di Caserta, covered by the combined Royal Park and English Garden ticket (9 euro, plus 1 euro if booked online). Closed Tuesdays.",
+      "transport": "Caserta station faces the palace. From the park gate it is about 2.5 km up the main axis to the English Garden, or take the electric shuttle.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "notes": "MASAF sheet 44/B963/CE/15 and Campania scheda 271 agree on 720 cm girth, the second-thickest trunk in the whole Caserta register after cas_001's cedar of Lebanon (775 cm).",
       "location_precision": "approximate"
     }
   ]
