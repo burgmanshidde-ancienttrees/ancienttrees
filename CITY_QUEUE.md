@@ -129,7 +129,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 1 | Porto | 4.00 | 120,415 | 27 | 5 | 2 | 40 | 20 | measured |
 | 2 | Vienna | 5.00 | 283,090 | 25 | 13 | 5 | 375 | 20 | measured |
 | 3 | Los Angeles | 7.19 | 665,559 | - | - | - | - | 10 | predicted (thin competition) |
-| 4 | Portland | 4.78 | 217,222 | - | - | - | 262 | 10 | predicted (thin competition) |
+| 4 | Portland | 4.78 | 217,222 | 10 | - | 1 | 262 | 10 | predicted (thin competition) |
 | 5 | Funchal | 4.36 | 174,351 | - | - | - | - | 10 | predicted (thin competition) |
 | 6 | Sintra | 4.00 | 46,889 | 5 | 3 | 1 | 6 | 10 | measured |
 | 7 | Rio de Janeiro | 6.15 | 279,431 | - | - | - | - | 10 | predicted (thin competition) |

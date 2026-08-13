@@ -146,8 +146,33 @@ def check_recognise(slug, d):
     return out
 
 
+# Two cities must never share an id prefix. Added 2026-08-13, after a Portland
+# write pass came back with ten trees numbered por_001 to por_010, which is
+# Porto's prefix and covers ten live, indexed Porto trees. Merging would have
+# overwritten them, which is hard rule 3. The writing pass caught it and refused;
+# the brief that told it to use por_ was mine, written without running
+# passcheck.py --brief, which prints the free prefix precisely so this cannot
+# happen. A mechanism nobody runs is not a mechanism, so this one runs itself.
+def check_id_prefixes():
+    import collections
+    owner = collections.defaultdict(set)
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for tree in d.get("trees") or []:
+            tid = tree.get("id") or ""
+            if "_" in tid:
+                owner[tid.split("_")[0]].add(d.get("city") or path)
+    out = []
+    for prefix, cities in sorted(owner.items()):
+        if len(cities) > 1:
+            out.append("id prefix %r is used by %s: two cities sharing a prefix "
+                       "will overwrite each other's trees" % (prefix, ", ".join(sorted(cities))))
+    return out
+
+
 def main():
-    problems = []
+    problems = check_id_prefixes()
     files = sorted(glob.glob("data/cities/*.json"))
     for p in files:
         problems += check_city(p)

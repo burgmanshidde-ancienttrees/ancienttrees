@@ -1166,6 +1166,33 @@
     "note": "Hobart imported, 460 with species on all of them. The previous pass's PDF conclusion was wrong: species sit in the layer's own coded-value domain, one ?f=json call, no PDFs. Sydney blocked on an explicit licence:none despite a fully instrumented register. Vancouver's heritage trees carry no coordinates at all. Melbourne has no designation field so the Bordeaux technique fails there. Toronto has no notable-tree dataset",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "portland",
+    "kind": "verify",
+    "tokens": 197757,
+    "trees": 10,
+    "note": "Portland opened from the Heritage Tree register; found 13 dead the import had missed, two confirmed by a 2026 delisting ordinance the register had not caught up with",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "hobart+singapore",
+    "kind": "verify",
+    "tokens": 207212,
+    "trees": 10,
+    "note": "Hobart 7 from zero (two walks, RTBG founded 1818), Singapore +3 checked by coordinate against all 7 published; 13 register rows correctly excluded as duplicates. Caught that Tiong Bahru's 22.8m banyan is under 60 years old despite what a generic search says",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "portland",
+    "kind": "write",
+    "tokens": 119747,
+    "trees": 10,
+    "note": "10 stories opening Portland. Refused to merge on its own initiative: all ten ids collided with live Porto trees. Also corrected two false premises in my brief (the height record and the best_time rule) and fixed a species that would have split English Elm across two Latin names",
+    "wasted": 0,
+    "brief_wrong": true
    }
   ]
  }
