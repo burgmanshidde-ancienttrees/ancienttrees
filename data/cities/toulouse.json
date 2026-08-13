@@ -1,0 +1,254 @@
+{
+  "city": "Toulouse",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Toulouse's remarkable trees do not gather in one place, so this page holds three loose clusters rather than a route. Four stand along the corridor from the Jardin des Plantes through the Grand Rond to Place Saint-Georges. Two more sit across the river in Saint-Cyprien. The last is out at the Terre-Cabade cemetery, and it is the only one a newspaper has ever written about.",
+  "meta_description": "Eight remarkable trees in Toulouse, from the Jardin des Plantes to a cemetery cedar: the city's own register, and one tree the press has covered.",
+  "question_meta": "Toulouse's best documented tree is the cedar of the Terre-Cabade cemetery, the only one covered by the press. Where it stands, plus seven more.",
+  "question_answer": "Toulouse's best documented remarkable tree is the one in the Terre-Cabade cemetery, the single entry on this page that an independent source has written about, in a France 3 regional survey of 2025 whose description matches the city register's coordinate to within forty-five metres. It stands about 1.6 kilometres east of the centre in a free public cemetery. The city's own register records no age for any of its remarkable trees, so this page gives none where none exists rather than estimating.",
+  "question_context": "Toulouse publishes its entire urban tree inventory, over a hundred and twenty thousand trees, and flags a small number as remarkable. Only that flagged subset is used here. What it gives is genus, species, a development stage and a coordinate, and what it does not give is an age, a girth or a height, which is why almost every tree on this page carries no measurement at all. Nine candidates from the same subset are absent and the reason matters: two reverse-geocode onto public school grounds and seven onto private residential addresses, and a tree behind a gate is not one a visitor can go and see. Three more near the Rue de Tunis may sit inside a garden that is currently closed to the public, and they are recorded as unresolved rather than published or dismissed. One caution shapes all of it: a flag in a municipal inventory is an administrative decision, not a measurement. Where a second source exists it is named in that tree's own story, and where none does, the story says the register is all there is.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Toulouse?",
+      "a": "Unknown. The city's remarkable-tree register carries no age field at all, so this page reports what the trees are and where they stand rather than how old they are."
+    },
+    {
+      "q": "Are Toulouse's remarkable trees free to visit?",
+      "a": "The ones here are. The register also flags trees on school grounds and at private addresses, and those are deliberately absent, because a visitor cannot reach them."
+    },
+    {
+      "q": "Can I see them in one walk?",
+      "a": "Not all eight. Four sit along the Jardin des Plantes and Grand Rond corridor within about a kilometre; two are across the river in Saint-Cyprien and one is out at the cemetery."
+    }
+  ],
+  "hero_tree_id": "tls_001",
+  "oldest_tree_id": "tls_001",
+  "trees": [
+    {
+      "id": "tls_001",
+      "name": "The Signposted Oak of Jardin des Plantes",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Jardin des Plantes, Allee Jules-Guesde",
+        "latitude": 43.5937107491785,
+        "longitude": 1.4509331598221724,
+        "neighbourhood": "Jardin des Plantes / Capitole"
+      },
+      "story": "Two entirely separate sets of people decided this oak was worth pointing at. Toulouse's urban tree inventory carries it under the city's own remarkable label, and volunteer mapmakers have independently marked the same spot in the Jardin des Plantes as a named, signposted specimen: chene pedoncule, pedunculate oak. Neither of them recorded how old it is, and no other source names it, so the honest answer on age is that nobody has published one. What the two records do between them is confirm that the tree exists, where it stands and what it is, which is more than most entries on a municipal list can claim. It grows in a seven hectare botanical garden on the Allee Jules-Guesde, the middle link in a chain of three public gardens that run into one another along the eastern edge of the city centre. Pedunculate oak is the great long-lived oak of northern Europe, routinely passing five hundred years where nothing interferes with it, and it is not a Mediterranean tree by temperament. This far south it is planted rather than wild. In autumn it drops acorns on long stalks, the peduncles the species is named for, which is the detail that separates it from the sessile oaks it otherwise resembles. Free, open daily, and central.",
+      "verified_sources": [
+        "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 6372, remarkable_label_source: Ville de Toulouse)",
+        "https://en.wikipedia.org/wiki/Jardin_des_Plantes,_Toulouse"
+      ],
+      "access": "Free, public botanical garden (Jardin des Plantes, 7 hectares, open daily)",
+      "transport": "Central Toulouse; Toulouse metro Line B, Palais de Justice or Carmes station, then a short walk (exact stop not independently verified this pass)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tls_002",
+      "name": "The Wych Elm by the Grand Rond",
+      "species": "Wych Elm (Ulmus glabra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Near Boulingrin / Jardin du Grand Rond, Allee Jules-Guesde area",
+        "latitude": 43.595,
+        "longitude": 1.4525,
+        "neighbourhood": "Grand Rond / Boulingrin"
+      },
+      "story": "A big elm in western Europe is unusual enough to be the story. Dutch elm disease, a fungus carried between trees by bark beetles, killed most of the continent's large elms across the twentieth century in two waves, the second and far worse one from the 1960s onward, and a mature wych elm still standing in a city centre has survived something that removed its species almost everywhere else. This one is on Toulouse's own list of remarkable trees, at the Boulingrin, the local name for the Jardin du Grand Rond, a circular garden about two hundred metres across that the city's main avenues run into. The register is also all there is. It gives the species and the position and then stops: no age, no measurements, no description, and no other source names this tree at all. So take the species as the reason to go and treat any claim about its size as unmeasured. Wych elm is the elm that does not sucker, which means every one of them grew from a seed rather than from a parent's roots, and the seeds are the thing to look for. They come out in spring before the leaves, flat papery discs in dense clusters, green and then pale, hanging thickly enough to pass for foliage from a distance.",
+      "verified_sources": [
+        "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 15138, remarkable_label_source: Ville de Toulouse)"
+      ],
+      "access": "Free, public garden area (Boulingrin / Jardin du Grand Rond)",
+      "transport": "Central Toulouse; Toulouse metro Line B, Palais de Justice or Carmes station, then a short walk (exact stop not independently verified this pass)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tls_003",
+      "name": "The Osage Orange of the Grand Rond",
+      "species": "Osage Orange (Maclura pomifera)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Near Boulingrin / Jardin du Grand Rond, Allee Jules-Guesde area",
+        "latitude": 43.5962,
+        "longitude": 1.4529,
+        "neighbourhood": "Grand Rond / Boulingrin"
+      },
+      "story": "This tree drops fruit that nothing alive is meant to eat. The Osage orange produces heavy green spheres the size of a grapefruit, wrinkled like a brain and full of sticky latex, and no native North American animal disperses them. The standing explanation is that the animals which did, mammoths and giant ground sloths among them, went extinct around thirteen thousand years ago, and the tree has been dropping its fruit into an empty niche ever since. It got a second career from people instead. Osage orange wood is dense, springy and almost rot-proof, the timber the Osage nation made bows from, and American farmers planted it by the million in the nineteenth century as living fence, until barbed wire arrived and made it redundant in about a decade. Toulouse has one on its remarkable tree list near the Boulingrin, at the edge of the Grand Rond. The register gives the species and the position and nothing else, no age and no measurements, and no independent source names this specific tree, so what is documented is that the city looked at it and marked it out. Standing in front of one, that is easy enough to believe. The bark alone is worth the detour, deep orange-brown and fissured into long twisting ridges.",
+      "verified_sources": [
+        "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 15353, remarkable_label_source: Ville de Toulouse)"
+      ],
+      "access": "Free, public garden area (Boulingrin / Jardin du Grand Rond)",
+      "transport": "Central Toulouse; Toulouse metro Line B, Palais de Justice or Carmes station, then a short walk (exact stop not independently verified this pass)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tls_004",
+      "name": "The Hackberry of Place Saint-Georges",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Place Saint-Georges",
+        "latitude": 43.6022,
+        "longitude": 1.4475,
+        "neighbourhood": "Saint-Georges / Capitole"
+      },
+      "story": "The small dark berries on this tree are edible, and they taste faintly of dates. Mediterranean hackberry has been the standard tree of squares across southern France and Spain for centuries, partly for the fruit and mostly for the shade: deep-rooted, drought-hardy, indifferent to paving and heat, carrying a dense rounded crown on a trunk that stays smooth and grey for decades, closer to a beech than to an oak. This one holds Place Saint-Georges, a few minutes' walk from the Capitole, and it is on Toulouse's own list of remarkable trees. Be clear about what that list says. It records the species and the position, gives no age and no measurements, and files the tree at the adult development stage rather than the oldest category it uses, so this is a mature specimen and not an ancient one, listed for what it does to the square rather than for its years. That is a reasonable case to make in a city built almost entirely of brick, which takes in the day's heat and hands it back all evening. Toulouse's squares live or die on their canopies, and the species that copes best in them is the one that came from a hotter climate to begin with. The berries ripen dark in autumn and the birds usually get there first.",
+      "verified_sources": [
+        "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 4387, remarkable_label_source: Ville de Toulouse)"
+      ],
+      "access": "Free, public square (Place Saint-Georges, central Toulouse)",
+      "transport": "Toulouse metro Line A, Capitole or Esquirol station, then a short walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tls_005",
+      "name": "The Grieving Hackberry of Terre-Cabade",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Cimetiere de Terre-Cabade, 1 Avenue du Cimetiere",
+        "latitude": 43.6074,
+        "longitude": 1.4657,
+        "neighbourhood": "Guilheméry / Cote Pavee"
+      },
+      "story": "This tree came up between two gravestones and neither of them has moved. The hackberry in Terre-Cabade cemetery has grown to over four metres around the trunk and twenty-six metres tall out of a gap barely wide enough to start in, and the association Arbres et Paysages d'Autan has classified it an arbre exceptionnel for Haute-Garonne. It is the best documented tree on this page by a distance: the city's remarkable tree register and an independent regional survey both name it, which none of the others manage. Nobody has published an age. Four metres of girth on a Celtis australis means a long-established tree rather than a young one, and that is as far as the evidence goes. The association's description adds something worth watching for on a hot afternoon. It says the leaves change their shape through the day to cope with the heat, which in a walled cemetery with very little shade reads as a working adaptation rather than a curiosity. Terre-Cabade opened in the nineteenth century on the hill east of the centre, brick walls and cypresses and a climb to get up to it, and the tree stands in the middle of the graves rather than at the edge of them. Free, open daily from eight until six.",
+      "verified_sources": [
+        "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 21671, remarkable_label_source: Ville de Toulouse)",
+        "https://france3-regions.franceinfo.fr/occitanie/haute-garonne/toulouse/5-arbres-remarquables-a-decouvrir-dans-les-jardins-et-parcs-de-cette-grande-ville-du-sud-ouest-3195915.html"
+      ],
+      "access": "Free, public cemetery, open daily 8h-18h",
+      "transport": "Guilhemery / Cote Pavee district, north-east of the centre; nearest metro/tram stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tls_006",
+      "name": "The Plane of Place Anatole France",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Place Anatole France",
+        "latitude": 43.606,
+        "longitude": 1.4383,
+        "neighbourhood": "Saint-Cyprien"
+      },
+      "story": "Toulouse's register calls this tree Platanus x hispanica and this page calls it Platanus x acerifolia, and both are right. The London plane is a hybrid of an American and an Oriental plane that appeared in seventeenth century Europe without anyone writing down where, and the argument over whether to name it after Spain or after London has never been settled. Botanists still use both, for the same tree. This one stands on Place Anatole France, on the city's own remarkable tree list and nowhere else. That list is the whole file: no age, no measurements, no independent source, and a record of the adult development stage rather than the register's oldest category, so this is a substantial mature plane and not a veteran. One thing worth stating plainly, because a search will turn it up. Toulouse has a well known plane with an enormous burl growing out of its trunk in the Jardin Royal, and this is not that tree. No source connects the two, and this page does not either. What this one offers is the ordinary excellence of the species: a wide clean crown thrown over a busy square, and bark that sheds in plates all summer instead of letting a century of city grime build up on it.",
+      "verified_sources": [
+        "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 4794, remarkable_label_source: Ville de Toulouse)"
+      ],
+      "access": "Free, public square (Place Anatole France, Saint-Cyprien)",
+      "transport": "Saint-Cyprien district, left bank of the Garonne; nearest metro/tram stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tls_007",
+      "name": "The Judas Tree of Fer a Cheval",
+      "species": "Judas Tree (Cercis siliquastrum)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Rue des Arcs Saint-Cyprien area, Fer a Cheval",
+        "latitude": 43.5954,
+        "longitude": 1.4314,
+        "neighbourhood": "Saint-Cyprien / Fer a Cheval"
+      },
+      "story": "The flowers on this tree come straight out of the bark. Judas trees are cauliflorous, meaning the blossom breaks directly from the trunk and the oldest branches rather than from new shoots, and for two or three weeks in early spring a mature one is covered in hard magenta pea flowers before a single leaf has opened. The name is probably a mistranslation. Cercis siliquastrum is the arbre de Judee, the tree of Judea, where it grows wild; somewhere along the way that turned into the tree Judas hanged himself from, with the flowers reddening in shame, which is the better story and almost certainly not the origin. Toulouse has one on its remarkable tree list in the Fer a Cheval part of Saint-Cyprien, on the left bank of the Garonne. Two honest caveats come with it. The register gives the species and the position and nothing else, no age, no size, no description, and no other source names it. And the setting needs checking on the day: the ground here maps as sports fields, which normally means you can walk through it, but this page has not confirmed the exact site or its hours. Go expecting a public sports ground rather than a garden. The flowering is the reason to come, and it is short.",
+      "verified_sources": [
+        "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 8837, remarkable_label_source: Ville de Toulouse)"
+      ],
+      "access": "Free, appears to be a public sports-ground/park area (Fer a Cheval, Saint-Cyprien); not independently confirmed this pass",
+      "transport": "Saint-Cyprien district, left bank of the Garonne; nearest metro/tram stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tls_008",
+      "name": "The Second Plane of Fer a Cheval",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Rue des Arcs Saint-Cyprien area, Fer a Cheval",
+        "latitude": 43.5939,
+        "longitude": 1.431,
+        "neighbourhood": "Saint-Cyprien / Fer a Cheval"
+      },
+      "story": "The plane avenues of the Canal du Midi are being cut down. A fungal canker with no treatment reached them in the early 2000s and tens of thousands of trees have been felled and replaced with other species along a waterway that begins in Toulouse, which is the largest thing to have happened to plane trees in this region in two centuries. City planes like this one are not part of that avenue and not part of that programme, worth knowing before you assume every plane in Toulouse is under sentence. This one stands on the Fer a Cheval sports ground in Saint-Cyprien, on the city's remarkable tree list, about a hundred and seventy metres from the Judas tree, which makes those two the closest thing the list offers to a short walk. The rest are scattered across the city as separate errands. The register records the species and the position and adds nothing: no age, no girth, no independent source, and the adult development stage rather than its oldest. The species became the standard tree of industrial-era boulevards for practical reasons, chief among them that it shrugs off hard pollarding year after year. Same access note as its neighbour: this is a sports ground, not a garden, so expect a running track.",
+      "verified_sources": [
+        "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 22412, remarkable_label_source: Ville de Toulouse)"
+      ],
+      "access": "Free, appears to be a public sports-ground/park area (Fer a Cheval, Saint-Cyprien); not independently confirmed this pass",
+      "transport": "Saint-Cyprien district, left bank of the Garonne; nearest metro/tram stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

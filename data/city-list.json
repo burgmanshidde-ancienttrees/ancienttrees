@@ -70,13 +70,6 @@
    "trees": 0
   },
   {
-   "city": "Prague",
-   "country": "Czech Republic",
-   "slug": "prague",
-   "status": "published",
-   "trees": 17
-  },
-  {
    "city": "Shanghai",
    "country": "China",
    "slug": "shanghai",
@@ -107,7 +100,14 @@
    "slug": "palermo",
    "status": "published",
    "demand_views_90d": 124310,
-   "trees": 8
+   "trees": 10
+  },
+  {
+   "city": "Prague",
+   "country": "Czech Republic",
+   "slug": "prague",
+   "status": "published",
+   "trees": 17
   },
   {
    "city": "Beijing",
@@ -384,7 +384,7 @@
    "country": "Germany",
    "slug": "munich",
    "status": "published",
-   "trees": 22
+   "trees": 29
   },
   {
    "city": "Nice",
@@ -431,7 +431,7 @@
    "slug": "hong-kong",
    "status": "published",
    "demand_views_90d": 689212,
-   "trees": 6
+   "trees": 10
   },
   {
    "city": "Jaipur",

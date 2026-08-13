@@ -135,12 +135,12 @@ so qa.py fails the deploy when the table and the json disagree.
 | 7 | Rio de Janeiro | 6.15 | 279,431 | - | - | - | - | 10 | predicted (thin competition) |
 | 8 | Miami | 6.13 | 278,558 | - | - | - | - | 10 | predicted (thin competition) |
 | 9 | Mexico City | 6.12 | 566,583 | - | - | - | - | 10 | predicted (thin competition) |
-| 10 | Prague | 6.00 | 303,350 | 17 | 13 | 3 | - | 30 | measured |
-| 11 | Shanghai | 6.10 | 277,140 | - | - | - | - | 10 | predicted (thin competition) |
-| 12 | Kyoto | 4.00 | 142,353 | 18 | 8 | 2 | - | 20 | measured |
-| 13 | Nuremberg | 4.04 | 161,614 | - | - | - | 37 | 10 | predicted (thin competition) |
-| 14 | Lisbon | 3.00 | 201,877 | 33 | 10 | 3 | 66 | 20 | measured |
-| 15 | Palermo | 3.00 | 124,310 | 8 | 7 | 2 | 45 | 20 | measured |
+| 10 | Shanghai | 6.10 | 277,140 | - | - | - | - | 10 | predicted (thin competition) |
+| 11 | Kyoto | 4.00 | 142,353 | 18 | 8 | 2 | - | 20 | measured |
+| 12 | Nuremberg | 4.04 | 161,614 | 10 | - | 1 | 39 | 10 | predicted (thin competition) |
+| 13 | Lisbon | 3.00 | 201,877 | 33 | 10 | 3 | 66 | 20 | measured |
+| 14 | Palermo | 3.00 | 124,310 | 10 | 7 | 2 | 44 | 20 | measured |
+| 15 | Prague | 6.00 | 303,350 | 17 | 13 | 3 | - | 30 | measured |
 | 16 | Beijing | 5.93 | 269,737 | - | - | - | - | 10 | predicted (thin competition) |
 | 17 | Jakarta | 5.91 | 268,596 | - | - | - | - | 10 | predicted (thin competition) |
 | 18 | Melbourne | 5.89 | 267,898 | - | - | - | - | 10 | predicted (thin competition) |
@@ -168,7 +168,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 40 | Cairo | 4.40 | 176,137 | - | - | - | - | 10 | predicted (thin competition) |
 | 41 | Philadelphia | 4.38 | 405,294 | - | - | - | - | 10 | predicted (thin competition) |
 | 42 | Seattle | 4.31 | 398,724 | - | - | - | - | 10 | predicted (thin competition) |
-| 43 | Toulouse | 2.82 | 112,721 | - | - | - | 33 | 10 | predicted (thin competition) |
+| 43 | Toulouse | 2.82 | 112,721 | 8 | - | 1 | 33 | 10 | predicted (thin competition) |
 | 44 | Manila | 4.17 | 166,894 | - | - | - | - | 10 | predicted (thin competition) |
 | 45 | Como | 2.07 | 82,645 | 7 | - | 1 | 23 | 10 | predicted (thin competition) |
 | 46 | Brisbane | 4.07 | 162,602 | - | - | - | - | 10 | predicted (thin competition) |
@@ -210,11 +210,11 @@ so qa.py fails the deploy when the table and the json disagree.
 | 82 | Quebec City | 3.11 | 124,358 | - | - | - | - | 10 | predicted (thin competition) |
 | 83 | Wroclaw | 3.10 | 123,894 | - | - | - | - | 10 | predicted (thin competition) |
 | 84 | Zagreb | 3.07 | 122,890 | - | - | - | - | 10 | predicted (thin competition) |
-| 85 | Hobart | 2.04 | 81,734 | 7 | - | 2 | 455 | 10 | predicted (thin competition) |
+| 85 | Hobart | 2.04 | 81,734 | 10 | - | 2 | 455 | 10 | predicted (thin competition) |
 | 86 | Leipzig | 3.03 | 121,319 | - | - | - | - | 10 | predicted (thin competition) |
 | 87 | Gothenburg | 3.00 | 119,991 | - | - | - | - | 10 | predicted (thin competition) |
-| 88 | Munich | 2.00 | 224,067 | 22 | 13 | 3 | 74 | 20 | measured |
-| 89 | Nice | 3.00 | 136,877 | 10 | 8 | 2 | - | 20 | measured |
+| 88 | Munich | 2.00 | 224,067 | 29 | 13 | 6 | 76 | 20 | measured |
+| 89 | Nice | 3.00 | 136,877 | 10 | 6 | 2 | - | 20 | measured |
 | 90 | Hanoi | 2.93 | 117,396 | - | - | - | - | 10 | predicted (thin competition) |
 | 91 | Brighton | 2.85 | 114,108 | - | - | - | - | 10 | predicted (thin competition) |
 | 92 | Dresden | 2.84 | 113,624 | - | - | - | - | 10 | predicted (thin competition) |
@@ -231,7 +231,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 103 | Basel | 2.65 | 105,838 | - | - | - | - | 10 | predicted (thin competition) |
 | 104 | Christchurch | 2.62 | 104,874 | - | - | - | - | 10 | predicted (thin competition) |
 | 105 | Malmo | 2.60 | 103,940 | - | - | - | - | 10 | predicted (thin competition) |
-| 106 | Hong Kong | 1.72 | 689,212 | 6 | 2 | - | 505 | 10 | published, never ranked |
+| 106 | Hong Kong | 1.72 | 689,212 | 10 | 2 | 1 | 505 | 10 | published, never ranked |
 | 107 | Matera | 1.68 | 67,033 | - | - | - | - | 10 | predicted (thin competition) |
 | 108 | Bergamo | 1.32 | 52,933 | 7 | - | 1 | 17 | 10 | predicted (thin competition) |
 | 109 | Busan | 2.37 | 94,737 | - | - | - | - | 10 | predicted (thin competition) |

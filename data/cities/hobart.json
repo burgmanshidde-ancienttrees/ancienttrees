@@ -4,7 +4,7 @@
   "status": "needs_curation",
   "intro": "Hobart's significant trees split neatly into two short loops. Four stand on city streets within about 650 metres, including a Norfolk Island pine of the species whose brittle masts disappointed Cook's crew and three dawn redwoods of a tree known only from fossils until 1941. The other three are inside the Royal Tasmanian Botanical Gardens, founded in 1818 and the second oldest in Australia, where a Douglas fir planted in 1894 is older than the country it stands in.",
   "meta_description": "Seven significant trees in Hobart: dawn redwoods known only as fossils until 1941, and a Douglas fir older than Australia itself.",
-  "question_meta": "Hobart's oldest dated tree is the pair of giant sequoias planted in 1879 at the Botanical Gardens entrance. Where they stand, plus five more.",
+  "question_meta": "Hobart's oldest dated tree is the pair of giant sequoias planted in 1879 at the Botanical Gardens entrance. Where they stand, plus nine more.",
   "question_answer": "The oldest trees in Hobart with a documented date are the two giant sequoias on the entrance drive of the Royal Tasmanian Botanical Gardens, planted in 1879 and so 147 years old, which for a species that lives past three thousand years is barely a start. The National Trust confirms the date. The Douglas fir deeper in the same gardens follows at 1894. Both are free to visit inside the gardens, which open daily and keep seasonal hours.",
   "question_context": "Hobart's City Significant Tree Register is a planning instrument rather than a heritage list, which shapes what can be said here. It records species, a per-tree coordinate and a planning reference, and it gives a reason for listing rather than an age, so most of these trees carry no date at all and this page leaves those blank instead of estimating. Two entries cover more than one trunk, because the register itself groups them as a single significance record: three dawn redwoods about twenty metres apart on Elizabeth Street, and a pair of sequoias at the gardens. Where a date does exist it comes from the National Trust rather than the register. Two further register trees are absent on purpose: one sits in the grounds of Government House, open only on scheduled days, and one in a private school. Where a tree's condition is disputed between assessments, as at the cathedral, the disagreement is in that tree's own story rather than resolved quietly.",
   "faq": [
@@ -219,6 +219,93 @@
       "transport": "Royal Tasmanian Botanical Gardens, Queens Domain, short drive or bus from Hobart CBD; free parking near the gates",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hob_008",
+      "name": "The Chir Pine of the Botanical Gardens",
+      "species": "Chir Pine (Pinus roxburghii)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Royal Tasmanian Botanical Gardens, 11 Lower Domain Road, Hobart",
+        "latitude": -42.866028,
+        "longitude": 147.330266,
+        "neighbourhood": "Queens Domain"
+      },
+      "story": "Hobart's register calls this the Longleaved Indian Pine, and the name is the best short description of it. Chir pine carries needles up to thirty centimetres long in bundles of three, and they droop, so a mature tree looks nothing like the stiff dark cone most people picture when they hear the word pine. It looks loose and shaggy, closer to a green waterfall. The species comes from the outer Himalaya, the dry foothill belt running from Pakistan through northern India into Nepal, where it is the resin pine, tapped for turpentine and rosin, and where its own fallen needles are flammable enough to be a recognised cause of the region's forest fires. In the Royal Tasmanian Botanical Gardens it is doing none of that. It grows in the pinetum, the conifer collection laid out mostly in the nineteenth century, which the Gardens describe as one of the most significant of its kind in the southern hemisphere, planted when foresters were systematically testing which northern timber trees would take to a Tasmanian climate. The City of Hobart lists it for its appearance, its dimensions and its age, and records no number for any of the three. Its second page is an aerial photograph with an arrow on it, which is the city saying that finding this tree matters more than measuring it.",
+      "verified_sources": [
+        "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/35d1de03d4c84185a5b03872f9c44318/data",
+        "https://gardens.tas.gov.au/"
+      ],
+      "access": "Free, public botanical garden, open daily 8am-5pm (Apr-Sep) or 8am-6.30pm (Oct-Mar), gold-coin donation encouraged, no compulsory entry fee",
+      "transport": "Royal Tasmanian Botanical Gardens, Queens Domain, short drive or bus from Hobart CBD; free parking near the gates",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hob_009",
+      "name": "The Pedunculate Oak of the Botanical Gardens",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Royal Tasmanian Botanical Gardens, 11 Lower Domain Road, Hobart",
+        "latitude": -42.865696,
+        "longitude": 147.330342,
+        "neighbourhood": "Queens Domain"
+      },
+      "story": "This oak is not on Hobart's significant tree register for being large or old. It is listed for how it looks, for being part of a historic garden, and for standing where the landscape would miss it, and the register gives no height, no girth and no age at all. That is an unusual case to make for a tree and it is the honest one here. Hobart's register calls the species English Oak; this page uses Pedunculate Oak, the neutral name for Quercus robur, the same tree under a less proprietary label. It is the oak the British planted wherever they settled, and Tasmania suited it better than most of Australia did: cool, wet and far enough south that an oak can behave the way it does at home instead of merely surviving. In the Royal Tasmanian Botanical Gardens it grows near the main house and glasshouse complex, in a garden founded in 1818 and the second oldest in the country. The Gardens hold more than one English oak, which is worth knowing if you go looking; this is the one the city registered, marked with an arrow on the register's own aerial photograph. Nobody has published a planting date for it, so how old it is remains genuinely open. Entry is free and the gates open at 8am daily.",
+      "verified_sources": [
+        "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/2bdd933097a544df88c96a424d408abc/data",
+        "https://gardens.tas.gov.au/"
+      ],
+      "access": "Free, public botanical garden, open daily 8am-5pm (Apr-Sep) or 8am-6.30pm (Oct-Mar), gold-coin donation encouraged, no compulsory entry fee",
+      "transport": "Royal Tasmanian Botanical Gardens, Queens Domain, short drive or bus from Hobart CBD; free parking near the gates",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "hob_010",
+      "name": "The Spotted Gum of the Botanical Gardens",
+      "species": "Spotted Gum (Corymbia maculata)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Royal Tasmanian Botanical Gardens, 11 Lower Domain Road, Hobart",
+        "latitude": -42.862144,
+        "longitude": 147.32852,
+        "neighbourhood": "Queens Domain"
+      },
+      "story": "Every other tree on this page came from somewhere else. A Douglas fir out of Oregon, a kauri from the Queensland rainforest, two sequoias from California, a Himalayan cypress, a Norfolk Island pine, three dawn redwoods descended from one Chinese valley. This one is Australian, which on a list of Hobart's remarkable trees turns out to be the exception rather than the rule. Be precise about it, though. Corymbia maculata grows wild along the coast of New South Wales and into southern Queensland and does not occur naturally in Tasmania, so it is native to the country and not to the island, and it was planted here for the same reason as all the rest: a nineteenth century botanical garden collecting specimens from everywhere it could reach. The bark is why to walk over. Spotted gums shed theirs in irregular patches through the warmer months, leaving a smooth trunk mottled in grey, cream, olive and pink that shifts as the year goes on, and no two trees carry the same pattern. The City of Hobart lists it for its appearance, its dimensions and its place in a historic garden, and as with every Gardens entry on that register it records no measurements and no planting date, so its age is unknown. Free to enter, gates open from 8am daily.",
+      "verified_sources": [
+        "https://hobartcc.maps.arcgis.com/sharing/rest/content/items/b7db5bc9b5e54d03bce5b34826298422/data",
+        "https://gardens.tas.gov.au/"
+      ],
+      "access": "Free, public botanical garden, open daily 8am-5pm (Apr-Sep) or 8am-6.30pm (Oct-Mar), gold-coin donation encouraged, no compulsory entry fee",
+      "transport": "Royal Tasmanian Botanical Gardens, Queens Domain, short drive or bus from Hobart CBD; free parking near the gates",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
       "photo": {
         "url": null,
         "license": null,
