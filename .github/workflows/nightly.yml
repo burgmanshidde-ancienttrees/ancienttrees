@@ -215,6 +215,10 @@ jobs:
               the two kinds, leads and blocked, per CLAUDE.md. Nothing gets
               thrown away, ever. Run python3 scripts/tree_index.py afterwards so
               the one database reflects the work.
+            - Run python3 scripts/preflight.py before committing any change to
+              data/cities/. It gates the deploy from 2026-08-13 onward, so a
+              failure caught here costs seconds and a failure caught there costs
+              the push.
 
             How to find the trees, in this order, because it is far faster than a
             web sweep: the country's official register if it has one (see
