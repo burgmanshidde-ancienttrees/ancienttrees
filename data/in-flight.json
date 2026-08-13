@@ -4,30 +4,6 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "Palermo",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T05:25:32+00:00"
-    },
-    {
-      "target": "Padua",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T05:25:32+00:00"
-    },
-    {
-      "target": "Sintra",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T05:25:33+00:00"
-    },
-    {
-      "target": "Verona",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-13T05:25:33+00:00"
-    },
-    {
       "target": "Trieste",
       "kind": "verify",
       "by": "night-run",
@@ -70,12 +46,6 @@
       "claimed_at": "2026-08-13T07:20:34+00:00"
     },
     {
-      "target": "portland",
-      "kind": "verify",
-      "by": "session",
-      "claimed_at": "2026-08-13T09:22:41+00:00"
-    },
-    {
       "target": "hobart",
       "kind": "verify",
       "by": "session",
@@ -86,6 +56,12 @@
       "kind": "verify",
       "by": "session",
       "claimed_at": "2026-08-13T09:23:24+00:00"
+    },
+    {
+      "target": "portland",
+      "kind": "write",
+      "by": "session",
+      "claimed_at": "2026-08-13T09:35:18+00:00"
     }
   ]
 }
