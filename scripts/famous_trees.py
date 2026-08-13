@@ -191,6 +191,7 @@ def sweep_country(country, trees, write=False):
                 if km(here, (t["lat"], t["lng"])) * 1000 <= MATCH_M:
                     hit = t
                     break
+        by_name = False
         if not hit:
             lab = tokens(sub.replace("Category:", ""))
             for t in trees:
@@ -202,10 +203,20 @@ def sweep_country(country, trees, write=False):
                 # the word Nieuwe. A city name is never the evidence.
                 if lab & tokens(t["name"]):
                     hit = t
+                    by_name = True
                     break
         if hit:
-            matched.append({"tree": hit, "label": label, "photos": photos})
-            state = "has a photo already" if hit["has_photo"] else "NEEDS A PHOTO"
+            # A name match is a suggestion, never evidence. Measured across all
+            # 30 countries on 2026-08-13 it produced four matches and all four
+            # were wrong: "Washington Oak" to the Washington Monument witness
+            # tree, "White Oak, Wernersville PA" to Boston's Peters Hill white
+            # oak, Brookline's Olmsted Elm to a tulip tree in DC. So it prints
+            # and it never queues; only a coordinate match writes anything.
+            matched.append({"tree": hit, "label": label, "photos": photos,
+                            "by_name": by_name})
+            state = ("has a photo already" if hit["has_photo"]
+                     else "NEEDS A PHOTO" if not by_name
+                     else "name match only, not queued: check by hand")
             print(f"      {label[:44]:46s} -> {hit['id']} {hit['name'][:28]:30s} {state}")
         else:
             leads.append({"label": label, "photos": photos,
@@ -236,7 +247,7 @@ def main():
         all_matched += m
         all_leads.append((c, l))
 
-    need = [m for m in all_matched if not m["tree"]["has_photo"]]
+    need = [m for m in all_matched if not m["tree"]["has_photo"] and not m.get("by_name")]
     print(f"\n{len(all_matched)} of our trees matched a famous-tree category, "
           f"{len(need)} of them have no photo yet")
     print(f"{sum(len(l) for _, l in all_leads)} famous trees are not on our map at all")

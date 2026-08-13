@@ -1,0 +1,44 @@
+{
+ "country": "South Korea",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Ginkgo Tree of Yongmunsa Temple, Yangpyeong",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:%EC%9A%A9%EB%AC%B8%EC%82%AC(%EC%96%91%ED%8F%89)2.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Jeongipum Pine Tree",
+   "lat": 36.517086,
+   "lng": 127.815515,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Jeongipumsong_Pine,_holding_the_post_of_government_minister_since_1464._-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:Songni_Jeongipumsong_Pine_Tree.jpg",
+    "https://commons.wikimedia.org/wiki/File:Songni_Jeongipumsong_Pine_Tree_(2).jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Muku Tree of Sadang-ri, Gangjin",
+   "lat": null,
+   "lng": null,
+   "photos": [],
+   "status": "lead"
+  },
+  {
+   "name": "Sinmok",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Frontal_View_of_the_Sinmok_at_Seoul_Grand_Park_Zoo.jpg",
+    "https://commons.wikimedia.org/wiki/File:Sinmok_in_Seoul_Grand_Park_Zoo.jpg",
+    "https://commons.wikimedia.org/wiki/File:Sinmok_in_Seoul_Grand_Park_Zoo_(Detail).jpg"
+   ],
+   "status": "lead"
+  }
+ ]
+}

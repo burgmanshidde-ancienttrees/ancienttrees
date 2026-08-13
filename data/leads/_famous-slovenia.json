@@ -1,0 +1,38 @@
+{
+ "country": "Slovenia",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Javor nad mojsko drago",
+   "lat": 45.997459,
+   "lng": 13.837808,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Javor_nad_mojsko_drago.webm",
+    "https://commons.wikimedia.org/wiki/File:Javor_nad_mojsko_drago_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Javor_nad_mojsko_drago_2.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Lime tree in Vrba",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Pod_Lipo.jpg",
+    "https://commons.wikimedia.org/wiki/File:Vrba_lipa.JPG",
+    "https://commons.wikimedia.org/wiki/File:Vrba_lipa.svg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Najevnik Linden Tree",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:NajevskaLipa1.JPG",
+    "https://commons.wikimedia.org/wiki/File:NajevskaLipa2.JPG"
+   ],
+   "status": "lead"
+  }
+ ]
+}

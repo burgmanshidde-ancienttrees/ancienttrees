@@ -1,0 +1,77 @@
+{
+ "country": "Hungary",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Patkó Bandi Tree",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Barcs,_Patk%C3%B3_Bandi_f%C3%A1ja_01.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Almond tree in Pécs",
+   "lat": 46.08346,
+   "lng": 18.23801,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2019_The_Almond_Tree_of_the_Snowy_Hill_in_P%C3%A9cs_HU.jpg",
+    "https://commons.wikimedia.org/wiki/File:2019_winner.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Giant Plane (Kőszeg)",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Ehemaliger_Unger-Garten,_Eingang,_2021_K%C5%91szeg.jpg",
+    "https://commons.wikimedia.org/wiki/File:Ehemaliger_Unger-Garten,_Platane,_2021_K%C5%91szeg.jpg",
+    "https://commons.wikimedia.org/wiki/File:Naturdenkmal,_Platane,_Baumstamm,_2021_K%C5%91szeg.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Lime Tree of Felsőmocsolád",
+   "lat": 46.57604,
+   "lng": 17.8322,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2012_The_Old_Lime_Tree_of_Fels%C5%91mocsol%C3%A1d_HU.jpg",
+    "https://commons.wikimedia.org/wiki/File:Fels%C5%91mocsol%C3%A1di_%C3%B6reg_h%C3%A1rs_2012.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Oak in Kaposvár",
+   "lat": 46.36183,
+   "lng": 17.79373,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2020_The_Freedom_Tree_in_Kaposv%C3%A1r_HU.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kaposv%C3%A1r,_a_Szabads%C3%A1gfa_t%C3%A9len.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Oak of Bátaszék",
+   "lat": 46.17004,
+   "lng": 18.70022,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2016_The_oldest_tree_of_B%C3%A1tasz%C3%A9k_HU.jpg",
+    "https://commons.wikimedia.org/wiki/File:BataszekFotoThalerTamas.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Plane in Letenye",
+   "lat": 46.43458,
+   "lng": 16.72364,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2011_Plane_in_Letenye_HU.jpg",
+    "https://commons.wikimedia.org/wiki/File:Letenye_2019_05_plat%C3%A1nfa_%C3%A9s_k%C3%B6nyvt%C3%A1r.jpg",
+    "https://commons.wikimedia.org/wiki/File:Letenye_2019_06_plat%C3%A1nfa_%C3%A9s_k%C3%B6nyvt%C3%A1r.jpg"
+   ],
+   "status": "lead"
+  }
+ ]
+}

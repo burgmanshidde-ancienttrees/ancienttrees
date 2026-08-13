@@ -1,0 +1,50 @@
+{
+ "country": "Greece",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Azorias olive tree",
+   "lat": 35.11519444,
+   "lng": 25.86069444,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Kavousi_Olivenbaum_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Kavousi_Olivenbaum_02.jpg",
+    "https://commons.wikimedia.org/wiki/File:Monumental_Olive_tree_near_Kavousi_(Crete)_01.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Krasi",
+   "lat": 35.240947,
+   "lng": 25.466169,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Dolev_P1050903.JPG",
+    "https://commons.wikimedia.org/wiki/File:Dolev_P1050904.JPG",
+    "https://commons.wikimedia.org/wiki/File:KrasiAnonLimnionDimou_Mallion_20_15_52_705000.jpeg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Tree of Hippocrates",
+   "lat": 36.895139,
+   "lng": 27.290161,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Hippocrates_lecturing_to_his_students_under_the_plane_tree_Wellcome_M0000138.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hippokrat%C4%B1n_Kos_adas%C4%B1ndak%C4%B1_%C3%87inar%C4%B1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Holidays_Greece_-_panoramio_(46).jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Vouves olive tree",
+   "lat": 35.486808,
+   "lng": 23.786886,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Ancient_olive_tree_of_Vouves_closeup.jpg",
+    "https://commons.wikimedia.org/wiki/File:Olive_tree_of_Vouves.jpg",
+    "https://commons.wikimedia.org/wiki/File:Olive_tree_of_Vouves_2021-10-16.jpg"
+   ],
+   "status": "lead"
+  }
+ ]
+}
