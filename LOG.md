@@ -68,6 +68,38 @@ Build (`npm --prefix site ci` && `npm --prefix site run build`) clean, 1305 page
 
 FOR HIDDE: nothing blocks. Continuing to the next cheap target per `city_queue.py --next` while the window allows.
 
+## 2026-08-13 (evening) - The system closes its own loop
+
+**Late-session work, after the day entry below was written.** The species index
+gained family clusters (Oaks, Beeches, Conifers, thirteen sections; genus in
+each intro's scientific_name decides membership, so new pages self-file). The
+directory footer got the convention: four columns, one out-link each, balanced
+heights, the Show-10-more button gone. Nav weights fixed: Explore now matches
+Map, Log in demoted to utility weight.
+
+**The autonomy question Hidde pressed on, answered in three mechanisms.**
+`scripts/prepare.py` stocks the staging shelf (register candidates for the next
+sprint cities, deduped, near-published annotated) and runs BOTH at the start of
+every night run and, decisively, in the daily tokenless digest workflow, so a
+week of usage-limit deaths cannot starve the shelf. The digest also became the
+nightly watchdog: 26 silent hours and it dispatches nightly.yml itself, the
+mirror of rung 2's existing digest redispatch. And a --force test of that
+workflow caught a NameError hiding in the promote path, which means the queue
+self-promotion shipped in the morning had never actually run; fixed, runs
+tonight.
+
+**Runway, measured honestly:** register-reachable sprint work is roughly two to
+three weeks at machine pace. Replenishment sits documented and unimported in
+OPEN_DATA_SURVEY.md: Czechia's 16,795 trees under CC BY (covers Prague, target
+30, currently registerless) and Poland's 117,474 pending one licence sentence.
+Rung 5 tells a run that is the work when the shelf thins. What only Hidde can
+refill: photo judgement (CI cannot fetch images), outreach sending, the OAuth
+token, and the weekly limit itself.
+
+**Still open from the day entry: the 25-photo viewing pass** (killed by the
+session limit mid-download; the suspect list is staged), the four Nice ids with
+no honest replacement, and the corpus-wide ensemble audit (34 entries).
+
 ## 2026-08-13 - Eleven cities, three continents on registers found the same day, and six checks that came out of being wrong
 
 **The day in one line: 105 cities, ~1,100 trees, and the machine got better at
