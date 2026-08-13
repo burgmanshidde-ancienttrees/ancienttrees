@@ -39,6 +39,15 @@ jobs:
         working-directory: site
         run: npm ci
 
+      # Every ratchet in preflight.py ran only when a human typed the command
+      # until 2026-08-13, which means the id-prefix check, the how_to_recognise
+      # limits, the contract-B check and the pin-upgrade check were advice
+      # rather than gates. A check nobody runs is not a mechanism. It goes
+      # before the build because it reads the data files the build turns into
+      # pages, so a failure here is cheaper than a failure after.
+      - name: Preflight the data
+        run: python3 scripts/preflight.py
+
       # working-directory matters beyond convention: data-dir.ts resolves
       # ../data from process.cwd(), so astro build must run with site/ as
       # cwd or every content-collection read breaks.
