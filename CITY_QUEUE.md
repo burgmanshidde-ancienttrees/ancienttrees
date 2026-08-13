@@ -341,7 +341,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 213 | Nafplio | 0.78 | 31,193 | - | - | - | - | 10 | predicted (thin competition) |
 | 214 | Gyeongju | 0.76 | 30,260 | - | - | - | - | 10 | predicted (thin competition) |
 | 215 | Windsor | 0.76 | 30,452 | - | - | - | - | 10 | predicted (thin competition) |
-| 216 | Caserta | 0.37 | 14,783 | 7 | - | 1 | 51 | 10 | predicted (thin competition) |
+| 216 | Caserta | 0.37 | 14,783 | 10 | - | 1 | 51 | 10 | predicted (thin competition) |
 | 217 | Turin | 0.37 | 147,456 | 10 | 7 | 2 | 30 | 10 | published, never ranked |
 | 218 | Edinburgh | 0.73 | 292,981 | 15 | 4 | 1 | - | 10 | published, never ranked |
 | 219 | Siem Reap | 0.72 | 28,696 | - | - | - | - | 10 | predicted (thin competition) |
