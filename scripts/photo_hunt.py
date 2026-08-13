@@ -59,7 +59,11 @@ QUEUE = os.path.join(ROOT, "data", "photo-queue.json")
 # correctly. Tested after the fix on eight of them: seven produced candidates
 # the old filter had never shown. A verdict about the world, drawn from a tool,
 # is only as old as the tool.
-SWEEP_VERSION = 2
+# A candidate photographed more than this far from the tree is a different
+# tree, whatever its title says.
+FAR_KM = 25
+
+SWEEP_VERSION = 4
 API = "https://commons.wikimedia.org/w/api.php"
 UA = "AncientTreesBot/1.0 (https://ancienttrees.app; photo candidate sweep)"
 OK_LICENCE = ("cc0", "cc by", "cc-by", "public domain", "pdm", "attribution")
@@ -96,19 +100,24 @@ def imageinfo(titles):
         return []
     out = []
     d = api({"action": "query", "titles": "|".join(titles[:50]),
-             "prop": "imageinfo", "iiprop": "url|extmetadata", "iiurlwidth": "800"})
+             "prop": "imageinfo|coordinates|categories", "iiprop": "url|extmetadata",
+             "iiurlwidth": "800", "cllimit": "500"})
     for page in (d.get("query", {}).get("pages", {}) or {}).values():
         for ii in page.get("imageinfo", []):
             meta = ii.get("extmetadata", {})
             short = (meta.get("LicenseShortName") or {}).get("value", "")
             if not licence_ok(short):
                 continue
+            coord = (page.get("coordinates") or [{}])[0]
             out.append({
                 "title": page.get("title"),
                 "thumb": ii.get("thumburl"),
                 "url": ii.get("descriptionurl"),
                 "licence": short,
                 "author": _plain((meta.get("Artist") or {}).get("value", "")),
+                "lat": coord.get("lat"),
+                "lng": coord.get("lon"),
+                "cats": " ".join(c.get("title", "") for c in page.get("categories") or []),
             })
     return out
 
@@ -539,6 +548,37 @@ def candidates_for(tree, city=""):
     except Exception as e:
         print(f"    imageinfo failed: {e}", file=sys.stderr)
         commons = []
+    # A file that carries its own coordinates settles the question no word
+    # match can. Added 2026-08-13 after the name lane, which lets a distinctive
+    # nickname stand without a place word, offered "14 Furmanska Street, Lviv"
+    # for Ljubljana's Furmanska Lipa and a Buenos Aires faculty for Zaragoza's.
+    # A wrong continent is not a judgement call. Files with no coordinates pass:
+    # most Commons files have none, and absence is not evidence.
+    # Two ways a Commons file can prove it belongs to this place, and it needs
+    # one of them. Its own coordinates within FAR_KM, or our city or country
+    # named in its title or its categories. Commons categorises by place almost
+    # without exception, which is why this works where the filename does not:
+    # the Weichselboom file is titled with nothing but the tree's name and sits
+    # in "Unidentified subjects in the Netherlands", while "14 Furmanska Street,
+    # Lviv" sits in Lviv's categories and is gone.
+    # The city and the country, under every spelling, and NOTHING else. Address
+    # words are too generous here: Zaragoza's olive stands at the Facultad de
+    # Medicina, and "Facultad" alone let in six faculties in Buenos Aires and
+    # Mexico City.
+    country = str((tree.get("_country") or "")).lower()
+    here = {w for w in ({str(city).lower(), country} |
+                        {k.lower() for k, v in ALIAS.items()
+                         if v.lower() == str(city).lower()}) if len(w) >= 4}
+    near = []
+    for c in commons:
+        if c.get("lat") is not None and c.get("lng") is not None:
+            if km((loc["latitude"], loc["longitude"]), (c["lat"], c["lng"])) <= FAR_KM:
+                near.append(c)
+            continue
+        hay = f"{c.get('title', '')} {c.get('cats', '')}".lower()
+        if any(mentions(hay, w) for w in here):
+            near.append(c)
+    commons = near
     # Commons first (a named, categorized photo is the strongest identity
     # signal there is), then iNaturalist, then Openverse where both are thin.
     # Wikidata first: an entity-to-image link is the strongest identity signal
@@ -585,6 +625,9 @@ def main():
             if prev and prev.get("exhausted") and "--force" not in sys.argv \
                     and prev.get("sweep") == SWEEP_VERSION:
                 continue
+            # candidates_for() proves a candidate's place from the city AND the
+            # country, so the tree has to carry its country with it.
+            t = dict(t, _country=d.get("country", ""))
             todo.append((d["city"], t))
 
     where = f" in {', '.join(c.title() for c in cities)}" if cities else ""
