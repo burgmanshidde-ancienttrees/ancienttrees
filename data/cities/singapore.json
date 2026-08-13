@@ -2,7 +2,7 @@
   "city": "Singapore",
   "country": "Singapore",
   "status": "needs_curation",
-  "intro": "Singapore keeps its old trees on an actual register: NParks has designated 251 Heritage Trees since 2001, each one measured, mapped and profiled. Most of the city's remarkable specimens cluster in two places, Fort Canning Park's colonial-era plantings and the UNESCO-listed Botanic Gardens, with a handful standing apart in a roadside car park and a tidal mangrove reserve reachable only by boat. None rivals Europe's millennium yews, but several carry records of their own: the country's largest of their kind, or its only two of a kind at all.",
+  "intro": "Singapore gazettes its Heritage Trees by law: a girth over five metres and a story worth keeping gets a tree lightning protection, an English information panel and legal protection from felling. Ten of them are here. Five stand within a few hundred metres of each other on Fort Canning, the hill that held the island's first prison and its first botanical experiments, which makes that the walk. The rest are scattered: a bodhi tree on Pearl's Hill, a banyan in Tiong Bahru that reached a 22.8 metre girth in under sixty years, and one reachable only by boat.",
   "meta_description": "Singapore's heritage trees, from the Tembusu on the $5 note to Fort Canning's colonial-era rain tree, Madras thorn and rosewood, all NParks-registered.",
   "question_answer": "Singapore's oldest documented tree is the Tembusu of the Botanic Gardens, estimated by NParks at over 200 years old, standing on Lawn E overlooking Swan Lake. It is the tree depicted on the back of the Singapore five-dollar note.",
   "question_meta": "The Tembusu on Lawn E, over 200 years old and the tree on Singapore's $5 note, is the country's oldest NParks-registered heritage tree.",
@@ -236,6 +236,93 @@
       "curation_status": "flagged",
       "notes": "Age undocumented by NParks for either tree; the pair's status as 'the only two mangrove trees in the Heritage Tree Register' is NParks' own register claim about its own designated trees. Coordinates are the midpoint of the two individually-surveyed trees (HT 2007-162 and HT 2007-163), roughly 20m apart at the same named location.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "sgp_008",
+      "name": "The Bodhi Tree of Pearl's Hill",
+      "species": "Bodhi Tree (Ficus religiosa)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Pearl's Hill City Park, hilltop near the Service Reservoir gate, Singapore",
+        "latitude": 1.284623,
+        "longitude": 103.839284,
+        "neighbourhood": "Outram, Singapore"
+      },
+      "story": "Singapore's first prison stood on this hill, and so did its first hospital for the poor. The Bodhi tree at the top of Pearl's Hill City Park carries 6.34 metres of girth and 16.9 metres of height on NParks' heritage register, and it grows over ground that held both, which is a fair trade. The hill takes its name from Captain James Pearl, who commanded the Indiana, the ship that brought Raffles to Singapore in 1819. He liked the view enough to buy the hill and plant it with nutmeg. Tan Tock Seng's hospital for destitute Chinese labourers opened on its slope in the 1840s and the colonial gaol followed, both long since buried under the reservoir and the police blocks that took their place. Ficus religiosa is the species the Buddha is traditionally said to have sat beneath, and it is sacred to Buddhists and Hindus alike. The leaves are the giveaway: heart-shaped, drawn out into a long tail that sheds monsoon rain and sets the whole crown trembling in almost no wind. This is not the Bodhi tree most people in Singapore mean. That one grows at the Jin Long Si Temple and has had its own long public fight over the land around it. This is a different individual on a different hill, and it draws no crowd at all. NParks records no planting date, so its age is unknown.",
+      "verified_sources": [
+        "https://heritagetrees.nparks.gov.sg/ht-2001-18/",
+        "https://www.littledayout.com/pearls-hill-city-park-hidden-nature-haven-town/"
+      ],
+      "access": "Free, public park (Pearl's Hill City Park), no gates or opening hours found",
+      "transport": "Short walk (roughly 5-10 minutes, uphill) from Outram Park MRT station (East-West/North-East/Thomson-East Coast lines)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sgp_009",
+      "name": "The Banyan of Tiong Bahru Park",
+      "species": "Indian Banyan (Ficus benghalensis)",
+      "age_estimate": "under 60 years (planted after the park opened in 1967)",
+      "age_min": 45,
+      "age_max": 59,
+      "location": {
+        "address": "Tiong Bahru Park, Singapore",
+        "latitude": 1.28798,
+        "longitude": 103.824379,
+        "neighbourhood": "Tiong Bahru, Singapore"
+      },
+      "story": "A girth of 22.8 metres usually takes a tree several centuries. This one managed it in under sixty years. Tiong Bahru Park was developed in 1967 and NParks' own register states plainly that the banyan was planted after that, which makes it younger than the flats around it and still one of the widest trees on Singapore's heritage list. The trick is in how a banyan is put together. Ficus benghalensis drops aerial roots from its branches; they reach the ground, thicken into trunks of their own, then fuse with each other and with the original stem into a single braided mass that a tape measure reads as one enormous trunk. A banyan does not so much grow fat as recruit. Measured at the standard 1.3 metres above the ground, those 22.8 metres are really a committee. So the thing to go and look at here is not age. It is speed, and the odd architecture that produces it: a tree 18.4 metres tall occupying its patch of park like something with four times its lifespan behind it, props still coming down through the canopy in various stages of becoming trunks. In Hindu tradition the species carries its own weight, the roots read as Brahma's, the trunk as Vishnu's, the branches as Shankar's. Older banyans elsewhere in the Tiong Bahru area have been called a hundred years and more. This one, by its own record, is not among them.",
+      "verified_sources": [
+        "https://heritagetrees.nparks.gov.sg/ht-2013-204/",
+        "https://en.wikipedia.org/wiki/Tiong_Bahru_Park"
+      ],
+      "access": "Free, public park, no gates or opening hours found",
+      "transport": "Roughly 10-15 minute walk from Tiong Bahru or Redhill MRT station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "sgp_010",
+      "name": "The Earpod Tree of Fort Canning",
+      "species": "Earpod Tree (Enterolobium cyclocarpum)",
+      "age_estimate": "not documented",
+      "age_min": 0,
+      "age_max": 0,
+      "location": {
+        "address": "Fort Canning Park, between the Fort Wall and Hotel Fort Canning, Singapore",
+        "latitude": 1.295169,
+        "longitude": 103.845046,
+        "neighbourhood": "Fort Canning, Singapore"
+      },
+      "story": "The seed pods explain the name: dark, flat, coiled into a near-perfect circle and close enough to a human ear that the tree is called after one in both Spanish and English. In Costa Rica, where the same species is the national tree, those pods are a roadside fixture. The earpod at Fort Canning has been on Singapore's heritage register since 2001, with 5.94 metres of girth and 17.9 metres of height, standing on the path behind the Fort Wall. It came from the tropical dry forests running from Mexico down to Venezuela, where it is one of the largest trees of that habitat, reaching 40 metres with a trunk three metres through, and where old specimens push surface roots out far enough to lift nearby paving. It arrived here as an ornamental and is now the first stop on NParks' own walking trail of the hill's heritage trees, which puts four more within a few hundred metres of it. One thing is unresolved and worth knowing before you go. Both the register and NParks' current Fort Canning trail guide describe this tree standing. A 2025 travel account describes an earpod tree somewhere in the same park that came down in a 2014 storm and kept growing on its side, its trunk now carrying orchids and ferns. Nobody has confirmed whether that is this tree or another one. If you find it lying down, it is alive, and it is still worth the walk.",
+      "verified_sources": [
+        "https://heritagetrees.nparks.gov.sg/ht-2001-11/",
+        "https://heritagetrees.nparks.gov.sg/files/Explore%20Page/NPARKS_DIY_Trail_Fort_Canning_FA.pdf"
+      ],
+      "access": "Free, public park, open 24 hours",
+      "transport": "8-10 minute walk from Fort Canning MRT station (Downtown Line)",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
