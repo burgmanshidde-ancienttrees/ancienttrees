@@ -9,6 +9,36 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-13 - Munich: fixed four trees published twice under different ids
+
+Found while looking for cheap-end write work (`scripts/leads.py --ready`): Munich's
+2026-08-12 Naturdenkmal writing pass re-wrote four Schlosspark Nymphenburg register
+entries (Copper Beech, Large-leaved Lime, Fern-leaved Beech, Weeping Beech) that were
+already live as muc_011-014, giving each of the four physical trees a second id
+(muc_015-018), a second page, thinner data (no address, no age, no best_time) and a
+duplicate story. Confirmed by exact coordinate match, not guesswork. Removed the four
+newer duplicates from `data/cities/munich.json`, kept the better-documented originals,
+added redirect stubs (`site/src/lib/redirect-map.ts` REMOVED_TREE_SLUGS) so the four
+now-gone URLs resolve to `/munich` rather than 404, and merged the photo candidates
+`data/photo-queue.json` had already found for two of the duplicates onto the surviving
+ids (muc_015->muc_011, muc_016->muc_012, muc_017->muc_013), since those candidates are
+genuinely of the same trees.
+
+Root cause: the four source leads in `data/leads/munich.json` were never marked
+resolved after the first write, so `leads.py`'s READY count still offered them as
+unwritten. Marked all four `[RESOLVED 2026-08-13, delivered as muc_0XX]`. Also found,
+by the same coordinate check, four more Munich leads that duplicate already-published
+trees under different names (White Ash/Maximiliansplatz -> muc_019, Beech/
+Flaucheranlagen -> muc_021, two Englischer Garten limes -> muc_020/muc_022) with no
+live duplicate page this time, just a dormant landmine for the next write pass; marked
+those resolved too. Checked every other published city for the same coordinate-collision
+pattern: none found, everything else that shares a rounded coordinate is genuinely
+distinct neighbouring trees (species differ).
+
+Munich now 22 to 18 trees. Build and `qa.py` green (1325 pages; the sitemap
+`lastmod` warning is the shallow git checkout in this environment, not a content
+problem). Ran `tree_index.py` (1045 highlighted, down from 1049, correctly).
+
 ## 2026-08-12 - Den Bosch: 4 to 11 trees, two new clusters, the oldest-tree answer changes
 
 Finished the writing pass that a prior session left open (dbo_005 to dbo_011, verified facts already in data/research/den-bosch-verified.json, only stories missing). Two new clusters: Sint Janskerkhof/Casinotuin (5 trees, dbo_005-009, within 300m of the already-published Bastion Oranje maple) and Pettelaarse Schans (2 trees, dbo_010/011, a former fort mound across town, below the 3-tree walk floor so they stand as honest standalone entries rather than a chip). The write pass caught and I fixed three things before shipping: two `how_to_recognise` fields carried internal process labels ("FLAGGED FOR AMBIGUITY:") that would have rendered verbatim to visitors under "Which one is it?", two `transport` fields read as an instruction to us ("checking a local bus... may cut this shorter") rather than to a visitor, and two new trees used `Platanus x hispanica` where the site's other 79 London Planes use `Platanus x acerifolia`, which would have failed the build's hard-rule-9 one-scientific-name-per-common-name check.
