@@ -182,6 +182,27 @@ def check_one_city_order():
     return out
 
 
+# A sitemap whose every URL claims to have changed today tells Google nothing,
+# and Google discounts lastmod entirely once it proves unreliable. Ours did
+# exactly that on every build until 2026-08-13, which is a plausible part of why
+# 349 URLs sat at "Discovered - currently not indexed": found, never crawled.
+# The fix dates each page from the commit that last touched its source, so this
+# check is simply that the dates vary. One distinct date across a thousand pages
+# means the git lookup silently fell back (a shallow clone has no history), and
+# the deploy would ship the old bug without anyone noticing.
+def check_sitemap_dates():
+    sm = DIST / "sitemap.xml"
+    if not sm.exists():
+        return []
+    dates = set(re.findall(r"<lastmod>([^<]+)</lastmod>", sm.read_text(encoding="utf-8")))
+    if len(dates) > 1:
+        return []
+    return ["sitemap.xml: every url carries the same lastmod (%s). The dates come "
+            "from each page's last source commit, so one date means git history "
+            "was unavailable at build time (check fetch-depth on the checkout)."
+            % (next(iter(dates), "none"))]
+
+
 def main():
     global DIST
     parser = argparse.ArgumentParser()
@@ -303,6 +324,7 @@ def main():
 
     failures += check_no_strategy_in_workflows()
     failures += check_one_city_order()
+    failures += check_sitemap_dates()
 
     if failures:
         print(f"QA FAILED: {len(failures)} problem(s) in {len(pages)} pages")

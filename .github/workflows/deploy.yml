@@ -22,6 +22,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Full history: the sitemap dates every page from the last commit
+          # that touched its source, and a depth-1 checkout would date all
+          # 1,222 of them from today, which is the bug this replaced.
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
