@@ -1157,6 +1157,15 @@
     "note": "Tree Cities of the World pulled as data (285 records, one ArcGIS query, no scraping) and crossed against our queue: 22 of 227 register-less cities are certified, and of the ten checked only 2 publish a register. Verdict: a free per-city signal worth checking before a from-zero pass, not a bulk green light",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "australia-nz-canada-registers",
+    "kind": "scout",
+    "tokens": 161574,
+    "trees": 0,
+    "note": "Hobart imported, 460 with species on all of them. The previous pass's PDF conclusion was wrong: species sit in the layer's own coded-value domain, one ?f=json call, no PDFs. Sydney blocked on an explicit licence:none despite a fully instrumented register. Vancouver's heritage trees carry no coordinates at all. Melbourne has no designation field so the Bordeaux technique fails there. Toronto has no notable-tree dataset",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
