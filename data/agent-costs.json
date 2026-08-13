@@ -1139,6 +1139,24 @@
     "note": "14 stories opening two more Italian cities; 3 best_time from existing phenology files; 0 species fixes needed; agent dropped an unverifiable funicular superlative on its own",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "singapore+hongkong-registers",
+    "kind": "scout",
+    "tokens": 149797,
+    "trees": 0,
+    "note": "Two statutory registers imported: Singapore Heritage Trees 255 (163 within 5km of centre, Singapore Open Data Licence v1) and Hong Kong OVT+Stonewall 713 (494 within 5km of Central, DATA.GOV.HK terms). HK carries last_inspection_date on 700 of 713, the closest thing to a vitality field any register has given us. Flagged a 250m gap between the register and our published hkg_005 pin",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "tree-cities-map",
+    "kind": "scout",
+    "tokens": 143107,
+    "trees": 0,
+    "note": "Tree Cities of the World pulled as data (285 records, one ArcGIS query, no scraping) and crossed against our queue: 22 of 227 register-less cities are certified, and of the ten checked only 2 publish a register. Verdict: a free per-city signal worth checking before a from-zero pass, not a bulk green light",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

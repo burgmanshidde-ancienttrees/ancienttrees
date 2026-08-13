@@ -1410,3 +1410,153 @@ checked individually, city by city, rather than assumed.
 No host hung this pass (nothing added to `data/fetch-blocklist.json`); the
 known `nycgovparks.org` and `portlandmaps.com` entries already there were
 both encountered again and both behaved exactly as documented.
+
+## Follow-up: Melbourne, Sydney, Vancouver, Toronto, and the Hobart PDF thread (2026-08-13)
+
+A second pass against the four named programmes the same-day English-speaking-block
+scan did not reach, plus its one open thread on Hobart. Licence-led, per this
+file's standing method. Verify-agent scope only: no photos, no prose, no city
+files touched.
+
+### USABLE, imported
+
+**City of Hobart, Significant Tree Register.** `data/registers/hobart-significant-trees.json`.
+Endpoint: `https://services1.arcgis.com/NHqdsnvwfSTg42I8/arcgis/rest/services/ENVIRON_Significant_Tree_Locations/FeatureServer/1`
+(ArcGIS item `9b31f3f6acb14bb2a5869b5e17707155`, layer 1). 460 point records,
+all with per-tree coordinates (reprojected from EPSG:28355 via `outSR=4326`,
+sanity-checked against Hobart's known -42.88/147.33 position). Licence CC BY
+4.0 per the layer's own `licenseInfo`: "This work is licensed under a
+Creative Commons Attribution 4.0 International License." (carried over from
+the earlier pass's verification, not independently re-fetched this pass).
+**The unfinished thread is resolved, and the earlier verdict on species was
+wrong.** The earlier pass concluded species was locked behind a ~3.6MB
+per-tree PDF (`Data_Sheet_URL`) for every one of the 460 records, because the
+bulk feed's `Botanical_ID` field looked like a bare integer code with no
+attached name. It is not bare: the field's own ArcGIS "coded value domain",
+fetched via a plain `?f=json` call on the layer (no PDF, no per-tree fetch),
+is a 390-entry species lookup table (code 311 = "Cedrus atlantica", code 293
+= "Quercus robur", and so on). Every one of the 460 records resolved to a
+named species with zero PDF fetches; the technique is "check the field's own
+domain metadata before concluding a coded value is unreadable," a sibling of
+the Bordeaux/Toulouse "check the full inventory for a per-tree designation
+field" lesson, applied to a different kind of hidden structure. **No vitality
+field anywhere in the bulk feed** (same absence as most registers scouted so
+far), and no address or place-name field either, only coordinates: pin
+precision is `confirmed` from the coordinate, but a human-readable address
+still needs deriving at write time. `Number_Trees` splits the register
+cleanly: 242 of 460 points are single specimens, 218 are groups or avenue
+plantings at one point (values of 2 and up), and the 218 need the ordinary
+collectible-point judgement (BRIEF_RESEARCH.md: a compact named avenue may
+pass, a diffuse planting is `blocked`) before any of them can ship. What is
+STILL genuinely PDF-only: individual tree names, age, condition, girth and
+height, and the statement of significance. 453 of the 460 imported points sit
+within 5km of Hobart's centre, so this is a dense, near-complete cluster
+worth a full city pass on its own terms, not just a lead list. **Covers
+Hobart, closing the thread the 2026-08-13 pass left open.**
+
+### Scouted, real register found, blocked on licence
+
+**City of Sydney, Register of Significant Trees.** Feature service found by
+tracing the "interactive register" embedded in
+`cityofsydney.nsw.gov.au/lists-maps-inventories/register-significant-trees`
+through its ArcGIS Online map app
+(`map-prod2.cityofsydney.nsw.gov.au/agol_html/RegisterOfSignificantTrees2025/`)
+to the webmap's own item IDs, one of which resolves to a live, publicly
+queryable feature layer: `https://services1.arcgis.com/cNVyNtjGVZybOQWZ/arcgis/rest/services/Register_of_Significant_Trees_view/FeatureServer/0`
+(item `33ac8e933ce34b22b8d77aa1f49beeda`, layer `RST_FINAL`). This is the
+real thing the earlier pass named but could not locate: 2,504 records, a
+genuine statutory register (`type_of_signifcance`, `statement_of_significance`,
+`date_of_listing` with coded values 2005/2013/2025), with a usable vitality
+signal (`condition`, coded Excellent/Good/Fair/Poor/Dead, one record already
+coded Dead) and an ownership/access pair (`owner_controlling_authority`,
+`landuse` coded Public Park, Street, Property-City-Owned, Property-private,
+and `accessibilility` coded Public access / Visible from street / No public
+access) that answers hard rule 10 directly from the data. `arrangement_text`
+splits the register the same way Hobart's `Number_Trees` does: 220 of 2,504
+are tagged "Individual", the rest Avenue/Row/Group/Multiple, which the
+semantic and collectible-point filters would need to sit on top of. Per-tree
+coordinates exist but the raw `Lat`/`Lon` fields on the layer are corrupted
+(huge non-geographic numbers); the real position has to come from `x`/`y` in
+the service's native spatial reference (`wkid 7856`, GDA2020 MGA), reprojected
+via `outSR=4326` on the query, not read directly off the feature attributes.
+**Blocked on licence, not on data quality.** The item's own `licenseInfo` is
+`null`, and the ArcGIS Hub API confirms it explicitly:
+`GET hub.arcgis.com/api/v3/datasets?filter[id]=33ac8e933ce34b22b8d77aa1f49beeda_0`
+returns `"license": "none"`. This is a different item from Sydney's actual
+open-data catalogue (the "Trees" street-tree inventory, item
+`15c4713a688a48fcb604fc343118af05`, carries an explicit CC BY 4.0 badge in
+its own `licenseInfo`); the Register of Significant Trees view was built for
+the city's own dashboard/map app (`listed: false`, owner a named staff
+account) and was never published through the open-data catalogue, so it
+carries no licence grant at all. **Not usable without written permission.**
+Worth a specific outreach ask to City of Sydney open data, because the
+technical readiness (proper vitality, ownership and semantic-filter fields,
+all in one place) is better than anything else found in this pass or the
+last one; the licence, not the data, is what is missing.
+
+### Not-recommended, with why
+
+**City of Melbourne.** The Bordeaux/Toulouse technique (check the full
+inventory for a per-tree designation field before writing a bulk dataset
+off) was tried directly and failed: the open-data "Trees, with species and
+dimensions (Urban Forest)" dataset's field schema
+(`data.melbourne.vic.gov.au/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/`)
+has no designation, significance or heritage flag of any kind, only physical
+attributes (species, DBH, year planted, precinct). A dataset search for
+"exceptional" and "significant" on the portal returns zero results. The
+Exceptional Tree Register the city adopted in 2021 exists only as a webpage
+(`melbourne.vic.gov.au/exceptional-tree-register`), which itself soft-blocks
+plain fetches (HTTP 202, empty body, the same pattern as `nycgovparks.org` in
+`data/fetch-blocklist.json`; not added there since only one host and one
+fetch were tried). Not recommended on what was found; the register is
+real but not reachable as data this pass.
+
+**City of Toronto.** No heritage or notable tree designation exists on the
+open data portal (`open.toronto.ca`'s CKAN API host is
+`ckan0.cf.opendata.inter.prod-toronto.ca`, not the domain name itself, which
+404s on the API path). Searched "tree", "heritage" and "notable" directly:
+"Heritage Register" is architectural (buildings, districts), not trees, and
+no High Park-specific or citywide notable-tree dataset surfaced under any of
+those terms. The only tree dataset is `street-tree-data`, the full public
+inventory, which fails the semantic filter on its own terms and is also
+unlicensed (`license_title: "License not specified"` in the CKAN metadata),
+disqualifying it twice over. Not recommended; Toronto appears not to publish
+a distinct heritage-tree programme as open data at all, as opposed to simply
+not having surfaced it yet.
+
+### Scouted, real designation found, not importable as a point register
+
+**City of Vancouver Heritage Register.** Trees ARE separable from buildings
+and streetscapes: the register's own `category` field on
+`opendata.vancouver.ca/.../heritage-sites` has a distinct value, "LANDSCAPE
+RESOURCES Trees", holding 35 individually named entries (Weeping Willow at
+Douglas Park, a Giant Sequoia on W 49th Ave, and so on), a genuine
+semantically-filtered heritage designation. But the dataset's own description
+states plainly, and the data confirms: "HERITAGE LANDSCAPE RESOURCES Trees
+(attribute table with no map coordinates)". All 35 records were checked and
+all 35 carry an empty `geom`; only a street address or, for park trees, a
+free-text description ("Douglas Park, Northeast Corner") exists. Licence is
+named ("Open Government Licence - Vancouver", `opendata.vancouver.ca/pages/licence/`)
+but the licence page is JS-rendered and its text could not be quoted verbatim
+this pass; moot for now since there is nothing to import without geocoding.
+**Not importable as a register this pass**; a real lead list (35 named,
+undated Vancouver heritage trees) worth a future geocoding pass rather than a
+dead end, and worth revisiting for the licence text if geocoding is ever
+attempted.
+
+### Coverage after this pass
+
+One new register imported (Hobart, 460 trees, 453 within 5km of centre,
+closing a thread rather than opening a city cold). One genuine register found
+and fully characterised but blocked on licence (Sydney, 2,504 trees, 220
+tagged Individual). Two real designations found but not importable as-is
+(Vancouver, 35 trees, no coordinates at all; Melbourne, a real register that
+simply is not published as data). One country checked and found to have
+nothing (Toronto). None of the four countries' capacity for this technique is
+exhausted: Sydney is one licence email away from being the best-instrumented
+register in the whole project, and Vancouver's 35 trees are one geocoding
+pass away from usable.
+
+No host hung this pass; nothing added to `data/fetch-blocklist.json`.
+Token usage for this pass: approximately 60k tokens (fetch-heavy scouting
+across five cities, one full 460-row import, no photo hunting, no prose).
