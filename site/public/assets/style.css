@@ -436,13 +436,18 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
   .shelf-row { display: flex; overflow-x: auto; gap: 12px; scroll-snap-type: x mandatory; padding-bottom: 0.5rem; }
   .shelf-card { flex: 0 0 72%; scroll-snap-align: start; }
 }
-.dir-cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.25rem 2rem; margin: 0.75rem 0 0.5rem; }
+/* Columns align at the top and each ends with one out-link, which is the
+   convention every large directory footer uses. Equal height comes from
+   balancing how many items each column carries, not from pushing the links
+   down: a bottom-aligned link in a short column leaves a hole. Collection
+   titles run to 48 characters and wrap, so that column carries seven where the
+   single-line columns carry ten. */
+.dir-cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.25rem 2rem; margin: 0.75rem 0 0.5rem; align-items: start; }
 .dir-group h3 { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.35rem; }
 .dir-group a { display: block; font-size: 13.5px; color: var(--ink-mid); text-decoration: none; padding: 0.15rem 0; }
 .dir-group a:hover { color: var(--moss); }
 .dir-more { font-size: 13px; color: var(--ink-mid); margin-top: 0.75rem; }
 .dir-morelink { font-weight: 700; color: var(--moss) !important; margin-top: 0.3rem; }
-.dir-morebtn { display: block; background: none; border: none; padding: 0.15rem 0; font-family: var(--sans); font-size: 13.5px; text-align: left; cursor: pointer; }
 .dir-count { color: var(--ink-light); font-size: 12px; margin-left: 0.35rem; }
 .dir-cols { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
 .dir-all { margin-top: 1.25rem; }
