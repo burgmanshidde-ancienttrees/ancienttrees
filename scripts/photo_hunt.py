@@ -68,6 +68,14 @@ def licence_ok(short):
     return any(g in s for g in OK_LICENCE)
 
 
+def _plain(s):
+    """Commons files its Artist field as HTML. Strip the markup BEFORE
+    truncating, or a half-closed <a href=...> tag ends up in a photo credit on
+    the site, which is how Genoa's camphor was first credited on 2026-08-13."""
+    import html as _html
+    return _html.unescape(re.sub(r"<[^>]+>", "", s or "")).strip().strip(",")[:120]
+
+
 def imageinfo(titles):
     """Batched imageinfo with licence metadata for up to 50 File: titles."""
     if not titles:
@@ -86,7 +94,7 @@ def imageinfo(titles):
                 "thumb": ii.get("thumburl"),
                 "url": ii.get("descriptionurl"),
                 "licence": short,
-                "author": (meta.get("Artist") or {}).get("value", "")[:120],
+                "author": _plain((meta.get("Artist") or {}).get("value", "")),
             })
     return out
 
