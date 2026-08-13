@@ -50,6 +50,36 @@
       "kind": "write",
       "by": "session",
       "claimed_at": "2026-08-13T12:49:54+00:00"
+    },
+    {
+      "target": "nuremberg",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-13T13:01:37+00:00"
+    },
+    {
+      "target": "toulouse",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-13T13:01:37+00:00"
+    },
+    {
+      "target": "palermo",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-13T13:01:37+00:00"
+    },
+    {
+      "target": "hong-kong",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-13T13:01:37+00:00"
+    },
+    {
+      "target": "hobart",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-13T13:01:37+00:00"
     }
   ]
 }
