@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 26599,
+ "count": 26602,
  "trees": [
   {
    "id": "ams_001",
@@ -3029,6 +3029,54 @@
    "has_photo": true,
    "has_story": true,
    "sources": 4
+  },
+  {
+   "id": "bsc_007",
+   "tier": "highlighted",
+   "name": "The Cedro-do-Bucaco of the First Fall",
+   "species": "Mexican Cypress (Cupressus lusitanica)",
+   "city": "Bucaco",
+   "country": "Portugal",
+   "lat": 40.37450474,
+   "lng": -8.366271519,
+   "precision": "confirmed",
+   "age_min": 280,
+   "age_max": 340,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 2
+  },
+  {
+   "id": "bsc_008",
+   "tier": "highlighted",
+   "name": "The Pedunculate Oak of the Capela de Sao Pedro",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "city": "Bucaco",
+   "country": "Portugal",
+   "lat": 40.37523414,
+   "lng": -8.367303251,
+   "precision": "confirmed",
+   "age_min": 280,
+   "age_max": 340,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 2
+  },
+  {
+   "id": "bsc_009",
+   "tier": "highlighted",
+   "name": "The Cork Oak of the Lago Grande",
+   "species": "Cork Oak (Quercus suber)",
+   "city": "Bucaco",
+   "country": "Portugal",
+   "lat": 40.37732111,
+   "lng": -8.371175723,
+   "precision": "confirmed",
+   "age_min": null,
+   "age_max": null,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 2
   },
   {
    "id": "buc_001",
@@ -442901,7 +442949,7 @@
    "lng": -8.366271519,
    "precision": null,
    "reason": "",
-   "note": "The best unshipped tree here and the first one a next pass should chase. Register gives 300 years at the 2016 measurement, so about 310 now, with a 5.26 m trunk and 31 m of height, which would make it the second oldest thing in the forest after the Cedro de Sao Jose and, unlike that one, structurally intact. Cut only because no independent source names this individual tree: the Portuguese coverage",
+   "note": "[RESOLVED 2026-08-13, delivered as bsc_007] The best unshipped tree here and the first one a next pass should chase. Register gives 300 years at the 2016 measurement, so about 310 now, with a 5.26 m trunk and 31 m of height, which would make it the second oldest thing in the forest after the Cedro de Sao Jose and, unlike that one, structurally intact. Cut only because no independent source names t",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -442917,7 +442965,7 @@
    "lng": -8.367303251,
    "precision": null,
    "reason": "",
-   "note": "Register gives 300 years at the 2016 measurement, so about 310 now, girth 4.92 m, height 24 m, crown 20.7 m. One of only two natives on the classified list and it would balance a page otherwise made entirely of imports. No independent source found for the individual tree in the time available.",
+   "note": "[RESOLVED 2026-08-13, delivered as bsc_008] Register gives 300 years at the 2016 measurement, so about 310 now, girth 4.92 m, height 24 m, crown 20.7 m. One of only two natives on the classified list and it would balance a page otherwise made entirely of imports. No independent source found for the individual tree in the time available.",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -443013,7 +443061,7 @@
    "lng": -8.371175723,
    "precision": null,
    "reason": "",
-   "note": "Girth 4.26 m, 17.5 m tall, no age in the register. A native cork oak inside a collection of exotics, and cork oak is the Portuguese tree, so the story writes itself. No second source and no age; 400 m west of the published walk.",
+   "note": "[RESOLVED 2026-08-13, delivered as bsc_009] Girth 4.26 m, 17.5 m tall, no age in the register. A native cork oak inside a collection of exotics, and cork oak is the Portuguese tree, so the story writes itself. No second source and no age; 400 m west of the published walk.",
    "has_photo": false,
    "has_story": false,
    "sources": 0
