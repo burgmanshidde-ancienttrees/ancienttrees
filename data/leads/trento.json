@@ -1,0 +1,77 @@
+{
+  "city": "Trento",
+  "country": "Italy",
+  "city_slug": "trento",
+  "note": "From the 2026-08-13 verification pass on the MASAF register candidates in data/research/trento-register-candidates.json. 7 trees shipped to data/research/trento-verified.json (a city-centre cluster near the station: Via Santa Croce, Largo Pigarelli, Via Vannetti, Piazza Dante x2, plus Parco Gocciadoro and the Sardagna hillside further out). Everything below either failed the collectible-point/access bar outright (blocked) or was not fully researched in the window (leads).",
+  "leads": [
+    {
+      "name": "The Cedar of Lebanon at Vela (Villa De Lorenzi)",
+      "species": "Cedar of Lebanon (Cedrus libani)",
+      "lat": 46.077958,
+      "lng": 11.102225,
+      "why_a_lead": "Register sheet 21/L378/TN/22, girth 499cm, one of Trento's officially designated 18 monumental trees per 2024 local press. Stands at Villa De Lorenzi in the Vela district; this pass found the villa named but no confirmation the grounds are open to the public, so left as a lead rather than shipped or blocked outright.",
+      "next_step": "Check whether Villa De Lorenzi's park has any public visiting arrangement, similar to how Como's Villa del Grumello does."
+    },
+    {
+      "name": "The Giant Sequoia of Villa Lubich, Povo",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 46.066589,
+      "lng": 11.160269,
+      "why_a_lead": "Register sheet 05/L378/TN/22, girth 617cm, matching monumentaltrees.com's figure for a sequoia at Villa Lubich in Povo almost exactly (verification only, per the site's usual rule). Ownership and public accessibility of Villa Lubich were not confirmed this pass; the name suggests a possible link to Chiara Lubich/the Focolare Movement, headquartered in Trento, but no source found this pass states whether the garden is open to visitors.",
+      "next_step": "Search for Villa Lubich's current ownership and whether its garden hosts any public events or opening hours."
+    },
+    {
+      "name": "The Sequoia of Villa O'Santissima",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "lat": 46.042556,
+      "lng": 11.137794,
+      "why_a_lead": "Register sheet 17/L378/TN/22, girth 590cm, locality 'Villa O'Santissima - Via G. Ferrandi'. Not researched this pass; the name suggests a possible religious institution but this is a guess, not a finding, so it is a lead rather than a block."
+    },
+    {
+      "name": "Maderno hamlet: Horse Chestnut (Villa Maria) and Small-leaved Lime (Via dei Bergamini)",
+      "species": "Horse Chestnut (Aesculus hippocastanum); Small-leaved Lime (Tilia cordata)",
+      "lat": 46.090008,
+      "lng": 11.140311,
+      "why_a_lead": "Register sheets 04/L378/TN/22 (horse chestnut, girth 504cm) and 12/L378/TN/22 (lime, girth 440cm), both in the Maderno hamlet north of the centre, 3.0-3.2km out. Not researched this pass."
+    },
+    {
+      "name": "The Beech of Malga Brigolina",
+      "species": "European Beech (Fagus sylvatica)",
+      "lat": 46.05985,
+      "lng": 11.061781,
+      "why_a_lead": "Register sheet 08/L378/TN/22, girth 465cm, 4.3km from centre in an alpine-pasture (malga) area. Likely beyond the roughly 30-minute public-transport day-trip boundary; not researched this pass."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "The Sequoia of Ex-Villa Thun (Istituto delle Orsoline), Povo",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "reason": "Register sheet 02/L378/TN/22, girth 642cm. The site is now the Istituto delle Orsoline, an Ursuline convent and school; no evidence of public access. Private/restricted institution, hard rule 10."
+    },
+    {
+      "name": "The Himalayan Cedar of Liceo Scientifico da Vinci",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "reason": "Register sheet 16/L378/TN/22, girth 482cm, locality 'Liceo Scientifico da Vinci - Via Madruzzo 28'. Stands on the grounds of an active secondary school. Private/restricted institution, hard rule 10."
+    },
+    {
+      "name": "The Cypresses of Giardino Storico Villa De Mersi",
+      "species": "Mediterranean Cypress (Cupressus sempervirens)",
+      "reason": "Register sheet 24/L378/TN/22, 'Insieme omogeneo di Cupressus sempervirens', a group planting in a private historic villa garden. Fails the collectible-point test on its own even before any access question."
+    },
+    {
+      "name": "The Lungadige Plane Avenue",
+      "species": "London Plane (Platanus x acerifolia)",
+      "reason": "Register sheet 10/L378/TN/22, 'Insieme omogeneo di Platanus acerifolia', a row of plane trees along Lungadige - Via Roberto da Sanseverino (local press calls this row's trees the city's most majestic, some over 600cm girth and 30m tall). An avenue, not one identifiable tree with a single obvious place to stand: fails the collectible-point test."
+    },
+    {
+      "name": "The Via San Francesco Plane Avenue",
+      "species": "London Plane (Platanus x acerifolia)",
+      "reason": "Register sheet 14/L378/TN/22, 'Insieme omogeneo di Platanus acerifolia'. Same reasoning as the Lungadige avenue: a row, not a single collectible point."
+    },
+    {
+      "name": "The Via Torre Verde / Via Romagnosi Plane Avenue",
+      "species": "London Plane (Platanus x acerifolia)",
+      "reason": "Register sheet 18/L378/TN/22, 'Insieme omogeneo di Platanus acerifolia'. Same reasoning: a row, not a single collectible point."
+    }
+  ]
+}

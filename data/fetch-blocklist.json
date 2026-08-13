@@ -110,6 +110,12 @@
       "symptom": "403 to curl even with a browser user agent",
       "workaround": "none found this pass; tile.loc.gov raw PDF storage remains the working route to HALS record content (see www.loc.gov entry)"
     },
+    "www.portlandmaps.com": {
+      "host": "www.portlandmaps.com",
+      "noted": "2026-08-13",
+      "symptom": "hangs, no response at all, on the /od/rest/services/... ArcGIS REST path specifically; burned the full 20s timeout twice",
+      "workaround": "the opendata.arcgis.com/datasets/<item>_<layer>.geojson redirect route (lands on hub.arcgis.com/api/download/v1/items/...) reaches the same Heritage Trees data fine"
+    },
     "www.up.pt": {
       "host": "www.up.pt",
       "noted": "2026-08-09",

@@ -1,0 +1,166 @@
+[
+  {
+    "id": "bgm_001",
+    "name": "The Bald Cypresses of Parco Marenzi",
+    "species": "Bald Cypress (Taxodium distichum)",
+    "age_estimate": "over 200 years",
+    "age_min": 200,
+    "age_max": null,
+    "location": {
+      "address": "Parco Marenzi, Via Frizzoni, Bergamo",
+      "latitude": 45.699444,
+      "longitude": 9.6775,
+      "neighbourhood": "Citta Bassa"
+    },
+    "verified_sources": [
+      "data/registers/italy-masaf.json (sheets 06/A794/BG/03, girth 455cm/32m, and 07/A794/BG/03, girth 380cm/33m, both Parco Marenzi, Bergamo; a third sheet 05/A794/BG/03 registers the pair again as an 'insieme omogeneo', same coordinates, folded here rather than shipped separately)",
+      "https://www.bergamonews.it/2025/05/08/alla-scoperta-dei-cipressi-monumentali-del-parco-marenzi-visita-guidata-ed-esperienza-di-forest-bathing/801068/ (8 May 2025: guided nature walk among the park's bald cypresses, 'over two centuries of life', roughly 35m tall)",
+      "https://primabergamo.it/ambiente/finalmente-riaperto-e-risplende-il-parco-marenzi-di-bergamo-un-santuario-per-la-biodiversita-urbana/ (20 April 2026: park reopened to the public after restoration of its historic pond, names 'two imposing bald cypresses over 25m tall' among the park's monumental trees)"
+    ],
+    "access": "Free, public municipal park, reopened 20 April 2026 after pond restoration.",
+    "transport": "Central Bergamo (Citta Bassa), about a 10 to 15 minute walk from Porta Nuova.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Two mature bald cypresses (a native of American swamps, rare in an Italian urban park) stand by the park's small artificial lake, the tallest with a trunk over 4m round. Register gives 455cm/32m and 380cm/33m for the two named specimens; a third register sheet groups them again as a homogeneous pair at the same coordinates, so treat as one destination rather than three register lines. Bergamonews (8 May 2025) ran a guided 'forest bathing' walk here for the National Day of Monumental Trees, calling them 'over two centuries' old and noting bald cypress can live to 1,000 years. Primabergamo (20 April 2026) confirms the park, a 9,000 sqm 19th-century garden 'like a secret garden behind walls', reopened to the public that day after a 180,000 euro restoration of the pond and its water system; both cypresses are named as still standing. Good remarkable-species angle: this is a swamp tree from the American South thriving in a Lombard city park, and its 'knees' (root growths) are visible at the pond's edge per the tourism copy."
+  },
+  {
+    "id": "bgm_002",
+    "name": "The Atlas Cedar of Parco Caprotti",
+    "species": "Atlas Cedar (Cedrus atlantica)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Parco Caprotti, Via Tasso 109, Bergamo",
+      "latitude": 45.698611,
+      "longitude": 9.673611,
+      "neighbourhood": "Citta Bassa"
+    },
+    "verified_sources": [
+      "data/registers/italy-masaf.json (sheet 02/A794/BG/03, girth 405cm, height 25m, Parco Caprotti, Bergamo)",
+      "https://bergamogreen.altervista.org/alberi-monumentali-a-bergamo-citta/ (names the Atlas Cedar of Parco Caprotti among Bergamo's monumental trees, public park, notes sequoia and ginkgo biloba also on the grounds)"
+    ],
+    "access": "Free, public municipal park.",
+    "transport": "Central Bergamo (Citta Bassa), close to Via Tasso, a short walk from Parco Marenzi.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Bergamo's own green-space blog calls Parco Caprotti 'perhaps the least known park in Lower Bergamo': grounds date to the 15th century, current layout laid out by 19th/20th-century industrialist Carlo Caprotti, who also planted a sequoia and ginkgo alongside this cedar. Only one independent source beyond the register found this pass (a local green-space blog, not a newspaper or comune page), so flagged rather than confidently sourced; a second corroborating source (comune parks page, local press) would clear the flag. Girth 405cm/25m per register. Pairs naturally with the Marenzi cypresses and Via alla Rocca strawberry tree as a compact Citta Bassa walk."
+  },
+  {
+    "id": "bgm_003",
+    "name": "The Strawberry Tree of Via alla Rocca",
+    "species": "Strawberry Tree (Arbutus unedo)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Parco della Rocca, Via alla Rocca, Bergamo",
+      "latitude": 45.703672,
+      "longitude": 9.666325,
+      "neighbourhood": "Citta Alta"
+    },
+    "verified_sources": [
+      "data/registers/italy-masaf.json (sheet 13/A794/BG/03, girth 355cm, height 16m, Via alla Rocca, Bergamo)",
+      "https://bergamogreen.altervista.org/alberi-monumentali-a-bergamo-citta/ (names the Strawberry Tree of Parco della Rocca in Upper Bergamo, public park, notes it is read locally as a symbol of strength and resistance)"
+    ],
+    "access": "Free, public park below the Rocca fortress in Citta Alta.",
+    "transport": "Citta Alta, Bergamo's upper town; reachable on foot or by the funicular from Citta Bassa, then a short walk to the Rocca grounds.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "A strawberry tree (Arbutus unedo), unusually large for the species at 355cm girth and 16m tall, growing in the public park beneath Bergamo's medieval Rocca fortress in the upper town. Locally described as a symbol of strength and resistance. Only one independent source beyond the register found this pass; flagged for a thin source count, not for doubt about the tree's existence or access, both of which are well established (a well-known public park under a major landmark)."
+  },
+  {
+    "id": "bgm_004",
+    "name": "The Silk Mulberries of Giardino Paul Harris",
+    "species": "White Mulberry (Morus alba)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Giardino Paul Harris, Via XXIV Maggio, Bergamo",
+      "latitude": 45.704722,
+      "longitude": 9.666111,
+      "neighbourhood": "Santa Lucia"
+    },
+    "verified_sources": [
+      "data/registers/italy-masaf.json (sheet 01/A794/BG/03, 'Insieme omogeneo di Morus alba', Giardino Paul Harris, Bergamo)",
+      "https://bergamogreen.altervista.org/alberi-monumentali-a-bergamo-citta/ (three 'majestic' white mulberry specimens in the Santa Lucia district garden, tied to the area's silk-production history)"
+    ],
+    "access": "Free, public garden in the Santa Lucia district.",
+    "transport": "Citta Bassa, Santa Lucia district, a short walk from central Bergamo.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "The register lists this as a homogeneous group rather than a single specimen (no individual girth/height given), which is why it ships as one ensemble entry rather than three trees; per the ensemble rule this qualifies because it is compact and the garden itself is the destination. Three old white mulberries in a small public garden, remembered locally for the silk industry that once used mulberry leaves to feed silkworms around Bergamo. Only one independent source beyond the register found this pass; location precision kept approximate because the register gives no individual tree coordinates for the group, only the garden's centroid."
+  },
+  {
+    "id": "bgm_005",
+    "name": "The Giant Cedar of Pedrengo",
+    "species": "Himalayan Cedar (Cedrus deodara)",
+    "age_estimate": "planted late 19th century, roughly 130 years",
+    "age_min": 120,
+    "age_max": 140,
+    "location": {
+      "address": "Parco Frizzoni, Via Piave, Pedrengo",
+      "latitude": 45.701056,
+      "longitude": 9.730917,
+      "neighbourhood": "Pedrengo (day trip from Bergamo centre)"
+    },
+    "verified_sources": [
+      "data/registers/italy-masaf.json (sheet 01/G412/BG/03, girth 683cm, height 32m, Parco Frizzoni, Pedrengo)",
+      "https://www.in-lombardia.it/turismo-in-lombardia/bergamo-turismo/i-cedri-giganti-di-pedrengo (regional tourism board page: 35m tall, trunk circumference 7.20m / diameter 230cm, crown 25m wide, planted end of the 19th century, lightning-protection system installed on the trunk)",
+      "https://www.terredelvescovado.it/outdoor/i-giganti-di-pedrengo-i-cedri-del-parco-frizzoni-VprXBQUe92"
+    ],
+    "access": "Free, small public urban park (Parco Frizzoni), a Fondo Ambiente Italiano (FAI) recognised site.",
+    "transport": "Pedrengo, a village about 5km / roughly 15 minutes by car or local bus from central Bergamo; day-trip distance, not walkable from the city centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "The single most spectacular tree in this batch: a Himalayan cedar standing alone at the centre of the lawn in a small public park, 683cm girth per the national register versus 720cm circumference per the regional tourism page (measurement variance, same tree, not a conflict worth hedging over since both describe an exceptional specimen); height given as 32m (register) or 35m (tourism page). Pyramidal crown with a distinctive drooping 'stork's nest' tip typical of very old deodara. Planted late 19th century per the tourism page (no precise year), giving a rough age of a century to a century and a half; age range here is inferred from 'planted end of the 19th century' rather than a direct age figure, so treat with the same caution as an estimate. Protected with a fenced root zone and a lightning-conductor on the trunk. A group of three more large cedars of the same species stands nearby in the same park, not separately registered. This is a day-trip addition (about 5km/15 minutes from Bergamo centre), not part of the walkable city-centre cluster; label honestly as Pedrengo, not Bergamo."
+  },
+  {
+    "id": "bgm_006",
+    "name": "The Himalayan Cedar of Villa Piccinelli",
+    "species": "Himalayan Cedar (Cedrus deodara)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Parco Piccinelli, Piazza Giovanni XXIII, Seriate",
+      "latitude": 45.687639,
+      "longitude": 9.721306,
+      "neighbourhood": "Seriate (day trip from Bergamo centre)"
+    },
+    "verified_sources": [
+      "data/registers/italy-masaf.json (sheet 10/I628/BG/03, girth 465cm, height 30m, Parco Piccinelli, Seriate)",
+      "https://primabergamo.it/rubriche/viva-berghem/sette-giganti-verdi-seriate-alberi-monumentali-primato/ (one of Seriate's seven registered monumental trees, at Parco Piccinelli / Piazza Giovanni XXIII)",
+      "https://comune.seriate.bg.it/vivere-il-comune/luoghi/villa-piccinelli/ (Comune di Seriate: Villa Piccinelli's park, built 18th century by the Piccinelli merchant family, now managed by the municipality as a public cultural site, hosts a Moroccan-style 1860 greenhouse)"
+    ],
+    "access": "Free, public park managed by the Comune di Seriate; the greenhouse/pavilion inside is used for occasional exhibitions, but the park grounds are municipal and open.",
+    "transport": "Seriate, about 4km / roughly 10 to 15 minutes by bus or car from central Bergamo; day-trip distance.",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "A large Himalayan cedar (465cm girth, 30m tall) in the park of the former Villa Piccinelli, now council-owned and open as a public park along the high bank of the Serio river. The park also holds plants brought from Asia, Africa and the Americas by the 19th-century Piccinelli family and a Moroccan-style 1860 greenhouse still used as a garden pavilion. Forms a natural pair with bgm_007 (the pagoda trees in the same park) as a Seriate day-trip stop."
+  },
+  {
+    "id": "bgm_007",
+    "name": "The Pagoda Trees of Villa Piccinelli",
+    "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Parco Piccinelli, Piazza Giovanni XXIII, Seriate",
+      "latitude": 45.688369,
+      "longitude": 9.720886,
+      "neighbourhood": "Seriate (day trip from Bergamo centre)"
+    },
+    "verified_sources": [
+      "data/registers/italy-masaf.json (sheet 09/I628/BG/03, 'Insieme omogeneo di Styphnolobium japonicum', Parco Piccinelli, Seriate; a related single-specimen sheet 12/I628/BG/03 at Villa Ambiveri, a different address, is a different tree, not folded in here)",
+      "https://primabergamo.it/rubriche/viva-berghem/sette-giganti-verdi-seriate-alberi-monumentali-primato/ (describes the Parco Piccinelli sofora as the 'most renowned' of Seriate's seven monumental trees, trunk diameter ranging 265 to 455cm across the group, up to 35m tall)"
+    ],
+    "access": "Free, public park managed by the Comune di Seriate (same grounds as bgm_006).",
+    "transport": "Seriate, about 4km / roughly 10 to 15 minutes by bus or car from central Bergamo; day-trip distance.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Registered as a homogeneous group rather than a single specimen, so shipped as one ensemble entry per the register-twins rule; local press calls this grove of pagoda trees 'the most renowned' of Seriate's seven monumental trees, with individual trunks ranging 265 to 455cm and up to 35m tall. Location precision kept approximate: the register gives a centroid for the group, not individual coordinates, and coordinates sit a short walk from bgm_006's cedar within the same park. Note: do not confuse with the separate, similarly-named Styphnolobium at Villa Ambiveri (register sheet 12/I628/BG/03), which is a different tree at a different, private address and is blocked in leads."
+  }
+]

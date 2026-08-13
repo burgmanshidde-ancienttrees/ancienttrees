@@ -1,0 +1,188 @@
+[
+ {
+  "id": "pgi_001",
+  "name": "The Palazzo Murena Cedar",
+  "species": "Atlas Cedar (Cedrus atlantica)",
+  "age_estimate": "roughly 155 to 185 years (planted circa 1861)",
+  "age_min": 155,
+  "age_max": 185,
+  "location": {
+   "address": "Piazza dell'Universita 1 (cloister of Palazzo Murena, Rectorate of the University of Perugia)",
+   "latitude": 43.116344,
+   "longitude": 12.386519,
+   "neighbourhood": "Centro Storico"
+  },
+  "verified_sources": [
+   "data/registers/italy-masaf.json (sheet 12/G478/PG/10, girth 485cm, height 25m, Piazza Universita - Rettorato Centrale, Comune di Perugia municipal census of monumental trees, MASAF national register, CC BY 4.0)",
+   "https://www.lanazione.it/umbria/cronaca/un-gigante-verde-veglia-su-palazzo-murena-eda0b38f"
+  ],
+  "access": "Free, inside the cloister of Palazzo Murena, seat of the University of Perugia's Rectorate; the cloister is open to the public during normal building hours.",
+  "transport": "Central Perugia, on Piazza dell'Universita just off Corso Vannucci; reachable on foot from Piazza IV Novembre in about 5 minutes, or via the Minimetro to Pincetto/Fontivegge then a short walk.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Carried over from an earlier verification pass (2026-08-08, parked when the course changed) and re-checked this pass, nothing new contradicts it. MASAF register: girth 485cm, height 25m. La Nazione (19 Sep 2021) independently measured the same cedar in Palazzo Murena's cloister at 5m trunk circumference, 30m tall, 35m crown diameter (slight measurement variance between sources, same tree, same site), estimated age 150-180 years, planted just after Italian Unification (1861) in the eclectic garden taste of the era. Survived a lightning strike, visible scars on trunk. Pruned and crown-consolidated by tree-climbing arborists (Associazione Alberi Maestri) in October 2010, after which trunk diameter grew 35cm. Health confirmed excellent by arborists in 2020. In 2020 trumpeter Paolo Fresu and accordionist Daniele di Bonaventura performed a concert titled 'Two for Tree' twelve metres up in its canopy, for environmental awareness. Strong anecdote to lead with: a 160-year-old cedar that hosted a jazz concert in its own crown."
+ },
+ {
+  "id": "pgi_002",
+  "name": "The Atlas Cedar of Piazza Italia",
+  "species": "Atlas Cedar (Cedrus atlantica)",
+  "age_estimate": "over a century",
+  "age_min": 100,
+  "age_max": null,
+  "location": {
+   "address": "Piazza Italia, Perugia",
+   "latitude": 43.108936,
+   "longitude": 12.388681,
+   "neighbourhood": "Centro Storico"
+  },
+  "verified_sources": [
+   "data/registers/italy-masaf.json (sheet 02/G478/PG/10, girth 390cm, height 23m, Piazza Italia, Perugia)",
+   "https://guide.umbriaonline.com/news/cosa-vedere/piazza-italia.html (Piazza Italia, built after the demolition of the Rocca Paolina as a symbol of the post-Unification city, flowerbeds with 'remarkable century-old specimens of Atlas cedar and red fir')"
+  ],
+  "access": "Free, public city square and gardens in the historic centre.",
+  "transport": "Central Perugia, at the top of Corso Vannucci; a 2 to 3 minute walk from Piazza IV Novembre.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Stands in the flowerbeds of Piazza Italia, one of Perugia's most prominent squares, built over the demolished 16th-century Rocca Paolina fortress as part of the post-Unification remaking of the city in the 1870s-80s. Tourism copy calls it a 'century-old specimen' without a precise year, alongside a red fir of similar age; girth 390cm, height 23m per the register. Strong witness angle: planted on ground where a hated papal fortress once stood, in the same decades the square itself was carved out of its ruins. Pairs naturally into a centro storico walk with pgi_001 (five minutes away) and the other cedars below."
+ },
+ {
+  "id": "pgi_003",
+  "name": "The Cedar of Lebanon at Porta Pesa",
+  "species": "Cedar of Lebanon (Cedrus libani)",
+  "age_estimate": "over a century",
+  "age_min": 100,
+  "age_max": null,
+  "location": {
+   "address": "Largo di Porta Pesa (Via Brunamonti), Perugia",
+   "latitude": 43.113786,
+   "longitude": 12.394472,
+   "neighbourhood": "Porta Pesa"
+  },
+  "verified_sources": [
+   "data/registers/italy-masaf.json (sheet 03/G478/PG/10, girth 410cm, height 12.5m, Via Brunamonti - Largo di Porta Pesa, Perugia)",
+   "https://perugiacomunica.comune.perugia.it/sabato-10-maggio-si-celebra-la-giornata-nazionale-degli-alberi-monumentali (Comune di Perugia: names this Cedar of Lebanon among the trees under its and the Umbria regional forestry agency's care programme; maintenance carried out February-March 2025 including pruning, removal of damaged branches, crown rebalancing, and elastic guy-wires and fixed bracing installed for stability; describes it as standing in front of the Ciabatti-Montessori elementary school, a century-old specimen)"
+  ],
+  "access": "Free, standing on the public square of Largo di Porta Pesa.",
+  "transport": "Centro Storico, Porta Pesa area (Perugia's historic 'Chinatown' district), a 5 to 10 minute walk from Piazza IV Novembre.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "A cedar of Lebanon on the public square at Porta Pesa, described by the comune as century-old and standing in front of the Ciabatti-Montessori school (the tree itself is on the public largo, not inside the school grounds). Received active municipal care in Feb-Mar 2025: pruning, deadwood removal, crown rebalancing, and mechanical bracing (elastic guy-wires plus fixed supports) to stabilise the main limbs, confirming it is alive, monitored and considered worth preserving as of that date. Girth 410cm, height only 12.5m per the register, unusually squat for the species and girth, worth noting for the writer rather than smoothing over. A QR-code interpretive plaque programme was announced alongside the maintenance."
+ },
+ {
+  "id": "pgi_004",
+  "name": "The Cedar of Lebanon at Croce Rossa",
+  "species": "Cedar of Lebanon (Cedrus libani)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Via Masi, Largo della Croce Rossa, Perugia",
+   "latitude": 43.107056,
+   "longitude": 12.388222,
+   "neighbourhood": "Centro Storico"
+  },
+  "verified_sources": [
+   "data/registers/italy-masaf.json (sheet 01/G478/PG/10, height 18m, girth not recorded, Via Masi - Largo della Croce Rossa, Perugia)",
+   "https://www.lanazione.it/umbria/cronaca/giganti-verdi-tesori-da-curare-db7b6c8f (La Nazione: names a Cedar of Lebanon on Via Masi among Perugia's monumental trees under the same municipal care programme as pgi_003)"
+  ],
+  "access": "Free, standing on the public square of Largo della Croce Rossa.",
+  "transport": "Centro Storico, a short walk from Piazza Italia and Palazzo Murena.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Second cedar of Lebanon in the centro storico cluster, on the public square at Largo della Croce Rossa. Register records height (18m) but girth is blank for this sheet, a genuine register gap rather than a lost figure; do not invent one. Confirmed alive and named specifically by La Nazione's survey of the city's monumental-tree care programme. Flagged for the missing girth field only; existence, species and location are solid."
+ },
+ {
+  "id": "pgi_005",
+  "name": "The Hackberry of Via Fiume",
+  "species": "Mediterranean Hackberry (Celtis australis)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Via Fiume, Perugia",
+   "latitude": 43.106181,
+   "longitude": 12.3892,
+   "neighbourhood": "Centro Storico"
+  },
+  "verified_sources": [
+   "data/registers/italy-masaf.json (sheet 04/G478/PG/10, girth 445cm, height 21m, Via Fiume, Perugia)",
+   "https://www.lanazione.it/umbria/cronaca/giganti-verdi-tesori-da-curare-db7b6c8f (names a hackberry/bagolaro on Via Fiume among Perugia's monumental trees under municipal care)"
+  ],
+  "access": "Free, standing on the public street of Via Fiume in the historic centre.",
+  "transport": "Centro Storico, a short walk from Piazza Italia.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "A large Mediterranean hackberry (445cm girth, 21m tall) on a central street, independently named in La Nazione's survey of the city's monumental-tree maintenance programme alongside the Via Masi and Porta Pesa cedars, so treat all three as confirmed by the same municipal care initiative (Feb-Mar 2025). Hackberry is a species prized in Italian squares for its dense, drought-tolerant canopy; a specimen this size on a street rather than in a garden is unusual and worth noting."
+ },
+ {
+  "id": "pgi_006",
+  "name": "The Holm Oaks of Giardini del Frontone",
+  "species": "Holm Oak (Quercus ilex)",
+  "age_estimate": "secular (multiple centuries), planting begun 18th century",
+  "age_min": 200,
+  "age_max": null,
+  "location": {
+   "address": "Giardini del Frontone, Borgo XX Giugno, Perugia",
+   "latitude": 43.10005,
+   "longitude": 12.395408,
+   "neighbourhood": "Borgo XX Giugno"
+  },
+  "verified_sources": [
+   "data/registers/italy-masaf.json (sheet 11/G478/PG/10, girth 350cm, height 15.5m; and sheet 10/G478/PG/10, girth 342cm, height 21.5m; both Giardini del Frontone, Perugia)",
+   "https://it.wikipedia.org/wiki/Giardini_del_Frontone (public garden opposite the Abbey of San Pietro, laid out from 1707 for the Accademia degli Arcadi's summer gatherings, 18th-century avenues of monumental holm oaks, completed in the 1800s with pool, statues and plantings now centuries-old)",
+   "https://www.umbriacronaca.it/2025/05/14/perugia-20-giugno-1859-cosa-videro-i-secolari-lecci-del-frontone/ ('what did the secular holm oaks of the Frontone witness', 14 May 2025, ties the garden's veteran oaks to the 20 June 1859 sack of Perugia by papal troops)"
+  ],
+  "access": "Free, public municipal gardens.",
+  "transport": "Borgo XX Giugno, about a 15 to 20 minute walk south of the centro storico, or a short bus ride.",
+  "location_precision": "approximate",
+  "curation_status": "ai_generated",
+  "verify_notes": "Two of the garden's holm oaks are individually registered as monumental (350cm/15.5m and 342cm/21.5m, roughly 70m apart within the same gardens), folded into one entry since a visitor experiences the garden's oak avenues as a single destination rather than two separate stops. The gardens were laid out from 1707 for the Accademia degli Arcadi's literary summer gatherings, on ground used for military purposes from the 1400s and, before that, an Etruscan necropolis; crowned by the Arco del Frontone (1791). Strongest witness angle in this batch: a 2025 local history piece asks what these 'secolari lecci' saw on 20 June 1859, the day papal Swiss Guards and Antibes Legion troops sacked Perugia in the last major violence before Unification, a well-documented and significant event in the city's history. Confirmed alive and maintained (public gardens, actively described in current tourism and history copy). PIN: downgraded to approximate on merge; one point cannot mark two trees 70m apart, the same correction made to Amsterdam's Leidsebosje planes on 2026-08-08."
+ },
+ {
+  "id": "pgi_007",
+  "name": "The Himalayan Cedar of the Cimitero Monumentale",
+  "species": "Himalayan Cedar (Cedrus deodara)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Cimitero Monumentale, Via Enrico dal Pozzo, Perugia",
+   "latitude": 43.111097,
+   "longitude": 12.415883,
+   "neighbourhood": "Monteluce/Cimitero"
+  },
+  "verified_sources": [
+   "data/registers/italy-masaf.json (sheet 08/G478/PG/10, girth 496cm, height 23.5m, Cimitero Monumentale, Perugia)",
+   "https://www.comune.perugia.it/luogo/cimitero-monumentale/ (Comune di Perugia: the monumental cemetery on Via Enrico dal Pozzo, near the Templar-associated San Bevignate church, open daily 7:00-17:30 winter / 7:00-18:30 summer)"
+  ],
+  "access": "Free, inside the public monumental cemetery; open daily, 7:00-17:30 (winter) or 7:00-18:30 (summer).",
+  "transport": "Monteluce district, a short bus ride or a roughly 20 minute walk from the centro storico.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "The largest-girth cedar in this batch (496cm) grows inside Perugia's monumental cemetery, which is a public, daily-open site in the Italian tradition of cemeteries as parkland (comparable to how Milan's or Genoa's monumental cemeteries are visited for their architecture and trees, not only for burials). No dedicated news or history source naming this specific tree was found this pass, only the comune's general cemetery page confirming the site and its hours; flagged for a single specific source. Access itself is not in doubt, only the depth of the tree's own documentation."
+ },
+ {
+  "id": "pgi_008",
+  "name": "The Cypress of Parco della Cuparella",
+  "species": "Mediterranean Cypress (Cupressus sempervirens)",
+  "age_estimate": "",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Parco della Cuparella (Il Campaccio), Perugia",
+   "latitude": 43.110831,
+   "longitude": 12.386533,
+   "neighbourhood": "Centro Storico"
+  },
+  "verified_sources": [
+   "data/registers/italy-masaf.json (sheet 05/G478/PG/10, girth 293cm, height 21m, Parco della Cuparella, Perugia)",
+   "https://www.lanazione.it/umbria/cronaca/alberi-monumentali-umbria--c57a940e (names the Parco della Cuparella cypress among Umbria's monumental trees)",
+   "https://fondoambiente.it/luoghi/parco-della-cuparella (FAI heritage listing) and https://www.visitaperugia.it/en/park-of-cuparella/ (public park, locally called 'Il Campaccio', redesigned in the 1950s by landscape architect Pietro Porcinai from a disused, unhealthy hillside into a public garden along the city walls)"
+  ],
+  "access": "Free, public municipal park along Perugia's historic walls.",
+  "transport": "Centro Storico, the closest register tree to the city centre (0.25km); a few minutes' walk from Piazza Italia and Piazza Universita.",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "The nearest candidate to central Perugia, in a public park redesigned in the 1950s by the noted Tuscan landscape architect Pietro Porcinai, who turned a steep, disused patch along the ancient city walls (once used informally as a dump) into a garden, locally still nicknamed 'Il Campaccio'. Girth 293cm, height 21m per the register. Rounds out the centro storico walk alongside pgi_001 through pgi_005, all within a few minutes of each other."
+ }
+]
