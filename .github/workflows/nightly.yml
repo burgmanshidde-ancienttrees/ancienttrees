@@ -157,6 +157,13 @@ jobs:
             python3 scripts/passcheck.py --claim <place> --kind verify, commit
             and push the claim, and respect a refusal. A session and a night run
             wrote the same nine stories on 2026-08-06; the claim file is the fix.
+            CLAIM ONLY WHAT THIS WINDOW CAN FINISH, and merge per city as you
+            go. On 2026-08-13 one run claimed fourteen cities, assembled
+            eighteen trees, and published zero: the hour ran out mid-write and
+            the whole top of the queue sat locked behind expiring claims. A
+            city merged, built and pushed is worth more than three assembled,
+            so the loop is: claim one small batch, write it, merge it, run the
+            build, commit, release, and only then claim the next.
 
             What a good city run produces, and it is one city done properly:
             - Between 8 and 10 highlighted trees for an ordinary city, and for a

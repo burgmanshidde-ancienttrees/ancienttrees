@@ -38,15 +38,24 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/daily_digest.py ${{ inputs.force && '--force' || '' }}
 
+      # The digest's promote() rescores data/city-queue.json from Search
+      # Console; regenerating here keeps the rendered table and the inventory
+      # in agreement, which qa.py enforces on the next deploy. Without this
+      # step the requeue happened on the runner and evaporated: the first
+      # promote run (2026-08-13 morning) did exactly that, because the commit
+      # below only added DATA.md.
+      - name: Re-rank the queue from the new numbers
+        run: python3 scripts/city_queue.py
+
       - name: Commit if there is a new entry
         run: |
           git config user.name "burgmanshidde-ancienttrees"
           git config user.email "304936064+burgmanshidde-ancienttrees@users.noreply.github.com"
-          git add DATA.md
+          git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md
           if git diff --cached --quiet; then
             echo "No new entry today."
           else
-            git commit -m "Daily data digest"
+            git commit -m "Daily data digest, and the queue re-ranked from it"
             git pull --rebase
             git push
           fi

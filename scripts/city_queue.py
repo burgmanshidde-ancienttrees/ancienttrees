@@ -83,22 +83,27 @@ def near(pts, lat, lng, km=5.0):
     return sum(1 for a, b in pts if abs(a - lat) < dlat and abs(b - lng) < dlng)
 
 
-def target_for(supply, measured=False):
-    """Two stages, ruled by Hidde 2026-08-12: "is het niet beter om overal eerst
-    minstens 10 bomen te doen en dan te verdiepen wanneer we google search
-    confirmatie krijgen."
+def target_for(demand, measured):
+    """Hidde's staircase, ruled 2026-08-13: everyone gets to 10 first, and only
+    a city Google has confirmed climbs further, by size. "stadje 10 bomen,
+    grote stad 20, mega stad 30, metropool tot max 50." Size comes from the
+    demand column (English Wikipedia pageviews), the proxy the queue already
+    ranks by; `measured` is the basis column saying Search Console has spoken.
 
-    So 10 everywhere, and 25 only once Search Console has actually spoken for
-    that city. `measured` is the queue's own `basis` column saying exactly that.
-    It replaces a flat 25 for everyone (his own previous line, an hour earlier),
-    and before that a supply-banded 20/30/50 that gave Vienna 50 and Barcelona
-    30 for no reason to do with trees. This version needs no supply input at all,
-    which is why `supply` is now unused: the question is not how much is lying
-    around, it is whether anyone has arrived.
-
-    Less than the target is fine and expected where the trees are genuinely hard
-    to find. The floor stays four verified trees or no page."""
-    return 25 if measured else 10
+    The target is a ceiling and a stopping point, and his 80/20 rule governs
+    reaching it: when the next tree gets hard to find, move on to the next
+    city rather than grinding out the max ("eeuwig tokens gebruiken tot deze
+    max te halen is niet de strategie"). The floor stays four or no page."""
+    if not measured:
+        return 10
+    d = demand or 0
+    if d >= 700_000:
+        return 50   # metropool: London, New York class
+    if d >= 300_000:
+        return 30   # mega stad: Rome, Prague, Barcelona class
+    if d >= 100_000:
+        return 20   # grote stad: Vienna, Lisbon, Porto class
+    return 10       # stadje: Cadiz, Sintra class; confirmed changes nothing
 
 
 def measure(pts):
@@ -153,11 +158,11 @@ def enrich(doc, live):
             c.update(status="published", trees=info["trees"], photos=info["photos"],
                      walks=info["walks"], register=info["register"],
                      ready=info["ready"], supply=supply,
-                     target=target_for(supply, c["basis"].startswith("measured")))
+                     target=target_for(c.get("demand"), c["basis"].startswith("measured")))
         else:
             c.update(status="pending", trees=0, photos=0, walks=0,
                      register=0, ready=0, supply=0,
-                     target=target_for(0, c["basis"].startswith("measured")))
+                     target=target_for(c.get("demand"), c["basis"].startswith("measured")))
     doc["cities"].sort(key=lambda c: (c["rank"] is None, c["rank"] or 0, c["city"]))
     with open(SOURCE, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, ensure_ascii=False, indent=1)
@@ -239,22 +244,37 @@ def main():
     a = ap.parse_args()
 
     if a.next:
-        # So a run does not have to reason out where to work, and so it stops.
-        # Hidde, 2026-08-12: "zodat ze niet teveel doorgraven in 1 stad."
+        # Two stages, worked in this order. Stage 1 is the sprint: every ranked
+        # city to 10, because a page must exist before Google can judge it.
+        # Stage 2 is deepening, only on Google-confirmed cities, up the
+        # 20/30/50 staircase. Hidde, 2026-08-13: "zo snel mogelijk bij de top
+        # 100 10 bomen bij elke stad... daarna verdiepen op degene die echt
+        # goed presteren." His 80/20 rule rides along: stop at the target, and
+        # stop EARLIER the moment the next tree gets hard to find.
         doc = load_source()
-        gap = [c for c in doc["cities"]
-               if c.get("rank") and c.get("target") and c.get("trees", 0) < c["target"]]
-        gap.sort(key=lambda c: c["rank"])
-        print("BELOW TARGET, in queue order. Take the top one you can move cheaply,")
-        print("stop at the target, and leave the rest as leads.\n")
+        s1 = [c for c in doc["cities"] if c.get("rank") and c.get("trees", 0) < 10]
+        s2 = [c for c in doc["cities"] if c.get("rank") and c.get("target")
+              and 10 <= c.get("trees", 0) < c["target"]]
+        s1.sort(key=lambda c: c["rank"])
+        s2.sort(key=lambda c: c["rank"])
+        print("STAGE 1, the sprint: every ranked city to 10 trees. Top-down,")
+        print("take the first you can move cheaply. 80/20: when the next tree")
+        print("gets hard to find, move to the next city, never grind.\n")
         print("  #  city             now  gap  ready  register")
-        for c in gap:
+        for c in s1:
             print("%3d  %-16s %4d %4d %6d %9d" % (
-                c["rank"], c["city"][:16], c["trees"],
-                c["target"] - c["trees"], c.get("ready", 0), c.get("register", 0)))
-        print("\n%d cities, %d trees to go. Cities with no target get whatever"
-              % (len(gap), sum(c["target"] - c["trees"] for c in gap)))
-        print("verifies and are not chased.")
+                c["rank"], c["city"][:16], c.get("trees", 0),
+                10 - c.get("trees", 0), c.get("ready", 0), c.get("register", 0)))
+        print("\nSTAGE 2, deepening, ONLY after stage 1 has nothing cheap left:")
+        print("Google-confirmed cities climbing to their size target.\n")
+        print("  #  city             now target  ready  register")
+        for c in s2:
+            print("%3d  %-16s %4d %6d %6d %9d" % (
+                c["rank"], c["city"][:16], c.get("trees", 0),
+                c["target"], c.get("ready", 0), c.get("register", 0)))
+        print("\nStage 1: %d cities, %d trees. Stage 2: %d cities, %d trees."
+              % (len(s1), sum(10 - c.get("trees", 0) for c in s1),
+                 len(s2), sum(c["target"] - c.get("trees", 0) for c in s2)))
         return 0
 
     if a.check:
@@ -275,15 +295,14 @@ def main():
     doc = enrich(load_source(), live)
     order = rebuild_table(doc)
     n = rebuild_list(live, order)
-    deep = [c for c in doc["cities"] if c.get("target") == 25]
+    confirmed = [c for c in doc["cities"] if c.get("basis","").startswith("measured")]
     print("%d register points, %d live cities measured" % (len(pts), len(live)))
     print("data/city-queue.json: %d cities, %d ranked (the source)"
           % (len(doc["cities"]), len(order)))
     print("rendered: %d rows in CITY_QUEUE.md, %d entries in city-list.json"
           % (len(order), n))
-    print("%d cities are confirmed by Search Console and carry the 25 target; "
-          "%d carry the 10 first-version target"
-          % (len(deep), len(doc["cities"]) - len(deep)))
+    print("%d cities are Google-confirmed and climb the 20/30/50 staircase; "
+          "the rest aim at 10" % len(confirmed))
     return 0
 
 
