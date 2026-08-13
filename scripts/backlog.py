@@ -27,7 +27,8 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from cluster_register import load, cluster, km  # noqa: E402
+from cluster_register import load, cluster  # noqa: E402
+from geo import km  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 

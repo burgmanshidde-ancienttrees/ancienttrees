@@ -21,7 +21,6 @@ exhausted AGENT hunts stands untouched.
 """
 import glob
 import json
-import math
 import os
 import re
 import sys
@@ -30,6 +29,9 @@ import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+sys.path.insert(0, os.path.join(ROOT, "scripts"))
+from geo import km  # noqa: E402
 
 
 def _aliases():
@@ -210,12 +212,7 @@ _WD = []
 
 
 def haversine_m(a, b):
-    R = 6371000.0
-    p1, p2 = math.radians(a[0]), math.radians(b[0])
-    dp = p2 - p1
-    dl = math.radians(b[1] - a[1])
-    x = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
-    return 2 * R * math.asin(math.sqrt(x))
+    return km(a, b) * 1000
 
 
 def wikidata_candidates(tree):
