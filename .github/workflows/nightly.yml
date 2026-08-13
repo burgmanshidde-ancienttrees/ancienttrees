@@ -98,7 +98,15 @@ jobs:
             project. Read CLAUDE.md in the repository root and execute "The research
             workflow (autonomous run)" exactly as written.
 
-            Begin every run with: python3 scripts/visitors.py. Carry its 7-day
+            Begin every run with: python3 scripts/visitors.py, then
+            python3 scripts/prepare.py. The second one stocks the staging
+            shelf (register candidates for the next sprint cities, deduped
+            and annotated) and prints the state of the whole line: what is
+            staged for a verify pass and what verified trees await a writer.
+            It is deterministic and costs nothing, so preparation never
+            spends your window; your hour goes to verify and write work
+            taken FROM that shelf. Prefer finishing what is already staged
+            or verified over starting anything fresh. Carry its 7-day
             visits line into your LOG.md entry, and let it steer depth choices
             (deepen what people actually visit). If it says no token or refuses,
             skip it silently and work on.
