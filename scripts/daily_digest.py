@@ -986,7 +986,74 @@ def main():
     with open(DATA_MD, "w") as f:
         f.write(PREAMBLE + "\n" + entry + body)
     print("Wrote digest entry to DATA.md")
+    promote(gsc[2] if gsc else None)
     return 0
+
+
+def promote(pages):
+    """Feed measured demand back into the queue, so a city that starts ranking
+    climbs the list on its own.
+
+    Hidde, 2026-08-13: "hebben we een mechanisme hoe de steden zoals palermo die
+    het goed doen dan verhogen op de to do lijst?" We did not. CITY_QUEUE.md's
+    score was a snapshot taken on 2026-08-11 and nothing fed Search Console back
+    into it, so Palermo sat at rank 74 while taking 167 impressions and 3 clicks,
+    which is better than most of the top twenty.
+
+    The formula is not invented here, it is recovered from the file's own
+    numbers. CITY_QUEUE.md says score is demand times realised yield, and yield
+    is clicks per 100,000 Wikipedia pageviews; multiply those and the demand
+    cancels, so **a measured city's score is simply the clicks it took in the
+    window.** Checked against all ten measured rows: Lisbon 7.99 for 8 clicks,
+    Porto 5.00 for 5, Prague 4.00 for 4, Athens 1.01 for 1.
+
+    A city ranking without converting is not promoted: 10+ impressions and zero
+    clicks scores 0.25, the same as a page that never ranked at all, because
+    that is what the evidence says. Unpublished and unmeasured cities keep the
+    score they have."""
+    if not pages:
+        print("promote: no Search Console rows, queue untouched")
+        return
+    src = os.path.join(ROOT, "data", "city-queue.json")
+    if not os.path.exists(src):
+        return
+    with open(src, encoding="utf-8") as fh:
+        doc = json.load(fh)
+    per = {}
+    for r in pages:
+        path = r["keys"][0].replace("https://ancienttrees.app", "").strip("/")
+        if not path:
+            continue
+        slug = path.split("/")[0]
+        if slug in ("app", "explore", "cities", "contribute", "privacy", "account",
+                    "species", "collections", "countries", "parks"):
+            continue
+        c, i = per.get(slug, (0, 0))
+        per[slug] = (c + r["clicks"], i + r["impressions"])
+    moved = []
+    for city in doc["cities"]:
+        clicks, imps = per.get(city.get("slug") or "", (0, 0))
+        city["impressions_10d"], city["clicks_10d"] = imps, clicks
+        if imps < 10:
+            continue
+        was = city.get("score")
+        city["basis"] = "measured"
+        city["score"] = round(float(clicks), 2) if clicks else 0.25
+        if was != city["score"]:
+            moved.append((city["city"], was, city["score"]))
+    ranked = sorted([c for c in doc["cities"] if c.get("score") is not None],
+                    key=lambda c: (-c["score"], c["city"]))
+    for n, c in enumerate(ranked, 1):
+        c["rank"] = n
+    for c in doc["cities"]:
+        if c.get("score") is None:
+            c["rank"] = None
+    doc["cities"].sort(key=lambda c: (c["rank"] is None, c["rank"] or 0, c["city"]))
+    with open(src, "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, ensure_ascii=False, indent=1)
+    print("promote: %d cities rescored from measured demand" % len(moved))
+    for name, was, now in sorted(moved, key=lambda m: -(m[2] or 0))[:8]:
+        print("  %-16s %s -> %s" % (name, was, now))
 
 
 if __name__ == "__main__":
