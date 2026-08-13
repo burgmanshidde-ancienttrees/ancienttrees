@@ -11,6 +11,12 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-13 - "Which one is it?" comes off the city page: one reporter is not a sitewide feature
+
+Hidde saw the block on the Den Bosch city page and killed it: "compleet belachelijk om op 1 reporter overal opeens neer te gaan zetten. ja als we over 1 boom horen (dat was op de veste) dat hij het niet kan zien kan je op de dieperliggende pagina van die boom wat tips geven." He is right and the scale gives it away: one journalist, standing at one tree, produced a schema field, a preflight check and a boxed callout above the story on every tree card of every city page, sized for 1,083 trees.
+
+Removed from `site/src/pages/[city].astro`; the line stays on the tree's own page, where somebody actually standing in front of the tree is looking, which is what he asked for. The data stays, it costs nothing and it is true. Also rewrote dbo_003's line, which explained our own entry structure to the reader ("the entry is all three") rather than telling them which trunk to look at, the exact builder-speak the ratchet already bans in public copy. Recorded as PRINCIPLES.md #14, because the failure is flattering and therefore repeatable: a single vivid complaint reads as a discovered law, and the fix gets built one level above where the problem was.
+
 ## 2026-08-13 - The Brabants Dagblad mail was about to claim something Den Bosch had not done
 
 Hidde said he never followed up with Roel. Checked the draft against the live site before handing it back rather than trusting it, and the check earned its keep: the mail says every tree now tells you how to recognise it when you are standing there, which was Roel's own complaint, and six of the eleven trees (dbo_001, 003, 005, 006, 008, 009) carried no `how_to_recognise` line at all. Sending that to the one reader who has walked to a Den Bosch tree and could not tell which trunk was ours would have been disprovable in two clicks.
