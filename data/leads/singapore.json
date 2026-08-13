@@ -1,0 +1,37 @@
+{
+  "leads": [
+    {
+      "note": "Singapore reached its target of 10 total trees this pass (7 already published + 3 shipped: sgp_008 Bodhi Tree of Pearl's Hill, sgp_009 Banyan of Tiong Bahru Park, sgp_010 Earpod Tree of Fort Canning). The remaining ~147 unique register candidates (of 163 within 5km, after removing 13 rows that matched already-published trees by coordinate) were not individually verified this pass, per the brief's 'no more than 10 total' instruction. Listed below are the strongest-looking clusters for a future deepening pass, not individually fetched/verified."
+    },
+    {
+      "cluster": "Chinatown-fringe / Spottiswoode-Duxton-Everton",
+      "candidates": [
+        "HT 2016-274 Mango, Chay Yan St State Land",
+        "HT 2003-101 Angsana, near centre",
+        "HT 2024-329 Indian Rubber Tree",
+        "HT 2003-89 Binjai (Mangifera caesia), Spottiswoode Park Road opposite Spottiswoode Apartments",
+        "HT 2009-175 Rain Tree",
+        "HT 2013-204 already shipped as sgp_009 (Tiong Bahru Park)",
+        "HT 2005-145 Pukul Lima (Rain Tree), Everton Road top of slope opposite Block 10 carpark",
+        "HT 2012-203 Indian Rubber Tree, Duxton Plain Park near Pinnacle block 1D",
+        "HT 2003-107 Rain Tree, top of slope at junction of Spottiswoode Park Road",
+        "HT 2003-111 Pukul Lima, Kim Yam Road Stateland beside Gambier Court condominium"
+      ],
+      "reason": "Not evidence-rejected, simply not reached: this pass verified 3 trees and stopped at the city's target of 10. HT 2005-145 and HT 2003-107 are both Samanea saman (Rain Tree / Pukul Lima are the same species under English and Malay names) roughly 65m apart at different named locations (Everton Road vs. Spottiswoode Park Road junction); a future pass should check whether these read as one tree seen from two descriptions or two genuinely separate trees before shipping both, per the register-twin rule."
+    },
+    {
+      "cluster": "Fort Canning Park, unused register rows",
+      "candidates": [
+        "HT 2015-235 Getah Terup (Artocarpus elasticus), near Raffles Terrace - same species as the already-published Terap (sgp_005); redundant unless the page wants a second Terap specifically",
+        "HT 2001-07 Madras Thorn, path beside Service Reservoir - same species as already-published sgp_003",
+        "HT 2015-236 Kapok Tree, Fort Canning Park - same species as already-published sgp_006 (different location, Mount Faber)",
+        "HT 2001-31 / HT 2001-30 Sea Beam / Merbatu (Maranthes corymbosa), Canning Rise near pedestrian underpass",
+        "HT 2014-227 Bacang (Mangifera foetida), Canning Rise opposite lamp-post 7",
+        "HT 2014-223 Terap, Fort Green near Canning Rise L/P 11F - third Terap candidate, also redundant with sgp_005",
+        "HT 2010-181 Indian Rubber Tree"
+      ],
+      "reason": "Fort Canning already carries 5 published/shipped trees (Rain Tree, Madras Thorn, Tamalan, Terap, Earpod). Most remaining Fort Canning register rows duplicate species already represented on the page; Sea Beam/Merbatu and Bacang would add real diversity if a future pass wants to deepen this single park further."
+    }
+  ],
+  "blocked": []
+}
