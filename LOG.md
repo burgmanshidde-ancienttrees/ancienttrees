@@ -11,6 +11,12 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-13 - Batch 001's first placement: Oud-Utrecht is writing the Utrecht piece
+
+Hidde forwarded the reply chain. DUIC did not run the Utrecht pitch of 2026-08-08 itself; Else Marie Vonk forwarded it to Oud-Utrecht, and Piet van Dijck answered on 2026-08-12 that he is taking it up as an article in the series "Op pad met Oud-Utrecht", planned for the first half of 2027. That is batch 001's success test met, four days after sending, through a path nobody aimed at.
+
+Drafted the reply in `drafts/reply-oud-utrecht.md` for Hidde to send (hard rule 4). It thanks him, does not chase the date, and ends on the standing tree question, because 2027 is nine months out and a tip from a city historical society is a tree we could not find ourselves. Checked before writing rather than asserted: Utrecht is live with 5 trees, 4 with a free-licence photo, so the original mail's claim still holds; `/utrecht` returns 200; `mailcheck.py` clean. Logged the outcome and what it teaches about press pitches in `drafts/OUTREACH.md` (a pitch to a regional desk should be written so it survives being passed on, and the press lane is measured over quarters, not fortnights).
+
 ## 2026-08-13 (continued) - leads.py now catches a duplicate by its coordinates, not just its text
 
 The ratchet from the Munich fix, same session. Its own text markers (`[RESOLVED...]`) only work if whoever ships a lead remembers to write one; Munich's four duplicated trees and four more stale matches all had none, for two different write passes on two different days. Ran the same coordinate check `leads.py --ready` needs across every city's leads file: 45 more unresolved leads across 11 cities (Barcelona 13, Vienna 6, Florence 7, Lucca 5, Zaragoza 4, Cordoba 3, Turin 2, Lisbon 2, and one each in Bologna, Caserta, Rome) sit at the exact coordinates of a tree already published, mostly under a cleaner English name than the raw register string the lead still carries. Spot-checked several to rule out false positives from tight real clusters (Lucca's redwoods 40m apart, Vienna's Rathauspark planes) before trusting it: every match was exact to 5-6 decimal places, the same register entry republished with a name, not two different trees rounding together.
