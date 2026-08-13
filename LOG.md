@@ -11,6 +11,12 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-13 - Paulo's yes in writing, and a Braga ginkgo off the shelf of his own comments
+
+Hidde forwarded Paulo Araújo's reply: we may use the ginkgo photograph, he likes the story, and he picks the conversation back up at the end of August. His caveat needed checking rather than believing, because he has written about this tree twice: only one of the two posts carries photographs that are his. Fetched both. The photo already live (por_018) is the lead image of "Alerta amarelo", 5 December 2005, credited "Fotos: © Paulo V. Araújo", so his grant covers exactly what we publish. The 2004 post's ginkgo photographs are credited to a third person and are now recorded in CURATION.md as permanently off limits, because they are the prettier set and the next photo pass would find them first.
+
+Reply drafted at `drafts/reply-paulo-2.md`, mailcheck clean, asking him for nothing while he has no time. Its one question is a tree, per the standing rule, and it came out of a 2008 comment on his own blog: an anonymous commenter says a finer ginkgo stands in Braga, in the garden of Casa do Passadiço opposite the Frigideiras do Cantinho. Shelved as `data/leads/braga.json` with the thing that decides it, which is that Casa do Passadiço is a private house and hard rule 10 outranks how fine the tree is. Braga itself is unpublished at rank 167 with 51 ICNF entries in its district, so it is cheap to open when its turn comes; nothing dispatched.
+
 ## 2026-08-13 - Batch 001's first placement: Oud-Utrecht is writing the Utrecht piece
 
 Hidde forwarded the reply chain. DUIC did not run the Utrecht pitch of 2026-08-08 itself; Else Marie Vonk forwarded it to Oud-Utrecht, and Piet van Dijck answered on 2026-08-12 that he is taking it up as an article in the series "Op pad met Oud-Utrecht", planned for the first half of 2027. That is batch 001's success test met, four days after sending, through a path nobody aimed at.
