@@ -1,0 +1,58 @@
+{
+ "country": "Turkey",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Gümeli Natural Monument",
+   "lat": 41.03666667,
+   "lng": 31.63388889,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:4112_year_Yew_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:4112_year_Yew_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:4112_year_Yew_3.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Karagöl Yaylası Sarıçamı monumental tree",
+   "lat": 40.50105556,
+   "lng": 30.57897222,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Karag%C3%B6l_sar%C4%B1%C3%A7am1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Karag%C3%B6l_sar%C4%B1%C3%A7am_Pinus_sylvestris.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Kasnak Oak",
+   "lat": 37.732703,
+   "lng": 30.816308,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:DSCF9888ed_quercus_vulcanica.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Tarihi Çınar",
+   "lat": 40.182576,
+   "lng": 29.0164,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Bursa_-_%C4%B0nkaya_-_Do%C4%9Fu_%C3%87%C4%B1nar%C4%B1.jpg",
+    "https://commons.wikimedia.org/wiki/File:END-IMG_1851.jpg",
+    "https://commons.wikimedia.org/wiki/File:END-IMG_1852.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Lone Pine (tree)",
+   "lat": -35.2804,
+   "lng": 149.1466,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:ANZAC_memorial_park,_Murchison_Settlement,_July_2020_05.jpg",
+    "https://commons.wikimedia.org/wiki/File:AWM_Lone_Pine_plaque.jpg",
+    "https://commons.wikimedia.org/wiki/File:Aussie_Memorial_at_Lone_Pine.jpg"
+   ],
+   "status": "lead"
+  }
+ ]
+}

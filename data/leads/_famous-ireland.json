@@ -1,0 +1,24 @@
+{
+ "country": "Ireland",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Birr Castle Grey Poplar",
+   "lat": 53.09444,
+   "lng": -7.91528,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2014_The_Birr_Castle_Grey_Poplar_IRL.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "King oak (Tullamore)",
+   "lat": 53.26664,
+   "lng": -7.51847,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2013_King_Oak_IRL.jpg"
+   ],
+   "status": "lead"
+  }
+ ]
+}

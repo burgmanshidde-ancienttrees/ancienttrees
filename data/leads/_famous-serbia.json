@@ -1,0 +1,28 @@
+{
+ "country": "Serbia",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Platan u Sremskim Karlovcima",
+   "lat": 45.202049,
+   "lng": 19.936069,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Donja_Crkva,_Sremski_Karlovci_01.jpg",
+    "https://commons.wikimedia.org/wiki/File:Donja_Crkva,_Sremski_Karlovci_03.jpg",
+    "https://commons.wikimedia.org/wiki/File:Donja_crkva,_Sremski_Karlovci_02.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Platan na Vračaru",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Platan_na_Vra%C4%8Daru.jpg",
+    "https://commons.wikimedia.org/wiki/File:Platan_na_Vra%C4%8Daru_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Platan_na_Vra%C4%8Daru_2.jpg"
+   ],
+   "status": "lead"
+  }
+ ]
+}

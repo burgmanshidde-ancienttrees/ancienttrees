@@ -1,0 +1,70 @@
+{
+ "country": "Croatia",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Dedek",
+   "lat": 45.82346,
+   "lng": 16.015821,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Dedek_20230621_151401.jpg",
+    "https://commons.wikimedia.org/wiki/File:Dedek_20230621_151528.jpg",
+    "https://commons.wikimedia.org/wiki/File:Dedek_20230621_151559.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Fir Tsar",
+   "lat": 44.725668,
+   "lng": 15.085194,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Jela_car.JPG",
+    "https://commons.wikimedia.org/wiki/File:Jela_car_-_panoramio.jpg",
+    "https://commons.wikimedia.org/wiki/File:Jela_car_-_panoramio_(1).jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Gubec linden in Gornja Stubica",
+   "lat": 45.97334,
+   "lng": 16.01349,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2019_Gubec_linden_HR.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gupceva_lipa.JPG",
+    "https://commons.wikimedia.org/wiki/File:Znamenita_lipa_pri_cerkvi_v_Gornji_Stubici,_pod_katero_so_jeseni_l._1512_Matija_Gubec,_Iv._Pasanec_in_M._Guseti%C4%8D_z_va%C5%A1kimi_na%C4%8Delniki_kovali_na%C4%8Drt_za_veliki_kmeti%C5%A1ki_punt_1932.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Queen of the Forest Fir",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Park_suma_golubinjak2.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Ginkgo from Daruvar",
+   "lat": 45.59553,
+   "lng": 17.2209,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2020_Ginkgo_from_Daruvar_HR.jpg",
+    "https://commons.wikimedia.org/wiki/File:Ginkgo_Daruvar.jpg",
+    "https://commons.wikimedia.org/wiki/File:Ginkgo_Daruvar1.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Gubec linden in Gornja Stubica",
+   "lat": 45.97334,
+   "lng": 16.01349,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:2019_Gubec_linden_HR.jpg",
+    "https://commons.wikimedia.org/wiki/File:Gupceva_lipa.JPG",
+    "https://commons.wikimedia.org/wiki/File:Znamenita_lipa_pri_cerkvi_v_Gornji_Stubici,_pod_katero_so_jeseni_l._1512_Matija_Gubec,_Iv._Pasanec_in_M._Guseti%C4%8D_z_va%C5%A1kimi_na%C4%8Delniki_kovali_na%C4%8Drt_za_veliki_kmeti%C5%A1ki_punt_1932.jpg"
+   ],
+   "status": "lead"
+  }
+ ]
+}

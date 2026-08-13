@@ -1,0 +1,39 @@
+{
+ "country": "Norway",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Brureika",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Brureika_001.jpg",
+    "https://commons.wikimedia.org/wiki/File:Brureika_002.jpg",
+    "https://commons.wikimedia.org/wiki/File:Brureika_003.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Mollestadeika",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Mollestadeika.jpg",
+    "https://commons.wikimedia.org/wiki/File:Mollestadeika2021.jpg",
+    "https://commons.wikimedia.org/wiki/File:MollestadeikaINFO.jpg"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Tordenskioldeika",
+   "lat": null,
+   "lng": null,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Kj%C3%B8lhalstien.JPG",
+    "https://commons.wikimedia.org/wiki/File:Tordenskioldeika_(01).JPG",
+    "https://commons.wikimedia.org/wiki/File:Tordenskioldeika_(02).JPG"
+   ],
+   "status": "lead"
+  }
+ ]
+}

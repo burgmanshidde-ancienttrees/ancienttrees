@@ -1,0 +1,28 @@
+{
+ "country": "Thailand",
+ "note": "Famous trees Commons has a category for and we do not map. Found by scripts/famous_trees.py; each one already has photographs and usually coordinates, so the expensive half of a research pass is done. Not verified by us, not published.",
+ "leads": [
+  {
+   "name": "Prayer trees in Thailand",
+   "lat": 18.031583,
+   "lng": 103.079333,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Bodhi_Tree_(Whiteleaf)_of_Wat_Hua_Hat_0.JPG",
+    "https://commons.wikimedia.org/wiki/File:Bodhi_Tree_(Whiteleaf)_of_Wat_Hua_Hat_1.JPG",
+    "https://commons.wikimedia.org/wiki/File:Bodhi_Tree_(Whiteleaf)_of_Wat_Hua_Hat_2.JPG"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Yang Na Yai Tree",
+   "lat": 9.705608,
+   "lng": 100.028617,
+   "photos": [
+    "https://commons.wikimedia.org/wiki/File:Yang_Na_Yai_Tree.jpg",
+    "https://commons.wikimedia.org/wiki/File:Yang_Na_Yai_Tree_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Yang_Na_Yai_Tree_3.jpg"
+   ],
+   "status": "lead"
+  }
+ ]
+}
