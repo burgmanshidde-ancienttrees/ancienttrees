@@ -1,0 +1,280 @@
+{
+  "city": "Bordeaux",
+  "country": "France",
+  "status": "needs_curation",
+  "intro": "Bordeaux does not gather its best trees in one place, so this page holds three short walks rather than one route. Two stand on the same lawn in the Jardin Public, a pecan and a ginkgo. Three more sit within 150 metres of each other in the Parc Bordelais, including a Kentucky coffeetree over 130 years old and a black locust whose measurements make no ordinary sense. The third pair, out at Chantegrillon, includes a black poplar 741 centimetres round that carries a national remarkable-tree label from 2012.",
+  "meta_description": "Eight remarkable trees in Bordeaux, in three short walks: a 741cm black poplar, a pecan, and a black locust whose shape nobody has explained.",
+  "question_meta": "Bordeaux's biggest tree is the black poplar of Chante-Grillon, 741 centimetres round. Where it stands, plus seven more.",
+  "question_answer": "The largest tree in Bordeaux's own register is the black poplar at Parc Chantegrillon, measured at 741 centimetres round the trunk, which makes it the thickest trunk in the city's remarkable-tree list. It carries an Arbre Remarquable de France label awarded in 2012 and stands in a free public park. Its age is not recorded anywhere: Bordeaux's register gives girth, height and crown but leaves the age field empty on almost every entry, so this page says how thick a tree is rather than how old.",
+  "question_context": "Bordeaux publishes its entire tree inventory, over eighty thousand trees, and flags a small number as patrimonial or remarkable. Only that flagged subset is used here, and even inside it the designation is a decision rather than a measurement: some flagged trees are young, and one is a sapling. The register carries a life-status field and, separately, a felling date, and the two do not agree with each other. Seven trees still marked alive carry a date of removal, one of them felled in June 2025, because the register updates the date and not the status. Those are excluded, and every tree here was checked again for whether it is standing. Fifty-two further candidates are absent for a different reason: the flagged subset is full of trees in school and creche grounds, especially in Merignac, and a tree behind a school gate is not one a visitor can go and see. Where the register and a second source disagree on a measurement, both figures appear in that tree's own story.",
+  "faq": [
+    {
+      "q": "What is the biggest tree in Bordeaux?",
+      "a": "The black poplar at Parc Chantegrillon, 741 centimetres round, with a national remarkable-tree label from 2012. It is free to visit."
+    },
+    {
+      "q": "Are Bordeaux's remarkable trees free to visit?",
+      "a": "The ones on this page are. Bordeaux's register also flags trees inside schools and nurseries, and those are deliberately not here, because a visitor cannot reach them."
+    },
+    {
+      "q": "Can I see them in one walk?",
+      "a": "Not in one. They form three short walks: the Jardin Public, the Parc Bordelais, and Parc Chantegrillon, each with two or three trees close together."
+    }
+  ],
+  "hero_tree_id": "bdx_001",
+  "oldest_tree_id": "bdx_003",
+  "trees": [
+    {
+      "id": "bdx_001",
+      "name": "The Black Poplar of Chante-Grillon",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parc Chantegrillon (Jardin Chante-Grillon), Allée Jean Benais, 33300 Bordeaux",
+        "latitude": 44.8632831,
+        "longitude": -0.5637049,
+        "neighbourhood": "Bastide-Bordeaux Maritime"
+      },
+      "verified_sources": [
+        "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 29714, Licence Ouverte)",
+        "https://www.bordeaux.fr/le-mag/connaissez-vous-ces-sept-arbres-remarquables-de-bordeaux",
+        "https://www.leguidebordeaux.fr/quels-sont-les-7-arbres-bordelais-labellises-arbres-remarquables-de-france/3873/"
+      ],
+      "access": "Free, public park (Parc Chantegrillon, city-managed)",
+      "transport": "Bus stop Cite Chantecrit (lines 4/45/7), a few minutes walk; no direct tram stop",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "No tree in Bordeaux's remarkable-tree register has a bigger waistline than this one: 741 centimetres around, three trunks fused near the ground into something closer to sculpture than timber. It is one of only seven trees in the city carrying the A.R.B.R.E.S. label Arbre Remarquable de France, awarded in 2012, and it holds that title in a small municipal garden on the right bank rather than in one of Bordeaux's grand parks. The two official descriptions do not agree on its dimensions. The metropole's tree register records 19 metres of height and a trunk diameter of 236 centimetres. The city's own magazine calls it the record-holder of the garden at 31 metres, with a main trunk of 320 centimetres. Both are published figures, and the gap probably comes down to where the tape went around that fused base. Neither source gives an age at all. Black poplar is a riverside species and this is a riverside city. It grows fast, splits easily in storms and rarely survives to this size in a park, which is most of the reason the register puts it at the top of its own list. Bark and leaves from the species were once boiled up in French folk medicine against rheumatism. The tree is also classified under the city's urban plan, so the ground around it cannot be built on. Go and look at the base. That is where the whole story is.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bdx_002",
+      "name": "The Pecan of the Jardin Public",
+      "species": "Pecan (Carya illinoinensis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Jardin Public, Cours de Verdun, 33000 Bordeaux",
+        "latitude": 44.8496091,
+        "longitude": -0.5767224,
+        "neighbourhood": "Hypercentre / Chartrons edge, Jardin Public"
+      },
+      "verified_sources": [
+        "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 4600, Licence Ouverte)",
+        "https://www.bordeaux.fr/le-mag/connaissez-vous-ces-sept-arbres-remarquables-de-bordeaux",
+        "https://www.leguidebordeaux.fr/quels-sont-les-7-arbres-bordelais-labellises-arbres-remarquables-de-france/3873/"
+      ],
+      "access": "Free, public park (Jardin Public, Bordeaux's main 18th-century public garden)",
+      "transport": "Tram C, Jardin Public stop, at the park edge",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The tallest tree in Bordeaux's Jardin Public is an American nut tree. At 38 metres the pecan stands above everything else in the garden, and that figure is one of the rare cases where the city's register and the city's own magazine give exactly the same number instead of two measurements taken a decade apart. Pecan belongs to the river bottoms of Texas, Louisiana and the Mississippi valley, where it needs long hot summers to fill its nuts. Bordeaux, warm and Atlantic, is about as far as the species gets in a European public garden without ending up in an orchard. It is one of the seven Bordeaux trees carrying the A.R.B.R.E.S. label of 2012, which is a national association's judgement rather than a municipal one. The trunk figures wobble slightly between sources, 421 centimetres around in the register against a range of 358 to 420 on the city page, which is the ordinary drift of one tree measured twice by different people. No age has ever been published. The Jardin Public was laid out in the 1740s as a promenade for a city grown rich on wine and colonial trade, then rebuilt as an English-style park a century later. The pecan is at most as old as that second version of the garden and probably younger. It stands on the central lawn, a few paces from the ginkgo.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bdx_003",
+      "name": "The Kentucky Coffeetree of Parc Bordelais",
+      "species": "Kentucky Coffeetree (Gymnocladus dioica)",
+      "age_estimate": "over 130 years",
+      "age_min": 130,
+      "age_max": null,
+      "location": {
+        "address": "Parc Bordelais, central lawn area, 33200 Bordeaux",
+        "latitude": 44.8526083,
+        "longitude": -0.6042438,
+        "neighbourhood": "Caudéran-Saint Augustin, Parc Bordelais"
+      },
+      "verified_sources": [
+        "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 3401, Licence Ouverte)",
+        "https://m.bordeaux.fr/fr/gymnocladus-dioicacc1"
+      ],
+      "access": "Free, public park (Parc Bordelais); the tree itself sits behind a safety perimeter due to trunk cavities, viewable but not approachable at the trunk",
+      "transport": "Tram D, Courbet stop, short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The French call this tree chicot, meaning stump, because its winter silhouette is so bare and so sparsely branched that people assume it has died. It has not. The city puts it at more than 130 years old and says it dates from the creation of the Parc Bordelais, which opened in 1888, making it one of the oldest things in a park built to give a fast-growing western suburb somewhere to walk. Kentucky coffeetree is a genuine rarity in France. The genus holds two species in the world, this one and a Chinese cousin, and it survives largely because people planted it. Colonial settlers in North America roasted the seeds as a coffee substitute, which is where the English name comes from and which is not a recipe worth reviving, since the raw seeds and pods are toxic. The timber went into fence posts and railway ties. You will look at this one from a short distance. Cavities in the trunk mean the city has fenced a perimeter around it and prunes it regularly to keep weight off the limbs, and the register lists its vigour as weak, which for a tree of this age under active management describes the care rather than an ending. It measures 292 centimetres around and 14 metres tall, modest next to the park's big planes. The point of this one is that it is here at all.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bdx_004",
+      "name": "The Magnolia of Place Gambetta",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": null,
+      "location": {
+        "address": "Place Gambetta, 33000 Bordeaux",
+        "latitude": 44.8413799,
+        "longitude": -0.5804656,
+        "neighbourhood": "Hypercentre Métropolitain"
+      },
+      "verified_sources": [
+        "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 1241, Licence Ouverte)",
+        "https://rue89bordeaux.com/2015/06/la-place-gambetta-la-reconquete-des-bordelais/",
+        "https://participation.bordeaux-metropole.fr/processes/projet-903/f/1101/proposals/4229"
+      ],
+      "access": "Free, public square (Place Gambetta, fully reopened to pedestrians in 2021 after a renovation)",
+      "transport": "Tram A or B, Gambetta stop, right at the square",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "When Bordeaux rebuilt its busiest square in 2021, the design added more than fifty new trees around the ones already standing. This magnolia is one of two named individually in the historic centre's conservation plan, the document that decides what may not be touched inside the old city. Local press and the metropole's own consultation platform both describe the square's magnolias as centenaires, a hundred years old and more. That is a description rather than a measurement, so read the age as the neighbourhood's estimate and not a ring count. What has been measured: 358 centimetres of girth and 17 metres of height, large for a southern magnolia and very large for one growing in paving. Magnolia grandiflora comes from the American southeast and reached French gardens in the 18th century, where Bordeaux's mild Atlantic winters suited it immediately. It keeps its leaves all year, thick and glossy with a rust-coloured felt underneath, and it flowers in May and June with cream-white blooms the size of a dinner plate that carry a lemon scent several metres. Place Gambetta has been traffic, then a building site, then a pedestrian square in the space of a decade. It has also been one of the most walked-through points in Bordeaux for far longer than that. The magnolia is the element that simply stood there through all of it.",
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "kind": "flowers",
+        "label": "May and June, when the cream-white flowers open the size of a dinner plate"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bdx_005",
+      "name": "The Ginkgo of the Jardin Public",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Jardin Public, Cours de Verdun, 33000 Bordeaux",
+        "latitude": 44.8485641,
+        "longitude": -0.5792597,
+        "neighbourhood": "Hypercentre / Jardin Public"
+      },
+      "verified_sources": [
+        "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 4732, Licence Ouverte)",
+        "https://www.aquitaineonline.com/actualites-en-aquitaine/bordeaux-metropole/8424-bordeaux-les-arbres-mieux-proteges.html (confirms the city's citizen-sourced remarkable-tree census and PLU protection process that this register comes from)",
+        "https://www.unebonnenouvelleparjour.com/article-tapis-d-or-sous-un-ginko-biloba-au-jardin-public-de-bordeaux-112802105.html"
+      ],
+      "access": "Free, public park (Jardin Public)",
+      "transport": "Tram C, Jardin Public stop",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The French name for a ginkgo is the forty crown tree, after an 18th-century collector in Montpellier said to have paid forty ecus for a single sapling when the species had just reached Europe from China by way of the Netherlands and England. At that price it was less a tree than a status object. This one is now 27 metres tall with a crown 27 metres across and 405 centimetres around the trunk, which is as wide as any ginkgo in Bordeaux's register. It is protected twice over, once as a remarkable tree and once under the city's urban plan. Ginkgo biloba is the last survivor of a plant family older than the flowering plants and older than any bird. Every specimen in Europe descends from trees kept alive in Chinese temple grounds long after the species had vanished from the wild. This individual has no published age, and nobody has recorded whether it is male or female, which matters more than it sounds: female trees drop a fleshy seed that smells like something died. A Bordeaux blogger writes most autumns about the gold carpet under a ginkgo in this garden. That post gives no coordinates, so read it as the species doing what it does here rather than proof about this exact trunk. The gold is real either way, and it lasts about a week.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the whole crown turns butter gold and drops within days"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bdx_006",
+      "name": "The Redwood Twins of Chante-Grillon",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parc Chantegrillon (Jardin Chante-Grillon), Allée Jean Benais, 33300 Bordeaux",
+        "latitude": 44.8631833,
+        "longitude": -0.5634202,
+        "neighbourhood": "Bastide-Bordeaux Maritime"
+      },
+      "verified_sources": [
+        "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 29755 and gid 29773, Licence Ouverte)",
+        "https://www.aquitaineonline.com/actualites-en-aquitaine/bordeaux-metropole/8424-bordeaux-les-arbres-mieux-proteges.html (confirms the register's citizen-census/PLU protection process)"
+      ],
+      "access": "Free, public park (Parc Chantegrillon, city-managed, same small garden as the register-topping black poplar bdx_001)",
+      "transport": "Bus stop Cite Chantecrit (lines 4/45/7), a few minutes walk; no direct tram stop",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two coast redwoods stand about ten metres apart in a small garden on Bordeaux's right bank, one measuring 393 centimetres around and the other 390. The near-identical size and the spacing say they went into the ground together, almost certainly planted as a deliberate pair. The city's register lists them as two entries even though a visitor sees one thing. Sequoia sempervirens grows on a narrow strip of the Californian and southern Oregon coast where summer fog rolls in off the Pacific and does half the watering. Bordeaux is not that. The species has been planted all over Europe and mostly sulks, so a matched pair reaching this girth in an Atlantic French city is the notable part. No source gives an age for either of them. They stand in Parc Chantegrillon, the same small park that holds Bordeaux's thickest registered tree, a black poplar with a 741 centimetre base. Two of the city's strangest specimens in one municipal garden is not a coincidence: somebody chose this ground for exactly this kind of planting, and the whole site is now classified under the urban plan. Beyond the register, nobody has written about these two individually, so the city's measurements are what exists. Stand between them and look up. The bark gives the species away, soft and fibrous and deep red where the light hits it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bdx_007",
+      "name": "The Caucasian Elm of Parc Bordelais",
+      "species": "Caucasian Elm (Zelkova carpinifolia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parc Bordelais, near the lake, 33200 Bordeaux",
+        "latitude": 44.8540772,
+        "longitude": -0.6035277,
+        "neighbourhood": "Caudéran-Saint Augustin, Parc Bordelais"
+      },
+      "verified_sources": [
+        "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 3928, Licence Ouverte)",
+        "https://lestetardsarboricoles.fr/wordpress/category/arbre-remarquable/zelkova/ (general note that Bordeaux zelkovas were historically grafted onto elm rootstock, visible at the base of some specimens)",
+        "https://www.aquitaineonline.com/actualites-en-aquitaine/bordeaux-metropole/8424-bordeaux-les-arbres-mieux-proteges.html"
+      ],
+      "access": "Free, public park (Parc Bordelais, labelled a 'Jardin Remarquable' by the French Ministry of Culture in 2011)",
+      "transport": "Tram D, Courbet stop, short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Bordeaux's register files this tree as the false elm of Siberia, which is wrong on the geography by about three thousand kilometres. Zelkova carpinifolia comes from the Caucasus and northern Iran, and it reached France in the late 18th century after the botanist Andre Michaux saw the species near the Caspian Sea. One tree from that introduction, planted in 1786, still stands in the Jardin des Plantes in Paris. This one grows beside the lake in the Parc Bordelais, 371 centimetres around and 23 metres tall. Caucasian elm has a shape unlike anything else in a French park: a short trunk that breaks into a dense sheaf of near-vertical branches, so the whole tree reads as a giant upturned broom. Older Bordeaux specimens were often grafted onto elm rootstock, and on some the join is still visible as a change of bark near the base, worth a look while you are down there. The register records its vigour as weak. That is worth knowing rather than worrying about, because the species shrugs off the Dutch elm disease that erased the real elms from these parks, and it can carry declining branches for decades. No newspaper has ever profiled this particular tree, so the measurements are the city's and the rest is what the species does. The park around it was named a Jardin Remarquable by the culture ministry in 2011.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "bdx_008",
+      "name": "The Black Locust of Parc Bordelais",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parc Bordelais, central area, 33200 Bordeaux",
+        "latitude": 44.8531818,
+        "longitude": -0.6039063,
+        "neighbourhood": "Caudéran-Saint Augustin, Parc Bordelais"
+      },
+      "verified_sources": [
+        "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 4324, Licence Ouverte)",
+        "https://www.aquitaineonline.com/actualites-en-aquitaine/bordeaux-metropole/8424-bordeaux-les-arbres-mieux-proteges.html"
+      ],
+      "access": "Free, public park (Parc Bordelais)",
+      "transport": "Tram D, Courbet stop, short walk into the park",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The register records this black locust as 412 centimetres around and three metres tall. Read that twice. It is thicker than either of the redwoods on the other side of the city and barely taller than a first-floor window, and the two figures agree with each other internally, since the recorded trunk diameter of 131 centimetres matches the girth. That is not a slipped decimal in one field. It is the profile of a tree that has been pollarded hard, or broken by a storm, or cut back to a stump and left to resprout. Which of the three, nobody has written down. No press piece explains it and no photograph has been published that would settle it in a second, so what this entry describes is a shape rather than a canopy: a very wide, very low trunk in the middle of the Parc Bordelais, vigour recorded as weak, still officially listed among Bordeaux's remarkable trees. The species has a long French history. Robinia pseudoacacia arrived from North America in 1601 with Jean Robin, gardener to Henri IV, and the genus carries his name. The tree he planted is still alive in Paris. Black locust also regrows ferociously from cut stumps, which is exactly how a trunk this wide can outlive its own crown. Whatever happened here, the base came through it.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

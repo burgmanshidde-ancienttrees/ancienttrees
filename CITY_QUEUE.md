@@ -144,8 +144,8 @@ so qa.py fails the deploy when the table and the json disagree.
 | 16 | Beijing | 5.93 | 269,737 | - | - | - | - | 10 | predicted (thin competition) |
 | 17 | Jakarta | 5.91 | 268,596 | - | - | - | - | 10 | predicted (thin competition) |
 | 18 | Melbourne | 5.89 | 267,898 | - | - | - | - | 10 | predicted (thin competition) |
-| 19 | Bordeaux | 3.91 | 156,201 | - | - | - | 182 | 10 | predicted (thin competition) |
-| 20 | Strasbourg | 3.87 | 154,700 | - | - | - | 66 | 10 | predicted (thin competition) |
+| 19 | Bordeaux | 3.91 | 156,201 | 8 | - | 2 | 185 | 10 | predicted (thin competition) |
+| 20 | Strasbourg | 3.87 | 154,700 | 9 | - | 1 | 66 | 10 | predicted (thin competition) |
 | 21 | New Orleans | 5.64 | 256,232 | - | - | - | - | 10 | predicted (thin competition) |
 | 22 | Liverpool | 5.46 | 248,189 | - | - | - | - | 10 | predicted (thin competition) |
 | 23 | Bilbao | 3.33 | 133,133 | - | - | - | - | 10 | predicted (thin competition) |
@@ -418,7 +418,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 290 | Bogota | 0.04 | 1,623 | - | - | - | - | 10 | predicted (thin competition) |
 | 291 | Sao Paulo | 0.02 | 911 | - | - | - | - | 10 | predicted (thin competition) |
 | 292 | San Sebastian | 0.01 | 367 | - | - | - | - | 10 | predicted (thin competition) |
-| 293 | Bucaco | 0.00 | 132 | 6 | 1 | 1 | 29 | 10 | predicted (thin competition) |
+| 293 | Bucaco | 0.00 | 132 | 9 | 1 | 1 | 29 | 10 | predicted (thin competition) |
 
 ## What this replaces
 
