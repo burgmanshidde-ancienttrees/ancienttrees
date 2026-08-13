@@ -15,7 +15,10 @@ on:
 
 permissions:
   contents: write
-  actions: read
+  # write, not read: the watchdog step below dispatches nightly.yml when the
+  # night shift has gone silent. workflow_dispatch is the documented exception
+  # to GITHUB_TOKEN's no-recursive-runs rule, so this cannot loop.
+  actions: write
 
 concurrency:
   group: data-digest
@@ -56,6 +59,27 @@ jobs:
       # there is nothing for a model to decide.
       - name: Stock the staging shelf
         run: python3 scripts/prepare.py
+
+      # The mutual watchdog. The night runs already redispatch THIS workflow
+      # when it goes stale (CLAUDE.md rung 2); until now nothing did the
+      # reverse, so a stretch of dropped nightly schedules would only ever be
+      # a line in DATA.md that nobody reads while Hidde is away. GitHub drops
+      # cron schedules routinely (measured: 5-7 of 9 knocks fire on a normal
+      # day), and 26 hours of total silence is past bad luck. This workflow is
+      # the right watchdog because it is the leg that runs without tokens.
+      - name: Wake the night shift if it has gone silent
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          LAST=$(gh run list --workflow=nightly.yml -R "${{ github.repository }}"             --limit 1 --json createdAt --jq '.[0].createdAt' 2>/dev/null || echo "")
+          if [ -z "$LAST" ]; then echo "no nightly history readable; skipping"; exit 0; fi
+          AGE=$(( $(date -u +%s) - $(date -u -d "$LAST" +%s) ))
+          if [ "$AGE" -gt 93600 ]; then
+            echo "nightly silent for $(( AGE / 3600 ))h; dispatching"
+            gh workflow run nightly.yml -R "${{ github.repository }}"               && echo "dispatched" || echo "dispatch failed; cron remains the fallback"
+          else
+            echo "nightly last fired $(( AGE / 3600 ))h ago; healthy"
+          fi
 
       - name: Commit if there is a new entry
         run: |
