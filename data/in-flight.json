@@ -62,6 +62,36 @@
       "kind": "verify",
       "by": "night-run",
       "claimed_at": "2026-08-13T07:10:42+00:00"
+    },
+    {
+      "target": "como",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-13T07:20:34+00:00"
+    },
+    {
+      "target": "alicante",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-13T07:20:34+00:00"
+    },
+    {
+      "target": "trento",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-13T07:20:34+00:00"
+    },
+    {
+      "target": "bergamo",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-13T07:20:34+00:00"
+    },
+    {
+      "target": "perugia",
+      "kind": "verify",
+      "by": "session",
+      "claimed_at": "2026-08-13T07:20:34+00:00"
     }
   ]
 }
