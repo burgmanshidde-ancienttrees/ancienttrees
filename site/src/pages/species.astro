@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable } from "../lib/trees";
-import { groupTreesBySpecies, SPECIES_MIN_TREES } from "../lib/species";
+import { groupTreesBySpecies, SPECIES_MIN_TREES, GROUP_ORDER, speciesGroup } from "../lib/species";
 import { usablePhoto, thumbUrl } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
@@ -33,35 +33,6 @@ qualifying.sort((a, b) => b[1].length - a[1].length);
 // section headers a layperson recognises, not botanical order. Genus decides
 // membership; genus comes from the intro's own scientific_name, so a new
 // species lands in the right cluster with no list to maintain here.
-const GENUS_GROUP: Record<string, string> = {
-  Quercus: "Oaks", Fagus: "Beeches", Castanea: "Beeches",
-  Ulmus: "Elms and zelkovas", Zelkova: "Elms and zelkovas",
-  Platanus: "Planes", Tilia: "Limes", Acer: "Maples",
-  Aesculus: "Chestnuts, walnuts and hazels", Juglans: "Chestnuts, walnuts and hazels",
-  Corylus: "Chestnuts, walnuts and hazels", Pterocarya: "Chestnuts, walnuts and hazels",
-  Carya: "Chestnuts, walnuts and hazels",
-  Ficus: "Figs and mulberries", Morus: "Figs and mulberries", Maclura: "Figs and mulberries",
-  Cedrus: "Conifers", Pinus: "Conifers", Pseudotsuga: "Conifers", Sequoia: "Conifers",
-  Sequoiadendron: "Conifers", Metasequoia: "Conifers", Taxodium: "Conifers",
-  Cupressus: "Conifers", Cryptomeria: "Conifers", Thuja: "Conifers", Taxus: "Conifers",
-  Araucaria: "Conifers", Agathis: "Conifers", Calocedrus: "Conifers", Cephalotaxus: "Conifers",
-  Picea: "Conifers", Abies: "Conifers", Chamaecyparis: "Conifers", Ginkgo: "Conifers",
-  Phoenix: "Palms", Washingtonia: "Palms", Trachycarpus: "Palms", Jubaea: "Palms",
-  Livistona: "Palms",
-  Olea: "Fruit and blossom", Prunus: "Fruit and blossom", Pyrus: "Fruit and blossom",
-  Malus: "Fruit and blossom", Ceratonia: "Fruit and blossom", Arbutus: "Fruit and blossom",
-  Punica: "Fruit and blossom", Eriobotrya: "Fruit and blossom", Diospyros: "Fruit and blossom",
-  Eucalyptus: "Southern hemisphere", Corymbia: "Southern hemisphere",
-  Metrosideros: "Southern hemisphere", Tipuana: "Southern hemisphere",
-  Jacaranda: "Southern hemisphere", Ceiba: "Southern hemisphere",
-  Chorisia: "Southern hemisphere", Phytolacca: "Southern hemisphere",
-  Dracaena: "Southern hemisphere", Erythrina: "Southern hemisphere",
-  Brachychiton: "Southern hemisphere",
-};
-const GROUP_ORDER = ["Oaks", "Beeches", "Elms and zelkovas", "Planes", "Limes", "Maples",
-  "Chestnuts, walnuts and hazels", "Figs and mulberries", "Conifers", "Palms",
-  "Fruit and blossom", "Southern hemisphere", "More broadleaf trees"];
-const groupOf = (sci: string) => GENUS_GROUP[(sci || "").split(" ")[0]] ?? "More broadleaf trees";
 
 const speciesCards = qualifying.map(([common, members]) => {
   const intro = introBySlug.get(common)!;
@@ -70,7 +41,7 @@ const speciesCards = qualifying.map(([common, members]) => {
   return {
     slug: intro.data.slug,
     common,
-    group: groupOf(intro.data.scientific_name),
+    group: speciesGroup(intro.data.scientific_name),
     count: members.length,
     cities: cities.size,
     face: face?.url ? thumbUrl(face.url, 400) : null,

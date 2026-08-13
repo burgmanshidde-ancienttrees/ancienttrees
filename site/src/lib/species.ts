@@ -120,3 +120,50 @@ export function checkSpeciesNames(cities: CityEntry[]): void {
 
   if (errors.length) throw new Error(errors.join("\n"));
 }
+
+// Browse-by-family clusters. Hidde, 2026-08-13, at 87 species: "can we bring
+// some clusters in the species? this is not a great overview." Lifted out of
+// species.astro on the same day so the country pages can group by the same
+// headings ("we also need to include that like species and it probably needs
+// conventional clusters too"): two pages inventing two groupings is how a
+// browse convention stops being a convention. Genus decides membership.
+export const GENUS_GROUP: Record<string, string> = {
+  Quercus: "Oaks", Fagus: "Beeches", Castanea: "Beeches",
+  Ulmus: "Elms and zelkovas", Zelkova: "Elms and zelkovas",
+  Platanus: "Planes", Tilia: "Limes", Acer: "Maples",
+  Aesculus: "Chestnuts, walnuts and hazels", Juglans: "Chestnuts, walnuts and hazels",
+  Corylus: "Chestnuts, walnuts and hazels", Pterocarya: "Chestnuts, walnuts and hazels",
+  Carya: "Chestnuts, walnuts and hazels",
+  Ficus: "Figs and mulberries", Morus: "Figs and mulberries", Maclura: "Figs and mulberries",
+  Cedrus: "Conifers", Pinus: "Conifers", Pseudotsuga: "Conifers", Sequoia: "Conifers",
+  Sequoiadendron: "Conifers", Metasequoia: "Conifers", Taxodium: "Conifers",
+  Cupressus: "Conifers", Cryptomeria: "Conifers", Thuja: "Conifers", Taxus: "Conifers",
+  Araucaria: "Conifers", Agathis: "Conifers", Calocedrus: "Conifers", Cephalotaxus: "Conifers",
+  Picea: "Conifers", Abies: "Conifers", Chamaecyparis: "Conifers", Ginkgo: "Conifers",
+  Phoenix: "Palms", Washingtonia: "Palms", Trachycarpus: "Palms", Jubaea: "Palms",
+  Livistona: "Palms",
+  Olea: "Fruit and blossom", Prunus: "Fruit and blossom", Pyrus: "Fruit and blossom",
+  Malus: "Fruit and blossom", Ceratonia: "Fruit and blossom", Arbutus: "Fruit and blossom",
+  Punica: "Fruit and blossom", Eriobotrya: "Fruit and blossom", Diospyros: "Fruit and blossom",
+  Eucalyptus: "Southern hemisphere", Corymbia: "Southern hemisphere",
+  Metrosideros: "Southern hemisphere", Tipuana: "Southern hemisphere",
+  Jacaranda: "Southern hemisphere", Ceiba: "Southern hemisphere",
+  Chorisia: "Southern hemisphere", Phytolacca: "Southern hemisphere",
+  Dracaena: "Southern hemisphere", Erythrina: "Southern hemisphere",
+  Brachychiton: "Southern hemisphere",
+};
+
+export const GROUP_ORDER = ["Oaks", "Beeches", "Elms and zelkovas", "Planes", "Limes", "Maples",
+  "Chestnuts, walnuts and hazels", "Figs and mulberries", "Conifers", "Palms",
+  "Fruit and blossom", "Southern hemisphere", "More broadleaf trees"];
+
+/** The cluster heading a scientific name belongs under. */
+export function speciesGroup(scientificName: string): string {
+  return GENUS_GROUP[(scientificName || "").split(" ")[0]] ?? "More broadleaf trees";
+}
+
+/** The scientific name inside "European Yew (Taxus baccata)". */
+export function speciesScientific(species: string): string {
+  const m = (species || "").match(/\(([^)]+)\)/);
+  return m ? m[1] : "";
+}
