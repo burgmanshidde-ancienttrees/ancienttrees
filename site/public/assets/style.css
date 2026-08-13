@@ -729,3 +729,6 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
              border-left: 3px solid var(--moss); border-radius: 0 8px 8px 0;
              padding: 0.6rem 0.9rem; margin: 0 0 1rem; }
 .which-one b { color: var(--moss); }
+
+.species-cluster h2 { font-size: 17px; margin: 1.6rem 0 0.2rem; }
+.species-cluster:first-of-type h2 { margin-top: 0.8rem; }

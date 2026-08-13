@@ -27,6 +27,42 @@ const qualifying = [...groups.entries()].filter(
 );
 qualifying.sort((a, b) => b[1].length - a[1].length);
 
+// Grouped, not one flat grid. Hidde, 2026-08-13, at 87 species: "can we bring
+// some clusters in the species? this is not a great overview." The convention
+// (PictureThis, any field guide, a nursery catalogue) is browse-by-family:
+// section headers a layperson recognises, not botanical order. Genus decides
+// membership; genus comes from the intro's own scientific_name, so a new
+// species lands in the right cluster with no list to maintain here.
+const GENUS_GROUP: Record<string, string> = {
+  Quercus: "Oaks", Fagus: "Beeches", Castanea: "Beeches",
+  Ulmus: "Elms and zelkovas", Zelkova: "Elms and zelkovas",
+  Platanus: "Planes", Tilia: "Limes", Acer: "Maples",
+  Aesculus: "Chestnuts, walnuts and hazels", Juglans: "Chestnuts, walnuts and hazels",
+  Corylus: "Chestnuts, walnuts and hazels", Pterocarya: "Chestnuts, walnuts and hazels",
+  Carya: "Chestnuts, walnuts and hazels",
+  Ficus: "Figs and mulberries", Morus: "Figs and mulberries", Maclura: "Figs and mulberries",
+  Cedrus: "Conifers", Pinus: "Conifers", Pseudotsuga: "Conifers", Sequoia: "Conifers",
+  Sequoiadendron: "Conifers", Metasequoia: "Conifers", Taxodium: "Conifers",
+  Cupressus: "Conifers", Cryptomeria: "Conifers", Thuja: "Conifers", Taxus: "Conifers",
+  Araucaria: "Conifers", Agathis: "Conifers", Calocedrus: "Conifers", Cephalotaxus: "Conifers",
+  Picea: "Conifers", Abies: "Conifers", Chamaecyparis: "Conifers", Ginkgo: "Conifers",
+  Phoenix: "Palms", Washingtonia: "Palms", Trachycarpus: "Palms", Jubaea: "Palms",
+  Livistona: "Palms",
+  Olea: "Fruit and blossom", Prunus: "Fruit and blossom", Pyrus: "Fruit and blossom",
+  Malus: "Fruit and blossom", Ceratonia: "Fruit and blossom", Arbutus: "Fruit and blossom",
+  Punica: "Fruit and blossom", Eriobotrya: "Fruit and blossom", Diospyros: "Fruit and blossom",
+  Eucalyptus: "Southern hemisphere", Corymbia: "Southern hemisphere",
+  Metrosideros: "Southern hemisphere", Tipuana: "Southern hemisphere",
+  Jacaranda: "Southern hemisphere", Ceiba: "Southern hemisphere",
+  Chorisia: "Southern hemisphere", Phytolacca: "Southern hemisphere",
+  Dracaena: "Southern hemisphere", Erythrina: "Southern hemisphere",
+  Brachychiton: "Southern hemisphere",
+};
+const GROUP_ORDER = ["Oaks", "Beeches", "Elms and zelkovas", "Planes", "Limes", "Maples",
+  "Chestnuts, walnuts and hazels", "Figs and mulberries", "Conifers", "Palms",
+  "Fruit and blossom", "Southern hemisphere", "More broadleaf trees"];
+const groupOf = (sci: string) => GENUS_GROUP[(sci || "").split(" ")[0]] ?? "More broadleaf trees";
+
 const speciesCards = qualifying.map(([common, members]) => {
   const intro = introBySlug.get(common)!;
   const cities = new Set(members.map((m) => m.city.id));
@@ -34,11 +70,15 @@ const speciesCards = qualifying.map(([common, members]) => {
   return {
     slug: intro.data.slug,
     common,
+    group: groupOf(intro.data.scientific_name),
     count: members.length,
     cities: cities.size,
     face: face?.url ? thumbUrl(face.url, 400) : null,
   };
 });
+const sections = GROUP_ORDER
+  .map((g) => ({ g, cards: speciesCards.filter((c) => c.group === g) }))
+  .filter((s) => s.cards.length > 0);
 
 const canonical = `${BASE_URL}/species`;
 const title = fitTitle(["Ancient Trees by Species", "Browse Ancient Trees by Species"], canonical);
@@ -61,7 +101,12 @@ const graph = [
   <Breadcrumbs items={crumbItems} />
   <h1>Ancient Trees by Species</h1>
   <div class="prose-block"><p>Cities group these trees by place; collections group them by theme. This page groups them by what they actually are. A London plane in Barcelona and a London plane in Warsaw are the same tree living two different lives, and reading them side by side tells you something a city page cannot: how long the species lives, what it does in autumn, and which cities planted it when.</p></div>
-  <div class="cindex-grid" set:html={speciesCards.map((c) => browseCard(`/species/${c.slug}`, c.common, `${c.count} trees &middot; ${c.cities} cities`, c.face)).join("")} />
+  {sections.map((s) => (
+    <section class="species-cluster">
+      <h2>{s.g}</h2>
+      <div class="cindex-grid" set:html={s.cards.map((c) => browseCard(`/species/${c.slug}`, c.common, `${c.count} trees &middot; ${c.cities} ${c.cities === 1 ? "city" : "cities"}`, c.face)).join("")} />
+    </section>
+  ))}
   <p class="suggest">Or explore by city: {published.map((p, i) => (
     <Fragment>{i > 0 && <Fragment set:html=" &middot; " />}<a href={`/${p.slug}`}>{p.city}</a></Fragment>
   ))}</p>
