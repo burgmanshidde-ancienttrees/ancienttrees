@@ -68,6 +68,75 @@ Build (`npm --prefix site ci` && `npm --prefix site run build`) clean, 1305 page
 
 FOR HIDDE: nothing blocks. Continuing to the next cheap target per `city_queue.py --next` while the window allows.
 
+## 2026-08-13 - Eleven cities, three continents on registers found the same day, and six checks that came out of being wrong
+
+**The day in one line: 105 cities, ~1,100 trees, and the machine got better at
+not deceiving itself.** Bergamo, Perugia, Como, Trento, Portland, Hobart,
+Bordeaux, Strasbourg, Nuremberg and Toulouse opened; Singapore, Hong Kong and
+Palermo reached ten. Roughly 12k tokens per published tree, under the 15k line.
+
+**Your rulings, all recorded where the work reads them.**
+- The staircase: sprint every ranked city to 10 first, then deepen only what
+  Google confirms, by size (stadje 10, grote stad 20, mega 30, metropool 50),
+  with 80/20 governing every number. `CITY_QUEUE.md`, computed in
+  `data/city-queue.json`, printed by `city_queue.py --next`.
+- Breadth over depth across the whole top 250: nothing deepens while the sprint
+  runs.
+- A top 250 built on Western tourism, ranked by demand times realised Google
+  performance times ease, where ease is a proven register country plus supply
+  already on disk. 293 cities scored, every demand figure fetched rather than
+  guessed.
+- One queue: `data/city-queue.json` is the source, CITY_QUEUE.md and
+  city-list.json are rendered from it, and qa.py fails the deploy if they drift
+  or if city-list.json regrows an ordering field.
+- The daily digest now feeds Search Console back into the queue, so a Palermo
+  that starts ranking climbs on its own overnight. Nothing waits on you.
+- Hard rule 8 loosened: write the superlative you believe. Only the
+  self-contradiction half survives, as `scripts/superlatives.py`.
+- Species, country and park intros may be written by a pass. That needed no
+  blueprint change; Contracts F and G always required an intro, never a human
+  typist. Every species with three or more trees now has a page: 86 written
+  today, 786 trees' worth of internal links that did not exist this morning.
+
+**Six checks, each because something went wrong first.** Free text flags and
+structured fields block (a filter nearly deleted the Rockey Elm, whose whole
+story is that tree lovers saved it from the council in 1963). Proximity flags
+and identity blocks (an 80m duplicate filter was quietly discarding eleven
+different conifer species standing near Hobart's Douglas fir). Two cities may
+not share an id prefix (a write pass refused to merge Portland over ten live
+Porto trees, and was right). Contract B mirrored in preflight. A workflow prompt
+may not declare a phase. And registercheck.py, because three registers in one
+day said a tree was alive in one field and gone in another.
+
+**What needs you.**
+1. **Four Nice entries have no honest replacement.** A repair pass confirmed the
+   Cimiez monastery garden passes as a compact ensemble and could not save the
+   Jardin Albert 1er, the Colline du Chateau, the Promenade des Anglais or the
+   Mont Boron forest: they are places containing trees, not trees, and no single
+   specimen inside them is documented. Their ids cannot be deleted (hard rule 3)
+   and cannot honestly stay as they are. My proposal is to keep the URLs and
+   rewrite them as what they are, but that is your call.
+2. **The same disease is corpus-wide: 34 entries across 24 cities** are named as
+   a mass of trees or a place ("The Bur Oak Grove of Wooded Island", "The Trees
+   of the Alameda de Hercules"). Some are legitimate ensembles by your own July
+   rule; the rest are not. Nobody has audited them.
+3. **Southern-hemisphere phenology is unverified.** The build shifts a species'
+   months by latitude using a northern rule, and no pass could confirm it
+   inverts below the equator, so Hobart ships with no best_time at all. Sydney,
+   Melbourne, Auckland and Cape Town are all in the top 250 and will hit this.
+4. **The Catalonia letter is still unsent** (`drafts/catalonia-permission.md`),
+   and it is the single highest-value one: 302 monumental trees with per-trunk
+   coordinates, which would also name the Montnegre holm oak you found on
+   Instagram. Three other replies are drafted and waiting: Roel at the Brabants
+   Dagblad, the Rome Sovrintendenza, and Paulo.
+
+**And the machine's own runs are still the weak link.** Ten fired in 24 hours
+for 138 minutes of work and sixteen published trees, against 103 from this
+session. Two fixes went in today: a LOG.md entry is now mandatory even when a
+run ships nothing, and the tool allowlist gained the plumbing that was causing
+eight refusals in five minutes. Neither has been observed working yet, because
+every manual run since has queued behind a scheduled one.
+
 ## 2026-08-12 - Den Bosch's open work closed: 4 to 11 trees, and the oldest-tree answer changes
 
 New session. `python3 scripts/visitors.py`: 262 visits, 392 page views over the last 7 days, trending up (83 on 2026-08-10, the best day so far). Step 0: Supabase submissions checked (SUPABASE_SERVICE_KEY present), only the known test row, nothing new. REVIEW.md's newest entry (2026-08-12) held no BLOCKER, one WARN marked FOR HIDDE (a permission-based photo licence on Porto's ginkgo, his own call to record or generalise, left untouched). Smoke test green on HEAD, weekly analysis and data digest both recent, nothing to dispatch.
