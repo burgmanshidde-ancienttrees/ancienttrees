@@ -87,14 +87,66 @@ def _city_coords(city_slug):
     return coords
 
 
+_CITY_SPECIES_CACHE = {}
+
+
+def _city_species(city_slug):
+    if city_slug in _CITY_SPECIES_CACHE:
+        return _CITY_SPECIES_CACHE[city_slug]
+    path = os.path.join(ROOT, "data", "cities", f"{city_slug}.json")
+    out = {}
+    try:
+        d = json.load(open(path, encoding="utf-8"))
+        for t in d.get("trees", []):
+            out[t["id"]] = t.get("species") or ""
+    except Exception:
+        pass
+    _CITY_SPECIES_CACHE[city_slug] = out
+    return out
+
+
+def _genus(species):
+    """The Latin genus out of either shape we store: "Common Name (Genus sp)"
+    or a bare "Genus sp"."""
+    if not species:
+        return ""
+    m = re.search(r"\(([A-Z][a-z]+)\s", species) or re.match(r"\s*([A-Z][a-z]+)\s", species)
+    return m.group(1).lower() if m else ""
+
+
 def published_match(city_slug, entry):
-    """The id of an already-published tree at this lead's own coordinates, or None."""
+    """The id of an already-published tree at this lead's own coordinates, or None.
+
+    **A shared coordinate is not proof of a shared tree, and the genus decides.**
+    Added 2026-08-13 after Hidde pointed out the obvious thing a distance test
+    cannot see: "interessante bomen kunnen natuurlijk wel dichtbij elkaar
+    staan." Two remarkable trees stand metres apart all over this site, and a
+    register frequently gives a group of them one coordinate. Measured across
+    the whole leads corpus, 76 leads matched a published tree by position and
+    three of them were a different genus entirely: an Araucaria of 1920 filed as
+    done because a horse chestnut shares its point in Barcelona, and an incense
+    cedar and a plane in Lucca, both dedicated on the same morning as the Atlas
+    cedar they sit beside. Those are three real trees this check would have
+    quietly retired.
+
+    So the guard is the one passcheck.py already applies for the same reason:
+    when both sides name a species and the genus differs, it is not the same
+    tree whatever the distance says. Where either side is silent the coordinate
+    still wins, because an unnamed lead on a published tree's exact point is
+    almost always that tree."""
     loc = entry.get("location") if isinstance(entry.get("location"), dict) else entry
     lat = loc.get("latitude", loc.get("lat"))
     lng = loc.get("longitude", loc.get("lng"))
     if lat is None or lng is None:
         return None
-    return _city_coords(city_slug).get((round(lat, 4), round(lng, 4)))
+    hit = _city_coords(city_slug).get((round(lat, 4), round(lng, 4)))
+    if not hit:
+        return None
+    g_lead = _genus(entry.get("species"))
+    g_live = _genus(_city_species(city_slug).get(hit, ""))
+    if g_lead and g_live and g_lead != g_live:
+        return None
+    return hit
 
 
 def classify(entry, blocking):
