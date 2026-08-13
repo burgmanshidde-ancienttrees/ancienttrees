@@ -1121,6 +1121,15 @@
     "note": "Portland imported (429) then rule-10 filtered: 169 of 429 stand on private ground, 215 public, 45 unknown. Hobart usable but locked behind per-tree PDFs. Auckland disqualified on a no-republish clause. Seattle/SF/Melbourne are full street inventories",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "bergamo+perugia",
+    "kind": "write",
+    "tokens": 113276,
+    "trees": 15,
+    "note": "15 stories opening two new Italian cities; 2 best_time from existing phenology files; no field fixes needed, species and titles already conformant; 4.1k/tree by the agent's own count, 7.5k against measured usage",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
