@@ -32,10 +32,22 @@ const cards = [...groups.values()]
       slug: intro.data.slug,
       name: intro.data.name || intro.data.park,
       city: g.city.data.city,
+      country: g.city.data.country,
       count: g.trees.length,
       face: face?.url ? thumbUrl(face.url, 400) : null,
     };
   });
+
+// Clustered rather than one flat grid, the same move the species index made on
+// 2026-08-13 and for the same reason (Hidde, same day: "park pages also need
+// clusters and needs to keep on updating"). A park's cluster is its country,
+// which is how anybody planning a trip reads a list of parks. Countries are
+// ordered by how many parks we hold there, so the section a visitor is most
+// likely to want is first, and a new park lands in its country with no list to
+// maintain here.
+const parkCountries = [...new Set(cards.map((c) => c.country))]
+  .map((country) => ({ country, items: cards.filter((c) => c.country === country) }))
+  .sort((a, b) => b.items.length - a.items.length || a.country.localeCompare(b.country));
 
 const canonical = `${BASE_URL}/parks`;
 const title = fitTitle(["Ancient Trees by Park and Garden", "The Parks and Gardens With the Best Trees"], canonical);
@@ -57,7 +69,12 @@ const graph = [
   <Breadcrumbs items={crumbItems} />
   <h1>Ancient Trees by Park and Garden</h1>
   <div class="prose-block"><p>Some parks are worth an afternoon on their own, because several remarkable old trees stand within a few minutes of each other. A botanical garden founded in 1545 and still on its original ground. A royal park that stayed private for two hundred years, which is why its trees are old. An English garden planted for a queen with species nobody in the country had grown before. Each of these holds enough to fill a walk.</p></div>
-  <div class="cindex-grid" set:html={cards.map((c) => browseCard(`/parks/${c.slug}`, c.name, `${c.count} trees &middot; ${c.city}`, c.face)).join("")} />
+  {parkCountries.map((s) => (
+    <section class="species-cluster">
+      <h2>{s.country}</h2>
+      <div class="cindex-grid" set:html={s.items.map((c) => browseCard(`/parks/${c.slug}`, c.name, `${c.count} trees &middot; ${c.city}`, c.face)).join("")} />
+    </section>
+  ))}
   <p class="suggest">Or explore by city: {published.slice(0, 12).map((p, i) => (
     <Fragment>{i > 0 && <Fragment set:html=" &middot; " />}<a href={`/${p.slug}`}>{p.city}</a></Fragment>
   ))}</p>
