@@ -77,7 +77,7 @@ def city_coords(city, article=None):
             cache = json.load(fh)
     except (OSError, ValueError):
         cache = {}
-    key = city
+    key = article or city
     if key in cache:
         v = cache[key]
         return tuple(v) if v else None
@@ -222,6 +222,14 @@ def enrich(doc, live):
     for c in doc["cities"]:
         info = live.get(c["city"].lower())
         if info:
+            # Measure supply around the city itself, not around the mean of the
+            # trees we happen to publish. Hong Kong's six trees average out to a
+            # point in the harbour with 19 register trees near it, while Central
+            # has 505: a spread-out city was reading as having no supply at all,
+            # which is the Kyoto 35-km problem wearing a different hat.
+            pos = city_coords(c["city"], c.get("article"))
+            reg = near(PTS, pos[0], pos[1]) if pos else info["register"]
+            info["register"] = max(reg, info["register"])
             supply = info["register"] + info["ready"]
             c.update(status="published", trees=info["trees"], photos=info["photos"],
                      walks=info["walks"], register=info["register"],
