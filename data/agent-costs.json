@@ -1292,6 +1292,24 @@
     "note": "Repair pass on the collectible-point test. Confirmed the Cimiez monastery garden passes as a compact walled ensemble, left the cemetery cypresses unresolved after a historical source placed the famous row in an adjacent vanished plot, and could not save four (Jardin Albert 1er, Colline du Chateau, Promenade des Anglais, Mont Boron forest). Refused to invent a specimen to save an id",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "species intros 1-27",
+    "kind": "write",
+    "tokens": 156924,
+    "trees": 0,
+    "note": "27 species page intros, each from its own trees",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "species intros 28-54",
+    "kind": "write",
+    "tokens": 120000,
+    "trees": 0,
+    "note": "the tail: 27 more, most with three or four trees, written short and honest rather than padded",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
