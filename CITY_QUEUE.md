@@ -291,8 +291,8 @@ so qa.py fails the deploy when the table and the json disagree.
 | 163 | Brussels | 1.00 | 176,863 | 20 | 4 | 1 | 436 | 20 | measured |
 | 164 | Cadiz | 1.00 | 79,226 | 5 | 4 | 1 | - | 10 | measured |
 | 165 | Sorrento | 1.00 | 40,049 | - | - | - | - | 10 | predicted (thin competition) |
-| 166 | Innsbruck | 1.47 | 58,742 | - | - | - | - | 10 | predicted (thin competition) |
-| 167 | Braga | 0.86 | 34,522 | - | - | - | 8 | 10 | predicted (thin competition) |
+| 166 | Braga | 0.86 | 34,522 | 4 | - | - | 8 | 10 | predicted (thin competition) |
+| 167 | Innsbruck | 1.47 | 58,742 | - | - | - | - | 10 | predicted (thin competition) |
 | 168 | Annecy | 1.42 | 56,859 | - | - | - | - | 10 | predicted (thin competition) |
 | 169 | Coimbra | 0.87 | 34,962 | - | - | - | 5 | 10 | predicted (thin competition) |
 | 170 | Regensburg | 1.30 | 51,930 | - | - | - | 2 | 10 | predicted (thin competition) |

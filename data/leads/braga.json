@@ -2,7 +2,7 @@
   "city": "Braga",
   "country": "Portugal",
   "city_slug": "braga",
-  "note": "Braga is not published yet (CITY_QUEUE.md rank 167, target 10). Started 2026-08-13 from a reader-supplied lead rather than from a research pass, so this file is a shelf, not a rejects list. The ICNF register holds 51 classified entries in the Braga district, which is where a real pass should start. Verification pass 2026-08-14 delivered 6 trees to data/research/braga-verified.json (brg_001 through brg_006), covering all 8 register processos within the city's 8km radius (two folded pairs). This file now also carries what that pass folded or could not close out.",
+  "note": "Braga is not published yet (CITY_QUEUE.md rank 167, target 10). Started 2026-08-13 from a reader-supplied lead rather than from a research pass, so this file is a shelf, not a rejects list. The ICNF register holds 51 classified entries in the Braga district, which is where a real pass should start. Verification pass 2026-08-14 delivered 6 trees to data/research/braga-verified.json (brg_001 through brg_006), covering all 8 register processos within the city's 8km radius (two folded pairs). This file now also carries what that pass folded or could not close out. Write pass 2026-08-14: Braga published with 4 trees (brg_001, brg_002, brg_003, brg_006). brg_004 and brg_005 were held on access, not on evidence, after a fresh check of the monastery's own site found the cerca closed for works; both sit in this file ready to ship when it reopens.",
   "leads": [
     {
       "name": "Ginkgo of the Casa do Passadico garden",
@@ -15,7 +15,7 @@
     {
       "name": "KNJ1/557, the second Tibaes cedar",
       "species": "Himalayan Cedar (Cedrus deodara)",
-      "lat": 41.55360,
+      "lat": 41.5536,
       "lng": -8.4778,
       "status": "folded",
       "why": "Folded into brg_004 (The Twin Cedars of Tibaes) in the 2026-08-14 verify pass: registered separately from KNJ1/556 but standing about 10m away beside the monastery lake, near-identical girth (3.56m vs 3.55m) and identical height (38m), same classification date. Kept here as the folded id per the Setubal-twins precedent, in case a future pass ever wants to split them."
@@ -27,10 +27,28 @@
       "lng": null,
       "status": "blocked",
       "why": "ominho.pt's 2026 roundup states the surviving Biscainhos tulip tree (brg_001) was originally planted as one of a symmetrical pair; the companion tree survived until the late 1970s and a replacement was planted in 1997. Blocked, not a lead: this would be a c.30-year-old sapling, nothing close to the ancient/remarkable bar, not registered, and not separately located in any source found this pass."
+    },
+    {
+      "name": "The Twin Cedars of Tibaes",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "lat": 41.5536,
+      "lng": -8.47775,
+      "status": "lead",
+      "why": "HELD ON ACCESS, not on evidence. Verified to publishable standard in the 2026-08-14 pass, then held by the write pass the same day: mosteirodetibaes.gov.pt carries a live site-wide notice that, due to works in progress, the cerca is closed ('Espacos encerrados: Cerca (fonte de S. Bento, escadorio, capela de S. Bento, lago, campos, mata e jardins)'). Both trees stand beside the lago, which the notice names directly, so a visitor buying the EUR 1.50 cerca ticket cannot currently reach them. The notice gives no end date. Ship both the moment the cerca reopens: the facts, sources, pins and access prices below are already checked, only the closure line needs rewriting. Register detail: KNJ1/556 and KNJ1/557, twin Cedrus deodara beside the monastery lake, girth 3.55m and 3.56m, height 38m, age 90 at the 2010 measurement, classified Aviso n.13 de 23/07/2010.",
+      "held_id": "brg_004"
+    },
+    {
+      "name": "The Great Pine of Tibaes",
+      "species": "Maritime Pine (Pinus pinaster)",
+      "lat": 41.5538,
+      "lng": -8.4774,
+      "status": "lead",
+      "why": "HELD ON ACCESS, not on evidence. Verified to publishable standard in the 2026-08-14 pass, then held by the write pass the same day: mosteirodetibaes.gov.pt carries a live site-wide notice that, due to works in progress, the cerca is closed ('Espacos encerrados: Cerca (fonte de S. Bento, escadorio, capela de S. Bento, lago, campos, mata e jardins)'). Both trees stand beside the lago, which the notice names directly, so a visitor buying the EUR 1.50 cerca ticket cannot currently reach them. The notice gives no end date. Ship both the moment the cerca reopens: the facts, sources, pins and access prices below are already checked, only the closure line needs rewriting. Register detail: KNJ1/555, Pinus pinaster, girth 4.11m, height 47m, crown 26m, age 200 at the 2010 measurement, classified Aviso n.13 de 23/07/2010. Publico's 2021 Fugas headline calls it the tallest pine in Portugal.",
+      "held_id": "brg_005"
     }
   ],
   "open_questions": [
-    "Why the Bom Jesus funicular-station oak and plane are officially named 'arvore do Abraco' together (both register entries carry the name under the same 2010 Aviso) is not established from any source found in 40 minutes. Worth one more targeted search (local guides, a Bom Jesus sanctuary history page, or the parish's own materials) before the story runs, since a real embrace legend would be the page's best line.",
-    "The Mosteiro de Tibaes cerca (walled grounds, where the twin cedars and the pine stand) showed up in one older cached search result as closed for works; the live mosteirodetibaes.gov.pt ticketing page fetched 2026-08-14 shows no closure notice and grounds tickets on sale. Worth a fresh check immediately before the write pass runs, since these are the only two trees on the page behind a paid, gated site."
+    "Why the Bom Jesus funicular-station oak and plane are officially named 'arvore do Abraco' is still not established. The published story says so plainly and asks the reader, per the publish-and-ask rule. A local guide, a Bom Jesus sanctuary history or the parish's own materials are the places left to look.",
+    "The Mosteiro de Tibaes cerca question is settled for now: checked 2026-08-14 on mosteirodetibaes.gov.pt, which carries a site-wide notice that the cerca (including the lago, where both held trees stand) is closed for works, with no end date given. Re-check before any future pass on Braga; the ticketing page still sells the EUR 1.50 cerca ticket, so the ticket page alone is not evidence of access."
   ]
 }
