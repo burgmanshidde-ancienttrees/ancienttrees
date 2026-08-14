@@ -5,7 +5,7 @@
   "intro": "Seville's grandest trees are mostly not ancient at all. They are the product of two specific bursts of civic ambition: centuries of orange trees planted for scent rather than fruit in Andalusi and Christian gardens alike, and a wave of botanical experimentation around the 1929 Ibero-American Exposition that filled Parque de María Luisa with Australian figs, American eucalyptus and Asian ginkgos never native to this soil. A handful of trees here predate all of that. Most are free to see, and the ones that aren't are inside places worth the ticket anyway.",
   "meta_description": "Seville's remarkable trees range from a 500-year ombu tied to Columbus's son to the city's tallest tree, a hidden 50-metre eucalyptus.",
   "question_answer": "Seville's oldest documented tree is the ombu at the Monasterio de la Cartuja, roughly 500 years old and said to have grown from South American seeds brought back by Hernando Colon, son of Christopher Columbus, around 1529. It stands in the grounds of what is now the CAAC contemporary art museum on Isla de la Cartuja, reachable by tram from the city centre.",
-  "question_meta": "Seville's oldest tree is a 500-year-old ombu at a former monastery, tied to Columbus's own son. Where it stands, and fifteen more remarkable trees.",
+  "question_meta": "Seville's oldest tree is a 500-year-old ombu at a former monastery, tied to Columbus's own son. Where it stands, and nineteen more remarkable trees.",
   "question_context": "The ombu at the Monasterio de la Cartuja has a stronger claim to age than anything else documented in Seville: local tradition holds that Hernando Colon, Christopher Columbus's son, planted it from seeds gathered in South America around 1529, in his own private arboretum, and that the tree or its seed passed to the neighbouring Carthusian monks after his death. If the date holds, it may be the first ombu ever grown in Europe. The tree nearly died in the early 1990s when a botched restoration sealed cavities in its trunk with polyurethane foam, trapping moisture that fed the fungus already damaging the wood; Expo '92 technicians removed the foam just in time, though the removal caused its own damage; the tree has been left untouched since. It grows on the grounds of the former monastery, which today houses the Centro Andaluz de Arte Contemporaneo (CAAC), on Isla de la Cartuja across the river from central Seville. Most other candidates for Seville's oldest tree turn out to be twentieth-century arrivals: the city's famous fig and eucalyptus trees mostly date to the 1910s and 1920s, and the orange trees in the cathedral's Patio de los Naranjos were replanted within living memory.",
   "faq": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Seville's remarkable trees free to visit?",
-      "a": "Twelve of the sixteen on this list stand in free public parks or squares. Four are inside sites that charge admission: the Real Alcazar, the Monasterio de la Cartuja (CAAC), and Seville Cathedral's Patio de los Naranjos, all UNESCO-listed or nationally protected monuments worth the ticket regardless of the trees."
+      "a": "Thirteen of the twenty on this list stand in free public parks or squares. Seven are inside sites that charge admission: the Real Alcazar, the Monasterio de la Cartuja (CAAC), and Seville Cathedral's Patio de los Naranjos, all UNESCO-listed or nationally protected monuments worth the ticket regardless of the trees."
     },
     {
       "q": "Why are so many of Seville's biggest trees Australian or American imports rather than native Spanish species?",
@@ -543,6 +543,133 @@
       "curation_status": "ai_generated",
       "notes": "Two independent sources. Jose Elias Bonells, former head of the city's parks service, describes the Plaza del Altozano specimen in 2020 as a large Ficus elastica var. decora of the Moraceae planted when the Juan Belmonte monument was inaugurated, two years before the municipal catalogue and confirming species and planting event independently. The 1972 date, the origin as a municipal container plant, the Vela de Triana stove damage and the dimensions come from the Ayuntamiento de Sevilla's Inventario de Arboles Singulares (2022), ficha 18. The catalogue itself notes the tree is not especially old and rests its case on symbolic value and size, which the story states rather than dresses up. City records physiological state Normal, conservation Bueno. Titularidad: Ayuntamiento de Sevilla.",
       "location_precision": "confirmed"
+    },
+    {
+      "id": "sev_017",
+      "name": "The Magnolia of the Real Alcázar",
+      "species": "Southern Magnolia (Magnolia grandiflora)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Real Alcázar de Sevilla, above the Baños de Doña María de Padilla, 41004 Sevilla",
+        "latitude": 37.38357257494255,
+        "longitude": -5.99061827830537,
+        "neighbourhood": "Santa Cruz"
+      },
+      "story": "Four metres seventy round is a great deal of magnolia. This is a species most people meet as a well behaved garden tree with glossy leaves, and this one has a trunk six metres ten around at the base, tapering to 4.70 at chest height, carrying twenty metres of crown over the Baños de Doña María de Padilla, the vaulted rainwater tank beneath the Alcázar's Patio del Crucero.\n\nIt is not a local. Magnolia grandiflora comes from the wet forests of the American southeast and arrived in European gardens in the eighteenth century as a slow, expensive novelty for people who could afford to wait. Seville turned out to suit it better than most places did.\n\nThe city's 2022 survey of its singular trees records the tree's physiology as normal, its structure as normal and its overall condition as good, and then, in the box for biological agents, names Agrocybe aegerita, a wood decay fungus that fruits in tight clusters on living hardwoods. That is why its plant health reads as regular rather than clean. A tree this size carrying a decay fungus is neither unusual nor a death sentence, but it is the kind of thing a city writes down and comes back to.\n\nThe flowers open in May and June, cream coloured and the size of a spread hand, and you smell them before you find them.",
+      "verified_sources": [
+        "https://www.femas.es/servicios/medio-ambiente-parques-jardines/arboles-singulares-de-sevilla/inventario-de-arboles-singulares-de-sevilla_redux.pdf (Inventario de Arboles Singulares de la Ciudad de Sevilla, Ayuntamiento de Sevilla, ficha 23, catalogued 08/07/2022: Magnolia grandiflora, Real Alcazar, Banos Dona Maria de Padilla; girth 470 cm at 1.30 m and 610 cm at the base, height 20 m, mean crown 15 m; estado fisiologico Normal, fitosanitario Regular, biomecanico Normal, conservacion Bueno, agente biotico Agrocybe aegerita)",
+        "https://www.sevilla.org/documentos/parquesyjardines/ArbolesSingularesSevilla/23/ (the city's web mirror of the same ficha; same authority, not an independent source)"
+      ],
+      "access": "Paid entry (Real Alcázar admission ticket required)",
+      "transport": "10 min walk from Puerta de Jerez tram stop (T1), inside the Real Alcázar grounds",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Single source, the municipal catalogue, hence flagged; the sevilla.org per-tree page is the same authority rather than a second source. The catalogue is dated July 2022 and has no expiry: one tree in it, ficha 45 on the Plaza de la Encarnacion, was felled in October 2023, so a designation here is not a live check. Every condition word in the story is the catalogue's own. No age is claimed because the catalogue records none. Coordinate matches the stated emplazamiento (the Banos de Dona Maria de Padilla under the Patio del Crucero) to within about 15 metres, which is why this pin is confirmed while two other Alcazar entries added the same day are not."
+    },
+    {
+      "id": "sev_018",
+      "name": "The Judas Tree of the Real Alcázar",
+      "species": "Judas Tree (Cercis siliquastrum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "best_time": {
+        "months": [
+          3
+        ],
+        "kind": "flowers",
+        "label": "March, when magenta flowers open straight out of the bare bark"
+      },
+      "location": {
+        "address": "Jardín Inglés, Real Alcázar de Sevilla, 41004 Sevilla",
+        "latitude": 37.382752385637126,
+        "longitude": -5.991827712694289,
+        "neighbourhood": "Santa Cruz"
+      },
+      "story": "A Judas tree that has reached sixteen metres has done something the species does not normally bother with. Cercis siliquastrum is a small tree, usually topping out around eight or ten metres in a courtyard, and this one in the Alcázar's English Garden is twice the height of the ones people plant on purpose, with a trunk 2.20 metres round and a crown twelve metres across.\n\nIts trick is the flowering. In March, before a single leaf shows, magenta pea flowers open straight out of the bark, on the old wood and the bare limbs as well as the twigs, so the whole frame of the tree turns pink for a fortnight. Botanists call it cauliflory, and almost nothing else in a European garden does it.\n\nThe Spanish call the species the árbol del amor, the love tree. English took the other tradition, that Judas hanged himself from one. Same tree, worse story.\n\nThe garden around it was planted from 1910, when the Alcázar laid out a cooler, shadier English counterpoint to its Andalusi courtyards. Nothing dates this particular tree. What the city's surveyors did record, when they measured it in July 2022, is a tree in optimal physiological condition with no plant health anomalies at all, which is not something they wrote about many of its neighbours.",
+      "verified_sources": [
+        "https://www.femas.es/servicios/medio-ambiente-parques-jardines/arboles-singulares-de-sevilla/inventario-de-arboles-singulares-de-sevilla_redux.pdf (Inventario de Arboles Singulares de la Ciudad de Sevilla, Ayuntamiento de Sevilla, ficha 8, catalogued 08/07/2022: Cercis siliquastrum, Real Alcazar, Jardin Ingles; girth 220 cm at 1.30 m, height 16 m, mean crown 12 m; estado fisiologico Optimo, fitosanitario Sin anomalias, biomecanico Normal, conservacion Bueno)",
+        "https://www.sevilla.org/documentos/parquesyjardines/ArbolesSingularesSevilla/8/ (the city's web mirror of the same ficha; same authority, not an independent source)"
+      ],
+      "access": "Paid entry (Real Alcázar admission ticket required)",
+      "transport": "10 min walk from Puerta de Jerez tram stop (T1), inside the Real Alcázar grounds",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Single source, the municipal catalogue, hence flagged. Pin marked approximate deliberately: the catalogue places the tree in the Jardin Ingles, but its coordinate sits about 80 metres west of the pin this site already publishes for the ginkgo grove in that same garden (sev_001), and the catalogue is known to carry misplaced coordinates (its ficha 15 holds ficha 14's position, 1.2 km away). Inside a walled ticketed garden the named location does the work the pin cannot. The 1910 planting date for the English Garden comes from sev_001's sources and is stated about the garden, not about this tree. best_time follows the species' well known March flowering in southern Spain, not a dated local record."
+    },
+    {
+      "id": "sev_019",
+      "name": "The Orange Tree of Pedro the Cruel",
+      "species": "Bitter Orange (Citrus aurantium)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Real Alcázar de Sevilla, between the Pabellón de Carlos V and the Cenador del León, 41004 Sevilla",
+        "latitude": 37.382742310994175,
+        "longitude": -5.990300858190834,
+        "neighbourhood": "Santa Cruz"
+      },
+      "story": "The measurements on this one tell a different story from the name. Two metres round at the base, thirty six centimetres at chest height, three metres tall: a broad old stool with a thin young trunk coming out of it, which is what a citrus looks like after it has been cut back, frozen back or died back and grown again more than once.\n\nSeville's catalogue of singular trees lists it as El Naranjo de Pedro el Cruel, after Pedro I of Castile, called both the Cruel and the Just, who built the mudéjar palace still standing a short walk from here between 1364 and 1366. The catalogue does not say why the tree carries his name and does not date it. A bitter orange living six centuries would be remarkable, and nothing here shows that this one has. If you know when it was planted, or where the name came from, tell us and it goes on the page.\n\nBitter oranges have been planted in this city since Almohad rule for the scent of the blossom rather than the fruit, which is far too sour to eat straight and ends up in British marmalade instead. This one stands between the Pabellón de Carlos V and the Cenador del León, and the 2022 survey records it as physiologically stressed but in good overall condition.",
+      "verified_sources": [
+        "https://www.femas.es/servicios/medio-ambiente-parques-jardines/arboles-singulares-de-sevilla/inventario-de-arboles-singulares-de-sevilla_redux.pdf (Inventario de Arboles Singulares de la Ciudad de Sevilla, Ayuntamiento de Sevilla, ficha 9, catalogued 08/07/2022: Citrus aurantium, 'El Naranjo de Pedro el Cruel', Real Alcazar, between the Pabellon de Carlos V and the Cenador del Leon; girth 36 cm at 1.30 m and 200 cm at the base, height 3 m, mean crown 2 m; estado fisiologico Estresado, fitosanitario Sin anomalias, biomecanico Normal, conservacion Bueno)",
+        "https://www.sevilla.org/documentos/parquesyjardines/ArbolesSingularesSevilla/9/ (the city's web mirror of the same ficha; same authority, not an independent source)"
+      ],
+      "access": "Paid entry (Real Alcázar admission ticket required)",
+      "transport": "10 min walk from Puerta de Jerez tram stop (T1), inside the Real Alcázar grounds",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "notes": "Single source, the municipal catalogue, hence flagged. No age is claimed: the catalogue gives none, and the tradition behind the name is not documented in any source found, so the story states the gap and asks the reader, per the publish-and-ask rule. Pin marked approximate: the catalogue's coordinate sits roughly 50 metres southwest of the point its own emplazamiento describes, between the Pabellon de Carlos V and the Cenador del Leon. Pedro I's palace dates (1364-1366) are standard history of the site, not a claim about the tree."
+    },
+    {
+      "id": "sev_020",
+      "name": "The Plane of the Macarena Wall",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Calle Muñoz León 15, against the Macarena wall, 41002 Sevilla",
+        "latitude": 37.40132342634904,
+        "longitude": -5.98586039478081,
+        "neighbourhood": "San Gil"
+      },
+      "story": "The longest surviving stretch of Seville's twelfth century wall has a plane tree growing against it. Twenty seven metres tall, 4.20 metres round at chest height and 5.90 at the base, with a crown eighteen and a half metres across, on Calle Muñoz León where the Almohad wall runs from the Puerta de la Macarena towards the basilica.\n\nThe London plane is a hybrid nobody set out to make. An oriental plane and an American plane crossed in a European garden in the seventeenth century and produced something tougher than either parent, which then went on to line half the avenues in Europe: it puts up with compacted soil, drought and dirty air, and sheds its bark in plates that carry the grime off with them. The Spanish name is plátano de sombra, the shade plane, which is an honest description of the job.\n\nThere is an administrative curiosity in the record. The city's 2022 survey lists the ground as municipal but marks it sin recepcionar, not yet formally taken over, so a monumental plane is growing in the gap between two departments. Its physiology, structure and plant health were all recorded as normal or clean at the time.\n\nThe wall behind it went up when Seville was the capital of an empire that reached Marrakesh.",
+      "verified_sources": [
+        "https://www.femas.es/servicios/medio-ambiente-parques-jardines/arboles-singulares-de-sevilla/inventario-de-arboles-singulares-de-sevilla_redux.pdf (Inventario de Arboles Singulares de la Ciudad de Sevilla, Ayuntamiento de Sevilla, ficha 35, catalogued 08/07/2022: Platanus x hispanica, Calle Munoz Leon 15, Muralla de la Macarena, barrio San Gil; girth 420 cm at 1.30 m and 590 cm at the base, height 27 m, mean crown 18.5 m; estado fisiologico Normal, fitosanitario Sin anomalias, biomecanico Normal, conservacion Bueno; titularidad Ayto. de Sevilla, sin recepcionar)",
+        "https://www.sevilla.org/documentos/parquesyjardines/ArbolesSingularesSevilla/35/ (the city's web mirror of the same ficha; same authority, not an independent source)"
+      ],
+      "access": "Free, public street",
+      "transport": "Beside the Puerta de la Macarena and the basilica, roughly 20 minutes' walk north from Plaza de la Encarnación",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Single source, the municipal catalogue, hence flagged. Coordinate matches the stated street address on the Macarena wall, so the pin is confirmed. The catalogue files the tree as Platanus x hispanica; this site uses London Plane (Platanus x acerifolia) for that hybrid throughout, per the one-name-per-species rule. No superlative is claimed about size: the same catalogue holds larger planes on the Avenida de Becquer (470 cm) and the Glorieta de Juanita Reina (442 cm)."
     }
   ]
 }

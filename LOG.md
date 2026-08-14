@@ -11,6 +11,12 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-14 (continued) - Seville reaches 20, three of them inside the Alcázar
+
+Same write pass, second city. +4 from the municipal catalogue of singular trees: the Alcázar's magnolia (4.70 metres round, and the survey names the decay fungus on it by name), a Judas tree that has reached sixteen metres and flowers out of its own bark in March, the bitter orange the catalogue calls El Naranjo de Pedro el Cruel, and the plane growing against the Macarena wall. All four are single-sourced on the 2022 catalogue and ship flagged, quoting the city's own condition wording rather than paraphrasing it.
+
+Two things worth Hidde's eye. The orange tree is the publish-and-ask rule in practice: two metres round at the base, thirty six centimetres at chest height, three metres tall, carrying a fourteenth century king's name that no source explains, so the page says exactly that and asks the reader. And two of the Alcázar pins are deliberately approximate, because the catalogue's coordinates disagree with its own location text (one sits 80 metres from the pin we already publish for the same garden). That is the known coordinate fault in this catalogue, and it is now written at the top of the leads file for whoever ships the next Alcázar tree.
+
 ## 2026-08-14 (continued) - Rome takes four register trees, and four of the five briefed ones could not ship
 
 Write pass over four cities' READY leads. Rome first, +4 (now 29 of a 30 target): the chir pine of Villa Fiorelli, the black poplar of Via Conca d'Oro, the hackberry of the Mura Latine and the Mexican blue palm of Villa Sciarra. All four are register-only, all four ship flagged and say so in the prose, which is what CLAUDE.md Step 2 actually prescribes for a single source. Two of them tighten existing walks: the palm makes Villa Sciarra a four-tree stop, the poplar sits a kilometre from the Viale Jonio plane.
