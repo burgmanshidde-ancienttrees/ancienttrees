@@ -200,5 +200,6 @@ const qslug = QUESTION_SLUG.es;
       )}
     </div>
   </div>
+  <SignInModal es />
   <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + cityMapScript(markers, [avgLat, avgLng], route, [], walks)} />
 </Base>
