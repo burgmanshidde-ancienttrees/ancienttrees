@@ -4,40 +4,10 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "alicante",
-      "kind": "verify",
-      "by": "night-run",
-      "claimed_at": "2026-08-14T06:55:17+00:00"
-    },
-    {
       "target": "palma-de-mallorca",
       "kind": "verify",
       "by": "night-run",
       "claimed_at": "2026-08-14T09:39:30+00:00"
-    },
-    {
-      "target": "como",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-14T10:54:42+00:00"
-    },
-    {
-      "target": "rome",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-14T10:54:42+00:00"
-    },
-    {
-      "target": "seville",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-14T10:54:42+00:00"
-    },
-    {
-      "target": "brussels",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-14T10:54:42+00:00"
     }
   ]
 }
