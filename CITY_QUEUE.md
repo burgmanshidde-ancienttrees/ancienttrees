@@ -174,7 +174,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 46 | Como | 2.07 | 82,645 | 9 | 2 | 1 | 23 | 10 | predicted (thin competition) |
 | 47 | Brisbane | 4.07 | 162,602 | - | - | - | - | 10 | predicted (thin competition) |
 | 48 | Amsterdam | 2.00 | 294,030 | 20 | 7 | 2 | 5239 | 20 | measured |
-| 49 | Rome | 2.00 | 358,876 | 25 | 9 | 2 | 32 | 30 | measured |
+| 49 | Rome | 2.00 | 358,876 | 29 | 9 | 2 | 32 | 30 | measured |
 | 50 | Charleston | 3.90 | 155,987 | - | - | - | - | 10 | predicted (thin competition) |
 | 51 | San Francisco | 3.90 | 361,111 | - | - | - | - | 10 | predicted (thin competition) |
 | 52 | Alicante | 1.94 | 77,454 | - | - | - | 44 | 10 | predicted (thin competition) |
@@ -252,7 +252,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 124 | Modena | 1.29 | 51,698 | - | - | - | 3 | 10 | predicted (thin competition) |
 | 125 | Barcelona | 1.00 | 346,477 | 46 | 12 | 7 | 183 | 30 | measured |
 | 126 | Nice | 2.00 | 136,877 | 10 | 6 | 2 | - | 20 | measured |
-| 127 | Seville | 1.00 | 170,545 | 16 | 6 | 2 | - | 20 | measured |
+| 127 | Seville | 1.00 | 170,545 | 20 | 6 | 2 | - | 20 | measured |
 | 128 | Paris | 1.31 | 524,268 | 25 | 9 | 3 | 129 | 10 | published, never ranked |
 | 129 | Ronda | 1.29 | 51,510 | - | - | - | 1 | 10 | predicted (thin competition) |
 | 130 | Pisa | 1.30 | 52,174 | - | - | - | - | 10 | predicted (thin competition) |
@@ -288,7 +288,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 160 | Brno | 1.59 | 63,714 | - | - | - | - | 10 | predicted (thin competition) |
 | 161 | Washington DC | 1.52 | 606,731 | 14 | 1 | 2 | - | 10 | published, never ranked |
 | 162 | Berlin | 1.00 | 412,181 | 18 | 11 | 1 | 195 | 30 | measured |
-| 163 | Brussels | 1.00 | 176,863 | 16 | 4 | 1 | 436 | 20 | measured |
+| 163 | Brussels | 1.00 | 176,863 | 20 | 4 | 1 | 436 | 20 | measured |
 | 164 | Cadiz | 1.00 | 79,226 | 5 | 4 | 1 | - | 10 | measured |
 | 165 | Sorrento | 1.00 | 40,049 | - | - | - | - | 10 | predicted (thin competition) |
 | 166 | Innsbruck | 1.47 | 58,742 | - | - | - | - | 10 | predicted (thin competition) |
