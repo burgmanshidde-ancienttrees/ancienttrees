@@ -520,7 +520,12 @@ def product_section(today):
                 last[n] = r.get("created_at")
         # Named explicitly so an action that has NEVER fired still gets a line.
         # A missing row is the loudest signal here and an empty dict hides it.
-        for name in ("directions", "collect", "walk-start", "app-cta", "share"):
+        # The three funnels of FUNNELS.md, in step order. collect and share
+        # died with the collect button (2026-08-14); walk-open/save/signin
+        # arrived the same day.
+        for name in ("directions", "walk-open", "walk-start", "save",
+                     "worthit-worth it", "signin-link-sent", "app-cta",
+                     "waitlist-submit"):
             last.setdefault(name, None)
         for name in sorted(last, key=lambda k: (-counts.get(k, 0), k)):
             out.append("- %-12s %d yesterday, last %s" % (
