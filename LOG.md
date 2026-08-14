@@ -11,6 +11,14 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-14 (continued) - The account track opens on Hidde's word, in his own gate's order
+
+His ruling, overruling the wait-for-evidence recommendation after hearing it: "just build it - were continuing with this product." Recorded as his decision; the sequence stays the one he set in July, deletion before anything else. What the probe found: `delete_user()` already exists server-side (anonymous callers get the correct 401) and magic-link sign-in was field-tested weeks ago, so the only missing server piece was a saves table. `supabase/saves.sql` is the one paste that remains, and its FK cascades on user deletion so the delete flow stays end-to-end.
+
+Built and live: the save hearts sync to the cloud as a union whenever a session exists (local stays the source of speed, deletes propagate only when signed in, which is the honest limit of a sync this simple); /saved merges device and account; and every gated tap now opens ONE sign-in dialog shaped like the modal AllTrails converges everything on, with our honest order: one email for a magic link that returns to the page you were on, More options to /account, the app as the dark button. Any page can catch the returning token now, not only /account. Also: the nav menu Hidde flagged as overcrowded is sectioned into Browse and Yours instead of growing another item.
+
+FOR HIDDE, the last two minutes: paste supabase/saves.sql into the Supabase SQL editor and run it, then sign in once on your phone, save a tree, open /saved on your laptop and delete your test account afterwards to prove the whole loop. When that works, the account page stops being a prototype in every sense.
+
 ## 2026-08-14 (continued) - The capsule: AllTrails clicked through logged-out, and the lesson applied whole
 
 Hidde asked for real research on AllTrails' login and app funnels, so their trail page was driven in the browser, logged out, and the mechanics recorded in DECISIONS.md: Saved lives in the nav, the action surface is one dark capsule with Save first in green, and every gated tap lands on one signup modal whose strongest button is "Continue in app". Applied in full: our tree pages now carry one dark floating capsule on every viewport (heart first, Take me there, Walk more), the first save opens the single keep-it-everywhere dialog pointing at the app, Saved trees sits in the nav menu, and the earlier white bar, desktop action row and title heart are gone. The deliberate divergence and its flip condition are in the decision: our save works without the gate until accounts exist. Verified live at 375px; the vote chips, the save state and the capsule all render and behave.
