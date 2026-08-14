@@ -11,7 +11,9 @@
       "lat": 46.077958,
       "lng": 11.102225,
       "why_a_lead": "Register sheet 21/L378/TN/22, girth 499cm, one of Trento's officially designated 18 monumental trees per 2024 local press. Stands at Villa De Lorenzi in the Vela district; this pass found the villa named but no confirmation the grounds are open to the public, so left as a lead rather than shipped or blocked outright.",
-      "next_step": "Held again 2026-08-14 by the write pass. Register locality is 'Vela - Via alla Scala 4', a house number; the villa name came from the verify pass, not the register. Check whether Villa De Lorenzi's park has any public visiting arrangement, and whether the cedar is visible from Via alla Scala itself, which would make it publishable as a view-only tree."
+      "next_step": "Held again 2026-08-14 by the write pass. Register locality is 'Vela - Via alla Scala 4', a house number; the villa name came from the verify pass, not the register. Check whether Villa De Lorenzi's park has any public visiting arrangement, and whether the cedar is visible from Via alla Scala itself, which would make it publishable as a view-only tree.",
+      "status": "lead",
+      "hold_reason_2026_08_14": "Held again by the second write pass. Searched for Villa De Lorenzi at Vela / Via alla Scala and found nothing beyond the property name: no history page, no ownership record, no statement that the grounds or a sightline from the road exist. With nothing to write an access line from, and the house-number locality pointing at a dwelling, it stays a lead. This is a street-level or aerial-imagery question, not a search question."
     },
     {
       "name": "The Giant Sequoia of Villa Lubich, Povo",
@@ -19,7 +21,9 @@
       "lat": 46.066589,
       "lng": 11.160269,
       "why_a_lead": "Register sheet 05/L378/TN/22, girth 617cm, matching monumentaltrees.com's figure for a sequoia at Villa Lubich in Povo almost exactly (verification only, per the site's usual rule). Ownership and public accessibility of Villa Lubich were not confirmed this pass; the name suggests a possible link to Chiara Lubich/the Focolare Movement, headquartered in Trento, but no source found this pass states whether the garden is open to visitors.",
-      "next_step": "Held again 2026-08-14 by the write pass, access still unstated. A 617cm sequoia is worth the check: search Villa Lubich's current ownership and whether its garden hosts public events or open hours."
+      "next_step": "Held again 2026-08-14 by the write pass, access still unstated. A 617cm sequoia is worth the check: search Villa Lubich's current ownership and whether its garden hosts public events or open hours.",
+      "status": "lead",
+      "hold_reason_2026_08_14": "Held again by the second write pass. The Focolare link is real in Trento (there is a Centro Mariapoli Chiara Lubich in the province) but nothing found connects it to this villa in Povo, and no source states whether the garden is entered, seen or closed. A 617 cm sequoia is still worth one check on the ground."
     },
     {
       "name": "The Sequoia of Villa O'Santissima",
@@ -27,7 +31,9 @@
       "lat": 46.042556,
       "lng": 11.137794,
       "why_a_lead": "Register sheet 17/L378/TN/22, girth 590cm, locality 'Villa O'Santissima - Via G. Ferrandi'. Not researched this pass; the name suggests a possible religious institution but this is a guess, not a finding, so it is a lead rather than a block.",
-      "next_step": "Held again 2026-08-14 by the write pass. Still nothing but a register row: locality 'Villa O'Santissima - Via G. Ferrandi', 590cm, 32m. Unresearched."
+      "next_step": "Held again 2026-08-14 by the write pass. Still nothing but a register row: locality 'Villa O'Santissima - Via G. Ferrandi', 590cm, 32m. Unresearched.",
+      "status": "lead",
+      "hold_reason_2026_08_14": "Researched properly by the second write pass and held on the finding, which is progress rather than another shrug. Cooperativa SAD, the current owner, states that since the Comune di Trento bought part of the grounds in 1982 the garden has been in three parts: the 'parco interno', which is the Giardino Giuseppe Garbari; the 'parco esterno' between the villa and the church of San Rocco, 'dove si trova una sequoia secolare'; and the 'parco della villa' on the south side, cooperative property and usable only by those using the facility's services. So the sequoia is NOT in the part that is explicitly restricted. But it is also not in the part that is explicitly public: the Comune lists Giardino storico Garbari as a public park of 13,700 sq m with access from via Ferrandi and hours of 8 to 19, and the register coordinate (46.042556, 11.137794) sits about 160 m north-east of that garden's own published centre (46.041283, 11.137068), which is outside a parcel that size. Nothing states the parco esterno's access either way, and the villa is a residence for elderly people, so the cautious reading of hard rule 10 is that this is somebody's home until a source says the outer park is walk-in. WHAT WOULD SETTLE IT: whether the sequoia is visible or reachable from via Ferrandi or from the grounds of the San Rocco parish church, either of which would make it publishable as a view-only entry with the pin on the viewing place. Sources: cooperativasad.it/villa-o-santissima/il-parco/, spazicomuni.comune.trento.it (Giardino storico Garbari), it.wikipedia.org/wiki/Villa_O'_Santissima (a sequoia planted 1870, over thirty metres)."
     },
     {
       "name": "Maderno hamlet: Horse Chestnut (Villa Maria) and Small-leaved Lime (Via dei Bergamini)",
@@ -35,7 +41,9 @@
       "lat": 46.090008,
       "lng": 11.140311,
       "why_a_lead": "Register sheets 04/L378/TN/22 (horse chestnut, girth 504cm) and 12/L378/TN/22 (lime, girth 440cm), both in the Maderno hamlet north of the centre, 3.0-3.2km out. Not researched this pass.",
-      "next_step": "Held again 2026-08-14 by the write pass. The two are 210m apart (46.090008,11.140311 and 46.088122,11.140394) and would make a small hillside pair, but the chestnut is at Villa Maria and the lime at Via dei Bergamini 12, both of which may be private dwellings. One street-level check on each settles it."
+      "next_step": "Held again 2026-08-14 by the write pass. The two are 210m apart (46.090008,11.140311 and 46.088122,11.140394) and would make a small hillside pair, but the chestnut is at Villa Maria and the lime at Via dei Bergamini 12, both of which may be private dwellings. One street-level check on each settles it.",
+      "status": "lead",
+      "hold_reason_2026_08_14": "Held again by the second write pass, unresearched and unchanged. Both localities are house-level (Villa Maria; Via dei Bergamini 12) and nothing found says whether either tree stands behind a gate. Same street-level check as the other two villas."
     },
     {
       "name": "The Beech of Malga Brigolina",
@@ -43,7 +51,8 @@
       "lat": 46.05985,
       "lng": 11.061781,
       "why_a_lead": "Register sheet 08/L378/TN/22, girth 465cm, 4.3km from centre in an alpine-pasture (malga) area. Likely beyond the roughly 30-minute public-transport day-trip boundary; not researched this pass.",
-      "next_step": "Held again 2026-08-14 by the write pass, but for a different reason from the rest: access is fine, an alpine pasture at 943m is open ground and nobody's home. What is missing is a way to get there. Find the actual route from Trento (bus line and stop, or the cable car to Sardagna plus a named trail) and this one can ship with an honest transport line."
+      "next_step": "[RESOLVED 2026-08-14, delivered as tre_009] Shipped as The Beech of Malga Brigolina. Access verdict: open alpine pasture at around 940 m, nobody's home, no permission needed. Transport solved with bus B202 to Candriai plus the Giro della Selva path. Pin left approximate, it is the register coordinate about 330 m from the malga building.",
+      "status": "resolved"
     }
   ],
   "blocked": [
@@ -77,5 +86,6 @@
       "species": "London Plane (Platanus x acerifolia)",
       "reason": "Register sheet 18/L378/TN/22, 'Insieme omogeneo di Platanus acerifolia'. Same reasoning: a row, not a single collectible point."
     }
-  ]
+  ],
+  "review_2026_08_14b": "Second write pass, same day. One lead promoted: the Beech of Malga Brigolina ships as tre_009. Its block was transport, not access, and the route exists: Trentino Trasporti bus B202 (Trento to Sardagna, Candriai, Vaneze, Vason, Viote) stops at Candriai, and the waymarked Giro della Selva path leaves the village near the football pitch and reaches the malga in about fifteen minutes. The other four stay held, and the access question is now sharper rather than merely unanswered, see each next_step. Trento therefore ships 9 against a target of 10, and the tenth is a research question: either one street-level access check on the three villas, or the wild cherry at Passo del Cimirlo, which is on the city's list of 18 monumental trees, is not in this file at all and has never been researched."
 }
