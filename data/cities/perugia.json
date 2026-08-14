@@ -2,11 +2,11 @@
   "city": "Perugia",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Almost everything on this page is within a kilometre of Perugia's centre, which makes it one of the tighter walks on this site. Six of the eight are cedars and cedar relatives, planted through the nineteenth century as the city laid out its public gardens, and each one has its own reason to exist: one hosted a concert twelve metres up in its crown, one is rooted in the site of a fortress the city tore down out of spite, and one is so thick for its height that it now needs bracing.",
-  "meta_description": "Eight monumental trees in Perugia, nearly all within a kilometre: cedars on the old fortress site, holm oaks that watched 1859, a rock-splitter.",
-  "question_meta": "Perugia's oldest documented tree is the Palazzo Murena cedar, planted around 1861 in the university's cloister. Where it stands, plus seven more.",
+  "intro": "Seven of the ten trees on this page sit within a kilometre of Perugia's centre, which makes it one of the tighter walks on this site. Six are cedars and cedar relatives, planted through the nineteenth century as the city laid out its public gardens, and each has a reason to exist: one hosted a concert twelve metres up in its crown, one grows where a fortress was torn down out of spite, one is so thick for its height that it needs bracing. The last two are country trees, enormous oaks on a lane at Prepo.",
+  "meta_description": "Ten monumental trees in Perugia, most within a kilometre: cedars on the old fortress site, holm oaks that watched 1859, and two giant oaks at Prepo.",
+  "question_meta": "Perugia's oldest documented tree is the Palazzo Murena cedar, planted around 1861 in the university's cloister. Where it stands, plus nine more.",
   "question_answer": "The oldest tree in Perugia that carries a date is the Cedar of Lebanon in the cloister of Palazzo Murena, planted around 1861 and so roughly 165 years old. It is free to walk in and see, in the courtyard of the university's rectorate in the historic centre. The holm oaks of the Giardini del Frontone are almost certainly older, since the gardens were laid out from 1707 and a local history piece describes them as already grown when papal troops sacked the city in 1859, but no source puts a number on them.",
-  "question_context": "Perugia's trees are unusually well recorded for Italy, and the reason is that most of them stand on ground the city or the university has managed for over a century. Italy's national register gives girth, height and position and no age at all, so every date here comes from university records, the comune's own pages or local history writing, and where none of those has an answer the page leaves the age blank rather than estimating it. Six of the eight are cedars or their close relatives, planted through the nineteenth century as Perugia laid out the public gardens that replaced the papal fortress, which is why the species repeats and the stories do not. The Frontone entry covers two registered holm oaks about seventy metres apart in the same gardens, so its pin is marked approximate: one point cannot honestly stand for both. One further register tree is missing from this page on purpose, a holm oak in the cloister of Santa Giuliana, which is now the Italian Army's language school and not normally open to visitors. Five more sit two to four kilometres out with no second source found yet, and are recorded as leads rather than published.",
+  "question_context": "Perugia's trees are unusually well recorded for Italy, and the reason is that most of them stand on ground the city or the university has managed for over a century. Italy's national register gives girth, height and position and no age at all, so every date here comes from university records, the comune's own pages or local history writing, and where none of those has an answer the page leaves the age blank rather than estimating it. Six of the ten are cedars or their close relatives, planted as Perugia laid out the public gardens that replaced the papal fortress, which is why the species repeats and the stories do not. The Frontone entry covers two registered holm oaks about seventy metres apart in the same gardens, so its pin is marked approximate: one point cannot honestly stand for both. The two downy oaks at Prepo are the only trees here that the register alone carries, with no second source and no age. One further register tree is missing on purpose, a holm oak in the cloister of Santa Giuliana, now the Italian Army's language school and not normally open to visitors.",
   "faq": [
     {
       "q": "What is the oldest tree in Perugia?",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Are Perugia's monumental trees free to visit?",
-      "a": "Yes, all of them. Seven stand on public squares, streets and gardens in the centre; the eighth is in the monumental cemetery, which opens at seven every morning and charges nothing."
+      "a": "Yes, all of them. Seven stand on public squares, streets and gardens in the centre, the eighth is in the monumental cemetery, which opens at seven every morning and charges nothing, and the two oaks at Prepo stand on an open lane."
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Seven of the eight sit within about a kilometre in the historic centre. The cemetery cedar is a short bus ride out."
+      "a": "Seven of the ten sit within about a kilometre in the historic centre. The cemetery cedar is a short bus ride out, and the two Prepo oaks are three kilometres southwest, best treated as their own short outing."
     }
   ],
   "hero_tree_id": "pgi_001",
@@ -257,6 +257,66 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "pgi_009",
+      "name": "The North Oak of Strada del Gioco",
+      "species": "Downy Oak (Quercus pubescens)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Strada del Gioco, Prepo, Perugia",
+        "latitude": 43.088411,
+        "longitude": 12.377686,
+        "neighbourhood": "Prepo"
+      },
+      "story": "Downy oak is the tree Umbrian hillsides are made of, and hardly any of them get this big. Quercus pubescens takes the dry limestone slopes that better oaks refuse, usually as a modest, crooked, hard-used tree of field edges and scrub. This one is 430 centimetres around and 21 metres tall, which put it on Italy's national monumental register on size alone. It is not even alone: a second oak within eight centimetres of the same girth stands 150 metres down the lane.\n\nStrada del Gioco runs through Prepo, on the slope roughly three kilometres southwest of the walled centre. Perugia's other monumental trees are a nineteenth century story, cedars planted as the city laid out gardens over the ground where the papal fortress had stood. These two are the older landscape showing through: field oaks left where they were while the land around them changed use, which is how a good many large roverelle in central Italy came to survive.\n\nThe species is worth knowing in winter. Downy oak is marcescent, tending to hold its dead leaves on the lower branches through the cold months instead of dropping them, so the crown keeps a rustling copper brown long after the rest of the hillside has gone bare.\n\nItaly's register is the only source that names this tree, and it gives a girth, a height and a position and no age, so the numbers here are the register's own and the pin is marked approximate.",
+      "how_to_recognise": "The northern of the two oaks on Strada del Gioco, about 150 metres up the lane from the other. Size barely separates them: this one is the thicker at 430 centimetres round, and the shorter at 21 metres.",
+      "verified_sources": [
+        "MASAF national monumental trees register, sheet 15/G478/PG/10 (Quercus pubescens Willd., locality 'Prepo - Strada del Gioco', girth 430cm, height 21m, altitude 370m)"
+      ],
+      "access": "Free, roadside on Strada del Gioco; no gate and no hours.",
+      "transport": "About 3 km southwest of the centro storico, roughly a 40 minute walk downhill or a short bus ride.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Promoted from data/leads/perugia.json on 2026-08-14. Single-sourced: the national register is the only document that names it, hence flagged and hence no age. The register locality is a road with no property attached, which is why this one ships where the Viale Roma cedar (paired with a school in the register) and the Sodo degli Ebrei pine (a residential hamlet) do not. Pin is the register coordinate, unverified on the ground, so approximate."
+    },
+    {
+      "id": "pgi_010",
+      "name": "The South Oak of Strada del Gioco",
+      "species": "Downy Oak (Quercus pubescens)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Strada del Gioco, Prepo, Perugia",
+        "latitude": 43.087108,
+        "longitude": 12.378294,
+        "neighbourhood": "Prepo"
+      },
+      "story": "The two oaks of Strada del Gioco differ by eight centimetres of girth and one metre of height, and they stand 150 metres apart. This is the thinner and taller of the pair: 422 centimetres around, 22 metres up, and nothing at all on record about its age.\n\nPart of what a downy oak is worth in Umbria is what grows under it. Quercus pubescens is one of central Italy's classic truffle hosts, the fungus forming on oak roots in exactly the limestone soils these trees favour, and a productive oak is a tree with an argument for being left standing when a hillside gets cleared. Whether that is this particular tree's biography, nobody has written down.\n\nPrepo is a working edge of Perugia rather than a monument to it, about three kilometres southwest of the centre and 370 metres up. There is no garden here, no plaque and no gate, just two very large oaks on a lane, which is a different sort of pleasure from the cedars that hold the city's squares. Come in winter for the second one: downy oak hangs onto its dead leaves through the cold months, and a copper crown on a bare slope carries a long way.\n\nNobody has dated either oak. Italy's register has no age column and no second source names them, so what exists is a girth, a height and a point on a map, and the point is good to within a lane rather than a trunk.",
+      "how_to_recognise": "The southern of the two oaks on Strada del Gioco, about 150 metres down the lane from the other. Size will not separate them at a glance: this one is fractionally slimmer at 422 centimetres round and fractionally taller at 22 metres.",
+      "verified_sources": [
+        "MASAF national monumental trees register, sheet 14/G478/PG/10 (Quercus pubescens Willd., locality 'Prepo - Strada del Gioco', girth 422cm, height 22m, altitude 370m)"
+      ],
+      "access": "Free, roadside on Strada del Gioco; no gate and no hours.",
+      "transport": "About 3 km southwest of the centro storico, roughly a 40 minute walk downhill or a short bus ride.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Promoted from data/leads/perugia.json on 2026-08-14. Single-sourced on the national register, hence flagged and hence no age. Kept as a separate entry rather than folded into pgi_009: the register's twin-folding case is trees metres apart, and these are 153 metres apart on the same lane, which is two places to stand. Pin is the register coordinate, unverified on the ground."
     }
   ]
 }

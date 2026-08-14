@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 27728,
+ "count": 27732,
  "trees": [
   {
    "id": "ali_001",
@@ -11079,6 +11079,22 @@
    "sources": 2
   },
   {
+   "id": "nra_010",
+   "tier": "highlighted",
+   "name": "The Roben-sugi of Nigatsu-do",
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "city": "Nara",
+   "country": "Japan",
+   "lat": 34.6892513,
+   "lng": 135.8439422,
+   "precision": "approximate",
+   "age_min": 50,
+   "age_max": 70,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 4
+  },
+  {
    "id": "nyc_001",
    "tier": "highlighted",
    "name": "The Hangman's Elm",
@@ -12837,6 +12853,38 @@
    "has_photo": false,
    "has_story": true,
    "sources": 3
+  },
+  {
+   "id": "pgi_009",
+   "tier": "highlighted",
+   "name": "The North Oak of Strada del Gioco",
+   "species": "Downy Oak (Quercus pubescens)",
+   "city": "Perugia",
+   "country": "Italy",
+   "lat": 43.088411,
+   "lng": 12.377686,
+   "precision": "approximate",
+   "age_min": null,
+   "age_max": null,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 1
+  },
+  {
+   "id": "pgi_010",
+   "tier": "highlighted",
+   "name": "The South Oak of Strada del Gioco",
+   "species": "Downy Oak (Quercus pubescens)",
+   "city": "Perugia",
+   "country": "Italy",
+   "lat": 43.087108,
+   "lng": 12.378294,
+   "precision": "approximate",
+   "age_min": null,
+   "age_max": null,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 1
   },
   {
    "id": "ptl_001",
@@ -16085,6 +16133,22 @@
    "has_photo": false,
    "has_story": true,
    "sources": 3
+  },
+  {
+   "id": "tre_008",
+   "tier": "highlighted",
+   "name": "The Hackberry of Cortesano",
+   "species": "Mediterranean Hackberry (Celtis australis)",
+   "city": "Trento",
+   "country": "Italy",
+   "lat": 46.123886,
+   "lng": 11.134117,
+   "precision": "confirmed",
+   "age_min": null,
+   "age_max": null,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 2
   },
   {
    "id": "tri_001",
