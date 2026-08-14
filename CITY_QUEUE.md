@@ -240,7 +240,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 112 | Bern | 2.27 | 90,627 | - | - | - | - | 10 | predicted (thin competition) |
 | 113 | Cusco | 2.19 | 87,732 | - | - | - | - | 10 | predicted (thin competition) |
 | 114 | Siena | 1.44 | 57,436 | - | - | - | - | 10 | predicted (thin competition) |
-| 115 | Cagliari | 1.28 | 51,351 | - | - | - | 9 | 10 | predicted (thin competition) |
+| 115 | Cagliari | 1.28 | 51,351 | 7 | - | 2 | 9 | 10 | predicted (thin competition) |
 | 116 | Perugia | 1.06 | 42,572 | 8 | - | 2 | 19 | 10 | predicted (thin competition) |
 | 117 | Valletta | 2.11 | 84,342 | - | - | - | - | 10 | predicted (thin competition) |
 | 118 | Faro | 1.39 | 55,645 | - | - | - | - | 10 | predicted (thin competition) |
