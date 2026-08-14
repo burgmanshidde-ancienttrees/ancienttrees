@@ -13,7 +13,6 @@ import { speciesIcon } from "../../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../../lib/schema";
 import { locationIsApproximate } from "../../../lib/tree-copy";
 import { mapHead, singlePinScript } from "../../../lib/map";
-import { COLLECT_JS } from "../../../lib/collect-js";
 import { translatedCities, cityTranslation, hreflangLinks, type CityTranslation, type TreeTranslation } from "../../../lib/i18n";
 
 function esc(s: string): string {
@@ -106,10 +105,10 @@ const graph = [
   breadcrumbSchema(crumbItems, canonical),
 ];
 const headExtra = mapHead() + ogImage + "\n" + hreflangLinks("es", `/${cslug}/${tslug}`, `/es/${cslug}/${tslug}`) + "\n" + ldScript(graph);
-const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS;
+const scripts = singlePinScript(loc.latitude!, loc.longitude!);
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra} lang="es">
-  <main class="content-page">
+  <main class="content-page has-tree-bar">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Inicio</a> › <a href={`/es/${cslug}`}>{tr.city}</a> › <span>{x.name}</span></nav>
     <h1>{x.name}</h1>
     <p class="chip-row">
@@ -133,21 +132,12 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS;
       </figure>
     )}
     <div class="action-row">
-      <button class="go-btn" id="collect-btn" type="button">Coleccionar este árbol</button>
-      <a class="go-btn ghost" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
+      <a class="go-btn" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
       <a class="action-link" href={`/es/${cslug}#walk`}>Recorre más árboles en {tr.city}</a>
     </div>
-    <dialog id="collect-dialog" class="collect-dialog">
-      <h3>Guarda los árboles ante los que has estado</h3>
-      <p>Coleccionar es el juego de Ancient Trees: ponte delante de un árbol como este, márcalo, y tu colección de viejos gigantes crece ciudad a ciudad. Vive en la aplicación de Ancient Trees, junto con rutas a pie que pasan por varios árboles.</p>
-      <div class="collect-actions">
-        <a class="go-btn" href="/app">Descargar la aplicación</a>
-        <button class="go-btn ghost" type="button" id="collect-close">Ahora no</button>
-      </div>
-    </dialog>
     <div class="prose-block"><p>{x.story}</p></div>
     <div class="map-embed"><div id="map" class="map"></div></div>
-    <p class="go-note">Los botones de arriba abren las indicaciones y la colección. {x.transport}</p>
+    <p class="go-note">El botón de arriba abre las indicaciones en tu aplicación de mapas. {x.transport}</p>
     {isApprox && (
       <p class="approx-note">
         El marcador señala la zona correcta de forma aproximada, no el árbol exacto. Está aquí, pero todavía no hemos confirmado la posición precisa sobre el terreno.{" "}
@@ -178,6 +168,11 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS;
       <p class="report-line">Esta página se investigó a distancia. Si conoces este árbol, sabes cosas que nosotros no sabemos.</p>
       <a class="report-btn" href="/contribute?kind=correction">Aquí hay algo mal</a>
       <a class="report-btn" href="/contribute?kind=tree">Sugerir otro árbol</a>
+    </div>
+    <div class="tree-bar" aria-label="Acciones">
+      <a class="go-btn" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
+      <a class="go-btn ghost" href={`/es/${cslug}#walk`}>Más árboles</a>
+      <a class="go-btn ghost" href="/app">La app</a>
     </div>
   </main>
   <Fragment slot="scripts" set:html={scripts} />

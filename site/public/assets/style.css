@@ -734,6 +734,23 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    one, added 2026-08-12 after a journalist stood in front of the right spot
    and could not tell. Styled as a practical note rather than prose: it is
    read standing up, on a phone, with the tree in view. */
+/* The tree page's hanging action bar, AllTrails' funnel at phone width only
+   (Hidde, 2026-08-14, DECISIONS.md): directions primary, walk middle, app
+   last. Desktop keeps the in-page action row and no bar. */
+.tree-bar { display: none; }
+@media (max-width: 640px) {
+  .tree-bar { display: flex; gap: 0.5rem; position: fixed; left: 0; right: 0; bottom: 0;
+    padding: 0.6rem 0.8rem calc(0.6rem + env(safe-area-inset-bottom));
+    background: var(--paper, #faf7f0); border-top: 1px solid var(--cream-dark);
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.07); z-index: 40; }
+  .tree-bar .go-btn { flex: 1 1 auto; text-align: center; white-space: nowrap; }
+  .tree-bar .go-btn:first-child { flex-grow: 2; }
+  /* the page must scroll clear of the bar */
+  main.content-page.has-tree-bar { padding-bottom: 4.6rem; }
+}
+.save-btn[aria-pressed="true"] { border-color: var(--moss); color: var(--moss); }
+.saved-list { margin: 1rem 0 2rem; padding-left: 1.2rem; }
+.saved-list li { margin: 0.4rem 0; }
 /* "Worth the visit?" (2026-08-14, DECISIONS.md). Quiet by design: a text-size
    question and two small buttons, never a component that outshouts the story. */
 .worthit { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 1.1rem 0; font-size: 13.5px; color: var(--ink-light); }

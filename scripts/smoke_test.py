@@ -149,8 +149,12 @@ setTimeout(function(){
             ("maplibregl-canvas", "map canvas (JS ran, map constructed)"),
         ]),
         (f"{base}/{city.stem}/{tree.name}", f"tree page ({tree.stem})", [
-            ("Collect this tree", "collect button with explainer dialog (Hidde, 2026-08-01)"),
-            ('id="collect-dialog"', "the explainer dialog itself"),
+            # Collect left the mobile web on Hidde's ruling of 2026-08-14
+            # ("op mobiel totaal onlogisch... lekkermakertje voor de app");
+            # the bar and the save heart are what must exist now.
+            ('class="tree-bar"', "the hanging action bar (AllTrails funnel, 2026-08-14)"),
+            ("save-btn", "the save heart (local, no account)"),
+            ("Take me there", "directions, the primary action"),
             ("maplibregl-canvas", "map canvas (JS on this page executed)"),
         ]),
         (f"{base}/explore.html", "explore", [

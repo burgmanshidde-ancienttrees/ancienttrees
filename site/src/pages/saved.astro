@@ -1,0 +1,49 @@
+---
+// The saved-trees list: AllTrails' Saved tab without the account (Hidde,
+// 2026-08-14, DECISIONS.md). Rendered entirely from localStorage, which the
+// save hearts fill with name and url at save time, so this page needs no
+// index and costs nothing at build. noindex: it is personal, per-device
+// state, not content, and its empty state teaches (PRINCIPLES.md #3).
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { BASE_URL } from "../lib/schema";
+
+const canonical = `${BASE_URL}/saved`;
+const SAVED_PAGE_JS = `
+<script>
+(function() {
+  var map;
+  try { map = JSON.parse(localStorage.getItem('at_saved_v1') || '{}'); } catch (e) { map = {}; }
+  var ids = Object.keys(map);
+  var list = document.getElementById('saved-list');
+  var empty = document.getElementById('saved-empty');
+  if (!ids.length) { empty.hidden = false; return; }
+  ids.sort(function(a, b) { return map[a].n < map[b].n ? -1 : 1; });
+  ids.forEach(function(id) {
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.href = map[id].u;
+    a.textContent = map[id].n;
+    li.appendChild(a);
+    list.appendChild(li);
+  });
+  list.hidden = false;
+})();
+</script>
+`;
+---
+<Base
+  title="Saved Trees"
+  description="The trees you saved to visit."
+  canonical={canonical}
+  headExtra={'<meta name="robots" content="noindex">'}
+>
+  <main class="content-page">
+    <Breadcrumbs items={[["Home", BASE_URL], ["Saved", null]]} />
+    <h1>Saved trees</h1>
+    <p class="prose-block">The trees you tapped Save on, kept on this device. No account, nothing sent anywhere; clearing your browser data clears this list too.</p>
+    <ul id="saved-list" class="saved-list" hidden></ul>
+    <p id="saved-empty" hidden>Nothing saved yet. Open any tree and tap <b>&#9825; Save</b> to keep it here for the day you walk past. <a href="/explore">Find a tree near you</a>.</p>
+  </main>
+  <Fragment slot="scripts" set:html={SAVED_PAGE_JS} />
+</Base>
