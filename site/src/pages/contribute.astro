@@ -87,6 +87,9 @@ const headExtra = ldScript(graph);
   var kind = params.get('kind');
   var map = {tree: 'tree', city: 'city', home: 'city', correction: 'correction', privacy: 'privacy'};
   if (kind && map[kind]) { document.getElementById('sg-kind').value = map[kind]; }
+  // the page the reader came from already knows the city and the tree
+  if (params.get('city')) { document.getElementById('sg-city').value = params.get('city'); }
+  if (params.get('tree')) { document.getElementById('sg-tree').value = params.get('tree'); }
   f.addEventListener('submit', function(e) {
     e.preventDefault();
     var city = document.getElementById('sg-city').value.trim();

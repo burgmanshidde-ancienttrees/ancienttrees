@@ -41,7 +41,7 @@ export const WORTHIT_JS = `
   }
   document.addEventListener('click', function(e) {
     var btn = e.target.closest('.worthit-btn, .worthit-chip');
-    if (!btn) return;
+    if (!btn || btn.classList.contains('worthit-chip-link')) return;
     var box = btn.closest('.worthit');
     var tree = box.dataset.tree;
     var key = 'at_worthit_' + tree;

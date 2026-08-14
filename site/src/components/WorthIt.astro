@@ -33,5 +33,6 @@ const { treeId, city, treeName, compact = false } = Astro.props;
     <button type="button" class="worthit-chip" data-reason="dead or gone">It's dead or gone</button>
     <button type="button" class="worthit-chip" data-reason="wrong location">Wrong location</button>
     <button type="button" class="worthit-chip" data-reason="could not reach it">Couldn't reach it</button>
+    <a class="worthit-chip worthit-chip-link" href={`/contribute?kind=correction&city=${encodeURIComponent(city)}&tree=${encodeURIComponent(treeName)}`}>Something else</a>
   </div>
 </div>

@@ -166,7 +166,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
     {isApprox && (
       <p class="approx-note">
         The pin marks the right spot roughly, not the tree itself. It stands here, but we have not confirmed the precise position on the ground yet.{" "}
-        <a href={submitLink("correction")}>Know exactly where it is?</a>
+        <a href={submitLink("correction", cityName, tree.name)}>Know exactly where it is?</a>
       </p>
     )}
     <dl class="facts">
@@ -192,9 +192,9 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
     </div>
     <div class="report">
       <strong>We could use your help.</strong>
-      <p class="report-line">This page was researched from a distance. If you know this tree, you know things we do not.</p>
-      <a class="report-btn" href={submitLink("correction")}>Something is wrong here</a>
-      <a class="report-btn" href={submitLink("tree")}>Suggest another tree</a>
+      <p class="report-line">This page was researched from a distance. If you know this tree, you know things we do not: the species, the age, the size, whether the photo shows the right tree, or that it is gone. Every field on this page can be corrected.</p>
+      <a class="report-btn" href={submitLink("correction", cityName, tree.name)}>Something is wrong here</a>
+      <a class="report-btn" href={submitLink("tree", cityName)}>Suggest another tree</a>
     </div>
     <div class="tree-bar" aria-label="Actions">
       <a class="go-btn dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
