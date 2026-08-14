@@ -11,6 +11,16 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-14 (continued) - Alicante opens with seven Moreton Bay figs, four of them on one square
+
+Write pass on the verified Alicante file. +7, every one of them Ficus macrophylla, sourced on the Generalitat Valenciana's catalogue of monumental trees with local press as the second source. Four stand on Plaza Gabriel Miro, catalogued individually as Ficus Gabriel Miro I to IV, and that numbering is not a size order: II is the thickest at 10.65 metres round and is the one todoalicante calls the largest ficus in Spain's catalogue, on a canopy of 40.5 metres. Three more stand in and along Parque de Canalejas, among them the register's own named Ficus del Passeig de Canalejas at 11.59 metres, the heaviest trunk on the page.
+
+All seven ship flagged, and nearly always for the same reason: the Valencian catalogue measures trees and does not date them, so six of the seven carry no individual age at all. The oldest-tree page says so in those words instead of inventing a ranking. It names ali_001 as the only tree here anyone has put a number to, about 120 years, and describes the rival 170 figure as circulating with no measurement and no particular tree behind it.
+
+Two gaps stated rather than papered over. Photos are missing on all seven, photo hunting was not part of this pass. And the four plaza figs stand metres apart, so each carries a how_to_recognise line built on girth, height and where it stands, which is also true of the two near-identical Canalejas figs twenty metres apart. The square's five old elms are absent: local press reports one of them broke and came down at the San Fernando corner in September 2025, and the register alone cannot say which of the five coordinates is the dead one, so they wait in data/leads/alicante.json until something can tell them apart. That fall, and the citywide review of monumental trees it triggered, is in ali_001's story as recent history of the square.
+
+Measured span is 449 metres corner to corner, roughly ten minutes on flat pavement, so the page says 450 rather than the 300 the brief carried. preflight, superlatives and tree_index all clean. Worth knowing for the next new city: city_queue.py only updates rows that already exist in data/city-list.json, so a new city never adds itself there. Alicante's row was added by hand; Catania, published this morning, is still missing from that file.
+
 ## 2026-08-14 (continued) - Como stays at 9, and the brief that said otherwise was wrong
 
 Same write pass, fourth city, nothing shipped. The brief called Como's two remaining leads ready and they are not: both are held on access, which is the one thing a writing pass cannot write its way past.

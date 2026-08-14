@@ -1,0 +1,250 @@
+{
+  "city": "Alicante",
+  "country": "Spain",
+  "status": "needs_curation",
+  "intro": "Seven Moreton Bay figs stand within a few hundred metres of each other in the centre of Alicante, and every one of them is Australian. Four hold Plaza Gabriel Miró, each catalogued separately by the Valencian register; local press calls the largest of those the biggest ficus in Spain's catalogue, with a canopy of almost forty metres. Three more stand in and along Parque de Canalejas, the waterfront park laid out in 1886, including a trunk eleven and a half metres round. End to end it is a ten-minute walk, free at any hour.",
+  "meta_description": "Seven Moreton Bay figs in the centre of Alicante, one of them called Spain's largest catalogued ficus. A ten-minute walk, free at any hour.",
+  "question_meta": "One of Alicante's seven monumental figs has a published age: Ficus Gabriel Miró II, at about 120 years. Where it stands, and what nobody has dated.",
+  "question_answer": "The oldest tree in Alicante that anyone has put a number to is Ficus Gabriel Miró II, the thickest of the four Moreton Bay figs on Plaza Gabriel Miró, which local press dates at about 120 years. That is the only published age among the seven figs on this page. The other six carry no individual date at all, so ranking them by age would mean inventing the order. What can be said about them is collective: the Gabriel Miró square took its present layout in 1918, Parque de Canalejas was laid out in 1886, and the figs of both are described as more than a hundred years old.",
+  "question_context": "Ages are the weak part of the record here, and it is worth knowing why. The Valencian regional catalogue lists each of these seven figs with a girth, a height and a crown spread, and no planting date, because it measures trees rather than dates them. Local reporting has filled the gap for exactly one of them, the thickest fig on Plaza Gabriel Miró, which todoalicante puts at about 120 years old on a canopy of almost forty metres. A rounder figure of 170 years also circulates, with no measurement behind it and no particular tree attached to it, which is why this page uses the 120 and says where it comes from. For the other six there is only the setting. Parque de Canalejas was designed in 1886 by the architect González Altés, the Gabriel Miró square took its present shape in 1918 with the installation of the sculpture known as La Aguadora, and El Español describes the Moreton Bay figs of both as over a hundred years old. All seven stand on free, open public ground in the city centre, on two squares and in a waterfront park, none of them gated.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Alicante?",
+      "a": "Ficus Gabriel Miró II, the thickest fig on Plaza Gabriel Miró, which local press dates at about 120 years. It is the only one of these seven trees with a published age; the rest have never been dated individually."
+    },
+    {
+      "q": "Are Alicante's monumental figs free to visit?",
+      "a": "Yes. They stand on open public squares and in Parque de Canalejas, a public waterfront park. There is no gate, no ticket and no opening hour. The root plates of the Gabriel Miró figs are fenced, so you walk around them rather than under them."
+    },
+    {
+      "q": "Which is the biggest fig on this walk?",
+      "a": "It depends on what you measure. The thickest trunk belongs to the Ficus del Passeig de Canalejas at 11.59 metres round. The widest canopy, 40.5 metres, belongs to Ficus Gabriel Miró II on the plaza, which local press calls the largest ficus in Spain's catalogue."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Yes. The seven stand within about 450 metres of each other, roughly ten minutes end to end on flat pavement. The TRAM stop at Luceros, on lines L1 to L4, is about ten minutes' walk from the Gabriel Miró square."
+    }
+  ],
+  "hero_tree_id": "ali_001",
+  "oldest_tree_id": "ali_001",
+  "trees": [
+    {
+      "id": "ali_001",
+      "name": "Ficus Gabriel Miró II",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "roughly 120 years",
+      "age_min": 100,
+      "age_max": 145,
+      "location": {
+        "address": "Plaza Gabriel Miró, Alicante",
+        "latitude": 38.343511,
+        "longitude": -0.485066,
+        "neighbourhood": "City centre, the square between the Ayuntamiento and Parque de Canalejas"
+      },
+      "story": "Local press calls this the largest ficus in Spain's catalogue. The canopy is what earns the claim: 40.5 metres across on the Valencian register's own figures, thrown over a city square, on a trunk 10.65 metres round and a tree 25.3 metres tall. It is the thickest of the four Moreton Bay figs on Plaza Gabriel Miró and the widest of them by some margin.\n\nIts age is the part nobody has settled. Todoalicante puts it at about 120 years, a figure the paper ties to that measured canopy. A rounder 170 also circulates, with no measurement behind it and no particular one of these four trees attached to it, so 120 is the number this page uses.\n\nFicus macrophylla comes from the east coast of Australia, and at this size it stops behaving like a street tree. Aerial roots come down from the limbs, thicken where they reach soil and fuse into the base, which is why the city has fenced the root plates of the figs on this square. That, and the fact that people climb them to be photographed.\n\nThe square has had a hard recent year. In September 2025 a centenarian elm broke and came down at the San Fernando corner of it, and the city ordered a review of every monumental tree on its books.",
+      "how_to_recognise": "The thickest trunk on the square at over ten metres round, and the widest canopy of the four. It stands mid-plaza with two more big figs within twenty metres; the other heavy one is about forty metres to the south.",
+      "verified_sources": [
+        "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (Generalitat Valenciana register, register_id 3035, girth 10.65m, height 25.3m, crown 40.5m)",
+        "https://www.todoalicante.es/alicante-ciudad/alicante-revisara-arboles-monumentales-tras-caida-olmo-20250901145008-nt.html",
+        "https://alicantepress.com/art/46214/el-ayuntamiento-protege-con-vallas-los-ficus-de-gabriel-miro",
+        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales"
+      ],
+      "access": "Free, open public plaza in the city centre, no gate or opening hours",
+      "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot; also served by city bus lines 2, 3, 5, 12 near Federico Soto",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ali_002",
+      "name": "Ficus Gabriel Miró IV",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "over a century",
+      "age_min": 90,
+      "age_max": 140,
+      "location": {
+        "address": "Plaza Gabriel Miró, Alicante",
+        "latitude": 38.343142,
+        "longitude": -0.485044,
+        "neighbourhood": "City centre, the square between the Ayuntamiento and Parque de Canalejas"
+      },
+      "story": "Twenty-six metres is tall for a fig. This is the tallest of the four Moreton Bay figs on Plaza Gabriel Miró, 26.6 metres on the Valencian register, with a trunk 10.32 metres round, and it stands on its own at the southern end of the square, about forty metres from the other three.\n\nNobody has dated it. What exists instead is the square. El Español puts the present layout at 1918, when the sculpture known as La Aguadora was installed, and treats that as roughly when these figs went into the ground. That is a reading of the setting rather than a record of a planting, so the honest figure is over a century, not a year.\n\nThe species is Australian, from the wet coastal forests of Queensland and New South Wales, where it germinates high in the crown of another tree and lets its roots down the host's trunk to the soil. In a Spanish square it has to start at ground level like everything else, and it compensates from above: limbs that run out horizontally, aerial roots dropping from them, props thickening into a second and third trunk.\n\nEl Español rates the Gabriel Miró group as probably the most notable ficus specimens in the country, with canopies over twenty-five metres. This one covers 31.5 metres of pavement.",
+      "how_to_recognise": "The fig standing on its own at the southern end of the square, about forty metres from the other three, and the tallest of them at twenty-six metres on a trunk ten metres round.",
+      "verified_sources": [
+        "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 3034, girth 10.32m, height 26.6m, crown 31.5m)",
+        "https://alicantepress.com/art/46214/el-ayuntamiento-protege-con-vallas-los-ficus-de-gabriel-miro",
+        "https://www.elespanol.com/alicante/alicante-ciudad/20240511/especie-australiana-arboles-caracteristicos-ciudad-alicante-trt/853914869_0.html"
+      ],
+      "access": "Free, open public plaza in the city centre, no gate or opening hours",
+      "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ali_003",
+      "name": "Ficus Gabriel Miró I",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "over a century",
+      "age_min": 90,
+      "age_max": 140,
+      "location": {
+        "address": "Plaza Gabriel Miró, Alicante",
+        "latitude": 38.343634,
+        "longitude": -0.484878,
+        "neighbourhood": "City centre, the square between the Ayuntamiento and Parque de Canalejas"
+      },
+      "story": "The register calls this one number I, which turns out to be a filing decision rather than a ranking: of the four figs on the square it has the third-thickest trunk. Seven and a half metres round, 23 metres tall, a crown of 33 metres. In most European cities that is the biggest tree in town. Here it is the middle of the group.\n\nNo source dates it. The square took its present shape in 1918 and its figs are described together as over a century old, which is as close as the record comes to a number for this one.\n\nWhat it does have is the ground under it. A mature Ficus macrophylla lifts its roots into buttresses and lets more down from the branches, so the base is a low tangle of grey props rather than a trunk with a clean edge to put a tape around. The 7.6 metres is a measurement of that tangle, taken where it is tightest.\n\nAlicante has decided these trees are worth explaining. The city has fenced their root plates, because visitors climb them for photographs, and installed plaques beside them, making this square one of five signposted stops on a route through its monumental ficus.",
+      "how_to_recognise": "At the northern end of the square. Of the two smaller figs it is the thicker, seven and a half metres round and twenty-three metres tall; the low spreading one stands about thirty-five metres to its west.",
+      "verified_sources": [
+        "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 3036, girth 7.6m, height 23m, crown 33m)",
+        "https://alicantepress.com/art/46214/el-ayuntamiento-protege-con-vallas-los-ficus-de-gabriel-miro",
+        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales"
+      ],
+      "access": "Free, open public plaza in the city centre, no gate or opening hours",
+      "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ali_004",
+      "name": "Ficus Gabriel Miró III",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "over a century",
+      "age_min": 90,
+      "age_max": 140,
+      "location": {
+        "address": "Plaza Gabriel Miró, Alicante",
+        "latitude": 38.343543,
+        "longitude": -0.48527,
+        "neighbourhood": "City centre, the square between the Ayuntamiento and Parque de Canalejas"
+      },
+      "story": "The slimmest trunk on the square carries the second-widest crown on it. The Valencian register puts this fig at 6.4 metres round, the least of the four, and 19 metres tall, also the least, and then gives it a canopy 35 metres across. The other three went up. This one went sideways.\n\nThat is worth standing under. A low, wide Moreton Bay fig brings its horizontal limbs within a few metres of your head, and the aerial roots it drops from them hang in the space you are walking through. Where one reaches soil it thickens, takes weight, and in time stops being a root at all and becomes part of the trunk.\n\nThe Valencian catalogue treats each of these four figs as a monument in its own right, with its own entry and its own measurements rather than one line for the group. That reflects what a visitor actually finds on the square: four large trees of one species, none of them a copy of the others, one tall and narrow, one enormous in every direction, one middling and one that spread out at head height.\n\nNo planting date survives for this one. The four are described together as over a century old, and that is the honest range.",
+      "how_to_recognise": "The lowest and widest of the four, nineteen metres tall with thirty-five metres of canopy on the slimmest trunk on the square, six and a half metres round. It stands on the western side, about twenty metres from the thickest fig.",
+      "verified_sources": [
+        "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 3037, girth 6.4m, height 19m, crown 35m)",
+        "https://alicantepress.com/art/46214/el-ayuntamiento-protege-con-vallas-los-ficus-de-gabriel-miro",
+        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales"
+      ],
+      "access": "Free, open public plaza in the city centre, no gate or opening hours",
+      "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ali_005",
+      "name": "Ficus del Passeig de Canalejas",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "not individually documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Passeig/Paseo de Canalejas, Parque de Canalejas, Alicante",
+        "latitude": 38.341261,
+        "longitude": -0.486825,
+        "neighbourhood": "City centre, between the Explanada de España and the sports marina"
+      },
+      "story": "Eleven and a half metres round the base, and nothing else on this walk comes close. The Ficus del Passeig de Canalejas is one of the few trees in the Valencian catalogue carrying a name of its own instead of a number, and the measurements back it up: 11.59 metres of girth, 20.8 metres of height, a crown 38.7 metres across the paseo.\n\nThe park around it was laid out in 1886 to a design by the architect González Altés, on the strip between the Explanada de España and what is now the sports marina. The Gabriel Miró square a few minutes north took its present shape in 1918; this ground was drawn thirty years earlier, and its figs have had the time to show it. Trunks that twist and fold, aerial roots let down from the limbs and grown thick enough to stand as second and third trunks, surface roots running out in slabs between the benches. One local account puts it plainly: these trees have accompanied several generations of Alicante residents.\n\nNobody has dated this one individually. The register measures rather than dates, and the park's Moreton Bay figs are described collectively as over a hundred years old. By El Español's count six of them stand here, alongside eleven Ficus nitida, which is reason enough to walk the paseo slowly.",
+      "how_to_recognise": "The heaviest trunk on the paseo by a clear margin, eleven and a half metres round, under a canopy nearly forty metres across. The other figs along this stretch are visibly slimmer.",
+      "verified_sources": [
+        "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 507, girth 11.59m, height 20.8m, crown 38.7m, individually named in the register)",
+        "https://locosporvalencia.com/parque-de-canalejas-el-paseo-de-los-grandes-ficus-junto-al-mar-en-alicante/",
+        "http://www.alicantevivo.org/2008/01/ficus-en-paseo-de-canalejas-de-alicante.html"
+      ],
+      "access": "Free, public waterfront park (Parque de Canalejas), always open, no gate found",
+      "transport": "TRAM Luceros stop (lines L1-L4), roughly 12-15 minutes on foot; a few minutes' walk from the Explanada de España and the sports marina",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ali_006",
+      "name": "Ficus of Parque de Canalejas",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "not individually documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parque de Canalejas, Alicante",
+        "latitude": 38.344259,
+        "longitude": -0.483381,
+        "neighbourhood": "City centre, between the Explanada de España and the sports marina"
+      },
+      "story": "Seven metres of trunk holding up thirteen metres of tree. That ratio is the reason to stop here: the Valencian catalogue measures this fig at 7.05 metres round and only 13 metres tall, with a crown of 16, so from the path it reads as a wide grey mass at ground level with a fairly modest tree on top of it.\n\nOn a Moreton Bay fig the trunk is not really one stem. Aerial roots come down from the limbs, meet the soil, thicken, take load and fuse into the column, so a girth figure on this species measures the result of a process rather than a single stem that grew outwards. Seven metres of it is a lot of process.\n\nThe register lists this tree without a name, as a monumental tree of local interest, one of four standing within about twenty-five metres of each other. Nobody has dated it. What it has is the age the park has: Parque de Canalejas was laid out in 1886 and its Moreton Bay figs are described as more than a century old, which is a range rather than a birthday.\n\nThe park is free, open and a couple of minutes' walk from the four big figs on Plaza Gabriel Miró.",
+      "how_to_recognise": "The squat one of the pair: a trunk seven metres round under a tree only thirteen metres tall, with a small crown for its bulk. Its neighbour about twenty metres to the west is taller and slimmer.",
+      "verified_sources": [
+        "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 301, girth 7.05m, height 13m, crown 16m, category Arbol Monumental de Interes Local)",
+        "https://www.elespanol.com/alicante/alicante-ciudad/20240511/especie-australiana-arboles-caracteristicos-ciudad-alicante-trt/853914869_0.html",
+        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales"
+      ],
+      "access": "Free, public park/plaza area, no gate found",
+      "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "ali_007",
+      "name": "Ficus of Parque de Canalejas (west)",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "not individually documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parque de Canalejas, Alicante",
+        "latitude": 38.344292,
+        "longitude": -0.483643,
+        "neighbourhood": "City centre, between the Explanada de España and the sports marina"
+      },
+      "story": "Two registered figs stand about twenty metres apart here and they are visibly not the same tree. This is the taller one, 19 metres against its neighbour's 13, on the slimmer trunk, 6.35 metres round against 7.05, and it carries the wider crown at 21 metres. Same species, same park, same century, opposite habits: one built downwards into bulk, this one went up.\n\nBoth are listed in the Valencian catalogue as monumental trees of local interest, and neither is given a name there. So this one is identified the way a visitor identifies it, by where it stands and what it looks like, and no source anywhere puts a date on it. Parque de Canalejas was laid out in 1886 and its Moreton Bay figs are described as over a hundred years old, which is the range that honestly applies.\n\nWhat the species offers at this size is the underside. Horizontal limbs, aerial roots hanging free of the ground with others already thick enough to carry weight, and surface roots running out across the soil in low ridges. It is an evergreen from the Australian east coast doing in a Mediterranean park what it does in a subtropical forest, minus the host tree it would normally have started in.",
+      "how_to_recognise": "The taller of the two figs standing twenty metres apart here, nineteen metres against thirteen, on the slimmer trunk and with the wider crown. It is the western one of the pair.",
+      "verified_sources": [
+        "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 303, girth 6.35m, height 19m, crown 21m, category Arbol Monumental de Interes Local)",
+        "https://www.elespanol.com/alicante/alicante-ciudad/20240511/especie-australiana-arboles-caracteristicos-ciudad-alicante-trt/853914869_0.html",
+        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales"
+      ],
+      "access": "Free, public park/plaza area, no gate found",
+      "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

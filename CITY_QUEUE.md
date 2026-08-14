@@ -177,7 +177,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 49 | Rome | 2.00 | 358,876 | 29 | 9 | 2 | 32 | 30 | measured |
 | 50 | Charleston | 3.90 | 155,987 | - | - | - | - | 10 | predicted (thin competition) |
 | 51 | San Francisco | 3.90 | 361,111 | - | - | - | - | 10 | predicted (thin competition) |
-| 52 | Alicante | 1.94 | 77,454 | - | - | - | 44 | 10 | predicted (thin competition) |
+| 52 | Alicante | 1.94 | 77,454 | 7 | - | 1 | 44 | 10 | predicted (thin competition) |
 | 53 | Syracuse | 2.57 | 102,833 | - | - | - | - | 10 | predicted (thin competition) |
 | 54 | Auckland | 3.80 | 152,056 | - | - | - | - | 10 | predicted (thin competition) |
 | 55 | Vancouver | 3.80 | 351,552 | - | - | - | - | 10 | predicted (thin competition) |
