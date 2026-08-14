@@ -11,6 +11,14 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-14 (continued) - Como stays at 9, and the brief that said otherwise was wrong
+
+Same write pass, fourth city, nothing shipped. The brief called Como's two remaining leads ready and they are not: both are held on access, which is the one thing a writing pass cannot write its way past.
+
+The Museo Giovio plane stands in a museum courtyard still closed for renovation, with only a partial reopening targeted for the second half of 2026, and that was rechecked by this morning's verify pass, so it was not searched again. The Via Baserga plane is registered by MASAF against a house number, Via Baserga 39, with a second registered tree at the same address, which is the shape of a garden rather than a street verge. A search and the province's own tree page say nothing about it either way. Brussels blocks entries on that evidence, and the doubt here is about somebody's home, so it waits for one look at street-level imagery rather than a guess. Both findings are written into data/leads/como.json so the next pass starts from them.
+
+Worth naming, because it cost a chunk of this pass: "READY" from `scripts/leads.py` means a lead has a name, a species and a position and no matching block reason. It is deliberately fail-open and it is not the same as verified. Four of the five Rome trees in the same brief failed for the same reason.
+
 ## 2026-08-14 (continued) - Brussels reaches 20, and Parc d'Egmont is now a ten-tree walk
 
 Same write pass, third city. +4, all in Parc d'Egmont, all from the region's CC BY register: the London plane, the horse chestnut, the oriental plane and a Kentucky coffeetree. Every one of the four had been held back in the leads file on a judgement call rather than a rule (thin story, species already covered, a bigger sibling in another park, too young to bother with), which is exactly what CLAUDE.md says must never stop a tree going live. Ten of Brussels' twenty trees now stand in one hectare and a half, which is the densest walk on the site.
