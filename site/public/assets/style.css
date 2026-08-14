@@ -782,7 +782,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   main.content-page.has-tree-bar { padding-bottom: 4.6rem; }
 }
 /* the city page's walk bar shares every rule above; only its placement differs */
-.walk-bar .route-go { display: inline-flex; align-items: baseline; gap: 0.45rem; flex-wrap: nowrap; white-space: nowrap; overflow: hidden; }
+.walk-bar .route-go { display: inline-flex; align-items: center; gap: 0.45rem; flex-wrap: nowrap; white-space: nowrap; overflow: hidden; }
 .walk-bar .route-go .route-name { font-size: 14.5px; font-weight: 700; }
 .walk-bar .route-go .route-meta { font-size: 12px; font-weight: 400; opacity: 0.85; }
 .walk-bar .walk-tab, .walk-bar .route-gps { font-family: var(--sans); }
