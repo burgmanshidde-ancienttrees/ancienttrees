@@ -190,6 +190,13 @@
    "trees": 0
   },
   {
+   "city": "Munich",
+   "country": "Germany",
+   "slug": "munich",
+   "status": "published",
+   "trees": 29
+  },
+  {
    "city": "Tel Aviv",
    "country": "Israel",
    "slug": "tel-aviv",
@@ -243,13 +250,6 @@
    "slug": "amsterdam",
    "status": "published",
    "trees": 20
-  },
-  {
-   "city": "Barcelona",
-   "country": "Spain",
-   "slug": "barcelona",
-   "status": "published",
-   "trees": 46
   },
   {
    "city": "Rome",
@@ -323,6 +323,13 @@
    "trees": 0
   },
   {
+   "city": "Dublin",
+   "country": "Ireland",
+   "slug": "dublin",
+   "status": "published",
+   "trees": 17
+  },
+  {
    "city": "Mumbai",
    "country": "India",
    "slug": "mumbai",
@@ -380,21 +387,6 @@
    "trees": 0
   },
   {
-   "city": "Munich",
-   "country": "Germany",
-   "slug": "munich",
-   "status": "published",
-   "trees": 29
-  },
-  {
-   "city": "Nice",
-   "country": "France",
-   "slug": "nice",
-   "status": "published",
-   "demand_views_90d": 136877,
-   "trees": 10
-  },
-  {
    "city": "Hanoi",
    "country": "Vietnam",
    "slug": "hanoi",
@@ -450,6 +442,21 @@
    "trees": 0
   },
   {
+   "city": "Barcelona",
+   "country": "Spain",
+   "slug": "barcelona",
+   "status": "published",
+   "trees": 46
+  },
+  {
+   "city": "Nice",
+   "country": "France",
+   "slug": "nice",
+   "status": "published",
+   "demand_views_90d": 136877,
+   "trees": 10
+  },
+  {
    "city": "Seville",
    "country": "Spain",
    "slug": "seville",
@@ -485,13 +492,6 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
-  },
-  {
-   "city": "Dublin",
-   "country": "Ireland",
-   "slug": "dublin",
-   "status": "published",
-   "trees": 17
   },
   {
    "city": "Chiang Mai",
@@ -607,6 +607,22 @@
    "slug": "madrid",
    "status": "published",
    "trees": 17
+  },
+  {
+   "city": "Antwerp",
+   "country": "Belgium",
+   "slug": "antwerp",
+   "status": "published",
+   "demand_views_90d": 128289,
+   "trees": 10
+  },
+  {
+   "city": "Bangkok",
+   "country": "Thailand",
+   "slug": "bangkok",
+   "status": "published",
+   "demand_views_90d": 222206,
+   "trees": 5
   },
   {
    "city": "Dubrovnik",
@@ -744,14 +760,6 @@
    "note": "Densest cluster in the Italian register: 34 designated trees in two groups, one of them 12 within 300 m. Published as two walks 8 km apart (Miramare park and the city centre), which the FAQ says plainly. Rest in data/leads/trieste.json.",
    "demand_views_90d": 117233,
    "trees": 8
-  },
-  {
-   "city": "Bangkok",
-   "country": "Thailand",
-   "slug": "bangkok",
-   "status": "published",
-   "demand_views_90d": 222206,
-   "trees": 5
   },
   {
    "city": "Copenhagen",
@@ -993,14 +1001,6 @@
    "status": "published",
    "demand_views_90d": 67963,
    "trees": 5
-  },
-  {
-   "city": "Antwerp",
-   "country": "Belgium",
-   "slug": "antwerp",
-   "status": "published",
-   "demand_views_90d": 128289,
-   "trees": 10
   },
   {
    "city": "Athens",
