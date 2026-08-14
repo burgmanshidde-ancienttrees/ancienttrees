@@ -3,6 +3,7 @@
   "country": "Italy",
   "city_slug": "trento",
   "note": "From the 2026-08-13 verification pass on the MASAF register candidates in data/research/trento-register-candidates.json. 7 trees shipped to data/research/trento-verified.json (a city-centre cluster near the station: Via Santa Croce, Largo Pigarelli, Via Vannetti, Piazza Dante x2, plus Parco Gocciadoro and the Sardagna hillside further out). Everything below either failed the collectible-point/access bar outright (blocked) or was not fully researched in the window (leads).",
+  "review_2026_08_14": "A write pass was asked to promote two of these leads to take Trento from 9 to 10 and could promote none, so the city ships at 8 (tre_008, the Cortesano hackberry, from the verified file). The reason is the same for all five and it is a research question, not a writing one: every remaining candidate is recorded at a named private property or a house number (Villa De Lorenzi / Via alla Scala 4, Villa Lubich, Villa O'Santissima, Villa Maria, Via dei Bergamini 12), and the one test that does not bend is whether the tree stands in somebody's home. Nothing in the record answers that either way, and a write pass cannot state an access line it has no evidence for. Malga Brigolina is the exception on access, being open alpine pasture, and was held instead because no source gives a way to reach it and inventing a transport line for a 943m site is the same error as inventing a pin. FIVE CHEAP CHECKS WOULD UNBLOCK THE CITY: one access question per property. Do them together in one pass, not one at a time.",
   "leads": [
     {
       "name": "The Cedar of Lebanon at Vela (Villa De Lorenzi)",
@@ -10,7 +11,7 @@
       "lat": 46.077958,
       "lng": 11.102225,
       "why_a_lead": "Register sheet 21/L378/TN/22, girth 499cm, one of Trento's officially designated 18 monumental trees per 2024 local press. Stands at Villa De Lorenzi in the Vela district; this pass found the villa named but no confirmation the grounds are open to the public, so left as a lead rather than shipped or blocked outright.",
-      "next_step": "Check whether Villa De Lorenzi's park has any public visiting arrangement, similar to how Como's Villa del Grumello does."
+      "next_step": "Held again 2026-08-14 by the write pass. Register locality is 'Vela - Via alla Scala 4', a house number; the villa name came from the verify pass, not the register. Check whether Villa De Lorenzi's park has any public visiting arrangement, and whether the cedar is visible from Via alla Scala itself, which would make it publishable as a view-only tree."
     },
     {
       "name": "The Giant Sequoia of Villa Lubich, Povo",
@@ -18,28 +19,31 @@
       "lat": 46.066589,
       "lng": 11.160269,
       "why_a_lead": "Register sheet 05/L378/TN/22, girth 617cm, matching monumentaltrees.com's figure for a sequoia at Villa Lubich in Povo almost exactly (verification only, per the site's usual rule). Ownership and public accessibility of Villa Lubich were not confirmed this pass; the name suggests a possible link to Chiara Lubich/the Focolare Movement, headquartered in Trento, but no source found this pass states whether the garden is open to visitors.",
-      "next_step": "Search for Villa Lubich's current ownership and whether its garden hosts any public events or opening hours."
+      "next_step": "Held again 2026-08-14 by the write pass, access still unstated. A 617cm sequoia is worth the check: search Villa Lubich's current ownership and whether its garden hosts public events or open hours."
     },
     {
       "name": "The Sequoia of Villa O'Santissima",
       "species": "Giant Sequoia (Sequoiadendron giganteum)",
       "lat": 46.042556,
       "lng": 11.137794,
-      "why_a_lead": "Register sheet 17/L378/TN/22, girth 590cm, locality 'Villa O'Santissima - Via G. Ferrandi'. Not researched this pass; the name suggests a possible religious institution but this is a guess, not a finding, so it is a lead rather than a block."
+      "why_a_lead": "Register sheet 17/L378/TN/22, girth 590cm, locality 'Villa O'Santissima - Via G. Ferrandi'. Not researched this pass; the name suggests a possible religious institution but this is a guess, not a finding, so it is a lead rather than a block.",
+      "next_step": "Held again 2026-08-14 by the write pass. Still nothing but a register row: locality 'Villa O'Santissima - Via G. Ferrandi', 590cm, 32m. Unresearched."
     },
     {
       "name": "Maderno hamlet: Horse Chestnut (Villa Maria) and Small-leaved Lime (Via dei Bergamini)",
       "species": "Horse Chestnut (Aesculus hippocastanum); Small-leaved Lime (Tilia cordata)",
       "lat": 46.090008,
       "lng": 11.140311,
-      "why_a_lead": "Register sheets 04/L378/TN/22 (horse chestnut, girth 504cm) and 12/L378/TN/22 (lime, girth 440cm), both in the Maderno hamlet north of the centre, 3.0-3.2km out. Not researched this pass."
+      "why_a_lead": "Register sheets 04/L378/TN/22 (horse chestnut, girth 504cm) and 12/L378/TN/22 (lime, girth 440cm), both in the Maderno hamlet north of the centre, 3.0-3.2km out. Not researched this pass.",
+      "next_step": "Held again 2026-08-14 by the write pass. The two are 210m apart (46.090008,11.140311 and 46.088122,11.140394) and would make a small hillside pair, but the chestnut is at Villa Maria and the lime at Via dei Bergamini 12, both of which may be private dwellings. One street-level check on each settles it."
     },
     {
       "name": "The Beech of Malga Brigolina",
       "species": "European Beech (Fagus sylvatica)",
       "lat": 46.05985,
       "lng": 11.061781,
-      "why_a_lead": "Register sheet 08/L378/TN/22, girth 465cm, 4.3km from centre in an alpine-pasture (malga) area. Likely beyond the roughly 30-minute public-transport day-trip boundary; not researched this pass."
+      "why_a_lead": "Register sheet 08/L378/TN/22, girth 465cm, 4.3km from centre in an alpine-pasture (malga) area. Likely beyond the roughly 30-minute public-transport day-trip boundary; not researched this pass.",
+      "next_step": "Held again 2026-08-14 by the write pass, but for a different reason from the rest: access is fine, an alpine pasture at 943m is open ground and nobody's home. What is missing is a way to get there. Find the actual route from Trento (bus line and stop, or the cable car to Sardagna plus a named trail) and this one can ship with an honest transport line."
     }
   ],
   "blocked": [
