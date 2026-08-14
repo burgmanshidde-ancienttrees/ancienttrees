@@ -194,6 +194,33 @@ const avgLat = markers.reduce((s, m) => s + m.lat, 0) / markers.length;
 const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
 
 const walks: Walk[] = planWalks(markers);
+// The walk picker's tab-and-sheet behaviour (Hidde, 2026-08-14: the chips
+// "are taking over too much of the screen - maybe there should be a tab that
+// opens them"). The convention is Google Maps' collapsed bottom sheet: one
+// compact bar, the options behind one tap. Selecting a walk closes the sheet.
+const WALK_SHEET_JS = `
+<script>
+(function() {
+  var tab = document.getElementById('walk-tab');
+  var sheet = document.getElementById('walk-sheet');
+  if (!tab || !sheet) return;
+  tab.addEventListener('click', function() {
+    var open = sheet.hidden;
+    sheet.hidden = !open;
+    tab.setAttribute('aria-expanded', open ? 'true' : 'false');
+    tab.querySelector('.walk-caret').innerHTML = open ? '&#9660;' : '&#9650;';
+  });
+  sheet.addEventListener('click', function(e) {
+    if (e.target.closest('.walk-pick')) {
+      sheet.hidden = true;
+      tab.setAttribute('aria-expanded', 'false');
+      tab.querySelector('.walk-caret').innerHTML = '&#9650;';
+    }
+  });
+})();
+</script>
+`;
+
 const route = walks[0] ?? null;
 if (route) {
   for (const w of walks) {
@@ -333,7 +360,7 @@ const firstWalk = walks[0] ?? null;
       {firstWalk && (
         <div class="walks" id="walk">
           {walks.length > 1 && (
-            <div class="walk-picker" role="group" aria-label={`${walks.filter((w) => !w.combined).length} ${walks.filter((w) => !w.combined).length > 1 ? "walks" : "walk"} in ${cityName}`}>
+            <div class="walk-sheet" id="walk-sheet" hidden role="group" aria-label={`${walks.filter((w) => !w.combined).length} ${walks.filter((w) => !w.combined).length > 1 ? "walks" : "walk"} in ${cityName}`}>
               {walks.map((w, i) => (
                 <button type="button" class="walk-pick" data-walk={i} aria-pressed="false">
                   <span class="walk-pick-name">{w.name || `Walk ${i + 1}`}</span>
@@ -342,17 +369,20 @@ const firstWalk = walks[0] ?? null;
               ))}
             </div>
           )}
-          <div class="route-bar">
-            <a class="route-go" id="route-go" href={firstWalk.url} target="_blank" rel="noopener">
+          <div class="tree-bar walk-bar">
+            <a class="tb-save route-go" id="route-go" href={firstWalk.url} target="_blank" rel="noopener">
               {firstWalk.name && <span class="route-name">{firstWalk.name}</span>}
               <span id="route-label">{firstWalk.label}</span>
-              <span class="route-meta" id="route-meta">about {kmLabel(firstWalk.km)} km, {firstWalk.duration} on foot</span>
+              <span class="route-meta" id="route-meta">{kmLabel(firstWalk.km)} km · {firstWalk.duration}</span>
             </a>
-            <button type="button" class="route-gps" id="gps-btn" aria-pressed="false">Where am I</button>
+            {walks.length > 1 && (
+              <button type="button" class="tb-link walk-tab" id="walk-tab" aria-expanded="false">{walks.filter((w) => !w.combined).length} walks <span class="walk-caret" aria-hidden="true">&#9650;</span></button>
+            )}
+            <button type="button" class="tb-link route-gps" id="gps-btn" aria-pressed="false">Where am I</button>
           </div>
         </div>
       )}
     </div>
   </div>
-  <Fragment slot="scripts" set:html={WORTHIT_JS + cityMapScript(markers, [avgLat, avgLng], route, otherCities, walks)} />
+  <Fragment slot="scripts" set:html={WORTHIT_JS + cityMapScript(markers, [avgLat, avgLng], route, otherCities, walks) + WALK_SHEET_JS} />
 </Base>
