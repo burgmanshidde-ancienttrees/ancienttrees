@@ -164,7 +164,7 @@ def classify(entry, blocking):
     # someone deliberately set is not a lead waiting for prose.
     status = str(entry.get("status") or "").strip().lower()
     if status in ("folded", "blocked", "held", "duplicate", "resolved"):
-        return {"name": "held by an earlier pass (status: %s)" % status}
+        return {"label": "held by an earlier pass (status: %s)" % status}
     why = reason_text(entry)
     for rule in blocking:
         for pat in rule["patterns"]:
