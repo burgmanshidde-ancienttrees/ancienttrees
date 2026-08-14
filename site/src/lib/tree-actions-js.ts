@@ -57,14 +57,17 @@ export const TREE_ACTIONS_JS = `
   function saved() {
     try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { return {}; }
   }
-  var btns = document.querySelectorAll('.save-btn');
   function paint(map) {
-    btns.forEach(function(b) {
+    // fresh query every time: hearts now render inside map popups and other
+    // late-added nodes (atPaintSaves below), not only server markup
+    document.querySelectorAll('.save-btn').forEach(function(b) {
       var on = Boolean(map[b.dataset.tree]);
       b.setAttribute('aria-pressed', on ? 'true' : 'false');
-      b.querySelector('span').textContent = on ? 'Saved' : 'Save';
+      b.querySelector('span').textContent = on
+        ? (b.dataset.lSaved || 'Saved') : (b.dataset.lSave || 'Save');
     });
   }
+  window.atPaintSaves = function() { paint(saved()); };
   paint(saved());
   syncSaves();
   document.addEventListener('click', function(e) {

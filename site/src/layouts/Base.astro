@@ -101,7 +101,7 @@ const year = new Date().getFullYear();
         )}
       </div>
     </details>
-    {AUTH_ENABLED && <a href="/account" class="bar-login only-desktop">Log in</a>}
+    {AUTH_ENABLED && <a href="/account" class="bar-login only-desktop" id="bar-login">Log in</a>}
     <a href="/app" class="bar-cta">Get the app</a>
   </nav>
 </header>
@@ -185,6 +185,24 @@ document.addEventListener("click", function (e) {
       document.head.appendChild(s);
     })();
   </script>
+<script>
+// The nav must know who you are (2026-08-14 consistency pass): AllTrails
+// swaps Log in for your avatar; ours swaps the word, which is the honest
+// minimum for a site without profile pictures. Session shape is the one
+// /account and the save sync already use.
+(function() {
+  try {
+    var s = JSON.parse(localStorage.getItem('ancienttrees_session'));
+    if (!s || s.expires_at <= Date.now() / 1000) return;
+    document.querySelectorAll('#bar-login, .nav-drop-menu a[href="/account"]').forEach(function(a) {
+      var label = a.querySelector('span:not(.mi)') || a;
+      if (label === a) { a.textContent = 'Account'; }
+      else { label.textContent = 'Account'; }
+    });
+  } catch (e) {}
+})();
+</script>
+
 )}
 </body>
 </html>

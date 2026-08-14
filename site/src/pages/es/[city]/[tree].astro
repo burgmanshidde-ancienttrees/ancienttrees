@@ -6,6 +6,10 @@
 // same English /app page, which is where the product actually is.
 import { getCollection } from "astro:content";
 import Base from "../../../layouts/Base.astro";
+import SaveHeart from "../../../components/SaveHeart.astro";
+import SignInModal from "../../../components/SignInModal.astro";
+import { TREE_ACTIONS_JS } from "../../../lib/tree-actions-js";
+import { SIGNIN_JS } from "../../../lib/signin-js";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distLabel, type CityEntry, type Tree } from "../../../lib/trees";
 import { haversineKm } from "../../../lib/walks";
 import { usablePhoto, imgSrcset, thumbUrl, creditRequired } from "../../../lib/images";
@@ -170,9 +174,11 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
       <a class="report-btn" href="/contribute?kind=tree">Sugerir otro árbol</a>
     </div>
     <div class="tree-bar" aria-label="Acciones">
-      <a class="tb-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
+      <SaveHeart treeId={x.id} treeName={x.name} labelSave="Guardar" labelSaved="Guardado" />
+      <a class="tb-link dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
       <a class="tb-link" href={`/es/${cslug}#walk`}>Más árboles</a>
     </div>
-  </main>
+    <SignInModal />
+</main>
   <Fragment slot="scripts" set:html={scripts} />
 </Base>

@@ -18,6 +18,9 @@ import { haversineKm } from "../lib/walks";
 import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
 import { BASE_URL } from "../lib/schema";
 import { byCityListOrderEntry } from "../lib/city-order";
+import SignInModal from "../components/SignInModal.astro";
+import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
+import { SIGNIN_JS } from "../lib/signin-js";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -38,6 +41,7 @@ for (const entry of allCities) {
       type: "Feature",
       geometry: { type: "Point", coordinates: [loc.longitude ?? null, loc.latitude ?? null] },
       properties: {
+        id: t.id,
         name: t.name,
         url: `${cslug}/${slugify(t.name)}`,
         cs: cslug,
@@ -147,5 +151,6 @@ const scripts = mapScript + SEARCH_WIDGET_JS;
   </div>
   <Fragment set:html={exploreProse} />
 </main>
-<Fragment slot="scripts" set:html={scripts} />
+<SignInModal />
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + scripts} />
 </Base>

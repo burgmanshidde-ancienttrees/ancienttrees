@@ -16,8 +16,10 @@ import { fitTitle } from "../lib/title";
 import { submitLink, ageToken } from "../lib/tree-copy";
 import { bestTimeShort } from "../lib/phenology";
 import { mapHead } from "../lib/map";
-import WorthIt from "../components/WorthIt.astro";
-import { WORTHIT_JS } from "../lib/worthit-js";
+import SaveHeart from "../components/SaveHeart.astro";
+import SignInModal from "../components/SignInModal.astro";
+import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
+import { SIGNIN_JS } from "../lib/signin-js";
 import { planWalks, walkRouteFor, humanDuration, mapsRouteUrl, kmLabel, WALK_NAME_MAX, type WalkMarker, type Walk } from "../lib/walks";
 import { cityMapScript } from "../lib/city-map-script";
 import { otherCitiesFor } from "../lib/other-cities";
@@ -298,7 +300,7 @@ const firstWalk = walks[0] ?? null;
             <p class="tree-meta" set:html={`${esc(t.species ?? "")} &middot; ${esc(t.age_estimate ?? "age unknown")} &middot; ${esc(t.location?.neighbourhood ?? "")}${bestTimeChip}`} />
             <p class="tree-story">{t.story}</p>
             <p class="tree-more"><a href={`/${cslug}/${tslugs[t.id]}`}>Read more and get directions →</a></p>
-            <WorthIt treeId={t.id} city={city} treeName={t.name} compact />
+            <SaveHeart treeId={t.id} treeName={t.name} compact />
           </article>
         );
       })}
@@ -384,5 +386,6 @@ const firstWalk = walks[0] ?? null;
       )}
     </div>
   </div>
-  <Fragment slot="scripts" set:html={WORTHIT_JS + cityMapScript(markers, [avgLat, avgLng], route, otherCities, walks) + WALK_SHEET_JS} />
+  <SignInModal />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + cityMapScript(markers, [avgLat, avgLng], route, otherCities, walks) + WALK_SHEET_JS} />
 </Base>

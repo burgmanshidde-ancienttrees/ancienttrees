@@ -2,6 +2,10 @@
 // Contract F — Species page. Ported from build_species_page(), build_site.py:3779-3857.
 import { getCollection, type CollectionEntry } from "astro:content";
 import Base from "../../layouts/Base.astro";
+import SaveHeart from "../../components/SaveHeart.astro";
+import SignInModal from "../../components/SignInModal.astro";
+import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
+import { SIGNIN_JS } from "../../lib/signin-js";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, treeSlugsForCity, type CityEntry } from "../../lib/trees";
 import { groupTreesBySpecies, checkSpeciesNames, SPECIES_MIN_TREES, type SpeciesMember } from "../../lib/species";
@@ -132,5 +136,7 @@ const graph = [
       ))}
       {" "}· or browse <a href="/species">all species</a>.
     </p>
-  </main>
+    <SignInModal />
+</main>
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS} />
 </Base>

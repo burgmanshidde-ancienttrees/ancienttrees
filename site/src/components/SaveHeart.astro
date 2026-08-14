@@ -1,0 +1,32 @@
+---
+// The save heart, everywhere a tree renders (Hidde, 2026-08-14: "please make
+// the ux better", closing audit gap #2: AllTrails puts the heart on every
+// card in every list, ours lived on the tree page alone). One component, one
+// markup, painted and handled by TREE_ACTIONS_JS via delegation, so any page
+// that renders this must also include TREE_ACTIONS_JS + SignInModal +
+// SIGNIN_JS in its scripts.
+//
+// Labels ride on data attributes so the Spanish pages stay Spanish without a
+// second component (paint() reads data-l-save / data-l-saved).
+interface Props {
+  treeId: string;
+  treeName: string;
+  compact?: boolean;
+  labelSave?: string;
+  labelSaved?: string;
+}
+const { treeId, treeName, compact = false, labelSave = "Save", labelSaved = "Saved" } = Astro.props;
+---
+<button
+  class={`save-btn heart-btn${compact ? " heart-compact" : ""}`}
+  type="button"
+  data-tree={treeId}
+  data-name={treeName}
+  data-l-save={labelSave}
+  data-l-saved={labelSaved}
+  aria-pressed="false"
+  aria-label={`${labelSave} ${treeName}`}
+>
+  <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg>
+  <span>{labelSave}</span>
+</button>
