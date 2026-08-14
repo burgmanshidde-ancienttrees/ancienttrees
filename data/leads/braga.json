@@ -2,7 +2,7 @@
   "city": "Braga",
   "country": "Portugal",
   "city_slug": "braga",
-  "note": "Braga is not published yet (CITY_QUEUE.md rank 167, target 10). Started 2026-08-13 from a reader-supplied lead rather than from a research pass, so this file is a shelf, not a rejects list. The ICNF register holds 51 classified entries in the Braga district, which is where a real pass should start.",
+  "note": "Braga is not published yet (CITY_QUEUE.md rank 167, target 10). Started 2026-08-13 from a reader-supplied lead rather than from a research pass, so this file is a shelf, not a rejects list. The ICNF register holds 51 classified entries in the Braga district, which is where a real pass should start. Verification pass 2026-08-14 delivered 6 trees to data/research/braga-verified.json (brg_001 through brg_006), covering all 8 register processos within the city's 8km radius (two folded pairs). This file now also carries what that pass folded or could not close out.",
   "leads": [
     {
       "name": "Ginkgo of the Casa do Passadico garden",
@@ -10,7 +10,27 @@
       "lat": null,
       "lng": null,
       "status": "lead",
-      "why": "Named in a 2008-01-13 comment on the Dias com Arvores post 'Alerta amarelo' (dias-com-arvores.blogspot.com/2005/12/alerta-amarelo.html), by an anonymous commenter arguing it is a finer specimen than Porto's Rainha das Virtudes: 'in the garden of Casa do Passadico, opposite the famous frying pans', a landmark they detour past regularly. The frying pans are Frigideiras do Cantinho on Largo de Sao Joao do Souto, which places the garden in the historic centre. Two things to settle before this can ever ship, and the second is the one that decides it: no second source and no coordinates yet, and Casa do Passadico is a private house, so hard rule 10 applies unless the garden is genuinely open to visitors. A tree behind a wall is not a place we send anybody."
+      "why": "Named in a 2008-01-13 comment on the Dias com Arvores post 'Alerta amarelo' (dias-com-arvores.blogspot.com/2005/12/alerta-amarelo.html), by an anonymous commenter arguing it is a finer specimen than Porto's Rainha das Virtudes: 'in the garden of Casa do Passadico, opposite the famous frying pans', a landmark they detour past regularly. The frying pans are Frigideiras do Cantinho on Largo de Sao Joao do Souto, which places the garden in the historic centre. Two things to settle before this can ever ship, and the second is the one that decides it: no second source and no coordinates yet, and Casa do Passadico is a private house, so hard rule 10 applies unless the garden is genuinely open to visitors. A tree behind a wall is not a place we send anybody. Not re-checked this pass, still open."
+    },
+    {
+      "name": "KNJ1/557, the second Tibaes cedar",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "lat": 41.55360,
+      "lng": -8.4778,
+      "status": "folded",
+      "why": "Folded into brg_004 (The Twin Cedars of Tibaes) in the 2026-08-14 verify pass: registered separately from KNJ1/556 but standing about 10m away beside the monastery lake, near-identical girth (3.56m vs 3.55m) and identical height (38m), same classification date. Kept here as the folded id per the Setubal-twins precedent, in case a future pass ever wants to split them."
+    },
+    {
+      "name": "The original companion Tulip Tree of Biscainhos",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "lat": null,
+      "lng": null,
+      "status": "blocked",
+      "why": "ominho.pt's 2026 roundup states the surviving Biscainhos tulip tree (brg_001) was originally planted as one of a symmetrical pair; the companion tree survived until the late 1970s and a replacement was planted in 1997. Blocked, not a lead: this would be a c.30-year-old sapling, nothing close to the ancient/remarkable bar, not registered, and not separately located in any source found this pass."
     }
+  ],
+  "open_questions": [
+    "Why the Bom Jesus funicular-station oak and plane are officially named 'arvore do Abraco' together (both register entries carry the name under the same 2010 Aviso) is not established from any source found in 40 minutes. Worth one more targeted search (local guides, a Bom Jesus sanctuary history page, or the parish's own materials) before the story runs, since a real embrace legend would be the page's best line.",
+    "The Mosteiro de Tibaes cerca (walled grounds, where the twin cedars and the pine stand) showed up in one older cached search result as closed for works; the live mosteirodetibaes.gov.pt ticketing page fetched 2026-08-14 shows no closure notice and grounds tickets on sale. Worth a fresh check immediately before the write pass runs, since these are the only two trees on the page behind a paid, gated site."
   ]
 }
