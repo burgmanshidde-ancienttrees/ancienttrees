@@ -32,12 +32,17 @@ export const WORTHIT_JS = `
     } catch (e) {}
     try { at.track('worthit-' + verdict); } catch (e) {}
   }
-  function done(box) {
+  function done(box, factReport) {
     box.querySelectorAll('.worthit-btn').forEach(function(b) { b.hidden = true; });
     var why = box.querySelector('.worthit-why');
     if (why) why.hidden = true;
     box.querySelector('.worthit-q').hidden = true;
     box.querySelector('.worthit-done').hidden = false;
+    // One tap did the reporting; the form is only for whoever has more to
+    // say (Hidde, 2026-08-14: "filling in the form is quite an effort while
+    // a thumb is very inviting"). Offered, never required.
+    var more = box.querySelector('.worthit-more');
+    if (more && factReport) more.hidden = false;
   }
   document.addEventListener('click', function(e) {
     var btn = e.target.closest('.worthit-btn, .worthit-chip');
@@ -45,12 +50,12 @@ export const WORTHIT_JS = `
     var box = btn.closest('.worthit');
     var tree = box.dataset.tree;
     var key = 'at_worthit_' + tree;
-    if (localStorage.getItem(key)) { done(box); return; }
+    if (localStorage.getItem(key)) { done(box, false); return; }
     if (btn.classList.contains('worthit-btn')) {
       if (btn.dataset.vote === 'up') {
         localStorage.setItem(key, 'up');
         send(tree, box.dataset.city, box.dataset.name, 'worth it', '');
-        done(box);
+        done(box, false);
       } else {
         box.querySelector('.worthit-why').hidden = false;
         btn.hidden = true;
@@ -58,7 +63,7 @@ export const WORTHIT_JS = `
     } else {
       localStorage.setItem(key, 'down');
       send(tree, box.dataset.city, box.dataset.name, 'not worth it', btn.dataset.reason);
-      done(box);
+      done(box, btn.dataset.reason !== 'not that special');
     }
   });
 })();

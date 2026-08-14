@@ -762,6 +762,8 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .app-pitch strong { display: block; margin-bottom: 0.3rem; }
 .app-pitch p { font-size: 14px; color: var(--ink-light); margin: 0 0 0.9rem; }
 .report .worthit { margin: 0.9rem 0; }
+.worthit-more { font-size: 13px; color: var(--moss); }
+.worthit-more[hidden] { display: none; }
 .save-btn[aria-pressed="true"] { border-color: var(--moss); color: var(--moss); }
 .saved-list { margin: 1rem 0 2rem; padding-left: 1.2rem; }
 .saved-list li { margin: 0.4rem 0; }
