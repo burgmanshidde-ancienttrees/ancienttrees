@@ -1,0 +1,19 @@
+{
+  "leads": [],
+  "blocked": [
+    {
+      "name": "Pino di Norfolk (Araucaria heterophylla)",
+      "species": "Norfolk Island Pine (Araucaria heterophylla)",
+      "locality": "Vico VII San Giovanni 7, Cagliari (MASAF register sheet 04/B354/CA/20, girth 340 cm, height 38 m)",
+      "coordinates": [39.220833, 9.118333],
+      "reason": "BLOCKED, private land. Comune di Cagliari's own designation notice (Jan 2025) states explicitly it stands 'in area privata' in Vico San Giovanni. WebSearch further identifies it as growing in the private garden of the Loi-Congiu house on Vicolo Settimo San Giovanni: a private residence's own grounds. Hard rule 10 does not bend for dwellings regardless of the tree's quality; no evidence found that it is visible from public ground (view-only exception not established). It is a striking tree, nearly 40 m tall and a WWII survivor per local sources (cagliarinverde.com), so worth revisiting if a future pass finds a public vantage point (e.g. visible above a wall from the vico itself) or if the owners ever open it to visitors."
+    },
+    {
+      "name": "Erythrina falcata (Albero corallo)",
+      "species": "Coral Tree (Erythrina falcata)",
+      "locality": "adjacent to Piazza Annunziata, Cagliari (MASAF register sheet 05/B354/CA/20, girth 95 cm, height 16 m)",
+      "coordinates": [39.221542, 9.106394],
+      "reason": "BLOCKED, private land. Multiple local sources (L'Unione Sarda, cagliarinews.it, comune.cagliari.it's own Jan 2025 designation notice) describe it as standing in a private area next to Piazza Annunziata, not the square itself. Also comparatively young at only ~40 years per press coverage, so even if access were resolved it is a weaker candidate than the other seven trees on the count-follows-the-trees standard. Worth rechecking if the private grounds are ever confirmed open, or if a public-facing view is documented."
+    }
+  ]
+}

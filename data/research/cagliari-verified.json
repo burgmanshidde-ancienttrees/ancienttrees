@@ -1,0 +1,169 @@
+[
+  {
+    "id": "cag_001",
+    "name": "The Twin Figs of Giardini Pubblici",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "roughly 140-195 years",
+    "age_min": 140,
+    "age_max": 195,
+    "location": {
+      "address": "Giardini Pubblici, main entrance at Largo Giuseppe Dessi / Via Badas (end of Viale Regina Elena), Cagliari",
+      "latitude": 39.225,
+      "longitude": 9.117,
+      "neighbourhood": "Giardini Pubblici, between Castello and La Vega"
+    },
+    "verified_sources": [
+      "https://www.comune.cagliari.it/portale/page/it/tre_esemplari_arborei_dei_giardini_pubblici_nellelenco_regionale_degli_alberi_monumentali?contentId=NVT75021",
+      "https://www.vistanet.it/cagliari/2019/04/14/lo-straordinario-ficus-magnolioide-dei-giardini-pubblici-il-gigante-buono-della-citta/",
+      "MASAF national monumental trees register, sheet 07/B354/CA/20 (italy-masaf)"
+    ],
+    "access": "Free entry, public park, open daily dawn to dusk (Comune di Cagliari, Sardinia's oldest public park)",
+    "transport": "Bus lines 6 and 7 to the Via Regina Elena stop; roughly 10 minutes' walk from Piazza Yenne",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two Ficus macrophylla specimens stand together on the central avenue near the garden's main entrance, described by the Comune di Cagliari and local press as one of the city's two great fig sites (the other being Piazza Matteotti). Cagliari's municipal council formally added three Giardini Pubblici specimens (these two figs plus the Gleditsia below) to the Sardinian regional list of monumental trees in November 2021. Ages reported inconsistently across sources: comune/press round trip cites 140-150 years in some pieces and 140-195 in others (informati-sardegna); MASAF register carries no individual girth for this entry, listing it as an 'insieme omogeneo' (homogeneous group) rather than two separately measured trees, which is why this pass treats the pair as one collectible entry rather than splitting it. Regional funding for maintenance of the Giardini Pubblici monumental trees (figs, Gleditsia, Jacaranda) was allocated for work in 2025. No vitality concerns reported for these two; contrast with the Piazza Matteotti fig, which is under active monitoring. Oldest public park in Sardinia, opened 1866-1873, laid out where the city's former Bastione and Lazzaretto stood."
+  },
+  {
+    "id": "cag_002",
+    "name": "The Spino di Giuda of Giardini Pubblici",
+    "species": "Honey Locust (Gleditsia triacanthos)",
+    "age_estimate": "roughly 120-150 years",
+    "age_min": 120,
+    "age_max": 150,
+    "location": {
+      "address": "Giardini Pubblici, Viale Regina Elena, Cagliari",
+      "latitude": 39.225861,
+      "longitude": 9.116308,
+      "neighbourhood": "Giardini Pubblici, between Castello and La Vega"
+    },
+    "verified_sources": [
+      "https://www.comune.cagliari.it/portale/page/it/tre_esemplari_arborei_dei_giardini_pubblici_nellelenco_regionale_degli_alberi_monumentali?contentId=NVT75021",
+      "https://www.vistanet.it/cagliari/2021/11/19/cagliari-tre-piante-dei-giardini-pubblici-diventano-alberi-monumentali/",
+      "MASAF national monumental trees register, sheet 06/B354/CA/20 (italy-masaf)"
+    ],
+    "access": "Free entry, public park, open daily dawn to dusk",
+    "transport": "Bus lines 6 and 7 to the Via Regina Elena stop; roughly 10 minutes' walk from Piazza Yenne",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Italian name 'Spino di Giuda' (locally sometimes 'Spino di Giuda inerme', the thornless form). Added to the Sardinian regional monumental trees list in November 2021 alongside the two Giardini Pubblici figs. Register girth 294 cm at time of measurement (sheet dated 2020); no more recent independent remeasurement found. No vitality concern reported. Regional maintenance funding for this tree was allocated for 2025 work per press coverage."
+  },
+  {
+    "id": "cag_003",
+    "name": "The Jacaranda of Giardini Pubblici",
+    "species": "Jacaranda (Jacaranda mimosifolia)",
+    "age_estimate": "roughly 100-150 years",
+    "age_min": 100,
+    "age_max": 150,
+    "location": {
+      "address": "Giardini Pubblici, Viale Regina Elena, Cagliari",
+      "latitude": 39.225556,
+      "longitude": 9.116389,
+      "neighbourhood": "Giardini Pubblici, between Castello and La Vega"
+    },
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 01/B354/CA/20 (italy-masaf)",
+      "https://www.comune.cagliari.it/portale/page/it/tre_esemplari_arborei_dei_giardini_pubblici_nellelenco_regionale_degli_alberi_monumentali?contentId=NVT75021"
+    ],
+    "access": "Free entry, public park, open daily dawn to dusk",
+    "transport": "Bus lines 6 and 7 to the Via Regina Elena stop; roughly 10 minutes' walk from Piazza Yenne",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "FLAGGED: only one firm source (MASAF register) gives this individual tree's own detail (girth 174 cm, height 16 m); the comune press release confirms three Giardini Pubblici specimens went onto the regional monumental list together in Nov 2021 but a 2025 press round of maintenance funding referenced 'the Jacaranda' without a second independently-reported age or condition figure specific to this tree, distinct from the figs and Gleditsia coverage. Age estimate here is a broad estimate consistent with the other Giardini Pubblici monumental trees, not from a dedicated source, and should read as approximate in the story. Known for a spectacular violet-blue bloom in late spring (typically May in this climate), unlike the deciduous figs and Gleditsia."
+  },
+  {
+    "id": "cag_004",
+    "name": "The Ficus of Piazza Matteotti",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "roughly 140-150 years",
+    "age_min": 140,
+    "age_max": 150,
+    "location": {
+      "address": "Piazza Giacomo Matteotti, Cagliari (in front of Cagliari's central railway station)",
+      "latitude": 39.214939,
+      "longitude": 9.109703,
+      "neighbourhood": "Marina, opposite the port and central station"
+    },
+    "verified_sources": [
+      "https://www.cagliaritoday.it/cronaca/ficus-monumentale-sta-bene-parla-giua-marassi.html (23 April 2026, fetched via curl with browser user agent, WebFetch itself 403s this host)",
+      "https://www.vistanet.it/cagliari/2025/08/03/i-meravigliosi-ficus-magnolioide-di-piazza-matteotti-a-cagliari-sapete-quanti-anni-hanno/ (3 Aug 2025)",
+      "MASAF national monumental trees register, sheet 03/B354/CA/20 (italy-masaf)"
+    ],
+    "access": "Free, public square; a temporary precautionary fence currently rings the ground beneath the canopy (branch-drop risk), so visitors can see and stand near the tree but not walk directly under the crown",
+    "transport": "Directly outside Cagliari's central railway station (Stazione di Cagliari); city buses converge on the piazza",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "ALIVE, CURRENT as of 23 April 2026: Comune di Cagliari's public green councillor Luisa Giua Marassi told CagliariToday the tree is healthy and under rigorous, continuous technical management since 2019, most recently a University of Sassari 'Relazione Tecnica Intermedia III' (10 Jan 2025, Profs. Bruno Scanu and Filippo Giadrossich) using dendrodensimeter analysis, which found no structural collapse risk and no damage from nearby piazza construction works. A temporary fence under the crown (per mayoral ordinance no.75, 12 Nov 2025) is precautionary against minor branch drop, not a sign of decline; a permanent protective enclosure and regional-funded conservation work are planned. Girth per MASAF register: 1200 cm (12.0 m), the largest girth of any candidate tree in this city. Age 140-150 years per Vistanet (3 Aug 2025). Note: Vistanet's article uses the plural 'esemplari' (specimens) for this piazza and also mentions a Gleditsia 'in the piazza', but the MASAF register lists only this single Ficus entry for Piazza Matteotti and places the Gleditsia at Giardini Pubblici (roughly 1 km away); treat the Vistanet plural as loose phrasing about the city's old trees generally rather than evidence of a second registered tree at this address unless a further source confirms it."
+  },
+  {
+    "id": "cag_005",
+    "name": "The Ficus of Piazza Ingrao",
+    "species": "Moreton Bay Fig (Ficus macrophylla)",
+    "age_estimate": "roughly 140 years",
+    "age_min": 130,
+    "age_max": 150,
+    "location": {
+      "address": "Piazza F.P. Ingrao, at the junction of Via Roma, Via Regina Margherita and Via XX Settembre, Cagliari",
+      "latitude": 39.212133,
+      "longitude": 9.116408,
+      "neighbourhood": "Marina, Via Roma waterfront"
+    },
+    "verified_sources": [
+      "https://cagliarinews.it/tre-nuovi-alberi-monumentali-a-cagliari-tra-loro-il-ficus-di-via-roma-sopravvissuto-alle-bombe/",
+      "https://www.comune.cagliari.it/portale/page/it/tre_alberature_cittadine_sono_state_inserite_nellelenco_regionale_degli_alberi_monumentali?contentId=NVT210625",
+      "MASAF national monumental trees register, sheet 09/B354/CA/20 (italy-masaf)"
+    ],
+    "access": "Free, public square on the Via Roma waterfront",
+    "transport": "5-10 minutes' walk from Piazza Matteotti / the central railway station, along Via Roma",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Added to the Sardinian regional monumental trees list 21 January 2025 alongside the Pirri cypress and the (blocked, see leads) Erythrina. Planted around 1883 during construction of the historic 'Parterre della Darsena' according to CagliariNews; over 140 years old. Survived Allied bombing raids on Cagliari during WWII, per the same source, a detail worth leading the story with. MASAF register girth: 980 cm (9.8 m). No specific recent health/vitality report found distinct from the general 2025 registration coverage; flagged for that reason, though nothing suggests decline and the January 2025 designation itself implies current good standing. Large canopy shelters migratory and resident birds and sits at a major traffic junction, cited by local press for urban cooling/pollution-absorption value."
+  },
+  {
+    "id": "cag_006",
+    "name": "The Cypress of Pirri Cemetery",
+    "species": "Mediterranean Cypress (Cupressus sempervirens)",
+    "age_estimate": "over 200 years",
+    "age_min": 200,
+    "age_max": 260,
+    "location": {
+      "address": "Cimitero di Pirri, Via Gioachino Murat, Cagliari",
+      "latitude": 39.242603,
+      "longitude": 9.133544,
+      "neighbourhood": "Pirri"
+    },
+    "verified_sources": [
+      "https://www.unionesarda.it/en/sardinia/cagliari-three-new-additions-to-the-regional-list-of-monumental-trees-a9c9mhcj",
+      "https://cagliarinews.it/tre-nuovi-alberi-monumentali-a-cagliari-tra-loro-il-ficus-di-via-roma-sopravvissuto-alle-bombe/",
+      "MASAF national monumental trees register, sheet 08/B354/CA/20 (italy-masaf)"
+    ],
+    "access": "Free, public municipal cemetery; open during standard cemetery visiting hours",
+    "transport": "Roughly 4 km from the historic centre; CTM city bus lines serve Pirri directly",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Predates the cemetery itself: the Pirri cemetery was consecrated 8 November 1913, and this cypress was already standing on the site, over 200 years old per L'Unione Sarda and CagliariNews (Jan 2025 monumental designation coverage). Described as a familiar landmark for generations of Pirri residents. MASAF register girth: 630 cm (6.3 m). No dedicated recent health report found beyond the 2025 designation coverage, hence flagged, but nothing in the sources suggests decline. Cemetery visiting hours vary seasonally; state honestly on the page that this is a working cemetery, not a garden."
+  },
+  {
+    "id": "cag_007",
+    "name": "The Tintitaco",
+    "species": "Prosopis torquata",
+    "age_estimate": "roughly 165-200 years",
+    "age_min": 165,
+    "age_max": 200,
+    "location": {
+      "address": "Parco della Rimembranza, Via Sonnino, Cagliari",
+      "latitude": 39.215002,
+      "longitude": 9.120562,
+      "neighbourhood": "central Cagliari, near Via Sonnino"
+    },
+    "verified_sources": [
+      "https://ilregistrodeglialberi.it/13529-tintitaco-cagliari-ca-sardegna (RAMI register)",
+      "https://www.admaioramedia.it/pagine/notizie_dettaglio.asp?Id_notizia=10892",
+      "MASAF national monumental trees register, sheet 02/B354/CA/20 (italy-masaf)"
+    ],
+    "access": "Free, public park (Parco della Rimembranza / Parco delle Rimembranze), open daily",
+    "transport": "Roughly 15-20 minutes' walk from the city centre, or a short bus ride to Via Sonnino",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "No established English common name for Prosopis torquata; locally called 'Tintitaco' or, on RAMI, translated as 'the Admiral's Tree'. Local tradition holds it was donated to the city by an English naval commander whose ship sheltered in Cagliari's port after a storm while carrying exotic plants; repeated across multiple local sources (cagliarinverde.com, admaioramedia.it) but origin story, not independently documented, so present as local lore rather than fact. AGE DISAGREEMENT: RAMI register gives ~166 years (last updated Oct 2025); local press (admaioramedia and others) call it roughly 200 years; MASAF register carries no age field at all. Girth also disagrees by measurement method: MASAF register gives 300 cm; RAMI gives 570 cm measured at ground level because the trunk branches low, at about 1.3 m height, so the two figures are not necessarily contradictory, just measured at different heights. HEALTH: RAMI describes 'mediocre' condition, with one major branch on scaffolding support and the trunk itself supported by a metal cage on one side; still alive and standing, actively propped and maintained rather than declining unchecked, and it remains a protected environmental monument under regional law. Coordinates from RAMI (39.215002, 9.120562) and MASAF register (39.215, 9.120556) agree to within a few metres."
+  }
+]
