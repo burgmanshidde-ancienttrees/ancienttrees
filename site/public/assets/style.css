@@ -608,11 +608,8 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .card-off { opacity: 0.5; }
 /* Inside the capsule: the walk link is the green primary (like the tree
    page's save), the tab and the locate button are quiet capsule links. */
-.walk-bar .route-go { display: flex; flex-direction: column; align-items: center;
-  text-decoration: none; line-height: 1.2; }
-.walk-bar .route-go .route-meta { font-weight: 400; font-size: 11.5px; opacity: 0.8; }
-.walk-bar .walk-tab, .walk-bar .route-gps { font-family: var(--sans); background: none;
-  border: none; cursor: pointer; }
+
+
 .route-gps[aria-pressed="true"] { color: #b6e05f; }
 .suggest-form { display: flex; flex-direction: column; gap: 0.9rem; margin: 1.5rem 0; max-width: 34rem; }
 .suggest-form label { font-size: 13.5px; font-weight: 700; display: flex; flex-direction: column; gap: 0.35rem; }
@@ -785,7 +782,7 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   main.content-page.has-tree-bar { padding-bottom: 4.6rem; }
 }
 /* the city page's walk bar shares every rule above; only its placement differs */
-.walk-bar .route-go { display: inline-flex; align-items: baseline; gap: 0.45rem; }
+.walk-bar .route-go { display: inline-flex; align-items: baseline; gap: 0.45rem; flex-wrap: nowrap; white-space: nowrap; overflow: hidden; }
 .walk-bar .route-go .route-name { font-size: 14.5px; font-weight: 700; }
 .walk-bar .route-go .route-meta { font-size: 12px; font-weight: 400; opacity: 0.85; }
 .walk-bar .walk-tab, .walk-bar .route-gps { font-family: var(--sans); }
