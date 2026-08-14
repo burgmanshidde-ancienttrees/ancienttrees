@@ -1384,6 +1384,42 @@
     "note": "New city opened: 4 trees in Villa Bellini/Orto Botanico cluster, 0.9km 12-minute walk, all flagged with honest hedges (age dispute, register height errors, no-age)",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "rome",
+    "kind": "write",
+    "tokens": 55000,
+    "trees": 4,
+    "note": "4 of 5 briefed trees unshippable (day-trip boundary x2, ensemble+access, grove); substituted from same leads file, register-only, flagged",
+    "wasted": 0,
+    "brief_wrong": true
+   },
+   {
+    "target": "seville",
+    "kind": "write",
+    "tokens": 45000,
+    "trees": 4,
+    "note": "municipal catalogue, single-sourced and flagged; 2 Alcazar pins approximate on the catalogue's coordinate fault; 1 best_time",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "brussels",
+    "kind": "write",
+    "tokens": 40000,
+    "trees": 4,
+    "note": "Parc d'Egmont cluster from the CC BY register; heritage.brussels down all day",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "como",
+    "kind": "write",
+    "tokens": 25000,
+    "trees": 0,
+    "note": "both leads held on access: Museo Giovio closed for renovation, Via Baserga is a house number (hard rule 10); recorded in leads file",
+    "wasted": 0,
+    "brief_wrong": true
    }
   ]
  }
