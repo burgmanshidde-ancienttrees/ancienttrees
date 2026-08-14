@@ -157,9 +157,10 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
 
     <div class="tree-bar" aria-label="Actions">
       <SaveHeart treeId={tree.id} treeName={tree.name} />
-      <a class="tb-link dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
-      <a class="tb-link" href={`/${cslug}#walk`}>Walk more</a>
+      <a class="tb-primary dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
+      <a class="tb-secondary" href="/app">Get the app</a>
     </div>
+    <p class="under-bar-link"><a href={`/${cslug}#walk`}>See the walking route past {cityName}'s other trees →</a></p>
     {tree.how_to_recognise && (
       <p class="which-one"><b>Which one is it?</b> {tree.how_to_recognise}</p>
     )}
