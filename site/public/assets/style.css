@@ -570,22 +570,10 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    mobile. also the size wtf"). Mobile keeps the dark capsule. */
 .walks { position: absolute; left: 1rem; bottom: 1.2rem; z-index: 5;
   display: flex; flex-direction: column; align-items: flex-start;
-  max-width: min(430px, calc(100% - 2rem)); }
-.walks .tree-bar { position: static; transform: none; margin: 0; }
-@media (min-width: 641px) {
-  .walks .tree-bar.walk-bar { background: #fff; border: 1px solid var(--cream-dark);
-    box-shadow: 0 4px 18px rgba(0,0,0,0.14); padding: 0.3rem; gap: 0.15rem; }
-  .walk-bar .route-go { flex-direction: row; align-items: baseline; gap: 0.45rem;
-    font-size: 13.5px; padding: 0.5rem 0.9rem; max-width: 300px;
-    overflow: hidden; white-space: nowrap; }
-  .walk-bar .route-go .route-name { font-size: 13.5px; }
-  .walk-bar .route-go .route-meta { font-size: 12px; }
-  .walk-bar .route-go span { display: inline; overflow: hidden; text-overflow: ellipsis; }
-  .walk-bar .walk-tab, .walk-bar .route-gps { color: var(--ink); font-size: 13px;
-    padding: 0.5rem 0.7rem; }
-  .walk-bar .walk-tab:hover, .walk-bar .route-gps:hover { background: var(--cream); }
-  .walk-sheet { max-width: 320px; }
-}
+  max-width: min(440px, calc(100% - 2rem)); }
+.walks .tree-bar { position: static; margin: 0; background: #fff;
+  border: 1px solid var(--cream-dark); border-radius: 999px; padding: 0.3rem;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.14); }
 .walk-sheet { margin-bottom: 0.6rem; width: 100%;
   background: #fff; border-radius: 14px; box-shadow: 0 8px 28px rgba(0,0,0,0.22);
   padding: 0.5rem; max-height: 45vh; overflow-y: auto; }
@@ -689,14 +677,15 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .footer-cols { flex-direction: column; gap: 1.5rem; }
   .action-row .go-btn, .action-row .seen-btn { font-size: 13px; padding: 0.6rem 0.9rem; }
 
-  .walks { position: fixed; left: 50%; transform: translateX(-50%); width: auto;
-    max-width: calc(100vw - 1.2rem);
-    bottom: calc(0.75rem + env(safe-area-inset-bottom)); }
+  .walks { position: fixed; left: 0; right: 0; bottom: 0; max-width: none; align-items: stretch; }
+  .walks .tree-bar { border-radius: 0; border: none; border-top: 1px solid var(--cream-dark);
+    box-shadow: 0 -4px 18px rgba(0,0,0,0.08);
+    padding: 0.5rem 0.75rem calc(0.5rem + env(safe-area-inset-bottom)); }
+  .walks .route-go { flex: 1 1 auto; }
+  .walk-sheet { margin: 0 0.75rem 0.5rem; width: auto; }
   /* The capsule is one compact bar now (the picker collapsed into its tab),
      so the page only needs clearance for the bar itself. */
   .panel { padding-bottom: calc(5.5rem + env(safe-area-inset-bottom)); }
-  .walk-bar .route-go { font-size: 14px; padding: 0.65rem 0.9rem; }
-  .walk-bar .tb-link { font-size: 13.5px; padding: 0.65rem 0.7rem; }
 }
 .maplibregl-popup-content { font-family: var(--sans); font-size: 13px; padding: 0.75rem 1rem; border-radius: 4px; }
 .maplibregl-popup-content strong { font-family: var(--sans); font-weight: 750; letter-spacing: -0.015em; font-size: 15px; font-weight: 400; }
@@ -763,30 +752,44 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    look more like alltrails"): one dark floating pill, save first in green,
    directions and the walk beside it, every viewport. The old white strip and
    the desktop action row are both gone; this is the page's one action zone. */
-/* Desktop: the tree page's actions sit IN the content column under the photo,
-   where AllTrails keeps them, because a floating pill over a reading column is
-   a phone idiom (same correction Hidde made about the walk control at 1600px).
-   Phones keep the fixed capsule; the media query below re-fixes it. */
-.tree-bar { position: static; transform: none; margin: 0 0 1.4rem;
-  display: inline-flex; align-items: center; gap: 0.3rem;
-  background: #23261e; border-radius: 999px; padding: 0.4rem;
-  box-shadow: 0 3px 14px rgba(0,0,0,0.16); max-width: 100%; }
+/* The action bars, redesigned 2026-08-14 after Hidde's screenshot ("ive never
+   seen any company do such a fat bottombar... make it more white"). The rules
+   that bind both bars: WHITE ground, ONE line, 44px buttons, one solid green
+   primary, quiet secondaries, icons where a word would repeat. Desktop: the
+   tree bar sits in-flow under the photo as a plain row; the city walk bar
+   docks bottom-left as a white map control. Phones: both fix to the bottom
+   edge, full width, like every maps product.  */
+.tree-bar { display: flex; align-items: center; gap: 0.5rem; margin: 0 0 1.4rem; max-width: 100%; }
+.tb-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
+  background: var(--moss); color: #fff; text-decoration: none; cursor: pointer;
+  font-family: inherit; font-size: 14.5px; font-weight: 700; line-height: 1;
+  border: none; border-radius: 999px; padding: 0 1.1rem; height: 44px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.tb-primary:hover { background: #2f4717; }
+.tb-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem;
+  background: #fff; color: var(--ink); text-decoration: none; cursor: pointer;
+  font-family: inherit; font-size: 13.5px; font-weight: 700; line-height: 1;
+  border: 1.5px solid var(--cream-dark); border-radius: 999px; padding: 0 0.9rem; height: 44px;
+  white-space: nowrap; }
+.tb-secondary:hover { border-color: var(--moss); }
+.tree-bar .heart-btn { height: 44px; border-radius: 999px; padding: 0 0.8rem; font-size: 13.5px; }
+.gps-ic { width: 18px; height: 18px; }
+.route-gps[aria-pressed="true"] { color: var(--moss); border-color: var(--moss); }
+.under-bar-link { font-size: 13.5px; margin: -0.6rem 0 1.4rem; }
 @media (max-width: 640px) {
-.tree-bar { position: fixed; bottom: 1.1rem; left: 50%; transform: translateX(-50%);
-  display: flex; align-items: center; gap: 0.3rem; z-index: 40;
-  background: #23261e; border-radius: 999px; padding: 0.4rem;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.28); max-width: calc(100vw - 1.6rem); margin: 0; }
+  .tree-bar { position: fixed; left: 0; right: 0; bottom: 0; margin: 0; z-index: 40;
+    background: #fff; border-top: 1px solid var(--cream-dark);
+    box-shadow: 0 -4px 18px rgba(0,0,0,0.08);
+    padding: 0.5rem 0.75rem calc(0.5rem + env(safe-area-inset-bottom)); }
+  .tb-primary { flex: 1 1 auto; }
+  main.content-page.has-tree-bar { padding-bottom: 4.6rem; }
 }
-.tb-save, .tree-bar .save-btn { display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer;
-  font-family: inherit; font-size: 14px; font-weight: 700;
-  background: #b6e05f; color: #1d2016; border: none; border-radius: 999px;
-  padding: 0.6rem 1rem; white-space: nowrap; }
-.tb-save .heart, .tree-bar .save-btn .heart { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
-.tb-save[aria-pressed="true"] .heart, .tree-bar .save-btn[aria-pressed="true"] .heart { fill: #1d2016; }
-.tb-link { color: #fff; text-decoration: none; font-size: 14px; font-weight: 700;
-  padding: 0.6rem 0.95rem; border-radius: 999px; white-space: nowrap; }
-.tb-link:hover { background: rgba(255,255,255,0.12); }
-@media (max-width: 640px) { main.content-page.has-tree-bar { padding-bottom: 5.6rem; } }
+/* the city page's walk bar shares every rule above; only its placement differs */
+.walk-bar .route-go { display: inline-flex; align-items: baseline; gap: 0.45rem; }
+.walk-bar .route-go .route-name { font-size: 14.5px; font-weight: 700; }
+.walk-bar .route-go .route-meta { font-size: 12px; font-weight: 400; opacity: 0.85; }
+.walk-bar .walk-tab, .walk-bar .route-gps { font-family: var(--sans); }
+.walk-caret { font-size: 9px; margin-left: 0.2rem; }
 .app-pitch { margin: 2.2rem 0 1.2rem; padding: 1.2rem 1.3rem; background: var(--cream);
   border-radius: 14px; }
 .app-pitch strong { display: block; margin-bottom: 0.3rem; }
@@ -822,11 +825,11 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 /* The one sign-in surface (SignInModal.astro), shaped like the modal every
    AllTrails gated tap lands on: centred card, mark on top, stacked pill
    buttons, the app darkest. */
-.signin-dialog { max-width: 24rem; text-align: center; position: relative; padding: 2rem 1.6rem 1.4rem; }
+.signin-dialog { max-width: 24rem; text-align: center; padding: 2rem 1.6rem 1.4rem; }
 .signin-dialog h3 { margin: 0.4rem 0 0.4rem; }
 .signin-dialog p { font-size: 14px; color: var(--ink-light); margin: 0 0 1rem; }
 .signin-mark { font-size: 28px; margin: 0; }
-.signin-close { position: absolute; top: 0.7rem; right: 0.9rem; border: none; background: none;
+.signin-close { position: absolute; top: 0.7rem; right: 0.9rem; /* dialog is fixed, so absolute resolves against it */ border: none; background: none;
   font-size: 15px; cursor: pointer; color: var(--ink-light); }
 .signin-form { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 0.6rem; }
 .signin-form input { font-family: inherit; font-size: 14px; padding: 0.7rem 0.9rem;

@@ -309,6 +309,12 @@ const firstWalk = walks[0] ?? null;
         <div class="take-with-you">
           <strong>Going there?</strong> <a href={`/${cslug}.gpx`} download>Download all {trees.length} trees</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
         </div>
+        <div class="app-pitch">
+          <strong>Walk them with the app</strong>
+          <p>The walking routes, your saved trees, and the collection of the ones you have stood in front of: the Ancient Trees app.</p>
+          <a class="go-btn" href="/app">Get the app</a>
+        </div>
+
         <h2>Frequently asked</h2>
         <dl class="faq">
           {faq.map((f) => (
@@ -372,15 +378,17 @@ const firstWalk = walks[0] ?? null;
             </div>
           )}
           <div class="tree-bar walk-bar">
-            <a class="tb-save route-go" id="route-go" href={firstWalk.url} target="_blank" rel="noopener">
+            <a class="tb-primary route-go" id="route-go" href={firstWalk.url} target="_blank" rel="noopener">
               {firstWalk.name && <span class="route-name">{firstWalk.name}</span>}
-              <span id="route-label">{firstWalk.label}</span>
+              <span id="route-label" hidden>{firstWalk.label}</span>
               <span class="route-meta" id="route-meta">{kmLabel(firstWalk.km)} km · {firstWalk.duration}</span>
             </a>
             {walks.length > 1 && (
-              <button type="button" class="tb-link walk-tab" id="walk-tab" aria-expanded="false">{walks.filter((w) => !w.combined).length} walks <span class="walk-caret" aria-hidden="true">&#9650;</span></button>
+              <button type="button" class="tb-secondary walk-tab" id="walk-tab" aria-expanded="false">{walks.filter((w) => !w.combined).length} walks <span class="walk-caret" aria-hidden="true">&#9650;</span></button>
             )}
-            <button type="button" class="tb-link route-gps" id="gps-btn" aria-pressed="false">Where am I</button>
+            <button type="button" class="tb-secondary route-gps" id="gps-btn" aria-pressed="false" aria-label="Where am I">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="gps-ic"><circle cx="12" cy="12" r="3.2" fill="currentColor"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="12" cy="12" r="7.5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            </button>
           </div>
         </div>
       )}
