@@ -156,6 +156,15 @@ def classify(entry, blocking):
     which is deliberate: an unreadable reason is not evidence of a problem, and
     treating it as one is exactly the habit this file exists to end.
     """
+    # A pass that has already looked at this tree and HELD it is evidence, and
+    # stronger than any keyword. Added 2026-08-14: Braga's two Tibaes trees
+    # were held that morning (the monastery's cerca is closed for works, the
+    # notice names the lake they stand beside) and leads.py offered all three
+    # back as READY the same afternoon, folded twin included. A status field
+    # someone deliberately set is not a lead waiting for prose.
+    status = str(entry.get("status") or "").strip().lower()
+    if status in ("folded", "blocked", "held", "duplicate", "resolved"):
+        return {"name": "held by an earlier pass (status: %s)" % status}
     why = reason_text(entry)
     for rule in blocking:
         for pat in rule["patterns"]:
