@@ -1,0 +1,30 @@
+{
+ "city": "Sintra",
+ "country": "Portugal",
+ "city_slug": "sintra",
+ "note": "Candidates checked during the 2026-08-14 verify pass against the ICNF register (portugal-icnf.json, 49 entries within 20km). Kept as data per Hidde's 2026-08-03 standing rule that nothing researched should be wasted. Never rendered: these are leads/blocked, not entries.",
+ "leads": [],
+ "blocked": [
+  {
+   "processo": "KNJ1/061",
+   "name": "The Sweet Chestnut of Quinta do Castanheiro",
+   "species": "Castanea sativa Miller (sweet chestnut)",
+   "lat": 38.79910,
+   "lng": -9.39960,
+   "register_ref": "portugal-icnf.json, D.G. n.º 70, II Serie de 26/03/1945, girth 9.6m, age_register 800 (last measured 1989)",
+   "status": "blocked",
+   "reason": "Re-confirmed exclusion, not a new finding: this exact tree was already checked and excluded when Sintra first shipped (2026-07-28, recorded in archive/CURATION-2026-07.md and archive/LOG-2026-07.md). It stands at Quinta do Castanheiro on private land, and press coverage recorded it mutilated in February 2025 with declassification recommended. Hard rule on private land plus an unresolved vitality question after known mutilation. Does not come back without a source confirming both public access and that the tree survived the mutilation in recoverable condition."
+  },
+  {
+   "processo": "AIP11110572I / AIP11110573I / AIP11110574I",
+   "name": "The plane trees of Largo do Infante D. Henrique, Colares",
+   "species": "Platanus hybrida Brot. (London plane)",
+   "lat": 38.80345,
+   "lng": -9.44967,
+   "register_ref": "portugal-icnf.json, three entries tagged tipo=Arvore isolada, girths 4.12m/4.58m/1.88m, age_register 120/120/30, no classified decree recorded",
+   "status": "blocked",
+   "reason": "Not a single collectible point. Sintra Noticias (2022-03-20) and a local blog (riodasmacas.blogspot.com, 2021-03) both describe Colares' plane trees as one continuous roadside planting (\"conjunto arboreo\", officially 33 plataneiros classified together 2020-01-28) running \"from the Varzea bridge to the Banzao on the road to the beach\", fronting the Adega Regional de Colares. The three register entries near Largo do Infante D. Henrique / Restaurante D'A Varzea are administratively tagged isolated but sit at the same Varzea site the sources describe as part of the row; no source draws a clean boundary marking these three as a separate compact ensemble distinct from the avenue. Reads as the same non-collectible-point case as Barcelona's La Rambla planes (already blocked project-wide) rather than a walkable cluster addition. Also 4.2km from Sintra's existing 3.1km-span cluster (Colares is its own village; day-trip-only if it ever ships), which was the brief's own reason to deprioritize it below the castanheiro. Leave blocked unless a future pass finds a source that clearly separates these three as a standalone, named square distinct from the avenue.",
+   "also_note": "Two other candidates from the brief's 35-unmined list were checked and found to be duplicates already published, not leads: the 0.8km sobreiro (Quercus suber, girth 4.75m/register vs 4.8m brief rounding, age 350) at 38.79621,-9.39565 is sin_002 (The Fern Cork Oak of Quinta do Relogio, 38.796,-9.396, ~38m away, matches on species/girth/age/classification decree D.R. n. 276 1996 exactly). The 1.5km platano (Platanus hybrida, girth 7.71m, age 200) at 38.79560,-9.38590 is sin_003 (The Plane Tree of Parque da Liberdade, 38.796,-9.386, ~45m away, matches on species/girth/age/decree D.G. n. 290 1951 exactly). data/research/sintra-register-candidates.json had already flagged both near_published matches before this pass started."
+  }
+ ]
+}

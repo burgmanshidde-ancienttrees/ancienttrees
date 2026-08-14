@@ -1311,6 +1311,17 @@
     "wasted": 0,
     "brief_wrong": false
    }
+  ],
+  "2026-08-14": [
+   {
+    "target": "sintra",
+    "kind": "verify",
+    "tokens": 107705,
+    "trees": 0,
+    "note": "all near-in candidates were duplicates (sin_002, sin_003) or blocked (private+mutilated 800yr chestnut, avenue-not-ensemble Colares plane trio); reasons recorded in data/leads/sintra.json, nothing shipped",
+    "wasted": 0,
+    "brief_wrong": false
+   }
   ]
  }
 }
