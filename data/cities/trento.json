@@ -2,11 +2,11 @@
   "city": "Trento",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Four of Trento's registered trees stand within 900 metres of the station, which means you can be under the oldest of them two minutes after stepping off a train. That one is a plane planted in 1835, recognised as the city's oldest only in 2024. The others spread out: an elm that survived the disease which killed most of Europe's mature elms, a cedar planted the year Italy was founded, and a sweet chestnut up at Sardagna, reached by cable car.",
-  "meta_description": "Eight monumental trees in Trento, four within 900 metres of the station: a plane from 1835, a surviving elm, and a chestnut reached by cable car.",
-  "question_meta": "Trento's oldest tree is the plane of Via Santa Croce, planted in 1835 and confirmed as the city's oldest in 2024. Where it stands, plus six more.",
+  "intro": "Four of Trento's registered trees stand within 900 metres of the station, which means you can be under the oldest of them two minutes after stepping off a train. That one is a plane planted in 1835, recognised as the city's oldest only in 2024. The others spread out: an elm that survived the disease which killed most of Europe's mature elms, a cedar planted the year Italy was founded, a sweet chestnut up at Sardagna reached by cable car, and a beech standing alone in a mountain pasture on Monte Bondone.",
+  "meta_description": "Nine monumental trees in Trento, four within 900 metres of the station: a plane from 1835, a surviving elm, and a beech alone in a Monte Bondone pasture.",
+  "question_meta": "Trento's oldest tree is the plane of Via Santa Croce, planted in 1835 and confirmed as the city's oldest in 2024. Where it stands, plus eight more.",
   "question_answer": "Trento's oldest tree is the London plane in the public garden on Via Santa Croce, planted in 1835 and reported by three separate press pieces in 2024 as the oldest in the city, which is when the recognition became official rather than local knowledge. It stands in a free public garden a few minutes from the station. Italy's national register carries no age field, so the 1835 date comes from the city's own records rather than from the register.",
-  "question_context": "Trento's registered trees are documented by the comune itself, which publishes a directory of its public gardens naming several of them, and by local press that covered the city's oldest tree when it was formally recognised in 2024. Italy's national register underlies all of it and carries girth, height and a position but no age column, so the 1835 planting date for the Via Santa Croce plane comes from the city's records and not from the register, and trees without such a record appear here with no age rather than a guess. The eight divide into one walk and three outings: four stand within nine hundred metres of the station, one is out at Parco Gocciadoro, one is up the mountain at Sardagna, reached by cable car, where the pin marks the locality rather than the trunk because the grove is known and the individual tree is not, and one is a bus ride north in the hillside hamlet of Cortesano. Six register entries are deliberately left off this page: a sequoia now inside a convent school, a cedar on school grounds, a cypress ensemble, and three plane avenues that fail the test of having a single place to stand.",
+  "question_context": "Trento's registered trees are documented by the comune itself, which publishes a directory of its public gardens naming several of them, and by local press that covered the city's oldest tree when it was formally recognised in 2024. Italy's national register underlies all of it and carries girth, height and a position but no age column, so the 1835 planting date for the Via Santa Croce plane comes from the city's records rather than the register, and trees without such a record appear here with no age rather than a guess. The nine divide into one walk and five outings: four stand within nine hundred metres of the station, a fifth is twenty minutes south on foot at Maso Ginocchio, one is out at Parco Gocciadoro, one is up at Sardagna, reached by cable car, where the pin marks the locality rather than the trunk, one is a bus ride north in the hamlet of Cortesano, and one stands by itself in a pasture on Monte Bondone. Six register entries are deliberately left off: a sequoia inside a convent school, a cedar on school grounds, a cypress ensemble, and three plane avenues with no single place to stand.",
   "faq": [
     {
       "q": "What is the oldest tree in Trento?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Trento's monumental trees free to visit?",
-      "a": "Yes, all of them stand in public gardens, streets or parks with no entry fee. Two need more than your feet: the Sardagna chestnut is reached by the cable car up from the city, which is a paid ride, and the Cortesano hackberry is a twenty-five minute bus ride north."
+      "a": "Yes, all of them stand in public gardens, streets, parks or open hillside with no entry fee. Three need more than your feet: the Sardagna chestnut is reached by the cable car up from the city, which is a paid ride, the Cortesano hackberry is a twenty-five minute bus ride north, and the Monte Bondone beech is a bus to Candriai and a quarter of an hour on a forest path."
     },
     {
       "q": "How many can I see in one walk?",
@@ -267,6 +267,44 @@
         "status": "missing"
       },
       "notes": "Age deliberately empty: no source publishes one, and Italy's national register has no age field. Flagged because only one press source (Il T Quotidiano) places the tree precisely, at the church of Sant'Antonio, and no second physical description or photograph was found."
+    },
+    {
+      "id": "tre_009",
+      "name": "The Beech of Malga Brigolina",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Prato sotto Malga Brigolina, Monte Bondone, 38123 Trento TN, Italy",
+        "latitude": 46.05985,
+        "longitude": 11.061781,
+        "neighbourhood": "Monte Bondone (above Sopramonte and Candriai)"
+      },
+      "location_precision": "approximate",
+      "access": "Free, open pasture below Malga Brigolina on Monte Bondone; the malga itself is a working agritur, open from early June to late September",
+      "transport": "Trentino Trasporti bus B202 (Trento to Sardagna, Candriai, Vaneze, Vason and Viote) to Candriai, then about 15 minutes on foot on the waymarked Giro della Selva path, which starts near the village football pitch. By car, the gravel forest road signposted for the malga turns off on the way up from Sopramonte, just before Candriai.",
+      "story": "Four and a half metres of trunk, and nothing else growing within reach of its branches. Fagus sylvatica is Europe's great crowding tree: in a wood it goes up straight and clean and throws a shade so heavy that almost nothing lives beneath it. This one was left standing on its own in an alpine pasture at around 940 metres on Monte Bondone, and it grew the other way, low and broad, until Italy's national register recorded its girth at 465 centimetres on sheet 08/L378/TN/22.\n\nThe meadow belongs to Malga Brigolina, a working mountain dairy at 990 metres that feeds walkers from early June to late September. The beech stands out in the grass below it with nothing around it, which is why it reads as architecture rather than as forestry.\n\nNobody has published an age. Italy's register carries girth, height and altitude and has no age column at all, and local accounts get no further than secolare, centuries old, so the field here is left empty rather than guessed at. If you know the number, or know who measured it, tell us.\n\nThe bus up the Monte Bondone road stops at Candriai, and a waymarked path called the Giro della Selva leaves the village near the football pitch and reaches the malga in about fifteen minutes, level and shaded most of the way. The pin is the register's, so expect the meadow rather than an exact spot.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the beech turns copper and the pasture around it goes brown"
+      },
+      "verified_sources": [
+        "MASAF national monumental trees register, sheet 08/L378/TN/22 (girth 465 cm, alpine pasture at Malga Brigolina)",
+        "https://www.outdooractive.com/it/accommodation/trento-monte-bondone-valle-dell-adige/malga-brigolina/1690095/ (malga at 46.057032, 11.060026, 990 m, open early June to late September, reached from Sopramonte before Candriai)",
+        "https://www.visittrentino.info/it/guida/tour/candriai-malga-brigolina_tour_807682114 (the Candriai to Malga Brigolina walk)"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Pin is the register coordinate, roughly 330 m north-east of the malga building, so it is the meadow rather than the trunk: location_precision approximate. Age deliberately empty, Italy's national register has no age column and no source publishes one. Flagged because the girth comes from the register alone and the tourism sources describe the tree only as secolare. Access verdict 2026-08-14: open alpine pasture on Monte Bondone, nobody's home and no permission needed, so the tree clears hard rule 10; what held it back until now was a transport line, and bus B202 plus the Giro della Selva path supplies one."
     }
   ]
 }
