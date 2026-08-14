@@ -3,10 +3,10 @@
   "country": "Italy",
   "status": "needs_curation",
   "intro": "Four of Trento's registered trees stand within 900 metres of the station, which means you can be under the oldest of them two minutes after stepping off a train. That one is a plane planted in 1835, recognised as the city's oldest only in 2024. The others spread out: an elm that survived the disease which killed most of Europe's mature elms, a cedar planted the year Italy was founded, and a sweet chestnut up at Sardagna, reached by cable car.",
-  "meta_description": "Seven monumental trees in Trento, four within 900 metres of the station: a plane from 1835, a surviving elm, and a chestnut reached by cable car.",
+  "meta_description": "Eight monumental trees in Trento, four within 900 metres of the station: a plane from 1835, a surviving elm, and a chestnut reached by cable car.",
   "question_meta": "Trento's oldest tree is the plane of Via Santa Croce, planted in 1835 and confirmed as the city's oldest in 2024. Where it stands, plus six more.",
   "question_answer": "Trento's oldest tree is the London plane in the public garden on Via Santa Croce, planted in 1835 and reported by three separate press pieces in 2024 as the oldest in the city, which is when the recognition became official rather than local knowledge. It stands in a free public garden a few minutes from the station. Italy's national register carries no age field, so the 1835 date comes from the city's own records rather than from the register.",
-  "question_context": "Trento's registered trees are documented by the comune itself, which publishes a directory of its public gardens naming several of them, and by local press that covered the city's oldest tree when it was formally recognised in 2024. Italy's national register underlies all of it and carries girth, height and a position but no age column, so the 1835 planting date for the Via Santa Croce plane comes from the city's records and not from the register, and trees without such a record appear here with no age rather than a guess. The seven divide into a walk and two separate outings: four stand within nine hundred metres of the station, one is out at Parco Gocciadoro, and one is up the mountain at Sardagna, reached by cable car, where the pin marks the locality rather than the trunk because the grove is known and the individual tree is not. Six further register entries are not published here, and each has a reason: a sequoia now inside a convent school, a cedar on school grounds, a cypress ensemble, and three plane avenues that fail the test of having a single place to stand.",
+  "question_context": "Trento's registered trees are documented by the comune itself, which publishes a directory of its public gardens naming several of them, and by local press that covered the city's oldest tree when it was formally recognised in 2024. Italy's national register underlies all of it and carries girth, height and a position but no age column, so the 1835 planting date for the Via Santa Croce plane comes from the city's records and not from the register, and trees without such a record appear here with no age rather than a guess. The eight divide into one walk and three outings: four stand within nine hundred metres of the station, one is out at Parco Gocciadoro, one is up the mountain at Sardagna, reached by cable car, where the pin marks the locality rather than the trunk because the grove is known and the individual tree is not, and one is a bus ride north in the hillside hamlet of Cortesano. Six register entries are deliberately left off this page: a sequoia now inside a convent school, a cedar on school grounds, a cypress ensemble, and three plane avenues that fail the test of having a single place to stand.",
   "faq": [
     {
       "q": "What is the oldest tree in Trento?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Trento's monumental trees free to visit?",
-      "a": "Yes, all of them stand in public gardens, streets or parks with no entry fee. The Sardagna chestnut is reached by the cable car up from the city, which is a paid ride."
+      "a": "Yes, all of them stand in public gardens, streets or parks with no entry fee. Two need more than your feet: the Sardagna chestnut is reached by the cable car up from the city, which is a paid ride, and the Cortesano hackberry is a twenty-five minute bus ride north."
     },
     {
       "q": "How many can I see in one walk?",
@@ -237,6 +237,36 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "tre_008",
+      "name": "The Hackberry of Cortesano",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Salita ai Spiazzi, Cortesano, Trento",
+        "latitude": 46.123886,
+        "longitude": 11.134117,
+        "neighbourhood": "Cortesano"
+      },
+      "story": "Most hackberries with a trunk this thick are twice as tall. This one measures 410 centimetres around and stops at ten metres, an odd shape for Celtis australis, a species that normally runs to twenty-odd metres of straight grey trunk under a high rounded dome. Cortesano sits 570 metres up, nearly four hundred metres above the centre of Trento, and what grows well on that hillside is not what grows well down in the Adige valley.\n\nIt stands on the Salita ai Spiazzi, the lane climbing through the hamlet, near the church of Sant'Antonio. It is one of the eighteen trees Trento formally recognised as monumental in 2024, when the comune finished its list and entered thirteen of them on the national register, and it is the only one of the eighteen this far out of town.\n\nNobody has published an age for it. Italy's register carries girth, height and altitude and no age column at all, and the press coverage that named this tree named a place rather than a date, so the field is left blank instead of guessed at. Only one report puts it precisely, at the church, which is why the entry is flagged.\n\nGetting there is a bus rather than a walk: line 3 out of the centre, about twenty-five minutes up the hillside, then a short climb. What you get for it is a hamlet, a church, and a tree built like a barrel.",
+      "verified_sources": [
+        "MASAF national monumental trees register, sheet 11/L378/TN/22",
+        "https://www.iltquotidiano.it/articoli/a-trento-ci-sono-18-alberi-monumentali-il-piu-vecchio-e-il-platano-di-via-santa-croce-messo-a-dimora-nel-1835/"
+      ],
+      "access": "Free, on a public street (Salita ai Spiazzi) near the church of Sant'Antonio in the Cortesano hamlet",
+      "transport": "Trentino Trasporti bus line 3 from central Trento to Cortesano, about 24 minutes, then a short walk",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Age deliberately empty: no source publishes one, and Italy's national register has no age field. Flagged because only one press source (Il T Quotidiano) places the tree precisely, at the church of Sant'Antonio, and no second physical description or photograph was found."
     }
   ]
 }
