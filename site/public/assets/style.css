@@ -874,3 +874,8 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 .tree-bar:not(.walk-bar) .tb-secondary { background: none; border: none; color: #fff; }
 .tree-bar:not(.walk-bar) .tb-secondary:hover { background: rgba(255,255,255,0.13); }
 main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
+
+/* Zero-query dropdown rows: the "Trees near me" action reads as an action,
+   not as another place (2026-08-14). */
+.ats-near b::before { content: "\27A4"; display: inline-block; margin-right: 0.45rem;
+  color: var(--moss); transform: rotate(-45deg); font-size: 12px; }

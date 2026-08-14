@@ -149,10 +149,18 @@ var map = new maplibregl.Map({
 map.addControl(new maplibregl.NavigationControl());
 new ResizeObserver(function() { map.resize(); }).observe(document.getElementById('map'));
 // Location is asked HERE, in map context, never on the homepage.
-map.addControl(new maplibregl.GeolocateControl({
+var _geo = new maplibregl.GeolocateControl({
   positionOptions: { enableHighAccuracy: true },
   showUserLocation: true, fitBoundsOptions: { maxZoom: 13.5 }
-}));
+});
+map.addControl(_geo);
+// Arriving from the search field's "Trees near me" row (#near) triggers the
+// locate control once the map is ready, so that row does what it says
+// instead of merely opening the map. The permission prompt still belongs to
+// the browser and only appears because the visitor asked for it.
+if (location.hash === '#near') {
+  map.once('load', function() { setTimeout(function() { _geo.trigger(); }, 300); });
+}
 // Open where the visitor is, without asking for anything (Hidde,
 // 2026-07-30). The browser's own timezone gives a region for free: no
 // permission prompt, no IP lookup, no third-party service, nothing stored.
