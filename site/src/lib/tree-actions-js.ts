@@ -33,6 +33,10 @@ export const TREE_ACTIONS_JS = `
     else {
       map[b.dataset.tree] = { n: b.dataset.name, u: location.pathname };
       try { at.track('save'); } catch (err) {}
+      // The moment after a save is the funnel (AllTrails pushes its signup
+      // here; until accounts open, the app page is the honest destination).
+      var fun = document.querySelector('.save-funnel');
+      if (fun) fun.hidden = false;
     }
     try { localStorage.setItem(KEY, JSON.stringify(map)); } catch (err) {}
     paint(map);

@@ -754,9 +754,15 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
   .action-row.desktop-only { display: none; }
 }
 .chip-save { font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 0.35rem;
   padding: 0.3rem 0.75rem; border: 1.5px solid var(--cream-dark); border-radius: 999px;
   background: #fff; color: var(--ink); }
+.chip-save .heart { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2; }
 .chip-save[aria-pressed="true"] { border-color: var(--moss); color: var(--moss); }
+.chip-save[aria-pressed="true"] .heart { fill: var(--moss); stroke: var(--moss); }
+.save-funnel { display: block; width: 100%; font-size: 13px; color: var(--ink-light); margin-top: 0.4rem; }
+.save-funnel a { color: var(--moss); }
+.save-funnel[hidden] { display: none; }
 .app-pitch { margin: 2.2rem 0 1.2rem; padding: 1.2rem 1.3rem; background: var(--cream);
   border-radius: 14px; }
 .app-pitch strong { display: block; margin-bottom: 0.3rem; }
