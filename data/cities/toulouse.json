@@ -2,9 +2,9 @@
   "city": "Toulouse",
   "country": "France",
   "status": "needs_curation",
-  "intro": "Toulouse's remarkable trees do not gather in one place, so this page holds three loose clusters rather than a route. Four stand along the corridor from the Jardin des Plantes through the Grand Rond to Place Saint-Georges. Two more sit across the river in Saint-Cyprien. The last is out at the Terre-Cabade cemetery, and it is the only one a newspaper has ever written about.",
-  "meta_description": "Eight remarkable trees in Toulouse, from the Jardin des Plantes to a cemetery cedar: the city's own register, and one tree the press has covered.",
-  "question_meta": "Toulouse's best documented tree is the Grieving Hackberry of Terre-Cabade, the only one the press has covered. Where it stands, plus seven more.",
+  "intro": "Toulouse's remarkable trees do not gather in one place, so this page holds several loose clusters rather than a route. Four stand along the corridor from the Jardin des Plantes through the Grand Rond to Place Saint-Georges. Two more sit across the river in Saint-Cyprien. One is out at the Terre-Cabade cemetery, and it is the only one a newspaper has ever written about. The last two stand northeast of the centre in Bonnefoy and Soupetard, about a kilometre and a half apart, each a solitary street tree rather than part of a cluster.",
+  "meta_description": "Ten remarkable trees in Toulouse, from the Jardin des Plantes to a cemetery cedar: the city's own register, and one tree the press has covered.",
+  "question_meta": "Toulouse's best documented tree is the Grieving Hackberry of Terre-Cabade, the only one the press has covered. Where it stands, plus nine more.",
   "question_answer": "Toulouse's best documented remarkable tree is the Grieving Hackberry of Terre-Cabade, the single entry on this page that an independent source has written about, in a France 3 regional survey of 2025 whose description matches the city register's coordinate to within forty-five metres. It stands about 1.6 kilometres east of the centre in a free public cemetery. Which tree is actually the oldest in Toulouse is not known and this page does not guess: the city's own register records no age for any of its remarkable trees, so where no age exists none is given.",
   "question_context": "Toulouse publishes its entire urban tree inventory, over a hundred and twenty thousand trees, and flags a small number as remarkable. Only that flagged subset is used here. What it gives is genus, species, a development stage and a coordinate, and what it does not give is an age, a girth or a height, which is why almost every tree on this page carries no measurement at all. Nine candidates from the same subset are absent and the reason matters: two reverse-geocode onto public school grounds and seven onto private residential addresses, and a tree behind a gate is not one a visitor can go and see. Three more near the Rue de Tunis may sit inside a garden that is currently closed to the public, and they are recorded as unresolved rather than published or dismissed. One caution shapes all of it: a flag in a municipal inventory is an administrative decision, not a measurement. Where a second source exists it is named in that tree's own story, and where none does, the story says the register is all there is.",
   "faq": [
@@ -18,7 +18,7 @@
     },
     {
       "q": "Can I see them in one walk?",
-      "a": "Not all eight. Four sit along the Jardin des Plantes and Grand Rond corridor within about a kilometre; two are across the river in Saint-Cyprien and one is out at the cemetery."
+      "a": "Not all ten. Four sit along the Jardin des Plantes and Grand Rond corridor within about a kilometre; two are across the river in Saint-Cyprien, one is out at the cemetery, and two more stand alone northeast of the centre in Bonnefoy and Soupetard."
     }
   ],
   "hero_tree_id": "tls_005",
@@ -241,6 +241,69 @@
       ],
       "access": "Free, appears to be a public sports-ground/park area (Fer a Cheval, Saint-Cyprien); not independently confirmed this pass",
       "transport": "Saint-Cyprien district, left bank of the Garonne; nearest metro/tram stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tls_009",
+      "name": "The Hackberry of Eglise Saint-Sylve",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Eglise Saint-Sylve, Rue Calvet, La Colonne / Faubourg Bonnefoy",
+        "latitude": 43.61048249278908,
+        "longitude": 1.4601028382179884,
+        "neighbourhood": "La Colonne / Faubourg Bonnefoy"
+      },
+      "story": "Toulouse's tree inventory files this one as libre, free grown, and that word is worth more than it looks. A municipal inventory is mostly trees cut to fit something: a pavement width, a facade line, a run of overhead cable. This hackberry has been left alone, so it carries the shape the species makes on its own, a broad rounded dome of dense leaf on a smooth grey trunk that stays smooth for decades. The register also puts it at the mature stage, a step further along than the hackberry on Place Saint-Georges, though still not the oldest category the city uses. That is the entire biography. Toulouse's remarkable tree list is the only source that names it, and the list carries no age, no girth and no measurement of any kind, which is true of nearly every tree on this page. Nobody local appears to have written the tree up at all. It stands at Eglise Saint-Sylve on Rue Calvet, out in the Faubourg Bonnefoy northeast of the centre, on the open ground in front of the church rather than inside an enclosed yard, which is the usual reason a tree in a dense city gets to keep its years: the soil around it was never wanted for anything else. Free, open, and a separate errand rather than a stop on the Jardin des Plantes walk.",
+      "verified_sources": [
+        "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 129620, remarkable_label_source: Ville de Toulouse, fetched 2026-08-13)"
+      ],
+      "access": "Free, public. Stands at the Eglise Saint-Sylve on Rue Calvet; register coordinate sits at the edge of the church building itself, consistent with the church forecourt/approach rather than an enclosed courtyard. Same churchyard-default pattern as other Toulouse church-ground trees on this site.",
+      "transport": "La Colonne / Faubourg Bonnefoy district, north-east of the centre; nearest metro/tram stop not verified this pass",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tls_010",
+      "name": "The Lime of Rue de la Solidarite",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Rue de la Solidarite, Soupetard",
+        "latitude": 43.60736034502146,
+        "longitude": 1.4780584221670117,
+        "neighbourhood": "Soupetard"
+      },
+      "story": "For about a fortnight in June this lime does something no other tree on the street can: it fills the air. Tilia platyphyllos carries small yellow green flowers among the most heavily scented in the European flora, loud with bees for the whole of that fortnight, and those same flowers are picked and dried into tilleul, the infusion in every French pharmacy cupboard. The rest of the year it is a large tree on a quiet road. This one holds a stretch of Soupetard, a residential district about 2.8 kilometres northeast of the Capitole, and it is on Toulouse's own list of remarkable trees. That list is also the only source for it. No age, no girth, no measurement, nothing published anywhere else, which is the standard state of affairs for the trees on this page. What the register does add is that the tree sits at its adult stage and is semi free in form, meaning somebody pruned it at some point and then let it be, which is the ordinary life of anything growing at the kerb of a working street. It stands on the roadway itself, roughly seventy metres from the primary school at number 37, on public pavement you can walk up to at any hour. Go in June. Out of season this is a good tree on a plain street, a long way from everything else on the list.",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when it flowers and the pavement under it smells of lime"
+      },
+      "verified_sources": [
+        "https://data.toulouse-metropole.fr/explore/dataset/arbres-urbains/ (id 40105, remarkable_label_source: Ville de Toulouse, fetched 2026-08-13)"
+      ],
+      "access": "Free, public street tree on Rue de la Solidarite, Soupetard. Register coordinate reverse-geocodes to a street-furniture point (waste basket) directly on the road, about 70 metres from the nearest school entrance (Ecole elementaire publique Soupetard, 37 Rue de la Solidarite) rather than on the school's own grounds, so this is ordinary public street frontage, not a school-access case.",
+      "transport": "Soupetard district, about 2.8km north-east of the centre; nearest metro/tram stop not verified this pass",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {

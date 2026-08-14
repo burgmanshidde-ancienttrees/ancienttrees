@@ -1339,6 +1339,33 @@
     "note": "Verified stg_010 Parasol Pine (Scots Pine), Parc de l Orangerie, register-sourced/flagged, closes Strasbourg gap to 10",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "como",
+    "kind": "write",
+    "tokens": 24000,
+    "trees": 2,
+    "note": "Batched 5-tree write pass across 3 cities; register-only trees, both flagged, no age in either source, one best_time set from existing species phenology",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "toulouse",
+    "kind": "write",
+    "tokens": 24000,
+    "trees": 2,
+    "note": "Same batch; single-source city-register trees, prose states the single-sourcing, one best_time (lime flowering)",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "strasbourg",
+    "kind": "write",
+    "tokens": 12000,
+    "trees": 1,
+    "note": "Same batch; single-source register pine, no best_time (evergreen), ties into the existing Orangerie beech and thuja walk",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
