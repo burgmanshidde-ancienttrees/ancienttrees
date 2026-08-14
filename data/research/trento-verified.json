@@ -1,0 +1,25 @@
+[
+  {
+    "id": "tre_008",
+    "name": "The Hackberry of Cortesano",
+    "species": "Mediterranean Hackberry (Celtis australis)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Salita ai Spiazzi, Cortesano, Trento",
+      "latitude": 46.123886,
+      "longitude": 11.134117,
+      "neighbourhood": "Cortesano"
+    },
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 11/L378/TN/22",
+      "https://www.iltquotidiano.it/articoli/a-trento-ci-sono-18-alberi-monumentali-il-piu-vecchio-e-il-platano-di-via-santa-croce-messo-a-dimora-nel-1835/"
+    ],
+    "access": "Free, on a public street (Salita ai Spiazzi) near the church of Sant'Antonio in the Cortesano hamlet",
+    "transport": "Trentino Trasporti bus line 3 from central Trento to Cortesano, about 24 minutes, then a short walk",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Girth 410cm, height 10m, altitude 570m per the MASAF register (sheet 11/L378/TN/22, locality 'Cortesano - Salita ai Spiazzi'). One of Trento's 18 officially designated monumental trees (declared 2024, per municipal/MUSE survey covered by ANSA, il Dolomiti, Il T Quotidiano etc. 2026-03-11). Il T Quotidiano's article places it specifically 'a Cortesano vicino alla chiesa di Sant'Antonio' (at Cortesano, near the church of Sant'Antonio), which independently corroborates the register's street-level locality and confirms it stands on public ground rather than private grounds, unlike several other candidates checked this pass. No source gives a planting date or age estimate; leave age empty rather than invent one. Cortesano is a hillside hamlet about 6.7km/6.2km road-distance from central Trento (per rome2rio and italiamappata.it), reachable by city bus line 3 in about 24 minutes, so it clears the roughly-30-minute day-trip boundary. This is a standalone hillside tree, not part of the existing 3.8km city-centre walk (same pattern as the already-published Chestnut of Sardagna, tre_007). Flagged because only one press source names the precise site (no independent photo or second physical description found this pass) and no age is documented."
+  }
+]

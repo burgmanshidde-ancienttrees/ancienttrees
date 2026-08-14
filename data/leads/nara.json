@@ -10,15 +10,15 @@
       "lat": null,
       "lng": null,
       "status": "lead",
-      "why": "3.95m girth and 30m, the tallest tree in the official Nara Park giant-tree course, believed to mark the milestone on the Kyoto road that begins at Todai-ji's Tegai-mon. Age explicitly not recorded, single official source, and no coordinate exists for the West Gate ruins in any gazetteer. Needs a pin before it can ship."
+      "why": "3.95m girth and 30m, the tallest tree in the official Nara Park giant-tree course, believed to mark the milestone on the Kyoto road that begins at Todai-ji's Tegai-mon. Age explicitly not recorded, single official source, and no coordinate exists for the West Gate ruins in any gazetteer. Needs a pin before it can ship. CHECKED AGAIN 2026-08-14 (verify pass): confirmed the source is the Ministry of the Environment's own giant-tree database (kyoju.biodic.go.jp, both the illustrated English course PDF at kyoju.biodic.go.jp/files/course/001/guide_narakouen_en.pdf and the Japanese course page, _command=modelCourse001), an official government register, so it counts as one source. Could NOT find an independent second source: several WebSearch summaries claimed a prefectural natural monument designation, but a direct fetch of Nara City's own designated-monument list (city.nara.lg.jp/site/bunkazai/2460.html) does NOT include this tree, so that designation claim does not hold up and must not be repeated. No blog, society survey (checked kyoboku.jp's Nara Park page) or second register turned it up. The historical Todaiji West Gate ruin site itself has a documented address (406-1 Zoshi-cho, same as the temple generally) but no tree-level coordinate. Still needs: one more independent source for existence/species, and a coordinate (satellite/aerial identification of the ruin mound, which the government PDF's course map places just west of Todaiji-nandaimon Gate near Mitoriiike pond, between Isuien Garden and the Nara Prefectural Museum)."
     },
     {
-      "name": "Roben-sugi at Nigatsu-do",
+      "name": "Roben-sugi at Nigatsu-do [RESOLVED 2026-08-14, delivered as nra_010]",
       "species": "Cryptomeria japonica",
       "lat": 34.6892513,
       "lng": 135.8439422,
-      "status": "lead",
-      "why": "Superb legend: the infant Roben was said to have been carried off by an eagle and left in its branches, and Todai-ji's founding abbot was reunited with his mother beneath it. But the original fell to a typhoon in 1961 and the present tree is a successor, roughly 60 years old. Includable only on the Kyoto Gion-cherry precedent, and only if the entry says plainly it is a replanting. Good open photos exist."
+      "status": "resolved",
+      "why": "Superb legend: the infant Roben was said to have been carried off by an eagle and left in its branches, and Todai-ji's founding abbot was reunited with his mother beneath it. Confirmed 2026-08-14 across four independent sources (jinja-tera-gosyuin-meguri.com, naratrip.com, gururinkansai.com, data.japanmystery.com): the original tree lived roughly 600 years and stood ~21.2m before the Second Muroto Typhoon destroyed it on 16 September 1961; sources disagree on the exact generation count since (third vs fourth planting) but agree the present tree is a replanting roughly six decades old. Delivered to data/research/nara-verified.json as nra_010, location_precision approximate (shrine-level: below the Nigatsu-do slope, north of Kojo Shrine), story must say plainly it is a replanting."
     },
     {
       "name": "Wakamiya Great Camphor, Kasuga Taisha",
@@ -26,7 +26,7 @@
       "lat": 34.680262,
       "lng": 135.848781,
       "status": "lead",
-      "why": "Legend says Empress Jingu planted it. Sources contradict badly on size: 12.46m girth and 24m in one record against '8m+, 7m tall, three trees planted together' in another, which is not a rounding difference. No official register lists it, and the one open photo fails the card crop with stone lanterns filling the centre."
+      "why": "Legend says Empress Jingu planted it. Sources contradict badly on size: 12.46m girth and 24m in one record against '8m+, 7m tall, three trees planted together' in another, which is not a rounding difference. No official register lists it, and the one open photo fails the card crop with stone lanterns filling the centre. CHECKED AGAIN 2026-08-14 (verify pass): a WebSearch summary surfaced a THIRD figure, 11.46m girth and 24m height, calling it 'one of the top 1-2 largest trees in Nara Prefecture' and giving the alternate name 'Chitose Kusu' (千歳楠); could not trace this to a specific fetchable page to confirm it independently, and it does not resolve the existing conflict, it deepens it (three different girths now: 12.46m, 11.46m, and 8m+). Also confirmed via direct fetch of narashikanko.or.jp and kasugataisha.or.jp/en pages that the well-documented '8.7m girth, 25m, 800-1000 years' figure circulating in search results belongs to the Great Cedar (Shato-no-Ohsugi, already published as nra_002), not this camphor; that mix-up is why the size kept looking resolvable and wasn't. Do not ship until a single fetchable, citable source can be pinned down for one girth figure; this is now a three-way conflict, not two-way."
     },
     {
       "name": "Great Zelkova of Kasuga",
