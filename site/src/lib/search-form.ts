@@ -78,9 +78,57 @@ export const SEARCH_WIDGET_JS = `
   }
 
   function hide() { drop.hidden = true; active = -1; }
+
+  // The zero-query state: what the dropdown shows the moment the field is
+  // focused and still empty (Hidde, 2026-08-14, asking whether it is
+  // conventional; it is). Google Maps, Airbnb, AllTrails and Booking all do
+  // this, for the same reason it matters here: an empty field asks the
+  // visitor to already know what we hold, and nobody arriving knows we have
+  // Cadiz. Order is theirs too: what you looked at last, then where you are,
+  // then somewhere to start.
+  var RECENT = 'at_recent_v1';
+  function recents() {
+    try { return (JSON.parse(localStorage.getItem(RECENT)) || []).slice(0, 3); } catch (e) { return []; }
+  }
+  function remember(name, sub, url) {
+    try {
+      var list = (JSON.parse(localStorage.getItem(RECENT)) || []).filter(function(r) { return r.u !== url; });
+      list.unshift({ n: name, s: sub, u: url });
+      localStorage.setItem(RECENT, JSON.stringify(list.slice(0, 5)));
+    } catch (e) {}
+  }
+  function row(name, sub, url, cls) {
+    return '<a class="ats-row' + (cls ? ' ' + cls : '') + '" href="' + url + '">' +
+           '<b>' + escT(name) + '</b><span>' + sub + '</span></a>';
+  }
+  function showEmpty() {
+    load();
+    if (!IDX) return;
+    var html = '';
+    var rec = recents();
+    if (rec.length) {
+      html += '<div class="ats-head">Recent</div>';
+      html += rec.map(function(r) { return row(r.n, escT(r.s || ''), r.u); }).join('');
+    }
+    html += '<div class="ats-head">Near you</div>' +
+            row('Trees near me', 'open the map at your location', '/explore#near', 'ats-near');
+    // "Start here" rather than "Popular": we cannot see what is popular from
+    // the browser, and the deepest pages are an honest proxy for the best
+    // afternoon. Sorted by tree count, so it maintains itself.
+    var top = IDX.c.slice().sort(function(a, b) { return b.n - a.n; }).slice(0, 5);
+    html += '<div class="ats-head">Start here</div>';
+    html += top.map(function(c) {
+      return row(c.city, c.n + ' trees &middot; ' + escT(c.country), '/' + c.u);
+    }).join('');
+    drop.innerHTML = html;
+    drop.hidden = false;
+    rows = Array.prototype.slice.call(drop.querySelectorAll('.ats-row'));
+    active = -1;
+  }
+
   function show() {
     var q = norm(input.value.trim());
-    if (!q) { hide(); return; }
+    if (!q) { showEmpty(); return; }
     load();
     if (!IDX) return;
     var res = results(q);
@@ -112,6 +160,12 @@ export const SEARCH_WIDGET_JS = `
     }
     drop.hidden = false;
     rows = Array.prototype.slice.call(drop.querySelectorAll('.ats-row'));
+    rows.forEach(function(a) {
+      a.addEventListener('click', function() {
+        var b = a.querySelector('b'), sp = a.querySelector('span');
+        remember(b ? b.textContent : '', sp ? sp.textContent : '', a.getAttribute('href'));
+      });
+    });
   }
   function go(row) {
     at.track('search-' + ctx, norm(input.value.trim()).slice(0, 60));
