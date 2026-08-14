@@ -1,0 +1,56 @@
+{
+ "leads": [
+  {
+   "register_id": 300,
+   "species": "Ficus macrophylla",
+   "reason": "Part of the same ~25m-wide unnamed 4-tree cluster as shipped ali_006/ali_007 (register_ids 301, 303). Kept as a lead rather than a fifth entry to avoid fragmenting one small grove into too many near-identical collectible points; smallest girth of the four (6.43m)."
+  },
+  {
+   "register_id": 302,
+   "species": "Ficus macrophylla",
+   "reason": "Same 4-tree cluster as 300/301/303 (see above); smallest crown of the four (19m). Left in leads for the same reason as 300."
+  },
+  {
+   "register_ids": [3089, 3090, 3091, 3092, 921],
+   "species": "Ulmus minor",
+   "reason": "Five old elms registered in the Plaza Gabriel Miro area. Local press (todoalicante.es, 2025-09-01, 'Alicante revisara todos los arboles monumentales tras la caida de un olmo centenario en Gabriel Miro') confirms one of exactly five old elms in this plaza broke and fell at the Gabriel Miro/San Fernando corner in September 2025, triggering a citywide review of monumental trees. The register data alone gives no way to identify which of these five specific coordinates is the one that fell; shipping any of them risks publishing a dead tree as alive. Hold all five until a street-level check, a photo, or a follow-up news source identifies which four are still standing."
+  },
+  {
+   "register_ids": [853, 614, 3070, 3071, 3095, 3073, 3074, 3075, 3076, 3077, 3078, 3079, 3080, 3081, 3082, 3083, 3084, 3072],
+   "species": "Ficus microcarpa / Ficus macrophylla / Grevillea robusta",
+   "reason": "A long row of individually registered figs (and two Grevillea robusta) strung along roughly 150-300m of Passeig de Canalejas continuing toward Portal de Elche, beyond the compact core already shipped. Reads as a continuous avenue rather than individual collectible points (see the ensemble rule); the one individually named, most distinctive specimen from this stretch (register_id 507, 'Ficus del Passeig de Canalejas') already shipped as ali_005. Exact street addresses and public/private status of the far end (toward Portal de Elche) were not individually confirmed within this pass's time budget."
+  },
+  {
+   "register_ids": [3087, 3085, 3086],
+   "species": "Olea europaea",
+   "reason": "Three olives clustered about 0.9km from centre. No secondary source found identifying the exact plaza/street or confirming public access within this pass's time budget."
+  },
+  {
+   "register_id": 3088,
+   "species": "Euphorbia ledienii",
+   "reason": "A tree-like succulent (candelabra spurge), unusual for this register. Exact address and public access not confirmed within this pass's time budget; also worth a second look at whether this reads as a collectible 'tree' for the product."
+  },
+  {
+   "register_ids": [3096, 3097, 3098, 3099],
+   "species": "Ficus macrophylla",
+   "reason": "Registered under 'Proteccion Generica' rather than 'Arbol Monumental de Interes Local'. The register's own caveat (data/registers/valencia-arboles-monumentales.json) states Proteccion Generica applies automatically to any qualifying tree regardless of ownership and includes private trees that cannot be distinguished from public ones without a per-tree check, which this pass did not have time to do."
+  },
+  {
+   "register_id": 945,
+   "species": "Ficus microcarpa",
+   "reason": "1.38km from centre, address not individually confirmed within this pass's time budget."
+  },
+  {
+   "register_id": 964,
+   "name": "Ficus de Benalua",
+   "species": "Ficus macrophylla",
+   "reason": "The largest-girth tree in the whole candidate set (14.69m) and individually named in the register, but secondary sources (benaluense.es) place it at or beside the Centro de Salud (health centre) of Benalua, which may be institutional/restricted grounds rather than genuinely open public ground. Needs a street-level or access-specific check before it can clear hard rule 10; too promising to block outright, so held as a lead for the next pass."
+  },
+  {
+   "register_ids": [1789, 3094],
+   "species": "Bougainvillea glabra",
+   "reason": "4.4km from centre, well outside this pass's ~2km cluster radius, and a climbing shrub/vine rather than a tree in the usual collectible sense. Left for a possible future second cluster or reconsideration of whether it fits the product at all."
+  }
+ ],
+ "blocked": []
+}
