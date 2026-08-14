@@ -13,6 +13,70 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-08-14
+
+Reviewed since the last review commit (`9e8f6f8`, 2026-08-13 09:53 UTC): a
+large batch (~120 commits, roughly a day of night-run plus session work)
+covering Catania opening, Como/Toulouse/Strasbourg reaching target, the
+AllTrails-shaped action capsule and sign-in funnel, Worth the Visit voting,
+species/country/park page gaps closing, and accounts opening. Spot-checked
+the built site (`site/dist`): catania/como/toulouse/strasbourg pages, the
+tree-page capsule and sign-in dialog, account.html, saved.html, index.html,
+plus a site-wide sweep for em dashes, banned words and builder-speak (all
+clean). Tree data for the four changed/new cities (27 trees) all carry
+honest `location_precision: confirmed` and flagged, sourced hedges in the
+prose (e.g. Catania's two bunya pines openly disagree with each other's
+register height figures). No public vote counts render for Worth the Visit,
+matching the 2026-08-14 DECISIONS.md ruling.
+
+**WARN, FOR HIDDE** — Accounts opened in production today (`ca303c5`,
+"Accounts open: the saves table SQL, cloud sync for hearts, and the one
+sign-in surface", authored as a real Hidde ruling in session, "just build
+it - we're continuing with this product") but CLAUDE.md's own text was not
+updated in the same commit, unlike every other hard-list exception this
+project has made carefully before (compare `b432ac6`, hard rule 10, which
+updated CLAUDE.md and DECISIONS.md together same commit). Two places are now
+stale: hard rule 1 still reads "No accounts, logins, or storage of personal
+data... the one item Hidde waved off and it stayed closed anyway... A
+waitlist form that posts to Hidde is fine. A user table is not" — but
+`supabase/saves.sql` (added today) is exactly a user table, and sign-in is
+now linked from the nav of every page. And "Where this is going" still says
+the account page "stays an unlinked, noindexed prototype (AUTH_ENABLED
+False) until account deletion works end-to-end: that is the gate Hidde set"
+— but `/account` is now linked from the header nav on every page and the
+tree-page capsule's first save opens the sign-in dialog, ahead of Hidde's
+own admission in `LOG.md` that the delete loop is still unproven ("FOR
+HIDDE, the last two minutes: paste supabase/saves.sql... delete your test
+account afterwards to prove the whole loop"). DECISIONS.md carries no
+primary entry recording the ruling itself, only two tangential 2026-08-14
+entries about the AllTrails funnel that mention accounts opening in passing.
+This is a real, considered exception, not a run overstepping (same shape as
+the 2026-08-10 outreach-mail finding and the 2026-08-12 Porto-photo
+finding, both flagged WARN/FOR HIDDE here), but it is now the third time
+this exact shape has recurred: a genuine hard-list exception shipped without
+CLAUDE.md's rule text or a DECISIONS.md entry updated in the same commit.
+Per this project's own ratchet ("a lesson that appears on two different days
+becomes a build check"), this has appeared three times and still has no
+mechanism, only three individual notes.
+
+**WARN** — `site/src/pages/account.astro:57`, the signed-in state's own
+copy ("Your collected trees are saved on this device. The app brings them
+to all your devices.") is now factually wrong and self-contradicting within
+the site: as of the same-day `ca303c5`, saved trees for a signed-in user
+sync to Supabase and follow the account across devices with no app
+involved, which is the entire point of today's build ("hearts sync to the
+cloud as a union whenever a session exists... /saved merges device and
+account"). `site/src/pages/saved.astro:53` was correctly updated the same
+day ("Signed in: these follow your account to any device."), so the two
+pages now tell a signed-in visitor opposite things about the one fact that
+matters most on an account page: what happens to their data. `account.astro`
+was not touched by `ca303c5` at all. A visitor who signs in specifically to
+stop losing their collection (the passport-loss problem PRINCIPLES.md #12
+and CLAUDE.md's "Where this is going" describe) is told on the account page
+itself that this still requires an app that does not exist.
+
+---
+
 ## 2026-08-13
 
 Reviewed the last 24 hours: Portland goes live (10 heritage trees), Hobart
