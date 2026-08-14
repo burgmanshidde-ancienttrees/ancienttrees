@@ -1,0 +1,35 @@
+---
+// The one sign-in surface (Hidde, 2026-08-14, from AllTrails' modal: "will
+// you also make a page like this whenever you use loginned features"). Every
+// signed-in feature opens THIS dialog where the visitor stands, instead of
+// navigating away: AllTrails converges save, send-to-phone and open-in-app on
+// one modal, and this is ours. Offered in our honest order: one email for a
+// magic link (our equivalent of their Google one-tap), the account page as
+// More options, the app as the dark button.
+//
+// Open it from any script with atOpenSignIn(), or any element carrying
+// data-signin. The email flow happens inline (same OTP endpoint the account
+// page uses) and the magic link returns to the CURRENT page; signin-js.ts
+// parses the token hash on every page that includes this component, so
+// logging in never loses the visitor's place.
+---
+<dialog id="signin-dialog" class="collect-dialog signin-dialog">
+  <button type="button" class="signin-close" id="signin-close" aria-label="Close">&#10005;</button>
+  <p class="signin-mark" aria-hidden="true">&#127795;</p>
+  <div id="signin-ask">
+    <h3>Keep your trees on every device</h3>
+    <p>One free account, one email, no password. Your saved trees follow you everywhere.</p>
+    <form id="signin-form" class="signin-form" autocomplete="email">
+      <input type="email" id="signin-email" placeholder="you@example.com" aria-label="Email address" required>
+      <button type="submit" class="go-btn">Email me a sign-in link</button>
+    </form>
+    <a class="go-btn ghost signin-more" href="/account">More options</a>
+    <p class="signin-or">or</p>
+    <a class="go-btn signin-app" href="/app">Get the app</a>
+    <p class="signin-fine">We store only your email address, for sign-in links and nothing else. <a href="/privacy">Privacy</a></p>
+  </div>
+  <div id="signin-sent" hidden>
+    <h3>Check your inbox</h3>
+    <p>We sent a sign-in link to <strong id="signin-sent-to"></strong>. It works once, expires in 15 minutes, and brings you straight back here.</p>
+  </div>
+</dialog>

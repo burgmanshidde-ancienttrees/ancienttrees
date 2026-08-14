@@ -12,6 +12,8 @@ import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/sch
 import { fitTitle } from "../../lib/title";
 import { ageToken, metaFromStory, submitLink, locationIsApproximate } from "../../lib/tree-copy";
 import WorthIt from "../../components/WorthIt.astro";
+import SignInModal from "../../components/SignInModal.astro";
+import { SIGNIN_JS } from "../../lib/signin-js";
 import { WORTHIT_JS } from "../../lib/worthit-js";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { seasonBlock } from "../../lib/phenology";
@@ -124,7 +126,7 @@ const graph = [
 ];
 const esTr = cityTranslation("es", cslug);
 const headExtra = mapHead() + ogImage + (esTr && esTr.trees[tree.id] ? "\n" + hreflangLinks("es", `/${cslug}/${tslug}`, `/es/${cslug}/${tslug}`) : "") + "\n" + ldScript(graph);
-const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS;
+const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + SIGNIN_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
   <main class="content-page has-tree-bar">
@@ -205,14 +207,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <a class="tb-link dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
       <a class="tb-link" href={`/${cslug}#walk`}>Walk more</a>
     </div>
-    <dialog id="save-dialog" class="collect-dialog">
-      <h3>Saved. Keep it everywhere?</h3>
-      <p>This tree is saved on this device, under <a href="/saved">Saved trees</a>. The Ancient Trees app will keep your saves and your collection on every device, with walks past several trees.</p>
-      <div class="collect-actions">
-        <a class="go-btn" href="/app">Get the app</a>
-        <button class="go-btn ghost" type="button" id="save-dialog-close">Not now</button>
-      </div>
-    </dialog>
+    <SignInModal />
   </main>
   <Fragment slot="scripts" set:html={scripts} />
 </Base>

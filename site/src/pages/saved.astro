@@ -7,27 +7,52 @@
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { BASE_URL } from "../lib/schema";
+import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+import SignInModal from "../components/SignInModal.astro";
+import { SIGNIN_JS } from "../lib/signin-js";
 
 const canonical = `${BASE_URL}/saved`;
 const SAVED_PAGE_JS = `
 <script>
 (function() {
-  var map;
-  try { map = JSON.parse(localStorage.getItem('at_saved_v1') || '{}'); } catch (e) { map = {}; }
-  var ids = Object.keys(map);
   var list = document.getElementById('saved-list');
   var empty = document.getElementById('saved-empty');
-  if (!ids.length) { empty.hidden = false; return; }
-  ids.sort(function(a, b) { return map[a].n < map[b].n ? -1 : 1; });
-  ids.forEach(function(id) {
-    var li = document.createElement('li');
-    var a = document.createElement('a');
-    a.href = map[id].u;
-    a.textContent = map[id].n;
-    li.appendChild(a);
-    list.appendChild(li);
-  });
-  list.hidden = false;
+  function localMap() {
+    try { return JSON.parse(localStorage.getItem('at_saved_v1') || '{}'); } catch (e) { return {}; }
+  }
+  function render(map) {
+    var ids = Object.keys(map);
+    list.textContent = '';
+    if (!ids.length) { empty.hidden = false; list.hidden = true; return; }
+    empty.hidden = true;
+    ids.sort(function(a, b) { return map[a].n < map[b].n ? -1 : 1; });
+    ids.forEach(function(id) {
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = map[id].u;
+      a.textContent = map[id].n;
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+    list.hidden = false;
+  }
+  render(localMap());
+  // Signed in: the list is the union of this device and the account.
+  var s = null;
+  try { s = JSON.parse(localStorage.getItem('ancienttrees_session')); } catch (e) {}
+  if (!s || s.expires_at <= Date.now() / 1000) return;
+  fetch('${SUPABASE_URL}/rest/v1/saves?select=tree_id,name,url', {
+    headers: { 'apikey': '${SUPABASE_KEY}', 'Authorization': 'Bearer ' + s.access_token } })
+    .then(function(r) { return r.ok ? r.json() : null; })
+    .then(function(rows) {
+      if (!rows) return;
+      var map = localMap();
+      rows.forEach(function(r) { if (!map[r.tree_id]) map[r.tree_id] = { n: r.name, u: r.url }; });
+      try { localStorage.setItem('at_saved_v1', JSON.stringify(map)); } catch (e) {}
+      render(map);
+      document.getElementById('saved-sub').textContent = 'Signed in: these follow your account to any device.';
+    })
+    .catch(function() {});
 })();
 </script>
 `;
@@ -41,9 +66,10 @@ const SAVED_PAGE_JS = `
   <main class="content-page">
     <Breadcrumbs items={[["Home", BASE_URL], ["Saved", null]]} />
     <h1>Saved trees</h1>
-    <p class="prose-block">The trees you tapped Save on, kept on this device. No account, nothing sent anywhere; clearing your browser data clears this list too.</p>
+    <p class="prose-block" id="saved-sub">The trees you tapped Save on, kept on this device. <a href="/account" data-signin>Sign in</a> and they follow you to any device.</p>
     <ul id="saved-list" class="saved-list" hidden></ul>
     <p id="saved-empty" hidden>Nothing saved yet. Open any tree and tap <b>&#9825; Save</b> to keep it here for the day you walk past. <a href="/explore">Find a tree near you</a>.</p>
+    <SignInModal />
   </main>
-  <Fragment slot="scripts" set:html={SAVED_PAGE_JS} />
+  <Fragment slot="scripts" set:html={SIGNIN_JS + SAVED_PAGE_JS} />
 </Base>

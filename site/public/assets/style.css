@@ -786,3 +786,24 @@ main.content-page.has-tree-bar { padding-bottom: 5.6rem; }
 
 .species-cluster h2 { font-size: 17px; margin: 1.6rem 0 0.2rem; }
 .species-cluster:first-of-type h2 { margin-top: 0.8rem; }
+
+/* The one sign-in surface (SignInModal.astro), shaped like the modal every
+   AllTrails gated tap lands on: centred card, mark on top, stacked pill
+   buttons, the app darkest. */
+.signin-dialog { max-width: 24rem; text-align: center; position: relative; padding: 2rem 1.6rem 1.4rem; }
+.signin-dialog h3 { margin: 0.4rem 0 0.4rem; }
+.signin-dialog p { font-size: 14px; color: var(--ink-light); margin: 0 0 1rem; }
+.signin-mark { font-size: 28px; margin: 0; }
+.signin-close { position: absolute; top: 0.7rem; right: 0.9rem; border: none; background: none;
+  font-size: 15px; cursor: pointer; color: var(--ink-light); }
+.signin-form { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 0.6rem; }
+.signin-form input { font-family: inherit; font-size: 14px; padding: 0.7rem 0.9rem;
+  border: 1px solid var(--cream-dark); border-radius: 999px; text-align: center; }
+.signin-dialog .go-btn { display: block; width: 100%; text-align: center; border-radius: 999px; }
+.signin-more { margin-bottom: 0.2rem; }
+.signin-or { margin: 0.4rem 0 !important; }
+.signin-app { background: #23261e; }
+.signin-fine { font-size: 12px !important; margin-top: 0.9rem !important; }
+.nav-group { font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-light); margin: 0.5rem 0 0.15rem; padding: 0 0.9rem; }
+.nav-drop-menu .nav-group:first-child { margin-top: 0.2rem; }
