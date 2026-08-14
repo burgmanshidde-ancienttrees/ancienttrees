@@ -11,6 +11,8 @@ import { speciesIcon } from "../../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
 import { ageToken, metaFromStory, submitLink, locationIsApproximate } from "../../lib/tree-copy";
+import WorthIt from "../../components/WorthIt.astro";
+import { WORTHIT_JS } from "../../lib/worthit-js";
 import { seasonBlock } from "../../lib/phenology";
 import { mapHead, singlePinScript } from "../../lib/map";
 import { COLLECT_JS } from "../../lib/collect-js";
@@ -122,7 +124,7 @@ const graph = [
 ];
 const esTr = cityTranslation("es", cslug);
 const headExtra = mapHead() + ogImage + (esTr && esTr.trees[tree.id] ? "\n" + hreflangLinks("es", `/${cslug}/${tslug}`, `/es/${cslug}/${tslug}`) : "") + "\n" + ldScript(graph);
-const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS;
+const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS + WORTHIT_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
   <main class="content-page">
@@ -181,6 +183,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS;
       <dt>Access</dt><dd>{tree.access ?? ""}</dd>
       <dt>Getting there</dt><dd>{tree.transport ?? ""}</dd>
     </dl>
+    <WorthIt treeId={tree.id} city={cityName} treeName={tree.name} />
     <h2>Trees nearby</h2>
     <div class="near-cards">
       {nearby.map((t) => (

@@ -1,0 +1,37 @@
+---
+// "Worth the visit?" — the vote-plus-correction control, Hidde's design of
+// 2026-08-14: one thumbs pair per tree, and a No opens four chips. The first
+// chip is an opinion and stays a vote; the other three are fact reports that
+// land in the same Supabase submissions table the /contribute form uses
+// (kind 'feedback'), where Step 0b picks them up. A dead or wrong-location
+// report gets checked the same day per the standing rules.
+//
+// Convention (Google Maps, AllTrails): opinion and correction are one entry
+// point but separate signals, and the context is prefilled from the page, so
+// the reader never types a city or a tree name.
+//
+// Votes are stored from day one and shown to nobody: at current volume a
+// count would be fake authority, and re-ranking waits until the numbers are
+// honest (DECISIONS.md 2026-08-14). One vote per tree per browser via
+// localStorage, the passport pattern.
+interface Props {
+  treeId: string;
+  city: string;
+  treeName: string;
+  compact?: boolean;
+}
+const { treeId, city, treeName, compact = false } = Astro.props;
+---
+<div class={`worthit${compact ? " worthit-compact" : ""}`} data-tree={treeId} data-city={city} data-name={treeName}>
+  <span class="worthit-q">Been here? Worth the visit?</span>
+  <button type="button" class="worthit-btn" data-vote="up" aria-label={`Yes, ${treeName} was worth the visit`}>👍</button>
+  <button type="button" class="worthit-btn" data-vote="down" aria-label={`No, ${treeName} was not worth the visit`}>👎</button>
+  <span class="worthit-done" hidden>Thanks, counted.</span>
+  <div class="worthit-why" hidden>
+    <span class="worthit-q">What was wrong?</span>
+    <button type="button" class="worthit-chip" data-reason="not that special">Not that special</button>
+    <button type="button" class="worthit-chip" data-reason="dead or gone">It's dead or gone</button>
+    <button type="button" class="worthit-chip" data-reason="wrong location">Wrong location</button>
+    <button type="button" class="worthit-chip" data-reason="could not reach it">Couldn't reach it</button>
+  </div>
+</div>

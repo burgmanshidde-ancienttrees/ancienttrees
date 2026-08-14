@@ -379,13 +379,15 @@ This section exists so a run can decide for itself. Hidde is not watching, does 
 
 ### What this is for
 
-Two goals, deliberately ranked.
+Two goals, deliberately ranked, and a third beneath them that works differently.
 
 **1. Get someone to walk to a specific tree and enjoy standing in front of it.** Not "raise awareness of trees", not traffic. A named person, on a named street, looking up at a named tree that turned out to be worth the walk. Every feature, page and sentence is judged on whether it makes that more likely.
 
 **2. Earn money.** Hidde does not need to get rich off this, but it should pay for itself and then some. (The "few thousand euro a month" figure that used to stand here was called loose talk by Hidde himself on 2026-07-26, GO_TO_MARKET.md "the revenue arithmetic: parked"; treat the amount as undecided, the direction as real.)
 
 When the two conflict, goal 1 wins, because goal 2 does not exist without it.
+
+**3. Become the richest database of trees worth visiting (Hidde, 2026-08-14), and it is a tiebreaker, not a master.** Subordinate on his own ruling, because a database without visitors is MonumentalTrees, the competitor we beat on experience. It binds three habits rather than ordering any work: when two ways of doing something are otherwise equal, choose the one that leaves the database richer; never store a bare fact, store its provenance with it, because provenance is what makes a reader's correction mergeable; and never let the schema assume "city", since cities are the front door while villages, parks and forests must later be new views on the same data. The user half is the synergy loop he named the same day: we set it up, readers validate and correct it, and the "Worth the visit?" control plus the publish-and-ask rule are its engines. Full record in DECISIONS.md 2026-08-14; it licenses no database features ahead of demand.
 
 **The two phases, named by Hidde 2026-08-12. Phase 1 is traction on the website: collecting people and data. Phase 2 is the app and monetisation.** We are in phase 1 and there is no date on the switch; evidence moves it, not the calendar.
 
