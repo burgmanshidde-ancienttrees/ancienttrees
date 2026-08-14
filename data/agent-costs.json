@@ -1366,6 +1366,15 @@
     "note": "Same batch; single-source register pine, no best_time (evergreen), ties into the existing Orangerie beech and thuja walk",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "catania",
+    "kind": "verify",
+    "tokens": 110873,
+    "trees": 4,
+    "note": "4/5 candidates verified in Villa Bellini/Orto Botanico cluster; 1 blocked (Scuola Superiore campus, controlled access); new city clears the 4-tree floor",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
