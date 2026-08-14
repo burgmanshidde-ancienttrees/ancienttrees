@@ -1456,6 +1456,24 @@
     "note": "Roben-sugi confirmed as a replanting after the 1961 typhoon (4 sources); Milestone Hackberry and Wakamiya Camphor chased hard but left as leads, one stuck on a missing second source, the other on a deepened size conflict",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "cagliari",
+    "kind": "verify",
+    "tokens": 60000,
+    "trees": 0,
+    "note": "7 verified in one 2.5km cluster incl. two Moreton Bay Figs (12.0m and 9.8m girth); 2 blocked as private-garden (Norfolk pine, Erythrina); cagliaritoday.it 403s WebFetch, curl+UA works",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "braga",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 0,
+    "note": "6 verified from all 8 ICNF processos in range, two pairs folded; Abraco pair confirmed as an official register name, not coincidence; Tibaes cedars/pine behind paid monastery gate, access re-check due before writing",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
