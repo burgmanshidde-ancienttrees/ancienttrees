@@ -11,6 +11,19 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-14 - The tree page learns AllTrails' funnel, and readers get a voice: votes, hearts, a saved list
+
+Built with Hidde in session, from his AllTrails read and his verdict on the collect button ("op mobiel totaal onlogisch"). Four pieces, all live and all verified in a real browser at 375px, not assumed:
+
+1. **"Worth the visit?" on every tree** (city cards and tree pages): thumbs, and a No opens four chips. Opinion counts as a vote; dead, wrong-location and unreachable reports ride the existing submissions table (kind 'feedback') into Step 0b, same-day rule applies. Votes stored from day one, displayed nowhere until volume makes a count honest. Full design in DECISIONS.md 2026-08-14.
+2. **The hanging action bar on phones**: Take me there (primary), Walk more, Get app. Desktop keeps the in-page row. Directions taps now emit the `directions` beacon event, which has read zero since tracking began, so this is the first honest test of whether anyone wants to go.
+3. **Collect left the website.** The button and its dialog are gone; collecting is the app's selling point now. The smoke test asserts the bar and the heart instead of the dead dialog (edited on his ruling, recorded in the commit).
+4. **Save hearts and /saved**: AllTrails' bookmark without an account. localStorage like the passport, name and url stored at save time so /saved renders from storage alone, noindexed, empty state teaches. The Spanish test pages follow the same structure minus the heart.
+
+The composition pass caught two real bugs before he saw them: the chips showed without anyone tapping No (an explicit `display:flex` beats the `hidden` attribute) and the bar's third button fell off a 375px screen. Both fixed and re-verified; the full interaction chain was tested live including a real Supabase insert (201, marked TEST ROW). Also removed in passing: the contribute form still promised "trees go live with your credit", dead since the 2026-08-11 name ruling.
+
+Still open from the same decision: Send to Phone on desktop needs a QR, and a QR needs either a vendored generator or a build step, which is a hard-rule-5 yes. And the fresh-eyes reviewer should walk the new tree page top to bottom tomorrow.
+
 ## 2026-08-13 - Searching for famous trees instead of for our own names, and Bordeaux reaches ten
 
 Hidde's idea, and it was the right one: "what if you just search famous tree amsterdam. and you then find some, identify which one it is and use it." Commons turns out to keep `Category:Famous trees by country`, 82 countries deep, with one category PER NAMED TREE underneath. `scripts/famous_trees.py` walks it, matches by coordinate first and by name second, and reports both halves: photographs for trees we hold, and famous trees we do not map at all.
