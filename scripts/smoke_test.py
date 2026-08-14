@@ -145,7 +145,10 @@ setTimeout(function(){
             ('class="ats-drop"', "shared search dropdown (one interaction, home and explore)"),
         ]),
         (f"{base}/{city.name}", f"city page ({city.stem})", [
-            ('class="route-bar"', "walk banner"),
+            # The walk banner became the capsule + sheet on 2026-08-14
+            # (Hidde: the chips "are taking over too much of the screen").
+            ('class="tree-bar walk-bar"', "the walk capsule"),
+            ('id="route-go"', "the walk's primary link inside the capsule"),
             ("maplibregl-canvas", "map canvas (JS ran, map constructed)"),
         ]),
         (f"{base}/{city.stem}/{tree.name}", f"tree page ({tree.stem})", [
