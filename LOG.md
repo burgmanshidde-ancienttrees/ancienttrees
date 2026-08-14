@@ -11,6 +11,14 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-14 (continued) - Rome takes four register trees, and four of the five briefed ones could not ship
+
+Write pass over four cities' READY leads. Rome first, +4 (now 29 of a 30 target): the chir pine of Villa Fiorelli, the black poplar of Via Conca d'Oro, the hackberry of the Mura Latine and the Mexican blue palm of Villa Sciarra. All four are register-only, all four ship flagged and say so in the prose, which is what CLAUDE.md Step 2 actually prescribes for a single source. Two of them tighten existing walks: the palm makes Villa Sciarra a four-tree stop, the poplar sits a kilometre from the Viale Jonio plane.
+
+The brief named five trees and four of them could not be written. The Risaro poplar is 14 km south, past the day-trip boundary, and burned in 2025 with nobody having looked since. The Ostia Antica holm oak fails the same boundary at 25 km, and its coordinates in the leads file are 10 km off the register's own. The Villa di Faonte almonds are two separately registered trees 90 metres apart, so not one place to stand, with the access to their plot still unconfirmed. The briefed fallback, the Parco dei Daini holm oaks, is an ordered grove with no individual named. Substitutes came from the same leads file, held there only on the two-source bar. Also recorded for the next verify pass: four Rome register sheets (61, 64, 78, 81) that no pass has ever touched, of which 81 names a public park.
+
+One count fix while merging: the Rome intro promised trees ranging "from a poet's legendary oak", which is the Quercia del Tasso, dead and blocked and never on the page.
+
 ## 2026-08-14 (continued) - One capsule on every page: the city walk chips collapse behind a tab
 
 Hidde's complaint, with the Munich page as the exhibit: the walk chips plus the green route banner plus Where am I stacked to roughly a third of a phone screen, floating over the content, in a different visual language from the tree page's capsule. His own guess ("maybe there should be a tab that opens them?") is exactly the convention: Google Maps, AllTrails and Citymapper all collapse route options into one compact bar with a sheet behind a tap.

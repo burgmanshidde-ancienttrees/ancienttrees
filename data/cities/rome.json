@@ -2,10 +2,10 @@
   "city": "Rome",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Rome's noble families turned trees into status symbols the way they turned villas into galleries. Cardinal Scipione Borghese's gardener planted a grove of oriental planes in the 1600s that foresters now call the oldest living trees in the city; the Pamphilj and Mattei families each planted cedars of Lebanon nearby, one per hilltop garden, as a shorthand for permanence. Rome has 65 trees registered as monumental under Italian law, more than any other city in the country. These twenty-two range from a poet's legendary oak to a South American ombu, and all but two are free to visit.",
-  "meta_description": "Rome's noble villas planted cedars of Lebanon as status symbols. Meet Adonis, a 425-year-old plane in Villa Borghese, and twenty-three more.",
+  "intro": "Rome's noble families turned trees into status symbols the way they turned villas into galleries. Cardinal Scipione Borghese's gardener planted a grove of oriental planes in the 1600s that foresters now call the oldest living trees in the city; the Pamphilj and Mattei families each planted cedars of Lebanon nearby, one per hilltop garden, as a shorthand for permanence. Rome has 65 trees registered as monumental under Italian law, more than any other city in the country. These twenty-nine range from a 425-year-old plane to a Mexican desert palm, and all but two are free to visit.",
+  "meta_description": "Rome's noble villas planted cedars of Lebanon as status symbols. Meet Adonis, a 425-year-old plane in Villa Borghese, and twenty-eight more.",
   "question_answer": "The oldest verified tree in Rome is Adonis, an oriental plane in the Valley of the Plane Trees at Villa Borghese, planted in the early 1600s by Cardinal Scipione Borghese's gardener and now around 425 years old. It stands inside Villa Borghese, a short walk from the Via Pinciana entrance.",
-  "question_meta": "Adonis, a 425-year-old oriental plane in Villa Borghese, is Rome's oldest verified tree. Its story, exact location, and twenty-three more remarkable trees.",
+  "question_meta": "Adonis, a 425-year-old oriental plane in Villa Borghese, is Rome's oldest verified tree. Its story, exact location, and twenty-eight more remarkable trees.",
   "question_context": "Rome has an older legend. The Quercia del Tasso on the Gianicolo is popularly said to be a thousand years old, tied to the poet Torquato Tasso, who tradition says rested in its shade before his death in 1595. No dendrologist has ever dated it, and this site treats that number as folklore rather than fact. Adonis has no such problem. Cardinal Scipione Borghese's gardener, Domenico Savini da Montepulciano, planted a row of oriental planes in the villa's private hunting park in the early 1600s, and the planting is documented well enough that Italian foresters count the survivors, nine of the original eleven, as the oldest confirmed trees in the city. Adonis is the largest of them, a hollow giant at the entrance to what is now called the Valley of the Plane Trees. In 2021 the garden cloned it from a single surviving leaf, a hedge against the fate of a neighboring oak from the same era that collapsed in 2018. Getting there: enter Villa Borghese from Via Pinciana and follow the signs for the Valle dei Platani.",
   "faq": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Rome's remarkable trees free to visit?",
-      "a": "Twenty of the twenty-two on this list stand in free public parks and squares. The two inside the Orto Botanico, Rome's botanical garden, require a paid ticket."
+      "a": "Twenty-seven of the twenty-nine on this list stand in free public parks and squares. The two inside the Orto Botanico, Rome's botanical garden, require a paid ticket."
     },
     {
       "q": "How does Italy protect its monumental trees?",
@@ -801,6 +801,126 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "rom_026",
+      "name": "The Chir Pine of Villa Fiorelli",
+      "species": "Chir Pine (Pinus roxburghii)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parco di Villa Fiorelli, Piazza Villa Fiorelli, 00182 Roma",
+        "latitude": 41.884611,
+        "longitude": 12.5235,
+        "neighbourhood": "Tuscolano"
+      },
+      "story": "Rome's monumental register lists exactly two Himalayan pines in the whole city. One stands on the Colle Oppio above the Colosseum. This is the other, a couple of kilometres east in a neighbourhood park of nine thousand square metres, with a trunk 2.97 metres round and eighteen metres above it.\n\nPinus roxburghii grows wild on the dry outer ranges of the Himalaya, from Kashmir across to Bhutan, where it is tapped for resin the way other trees are tapped for rubber. The needles come in threes and run to thirty centimetres, long enough that the crown hangs rather than bristles, and the cones are woody, hand sized things.\n\nThe ground under it stopped being farmland in July 1930, when Rome's Governorate bought the last of the Fiorelli family's land on the exclusive condition that it be used as a public park. The old manor house came down that September. Raffaele De Vico laid out the garden that replaced it in 1931, and the Tuscolano quarter's blocks of flats went up around the edge.\n\nTwo gaps worth stating. Italy's register has no age field, so nobody has dated this pine. And the city's own account of what grows in the park names walnuts, carobs, plums, a ginkgo and silk trees, without mentioning a pine at all.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national register, sheet 70/H501/RM/12, Pinus roxburghii, girth 297 cm, height 18 m, locality Villa Fiorelli, via the Lazio regional list of November 2025)",
+        "https://www.sovraintendenzaroma.it/i_luoghi/ville_e_parchi_storici/passeggiate_parchi_e_giardini/villa_fiorelli_gia_vigna_costantini (Sovrintendenza Capitolina on the park: 9,000 sqm, public park since 1931, open 07:00 to sunset, acquired by the Governorate in July 1930 with the exclusive condition it be used as a public park, laid out to a design by Raffaele De Vico; its list of the park's trees names walnut, carob, plum, ginkgo and silk tree, no pine)"
+      ],
+      "access": "Free, public park, open 07:00 to sunset",
+      "transport": "Metro A to Ponte Lungo, then a few minutes on foot to Piazza Villa Fiorelli",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Single source for the tree itself: the national register through the Lazio regional list. The Sovrintendenza page is a second source for the site and its access, not for this pine, and its own summary of the park's planting does not mention a pine. Flagged on that. Distinct from rom_020, the Chir Pine of Colle Oppio (sheet 71), roughly 2.7 km west. A claim that the two are twins both planted by Raffaele De Vico circulates in search results but could not be corroborated by any of the pages those results cite, so the story credits De Vico with the 1931 garden and claims nothing about who planted the tree."
+    },
+    {
+      "id": "rom_027",
+      "name": "The Black Poplar of Via Conca d'Oro",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Via Conca d'Oro at the junction with Via Val d'Ala, 00141 Roma",
+        "latitude": 41.941306,
+        "longitude": 12.522333,
+        "neighbourhood": "Montesacro"
+      },
+      "story": "Making a monument of a black poplar is a bet against the species. Populus nigra grows fast on soft wood, hollows early and starts shedding limbs while an oak of the same age is still filling out, which is why few of them get old anywhere and fewer still on a city street. This one is 4.05 metres round with twenty metres above it, at the junction of Via Conca d'Oro and Via Val d'Ala.\n\nRome's register carries three black poplars. The other two sit 14 and 25 kilometres out, one towards the coast at the Risaro and one in Ostia, which leaves this the only one a visitor is likely to reach.\n\nMontesacro was farmland until the 1920s, when the city laid out a garden suburb across the Aniene and planted its avenues. Nothing records when this poplar went in, and the Italian register has no age field to put it in even if something did.\n\nOne caution. The Lazio regional list still carried the tree in its November 2025 edition, and that list keeps a separate sheet for trees struck off it, with the reason each was removed, which is the closest thing this country has to a public check that a monumental tree is still standing. Nine months is a long time in the life of a poplar.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national register, sheet 62/H501/RM/12, Populus nigra, girth 405 cm, height 20 m, locality Via Conca d'Oro intersezione con Via Val d'Ala)",
+        "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx (Lazio regional register, November 2025 edition, which still lists sheet 62 as active and keeps a separate sheet of trees removed from the list with the reason for each)"
+      ],
+      "access": "Free, on a public street",
+      "transport": "Metro B1 to Conca d'Oro, then a short walk along Via Conca d'Oro; the Plane of Viale Jonio is about a kilometre further north",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Register-only tree: the national and regional registers are one designation rather than two independent sources, hence flagged. No vitality check newer than the Lazio list's November 2025 edition, which is stated in the story rather than hidden. Black poplar is a short lived species, so this entry is a candidate for re-checking before others."
+    },
+    {
+      "id": "rom_028",
+      "name": "The Hackberry of the Mura Latine",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Viale delle Mura Latine at the corner of Via Latina, by Porta Latina, 00179 Roma",
+        "latitude": 41.876361,
+        "longitude": 12.502667,
+        "neighbourhood": "Appio Latino, along the Aurelian Walls"
+      },
+      "story": "Rome's register carries two Mediterranean hackberries and they stand a hundred and twenty metres apart. The one inside the Parco degli Scipioni has a park authority's catalogue entry, a health rating and an age estimate. This one, thirteen centimetres thicker at 4.14 metres round, has a line in a spreadsheet.\n\nIt grows at the corner of Viale delle Mura Latine and Via Latina, along the Aurelian Walls. Italians call the species bagolaro, and also spaccasassi, stone splitter, after its habit of rooting into walls and rock and refusing to be shifted. The wall beside it went up between 271 and 275, nineteen kilometres of brick faced concrete thrown around the city in four years by an emperor who had stopped assuming Rome was safe. The Porta Latina is a few steps south.\n\nThe register puts the tree at twenty metres and records what earned it the designation: its size, and its form and bearing. It gives no age, and hackberries thicken quickly on good ground, so four metres round here does not mean the two centuries the same measurement would suggest in an oak.\n\nOne source only, the national register through the Lazio list. The Appia Antica park's own catalogue of notable trees describes its neighbour in detail and does not mention this one.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national register, sheet 65/H501/RM/12, Celtis australis, girth 414 cm, height 20 m, locality Viale delle Mura Latine angolo Via Latina; designated for size and for form and bearing)",
+        "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx (Lazio regional register, November 2025 edition, which carries the designation criteria per tree)"
+      ],
+      "access": "Free, on a public street beside the Aurelian Walls",
+      "transport": "By Porta Latina, about 100 metres from the Parco degli Scipioni entrance at Via di Porta Latina 16; roughly 20 to 25 minutes' walk from Circo Massimo (Metro B)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Register-only, hence flagged: a targeted hunt on 2026-08-08 found no source independent of the national and regional registers, and the Parco Regionale dell'Appia Antica's own 'alberi di pregio' catalogue, which corroborates rom_024 at 120 metres away, does not list this tree. Deliberately not folded into rom_024 as a pair, since only one of the two is independently corroborated and folding would overstate what is known about this one."
+    },
+    {
+      "id": "rom_029",
+      "name": "The Mexican Blue Palm of Villa Sciarra",
+      "species": "Mexican Blue Palm (Brahea armata)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Villa Sciarra, along Viale Adolfo Leducq, 00153 Roma",
+        "latitude": 41.8835,
+        "longitude": 12.464806,
+        "neighbourhood": "Gianicolo / Monteverde"
+      },
+      "story": "A palm from the canyons of Baja California sits on Rome's monumental register, and the register is blunt about why: botanical rarity. No age, no history, no famous planter. Just a Brahea armata standing twenty metres up on the Janiculum, which the state counts as reason enough on its own.\n\nIt is a desert plant. In Mexico it grows in dry rocky ravines behind the Pacific coast, and its fronds are the colour the name promises, a stiff waxy blue grey that reads as metal rather than leaf from any distance. Once a year it sends out flower spikes that arch clear of the crown and hang several metres below it, longer than the fronds they came from.\n\nVilla Sciarra reached the public through an American. George Washington Wurts bought this hillside in 1902 and spent the rest of his life filling it with whatever caught his eye, and his widow Henrietta Tower Wurts gave the whole estate to the Italian state in the early 1930s on the condition that it stay a park. Whether this palm was one of his, no document says.\n\nThe register gives 2.94 metres round and twenty metres tall. Palms lay down no growth rings, so the age here is not merely undocumented, it is unknowable.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national register, sheet 74/H501/RM/12, Brahea armata, girth 294 cm, height 20 m, locality Villa Sciarra - Viale Adolfo Leducq, designated for botanical rarity)",
+        "https://www.comune.roma.it/web/it/notizia.page?contentId=NWS1195295 (Roma Capitale's account of Villa Sciarra's passage from George Washington Wurts to the Italian state and its monumental trees; it names the ginkgo and the podocarp of this park and does not mention the palm)"
+      ],
+      "access": "Free, open access, Villa Sciarra public park",
+      "transport": "15 min walk uphill from Trastevere, or bus routes to Via Dandolo / Via Calandrelli",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Register-only for the tree itself, hence flagged: repeated hunts (2026-08-05, 2026-08-08) found no source independent of the register naming this individual palm, and general descriptions of Villa Sciarra's palms cannot fix which one is meant. The Roma Capitale page is a source for the park's history and ownership, not for the palm. The story therefore states the Wurts history and explicitly declines to attribute the planting. Completes a four tree walk in Villa Sciarra with rom_001, rom_011 and rom_012."
     }
   ]
 }
