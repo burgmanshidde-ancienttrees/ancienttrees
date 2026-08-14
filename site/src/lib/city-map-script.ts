@@ -153,6 +153,14 @@ var pins = [];
 var activeIdx = -1;
 
 function setActive(idx, fly, scroll) {
+  // Selecting a tree OUTSIDE the chosen walk releases the walk instead of
+  // leaving the tree dimmed under it (Hidde, 2026-08-14: "the tree stays in
+  // opacity mode instead of jumping out of the hike and towards the tree").
+  // The person's intent moved from the route to the tree; the filter follows.
+  if (typeof activeWalk !== 'undefined' && activeWalk >= 0 && WALKS[activeWalk] &&
+      WALKS[activeWalk].members.indexOf(idx) === -1) {
+    showWholeCity();
+  }
   if (activeIdx >= 0) {
     pins[activeIdx].classList.remove('active');
     document.getElementById('tree-' + (activeIdx + 1)).classList.remove('active');
