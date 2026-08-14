@@ -11,6 +11,12 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-14 (continued) - One capsule on every page: the city walk chips collapse behind a tab
+
+Hidde's complaint, with the Munich page as the exhibit: the walk chips plus the green route banner plus Where am I stacked to roughly a third of a phone screen, floating over the content, in a different visual language from the tree page's capsule. His own guess ("maybe there should be a tab that opens them?") is exactly the convention: Google Maps, AllTrails and Citymapper all collapse route options into one compact bar with a sheet behind a tap.
+
+Built and verified live on Munich (6 walks, the hardest case): the city page now carries the same dark capsule as the tree page, with the green walk link as its primary (mirroring the tree page's save), a "6 walks" tab that opens the picker as a white sheet, and Where am I as a quiet capsule link. Picking a walk closes the sheet and updates the primary; the map filtering logic is untouched, only re-clothed. The smoke test's walk-banner assertion was updated to the capsule in the same push, which it caught first, correctly. About 120 vertical pixels of phone screen come back, and both page types now speak one action language: a dark capsule at the bottom owns the going, everything else is content.
+
 ## 2026-08-14 (continued) - The account track opens on Hidde's word, in his own gate's order
 
 His ruling, overruling the wait-for-evidence recommendation after hearing it: "just build it - were continuing with this product." Recorded as his decision; the sequence stays the one he set in July, deletion before anything else. What the probe found: `delete_user()` already exists server-side (anonymous callers get the correct 401) and magic-link sign-in was field-tested weeks ago, so the only missing server piece was a saves table. `supabase/saves.sql` is the one paste that remains, and its FK cascades on user deletion so the delete flow stays end-to-end.
