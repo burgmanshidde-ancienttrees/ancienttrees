@@ -9,6 +9,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-14 - Two feedback submissions on Baarn's brn_005: already fixed, both look like test rows
+
+Supabase `submissions` held two new `kind: feedback` rows (ids 2 and 3, both created 06:52-06:53 UTC today), both reporting brn_005 (The American Oak of the Pekingtuin, Baarn) as "wrong location". Row 3 is explicitly suffixed "[TEST ROW, session 2026-08-14, safe to ignore]"; row 2 is byte-identical content submitted 23 seconds earlier without the marker, almost certainly the same in-session test of the new vote/report feature (LOG.md's same-day entry: "the full interaction chain was tested live including a real Supabase insert (201, marked TEST ROW)"). Checked the live data anyway rather than assume: brn_005's location was already fixed on 2026-08-13 (see that date's entry below), pin moved to the correct oak at 52.209694,5.292861, on-site checked, story now explicitly distinguishes it from the ringed tree 60m away. Nothing to fix. Marked both ids processed in `data/submissions-processed.json` alongside the original id 1.
+
 ## 2026-08-13 - Baarn's Pekingtuin oak: the ring belongs to a different tree, and the pin was on the wrong one
 
 Ground truth from Hidde, who walked into the Pekingtuin on 2026-08-11 and photographed what is actually there. Two true facts had been welded into one false claim, which is the error this file exists for.
