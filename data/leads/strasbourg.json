@@ -96,11 +96,6 @@
    "reason": "Chêne pédonculé, site 'Chêne pédonculé - Jardin des deux rives', 4.19km from centre, register strasbourg-arbres-remarquables. Not verified this pass (register candidate only, description read but no second source sought). Source page: https://www.strasbourg.eu/lieu/-/entity/id/684112/chene-pedoncule-jardin-des-deux-rives"
   },
   {
-   "name": "Pin sylvestre - Parc de l'Orangerie",
-   "species_guess_fr": "Pin sylvestre",
-   "reason": "Pin sylvestre, site 'Pin sylvestre - Parc de l'Orangerie', 2.18km from centre, register strasbourg-arbres-remarquables. Not verified this pass (register candidate only, description read but no second source sought). Source page: https://www.strasbourg.eu/lieu/-/entity/id/684124/pin-sylvestre-parc-de-l-orangerie"
-  },
-  {
    "name": "Pin noir d'Autriche - Parc de l'Orangerie",
    "species_guess_fr": "Pin noir d'Autriche",
    "reason": "Pin noir d'Autriche, site 'Pin noir d'Autriche - Parc de l'Orangerie', 2.39km from centre, register strasbourg-arbres-remarquables. Not verified this pass (register candidate only, description read but no second source sought). Source page: https://www.strasbourg.eu/lieu/-/entity/id/684144/pin-noir-d-autriche-parc-de-l-orangerie"
@@ -271,6 +266,14 @@
    "name": "Calocedrus et érable entremélés - Parc de l'Orangerie",
    "species_guess_fr": "Calocedrus et érable entremélés",
    "reason": "Calocedrus et érable entremélés, site 'Calocedrus et érable entremélés - Parc de l'Orangerie', 2.56km from centre, register strasbourg-arbres-remarquables. Not verified this pass (register candidate only, description read but no second source sought). Source page: https://www.strasbourg.eu/lieu/-/entity/id/684128/calocedrus-et-erable-entremeles-parc-de-l-orangerie RECLASSIFIED to blocked: an ensemble of intermixed species (calocedrus and maple grown together), not one identifiable collectible tree."
+  }
+ ],
+ "delivered": [
+  {
+   "name": "Pin sylvestre - Parc de l'Orangerie",
+   "delivered_as": "stg_010",
+   "date": "2026-08-14",
+   "note": "Verified this pass, appended to data/research/strasbourg-verified.json. Single source (city register only); location_precision confirmed via register tree-level coordinates."
   }
  ]
 }

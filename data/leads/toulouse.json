@@ -43,13 +43,6 @@
       "longitude": 1.4448
     },
     {
-      "register_id": "129620",
-      "name": "Celtis australis (Mediterranean Hackberry), Eglise Saint-Sylve",
-      "reason": "Plausibly public (church square) but not independently confirmed this pass. Coordinates: 43.6105, 1.4601.",
-      "latitude": 43.6105,
-      "longitude": 1.4601
-    },
-    {
       "register_id": "16807",
       "name": "Platanus x hispanica (London Plane), Allee Alfred Mayssonnie",
       "reason": "Plausibly a public street/allee tree (OSM tags the point as highway=service) but not individually researched or confirmed this pass; time-boxed out. Coordinates: 43.5884, 1.4370.",
@@ -66,21 +59,21 @@
     {
       "register_id": "17297",
       "name": "Wisteria sinensis (Chinese Wisteria), near Pont Pierre de Coubertin",
-      "reason": "Wisteria is a woody vine rather than a tree in the usual sense; could still be a collectible point if trained into standard/tree form (common in France), but this pass found no source describing its form or confirming public access (reverse-geocodes near a bridge and sports pitch). Coordinates: 43.5857, 1.4339.",
+      "reason": "Wisteria is a woody vine rather than a tree in the usual sense; could still be a collectible point if trained into standard/tree form (common in France), but this pass found no source describing its form or confirming public access (reverse-geocodes near a bridge and sports pitch). Register records planted 1922 and remarkable_label_source 'Arbres et paysages d'Autan' (the specialist tree association, not the city), which is a promising signal, but no independent source describing THIS specific wisteria was found this pass. IMPORTANT, learned this pass: this is a DIFFERENT tree from the well-documented, nationally labelled 'glycine de Toulouse' at the Serres municipales (see new entry below, register id unknown/not in this register file) -- do not conflate them, their coordinates are about 2km apart. Coordinates: 43.5857, 1.4339.",
       "latitude": 43.5857,
       "longitude": 1.4339
-    },
-    {
-      "register_id": "40105",
-      "name": "Tilia platyphyllos (Large-leaved Lime), Rue de la Solidarite, Soupetard",
-      "reason": "About 2.76km from centre, outside this pass's walk focus; access plausible (street furniture tag) but not confirmed. Not researched further this pass.",
-      "latitude": 43.6074,
-      "longitude": 1.4781
     },
     {
       "register_id": "103880",
       "name": "Taxodium distichum (Bald Cypress), Mirail-Universite area",
       "reason": "About 4.98km from centre. NOTE: this is NOT the famous bald cypress in a pond at Jardin des Plantes described by France3 Regions' 2025 survey (planted ~150 years ago, aerial roots visible in a garden basin) - that tree's real coordinates do not match this candidate, and no register entry in this pass's 29-tree set corresponds to it. That Jardin des Plantes cypress is a genuine gap worth importing/researching separately in a future pass. This Mirail candidate itself reverse-geocodes to a playground area, plausibly public but unresearched and far from the main cluster."
+    },
+    {
+      "register_id": null,
+      "name": "Glycine de Chine (Wisteria), Serres municipales, 19 boulevard de la Marne",
+      "reason": "NEW find this pass, not in toulouse-metropole-remarquables.json (found via Wikipedia's 'Arbres remarquables de France' list, not the register). Planted 1895, over 30m of pergola, jointly labelled 'Arbre Remarquable de France' in 2019 by the national A.R.B.R.E.S. association AND the local Arbres et Paysages d'Autan (metropole.toulouse.fr/serres-municipales confirms address, date and both label sources; fr.wikipedia.org 'Arbres remarquables de France' table lists it with the same 1895/2019 figures; arbres.org has a thin 'La glycine de Toulouse' label-announcement page with no body text, confirming the ceremony happened but adding no facts). Two real sources plus the city's own page: this would be the best-documented candidate in the whole file if not for one problem. ACCESS UNRESOLVED: the Serres municipales are working municipal production greenhouses (2.3 hectares, 330,000 plants/year); the city's own page describes the wisteria pergola as reachable via 'journees portes ouvertes' (open days, held in spring, announced on the city's site and social media) and calls it 'une occasion inedite de decouvrir ce lieu exceptionnel' (a rare/unique occasion to discover this place), which reads as normally closed to casual visitors rather than open daily. Worth a future pass checking whether the pergola or grounds are visible/reachable outside open days (e.g. from boulevard de la Marne without entering), which would resolve this either way.",
+      "latitude": null,
+      "longitude": null
     }
   ],
   "blocked": [
