@@ -3,7 +3,7 @@
   "country": "Japan",
   "status": "published",
   "intro": "Japan's first capital kept its trees the way it kept its temples, as part of the religion. Nara Park is not a park in the European sense but the shared grounds of Kasuga Taisha and Todai-ji, where deer have grazed for centuries and cutting a tree needed a reason. The result is a city whose oldest living things stand in the open with rope tied around them: a camphor that has watched a thousand years of festivals, a cedar drawn as a sapling in 1309, and a hollow trunk with a bamboo growing out of the top.",
-  "meta_description": "Nara's oldest tree is a camphor of a thousand years, its trunk twelve metres round. That, a cedar drawn as a sapling in 1309, and eight more.",
+  "meta_description": "Nara's oldest tree is a camphor of a thousand years, its trunk twelve metres round. That, a cedar drawn as a sapling in 1309, and nine more.",
   "question_meta": "Nara's oldest tree is the thousand-year camphor of Naratsuhiko Shrine, twelve metres round at the base and a protected natural monument since 1951.",
   "question_answer": "The oldest tree in Nara is the giant camphor behind the main hall of Naratsuhiko Shrine on the old Narazaka pass road, recorded as over a thousand years old and protected as a Nara Prefecture Natural Monument since 1951. It measures 12.8 metres around at ground level and roughly thirty metres tall, forking into two great limbs about seven metres up. It is free to visit.",
   "question_context": "The age is traditional rather than measured, as it is for almost every great camphor in Japan, but the size supports it and the shrine's own founding legend puts it at twelve centuries. What makes this tree worth the fifteen minute bus ride is what happens beneath it. On the evening of the eighth of October each year the shrine performs the Okina-mai, a masked dance recognised as an Important Intangible Folk Cultural Property and one of the oldest surviving ancestors of Noh theatre, and it is danced in the camphor's shade. The tree stands on Narazaka, the pass that carried travellers into the capital from the north, so anyone arriving in Nara from Kyoto in the eighth century walked past it. The only serious rival for the title is the great cedar at Kasuga Taisha, which sources date at somewhere between eight hundred and a thousand years and which has the better documentary evidence.",
@@ -329,6 +329,38 @@
       "curation_status": "flagged",
       "notes": "The Environment Ministry's park guide is the single substantive source for this individual, giving girth, height and an estimated 250 years. Position is sourced by description rather than coordinate, so the pin is approximate.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "nra_010",
+      "name": "The Roben-sugi of Nigatsu-do",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "current tree roughly 60 years old, replanted after 1961",
+      "age_min": 50,
+      "age_max": 70,
+      "location": {
+        "address": "Near Nigatsu-do, Todai-ji, 406-1 Zoshi-cho, Nara 630-8211",
+        "latitude": 34.6892513,
+        "longitude": 135.8439422,
+        "neighbourhood": "Nigatsu-do, Todai-ji precinct"
+      },
+      "story": "An eagle carried off a baby and left it in a cedar on this slope, and the baby grew up to found Todai-ji. That is the legend of the Roben-sugi. The infant was Roben, later the temple's first abbot, found and raised by a monk, and the tree on the spot has carried his name ever since. A stone monument beside it records the story.\n\nThis is not that cedar, and nobody here pretends it is. The original lived roughly six hundred years and reached 21.2 metres before the Second Muroto Typhoon came through Nara on 16 September 1961 with winds recorded at 75 metres a second. What happened afterwards is where the accounts part. One says the replacement failed to take and the tree standing today went in on 16 March 1967, raised from the one that died. Another calls this the fourth generation rather than the third. They disagree about how many attempts it took, not about whether this one has held.\n\nSo it is roughly sixty years old, which makes it the youngest tree on this page. Nara is a good place to be relaxed about that. The address is the relic here, not the timber.\n\nIt stands below the slope Nigatsu-do occupies, immediately north of the small Kojo Shrine, and the pin follows that description rather than a surveyed trunk. Free, part of Todai-ji's outer precinct, and the climb up is short.",
+      "verified_sources": [
+        "https://xn----kx8am9ow8cv7f5tnxma.jinja-tera-gosyuin-meguri.com/nigatsu/%E5%A5%88%E8%89%AF-%E6%9D%B1%E5%A4%A7%E5%AF%BA%E3%80%8C%E8%89%AF%E5%BC%81%E6%9D%89%E3%80%8D%EF%BC%88%E4%BA%8C%E6%9C%88%E5%A0%82%EF%BC%89/%E5%A5%88%E8%89%AF-%E6%9D%B1%E5%A4%A7%E5%AF%BA%E3%80%8C%E8%89%AF%E5%BC%81%E6%9D%89%E3%80%8D%EF%BC%88%E4%BA%8C%E6%9C%88%E5%A0%82%EF%BC%89/.html",
+        "https://naratrip.com/toudaijiroubensugi",
+        "https://gururinkansai.com/roubensugi.html",
+        "https://data.japanmystery.com/nara/roubensugi/"
+      ],
+      "access": "Free, part of Todai-ji's outer precinct (Nigatsu-do itself has no admission fee)",
+      "transport": "City loop bus from Kintetsu Nara Station to Daibutsuden Kasuga Taisha-mae, then about 15 min walk uphill",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Sources agree the original Roben-sugi was destroyed by the Second Muroto Typhoon on 16 September 1961 and that today's tree is a replanting; they disagree on whether it is the third or the fourth generation, which is stated in the story rather than resolved. Pin is shrine-level: sources place the tree below Nigatsu-do's slope immediately north of Kojo Shrine, and the coordinate is mapped from that description, not from a register or a survey."
     }
   ]
 }
