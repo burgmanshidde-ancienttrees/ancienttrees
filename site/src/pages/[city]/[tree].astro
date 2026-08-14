@@ -134,11 +134,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <span class="chip">{tree.age_estimate ?? "age unknown"}</span>
       <span class="chip">{spCommon}</span>
       {isApprox && <span class="chip approx">pin approximate</span>}
-      <button class="save-btn chip-save" type="button" data-tree={tree.id} data-name={tree.name} aria-pressed="false" aria-label={`Save ${tree.name}`}>
-        <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-.4 0-.8-.15-1.1-.42C5.5 15.9 2 12.6 2 8.9 2 5.9 4.4 3.5 7.4 3.5c1.8 0 3.5.86 4.6 2.25a5.9 5.9 0 0 1 4.6-2.25c3 0 5.4 2.4 5.4 5.4 0 3.7-3.5 7-8.9 11.7-.3.27-.7.42-1.1.42z"/></svg>
-        <span>Save</span>
-      </button>
-      <span class="save-funnel" hidden>Saved on this device. <a href="/app">The app keeps them everywhere</a>.</span>
+
     </p>
     {photo && photo.url ? (
       <figure class="tree-photo">
@@ -155,11 +151,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         </figcaption>
       </figure>
     )}
-    <div class="action-row desktop-only">
-      <a class="go-btn dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
-      <a class="action-link" href={`/${cslug}#walk`}>Walk more trees in {cityName}</a>
-      <a class="action-link" href="/saved">Saved trees</a>
-    </div>
+
     {tree.how_to_recognise && (
       <p class="which-one"><b>Which one is it?</b> {tree.how_to_recognise}</p>
     )}
@@ -206,9 +198,21 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <a class="report-btn" href={submitLink("tree", cityName)}>Suggest another tree</a>
     </div>
     <div class="tree-bar" aria-label="Actions">
-      <a class="go-btn dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
-      <a class="go-btn ghost" href={`/${cslug}#walk`}>Walk more</a>
+      <button class="tb-save save-btn" type="button" data-tree={tree.id} data-name={tree.name} aria-pressed="false" aria-label={`Save ${tree.name}`}>
+        <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg>
+        <span>Save</span>
+      </button>
+      <a class="tb-link dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
+      <a class="tb-link" href={`/${cslug}#walk`}>Walk more</a>
     </div>
+    <dialog id="save-dialog" class="collect-dialog">
+      <h3>Saved. Keep it everywhere?</h3>
+      <p>This tree is saved on this device, under <a href="/saved">Saved trees</a>. The Ancient Trees app will keep your saves and your collection on every device, with walks past several trees.</p>
+      <div class="collect-actions">
+        <a class="go-btn" href="/app">Get the app</a>
+        <button class="go-btn ghost" type="button" id="save-dialog-close">Not now</button>
+      </div>
+    </dialog>
   </main>
   <Fragment slot="scripts" set:html={scripts} />
 </Base>
