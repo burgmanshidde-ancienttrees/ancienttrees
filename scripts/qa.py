@@ -216,6 +216,35 @@ def check_one_city_order():
 # check is simply that the dates vary. One distinct date across a thousand pages
 # means the git lookup silently fell back (a shallow clone has no history), and
 # the deploy would ship the old bug without anyone noticing.
+def check_save_flow_integrity():
+    """Two checks born of 2026-08-14's bugs, per the ratchet.
+
+    (1) A modal dialog knocked out of the top layer: .signin-dialog carried
+    position:relative, which overrides the UA's position:fixed and parks the
+    dialog at the top of the document. CI cannot click, but it can refuse the
+    CSS that caused it. (2) A page that renders save hearts without the
+    sign-in dialog and its scripts would make the first-save funnel a silent
+    no-op; every page with a heart must carry the dialog."""
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    css = (root / "site" / "public" / "assets" / "style.css").read_text(encoding="utf-8")
+    m = re.search(r"\.signin-dialog\s*\{([^}]*)\}", css)
+    if m and "position:" in m.group(1):
+        out.append("style.css: .signin-dialog sets its own position, which knocks a "
+                   "modal dialog out of the browser's fixed top-layer placement "
+                   "(the 2026-08-14 dialog-at-top-of-page bug)")
+    hearts_no_dialog = []
+    for page in sorted(DIST.rglob("*.html")):
+        html = page.read_text(encoding="utf-8")
+        if 'save-btn' in html and 'id="signin-dialog"' not in html:
+            hearts_no_dialog.append(str(page.relative_to(DIST)))
+    if hearts_no_dialog:
+        out.append("%d page(s) render save hearts without the sign-in dialog "
+                   "(first-save funnel is a silent no-op there), e.g. %s"
+                   % (len(hearts_no_dialog), ", ".join(hearts_no_dialog[:5])))
+    return out
+
+
 def check_sitemap_dates():
     sm = DIST / "sitemap.xml"
     if not sm.exists():
@@ -248,6 +277,7 @@ def main():
 
     failures = []
     failures += check_auth_corpus_agreement()
+    failures += check_save_flow_integrity()
     pages = sorted(DIST.rglob("*.html"))
     if not pages:
         print(f"QA: no pages found under {DIST}, run (cd site && npx astro build) first")

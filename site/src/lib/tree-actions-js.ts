@@ -91,8 +91,13 @@ export const TREE_ACTIONS_JS = `
       // this dialog, and until accounts open its ask is the app. Shown on the
       // FIRST save only: the save itself always works instantly and locally,
       // and a modal on every save would be nagging, not a funnel.
-      if (!cs && window.atOpenSignIn && !localStorage.getItem('at_save_dialog_seen')) {
-        localStorage.setItem('at_save_dialog_seen', '1');
+      // Accounts are open, so the recorded flip condition is met: the ask
+      // fires once per SESSION while signed out (Hidde found the once-ever
+      // flag reading as a bug on 2026-08-14: his test save had consumed the
+      // one showing forever). AllTrails asks every time and blocks the save;
+      // we ask once a visit and never block it.
+      if (!cs && window.atOpenSignIn && !sessionStorage.getItem('at_save_ask')) {
+        sessionStorage.setItem('at_save_ask', '1');
         window.atOpenSignIn();
       }
     }

@@ -14,6 +14,10 @@
 // become the next work, not silent debt.
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
+import SaveHeart from "../../components/SaveHeart.astro";
+import SignInModal from "../../components/SignInModal.astro";
+import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
+import { SIGNIN_JS } from "../../lib/signin-js";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, type CityEntry } from "../../lib/trees";
 import { usablePhoto, imgSrcset, creditRequired } from "../../lib/images";
 import { speciesIcon } from "../../lib/species-icons";
@@ -158,6 +162,7 @@ const qslug = QUESTION_SLUG.es;
             <p class="tree-meta" set:html={`${esc(x.species)} &middot; ${esc(x.age_estimate)} &middot; ${esc(t.location?.neighbourhood ?? "")}`} />
             <p class="tree-story">{x.story}</p>
             <p class="tree-more"><a href={`/es/${cslug}/${tslugs[t.id]}`}>Leer más y cómo llegar →</a></p>
+            <SaveHeart treeId={t.id} treeName={t.name} compact labelSave="Guardar" labelSaved="Guardado" />
           </article>
         );
       })}
@@ -195,5 +200,5 @@ const qslug = QUESTION_SLUG.es;
       )}
     </div>
   </div>
-  <Fragment slot="scripts" set:html={cityMapScript(markers, [avgLat, avgLng], route, [], walks)} />
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS + cityMapScript(markers, [avgLat, avgLng], route, [], walks)} />
 </Base>

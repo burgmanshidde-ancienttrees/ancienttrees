@@ -1420,6 +1420,24 @@
     "note": "both leads held on access: Museo Giovio closed for renovation, Via Baserga is a house number (hard rule 10); recorded in leads file",
     "wasted": 0,
     "brief_wrong": true
+   },
+   {
+    "target": "alicante",
+    "kind": "verify",
+    "tokens": 60000,
+    "trees": 0,
+    "note": "7 ficus verified in one 300m cluster from staged register candidates; five elms held (one fell Sept 2025, register cannot say which), Benalua giant held on access",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "alicante",
+    "kind": "write",
+    "tokens": 62000,
+    "trees": 7,
+    "note": "New city from one verified file: 7 register-backed Ficus macrophylla, all flagged; oldest-tree page names the only dated tree instead of ranking; 7 how_to_recognise lines for near-twins",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
