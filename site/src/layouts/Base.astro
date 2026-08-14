@@ -102,7 +102,7 @@ const year = new Date().getFullYear();
       </div>
     </details>
     {AUTH_ENABLED && <a href="/account" class="bar-login only-desktop" id="bar-login">Log in</a>}
-    <a href="/app" class="bar-cta">Get the app</a>
+    <a href="/app" class="bar-cta" data-ev="app-cta">Get the app</a>
   </nav>
 </header>
 <slot />
@@ -186,6 +186,12 @@ document.addEventListener("click", function (e) {
     })();
   </script>
 <script>
+// One listener tracks every element carrying data-ev, so adding a funnel
+// step is an attribute, never a new script (FUNNELS.md, 2026-08-14).
+document.addEventListener('click', function(e) {
+  var t = e.target.closest('[data-ev]');
+  if (t) { try { at.track(t.getAttribute('data-ev')); } catch (err) {} }
+});
 // The nav must know who you are (2026-08-14 consistency pass): AllTrails
 // swaps Log in for your avatar; ours swaps the word, which is the honest
 // minimum for a site without profile pictures. Session shape is the one
