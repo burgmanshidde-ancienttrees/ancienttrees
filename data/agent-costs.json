@@ -1438,6 +1438,15 @@
     "note": "New city from one verified file: 7 register-backed Ficus macrophylla, all flagged; oldest-tree page names the only dated tree instead of ranking; 7 how_to_recognise lines for near-twins",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "pagegaps",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session pass, tokens not separately metered here; wrote 2 species intros (chir-pine, bitter-orange) closing pagegaps.py to zero, released stale alicante claim, released/claimed nara+trento+zaragoza for a parallel verify batch",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
