@@ -178,7 +178,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
       <a class="tb-link dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
       <a class="tb-link" href={`/es/${cslug}#walk`}>Más árboles</a>
     </div>
-    <SignInModal />
+    <SignInModal es />
 </main>
   <Fragment slot="scripts" set:html={scripts} />
 </Base>

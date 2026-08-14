@@ -12,24 +12,51 @@
 // page uses) and the magic link returns to the CURRENT page; signin-js.ts
 // parses the token hash on every page that includes this component, so
 // logging in never loses the visitor's place.
+interface Props { es?: boolean }
+const { es = false } = Astro.props;
+const T = es ? {
+  title: "Tus árboles en todos tus dispositivos",
+  sub: "Una cuenta gratuita, un email, sin contraseña. Tus árboles guardados te siguen a cualquier dispositivo.",
+  placeholder: "tu@ejemplo.com",
+  send: "Envíame un enlace de acceso",
+  more: "Más opciones",
+  or: "o",
+  app: "Descarga la app",
+  fine: 'Solo guardamos tu dirección de email, para los enlaces de acceso y nada más. <a href="/privacy">Privacidad</a>',
+  sentTitle: "Mira tu bandeja de entrada",
+  sentBody1: "Hemos enviado un enlace de acceso a ",
+  sentBody2: ". Funciona una vez, caduca en 15 minutos y te trae de vuelta aquí.",
+} : {
+  title: "Keep your trees on every device",
+  sub: "One free account, one email, no password. Your saved trees follow you everywhere.",
+  placeholder: "you@example.com",
+  send: "Email me a sign-in link",
+  more: "More options",
+  or: "or",
+  app: "Get the app",
+  fine: 'We store only your email address, for sign-in links and nothing else. <a href="/privacy">Privacy</a>',
+  sentTitle: "Check your inbox",
+  sentBody1: "We sent a sign-in link to ",
+  sentBody2: ". It works once, expires in 15 minutes, and brings you straight back here.",
+};
 ---
 <dialog id="signin-dialog" class="collect-dialog signin-dialog">
   <button type="button" class="signin-close" id="signin-close" aria-label="Close">&#10005;</button>
   <p class="signin-mark" aria-hidden="true">&#127795;</p>
   <div id="signin-ask">
-    <h3>Keep your trees on every device</h3>
-    <p>One free account, one email, no password. Your saved trees follow you everywhere.</p>
+    <h3>{T.title}</h3>
+    <p>{T.sub}</p>
     <form id="signin-form" class="signin-form" autocomplete="email">
-      <input type="email" id="signin-email" placeholder="you@example.com" aria-label="Email address" required>
-      <button type="submit" class="go-btn">Email me a sign-in link</button>
+      <input type="email" id="signin-email" placeholder={T.placeholder} aria-label="Email address" required>
+      <button type="submit" class="go-btn">{T.send}</button>
     </form>
-    <a class="go-btn ghost signin-more" href="/account">More options</a>
-    <p class="signin-or">or</p>
-    <a class="go-btn signin-app" href="/app" data-ev="app-cta">Get the app</a>
-    <p class="signin-fine">We store only your email address, for sign-in links and nothing else. <a href="/privacy">Privacy</a></p>
+    <a class="go-btn ghost signin-more" href="/account">{T.more}</a>
+    <p class="signin-or">{T.or}</p>
+    <a class="go-btn signin-app" href="/app" data-ev="app-cta">{T.app}</a>
+    <p class="signin-fine" set:html={T.fine}></p>
   </div>
   <div id="signin-sent" hidden>
-    <h3>Check your inbox</h3>
-    <p>We sent a sign-in link to <strong id="signin-sent-to"></strong>. It works once, expires in 15 minutes, and brings you straight back here.</p>
+    <h3>{T.sentTitle}</h3>
+    <p>{T.sentBody1}<strong id="signin-sent-to"></strong>{T.sentBody2}</p>
   </div>
 </dialog>
