@@ -857,20 +857,20 @@
    "trees": 8
   },
   {
-   "city": "Zaragoza",
-   "country": "Spain",
-   "slug": "zaragoza",
-   "status": "published",
-   "demand_views_90d": 87580,
-   "trees": 7
-  },
-  {
    "city": "Bath",
    "country": "United Kingdom",
    "slug": "bath",
    "status": "published",
    "demand_views_90d": 144950,
    "trees": 5
+  },
+  {
+   "city": "Zaragoza",
+   "country": "Spain",
+   "slug": "zaragoza",
+   "status": "published",
+   "demand_views_90d": 87580,
+   "trees": 7
   },
   {
    "city": "Granada",
@@ -946,14 +946,6 @@
    "trees": 11
   },
   {
-   "city": "Nara",
-   "country": "Japan",
-   "slug": "nara",
-   "status": "published",
-   "demand_views_90d": 7556,
-   "trees": 9
-  },
-  {
    "city": "Verona",
    "country": "Italy",
    "slug": "verona",
@@ -968,6 +960,14 @@
    "status": "published",
    "demand_views_90d": 118066,
    "trees": 6
+  },
+  {
+   "city": "Nara",
+   "country": "Japan",
+   "slug": "nara",
+   "status": "published",
+   "demand_views_90d": 7556,
+   "trees": 9
   },
   {
    "city": "Oxford",
