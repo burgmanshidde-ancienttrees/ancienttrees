@@ -71,9 +71,20 @@ export function metaFromStory(story: string): string {
 }
 
 /** Every contribution button points at our own form, carrying what the
- * visitor was doing so the form preselects it. */
-export function submitLink(kind: "city" | "tree" | "correction" | "press"): string {
-  return `/contribute?kind=${kind}`;
+ * visitor was doing so the form preselects it. From 2026-08-14 it also
+ * carries WHERE they were doing it: Hidde's complaint, that "something is
+ * wrong here" led to a form that asked which city and which tree "terwijl je
+ * dat in principe kan halen uit de pagina waar ik vandaan kom". The page
+ * knows; the reader never types it again. */
+export function submitLink(
+  kind: "city" | "tree" | "correction" | "press",
+  city?: string,
+  tree?: string,
+): string {
+  const q = new URLSearchParams({ kind });
+  if (city) q.set("city", city);
+  if (tree) q.set("tree", tree);
+  return `/contribute?${q.toString()}`;
 }
 
 /** Does the pin point at a rough spot rather than the tree itself?
