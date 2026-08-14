@@ -13,9 +13,9 @@ import { fitTitle } from "../../lib/title";
 import { ageToken, metaFromStory, submitLink, locationIsApproximate } from "../../lib/tree-copy";
 import WorthIt from "../../components/WorthIt.astro";
 import { WORTHIT_JS } from "../../lib/worthit-js";
+import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { seasonBlock } from "../../lib/phenology";
 import { mapHead, singlePinScript } from "../../lib/map";
-import { COLLECT_JS } from "../../lib/collect-js";
 import { cityTranslation, hreflangLinks } from "../../lib/i18n";
 
 function esc(s: string): string {
@@ -124,10 +124,10 @@ const graph = [
 ];
 const esTr = cityTranslation("es", cslug);
 const headExtra = mapHead() + ogImage + (esTr && esTr.trees[tree.id] ? "\n" + hreflangLinks("es", `/${cslug}/${tslug}`, `/es/${cslug}/${tslug}`) : "") + "\n" + ldScript(graph);
-const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS + WORTHIT_JS;
+const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
-  <main class="content-page">
+  <main class="content-page has-tree-bar">
     <Breadcrumbs items={crumbItems} />
     <h1>{tree.name}{tree.label && <span class="tree-label">{tree.label}</span>}</h1>
     <p class="chip-row">
@@ -151,25 +151,18 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS + WO
       </figure>
     )}
     <div class="action-row">
-      <button class="go-btn" id="collect-btn" type="button">Collect this tree</button>
-      <a class="go-btn ghost" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
+      <a class="go-btn dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
+      <button class="go-btn ghost save-btn" type="button" data-tree={tree.id} data-name={tree.name} aria-pressed="false">&#9825; <span>Save</span></button>
       <a class="action-link" href={`/${cslug}#walk`}>Walk more trees in {cityName}</a>
+      <a class="action-link" href="/saved">Saved trees</a>
     </div>
-    <dialog id="collect-dialog" class="collect-dialog">
-      <h3>Keep the trees you have stood in front of</h3>
-      <p>Collecting is the game of Ancient Trees: stand in front of a tree like this one, tick it off, and your collection of old giants grows city by city. It lives in the Ancient Trees app, along with walking routes past several trees.</p>
-      <div class="collect-actions">
-        <a class="go-btn" href="/app">Get the app</a>
-        <button class="go-btn ghost" type="button" id="collect-close">Not now</button>
-      </div>
-    </dialog>
     {tree.how_to_recognise && (
       <p class="which-one"><b>Which one is it?</b> {tree.how_to_recognise}</p>
     )}
     <div class="prose-block"><p>{tree.story}</p></div>
     <Fragment set:html={seasonHtml} />
     <div class="map-embed"><div id="map" class="map"></div></div>
-    <p class="go-note">The buttons above open directions and collecting. {tree.transport ?? ""}</p>
+    <p class="go-note">The button above opens directions in your maps app. {tree.transport ?? ""}</p>
     {isApprox && (
       <p class="approx-note">
         The pin marks the right spot roughly, not the tree itself. It stands here, but we have not confirmed the precise position on the ground yet.{" "}
@@ -202,6 +195,11 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + COLLECT_JS + WO
       <p class="report-line">This page was researched from a distance. If you know this tree, you know things we do not.</p>
       <a class="report-btn" href={submitLink("correction")}>Something is wrong here</a>
       <a class="report-btn" href={submitLink("tree")}>Suggest another tree</a>
+    </div>
+    <div class="tree-bar" aria-label="Actions">
+      <a class="go-btn dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
+      <a class="go-btn ghost" href={`/${cslug}#walk`}>Walk more</a>
+      <a class="go-btn ghost" href="/app">Get app</a>
     </div>
   </main>
   <Fragment slot="scripts" set:html={scripts} />
