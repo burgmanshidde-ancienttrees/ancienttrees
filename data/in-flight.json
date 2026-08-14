@@ -4,18 +4,6 @@
   "expire_hours": 4,
   "claims": [
     {
-      "target": "trento",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-14T20:44:23+00:00"
-    },
-    {
-      "target": "guimaraes",
-      "kind": "write",
-      "by": "session",
-      "claimed_at": "2026-08-14T20:44:23+00:00"
-    },
-    {
       "target": "alicante",
       "kind": "verify",
       "by": "night-run",
