@@ -115,7 +115,7 @@ export interface ExploreTreeFeature {
   // serializes ([None, None] -> [null, null]) rather than crashing the
   // build, exactly like the unfiltered-trees quirk in search-index.json.
   geometry: { type: "Point"; coordinates: [number | null, number | null] };
-  properties: { name: string; url: string; cs: string; city: string; age: string; now: 0 | 1 };
+  properties: { id: string; name: string; url: string; cs: string; city: string; age: string; now: 0 | 1 };
 }
 export interface ExploreCityRow {
   city: string;
@@ -248,12 +248,21 @@ function initTreeLayers() {
   map.on('click', 'tree', function(e) {
     var p = e.features[0].properties;
     var badge = p.now == 1 ? ' <span class="pop-now">at its best now</span>' : '';
+    // The heart rides in the popup (the 2026-08-14 consistency pass: the map
+    // is where AllTrails' hearts live most densely, and ours had none).
+    // TREE_ACTIONS_JS handles the click by delegation; atPaintSaves() sets
+    // the saved state on this late-added node.
+    var heart = '<button class="save-btn heart-btn heart-compact" type="button" data-tree="' + p.id +
+                '" data-name="' + p.name.replace(/"/g, '&quot;') + '" aria-pressed="false">' +
+                '<svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg>' +
+                '<span>Save</span></button>';
     new maplibregl.Popup({offset: 12})
       .setLngLat(e.features[0].geometry.coordinates)
       .setHTML('<strong>' + p.name + '</strong>' + badge + '<br>' + p.age + ' &middot; ' + p.city +
                '<br><a href="' + p.url + '">See this tree &rarr;</a> &middot; ' +
-               '<a href="' + p.cs + '">All ' + p.city + ' trees &rarr;</a>')
+               '<a href="' + p.cs + '">All ' + p.city + ' trees &rarr;</a><br>' + heart)
       .addTo(map);
+    if (window.atPaintSaves) window.atPaintSaves();
   });
   ['clusters', 'tree'].forEach(function(l) {
     map.on('mouseenter', l, function() { map.getCanvas().style.cursor = 'pointer'; });

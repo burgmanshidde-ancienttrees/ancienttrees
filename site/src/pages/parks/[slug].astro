@@ -2,6 +2,10 @@
 // Contract H — Park page. Ported from build_park_page(), build_site.py:3908-3959.
 import { getCollection, type CollectionEntry } from "astro:content";
 import Base from "../../layouts/Base.astro";
+import SaveHeart from "../../components/SaveHeart.astro";
+import SignInModal from "../../components/SignInModal.astro";
+import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
+import { SIGNIN_JS } from "../../lib/signin-js";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { cityIsRenderable, treeSlugsForCity, type CityEntry, type Tree } from "../../lib/trees";
 import { groupTreesByPark, PARK_MIN_TREES } from "../../lib/parks";
@@ -118,5 +122,7 @@ const graph = [...SITE_SCHEMA, breadcrumbSchema(crumbItems, canonical), { "@type
         </Fragment>
       ))}
     </p>
-  </main>
+    <SignInModal />
+</main>
+  <Fragment slot="scripts" set:html={TREE_ACTIONS_JS + SIGNIN_JS} />
 </Base>
