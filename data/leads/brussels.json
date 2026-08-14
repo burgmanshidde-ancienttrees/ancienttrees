@@ -18,32 +18,32 @@
     },
     {
       "register_id": "646",
-      "name": "London Plane of Parc d'Egmont",
+      "name": "London Plane of Parc d'Egmont [RESOLVED 2026-08-14, delivered as bru_017]",
       "species": "Platanus x hispanica",
       "girth_cm": 367,
       "lat": 50.83767,
       "lng": 4.35572,
-      "status": "lead",
+      "status": "resolved",
       "why": "Second thickest tree in the park after the sycamore, but ranked only 98th of its species in the region, and the register's per-tree page carries no height. A good tree with nothing yet to say about it."
     },
     {
       "register_id": "628",
-      "name": "Horse Chestnut of Parc d'Egmont",
+      "name": "Horse Chestnut of Parc d'Egmont [RESOLVED 2026-08-14, delivered as bru_018]",
       "species": "Aesculus hippocastanum",
       "girth_cm": 308,
       "lat": 50.83757,
       "lng": 4.35558,
-      "status": "lead",
+      "status": "resolved",
       "why": "90th of its species in the region and the only tree in the cluster whose heritage page failed to render its site block on fetch, so the site attribution is from the dataset alone. bru_010 already covers horse chestnut for Brussels."
     },
     {
       "register_id": "645",
-      "name": "Oriental Plane of Parc d'Egmont",
+      "name": "Oriental Plane of Parc d'Egmont [RESOLVED 2026-08-14, delivered as bru_019]",
       "species": "Platanus orientalis",
       "girth_cm": 272,
       "lat": 50.83814,
       "lng": 4.35634,
-      "status": "lead",
+      "status": "resolved",
       "why": "Named on the park's own information panel, 22 metres tall, 21st of its species in the region. Skipped only because bru_003, the Parc Leopold oriental plane, is the thickest of its species in the entire region and would make this one look like a repeat."
     },
     {
@@ -78,12 +78,12 @@
     },
     {
       "register_id": "7112",
-      "name": "Kentucky Coffeetree of Parc d'Egmont",
+      "name": "Kentucky Coffeetree of Parc d'Egmont [RESOLVED 2026-08-14, delivered as bru_020]",
       "species": "Gymnocladus dioica",
       "girth_cm": 73,
       "lat": 50.837894,
       "lng": 4.357281,
-      "status": "lead",
+      "status": "resolved",
       "why": "Fourth largest of its species in the region on a girth of only 73cm, which says how rare the species is here rather than how big this tree is. Too young to stand in front of; worth revisiting in a decade."
     },
     {
@@ -197,5 +197,6 @@
       "longitude": 4.35721,
       "reason": "All three recorded as 'Plantation en massif', a mass planting on the street between the two Sablon squares. A group, not a point."
     }
-  ]
+  ],
+  "note_2026_08_14": "Write pass 2026-08-14: bru_017 to bru_020 delivered from this file's Parc d'Egmont leads (register 646, 628, 645, 7112). Each had been held on a taste judgement rather than a rule (thin story, species already covered, a bigger sibling elsewhere, too young), which is not a reason to hold a tree back. The Kentucky coffeetree ships as what it is, a small tree whose ranking measures the rarity of the species in Brussels; the story says so. Note for the next Brussels pass: sites.heritage.brussels returned a database error to every fetch on 2026-08-14 ('Erreur mysql', connexion au serveur localhost impossible), including with a browser user agent, so the per-tree pages were unreachable that day and nothing new was read from them. The CC BY open export in data/registers/brussels-arbres-remarquables.json was the working source."
 }

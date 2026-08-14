@@ -11,6 +11,12 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-14 (continued) - Brussels reaches 20, and Parc d'Egmont is now a ten-tree walk
+
+Same write pass, third city. +4, all in Parc d'Egmont, all from the region's CC BY register: the London plane, the horse chestnut, the oriental plane and a Kentucky coffeetree. Every one of the four had been held back in the leads file on a judgement call rather than a rule (thin story, species already covered, a bigger sibling in another park, too young to bother with), which is exactly what CLAUDE.md says must never stop a tree going live. Ten of Brussels' twenty trees now stand in one hectare and a half, which is the densest walk on the site.
+
+The coffeetree is published as what it is: seventy three centimetres round, fourth largest of its kind in the region, which measures how rare the species is in Brussels rather than how big this tree is, and the story says that in those words. Worth knowing for the next Brussels pass: sites.heritage.brussels returned a MySQL error to every fetch today, browser user agent included, so nothing new could be read from the per-tree pages and the open export carried the whole load.
+
 ## 2026-08-14 (continued) - Seville reaches 20, three of them inside the Alcázar
 
 Same write pass, second city. +4 from the municipal catalogue of singular trees: the Alcázar's magnolia (4.70 metres round, and the survey names the decay fungus on it by name), a Judas tree that has reached sixteen metres and flowers out of its own bark in March, the bitter orange the catalogue calls El Naranjo de Pedro el Cruel, and the plane growing against the Macarena wall. All four are single-sourced on the 2022 catalogue and ship flagged, quoting the city's own condition wording rather than paraphrasing it.
