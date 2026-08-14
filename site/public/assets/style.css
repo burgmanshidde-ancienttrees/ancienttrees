@@ -734,6 +734,17 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    one, added 2026-08-12 after a journalist stood in front of the right spot
    and could not tell. Styled as a practical note rather than prose: it is
    read standing up, on a phone, with the tree in view. */
+/* "Worth the visit?" (2026-08-14, DECISIONS.md). Quiet by design: a text-size
+   question and two small buttons, never a component that outshouts the story. */
+.worthit { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 1.1rem 0; font-size: 13.5px; color: var(--ink-light); }
+.worthit-compact { margin: 0.5rem 0 0; }
+.worthit-q { font-weight: 700; }
+.worthit-btn { font-size: 16px; line-height: 1; padding: 0.35rem 0.7rem; border: 1px solid var(--cream-dark); border-radius: 999px; background: #fff; cursor: pointer; }
+.worthit-btn:hover { border-color: var(--moss); }
+.worthit-done { color: var(--moss); font-weight: 700; }
+.worthit-why { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+.worthit-chip { font-family: inherit; font-size: 12.5px; padding: 0.3rem 0.65rem; border: 1px solid var(--cream-dark); border-radius: 999px; background: var(--cream); cursor: pointer; color: var(--ink); }
+.worthit-chip:hover { border-color: var(--moss); }
 .which-one { font-size: 13.5px; line-height: 1.5; color: var(--ink); background: var(--cream);
              border-left: 3px solid var(--moss); border-radius: 0 8px 8px 0;
              padding: 0.6rem 0.9rem; margin: 0 0 1rem; }

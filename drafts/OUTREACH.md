@@ -404,7 +404,7 @@ why_them is trusted for ownership now. 106 contacts remain; the daily cap is 40.
 | 2026-08-10 | Brooklyn Botanic Garden, visitorservices@bbg.org | Photos of the Kansas hawthorn + which of their veterans we missed, batch 003-photo-gap | **sent** |
 | 2026-08-10 | Casey Trees, conservation@caseytrees.org | Photos; 13 of our 14 Washington trees have none, and they measure champions, batch 003-photo-gap | **sent** |
 | 2026-08-10 | Rock Creek Conservancy, info@rockcreekconservancy.org | Photos of Montrose Park and Dumbarton Oaks Park, batch 003-photo-gap | **sent** |
-| 2026-08-10 | Dumbarton Oaks Park Conservancy, info@dopark.org | Photos of the beech grove + is the grove's story right, batch 003-photo-gap | **sent** |
+| 2026-08-10 | Dumbarton Oaks Park Conservancy, info@dopark.org | Photos of the beech grove + is the grove's story right, batch 003-photo-gap | **sent**; holding reply 2026-08-13 from Sara Carlson (Fellow): interesting, will circle back with answers. No action needed until they do; a positive first touch from batch 003 |
 | 2026-08-10 | The Morton Arboretum, trees@mortonarb.org | Which Chicago trees are we missing; six is fewer than any other big city, batch 003-photo-gap | **sent** |
 | 2026-08-10 | Chicago Park District, play@chicagoparkdistrict.com | Photos of the Wooded Island oaks + which park veterans we missed, batch 003-photo-gap | **sent** |
 | 2026-08-10 | Dansk Dendrologisk Forening, formand@dendron.dk | Which Copenhagen tree are we missing; their yearbook already corroborated ours, batch 003-photo-gap | **sent** |
@@ -422,8 +422,8 @@ why_them is trusted for ownership now. 106 contacts remain; the daily cap is 40.
 | 2026-08-09 | Amigos do Jardim Botânico de Lisboa, amigosdobotanico@gmail.com | Which Lisbon tree are we missing; they run tree walks there, batch 002-pt | **sent** |
 | 2026-08-09 | Sociedade Portuguesa de Botânica, spbotanica@gmail.com | Confirm two species identifications we are unsure of, batch 002-pt | **sent** |
 | 2026-08-08 | Het Parool, redactie@parool.nl | Amsterdam local pitch (Heimanseik + Plantage walk), batch 001 | **sent** |
-| 2026-08-08 | DUIC, redactie@duic.nl | Utrecht local pitch (Uithof linden), batch 001 | **sent**, forwarded by DUIC to Oud-Utrecht; Piet van Dijck replied 2026-08-12 that he is writing it up for "Op pad met Oud-Utrecht", planned first half of 2027. Reply drafted: drafts/reply-oud-utrecht.md |
-| 2026-08-08 | Brabants Dagblad, stadsredactie@bd.nl | Den Bosch local pitch (Bastion Oranje maple), batch 001 | **sent** |
+| 2026-08-08 | DUIC, redactie@duic.nl | Utrecht local pitch (Uithof linden), batch 001 | **sent**, forwarded by DUIC to Oud-Utrecht; Piet van Dijck replied 2026-08-12 that he is writing it up for "Op pad met Oud-Utrecht", planned first half of 2027. Hidde's reply (drafts/reply-oud-utrecht.md) **sent 2026-08-14** |
+| 2026-08-08 | Brabants Dagblad, stadsredactie@bd.nl | Den Bosch local pitch (Bastion Oranje maple), batch 001 | **sent**; Roel replied 2026-08-12 (interested, two objections), Hidde's follow-up (drafts/reply-brabants-dagblad.md) **sent 2026-08-14** after all 11 trees got recognition lines and the Weichselboom photo |
 | 2026-08-08 | Haarlems Dagblad, stadsredactie@haarlemsdagblad.nl | Haarlem local pitch (Lodewijk Napoleon beech), batch 001 | **sent** |
 | 2026-08-08 | De Gelderlander, redactie@gelderlander.nl | Arnhem local pitch (De Poortwachters), batch 001 | **sent** |
 | 2026-08-08 | Generalitat de Catalunya, arbresmonumentals.tes@gencat.cat | Permission to show Catalonia's monumental trees; unlocks Barcelona's trees AND its photos | **sent**, no reply yet |
