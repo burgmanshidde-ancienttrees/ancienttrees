@@ -2,46 +2,24 @@
  "city": "Como",
  "country": "Italy",
  "city_slug": "como",
- "note": "From the 2026-08-13 verification pass on the MASAF register candidates in data/research/como-register-candidates.json. 8 trees shipped to data/research/como-verified.json (a lakefront cluster: Villa Olmo, Villa Geno x3, Villa del Grumello x3, plus the Museo Giovio plane in the historic centre). Everything below either failed the collectible-point/access bar outright (blocked) or was not fully researched in the ~40 minute window (leads).",
+ "note": "2026-08-14 verify pass on the 5 leads from the 2026-08-13 pass (see data/research/como-verified.json for the 2 new deliveries, com_008 and com_009). One of the five (Piazza Camerlata) cleared on register + obvious public-square access; one (Quarcino) cleared on register + a dated 2018 photo matching the register coordinates plus the CLAUDE.md churchyard default, no explicit restriction found despite a targeted search; one (Villa Roccolo, Grandate) turned out to be private and moved to blocked; two (Via Baserga, Museo Giovio) remain leads, unresolved on access.",
  "leads": [
   {
    "name": "The Plane Tree of Via Baserga",
    "species": "American Sycamore (Platanus occidentalis)",
    "lat": 45.784389,
    "lng": 9.093667,
-   "why_a_lead": "Existence confirmed by both the MASAF register (sheet 21/C933/CO/03, girth 490cm) and the independent RAMI register ('Platano via Baserga'), which also lists a separate hornbeam (Carpinus betulus) at the same address not in our register batch. But the locality is a specific street number (Via Baserga 39) rather than a named park or piazza, and this pass did not confirm whether the tree stands on public street frontage or inside a private garden. 3.68km from centre, a separate southern cluster rather than part of the lakefront walk.",
-   "next_step": "Check satellite imagery or a street-level source (Google Street View is fine to look at, just not to scrape) for whether the tree is visible from the public street, then treat as confirmed access if so."
-  },
-  {
-   "name": "The Plane Tree of Piazza Camerlata",
-   "species": "London Plane (Platanus x acerifolia) per MASAF, or Platanus hispanica per RAMI, same naming disagreement as com_008",
-   "lat": 45.790253,
-   "lng": 9.085039,
-   "why_a_lead": "Existence confirmed by both MASAF (sheet 08/C933/CO/03, girth 430cm, the smallest girth in this batch) and RAMI ('Platano Piazza Camerlata'). Piazza Camerlata is a genuine public square (best known for its 1935/1960 Cattaneo-Radice fountain, starting point for the Baradello castle walk), so access is very likely fine, but no age or independent size source was found this pass and it was not otherwise researched. 2.94km from the lakefront cluster.",
-   "next_step": "A local press search ('platano storico Camerlata') or the comune's own tree register may give an age; otherwise ships fine on register + public-square access alone."
-  },
-  {
-   "name": "The Horse Chestnut of Quarcino",
-   "species": "Horse Chestnut (Aesculus hippocastanum)",
-   "lat": 45.836567,
-   "lng": 9.04225,
-   "why_a_lead": "Existence confirmed by MASAF (sheet 09/C933/CO/03, girth 335cm) and RAMI ('Ippocastano di Quarcino'); a Wikimedia Commons category for the small 10th-century Romanesque church of Santi Filippo e Giacomo in Quarcino includes a photo labelled 'secular horse chestnut' near the church. Church grounds are usually publicly walkable in Italy but this pass found no source stating so explicitly for this specific churchyard. 3.88km from the lakefront cluster, a different neighbourhood (Quarcino/Sagnino, western hills).",
-   "next_step": "Confirm the tree stands in the open churchyard rather than an adjoining private garden, e.g. via the Wikimedia Commons photo itself or a local parish page."
-  },
-  {
-   "name": "The Beech of Villa Roccolo, Grandate",
-   "species": "European Beech (Fagus sylvatica)",
-   "lat": 45.7793,
-   "lng": 9.058711,
-   "why_a_lead": "MASAF register sheet 01/E139/CO/03, girth 400cm. Not researched this pass: different comune (Grandate, 4.57km from Como centre), no time left in the window."
+   "why_a_lead": "Existence confirmed by both the MASAF register (sheet 21/C933/CO/03, girth 490cm per the earlier brief; RAMI's own field measurement reads 4.30m at 130cm height, close but not identical, likely a different point on the trunk or a later remeasurement) and the independent RAMI register (id 17613, 'Platano via Baserga', coordinates 45.784388,9.093731, health rated 'Buona'), which also lists a separate hornbeam (Carpinus betulus, RAMI id 17614) at the same address. RAMI's own 'Accessibilità' field rates the tree 'Accessibile', but this field measures how easy the tree is to physically reach/survey in the field, not whether the ground it stands on is public or private, so it does NOT settle the private-garden question. This pass could not find a street-level or satellite description confirming whether the tree stands on public street frontage at Via Baserga or inside a private garden; a similarly-named property 'Villa il Platano' turned out to be at a different address (Via Varesina 253) and is unrelated. 3.68km from centre, a separate southern cluster rather than part of the lakefront walk.",
+   "next_step": "Look at Street View or a recent aerial tile for Via Baserga 39 (a session with image-viewing access can do this properly per BRIEF_RESEARCH.md's aerial-imagery rules) to see whether the crown stands over the street/pavement or behind a garden wall/fence."
   },
   {
    "name": "The Plane Tree of Museo Giovio",
-   "species": "American Sycamore (Platanus occidentalis)",
+   "species": "American Sycamore per MASAF / hispanica per RAMI",
    "lat": 45.808864,
    "lng": 9.086811,
    "status": "lead",
-   "why": "Held on access, not on quality. The tree stands in the courtyard of the Musei Civici; entry follows museum admission rather than being open from the piazza, and the exhibition halls were reported closed for maintenance when it was verified on 2026-08-13. We do not promise a visitor something that is not there, so it ships the moment opening is confirmed. Everything else is ready: 710cm girth and 32m height agree across three sources. Note the species disagreement, MASAF says Platanus occidentalis and RAMI says hispanica; do not assert either with confidence."
+   "why": "Still held on access. Checked 2026-08-14: the Musei Civici (Museo Giovio) remain closed for renovation; the most specific timeline found (EspansioneTv, reporting comments from official Enrico Colombo) targets only a PARTIAL reopening of the ground floor of the two palaces 'per la seconda metà del 2026' (second half of 2026), with no month given and no confirmation it has actually happened. No source found stating the courtyard (where the tree stands) is accessible independently of the exhibition halls. Everything else is ready: 710cm girth and 32m height agreed across three sources per the earlier pass. Note the species disagreement, MASAF says Platanus occidentalis and RAMI says hispanica; do not assert either with confidence.",
+   "next_step": "Recheck comune.como.it or the museum's own page for an actual reopening announcement before shipping; do not re-run this exact web search more than about once a month, as the answer will not change faster than that."
   }
  ],
  "blocked": [
@@ -64,6 +42,11 @@
    "name": "The Stone Pines of Villa del Grumello",
    "species": "Stone Pine (Pinus pinea)",
    "reason": "Register sheet 17/C933/CO/03, 'Insieme omogeneo di Pinus pinea', same address as the shipped Grumello cedar/ginkgo/magnolia. A homogeneous group planting rather than one identifiable tree: fails the collectible-point test, even though the park itself (com_005-007) is open."
+  },
+  {
+   "name": "The Beech of Villa Roccolo, Grandate",
+   "species": "European Beech (Fagus sylvatica)",
+   "reason": "MASAF register sheet 01/E139/CO/03, girth 400cm. Checked 2026-08-14: 'Villa Il Roccolo' is a private luxury estate for sale, explicitly described by its own listing as sitting 'in a reserved residential area' at the top of a wooded hill, surrounded only by its own centuries-old woods (over 20,000 sqm of private grounds). No public access of any kind. Private land, hard rule 10."
   }
  ]
 }

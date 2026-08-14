@@ -1321,6 +1321,24 @@
     "note": "all near-in candidates were duplicates (sin_002, sin_003) or blocked (private+mutilated 800yr chestnut, avenue-not-ensemble Colares plane trio); reasons recorded in data/leads/sintra.json, nothing shipped",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "toulouse",
+    "kind": "verify",
+    "tokens": 136174,
+    "trees": 2,
+    "note": "Shipped Saint-Sylve hackberry and Soupetard lime from existing leads (church/street-furniture access confirmed via OSM); closes Toulouse gap to 10",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "strasbourg",
+    "kind": "verify",
+    "tokens": 113971,
+    "trees": 1,
+    "note": "Verified stg_010 Parasol Pine (Scots Pine), Parc de l Orangerie, register-sourced/flagged, closes Strasbourg gap to 10",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "com_008",
+    "name": "The Plane Tree of Piazza Camerlata",
+    "species": "London Plane (Platanus x acerifolia)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Piazzale Camerlata, 22100 Como CO, Italy",
+      "latitude": 45.790333,
+      "longitude": 9.085045,
+      "neighbourhood": "Camerlata"
+    },
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 08/C933/CO/03 (girth 430cm)",
+      "https://ilregistrodeglialberi.it/17608-platano-piazza-camerlata-platano-comune-como-co-lombardia (RAMI, 'Platano Piazza Camerlata', girth 4.30m matching MASAF, species given as Platanus hispanica, health 'Buona')",
+      "https://it.wikipedia.org/wiki/Camerlata (confirms Piazzale Camerlata as a public square and historic traffic hub with the Cattaneo-Radice fountain)"
+    ],
+    "access": "Free, standing in a public square (Piazzale Camerlata), open at all times",
+    "transport": "Como San Giovanni station, then roughly 20-25 min on foot or a short bus ride south to Piazzale Camerlata",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Two independent sources agree closely on girth (MASAF 430cm, RAMI 4.30m/430-471cm depending on measurement point), both call it the smallest-girth plane in this MASAF batch. No age published by either source; a targeted local-press search ('platano storico Camerlata') found nothing specific to this tree, only general history of the square. Species disagreement between sources: MASAF calls it Platanus x acerifolia (London Plane), RAMI calls it Platanus hispanica (the same hybrid under a different Latin synonym; hispanica and x acerifolia are used interchangeably for the London/common plane in Italian sources, not two different species). Piazzale Camerlata is a genuine, unambiguous public square: a historic commercial crossroads since the 15th century (on the old Via Regina), took its current form in 1879, and today centres on a monumental fountain by Cesare Cattaneo and Mario Radice. RAMI's own 'Accessibilità' field rates the tree 'Accessibile'. Health rated 'Buona' (good) by RAMI as of their September 2025 survey, which is recent evidence of the tree being alive and in good condition. This is a standalone tree in a traffic roundabout/square, roughly 2.9km from the lakefront cluster (com_001-007), so it forms its own single-tree stop rather than joining that walk; note this to whoever writes the story."
+  },
+  {
+    "id": "com_009",
+    "name": "The Horse Chestnut of Quarcino",
+    "species": "Horse Chestnut (Aesculus hippocastanum)",
+    "age_estimate": "",
+    "age_min": null,
+    "age_max": null,
+    "location": {
+      "address": "Via Giovanni Fattori 20, 22100 Como CO, Italy (by the church of Santi Filippo e Giacomo in Quarcino)",
+      "latitude": 45.836567,
+      "longitude": 9.04225,
+      "neighbourhood": "Quarcino"
+    },
+    "verified_sources": [
+      "MASAF national monumental trees register, sheet 09/C933/CO/03 (girth 335cm)",
+      "https://ilregistrodeglialberi.it/17721-ippocastano-di-quarcino-ippocastano-como-co-lombardia (RAMI, 'Ippocastano di Quarcino', coordinates 45.836691,9.042269, health 'Buona')",
+      "https://commons.wikimedia.org/wiki/File:Ippocastano_chiesa_di_Quarcino_Q5571761.jpg (Wiki Loves Monuments Italia 2018 photo, coordinates 45°50'11.64\"N 9°02'32.1\"E = 45.836567,9.042250, an exact match to the MASAF coordinate, taken 27 Sep 2018, category 'Veteran trees in Como')",
+      "https://fondoambiente.it/luoghi/chiesetta-di-quarcino-sagnino (FAI 'Places of the Heart' listing for the church, confirming it as a known small public heritage site at this street address)"
+    ],
+    "access": "Free, in the churchyard of the small 10th-century Romanesque parish church of Santi Filippo e Giacomo in Quarcino (also called Sagnino); no source found stating restricted hours or closure, treated as an ordinarily open Italian parish churchyard per project default (CLAUDE.md's churchyard rule) since no evidence of enclosure or restriction turned up despite a targeted search",
+    "transport": "roughly 4km from Como centre in the Quarcino/Sagnino hill neighbourhood; reachable by local bus or a ~15 min drive/taxi, no direct rail stop",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Existence and species confirmed by MASAF and RAMI (both agree it is Aesculus hippocastanum; RAMI rates health 'Buona'/good). Position independently corroborated by a dated 2018 Wiki Loves Monuments photo whose EXIF/listed coordinates match the MASAF point almost to the metre, and the photo itself (titled 'secular horse chestnut', category 'Veteran trees in Como') shows the tree beside the church. No age published anywhere; leave age_estimate empty per the missing-age rule rather than guess. Access: this is a small, ancient (10th-century, three building phases) Romanesque parish church in a residential hill neighbourhood, address is an ordinary street number rather than a walled estate, and it is nominated on FAI's public 'Luoghi del Cuore' (Places of the Heart) list, which is itself evidence of public affection and visibility rather than private/restricted status. No source states opening hours or says the churchyard is closed. This is the CLAUDE.md default for churchyards (public ground in practice) applied without an explicit access statement to lean on, flagged here so a later pass or reader can confirm hours on the ground. Distinguish from the blocked Prague/Perugia cases, which had explicit evidence of restriction (a register calling the site inaccessible, an active military school); nothing here says this one is closed. Roughly 3.9km from Como's lakefront cluster (com_001-007) and 2.9km from com_008 (Piazza Camerlata), a separate hill-district stop rather than part of that walk."
+  }
+]
+
