@@ -23,6 +23,8 @@ export const TREE_ACTIONS_JS = `
     });
   }
   paint(saved());
+  var dlgClose = document.getElementById('save-dialog-close');
+  if (dlgClose) dlgClose.addEventListener('click', function() { document.getElementById('save-dialog').close(); });
   document.addEventListener('click', function(e) {
     var d = e.target.closest('.dir-link');
     if (d) { try { at.track('directions'); } catch (err) {} }
@@ -33,10 +35,15 @@ export const TREE_ACTIONS_JS = `
     else {
       map[b.dataset.tree] = { n: b.dataset.name, u: location.pathname };
       try { at.track('save'); } catch (err) {}
-      // The moment after a save is the funnel (AllTrails pushes its signup
-      // here; until accounts open, the app page is the honest destination).
-      var fun = document.querySelector('.save-funnel');
-      if (fun) fun.hidden = false;
+      // AllTrails converges every gated tap on one signup surface; ours is
+      // this dialog, and until accounts open its ask is the app. Shown on the
+      // FIRST save only: the save itself always works instantly and locally,
+      // and a modal on every save would be nagging, not a funnel.
+      var dlg = document.getElementById('save-dialog');
+      if (dlg && dlg.showModal && !localStorage.getItem('at_save_dialog_seen')) {
+        localStorage.setItem('at_save_dialog_seen', '1');
+        dlg.showModal();
+      }
     }
     try { localStorage.setItem(KEY, JSON.stringify(map)); } catch (err) {}
     paint(map);

@@ -737,32 +737,24 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
 /* The tree page's hanging action bar, AllTrails' funnel at phone width only
    (Hidde, 2026-08-14, DECISIONS.md): directions primary, walk middle, app
    last. Desktop keeps the in-page action row and no bar. */
-.tree-bar { display: none; }
-@media (max-width: 640px) {
-  /* AllTrails' look, taken literally after Hidde rejected the first version:
-     white ground, real elevation, generous tap targets, one clearly dominant
-     button. Two slots only; the app funnel is the nav's job on every page. */
-  .tree-bar { display: flex; gap: 0.65rem; position: fixed; left: 0; right: 0; bottom: 0;
-    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
-    background: #fff; border-top: 1px solid rgba(0,0,0,0.06);
-    box-shadow: 0 -6px 24px rgba(0,0,0,0.12); z-index: 40; }
-  .tree-bar .go-btn { flex: 1.7 1 0; text-align: center; white-space: nowrap;
-    font-size: 15.5px; font-weight: 700; padding: 0.85rem 1rem; min-width: 0;
-    border-radius: 999px; }
-  .tree-bar .go-btn.ghost { flex: 1 1 0; background: #fff; }
-  main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
-  .action-row.desktop-only { display: none; }
-}
-.chip-save { font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
-  display: inline-flex; align-items: center; gap: 0.35rem;
-  padding: 0.3rem 0.75rem; border: 1.5px solid var(--cream-dark); border-radius: 999px;
-  background: #fff; color: var(--ink); }
-.chip-save .heart { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2; }
-.chip-save[aria-pressed="true"] { border-color: var(--moss); color: var(--moss); }
-.chip-save[aria-pressed="true"] .heart { fill: var(--moss); stroke: var(--moss); }
-.save-funnel { display: block; width: 100%; font-size: 13px; color: var(--ink-light); margin-top: 0.4rem; }
-.save-funnel a { color: var(--moss); }
-.save-funnel[hidden] { display: none; }
+/* The action capsule, AllTrails taken literally (Hidde, 2026-08-14: "make it
+   look more like alltrails"): one dark floating pill, save first in green,
+   directions and the walk beside it, every viewport. The old white strip and
+   the desktop action row are both gone; this is the page's one action zone. */
+.tree-bar { position: fixed; bottom: 1.1rem; left: 50%; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 0.3rem; z-index: 40;
+  background: #23261e; border-radius: 999px; padding: 0.4rem;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.28); max-width: calc(100vw - 1.6rem); }
+.tb-save { display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer;
+  font-family: inherit; font-size: 14.5px; font-weight: 700;
+  background: #b6e05f; color: #1d2016; border: none; border-radius: 999px;
+  padding: 0.65rem 1.1rem; white-space: nowrap; }
+.tb-save .heart { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
+.tb-save[aria-pressed="true"] .heart { fill: #1d2016; }
+.tb-link { color: #fff; text-decoration: none; font-size: 14.5px; font-weight: 700;
+  padding: 0.65rem 1.05rem; border-radius: 999px; white-space: nowrap; }
+.tb-link:hover { background: rgba(255,255,255,0.12); }
+main.content-page.has-tree-bar { padding-bottom: 5.6rem; }
 .app-pitch { margin: 2.2rem 0 1.2rem; padding: 1.2rem 1.3rem; background: var(--cream);
   border-radius: 14px; }
 .app-pitch strong { display: block; margin-bottom: 0.3rem; }
