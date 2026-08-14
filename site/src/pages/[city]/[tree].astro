@@ -134,6 +134,7 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <span class="chip">{tree.age_estimate ?? "age unknown"}</span>
       <span class="chip">{spCommon}</span>
       {isApprox && <span class="chip approx">pin approximate</span>}
+      <button class="save-btn chip-save" type="button" data-tree={tree.id} data-name={tree.name} aria-pressed="false">&#9825; <span>Save</span></button>
     </p>
     {photo && photo.url ? (
       <figure class="tree-photo">
@@ -150,9 +151,8 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
         </figcaption>
       </figure>
     )}
-    <div class="action-row">
+    <div class="action-row desktop-only">
       <a class="go-btn dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
-      <button class="go-btn ghost save-btn" type="button" data-tree={tree.id} data-name={tree.name} aria-pressed="false">&#9825; <span>Save</span></button>
       <a class="action-link" href={`/${cslug}#walk`}>Walk more trees in {cityName}</a>
       <a class="action-link" href="/saved">Saved trees</a>
     </div>
@@ -176,7 +176,6 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       <dt>Access</dt><dd>{tree.access ?? ""}</dd>
       <dt>Getting there</dt><dd>{tree.transport ?? ""}</dd>
     </dl>
-    <WorthIt treeId={tree.id} city={cityName} treeName={tree.name} />
     <h2>Trees nearby</h2>
     <div class="near-cards">
       {nearby.map((t) => (
@@ -190,16 +189,21 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TR
       Curious what else is standing in {cityName}? See <a href={`/${cslug}`}>all {allTrees.length} remarkable ancient trees in {cityName}</a> or find out <a href={`/${cslug}/oldest-tree`}>what the oldest tree in {cityName} is</a>.
       {spSlug && <Fragment> It is a {spCommon}; see <a href={`/species/${spSlug}`}>every {spCommon.toLowerCase()} on the site</a>.</Fragment>}
     </div>
+    <div class="app-pitch">
+      <strong>Collect the trees you stand in front of</strong>
+      <p>Ticking this one off, walks past several more, and your collection growing city by city: that is the Ancient Trees app.</p>
+      <a class="go-btn" href="/app">Get the app</a>
+    </div>
     <div class="report">
       <strong>We could use your help.</strong>
       <p class="report-line">This page was researched from a distance. If you know this tree, you know things we do not: the species, the age, the size, whether the photo shows the right tree, or that it is gone. Every field on this page can be corrected.</p>
+      <WorthIt treeId={tree.id} city={cityName} treeName={tree.name} />
       <a class="report-btn" href={submitLink("correction", cityName, tree.name)}>Something is wrong here</a>
       <a class="report-btn" href={submitLink("tree", cityName)}>Suggest another tree</a>
     </div>
     <div class="tree-bar" aria-label="Actions">
       <a class="go-btn dir-link" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Take me there</a>
       <a class="go-btn ghost" href={`/${cslug}#walk`}>Walk more</a>
-      <a class="go-btn ghost" href="/app">Get app</a>
     </div>
   </main>
   <Fragment slot="scripts" set:html={scripts} />

@@ -172,7 +172,6 @@ const scripts = singlePinScript(loc.latitude!, loc.longitude!);
     <div class="tree-bar" aria-label="Acciones">
       <a class="go-btn" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}`} target="_blank" rel="noopener">Cómo llegar</a>
       <a class="go-btn ghost" href={`/es/${cslug}#walk`}>Más árboles</a>
-      <a class="go-btn ghost" href="/app">La app</a>
     </div>
   </main>
   <Fragment slot="scripts" set:html={scripts} />

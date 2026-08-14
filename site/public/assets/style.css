@@ -739,16 +739,29 @@ footer { border-top: 1px solid var(--cream-dark); padding: 2.5rem 2.5rem 2rem; }
    last. Desktop keeps the in-page action row and no bar. */
 .tree-bar { display: none; }
 @media (max-width: 640px) {
-  .tree-bar { display: flex; gap: 0.5rem; position: fixed; left: 0; right: 0; bottom: 0;
-    padding: 0.6rem 0.8rem calc(0.6rem + env(safe-area-inset-bottom));
-    background: var(--paper, #faf7f0); border-top: 1px solid var(--cream-dark);
-    box-shadow: 0 -4px 16px rgba(0,0,0,0.07); z-index: 40; }
-  .tree-bar .go-btn { flex: 1 1 0; text-align: center; white-space: nowrap;
-    font-size: 14px; padding: 0.65rem 0.5rem; min-width: 0; }
-  .tree-bar .go-btn:first-child { flex-grow: 1.6; }
-  /* the page must scroll clear of the bar */
-  main.content-page.has-tree-bar { padding-bottom: 4.6rem; }
+  /* AllTrails' look, taken literally after Hidde rejected the first version:
+     white ground, real elevation, generous tap targets, one clearly dominant
+     button. Two slots only; the app funnel is the nav's job on every page. */
+  .tree-bar { display: flex; gap: 0.65rem; position: fixed; left: 0; right: 0; bottom: 0;
+    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
+    background: #fff; border-top: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 -6px 24px rgba(0,0,0,0.12); z-index: 40; }
+  .tree-bar .go-btn { flex: 1.7 1 0; text-align: center; white-space: nowrap;
+    font-size: 15.5px; font-weight: 700; padding: 0.85rem 1rem; min-width: 0;
+    border-radius: 999px; }
+  .tree-bar .go-btn.ghost { flex: 1 1 0; background: #fff; }
+  main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
+  .action-row.desktop-only { display: none; }
 }
+.chip-save { font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+  padding: 0.3rem 0.75rem; border: 1.5px solid var(--cream-dark); border-radius: 999px;
+  background: #fff; color: var(--ink); }
+.chip-save[aria-pressed="true"] { border-color: var(--moss); color: var(--moss); }
+.app-pitch { margin: 2.2rem 0 1.2rem; padding: 1.2rem 1.3rem; background: var(--cream);
+  border-radius: 14px; }
+.app-pitch strong { display: block; margin-bottom: 0.3rem; }
+.app-pitch p { font-size: 14px; color: var(--ink-light); margin: 0 0 0.9rem; }
+.report .worthit { margin: 0.9rem 0; }
 .save-btn[aria-pressed="true"] { border-color: var(--moss); color: var(--moss); }
 .saved-list { margin: 1rem 0 2rem; padding-left: 1.2rem; }
 .saved-list li { margin: 0.4rem 0; }
