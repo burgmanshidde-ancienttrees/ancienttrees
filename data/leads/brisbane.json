@@ -1,0 +1,16 @@
+{
+  "leads": [],
+  "blocked": [
+    {
+      "name": "Bunya Pine Avenue (City Botanic Gardens)",
+      "species": "Bunya Pine (Araucaria bidwillii)",
+      "location": {
+        "latitude": -27.4745206,
+        "longitude": 153.0311286,
+        "neighbourhood": "City Botanic Gardens"
+      },
+      "reason": "Not a single collectible point. Row of roughly 18 mature Bunya Pines planted by Walter Hill 1858-1867, skirting several hundred metres of the eastern river walk from inside the Edward Street entrance. Well documented (National Trust database: trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_8; State Library of Queensland blog; Wikipedia calls it explicitly 'an avenue of bunya pines') but per the verify-pass rule an avenue is blocked regardless of fame or documentation quality. If a single standout specimen within the row is ever individually distinguished by a source (e.g. the largest or first-planted), it could be lifted out as its own entry."
+    }
+  ],
+  "note": "Brisbane City Council's 558-record significant/landscape tree overlay (data/registers/brisbane-significant-landscape-trees.json) carries NO species, name, age or vitality field, only a designation polygon centroid; it does not by itself clear the two-source bar for any tree and none of it was directly usable this pass without a named tree to match it to. Checked distance from each of the 8 verified City Botanic Gardens/Eagle Street trees to the nearest of the 558 overlay points: nearest was 520m (Eagle Street Fig Trees) and 535-745m for the Botanic Gardens trees, i.e. none of the overlay's individually-designated points sit close enough to plausibly be the same tree, so the overlay was not cited as a source for any of the 8. A future pass with more time could try to match named significant trees elsewhere in Brisbane (New Farm Park, Roma Street Parkland, Mount Coot-tha Botanic Gardens, university campuses) against the overlay's remaining ~550 unmatched points to grow a second cluster; this pass stayed inside the single City Botanic Gardens / Eagle Street cluster (max pairwise distance 1.12km) per the brief's preference for a dense walkable cluster over scattered candidates."
+}
