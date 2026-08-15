@@ -254,6 +254,22 @@ def centre_from_any_name(arg):
         centre = centre_from_registers(candidate)
         if centre:
             return centre
+    # Last resort, and it is the one that matters for a big city: our own
+    # coordinate table. A register files its trees under SUBURBS, so Melbourne's
+    # 546 entries sit under Hawthorn, Kew and Camberwell and the word Melbourne
+    # appears in none of them. The brief then said "no coordinates known" for a
+    # city with 202 register trees inside 12 km, which is precisely the false
+    # premise this script exists to prevent, pointing the pass at from-zero web
+    # research instead of at data we already hold. Same class of bug as the
+    # Genoa/Genova miss above; that one was a name, this one is a hierarchy.
+    coords = os.path.join(ROOT, "data", "city-coords.json")
+    if os.path.exists(coords):
+        table = json.load(open(coords, encoding="utf-8"))
+        folded = {fold(k): v for k, v in table.items()}
+        for candidate in (key, fold(ALIAS.get(key, "")), fold(reverse.get(key, ""))):
+            hit = folded.get(candidate)
+            if hit:
+                return (hit[0], hit[1])
     return None
 
 

@@ -6,6 +6,14 @@ A run may pick up an item on its own once the trigger has fired, unless the item
 
 ---
 
+## Sydney: the licence ask for the Register of Significant Trees (Hidde, 2026-08-15, "put the sydney email on the backlog")
+
+The draft is written and sits ready as section 4 of `drafts/permission-us-registers.md`. Parked rather than sent, on Hidde's instruction, because outreach is his lane and his queue, not a run's.
+
+What it is worth, so nobody has to re-derive it when the trigger fires: 2,504 records in a genuine statutory register, with `condition` coded Excellent to Dead (a real vitality signal, which almost no register carries), an `accessibilility` field coded Public access / Visible from street / No public access that answers hard rule 10 straight from the data, and `arrangement_text` marking 220 of the 2,504 as Individual, which is the collectible-point filter already done for us. It is the best-instrumented tree data found in two scouting passes. **Blocked on licence alone**, never on data quality: the layer's `licenseInfo` is null and the ArcGIS Hub API returns `"license": "none"`, because it was built for the city's own dashboard and never published through their open-data catalogue. One technical note for whoever imports it: the layer's raw `Lat`/`Lon` attributes are corrupt, so the position must come from `x`/`y` reprojected with `outSR=4326` (native `wkid 7856`).
+
+**Trigger: Hidde sends it and gets an answer.** A run may not send it (hard rule 4) and may not import the data before a written yes exists.
+
 ## Photo quality: the dummy-image question (Hidde, 2026-07-29, "ik wil langer nadenken")
 
 Hidde's observation while reviewing: much of the photo stock is mediocre, wide park shots that do not do the tree justice, and a bad photo can subtract more than it adds. His half-formed idea: a designed backup image per species (illustration or large species icon, plus age and name) for trees without a photo, possibly even replacing photos that fall below a bar. Tension named in session: his own 2026-07-22 ruling made photos the priority with an 8-of-10 floor, premised on any-photo-beats-none; the replace-bad-photos version would amend that premise, so it is his call, not a run's. SEO context that survives any answer: real photos remain the hunt target (Google Images and schema want real images; a repeated illustration earns nothing there), so a backup image is a display-layer fallback, never a reason to stop hunting. Status: parked again 2026-07-30 ("ok laten we dit parkeren") after a second round: what IS settled is the supply rule (the owner is never a content source; DECISIONS.md 2026-07-30) and the AI boundary (illustration only, never fake photos). What stays parked: the photo-upload-with-licence-grant in the native form, and AI-generated illustrations (need his tool/budget yes plus a three-sample style test first). A run may NOT build any of this; the native form itself (text submissions) stays approved work.
