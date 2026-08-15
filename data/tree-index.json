@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 40372,
+ "count": 40373,
  "trees": [
   {
    "id": "ali_001",
@@ -3154,6 +3154,22 @@
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "brq_007",
+   "tier": "highlighted",
+   "name": "Professor Chudoba's Plane",
+   "species": "London Plane (Platanus x acerifolia)",
+   "city": "Brno",
+   "country": "Czech Republic",
+   "lat": 49.20147,
+   "lng": 16.59955,
+   "precision": "confirmed",
+   "age_min": 100,
+   "age_max": 120,
    "has_photo": false,
    "has_story": true,
    "sources": 3
