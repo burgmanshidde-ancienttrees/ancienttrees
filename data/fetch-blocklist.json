@@ -2,6 +2,12 @@
  "note": "Hosts that cost a run its window, with what they actually do. Written because this knowledge existed in data/research/ two days before a pass died on it twice: a research file nobody reads at the moment it matters is not a record, it is a souvenir. Every brief must carry this list, and scripts/passcheck.py prints it.",
  "rule": "Every fetch gets a hard timeout: curl -m 20, or timeout= on urllib. A host that hangs once goes on this list with the date. A hang is far worse than a refusal, because a refusal fails in a second and a hang burns the whole window.",
  "hosts": {
+  "www.lapresse.ca": {
+   "behaviour": "405 Method Not Allowed to plain curl (GET), fast fail, not a hang",
+   "seen": "2026-08-15",
+   "cost": "cheap, failed in under a second",
+   "workaround": "Wayback Machine snapshot worked fine via curl (no browser UA needed): http://web.archive.org/web/<timestamp>/<url>, use the archive.org/wayback/available API to find the closest snapshot first"
+  },
   "www.alsace.eu": {
    "host": "www.alsace.eu",
    "noted": "2026-08-13",

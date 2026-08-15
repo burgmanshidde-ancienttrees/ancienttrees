@@ -1656,6 +1656,15 @@
     "note": "GDOS cluster of 6 named professor trees at Plac Wolnosci, two poznan.pl council announcements as second source; four girths withheld because only an uncorroborated press round-up carried them",
     "wasted": 0,
     "brief_wrong": false
+   },
+   {
+    "target": "quebec-city",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 6,
+    "note": "First Canadian city. Register imported same day made ownership and diameter filtering cheap, but no per-tree second source exists, so most of the budget went to press and heritage-page corroboration; lapresse.ca 405s to plain curl and the Wayback snapshot was the workaround",
+    "wasted": 0,
+    "brief_wrong": false
    }
   ]
  }
