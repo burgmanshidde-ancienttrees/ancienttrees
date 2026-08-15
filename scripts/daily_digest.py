@@ -97,6 +97,31 @@ def fetch_gsc(today):
     return days, queries, pages, gap_queries, pairs
 
 
+# The industry CTR-by-position curve, rounded from the public studies that
+# agree with each other (Advanced Web Ranking, Sistrix, Backlinko). It exists
+# so a CTR can be read against what its RANK already predicts: 2% at position
+# 11 is normal and 2% at position 3 is a broken snippet, and the same number
+# means opposite things.
+CTR_CURVE = {1: 28.0, 2: 15.0, 3: 11.0, 4: 8.0, 5: 7.0, 6: 5.0, 7: 4.0,
+             8: 3.5, 9: 3.0, 10: 2.5, 12: 1.8, 15: 1.2, 20: 0.8, 30: 0.4}
+
+
+def expected_ctr(pos):
+    """What a result at this average position normally earns, in percent."""
+    if pos <= 0:
+        return 0.0
+    keys = sorted(CTR_CURVE)
+    if pos <= keys[0]:
+        return CTR_CURVE[keys[0]]
+    if pos >= keys[-1]:
+        return CTR_CURVE[keys[-1]]
+    for a, b in zip(keys, keys[1:]):
+        if a <= pos <= b:
+            t = (pos - a) / (b - a)
+            return CTR_CURVE[a] + t * (CTR_CURVE[b] - CTR_CURVE[a])
+    return 0.0
+
+
 def known_terms():
     """Every city, country and species name a rendered page already covers.
     Used to spot a Search Console query with no matching page (PRODUCT_TODO.md
@@ -181,17 +206,32 @@ def demand_lines(pages):
         if city in ("app", "explore", "cities", "contribute", "privacy", "account",
                     "species", "collections", "countries", "parks"):
             continue
-        c, i = by_city.get(city, (0, 0))
-        by_city[city] = (c + r["clicks"], i + r["impressions"])
-    rows = sorted(((c, v[0], v[1]) for c, v in by_city.items()),
-                  key=lambda x: -x[2])
+        c, i, wp = by_city.get(city, (0, 0, 0.0))
+        by_city[city] = (c + r["clicks"], i + r["impressions"],
+                         wp + r.get("position", 0) * r["impressions"])
+    rows = sorted(((c, v[0], v[1], (v[2] / v[1]) if v[1] else 0)
+                   for c, v in by_city.items()), key=lambda x: -x[2])
     rows = [r for r in rows if r[2] >= 10]
     if not rows:
         return ["", "**Depth is allowed on:** no city cleared 10 impressions this window."]
+    # Position, impression-weighted across the city's pages, and the CTR a
+    # result at that position normally earns. Added 2026-08-14 after a session
+    # read Palermo's 2% CTR as a titles-and-thumbnails problem and Hidde asked
+    # what that meant: the digest could not answer, because it reported clicks
+    # and impressions per city but position only for zero-click pages. Without
+    # position, every weak CTR looks like a copy problem, and almost all of
+    # them are a ranking problem instead. "vs" is the industry CTR curve, so a
+    # city at or above its expected rate has a RANK problem (only a better
+    # position helps), and one well below it has a SNIPPET problem (title,
+    # description and thumbnail are worth rewriting).
     out = ["", "**Depth is allowed on these cities** (10+ impressions in the window;"
                " photos, pins and best_time go here and nowhere else):", "",
-           "| City | Clicks | Impressions |", "|---|---:|---:|"]
-    out += ["| %s | %d | %d |" % (c, cl, im) for c, cl, im in rows]
+           "| City | Clicks | Impressions | CTR | Position | Normal at that position |",
+           "|---|---:|---:|---:|---:|---:|"]
+    for c, cl, im, pos in rows:
+        ctr = 100.0 * cl / im if im else 0
+        out.append("| %s | %d | %d | %.1f%% | %.1f | %.1f%% |"
+                   % (c, cl, im, ctr, pos, expected_ctr(pos)))
     return out
 
 
@@ -448,7 +488,12 @@ SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
 # until 2026-08-08: a number that includes us flatters us, and the fortnight
 # review's own criterion is literally "whether a single reader submission
 # exists". Excluded by id rather than by guessing at content.
-TEST_SUBMISSION_IDS = {1}
+# Ids 2 and 3 are the same class: the 2026-08-14 session's live test of the
+# new vote-and-report chain, both on Baarn's brn_005, one of them explicitly
+# marked "[TEST ROW...]". They made the 08-14 digest announce two reader
+# submissions, and the session reading it believed them for a paragraph. A
+# number that includes us flatters us, so ours are excluded by id.
+TEST_SUBMISSION_IDS = {1, 2, 3}
 
 # Anything a block thinks should reach Hidde today. The verdict line at the top
 # of the entry is built from this, and an empty list is the good case and says
