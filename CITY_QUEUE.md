@@ -258,7 +258,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 130 | Paris | 1.31 | 524,268 | 25 | 9 | 3 | 129 | 10 | published, never ranked |
 | 131 | Ronda | 1.29 | 51,510 | - | - | - | 1 | 10 | predicted (thin competition) |
 | 132 | Pisa | 1.30 | 52,174 | - | - | - | - | 10 | predicted (thin competition) |
-| 133 | Potsdam | 1.29 | 51,727 | 4 | - | 1 | 26 | 10 | predicted (thin competition) |
+| 133 | Potsdam | 1.29 | 51,727 | 6 | - | 1 | 30 | 10 | predicted (thin competition) |
 | 134 | Girona | 1.28 | 51,072 | - | - | - | - | 10 | predicted (thin competition) |
 | 135 | Heidelberg | 1.90 | 75,837 | - | - | - | - | 10 | predicted (thin competition) |
 | 136 | Rouen | 1.81 | 72,334 | - | - | - | 1 | 10 | predicted (thin competition) |

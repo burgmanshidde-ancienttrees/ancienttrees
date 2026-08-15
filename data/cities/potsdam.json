@@ -2,11 +2,11 @@
   "city": "Potsdam",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Every tree on this page stands on the far side of the Glienicke bridge, which is to say in Berlin. That is worth saying plainly rather than glossing over: the crossing is twelve minutes by tram 93 from Potsdam Hauptbahnhof, and the parkland on the other bank belongs to the same UNESCO listing as Sanssouci. Four trees are protected there by the Land of Berlin. Two small-leaved limes, one of them named the King's Linden in the register itself, and two oaks, the further of which is nearly six metres round.",
-  "meta_description": "Four protected trees a tram ride from Potsdam, across the Glienicke bridge: the King's Linden, a 300-year oak, and two more in Lenne's parkland.",
+  "intro": "Every tree on this page stands outside Potsdam itself, across the Glienicke bridge in Berlin or further still. Four are protected there by the Land of Berlin, a twelve-minute tram ride from Potsdam Hauptbahnhof: two small-leaved limes, one named the King's Linden in the register itself, and two oaks, the further nearly six metres round. Two more stand further out on Pfaueninsel, a former royal pleasure island reached only by ferry, one of them an oak with a door built into its trunk.",
+  "meta_description": "Six protected trees near Potsdam, across the Glienicke bridge and beyond: the King's Linden, a 300-year oak, and an oak with a door cut into it.",
   "question_meta": "The oldest tree by the Glienicke bridge is the Jagerhof oak, roughly 300 years old and 566cm round in 2023. Where it stands, and what else is there.",
   "question_answer": "The oldest tree on this page is the oak at the Jägerhof in Volkspark Klein-Glienicke, roughly 300 years old and 566 centimetres round when it was last measured in 2023. Roughly, because no register here records ages at all: Berlin's list of natural monuments, which protects all four of these trees, gives each one a number, a species, a cadastral parcel and a sentence saying where it stands, and stops. The 300-year figure comes from a German veteran-tree archive reasoning backwards from the Jägerhof itself, which was built before 1830 with the oak already standing beside it and, in that archive's judgement, already more than a century old. The other three trees, two small-leaved limes and a second oak, have no published age anywhere, so this page gives them none rather than a guess.",
-  "question_context": "These four trees sit in a strip of parkland that reads as Potsdam and is administered as Berlin. The Glienicke bridge is the border, the tram from Potsdam Hauptbahnhof crosses it in twelve minutes, and the parks on the eastern bank, Schlosspark Glienicke, Park Jagdschloss Glienicke and Volkspark Klein-Glienicke, form part of the UNESCO World Heritage site covering the palaces and parks of Potsdam and Berlin. All four are protected as natural monuments by the Land of Berlin, which is a legal designation rather than a survey: the register records neither age nor girth nor condition, which is why three of the four carry no measurements here. The exception is the Jägerhof oak, taped at 566 centimetres in 2023 by a German veteran-tree archive that also photographed it, making it both the best documented and by a distance the largest. Three of the trees stand within a few hundred metres of the bridge; the oak is another fifteen to twenty minutes south along the park path. Three planes in the walled garden behind the hunting lodge are deliberately left off, because nobody could confirm whether that garden is open to casual visitors.",
+  "question_context": "Four of these six trees sit in a strip of parkland that reads as Potsdam and is administered as Berlin. The Glienicke bridge is the border, the tram from Potsdam Hauptbahnhof crosses it in twelve minutes, and the parks on the eastern bank form part of the UNESCO World Heritage site covering the palaces and parks of Potsdam and Berlin. Those four are protected as natural monuments by the Land of Berlin, a legal designation rather than a survey: the register records neither age nor girth nor condition, so three of them carry no measurements here. The exception is the Jägerhof oak, taped at 566 centimetres in 2023 by a German veteran-tree archive, the best documented and by a distance the largest of the four. Three stand within a few hundred metres of the bridge; the oak is fifteen to twenty minutes further south. The other two, both sessile oaks, stand well beyond this cluster on Pfaueninsel and need their own ferry trip, described separately rather than folded into the same walk. Three planes in the walled garden behind the hunting lodge are left off, because nobody could confirm public access.",
   "faq": [
     {
       "q": "What is the oldest tree near Potsdam?",
@@ -14,15 +14,19 @@
     },
     {
       "q": "Are these trees actually in Potsdam?",
-      "a": "No, and the page says so on purpose. All four stand on the Berlin bank of the Havel, in Berlin-Wannsee, immediately across the Glienicke bridge from Potsdam. In practice they are a Potsdam walk: tram 93 from Potsdam Hauptbahnhof reaches the bridge in about twelve minutes, and getting there from central Berlin takes most of an hour."
+      "a": "No, and the page says so on purpose. Four stand on the Berlin bank of the Havel, in Berlin-Wannsee, immediately across the Glienicke bridge from Potsdam; two more stand further out still, on Pfaueninsel. In practice the first four are a Potsdam walk: tram 93 from Potsdam Hauptbahnhof reaches the bridge in about twelve minutes."
     },
     {
       "q": "Are they free to visit?",
-      "a": "Yes. All four stand in open public parkland with no gate, no ticket and no opening hours, and the whole area is part of the UNESCO World Heritage site of the palaces and parks of Potsdam and Berlin."
+      "a": "Yes. All six stand in open public parkland or nature reserve with no ticket for the trees themselves (Pfaueninsel charges a small entry fee to the island and its ferry), and the whole area is part of the UNESCO World Heritage site of the palaces and parks of Potsdam and Berlin."
     },
     {
       "q": "Can I see all four in one walk?",
-      "a": "Yes, and it is a good one. The two limes and the first oak are within a few hundred metres of the bridge; the Jägerhof oak is a further fifteen to twenty minutes south along the park path above the Havel, near the Krughorn headland. Allow about two hours for the round trip with stops."
+      "a": "The first four, yes, and it is a good one. The two limes and the first oak are within a few hundred metres of the bridge; the Jägerhof oak is a further fifteen to twenty minutes south along the park path above the Havel, near the Krughorn headland. Allow about two hours for the round trip with stops."
+    },
+    {
+      "q": "What about the two Pfaueninsel oaks?",
+      "a": "They stand on a separate island further out, not part of the Glienicke walk. Reaching them needs a bus change and a short paid ferry crossing, roughly 35 to 45 minutes each way from Potsdam Hauptbahnhof, so treat them as their own trip. Once there, the Door Oak and the Schlosswiese Oak stand about a hundred metres apart."
     }
   ],
   "hero_tree_id": "pot_002",
@@ -157,6 +161,67 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "notes": "Land Berlin Naturdenkmal register id 6-73/B (Quercus robur, Stiel-Eiche). Second, independent source: Ostdeutsches Baumarchiv, a German veteran-tree archive unaffiliated with the Berlin government, giving 566cm girth measured 2023 at 1.3m and a photo dated 2011. The age follows that archive's own reasoning (Jagerhof built before 1830, oak likely already over 100 years old then), so 250-350 is a source-grounded range rather than an invented figure. The strongest-evidenced of the four."
+    },
+    {
+      "id": "pot_005",
+      "name": "The Door Oak of Pfaueninsel",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "roughly 250 years",
+      "age_min": 200,
+      "age_max": 300,
+      "location": {
+        "address": "Pfaueninsel, about 100m northeast of the ferry landing (Faehranleger), reached by the short Havel ferry from Nikolskoer Weg, Berlin-Wannsee (Steglitz-Zehlendorf)",
+        "latitude": 52.430667,
+        "longitude": 13.122139,
+        "neighbourhood": "Pfaueninsel (Peacock Island), Berlin-Wannsee"
+      },
+      "story": "A door was cut into this oak, and the tree kept growing around it. Somewhere in the nineteenth century, on a Prussian royal family's private pleasure island, someone shaped an opening straight through the trunk of a sessile oak and left it there. Peacocks still roam the island it stands on, which is what gives Pfaueninsel its name, and the folly fits the place: nothing here was meant to look ordinary.\n\nBerlin's register of natural monuments lists it simply as a Trauben-Eiche, a sessile oak, designated in 1993, with none of the theatre attached. A German veteran-tree archive fills the rest in: 5.58 metres round the trunk, an age estimate of roughly 250 years, and a visit dated May 2025 recording it alive and in good condition, the most recent confirmation found.\n\nIt stands well past the Glienicke walk this page otherwise covers. Reaching it means a bus change and a short paid ferry crossing, more like thirty five to forty five minutes each way from Potsdam Hauptbahnhof than the twelve-minute tram to the other four trees here. It earns the detour anyway: an oak with a door in it, on an island built for peacocks and a king's fancy, is not a thing you see twice.",
+      "verified_sources": [
+        "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+        "https://www.baumkunde.de/baumregister/6402-tuereiche_auf_der_pfaueninsel/"
+      ],
+      "access": "Free entry to the Pfaueninsel nature reserve; the island itself is reached only by a short ferry crossing from Nikolskoer Weg (a few minutes, small return fare; published ferry hours are daily 10:00-18:00, March to October)",
+      "transport": "Tram 93 from Potsdam Hauptbahnhof to Glienicker Brucke (about 12 min), then bus 316 towards Wannsee to the Nikolskoer Weg stop (about 5 min), then the Pfaueninsel ferry (2-3 min crossing). Allow roughly 35-45 minutes door to door, further than the other four trees on this page",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Berlin Naturdenkmal register id 6-101/B (Trauben-Eiche / Quercus petraea), designated 1993-03-02. Independently identified via baumkunde.de entry #6402, within about 15m of the register point: a door-shaped opening cut into the trunk, visible in photos from 2005 onward, recorded vital at a visit dated 25.05.2025. Girth 5.58m, dated only 01.01.2017 (likely a placeholder date on the source). Age ~250 years is baumkunde's own estimate. Species conflict note: baumkunde's own auto-translated English page mislabels this Pedunculate Oak, but both the German common name (Trauben-Eiche) and the register's Latin binomial agree on Quercus petraea (Sessile Oak); trusted petraea. Genuinely further from Potsdam Hauptbahnhof than pot_001-004, shipped as an honest further excursion rather than folded into the same walk, per the day-trip precedent (Blarney/Fota for Cork, Coole Park for Galway)."
+    },
+    {
+      "id": "pot_006",
+      "name": "The Schlosswiese Oak of Pfaueninsel",
+      "species": "Sessile Oak (Quercus petraea)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 150,
+      "age_max": 250,
+      "location": {
+        "address": "Pfaueninsel, on the Schlosswiese meadow about 100m northeast of Schloss Pfaueninsel, reached by the short Havel ferry from Nikolskoer Weg, Berlin-Wannsee (Steglitz-Zehlendorf)",
+        "latitude": 52.431453,
+        "longitude": 13.120752,
+        "neighbourhood": "Pfaueninsel (Peacock Island), Berlin-Wannsee"
+      },
+      "story": "A hundred metres from the Door Oak, on the meadow below Schloss Pfaueninsel, stands a second registered sessile oak with a trick of its own. About two and a half metres up, its trunk splits into five curved stems rather than one, a shape a pruning around 2015 seems to have encouraged rather than damaged: German tree archivists who have visited it repeatedly since 2002 recorded vigorous regrowth afterward, and the most recent visit, in May 2025, still found it vital.\n\nTwo independent measurements put its girth around 5.6 metres, taken six years apart and close enough to agree on a tree still slowly thickening. Its age is put at roughly 200 years, a touch younger than its door-cut neighbour nearby. Both carry the same official protection, Berlin's 1993 register of natural monuments, in a paragraph that names a species and a spot and says nothing about what makes either worth the walk.\n\nReaching the meadow means the same detour as the Door Oak: a tram, a bus, and a short paid ferry from Nikolskoer Weg, roughly 35 to 45 minutes each way from Potsdam Hauptbahnhof. Pfaueninsel was built as a private fantasy for a Prussian king, all follies and imported animals, and these two oaks are what is left standing from the working parkland around it.",
+      "verified_sources": [
+        "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+        "https://www.baumkunde.de/baumregister/2135-eiche_auf_der_pfaueninsel_bei_berlin/",
+        "https://www.ostdeutsches-baumarchiv.de/photosearch/traubeneiche-1-pfaueninsel-berlin"
+      ],
+      "access": "Free entry to the Pfaueninsel nature reserve; the island itself is reached only by a short ferry crossing from Nikolskoer Weg (a few minutes, small return fare; published hours are daily 10:00-18:00, March to October)",
+      "transport": "Tram 93 from Potsdam Hauptbahnhof to Glienicker Brucke (about 12 min), then bus 316 towards Wannsee to the Nikolskoer Weg stop (about 5 min), then the Pfaueninsel ferry (2-3 min crossing). Allow roughly 35-45 minutes door to door, further than the other four trees on this page",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Berlin Naturdenkmal register id 6-102/B (Trauben-Eiche / Quercus petraea), designated 1993-03-02. Three sources agreeing within metres: baumkunde.de #2135 (girth 5.58m measured 19.02.2025, height 16.0m, vital 25.05.2025, vigorous regrowth after a c.2015 pruning) and Ostdeutsches Baumarchiv (565cm measured 2019, trunk dividing at about 2.5m into one main stem plus five curved secondary stems, documented visits 2002-2019). Girth conflict (5.58m vs 5.65m) plausibly explained by six years of growth, both figures kept rather than one discarded. Species conflict: Ostdeutsches Baumarchiv's own species field says Quercus robur despite titling the tree Traubeneiche; register and baumkunde agree on Quercus petraea, trusted here. Best-evidenced of the two Pfaueninsel candidates. Same access/distance caveat as pot_005."
     }
   ]
 }
