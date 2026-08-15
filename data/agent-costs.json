@@ -1557,6 +1557,15 @@
         "note": "session pass, tokens not separately metered. Closed Trieste's gap (8/10 to 10/10) with a new third cluster in Citta Vecchia. One lead was already explicitly flagged 'STRONGEST NEXT ADDITION' by an earlier pass with two sources in hand (Piazza Hortis hackberry, held back only on walk-distance grounds); paired it with a second public-garden tree 700m away (Piazzale Rosmini elm) rather than force it into the existing 2km-radius walks, since CLAUDE.md's cluster doctrine explicitly allows a large city several separate walks. Both trees got a 2024 municipal TreeTag, which doubled as a second source for the elm.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "padua",
+        "kind": "verify+write",
+        "tokens": 0,
+        "trees": 1,
+        "note": "session pass, tokens not separately metered. Closed Padua's last tree (9/10 to 10/10) from a lead an earlier pass had flagged as near-zero-cost (same Orto Botanico cluster as 4 already-published trees) but held back on a single 'Pessima' health rating in the RAMI register. Corroborated against the Orto Botanico's own current website and social account, both of which still describe and locate the tree (Italy's first Cedrus deodara, planted 1828) without indicating it is gone; shipped with the poor-health rating stated honestly in the story rather than hidden. Fixed a hard-rule-9 canonical-name miss (wrote 'Deodar Cedar', corpus standard is 'Himalayan Cedar') caught by the Astro build's own species-name check.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
