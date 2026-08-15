@@ -1,0 +1,215 @@
+{
+  "city": "Quebec City",
+  "country": "Canada",
+  "status": "needs_curation",
+  "intro": "A newspaper once called the oldest tree on the Plains of Abraham a red oak on Rue De Laune, more than 250 years old, without saying which one. Five are registered along that stretch, and the largest of them opens this page, with its neighbour fifteen metres away. Three more stand on Grande Allee, the avenue the city widened and lined with American elms at the end of the 1880s, and the thickest trunk here belongs to an elm out on the plain itself.",
+  "meta_description": "Remarkable trees in Quebec City: the red oaks of the Plains of Abraham, an elm of 4.8 metres, and three heritage trees along Grande Allee.",
+  "question_meta": "Quebec City's oldest known tree is a red oak on Rue De Laune, reported at over 250 years old. Where it stands, plus five more on the same walk.",
+  "question_answer": "The oldest tree anyone has put a number on in Quebec City is a northern red oak on Rue De Laune, inside Parc des Champs-de-Bataille, which La Presse described as the park's oldest at more than 250 years. The article named no particular trunk, and five red oaks are registered along that short stretch, so the claim sits here on the largest of them: 132 centimetres of diameter at breast height in the city's inventory against 89 to 110 for the other four. If the 250 years are right, it was already growing when the Battle of the Plains of Abraham was fought across this ground in 1759. No other tree on this page carries a published age at all.",
+  "question_context": "Every tree here comes from the Ville de Quebec's open inventory of potentially remarkable trees, published by the city's environment service, and from the public part of it: most of that register sits on private land. Two things about that source shape this page. It records the diameter of a trunk at breast height rather than the circumference, so every measurement quoted here has been converted, and it carries no age field at all, which is why five of the six trees are described by size and species and not by years. The ages and the history come from elsewhere: La Presse's account of the arboricultural heritage of the battlefield park, which reports its oldest tree as a red oak of more than 250 years on Rue De Laune and describes roughly 750 elms treated tree by tree against Dutch elm disease, and the city's own heritage page for Grande Allee, which dates the avenue's widening and its American elm planting to the end of the 1880s and records a heritage-tree inventory of the axis in 2011. All six stand on free public ground and string together into one walk of about two and a half kilometres.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Quebec City?",
+      "a": "The oldest anyone has dated is a northern red oak on Rue De Laune in Parc des Champs-de-Bataille, reported by La Presse as the park's oldest at more than 250 years. The article named no individual tree, and the claim is attached here to the largest red oak on that stretch."
+    },
+    {
+      "q": "Are these trees free to visit?",
+      "a": "Yes, all of them. Parc des Champs-de-Bataille is a National Historic Site open daily from dawn to dusk with no ticket and no gate, and the Grande Allee trees stand on ordinary public pavement."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "Yes. Grande Allee runs straight into the battlefield park, so the three street trees and the three park trees make a single route of roughly two and a half kilometres, starting about fifteen minutes on foot from Vieux-Quebec."
+    },
+    {
+      "q": "Which is the biggest?",
+      "a": "A wych elm out on the plain, at 154 centimetres of diameter at breast height, which works out at roughly 4.84 metres around. Quebec's register measures across the trunk rather than around it, so the girths given here are conversions."
+    }
+  ],
+  "hero_tree_id": "qbc_001",
+  "oldest_tree_id": "qbc_001",
+  "trees": [
+    {
+      "id": "qbc_001",
+      "name": "The Old Oak of Rue De Laune",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "over 250 years",
+      "age_min": 250,
+      "age_max": null,
+      "location": {
+        "address": "Rue De Laune, Parc des Champs-de-Bataille (Battlefields Park / Plains of Abraham), in the ring-road (\"anneau\") section",
+        "latitude": 46.7924953078,
+        "longitude": -71.2374709363,
+        "neighbourhood": "Parc des Champs-de-Bataille / Plains of Abraham, Montcalm"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, no gate, no permission needed. Parc des Champs-de-Bataille (Battlefields Park, incl. the Plains of Abraham) is a National Historic Site managed by the Commission des champs de bataille nationaux, open daily dawn to dusk, one of the most visited public parks in Canada.",
+      "transport": "RTC bus route 11 runs along Grande Allee a few minutes' walk north; roughly 20-25 minutes on foot from Vieux-Quebec (Old Town).",
+      "story": "La Presse reported that the oldest tree on the Plains of Abraham is a red oak on Rue De Laune, reigning there for more than 250 years. It did not say which one. Five red oaks are registered along that short stretch of the anneau, the ring road that loops the plain, and this is the largest of them by a wide margin: the city's inventory of potentially remarkable trees gives it 132 centimetres of diameter at breast height against 89 to 110 for the other four. Quebec measures its trees across the trunk rather than around it, so that converts to roughly 4.15 metres of girth. It is the best match for the newspaper's tree, on size rather than on a name, and the identification is an inference rather than a settled fact. If the 250 years hold, it was already standing on 13 September 1759, when Wolfe's men came up the cliff from the river and a battle that ended the French regime in North America was decided in about half an hour on this ground. The park around it is a National Historic Site, free, open dawn to dusk and one of the busiest public parks in Canada, and its trees are actively monitored rather than left alone.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the red oaks on the plain turn and hold their colour for weeks"
+      },
+      "verified_sources": [
+        "https://www.donneesquebec.ca/recherche/dataset/vque_82 (Ville de Quebec, Service de l'environnement, GeoJSON 'Arbres potentiellement remarquables', feature ID 295149, CC BY 4.0)",
+        "https://web.archive.org/web/20240224133846/https://www.lapresse.ca/voyage/48-heures/quebec-canada/201006/11/01-4288919-parc-des-champs-de-bataille-riche-heritage-arboricole-a-quebec.php"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "Two red oaks stand together beside the ring road here; this is the distinctly heavier of the pair, the one nearer the southern end."
+    },
+    {
+      "id": "qbc_002",
+      "name": "The Second Oak of Rue De Laune",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Rue De Laune, Parc des Champs-de-Bataille (Battlefields Park / Plains of Abraham), about 15m from qbc_001",
+        "latitude": 46.7926067892,
+        "longitude": -71.2375941619,
+        "neighbourhood": "Parc des Champs-de-Bataille / Plains of Abraham, Montcalm"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, no gate, no permission needed. Same public National Historic Site as qbc_001, open daily dawn to dusk.",
+      "transport": "Same as qbc_001: RTC bus route 11 on Grande Allee, about 20-25 minutes on foot from Vieux-Quebec.",
+      "story": "This oak stands fifteen metres from the tree the newspapers call the park's oldest, and nobody has put a number on its own years. The city's inventory gives it 110 centimetres of diameter at breast height, second largest of the five red oaks registered along this stretch of Rue De Laune; Quebec publishes the measurement across the trunk, which converts to roughly 3.46 metres round. The printed age claim for this corner of the park names a single tree, so there is no year to give for this one, and none is invented here. What it offers instead is the pair: two heavy red oaks close enough that you can stand between them, inside the ring road that circles the field of the 1759 battle. Chene rouge is a slow provider. Its acorns take two full summers to ripen rather than one, so in any given autumn the crown carries both this year's small green pins and last year's finished nuts, and a good year buries the grass beneath it. The Commission des champs de bataille nationaux keeps the whole park open from dawn to dusk with no gate and no ticket, and this stop costs about twenty seconds off the walk to its neighbour.",
+      "verified_sources": [
+        "https://www.donneesquebec.ca/recherche/dataset/vque_82 (Ville de Quebec, Service de l'environnement, GeoJSON 'Arbres potentiellement remarquables', feature ID 295150, CC BY 4.0)",
+        "https://web.archive.org/web/20240224133846/https://www.lapresse.ca/voyage/48-heures/quebec-canada/201006/11/01-4288919-parc-des-champs-de-bataille-riche-heritage-arboricole-a-quebec.php"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "how_to_recognise": "The slimmer of the two red oaks that stand fifteen metres apart beside the ring road, on the northern side of the pair."
+    },
+    {
+      "id": "qbc_003",
+      "name": "The Wych Elm of the Plains of Abraham",
+      "species": "Wych Elm (Ulmus glabra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Parc des Champs-de-Bataille (Battlefields Park / Plains of Abraham), near the corner of Avenue Ontario and the park's interior paths",
+        "latitude": 46.7966055918,
+        "longitude": -71.2267269621,
+        "neighbourhood": "Parc des Champs-de-Bataille / Plains of Abraham, Montcalm"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, no gate, no permission needed. Same National Historic Site as qbc_001/qbc_002, open daily dawn to dusk, about 2km east across the park (still inside the same continuous Battlefields Park grounds).",
+      "transport": "RTC bus route 11 or 800/801 along Grande Allee/Rene-Levesque, then a walk into the park; roughly 15 minutes on foot from the Plains of Abraham Museum.",
+      "story": "Dutch elm disease took out most of the mature elms of North America. This park still has about 750 of them. La Presse's account of the arboricultural heritage of Parc des Champs-de-Bataille describes an elm population contemporary with the park itself, monitored and treated tree by tree against the fungus that emptied streets across the continent, which is an unusual thing for a public park to still be paying for a century on. The thickest trunk in the public part of Quebec City's tree inventory is one of those elms: 154 centimetres of diameter at breast height, which converts to roughly 4.84 metres of girth, since the city measures across the trunk rather than around it. It is not an American elm. The municipal foresters record it as Ulmus glabra, the orme des montagnes, a European species, and the newspaper piece treats the park's elms as one population without separating the two, so that identification rests on the city's own survey. No source gives it an age, and at this size it hardly matters: it is a mature tree of a species that mostly did not get to be one. It stands near Avenue Ontario, free, dawn to dusk.",
+      "verified_sources": [
+        "https://www.donneesquebec.ca/recherche/dataset/vque_82 (Ville de Quebec, Service de l'environnement, GeoJSON 'Arbres potentiellement remarquables', feature ID 309969, CC BY 4.0)",
+        "https://web.archive.org/web/20240224133846/https://www.lapresse.ca/voyage/48-heures/quebec-canada/201006/11/01-4288919-parc-des-champs-de-bataille-riche-heritage-arboricole-a-quebec.php"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "qbc_004",
+      "name": "The American Elm of Grande Allee",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Grande Allee Est, Quebec City",
+        "latitude": 46.8052222159,
+        "longitude": -71.2186580704,
+        "neighbourhood": "Grande Allee, Montcalm"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, a public street tree on one of Quebec City's best-known avenues, no restriction of any kind.",
+      "transport": "RTC bus route 11 runs the length of Grande Allee; the tree is roughly 15-20 minutes' walk from Vieux-Quebec (Old Town) along the same avenue.",
+      "story": "The City of Quebec's own heritage record is precise about how Grande Allee got its trees: the municipal authorities widened the avenue at the end of the 1880s and lined it with ormes d'Amerique, American elms. Whether this particular elm descends from that planting is not written down anywhere. It measures 94 centimetres of diameter at breast height in the city's inventory, roughly 2.95 metres round once converted from the diameter Quebec publishes, which is a solid street tree rather than a survivor of unusual size, and the avenue has been replanted more than once in the intervening century. So it stands among the elms of Grande Allee rather than as one of the originals. The avenue itself runs from the old walled town out past the parliament to the Plains of Abraham and is known locally as the Champs-Elysees of Quebec; the city carried out its first heritage-tree inventory of the Grande Allee and Chemin Saint-Louis axis in 2011, which is how a street tree comes to be on a register at all. American elm is the tree that gave North American streets their shape, a trunk that divides low and arches out like a wine glass. Then the fungus arrived.",
+      "verified_sources": [
+        "https://www.donneesquebec.ca/recherche/dataset/vque_82 (Ville de Quebec, Service de l'environnement, GeoJSON 'Arbres potentiellement remarquables', feature ID 25392, CC BY 4.0)",
+        "https://www.ville.quebec.qc.ca/citoyens/patrimoine/quartiers/saint_jean_baptiste/interet/grande_allee_cheminement_artere_prestigieuse.aspx"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "qbc_005",
+      "name": "The Red Oak of Grande Allee",
+      "species": "Northern Red Oak (Quercus rubra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Grande Allee Est, Quebec City",
+        "latitude": 46.8024061953,
+        "longitude": -71.2231183726,
+        "neighbourhood": "Grande Allee, Montcalm"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, a public street tree on Grande Allee, no restriction.",
+      "transport": "RTC bus route 11 along Grande Allee; about 15-20 minutes' walk from Vieux-Quebec.",
+      "story": "Grande Allee was planted with elms, and one of the largest trees on it is an oak. The city's inventory records this one as Quercus rubra, northern red oak, with 120 centimetres of diameter at breast height, which converts to roughly 3.77 metres of girth; Quebec publishes the measurement across the trunk rather than around it. That is a genuinely large oak for a street, and larger than either of the two elms on this avenue. Where it came from is another matter. The city's heritage page on Grande Allee names the American elm as the avenue's historic planting and does not mention oaks at all, so this tree's species and existence rest on the municipal forestry survey rather than on the heritage record, and no source anywhere gives it an age. What the heritage page does confirm is that this stretch was formally inventoried for heritage trees in 2011, so somebody with a tape measure has been here. It stands on the public pavement of one of the most-walked avenues in the city, on the route between the walled old town and the battlefield park, free and unrestricted at any hour.",
+      "verified_sources": [
+        "https://www.donneesquebec.ca/recherche/dataset/vque_82 (Ville de Quebec, Service de l'environnement, GeoJSON 'Arbres potentiellement remarquables', feature ID 295207, CC BY 4.0)",
+        "https://www.ville.quebec.qc.ca/citoyens/patrimoine/quartiers/saint_jean_baptiste/interet/grande_allee_cheminement_artere_prestigieuse.aspx"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "qbc_006",
+      "name": "The Wych Elm of Grande Allee Ouest",
+      "species": "Wych Elm (Ulmus glabra)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Grande Allee Ouest, Quebec City",
+        "latitude": 46.801689134,
+        "longitude": -71.2247457453,
+        "neighbourhood": "Grande Allee, Montcalm"
+      },
+      "location_precision": "confirmed",
+      "access": "Free, a public street tree on Grande Allee, no restriction.",
+      "transport": "RTC bus route 11 along Grande Allee; about 20 minutes' walk from Vieux-Quebec, close to where Grande Allee meets the Plains of Abraham.",
+      "story": "The second European elm on this page stands at the western end of Grande Allee, close to where the avenue runs out into the Plains of Abraham, which makes it the link between the street trees and the park trees on a single walk. The city's inventory records it as Ulmus glabra, the orme des montagnes, at 109 centimetres of diameter at breast height, roughly 3.42 metres round once converted from the diameter Quebec publishes rather than a girth. As with the red oak further east, the city's heritage account of Grande Allee documents the avenue's late-1880s widening and its American elm planting, and its 2011 heritage-tree inventory, without naming this species, so the identification comes from the municipal foresters. No age is recorded for it. Wych elm is the odd one out among elms in that it spreads by seed rather than by suckering from its own roots, which is why it turns up as a planted tree in cities far from where it grows wild, and why a European elm on a Quebec avenue is less strange than it first sounds. Public pavement, no restriction, about twenty minutes on foot from Vieux-Quebec.",
+      "verified_sources": [
+        "https://www.donneesquebec.ca/recherche/dataset/vque_82 (Ville de Quebec, Service de l'environnement, GeoJSON 'Arbres potentiellement remarquables', feature ID 11461, CC BY 4.0)",
+        "https://www.ville.quebec.qc.ca/citoyens/patrimoine/quartiers/saint_jean_baptiste/interet/grande_allee_cheminement_artere_prestigieuse.aspx"
+      ],
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
