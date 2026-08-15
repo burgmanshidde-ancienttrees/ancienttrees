@@ -11,6 +11,26 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-15 (session) - The queue was ranking on fame, and the registers were quietly writing the roadmap
+
+Hidde, on being shown the city list: "I don't think Wikipedia impression gives a good representation of English tourist can't we make our top 250 smarter?" He was right, and the question turned out to be answerable rather than arguable, because the queue already carries `impressions_10d` per city from the Search Console readback. That is 55 published, indexed cities where we know what our pages actually earn, which makes any proposed proxy testable.
+
+**Measured, Spearman against our own impressions:** English Wikipedia pageviews +0.23 (what the queue used), English Wikivoyage pageviews **+0.33**, English share of pageviews +0.11.
+
+**Three changes, all committed.**
+
+1. **Demand is travel intent now.** `scripts/travel_demand.py` resolves each city to its Wikivoyage article through Wikidata sitelinks and writes a `travel` column; `scripts/rescore.py` recomputes score, basis and rank from it. Someone reading a Wikivoyage article is packing a bag; someone reading Wikipedia is settling an argument.
+2. **CITY_QUEUE.md's founding rule is withdrawn.** It was built on "the more famous a city is, the worse we do there", drawn from ten cities in a digest. On all 111 published cities it does not survive: impressions per 100k travel views run 206 / 224 / 184 across demand thirds, and clicks run 12 / 23 / 33, which points the other way outright. Predicted yield is flat now. We stopped penalising fame and deliberately did not start rewarding it, because the click counts are small and half the site is unindexed.
+3. **His anglophone hypothesis was tested and failed**, and is written down as failed so nobody proposes it again. Published anglophone cities earn 1.33 impressions per tree against 1.43 everywhere else, a wash, and our six best pages are all in countries that read about themselves in their own language.
+
+**The finding underneath, which matters more than the proxy.** We hold 37,543 register trees, but 27,000 of them sit in Poland, Germany, Italy, Czechia and Spain. That is why the machine kept opening Poznan, Brno and Potsdam: it was eating whatever was free, and **supply availability had quietly become strategy**. Nothing in the corpus was catching it.
+
+**Acted on it the same session.** A scouting pass on the two highest-demand countries with zero coverage imported **Melbourne 546** (Yarra and Boroondara), **Brisbane 558** and **Ottawa 166** (NCC), all CC BY or Open Government Licence, at roughly 0.05k tokens per tree against 27k for research from zero. It also closed the question honestly: Toronto, Montreal and Vancouver publish full street-tree inventories but no designated register, so **Canada is thin beyond Ottawa and Quebec City**, while Australia is the real unlock. Brisbane (rank 17) and Melbourne (rank 28) are now the only cities that are both high-ranked and cheap, and they are where the next passes should go.
+
+**Also merged this session:** the five cities the night runs and write passes had left half-landed. Brno 6, Potsdam 4, Poznan 6, Wroclaw 4, Quebec City 6, the last of them the first Canadian page. All five live and verified, claims released, costs logged. Quebec City's page states in the open that attaching La Presse's "oldest tree in the park" claim to our largest registered red oak is an inference from size and not a named match, which is the bridge-claim rule catching itself.
+
+**FOR HIDDE, unchanged from yesterday and still the highest-value thing only you can do:** the ten Request Indexing submissions in Search Console. 346 pages sit "Discovered - currently not indexed", and that is now distorting the queue itself, not just the traffic: London, Edinburgh, Portland, Hobart and Quebec City are scored at 0.25 for never having been crawled rather than for failing. Second: **Sydney's Register of Significant Trees, 2,504 trees, is blocked purely on licence** and a draft ask is now waiting in `drafts/permission-us-registers.md` alongside the three American ones.
+
 ## 2026-08-15 (continued) - Four night runs quit after nine minutes and nobody could see it, so the workflow now measures itself
 
 Hidde asked how the night runs had gone. The answer took an hour of reading `gh run view --log` by hand, and that is the finding rather than the anecdote.
