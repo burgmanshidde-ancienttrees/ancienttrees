@@ -1,0 +1,97 @@
+{
+ "place": "Aarhus",
+ "country": "Denmark",
+ "note": "Candidates for a verify pass, found 2026-08-15 by fetching the Dansk Traeregister KML (1,847 placemarks nationally) and filtering to 15 km of the city centre. This is a RESEARCH SOURCE, not a licence-cleared register: the Dansk Dendrologisk Forening is a private association, so these are leads to verify against a second independent source, exactly as Copenhagen's 13 trees were (10 of them cite dendron.dk). Do NOT import as layer-2 dots without a licence check.",
+ "source_index": "https://www.dendron.dk/dtr/ (KML at /dtr/KML_GPX/DENDRON_KML.kml)",
+ "cluster_note": "Five sit together at Moesgaard, roughly 8.8 km south of the centre and within about a kilometre of each other: a museum park with open grounds, about 25 minutes by bus, so inside the day-trip boundary. Three more stand in the city itself.",
+ "candidates": [
+  {
+   "name": "Blodbøgen på Randersvej - Århus",
+   "latitude": 56.17863,
+   "longitude": 10.2003,
+   "km_from_centre": 1.81,
+   "source_record_url": "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=508",
+   "source": "Dansk Traeregister (Dansk Dendrologisk Forening)"
+  },
+  {
+   "name": "Århusbøgene",
+   "latitude": 56.13305,
+   "longitude": 10.20972,
+   "km_from_centre": 3.42,
+   "source_record_url": "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=286",
+   "source": "Dansk Traeregister (Dansk Dendrologisk Forening)"
+  },
+  {
+   "name": "Kvindeegen - Viby / Århus",
+   "latitude": 56.128,
+   "longitude": 10.16532,
+   "km_from_centre": 4.28,
+   "source_record_url": "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=222",
+   "source": "Dansk Traeregister (Dansk Dendrologisk Forening)"
+  },
+  {
+   "name": "Egen i Skåde - Århus",
+   "latitude": 56.10311,
+   "longitude": 10.22265,
+   "km_from_centre": 6.97,
+   "source_record_url": "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1250",
+   "source": "Dansk Traeregister (Dansk Dendrologisk Forening)"
+  },
+  {
+   "name": "Den Glade Gris - Ørnereden v. Skåde / Moesgård",
+   "latitude": 56.09756,
+   "longitude": 10.23855,
+   "km_from_centre": 7.93,
+   "source_record_url": "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1615",
+   "source": "Dansk Traeregister (Dansk Dendrologisk Forening)"
+  },
+  {
+   "name": "Avnbøg - Moesgård",
+   "latitude": 56.08772,
+   "longitude": 10.22837,
+   "km_from_centre": 8.79,
+   "source_record_url": "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1768",
+   "source": "Dansk Traeregister (Dansk Dendrologisk Forening)"
+  },
+  {
+   "name": "Ædelgran - Moesgård",
+   "latitude": 56.08761,
+   "longitude": 10.23005,
+   "km_from_centre": 8.83,
+   "source_record_url": "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1769",
+   "source": "Dansk Traeregister (Dansk Dendrologisk Forening)"
+  },
+  {
+   "name": "Tarmvrid-røn - Moesgård",
+   "latitude": 56.08711,
+   "longitude": 10.2286,
+   "km_from_centre": 8.86,
+   "source_record_url": "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1767",
+   "source": "Dansk Traeregister (Dansk Dendrologisk Forening)"
+  },
+  {
+   "name": "Robinie - Moesgård",
+   "latitude": 56.0865,
+   "longitude": 10.22976,
+   "km_from_centre": 8.95,
+   "source_record_url": "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1770",
+   "source": "Dansk Traeregister (Dansk Dendrologisk Forening)"
+  },
+  {
+   "name": "Niels Ebbesens Eg - Hinnerup, Århus",
+   "latitude": 56.22938,
+   "longitude": 10.04453,
+   "km_from_centre": 13.18,
+   "source_record_url": "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1757",
+   "source": "Dansk Traeregister (Dansk Dendrologisk Forening)"
+  },
+  {
+   "name": "Asken i Grundfør",
+   "latitude": 56.27023,
+   "longitude": 10.10188,
+   "km_from_centre": 14.38,
+   "source_record_url": "http://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1249",
+   "source": "Dansk Traeregister (Dansk Dendrologisk Forening)"
+  }
+ ]
+}
