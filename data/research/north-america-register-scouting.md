@@ -233,3 +233,66 @@ one for Charleston.
 
 ## 4. Canada
 
+
+### BC Big Tree Registry (Vancouver): UNRESOLVED, bot-blocked, not disqualified
+
+`bigtrees.forestry.ubc.ca` is real and matches the brief's description: ~600
+trees, UBC Faculty of Forestry, a Champions list, a Top 30, and a stated
+downloadable Excel with "nominators, verifiers, site and access notes." Could
+not be verified this pass: **every path on the domain, including
+`/terms-of-use/` and `/bc-bigtree-registry/champion/`, returns UBC's bot-
+defense captcha challenge page to a plain fetch** (HTTP 200, but the body is
+the captcha itself, not the content). Solving a captcha is off-limits by this
+project's own rules regardless. Logged to `data/fetch-blocklist.json`
+(`bigtrees.forestry.ubc.ca`, 2026-08-15). **Not disqualified, just unread**:
+a session using the Browser pane (a real browser, not curl/WebFetch) should
+be able to clear the challenge and read the terms-of-use and the Excel
+download properly. Worth a short follow-up, not a from-zero rescan.
+
+### Ontario Heritage Tree Program (Toronto): DEAD END, no exportable data at all
+
+Checked both partner sites, `forestscanada.ca/en/program/heritage-tree`
+(the program's current home; Forests Ontario rebranded to Forests Canada) and
+`oufc.org/index.php/heritage-tree-program/` (Ontario Urban Forest Council,
+co-runs it). Neither publishes a database, map, CSV or any structured export.
+Both are nomination-and-plaque programs: individual trees get a blog post and
+a certificate, not a register entry. This confirms and extends the earlier
+finding that Toronto's own open-data portal carries no city-level tree
+designation. **Verdict: no dataset exists to licence-check.** A future pass
+would have to compile Heritage Tree recipients from the blog posts
+individually, which is from-zero research, not an import.
+
+### Quebec's provincial "arbres remarquables" programme: not scouted as such, but Quebec City's OWN municipal register found instead, and it is excellent
+
+**USABLE, CC BY 4.0, IMPORTED.** Ville de Québec's own open-data portal
+publishes `Arbres potentiellement remarquables`
+(`https://www.donneesquebec.ca/recherche/dataset/vque_82`), found via the
+Données Québec / Government of Canada open-data mirror rather than a
+provincial "arbres remarquables" programme, which the search suggests is
+Montreal/Mount-Royal specific rather than a real province-wide register (not
+independently verified this pass, time-boxed out).
+
+**685 trees, full per-tree point coordinates (WGS84, no geocoding needed,
+the best coordinate precision of anything found this whole pass), updated
+weekly** (dataset metadata: last modified 2026-08-09). CKAN API confirms
+licence directly: `license_id: "cc-by"`, `license_title: "Attribution (CC-BY
+4.0)"`, matching the page's own "Licence Attribution (CC-BY 4.0)". Fields:
+Latin + French common name, tree type (Feuillu/Conifère), diameter at breast
+height, multi-trunk flag, planting date (populated for some rows, a real age
+source), and **TYPE_PROP, a direct ownership flag** ("Privés" vs "Public"
+and subcategories).
+
+**The hard-rule-10 filter matters more here than anywhere else scanned this
+pass**: 594 of 685 rows are privately owned (`Privés`), only **76 are
+Public** (60 plain public plus small Public:* subcategories like
+"Entretenu Par La Ville"). Only that 76-row subset should ever be considered
+for publication; the rest stays in the file as data, never as candidates,
+same discipline Brussels' register already established. 76 public,
+coordinate-precise, city-designated candidate trees is comfortably above the
+four-tree floor for Quebec City, one of the pass's named targets.
+
+**No vitality field**, alive-now stays per-tree, as everywhere else.
+
+Imported to `data/registers/quebec-city-arbres-remarquables.json` (all 685
+features kept, TYPE_PROP preserved so a future pass filters correctly rather
+than re-deriving the split).
