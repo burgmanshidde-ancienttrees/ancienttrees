@@ -11,6 +11,22 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-15 (continued) - Four night runs quit after nine minutes and nobody could see it, so the workflow now measures itself
+
+Hidde asked how the night runs had gone. The answer took an hour of reading `gh run view --log` by hand, and that is the finding rather than the anecdote.
+
+**What the runs did.** Seven cron knocks between 20:56 and 07:20 UTC. Three produced cities (Cagliari, Braga, Perugia, then Trento, Guimaraes, Nara, then the 02:07 run which used its full 60 minute cap for 22 trees across Alicante, Palma, Trento, Bucaco, Trieste, Padua, Parma and Ferrara plus three page-gap intros). The other four ran 8 to 11 minutes of a 60 minute window, ended with `is_error: false` and `subtype: success`, published nothing, and wrote not one line here. They stopped themselves; nothing cut them off. One of them claimed Cordoba, Milan, Lucca, Genoa, Naples and Vienna for a write pass, wrote nothing, and left the top of the queue locked until noon.
+
+**Why it took an hour to find out.** From the repository those four runs are indistinguishable from runs that never fired. The prompt has told every run since 2026-08-13 to append to LOG.md above all when it shipped nothing, and a run that gives up is precisely the run that skips that instruction. That is the second day this exact failure has been recorded (the 2026-08-13 Como run: 54 turns, one claim commit, silence), so by the standing ratchet it stops being a rule and becomes a check.
+
+**Built.** `nightly.yml` gains a `Run health` step that runs after the agent whatever happened, reads the SDK's own result record, and commits `data/run-health.json`: minutes, turns, commands the allowlist refused, trees that reached `data/cities`, and claims left behind. When the run wrote no LOG.md entry, `scripts/run_health.py` writes a stub one in its place. Verified against the real 05:53 run by replaying its numbers over its actual commit range: it produces "10.6 minutes of its 60 minute window, 49 turns, 10 commands refused by the allowlist, ended clean, 1 commit, none of them a published tree, claims left behind: bari, cagliari, catania, cordoba, milan, lucca, genoa, naples, vienna."
+
+**The number nobody knew.** Every run has commands refused by the allowlist, between 4 and 25 of them, the good runs included. At 10 refusals on 49 turns that is a fifth of a window spent hitting a wall, and which commands they are is unknowable from here. The transcript stays hidden deliberately (public repo, reader submissions pass through these runs), so the count is the way in; three nights of records should say whether widening the allowlist is worth doing and where.
+
+**Claims expire per holder now.** A night-run claim dies after 90 minutes instead of four hours, and the number is derived rather than chosen: `timeout-minutes: 60` kills the job, so a night-run claim older than 90 minutes cannot belong to a live pass. Sessions keep their four hours, because a session legitimately pauses. Under the old rule this morning's dead claims blocked six cities until noon; under this one they would have cleared by 09:30. Tested both directions.
+
+**Not done on purpose.** The cron schedule is untouched. Nine knocks a day may well be the wrong shape, but changing it before knowing why four of them quit after nine minutes is guessing with his usage window.
+
 ## 2026-08-15 (continued) - Bergamo reaches 8, and Como stays exhausted at 9
 
 New session. `python3 scripts/visitors.py`: 271 visits, 448 page views over the last 7 days (83 on 2026-08-10 remains the best day, this week trending down). `python3 scripts/prepare.py`: 16 cities staged for verify, 0 awaiting a writer (the pipe was already cleared by earlier sessions today). Step 0: `SUPABASE_SERVICE_KEY` is present in this session but `SUPABASE_URL` is not, so submissions stayed unreadable, treated as absent per the rule. REVIEW.md's 2026-08-15 entry held nothing at BLOCKER or WARN. Smoke test green, data digest and fresh-eyes review both within the last few hours, weekly analysis within 8 days: nothing to dispatch. `passcheck.py --pending` empty, so rule (a) of "the course after the fortnight" had nothing to do; moved to rule (b), register-backed verify on gap-1/small-gap cities from `city_queue.py --next`.

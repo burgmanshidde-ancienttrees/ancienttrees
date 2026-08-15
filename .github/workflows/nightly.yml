@@ -78,7 +78,16 @@ jobs:
           cache: npm
           cache-dependency-path: site/package-lock.json
 
+      # Where the run started, so the Run health step below can say what it
+      # actually produced instead of asking it. Cheap and unconditional.
+      - name: Mark the starting point
+        id: start
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "at=$(date -u +%Y-%m-%dT%H:%M:%S+00:00)" >> "$GITHUB_OUTPUT"
+
       - name: Run the research workflow from CLAUDE.md
+        id: claude
         uses: anthropics/claude-code-action@v1
         env:
           # The runs' eyes: lets a run read the visitor trend itself via
@@ -353,6 +362,52 @@ jobs:
       # Turning it back on is Hidde's call, not a run's, because it is his usage
       # window: restore the presence-beacon version from git history
       # (this file as it stood before c034207) rather than rewriting it.
+      # No run may end invisibly. Added 2026-08-15, after four runs in a row
+      # ended after nine minutes of a sixty minute window with is_error false,
+      # published nothing, and wrote not one line to LOG.md; from the repository
+      # they looked identical to runs that never fired, and finding that out cost
+      # an hour of reading `gh run view --log` by hand. The prompt has told every
+      # run since 2026-08-13 to log even when it ships nothing, and a run that
+      # gives up is precisely the run that skips that instruction: a rule that
+      # fails on two different days becomes a check, which is the project's
+      # standing ratchet.
+      #
+      # So the workflow measures the run rather than trusting it. Always a record
+      # in data/run-health.json (minutes, turns, commands the allowlist refused,
+      # trees that reached data/cities, claims left behind); a LOG.md stub only
+      # when the run wrote none of its own. It cannot fail the job: the work is
+      # already done and pushed by the time this runs.
+      - name: Run health
+        if: always()
+        continue-on-error: true
+        env:
+          RUN_START_SHA: ${{ steps.start.outputs.sha }}
+          RUN_STARTED_AT: ${{ steps.start.outputs.at }}
+          CLAUDE_EXECUTION_FILE: ${{ steps.claude.outputs.execution_file }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set +e
+          # The action reports the path; fall back to where it has always
+          # written it, so a rename upstream costs the numbers and not the step.
+          if [ -z "$CLAUDE_EXECUTION_FILE" ] || [ ! -f "$CLAUDE_EXECUTION_FILE" ]; then
+            CLAUDE_EXECUTION_FILE="${RUNNER_TEMP:-/home/runner/work/_temp}/claude-execution-output.json"
+          fi
+          python3 scripts/run_health.py \
+            --execution-file "$CLAUDE_EXECUTION_FILE" \
+            --since-sha "$RUN_START_SHA" \
+            --started "$RUN_STARTED_AT"
+          git add data/run-health.json LOG.md
+          git diff --cached --quiet && { echo "nothing to record"; exit 0; }
+          # The action revokes its own app token on the way out, so the remote
+          # url it configured is dead by now. Push as the workflow itself.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git commit -q -m "Run health: what the $(date -u +%H:%M) run did with its window"
+          git pull --rebase -q
+          git push -q || echo "run health recorded locally, push refused"
+
       - name: Chain status
         if: always()
         run: echo "Self-chaining off since 2026-07-31 (usage limit). Cron only; nothing to dispatch."

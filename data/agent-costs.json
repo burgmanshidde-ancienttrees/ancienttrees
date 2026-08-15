@@ -1702,6 +1702,13 @@
         "tokens": 24000,
         "trees": 1,
         "note": "session-direct verify (not dispatched): resolved the Chudoba plane identity-conflict lead via 4 direct web searches/fetches, confirmed one tree not two, shipped with an honest girth-disagreement note"
+      },
+      {
+        "target": "night-run observability",
+        "kind": "product",
+        "tokens": 0,
+        "trees": 0,
+        "note": "session work: nightly.yml now measures every run (Run health step + scripts/run_health.py) and writes a LOG.md stub when the run wrote none; night-run claims expire after 90 minutes instead of 4 hours, since the job is killed at 60. Diagnosis: 4 runs on 08-15 ended after ~9 minutes of a 60 minute window, clean, silent, holding claims"
       }
     ]
   }
