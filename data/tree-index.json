@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 27742,
+ "count": 27743,
  "trees": [
   {
    "id": "ali_001",
@@ -16304,6 +16304,22 @@
    "lat": 46.05985,
    "lng": 11.061781,
    "precision": "approximate",
+   "age_min": null,
+   "age_max": null,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "tre_010",
+   "tier": "highlighted",
+   "name": "The Wild Cherry of Passo del Cimirlo",
+   "species": "Wild Cherry (Prunus avium)",
+   "city": "Trento",
+   "country": "Italy",
+   "lat": 46.064825,
+   "lng": 11.186625,
+   "precision": "confirmed",
    "age_min": null,
    "age_max": null,
    "has_photo": false,

@@ -1521,6 +1521,15 @@
         "note": "session pass, tokens not separately metered; new city opened from the prepare.py-staged register-candidates shelf (8 candidates, Govern de les Illes Balears CC BY catalogue). Shipped 5: S'Olivera de Cort, the Misericordia and cemetery figs, the Llotja lagunaria and the Bellver lentisco. Blocked 3: one dead (register's own notes say 'mort'), two on private land. 3 old-town trees form a real 1.4km/19min walk per the build output; the cemetery fig and Bellver lentisco stand alone as satellite stops.",
         "wasted": 0,
         "brief_wrong": false
+      },
+      {
+        "target": "trento",
+        "kind": "verify+write",
+        "tokens": 0,
+        "trees": 1,
+        "note": "session pass, tokens not separately metered. Closed Trento's last tree (9/10 to 10/10) by researching a single specific lead named in the 2026-08-14 review (the wild cherry at Passo del Cimirlo, on the city's own 18-tree monumental list but never entered in the leads file), rather than re-checking the three held villa leads whose access doubts are unchanged. Found the comune's own open-data CSV with an exact register scheda (girth/height/public ownership), used alongside press confirming the tree's place on the monumental list.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
