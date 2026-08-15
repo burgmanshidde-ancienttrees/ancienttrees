@@ -36,8 +36,15 @@ def rules():
 
 
 def reason_text(entry):
-    return " ".join(str(entry.get(k, "")) for k in
-                    ("why_not_published", "reason", "why", "status", "note"))
+    # Was a fixed list of keys (why_not_published, reason, why, status, note),
+    # which missed real block reasons written under other names: Trento's
+    # leads file records them under `why_a_lead`, `next_step` and
+    # `hold_reason_2026_08_14`, and a 2026-08-14 write pass explicitly found
+    # "the cautious reading of hard rule 10 is that this is somebody's home"
+    # in one of those fields for the Villa O'Santissima sequoia, invisible to
+    # this function because nothing reads that key. Scan the whole entry, the
+    # same fix already applied to is_done() below for the same failure shape.
+    return json.dumps(entry, ensure_ascii=False)
 
 
 # A lead that has already shipped is not a lead. Found 2026-08-12 while sizing
