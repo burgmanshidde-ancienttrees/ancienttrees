@@ -1784,6 +1784,15 @@
         "tokens": 95000,
         "trees": 0,
         "note": "Council register had no species/age field, coordinates only; pivoted to National Trust/heritage sources, 8 verified in one City Botanic Gardens + Eagle Street cluster, 1 avenue (Bunya Pine Avenue, 18 trees) blocked as not a single collectible point"
+      },
+      {
+        "target": "photo-queue",
+        "kind": "photo",
+        "tokens": 0,
+        "trees": 0,
+        "note": "scripts/photo_hunt.py --recheck free API sweep (runner rule: never judge photos here, egress proxy blocks Wikimedia/Openverse). 40 photo-less trees swept, several new candidates queued for a session viewing pass, none judged.",
+        "wasted": 0,
+        "brief_wrong": false
       }
     ]
   }
