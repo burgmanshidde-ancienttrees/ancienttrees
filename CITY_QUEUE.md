@@ -314,7 +314,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 186 | Rothenburg ob der Tauber | 1.00 | 39,879 | - | - | - | 8 | 10 | predicted (thin competition) |
 | 187 | Assisi | 0.76 | 30,278 | - | - | - | - | 10 | predicted (thin competition) |
 | 188 | Colmar | 1.14 | 45,517 | - | - | - | - | 10 | predicted (thin competition) |
-| 189 | Ferrara | 0.69 | 27,490 | - | - | - | 7 | 10 | predicted (thin competition) |
+| 189 | Ferrara | 0.69 | 27,490 | 5 | - | 1 | 7 | 10 | predicted (thin competition) |
 | 190 | Dijon | 1.09 | 43,526 | - | - | - | - | 10 | predicted (thin competition) |
 | 191 | Merida | 1.09 | 43,735 | - | - | - | - | 10 | predicted (thin competition) |
 | 192 | Stirling | 1.09 | 43,558 | - | - | - | - | 10 | predicted (thin competition) |

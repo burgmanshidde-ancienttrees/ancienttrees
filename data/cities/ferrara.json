@@ -1,0 +1,200 @@
+{
+  "city": "Ferrara",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Ferrara's five monumental trees stand across a UNESCO World Heritage Renaissance city. A gray poplar over 150 years old grows in the garden of Palazzo dei Diamanti, its diamond-fissured bark echoing the palace's famous facade. A short walk away, Parco Massari holds a hackberry and a ginkgo among the trees on Italy's first official monumental list, and the Biblioteca Ariostea's own ginkgo, first recorded in 1890, draws crowds every November for its colour. The thickest trunk belongs to an ordinary street plane on Viale Po.",
+  "meta_description": "Ferrara's monumental trees: a 150 year gray poplar at Palazzo dei Diamanti, two ginkgos, and Parco Massari's protected hackberry.",
+  "question_meta": "Ferrara's oldest documented trees are the gray poplar of Palazzo dei Diamanti and the bagolaro of Parco Massari, both about 150 years old.",
+  "question_answer": "Ferrara's oldest individually dated trees are the gray poplar in the garden of Palazzo dei Diamanti and the bagolaro (Mediterranean hackberry) of Parco Massari, both put at about 150 years by the city's own museum records. The Biblioteca Ariostea's ginkgo is first documented from 1890, which sets a firm minimum age without confirming exactly how much older it might be, since it began life as part of the university's old botanical garden before that record starts.",
+  "question_context": "Italy's national monumental tree register gives girth, height and location for every entry here but no age field, so the dates on this page come from Ferrara's own civic museum, MuseoFerrara, which has researched several of the city's protected trees individually and published a page for each. The gray poplar at Palazzo dei Diamanti and the bagolaro at Parco Massari both carry a museum estimate of about 150 years, tied to the buildings and gardens they stand in rather than to a planting record. The Ariostea ginkgo is different: its first written record dates to 1890, when it already stood in the University of Ferrara's old botanical garden, once housed in the same Palazzo Paradiso courtyard the library now occupies, so its documented age is at least that of the record and very possibly more, since nothing says how old it already was in 1890. The second ginkgo, in Parco Massari, and the plane on Viale Po carry no individual age estimate at all, only their register measurements, so none is claimed for them here rather than guessed at.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Ferrara?",
+      "a": "The gray poplar at Palazzo dei Diamanti and the bagolaro at Parco Massari are both about 150 years old by the city museum's own estimate, the oldest individually dated trees on this page."
+    },
+    {
+      "q": "Are Ferrara's monumental trees free to visit?",
+      "a": "Mostly. Parco Massari is a free public park and the Viale Po plane stands on an open street. The Palazzo dei Diamanti garden and the Biblioteca Ariostea courtyard generally follow the building's own opening hours, so check before visiting."
+    },
+    {
+      "q": "Which tree has the best story?",
+      "a": "The ginkgo at the Biblioteca Ariostea. First recorded in 1890 as part of the university's old botanical garden, it is a male specimen that turns a uniform gold every autumn, drawing local crowds and press coverage to a single tree changing colour."
+    },
+    {
+      "q": "Can I see them all in one walk?",
+      "a": "The Palazzo dei Diamanti poplar and Parco Massari's two trees stand within about a kilometre of each other. The Biblioteca Ariostea ginkgo and the Viale Po plane are separate stops elsewhere in the city."
+    }
+  ],
+  "hero_tree_id": "fer_004",
+  "oldest_tree_id": "fer_001",
+  "trees": [
+    {
+      "id": "fer_001",
+      "name": "The Gray Poplar of Palazzo dei Diamanti",
+      "species": "Gray Poplar (Populus canescens)",
+      "age_estimate": "over 150 years",
+      "age_min": 150,
+      "age_max": 180,
+      "location": {
+        "address": "Palazzo dei Diamanti, Corso Ercole I d'Este, 44121 Ferrara",
+        "latitude": 44.842344,
+        "longitude": 11.619656,
+        "neighbourhood": "Addizione Erculea"
+      },
+      "story": "This gray poplar has grown in the garden of one of the Italian Renaissance's most recognisable buildings for more than a century and a half, long enough to have watched the palace's stone facade go from a private noble residence to a public gallery. Palazzo dei Diamanti, faced with 8,500 pointed marble blocks cut to look like diamonds, gives its name to the whole Renaissance addition to the city Duke Ercole I d'Este ordered in 1492, a planned extension that later helped earn Ferrara its UNESCO World Heritage listing.\n\nThe tree itself, 4.44 metres round and 24 metres tall, is a hybrid of white poplar and European aspen, identifiable by bark that starts pale gray with diamond-shaped fissures echoing the palace's own facade and darkens to brown with age. It was named to Italy's first official list of monumental trees under the 2013 protection law, recognised for both its age and its size.\n\nA 2023 restoration of the garden finally opened the space properly to visitors, so a tree that had spent most of its life screening a private courtyard now grows in ground anyone can walk into.",
+      "how_to_recognise": "The tall poplar in the palace's garden, its pale, diamond-fissured bark echoing the building's famous stone facade.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 15/D548/FE/08, girth 444cm, height 24m)",
+        "http://www.museoferrara.it/view/s/97261dcc818c4030b4ef7002a5e05341 (MuseoFerrara, age over 150 years, 2013 Law 10 monumental listing, species detail)",
+        "https://internoverde.it/palazzo-dei-diamanti/ (2023 garden restoration opening the space to visitors)"
+      ],
+      "access": "Free, in the palace garden, generally open with the palace's own hours; check before visiting",
+      "transport": "About a 15 minute walk north-west of Ferrara railway station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "fer_002",
+      "name": "The Bagolaro of Parco Massari",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "about 150 years",
+      "age_min": 140,
+      "age_max": 165,
+      "location": {
+        "address": "Parco Massari, Corso Porta Mare, 44121 Ferrara",
+        "latitude": 44.843975,
+        "longitude": 11.624161,
+        "neighbourhood": "Corso Porta Mare"
+      },
+      "story": "Parco Massari has changed hands three times since architect Luigi Bertelli laid it out in 1780 for the Marchese Camillo Bevilacqua: to the Massari counts in the mid-19th century, who remade it as an English-style landscape park, and in 1936 to the city of Ferrara, which still owns it. This hackberry, about 150 years old, was already growing when that last transfer happened.\n\nIts trunk runs 3.76 metres round, straight and fluted under gray bark, holding up a dense, rounded crown on branches wide enough in diameter to have earned it individual protection on Italy's first monumental tree list alongside the park's three cedars of Lebanon. Celtis australis takes its Italian name, bagolaro, from a Lombard word for a tool handle, a nod to timber once prized for exactly that; a second nickname, spaccasassi, rock-breaker, describes its willingness to root in poor, stony ground where softer species fail.\n\nThe species can live 600 years by some accounts, which makes a century and a half look like the opening chapter rather than the whole story.",
+      "how_to_recognise": "The rounded, dense-crowned hackberry on the park's north side facing Via Guarini, its straight, fluted trunk covered in ash-gray bark.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 11/D548/FE/08, girth 376cm, height 23m)",
+        "http://www.museoferrara.it/view/s/abf14005b19f4026af7f44bc6d0ab2cb (MuseoFerrara, age about 150 years, description and 2013 Law 10 monumental listing)",
+        "https://www.storiedipianura.it/territorio-e-cultura/alberi-boschi-e-paesaggi/550-parco-massari-un-viaggio-tra-storia-e-natura-nel-cuore-di-ferrara.html (park history: 1780 by Bertelli for Bevilacqua, Massari family remodelling, sold to the comune in 1936)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "About a 15 minute walk north-east of Ferrara railway station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "fer_003",
+      "name": "The Ginkgo of Parco Massari",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 150,
+      "location": {
+        "address": "Parco Massari, Corso Porta Mare, 44121 Ferrara",
+        "latitude": 44.843611,
+        "longitude": 11.624167,
+        "neighbourhood": "Corso Porta Mare"
+      },
+      "story": "Parco Massari's plant list runs long, planes, paulownias, horse chestnuts, magnolias, birches, limes, firs, pines, acacias, but the ginkgo is the one tree in it whose lineage predates the flowering plants surrounding it by tens of millions of years. This specimen, 3.80 metres round and 25 metres tall, grows among the park's other monumental trees, the three cedars of Lebanon and the bagolaro that made Italy's first official protected-tree list together.\n\nGinkgo biloba is the last living species of an order that once grew across the northern hemisphere and had been reduced, by the time European botanists took an interest, to a handful of cultivated groves in China. It survives poor soil, pollution and pests that would finish off almost anything else, and it turns a hard, uniform gold in autumn rather than the mixed colours most deciduous trees show.\n\nThe park itself was laid out in 1780 for a marchese, remade as an English landscape garden by the Massari family in the 19th century, and sold to the city of Ferrara in 1936, so this tree has spent at least part of its life under each of those owners.",
+      "how_to_recognise": "The ginkgo among Parco Massari's collection of monumental trees, its fan-shaped leaves and pale gray trunk unlike anything else nearby.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 17/D548/FE/08, girth 380cm, height 25m)",
+        "https://www.storiedipianura.it/territorio-e-cultura/alberi-boschi-e-paesaggi/550-parco-massari-un-viaggio-tra-storia-e-natura-nel-cuore-di-ferrara.html (Parco Massari's tree collection and history)"
+      ],
+      "access": "Free, public park, open daily",
+      "transport": "About a 15 minute walk north-east of Ferrara railway station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the fan-shaped leaves turn a uniform hard gold"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "fer_004",
+      "name": "The Ginkgo of the Biblioteca Ariostea",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "over 130 years",
+      "age_min": 130,
+      "age_max": 160,
+      "location": {
+        "address": "Biblioteca Comunale Ariostea, Via delle Scienze 17, 44121 Ferrara",
+        "latitude": 44.832222,
+        "longitude": 11.621667,
+        "neighbourhood": "Centro Storico"
+      },
+      "story": "The first written record of this tree dates to 1890, and it did not start out in a library garden. It is a survivor of the University of Ferrara's old botanical garden, once kept in the courtyard of Palazzo Paradiso, the building that now houses the Biblioteca Ariostea, the city's historic public library. When the university's collection moved on, this ginkgo did not go with it.\n\nAt 4.65 metres round and about 20 metres tall, with a canopy wide enough to fill the courtyard it stands in, it is a male tree, which means it never produces the strong-smelling fruit that gives female ginkgos their bad reputation, only the fan-shaped leaves that turn a uniform gold every autumn and draw crowds specifically to photograph it. Local papers cover the display most years, treating a single tree changing colour as news, which is a fair measure of how much the city has come to value it.\n\nGinkgo biloba's lineage runs back some 250 million years, effectively unchanged, a genuine living fossil rather than a marketing phrase. A specimen first recorded in a 19th century university garden and still standing in the 21st is, by the standards of its own family tree, barely middle-aged.",
+      "how_to_recognise": "The wide-canopied ginkgo filling the library's courtyard garden at Via delle Scienze 17, unmistakable in November when it turns gold.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 01/D548/FE/08, girth 452cm, height 19m)",
+        "https://www.museoferrara.it/view/s/2b1e97c91fa04ca39459ac5f985e74dc (MuseoFerrara, first recorded 1890, survivor of the university botanical garden formerly at Palazzo Paradiso, male specimen, girth 465cm)",
+        "https://estense.com/?p=742162 (local press coverage of the tree's annual autumn colour)"
+      ],
+      "access": "Free, in the library's public courtyard garden, open during library hours",
+      "transport": "About a 10 minute walk south of Ferrara Castello Estense",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          11,
+          12
+        ],
+        "kind": "autumn colour",
+        "label": "late November into early December, when the canopy turns gold and draws crowds to photograph it"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "fer_005",
+      "name": "The Plane of Viale Po",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "not individually documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Viale Po 3, 44121 Ferrara",
+        "latitude": 44.844806,
+        "longitude": 11.607453,
+        "neighbourhood": "Viale Po"
+      },
+      "story": "The thickest trunk on this page belongs to a street tree rather than to anything growing in a park or a palace garden. This London plane on Viale Po measures 5.40 metres round, on a tree 20 metres tall, and the city has nominated it, along with a short list of other exceptional specimens across Ferrara, for protection under the Emilia-Romagna region's safeguarding measures for flora of particular merit.\n\nLondon planes were planted along avenues across European cities from the 18th century onward for the same practical reasons that still apply on Viale Po: fast growth, tolerance of compacted soil and pollution, and a canopy wide enough to shade a whole street. What sets this one apart from the species doing the same job on a thousand other avenues is simply scale, a girth most street planes never come close to reaching before they are pruned back or replaced.\n\nNo individual planting date survives for it, which is ordinary for a street tree rather than a garden specimen with its own record. The register measures it; nobody has dated it.",
+      "how_to_recognise": "The plane with by far the thickest trunk on Viale Po, standing out from the avenue's other street trees.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 16/D548/FE/08, girth 540cm, height 20m)",
+        "https://www.cronacacomune.it/notizie/44383/11-gruppi-arborei-ferraresi-elenco-salvaguardia-regionale.html (Ferrara's monumental trees nominated for the Emilia-Romagna regional flora safeguarding list)"
+      ],
+      "access": "Free, on the public street, no gate or opening hours",
+      "transport": "About a 20 minute walk north-west of Ferrara railway station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}
