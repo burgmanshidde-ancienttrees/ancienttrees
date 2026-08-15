@@ -1,0 +1,45 @@
+{
+  "city": "Aarhus",
+  "country": "Denmark",
+  "city_slug": "aarhus",
+  "note": "Candidates from the 2026-08-15 verify pass on data/research/aarhus-candidates.json (Dansk Traeregister leads). 7 trees verified to data/research/aarhus-verified.json; the rest are here in the two kinds, leads and blocked.",
+  "leads": [
+    {
+      "name": "Asken i Grundfør",
+      "species": "European Ash (Fraxinus excelsior)",
+      "lat": 56.27023,
+      "lng": 10.10188,
+      "status": "lead",
+      "why": "Alive and genuinely remarkable: 5.52m girth, 23m tall, dendron.dk Individual_ID=1249 (GPS-verified 2019), rated nationally noteworthy and once recorded as Denmark's largest ash before being overtaken by a specimen at Kalo Hestehave. Independently corroborated by Kirker.dk as standing in Grundfor Praestegaardshave (the rectory/parsonage garden next to Grundfor Kirke). Two open questions stopped it shipping this pass: (1) access, the garden belongs to a former parsonage now used as church offices and no source confirms the public may walk in, so it fails the hard-rule-10 test until that is checked on the ground or with the parish; (2) distance, 14.4km from the centre with no confirmed fast public-transport link to Grundfor itself (Hinnerup, the nearest station, is an 11-15 minute train ride, but Grundfor is a further stretch beyond that), so the day-trip boundary needs a real transit check before this can be presented honestly as an Aarhus tree."
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Blodbøgen på Randersvej",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "lat": 56.17863,
+      "lng": 10.2003,
+      "status": "blocked",
+      "blocked_reason": "dead",
+      "why": "NEVER SHIP as an entry. Planted 1898 by gardener Jens Lassen Faurschou as a memorial to General Rye and the 1849 cavalry battle at Aarhus. FELLED in February 2011 to widen Randersvej for light rail; dendron.dk Individual_ID=508 itself records status 'Dod' (Dead), age given only 'ved faeldningen i 2010' (at the felling). About 30 cuttings were taken and clones planted elsewhere, including one in Vennelyst Park, so a living clone could be a future candidate under a different entry, but the original tree this candidate named is gone. Sources: dendron.dk detaljer.asp?Individual_ID=508, da.wikipedia.org/wiki/Blodboegen_paa_Randersvej, stiften.dk coverage of the felling and the clone replanting."
+    },
+    {
+      "name": "Niels Ebbesens Eg",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "lat": 56.22938,
+      "lng": 10.04453,
+      "status": "blocked",
+      "blocked_reason": "dead",
+      "why": "NEVER SHIP as an entry. A legendary oak at Nørreris Voldsted, Hinnerup, said to have been planted by the father of the medieval hero Niels Ebbesen and long believed 500-600 years old. Fell in a storm in 1992 after root rot; dendron.dk Individual_ID=1757 itself records status 'Død' (Dead), legend 'Væltet 1992' (fell 1992). Also within the register under Individual_ID=179 and possibly others per the candidates file's note that this name appeared four times in the source KML. Sources: dendron.dk, hinneruparkiv.dk's own folder on the tree, ambirk.eu local history page."
+    },
+    {
+      "name": "Århusbøgene",
+      "species": "European Beech (Fagus sylvatica), a stand",
+      "lat": 56.13305,
+      "lng": 10.20972,
+      "status": "blocked",
+      "blocked_reason": "private land, not a collectible point",
+      "why": "NEVER SHIP as an ordinary entry. A stand of old beeches on the slope between Niels W. Gades Vej and Strandvejen, protected since a 1928 ruling, but fredninger.dk's own page ('Aarhus, Bøgetræer') states plainly they form a boundary planting between private villa gardens ('en bevoksning af gamle bøge danner skel mellem villahaver'), visible from the two public streets but not on ground the public may enter. Also fails the collectible-point test on its own terms: it is a multi-tree boundary planting ('bevoksning'), not one identifiable tree or a compact ensemble with one obvious place to stand, closer to an avenue than a single collectible tree. Sources: dendron.dk Individual_ID=286 (also listed under WDPA site ID 333939), fredninger.dk/fredning/aarhus-boegetraeer/."
+    }
+  ]
+}
