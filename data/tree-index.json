@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 27744,
+ "count": 27746,
  "trees": [
   {
    "id": "ali_001",
@@ -16466,6 +16466,38 @@
    "precision": "approximate",
    "age_min": 200,
    "age_max": 230,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "tri_009",
+   "tier": "highlighted",
+   "name": "The Bagolaro of Piazza Hortis",
+   "species": "Mediterranean Hackberry (Celtis australis)",
+   "city": "Trieste",
+   "country": "Italy",
+   "lat": 45.647189,
+   "lng": 13.764686,
+   "precision": "confirmed",
+   "age_min": 180,
+   "age_max": 200,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "tri_010",
+   "tier": "highlighted",
+   "name": "The Siberian Elm of Piazzale Rosmini",
+   "species": "Siberian Elm (Ulmus pumila)",
+   "city": "Trieste",
+   "country": "Italy",
+   "lat": 45.64065,
+   "lng": 13.766325,
+   "precision": "confirmed",
+   "age_min": null,
+   "age_max": null,
    "has_photo": false,
    "has_story": true,
    "sources": 3
@@ -468871,7 +468903,7 @@
   },
   {
    "id": "lead_zaragoza_008",
-   "tier": "lead",
+   "tier": "blocked",
    "name": "The Bay Laurel of the old Torrero prison",
    "species": "Laurus nobilis",
    "city": "Zaragoza",
@@ -468880,7 +468912,7 @@
    "lng": -0.887416,
    "precision": null,
    "reason": "",
-   "note": "A bay laurel 4.10 m round at the base and 17 m tall, which is very large for the species, on the site of the former Carcel de Torrero where it once stood in the prison's small garden courtyard. The book dedicates its opening pages to this tree as one whose survival was fought for. The history is the strongest of any tree in the register and the site is the problem: the prison was demolished and th",
+   "note": "CHECKED 2026-08-15: dead. The laurel grew inside the Carcel de Torrero, between the infirmary, a module and the compound's north wall, visible above the walls from outside and tended by prisoners; it became a symbol of the outside world for them. The tree died and the prison was later demolished; the site is now a small plaza the neighbourhood renamed Plaza del Laurel in its memory, currently in p",
    "has_photo": false,
    "has_story": false,
    "sources": 0

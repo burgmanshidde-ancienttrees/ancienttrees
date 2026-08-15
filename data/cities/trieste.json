@@ -2,8 +2,8 @@
   "city": "Trieste",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Trieste holds the densest cluster of registered monumental trees in Italy, and it comes in two halves. Twelve protected trees stand inside three hundred metres of each other in the park an Austrian archduke laid out on a limestone headland in 1856, planting Californian conifers on the Adriatic because he wanted to see whether they would take. The other half grows in the city, in a public garden a botanist mayor planted himself and along the road climbing out of it. Eight of them are here, in two walks.",
-  "meta_description": "Eight remarkable trees in Trieste in two short walks: Maximilian's Californian conifers at Miramare, and the city's oldest plane by the Giardino Pubblico.",
+  "intro": "Trieste holds the densest cluster of registered monumental trees in Italy, 48 by the city's own count, and this page covers three of its neighbourhoods. Four stand within three hundred metres of each other in the park an Austrian archduke laid out on a limestone headland, planting Californian conifers on the Adriatic to see whether they would take. Four more grow in the city, in a public garden a botanist mayor planted himself and along the road climbing out of it. The last two stand a short walk apart in Citta Vecchia.",
+  "meta_description": "Ten remarkable trees in Trieste in three walks: Maximilian's Californian conifers at Miramare, the city's oldest plane, and a fenced 180 year hackberry.",
   "question_meta": "The oldest tree in Trieste is the London plane at the Boschetto roundabout on Viale al Cacciatore, over 200 years old and older than any park in the city.",
   "question_answer": "The oldest tree in Trieste is the London plane standing at the Boschetto roundabout on Viale al Cacciatore, which the municipality puts at over 200 years. That makes it older than every public garden in the city, including the Giardino Pubblico laid out in 1854 and the park at Miramare begun in 1856. It is five metres round the trunk and twenty-five metres tall. The largest tree in Trieste is a different plane, in the Giardino Pubblico, at 542 centimetres of girth and about 180 years old.",
   "question_context": "Nothing in Italy's official record of monumental trees will tell you a tree's age. The national MASAF register lists 47 protected trees in the comune of Trieste with species, girth, height and a coordinate, and the regional Friuli Venezia Giulia decree that feeds it adds a place name and the legal reason for each designation, but neither carries an age field or any note of whether a tree is still healthy. Every date on this page therefore comes from elsewhere: from the municipality's own survey of its 48 oldest trees, which puts the Viale al Cacciatore plane above 200 years and the great plane of the Giardino Pubblico near 180, and from the founding dates of the gardens themselves. Those dates are firm. Muzio de Tommasini, botanist and podesta, began the public garden in 1854 on land bought from Benedictine nuns and planted the planes himself. Archduke Maximilian of Habsburg started the Miramare park in the spring of 1856 and kept ordering plants for it even after he had left for Mexico. A tree in either place is as old as the garden around it or a little younger, which is the honest way to date most of this list.",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Can you walk between them?",
-      "a": "In two walks, not one. Four stand inside three hundred metres of each other in the Miramare park, eight kilometres up the coast. The other four are in the city, spread along about a kilometre from the Giardino Pubblico up Via Giulia to the Boschetto roundabout."
+      "a": "In three walks, not one. Four stand inside three hundred metres of each other in the Miramare park, eight kilometres up the coast. Four more are spread along about a kilometre from the Giardino Pubblico up Via Giulia to the Boschetto roundabout. The last two, a hackberry in Piazza Hortis and an elm in the Piazzale Rosmini garden, stand about 700 metres apart in Citta Vecchia."
     },
     {
       "q": "Do they cost anything to see?",
@@ -294,6 +294,68 @@
       "curation_status": "ai_generated",
       "notes": "Register 54/L424/TS/06, 510 cm, 25 m, locality Viale al Cacciatore. Il Piccolo's survey names the plane at the Viale al Cacciatore / Boschetto roundabout as the oldest tree in the city at over 200 years, which is the independent age source. Its companion 55/L424 (440 cm, 23 m) stands about 25 m away and is recorded as a lead. Pin marked approximate: the two register coordinates are 25 m apart and there is no way to confirm from the data which of the pair carries the 510 cm measurement, though the larger of the two is the one meant.",
       "location_precision": "approximate"
+    },
+    {
+      "id": "tri_009",
+      "name": "The Bagolaro of Piazza Hortis",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "over 180 years",
+      "age_min": 180,
+      "age_max": 200,
+      "location": {
+        "address": "Piazza Attilio Hortis, 34123 Trieste",
+        "latitude": 45.647189,
+        "longitude": 13.764686,
+        "neighbourhood": "Citta Vecchia"
+      },
+      "story": "For over 180 years this hackberry has stood in what is now Piazza Hortis, and for most of that time nobody thought about what people were doing to its roots. In 2025 the city fenced it off: pedestrians had been crossing the square for generations without knowing they were walking on top of nearly two centuries of root plate, compacting the soil the tree breathes through. The comune spent about 17,000 euros on the fence and on new drainage-friendly planting around the base, part of a wider programme that has already stripped suffocating pavement away from monumental trees elsewhere in the city.\n\nTrieste has identified 48 monumental trees within its borders, the highest concentration the comune has recorded of any Italian city, and this bagolaro is one of them. In September 2024 it was fitted with a TreeTag, a small ID marker placed as part of a European citizen-science campaign that measures a tree's condition and records the data for researchers to track over time.\n\nCeltis australis is native across the Mediterranean and famously slow to give up: its wood was used for cart axles and ploughshares because it resists splitting even when green. This one has outlived the square's own name twice over, and the piazza, library and street around it are all named for Attilio Hortis, the Trieste historian and librarian who died a century ago.",
+      "how_to_recognise": "The single fenced-off tree standing in the middle of Piazza Hortis, its canopy the widest shade in the square.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 41/L424/TS/06, girth 396cm, height 22m)",
+        "https://www.ilpiccolo.it/cronaca/alberi-antichi-trieste-tutela-gootn505 (Il Piccolo, city survey of 48 oldest trees, age over 180 years, 2025 fencing and drainage project, cost c.17,000 euros)",
+        "https://www.il-meridiano.it/notizie/cronaca/11322-piazza-hortis-a-trieste-apposto-il-treetag-ai-piedi-del-celtis-australis.html (TreeTag placement, September 2024 EU #EUTREETAG campaign)"
+      ],
+      "access": "Free, on the open public square, no gate or opening hours",
+      "transport": "About a 10 minute walk south-west of Piazza Unita d'Italia",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "tri_010",
+      "name": "The Siberian Elm of Piazzale Rosmini",
+      "species": "Siberian Elm (Ulmus pumila)",
+      "age_estimate": "not individually documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Giardino di Piazzale Antonio Rosmini, 34123 Trieste",
+        "latitude": 45.64065,
+        "longitude": 13.766325,
+        "neighbourhood": "San Vito"
+      },
+      "story": "The garden at Piazzale Rosmini climbs the San Vito hill above the church of Madonna del Mare, nine and a half thousand square metres of slope and lawn that the city's own parks department singles out for two things: its valuable trees and its play areas for children of different ages. The Siberian elm growing there, 3.58 metres round and 24 metres tall, is one of Trieste's registered monumental specimens and the garden's standout tree.\n\nUlmus pumila earned its place in European gardens for the same reason it earns a mention here: it shrugs off Dutch elm disease far better than the native field and wych elms the fungus devastated across the continent from the 1970s onward. A healthy elm of real size in a European city is worth noticing partly for that reason alone, a survivor by constitution rather than by luck.\n\nLike the bagolaro at Piazza Hortis, this elm was fitted with a TreeTag in September 2024, part of the same citywide EU citizen-science campaign that is slowly building a public record of condition and growth for Trieste's 48 monumental trees. No individual age has been published for it, so none is claimed here.",
+      "how_to_recognise": "The large elm standing out among the garden's trees on the San Vito hillside, overlooking the church of Madonna del Mare below.",
+      "verified_sources": [
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 49/L424/TS/06, girth 358cm, height 24m)",
+        "https://www.apgi.it/giardino/giardino-di-piazzale-rosmini/ (Associazione Parchi e Giardini Italiani, garden description, San Vito hill, 9,500 sqm)",
+        "https://agenparl.eu/2024/09/18/18-9-2024-giovedi-19-settembre-2024-gli-alberi-di-trieste-partecipano-alla-campagna-di-valutazione-europea-eutreetag/ (TreeTag placement, September 2024, names the Piazzale Rosmini elm)"
+      ],
+      "access": "Free, public garden with children's play areas, open daily",
+      "transport": "About a 12 minute walk south of Piazza Unita d'Italia, adjoining Piazza Hortis",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

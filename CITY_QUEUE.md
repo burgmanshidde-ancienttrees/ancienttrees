@@ -358,7 +358,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 230 | Osaka | 0.41 | 163,112 | 4 | 1 | - | - | 10 | published, never ranked |
 | 231 | Kandy | 0.60 | 24,159 | - | - | - | - | 10 | predicted (thin competition) |
 | 232 | Obidos | 0.39 | 15,685 | - | - | - | - | 10 | predicted (thin competition) |
-| 233 | Trieste | 0.29 | 117,233 | 8 | 1 | 2 | 43 | 10 | published, never ranked |
+| 233 | Trieste | 0.29 | 117,233 | 10 | 1 | 2 | 43 | 10 | published, never ranked |
 | 234 | Evora | 0.38 | 15,345 | - | - | - | - | 10 | predicted (thin competition) |
 | 235 | Copenhagen | 0.55 | 218,621 | 13 | - | 2 | - | 10 | published, never ranked |
 | 236 | Mechelen | 0.52 | 20,707 | - | - | - | - | 10 | predicted (thin competition) |

@@ -11,6 +11,16 @@ What the autonomous runs did, newest first. One entry per run that actually chan
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-08-15 (continued) - Trieste reaches its 10-tree target, a third cluster in Citta Vecchia
+
+Same session, sixth target (after a Zaragoza pass that shipped nothing, see below). Bergamo's only real remaining lead needed a fresh health check with no clean way to get one this session (a horse chestnut illegally pollarded in 2018, storm-damaged in 2021, nothing since), and its other candidates are all private villa grounds or non-collectible avenues, so it stayed untouched beyond one small fix (see below). Moved to **Trieste** (rank 233, 8/10, register 43), where an earlier pass had left a lead explicitly marked "STRONGEST NEXT ADDITION": a Piazza Hortis hackberry with two sources already in hand (Il Piccolo's 2025 coverage of the city fencing it, over 180 years old, and a 2024 EU TreeTag campaign placement), held back only because it sits 1.7km from the existing Giardino Pubblico cluster and would have stretched that walk past 2km.
+
+Rather than force it into an existing walk, opened a third cluster: the hackberry plus a Siberian elm 700m away in the Piazzale Rosmini garden (also TreeTagged in 2024, a public garden the city's own parks department lists), both in Citta Vecchia. Shipped as tri_009/010, closing Trieste to 10/10. The two are close enough to walk between but, at only two trees, fall under `WALK_MIN_TREES` and do not form their own mapped route; the FAQ answer says exactly that rather than implying one. Updated the city's intro, meta_description and the walk-count FAQ answer for three clusters instead of two; `scripts/preflight.py` caught both an overlength intro and an overlength meta_description on the first pass, trimmed both.
+
+Also this session: fixed a stale Bergamo lead (a hospital-garden plane) that cited the superseded "when in doubt, leave it out" line hard rule 10 dropped on 2026-08-13; re-evaluated it against the current three-test standard and it stays blocked on its own merits (tight visiting hours, no evidence of open access), but the reasoning now says why rather than quoting dead text.
+
+Build clean (1518 pages), `scripts/qa.py` clean (1766 pages), `scripts/superlatives.py` clean. `scripts/tree_index.py` run. Refreshed `data/city-queue.json`/`CITY_QUEUE.md`. Logged to `data/agent-costs.json`, marked both leads RESOLVED, released the `trieste` claim.
+
 ## 2026-08-15 (continued) - Bucaco reaches its 10-tree target
 
 Same session, fourth target, and the cheapest of the day: `leads.py --city bucaco --ready` showed 11 already-verified candidates for a 1-tree gap. Picked the cleanest of them, the Redwood of the Fonte de Santa Teresa (5.58m girth, 45m tall, about 150 years old at the 2016 ICNF measurement, on the Trilho da Agua past the forest's historic fountains), over a second candidate (a redwood registered as part of an "Alameda" row standing 10 metres from the already-published King Regnans) whose collectible-point status a previous pass had flagged as genuinely unresolved rather than merely convenient to skip.
