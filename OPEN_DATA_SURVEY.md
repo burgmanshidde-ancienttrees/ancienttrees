@@ -1689,3 +1689,78 @@ gate, is a fast block rather than a hang, so not added to
 `data/fetch-blocklist.json`). Token estimate for the Poland leg:
 approximately 30k (licence resolution fetches, WFS schema discovery, five
 bbox pulls, sanity checks).
+
+## Switzerland, scouted and Geneva imported 2026-08-15
+
+Seven sprint cities had no register (Basel, Bern, Lausanne, Lucerne, Zurich,
+Geneva, Winterthur). `opendata.swiss` (Switzerland's national open-data
+catalogue, resolves via a 302 redirect to `ckan.opendata.swiss`; blocked
+plain `curl` with a 403 until a browser user agent was added, cheap once
+known) surfaced one real candidate this pass: Geneva.
+
+### Geneva: USABLE, imported
+
+`vector.sitg.ge.ch`'s `SIPV_ICA_ARBRE_ISOLE` FeatureServer (Ville/Canton de
+Geneve's SITG portal) is the canton's full isolated-tree inventory,
+239,124 rows, which our semantic filter would forbid wholesale. It carries
+a `REMARQUABLE` field the canton itself populates on 205 of those rows
+(204 tagged "Autre"/other reason, 1 "Dimension"/size), the same
+bulk-inventory-plus-designation-column pattern that made Bordeaux and
+Toulouse usable. Only the 205 flagged rows were imported.
+
+**Licence, quoted from the primary CGU page** (`sitg.ge.ch/ressources/conditions-utilisation-donnees`,
+fetched live 2026-08-15): attribution is mandatory ("Vous devez
+obligatoirement indiquer la source"), and level-A/"Acces libre" data may be
+"reproduire, copier, transmettre, diffuser, publier, adapter, modifier,
+transformer, combiner le jeu de donnees... y compris pour une utilisation
+commerciale" (including commercial use). **One gap, stated plainly rather
+than papered over**: this pass could not directly confirm, from a
+per-dataset access-level tag, that this specific layer sits in tier A
+rather than the more restricted A* (the layer's own catalogue fiche is a
+JS-rendered SPA page this pass's tooling could not render, and the bundled
+metadata PDF uses a font/text encoding a from-scratch extractor could not
+decode cleanly). The circumstantial case is strong (listed on the national
+open-data catalogue, every download route open with no auth gate) but it
+is not the verbatim per-dataset sentence this project's standard asks for;
+a future pass with browser access should close it properly.
+
+**Register pitfalls actually hit**, both caught by the standing
+sanity-check habit: `DATE_PLANTATION` carries an exact recurring sentinel
+value (1812-01-01) on 13 of 84 dated entries, almost certainly a "date
+unknown" database default rather than 13 real trees planted the same day,
+now stored as `planted: null` rather than a fabricated date. And one entry
+contradicts itself, `SOUCHE` (stump) = "Oui" while `VITALITE` still reads
+"Bon" (good); marked `publishable: false` rather than trusted either way.
+Circumference (132-951cm) and height (6-40m) both checked plausible, no
+metres-as-centimetres trap.
+
+Written to `data/registers/geneva-sitg-arbres-remarquables.json`, 205
+entries. 120 of the 205 sit within 5km of Geneva's centre.
+
+### The other six cities: not reached this pass
+
+Basel, Bern, Lausanne, Lucerne, Zurich and Winterthur were not scouted this
+leg; the Geneva investigation (licence resolution plus the two pitfall
+catches) took the rest of the time budget available for the Switzerland
+target. Worth trying next: Kanton Zurich's own open-data portal
+(`geo.zh.ch` / `data.stadt-zuerich.ch`) and Bern's `map.geo.admin.ch`-linked
+cantonal portal are the obvious next guesses, following the same
+"bulk-inventory-plus-designation-column" pattern that worked for Geneva,
+Bordeaux and Toulouse.
+
+Token estimate for the Switzerland leg: approximately 45k (opendata.swiss
+discovery, SITG WFS schema exploration, licence-page fetch, PDF extraction
+attempts that did not pan out, one full 205-row import with pitfall
+checks).
+
+## Greece: not reached this pass
+
+Out of the time budget for this register-scouting session (roughly 45
+minutes was allotted across all four targets; Czech, Poland and
+Switzerland/Geneva alone ran well over that). Not scouted at all. Six
+sprint cities including Corfu (#63) and Rhodes (#80) still have no
+register. Next pass should start from the forestry service's historical
+"diatiritea mnimeia tis fysis" (preserved natural monuments) designation
+per the brief; expect this to be thin or paper-only, and a clean
+nothing-usable-found verdict is a fine result worth an hour rather than
+zero.
