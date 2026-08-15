@@ -285,7 +285,16 @@ export function highlightCurve(ph: PhenologyEntry): [number[], Moment[]] {
 export function phenologyFor(tree: Tree, lat: number): PhenologyEntry | null {
   const e = loadPhenology().get(speciesCommon(tree));
   if (!e || Math.abs(lat) < 25) return null;
-  const delta = lat < 42 ? -1 : lat > 56 ? 1 : 0;
+  // The tropics guard above already used Math.abs; this line did not, and that
+  // was the bug (found 2026-08-15 by the Melbourne write pass, live on Hobart
+  // since it shipped). Every phenology file is written for the northern year,
+  // so a southern tree needs the whole calendar moved half a year, not the
+  // one-month warm-climate nudge. Melbourne at -37.8 was reading as a warm
+  // NORTHERN city and drawing a curve six months out: bare in July, when a
+  // Melbourne elm is in full leaf. A wrong calendar is worse than none, which
+  // is exactly why the tropics print nothing at all.
+  const away = Math.abs(lat);
+  const delta = (lat < 0 ? 6 : 0) + (away < 42 ? -1 : away > 56 ? 1 : 0);
   const out: PhenologyEntry = { ...e };
   for (const k of ["leaf", "flowers", "fruit", "colour", "bare"] as const) {
     const v = e[k];
