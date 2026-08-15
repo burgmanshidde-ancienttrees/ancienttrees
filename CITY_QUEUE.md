@@ -401,7 +401,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 273 | Budapest | 0.25 | 283,807 | 12 | 1 | 3 | - | 20 | measured |
 | 274 | Cambridge | 0.25 | 97,974 | 5 | 2 | 1 | - | 10 | measured |
 | 275 | Hoi An | 0.24 | 9,730 | - | - | - | - | 10 | predicted (thin competition) |
-| 276 | Padua | 0.14 | 54,592 | 9 | 4 | 1 | 12 | 10 | published, never ranked |
+| 276 | Padua | 0.14 | 54,592 | 10 | 4 | 1 | 12 | 10 | published, never ranked |
 | 277 | Maastricht | 0.12 | 47,763 | 5 | - | - | - | 10 | published, never ranked |
 | 278 | Nijmegen | 0.11 | 42,338 | 5 | - | 1 | - | 10 | published, never ranked |
 | 279 | Den Bosch | 0.10 | 39,682 | 11 | 1 | 1 | - | 10 | published, never ranked |

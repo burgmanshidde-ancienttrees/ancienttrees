@@ -2,7 +2,7 @@
   "city": "Padua",
   "country": "Italy",
   "status": "needs_curation",
-  "intro": "Padua's oldest trees mostly answer to a university. The Orto Botanico, founded in 1545 as the world's first university botanical garden, still holds four of the plantings that made it famous, including a dwarf palm Goethe wrote a book around. A magnolia grows sideways in a cloister behind the Basilica di Sant'Antonio, two planes and a sideways hackberry share a public park a mile away, and a pair of pagoda trees mark a university courtyard that has stood since the 1300s. Every one of them sits inside a walk of just over a kilometre.",
+  "intro": "Padua's oldest trees mostly answer to a university. The Orto Botanico, founded in 1545 as the world's first university botanical garden, still holds five of the plantings that made it famous, including a dwarf palm Goethe wrote a book around and Italy's first Himalayan cedar. A magnolia grows sideways in a cloister behind the Basilica di Sant'Antonio, two planes and a sideways hackberry share a public park a mile away, and a pair of pagoda trees mark a university courtyard that has stood since the 1300s. Every one of them sits inside a walk of just over a kilometre.",
   "meta_description": "Padua's oldest trees ring a 1545 university botanical garden, a saint's cloister and a public park, all inside a walk of just over a kilometre.",
   "question_meta": "Padua's oldest tree is the Goethe Palm, a dwarf fan palm in the Orto Botanico planted in 1585, about 440 years old.",
   "question_answer": "Padua's oldest tree is the Goethe Palm (Palma di San Pietro), a dwarf fan palm in the city's Orto Botanico, planted in 1585 and roughly 440 years old. It grows inside a purpose-built octagonal glasshouse on Via Orto Botanico, a five-minute walk from the Basilica di Sant'Antonio, and it is one of the oldest potted or planted specimens still alive anywhere in the garden. The next oldest confirmed age on this page is the Oriental Plane in the same garden, at roughly 345 years.",
@@ -18,7 +18,7 @@
     },
     {
       "q": "Do they cost anything to see?",
-      "a": "The Orto Botanico charges admission, which covers the Goethe Palm, the plane, the ginkgo and the 1786 magnolia. The magnolia in the Sant'Antonio cloister, Parco Treves and Piazza Capitaniato are all free, open public ground."
+      "a": "The Orto Botanico charges admission, which covers the Goethe Palm, the plane, the ginkgo, the 1786 magnolia and the Himalayan cedar. The magnolia in the Sant'Antonio cloister, Parco Treves and Piazza Capitaniato are all free, open public ground."
     },
     {
       "q": "Which has the best story?",
@@ -328,6 +328,37 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "pad_010",
+      "name": "The Himalayan Cedar of the Orto Botanico",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "about 198 years",
+      "age_min": 190,
+      "age_max": 205,
+      "location": {
+        "address": "Orto Botanico di Padova, Via Orto Botanico 15, 35123 Padova",
+        "latitude": 45.398776,
+        "longitude": 11.881411,
+        "neighbourhood": "Orto Botanico"
+      },
+      "story": "The species reached Europe in 1822, and six years later this specimen went into the ground here, the first Cedrus deodara cultivated anywhere in Italy. The garden's own account places it between the Montagnola, an artificial hill built in the 1700s, and the Fontana delle Quattro Stagioni, and every subsequent deodar cedar planted anywhere in the country traces back to trees like this one.\n\nA deodar cedar in its native Himalaya grows at 1,200 to 3,500 metres, on mountainsides far colder in winter than the Veneto plain, which is part of why it took to cultivation here so readily. Two centuries on, it stands about four and a half metres round, one of the older conifers in an arboretum that also holds Atlas cedars and cedars of Lebanon for comparison, a planted lesson in how the genus Cedrus split across three separate mountain ranges.\n\nThe honest note: Italy's monumental tree register rates this specimen's current health as poor, the kind of assessment that means paying attention rather than staying away. Nearly two hundred years old and first of its kind in the country is a lot of biography for one tree to carry, and it is carrying it into old age rather than out of it.",
+      "verified_sources": [
+        "https://ilregistrodeglialberi.it/3250-cedro-dellhimalaya-padova-pd-veneto (RAMI, Registro degli Alberi Monumentali Italiani, girth approx 4.2-4.5m, health rated Pessima)",
+        "https://ortobotanico1545.it/scopri/i-luoghi/arboreto/ (Orto Botanico di Padova's own site, confirms first Cedrus deodara introduced to Italy in 1828, location in the eastern Arboretum near Porta Est)",
+        "https://m.facebook.com/ortobotanicopd/ (Orto Botanico's own account, planted 1828 between the Montagnola and the Fontana delle Quattro Stagioni)"
+      ],
+      "access": "Paid entry (Orto Botanico admission ticket required)",
+      "transport": "About 1.9km, 25-30 minutes on foot, from Padova railway station",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "notes": "Health flagged 'Pessima' (poor) by RAMI, the register's own vitality field, so the story says this plainly rather than hiding it; not the same as dead, and the garden's own current materials still describe and locate it as a standing feature. Shipped 2026-08-15 to close Padua to its 10-tree target, from a lead an earlier pass had already identified as near-zero-cost (same Orto Botanico cluster as pad_001-004) but held back specifically for this health flag."
     }
   ]
 }
