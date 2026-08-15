@@ -133,7 +133,55 @@ def report(day):
                     f"in one day is a mechanism problem rather than an attention problem."]
         for r in wrong:
             out.append(f"- {r['target']}: {r['note']}")
+
+    out += run_health(day)
     return "\n".join(out)
+
+
+def run_health(day):
+    """What the night runs did with the windows they were given.
+
+    Added 2026-08-15 with the meter itself, because a meter nobody reads is the
+    failure this project has already made twice. data/run-health.json is written
+    by nightly.yml's own Run health step, so it fills whether or not a run felt
+    like reporting; this is the place it gets looked at, since retro.py is run
+    daily by the learning loop. The number to watch is not tokens, it is minutes:
+    on 2026-08-15 four runs used nine minutes each of a sixty minute window and
+    nobody could see it."""
+    try:
+        runs = json.load(open(os.path.join(ROOT, "data", "run-health.json")))["runs"]
+    except Exception:
+        return []
+    runs = [r for r in runs if r.get("date") == day]
+    if not runs:
+        return []
+
+    out = ["", "**The night runs' own windows.** Written by the workflow, not by "
+               "the runs, so a run that gave up cannot leave this blank.",
+           "", "| Run (UTC) | Min of 60 | Turns | Refused | Trees | Logged |",
+           "|---|---:|---:|---:|---:|---|"]
+    used = silent = 0
+    for r in runs:
+        started = (r.get("started") or "")[11:16] or "?"
+        mins = r.get("minutes")
+        used += mins or 0
+        if not r.get("logged"):
+            silent += 1
+        out.append(f"| {started} | {mins if mins is not None else '?'} | "
+                   f"{r.get('turns', '?')} | {r.get('denials', '?')} | "
+                   f"{r.get('trees', '?')} | {'yes' if r.get('logged') else 'NO'} |")
+
+    available = len(runs) * 60
+    out += ["", f"{len(runs)} run(s), {round(used)} of a possible {available} "
+                f"minutes used ({round(used * 100 / available)} percent). "
+                f"{silent} ended without writing a log entry of their own."]
+    refused = sum(r.get("denials") or 0 for r in runs)
+    if refused:
+        out.append(f"{refused} command(s) refused by the allowlist across the day. "
+                   f"That is window spent hitting a wall, and which commands they "
+                   f"are is not visible from here: the transcript stays hidden "
+                   f"because the repo is public.")
+    return out
 
 
 def main():
