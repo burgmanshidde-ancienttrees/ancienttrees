@@ -1688,6 +1688,13 @@
         "tokens": 90353,
         "trees": 0,
         "note": "single-candidate recheck; found continued Oct-2025 Lombardy register listing as sole new evidence, no post-2021 sighting; delivered flagged, not blocked"
+      },
+      {
+        "target": "potsdam",
+        "kind": "verify",
+        "tokens": 148516,
+        "trees": 2,
+        "note": "2 Pfaueninsel oaks verified (Door Oak, Schlosswiese Oak), 2-3 sources each, dated alive May 2025; 2 more single-source Pfaueninsel candidates left as leads; a main-session/agent working-directory collision briefly clobbered data/cities/potsdam.json mid-pass, recovered by redoing the merge after the agent finished"
       }
     ]
   }

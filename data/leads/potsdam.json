@@ -16,7 +16,27 @@
    "latitude": 52.410565,
    "longitude": 13.098013,
    "status": "held",
-   "reason": "LEAD, access uncertain, not blocked outright. Three co-located London Planes (near-identical siting, treat as one collectible point if pursued, per the register-twin rule) stand in the walled garden directly behind Jagdschloss Glienicke, which has housed the Sozialpädagogisches Fortbildungsinstitut Berlin-Brandenburg (SFBB), a training institute, since 2007. Search results say the wider park around the building is open to the public 'at any time', but nothing found this pass confirms the specific fenced garden behind the building itself, as distinct from the surrounding open parkland (which is where pot_001 stands, and is NOT this garden). Per BRIEF_RESEARCH.md, when access cannot be stated honestly the tree waits as a lead rather than shipping or being blocked outright. A future pass should check the SFBB's own site or call to confirm whether the garden is open to casual visitors or only to institute guests; also present but unexamined at the same address, a Blutbuche (copper beech), register id 6-39/B, not yet a candidate."
+   "reason": "LEAD, access uncertain, not blocked outright. Three co-located London Planes (near-identical siting, treat as one collectible point if pursued, per the register-twin rule) stand in the walled garden directly behind Jagdschloss Glienicke, which has housed the Sozialpädagogisches Fortbildungsinstitut Berlin-Brandenburg (SFBB), a training institute, since 2007. Search results say the wider park around the building is open to the public 'at any time', but nothing found this pass confirms the specific fenced garden behind the building itself, as distinct from the surrounding open parkland (which is where pot_001 stands, and is NOT this garden). Per BRIEF_RESEARCH.md, when access cannot be stated honestly the tree waits as a lead rather than shipping or being blocked outright. A future pass should check the SFBB's own site or call to confirm whether the garden is open to casual visitors or only to institute guests; also present but unexamined at the same address, a Blutbuche (copper beech), register id 6-39/B, not yet a candidate. CONFIRMED 2026-08-15: this trio is genuinely distinct from the Pfaueninsel candidates verified the same pass (different coordinates, ~2km apart, different island entirely), not a re-surfacing of the same trees."
+  },
+  {
+   "register_ids": ["6-108/B"],
+   "name": "Split-leaved oak near Schloss Pfaueninsel (Geschlitzblaettrige Trauben-Eiche)",
+   "species": "Sessile Oak, cut-leaved form (Quercus petraea)",
+   "place": "Pfaueninsel, ca. 150m nordoestlich vom Schloss",
+   "latitude": 52.431763,
+   "longitude": 13.1212,
+   "status": "lead",
+   "reason": "Evidence-only lead: register entry (Berlin Naturdenkmal 6-108/B, designated 1993-03-02, reason 'Seltenheit') is the only source found this pass. A WebSearch snippet describes a rare split-leaved (geschlitzblaettrige) oak variety near the castle matching this designation reason, but it appears to paraphrase the same government PDF rather than an independent source, so it does not clear the two-source bar. No baumkunde.de or Ostdeutsches Baumarchiv entry located for this specific tree despite both hosting other Pfaueninsel oaks (see pot_005, pot_006 in data/research/potsdam-verified.json). A future pass: search baumkunde/Ostdeutsches Baumarchiv directly for 'geschlitzblaettrige Eiche Pfaueninsel', or check the Pfaueninsel visitor centre/SPSG's own tree signage."
+  },
+  {
+   "register_ids": ["6-71/B"],
+   "name": "The Plane by the Wirtshaus zur Pfaueninsel",
+   "species": "London Plane (Platanus acerifolia)",
+   "place": "Pfaueninsel, westlich des Wirtshauses zur Pfaueninsel, Pfaueninselchaussee 100",
+   "latitude": 52.428433,
+   "longitude": 13.121932,
+   "status": "lead",
+   "reason": "Evidence-only lead: register entry (Berlin Naturdenkmal 6-71/B, designated 1993-03-02, reason 'Schoenheit, landeskundliche Gruende') is the only source found this pass. A baumkunde.de entry for a plane tree at the Wirtshaus zur Faehre Pfaueninsel exists but its exact URL/register number and coordinates could not be confirmed this pass (WebSearch snippets only, no direct page fetch succeeded), so identity match to 6-71/B is unconfirmed rather than established. Also flag for a future pass: check whether 'westlich des Wirtshauses' places this tree in the inn's beer garden/private terrace rather than open parkland, which would be an access question under hard rule 10, not yet resolved."
   }
  ],
  "blocked": []
