@@ -1,15 +1,23 @@
 {
-  "leads": [
-    {
-      "register_ids": ["6-38/B-1", "6-38/B-2", "6-38/B-3"],
-      "name": "The plane trees behind Jagdschloss Glienicke (Ahornblättrige Platane x3)",
-      "species": "London Plane (Platanus x acerifolia)",
-      "place": "Garten Klein-Glienicke, hinter dem Jagdschloss, Königstraße 36B",
-      "latitude": 52.410565,
-      "longitude": 13.098013,
-      "status": "held",
-      "reason": "LEAD, access uncertain, not blocked outright. Three co-located London Planes (near-identical siting, treat as one collectible point if pursued, per the register-twin rule) stand in the walled garden directly behind Jagdschloss Glienicke, which has housed the Sozialpädagogisches Fortbildungsinstitut Berlin-Brandenburg (SFBB), a training institute, since 2007. Search results say the wider park around the building is open to the public 'at any time', but nothing found this pass confirms the specific fenced garden behind the building itself, as distinct from the surrounding open parkland (which is where pot_001 stands, and is NOT this garden). Per BRIEF_RESEARCH.md, when access cannot be stated honestly the tree waits as a lead rather than shipping or being blocked outright. A future pass should check the SFBB's own site or call to confirm whether the garden is open to casual visitors or only to institute guests; also present but unexamined at the same address, a Blutbuche (copper beech), register id 6-39/B, not yet a candidate."
-    }
-  ],
-  "blocked": []
+ "city": "Potsdam",
+ "country": "Germany",
+ "city_slug": "potsdam",
+ "note": "Candidates from the 2026-08-15 Potsdam verification pass. Four trees, pot_001 to pot_004, were delivered and published in data/cities/potsdam.json on 2026-08-15: two Naturdenkmal limes and two oaks in the Glienicke parkland on the Berlin bank of the bridge. What is below did not ship.",
+ "leads": [
+  {
+   "register_ids": [
+    "6-38/B-1",
+    "6-38/B-2",
+    "6-38/B-3"
+   ],
+   "name": "The plane trees behind Jagdschloss Glienicke (Ahornblättrige Platane x3)",
+   "species": "London Plane (Platanus x acerifolia)",
+   "place": "Garten Klein-Glienicke, hinter dem Jagdschloss, Königstraße 36B",
+   "latitude": 52.410565,
+   "longitude": 13.098013,
+   "status": "held",
+   "reason": "LEAD, access uncertain, not blocked outright. Three co-located London Planes (near-identical siting, treat as one collectible point if pursued, per the register-twin rule) stand in the walled garden directly behind Jagdschloss Glienicke, which has housed the Sozialpädagogisches Fortbildungsinstitut Berlin-Brandenburg (SFBB), a training institute, since 2007. Search results say the wider park around the building is open to the public 'at any time', but nothing found this pass confirms the specific fenced garden behind the building itself, as distinct from the surrounding open parkland (which is where pot_001 stands, and is NOT this garden). Per BRIEF_RESEARCH.md, when access cannot be stated honestly the tree waits as a lead rather than shipping or being blocked outright. A future pass should check the SFBB's own site or call to confirm whether the garden is open to casual visitors or only to institute guests; also present but unexamined at the same address, a Blutbuche (copper beech), register id 6-39/B, not yet a candidate."
+  }
+ ],
+ "blocked": []
 }
