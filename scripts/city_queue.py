@@ -81,9 +81,18 @@ def city_coords(city, article=None):
     if key in cache:
         v = cache[key]
         return tuple(v) if v else None
+    # `coprimary=all` matters too: Assisi, Matera and Sorrento all carry their
+    # coordinates as non-primary, so a primary-only query returned a page with
+    # no position at all and every Italian comune of that shape read as having
+    # no register behind it while MASAF holds 5,007 trees.
+    # `redirects` matters more than it looks: the queue writes city names in
+    # ASCII, so Malmo, Bogota, Sao Paulo, Evora and Cesky Krumlov all missed
+    # their own article and scored zero register supply by construction, which
+    # is the same artefact this function was written to fix, one layer down.
     q = urllib.parse.urlencode({"action": "query", "prop": "coordinates",
                                 "titles": article or city, "format": "json",
-                                "formatversion": "2"})
+                                "formatversion": "2", "redirects": "1",
+                                "coprimary": "all"})
     out = None
     try:
         req = urllib.request.Request("https://en.wikipedia.org/w/api.php?" + q,
